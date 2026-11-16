@@ -1,272 +1,245 @@
 ---
 name: ph-withholding
-description: Use this skill whenever asked about Philippines withholding tax, especially Expanded Withholding Tax (EWT) on professional fees and other payments. Trigger on phrases like "EWT Philippines", "expanded withholding tax", "creditable withholding tax", "BIR Form 2307", "final withholding tax", "Form 1601-EQ", "Form 1604-E", "withholding on professional fees", "5% 10% 15% withholding", "tax withheld at source Philippines", or any question about Philippine withholding tax rates, certificates, or remittance. Covers EWT rates, final withholding tax, BIR Forms 2307/1601-EQ/1604-E, and compliance. ALWAYS read this skill before advising on Philippine withholding taxes.
-version: 1.0
+description: >
+  Philippine creditable and final withholding tax for 2026, centred on resident
+  professional fees. Determines the payee’s status, annual income, VAT registration,
+  declaration and correct ATC before applying the 5%, 10% or 15% professional-fee
+  rate. Covers other common resident EWT payments, certificates, gross-income
+  reporting and tax credits, monthly and quarterly remittances, annual information
+  returns, and current invoice disclosure. Distinguishes final passive-income tax
+  from ordinary income-tax credits, including the CMEPA changes to deposits and
+  shares. Use for a payer preparing a withholding payment or a professional
+  reconciling Form 2307. Penalties require taxpayer-size and offence classification;
+  nonresident payments, treaties, payroll and specialised transactions need their
+  separate rules before a final filing position.
+version: 1.2
 jurisdiction: PH
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-16
 depends_on:
   - ph-income-tax
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: computation
 ---
 
-# PH Withholding
+# Philippines Withholding Tax
 
-## Philippines Withholding Tax Skill v1.0
-
-## Section 1 -- Quick Reference
-
-**Quick Reference**
-
-| Field | Value |
-| --- | --- |
-| Country | Philippines |
-| Tax | Withholding Tax (Creditable and Final) |
-| Currency | PHP (₱) only |
-| Tax year | Calendar year |
-| Primary legislation | NIRC Sections 57-58, as amended; RR 2-98, as amended by RR 11-2018 and RR 14-2023 |
-| Tax authority | Bureau of Internal Revenue (BIR) |
-| Validation date | Pending |
-| Skill version | 1.0 |
-
-### Key Distinction
-
-**Key Distinction**
-
-| Type | Treatment |
-| --- | --- |
-| Creditable Withholding Tax (CWT / EWT) | Withheld tax is creditable against final income tax liability; payee reports gross income and claims credit |
-| Final Withholding Tax (FWT) | Tax withheld constitutes the full and final tax; payee does NOT report this income in the ITR |
-
-## Section 2 -- Expanded Withholding Tax (EWT) on Professional Fees
-
-### 2.1 Rates -- Individual Payees
-
-**Rates -- Individual Payees**
-
-| Annual Gross Income of Payee | EWT Rate |
-| --- | --- |
-| ≤₱3,000,000 | 5% |
-| >₱3,000,000 | 10% |
-
-### 2.2 Rates -- Non-Individual (Corporate) Payees
-
-**Rates -- Non-Individual (Corporate) Payees**
-
-| Annual Gross Income of Payee | EWT Rate |
-| --- | --- |
-| ≤₱720,000 | 10% |
-| >₱720,000 | 15% |
-
-### 2.3 Applying the Lower Rate
-
-To apply the lower EWT rate (5% for individuals, 10% for corporates):
-
-**Requirements table**
-
-| Requirement | Detail |
-| --- | --- |
-| Sworn Declaration | Payee must submit Annex B-1 (multiple payors), B-2 (single payor), or B-3 (non-individual) |
-| With COR | Attach copy of BIR Certificate of Registration (Form 2303) |
-| Deadline | By 15 January of each year, or before first payment for new engagements |
-| Default if not submitted | Higher rate applies (10% for individuals, 15% for corporates) |
-
-### 2.4 Covered Professionals
-
-EWT on professional fees applies to licensed professionals under PRC and Supreme Court, including:
-- CPAs, lawyers, engineers, architects, doctors
-- Real estate service practitioners (RESP)
-- Professional entertainers, athletes
-- Management and technical consultants
-- Insurance agents and adjusters
-- Bookkeeping agents
-- Directors of corporations (not employees)
-- Independent sales representatives and marketing agents
-
-## Section 3 -- Other Common EWT Rates
-
-**Other Common EWT Rates**
-
-| Payment Type | Rate |
-| --- | --- |
-| Rentals -- real property | 5% |
-| Rentals -- personal property (≥₱10,000) | 5% |
-| Income payments to contractors/subcontractors | 2% |
-| Income payments by top withholding agents (goods) | 1% |
-| Income payments by top withholding agents (services) | 2% |
-| Commission payments to agents | 5%/10% (individual) |
-| Interest on deposits and deposit substitutes | 20% (final) |
-| Royalties | 20% (final) |
-| Prizes (>₱10,000) | 20% (final) |
-| Dividends (from domestic corp to individual) | 10% (final) |
-
-## Section 4 -- BIR Form 2307 (Certificate of Creditable Tax Withheld at Source)
-
-### 4.1 Purpose
-
-- **Form 2307 Purpose** — Form 2307 is the certificate issued by the withholding agent (payor) to the payee, documenting the tax withheld. The payee uses this to claim creditable withholding tax against their income tax liability.
-
-### 4.2 Key Information on Form 2307
-
-**Key Information on Form 2307**
-
-| Field | Content |
-| --- | --- |
-| Withholding Agent TIN | Payor's Tax Identification Number |
-| Payee TIN | Recipient's Tax Identification Number |
-| Period covered | Quarter/year of the payments |
-| Income payment | Gross amount paid |
-| Tax withheld | Amount withheld at the applicable EWT rate |
-| ATC (Alphanumeric Tax Code) | Identifies the type of income and applicable rate |
-
-### 4.3 Common ATCs for Professional Fees
-
-**Common ATCs for Professional Fees**
-
-| ATC | Description | Rate |
-| --- | --- | --- |
-| WI100 | Professional fees -- individual (≤₱3M) | 5% |
-| WI010 | Professional fees -- individual (>₱3M) | 10% |
-| WC100 | Professional fees -- corporate (≤₱720K) | 10% |
-| WC010 | Professional fees -- corporate (>₱720K) | 15% |
-
-### 4.4 Importance for Payees
-
-- Form 2307 is ESSENTIAL for claiming tax credits on the annual ITR
-- Without Form 2307, the withholding tax paid cannot be credited
-- Payees should collect Form 2307 from all payors every quarter
-- Attach all Forms 2307 to the annual ITR (Form 1701/1701A)
-
-## Section 5 -- Remittance by Withholding Agents
-
-### 5.1 Quarterly Remittance
-
-**Quarterly Remittance**
-
-| Form | Purpose | Deadline |
-| --- | --- | --- |
-| Form 1601-EQ | Quarterly Remittance Return of Creditable Income Taxes Withheld (Expanded) | Last day of the month following the close of the quarter |
-| Attachments | Quarterly Alphalist of Payees (QAP) | Filed with Form 1601-EQ |
-
-### 5.2 Monthly Remittance
-
-**Monthly Remittance**
-
-| Form | Purpose | Deadline |
-| --- | --- | --- |
-| Form 0619-E | Monthly Remittance Return of Creditable Income Taxes Withheld (Expanded) | 10th day of the following month (for months 1 and 2 of each quarter) |
-
-### 5.3 Annual Information Return
-
-**Annual Information Return**  _(BIR guidance on Form 1604-E. Corrected by Jonathan I. Ruiz (CPA, Philippines))_
-
-| Form | Purpose | Deadline |
-| --- | --- | --- |
-| Form 1604-E | Annual Information Return of Creditable Income Taxes Withheld (Expanded) | **On or before 1 March** of the following year (NOT 31 January — that is the 1604-C / 1604-F deadline) |
-| Attachments | Annual Alphalist of Payees | Filed with Form 1604-E |
-
-## Section 6 -- Final Withholding Tax (FWT)
-
-- **FWT nature** — Final withholding tax is withheld at source and constitutes the full tax on the income. The payee does NOT include this income in the regular ITR.
-
-### 6.1 Common FWT Rates
-
-**Common FWT Rates**
-
-| Income Type | Rate |
-| --- | --- |
-| Interest on bank deposits (PHP) | 20% |
-| Interest on long-term deposits (>5 years) | Exempt |
-| Royalties (books, literary, musical) | 10% |
-| Royalties (other) | 20% |
-| Prizes (>₱10,000) | 20% |
-| PCSO/lotto winnings (>₱10,000) | 20% |
-| Dividends from domestic corporation | 10% |
-| Capital gains on sale of shares (not traded) | 15% |
-| Capital gains tax on real property | 6% |
-
-### 6.2 FWT Forms
-
-**FWT Forms**
-
-| Form | Purpose | Deadline |
-| --- | --- | --- |
-| Form 1601-FQ | Quarterly Final Withholding Tax | Last day of month following quarter end |
-| Form 1604-F | Annual Final Withholding Tax | 31 January of following year |
-
-## Section 7 -- Worked Examples
-
-### Example 1 -- Professional Fee with EWT
-
-**Situation:** CPA bills client ₱100,000 for consulting. CPA's annual gross receipts are under ₱3M and sworn declaration has been submitted.
-
-**Withholding:** ₱100,000 × 5% = ₱5,000 withheld. Client pays ₱95,000 net and issues Form 2307 for ₱5,000.
-
-**CPA's ITR:** Reports ₱100,000 gross income. Claims ₱5,000 creditable tax.
-
-### Example 2 -- No Sworn Declaration Submitted
-
-**Situation:** Same CPA, but did not submit Annex B-1.
-
-**Withholding:** Higher rate applies: ₱100,000 × 10% = ₱10,000. Client pays ₱90,000 net.
-
-### Example 3 -- Corporate Payee
-
-**Situation:** Accounting firm (corporation) bills ₱500,000. Annual gross >₱720,000.
-
-**Withholding:** ₱500,000 × 15% = ₱75,000 withheld.
-
-## Section 8 -- Penalties
-
-**Penalties**  _(NIRC ss.248–250, 255; RR 21-2018. Corrected by Jonathan I. Ruiz (CPA, Philippines))_
-
-| Offence | Penalty |
-| --- | --- |
-| Failure to withhold | Withholding agent liable for the amount not withheld + 25% surcharge + 12% interest per annum |
-| Failure to remit | 25% surcharge + 12% interest per annum (NIRC s.249 as amended by TRAIN; RR 21-2018 — the old 20% has not applied since 2018) |
-| Failure to issue Form 2307 | Fine PHP 1,000 per failure |
-| Failure to file Form 1604-E (an INFORMATION return) | NIRC s.250: PHP 1,000 per failure, capped at PHP 25,000 per calendar year |
-| Failure to file Form 1601-EQ (a REMITTANCE return, tax due) | Ordinary failure-to-file exposure: 25% surcharge + 12% interest on the unremitted tax, plus potential NIRC s.255 criminal liability for wilful non-filing — NOT a flat PHP 1,000 |
-| Late filing | 25% surcharge on tax due |
-
-## Section 9 -- Reference Material
-
-### Key BIR Issuances
-
-**Key BIR Issuances**
-
-| Issuance | Topic |
-| --- | --- |
-| RR 2-98 | Original withholding tax regulations |
-| RR 11-2018 | TRAIN Law amendments to withholding |
-| RR 14-2023 | Further amendments |
-| RMO 23-2018 | Guidelines on 8% income tax rate election |
-
-### Key Forms Summary
-
-**Key Forms Summary**
-
-| Form | Who Files | Purpose |
-| --- | --- | --- |
-| 2307 | Withholding agent → payee | Certificate of creditable tax withheld |
-| 0619-E | Withholding agent | Monthly remittance (months 1, 2 of quarter) |
-| 1601-EQ | Withholding agent | Quarterly remittance |
-| 1604-E | Withholding agent | Annual information return |
-| 1601-FQ | Withholding agent | Quarterly final withholding tax |
-| 1604-F | Withholding agent | Annual final withholding tax |
-
-## Prohibitions
-
-- NEVER ignore Form 2307 collection -- without it, creditable taxes cannot be claimed
-- NEVER apply the lower EWT rate without the payee's sworn declaration on file
-- NEVER include final withholding tax income in the regular ITR
-- NEVER confuse creditable (EWT) with final (FWT) withholding tax
-- NEVER miss monthly remittance (Form 0619-E) -- it is separate from the quarterly return
-- NEVER present calculations as definitive -- always label as estimated
-
-## Disclaimer
+2026 rules checked on 2026-11-16; version 1.2. Not yet approved; computations are estimates until the responsible professional confirms the facts and filing treatment.
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+
+## Scope
+
+Use this Guide for Philippine withholding in **PHP**. Calendar-quarter remittance and annual information reporting are distinct from the payee’s annual income-tax computation. Identify whether the payment is creditable or final before selecting its form and rate. The resident professional-fee table is not a cross-border treaty table. [NIRC sections 57-58](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896); [RR 11-2018, sections 2 and 5](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf).
+
+| Treatment | Payee and payer consequences | Authority |
+|---|---|---|
+| Creditable withholding tax (CWT/EWT) | Payee reports the corresponding **gross income** and substantiates the withholding credit against ordinary income tax. The amount withheld is not the payee’s final tax calculation. Payer withholds/remits and issues Form 2307. | [NIRC 58(E), amended by EOPT section 9](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/96948); [RR 11-2018, 2.58(B)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+| Final withholding tax (FWT) | The applicable final tax settles that separately taxed income; do not add it to the regular taxable-income base or claim it as an EWT credit. Applicable return disclosure and special capital-gains filings still need checking. A person with only final-taxed income has the stated individual ITR exception, not a universal exemption for someone with other income. | [NIRC 57(A)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896); [RR 4-2024, section 5(C)](https://naro.law.upd.edu.ph/storage/01JT27H00Q1JABYK2R53AB4D14.pdf); [CMEPA section 4](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/99213) |
+
+## Ask the client first
+
+- Who are the payer and payee, their TINs, legal form and Philippine residence/tax status? Is there an employment relationship, nonresident recipient or treaty claim?
+- What is the actual service, rental, commission or investment income, and the supported gross withholding base? Separate VAT, reimbursements and other charges before approving a base.
+- What is the payee’s current-year gross income, VAT registration and cumulative payments from this payer? Obtain the COR and the applicable sworn declaration, including its receipt date.
+- Is the payer a withholding agent for this payment, a designated top withholding agent, government body or joint venture? Obtain its registration/designation and taxpayer-size classification; small size alone is not a withholding exemption.
+- When did the obligation become payable, when was it recorded/invoiced, and which applicable month/quarter/year does it belong to? Obtain payment, return and remittance records.
+- Are there missing or corrected 2307s, prior credits, late returns, an assessment or alleged wilful conduct? Reconcile them before computing a credit, refund or penalty.
+
+## The method, step by step
+
+### 1. Establish the withholding obligation and its time
+
+Confirm the payer’s withholding obligations for the actual payment; the presence of the word “consultant” on an invoice does not establish employment, the correct income category or the ATC. Professional services, non-employee director fees, contractors and designated top-agent payments have different provisions. If the recipient is an employee of the lone payer, fees within the specified professional-fee rule become supplemental compensation, subject to payroll withholding instead. [RR 11-2018, 2.57.2(A), (C) and (I)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf).
+
+Do **not** treat a micro taxpayer as automatically exempt from creditable withholding. The published EOPT text includes a proposed micro-taxpayer exemption, but **that proviso was vetoed**; the BIR’s tax-code footnote identifies the veto. Reduced penalties for eligible micro/small taxpayers are a separate matter. [EOPT section 8, read with the BIR veto footnote 119](https://www.bir.gov.ph/tax-code?datasetCode=119&idTag=tcfn21&label=21&tab=Footnote&type=TAB+LINK); [RR 6-2024, sections 2-5](https://naro.law.upd.edu.ph/storage/01JT28JRH6YRBG857QWTQ0JJFH.pdf).
+
+Withhold when income becomes **payable**. RR 4-2024 section 7 defines this by when the obligation is due, demandable or legally enforceable, and specifies the earlier of accrual/recording as expense or asset in the payer’s books or the seller’s invoice/adequate payable document. Do not wait mechanically for a cash transfer. EOPT’s removal of withholding as an additional expense-deductibility condition did not remove the payer’s withholding/remittance obligation. [RR 4-2024, sections 6-7](https://naro.law.upd.edu.ph/storage/01JT27H00Q1JABYK2R53AB4D14.pdf); [NIRC 58(C), EOPT section 9](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/96948).
+
+### 2. Classify resident professional fees and apply the declaration rules
+
+| Resident payee and condition | EWT rate on the proper gross professional-fee base | Authority |
+|---|---|---|
+| Individual, current-year gross income **not over PHP 3,000,000**, not VAT registered, with the required declaration/COR | **5%** | [RR 14-2018, section 2](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2018.pdf); [RR 11-2018, 2.57.2(A)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+| Individual, gross income **over PHP 3M**, **or VAT registered regardless of amount** | **10%** | [RR 14-2018, section 2](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2018.pdf) |
+| Individual missing the required declaration | **10%** default; a low-income assertion alone does not authorise 5% | [RR 11-2018, 2.57.2(A)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+| Non-individual/corporate professional-fee payee **excluding a GPP's own receipts**, current-year gross income **not over PHP 720,000**, with required sworn statement/COR | **10%** | [RR 14-2018, section 2](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2018.pdf); [RR 11-2018, 2.57.2(A)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+| Non-individual/corporate professional-fee payee **excluding a GPP's own receipts**, **over PHP 720,000**, or missing the required sworn statement | **15%** | [RR 14-2018, section 2](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2018.pdf); [RR 11-2018, 2.57.2(A)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+
+A **GPP's own professional-fee receipts are not subject to CWT** under RMC 50-2018 Q35. The partners' distributions, income tax and applicable withholding are separate; do not use the corporate rows to withhold on the GPP itself. [RMC 50-2018, Q35, page 11](https://bir-cdn.bir.gov.ph/local/pdf/RMC%20No%2050-2018.pdf).
+
+The **annual** threshold is not the size of one invoice. Monitor both the declaration and cumulative payments: the regulation requires the higher rate when the payment threshold is exceeded despite a declaration. Do not assume the first PHP 3 million or PHP 720,000 remains permanently protected at the lower rate. Check the required adjustment when a threshold is crossed. [RR 11-2018, 2.57.2(A)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf).
+
+| Declaration or record | Use and timing | Authority |
+|---|---|---|
+| Annex **B-1** plus COR | Individual with multiple income payers claiming the qualifying lower rate; submit by **15 January each year** or before the initial payment, as applicable | [RR 11-2018, 2.57.2(A)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+| Annex **B-2** plus COR, single payer | Like B-1 for multiple payers, B-2 supports the **qualifying 5% professional-fee rate** with the required declaration/COR by **15 January** or before initial payment. Apply the VAT-registration override. Separately, a qualifying individual earning **PHP 250,000 or less from a lone payer** may claim the exemption with the prescribed evidence; a single payer alone does not establish it. If a valid exempt declaration is later exceeded, withhold the applicable tax **on the amount exceeding PHP 250,000**, rather than retrospectively on the first PHP 250,000. Without the required declaration, ordinary withholding applies even below the threshold. | [RR 11-2018, 2.57.2(A), 2.57.3 and 2.57.5(B)(6)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf); [RMC 50-2018, Q37](https://bir-cdn.bir.gov.ph/local/pdf/RMC%20No%2050-2018.pdf) |
+| Annex **B-3** plus COR | Non-individual estimated annual gross income not over PHP 720,000; president/managing partner executes the notarised statement by **15 January** or before initial payment | [RR 11-2018, 2.57.2(A)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+| Payer Annex **C** and list | Payer’s reporting of declarations/CORs received: by **31 January**, or **15 days following the month** a new recipient submits the declaration | [RR 11-2018, 2.57.2(A)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+
+The covered fee categories include licensed **CPAs, lawyers, engineers, architects, doctors and real-estate service practitioners**, entertainers, athletes, production directors/producers, insurance agents/adjusters, management/technical consultants, bookkeeping agents, other talent recipients, non-employee corporate directors, specified brokers, and independent/exclusive sales or marketing agents. Their precise ATCs differ. A professional’s **8% income-tax election** does not by itself remove EWT or change its professional-fee rate. [RR 11-2018, 2.57.2(A)(1)-(11)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf); [RMC 50-2018, Q34-Q41](https://bir-cdn.bir.gov.ph/local/pdf/RMC%20No%2050-2018.pdf).
+
+### 3. Use the payment-specific rule for other common EWT
+
+The following are resident-payment categories, not a rule that every personal payer must withhold on every purchase. Specific payment rules take precedence over the residual top-withholding-agent supplier rule. [RR 11-2018, 2.57.2](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf).
+
+| Payment category | EWT rate and boundary | Authority |
+|---|---|---|
+| Business-use real-property rent | **5%** of gross rental for use/possession without acquiring title/equity | [RR 11-2018, 2.57.2(B)(1)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+| Business-use personal-property rent | **5%** when annual gross rent **exceeds PHP 10,000**; if accumulated/expected rent exceeds it, withhold on the entire amount. Exactly PHP 10,000 is not automatically “exceeds”; authorised financing-company financial leases have the stated exception. | [RR 11-2018, 2.57.2(B)(2)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+| Certain contractors | **2%** of gross payments to covered contractors, whether individual or corporate. Check the actual 2.57.2(C) category rather than treating every independent professional as a 2% contractor. | [RR 11-2018, 2.57.2(C)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+| Designated top withholding agent’s local/resident supplier of goods | **1%** under the residual supplier rule, subject to actual designation and regular/casual-purchase conditions; another specified rate can govern | [RR 11-2018, 2.57.2(I)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+| Designated top withholding agent’s local/resident supplier of services | **2%** under the same residual rule and qualifications | [RR 11-2018, 2.57.2(I)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+| Specified individual brokers/independent sales or marketing agents | The applicable **5%/10%** professional-fee-category rules and declaration/VAT conditions; determine the actual category/ATC | [RR 11-2018, 2.57.2(A)(10)-(11)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf); [RR 14-2018](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2018.pdf) |
+
+The earlier reference to **RR 14-2023** is retained with its correct scope: it addresses specified **joint-venture/consortium** supplier payments and distributive shares. It is not the instrument establishing the generic professional-fee 5%/10% table. For that use **RR 14-2018**. No additional joint-venture rate is calculated here. [RR 14-2023, sections 1-2](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2023.pdf); [RR 14-2018, section 2](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2018.pdf).
+
+### 4. Issue, collect and reconcile Form 2307 and invoice disclosure
+
+The withholding agent issues **Form 2307** for CWT and **Form 2306** for FWT. Under RR 11-2018 2.58(B), furnish the statement within **20 days after quarter-end**, or simultaneously with the income payment if the payee requests it. Obtain every payer’s certificate and reconcile monthly payments, quarterly totals, payer/payee names and **TINs**, period, income category/**ATC**, gross income and tax withheld. A corrected certificate must replace the erroneous one; never claim both for the same income/payment period. [RR 11-2018, section 5, 2.58(B)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf); [RR 14-2018, correction/no-double-use provisions](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2018.pdf).
+
+| Professional-fee ATC | Current category | Rate | Authority |
+|---|---|---|---|
+| **WI010** | Individual qualifying lower-rate professional fee | **5%** | [RMO 38-2018, page 2, modified/new columns](https://bir-cdn.bir.gov.ph/local/pdf/RMO_No.38-2018.pdf) |
+| **WI011** | Individual higher-rate professional fee, including VAT registration regardless of amount | **10%** | [RMO 38-2018, page 2](https://bir-cdn.bir.gov.ph/local/pdf/RMO_No.38-2018.pdf); [RR 14-2018](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2018.pdf) |
+| **WC010** | Corporate qualifying lower-rate professional fee | **10%** | [RMO 38-2018, page 2](https://bir-cdn.bir.gov.ph/local/pdf/RMO_No.38-2018.pdf) |
+| **WC011** | Corporate higher-rate professional fee | **15%** | [RMO 38-2018, page 2](https://bir-cdn.bir.gov.ph/local/pdf/RMO_No.38-2018.pdf) |
+
+These correct the prior WI100/WI010 and WC100/WC010 pairings. The table is for the identified professional-fee category; a bookkeeping agency, entertainer, insurance agent or sales agent may need a different ATC even where its rate is the same. Do not select an ATC from the percentage alone. [RMO 38-2018, category tables](https://bir-cdn.bir.gov.ph/local/pdf/RMO_No.38-2018.pdf).
+
+The payee reports the corresponding **gross income**, then substantiates the withholding credit. Missing Form 2307 requires recovery/correction and evidence of the actual withholding; do not invent the certificate or claim a duplicate credit. EOPT 58(E) requires both the income declaration and proof of withholding, and permits the stated later-period credit where the corresponding income was reported. The old absolute statement that a missing certificate automatically extinguishes every possible credit is too broad. The applicable ITR attachment/SAWT and electronic submission instructions must also be followed; RMC 20-2026 concerns **2025 income filed in 2026**, not an unissued future filing cycle. [EOPT section 9, NIRC 58(E)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/96948); [BIR RMC 20-2026](https://bir-cdn.bir.gov.ph/BIR/pdf/RMC%2020-2026.pdf).
+
+**Current invoice change:** RR **6-2026** requires applicable CWT to appear as a **separate invoice item**. Existing unused/unissued invoices may be consumed with **“Less: Withholding Tax”** conspicuously stamped; newly printed invoices must reflect that phrase before use. This documents the deduction; it does not replace Form 2307 or change the tax base/rate. [RR 6-2026, sections 2-3](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%206-2026.pdf).
+
+### 5. Remit on the correct monthly, quarterly and annual calendar
+
+Annual-reporting correction credit retained: **Corrected by Jonathan I. Ruiz (CPA, Philippines)**.
+
+| Form/report | Purpose and ordinary deadline | Authority |
+|---|---|---|
+| **0619-E** | CWT remittance for **months 1 and 2 of each calendar quarter**. Non-eFPS: **10th of the following month**; eFPS: applicable industry-group due date, **on or before the 15th**. Check the actual group/date and current extension. | [BIR RMC 73-2018, official digest](https://bir-cdn.bir.gov.ph/local/pdf/RMC%2073-2018.pdf) |
+| **1601-EQ + QAP** | Calendar-quarter EWT return and Quarterly Alphalist of Payees: **last day of the month after quarter-end**. Include monthly details/quarter totals and reconcile earlier 0619-E remittances; do not pay them twice. | [RR 11-2018, 2.58(A)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+| **1604-E + annual alphalist** | Annual CWT information return: **on or before 1 March of the following year**. It is not the 31 January final-tax or compensation annual return. | [RR 11-2018, 2.58(C)(1)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+| **0619-F** | First two calendar-quarter months’ final-tax remittance, with the corresponding non-eFPS/eFPS timetable; use the correct final-tax type/ATC | [BIR RMC 73-2018, digest](https://bir-cdn.bir.gov.ph/local/pdf/RMC%2073-2018.pdf) |
+| **1601-FQ + QAP** | Other final withholding taxes: **last day of the month after quarter-end**. Bank-deposit interest/fringe-benefit and capital-gains transactions have their specific forms; do not route every final tax through 1601-FQ. | [RR 11-2018, 2.58(A)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+| **1604-F + annual alphalist** | Annual final-tax information return: **31 January of the following year** | [RR 11-2018, 2.58(C)(2)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) |
+
+Use the required electronic filing system and pay through an authorised route. The EOPT implementing regulation generally requires electronic filing, with manual filing when electronic platforms are unavailable under the applicable instructions; do not recycle RR 11-2018’s older exclusive RDO/bank-venue wording as the current rule. Keep filing acknowledgements, payment confirmations, alphalists, certificates and corrections together. Ordinary dates above remain subject to applicable weekend/holiday rules and a specifically issued extension; check the BIR calendar/advisory for the actual filing rather than inventing a future special extension. [RR 4-2024, filing/payment provisions and official digest](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%204-2024%20%28final%29.pdf); [EOPT section 9](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/96948).
+
+### 6. Apply final-tax rates only to the matching recipient and income
+
+The following personal passive-income table is for **Philippine-source income of a citizen or resident alien**, unless the row states otherwise. Corporate recipients and nonresident aliens have different rules; the domestic-individual 10% dividend rate is not a universal dividend rate. Investment income that is business income rather than passive income needs its own classification. [CMEPA sections 4-7](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/99213); [BIR RR 21-2025 official digest, individual table](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%2021-2025%20Digest.pdf).
+
+| Income | Rate, base or exception | Authority |
+|---|---|---|
+| Bank-deposit/deposit-substitute/trust interest or yield | **20%**, any currency and regardless of tenure under the current CMEPA rule from **1 July 2025**; review the grandfathered instrument exception separately | [CMEPA sections 4 and 28](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/99213); [RR 21-2025 digest](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%2021-2025%20Digest.pdf) |
+| Long-term deposit/investment | **No blanket exemption merely because the term exceeds 5 years.** Pre-1 July 2025 instruments can retain the prevailing issuance-date treatment for the remaining maturity if the statutory transition conditions are met; renewal/replacement/alteration requires fresh analysis. | [CMEPA section 28](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/99213); [RR 21-2025 digest, transition](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%2021-2025%20Digest.pdf) |
+| Passive royalties on books/literary works/musical compositions | **10%** | [CMEPA section 4, NIRC 24(B)(5)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/99213) |
+| Other passive royalties | **20%** | [CMEPA section 4](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/99213) |
+| Prizes **over PHP 10,000** | **20%**; prizes of PHP 10,000 or less instead enter the applicable graduated-income analysis | [CMEPA section 4, 24(B)(1)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/99213) |
+| PCSO/lotto winnings **over PHP 10,000** | **20%**; PCSO/lotto winnings of PHP 10,000 or less are exempt. Other winnings do not inherit that specific exemption. | [CMEPA section 4](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/99213) |
+| Cash/property dividends from a domestic corporation | **10%** for this citizen/resident-alien table; classify other recipients separately | [CMEPA section 4, 24(B)(2)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/99213) |
+| Net capital gain on shares not traded through a local/foreign stock exchange | **15%** on the net gain, within the applicable residence/source rule. It is not 15% of gross sale proceeds; exchange-traded transactions use their separate regime. | [CMEPA section 4, 24(B)(3)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/99213) |
+| Qualifying Philippine real property held as a capital asset | **6%** of the statutory presumed-gain base, generally the higher of gross selling price and statutory fair market value, subject to applicable exemption/election rules. Ordinary business property is a different case. | [NIRC original 24(D)(1) charge/base and 24(D)(2) principal-residence exemption; current CMEPA 24(B)(4)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896); [RR 21-2025 digest, individual table](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%2021-2025%20Digest.pdf) |
+
+Do not include separately final-taxed passive income in the regular tax base or deduct FWT as an ordinary EWT credit. A capital-gains tax can require the seller’s separate transaction return rather than a generic payer certificate/1601-FQ; identify the transaction before filing. Treaty and nonresident rates require the recipient’s status and the applicable treaty evidence, not the resident fee table. [NIRC sections 57-58](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896); [RR 11-2018, 2.58(A)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf); [CMEPA sections 4-7 and 13](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/99213).
+
+### 7. Classify a compliance failure before computing penalties
+
+Penalty correction credit retained: **Corrected by Jonathan I. Ruiz (CPA, Philippines)**. The former blanket **25% surcharge/12% interest** table needs the EOPT micro/small distinction. RR 6-2024 defines micro as annual gross sales **below PHP 3,000,000**, small as **PHP 3,000,000 to below PHP 20,000,000**. Confirm the recorded classification, applicable period and offence before quoting an assessment. [RR 6-2024, sections 2-5](https://naro.law.upd.edu.ph/storage/01JT28JRH6YRBG857QWTQ0JJFH.pdf); [EOPT section 45](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/96948).
+
+| Failure or condition | Applicable treatment and limit | Authority |
+|---|---|---|
+| Failure to withhold or remit | Reconcile the underlying tax/withholding-agent liability and the actual due date; late-payment civil penalties/interest depend on the applicable trigger and category. Do not present all additions as automatic or substitute a flat information-return fee for tax due. | [NIRC sections 248, 251 and 255](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896); [EOPT section 45](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/96948) |
+| Ordinary late filing/payment with tax due | General section 248(A) surcharge **25%**; eligible micro/small ordinary default **10%** under RR 6-2024. Check its timely-original-return amendment and assessment qualifications. | [NIRC 248(A)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896); [RR 6-2024, section 3](https://naro.law.upd.edu.ph/storage/01JT28JRH6YRBG857QWTQ0JJFH.pdf) |
+| Interest on unpaid tax | General current benchmark **12% per annum**; qualifying micro/small **6%**, a 50% reduction. Apply the proper period/base; do not calculate an assessment without current period and interaction rules. The pre-TRAIN blanket 20% is not the 2026 rule. | [RR 6-2024, section 4 and official digest, 6% is 50% of the section 249 rate; general 12% derived as 6% / 50%](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%206-2024%20%28final%29.pdf); [RR 6-2024, section 4, 6% as 50% of statutory rate](https://naro.law.upd.edu.ph/storage/01JT28JRH6YRBG857QWTQ0JJFH.pdf) |
+| Failure to file/supply a required information return, list or statement, including the applicable 1604-E obligation | General section 250 **PHP 1,000 per failure**, annual aggregate cap **PHP 25,000**; qualifying micro/small **PHP 500**, cap **PHP 12,500**, subject to its notice/demand and reasonable-cause rules. | [NIRC 250](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896); [RR 6-2024, section 5](https://naro.law.upd.edu.ph/storage/01JT28JRH6YRBG857QWTQ0JJFH.pdf); [official BIR digest](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%206-2024%20%28final%29.pdf); [BIR reproduction of NIRC 250](https://www.bir.gov.ph/penalties?q=penalties) |
+| Missing Form 2307 | Correct/issue the required statement; classify the actual information-statement violation and taxpayer-size rules. The former universal PHP 1,000 statement is not an unconditional all-taxpayer assessment. | [RR 11-2018, 2.58(B)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf); [NIRC 250](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896); [RR 6-2024, section 5](https://naro.law.upd.edu.ph/storage/01JT28JRH6YRBG857QWTQ0JJFH.pdf); [official BIR digest](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%206-2024%20%28final%29.pdf); [BIR reproduction of NIRC 250](https://www.bir.gov.ph/penalties?q=penalties) |
+| Wilful non-filing or false/fraudulent return | The **50%** section 248(B) surcharge is distinct from an ordinary late return; potential section 255 criminal liability requires its statutory elements. Do not label every late filer fraudulent. | [NIRC 248(B), 255](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896); [RR 6-2024, section 3](https://naro.law.upd.edu.ph/storage/01JT28JRH6YRBG857QWTQ0JJFH.pdf) |
+
+An actual **1601-EQ remittance return with tax due** is not resolved by paying a flat PHP 1,000 information-return penalty. Conversely, an annual information return is not automatically a tax-underpayment calculation. Resolve missing returns, tax, payments and period-specific extensions, then obtain a supported assessment and Philippine professional review. RR 21-2018 was the historical interest reference in the earlier Guide; its full text was blocked here, so the current rates above use the actual RR 6-2024 section 4 and official digest (6% as half the section 249 rate, giving a derived general 12%); the separately claimed no-simultaneous deficiency/delinquency condition remains in the source hold below. Neither the unrecovered full TRAIN Act nor RR 21-2018 is claimed as an official-host read.
+
+## Worked cases
+
+Each case assumes a resident payee, a payer with the required withholding obligation, a correctly established professional-fee withholding base, no employment relationship, and no separate VAT/reimbursement calculation. The figures estimate **withholding and cash paid**, not the payee’s final income-tax liability. [RR 11-2018, 2.57.2(A)](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf); [RR 14-2018](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2018.pdf).
+
+### A. CPA’s PHP 100,000 fee: declaration versus default
+
+The CPA is **not VAT registered**, has annual gross income below **PHP 3 million** and more than one payer. If the payer holds the timely valid **B-1/COR**, **5% × PHP 100,000 = PHP 5,000** is withheld and cash paid is **PHP 95,000**. The CPA reports PHP 100,000 gross and substantiates the PHP 5,000 CWT credit. If the same payer has no required declaration, **10% = PHP 10,000** is withheld and cash paid is **PHP 90,000**. The **PHP 5,000 cash difference** is a withholding-timing difference; it does not prove the CPA owes PHP 5,000 more final tax. A VAT-registered CPA would use 10% regardless of the below-PHP-3-million assertion. [RR 14-2018, section 2](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2018.pdf); [RR 11-2018, declaration/default provisions](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf).
+
+```oa-check
+name: CPA fee with valid declaration versus missing declaration
+inputs:
+  fee_base: 100000
+steps:
+  lower_withholding: fee_base * 0.05
+  lower_cash: fee_base - lower_withholding
+  default_withholding: fee_base * 0.10
+  default_cash: fee_base - default_withholding
+  cash_difference: lower_cash - default_cash
+expected:
+  lower_withholding: 5000
+  lower_cash: 95000
+  default_withholding: 10000
+  default_cash: 90000
+  cash_difference: 5000
+```
+
+### B. Corporate accounting firm: test annual income, not the invoice
+
+A resident **corporation**, rather than a general professional partnership distributing to partners, invoices a supported fee base of **PHP 500,000**. Its annual gross income **exceeds PHP 720,000**. Professional-fee EWT is **15% × PHP 500,000 = PHP 75,000**; cash paid is **PHP 425,000**. A valid low-income statement cannot override the known higher annual income. If an otherwise qualifying corporate payee instead had annual gross income not exceeding PHP 720,000 and the required B-3/COR, the 10% alternative on the same hypothetical base would withhold PHP 50,000, leaving PHP 450,000. The decision therefore needs the annual-income evidence before selecting the rate. [RR 14-2018, section 2](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2018.pdf); [RR 11-2018, corporate sworn statement/default](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf).
+
+```oa-check
+name: Corporate professional fee and annual-income classification
+inputs:
+  fee_base: 500000
+steps:
+  higher_withholding: fee_base * 0.15
+  higher_cash: fee_base - higher_withholding
+  qualifying_lower_withholding: fee_base * 0.10
+  qualifying_lower_cash: fee_base - qualifying_lower_withholding
+  withholding_difference: higher_withholding - qualifying_lower_withholding
+expected:
+  higher_withholding: 75000
+  higher_cash: 425000
+  qualifying_lower_withholding: 50000
+  qualifying_lower_cash: 450000
+  withholding_difference: 25000
+```
+
+## When to refuse or refer
+
+- Do not ignore or fabricate Form 2307. Recover/correct missing evidence, reconcile gross income and the actual tax withheld, and prevent duplicate credits.
+- Do not apply the lower fee rate without the required declaration/COR or despite disqualifying VAT/annual-income facts. A single payer alone does not establish the B-2 exemption.
+- Do not combine final-taxed income with the ordinary tax base or claim FWT as CWT. Follow any separately required disclosure or transaction return.
+- Do not confuse CWT with FWT, apply a resident rate to a nonresident recipient, or choose an ATC only because the rate looks familiar. Refer treaty/foreign-source or specialised cases for their specific analysis.
+- Do not skip monthly 0619-E/0619-F remittance because a quarterly return will follow; reconcile both rather than paying twice.
+- Do not call an estimate a definitive tax bill, assert a micro withholding exemption, or use a universal penalty percentage. Obtain the facts, current filing instructions and responsible Philippine professional’s review.
+
+## Sources
+
+| Source | Read date | Read for |
+|---|---|---|
+| [RR 11-2018](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2011-2018.pdf) | 2026-11-16 | Read for: section 2’s 2.57.2(A)-(C), (I), professional categories/declarations, rentals, contractors and residual top-agent rules; 2.57.3 excess-only rule and 2.57.5(B)(6) lone-payer exemption; section 5’s 2.58(A)-(C) forms/certificates/deadlines. Selected provisions, not all payroll rules. |
+| [RR 14-2018](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2018.pdf) | 2026-11-16 | Read for: full two-page operative text, VAT-registered individual 10% regardless of amount, corporate rates and certificate corrections/no double use. April 2018 transitional dates are not generic current filing deadlines. |
+| [RMO 38-2018](https://bir-cdn.bir.gov.ph/local/pdf/RMO_No.38-2018.pdf) | 2026-11-16 | Read for: page 2 modified/new professional ATC table, visually checked; other listed categories require their own ATC rather than a guessed WI/WC code. |
+| [RMC 50-2018](https://bir-cdn.bir.gov.ph/local/pdf/RMC%20No%2050-2018.pdf) | 2026-11-16 | Read for: Q29-Q32 registration/lone-payer context and Q34-Q41 director, contractor, professional/declaration and 8%-election clarification. Scanned/OCR text, selected Q&A only. |
+| [RMC 73-2018, official digest](https://bir-cdn.bir.gov.ph/local/pdf/RMC%2073-2018.pdf) | 2026-11-16 | Read for: entire one-page digest, first two months’ 0619-E/F use and non-eFPS/eFPS dates. Not misrepresented as the complete underlying circular. |
+| [Original NIRC, RA 8424](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896) | 2026-11-16 | Read for: sections 57-58 framework, original 24(D)(1) real-property charge/base and 24(D)(2) principal-residence exemption, with current numbering in CMEPA 24(B)(4), and sections 248/250/251/255. Read with later amendments; old 20% interest and old venue/timing are not treated as current. |
+| [BIR penalties page, NIRC section 250 reproduction](https://www.bir.gov.ph/penalties?q=penalties) | 2026-11-16 | Read the complete section 250 paragraph with its information-return context, notice/demand, reasonable-cause exception and calendar-year cap, and neighboring sections 255/275 distinctions. Corroborates the general fine only, read with the RR 6-2024 micro/small reduction; the old 20% interest printed elsewhere on this page is not used as current law. |
+| [RA 11976](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/96948) and [BIR tax-code veto footnote 119](https://www.bir.gov.ph/tax-code?datasetCode=119&idTag=tcfn21&label=21&tab=Footnote&type=TAB+LINK) | 2026-11-16 | Read for: EOPT sections 8-9 and 45; actual BIR indexed footnote identifies the vetoed micro-taxpayer withholding proviso. Dynamic footnote page did not expose its full body on direct fetch; no exemption inferred from the unqualified statute mirror. |
+| [RR 4-2024, ONAR official copy](https://naro.law.upd.edu.ph/storage/01JT27H00Q1JABYK2R53AB4D14.pdf); [BIR digest](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%204-2024%20%28final%29.pdf) | 2026-11-16 | Read for: full official digest and visually read pages 3-4, sections 4-8, especially payable timing and continuing withholding obligation. Complete five-page scan downloaded; other page detail is not claimed read. |
+| [RR 6-2024, ONAR official copy](https://naro.law.upd.edu.ph/storage/01JT28JRH6YRBG857QWTQ0JJFH.pdf); [BIR digest](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%206-2024%20%28final%29.pdf) | 2026-11-16 | Read for: all three pages visually read and entire official digest, micro/small sales boundaries, ordinary/fraud surcharge, interest, information-return fine/cap, prospective application and effectivity. |
+| [RR 6-2026](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%206-2026.pdf) | 2026-11-16 | Read for: both pages visually read, applicable CWT invoice item, stamp/new-print transition and effectivity. The signed circular was reached from the BIR’s official press-release link. |
+| [CMEPA, RA 12214](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/99213); [RR 21-2025 official digest](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%2021-2025%20Digest.pdf) | 2026-11-16 | Read for: CMEPA sections 4-7, 13 and 28; individual/corporate passive-income tables and full transition paragraphs in the digest. Full RR 21-2025 was blocked; only the identified digest is claimed. |
+| [RR 14-2023](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2023.pdf) | 2026-11-16 | Read for: both scanned pages visually read, joint-venture supplier payments and distributive-share scope. It is not generic professional-fee authority. |
+| [RMC 20-2026](https://bir-cdn.bir.gov.ph/BIR/pdf/RMC%2020-2026.pdf) | 2026-11-16 | Read for: first page visually read and entire official digest, forms/electronic filing and the 2025-income/2026-filing scope. No future-cycle date inferred. |
+
+Not yet confirmed:
+
+The older references to **RMO 23-2018** for the 8% election and **RR 21-2018** for interest are preserved for recovery; their complete operative texts were not read in this review. The Guide uses the independently read professional-fee rules and RR 6-2024 for the statements made above. Special nonresident/treaty rates, all-industry ATCs, VAT/reimbursement adjustments to a fee base, transaction-specific electronic filing attachments and a full penalty/compromise assessment require their own current primary evidence before calculation.
+
+The former **TRAIN section 75 / NIRC 249 double-legal-rate formula and prohibition on simultaneous deficiency/delinquency interest for the same period** are retained for official-source recovery, not a cleared computation instruction. RR 6-2024 section 4 and its official digest support the current 6% reduced rate and 50% relationship (derived ordinary 12%), but do not themselves reproduce that interaction condition. The full TRAIN Act and RR 21-2018 were not recovered on an official host; obtain the operative provision before an actual interest assessment.

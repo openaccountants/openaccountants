@@ -1,363 +1,189 @@
 ---
 name: tanzania-tax-optimization
-description: "Tanzania Mainland tax-optimization, statutory reliefs, and incentive regimes administered by TRA and EPZA."
+description: "Compare 2026 Mainland statutory reliefs using actual eligibility, listing and performance agreements, conditional loss floors, AMT, distribution amendments, capital allowances and source limits."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/tanzania-tax-optimization"
   jurisdiction: "TZ"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-16"
 ---
 
-# Tanzania Tax Optimization
-
-## Tanzania Tax Optimization & Statutory Reliefs — Skill v1.0
-
-**Scope note.** This skill covers **Tanzania Mainland** tax-optimization, statutory reliefs, and incentive regimes administered by the **Tanzania Revenue Authority (TRA)**, plus the Export Processing Zones Authority (EPZA) for zone-based incentives. All figures are TZS (Tanzanian Shilling) unless stated. Tax year = calendar year (1 January – 31 December) unless an entity has an approved substituted accounting period. **Zanzibar** runs a separate administration (Zanzibar Revenue Authority — ZRA) with its own VAT/levy regime; Zanzibar differentials are flagged where relevant but Zanzibar-specific filings are out of scope — escalate. Several positions below changed under the **Finance Act 2025 (in force 1 July 2025 unless a later date is stated)** — those are flagged **FA2025**.
-
-## Rates and thresholds
-
-Items flagged for further clarification are tracked separately and excluded here.
-This block is generated from verified `skill_facts` — edit the facts, not the prose.
-
-### tanzania-tax-optimization
-
-- **DSE listing relief** — CIT 25% for 3 years where >=25% of shares issued to the public  _(Income Tax Act, Cap 332, First Schedule)_
-- **New assembler relief** — CIT 10% for first 5 years (vehicles, tractors, fishing boats)  _(Income Tax Act, Cap 332, First Schedule)_
-- **New pharmaceutical/leather manufacturer relief** — CIT 20% for first 5 years with Government performance agreement  _(Income Tax Act, Cap 332, First Schedule)_
-- **EPZ/SEZ incentives** — Income tax holiday (10 years) and WHT/indirect tax reliefs for qualifying export-oriented investors under the EPZ and SEZ regimes; FA2025 REMOVED income tax exemption for EPZ/SEZ sales into the domestic market  _(EPZ Act, Cap 373; SEZ Act, Cap 420; Finance Act 2025 (in force 1 Jul 2025 unless stated))_
-- **Agriculture - immediate expensing** — 100% first-year write-off of plant and machinery used in agriculture (Class 8); agricultural improvement expenditure also immediately deductible  _(Income Tax Act, Cap 332, Third Schedule)_
-- **EFD purchase write-off** — 100% write-off of electronic fiscal devices purchased by non-VAT-registered traders  _(Income Tax Act, Cap 332, Third Schedule Class 8)_
-- **Manufacturing/fish farming/tourist hotel enhanced allowance** — 50% allowance on qualifying plant and machinery spread equally over first two years  _(Income Tax Act, Cap 332, Third Schedule)_
-- **Loss utilisation planning** — Losses carry forward indefinitely but shelter only 60% of taxable profit per year; 3 consecutive loss years trigger 1% AMT on turnover  _(Income Tax Act, Cap 332, s.19; AMT provisions)_
-- **Retained earnings exposure** — Distribute or formally apply after-tax profits within 12 months of year-end; otherwise CG may deem 30% distributed and levy 10% WHT  _(Income Tax Act, Cap 332 (as amended by Finance Act 2025 (in force 1 Jul 2025 unless stated)))_
-- **Charitable/CSR deduction** — Up to 2% of taxable income for approved charitable and social development contributions  _(Income Tax Act, Cap 332, s.16)_
-- **Bond market reliefs** — WHT exemption on corporate, municipal and DSE-listed bonds of at least 3 years issued from 1 Jul 2021; government bonds per exemption terms  _(Income Tax Act, Cap 332 exemptions)_
-- **Presumptive regime (small individual traders)** — Turnover <= TZS 100m taxed on presumptive bands (top band 3.5% of turnover) - no full accounts or CIT computations  _(Income Tax Act, Cap 332, First Schedule para 2)_
-- **VAT input recovery planning** — Keep taxable supplies above 90% of total supplies for full input credit; exporters in consistent refund positions may apply for monthly refund lodgement  _(Value Added Tax Act, Cap 148)_
-- **Electronic payments VAT rate** — B2C supplies paid via bank/approved electronic systems attract 16% instead of 18% from 1 Sep 2025 - relevant to retail pricing and EFD configuration  _(Value Added Tax Act, Cap 148 (as amended by Finance Act 2025 (in force 1 Jul 2025 unless stated)))_
-- **Treaty structuring** — 9 DTTs (Canada, Denmark, Finland, India, Italy, Norway, South Africa, Sweden, Zambia); lower of treaty/domestic WHT with residence certificate  _(DTT network)_
-- **Zanzibar differentials** — Zanzibar: VAT 15%, SDL 5%, VAT threshold TZS 100m - separate administration (ZRA) for Zanzibar-based operations  _(Zanzibar legislation)_
-- **CGT exemptions in exits** — Resident disposals of DSE-listed shares exempt; non-resident exempt if holding <25%; private residence (gain <= TZS 15m) and small agricultural land (MV <= TZS 10m) exempt  _(Income Tax Act, Cap 332 exemptions)_
-- **AMT-exempt sectors** — Agriculture, health and education businesses exempt from AMT (tea processing exempt to 30 Jun 2027)  _(Income Tax Act, Cap 332 AMT provisions)_
-
-## Section 1 — Quick Reference
-
-**Quick Reference**
-
-| Field | Value |
-| --- | --- |
-| Country | United Republic of Tanzania (Mainland) |
-| Scope | Tax optimization, statutory reliefs, incentives |
-| Currency | TZS (Tanzanian Shilling) only |
-| Tax year | Calendar year (1 January – 31 December) |
-| Primary legislation | Income Tax Act, Cap. 332; Tax Administration Act, Cap. 438; VAT Act, Cap. 148; EPZ Act, Cap. 373; SEZ Act, Cap. 420 |
-| Tax authority | Tanzania Revenue Authority (TRA); EPZA (zones); ZRA (Zanzibar) |
-| Standard CIT rate | 30% (baseline against which all reduced-rate reliefs are measured) |
-| Skill version | 1.0 |
-
-### Reduced-Rate CIT Reliefs (Income Tax Act, Cap. 332, First Schedule)
-
-**Reduced-Rate CIT Reliefs**  _(ITA Cap. 332, First Schedule)_
-
-| Relief | CIT rate | Duration | Qualifying condition | Reference |
-| --- | --- | --- | --- | --- |
-| DSE listing relief | **25%** | 3 years | **≥25%** of shares issued to the public on the Dar es Salaam Stock Exchange | ITA Cap. 332, First Schedule |
-| New assembler relief | **10%** | First **5 years** | New assembler of **vehicles, tractors, or fishing boats** | ITA Cap. 332, First Schedule |
-| New pharmaceutical / leather manufacturer relief | **20%** | First **5 years** | New manufacturer with a **Government performance agreement** | ITA Cap. 332, First Schedule |
-
-### Zone, Allowance & Other Incentives
-
-**Zone, Allowance & Other Incentives**
-
-| Incentive | Benefit | Reference / flag |
-| --- | --- | --- |
-| EPZ / SEZ incentives | Income tax holiday (**10 years**) plus WHT and indirect-tax reliefs for qualifying export-oriented investors | EPZ Act, Cap. 373; SEZ Act, Cap. 420 — **FA2025 removed the income tax exemption for EPZ/SEZ sales into the domestic market** (1 Jul 2025) |
-| Agriculture — immediate expensing | **100% first-year write-off** of plant & machinery used in agriculture (**Class 8**); agricultural improvement expenditure also immediately deductible | ITA Cap. 332, Third Schedule |
-| EFD purchase write-off | **100% write-off** of electronic fiscal devices purchased by **non-VAT-registered** traders | ITA Cap. 332, Third Schedule, Class 8 |
-| Manufacturing / fish-farming / tourist-hotel enhanced allowance | **50%** allowance on qualifying plant & machinery, spread **equally over the first two years** | ITA Cap. 332, Third Schedule |
-| Charitable / CSR deduction | Up to **2% of taxable income** for approved charitable and social-development contributions | ITA Cap. 332, s.16 |
-| Bond market reliefs | **WHT exemption** on corporate, municipal and DSE-listed bonds of **≥3 years** issued from **1 Jul 2021**; government bonds per exemption terms | ITA Cap. 332 exemptions |
-| Presumptive regime | Turnover **≤ TZS 100m** taxed on presumptive bands (**top band 3.5% of turnover**); no full accounts or CIT computation | ITA Cap. 332, First Schedule, para 2 |
-
-### Loss, AMT & Distribution Planning
-
-**Loss, AMT & Distribution Planning**
-
-| Position | Rule | Reference / flag |
-| --- | --- | --- |
-| Loss carry-forward | Losses carry forward **indefinitely** but shelter only **60%** of taxable profit per year | ITA Cap. 332, s.19 |
-| Alternative Minimum Tax (AMT) | **3 consecutive loss years** trigger **1% AMT on turnover** | ITA Cap. 332, AMT provisions — **FA2025** (1 Jul 2025) |
-| AMT-exempt sectors | **Agriculture, health and education** businesses exempt; **tea processing** exempt **to 30 Jun 2027** | ITA Cap. 332, AMT provisions |
-| Retained-earnings / deemed distribution | Distribute or formally apply after-tax profits **within 12 months** of year-end; otherwise the Commissioner General may deem **30% distributed** and levy **10% WHT** | ITA Cap. 332 as amended by **FA2025** (1 Jul 2025) |
-
-### VAT, Treaty & Zanzibar Differentials
-
-**VAT, Treaty & Zanzibar Differentials**
-
-| Position | Rule | Reference / flag |
-| --- | --- | --- |
-| VAT input recovery | Keep **taxable supplies > 90%** of total supplies for **full input credit**; consistent-refund exporters may apply for **monthly** refund lodgement | VAT Act, Cap. 148 |
-| Electronic-payment VAT rate | B2C supplies paid via bank / approved electronic systems attract **16%** instead of 18% **from 1 Sep 2025** | VAT Act, Cap. 148 as amended by **FA2025** — effective **1 Sep 2025** |
-| Treaty structuring | **9 DTTs** (Canada, Denmark, Finland, India, Italy, Norway, South Africa, Sweden, Zambia); apply **lower of treaty/domestic WHT** with a **residence certificate** | DTT network |
-| Zanzibar differentials | **VAT 15%**, **SDL 5%**, **VAT threshold TZS 100m** — separate administration (**ZRA**) | Zanzibar legislation |
-
-### CGT Exemptions on Exits (ITA Cap. 332 exemptions)
-
-**CGT Exemptions on Exits**  _(ITA Cap. 332 exemptions)_
-
-| Disposal | Treatment |
-| --- | --- |
-| Resident disposal of **DSE-listed shares** | **Exempt** |
-| Non-resident disposal of shares | **Exempt if holding < 25%** |
-| Private residence | **Exempt if gain ≤ TZS 15m** |
-| Small agricultural land | **Exempt if market value ≤ TZS 10m** |
-
-### Conservative Defaults
-
-**Conservative Defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown whether a relief is formally granted/agreed | Assume **standard 30% CIT** until the qualifying condition (listing %, performance agreement, zone licence) is evidenced |
-| Unknown share-issuance % for DSE relief | Do **not** apply 25% rate until ≥25%-to-public is confirmed |
-| Unknown EPZ/SEZ domestic-vs-export split | Treat domestic-market sales as **taxable** (FA2025); flag |
-| Unknown number of consecutive loss years | Assume AMT **may** apply at 3 years; flag for AMT-exempt sector check |
-| Unknown whether profits distributed within 12 months | Flag deemed-distribution exposure (30% × 10% WHT) |
-| Unknown treaty residence certificate | Apply **domestic** WHT rate (higher), not the treaty rate |
-| Unknown Mainland vs Zanzibar | Assume **Mainland**; flag Zanzibar differentials |
-
-## Section 2 — Required Inputs and Refusal Catalogue
-
-### Required Inputs
-
-**Minimum viable** — entity type and residency, the activity/sector (to test relief eligibility), the relevant figure to be optimised (taxable profit, turnover, asset cost, payment type/amount), and confirmation of any **formal status** that a relief depends on (DSE listing %, Government performance agreement, EPZ/SEZ licence).
-
-**Recommended** — audited or management accounts, fixed-asset register with acquisition dates and asset classes, the prior-year tax computation and any brought-forward losses with the year each arose, dividend/distribution history for the last 12 months, VAT returns showing the taxable-vs-exempt supply mix, and any counterparty residence certificates for treaty claims.
-
-**Ideal** — the EPZA/SEZ incentive certificate and its conditions, the signed Government performance agreement (pharma/leather), DSE listing documentation, board resolutions on profit application/distribution, and the full DTT article relied upon for each cross-border payment.
-
-**Refusal if minimum is missing — SOFT WARN.** No entity/sector/figure at all = hard stop. A relief claimed without its evidencing status (licence, agreement, listing %) = proceed on the **standard 30% / domestic-rate basis** with a reviewer warning that the relief cannot be applied until status is evidenced.
-
-### Refusal Catalogue
-
-- **R-TZ-1** — Relief status unevidenced. Reduced-rate reliefs (DSE 25%, assembler 10%, pharma/leather 20%) and zone holidays depend on a formal status — listing %, performance agreement, or EPZA/SEZ licence. This skill will not apply a reduced rate without that evidence. Default to standard 30% CIT and flag.
-- **R-TZ-2** — Personal income tax / PAYE. Computing PAYE, individual presumptive liabilities, or statutory payroll contributions is a separate workflow (tanzania-income-tax). This skill covers tax-optimization and reliefs only.
-- **R-TZ-3** — Zanzibar filings. Zanzibar runs its own administration (ZRA) with VAT 15%, SDL 5%, and a TZS 100m VAT threshold. This skill flags Zanzibar differentials but does not prepare Zanzibar returns. Escalate.
-- **R-TZ-4** — Transfer pricing / Pillar Two / aggressive structuring. Treaty structuring here is limited to applying the lower of treaty/domestic WHT with a valid residence certificate. Transfer-pricing studies, BEPS/Pillar-Two analysis, and arrangements whose main purpose is tax avoidance are out of scope — escalate to a Tanzanian tax practitioner.
-- **R-TZ-5** — Arrears / enforcement / rulings. Client is in arrears, under TRA audit, or seeking a private ruling. Do not advise on optimization in that posture — escalate immediately.
-- **R-TZ-6** — Customs / excise / sector levies. Customs duty, excise, mining royalties, and sector-specific fiscal regimes are out of scope. Escalate.
-
-## Section 3 — Tier 1 Rules (Verified Positions)
-
-Each rule below was reviewed and verified by Baraka Cassian (CPA(T), CTA). The **standard CIT rate is 30%**; every reduced rate is measured against it.
-
-### 3.1 DSE Listing Relief — CIT 25% for 3 years
-
-- **DSE listing relief** — A company that issues at least 25% of its shares to the public on the Dar es Salaam Stock Exchange (DSE) pays CIT at 25% (instead of 30%) for three years. Planning point: the 5-point saving is time-boxed — model the present value of the 3-year saving against listing/compliance costs. Do not apply 25% until the ≥25%-to-public threshold is met.  _(ITA Cap. 332, First Schedule)_
-
-### 3.2 New Assembler Relief — CIT 10% for 5 years
-
-- **New assembler relief** — A new assembler of vehicles, tractors, or fishing boats pays CIT at 10% for the first five years. The relief is for new assemblers of the listed product categories only — confirm the activity falls squarely within them before applying.  _(ITA Cap. 332, First Schedule)_
-
-### 3.3 New Pharmaceutical / Leather Manufacturer Relief — CIT 20% for 5 years
-
-- **New pharmaceutical / leather manufacturer relief** — A new pharmaceutical or leather manufacturer that has entered a performance agreement with the Government pays CIT at 20% for the first five years. The performance agreement is a precondition — without it, the standard 30% applies.  _(ITA Cap. 332, First Schedule)_
-
-### 3.4 EPZ / SEZ Incentives — 10-Year Holiday (FA2025 narrowing)
-
-- **EPZ / SEZ incentives narrowing** — Qualifying export-oriented investors licensed under the EPZ Act, Cap. 373 or SEZ Act, Cap. 420 receive an income tax holiday of 10 years plus WHT and indirect-tax reliefs. FA2025 (effective 1 Jul 2025) removed the income tax exemption for EPZ/SEZ sales made into the domestic market. Plan on the basis that export sales retain the holiday but domestic-market sales from a zone are now taxable — apportion accordingly and flag the split.  _(EPZ Act, Cap. 373; SEZ Act, Cap. 420; FA2025 (effective 1 Jul 2025))_
-
-### 3.5 Capital Allowances — Immediate & Enhanced Expensing
-
-Three distinct accelerated positions exist under the Third Schedule:
-
-**Capital Allowances table**  _(ITA Cap. 332, Third Schedule)_
-
-| Asset / activity | Allowance | Note |
-| --- | --- | --- |
-| Plant & machinery used in **agriculture** (Class 8) | **100%** first-year write-off | Agricultural **improvement expenditure** also immediately deductible |
-| **Electronic fiscal devices** bought by **non-VAT-registered** traders (Class 8) | **100%** write-off | Encourages EFD adoption among small traders |
-| Plant & machinery in **manufacturing, fish farming, or tourist hotels** | **50%** allowance | Spread **equally over the first two years** (i.e. 25% + 25%) |
-
-### 3.5 Capital Allowances — Immediate & Enhanced Expensing
-
-Use immediate/enhanced expensing to accelerate deductions into the earliest years, but interact this with §3.6 (60% loss cap) and §3.7 (AMT) — front-loading allowances can create or extend a loss position that triggers AMT.
-
-### 3.6 Loss Utilisation — Indefinite Carry-Forward, 60% Cap
-
-- **Loss utilisation** — Tax losses carry forward indefinitely, but in any year they may shelter only 60% of that year's taxable profit. The remaining 40% of profit is taxable even where carried-forward losses exceed it. Plan timing of income and allowances so losses are absorbed efficiently against the 60% cap rather than being unnecessarily deferred.  _(ITA Cap. 332, s.19)_
-
-### 3.7 Alternative Minimum Tax (AMT) — 1% of Turnover after 3 Loss Years (FA2025)
-
-- **AMT** — A company in a tax-loss position for three consecutive years pays AMT of 1% of turnover. Exempt sectors: agriculture, health, and education businesses; tea processing is exempt until 30 Jun 2027. AMT is the key reason perpetual-loss structuring fails — model the third-year exposure (1% × turnover) before front-loading allowances.  _(ITA Cap. 332, AMT provisions — FA2025, effective 1 Jul 2025)_
-
-### 3.8 Retained-Earnings / Deemed-Distribution Exposure (FA2025)
-
-- **Deemed distribution** — After-tax profits should be distributed or formally applied within 12 months of year-end. Otherwise the Commissioner General may deem 30% of those profits distributed and levy 10% WHT on the deemed dividend. Planning point: document a board resolution applying retained profits (e.g. to reinvestment) within the 12-month window, or accept and budget for the deemed-distribution WHT.  _(ITA Cap. 332 as amended by FA2025, effective 1 Jul 2025)_
-
-### 3.9 Charitable / CSR Deduction — Up to 2% of Taxable Income
-
-- **Charitable/CSR deduction** — Approved charitable and social-development contributions are deductible up to 2% of taxable income. Contributions above the 2% ceiling are non-deductible. Confirm the recipient is approved before claiming.  _(ITA Cap. 332, s.16)_
-
-### 3.10 Bond-Market Reliefs — WHT Exemption on ≥3-Year Bonds
-
-- **Bond market reliefs** — Interest on corporate, municipal, and DSE-listed bonds with a tenor of at least 3 years issued from 1 Jul 2021 is WHT-exempt; government bonds are exempt per their stated terms. Tenor (≥3 years) and issue date (from 1 Jul 2021) both matter — shorter or earlier issues do not qualify.  _(ITA Cap. 332 exemptions)_
-
-### 3.11 Presumptive Regime — Turnover ≤ TZS 100m
-
-- **Presumptive regime** — Small individual traders with turnover not exceeding TZS 100m are taxed on presumptive bands (top band 3.5% of turnover) with no full accounts or CIT computation. For an optimization lens, presumptive eligibility removes compliance cost — but crossing TZS 100m (or registering for VAT) forces the standard net-profit regime.  _(ITA Cap. 332, First Schedule, para 2)_
-
-### 3.12 VAT Input-Recovery Planning
-
-- **VAT input recovery** — Keep taxable supplies above 90% of total supplies to secure full input-VAT credit. Below that, input recovery is restricted (apportioned). Exporters in a consistent refund position may apply for monthly refund lodgement to improve cash flow.  _(VAT Act, Cap. 148)_
-
-### 3.13 Electronic-Payment VAT Rate — 16% from 1 Sep 2025 (FA2025)
-
-- **Electronic-payment VAT rate** — From 1 Sep 2025, B2C supplies paid via bank or approved electronic systems attract VAT at 16% instead of the standard 18%. This is relevant to retail pricing and EFD configuration — ensure the EFD applies 16% only to qualifying electronic-payment B2C transactions and 18% otherwise.  _(VAT Act, Cap. 148 as amended by FA2025)_
-
-### 3.14 Treaty Structuring — Lower of Treaty/Domestic WHT
-
-- **Treaty structuring** — Tanzania has 9 double-taxation treaties: Canada, Denmark, Finland, India, Italy, Norway, South Africa, Sweden, and Zambia. For cross-border payments, apply the lower of the treaty rate or the domestic WHT rate, supported by a residence certificate from the recipient's tax authority. Without a valid residence certificate, apply the domestic rate.  _(DTT network)_
-
-### 3.15 Zanzibar Differentials
-
-- **Zanzibar differentials** — For Zanzibar-based operations, note the separate ZRA administration and differentials: VAT 15% (vs 18% Mainland), SDL 5%, and a VAT registration threshold of TZS 100m. Apply Mainland figures only to Mainland operations; flag and escalate Zanzibar filings.  _(Zanzibar legislation)_
-
-### 3.16 CGT Exemptions on Exits
-
-- **CGT exemptions on exits** — On disposals/exits, the following are exempt: resident disposals of DSE-listed shares; non-resident share disposals where the holding is below 25%; a private residence where the gain ≤ TZS 15m; and small agricultural land where market value ≤ TZS 10m. Structure exits to fall within these exemptions where genuinely available (e.g. realising listed-share gains as a resident).  _(ITA Cap. 332 exemptions)_
-
-## Section 4 — Worked Examples
-
-### Example 1 — DSE listing relief vs standard CIT
-
-**Input:** Resident company, taxable profit **TZS 4,000,000,000**, has issued **30%** of shares to the public on the DSE.
-
-**Reasoning:**
-≥25%-to-public condition met → CIT **25%** for 3 years.
-CIT at relief rate = 25% × 4,000,000,000 = **1,000,000,000**.
-CIT at standard rate = 30% × 4,000,000,000 = 1,200,000,000.
-Annual saving = 1,200,000,000 − 1,000,000,000 = **200,000,000**; over 3 years = **600,000,000**.
-
-**Classification:** DSE relief CIT = TZS 1,000,000,000; 3-year saving = TZS 600,000,000.
-
-### Example 2 — Loss utilisation under the 60% cap
-
-**Input:** Company has **TZS 500,000,000** brought-forward losses and **TZS 600,000,000** taxable profit this year.
-
-**Reasoning:**
-Losses may shelter only **60%** of profit: 60% × 600,000,000 = **360,000,000** can be used.
-Taxable profit after loss relief = 600,000,000 − 360,000,000 = **240,000,000** (the residual 40%).
-CIT = 30% × 240,000,000 = **72,000,000**.
-Losses carried forward = 500,000,000 − 360,000,000 = **140,000,000** (indefinitely).
-
-**Classification:** Loss used = TZS 360,000,000; CIT = TZS 72,000,000; losses c/f = TZS 140,000,000.
-
-### Example 3 — AMT after three consecutive loss years
-
-**Input:** Trading company (not agriculture/health/education/tea), **third consecutive loss year**, turnover **TZS 2,000,000,000**.
-
-**Reasoning:**
-Three consecutive loss years → **AMT applies** at **1% of turnover** (FA2025).
-AMT = 1% × 2,000,000,000 = **20,000,000**, payable despite the accounting loss.
-If the company were in agriculture/health/education (or tea processing to 30 Jun 2027), AMT would be **NIL**.
-
-**Classification:** AMT = TZS 20,000,000.
-
-### Example 4 — Deemed distribution on undistributed profits
-
-**Input:** After-tax profit **TZS 800,000,000** not distributed or formally applied within 12 months of year-end.
-
-**Reasoning:**
-Commissioner General may deem **30%** distributed: 30% × 800,000,000 = **240,000,000** deemed dividend.
-WHT = **10%** × 240,000,000 = **24,000,000**.
-
-**Classification:** Deemed-distribution WHT exposure = TZS 24,000,000 (avoidable by distributing/applying profits within 12 months).
-
-### Example 5 — Enhanced manufacturing allowance (50% over two years)
-
-**Input:** Manufacturer buys qualifying plant & machinery for **TZS 1,000,000,000**.
-
-**Reasoning:**
-Enhanced allowance = **50%** of cost, spread **equally over the first two years**.
-Year 1 allowance = 25% × 1,000,000,000 = **250,000,000**.
-Year 2 allowance = 25% × 1,000,000,000 = **250,000,000**.
-Total enhanced relief over two years = **500,000,000** of the TZS 1bn cost.
-
-**Classification:** Year-1 allowance = TZS 250,000,000; Year-2 allowance = TZS 250,000,000.
-
-### Example 6 — Treaty vs domestic WHT on a service fee
-
-**Input:** Resident company pays a **TZS 100,000,000** service fee to a recipient in a DTT country (e.g. South Africa). Assume domestic WHT on the service payment = 15%; the applicable treaty rate = 10%. Recipient provides a valid residence certificate.
-
-**Reasoning:**
-Apply the **lower of treaty/domestic** WHT with the residence certificate → treaty **10%**.
-WHT = 10% × 100,000,000 = **10,000,000** (vs 15% × 100,000,000 = 15,000,000 domestic).
-Without the residence certificate, the domestic **15%** (TZS 15,000,000) applies.
-
-**Classification:** WHT with treaty relief = TZS 10,000,000; saving vs domestic = TZS 5,000,000. (Domestic/treaty percentages are illustrative; confirm the specific article and rate.)
-
-### Example 7 — Charitable deduction ceiling (2% of taxable income)
-
-**Input:** Company with **TZS 500,000,000** taxable income makes an approved charitable contribution of **TZS 15,000,000**.
-
-**Reasoning:**
-Deduction ceiling = **2%** × 500,000,000 = **10,000,000**.
-Contribution (15,000,000) exceeds the ceiling → deductible amount capped at **10,000,000**; the excess **5,000,000** is non-deductible.
-
-**Classification:** Deductible donation = TZS 10,000,000; disallowed = TZS 5,000,000.
-
-## Section 5 — Reference Material
-
-### Key Legislation / Authority References
-
-**Key Legislation / Authority References**
-
-| Topic | Reference |
-| --- | --- |
-| CIT reliefs, capital allowances, losses/AMT, deemed distribution, CGT/bond exemptions, presumptive | **Income Tax Act, Cap. 332** (First Schedule; Third Schedule; s.16; s.19; AMT provisions; exemptions) |
-| Tax administration, penalties, rulings | **Tax Administration Act, Cap. 438** |
-| VAT input recovery, electronic-payment rate | **Value Added Tax Act, Cap. 148** |
-| EPZ incentives | **Export Processing Zones Act, Cap. 373** |
-| SEZ incentives | **Special Economic Zones Act, Cap. 420** |
-| FA2025 changes (EPZ/SEZ domestic-sales exemption removed; AMT; deemed distribution; 16% electronic-payment VAT) | **Finance Act 2025** — in force **1 Jul 2025** unless stated (electronic-payment VAT rate effective **1 Sep 2025**) |
-| Bond-market WHT exemption | ITA Cap. 332 exemptions — bonds **≥3 years** issued from **1 Jul 2021** |
-| Treaty network | **DTT network** — 9 treaties: Canada, Denmark, Finland, India, Italy, Norway, South Africa, Sweden, Zambia |
-| Zone administration | **EPZA** (Export Processing Zones Authority) |
-| Tax authority | **Tanzania Revenue Authority (TRA)**; **Zanzibar Revenue Authority (ZRA)** for Zanzibar |
-
-### Finance Act 2025 — Items to Flag Explicitly
-
-**Finance Act 2025 — Items to Flag Explicitly**
-
-| FA2025 change | Effect | Effective |
-| --- | --- | --- |
-| EPZ/SEZ domestic-market sales | Income tax exemption **removed** for sales into the domestic market | 1 Jul 2025 |
-| AMT | 1% of turnover after 3 consecutive loss years (agriculture/health/education exempt; tea processing to 30 Jun 2027) | 1 Jul 2025 |
-| Deemed distribution | 30% of undistributed after-tax profit deemed distributed → 10% WHT if not applied within 12 months | 1 Jul 2025 |
-| Electronic-payment VAT | 16% (vs 18%) on B2C electronic-payment supplies | 1 Sep 2025 |
-
-## PROHIBITIONS
-
-- NEVER apply a reduced CIT rate (DSE 25%, assembler 10%, pharma/leather 20%) without confirming the qualifying status — listing ≥25%-to-public, product category, or Government performance agreement; default to the **standard 30%** otherwise.
-- NEVER treat EPZ/SEZ **domestic-market** sales as income-tax exempt on or after **1 Jul 2025** — FA2025 removed that exemption; only export sales retain the holiday.
-- NEVER shelter more than **60%** of a year's taxable profit with carried-forward losses — the residual 40% is always taxable.
-- NEVER assume perpetual losses are costless — **3 consecutive loss years trigger 1% AMT on turnover** (unless agriculture/health/education, or tea processing to 30 Jun 2027).
-- NEVER ignore the **12-month** distribution window — undistributed/unapplied after-tax profit risks a deemed 30% distribution and 10% WHT.
-- NEVER deduct charitable/CSR contributions above **2% of taxable income**.
-- NEVER apply the **16%** electronic-payment VAT rate before **1 Sep 2025**, or to non-qualifying (non-electronic / non-B2C) supplies.
-- NEVER claim a treaty WHT rate without a valid **residence certificate** — apply the domestic rate by default.
-- NEVER apply Mainland VAT (18%), SDL, or thresholds to **Zanzibar** operations — Zanzibar uses VAT 15%, SDL 5%, TZS 100m threshold under ZRA.
-- NEVER claim a CGT exemption outside its stated limit — DSE-listed shares (resident), non-resident holdings <25%, private residence gain ≤ TZS 15m, agricultural land MV ≤ TZS 10m.
-- NEVER treat presumptive eligibility as available above **TZS 100m** turnover or for a VAT-registered trader.
-- NEVER present optimization output as definitive — always label it estimated and require accountant sign-off before acting.
+# Tanzania Mainland statutory tax relief decisions v2.0
+
+**General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
+
+### Quick reference
+
+Compare 2026 Tanzania Mainland statutory tax reliefs against supported ordinary outcomes. Qualification, dates, profit/turnover/base and actual approvals determine the result. This is a decision working paper, not a list of elections anyone can make. The historical named attribution below does not approve this rewrite. Currency TZS; Zanzibar requires separate current law.
+
+## Ask the client first
+
+- Entity, residence, Mainland/Zanzibar, actual year/accounting period, sector and nature of income.
+- Taxable profit, turnover, eligible unrelieved losses and 4 prior-year history, AMT exempt sector and ownership changes.
+- Listing/public float/date, production start, government performance agreement, zone/strategic licence and actual exempt/domestic sales.
+- Asset net cost, ownership/use, pool/class, acquisition/production date and any previous allowance.
+- Distribution history, CG determination/exception, donation recipient/ruling and relevant income-before-deduction.
+- Exit ownership/use/value/control facts; actual VAT/treaty/procedure/approval evidence for the proposed position.
+
+## Rates, bands and thresholds
+
+| Item | Figure / rule and complete conditions | Official source |
+|---|---|---|
+| Standard entity tax | 30% for corporations, trusts, unapproved retirement funds and domestic PEs under First Schedule 3(1), subject to actual special regime. Figures in words on page. This is the comparison baseline, not a substitute for determining residence/entity/sector. | [First Schedule 3(1)](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf) |
+| New DSE listing | 25% for 3 consecutive years from listing, with at least 25% equity ownership issued to public. 2025 s 60 changes public-float requirement 30% to 25%; current 2026 relief still needs actual listing/date/ownership evidence. Rate/duration in words on Act page. | [First Schedule 3(2)(a); FA 2025 s 60(d)](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf); [s 60(d) public float](https://www.tra.go.tz/images/uploads/acts/THE_FINANCE_ACT%2C_2025.pdf) |
+| New assembly plant | 10% for 5 consecutive years from production commencement for newly established vehicle, tractor, fishing-boat/outboard-engine assembly plant WITH government performance agreement. Old omission of the agreement is corrected. Figures in words. | [First Schedule 3(2)(b)](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf) |
+| New pharmaceutical/leather manufacturer | 20% for 5 consecutive years from production commencement; newly established qualifying activity AND government performance agreement required. Figures in words. No automatic relief for an existing retailer. | [First Schedule 3(2)(c)](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf) |
+| Zone income exemption | Second Schedule 1(1)(o)initial 10 years for qualifying investment/business within EPZ/SEZ, with 2025 s 61 domestic-sale/off load exclusion. Preserve actual licence, start date, qualifying export income and current transitional regime. Do not infer WHT/VAT/duty holidays from income exemption alone; new Investment/SEZ Act transition must be checked. | [Second Schedule 1(1)(o); FA 2025 s 61](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf); [s 61 zone amendment](https://www.tra.go.tz/images/uploads/acts/THE_FINANCE_ACT%2C_2025.pdf) |
+| Agricultural plant / non-VAT EFD | Class 8 rate 100% for qualifying agricultural plant/machinery including specified windmills/generators/distribution equipment and EFD purchased by non-VAT registered trader; owned/employed wholly/exclusively for business and proper pool/timing. Do not equate every farm building with Class 8. | [s 17; Third Schedule 1 Class 8,3(6)](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf) |
+| Agricultural improvement | s 15 deducts qualifying current expenditure by owner/occupier on land clearing, irrigation channels and perennial crops/trees in agriculture/livestock/fish farming; also specified soil-erosion prevention and qualifying R&D. No double deduction of asset cost. | [s 15 with definitions](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf) |
+| Enhanced plant initial allowance | 50% of net cost for qualifying factory-fixed manufacturing plant, farming fish, or tourist-service hotel-fixed plant, added to Class 2/3 pool. Split 2 EQUAL portions under 2024 s 47:25%+25% derived; second portion unavailable if pool dissolved. Do not claim 100% cost plus this allowance or ignore ordinary-pool basis reductions. | [Third Schedule 2; FA 2024 s 47](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf); [s 47 equal initial allowance](https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf) |
+| Loss carry-forward | 19 permits unrelieved losses without a simple fixed expiry in that provision, but source/activity ringfences, ownership and other limits still apply. Foreign investment/other investment/foreign business/agricultural/speculative losses cannot indiscriminately offset any profit. | [s 19(1),(3)-(5); s 56](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf) |
+| Loss floor: conditional, not universal | 19(2)applies (4 previous years and 40% floor in words on the page) when current chargeable income and unrelieved losses for 4 previous consecutive income years meet statutory predicate. 2024 s 36 raises residual floor 30% to 40% of income before losses, so maximum 60% use is derived. Agriculture/health/education corporation exception. Do not impose 60% cap on every taxpayer with a carried loss. | [s 36; ITA 19(2)](https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf); [s 19(2) qualifying loss history](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf) |
+| AMT | 1% turnover (3 years in words on the Act page) for qualifying corporation in 3rd consecutive perpetual-unrelieved-loss year;2025 s 60 raises 0.5% to 1%. Agriculture/health/education excluded under 4(8); tea-processing relief through 30 June 2027 under 2024 s 34. Accounting loss alone does not establish perpetual tax loss or exempt status. | [s 60(d)(ii); ITA 4(8), First Schedule 3(3); FA 2024 s 34](https://www.tra.go.tz/images/uploads/acts/THE_FINANCE_ACT%2C_2025.pdf); [s 4(8), First Schedule 3(3)](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf); [s 34 tea exception](https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf) |
+| Deemed distribution | 33A allows CG determination after 12 months without distribution. Old deemed 30% becomes 15% from 1 July 2026, with 96(6)and listed/financial/insurance/framework-mining exceptions. Apply actual dividend WHT rate; not always 10%. Later distribution avoids duplicate withholding only to extent already deemed. A board resolution/formal application of profits is not a sourced automatic exemption. | [s 22; FA 2025 s 49](https://www.tra.go.tz/images/uploads/acts/THE_FINANCE_ACT%2C_2026.pdf); [s 49 original 33A](https://www.tra.go.tz/images/uploads/acts/THE_FINANCE_ACT%2C_2025.pdf) |
+| Charity / social development | ITA 16(1)(a) deduction is capped at 2% of business income BEFORE deduction, for gifts to a qualifying charitable institution OR a social-development project. For the charitable-institution branch,64(8) requires resident public character, establishment/functions solely for poverty/distress relief, environmental protection, advancement of education or health, or general public health/education/water/road construction or maintenance, AND a currently operative CG ruling under TAA 11. Do not impose that charity definition automatically on the separate social-development-project alternative or treat all CSR as eligible. Numbers in words on law page. | [ss 16(1)-(5),64(8)](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf); [s 38 charity purposes](https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf); [ss 16 and 64(8) consolidated](https://elibrary.osg.go.tz/bitstreams/d8e39776-4616-4386-bd1c-8ce8eb2caa3c/download) |
+| Government bonds | Government bonds at least 3 years maturity, issued/listed DSE from 1 July 2021 under Second Schedule 1(1)(x). Distinct 105 corporate/municipal DSE bond withholding exception from 1 July 2022. Do not fuse them into all 3 year bonds exempt from 2021. | [Second Schedule 1(1)(x); current 105(2)(g)](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf); [s 105(2)(g) current corporate/municipal bond identity](https://elibrary.osg.go.tz/bitstreams/d8e39776-4616-4386-bd1c-8ce8eb2caa3c/download) |
+| Presumptive eligibility | Resident individual with exclusively eligible Tanzania-source business income, no disqualifying independent profession/technical/management/construction/training service, and no election out. Not corporate income and not automatically record-free. Old VAT registration exclusion was not established by the recovered First Schedule condition; hold that proposed exclusion rather than inventing it. | [First Schedule 2(1)-(2)](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf) |
+| Presumptive 2026 change | From 1 July 2026 threshold 100,000,000→200,000,000 and top band 3.5%→4% turnover. New TIN business exemption for first 12 months, turnover over 4 m not more 200 m, requires application and CG satisfaction, not automatic nil. Annual 2026 application must reconcile First Schedule 5 midyear income/day-apportionment; do not apply 4% to entire year blindly. | [s 27(a); ITA First Schedule 5](https://www.tra.go.tz/images/uploads/acts/THE_FINANCE_ACT%2C_2026.pdf); [First Schedule 5 annual transition](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf) |
+| Presumptive lower bands after amendment | ≤4 m nil; over 4 m to 7 m:100,000 where records rule not met, otherwise 3% of excess over 4 m; over 7 m to 11 m:250,000 without records, otherwise 90,000+3% excess over 7 m; over 11 m to 200 m:4% turnover. All TZS and same eligibility/transition limits. Registration exemption row does not erase the ordinary bands for everyone. | [s 27(a)new Table](https://www.tra.go.tz/images/uploads/acts/THE_FINANCE_ACT%2C_2026.pdf) |
+| VAT input planning | 74 mixed input ratio >90% full,<10% none, otherwise apportion with annual true up; at 90% not automatically full. Genuine supply facts/support control, not artificial descriptions to hit threshold. Refunds under 85-88 need actual eligibility/returns/auditor support, not a promise of monthly cash. | [ss 72-74,85-88](https://www.tra.go.tz/images/uploads/acts/The_Value_Added_Tax_Act.pdf) |
+| VAT electronic payments | Statutory 16% from 1 September 2025 for eligible unregistered B2C bank/CG-approved electronic payment arrangements; actual CG public notice and payment proof required. Notice not recovered: hold pricing/EFD configuration until eligibility established. Standard 18% not an eligibility shortcut. 16 in words on page. | [ss 124 and 131; VAT 5(6),70(3)](https://www.tra.go.tz/images/uploads/acts/THE_FINANCE_ACT%2C_2025.pdf)  [official TRAB same Act, ss 124 and 131](https://www.trab.go.tz/uploads/documents/en-1776865445-THE%20FINANCE%20ACT,%202025.pdf) |
+| Treaty opportunities | TRA lists 9 partners: Canada, Denmark, Finland, India, Italy, Norway, South Africa, Sweden, Zambia (count derived). In-force/effective article, actual residence, beneficial ownership, PE and 154 anti-abuse required. A residence certificate alone does not prove a lower service fee cap. | [Double taxation agreement list; ITA 154](https://www.tra.go.tz/resource-center/9); [s 154 treaty priority and anti-abuse](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf) |
+| Listed-share exit | ITA 3 investment/business asset exclusions concern DSE-listed shares/securities owned by resident, or nonresident who alone/with associates controls LESS THAN 25% controlling shares. Not all private shares or all foreign exits qualify. 25 in words on page. | [s 3, business asset/investment asset definitions](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf) |
+| Private residence exit | Individual continuously owns residence at least 3 years and lives there continuously/intermittently at least 3 years; gain not over 15,000,000. Threshold without ownership/use evidence is insufficient. Figures in words on page. | [s 3 investment asset definition](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf)  [official OSG Act, s 3 definitions](https://elibrary.osg.go.tz/bitstreams/d8e39776-4616-4386-bd1c-8ce8eb2caa3c/download) |
+| Small agricultural land exit | Individual-held land market value LESS THAN 10,000,000 at realisation and agricultural use at least 2 of previous 3 years. Old≤10 m boundary wrong. Figures in words on page. | [s 3 business asset/investment asset definitions](https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf)  [official OSG Act, s 3 definitions](https://elibrary.osg.go.tz/bitstreams/d8e39776-4616-4386-bd1c-8ce8eb2caa3c/download) |
+| Actual source support | Business goods/services expenditure requires fiscal receipt under 2024 s 35, except qualifying nonresident/noPE supplier or person excluded under TAA 36(2). Relief/incentive labels do not remove records/filing or prove a deduction. | [s 35, ITA 11(4)](https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf) |
+
+## The method, step by step
+
+1. Establish entity, residence, Mainland/Zanzibar, year/approved accounting period, activity and the actual transaction. Distinguish taxable profit, turnover, cashflow and capital cost. The calendar year is standard under 20, but an actual approved substituted period controls for an entity.
+2. Compare standard tax with each statutory relief only after establishing every condition: listing/public float/date, production start/performance agreement, asset use/pool/net cost, zone licence/exempt income and domestic-sales split. Unknown eligibility is a hold;30% may be a clearly labelled comparison estimate, not a concluded liability.
+3. Reconcile business income, deductions, loss history/ringfences/ownership changes and the conditional 19(2)floor. Separately test AMT's perpetual tax loss and sector conditions; do not substitute accounting loss for statutory loss or apply 60% universally.
+4. Review distribution history, year-end, CG determination, exclusions and actual WHT. Evaluate actual distribution under the governing law; do not assume a resolution or earmarking alone defeats 33A. Later actual distribution needs an amount-already-deemed reconciliation.
+5. Check VAT and treaty opportunities through their separate skills and actual evidence. Corporate relief is not proof of VAT exemption. Compare tax costs only after proving legal eligibility and do not invent a treaty rate or manipulate supply descriptions.
+6. Record options, facts, conditions, source/read date, calculation, unknown items and evidence needed before action. Obtain qualified review of actual filings/elections/approvals and period transition. No artificial back dating, undocumented agreement or unsupported exemption claim.
+
+### Exits, zones and current-year boundaries
+
+Private home and agricultural land exclusions require both the monetary boundary AND actual ownership/use conditions. DSE-share exclusion needs listing and residence/associated-control facts; not all nonresident holdings below 25% in any company are exempt. Transactions through business/trading/depreciable asset provisions need their own analysis. Do not promise a CGT exemption from a single price field.
+
+The recovered 10 year zone income provision and 2025 domestic offload exclusion are not a complete 2026 zone eligibility review: the new Investment and Special Economic Zones Act, licences, transitions and separate WHT/VAT/customs relief must be checked. 2026 s 21 allows specified Cabinet-approved strategic/public interest/mining framework/state ownership agreements; construction-stage mining exemption ceases at production. Do not assume the old EPZA/SEZ regime or administrative name alone proves current approval. All old WHT/indirect-relief claims remain held without their operative provisions.
+
+Presumptive changes start 1 July 2026; First Schedule 5 requires applicable midyear apportionment for annual rates. Its detailed interaction with gross-turnover bands, new threshold and first-TIN exemption needs actual 2026 implementation. Preserve both periods rather than claim old 100 m/3.5% for 2026 or new 200 m/4% for the entire year. No final annual presumptive bill is produced here while that transition is unresolved. Ordinary record keeping is still relevant to the band; no claim that presumptive traders never need accounts or are automatically excluded if VAT registered.
+
+Zanzibar VAT 15%, SDL 5% and TZS 100 million VAT threshold from the old skill are unverified 2026 figures retained only on the final boundary line. They are not usable Mainland or Zanzibar assumptions. Unknown location must be resolved before planning.
+
+### Historical attribution
+
+The prior version stated: Each rule below was reviewed and verified by Baraka Cassian (CPA(T), CTA). That historical attribution is preserved; it does not attest this rewrite. This version has not been reviewed by an accountant.
+
+## Worked cases
+
+Inputs below are hypothetical TZS and results derived. They compare statutory outcomes only under stated qualifying facts; they do not establish the actual entity's entitlement.
+
+### Listing decision: qualified vs unqualified
+
+Annual taxable profit 4,000,000,000; proved new DSE listing with the original scenario fact of 30% public float (which exceeds the current at-least-25% legal condition) and within 3 year period gives tax 1,000,000,000 at 25%. Standard 30% case gives 1,200,000,000; difference 200,000,000 per year,600,000,000 over 3 identical full-profit years (derived). If qualifying conditions are not met, the lower rate cannot be elected merely for the saving. Original case retained, with listing/period evidence required.
+
+```oa-check
+name: Listing relief decision compares qualified and standard outcomes
+inputs:
+  annual_taxable_profit: 4000000000
+  comparable_full_years: 3
+steps:
+  standard_tax: annual_taxable_profit * 0.30
+  qualified_listing_tax: annual_taxable_profit * 0.25
+  annual_difference: standard_tax - qualified_listing_tax
+  three_year_difference: annual_difference * comparable_full_years
+expected:
+  standard_tax: 1200000000
+  qualified_listing_tax: 1000000000
+  annual_difference: 200000000
+  three_year_difference: 600000000
+```
+
+### Loss decision: the missing 4 previous-year predicate matters
+
+Profit before losses 600,000,000; eligible unrelieved loss 500,000,000. If 19(2)'s 4 previous consecutive-year predicate applies and no sector exception,40% residual floor gives maximum loss 360,000,000, taxable 240,000,000, CIT 72,000,000, loss carried 140,000,000. If that floor does NOT apply and all ordinary loss conditions permit full 500,000,000, taxable 100,000,000, CIT 30,000,000, loss balance 0. The 42,000,000 difference illustrates why the old universal 60% cap is wrong; it is not permission to disregard a proven floor/ringfence.
+
+```oa-check
+name: Loss floor applies only after its statutory history test
+inputs:
+  income_before_losses: 600000000
+  eligible_losses: 500000000
+steps:
+  conditional_floor: income_before_losses * 0.40
+  floor_case_loss_used: min(eligible_losses, income_before_losses - conditional_floor)
+  floor_case_taxable: income_before_losses - floor_case_loss_used
+  floor_case_tax: floor_case_taxable * 0.30
+  floor_case_loss_carried: eligible_losses - floor_case_loss_used
+  no_floor_loss_used: min(eligible_losses, income_before_losses)
+  no_floor_tax: (income_before_losses - no_floor_loss_used) * 0.30
+  difference: floor_case_tax - no_floor_tax
+expected:
+  floor_case_loss_used: 360000000
+  floor_case_taxable: 240000000
+  floor_case_tax: 72000000
+  floor_case_loss_carried: 140000000
+  no_floor_tax: 30000000
+  difference: 42000000
+```
+
+### Other preserved scenarios
+
+- A qualifying nonexempt trading corporation in its 3rd consecutive perpetual-tax loss year, turnover 2,000,000,000, has 20,000,000 AMT at 1%. Agriculture/health/education or actual tea exemption changes the result; an accounting loss alone proves neither.
+- For profit 800,000,000 and a lawful 33A determination under the post July 2026 rule, deemed 15%=120,000,000; at an ACTUALLY applicable 10% dividend WHT,12,000,000 tax. Old 30% basis yielded 240,000,000/24,000,000. These are date/recipient-conditioned examples, not an automatic bill or a claim that formal application of profits avoids tax.
+- Qualifying enhanced-allowance net cost 1,000,000,000 gives total 500,000,000, split 250,000,000 in each of the first 2 years, provided the pool survives for the second portion. Reconcile ordinary-pool basis and timing; do not double-deduct the asset.
+- Eligible 16(1)(a)donation 15,000,000 against business income BEFORE this deduction 500,000,000: cap 10,000,000, deduct 10,000,000, disallow 5,000,000. Not a cap on the already reduced income.
+- The old service fee 100,000,000/domestic 15%/assumed treaty 10% example is preserved only as an UNSUPPORTED hypothetical rate comparison:15,000,000 vs 10,000,000, difference 5,000,000. No actual South African service article/rate was established; do not use this illustration as treaty advice. Actual rate/effective article/anti-abuse must be read first.
+
+```oa-check
+name: Charitable deduction uses income before this deduction
+inputs:
+  business_income_before_donation: 500000000
+  eligible_donation: 15000000
+steps:
+  ceiling: business_income_before_donation * 0.02
+  allowed: min(eligible_donation, ceiling)
+  disallowed: eligible_donation - allowed
+  income_after_deduction: business_income_before_donation - allowed
+expected:
+  ceiling: 10000000
+  allowed: 10000000
+  disallowed: 5000000
+  income_after_deduction: 490000000
+```
+
+## When to refuse or refer
+
+Do not claim reduced rates without actual listing/agreement/production/zone evidence, universal 60% loss shelter, accounting loss-based AMT, automatic 15% deemed distribution, board-resolution avoidance, unproved 16% VAT or a guessed treaty rate. Hold unknown location, period, entity, loss history, asset basis, exit conditions and approvals. Refer 2026 presumptive annual transition, new zone Act/licence transition, unrecovered WHT/indirect zone relief, actual treaty claims, disputed deemed distributions and final exits. Do not back date evidence or artificially label supplies to meet an exemption. Estimates and actual implementation require qualified local review.
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This comparison template does not make an election, obtain approval or file a return. Confirm the actual facts, operative instrument and current official procedure, and obtain qualified local review before acting on a relief or tax position.
+
+Explicit referrals retained from R-TZ-4/5/6: transfer pricing, Pillar Two and aggressive structuring; arrears, TRA audit/enforcement and private-ruling posture; customs, excise, mining royalties and sector fiscal regimes require separate specialist/current-source analysis. This comparison does not advise those positions.
+
+## Sources
+
+| Source and actual reading scope | Official URL | Read on |
+|---|---|---|
+| Income Tax Act, Cap. 332 R.E. 2023: Read for ss 3 business/investment asset definitions;4(8);15-20 with neighbors;54-56;64(8);96 whole;105-111;154 whole; First Schedule 1-5; Second Schedule 1(o),(v),(x); Third Schedule Classes 1-8 and paras 2-3 inclpoolbasis/timing; not full zone legislation | https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf | 2026-11-15 |
+| Finance Act 2024, Act No. 6: Read for income Part 32-47 whole, including tea, fiscal receipts, loss floor, ownership, digital/royalty, return exception and equal initial allowance; s 97 currency point | https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf | 2026-11-15 |
+| Finance Act 2025, Act No. 11: Read for ss 1-2 and income 46-61 whole; VAT 122-134 and 135 selected; not whole Act | https://www.tra.go.tz/images/uploads/acts/THE_FINANCE_ACT%2C_2025.pdf | 2026-11-15 |
+| Finance Act 2026, Act No. 2: Read for ss 1-2; complete income 20-27; investment 28-29; administration 70-80; VAT/SDL 88-98; not whole Schedules | https://www.tra.go.tz/images/uploads/acts/THE_FINANCE_ACT%2C_2026.pdf | 2026-11-15 |
+| Value Added Tax Act, Cap. 148 R.E. 2023: Read for s 2 taxable supply; ss 4-5,8-11,28-32,49-55,68-74,78-79,83-88; not whole Schedule | https://www.tra.go.tz/images/uploads/acts/The_Value_Added_Tax_Act.pdf | 2026-11-15 |
+| TRA: Double taxation agreement download list: Read for whole 9-entry download list; not individual treaty texts/effective-date proof | https://www.tra.go.tz/resource-center/9 | 2026-11-15 |
+| Income Tax Act R.E.2023 A.S.2025: Read for definitions royalty;7(2)-(4);64(8);105-112;154; First Schedule 4(b)-(c); Fifth Schedule car table, as relevant to the linked corrections; not whole consolidation | https://elibrary.osg.go.tz/bitstreams/d8e39776-4616-4386-bd1c-8ce8eb2caa3c/download | 2026-11-15 |
+| Official OSG Income Tax Act R.E.2023 A.S.2025 corroboration: Read for s 3 complete business-asset and investment-asset definitions, including individual land value/use and private-residence ownership/use/gain conditions; same body as earlier independent source 27, not a fresh full-consolidation read | https://elibrary.osg.go.tz/bitstreams/d8e39776-4616-4386-bd1c-8ce8eb2caa3c/download | 2026-11-16 |
+| Official TRAB Finance Act 2025 corroboration: Read for ss 1-2 commencement, complete ss 124 and 131, the specific 1 September 2025 commencement and eligibility/payment-proof conditions, with adjacent context; same body as earlier independent source 22, not a whole-Act read or recovery of the missing public notice | https://www.trab.go.tz/uploads/documents/en-1776865445-THE%20FINANCE%20ACT,%202025.pdf | 2026-11-16 |
+
+Not yet confirmed: Full Investment and Special Economic Zones Act and transitional licence rules; separate zone WHT/VAT/customs holidays beyond the proved income provision; 2026 annual presumptive apportionment, threshold and new-TIN implementation under First Schedule 5; the old proposed VAT-registration exclusion from presumptive eligibility; the CG public notice for 16% VAT; actual treaty texts/effective articles/rates, including the old South African service example; current primary support for the old Zanzibar 15% VAT, 5% SDL and TZS 100 million threshold; actual s 33A transitional determination/exemption documents; any later applicable sector instrument. A comparison does not establish case-specific entitlement.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `tanzania-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/tanzania-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `tanzania-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/tanzania-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.

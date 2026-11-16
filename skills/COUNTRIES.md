@@ -23,15 +23,15 @@ Owner: Michael Cutajar
 | [Croatia](croatia/) | Needs signature | 10 | 10 | 0 |
 | [Cyprus](cyprus/) | Needs signature | 9 | 9 | 0 |
 | [Czech Republic](czech-republic/) | Needs signature | 12 | 12 | 0 |
-| [Denmark](denmark/) | Needs signature | 10 | 9 | 0 |
-| [Estonia](estonia/) | Needs signature | 10 | 10 | 0 |
+| [Denmark](denmark/) | Needs signature | 10 | 10 | 0 |
+| [Estonia](estonia/) | Needs writing | 10 | 10 | 0 |
 | [Faroe Islands](faroe-islands/) | Needs writing | 12 | 12 | 0 |
 | [Finland](finland/) | Needs signature | 14 | 14 | 0 |
 | [France](france/) | Needs writing | 23 | 23 | 0 |
 | [Georgia](georgia/) | Needs signature | 10 | 10 | 1 |
 | [Germany](germany/) | Needs signature | 29 | 29 | 0 |
 | [Gibraltar](gibraltar/) | Needs writing | 19 | 19 | 0 |
-| [Greece](greece/) | Needs signature | 15 | 15 | 0 |
+| [Greece](greece/) | Needs writing | 15 | 15 | 0 |
 | [Guernsey](guernsey/) | Needs writing | 10 | 10 | 0 |
 | [Hungary](hungary/) | Needs signature | 11 | 11 | 0 |
 | [Iceland](iceland/) | Needs signature | 10 | 10 | 0 |
@@ -50,17 +50,17 @@ Owner: Michael Cutajar
 | [Montenegro](montenegro/) | Needs writing | 10 | 10 | 0 |
 | [Netherlands](netherlands/) | Needs signature | 26 | 26 | 0 |
 | [North Macedonia](north-macedonia/) | Needs writing | 10 | 10 | 0 |
-| [Norway](norway/) | Needs signature | 12 | 12 | 0 |
+| [Norway](norway/) | Needs writing | 12 | 12 | 0 |
 | [Poland](poland/) | Needs signature | 12 | 12 | 0 |
 | [Portugal](portugal/) | Needs signature | 18 | 18 | 0 |
-| [Romania](romania/) | Needs signature | 12 | 11 | 0 |
+| [Romania](romania/) | Needs writing | 12 | 12 | 0 |
 | [San Marino](san-marino/) | Needs writing | 8 | 8 | 0 |
 | [Serbia](serbia/) | Needs signature | 10 | 10 | 1 |
-| [Slovakia](slovakia/) | Needs signature | 10 | 9 | 0 |
+| [Slovakia](slovakia/) | Needs writing | 10 | 10 | 0 |
 | [Slovenia](slovenia/) | Needs signature | 10 | 10 | 0 |
 | [Spain](spain/) | Needs writing | 53 | 53 | 4 |
 | [Svalbard](svalbard/) | Needs writing | 10 | 10 | 0 |
-| [Sweden](sweden/) | Needs signature | 15 | 14 | 0 |
+| [Sweden](sweden/) | Needs signature | 15 | 15 | 0 |
 | [Switzerland](switzerland/) | Needs signature | 14 | 14 | 0 |
 | [Turkey](turkey/) | Needs writing | 10 | 10 | 1 |
 | [Ukraine](ukraine/) | Needs signature | 17 | 17 | 0 |
@@ -135,54 +135,54 @@ Owner: Ryan Duguid
 | [American Samoa](american-samoa/) | Needs writing | 1 | 1 | 0 |
 | [Australia](australia/) | Needs updating | 72 | 44 | 41 |
 | [Bangladesh](bangladesh/) | Needs writing | 18 | 18 | 0 |
-| [Bhutan](bhutan/) | Needs writing | 6 | 0 | 0 |
+| [Bhutan](bhutan/) | Needs writing | 6 | 6 | 0 |
 | [British Indian Ocean Territory](british-indian-ocean-territory/) | Needs writing | 1 | 1 | 0 |
 | [Brunei](brunei/) | Needs writing | 7 | 7 | 0 |
-| [Cambodia](cambodia/) | Needs writing | 6 | 0 | 0 |
+| [Cambodia](cambodia/) | Needs writing | 6 | 6 | 0 |
 | [China](china/) | Needs writing | 15 | 15 | 0 |
 | [Christmas Island](christmas-island/) | Needs writing | 5 | 5 | 0 |
 | [Cocos (Keeling) Islands](cocos-keeling-islands/) | Needs writing | 5 | 5 | 0 |
 | [Cook Islands](cook-islands/) | Needs writing | 4 | 4 | 0 |
-| [Fiji](fiji/) | Needs writing | 6 | 1 | 0 |
+| [Fiji](fiji/) | Needs writing | 6 | 6 | 0 |
 | [French Polynesia](french-polynesia/) | Needs writing | 1 | 1 | 0 |
 | [Heard Island and McDonald Islands](heard-island-and-mcdonald-islands/) | Needs writing | 1 | 1 | 0 |
 | [Hong Kong](hong-kong/) | Needs writing | 7 | 7 | 0 |
-| [India](india/) | Needs writing | 20 | 17 | 1 |
+| [India](india/) | Needs writing | 20 | 19 | 1 |
 | [Indonesia](indonesia/) | Needs writing | 12 | 10 | 1 |
 | [Japan](japan/) | Needs writing | 18 | 18 | 0 |
 | [Kazakhstan](kazakhstan/) | Needs writing | 17 | 17 | 0 |
 | [Kiribati](kiribati/) | Needs writing | 1 | 1 | 0 |
-| [Kyrgyzstan](kyrgyzstan/) | Needs writing | 6 | 0 | 0 |
+| [Kyrgyzstan](kyrgyzstan/) | Needs writing | 6 | 6 | 0 |
 | [Laos](laos/) | Needs writing | 5 | 2 | 0 |
-| [Macau](macau/) | Needs writing | 5 | 0 | 0 |
+| [Macau](macau/) | Needs writing | 5 | 5 | 0 |
 | [Malaysia](malaysia/) | Needs writing | 8 | 7 | 1 |
-| [Maldives](maldives/) | Needs writing | 6 | 0 | 0 |
+| [Maldives](maldives/) | Needs writing | 6 | 6 | 0 |
 | [Marshall Islands](marshall-islands/) | Needs writing | 1 | 1 | 0 |
 | [Micronesia](micronesia/) | Needs writing | 1 | 1 | 0 |
-| [Mongolia](mongolia/) | Needs writing | 5 | 0 | 0 |
+| [Mongolia](mongolia/) | Needs writing | 5 | 5 | 0 |
 | [Myanmar](myanmar/) | Needs writing | 6 | 6 | 0 |
 | [Nauru](nauru/) | Needs writing | 4 | 4 | 0 |
-| [Nepal](nepal/) | Needs writing | 5 | 0 | 1 |
+| [Nepal](nepal/) | Needs writing | 5 | 4 | 1 |
 | [New Caledonia](new-caledonia/) | Needs writing | 1 | 1 | 0 |
 | [New Zealand](new-zealand/) | Needs writing | 20 | 18 | 0 |
 | [Niue](niue/) | Needs writing | 1 | 1 | 0 |
 | [Norfolk Island](norfolk-island/) | Needs writing | 23 | 23 | 0 |
 | [Northern Mariana Islands](northern-mariana-islands/) | Needs writing | 1 | 1 | 0 |
-| [Pakistan](pakistan/) | Needs writing | 19 | 8 | 1 |
+| [Pakistan](pakistan/) | Needs writing | 20 | 19 | 1 |
 | [Palau](palau/) | Needs writing | 2 | 2 | 0 |
-| [Papua New Guinea](papua-new-guinea/) | Needs writing | 6 | 0 | 0 |
-| [Philippines](philippines/) | Needs writing | 7 | 0 | 0 |
+| [Papua New Guinea](papua-new-guinea/) | Needs writing | 6 | 6 | 0 |
+| [Philippines](philippines/) | Needs writing | 7 | 5 | 0 |
 | [Pitcairn](pitcairn/) | Needs writing | 1 | 1 | 0 |
-| [Samoa](samoa/) | Needs writing | 6 | 0 | 0 |
+| [Samoa](samoa/) | Needs writing | 6 | 6 | 0 |
 | [Singapore](singapore/) | Needs writing | 10 | 10 | 0 |
 | [Solomon Islands](solomon-islands/) | Needs writing | 1 | 1 | 0 |
-| [South Korea](south-korea/) | Needs writing | 6 | 0 | 1 |
+| [South Korea](south-korea/) | Needs writing | 6 | 4 | 1 |
 | [Sri Lanka](sri-lanka/) | Needs writing | 10 | 9 | 1 |
 | [Taiwan](taiwan/) | Needs writing | 6 | 6 | 0 |
 | [Tajikistan](tajikistan/) | Needs writing | 6 | 6 | 0 |
-| [Thailand](thailand/) | Needs writing | 8 | 1 | 0 |
-| [Timor Leste](timor-leste/) | Needs writing | 6 | 0 | 0 |
-| [Tonga](tonga/) | Needs writing | 6 | 0 | 0 |
+| [Thailand](thailand/) | Needs writing | 8 | 8 | 0 |
+| [Timor Leste](timor-leste/) | Needs writing | 6 | 6 | 0 |
+| [Tonga](tonga/) | Needs writing | 6 | 6 | 0 |
 | [Turkmenistan](turkmenistan/) | Needs writing | 6 | 4 | 0 |
 | [Tuvalu](tuvalu/) | Needs writing | 1 | 1 | 0 |
 | [United States Minor Outlying Islands](united-states-minor-outlying-islands/) | Needs writing | 1 | 1 | 0 |
@@ -204,7 +204,7 @@ Owner: Michael Cutajar
 | [Kuwait](kuwait/) | Needs writing | 6 | 6 | 0 |
 | [Oman](oman/) | Needs writing | 6 | 6 | 0 |
 | [Qatar](qatar/) | Needs signature | 8 | 8 | 0 |
-| [Saudi Arabia](saudi-arabia/) | Needs writing | 12 | 2 | 1 |
+| [Saudi Arabia](saudi-arabia/) | Needs writing | 12 | 11 | 1 |
 | [United Arab Emirates](uae/) | Needs writing | 8 | 7 | 1 |
 
 ## Africa
@@ -246,7 +246,7 @@ Owner: Ryan Duguid
 | [Mozambique](mozambique/) | Needs writing | 4 | 0 | 0 |
 | [Namibia](namibia/) | Needs signature | 8 | 8 | 0 |
 | [Niger](niger/) | Needs writing | 7 | 4 | 0 |
-| [Nigeria](nigeria/) | Needs writing | 16 | 6 | 1 |
+| [Nigeria](nigeria/) | Needs writing | 16 | 14 | 1 |
 | [Republic Of Congo](republic-of-congo/) | Needs writing | 8 | 8 | 0 |
 | [Reunion](reunion/) | Needs writing | 1 | 1 | 0 |
 | [Rwanda](rwanda/) | Needs signature | 9 | 9 | 0 |
@@ -256,7 +256,7 @@ Owner: Ryan Duguid
 | [Sierra Leone](sierra-leone/) | Needs writing | 8 | 8 | 0 |
 | [South Africa](south-africa/) | Needs writing | 21 | 10 | 12 |
 | [São Tomé and Príncipe](sao-tome-and-principe/) | Needs writing | 6 | 6 | 0 |
-| [Tanzania](tanzania/) | Needs updating | 9 | 5 | 1 |
+| [Tanzania](tanzania/) | Needs writing | 9 | 8 | 1 |
 | [Togo](togo/) | Needs writing | 10 | 10 | 0 |
 | [Tunisia](tunisia/) | Needs writing | 9 | 7 | 1 |
 | [Uganda](uganda/) | Needs writing | 8 | 8 | 0 |
