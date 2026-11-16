@@ -127,5 +127,17 @@
       "sha256": "8bd4326f179ed529e60cdd1cd43e7897af2d89d4fd8fd4c4de0f9c69fe7a468c",
       "bytes": 574
     }
+  ],
+  "supplements": [
+    {
+      "path": "PROVENANCE-HOLD.md",
+      "sha256": "15518982bd4257c6cc53f176d6952e6f74460844054a947b920951e97e379766",
+      "bytes": 4041
+    },
+    {
+      "path": "provenance-outcomes.json",
+      "sha256": "62c498135adb1879cb2e2b469758ffc72adde5c0e190ea908f4994074208f6e0",
+      "bytes": 58580
+    }
   ]
 }

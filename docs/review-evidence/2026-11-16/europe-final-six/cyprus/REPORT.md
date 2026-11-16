@@ -1,3 +1,5 @@
+> **DRAFT — OFFICIAL-SOURCE PROVENANCE HOLD.** This notice qualifies the historical acceptance below and in the archive. The government Gazette establishes exact published amendment-passage identity, but required official retained/current base-law and applicability dependencies remain unresolved. Cyprus #2131 is excluded from merge. See PROVENANCE-HOLD.md and provenance-outcomes.json; do not treat the historical substantive review as publication clearance.
+
 # Cyprus evidence, 16 November 2026
 
 Scope: only the assigned source files listed below. Tier 2; no accountant approval or full-country completion claim. Writer's REPORT and the independent review in the archive describe corrections, retained scope and non-usable holds. Prior completed reviews are retained byte-exact with explicit applicability checks; the separate reviewer covers changed claims and dependencies. Original topics, human names and case inputs remain accounted for.
