@@ -23,6 +23,75 @@ def pages(**by_url):
 
 
 class RowSources(unittest.TestCase):
+    def test_korean_whole_money_compounds(self):
+        for source, amount in [
+            ('5억원', 500_000_000), ('250만원', 2_500_000),
+            ('1억5천만원', 150_000_000), ('1억 6천만원', 160_000_000),
+            ('4억 6천만원', 460_000_000), ('1,400만원', 14_000_000),
+            ('1억7,406만원', 174_060_000), ('3억8,406만원', 384_060_000),
+            ('6억원', 600_000_000), ('1억5만원', 100_050_000),
+            ('1조2억3천4백5십6만원', 1_000_234_560_000),
+            ('동일 5억원', 500_000_000), ('약5억원', 500_000_000),
+            ('250만 원', 2_500_000),
+        ]:
+            with self.subTest(source=source):
+                self.assertEqual(rs.page_values(source), {amount})
+        self.assertEqual(rs.page_values('5억원 및 250만원'), {500_000_000, 2_500_000})
+
+    def test_korean_compounds_never_match_wrong_scales_or_suffixes(self):
+        for source, wrong in [
+            ('15억원', '500,000,000'), ('1억5천만원', '50,000,000'),
+            ('250만원', '250,000,000'), ('1억7,406만원', '74,060,000'),
+            ('1억5만원', '150,000,000'), ('5억원', '5%'),
+        ]:
+            with self.subTest(source=source, wrong=wrong):
+                self.assertFalse(rs.found(wrong, rs.page_values(source)))
+        for source in ['1경5억원', '1억2억원', '5천천만원', '1,40만원',
+                       '일억5천만원', '1억만원', '1천20백만원', '억원']:
+            with self.subTest(malformed=source):
+                self.assertEqual(rs.page_values(source), set())
+
+    def test_korean_literal_fractions_mask_denominators_and_coefficients(self):
+        for source, percent in [
+            ('100분의20', 20), ('1천분의20', 2), ('1만분의25', 0.25),
+            ('100분의2.5', 2.5), ('100분의20.', 20),
+            ('법률에 따라 100분의20의 세율', 20), ('100분의20 이상', 20),
+        ]:
+            with self.subTest(source=source):
+                self.assertEqual(rs.page_values(source), {percent})
+        for source, wrong in [('100분의20', '100%'), ('1천분의20', '20%'),
+                              ('1천분의20', '100%'), ('100분의2.5', '100%')]:
+            with self.subTest(source=source, wrong=wrong):
+                self.assertFalse(rs.found(wrong, rs.page_values(source)))
+        for source in ['0분의20', '100분의20분의5', '1경5분의20', '1,00분의20']:
+            with self.subTest(malformed=source):
+                self.assertEqual(rs.page_values(source), set())
+
+    def test_korean_malformed_fraction_continuations_do_not_match_a_valid_prefix(self):
+        for source in ['100분의20분의', '100분의20분의X', '100분의20분의X20',
+                       '100분의20분의 X20', '100분의20분의5X20', '100분의20분의.']:
+            with self.subTest(malformed=source):
+                self.assertEqual(rs.page_values(source), set())
+        for source in ['100분의20의 세율', '100분의20 이상', '100분의20.',
+                       '법률에 따라 100분의20의 세율']:
+            with self.subTest(valid=source):
+                self.assertEqual(rs.page_values(source), {20})
+
+    def test_korean_number_normalization_preserves_other_notations_and_policy(self):
+        for source, figure in [('20퍼센트', '20%'), ('35퍼센트', '35%'),
+                               ('twenty per cent', '20%'),
+                               ('15 million shillings', '15,000,000'),
+                               ('1,234.56', '1,234.56')]:
+            with self.subTest(source=source):
+                self.assertTrue(rs.found(figure, rs.page_values(source)))
+        # Separate statutory rates do not establish their combined arithmetic result.
+        self.assertFalse(rs.found('22%', rs.page_values('100분의20 및 100분의2')))
+        text = skill(f'| Amount | KRW 500,000,000 | [law]({A}) |')
+        self.assertEqual(rs.check_text(text, pages(**{A: '금액 5억원'})), (1, [], []))
+        text = skill(f'| Amount | KRW 50,000,000 | [law]({A}) |')
+        self.assertEqual([m[0] for m in rs.check_text(text, pages(**{A: '금액 1억5천만원'}))[1]],
+                         ['50,000,000'])
+
     def test_figure_on_linked_page_passes(self):
         t = skill(f"| Rate | 5.20% up to $23,000 | [law]({A}) |")
         n, misses, unreadable = rs.check_text(t, pages(**{A: "rate 5.2% of income not over $23000 " * 20}))
