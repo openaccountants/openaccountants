@@ -1,0 +1,116 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "874cf6dcd14fbfeb8ff754343b0d4ff7264e5e9df97b7478e75a32064b57563f",
+  "members": [
+    {
+      "path": "writer/CHECKPOINT.json",
+      "sha256": "22579f637d8fa1e4382ad6a073a60a6f81ad2cae464182ab8575fe99e1acbb59",
+      "bytes": 3566
+    },
+    {
+      "path": "writer/NO-LOSS-MAP.md",
+      "sha256": "9f5cf2fc85647f186911925f625364cea2b29209292ad5fdcf2aac1f7bc84e26",
+      "bytes": 5008
+    },
+    {
+      "path": "writer/REPORT.md",
+      "sha256": "9831e4c1fbf2b97c0d72c1bb6aef1c894cd5812a9f3fa6b09b867cd81a67efd0",
+      "bytes": 2241
+    },
+    {
+      "path": "writer/STATUS.json",
+      "sha256": "e884279ca25cbcecfa54fc0bd594545c7ee4406b70a0b139e3ddfe8d02c47868",
+      "bytes": 1935
+    },
+    {
+      "path": "writer/actual-head-sync.txt",
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9",
+      "bytes": 81
+    },
+    {
+      "path": "writer/actual-head-validation.txt",
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa",
+      "bytes": 192
+    },
+    {
+      "path": "writer/ledgers/li-company-formation.md",
+      "sha256": "6eacc1fbb941153391377c1a0f2e5199594edc99c7c15791a96a9508b83ebef3",
+      "bytes": 7705
+    },
+    {
+      "path": "writer/ledgers/li-tax-overview.md",
+      "sha256": "9dff25e11326decb10e8ad67b01ad01ebc9f0fb777f6edbc8eb5f203fb8ea7cb",
+      "bytes": 5701
+    },
+    {
+      "path": "writer/open-pr-preedit.json",
+      "sha256": "577620334e65add92d3d5d67a45e750c96442ad3275f6e628da2958bea81efc0",
+      "bytes": 28346
+    },
+    {
+      "path": "writer/prior-review/2026-10-24-liechtenstein-country-reconciliation.md",
+      "sha256": "c026489f413c997a68370f826bc666afc006d83d4a46c7e2d3a142336c80ba97",
+      "bytes": 12120
+    },
+    {
+      "path": "writer/prior-review/2026-10-24-liechtenstein-pack-review-brief.md",
+      "sha256": "b0c6d59ea4d6a64bbb68bcf160d7ef3a22e34a17e390ed7a763b508041d6868f",
+      "bytes": 8656
+    },
+    {
+      "path": "writer/prior-review/2026-10-24-liechtenstein-pack-review.md",
+      "sha256": "42d8ed693c63d4673d75d5dffd8e58c5d59ba3ba7a6f8e1723aaf3ba5e12de97",
+      "bytes": 22461
+    },
+    {
+      "path": "writer/prior-review/2026-10-24-liechtenstein-source-reachability.json",
+      "sha256": "d611b858c9c24e70d482839559d2c7954b43899b854bb70f83eb1e82d5ab3ea1",
+      "bytes": 9182
+    },
+    {
+      "path": "writer/prior-review/2026-10-24-liechtenstein-source-retrieval.json",
+      "sha256": "82579ec92c868ee186519dbb4653fb839a934136b402a421e9c035f2754547c8",
+      "bytes": 9864
+    },
+    {
+      "path": "writer/row-sources-cached.json",
+      "sha256": "710607a1b4d9a4229b28fcc15cd98e94645a497ab48a65e440ba200310eafc00",
+      "bytes": 381
+    },
+    {
+      "path": "writer/row-sources-direct.log",
+      "sha256": "049ffc135fd5766608d5ef3ba8835dd9d8f24b96859c6b1598cc351a1ddd5c38",
+      "bytes": 471
+    },
+    {
+      "path": "writer/skill-checks.json",
+      "sha256": "341e24da7bd2cb80f576a859b3312f65e8dda45567cd8fe13e7b3abad65ebf49",
+      "bytes": 106
+    },
+    {
+      "path": "writer/tests-unittest.log",
+      "sha256": "5884af62f44be8bf99114356e0d494887931cb05180b1fec1cd573a47ccdd4ce",
+      "bytes": 1472
+    },
+    {
+      "path": "writer/tests.log",
+      "sha256": "c99d342a1664b93a03868ad56a22451965948da811503ce3b0d29ae5123b9dbb",
+      "bytes": 69
+    },
+    {
+      "path": "independent-review/RECEIPT.json",
+      "sha256": "86bc0dcf818316d6b4d4b3fc416d3e3f79d8f6a1469ce9dc489991c6d61390ae",
+      "bytes": 10470
+    },
+    {
+      "path": "independent-review/REPORT.md",
+      "sha256": "1f2b95a6d952a757d804ca13e03f029749426aaf9943cf951ffcd0c3c4783746",
+      "bytes": 11011
+    },
+    {
+      "path": "validation/shared-copy-calculator-tests.txt",
+      "sha256": "5977368485964fe87c61db96cb3471e7fb5dc29d157e404d817fb46902f6adcd",
+      "bytes": 121
+    }
+  ]
+}
