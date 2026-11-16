@@ -1,7 +1,7 @@
 ---
 name: india-references
 jurisdiction: IN
-last_updated: 2026-11-15
+last_updated: 2026-11-16
 version: 1.1
 description: Primary Indian tax sources and a preserved catalog of related open-source projects, with source, period, licence and calculation checks before any integration.
 tier: 2
@@ -78,7 +78,7 @@ These are law-based calculation fixtures for evaluating an implementation; they 
 | Fixture | Rule and conditions | Official source |
 |---|---|---|
 | Current ordinary new-regime slab | Taxable income 2,200,000: lower-band tax 200,000 plus 25% of excess over 2,000,000; derived base comes from 400,000-wide 5%,10%,15%,20% bands. No rebate at that income, no surcharge with no other income; cess 4% | Act 202(1)/156 and Finance Act 2026 s.3; https://egazette.gov.in/WriteReadData/2025/265620.pdf; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| Current professional versus technical TDS | Resident ordinary payee, company payer, valid PAN, properly classified service, no lower certificate, annual aggregate 50,100 strictly above 50,000. Professional 6(iii)(b)10%; qualifying technical 6(iii)(a)2%. Whole sum, not threshold excess; director/other exceptions outside this fixture | Act 393(1)serial 6(iii), full service classification required; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Current professional versus technical TDS | Resident ordinary payee, company payer, valid PAN, properly classified service, no lower certificate, annual aggregate 50,100 (illustrative input for the computed TDS fixture) strictly above 50,000. Professional 6(iii)(b)10%; qualifying technical 6(iii)(a)2%. Whole sum, not threshold excess; director/other exceptions outside this fixture | Act 393(1)serial 6(iii), full service classification required; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
 ## Worked cases
 

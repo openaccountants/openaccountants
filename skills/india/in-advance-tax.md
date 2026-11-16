@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Indian advance tax for self-emp
 version: 2.1
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-16
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -243,21 +243,21 @@ All amounts in these examples are hypothetical and in INR. For C, assume the INR
 
 | Example | Hypothetical amount (INR) | How it is computed | Official source |
 | --- | --- | --- |---|
-| A. Advance tax for tax year 2026-27 (assumed) | 240,000 | Assumed | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| A. Paid by 15 June 2026, at least | 36,000 | 15% of 240,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| A. Paid by 15 September 2026, at least (cumulative) | 108,000 | 45% of 240,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| A. Paid by 15 December 2026, at least (cumulative) | 180,000 | 75% of 240,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| A. Paid by 15 March 2027 | 240,000 | The whole amount | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| B. Nothing paid before 15 March 2027; 240,000 paid on 15 March 2027: section 425 interest for June | 1,080 | 3% of 36,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| B. Section 425 interest for September | 3,240 | 3% of 108,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| B. Section 425 interest for December | 5,400 | 3% of 180,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| B. Section 425 interest in total (no March shortfall; section 424 does not apply because the whole amount was paid by 31 March) | 9,720 | 1,080 + 3,240 + 5,400 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| C. Instalments A paid on time to 15 December 2026, nothing more by 31 March 2027: section 424 share test | 216,000 | 90% of 240,000; 180,000 paid is less, so section 424 applies | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| C. Section 424 shortfall | 60,000 | 240,000 - 180,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| C. Section 424 interest if the 60,000 tax component plus all interest/fees is paid on 20 July 2027, so no principal remains | 2,400 | 1% x 60,000 x 4 months (April, May, June, July 2027; part of a month counts) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| C. Section 425 interest for March | 600 | 1% of 60,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| D. As C, but 216,000 paid by 15 March 2027: section 424 | nil | 216,000 is not less than 90% of 240,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| D. Section 425 interest for March | 240 | 1% of 24,000 (240,000 - 216,000) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| A. Advance tax for tax year 2026-27 (assumed) | 240,000 | Assumed input for the computed cases below | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| A. Paid by 15 June 2026, at least | 36,000 | Computed: 15% of 240,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| A. Paid by 15 September 2026, at least (cumulative) | 108,000 | Computed: 45% of 240,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| A. Paid by 15 December 2026, at least (cumulative) | 180,000 | Computed: 75% of 240,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| A. Paid by 15 March 2027 | 240,000 | Computed: The whole amount | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| B. Nothing paid before 15 March 2027; 240,000 paid on 15 March 2027: section 425 interest for June | 1,080 | Computed: 3% of 36,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| B. Section 425 interest for September | 3,240 | Computed: 3% of 108,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| B. Section 425 interest for December | 5,400 | Computed: 3% of 180,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| B. Section 425 interest in total (no March shortfall; section 424 does not apply because the whole amount was paid by 31 March) | 9,720 | Computed: 1,080 + 3,240 + 5,400 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| C. Instalments A paid on time to 15 December 2026, nothing more by 31 March 2027: section 424 share test | 216,000 | Computed: 90% of 240,000; 180,000 paid is less, so section 424 applies | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| C. Section 424 shortfall | 60,000 | Computed: 240,000 - 180,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| C. Section 424 interest if the 60,000 tax component plus all interest/fees is paid on 20 July 2027, so no principal remains | 2,400 | Computed: 1% x 60,000 x 4 months (April, May, June, July 2027; part of a month counts) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| C. Section 425 interest for March | 600 | Computed: 1% of 60,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| D. As C, but 216,000 paid by 15 March 2027: section 424 | nil | Computed: 216,000 is not less than 90% of 240,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| D. Section 425 interest for March | 240 | Computed: 1% of 24,000 (240,000 - 216,000) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
 If the extra amount in Example D is paid between 16 and 31 March instead, section 424 still does not apply (section 408(3)), but the 15 March shortfall is the same as in Example C, and so is the March interest under section 425.
 
@@ -537,5 +537,7 @@ The most up-to-date version of this Guide is maintained on the OpenAccountants s
 | https://egazette.gov.in/WriteReadData/2026/271439.pdf | Read for s.66 substituting s.263(1)(c) and revised-return timing; ss.93-96 amending interest-credit references and late fees; s.40 amendment to s.58(11) | 2026-11-14 |
 | https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf | Read for rules222-223: Form151 demand and Form152 lower estimate; rule75-76 separately read for cross-border referral context | 2026-11-14 |
 | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/e-pay-tax | Read for Q4-15 and Q38: access, CRN, modes, restricted bank-counter use, mistaken payments, validity, receipt and cash limit | 2026-11-14 |
+
+| Income-tax Act 2025 Gazette, targeted reread | Read for section 408 in full and sections 424-425 in full; existing hypothetical cases retain their assumptions, arithmetic and section 425 construction hold. Labels distinguish assumed inputs and computed results from statutory figures | 2026-11-16; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
 Not yet confirmed: the precise construction of section 425(2)'s June/September tolerance clauses and section 425(3)'s broad wording, retained with their exact statutory wording and the old version's conditional interpretation in section 4.4; obtain professional confirmation before finalizing interest in a case turning on those ambiguities. Foreign tax relief in the estimate, agricultural integration, earlier-Act years and non-individual computations remain explicit referrals. Final portal tax-year/payment-type screens and any later deadline extensions must be checked for the actual transaction.
