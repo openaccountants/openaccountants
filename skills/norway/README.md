@@ -1,12 +1,14 @@
 ---
 jurisdiction: "NO"
-version: 0.6
-last_updated: 2026-10-30
+version: 0.7
+last_updated: 2026-11-15
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: no-individual-residence
-partial: {}
+partial:
+  IT-IND: "The method covers full-year resident ENK owners, not employees without an ENK or its refused residence profiles. Pension credit/tax limitation and the unpublished final 2026 business shielding rate are not computed; the operational hold remains."
+  XB: "The Switzerland corridor refers a specific 2026 residence-tail wealth assessment and the domestic charging/exit-tax coordination where the treaty reserves a taxing right."
 ---
 
 # Norway: tax pack
@@ -17,15 +19,17 @@ Calendar income year. Authority: Skatteetaten (skatteetaten.no); statutes on lov
 
 | Tax | Skill | Status |
 |---|---|---|
-| Income tax | no-income-tax: residence, 22% on ordinary income (18.5% in Finnmark and seven Nord-Troms municipalities), the five bracket tax steps, personal allowance NOK 114,540, minimum deductions, pension credit and low-income limit, the youth work deduction, sole proprietors and calculated personal income, depreciation, wealth tax, returns, advance tax, fines and the PAYE scheme, for 2026; no-capital-gains for shares and the shareholder model | checked against the law (no-capital-gains: sourced from the law) |
+| Income tax | no-income-tax: the self-employed workflow, ordinary/personal income, regional rules, brackets, allowances, depreciation, losses, returns and payments. Its calculation scope is full-year resident ENK owners; employees without an ENK and refused residence profiles require a separate method. Pension credit/tax limitation are identified but not computed. no-capital-gains covers shares, wrappers, property, virtual assets and exit routing; the corridor's Norwegian section covers resident wealth valuation and payment deferral | partial research coverage; see the explicit operational holds |
 | Company tax | no-corporate-income-tax: 22% and 25% rates, participation exemption, interest limitation, depreciation, losses, group contributions, the 31 May return, advance tax and withholding, for 2026 | checked against the law |
-| VAT or sales tax | no-vat-return: registration (NOK 50,000), 25% / 15% / 12% / 11.11% rates, exempt and zero-rated supplies, blocked input VAT, two-monthly and annual periods and deadlines, imports, reverse charge, VOEC, fines and interest, for 2026 (norway-mva is an older copy; use no-vat-return) | checked against the law (norway-mva: sourced from the law) |
+| VAT or sales tax | no-vat-return owns the full rate/classification and special-scheme reference. norway-mva retains the preparation/reconciliation workflow, input restrictions, registration transition, access and correction steps; it distinguishes the mid-year foreign-service change and the statute/guidance wording conflicts | research coverage; special computations and live case facts remain subject to the owners' boundaries |
 | Social contributions | no-social-contributions: membership, trygdeavgift at 5.1% / 7.6% / 10.8% with the NOK 99,650 limit and 25% phase-in, employer contributions by zone (14.1% to 0%) and the NOK 850,000 limit, financial tax on pay, deadlines and fines, for 2026 | checked against the law |
 | Payroll | no-employer-payroll | checked against the law |
 | Transfer pricing | no-transfer-pricing | checked against the law |
-| Cross-border | no-individual-residence, norway-to-switzerland-wealth-tax-exit | checked against the law |
+| Cross-border | no-individual-residence, norway-to-switzerland-wealth-tax-exit; domestic residence, treaty residence and exit-tax event dates are separate tests | partial where the corridor explicitly refers the year-end wealth or domestic-charge question |
 
 Also in the pack: no-tax-overview and no-company-formation (tax year 2026).
+
+The overview routes each former numeric topic to its owning method. Formation uses the 2025 Business Register Act effective in 2026 and the current event-based beneficial-owner instructions. No skill here carries accountant approval. The seven previously passing siblings retain their exact text; their own source boundaries still apply.
 
 Out of scope for this pack: the special deductions for fishermen, farmers and seamen, petroleum tax, and Svalbard tax. The skills flag these and do not compute them.
 
