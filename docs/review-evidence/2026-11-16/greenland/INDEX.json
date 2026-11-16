@@ -1,0 +1,330 @@
+{
+  "reviewed_country_content_commit": "a05382212754a9c48a8ee30fd6c7d1db20f46741",
+  "base": "bbab4f1a6d82cace432e6ca8eda89c98ffb1c038",
+  "archive": {
+    "path": "review-evidence.tar.gz",
+    "bytes": 116508,
+    "sha256": "95830e0d3d1c7fbd656afa53dbcef2256b258c285c1d238d0f97cf42820c3a08",
+    "member_count": 41,
+    "deterministic_double_build": true,
+    "full_readback_exact": true
+  },
+  "files": [
+    {
+      "path": "public-evidence/binding-correction/ADDENDUM.md",
+      "bytes": 1628,
+      "sha256": "522f3a4aeec4123081f2f2ee5758e42483176d26abe66260da03f1b28e4853de",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland-binding-correction-a05382212/ADDENDUM.md",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/binding-correction/CONTINUITY.json",
+      "bytes": 1247,
+      "sha256": "7925de2afeea0f94945b0fe31b43072e8f5217c215915a4bed8c4c35144c7d1a",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland-binding-correction-a05382212/CONTINUITY.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/binding-correction/FINAL-MANIFEST.json",
+      "bytes": 796,
+      "sha256": "ec789cf42a9eea949b86d2b8ae15ca685d43cb1e61b8f77e1d6724c312f95821",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland-binding-correction-a05382212/FINAL-MANIFEST.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/binding-correction/FOUR-BINDING-DELTA.json",
+      "bytes": 13482,
+      "sha256": "1beff07e91a4e4d0ad9de9d599f3c61caa5f038dcc0fcb91ab5915ae9146e2da",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland-binding-correction-a05382212/FOUR-BINDING-DELTA.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/binding-correction/RULE-LEDGER-CORRECTED.json",
+      "bytes": 249856,
+      "sha256": "681707fc7dc8dfd14da547a4160bff5c7da1fbd673ca9e719e132bd443f52009",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland-binding-correction-a05382212/RULE-LEDGER-CORRECTED.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/independent-review/FINAL-MANIFEST.json",
+      "bytes": 2004,
+      "sha256": "4b2309f01228fbf596c3a0ae8004f8798c692d69f3f6b45161846887d5ed17c5",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-greenland/FINAL-MANIFEST.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/independent-review/REPORT.md",
+      "bytes": 9520,
+      "sha256": "44e710f3bab1c8e42a6d5fdc639cce3a5d0af075766068d6cf4f42bfe3781a1a",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-greenland/REPORT.md",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/independent-review/independent-annex2-read.json",
+      "bytes": 1475,
+      "sha256": "15d6f998cca5d4ba733a8130740ab96ac5ed08f1e1c0e8b0eee01b714e5dd52b",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-greenland/independent-annex2-read.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/independent-review/independent-bindings.json",
+      "bytes": 1888,
+      "sha256": "6ba8a4c28c48d2855bba544ccb676b8536703a1d0d3065d7ac8a8a472e85bde0",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-greenland/independent-bindings.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/independent-review/independent-bindings.py",
+      "bytes": 5280,
+      "sha256": "40fefd3dfa37c30de5717d01264e84bfdf26d92ab9607477609e795c4854c4f2",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-greenland/independent-bindings.py",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/independent-review/initial-bindings-ab5128c2.json",
+      "bytes": 2252,
+      "sha256": "7d0e9760fd77dd6aaa973aeb9b1111addc806e736b0e288a350242da937ba2b0",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-greenland/initial-bindings-ab5128c2.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/independent-review/initial-native-bindings-ab5128c2.json",
+      "bytes": 14241,
+      "sha256": "56ab451ed053b4986b764784514d83b4de0f0046689bb054e8b0c2d6fd81c5d4",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-greenland/initial-native-bindings-ab5128c2.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/independent-review/native-binding-results.json",
+      "bytes": 14670,
+      "sha256": "a2c80e53a8453347f2eae261ac2131964b00a91f65c256c5585cf76d7574c62c",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-greenland/native-binding-results.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/independent-review/source-review-dispositions.json",
+      "bytes": 5747,
+      "sha256": "13422161f2898a41b794a954b812a1d9c9a175abe1cf5f29d4f669fceee87776",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-greenland/source-review-dispositions.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/independent-review/verdict.json",
+      "bytes": 1120,
+      "sha256": "f0baff83b20bb7337aef65c23cb24b81ca304da9336f0cbf0f40718b90724c36",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-greenland/verdict.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/CANDIDATE-ITEMS.json",
+      "bytes": 72715,
+      "sha256": "af10d9826ed70506f9fd41b168aed1a539e710d85ec0c2088f7b5072bbff5853",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/CANDIDATE-ITEMS.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/CASE-INPUTS-AND-RECOMPUTATION.json",
+      "bytes": 2149,
+      "sha256": "8ee5cf92b213af7ff81ac36b378d273e0bdc32ec16ad55549b069f1cb6c85806",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/CASE-INPUTS-AND-RECOMPUTATION.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/CHECK-APPLICABILITY.json",
+      "bytes": 1359,
+      "sha256": "9ea2ef38b7eb80a55031d7fca1c933384db58d8a2533f00e0924b556cc80a5b2",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/CHECK-APPLICABILITY.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/CHECKS.json",
+      "bytes": 1317,
+      "sha256": "8d3a8655b1991a1ecd235301f4f0217271acc7cd35a08eb6aec2997406f490ab",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/CHECKS.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/COUNTS.json",
+      "bytes": 249,
+      "sha256": "9ddab062dfd142a13a7268f8da143042ce1f53e358ec0a5d1781319c0d69568f",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/COUNTS.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/FINAL-MANIFEST.json",
+      "bytes": 14015,
+      "sha256": "ab5128c2e4056b21d75524e6aa4edc932364fd36a9fbac4c513856076dde5c93",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/FINAL-MANIFEST.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/HANDOFF.md",
+      "bytes": 7703,
+      "sha256": "3c90c1f3eb52a9161c3a914996c57e4ec3c64c7bd653472eca8230196cbebca5",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/HANDOFF.md",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/OLD-LINE-DESTINATIONS.json",
+      "bytes": 131848,
+      "sha256": "4d027f307472040d7a425efc6eefca42832f94135469bda8232904b85c72eceb",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/OLD-LINE-DESTINATIONS.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/OLD-TOPIC-DESTINATIONS.json",
+      "bytes": 27038,
+      "sha256": "47d9885efb393ee8a342c438796e0349a7fe0078d5401469d2da8b8d142995a1",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/OLD-TOPIC-DESTINATIONS.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/ORIGINAL-CONTEXT-BINDINGS.json",
+      "bytes": 1780,
+      "sha256": "7bdf8017afad1307f713b6d1f7a8c6b3102e105b46ee600a53084a49805473c7",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/ORIGINAL-CONTEXT-BINDINGS.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/PROTECTED-CONTINUITY.json",
+      "bytes": 4199,
+      "sha256": "c36db65d20c714362fc701b68f6c0a90614c232b6ab4e76c7f3e8dc89d6f5ec0",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/PROTECTED-CONTINUITY.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/RETRIEVALS.json",
+      "bytes": 3075,
+      "sha256": "b4acb272c325c82734dc5c12585b2a1b09372deb446412e9888de4b06a238976",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/RETRIEVALS.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/SETUP-AND-CHECK-LIMITS.md",
+      "bytes": 1904,
+      "sha256": "3e5a74024476d976561bc90ac2d675723ae6321fa86cecd666711ecaf516ac28",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/SETUP-AND-CHECK-LIMITS.md",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/SOURCE-CATALOG.json",
+      "bytes": 8314,
+      "sha256": "308c771cbe99ff6732c6c25aa74a7352d33d5ea46bccdd6a355024871af75d18",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/SOURCE-CATALOG.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/SOURCE-LIMITS.json",
+      "bytes": 1577,
+      "sha256": "7699725d66e18ac337a67dd2424de4d7dcda04bf84c52549ca5d1ecb5f3d3bc2",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/SOURCE-LIMITS.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/TAX-ADMIN-RETRIEVALS.json",
+      "bytes": 968,
+      "sha256": "2018c0d4120deecf73ae984e23d81de7eef311675ff2813d9c57dc609fe5e5d6",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/TAX-ADMIN-RETRIEVALS.json",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/calculator-quotes-before-commit.log",
+      "bytes": 96,
+      "sha256": "cad00f598f9c8e270336b59db513ac86034d584bd071cbe38d678e9654bd13cf",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/calculator-quotes-before-commit.log",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/calculator-quotes.log",
+      "bytes": 155,
+      "sha256": "35fd2681eb91dc0871b4d0d60d3f3de2e9ff50f2b133e792e1abc5f0782a2d9f",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/calculator-quotes.log",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/examples.log",
+      "bytes": 58,
+      "sha256": "6657e7f1bd2e46bc80cf3e6883e5351d165449e943b05e2d48ea40041a5c8bc4",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/examples.log",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/initial-standard.log",
+      "bytes": 2267,
+      "sha256": "80b8bf6bed372fd8452ca6a504f2d0a337d409959db48d3f16e7d26509480f90",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/initial-standard.log",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/row-sources.log",
+      "bytes": 462,
+      "sha256": "12c3d9ec2c035d1573a148ac23e8281972c729cdba551a0e1c1b2fc54b0809a5",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/row-sources.log",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/standard-final.log",
+      "bytes": 1318,
+      "sha256": "efa0adb99e073587de4948ec6709d7811412fe4df3e5c68c6bafbead23d55e87",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/standard-final.log",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/sync-initial-missing-provenance.log",
+      "bytes": 184,
+      "sha256": "8f0dd30ca72c676707f4461293a566df5b846f256d0b0e5ab50121fe522a7c98",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/sync-initial-missing-provenance.log",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/sync-public-audit.log",
+      "bytes": 81,
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/sync-public-audit.log",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/validate-before-commit-zero-files.log",
+      "bytes": 99,
+      "sha256": "b483c71445dda503a93a56421eb28c2b76ea443c8b429d8f78cf654133c08258",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/validate-before-commit-zero-files.log",
+      "payload_exact": true
+    },
+    {
+      "path": "public-evidence/writer/validate-final.log",
+      "bytes": 192,
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa",
+      "original_local_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-greenland/validate-final.log",
+      "payload_exact": true
+    }
+  ],
+  "country_files_unchanged": [
+    {
+      "path": "skills/greenland/README.md",
+      "sha256": "38eacef0c2d7b5b3ed7944cf5e83714205e52646caa761be190099aac9453d39",
+      "git_blob": "b0813204359159bab54202e46c7ec87388e3ea4e"
+    },
+    {
+      "path": "skills/greenland/gl-mandatory-pension.md",
+      "sha256": "74723980316e28970e11c8a373d6129fc78d05f63cc0be6f8c84e87e9db11367",
+      "git_blob": "0430f18fc42165ee84737f1f651745e3257122f4"
+    },
+    {
+      "path": "skills/greenland/gl-payroll-ama.md",
+      "sha256": "09f7fadcd00b1128b518ed0bd6034853c58b098399c204d2ee434aa8be0a5618",
+      "git_blob": "8ea3527f3d9032a5d1992dd0ae65bfde3780c34f"
+    }
+  ],
+  "independent_report": {
+    "path": "public-evidence/independent-review/REPORT.md",
+    "sha256": "44e710f3bab1c8e42a6d5fdc639cce3a5d0af075766068d6cf4f42bfe3781a1a"
+  },
+  "source_read_dates": "Completed15Nov reads retained; actual new bounded16Nov reads and independent16Nov review distinguished. No renewed unread-source dates.",
+  "exclusions": [
+    "Raw official HTML/PDF/images and source-body captures",
+    "HTTP headers/session material/credentials",
+    "Private revision0 fixture and its non-acceptance stdout",
+    "Unrelated prior country preparation/duplicated Markdown ledgers/full candidate copies"
+  ],
+  "limits": "Explicitly bounded twoGuide review, not comprehensive country or accountant approval. Original writer82file manifest is a local-source dependency inventory, not the archive membership list."
+}
