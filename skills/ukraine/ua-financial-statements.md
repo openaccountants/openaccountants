@@ -1,10 +1,10 @@
 ---
 name: ua-financial-statements
 description: Use this skill whenever asked about Ukrainian financial statements and financial reporting (фінансова звітність) for legal entities, or whether a self-employed person must prepare them. Trigger on phrases like "Ukraine financial statements", "фінансова звітність", "П(С)БО", "НП(С)БО", "IFRS Ukraine", "МСФЗ", "do I file accounts as a FOP", "balance sheet Ukraine", "звіт про фінансові результати", "Форма 1-м", "Форма 1-мс", "enterprise size category Ukraine", "micro small medium large enterprise Ukraine", "statutory audit Ukraine", "Держстат financial report", "ТОВ financial statements", or any question about who must prepare and file financial statements, which accounting standards apply, the simplified report forms, deadlines, or audit obligations. This skill is about FORMAL FINANCIAL STATEMENTS for legal entities. A FOP (sole proprietor) does NOT prepare these; defer FOP records to ua-bookkeeping and FOP tax to ua-single-tax / ua-income-tax. ALWAYS read this skill before any Ukrainian financial-statement or financial-reporting work.
-version: 1.1
+version: 1.2
 jurisdiction: UA
 tax_year: 2026
-last_updated: 2026-11-15
+last_updated: 2026-11-16
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -14,7 +14,7 @@ domain: financial-statements
 type: situation-rules
 ---
 
-# Ukraine Financial Statements and Financial Reporting v 1.1
+# Ukraine Financial Statements and Financial Reporting v 1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -217,4 +217,4 @@ Not yet confirmed: full current 996/2258/419/NAS 1/NAS 25 statutory texts and al
 
 This is bounded source-cited reference material contributed by the Open Accountants Community, checked in the scopes stated above. It is not legal, accounting or tax advice and does not replace sign-off by a qualified Ukrainian accountant or auditor. Reporting law, standards, forms, deadlines and martial-law measures change; every actual output requires the current applicable sources and qualified review before filing or action. The old blanket “research-verified May 2026” claim and vendor-source reliance are not inherited as present verification.
 
-Part of openaccountants.com — open-source tax skills for the self-employed.
+Part of openaccountants.com: open-source tax skills for the self-employed.

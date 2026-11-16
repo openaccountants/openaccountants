@@ -2,24 +2,27 @@
 name: ug-tax-overview
 description: >
   Overview of the Uganda tax system for tax year 2026-27: the year of income, the Uganda Revenue Authority, main taxes, headline rates and filing rhythm, and the changes from 1 July 2026. Use for Uganda questions from URA taxpayers, employers, advisers and foreign investors, including rates, thresholds, filing dates, the URA portal and worked computations. Figures for tax year 2026-27 come from Uganda Revenue Authority pages and the law, and items that could not be opened are named as unverified in the Sources section. Not reviewed by a licensed accountant.
-version: 0.2
+version: 0.3
 jurisdiction: UG
 category: orchestrator
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
-last_updated: 2026-11-01
+last_updated: 2026-11-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: rates-card
 ---
 
-# Uganda Tax Overview v0.2
+# Uganda Tax Overview v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 Tax year: 2026-27 (year of income 1 July 2026 to 30 June 2027).
 
-## The system at a glance
+<a id="the-system-at-a-glance"></a>
+
+## Rates, bands and thresholds
 
 | Item | Amount | Tax year | Official URL |
 |---|---|---|---|
