@@ -1,10 +1,10 @@
 ---
 name: pk-it-export-tax
 description: Use for pakistan it and freelance export tax. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
-version: 1.1
+version: 1.2
 jurisdiction: PK
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-16
 category: international
 depends_on:
   - income-tax-workflow-base
@@ -13,7 +13,7 @@ domain: income-tax
 type: computation
 ---
 
-# Pakistan IT and freelance export tax v1.1
+# Pakistan IT and freelance export tax v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -94,7 +94,7 @@ For the actual tax-year-2026 filing cycle, FBR Circular 04 of 2026-27 dated 15 O
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|
 | Read for Circular 04 of 2026-27, 15 October 2026, the 31 October extension for the original 30 September cohort; scanned signed page inspected | https://download1.fbr.gov.pk/Docs/20261015221039470Extension.pdf | 2026-11-14 |
-| Read for ITO ss.74,114,116,118,137,154 A(1)-(3),182,205; Division IVA rows 1-2 and neighboring provisions; tax year 2026 law | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
+| Read for ITO sections 74; 114; 116; 118; 137; 154 A(1)-(3); 182; 205; Division IVA rows 1-2 and neighboring provisions; tax year 2026 law | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
 | Read for June 2026 consolidation s.154A and Division IVA footnote extending the period through tax year 2029; distinguish later amendments from this tax year | https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf | 2026-11-14 |
 
 Not yet confirmed: the taxpayer's PSEB period, classification, gross proceeds, actual remittances/withholding and compliance; any later case-specific extension and current IRIS box identifiers; treatment of a failed-condition or opted-out case beyond this withholding computation. No USD/PKR exchange rate is asserted by the examples. Future tax years need their own effective-law check.

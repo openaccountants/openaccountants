@@ -1,10 +1,10 @@
 ---
 name: pk-payroll
 description: Use for pakistan employer salary withholding. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
-version: 1.1
+version: 1.2
 jurisdiction: PK
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-16
 category: international
 depends_on:
   - social-contributions-workflow-base
@@ -13,7 +13,7 @@ domain: payroll
 type: computation
 ---
 
-# Pakistan employer salary withholding v1.1
+# Pakistan employer salary withholding v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -107,7 +107,7 @@ Obtain contracts/payroll records, employee identifiers, current/previous employm
 |---|---|---|
 | Read for Income Tax Rules 42-44 operative payment, non-salary certificate, annual salary statement and requested reconciliation branches on 2026-11-14 | https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf. | 2026-11-14 |
 | Read for enacted Finance Act 2024 amendment 22(b) and current s.149(2), reconciling the 2025 consolidation's incorrect denominator annotation | https://download1.fbr.gov.pk/Docs/2024630146346801FinanceAct-2024.pdf; https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf | 2026-11-15 |
-| Read for ITO ss.71,74,149 and First Schedule salary table/classification, with s.4AB surcharge context | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
+| Read for ITO sections 71; 74; 149 and First Schedule salary table/classification, with s.4AB surcharge context | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
 | Read for current 2026 ITO s.165 quarterly statement and schedule, confirming cadence separate from deposit | https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf | 2026-11-14 |
 | Read for EOB Act ss.9/9 B employer/employee contribution distinction and employer-share recovery prohibition | https://pakistancode.gov.pk/pdffiles/administratorf3be1ec8d21dfebb9c5d1733f43cffe6.pdf | 2026-11-14 |
 

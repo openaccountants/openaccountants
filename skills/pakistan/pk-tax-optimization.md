@@ -1,10 +1,10 @@
 ---
 name: pk-tax-optimization
 description: Use for pakistan lawful freelancer tax planning. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
-version: 1.1
+version: 1.2
 jurisdiction: PK
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-16
 category: international
 depends_on:
   - income-tax-workflow-base
@@ -13,7 +13,7 @@ domain: tax-optimization
 type: decision
 ---
 
-# Pakistan lawful freelancer tax planning v1.1
+# Pakistan lawful freelancer tax planning v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -38,7 +38,7 @@ Obtain services/contracts and domestic/export split, residence, bank/e-PRCs, gro
 |---|---|---|
 | PSEB-registered qualifying IT export | 0.25% of proceeds for tax years 2024-2026 under the cited table; finality conditions and option-out apply | [s.154A; Division IVA](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Another qualifying service export | 1% of proceeds; lack of PSEB does not automatically mean normal slabs | [s.154A(1)(b); Division IVA](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
-| Domestic business expenses | Document actual business purpose and legal deductibility; not an export gross-proceeds deduction | [ss.20,21,174](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
+| Domestic business expenses | Document actual business purpose and legal deductibility; not an export gross-proceeds deduction | [sections 20; 21; 174](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Crypto/informal receipts | Do not advise using them to bypass banking evidence or tax; regulatory and tax classification need separate review | [s.154A](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 
 ## Worked cases

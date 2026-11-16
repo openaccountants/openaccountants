@@ -1,10 +1,10 @@
 ---
 name: pk-income-tax
 description: Use for pakistan personal income tax and aop working paper. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
-version: 1.1
+version: 1.2
 jurisdiction: PK
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-16
 source_checked: 2026-11-14
 depends_on:
   - income-tax-workflow-base
@@ -15,7 +15,7 @@ domain: income-tax
 type: computation
 ---
 
-# Pakistan personal income tax and AOP working paper v1.1
+# Pakistan personal income tax and AOP working paper v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -78,7 +78,7 @@ An AOP is taxed separately. A member's share from taxed AOP income is exempt sub
 | Obligation and conditions | Ordinary date/mechanic | Official source |
 |---|---|---|
 | Individual/AOP annual return | 30 September following tax-year end; ordinary tax-year-2026 date is 30 September 2026 (derived); applicable extension must be checked | [s.118(3)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
-| Resident individual wealth/reconciliation; AOP-member first-proviso branch | Resident individual with own return; every AOP member also with the AOP's income return; notice-based statements by their notice date | [ss.116,118(4)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
+| Resident individual wealth/reconciliation; AOP-member first-proviso branch | Resident individual with own return; every AOP member also with the AOP's income return; notice-based statements by their notice date | [sections 116 and 118(4)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Return-balance tax payment | By the return due date | [s.137(1)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Individual advance-tax quarters | 15 September,15 December,15 March,15 June; s.147 exclusions/threshold/formula apply | [s.147(4 B)-(5)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | AOP advance-tax quarters | 25 September,25 December,25 March,15 June; turnover formula applies, not an individual-income threshold | [s.147(4),(5 A)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
@@ -177,7 +177,7 @@ For the actual tax-year-2026 filing cycle, FBR Circular 04 of 2026-27 dated 15 O
 |---|---|---|
 | Read for Circular 04 of 2026-27, 15 October 2026, the 31 October extension for the original 30 September cohort; scanned signed page inspected | https://download1.fbr.gov.pk/Docs/20261015221039470Extension.pdf | 2026-11-14 |
 | Read for current-action s.182 item 1 explanation and s.205(1)/(1 A)/(1 B)/(3)in the 2026 consolidation, plus enacted Finance Act 2024 amendment 31, on 2026-11-14 | https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf; https://download1.fbr.gov.pk/Docs/2024630146346801FinanceAct-2024.pdf. | 2026-11-14 |
-| Read for ITO ss.4/4 AB,11,18,20-21,57,61-63,71,74,82/84,92,103,113,116,118,137,147,154 A,168,174,182/205 and First Schedule Division I/IX; operative text distinguished from historic footnotes | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
+| Read for ITO sections 4/4 AB; 11; 18; 20-21; 57; 61-63; 71; 74; 82/84; 92; 103; 113; 116; 118; 137; 147; 154 A; 168; 174; 182/205 and First Schedule Division I/IX; operative text distinguished from historic footnotes | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
 | Read for June 2026 consolidation s.154A/Division IVA period amendment; this skill uses tax-year-2026 effective law rather than automatically adopting later-year amendments | https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf | 2026-11-14 |
 
 Not yet confirmed: client-specific residence/treaty/source/classification, actual tax credits and PSEB compliance, current IRIS field identifiers, any further individual deadline orders/ATL event details, complete super-tax/sector-minimum-tax/WWF/WPPF calculations, historical residual industrial-credit/amnesty claims and full dispute procedures, NTN/CNIC format lengths, split-year/treaty treatment, prescribed foreign-tax-credit proof, historical AOP member-share rate aggregation and statutory non-filer enforcement branches. The old 6-24-month refund estimate, blanket AOP remuneration exemption, and automatic PSEB-failure/ordinary-income assumption are not usable instructions. The historic pension age uplift is expired; no current uplift is claimed.

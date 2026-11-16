@@ -1,10 +1,10 @@
 ---
 name: pk-return-assembly
 description: Use for pakistan annual return assembly and reconciliation. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
-version: 1.1
+version: 1.2
 jurisdiction: PK
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-16
 depends_on:
   - pk-freelance-intake
 category: orchestrator
@@ -14,7 +14,7 @@ domain: income-tax
 type: router
 ---
 
-# Pakistan annual return assembly and reconciliation v1.1
+# Pakistan annual return assembly and reconciliation v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -92,7 +92,7 @@ If an output is incomplete, label the specific file/schedule partial. Do not let
 | Individual/AOP annual return | 30 September after year-end; tax-year 2026 ordinary date 30 September 2026 (derived), extension must be checked | [s.118(3)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Company tax year ending January-June | 31 December next following tax-year-end; June 2026 gives 31 December 2026 (derived) (company filing day of month in words on the page) | [s.118(2)(a)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Other company tax-year end | 30 September next following year-end; no universal 6-month rule (company filing day of month in words on the page) | [s.118(2)(b)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
-| Resident individual's and AOP-member wealth/reconciliation | Resident individual with own return; every AOP member also with the AOP's income return; notice cases by notice date | [ss.116,118(4)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
+| Resident individual's and AOP-member wealth/reconciliation | Resident individual with own return; every AOP member also with the AOP's income return; notice cases by notice date | [sections 116 and 118(4)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Return-balance payment | By return due date; actual filing/payment records reconciled separately | [s.137(1)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Quarterly withholding statements | Quarters ending March/June/September/December:20 April/20 July/20 October/20 January, subject to any applicable later law/notice | [s.165(2)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Individual advances | 15 September,15 December,15 March,15 June; individual formula/exclusions apply | [s.147(4 B)-(5)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
