@@ -26,7 +26,7 @@ Authorities: the Egyptian Tax Authority (ETA, مصلحة الضرائب المص
 
 ## Scope
 
-- **In:** a resident individual, sole proprietor or professional, whose facts `eg-freelance-intake` has confirmed. Both income tracks: the general system (`eg-income-tax`) and the turnover regime under Law 6 of 2025 (`eg-sme-tax`); VAT (`egypt-vat`); payroll (`eg-payroll`) and social insurance (`eg-social-insurance`); records (`eg-bookkeeping`).
+- **In:** a resident individual, sole proprietor or professional, whose facts `eg-freelance-intake` has confirmed. Both income tracks: the general system (`eg-income-tax`) and the turnover regime under Law 6 of 2025 (`eg-sme-tax`); VAT under VAT Law 67 of 2016 and its executive regulations (`egypt-vat`); payroll (`eg-payroll`) and social insurance under Law 148 of 2019 (`eg-social-insurance`); records (`eg-bookkeeping`).
 - **Out:** companies (`eg-corporate-tax`, `eg-financial-statements`), non-residents, partnerships, and any computation (the content skills own every figure).
 
 ## Ask the client first
@@ -110,7 +110,7 @@ A first return counts as notice of starting the activity, and a return is still 
 
 1. Intake summary from `eg-freelance-intake`, with the route and its facts.
 2. Income: the general return workpapers from `eg-income-tax` (receipts, deductible costs, depreciation, net profit, bands, credits), or the turnover figure and band from `eg-sme-tax` for form 20.
-3. VAT: one reconciliation per period from `egypt-vat`, with every e-invoice identifier.
+3. VAT: one reconciliation per period from `egypt-vat`, with every e-invoice identifier. Input VAT on purchases needs the supplier's e-invoice, or the credit can be disallowed (`eg-bookkeeping`).
 4. Payroll and social insurance schedules, if there are staff.
 5. A reconciliation of VAT turnover to income tax turnover; flag every difference for the reviewer.
 6. The reviewer brief: open flags, data gaps, judgement calls.

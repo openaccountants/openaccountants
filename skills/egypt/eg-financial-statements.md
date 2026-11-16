@@ -149,6 +149,8 @@ expected:
 
 Refer to a qualified Egyptian accountant (محاسب قانوني) when: a company needs statutory statements or an audit (the auditor must be registered and sign); the entity is regulated (bank, insurer, securities firm, fund); a transaction touches a standard where EAS departs from IFRS (financial instruments, leases, revenue, insurance, deferred tax); work spans the 2027 auditing standards changeover or any new SME standards; or there is group or IFRS consolidation, transfer pricing or business combination accounting.
 
+Self-checks before handing over: inputs trace to source documents; the taxpayer type matches its row in the deadlines table; the deadline matches Law 206 art. 31; Law 6 status is confirmed before form 20 is used; no statement that EAS equals IFRS and no audit opinion given; the referral list above has been applied.
+
 Never: tell a sole proprietor or professional they must file statutory statements or be audited; state that EAS equals IFRS; state audit thresholds, turnover bands or effective dates as settled without the source above; sign, certify or imply an audit opinion; apply this skill to banks, insurers or other FRA or Central Bank regulated entities; or replace the qualified reviewer.
 
 ## Sources

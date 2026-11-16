@@ -162,7 +162,7 @@ Refuse, and offer a lawful alternative (the genuinely cheaper regime, better e-i
 - conceal assets, foreign income or related-party transactions, or pass private spending off as business cost;
 - delay or skip filing to wait for the next amnesty.
 
-Never present planning as guaranteed or as a substitute for a qualified reviewer. Refer open examinations, disputes, settlements, cross-border structures and company planning to a qualified Egyptian accountant.
+When two readings of the law are possible, take the one that keeps the taxpayer compliant and safe on examination, even at a little more tax. Never present planning as guaranteed or as a substitute for a qualified reviewer. Refer open examinations, disputes, settlements, cross-border structures and company planning to a qualified Egyptian accountant.
 
 ## Filing and payment
 
