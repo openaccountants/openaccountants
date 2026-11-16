@@ -43,7 +43,7 @@ One deterministic evidence.tar.gz, exact EVIDENCE-INDEX.json and this readable r
 | `kr-social-insurance.md` | `25298d6f182bd52040784552dedec07091078c774a7990c2458c5a7d8f3101ad` |
 | `references.md` | `d2035db583a92b9e8f340d312ea79461e3d356c577922e3ce3d4f53764f7a429` |
 | `simplified-business-operator-registration-under-vat-act.md` | `95658316fc098c7ea935ef182239db49e271d916d3b1317a5f1ae0cbff3efab0` |
-| `south-korea-crypto-tax.md` | `38c87a80003d16d6ccf29a705a8563177a77bb2eebd5391cb136dae143def188` |
+| `south-korea-crypto-tax.md` | `6d14f07fcdee021f649b75e936cced01bdeb3a68c5032c7231d95c520e4aeeee` |
 
 No merge, auto-merge, release, production write or new grant. Original coordinator alone controls any later merge.
 
@@ -55,3 +55,10 @@ Source-content commit `47ed6f75b21e86c45f379ca10702ac5694a60090`; current crypto
 The limited review found that the official559-character alt is **not complete relative to the image**: the top band omits the image's `3억8,406만원 +` cumulative base, KRW384,060,000. The eighth equation therefore cites both HTML and the actual image as necessary corroboration. This qualifies any earlier diagnostic completeness wording; root owns that diagnostic directory and should correct it. This lane edits no parser, fetch or extraction code.
 
 All19 Guide checks pass; the exact citation diff and scoped review/bindings are in deltas/. No new full country source scan or full test suite was run. Prior published head321438eb has all five required checks green and advisoryfigures red(60misses). Current-head CI must be observed separately; no new figure result is inferred. Keep the PR draft while figures red. No merge or production action.
+
+
+## Separate computed cumulative bases and quick deductions
+
+Source commit `156bb8cc3f4d2ce7dc36bbfbe54b0cf24d19c5d3`, crypto SHA-256 `6d14f07fcdee021f649b75e936cced01bdeb3a68c5032c7231d95c520e4aeeee`. Only the arithmetic presentation changes: the sourced statutory band/rate table is byte-identical, with no computed/derived markers in its rows. A separate output table holds only computed cumulativeA and quick-deductionD. Every original equation/input is preserved in adjacent derivations. The cumulative recurrence startsA=0 and adds each completed band width times its sourced marginal rate; D=L*r-A. The final cumulative384,060,000 is explicitly computed as174,060,000+(1,000,000,000-500,000,000)*42%, without claiming that the HTMLalt contains it. The actual image remains additional read evidence.
+
+The focused independent arithmetic/dependency review passes; full144-entry legal review, prior arithmetic, all original cases/holds and unchanged suites are reused. No new legal source scan or full local tests. All19Guidechecks pass; committed validator4files/0warnings and strictsync4sources/0errors. Latest published CI is tracked separately; preceding10d87df3 had all5required gates green and advisoryfigures54MISS. Current results are never inferred from root's unmerged parser change. Keep draft while figures red.
