@@ -1,0 +1,690 @@
+{
+  "country": "tanzania",
+  "wrapper_date": "2026-11-16",
+  "reviewed_source_commit": "7c8b9c17b29e60cdadd91479d6dafcd0e43ef8e8",
+  "reviewed_base_commit": "2844c309238b4fdb63be0a3d0ad9ae99a8ea89c8",
+  "scope": "Exact prepared selected reviewer/writer records. Evidence packaging only; no fresh legal review, tax-content change, accountant approval or country-completeness claim. Original review dates, source-read scopes, genuine holds and historical check failures remain unchanged.",
+  "archive": {
+    "path": "review-evidence.tar.gz",
+    "bytes": 764889,
+    "sha256": "74c55edf4f73734ffd07dda1ccd9a1643f84c2a6ae681b30d4f202704711ba06",
+    "format": "tar.gz; USTAR regular-file members; lexicographic paths; uid/gid/mtime zero; mode0644; empty uname/gname; gzip filename empty and mtime zero; compression9",
+    "member_count": 71,
+    "payload_bytes": 5460255
+  },
+  "readable_report": {
+    "path": "REPORT.md",
+    "bytes": 10083,
+    "sha256": "8a4d5499cfd3b79e510e17e1409d8a64c959b77341ae6b3b913393a54bbae088",
+    "verbatim_selected_final_report": "public-evidence/recovery/REPORT.md",
+    "verbatim_selected_final_report_sha256": "2ea0c2c971b3182feaf44346f5ab328e0c28ae5149447c7e9bea1f439e231b03"
+  },
+  "prepared_selection_binding": {
+    "inventory_sha256": "af55145a2fc33d78d4694d6c446b92dbce4cce1d74692a3e5cdc1f48cb561f5c",
+    "preparation_manifest_sha256": "d146f3ad2fc95608bcb6aa1135fd56beb6837bfceb032e28e27c2e1e4dacab1b",
+    "selected_original_payloads_exact": true
+  },
+  "selected_original_review_manifests": [
+    {
+      "path": "public-evidence/reviews/initial/report-manifest.json",
+      "bytes": 4229,
+      "sha256": "046920c482764ee7625627ad88c4d7e0d2f2d7ac693a1e3bc0df326d8a934773"
+    },
+    {
+      "path": "public-evidence/reviews/correction/review-manifest.json",
+      "bytes": 2293,
+      "sha256": "537be24bdcfd6e96e846444bb35ec2dec9e5d4c67c15bcc7c2a416e6e0cc1ab2"
+    },
+    {
+      "path": "public-evidence/reviews/final/review-manifest.json",
+      "bytes": 2231,
+      "sha256": "b52ebb62467a0437a0a2d52990b4a87d5e7c79eaa2d54fee56fb46e32324d5ee"
+    },
+    {
+      "path": "public-evidence/recovery/MANIFEST.json",
+      "bytes": 155263,
+      "sha256": "524a642e19bde14cd3a236e13f01bde5b9838eee68f62095c0d083353398882c"
+    },
+    {
+      "path": "public-evidence/recovery-writer/FINAL-MANIFEST.json",
+      "bytes": 39873,
+      "sha256": "9b586439a2975078d72169b74e210169a28ebd93e14028a97a444333b255ca51"
+    }
+  ],
+  "files": [
+    {
+      "path": "public-evidence/current-checks/calculator-quotes.log",
+      "bytes": 239,
+      "sha256": "3bf8c6fde37cd2f8cd481e22b03a5b922502e2ae86b5e553de964de3efd4fef2",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Frozen current writer check and actual exception dispositions; no checker exit-code waiver",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/current-checks/current-checks.json",
+      "bytes": 253,
+      "sha256": "c02ba641144cb9cee9ab1a87c92729355cfc2af7ae35a658f4fde36eb0e77129",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Frozen current writer check and actual exception dispositions; no checker exit-code waiver",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/current-checks/examples.log",
+      "bytes": 59,
+      "sha256": "614e072e97cbeee10f3da4088336e57c593b4d84aa8a79925a83cb8ed787aa5f",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Frozen current writer check and actual exception dispositions; no checker exit-code waiver",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/current-checks/row-source-result.json",
+      "bytes": 92448,
+      "sha256": "783f588ed34f3c5e8b6538dcf6af7960ea4facd58744698bbce57137d39e9989",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Frozen current writer check and actual exception dispositions; no checker exit-code waiver",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/current-checks/row-sources-nov16.log",
+      "bytes": 15695,
+      "sha256": "cd34ce14bab5b67a77beccd52eed0d400b4779693c3b0438aa5a3fc79b4c7c49",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Frozen current writer check and actual exception dispositions; no checker exit-code waiver",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/current-checks/sync.log",
+      "bytes": 81,
+      "sha256": "76142d89a388590a8f53d7bfab66ba511e70d2f0197373082cae6d93e08c4615",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Frozen current writer check and actual exception dispositions; no checker exit-code waiver",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/current-checks/validate.log",
+      "bytes": 192,
+      "sha256": "bd4a3cd173dff3a5424e6f0d4aacb0c4f12378ded586f866bd67c8205fcba150",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Frozen current writer check and actual exception dispositions; no checker exit-code waiver",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/tanzania-payroll-ledger.md",
+      "bytes": 170504,
+      "sha256": "460a89de88728ebe9d00b4af4e84bb8718eed2108cc4a0b0c36fb3a48f34b689",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete figure/rule ledger; original legal read dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/tanzania-payroll-rule-data.json",
+      "bytes": 157451,
+      "sha256": "3ae157ecba123a03e194c8743f27ad350203c4a3bb48dd6873812132f02fd411",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete figure/rule ledger; original legal read dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/tanzania-social-contributions-ledger.md",
+      "bytes": 118966,
+      "sha256": "9cccbdd3819c8db8fb8aea7c04495e900222d73029d714f51e522a1640ddbbc5",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete figure/rule ledger; original legal read dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/tanzania-social-contributions-rule-data.json",
+      "bytes": 117060,
+      "sha256": "64d76ca17ef0afe459106a22e2675598f727263868cfbc8df8557ce8c6d3126d",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete figure/rule ledger; original legal read dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/tanzania-tax-optimization-ledger.md",
+      "bytes": 98449,
+      "sha256": "e09c11f84fba26b9ecbf20bf420d14eb1917d530e847804ad6772bca7bd99a52",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete figure/rule ledger; original legal read dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/tanzania-tax-optimization-rule-data.json",
+      "bytes": 95083,
+      "sha256": "0fb44ff227585ab6fc83e22748cdd6e5d11869c7ab4c731f5d71360e9e72abb9",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete figure/rule ledger; original legal read dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/tanzania-vat-ledger.md",
+      "bytes": 60366,
+      "sha256": "f0fc0b172c39b1c08064b49a955323f2df06086e7756ada4b60b67fe9e843931",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete figure/rule ledger; original legal read dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/tanzania-vat-rule-data.json",
+      "bytes": 53056,
+      "sha256": "534269230a737d7d9ccfa429e80ad226bf4b03969a943622d0426cff6a17c5cd",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete figure/rule ledger; original legal read dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/tanzania-withholding-tax-ledger.md",
+      "bytes": 120392,
+      "sha256": "1e14eb015bd58bcdf9e0da95e806d62c9bcdcaf6a57414fb24474710157b543b",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete figure/rule ledger; original legal read dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/tanzania-withholding-tax-rule-data.json",
+      "bytes": 118969,
+      "sha256": "2ba73695829eb5e160ee36e55f52378acc0b3624e2836124a0b21adb46e90aab",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete figure/rule ledger; original legal read dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/maps/all-original-nonblank-lines.json",
+      "bytes": 538600,
+      "sha256": "e145c1a7092b33cd037be12a7d73b6c79c226bb53d091c7c8e656d77a263fa3c",
+      "original_evidence_date": "2026-11-16 continuity",
+      "purpose": "Complete 1,407 nonblank original-line destinations, including structural metadata",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/maps/tanzania-payroll-old-topics.json",
+      "bytes": 234502,
+      "sha256": "4e09bcee0a0cbc94dda0d7e38f43cc28647bca41bfd74c6937244319c9ed4a21",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete original physical-block destination and review map",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/maps/tanzania-social-contributions-old-topics.json",
+      "bytes": 189685,
+      "sha256": "6d62fe2a0253cf5586f0666905852260d0aa05c53991f9b90b1018f4652e082c",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete original physical-block destination and review map",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/maps/tanzania-tax-optimization-old-topics.json",
+      "bytes": 138967,
+      "sha256": "0da031a3d4efce8d41ea0e87c6130a8bf9702637c547150353ff9ae53a1c89bc",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete original physical-block destination and review map",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/maps/tanzania-vat-old-topics.json",
+      "bytes": 66304,
+      "sha256": "670f0e3d46a749288cb7dd2f0a56a90990c003e499d2f83d475f6705fe44802a",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete original physical-block destination and review map",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/maps/tanzania-withholding-tax-old-topics.json",
+      "bytes": 176821,
+      "sha256": "d59e131f284ec3a17d50725e965521663cbef020552950d41efea09effaa8044",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Current complete original physical-block destination and review map",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery-writer/FINAL-MANIFEST.json",
+      "bytes": 39873,
+      "sha256": "9b586439a2975078d72169b74e210169a28ebd93e14028a97a444333b255ca51",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Recovery writer handoff or full frozen manifest; references do not include excluded raw files",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery-writer/HANDOFF.md",
+      "bytes": 9064,
+      "sha256": "37ee6f2e3743bf33fffd57c3d8a66eed7e362a954929340d7ee22f2d7d6eb191",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Recovery writer handoff or full frozen manifest; references do not include excluded raw files",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery/MANIFEST.json",
+      "bytes": 155263,
+      "sha256": "524a642e19bde14cd3a236e13f01bde5b9838eee68f62095c0d083353398882c",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Independent recovery continuity evidence, preserving older legal-read dates; manifest references local excluded artifacts",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery/REPORT.md",
+      "bytes": 8220,
+      "sha256": "2ea0c2c971b3182feaf44346f5ab328e0c28ae5149447c7e9bea1f439e231b03",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Independent recovery continuity evidence, preserving older legal-read dates; manifest references local excluded artifacts",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery/closure-assessment.md",
+      "bytes": 5932,
+      "sha256": "9249937fefffc8eb10e0f67f7964be85ebde18728996dfb372f8a7553036da1f",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Independent recovery continuity evidence, preserving older legal-read dates; manifest references local excluded artifacts",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery/findings.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Independent recovery continuity evidence, preserving older legal-read dates; manifest references local excluded artifacts",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery/fresh-body-and-script-continuity.json",
+      "bytes": 2650,
+      "sha256": "b482907a0c5f121604355373d1dddb11e88505487a21016997cd18a9986ccca3",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Independent recovery continuity evidence, preserving older legal-read dates; manifest references local excluded artifacts",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery/fresh-source-scope.md",
+      "bytes": 1826,
+      "sha256": "d54532a39eb91a1e472bc482b3da9810277bf54ef4346951094f271adde18e25",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Independent recovery continuity evidence, preserving older legal-read dates; manifest references local excluded artifacts",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery/independent-cases.json",
+      "bytes": 34180,
+      "sha256": "6dd3fd8012e224986b844699a30ec7d3db8cb6295157a0c310caa2e145010f62",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Independent recovery continuity evidence, preserving older legal-read dates; manifest references local excluded artifacts",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery/invariants.json",
+      "bytes": 43389,
+      "sha256": "c9de28152f418d661e506d502e68d5e650551210d1f801abcc258ed42698541c",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Independent recovery continuity evidence, preserving older legal-read dates; manifest references local excluded artifacts",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery/no-loss-review-continuity.json",
+      "bytes": 851257,
+      "sha256": "c831912f1ae11242c9096754b94dd6c85c6082d2ce99c5fc6efa7e41711c82d7",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Independent recovery continuity evidence, preserving older legal-read dates; manifest references local excluded artifacts",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery/protected-and-checks.json",
+      "bytes": 13783,
+      "sha256": "3168a24ab2585d0804d1d9b796308a47dfe1aaf8b4224ff2b58c5550930f66b1",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Independent recovery continuity evidence, preserving older legal-read dates; manifest references local excluded artifacts",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery/review-unit-continuity.json",
+      "bytes": 262424,
+      "sha256": "5cae6564f110ae9113e70f5e8800d83571aad80cc324c86b9584eb22c67c1e75",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Independent recovery continuity evidence, preserving older legal-read dates; manifest references local excluded artifacts",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery/semantic-correction-continuity.json",
+      "bytes": 41857,
+      "sha256": "d0f0e3119f54e52e69bd190830cad97422380d2d2ace4148f9cae582a8e3624c",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Independent recovery continuity evidence, preserving older legal-read dates; manifest references local excluded artifacts",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery/source-scope-continuity.json",
+      "bytes": 24243,
+      "sha256": "01e26a04beeac9ba3027f05f281df0ce60fc80280e120d9857b1391439abc10c",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Independent recovery continuity evidence, preserving older legal-read dates; manifest references local excluded artifacts",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/recovery/stock-occurrence-continuity.json",
+      "bytes": 101206,
+      "sha256": "c67222f3209773a70574aad1eab299c49a535683275f0f997abbcc11e76bd7ca",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Independent recovery continuity evidence, preserving older legal-read dates; manifest references local excluded artifacts",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/review-rows/tanzania-payroll-rows.json",
+      "bytes": 96797,
+      "sha256": "89d897b2b1bf7cee62ad5b939b832d845c048ea13f77482a5fcc78d408c23482",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Complete final independent rule-row verdicts and source bindings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/review-rows/tanzania-social-contributions-rows.json",
+      "bytes": 38348,
+      "sha256": "e078ba0ec5113911aba8f3fa74e3df4ff78a647c713b7f9a47152df966523efc",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Complete final independent rule-row verdicts and source bindings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/review-rows/tanzania-tax-optimization-rows.json",
+      "bytes": 36506,
+      "sha256": "5fc2f3bc0fbf295030d8f26443aa518ba6e5830d988c7604b9cc90b6e0a88b97",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Complete final independent rule-row verdicts and source bindings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/review-rows/tanzania-vat-rows.json",
+      "bytes": 38122,
+      "sha256": "2e991c874743163fb3e22dc103645c5e1c6ba045ccc34b192d52bb01873d3bff",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Complete final independent rule-row verdicts and source bindings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/review-rows/tanzania-withholding-tax-rows.json",
+      "bytes": 43203,
+      "sha256": "95ebd4ea6bed14a8f7789aa0418e87b37d947f69dfe3a77dfddb371d533dc204",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Complete final independent rule-row verdicts and source bindings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/correction/first-pass-finding-resolution.json",
+      "bytes": 6096,
+      "sha256": "7b2a82afdadd1094382a24da0b660d7b549438104a0a6edf975255e5a5b75de9",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Closure accounting for all 28 first-pass findings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/correction/residual-findings.json",
+      "bytes": 4274,
+      "sha256": "02c1b9e4cf63e4fabde91cfe3e2e99a141d3dd5694df8d2fe31dd430bf0bd6de",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Two residual findings retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/correction/review-manifest.json",
+      "bytes": 2293,
+      "sha256": "537be24bdcfd6e96e846444bb35ec2dec9e5d4c67c15bcc7c2a416e6e0cc1ab2",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Correction exact-head binding",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/correction/review-tanzania-pack-correction-a5ac213fd.md",
+      "bytes": 6853,
+      "sha256": "b2803e6cc6c1f5552371277fd629e8a1dc82d9ab26ea4ca4f9afa9648fa9475b",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Complete correction recheck HOLD and two residual findings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/binding-and-protected-fields.json",
+      "bytes": 4166,
+      "sha256": "da6821382593451fbb47a62de07e959c820b70ab5d1989840810f20791a5633f",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Exact final review, cases, protection/check binding or required checker-cause correction",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/case-recomputations.json",
+      "bytes": 26539,
+      "sha256": "80fac8d45c83d975cbcd822f0b2df64d77a099dc99e80db755088f9a9c8eaf31",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Exact final review, cases, protection/check binding or required checker-cause correction",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/final-readiness-and-checker-precision-addendum.json",
+      "bytes": 1957,
+      "sha256": "bbd8bc4e68f7bc3f9fd08797a24cf7dc23d4170c3e79f7808b8388cf60ea992f",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Exact final review, cases, protection/check binding or required checker-cause correction",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/final-readiness-and-checker-precision-addendum.md",
+      "bytes": 1411,
+      "sha256": "ebdad3bc8c619bcabbccb3ff10676076c558e75479d2f15e5e36f69e1f585e50",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Exact final review, cases, protection/check binding or required checker-cause correction",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/mechanical-19checks.json",
+      "bytes": 374,
+      "sha256": "5bad0b2d1018a69d1dd2574cba112732e2f0d96cb237bb3661664fa32c68a18c",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Exact final review, cases, protection/check binding or required checker-cause correction",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/review-manifest.json",
+      "bytes": 2231,
+      "sha256": "b52ebb62467a0437a0a2d52990b4a87d5e7c79eaa2d54fee56fb46e32324d5ee",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Exact final review, cases, protection/check binding or required checker-cause correction",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/review-tanzania-pack-final-67c03fe82.md",
+      "bytes": 5422,
+      "sha256": "1c28cc7ec930ff1a56be1fc437b76a82e89ddb0f02fc6c863031d6a82588381a",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Final cumulative full scoped pack verdict",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/review-tanzania-payroll-final-67c03fe82.md",
+      "bytes": 97874,
+      "sha256": "3be7b721346d028661137f8ef36c681466275c93ba0fed3b29c6569c46be5bac",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Final cumulative full scoped per-file review; not a fresh recovery review",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/review-tanzania-social-contributions-final-67c03fe82.md",
+      "bytes": 69098,
+      "sha256": "3851dee41d09bdf337545e2bc857b748a6ce27674d20136e2c6219311bf73e0d",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Final cumulative full scoped per-file review; not a fresh recovery review",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/review-tanzania-tax-optimization-final-67c03fe82.md",
+      "bytes": 61971,
+      "sha256": "96eb1d281824b8aa367af84bfebba75e5224f19aad50010a074a0797962f6487",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Final cumulative full scoped per-file review; not a fresh recovery review",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/review-tanzania-vat-final-67c03fe82.md",
+      "bytes": 35723,
+      "sha256": "3ff6686872ae2eadd23b7f0745268c0c45bc725f2c631c28e5dc301f7e504080",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Final cumulative full scoped per-file review; not a fresh recovery review",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/review-tanzania-withholding-tax-final-67c03fe82.md",
+      "bytes": 74070,
+      "sha256": "a90203738b2d890aeb242b8e86499e1e75fdb747dc0bcf6ed08a5980f7f46b1a",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Final cumulative full scoped per-file review; not a fresh recovery review",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/summary.json",
+      "bytes": 2193,
+      "sha256": "1f77e3d7d63706500e4614cbb44a011febdf5667078ec40ecaf72242820ed347",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Exact final review, cases, protection/check binding or required checker-cause correction",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/findings-first-pass.json",
+      "bytes": 65161,
+      "sha256": "0e0a7f33354a04b23513ea7ee0a708485ddc80657ec4483347598a58956edf2d",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "All initial findings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/report-manifest.json",
+      "bytes": 4229,
+      "sha256": "046920c482764ee7625627ad88c4d7e0d2f2d7ac693a1e3bc0df326d8a934773",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Original initial-report binding",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/review-tanzania-pack.md",
+      "bytes": 21341,
+      "sha256": "beb827ae5946f94c40d9ef1c045bed3565f9c7a3fe91739f12fa6c86eb0aa69e",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Initial full pack HOLD",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/review-tanzania-payroll.md",
+      "bytes": 145976,
+      "sha256": "af015816d0dec2a6e8a4335f313c27b550b5a960476d2e2679ee7f4c460b34b6",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Initial full per-file review, including HOLD and original findings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/review-tanzania-social-contributions.md",
+      "bytes": 111399,
+      "sha256": "cc28de5f93ff76b405fd7ba5d543e6a6344804513f34b6dadc80d03280edb840",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Initial full per-file review, including HOLD and original findings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/review-tanzania-tax-optimization.md",
+      "bytes": 94834,
+      "sha256": "294bd378be4f33c1a864a2522bb3d762fb4294d8adf0d1fd6fe22e3f6c4aca66",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Initial full per-file review, including HOLD and original findings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/review-tanzania-vat.md",
+      "bytes": 61657,
+      "sha256": "fb2c55c3116f01bdbf236c7718872b8cb95735439e2d1d34822718ba3d1a5d47",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Initial full per-file review, including HOLD and original findings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/review-tanzania-withholding-tax.md",
+      "bytes": 114543,
+      "sha256": "ff16f7bb933411a2ec16a56e329f08f966001b86a8ae941800d92e237c2fc342",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Initial full per-file review, including HOLD and original findings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/source-scope/independent-source-read-record.json",
+      "bytes": 23347,
+      "sha256": "cf543a63c160acbcb0b15d5c691afe570b64d772da6b172748ce177fc474b23c",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "28 actual independent official body hashes and precise native/visual read scopes; raw bodies excluded",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/source-scope/old-checker-dispositions.json",
+      "bytes": 2935,
+      "sha256": "2d4f749e432637889c46ad9b9c0738f614a74f48c0112ce881219aa3449b933a",
+      "original_evidence_date": "2026-11-15",
+      "purpose": "Historical checker occurrence dispositions; cause precision addendum governs",
+      "payload_unchanged": true
+    }
+  ],
+  "country_source_files_unchanged": [
+    {
+      "path": "skills/tanzania/README.md",
+      "bytes": 4828,
+      "sha256": "931c62061fc5a9528551abd02d14874ff6f7e8774d5db21cb0b32485d3f7050d",
+      "git_blob": "a30c920aab5e187501538ad994d996c62a9d1d4c"
+    },
+    {
+      "path": "skills/tanzania/tanzania-income-tax.md",
+      "bytes": 46296,
+      "sha256": "3f59acb0390e122bc84f451cc69cc35f172860d26f79d561bfa59079c5bf16f8",
+      "git_blob": "e8cc6ed9781c0454cc521830c2a97e0b515dd96c"
+    },
+    {
+      "path": "skills/tanzania/tanzania-payroll.md",
+      "bytes": 49355,
+      "sha256": "505b4f735e25a3ccdca210ba56d08d7615c5b6c23a31a5e570e5f788f6186233",
+      "git_blob": "a5a5ddd7daadae4c8ae2de0dc66c27a137c5890f"
+    },
+    {
+      "path": "skills/tanzania/tanzania-social-contributions.md",
+      "bytes": 32052,
+      "sha256": "b7c8346ae8edf83d18e1d6c5d2b93be6ac00394b30e9206d2bbbb50e6651052e",
+      "git_blob": "71dd59c128edac8669424e1d16fe51ccbce65e14"
+    },
+    {
+      "path": "skills/tanzania/tanzania-tax-optimization.md",
+      "bytes": 26380,
+      "sha256": "39c75fda6d053a07e2e30bcf9fef64da7e0e3b28b020d8d2ced9e25d65f0e6d9",
+      "git_blob": "6c0ef98806b4b445c778e6dd782bb8f77ddd9cb8"
+    },
+    {
+      "path": "skills/tanzania/tanzania-vat.md",
+      "bytes": 28469,
+      "sha256": "23f7a28523d3e2b02992aa90a1ab98ca2869bd9db113e193f604a09a3be18832",
+      "git_blob": "0f99ba0e2354723e5115e67cb236740714c52972"
+    },
+    {
+      "path": "skills/tanzania/tanzania-withholding-tax.md",
+      "bytes": 29292,
+      "sha256": "524e8166b01965650b1ad06ba5df029437325d23f1021f5b0bf7b32dbaa47983",
+      "git_blob": "bb2357d3d604cf65bb04eafc9ae78b4647e51e35"
+    },
+    {
+      "path": "skills/tanzania/tz-corporate-income-tax.md",
+      "bytes": 12702,
+      "sha256": "b8d9ddd5cf267a7cfa160178741ca37e86734c00e888dd6e99a5eaf047067f9c",
+      "git_blob": "5d8e92651f60224922ccd785f6836e7acfc1ccb8"
+    },
+    {
+      "path": "skills/tanzania/tz-cross-border.md",
+      "bytes": 11714,
+      "sha256": "10710de54b44e5de233fd6a0ac7a2a5504e0f7256ec27b077ba20e8a13ebf97e",
+      "git_blob": "ca9c9ab3d331a26acce9c855ab8edaaf82b5092f"
+    },
+    {
+      "path": "skills/tanzania/tz-transfer-pricing.md",
+      "bytes": 11735,
+      "sha256": "a9b846ce56ea1c586e4a4e8283f16d025094b77d0b5853ba72379887eb90be0b",
+      "git_blob": "7160e927d9c531ae0c8cdb93d4c8f40431574ecf"
+    }
+  ],
+  "exclusions": "Raw authority captures, PDFs/images, archives, cookies/session material, pycache, candidate/original file copies, obsolete duplicate ledgers/maps and redundant check runs stay local. Full manifests retain metadata references to excluded files.",
+  "freshness": "No new full-law review; limited fresh source scope is separately preserved.",
+  "accountant_approval": false,
+  "country_complete": false
+}
