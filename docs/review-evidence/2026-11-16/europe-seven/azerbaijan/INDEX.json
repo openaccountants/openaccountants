@@ -1,0 +1,131 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "66eb3a4eb86e33d50d3a02c22bfc3f8d03c0cec374370754f34001dc08a4e38c",
+  "members": [
+    {
+      "path": "writer/CHECKPOINT.json",
+      "sha256": "105bf3ce5c63a6fdad904899d64b3f0b1dfa606c51c0a87f824029bfdbac4f05",
+      "bytes": 648
+    },
+    {
+      "path": "writer/NO-LOSS-MAP.md",
+      "sha256": "8237543e39b710611a288ab02220292ea20cd851f35c968c89a66d72bd72c835",
+      "bytes": 3812
+    },
+    {
+      "path": "writer/REPORT.md",
+      "sha256": "dadf35d45f961040b69021e2e8e1924cb1bebee9689041f6242d6845180aa43a",
+      "bytes": 3721
+    },
+    {
+      "path": "writer/actual-head-sync.txt",
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9",
+      "bytes": 81
+    },
+    {
+      "path": "writer/actual-head-validation.txt",
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa",
+      "bytes": 192
+    },
+    {
+      "path": "writer/examples.txt",
+      "sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+      "bytes": 58
+    },
+    {
+      "path": "writer/ledger.json",
+      "sha256": "c25ee6571b4fbcaf4d00a42d1c027d3ecd8bcd8f8e202327a9a833621e0dc223",
+      "bytes": 40464
+    },
+    {
+      "path": "writer/ledgers/az-company-formation.md",
+      "sha256": "b2027335b8439438c023b0ac668ef263231458576154fcf3127820905155c2bd",
+      "bytes": 12237
+    },
+    {
+      "path": "writer/ledgers/azerbaijan-tax-optimization.md",
+      "sha256": "141180996cfda251cea905835ced88cc62c8cd7d274269817b147a9fe38d631b",
+      "bytes": 17631
+    },
+    {
+      "path": "writer/old-line-destinations.json",
+      "sha256": "eb8024ce6dec7634f30e8d1979d2499875ace4137b4b3da2da0a5dd82c91e4f0",
+      "bytes": 53547
+    },
+    {
+      "path": "writer/originals/az-company-formation.md",
+      "sha256": "205c0e1a82809277539b65fc0df3ee155a294fcd7601a14d454f5306953c87e7",
+      "bytes": 10592
+    },
+    {
+      "path": "writer/originals/azerbaijan-tax-optimization.md",
+      "sha256": "2dde6a66d7a972b4740463c20bd99f4e12a306d320afd9a5efc5d7fd4f8a88f2",
+      "bytes": 19268
+    },
+    {
+      "path": "writer/pre-edit-ownership.json",
+      "sha256": "9097582c3111ea10f067f5d3036451c52b3b68b9b0a4f883f81191ebb43e3e67",
+      "bytes": 28349
+    },
+    {
+      "path": "writer/prior-review/2026-10-24-azerbaijan-independent-review.md",
+      "sha256": "11e4e979f91eb9c212130dfe931af2f395beab8db7e74476c8e48915952e950b",
+      "bytes": 21505
+    },
+    {
+      "path": "writer/prior-review/2026-10-24-azerbaijan-research.md",
+      "sha256": "25d2c8d341a8a0d7f90bc10d0840674ef2bc9973ff4e4a2442fb0f7526508037",
+      "bytes": 8619
+    },
+    {
+      "path": "writer/prior-review/2026-10-24-azerbaijan-source-retrieval.json",
+      "sha256": "eee05939772fcc1864daae435ab248b2f0f3b555446b0f0522b4510f0915adee",
+      "bytes": 3415
+    },
+    {
+      "path": "writer/prior-review/2026-10-24-azerbaijan-validation.md",
+      "sha256": "b40e7ad359607a0863ce3c6189277b193cc4111c1f633e685071d2d16d77ef6e",
+      "bytes": 2599
+    },
+    {
+      "path": "writer/row-sources.txt",
+      "sha256": "ff122ff4b640b9fd99eea4992cb99d2b978ab5a35ee2583cf0a16a4b15b65798",
+      "bytes": 2584
+    },
+    {
+      "path": "writer/skill-checks.json",
+      "sha256": "d69906d5b32d548073c15324ec174fe957c269950f91651525bdc35f1c53790f",
+      "bytes": 112
+    },
+    {
+      "path": "writer/source-manifest.json",
+      "sha256": "393ea731f881766274d423f8fa24cadf770bf56b48cc464bc126972ce8f832f7",
+      "bytes": 6266
+    },
+    {
+      "path": "independent-review/RECEIPT.json",
+      "sha256": "427a82f34bc920dde1bc41afce785fc5cff38325b0c16bcb4fd916e7143310c7",
+      "bytes": 1160
+    },
+    {
+      "path": "independent-review/REPORT.md",
+      "sha256": "2b3785cde485ac0b2f386cd2b1f37126370e918426ad6bb8a5fad91944114243",
+      "bytes": 5547
+    },
+    {
+      "path": "independent-review/SHA256SUMS.json",
+      "sha256": "f942f8cbc23780c42d82727fdcfd1350a7d8cfb1376a9fdfafe867ed80216095",
+      "bytes": 262
+    },
+    {
+      "path": "independent-review/row-results.json",
+      "sha256": "5e843710cebac0ca83f3611af50b8e14934d6d28e87acd6228c895da3482e86c",
+      "bytes": 24009
+    },
+    {
+      "path": "validation/shared-copy-calculator-tests.txt",
+      "sha256": "5977368485964fe87c61db96cb3471e7fb5dc29d157e404d817fb46902f6adcd",
+      "bytes": 121
+    }
+  ]
+}
