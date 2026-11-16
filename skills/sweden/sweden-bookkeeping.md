@@ -173,7 +173,7 @@ A new business starting after June 2025 with an extended first financial year en
 - Inventory: perform count and ownership cut-off, establish acquisition cost and compare with net realisable value under the applicable individual-item/grouping rules. Record a supported write-down rather than assume all stock sells at cost. Reconcile opening stock, purchases, cost consumed and closing stock to the ledger. [K2 inventory](https://www.bfn.se/wp-content/uploads/vl16-10-k2-kons2026.pdf)
 - Statements: prepare the K2 management report, income statement, balance sheet and notes, using its layouts and required comparisons. Map net turnover, operating costs, depreciation, financial items, appropriations and tax to the income statement; reconcile assets, equity, untaxed reserves, provisions and liabilities to balance-sheet schedules. Carry current profit into equity once; verify total assets equal equity plus untaxed reserves/provisions/liabilities. The ledger is not itself the completed annual report. [K2 annual-report form and layouts](https://www.bfn.se/wp-content/uploads/vl16-10-k2-kons2026.pdf)
 
-## Worked debit/credit close
+## Worked cases
 
 The following are hypothetical SEK amounts with no VAT unless explicitly stated; VAT status/amounts are assumed already resolved by the separate VAT method. Account names are illustrative classifications, not prescribed BAS codes. [BFN bookkeeping](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
 
@@ -195,7 +195,7 @@ For revenue, obtain the contract, delivery/performance evidence, invoice and any
 
 These working-paper controls operationalize the requirement to record closing entries establishing the period’s income, expenses and financial position. [BFN bookkeeping guide](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
 
-## Worked cases
+### Further workflow cases
 
 ## Case 1 : ordinary supplier invoice and bank payment
 
