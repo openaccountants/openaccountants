@@ -91,9 +91,9 @@ The printed common-input worksheet contains a conflicting transfer-line referenc
 
 Obtain a tax invoice or other legally permitted evidence, supplier identity/registration, actual supply/import and business use. A payment receipt alone does not prove a recoverable input. Non-registered buyers cannot use this registered-person return to recover tax. Do not manufacture an input GST amount on a purchase from an unregistered seller. Keep exempt, private and taxable purposes separate. The supplier's TIN and an invoice showing tax do not by themselves cure an ineligible underlying supply. [IRC G1 Notes 4-7](https://static.irc.gov.pg/2023/October/P0Jjks-media-g1_2023.pdf); [IRC factsheet output/input explanation](https://static.irc.gov.pg/2021/December/5ExWcL-media-GST-Section-65A-Fact-Sheet.pdf).
 
-First attribute inputs used exclusively for taxable/zero-rated activities and exclusively for exempt activities. Apportion only the common inputs under the form's supported method, with the relevant sales values and period. Then separately account for private use. The old formula applying one taxable-sales ratio to all inputs would incorrectly reduce directly taxable inputs and over-credit directly exempt ones. [G1 Note 5](https://static.irc.gov.pg/2023/October/P0Jjks-media-g1_2023.pdf).
+First attribute inputs used exclusively for taxable/zero-rated activities and exclusively for exempt activities. For the common portion use **common-input GST / total sales (line 1 on the return) × exempt sales (line 2 on the return)**. Add GST directly attributable solely to exempt sales; the result is exempt-input GST for **line 9**, not line 8 despite the conflicting transfer-line text in the worksheet. Do not use net standard-rated sales as the denominator. If total sales are zero or the period is unrepresentative, refer the method rather than dividing by zero or inventing a ratio. Account separately for private-use GST at line 10 without repeating an amount already excluded from line 8. The old formula applying one taxable-sales ratio to all inputs would incorrectly reduce directly taxable inputs and over-credit directly exempt ones. [G1 Note 5](https://static.irc.gov.pg/2023/October/P0Jjks-media-g1_2023.pdf).
 
-The G1 car restriction includes defined cars and related vehicles, with a dealer/rental-car exception, rather than just private-use cars. The published note includes four-wheel-drive vehicles, station wagons, motorcycles, panel vans, light utility trucks and smaller passenger buses within its definition. Obtain the actual vehicle specification and exception before claiming input credit; do not treat business use alone as sufficient. Employee-provided cars and housing have separate exempt-supply/input restrictions. [G1 Notes 2, 4 and 7](https://static.irc.gov.pg/2023/October/P0Jjks-media-g1_2023.pdf).
+The G1 car restriction includes defined cars and related vehicles, with a dealer/rental-car exception, rather than just private-use cars. The published note includes four-wheel-drive vehicles, station wagons, motorcycles and panel vans, plus utility trucks with load capacity **less than 1 tonne** and buses designed to carry **fewer than 9 passengers**, within its definition. Obtain the actual vehicle specification and exception before claiming input credit; do not treat business use alone as sufficient. For a non-qualifying car purchaser exclude the car GST in full from line 8; do not include it again as an attribution adjustment at line 9 or 10. The car-dealer/rental-service exception must be proved from the actual activity. Employee-provided cars and housing have separate exempt-supply/input restrictions. [G1 Notes 2, 4 and 7](https://static.irc.gov.pg/2023/October/P0Jjks-media-g1_2023.pdf).
 
 The form does not support a blanket input-credit prohibition for every entertainment, club subscription, alcohol or tobacco purchase. It discusses specified employee benefits and their output/input treatment. Test the supply, taxable purpose, employee benefit valuation, private use and specific restriction. Do not import an income-tax entertainment restriction into GST without authority. Current employment-benefit values must be checked against the new income-tax law and applicable regulations; the historical values reproduced in the form notes are not certified for 2026 by this read.
 
@@ -238,6 +238,29 @@ expected:
 - **Late payment:** For PGK 10,000 paid after the assigned date, preserve the due date, payment date, notice and governing current penalty/interest provisions. The prior test's automatic fixed penalty is not certified for GST by this read.
 
 A calculation engine must recompute the arithmetic, but it cannot supply missing legal classification, documents, approvals or rates. Never file without reconciliations, claim another person's GST, equate exemption with zero-rating, fabricate an input on an unregistered receipt or apply a project concession without its conditions.
+
+### Common inputs, exempt sales and private use
+
+For a period with total sales at G1 line 1 of PGK 110,000 and exempt sales at line 2 of PGK 22,000, common-input GST is PGK 1,000 and directly exempt-input GST is PGK 100. Common exempt attribution is PGK 200, so line 9 is PGK 300. If line 8 is PGK 1,550, including a separate PGK 50 private-use amount, line 10 is PGK 50 and eligible input at line 12 is PGK 1,200. Any non-qualifying car GST has already been excluded from line 8 and is not deducted again. These are illustrative inputs, not statutory thresholds. [G1 Notes 4-7](https://static.irc.gov.pg/2023/October/P0Jjks-media-g1_2023.pdf).
+
+```oa-check
+name: PNG G1 common denominator and separate private input
+inputs:
+  line1_total_sales: 110000
+  line2_exempt_sales: 22000
+  common_input_gst: 1000
+  direct_exempt_gst: 100
+  line8_business_inputs: 1550
+  line10_private_gst: 50
+steps:
+  - common_exempt_gst: common_input_gst / line1_total_sales * line2_exempt_sales
+  - line9_exempt_gst: common_exempt_gst + direct_exempt_gst
+  - line12_input_credit: line8_business_inputs - line9_exempt_gst - line10_private_gst
+expected:
+  common_exempt_gst: 200
+  line9_exempt_gst: 300
+  line12_input_credit: 1200
+```
 
 ## When to refuse or refer
 
