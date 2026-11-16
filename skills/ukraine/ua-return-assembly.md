@@ -4,7 +4,7 @@ description: "Final orchestrator that assembles the complete Ukrainian ФОП (F
 version: 0.2
 jurisdiction: UA
 tax_year: 2026
-last_updated: 2026-11-15
+last_updated: 2026-11-16
 depends_on:
   - ua-freelance-intake
 category: orchestrator
@@ -27,7 +27,7 @@ Reuse the validated intake scope. Do not re-ask FOP versus TOV, regime, group, V
 | `ua-freelance-intake` | Validated FOP/residence/regime timeline, group, VAT evidence, KVED, receipt ledger, exceptions and unresolved flags |
 | `ua-single-tax` | Group/period/rate and cumulative single tax, affected income/excess and military levy separately; ordinary Group 3 rates **3% with separate VAT / 5% with VAT included in single tax**, ordinary Group 3 levy **1% of article 292 income**. Groups 1/2 have separate fixed levy obligations, not a levy included in single tax. E-resident/special relief requires its own route [293.3; XX.10.16-1](https://tax.gov.ua/nk/) |
 | `ua-income-tax` | General-system net taxable business income, ordinary **18% PIT / 5% levy**, other declarable income, documented advances/credits and unresolved costs; do not copy a rate without its upstream eligibility [167.1,177; XX.10.16-1](https://tax.gov.ua/nk/) |
-| `ua-social-contributions` | Own ЄСВ by month and quarter, base/minimum/maximum and payments; ordinary **22%** rate is only an upstream input. Record pension/disability, employer-paid-month, mobilization and other relief evidence. A main-job label alone is not exemption evidence; current employer-paid minimum test is monthly [DPS figures](https://tax.gov.ua/media-tsentr/novini/999526.html); [current employer-paid test](https://zir.tax.gov.ua/main/bz/view/?id=43912&src=ques) |
+| `ua-social-contributions` | Own ЄСВ by month and quarter, base/minimum/maximum and payments; ordinary **22%** rate is only an upstream input. Record pension/disability, employer-paid-month, mobilization and other relief evidence. A main-job label alone is not exemption evidence; current employer-paid minimum test is monthly [official rate sheet](https://zir.tax.gov.ua/docs/stavki/esv.pdf); [DPS figures](https://tax.gov.ua/media-tsentr/novini/999526.html); [current employer-paid test](https://zir.tax.gov.ua/main/bz/view/?id=43912&src=ques) |
 | `ukraine-vat` | Registered VAT return boxes, period, net payable/refundable and registration dates, separately reconciled to turnover. A nonregistered FOP's possible nonresident-service VAT obligation is a separate unresolved route, not proof that no VAT filing can ever arise [VAT 202-203](https://tax.gov.ua/nk/) |
 | Tax-agent/payroll package if applicable | Accrued individual income, withholding and employer ЄСВ, reporting months and accepted prior reports. It is separate from own ЄСВ [176.2](https://tax.gov.ua/nk/) |
 
@@ -186,6 +186,7 @@ All read **2026-11-15**, official material. The consolidated Code was read for t
 | [PIT forms portal](https://tax.gov.ua/zakonodavstvo/elektronni-formi-dokumentiv/podatok-na-dohodi-fizichnih-osib/) | Read for Operative listing only: main form introduced1 January2026, ЄСВ1 and Ф2 titles; no XLS-cell/schema review claimed| 2026-11-15 |
 | [National 2026 ЄСВ figures](https://tax.gov.ua/media-tsentr/novini/999526.html) | Read for Ordinary22% and minimum/maximum background for upstream output| 2026-11-15 |
 | [Current employer-paid ЄСВ answer](https://zir.tax.gov.ua/main/bz/view/?id=43912&src=ques) | Read for Full current answer: monthly employer-paid minimum threshold; not main-job-label-only| 2026-11-15 |
+| [Official ЄСВ rate sheet](https://zir.tax.gov.ua/docs/stavki/esv.pdf) | Read for the complete one-page table: ordinary FOP/professional contribution22% and separate employer/disability categories. Taxable base, cap and relief still need their own legal sources. Browser PDF visual rendering was blank; genuine official PDF text was read, no visual confirmation claimed | 2026-11-16 |
 
 Not yet confirmed: final 2026/2027 forms and official calendar entries for the retained derived dates, 6 February form claim, private-provider status, exceptional relief/closure/receipt cases, actual account details and all unresolved upstream classifications; see refusal boundaries above.
 
