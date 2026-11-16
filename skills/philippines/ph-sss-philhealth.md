@@ -84,9 +84,9 @@ The table below retains every selected bracket from the earlier Guide and adds t
 | 11,750-12,249.99 | 12,000 | 1,800 | 10 | 1,810 | [SE table p.3](https://www.sss.gov.ph/wp-content/uploads/2024/12/2025-SSS-Contribution-Table-rev.pdf) |
 | 14,750-15,249.99 | 15,000 | 2,250 | 30 | 2,280 | [SE table p.3](https://www.sss.gov.ph/wp-content/uploads/2024/12/2025-SSS-Contribution-Table-rev.pdf) |
 | 19,750-20,249.99 | 20,000 | 3,000 | 30 | 3,030 | [SE table p.3](https://www.sss.gov.ph/wp-content/uploads/2024/12/2025-SSS-Contribution-Table-rev.pdf) |
-| 24,750-25,249.99 | 25,000 | 3,750 | 30 | 3,780 | [SE table p.3](https://www.sss.gov.ph/wp-content/uploads/2024/12/2025-SSS-Contribution-Table-rev.pdf) |
-| 29,750-30,249.99 | 30,000 | 4,500 | 30 | 4,530 | [SE table p.3](https://www.sss.gov.ph/wp-content/uploads/2024/12/2025-SSS-Contribution-Table-rev.pdf) |
-| 34,750 and above | 35,000 | 5,250 | 30 | 5,280 | [SE table p.3](https://www.sss.gov.ph/wp-content/uploads/2024/12/2025-SSS-Contribution-Table-rev.pdf) |
+| 24,750-25,249.99 | 25,000 | 3,750 (computed SS + MPF) | 30 | 3,780 | [SE table p.3](https://www.sss.gov.ph/wp-content/uploads/2024/12/2025-SSS-Contribution-Table-rev.pdf) |
+| 29,750-30,249.99 | 30,000 | 4,500 (computed SS + MPF) | 30 | 4,530 | [SE table p.3](https://www.sss.gov.ph/wp-content/uploads/2024/12/2025-SSS-Contribution-Table-rev.pdf) |
+| 34,750 and above | 35,000 | 5,250 (computed SS + MPF) | 30 | 5,280 | [SE table p.3](https://www.sss.gov.ph/wp-content/uploads/2024/12/2025-SSS-Contribution-Table-rev.pdf) |
 
 At MSC **PHP 35,000**, regular SS is **PHP 3,000** on the first PHP 20,000 and the mandatory provident allocation is **PHP 2,250** on the remaining PHP 15,000: **PHP 5,250 SS/MPF plus PHP 30 EC = PHP 5,280**. The provident allocation is part of the 15%, not another 15% on top of the full salary credit. The SE member shoulders the full contribution; there is no separate employer to fund part of it. [Circular 2024-008, regular SS/MPF/EC columns](https://www.sss.gov.ph/wp-content/uploads/2024/12/2025-SSS-Contribution-Table-rev.pdf).
 
