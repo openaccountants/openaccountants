@@ -260,7 +260,7 @@ _KO_START = (r"(?:(?<![A-Za-z_" + _KO_CHARS + r"])[0-9]|(?<!\w)[십백천만억�
 _KO_COMPOUND = (_KO_START + r"[" + _KO_CHARS + r"]*(?:\s+[0-9십백천만억조경해자양구간정재극]["
                 + _KO_CHARS + r"]*)*(?<![.,])")
 _KO_FRACTION_RE = re.compile(_KO_COMPOUND + r"\s*분의\s*" + _KO_COMPOUND
-                             + r"(?:\s*분의\s*" + _KO_COMPOUND + r")*")
+                             + r"(?:\s*분의\s*(?:" + _KO_COMPOUND + r")?[^\s<>()|;]*)*")
 _KO_MONEY_RE = re.compile(_KO_COMPOUND + r"\s*원")
 _KO_NUMBER_RE = re.compile(r"(?:[0-9]{1,3}(?:,[0-9]{3})+|[0-9]+)(?:\.[0-9]+)?")
 _KO_SMALL = {'십': 10, '백': 100, '천': 1000}

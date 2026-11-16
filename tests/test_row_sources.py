@@ -67,6 +67,16 @@ class RowSources(unittest.TestCase):
             with self.subTest(malformed=source):
                 self.assertEqual(rs.page_values(source), set())
 
+    def test_korean_malformed_fraction_continuations_do_not_match_a_valid_prefix(self):
+        for source in ['100분의20분의', '100분의20분의X', '100분의20분의X20',
+                       '100분의20분의 X20', '100분의20분의5X20', '100분의20분의.']:
+            with self.subTest(malformed=source):
+                self.assertEqual(rs.page_values(source), set())
+        for source in ['100분의20의 세율', '100분의20 이상', '100분의20.',
+                       '법률에 따라 100분의20의 세율']:
+            with self.subTest(valid=source):
+                self.assertEqual(rs.page_values(source), {20})
+
     def test_korean_number_normalization_preserves_other_notations_and_policy(self):
         for source, figure in [('20퍼센트', '20%'), ('35퍼센트', '35%'),
                                ('twenty per cent', '20%'),
