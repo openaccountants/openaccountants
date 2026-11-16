@@ -2,32 +2,51 @@
 jurisdiction: RO
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-partial: {}
+covered_by:
+  IT-IND: [ro-income-tax, ro-employee-income-tax]
+  IT-CORP: ro-corporate-income-tax
+  VAT: [ro-vat-return, romania-einvoice]
+  SC: [ro-cas-cass, ro-payroll-social]
+  PR: ro-payroll-social
+  TP: ro-transfer-pricing
+  XB: ro-cross-border
+partial:
+  VAT: "The retained VAT-return sibling has obsolete e-TVA statutory-notice instructions; use the repeal boundary in romania-einvoice and ro-tax-overview, not those old notice thresholds."
 ---
 
 # Romania: tax pack
 
-The tax year is the calendar year. The authority is ANAF (Agenția Națională de Administrare Fiscală) and the currency is the leu (RON). The main laws are the Fiscal Code (Legea 227/2015) and the Fiscal Procedure Code (Legea 207/2015).
-
-Individuals pay a flat 10% income tax plus employee pension (CAS, 25%) and health (CASS, 10%) contributions. Companies pay 16% corporate income tax unless they are in the micro-enterprise turnover regime. VAT follows the EU rules.
+Tax year 2026. ANAF (Agenția Națională de Administrare Fiscală) administers the principal national tax workflows; amounts use the Romanian leu (RON). The main laws remain the Fiscal Code, Legea 227/2015, and Fiscal Procedure Code, Legea 207/2015. Start with [the overview](ro-tax-overview.md) and the taxpayer's actual income, residence, tax period and base. A headline rate does not establish liability or eligibility.
 
 ## Domains
 
-A skill's presence is not coverage. Several skills below are thin lists with secondary sources, and only ro-cross-border, ro-corporate-income-tax, ro-employee-income-tax, ro-income-tax, ro-cas-cass, ro-transfer-pricing, ro-payroll-social and ro-vat-return follow the deep-tax shape so far.
+The five rewritten skills are the overview, company formation, cross-border, e-invoicing and software references. Seven already-passing siblings are retained byte for byte. Structural compliance and a routing entry do not confer fresh legal verification or accountant approval on those retained files.
 
-| Tax | Skill | Status |
+| Tax | Skill | Coverage and boundary |
 |---|---|---|
-| Income tax | ro-income-tax (self-employed PFA, II, IF and liberal professions, 2026); ro-employee-income-tax (employees, rent and investment income, 2026) | checked against the law |
-| Company tax | ro-corporate-income-tax (2026: profit tax at 16%, micro-enterprise tax at 1%, minimum turnover tax, base, losses, interest limit, filing and penalties, from the Fiscal Code) | checked against the law |
-| VAT or sales tax | ro-vat-return (2026: 21% and 11% rates under Legea 141/2025, 395,000 lei small-enterprise threshold, D300, D394, D390, RO e-TVA, reverse charge, EU trade, refunds, penalties) | sourced from the law |
-| Social contributions | ro-cas-cass (self-employed CAS and CASS, 2026); ro-payroll-social (employee CAS and CASS, employer CAM, the minimum CAS and CASS on part-time contracts, 2026) | checked against the law |
-| Payroll | ro-payroll-social (2026 gross-to-net, minimum-wage relief, benefits, REGES ONLINE, D112, penalties, two worked examples) | checked against the law |
-| Transfer pricing | ro-transfer-pricing | checked against the law |
-| Cross-border | ro-cross-border | checked against the law |
+| Income tax | [Self-employed income](ro-income-tax.md); [employee, rent and investment income](ro-employee-income-tax.md) | Retained detailed siblings for PFA, II, IF, liberal professions and the stated individual-income categories; establish the correct base and contribution treatment. |
+| Company tax | [Corporate income tax](ro-corporate-income-tax.md) | Retained profit/micro, minimum-tax, fiscal-adjustment, losses, interest, filing and penalty analysis. Its old statement that no Romanian transfer-pricing skill exists is incorrect: load the actual skill below. |
+| VAT or sales tax | [VAT return](ro-vat-return.md); [e-invoicing](romania-einvoice.md) | Retained VAT-return, EU trade, registration, reverse-charge, refund and penalty topics. The VAT-return sibling's e-TVA statutory-notice instructions are obsolete; do not use them as current law. The revised e-invoice skill separates its mandate, technical delivery, retention and surviving e-TVA interaction. |
+| Social contributions | [Self-employed contributions](ro-cas-cass.md); [payroll/social](ro-payroll-social.md) | Retained detailed siblings; self-employed, employee and employer bases are distinct. |
+| Payroll | [Payroll/social](ro-payroll-social.md); [employee income tax](ro-employee-income-tax.md) | Retained gross-to-net, minimum-wage relief, part-time minimum bases, benefits, REGES ONLINE, D112, penalties and worked cases; use the reporting-period form. |
+| Transfer pricing | [Transfer pricing](ro-transfer-pricing.md) | Retained detailed skill. Identify the transaction year and administration-procedure start separately; the overview records the annual preparation and electronic filing distinction. |
+| Cross-border | [Cross-border](ro-cross-border.md) | Rewritten residence/source, Romanian and foreign income, withholding, treaty/credit, exit and migration analysis. Historical named scenarios remain preserved and labelled. Actual treaty and special-form facts still need confirmation. |
+
+## Other skills
+
+- [Company formation](ro-company-formation.md): entity choice, capital, company/registry law, tax registration and subsequent obligations; current ancillary fees, authenticated ONRC fields and specified interpretation gaps remain held.
+- [Tax overview](ro-tax-overview.md): rates with conditions, deadline routing and two base computations; not a complete filing workflow.
+- [Software references](references.md): official ANAF form/schema/validator selection and independent reconciliation; every old third-party project is retained as an unconfirmed historical lead, with no installation, licensing or current-functionality approval.
+
+## Known limits in retained siblings
+
+[OUG 13/2026 art. IV point 1](https://static.anaf.ro/static/10/Anaf/legislatie/OUG_13_2026.pdf) repeals OUG 70/2024 arts. 5, 8 and 16. Its article VII postpones other specified amendments, not that repeal. This is the source for the VAT notice warning above; it does not abolish the surviving pre-filled-return system. The obsolete VAT instructions and incorrect corporate transfer-pricing router are recorded outside this PR for a separate correction, as the assignment preserves passing siblings.
+
+The rewritten skills' Sources tables identify actual reading scope and dates, current-law qualifications, unavailable future forms, inaccessible technical pages and other held particulars. Refer to those boundaries before acting; a country index cannot resolve missing taxpayer evidence or a specific treaty.
 
 ## Official sources
 
-Read on 2026-10-22 (payroll sources read on 2026-10-23):
+Historical source list retained from the previous country index, originally read on 2026-10-22 (payroll sources on 2026-10-23). Those dates are not new reading claims. For the five rewritten skills, use their actual 2026-11-15 source scopes and read dates:
 
 - Fiscal Code, ANAF consolidated text: https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm
 - Fiscal Procedure Code, ANAF consolidated text: https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm
