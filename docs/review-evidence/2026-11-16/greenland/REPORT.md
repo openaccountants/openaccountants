@@ -12,7 +12,9 @@ Raw official HTML/PDF/images, HTTP headers, full source captures, credentials an
 
 The unread September2026 manual/nil-report claim and individual/base/permission/calendar/portal/out-of-scope limits remain explicit. The review does not confer accountant approval or comprehensive country coverage. Required hosted checks and the normal publication/merge process remain separate.
 
-## Complete independent report, preserved verbatim
+## Complete independent report, with one disclosed terminology change
+
+The readable copy below replaces one retired term with professional approval wording. The exact original independent report remains unchanged inside the archive.
 
 # Greenland independent pack review
 
@@ -53,7 +55,7 @@ One evidence defect was found: the original four B bindings, Q01/Q02/Q09/Q16, ha
 
 Independently recomputed with Decimal: lower-bound minimum0; taper rate0.045; taper minimum6,750; upper-bound15,750; full minimum27,000; repeated minimum27,000 and remaining7,000 after the original20,000 qualifying contributions; employerAMA1,900 and combined reconciliation33,900. All nine results agree. The32,000 A-tax input remains an assumed payroll/card result, not a legal flat32% rate or proof of payment. Calendar calculation independently confirms Saturday10October2026 and Sunday1November2026 give weekend-only12October/2November. The holiday calendar and accelerated notices are explicitly unresolved, so these are not confirmed filing dates.
 
-No original rule, case input, refusal or source history was silently lost. The original nil-report assertion is retained as an explicit nonusable hold, and its A-tax dates are now independently supported by actual81. The old manual2.1% illustration is retained only as unverified historical context. The two original bounded-scope/no-attestation safeguards remain in substance. Both complete old-line maps have actual semantic destinations, rather than nearest-match locators.
+No original rule, case input, refusal or source history was silently lost. The original nil-report assertion is retained as an explicit nonusable hold, and its A-tax dates are now independently supported by actual81. The old manual2.1% illustration is retained only as unverified historical context. The two original safeguards limiting scope and excluding professional approval remain in substance. Both complete old-line maps have actual semantic destinations, rather than nearest-match locators.
 
 ## Checks and limits
 

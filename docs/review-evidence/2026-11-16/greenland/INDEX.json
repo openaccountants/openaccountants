@@ -326,5 +326,11 @@
     "Private revision0 fixture and its non-acceptance stdout",
     "Unrelated prior country preparation/duplicated Markdown ledgers/full candidate copies"
   ],
-  "limits": "Explicitly bounded twoGuide review, not comprehensive country or accountant approval. Original writer82file manifest is a local-source dependency inventory, not the archive membership list."
+  "limits": "Explicitly bounded twoGuide review, not comprehensive country or accountant approval. Original writer82file manifest is a local-source dependency inventory, not the archive membership list.",
+  "readable_report_projection": {
+    "source": "public-evidence/independent-review/REPORT.md",
+    "source_sha256": "44e710f3bab1c8e42a6d5fdc639cce3a5d0af075766068d6cf4f42bfe3781a1a",
+    "change": "One sentence replaces a retired term with professional approval wording; exact original report remains unchanged in archive.",
+    "sha256": "5d36cff979fc60bd4b212c7ff7ad773da037b126f526ea7406a8ea0e8e183a4a"
+  }
 }
