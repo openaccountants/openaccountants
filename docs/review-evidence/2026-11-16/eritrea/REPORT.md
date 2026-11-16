@@ -1,0 +1,37 @@
+# Eritrea independent two-file review — PASS within the stated historical scope
+
+Reviewed exact clean head `0092c616a65666bd61e1a9dc7f2b0796fc6f4656` against `bbab4f1a6d82cace432e6ca8eda89c98ffb1c038`. Only `skills/eritrea/er-income-tax.md` and `skills/eritrea/er-tax-overview.md` change. This is one complete independent review of the recovered candidate, not reuse of a prior approval: the old reviewer inventory was incomplete. It is not accountant approval, a complete Eritrea pack review, or clearance to calculate/file a current2026 liability.
+
+Both candidates identify historical gazettes, retain15November writer read dates, and explicitly STOP a current calculation or filing if later-law applicability cannot be established. Those restrictions are part of this PASS. The latest recovered income amendment is119/2012; the2023 Ministry inventory does not establish absence of later law. No full current consolidated text, live domestic form or complete2026 amendment chain was established.
+
+## Complete review performed
+
+I read both whole originals, both whole final candidates, all five unchanged country siblings/README for integration, all80 ledger groups and all97 source quote bindings, and every185 original populated-line destination. `ALL-RULE-REVIEW.json` and `ALL-OLD-LINE-REVIEW.json` record those complete units. All original topics, refusals, source limitations and inputs survive as corrected rules or explicit nonusable holds; destination acceptance follows semantic comparison, not substring proximity or a heading alone.
+
+I independently read the retained actual operative text and neighboring exceptions: Proc62/1994 entire English arts1–71 physical21–42; Proc116/2001 entire English arts1–7 physical7–11; Notice20/1995 entire English arts1–27 physical14–23; Notice50/2001 entire English image physical3; Notice119/2012 entire English physical3; Notice81/2003 English arts1–3 and full activity schedule physical8–12; Proc117/2001 arts1–5 and serviceSchedulesB/C; complete published Proc180/2017 arts1–14; the farm announcement; the inventory introduction/tax/customs sections; and the retained Embassy operative body. Ten original page images were independently viewed for definitions, C-3, historical farm table, all replacement rate tables, repeal, categories and the original diaspora pages. `ACTUAL-SOURCE-READS.json` binds exact bodies/text/images, actual scopes and limits.
+
+These are independent16November readings of cached bodies originally obtained/read15November, not fresh HTTP response claims. The writer's16November Embassy actual-body receipt was inspected, but no fresh response bytes were captured; I independently read the retained15November main body, and do not present its hash as a fresh16November response. There was no repeated primary download. Library of Congress facsimiles preserve Eritrean gazettes; foreign hosting alone is not proof of current Eritrean law.
+
+The original Tigrinya67/1995 pages were visually inspected for identity, numbered structure and visible embedded employment/net-income/2%/treasury terms. UK Annex2 printed11–12 was actually read as a translation aid only, not primary Eritrean law or a certified translation. The official Embassy corroborates eligible citizens abroad2%net and qualified US-consular practice; broader net-income/worldwide-base details and universal deadlines remain held. No fluent full Tigrinya translation or complete current consular review is claimed.
+
+## Findings and closure
+
+One initial evidence-only HOLD, F01, remains preserved in `INITIAL-HOLD.md` and `INITIAL-FINDINGS.json`. Writer map item85 pointed old income line113 only to Sources152–171. Its actual corrected22,500/payment-year explanation is line140; the remaining multiplier/rounding hold is line171. I independently inspected both exact passages and closed the locator in `CLAIM-OUTCOMES.json`, binding their full text and hashes. The original map and initial manifest remain unchanged. No candidate edit, source reread, case repeat or extra review cycle was needed. No substantive candidate defect remains within this bounded scope.
+
+The full farm2/5/10/15/20% payload, all thresholds, conditions and sources were verified in nonoperative Sources prose. The original five stock MISS remain recorded: the readable2016 government news contains no1994rate table; the scanned original needed visual reading. The move does not establish current farm rates and does not waive a numeric claim. Current farm treatment remains explicitly nonusable.
+
+## Cases and protected continuity
+
+All four original case inputs and five original expected outputs are retained. I independently formulated Decimal marginal-slice computations and compared all eight final expected outputs: salary1064; rent allowance15000, taxablebase45000, input/base difference0, tax8268; company30000; personal24768 and difference5232. Source eligibility was checked: one-year direct-owner lease with stated exclusions; ordinary incorporated/body rate with special regimes excluded; no incorporation recommendation. The original gross60000/two-year alternative gives22500 as a proration step only; final payment-year tax remains held. See `INDEPENDENT-CASES.json`.
+
+All34 initial sealed writer payload hashes, all13 retained source bodies and all7 country-file bindings were verified. README and four source siblings remain byte-identical to base. Frontmatter changes are description/date/version/type only; human credit, licence, tier and absent approval/reviewed_by fields remain protected. Links resolve. `PROTECTED-CONTINUITY.json` records the unchanged sibling contradictions and explicit routing boundaries: their old receipt penalty, simplified183test, noVAT assertion and formation/current-process limits are not newly approved by this two-file update.
+
+## Checks and remaining limits
+
+Applicable writer targeted records were inspected and reused: both standards{}, current validation2guides/0warnings, public Git audit2guides/0errors/0warnings/0notices,4case blocks/0failures, preserved calculator quotes and clean whitespace. Audit uses `--mode audit --strict-metadata`, not production exporter sync or invented database provenance. Exact unchanged case/quote applicability was checked; no redundant full repository suite was run.
+
+Final stock cached-body replay is22rows/0MISS/19UNREADABLE. This is not a live network pass or legal/source proof. `CHECK-SCOPE-AND-DISPOSITIONS.json` maps every unreadable occurrence to actual independent body/image scope and hashes. The checker is unchanged. Hosted publication gates remain separate.
+
+Genuine nonusable holds remain for later/current consolidated law, fiscal-year dates, alternative-year approval, current domestic forms/portal/payment process, fractional rounding, annual employment reconciliation/residency, exact183andperiod conflict, complete business expense/depreciation reconciliation, advance-rent final multiplier, current farm/chance-winning currency/application, diaspora net-base/treaty/collection dates and details, unread Proc138receipt penalties, domestic2%survival, stamp rate schedule, customs and detailed sales filing. Unsupported800taxfree/oldbandsequence/24/2011 citation remain rejected. No hold was converted into a usable instruction to obtain this PASS.
+
+No skill, old evidence or protected file was edited; no push, PR, merge, release or production action was performed by this reviewer. Root owns publication.

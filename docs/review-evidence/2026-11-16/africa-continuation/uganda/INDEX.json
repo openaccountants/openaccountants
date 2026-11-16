@@ -1,0 +1,121 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "c9dfedce6c9a98854e2581993bb8e9f31c60d047b35bddddeccacded62e7b684",
+  "members": [
+    {
+      "path": "ARTIFACTS.json",
+      "bytes": 3812,
+      "sha256": "c403144f7e3c29ddcbf03e396bc3d2015c680286d9061c4e63b5a681a4504cc6"
+    },
+    {
+      "path": "COMPLETION-NOTES.md",
+      "bytes": 1811,
+      "sha256": "9a2d91bcde02997a405e4f793631a39a5c5b987e22b2423938761efbe3dc0ce5"
+    },
+    {
+      "path": "frozen-ug-company-formation.md",
+      "bytes": 18450,
+      "sha256": "c8194ba2524ed844685f5d27dd73e6ff71028aaf54035d623e40fa517d0e629c"
+    },
+    {
+      "path": "independent-review/REVIEW.json",
+      "bytes": 11021,
+      "sha256": "9feb24a3d82a55ee5164db1455159e08db2f9a8c7b1ca55f5ffcb4c6d24fb2f6"
+    },
+    {
+      "path": "independent-review/REVIEW.md",
+      "bytes": 1335,
+      "sha256": "53dedf47ec0788da1d55d29c0d2393a2b613496e1d78f310b9402d4a7e2719ba"
+    },
+    {
+      "path": "ledgers/ug-company-formation-old-topics.json",
+      "bytes": 16101,
+      "sha256": "ddfde70706415464fdb388c2ac311a591b49c37aff26842fc88d4a7f0314d104"
+    },
+    {
+      "path": "ledgers/ug-company-formation-old-topics.md",
+      "bytes": 13421,
+      "sha256": "506b903324bf734499886a573d74015d7060864bd261839209bfbc30d96ca71c"
+    },
+    {
+      "path": "ledgers/ug-company-formation.json",
+      "bytes": 12434,
+      "sha256": "d06d82c73ee61dd61cfe2cf6fb51067d7a3a140a50516dbe014f5e6c5dbc2b71"
+    },
+    {
+      "path": "ledgers/ug-company-formation.md",
+      "bytes": 10594,
+      "sha256": "7d0e9a4c786e7f04cabf8a5afbcd8c372e54cce4eac10afd5a25639f9ffb51a3"
+    },
+    {
+      "path": "originals/ug-company-formation.md",
+      "bytes": 4319,
+      "sha256": "eeb3579fed9054cf865b90ba5d68991f21ac68bec5bf3a5d7095125db44969d1"
+    },
+    {
+      "path": "source-acquisition.json",
+      "bytes": 6028,
+      "sha256": "eff121d04e398bbe283de71770a6335d14b00a94f135d2e37d547d2175d2a30f"
+    },
+    {
+      "path": "source-read-scopes.json",
+      "bytes": 4925,
+      "sha256": "711f5f4c26cdb94cab2b15b8626fea94344dcdf656c538125867573510dd729e"
+    },
+    {
+      "path": "validation/calculator-quotes.txt",
+      "bytes": 137,
+      "sha256": "eda55c35dca7bfa9cfb3bc315fe1a9dd7b47afb93615370befb254ed651be6e1"
+    },
+    {
+      "path": "validation/copy-dependencies.json",
+      "bytes": 1307,
+      "sha256": "7af46db0ab2383681790af1d34af292a0df4725833c1558a16b6e9f6aa800b7d"
+    },
+    {
+      "path": "validation/examples.txt",
+      "bytes": 58,
+      "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8"
+    },
+    {
+      "path": "validation/quote-copy-tests.txt",
+      "bytes": 121,
+      "sha256": "31341d4f56a5af2f390692eb9ba4eb6923edc5b3c3540b904196726c01f72962"
+    },
+    {
+      "path": "validation/row-sources-cache.json",
+      "bytes": 565,
+      "sha256": "69159a120a6350822a17479402493d218b2a50863baacb34b6ef54503174f43a"
+    },
+    {
+      "path": "validation/row-sources-first.txt",
+      "bytes": 1854,
+      "sha256": "ef50886b32be3fcb3e6b067a37b209746fdefa7ead2a962d8ef84b68053acbf6"
+    },
+    {
+      "path": "validation/skill-checks-final.json",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "validation/skill-checks-initial.json",
+      "bytes": 716,
+      "sha256": "613c663a508e8a25988b3ea2dd4a1df078e123007bf583198e571436bf8aa83e"
+    },
+    {
+      "path": "validation/sync.txt",
+      "bytes": 81,
+      "sha256": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6"
+    },
+    {
+      "path": "validation/validate-guides-final.txt",
+      "bytes": 192,
+      "sha256": "a7d8a057660b3d212d944ce39725ec8cef8aa0fa1ee6a85ef9d7c717d65fc074"
+    },
+    {
+      "path": "validation/validate-guides.txt",
+      "bytes": 376,
+      "sha256": "3668c4f105fb16ddd21916dfcfb96dabe113d8571705ced9200411f87887eac5"
+    }
+  ]
+}

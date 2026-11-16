@@ -1,0 +1,393 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "3a30065a6619df262afe008179e53b51fbc96c26ad7d0519a77cf3b9ef2fe66b",
+  "source_commit": "156bb8cc3f4d2ce7dc36bbfbe54b0cf24d19c5d3",
+  "base_commit": "bbab4f1a6d82cace432e6ca8eda89c98ffb1c038",
+  "members": [
+    {
+      "path": "REPORT.md",
+      "size": 9251,
+      "sha256": "863cb959539b4f3e459668ddb916fc1e222faaf0b6de02781a689a310d452d4a"
+    },
+    {
+      "path": "baseline/CI-figures-8569329b-excerpt.log",
+      "size": 14492,
+      "sha256": "28a8a1dead5b3860d88f3294145bf3a4a93e780f0f36489a1ff07d6b70d8300b"
+    },
+    {
+      "path": "baseline/PR-8569329b-CHECKS.json",
+      "size": 1919,
+      "sha256": "e9083446c5889e8128ac287ec98659ed645d96df57d3dc64c72b64f360bfe2d3"
+    },
+    {
+      "path": "baseline/REPORT-initial.md",
+      "size": 6208,
+      "sha256": "2e85ea61bc63d069f77f3eb2272bfa4634b94344f2674a0e78098a7b868dc224"
+    },
+    {
+      "path": "baseline/source-manifest-initial.json",
+      "size": 1415,
+      "sha256": "1efaa138f23c794e9fcfd20cdb1f89f6d9e7ae66025c90d1f75608232eab0ded"
+    },
+    {
+      "path": "deltas/PR-REVIEW-DELTA-UPDATE.md",
+      "size": 1253,
+      "sha256": "8151fc84ed1ce504e93dd18ae661a09a696004c332bb4de72718dd04ed80d838"
+    },
+    {
+      "path": "deltas/crypto-arithmetic-separation-checks.json",
+      "size": 1889,
+      "sha256": "05e3b721df72bffd21e1ce6bb8f90fdbe13e3baeddc95d7ce7fc2f9d856497b5"
+    },
+    {
+      "path": "deltas/crypto-arithmetic-separation-independent-checks.json",
+      "size": 3005,
+      "sha256": "dd8c2d5e3c720edad71f1f4f1f3f51782a2c1eee4d81e13aa9c279cb079e441f"
+    },
+    {
+      "path": "deltas/crypto-arithmetic-separation-independent-review.md",
+      "size": 3571,
+      "sha256": "5933d5b621965af8112948a6fbf78a8ce6cb82c0c1b2c064c72520e3b5c56866"
+    },
+    {
+      "path": "deltas/crypto-arithmetic-separation-ledger.md",
+      "size": 1914,
+      "sha256": "7aaf382fcf8120cd7563aa40fe59a24ddb43d676b9f066d4a10e28c236eaf622"
+    },
+    {
+      "path": "deltas/crypto-arithmetic-separation-skill-checks.json",
+      "size": 552,
+      "sha256": "f98e9dd0231391886dccfb9a3eb553deba0ca9ec80dfdb56febab3a64c258bc1"
+    },
+    {
+      "path": "deltas/crypto-arithmetic-separation-validation.json",
+      "size": 531,
+      "sha256": "8ebba1a2f206cee6b4503a94b301180a40e01a971b5c90dc1cf9a7adf71dbe27"
+    },
+    {
+      "path": "deltas/crypto-arithmetic-separation.diff",
+      "size": 6684,
+      "sha256": "ec370776098800808090ce9c9ca5fac350fa569f20a987d88df63970c3153cff"
+    },
+    {
+      "path": "deltas/crypto-before-citation-layout.md",
+      "size": 33444,
+      "sha256": "8c34fe118cf1ba4610341538d032cc981f1dc3e7d558a21df7d0dbb7e5ed091d"
+    },
+    {
+      "path": "deltas/crypto-before-html-alt-citation.md",
+      "size": 38308,
+      "sha256": "a1d3180b5d54ad730d1c4c9dfa2d9900dbd3d88664824f4be347012782884fc9"
+    },
+    {
+      "path": "deltas/crypto-citation-layout-ledger.md",
+      "size": 4777,
+      "sha256": "42d9c75066efd8c4247239650a72af03aa62d07043ec1c72bd38277da6db2234"
+    },
+    {
+      "path": "deltas/crypto-citation-layout.diff",
+      "size": 24826,
+      "sha256": "abde02c84a0ec20abc4c96a5e3fd48cd2b5999cec0b874df976dd53f4a8290d9"
+    },
+    {
+      "path": "deltas/crypto-delta-arithmetic.json",
+      "size": 2426,
+      "sha256": "daf7998183efddd44f853aeceaba7173f8d03895d82e782fd015d8a3583161ea"
+    },
+    {
+      "path": "deltas/crypto-delta-binding.json",
+      "size": 510,
+      "sha256": "5492a0a32d5d4ab1920a2f3be6977e243acb1cb684b4b62b770f9d2c987bc738"
+    },
+    {
+      "path": "deltas/crypto-delta-examples.log",
+      "size": 58,
+      "sha256": "4916995b995854e142b802ac2678584eff4e0af6439ea42b692679a65a353da9"
+    },
+    {
+      "path": "deltas/crypto-delta-miss-reconciliation.md",
+      "size": 15585,
+      "sha256": "0dcd8ba82ac5ea3d70077841fc45ae27cdffc35fbc3de6fd83a0cc25c689f399"
+    },
+    {
+      "path": "deltas/crypto-delta-row-sources.log",
+      "size": 16376,
+      "sha256": "9365fc6c71f20e3312f2e8ebc99156531269a798b6f4f766afecc5e4cb462d55"
+    },
+    {
+      "path": "deltas/crypto-delta-skill-checks.log",
+      "size": 666,
+      "sha256": "c313c40455d77b8b59f5b72f7ecc5d65c3850594d2422014600b77045fc4abf6"
+    },
+    {
+      "path": "deltas/crypto-html-alt-citation-ledger.md",
+      "size": 2414,
+      "sha256": "fd1fc282c9980a6720b740ee88d238f7a151c21628dfa6afc3e7046b5d4d6798"
+    },
+    {
+      "path": "deltas/crypto-html-alt-citation.diff",
+      "size": 7255,
+      "sha256": "08543f0b3f51a2926a6c86e13fd77c7acade0b1e4a27b14411a8daaa96f4f226"
+    },
+    {
+      "path": "deltas/crypto-html-alt-independent-checks.json",
+      "size": 2245,
+      "sha256": "ade5d907c46afd25abd116cddb96a0171a741850bd5de77bb4525f68d8ecbb45"
+    },
+    {
+      "path": "deltas/crypto-html-alt-independent-review.md",
+      "size": 4298,
+      "sha256": "3f0f373de1db679881e2ecd606aa59417fa2c76a72600fa3d5b5500efb27ae83"
+    },
+    {
+      "path": "deltas/crypto-html-alt-skill-checks.json",
+      "size": 552,
+      "sha256": "f98e9dd0231391886dccfb9a3eb553deba0ca9ec80dfdb56febab3a64c258bc1"
+    },
+    {
+      "path": "deltas/crypto-html-alt-validation.json",
+      "size": 646,
+      "sha256": "5d6f422936810b59e7d128a1d9c6887d699d9007b8cf66d0257b9058e8b7991a"
+    },
+    {
+      "path": "deltas/crypto-independent-delta-checks.json",
+      "size": 2473,
+      "sha256": "b73cced96d565a959ab6cde560a76bb5264f73aea126d56241f0d3f15414c95f"
+    },
+    {
+      "path": "deltas/crypto-independent-delta-review.md",
+      "size": 7022,
+      "sha256": "593e6c4be5bcd6e3589e1b81000466ec9012f742efc1663c96f96649cfea345c"
+    },
+    {
+      "path": "deltas/current-source-validation.json",
+      "size": 1035,
+      "sha256": "d17b2d7db8ba6fdd80ad500d0ef3ef209fbe73a936371c264f1019aead0a22d3"
+    },
+    {
+      "path": "deltas/report-copy-delta.log",
+      "size": 100,
+      "sha256": "b063f09aeef553b6a44a3b7fae09d872794fd42ab615e02ad9fb637ee7a01945"
+    },
+    {
+      "path": "deltas/sync-arithmetic-separation.log",
+      "size": 81,
+      "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2"
+    },
+    {
+      "path": "deltas/sync-delta.log",
+      "size": 81,
+      "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2"
+    },
+    {
+      "path": "deltas/sync-html-alt.log",
+      "size": 81,
+      "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2"
+    },
+    {
+      "path": "deltas/validate-guides-arithmetic-separation.log",
+      "size": 192,
+      "sha256": "c5905f9199102c5e895747b7c81ed4de427b6cc8e1d315df76e4ab8fe76ae807"
+    },
+    {
+      "path": "deltas/validate-guides-delta.log",
+      "size": 192,
+      "sha256": "c5905f9199102c5e895747b7c81ed4de427b6cc8e1d315df76e4ab8fe76ae807"
+    },
+    {
+      "path": "deltas/validate-guides-html-alt.log",
+      "size": 192,
+      "sha256": "c5905f9199102c5e895747b7c81ed4de427b6cc8e1d315df76e4ab8fe76ae807"
+    },
+    {
+      "path": "ledgers/kr-social-insurance.md",
+      "size": 28208,
+      "sha256": "c6e860ad17d38437666ae6bbd5a62dd726aec03ac88854223a1628a367365831"
+    },
+    {
+      "path": "ledgers/references.md",
+      "size": 6058,
+      "sha256": "3689171ec9b2d3c548f4ba92fa8e35c8ca5963ae9e3b14299f0c1d745d573064"
+    },
+    {
+      "path": "ledgers/simplified-business-operator-registration-under-vat-act.md",
+      "size": 11988,
+      "sha256": "1ae9855670549210b971c7c5ca0982b1511a6f80a40a0f2f422584601332227d"
+    },
+    {
+      "path": "ledgers/south-korea-crypto-tax.md",
+      "size": 83415,
+      "sha256": "124afccfb28ddb4ad6e4dfaaba0155c3a521c735251657d590475db4e08c88b4"
+    },
+    {
+      "path": "originals/kr-social-insurance-v2.0.md",
+      "size": 17322,
+      "sha256": "a70a5154359fe6dc8ebed714e7a2ff2a5fa1a8c6b9aa17a205b682c19d652502"
+    },
+    {
+      "path": "originals/kr-social-insurance.md",
+      "size": 17322,
+      "sha256": "a70a5154359fe6dc8ebed714e7a2ff2a5fa1a8c6b9aa17a205b682c19d652502"
+    },
+    {
+      "path": "originals/references.md",
+      "size": 3001,
+      "sha256": "d07527db90d0d37db04fbb8cdc6791eb9dbecf01fc33a603ce916a9c912d2563"
+    },
+    {
+      "path": "originals/simplified-business-operator-registration-under-vat-act.md",
+      "size": 5971,
+      "sha256": "6275f2fddd8fe1005ae243f3f18196198b62145b6c0b01feb90c01524b69fcea"
+    },
+    {
+      "path": "originals/south-korea-crypto-tax.md",
+      "size": 21917,
+      "sha256": "0cdc0df226a3f87a43b50f4a91938188f92ce8cdea2a68484d65201e8fae075a"
+    },
+    {
+      "path": "reviews/PR-REVIEW-COMMENT.md",
+      "size": 4271,
+      "sha256": "5bfdbb4e59224e51b886a2ff35196dd38e780114e5a151b9f04d642a7b7b0711"
+    },
+    {
+      "path": "reviews/crypto-tax-review.md",
+      "size": 25503,
+      "sha256": "cdbf7efa3937ed2d8eb991e7d36f9ea0e1211406397ac6a396fb14a429f0d6f5"
+    },
+    {
+      "path": "reviews/pack-review.md",
+      "size": 8356,
+      "sha256": "7c09fe460181a778d5ec4045a76162ee70e7d78c42ae7a0f8ac0c0b0e9a231eb"
+    },
+    {
+      "path": "reviews/references-review-initial-superseded.md",
+      "size": 5414,
+      "sha256": "7060016e7d8ffd43be66309bdb337fac80286094b485e5c784f1cf7d013eae80"
+    },
+    {
+      "path": "reviews/references-review.md",
+      "size": 2285,
+      "sha256": "752c882bb8fa964407a23be8b4ef3755d0a0da3ed2df3a7ebee3dc7183bc4c03"
+    },
+    {
+      "path": "reviews/social-insurance-review.md",
+      "size": 15863,
+      "sha256": "ddee301ba54cd1cf4c6342918efdcf7630604cb6679304578391664782d1c91b"
+    },
+    {
+      "path": "reviews/vat-registration-review.md",
+      "size": 8272,
+      "sha256": "0c6dc3c8b952d5a1b3642246f820b869713d4bb49be2503231eecf5eaf929efa"
+    },
+    {
+      "path": "social-insurance-writer-handoff.md",
+      "size": 4101,
+      "sha256": "28b11698bfd63a9cf790dc44a163609788458df44a543e0dbf8a3d605bf56058"
+    },
+    {
+      "path": "source-manifest.json",
+      "size": 1415,
+      "sha256": "30fef295b3c2a97dab89edae4e38fb8d7092e7a70b29e1e6cec6e6710170a36c"
+    },
+    {
+      "path": "validation/calculator-quotes-final.log",
+      "size": 247,
+      "sha256": "fa3ca7bd224968d95f2f4d8de60af21fd0d65e2f695a00204d2209d1b3b7b159"
+    },
+    {
+      "path": "validation/crypto-row-source-reconciliation.md",
+      "size": 19678,
+      "sha256": "898f410442352f9a1e9e72e85e453d46473604849d0e2e2070985f4ea81439b8"
+    },
+    {
+      "path": "validation/crypto-row-sources.log",
+      "size": 14037,
+      "sha256": "91c657ec8d0ce39d7f4102fc881bb0567e6a5782bae1d37de770bab4cd7998b7"
+    },
+    {
+      "path": "validation/crypto-shape.log",
+      "size": 666,
+      "sha256": "c313c40455d77b8b59f5b72f7ecc5d65c3850594d2422014600b77045fc4abf6"
+    },
+    {
+      "path": "validation/diff-check-final.log",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "validation/examples-final.log",
+      "size": 59,
+      "sha256": "539287af9f00a9f419bcdf9959d1b7307fb3389730b6b0bcaa4bb29415b09774"
+    },
+    {
+      "path": "validation/final-validation-summary.json",
+      "size": 2735,
+      "sha256": "1e96dc6291908179e61d81eb3a14e87f6a9ceeca341ce9b98dbd47c74807a19d"
+    },
+    {
+      "path": "validation/initial-calculator-copy.log",
+      "size": 121,
+      "sha256": "ea990f0dfd9f731504a31c5c7ac781747c8937ae2b617bdc97d7b5f9731587a3"
+    },
+    {
+      "path": "validation/precommit-sync.log",
+      "size": 81,
+      "sha256": "285c06c16232e85f6cf4bde9dc36c9ccc61e32acb3e2e65bb60f781aa9a0c1c8"
+    },
+    {
+      "path": "validation/precommit-validator.log",
+      "size": 99,
+      "sha256": "b483c71445dda503a93a56421eb28c2b76ea443c8b429d8f78cf654133c08258"
+    },
+    {
+      "path": "validation/report-copy-final.log",
+      "size": 100,
+      "sha256": "21d0932a57c54d954ec44ee8b270e62f80a4c8826cf4079377d632110002c5d2"
+    },
+    {
+      "path": "validation/setup-failures-record.md",
+      "size": 1948,
+      "sha256": "a6acac51645ad389210acf9b201366808f35f4a153e74142cdd3ae1bd596ce76"
+    },
+    {
+      "path": "validation/skill-checks-final.json",
+      "size": 237,
+      "sha256": "1b1786e4738765d05eb8b9263903f1a96d1b718e01f70e76962454c97f90e2e3"
+    },
+    {
+      "path": "validation/social-final-row-sources.log",
+      "size": 327,
+      "sha256": "1f5c590b33151efea7d904babc61ef7f6839053995eea1053cd290171e193696"
+    },
+    {
+      "path": "validation/social-initial-shape.log",
+      "size": 663,
+      "sha256": "f1ffdb802bfb78ffc73d759b1f06125e58ef649e235dac345fd5cf4b7f9d03eb"
+    },
+    {
+      "path": "validation/social-row-sources-corrected.log",
+      "size": 326,
+      "sha256": "53a87c77144e1915b502e16391d6c7ddf488fc55e57841706b65ae22cd3a9f4b"
+    },
+    {
+      "path": "validation/social-row-sources.log",
+      "size": 935,
+      "sha256": "ca303d9ca621b284bb5b2e1ab1a08610461b1320713172997a712b7239f1a790"
+    },
+    {
+      "path": "validation/sync-final.log",
+      "size": 81,
+      "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2"
+    },
+    {
+      "path": "validation/validate-guides-final.log",
+      "size": 192,
+      "sha256": "c5905f9199102c5e895747b7c81ed4de427b6cc8e1d315df76e4ab8fe76ae807"
+    },
+    {
+      "path": "validation/vat-references-row-sources.log",
+      "size": 497,
+      "sha256": "712da4bf2711a69f7303a922b9c2061ed78eeae4146eff4ae9a70429b2d11924"
+    }
+  ]
+}

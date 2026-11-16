@@ -1,0 +1,163 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "d9aa40e8c3149090c557803ac7b5c70bae19bf33bdba7c657f6b8cd420798291",
+  "source_commit": "2e4e141b21ee46aac22684baa7382f13bf5c6b31",
+  "base_commit": "bbab4f1a6d82cace432e6ca8eda89c98ffb1c038",
+  "members": [
+    {
+      "path": "REPORT.md",
+      "size": 3551,
+      "sha256": "4793ecbfa8e25ee7662536279a0cf3cd72d07405af5d0cdc4ca2a40bd82339c1"
+    },
+    {
+      "path": "WRITER-HANDOFF.md",
+      "size": 5795,
+      "sha256": "24d137c0b8447d4ba46575b2ad63dd1e5434aeea7847762274b00f2870fd2f8d"
+    },
+    {
+      "path": "deltas/IT17-IT33.md",
+      "size": 781,
+      "sha256": "2098ab7279fdf9e9b32300f5b7159ea7803e23679d73b56049e565c49672007c"
+    },
+    {
+      "path": "frozen-sha256.json",
+      "size": 456,
+      "sha256": "03d5c994b7b5c004137a76583551bd8ad4673eb9a0f58d03947428a4654b547a"
+    },
+    {
+      "path": "ledgers/tm-income-tax.md",
+      "size": 21308,
+      "sha256": "7bc86fb3ffd7fc32484d1e0eefa82026e4e20d99afe2ee3632d8b8531e70182b"
+    },
+    {
+      "path": "ledgers/tm-payroll-social.md",
+      "size": 13158,
+      "sha256": "ae1f713e36815e8fe89cb911b5051fc6c9da92f2f035df6e46708bd3df27624f"
+    },
+    {
+      "path": "old-topic-map.md",
+      "size": 408,
+      "sha256": "2949b3fa48dd7dbbb1cbce903ab1ca74b0e8b5d2dde57c23fb470010f04aed59"
+    },
+    {
+      "path": "originals/tm-income-tax.md",
+      "size": 2340,
+      "sha256": "4ec5c0f4cd4d3201d788fa7d1fe0285d335252bd11682193d04bba1d10a75d45"
+    },
+    {
+      "path": "originals/tm-payroll-social.md",
+      "size": 2859,
+      "sha256": "91affdaab1738265f527537a2b5387e98424d2819ae1a752f3ad78c8a58b27cc"
+    },
+    {
+      "path": "reviews/independent-checks.json",
+      "size": 25667,
+      "sha256": "0c64a6bc891ab511c35f0fd8d1353531b9b1fd5cf0965ffd5259520579ec6247"
+    },
+    {
+      "path": "reviews/independent-review.md",
+      "size": 5217,
+      "sha256": "7a539eb6364eb7f6f17a4b162d7c1d489ad6614ac64499ed82078f52c4986dfb"
+    },
+    {
+      "path": "reviews/native-fragment-checks.json",
+      "size": 28074,
+      "sha256": "904b99ba9fb00c60438766de0a3bc7f3a82b82edd0a58a5e6763c35b69dc9489"
+    },
+    {
+      "path": "source-manifest.json",
+      "size": 759,
+      "sha256": "41c9ff0c1a7d9172bbc4b676f34e5f7458008a4f35a804610a529b09c278fce6"
+    },
+    {
+      "path": "validation/IT17-IT33-skill-checks-path-error.log",
+      "size": 783,
+      "sha256": "2fd172168727cc0e9ab679c58fc486c8dfd81b89797cc1b29ddc6b44c5fb0319"
+    },
+    {
+      "path": "validation/IT17-IT33-skill-checks.log",
+      "size": 658,
+      "sha256": "5e1d2ea85a39a321291c9c9a5938e09dd2d2a37da87762dc4885a7d04062ee8f"
+    },
+    {
+      "path": "validation/calculator-quotes.log",
+      "size": 119,
+      "sha256": "211da38a4edf806c62ebda1d423a8bc7d9a9609c19eefa72dc13421dff962076"
+    },
+    {
+      "path": "validation/copy-rules-rerun.log",
+      "size": 100,
+      "sha256": "8e47fb1aa943f59befc36e922a73970e74775a685a459e33341ef2804f9f2ede"
+    },
+    {
+      "path": "validation/copy-rules.log",
+      "size": 1487,
+      "sha256": "9811da47a0f2ef661c8ee7253644e634bfa5c1961af11f40f0331808216f2127"
+    },
+    {
+      "path": "validation/examples.log",
+      "size": 58,
+      "sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca"
+    },
+    {
+      "path": "validation/final-committed-guide-validation.log",
+      "size": 192,
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa"
+    },
+    {
+      "path": "validation/final-committed-strict-sync.log",
+      "size": 81,
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9"
+    },
+    {
+      "path": "validation/final-copy-rules.log",
+      "size": 100,
+      "sha256": "31cdcb869d5dd1f5b84ae4dddcf52f3ecc3d5b36aa4ed61beba81727b12e4955"
+    },
+    {
+      "path": "validation/initial-failures.log",
+      "size": 804,
+      "sha256": "3dfce57ba1a36bfa5e23fe3c5d5625a88da72987ba76fc6f9745bb279807b2b9"
+    },
+    {
+      "path": "validation/row-sources-cached.log",
+      "size": 544,
+      "sha256": "708461008090daec1dfab111acae58d9dad9505ec1388fff4837bb7e6c170ee1"
+    },
+    {
+      "path": "validation/skill-checks-json-initial-import-error.log",
+      "size": 1163,
+      "sha256": "3498b18d3965459a9e847456637e1c329520c34234252e6d1c102451bd5a3e10"
+    },
+    {
+      "path": "validation/skill-checks-json.log",
+      "size": 954,
+      "sha256": "52592382ff2bedee9ef32030e39beb98b2c3e3dfaf696a85913bcd76723136c6"
+    },
+    {
+      "path": "validation/skill-checks.log",
+      "size": 1320,
+      "sha256": "076c20b2049e4016905231ad5a0650fc8eec5aa9e19bda456823ffedc4220220"
+    },
+    {
+      "path": "validation/sync-integrity.log",
+      "size": 81,
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9"
+    },
+    {
+      "path": "validation/validate-guides-worktree-initial-import-error.log",
+      "size": 554,
+      "sha256": "82503ec1bd912d4c0df88bd0d69c61c1be95f66692dac3e37246a6d4050437bf"
+    },
+    {
+      "path": "validation/validate-guides-worktree.log",
+      "size": 430,
+      "sha256": "083b80bc1b005d3a88a3e617d3d12dd142aa2a3b95fe15531b98da985c6a38f5"
+    },
+    {
+      "path": "validation/validate-guides.log",
+      "size": 99,
+      "sha256": "b483c71445dda503a93a56421eb28c2b76ea443c8b429d8f78cf654133c08258"
+    }
+  ]
+}

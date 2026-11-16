@@ -171,8 +171,12 @@ def collect_batches(repo: Path, since: str, head: str = "HEAD", batch_size: int 
             # stored. Keep it unresolved rather than invent a writer or erase it.
             raise ValueError(f"Outstanding path has no reachable source history: {path}")
         for kind in ("--no-merges", "--merges"):
+            # Match the main collector's first-parent merge ownership. Without
+            # merge diffs, --diff-filter silently omits human merge-only records.
+            # Keep patch text out of the NUL-delimited identity records.
             records = git(repo, "log", "--full-history", "-z", "--format=%an%x00%ae%x00%ce", kind,
-                          "--no-renames", "--diff-filter=ACDMRT", head_sha, "--", path).split("\0")
+                          "--diff-merges=first-parent", "--no-patch", "--no-renames",
+                          "--diff-filter=ACDMRT", head_sha, "--", path).split("\0")
             for offset in range(0, len(records) - 2, 3):
                 name, email, committer = records[offset:offset + 3]
                 if SYNC_BOT not in (email.lower(), committer.lower()):

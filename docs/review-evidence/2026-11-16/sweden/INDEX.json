@@ -1,0 +1,662 @@
+{
+  "country": "sweden",
+  "wrapper_date": "2026-11-16",
+  "reviewed_source_commit": "807ffce8185c7fbc859ec95605282c20eb44ef27",
+  "reviewed_base_commit": "2844c309238b4fdb63be0a3d0ad9ae99a8ea89c8",
+  "scope": "Exact prepared selected reviewer/writer records. Evidence packaging only; no fresh legal review, tax-content change, accountant approval or country-completeness claim. Original review dates, source-read scopes, genuine holds and historical check failures remain unchanged.",
+  "archive": {
+    "path": "review-evidence.tar.gz",
+    "bytes": 554062,
+    "sha256": "6d661b95120f8a39d92b8ef45adf5d8117c92e084d64a61056336ee666281ad6",
+    "format": "tar.gz; USTAR regular-file members; lexicographic paths; uid/gid/mtime zero; mode0644; empty uname/gname; gzip filename empty and mtime zero; compression9",
+    "member_count": 63,
+    "payload_bytes": 3882270
+  },
+  "readable_report": {
+    "path": "REPORT.md",
+    "bytes": 12864,
+    "sha256": "89b0af976585be1d65fe24716d7e48b3ccd177f4c8374a3a1e311b3e5dcd6622",
+    "verbatim_selected_final_report": "public-evidence/reviews/final/REPORT.md",
+    "verbatim_selected_final_report_sha256": "1f9965020a42b3fb69fdfc655faba4d8b96edb5f07be0369cb6eecdb73903ba8"
+  },
+  "prepared_selection_binding": {
+    "inventory_sha256": "d034d1af6c8b68c95fcb66b525510b7c5dbfdb9094e482b1d582aa3db5c60fa4",
+    "preparation_manifest_sha256": "d86367004cf6e11fbb78d3e8b67bb7ff28892498c672d6223849ec3a9ec73ff8",
+    "selected_original_payloads_exact": true
+  },
+  "selected_original_review_manifests": [
+    {
+      "path": "public-evidence/reviews/initial/MANIFEST.json",
+      "bytes": 64074,
+      "sha256": "cbc188fa76ca0847139de07532fe66a3f5c54bb2a4e6a63aff92d43e9a91ba44"
+    },
+    {
+      "path": "public-evidence/reviews/final/MANIFEST.json",
+      "bytes": 142630,
+      "sha256": "23c542d7f6172180ad12e4087ea2355a1b238cf1d3cbaac781988be3cc13de73"
+    },
+    {
+      "path": "public-evidence/writer/initial/FINAL-MANIFEST.json",
+      "bytes": 35699,
+      "sha256": "b36bcfb6401c0e3d9a6c7bff917bf7e5a4e30c7f4b1c1a6f040f2631fec85f63"
+    },
+    {
+      "path": "public-evidence/writer/current/FINAL-MANIFEST.json",
+      "bytes": 38516,
+      "sha256": "14df6695516b9886e185b43ceac90469fdc96ece23c43904aa2c92f37853cde0"
+    },
+    {
+      "path": "public-evidence/writer/current/source-read-manifest.json",
+      "bytes": 50089,
+      "sha256": "aad6858271e2e627c1056ad04031efc1075e410ba4874ec2e7209eb09dfa148f"
+    }
+  ],
+  "files": [
+    {
+      "path": "public-evidence/checks/current/examples.txt",
+      "bytes": 385,
+      "sha256": "c4f0f94fc355326ad799e77fec5bb14230e68fccf206e84de6fc22787b79de8d",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Actual final exact-head terminal check; stock unreadable condition remains visible",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/checks/current/quotes.txt",
+      "bytes": 375,
+      "sha256": "6fe94069a19a173dc454811a7fc8214c154daf943e3ff468919a893d80e7fa6e",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Actual final exact-head terminal check; stock unreadable condition remains visible",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/checks/current/rows-final.txt",
+      "bytes": 1402,
+      "sha256": "18f69abcc08fbe0fe642d15bc0cf9ae0808bdcd613f688e9806376e2f3e36526",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Actual final exact-head terminal check; stock unreadable condition remains visible",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/checks/current/standards.txt",
+      "bytes": 793,
+      "sha256": "4b243000ecf39efaa5ff5b9b647413ade0468cd73c5a904c9319f3f48ddabd9a",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Actual final exact-head terminal check; stock unreadable condition remains visible",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/checks/current/sync.txt",
+      "bytes": 302,
+      "sha256": "4a0245e6b19bdd441e3f46582da57b578b42a3ed1fee84eb2fb12e9446df2060",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Actual final exact-head terminal check; stock unreadable condition remains visible",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/checks/current/validate.txt",
+      "bytes": 388,
+      "sha256": "1eaa11e388c4dda4945537d58a051eedf045768c7d96ad08e4ef3e9bafd39bea",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Actual final exact-head terminal check; stock unreadable condition remains visible",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/checks/historical/rows-at-full-HOLD.txt",
+      "bytes": 1123,
+      "sha256": "6595bb00e6fae769f40c12b9c6017e66acfe14ebcfac01e21ff62713ea052883",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Historical real checker failure/classification correction preserved; not replaced by current green count",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/checks/historical/rows-initial-failure.txt",
+      "bytes": 1885,
+      "sha256": "52e30e66fd76140e7623d0f366fdd9590888d7f6370e871fd4b6d4be79734fbd",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Historical real checker failure/classification correction preserved; not replaced by current green count",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/README.md",
+      "bytes": 7275,
+      "sha256": "2a052003c6310df313d84392b43a580d8c618cb208f8ca7c8440d7e0f6d1f1d8",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "One current complete per-file ledger with all relevant original destinations and current native quote/scope/hash bindings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/references.md",
+      "bytes": 19200,
+      "sha256": "ea3d05ec0b13936150b8295f498134dc5ac3f75d5af12f087705f39ba680c6b1",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "One current complete per-file ledger with all relevant original destinations and current native quote/scope/hash bindings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/se-capital-gains.md",
+      "bytes": 86128,
+      "sha256": "48def8cf9ef40b2b8f80c363dce0b2d5e9bde9144b51a1635502bbfc5bcf032a",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "One current complete per-file ledger with all relevant original destinations and current native quote/scope/hash bindings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/se-cross-border.md",
+      "bytes": 148650,
+      "sha256": "4d95ed5eb4b1473ddfdbddb1f9a5db335644ec8042cf8cc84a93c23ba97daa7f",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "One current complete per-file ledger with all relevant original destinations and current native quote/scope/hash bindings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/sweden-bookkeeping.md",
+      "bytes": 184021,
+      "sha256": "28450382d7cebcd6ce483d5bf5844f66bb397abf16f5712df7721e8903550a6d",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "One current complete per-file ledger with all relevant original destinations and current native quote/scope/hash bindings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/ledgers/sweden-crypto-tax.md",
+      "bytes": 113443,
+      "sha256": "bf785791308ce9f4952215db18919cbced44f39db126b74702267d3701dcb97f",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "One current complete per-file ledger with all relevant original destinations and current native quote/scope/hash bindings",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/MANIFEST.json",
+      "bytes": 142630,
+      "sha256": "23c542d7f6172180ad12e4087ea2355a1b238cf1d3cbaac781988be3cc13de73",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/REPORT.md",
+      "bytes": 10975,
+      "sha256": "1f9965020a42b3fb69fdfc655faba4d8b96edb5f07be0369cb6eecdb73903ba8",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/all-240-source-bindings.json",
+      "bytes": 426556,
+      "sha256": "da0ed187892487df1e88bc541847d10b67fdb9272a0911bc9b7637b5f56a559d",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/all-608-semantic-destination-continuity.json",
+      "bytes": 535724,
+      "sha256": "7cc91b2fc919134dc82a66e6052a3050c599929e8b2dfc395aa6bd98da14bdad",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/all-71-heading-continuity.json",
+      "bytes": 37265,
+      "sha256": "2bdf7eb75867ba47d125a3cf56b3dc739de07dc6b271ae2e4ea8722060ca7103",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/all-948-candidate-item-continuity.json",
+      "bytes": 244901,
+      "sha256": "5cbdad9b56fabaf0ebe062477dc4ca28842d01838ccb1b9a254d733acf1bf148",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/all-six-ledger-copy-consistency.json",
+      "bytes": 1240,
+      "sha256": "dfc8a289dbdebe5c4205d42dab47047d77908506dc94fc43194ad6f6204638a6",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/audit-summary.json",
+      "bytes": 758,
+      "sha256": "9810e52f8fe37ec04ad3ddeafacc491f2760a6416fd50149408e619ad75a04ff",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/case-and-input-continuity.json",
+      "bytes": 4311,
+      "sha256": "db7743118cf574e3e28c5d4544262926fb9d905df31296273a6ef469387585b5",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/closed-findings.json",
+      "bytes": 9507,
+      "sha256": "6f6a546479bc80c12efa50f1df8bf614290dc18068d845aa6660f9d4ed896d82",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/eight-changed-semantic-maps.json",
+      "bytes": 19031,
+      "sha256": "326b11497659190ad038cd1f66254cbfb740fe149901bfba3a4afeb43e81b1a0",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/exact-head-and-protected.json",
+      "bytes": 10464,
+      "sha256": "ad25c8299b4ffcdbbe14c15c40a646de6128eeff3658c9fda2cf16b9412b7dfc",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/findings.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/fresh-official-confirmations.json",
+      "bytes": 1073,
+      "sha256": "0d465ded95c08b6bd69df9cf7226c3a71a8201610befee59f80eca07def2c97a",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/immutable-chain-bindings.json",
+      "bytes": 195846,
+      "sha256": "d4590d683ec875a88d4fa9a99112b3e2690b96a5aa5e47f3da59dde3078cbe9e",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/inspected-terminal-checks.json",
+      "bytes": 2431,
+      "sha256": "3be2a6773e1e0b2751246b1fb890cd901565c3bbeeedd537ace7390fdb25ccaf",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/pdf-delta-independent.json",
+      "bytes": 1585,
+      "sha256": "9edb26e0e49817121041c4cc006f3d49df12c514f601eb25cb554efcceb51465",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/recompute-current.log",
+      "bytes": 1321,
+      "sha256": "e38a9daa19aeea51a79f4a6eabf1f8f4ad106e209753cd6d7c83c39ec8929006",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/final/recompute-current.py",
+      "bytes": 4520,
+      "sha256": "4a3409e73de3769a01a43dcda8db86a8e3608cf6aae07564f1de8d0d22aae5fd",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Final cumulative full review plus complete delta; unchanged-scope continuity distinguished from actual new reading",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/MANIFEST.json",
+      "bytes": 64074,
+      "sha256": "cbc188fa76ca0847139de07532fe66a3f5c54bb2a4e6a63aff92d43e9a91ba44",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/REPORT.md",
+      "bytes": 14247,
+      "sha256": "27cd75b6bd883fff4b9427571884a5d37f7384c8bf2c51d4ffda33592d79f576",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/all-nonexact-destinations.json",
+      "bytes": 148308,
+      "sha256": "9a25a5595e6fd285910b617163942cd60210cde832d17d3bb5b49a386285fb0f",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/case-recomputation.json",
+      "bytes": 13151,
+      "sha256": "3ed6c273aa4390c6c53fde15de279cefc17b994574cb779c7c911b11f4f9d0a0",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/check-examples.txt",
+      "bytes": 385,
+      "sha256": "a4c469ac95270a1d4fccc971c3f2cd3d6d388a3c4e94befcc084efbdd20fd17a",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/check-quotes.txt",
+      "bytes": 375,
+      "sha256": "6278fc59494b2af65141d8003d1582fe4f5f8d22bf91ebb687e4c39ba9cf506e",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/check-standards.txt",
+      "bytes": 787,
+      "sha256": "313bd45d9639d8b119dc3530f2f3f56036eafe3aaff9ba1ba5380d48ffc003c0",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/check-sync.txt",
+      "bytes": 302,
+      "sha256": "b2d6b79896fe382418367f8d9ac5adc67c471882620d9df007e0fba1b7f1454e",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/check-validate.txt",
+      "bytes": 388,
+      "sha256": "932cbce329d1038d6912f578fe542a7d560fe1f72b6d39dc1f6576449e1d2f6c",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/exact-head.json",
+      "bytes": 2304,
+      "sha256": "f8969c2ecf74a197b0aba4a133569a3ac78f426e2d59f57a1cfcb71bcf873efe",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/findings.json",
+      "bytes": 6549,
+      "sha256": "0b9c4fac14892fdceee6149c60addfc54607b36077de33d186dcfcba8fb7264f",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/independent-local-checks.json",
+      "bytes": 1187,
+      "sha256": "e5df1d7154740822d68bf33f0edc5326b0130d36320dc116f13f4cab57f8992f",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/old-line-bindings.json",
+      "bytes": 477566,
+      "sha256": "eb430518141a9754017a0c533c8d944162c3f8048261f2c3ffc7313e312b8fd8",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/original-case-preservation-independent.json",
+      "bytes": 5002,
+      "sha256": "2731f894f39c602fc36507cd2ebb257d2d6271534b0f44dd716aaccf822a2844",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/prose-case-recomputation.json",
+      "bytes": 1167,
+      "sha256": "df7ce375da07455c714c262303ad62ec703c8db112a40e652ef0b3e9a1892fcc",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/protected-invariants-independent.json",
+      "bytes": 12115,
+      "sha256": "58571bfd1071897bbd73ce96d9ca4594c82a728f25859cee2f78d8de0c93d32a",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/recompute.py",
+      "bytes": 4504,
+      "sha256": "19d902d479226a3f4a3b426e595321b001c3fe538496a944cb38e3d1de0246f4",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/reviews/initial/source-scope-independent.json",
+      "bytes": 50908,
+      "sha256": "69f4dcfff8e68c059667d382555ab1ac5665dfcaa5c1cedd83644b8cc92a6351",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Immutable full independent HOLD: actual source scopes, complete nonexact semantic reading, original protection/cases or exact check evidence",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/current/CORRECTION-HANDOFF.md",
+      "bytes": 8080,
+      "sha256": "a389b3667737a74e532556ef5be44a25e3336fb9e76e76415cd691810dff25af",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Current complete writer bindings, populations, cases, source/read scope or PDF image hashes; no raw body/image payload",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/current/FINAL-MANIFEST.json",
+      "bytes": 38516,
+      "sha256": "14df6695516b9886e185b43ceac90469fdc96ece23c43904aa2c92f37853cde0",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Current complete writer bindings, populations, cases, source/read scope or PDF image hashes; no raw body/image payload",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/current/candidate-items.json",
+      "bytes": 528161,
+      "sha256": "1f1022b200c14d5e59cbdae599aeee3cd64c203a47412c79da1d81229743956f",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Current complete writer bindings, populations, cases, source/read scope or PDF image hashes; no raw body/image payload",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/current/cases.json",
+      "bytes": 12072,
+      "sha256": "66637edd423655879f906dc52b1ce380fa284351ea8ba4f152e87b29aabe76ec",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Current complete writer bindings, populations, cases, source/read scope or PDF image hashes; no raw body/image payload",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/current/correction-content-delta.json",
+      "bytes": 2963,
+      "sha256": "d49c3a6f89ca0226f7333d1eab3a5d7112dc8a1e0759e133a25f9d5f510b925e",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Current complete writer bindings, populations, cases, source/read scope or PDF image hashes; no raw body/image payload",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/current/correction-source-group-delta.json",
+      "bytes": 20745,
+      "sha256": "454c15169332b0c6d13b3c6eb87258f6265d7536b600d02b645d48a3b55626c8",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Current complete writer bindings, populations, cases, source/read scope or PDF image hashes; no raw body/image payload",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/current/original-case-preservation.json",
+      "bytes": 626,
+      "sha256": "59d563064e2ba0fcbeaa190f018edef58fb76b40fb314e6209c5aed7adeedd6a",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Current complete writer bindings, populations, cases, source/read scope or PDF image hashes; no raw body/image payload",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/current/pdf-visual-inspection.json",
+      "bytes": 3960,
+      "sha256": "49243836e744b04ee6f6808d9915cd9928d1ae1b2ee106cd4b5ffc31363d6dea",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Current complete writer bindings, populations, cases, source/read scope or PDF image hashes; no raw body/image payload",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/current/population.json",
+      "bytes": 6581,
+      "sha256": "2902d3516a67734a7ac8942bc4e10e76965ab014f14042afa32675ea5a517416",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Current complete writer bindings, populations, cases, source/read scope or PDF image hashes; no raw body/image payload",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/current/source-read-manifest.json",
+      "bytes": 50089,
+      "sha256": "aad6858271e2e627c1056ad04031efc1075e410ba4874ec2e7209eb09dfa148f",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Current complete writer bindings, populations, cases, source/read scope or PDF image hashes; no raw body/image payload",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/initial/FINAL-MANIFEST.json",
+      "bytes": 35699,
+      "sha256": "b36bcfb6401c0e3d9a6c7bff917bf7e5a4e30c7f4b1c1a6f040f2631fec85f63",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Original writer quote/scope records and exact manifest; incorrect anchors remain historical with independent findings attached",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/initial/source-groups.json",
+      "bytes": 155948,
+      "sha256": "8a486c503594120d5d650bfe46142d29636c66157bd72b5c9c5229648d33d98f",
+      "original_evidence_date": "2026-11-16",
+      "purpose": "Original writer quote/scope records and exact manifest; incorrect anchors remain historical with independent findings attached",
+      "payload_unchanged": true
+    }
+  ],
+  "country_source_files_unchanged": [
+    {
+      "path": "skills/sweden/README.md",
+      "bytes": 3579,
+      "sha256": "ac38edac0a2e2a5bf56de329bbe83aa87e9bfcb6e89c4a16bf047cfed4266d01",
+      "git_blob": "aa48b5c78ed66b1bee7576c9c3f97a82cc15b61d"
+    },
+    {
+      "path": "skills/sweden/references.md",
+      "bytes": 7871,
+      "sha256": "f248c2ebd8811ee44b7f0310e9203063f56b061b29ffd376fe1bf7cdc9d7f2cf",
+      "git_blob": "c67278f7bbcdba4ee32282a82f4e7e620179a702"
+    },
+    {
+      "path": "skills/sweden/se-benefits-and-allowances.md",
+      "bytes": 27724,
+      "sha256": "9235d598f7d87c85460e8fb6a690588d9678fc39db79f2acf04a76f6d2ac26a3",
+      "git_blob": "949dcd7c229fac303d74645040ddbfb46af23518"
+    },
+    {
+      "path": "skills/sweden/se-capital-gains.md",
+      "bytes": 18707,
+      "sha256": "0d4133bfab0265029d386c733f0579ba9f3aaa17857bd2db9e4877bf4a6069ad",
+      "git_blob": "7d2ac3ded581845d05ff453a298afe7e20693cbc"
+    },
+    {
+      "path": "skills/sweden/se-closely-held-company-312.md",
+      "bytes": 25960,
+      "sha256": "40d967f4baf06ade28a3839ec5daae2e64a33015ad4a62d1719d1957a73e401a",
+      "git_blob": "d10c28a511b572ec74c4eeee978300dae332acb5"
+    },
+    {
+      "path": "skills/sweden/se-corporate-tax.md",
+      "bytes": 30974,
+      "sha256": "2d8680dc53256d31dde369871f0ae64b5d577c3ddde3bac0a93df1fa606ddf32",
+      "git_blob": "5ee4a880e0e24ecbe0cc68eea63cdfeeac32b9d7"
+    },
+    {
+      "path": "skills/sweden/se-cross-border.md",
+      "bytes": 34450,
+      "sha256": "e223c2f92ae7c242ebacb58a8fe69cb1b525e48d921b7f140781d6ebacb2586c",
+      "git_blob": "f4678c89530ac553705d65a3fe0b35357470100a"
+    },
+    {
+      "path": "skills/sweden/se-employee-income-tax.md",
+      "bytes": 20099,
+      "sha256": "eba9499401a9e76648e4b920cf895c04b756ef5c0872fd3b8412d6a6dae3c3b8",
+      "git_blob": "a7141de21aac8a0d4519f14ec3d5fb30efb04dc4"
+    },
+    {
+      "path": "skills/sweden/se-income-tax.md",
+      "bytes": 32409,
+      "sha256": "fb84014df38dcb794d243535d6e16389dda5ceb6a5189623f0927e19cd08d768",
+      "git_blob": "9e643230de93f7853c9bfe739b2b48cb186b60d5"
+    },
+    {
+      "path": "skills/sweden/se-social-contributions.md",
+      "bytes": 29486,
+      "sha256": "340a12b6f517e7bce583833d82f15407ce8c284004c675274853256773b57222",
+      "git_blob": "26aaafd87ef5db0d91c2282a4074de593f175dba"
+    },
+    {
+      "path": "skills/sweden/se-transfer-pricing.md",
+      "bytes": 25459,
+      "sha256": "11564a2cd4996c99568a2dbeaae5751674b168f314164d52eafa1c0f135bc2e9",
+      "git_blob": "5de59627affa2f24d9299e3e8e533bc14353579a"
+    },
+    {
+      "path": "skills/sweden/sweden-bookkeeping.md",
+      "bytes": 52248,
+      "sha256": "886a06efcf2e1764ab9e0d9a459181ecd3007abc294d8b9d2855b8775f9a2a7c",
+      "git_blob": "64315a360e1ff45cb66aa099f9ea0fbbacffefc3"
+    },
+    {
+      "path": "skills/sweden/sweden-crypto-tax.md",
+      "bytes": 42342,
+      "sha256": "e2706a849bb69aea83ca2e71ca2ee6dbb7ee2aba07bb0e23d5d867c84a4f55a3",
+      "git_blob": "db8b3e03c34f96f5fe9f2b6c62f8ceed45fb765f"
+    },
+    {
+      "path": "skills/sweden/sweden-financial-statements.md",
+      "bytes": 85891,
+      "sha256": "4cf079e2eb07dc1b8be338d62125770854a56eb50ef0b4e06cdd3b4f9ceb50dd",
+      "git_blob": "0415d839eb2122572d9e689d556885a3f71dc032"
+    },
+    {
+      "path": "skills/sweden/sweden-payroll.md",
+      "bytes": 29235,
+      "sha256": "5c9db4cd176fc531935c78dc5a7610bb049ccc3dd552234d3312e9ba42e1ff68",
+      "git_blob": "5e1e8d4e2e3181af7b2906661add3331b2773306"
+    },
+    {
+      "path": "skills/sweden/sweden-vat-return.md",
+      "bytes": 75567,
+      "sha256": "d59369a3a09eb304d8e0f000651ae66f5c11a6e9c9347345c1555bbcff5b76ef",
+      "git_blob": "a2f7e1f1465f3d3d6f56ac84298d77c775647091"
+    }
+  ],
+  "exclusions": "Raw authority HTML/text/PDF/image captures, source archives, cookie/session material, pycache, candidate/original file copies and superseded duplicate ledger/map versions remain local. Immutable manifests retain metadata references to excluded local files; a reference is not an included payload.",
+  "freshness": "Initial complete review plus actual12group corrective delta.228unchangedcontexts reuse valid prior actual native reading; no fresh all-source claim.",
+  "accountant_approval": false,
+  "country_complete": false
+}

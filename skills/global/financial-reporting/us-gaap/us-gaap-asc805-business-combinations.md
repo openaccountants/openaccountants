@@ -1,249 +1,177 @@
 ---
 name: us-gaap-asc805-business-combinations
-description: US GAAP accounting for business combinations under ASC 805 (Business Combinations) and the related goodwill guidance in ASC 350 (Intangibles — Goodwill and Other). Covers the acquisition method — identify the acquirer, determine the acquisition date, recognize and measure the identifiable assets acquired, liabilities assumed and any non-controlling interest at fair value, and recognize goodwill or a bargain purchase gain — plus consideration transferred and contingent consideration, acquisition-related costs, the measurement period, step acquisitions, recognition exceptions, the definition of a business, in-process R&D, and subsequent goodwill impairment under ASC 350-20. Produces recognition conclusions, journal entries, and a reviewer brief. Issued as the US GAAP edition of the business-combinations topic; see ifrs3-business-combinations for the IFRS edition. MUST load alongside financial-reporting-workflow-base.
-version: 0.1
+description: "ASC 805 acquisition working-paper source-recovery and amendment-basis computations. Covers acquired revenue-contract balances and measurement-period checks from official FASB Updates; broader legacy purchase accounting and goodwill topics are preserved but withheld pending current authoritative ASC access. Load financial-reporting-workflow-base."
+version: 0.3
 jurisdiction: US
-tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-11-16
 depends_on:
   - financial-reporting-workflow-base
-category: financial-reporting
+category: financial-statements
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: financial-statements
+domain: financial-reporting
+type: computation
+standard: "ASC 805 Business Combinations (ASU 2021-08 amendment basis)"
+effective_date: 2023-12-16
+source_checked: 2026-11-16
 ---
 
-# US GAAP Asc805 Business Combinations
+# US GAAP ASC 805 business combinations v0.3
 
-## US GAAP Business Combinations — ASC 805 v0.1
+**General reference only.** Working papers and reviewer brief only; not an audit or assurance opinion. Tier 2; not approved by an accountant.
 
-US GAAP Business Combinations — ASC 805 v0.1
+## Scope
 
-## What this file is
+**Standard and effective-date basis:** ASC 805 Business Combinations (ASU 2021-08 amendment basis); effective-date key **2023-12-16**. This is the first possible fiscal-year start after 15 December 2023 for entities other than public business entities, not a universal transaction date. ASU 2021-08 applies to PBEs for fiscal years beginning after 15 December 2022 and to other entities after 15 December 2023, including interim periods therein, prospectively to combinations after adoption. Early adoption is permitted, with the specified acquisition-year treatment if adopted in an interim period; establish the actual adoption date (805-20-65-3). [Official ASU 2021-08](https://storage.fasb.org/ASU%202021-08.pdf).
 
-**This is a content skill that loads on top of `financial-reporting-workflow-base`.** It supplies the recognition, measurement, presentation, and disclosure rules for business combinations under US GAAP, and the subsequent accounting for goodwill under ASC 350. The base supplies the two-layer output contract, the journal-entry format, and the self-checks.
+Load `financial-reporting-workflow-base`. This issuer/transaction worksheet retains the complete original topic coverage, but separates the actually read amendment-basis computations from unrecovered current authoritative guidance. It does not cover the holder's accounting, control or valuation methodologies beyond the explicit steps.
 
-- **Standard currency** — ASC 805 as effective, incorporating ASU 2017-01 (clarifying the definition of a business), ASU 2017-04 (simplifying the goodwill impairment test by eliminating Step 2), ASU 2014-02 / 2014-18 (the private-company and not-for-profit goodwill and intangible alternatives in ASC 350-20-15-4 and 805-20-25-29), and ASU 2021-08 (contract assets and contract liabilities acquired in a business combination measured under ASC 606, not at fair value). Confirm no entity-specific industry guidance overrides.  _(ASC 350-20-15-4, ASC 805-20-25-29)_
-- **Scope** — ASC 805 applies to a transaction or other event in which an acquirer obtains control of one or more businesses (`ASC 805-10-15-3`). It does not apply to: the formation of a joint venture; the acquisition of an asset or group of assets that does not constitute a business (an asset acquisition under `ASC 805-50`); combinations of entities under common control (`ASC 805-50`); and combinations of not-for-profit entities, which follow `ASC 958-805`.  _(ASC 805-10-15-3; ASC 805-50; ASC 958-805)_
+**Source boundary for 2026 work.** This is a source-bounded research and computation worksheet. Current authoritative ASC text was attempted through the official site and an ordinary browser on 15 November 2026 but did not render. The FASB amendments below were opened and their stated operative paragraphs read. Each Update expressly distinguishes itself from the authoritative Codification; reading an ASU does not establish that every intervening amendment is incorporated. Consequently, the method explains only the stated amendment-basis checks. Do not use it to sign a current-ASC conclusion until the authoritative, entity-applicable text is recovered. A further official ASC web attempt on 16 November 2026 returned no operative text. Broader unresolved rules are individually reserved under Sources.
 
-## Section 1 — Scope statement
+## Ask the client first
 
-This skill covers:
+- Reporting-period start, entity type, adopted Updates and any early adoption of ASU 2025-03.
+- Complete agreement, control/business/acquirer analysis, prior interest, NCI and separate-transactions assessment.
+- Acquired customer contracts, transaction-price allocation, performance history, modifications, collectibility and any Topic 606 expedients.
+- Provisional purchase-price allocation, valuation information dates, remaining measurement-period items and related depreciation effects.
+- Every consideration, earn-out/employment, tax, benefit, lease, indemnity, intangible and goodwill fact for the withheld full-ASC handoff.
 
-- The acquisition method of `ASC 805-10`, `805-20`, and `805-30` — the four steps.
-- Consideration transferred at fair value, including contingent consideration and its subsequent measurement.
-- Acquisition-related (transaction) costs.
-- The recognition and measurement **exceptions** to the fair-value principle.
-- The measurement period and retrospective measurement-period adjustments.
-- Step (business combination achieved in stages) acquisitions and the remeasurement of a previously held equity interest.
-- Bargain purchases.
-- The definition of a business and the ASU 2017-01 screen test (asset acquisition vs. business combination).
-- In-process research and development (IPR&D).
-- Subsequent measurement of goodwill: the ASC 350-20 impairment-only model and the ASC 350-20 private-company/NFP amortization alternative.
+## The method, step by step
 
-This skill does NOT cover: asset acquisitions (`ASC 805-50`), common-control transactions (`ASC 805-50`), NFP combinations (`ASC 958-805`), consolidation procedures and the control assessment themselves (`ASC 810`), or pushdown accounting beyond a reference. It defers the IFRS treatment to `ifrs3-business-combinations`.
-
-## Section 2 — Reference layer (Layer A): the acquisition method
-
-- **Acquisition method requirement** — Every business combination in scope is accounted for by applying the acquisition method. The method has four steps.  _(ASC 805-10-05-4, 805-10-25-1)_
-
-### Step 1 — Identify the acquirer — `ASC 805-10-25-4` to `25-5`
-
-- **Identify the acquirer** — The acquirer is the combining entity that obtains control of the acquiree. Control is assessed under the consolidation guidance in ASC 810 — either the voting interest model (a controlling financial interest, generally > 50% of voting rights) or, for a variable interest entity, the primary-beneficiary model.  _(ASC 805-10-25-4 to 25-5; ASC 805-10-25-5; ASC 810)_
-- **Acquirer indicators when ASC 810 not clear** — If ASC 810 does not clearly identify the acquirer, apply the indicators in `ASC 805-10-55-11` to `55-15`: the entity transferring cash/assets or incurring liabilities is usually the acquirer; the entity issuing equity is usually the acquirer but watch for a reverse acquisition (the legal acquiree is the accounting acquirer); relative voting rights, the existence of a large minority interest, governing-body composition, senior management, and relative size. In a combination effected primarily by exchanging equity, also consider terms of the exchange.  _(ASC 805-10-55-11 to 55-15)_
-
-⚑ AUDIT FLASH POINT — reverse acquisitions. When the legal subsidiary (the entity issuing no shares, e.g. a private operating company merging into a public shell or SPAC) is the accounting acquirer, the accounting is inverted: the legal parent's financial statements are restated as a continuation of the legal subsidiary. Misidentifying the acquirer reverses which net assets are fair-valued and which carry over at book value. Document the `ASC 805-10-55-11`–`55-15` indicators and the SPAC/de-SPAC analysis.
-
-### Step 2 — Determine the acquisition date — `ASC 805-10-25-6` to `25-7`
-
-- **Acquisition date definition** — The acquisition date is the date the acquirer obtains control of the acquiree — generally the closing date on which the acquirer legally transfers consideration, acquires the assets, and assumes the liabilities.  _(ASC 805-10-25-6)_
-- **Control obtained earlier or later than closing** — Control can be obtained on a date earlier or later than closing if so specified by written agreement; document the facts.  _(ASC 805-10-25-7)_
-
-The acquisition date fixes the measurement date for fair values, the date the previously held interest is remeasured, and the start of the measurement period. It also determines which results are included in post-combination consolidated earnings.
-
-### Step 3 — Recognize and measure identifiable assets, liabilities, and NCI — `ASC 805-20`
-
-- **Recognition principle** — As of the acquisition date, the acquirer recognizes, separately from goodwill, the identifiable assets acquired, the liabilities assumed, and any non-controlling interest (NCI) in the acquiree. To qualify, an item must meet the definition of an asset/liability in the conceptual framework at the acquisition date and be part of the business combination (not a separate transaction).  _(ASC 805-20-25-1; ASC 805-10-25-20 to 25-22)_
-- **Identifiable intangibles recognition** — Identifiable intangibles are recognized apart from goodwill if they are separable OR arise from contractual-legal rights. Examples: customer relationships, trade names, technology, order backlog, non-compete agreements.  _(ASC 805-20-25-10)_
-- **Measurement principle** — Identifiable assets acquired and liabilities assumed are measured at their acquisition-date fair values (per ASC 820).  _(ASC 805-20-30-1)_
-- **NCI measurement** — Under US GAAP, NCI must be measured at its acquisition-date fair value — there is no proportionate-share option. This forces the full-goodwill method.  _(ASC 805-20-30-1)_
-
-⚑ AUDIT FLASH POINT — fair value of identifiable intangibles. The split between identifiable intangibles (which amortize and depress post-deal earnings) and goodwill (which does not amortize for public entities) is the most litigated number in a purchase-price allocation. Customer-relationship and technology valuations rely on multi-period excess earnings / relief-from-royalty models with sensitive growth, attrition, and discount-rate inputs. Engage a qualified valuation specialist and document the model, inputs, and the reasonableness check (the implied weighted-average return on assets should reconcile to the WACC and the internal rate of return).
-
-#### Recognition and measurement exceptions (`ASC 805-20-25-16` to `25-28` and `-30-10` onward)
-
-- **Income taxes exception** — Deferred taxes recognized and measured under ASC 740, not at fair value.  _(ASC 805-740)_
-- **Employee benefits exception** — Assets/liabilities measured under the relevant benefit standard.  _(ASC 715, ASC 712)_
-- **Indemnification assets exception** — Recognized on the same basis as the indemnified item, subject to a collectibility assessment.  _(ASC 805-20-25-27, -30-18)_
-- **Reacquired rights exception** — Measured on the basis of the remaining contractual term, ignoring renewals; any settlement gain/loss is separate.  _(ASC 805-20-30-20)_
-- **Share-based payment awards exception** — Replacement awards measured under ASC 718; portion attributable to pre-combination service is consideration, the rest is post-combination expense.  _(ASC 805-30-30-9 to -30-13)_
-- **Assets held for sale exception** — Measured at fair value less costs to sell under ASC 360.  _(ASC 805-20-30-22)_
-- **Contingencies exception** — Recognized at fair value if fair value is determinable; otherwise apply ASC 450 recognition criteria.  _(ASC 805-20-25-18A to 25-20B, -30-23)_
-- **Contract assets / contract liabilities exception (ASU 2021-08)** — Revenue contracts acquired are recognized and measured as if the acquirer had originated them under ASC 606 (not at fair value), so deferred revenue is no longer 'haircut' to fair value.  _(ASC 805-20-30-28)_
-- **Leases exception** — The acquirer retains the acquiree's lease classification (unless modified) and measures the lease liability at the present value of remaining payments; a right-of-use asset is adjusted for off-/above-market terms.  _(ASC 842)_
-
-### Step 4 — Recognize and measure goodwill or a bargain-purchase gain — `ASC 805-30`
-
-- **Goodwill formula** — Goodwill = consideration transferred (at fair value) + acquisition-date fair value of any NCI + acquisition-date fair value of the acquirer's previously held equity interest (step acquisition) - acquisition-date net of the identifiable assets acquired and liabilities assumed  _(ASC 805-30-30-1)_
-- **Bargain purchase treatment** — If the residual is negative, the acquirer has a bargain purchase. Before recognizing a gain, the acquirer must reassess whether it has correctly identified all assets/liabilities and remeasure the amounts. If a residual gain remains, recognize it in earnings (P&L) on the acquisition date, attributed to the acquirer.  _(ASC 805-30-25-4; ASC 805-30-25-2 to 25-3)_
-
-⚑ AUDIT FLASH POINT — bargain purchase gain. A day-one gain through P&L invites scrutiny: it usually signals an error in fair values (overvalued assets, omitted liabilities, or an undervalued NCI/consideration) rather than a genuine bargain. Genuine bargains exist (forced sellers, distressed sales) but require documented evidence of *why* the seller accepted less than fair value, plus the mandatory reassessment.
-
-### Consideration transferred — `ASC 805-30-30-7`
-
-- **Consideration transferred measurement** — Measured at acquisition-date fair value — the sum of the fair values of assets transferred, liabilities incurred to former owners, and equity interests issued by the acquirer. Equity issued is measured at its acquisition-date fair value.  _(ASC 805-30-30-7)_
-
-### Contingent consideration ("earn-outs") — `ASC 805-30-25-5` to `25-7`, `-30-8`, `-35-1`
-
-- **Contingent consideration recognition and classification** — Recognized at acquisition-date fair value as part of consideration transferred, and classified as a liability or equity under ASC 480 / ASC 815.  _(ASC 805-30-25-6)_
-- **Equity-classified contingent consideration** — Not remeasured; settlement is accounted for within equity.  _(ASC 805-30-35-1(a))_
-- **Liability- (or asset-) classified contingent consideration** — Remeasured to fair value each period through earnings (P&L) until settled.  _(ASC 805-30-35-1(b))_
-
-⚑ AUDIT FLASH POINT — contingent-consideration classification and remeasurement. Liability vs. equity classification under `ASC 480`/`815` determines whether earn-out value changes hit P&L. Fair value of the earn-out (typically a Monte Carlo / option model on revenue/EBITDA targets) is a recurring Level 3 estimate with disclosure obligations under `ASC 820`. Distinguish contingent consideration from compensation: if the earn-out is forfeited when a selling shareholder ceases employment, it is post-combination compensation expense, not consideration (`ASC 805-10-55-24` to `55-25`).
-
-### Acquisition-related costs — `ASC 805-10-25-23`
-
-- **Acquisition-related costs treatment** — Expensed as incurred in the periods the services are received — advisory, legal, accounting, valuation, finder's fees, and general administrative costs. They are not part of consideration and do not go to goodwill. (Costs to issue debt or equity are accounted for under the relevant financial-instrument guidance — debt issuance costs against the debt, equity issuance costs against equity — not expensed under this rule.)  _(ASC 805-10-25-23)_
-
-### Measurement period — `ASC 805-10-25-13` to `25-19`
-
-- **Provisional amounts and measurement period** — If the initial accounting is incomplete at the reporting-period end, the acquirer records provisional amounts. During the measurement period — the time needed to obtain information about facts that existed at the acquisition date, not to exceed one year from the acquisition date — the acquirer retrospectively adjusts provisional amounts (with a corresponding adjustment to goodwill) for new information about acquisition-date facts.  _(ASC 805-10-25-13 to 25-17)_
-- **Post-acquisition-date events and current-period recognition** — Adjustments arising from events after the acquisition date are not measurement-period adjustments — they go through earnings. Measurement-period adjustments are recognized in the current period (in the reporting period in which they are determined), with the effect on prior periods disclosed — they are not restated retrospectively to prior issued statements.  _(ASC 805-10-25-17A (per ASU 2015-16))_
-
-### Business combination achieved in stages (step acquisition) — `ASC 805-10-25-9` to `25-10`
-
-- **Step acquisition remeasurement** — When the acquirer held an equity interest in the acquiree before obtaining control, it remeasures that previously held interest to its acquisition-date fair value and recognizes the resulting gain or loss in earnings (P&L). Any amounts previously recognized in OCI relating to that interest are reclassified as if the interest had been disposed of. The remeasured fair value of the prior interest is then included in the goodwill computation (Step 4).  _(ASC 805-10-25-10)_
-
-### Definition of a business and the screen test — `ASC 805-10-55-3A` to `55-9` (ASU 2017-01)
-
-- **Definition of a business** — A business consists of inputs and substantive processes applied to those inputs that together contribute to the ability to create outputs.  _(ASC 805-10-55-3A to 55-9)_
-- **Screen test** — Apply the screen test first: if substantially all of the fair value of the gross assets acquired is concentrated in a single identifiable asset or group of similar assets, the set is not a business → account for it as an asset acquisition under ASC 805-50 (cost allocated, no goodwill, transaction costs capitalized). If the screen is not met, assess whether the set has an input and a substantive process.  _(ASC 805-10-55-5A; ASC 805-50; ASC 805-10-55-5D onward)_
-
-### In-process research and development (IPR&D)
-
-- **IPR&D recognition and subsequent treatment** — Acquired IPR&D is recognized as an indefinite-lived intangible asset at fair value, not expensed at acquisition. It is not amortized while indefinite-lived; it is tested for impairment until the project is completed (then amortized over its useful life) or abandoned (then written off).  _(ASC 805-20-55-2 to 55-3; ASC 350-30)_
-
-### Public-entity (and default) model — impairment-only
-
-- **Goodwill not amortized; assignment to reporting units** — Goodwill is not amortized. It is assigned to reporting units and tested for impairment at least annually, and more frequently on a triggering event.  _(ASC 350-20-35-1; ASC 350-20-35-33 to -35-44; ASC 350-20-35-28 to -35-30)_
-- **Optional qualitative assessment (Step 0)** — An optional qualitative assessment ('Step 0') may be performed first; if it is not more likely than not that the reporting unit's fair value is below its carrying amount, no further testing is needed.  _(ASC 350-20-35-3 to -35-3G)_
-- **Quantitative test (post-ASU 2017-04 — single step)** — Compare the reporting unit's fair value to its carrying amount (including goodwill). If carrying amount exceeds fair value, recognize an impairment loss equal to that excess, capped at the goodwill allocated to the reporting unit. The old 'Step 2' (implied-fair-value-of-goodwill) computation is eliminated.  _(ASC 350-20-35-2, -35-8A)_
-- **No reversal of goodwill impairment** — Goodwill impairment losses are never reversed.  _(ASC 350-20-35-13)_
-
-### Private-company / not-for-profit alternative — `ASC 350-20-15-4` (ASU 2014-02 / 2014-18)
-
-- **Amortization election** — An eligible private company or NFP may elect to amortize goodwill on a straight-line basis over 10 years, or a shorter useful life if more appropriate.  _(ASC 350-20-35-63)_
-- **Triggering-event-only testing** — Test for impairment only upon a triggering event (not annually), at the entity or reporting-unit level by policy election, using a single-step measure (carrying over fair value, capped at goodwill).  _(ASC 350-20-35-66 onward)_
-- **Subsuming customer-related intangibles and non-compete agreements** — A related alternative (ASU 2014-18) lets such entities subsume customer-related intangibles that are not separable and non-compete agreements into goodwill rather than recognizing them separately. There is no IFRS equivalent to either alternative.  _(ASU 2014-18)_
-
-⚑ AUDIT FLASH POINT — goodwill impairment timing and reporting-unit definition. Auditors challenge (a) whether a triggering event was identified timely (a sustained share-price decline below book value, lost major customer, adverse regulation), and (b) how goodwill was assigned to reporting units and whether units were aggregated to avoid an impairment. Document the reporting-unit determination, the fair-value methodology (income vs. market approach), and the headroom sensitivity.
-
-## Section 5 — Executable layer (Layer B): the procedure
-
-0. **Confirm business combination** — Confirm the transaction is a business combination — apply the screen test / definition of a business (§3, 805-10-55-3A+). If it is an asset acquisition, stop and apply ASC 805-50 (no goodwill; costs capitalized).
-0. **Identify the acquirer** — Identify the acquirer (Step 1 / §2, 805-10-25-4, 810 control). Check for a reverse acquisition.
-0. **Determine acquisition date** — Determine the acquisition date (Step 2 / §2, 805-10-25-6).
-0. **Build consideration transferred** — Build consideration transferred at fair value (§3, 805-30-30-7): cash + assets + equity issued + acquisition-date fair value of contingent consideration (classified liability/equity). Strip out amounts that are really post-combination compensation or settlement of pre-existing relationships.
-0. **Step acquisition remeasurement** — If a step acquisition, remeasure the previously held interest to fair value; book the gain/loss to P&L (§3, 805-10-25-10).
-0. **Recognize and fair-value identifiable assets/liabilities** — Recognize and fair-value the identifiable assets and liabilities (Step 3 / §2, 805-20-30-1); apply each recognition/measurement exception (income tax, deferred revenue per ASU 2021-08, leases, etc.).
-0. **Measure NCI at fair value** — Measure NCI at fair value (§2, 805-20-30-1) — full-goodwill method is mandatory under US GAAP.
-0. **Compute goodwill** — Compute goodwill (Step 4 / §2, 805-30-30-1). If negative, reassess, then recognize any remaining bargain-purchase gain in P&L.
-0. **Expense acquisition-related costs** — Expense acquisition-related costs as incurred (§3, 805-10-25-23).
-0. **Book consolidation journal entry** — Book the consolidation journal entry (base §3 format); record provisional amounts if the accounting is incomplete and open the measurement period (§3).
-0. **Subsequent remeasurement and impairment testing** — Subsequently: remeasure liability-classified contingent consideration through P&L (§3); test goodwill for impairment under ASC 350-20 (§4), or amortize it if the private-company alternative is elected.
-0. **Produce disclosure checklist and reviewer brief** — Produce the disclosure checklist (§7) and reviewer brief with every flash point.
-
-### Worked example (illustrative)
-
-Acquirer buys 80% of Target for $800,000 cash on the acquisition date. The fair value of Target's identifiable net assets is $700,000. The acquisition-date fair value of the 20% NCI is $190,000. The acquirer held no prior interest. Acquisition-related advisory and legal costs were $25,000 (paid in cash).
-
-- **Goodwill — US GAAP (full-goodwill, mandatory)** — Goodwill = consideration 800,000 + NCI at FV 190,000 - identifiable net assets 700,000 = 290,000  _(ASC 805-30-30-1)_
-
-Acquisition date — consolidate Target via the acquisition method — driving rule: ASC 805-30-30-1
-  Dr  Identifiable net assets (at fair value)     700,000
-  Dr  Goodwill                                     290,000
-      Cr  Cash                                          800,000
-      Cr  Non-controlling interest (equity)             190,000
-  (memo: goodwill = 800,000 + 190,000 - 700,000 = 290,000; NCI at FV per ASC 805-20-30-1.
-   Debits 990,000 = Credits 990,000 ✓)
-
-Acquisition date — acquisition-related costs — driving rule: ASC 805-10-25-23
-  Dr  Acquisition expense (P&L, operating)          25,000
-      Cr  Cash                                           25,000
-  (memo: advisory + legal expensed as incurred, not capitalized to goodwill;
-   debits = credits ✓)
-
-Contrast with the IFRS partial-goodwill option (not available under US GAAP — shown so the divergence is concrete). If NCI were instead measured at the 20% proportionate share of identifiable net assets = 20% × 700,000 = 140,000:
-
-Goodwill (partial) = 800,000 + 140,000 - 700,000 = 240,000
-
-US GAAP cannot use this; the $50,000 difference (290,000 − 240,000) is the goodwill attributable to the NCI, which US GAAP requires the acquirer to recognize (full goodwill). See §6.
-
-Suppose instead the acquirer had previously held a 10% interest in Target carried at $60,000, whose acquisition-date fair value is $95,000, and now buys a further 70% for cash giving control. The prior interest is remeasured to $95,000, booking a $35,000 gain to P&L (ASC 805-10-25-10):
-
-Acquisition date — remeasure previously held interest — driving rule: ASC 805-10-25-10
-  Dr  Investment in Target (equity interest)         35,000
-      Cr  Gain on remeasurement of prior interest (P&L)  35,000
-  (memo: 95,000 FV - 60,000 carrying amount = 35,000; debits = credits ✓)
-
-The $95,000 remeasured fair value then enters the goodwill formula as the 'previously held equity interest' term in Step 4.
-
-Suppose the deal also includes an earn-out with an acquisition-date fair value of $120,000, classified as a liability under ASC 480. It is part of consideration transferred (it would increase goodwill), and is remeasured each period through P&L:
-
-Acquisition date — recognize contingent consideration — driving rule: ASC 805-30-25-5
-  Dr  Goodwill                                      120,000
-      Cr  Contingent consideration liability            120,000
-  (memo: earn-out at acquisition-date fair value; classified liability per ASC 480;
-   debits = credits ✓)
-
-Subsequent period — fair value rises to 150,000 — driving rule: ASC 805-30-35-1(b)
-  Dr  Fair value loss on contingent consideration (P&L)  30,000
-      Cr  Contingent consideration liability                  30,000
-  (memo: 150,000 - 120,000 = 30,000 through earnings, NOT goodwill; debits = credits ✓)
-
-⚑ AUDIT FLASH POINT — full vs. partial goodwill changes the balance sheet and future impairment. Under US GAAP the mandatory full-goodwill method records the higher goodwill ($290,000 here) and a higher NCI. A dual-reporter whose IFRS parent elected the partial-goodwill option for the same deal will show different goodwill, NCI, and — on impairment — different loss attribution. Reconcile the two in the reviewer brief.
-
-## Section 6 — Divergence from IFRS (IFRS 3 / IAS 36)
-
-ASC 805 and IFRS 3 are substantially converged on the acquisition method, but several differences change the numbers. A dual-reporter must check each:
-
-**Divergence from IFRS (IFRS 3 / IAS 36) comparison table**  _(ASC 805-20-30-1; IFRS 3.19; ASC 350-20-15-4; IAS 36.80; IAS 36.18, .104; IAS 36.124; IAS 36.114; IFRS 3.58; ASC 805-10-25-23; IFRS 3.53; ASU 2021-08; ASU 2015-16; IFRS 3.45–.49)_
-
-| Area | US GAAP (ASC 805 / ASC 350) | IFRS (IFRS 3 / IAS 36) |
-| --- | --- | --- |
-| **NCI measurement** | NCI **must** be at **fair value** → **full goodwill** only (`ASC 805-20-30-1`) | **Per-transaction choice**: fair value (full goodwill) **or** proportionate share of identifiable net assets (partial goodwill) (`IFRS 3.19`) |
-| **Goodwill — subsequent** | Impairment-only for public entities; **private-company/NFP alternative** permits **amortization ≤ 10 years** + triggering-event-only testing (`ASC 350-20-15-4`) | Impairment-only for **all** entities; **no amortization option** |
-| **Goodwill impairment unit** | **Reporting unit** (operating segment or one level below) | **Cash-generating unit (CGU)** or group of CGUs (`IAS 36.80`) |
-| **Goodwill impairment measure** | Single-step: carrying amount of reporting unit **over** its fair value, **capped at goodwill** (post-ASU 2017-04) | Recoverable amount = **higher of** fair value less costs of disposal **and** value in use; loss first eliminates goodwill, then pro-rata to other CGU assets (`IAS 36.18`, `.104`) |
-| **Reversal of impairment** | Goodwill impairment **never reversed**; most other asset impairments not reversed | Goodwill impairment **never reversed** (`IAS 36.124`); but **other** asset impairments **may be reversed** (`IAS 36.114`) |
-| **Definition of a business** | Screen test + framework (ASU 2017-01) | **Optional concentration test** + framework (2018 amendments) — converged but cited separately |
-| **Contingent consideration — subsequent** | Liability-classified → P&L; equity-classified → not remeasured | Same (`IFRS 3.58`): financial-liability/asset → P&L; equity → not remeasured |
-| **Acquisition costs** | Expensed as incurred (`805-10-25-23`) | Expensed as incurred (`IFRS 3.53`) — converged |
-| **Acquired deferred revenue** | Measured under ASC 606 as if originated (ASU 2021-08) | Measured at fair value (no equivalent amendment) — a divergence |
-| **Measurement period** | Up to 1 year; adjustments in current period with prior-period effect disclosed (ASU 2015-16) | Up to 1 year; adjustments **retrospective** to the acquisition date (`IFRS 3.45`–`.49`) |
-
-Run `ifrs3-business-combinations` in parallel for dual-reporters and present both answers (base §2).
-
-## Section 7 — Disclosure checklist — `ASC 805-10-50`, `805-30-50`, `350-20-50`
-
-- **Disclosure checklist items** — Trigger and produce as relevant: - [ ] Name and description of the acquiree; acquisition date; percentage of voting interests acquired; primary reasons for the combination (`ASC 805-10-50-2`) - [ ] Acquisition-date fair value of **total consideration** transferred, by major class (cash, equity, contingent consideration) (`805-30-50-1`) - [ ] **Contingent consideration** arrangements: amount recognized, range of outcomes, basis for the estimate; subsequent fair-value changes (`805-30-50-1(c)`, `-50-4`) - [ ] Amounts recognized for each major class of **assets acquired and liabilities assumed** (`805-20-50-1`) - [ ] **Goodwill** recognized and the factors that make up the goodwill; expected tax-deductible portion (`805-30-50-1(d)`) - [ ] For a **bargain purchase**: the gain, the line item, and why it arose (`805-30-50-1(f)`) - [ ] **NCI** in the acquiree recognized and the measurement basis/valuation technique (`805-20-50-1(e)`) - [ ] **Step acquisition:** acquisition-date fair value of the previously held interest and the **remeasurement gain/loss** (`805-10-50-2(g)`) - [ ] Acquisition-related **costs expensed** and the line item (`805-10-50-2(f)`) - [ ] **Measurement-period** adjustments and the nature/amount (`805-10-50-4A` / ASU 2015-16) - [ ] Acquiree **revenue and earnings** since acquisition and **supplemental pro forma** revenue/earnings as if combined from the start of the period (`805-10-50-2(h)`) - [ ] **Goodwill rollforward**: gross, accumulated impairment, by reportable segment; impairment losses recognized (`350-20-50-1`, `-50-2`) - [ ] If the **private-company alternative** is elected: amortization method/period and impairment policy (`350-20-50-3A`)  _(ASC 805-10-50, 805-30-50, 350-20-50)_
-
-## Section 8 — Topic self-checks (in addition to base §7)
-
-- [ ] Confirmed a **business** (screen test applied) vs. an asset acquisition; if asset acquisition, no goodwill and costs capitalized
-- [ ] **Acquirer** identified via `ASC 810` control; reverse-acquisition possibility checked
-- [ ] **Acquisition date** = date control obtained, tied to `805-10-25-6`
-- [ ] Identifiable assets/liabilities at **fair value**; each recognition/measurement **exception** applied (tax, deferred revenue per ASU 2021-08, leases, etc.)
-- [ ] **NCI at fair value** (full goodwill) — confirmed no proportionate-share shortcut used
-- [ ] **Consideration** at fair value; contingent consideration classified (liability/equity) and fair-valued; compensation stripped out
-- [ ] **Goodwill** = consideration + NCI + prior-interest FV − identifiable net assets; arithmetic shown and balanced
-- [ ] Negative residual → **reassessed**, then bargain-purchase **gain to P&L**
-- [ ] Acquisition-related costs **expensed**, not capitalized to goodwill
-- [ ] Step acquisition → prior interest **remeasured to FV**, gain/loss to P&L
-- [ ] **Measurement period** opened for provisional amounts; ≤ 1 year; adjustments treated per ASU 2015-16
-- [ ] Subsequent: liability contingent consideration remeasured to P&L; goodwill impairment per `ASC 350-20` (or amortization if alternative elected)
-- [ ] Divergence from IFRS 3 / IAS 36 checked for dual-reporters (NCI method, goodwill amortization, impairment model)
-
-## Section 9 — Disclaimer
-
-Provides computational and interpretive guidance on ASC 805 / ASC 350 only. Not an audit and not assurance. Business-combination accounting turns heavily on entity-specific facts and significant judgment — fair-value measurement of intangibles and contingent consideration, identification of the acquirer, the business-vs-asset determination, and goodwill impairment all require specialist input. Have outputs reviewed and signed by a qualified accountant before they are reflected in financial statements relied upon by third parties.
+1. **Gate the transaction.** Obtain a documented conclusion that the transaction is a business combination in ASC 805 scope and identify the accounting acquirer/date from current authoritative text. This worksheet does not substitute for ASC 810 control, asset-acquisition, common-control, NFP, joint-venture or reverse-acquisition analysis. All original scope exceptions and those topics remain in the individual source requests below.
+2. **Acquired customer-contract balances: ASU 2021-08 basis.** Its amendments to ASC 805-20-25-28C and -30-27/-30-28 use Topic 606 recognition and measurement as if the acquirer originated the acquired contract; do not automatically copy an acquiree balance if its application was wrong. Make inception-date and recurring assessments at the dates Topic 606 requires. This is an exception for contract assets/liabilities, not an exemption from valuing separately identifiable customer-related intangible assets. [Official amendment](https://storage.fasb.org/ASU%202021-08.pdf).
+3. **Apply only documented acquired-contract expedients.** ASC 805-20-30-29 permits an aggregate pre-acquisition-modification assessment for specified performance-obligation/price/allocation steps, and acquisition-date standalone selling prices for allocation. Elect per acquisition, apply consistently to all acquired contracts, and disclose the expedient and reasonably possible qualitative effect (-30-30; -50-5). [Official amendment](https://storage.fasb.org/ASU%202021-08.pdf).
+4. **Separate measurement-period information from later events.** ASU 2015-16 amends ASC 805-10-25-13/-25-17: use acquisition-date facts, close the period when information is obtained or unobtainable, and never exceed 1 year from acquisition (-25-14, in words on the page). Recognise the provisional adjustment and goodwill effect in the period determined, with the cumulative depreciation/amortisation/income effect in current-period earnings as if acquisition accounting had been complete. Disclose the prior-period portion by line item. The old skill's label -25-17A and instruction to retrospectively restate issued comparatives are not supported by this amendment. [Official amendment](https://storage.fasb.org/ASU%202015-16.pdf).
+5. **Future acquirer change.** ASU 2025-03 applies to annual reporting periods beginning after 15 December 2026 and interim periods within them; early adoption is permitted as of the beginning of the adopted interim/annual period, with prospective application. In the specified primarily-equity exchange acquiring a VIE business, use ASC 805-10-55-12 through -55-15 factors rather than automatically equating primary beneficiary with acquirer. Record adoption before selecting a version; do not apply the future rule automatically to every 2026 transaction. [Official amendment, ASC 805-10-65-5](https://storage.fasb.org/ASU%202025-03.pdf).
+6. **Reviewer output.** Supply the acquired-contract rollforward, any expedient, the measurement-period evidence chronology, proposed balanced adjustment and outstanding authoritative-source requests. The complete general acquisition/goodwill/disclosure procedure, all original monetary cases and every exception are preserved below for source recovery.
+
+### Verified corrections and remaining boundary
+
+The original measurement-period description mixed retrospective adjustment with current-period recognition and cited -25-17A. The read ASU amends -25-17; current-period catch-up and related disclosure are the stated amendment basis. The original goodwill, NCI, step-interest, earn-out, cost, IPR&D, impairment and private-company/NFP rules cannot be declared fully current from these scoped sources. The new source-read exceptions inventory additionally identifies purchased credit-deteriorated assets; specialist current-ASC recovery remains required.
+
+## Worked cases
+
+All case values and rates are illustrative input facts. Classification/application gates are stated in each case; arithmetic does not verify those gates.
+
+The first case uses illustrative supplied Topic 606 conclusions: a $30,000 prepaid 24-month stand-ready service, evenly delivered, with 12 months elapsed at acquisition, no modification, price change or financing issue. ASU 2021-08's origination-basis measurement gives a remaining contract liability of $15,000, recognised as the remaining service is delivered. An assumed $9,000 fair-value estimate is not substituted for that Topic 606 balance. The service/timing conclusions must be independently established under Topic 606; this case computes their consequences. [ASC 805-20-30-27/-30-28 amendment](https://storage.fasb.org/ASU%202021-08.pdf).
+
+```oa-check
+name: Acquired prepaid service, origination-basis contract liability
+inputs:
+  prepayment: 30000
+  months: 24
+  delivered: 12
+  assumed_fv: 9000
+steps:
+  - monthly_revenue: prepayment / months
+  - recognised_before_acquisition: monthly_revenue * delivered
+  - remaining_liability: prepayment - recognised_before_acquisition
+  - difference_from_fv: remaining_liability - assumed_fv
+expected:
+  monthly_revenue: 1250
+  remaining_liability: 15000
+  difference_from_fv: 6000
+```
+
+For a measurement-period adjustment, a $100,000 increase in equipment value is established 9 months after acquisition from acquisition-date evidence. Assume the value was provisional, the acquisition-date remaining life was 5 years, straight-line depreciation, no residual value or tax effect, and the first 6 months fall in an already-issued prior period. Record the $100,000 asset increase and goodwill decrease in the current period, plus cumulative extra depreciation of $15,000 (9/12 of $20,000), including $10,000 attributable to that prior period. Do not restate that prior issued period under the ASU 2015-16 basis. This is not a 9-month safe harbour: the period ends earlier once necessary information is obtained or unobtainable. [ASC 805-10-25-13 through -25-17 amendment](https://storage.fasb.org/ASU%202015-16.pdf).
+
+```oa-check
+name: Measurement-period asset adjustment and current-period catch-up
+inputs:
+  fair_value_increase: 100000
+  life_years: 5
+  elapsed_months: 9
+  prior_period_months: 6
+steps:
+  - annual_extra_depreciation: fair_value_increase / life_years
+  - cumulative_expense: annual_extra_depreciation * elapsed_months / 12
+  - prior_period_portion: annual_extra_depreciation * prior_period_months / 12
+  - net_asset_increase: fair_value_increase - cumulative_expense
+expected:
+  annual_extra_depreciation: 20000
+  cumulative_expense: 15000
+  prior_period_portion: 10000
+  net_asset_increase: 85000
+```
+
+
+### Preserved original acquisition scenarios: conditional working papers
+
+These retain the original facts and arithmetic; their booking depends on recovery of the specific current-source conditions listed below.
+
+- **80% cash acquisition and NCI.** Acquirer buys 80% of Target. Assume the current applicable rules require fair-value NCI and the supplied acquisition-date values are correct: cash consideration $800,000, identifiable net assets $700,000, NCI fair value $190,000 and no prior interest. Goodwill is $800,000 + $190,000 - $700,000 = $290,000. Proposed entry: Dr identifiable net assets $700,000; Dr goodwill $290,000; Cr cash $800,000; Cr NCI $190,000. Debits and credits both equal $990,000. Supplied advisory and legal acquisition costs of $25,000 give a separate proposed Dr expense / Cr cash $25,000 only if the current expense rule applies and these are not debt/equity issue costs.
+- **IFRS partial-NCI contrast.** For a separately eligible and elected IFRS proportionate-interest case, 20% × $700,000 gives NCI $140,000 and goodwill $240,000. The $50,000 difference from the fair-value-NCI case is the arithmetic difference between the supplied measurements; it is not automatically the IAS 36 notional NCI-goodwill gross-up. Run `ifrs3-business-combinations` for its actual conditions.
+- **Acquisition in stages.** A prior 10% interest has carrying amount $60,000 and supplied acquisition-date fair value $95,000; the additional acquisition is 70% for cash, with no cash price supplied. The proposed entry is Dr investment in Target / Cr remeasurement gain in profit or loss $35,000; debits equal credits. That gain is $35,000 and $95,000 enters the goodwill formula, conditional on the current step-acquisition and OCI requirements. Do not invent a price for the additional interest or a resulting goodwill total.
+- **Contingent consideration.** Given a separately established liability-classified earn-out initially valued at $120,000, its proposed acquisition entry is Dr goodwill / Cr contingent liability $120,000. A subsequent supplied value of $150,000 produces a $30,000 proposed fair-value loss and liability increase if the current subsequent-measurement rule applies. Distinguish later events from acquisition-date measurement-period evidence; continued-employment compensation and equity classification can change the answer.
+
+## When to refuse or refer
+
+Refuse a final current-US-GAAP accounting conclusion while authoritative ASC text or required contracts/adoption facts are unavailable. Do not treat a readable ASU as full current Codification access. Refer scope, complex own-equity/lease/acquisition classifications, valuation, enforceability, impairment, SEC presentation and tax effects to the appropriate specialist. Return the source gap and proposed arithmetic working paper, not a signed financial statement or assurance conclusion. Exclude asset acquisitions and common-control transactions under ASC 805-50, NFP combinations under ASC 958-805, consolidation/control procedures under ASC 810 and pushdown accounting beyond its scope reference. For dual reporters prepare a separate `ifrs3-business-combinations` assessment.
+
+## Disclaimer
+
+Provides computational and interpretive guidance on ASC 805 / ASC 350 only. Not an audit and not assurance. Business-combination accounting turns heavily on entity-specific facts and significant judgment  -  fair-value measurement of intangibles and contingent consideration, identification of the acquirer, the business-vs-asset determination, and goodwill impairment all require specialist input. Have outputs reviewed and signed by a qualified accountant before they are reflected in financial statements relied upon by third parties.
+
+## Sources
+
+| Source | Official URL | Actual read scope and date |
+|---|---|---|
+| ASU 2021-08 | [ASU 2021-08](https://storage.fasb.org/ASU%202021-08.pdf) | Read for ASC 805-20-25-16/-25-28C, -30-10 through -30-30, -50-5, -65-3 and adjacent exceptions; actual official PDF; 2026-11-15 |
+| ASU 2015-16 | [ASU 2015-16](https://storage.fasb.org/ASU%202015-16.pdf) | Read for ASC 805-10-25-13 through -25-17 and measurement-period disclosure changes; actual official PDF; 2026-11-15 |
+| ASU 2025-03 | [ASU 2025-03](https://storage.fasb.org/ASU%202025-03.pdf) | Read for summary, ASC 805-10-25-5, -55-12 through -55-15, -65-5 and adjacent VIE/pushdown changes; actual official PDF; 2026-11-15 |
+| Current authoritative Codification | [ASC](https://asc.fasb.org/) | Attempted 2026-11-15; web root returned no readable lines; ordinary Brave visit reached /Login but rendered only a stalled loader. Not read; no current-authority claim. |
+
+
+### Not yet confirmed: individual current-ASC source requests
+
+Each item needs current authoritative text and entity/version facts before execution; the operative ASU checks above answer only their stated questions. The initial official Codification recovery failed, so the following are individually retained source requests, not cleared US-GAAP rules.
+
+| Original topic retained | Exact question or condition to resolve |
+|---|---|
+| Business-combination scope and 4-step acquisition method | Whether control of a business is obtained; identify acquirer, acquisition date, recognised assets/liabilities/NCI and goodwill or bargain gain. Keep JV formation, asset acquisition, common control and NFP scope distinct. |
+| Voting-interest and VIE control | Verify the original generally-more-than-50% voting indicator and the ASC 810 primary-beneficiary test rather than using either as an unconditional acquirer test. The future/early ASU 2025-03 equity-exchange exception is stated above. |
+| Acquirer indicators | Cash/assets transferred or liabilities incurred; equity issuer versus reverse acquirer; relative votes, a large minority interest, governing body, senior management, relative size and exchange terms. Document private-company/public-shell and SPAC/de-SPAC facts without assuming every such deal is a business combination. |
+| Reverse acquisition | Which entity is the accounting continuation, which net assets receive acquisition accounting and the correct statement presentation; legal parent/subsidiary labels do not settle it. |
+| Acquisition date and post-acquisition results | Control date versus legal closing, written terms and facts supporting an earlier/later date; when results enter consolidation. |
+| Recognition perimeter | Definitions of acquired assets/assumed liabilities, separately identified transactions and items not previously recognised by the acquiree. |
+| Identifiable intangibles | Contractual/legal or separability tests; customer relationships, trade names, technology, order backlog and non-competes. Determine which are separately recognised and measure them under current applicable exceptions. |
+| Fair-value valuation | Current ASC 820 basis, NCI fair value/full-goodwill scope and specialist valuation. Relief-from-royalty, MPEEM, growth, attrition, discount rates and WACC/IRR cross-checks are proposed valuation work, not universally prescribed models. |
+| Income taxes | Correct exception is ASC 740, not a purported ASC 805-740; preserve the original deferred-tax-not-at-fair-value proposal, subject to current recognition/measurement, goodwill effects and tax-deductibility analysis. |
+| Employee benefits | ASC 715/712 recognition and measurement exceptions, including the actual plan scope and acquisition-date obligations. |
+| Indemnification assets | Matching basis to the indemnified item, contractual limitations and collectibility conditions. |
+| Reacquired rights and settlement | The original proposal values the reacquired right over its remaining contractual term, ignoring renewals, with separate settlement of pre-existing relationships and later amortisation/disposal; recover current conditions before execution. |
+| Replacement awards | ASC 718 allocation and requisite pre/post-service conditions: preserve the original proposal that the pre-combination-service portion enters consideration and the post-combination-service portion is compensation expense, subject to current scope and measurement proof. |
+| Held-for-sale assets | ASC 360 classification and the original proposed fair-value-less-costs-to-sell measurement, individually unconfirmed until applicable current classification and measurement exceptions are recovered; do not substitute automatic fair value. |
+| Contingent assets and liabilities | Fair value if determinable versus any applicable ASC 450 fallback and later accounting; recognition and measurement conditions must be read separately. |
+| Acquired revenue contracts | Current Topic 606 underlying judgments remain separate from the actually read ASU 2021-08 origination-basis exception and expedients above. |
+| Acquired leases | Preserve the original proposals to retain acquired lease classification unless modified and to measure the liability at the present value of remaining payments, with right-of-use asset and favourable/unfavourable terms treatment; actual current carryover, modification and measurement conditions remain unconfirmed. |
+| Purchased credit-deteriorated assets and other exceptions | Recover the applicable financial-asset exception and all amendments relevant to the acquisition; do not assume the older ASU exception list establishes the complete 2026 perimeter. |
+| Goodwill | Consideration plus measured NCI plus acquisition-date prior-interest value less recognised net assets; verify each component and exception before posting the conditional scenario. |
+| Bargain purchase | The original proposal recognises a residual bargain-purchase gain in profit or loss at acquisition, attributed to the acquirer, only after reassessment of identification, measurement and circumstances; current recognition conditions, reporting line and disclosure remain unconfirmed. |
+| Consideration transferred | Preserve the original proposed acquisition-date fair-value sum of assets transferred, liabilities incurred to former owners and equity issued, including contingent consideration; included versus separate transactions and current measurement conditions remain unconfirmed. |
+| Earn-out classification and remeasurement | Liability/equity tests under ASC 480/815; preserve the original proposals of later liability fair-value changes through earnings versus no equity remeasurement and settlement within equity, subject to current proof. Retain continued-employment compensation analysis, acquisition-date versus later-event distinction, Monte Carlo/option valuation, revenue or EBITDA target inputs and recurring Level 3 ASC 820 disclosure research; none is cleared current execution guidance. |
+| Acquisition costs | The original proposal expenses acquisition costs as incurred in the periods the services are received, with debt/equity issuance costs allocated against the relevant instrument instead. Advisory, legal, accounting, valuation, finder and general administrative categories, income-statement classification and the $25,000 scenario remain specific research inputs; recover applicable current conditions before posting. |
+| Measurement period | The ASU 2015-16 current-period adjustment and maximum 1-year conditions above supersede the original retrospective-restatement instruction and erroneous -25-17A citation. Source remaining unaddressed current conditions separately. |
+| Step acquisition | Acquisition-date remeasurement of prior interest, gain/loss and any OCI reclassification or transfer; retain 10%/70% and $60,000/$95,000/$35,000 facts above. |
+| Business definition and concentration screen | ASU 2017-01 screen, gross-assets concentration, inputs and substantive-process conditions. Preserve the original proposals that concentration of substantially all fair value in a single identifiable asset or group of similar identifiable assets means the acquired set is not a business, and that an asset acquisition has no goodwill and capitalises transaction costs; each consequence needs its own current scope and measurement conditions. |
+| Acquired IPR&D | Acquisition recognition/fair value, indefinite-life/non-amortisation assertion and impairment during development; preserve the original completion proposal to begin amortisation over useful life. Completion and abandonment recognition/measurement conditions remain individually unconfirmed; do not infer the IFRS answer or a universal zero value on abandonment. |
+| Goodwill impairment | The original default goodwill-not-amortised assertion remains unconfirmed outside a supported eligible alternative. Reporting-unit allocation, annual test and trigger examples of share-price decline, loss of a major customer and adverse regulation; retain income-versus-market valuation and headroom/sensitivity work. The original optional qualitative proposal skips further testing if it is not more likely than not that fair value is below carrying value; the quantitative single-step proposal recognises carrying value over fair value, capped at allocated goodwill. These specific outcomes, ASU 2017-04 adoption and no-reversal conditions remain individually unconfirmed under current ASC. |
+| Private-company/NFP goodwill alternative | Eligibility and policy choice; the original 10-year-or-shorter useful-life amortisation, straight-line method, trigger-only testing and entity/reporting-unit election require actual current scope and conditions. Preserve the proposed single-step excess of carrying value over fair value capped at goodwill, subject to that alternative's actual current conditions. |
+| Private-company/NFP intangible alternative | Eligibility and ASU 2014-18 treatment of non-compete agreements and customer-related intangibles not independently saleable/licensable; do not absorb all customer intangibles indiscriminately or import the alternative into IFRS. |
+| Disclosure: transaction identity | Acquiree name/description, date, voting percentage, reasons and how control was obtained. |
+| Disclosure: consideration and contingencies | Total and each class, contingent amount/range/basis, subsequent movements and compensation distinction. |
+| Disclosure: allocation and goodwill | Major asset/liability classes, goodwill factors and tax deductibility; bargain gain, line and reasons; NCI amount/basis/valuation inputs and prior-interest remeasurement gain and line. |
+| Disclosure: costs and provisional amounts | Acquisition costs and income-statement line, incomplete items, measurement-period adjustments and prior-period earnings portions. The read 2015 amendment answers its specified catch-up disclosure only. |
+| Disclosure: results and rollforward | Revenue and profit since acquisition, beginning-of-period pro forma results and any practicability qualifications; goodwill gross amount, accumulated impairment and losses in the rollforward by reportable segment; private-alternative amortisation period and policy. |
+
+| Original comparison | Exact current source still required |
+|---|---|
+| IFRS comparison: impairment unit and measurement | Recover the original US operating-segment-or-1-level-below reporting-unit definition and current goodwill-capped fair-value test before comparing with the separately supported IAS 36 CGU/group, higher-of-recoverable-amount and goodwill-first allocation rules. |
+| IFRS comparison: reversals and alternatives | Recover both the US no-goodwill-reversal and other-asset reversal restrictions, and the eligible private/NFP amortisation alternative; do not infer either from IAS 36, which bars goodwill reversal but permits qualified other-asset reversals. |
+| IFRS comparison: acquisition rules | Compare actual NCI scope, business screen versus optional IFRS concentration test, contingent-consideration classification, expense versus issue-cost exception, acquired contract balances and current-period versus retrospective measurement-period adjustments under each edition. The readable US amendments answer their scoped topics only. |
+
+### Retained execution and self-checks
+
+The original 12-step work programme remains a completion contract: gate scope/business; identify acquirer/control and reverse-acquisition facts; fix control date; inventory assets, liabilities and exceptions; obtain valuation; determine consideration and separate compensation/costs; measure NCI; account for prior interests; compute goodwill/reassess a bargain; track provisional information and current-period catch-up; establish goodwill/IPR&D/private-alternative subsequent accounting; then reconcile disclosures and submit the reviewer brief. Refer each unresolved step to its individual source request above.
+
+The retained 13 checks cover scope/business and exceptions; acquirer/reverse acquisition; acquisition date; recognition/intangibles; exception-by-exception measurement; consideration/earn-outs; NCI basis; prior-interest gain and OCI; goodwill/bargain recheck; costs and separate transactions; provisional-period chronology; IPR&D/goodwill impairment or eligible alternative; and complete disclosure/reconciled journals. They do not authorise an unsupported accounting conclusion.

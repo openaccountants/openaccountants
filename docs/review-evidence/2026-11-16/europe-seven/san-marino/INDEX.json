@@ -1,0 +1,181 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "3c3209b5aa5ae8b7d362d1697ba12918c4c6fc63cf7260348e85647737f07712",
+  "members": [
+    {
+      "path": "writer/INITIAL-FAILURES.md",
+      "sha256": "ff46de7341605354bc3c36c5f6472890b0164d40521865b9b5c1a4511ad64bd9",
+      "bytes": 1365
+    },
+    {
+      "path": "writer/LEDGER.md",
+      "sha256": "1567d69d749c8ae9373e9b95cc50fc71ed1ec8b9aca272dad4d25002813e5eb5",
+      "bytes": 16007
+    },
+    {
+      "path": "writer/NO-LOSS-sm-company-formation.md",
+      "sha256": "7b33f4f49d9ee6e6a0fad66b7a1cdc5eb728f2c431d458004323671319dd8ca6",
+      "bytes": 16872
+    },
+    {
+      "path": "writer/NO-LOSS-sm-tax-overview.md",
+      "sha256": "a5d7eb980baee7e95775cdd37acad20a1311f7d337006da0661db1f9209e698f",
+      "bytes": 12127
+    },
+    {
+      "path": "writer/REPORT.md",
+      "sha256": "f59a2e96af5f9eaac2f777dcc50dc6bd4d1e9d80794986d2e11ea6830a5dec3c",
+      "bytes": 6692
+    },
+    {
+      "path": "writer/REVIEW-CORRECTIONS.md",
+      "sha256": "a9afdf7ac2e349daf9c989361c750245fc2601d7a3273f62fc27e384c996c9d0",
+      "bytes": 1044
+    },
+    {
+      "path": "writer/STATUS.json",
+      "sha256": "8fe6989f7d7136467635495ad4f7483654b8698be1eb1d3569edb47a989c3919",
+      "bytes": 1185
+    },
+    {
+      "path": "writer/actual-head-sync.txt",
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9",
+      "bytes": 81
+    },
+    {
+      "path": "writer/actual-head-validation.txt",
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa",
+      "bytes": 192
+    },
+    {
+      "path": "writer/cache-manifest.json",
+      "sha256": "500535dc310ff7ea8d5c925ff1fbddd49e6c6bf032f0fc1c2fe3d8c7a99b4182",
+      "bytes": 4807
+    },
+    {
+      "path": "writer/check-row-sources.txt",
+      "sha256": "ad5f967126fe338f5a5b2d5cf501e40c99a4d64bc07c38aca3bbf6de1f4551f4",
+      "bytes": 975
+    },
+    {
+      "path": "writer/current-open-pr-numbers.txt",
+      "sha256": "02915aba000e5721d7bf7e2f070dc142f535428328ff4da9f4d5cde721bdd892",
+      "bytes": 45
+    },
+    {
+      "path": "writer/examples.txt",
+      "sha256": "6657e7f1bd2e46bc80cf3e6883e5351d165449e943b05e2d48ea40041a5c8bc4",
+      "bytes": 58
+    },
+    {
+      "path": "writer/guide-manifest.json",
+      "sha256": "169c649ba5487ae60796d0fb39169d0556084572594ba1f0b59c90df40b1de2d",
+      "bytes": 272
+    },
+    {
+      "path": "writer/ledger.json",
+      "sha256": "718e916b6fbb7121ddb74a8da23651263f01207cc3650d0efb3aa5e681ac8992",
+      "bytes": 21937
+    },
+    {
+      "path": "writer/materialized-copy-test-dependencies.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "path": "writer/old-sm-company-formation.md",
+      "sha256": "bfb771b26478f979e496bdfd24a9f558711d9676f1ea57c804ff6922f94205ec",
+      "bytes": 10104
+    },
+    {
+      "path": "writer/old-sm-tax-overview.md",
+      "sha256": "e33dc64e1b93cd87d6b77ae930a3cbe87a677bd95c2b523b25cfbd7dcc2670a0",
+      "bytes": 6798
+    },
+    {
+      "path": "writer/pre-edit-open-pr-files.json",
+      "sha256": "5309ebd1e0aeec896307ebb7d1cd00bb2ef43451659f680e5edae39576aee9d9",
+      "bytes": 27073
+    },
+    {
+      "path": "writer/prior-country-reconciliation.md",
+      "sha256": "d061c5a3891386cd308e139b27006b103b64ca0f5dcad799ac2155e7e62eff6b",
+      "bytes": 15351
+    },
+    {
+      "path": "writer/prior-pack-review.md",
+      "sha256": "8e0ff3d2ee1a76940ac708283df902f1190ed6fa33017862414fdf4cfbb470f9",
+      "bytes": 25583
+    },
+    {
+      "path": "writer/prior-source-retrieval.json",
+      "sha256": "7c77a59e16a671efb2c207e058746722d577995353728bd40204f0fe4dbc11ba",
+      "bytes": 26145
+    },
+    {
+      "path": "writer/prior-source-transport.json",
+      "sha256": "a615762e0ae0427b06a6f6df61818409a2865b18aa7421a0fa1ea0d90f91206e",
+      "bytes": 13850
+    },
+    {
+      "path": "writer/retrieval.json",
+      "sha256": "a476ad74e2c68eefb53cb81f7a8ecc8ae94fa9225db767ac78ac4a56c31aebc5",
+      "bytes": 4014
+    },
+    {
+      "path": "writer/scoped-worktree-validation.txt",
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa",
+      "bytes": 192
+    },
+    {
+      "path": "writer/skill-checks.json",
+      "sha256": "f590f0ee1843fa5a5fe7bb8e8e8836554b24512619b4a22d3a06892c516bdc3d",
+      "bytes": 100
+    },
+    {
+      "path": "writer/source-urls.json",
+      "sha256": "0e92ae7979380af782f8aff0a7d60a27f972e74d0c57e205f7218f74ec02c039",
+      "bytes": 1385
+    },
+    {
+      "path": "writer/sync-integrity.txt",
+      "sha256": "1198becbbc784a43b7740e5660d36ba7ba457d50f03a4d5c6a8c72f90f89f160",
+      "bytes": 81
+    },
+    {
+      "path": "writer/tests.txt",
+      "sha256": "dc0ef0b4c07dee9468e28e60d1e8d7469c091c19dc9e89587cc987300a9136b6",
+      "bytes": 121
+    },
+    {
+      "path": "independent-review/INDEPENDENT-CONTROLS.json",
+      "sha256": "54aea312a85d31ffaced2c8e57428b8589b4c2493c47f1002a918737a37c0e51",
+      "bytes": 1585
+    },
+    {
+      "path": "independent-review/REPORT.md",
+      "sha256": "8ffd60f1884e4f23a9c431f36d6cdf0eb1fa8e4e3253c8e5a5f11245edec9556",
+      "bytes": 6284
+    },
+    {
+      "path": "independent-review/REVIEWED-MANIFEST.json",
+      "sha256": "566719d9c220c45c1ac482cd1e9388226a3ae9ae6b805ce372054c7b679ba583",
+      "bytes": 867
+    },
+    {
+      "path": "independent-review/ROW-OUTCOMES.json",
+      "sha256": "e060d521dafe5fc9afeee9a206237f4525535efbbfaf60744f29706eac52f3eb",
+      "bytes": 43030
+    },
+    {
+      "path": "independent-review/STATUS.json",
+      "sha256": "bf21e7bad08aecedf13ea35cfa865219ad55d2bb88f60332889b626929d65d3d",
+      "bytes": 496
+    },
+    {
+      "path": "validation/shared-copy-calculator-tests.txt",
+      "sha256": "5977368485964fe87c61db96cb3471e7fb5dc29d157e404d817fb46902f6adcd",
+      "bytes": 121
+    }
+  ]
+}
