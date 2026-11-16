@@ -56,6 +56,10 @@ class RowSources(unittest.TestCase):
             ('one and one-half per cent', '1.5%'),
             ('one and one-\nhalf percentum', '1.5%'),
             ('one-hundred and a half percentum', '100.5%'),
+            ('The levy and one and a half percent apply.', '1.5%'),
+            ('Apply a one and a half percent levy.', '1.5%'),
+            ('twenty percent and one and a half percent', '1.5%'),
+            ('one percent and a half percent', '0.5%'),
             ('two and a half percent', '2.5%'),
             ('twenty-one and a half percentum', '21.5%'),
             ('twenty one and a half percentum', '21.5%'),
@@ -83,6 +87,8 @@ class RowSources(unittest.TestCase):
             ('three hundred and a half percentum', '0.5%'),
             ('two hundred and one and a half percentum', '1.5%'),
             ('one-hundred and a half percentum', '0.5%'),
+            ('and three hundred and a half percentum', '0.5%'),
+            ('a two hundred and one and a half percentum', '1.5%'),
         ]:
             with self.subTest(page=page, wrong=figure):
                 text = skill(f'| Charge | {figure} | [law]({A}) |')

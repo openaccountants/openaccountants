@@ -196,6 +196,8 @@ def word_percent_values(page_text):
         vals.add(float(_WORD_VALUES[m.group(1).lower()]))
     for m in _HALF_PERCENT_RE.finditer(page_text):
         words = re.sub(r'[\s-]+', ' ', m.group('phrase').lower())
+        while words.startswith(('and ', 'a ')):
+            words = words.split(' ', 1)[1]
         fraction = re.search(r'(?:^| )(?:a half|one half|half)$', words)
         if not fraction:
             continue
