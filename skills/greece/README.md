@@ -4,28 +4,28 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   SC: gr-employee-contributions
-partial: {}
+partial: {XB: "The art. 16 phase-out basis under 5C remains unresolved, so Example 1 does not determine final salary tax"}
 ---
 
 # Greece: tax pack
 
-Calendar tax year. Authority: AADE (Independent Authority for Public Revenue); returns and payments go through myAADE and TAXISnet. Euro. Residents are taxed on worldwide income, non-residents on Greek-source income; there is no remittance basis, but three inbound regimes (arts. 5A, 5B, 5C of the Income Tax Code, ν. 4172/2013) give special treatment to people moving to Greece. From tax year 2026 the scale for employment, pension and business income is 9% to 44% (ν. 5246/2025). Company tax is 22%. VAT follows EU rules. Procedure, fines and interest are in the Tax Procedure Code, ν. 5104/2024. Transfer pricing rules exist (Income Tax Code art. 50; documentation file in Tax Procedure Code art. 25).
+Calendar tax year. Authority: AADE (Independent Authority for Public Revenue); returns and payments go through myAADE and TAXISnet. Euro. Residents are taxed on worldwide income, non-residents on Greek-source income; there is no remittance basis, but three inbound regimes (arts. 5A, 5B, 5C of the Income Tax Code, ν. 4172/2013) give special treatment to people moving to Greece. From tax year 2026 the scale for employment, pension and business income is 9% to 44% (ν. 5246/2025). The ordinary company tax rate is 22%; special art. 58 rates are not determined by that headline. VAT follows EU rules. Procedure, fines and interest are in the Tax Procedure Code, ν. 5104/2024. Transfer pricing rules exist (Income Tax Code art. 50; documentation file in Tax Procedure Code art. 25).
 
 ## Domains
 
 | Tax | Skill | Status |
 |---|---|---|
-| Income tax | gr-income-tax, gr-living-expense-presumptions, gr-capital-gains (2026 scale for employees, pensioners, the self-employed, rent and capital income; 2026 deemed income from living-expense presumptions; capital gains on securities, a whole business and property (property gains suspended to 31.12.2026)) | checked against the law |
-| Company tax | gr-corporate-income-tax (entities on double-entry books, 2026: 22% rate, base, losses, interest limitation, withholding, 80% prepayment, trade fee, form N, penalties), gr-partnerships-single-entry (ΟΕ, ΕΕ, civil partnerships, joint ventures and other entities on single-entry books, 2026) | checked against the law |
-| VAT or sales tax | greece-vat-return (2026 under the VAT Code ν. 5144/2024: 24%, 13%, 6% and 4% rates, the 30% island reduction from 1.1.2026, EUR 10,000 small business exemption and EU SME scheme, monthly and quarterly returns, reverse charge, intra-EU, OSS, refunds, fines); gr-vat-return is a pointer to it | sourced from the law |
-| Social contributions | gr-employee-contributions (employees and employers, 2026), gr-efka (self-employed, freelancers and farmers, 2026 amounts from e-EFKA circular 6/2026) | checked against the law |
-| Payroll | gr-payroll (2026; annualisation under ΠΟΛ 1104/2014) | checked against the law |
-| Transfer pricing | gr-transfer-pricing | checked against the law |
-| Cross-border | gr-cross-border | checked against the law |
+| Income tax | gr-income-tax, gr-living-expense-presumptions, gr-capital-gains (2026 scale for employees, pensioners, the self-employed, rent and capital income; 2026 deemed income from living-expense presumptions; capital gains on securities, a whole business and property (property gains suspended to 31.12.2026)) | Built from the law; Not yet approved |
+| Company tax | gr-corporate-income-tax (entities on double-entry books, 2026: 22% rate, base, losses, interest limitation, withholding, 80% prepayment, trade fee, form N, penalties), gr-partnerships-single-entry (ΟΕ, ΕΕ, civil partnerships, joint ventures and other entities on single-entry books, 2026) | Built from the law; Not yet approved |
+| VAT or sales tax | greece-vat-return (2026 under the VAT Code ν. 5144/2024: 24%, 13%, 6% and 4% rates, the 30% island reduction from 1.1.2026, EUR 10,000 small business exemption and EU SME scheme, monthly and quarterly returns, reverse charge, intra-EU, OSS, refunds, fines); gr-vat-return is a pointer to it | Built from the law; Not yet approved |
+| Social contributions | gr-employee-contributions (employees and employers, 2026), gr-efka (self-employed, freelancers and farmers, 2026 amounts from e-EFKA circular 6/2026) | Built from the law; Not yet approved |
+| Payroll | gr-payroll (2026; annualisation under ΠΟΛ 1104/2014) | Built from the law; Not yet approved |
+| Transfer pricing | gr-transfer-pricing | Built from the law; Not yet approved |
+| Cross-border | gr-cross-border | Built from the law; Not yet approved |
 
-No domain is marked `partial`. IT-IND is covered for 2026 by gr-income-tax (the scale), gr-living-expense-presumptions (deemed income, arts. 30-34) and gr-capital-gains (arts. 41-43). IT-CORP is covered for 2026 by gr-corporate-income-tax (double-entry books) and gr-partnerships-single-entry (single-entry books). Two niche regimes are out of scope: tonnage tax on shipping companies and the deferred tax regime for banks under ITC art. 27A.
+XB is marked `partial` for the specific core computation stated above; its two worked cases retain the original inputs and the unresolved branch is not a final filing instruction. Other skills retain their own explicit source limits. IT-IND is covered for 2026 by gr-income-tax (the scale), gr-living-expense-presumptions (deemed income, arts. 30-34) and gr-capital-gains (arts. 41-43). IT-CORP is covered for 2026 by gr-corporate-income-tax (double-entry books) and gr-partnerships-single-entry (single-entry books). Two niche regimes are out of scope: tonnage tax on shipping companies and the deferred tax regime for banks under ITC art. 27A.
 
-Accounting-pack skills in this folder: gr-company-formation, greece-einvoice, gr-tax-overview.
+Accounting-pack skills in this folder: gr-company-formation, greece-einvoice, gr-tax-overview. The overview and gr-vat-return are routing-only. The 16 November batch updates formation, cross-border and invoicing, plus a bounded A.1049/2025 VAT-period correction in greece-vat-return v2.4 and an ITC art. 8 tax-year clarification in gr-corporate-income-tax v0.4. It does not claim fresh legal verification of the eight unchanged siblings. Formation still holds later-law, total-fee and practical-timeline questions; invoicing holds uninspected XSD/combination details, channel-specific deadlines, provider obligations and exact B2G profiles; the VAT owner retains its refund, adjustment, recapitulative-calendar and other stated gaps. Guide presence and passing structural checks do not mean comprehensive coverage or accountant approval.
 
 ## Official sources
 
