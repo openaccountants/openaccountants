@@ -1,0 +1,203 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "b4bfe0bfa28f622fcd8e2cc7d3676a6f3867e1e1bc6faa0718ded6193aefc62a",
+  "source_commit": "6bbd62eabca39125feea88dd7b17d0966305e41e",
+  "base_commit": "bbab4f1a6d82cace432e6ca8eda89c98ffb1c038",
+  "members": [
+    {
+      "path": "REPORT.md",
+      "size": 6208,
+      "sha256": "2e85ea61bc63d069f77f3eb2272bfa4634b94344f2674a0e78098a7b868dc224"
+    },
+    {
+      "path": "ledgers/kr-social-insurance.md",
+      "size": 28208,
+      "sha256": "c6e860ad17d38437666ae6bbd5a62dd726aec03ac88854223a1628a367365831"
+    },
+    {
+      "path": "ledgers/references.md",
+      "size": 6058,
+      "sha256": "3689171ec9b2d3c548f4ba92fa8e35c8ca5963ae9e3b14299f0c1d745d573064"
+    },
+    {
+      "path": "ledgers/simplified-business-operator-registration-under-vat-act.md",
+      "size": 11988,
+      "sha256": "1ae9855670549210b971c7c5ca0982b1511a6f80a40a0f2f422584601332227d"
+    },
+    {
+      "path": "ledgers/south-korea-crypto-tax.md",
+      "size": 83415,
+      "sha256": "124afccfb28ddb4ad6e4dfaaba0155c3a521c735251657d590475db4e08c88b4"
+    },
+    {
+      "path": "originals/kr-social-insurance-v2.0.md",
+      "size": 17322,
+      "sha256": "a70a5154359fe6dc8ebed714e7a2ff2a5fa1a8c6b9aa17a205b682c19d652502"
+    },
+    {
+      "path": "originals/kr-social-insurance.md",
+      "size": 17322,
+      "sha256": "a70a5154359fe6dc8ebed714e7a2ff2a5fa1a8c6b9aa17a205b682c19d652502"
+    },
+    {
+      "path": "originals/references.md",
+      "size": 3001,
+      "sha256": "d07527db90d0d37db04fbb8cdc6791eb9dbecf01fc33a603ce916a9c912d2563"
+    },
+    {
+      "path": "originals/simplified-business-operator-registration-under-vat-act.md",
+      "size": 5971,
+      "sha256": "6275f2fddd8fe1005ae243f3f18196198b62145b6c0b01feb90c01524b69fcea"
+    },
+    {
+      "path": "originals/south-korea-crypto-tax.md",
+      "size": 21917,
+      "sha256": "0cdc0df226a3f87a43b50f4a91938188f92ce8cdea2a68484d65201e8fae075a"
+    },
+    {
+      "path": "reviews/PR-REVIEW-COMMENT.md",
+      "size": 4271,
+      "sha256": "5bfdbb4e59224e51b886a2ff35196dd38e780114e5a151b9f04d642a7b7b0711"
+    },
+    {
+      "path": "reviews/crypto-tax-review.md",
+      "size": 25503,
+      "sha256": "cdbf7efa3937ed2d8eb991e7d36f9ea0e1211406397ac6a396fb14a429f0d6f5"
+    },
+    {
+      "path": "reviews/pack-review.md",
+      "size": 8356,
+      "sha256": "7c09fe460181a778d5ec4045a76162ee70e7d78c42ae7a0f8ac0c0b0e9a231eb"
+    },
+    {
+      "path": "reviews/references-review-initial-superseded.md",
+      "size": 5414,
+      "sha256": "7060016e7d8ffd43be66309bdb337fac80286094b485e5c784f1cf7d013eae80"
+    },
+    {
+      "path": "reviews/references-review.md",
+      "size": 2285,
+      "sha256": "752c882bb8fa964407a23be8b4ef3755d0a0da3ed2df3a7ebee3dc7183bc4c03"
+    },
+    {
+      "path": "reviews/social-insurance-review.md",
+      "size": 15863,
+      "sha256": "ddee301ba54cd1cf4c6342918efdcf7630604cb6679304578391664782d1c91b"
+    },
+    {
+      "path": "reviews/vat-registration-review.md",
+      "size": 8272,
+      "sha256": "0c6dc3c8b952d5a1b3642246f820b869713d4bb49be2503231eecf5eaf929efa"
+    },
+    {
+      "path": "social-insurance-writer-handoff.md",
+      "size": 4101,
+      "sha256": "28b11698bfd63a9cf790dc44a163609788458df44a543e0dbf8a3d605bf56058"
+    },
+    {
+      "path": "source-manifest.json",
+      "size": 1415,
+      "sha256": "1efaa138f23c794e9fcfd20cdb1f89f6d9e7ae66025c90d1f75608232eab0ded"
+    },
+    {
+      "path": "validation/calculator-quotes-final.log",
+      "size": 247,
+      "sha256": "fa3ca7bd224968d95f2f4d8de60af21fd0d65e2f695a00204d2209d1b3b7b159"
+    },
+    {
+      "path": "validation/crypto-row-source-reconciliation.md",
+      "size": 19678,
+      "sha256": "898f410442352f9a1e9e72e85e453d46473604849d0e2e2070985f4ea81439b8"
+    },
+    {
+      "path": "validation/crypto-row-sources.log",
+      "size": 14037,
+      "sha256": "91c657ec8d0ce39d7f4102fc881bb0567e6a5782bae1d37de770bab4cd7998b7"
+    },
+    {
+      "path": "validation/crypto-shape.log",
+      "size": 666,
+      "sha256": "c313c40455d77b8b59f5b72f7ecc5d65c3850594d2422014600b77045fc4abf6"
+    },
+    {
+      "path": "validation/diff-check-final.log",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "validation/examples-final.log",
+      "size": 59,
+      "sha256": "539287af9f00a9f419bcdf9959d1b7307fb3389730b6b0bcaa4bb29415b09774"
+    },
+    {
+      "path": "validation/final-validation-summary.json",
+      "size": 2735,
+      "sha256": "1e96dc6291908179e61d81eb3a14e87f6a9ceeca341ce9b98dbd47c74807a19d"
+    },
+    {
+      "path": "validation/initial-calculator-copy.log",
+      "size": 121,
+      "sha256": "ea990f0dfd9f731504a31c5c7ac781747c8937ae2b617bdc97d7b5f9731587a3"
+    },
+    {
+      "path": "validation/precommit-sync.log",
+      "size": 81,
+      "sha256": "285c06c16232e85f6cf4bde9dc36c9ccc61e32acb3e2e65bb60f781aa9a0c1c8"
+    },
+    {
+      "path": "validation/precommit-validator.log",
+      "size": 99,
+      "sha256": "b483c71445dda503a93a56421eb28c2b76ea443c8b429d8f78cf654133c08258"
+    },
+    {
+      "path": "validation/report-copy-final.log",
+      "size": 100,
+      "sha256": "21d0932a57c54d954ec44ee8b270e62f80a4c8826cf4079377d632110002c5d2"
+    },
+    {
+      "path": "validation/setup-failures-record.md",
+      "size": 1948,
+      "sha256": "a6acac51645ad389210acf9b201366808f35f4a153e74142cdd3ae1bd596ce76"
+    },
+    {
+      "path": "validation/skill-checks-final.json",
+      "size": 237,
+      "sha256": "1b1786e4738765d05eb8b9263903f1a96d1b718e01f70e76962454c97f90e2e3"
+    },
+    {
+      "path": "validation/social-final-row-sources.log",
+      "size": 327,
+      "sha256": "1f5c590b33151efea7d904babc61ef7f6839053995eea1053cd290171e193696"
+    },
+    {
+      "path": "validation/social-initial-shape.log",
+      "size": 663,
+      "sha256": "f1ffdb802bfb78ffc73d759b1f06125e58ef649e235dac345fd5cf4b7f9d03eb"
+    },
+    {
+      "path": "validation/social-row-sources-corrected.log",
+      "size": 326,
+      "sha256": "53a87c77144e1915b502e16391d6c7ddf488fc55e57841706b65ae22cd3a9f4b"
+    },
+    {
+      "path": "validation/social-row-sources.log",
+      "size": 935,
+      "sha256": "ca303d9ca621b284bb5b2e1ab1a08610461b1320713172997a712b7239f1a790"
+    },
+    {
+      "path": "validation/sync-final.log",
+      "size": 81,
+      "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2"
+    },
+    {
+      "path": "validation/validate-guides-final.log",
+      "size": 192,
+      "sha256": "c5905f9199102c5e895747b7c81ed4de427b6cc8e1d315df76e4ab8fe76ae807"
+    },
+    {
+      "path": "validation/vat-references-row-sources.log",
+      "size": 497,
+      "sha256": "712da4bf2711a69f7303a922b9c2061ed78eeae4146eff4ae9a70429b2d11924"
+    }
+  ]
+}
