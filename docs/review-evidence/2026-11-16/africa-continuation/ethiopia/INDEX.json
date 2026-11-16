@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "241a8f40117a13111ebd87b1401c8ed5d813730d3200a55b394ee28fc71ff24a",
+  "archive_bytes": 21475,
+  "content_commit": "baa32d31e35901a7ed9431f88c09cd1dc60e002d",
+  "guide_files": [
+    {
+      "path": "skills/ethiopia/et-company-formation.md",
+      "sha256": "6379cd384ef725f8745cdb315ea0d82a8ba6386e207ea6def0503e8148cb673f",
+      "original_sha256": "16107bdd93ec7284334e075a628144b69af5600818673bfbed7efd864f363b88",
+      "original_bytes": 5791,
+      "candidate_bytes": 18095
+    },
+    {
+      "path": "skills/ethiopia/et-tax-overview.md",
+      "sha256": "6662c85b2173d9222fcc50c56ef9ea667eecebbaea586c39ec6897cddcfc0147",
+      "original_sha256": "e096f1caa19345d1ed22266def6bbaeebbded38c05591d424ff5ab3ceb498424",
+      "original_bytes": 4278,
+      "candidate_bytes": 11326
+    }
+  ],
+  "files": [
+    {
+      "path": "REPORT.md",
+      "bytes": 5106,
+      "sha256": "e2e9eb576531b4cf1fd3ae1477fbe4f2ccad5e116355ff46e5965e99386a2332"
+    },
+    {
+      "path": "candidate-final.json",
+      "bytes": 1468,
+      "sha256": "c2e589019d0488f51864b451050c49edec4dfb2a55512df5a8900f7ae8888105"
+    },
+    {
+      "path": "independent-review/REVIEW.json",
+      "bytes": 13217,
+      "sha256": "4da883a6d87d535aa07a8b44017584c4cf58802f07b17a2e4b190a8ca61c320c"
+    },
+    {
+      "path": "independent-review/REVIEW.md",
+      "bytes": 1375,
+      "sha256": "5d55cbb47e74aff3e39e491553c628d9e7be461ad566dff4b51ac4569eaabede"
+    },
+    {
+      "path": "writer/REPORT.md",
+      "bytes": 4802,
+      "sha256": "529fe1ec1340f21f6a4b81c2160d48157ba412a4964f114e86e34ba0d985d542"
+    },
+    {
+      "path": "writer/SOURCE-READS.json",
+      "bytes": 5242,
+      "sha256": "fc305394d9a06d341bdbfdfe7146a907043bcc5a8c3c7dc9b3c71f6d193c3aba"
+    },
+    {
+      "path": "writer/calculator-quotes.log",
+      "bytes": 156,
+      "sha256": "60ddc5742e7e97c23cf621adab622fba85be39f933a6509cd473fc43f146dad5"
+    },
+    {
+      "path": "writer/candidate.json",
+      "bytes": 1400,
+      "sha256": "34344d7f14232a1bbd8be08e10ccaca0aacd26d940c86de6203186d33e48b936"
+    },
+    {
+      "path": "writer/examples.log",
+      "bytes": 58,
+      "sha256": "854bae0e139a35716e6cf0b55f3b725491a15ed5d503cd4f0c72e166e395e90a"
+    },
+    {
+      "path": "writer/ledgers/et-company-formation.md",
+      "bytes": 14591,
+      "sha256": "3fb9121008c27e1a2a76fd6a4e1714390858da16b041bef59649465254480778"
+    },
+    {
+      "path": "writer/ledgers/et-tax-overview.md",
+      "bytes": 7614,
+      "sha256": "5315801e5670211fa7266b396b61e70c7dde5dbea025d10c79f7258c311b4819"
+    },
+    {
+      "path": "writer/original-et-company-formation.md",
+      "bytes": 5791,
+      "sha256": "16107bdd93ec7284334e075a628144b69af5600818673bfbed7efd864f363b88"
+    },
+    {
+      "path": "writer/original-et-tax-overview.md",
+      "bytes": 4278,
+      "sha256": "e096f1caa19345d1ed22266def6bbaeebbded38c05591d424ff5ab3ceb498424"
+    },
+    {
+      "path": "writer/row-sources-final.log",
+      "bytes": 665,
+      "sha256": "12ac1571709f0589fce66f033d6cd09f749265c5466a83b32b94a7d7bca89a69"
+    },
+    {
+      "path": "writer/row-sources.log",
+      "bytes": 1333,
+      "sha256": "3b335888adc98ea7d04bcbc46dcb842cfa2437cff9c80cbfb34f1cc2191f6b9c"
+    },
+    {
+      "path": "writer/skill-checks-json.log",
+      "bytes": 1071,
+      "sha256": "f40aa29405196d96fa50a1ec0d86ef1d9900f5c4bcab0e099350520b0c34e223"
+    },
+    {
+      "path": "writer/skill-checks.log",
+      "bytes": 1317,
+      "sha256": "ea9c015d3d10c71d47923a01e8646d7ff62811d178a6699b25a28f378fa65b0a"
+    },
+    {
+      "path": "writer/sync-integrity-final.log",
+      "bytes": 81,
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9"
+    },
+    {
+      "path": "writer/sync-integrity.log",
+      "bytes": 81,
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9"
+    },
+    {
+      "path": "writer/tests-calculator-unittest.log",
+      "bytes": 119,
+      "sha256": "f5ca37f0bdf3c0f5c7305c46b69e709fc04f7a8ce4f0fac29443ec29ab125e8a"
+    },
+    {
+      "path": "writer/tests-copy-complete.log",
+      "bytes": 100,
+      "sha256": "ae4528e6e121aceb75e8424d4e5340944d376acb7de977e233b718eb37aa8f35"
+    },
+    {
+      "path": "writer/tests-copy-unittest.log",
+      "bytes": 1483,
+      "sha256": "2c0d8fe45923d344eb948bcfdd0829fe37362b0b289c85817a72582eaf9c35ad"
+    },
+    {
+      "path": "writer/tests.log",
+      "bytes": 69,
+      "sha256": "c99d342a1664b93a03868ad56a22451965948da811503ce3b0d29ae5123b9dbb"
+    },
+    {
+      "path": "writer/validate-guides-after-dependency.log",
+      "bytes": 192,
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa"
+    },
+    {
+      "path": "writer/validate-guides-final.log",
+      "bytes": 192,
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa"
+    },
+    {
+      "path": "writer/validate-guides.log",
+      "bytes": 309,
+      "sha256": "67baf5b3745e89ee906435ddc30b109e63dceb1bfaa3a31524e60d08e0679d0d"
+    },
+    {
+      "path": "INDEX.json",
+      "bytes": 4305,
+      "sha256": "b85baacf11411b6d7db33dcdd04b83397e40a9ebb79816b171062905a51fa186"
+    }
+  ]
+}
