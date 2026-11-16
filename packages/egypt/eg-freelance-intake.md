@@ -1,119 +1,153 @@
 ---
 name: eg-freelance-intake
 description: ALWAYS USE THIS SKILL when a user asks for help with their Egyptian taxes AND mentions freelancing, self-employment, sole proprietorship, professional practice, or a small business in Egypt. Trigger on phrases like "help me with my Egyptian taxes", "I'm a freelancer in Egypt", "prepare my income tax return", "I have a small business in Cairo", "أنا أعمل لحسابي الخاص" (I am self-employed), "ضريبة الدخل" (income tax), "منشأة صغيرة" (small enterprise), "إقرار ضريبي" (tax return), "أنا فريلانسر" (I'm a freelancer), "نظام الضرائب المبسط" (simplified tax regime), or any similar phrasing where the user is an Egypt-resident self-employed individual. REQUIRED entry point for the Egypt self-employed workflow; downstream skills (eg-income-tax, eg-sme-tax, eg-social-insurance, egypt-vat, eg-return-assembly) depend on it. Egypt-resident self-employed only.
-version: 0.1
+version: 0.2
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-07-13
+last_updated: 2026-11-16
 category: orchestrator
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: router
 ---
 
-# EG Freelance Intake
+# EG Freelance Intake v0.2
 
-## Egypt Self-Employed Intake Orchestrator v0.1
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## What this file is
+Egypt self-employed intake router, tax year 2026, law as read on 16 November 2026. It takes an Egypt-resident sole proprietor (منشأة فردية), independent professional (مهنة حرة / مهنة غير تجارية) or small business owner from first message to a confirmed set of facts, and routes the case. It computes no tax. All numbers come from the content skills it routes to and are reviewed by a qualified Egyptian accountant (محاسب قانوني) before anything is filed with the Egyptian Tax Authority (ETA, مصلحة الضرائب المصرية).
 
-- **Purpose of this skill** — This is the intake orchestrator for an Egypt-resident self-employed person — a sole proprietor (منشأة فردية), an independent professional (مهنة حرة / مهنة غير تجارية), or a small business owner. It establishes the facts and routes the case to the correct tax regime. It computes nothing.
-- **Two parallel tracks for the self-employed** — Egypt runs two parallel tracks for the self-employed: (1) The simplified SME regime (نظام الضرائب المبسط للمنشآت الصغيرة) under Law No. 6 of 2025, effective 1 March 2025, for businesses whose annual turnover (حجم الأعمال) does not exceed EGP 20 million. Tax is a small percentage of turnover, not net profit, plus lighter bookkeeping, quarterly VAT filing, and audit deferral. → routes to eg-sme-tax. (2) The general income-tax system (الضريبة على الدخل) under the Income Tax Law (Law No. 91 of 2005, as amended by Law No. 175 of 2023). Progressive brackets apply to net profit (صافي الربح). This is the default for anyone above EGP 20m or who does not opt into / qualify for the simplified regime. → routes to eg-income-tax.  _(Law No. 6 of 2025; Income Tax Law No. 91 of 2005, as amended by Law No. 175 of 2023)_
-- **Simplified SME regime effective date** — 1 March 2025  _(Law No. 6 of 2025)_
-- **Simplified SME regime turnover ceiling** — 20,000,000 EGP  _(Law No. 6 of 2025)_
+Reply in the language the user writes in: Arabic in, Arabic out. Write English prose otherwise and keep native Arabic terms in brackets on first use where they help.
 
-This skill's only job: collect facts, parse uploaded documents, confirm with the user, and hand a clean intake package to eg-return-assembly. It never produces tax figures.
+**Key figures that decide the route.** Each is owned by the skill in the Owner skill column; this table only routes.
 
-Language. Write English prose, keep native Arabic terms where they aid precision (shown in parentheses on first use). Always reply in the language the user writes in — if they message in Arabic, answer in Arabic.
+| Item | Figure | Conditions | Tax year | Owner skill | Official URL |
+|---|---|---|---|---|---|
+| Turnover regime ceiling | EGP 20,000,000 a year (in words on the page) | Law 6 of 2025 art. 1: the project asks to use the law, professional activities included, registered or not; in force from 1 March 2025 (art. 16) | 2026 | `eg-sme-tax` | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf |
+| Consultancy exclusion | 90% or more of annual turnover from consulting for one or two persons | Law 6 art. 4(1); the Minister of Finance may except activities | 2026 | `eg-sme-tax` | same |
+| One-time overshoot | Up to 20% above EGP 20,000,000, once in the five years from the request (in words on the page for the ceiling) | Law 6 art. 10 last para.; a larger or second overshoot ends the regime from the following year | 2026 | `eg-sme-tax` | same |
+| VAT registration limit | EGP 500,000 of taxable and exempt sales (in words on the page) | VAT Law 67 of 2016 art. 16; apply within 30 days of reaching it; the Minister may change the limit by decision | 2026 | `egypt-vat` | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.67-2016.pdf |
 
-## Design principles (upload-first)
+## Scope
 
-1. Upload-first. After a short scope sweep, the user dumps everything they have. Claude infers as much as possible before asking anything.
-2. Inference, then confirm. Parse every document, build a picture, then show one compact summary for correction.
-3. Gap-filling only. Ask the user only about what is missing, ambiguous, or needs confirmation.
-4. Computes nothing. Routing and fact-gathering only. All numbers come from downstream content skills and are reviewed by a qualified Egyptian accountant (محاسب قانوني).
-5. Do not narrate phases. Never say "Step 1," "now the inference phase," etc. Just do the work.
-6. Do not re-ask. If the scope sweep established the activity is professional, do not later ask the activity type. Track what is known.
-7. Do not ask about what the documents already show. If the bank statement shows the turnover, confirm it; do not ask for it.
+- **In:** an individual who is an Egyptian tax resident for 2026 and carries on a commercial, industrial, craft or professional activity alone: sole traders, freelancers, consultants, designers, doctors, lawyers, software developers.
+- **Out, stop and refer:** non-residents (Income Tax Law 91 of 2005 art. 6 taxes them only on income realised in Egypt; see `eg-income-tax`), and companies of every form (joint-stock شركة مساهمة, limited liability شركة ذات مسؤولية محدودة, partnerships). Companies go to `eg-corporate-tax` and `eg-financial-statements`.
+- **Two parallel income tax tracks** for the self-employed, mutually exclusive for any one year:
+  1. **Turnover regime** (نظام الضرائب المبسط), Law 6 of 2025, in force 1 March 2025: tax is a percentage of turnover (حجم الأعمال), with lighter records (art. 13), quarterly VAT returns (art. 12) and examination of returns only after five years from the request (art. 12). Route: `eg-sme-tax`.
+  2. **General system** (الضريبة على الدخل), Income Tax Law 91 of 2005 as amended (the band table in force is art. 8 as replaced by Law 7 of 2024): progressive bands on net profit (صافي الربح). It applies to everyone above EGP 20,000,000 and to anyone who has not asked for, or cannot use, the turnover regime. Route: `eg-income-tax`.
+- VAT (`egypt-vat`) and social insurance (`eg-social-insurance`) run alongside whichever income track applies. All paths end in `eg-return-assembly`.
 
-## Step 1 — Refusal and routing sweep
+## Ask the client first
 
-Establish the load-bearing facts up front. These determine scope and the regime split. Batch them; do not walk through one at a time.
+Batch these in one message. Any answer that puts the case out of scope (non-resident, company) is blocking: settle it before anything else.
 
-- **1. Residency** — Is the person an Egyptian tax resident (مقيم) for 2026? Resident → continue. Non-resident → stop. Non-residents are taxed only on Egypt-source income under different rules. Refer to an Egyptian accountant who handles non-resident filings.
-- **Non-resident stop condition** — Non-resident → stop. Non-residents are taxed only on Egypt-source income under different rules. Refer to an Egyptian accountant who handles non-resident filings.
-- **2. Legal form** — Sole proprietor / professional individual, or a company (شركة)? Individual sole proprietor or independent professional → continue. Company — joint-stock (شركة مساهمة), LLC (شركة ذات مسؤولية محدودة), or partnership — → escalate / stop. Companies file corporate tax under separate rules; this workflow is for individuals only. Refer to an accountant handling corporate returns.
-- **Company escalate/stop condition** — Company (joint-stock, LLC, or partnership) → escalate / stop. Companies file corporate tax under separate rules; this workflow is for individuals only. Refer to an accountant handling corporate returns.
-- **3. Activity type** — Commercial or industrial (نشاط تجاري أو صناعي), versus professional / non-commercial (مهنة حرة / غير تجارية, e.g. consultant, designer, doctor, lawyer, software developer)? Both are in scope. Record it — it affects expense rules and classification downstream. Mixed activity → record both.
-- **4. Annual turnover vs the EGP 20m simplified threshold** — ≤ EGP 20 million → eligible for the simplified SME regime (Law No. 6 of 2025). Flag that opting in is an election; confirm the user's intent. → candidate for eg-sme-tax. > EGP 20 million → general income-tax system, progressive brackets on net profit. → eg-income-tax. Not sure → ask for the rough range; the dividing line is EGP 20m. EGP  _(Law No. 6 of 2025)_
-- **5. VAT registration vs the EGP 500k threshold** — Mandatory VAT registration (التسجيل بضريبة القيمة المضافة) is triggered when taxable turnover exceeds EGP 500,000 in any 12 months (VAT Law No. 67 of 2016). Already VAT-registered → record the registration number. → egypt-vat in play. Taxable turnover > EGP 500k but not registered → flag: likely a mandatory-registration obligation; reviewer must confirm. Below EGP 500k and not registered → note; voluntary registration may still apply. EGP  _(VAT Law No. 67 of 2016)_
-- **6. Employees** — Does the person employ anyone (موظفين)? Yes → triggers payroll withholding (ضريبة كسب العمل) and employer/employee social insurance (التأمينات الاجتماعية). → eg-social-insurance (and payroll handling). No → still record the person's own social insurance position as a self-employed/self-occupied contributor.
-- **7. E-invoicing / e-receipt status** — Is the person registered on the ETA e-invoicing or e-receipt system (الفاتورة الإلكترونية / الإيصال الإلكتروني)? The ETA mandate applies to all VAT-registered taxpayers (B2B e-invoicing) and to listed taxpayers for B2C e-receipts. Record registration status; flag if VAT-registered but not yet on the e-invoicing system.
+1. **Residence for 2026.** Resident (مقيم)? Resident: continue. Non-resident: stop and refer to an Egyptian accountant who handles non-resident filings.
+2. **Legal form.** Individual sole proprietor or independent professional: continue. Company of any form, partnerships included: stop and refer to an accountant handling company returns.
+3. **Activity.** Commercial or industrial (نشاط تجاري أو صناعي), or professional, non-commercial (مهنة حرة / غير تجارية)? Both are in scope. Record it, and record both for mixed activity: it changes expense rules downstream.
+4. **Turnover and regime.** Rough annual turnover. Up to EGP 20,000,000: has the client filed the request form 10/1 طلبات, and on what date, or was the business under the small-enterprise tax rules of Law 152 of 2020 (moved across without a request, per the ETA Services Guide)? If consulting, what share of turnover comes from the top one or two clients?
+5. **VAT.** VAT-registered? Registration number. If not, total taxable and exempt sales in the year, and whether the client imports for trade, exports or acts as a distribution agent (these must register whatever the turnover). Below the limit and not registered: note it; voluntary registration may still suit the client (`egypt-vat`).
+6. **Staff.** Any employees (موظفين)? Yes: payroll tax (ضريبة كسب العمل) and employer and employee social insurance (التأمينات الاجتماعية). No: still record the client's own social insurance as a business owner.
+7. **E-invoice and e-receipt.** Registered on the ETA e-invoice (الفاتورة الإلكترونية) or e-receipt (الإيصال الإلكتروني) system? Named in an ETA phase decision? Joining under those phase decisions and actually issuing the documents is a condition of the turnover regime (Law 6 art. 3).
 
-Any single answer that puts the case out of scope (non-resident, company) is a blocking question — resolve it before moving on.
+## The method, step by step
 
-## Step 2 — Collect (the upload)
+### Working principles (upload first)
 
-Once scope is confirmed, ask for everything at once. One message, no preamble. Adapt the list to what was established in Step 1.
+1. Upload first. After the short scope sweep above, the user sends everything they have. Infer as much as possible before asking anything.
+2. Infer, then confirm. Parse every document, build a picture, then show one compact summary for correction.
+3. Fill gaps only. Ask only about what is missing, ambiguous or needs confirmation.
+4. Compute nothing. Routing and fact-gathering only. All numbers come from the downstream content skills and are reviewed by a qualified Egyptian accountant.
+5. Do not narrate phases. Never say "Step 1" or "now the inference phase". Do the work.
+6. Do not re-ask. If the sweep settled that the activity is professional, do not ask the activity type again. Track what is known.
+7. Do not ask what the documents already show. If the bank statement shows the turnover, confirm it; do not ask for it.
 
-Typical items to request:
+### Step 1. Scope sweep
 
-- Bank statements for 2026 (business and personal accounts) — to reconstruct turnover and expenses.
-- Invoices issued and received (فواتير) — and ETA e-invoice / e-receipt data exported from the e-invoicing portal if registered.
-- Records of professional/business expenses and asset purchases (for capital allowances under the general regime).
-- VAT records — returns filed, VAT registration certificate (شهادة التسجيل), input/output VAT data (if registered).
-- Social insurance records (التأمينات الاجتماعية) — own contributions and any payroll for employees.
-- Prior-year tax return (الإقرار الضريبي للعام السابق) and any ETA correspondence.
-- Tax card / registration data (البطاقة الضريبية) and tax file number.
-- Withholding certificates for tax withheld at source by clients, if any.
+Ask the seven questions under "Ask the client first", batched. Resolve any blocking answer first.
 
-Tell the user not to organise anything — Claude will identify each file. Wait for the dump; do not ask other questions while waiting. If the user uploads a partial set and says that's all they have, proceed to inference and request specific missing items during gap-filling.
+### Step 2. Collect (the upload)
 
-## Step 3 — Infer and confirm
+Once scope is confirmed, ask for everything at once, in one message with no preamble, adapted to Step 1:
 
-When documents arrive, parse each one and build an internal picture:
+- bank statements for 2026, business and personal accounts, to rebuild turnover and expenses;
+- invoices issued and received (فواتير), and the e-invoice or e-receipt data exported from the ETA systems if registered;
+- records of business or professional expenses and asset purchases (they support depreciation under the general system);
+- VAT records: returns filed, the VAT registration certificate (شهادة التسجيل), output and input VAT data;
+- social insurance records: own contributions and any payroll;
+- the prior-year return (الإقرار الضريبي للعام السابق) and any ETA correspondence;
+- the tax card (البطاقة الضريبية) and tax registration number;
+- certificates for tax withheld by clients, if any. A project in the turnover regime is outside the withholding and advance payment systems in both directions (Law 6 art. 11).
 
-- Bank statements → total inflows (candidate turnover / حجم الأعمال), recurring client payments, outflows for expenses, VAT and tax payments, social insurance payments, equipment purchases.
-- Invoices / ETA e-invoice data → reconcile issued invoices against deposits; confirm turnover; check VAT charged; confirm whether turnover crosses the EGP 500k VAT line or the EGP 20m simplified line.
-- VAT returns → periods filed, output vs input VAT, any gaps.
-- Prior-year return → prior regime used, prior turnover/net profit, carried-forward items.
-- Social insurance records → contribution status for the individual and any employees.
+Tell the user not to organise anything: each file will be identified. Wait for the upload and do not ask other questions meanwhile. If the user sends a partial set and says that is all, go on to Step 3 and ask for specific missing items while filling gaps.
 
-Then show one compact summary for the user to correct: identity and legal form, residency, activity type, estimated annual turnover, VAT status, employee status, e-invoicing status, the regime each fact points to, and any flags (e.g. "turnover near the EGP 20m line — confirm which side"; "taxable turnover above EGP 500k but no VAT registration found"). Invite a plain "ok" or corrections. Do not show raw extraction; show the picture.
+### Step 3. Infer and confirm
 
-During gap-filling, ask with ask_user_input_v0 where possible, and only about what the documents cannot show — for example the election into the simplified regime (it is optional for eligible businesses), the professional-vs-commercial split for mixed activity, or the business-use percentage of mixed personal/business expenses. Flag every judgment call for the reviewer.
+Parse each document:
 
-## Step 4 — Hand off (routing map)
+- bank statements: total inflows (candidate turnover), recurring client payments, outflows for expenses, VAT and tax payments, social insurance payments, equipment purchases;
+- invoices and e-invoice data: reconcile issued invoices to deposits, confirm turnover and VAT charged, and test turnover against the EGP 500,000 VAT limit and the EGP 20,000,000 turnover regime ceiling in the key figures table;
+- VAT returns: periods filed, output against input, gaps;
+- prior-year return: regime used, prior turnover or net profit, items carried forward;
+- social insurance records: status of the client and any employees.
 
-Once facts are confirmed, route and hand the structured intake package to eg-return-assembly. Routing logic:
+Then show one compact summary for correction: identity and legal form, residence, activity, estimated annual turnover, VAT status, staff, e-invoice status, the route each fact points to, and flags such as "turnover near the EGP 20,000,000 line, confirm which side" or "sales above EGP 500,000 but no VAT registration found". Invite a plain "ok" or corrections. Show the picture, not raw extraction.
 
-**Routing map**
+While filling gaps, ask with a structured question tool where one is available (such as `ask_user_input_v0`), and only about what the documents cannot show: whether the form 10/1 request was filed, the professional against commercial split of mixed activity, the business share of mixed personal and business costs. Flag every judgement call for the reviewer.
+
+### Step 4. Route and hand off
 
 | Established facts | Route to |
-| --- | --- |
-| Resident individual, turnover ≤ EGP 20m, opts into simplified regime | `eg-sme-tax` |
-| Resident individual, turnover > EGP 20m (or not eligible / declines simplified) | `eg-income-tax` |
-| Taxable turnover > EGP 500k, or already VAT-registered | `egypt-vat` |
-| Has employees, or own self-employed contributions to record | `eg-social-insurance` |
-| Non-resident | **Stop** — refer to a specialist in non-resident filings |
-| Company (شركة) of any form | **Escalate / stop** — corporate tax, out of scope for this workflow |
+|---|---|
+| Resident individual, turnover up to EGP 20,000,000, form 10/1 filed (or moved from Law 152/2020), not excluded by the 90% consultancy test | `eg-sme-tax` |
+| Resident individual above EGP 20,000,000 outside the one-time overshoot, or no request filed, or excluded | `eg-income-tax` |
+| Taxable and exempt sales reach EGP 500,000, already VAT-registered, or importer, exporter or distribution agent | `egypt-vat` |
+| Employees, or the client's own contributions to record | `eg-social-insurance` (and `eg-payroll` for staff) |
+| Non-resident | Stop: refer to a specialist in non-resident filings |
+| Company of any form | Stop: company tax, out of scope for this workflow |
 
-- **Mutual exclusivity and convergence of paths** — The simplified-regime and general-system paths are mutually exclusive for the income-tax computation: a case goes to either eg-sme-tax or eg-income-tax, never both. VAT (egypt-vat) and social insurance (eg-social-insurance) run in addition whenever their triggers are met, regardless of which income path applies. All paths converge on eg-return-assembly, which assembles the package and prepares it for accountant review.
+The two income tracks are mutually exclusive for the year: a case goes to `eg-sme-tax` or to `eg-income-tax`, never both. VAT and social insurance run in addition whenever their triggers are met. All paths converge on `eg-return-assembly`, which assembles the package for accountant review.
 
-State the route plainly to the user, confirm the reviewer step, and hand off. Example:
+State the route plainly, confirm the review step and hand off. Example:
 
-> Confirmed: resident sole proprietor, professional activity, turnover about EGP 6m, VAT-registered, no employees. You're eligible for the simplified SME regime and you've elected to use it. I'll prepare the simplified-tax package plus your VAT reconciliation, then assemble everything for review by a qualified Egyptian accountant before anything is filed with the ETA. Starting now.
+> Confirmed: resident sole proprietor, professional activity, turnover about EGP 6m, VAT-registered, no employees, request form 10/1 filed. You are in the turnover regime. I will prepare the turnover tax package and your quarterly VAT reconciliation, then assemble everything for review by a qualified Egyptian accountant before anything is filed with the ETA.
 
-## Disclaimer
+## Worked cases
 
-This skill performs orchestration and routing only. It establishes facts and directs the case to the correct Egyptian tax regime; it computes no tax figures itself. All figures, classifications, and filing positions produced by the downstream skills must be reviewed and signed off by a qualified Egyptian accountant (محاسب قانوني) before filing with the Egyptian Tax Authority (ETA / مصلحة الضرائب المصرية) or acting upon them. Thresholds and rules cited (the EGP 20 million simplified-regime threshold under Law No. 6 of 2025, the EGP 500,000 VAT registration threshold under VAT Law No. 67 of 2016, and the general income-tax brackets under Law No. 91 of 2005 as amended by Law No. 175 of 2023) should be re-verified against current ETA guidance at the time of filing.
+**Case 1. Developer, turnover EGP 6,000,000, request filed, VAT-registered.** Turnover is EGP 14,000,000 under the ceiling, so the turnover regime is open if the 90% consultancy test is passed. Sales are EGP 5,500,000 above the VAT limit, so VAT applies. Route: `eg-sme-tax` plus `egypt-vat`, then `eg-return-assembly`. Had turnover been EGP 23,000,000 in the first breach, the one-time overshoot (up to EGP 24,000,000, computed as 120% of the ceiling) would keep the case in `eg-sme-tax` at the top band; EGP 25,000,000 would move it to `eg-income-tax` from the following year.
 
-## Step 4 — Hand off (routing map)
+```oa-check
+name: Routing tests for a developer with turnover EGP 6m
+inputs:
+  turnover: 6000000
+  ceiling: 20000000
+  vat_limit: 500000
+steps:
+  - headroom_to_ceiling: ceiling - turnover
+  - excess_over_vat_limit: turnover - vat_limit
+  - overshoot_cap: ceiling * 1.2
+expected:
+  headroom_to_ceiling: 14000000.00
+  excess_over_vat_limit: 5500000.00
+  overshoot_cap: 24000000.00
+```
 
-0. **Route resident individual under simplified turnover threshold who opts in** — Route to eg-sme-tax
-0. **Route resident individual above threshold or declining simplified regime** — Route to eg-income-tax
-0. **Route VAT-relevant cases** — Route to egypt-vat
-0. **Route social insurance cases** — Route to eg-social-insurance
-0. **Stop for non-resident** — Stop — refer to a specialist in non-resident filings
-0. **Escalate/stop for company** — Escalate / stop — corporate tax, out of scope for this workflow
-0. **Converge and assemble package** — Hand off structured intake package to eg-return-assembly
+## When to refuse or refer
+
+- Non-resident, or a company of any form: stop and refer (Scope).
+- The client wants turnover split across relatives or new entities to stay under EGP 20,000,000 or the VAT limit: refuse. Law 6 art. 4(2) excludes a project that enters by splitting an activity without economic reason.
+- The client asks to suppress or hide sales: refuse and offer the lawful routes.
+- Open ETA examination, dispute, unfiled years or a settlement question: refer to a qualified Egyptian accountant (the dispute and settlement windows are in `eg-tax-optimization`).
+- Never present a route or any downstream figure as a filed return or a professional sign-off.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Law 6 of 2025, arts. 1 to 16, whole text (text layer read) | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf | 2026-11-16 |
+| VAT Law 67 of 2016, art. 16 (page image read) | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.67-2016.pdf | 2026-11-16 |
+| Law 7 of 2024, arts. 1 and 2: replaced Income Tax Law art. 8 band table (text layer read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf | 2026-11-16 |
+| MoF Decision 420 of 2025, arts. 1 to 4: forms 10/1 and 11/1 طلبات, form 20 إقرارات (page images read) | https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.420.of_.2025.pdf | 2026-11-16 |
+| ETA Services Guide, 2nd edition, service 1/1 (registration) and section 18/2 (Law 6), read in part | https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf | 2026-11-16 |
+
+Not yet confirmed: the reported cut of the VAT registration limit to EGP 250,000 (attributed to a 2025 resolution numbered 281); VAT Law art. 16 reads EGP 500,000 and the ETA list of VAT laws and decisions read on 2026-11-16 holds no such decision, so `egypt-vat` keeps 500,000 and the claim stays held. The current e-invoice and e-receipt phase decisions and whether a given client is named in them (the old text said every VAT-registered taxpayer is in the B2B e-invoice mandate; no phase decision was read). The direct move of Law 152/2020 enterprises rests on the ETA Services Guide, not on a statute read here. How partnerships and their partners are taxed: this workflow refers every partnership out.
