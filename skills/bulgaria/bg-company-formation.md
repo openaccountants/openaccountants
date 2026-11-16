@@ -1,7 +1,7 @@
 ---
 name: bg-company-formation
 description: "Company formation and entity choice in Bulgaria for 2026, in euro after the 1 January 2026 changeover. Covers the sole trader (ET), the limited liability company (OOD, and EOOD with one owner) and the joint-stock company (AD); minimum capital (EUR 1 for an OOD or EOOD, EUR 25,000 for an AD) and how much must be paid in before registration; registration in the Commercial Register at the Registry Agency, step by step, and how fast it decides; the state registration fees; the euro conversion of existing company capital; publication of annual financial statements by 30 September and the fine for missing it; and the first tax steps (corporate tax return, VAT registration threshold). Trigger phrases: register a company in Bulgaria, ООД, ЕООД, ЕТ, АД, Търговски регистър, minimum capital Bulgaria, Bulgarian company set-up. Out of scope: corporate tax computation (bg-corporate-income-tax), sole trader and dividend tax (bulgaria-income-tax), VAT (bulgaria-vat-return), cross-border (bg-cross-border)."
-version: 0.3
+version: 0.4
 jurisdiction: BG
 category: international
 tax_year: 2026
@@ -144,12 +144,12 @@ expected:
   saving: 28.12
 ```
 
-### Case 2. Statements not published, net sales EUR 400,000, second breach
+### Case 2. Statements not published, net sales EUR 400,000; repeat arithmetic held
 
-An OOD with net sales of EUR 400,000 for 2025 did not apply to publish its 2025 statements by 30 September 2026, and it had already been sanctioned once for the same breach. The company's property sanction is 0.1% to 0.5% of net sales, EUR 400 to EUR 2,000, above the EUR 102.26 floor; a repeat breach doubles it to EUR 800 to EUR 4,000 (Accountancy Act art. 74(1), (2)). The person responsible faces a fine of EUR 102.26 to EUR 1,533.88, doubled to EUR 204.52 to EUR 3,067.76.
+An OOD with net sales of EUR 400,000 for 2025 did not apply to publish its 2025 statements by 30 September 2026, and it had already been sanctioned once for the same breach. The ordinary company sanction is 0.1% to 0.5% of net sales, EUR 400 to EUR 2,000, above the EUR 102.26 floor; the ordinary personal fine is EUR 102.26 to EUR 1,533.88 (Accountancy Act art. 74(1)). These facts do not confirm the statutory repeat classification for either penalized subject. The company's prior sanction does not establish the responsible individual's repeat status. The retained block illustrates doubling already-rounded amounts, including EUR 800 to EUR 4,000 and EUR 204.52 to EUR 3,067.76; those doubled outputs are not usable legal penalty ranges. Confirm repeat eligibility separately for the company and individual, and the legally required conversion and rounding sequence under the applicable euro rules, before calculating any repeat sanction under art. 74(2). Do not infer a payable repeat fine by doubling already-rounded euro amounts.
 
 ```oa-check
-name: Bulgaria OOD, statements not published, net sales EUR 400,000, repeat breach, 2026
+name: Bulgaria OOD, conditional repeat arithmetic only; legal amount not confirmed, 2026
 inputs:
   net_sales: 400000
   rate: 1.95583
@@ -212,4 +212,4 @@ expected:
 | Value Added Tax Act, NRA consolidated text to State Gazette 115/2025, arts. 96(1), 100(1) | https://nra.bg/wps/wcm/connect/nra.bg25863/d8cef699-d86e-42b3-a6a8-26bf10a2e86e/%D0%97%D0%94%D0%94%D0%A1_2026.docx?MOD=AJPERES | 2026-11-16 |
 | Obligations and Contracts Act (Закон за задълженията и договорите), Registry Agency copy, art. 133 | https://www.registryagency.bg/media/filer_public/2026/08/01/zakon_za_zadlzheniiata_i_dogovorite.pdf | 2026-11-16 |
 
-Not yet confirmed: the period in Euro Introduction Act art. 32(1) for bringing articles and contracts into line (12 months in the Act as published in State Gazette 70/2024; the Act was amended by State Gazette 25, 49, 63, 65, 99, 100 and 115 of 2025 and 55 and 82 of 2026, which were not read; the previous version of this skill said 36 months, from a private law database); notary fees for the manager's consent and specimen signature (not in the Registry Agency tariff); the bank's charges and practice for the capital account; Commercial Act arts. 141(8) and 142 were not read (the declarations are listed from the Registry Agency page).
+Not yet confirmed: the period in Euro Introduction Act art. 32(1) for bringing articles and contracts into line (12 months in the Act as published in State Gazette 70/2024; the Act was amended by State Gazette 25, 49, 63, 65, 99, 100 and 115 of 2025 and 55 and 82 of 2026, which were not read; the previous version of this skill said 36 months, from a private law database); notary fees for the manager's consent and specimen signature (not in the Registry Agency tariff); the bank's charges and practice for the capital account; Commercial Act arts. 141(8) and 142 were not read (the declarations are listed from the Registry Agency page). Case 2's statutory repeat eligibility is unverified separately for the company and responsible individual, as is the legally required conversion and rounding sequence for doubled fines. Its retained doubled outputs are arithmetic illustrations only; do not use them for a client's penalty, filing or advice until those conditions are confirmed.
