@@ -5,7 +5,7 @@ version: 0.2
 type: filing-howto
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v 1.0 (content)
 tier: 2
 domain: income-tax
@@ -180,8 +180,8 @@ Return due dates, section 263(1)(c) as substituted by section 66 of the Finance 
 
 | Item | Value | Conditions, exact source excerpt and official URL |
 | --- | --- | --- |
-| Services threshold, outside 4 named special-category States; compulsory-registration/exemption review still required | INR 2,000,000 | "for suppliers of services would be Rs. 20 lakhs and Rs. 10 lakhs (for States of Manipur, Mizoram, Nagaland and"; https://cbic-gst.gov.in/pdf/01062019-GST-An-Update.pdf |
-| Historical 2019 overview: exclusive-goods threshold, subject to operative notification below | INR 4,000,000 | "for the suppliers of goods would be Rs. 40 lakhs and Rs. 20 lakhs"; https://cbic-gst.gov.in/pdf/01062019-GST-An-Update.pdf |
+| Services threshold, outside 4 named special-category States; compulsory-registration/exemption review still required | INR 2,000,000 (derived: 20 lakh x 100,000 rupees per lakh) | "for suppliers of services would be Rs. 20 lakhs and Rs. 10 lakhs (for States of Manipur, Mizoram, Nagaland and"; https://cbic-gst.gov.in/pdf/01062019-GST-An-Update.pdf |
+| Historical 2019 overview: exclusive-goods threshold, subject to operative notification below | INR 4,000,000 (derived: 40 lakh x 100,000 rupees per lakh) | "for the suppliers of goods would be Rs. 40 lakhs and Rs. 20 lakhs"; https://cbic-gst.gov.in/pdf/01062019-GST-An-Update.pdf |
 
 #### GST: Notification 83/2020-Central Tax (GSTR-1)
 
@@ -644,6 +644,8 @@ For payment, use the official [e-Pay Tax workflow](https://www.incometax.gov.in/
 | https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter10/section50_v1.00.html | Read for entire operative section 50 and neighboring amendments: delayed-tax cash-ledger proviso/proceedings exception and separate wrong-ITC utilization rule | 2026-11-14 |
 | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/Tax%20Credit%20Mismatch%20-FAQ | Read for all 4questions: statement mismatch, deductor/challan corrections and credit reconciliation | 2026-11-14 |
 | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/e-pay-tax | Read for FAQ 4-15 and 38: CRN, modes, receipts and erroneous payment handling | 2026-11-14 |
+
+| CBIC GST update, historical 1 June 2019, targeted reread | Read for Registration and Threshold slide 1/19 and Main Features 1/5: 20 lakh service and 40 lakh goods figures, named-State exceptions and effective date. Numeral conversions are derived; this does not replace the current operative-law and notification checks above | 2026-11-16; https://cbic-gst.gov.in/pdf/01062019-GST-An-Update.pdf |
 
 **Not yet confirmed:** final TY 2026-27 return utility/box fields and verification deadlines; defective rule 164(6)(l) cross-reference and rule 164(5)/(6)(o) capital-gain interaction before ITR 4 use; section 425(2)/(3) ordinary-case construction; case-specific GST classification/export/place-of-supply/compulsory-registration exceptions, annual-return exemptions and deadline extensions; current wrong-ITC interest rate/computation; specific special-rate/rebate/marginal-relief computations; prior depreciation values without opening schedules; final next-year law for 2027-28. Missing/upstream-failed/out-of-scope matters stay visible as partial-package blockers, never usable unsupported amounts. Current non-salary TDS certificate fields are taken only after the sibling period mapping is verified.
 
