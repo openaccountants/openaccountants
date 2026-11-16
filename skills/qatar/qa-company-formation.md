@@ -56,7 +56,7 @@ ordinary mainland LLC route, not a licence to operate in every sector.
 |---|---|---|
 | Mainland LLC partners | One to fifty; liability limited to capital share. | [CCL art. 228](https://almeezan.qa/legislations/66253e38-5696-4b73-84a8-e7696d9508e5) |
 | Capital | Partners determine it, subject to applicable sector conditions; contributions must be fully allocated and paid. | [CCL arts. 231–235](https://almeezan.qa/legislations/66253e38-5696-4b73-84a8-e7696d9508e5) |
-| Foreign participation above 49% | Approval application and statutory exclusions must be tested; up to 100% is conditional. | [Foreign Investment Law arts. 2–4](https://almeezan.qa/legislations/5181e3c0-8689-4d83-9fec-c9b560af090a) |
+| Foreign participation above 49% | Approval application and statutory exclusions must be tested; up to 100% is conditional. | [Foreign Investment Law arts. 2–4, Arabic Gazette](https://files.almeezan.gov.qa/almeezan/a92d29be-0fd0-4726-be5f-3187aedb3ef5.pdf); [official public text](https://api.moj.gov.qa/api/v1/Legislation/5181e3c0-8689-4d83-9fec-c9b560af090a?lang=2) |
 | Statutory decision periods | Foreign-ownership application: 15 days after complete application, silence is rejection. Registration: 15 days for a complete application; neither is an end-to-end service promise. | [Foreign Investment Law art. 3](https://almeezan.qa/legislations/5181e3c0-8689-4d83-9fec-c9b560af090a); [CCL art. 233](https://almeezan.qa/legislations/66253e38-5696-4b73-84a8-e7696d9508e5) |
 
 ### 1. Establish foreign investment approval
@@ -169,8 +169,9 @@ Record the chosen regime and activities; owners/nationalities/beneficial ownersh
 | Commercial Companies Law 11/2015, current arts. 228–237 including amended art. 233 | https://almeezan.qa/legislations/66253e38-5696-4b73-84a8-e7696d9508e5 | 2026-10-24 |
 | Foreign Investment Law 1/2019, arts. 2–4 | https://almeezan.qa/legislations/5181e3c0-8689-4d83-9fec-c9b560af090a | 2026-10-24 |
 | Current income-tax ER, arts. 25 and 29 | https://almeezan.qa/legislations/afee272e-4654-41c7-9e76-2b42f13c9b35 | 2026-10-24 |
+| Foreign Investment Law 1/2019, limited additional read of arts. 1–4 and 27 from the official public body; Arabic Gazette original controls over the machine English translation | [Arabic Gazette](https://files.almeezan.gov.qa/almeezan/a92d29be-0fd0-4726-be5f-3187aedb3ef5.pdf); [public body](https://api.moj.gov.qa/api/v1/Legislation/5181e3c0-8689-4d83-9fec-c9b560af090a?lang=2) | 2026-11-16 |
 
-The legal source reads above are the completed 24 October 2026 reads recorded in the prior independent pack review. On 16 November the writer confirmed that the previously reviewed legal paragraphs are unchanged in the current Guide; no fresh law read is claimed.
+The first three source records retain their completed 24 October 2026 reads and prior independent review. On 16 November the unchanged legal paragraphs were bound to that reviewed Guide. The additional foreign-investment source read above is limited to the specified provisions; no full legal source scan is claimed.
 
 Not yet confirmed: no service fee, universal renewal period or full formation
 turnaround is asserted. Sector-specific permissions and fees require the actual application source. Current portal field labels, payment references and confirmation screens have not been tested.
