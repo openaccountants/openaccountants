@@ -1,49 +1,216 @@
 ---
 name: sk-company-formation
-description: "Company formation and entity choice in Slovakia, tax year 2026, each rule tied to the Slovak law on slov-lex.sk. Covers the limited liability company (s.r.o.: EUR 5,000 capital, EUR 750 per member, 1 to 50 members, 30% of each cash contribution and EUR 2,500 in total paid before filing, full payment for a single founder), the joint-stock company (a.s., EUR 25,000), the simple joint-stock company (j.s.a., EUR 1), general and limited partnerships, founding documents (notarial deed, lawyer-authorised document or the simplified e-form), the bar on founders with tax or social insurance arrears, the 90-day filing window, registration under the new Commercial Register Act No. 29/2026 from 17 August 2026 (court or notary as registrar, 2 working days), the 2026 court fees for registration by the court (EUR 220 s.r.o., EUR 550 a.s., EUR 50 name reservation), and annual filing. Trigger phrases: set up an s.r.o., Slovak company formation, minimum capital Slovakia, obchodný register, zakladateľská listina. Out of scope: sk-corporate-income-tax, slovakia-vat-registration-4-7-7a, slovakia-vat-return, sk-payroll-social, slovakia-pit, sk-cross-border, sk-transfer-pricing, sk-tax-overview."
-version: 0.2
+description: "Register a Slovak s.r.o. in 2026: choose ordinary or simplified formation, test founders and directors, reconcile capital, prepare annexes, submit the actual register application and follow the decision. Includes alternative entities, court fees, transition to Act 29/2026 and two recomputing capital decisions."
+version: 0.3
 jurisdiction: SK
 category: international
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-15
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
 # Slovakia Company Formation & Entity Choice
 
-## Entity types and incorporating an s.r.o.
+## Scope
 
-The figures below are in force in 2026. From 17 August 2026 the Commercial Register Act No. 530/2003 Coll. no longer applies to new filings: the Commercial Register Act No. 29/2026 Coll. replaced it, and the Commercial Code and the Court Fees Act were amended to match. A registration proceeding started and not finally closed by 16 August 2026 is completed under the old rules.  _(Commercial Register Act No. 29/2026, § 126(1), § 128, Art. XX: https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html)_
+Use this method to choose the legal vehicle and register an ordinary Slovak s.r.o. in 2026, then hand its tax and employment work to the relevant skills. Capital is company funding, separate from registration and professional fees. The new Commercial Register Act applies to new filings from 17 August 2026; proceedings started and not finally concluded by 16 August continue under the old rules. [Register Act 29/2026, § 126(1), § 128 and Article XX](https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html).
 
-- **Limited liability company (s.r.o.):** the most common form. Its share capital is made up of the members' contributions. One person can found it, and it can have at most 50 members. Each member is liable for the company's debts up to their unpaid contribution entered in the Commercial Register. The name must contain "spoločnosť s ručením obmedzeným", "spol. s r. o." or "s. r. o.".  _(Commercial Code (Act No. 513/1991 Coll.), § 105(1)-(3), § 106, § 107: https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html)_
-- **Joint-stock company (a.s.):** capital divided into shares, suited to larger ventures. One founder is allowed only if the founder is a legal person; otherwise two or more founders. Minimum share capital EUR 25,000.  _(Commercial Code, § 162(1), (3): https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html)_
-- **Simple joint-stock company (j.s.a.):** one or more founders, minimum share capital EUR 1.  _(Commercial Code, § 220t(1)-(2): https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html)_
-- **Partnerships:** a general partnership (v.o.s.) needs at least two persons trading under a common name, each liable jointly and severally with all their assets. In a limited partnership (k.s.) one or more limited partners are liable up to their unpaid contribution (minimum contribution EUR 250) and one or more general partners with all their assets. For income tax, each v.o.s. partner and each k.s. general partner is taxed on their share of the partnership's tax base, split in the profit-sharing ratio in the partnership agreement, otherwise equally.  _(Commercial Code, § 76, § 93(1), (3): https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html; Income Tax Act (Act No. 595/2003 Coll.), § 6(7)-(8): https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)_
-- **s.r.o. minimum share capital:** EUR 5,000 (total).  _(Commercial Code, § 108(1): https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html)_
-- **Minimum contribution per member:** EUR 750 per member; each member takes part in the founding with one contribution only, in whole euro.  _(Commercial Code, § 109(1)-(2): https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html)_
-- **Capital paid up before registration:** at least 30% of each cash contribution must be paid before the application for registration is filed, and the paid cash contributions plus the in-kind contributions handed over must total at least 50% of the EUR 5,000 minimum, so at least EUR 2,500. An in-kind contribution must be paid in full before the capital is registered and valued by an expert opinion. A company with a single founder can only be registered once its share capital is paid in full. Every member must pay the rest of the contribution within five years of the company's formation at the latest.  _(Commercial Code, § 59(2)-(3), § 111(1)-(2), § 113(1): https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html)_
-- **Who cannot found an s.r.o.:** a person on the list of tax debtors or with recorded social insurance arrears, unless the tax or customs office consents (the consent is attached to the filing), and a person registered as an enforcement debtor. This bar does not apply to a foreign founder.  _(Commercial Code, § 105b(1)-(2): https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html)_
-- **Founding documents:** a memorandum of association signed by all founders, or a deed of foundation for a single founder, in the form of a notarial deed or a document authorised by a lawyer. An s.r.o. can also be founded in a simplified way through the ministry's electronic form (Slovak and English) if it has no more than five members, is set up to do business only in up to 15 free trades, all contributions are in cash, the managing director is the contributions administrator and there is no supervisory board.  _(Commercial Code, § 57(1), (3)-(4), § 110a(1)-(2): https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html)_
-- **Core incorporation steps:** 1) check the name is free and, if wanted, reserve it in the register of reserved trade names (the reservation ends on registration and at the latest 60 days after the confirmation); 2) sign the memorandum or deed of foundation; 3) obtain the trade authorisation (živnosť) or other business licence; 4) pay in the capital; 5) file the electronic application for registration in the Commercial Register.  _(Commercial Code, § 57, § 62(1), § 111: https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html; Commercial Register Act (Act No. 29/2026 Coll.), § 110-111: https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html)_
-- **Filing window after foundation:** the application for registration must be filed within 90 days of the founding (signing the founding document) or of delivery of the document proving the trade or other business authorisation. The company comes into existence on the day it is entered in the Commercial Register.  _(Commercial Code, § 62(1): https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html)_
-- **How and where to file:** the application goes only electronically, through the designated e-form on the specialised portal, and must be authorised; the filer must have an activated electronic mailbox. For a new s.r.o. the application is filed by all the managing directors. Registration is done by the registry court or, for a first registration or a change, by a registrar, who is a notary (except for conversions, fee-exempt filers and filings through the single contact point). A registrar who finds a defect invites the filer to fix it within 15 days.  _(Commercial Register Act No. 29/2026, § 2(n), § 42(1)-(2), § 44(1)-(2), § 45(1)-(2), (6), § 46(3): https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html)_
-- **Typical timeline:** once the conditions are met, the registry court or the registrar makes the entry within two working days of receiving the application (for a registrar who asked for a correction, two working days from the end of the 15-day correction period). Document preparation and the trade licence come on top.  _(Commercial Register Act No. 29/2026, § 58(1): https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html)_
-- **Commercial Register court fee (2026):** Fee Schedule item 17 charges these fees for registration by the registry court; it sets no court fee for registration by a notary registrar. First registration of an s.r.o. (and any legal person other than an a.s.) EUR 220; a.s. EUR 550; branch of a foreign company EUR 220; change of registered data EUR 50; name reservation EUR 50. The fees include publication in the Commercial Bulletin. The general 50% discount for electronic filing does not apply to Commercial Register matters, so filing online does not lower the fee. The same EUR 220 and EUR 550 applied in the 12 June to 16 August 2026 version. (The earlier version of this skill said EUR 150 for an electronic s.r.o. filing; that is not the 2026 rate.)  _(Court Fees Act (Act No. 71/1992 Coll.), § 6(3), (5), Fee Schedule items 17 and 17a: https://www.slov-lex.sk/static/SK/ZZ/1992/71/20260817.html)_
-- **Core annual compliance:** prepare the statutory financial statements; the general meeting approves them and decides on the profit or loss. File the financial statements electronically in the Register of Financial Statements within six months of the balance sheet date (if they are not yet approved, file the unapproved ones and the approval notice within 15 working days of approval). File the corporate income tax return and pay the tax within three months of the end of the tax year (31 March 2027 for calendar 2026); a notice to the tax office extends this by up to three whole months, or up to six where the income includes foreign-source income. Rates and the minimum tax are in sk-corporate-income-tax.  _(Commercial Code, § 125(1)(b): https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html; Accounting Act (Act No. 431/2002 Coll.), § 23a(1), (3)-(4): https://www.slov-lex.sk/static/SK/ZZ/2002/431/20260601.html; Income Tax Act, § 49(2)-(3): https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)_
-- **Corporate tax and VAT on a new company:** corporate income tax is 10% where taxable revenue is no more than EUR 100,000, 24% where it is above EUR 5,000,000 and 21% otherwise (see sk-corporate-income-tax). A business becomes a VAT payer from 1 January after a calendar year in which its turnover passed EUR 50,000, or at once on the supply that takes it past EUR 62,500 in the current year (see slovakia-vat-registration-4-7-7a).  _(Income Tax Act, § 15(b)(1): https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html; VAT Act (Act No. 222/2004 Coll.), § 4(1): https://www.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html)_
+### Quick reference
+
+| Question | Answer and conditions | Official source |
+|---|---|---|
+| Minimum s.r.o. capital | EUR 5,000; each member's contribution at least EUR 750, expressed in whole positive euro; each member subscribes only 1 contribution (in words on the page) | [Commercial Code §§ 108-109](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html) |
+| Before a multiple-founder filing | At least 30% of each cash contribution, plus an aggregate paid-cash/delivered-in-kind floor of 50% of the statutory minimum capital; EUR 2,500 is derived from EUR 5,000 × 50%, not half of whatever higher capital is promised | [Commercial Code § 111(1), read with § 108(1)](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html) |
+| Single founder | All subscribed capital paid before registration; the partial-payment rule cannot be used | [Commercial Code § 111(2)](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html) |
+| Ordinary s.r.o. first registration by the court | EUR 220 court fee; no general online-filing discount in register matters; professional, licence and other costs are separate | [Court Fees Act § 6(5), schedule item 17(a)(2)](https://www.slov-lex.sk/static/SK/ZZ/1992/71/20260817.html) |
+| Filing window | Within 90 days of foundation or delivery of the document proving the trade/other business authorisation, as applicable | [Commercial Code § 62(1)](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html) |
+| Registration period | 2 working days (in words on the page), if the legal conditions are met, counted from statutory receipt; a notary's requested correction changes the starting point | [Register Act §§ 44(3), 45(3), 45(6), 58(1)](https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html) |
+
+## Ask the client first
+
+- Which vehicle, business activities, intended filing date and accounting year?
+- Who are the founders and managing directors, their legal status/nationality and any arrears, enforcement or disqualification record?
+- What total and individual capital is promised, cash or in kind, and what has actually been delivered?
+- Can the simplified route's full conditions be met, including banking, personal participation and director eligibility?
+- Who can authorise the electronic filing, receive electronic delivery and provide the seat, beneficial-owner and conditional annex evidence?
+- Are staff, foreign management/income, taxable supplies or regulated activities expected?
+
+## The method, step by step
+
+### Choose the vehicle before the filing route
+
+| Vehicle | Founders, capital and liability | Official source |
+|---|---|---|
+| Limited liability company, s.r.o. | 1 founder permitted (in words on the page); at most 50 members. The company answers with all its assets; a member answers up to the unpaid contribution recorded in the register. Its name includes “spoločnosť s ručením obmedzeným”, “spol. s r. o.” or “s. r. o.” | [Commercial Code §§ 105-107](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html) |
+| Joint-stock company, a.s. | A sole founder must be a legal person; otherwise at least 2 founders (in words on the page). Minimum capital EUR 25,000. Capital is divided into shares | [Commercial Code §§ 154(1), 162(1), 162(3)](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html) |
+| Simple joint-stock company, j.s.a. | At least 1 founder (in words on the page); minimum capital EUR 1; all capital subscribed and paid before the company comes into existence | [Commercial Code § 220t](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html) |
+| General partnership, v.o.s. | At least 2 persons (in words on the page), trading under a common name and jointly and severally liable with all their assets | [Commercial Code § 76](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html) |
+| Limited partnership, k.s. | At least 1 limited partner and 1 general partner (in words on the page). Limited partners answer up to the unpaid registered contribution, minimum EUR 250; general partners answer with all their assets | [Commercial Code §§ 93(1), 93(3)](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html) |
+
+For an individual v.o.s. partner or k.s. general partner, subject to the reverse-hybrid exception in § 17j(1), the partnership tax-base share follows the agreement's profit-sharing ratio, otherwise equal shares. This is not the limited partner's method. Use [slovakia-pit](slovakia-pit.md) for the individual's tax treatment and [sk-corporate-income-tax](sk-corporate-income-tax.md) for company taxation; the limited-partner allocation remains a boundary below. [Income Tax Act §§ 6(7)-(8), 17j](https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html).
+
+### Check the founders and directors separately
+
+An s.r.o. founder listed as a tax debtor or with recorded social-insurance arrears needs the competent tax/customs administrator's consent, attached to the filing. An enforcement debtor cannot found it under the same provision. The foreign-founder exception applies to that provision as a whole. It does not waive the managing director's separate disqualification/enforcement checks or foreign-director residence-permit requirement. The latter does not apply to EU/EEA or OECD citizens. [Commercial Code § 105b](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html); [Register Act §§ 20(2), 51(3)-(4)](https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html); [Decree 203/2026 § 1(3)](https://static.slov-lex.sk/static/SK/ZZ/2026/203/20260817.html).
+
+### Prepare the founding document and choose the activity route
+
+Ordinarily, every founder signs the memorandum; a sole founder uses a deed of foundation. The document must be a notarial deed or authorised by a lawyer. Include the name/seat, members, activities, capital and each contribution/payment timetable, directors and how they act, any supervisory board, contribution administrator, any initial reserve-fund terms, founder benefits and expected formation costs. [Commercial Code §§ 57(1), 57(3), 110](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html).
+
+The ministry's designated simplified founding form is available in Slovak and English. It requires all of the following; using an ordinary word-processing template does not qualify:
+
+- No more than 5 members (in words on the page), a business purpose, only eligible Annex 4a free-trade activities and at most 15 of them; the name uses “s. r. o.”; cash contributions only; a managing director is contribution administrator; no supervisory board. [Commercial Code § 110a](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html).
+- The proposed director has legal capacity, is at least 18, meets the statutory clean-record test and is recorded in the register of natural persons. Members hold an account at a bank/foreign-bank branch seated in an EU/EEA member state. Individual members are unrepresented both at foundation and registration; legal-person members act through their statutory body at foundation. The prescribed founding form and all other general registration conditions still apply. A Slovak citizen supplies the data for an official criminal-record request; another citizen supplies the home-state criminal-record extract or equivalent. [Register Act §§ 20(2), 52(3)-(4), 53(1)-(2), 53(4)](https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html).
+
+For a simplified company, eligible Annex 4a trade authority arises on registration. From the new register regime, an ordinary company choosing exclusively those eligible free activities can also acquire the authorisation at registration. For other licensed activities obtain the relevant authorisation evidence before filing. The ordinary Annex 4a route still has the director capacity, age, clean-record and natural-person-register checks; it is not a way around them. [Trade Licensing Act § 10(2)-(3), (5)-(7)](https://static.slov-lex.sk/static/SK/ZZ/1991/455/20260817.html); [Register Act §§ 51(5), 52](https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html).
+
+### Settle the name, capital and annexes
+
+Check the proposed name against existing names and reservations; a different legal-form suffix alone does not distinguish an identical name. Optional reservation lasts until registration or at most 60 days after the reservation confirmation, rather than the application. [Register Act §§ 51(1)-(2), 110-111](https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html).
+
+Apply both cash-payment tests in the quick reference. In-kind contributions need an expert valuation and full delivery before the capital is registered; work and services cannot be an in-kind contribution. The contribution administrator issues a written statement of each actual payment for the filing. Do not substitute a promise for payment. For a newly formed s.r.o., remaining contributions are payable under the memorandum's terms, at the latest within 5 years (in words on the page) of the company's coming into existence; the statute separately covers later entry/new contributions. Directors report full payment without undue delay. [Commercial Code §§ 59(2)-(3), 60(4), 111, 113(1)](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html).
+
+Build the annex set from the current decree, rather than treating the portal's “optional” label as a legal exemption:
+
+| Evidence | When needed | Official source |
+|---|---|---|
+| Memorandum/deed, administrator's payment statement | Ordinary founding evidence; statutes if adopted; authorisation evidence unless the statutory exception applies; expert report for in-kind contributions; tax consent where required | [Decree 203/2026 § 4(a)-(f)](https://static.slov-lex.sk/static/SK/ZZ/2026/203/20260817.html) |
+| Foreign-founder declarations | Foreign individual: verified-signature declaration unless included in the founding document. Foreign legal person: verified-signature declaration where a foreign-register certificate and registration number cannot be attached | [Decree 203/2026 § 4(g)-(h)](https://static.slov-lex.sk/static/SK/ZZ/2026/203/20260817.html) |
+| Registered seat | If the right to use it does not follow from the land register, attach evidence of ownership/use right or the prescribed owner/co-owner consent with verified signatures | [Decree 203/2026 § 1(1)](https://static.slov-lex.sk/static/SK/ZZ/2026/203/20260817.html) |
+| Appointments, authority and other conditional evidence | Consent to appointment, any required signature specimen; power of attorney and employee declaration where applicable; foreign-director permit unless exempt; reservation confirmation if using a reserved name; prescribed declaration for registered data not otherwise evidenced | [Decree 203/2026 § 1(2)-(6)](https://static.slov-lex.sk/static/SK/ZZ/2026/203/20260817.html) |
+
+### Complete the actual register application
+
+1. Open the ministry's [ordinary s.r.o. registration service](https://sluzby.orsr.sk/Sluzby/ZapisSro), or its [simplified service](https://sluzby.orsr.sk/Sluzby/ZapisSroZjednodusenymSposobom) after using the designated founding-document generator. The simplified service warns that a filer already holding a business authorisation should use ordinary first registration. These public instructions were read; authenticated screens and a particular filer's access were not tested.
+2. Populate the actual company's data: name, legal form, seat, members, each subscribed/paid contribution, subscribed/paid total capital, activities, directors and representation powers, beneficial owners, plus any relevant prokura, supervisory-board or other registrable event. The register supplies the identification number where not already assigned; do not invent one. [Register Act §§ 11, 50(3)](https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html).
+3. Attach and authorise the required electronic documents. The application is electronic through the designated form/portal, with an electronic mailbox activated for delivery. All managing directors are the applicants for a new s.r.o. If acting through a representative, the permitted classes are a lawyer, notary or the principal's employee; the special unrepresented-individual condition for simplified formation still applies. A single contact point can transmit an eligible first registration to the court under its separate verification/conversion rules. [Register Act §§ 39, 44-48, 53(2)(c)](https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html).
+4. Select the registry court or an eligible notary registrar. The notary route excludes conversions, fee-exempt applicants and single-contact-point submissions. The ministry FAQ explains choosing “registrátor – notár” at the send step, then choosing the notary; a receipt goes to the electronic mailbox and the notary requests payment of the notarial remuneration. [Register Act §§ 2(n), 42](https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html); [Ministry FAQ, registrar submission and follow-up](https://www.justice.gov.sk/sluzby/obchodny-register/najcastejsie-otazky/).
+5. For the court route, pay the fee and retain the payment/receipt evidence. Statutory court receipt occurs when the court receives payment information and any required exceptional paper annex, within 15 days of the electronic application. For a notary, receipt is the application plus any required exceptional paper annex delivered within that 15-day period. If a document's nature/size prevents electronic delivery, follow the declaration and paper-delivery procedure. A mere electronic send timestamp does not start every statutory clock. [Register Act §§ 39(4), 44(3), 45(3)](https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html).
+6. Monitor the electronic mailbox for a correction request, refusal or registration confirmation and extract. A notary can require correction within 15 days after delivery of the request; the ordinary 2-working-day period (in words on the page) then runs from expiry of that correction period. Without requested correction it runs from statutory receipt, if the conditions are satisfied. A company exists on its recorded registration date; absent an effective future date under the statutory rule, entry is dated the day after performance of registration. Simplified registration cannot use the future-date option. [Register Act §§ 45(6), 58(1), 58(3)-(4)](https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html); [Commercial Code § 62(1)](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html).
+
+### Court fees, refusals and contribution default
+
+| Item | Amount or action, with conditions | Official source |
+|---|---|---|
+| First registration by court | s.r.o./other legal person other than a.s. EUR 220; a.s. EUR 550; foreign-company undertaking/branch EUR 220 | [Court Fees Act, item 17(a)](https://www.slov-lex.sk/static/SK/ZZ/1992/71/20260817.html) |
+| Data change and reservation | EUR 50 for any number of changed data for the same entity in the same application; beneficial-owner additions/changes are exempt. Name reservation EUR 50 under its separate item | [Court Fees Act, item 17(c), notes 1 and 4; item 17a(a)](https://www.slov-lex.sk/static/SK/ZZ/1992/71/20260817.html) |
+| What the court charge includes | The entry/data-change charges include Commercial Bulletin publication. The general 50% online reduction does not apply to register matters. A notary registration attracts notarial remuneration rather than this court charge; it is not a free-registration route | [Court Fees Act § 6(3), (5), item 17 note 2](https://www.slov-lex.sk/static/SK/ZZ/1992/71/20260817.html); [Ministry FAQ, court charge versus notarial remuneration](https://www.justice.gov.sk/sluzby/obchodny-register/najcastejsie-otazky/) |
+| Earlier-year fee comparison | The 12 June to 16 August 2026 version also states EUR 220 for an s.r.o. and EUR 550 for an a.s. The former EUR 150 electronic s.r.o. claim is not a usable 2026 rate | [Court Fees Act, historical item 17(a)](https://static.slov-lex.sk/static/SK/ZZ/1992/71/20260612.html) |
+| Court refusal | Ordinary objections within 15 days of delivery, electronically authorised with supporting documents and active electronic mailbox. If conditions are then met, registration within 10 working days (in words on the page) of receipt. Ordinary objections carry no court fee | [Register Act §§ 59-60](https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html); [Court Fees Act, item 17 note 5](https://www.slov-lex.sk/static/SK/ZZ/1992/71/20260817.html) |
+| Notary refusal or repeated court refusal | Qualified objections to the court within 15 days of delivery; mandatory lawyer/notary representation unless the applicant is a lawyer. Submit through the designated electronic form/portal, authorised by that representative, with the supporting documents in electronic form. Court fee EUR 50; statutory receipt is when the court receives payment information | [Register Act § 62](https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html); [Court Fees Act, item 17, qualified-objections row](https://www.slov-lex.sk/static/SK/ZZ/1992/71/20260817.html) |
+| Unpaid contribution after its due date | Default interest 20% of the unpaid amount unless the memorandum provides otherwise. An exclusion-warning cure period cannot be shorter than 3 months (in words on the page); corporate action is needed, not automatic exclusion | [Commercial Code § 113(2)-(4)](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html) |
+
+### Hand off annual compliance and tax
+
+The general meeting approves the financial statements and decides the profit/loss allocation. Although the Accounting Act has a general 6-month deposit rule (in words on the page) unless another law provides otherwise, the Income Tax Act requires the relevant statements to be prepared at the tax-period end and deposited by the tax-return deadline. For an ordinary calendar-year company, the 2026 return/payment date is 31 March 2027, derived from 3 calendar months (in words on the page) after year end. A timely notice can extend by at most 3 whole calendar months, or 6 if taxable foreign-source income is included (both in words on the page); bankruptcy/liquidation use a separate application procedure. Deposit the statements electronically in the Register of Financial Statements by the applicable deadline, even if still unapproved; the approval notice follows within 15 working days of approval, and approved statements or the approval notice must be deposited within 1 year (in words on the page) after period end. Do not wait for approval to file. [Commercial Code § 125(1)(b)](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html); [Accounting Act §§ 23, 23a(1), (3)-(4), (7)](https://www.slov-lex.sk/static/SK/ZZ/2002/431/20260601.html); [Income Tax Act § 49(2)-(3), (11)](https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html).
+
+Load [sk-corporate-income-tax](sk-corporate-income-tax.md) for taxable-revenue rate selection, minimum tax, taxable base, losses, current return and tax extensions. Load [slovakia-vat-registration-4-7-7a](slovakia-vat-registration-4-7-7a.md) for turnover-trigger dates, acquisition/service registrations and deregistration; [slovakia-vat-return](slovakia-vat-return.md) for rates, invoices, returns and input tax; [sk-payroll-social](sk-payroll-social.md) before employing/paying staff; [sk-cross-border](sk-cross-border.md) for residence, foreign-source/withholding/treaty facts; [sk-transfer-pricing](sk-transfer-pricing.md) for connected transactions; and [slovakia-pit](slovakia-pit.md) for individual partners. This formation method does not repeat their rates.
+
+## Boundary and exception table
+
+| Fact that changes the route | Required response |
+|---|---|
+| Sole founder | Pay all subscribed capital; do not use the multiple-founder partial-payment case |
+| In-kind contribution, more members/activities than allowed, supervisory board or a missing simplified eligibility condition | Use the ordinary route with the required documents; do not merely tick the simplified form |
+| Eligible free activities only | Test the authorisation-at-registration route rather than imposing a universal prior licence requirement |
+| Foreign founder is also a director | Apply the founder exemption and the director checks separately |
+| Old proceeding still pending | Apply the transitional rule; do not lodge a duplicate new application to bypass it |
+| Missing access, signatures, annexes or payment information | Resolve the deficiency before asserting statutory receipt or completion |
+
+## Worked cases
+
+### Cash contributions: the aggregate floor changes the filing decision
+
+Assume an ordinary cash-funded s.r.o. with 2 founders promising EUR 3,000 and EUR 2,000, no higher contractual prepayment, and the court route. Each promised contribution exceeds the EUR 750 minimum. Paying just 30% each gives EUR 900 + EUR 600 = EUR 1,500, below the derived EUR 2,500 aggregate floor. Filing then fails the capital test. Pay EUR 1,500 and EUR 1,000 instead: each exceeds its individual minimum and the aggregate reaches EUR 2,500, leaving EUR 2,500 to pay under the contribution timetable. With only the EUR 220 court fee added, immediate funding is EUR 2,720; this excludes all professional/licence/other costs. Capital remains company funding. [Commercial Code §§ 108-109, 111, 113(1)](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html); [Court Fees Act item 17(a)(2)](https://www.slov-lex.sk/static/SK/ZZ/1992/71/20260817.html).
+
+```oa-check
+name: Slovakia sro cash contribution floor 2026
+inputs:
+  contribution_a: 3000
+  contribution_b: 2000
+  minimum_capital: 5000
+  paid_a: 1500
+  paid_b: 1000
+  court_fee: 220
+steps:
+  - individual_minimum_a: contribution_a * 0.30
+  - individual_minimum_b: contribution_b * 0.30
+  - aggregate_floor: minimum_capital * 0.50
+  - shortfall_at_individual_minima: aggregate_floor - individual_minimum_a - individual_minimum_b
+  - actual_paid: paid_a + paid_b
+  - remaining: contribution_a + contribution_b - actual_paid
+  - immediate_funding: actual_paid + court_fee
+expected:
+  individual_minimum_a: 900
+  individual_minimum_b: 600
+  aggregate_floor: 2500
+  shortfall_at_individual_minima: 1000
+  actual_paid: 2500
+  remaining: 2500
+  immediate_funding: 2720
+```
+
+### Sole or joint founders: higher promised capital is not the statutory floor
+
+Assume EUR 10,000 promised cash capital, no higher contractual prepayment and the same court route. A sole founder must pay EUR 10,000 before registration. If genuine joint ownership is intended and 2 founders instead promise EUR 5,000 each, the individual 30% tests require EUR 1,500 each: EUR 3,000 total exceeds the derived EUR 2,500 statutory floor. Immediate funding including only the EUR 220 court fee is therefore EUR 10,220 alone or EUR 3,220 jointly, a derived EUR 7,000 difference; the joint company still has EUR 7,000 outstanding, not a tax saving. Paying EUR 2,500 jointly would fail the individual tests, while requiring EUR 5,000 jointly merely because that is half of promised capital would misread the aggregate floor. Choose ownership on its legal/commercial facts; the sole-founder route cannot use joint payment treatment. [Commercial Code §§ 108-109, 111, 113(1)](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html); [Court Fees Act item 17(a)(2)](https://www.slov-lex.sk/static/SK/ZZ/1992/71/20260817.html).
+
+```oa-check
+name: Slovakia sole versus joint founder capital 2026
+inputs:
+  promised_capital: 10000
+  joint_a: 5000
+  joint_b: 5000
+  minimum_capital: 5000
+  court_fee: 220
+steps:
+  - sole_paid: promised_capital
+  - joint_individual_minima: joint_a * 0.30 + joint_b * 0.30
+  - joint_paid: max(joint_individual_minima, minimum_capital * 0.50)
+  - sole_funding: sole_paid + court_fee
+  - joint_funding: joint_paid + court_fee
+  - funding_difference: sole_funding - joint_funding
+  - joint_outstanding: promised_capital - joint_paid
+expected:
+  sole_paid: 10000
+  joint_individual_minima: 3000
+  joint_paid: 3000
+  sole_funding: 10220
+  joint_funding: 3220
+  funding_difference: 7000
+  joint_outstanding: 7000
+```
+
+## When to refuse or refer
+
+- Missing founder/director eligibility, actual contribution, seat, beneficial-owner or authority evidence: stop the filing until resolved.
+- Regulated activity, in-kind valuation, special rights, restructurings, contested residence, a possible reverse hybrid under Income Tax Act § 17j, or a limited-partner allocation: obtain the relevant legal/tax analysis before applying an ordinary s.r.o. answer.
+- Do not promise a complete setup time from the register's statutory processing period, treat a receipt as approval, count capital as a fee, or claim accountant approval for this rewrite.
+- Use the owning tax skill's actual form and period; registration does not itself settle tax residence, VAT or payroll status.
+
+## Completion checklist
+
+- Confirm the vehicle, route and applicable old/new regime; preserve signed founding and eligibility evidence.
+- Reconcile subscribed, paid and outstanding capital member by member; collect the administrator's truthful statement and conditional annexes.
+- Retain the authorised application, fee/payment information, statutory receipt evidence, correction/refusal correspondence, final confirmation and extract.
+- Check the effective registration date, identification number and registered details, then set the accounts/tax/payroll calendar using the owner skills.
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and operative scope actually read | Official URL | Read on |
 |---|---|---|
-| Commercial Code (Obchodný zákonník), Act No. 513/1991 Coll., version in force from 17.08.2026: § 57, 59, 62, 76, 93, 105, 105b, 106-111, 113, 125, 162, 220t | https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html | 2026-10-30 |
-| Commercial Register Act, Act No. 29/2026 Coll., version in force from 17.08.2026: § 2, 42, 44, 45, 46, 58, 110, 111, 126, 128 | https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html | 2026-10-30 |
-| Commercial Register Act, Act No. 530/2003 Coll., version history (last version 01.06.2026 to 16.08.2026) | https://www.slov-lex.sk/static/SK/ZZ/2003/530/ | 2026-10-30 |
-| Court Fees Act, Act No. 71/1992 Coll., version in force from 17.08.2026 (and the 12.06.2026 version for comparison): § 6, Fee Schedule items 17, 17a | https://www.slov-lex.sk/static/SK/ZZ/1992/71/20260817.html | 2026-10-30 |
-| Accounting Act, Act No. 431/2002 Coll., version in force from 01.06.2026: § 23, 23a | https://www.slov-lex.sk/static/SK/ZZ/2002/431/20260601.html | 2026-10-30 |
-| Income Tax Act, Act No. 595/2003 Coll., version in force from 01.01.2026: § 6(7)-(8), 15(b), 49 | https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-10-30 |
-| VAT Act, Act No. 222/2004 Coll., version in force from 01.01.2026: § 4(1) | https://www.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html | 2026-10-30 |
+| Commercial Code, current from 17 August 2026: §§ 57, 59-60, 62, 76, 93, 105, 105b, 106-111, 113, 125, 154, 162, 220t | https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html | 2026-11-15 |
+| Register Act 29/2026: §§ 2, 11, 20, 39, 42, 44-48, 50-53, 58-60, 62, 110-111, 126, repeal and Article XX | https://www.slov-lex.sk/static/SK/ZZ/2026/29/20260817.html | 2026-11-15 |
+| Decree 203/2026, general annexes § 1 and s.r.o. annexes § 4 | https://static.slov-lex.sk/static/SK/ZZ/2026/203/20260817.html | 2026-11-15 |
+| Trade Licensing Act, authorisation-at-registration and other pre-entry routes, § 10 | https://static.slov-lex.sk/static/SK/ZZ/1991/455/20260817.html | 2026-11-15 |
+| Court Fees Act, § 6 and items 17/17a; official binding PDF pages 27-28 visually checked | https://www.slov-lex.sk/static/SK/ZZ/1992/71/20260817.html | 2026-11-15 |
+| Court Fees Act, historical item 17, version 12 June to 16 August 2026 | https://static.slov-lex.sk/static/SK/ZZ/1992/71/20260612.html | 2026-11-15 |
+| Accounting Act, register, deposit, approval and electronic submission, §§ 23-23a | https://www.slov-lex.sk/static/SK/ZZ/2002/431/20260601.html | 2026-11-15 |
+| Income Tax Act, individual partnership allocation § 6(7)-(8) and reverse-hybrid exception § 17j; return/payment/extensions and accounts deadline § 49 | https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-11-15 |
+| Ministry, ordinary first-registration service: public instructions and annex list | https://sluzby.orsr.sk/Sluzby/ZapisSro | 2026-11-15 |
+| Ministry, simplified first-registration service: eligibility, business-authorisation warning and public instructions | https://sluzby.orsr.sk/Sluzby/ZapisSroZjednodusenymSposobom | 2026-11-15 |
+| Ministry FAQ: registrar choice, electronic receipt, payment/correction follow-up, notarial remuneration versus court fee | https://www.justice.gov.sk/sluzby/obchodny-register/najcastejsie-otazky/ | 2026-11-15 |
 
-Not yet confirmed: what a notary charges when registering the company as registrar (the Court Fees Act sets no court fee for that route); trade licence (živnosť) fees and steps under the Trade Licensing Act (Act No. 455/1991 Coll.); how a limited partnership's share attributable to limited partners is taxed; the "full setup ~2-4 weeks" in the earlier version of this skill (no official source).
+Not yet confirmed: the applicable amount of a notary registrar's remuneration and total professional/setup cost; trade-licence fees and the detailed procedure for activities outside the confirmed authorisation-at-registration route; the limited-partner share's tax computation; the earlier “full setup approximately 2 to 4 weeks” estimate; statistical claims that an s.r.o. is the most common form or an a.s. suits a given venture; authenticated portal screens and a particular filer's access. The former EUR 150 electronic court fee and blanket 6-month accounts deadline are corrected above, not alternative current methods.
