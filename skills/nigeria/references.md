@@ -38,11 +38,11 @@ Refer a request for a filing figure to the owning tax skill. Refuse to describe 
 
 | Source and actual read scope | URL | Read on |
 | --- | --- | --- |
-| National Assembly NTA: read sections6/12/33/56 to59 and the small-company definition, not a software licence | https://nass.gov.ng/documents/download/11249 | 2026-11-16 |
-| National Assembly NTAA: read sections11/13/14/31/49/51 and the small-business definition | https://nass.gov.ng/documents/download/11250 | 2026-11-16 |
+| National Assembly NTA: read sections 6/12/33/56 to59 and the small-company definition, not a software licence | https://nass.gov.ng/documents/download/11249 | 2026-11-16 |
+| National Assembly NTAA: read sections 11/13/14/31/49/51 and the small-business definition | https://nass.gov.ng/documents/download/11250 | 2026-11-16 |
 | PolicyEngine repository metadata, complete short README and licence identification; tax implementation not read | https://github.com/PolicyEngine/policyengine-ng | 2026-11-16 |
 | PolicyEngine LICENSE: read opening identification and version | https://github.com/PolicyEngine/policyengine-ng/blob/master/LICENSE | 2026-11-16 |
-| Naija Tax Agent metadata and complete README; linked root licence unavailable | https://github.com/Ahmzyjazzy/naija-tax-agent/blob/main/README.md | 2026-11-16 |
+| Naija Tax Agent metadata; README read in full, linked root licence unavailable | https://github.com/Ahmzyjazzy/naija-tax-agent/blob/main/README.md | 2026-11-16 |
 | Repository LICENSING.md: read software/content mapping and third-party copyleft sections at local main revision | https://github.com/openaccountants/openaccountants/blob/2844c309238b4fdb63be0a3d0ad9ae99a8ea89c8/LICENSING.md | 2026-11-16 |
 
 Not yet confirmed: the intended-use licence permission for either integration; an operative licence file for naija-tax-agent; the accuracy, completeness, maintenance status and security of either project's tax logic or dependencies. The original direct-reuse and validation claims are withdrawn as usable instructions, with both project identities retained.
