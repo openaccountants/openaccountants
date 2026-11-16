@@ -14,14 +14,14 @@ Calendar tax year for individuals; companies are taxed per financial year (räke
 
 | Tax | Skill | Status |
 |---|---|---|
-| Income tax | se-employee-income-tax, se-income-tax, se-capital-gains, se-closely-held-company-312 | sourced from the law |
-| Company tax | se-corporate-tax | checked against the law |
-| VAT or sales tax | sweden-vat-return (2026 deep-tax) | source-cited draft |
-| Social contributions | se-social-contributions, sweden-payroll, se-employee-income-tax | checked against the law |
-| Payroll | sweden-payroll, se-benefits-and-allowances | checked against the law |
-| Transfer pricing | se-transfer-pricing | checked against the law |
-| Cross-border | se-cross-border | checked against the law |
-| Bookkeeping and annual accounts | sweden-bookkeeping, sweden-financial-statements (K2 annual report for a private AB) | source-cited draft |
+| Income tax | se-employee-income-tax, se-income-tax, se-capital-gains, se-closely-held-company-312 | Built from the law; Not yet approved |
+| Company tax | se-corporate-tax | Built from the law; Not yet approved |
+| VAT or sales tax | sweden-vat-return (2026 deep-tax) | Built from the law; Not yet approved |
+| Social contributions | se-social-contributions, sweden-payroll, se-employee-income-tax | Built from the law; Not yet approved |
+| Payroll | sweden-payroll, se-benefits-and-allowances | Built from the law; Not yet approved |
+| Transfer pricing | se-transfer-pricing | Built from the law; Not yet approved |
+| Cross-border | se-cross-border | Built from the law; Not yet approved |
+| Bookkeeping and annual accounts | sweden-bookkeeping, sweden-financial-statements (K2 annual report for a private AB) | Built from the law; Not yet approved |
 
 ## Official sources
 
@@ -36,3 +36,7 @@ Calendar tax year for individuals; companies are taxed per financial year (räke
 - Lag (2026:100) om särskild beräkning av arbetsgivaravgifter för unga: https://data.riksdagen.se/dokument/sfs-2026-100.text (read 2026-10-24)
 - Lag (2025:1334) om återbetalning av vissa avgifter till växa-företag: https://data.riksdagen.se/dokument/sfs-2025-1334.text (read 2026-10-24)
 - Skatteverket: https://www.skatteverket.se (read 2026-10-22)
+
+## Unresolved branches in this update
+
+The five updated skills do not confirm the 2027 filing-round administrative instructions, the universal need for a new SINK application when only a work period changes, country-specific treaty results, unresolved crypto protocols or insolvency claims, or entity-specific K3 and specialised closing policies. Those branches remain on the individual skills' Not yet confirmed lines. The references file preserves historical software leads and licence/validation claims as unverified and non-operative.
