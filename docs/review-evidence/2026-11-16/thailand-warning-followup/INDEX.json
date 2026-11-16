@@ -1,0 +1,716 @@
+{
+  "reviewed_skill_commit": "736e8a95acd3d372cf204f3bfc014bf30f6d2340",
+  "composed_source_commit": "5eeab9c620eb011f3d96df006b4b944ae952d8e3",
+  "current_main_composition": "81a11a1c5bc8624bed954b9e67118fa2f501cd29",
+  "scope": "Complete selected NEW writer/independent/composition records. Prior full country source-review evidence remains in public PR2084. No new whole-country source review or approval claim.",
+  "previous_full_country_evidence_index": "https://github.com/openaccountants/openaccountants/pull/2084#issuecomment-6916411949",
+  "archive": {
+    "path": "review-evidence.tar.gz",
+    "bytes": 211183,
+    "sha256": "50057c2e1b2ae3d7ec0d52c98438f104ddf938b9c56a2e01a8574d677834bcd1",
+    "member_count": 59,
+    "payload_bytes": 1375469,
+    "selected_payload_root_sha256": "a12ef5e2d259b71adc7557f205b778718e421a42d4b9a7325e018fc531180b97",
+    "root_algorithm": "SHA256 of UTF8 compact JSON of path/bytes/sha256 members sorted by path, JSON keys sorted, ensure_ascii=False",
+    "format": "Deterministic USTAR regular files, uid/gid/mtime0, mode0644, empty uname/gname; gzip empty filename/mtime0/compression9"
+  },
+  "readable_report": {
+    "path": "REPORT.md",
+    "bytes": 13901,
+    "sha256": "5837e3e819b424c2541fe183fae16bd78b5be937aa3f7f281de7f28a1aff34ea",
+    "verbatim_final_report_sha256": "78fdd5a2c9c0344a629a3cc00216dbedb6469b7d1856c8b9f5bdbbf234193445"
+  },
+  "files": [
+    {
+      "path": "public-evidence/composition/SELECTED-EVIDENCE-BOUNDARIES.json",
+      "bytes": 5789,
+      "sha256": "47559525b32d0e4964d0c53fc71ec92a8460abddf6cfba72daa4b463265447ff",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-bundles-prepared/thailand-warning-followup/SELECTED-EVIDENCE-BOUNDARIES.json",
+      "purpose": "Explicit correct-source binding and rejected historical writer-locator disposition; source/full-copy exclusions and prior public review index.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/composition/composition-continuity.json",
+      "bytes": 2620,
+      "sha256": "de82e1b37283ed74db703da472be4e59bcbf6b3792d494bf89a7f1289dc7f634",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-bundles-prepared/thailand-warning-followup/composition-continuity.json",
+      "purpose": "Fresh main-composition continuity/protection or scoped terminal check. No tax-source dates or review verdicts changed.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/composition/post-merge-quotes.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-bundles-prepared/thailand-warning-followup/post-merge-quotes.exit",
+      "purpose": "Fresh main-composition continuity/protection or scoped terminal check. No tax-source dates or review verdicts changed.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/composition/post-merge-quotes.txt",
+      "bytes": 129,
+      "sha256": "f1d14e22ac85e694f5cd74a96af78da49c31d20eda70eb75c53738fbc1d94991",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-bundles-prepared/thailand-warning-followup/post-merge-quotes.txt",
+      "purpose": "Fresh main-composition continuity/protection or scoped terminal check. No tax-source dates or review verdicts changed.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/composition/post-merge-standards.json",
+      "bytes": 318,
+      "sha256": "e8d26091ed323ccbb3c2f44524f637e63ebac4ce1b5c8af15b4de7197527524f",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-bundles-prepared/thailand-warning-followup/post-merge-standards.json",
+      "purpose": "Fresh main-composition continuity/protection or scoped terminal check. No tax-source dates or review verdicts changed.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/composition/post-merge-strict-sync.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-bundles-prepared/thailand-warning-followup/post-merge-strict-sync.exit",
+      "purpose": "Fresh main-composition continuity/protection or scoped terminal check. No tax-source dates or review verdicts changed.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/composition/post-merge-strict-sync.txt",
+      "bytes": 81,
+      "sha256": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-bundles-prepared/thailand-warning-followup/post-merge-strict-sync.txt",
+      "purpose": "Fresh main-composition continuity/protection or scoped terminal check. No tax-source dates or review verdicts changed.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/composition/post-merge-validate.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-bundles-prepared/thailand-warning-followup/post-merge-validate.exit",
+      "purpose": "Fresh main-composition continuity/protection or scoped terminal check. No tax-source dates or review verdicts changed.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/composition/post-merge-validate.txt",
+      "bytes": 192,
+      "sha256": "a7d8a057660b3d212d944ce39725ec8cef8aa0fa1ee6a85ef9d7c717d65fc074",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-bundles-prepared/thailand-warning-followup/post-merge-validate.txt",
+      "purpose": "Fresh main-composition continuity/protection or scoped terminal check. No tax-source dates or review verdicts changed.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/composition/premerge-country-bindings.json",
+      "bytes": 2503,
+      "sha256": "f7c023abd4c03b9e5286c8a10fb3700335274764a583c7bffa15cb8003f5c5c2",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-bundles-prepared/thailand-warning-followup/premerge-country-bindings.json",
+      "purpose": "Fresh main-composition continuity/protection or scoped terminal check. No tax-source dates or review verdicts changed.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/independent/FINAL-MANIFEST.json",
+      "bytes": 5505,
+      "sha256": "e817cfd4000563ab8c9f100697e5685feaf50f4327f7eda85b64c4d07082352f",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/FINAL-MANIFEST.json",
+      "purpose": "Immutable original independent manifest and all nine reviewed-country hashes; local-source references are not archive inclusion claims.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/independent/REPORT.md",
+      "bytes": 10733,
+      "sha256": "78fdd5a2c9c0344a629a3cc00216dbedb6469b7d1856c8b9f5bdbbf234193445",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/REPORT.md",
+      "purpose": "Complete new independent exact-delta review, preservation/review-chain binding, arithmetic proof or rejected-source-locator disposition.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/independent/all133-original-topic-destinations.json",
+      "bytes": 123864,
+      "sha256": "7777d648b924c844124edde2b8ce8db7cf15958ad48faa874d506eeeabfd36e2",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/all133-original-topic-destinations.json",
+      "purpose": "Complete new independent exact-delta review, preservation/review-chain binding, arithmetic proof or rejected-source-locator disposition.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/independent/all404-payload-bindings.json",
+      "bytes": 194002,
+      "sha256": "bc02a097162d890b327d743cbbaa1b1923ca482509454af7db1b0d5a63d5ce9b",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/all404-payload-bindings.json",
+      "purpose": "Complete new independent exact-delta review, preservation/review-chain binding, arithmetic proof or rejected-source-locator disposition.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/independent/all812-original-line-destinations.json",
+      "bytes": 469688,
+      "sha256": "4649d9f3c8ff950448803a03fe8566f54bb0e776549e97061ec56dfc0f0d5be3",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/all812-original-line-destinations.json",
+      "purpose": "Complete new independent exact-delta review, preservation/review-chain binding, arithmetic proof or rejected-source-locator disposition.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/independent/all9-protected-and-source-bindings.json",
+      "bytes": 5822,
+      "sha256": "f0520509f7efbef988c383c0d49c34bb0e9a2ea7f7fe97e095704515f5ea12cd",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/all9-protected-and-source-bindings.json",
+      "purpose": "Complete new independent exact-delta review, preservation/review-chain binding, arithmetic proof or rejected-source-locator disposition.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/independent/complete-parent-line-bindings.json",
+      "bytes": 48638,
+      "sha256": "879573823db53e8351f6dccd2421435d00af50a4266a3dbfefc64466c588321f",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/complete-parent-line-bindings.json",
+      "purpose": "Complete new independent exact-delta review, preservation/review-chain binding, arithmetic proof or rejected-source-locator disposition.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/independent/independent-all22-case-recomputation.json",
+      "bytes": 19416,
+      "sha256": "2e6a1eabae8e47e927c0185a709f4f81f939eaa0a506e6090b377ddf5aed13ff",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/independent-all22-case-recomputation.json",
+      "purpose": "Complete new independent exact-delta review, preservation/review-chain binding, arithmetic proof or rejected-source-locator disposition.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/independent/independent-source-and-rejected-locator.json",
+      "bytes": 2247,
+      "sha256": "e74fc84707ba03ff2a710a5a07030dd55ead58d970bb728be41916b73090927e",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/independent-source-and-rejected-locator.json",
+      "purpose": "Complete new independent exact-delta review, preservation/review-chain binding, arithmetic proof or rejected-source-locator disposition.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/independent/prior-review-and-writer-chain.json",
+      "bytes": 20756,
+      "sha256": "c4cc92ed90df15e9fc118da3c54ef4bad0f81f607a6060aeeaae7721ea29e249",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/prior-review-and-writer-chain.json",
+      "purpose": "Complete new independent exact-delta review, preservation/review-chain binding, arithmetic proof or rejected-source-locator disposition.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/independent/review.py",
+      "bytes": 13710,
+      "sha256": "5ed22f80f013bbd238bce49543365cda87ec8bed340958fe82fed85cefe17d4e",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/review.py",
+      "purpose": "Complete new independent exact-delta review, preservation/review-chain binding, arithmetic proof or rejected-source-locator disposition.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/FINAL-MANIFEST.json",
+      "bytes": 7455,
+      "sha256": "8ed93e3426033bd29d3d5fd2780b4395c012646b89f4cce36c78ce48e4ca79c2",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/FINAL-MANIFEST.json",
+      "purpose": "Immutable original writer inventory; references excluded local full copies and wrong excerpt without bundling those bytes.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/HANDOFF.md",
+      "bytes": 5146,
+      "sha256": "3db130e0e523e20970376d94ea702f427396b7a87c7fcdbd485e354faa29a0d4",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/HANDOFF.md",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/build-bindings.py",
+      "bytes": 10625,
+      "sha256": "91452c7e62e08838107b26c4ef1736d5eda8f3c28d11d6278edbb23f09e867bf",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/build-bindings.py",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/calculator-quotes-final.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/calculator-quotes-final.exit",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/calculator-quotes-final.txt",
+      "bytes": 129,
+      "sha256": "f1d14e22ac85e694f5cd74a96af78da49c31d20eda70eb75c53738fbc1d94991",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/calculator-quotes-final.txt",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/calculator-quotes.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/calculator-quotes.exit",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/calculator-quotes.txt",
+      "bytes": 96,
+      "sha256": "cad00f598f9c8e270336b59db513ac86034d584bd071cbe38d678e9654bd13cf",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/calculator-quotes.txt",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/case-continuity.json",
+      "bytes": 3366,
+      "sha256": "91f59b0ed1f5b4a3203635fc04371a7780d6969ef782ac101b1cbfa3146dab5e",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/case-continuity.json",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/complete-parent-pit-line-map.json",
+      "bytes": 83384,
+      "sha256": "0f06d7d5c5643c115a63b19b833faa679dd9eda5033c3d49c439276c9b52e7d5",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/complete-parent-pit-line-map.json",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/diff-check-final.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/diff-check-final.exit",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/diff-check-final.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/diff-check-final.txt",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/diff-check.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/diff-check.exit",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/diff-check.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/diff-check.txt",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/examples.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/examples.exit",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/examples.txt",
+      "bytes": 59,
+      "sha256": "8ecc6cba33a12da166e0f8aea7da14128491afc4c588983a55ff162968b1d077",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/examples.txt",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/git-and-country-bindings.json",
+      "bytes": 4024,
+      "sha256": "ff5138023b84e46e76f04722a86d48ae41ed48da97ed7b734e3586520932f608",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/git-and-country-bindings.json",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/merged-stock-format-replays.json",
+      "bytes": 1552,
+      "sha256": "0c4df7e5839da18aafed00280897b84db1d2b77e89fd4c61e7a8539b92f8fa7c",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/merged-stock-format-replays.json",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/minimal-relocation.patch",
+      "bytes": 4259,
+      "sha256": "62e31539a56a3d4833331e65806fc5ddcd3cff3a374f863655583613cc585ab2",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/minimal-relocation.patch",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/open-pr-files-at-closeout.json",
+      "bytes": 11322,
+      "sha256": "59ebe654861d0faa2513652ca6f82a49a2967c627e35a95d035dafd1c2d0b364",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/open-pr-files-at-closeout.json",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/pre-edit-stock-replay.json",
+      "bytes": 1197,
+      "sha256": "012a22673d27cb425fcad33568d1057c4170131568ecf20ed28f672380c2c41b",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/pre-edit-stock-replay.json",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/prior-review-chain.json",
+      "bytes": 29379,
+      "sha256": "ea135d29079f6b8274307726edd8541eddd3e1f45ae7c451ff3530826bef3a44",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/prior-review-chain.json",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/protected-and-no-loss.json",
+      "bytes": 488,
+      "sha256": "c451a3e929676d5f9ad3414b8421306875d93e439fcc4ba0fb91524c4fe51e04",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/protected-and-no-loss.json",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/rebound-404-payloads.json",
+      "bytes": 282810,
+      "sha256": "045cd82dca86188722348188ec295705ccab42236aad62a80321cab7032ebfaa",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/rebound-404-payloads.json",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/row-sources-final.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/row-sources-final.exit",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/row-sources-final.txt",
+      "bytes": 317,
+      "sha256": "16387bdb9fcd574a0eab905d0351a37805bf60df1eca164f4d539f63ba92714f",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/row-sources-final.txt",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/row-sources-pit.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/row-sources-pit.exit",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/row-sources-pit.txt",
+      "bytes": 317,
+      "sha256": "16387bdb9fcd574a0eab905d0351a37805bf60df1eca164f4d539f63ba92714f",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/row-sources-pit.txt",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/source-and-relocation.json",
+      "bytes": 2541,
+      "sha256": "831beaccec58c24d3219284e0226ea55ab516f86dd51cc430ab9f87b325dd1cf",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/source-and-relocation.json",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/standards-final.json",
+      "bytes": 39,
+      "sha256": "2b95be3d392301ee461a8e8ec1517b259aeb09b23297d49e97a0cced5650d16f",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/standards-final.json",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/standards.json",
+      "bytes": 317,
+      "sha256": "0e01591da9b14b8909a82c1cbd7f5d7010fe04e210b11c4d656ff88f0b7a97ec",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/standards.json",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/sync-final.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/sync-final.exit",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/sync-final.txt",
+      "bytes": 81,
+      "sha256": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/sync-final.txt",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/sync-working.exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/sync-working.exit",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/sync-working.txt",
+      "bytes": 234,
+      "sha256": "6212680b5d6314a40002eefa07899488d341b44e817c8df9dfc4fdb1262e0a24",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/sync-working.txt",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/validate-final.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/validate-final.exit",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/validate-final.txt",
+      "bytes": 192,
+      "sha256": "a7d8a057660b3d212d944ce39725ec8cef8aa0fa1ee6a85ef9d7c717d65fc074",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/validate-final.txt",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/validate.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/validate.exit",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/writer/validate.txt",
+      "bytes": 99,
+      "sha256": "b483c71445dda503a93a56421eb28c2b76ea443c8b429d8f78cf654133c08258",
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/validate.txt",
+      "purpose": "Complete new writer proof, preservation/check record or historical failure. Source claims are subject to the independent rejected-locator resolution.",
+      "payload_unchanged": true
+    }
+  ],
+  "excluded_local_only": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/README.md",
+      "sha256": "cd1fd3a1402386bf389d6cd54c9c817b6ad67c7aaebe9eb99d5429df07eaacc5",
+      "bytes": 3810,
+      "reason": "Full candidate/original file copy excluded."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/references.md",
+      "sha256": "cb74331e8cecf4e5251d63fb0cbc988a86d1ae453ffd11c33e0d3e24a011f931",
+      "bytes": 5268,
+      "reason": "Full candidate/original file copy excluded."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/th-company-formation.md",
+      "sha256": "4cb7aa33ce4ce7c315d8400e1ee5092ceef7f67dc30f1c5817df55192be9fdc8",
+      "bytes": 14173,
+      "reason": "Full candidate/original file copy excluded."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/th-corporate-income-tax.md",
+      "sha256": "f9cdb321589c7f436254d8596a80cf626f31f1823773316efe45e14cbcd5b6c8",
+      "bytes": 14663,
+      "reason": "Full candidate/original file copy excluded."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/th-payroll-social.md",
+      "sha256": "e2efc4376b8aa291f47e44b981ad1be51a062fb9787e1660559b63d1b29008d3",
+      "bytes": 18635,
+      "reason": "Full candidate/original file copy excluded."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/th-tax-overview.md",
+      "sha256": "6323168e02c4eae6ddc00de6cd30054234eb586ad7c420dbabf8eb07e46ee652",
+      "bytes": 10637,
+      "reason": "Full candidate/original file copy excluded."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/th-top-up-tax.md",
+      "sha256": "a0edb5a2ea1d5fddee4f1e48143cd217c7f2479e5043e2ec39c8d5640ef9cb6a",
+      "bytes": 8565,
+      "reason": "Full candidate/original file copy excluded."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/thailand-pit.md",
+      "sha256": "00e13155b2984710571a2eb517acda9dbe60cc49e3a1eded7a28ba02b9d8d596",
+      "bytes": 26013,
+      "reason": "Full candidate/original file copy excluded."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/thailand-vat.md",
+      "sha256": "dc536de624702a1efc659b4756a4b7bd86755985f49ec95954f625d5c21d6dce",
+      "bytes": 46123,
+      "reason": "Full candidate/original file copy excluded."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/social-security-native-neighbours.txt",
+      "sha256": "c93da7dcb737321d2485482d351e27e88efb3d414c4b0c0a70caaf84ad3c2dd7",
+      "bytes": 8642,
+      "reason": "Wrong raw primary excerpt explicitly rejected by independent review. Original retained locally without modification."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/correct-independent-native-scope.txt",
+      "sha256": "907dfe8fcf285be6c2c9bc00e53c03e8270773bb4e1f9b0f2170bc361cdb9a4d",
+      "bytes": 5857,
+      "reason": "Raw official HTML or complete primary-text scope. Fresh read/provision/scope and hashes remain bound in the independent source record; raw source text stays local."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/rd5937-fresh.html",
+      "sha256": "3e128925103ebf12ac596e16638d8abf2d8a0975e78e430092ef76c3da902e0c",
+      "bytes": 241990,
+      "reason": "Raw official HTML or complete primary-text scope. Fresh read/provision/scope and hashes remain bound in the independent source record; raw source text stays local."
+    }
+  ],
+  "correct_source_and_rejected_locator": {
+    "reviewed_head": "736e8a95acd3d372cf204f3bfc014bf30f6d2340",
+    "authoritative_source_resolution": "public-evidence/independent/independent-source-and-rejected-locator.json",
+    "wrong_writer_claim": "public-evidence/writer/source-and-relocation.json native_scope_path and public-evidence/writer/HANDOFF.md source-excerpt claim point to an explicitly rejected crypto-context excerpt. Their bytes are preserved as historical writer records, not accepted legal proof.",
+    "correct_replacement": "The complete independent REPORT and source-and-rejected-locator record provide the actual Code47(1)(ฌ)/(i) source URL, fresh body hash, correct complete scope hash, short native quote and exact neighbour/read scope. Correct raw scope stays local.",
+    "wrong_excerpt_sha256": "c93da7dcb737321d2485482d351e27e88efb3d414c4b0c0a70caaf84ad3c2dd7",
+    "correct_scope_sha256": "907dfe8fcf285be6c2c9bc00e53c03e8270773bb4e1f9b0f2170bc361cdb9a4d",
+    "previous_full_country_evidence_index": "https://github.com/openaccountants/openaccountants/pull/2084#issuecomment-6916411949",
+    "prior_evidence_scope": "Previous full source/no-loss/case review remains in its original public2084 index. New404/133/812 files in this archive are continuity rebindings, not republication of the old full legal corpus or a new whole-country review.",
+    "exclusions": [
+      {
+        "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/README.md",
+        "sha256": "cd1fd3a1402386bf389d6cd54c9c817b6ad67c7aaebe9eb99d5429df07eaacc5",
+        "bytes": 3810,
+        "reason": "Full candidate/original file copy excluded."
+      },
+      {
+        "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/references.md",
+        "sha256": "cb74331e8cecf4e5251d63fb0cbc988a86d1ae453ffd11c33e0d3e24a011f931",
+        "bytes": 5268,
+        "reason": "Full candidate/original file copy excluded."
+      },
+      {
+        "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/th-company-formation.md",
+        "sha256": "4cb7aa33ce4ce7c315d8400e1ee5092ceef7f67dc30f1c5817df55192be9fdc8",
+        "bytes": 14173,
+        "reason": "Full candidate/original file copy excluded."
+      },
+      {
+        "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/th-corporate-income-tax.md",
+        "sha256": "f9cdb321589c7f436254d8596a80cf626f31f1823773316efe45e14cbcd5b6c8",
+        "bytes": 14663,
+        "reason": "Full candidate/original file copy excluded."
+      },
+      {
+        "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/th-payroll-social.md",
+        "sha256": "e2efc4376b8aa291f47e44b981ad1be51a062fb9787e1660559b63d1b29008d3",
+        "bytes": 18635,
+        "reason": "Full candidate/original file copy excluded."
+      },
+      {
+        "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/th-tax-overview.md",
+        "sha256": "6323168e02c4eae6ddc00de6cd30054234eb586ad7c420dbabf8eb07e46ee652",
+        "bytes": 10637,
+        "reason": "Full candidate/original file copy excluded."
+      },
+      {
+        "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/th-top-up-tax.md",
+        "sha256": "a0edb5a2ea1d5fddee4f1e48143cd217c7f2479e5043e2ec39c8d5640ef9cb6a",
+        "bytes": 8565,
+        "reason": "Full candidate/original file copy excluded."
+      },
+      {
+        "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/thailand-pit.md",
+        "sha256": "00e13155b2984710571a2eb517acda9dbe60cc49e3a1eded7a28ba02b9d8d596",
+        "bytes": 26013,
+        "reason": "Full candidate/original file copy excluded."
+      },
+      {
+        "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/before/thailand-vat.md",
+        "sha256": "dc536de624702a1efc659b4756a4b7bd86755985f49ec95954f625d5c21d6dce",
+        "bytes": 46123,
+        "reason": "Full candidate/original file copy excluded."
+      },
+      {
+        "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/evidence-thailand-historical-warning-delta/social-security-native-neighbours.txt",
+        "sha256": "c93da7dcb737321d2485482d351e27e88efb3d414c4b0c0a70caaf84ad3c2dd7",
+        "bytes": 8642,
+        "reason": "Wrong raw primary excerpt explicitly rejected by independent review. Original retained locally without modification."
+      },
+      {
+        "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/correct-independent-native-scope.txt",
+        "sha256": "907dfe8fcf285be6c2c9bc00e53c03e8270773bb4e1f9b0f2170bc361cdb9a4d",
+        "bytes": 5857,
+        "reason": "Raw official HTML or complete primary-text scope. Fresh read/provision/scope and hashes remain bound in the independent source record; raw source text stays local."
+      },
+      {
+        "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/outputs/world-resume-2026-11-16/review-thailand-warning-736e8a95a/rd5937-fresh.html",
+        "sha256": "3e128925103ebf12ac596e16638d8abf2d8a0975e78e430092ef76c3da902e0c",
+        "bytes": 241990,
+        "reason": "Raw official HTML or complete primary-text scope. Fresh read/provision/scope and hashes remain bound in the independent source record; raw source text stays local."
+      }
+    ],
+    "canonical_artifacts_overwritten": false
+  },
+  "country_files_unchanged_from_reviewed_candidate": [
+    {
+      "path": "skills/thailand/README.md",
+      "bytes": 3810,
+      "sha256": "cd1fd3a1402386bf389d6cd54c9c817b6ad67c7aaebe9eb99d5429df07eaacc5",
+      "git_blob": "7f6702be95a21192f90237840b91d8997e3f8677"
+    },
+    {
+      "path": "skills/thailand/references.md",
+      "bytes": 5268,
+      "sha256": "cb74331e8cecf4e5251d63fb0cbc988a86d1ae453ffd11c33e0d3e24a011f931",
+      "git_blob": "206cbe319623683a2762930c579e3f997d5ecac7"
+    },
+    {
+      "path": "skills/thailand/th-company-formation.md",
+      "bytes": 14173,
+      "sha256": "4cb7aa33ce4ce7c315d8400e1ee5092ceef7f67dc30f1c5817df55192be9fdc8",
+      "git_blob": "7d22c80b386458cb61169607912550ee1efb3125"
+    },
+    {
+      "path": "skills/thailand/th-corporate-income-tax.md",
+      "bytes": 14663,
+      "sha256": "f9cdb321589c7f436254d8596a80cf626f31f1823773316efe45e14cbcd5b6c8",
+      "git_blob": "6ca05c3f0c586fb48b8710388433be36abdfcb0e"
+    },
+    {
+      "path": "skills/thailand/th-payroll-social.md",
+      "bytes": 18635,
+      "sha256": "e2efc4376b8aa291f47e44b981ad1be51a062fb9787e1660559b63d1b29008d3",
+      "git_blob": "b2643a283790f3b16bdca132b06d0d0e5cf61cd4"
+    },
+    {
+      "path": "skills/thailand/th-tax-overview.md",
+      "bytes": 10637,
+      "sha256": "6323168e02c4eae6ddc00de6cd30054234eb586ad7c420dbabf8eb07e46ee652",
+      "git_blob": "8c5a781dd2123447fc77afd4f73b42cb449f1e56"
+    },
+    {
+      "path": "skills/thailand/th-top-up-tax.md",
+      "bytes": 8565,
+      "sha256": "a0edb5a2ea1d5fddee4f1e48143cd217c7f2479e5043e2ec39c8d5640ef9cb6a",
+      "git_blob": "8b9848464b56359590f087b4b539d98b3c502758"
+    },
+    {
+      "path": "skills/thailand/thailand-pit.md",
+      "bytes": 26013,
+      "sha256": "a22318ec4b7d99375504de66a360f1383d39f2eca81211f1cc9eae0dc0f88158",
+      "git_blob": "5a9b10d4eda3075d51f00ea3658439312b4b8eb0"
+    },
+    {
+      "path": "skills/thailand/thailand-vat.md",
+      "bytes": 46123,
+      "sha256": "dc536de624702a1efc659b4756a4b7bd86755985f49ec95954f625d5c21d6dce",
+      "git_blob": "2071ef3db3fd50acd81f44325f60c20d9dabdfa7"
+    }
+  ],
+  "verified_original_manifest_entries": 59,
+  "source_read_dates_preserved": true,
+  "country_complete": false,
+  "accountant_approval": false
+}
