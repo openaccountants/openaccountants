@@ -4,8 +4,8 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
 partial:
-  IT-IND: "Band table, allowances and filing date unread; code not reachable, 30% band status open"
-  IT-CORP: "Standard and incentive rates, withholding and filing date unread; code not reachable"
+  IT-IND: "2009 code read; band table not confirmed for 2026 or in current dobras, 30% band status open"
+  IT-CORP: "2009 code read; Decree-Law 6/2016 minimum-tax rule and incentive rates unread"
   VAT: "2023 amendments and current art. 48 unread; portal steps missing"
   SC: "Decree-Law 1/2025 rates unread; official text shows 6% and 4%"
   PR: "Wage withholding table unread; Decree-Law 1/2025 rates unread"
@@ -31,7 +31,7 @@ Ready means the skill is on the current tax year. It does not mean an accountant
 
 ## What still needs doing
 
-- Partial means on tax year 2026 but with gaps: the reasons are in `partial` above. The Finance Ministry site refused access, so the IRS, IRC and amended VAT texts remain unread.
+- Partial means on tax year 2026 but with gaps: the reasons are in `partial` above. The IRS and IRC codes were read in their 2009 republications on the Ministry's legacy site; the newer Finance Ministry site refused access, so later amendments, the amended VAT text and the published 2026 Budget Law remain unread.
 - Write the transfer pricing skill.
 - Write the cross-border skill.
 
