@@ -3,15 +3,15 @@ name: bt-tax-overview
 description: "Route a Bhutan 2026 tax question by income year, taxpayer, income source, GST, payroll and company obligations, preserving the historical filing boundary."
 jurisdiction: BT
 tax_year: 2026
-last_updated: 2026-11-15
+last_updated: 2026-11-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
-version: "2.1"
+version: "2.2"
 type: situation-rules
 ---
 
-# Bhutan Tax Overview (2026) | v2.1
+# Bhutan Tax Overview (2026) | v2.2
 
 Use the 2026 Acts for 2026 income and transactions, and keep the 2025-2026 filing cycle separate. Choose the taxpayer, source and tax job before loading the detailed computation or filing skill. [ss.2-5](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.2-5,ScheduleI](https://www.drc.gov.bt/wp-content/uploads/2025/12/Consolidated-GST-Act-of-Bhutan-2020-and-amendment-thereof.pdf); [paragraphs 1-2](https://www.drc.gov.bt/wp-content/uploads/2025/12/Tax-Filing-Notification_IY-2025_final.pdf)
 
@@ -41,17 +41,17 @@ Historical corrections are preserved in the specialist skills. The old Act disti
 
 ## Deadlines and filing
 
-Use the specialist calendar for each liability: annual income return and assessment payment, business prepayment, monthly withholding statement/deposit, approved GST period, PF remittance and company annual return. A date for one job is not a universal Bhutan deadline. Inactive businesses still have the s.291 declaration requirement. [ss.263,290-295](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.285-289](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.273-279](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.38-55,337(105)](https://www.drc.gov.bt/wp-content/uploads/2025/12/Consolidated-GST-Act-of-Bhutan-2020-and-amendment-thereof.pdf); [ss.251-255,267-268](https://www.cra.gov.bt/wp-content/uploads/2026/04/The-Companies-Act-of-Bhutan-2016.pdf)
+Use the specialist calendar for each liability: annual income return and assessment payment, business prepayment, monthly withholding statement/deposit, approved GST period, PF remittance and company annual return. A date for one job is not a universal Bhutan deadline. Inactive businesses still have the s.291 declaration requirement. [ss.263, 290-295](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.285-289](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.273-279](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.38-55, 337(105)](https://www.drc.gov.bt/wp-content/uploads/2025/12/Consolidated-GST-Act-of-Bhutan-2020-and-amendment-thereof.pdf); [ss.251-255, 267-268](https://www.cra.gov.bt/wp-content/uploads/2026/04/The-Companies-Act-of-Bhutan-2016.pdf)
 
 The November notice announces BITS income-module implementation from 1 January 2027; RAMIS remains the current income-tax route through the announced transition or further notice. GST already has its own BITS route. Keep tax type, period, old/new TPN and acknowledgement together. Future portal screens and a GST number do not prove a completed income-tax registration. [both image pages](https://www.drc.gov.bt/transition-to-the-bhutan-integrated-taxation-system-income-tax-module/); [whole notification](https://www.drc.gov.bt/wp-content/uploads/2026/07/Notification-on-Prepayment-of-Tax-for-the-IY-2026.pdf); [registration and filing/payment sections](https://www.drc.gov.bt/easy-guide-for-businesses-and-consumers/)
 
 ## Penalties and interest
 
-Identify which tax or registry obligation failed and the year before quoting a penalty. Current income-tax late filing/payment, GST late payment and NPPF late-deposit penalties have separate bases and conditions in their specialist skills. A historical notice’s penalty is not automatically the 2026 penalty for another tax. [ss.442-450,664-666](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.261-264;ScheduleVII-A](https://www.drc.gov.bt/wp-content/uploads/2025/12/Consolidated-GST-Act-of-Bhutan-2020-and-amendment-thereof.pdf); [contribution table and remittance paragraphs](https://www.nppf.org.bt/remittance-of-contribution/)
+Identify which tax or registry obligation failed and the year before quoting a penalty. Current income-tax late filing/payment, GST late payment and NPPF late-deposit penalties have separate bases and conditions in their specialist skills. A historical notice’s penalty is not automatically the 2026 penalty for another tax. [ss.442-450, 664-666](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.261-264;ScheduleVII-A](https://www.drc.gov.bt/wp-content/uploads/2025/12/Consolidated-GST-Act-of-Bhutan-2020-and-amendment-thereof.pdf); [contribution table and remittance paragraphs](https://www.nppf.org.bt/remittance-of-contribution/)
 
 ## Cross-border points
 
-Determine residence, business source, PE/SEP, payment character, foreign ownership and the relevant indirect-tax import route. Apply foreign-loss restrictions and withholding finality separately. Refer a special-zone, treaty or sector-specific result until the actual regime and operative source are established; ordinary Bhutan company formation or a rupee peg does not establish those benefits. [ss.16-20](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.226-232](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.58-61,204-207,239-240](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.266-284;Schedule 1 paragraph 7](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [rr.1-16,58-85,108,138(22);SchedulesI-III](https://www.moice.gov.bt/wp-content/uploads/2025/08/FDI-Rules-Regulations-2025.docx.pdf); [monetary-policy peg paragraph](https://www.rma.org.bt/mpolicy/)
+Determine residence, business source, PE/SEP, payment character, foreign ownership and the relevant indirect-tax import route. Apply foreign-loss restrictions and withholding finality separately. Refer a special-zone, treaty or sector-specific result until the actual regime and operative source are established; ordinary Bhutan company formation or a rupee peg does not establish those benefits. [ss.16-20](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.226-232](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.58-61, 204-207, 239-240](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.266-284;Schedule 1 paragraph 7](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [rr.1-16, 58-85, 108, 138(22);SchedulesI-III](https://www.moice.gov.bt/wp-content/uploads/2025/08/FDI-Rules-Regulations-2025.docx.pdf); [monetary-policy peg paragraph](https://www.rma.org.bt/mpolicy/)
 
 ## Two worked examples that recompute
 
@@ -105,18 +105,18 @@ expected:
 
 | Source | Read for | Read date |
 |---|---|---|
-| [Income Tax Act of Bhutan 2025](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf) | Read for ss.1-64,204-207,226-240,262-300,324-326,442-450,664-674,706(40); Schedules 1-3 and 6. | 2026-11-15 |
-| [Rules on the Income Tax Act 2025](https://www.drc.gov.bt/wp-content/uploads/2026/01/Rules-on-the-Income-Tax-Act-of-Bhutan-2025.pdf) | Read for rr.47-58,151-164; Annexures I-II and IV, relevant individual and company computation fields. | 2026-11-15 |
-| [Historical Income Tax Act 2001, Fourth Edition](https://www.drc.gov.bt/wp-content/uploads/2024/11/Income-Tax-Act-of-the-Kingdom-of-Bhutan-2001_Fourth-Edition.pdf) | Read for Part I s.45; Part II s.12; Part III ss.4-5,7,12,14 A-15,17; historical provisions only. | 2026-11-15 |
+| [Income Tax Act of Bhutan 2025](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf) | Read for ss.1-64, 204-207, 226-240, 262-300, 324-326, 442-450, 664-674, 706(40); Schedules 1-3 and 6. | 2026-11-15 |
+| [Rules on the Income Tax Act 2025](https://www.drc.gov.bt/wp-content/uploads/2026/01/Rules-on-the-Income-Tax-Act-of-Bhutan-2025.pdf) | Read for rr.47-58, 151-164; Annexures I-II and IV, relevant individual and company computation fields. | 2026-11-15 |
+| [Historical Income Tax Act 2001, Fourth Edition](https://www.drc.gov.bt/wp-content/uploads/2024/11/Income-Tax-Act-of-the-Kingdom-of-Bhutan-2001_Fourth-Edition.pdf) | Read for Part I s.45; Part II s.12; Part III ss.4-5, 7, 12, 14 A-15,17; historical provisions only. | 2026-11-15 |
 | [DRC income-year 2025 filing notice,29 December 2025](https://www.drc.gov.bt/wp-content/uploads/2025/12/Tax-Filing-Notification_IY-2025_final.pdf) | Read for both pages: filing windows, inactive entities, RAMIS/BETA, completion status and payment voucher. | 2026-11-15 |
 | [DRC prepayment notice,29 July 2026](https://www.drc.gov.bt/wp-content/uploads/2026/07/Notification-on-Prepayment-of-Tax-for-the-IY-2026.pdf) | Read for whole scanned page: 2026 prepayment, RAMIS registration and non-resident branches. | 2026-11-15 |
 | [DRC income-module transition notice,10 November 2026](https://www.drc.gov.bt/transition-to-the-bhutan-integrated-taxation-system-income-tax-module/) | Read for both image pages: January transition, TPN notices and December application timing. | 2026-11-15 |
-| [GST Act 2020,September 2025 consolidation](https://www.drc.gov.bt/wp-content/uploads/2025/12/Consolidated-GST-Act-of-Bhutan-2020-and-amendment-thereof.pdf) | Read for ss.1-62,209-212,261-264,337(105); Schedules I-II and VII-A; consolidation limitation. | 2026-11-15 |
+| [GST Act 2020,September 2025 consolidation](https://www.drc.gov.bt/wp-content/uploads/2025/12/Consolidated-GST-Act-of-Bhutan-2020-and-amendment-thereof.pdf) | Read for ss.1-62, 209-212, 261-264, 337(105); Schedules I-II and VII-A; consolidation limitation. | 2026-11-15 |
 | [DRC GST amendment notification,25 June 2026](https://www.drc.gov.bt/wp-content/uploads/2026/06/GST_Public_Notification_2026.pdf) | Read for all 6 pages including complete replacement Schedule IV-C and BTC descriptions. | 2026-11-15 |
 | [DRC addendum,26 June 2026](https://www.drc.gov.bt/wp-content/uploads/2026/06/Addendum_GST_Public_Notification-2026.pdf) | Read for whole page: legal commencement versus collection date and credit adjustment. | 2026-11-15 |
 | [Excise Tax Act 2025](https://www.drc.gov.bt/wp-content/uploads/2025/10/Excise-Tax-Act-of-Bhutan-2025-2.pdf) | Read for ss.1-7 only: commencement,savings and repeal of GST excise provisions. | 2026-11-15 |
-| [Companies Act of Bhutan 2016,current Corporate Regulatory Authority copy](https://www.cra.gov.bt/wp-content/uploads/2026/04/The-Companies-Act-of-Bhutan-2016.pdf) | Read for ss.2-14,21-27,30-37,249-255,267-269; formation,liability,audit and annual return. | 2026-11-15 |
-| [FDI Rules and Regulations 2025](https://www.moice.gov.bt/wp-content/uploads/2025/08/FDI-Rules-Regulations-2025.docx.pdf) | Read for rr.1-16,58-85,108,138(22) and Schedules I-III; classification,project-cost base,funding and approval gates. | 2026-11-15 |
+| [Companies Act of Bhutan 2016,current Corporate Regulatory Authority copy](https://www.cra.gov.bt/wp-content/uploads/2026/04/The-Companies-Act-of-Bhutan-2016.pdf) | Read for ss.2-14, 21-27, 30-37, 249-255, 267-269; formation,liability,audit and annual return. | 2026-11-15 |
+| [FDI Rules and Regulations 2025](https://www.moice.gov.bt/wp-content/uploads/2025/08/FDI-Rules-Regulations-2025.docx.pdf) | Read for rr.1-16, 58-85, 108, 138(22) and Schedules I-III; classification,project-cost base,funding and approval gates. | 2026-11-15 |
 | [NPPF remittance of contribution](https://www.nppf.org.bt/remittance-of-contribution/) | Read for complete contribution table,remittance instructions and late-deposit penalty paragraph. | 2026-11-15 |
 | [NPPF current Private PF agreement](https://www.nppf.org.bt/downloads/?attachment_id=442) | Read for all 4 pages,especially clauses 1.1-1.2: member numbers,rate,base,deposit and recovery schedule. | 2026-11-15 |
 | [RMA monetary policy](https://www.rma.org.bt/mpolicy/) | Read for all 3 operative paragraphs,including the at-par INR peg. | 2026-11-15 |
