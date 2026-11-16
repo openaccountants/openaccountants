@@ -192,5 +192,32 @@
       "sha256": "8bd4326f179ed529e60cdd1cd43e7897af2d89d4fd8fd4c4de0f9c69fe7a468c",
       "bytes": 574
     }
+  ],
+  "supplements": [
+    {
+      "path": "CI-ADDENDUM.md",
+      "sha256": "469f72953826c77e97cc005b38241a626ac8d67fe709c2211d9f98ac13ab1d43",
+      "bytes": 2212
+    },
+    {
+      "path": "CI-ADDENDUM.json",
+      "sha256": "6b2a91153ae01b5ce217b00c821284e52c89a6479871abb6fd97ba27d0b125e8",
+      "bytes": 3754
+    },
+    {
+      "path": "figures-ci-failure.txt",
+      "sha256": "6764c9f827a1d4c994aa1f553e3c7f6138c778e8d273138f2ce73b003e5226f7",
+      "bytes": 5472
+    },
+    {
+      "path": "ci-correction-validation.txt",
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa",
+      "bytes": 192
+    },
+    {
+      "path": "ci-correction-sync.txt",
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9",
+      "bytes": 81
+    }
   ]
 }
