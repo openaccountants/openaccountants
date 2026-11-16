@@ -149,7 +149,7 @@ Depreciation starts in the month after the asset is put into use, pro rata (art.
 
 Alpha AE has its registered seat in Athens (over 200,000 inhabitants) and a 31 December year end. Its 2026 accounts show a profit before tax of EUR 500,000. The profit is after charging a tax fine of EUR 3,000, entertainment of EUR 4,000, an invoice of EUR 2,000 paid in cash, and the 2026 trade fee of EUR 1,000. Accounting depreciation is EUR 60,000 and tax depreciation at the art. 24 rates is EUR 50,000. It has an unused tax loss of EUR 40,000 from 2022. That loss can still be used in 2026, the fourth of its five years. The prepayment charged with the 2025 return was EUR 70,000. No tax was withheld on its income.
 
-Taxable profit is 500,000 + 3,000 + 4,000 + 2,000 + 1,000 + (60,000 - 50,000) - 40,000 = EUR 480,000. Tax at 22% is EUR 105,600. The prepayment for 2027 is 80% of that, EUR 84,480. The amount on the 2026 form N is 105,600 - 70,000 + 84,480 + 1,000 trade fee = EUR 121,080. The return is due by 15 July 2027. The amount is payable in eight instalments of EUR 15,135, the first by 31 July 2027.
+Taxable profit is 500,000 + 3,000 + 4,000 + 2,000 + 1,000 + (60,000 - 50,000) - 40,000 = EUR 480,000. Tax at 22% is EUR 105,600. The prepayment for 2027 is 80% of that, EUR 84,480. The amount on the 2026 form N is 105,600 - 70,000 + 84,480 + 1,000 trade fee = EUR 121,080. The return is due by 15 July 2027. The amount is payable in eight instalments of EUR 15,135, the first by Friday 30 July 2027, the last working day of July (31 July is a Saturday), assuming the ordinary rule remains unchanged and no extension applies.
 
 ```oa-check
 name: Alpha AE, 2026, 22% rate, add-backs, 5-year loss, 80% prepayment, trade fee

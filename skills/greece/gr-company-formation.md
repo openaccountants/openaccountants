@@ -18,6 +18,8 @@ type: filing-howto
 
 Form an IKE, EPE or AE in Greece, with the legal form, founders, capital/contribution choices, lawful formation route, fees and post-formation handoff made explicit. This is a formation workflow for 2026, not a tax computation or a claim that a special activity licence has been obtained. The source consolidations and unresolved later-law questions are stated below.
 
+Before choosing a route, apply Decision 38164/2025 art. 2: ordinary YMS/e-YMS covers original formations within its scope. It excludes companies formed by merger, division (including partial division or branch spin-off) or conversion; formations requiring administrative permission, including insurance/reinsurance undertakings, credit/financial institutions, credit/mutual-insurance cooperatives, sports AE (PAE/KAE) and entities licensed by the Capital Market Commission; and companies with a main or secondary activity under the pre-authorisation KADs 56.10.11.06, 56.30.10.09, 56.30.10.10, 56.30.10.11, 56.30.10.12, 90.04.10.09 or 93.21.10.01. These activities require the art. 80 Law 3463/2006 establishment pre-approval specified in the decision. Use the applicable transformation or administrative-authorisation formation procedure for an excluded case; ordinary YMS acceptance is not sufficient. [Decision 38164/2025 arts. 2-3](https://gge.mindev.gov.gr/wp-content/uploads/2025/05/ΝΕΑ-ΥΜΣ.pdf).
+
 ## Ask the client first
 
 1. Which legal form and activity, founders and managers, residence/nationality and active Greek tax numbers are involved?
@@ -46,7 +48,7 @@ Form an IKE, EPE or AE in Greece, with the legal form, founders, capital/contrib
 
 
 
-Companies are formed through a One-Stop Shop (Υπηρεσία Μιας Στάσης, ΥΜΣ) at a chamber of commerce or a certified notary, or fully online through the e-ΥΜΣ at https://eyms.businessportal.gr (Law 4919/2022 arts. 8, 9 and 12).
+For original formations within that scope, companies are formed through a One-Stop Shop (Υπηρεσία Μιας Στάσης, ΥΜΣ) at a chamber of commerce or a certified notary, or fully online through the e-ΥΜΣ at https://eyms.businessportal.gr (Law 4919/2022 arts. 8, 9 and 12).
 
 - **Registration body.** GEMI (Γενικό Εμπορικό Μητρώο). Registration is compulsory for the ΑΕ, ΕΠΕ, ΙΚΕ and the general and limited partnerships, among others (Law 4919/2022 art. 16(1)). An ΙΚΕ is formed by its registration in GEMI (Law 4072/2012 art. 52(1)).  _(Law 4919/2022, ministry codification after Law 5164/2024, https://gge.mindev.gov.gr/wp-content/uploads/2024/12/ΚΩΔΙΚΟΠΟΙΗΣΗ-ΝΟΜΟΥ-4919.22-μετά-την-τροπ.-με-Ν.-5164.24-1-2.pdf)_
 - **Founder tax number (ΑΦΜ) and other founder conditions.** Every individual founder must have, at the time of formation: legal capacity; an active Greek tax number (Α.Φ.Μ.) whose use is not suspended; TAXISnet codes or an eIDAS electronic identity; and, for a non-EU national who lives or will live in Greece, a residence permit or proof of a pending application (Joint Ministerial Decision 38164/2025 art. 6(1)). A foreign legal person that joins as partner or board member and has no Greek ΑΦΜ gets one from the ΥΜΣ through TAXIS (Law 4919/2022 art. 9(2)).  _(ΚΥΑ 38164/2025, ΦΕΚ Β' 2639/29.5.2025, https://gge.mindev.gov.gr/wp-content/uploads/2025/05/ΝΕΑ-ΥΜΣ.pdf)_
@@ -71,7 +73,7 @@ So an ΑΕ with EUR 25,000 capital, formed at a chamber ΥΜΣ that also checks 
 
 ### Execute the selected route
 
-1. Start from the public e-YMS service, https://eyms.businessportal.gr, or the competent certified notary/One-Stop Shop. Choose the legal form and confirm the current template or required notarial instrument. No live submission is part of this skill.
+1. First apply the art. 2 exclusions above. For an eligible ordinary formation, start from the public e-YMS service, https://eyms.businessportal.gr, or the competent certified notary/One-Stop Shop. Choose the legal form and confirm the current template or required notarial instrument. No live submission is part of this skill.
 2. Assemble the legally signed application, articles, founder/manager identification, contribution details, registered address evidence, authorisations and applicable residence documents. Follow the form's actual fields; do not invent current screen labels. Law 4919/2022 art. 9(1) and decision arts. 6-9 govern the documents and checks.
 3. Complete the name check/reservation, signatures and route-specific fee payment. Preserve the application and receipts. Respond to any deficiency notice within the actual statutory cure period above.
 4. After acceptance, retrieve the digitally signed formation notice and articles, GEMI number/EUID, company tax identity, TAXIS activation instructions and employer number where required. Verify these records rather than assuming every interoperability step succeeded. Formation and post-formation tax activation are distinct checks.
