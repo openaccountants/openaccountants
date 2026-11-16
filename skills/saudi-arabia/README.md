@@ -30,7 +30,7 @@ Tax years: 2026 (11 skills), 2025 (1 skill).
 | Transfer pricing | | | Missing |
 | Cross-border | [Withholding tax](sa-withholding-tax.md) | 2026 | Partly covered: No complete cross-border skill; treaty and specialist outcomes held. |
 
-Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
+Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it. Missing means this pack has no standalone skill or complete method for the category.
 
 ## What still needs doing
 
