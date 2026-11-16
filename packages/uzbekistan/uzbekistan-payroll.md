@@ -1,241 +1,230 @@
 ---
 name: uzbekistan-payroll
-description: "Use this skill whenever asked about Uzbekistan (the Republic of Uzbekistan — Oʻzbekiston, Central Asia) payroll processing for employed persons. Trigger on phrases like \"Uzbekistan payroll\", \"Uzbek payroll\", \"ish haqi\", \"oylik maosh\", \"salary tax Uzbekistan\", \"PIT withholding Uzbekistan\", \"12% income tax Uzbekistan\", \"PAYE Uzbekistan\", \"social tax Uzbekistan\", \"ijtimoiy soliq\", \"INPS Uzbekistan\", \"individual accumulative pension fund\", \"soliq.uz payroll\", \"my.soliq.uz\", \"State Tax Committee Uzbekistan\", \"monthly payroll report Uzbekistan\", \"net salary Uzbekistan\", \"gross to net Uzbekistan\", \"employer cost Uzbekistan\", \"minimum wage Uzbekistan\", \"BCV Uzbekistan\", \"base calculation value\", or any question about computing employee pay, salary withholding tax (PIT), or employer social tax for Uzbekistan-based employees. This skill covers the flat 12% personal income tax withheld at source (the employer is the tax agent), the 12% employer Social Tax (Ijtimoiy soliq), the 0.1% employee INPS pension contribution carved out of PIT, the cumulative monthly withholding method, the monthly payroll report on my.soliq.uz, the minimum wage and Base Calculation Value (BCV), and penalties. CRITICAL: jurisdiction code UZ is the country of Uzbekistan (currency UZS, soʻm) and figures are anchored to PwC Worldwide Tax Summaries (reviewed 16 Jan 2026) and the EY Jan-2026 tax alert. ALWAYS read this skill before processing any Uzbekistan payroll."
-version: 0.1
+description: "Uzbekistan 2026 salary gross-to-net, cumulative PIT and employer-cost working papers; trigger on ish haqi, oylik maosh, salary withholding, INPS and Soliq payroll reports. Distinguishes restricted relief and 2026 financing allocations; historical cases are not current filing authority."
+version: 0.2
 jurisdiction: UZ
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-15
+checked_on: 2026-11-14
+type: computation
 depends_on:
   - payroll-workflow-base
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: payroll
+domain: tax
 ---
 
-# Uzbekistan Payroll
+# Uzbekistan payroll v0.2
 
-## Uzbekistan Payroll Skill v0.1
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-> **Tier 2 — Research-verified.** Rates and structure are cross-verified across PwC Worldwide Tax Summaries (Uzbekistan, Individual & Corporate; reviewed 16 Jan 2026), the EY Global Tax Alert "Uzbekistan: tax updates effective from 2026" (Jan 2026), LegalAct.uz (PIT cumulative method and the 0.1% INPS carve-out), WageIndicator (minimum wage from 1 Aug 2025) and EOR practitioner guides (Asanify). The official primary sources — the Tax Code of the Republic of Uzbekistan (Soliq kodeksi) and soliq.uz — were not directly text-extracted line-by-line; figures rely on the Big-4 / specialist English summaries. Every figure below carries an inline source or a `[RESEARCH GAP — reviewer to confirm]` marker. A qualified Uzbek tax adviser / licensed accountant must validate this skill before production use. **Confidence: medium.**
+## Scope
 
-> **CRITICAL DISAMBIGUATION.** Jurisdiction code **UZ = the Republic of Uzbekistan (Oʻzbekiston, Central Asia), currency UZS (Uzbek soʻm)**. Do not confuse with neighbouring CIS payrolls (Kazakhstan KZT, Azerbaijan AZN, Tajikistan TJS, etc.) — their rates and forms differ and must NOT appear in this skill.
+Computes ordinary salary gross-to-net, cumulative PIT and employer cost; `uzbekistan-social-contributions` owns contribution category/base/individual minimum tests. Republic of Uzbekistan (Oʻzbekiston, Central Asia), UZ, UZS (Uzbek soʻm). Calendar 2026. These distinct jobs retain both existing slugs. This is an estimated working-paper method for review, not a live filing agent.
 
-## Section 1 -- Quick Reference
+Quick answer: ordinary PIT 12%, employer social 12% or proven special category; INPS 0.1% and the 2026 social-insurance 0.2-point allocation are inside PIT. Do not use those headline rates without checking the conditions below.
 
-**Quick Reference table**
+## Ask the client first
 
-| Field | Value |
-| --- | --- |
-| Country | Republic of Uzbekistan (Oʻzbekiston — Central Asia) |
-| Jurisdiction code | UZ |
-| Currency | UZS (Uzbek soʻm) only |
-| Standard pay frequency | Monthly |
-| Tax year | Calendar year (1 January -- 31 December). Source: PwC WWTS Uzbekistan, Individual: Tax administration. |
-| Has personal income tax? | Yes -- **flat 12%** on gross employment income, withheld at source; the employer is the tax agent. Source: PwC WWTS Uzbekistan, Individual: Taxes on personal income. |
-| Personal income tax (salary) | 12% flat on gross employment income (residents and, post-reform, non-resident employment income). **No progressive bands since the 2019 reform.** Source: PwC WWTS Uzbekistan. |
-| Employer Social Tax (Ijtimoiy soliq) — standard | 12% of total gross payroll (local and expatriate staff); **employer cost, not withheld from the employee**. Source: PwC WWTS Uzbekistan, Corporate: Other taxes. |
-| Employer Social Tax — budget (state-financed) organisations | 25% of gross payroll. Source: PwC WWTS Uzbekistan, Individual: Other taxes. |
-| Employee INPS pension (accumulative) | 0.1% of gross salary, **carved out of the 12% PIT** (not an additional charge). Source: LegalAct.uz. |
-| Other employer payroll tax | **None** beyond the Social Tax (no separate employer health/unemployment levy at standard commercial rates). Source: PwC WWTS Uzbekistan, Corporate: Other taxes. |
-| Tax authority | State Tax Committee of the Republic of Uzbekistan (Davlat soliq qoʻmitasi) — soliq.uz |
-| Pension administrator | Pension Fund (reported through the State Tax Committee) |
-| Filing portal | my.soliq.uz (e-filing) |
-| Primary form | Monthly payroll / withholding report (PIT + Social Tax); annual individual income tax declaration where required |
-| Monthly report deadline | By the **15th** of the month following the reporting month; tax and contributions paid by the same date. Source: Asanify EOR guide; `[RESEARCH GAP]` — confirm official form designation. |
-| Skill version | 0.1 |
+1. Employer STIR/INN, legal status, budget/special-category proof, work and residence locations, foreign-personnel contracts and claimed incentive cohort/window.
+2. Reporting month, actual pay date, gross cash/noncash salary, advances, bonus and leave pay, reimbursements, deductions and employer-funded benefits; currency conversion evidence where relevant.
+3. Each worker's employment/civil-contract/IE status, tax residence and treaty evidence, Uzbek citizenship/permanent residence and INPS account; do not equate immigration and tax tests.
+4. Documented 378/380 exemptions or relief and dates, vocational-training proof, disability category, poor-family eligibility and minimum-wage threshold evidence.
+5. Prior employer certificate, year-to-date income/tax, prior Soliq reports/receipts, payment ledger and existing INPS allocations. Bank-only records and net-only salaries do not establish these inputs.
 
-**Legislation**
+## The method, step by step
 
-| Law | Scope | Source |
-| --- | --- | --- |
-| Tax Code of the Republic of Uzbekistan (Soliq kodeksi), as amended for 2025 | PIT, Social Tax, withholding, declarations, penalties | PwC WWTS Uzbekistan; soliq.uz |
-| Presidential Decree No. UP-97 (2025) | Minimum wage and Base Calculation Value (BCV) from 1 Aug 2025 | WageIndicator; PwC WWTS Uzbekistan, Significant developments |
-| Annual budget / tax-policy amendment laws; EY 2026 alert | 2026 changes (IE fixed-PIT regime cancelled; 1% turnover tax) | EY Global Tax Alert, Jan 2026 |
+### Rates, bases and effective periods
 
-## Confidence Tier Definitions
+| Item | Rate, base and conditions for 2026 | Official source |
+|---|---|---|
+| Resident employment PIT |12% of taxable employment income; apply documented exclusions/relief before the rate; special regimes can override | Tax Code 381,378,380,483, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Nonresident employment PIT |12% on Uzbek-source employment/civil-contract income and other income outside the specified investment/freight rows; treaty/source analysis first | Tax Code 382, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Commercial employer social tax |12% of the separate employment-cost base; not an employee deduction | Tax Code 403–405,407, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Budget employer |25%; budget status must be established, not inferred from state ownership alone | Tax Code 405, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| SOS Children's Villages of Uzbekistan |7% for the specifically named association | Tax Code 405, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Disability-workshop limb |4.7% for taxpayers using disabled persons' labour in specialised workshops, sections and enterprises; not every employer hiring a disabled person | Tax Code 405, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Mandatory INPS |0.1% of PIT-taxable income where funded-pension participation applies; allocated from calculated PIT, not added to employee deductions | PP 4086 para 5, https://lex.uz/docs/-4131684; Funded Pension Law 4,6,10, https://lex.uz/docs/-390573 |
+| State social-insurance financing from 2026 |0.2 percentage points of PIT allocated to the State Social Insurance Fund; excludes declared rental PIT and source-withheld dividend/interest PIT; not an extra deduction | PP 388 para 5, https://lex.uz/docs/-7959569 |
+| Minimum wage,1 Jan–31 Aug 2026 |UZS 1,271,000/month; historical commencement 1 August 2025 | PF 91 para 3(b), https://lex.uz/docs/-7553322 |
+| BCV/BHM,1 Jan–31 Aug 2026 |UZS 412,000; a different measure from minimum wage | PF 91 para 3(b), https://lex.uz/docs/-7553322 |
+| Minimum wage,from 1 Sep 2026 |UZS 1,360,000/month | PF 115 para 3(b), https://lex.uz/docs/-8283656 |
+| BCV/BHM,from 1 Sep 2026 |UZS 440,000 | PF 115 para 3(b), https://lex.uz/docs/-8283656 |
 
-Every rule in this skill is tagged with a confidence tier:
+Select the rate for each legally eligible base/employee cohort. Do not add category rates or assume every employee gets one organisation-wide incentive. The numerical amounts above are statutory numerals; multipliers below are derived arithmetic.
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified Uzbek tax adviser must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate and document the gap.
+### Establish each base before applying rates
 
-## Section 2 -- Personal Income Tax (PIT) Withholding -- the Employer as Tax Agent
+Employment income includes salary, incentives/bonus, compensation, nonworked-time pay and specified civil-contract work and board payments under 371. Keep gross cash and noncash components; identify legal exemptions under 378 and documented 380 relief before PIT. Social-tax base follows 371 employment costs under 404, not simply the PIT-taxable amount.403 excludes specified employment-injury compensation, seasonal cotton-harvest wages and qualifying Mahalla Service wages. Foreign-personnel supply and diplomatic postings have separate 404 bases. Sources: Tax Code 371,378,403–404, https://lex.uz/docs/4674902?ONDATE=21.10.2026.
 
-- **PIT flat rate and employer as tax agent** — Employment income is taxed at a flat 12% of gross salary. The employer acts as the tax agent, withholds PIT at source at the moment of salary payment, and remits it to the State Tax Committee. There has been no progressive band since the 2019 reform — the rate is a single flat 12%.  _(PwC WWTS Uzbekistan, Individual: Taxes on personal income.)_
-- **PIT formula [T1]** — PIT = PIT base × 12%  _(PwC WWTS Uzbekistan; LegalAct.uz)_
-- **PIT base and BCV deduction eligibility** — For a standard payroll, the PIT base is gross employment income. A monthly 1× BCV personal deduction is available only to specified categories of employee (e.g. certain low-income / benefit-eligible employees) — it is not universal. Do not apply the deduction to a generic payroll without confirming eligibility. See CD6 / [RESEARCH GAP].  _(PwC WWTS Uzbekistan; LegalAct.uz)_
-- **INPS carve-out effect on net pay** — The 0.1% INPS pension contribution is carved OUT of the 12% PIT (Section 3) — it does not reduce net pay below gross × 0.88 and is not an additional charge. [T1]
-- **Cumulative monthly PIT computation** — PIT is computed on a cumulative (year-to-date) monthly basis: PIT for the month = PIT(Jan→current month) − PIT(Jan→previous month). For a flat 12% with a constant monthly salary and no deduction, this reduces to a simple monthly gross × 12%. The cumulative method matters when salary varies month to month or when the BCV deduction applies.  _(LegalAct.uz)_
+### Restricted personal relief and residence
 
-### Non-employment / context PIT rates (NOT salary) [T1 / informational]
+Article 380 does not grant a universal allowance or a 1×BCV deduction. For eligible categories it exempts monthly income equal to 1.41×minimum wage; clause 3(childhood disability or disability groups I/II, except specified Chernobyl cases) uses 3×minimum wage. Other categories are statutory heroes/decorated persons, war-disabled/veterans/equivalents, specified parents/unremarried surviving spouses of fallen service personnel, single mothers with at least 2 children under 16, qualifying widows/widowers with at least 2 children under 16 and no survivor pension, and one parent caring for a co-resident person disabled from childhood. Obtain the specific certificate/evidence. Apply one selected benefit where several grounds exist, from entitlement, normally at the main workplace; notify loss within 15 days. Source: Tax Code 380, https://lex.uz/docs/4674902?ONDATE=21.10.2026.
 
-**Non-employment / context PIT rates table**  _(PwC WWTS Uzbekistan, Individual)_
+Tax residence under 30 normally requires MORE THAN 183 days in the relevant consecutive 12-month window beginning/ending in the tax year, not 183+. The separate under 183 days/more-than-any-other-country test, early application with long-term contract, short treatment/study absence rule and excluded diplomatic/international-organisation periods require full fact analysis; exactly 183 days is not resolved by the shorthand. Cross-border/treaty cases are referred to the income-tax Guide. Source: Tax Code 30, https://lex.uz/docs/4674902?ONDATE=21.10.2026.
 
-| Income type | Rate | Note | Source |
-| --- | --- | --- | --- |
-| Resident employment income | **12%** | The standard payroll rate (this skill). | PwC WWTS Uzbekistan, Individual |
-| Non-resident employment income | **12%** | Reduced from the former 20% on Uzbek-source income of non-residents (except dividends/interest/freight). Verify treaty relief for genuine non-residents [T2]. | PwC WWTS Uzbekistan, Individual |
-| Resident dividends and interest | 5% | Not employment income. JSC share dividends PIT-exempt for residents & non-residents 1 Apr 2022–31 Dec 2028. | PwC WWTS Uzbekistan, Individual |
-| Non-resident dividends and interest | 10% | Not employment income. | PwC WWTS Uzbekistan, Individual |
-| Non-resident transportation / freight services | 6% | Not employment income. | PwC WWTS Uzbekistan, Individual |
+### Restricted social-tax incentives
 
-> These special rates apply to **investment / non-employment income** or to non-residents. Do not apply them to a standard salary computation. If a "salary" turns out to be a dividend, freight payment or IE turnover, this is [T3] — out of payroll scope.
+| Eligible facts | Rate and window | Official source |
+|---|---|---|
+| Poor-family member hired by a business; monthly salary at least 1.5×minimum wage |1% social tax on those employees' wages,1 Jan 2025 until 1 Jan 2028; equality qualifies. From 1 Sep 2026 the wage threshold is derived as 1.5×1,360,000=UZS 2,040,000 | Tax Code 483; PF 115, https://lex.uz/docs/4674902?ONDATE=21.10.2026; https://lex.uz/docs/-8283656 |
+| School/college/technical-school student no older than 30, hired for vocational training |1% social tax on qualifying wages AND 1% employee PIT,1 Sep 2024 until 1 Sep 2027; age 30 is included | Tax Code 483, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Cotton-textile clusters; textile and garment/knitwear enterprises |1% social tax,1 Sep 2025 until 1 Sep 2028; establish actual qualifying activity | Tax Code 483, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Modern-packaged fruit/vegetable sellers meeting both conditions |1% social tax,1 May 2025 until 1 Jan 2028; every employee monthly wage at least 2×minimum wage AND qualifying sales at least 50% of total income for reporting/tax period; evidence includes phytosanitary certificate and customs declaration | Tax Code 483, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Legal entity with children's-content creation income at least 80% of annual total income; also the named Children's Content Development Centre |1% social tax,1 Jul 2025 until 1 Jan 2030, not July 2030 | Tax Code 483, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Greenhouse farms with greenhouse-activity income at least 60% of total income in the current reporting/tax period |1% social tax,1 Jan 2026 until 1 Jan 2029 | Tax Code 483, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
 
-## Section 3 -- Social Tax (Ijtimoiy soliq) and the INPS Pension
+Any overlapping special regime needs its own exact operative instrument before use; these are not generic 1% sectors. Student relief changes employee PIT as well as employer cost, so the ordinary net multiplier is inapplicable to that cohort. Retain employee eligibility documents and separately reconcile the affected wage base.
 
-Uzbekistan has two distinct payroll levies in addition to PIT:
+### Compute and reconcile
 
-1. **Employer Social Tax (Ijtimoiy soliq)** — paid by the employer, on top of gross payroll. It is not withheld from the employee.
-2. **Employee INPS contribution** (Individual Accumulative Pension Fund) — 0.1% of gross, but carved OUT of the 12% PIT, so it is not an additional employee cost.
+1. Identify statutory PIT base and cumulative annual tax. Under 388 compute monthly YTD tax at the applicable rates/relief, less tax already computed for prior months; carry corrections and employer-change certificates. A flat salary case with no relief reduces to monthly base ×12%.
+2. Compute eligible INPS as 0.1% of PIT-taxable income and deduct it from PIT remitted, not from net a second time. Confirm Uzbek citizenship/permanent residence and mandatory employment participation under funded-pension law 4/6; non-permanent foreign staff do not automatically have INPS. Distinguish PIT residence.
+3. For covered 2026 employment PIT allocate 0.2 percentage points to State Social Insurance Fund under PP 388 para 5. In an ordinary case with the same taxable base, remaining PIT is 12%−0.1%−0.2%=11.7% of that base. This allocation does not change net pay.
+4. Net pay=gross−total employee PIT−other proven employee deductions, with separate tax relief and benefit treatment. Ordinary no-relief net=gross×0.88; reverse gross=net÷0.88 only under those conditions.
+5. Social tax=separate statutory social base ×applicable rate for each cohort. Employer cost=gross + employer social tax+any additional actual employer-funded benefits/contributions. Simplified multipliers are derived:1.12/1.25/1.047/1.07/1.01 only when base equals gross and the corresponding 12/25/4.7/7/1% rate legally applies.
+6. Reconcile total PIT=INPS+insurance allocation+remaining PIT and salary/net/advances to the bank. Total cash remittances across all recipients=PIT+social tax; do not describe the whole PIT as one budget transfer. Do not offset VAT supplies with payroll tax.
 
-### 3a. Employer Social Tax rate table [T1]
+Sources: Tax Code 388,403–407, https://lex.uz/docs/4674902?ONDATE=21.10.2026; PP 4086 para 5, https://lex.uz/docs/-4131684; funded-pension law 10, https://lex.uz/docs/-390573; PP 388 para 5, https://lex.uz/docs/-7959569.
 
-**Employer Social Tax rate table**  _(PwC WWTS Uzbekistan, Corporate: Other taxes)_
+### Working paper and bank classification
 
-| Payer / case | Rate | Base | Source |
-| --- | --- | --- | --- |
-| **Standard commercial entity** | **12%** | Total gross payroll (local + expatriate staff) | PwC WWTS Uzbekistan, Corporate: Other taxes |
-| Budget (state-financed) organisation | 25% | Gross payroll | PwC WWTS Uzbekistan, Individual: Other taxes |
-| Specialised workshops employing persons with disabilities | 4.7% | Gross payroll | PwC WWTS Uzbekistan, Individual: Other taxes |
-| "SOS Children's Villages of Uzbekistan" association | 7% | Gross payroll | PwC WWTS Uzbekistan, Individual: Other taxes |
-| Temporary 1% reduced rate (specified sectors/cases — see below) | 1% | Gross payroll | PwC WWTS Uzbekistan, Corporate: Other taxes; EY 2026 alert |
+Record period/payment date, employer STIR/INN and category proof, employee status, gross, each taxable base, rate, YTD tax and prior tax, INPS, insurance allocation, remaining PIT, net, social tax, total cost and remittances. Label estimates and unresolved flags. A spreadsheet may use B3 gross; B5 PIT; B6 INPS; B7 remaining PIT; add a separate insurance allocation row in 2026; B8 net; B9 social tax; B10 gross+B9; B11 PIT+B9. ROUND(...,2) was an old illustration, not a verified legal rounding rule. Gross-up estimates and ratios identify questions, never determine employer status.
 
-- **Social Tax is an employer cost** — Social Tax is an employer cost — it does not appear on the employee's payslip as a deduction and does not reduce net pay. [T1]
-- **No upper ceiling; minimum wage base** — There is no upper ceiling. In practice, where wages are below the statutory minimum wage, Social Tax is computed on at least the minimum wage per employee (CD4 / [RESEARCH GAP]). [T2]
+The following legacy narrative keys and banks are retained as a recognition vocabulary, not a verified bank export schema or automatic tax classifier. Read actual direction, counterparty, period, payment reference, payroll register and acceptance ledger before assigning tax. Refunds/reversals need reconciliation; a tax remittance is not necessarily an outgoing amount.
 
-#### Temporary 1% Social Tax — qualifying cases [T2]
-
-**Temporary 1% Social Tax qualifying cases table**  _(PwC WWTS Uzbekistan, Corporate: Other taxes; EY 2026 alert)_
-
-| Case | Window |
-| --- | --- |
-| Employers of low-income staff earning > 1.5× minimum wage | 1 Jan 2025 – 1 Jan 2028 |
-| Employers of students under 30 in vocational training | 1 Sep 2024 – 1 Sep 2027 |
-| Qualifying greenhouse farms | per statute `[RESEARCH GAP]` |
-| Cotton-textile / knitwear / garment clusters | per statute `[RESEARCH GAP]` |
-| Fruit / vegetable sellers | per statute `[RESEARCH GAP]` |
-| Children's-content producers | per statute `[RESEARCH GAP]` |
-
-### 3b. Employee INPS pension (0.1%, carved out of PIT) [T1]
-
-**INPS pension table**  _(LegalAct.uz)_
-
-| Item | Value | Source |
-| --- | --- | --- |
-| INPS contribution rate | **0.1%** of gross salary | LegalAct.uz |
-| Funded from | **Out of the calculated 12% PIT** — it reduces the PIT remitted to budget and is redirected to the employee's individual pension account | LegalAct.uz |
-| Additional cost to employee? | **No** — it is part of the 12%, not on top of it | LegalAct.uz |
-| Additional cost to employer? | **No** | LegalAct.uz |
-
-- **Arithmetic check** — On gross × 12% PIT, the split is: gross × 0.1% → INPS pension account; gross × 11.9% → State budget as PIT. The employee's total deduction is still 12% of gross, and net pay is still gross × 0.88. [T1]
-
-> **[RESEARCH GAP — reviewer to confirm].** One secondary news item (newslineuz.com) suggested a planned increase of the INPS rate to **2%**, but that page failed to load (TLS error) and the increase / effective date is **UNCONFIRMED**. Treat INPS as **0.1%, carved out of the 12% PIT** until verified against the Tax Code. Source: research caveat (1).
-
-## Section 4 -- Gross-to-Net and Employer-Cost Computation Order
-
-- **Deterministic order of operations** — 1.  Determine gross salary (ish haqi / oylik maosh), in UZS. 2.  PIT = gross × 12%                              (withheld from gross by the employer as tax agent). of which: INPS = gross × 0.1%             (carved out; goes to the employee's pension account) to budget = gross × 11.9%       (remitted to the State Tax Committee as PIT) 3.  Net pay = gross − PIT = gross × (1 − 0.12) = gross × 0.88. 4.  Employer Social Tax = gross × 12%              (standard rate; paid ON TOP of gross). 5.  Total employer cash cost = gross + employer Social Tax = gross × 1.12.  _(PwC WWTS Uzbekistan (PIT 12% withholding; Social Tax 12%); LegalAct.uz (0.1% INPS carve-out).)_
-- **Arithmetic check net/employer-cost multipliers** — Arithmetic check: net multiplier = 1 − 0.12 = 0.88; standard employer-cost multiplier = 1 + 0.12 = 1.12. [T1]
-
-**Variant multipliers by employer Social Tax rate**
-
-| Employer type | Social Tax rate | Employer-cost multiplier |
-| --- | --- | --- |
-| Standard commercial | 12% | 1.12 |
-| Budget organisation | 25% | 1.25 |
-| Disability workshop | 4.7% | 1.047 |
-| SOS Children's Villages | 7% | 1.07 |
-| Temporary 1% case | 1% | 1.01 |
-
-## Section 5 -- Conservative Defaults
-
-**Conservative Defaults table**  _(research conservative_defaults)_
-
-| # | Default assumption | Rationale / source |
-| --- | --- | --- |
-| CD1 | Apply **12%** flat PIT to gross employment income for both residents and resident-status non-residents; for a genuine non-resident, verify treaty relief [T2]. | PwC WWTS Uzbekistan, Individual. |
-| CD2 | Use the **12% standard** employer Social Tax rate unless the entity is a budget organisation (25%) or qualifies for a specific reduced/temporary rate. | PwC WWTS Uzbekistan, Corporate: Other taxes. |
-| CD3 | Treat the **0.1% INPS** as **carved out of the 12% PIT** (no extra employee cost) — net pay = gross × 0.88. | LegalAct.uz; research caveat (1). |
-| CD4 | Where wages are **below the statutory minimum wage**, compute employer Social Tax on **at least the minimum wage** per employee; flag [T2]. | EOR guidance; exact statutory mechanic unconfirmed `[RESEARCH GAP]`. |
-| CD5 | File and pay PIT + Social Tax by the **15th** of the following month. | Asanify EOR guide; `[RESEARCH GAP]` — confirm official deadline. |
-| CD6 | Do **not** apply the monthly 1× BCV PIT personal deduction to a generic payroll — it applies only to specified eligible categories. PIT base = full gross unless eligibility is confirmed. | PwC WWTS Uzbekistan; research caveat (2). |
-
-## Section 6 -- Required Inputs and Refusal Catalogue
-
-- **Required inputs before computing any payroll [T1]** — Ask for any unknown item. Do not compute until items 1--4 are confirmed. 1. Employer TIN (INN / STIR) and registration with the State Tax Committee. 2. Pay period and payment date (PIT is withheld on payment; the monthly report is filed by the 15th of the following month — CD5). 3. Gross salary for the period, in UZS. If only a net figure is known, flag for gross-up (gross = net / 0.88) and present as estimate only [T2]. 4. Employer Social Tax category: standard commercial (12%), budget organisation (25%), disability workshop (4.7%), SOS Children's Villages (7%), or a qualifying temporary-1% case (CD2) [T2 if unclear].
-
-### Refusal Catalogue [T1]
-
-**Refusal Catalogue table**
-
-| Trigger | Action |
-| --- | --- |
-| Request concerns a **different CIS jurisdiction** (Kazakhstan KZT, Azerbaijan AZN, Tajikistan TJS, etc.) | STOP. Wrong jurisdiction. This skill is Uzbekistan (UZ / UZS). Escalate to the correct skill [T3]. |
-| Gross salary not provided (only "net" or "budget") | Gross-up required (gross = net / 0.88). Present as estimate only and flag [T2]. |
-| Payment date / pay period unknown | STOP. Report timing depends on the payment date (CD5). |
-| Worker is an **individual entrepreneur (IE) / self-employed** | OUT OF SCOPE for payroll. From 1 Jan 2026 the fixed-PIT IE regime is cancelled and a **1% turnover tax** applies to IEs/self-employed with annual turnover up to UZS 1 billion (EY 2026 alert). Escalate [T3]. |
-| Income is **not employment income** (dividends 5%/10%, interest, freight 6%, services) | OUT OF SCOPE for this skill [T3]. |
-| Employee may qualify for the **1× BCV PIT deduction** | Do not apply it by default (CD6); confirm eligibility in the Tax Code, flag [T2] / `[RESEARCH GAP]`. |
-| Genuine **non-resident** with possible **treaty relief** | Apply 12% by default (CD1) but flag [T2]; verify the applicable double-tax treaty. |
-
-## Section 7 -- Transaction / Payment Pattern Library (Deterministic)
+```text
+#### Legacy vocabulary: Section 7 -- Transaction / Payment Pattern Library (Deterministic)
 
 Map bank-statement narrations (often Uzbek / Russian / transliterated) to payroll classifications. All patterns [T1] unless flagged. Major Uzbek banks: National Bank of Uzbekistan (NBU), Uzpromstroybank (SQB), Ipoteka Bank, Hamkorbank, Kapitalbank, Asaka Bank, Agrobank, Davr Bank.
 
-### 7a. Salary credits to the employee's account
+#### Legacy vocabulary: 7a. Salary credits to the employee's account
 
 **Salary credits narration table**
 
-| Narration pattern (Uzbek / Russian / common) | Classification |
-| --- | --- |
-| ISH HAQI, OYLIK, OYLIK MAOSH | Net salary payment |
-| ZARPLATA, ЗАРПЛАТА (Russian "salary") | Net salary payment |
-| OYLIK [month/year], MONTHLY SALARY | Net monthly salary |
-| AVANS, AVANS TOʻLOVI | Salary advance — partial net payment [T2] |
-| PREMIYA, BONUS, MUKOFOT | Bonus — taxable as employment income (12% PIT applies) [T1] |
-| OTPUSKNYE, TAʼTIL PULI | Holiday / leave pay — employment income [T1] |
+Historical table row: Narration pattern (Uzbek / Russian / common) ; Classification
+Historical table row: --- ; ---
+Historical table row: ISH HAQI, OYLIK, OYLIK MAOSH ; Net salary payment
+Historical table row: ZARPLATA, ЗАРПЛАТА (Russian "salary") ; Net salary payment
+Historical table row: OYLIK [month/year], MONTHLY SALARY ; Net monthly salary
+Historical table row: AVANS, AVANS TOʻLOVI ; Salary advance  -  partial net payment [T2]
+Historical table row: PREMIYA, BONUS, MUKOFOT ; Bonus  -  taxable as employment income (12% PIT applies) [T1]
+Historical table row: OTPUSKNYE, TAʼTIL PULI ; Holiday / leave pay  -  employment income [T1]
 
-### 7b. Employer remittances (debits from the company account)
+#### Legacy vocabulary: 7b. Employer remittances (debits from the company account)
 
 **Employer remittances narration table**
 
-| Narration pattern | Classification |
-| --- | --- |
-| SOLIQ, DSQ, DAVLAT SOLIQ QOʻMITASI, SOLIQ.UZ | Tax remittance to the State Tax Committee (PIT) |
-| JSHDS, JISMONIY SHAXSLAR DAROMAD SOLIGʻI | Personal income tax (PIT) withholding remittance |
-| IJTIMOIY SOLIQ, SOTSIALNYY NALOG | Employer Social Tax payment |
-| INPS, JAMGʻARIB PENSIYA | Individual Accumulative Pension Fund (the 0.1% carved out of PIT) |
-| ISH HAQI, ZARPLATA, PAYROLL, NET WAGES | Net salary disbursement to employees |
+Historical table row: Narration pattern ; Classification
+Historical table row: --- ; ---
+Historical table row: SOLIQ, DSQ, DAVLAT SOLIQ QOʻMITASI, SOLIQ.UZ ; Tax remittance to the State Tax Committee (PIT)
+Historical table row: JSHDS, JISMONIY SHAXSLAR DAROMAD SOLIGʻI ; Personal income tax (PIT) withholding remittance
+Historical table row: IJTIMOIY SOLIQ, SOTSIALNYY NALOG ; Employer Social Tax payment
+Historical table row: INPS, JAMGʻARIB PENSIYA ; Individual Accumulative Pension Fund (the 0.1% carved out of PIT)
+Historical table row: ISH HAQI, ZARPLATA, PAYROLL, NET WAGES ; Net salary disbursement to employees
 
-> Salaries, PIT and Social Tax are **never** items on a VAT (QQS) return — keep them out of uzbekistan-vat. Cross-reference: uzbekistan-vat.md.
+> Salaries, PIT and Social Tax are **never** items on a VAT (QQS) return  -  keep them out of uzbekistan-vat. Cross-reference: uzbekistan-vat.md.
 
-## Section 8 -- Filing Obligations
 
-**Forms table**
+#### Legacy vocabulary: Section 14 -- Bank Statement / Terminology Reading Guide
 
-| Form | Purpose | Deadline | Portal | Source |
-| --- | --- | --- | --- | --- |
-| **Monthly payroll / withholding report** (PIT + Social Tax) | Declare employee gross income, withheld 12% PIT, employee INPS, and employer 12% Social Tax | By the **15th** of the month following the reporting month; tax + contributions paid by the same date | my.soliq.uz | Asanify EOR guide; `[RESEARCH GAP]` — confirm official form designation |
-| **Individual annual tax return** (declaration of income) | Filed by individuals where required (multiple income sources, foreign income); most pure-employment taxpayers are settled via employer withholding | **Filing by 1 April** of the following year; **PIT balance payable by 1 June** of the following year | my.soliq.uz | PwC WWTS Uzbekistan, Individual: Tax administration |
+**Terminology reading guide table**
 
-> **[RESEARCH GAP — reviewer to confirm].** The monthly report **form name** and the e-filing mechanics (my.soliq.uz, 15th-of-month deadline) come from secondary EOR guides, not directly from the authority. Confirm the current official form designation and deadline against soliq.uz / the Tax Code before relying. Source: research caveat (6).
+Historical table row: Term (Uzbek / Russian transliterated) ; English ; Notes
+Historical table row: --- ; --- ; ---
+Historical table row: ish haqi / oylik / oylik maosh ; salary / wage ; gross unless context says net
+Historical table row: zarplata (зарплата) ; salary ; Russian  -  common in narrations
+Historical table row: avans ; advance / instalment ; partial salary payment
+Historical table row: premiya / mukofot ; bonus / premium ; taxable as employment income (12% PIT)
+Historical table row: jismoniy shaxslar daromad soligʻi (JShDS) ; personal income tax ; the 12% PIT
+Historical table row: ijtimoiy soliq ; social tax ; employer 12% (etc.)
+Historical table row: INPS / jamgʻarib pensiya ; individual accumulative pension fund ; the 0.1% carved out of PIT
+Historical table row: Davlat soliq qoʻmitasi (DSQ) ; State Tax Committee ; soliq.uz / my.soliq.uz
+Historical table row: STIR / INN ; taxpayer identification number ; employer / individual TIN
+Historical table row: naqd pul ; cash ; cash withdrawal  -  exclude from payroll classification
+Historical table row: ichki oʻtkazma ; internal transfer ; between client's own accounts  -  exclude
 
-> For an employee whose salary is fully taxed at source via the employer as tax agent, **no annual return** is generally required — the annual return is for individuals with income (e.g. multiple sources, foreign income) not fully settled by withholding. [T1]
+**Conventions.** Uzbek banks export statements in UZS; dates often DD.MM.YYYY. Convert foreign-currency salaries to UZS at the Central Bank of the Republic of Uzbekistan (cbu.uz) rate on the relevant date. Narrations may appear in Uzbek (Latin or Cyrillic) or Russian.
 
-## Section 9 -- Minimum Wage and Base Calculation Value (BCV)
+```
 
-Two statutory reference figures drive Uzbek payroll thresholds. Both were reset effective **1 August 2025** by Presidential Decree No. UP-97 (2025).
+Bank-only onboarding: request payroll registers, category/status certificates and prior accepted reports; identify candidate tax/salary/INPS lines, reconcile them to recipients and periods, then reconstruct gross only as a scenario. Unknown worker type/category or missing certificates block finalisation.
 
-**Minimum wage and BCV table**
+## Boundary and exception table
 
-| Item | Value | Effective | Source |
-| --- | --- | --- | --- |
-| Statutory minimum wage | **UZS 1,271,000 / month** (up from UZS 1,155,000) | 1 Aug 2025 | WageIndicator; Presidential Decree No. UP-97 (2025) |
-| Base Calculation Value (BCV / BHM) | **UZS 412,000 / month** | 1 Aug 2025 | PwC WWTS Uzbekistan, Individual: Significant developments |
+| Situation | Required treatment |
+|---|---|
+| Missing employer category or incentive proof | Hold final computation. A12% scenario may be an estimate, never proof of category; do not infer budget status from a bank debit ratio |
+| Foreign employee | Determine work location, tax residence, treaty, legal employer and permanent-residence status separately. INPS eligibility is not decided by 183-day tax residence alone |
+| Very high or below-minimum salary | Use the actual statutory base under 403–404. The old universal minimum-wage social-tax floor is not established by those articles; do not invent a ceiling or substitute BCV |
+| Foreign-personnel supply contract | Base is supplied personnel income but at least 90% of total contract costs under 404; ordinary local payroll is a different case |
+| Tax-exempt income or restricted PIT relief | PIT base and social-tax base may differ. An employee PIT exemption is not automatically employer social-tax exemption |
+| Advance, bonus, leave pay, benefit or reimbursement | Reconcile the legal character and accrual/payment dates; bank narration alone cannot determine its tax treatment |
+| IE/self-employed or family business | Separate 408 contribution rules from ordinary employer percentage payroll. Their turnover/income tax goes to uzbekistan-income-tax |
+| Non-employment investment/freight payment | Outside salary computation.381 resident dividends/interest 5%;382 nonresident dividends/interest 10%, international freight 6%, subject to specific exemption/treaty; do not call these salary rates: https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Annual or departure return | Employer withholding does not replace a required individual declaration; refer 397–398 and the income-tax Guide |
 
-- **Minimum wage and BCV usage** — The minimum wage is the floor for contractual pay and, in practice, the minimum base for employer Social Tax where actual wages are lower (CD4 / [RESEARCH GAP]). [T2] The BCV is used for the standard 1× BCV monthly PIT personal deduction (eligible categories only — CD6), and for fines, duties and statutory thresholds. [T1]
+## Worked cases
 
+Ordinary 2026 resident employee, UZS 5,000,000 gross, no relief, mandatory INPS and standard social base equal gross. PIT 600,000 includes INPS 5,000 and insurance 10,000; remaining PIT 585,000. Net 4,400,000; employer social 600,000; total cost 5,600,000. The old 2025 budget 595,000 split is not the 2026 split.
+
+```oa-check
+name: Ordinary 2026 salary reconciles all PIT destinations
+inputs:
+  gross: 5000000
+steps:
+  - pit: gross * 0.12
+  - inps: gross * 0.001
+  - insurance: gross * 0.002
+  - remaining_pit: pit - inps - insurance
+  - net: gross - pit
+  - social: gross * 0.12
+  - cost: gross + social
+  - remittances: pit + social
+expected:
+  pit: 600000
+  inps: 5000
+  insurance: 10000
+  remaining_pit: 585000
+  net: 4400000
+  social: 600000
+  cost: 5600000
+  remittances: 1200000
+```
+
+A hypothetical November 2026 employee with evidenced 380 clause 3 relief has gross 5,000,000 and 3×1,360,000=4,080,000 exempt income. PIT base 920,000 gives 110,400; ordinary employee without this proof has 600,000 PIT. The social base remains 5,000,000 in this scenario. Compare both outcomes; do not use 1 BCV or grant the relief by default.
+
+```oa-check
+name: Documented disability relief changes PIT but not employer social base
+inputs:
+  gross: 5000000
+  minimum_wage: 1360000
+steps:
+  - relief: minimum_wage * 3
+  - pit_base: max(gross - relief, 0)
+  - relieved_pit: pit_base * 0.12
+  - ordinary_pit: gross * 0.12
+  - relieved_net: gross - relieved_pit
+  - ordinary_net: gross - ordinary_pit
+  - social: gross * 0.12
+  - net_difference: relieved_net - ordinary_net
+expected:
+  relief: 4080000
+  pit_base: 920000
+  relieved_pit: 110400
+  ordinary_pit: 600000
+  relieved_net: 4889600
+  ordinary_net: 4400000
+  social: 600000
+  net_difference: 489600
+```
+
+### Historical case archive: original payloads, not current authority
+
+Every original case below is retained in full. These are historical test inputs and old explanatory text, not current verified law or validated bank-file formats. The current method above controls. In 2026 ordinary PIT budget-only amounts must also subtract the 0.2-point insurance allocation;1,271,000 is the historical minimum from 1 Aug 2025 through 31 Aug 2026, not the current minimum; claimed 1% requires evidence and student PIT can also change. A debit 600,000 described as total PIT needs recipient-level reconciliation:5,000 INPS plus 595,000 remaining 2025 PIT were not automatically one budget transfer. Dates and amounts below remain unchanged; old period-specific legal claims are quarantined.
+
+```text
 ## Section 10 -- Worked Examples
 
 All figures in UZS. Each example is recomputed end-to-end. Unless stated, the employer is a **standard commercial entity** (employee net = gross × 0.88; employer cost = gross × 1.12) and **no BCV deduction** applies (CD6).
@@ -267,7 +256,7 @@ Bank statement: a credit of UZS 4,400,000 narrated `ISH HAQI 03/2025`.
 - Employer Social Tax = 1,271,000 × 12% = **152,520**
 - **Total employer cost = 1,423,520** (= 1,271,000 × 1.12) ✓
 
-> Note: there is **no tax-free band** by default — PIT applies from the first soʻm of salary (the 1× BCV deduction is for eligible categories only, CD6). [T1]
+> Note: there is **no tax-free band** by default  -  PIT applies from the first soʻm of salary (the 1× BCV deduction is for eligible categories only, CD6). [T1]
 
 ### Example 4 -- High salary, UZS 10,000,000 gross [T1]
 
@@ -281,14 +270,14 @@ Bank statement: a credit of UZS 4,400,000 narrated `ISH HAQI 03/2025`.
 
 - PIT = 4,000,000 × 12% = **480,000** (INPS 0.1% = 4,000; to budget = 476,000)
 - **Net pay = 4,000,000 − 480,000 = 3,520,000** (= 4,000,000 × 0.88) ✓
-- Employer Social Tax (**25%** — budget organisation) = 4,000,000 × 25% = **1,000,000**
+- Employer Social Tax (**25%**  -  budget organisation) = 4,000,000 × 25% = **1,000,000**
 - **Total employer cost = 4,000,000 + 1,000,000 = 5,000,000** (= 4,000,000 × 1.25) ✓
 
 > The employee side is **identical** to a commercial entity (12% PIT). Only the **employer Social Tax rate** differs (25% vs 12%). [T1]
 
 ### Example 6 -- Temporary 1% Social Tax case, UZS 2,000,000 gross [T1] / [T2]
 
-Employer qualifies for a temporary 1% Social Tax rate (e.g. low-income staff earning > 1.5× minimum wage, 1 Jan 2025 – 1 Jan 2028 — confirm eligibility).
+Employer qualifies for a temporary 1% Social Tax rate (e.g. low-income staff earning > 1.5× minimum wage, 1 Jan 2025 – 1 Jan 2028  -  confirm eligibility).
 
 - PIT = 2,000,000 × 12% = **240,000** (INPS 0.1% = 2,000; to budget = 238,000)
 - **Net pay = 2,000,000 − 240,000 = 1,760,000** (= 2,000,000 × 0.88) ✓
@@ -297,158 +286,6 @@ Employer qualifies for a temporary 1% Social Tax rate (e.g. low-income staff ear
 
 > **[T2].** The 1% rate is conditional and time-limited (Section 3a). Confirm the employer/employee qualifies and the window is open before applying it; otherwise default to 12% (CD2).
 
-## Section 11 -- Tier 1 Rules (Deterministic)
-
-**Tier 1 Rules table**
-
-| # | Rule | Source |
-| --- | --- | --- |
-| T1-1 | PIT on salary is a **flat 12%** of the PIT base (gross, by default), withheld at source by the employer as tax agent. No progressive bands since the 2019 reform. | PwC WWTS Uzbekistan, Individual |
-| T1-2 | Non-resident Uzbek-source **employment** income is also taxed at **12%** (reduced from the former 20%). Verify treaty relief for genuine non-residents. | PwC WWTS Uzbekistan, Individual |
-| T1-3 | Employer **Social Tax (Ijtimoiy soliq)** standard rate is **12%** of total gross payroll (local + expatriate); it is an employer cost, **not** withheld from the employee. | PwC WWTS Uzbekistan, Corporate: Other taxes |
-| T1-4 | **Budget organisations** pay Social Tax at **25%**; specialised disability workshops at **4.7%**; SOS Children's Villages at **7%**; defined temporary cases at **1%**. | PwC WWTS Uzbekistan, Individual / Corporate: Other taxes; EY 2026 alert |
-| T1-5 | Employee **INPS** pension is **0.1% of gross, carved OUT of the 12% PIT** — it reduces the PIT remitted to budget and is NOT an additional employee or employer cost. | LegalAct.uz |
-| T1-6 | PIT is computed on a **cumulative (year-to-date)** basis each month: `PIT(Jan→current) − PIT(Jan→previous)`. For constant salary with no deduction this equals `monthly gross × 12%`. | LegalAct.uz |
-| T1-7 | Net pay = gross × **0.88**; standard total employer cash cost = gross × **1.12** (1.25 budget org; 1.047 disability workshop; 1.07 SOS; 1.01 temporary-1% case). | derived from T1-1 + T1-3/T1-4 |
-| T1-8 | **BCV = UZS 412,000/month** (eff. 1 Aug 2025); used for the 1× BCV PIT deduction (eligible categories only) and for fines/duties. | PwC WWTS Uzbekistan, Significant developments |
-| T1-9 | **Statutory minimum wage = UZS 1,271,000/month** (eff. 1 Aug 2025, up from UZS 1,155,000) under Presidential Decree No. UP-97. | WageIndicator; Presidential Decree No. UP-97 |
-| T1-10 | Tax residency: **183+ days** of presence in any 12-month period beginning or ending in the tax year; or < 183 days but more than in any other country. | PwC WWTS Uzbekistan, Individual: Residence |
-| T1-11 | The tax year is the **calendar year**. The monthly payroll report (PIT + Social Tax) is filed and paid by the **15th** of the following month (CD5; confirm form designation). | PwC WWTS Uzbekistan, Tax administration; Asanify |
-| T1-12 | Individual annual income tax return, where required, is due by **1 April** of the following year; any PIT balance is payable by **1 June** of the following year. | PwC WWTS Uzbekistan, Individual: Tax administration |
-
-### Context rates (for cross-skill reference; not payroll) [T1]
-
-**Context rates table**
-
-| Item | Rate / value | Source |
-| --- | --- | --- |
-| Resident dividends / interest PIT | 5% | PwC WWTS Uzbekistan, Individual |
-| Non-resident dividends / interest PIT | 10% | PwC WWTS Uzbekistan, Individual |
-| Non-resident transportation / freight PIT | 6% | PwC WWTS Uzbekistan, Individual |
-| IE / self-employed turnover tax (from 1 Jan 2026) | 1% of turnover up to UZS 1 billion/yr; fixed-PIT IE regime cancelled; under-UZS-100m exemption abolished | EY Global Tax Alert, Jan 2026 |
-
-## Section 12 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-**Tier 2 Catalogue table**
-
-| # | Situation | Why it needs judgement | Action |
-| --- | --- | --- | --- |
-| T2-1 | Employee may qualify for the **1× BCV PIT deduction** | The deduction applies only to specified categories, not universally | Default to full gross (CD6); confirm eligibility; flag `[RESEARCH GAP]`. |
-| T2-2 | **Genuine non-resident** employee | Treaty relief may reduce / reallocate taxing rights | Apply 12% by default (CD1); verify the applicable double-tax treaty. |
-| T2-3 | Employer **Social Tax category** unclear (commercial vs budget vs reduced/temporary) | Rate ranges from 1% to 25% | Default 12% (CD2); confirm category before finalising. |
-| T2-4 | **Temporary 1% Social Tax** eligibility / window | Each case has its own conditions and sunset date | Confirm eligibility and that the window is open; else default to 12%. |
-| T2-5 | Wages **below the minimum wage** — Social Tax minimum base | Exact statutory minimum-base mechanic unconfirmed | Compute Social Tax on at least the minimum wage (CD4); flag `[RESEARCH GAP]`. |
-| T2-6 | **Net-to-gross** gross-up requested | Iterative / rounding-sensitive (gross = net / 0.88) | Present as estimate; flag for adviser. |
-| T2-7 | Worker may be an **IE / self-employed** rather than an employee | Wrong regime (1% turnover tax from 2026, not payroll) | Escalate [T3] — out of payroll scope. |
-| T2-8 | **INPS rate** | A secondary source hinted at a planned 2% rate (unverified, page failed to load) | Use 0.1% (CD3); confirm against the Tax Code before relying. `[RESEARCH GAP]` |
-| T2-9 | Exact **penalty / late-payment interest (peni)** amounts | Not confirmed from a primary authority source | Cross-check the Tax Code / Code of Administrative Liability before relying. `[RESEARCH GAP]` |
-
-## Section 13 -- Excel Working Paper Template
-
-**Excel Working Paper Template table**
-
-| Cell ref | Label | Formula / source |
-| --- | --- | --- |
-| B1 | Pay period (month/year) | input |
-| B2 | Payment date | input — drives report timing (CD5) |
-| B3 | Gross salary (ish haqi) | input |
-| B4 | Employer Social Tax rate (0.12 / 0.25 / 0.047 / 0.07 / 0.01) | input (CD2) |
-| B5 | PIT (12%) | `=ROUND(B3*0.12,2)` |
-| B6 | of which INPS (0.1%, carved out of B5) | `=ROUND(B3*0.001,2)` |
-| B7 | of which PIT to budget | `=B5-B6` |
-| B8 | **Net pay** | `=B3-B5` |
-| B9 | Employer Social Tax | `=ROUND(B3*B4,2)` |
-| B10 | **Total employer cost** | `=B3+B9` |
-| B11 | Total to remit (PIT + employer Social Tax) | `=B5+B9` |
-
-Validation rows: confirm B8 = B3 × 0.88; confirm B6 + B7 = B5; confirm B10 = B3 × (1 + B4); for a standard commercial entity (B4 = 0.12), confirm B10 = B3 × 1.12.
-
-## Section 14 -- Bank Statement / Terminology Reading Guide
-
-**Terminology reading guide table**
-
-| Term (Uzbek / Russian transliterated) | English | Notes |
-| --- | --- | --- |
-| ish haqi / oylik / oylik maosh | salary / wage | gross unless context says net |
-| zarplata (зарплата) | salary | Russian — common in narrations |
-| avans | advance / instalment | partial salary payment |
-| premiya / mukofot | bonus / premium | taxable as employment income (12% PIT) |
-| jismoniy shaxslar daromad soligʻi (JShDS) | personal income tax | the 12% PIT |
-| ijtimoiy soliq | social tax | employer 12% (etc.) |
-| INPS / jamgʻarib pensiya | individual accumulative pension fund | the 0.1% carved out of PIT |
-| Davlat soliq qoʻmitasi (DSQ) | State Tax Committee | soliq.uz / my.soliq.uz |
-| STIR / INN | taxpayer identification number | employer / individual TIN |
-| naqd pul | cash | cash withdrawal — exclude from payroll classification |
-| ichki oʻtkazma | internal transfer | between client's own accounts — exclude |
-
-**Conventions.** Uzbek banks export statements in UZS; dates often DD.MM.YYYY. Convert foreign-currency salaries to UZS at the Central Bank of the Republic of Uzbekistan (cbu.uz) rate on the relevant date. Narrations may appear in Uzbek (Latin or Cyrillic) or Russian.
-
-## Section 15 -- Onboarding Fallback
-
-If the engagement is mid-year or records are incomplete:
-
-1. **No prior monthly reports on hand** → request the my.soliq.uz filing history; reconcile each month's PIT and Social Tax against bank remittances to the State Tax Committee. Do not assume prior months were correct.
-2. **Net-only history** → reconstruct gross via the gross-to-net order (Section 4): gross = net / 0.88, iterating for rounding; mark all reconstructed grosses as estimates [T2].
-3. **Employer Social Tax category unknown** → default to **12% standard** (CD2) unless the entity is clearly a budget organisation (25%) or a confirmed reduced/temporary case; confirm before finalising.
-4. **Worker type unclear (employee vs IE/self-employed)** → STOP and confirm; the IE / self-employed regimes (1% turnover tax from 2026) are out of payroll scope [T3].
-5. **BCV-deduction eligibility uncertain** → do **not** apply the 1× BCV deduction by default (CD6); compute PIT on full gross and flag [T2] / `[RESEARCH GAP]`.
-
-## Section 16 -- Reference Material
-
-**Reference Material table**
-
-| Item | Value | Source |
-| --- | --- | --- |
-| PIT (salary) rate | 12% flat on gross (residents and non-resident employment income) | PwC WWTS Uzbekistan, Individual |
-| Employer Social Tax — standard | 12% of gross payroll | PwC WWTS Uzbekistan, Corporate: Other taxes |
-| Employer Social Tax — budget org | 25% of gross payroll | PwC WWTS Uzbekistan, Individual: Other taxes |
-| Employer Social Tax — disability workshop | 4.7% of gross payroll | PwC WWTS Uzbekistan, Individual: Other taxes |
-| Employer Social Tax — SOS Children's Villages | 7% of gross payroll | PwC WWTS Uzbekistan, Individual: Other taxes |
-| Employer Social Tax — temporary case | 1% of gross payroll (conditional / time-limited) | PwC WWTS Uzbekistan, Corporate: Other taxes; EY 2026 alert |
-| Employee INPS pension | 0.1% of gross, carved out of the 12% PIT (not additional) | LegalAct.uz |
-| Net pay multiplier | 0.88 | derived |
-| Employer cost multiplier (standard / budget / disability / SOS / 1% case) | 1.12 / 1.25 / 1.047 / 1.07 / 1.01 | derived |
-| Statutory minimum wage | UZS 1,271,000/month (eff. 1 Aug 2025) | WageIndicator; Presidential Decree No. UP-97 |
-| Base Calculation Value (BCV) | UZS 412,000/month (eff. 1 Aug 2025) | PwC WWTS Uzbekistan, Significant developments |
-| Tax residency | 183 days in any 12-month period | PwC WWTS Uzbekistan, Individual: Residence |
-| Monthly report + payment deadline | 15th of following month | Asanify EOR guide; `[RESEARCH GAP]` |
-| Annual individual return | Filing by 1 April; PIT balance payable by 1 June | PwC WWTS Uzbekistan, Tax administration |
-| Tax year | Calendar year | PwC WWTS Uzbekistan, Tax administration |
-| Resident dividends / interest PIT | 5% | PwC WWTS Uzbekistan, Individual |
-| Non-resident dividends / interest PIT | 10% | PwC WWTS Uzbekistan, Individual |
-| Non-resident freight PIT | 6% | PwC WWTS Uzbekistan, Individual |
-
-### Penalties [T2]
-
-**Penalties table**  _(PwC WWTS Uzbekistan, Tax administration)_
-
-| Violation | Amount / rate | Source |
-| --- | --- | --- |
-| Late filing / late payment of PIT and Social Tax | Penalties + late-payment interest (peni) per the Tax Code and Code of Administrative Liability; exact rates **unconfirmed** | PwC WWTS Uzbekistan, Tax administration — `[RESEARCH GAP]` |
-
-> **[RESEARCH GAP — reviewer to confirm].** Exact penalty and late-payment interest (peni) percentages and fixed fines were **not confirmed from a primary authority source** in this research. Penalties for failure to withhold, file or remit PIT and Social Tax on time are set in the Tax Code of the Republic of Uzbekistan and the Code of Administrative Liability — confirm the current per-day peni rate and fixed fines against soliq.uz / the Tax Code before relying. Source: research caveat (4).
-
-### Authorities and legislation
-
-- **State Tax Committee of the Republic of Uzbekistan** (Davlat soliq qoʻmitasi) — soliq.uz; e-filing my.soliq.uz. Pension/social administered via the Pension Fund and reported through the State Tax Committee.
-- **Tax Code of the Republic of Uzbekistan** (Soliq kodeksi), as amended for 2025 — PIT, Social Tax, withholding, declarations, penalties.
-- **Presidential Decree No. UP-97 (2025)** — minimum wage and Base Calculation Value (BCV) from 1 Aug 2025.
-- **Annual budget / tax-policy amendment laws**; **EY Jan-2026 alert** for 2026 changes.
-
-### Sources
-
-1. PwC Worldwide Tax Summaries — Uzbekistan, Individual: Taxes on personal income (12% PIT; non-resident 12%; dividends/interest/freight). https://taxsummaries.pwc.com/republic-of-uzbekistan/individual/taxes-on-personal-income
-2. PwC Worldwide Tax Summaries — Uzbekistan, Individual: Other taxes (Social Tax rates: 25% budget, 4.7% disability, 7% SOS). https://taxsummaries.pwc.com/republic-of-uzbekistan/individual/other-taxes
-3. PwC Worldwide Tax Summaries — Uzbekistan, Corporate: Other taxes (Social Tax base 12%; reduced/temporary rates). https://taxsummaries.pwc.com/republic-of-uzbekistan/corporate/other-taxes
-4. PwC Worldwide Tax Summaries — Uzbekistan, Individual: Tax administration (deadlines; 1 April / 1 June). https://taxsummaries.pwc.com/republic-of-uzbekistan/individual/tax-administration
-5. PwC Worldwide Tax Summaries — Uzbekistan, Individual: Residence (183-day rule). https://taxsummaries.pwc.com/republic-of-uzbekistan/individual/residence
-6. PwC Worldwide Tax Summaries — Uzbekistan, Individual: Significant developments (BCV UZS 412,000). https://taxsummaries.pwc.com/republic-of-uzbekistan/individual/significant-developments
-7. EY Global Tax Alert — "Uzbekistan: tax updates effective from 2026" (Jan 2026). https://www.ey.com/en_uz/technical/tax-alerts/2026/01/uzbekistan-tax-updates-2026
-8. LegalAct.uz — "How to Calculate PIT in Uzbekistan — Rates, Rules, Deductions" (cumulative method; 0.1% INPS carve-out). https://legalact.uz/en/news/personal-income-tax-in-uzbekistan-how-calculate-correctly
-9. WageIndicator.org — "Minimum Wage Updated in Uzbekistan from 01 August 2025" (UZS 1,271,000). https://wageindicator.org/salary/minimum-wage/minimum-wages-news/2025/minimum-wage-updated-in-uzbekistan-from-01-august-2025-august-03-2025
-10. Asanify — "Payroll in Uzbekistan: A Complete Employer Guide" (monthly filing by the 15th). https://asanify.com/global-employer-of-record/uzbekistan/payroll/
-
-> **Reviewer note on tax year / 2026.** Figures reflect 2025 and were current as of the PwC review dated 16 Jan 2026; the BCV and minimum wage are the 1 Aug 2025 values. The official primary source (soliq.uz / the Tax Code text) was not directly fetched; re-confirm the exact 2025-final figures and any mid-2026 changes before applying. Source: research caveat (general). **Confidence: medium.**
 
 ## Section 17 -- Test Suite
 
@@ -492,27 +329,61 @@ Each test states inputs and the recomputed expected output. Reviewers should rer
 ### Test 8 -- Wrong jurisdiction guard
 
 **Input:** Request references Kazakhstan KZT / Azerbaijan AZN payroll forms.
-**Expected:** REFUSE — this is Uzbekistan (UZ / UZS), not a neighbouring CIS jurisdiction. Escalate to the correct skill [T3].
+**Expected:** REFUSE  -  this is Uzbekistan (UZ / UZS), not a neighbouring CIS jurisdiction. Escalate to the correct skill [T3].
 
 ### Test 9 -- IE / self-employed guard
 
 **Input:** "Salary" turns out to be individual-entrepreneur turnover.
-**Expected:** REFUSE for payroll — from 1 Jan 2026 IEs/self-employed pay 1% turnover tax (up to UZS 1 billion/yr); fixed-PIT IE regime cancelled. Out of payroll scope [T3].
+**Expected:** REFUSE for payroll  -  from 1 Jan 2026 IEs/self-employed pay 1% turnover tax (up to UZS 1 billion/yr); fixed-PIT IE regime cancelled. Out of payroll scope [T3].
 
-## PROHIBITIONS
+```
 
-- **Do not confuse Uzbekistan with neighbouring CIS jurisdictions** — NEVER confuse Uzbekistan (UZ, UZS, soʻm) with a neighbouring CIS jurisdiction (Kazakhstan KZT, Azerbaijan AZN, Tajikistan TJS) — their rates and forms must NOT appear in this skill.
-- **No progressive band for Uzbek salary PIT** — NEVER apply a progressive band to Uzbek salary PIT — it is a flat 12% since the 2019 reform.
-- **0.1% INPS is carved out of PIT, not additional** — NEVER treat the 0.1% INPS as an additional employee charge — it is carved out of the 12% PIT; net pay is gross × 0.88, not less.
-- **Employer Social Tax is not an employee deduction** — NEVER add the employer 12% Social Tax as a deduction from the employee's pay — it is an employer cost on top of gross.
-- **1x BCV PIT deduction restricted to eligible categories** — NEVER apply the 1× BCV PIT deduction to a generic payroll by default — it is for specified eligible categories only (CD6); flag [RESEARCH GAP].  _(CD6)_
-- **Employer Social Tax rate ranges 1% to 25%, confirm category** — NEVER assume the employer Social Tax rate without confirming the category — it ranges from 1% to 25% (12% standard, 25% budget org, 4.7% disability workshop, 7% SOS, 1% temporary cases).
-- **Temporary 1% Social Tax requires confirmed eligibility and open window** — NEVER apply a temporary 1% Social Tax rate without confirming eligibility and that the statutory window is open.
-- **IE/self-employed regime out of payroll scope** — NEVER apply the IE / self-employed regime (1% turnover tax from 2026) to an employee's payroll — that is out of payroll scope [T3].
-- **Never guess INPS rate, penalty amounts, or RESEARCH GAP figures** — NEVER guess the INPS rate (use 0.1%), the penalty/peni amounts, or any figure marked [RESEARCH GAP — reviewer to confirm] — verify against soliq.uz / the Tax Code.  _(soliq.uz / the Tax Code)_
-- **Do not miss monthly payroll report/payment deadline** — NEVER miss the monthly payroll report and payment deadline (15th of the following month, CD5) — confirm the official form designation.  _(CD5)_
-- **Always label computations as estimated, direct to qualified adviser** — NEVER present payroll computations as definitive — always label as estimated and direct to a qualified Uzbek tax adviser / licensed accountant.
+## When to refuse or refer
 
-## Disclaimer
+Stop for another jurisdiction (including Kazakhstan KZT, Azerbaijan AZN or Tajikistan TJS), missing gross/pay period/payment date, unknown employer category, unproved special relief, worker-type uncertainty or an unresolved base difference. Net-only gross-up is a labelled scenario: net÷0.88 only if ordinary 12% PIT, no relief and no other deductions. It is not a verified gross or filing position.
+
+Retain the old social refusal IDs: R-UZ-ST-1 unknown category; R-UZ-ST-2 incentive qualification/window; R-UZ-ST-3 floor/ceiling request without applicable legal basis; R-UZ-ST-4 arrears/fines without rates and dates; R-UZ-ST-5 nonresident/cross-border work. Each requires a qualified Uzbek tax professional before finalising. Income changing to IE turnover, dividends, interest, freight or other non-employment income goes to the relevant income-tax work, not a salary formula. Do not use Venezuela-derived INCES, INPS 4%,0.5% unemployment or Housing Loan Regime text for Uzbekistan.
+
+Never add INPS or the 0.2-point financing allocation on top of PIT; never deduct employer social tax from net salary; never apply ordinary 12% PIT to an evidenced special 1% student case; never apply a BCV-based personal allowance; never apply a sector incentive without its conditions; never present estimates as definitive. Sickness/maternity benefits, insurance eligibility and benefit calculations are a separate job: the 2026 reform cannot be reduced to the old assertion that there is no other social-insurance mechanism. Refer those benefit computations and voluntary-insurance elections; only the statutory PIT financing allocation is computed here.
+
+## Filing and payment
+
+For tax filing, payment and notice deadlines expressed in days, count working days unless the provision expressly says calendar days; counting starts on the day after the triggering date or event. If the last day of such a deadline falls on a statutory rest day or nonworking holiday, the following working day is the endpoint. Apply these deadline-counting rules to the 5-day and 15-day deadlines here; article 110 late interest expressly uses calendar days. Source: Tax Code 5,110, https://lex.uz/docs/4674902?ONDATE=21.10.2026.
+
+Keep a payroll tax register per 388 identifying the employee, income type, exemptions, accrual/payment dates, status, tax withheld and remitted. When an employee changes their main job, obtain the prior employer income/withholding certificate before the first new payroll. Without it/required ID, withhold without the specified relief; recalculate after evidence arrives. This replaces the old assumption that a bank-statement gross-up establishes the annual base. Source: Tax Code 388, https://lex.uz/docs/4674902?ONDATE=21.10.2026.
+
+| Obligation | Timing and conditions | Official source |
+|---|---|---|
+| PIT report |Monthly by 15th of following month; annual result by 15 February following year. Applicable branch reporting follows 389, including the more-than 25-worker branch rule | Tax Code 389, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| PIT payment |At the time income is paid, no later than the reporting deadline; in-kind income tax within 5 days after month-end | Tax Code 390, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Social-tax report/payment |Monthly report by 15th of following month; annual result by 15 February; monthly payment no later than reporting deadline | Tax Code 406–407, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Prepopulated 2026 reporting |Tax authority forms PIT/social reports using its records and personal-account inputs. Correct differences within 5 days, no later than the filing deadline; absence of a timely correction signifies acceptance. This is not an extra 5-day extension | Tax Code 81, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Individual declaration, when required |File by 1 April following year; ordinary resident balance by 1 June. Applicable foreign-person departure declaration is due 1 month before departure, and tax within 15 days after filing; the before-1-February exception is held for review because the Uzbek original and Russian translation differ on residence status | Tax Code 393,397–398, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+
+Use the client's existing Soliq personal account (my.soliq.uz) and approved current PIT/social-tax calculation, reconcile prepopulated figures to the register, correct discrepancies, obtain the accepted-report receipt, then reconcile payment allocations to the tax ledger and INPS individual accounts at Xalq banki (People's Bank). The live account/form-field map and separate INPS transfer channel/due-date details were not inspected: unattended submission is held. Do not invent a form code, box number, electronic signature path or new account-registration procedure.
+
+Late-payment interest under 110 is the unpaid tax ×the Central Bank refinancing rate applicable to each period ÷300 for each late calendar day from the day after the statutory due date, subject to statutory exclusions (including specified collection restraints, qualifying written-authority guidance and enforcement-register cases). It also applies to tax agents. Obtain the actual rate/date history; no current numeric Central Bank rate is supplied here. Missing withholding can make the agent liable for the unpaid tax and interest under 386. Fixed fines, late-report grace and limitation claims remain outside usable quantified guidance. Sources: Tax Code 110,386, https://lex.uz/docs/4674902?ONDATE=21.10.2026.
+
+## Completion checklist
+
+- [ ] Place/currency UZ/UZS and reporting 2026 confirmed; historical cases clearly labelled.
+- [ ] Gross, PIT base, social-tax base and INPS participation reconciled independently.
+- [ ] Rate/category, wage-date, relief and incentive evidence retained; exception cohort separated.
+- [ ] Current and prior YTD tax, bank salary, payment dates and accepted reports match.
+- [ ] PIT total equals INPS plus State Social Insurance Fund allocation plus remaining PIT; employer social tax separately reconciled.
+- [ ] Review flags, missing form mapping, uncertain penalty inputs and cross-border issues held; working paper marked estimated, not reviewed.
+
+## Sources
+
+| Source | URL | Read on | Read for sections |
+|---|---|---|---|
+| Uzbek-original Tax Code, selected 21 October 2026 revision | https://lex.uz/docs/4674902?ONDATE=21.10.2026 | 2026-11-14 | Read for articles 5;30;81;110;364–365;371;378;380–382;386;388–390;393;397–398;402–408;483 employment incentives; Russian edition cross-check only |
+| Mandatory funded-pension law 702-II | https://lex.uz/docs/-390573 | 2026-11-14 | Read for articles 4,6,10–11: citizenship/permanent residence, mandatory/voluntary scope, PIT-funded monthly contributions and Xalq banki |
+| PP 4086,26 December 2018 | https://lex.uz/docs/-4131684 | 2026-11-14 | Read for para 5 and neighbours:0.1% taxable-income contribution deducted from PIT |
+| PP 388,26 December 2025 | https://lex.uz/docs/-7959569 | 2026-11-14 | Read for paras 4–6:2026 fund allocations,0.2 percentage-point PIT financing and exclusions |
+| PF 91,2 June 2025 | https://lex.uz/docs/-7553322 | 2026-11-14 | Read for para 3(b) and neighbours: historical 1 Aug 2025 wage/BCV values |
+| PF 115,23 June 2026 | https://lex.uz/docs/-8283656 | 2026-11-14 | Read for para 3(b) and neighbours:1 Sep 2026 wage/BCV changes |
+
+Not yet confirmed: a blanket social-tax minimum-wage floor or universal ceiling; blanket no-other-insurance/no-unemployment/health-contribution assertion; supposed 1×BCV personal deduction (corrected by 380); alleged proposed INPS 2% (excluded); full overriding/overlapping incentive decrees; historical pre-August-2025 minimum wage of UZS 1,155,000; permanent standalone 1% regime for every seller/content producer; historical stock-dividend exemption 1 April 2022–31 December 2028; IE/self-employed 1% turnover up to 1 billion, abolished 100 million threshold and fixed-PIT changes as an executable payroll computation (referred to income-tax); legacy e-commerce 15%/4%, standard CIT 15%/special 20%, VAT 12%, turnover 4% and generic 1 billion thresholds (not contribution guidance); exact bank export schemas/date formats and FX conversion tax-date rule; current form codes/boxes and account navigation, distinct INPS remittance due date/channel, statutory rounding; fixed fines, alleged 5-day late-report grace/prior 3 months rule, single consolidated fine and 3-year assessment limitation; broad 183+residence shorthand and every special residence regime (use 30/treaty analysis); detailed sickness/maternity benefits and voluntary insurance; Tax Code 397 before-1-February departure exception, where Uzbek original says nonresident and Russian translation says resident. Old assertions and raw case payloads below are retained as historical evidence only, never authority for these gaps.
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a qualified Uzbek tax adviser or licensed accountant in Uzbekistan) before implementation.

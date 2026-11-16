@@ -2,13 +2,14 @@
 name: gg-uk-treaty-employment-and-relief
 description: >
   Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling, permanent establishments, business-profit attribution, associated-enterprise adjustments, dividend/interest/royalty conditions, pensions and government-service distinctions, student support, capital-gains allocation, offshore overrides, mutual-agreement time limits and the published arbitration procedure with an official status discrepancy. Includes domestic treaty-credit and unilateral-relief limits, claim periods and later tax adjustments, with checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
-version: "1.4"
+version: "1.5"
 jurisdiction: GG
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-15
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: situation-rules
 domain: cross-border
 ---
 
@@ -23,6 +24,17 @@ Article 4 residence requires liability by domicile, residence, management, incor
 The Agreement entered into force on **7 January 2019**. Ordinary effective dates are **1 March 2019** for withholding in both territories, **1 January 2020** for Guernsey income tax, **6 April 2019** for UK income tax and **1 April 2019** for UK corporation tax. Historical transactions require the appropriate earlier agreement. HMRC currently identifies this Agreement as in force. [Treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties); [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600).
 
 Article 1(3) preserves each territory's taxation of its residents except for the expressly listed benefits in Article 7(3), Article 9(2), and Articles 18, 19, 22, 24 and 25. Apply that reservation alongside residence and allocation rules; a statement about source-territory limits is not a universal exemption from residence taxation. [Article 1(3)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+## Rates, bands and thresholds
+
+| Treaty test | Figure and complete boundary | Source |
+|---|---|---|
+| Ordinary employment short-visit presence limb | Not more than 183 days in any 12-month period (in words on the page) commencing or ending in the fiscal year; the employer and PE-cost limbs must also hold | [Article 14(2)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf) |
+| Building/construction/installation PE | Lasts more than 12 months (in words on the page) | [Article 5(3)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf) |
+| Specified property-investment-vehicle dividends | Source tax ceiling 15% of gross for the specified annually distributing, tax-exempt property-income investment vehicle, where the beneficial owner is resident in the other territory; the pension-scheme exception and effectively connected PE rule below apply | [Article 10(2)–(4)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf) |
+| Enterprise offshore-activity deemed-PE exception | Aggregate no more than 30 days in any 12-month period (in words on the page) commencing or ending in the fiscal year, with connected-activity aggregation | [Article 21(3)–(4)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf) |
+
+These are different treaty tests. They do not establish a domestic tax rate or replace the exceptions and entitlement analysis below.
 
 ## Residence conflicts
 
@@ -83,7 +95,7 @@ For work exercised in the other territory, Article 14(2) preserves residence-onl
 
 Source: [Article 14(2)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf). Exactly 183 satisfies the numeric limb; 184 does not. Satisfying that limb does not settle the employer or cost-bearing conditions. The detailed domestic presence-count conventions and economic-employer interpretation require verification for the actual assignment. Article 14(3) separately addresses qualifying international ship/aircraft employment.
 
-## The base and Guernsey credit ceiling
+## The base
 
 For a Guernsey resident's income that the UK can tax under the Agreement, Article 22(1)(a) provides credit for UK income tax paid, subject to Guernsey credit law. Paragraph (b) caps it at the Guernsey tax attributable to that income **before the credit**. Confirm identical income, periods, eligible tax and the treaty's UK taxing right; a payroll deduction is not by itself proof that all tax withheld is treaty-permitted. [Article 22(1)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
@@ -232,7 +244,7 @@ Offshore employment remuneration can be taxed where the duties are performed off
 
 Retain asset location and valuation support, ownership chains, trading evidence, PE records, rights/contracts, activity dates and overlap, and each territory's domestic computations and filings. This is a recommended evidence structure. Domestic charging rules, valuation dates, disposal reporting and specific offshore fact patterns remain to verify.
 
-## Filing, deadlines and disputes
+## Deadlines and filing
 
 Prepare the domestic returns and relief claims for each applicable year; retain residence evidence, employment-location records, payslips, assessments, proof of tax paid and credit allocation. Sections 173 and 176 supply the domestic relief claim periods and section 173(10) supplies the later-tax-adjustment rule above. The ordinary UK-pension DT-Individual submission/change-notification method above is supplied. Guernsey domestic credit submission forms, any separate domestic change-notification deadline and other payroll clearance remain unverified. Do not stop withholding solely because this working paper identifies potential treaty relief.
 
@@ -293,6 +305,10 @@ Paragraph 8 limits mandatory assistance, including incompatible administrative m
 
 No treaty penalty or interest rate is calculated here. Determine domestic late-return, late-payment and inaccurate-claim consequences separately. A treaty claim or mutual-agreement request is not assumed to suspend collection. Keep each territory's filing and payment calendar while seeking relief.
 
+## Cross-border points
+
+Apply domestic charging, residence, the treaty allocation and domestic relief in that order, retaining each territory’s evidence. Ordinary employment, offshore activity, pensions, investment income, MAP and arbitration have distinct conditions and clocks; none supplies a universal exemption from the other territory’s filings. The substantive article-by-article rules and unresolved form/status questions above remain controlling. [Agreement and Protocol](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
 ## Two worked examples that recompute
 
 **1. The 183-day boundary is only one limb.** Assume properly counted presence blocks of 90 and 93 days within a tested twelve-month window, with all other relevant windows checked. The total is **183**. One additional day gives **184** and fails the numeric condition. In the 183-day case, residence-only treatment still requires the employer and permanent-establishment conditions; a work-territory employer would defeat the exception even at 90 days.
@@ -342,6 +358,8 @@ expected:
 5. When was any disputed taxation first notified, and which domestic appeal/claim deadlines remain open?
 
 ## Sources
+
+Source-access record, 14 November 2026: ordinary legal-library URLs returned 403/429 and the ordinary browser remained on a security-verification page. Legal-library provisions are supported by the preserved genuine October 2026 official primary PDFs, with original retrieval/read dates retained below. They are dated archived copies, not freshly retrieved current consolidations. Later amendments beyond those archived versions are not yet confirmed. Government and Registry guidance is separately identified by its own URL and read scope.
 
 Official [Agreement and Protocol](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf), [HMRC treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties) [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600) and [DT8602](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602), accessed 22 October 2026. Dividend, interest and royalty allocation conditions are drafted, but full domestic withholding/claim operations remain open. Business-profit allocation and PE tests, plus the ordinary domestic base/return sequence below, are supplied; transaction-specific attribution/internal dealings remain limited. Pension, government-service and student allocation conditions and the ordinary UK-pension submission method are supplied; domestic definitions, lump sums and other relief routes remain limited. Capital-gains and offshore allocation are now drafted; domestic charging, valuation and disposal filing remain open. Other treaty corridors and exit issues are not comprehensively covered. The cited current domestic sections 7, 47G–47I, 67 and 108 were additionally read on 27 October 2026; sections 173 and 176 were read in full on 28 October 2026 from [Income Tax Law v.0113](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); the consolidation is non-authoritative and authentic enactments control.
 

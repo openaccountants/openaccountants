@@ -165,15 +165,13 @@ def collect_batches(repo: Path, since: str, head: str = "HEAD", batch_size: int 
         # A retry may predate the lookback. Recover today's last human writer
         # from full history; never replay the old body or guess its attribution.
         found = None
-        ever = git(repo, "log", "-1", "--format=%H", head_sha, "--", path).strip()
+        ever = git(repo, "log", "--full-history", "-1", "--format=%H", head_sha, "--", path).strip()
         if not ever:
-            # The path never existed on this branch (added and removed inside one
-            # pull request before merge): nothing was ever delivered, so there is
-            # nothing to retry or withdraw. Skip it rather than block every delivery.
-            print(f"Skipping retry of a path that never existed on this branch: {path}")
-            continue
+            # An unresolved delivery record is not proof that nothing was ever
+            # stored. Keep it unresolved rather than invent a writer or erase it.
+            raise ValueError(f"Outstanding path has no reachable source history: {path}")
         for kind in ("--no-merges", "--merges"):
-            records = git(repo, "log", "-z", "--format=%an%x00%ae%x00%ce", kind,
+            records = git(repo, "log", "--full-history", "-z", "--format=%an%x00%ae%x00%ce", kind,
                           "--no-renames", "--diff-filter=ACDMRT", head_sha, "--", path).split("\0")
             for offset in range(0, len(records) - 2, 3):
                 name, email, committer = records[offset:offset + 3]

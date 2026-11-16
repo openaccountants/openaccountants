@@ -7,298 +7,159 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/il-corporate-tax"
   jurisdiction: "IL"
   tax_year: "2026"
-  last_updated: "2026-11-03"
+  last_updated: "2026-11-14"
 ---
 
-# IL Corporate Tax
-
-## Israel Corporate Tax Strategy Skill v1.1
+# Israel: company tax and owner extraction
 
 > **Based on work by [Skills IL](https://github.com/skills-il/tax-and-finance)**, licensed under MIT. Adapted for the OpenAccountants format.
 
-## Section 1: Quick reference
+> **General reference only.** Prepare a company/shareholder comparison and compliance brief for an Israeli CPA. Cash withdrawal, distributable profit and taxable benefit are different bases.
 
-**Quick reference table**
+## Scope
 
-| Field | Value | Source |
-| --- | --- | --- |
-| Country | Israel (מדינת ישראל) | |
-| Scope | Corporate tax, profit extraction methods for controlling shareholders | |
-| Currency | NIS (Israeli New Shekel: ₪) | |
-| Corporate tax rate | unverified: 23% flat on taxable profits | unverified |
-| Dividend tax: controlling shareholder (10%+) | 30% (the Authority lists dividend rates for 2026 as 25% and 30%); unverified: that 30% is the rate for a 10%+ holder | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf (PDF p.118) |
-| Dividend tax: non-controlling | 25% (same list) | same |
-| Section 3(tet) interest rate (2026) | 6.53% (s.3(i) interest rate in the 2026 booklet); the s.3(i) loan ceiling linked to CPI rise is NIS 8,640 a year | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.15) |
-| Section 3(yod) rate (CPI-linked loans, 2026) | unverified: 4.9% | unverified |
-| Surtax threshold | NIS 721,560 a year for 2026 (unverified: frozen 2025 to 2027) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.11) |
-| Credit point value | NIS 242 a month, NIS 2,904 a year, for 2026 (unverified: frozen 2025 to 2027) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.12) |
-| Tax authority | Israel Tax Authority (ITA: רשות המיסים) |
-| Contributor | Open Accountants Community |
+2026 ordinary company income tax, individual dividend/salary comparison, shareholder loans, management fees and closely held company warnings. Special investment regimes, foreign tax credit computations, company-law distribution legality and a complete s.62A/s.81 retained-profit computation require specialist work.
 
-### Conservative defaults
+| Quick reference | Rate or threshold with conditions | Official source |
+|---|---|---|
+| Ordinary company taxable income | 23%, subject to special-rate/excluded income rules | ITO s.126(a)-(c), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Dividend to individual | 25%; 30% if material shareholder on receipt or at any time in prior 12 months | ITO s.125B(1)-(2), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Material shareholder | At least 10% of a control right, directly/indirectly, alone/together under statutory definition | ITO s.88, https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Prescribed s.3(i) interest in 2026 | 6.53%; interest benefit is not a tax on principal and not protection from s.3(i1) withdrawal taxation | ITO s.3(i) 2026 footnote; booklet p.15, https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Closely held extra tax | 2% on statutorily computed excess profits after the year's dividend subtraction, subject to exceptions; not 2% of all retained earnings | ITO ss.81B-81C, https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
 
-**Conservative defaults table**
+Personal bands, credit-point value and both surtax bases are owned by [il-income-tax-returns](il-income-tax-returns.md). Self-employed contributions, applicable to a genuine self-employed fee recipient, are owned by [il-freelancer-ops](il-freelancer-ops.md). VAT is owned by [israel-vat](israel-vat.md).
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown shareholder percentage | Treat as controlling shareholder (30% dividend tax) |
-| Unknown Section 3(tet) rate | Use current year published rate |
-| Unknown whether salary is below minimum | unverified: flag minimum salary requirement for controlling shareholders |
-| Unknown company type | Treat as closely held (Chevra Me'atim) (unverified consequences, see Section 8) |
+## Ask the client first
 
-## Section 2: Extraction methods overview
+Obtain company residence and regime; taxable and distributable profits, losses, cash requirements and ownership/control history; all shareholder/related-party balances, withdrawals, repayments and private asset use; other shareholder income and capital-source income; age/residence/NI classification; payroll and employer costs; pension/study-fund deposits and limits; service contracts and actual work; current tax/withholding certificates and returns. Do not default to a material holding or closely held classification without the documents.
 
-Israeli company owners (Baalei Shlita: בעלי שליטה) have four main methods to extract value:
+## The method, step by step
 
-**Extraction methods overview table**
+### Compute company tax before a dividend
 
-| Method | Corporate tax | Personal tax | Bituach Leumi | Key advantage |
-| --- | --- | --- | --- | --- |
-| **Salary (Maskoret: משכורת)** | 0% (deductible expense) | Progressive rates (10%–50%) | Employee + Employer NI | Tax credit points, pension deductions, NI ceiling |
-| **Dividend (Dividend: דיבידנד)** | 23% (on profit first) | 30% (controlling shareholder) | None | No NI, simple, no employer cost beyond profit |
-| **Shareholder loan (Halvaat Baalim: הלוואת בעלים)** | 0% (no immediate tax) | Section 3(tet) deemed interest | None | Defers real tax, keeps cash flexible |
-| **Management fees (Dmei Nihul: דמי ניהול)** | 0% (deductible) | Income tax as business income + VAT 18% | Self-employed NI rates | Can deduct business expenses against fees |
+Start with taxable profit after permitted deductions and adjustments, not bank cash. Apply s.126 and any proven special regime. Domestic intercorporate dividends and foreign dividends have distinct s.126 rules; an individual's extraction calculation does not answer the recipient-company question. A dividend is paid from after-company-tax distributable amounts and is not a company expense ([ITO ss.125B,126](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)).
 
-### Combined effective tax rates (2026, controlling shareholder above surtax threshold)
+For an individual, material status includes the statutory control rights and joint/indirect holdings, and the higher dividend rate has a preceding-period test. Do not replace it with “currently owns more than 10%.” Check company-law earnings/solvency and approvals separately before distribution. A tax calculation is not proof a distribution is legally available.
 
-**Combined effective tax rates table**
+### Compare actual salary and dividend costs
 
-| Method | Effective rate (approximate) |
-| --- | --- |
-| Salary (top bracket) | ~55–60% (50% income tax + employer NI) |
-| Dividend | 46.1% (up to ~52% with surtax) |
-| Shareholder loan | 6.53% annual deemed interest (not a real extraction) |
-| Management fees | ~50–55% + 18% VAT on gross |
+Salary for actual services needs the allowable expense and timing rules, including s.18(b) closely held-company payment timing, payroll withholding, employer/employee NI and pension/study-fund costs. Dividends have company tax first, shareholder dividend tax and potentially both surtax bases. Any NI treatment of the actual receipt must be established; do not assume every reclassified shareholder withdrawal is free of NI.
 
-## Section 3: Dividend distribution (Halokat Dividendim: חלוקת דיבידנדים)
+An ordinary 23% company rate followed by a 30% dividend rate gives a **derived** combined rate of 46.1% before surtax: 0.23 + 0.77 x 0.30. A 25% shareholder rate gives 42.25%, derived. These figures compare one unit of **pre-company-tax profit**, not a fixed amount of cash already available to distribute ([ITO ss.125B,126](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)). The old approximate salary 55%-60%, fee 50%-55% and dividend “up to 52%” ranges are not a reliable decision rule.
 
-### 3.1 Tax calculation for controlling shareholder (10%+ holding)
+Use both s.121B bases from the annual-return skill. Ordinary dividends are capital-source income under that definition, but the additional charge applies only to the separately measured excess capital-source base. A general threshold crossing does not add 5% to the whole dividend. Do not present “NIS 200,000 / NIS 500,000” extraction bands or “salary to the 20% bracket” as universal optimal levels.
 
-- **Dividend tax calculation for controlling shareholder**: Company pre-tax profit:             P Corporate tax (23%):                P × 0.23 Distributable profit:               P × 0.77 Dividend withholding tax (30%):     P × 0.77 × 0.30 = P × 0.231 Net to shareholder:                 P × 0.77 × 0.70 = P × 0.539 Effective total tax rate:           46.1%  _(Section 3.1)_
+### Working-age controlling-shareholder payroll contributions
 
-### 3.2 Surtax impact (Mas Yesafim: מס יסף)
+The National Insurance page's column 2 covers a controlling shareholder in a closely held company who holds at least 10% of shares or a director-appointment right, aged 18 to before retirement. This classification is not interchangeable with every tax-law definition of control. Special age/residence/pension cases need the relevant column.
 
-- **Surtax impact on dividends above threshold** (2026 booklet p.11, s.121B): 3% on the part of total taxable income above NIS 721,560; plus 2% on taxable income from capital sources above that amount. These are two bases: work out each one; do not apply a flat 5% to the whole dividend once total income passes the threshold. unverified: that a dividend counts as capital-source income for the 2% charge, and the ~49.95% effective rate  _(Section 121B)_
+| Monthly wage slice (NIS) | Employee total NI plus health | Employer NI | Official source |
+|---|---|---|---|
+| Up to 7,703 | 4.25% | 4.46% | National Insurance column 2, 2026 band, https://www.btl.gov.il/Insurance/Rates/Pages/%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D%20%D7%A9%D7%9B%D7%99%D7%A8%D7%99%D7%9D.aspx |
+| Above 7,703 to maximum 51,910 | 11.96% | 7.38% | same |
+| Above maximum 51,910 | No further contributions on that excess (derived from maximum) | No further contributions on that excess | same |
 
-### 3.3 When dividend is optimal
+The page also gives ordinary resident employee employer rates of 4.51%/7.60%, and employee totals of 4.27%/12.17%, in column 1. Use the correct class, not the old table's attempt to infer a shareholder NI/health split from ordinary employee components. Apply the annual/monthly basis and employment facts correctly before a full extraction comparison. Salary-related benefits require eligibility and statutory caps; they do not establish an automatic “minimum salary before dividends.”
 
-- **When dividend is optimal**: Shareholder's salary already maximizes lower tax brackets; Amount is large enough that salary would push into 47%+ bracket; Company has sufficient retained earnings (Arvei Rvaachim: ערכי רווחים); No Bituach Leumi advantage left (salary already above NI ceiling)
+### Shareholder loan: benefit tax and withdrawal tax
 
-### 3.4 When dividend is suboptimal
+Under s.3(i), a below-prescribed-interest loan benefit can be employment income if linked to employment, business income if linked to service provision, or s.2(4) income for the residual controlling-shareholder branch. It is **not automatically salary**. Section 3(i) has its own controlling-person definition: holds or is entitled to acquire at least 5% of issued shares, votes, profits or liquidation assets, or a director-appointment right, directly/indirectly alone/with a relative. This differs from s.88 material holding and NI control. The service-provider limb excludes a loan proved unrelated to the services; international loans under s.85A and residual corporate borrowers other than the statutory family/transparent-company exceptions need separate treatment. Prescribed 6.53% interest is a benefit-valuation input; the booklet's NIS 8,640 CPI-linked loan ceiling has its specific s.3(i) context and is not a shareholder withdrawal safe harbour ([ITO s.3(i)](https://www.btl.gov.il/Laws1/00_0103_000000.pdf); [2026 booklet p.15](https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf)).
 
-- **When dividend is suboptimal**: Shareholder draws no or low salary (wasting lower brackets and credit points); Amount is moderate (under ~NIS 200,000) and salary brackets not fully utilized; Company needs the cash for operations (dividend is irreversible)
+Section 3(i1), separately, covers qualifying material-shareholder/relative company withdrawals and private asset use. The definition excludes non-transparent corporate shareholders and already fully taxed withdrawals/use. Its asset definition is specific: mainly private-use dwelling/content, art/jewellery, mainly private-use aircraft/vessel or prescribed assets, not every private item. Clause (9) separately excludes indirect-withdrawal treatment for a genuine economic-purpose loan to another non-transparent company, with the defined transparent-company exception. Refer corporate-borrower, indirect-loan and asset-definition cases before using the individual outline. For money, the charge date is generally the end of the tax year following withdrawal; for assets, year-end of first use and each following year until returned. The cumulative-money exclusion tests whether withdrawals exceeded NIS 100,000 at any time in the tax year or preceding year (amount expressed in words in statute), not whether a chosen year-end balance is below that figure. Money repayments/reborrowings within 2 years and asset reuse within 3 years have anti-recycling rules; the money exception concerns a one-off redraw returned within 60 days. A credited balance repaid within 18 months from its deduction date is recaptured up to that repayment. The money bank-loan deduction requires a bank loan for at least 2 years, passed to the shareholder within 60 days, with the shareholder bearing all costs and no company security. The apartment deduction requires a bank balance secured by a fixed security/mortgage on that same apartment for at least 3 years. These deductions have the full statutory timing and balance conditions ([ITO s.3(i1)(1)-(9)](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)).
 
-## Section 4: Salary extraction (Maskoret: משכורת)
+At the charge date, the statutory order is dividend to the extent the company has the relevant profits/share, otherwise employment income where an employment relationship exists, otherwise business/professional income. Section 3(i) can apply until the money charge date. For private asset use, s.3(i1)(7) also imposes ongoing income until return: the higher of market use value or prescribed rate times asset cost, less actual use payments. Do not mistake the annual principal/use charge dates for the only liability. The old claim that paying annual interest lets a loan defer extraction tax indefinitely is withdrawn. A signed loan agreement, repayment schedule, documented purpose and bank evidence remain necessary working-paper inputs, not a guarantee against reclassification.
 
-### 4.1 Income tax brackets (2026)
+The old “short term under 12 months” bridge suggestion is not the statutory charge-date test. Model actual dates, repayment, redraw and tax classification before selecting a loan. Principal, interest benefit and shareholder tax cannot be compared with a pre-tax-profit dividend without adjusting the bases.
 
-**Income tax brackets (2026)**
+### Management fees
 
-Income from personal exertion (salary is), 2026:
+Document the genuine service, recipient business/entity, agreement, invoicing, business purpose and amount; review s.18(b) closely held-company deduction timing separately from an invoice or accrual. A shareholder's invoice does not by itself make the company deduction valid or the receipt capital income. For a genuine self-employed recipient, load the freelancer and VAT skills; for a recipient company use its own taxable-income rules. Review arm's-length pricing and related-party characterization. Section 85A concerns an **international** related-party transaction and is not a universal domestic management-fee citation ([ITO s.85A](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)). Excessive or unsupported fees, artificial structures and disguised distributions require specialist review.
 
-| Annual income (NIS) | Rate | Source |
-| --- | --- | --- |
-| Up to 84,120 | 10% | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.10) |
-| 84,121 – 120,720 | 14% | same |
-| 120,721 – 228,000 | 20% | same |
-| 228,001 – 301,200 | 31% | same |
-| 301,201 – 560,280 | 35% | same |
-| 560,281 – 721,560 | 47% | same |
-| Above 721,560 | 50% (47% + 3% surtax) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.11) |
+### Closely held undistributed-profit regime
 
-### 4.2 Bituach Leumi for controlling shareholder employees (2026)
+The old shorthand “2% unless 6% distributed” omitted the statutory base and alternative exceptions. The 2% addition applies to **excess profits** under s.81C, after subtraction of the year's dividend, rather than all accounting retained earnings. The defined base has excluded profits and protective amounts. Do not compute it without the full s.81A/s.81C asset, expense, ownership and profit schedules.
 
-**Bituach Leumi for controlling shareholder employees (2026)**
+| Exception test for the year | Condition | Official source |
+|---|---|---|
+| Losses | Qualifying ss.28/29/92 losses exceed 10% of previous year-end accumulated profits | ITO s.81B(b)(1), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Distribution alternative | Tax-paid dividends exceed 50% of previous year-end excess profits | ITO s.81B(b)(2), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Distribution alternative | Tax-paid dividends are at least 6% of previous year-end accumulated profits | ITO s.81B(b)(3), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
 
-Column 2 of the National Insurance employee table: a controlling shareholder in a closely held company (holds at least 10% of the shares or the right to appoint a director), aged 18 and under retirement age.
+The s.81B(b) definition of tax-paid dividends excludes a s.126(b) exempt intercompany dividend unless the distributing company elects the specified highest s.125B plus s.121B tax under the regulations; simply moving cash between companies may not qualify. Section 81C compares the defined prior-year-end taxable accumulated-profit amount with the largest statutory protective amount, including a NIS 750,000 amount with common-control allocation rules (amount expressed as 750 thousand in the statute), an expense-based amount and the defined asset-based amount. These are **not additive**. Section 81C(c) has a separate branch where exempt accumulated profits are elected under paragraph (1) of the s.81A definition: compare only the NIS 750,000 and expense protective amounts, excluding the asset protective amount. A complete base and anti-avoidance computation is outside this extraction outline; preserve the regime as an explicit review item, not a reason to automatically pay a dividend.
 
-| Income range | Employee total (NI plus health) | Share of health in total | Employer NI | Source |
-| --- | --- | --- | --- | --- |
-| Up to NIS 7,703/month (from 01.01.2026) | 4.25% | 3.23% | 4.46% | https://www.btl.gov.il/Insurance/Rates/Pages/%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D%20%D7%A9%D7%9B%D7%99%D7%A8%D7%99%D7%9D.aspx |
-| NIS 7,703 – NIS 51,910/month (from 01.01.2026) | 11.96% | 5.17% | 7.38% | same |
-| Above NIS 51,910/month | 0% (ceiling) | 0% (ceiling) | 0% (ceiling) | same |
+## Worked cases
 
-- **NI rate difference from regular employees**: Controlling shareholder employer rates (4.46%/7.38%) differ slightly from an ordinary resident employee in column 1 (4.51%/7.60%) (National Insurance employee page).
+### Equal pre-tax company profit: dividend versus salary before payroll costs
 
-### 4.3 Salary advantages
-
-- **Salary advantages**: Pension contributions (Hafrashat Pensia: הפרשת פנסיה) are tax-deductible up to ceiling; Keren Hishtalmut contributions (up to ceiling) are employer-deductible, tax-free to employee; Tax credit points reduce effective rate on first brackets; NI contributions build social security entitlements
-
-### 4.4 Optimal salary level
-
-- **Optimal salary level**: The sweet spot is often drawing enough salary to utilize the lower tax brackets (up to ~NIS 228,000/year at 20% marginal rate) and maximize pension/Keren Hishtalmut deductions, then extracting additional amounts as dividends.
-
-### 4.5 Minimum salary requirement
-
-- **Minimum salary requirement**: unverified: the Tax Authority expects controlling shareholders to draw a reasonable salary (~NIS 6,500+/month) before distributing dividends.
-
-## Section 5: Shareholder loan (Halvaat Baalim: הלוואת בעלים)
-
-### 5.1 Section 3(tet) rules (2026)
-
-- **Section 3(tet) applicability**: When a company lends money to a shareholder at below-market interest, Section 3(tet) rules apply.
-
-**Section 3(tet) rules table (2026)**
-
-| Rule | Detail | Source |
-| --- | --- | --- |
-| Interest rate under s.3(i) (2026) | 6.53% per year | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.15) |
-| Treatment for controlling shareholders | unverified: deemed interest classified as salary income, taxed at marginal rates | unverified |
-| Reporting obligation | unverified: company must report deemed interest on Form 126 | unverified |
-| Section 3(yod) rate | unverified: 4.9% (for CPI-linked loans between related parties) | unverified |
-
-The 6.53% is the prescribed s.3(i) interest rate. It is not a tax on the loan principal and not a safe harbour against the Authority treating the withdrawal as a dividend or salary; see 5.2.
-
-### 5.2 Reclassification risks
-
-**Reclassification risks table**
-
-unverified: every row of this table.
-
-| Risk factor | Detail |
-| --- | --- |
-| Loan not repaid within reasonable time | ITA may reclassify as dividend (30% tax + penalties) |
-| Loan used for personal expenses | Strengthens reclassification risk |
-| No repayment schedule | Red flag for ITA |
-| Company has retained earnings | Increases risk of deemed-dividend reclassification |
-
-### 5.3 Worked example
-
-- **Worked example: shareholder loan deemed interest** (the 6.53% is from the 2026 booklet; unverified: the 47% marginal treatment): Loan amount:                NIS 500,000 Annual deemed interest:     NIS 500,000 × 6.53% = NIS 32,650 Tax on deemed interest:     NIS 32,650 × 47% (marginal rate) = NIS 15,346 Net annual cost:            NIS 15,346 (3.07% of loan)  _(Section 5.3)_
-
-Compare with dividend on the same NIS 500,000: tax of ~NIS 230,500 (46.1%). The loan defers this but accumulates cost annually.
-
-### 5.4 When shareholder loan makes sense
-
-- **When shareholder loan makes sense**: Short-term cash need (under 12 months) with clear repayment plan; Bridge financing until dividend declaration is approved; Company has a formal loan agreement with interest and repayment terms
-
-### 5.5 When to avoid shareholder loans
-
-- **When to avoid shareholder loans**: Long-term extraction need (accumulates deemed interest annually); Company has distributable retained earnings; No documented loan agreement or repayment schedule
-
-## Section 6: Management fees (Dmei Nihul: דמי ניהול)
-
-### 6.1 How it works
-
-- **Management fees mechanism**: 1. Shareholder (or their management company) invoices the company for management services 2. Company deducts the fee as a business expense (no corporate tax) 3. Fee is subject to income tax as business income + VAT (18%) 4. If through a personal Osek Murshe: subject to self-employed NI rates
-
-### 6.2 Self-employed NI rates (2026)
-
-**Self-employed NI rates (2026)**
-
-Self-employed aged 18 and under retirement age.
-
-| Income range | NI rate | Health rate | Total | Source |
-| --- | --- | --- | --- | --- |
-| Up to NIS 7,703/month (from 01.01.2026) | 4.47% | 3.23% | 7.70% | https://www.btl.gov.il/Insurance/National%20Insurance/type_list/Self_Employed/Pages/rates.aspx |
-| NIS 7,703 – NIS 51,910/month | 12.83% | 5.17% | 18.00% | same |
-
-- **NI deductibility**: unverified: 52% of the NI amount is tax-deductible.
-
-### 6.3 Requirements and risks
-
-- **Management fees requirements and risks**: Transfer pricing rules apply (Section 85A): fees must reflect arm's length market rates; ITA may challenge "excessive" management fees as disguised dividends; Must issue Heshbonit Mas (tax invoice); Requires maintaining a separate business entity with bookkeeping; Properly documented service agreements required  _(Section 85A)_
-
-## Section 7: Strategy comparison
-
-### 7.1 Decision matrix
-
-**Decision matrix table**
-
-| Factor | Salary | Dividend | Loan | Management fees |
-| --- | --- | --- | --- | --- |
-| Total effective tax rate | 10%–60% | 46.1%–52% | 6.53% deemed/year | Variable + 18% VAT |
-| Bituach Leumi | Yes (capped) | No | No | Yes (higher rates) |
-| Corporate tax deductible | Yes | No | N/A | Yes |
-| Pension benefits | Yes | No | No | Self-funded |
-| Reversible | No | No | Yes (repay loan) | No |
-| ITA scrutiny | Low | Low | High | Medium |
-| Timing flexibility | Monthly | Board resolution | Immediate | Per invoice |
-
-### 7.2 Common optimal combinations
-
-**Common optimal combinations table**
-
-| Scenario | Recommended approach |
-| --- | --- |
-| Small extraction (under NIS 200,000) | Salary up to the 20% bracket to maximize credit points and pension |
-| Medium extraction (NIS 200,000 – 500,000) | Salary to optimize brackets + dividend for the remainder |
-| Large extraction (NIS 500,000+) | Salary at optimal level + dividend; potentially short-term loan bridge |
-| One-time tax assessment | Short-term shareholder loan with 12-month repayment, funded by planned dividend |
-
-## Section 8: Closely held companies (Chevra Me'atim: חברה מעטים)
-
-- **Closely held company annual tax on undistributed profits**: unverified (the provision was not opened): A closely held company is subject to a 2% annual tax on accumulated undistributed profits unless at least 6% of accumulated profits are distributed as dividends. This rule creates pressure to distribute regularly rather than accumulating profits indefinitely within the company.
-
-## Section 9: Compliance checklist
-
-**Compliance checklist table**
-
-| Requirement | Check |
-| --- | --- |
-| Company has a CPA (Roe Cheshbon: רואה חשבון) | All strategies require professional filing |
-| Board resolution for dividends | Required before distribution, must be documented |
-| Loan agreement for shareholder loans | Written agreement with interest rate, repayment schedule, and signatures |
-| Minimum salary for controlling shareholder | unverified: ITA expects ~NIS 6,500+/month before dividends |
-| Withholding tax on dividends | unverified: company must withhold 30% and deposit with ITA by the 15th of the following month |
-| Form 856 reporting | Payments to shareholders must be reported |
-| Section 3(tet) reporting | Deemed interest must be reported on Form 126 |
-| Transfer pricing for management fees | Fees must reflect market rates |
-| VAT invoice for management fees | Must issue Heshbonit Mas |
-| Surtax reporting | Include all income sources when calculating surtax threshold |
-
-## Section 10: Reference material
-
-**Reference material table**
-
-| Resource | Reference |
-| --- | --- |
-| Israeli Tax Authority | https://www.gov.il/he/departments/israel_tax_authority |
-| Income Tax Ordinance | https://www.nevo.co.il/law/70264 |
-| Bituach Leumi: contribution rates | https://www.btl.gov.il/Insurance/National%20Insurance/Pages/default.aspx |
-| Kol Zchut: income tax brackets | https://www.kolzchut.org.il/he/מדרגות_מס_הכנסה |
-
-## Recomputed checks (2026)
+Assume ordinary pre-tax profit/cost budget of NIS 100,000, an individual qualifying for the 30% dividend rate, no surtax and no special regime. Company tax NIS 23,000 leaves NIS 77,000; shareholder tax NIS 23,100 leaves NIS 53,900, combined NIS 46,100. If an **entire deductible salary slice** is in the 35% band, its net **before NI, employer costs and pension** is NIS 65,000; at 47% it is NIS 53,000. The NIS 11,100 or NIS -900 difference is not a final extraction recommendation: recompute the full salary cost and eligible reliefs. The salary slices are alternative assumed cases, not simultaneous rates on the same person's entire income.
 
 ```oa-check
-name: Dividend from NIS 100,000 profit, 10% holder
+name: Same pre-tax budget dividend versus salary slices
 inputs:
-  p: 100000
+  budget: 100000
 steps:
-  - c: p*0.23
-  - d: (p-c)*0.30
-  - t: c+d
+  - company_tax: budget*0.23
+  - dividend: budget-company_tax
+  - shareholder_tax: dividend*0.30
+  - dividend_net: dividend-shareholder_tax
+  - combined_tax: company_tax+shareholder_tax
+  - salary_net_35_before_payroll: budget*(1-0.35)
+  - salary_net_47_before_payroll: budget*(1-0.47)
+  - difference_35: salary_net_35_before_payroll-dividend_net
+  - difference_47: salary_net_47_before_payroll-dividend_net
 expected:
-  t: 46100
+  company_tax: 23000
+  dividend: 77000
+  shareholder_tax: 23100
+  dividend_net: 53900
+  combined_tax: 46100
+  difference_35: 11100
+  difference_47: -900
 ```
 
+### Loan benefit does not settle principal taxation
+
+Retain NIS 500,000 outstanding for an assumed whole year, no interest paid and applicable 6.53% s.3(i) rate. Benefit is NIS 32,650. If the correctly classified incremental benefit is wholly taxed at an assumed 47% marginal rate, tax is NIS 15,345.50 (NIS 15,346 only when rounded to the nearest shekel). This does not calculate the separate s.3(i1) withdrawal charge, contributions or surtax. The old NIS 230,500 dividend comparison used NIS 500,000 **pre-tax profit**, giving NIS 269,500 net; it was not tax on a NIS 500,000 distributable cash dividend. Never compare those unmatched bases.
+
 ```oa-check
-name: Deemed interest, NIS 500,000 loan (2026)
+name: Interest benefit and separate dividend base
 inputs:
-  l: 500000
+  principal: 500000
 steps:
-  - i: l*0.0653
+  - benefit: principal*0.0653
+  - assumed_benefit_tax: benefit*0.47
+  - tax_on_pretax_profit: principal*(0.23+0.77*0.30)
+  - net_from_pretax_profit: principal-tax_on_pretax_profit
 expected:
-  i: 32650
+  benefit: 32650
+  assumed_benefit_tax: 15345.50
+  tax_on_pretax_profit: 230500
+  net_from_pretax_profit: 269500
 ```
+
+## When to refuse or refer
+
+Refer uncertain control/residence, related-party services, s.62A attribution, s.81 excess profits, foreign/intercompany dividends, shareholder withdrawals/private assets, special NI classes, distributions without company-law approval, and unsupported pension/study-fund benefits. Do not promise an optimal method from one tax rate or assume a NIS 6,500 monthly salary floor.
+
+## Filing and payment
+
+Prepare the company return (Form 1214), shareholder annual return, actual payroll/withholding returns and supporting extraction schedule as applicable. Reconcile company tax, dividend withholding and shareholder surtax; document board/company-law approval separately. Form 126/856 treatment and deposit dates depend on the actual receipt/reporting regime; the old universal 15th/April 30 claims are not asserted here. Confirm current forms, deadlines and professional authorization before filing.
+
+## Completion checklist
+
+Confirm ownership/holding period and company regime; separate tax profit, distributable profit and cash; compare equal cost bases; apply actual payroll/pension/NI; compute both surtax bases; reconcile loans/withdrawal dates and related-party contracts; screen s.62A/s.81; obtain company-law and CPA review; document return/payment requirements.
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Israel Tax Authority, salary-deduction booklet from January 2026 (updated April 2026), read p.10 (2026 bands), p.11 (s.121B surtax), p.12 (credit point), p.15 (s.3(i) interest rate 6.53%, s.3(i) ceiling NIS 8,640) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-03 |
-| Israel Tax Authority, "Know your rights and duties" guide, tax year 2025 (published July 2026), read PDF p.118 (special-rate income for tax year 2026: dividend 25%, 30%) | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-03 |
-| National Insurance, employee rates page, read the NIS 7,703 band and NIS 51,910 ceiling from 01.01.2026 and the column 1 and column 2 (controlling shareholder) working-age rates | https://www.btl.gov.il/Insurance/Rates/Pages/%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D%20%D7%A9%D7%9B%D7%99%D7%A8%D7%99%D7%9D.aspx | 2026-11-03 |
-| National Insurance, self-employed rates page, read the working-age table from 01.01.2026 | https://www.btl.gov.il/Insurance/National%20Insurance/type_list/Self_Employed/Pages/rates.aspx | 2026-11-03 |
+| Consolidated Income Tax Ordinance; Read for s.3(i),(i1) classification, timing, exclusions and repayment rules; s.88 material holder; ss.125B/126 dividend/company rate; ss.81B-81C base/exceptions and s.85A international scope | https://www.btl.gov.il/Laws1/00_0103_000000.pdf | 2026-11-14 |
+| ITA 2026 deduction booklet; Read for p.15 prescribed s.3(i) rate and CPI-linked loan ceiling, not an extraction safe harbour | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-14 |
+| National Insurance employee page; Read for column 2 working-age controlling-shareholder definition, contribution totals, employer rates, 2026 band/maximum and column 1 comparison | https://www.btl.gov.il/Insurance/Rates/Pages/%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D%20%D7%A9%D7%9B%D7%99%D7%A8%D7%99%D7%9D.aspx | 2026-11-14 |
 
-Not yet confirmed: the 23% corporate rate (and so the 46.1% combined figure and the first worked check); which holder takes the 30% dividend rate (the guide lists 25% and 30% without saying); the s.3(yod) 4.9% rate; the treatment of s.3(i) interest as salary, its Form 126 reporting and the reclassification risks; closely held company 2% tax and the 6% distribution condition; NIS 6,500 salary expectation; the split of controlling shareholder employee contributions between National Insurance and health (the page gives totals); 52% deductibility; dividend withholding and its deposit date; whether a dividend is capital-source income for the 2% surtax; the effective-rate tables in Sections 2 and 7.
-
-## Disclaimer
-
-> **חשוב:** כל המידע בקובץ זה מיועד למטרות מידע וחישוב בלבד. יש לבדוק כל עמדה מול רואה חשבון (Ro'eh Cheshbon) או יועץ מס (Yo'etz Mas) מוסמך לפני הגשה או פעולה.
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional: such as a רואה חשבון (Ro'eh Cheshbon: CPA) or יועץ מס (Yo'etz Mas: tax advisor) licensed in Israel: before filing or acting upon.
+Not yet confirmed: full s.62A attribution and s.81 excess-profit/asset/expense/profit exclusions computation; s.3(j) prescribed rate (old 4.9% not retained as instruction); exact benefit-reporting fields, Forms 126/856 and withholding/deposit dates; company-law distribution/solvency approval requirements and pension/study-fund relief limits. The old NIS 6,500 salary expectation, NIS 200,000/NIS 500,000 optimal-extraction bands, 55%-60%/50%-55% effective ranges and dividend up-to-52% shortcut are unsupported. The old shareholder NI/health component split should not be inferred from ordinary employee figures. Self-employed 52% NI deduction and contribution rates have their home in the freelancer skill. No loan interest-only strategy is represented as an exemption from principal withdrawal tax.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-03. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `il-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/il-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `il-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/il-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
