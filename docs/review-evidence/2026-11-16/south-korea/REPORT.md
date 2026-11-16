@@ -1,58 +1,48 @@
 # South Korea: four assigned Guides
 
-The assigned lane updates social insurance, the source/software reference router, foreign electronic-service VAT registration and crypto. It does not claim completion of the whole country library. Held income-tax files and the approved sibling VAT Guide are unchanged. No human professional approval is claimed.
+Current display summary: the original 144-entry independent source review plus a narrowly reviewed citation/layout delta. All canonical original review records and the original56MISSlog are preserved byte-exact. Initial report and source manifest are retained under baseline/ in the sole indexed archive.
 
-## Scope and source review
+The lane updates social insurance, the source/software reference router, foreign electronic-service VAT registration and crypto. This is not completion of the whole country library. Held income-tax files and the approved sibling VAT Guide are untouched. No human professional approval is claimed.
 
-Current main was recovered in an isolated sparse public-repository clone. Prior local drafts/research and main research trees were searched before writing. The open-PR preflight used all current PRs and complete paginated file lists; only the excluded income files overlapped South Korea.
+## Review, scope and preservation
 
-A fresh separate reviewer independently checked the entire per-rule inventories, source commencement and neighboring exceptions, the complete old-topic maps and all original worked-case inputs. Completed unchanged review is reused; corrections received limited review. Canonical review records are preserved byte-exact in the archive, including an explicitly superseded early reference-router record.
+The fresh separate reviewer checked all144 original ledger entries:40social,15reference,28VAT,61crypto. The count includes provenance/holds and derived calculations, not144 standalone rates. Actual native law, commencement, neighboring exceptions, complete old-topic maps and every original worked-case input were checked. All12 required recomputation blocks pass. Raw full official sources remain local.
 
-The final inventory has 144 entries: social insurance40, reference router15, VAT registration28 and crypto61. This count includes software-provenance and explicit hold-boundary checks, so it is not a claim of144 separate statutory figures. The canonical pack and file review records are in the indexed archive; exact committed-source hashes are recorded below.
+Review found and corrected the enacted November-premium LTCI ratio rounding/application, the concrete final March pension premium, a missing VAT payment hold and crypto citation pinpoints. All original topics, refusal IDs, case inputs and protected credits are retained or explicitly named as non-usable source holds. No file is more than25% smaller. Canonical reviews are in reviews/ inside the archive.
 
-## Material corrections
+## Coordinator-requested narrow delta
 
-- Pension2026 rate, mid-year income bases and truncation; health income/property formula without vehicle assessment; tax expense/deduction treatment; ordinary versus special foreign payment deadlines.
-- Care insurance uses the exact ratio for January-October premiums. Enacted Act21690 requires ratio rounding for November premiums onward, with commencement27November and a commencement-month application clause. The new KRW3m health-premium example distinguishes394,210 from394,200; original inputs remain.
-- Crypto current obligations are separated from the promulgated2027 regime. Total-average basis, gift allowances/valuation, month-end overseas-account trigger, provider submissions and penalties are corrected. Speculative reward/DeFi/NFT/CARF conclusions are explicit unusable holds.
-- VAT registration preserves every original topic and the exact contributor line; it now cites operative law, identifies statutory registration/return fields and provides a recomputing example. Authenticated screen/payment-notice specifics remain named holds.
-- All three related software projects remain listed, with primary software provenance and actual licence/year limits separated from tax authority.
+Source-content commit: `21c80e031864f765a07893f214dbb53c5c794a82`. The initial source content is `6bbd62eabca39125feea88dd7b17d0966305e41e`, and the initial indexed evidence is preserved in public commit `8569329b064aa706646ad3c36ee29d072031c764`. Main comparison base remains `bbab4f1a6d82cace432e6ca8eda89c98ffb1c038`.
 
-## Preservation and limits
+Only crypto citation/presentation changed: seven already-read same-consolidation direct article-body routes now corroborate stable law viewers; the actual statutory image is linked; two rejected old gift amounts moved into immediately adjacent full warning prose; computed combined22% is separate from statutory20%/2% and the deduction; all eight equivalent L*r-A deduction equations are separate from statutory bands/rates. No statutory value or original case input changed.
 
-All original topics, refusal identifiers, case input values and protected credits remain or have an explicitly named non-usable source hold. No file shrank by25%. One missing VAT payment hold and the concrete final-month outcome in the original pension case were restored during independent review. Full maps and exact originals are inside the archive.
+The independent delta reviewer checked those exact source bindings, warnings and equations and bound the new source hash. All four crypto example blocks, the full example-through-completion segment and held topics remain byte-identical. Original144-entry review was reused; no repeated full source scan or legal review. The delta record, arithmetic JSON and precise diff are in deltas/.
 
-Unconfirmed scope remains explicit: individual insurance/property/occupation/treaty determinations, future crypto implementation and uncertain digital-asset classifications, taxpayer-specific VAT payment instructions/authenticated screens, and software reuse/current-year accuracy. These are not certified conclusions.
+## Validation and actual scanner limits
 
-Raw official sources, live-form/session responses, credentials and headers remain local. The public archive contains only source ledgers, maps, original public Guides, canonical reviews and validation records. No full official-law captures or proprietary standards are redistributed.
+- All four original skill_checks returned{}; changed crypto's19 checks pass after the delta.
+- Actual committed-diff validator:4files,0warnings. Strict sync:4sources,0errors. Initial calculator quote gate and22unit tests pass; new report copy gets its scoped check. Source/example checks are reused where bytes and dependencies are unchanged.
+- Initial published head8569329b had successful unit-tests, compare, guard-derived-trees, validate and calculator-quotes CI. Advisoryfigures failed. Final published-head CI is visible on the same draft PR and recorded in the local STATUS/REPORT checkpoint.
+- Social final scanner:10rows,0misses,0unreadable. VAT/reference:0misses. Original crypto:24rows,56literal misses,0unreadable; all56 independently reconciled.
+- Crypto after the direct-body/layout delta:31rows,60literal misses,0unreadable with the unmodified existing scanner. Every current miss is mapped to already-reviewed native figures or the independently recomputed equations. The tool lacks Korean monetary-unit handling and incorrectly decodes the official GIF as readable text. Zero unreadables does not establish that it read the image. New statutory facts were not labelled derived and no blanket row skip was added. The raw failure is retained in deltas/crypto-delta-row-sources.log, with the complete60-entry map beside it.
 
-## Evidence index
+The PR remains draft while the advisory scanner issue is unresolved. Root's separate engineering diagnostic owns general parser changes; this lane changes no scripts. A source-review PASS does not turn an automated red result green.
 
-`EVIDENCE-INDEX.json` records every archive member's exact size and SHA-256 plus the deterministic archive hash. `source-manifest.json` inside the archive binds the committed Guide blobs and original-source hashes. `evidence.tar.gz` is the sole evidence archive; this readable report is its display summary, not a replacement for canonical records.
+## Material corrections and explicit holds
 
-## Validation checkpoint
+Pension2026 rates/bases/truncation, health income/property formula without vehicles, proper contribution tax relief, ordinary/special-foreign due dates, and the November LTCI rule are corrected. Crypto distinguishes current obligations from the promulgated2027 regime and corrects total-average basis, gift allowances/valuation, month-end reporting and related deadlines/penalties. VAT has operative citations, statutory fields, conditions and a recomputing case. The three related software projects remain provenance-only references.
 
-Committed source: `6bbd62eabca39125feea88dd7b17d0966305e41e`, against main merge base `bbab4f1a6d82cace432e6ca8eda89c98ffb1c038`.
+Non-usable holds remain explicit: individual insurance/property/occupation/treaty determinations and historical minimum; uncertain reward/DeFi/NFT, fees, CARF/provider implementation, retention/avoidance conclusions; current VAT authenticated UI/payment/FX/account details; and software rights/dependencies/current-year accuracy. No filing or individual eligibility is certified by this work.
 
-- All four `skill_checks` results are `{}`.
-- `validate-guides --changed-only --no-index-check`:4 files,0 warnings,0 errors.
-- `check-examples --require`:12 oa-check blocks,0 failures,0 missing.
-- `check-sync-integrity --mode audit --strict-metadata`:4 sources,0 errors,0 warnings.
-- Calculator quote gate passes. The unchanged calculator/copy unit-test run passed22 tests; it is reused after one applicability check. The new report has a separate copy-rule check recorded in `report-copy-final.log`.
-- Final source diff whitespace check passes.
-- VAT/reference row-source run:0 misses. Final social run:10 rows,0 misses,0 unreadable. Crypto advisory output is explained below.
+## Evidence index and exact current hashes
 
-The earlier precommit changed-only check touched zero files and is explicitly not final validation evidence. Setup failures and failed/intermediate scanner outputs are preserved, with their resolution, rather than overwritten.
+One deterministic evidence.tar.gz, exact EVIDENCE-INDEX.json and this readable report share the country evidence directory. The archive includes original public Guides, ledgers/maps, byte-exact canonical reviews, initial proof, narrow delta records and honest validation outputs. source-manifest.json binds current Guide blobs and original-source hashes. No raw full official captures, credentials, headers, live-form/session responses or proprietary standards are included.
 
-The crypto row-source scanner reported56 misses in24 rows. Its output is preserved. The scanner cannot follow script-loaded law bodies or parse Korean monetary units and statutory image tables; a per-miss reconciliation links actual native forms to the independently checked ledger. No script was changed and no statutory amount was relabelled to evade a check. This advisory scanner result must be distinguished from legal source review and required CI. A remaining failing scanner check keeps the PR draft under this lane's delivery instructions.
-
-## Exact source hashes
-
-| Source | SHA-256 |
+| Current source | SHA-256 |
 |---|---|
 | `kr-social-insurance.md` | `25298d6f182bd52040784552dedec07091078c774a7990c2458c5a7d8f3101ad` |
 | `references.md` | `d2035db583a92b9e8f340d312ea79461e3d356c577922e3ce3d4f53764f7a429` |
 | `simplified-business-operator-registration-under-vat-act.md` | `95658316fc098c7ea935ef182239db49e271d916d3b1317a5f1ae0cbff3efab0` |
-| `south-korea-crypto-tax.md` | `8c34fe118cf1ba4610341538d032cc981f1dc3e7d558a21df7d0dbb7e5ed091d` |
+| `south-korea-crypto-tax.md` | `a1d3180b5d54ad730d1c4c9dfa2d9900dbd3d88664824f4be347012782884fc9` |
 
-No merge, auto-merge, release or production change. The original coordinator controls any later merge.
+No merge, auto-merge, release, production write or new grant. Original coordinator alone controls any later merge.

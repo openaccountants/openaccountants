@@ -1,13 +1,113 @@
 {
   "archive": "evidence.tar.gz",
-  "archive_sha256": "b4bfe0bfa28f622fcd8e2cc7d3676a6f3867e1e1bc6faa0718ded6193aefc62a",
-  "source_commit": "6bbd62eabca39125feea88dd7b17d0966305e41e",
+  "archive_sha256": "6cf61559fb2a905c54001d8009a16d5917ea7bac00ade5993e1a8a324ff670f1",
+  "source_commit": "21c80e031864f765a07893f214dbb53c5c794a82",
   "base_commit": "bbab4f1a6d82cace432e6ca8eda89c98ffb1c038",
   "members": [
     {
       "path": "REPORT.md",
+      "size": 6399,
+      "sha256": "004f80295c526945d1cefaf54aec7177c0f3dc1e3c7320dd1adf46ae84dacc56"
+    },
+    {
+      "path": "baseline/CI-figures-8569329b-excerpt.log",
+      "size": 14492,
+      "sha256": "28a8a1dead5b3860d88f3294145bf3a4a93e780f0f36489a1ff07d6b70d8300b"
+    },
+    {
+      "path": "baseline/PR-8569329b-CHECKS.json",
+      "size": 1919,
+      "sha256": "e9083446c5889e8128ac287ec98659ed645d96df57d3dc64c72b64f360bfe2d3"
+    },
+    {
+      "path": "baseline/REPORT-initial.md",
       "size": 6208,
       "sha256": "2e85ea61bc63d069f77f3eb2272bfa4634b94344f2674a0e78098a7b868dc224"
+    },
+    {
+      "path": "baseline/source-manifest-initial.json",
+      "size": 1415,
+      "sha256": "1efaa138f23c794e9fcfd20cdb1f89f6d9e7ae66025c90d1f75608232eab0ded"
+    },
+    {
+      "path": "deltas/PR-REVIEW-DELTA-UPDATE.md",
+      "size": 1253,
+      "sha256": "8151fc84ed1ce504e93dd18ae661a09a696004c332bb4de72718dd04ed80d838"
+    },
+    {
+      "path": "deltas/crypto-before-citation-layout.md",
+      "size": 33444,
+      "sha256": "8c34fe118cf1ba4610341538d032cc981f1dc3e7d558a21df7d0dbb7e5ed091d"
+    },
+    {
+      "path": "deltas/crypto-citation-layout-ledger.md",
+      "size": 4777,
+      "sha256": "42d9c75066efd8c4247239650a72af03aa62d07043ec1c72bd38277da6db2234"
+    },
+    {
+      "path": "deltas/crypto-citation-layout.diff",
+      "size": 24826,
+      "sha256": "abde02c84a0ec20abc4c96a5e3fd48cd2b5999cec0b874df976dd53f4a8290d9"
+    },
+    {
+      "path": "deltas/crypto-delta-arithmetic.json",
+      "size": 2426,
+      "sha256": "daf7998183efddd44f853aeceaba7173f8d03895d82e782fd015d8a3583161ea"
+    },
+    {
+      "path": "deltas/crypto-delta-binding.json",
+      "size": 510,
+      "sha256": "5492a0a32d5d4ab1920a2f3be6977e243acb1cb684b4b62b770f9d2c987bc738"
+    },
+    {
+      "path": "deltas/crypto-delta-examples.log",
+      "size": 58,
+      "sha256": "4916995b995854e142b802ac2678584eff4e0af6439ea42b692679a65a353da9"
+    },
+    {
+      "path": "deltas/crypto-delta-miss-reconciliation.md",
+      "size": 15585,
+      "sha256": "0dcd8ba82ac5ea3d70077841fc45ae27cdffc35fbc3de6fd83a0cc25c689f399"
+    },
+    {
+      "path": "deltas/crypto-delta-row-sources.log",
+      "size": 16376,
+      "sha256": "9365fc6c71f20e3312f2e8ebc99156531269a798b6f4f766afecc5e4cb462d55"
+    },
+    {
+      "path": "deltas/crypto-delta-skill-checks.log",
+      "size": 666,
+      "sha256": "c313c40455d77b8b59f5b72f7ecc5d65c3850594d2422014600b77045fc4abf6"
+    },
+    {
+      "path": "deltas/crypto-independent-delta-checks.json",
+      "size": 2473,
+      "sha256": "b73cced96d565a959ab6cde560a76bb5264f73aea126d56241f0d3f15414c95f"
+    },
+    {
+      "path": "deltas/crypto-independent-delta-review.md",
+      "size": 7022,
+      "sha256": "593e6c4be5bcd6e3589e1b81000466ec9012f742efc1663c96f96649cfea345c"
+    },
+    {
+      "path": "deltas/current-source-validation.json",
+      "size": 1035,
+      "sha256": "d17b2d7db8ba6fdd80ad500d0ef3ef209fbe73a936371c264f1019aead0a22d3"
+    },
+    {
+      "path": "deltas/report-copy-delta.log",
+      "size": 100,
+      "sha256": "b063f09aeef553b6a44a3b7fae09d872794fd42ab615e02ad9fb637ee7a01945"
+    },
+    {
+      "path": "deltas/sync-delta.log",
+      "size": 81,
+      "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2"
+    },
+    {
+      "path": "deltas/validate-guides-delta.log",
+      "size": 192,
+      "sha256": "c5905f9199102c5e895747b7c81ed4de427b6cc8e1d315df76e4ab8fe76ae807"
     },
     {
       "path": "ledgers/kr-social-insurance.md",
@@ -97,7 +197,7 @@
     {
       "path": "source-manifest.json",
       "size": 1415,
-      "sha256": "1efaa138f23c794e9fcfd20cdb1f89f6d9e7ae66025c90d1f75608232eab0ded"
+      "sha256": "dc2c6b7eec6230124314803f4f52b6e2b104a2af472b73fe81eefaf8fa7a0a7a"
     },
     {
       "path": "validation/calculator-quotes-final.log",
