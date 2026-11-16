@@ -112,6 +112,93 @@ class RowSources(unittest.TestCase):
                 _, misses, _ = rs.check_text(text, pages(**{A: page}))
                 self.assertEqual([m[0] for m in misses], ['1,800,000'])
 
+    def test_whole_english_monetary_scales(self):
+        for page, figure in [
+            ('fifteen million shillings', '15,000,000'),
+            ('ten million shillings', '10,000,000'),
+            ('twenty-one million dollars', '21,000,000'),
+            ('twenty one million dollars', '21,000,000'),
+            ('one hundred and fifteen million shillings', '115,000,000'),
+            ('nine hundred ninety nine billion rupees', '999,000,000,000'),
+            ('FIFTEEN\nMILLION\nSHILLINGS', '15,000,000'),
+            ('twenty-\none million pounds', '21,000,000'),
+            ('twenty\u2011one million pounds', '21,000,000'),
+            ('one-hundred million euros', '100,000,000'),
+            ('thirty million baht', '30,000,000'),
+            ('two billion rand', '2,000,000,000'),
+            ('the allowance and fifteen million shillings', '15,000,000'),
+            ('apply a fifteen million shilling limit', '15,000,000'),
+        ]:
+            with self.subTest(page=page):
+                self.assertTrue(rs.found(figure, rs.word_money_values(page)))
+                text = skill(f'| Threshold | {figure} | [law]({A}) |')
+                self.assertEqual(rs.check_text(text, pages(**{A: page})), (1, [], []))
+
+    def test_word_money_never_falls_back_to_smaller_suffixes(self):
+        for page in [
+            'one thousand fifteen million shillings',
+            'one thousand, fifteen million shillings',
+            'one million fifteen million shillings',
+            'one trillion fifteen million shillings',
+            'one sextillion fifteen million shillings',
+            'two hundred and one and a half million shillings',
+            'one point five million shillings',
+            'minus fifteen million shillings',
+            'zero fifteen million shillings',
+            'one two million shillings',
+            'a one thousand fifteen million shillings',
+            'and one thousand fifteen million shillings',
+            'a and fifteen million shillings',
+            'and and fifteen million shillings',
+        ]:
+            with self.subTest(page=page):
+                self.assertEqual(rs.word_money_values(page), set())
+                text = skill(f'| Threshold | 15,000,000 | [law]({A}) |')
+                _, misses, unreadable = rs.check_text(text, pages(**{A: page}))
+                self.assertEqual(([m[0] for m in misses], unreadable), (['15,000,000'], []))
+
+    def test_word_money_requires_amount_context_and_correct_value(self):
+        for page in [
+            'fifteen billion shillings', 'sixteen million shillings', 'ten million shillings',
+            'fifteen million visitors', 'fifteen million months', 'bare fifteen million',
+            'fifteen millionth shillings', 'million shillings', 'fifteenmillion shillings',
+            'Section fifteen million shillings', 'Form: fifteen million dollars',
+            'Form_fifteen million shillings', 'ref-fifteen million shillings',
+            '1 fifteen million shillings', 'fifteen million shillings_identifier',
+            '1, fifteen million shillings', 'ref.fifteen million shillings',
+            'fifteen million shillings-id', 'fifteen million . OAG shillings',
+            'ref\u2011fifteen million shillings', 'fifteen million shillings\u2011id',
+            'fifteen million USD', 'USD fifteen million',
+        ]:
+            with self.subTest(page=page):
+                text = skill(f'| Threshold | 15,000,000 | [law]({A}) |')
+                _, misses, unreadable = rs.check_text(text, pages(**{A: page}))
+                self.assertEqual(([m[0] for m in misses], unreadable), (['15,000,000'], []))
+
+    def test_actual_tanzania_definition_clauses_keep_their_own_amounts(self):
+        # ITA s.3, OSG A.S.2025; PDF SHA256 53599ac147250ed28cf5507aa13731beca
+        # c8eea7365946884cb4544bcc9e4c4a. Full exclusion limbs, not guessed thresholds.
+        residence = '''a private residence of an individual that has
+            been owned continuously for three years or
+            more and lived in by the individual
+            continuously or intermittently for a total of
+            three years or more, other than a private
+            residence that is realised for a gain in excess of
+            fifteen million shillings;'''
+        land = '''an interest in land held by an individual that has
+            a market value of less than ten million shillings
+            at the time it is realised and that has been used
+            for agricultural purposes for at least two of the
+            three years prior to realisation;'''
+        for clause, right, wrong in [(residence, '15,000,000', '10,000,000'),
+                                     (land, '10,000,000', '15,000,000')]:
+            with self.subTest(clause=clause):
+                text = skill(f'| Threshold | {right} | [law]({A}) |')
+                self.assertEqual(rs.check_text(text, pages(**{A: clause})), (1, [], []))
+                text = skill(f'| Wrong threshold | {wrong} | [law]({A}) |')
+                _, misses, unreadable = rs.check_text(text, pages(**{A: clause}))
+                self.assertEqual(([m[0] for m in misses], unreadable), ([wrong], []))
+
     def test_url_with_brackets_is_kept_whole(self):
         u = "https://law.example.gov/act_(01-07-24).pdf"
         t = skill(f"| Rate | 7% | [act]({u}) |")
