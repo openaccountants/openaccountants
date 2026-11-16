@@ -1,225 +1,145 @@
 ---
 name: pk-sales-tax-services
-description: "Source-cited tax guide for PK: pk sales tax services. Unverified draft, pending local-accountant review."
+description: "Use for pakistan provincial and ict services sales tax. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/pk-sales-tax-services"
   jurisdiction: "PK"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# PK Sales Tax Services
+# Pakistan provincial and ICT services sales tax v1.1
 
-## Pakistan — Provincial Sales Tax on Services — Skill v1.0
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-ALWAYS READ THIS SKILL IN FULL before touching any Pakistan provincial sales tax on services work. Sales tax on services in Pakistan is NOT a single federal regime — it is administered by five separate revenue authorities under five separate statutes, each with its own portal, rate, return form, due date, and penalty regime. Federal FBR sales tax (Sales Tax Act 1990) covers GOODS only; services are provincial. Confusing the two is the single most common error.
+## Scope
 
-## Rates and thresholds
+Service suppliers/recipients working across Sindh SRB, Punjab PRA, Khyber Pakhtunkhwa KPRA, Balochistan BRA and Islamabad Capital Territory FBR. This 2026 skill uses specifically identified 2025-2026 cycle provisions below; later 2026 amendments and actual period extensions must be checked before a later return. Federal goods sales tax is owned by `pk-sales-tax-federal`; income withholding by `pk-withholding-tax`. FBR administering ICT services does not turn those services into federal goods.
 
+Quick answer: determine service category, locations, supplier/recipient liability and actual exemption/rate conditions separately for each authority. An office province or PSEB certificate alone does not settle jurisdiction or export relief.
 
-### pk-sales-tax-services
+## Ask the client first
 
-- **Sindh (SRB)** — 0.15  _(Sindh Sales Tax on Services Act 2011)_
-- **Punjab (PRA)** — 16%  _(Punjab Sales Tax on Services Act 2012)_
-- **Khyber Pakhtunkhwa (KPRA)** — 15%  _(KP Finance Act 2013, Ch. VI)_
-- **Balochistan (BRA)** — 15%  _(Balochistan Sales Tax on Services Act 2015)_
-- **Islamabad ICT (FBR)** — 0.15  _(ICT (Tax on Services) Ordinance 2001)_
-- **Return due (all authorities)** — 15th of the following month for payment; 18th for filing. (Note: PRA exception).  _(Provincial Acts)_
-- **Registration** — Mandatory on commencement of taxable supplies (no general turnover threshold)  _(Provincial Acts)_
-- **Late filing penalty (e.g. SRB)** — PKR 5,000 if filed within 15 days of the due date; PKR 10,000 if delayed beyond 15 days.  _(SRB Act §43 (and provincial equivalents))_
-- **Default surcharge** — KIBOR + 3% per annum  _(SRB Act §44 (and equivalents))_
-- **Records retention** — 5 years  _(Provincial Acts)_
-- **Exported IT/ITeS services** — Exempt/zero-rated upon realization of foreign currency via banking channel (PRC).  _(Provincial Second Schedules)_
-- **Educational & healthcare services** — Generally exempt (healthcare except cosmetic)  _(Provincial Schedules)_
-- **Cross-province supply** — Major conflict: SRB (Sindh) favors the Origin principle, while PRA (Punjab) strictly applies the Destination principle.  _(Place-of-supply rules)_
-- **Inbound digital services** — Reverse charge / 100% withholding applies across major authorities (SRB, PRA, ICT) for unregistered foreign suppliers.  _(Provincial Acts)_
+Obtain supplier legal identity/NTN and each registration; service description/CPC/tariff code, contracts and taxable value; supplier establishments and performance/recipient/consumption locations; period/payment/invoice dates; B 2 B/B 2 C facts; invoice-by-invoice province/country split; recipient status/withholding role; actual input invoices/payment evidence and barred-input conditions; any election/notification; foreign delivery/bank-business-account/SBP export reporting and encashment evidence. Obtain existing notices/assessments and any actual inter-authority understanding. Turnover alone is not proof of a general registration threshold. PSEB matters for federal export income tax but is not universally a services-tax export condition.
 
-## 1. Quick Reference Table
+## Rates, bands and thresholds
 
-**Quick Reference Table**  _(Quick Reference Table)_
+| Jurisdiction/category and material conditions | Read cycle rule | Official source |
+|---|---|---|
+| Sindh ordinary taxable service |15% standard, subject to Second Schedule rates/conditions and notified variations (15% standard rate in words on the page) | [Act s.8](https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf) |
+| Sindh specified software/IT-system consultant services | Rule 42 I standard 15%;3% electronic Form S option with timing/continuation conditions below; Second Schedule item 20 excludes CPC 83159 from its 3% row | [Second Schedule 20](https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf); [r 42 I](https://www.srb.gos.pk/srb/wp-content/uploads/2025/11/Sindh-Sales-Tax-Rules-2011-25-26-1.pdf) |
+| Sindh IT export, CPC 7331/8313/8314/8315/8316 | Exempt only if exported **and delivered outside Pakistan**, FX through banking into exporting registered person's business account **and SBP reporting**; PSEB is not a printed condition in this row | [First Schedule 14](https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf) |
+| Balochistan ordinary taxable service |15%; First Schedule exempt, Second Schedule higher, Third Schedule lower without input adjustment and notifications/thresholds can modify (15% standard rate in words on the page) | [Act s.10](https://ebra.com.pk/public/storage/uploads/downloads/1755574443.pdf) |
+| Balochistan hosting/IT infrastructure, telecom/internet and specified electronic security/communications installation |19.50% in specified higher-rate list; not a blanket IT exemption | [Second Schedule](https://ebra.com.pk/public/storage/uploads/downloads/1759148712.pdf) |
+| KP after Finance Act 2025 changes |15% general negative-list regime except exempt/Second Schedule conditions; use 2022 Act as amended, not 2013 Act alone (15% standard rate in words on the page) | [FA 2025 s.10](https://kpra.gov.pk/wp-content/uploads/2025/07/kp-finance-act-2025.pdf) |
+| KP digital/IT-based services, Second Schedule 12 |5%**without input adjustment**; includes software/web/app/cloud/digital marketing; no blanket export exemption established by this row (5% printed in words and numerals on the page) | [FA 2025 Second Schedule 12](https://kpra.gov.pk/wp-content/uploads/2025/07/kp-finance-act-2025.pdf) |
+| ICT IT/IT-enabled services generally |15% Table 1 item 11, subject to applicable Table 2 classification | [ICT Schedule](https://download1.fbr.gov.pk/Docs/2025711172945966ICTOUpdatedupto30.06.2025.pdf) |
+| ICT software/IT-system-development consultants |5%**no input adjustment or refund**, Table 2 item 11 | [ICT Schedule Table 2](https://download1.fbr.gov.pk/Docs/2025711172945966ICTOUpdatedupto30.06.2025.pdf) |
+| ICT exports of services |0% under s.3(1 A), after export character and actual operative rules established | [ICTs.3](https://download1.fbr.gov.pk/Docs/2025711172945966ICTOUpdatedupto30.06.2025.pdf) |
 
-| Authority | Jurisdiction | Statute | Standard Rate | Portal | Return Due |
-| --- | --- | --- | --- | --- | --- |
-| **SRB** (Sindh Revenue Board) | Sindh | Sindh Sales Tax on Services Act 2011 | **15%** | e-SRB (e.srb.gos.pk) | 15th of following month (payment); 18th (return) |
-| **PRA** (Punjab Revenue Authority) | Punjab | Punjab Sales Tax on Services Act 2012 | **16%** | e-PRA (e.pra.punjab.gov.pk) | 15th (payment); 18th (return) |
-| **KPRA** (KP Revenue Authority) | Khyber Pakhtunkhwa | KP Finance Act 2013, Chapter VI | **15%** | e-KPRA (kpra.kp.gov.pk) | 15th (payment); 18th (return) |
-| **BRA** (Balochistan Revenue Authority) | Balochistan | Balochistan Sales Tax on Services Act 2015 | **15%** | e-BRA (bra.gob.pk) | 15th (payment); 18th (return) |
-| **ICT-IRS** (FBR) | Islamabad Capital Territory | Islamabad Capital Territory (Tax on Services) Ordinance 2001 | **15%** | FBR IRIS (iris.fbr.gov.pk) | 15th (payment); 18th (return) |
+### Sindh IT option and export distinction
 
-Special reduced rates exist within each regime (e.g. 5%, 8% for IT services in some PRAs subject to conditions). Always check the relevant Second Schedule of the governing Act for the year of supply.
+Rule 42 I requires registration and uses gross amount charged. Its 3% option requires electronic Form S within 21 days from financial-year commencement, or at least 14 days before first economic activity for new providers. Once exercised it continues for that year and subsequent years until withdrawal submitted at least 21 days before the financial year of revocation. Read the Act's actual category/exclusion with the rule; do not assume every service labelled “IT” qualifies or retrospectively elect after the deadline. Second Schedule Part II general condition(1)bars input deduction at the reduced rate; condition(2)requires the prescribed election for item 20. CPC 83159 collocation hosting instead carries 19.50% under Part I; broad rule 42 I wording does not erase that exclusion. [r 42 I](https://www.srb.gos.pk/srb/wp-content/uploads/2025/11/Sindh-Sales-Tax-Rules-2011-25-26-1.pdf); [Second Schedule 20](https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf).
 
-## 2. Required Inputs + Refusal Catalogue
+Exemption and zero-rating differ. Sindh First Schedule 14 is **exemption**, not federal 154A final income tax or automatic refundable zero-rating. Keep delivery, qualifying code, registered business account, banking FX and SBP reporting conditions together. A non-PSEB exporter is not automatically taxable in Sindh merely for missing PSEB; missing export/delivery/banking conditions is a different failure. Do not extend this Sindh row to Punjab/KP/Balochistan or all creative/digital services. [First Schedule 14](https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf).
 
-### 2.1 Required Inputs Before Computing Any Pakistan Services Tax
+## The method, step by step
 
-- **Place of business / permanent establishment (PE)** — which province(s) does the service provider have a PE in?  _(n/a)_
-- **Place of supply / place of consumption** — where is the recipient located? Where is the service performed?  _(n/a)_
-- **Nature of service** — software development, IT-enabled services (ITeS), consulting, marketing, etc. (each authority's Second Schedule has its own classification codes).  _(n/a)_
-- **PSEB registration status** — Pakistan Software Export Board registration unlocks export exemption for IT/ITeS services.  _(n/a)_
-- **Annual turnover** — registration is generally mandatory regardless of turnover for taxable service providers, but small-supplier thresholds may apply in some PRAs.  _(n/a)_
-- **Existing registrations** — NTN (National Tax Number), STRN (Sales Tax Registration Number), and any provincial registration numbers.  _(n/a)_
-- **Client jurisdiction breakdown** — invoice-by-invoice province of recipient.  _(n/a)_
-- **Foreign-currency receipts via banking channel** — required for export exemption.  _(n/a)_
+1. Classify the service and actual period. Sindh s.3 covers economic activity from its office/business, including nonresident customers, and inbound nonresident-to-resident service with recipient liability under s.9(2). Exemptions/particular place rules must still be tested. Do not copy a foreign VAT reverse-charge rule as “100% withholding across all provinces”. [ss.3/9](https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf).
+2. Apply service-specific place rules to all touched jurisdictions. Sindh 2023 rules cover advertising/media/agents, insurance/agents, franchise/IP, transport and power transmission, with residual services returning to the Act/general rules. Rule 7 franchise/IP generally uses resident recipient location, with untaxed-province exception. Rule 8 corporate road/pipeline goods transport shares the value 50/50 origin/destination but retains same-province, untaxed endpoint, oil-tanker and noncompany booking-office branches. **No universal origin-only or B 2 Bdestination/B 2 Cprovider rule is supplied.** [rr 3-11](https://www.srb.gos.pk/srb/wp-content/uploads/2025/11/07-Sindh-Place-of-Provision-of-Services-Rules-2023.pdf).
+3. Map Punjab/KP/Balochistan/ICT jurisdiction independently before charging or registering. A single tax payment is not proof that another authority has no claim. Obtain actual apportionment/credit/MOU provisions; do not pay twice as a default or promise an inter-provincial committee remedy without its operative route.
+4. Establish registration, taxable value, correct rate/election/exemption, input entitlement/apportionment and invoice requirements in that authority. No general 4,000,000 or other common registration threshold is cleared; no ordinary bank-account province establishes place of supply. Prepare separate authority registers, returns and payments, with unresolved lines held for specialist review.
+5. Reconcile service invoices, customer payments/withholding, input evidence, export receipts, ledgers and actual submitted returns/CPRs. Do not net provincial tax against income tax or assume federal/provincial input cross-credit. Unclear input entitlement stays provisional, not a fabricated zero liability.
 
-### 2.2 Refusal Catalogue
+## Deadlines, filing and records
 
-- **Refund claims** — under any provincial Act (complex documentary evidence; authority-specific procedures). DO NOT proceed — escalate to a Pakistan-licensed tax practitioner.  _(2.2 Refusal Catalogue)_
-- **Cross-province apportionment disputes** — where two or more PRAs have issued show-cause notices for the same supply. DO NOT proceed — escalate to a Pakistan-licensed tax practitioner.  _(2.2 Refusal Catalogue)_
-- **Withholding agent obligations** — under any PRA's Withholding Rules where the client is a government department or large taxpayer. DO NOT proceed — escalate to a Pakistan-licensed tax practitioner.  _(2.2 Refusal Catalogue)_
-- **Reverse-charge / self-billing** — scenarios on imported services where the recipient is in Pakistan. DO NOT proceed — escalate to a Pakistan-licensed tax practitioner.  _(2.2 Refusal Catalogue)_
-- **Anti-money-laundering / suspicious transaction reporting** — triggered by sales tax inquiries. DO NOT proceed — escalate to a Pakistan-licensed tax practitioner.  _(2.2 Refusal Catalogue)_
-- **Audit defence and tribunal appeals** — before the Appellate Tribunals of each PRA. DO NOT proceed — escalate to a Pakistan-licensed tax practitioner.  _(2.2 Refusal Catalogue)_
-- **Sales tax on goods** — (federal FBR) — that is the Sales Tax Act 1990 regime, not in scope here.  _(2.2 Refusal Catalogue)_
-- **Federal Excise Duty on services** — (rare residual cases under FED Act 2005) — out of scope.  _(2.2 Refusal Catalogue)_
-- **Capital value tax, infrastructure development cess, professional tax** — different regimes.  _(2.2 Refusal Catalogue)_
+| Authority and boundary | Read rule | Source |
+|---|---|---|
+| Sindh ordinary payment/return | Unless otherwise specified, payment 15thfollowing month; electronic return within 3 days of payment due date; relevant service-specific variations still apply (3-day interval in words on the page) | [r 14](https://www.srb.gos.pk/srb/wp-content/uploads/2025/11/Sindh-Sales-Tax-Rules-2011-25-26-1.pdf) |
+| Balochistan ordinary payment/return | Unless otherwise specified, payment 15thfollowing month; return within 3 days after due date under r 15; particular service rules can differ (3-day interval in words on the page) | [rr 15/17](https://ebra.com.pk/public/storage/uploads/downloads/1715239876.pdf) |
+| KP | s.39 permits prescribed/other periodic returns; Finance Act 2025 changes revised-return window to 120 days. No universal no-quarterly/annual-option claim (120-day revision window in words on the page) | [2022 Act](https://kpra.gov.pk/wp-content/uploads/2024/07/KP-STS-ACT-2022-Updated-2024.pdf); [FA 2025 s.10](https://kpra.gov.pk/wp-content/uploads/2025/07/kp-finance-act-2025.pdf) |
+| Punjab/ICT | Obtain actual current applicable record-retention provision and rule/form/payment/return/extension before scheduling; do not infer a universal 15/18 calendar from another authority | Pending operational source boundary |
+| Sindh records | For periods through 30 June 2025:10 years after tax period; from 1 July 2025:6 years from financial-year end; proceedings final decision if later (10-year and 6-year retention periods in words on the page) | [s.27](https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf) |
+| Balochistan records |10 years after period for July 2023 onward; refund documents 10 years from refund-year end; final proceedings if later (10-year retention periods in words on the page) | [s.32](https://ebra.com.pk/public/storage/uploads/downloads/1755574443.pdf) |
+| KP records, read base Act |5 years after period or final decision if later; check later amendments for current period (5-year retention period in words on the page) | [s.36](https://kpra.gov.pk/wp-content/uploads/2024/07/KP-STS-ACT-2022-Updated-2024.pdf) |
 
-## 3. Tier 1 — Per-Province Detail
+Use actual SRB/PRA/KPRA/BRA/IRIS authority registration and return portals, rather than send every service to FBR. Sindh rule 42 I references its particular SST-G 3 form; old SST-03/PST/BST-03 labels are not proof of every current portal form. Generate the authority's payment instruction and retain actual bank acknowledgment/CPR and submitted return. Reconcile nil/activity periods under actual rules. The earlier blanket 5 year retention instruction is replaced by the authority-specific distinctions above.
 
-### 3.1 SRB — Sindh
+## Penalties and interest
 
-- **Standard rate** — 15% (general); reduced rates apply per Second Schedule.  _(Sindh Sales Tax on Services Act 2011)_
-- **IT / IT-enabled services** — Generally taxable at standard rate UNLESS exported. Some categories enjoy reduced rates (e.g. call centres historically at 3% — verify current Schedule).  _(Sindh Sales Tax on Services Act 2011)_
-- **Registration threshold** — No general turnover threshold for taxable service providers — registration is mandatory upon commencement of taxable supplies.  _(Sindh Sales Tax on Services Act 2011)_
-- **Filing frequency** — Monthly.  _(Sindh Sales Tax on Services Act 2011)_
-- **Return form** — SST-03 via e-SRB portal.  _(Sindh Sales Tax on Services Act 2011)_
-- **Payment** — PSID generation on e-SRB → pay through any designated bank or ADC channel.  _(Sindh Sales Tax on Services Act 2011)_
-- **Late filing penalty** — PKR 5,000 if filed within 15 days of the due date; PKR 10,000 if delayed beyond 15 days under §43; default surcharge under §44 (KIBOR + 3% per annum).  _(SRB Act §43, §44)_
-- **Notable services subject to SST** — software/IT services, telecommunication, advertising, courier, banking, insurance, franchise, consulting, contractual execution of work.  _(Sindh Sales Tax on Services Act 2011)_
+Sindh s.43 item 2 uses 100 per day of late-return default; the former 5,000/10,000 and 15 day bands are superseded. Sindh s.44 ordinary surcharge is interbank+3% yearly, fraud 2% monthly, calculated from day after due date to day before actual payment, tax due excluding penalty. The 100 penalty amount and 3%/2% surcharge rates are in words on the page. [ss.43/44](https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf).
 
-### 3.2 PRA — Punjab
+Balochistan s.48 item 2 states 10,000 late-return penalty and 200 per default day if not filed within 15 days; preserve the exact assessment/default facts. Its s.49 ordinary surcharge is 12% yearly, fraud 2% monthly, with day-after-due to day-before-payment window and penalty excluded. The old interbank+3% statement was superseded. The 10,000/200 amounts, 15-day period and 12%/2% rates are in words on the page. [ss.48/49](https://ebra.com.pk/public/storage/uploads/downloads/1755574443.pdf). Punjab/KP/ICT penalty summaries and actual default-date amendments remain pending; do not invent a common minimum.
 
-- **Standard rate** — 16% (general); reduced rates per Second Schedule (e.g. certain IT services historically 5% subject to conditions — verify current Schedule).  _(Punjab Sales Tax on Services Act 2012)_
-- **IT / IT-enabled services** — Reduced rate available where conditions are met (no input tax adjustment, services rendered to local clients in specified categories).  _(Punjab Sales Tax on Services Act 2012)_
-- **Registration threshold** — Mandatory for taxable service providers; no general turnover threshold.  _(Punjab Sales Tax on Services Act 2012)_
-- **Filing frequency** — Monthly.  _(Punjab Sales Tax on Services Act 2012)_
-- **Return form** — PST return via e-PRA portal.  _(Punjab Sales Tax on Services Act 2012)_
-- **Payment** — PSID via e-PRA → bank or 1Bill / ADC.  _(Punjab Sales Tax on Services Act 2012)_
-- **Late filing penalty** — PKR 10,000 minimum under §48; default surcharge under §49 (KIBOR + 3%).  _(§48, §49)_
-- **Notable services** — advertising, IT services, construction, franchise, courier, freight forwarding, professional consultancy.  _(Punjab Sales Tax on Services Act 2012)_
+## Worked cases
 
-### 3.3 KPRA — Khyber Pakhtunkhwa
+### Ali's original software-client facts retained
 
-- **Statute** — KP Finance Act 2013, Chapter VI; Khyber Pakhtunkhwa Sales Tax on Services Regulation 2022 (operative regulations).  _(KP Finance Act 2013)_
-- **Standard rate** — 15%.  _(KP Finance Act 2013, Ch. VI)_
-- **IT / IT-enabled services** — Some reduced rates per Schedule; verify current notification.  _(KP Finance Act 2013)_
-- **Registration** — Mandatory upon commencement of taxable supply.  _(KP Finance Act 2013)_
-- **Filing frequency** — Monthly.  _(KP Finance Act 2013)_
-- **Return form** — Filed via e-KPRA portal.  _(KP Finance Act 2013)_
-- **Late filing penalty** — Per KPRA penalty schedule — PKR 5,000 to 10,000 minimum plus daily amount; default surcharge at prescribed rate.  _(KP Finance Act 2013)_
-- **Notable services** — restaurants, hotels, telecommunication, advertising, construction services, professional services.  _(KP Finance Act 2013)_
+Ali is a freelance software developer with sole-proprietor/home-office PE in Karachi, not yet registered with any PRA. Client Ais Karachi fintech paying 800,000 monthly; Client Bis Lahore marketing agency paying 400,000; Client Cis US SaaS company paying USD 5,000 monthly through banking into his Karachi account; Ali holds PSEB registration. PSEB alone does not settle any sales-tax leg.
 
-### 3.4 BRA — Balochistan
+For Client A, assume confirmed software-development category, exclusive-of-tax 800,000 value, supply in the read cycle and all necessary registration/election conditions. Show the real election difference rather than assume an unverified rate:
 
-- **Standard rate** — 15%.  _(Balochistan Sales Tax on Services Act 2015)_
-- **Registration** — Mandatory for taxable service providers in Balochistan.  _(Balochistan Sales Tax on Services Act 2015)_
-- **Filing frequency** — Monthly.  _(Balochistan Sales Tax on Services Act 2015)_
-- **Return form** — BST-03 via e-BRA portal.  _(Balochistan Sales Tax on Services Act 2015)_
-- **Late filing penalty** — Per Chapter VIII of the Act — minimum PKR 10,000 + default surcharge.  _(Chapter VIII, Balochistan Sales Tax on Services Act 2015)_
-- **Notable services** — telecommunication, advertising, banking, construction, professional services, hotels, restaurants, IT services.  _(Balochistan Sales Tax on Services Act 2015)_
+```oa-check
+name: Ali ClientA ordinary15percent branch
+inputs:
+  tax_exclusive_service_value: 800000
+steps:
+  - output_tax: tax_exclusive_service_value * 0.15
+  - gross_invoice: tax_exclusive_service_value + output_tax
+expected:
+  output_tax: 120000
+  gross_invoice: 920000
+```
 
-### 3.5 ICT-IRS — Islamabad Capital Territory
+```oa-check
+name: Ali ClientA evidenced3percent option branch
+inputs:
+  tax_exclusive_service_value: 800000
+steps:
+  - output_tax: tax_exclusive_service_value * 0.03
+  - gross_invoice: tax_exclusive_service_value + output_tax
+  - difference_from_standard: tax_exclusive_service_value * 0.15 - output_tax
+expected:
+  output_tax: 24000
+  gross_invoice: 824000
+  difference_from_standard: 96000
+```
 
-- **Statute** — Islamabad Capital Territory (Tax on Services) Ordinance 2001 — administered by FBR (NOT a separate provincial authority; sits within Inland Revenue Service of FBR).  _(ICT (Tax on Services) Ordinance 2001)_
-- **Standard rate** — 15% (aligned with the Sales Tax Act 1990 rate by reference).  _(ICT (Tax on Services) Ordinance 2001)_
-- **Registration** — Via FBR IRIS — same STRN as federal sales tax registration; service provider declares ICT services on the monthly federal sales tax return.  _(ICT (Tax on Services) Ordinance 2001)_
-- **Filing frequency** — Monthly.  _(ICT (Tax on Services) Ordinance 2001)_
-- **Return form** — Federal Sales Tax Return on IRIS — services section.  _(ICT (Tax on Services) Ordinance 2001)_
-- **Late filing penalty** — Per Sales Tax Act 1990 §33 (applied by reference).  _(Sales Tax Act 1990 §33)_
-- **Notable services** — services rendered, provided, initiated, received, or consumed within ICT — same Second Schedule classifications as adopted from FBR notifications.  _(ICT (Tax on Services) Ordinance 2001)_
+Client B 400,000 is a **jurisdiction hold** until the relevant Sindh/Punjab law, service-specific rule and recipient/withholding facts are reconciled. The former automatic 60,000 Sindh charge and register-only-SRB answer are not cleared. Document performance/client location and obtain actual dispute route before finalising.
 
-## 4. Tier 2 — Cross-Province, Digital Services, Exemptions
+Client CUSD 5,000 requires qualifying code, export **and overseas delivery**, FX bank-business-account and SBP reporting for Sindh First Schedule 14. If all met, report under the proper exempt category; otherwise determine the actual outcome rather than call missing PSEB decisive. Do not invent a PKR exchange rate or combine its turnover with income-tax 154 Awithout reconciliation. Ali's FBR income registration/return remains separate.
 
-### 4.1 Cross-Province Services — Which PRA Has Jurisdiction?
+## Boundary and exception table
 
-Each PRA's Act contains its own "place of supply" rules. Common principles:
+| Old topic retained | Supported treatment or specific pending boundary |
+|---|---|
+| Diplomatic/international organisations | Actual authority's exemption and recipient certificate required; no universal exemption |
+| Education/health/cosmetic services | Specific schedule/category/recognition conditions, with KP taxed categories and actual exemptions checked; no blanket sector exclusion |
+| Government-to-government | Actual notification required |
+| Call centres/IT/digital marketplaces | Actual category/election/place/export law; oldhistorical 3/5/8 rates cannot travel between authorities |
+| Imported digital/foreign supplier | Recipient-liability/registration/withholding under actual authority plus income-tax analysis; specialist finalisation |
+| Refund/cross-credit/apportionment | Evidence and authority-specific rule before claim; no automatic federal credit or cash refund |
+| Cross-province dispute/notice | Preserve all claims and actual contractual/place facts; refer for jurisdiction/relief route, no default origin remittance |
 
-- **Service rendered in Province X to a recipient in Province X** — that province's PRA has unambiguous jurisdiction.  _(n/a)_
-- **Service rendered in Province X to a recipient in Province Y** — BOTH provinces may claim jurisdiction. In practice: SRB (Sindh) favors the Origin principle, while PRA (Punjab) strictly applies the Destination principle — a major source of conflict. Inter-provincial agreements / MOUs between SRB, PRA, KPRA, BRA, and FBR aim to reduce double taxation but disputes persist.  _(n/a)_
-- **Service rendered remotely (online) by a Province X provider to a Province Y recipient** — generally treated as supplied at the place of business of the recipient if B2B, or at provider's PE if B2C. Verify against the specific PRA's place-of-supply rule.  _(n/a)_
-- **Conservative default** — If the supplier has a PE only in Province X and bills a Province Y client for remotely-delivered services, register and remit in Province X. Maintain documentation evidencing place of rendering. If any PRA issues a notice, do not concede — request the matter be referred to the inter-provincial committee.  _(n/a)_
+## When to refuse or refer
 
-### 4.2 Digital / Cross-Border Services
+Keep all 9 referral groups: provincial refunds; competing cross-province claims/notices; withholding-agent obligations; imported-service reverse-charge/self-billing; AML/suspicious-transaction duties; audits/appeals; federal goods; residual FED; and capital-value/infrastructure-cess/professional-tax regimes. Missing category/location/period/election/export evidence prevents a final computation. Do not register automatically merely to seem cautious, apply an assumed standard rate or bank-account-location default, or label every foreign receipt exempt. Obtain the needed source and state the pending item.
 
-- **Exports of services (IT/ITeS) with foreign-currency receipts via banking channel (PRC)** — Exempt or zero-rated under most PRAs (SRB, PRA, KPRA) for IT and IT-enabled services, subject to specific Schedule conditions (e.g. no input adjustment, formal export declaration, encashment certificate from bank).  _(n/a)_
-- **Inbound digital services from foreign suppliers to Pakistani recipients** — Reverse charge / 100% withholding applies across major authorities (SRB, PRA, ICT) for unregistered foreign suppliers — the Pakistani recipient is required to withhold and pay PST. Verify before advising.  _(n/a)_
-- **Marketplace facilitator rules** — Limited and evolving; not yet uniform across PRAs.  _(n/a)_
+## Sources
 
-### 4.3 Common Exemptions
+| Source and actual portions read | Official URL | Read on |
+|---|---|---|
+| Read for Sindh Act ss.3/8/9/27/43/44, First Schedule 14 and Second Schedule 20 with neighboring conditions | https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf |2026-11-14|
+| Read for Sindh Rules 14 and 42 Iincluding election/continuation/forms | https://www.srb.gos.pk/srb/wp-content/uploads/2025/11/Sindh-Sales-Tax-Rules-2011-25-26-1.pdf |2026-11-14|
+| Read for Sindh Place Rules 3-11, particular service allocation/residual provisions | https://www.srb.gos.pk/srb/wp-content/uploads/2025/11/07-Sindh-Place-of-Provision-of-Services-Rules-2023.pdf |2026-11-14|
+| Read for Balochistan Act ss.10/32/48/49 and higher-rate list; ordinary payment rule 17 withreturnrule 15 | https://ebra.com.pk/public/storage/uploads/downloads/1755574443.pdf; https://ebra.com.pk/public/storage/uploads/downloads/1759148712.pdf; https://ebra.com.pk/public/storage/uploads/downloads/1715239876.pdf |2026-11-14|
+| Read for KPFinance Act 2025 s.10 amendments, general rate and Second Schedule 12; base Act ss.36/39 | https://kpra.gov.pk/wp-content/uploads/2025/07/kp-finance-act-2025.pdf; https://kpra.gov.pk/wp-content/uploads/2024/07/KP-STS-ACT-2022-Updated-2024.pdf |2026-11-14|
+| Read for ICTOrdinances.3,Table 1 item 11 and Table 2 item 11 including no-input/refund condition | https://download1.fbr.gov.pk/Docs/2025711172945966ICTOUpdatedupto30.06.2025.pdf |2026-11-14|
 
-- **Exported IT/ITeS services** — (foreign-currency receipt via banking channel (PRC); encashment certificate) — exempt/zero-rated under SRB, PRA, KPRA.  _(n/a)_
-- **Services rendered to diplomatic missions and certain international organizations** — exempt under each Act's Schedule.  _(n/a)_
-- **Educational services (recognized institutions)** — exempt under most Schedules.  _(n/a)_
-- **Healthcare services** — generally exempt except cosmetic/aesthetic.  _(n/a)_
-- **Government-to-government services** — exempt by notification.  _(n/a)_
-
-Exemption is NOT automatic — service provider must maintain documentary evidence (invoices marked "exempt," PSEB certificate, banking encashment certificate, recipient's exemption certificate).
-
-## 5. Worked Example
-
-Ali is a freelance software developer.
-PE: Karachi (Sindh) — sole proprietorship, home office.
-Clients:
-- Client A: Karachi-based fintech (Sindh) — PKR 800,000/month for development services.
-- Client B: Lahore-based marketing agency (Punjab) — PKR 400,000/month for development services.
-- Client C: US-based SaaS company — USD 5,000/month received via banking channel into Ali's bank account in Karachi; Ali holds PSEB registration.
-Ali is NOT registered with any PRA yet.
-
-Federal: Ali must hold NTN (FBR) for income tax. Services are NOT federally taxable as sales tax (federal sales tax = goods only).
-
-SRB (Sindh): Client A: service rendered from Sindh PE to Sindh recipient → unambiguous SRB jurisdiction. Taxable at 15% standard rate UNLESS the specific software development category qualifies for a reduced rate under the current Sindh Second Schedule (verify). Client C: service rendered from Sindh PE to foreign recipient with PSEB registration and foreign-currency receipt via banking channel → exempt/zero-rated. Encashment certificate required. Registration: Ali must register with SRB on commencement of taxable supplies (Client A).
-
-PRA (Punjab): Client B: service rendered from Sindh PE to Punjab recipient → JURISDICTIONAL OVERLAP. SRB position (origin): taxable in Sindh. PRA position (destination): potentially taxable in Punjab. Conservative default: Register only in SRB; charge SRB rate on Client B invoices; document place of rendering (Sindh). Be prepared to defend if PRA issues a notice. If risk of PRA notice is high (Client B is a withholding agent under Punjab rules), seek pre-clearance under the inter-provincial MOU or consider voluntary PRA registration as a precaution — but this is a judgment call requiring practitioner sign-off.
-
-Filing: Monthly SRB return (SST-03 via e-SRB) showing: Taxable supplies to Client A: PKR 800,000 × 15% = PKR 120,000 output tax. Taxable supplies to Client B: PKR 400,000 × 15% = PKR 60,000 output tax (treated as Sindh-originated). Exempt exports to Client C: USD 5,000 declared as exempt; PSEB certificate and banking encashment certificate held on file. Payment by 15th, return by 18th of following month.
-
-Self-check: PSEB certificate valid and current? ✓ Foreign-currency receipt via banking channel for Client C (not cash, not crypto)? ✓ Place-of-rendering documentation for Client B (timesheets, IP logs showing work performed in Sindh)? ✓ Invoice template includes SRB registration number, taxable value, tax amount separately? ✓
-
-## 6. Filing & Payment Per Authority
-
-**Filing & Payment Per Authority**  _(Filing & Payment Per Authority)_
-
-| Authority | Portal | Return Form | Payment Due | Return Due | Payment Mechanism |
-| --- | --- | --- | --- | --- | --- |
-| SRB | e.srb.gos.pk | SST-03 | 15th | 18th | PSID → designated bank / ADC |
-| PRA | e.pra.punjab.gov.pk | PST return | 15th | 18th | PSID → bank / 1Bill / ADC |
-| KPRA | kpra.kp.gov.pk | KP sales tax return | 15th | 18th | PSID → bank / ADC |
-| BRA | bra.gob.pk | BST-03 | 15th | 18th | PSID → bank / ADC |
-| ICT-IRS | iris.fbr.gov.pk | Federal Sales Tax Return (services section) | 15th | 18th | PSID via IRIS → bank / ADC |
-
-Documentation to retain (minimum 5 years): Invoices (with registration number, taxable value, tax amount). Receipt vouchers / banking encashment certificates. PSEB certificate (for exports). Working papers reconciling return to books. Withholding tax certificates received (where applicable).
-
-## 7. Conservative Defaults
-
-When facts are ambiguous, default conservatively:
-
-- **Default to registration** — if any taxable supply is made in a province, register. The cost of late registration penalties exceeds the cost of early registration.  _(n/a)_
-- **Default to standard rate** — do not apply a reduced-rate or exempt classification without explicit Schedule evidence and confirmation of all conditions.  _(n/a)_
-- **Default to origin-province in cross-province disputes** — register and remit in the PE province; document place of rendering meticulously.  _(n/a)_
-- **Default to TAXABLE on exports without PSEB** — only treat as exempt if PSEB registration is current AND foreign-currency receipt via banking channel is documented.  _(n/a)_
-- **Default to monthly filing** — there is no quarterly/annual option in any PRA's standard regime.  _(n/a)_
-- **Default to separate invoice line for tax** — never embed tax in the gross amount; show taxable value and tax amount distinctly.  _(n/a)_
-- **Default to in-province bank account** — for receipts where possible — strengthens place-of-rendering position.  _(n/a)_
-- **Default to escalating to a Pakistan-licensed practitioner** — for any matter touching: refunds, cross-province disputes, withholding obligations, inbound reverse charge, audits, appeals.  _(n/a)_
-
-## 8. Sources
-
-Sindh Sales Tax on Services Act 2011 (with subsequent amendments through Sindh Finance Acts).
-Punjab Sales Tax on Services Act 2012 (with subsequent amendments through Punjab Finance Acts).
-Khyber Pakhtunkhwa Finance Act 2013 Chapter VI; KP Sales Tax on Services Regulation 2022.
-Balochistan Sales Tax on Services Act 2015 (with subsequent Balochistan Finance Acts).
-Islamabad Capital Territory (Tax on Services) Ordinance 2001.
-Sales Tax Act 1990 (federal — goods only; referenced for ICT cross-application and penalty provisions).
-SRB portal: e.srb.gos.pk
-PRA portal: e.pra.punjab.gov.pk
-KPRA portal: kpra.kp.gov.pk
-BRA portal: bra.gob.pk
-FBR IRIS: iris.fbr.gov.pk
-Pakistan Software Export Board (PSEB): pseb.org.pk
-
-Citation discipline: Each provincial Act has been amended multiple times by successive Finance Acts. Always cite the section number AND the year of the Finance Act version in force on the date of the relevant supply. Rates and Schedules in this skill reflect the position as of tax year 2025-26 and must be re-verified against the current Schedule before any filing.
+Not yet confirmed: historic notable banking, insurance, telecom, advertising, courier/freight, construction, franchise, professional consultancy, hotel and restaurant categories each require the actual authority/code/period conditions; no rate or exemption follows from the label. Also, Punjab current 2025-2026 schedule/rate/IT/export/penalty/deadline conditions; ordinary web and browser attempts to official punjablaws 2506 failed/timedout, and old 2012 PRAchapters are insufficient to clear later rates. KP 2026 Finance Act/Maynotification recovery remains incomplete. All actual later 2026 changes/extension calendars, particular input-credit/election restrictions, export definitions/procedures beyond the read rows, each current registration/portal/form, withholding/marketplace/refund/cross-credit/treaty/notice route require targeted confirmation. These boundaries preserve the old topics and keep unsupported figures outside usable instructions.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pk-sales-tax-services` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pk-sales-tax-services. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pk-sales-tax-services` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pk-sales-tax-services. If neither is available, confirm every figure against the official source pages cited above before relying on it.

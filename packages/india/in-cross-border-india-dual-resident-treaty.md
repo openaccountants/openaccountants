@@ -3,137 +3,193 @@ name: in-cross-border-india-dual-resident-treaty
 description: For an individual with US and Indian tax connections who needs to fix Indian residential status and claim credit in India for tax paid in the US, and for the adviser preparing that claim.
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-09-06
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: filing-howto
+version: 1.1
 ---
 
 # US-India dual residence and foreign tax credit in India
 
-## US-India dual residence and foreign tax credit in India
+## Scope
 
-This Guide covers two linked questions for a person taxed in both the United States and India: which Indian residential status applies for the year, and how credit for foreign tax paid is claimed on the Indian return. Figures are for tax year 2026. Where a page on incometax.gov.in states its own period, that period is used and named in the table: the residency day tests below are quoted from the Income Tax Department's "Non-Resident Individual for AY 2026-2027" page and from the ITR form notified in April 2026, and the department's Non Resident FAQ states that for FY 2026-27 residential status is determined under the Income Tax Act, 2025. Foreign tax credit rules quoted below are stated on the department's Form 67 pages under Rule 128 of the Income Tax Rules, 1962.
+For an individual with Indian and US tax connections: determine Indian domestic residence, choose the correct foreign-tax-credit statement, gather evidence and file that statement. The primary period is **Tax Year 2026-27, 1 April 2026 to 31 March 2027**, under the Income-tax Act, 2025 and notified Income-tax Rules, 2026. The separate **2025-2026 filing cycle**, FY 2025-26 / AY 2026-27, remains under the 1961 Act. Form 44 is the current-year foreign-credit statement; Form 67 is the earlier-period form. They are not interchangeable. [Act ss.3,5-6](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf); [Rules 75-76](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf); [transition FAQ Q7-11](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq).
 
-## Who this is for
-
-Individuals who are resident taxpayers in India and have paid tax in a country or specified territory outside India, including the United States: the Form 67 page states that credit is available to "a resident taxpayer" who has foreign tax paid "by way of deduction or otherwise". It is also for advisers first testing whether the client is resident at all, using the day-count tests in the tables below. It is not for a person who is non-resident in India and is seeking treaty relief only — that person furnishes the information form described in the fourth table, not the foreign tax credit statement. This Guide does not decide the client's US residency or the treaty tie-breaker; neither incometax.gov.in nor gstcouncil.gov.in carries the India-US treaty residence article text on the pages read for this Guide, so nothing is stated here about it.
-
-## Rates, thresholds and deadlines
-
-### Residency day tests as printed in the notified return form
-
-**Residency day tests as printed in the notified return form**  _(https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf)_
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf |
-| Resident — first stay test | "You were in India for 182 days or more during the previous year" | form cites section 6(1)(a) |
-| Resident — second stay test | "You were in India for 60 days or more during the previous year, and have been in India for 365 days or more within the 4 preceding years" | form cites section 6(1)(c), where Explanation 1 is not applicable |
-| Status options on the form | Resident; Resident but not Ordinarily Resident; Non-resident | residential status block of the notified form |
-
-### Day-test substitutions for Indian citizens and persons of Indian origin
-
-**Day-test substitutions for Indian citizens and persons of Indian origin**  _(https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0)_
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0 |
-| Page's own year | AY 2026-2027 | page title "Non-Resident Individual for AY 2026-2027" |
-| Second test as stated | in India 60 days or more during the previous year and 365 days or more for 4 years immediately preceding the previous year | page's wording of condition (2) |
-| Visiting Indian citizen or person of Indian origin | the period of 60 days "shall be substituted with 182 days" | same concession for an Indian citizen leaving India as a crew member or for employment outside India |
-| Where total income other than income from foreign sources exceeds ₹ 15 lakh | 60 days substituted with 120 days | page attributes this to the Finance Act, 2020, w.e.f. Assessment Year 2021-22 |
-| Outcome if neither condition met | treated as Non-Resident in that previous year | page's wording |
-
-### Deemed residence and the year the new Act applies
-
-**Deemed residence and the year the new Act applies**  _(https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq)_
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq |
-| Deemed resident income threshold | total income exceeding Rs 15 lakh, other than income from foreign sources | page cites section 6(1A); person must also be "not liable to tax in any other country by reason of domicile, residence or similar criteria" |
-| FY 2026-27 residential status | determined under the provisions of the Income Tax Act, 2025 | page states period of stay from 1 April 2026 onwards is considered for this purpose |
-| Look-back for the 60 + 365 test in FY 2026-27 | stay during FY 2025-26 and earlier years also taken into account | page's wording on applying the "60 days + 365 days" test |
-| Continuity tests | "nine out of ten preceding years" and "729 days in seven preceding years" continue to look back to earlier years | page states preceding years may include years under the repealed Act |
-
-### Foreign tax credit statement
-
-**Foreign tax credit statement**  _(https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-um)_
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-um |
-| Form name | Form 67 | statement of foreign tax paid, under Rule 128 of the Income Tax Rules, 1962 |
-| Who may claim | a resident taxpayer with foreign tax paid in a country or specified territory outside India | page's stated purpose |
-| Deadline | on or before the due date specified for furnishing the return of income under sub-section (1) of Section 139 | page's wording |
-| Mode | online only, through the e-Filing portal | "Form 67 can only be submitted through online mode" |
-| Mandatory attachment | copy of the certificate or statement and proof of payment / deduction of foreign tax | page states it is mandatory to attach these to proceed further |
-| Second trigger for filing | carry backward of loss of the current year resulting in refund of foreign tax for which credit was claimed in earlier previous years | page's wording |
-
-### Treaty relief information form for non-residents under the Income Tax Act, 2025
-
-**Treaty relief information form for non-residents under the Income Tax Act, 2025**  _(https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM)_
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM |
-| Form name | Form 41 | page states it is the prescribed form for a non-resident to furnish particulars to claim relief under a DTAA |
-| Statutory basis | section 159 and Rule 75; details mandated under section 159(8) of the Income tax Act, 2025 | page's wording |
-| Who files | all non-resident registered users on the e-Filing portal | non-residents without PAN file through a separate login category |
-| Detail required | Tax Identification Number of the applicant in the country or region of his residence | listed in the form's particulars |
-| Period selected when filing | Tax Year (T.Y.) | page's step 5 |
-
-### Return due date and late fee stated on the ITR-4 page
-
-**Return due date and late fee stated on the ITR-4 page**  _(https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online)_
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online |
-| Due date stated | "For AY 2026-27 (FY 2025-26) the due date of filing of ITR-4 is 31st August 2026" | stated on this page for ITR-4 only; the page does not state the date for other ITR forms |
-| Late filing fee | late filing fee of up to ₹5000 | applies where the return is not filed within the due date u/s 139(1); interest on tax liability may also apply |
-
-## The method, step by step
-
-1. Fix residential status for the year first, using the day tests printed in the notified return form at https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf and the substitutions for visiting Indian citizens and persons of Indian origin at https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0 — the day counts and the income substitution are in the first two tables above.
-2. For a year beginning 1 April 2026, apply the Income Tax Act, 2025 to that determination, counting stay from 1 April 2026 onwards but still looking back to earlier years for the 60 + 365 and continuity tests, as set out at https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq — see the third table for the deemed-residence income threshold.
-3. If the client is resident, register or log in on the e-Filing portal with a valid user ID and password; the Form 67 page at https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-um lists as prerequisites a registered user on the e-Filing portal, PAN and Aadhaar linked, and PAN status "Active".
-4. Assemble the records the form demands before starting: the certificate or statement of foreign tax and proof of payment or deduction of that tax, which the same page states must be attached to proceed.
-5. File Form 67 online: e-File > Income Tax Forms > File Income Tax Forms, select Form 67, select the Assessment Year, complete Part A with name, PAN or Aadhaar, address and assessment year plus receipt details of the foreign income and the foreign tax credit claimed, then attach the certificate and proof — steps as given at https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-um.
-6. Submit Form 67 on or before the due date for the return under section 139(1), the time limit confirmed at https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-faq — the deadline row is in the fourth table.
-7. E-verify the form using EVC or DSC; the department's forms FAQ at https://www.incometax.gov.in/iec/foportal/formsfaqs states both modes and that an Authorized Representative may be added to file Form 67 on the taxpayer's behalf.
-8. File the income tax return itself by the due date under section 139(1); the due date and late fee stated by the department for ITR-4 for AY 2026-27 are in the last table at https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online.
-9. If the client turns out to be non-resident in India and is claiming relief under the India-US DTAA rather than foreign tax credit, furnish Form 41 instead, following the panels and Tax Year selection described at https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM.
+This skill prepares the Indian individual filing workflow. It does not decide US residence, the specific treaty tie-breaker or the amount of credit. An Indian resident with foreign tax paid by deduction or otherwise may use the credit procedure, subject to all rule conditions and the corresponding income being taxed in India. An Indian nonresident seeking treaty relief uses the treaty-information procedure instead; a form alone does not establish entitlement. Companies, firms, trusts, alternate-minimum-tax credit and competent-authority disputes are referral cases.
 
 ## Ask the client first
 
-- How many days were you physically in India in the year, and in each of the four preceding years, and in the seven and ten preceding years?
-- Are you an Indian citizen or a person of Indian origin, and did you come to India on a visit, leave for employment outside India, or leave as a crew member of an Indian ship?
-- What is your total income for the year excluding income from foreign sources, and does it cross the deemed-residence threshold in the third table?
-- Do you hold, for each item of US tax you want credited, a certificate or statement of the tax and proof of its payment or deduction, in a form you can attach to the online filing?
-- Is your PAN active and linked to Aadhaar, and will the return be filed by the section 139(1) due date, since the credit statement must be in by that same date?
-- Did any current-year loss carried back result in a refund of foreign tax for which credit was claimed in an earlier year?
+- Which Indian tax year and return type: original, belated, revised or updated? Has a statement or return already been filed?
+- Citizenship/Indian origin, reason for arrival/departure, India days for the current year and each of the preceding 4, 7 and 10 years, and the residence status in those earlier years. Obtain travel and crew/employment evidence, not an estimate at a day boundary.
+- Total income other than the Act's defined foreign-source income; whether liable to tax abroad by domicile, residence or similar criteria; foreign residence certificate and TIN.
+- Each foreign-income source, year offered to Indian tax, country, foreign tax paid/deducted, payment date and currency; where the income was first received and any India-controlled business/profession.
+- Certificates/statements and payment/deduction proof; any foreign tax dispute, settlement, refund or carryback of loss. Obtain the original foreign return and subsequent amendments.
+- Active PAN and portal access; applicable Aadhaar-linking status and verification method. The old Form 67 manual calls linking recommended, not an unconditional eligibility test for every nonresident.
+- Total foreign tax paid outside India in the tax year, for the current Form 44 accountant-verification threshold; whether an accountant must verify the filing. Do not confuse this amount with the credit claimed.
+
+## The method, step by step
+
+### 1. Fix residence before choosing a form
+
+The current-year statutory table below replaces loose FAQ wording. Numbers shown in words in the Act are identified. See [India residence](in-tax-residency.md) for the complete residence memorandum, crew voyage exclusions, foreign-income scope and return consequences.
+
+| Test | Value and complete condition | Official source |
+|---|---|---|
+| Basic resident limb | At least 182 India days in the tax year (in words on the page), regardless of whether the alternative limb applies | [s.6(2)(a)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27) |
+| Alternative resident limb | At least 60 current-year India days **and** at least 365 in the preceding 4 tax years (in words on the page), unless the departure/visitor exception applies | [s.6(2)(b)-(5)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27) |
+| Citizen leaving for employment outside India or as crew of an Indian ship | Alternative limb switched off; basic 182-day limb remains (in words on the page); separately test deemed residence | [s.6(3),(7)-(8)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27) |
+| Visiting citizen/PIO with qualifying income no more than INR 15 lakh | Alternative limb switched off; basic 182-day limb remains (in words on the page) | [s.6(4)-(5)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=28) |
+| Visiting citizen/PIO with qualifying income exceeding INR 15 lakh | Alternative limb becomes at least 120 India days **and** at least 365 in the preceding 4 years (in words on the page); the 182-day basic limb also remains | [s.6(2),(4)-(5)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=28) |
+| Deemed residence | Indian **citizen** with qualifying income exceeding INR 15 lakh, not liable to tax elsewhere by domicile, residence or similar criteria, and not already resident under the day tests; applies irrespective of days (income figure in words on the page) | [s.6(7)-(8)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=28) |
+| RNOR history | Resident who was NR in 9 of preceding 10 tax years **or** in India no more than 729 days in preceding 7 tax years (in words on the page) | [s.6(13)(a)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=29) |
+| Other RNOR routes | High-income visitor resident under s.6(5), with at least 120 but fewer than 182 India days; or a citizen deemed resident under s.6(7) (day figures in words on the page) | [s.6(13)(b)-(c)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=29) |
+
+Qualifying income means total income other than foreign-source income as defined in s.6(14); that foreign-source definition excludes income from an India-controlled business or India-set-up profession and deemed Indian accrual. Exactly the income threshold does not exceed it. For historical context, the Finance Act, 2020 visitor/deemed-residence changes applied from AY 2021-22; do not back-apply them to an earlier dispute. [NR page, residence introduction](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0). The current 2025 Act tests control Tax Year 2026-27. The new Act does not restart look-backs: FY 2025-26 and earlier years still count. The old notified ITR's 182-day and 60-plus-365 tests, status choices ROR/RNOR/NR and citizen/PIO substitutions are retained for the **2025-2026 filing cycle**, not used as current return-field predictions. [s.6](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf); [FAQ Q1-4,7-11](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq); [old ITR Part A-GEN, PDF pp.2-3](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf); [old NR page](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0).
+
+Residence alone does not make every foreign receipt taxable. ROR includes foreign accrual; RNOR includes Indian receipt/accrual/deemed accrual and foreign accrual from an India-controlled business or India-set-up profession. NR includes Indian receipt/accrual/deemed accrual. Analyze the income before asking for credit against its Indian tax; a later remittance of already received capital is not automatically new income. [s.5](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27).
+
+### 2. Select period, form and evidence
+
+| Period/job | Value and complete condition | Official source |
+|---|---|---|
+| Tax Year 2026-27 resident credit statement | Form 44, rule 76; resident with corresponding foreign income offered/assessed to Indian tax, subject to the rule's conditions | [rule 76(1),(10)](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf) |
+| Normal/belated-return statement deadline | Within 12 months from relevant tax-year end, where return furnished within s.263(1) or (4); statement and certificate/statement required (12 in words on the page) | [rule 76(10)-(12)](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf) |
+| Updated-return statement | For income included in a s.263(6)(a) updated return, on or before that return's filing date | [rule 76(13)](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf) |
+| Foreign tax refund | Also file Form 44 where carryback, revised return/similar statement or another reason refunds foreign tax for which credit was previously claimed | [rule 76(14)](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf) |
+| Accountant verification of Form 44 | Every company; for all other taxpayers where foreign tax paid outside India for the tax year equals or exceeds INR 100,000. This is foreign tax paid, not a claimed-credit threshold | [rule 76(16), s.515(3)(b)](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf) |
+| Disputed foreign tax | No credit while disputed. After final settlement, furnish evidence of settlement/payment and no-refund undertaking within 6 months from the end of the settlement month, using Form 45; Form 44 must already have been filed (6 in words on the page) | [rule 76(5)-(6),(15); Forms 44/45 guidance](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf); [guidance pp.3-5](https://www.incometaxindia.gov.in/documents/d/guest/fn-44) |
+| Accountant verification of Form 45 | Required where the relevant year's Form 44 required accountant verification | [rule 76(17)](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf) |
+| 2025-2026 filing cycle resident statement | Form 67 under rule 128, Income-tax Rules, 1962; retain the older Assessment Year workflow below. Do not use its stale original-return-deadline text as current law | [Form 67 manual](https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-um) |
+| 2025-2026 filing cycle Form 67 deadline | On or before the end of the relevant assessment year where the return is filed within s.139(1) or (4); updated-return income statement/evidence due on or before that return is furnished | [rule 128(9), Notification 100/2022](https://egazette.gov.in/WriteReadData/2022/238191.pdf) |
+| Tax Year 2026-27 NR treaty-information form | Form 41 under s.159(8), rule 75; foreign residence certificate/TIN; separate non-PAN NR-ID login only where not holding and not required to hold PAN | [Form 41 manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM) |
+
+For current Form 44, gather head-wise/source-wise foreign income and tax, disputed-tax details, the foreign income offered in India and the credit working prepared by the adviser. Attach a certificate/statement specifying the nature of income and foreign tax from the foreign tax authority, deductor or taxpayer; accompany a taxpayer-furnished statement with the online acknowledgement/bank counterfoil/challan or deduction proof, as applicable. [Rule 76(10)-(11)](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf); [guidance pp.1-2](https://www.incometaxindia.gov.in/documents/d/guest/fn-44).
+
+The computation is referred: rule 76(7) requires a separate source/country comparison, treaty-excess exclusion and a prescribed currency conversion. Credit is against Indian tax, surcharge and cess, excluding interest, fees and penalty. Do not credit every dollar of a foreign assessment, carry a tax to a different income year without the proportional rule, or select an exchange rate by convenience. The skilled adviser must resolve those points before the filing amount is entered. [Rule 76(2)-(9),(18)](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf).
+
+### 3. File current Form 44
+
+1. Log in to the e-Filing portal. Go to e-File > Income Tax Forms > File Income Tax Forms and select Form 44 for the relevant new-Act tax year. The guidance provides the filing route; it does not authorize projecting an old Assessment Year screen onto the new form.
+2. Complete Part A applicant particulars, Part B country/source-wise foreign income and credit details, Part C details of foreign-tax refunds for credit already claimed in India and the verification. Reconcile income and credit to the return working. Keep disputed tax separate rather than including it in an ordinary claim.
+3. Attach the required evidence. Arrange accountant verification when the threshold/recipient condition above applies. An individual under that threshold is still responsible for a correct statement and proof.
+4. Preview, proceed to e-Verify and submit. Complete verification, then save the Transaction ID, Acknowledgement Number and downloaded copy. Retain the email/mobile confirmation. These prove submission, not that the claim was substantively allowed.
+
+[Official Form 44 guidance, pp.1-3](https://www.incometaxindia.gov.in/documents/d/guest/fn-44); [rule 76(10)-(17)](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf). For a later settlement, use Form 45's Part A particulars, Part B with only columns (1)-(12) prepopulated and non-editable (complete its remaining fields), and Part C settlement intimation; attach settlement/payment evidence, preview, e-verify and retain its acknowledgement within the separate settlement deadline. [Guidance pp.3-5](https://www.incometaxindia.gov.in/documents/d/guest/fn-44).
+
+### 4. Earlier-period Form 67 workflow: 2025-2026 filing cycle
+
+This preserves the earlier form process without treating an obsolete deadline as law. Use an active PAN and registered user ID/password. The manual recommends PAN/Aadhaar linking and shows inoperative-PAN warnings; it allows Continue from the warning, so do not invent a universal linking prohibition. [Manual prerequisites and steps1,9](https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-um).
+
+Log in > e-File > Income Tax Forms > File Income Tax Forms > Form 67 > **Assessment Year** > Continue > Let's Get Started. Fill Part A identity, PAN/Aadhaar, address, assessment year and foreign income/credit details; Part B handles foreign refunds/carryback and disputed tax. Complete Verification and attach the certificate/statement plus payment/deduction proof. Preview > Proceed to e-Verify > confirm > complete e-verification. The official forms FAQ permits EVC/DSC and an Authorized Representative; the Form 67 FAQ also describes AadhaarOTP. Keep Transaction ID, acknowledgement and email confirmation. [Manual sections4-5](https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-um); [Form 67 FAQ](https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-faq); [forms FAQ, Form 67 section](https://www.incometax.gov.in/iec/foportal/formsfaqs).
+
+**Deadline conflict resolved by the Gazette:** Notification 100/2022 substituted rule 128(9). The Form 67 statement and certificate/statement are due **on or before the end of the relevant assessment year**, where that year's return was furnished within s.139(1) or (4). For income included in an updated return under s.139(8A), furnish the corresponding statement/evidence on or before the updated return is furnished. For FY 2025-26 / AY 2026-27, the normal/belated-return statement deadline is therefore **31 March 2027** (derived from the assessment-year end), not the return's original due date. The amendment took effect from **1 April 2022**; pre-amendment claims and litigation are separate referrals. The manual section 3.1 and FAQ Q6 still give the earlier original-return deadline; use the amended law. A missed statement is a referral, not an automatic conclusion that substantive credit is lost. [Notification 100/2022, G.S.R.636(E), rule 128(9) and proviso](https://egazette.gov.in/WriteReadData/2022/238191.pdf).
+
+### 5. Nonresident treaty-information route
+
+Form 41 supplies information; it neither creates Indian residence nor computes a foreign credit. For the current tax year, log in with PAN or the qualifying NR-ID, select the **Forms as per Income Tax Act 2025** tab, choose Form 41 and Tax Year, then complete Part A particulars, Part B residential information and declaration/verification. Update mandatory profile/address fields, save each panel, preview, e-verify and retain Transaction ID/acknowledgement. PAN login uses EVC/DSC as applicable; NR-ID login uses email/mobile OTPs. Obtain foreign TIN and the residence certificate first. Earlier periods require the earlier-Act form instead. [Manual sections1-4](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM).
+
+## Boundary and exception table
+
+| Boundary | Decision | Official source |
+|---|---|---|
+| Exactly 182 India days | Basic resident limb met; no additional 365-day history condition is attached to that limb (in words on the page) | [s.6(2)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27) |
+| Citizen/PIO visitor at the income threshold | Higher-income visitor substitution requires income **exceeding** INR 15 lakh (in words on the page); deemed residence is citizen-only | [s.6(5),(7)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=28) |
+| Foreign tax at exactly accountant threshold | INR 100,000 meets equals-or-exceeds test for an individual; less does not, but statement/evidence obligations remain | [rule 76(16)](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf) |
+| Foreign tax still in dispute | Do not claim that disputed part under the ordinary process; settlement route and separate deadline apply | [rule 76(5)-(6),(15)](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf) |
+| Foreign tax refunded after credit | Reopen prior credit analysis and file the required refund information; do not silently leave the earlier credit unchanged | [rule 76(14)](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf) |
+| Dual resident under domestic laws | Indian day tests do not resolve the treaty article, US return, saving-clause or competent-authority question; refer | [Domestic tests, s.6](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf) |
+
+## Worked cases
+
+These are assumed individual facts, not calculations of the allowable credit. All results below are derived.
+
+**Case A: accountant-verification boundary.** For Tax Year 2026-27 an Indian resident individual pays foreign taxes of INR 50,000 and INR 50,000: total INR 100,000, so accountant verification of Form 44 is required. If the second payment were INR 49,999, total INR 99,999 would be INR 1 below the threshold; the individual still files Form 44/evidence but this threshold alone would not require accountant verification. A company cannot use that below-threshold exception. On a normal/belated return meeting rule 76(12), the current year's statement deadline is 31 March 2028, derived from the tax year ending 31 March 2027 plus 12 months; an updated return uses its own filing-date rule instead.
+
+```oa-check
+name: Individual foreign-tax verification at and below the threshold
+inputs:
+  first_tax: 50000
+  second_tax_at: 50000
+  second_tax_below: 49999
+steps:
+  total_at: first_tax + second_tax_at
+  total_below: first_tax + second_tax_below
+  margin_at: total_at - 100000
+  margin_below: total_below - 100000
+expected:
+  total_at: 100000
+  total_below: 99999
+  margin_at: 0
+  margin_below: -1
+```
+
+**Case B: resident or nonresident filing route.** Assume an Indian citizen living in the US comes on a visit, is liable to US tax by residence, has qualifying income INR 2,200,000 and preceding 4-year India presence 400 days. At 130 current days the high-income visitor meets the 120-day and 365-day conditions and is RNOR. At 110 days the alternative limb fails, and the assumed foreign tax liability rules out deemed residence; the individual is NR. For the resident outcome investigate credit only on foreign income included in Indian taxable income, using Form 44 if eligible. For the NR outcome Form 44 is not the resident-credit route; consider Form 41 for an independently established treaty claim. Neither outcome decides US residence or the treaty tie-breaker.
+
+```oa-check
+name: Visiting citizen current-day route with foreign tax liability
+inputs:
+  income: 2200000
+  prior_days: 400
+  long_visit: 130
+  short_visit: 110
+steps:
+  income_margin: income - 1500000
+  history_margin: prior_days - 365
+  resident_visit_margin: long_visit - 120
+  nonresident_visit_margin: short_visit - 120
+expected:
+  income_margin: 700000
+  history_margin: 35
+  resident_visit_margin: 10
+  nonresident_visit_margin: -10
+```
 
 ## When to refuse or refer
 
-- Applying the residence tie-breaker in the India-US treaty: the pages on the allowed official hosts read for this Guide do not set out the treaty's residence article, so the tie-breaker order and its tests are not stated here.
-- Computing the amount of credit, per-country limits, apportionment against Indian tax, or the exchange rate to convert US tax into rupees: the Form 67 pages describe who files, what is attached and by when, and are silent on the computation, so no figure or method for it appears in this Guide.
-- US-side obligations, including US returns, US residency certification, elections and any US filing dates: these are not on incometax.gov.in or gstcouncil.gov.in and are outside this Guide.
-- Disputed or dual-status years needing mutual agreement procedure, advance ruling, or a competent authority approach.
-- Foreign tax credit claimed by a company, firm, trust or other non-individual, and credit against alternate minimum tax: only individual residency and the Form 67 filing process are covered above.
-- Late or omitted Form 67 for an earlier year, revised or updated returns, and condonation: the pages cited state the time limit but not the consequences of missing it.
-- Any GST question: gstcouncil.gov.in carries nothing bearing on personal residency or foreign tax credit, so nothing is stated for it.
+- The specific India-US treaty residence article, tie-breaker, saving clause, protocols or entitlement is not confirmed here. Obtain the operative treaty and advice before claiming an outcome; remove the old version's arbitrary restriction to only selected official hosts.
+- Credit computation, per-source/country limitations, allocation of Indian tax, currency conversion and alternate minimum tax. The notified rule is linked, but this filing skill does not substitute for that computation.
+- US residence, returns, certifications, elections or US filing dates; no US outcome is supplied here.
+- Dual-status/disputed years requiring mutual agreement, advance ruling or a competent authority.
+- Companies, firms, trusts and other non-individual credit cases. The company verification condition is retained as a boundary, not an expanded filing scope.
+- Missing/late Form 67, older years, revised/updated returns and condonation; do not rely on the stale original-return-deadline sentence.
+- GST, which is a separate job; no GST result follows from personal residence or foreign tax credit.
+
+## Filing and payment
+
+The statement is not the income-tax return and has no separate tax-payment step in the cited form guidance. Complete the return's foreign income/relief schedules, settle the independently computed Indian liability and use [return assembly](in-return-assembly.md) for the correct return, deadline and verification.
+
+The old file carried the ITR-4 page's **31 August 2026** due date for AY 2026-27/FY 2025-26 and **up to INR 5,000** late fee. Preserve these as the page's **2025-2026 filing-cycle** statements only: that page excludes RNOR/NR and has additional eligibility restrictions, so they are not a general foreign-income client's return instruction. A foreign-income taxpayer needs the correct ITR eligibility and statutory fee conditions, not an ITR-4 shortcut. Interest, if any, depends on the liability and applicable rules. [ITR-4 FAQ Q1-2,22,25](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online). Final current-year return fields, applicable extensions and any changed current-year calendar must be obtained when filing.
+
+## Completion checklist
+
+- [ ] Act/year fixed; residence/RNOR memorandum supports the route and includes earlier-year look-backs.
+- [ ] Taxable foreign income and corresponding foreign tax identified; US/treaty conclusions separately advised.
+- [ ] Correct Form 44/45 or old Form 67 chosen, and current Form 41 only for the NR treaty-information job.
+- [ ] Foreign tax receipts/certificates, deduction proof, dispute/refund records and return reconciliation retained.
+- [ ] Applicable statement deadline and accountant verification checked independently of the return deadline.
+- [ ] All form panels completed, evidence attached, verification completed and acknowledgement saved; return/payment still tracked separately.
+- [ ] Every unresolved older-period source or late-claim issue referred before a filing conclusion.
 
 ## Sources
 
-- https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf (residency day tests as printed in the notified return form)
-- https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0 (day-test substitutions for Indian citizens and persons of Indian origin)
-- https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq (deemed residence and the year the new Act applies)
-- https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-um (foreign tax credit statement)
-- https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-faq (Form 67 time limit)
-- https://www.incometax.gov.in/iec/foportal/formsfaqs (e-verification and authorised representative for Form 67)
-- https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM (treaty relief information form for non-residents under the Income Tax Act, 2025)
-- https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online (return due date and late fee stated on the ITR-4 page)
+| Official source | Read for | Actual read date |
+|---|---|---|
+| https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf | Read for ss.3,5-6: current tax year, scope of taxable income, individual residence and RNOR, all neighboring exceptions/definitions | 2026-11-14 |
+| https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf | Read for complete rules75-76, all 18 foreign-credit subrules, evidence, statement timing, dispute/refund and accountant verification | 2026-11-14 |
+| https://www.incometaxindia.gov.in/documents/d/guest/fn-44 | Read for all 5 pages: Forms 44/45 parts, filing steps, evidence, deadlines, verification and acknowledgements | 2026-11-14 |
+| https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq | Read for Q1-11: residence/deemed residence, continuity look-backs and transition/savings; statute resolves loose182-day wording | 2026-11-14 |
+| https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0 | Read for AY2026-27 residence substitutions and NR return routing; earlier-cycle material | 2026-11-14 |
+| https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf | Read for Part A-GEN individual residence panels, PDF pp.2-3, 2025-2026 filing cycle | 2026-11-14 |
+| https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-um | Read for whole Form 67 manual, prerequisites, 4 parts, workflow/evidence/acknowledgement; deadline sentence flagged stale | 2026-11-14 |
+| https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-faq | Read for all 6Form 67 questions: verification, representative and stated deadline; deadline not treated as amended law | 2026-11-14 |
+| https://www.incometax.gov.in/iec/foportal/formsfaqs | Read for Form 67 section only: EVC/DSC, representative and documents, not all forms on page | 2026-11-14 |
+| https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM | Read for full Form 41 manual: eligibility, certificate/TIN, new Act tab, 3 panels, PAN/NR-ID verification and receipt | 2026-11-14 |
+| https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online | Read for Q1-2,22,25 and neighboring eligibility exclusions: old cycle ITR-4date/latefee and RNOR/NR exclusion | 2026-11-14 |
+| https://egazette.gov.in/WriteReadData/2022/238191.pdf | Read for complete English notification and proviso on PDF p.2: amended old rule 128(9), commencement and updated-return exception; recovered genuine Gazette PDF, not a search extract | 2026-11-14 |
+| https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.64_2026.pdf | Read for all 4 pages of the corrigendum; items 8-9 change accountant-verification wording on Forms 44/45, no change to rule 76 deadline or threshold | 2026-11-14 |
+
+**Not yet confirmed:** operative India-US treaty residence/tie-breaker and protocols; US-side obligations; final Tax Year 2026-27 income-tax return fields/extensions; pre-amendment older-Act exceptions, litigation and condonation. The blocked tax-authority Notification 100/2022 copy was recovered as the official Gazette; its amended deadline is stated above. The older manual's s.139(1) sentence is not usable deadline guidance; missed/omitted forms and unusual updated/revised claims remain referred. No guessed credit amount is supplied.

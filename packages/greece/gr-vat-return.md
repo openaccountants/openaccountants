@@ -1,40 +1,38 @@
 ---
 name: gr-vat-return
-description: >
-  Pointer for Greek VAT (ΦΠΑ) returns, tax year 2026. The full method lives in greece-vat-return:
-  the VAT Code ratified by ν. 5144/2024 (which replaced ν. 2859/2000), the 24%, 13%, 6% and 4%
-  rates, the 30% island reduction from 1 January 2026, the EUR 10,000 small business exemption and
-  EU SME scheme, monthly and quarterly periodic returns and payment, input VAT and blocked costs,
-  the reverse charge, intra-EU rules, OSS, refunds to foreign businesses and Tax Procedure Code
-  fines. Trigger on "Greek VAT return", "ΦΠΑ", "do the VAT Greece", "myAADE VAT", "TAXISnet VAT".
-  Load greece-vat-return instead of this file. Out of scope here: everything; see
-  greece-vat-return, greece-einvoice (myDATA and e-invoicing) and gr-tax-overview.
-version: 0.2
+description: "Routing-only pointer for Greek VAT returns in tax year 2026. Load greece-vat-return for the method, rates, island reductions, small-business and EU SME schemes, input tax, reverse charge, intra-EU, OSS, refunds, periodicity and penalties. Load greece-einvoice for myDATA. This file does not compute tax or repeat the owner's figures. Trigger phrases: Greek VAT return, ΦΠΑ, do the VAT Greece, myAADE VAT, TAXISnet VAT."
+version: 0.3
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-16
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: router
 ---
 
-# Greek VAT return: use greece-vat-return (v0.1)
+# Greek VAT return: routing to greece-vat-return v0.3
 
-This file used to hold a copy of the Greek VAT return skill written under the old VAT Code (ν. 2859/2000), with 2025 figures and island rates that no longer match the law. It is now a pointer. Load **greece-vat-return** for the 2026 method, figures, worked examples and sources.
+## The method, step by step
 
-Headline 2026 figures, all from the VAT Code (ν. 5144/2024) in the Ministry of Finance codification to ν. 5313/2026:
+1. Load [greece-vat-return](greece-vat-return.md). It owns Greek VAT registration, the current VAT Code, rates and island conditions, the domestic small-business exemption and EU SME scheme, input VAT and blocked costs, reverse charge, intra-EU trade, OSS, periodic returns, payment, refunds and penalties.
+2. Before using its method, establish the transaction and place of supply, tax period, book category, registration/start date, any periodicity election, exemption and island conditions. The old pointer's blanket statement that all single-entry businesses file quarterly is wrong: use the owner's A.1049/2025 start-date cohorts and election rules, corrected in v2.4.
 
-- Rates: 24% standard; 13% for Annex III goods and services; 6% and 4% where Annex III says so (art. 26(1)).
-- Islands: from 1 January 2026, rates are cut by 30% (to 17%, 9%, 4% and 3%) on the islands of the North Aegean Region, Samothrace and the Dodecanese with up to 20,000 inhabitants (art. 26(4A), (6)). Lesvos, Kos, Samos and Chios get the same cut under art. 26(4) through decision Α.1150/2021, which AADE circular Ε.2113/2025 confirms is still in force. The islands are listed in the annex to Ε.2113/2025. Tobacco and means of transport never get it (art. 26(4B)).
-- Small business exemption: Greek turnover up to EUR 10,000 in the previous and current year (art. 44α(1)).
-- Returns: monthly on double-entry books, quarterly on single-entry books, due by the last working day of the following month (art. 43(1), (4)).
+3. For invoice creation, myDATA and e-invoicing load [greece-einvoice](greece-einvoice.md). Use [gr-tax-overview](gr-tax-overview.md) to locate other Greek tax jobs.
+4. Hand off the facts, selected owner/version, exact applicable section and source, unresolved questions and proposed working papers. This pointer supplies no independent tax figures, filing calendar or computation.
+
+## When to refuse or refer
+
+Do not use the superseded VAT Code or historical figures from this file, infer a rate from an island's name, assume an exemption without checking its conditions, or describe a prepared return as filed. If the owner's Sources identifies an unresolved question, keep it unresolved and refer the particular position for professional review.
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and actual scope read | URL | Read on |
 |---|---|---|
-| VAT Code (ν. 5144/2024), Ministry of Finance administrative codification to ν. 5313/2026, arts. 26, 43, 44α | https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf | 2026-10-23 |
-| AADE circular Ε.2113/31.12.2025 on the 30% island reduction, with the annex of islands | https://www.aade.gr/sites/default/files/2026-01/e2113_2025.pdf | 2026-10-23 |
+| Ministry of Finance VAT Code codification through Law 5313/2026: read arts. 26, 43 and 44a for the old pointer's rate, period and exemption topics; substantive application is handed to the owner | https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf | 2026-11-16 |
+| Repository base owner: read in full for routing and open questions; its separate v2.4 delta changes only A.1049/2025 periodicity, not all unchanged VAT claims | https://github.com/openaccountants/openaccountants/blob/2844c309238b4fdb63be0a3d0ad9ae99a8ea89c8/skills/greece/greece-vat-return.md | 2026-11-16 |
 
-Not yet confirmed: see the list at the end of greece-vat-return.
+| AADE A.1049/2025, read arts. 1-4 for the corrected owner’s start cohorts and election conditions | https://www.aade.gr/sites/default/files/2025-04/a1049_2025fek.pdf | 2026-11-16 |
+
+Not yet confirmed: the unresolved items in the owning greece-vat-return skill, including transaction-specific island, exemption, input-credit and filing exceptions. This pointer does not resolve or silently remove them.
