@@ -17,8 +17,13 @@
   "readable_report": {
     "path": "REPORT.md",
     "bytes": 13901,
-    "sha256": "5837e3e819b424c2541fe183fae16bd78b5be937aa3f7f281de7f28a1aff34ea",
-    "verbatim_final_report_sha256": "78fdd5a2c9c0344a629a3cc00216dbedb6469b7d1856c8b9f5bdbbf234193445"
+    "sha256": "af8b6b12d286e7c5c6075f325897571445221c6c45ace83bcdd31ccd92dfa10a",
+    "canonical_archived_final_report_sha256": "78fdd5a2c9c0344a629a3cc00216dbedb6469b7d1856c8b9f5bdbbf234193445",
+    "display_projection": {
+      "canonical_report_unchanged_in_archive": true,
+      "change": "One retired verb in a negative sentence is replaced by verify; no review finding, source scope, arithmetic or preservation statement changes.",
+      "verbatim_display": false
+    }
   },
   "files": [
     {
@@ -572,7 +577,7 @@
     "reviewed_head": "736e8a95acd3d372cf204f3bfc014bf30f6d2340",
     "authoritative_source_resolution": "public-evidence/independent/independent-source-and-rejected-locator.json",
     "wrong_writer_claim": "public-evidence/writer/source-and-relocation.json native_scope_path and public-evidence/writer/HANDOFF.md source-excerpt claim point to an explicitly rejected crypto-context excerpt. Their bytes are preserved as historical writer records, not accepted legal proof.",
-    "correct_replacement": "The complete independent REPORT and source-and-rejected-locator record provide the actual Code47(1)(ฌ)/(i) source URL, fresh body hash, correct complete scope hash, short native quote and exact neighbour/read scope. Correct raw scope stays local.",
+    "correct_replacement": "The complete independent REPORT and source-and-rejected-locator record provide the actual Code47(1)(\u0e0c)/(i) source URL, fresh body hash, correct complete scope hash, short native quote and exact neighbour/read scope. Correct raw scope stays local.",
     "wrong_excerpt_sha256": "c93da7dcb737321d2485482d351e27e88efb3d414c4b0c0a70caaf84ad3c2dd7",
     "correct_scope_sha256": "907dfe8fcf285be6c2c9bc00e53c03e8270773bb4e1f9b0f2170bc361cdb9a4d",
     "previous_full_country_evidence_index": "https://github.com/openaccountants/openaccountants/pull/2084#issuecomment-6916411949",

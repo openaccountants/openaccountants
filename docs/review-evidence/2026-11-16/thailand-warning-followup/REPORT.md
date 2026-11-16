@@ -59,7 +59,7 @@ All country Sources sections, recorded reading dates, unresolved-source boundari
 
 ## Cases and checks
 
-All **22 complete oa-check blocks**, including every raw input, formula, expected value and block byte, match both the earlier full-review head and the immediate parent. I freshly recomputed all twenty rewritten cases and two inherited top-up cases with a separate pure AST/Decimal evaluator, precision 50 and explicit rounding: **68 expected outputs, zero failures**. The inherited top-up checks are arithmetic only; this review does not attest their legal rules.
+All **22 complete oa-check blocks**, including every raw input, formula, expected value and block byte, match both the earlier full-review head and the immediate parent. I freshly recomputed all twenty rewritten cases and two inherited top-up cases with a separate pure AST/Decimal evaluator, precision 50 and explicit rounding: **68 expected outputs, zero failures**. The inherited top-up checks are arithmetic only; this review does not verify their legal rules.
 
 The historical PIT fixture still computes THB 861,000 taxable income, THB 87,200 tax and THB 7,800 refund. The current optional-PVD comparison preserves actual contribution assumptions, taxable bases, tax saving and cash-cost decisions. The earlier full prose/input/eligibility review remains attached to unchanged surrounding narrative. Arithmetic does not clear a held legal assumption.
 
