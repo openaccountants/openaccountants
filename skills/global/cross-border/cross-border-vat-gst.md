@@ -1,291 +1,377 @@
 ---
 name: cross-border-vat-gst
 description: "VAT, GST, and sales tax compliance for international digital businesses. Use when the user asks about: VAT, GST, sales tax, value added tax, goods and services tax, EU VAT, UK VAT, VAT OSS, One-Stop Shop, VAT registration, reverse charge, Merchant of Record, Paddle, Lemon Squeezy, Stripe Tax, digital services tax, DST, IOSS, Import One-Stop Shop, B2C digital VAT, B2B reverse charge, VIES validation, Australia GST, Singapore GST, Japan JCT, consumption tax, Canada GST/HST, US sales tax, economic nexus, SaaS tax, digital product tax, VAT compliance, VAT threshold, EU B2C sales, cross-border VAT, international VAT, when to register for VAT, VAT penalties, late registration, Mehrwertsteuer, TVA, IVA, 消費税, or any question about indirect tax compliance for businesses selling digital products or services internationally."
-version: 1.0
+version: 1.1
 jurisdiction: INTL
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-15
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: cross-country-method
 ---
 
-# Cross Border VAT GST
-
-## Cross-Border VAT/GST Compliance — International Digital Businesses
+# Cross-border VAT/GST for international digital businesses v1.1
 
 > **Based on work by [Artin (@ar-gen-tin)](https://github.com/ar-gen-tin/panrise)**, licensed under MIT. Adapted for the OpenAccountants format.
 
-> **Disclaimer:** This skill provides general guidance on VAT/GST compliance for digital services. VAT rules are complex, jurisdiction-specific, and change frequently. Consult a qualified indirect tax advisor before registering, filing, or taking positions on VAT/GST obligations. Errors can result in retroactive assessments, penalties, and interest.
+> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction. Errors can cause retrospective assessments, penalties and interest.
 
-## Core Decision: Do You Need to Collect Tax from Customers?
+## Scope
 
-The answer depends on three factors:
+Determine whether an international digital business must investigate customer-country VAT, GST or state sales tax, who accounts for it, and which country procedure to load next. Coverage: 2026 rules checked on 14 and 15 November 2026; the historical dates below distinguish superseded rules. This is an obligation screen and working-paper method, not a worldwide registration or return-filing service. It covers SaaS, downloads, e-books, courses, software, consulting, platform receipts, Merchant of Record (MoR) arrangements, related physical-goods imports, and the original seven DST comparisons. Product exemptions, detailed national returns, provincial sales taxes, income-tax nexus and customs classification need their own country analysis.
 
-1. **WHERE** is the customer located?
-2. **WHAT** are you selling (digital product, SaaS, physical goods, consulting)?
-3. **HOW MUCH** do you sell into that jurisdiction?
+### Quick reference: customer-country tax
 
-## Compliance Strategy by Revenue Level
+There is no worldwide revenue amount below which monitoring alone is safe. Start with customer location, the actual product, business/private use, the contracting seller and each jurisdiction's turnover test. The EU exception below is a place-of-supply rule, not a universal registration threshold. The following rows are screening rules with their conditions, not instructions to charge every digital sale.
 
-**Compliance Strategy by Revenue Level**
+| Market | 2026 screen and rate | Official basis |
+|---|---|---|
+| EU | B2C telecommunications, broadcasting and electronically supplied services normally follow the consumer's location. EUR 10,000 net combined qualifying TBE services and intra-Community distance goods in both the current and preceding calendar year is a narrow exception for a supplier established/resident in only one Member State; it is unavailable to an ordinary non-EU supplier. Standard rates and exceptions below. | VAT Directive arts 58, 59c, [current consolidated text](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1) |
+| UK | A non-established supplier making UK taxable B2C digital supplies has no ordinary registration threshold. UK-established businesses generally test taxable turnover over GBP 90,000 in the last 12 months or expected in the next 30 days alone. Standard VAT 20%; exemptions/rate classification still matter. | [HMRC registration](https://www.gov.uk/register-for-vat), [VAT rates](https://www.gov.uk/vat-rates), [Notice 741A](https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a) |
+| US | Check each state's physical/economic nexus, sourcing, product, exemption and marketplace rules separately. No national USD 100,000/200-transactions safe harbour. South Dakota removed its transaction-count limb from 1 July 2023; its sales-only test is gross sales exceeding USD 100,000 in the current or preceding calendar year. | [South Dakota DOR, 2023 legislative updates](https://dor.sd.gov/businesses/taxes/sales-use-tax/2023-legislative-updates) |
+| Australia | Ordinary business registration threshold AUD 75,000 or more of relevant GST turnover under current/projected tests, with statutory exclusions. Consumer digital services can be connected with Australia; ordinary taxable supplies bear 10% of value. Platform liability and registered business-use recipients require separate tests. | GST Act ss 9-5, 9-25, 9-70, 23-5/15, [volume 1](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html); Div 188, [volume 2](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html); [business.gov.au threshold](https://business.gov.au/registrations/register-for-taxes/register-for-goods-and-services-tax-gst) |
+| Singapore | Overseas vendor registration requires BOTH annual global turnover exceeding SGD 1 million and Singapore B2C remote services plus low-value goods exceeding SGD 100,000, under the retrospective/prospective tests below. Standard GST 9% from 1 January 2024. Domestic registration has a separate SGD 1 million taxable-turnover test. | [IRAS overseas businesses](https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-and-digital-economy/overseas-businesses), [domestic registration](https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-registration-deregistration/do-i-need-to-register-for-gst), [rate-change date](https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-rate-change/gst-rate-change-for-business/preparing-for-gst-rate-change), [OVR guide §§7, 11.4](https://www.iras.gov.sg/docs/default-source/e-tax/gst-e-tax-guide_taxing-imported-remote-services-by-way-of-the-overseas-vendor-registration-regime_%281st-ed%29.pdf?sfvrsn=7a18d6f5_58) |
+| Japan | Foreign B2C electronic services can be subject to consumption tax. The ordinary base-period exemption uses taxable sales of JPY 10 million or less, subject to specified-period, new-business/capital, foreign-business and invoice-registration exceptions. Standard 10%; reduced 8% concerns specified food/drink and qualifying newspapers, not digital services generally. | [NTA No.6635](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6635.htm), [rates](https://www.nta.go.jp/english/taxes/consumption_tax/01.htm), [foreign-service brochure](https://www.nta.go.jp/english/taxes/consumption_tax/0024006-219.pdf) |
+| New Zealand | A foreign supplier of remote services to NZ-resident consumers tests relevant NZ supplies exceeding NZD 60,000 in the past or expected next 12 months. Only supplying GST-registered businesses for their business use is excluded from this remote-service registration requirement. Ordinary GST is 15%. | [IRD remote services](https://www.ird.govt.nz/gst-on-remote-services), [non-resident businesses](https://www.ird.govt.nz/international-tax/business/non-resident-businesses-and-gst) |
+| Canada | Specified non-resident suppliers not carrying on business in Canada and outside normal GST/HST registration test applicable non-zero-rated supplies to specified Canadian recipients exceeding CAD 30,000 over any 12-month period. Qualifying supplies deemed made by a registered platform are excluded from the underlying supplier's test. Simplified registration is conditional; normal registration may instead apply. | [CRA threshold rules](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register/cross-border-threshold-amounts.html), [registration regimes](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/register-gst-hst.html) |
 
-| Revenue Level | Recommendation | Estimated Cost |
-| --- | --- | --- |
-| <€10,000 from any single jurisdiction | Monitor only — below most thresholds | $0 |
-| €10,000–€100,000 with global customers | Use a Merchant of Record (Paddle, Lemon Squeezy) — they handle all tax | 5–10% of revenue |
-| >€100,000 with concentrated markets | Self-register in top 2–3 markets + Stripe Tax for automation | $2,000–5,000/year in accounting |
+## Ask the client first
 
-### Merchant of Record (MoR) Decision Framework
+Obtain these facts from the records before asking for anything missing:
 
-**Merchant of Record (MoR) Decision Framework**
+1. Seller entity, actual business establishment, fixed establishments, staff/stock and countries of tax registration; supply dates and prior-period obligations.
+2. Product and delivery: automated SaaS/download, human-led course, live event, bespoke advice or physical goods; contract, bundle and tax-inclusive/exclusive price.
+3. Customer country and state/province, location evidence, business status and use, and any VAT/GST number and validation evidence.
+4. Turnover by legal supplier, jurisdiction, product, channel and the specific current/prior/projected period, with refunds and statutory exclusions identified.
+5. Platform/MoR contract, checkout seller, invoices, settlement statements and tax reports; who determines the supply terms, charges and delivery.
+6. Registrations/elections, notices/audits, unpaid returns/tax and payment receipts; for goods, importer, origin, destination, value, excise status, transport and customs declaration.
 
-| Revenue | Complexity Tolerance | Recommendation |
-| --- | --- | --- |
-| <$50,000 | Any | MoR (Paddle / Lemon Squeezy) |
-| $50,000–$200,000 | Low | MoR |
-| $50,000–$200,000 | High | Self-register top markets + Stripe Tax |
-| >$200,000 | Any | Self-register + accountant + Stripe Tax |
+## The method, step by step
 
-**MoR services (Paddle, Lemon Squeezy, FastSpring)** act as the legal seller:
-- They collect VAT/GST from customers
-- They file and remit VAT to each country
-- You receive net payment
-- Cost: 5–10% of revenue (includes payment processing)
+### 1. Identify the supply and the person making it
 
-## EU VAT (Value Added Tax)
+Separate selling a digital service from receiving advertising income, platform fees or royalties. Do not label every internet-delivered service electronic: the EU test requires essentially automated delivery with minimal human intervention; teacher-led delivery is excluded from that electronic-service definition. Human-led virtual activities can have their own customer-location rule. [Implementing Regulation 282/2011 art 7 and Annex I](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1); [Directive arts 44, 45, 54, 58](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-### When It Applies
+MoR is a commercial description, not a universal tax exemption. Establish whether the intermediary actually resells as principal or is deemed supplier by the applicable law. In the EU electronic-service chain, art 9a presumes an intermediary acts in its own name, subject to the express identification and contractual/documentary rebuttal conditions; authorising the charge/delivery or setting general terms prevents that rebuttal. A business processing only payments without participating in the supply is excluded. Keep the customer sale and any separate supply to the intermediary distinct. [Implementing Regulation art 9a](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
 
-- **EU VAT applicability** — Selling digital products/services (SaaS, ebooks, courses, software) to EU consumers (B2C); applies regardless of where YOUR company is registered
-- **EU B2C VAT registration threshold** — €10,000/year EUR/year (total EU B2C sales → must register)
+Paddle, Lemon Squeezy, FastSpring, Gumroad, Stripe Tax, TaxJar and Avalara remain examples from the original Guide, not verified recommendations or evidence of a particular contract's tax coverage. Compare the actual agreement, covered countries/products, excluded obligations, price, refunds and reporting. Current fee and “handles everything” claims remain individually reserved under Sources. Original vendor information links, not tax-law evidence: [Stripe Tax](https://stripe.com/tax), [Paddle](https://www.paddle.com), [Lemon Squeezy](https://www.lemonsqueezy.com).
 
-### EU VAT Rates (Digital Services)
+### 2. Apply the EU place, liability and optional-scheme tests
 
-**EU VAT Rates (Digital Services)**
+For ordinary B2B services, the place is the business customer's receiving establishment; a qualifying non-established supplier's art 44 service is normally accounted for by that customer under art 196. A valid VIES result is evidence, not an automatic zero rate or proof that every supply qualifies. Check actual status/use, relevant fixed establishments and special rules first. Art 18 also permits other evidence where an EU number has been applied for and reasonable verification is performed; wholly private use is B2C. Invoice “Reverse charge” where legally applicable, rather than calling this a zero-rated supply. [Directive arts 43, 44, 192a, 196, 226(11a)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Regulation arts 17–22](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1); [VIES](https://ec.europa.eu/taxation_customs/vies/).
 
-| Country | Standard Rate |
-| --- | --- |
-| Germany | 19% |
-| France | 20% |
-| Netherlands | 21% |
-| Spain | 21% |
-| Italy | 22% |
-| Ireland | 23% |
-| Sweden | 25% |
+B2C automated SaaS, downloads, software, streaming and qualifying electronic courses follow art 58, whatever the supplier's incorporation country. Ordinary human consulting instead starts with art 45, with special rules checked before either general rule. E-books and education can have reduced rates or exemptions depending on the actual supply and national law. [Directive arts 45, 47–59a](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Regulation art 7](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
 
-### VAT OSS (One-Stop Shop)
+For art 59c, aggregate the supplier's qualifying cross-border TBE services and qualifying intra-Community distance goods across countries and channels, net of VAT, in both relevant calendar years. The goods must depart from the supplier's sole Member State. At equality the exception can still apply; the full supply that takes the total above the limit follows destination rules from that time, not merely the excess and not retrospectively for the whole year. A destination election binds for at least two calendar years. [Directive art 59c](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-- **VAT OSS mechanics** — Register in ONE EU country → report all EU B2C sales through one portal; no need to register in each country separately; available to non-EU businesses via "Non-Union OSS" scheme; file quarterly returns
+OSS is optional. The Union scheme can cover qualifying intra-Community distance goods; its services limb requires an EU-established supplier supplying consumers in Member States where it is not established; non-Union OSS covers qualifying consumer services of suppliers with no EU business/fixed establishment. Apply the chosen scheme to all its covered supplies; local registration remains an alternative. OSS does not replace every domestic return or create a tax liability where an exemption applies. Check national/qualifying cross-border SME exemptions separately. [Directive arts 284 onwards, 358a–369k](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Commission OSS overview](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en).
 
-### B2B Sales to EU
+#### EU standard rates retained from the original
 
-- **B2B reverse charge and VIES validation** — If the EU customer provides a valid VAT number → reverse charge (0% VAT; customer self-assesses). Always validate EU VAT numbers via VIES system before zero-rating.  _(https://ec.europa.eu/taxation_customs/vies/)_
+These are standard rates for a taxable supply classified at that rate, not a statement that every e-book, course or digital product bears the standard rate.
 
-## UK VAT
+| Country | Standard rate, 2026 | Official source |
+|---|---|---|
+| Germany | 19% | [EU official national-rate table](https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm) |
+| France | 20% | [EU official national-rate table](https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm) |
+| Netherlands | 21% | [EU official national-rate table](https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm) |
+| Spain | 21% | [EU official national-rate table](https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm) |
+| Italy | 22% | [EU official national-rate table](https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm) |
+| Ireland | 23% | [EU official national-rate table](https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm) |
+| Sweden | 25% | [EU official national-rate table](https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm) |
 
-### When It Applies
+### 3. Apply the UK rule independently
 
-- **UK VAT applicability and threshold** — Selling digital services to UK consumers (B2C). No threshold for non-UK businesses — must register from first sale. UK businesses: £90,000 threshold.
+The UK is a separate jurisdiction from EU OSS. Determine the customer's location and whether the service is electronic or a different service under Notice 741A; check whether a platform is the supplier. The non-established taxable person's first UK taxable supply can require registration even when revenue is very small. Supplies wholly exempt or outside scope are different, and HMRC permits a conditional registration exemption for a NETP whose taxable supplies are all zero-rated. The domestic threshold is not available simply because a foreign seller has obtained a UK number. [HMRC registration](https://www.gov.uk/register-for-vat); [Notice 741A, services and digital supplies](https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a).
 
-### UK VAT Rate
+### 4. Screen US states individually
 
-- **UK VAT standard rate** — 20% % (standard rate)
+US sales/use tax operates at state/local level. Physical connections can create obligations independently of economic turnover; South Dakota identifies offices, property, sales staff and company vehicles as examples. Establish nexus before deciding whether the particular product and location are taxable; marketplace collection and exemption certificates are separate questions. A purchaser may owe use tax even where the seller does not collect. [South Dakota DOR](https://dor.sd.gov/businesses/taxes/sales-use-tax/2023-legislative-updates); [California purchaser use tax](https://cdtfa.ca.gov/taxes-and-fees/use-tax/business-use.htm).
 
-## US Sales Tax
+| Original state comparison | Correct product-specific screen | Official source |
+|---|---|---|
+| Texas | Data processing involving the customer's data is taxable; merely using a computer to perform a professional service is different. Determine the actual service and exemptions before treating a SaaS receipt as taxable. | [Texas Comptroller, Data Processing Services](https://comptroller.texas.gov/taxes/publications/94-127.php) |
+| New York | Prewritten software, including a licence to access it remotely, can be taxable; custom software and reasonable separately stated qualifying services have different rules. User location affects sourcing. | [NY DTF, TB-ST-128](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/computer_software.htm) |
+| Pennsylvania | Canned software can be taxable when remotely accessed or licensed as SaaS. Custom software is different; associated services and out-of-state users need the authority's detailed analysis. | [PA Revenue, canned software/digital goods](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/canned-computer-software-digital-goods) |
+| California | Electronically transmitted software/data with no tangible copy is generally not taxable under the cited guidance; tangible backup/printed delivery can change the result. This is not a universal exemption for every business calling itself SaaS. | [CDTFA publication 109](https://cdtfa.ca.gov/formspubs/pub109/nontaxable-sales.htm) |
+| Georgia | Rule 560-12-2-.118 expressly excludes SaaS from sales/use tax under its digital-products rule; other digital rights, tangible products and separate supplies still need classification. | [Georgia rules, .118(2)–(5)](https://rules.sos.ga.gov/gac/560-12-2) |
+| Missouri | The sale of SaaS is not subject to tax under the cited rule; property the provider uses can still bear sales/use tax. | [12 CSR 10-109.050(3)(I)](https://www.sos.mo.gov/cmsimages/adrules/csr/current/12csr/12c10-109.pdf) |
 
-### When It Applies
+Washington's old blanket “taxable” label and the original national state counts are retained as unresolved, not inferred from search results. Software/payment automation does not establish nexus, file a return or remove an existing registration.
 
-- **US sales tax nexus rules** — Selling to US customers (digital or physical). "Nexus" required: physical presence OR economic nexus. Economic nexus: most states trigger at $100,000 in sales OR 200 transactions/year.
+### 5. Australia: relevant turnover, consumer status and reporting route
 
-### Key Facts
+Use GST turnover under Div 188, not simply gross worldwide revenue or only taxable Australian sales: current and projected calculations have exclusions, including input-taxed, non-business and unconnected supplies, with additional non-resident exclusions. Apply the statutory current/projected test and cessation/capital-asset rules rather than a single calendar-year total. For offshore services, distinguish an Australian consumer from a GST-registered recipient acquiring for business use and determine any electronic-distribution-platform liability. [GST Act ss 9-25/26, 84-55 onwards](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html); [Div 188](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html).
 
-US has NO federal sales tax — it is state-by-state (45 states + DC)
-Digital products/SaaS taxability varies by state:
-- **Taxable in:** TX, NY, PA, WA, and ~20 others
-- **Not taxable in:** CA (SaaS), GA, MO, and others
-If you have no US nexus: you may not need to collect (rules evolving)
+A non-resident can use simplified or standard GST registration where eligible. The simplified route has quarterly reporting; it is not universally a normal BAS. Standard reporting frequency can differ. Registered-business purchases are not automatically reverse charged. For ordinary intangible supplies under s 84-5 table items 1/2, check consideration, registration, connection and the s 84-5(1A) enterprise/non-solely-creditable-purpose test, except to the extent GST-free or input taxed. Supplier-belief routes under items 3/5 have their distinct statutory conditions; do not import the purpose test into every route. [ATO imported services](https://softwaredevelopers.ato.gov.au/GSTintangibles); [GST Act ss 84-5–13](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html).
 
-### Solutions
+### 6. Singapore: do not drop either OVR threshold
 
-**Solutions**
+Remote services have included digital and non-digital services capable of being received remotely since 1 January 2023; “B2C” includes businesses not GST-registered. OVR combines Singapore remote services and qualifying low-value goods. Global turnover means supplies that would be taxable if made in Singapore; relevant deemed platform supplies also count. Retrospective testing uses the calendar year, with the documented next-year exception in §7.1.4; prospective testing uses reasonable expectations for the next twelve months. Domestic suppliers instead test their taxable turnover by calendar-year/prospective periods, with the documented exemption/exception provisions, and may apply for voluntary registration subject to conditions. [IRAS domestic registration](https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-registration-deregistration/do-i-need-to-register-for-gst). [IRAS overseas businesses](https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-and-digital-economy/overseas-businesses); [OVR guide §§7.1–7.3](https://www.iras.gov.sg/docs/default-source/e-tax/gst-e-tax-guide_taxing-imported-remote-services-by-way-of-the-overseas-vendor-registration-regime_%281st-ed%29.pdf?sfvrsn=7a18d6f5_58).
 
-| Tool | Cost | Detail |
-| --- | --- | --- |
-| Stripe Tax | $0.50/transaction | Automatic calculation and collection |
-| TaxJar / Avalara | Varies | Full compliance automation |
-| Paddle / Lemon Squeezy | 5–10% of revenue | MoR handles everything |
+The simplified OVR route is pay-only, with no input-tax claims. Keep customer GST-status and location evidence; do not assume every overseas service or exempt supply is taxable. [IRAS overseas businesses](https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-and-digital-economy/overseas-businesses), [OVR guide §§7.3, 8–9 and Annex A](https://www.iras.gov.sg/docs/default-source/e-tax/gst-e-tax-guide_taxing-imported-remote-services-by-way-of-the-overseas-vendor-registration-regime_%281st-ed%29.pdf?sfvrsn=7a18d6f5_58).
 
-## Australia GST
+### 7. Japan: determine the exemption and the supplier
 
-**Australia GST**
+Japan has an ordinary small-business exemption; the original “regardless of revenue” statement was wrong. Determine the base period, specified period and applicable foreign/new-business exceptions before deciding liability. Qualified invoice issuer registration can remove exemption; do not infer registration from a foreign customer's business label. Foreign business-use electronic services have a specific nature/contract classification and reverse-charge rules. From 1 April 2025, designated platform operators are deemed suppliers for qualifying foreign B2C electronic services whose consideration is received through them. [NTA No.6635](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6635.htm), [No.6118](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6118.htm), [No.6498](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6498.htm), [platform taxation](https://www.nta.go.jp/english/taxes/consumption_tax/05.htm).
 
-| Factor | Detail |
-| --- | --- |
-| Trigger | Selling digital services to Australian consumers (B2C) |
-| Threshold | AUD 75,000/year in Australian sales |
-| Rate | **10%** on digital supplies |
-| Filing | Quarterly BAS (Business Activity Statement) |
-| Non-resident suppliers | Must register for GST if above threshold |
+### 8. New Zealand and Canada: recipient and platform exclusions
+
+NZ remote-service suppliers need two non-conflicting pieces of residence evidence. Treat a NZ customer as not registered unless it states GST registration or provides its GST number/NZ business number. A qualifying marketplace can account instead of the underlying supplier. Remote-only/qualifying low-value/listed-service reporting is quarterly; other supplies can change that frequency. [IRD remote services](https://www.ird.govt.nz/gst-on-remote-services).
+
+Canadian simplified GST/HST differs from normal registration and does not allow input tax credits. The ordinary provincial rate follows the place-of-supply and recipient-location rules; do not add a separate “provincial HST” to the combined HST rate. Provincial PST/QST obligations are outside this GST/HST screen and can require a separate review. [CRA simplified return](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/file-return.html); [CRA charge/collect](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/charge-collect/cross-border.html).
+
+| Taxable specified Canadian digital supply | Rate applicable in 2026 | Official source |
+|---|---|---|
+| Alberta, British Columbia, Manitoba, Northwest Territories, Nunavut, Quebec, Saskatchewan, Yukon | 5% GST; separate provincial taxes are outside this row | [CRA current rate list](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/charge-collect/cross-border.html) |
+| Ontario | 13% combined HST | [CRA current rate list](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/charge-collect/cross-border.html) |
+| Nova Scotia | 14% combined HST from 1 April 2025, subject to transition rules | [CRA current rate/decrease notice](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html) |
+| New Brunswick, Newfoundland and Labrador, Prince Edward Island | 15% combined HST | [CRA current rate list](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/charge-collect/cross-border.html) |
+
+The CRA digital-economy page still contains an older Nova Scotia example using the pre-decrease rate. Use its current rate list and the dated decrease notice, not that historical illustration.
+
+### 9. Screen DST and successor taxes separately
+
+These taxes are separate from VAT/GST. Identify the defined activity, group aggregation, local attribution and taxable revenue/profit proxy before computing anything. Selling one's own SaaS does not by itself establish liability for every DST. The original assertion that high thresholds make DST irrelevant to all small businesses ignores group membership and different national bases.
+
+| Original country row | Current screen, 2026 | Official source |
+|---|---|---|
+| UK | Normal DST 2% on UK digital-services revenues above the GBP 25 million annual allowance, when group in-scope worldwide revenues exceed GBP 500 million and UK revenues exceed GBP 25 million. Covers defined social-media, search and online-marketplace activities; alternative-basis and qualifying cross-border relief can alter liability. | [HMRC registration scope](https://www.gov.uk/guidance/check-if-you-need-to-register-for-digital-services-tax), [DST01200](https://www.gov.uk/hmrc-internal-manuals/digital-services-tax/dst01200) |
+| France | 3% on the nationally weighted taxable consideration for defined digital intermediation/targeted advertising. Prior-calendar-year group/business taxable-service receipts must exceed BOTH EUR 750 million worldwide and EUR 25 million nationally. | CIBS arts L453-45–74, particularly 46, 47, 52, 64–66, 70, [current code](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000044595989/LEGISCTA000048626177) |
+| Italy | 3% of taxable digital-service revenue; previous-calendar-year worldwide total revenue at least EUR 750 million, individually or as a group, plus Italian in-scope receipts. The old EUR 5.5 million Italian threshold was removed from 2025. Use Law 145/2018 as amended for 2026; Decree 174/2024 was deferred to 2027. | Law 145/2018 art 1(35)–(50), [current law](https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=18G00172&atto.dataPubblicazioneGazzetta=2018-12-31&bloccoAggiornamentoBreadCrumb=true&classica=true&dataVigenza=&generaTabId=true&qId=&tabID=0.9037336842842527&tipoDettaglio=vigente&title=lbl.dettaglioAtto); Law 207/2024 art 1(21)–(22), [threshold amendment](https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticoloDefault/originario?atto.codiceRedazionale=24G00229&atto.dataPubblicazioneGazzetta=2024-12-31&atto.tipoProvvedimento=LEGGE); DL 200/2025 art 4(2), [2027 deferral](https://www.normattiva.it/atto/caricaDettaglioAtto?atto.articolo.numero=4&atto.codiceRedazionale=25G00213&atto.dataPubblicazioneGazzetta=2025-12-31) |
+| Spain | 3%; previous-year net turnover exceeding EUR 750 million AND taxable digital-service revenues attributable to Spain exceeding EUR 3 million, with group/annualisation rules. Defined online advertising, intermediation and data transmission, with art 6 exclusions. | Law 4/2020 arts 4–11, [consolidated BOE](https://www.boe.es/buscar/act.php?id=BOE-A-2020-12355) |
+| Turkey | 5% for 2026, replacing the original 7.5% row. Exemption applies unless BOTH Turkish in-scope receipts exceed TRY 20 million and worldwide in-scope receipts exceed EUR 750 million. The published schedule states 2.5% from 2027; that is not the 2026 rate. | GIB [current rate/threshold table](https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FDijital_hizmet_vergisi.pdf), [Decision 10767 explanatory note](https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2025%2FCK10767_abn.pdf) |
+| India | No current Equalisation Levy charge: the 2% e-commerce levy covers qualifying supplies/services made, provided or facilitated before 1 August 2024, rather than being cut off by the consideration's receipt date; remaining levy provisions stopped from 1 April 2025. Historical INR 2 crore relevant-consideration exclusion was not a worldwide-revenue threshold. Do not register/file a new 2026 2% levy merely because of Indian sales; historical liabilities remain a separate review. | [Income Tax Department, Equalisation Levy](https://www.incometaxindia.gov.in/equalisation-levy3) |
+| Kenya | DST was replaced from 27 December 2024 by significant economic presence tax (SEPT). Current statutory screen: qualifying non-resident internet/network service income with a user in Kenya; deemed profit 10% of gross turnover, taxed at 30% of that profit (3% arithmetically). Excludes services through a PE, income chargeable under ss 9(2)/10, and the specified government-owned-airline case. Do not use the old 1.5% DST/KES-zero shorthand as a 2026 filing rule. | Income Tax Act s 12E and Third Schedule Head B para 12, [KRA 2026 Act](https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf); [Finance Act 2026 §§1–23](https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf); [KRA dated transition](https://www.kra.go.ke/images/publications/iTax-Enhancements-and-Resolution-of-Defects-for-January-2025-Volume-2.pdf) |
+
+For Kenya this is the statutory screen only. Current implementing regulations and live registration/return fields remain a required country handoff. The original India/Kenya revenue-based enforcement recommendations and historical quarterly-filing claim are reserved under Sources; no amount of small revenue authorises ignoring a liability.
 
-## Singapore GST
-
-**Singapore GST**
-
-| Factor | Detail |
-| --- | --- |
-| Trigger | Taxable turnover >SGD 1,000,000/year (mandatory); voluntary registration available |
-| Non-resident digital services | Must register if >SGD 100,000 in SG consumer sales |
-| Rate | **9%** (increased from 8% in 2024) |
-| Filing | Quarterly |
-
-## Japan Consumption Tax (JCT — 消費税)
-
-**Japan Consumption Tax (JCT — 消費税)**
-
-| Factor | Detail |
-| --- | --- |
-| Trigger | Foreign businesses selling digital services to Japanese consumers |
-| Threshold | Must register regardless of revenue threshold |
-| Rate | **10%** (8% reduced rate for some items) |
-
-## New Zealand GST
-
-**New Zealand GST**
-
-| Factor | Detail |
-| --- | --- |
-| Trigger | Non-resident suppliers of digital services to NZ consumers |
-| Threshold | NZD 60,000/year in NZ sales |
-| Rate | **15%** |
-
-## Canada GST/HST
-
-**Canada GST/HST**
-
-| Factor | Detail |
-| --- | --- |
-| Trigger | Non-resident suppliers selling digital services to Canadian consumers |
-| Threshold | CAD 30,000/year in Canadian sales |
-| Rate | 5% GST (federal) + 0–10% provincial (HST combined up to 15%) |
-| Registration | Simplified registration available for non-residents |
-
-## Filing Deadlines Summary
-
-**Filing Deadlines Summary**
-
-| Jurisdiction | Filing Frequency | Typical Deadline |
-| --- | --- | --- |
-| EU VAT OSS | Quarterly | End of month after quarter |
-| UK VAT | Quarterly | 1 month + 7 days after period |
-| Australia GST | Quarterly | 28 days after quarter |
-| Singapore GST | Quarterly | 1 month after quarter |
-| Japan JCT | Annually or semi-annually | 2 months after fiscal year end |
-| Canada GST/HST | Annually or quarterly | Varies by reporting period |
-| US Sales Tax | Varies by state | Monthly / quarterly / annually |
-
-## Digital Services Tax (DST) — NOT the Same as VAT
-
-- **DST definition** — DST is a revenue-based tax on digital services. Unlike VAT (transaction-level, charged to customers) and corporate tax (profit-based), DST is calculated on gross revenue and comes out of your own revenue.
-
-### DST Rates and Thresholds
-
-**DST Rates and Thresholds**
-
-| Country | DST Rate | Global Revenue Threshold | Local Revenue Threshold |
-| --- | --- | --- | --- |
-| UK | 2% | £500M global | £25M UK |
-| France | 3% | €750M global | €25M France |
-| Italy | 3% | €750M global | €5.5M Italy |
-| Spain | 3% | €750M global | €3M Spain |
-| Turkey | 7.5% | €750M global | TRY 20M Turkey |
-| India (Equalization Levy) | 2% | **No threshold** | ₹2 crore (~$240K) |
-| Kenya | 1.5% | **No threshold** | KES 0 (all digital services) |
-
-**For most small businesses:** The high global revenue thresholds in Europe (£500M, €750M) make DST irrelevant.
-
-**Exceptions — India and Kenya have NO global revenue threshold:**
-- **India Equalization Levy:** 2% on gross consideration for non-resident e-commerce operators selling digital services to Indian customers. Must register and file quarterly.
-- **Kenya Digital Service Tax:** 1.5% on gross transaction value. No minimum threshold.
-
-**Your India/Kenya Revenue action table**
-
-| Your India/Kenya Revenue | Action |
-| --- | --- |
-| <$10,000/year | Monitor; enforcement limited at this scale |
-| $10,000–$50,000/year | Consult tax advisor; weigh registration cost vs exposure |
-| >$50,000/year | Register and comply; enforcement risk is real |
-
-## Penalties and Remediation
-
-### Late Registration Penalties
-
-- **EU late registration penalty structure** — Most EU countries impose penalties for selling above the €10,000 threshold without registration: - **Minimum penalty:** ~€500 (small/first-time violation) - **Maximum penalty:** ~5% of unpaid VAT (sustained non-compliance) - Interest accrues from the date VAT was originally due
-
-### Voluntary Disclosure Programs
-
-**Voluntary Disclosure Programs**
-
-| Jurisdiction | Program | Penalty Reduction |
-| --- | --- | --- |
-| EU (most countries) | Voluntary correction | 50–75% reduction |
-| UK | Unprompted disclosure to HMRC | Best terms (~30% of maximum) |
-| Australia | Voluntary disclosure | Significant reduction; no penalty if minor |
-| US | Voluntary Disclosure Programs (VDP) | Varies by state; generally 50%+ reduction |
-
-**"Unprompted" means you contact the authority before they contact you.** Once an audit begins, voluntary disclosure terms are lost.
-
-### Remediation Steps
-
-1. Stop selling into the affected jurisdiction until registered (or switch to MoR immediately)
-2. Calculate total VAT owed retroactively from the date the threshold was crossed
-3. File voluntary disclosure with the relevant tax authority
-4. Pay outstanding VAT + reduced penalty + accrued interest
-5. Register going forward through standard process
-
-### When to Get Professional Help
-
-- **Professional help exposure threshold** — €5,000 EUR (If total exposure exceeds this or involves multiple countries, hire a VAT specialist. Typical remediation cost: €500–2,000 per engagement.)
-
-## Physical Goods — Key Differences from Digital Services
-
-**Physical Goods — Key Differences from Digital Services**
-
-| Dimension | Digital Services | Physical Goods |
-| --- | --- | --- |
-| Delivery | Instant, borderless | Shipping, customs clearance |
-| VAT trigger | Customer location | Import entry |
-| Additional taxes | DST (rare) | Customs duty, tariffs |
-| Complexity | Medium | High |
-
-### EU Physical Goods (Post-2021)
-
-- **EU physical goods import VAT rules** — No de minimis exemption — ALL imports subject to VAT (was €22 before 2021). Customs duty threshold: €150 still applies. IOSS (Import One-Stop Shop): Lets non-EU sellers collect and remit VAT at point of sale for goods <€150. Without IOSS, carrier or customs collects VAT from buyer on delivery (poor customer experience).
-
-### US De Minimis (Section 321)
-
-- **US de minimis customs duty exemption** — $800 USD USD/day/importer (Shipments ≤$800 USD per day per importer: exempt from customs duty. Above $800: customs duty + potential tariffs apply. Threshold under legislative review — verify before building logistics around it.)
-
-## Platform Income — VAT Threshold Aggregation
-
-- **Aggregation of platform income for VAT threshold purposes** — If earning across multiple platforms (YouTube, Patreon, Substack, Gumroad), aggregate total EU digital services revenue for VAT threshold purposes: - EU VAT OSS threshold: €10,000/year across ALL EU B2C digital sales (not per platform) - Gumroad and Paddle handle VAT for their platform sales (they are MoR) - Stripe, Patreon, and AdSense do NOT handle VAT — the seller is responsible
-
-## Official Sources & Further Reading
-
-- **EU VAT OSS:** https://vat-one-stop-shop.ec.europa.eu
-- **EU VIES VAT Number Validation:** https://ec.europa.eu/taxation_customs/vies/
-- **UK HMRC — VAT for digital services:** https://www.gov.uk/guidance/vat-on-digital-services
-- **Australia ATO — GST on digital supplies:** https://www.ato.gov.au/Business/International-tax-for-business/GST-on-imported-services-and-digital-products/
-- **Singapore IRAS — GST for digital services:** https://www.iras.gov.sg
-- **Japan NTA — JCT:** https://www.nta.go.jp
-- **Canada CRA — GST/HST for non-residents:** https://www.canada.ca/en/revenue-agency.html
-- **Stripe Tax:** https://stripe.com/tax
-- **Paddle:** https://www.paddle.com
-- **Lemon Squeezy:** https://www.lemonsqueezy.com
-
-## closing-notes
-
-*Data reflects 2024–2026 rules. VAT/GST thresholds, rates, and registration requirements change frequently. Verify all figures with official sources and a qualified indirect tax advisor.*
-*Original content: [Artin (@ar-gen-tin)](https://github.com/ar-gen-tin/panrise) — MIT License.*
-*OpenAccountants — open-source accounting skills for AI — info@openaaccountants.com*
+### 10. Physical goods: separate sale VAT, import VAT and customs duty
+
+Digital delivery can be immediate; goods involve shipping/customs. Complexity is fact-dependent, not automatically “medium” for services and “high” for goods. A goods sale's VAT place can depend on location, dispatch, distance-sale or installation rules; import VAT is a distinct event. Digital services can also interact with income taxes, and physical-goods marketplaces can enter DST scope, so “DST only digital/customs only physical” is not a complete tax analysis. [Directive arts 30–61](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [HMRC DST marketplace scope](https://www.gov.uk/guidance/check-if-you-need-to-register-for-digital-services-tax).
+
+The EU abolished the former EUR 22 low-value import VAT relief from 1 July 2021; specific import exemptions still exist. IOSS is optional for eligible distance sales of imported goods in consignments of intrinsic value not exceeding EUR 150, excluding excise products. A non-EU seller normally needs an intermediary unless the mutual-assistance exception applies. With a valid IOSS identification number communicated for import, the import is exempt from import VAT; sale VAT is accounted for through IOSS. Without IOSS, standard import rules or qualifying special collection arrangements apply, according to the liable importer and declaration, not invariably a carrier collecting from the buyer. [Directive arts 143(1)(ca), 201, 369l–369x](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Commission OSS explanation](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en); [Commission EUR 22 abolition and 1 July 2021 date](https://vat-one-stop-shop.ec.europa.eu/index_en).
+
+| Customs issue | Dated current rule | Official source |
+|---|---|---|
+| EU former EUR 150 duty relief | Removed from 1 July 2026. A temporary EUR 3 per item charge applies to qualifying consignments of intrinsic value not exceeding EUR 150 from 1 July 2026 to 1 July 2028, under the IOSS/import-exemption limb or the amended postal-consignment limb; the latter excludes specified preferential measures. “Postal” has the amended distance-goods meaning, not just a traditional post-office carrier. | Regulations 2026/382 arts 1–3 and 2026/1022 art 1, [original duty act](https://publications.europa.eu/resource/cellar/2ae65d0b-0c6b-11f1-8870-01aa75ed71a1.0006.03/DOC_1), [amending act](https://publications.europa.eu/resource/cellar/3b9f822b-74e8-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1) |
+| EU item/base | An item is one or more goods sharing tariff classification, description and origin where provided, within the applicable declaration dataset; not universally one parcel or physical piece. Duty recovered from the buyer forms part of the sale consideration under IOSS; standard import VAT bases include customs duty. | [Regulation 2026/1022](https://publications.europa.eu/resource/cellar/3b9f822b-74e8-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1), [Commission 6 October 2026 VAT guidance, pp 1–4](https://vat-one-stop-shop.ec.europa.eu/document/download/3086db0e-7b4a-4202-9f38-d32bd774f5a8_en?filename=VAT+treatment+of+the+EUR+3+customs+duty+and+of+the+EUR+2+Customs+Union+handling+fee+%E2%80%93+Revised+version+06+October+2026.pdf) |
+| US former Section 321 relief | The former USD 800 per-person/day rule is unavailable for ordinary 2026 commercial imports. Following the 2025 executive suspension, CBP independently suspended this exemption indefinitely for postal and non-postal merchandise from 24 June 2026. Separate statutory gift/traveller relief is unaffected. Determine actual entry treatment and duties for the goods; the historical 50 USC 1702(b) executive-order carve-out must not be assumed to exempt goods from these regulations. | 19 CFR 10.151(b), [non-postal IFR](https://www.govinfo.gov/content/pkg/FR-2026-06-24/html/2026-12670.htm); 19 CFR 145.31(b), [postal IFR](https://www.govinfo.gov/content/pkg/FR-2026-06-24/html/2026-12669.htm) |
+
+### 11. Aggregate the actual supplier's platform receipts
+
+Reconcile YouTube, Patreon, Substack, Gumroad, Paddle, Stripe and AdSense receipts to contracts and invoices. Aggregate qualifying supplies of the same supplier under the relevant jurisdiction's rule, not all platform payouts indiscriminately. EU art 59c uses qualifying TBE/distance-goods turnover across channels, not all income or a separate allowance per platform. For legally deemed/reselling platforms, analyse the separate supplier-to-platform supply; the consumer sale may be the platform's. A payment processor's involvement alone is insufficient. [Directive arts 28, 58, 59c](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Regulation art 9a](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1). The original blanket brand-by-brand responsibility claims are reserved under Sources.
+
+## Boundary and exception table
+
+| Fact that changes the answer | Required treatment | Official basis |
+|---|---|---|
+| Low revenue but foreign supplier | Test the actual local rule; neither the old revenue-strategy bands nor the EU threshold gives worldwide relief. | [UK first taxable supply](https://www.gov.uk/register-for-vat), [EU art 59c](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1) |
+| Business number supplied | Establish recipient status, use, service type and relevant establishment; keep validation and supporting evidence. | [EU Regulation arts 17–22](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1), [IRAS OVR recipient rules](https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-and-digital-economy/overseas-businesses) |
+| Live teaching/advice bundled with videos | Identify the actual supply/components; do not apply automated-service treatment just because delivery is online. | [EU Regulation art 7/Annex I](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1) |
+| MoR adopted after unregistered sales | Separate prospective contracting changes from existing obligations; a new platform arrangement does not determine the historical seller or erase earlier VAT. | [EU Directive arts 28, 63, 193, 213](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1), [HMRC late registration](https://www.gov.uk/register-for-vat) |
+| Simplified foreign registration | Do not assume input tax credits, a domestic form or every local supply is covered. | [IRAS OVR](https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-and-digital-economy/overseas-businesses), [CRA simplified return](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/file-return.html), [ATO route distinction](https://softwaredevelopers.ato.gov.au/GSTintangibles) |
+
+## Worked cases
+
+### Case 1: the EU crossing supply, not just the excess
+
+Assume a German sole-establishment supplier of fully automated, standard-rated software, no destination election or exemption, only qualifying cross-border TBE supplies, prior-calendar-year total EUR 9,000. Current-year sales of EUR 9,400 direct plus EUR 400 through an agent that does not become the supplier total EUR 9,800. The next French consumer sale is EUR 400 net. It takes the total to EUR 10,200, so the whole crossing sale follows France: EUR 80 VAT and EUR 480 gross. Taxing only the EUR 200 excess would wrongly yield EUR 40. If instead this sale kept the qualifying total within the threshold, origin taxation would give EUR 76 at Germany's standard rate, absent an election. Optional OSS versus local registration changes the reporting route, not France's tax due on the crossing sale. [Directive arts 58, 59c](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [official rates](https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm).
+
+```oa-check
+name: EU qualifying threshold and full crossing supply
+inputs:
+  direct_sales: 9400
+  agent_sales: 400
+  next_sale: 400
+  threshold: 10000
+  france_rate: 0.20
+  germany_rate: 0.19
+steps:
+  before: direct_sales + agent_sales
+  after: before + next_sale
+  excess: max(0, after - threshold)
+  destination_vat: next_sale * france_rate
+  destination_gross: next_sale + destination_vat
+  erroneous_excess_only_vat: excess * france_rate
+  origin_counterfactual_vat: next_sale * germany_rate
+expected:
+  before: 9800
+  after: 10200
+  destination_vat: 80
+  destination_gross: 480
+  erroneous_excess_only_vat: 40
+  origin_counterfactual_vat: 76
+```
+
+### Case 2: Canadian province and inclusive-price reconciliation
+
+Assume a registered simplified supplier makes a taxable digital sale to a specified Nova Scotia consumer in 2026, with reliable usual-residence evidence, no exemption, and no transition issue. On CAD 1,000 net, combined HST is CAD 140 and gross CAD 1,140. If CAD 1,000 is instead the agreed tax-inclusive total, HST is CAD 122.81 and net CAD 877.19. The same net sale to Ontario bears CAD 130 HST, not Nova Scotia's amount. The supplier must establish the province before choosing the rate. [CRA current rates/place rules](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/charge-collect/cross-border.html); [dated Nova Scotia decrease](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html).
+
+```oa-check
+name: Canada Nova Scotia 2026 versus Ontario and inclusive pricing
+inputs:
+  price: 1000
+  nova_scotia: 0.14
+  ontario: 0.13
+steps:
+  ns_hst: price * nova_scotia
+  ns_gross: price + ns_hst
+  inclusive_hst: round(price * nova_scotia / (1 + nova_scotia), 2)
+  inclusive_net: price - inclusive_hst
+  ontario_hst: price * ontario
+expected:
+  ns_hst: 140
+  ns_gross: 1140
+  inclusive_hst: 122.81
+  inclusive_net: 877.19
+  ontario_hst: 130
+```
+
+## When to refuse or refer
+
+Do not produce a filing-ready amount where the legal seller, product, customer location/status, turnover period or historical effective date is unresolved. Refer multi-country arrears, disputed classifications, platform contracts, tax-inclusive historic pricing and customs origin/classification to an appropriate specialist. There is no verified EUR 5,000 referral threshold or universal engagement fee in this Guide.
+
+Do not use a valid VAT number as automatic zero rating, the EU threshold for a non-EU seller, a national US nexus shortcut, discontinued India/Kenya DST rules, a former US de minimis amount, or an unconfirmed fee/penalty discount. Do not claim accountant approval, registration, a filed return, authority contact or payment without actual evidence. This method produces an obligations schedule and a review brief, not an executed filing or contact instruction.
+
+### Penalties and remediation
+
+Penalties and interest require the applicable country/state, period, failure and behaviour. The old EU-wide minimum/maximum and voluntary-disclosure percentages are not reliable legal rules. HMRC distinguishes unprompted/prompted disclosures using whether the taxpayer had reason to believe discovery was imminent; starting a check does not invariably eliminate every reduction or an unrelated unprompted disclosure. Do not promise a discount or immunity. [HMRC CC/FS11, disclosure and penalty factors](https://www.gov.uk/government/publications/compliance-checks-penalties-for-failure-to-notify-ccfs11/compliance-checks-penalties-for-failure-to-notify-ccfs11).
+
+For remediation, preserve sales, contracts, location evidence, returns and correspondence; reconstruct liability from the legally applicable effective dates and tax points, not an assumed universal threshold-crossing date. Prepare tax, interest and any penalty separately. Assess correction/disclosure eligibility and the right registration date before any submission/contact; obtain professional review and the user's authority for the external action. Determine lawful prospective sales arrangements rather than automatically ordering all sales to stop or treating a new MoR as a cure for past liability. Late UK registration, for example, can require VAT for sales since registration should have begun. [HMRC registration/arrears](https://www.gov.uk/register-for-vat); [CC/FS11](https://www.gov.uk/government/publications/compliance-checks-penalties-for-failure-to-notify-ccfs11/compliance-checks-penalties-for-failure-to-notify-ccfs11); [EU Directive arts 63, 193, 213](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
+
+## Filing and payment
+
+Use this calendar only after establishing the actual registration scheme and period. It is not a substitute for the taxpayer's account, national form/field mapping, extension decision or payment receipt.
+
+| Regime | Frequency and ordinary deadline | Official source |
+|---|---|---|
+| EU Union/non-Union OSS | Calendar quarters; return and payment by end of following month, including nil returns. IOSS is monthly, with the same following-month rule. Use the Member State of identification's actual portal and issued return/payment reference. | Directive arts 364–367, 369f–i, 369s–v, [law](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1), [Commission declare/pay](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/declare-and-pay-oss_en) |
+| UK VAT | Usually every three months; online return/payment ordinarily one calendar month plus seven days after period end. Annual accounting and other arrangements need their own calendar; payment must reach HMRC by its deadline. | [HMRC Sending a VAT Return](https://www.gov.uk/submit-vat-return) |
+| Australia GST | Simplified non-resident reporting is quarterly; standard reporting can differ. Quarterly statutory return/payment dates are 28 October, 28 February, 28 April and 28 July for the corresponding quarters, subject to lawful extensions. The December quarter is not due 28 days after year-end. | GST Act ss 31-8, 31-10, 33-3/5, [current law](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html), [ATO simplified route](https://softwaredevelopers.ato.gov.au/GSTintangibles) |
+| Singapore OVR | Simplified quarterly returns and payment within one month after the accounting period. Ordinary GST can use different approved periods; check the account and authorised payment arrangement. | [IRAS OVR guide §7.3, pp 22–24](https://www.iras.gov.sg/docs/default-source/e-tax/gst-e-tax-guide_taxing-imported-remote-services-by-way-of-the-overseas-vendor-registration-regime_%281st-ed%29.pdf?sfvrsn=7a18d6f5_58), [due dates](https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/filing-gst/gst-filing-due-dates-and-requests-for-extension) |
+| Japan JCT | Normally annual tax period; corporate final return/payment generally within two months after period end, with the statutory extension cases. An individual's December-containing final period generally ends with filing/payment on 31 March next year. Interim filings depend on prior national consumption tax liability; one interim plus a final is not a universal semi-annual regime. | [NTA No.6601](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6601.htm), [No.6609](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6609.htm) |
+| Canada simplified GST/HST | Calendar quarters; return within one month after quarter end, using the simplified GST/HST return through GST/HST NETFILE. Net positive tax is remitted. Normal registration has its own annual/quarterly/monthly reporting calendar and must be routed separately. | [CRA digital return obligations](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/file-return.html), [normal reporting periods](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/reporting-requirements-deadlines.html) |
+| US state sales tax | State-assigned periods may be monthly, quarterly or annual; no common national filing deadline. Preserve the old frequency topic but obtain the actual state account/return instructions before setting a date. | [South Dakota DOR state-specific starting point](https://dor.sd.gov/businesses/taxes/sales-use-tax/2023-legislative-updates) |
+| Kenya SEPT | Statute requires return and payment by the twentieth day of the following month for the month the service was offered; current regulations and live form mapping still required before filing. | Income Tax Act s 12E(5), [KRA 2026 Act](https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf) |
+
+For each handoff, provide the established seller/registration regime, taxable base by country and rate, evidence and exclusions, actual period, proposed due date, and missing national form/portal/payment fields. The country filing Guide must establish those fields and the post-submission acknowledgement/payment reference before anyone represents the work as completed.
+
+## Completion checklist
+
+- Reconcile the seller's receipts across all platforms to the correct legal supplies; distinguish consumer proceeds from a B2B supply to a platform.
+- Record customer-country/state evidence, recipient status/use, product classification and relevant establishment for each branch.
+- Apply the exact local turnover definition and period, including platform treatment, refunds, prior-year and projected tests.
+- Record tax-inclusive/exclusive pricing, chosen schemes/elections, rate classification, exemptions and customs treatment separately.
+- Produce an obligations calendar and country handoffs; list unresolved figures without estimating them into tax due.
+- Keep the source/read scope and effective date beside each conclusion, and retain actual filings/payments/approvals as separate evidence.
+
+## Sources
+
+Read dates below distinguish sources personally read for the earlier VAT-method review on 14 November from new reading on 15 November. A blocked URL or search result was not treated as evidence. Primary law and authority guidance were read for the stated provisions, not merely checked for a successful response. Detailed country filing, customs and tax positions still require the case-specific handoff described above.
+
+| Source and personally read scope | Official URL | Read on |
+|---|---|---|
+| EU VAT Directive 2006/112/EC, current consolidated text: Arts 14/14a, 28, 30–61, 63, 138–143, 168–169, 192a–197, 201, 211, 213, 226, 284 onwards, 358a–369x; relevant special rules, recipient liability, schemes, goods/imports and neighbors | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 | 2026-11-14 |
+| EU Implementing Regulation 282/2011, current consolidated text: Art 7 and Annex I; art 9a; arts 10–13b, 17–24f; electronic definition, platform presumption/rebuttal/payment-only exception, status/use/location and neighbors | https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 | 2026-11-14 |
+| EU official VAT rate table: Whole 27-state rate table and standard/reduced-rate explanation; table dated 13 July 2026 | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm | 2026-11-14 |
+| Commission OSS overview: Union/non-Union/IOSS eligibility, optional nature, scope and replacement of former low-value VAT relief; whole operative overview | https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en | 2026-11-14 |
+| Commission OSS declare and pay: Returns, deadlines, nil periods, payment reference/Member State of identification; operative whole guidance | https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/declare-and-pay-oss_en | 2026-11-14 |
+| Commission VIES validation portal: Opened portal URL; no readable body returned. Retained as the validation-tool link only, not evidence of a tax rule or a completed customer validation. Regulation18 supplies the substantive rule. | https://ec.europa.eu/taxation_customs/vies/ | Not read; opened 2026-11-15 |
+| HMRC VAT Notice 741A: Relevant B2B/B2C general rules, electronic services, customer status/location and exceptions, personally read during earlier review | https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-15 |
+| HMRC VAT registration: Whole operative body: both domestic tests, NETP rule/exemptions, taxable turnover, effective dates and late registration | https://www.gov.uk/register-for-vat | 2026-11-15 |
+| HMRC VAT rates: Whole rates body: standard, reduced, zero, exemption/classification distinction | https://www.gov.uk/vat-rates | 2026-11-15 |
+| HMRC Sending a VAT Return: Whole operative body: usual period, nil returns, online deadline/payment receipt, annual scheme reference | https://www.gov.uk/submit-vat-return | 2026-11-15 |
+| HMRC CC/FS11, updated19March2026: Failure-to-notify, reasonable-excuse, prompted/unprompted disclosure, check exceptions and behaviour/quality/range rules, lines89–208; no flat discount inferred | https://www.gov.uk/government/publications/compliance-checks-penalties-for-failure-to-notify-ccfs11/compliance-checks-penalties-for-failure-to-notify-ccfs11 | 2026-11-15 |
+| South Dakota DOR 2023 legislative updates: Whole operative current/prior gross-sales test, removal of transaction limb1July2023, physical-nexus examples; no national extrapolation | https://dor.sd.gov/businesses/taxes/sales-use-tax/2023-legislative-updates | 2026-11-14 |
+| CDTFA publication109, non-taxable sales: Electronically transmitted software/data, tangible-copy caveats and neighbors | https://cdtfa.ca.gov/formspubs/pub109/nontaxable-sales.htm | 2026-11-14 |
+| CDTFA business use tax: Purchaser use-tax obligation on qualifying uncollected taxable purchases and exceptions | https://cdtfa.ca.gov/taxes-and-fees/use-tax/business-use.htm | 2026-11-14 |
+| Georgia Rule560-12-2-.118: Whole .118(2)–(5): specified digital goods, permanent rights/subscriptions, SaaS exclusion | https://rules.sos.ga.gov/gac/560-12-2 | 2026-11-15 |
+| Missouri12CSR10-109: Whole3-page current computer/software rule, especially (3)(I), provider property tax caveat | https://www.sos.mo.gov/cmsimages/adrules/csr/current/12csr/12c10-109.pdf | 2026-11-14 |
+| Texas Comptroller Data Processing Services: Taxable services and professional-computer-use distinction, examples and nontaxable-service neighbors; no percentage or fee imported | https://comptroller.texas.gov/taxes/publications/94-127.php | 2026-11-15 |
+| New York TB-ST-128 Computer Software: Whole operative bulletin: prewritten/custom, remote access/user sourcing, separately-stated services, production exemptions, maintenance | https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/computer_software.htm | 2026-11-15 |
+| Pennsylvania software/digital guidance: Whole operative body lines281–418: statutory definitions, canned/custom software, licenses/user allocation, services and examples | https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/canned-computer-software-digital-goods | 2026-11-15 |
+| Australia GST Act2026 volume1: GST Act9-5/25/26/70,23-5/15, Div84 supplier/platform/recipient branches read14Nov; newly read15Nov ss31-5–31-25 and33-1–33-10 for quarterly dates/payment and neighboring rules | https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-11-14 / 2026-11-15 |
+| Australia GST Act2026 volume2: Whole Div188-10–188-40 relevant current/projected turnover definitions, exclusions, capital assets/cessation; personally read14Nov | https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html | 2026-11-14 |
+| business.gov.au GST registration: Whole registration requirements/turnover body; current official business authority page personally opened14Nov | https://business.gov.au/registrations/register-for-taxes/register-for-goods-and-services-tax-gst | 2026-11-15 |
+| ATO imported services/digital products: Whole62-line page, historical2020modified guidance; simplified/standard routes and quarterly simplified reporting; current turnover and dates separately checked against2026 Act | https://softwaredevelopers.ato.gov.au/GSTintangibles | 2026-11-14 / 2026-11-15 |
+| IRAS overseas businesses: Operative body lines913–1013: OVR two thresholds,2023remote/LVG scope, registered/nonregistered recipients, platform liability, evidence, pay-only/no-input-tax | https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-and-digital-economy/overseas-businesses | 2026-11-15 |
+| IRAS OVR remote-services eTax guide: PDFpp16–25 (§7 thresholds/definitions, current/prior/prospective exceptions, platform aggregation, registration/pay-only/quarterly table), pp26–32 recipient/location, tax points and9%tax fraction; AnnexA remote-scope exclusion references read; no live form submission | https://www.iras.gov.sg/docs/default-source/e-tax/gst-e-tax-guide_taxing-imported-remote-services-by-way-of-the-overseas-vendor-registration-regime_%281st-ed%29.pdf?sfvrsn=7a18d6f5_58 | 2026-11-15 |
+| IRAS domestic registration: Operative compulsory taxable-turnover definition, retrospective/prospective views, exceptions and voluntary reference; lines926–955,999–1012 | https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-registration-deregistration/do-i-need-to-register-for-gst | 2026-11-15 |
+| IRAS preparing for GST rate change: Operative date/rate and transition paragraphs907–989; not a new filing instruction | https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-rate-change/gst-rate-change-for-business/preparing-for-gst-rate-change | 2026-11-15 |
+| IRAS filing/payment due dates: Operative body918–996: ordinary/special accounting periods, dates/GIRO distinction and extension boundaries | https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/filing-gst/gst-filing-due-dates-and-requests-for-extension | 2026-11-15 |
+| NTA No.6635 small-business exemption: Whole2026Japanese body: base period, specified period, new capital/business, foreign-business and invoice-registration exceptions | https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6635.htm | 2026-11-14 |
+| NTA No.6118 foreign electronic services: Whole2026Japanese operative body: nature/terms B2B classification, recipient place, reverse charge/95% and simplified exceptions | https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6118.htm | 2026-11-14 |
+| NTA No.6498 invoice system: Whole2026Japanese operative body: QIS exemption effects, books/invoice exceptions and current transitional rules | https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6498.htm | 2026-11-14 |
+| NTA consumption tax rates: Whole current English standard/reduced rates and covered reduced categories; standard10/reduced8 | https://www.nta.go.jp/english/taxes/consumption_tax/01.htm | 2026-11-14 |
+| NTA foreign electronic services brochure: All5PDFpages personally read14Nov; July2024brochure supplemented by2026Japanese FAQs, not used alone forcurrent exemption | https://www.nta.go.jp/english/taxes/consumption_tax/0024006-219.pdf | 2026-11-14 |
+| NTA platform taxation: Whole current English platform guidance: designated operator/consideration receipts/foreign B2C services from1April2025 | https://www.nta.go.jp/english/taxes/consumption_tax/05.htm | 2026-11-15 |
+| NTA No.6601 returns/payment: Whole2026Japanese operative body13–58: final periods, corporate two months/extensions, individuals31March, special periods and import distinctions | https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6601.htm | 2026-11-15 |
+| NTA No.6609 interim returns: Whole2026Japanese operative body12–95: annual period, prior national-tax liability, interim frequency, exceptions/shortperiod rules and payment interest | https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6609.htm | 2026-11-15 |
+| IRD remote services: Whole body22–84, updated12Sep2026: definition, past/future threshold, registered-business-use exclusion, residence evidence, marketplace and filing frequency | https://www.ird.govt.nz/gst-on-remote-services | 2026-11-15 |
+| IRD non-resident businesses/GST: Whole operative body22–66: standard rate, remote-services/other-regime distinction; no lowgoods detail added | https://www.ird.govt.nz/international-tax/business/non-resident-businesses-and-gst | 2026-11-15 |
+| CRA cross-border digital threshold: Whole operative body, nonresident/normal-reg/business-in-Canada guards, specified receipts, exclusion of deemed platform supplies,12-monththreshold/examples | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register/cross-border-threshold-amounts.html | 2026-11-15 |
+| CRA digital-economy registration: Whole operative body38–99: simplified/normal regimes, qualifying-goods restriction, validation/foreign-currency options; only regime distinction used | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/register-gst-hst.html | 2026-11-15 |
+| CRA digital charge/collect: Actual downloaded whole body read: recipient/place rules, current rate list5/13/14/15; noted obsolete NovaScotia15example and resolved withdateddecrease | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/charge-collect/cross-border.html | 2026-11-15 |
+| CRA current rates and Nova Scotia decrease: Whole operative body35–155: classification, place,dated1Apr2025decrease/current14%, tax-inclusive disclosure | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html | 2026-11-15 |
+| CRA simplified GST/HST returns: Actual downloaded whole operative reporting/net-tax/NETFILE body; calendarquarters/monthdeadline/noITCs/positivepayment and normal-route handoff | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/file-return.html | 2026-11-15 |
+| CRA normal return reporting/deadlines: Whole operative body34–168: assigned periods, monthly/quarterly/annual distinctions, nil, payment and exceptions; no normal deadline imported into simplified row | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/reporting-requirements-deadlines.html | 2026-11-15 |
+| HMRC DST registration scope: Whole operative body73–131: group/activity/UK-user scope and two thresholds | https://www.gov.uk/guidance/check-if-you-need-to-register-for-digital-services-tax | 2026-11-15 |
+| HMRC DST01200: Whole operative body73–103: threshold base, allowance, normal rate, optionalalternative and qualifyingcrossborderrelief | https://www.gov.uk/hmrc-internal-manuals/digital-services-tax/dst01200 | 2026-11-15 |
+| France CIBS L453-45–83: Current10Nov2026consolidatedwhole section read in4opens: scope45–63,prior-year/group64–66,annualcharge67–68,base/rate69–74 and neighbors75–83 | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000044595989/LEGISCTA000048626177 | 2026-11-15 |
+| Italy Law145/2018 art1: Current6Nov2026text: whole art1(35)–(50), definitions/exclusions,group,prior-yearthreshold,localallocation,3%rate and neighbors; applicablethrough31Dec2026 | https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=18G00172&atto.dataPubblicazioneGazzetta=2018-12-31&bloccoAggiornamentoBreadCrumb=true&classica=true&dataVigenza=&generaTabId=true&qId=&tabID=0.9037336842842527&tipoDettaglio=vigente&title=lbl.dettaglioAtto | 2026-11-15 |
+| Italy Law207/2024 threshold amendment: Art1(20)–(23), replacing36 andfuture64; removeslocal5.5threshold, retainsglobal750andItalianscope; commencementapplied1Jan2025 | https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticoloDefault/originario?atto.codiceRedazionale=24G00229&atto.dataPubblicazioneGazzetta=2024-12-31&atto.tipoProvvedimento=LEGGE | 2026-11-15 |
+| Italy DL200/2025 art4(2): Current14Nov2026art4(1)–(5), convertedLaw26/2026; actualrecodification100deferred2027; originalDecree174arts63–65,74,100alsoopenedbutnotassertedcurrent2026 | https://www.normattiva.it/atto/caricaDettaglioAtto?atto.articolo.numero=4&atto.codiceRedazionale=25G00213&atto.dataPubblicazioneGazzetta=2025-12-31 | 2026-11-15 |
+| Spain Law4/2020 arts4–11: Actual fullHTML downloaded; arts4–12definitions/exclusions/localisation/thresholds/group/base/rate and formalobligationneighbors13–16 read | https://www.boe.es/buscar/act.php?id=BOE-A-2020-12355 | 2026-11-15 |
+| Turkey GIB current DST table: Wholeone-pagePDF2026/2027rates bycoveredservice, dualexemptionthresholdandfiling/paymenttable | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FDijital_hizmet_vergisi.pdf | 2026-11-15 |
+| Turkey GIB Decision10767 note: Wholeone-pageofficialnote dated24Dec2025/Gazette33118,rateeffective1Jan2026and2027 | https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2025%2FCK10767_abn.pdf | 2026-11-15 |
+| Income Tax Department Equalisation Levy: Whole218-lineactualwebbodyread14Nov: historical2%scope/INR2crexclusion,1Aug2024cutoffandalllevy1Apr2025sunset; noCLI403usedasevidence | https://www.incometaxindia.gov.in/equalisation-levy3 | 2026-11-14 |
+| Kenya Income Tax Act2026: PDFcover/p1legislation1July2026withoutstandingAct19; printedpp30–32includingfull12Eandneighbors,HeadBpara12printedp106read; excludingcurrentregulation/portalclaims | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf | 2026-11-15 |
+| Kenya Finance Act2026: Actualprimaryopenedandlane8sourcePDF/textpersonallyreadPartI§1andwholePartII§§2–23: s2royalty/professionalfeechanges,s10overlay; no12E/HeadB12amendment; coversoutstandingAct19 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf | 2026-11-15 |
+| KRA January2025iTax Volume2: PDFp7wholeDSTtoSEPTtransition/systemdescription,27Dec2024effect; historicaloperationalpublicationnotusedascurrent2026regulations | https://www.kra.go.ke/images/publications/iTax-Enhancements-and-Resolution-of-Defects-for-January-2025-Volume-2.pdf | 2026-11-15 |
+| Council Regulation2026/382: Wholeoperativeact/recitals: repeal150relief,3EUR/item temporaryperiod/scope; overlaidamendment2026/1022 | https://publications.europa.eu/resource/cellar/2ae65d0b-0c6b-11f1-8870-01aa75ed71a1.0006.03/DOC_1 | 2026-11-14 |
+| Commission Delegated Regulation (EU) 2026/1022: Wholeoperativeamendingact/recitalsandannex:postaldefinition,preferenceexclusion,itemdefinitionandapplicabledatasets | https://publications.europa.eu/resource/cellar/3b9f822b-74e8-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1 | 2026-11-14 |
+| Commission6October2026VATguidance: All4PDFpages:actualcustomsduty/VATinteraction,IOSScustomerconsideration/importexemption,standardimportbase;expectedEUR2feenotenactmentproof | https://vat-one-stop-shop.ec.europa.eu/document/download/3086db0e-7b4a-4202-9f38-d32bd774f5a8_en?filename=VAT+treatment+of+the+EUR+3+customs+duty+and+of+the+EUR+2+Customs+Union+handling+fee+%E2%80%93+Revised+version+06+October+2026.pdf | 2026-11-14 |
+| CBP CSMS66065494 de minimis suspension: Whole36-lineactualbulletin read: operativeparagraphs13–23,all-country29Aug2025suspension,1702(b)carveout,rejected321/86entriesandappropriateformal/informalentry requirements; currententryclassification/ratesnotsupplied | https://content.govdelivery.com/bulletins/gd/USDHSCBP-3f01456 | 2026-11-15 |
+| Commission OSS landing: Read for: What changed, 1 July 2021, import exemption removal up to EUR 22; the simplified threshold summary is not substituted for Directive conditions | https://vat-one-stop-shop.ec.europa.eu/index_en | 2026-11-15 |
+| CBP June 2026 non-postal IFR: Read for: effective date, independent statutory suspension, unchanged gift/traveller relief, full operative 19 CFR 10.151(a)–(b); no tariff-rate/entry-process clearance | https://www.govinfo.gov/content/pkg/FR-2026-06-24/html/2026-12670.htm | 2026-11-15 |
+| CBP June 2026 postal IFR: Read for: effective date of suspension and full operative 19 CFR 145.31(a)–(b), independent authority and unchanged gift/traveller relief; actual entry process requires current country review | https://www.govinfo.gov/content/pkg/FR-2026-06-24/html/2026-12669.htm | 2026-11-15 |
+| CBP 22 October 2026 extension: Read for: whole document, continuing June suspension and separate formal-entry compliance extension; no current postal-form/duty calculation supplied here | https://www.govinfo.gov/content/pkg/FR-2026-10-22/html/2026-21600.htm | 2026-11-15 |
+
+Not yet confirmed: the following original claims are retained individually as evidence gaps, outside usable guidance. They are not tax thresholds, safe harbours, current quotes, recommendations or approved filing instructions:
+
+- **Revenue strategy A:** “<EUR 10,000 from any single jurisdiction, monitor only, below most thresholds, cost USD 0.” No worldwide legal basis; contradicted by the UK first-taxable-supply and narrow EU rules above.
+- **Revenue strategy B:** “EUR 10,000–100,000 global customers: Paddle/Lemon Squeezy handle all tax, cost 5–10%.” No current customer contract or fee proof was obtained; no legal revenue band supports this recommendation.
+- **Revenue strategy C:** “>EUR 100,000: self-register top 2–3 markets plus Stripe Tax, accounting USD 2,000–5,000/year.” Neither market count nor budget is an established legal/commercial rule.
+- **MoR decision A:** “<USD 50,000, any complexity tolerance: use Paddle/Lemon Squeezy.” Unsupported revenue-based recommendation.
+- **MoR decision B:** “USD 50,000–200,000, low tolerance: use MoR.” Unsupported revenue-based recommendation.
+- **MoR decision C:** “USD 50,000–200,000, high tolerance: self-register top markets plus Stripe Tax.” Unsupported revenue-based recommendation.
+- **MoR decision D:** “>USD 200,000, any tolerance: self-register plus accountant and Stripe Tax.” Unsupported revenue-based recommendation.
+- **MoR contract/price claims:** Paddle, Lemon Squeezy and FastSpring invariably being the legal seller, collecting, filing/remitting in each country, paying the seller net and charging 5–10% inclusive of processing have not been confirmed for every product, contract and jurisdiction. A particular agreement may support some of these features; brand alone does not.
+- **US tools:** Stripe Tax's old USD 0.50/transaction cost; automatic calculation AND collection for every use; TaxJar/Avalara “full compliance automation”; Paddle/Lemon Squeezy “5–10%, handles everything.” The original “varies” TaxJar/Avalara price is not a verified quote either. Current contract, service scope and pricing are required. The original vendor information links are retained in the vendor paragraph above, without endorsement.
+- **US counts/Washington:** “45 states plus DC”, “TX/NY/PA/WA and about 20 others taxable”, “most states USD 100,000 OR 200 transactions.” No current national inventory was established. The original “no federal sales tax” description is retained as a distinction from state general sales tax, not a conclusion about every federal excise or import tax; a complete federal/state tax inventory was not established here. The cited SD rule disproves treating its old transaction limb as current. Washington authority pages returned 403 in direct reads and the ordinary browser tool was unavailable; its specific 2026 product and post-2025 service rules were not confirmed, so no usable Washington taxability conclusion is supplied.
+- **India history:** the old 2% row, “no global threshold”, INR 2 crore (~USD 240,000), and “register/file quarterly” are not 2026 obligations. The authority confirms the levy sunset and historical relevant-consideration limit; the USD conversion and case-specific historical registration, payment and return deadlines were not confirmed. Preserve historical exposure for a dated India review.
+- **Kenya history/implementation:** the old 1.5%, “no global threshold”, KES 0/all digital services and current quarterly-filing implication cannot be used as current DST rules. Statutory SEPT and its exclusions are given above; the operative 2026 implementing regulations, complete registration steps and live iTax fields were not read. Do not substitute the official 2025 draft for enacted regulations.
+- **India/Kenya revenue action A:** “<USD 10,000/year: monitor; enforcement limited.” No authority-supported enforcement assurance or relief was found.
+- **India/Kenya revenue action B:** “USD 10,000–50,000/year: weigh registration costs against exposure.” No legal permission to defer compliance at this revenue was established.
+- **India/Kenya revenue action C:** “>USD 50,000/year: register because enforcement risk becomes real.” Neither this threshold nor the suggested below-threshold absence of risk was established.
+- **EU late registration:** old “most countries” minimum about EUR 500, maximum about 5% of unpaid VAT, and a universal interest start under one EUR 10,000 threshold. No EU-wide support; country/period-specific law is required for each penalty and interest computation.
+- **EU voluntary correction:** old blanket 50–75% penalty reduction. No current Member-State-by-Member-State basis established.
+- **UK voluntary disclosure:** old “best terms about 30% of maximum.” This is not a general discount; HMRC's actual behaviour, timing, disclosure-quality and reasonable-excuse rules control.
+- **Australia voluntary disclosure:** old “significant reduction, no penalty if minor.” No unconditional minor-error immunity or case-specific amount established here.
+- **US voluntary disclosure:** old “generally 50%+ reduction.” No state-by-state programme/eligibility inventory established.
+- **Audit/disclosure generalisation:** old “unprompted means before authority contact” and “all terms lost once audit begins.” These are not worldwide rules; HMRC's actual test differs, and other countries need their own law.
+- **Remediation shortcuts:** automatic stop-selling/switch-MoR instruction; retrospective tax from one universal threshold date; file disclosure then pay a promised reduced penalty; register only going forward. None is an unconditional legal workflow. Use the dated liability and authority-specific remediation method above.
+- **Professional-help costs:** old EUR 5,000 exposure trigger and EUR 500–2,000 per engagement. No legal threshold or current fee evidence; country complexity and unresolved facts determine referral.
+- **Goods generalisations:** old service/goods complexity ranking, “all imports taxable without exception”, “all non-IOSS VAT collected by carrier from buyer” and “poor customer experience.” Correct legal distinctions are above; commercial experience is not a tax rule.
+- **Platform brand allocation:** old “Gumroad/Paddle handle VAT; Stripe/Patreon/AdSense do not.” Current product terms and legal-supplier facts were not established for each brand. YouTube/Patreon/Substack/Gumroad receipts cannot all be assumed to be the seller's EU B2C supplies. Preserve names, reconcile contracts, apply the actual supplier and local aggregation rule.
+- **Further country detail:** local exemptions and reduced rates, complete US state nexus/filing inventory, Canadian PST/QST, national registration/return fields and payment arrangements, historical remediation terms, and a live customs entry/rate/classification decision are outside this screen. No present EUR 2 EU handling-fee liability is inferred from the October guidance's expected date.
+
+### closing-notes
+
+This revision replaces the original 2024–2026 mixed-period summary with a dated 2026 obligation screen and explicit historical corrections. Recheck the operative law and relevant country filing Guide when applying it to actual facts.
+
+*Original content: [Artin (@ar-gen-tin)](https://github.com/ar-gen-tin/panrise) - MIT License.*
+*OpenAccountants - open-source accounting skills for AI - info@openaaccountants.com*
