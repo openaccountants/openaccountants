@@ -1,31 +1,70 @@
 {
-  "state": "writer delivery, independent review pending",
+  "state": "independent39-row qualified PASS; explicit limited usable scope",
   "base_main": "bbab4f1a6d82cace432e6ca8eda89c98ffb1c038",
-  "guide_commit": "8333fa0038105c9c9815683696f17a0edf0cb6f5",
+  "guide_commit": "e776b86648fb480131ed038974d7210fd30a3166",
   "guides": [
     {
       "path": "skills/zimbabwe/zw-company-formation.md",
       "original_blob": "8aa3ae39855212104830c53a31b311e602bd8c06",
-      "sha256": "5257f905e2c98dc63acd850a063466f091bdffedb04ed14533783a0f53e6e7c0",
-      "bytes": 13726,
+      "sha256": "a3f7c178a52f88dea8877a8e515fd98680a7f44e6eef75b5f1f8c7d2ba2cf36d",
+      "bytes": 14273,
       "original_bytes": 4519
     },
     {
       "path": "skills/zimbabwe/zw-tax-overview.md",
       "original_blob": "894864c20c4d8fd4ecc7a151cf14e488e92723af",
-      "sha256": "82bb44d8efb5c1e0b035b70fade5743d5c80268555b93688375d5bf35b6619ee",
-      "bytes": 11098,
+      "sha256": "7a89321ea9a4f8130d2447d4986a7bf46852e4936de20e926309cf2afdd9a97f",
+      "bytes": 11287,
       "original_bytes": 1935
     }
   ],
+  "review": {
+    "reviewed_head": "e776b86648fb480131ed038974d7210fd30a3166",
+    "artifacts": [
+      {
+        "file": "ARITHMETIC.json",
+        "sha256": "f53fe03ae0816011a70f880ea14215c18ec686bd0cf99baefc365ff790d2ef1f"
+      },
+      {
+        "file": "FINAL-BINDINGS.json",
+        "sha256": "19d43d1e0efe6f7b4677c1e5a834f1918be51286d0b4d18f1021825e9339e079"
+      },
+      {
+        "file": "FINDINGS.json",
+        "sha256": "63999a438b12ed6653537341efb71e25ac014592625abee52a1c05f1344b3514"
+      },
+      {
+        "file": "INITIAL-BINDINGS.json",
+        "sha256": "ccd257e7cf1f228bec260826aec293c276b69495df2878897e087c706f2069fb"
+      },
+      {
+        "file": "OLD-TOPIC-ASSESSMENT.json",
+        "sha256": "593ee622ba6e4d61e1b6a6dfbda7d10059e1a27a290bc2e16637deb05cc2a9f1"
+      },
+      {
+        "file": "REVIEW.md",
+        "sha256": "d4f29c897230b963efac4aeeb24b74e47a63c5de369cbd91e811b64a9a9ba050"
+      },
+      {
+        "file": "ROW-ASSESSMENTS.json",
+        "sha256": "54d0522c8540f39cb3f0be01aee5cc6e5b8b33de940f561521a7ead71876028b"
+      },
+      {
+        "file": "SOURCE-READS.json",
+        "sha256": "aea11ec81da8e0f22b7cd045b9cff4cb5526631808e1cb76162709b5b692714f"
+      }
+    ],
+    "raw_source_files_included": false,
+    "verdict": "qualified PASS for limited two-file draft scope"
+  },
   "archive": {
     "path": "evidence.tar.gz",
-    "sha256": "c3deec8d9a000828e8efb24c9df2fdfc6bc0c12a069fb49d2dd4a0d3fdb20c1b",
+    "sha256": "0eea0bc6b88ea3554bded29b459b3d81c85797517eda9075e99cd8b97010f2fe",
     "members": [
       {
         "path": "GUIDE-BINDINGS.json",
-        "bytes": 745,
-        "sha256": "07116d039284840dbf7aaf84e9d5044e62ac6a22787cd52f81e719ee28408ed8"
+        "bytes": 780,
+        "sha256": "627d9a201430fe38e814c3137dee2f11091344b96bfcfe0b8ba877b28ae7318d"
       },
       {
         "path": "READ-AND-RECOVERY.md",
@@ -34,28 +73,78 @@
       },
       {
         "path": "REPORT.md",
-        "bytes": 4324,
-        "sha256": "98c5d2fde0c3f9359f5736df78e40b6363992f66765ad7b9d9f99692d042569e"
+        "bytes": 5427,
+        "sha256": "97b0de20b0780b1f86f46d66041c3671d643eb9b2d9db8699a3b7442a68e6e9f"
+      },
+      {
+        "path": "REVIEW-FIXES.md",
+        "bytes": 1671,
+        "sha256": "7aa3b4706848d3d4c98931d10b02cc332baab79751e931309275fa75aae242d5"
       },
       {
         "path": "frozen-guides/zw-company-formation.md",
-        "bytes": 13726,
-        "sha256": "5257f905e2c98dc63acd850a063466f091bdffedb04ed14533783a0f53e6e7c0"
+        "bytes": 14273,
+        "sha256": "a3f7c178a52f88dea8877a8e515fd98680a7f44e6eef75b5f1f8c7d2ba2cf36d"
       },
       {
         "path": "frozen-guides/zw-tax-overview.md",
-        "bytes": 11098,
-        "sha256": "82bb44d8efb5c1e0b035b70fade5743d5c80268555b93688375d5bf35b6619ee"
+        "bytes": 11287,
+        "sha256": "7a89321ea9a4f8130d2447d4986a7bf46852e4936de20e926309cf2afdd9a97f"
+      },
+      {
+        "path": "independent-review/ARITHMETIC.json",
+        "bytes": 974,
+        "sha256": "f53fe03ae0816011a70f880ea14215c18ec686bd0cf99baefc365ff790d2ef1f"
+      },
+      {
+        "path": "independent-review/FINAL-BINDINGS.json",
+        "bytes": 775,
+        "sha256": "19d43d1e0efe6f7b4677c1e5a834f1918be51286d0b4d18f1021825e9339e079"
+      },
+      {
+        "path": "independent-review/FINDINGS.json",
+        "bytes": 1364,
+        "sha256": "63999a438b12ed6653537341efb71e25ac014592625abee52a1c05f1344b3514"
+      },
+      {
+        "path": "independent-review/INITIAL-BINDINGS.json",
+        "bytes": 1340,
+        "sha256": "ccd257e7cf1f228bec260826aec293c276b69495df2878897e087c706f2069fb"
+      },
+      {
+        "path": "independent-review/OLD-TOPIC-ASSESSMENT.json",
+        "bytes": 9069,
+        "sha256": "593ee622ba6e4d61e1b6a6dfbda7d10059e1a27a290bc2e16637deb05cc2a9f1"
+      },
+      {
+        "path": "independent-review/PUBLIC-MANIFEST.json",
+        "bytes": 1240,
+        "sha256": "e250b74dd43fce4db98e4634ccc2b3e4589777bd0837d2219f5346ae1206a690"
+      },
+      {
+        "path": "independent-review/REVIEW.md",
+        "bytes": 5134,
+        "sha256": "d4f29c897230b963efac4aeeb24b74e47a63c5de369cbd91e811b64a9a9ba050"
+      },
+      {
+        "path": "independent-review/ROW-ASSESSMENTS.json",
+        "bytes": 25943,
+        "sha256": "54d0522c8540f39cb3f0be01aee5cc6e5b8b33de940f561521a7ead71876028b"
+      },
+      {
+        "path": "independent-review/SOURCE-READS.json",
+        "bytes": 3250,
+        "sha256": "aea11ec81da8e0f22b7cd045b9cff4cb5526631808e1cb76162709b5b692714f"
       },
       {
         "path": "ledgers/zw-company-formation.md",
-        "bytes": 10645,
-        "sha256": "c73dcdd2aa852831dfaa861149c6c12e43474e2994af05611b8d13b775315d5f"
+        "bytes": 11239,
+        "sha256": "23824dadde5456ae46d823eb42a6cfdecf7d8b2824fdb1642bd454de05c364ef"
       },
       {
         "path": "ledgers/zw-tax-overview.md",
-        "bytes": 6032,
-        "sha256": "58fb6e7318a2b829c5795191918d011cfdce5087921f9130d12f557ae5e22dac"
+        "bytes": 6101,
+        "sha256": "73226692945da2b8e3812dec7b483644e1acfb9809d63811305b3fe335cc9bf4"
       },
       {
         "path": "original-guides/zw-company-formation.md",
@@ -71,6 +160,36 @@
         "path": "ownership-preflight.json",
         "bytes": 34585,
         "sha256": "90a8f53d9f6f166b0aefb3907c5c43d5fa4007f585c97d672da889c6364aeb1e"
+      },
+      {
+        "path": "prior-writer/GUIDE-BINDINGS.json",
+        "bytes": 745,
+        "sha256": "07116d039284840dbf7aaf84e9d5044e62ac6a22787cd52f81e719ee28408ed8"
+      },
+      {
+        "path": "prior-writer/REPORT.md",
+        "bytes": 4324,
+        "sha256": "98c5d2fde0c3f9359f5736df78e40b6363992f66765ad7b9d9f99692d042569e"
+      },
+      {
+        "path": "prior-writer/frozen-guides/zw-company-formation.md",
+        "bytes": 13726,
+        "sha256": "5257f905e2c98dc63acd850a063466f091bdffedb04ed14533783a0f53e6e7c0"
+      },
+      {
+        "path": "prior-writer/frozen-guides/zw-tax-overview.md",
+        "bytes": 11098,
+        "sha256": "82bb44d8efb5c1e0b035b70fade5743d5c80268555b93688375d5bf35b6619ee"
+      },
+      {
+        "path": "prior-writer/ledgers/zw-company-formation.md",
+        "bytes": 10645,
+        "sha256": "c73dcdd2aa852831dfaa861149c6c12e43474e2994af05611b8d13b775315d5f"
+      },
+      {
+        "path": "prior-writer/ledgers/zw-tax-overview.md",
+        "bytes": 6032,
+        "sha256": "58fb6e7318a2b829c5795191918d011cfdce5087921f9130d12f557ae5e22dac"
       },
       {
         "path": "validation/INITIAL-SETUP-NOTES.md",
@@ -96,6 +215,26 @@
         "path": "validation/quote-and-copy-tests.txt",
         "bytes": 1510,
         "sha256": "34dea9b26adbec3cb8b82451190fe29c533cf7c4b02c5e2dd731a30e53580d74"
+      },
+      {
+        "path": "validation/review-delta-examples.txt",
+        "bytes": 58,
+        "sha256": "6657e7f1bd2e46bc80cf3e6883e5351d165449e943b05e2d48ea40041a5c8bc4"
+      },
+      {
+        "path": "validation/review-delta-skill-checks.json",
+        "bytes": 96,
+        "sha256": "bde21a417a36db7f492ff12c6fb21be28cbf2ffdfef7b5981191c4deb13acb76"
+      },
+      {
+        "path": "validation/review-delta-sync.txt",
+        "bytes": 81,
+        "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9"
+      },
+      {
+        "path": "validation/review-delta-validate.txt",
+        "bytes": 192,
+        "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa"
       },
       {
         "path": "validation/row-sources.txt",
