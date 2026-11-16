@@ -294,6 +294,87 @@ expected:
   payable: 180
 ```
 
+## Calculation recipe
+
+The block below lets the OpenAccountants `compute` tool work out an Article 10, 11 or 12 return from the period's invoice lines, using the rates and rules above: output tax by rate, reverse charge and EU acquisitions, input tax without blocked items or the private share, excess credit brought forward, and the balance payable or the excess credit. It reproduces Cases 2 and 3. It does not decide place of supply, taxability or the rate of a line: each line is classified first, using this skill. It refers partial exemption, as the method says, and it does not map portal boxes. Every figure it uses is quoted from this skill, and it stops working if that wording changes.
+
+```oa-recipe
+{
+ "recipe": "vat_return",
+ "version": "1.0.0",
+ "jurisdiction": "MT",
+ "tax_years": ["2026"],
+ "title": "Malta VAT return: output tax, input tax and the balance",
+ "summary": "Malta VAT for one return period in 2026 from the period's invoice lines: output tax by rate, reverse charge and EU acquisitions, recoverable input tax (blocked items and private use removed, Article 10 only), excess credit brought forward, and the balance payable or the excess credit.",
+ "currency": "EUR",
+ "topics": ["vat return", "vat3", "vat payable", "input vat", "output vat", "reverse charge", "how much vat"],
+ "facts": {
+  "registration": {"type": "string", "required": true, "choices": ["article_10", "article_11", "article_12"], "description": "the registration on the VAT certificate: article_10 (charges VAT, recovers input VAT), article_11 (small undertaking: charges none, recovers none), article_12 (pays VAT only on EU acquisitions and reverse-charge services)"},
+  "lines": {"type": "items", "required": true, "description": "every invoice of the period, sorted by the date VAT became chargeable, one item per invoice line (amounts in euro, without VAT)", "fields": {
+   "net": {"type": "number", "description": "the amount without VAT, in euro"},
+   "kind": {"type": "string", "choices": ["sale_18", "sale_12", "sale_7", "sale_5", "sale_exempt_with_credit", "sale_exempt_without_credit", "sale_outside_scope", "purchase_18", "purchase_12", "purchase_7", "purchase_5", "purchase_blocked", "purchase_no_vat", "reverse_charge_service", "eu_goods_acquisition_18"], "description": "what the line is, using the skill's categories: sale_18 (taxable at the standard 18%: every taxable supply not at a reduced rate); sale_12, sale_7, sale_5 (the reduced rates in the skill's rate table); sale_exempt_with_credit (zero-rated: exports, intra-EU goods to a customer with a valid VAT number of another Member State, food not catering, medicines, international passenger transport); sale_exempt_without_credit (most lettings of immovable property, insurance, most banking, medical care, education); sale_outside_scope (for example B2B services to a customer established abroad); purchase_18, purchase_12, purchase_7, purchase_5 (a Malta supplier's tax invoice in your name with VAT at that rate, used for the business); purchase_blocked (VAT blocked by the Tenth Schedule item 3: tobacco, alcohol, art and antiques not for resale; motor vehicles, vessels, aircraft and their hire, leasing, repair and fuel unless an exception applies; receptions, entertainment and hospitality; employee transport or entertainment); purchase_no_vat (no Malta VAT on the invoice and not a reverse charge: exempt or zero-rated purchases, bank charges, wages); reverse_charge_service (a taxable general-rule B2B service supplied in Malta by a supplier not established here and not registered under Article 10: the recipient pays the VAT, art. 20(2)(b)); eu_goods_acquisition_18 (standard-rated goods bought from a VAT-registered supplier in another EU country and delivered to Malta)"},
+   "business_use_pct": {"type": "number", "default": 100, "description": "for a purchase used partly privately, the business share in percent (only that share is input tax)"}
+  }},
+  "credit_brought_forward": {"type": "number", "default": 0, "description": "excess credit from earlier returns not yet refunded or set off, in euro"}
+ },
+ "figures": {
+  "RATE_18": {"value": 0.18, "section": "Rates for 2026", "quote": "18% | Every taxable supply not listed below, and imports (art. 19(1) and (4))"},
+  "RATE_12": {"value": 0.12, "section": "Rates for 2026", "quote": "12% | Custody and management of securities"},
+  "RATE_7": {"value": 0.07, "section": "Rates for 2026", "quote": "7% | Accommodation in premises that must be licensed"},
+  "RATE_5": {"value": 0.05, "section": "Rates for 2026", "quote": "5% | Electricity;"},
+  "EXEMPT_WITH_CREDIT": {"value": 0, "section": "Rates for 2026", "quote": "Exempt with credit (zero-rated) | Exports; intra-EU goods to a customer with a valid and active VAT number of another Member State"},
+  "ONLY_ARTICLE_10_RECOVERS": {"value": true, "section": "Input VAT: recovery and blocked items", "quote": "Only an Article 10 person recovers input VAT."},
+  "BLOCKED_ITEMS": {"value": true, "section": "Input VAT: recovery and blocked items", "quote": "Blocked (item 3(1)) | Exception (item 3(2) and (1)(c))"},
+  "PRIVATE_USE": {"value": true, "section": "Input VAT: recovery and blocked items", "quote": "Partly private use: only the business proportion is input tax."},
+  "REVERSE_CHARGE": {"value": true, "section": "The method, step by step", "quote": "art. 20(2)(b) makes the Malta recipient liable. An Article 10 recipient declares output tax and claims only the deduction legally allowed."},
+  "ARTICLE_11_AND_12": {"value": true, "section": "The method, step by step", "quote": "Article 11 charges no VAT, recovers none and files a declaration. Article 12 only pays VAT on its EU acquisitions and reverse-charge services."},
+  "CREDIT_BROUGHT_FORWARD": {"value": true, "section": "The method, step by step", "quote": "deduct any excess credit brought forward that has not been refunded or set off (art. 21(1))"},
+  "PARTIAL_EXEMPTION_REFER": {"value": true, "section": "The method, step by step", "quote": "If you also make exempt-without-credit supplies, stop and refer (partial exemption)."}
+ },
+ "steps": [
+  {"id": "sales_18", "label": "Sales at 18%", "sum_items": {"list": "lines", "value": "net", "where": "kind == 'sale_18'"}},
+  {"id": "sales_12", "label": "Sales at 12%", "sum_items": {"list": "lines", "value": "net", "where": "kind == 'sale_12'"}},
+  {"id": "sales_7", "label": "Sales at 7%", "sum_items": {"list": "lines", "value": "net", "where": "kind == 'sale_7'"}},
+  {"id": "sales_5", "label": "Sales at 5%", "sum_items": {"list": "lines", "value": "net", "where": "kind == 'sale_5'"}},
+  {"id": "sales_exempt_with_credit", "label": "Exempt with credit (zero-rated) sales", "sum_items": {"list": "lines", "value": "net", "where": "kind == 'sale_exempt_with_credit'"}},
+  {"id": "sales_exempt_without_credit", "label": "Exempt without credit sales", "sum_items": {"list": "lines", "value": "net", "where": "kind == 'sale_exempt_without_credit'"}},
+  {"id": "sales_outside_scope", "label": "Sales outside the scope", "sum_items": {"list": "lines", "value": "net", "where": "kind == 'sale_outside_scope'"}},
+  {"refuse_if": "registration == 'article_10' and sales_exempt_without_credit > 0 and PARTIAL_EXEMPTION_REFER", "what": "partial exemption (input VAT on mixed taxable and exempt-without-credit supplies)", "why": "The skill says: if you also make exempt-without-credit supplies, stop and refer. The provisional and definitive ratios need an accountant."},
+  {"ask_if": "registration != 'article_10' and sales_18 + sales_12 + sales_7 + sales_5 > 0", "what": "An Article 11 or 12 person charges no VAT on its own sales. Check the registration on the certificate, or classify those sales as sale_outside_scope for this calculation."},
+  {"id": "reverse_charge_services", "label": "Reverse-charge services received", "sum_items": {"list": "lines", "value": "net", "where": "kind == 'reverse_charge_service' and REVERSE_CHARGE"}},
+  {"id": "eu_acquisitions", "label": "EU goods acquisitions", "sum_items": {"list": "lines", "value": "net", "where": "kind == 'eu_goods_acquisition_18'"}},
+  {"id": "output_tax", "label": "Output tax", "expr": "round(sales_18 * RATE_18 + sales_12 * RATE_12 + sales_7 * RATE_7 + sales_5 * RATE_5 + (reverse_charge_services + eu_acquisitions) * RATE_18, 2, 'half_up')"},
+  {"id": "purchases_blocked", "label": "Purchases with blocked VAT (no credit)", "sum_items": {"list": "lines", "value": "net", "where": "kind == 'purchase_blocked' and BLOCKED_ITEMS"}},
+  {"id": "business_purchases_18", "label": "Business share of purchases at 18% (with reverse charge and acquisitions)", "sum_items": {"list": "lines", "value": "net * business_use_pct / 100", "where": "(kind == 'purchase_18' or kind == 'reverse_charge_service' or kind == 'eu_goods_acquisition_18') and PRIVATE_USE"}},
+  {"id": "business_purchases_12", "label": "Business share of purchases at 12%", "sum_items": {"list": "lines", "value": "net * business_use_pct / 100", "where": "kind == 'purchase_12'"}},
+  {"id": "business_purchases_7", "label": "Business share of purchases at 7%", "sum_items": {"list": "lines", "value": "net * business_use_pct / 100", "where": "kind == 'purchase_7'"}},
+  {"id": "business_purchases_5", "label": "Business share of purchases at 5%", "sum_items": {"list": "lines", "value": "net * business_use_pct / 100", "where": "kind == 'purchase_5'"}},
+  {"id": "input_tax", "label": "Input tax recoverable (Article 10 only)", "expr": "if(registration == 'article_10' and ONLY_ARTICLE_10_RECOVERS, round(business_purchases_18 * RATE_18 + business_purchases_12 * RATE_12 + business_purchases_7 * RATE_7 + business_purchases_5 * RATE_5, 2, 'half_up'), 0)"},
+  {"id": "credit_used", "label": "Excess credit brought forward", "expr": "if(CREDIT_BROUGHT_FORWARD, credit_brought_forward, 0)"},
+  {"id": "net_vat", "label": "Balance (negative = excess credit)", "expr": "output_tax - input_tax - credit_used"},
+  {"id": "payable", "label": "VAT payable", "expr": "max(net_vat, 0)"},
+  {"id": "excess_credit", "label": "Excess credit to carry forward or claim", "expr": "max(0 - net_vat, 0)"}
+ ],
+ "result": {"step": "net_vat", "label": "Malta VAT for the period, {tax_year} (positive = payable, negative = excess credit)"},
+ "show": ["sales_18", "sales_12", "sales_7", "sales_5", "sales_exempt_with_credit", "sales_outside_scope", "reverse_charge_services", "eu_acquisitions", "output_tax", "purchases_blocked", "input_tax", "credit_used", "payable", "excess_credit"],
+ "assumptions": [
+  "Each line is classified by the user's AI into the skill's categories; the calculation applies the rates and rules, it does not decide place of supply or taxability",
+  "VAT is computed on the net amounts at the line's rate; where an invoice shows a different VAT amount, the invoice governs",
+  "Reverse-charge services and EU acquisitions are at the standard 18%",
+  "Box numbers on the MTCA portal are not mapped: the skill does not set them out"
+ ],
+ "notes": [
+  "Return and payment are due by the 15th of the second month after the period ends (art. 27(1) and 21(1))",
+  "Flag capital goods of EUR 1,160 or more and all immovable property (S.L. 406.12) for the adjustment schedule",
+  "An Article 11 person that receives reverse-charge services must also register under Article 12"
+ ],
+ "examples": [
+  {"name": "Case 2: a simple Article 10 return", "facts": {"registration": "article_10", "lines": [{"net": 10000, "kind": "sale_18"}, {"net": 2000, "kind": "purchase_18"}, {"net": 600, "kind": "purchase_blocked"}]}, "expect": {"output_tax": 1800, "input_tax": 360, "net_vat": 1440}},
+  {"name": "Case 3: an Article 11 consultant buys software from an Irish company", "facts": {"registration": "article_11", "lines": [{"net": 1000, "kind": "reverse_charge_service"}]}, "expect": {"output_tax": 180, "input_tax": 0, "net_vat": 180}}
+ ]
+}
+```
+
 ## Sources
 
 | Source and scope actually read | Official URL | Read on |
