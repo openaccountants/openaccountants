@@ -253,11 +253,85 @@ def word_money_values(page_text):
     return vals
 
 
+# Consume entire Korean Arabic-number compounds, including unsupported units,
+# before parsing. A malformed "1경5억원" must not fall back to "5억원".
+_KO_CHARS = r"0-9.,십백천만억조경해자양구간정재극일이삼사오육칠팔구영공"
+_KO_START = (r"(?:(?<![A-Za-z_" + _KO_CHARS + r"])[0-9]|(?<!\w)[십백천만억조경해자양구간정재극일이삼사오육칠팔구영공])")
+_KO_COMPOUND = (_KO_START + r"[" + _KO_CHARS + r"]*(?:\s+[0-9십백천만억조경해자양구간정재극]["
+                + _KO_CHARS + r"]*)*(?<![.,])")
+_KO_FRACTION_RE = re.compile(_KO_COMPOUND + r"\s*분의\s*" + _KO_COMPOUND
+                             + r"(?:\s*분의\s*" + _KO_COMPOUND + r")*")
+_KO_MONEY_RE = re.compile(_KO_COMPOUND + r"\s*원")
+_KO_NUMBER_RE = re.compile(r"(?:[0-9]{1,3}(?:,[0-9]{3})+|[0-9]+)(?:\.[0-9]+)?")
+_KO_SMALL = {'십': 10, '백': 100, '천': 1000}
+_KO_LARGE = {'만': 10_000, '억': 100_000_000, '조': 1_000_000_000_000}
+
+
+def _korean_number(text):
+    """Parse a complete descending Korean compound with Arabic coefficients."""
+    tokens = re.findall(r'[0-9][0-9.,]*|[^\s]', text)
+    if not any(token[0].isdigit() for token in tokens):
+        return None  # A unit heading such as "억원" is not an amount.
+    total = group = Decimal(0)
+    pending = None
+    last_small, last_large = 10_000, 10**16
+    for token in tokens:
+        if _KO_NUMBER_RE.fullmatch(token):
+            if pending is not None:
+                return None
+            pending = Decimal(token.replace(',', ''))
+        elif token in _KO_SMALL:
+            unit = _KO_SMALL[token]
+            if unit >= last_small or (pending is not None and pending >= 10):
+                return None
+            group += (pending if pending is not None else 1) * unit
+            pending, last_small = None, unit
+        elif token in _KO_LARGE:
+            unit = _KO_LARGE[token]
+            coefficient = group + (pending if pending is not None else 0)
+            if unit >= last_large or not coefficient or coefficient >= 10_000:
+                return None
+            if pending is not None and last_small < 10_000 and pending >= last_small:
+                return None
+            total += coefficient * unit
+            group, pending, last_small, last_large = Decimal(0), None, 10_000, unit
+        else:
+            return None
+    if pending is not None and last_small < 10_000 and pending >= last_small:
+        return None
+    remainder = group + (pending if pending is not None else 0)
+    if last_large < 10**16 and remainder >= last_large:
+        return None
+    return total + remainder
+
+
+def korean_values_and_text(page_text):
+    """Normalize won compounds and literal fractions; hide their bare coefficients."""
+    vals = set()
+
+    def fraction(match):
+        parts = match.group().split('분의')
+        if len(parts) == 2:
+            denominator, numerator = map(_korean_number, parts)
+            if denominator is not None and denominator > 0 and numerator is not None:
+                vals.add(round(float(numerator / denominator * 100), 6))
+        return ' '
+
+    def money(match):
+        value = _korean_number(match.group()[:-1])
+        if value is not None:
+            vals.add(round(float(value), 6))
+        return ' '
+
+    page_text = _KO_FRACTION_RE.sub(fraction, page_text)
+    return vals, _KO_MONEY_RE.sub(money, page_text)
+
+
 def page_values(page_text):
     """Every number on the page, read the English way (1,234.56) and the European way
     (1.234,56, 1 234,56, 2,25 %), so a page that writes figures with a decimal comma is
     not reported as a miss."""
-    vals = set()
+    vals, page_text = korean_values_and_text(page_text)
     page_text = re.sub(r"\.{2,}", " ", page_text)  # dot leaders: "250,400.....3,916.09"
     found_nums = NUM_RE.findall(page_text) + NUM_RE.findall(GROUP_SPACE_RE.sub("", page_text))
     for m in found_nums:
