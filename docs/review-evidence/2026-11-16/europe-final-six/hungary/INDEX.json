@@ -1,0 +1,223 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "77f25b220364209f695f223cfbc92f42952b6d1b9332e0b67494d2299f5e1153",
+  "members": [
+    {
+      "path": "writer/NO-LOSS-MAP.md",
+      "sha256": "dde4ee91a075fdbdc4a5d1cf1178af0a3fbc9b0aa5219fec02045612575438f8",
+      "bytes": 21537
+    },
+    {
+      "path": "writer/REPORT.md",
+      "sha256": "6e46cfd9c3274b31cbdd128127c1b75bce7ddb2fe21d13c2f3375c511835f04b",
+      "bytes": 7492
+    },
+    {
+      "path": "writer/STATUS.json",
+      "sha256": "5b1854a03c3058f2ede7baac1b5ae06181edbc06f3f6b10161e2cbd1daaa4f0d",
+      "bytes": 2245
+    },
+    {
+      "path": "writer/actual-head-sync.txt",
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9",
+      "bytes": 81
+    },
+    {
+      "path": "writer/actual-head-validation.txt",
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa",
+      "bytes": 192
+    },
+    {
+      "path": "writer/examples.txt",
+      "sha256": "6657e7f1bd2e46bc80cf3e6883e5351d165449e943b05e2d48ea40041a5c8bc4",
+      "bytes": 58
+    },
+    {
+      "path": "writer/ledger.json",
+      "sha256": "97df850c4383dbea234a32b4adc98fa76703de19946365e23b0ce2945d62fa4d",
+      "bytes": 207011
+    },
+    {
+      "path": "writer/ledgers/hungary-einvoice.md",
+      "sha256": "f451553c38127049de390dcf27df221d3ced0ee75c15725ebb9d5039e3216c84",
+      "bytes": 101000
+    },
+    {
+      "path": "writer/ledgers/hungary-vat-return.md",
+      "sha256": "39fd4595d8e46bc8e6fe54e2db0cd8e509b81f5759e42d7a81c3f6097b75cfd9",
+      "bytes": 88859
+    },
+    {
+      "path": "writer/no-loss-checks.json",
+      "sha256": "4cbfcca7ab4507e8680ef4a8c6b1c011313f2da106911e2317a1fd1fea84c87a",
+      "bytes": 24217
+    },
+    {
+      "path": "writer/pr-body.md",
+      "sha256": "bd7e48bbf2e6ebc22c44f2a357a094be5e238198a43c69cb39ddf1a75f80e21e",
+      "bytes": 3350
+    },
+    {
+      "path": "writer/pr-history.json",
+      "sha256": "44671000d731fc14b969c48c10dd3b5e664c52065d483e53da141e1736494d44",
+      "bytes": 1819
+    },
+    {
+      "path": "writer/prior-review/applicability.json",
+      "sha256": "bb6e4ccc11361b56f626e740049750415179796ee8cb01aeb1b38763ff689dbc",
+      "bytes": 688
+    },
+    {
+      "path": "writer/prior-review/bindings.json",
+      "sha256": "c1d208b1487d1b899e537a1f404159819b5ffbaddc0a16b9720a81fba9bac225",
+      "bytes": 1002
+    },
+    {
+      "path": "writer/prior-review/figures.json",
+      "sha256": "0edd552d3f671b63fb96563e7793ddb04372c022d5034b4640b16b1d5247d16e",
+      "bytes": 7343
+    },
+    {
+      "path": "writer/prior-review/metadata.json",
+      "sha256": "98126fadf1f14cc40e160068000e05b52e663f629353195abc1368a2d7e7a930",
+      "bytes": 621
+    },
+    {
+      "path": "writer/prior-review/pr700-comments.json",
+      "sha256": "f3023d38a1a2c146caf9d756172922fafe955f8a934a40cf3b175263d9c4d073",
+      "bytes": 4796
+    },
+    {
+      "path": "writer/prior-review/pr700-reviews.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "writer/prior-review/pr960-comments.json",
+      "sha256": "039379580c14ad4d6c331a4be689ecfb0fb96808b5dabde52f078c42af7ecf7e",
+      "bytes": 4521
+    },
+    {
+      "path": "writer/prior-review/pr960-files.txt",
+      "sha256": "d1cf53b03d9b1409496ad76d6de019abf06c3512d8cf368226aa0f3fcb40386c",
+      "bytes": 49
+    },
+    {
+      "path": "writer/prior-review/pr960-reviewed-guide.md",
+      "sha256": "daa4d6bc3420e390a3d42b9a7a75db8edf7298ac245675da4862bf9ca5e8fc45",
+      "bytes": 34683
+    },
+    {
+      "path": "writer/prior-review/pr960-reviews.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "writer/prior-review/pr960-summary.json",
+      "sha256": "fa502b16a5f1f8b5d7838d349cbbca8f36b897785d1da0bae3a17a6073e614c5",
+      "bytes": 3543
+    },
+    {
+      "path": "writer/prior-review/quality-cases.json",
+      "sha256": "ac5d807a6bc999468d36584887e05e95de188ccd2539e0eb3b6c02a562cf5d95",
+      "bytes": 4208
+    },
+    {
+      "path": "writer/prior-review/quality-evidence.json",
+      "sha256": "9512db3c70e8f041c678c9c220436c5a827fb6d263ad7c3a0a0adf5d50097a93",
+      "bytes": 17660
+    },
+    {
+      "path": "writer/prior-review/review.json",
+      "sha256": "afcf795ecdb9e4f76ab15ff5da84a480d56442b6fde9914c189b8f3b4e0bacb8",
+      "bytes": 1041
+    },
+    {
+      "path": "writer/prior-review/sources.json",
+      "sha256": "d7294cffc39c3637a328f3cfa204820a6531c7f391509de5c254372f51bedb3c",
+      "bytes": 1274
+    },
+    {
+      "path": "writer/recovered-cache.json",
+      "sha256": "53f2c44cd20d896fcdfb79076f490102725b1f213aa5cc4abd9af42842c7d7ee",
+      "bytes": 18230
+    },
+    {
+      "path": "writer/retrieval.json",
+      "sha256": "352239858a7262263c1b54e26ed03cb745e0e3d6512a4ef265389842c255d55a",
+      "bytes": 736
+    },
+    {
+      "path": "writer/review-correction-checks.json",
+      "sha256": "dbf4bc93183039901b51f7531c255f8bf9cb3f015de771eadc8f445bcb38abca",
+      "bytes": 259
+    },
+    {
+      "path": "writer/review-correction-ownership.json",
+      "sha256": "9263f2616ebfc68d268876aab5b7f9dba143b94e0ad8d867b75a8ebbfbdc72bf",
+      "bytes": 47688
+    },
+    {
+      "path": "writer/row-sources.json",
+      "sha256": "0da32d527bc01a2b49b1c656a6baa5b9347495fbcff6f275e2a89b950f055ed4",
+      "bytes": 425
+    },
+    {
+      "path": "writer/scoped-checks.json",
+      "sha256": "bc356e7db39fb0c2a6b6a9a71e7267b8e0ec46170b6472eff77ab73272744b64",
+      "bytes": 93
+    },
+    {
+      "path": "writer/scoped-checks.txt",
+      "sha256": "f9785c076182c71206ab72d20c6b56183e9172fbd7292c01fe1f361d518976d1",
+      "bytes": 1318
+    },
+    {
+      "path": "independent-review/RECEIPT.json",
+      "sha256": "f01f7bb4a18c0529108015504eec1abd35e6fd252695ca1b357a68a6d43bd5b9",
+      "bytes": 98268
+    },
+    {
+      "path": "independent-review/REPORT.md",
+      "sha256": "8a51ab230928e74242f5cace2989d42899d391ef77aedf2c4d01136e2ee224ad",
+      "bytes": 7126
+    },
+    {
+      "path": "validation/shared-tests.txt",
+      "sha256": "50b2fb5d95de56411a79d5737c81eb9236be8efa8af1ef4b0bcbc897ea9996ab",
+      "bytes": 510
+    },
+    {
+      "path": "validation/shared-test-applicability.json",
+      "sha256": "8bd4326f179ed529e60cdd1cd43e7897af2d89d4fd8fd4c4de0f9c69fe7a468c",
+      "bytes": 574
+    }
+  ],
+  "supplements": [
+    {
+      "path": "CI-ADDENDUM.md",
+      "sha256": "469f72953826c77e97cc005b38241a626ac8d67fe709c2211d9f98ac13ab1d43",
+      "bytes": 2212
+    },
+    {
+      "path": "CI-ADDENDUM.json",
+      "sha256": "6b2a91153ae01b5ce217b00c821284e52c89a6479871abb6fd97ba27d0b125e8",
+      "bytes": 3754
+    },
+    {
+      "path": "figures-ci-failure.txt",
+      "sha256": "6764c9f827a1d4c994aa1f553e3c7f6138c778e8d273138f2ce73b003e5226f7",
+      "bytes": 5472
+    },
+    {
+      "path": "ci-correction-validation.txt",
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa",
+      "bytes": 192
+    },
+    {
+      "path": "ci-correction-sync.txt",
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9",
+      "bytes": 81
+    }
+  ]
+}
