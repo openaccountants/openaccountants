@@ -15,36 +15,50 @@ description: >
   regulated licences, registry fees and incorporation timetables.
 jurisdiction: LI
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: 0.3
+version: 0.4
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
-# Liechtenstein company formation and entity screening v0.3
+# Liechtenstein company formation and entity screening v0.4
 
-## Scope and first decision
+> **General reference only.** This Guide supports a formation workpaper. A qualified Liechtenstein professional must review the actual documents, permissions and filings before action.
+
+## Scope
 
 This skill prepares the 2026 GmbH formation route and flags the capital rules of other legal forms (AG, Anstalt, foundation; trusts are out of scope). It follows the [PGR consolidated 1 September 2026][law] and the [Office of Justice GmbH fact sheet dated July 2025][factsheet]. Companies are entered in the commercial register (Handelsregister) kept by the Office of Justice (Amt für Justiz) and acquire legal personality on registration. Every formed legal entity then enters the tax system: test the CHF 1,800 minimum tax and its exception in [li-corporate-income-tax](li-corporate-income-tax.md).
 
 Retain business/purpose and regulated-activity facts, founders/beneficiaries, ownership/control, intended country of work and management, capital currency and funding, registered office/service address, governance, licensing, expected accounts/size and beneficial-owner evidence. Tax residence and trade/sector permission are separate determinations; registration alone does not settle them.
 
-## Capital is not a fee or tax
+## Ask the client first
+
+- What is the purpose, activity and chosen legal form, including any regulated business?
+- Who are the founders, beneficiaries and ultimate controllers, and where will they work and manage the business?
+- What capital currency, contributions, funding documents and noncash assets are proposed?
+- What seat, service address, managers, representation powers and qualifications will apply?
+- What financial year, expected balance sheet, turnover, employees and previous size classifications apply?
+- Will a review waiver be sought, and which corporate approvals and supporting documents exist?
+
+## The method, step by step
+
+### Capital is not a fee or tax
 
 | Form/screen | Statutory minimum in selected nominal currency | Source and limitation |
 |---|---|---|
-| GmbH | CHF 10,000, or EUR 10,000, or USD 10,000 | PGR article 122; each member's contribution rules in article 391 |
-| AG, or an Anstalt or other legal entity whose capital is divided into shares | CHF 50,000, or EUR 50,000, or USD 50,000 | Article 122; AG formation/payment rules remain separately applicable |
-| Anstalt or other legal entity whose capital is not divided into shares | CHF 30,000, or EUR 30,000, or USD 30,000 | Article 122; determine actual legal form before applying |
-| Foundation | CHF 30,000, or EUR 30,000, or USD 30,000 | PGR article 552 section 13; no full foundation method supplied |
+| GmbH | CHF 10,000, or EUR 10,000, or USD 10,000 | [PGR article 122; each member's contribution rules in article 391](https://www.gesetze.li/konso/pdf/1926004000) |
+| AG, or an Anstalt or other legal entity whose capital is divided into shares | CHF 50,000, or EUR 50,000, or USD 50,000 | [PGR article 122](https://www.gesetze.li/konso/pdf/1926004000); AG formation/payment rules remain separately applicable |
+| Anstalt or other legal entity whose capital is not divided into shares | CHF 30,000, or EUR 30,000, or USD 30,000 | [PGR article 122](https://www.gesetze.li/konso/pdf/1926004000); determine actual legal form before applying |
+| Foundation | CHF 30,000, or EUR 30,000, or USD 30,000 | [PGR article 552 section 13](https://www.gesetze.li/konso/pdf/1926004000); no full foundation method supplied |
 
 These are statutory nominal-currency alternatives, not amounts translated at a current exchange rate. Article 122(2) requires the statutory minimum capital/assets to be fully contributed. It does **not** mean every AG's entire higher subscribed capital must always be paid in full: article 284 separately addresses full subscription and at least 25% on each share, with any higher statutory/articles requirement and the overall minimum retained. Contributions in kind require their own evidence/procedure. The AG arithmetic below is only a funding screen. [PGR, articles 122 and 284][law]
 
 For GmbH members, article 391 requires at least CHF 50 per member contribution, its stated multiples/quotas, and full payment or contribution in kind at formation. The fact sheet identifies expert valuation for in-kind contributions and capital at the company's free disposal on registration. These matters are not proved by a bank-balance total alone. [PGR, article 391][law]; [fact sheet, sections 7–8][factsheet]
 
-## Ordinary GmbH preparation method
+### Ordinary GmbH preparation method
 
 1. Decide the actual form/purpose and applicable regulated/trade permissions. An asset-holding purpose is not automatically an ordinary commercial business or a PVS tax classification.
 2. Choose the normal publicly authenticated articles or the article 390(5) simplified route. The latter requires at most three shareholders, one manager, the authority model and no departures from the law; shareholder signatures still require authentication. It is not a universal online/self-service exemption from formalities. [PGR, article 390][law]
@@ -55,9 +69,9 @@ For GmbH members, article 391 requires at least CHF 50 per member contribution, 
 
 ### Management evidence is not a residence shortcut
 
-PGR 180a(1)–(2) specifies the qualified management/representation member and licence/equivalence routes;180a(3)–(4) contains express supervised/trade/association exceptions, including the stated foundation caveat. Keep the actual qualification/licence or exemption evidence. Article 180b separately bars the specified incapable/convicted representatives, including corresponding EEA exclusions, requires a no-exclusion declaration at registration and addresses later resignation/removal of representation. Its specified conviction exclusion lasts five years from the final judgment. A postal address alone proves none of these conditions. [PGR 180a–180b][law]
+PGR 180a(1)–(2) specifies the qualified management/representation member and licence/equivalence routes; 180a(3)–(4) contains express supervised/trade/association exceptions, including the stated foundation caveat. Keep the actual qualification/licence or exemption evidence. Article 180b separately bars the specified incapable/convicted representatives, including corresponding EEA exclusions, requires a no-exclusion declaration at registration and addresses later resignation/removal of representation. Its specified conviction exclusion lasts five years from the final judgment. A postal address alone proves none of these conditions. [PGR 180a–180b][law]
 
-## Accounts, review and disclosure
+### Accounts, review and disclosure
 
 PGR article 1064 provides the size criteria and separate first-application/two-period rules. Article 1058a allows the stated commercial micro-companies to waive a review, with exclusions, a unanimous decision, signed declaration/supporting evidence and continuing rights to demand a review. It is not an automatic exemption because one year's turnover is small. Audit/review, the choice of reviewer and an accounting-period change need their own current classification. [PGR, articles 1058a and 1064][law]
 
@@ -65,22 +79,22 @@ PGR article 1064 provides the size criteria and separate first-application/two-p
 
 For the article 1063 entities, establish the exact legal form, financial year, accounting currency and any special article 1057/public-interest/disclosure regime before the ordinary tests below. The current Swiss-franc thresholds in PGR 1064 are:
 
-| Size class | Balance sheet | Net turnover | Average employees | Test |
+| Size class | Balance sheet | Net turnover | Average employees | Test and official source |
 |---|---:|---:|---:|---|
-| Micro | CHF 580,000 | CHF 1,160,000 | 10 | At least two of three not exceeded |
-| Small | CHF 9.2 million | CHF 18.5 million | 50 | At least two of three not exceeded |
-| Medium | CHF 32.4 million | CHF 64.8 million | 250 | At least two small limits exceeded and at least two medium limits not exceeded |
-| Large | Above the medium class under the statutory test | As specified | As specified | At least two medium limits exceeded |
+| Micro | CHF 580,000 | CHF 1,160,000 | 10 | At least two of three not exceeded; [PGR 1064](https://www.gesetze.li/konso/pdf/1926004000) |
+| Small | CHF 9.2 million | CHF 18.5 million | 50 | At least two of three not exceeded; [PGR 1064](https://www.gesetze.li/konso/pdf/1926004000) |
+| Medium | CHF 32.4 million | CHF 64.8 million | 250 | At least two small limits exceeded and at least two medium limits not exceeded; [PGR 1064](https://www.gesetze.li/konso/pdf/1926004000) |
+| Large | Above the medium class under the statutory test | As specified | As specified | At least two medium limits exceeded; [PGR 1064](https://www.gesetze.li/konso/pdf/1926004000) |
 
 These are current PGR 1064(1)–(3) figures, with the monetary amendments first applicable to financial years beginning on/after 1 January 2024, as specified in the consolidation's notes 1952–1959. Equality is “not exceeded”; it is not a requirement that all three limits be met. Article 1064(4) ordinarily requires the conditions at two consecutive balance-sheet dates, with its first-application rule at the first balance-sheet date. Keep the two-year record or the actual first-application basis. Article 1064(5) requires prescribed thresholds for non-CHF accounts, not an invented exchange-rate conversion. [PGR 1063–1064 and application notes][law]
 
-Article 1058 distinguishes statutory audit from review. Under the ordinary route, a small company outside the stated special-disclosure exception has a review rather than an automatic audit exemption with no assurance. A qualifying **commercial micro-company** can waive that review only through1058a's actual procedure; segmented entities and bearer-share AGs are excluded. Obtain the unanimous governing-body decision, signed management declaration and minutes/current supporting accounts, retain the filing/registration, and adjust the articles where necessary. Members can demand a review later, and the authority can require renewed evidence. Do not infer a waiver from size alone or describe an unsigned intention as a registered waiver. This is an assurance screen, not a full consolidated-accounts/sustainability method. [PGR 1058–1058a][law]
+Article 1058 distinguishes statutory audit from review. Under the ordinary route, a small company outside the stated special-disclosure exception has a review rather than an automatic audit exemption with no assurance. A qualifying **commercial micro-company** can waive that review only through 1058a's actual procedure; segmented entities and bearer-share AGs are excluded. Obtain the unanimous decision of the supreme organ (the shareholders' meeting for a GmbH), signed management declaration and minutes/current supporting accounts, retain the filing/registration, and adjust the articles where necessary. Members can demand a review later, and the authority can require renewed evidence. Do not infer a waiver from size alone or describe an unsigned intention as a registered waiver. This is an assurance screen, not a full consolidated-accounts/sustainability method. [PGR 1058–1058a][law]
 
 Under article 1122(1), the covered company's approved annual accounts and required report must be filed with the Office of Justice **before expiry of the twelfth month after the balance-sheet date**, subject to an actual granted extension and the provision's scope. A valid review waiver affects the required report, not the underlying disclosure obligation. Tax filing and corporate approvals have separate clocks. Article 1122(6) requires electronic submission of the paragraph 1 documents. Preserve the actual electronic receipt and extension decision; a review waiver does not cancel accounts filing. The fact sheet corroborates the GmbH reporting route; it is not a complete annual-accounts or sustainability skill. [PGR, article 1122][law]; [fact sheet, sections 10–11][factsheet]
 
 Registry fees, late-filing penalties and business-permission procedures are not covered here; take them from the Office of Justice for the case.
 
-## Worked controls
+## Worked cases
 
 ### Three-founder GmbH capital reconciliation
 
@@ -121,7 +135,7 @@ expected:
   assumed_unpaid_subscribed_amount: 50000
 ```
 
-## Ask and refer
+## When to refuse or refer
 
 Establish purpose/licensing, actual founders/beneficiaries/control, intended residence/management, capital currency and contributions, governance/service address, representation and accounts/size. Refer trusts, foundations, Anstalt control/benefits, segmented entities, noncash contributions, foreign owners/management, regulated activities, disqualification, review waivers and all disputed formation/tax cases.
 
@@ -129,9 +143,9 @@ Establish purpose/licensing, actual founders/beneficiaries/control, intended res
 
 | Source | URL | Read on |
 |---|---|---|
-| Personen- und Gesellschaftsrecht (PGR), LR 216.0, consolidated 1 September 2026, articles 122, 180a-180b, 261, 284, 390-391, 394, 552 section 13, 1057-1058a, 1063-1064, 1122 | https://www.gesetze.li/konso/pdf/1926004000 | 2026-10-30 |
-| Amt für Justiz, fact sheet on the GmbH (July 2025) | https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-justiz/handelsregister/merkblaetter/007_merkblatt_zur_gmbh.pdf | 2026-10-30 |
-| Amt für Justiz, registering a GmbH | https://www.llv.li/de/privatpersonen/beruf-und-arbeitsplatz/handelsregister/eintragungen/gesellschaft-mit-beschraenkter-haftung | 2026-10-30 |
+| Personen- und Gesellschaftsrecht (PGR), LR 216.0, consolidated 1 September 2026, selected provisions read: articles 122, 180a-180b, 284, 390-391, 394, 552 section 13, 1057-1058a, 1063-1064, 1122 and application notes 1952-1959 | https://www.gesetze.li/konso/pdf/1926004000 | 2026-11-16 |
+| Amt für Justiz, fact sheet on the GmbH (July 2025), sections 1-12, focusing on formation, capital, governance, review and disclosure; web reader after direct-download 403 | https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-justiz/handelsregister/merkblaetter/007_merkblatt_zur_gmbh.pdf | 2026-11-16 |
+| Amt für Justiz, registering a GmbH, registration requirement and links to current authority templates; forms not submitted | https://www.llv.li/de/privatpersonen/beruf-und-arbeitsplatz/handelsregister/eintragungen/gesellschaft-mit-beschraenkter-haftung | 2026-11-16 |
 
 Not yet confirmed: registry fees; incorporation timetable; late-filing penalties for annual accounts; trusts and the full foundation regime; thresholds for accounts in a currency other than CHF; beneficial-owner filing particulars.
 
