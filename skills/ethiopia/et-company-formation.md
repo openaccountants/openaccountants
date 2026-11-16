@@ -12,7 +12,7 @@ domain: formation
 type: decision
 ---
 
-# Ethiopia Company Formation & Entity Choice
+# Ethiopia Company Formation & Entity Choice v0.3
 
 ## Scope
 
