@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2440,
+ "count": 2449,
  "publication_holds": [
   {
    "name": "cameroon-social-contributions",
@@ -11,31 +11,11 @@
    "reason": "status: needs_sources"
   },
   {
-   "name": "kg-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "kh-corporate-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "kr-social-insurance",
    "reason": "status: needs_sources"
   },
   {
    "name": "laos-vat",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "mn-corporate-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "mn-payroll-social",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "mo-vat-gst",
    "reason": "status: needs_sources"
   },
   {
@@ -51,19 +31,11 @@
    "reason": "status: needs_sources"
   },
   {
-   "name": "pg-corporate-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "pk-payroll",
    "reason": "status: needs_sources"
   },
   {
    "name": "pk-social-contributions",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "png-gst",
    "reason": "status: needs_sources"
   },
   {
@@ -76,10 +48,6 @@
   },
   {
    "name": "th-corporate-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "tl-corporate-income-tax",
    "reason": "status: needs_sources"
   },
   {
@@ -3987,7 +3955,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "cameroon-corporate-income-tax",
@@ -10908,7 +10876,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "kg-corporate-income-tax",
@@ -10917,7 +10885,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "kg-income-tax",
+   "jurisdiction": "KG",
+   "path": "skills/kyrgyzstan/kg-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "kg-payroll-social",
@@ -10926,7 +10903,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "kg-tax-overview",
@@ -10935,7 +10912,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "kg-vat-gst",
@@ -10944,7 +10921,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "kh-company-formation",
@@ -10953,7 +10930,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "kh-corporate-income-tax",
+   "jurisdiction": "KH",
+   "path": "skills/cambodia/kh-corporate-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "kh-income-tax",
@@ -10962,7 +10948,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "kh-payroll-social",
@@ -10971,7 +10957,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "kh-tax-overview",
@@ -10980,7 +10966,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ki-vat-reference",
@@ -13068,12 +13054,21 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mn-corporate-and-pte",
    "jurisdiction": "US-MN",
    "path": "skills/us/states/mn/mn-corporate-and-pte.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "mn-corporate-income-tax",
+   "jurisdiction": "MN",
+   "path": "skills/mongolia/mn-corporate-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -13098,6 +13093,15 @@
    "tax_year": 2026
   },
   {
+   "name": "mn-payroll-social",
+   "jurisdiction": "MN",
+   "path": "skills/mongolia/mn-payroll-social.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "mn-sales-tax",
    "jurisdiction": "US-MN",
    "path": "skills/us/states/mn/mn-sales-tax.md",
@@ -13113,7 +13117,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mo-company-formation",
@@ -13122,7 +13126,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mo-corporate-income-tax",
@@ -13131,7 +13135,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mo-corporate-tax",
@@ -13167,7 +13171,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mo-sales-tax",
@@ -13185,7 +13189,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "mo-vat-gst",
+   "jurisdiction": "MO",
+   "path": "skills/macau/mo-vat-gst.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "moldova-income-tax",
@@ -13248,7 +13261,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "montenegro-income-tax",
@@ -14481,7 +14494,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nepal-payroll",
@@ -14490,7 +14503,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nepal-tds",
@@ -14499,7 +14512,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nepal-vat",
@@ -14508,7 +14521,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "netherlands-bookkeeping",
@@ -16344,7 +16357,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "pg-corporate-income-tax",
+   "jurisdiction": "PG",
+   "path": "skills/papua-new-guinea/pg-corporate-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "pg-income-tax",
@@ -16353,7 +16375,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "pg-payroll-social",
@@ -16362,7 +16384,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "pg-tax-overview",
@@ -16371,7 +16393,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ph-company-formation",
@@ -16545,6 +16567,15 @@
    "tax_year": 2025
   },
   {
+   "name": "pk-provincial-sales-tax-services",
+   "jurisdiction": "PK",
+   "path": "skills/pakistan/pk-provincial-sales-tax-services.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "pk-return-assembly",
    "jurisdiction": "PK",
    "path": "skills/pakistan/pk-return-assembly.md",
@@ -16701,6 +16732,15 @@
    "name": "pn-landing-fee-passenger-levy-reference",
    "jurisdiction": "PN",
    "path": "skills/pitcairn/pn-landing-fee-passenger-levy-reference.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "png-gst",
+   "jurisdiction": "PG",
+   "path": "skills/papua-new-guinea/png-gst.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -19368,7 +19408,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "tl-corporate-income-tax",
+   "jurisdiction": "TL",
+   "path": "skills/timor-leste/tl-corporate-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "tl-income-tax",
@@ -19377,7 +19426,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "tl-payroll-social",
@@ -19386,7 +19435,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "tl-tax-overview",
@@ -19395,7 +19444,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "tl-vat-gst",
@@ -19404,7 +19453,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "tm-company-formation",
@@ -21933,7 +21982,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ws-corporate-income-tax",
@@ -21942,7 +21991,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ws-income-tax",
@@ -21951,7 +22000,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ws-payroll-social",
@@ -21960,7 +22009,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ws-tax-overview",
@@ -21969,7 +22018,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ws-vat-gst",
@@ -21978,7 +22027,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "wv-corporate-tax",
