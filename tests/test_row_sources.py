@@ -1,5 +1,6 @@
 """Row-by-row figure check (scripts/check-row-sources.py): offline, with fake pages."""
 import importlib.util
+import json
 import os
 import unittest
 
@@ -48,6 +49,57 @@ class RowSources(unittest.TestCase):
         _, misses, _ = rs.check_text(t, pages(**{A: "the rate is twenty per cent " * 40}))
         self.assertEqual([m[0] for m in misses], ["25%"])
 
+    def test_fractional_word_rates_and_wrong_rate_controls(self):
+        for page, figure in [
+            ('one and a half percentum', '1.5%'),
+            ('ONE AND A\nHALF PERCENTUM', '1.5%'),
+            ('one and one-half per cent', '1.5%'),
+            ('two and a half percent', '2.5%'),
+            ('twenty-one and a half percentum', '21.5%'),
+            ('twenty one and a half percentum', '21.5%'),
+            ('twenty\none and a half percentum', '21.5%'),
+            ('twenty-\none and a half percentum', '21.5%'),
+            ('half per cent', '0.5%'),
+            ('one half percentum', '0.5%'),
+        ]:
+            with self.subTest(page=page):
+                text = skill(f'| Charge | {figure} | [law]({A}) |')
+                _, misses, _ = rs.check_text(text, pages(**{A: page}))
+                self.assertEqual(misses, [])
+        for page, figure in [
+            ('one and a half percentum', '15%'),
+            ('one and a half percentum', '2.5%'),
+            ('one half percentum', '1.5%'),
+            ('one and a half months; contribution is two percentum', '1.5%'),
+            ('one and a half per thousand', '1.5%'),
+            ('one and a half percentage points', '1.5%'),
+            ('one and a half percentumage', '1.5%'),
+            ('section one and a half; chapter percentum', '1.5%'),
+            ('twenty\none and a half percentum', '1.5%'),
+            ('twenty-\none and a half percentum', '1.5%'),
+        ]:
+            with self.subTest(page=page, wrong=figure):
+                text = skill(f'| Charge | {figure} | [law]({A}) |')
+                _, misses, _ = rs.check_text(text, pages(**{A: page}))
+                self.assertEqual([m[0] for m in misses], [figure])
+
+    def test_explicit_million_and_billion_amounts(self):
+        for page, figure in [
+            ('annual turnover exceeding 1.8 million baht', '1,800,000'),
+            ('turnover 1.8 billion baht', '1,800,000,000'),
+            ('turnover 2 MILLION baht', '2,000,000'),
+            ('turnover 1,234 million baht', '1,234,000,000'),
+        ]:
+            with self.subTest(page=page):
+                text = skill(f'| Threshold | THB {figure} | [law]({A}) |')
+                _, misses, _ = rs.check_text(text, pages(**{A: page}))
+                self.assertEqual(misses, [])
+        for page in ['1.8 months', '18 million baht', 'bare 1.8', '1.8 millionth', '1,8 million baht']:
+            with self.subTest(wrong_scale=page):
+                text = skill(f'| Threshold | THB 1,800,000 | [law]({A}) |')
+                _, misses, _ = rs.check_text(text, pages(**{A: page}))
+                self.assertEqual([m[0] for m in misses], ['1,800,000'])
+
     def test_url_with_brackets_is_kept_whole(self):
         u = "https://law.example.gov/act_(01-07-24).pdf"
         t = skill(f"| Rate | 7% | [act]({u}) |")
@@ -72,6 +124,52 @@ class RowSources(unittest.TestCase):
         text = rs.read_bytes(page.encode())
         self.assertIn("vähintään 1,30 ja enintään 2,00", text)
         self.assertNotIn("<b>", text)
+
+    def test_next_data_article_is_read_without_metadata_numbers(self):
+        data = {'props': {'pageProps': {
+            'response': {'news_detial': {'detail': '<p>Government pays <b>2.75%</b> &amp; employers pay 5%.</p>',
+                                        'articleId': 918273}},
+            'analytics': {'rate': '9.75%', 'body': 'not article text 8.25%'},
+        }}}
+        page = '<script type="application/json" id="__NEXT_DATA__">' + json.dumps(data) + '</script>'
+        text = rs.read_bytes(page.encode())
+        self.assertIn('2.75%', text)
+        self.assertIn('& employers pay 5%', text)
+        self.assertNotIn('<b>', text)
+        self.assertNotIn('918273', text)
+        values = rs.page_values(text)
+        self.assertTrue(rs.found('2.75%', values))
+        self.assertFalse(rs.found('9.75%', values))
+        self.assertFalse(rs.found('8.25%', values))
+
+    def test_next_data_without_article_does_not_supply_metadata(self):
+        for data in [
+            {'props': {'pageProps': {'analytics': {'rate': '2.75%'}}}},
+            {'props': {'pageProps': {'response': {'news_detial': {'id': '2.75'}}}}},
+            {'props': {'pageProps': []}},
+            {'props': None},
+            [],
+        ]:
+            with self.subTest(data=data):
+                page = '<script id="__NEXT_DATA__">' + json.dumps(data) + '</script>'
+                self.assertFalse(rs.found('2.75%', rs.page_values(rs.read_bytes(page.encode()))))
+
+    def test_invalid_next_data_and_other_scripts_remain_ignored(self):
+        for page in [
+            '<script id="__NEXT_DATA__">{not valid JSON 2.75%}</script>',
+            '<script data-id="__NEXT_DATA__">{"props":{"pageProps":{"body":"2.75%"}}}</script>',
+            '<script id="analytics">{"props":{"pageProps":{"body":"2.75%"}}}</script>',
+        ]:
+            with self.subTest(page=page):
+                self.assertFalse(rs.found('2.75%', rs.page_values(rs.read_bytes(page.encode()))))
+
+    def test_next_data_article_script_and_style_are_not_source_text(self):
+        data = {'props': {'pageProps': {'article': {'body': '<p>5%</p><script>9.75%</script><style>8.25%</style>'}}}}
+        page = '<script id="__NEXT_DATA__">' + json.dumps(data).replace('<', '\\u003c') + '</script>'
+        values = rs.page_values(rs.read_bytes(page.encode()))
+        self.assertTrue(rs.found('5%', values))
+        self.assertFalse(rs.found('9.75%', values))
+        self.assertFalse(rs.found('8.25%', values))
 
     def test_decimal_comma_pages_pass(self):
         t = skill(f"| Rate | 2.25% on EUR 4,050 | [law]({A}) |", f"| Cap | EUR 1,234.56 | [b]({B}) |")

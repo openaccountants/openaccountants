@@ -26,6 +26,7 @@ import re
 import subprocess
 import sys
 import zipfile
+from decimal import Decimal
 
 # A URL may hold balanced brackets (gibraltarlaws.gov.gi/...(01-07-24).pdf).
 LINK_RE = re.compile(r"https?://(?:[^\s()|>\"\]]|\([^\s()|>\"\]]*\))+")
@@ -166,6 +167,15 @@ for _n in range(1, 201):
             _WORD_VALUES[_w] = _n
 _WORD_RE = re.compile(r"\b(" + "|".join(re.escape(w) for w in sorted(_WORD_VALUES, key=len, reverse=True))
                       + r")\s*(?:\(\s*[\d.,]+\s*\)\s*)?" + PERCENT_WORDS, re.IGNORECASE)
+_ENGLISH_VALUES = {w: n for n in range(1, 201) for w in _en(n)}
+_HALF_PERCENT_RE = re.compile(
+    r"\b(?:(?P<whole>" + "|".join(re.escape(w).replace(r'\ ', r'\s+').replace(r'\-', r'-\s*')
+                                 for w in sorted(_ENGLISH_VALUES, key=len, reverse=True))
+    + r")\s+and\s+)?(?:a\s+half|one[ -]half|half)\s*"
+    + PERCENT_WORDS + r"\b", re.IGNORECASE)
+_SCALED_NUMBER_RE = re.compile(
+    r"(?<![\w.,])(?P<number>(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?)"
+    r"\s+(?P<scale>million|billion)\b", re.IGNORECASE)
 _ZH_DIGITS = {"一": 1, "二": 2, "两": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9}
 
 
@@ -182,6 +192,10 @@ def word_percent_values(page_text):
     vals = set()
     for m in _WORD_RE.finditer(_strip_accents(page_text)):
         vals.add(float(_WORD_VALUES[m.group(1).lower()]))
+    for m in _HALF_PERCENT_RE.finditer(page_text):
+        words = re.sub(r'-\s+', '-', re.sub(r'\s+', ' ', m.group('whole').lower())) if m.group('whole') else ''
+        whole = _ENGLISH_VALUES[words] if words else 0
+        vals.add(whole + 0.5)
     for m in re.finditer(r"百分之([一二两三四五六七八九十百]{1,4})", page_text):
         v = _zh_number(m.group(1))
         if v: vals.add(float(v))
@@ -204,6 +218,9 @@ def page_values(page_text):
         except ValueError:
             pass
     vals |= word_percent_values(page_text)
+    for m in _SCALED_NUMBER_RE.finditer(page_text):
+        multiplier = 1_000_000 if m.group('scale').lower() == 'million' else 1_000_000_000
+        vals.add(round(float(Decimal(m.group('number').replace(',', '')) * multiplier), 6))
     return vals
 
 
@@ -234,10 +251,11 @@ def read_bytes(raw):
             return ""
     t = raw.decode("utf-8", "replace")
     flight = next_flight_text(t)
+    article = next_data_text(t)
     # Some sites (vero.fi) keep a table as JSON inside a long attribute value: keep that text too.
     attrs = " ".join(html.unescape(a) for a in re.findall(r'="([^"]{50,})"', t))
     t = re.sub(r"(?s)<script.*?</script>|<style.*?</style>", " ", t)
-    return html.unescape(re.sub(r"<[^>]+>", " ", t)) + flight + (" " + attrs if attrs else "")
+    return html.unescape(re.sub(r"<[^>]+>", " ", t)) + flight + article + (" " + attrs if attrs else "")
 
 
 # Next.js sites (finlex.fi and others) ship the page text inside
@@ -256,6 +274,33 @@ def next_flight_text(page):
     if not parts:
         return ""
     return " " + html.unescape(re.sub(r"<[^>]+>", " ", "".join(parts)))
+
+
+def next_data_text(page):
+    """Article bodies in Pages Router JSON, excluding analytics, IDs and other metadata."""
+    bodies = []
+
+    def article_bodies(node):
+        if not isinstance(node, dict):
+            return
+        for key in ('articleBody', 'body', 'content', 'detail'):
+            value = node.get(key)
+            if isinstance(value, str):
+                bodies.append(value)
+        for key in ('article', 'post', 'news', 'news_detail', 'news_detial', 'response', 'data'):
+            article_bodies(node.get(key))
+
+    for attrs, body in re.findall(r'<script\b([^>]*)>(.*?)</script\s*>', page, re.I | re.S):
+        if not re.search(r'''(?:^|\s)id\s*=\s*(["'])__NEXT_DATA__\1''', attrs, re.I):
+            continue
+        try:
+            data = json.loads(body)
+        except (ValueError, TypeError):
+            continue
+        if isinstance(data, dict) and isinstance(data.get('props'), dict):
+            article_bodies(data['props'].get('pageProps'))
+    text = re.sub(r'(?is)<script\b.*?</script>|<style\b.*?</style>', ' ', ' '.join(bodies))
+    return ' ' + html.unescape(re.sub(r'<[^>]+>', ' ', text)) if text else ''
 
 
 _cache = {}
