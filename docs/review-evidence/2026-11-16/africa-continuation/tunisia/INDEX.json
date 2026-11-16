@@ -3,13 +3,17 @@
   "assigned_guides": [
     "skills/tunisia/tn-company-formation.md"
   ],
-  "content_head": "5eb724a12b8bbd83ea5d346ab85fabda71c1910f",
-  "guide_sha256": "bc0c7fd3b91eb9202e263eaa0ee70e3a0087460f651d61d998eb6509ab90c804",
-  "independent_review": "accepted all46ledgerrows/26oldtopics/2cases; noopenfindings",
+  "content_head": "b7695a7d80ee0c8707678368d44d16abb2d3d995",
+  "guide_sha256": "ece53509c181e51453965d8efcccdd0874a390bc4b7714a19f8089f9444ce7d1",
+  "original_content_head": "5eb724a12b8bbd83ea5d346ab85fabda71c1910f",
+  "original_guide_sha256": "bc0c7fd3b91eb9202e263eaa0ee70e3a0087460f651d61d998eb6509ab90c804",
+  "independent_review": "Originalall46ledgerrows/26oldtopics/2casesaccepted;exact4replacementformatdeltaaccepted",
   "canonical_review_byte_exact": {
     "REVIEW.json": "a6aa6683169e8fa868522b185e234d2f1400d7170355e47273afdcd67354d640",
     "REVIEW.md": "3a3fe308e8943f09d38893b33ce04b35330345fc02b33deb1e7a33af0b8ee165",
-    "READ-SCOPES.json": "88dbc01ac02efd5c09d106c63a9bee75637b3a3722045276a6df6cc7f402f795"
+    "READ-SCOPES.json": "88dbc01ac02efd5c09d106c63a9bee75637b3a3722045276a6df6cc7f402f795",
+    "FORMAT-DELTA-REVIEW.json": "da487553af2fb2bbde6099343e71e69e28a1d2123e24a6cbb990025d7a626e27",
+    "FORMAT-DELTA-REVIEW.md": "7ac13b2497ae33f39cf8d3694d0e3c4ba460ddaa99e09455c838633a829f4402"
   },
   "raw_full_sources_included": false,
   "members": [
@@ -19,9 +23,14 @@
       "sha256": "ced2250534c6a388e1d7ab1bb89fee26e6b6a00dbf49b52bb8b1166245d5c183"
     },
     {
+      "path": "FORMAT-DELTA.md",
+      "bytes": 1096,
+      "sha256": "2504edef3331e704a5f3e7c7493003fcc63d041a8bc715396cda4d50dac79e58"
+    },
+    {
       "path": "GUIDE-BINDINGS.json",
-      "bytes": 1139,
-      "sha256": "ebe47dcf48cec91c18f66c7bc3ecd67ac0c55b705bb517a03d5d4d0530f4c99c"
+      "bytes": 1591,
+      "sha256": "f606ca1999c5b31a089fe6386728267952cd9c3da27fa5fe38efd63e59cb9228"
     },
     {
       "path": "LEDGER.json",
@@ -45,8 +54,8 @@
     },
     {
       "path": "PUBLIC-MANIFEST.json",
-      "bytes": 3177,
-      "sha256": "986d6ba0446cce24ec39411413ddbda171bf2cd75b452becfa181cb114df1cb2"
+      "bytes": 4335,
+      "sha256": "2f5498319758c30f6b1c2631bac22f4ca7f1009d488add9647d91d65dd3f4a13"
     },
     {
       "path": "READ-SCOPES.json",
@@ -74,9 +83,24 @@
       "sha256": "ddadff6c20fd8be081815dc716057f12762fe1c2baf50208300ef44cca98a716"
     },
     {
-      "path": "frozen-guides/tn-company-formation.md",
+      "path": "frozen-guides/ORIGINAL-REVIEWED-tn-company-formation.md",
       "bytes": 20823,
       "sha256": "bc0c7fd3b91eb9202e263eaa0ee70e3a0087460f651d61d998eb6509ab90c804"
+    },
+    {
+      "path": "frozen-guides/tn-company-formation.md",
+      "bytes": 20871,
+      "sha256": "ece53509c181e51453965d8efcccdd0874a390bc4b7714a19f8089f9444ce7d1"
+    },
+    {
+      "path": "independent-review/FORMAT-DELTA-REVIEW.json",
+      "bytes": 1527,
+      "sha256": "da487553af2fb2bbde6099343e71e69e28a1d2123e24a6cbb990025d7a626e27"
+    },
+    {
+      "path": "independent-review/FORMAT-DELTA-REVIEW.md",
+      "bytes": 903,
+      "sha256": "7ac13b2497ae33f39cf8d3694d0e3c4ba460ddaa99e09455c838633a829f4402"
     },
     {
       "path": "independent-review/READ-SCOPES.json",
@@ -129,9 +153,39 @@
       "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8"
     },
     {
+      "path": "validation/format-delta-row-sources.txt",
+      "bytes": 323,
+      "sha256": "db78522195b7ff1be2f81d8f5ba538a4c19efc02ac22d91a7026bf5908ff48ea"
+    },
+    {
+      "path": "validation/format-delta-skill-checks.json",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "validation/format-delta-sync.txt",
+      "bytes": 81,
+      "sha256": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6"
+    },
+    {
+      "path": "validation/format-delta-validation.txt",
+      "bytes": 192,
+      "sha256": "a7d8a057660b3d212d944ce39725ec8cef8aa0fa1ee6a85ef9d7c717d65fc074"
+    },
+    {
+      "path": "validation/format-delta.patch",
+      "bytes": 5317,
+      "sha256": "6bd5a69833349a733c53fe4d48355c7d58f671aec8cc9cbe88b4d8de7fbafe1e"
+    },
+    {
       "path": "validation/quote-and-copy-tests.txt",
       "bytes": 119,
       "sha256": "61eb80fe3436ab9db2ec6dbde3dd3dfba6b9de3d77be4dc8355a74d28952475c"
+    },
+    {
+      "path": "validation/remote-figures-initial-failure.txt",
+      "bytes": 1794,
+      "sha256": "f85a89b84b506c5ae61486c5f27081835b3c29efa35833fbb67ab4f839846230"
     },
     {
       "path": "validation/row-sources.txt",
@@ -164,5 +218,5 @@
       "sha256": "a7d8a057660b3d212d944ce39725ec8cef8aa0fa1ee6a85ef9d7c717d65fc074"
     }
   ],
-  "archive_sha256": "d3edc4f5c2e5aedfcc3e4ae2f3211e3e637ce9532d5130dd9de205b938d6e85d"
+  "archive_sha256": "90de7b53bee04edc784c2e4855e5f708b58b5bb8774ab88187388e220ec389b6"
 }
