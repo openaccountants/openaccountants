@@ -1,424 +1,188 @@
 ---
 name: ng-payroll
-description: Use this skill whenever asked to compute, review, or advise on end-to-end Nigerian monthly payroll for employees — gross-to-net calculation, payslip generation, statutory deduction sequencing (Pension, NHF, NHIS, CRA, PAYE), employer remittance scheduling (PAYE to SIRS, Pension to PFC/PFA, NHF to FMBN, NSITF to NSITF), and year-end Form H1 reconciliation. Trigger on phrases like "Nigeria payroll", "compute Nigerian payroll", "Nigerian pay slip", "payslip Nigeria", "monthly payroll Nigeria", "payroll computation Nigeria", "PAYE and pension together", "deductions Nigeria", "gross to net Nigeria", "Lagos payroll", "LIRS payroll", "FIRS payroll", "Form H1 Nigeria", "annual payroll reconciliation Nigeria", or any request involving running monthly payroll for one or more employees in Nigeria. This skill is the ORCHESTRATOR — it pulls PAYE rules from `ng-paye` and statutory employer/employee contributions (Pension, NHF, NSITF, ITF, NHIS, EDT) from `ng-statutory-deductions` and sequences them into the correct computation order. ALWAYS read this skill before touching Nigerian payroll computation.
+description: Run Nigerian employee payroll for 2026 from gross cash and benefits through approved contribution inputs, current personal income tax, net cash, employer cost, payslip and remittance reconciliation. Preserves the named 2025 sample separately, corrects CRA and non-cash treatment, and flags scheme, jurisdiction, termination and unconfirmed portal or levy deadlines.
 jurisdiction: NG
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: '2026-11-16'
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+version: '1.1'
+type: computation
+category: payroll
 ---
 
-# NG Payroll
+# Nigeria payroll computation v1.1
 
-## Nigeria — Payroll Computation (End-to-End) — Skill v1.0
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-> **Scope note:** This skill is the **end-to-end monthly payroll orchestrator**. It does NOT redefine PAYE brackets, CRA formulas, pension percentages, or NHF thresholds — those live in the dependency skills (`ng-paye`, `ng-statutory-deductions`). This skill defines the **sequence**, the **payslip layout**, the **remittance calendar**, and the **year-end reconciliation workflow**.
->
-> **2025 changes summary (v1.0):** The Nigeria Tax Administration Act 2025 (NTA 2025), passed in Q1 2025 with phased commencement through 2026, introduces a **unified payroll module under FIRS Tax Pro-Max** intended to consolidate PAYE filings for federal MDAs and (subject to MoU) state Internal Revenue Services. As of the 2025 tax year, **state IRS portals (LIRS e-tax, FCT-IRS, OGIRS, etc.) remain the primary PAYE remittance channel** for private-sector employers. See Section 5 for the current remittance routing.
+## Scope
 
-## Rates and thresholds
+For ordinary Nigerian employee payroll paid in2026. This file owns the sequence, payslip, net cash and employer-cost reconciliation. [ng-personal-income-tax](ng-personal-income-tax.md) owns the personal rate bands, deductions and residence method; [ng-pension-nhf-social-contributions](ng-pension-nhf-social-contributions.md) owns the contribution assessment. Load their limits before using any result. The nonexistent old links ng-paye and ng-statutory-deductions are replaced by these actual files. [ng-wht](ng-wht.md) handles a director or contractor payment that is not employment.
 
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
+The new income-tax method applies to current employment earnings, including paid bonuses. It has no CRA deduction or old personal minimum-tax floor. Do not use the historical sample as a2026 payroll. Employer contributions are extra employer cost; they are not deductions from employee cash. Non-cash taxable benefits increase taxable earnings but cannot be paid again as net cash. [NTA sections13,14,26,28,30 and58](https://nass.gov.ng/documents/download/11249).
 
-### ng-payroll
-
-- **Employee Pension contribution rate** — 8% of BHT (Basic + Housing + Transport)  _(PRA 2014 §4(3))_
-- **Employer Pension contribution rate** — 10% of BHT (Basic + Housing + Transport)  _(PRA 2014)_
-- **Employee NHF contribution rate** — 2.5% of basic salary
-- **NHF applicability threshold (monthly basic salary)** — NGN 3,000 per month
-- **NHIS employee contribution rate (federal MDAs, common default)** — 5% of emloyee's basic salary monthly  _(national health insurance authourity)_
-- **Consolidated Relief Allowance (CRA) — annual minimum floor** — The Consolidated Relief Allowance (CRA) was completely abolished and replaced in the Personal Income Tax (PIT) regime. It no longer exists for payroll and tax computations.  _(nigerian tax act 2025)_
-- **Consolidated Relief Allowance (CRA) — monthly minimum floor** —   _(nigerian tax act 2025)_
-- **Consolidated Relief Allowance (CRA) — percentage of gross income component** —   _(nigerian tax act 2025)_
-- **Minimum tax rate (NTA 2025)** — 0.15  _(nigerian tax act 2025)_
-- **PAYE monthly remittance deadline** — 10th of the following month  _(PITA)_
-- **Pension remittance deadline (employee + employer combined)** — Within 7 working days of salary payment date  _(PRA 2014)_
-- **NHF remittance deadline** — Within 1 month of deduction
-- **NSITF monthly remittance deadline** — on or before the 15th day of the succeeding month  _(Employees' compensation Act (ECA) 2010)_
-- **ITF annual return deadline** — march 31st of every year
-- **Form H1 (Annual Employer's Return) filing deadline** — 31 January of the following year  _(PITA)_
-- **Form H1 coverage period** — 1 January – 31 December (preceding tax year)  _(PITA)_
-- **PAYE late remittance penalty — surcharge rate** — 10% of unremitted tax  _(PITA §82)_
-- **PAYE late remittance penalty — interest rate** — CBN MPR  _(nigerian tax act 2025)_
-- **Pension late remittance penalty** — ≥2% per month of unremitted amount  _(PRA 2014 §11(7))_
-- **NHF late remittance penalty — individual** — NGN 5,000 or a one year prison term or both
-- **NHF late remittance penalty — body corporate** — NGN 50,000
-- **NSITF late remittance penalty — surcharge rate** — 10% of contribution + applicable interest
-- **Termination payment / gratuity exemption review threshold** — gratuity are tax -excempt  _(nigerian tax act 2025)_
-- **Salary sacrifice into pension above statutory employee minimum — permitted maximum per PRA 2014** — Above 8% statutory minimum permitted under PRA 2014 §11(7)  _(PRA 2014 §11(7))_
-- **NTA 2025 FIRS Tax Pro-Max — Phase 1 commencement (federal MDAs)** — tax pro max is no longer in use
-- **NTA 2025 FIRS Tax Pro-Max — Phase 2 commencement (state IRS integration, expected)** — tax pro max is no longer in use
-- **Personal / children allowances — abolished** — Abolished in 2020  _(PITA (amended 2020))_
-
-## Section 1 — Quick reference: payroll component order
-
-**Payroll component order table**
-
-| Step | Component | Effect on employee PAYE base | Paid by |
-| --- | --- | --- | --- |
-| 1 | **Gross monthly emolument** (basic + housing + transport + other taxable allowances + BIK) | Starting point | — |
-| 2 | − Employee Pension contribution (8% of BHT, see `ng-statutory-deductions`) | **Reduces** PAYE base | Employee |
-| 3 | − Employee NHF contribution (2.5% of basic, if applicable) | **Reduces** PAYE base | Employee |
-| 4 | − Employee NHIS contribution (if scheme operated; varies) | **Reduces** PAYE base | Employee |
-| 5 | = Gross income for CRA purposes | — | — |
-| 6 | − Consolidated Relief Allowance (CRA) — `max(NGN 200,000, 1% × gross) + 20% × gross` | **Reduces** PAYE base | — |
-| 7 | = Chargeable income | — | — |
-| 8 | Apply PITA Sixth Schedule progressive brackets (see `ng-paye`) | → PAYE liability | — |
-| 9 | = **PAYE for the month** | — | Employee (withheld) |
-| 10 | Net pay = Gross − Employee Pension − Employee NHF − Employee NHIS − PAYE − any voluntary deductions | — | — |
-
-The order of deductions matters because **Pension and NHF reduce the chargeable income** before PAYE is computed, while **NSITF, ITF, EDT and the employer pension share are employer costs** that do NOT affect the employee's PAYE base.
-
-**Employer-side costs (parallel, do NOT affect employee net)**
-
-| Component | Rate / amount | Notes |
+| Rate or deadline control | Verified boundary or deadline | Source |
 | --- | --- | --- |
-| Employer Pension | 10% of BHT | Remitted to employee's PFA via PFC |
-| NSITF (ECS) | 1% of total payroll | Employer-only |
-| ITF | 1% of total payroll (employers with ≥ 5 staff OR turnover ≥ NGN 50m) | Annual return |
-| EDT (Tertiary Education Tax) | Not employer payroll cost — corporate tax on assessable profits |  |
-| NHIS employer share | If group scheme operated; varies |  |
+| PAYE remittance | Within10 days after month-end, to the employee's correct authority | [JRB2026 Guidelines paragraphs5/6/12](https://cms-api.jrb.gov.ng/api/publication-assets/file/2026-pit-guidelines-TJG3n9-T%20%281%29.pdf) |
+| Employer annual return | By31 January for the preceding year's employees; employee annual filing remains separate | [NTAA section14](https://nass.gov.ng/documents/download/11250) |
+| Pension remittance | Employee plus employer amounts within7 WORKING days of salary payment | [PRA section11(3)](https://ngfrepository.org.ng:8443/bitstream/123456789/968/1/PENSION%20REFORM%20ACT%202014%20-%20GAZETTED%20COPY.pdf) |
+| Pension late remittance | In addition to arrears, Commission penalty not less than2% of unpaid contribution per month or part | [PRA section11(6)/(7)](https://ngfrepository.org.ng:8443/bitstream/123456789/968/1/PENSION%20REFORM%20ACT%202014%20-%20GAZETTED%20COPY.pdf) |
+| NHF remittance | Within1 month of deduction, for liable contributors | [NHF Act sections9/10](https://fmbn.gov.ng/backend/storage/uploads/37UNgpzsyASabzhQCnHuyzFtIpnsfmW2ODvAmQSG.pdf) |
+| ECS employer funding | NSITF currently describes1% of monthly payroll as employer-funded. The Act's initial1% provision covered its first2 years and later risk assessments are authorised; check the actual employer assessment. | [NSITF services](https://nsitf.gov.ng/services/); [ECA sections33 to38](https://nsitf.gov.ng/api/uploads/documents/cd29f838-1f78-450d-8650-9d1a6ada54aa.pdf) |
 
-> **Conservative default:** When in doubt whether a deduction reduces the PAYE base, treat it as **non-deductible** (i.e. PAYE is computed on the higher figure) and flag for reviewer. Over-withholding can be refunded via year-end reconciliation; under-withholding triggers SIRS penalties and interest.
+## Ask the client first
 
-## Section 2 — Required inputs & refusal catalogue
+1. Pay month/date, employee residence and allocation history, Tax ID, employer registration/code, prior payroll and year-to-date earnings/PAYE, other employments and start/leave dates.
+2. Contract cash split, bonus/commission/overtime, arrears, non-cash benefits and employee contributions, asset acquisition/rental values, accommodation and occupied period.
+3. Actual pension scheme coverage and contractual pensionable emoluments, employer/employee rates, RSA/PFA/PFC, NHF status/basic salary, approved health scheme and actual eligible remittances.
+4. Claimed rent and other personal deductions with receipts/period/landlord information; loans, union/subscription or other authorised voluntary deductions kept separately.
+5. Employer ECS assessment, ITF applicability and assessment, group life cover and scheme-specific health cost; each body's actual payment instruction/calendar.
 
-### 2.1 Inputs required to run a payroll
+## The method, step by step
 
-**Inputs required to run a payroll table**
+### Establish schemes and employee records
 
-| Input | Source | Notes |
-| --- | --- | --- |
-| TIN (Tax Identification Number) | Employee record / JTB | Required for PAYE filing; flag if missing |
-| State of tax residence | Employee record | Determines which SIRS receives PAYE (per PITA §2(2)) |
-| Gross monthly emolument breakdown | Contract / HR | Must split Basic / Housing / Transport / Other |
-| Pension scheme status | RSA + PFA details | Confirm employee has RSA opened |
-| NHF applicability | Salary ≥ NGN 3,000/month and Nigerian citizen | See `ng-statutory-deductions` |
-| NHIS scheme details | If operated by employer | Optional except for federal MDAs |
-| Marital / dependent status | Not relevant for CRA (Nigeria abolished personal/children allowances in 2020) | Retained only for HR records |
-| Benefits in Kind (BIK) for the month | HR / accounts payable | Must be quantified before PAYE |
+Use the contribution owner's assessment, not a default for everyone. PRA section2(2) expressly applies the private-sector scheme to organisations with15 or more employees; its definition of employer and PenCom guidance use other counts, so an employer below that express threshold requires the applicable current guidance, not a universal3-person conclusion here. Section4 prescribes minimum employee8% and employer10% of contractual monthly emoluments, with the basic/housing/transport floor in section120. An employer electing to fund everything must contribute at least20%; simply adding8% and10% is not that election. Higher agreed rates and voluntary contributions need scheme/tax treatment checked. These rules are implementation context; the contribution home owns the rate decision. [PRA sections2,4,11 and120](https://ngfrepository.org.ng:8443/bitstream/123456789/968/1/PENSION%20REFORM%20ACT%202014%20-%20GAZETTED%20COPY.pdf).
 
-### 2.2 Refusal catalogue — out of scope for this skill
+The Act also requires group life cover of at least3 times annual total emoluments for covered employees; record premium and cover as employer cost rather than salary deduction. Missing RSA is not permission to invent one: section11(5) provides a nominal-account route subject to Commission guidelines after6 months. Obtain actual identifiers and remittance evidence. Foreign staff and exempt schemes need their own coverage determination. [PRA sections4(5),5 and11](https://ngfrepository.org.ng:8443/bitstream/123456789/968/1/PENSION%20REFORM%20ACT%202014%20-%20GAZETTED%20COPY.pdf).
 
-**Refusal catalogue table**
+NHF section4 says2.5% of basic monthly salary for a Nigerian worker earning at least NGN3,000 PER ANNUM; section9 governs employer deduction/remittance. It does not say NGN3,000 per month, and section10 is not a universal voluntary self-employed exemption. Current scheme administration or any later amendment must be reconciled for the actual contributor before using a historic threshold to deny coverage. No universal NHIS/NHIA employee or employer percentage is established here. [NHF sections4,9 and10](https://fmbn.gov.ng/backend/storage/uploads/37UNgpzsyASabzhQCnHuyzFtIpnsfmW2ODvAmQSG.pdf).
 
-| Scenario | Action |
+### Compute gross taxable income and PAYE
+
+1. Total cash basic, housing, transport, other taxable allowances, bonuses/commission and arrears actually taxable in the period. Identify genuine expense reimbursements separately; a label alone does not exempt cash.
+2. Value non-cash benefits under the personal-tax home's section14 method. Owned assets use cost, falling back to acquisition market value only if cost is unknown; hired assets use rent/hire. Apply the actual exclusions and accommodation cap. Keep taxable value separate from cash paid.
+3. Aggregate taxable income, then subtract actual eligible deductions under the personal-tax home. Pension/NHF/qualifying NHIS are not automatic estimated deductions, and employee loans are not tax relief. Apply properly evidenced rent/other deductions and the correct year rules. Do not deduct employer pension from employee income.
+4. Apply current personal bands to the appropriate annual/period computation, reconciling cumulative taxable income, prior PAYE, starts/leavers, other employers and non-periodic payments. A steady full-year salary may use annual tax divided by12 as the illustration below; that shortcut is not a universal rule for a bonus, termination or partial year. JRB paragraph13 taxes non-periodic amounts in the month paid, and NTA section26 fixes the relevant payment-year rules. Keep the exact cumulative worksheet and the authority's prescribed procedure. [NTA sections13,14,26,28,30 and58](https://nass.gov.ng/documents/download/11249); [JRB paragraphs6 to13](https://cms-api.jrb.gov.ng/api/publication-assets/file/2026-pit-guidelines-TJG3n9-T%20%281%29.pdf).
+
+### Net cash and employer cost
+
+Net cash = cash earnings minus actual employee contributions, PAYE and authorised voluntary cash deductions. Taxable non-cash benefits are not added to cash earnings in that formula. Show any reimbursement separately. Employer cost = cash pay plus employer pension, assessed ECS, applicable ITF, employer health, group life and actual benefit costs; do not substitute taxable benefit value for its actual employer cost. Accrue employer liabilities without deducting them a second time from employee net pay. ECA section14 prohibits employees funding the compensation scheme. [ECA section14](https://nsitf.gov.ng/api/uploads/documents/cd29f838-1f78-450d-8650-9d1a6ada54aa.pdf); [PRA sections4/11](https://ngfrepository.org.ng:8443/bitstream/123456789/968/1/PENSION%20REFORM%20ACT%202014%20-%20GAZETTED%20COPY.pdf). Development levy is a company assessable-profit item in ng-cit, not an extra flat payroll charge.
+
+ITF's fetched official FAQ describes5 staff OR NGN50m annual turnover and1% annual payroll, with31 March payment, but the current live browser did not expose that operative FAQ and its penalty wording refers to1 April. Those applicability/deadline/penalty claims remain held under Sources until the operative current page/Act is obtained. The example preserves its ITF amount as a given accrual, not a coverage ruling. Never deduct it from staff.
+
+### Payslip, postings and reconciliation
+
+Use a clear recommended payslip with employer name/address/Tax ID, employee name/Tax ID/state/RSA where applicable, period and pay date, cash components, non-cash taxable benefits separately, itemised employee deductions/PAYE, voluntary deductions and net cash. Show employer contributions for transparency and year-to-date gross, PAYE and employee pension. This is a recommended control layout, not a verified assertion that every listed item is a statutory payslip field. Post gross wages, each employer expense and separate liabilities; tie net cash to the bank file and each payment to its authority/scheme receipt.
+
+The original illustrative identity is retained: **ACME NIGERIA LTD**,12 Awolowo Road, Ikoyi, Lagos; **Adaeze Okafor**; employer TIN12345678-0001, employee TIN98765432-0001, RSA PIN PEN100123456789. These are fictional sample identifiers, not prescribed formats. The original pay date is28 May2025, period1 to31 May2025. Use the historical case below for that payslip and change the date only when actually preparing a different payroll. The old placeholder "56,xxx.xx" is not a computed PAYE value.
+
+## Boundary and exception table
+
+| Situation | Required handling |
 | --- | --- |
-| Cross-border employment (employee tax-resident outside Nigeria, employer in Nigeria) | Refer to a qualified Nigerian tax consultant — treaty analysis required |
-| Expatriates with split-pay arrangements (home-country + Nigeria) | Out of scope; refer to specialist |
-| Directors' fees not paid through payroll | Out of scope — covered by WHT under `ng-paye` |
-| Employee stock options / share-based payments | Out of scope — bespoke valuation and CGT interaction |
-| Salary sacrifice into pension above 8% statutory | Permitted under PRA 2014 §11(7) but flag for reviewer — quantum and PAYE-deductibility need confirmation |
-| Termination payments / gratuity > NGN 10m | Flag — exemption thresholds and tax treatment require legal review |
-| Backdated salary adjustments spanning > 1 tax year | Refer to specialist — re-opening of prior-year H1 may be required |
+| Bonus, salary arrears, joiner/leaver, multiple employers or negative true-up | Reconcile actual year/month and prior tax. No automatic12-month bonus spread or unapproved refund in the next year. |
+| Expatriate, split payroll, foreign currency, treaty or cross-border work | Obtain residence/duties, contract and conversion evidence; route the non-resident skill and refer an unresolved tax point. |
+| Director fees or contractor | Determine employment first; a withholding contract is not payroll solely because paid monthly. |
+| Stock options, accommodation, company car, domestic staff | Obtain valuation and actual availability/use; no invented higher-of-cost-and-market rule or blanket exemption. |
+| Redundancy, gratuity, pension, loss of office | Separate the legal components; use ng-cgt for compensation threshold and ng-wht for deduction, then annual reconciliation. |
+| Voluntary pension above ordinary minimum or missing RSA | Verify scheme terms and tax conditions. No invented20% employee cap or presumed automatic account. |
+| Unresolved scheme or levy deadline | Show assessed liability and held filing step; do not publish the old conflicting ECS15th/14-day/month-end dates as law. |
 
-## Section 3 — Step-by-step payroll computation
+## Worked cases
 
-The procedure below is the **canonical monthly run**. Apply per employee.
+**Original full-year steady-pay facts,2026 comparison.** Monthly cash NGN500,000: basic250,000/housing100,000/transport50,000/utility50,000/meal50,000; no non-cash benefit. Confirmed monthly pension32,000 and NHF6,250, NHIS0. Contractual pension basis is400,000 in this scenario. Annual chargeable income before rent is5,541,000. Current annual tax787,380, monthly65,615; net396,135. With evidenced annual tenant rent2.5m, rent relief500k produces annual tax697,380, monthly58,115, net403,635, saving7,500 monthly. These amounts assume the same confirmed deductions all year and no bonus, other income or prior-year adjustment. Employer pension40,000, ECS5,000 and given ITF accrual5,000 make monthly employer cost550,000; coverage and levy assessment are inputs, not decided by this arithmetic.
 
-### Step 1 — Build the gross emolument
-
-- **Gross monthly emolument formula** — Basic salary                          B + Housing allowance                   H + Transport allowance                 T + Other taxable allowances            O   (utility, meal, leave, entertainment, etc.) + Cash bonus paid in month            X + Benefits in Kind (BIK)              K = Gross monthly emolument             G = B + H + T + O + X + K
-- **Note on BHT** — Pension contributions are computed on **Basic + Housing + Transport** (BHT), not on G. See `ng-statutory-deductions` for the legislative basis (PRA 2014 §4(3)).  _(PRA 2014 §4(3))_
-
-### Step 2 — Compute statutory deductions that reduce PAYE base
-
-**Statutory deductions reducing PAYE base table**
-
-| Deduction | Formula | Notes |
-| --- | --- | --- |
-| Employee Pension | 8% × (B + H + T) | Per PRA 2014 |
-| Employee NHF | 2.5% × B | Only if Nigerian citizen AND monthly basic ≥ NGN 3,000 |
-| Employee NHIS | Per scheme rules (commonly 1.75% × B for federal MDAs) | Skip if no scheme |
-
-Call these collectively `D_pre`.
-
-### Step 3 — Compute CRA gross income and CRA
-
-- **CRA computation formula** — Gross_for_CRA = G − D_pre CRA = max(NGN 200,000 annual / NGN 16,666.67 monthly, 1% × Gross_for_CRA) + 20% × Gross_for_CRA
-
-**Monthly application:** Divide annual CRA components by 12, OR — recommended approach — compute on annualized gross and divide the result by 12. The annualized approach is more accurate when income varies month-to-month and matches the year-end reconciliation. See `ng-paye` for the canonical formula.
-
-### Step 4 — Chargeable income
-
-- **Chargeable income formula** — Chargeable_monthly = Gross_for_CRA − CRA_monthly
-
-### Step 5 — Apply PITA Sixth Schedule progressive brackets
-
-- **Annualization method** — Annualize `Chargeable_monthly × 12`, apply the brackets from `ng-paye`, divide the result by 12 to get **monthly PAYE**. The annualized method avoids the regressive distortion that occurs when applying brackets directly to monthly income.
-
-### Step 6 — Minimum tax check
-
-- **Minimum tax check** — If the computed PAYE is less than **1% of gross income** (minimum tax under PITA §37, see `ng-paye`), substitute the minimum tax. Common for low earners; rare for the salary range typically processed via formal payroll.  _(PITA §37)_
-
-### Step 7 — Net pay
-
-- **Net pay formula** — Net pay = G − Employee Pension − Employee NHF − Employee NHIS − PAYE − Voluntary deductions (loan repayments, salary advance recoveries, union dues, etc.)
-
-### Step 8 — Employer-side accruals (parallel posting)
-
-**Employer-side accruals table**
-
-| Item | Posted to |
-| --- | --- |
-| Employer Pension 10% × BHT | DR Payroll expense, CR Pension payable |
-| NSITF 1% × total payroll | DR Payroll expense, CR NSITF payable |
-| ITF 1% × total payroll (qualifying employers) | DR Payroll expense, CR ITF payable (accrued monthly, paid annually) |
-
-## Section 4 — Payslip components & sample
-
-A **conforming Nigerian payslip** must show, at minimum:
-
-1. Employer name, address, employer TIN
-2. Employee name, employee TIN, RSA PIN, state of tax residence
-3. Pay period and pay date
-4. Gross emolument breakdown (basic, housing, transport, other allowances, BIK)
-5. Statutory deductions, **itemized** (Pension, NHF, NHIS, PAYE)
-6. Voluntary deductions
-7. Net pay
-8. Employer contributions (for transparency — Pension 10%, NSITF, ITF)
-9. YTD totals (cumulative gross, cumulative PAYE, cumulative pension)
-
-### Sample payslip — Lagos employee, NGN 500,000 gross monthly
-
-> Full worked numbers are in Section 7. The layout below is the recommended template.
-
-```
-+-----------------------------------------------------------------+
-|  ACME NIGERIA LTD                       PAYSLIP — MAY 2025      |
-|  12 Awolowo Road, Ikoyi, Lagos                                  |
-|  Employer TIN: 12345678-0001                                    |
-+-----------------------------------------------------------------+
-|  Employee: Adaeze Okafor       TIN: 98765432-0001               |
-|  RSA PIN: PEN100123456789      State of residence: LAGOS        |
-|  Pay date: 28 May 2025         Period: 01-31 May 2025           |
-+-----------------------------------------------------------------+
-|  EARNINGS                              NGN                      |
-|    Basic salary                        250,000.00               |
-|    Housing allowance                   100,000.00               |
-|    Transport allowance                  50,000.00               |
-|    Utility allowance                    50,000.00               |
-|    Meal allowance                       50,000.00               |
-|    Gross emolument                     500,000.00               |
-+-----------------------------------------------------------------+
-|  DEDUCTIONS                            NGN                      |
-|    Employee Pension (8% × BHT)          32,000.00               |
-|    NHF (2.5% × Basic)                    6,250.00               |
-|    PAYE                                 56,xxx.xx (see §7)      |
-|    Total deductions                                             |
-+-----------------------------------------------------------------+
-|  NET PAY                               NGN xxx,xxx              |
-+-----------------------------------------------------------------+
-|  EMPLOYER CONTRIBUTIONS (info only)    NGN                      |
-|    Employer Pension (10% × BHT)         40,000.00               |
-|    NSITF (1% × Gross)                    5,000.00               |
-|    ITF (1% × Gross, accrued)             5,000.00               |
-+-----------------------------------------------------------------+
-|  YTD TOTALS (Jan–May 2025)              NGN                     |
-|    Gross YTD                          2,500,000.00              |
-|    PAYE YTD                             [auto]                  |
-|    Pension YTD (employee)              160,000.00               |
-+-----------------------------------------------------------------+
+```oa-check
+name: Nigeria steady payroll tenant decision current law
+inputs:
+  monthly_cash: 500000
+  employee_pension: 32000
+  employee_nhf: 6250
+  annual_rent: 2500000
+  employer_pension: 40000
+  assessed_ecs: 5000
+  given_itf_accrual: 5000
+steps:
+  - annual_before_rent: (monthly_cash - employee_pension - employee_nhf) * 12
+  - rent_relief: min(annual_rent * 0.20, 500000)
+  - tax_no_rent: 2200000 * 0.15 + (annual_before_rent - 3000000) * 0.18
+  - tax_tenant: 2200000 * 0.15 + (annual_before_rent - rent_relief - 3000000) * 0.18
+  - paye_no_rent: tax_no_rent / 12
+  - paye_tenant: tax_tenant / 12
+  - net_no_rent: monthly_cash - employee_pension - employee_nhf - paye_no_rent
+  - net_tenant: monthly_cash - employee_pension - employee_nhf - paye_tenant
+  - employer_cost: monthly_cash + employer_pension + assessed_ecs + given_itf_accrual
+expected:
+  annual_before_rent: 5541000
+  rent_relief: 500000
+  tax_no_rent: 787380
+  tax_tenant: 697380
+  paye_no_rent: 65615
+  paye_tenant: 58115
+  net_no_rent: 396135
+  net_tenant: 403635
+  employer_cost: 550000
 ```
 
-## Section 5 — Monthly remittance calendar
+**Original May2025 sample corrected.** Use the same monthly split/contributions, no NHIS and no other deductions, with full-year steady earnings. Historical defined gross after eligible contributions is5,541,000; CRA1,308,200; chargeable4,232,800; annual tax807,872; monthly67,322.67; net394,427.33. This corrects the raw-gross CRA approach and placeholder in the original. Five identical months give cash gross2.5m, pension160k and PAYE336,613.33 before actual payroll rounding reconciliation. This is historical PITA arithmetic under confirmed contribution assumptions, not a2026 CRA.
 
-**Monthly remittance calendar table**
+```oa-check
+name: Adaeze Okafor original historical payroll CRA corrected
+inputs:
+  monthly_cash: 500000
+  monthly_pension: 32000
+  monthly_nhf: 6250
+steps:
+  - historical_gross_base: (monthly_cash - monthly_pension - monthly_nhf) * 12
+  - cra: max(200000, historical_gross_base * 0.01) + historical_gross_base * 0.20
+  - chargeable: historical_gross_base - cra
+  - annual_tax: 300000 * 0.07 + 300000 * 0.11 + 500000 * 0.15 + 500000 * 0.19 + 1600000 * 0.21 + (chargeable - 3200000) * 0.24
+  - monthly_paye: annual_tax / 12
+  - monthly_net: monthly_cash - monthly_pension - monthly_nhf - monthly_paye
+  - five_month_paye: monthly_paye * 5
+expected:
+  historical_gross_base: 5541000
+  cra: 1308200
+  chargeable: 4232800
+  annual_tax: 807872
+  monthly_paye: 67322.67
+  monthly_net: 394427.33
+  five_month_paye: 336613.33
+```
 
-| Item | Recipient | Deadline | Channel |
-| --- | --- | --- | --- |
-| **PAYE** | Relevant State IRS (state of employee's tax residence) | **10th of the following month** | LIRS e-tax (Lagos); FCT-IRS portal (FCT); other state IRS portals or bank Pay-Direct |
-| **Employee + Employer Pension** | Pension Fund Custodian (PFC) for credit to employee's PFA | **Within 7 working days** of salary payment date | PFA transfer via PFC; PenCom RSA Multifund schedule |
-| **NHF** | Federal Mortgage Bank of Nigeria (FMBN) | **Within 1 month** of deduction | FMBN-designated commercial banks |
-| **NSITF (ECS)** | Nigeria Social Insurance Trust Fund | **Monthly, by the last day of the following month** | NSITF e-portal / designated banks |
-| **NHIS (if operated)** | NHIS / HMO | Per scheme rules — typically monthly | HMO direct |
-| **ITF (employer only)** | Industrial Training Fund | **Annual** — by 1 April of following year | ITF portal |
+**Non-cash control.** Cash salary500k, taxable non-cash benefit20k, actual employee contributions38,250 and given PAYE69,215 produce net cash392,535, not412,535. The benefit affects the tax computation upstream; it is not cash due to the employee. This case tests posting, not a legal valuation or tax calculation.
 
-### NTA 2025 unified module (status note)
+```oa-check
+name: Payroll noncash benefit must not inflate cash payable
+inputs:
+  cash: 500000
+  taxable_noncash: 20000
+  actual_employee_contributions: 38250
+  computed_paye_input: 69215
+steps:
+  - taxable_gross: cash + taxable_noncash
+  - net_cash: cash - actual_employee_contributions - computed_paye_input
+expected:
+  taxable_gross: 520000
+  net_cash: 392535
+```
 
-- **NTA 2025 unified payroll module rollout** — The NTA 2025 unified payroll module under **FIRS Tax Pro-Max** is being rolled out in phases: - **Phase 1 (2025):** Federal MDAs migrate from IPPIS-only PAYE flows to Tax Pro-Max integration. Private-sector employers are NOT required to switch. - **Phase 2 (TBC, expected 2026):** State IRS integration via MoU. **Until the relevant state IRS publishes its onboarding notice, continue using the existing state portal (LIRS e-tax, etc.).** - **Conservative default:** Continue with current state IRS portals; track NTA 2025 commencement notices monthly.
+## When to refuse or refer
 
-### Late-payment penalties (summary — full detail in `ng-paye` and `ng-statutory-deductions`)
+Do not finalise pay where residence, benefit value, lawful deduction authority, current-year tax, scheme coverage or actual remittance cannot be established. Produce a labelled working paper with missing fields and preserve earned-pay evidence. Refer the boundary cases; do not silently default to a higher tax bracket, disallow every disputed credit or fabricate pension identifiers. This reference does not authorise portal filing or payment.
 
-**Late-payment penalties table**
+## Filing and payment
 
-| Item | Penalty |
-| --- | --- |
-| PAYE late remittance | 10% of unremitted tax + interest at CBN MPR + 5% (PITA §82) |
-| Pension late remittance | 2% per month of unremitted amount (PRA 2014 §11(7)) |
-| NHF late remittance | NGN 50,000 (individual) / NGN 100,000 (body corporate) + recovery |
-| NSITF late remittance | 10% of contribution + interest |
+After payroll approval, keep separate instructions for employee net pay, PAYE by authority, pension/PFC, NHF/FMBN, ECS/NSITF and applicable ITF. Save payroll schedules, bank proof and authority/scheme receipts separately; a bank transfer alone does not prove the return filed or the employee account credited. Use the table's verified deadlines. For ECS the Act sets assessment and instalment machinery; obtain the employer-specific monthly instruction rather than choose one of the old unsourced dates. For ITF the current operative deadline remains held. No universal unified TaxProMax payroll module or phased2025/2026 activation date was verified.
 
-## Section 6 — Year-end activities
+At year-end tie employee gross, deductions, net, PAYE and scheme liabilities across every month, bank payment and ledger; resolve December true-ups. File the employer annual return with each appropriate authority by the table's date, showing each employee's gross including benefits, deductions, net and tax deducted. Give an employee a reconciliation statement with income, PAYE and relevant authority/reference; do not import Kenyan "P9A/P9B" as Nigerian official form names. Confirm whether the actual authority uses H1 or monthly FormG rather than claim universal nomenclature. [NTAA section14](https://nass.gov.ng/documents/download/11250); [JRB paragraph7/12](https://cms-api.jrb.gov.ng/api/publication-assets/file/2026-pit-guidelines-TJG3n9-T%20%281%29.pdf).
 
-### 6.1 Form H1 — Annual Employer's Return
+Current tax late-return/deduction/remittance sanctions are in NTAA sections101/105/107 and ng-wht; pension penalties appear above. NHF section20 distinguishes corporate50k and responsible payroll-officer20k/five-year sanctions from self-employed5k/one-year sanctions on conviction; it is not a generic employee5k fine for every employer. No unsourced fixed NHIA/ECS/ITF penalty is added. [NHF section20](https://fmbn.gov.ng/backend/storage/uploads/37UNgpzsyASabzhQCnHuyzFtIpnsfmW2ODvAmQSG.pdf). Retain records under [NTAA section31](https://nass.gov.ng/documents/download/11250) and the relevant scheme obligations.
 
-- **Form H1 filing requirement** — Every employer must file **Form H1 (Annual Employer's Return of all emoluments paid to employees)** with the relevant State IRS by **31 January** of the following year, covering the preceding tax year (1 January – 31 December).
+## Sources
 
-**Form H1 field table**
-
-| Field | Content |
-| --- | --- |
-| Employer details | Name, TIN, address |
-| Schedule of employees | Name, TIN, RSA PIN, total gross emolument, total reliefs (CRA, pension, NHF, NHIS), chargeable income, total PAYE remitted by month |
-| Reconciliation | Sum of monthly PAYE remitted must equal computed annual PAYE per employee |
-| Variance | Any under-remittance is payable; over-remittance is offsetable against the next year (refund procedurally difficult) |
-
-### 6.2 Employee tax deduction certificate (informal "P9A/P9B equivalent")
-
-Nigeria has no single statutory equivalent of the Kenyan P9A/P9B form, but employers customarily issue an **"Employee Tax Deduction Certificate"** at year-end showing:
-
-- Gross emolument per month and YTD
-- Statutory deductions (Pension, NHF, NHIS) per month and YTD
-- PAYE deducted per month and YTD
-- Receipt numbers / SIRS PAYE schedule references
-
-This certificate enables the employee to claim WHT credits, file self-assessment if they have other income sources, or substantiate income for credit/visa applications.
-
-### 6.3 Reconciliation checklist
-
-**Reconciliation checklist table**
-
-| Check | Pass criterion |
-| --- | --- |
-| Sum of monthly Form A (PAYE schedule) = Form H1 total | ✓ |
-| Pension contributions remitted = 18% × annual BHT for each employee | ✓ |
-| NHF contributions remitted = 2.5% × annual basic for each qualifying employee | ✓ |
-| NSITF remitted = 1% × annual total payroll | ✓ |
-| ITF annual return filed (if applicable) | ✓ |
-| Any retroactive bonuses / 13th-month spread per `ng-paye` rules | ✓ |
-| BIK valuations consistent across months | ✓ |
-
-## Section 7 — Worked example
-
-**Scenario:** Software developer, **Lagos resident**, NGN **500,000 gross monthly**, employed full-time at a private fintech. No BIK. Nigerian citizen. Has RSA, TIN, and is NHF-eligible. Employer operates no NHIS group scheme.
-
-### A — Gross emolument breakdown
-
-**Gross emolument breakdown table**
-
-| Component | NGN |
-| --- | --- |
-| Basic (50% of gross) | 250,000 |
-| Housing (20%) | 100,000 |
-| Transport (10%) | 50,000 |
-| Utility allowance | 50,000 |
-| Meal allowance | 50,000 |
-| **Gross monthly (G)** | **500,000** |
-
-BHT = 250,000 + 100,000 + 50,000 = **400,000**
-
-### B — Statutory deductions reducing PAYE base
-
-**Statutory deductions reducing PAYE base table**
-
-| Item | Formula | NGN |
+| Source and actual read scope | URL | Read on |
 | --- | --- | --- |
-| Employee Pension | 8% × 400,000 | 32,000 |
-| NHF | 2.5% × 250,000 | 6,250 |
-| NHIS | n/a (no scheme) | 0 |
-| **D_pre total** |  | **38,250** |
+| NTA sections13/14,20 to32,58,162,201 and Fourth Schedule | https://nass.gov.ng/documents/download/11249 | 2026-11-16 |
+| NTAA sections3,14,31,100 to107 | https://nass.gov.ng/documents/download/11250 | 2026-11-16 |
+| JRB PIT Guidelines paragraphs5 to15 and computation Appendix1 | https://cms-api.jrb.gov.ng/api/publication-assets/file/2026-pit-guidelines-TJG3n9-T%20%281%29.pdf | 2026-11-16 |
+| PRA2014 Gazette, NGF repository: sections1 to5,10/11 and section120 monthly-emoluments definition; relevant scan pages OCR and image inspection | https://ngfrepository.org.ng:8443/bitstream/123456789/968/1/PENSION%20REFORM%20ACT%202014%20-%20GAZETTED%20COPY.pdf | 2026-11-16 |
+| FMBN Act: sections4,9,10 and20, contribution base/deadline and neighbouring penalty distinctions | https://fmbn.gov.ng/backend/storage/uploads/37UNgpzsyASabzhQCnHuyzFtIpnsfmW2ODvAmQSG.pdf | 2026-11-16 |
+| NSITF ECA: sections14 and33 to38, employee-funding prohibition and assessment machinery | https://nsitf.gov.ng/api/uploads/documents/cd29f838-1f78-450d-8650-9d1a6ada54aa.pdf | 2026-11-16 |
+| NSITF services page, current employer-funded monthly payroll statement | https://nsitf.gov.ng/services/ | 2026-11-16 |
+| Historical PITA2011 Gazette consolidated-relief allowance/bands and Finance Act2020 gross-income amendment, as detailed in personal-tax home | https://lirs.gov.ng/assets/docs/PITA-Ammendment.pdf | 2026-11-16 |
+| Finance Act2020 section29 | https://www.iirs.im.gov.ng/document/docs/FINANCE_ACT_2020.pdf | 2026-11-16 |
 
-### C — CRA computation (monthly basis using annualization)
-
-- **CRA computation worked example** — Gross_for_CRA (monthly)   = 500,000 − 38,250        = 461,750 Gross_for_CRA (annualized)                          = 5,541,000 CRA (annual) = max(200,000, 1% × 5,541,000) + 20% × 5,541,000 = max(200,000, 55,410)        + 1,108,200 = 200,000                     + 1,108,200 = 1,308,200 CRA (monthly) = 1,308,200 / 12 = 109,016.67
-
-### D — Chargeable income
-
-- **Chargeable income worked example** — Chargeable_monthly  = 461,750 − 109,016.67 = 352,733.33 Chargeable_annual   = 4,232,800
-
-### E — PAYE (PITA Sixth Schedule, applied annually then divided by 12)
-
-**PAYE bracket table**
-
-| Bracket | Slice | Rate | Tax (annual) |
-| --- | --- | --- | --- |
-| 0 – 300,000 | 300,000 | 7% | 21,000 |
-| 300,001 – 600,000 | 300,000 | 11% | 33,000 |
-| 600,001 – 1,100,000 | 500,000 | 15% | 75,000 |
-| 1,100,001 – 1,600,000 | 500,000 | 19% | 95,000 |
-| 1,600,001 – 3,200,000 | 1,600,000 | 21% | 336,000 |
-| 3,200,001 – 4,232,800 | 1,032,800 | 24% | 247,872 |
-| **Annual PAYE** |  |  | **807,872** |
-| **Monthly PAYE** | 807,872 / 12 |  | **67,322.67** |
-
-Minimum tax check: 1% × 500,000 = 5,000 → not binding (computed PAYE is higher).
-
-### F — Net pay
-
-**Net pay table**
-
-| Item | NGN |
-| --- | --- |
-| Gross | 500,000.00 |
-| − Employee Pension | (32,000.00) |
-| − NHF | (6,250.00) |
-| − PAYE | (67,322.67) |
-| **Net pay** | **394,427.33** |
-
-### G — Employer cost ledger (monthly)
-
-**Employer cost ledger table**
-
-| Item | NGN |
-| --- | --- |
-| Gross emolument | 500,000.00 |
-| Employer Pension (10% × BHT) | 40,000.00 |
-| NSITF (1% × Gross) | 5,000.00 |
-| ITF accrual (1% × Gross) | 5,000.00 |
-| **Total employer cost** | **550,000.00** |
-
-### H — Remittances arising from this payslip
-
-**Remittances arising from this payslip table**
-
-| Recipient | Amount NGN | Deadline |
-| --- | --- | --- |
-| LIRS (PAYE) | 67,322.67 | 10 Jun 2025 |
-| PFC → PFA (Pension total) | 72,000.00 | within 7 working days of pay date |
-| FMBN (NHF) | 6,250.00 | within 1 month |
-| NSITF | 5,000.00 | last day of following month |
-| ITF | 5,000.00 (accrued; paid annually by 1 Apr 2026) | annual |
-
-## Section 8 — Conservative defaults
-
-**Conservative defaults table**
-
-| Situation | Conservative position |
-| --- | --- |
-| Pension status unclear (RSA exists?) | Assume RSA exists and deduct 8% / pay employer 10% — flag for HR; under-remittance triggers 2%/month penalty |
-| NHF applicability unclear | If Nigerian citizen and basic ≥ NGN 3,000, deduct 2.5% — flag for reviewer if foreign national |
-| BIK valuation uncertain | Use higher of cost-to-employer or open-market value — flag |
-| Bonus / 13th-month timing | **Spread evenly across the 12 months of the period it relates to** for PAYE smoothing; flag if employer prefers month-paid taxation (allowed but produces a higher PAYE spike that month) |
-| Multi-state employee (works across states) | Use the state where employee is **principally resident** per PITA §2(2); flag for reviewer |
-| Mid-month joiner / leaver | Pro-rate gross emolument, pro-rate CRA on annualized basis, full statutory deductions on actual paid amounts |
-| Employee TIN missing | Compute PAYE normally but **flag immediately** — SIRS reconciliation will reject schedule without TIN |
-| Salary advance / loan recovery | Show as voluntary deduction below the line; does NOT reduce PAYE base |
-| Pay in foreign currency | Convert to NGN at CBN official rate on pay date; document the rate used |
-| Late hire — backdated salary | Apply current-month PAYE on full amount paid; do NOT spread retroactively without reviewer sign-off |
-
-## Section 9 — Sources
-
-**Sources table**
-
-| Source | Reference |
-| --- | --- |
-| Personal Income Tax Act (PITA) Cap P8 LFN 2004, as amended by Finance Acts 2019–2023 | Federal Inland Revenue Service |
-| Pension Reform Act 2014 (PRA 2014) | National Pension Commission (PenCom) |
-| National Housing Fund Act, Cap N45 LFN 2004 | Federal Mortgage Bank of Nigeria (FMBN) |
-| Employees Compensation Act 2010 (NSITF) | Nigeria Social Insurance Trust Fund |
-| Industrial Training Fund Act, Cap I9 LFN 2004 (as amended 2011) | Industrial Training Fund |
-| National Health Insurance Authority Act 2022 | NHIA (formerly NHIS) |
-| Nigeria Tax Administration Act 2025 (NTA 2025) | FIRS Tax Pro-Max unified module |
-| Lagos State Internal Revenue Service e-tax portal | https://etax.lirs.net |
-| FCT Internal Revenue Service portal | https://fctirs.gov.ng |
-| FIRS Tax Pro-Max | https://taxpromax.firs.gov.ng |
-| Companion skill — PAYE rules | `ng-paye` |
-| Companion skill — Statutory deductions | `ng-statutory-deductions` |
-| Companion skill — Income tax (self-employed) | `ng-income-tax` |
-
-## *OpenAccountants — open-source accounting skills for AI*
-
-*This is not tax advice. All outputs must be reviewed by a qualified Nigerian payroll professional or tax consultant before any payslip is issued or any remittance is made.*
+Not yet confirmed: operative ITF page/Act to resolve threshold5staff/50m, annual1% base,31March versus1April and5% monthly compound penalty; actual ECS monthly remittance due date and employer risk assessment; later NHF amendments/current coverage administration; universal NHIS/NHIA rates or1.75% employee claim; PenCom implementation for employers below15 and foreign staff; authenticated state payroll fields, compulsory payslip fields or standard H1/FormG labels; a universal P9A/P9B form, employee tax-clearance issuance, automatic next-year refund/offset, statutory maximum voluntary employee pension deduction or unfetched minimum-wage changes. The original sample's statutory amounts remain given facts, not proof of scheme coverage.

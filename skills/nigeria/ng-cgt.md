@@ -1,238 +1,163 @@
 ---
 name: ng-cgt
-description: Use this skill whenever asked about Nigerian Capital Gains Tax. Trigger on phrases like "Nigeria CGT", "Capital Gains Tax Nigeria", "sale of shares Nigeria", "property gains Nigeria", "10% CGT Nigeria", "CGTA Nigeria", "disposal of chargeable assets Nigeria", "Section 30 CGTA", "rollover relief Nigeria", "NGX share disposal tax", "₦100M share threshold", "non-resident CGT Nigeria", or any question about computing, filing, or reporting capital gains on Nigerian chargeable assets. Scope covers CGT computation for chargeable assets (real property, shares, business assets, intangibles), statutory exemptions, rollover relief on replacement of business assets, the Finance Act 2021 share disposal threshold, and the NTA 2025 consolidation of CGT into the general income tax framework. ALWAYS read this skill before touching Nigerian CGT work.
+description: Compute Nigerian chargeable gains for 2026, including property, Nigerian shares, digital assets, gifts, connected transactions, personal exemptions and reinvestment. Route company gains into company income tax and individual gains into personal income tax. Retains and corrects the original 2025 property and share examples without treating old CGTA rules as current.
 jurisdiction: NG
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: '2026-11-16'
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+version: '1.1'
+type: computation
+category: international
 ---
 
-# NG Cgt
+# Nigeria chargeable gains v1.1
 
-## Nigeria — Capital Gains Tax (CGT) — Skill v1.0
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Rates and thresholds
+## Scope
 
-- **CGT rate - companies** — 0.3  _(NIGERIA TAX ACT 2025)_
-- **CGT rate - individuals** — 0% - 25%  _(NIGERIA TAX ACT 2025)_
-- **Gain on disposal of principal private residence** — Exempt  _(NIGERIA TAX ACT 2025)_
-- **Gains on Nigerian government securities** — Exempt  _(NIGERIA TAX ACT 2025)_
-- **Gains from life assurance policies** — Exempt  _(NIGERIA TAX ACT 2025)_
-- **CGT return filing deadline** — returns mus be filed bi - annually by 30th june  _(NIGERIA TAX ACT 2025)_
-- **Indexation allowance available** — The Nigeria Tax Act (NTA) completely eliminates inflation indexation allowances when computing Capital Gains Tax. The new law explicitly prohibits the indexation of asset base costs for inflation and rules out capital losses for offset. [1]  _(NIGERIA TAX ACT 2025)_
-- **Capital losses — offset rule** — capital losses to be offset against gains of the same asset class and carried forward  _(NIGERIA TAX ACT 2025)_
-- **CGT - share sale exemption threshold proceeds <#150m and gains <#10m in 12 consecutive months** — Exempt  _(NIGERIA TAX ACT 2025)_
+Use for a disposal governed by the Nigeria Tax Act (NTA) from 1 January 2026. Gains are integrated into the person's income-tax computation. Use [ng-personal-income-tax](ng-personal-income-tax.md) for an individual and [ng-cit](ng-cit.md) for a company, rather than applying the former flat CGT rate. This file owns the gain and exemption tests, not those income-tax rate tables. A Nigerian resident's worldwide gains are within the charge; a non-resident requires the situs, indirect-transfer and treaty analysis. [NTA sections6,12,26 to28,33 to55 and119 to121](https://nass.gov.ng/documents/download/11249).
 
-## Section 1 — Quick reference
+The National Assembly text is the operative source used here. The conflicting older official NTA copies and transition limits are disclosed in ng-cit. Do not apply current exemptions retrospectively to a 2025 sale. Historical examples below retain their original facts and distinguish verified arithmetic from a final filing position.
 
-**Section 1 — Quick reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Federal Republic of Nigeria |
-| Tax | Capital Gains Tax (CGT) |
-| Currency | NGN (Nigerian Naira, ₦) |
-| Tax year | 1 January to 31 December (companies); fiscal year of the taxpayer (individuals — generally calendar year) |
-| Primary legislation (pre-NTA) | Capital Gains Tax Act (CGTA) Cap C1, LFN 2004 |
-| Amending legislation | Finance Act 2019; Finance Act 2020; Finance Act 2021; Finance Act 2022; Finance Act 2023 |
-| Post-2025 framework | Nigeria Tax Act (NTA) 2025 — CGT consolidated into the general income tax framework (implementing regulations pending) |
-| Headline rate | **10%** on chargeable gains |
-| Tax authority (residents) | Federal Inland Revenue Service (FIRS) for companies and non-residents; relevant State Internal Revenue Service (SIRS) for resident individuals |
-| Filing | Lodged with the annual income tax return — CIT (companies) or PIT (individuals) |
-| Skill version | 1.0 |
-
-### CGT rate at a glance
-
-**CGT rate at a glance**
-
-| Asset class | Rate | Notes |
+| Threshold or exemption | Current rule, with boundary | Official source |
 | --- | --- | --- |
-| Real property (land & buildings) | 10% | On chargeable gain (proceeds − cost − allowable expenses) |
-| Shares — aggregate disposals ≤ ₦100M in any 12 months | 0% | Exempt (Finance Act 2021) |
-| Shares — aggregate disposals > ₦100M in any 12 months, where proceeds NOT reinvested in Nigerian shares within the same year | 10% | Tax base is the chargeable gain only on the portion above ₦100M |
-| Business assets (plant, goodwill, intangibles) | 10% | Rollover relief may apply (see §4) |
-| Listed shares disposed of via NGX, below threshold | 0% | Pre-Finance Act 2021 blanket exemption now restricted to the ₦100M threshold |
-| Non-resident on Nigerian-situs assets | 10% | Buyer / payment agent may be required to withhold |
+| Nigerian company shares: small-disposal exemption | Aggregate proceeds must be LESS THAN NGN150,000,000 AND gains must not exceed NGN10,000,000 in any12 consecutive months. Exactly NGN150,000,000 fails the proceeds limb; exactly NGN10,000,000 passes the gain limb. | [NTA section33(3)(a)](https://nass.gov.ng/documents/download/11249) |
+| Nigerian shares: reinvestment | Reinvest disposal proceeds in shares of a Nigerian company in the same year of assessment. Partial reinvestment leaves the corresponding proportion of gain chargeable. This is not a deduction of the proceeds threshold from sale proceeds. Qualifying regulated securities lending is a separate exception. | [NTA section33(3)(b),(c)](https://nass.gov.ng/documents/download/11249) |
+| Compensation | Injury and loss-of-office compensation up to NGN50,000,000 exempt; only excess chargeable. Loss-of-office payments require deduction at payment; use ng-payroll/ng-wht for the withholding reconciliation. | [NTA section50](https://nass.gov.ng/documents/download/11249) |
+| Private residence | Individual's sole/main residence relief, once in a lifetime; adjoining non-commercial land limited to1 acre. Apportion business or other non-qualifying use. | [NTA section51](https://nass.gov.ng/documents/download/11249) |
+| Personal chattels | Individual's tangible movable property, consideration not above the HIGHER of NGN5,000,000 and3 times annual national minimum wage; connected disposals and sets cannot be fragmented to exploit the limit. Currency is excluded. | [NTA section52](https://nass.gov.ng/documents/download/11249) |
+| Private motor vehicles | Non-commercial motor vehicles, limited to2 per individual in a year of assessment. | [NTA section53](https://nass.gov.ng/documents/download/11249) |
+| Lost/destroyed asset replacement | Section43's special compensation/insurance replacement relief requires its conditions and replacement within3 years. It is not a general rollover for every voluntary business-asset sale. | [NTA section43](https://nass.gov.ng/documents/download/11249) |
 
-## Section 2 — Required inputs & refusal catalogue
+## Ask the client first
 
-### Required inputs
+1. Taxpayer type, residence, relevant tax authority, disposal date, basis period and year of assessment; for a non-resident, actual Nigerian asset/situs and treaty facts.
+2. Acquisition deed/date/cost, payment evidence, title history, inheritance or gift, connected parties, independent valuations and any earlier capital allowances.
+3. Disposal contract, consideration including non-cash amounts, instalments, enforceability/conditions, costs and receipts, enhancements still reflected in the asset, compulsory acquisition or insurance replacement.
+4. Every share sale in the rolling window and the same year, gains, reinvestment amounts/dates, securities-lending documents, other gains/losses and any previous exemption claims.
+5. For personal exemptions, occupation/business-use history, land area, previous residence relief, vehicle count, related chattel disposals, trust/charity purpose or compensation settlement terms.
 
-- **Required inputs before computing Nigerian CGT position** — 1. Identity & residency — taxpayer name, TIN, residency status (resident individual, resident company, non-resident). 2. Asset description — class (real property, shares, business asset, intangible, other chattel). 3. Acquisition data — acquisition date, acquisition cost (with documentary support), incidental costs of acquisition. 4. Disposal data — disposal date, disposal proceeds, incidental costs of disposal (legal fees, commissions, transfer duties). 5. Connection — whether the parties are connected persons (market value rule applies under CGTA s. 19). 6. For shares — aggregate proceeds from share disposals in the same 12-month window across the taxpayer's portfolio; reinvestment in other Nigerian company shares within the same tax year. 7. For business assets — whether replacement asset has been acquired (or will be) within the rollover window. 8. Prior-year losses — CGT losses brought forward (capital losses ring-fenced from income).
+## The method, step by step
 
-### Refusal catalogue
+### Identify the chargeable disposal and tax period
 
-STOP and do not produce a final CGT figure where any of the following applies:
+Start with all forms of property: land/buildings, shares/options, debts, foreign currency, digital/virtual assets and incorporeal rights, including assets created by the disposer. Sale, exchange, transfer, surrender, forfeiture, compensation and certain capital sums can be disposals. A security or nominee transfer needs its specific exception; a document labelled a gift is not a commercial sale at an invented price. Use the date a right to consideration or binding duty arises, with section38's conditional-contract/option rules. [NTA sections33 to38](https://nass.gov.ng/documents/download/11249).
 
-- **Acquisition cost is unknown or undocumented** — Cannot compute chargeable gain; do not use estimates without explicit reviewer sign-off
-- **Asset acquired by gift / inheritance with no probate valuation** — Need market-value documentation for base cost
-- **Cross-border disposal where double-tax-treaty relief may apply** — Requires bilateral treaty analysis — out of scope of this skill
-- **Disposal of partnership interests** — Treatment uncertain under CGTA; refer to FIRS guidance
-- **Mineral rights / oil-block disposals** — Petroleum Industry Act overlay — out of scope
-- **Trust / estate disposals** — Specialist trust-CGT regime — out of scope
-- **Disposal occurring after NTA 2025 commencement where final implementing regulations are not yet published** — Conservative default: compute under CGTA framework, flag for review once NTA regulations issued
-- **Insufficient evidence that the ₦100M share threshold has been correctly aggregated across the taxpayer's full portfolio** — Cannot confirm exemption eligibility
+For non-arm's-length acquisition/disposal, apply the statutory market-value rules. Do not mechanically set a gifted asset's later cost to probate or today's value: section36(3) refers to the last arm's-length consideration, or market value at the relevant disposal where that consideration cannot be established. Devolution on death has its own market-value rule. Obtain the chain and valuation. A gift itself is exempt under section54 except devolution on death, whose separate rules must be applied. [NTA sections36,45 and54](https://nass.gov.ng/documents/download/11249).
 
-## Section 3 — Tier 1 — chargeable persons, chargeable assets, computation
+### Compute the gain, then the relief
 
-### 3.1 Chargeable persons (CGTA s. 2)
+For an ordinary asset without prior capital allowances: disposal consideration less acquisition consideration and allowable enhancement/incidental costs. Keep enhancement reflected in the asset at disposal and title-defence expenditure separately supported; do not deduct routine repairs, private consumption, an expense already deducted from income or unsupported estimates. For a business asset on which capital allowances were claimed, use the acquisition residue required by section39, not full original cost a second time. No invented inflation indexation. [NTA sections20,21,39 and40](https://nass.gov.ng/documents/download/11249).
 
-- **Chargeable persons** — CGT is charged on the chargeable gains accruing to: - A resident individual — on worldwide chargeable assets, subject to remittance basis for non-Nigerian-situs assets where gains are not brought into Nigeria. - A resident company — on worldwide chargeable assets. - A non-resident person — on chargeable assets situated in Nigeria (Nigerian land, Nigerian-incorporated company shares, business assets used in a Nigerian trade or branch).  _(CGTA s. 2)_
+For a part disposal allocate common cost by A/(A+B): A is disposal consideration and B is market value of the retained part. Trace asset-specific expenditure separately. Where consideration is payable by instalments extending beyond12 months, section42 permits the corresponding instalment treatment, subject to its anti-avoidance and irrecoverability provisions. Combine transactions forming one bargain. Preserve insurance/lost-asset and compulsory-acquisition facts for sections37 and43 instead of claiming generic rollover. [NTA sections37,41 to45](https://nass.gov.ng/documents/download/11249).
 
-### 3.2 Chargeable assets (CGTA s. 3)
+Test the table's exemptions before transferring the taxable balance to the owning income-tax computation. Original-owner life-assurance rights, an assurance contract purchased for value, other insurance proceeds and public-character charitable/religious/educational trustees have distinct conditions. A trustee's trading gain is not automatically exempt; cessation of the qualifying trust can trigger deemed market-value disposal. Government-bond income relief is not proof that every disposal gain on every security is exempt. [NTA sections48,49,55 and162](https://nass.gov.ng/documents/download/11249).
 
-- **Chargeable assets** — All forms of property are chargeable assets, including: - Land and buildings (whether in Nigeria or abroad, for residents). - Shares and stocks of any company, subject to the Finance Act 2021 ₦100M threshold (see §4). - Goodwill and other intangible business assets. - Options, debts, and incorporeal property generally. - Currency other than Nigerian currency. - Any form of property created by the person disposing of it.  _(CGTA s. 3)_
+### Shares and losses
 
-### 3.3 Computation formula
+Compute total proceeds and actual gains across the statutory window; test both limbs, then reinvestment. If no exemption applies, the charge is on the gain, without subtracting NGN150m from proceeds. For partial reinvestment, gain multiplied by unreinvested proceeds/total proceeds is chargeable. Do not count a purchase outside the same assessment year or shares of a non-Nigerian company as automatic qualifying reinvestment. [NTA section33(3)](https://nass.gov.ng/documents/download/11249).
 
-- **Chargeable gain / CGT payable formula** — Chargeable gain = Disposal proceeds − Allowable acquisition cost − Incidental costs of acquisition − Incidental costs of disposal − Enhancement expenditure (capital improvements only) CGT payable = Chargeable gain × 10%
+Carry losses through the integrated company/individual rules; digital/virtual-asset losses are confined to profits of that business. Maintain source, asset, year, amount and use. Do not carry an unverified old capital loss into 2026 as an ordinary unrestricted trading loss. For the historical CGTA regime, Finance Act2023 section3 permitted same-type asset losses with a maximum5-year carryforward; the old file's indefinite, general capital-loss claim is withdrawn. [NTA sections27 and28](https://nass.gov.ng/documents/download/11249); [Finance Act2023 section3](https://lirs.gov.ng/assets/docs/Finance_Act_2023.pdf).
 
-### 3.4 Allowable deductions (CGTA s. 13)
+## Boundary and exception table
 
-- **Allowable deductions** — - Original acquisition cost. - Incidental costs of acquisition (legal fees, stamp duty, survey, commission). - Enhancement expenditure reflected in the state of the asset at disposal — routine repairs and revenue expenditure are NOT allowable. - Incidental costs of disposal (legal fees, agent's commission, advertising). - Costs of establishing, preserving, or defending title to the asset.  _(CGTA s. 13)_
+| Facts | Treatment or handoff |
+| --- | --- |
+| Mixed-use residence, acreage, more than one home or prior relief | Establish actual qualifying fraction and once-lifetime history; do not exempt the whole property by default. |
+| Related person, gift, inheritance, nominee, security or debt | Obtain valuations and legal ownership chronology; apply the relevant section rather than a zero-cost default. |
+| Portfolio just at either threshold | Aggregate first and apply strict proceeds/inclusive gain boundaries. A single exempt sale does not establish exemption for the whole window. |
+| Mineral right, petroleum interest, treaty property company, trust, partnership or foreign indirect transfer | Refer for the specialised regime, beneficial owner, situs and treaty article; sections46/47 can reach indirect Nigerian property interests. |
+| Loss-of-job settlement | Separate salary/notice pay, pension/gratuity and compensation; no blanket exemption for a settlement described as gratuity. Reconcile withholding to actual annual liability. |
+| Ordinary voluntary replacement business asset | No automatic12-month-before/after rollover instruction for 2026. The old claim and its former section32 citation are held under Sources. |
 
-### 3.5 Connected persons rule (CGTA s. 19)
+## Worked cases
 
-- **Connected persons rule** — Where the disposal is between connected persons (relatives, controlling shareholders, group companies), the transaction is deemed to be at market value, regardless of the stated consideration. This prevents undervaluation between related parties.  _(CGTA s. 19)_
+**Current boundary decision, Nigerian shares.** An individual has no other sales in the12-month window and gains NGN10m. Proceeds NGN149m pass both limbs; the gain is exempt. At proceeds exactly NGN150m, the proceeds limb fails. If no reinvestment, NGN10m goes into the individual's income-tax computation. If NGN60m of the NGN150m is reinvested in qualifying Nigerian shares in the same year of assessment, NGN6m of gain remains chargeable. The personal tax payable depends on other income and deductions; this is not a flat-rate tax answer.
 
-### 3.6 Capital losses (CGTA s. 5)
+```oa-check
+name: Nigerian share proceeds boundary and partial reinvestment
+inputs:
+  below_limit_proceeds: 149000000
+  boundary_proceeds: 150000000
+  gain: 10000000
+  qualifying_reinvestment: 60000000
+steps:
+  - below_limit_chargeable: gain * 0
+  - boundary_no_reinvestment: gain
+  - boundary_partial_reinvestment: gain * (boundary_proceeds - qualifying_reinvestment) / boundary_proceeds
+expected:
+  below_limit_chargeable: 0
+  boundary_no_reinvestment: 10000000
+  boundary_partial_reinvestment: 6000000
+```
 
-- **Capital losses** — - Capital losses are ring-fenced — they may only be set against capital gains, not against income. - Losses may be carried forward indefinitely against future capital gains of the same person. - Losses on disposals to connected persons are restricted to gains on subsequent disposals to the same connected person.  _(CGTA s. 5)_
+**Original property case, Mr Adewale, historical15 June2025 disposal.** Lagos resident, commercial property at Ikeja bought2018 for NGN120m, acquisition costs NGN6m, capital enhancement in2021 NGN25m, sale NGN250m. Legal fee1.5% and agency5% are scenario costs, not statutory fees. Disposal costs NGN16.25m, total allowable cost assumed NGN167.25m, gain NGN82.75m. At the historical assumed10% rate, arithmetic is NGN8.275m. The original facts and arithmetic survive; source confirmation of the old property's full CGTA cost/relief provisions and any actual prior allowances is still required before treating that amount as a verified historical filing liability. It is not a 2026 tax computation.
 
-## Section 4 — Tier 2 — exemptions, rollover relief, NTA 2025 changes
+```oa-check
+name: Mr Adewale original 2025 property conditional arithmetic
+inputs:
+  sale: 250000000
+  purchase: 120000000
+  acquisition_costs: 6000000
+  enhancement: 25000000
+  historical_rate_assumption: 0.10
+steps:
+  - legal_cost: sale * 0.015
+  - agency_cost: sale * 0.05
+  - gain: sale - purchase - acquisition_costs - enhancement - legal_cost - agency_cost
+  - conditional_historical_tax: gain * historical_rate_assumption
+expected:
+  legal_cost: 3750000
+  agency_cost: 12500000
+  gain: 82750000
+  conditional_historical_tax: 8275000
+```
 
-### 4.1 Statutory exemptions (CGTA ss. 26-43)
+**Original shares case, Mrs Okonkwo, historical2025.** March CompanyA proceeds NGN60m/cost25m; August CompanyB85m/40m; November CompanyC40m/30m. Total proceeds185m, cost95m, gains90m, no reinvestment. Finance Act2021's old threshold exempted proceeds LESS THAN NGN100m; it was not an allowance to subtract from185m. At the section's10% rate the charge is NGN9m, not the old NGN4,135,135 result. Reinvesting only NGN85m would not exempt the full gain: chargeable gain is90m×100m/185m, with tax approximately NGN4,864,864.86. Full qualifying proceeds reinvestment, not merely the excess over the threshold, is the relevant branch. [Finance Act2021 section2](https://lirs.gov.ng/assets/docs/Finance-Act-2021-Gazetted.pdf).
 
-The following are exempt from CGT:
+```oa-check
+name: Mrs Okonkwo historical shares threshold is not a deduction
+inputs:
+  sale_a: 60000000
+  sale_b: 85000000
+  sale_c: 40000000
+  cost_a: 25000000
+  cost_b: 40000000
+  cost_c: 30000000
+steps:
+  - proceeds: sale_a + sale_b + sale_c
+  - gain: proceeds - cost_a - cost_b - cost_c
+  - tax_no_reinvestment: gain * 0.10
+  - tax_reinvest_85m: gain * (proceeds - 85000000) / proceeds * 0.10
+expected:
+  proceeds: 185000000
+  gain: 90000000
+  tax_no_reinvestment: 9000000
+  tax_reinvest_85m: 4864864.86
+```
 
-**Statutory exemptions table**  _(CGTA ss. 26-43)_
+## When to refuse or refer
 
-| Exemption | Authority | Notes |
+Do not issue a final gain where acquisition cost, prior allowances, value, ownership, period, aggregated sales or exemption history is missing. State the missing document, not a made-up cost or exemption. Refer mining/petroleum, complex trust/partnership interests, indirect transfers, treaty conflicts and disputes. Preserve the original advice to obtain valuation evidence and to review a proposed relief before disposing of or reinvesting assets. Never submit a return from this reference.
+
+## Filing and payment
+
+Transfer the gain schedule to the annual individual/company return and relevant authority under [NTAA sections3,11,13 and49](https://nass.gov.ng/documents/download/11250); use ng-return-assembly for the filing package. Withholding on a compensation payment is a separate obligation. A 2026 gain and a2026 year of assessment are not interchangeable: section26(3) uses the preceding-year gains basis. Resolve the return's exact period using the transition evidence rather than automatically relabelling a2025 disposal as2026 income.
+
+For the historical CGTA, Finance Act2020 section2 inserted self-assessment and payment by30 June and31 December for the respective disposal periods; the former annual-only instructions missed this. Do not carry those repealed-act dates into a current integrated return without confirming a surviving requirement. [Finance Act2020 section2](https://www.iirs.im.gov.ng/document/docs/FINANCE_ACT_2020.pdf). Keep deeds, valuations, contracts, reinvestment evidence, receipts and calculations. [NTAA section31](https://nass.gov.ng/documents/download/11250) requires records for6 years after the relevant assessment year; keeping an asset's acquisition/relief chain through ownership and the subsequent enquiry period is prudent record policy, not an extra statutory6-year rule here.
+
+## Sources
+
+| Source and actual read scope | URL | Read on |
 | --- | --- | --- |
-| Principal private residence | CGTA s. 36 | Sole or main dwelling, subject to area limit |
-| Personal chattels disposed of for ≤ ₦1,000 | CGTA s. 37 | Small disposal exemption |
-| Motor vehicles (private passenger cars) | CGTA s. 38 | Not commercial vehicles |
-| Gifts to charity / educational / ecclesiastical bodies | CGTA s. 30 | Recipient must be registered |
-| Life assurance policy proceeds | CGTA s. 33 | To original policyholder |
-| Stocks & bonds — Federal Government, State Government, LGA, statutory corporation securities | CGTA s. 30 | Sovereign and parastatal debt exempt |
-| Transfers between spouses | CGTA s. 36 | No-gain-no-loss treatment |
-| Compensation for personal injury | CGTA s. 35 | Restricted to genuine injury awards |
-| Diplomatic missions | CGTA s. 39 | Reciprocal basis |
+| National Assembly NTA: sections6,12,20,21,26 to28,33 to55,119 to121 and162; share, chattel and residence exceptions read with neighbouring clauses | https://nass.gov.ng/documents/download/11249 | 2026-11-16 |
+| NTAA: sections3,11,13,31 and49 | https://nass.gov.ng/documents/download/11250 | 2026-11-16 |
+| Finance Act2021: section2, replacement of CGTA share exemption and reinvestment; official scanned Gazette OCR | https://lirs.gov.ng/assets/docs/Finance-Act-2021-Gazetted.pdf | 2026-11-16 |
+| Finance Act2023: sections2/3 digital assets and same-type loss carry; official Gazette OCR | https://lirs.gov.ng/assets/docs/Finance_Act_2023.pdf | 2026-11-16 |
+| Finance Act2020: section2 half-year self-assessment/payment; official state-authority copy OCR | https://www.iirs.im.gov.ng/document/docs/FINANCE_ACT_2020.pdf | 2026-11-16 |
+| Finance Act2019: section49 business reorganisation replacement of CGTA section32; official state-authority copy OCR | https://www.akirs.ak.gov.ng/downloads/laws/2019-finance-bill.pdf | 2026-11-16 |
 
-### 4.2 Shares — the ₦100M threshold (Finance Act 2021)
-
-- **₦100M share threshold rule** — Before the Finance Act 2021, gains on disposals of shares (especially listed shares) were broadly exempt. The Finance Act 2021 introduced a threshold rule: - Share disposals where the aggregate proceeds across all share disposals by the taxpayer in any 12-month period do not exceed ₦100 million remain exempt. - Where aggregate proceeds exceed ₦100 million in any 12-month period, the portion above ₦100M is brought into charge at 10%, unless the proceeds are reinvested in the shares of any Nigerian company within the same tax year. - The reinvestment relief is asset-class specific — reinvestment must be in Nigerian company shares, not in other asset classes. - The taxpayer must aggregate disposals across all brokers, accounts, and NGX-listed and unlisted companies. Worked aggregation rule: Compute total share-disposal proceeds in the rolling 12-month window. Deduct ₦100M. If the residual is positive AND not reinvested in Nigerian shares within the tax year, the chargeable gain attributable to that residual portion is taxable at 10%.  _(Finance Act 2021)_
-
-### 4.3 Rollover relief — replacement of business assets (CGTA s. 32)
-
-- **Rollover relief on replacement business assets** — Where a person disposes of a business asset and acquires a replacement business asset within 12 months before or after the disposal, the gain on the old asset may be deferred (rolled over) into the base cost of the new asset. Qualifying classes of business assets include: - Land and buildings occupied and used for the trade. - Fixed plant and machinery. - Ships, aircraft, hovercraft. - Goodwill. The classes must match — e.g. land replaced with land, plant with plant. Mixed-class rollover requires FIRS confirmation. Where only part of the proceeds is reinvested, partial rollover applies and the un-reinvested portion is immediately chargeable.  _(CGTA s. 32)_
-
-### 4.4 NTA 2025 — consolidation of CGT into the income tax framework
-
-- **NTA 2025 consolidation** — The Nigeria Tax Act (NTA) 2025, part of the suite of fiscal reforms enacted in 2025, consolidates Capital Gains Tax into the general income tax framework. Pre-2025 CGTA provisions remain operative for disposals during transitional periods, but for periods on or after the NTA commencement date: - CGT is administered alongside Companies Income Tax (CIT) and Personal Income Tax (PIT) under a unified return. - The 10% headline rate is retained for most asset classes (subject to confirmation in implementing regulations). - Treatment of share disposals, the ₦100M threshold, rollover relief, and exemptions is being re-codified — implementing regulations are pending as of the 2025 tax year. - Conservative default: until FIRS publishes the implementing regulations, prepare CGT computations under the pre-NTA CGTA framework and flag the position for review once the regulations are finalised.  _(Nigeria Tax Act (NTA) 2025)_
-
-## Section 5 — Worked examples
-
-### Example A — Sale of investment property (resident individual)
-
-Mr Adewale, a Lagos-resident individual, sold a commercial property in Ikeja on 15 June 2025. The property was acquired in 2018.
-
-**Example A computation table**
-
-| Line item | Amount (₦) |
-| --- | --- |
-| Disposal proceeds | 250,000,000 |
-| Less: Incidental costs of disposal (legal 1.5%, agent 5%) | (16,250,000) |
-| Net proceeds | 233,750,000 |
-| Less: Acquisition cost (2018) | (120,000,000) |
-| Less: Incidental costs of acquisition (stamp duty, legal) | (6,000,000) |
-| Less: Enhancement expenditure (extension, 2021) | (25,000,000) |
-| **Chargeable gain** | **82,750,000** |
-| CGT at 10% | **8,275,000** |
-
-The CGT of ₦8,275,000 is reported alongside Mr Adewale's PIT return for 2025 to the Lagos State Internal Revenue Service. Routine repairs incurred over the holding period are NOT deductible.
-
-### Example B — Sale of company shares (resident individual)
-
-Mrs Okonkwo disposed of equity holdings during 2025 as follows:
-
-**Example B disposals table**
-
-| Disposal | Date | Proceeds (₦) | Cost (₦) |
-| --- | --- | --- | --- |
-| NGX-listed Co. A shares | March 2025 | 60,000,000 | 25,000,000 |
-| NGX-listed Co. B shares | August 2025 | 85,000,000 | 40,000,000 |
-| Unlisted Co. C shares | November 2025 | 40,000,000 | 30,000,000 |
-| **Aggregate proceeds (12-month window)** |  | **185,000,000** |  |
-
-Aggregate share-disposal proceeds in 2025 exceed ₦100M. The portion above the threshold is ₦85,000,000.
-
-Mrs Okonkwo did not reinvest in any Nigerian company shares during 2025. The taxable portion of the gain is computed by apportioning the total chargeable gain to the residual proceeds above the threshold:
-
-**Example B apportionment table**
-
-| Line item | Amount (₦) |
-| --- | --- |
-| Total proceeds | 185,000,000 |
-| Total cost basis | 95,000,000 |
-| Total chargeable gain | 90,000,000 |
-| Apportioned to residual above ₦100M (85,000,000 / 185,000,000 × 90,000,000) | 41,351,351 |
-| CGT at 10% | **4,135,135** |
-
-The CGT is reported with the 2025 PIT return. If Mrs Okonkwo had reinvested ≥ ₦85M into Nigerian shares within 2025, the residual gain would be exempt.
-
-## Section 6 — Filing & payment
-
-### 6.1 Resident individuals (PIT)
-
-- **Resident individuals filing rules** — - CGT computation is appended to the annual Personal Income Tax (PIT) return filed with the relevant State Internal Revenue Service (SIRS) in the taxpayer's state of residence. - Filing deadline: 31 March following the end of the tax year (calendar-year basis), per Personal Income Tax Act (PITA) s. 41. - Payment: due on filing.  _(Personal Income Tax Act (PITA) s. 41)_
-
-### 6.2 Resident companies (CIT)
-
-- **Resident companies filing rules** — - CGT computation is appended to the annual Companies Income Tax (CIT) return filed with FIRS. - Filing deadline: 6 months after the end of the company's accounting year (Companies Income Tax Act s. 55). - Payment: due on filing; companies in their first 18 months may use the self-assessment provisions.  _(Companies Income Tax Act s. 55)_
-
-### 6.3 Non-residents
-
-- **Non-resident filing / withholding rules** — - 10% CGT applies on chargeable gains from Nigerian-situs assets (Nigerian land, Nigerian-incorporated company shares, Nigerian business assets). - For non-resident disposals of Nigerian real property or shares, the buyer / Nigerian payment agent may be required to withhold CGT and remit to FIRS. Confirm in each case whether withholding is mandated by current FIRS Information Circular. - Non-resident sellers should obtain a Tax Clearance Certificate (TCC) confirming CGT has been settled before perfecting title transfer.
-
-### 6.4 Records & retention
-
-- **Records retention rules** — - Retain acquisition contracts, valuation evidence, brokerage notes, and disposal contracts for 6 years from the end of the relevant tax year (general FIRS / SIRS retention rule). - Where rollover relief is claimed, retain documentation of the replacement asset acquisition for the life of the replacement asset plus 6 years.
-
-## Section 7 — Conservative defaults
-
-**Conservative defaults table**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown acquisition cost | STOP — cannot compute gain |
-| Acquisition by gift or inheritance with no valuation | Obtain probate / market valuation; if unavailable, STOP |
-| Unknown whether the ₦100M share threshold is breached in aggregate | Assume breached → compute at 10% conservatively, refund position later if portfolio aggregation confirms exemption |
-| Unknown whether reinvestment in Nigerian shares occurred within the tax year | Assume no reinvestment → tax the residual |
-| Unknown whether parties are connected | Treat as connected → apply market value rule |
-| Routine repair vs enhancement expenditure ambiguous | Treat as routine repair → NOT deductible |
-| Disposal post NTA 2025 commencement, regulations pending | Compute under CGTA framework; flag for review under NTA implementing regulations |
-| Cross-border disposal with possible treaty relief | STOP — refer to specialist treaty review |
-| PPR claimed but property was let or had non-residential use | Restrict PPR proportionally; conservative default → no PPR |
-| Non-resident disposal where withholding obligation unclear | Assume withholding applies; remit 10% to FIRS pending clarification |
-
-## Section 8 — Sources
-
-1. Capital Gains Tax Act (CGTA) Cap C1, Laws of the Federation of Nigeria 2004 — primary CGT statute.
-2. Finance Act 2019 — amendments to CGTA (administrative provisions).
-3. Finance Act 2020 — further administrative amendments and definitions.
-4. Finance Act 2021 — introduced the ₦100M aggregate share-disposal threshold under CGTA s. 30 (formerly blanket exempt for shares).
-5. Finance Act 2022 — clarifications to share-disposal mechanics.
-6. Finance Act 2023 — further amendments.
-7. Personal Income Tax Act (PITA) Cap P8, LFN 2004 (as amended) — return-filing framework for resident individuals.
-8. Companies Income Tax Act (CITA) Cap C21, LFN 2004 (as amended) — return-filing framework for companies; CGT is administered alongside.
-9. Nigeria Tax Act (NTA) 2025 — consolidates CGT into the unified income tax framework; implementing regulations pending as of skill publication.
-10. FIRS Information Circulars on CGT — including circulars issued post Finance Act 2021 on the ₦100M share threshold and the reinvestment relief.
-11. FIRS Information Circular on Tax Implications of Mergers and Acquisitions — relevant for share-disposal rollover and reorganisation reliefs.
-12. CITN (Chartered Institute of Taxation of Nigeria) practice guidance — practitioner-level commentary on Finance Act and NTA 2025 changes.
-
-## End of Skill — Nigeria CGT v1.0
-
-End of Skill — Nigeria CGT v1.0
+Not yet confirmed: a retrievable complete historical CGTA with the property's original cost/relief, foreign-remittance and indexation rules; old voluntary-business replacement relief, eligible land/building/plant/ship/aircraft/hovercraft/goodwill classes,12-month-before/after window and partial reinvestment; any surviving additional2026 disposal return beyond annual integrated filing; special diplomatic, spousal, government-security and treaty exemptions asserted by the original file; transition of historical capital losses; exact treaty outcomes or foreign situs for a live case. The old NGN1,000 chattel threshold, unqualified private-car exemption, indefinite loss carry and blanket10% current rate are withdrawn. Old section32 now addressed business reorganisation after Finance Act2019; it is not authority for the original general rollover instruction.
