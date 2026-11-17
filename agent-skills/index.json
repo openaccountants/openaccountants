@@ -1,13 +1,9 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2459,
+ "count": 2460,
  "publication_holds": [
   {
    "name": "laos-vat",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "stamp-duty-matrix",
    "reason": "status: needs_sources"
   },
   {
@@ -774,7 +770,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "andorra-igi",
@@ -1053,7 +1049,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "at-company-formation",
@@ -6246,7 +6242,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "er-company-formation",
@@ -13625,7 +13621,7 @@
    "path": "skills/malta/mt-corporate-tax.md",
    "trust_label": null,
    "authored_by": null,
-   "reviewed_by": null,
+   "reviewed_by": "Michael Cutajar",
    "tax_year": 2026
   },
   {
@@ -14031,7 +14027,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mx-imss",
@@ -14067,7 +14063,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mx-social-contributions",
@@ -18834,6 +18830,15 @@
    "name": "st-vat-gst",
    "jurisdiction": "ST",
    "path": "skills/sao-tome-and-principe/st-vat-gst.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "stamp-duty-matrix",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/cross-border/stamp-duty-matrix.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,

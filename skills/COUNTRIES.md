@@ -42,9 +42,9 @@ Owner: Michael Cutajar
 | [Kosovo](kosovo/) | Needs writing | 8 | 8 | 0 |
 | [Latvia](latvia/) | Needs signature | 10 | 10 | 0 |
 | [Liechtenstein](liechtenstein/) | Needs writing | 8 | 8 | 0 |
-| [Lithuania](lithuania/) | Needs signature | 9 | 8 | 0 |
+| [Lithuania](lithuania/) | Needs signature | 9 | 9 | 0 |
 | [Luxembourg](luxembourg/) | Needs signature | 8 | 8 | 0 |
-| [Malta](malta/) | Needs writing | 31 | 31 | 5 |
+| [Malta](malta/) | Needs writing | 31 | 31 | 6 |
 | [Moldova](moldova/) | Needs writing | 13 | 13 | 0 |
 | [Monaco](monaco/) | Needs signature | 8 | 8 | 0 |
 | [Montenegro](montenegro/) | Needs writing | 10 | 10 | 0 |
@@ -106,7 +106,7 @@ Owner: Michael Cutajar
 | [Honduras](honduras/) | Needs writing | 7 | 7 | 0 |
 | [Jamaica](jamaica/) | Needs writing | 6 | 6 | 0 |
 | [Martinique](martinique/) | Needs writing | 1 | 1 | 0 |
-| [Mexico](mexico/) | Needs writing | 15 | 13 | 0 |
+| [Mexico](mexico/) | Needs writing | 15 | 15 | 0 |
 | [Montserrat](montserrat/) | Needs writing | 10 | 10 | 0 |
 | [Nicaragua](nicaragua/) | Needs writing | 7 | 7 | 0 |
 | [Panama](panama/) | Needs writing | 4 | 4 | 0 |
