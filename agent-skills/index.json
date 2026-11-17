@@ -774,7 +774,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "andorra-igi",
@@ -13625,7 +13625,7 @@
    "path": "skills/malta/mt-corporate-tax.md",
    "trust_label": null,
    "authored_by": null,
-   "reviewed_by": null,
+   "reviewed_by": "Michael Cutajar",
    "tax_year": 2026
   },
   {
