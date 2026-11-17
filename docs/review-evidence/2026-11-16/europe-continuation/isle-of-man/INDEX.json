@@ -1,0 +1,151 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "db6f9e27a29a7a3d2a98d7f20bd1ea214cad433d5a59dccb4c7b479af2049450",
+  "members": [
+    {
+      "path": "writer/CHECKPOINT.json",
+      "sha256": "75bc50dc0bfc8888ecc234590dad0aeea4d34b64674fee0fcde2558668a73078",
+      "bytes": 3308
+    },
+    {
+      "path": "writer/NO-LOSS-MAP.md",
+      "sha256": "1422ed71415f69c461053c9b05562ae892eda476c6605d1a4e8bef57e10ed116",
+      "bytes": 16303
+    },
+    {
+      "path": "writer/PRIOR-REVIEW-1020.md",
+      "sha256": "bd52c5b1041133ee0945c980625384bee0d8f58d105056eef6450f3bb09eaafb",
+      "bytes": 1152
+    },
+    {
+      "path": "writer/PRIOR-REVIEW-1021.md",
+      "sha256": "ba6edd9b2e1ba2727c0fb2ee18feea5b9f5fadb6b78e047245009361e576bcf3",
+      "bytes": 1749
+    },
+    {
+      "path": "writer/READ-LOG.md",
+      "sha256": "834db32363a2e3de0e47511a036ac0ca8a0eb9ccdcd393c9d81bc8c5e3f80a1c",
+      "bytes": 2847
+    },
+    {
+      "path": "writer/REPORT.md",
+      "sha256": "36ad03202383c60665df0c68f7879e8302a546e4f7c0b93e1fec932e02ebf2a0",
+      "bytes": 3198
+    },
+    {
+      "path": "writer/REUSE-APPLICABILITY.json",
+      "sha256": "80485f4f269960b55b68adbaf49af610e05a333013051837ad8c03d79cf466d8",
+      "bytes": 1052
+    },
+    {
+      "path": "writer/REVIEWED-FORMATION-1021.md",
+      "sha256": "fdbb4cdf7d8598273a0e882990208d952131afa9b1ecea9af0cedb2a24a8ecba",
+      "bytes": 11372
+    },
+    {
+      "path": "writer/REVIEWED-OVERVIEW-1020.md",
+      "sha256": "06c1ef8608741fe928976b35e9c1eaff72b1b7679b33e2ce95170a0296e25823",
+      "bytes": 9578
+    },
+    {
+      "path": "writer/STATUS.json",
+      "sha256": "e42de261b08beb835e414e98b6f7e43d8f402fea0440dd2e8030fa90e213c04c",
+      "bytes": 1141
+    },
+    {
+      "path": "writer/actual-head-sync.txt",
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9",
+      "bytes": 81
+    },
+    {
+      "path": "writer/actual-head-validation.txt",
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa",
+      "bytes": 192
+    },
+    {
+      "path": "writer/examples.log",
+      "sha256": "7c590db046c651c68e400ac610a23d93cbd7f4b58fcafb9da660491c644e5209",
+      "bytes": 58
+    },
+    {
+      "path": "writer/ledgers/im-company-formation.md",
+      "sha256": "3c35952cb7f4088c3df1a61b93bf46dda87b47a8b55fd373c91399d16f1e81b1",
+      "bytes": 12728
+    },
+    {
+      "path": "writer/ledgers/im-tax-overview.md",
+      "sha256": "199afb59a82b6b66c5d98a5208f18e247cc01bbaebf287b890dc29a8829b5ca5",
+      "bytes": 13220
+    },
+    {
+      "path": "writer/open-pr-preedit-final.json",
+      "sha256": "d8f8cfff346e3cf29df1481129a3ad518fc37c04233168c415fb64363da767a8",
+      "bytes": 31451
+    },
+    {
+      "path": "writer/open-pr-preedit-write.json",
+      "sha256": "1ae9cd9ad6d17b1475d28bb1d1e821be661c2afaa03621c90e7885a11d022ce4",
+      "bytes": 31451
+    },
+    {
+      "path": "writer/open-pr-preedit.json",
+      "sha256": "7df1c9b8b6b7d4f6573750a281558edc03a47922227d03a4d2cf3653b692d3e1",
+      "bytes": 31451
+    },
+    {
+      "path": "writer/pr-1020-comments.json",
+      "sha256": "82991f57f4511073aa56dc16d9437f6de3cc3b9c56dcbe87e0d8e70f5da6393f",
+      "bytes": 3347
+    },
+    {
+      "path": "writer/pr-1021-comments.json",
+      "sha256": "0ffb6a3707e2a71f8922d86d0d51b9e4a8cc2af7f3a646b697328a1ac9492c87",
+      "bytes": 3944
+    },
+    {
+      "path": "writer/pr-1835-comments.json",
+      "sha256": "24aca4f4a1d85010d5f2400c53502d11d58184ac818a9e7380d3c2db0749e8c1",
+      "bytes": 47569
+    },
+    {
+      "path": "writer/pr-body.md",
+      "sha256": "662e6a30d4693a9cd05908c2a5ce31548ff5af672342f16244baf925e20051dd",
+      "bytes": 2622
+    },
+    {
+      "path": "writer/pr-title.txt",
+      "sha256": "ab160a86c51eb7b464d8e1575d0d3a1d2fdd7bdff2d53e71b642e4051ab5a58a",
+      "bytes": 66
+    },
+    {
+      "path": "writer/row-sources.txt",
+      "sha256": "e0074f22a0ff8f2d1b3df7e115e5d75ecb8d163f8db0e2fc11c2b75dcbb5d890",
+      "bytes": 2462
+    },
+    {
+      "path": "writer/skill-checks.json",
+      "sha256": "aaddd767c12b2c1fc4d9b8471bc9aa0b2f8fcb1cdebdd13679ea95b8be494373",
+      "bytes": 102
+    },
+    {
+      "path": "independent-review/RECEIPT.json",
+      "sha256": "618bac968fd0ad3a1d4c70a2689bd836f2544c56b8e1e77115c8fc026764472c",
+      "bytes": 13000
+    },
+    {
+      "path": "independent-review/REPORT.md",
+      "sha256": "043fd3de92c7be8d564d34d582706ee9185691a083f83edaca0767f14bfeda76",
+      "bytes": 13076
+    },
+    {
+      "path": "validation/shared-tests.txt",
+      "sha256": "c54d9553ff84698b5faa931658d7df01424d158f3cee0a8afe99724e6f87da5f",
+      "bytes": 346
+    },
+    {
+      "path": "validation/shared-test-applicability.json",
+      "sha256": "50b60c40ce8a368ab0217f62c9bfe3a8870a3f8c861d2d59cb2b8d1ae1e6eca3",
+      "bytes": 589
+    }
+  ]
+}

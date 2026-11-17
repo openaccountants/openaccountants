@@ -1,0 +1,115 @@
+{
+  "source_commit": "d6c91ead2a83b1dd6b45c19b35ee7d121fdb144f",
+  "source_path": "skills/san-marino/sm-company-formation.md",
+  "source_sha256": "703f52a4a4dc4038cf0ac3c7787f6402e717995cb6026eea8c867033f0e20f1e",
+  "prior_review_head": "71fd8e1b3092c76e2311a04609c991aa48338b8a",
+  "original_evidence_unchanged": "../san-marino/",
+  "archive_sha256": "c3a8c6d7b6d9790dd485437048e0703ade0c64e923a81207ee06e8e674414778",
+  "archive_bytes": 29493,
+  "members": [
+    {
+      "path": "correction/binding.json",
+      "bytes": 711,
+      "sha256": "7e40a4a398371daab310b481100a10ee2615a42434ffe00c3533ed022fac9d48"
+    },
+    {
+      "path": "correction/delta.patch",
+      "bytes": 7638,
+      "sha256": "838b8110daceb76344ee9c35d972b1d06c50787a1c89005e96d2d5ca47ba9d5b"
+    },
+    {
+      "path": "correction/preservation.json",
+      "bytes": 371,
+      "sha256": "c894d65a59a79738d554d9b3b0225d9710b337bfe330ac78ab68d4ca091826f5"
+    },
+    {
+      "path": "correction/skill-checks.json",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "correction/sync-audit.log",
+      "bytes": 81,
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9"
+    },
+    {
+      "path": "correction/validate.log",
+      "bytes": 192,
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa"
+    },
+    {
+      "path": "independent-delta/CLAIM-OUTCOMES.json",
+      "bytes": 1609,
+      "sha256": "02f183e6a00c9a256c1a9ff722a0d36f38623a570d518eb4d8048a7bfa1b0450"
+    },
+    {
+      "path": "independent-delta/FINAL-MANIFEST.json",
+      "bytes": 724,
+      "sha256": "64396874cd056a120f0fad430c8a9c712aea5600da5031ead28a67ce9150394b"
+    },
+    {
+      "path": "independent-delta/INPUT-BINDINGS.json",
+      "bytes": 2304,
+      "sha256": "a507feb1eb5628bf598d08b70f466258d4a6e5cec040ec006f06bd1dc4efa182"
+    },
+    {
+      "path": "independent-delta/PRESERVATION.json",
+      "bytes": 26951,
+      "sha256": "5b082261aec84463ee604a9be358f48f9538e12788828dad075b5dcbe80b6ecb"
+    },
+    {
+      "path": "independent-delta/REPORT.md",
+      "bytes": 3958,
+      "sha256": "767f18d1c647cc2121cbe3eb396313522e0174d402972f6dfbce10f55a6272a5"
+    },
+    {
+      "path": "research/BOUNDED-IMPACT-LEDGER.json",
+      "bytes": 22215,
+      "sha256": "d2c4e59ca388c869754cdf84f805d4d640a7b910eda27364191bfbcd4a3ed55c"
+    },
+    {
+      "path": "research/CANDIDATE-BINDING.json",
+      "bytes": 556,
+      "sha256": "01bc0f5d3ddf3aa18a31ba322e93c0635a6444d4b0180e9bd00eacd72d5215e6"
+    },
+    {
+      "path": "research/CLAIM-IMPACT-MAP.json",
+      "bytes": 8932,
+      "sha256": "595acc22f32a76296b226c7b4638c9a09f27a38a33a2fce911499bfef883956a"
+    },
+    {
+      "path": "research/FINDINGS.json",
+      "bytes": 1197,
+      "sha256": "b84c4328d7112455edf516ba7c65ac7e1cafaf4cb8080382dc3300a0766f715f"
+    },
+    {
+      "path": "research/NATIVE-CLAUSE-BINDINGS.json",
+      "bytes": 4584,
+      "sha256": "ed4459d0bcb3009aa1163141ef606e47e8baa75c3fcbb797a3c6c90fae1ac7c3"
+    },
+    {
+      "path": "research/PUBLICATION-METADATA.json",
+      "bytes": 9497,
+      "sha256": "5817804b96434540f8c981ef3a6d3d2a848064343796f280c75cad9df417307a"
+    },
+    {
+      "path": "research/REPORT.md",
+      "bytes": 8865,
+      "sha256": "abdef14acd09d561dae45225e6bfa376a8037b56a5da0098c0c7040a31478def"
+    },
+    {
+      "path": "research/RESULT.json",
+      "bytes": 656,
+      "sha256": "730c7d159e3ce6c6b7d12ca5964058e5f5371e87866db63f3407aacdefe09083"
+    },
+    {
+      "path": "research/SEARCH-AUDIT.json",
+      "bytes": 5074,
+      "sha256": "07f53b948f5912b4d20406499909f20397dbea7fe8aa99562643c9f553a2f308"
+    }
+  ],
+  "research_full_local_manifest_sha256": "d86f8b133c71360ee31ee9442febe689bc11d4fcb30056e23082d0f465a56a91",
+  "full_research_local_artifacts": 193,
+  "raw_sources_excluded": true,
+  "report_sha256": "53f3b504608aabfec63dcb2a8c99c9b262eaaf62640cdb108f1da35a8baa3e24"
+}

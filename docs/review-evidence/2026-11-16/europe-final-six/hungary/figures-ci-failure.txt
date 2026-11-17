@@ -1,0 +1,31 @@
+figures	Check each linked row against its page	﻿2026-11-16T18:24:59.0901659Z ##[group]Run git fetch origin "$BASE_REF" --depth 50
+figures	Check each linked row against its page	2026-11-16T18:24:59.0902032Z [36;1mgit fetch origin "$BASE_REF" --depth 50[0m
+figures	Check each linked row against its page	2026-11-16T18:24:59.0902405Z [36;1mpython3 scripts/check-row-sources.py --changed-only[0m
+figures	Check each linked row against its page	2026-11-16T18:24:59.0928536Z shell: /usr/bin/bash -e {0}
+figures	Check each linked row against its page	2026-11-16T18:24:59.0928811Z env:
+figures	Check each linked row against its page	2026-11-16T18:24:59.0929072Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+figures	Check each linked row against its page	2026-11-16T18:24:59.0929648Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+figures	Check each linked row against its page	2026-11-16T18:24:59.0930133Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+figures	Check each linked row against its page	2026-11-16T18:24:59.0930497Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+figures	Check each linked row against its page	2026-11-16T18:24:59.0930839Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+figures	Check each linked row against its page	2026-11-16T18:24:59.0931167Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+figures	Check each linked row against its page	2026-11-16T18:24:59.0931507Z   BASE_REF: main
+figures	Check each linked row against its page	2026-11-16T18:24:59.0931722Z ##[endgroup]
+figures	Check each linked row against its page	2026-11-16T18:24:59.6127741Z From https://github.com/openaccountants/openaccountants
+figures	Check each linked row against its page	2026-11-16T18:24:59.6128613Z  * branch                main       -> FETCH_HEAD
+figures	Check each linked row against its page	2026-11-16T18:26:07.7543960Z ## Row-by-row figure check
+figures	Check each linked row against its page	2026-11-16T18:26:07.7544330Z 
+figures	Check each linked row against its page	2026-11-16T18:26:07.7545283Z **skills/hungary/hungary-einvoice.md**: 11 rows checked, 8 figure(s) not found on the linked page, 0 row(s) whose page could not be read
+figures	Check each linked row against its page	2026-11-16T18:26:07.7546511Z - MISS `1,000,000` not on https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | row: | Data report missed, late, incomplete, wrong or untrue | Up to the number of invoices affected times the general maximum: HUF 1,000,000 per invoice for a compa
+figures	Check each linked row against its page	2026-11-16T18:26:07.7548206Z - MISS `400,000` not on https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | row: | Data report missed, late, incomplete, wrong or untrue | Up to the number of invoices affected times the general maximum: HUF 1,000,000 per invoice for a compa
+figures	Check each linked row against its page	2026-11-16T18:26:07.7550367Z - MISS `400,000` not on https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | row: | Any other breach of a tax-law duty (general fine) | Up to HUF 400,000 (individual) or HUF 1,000,000 (others) | Art. 220. § (1) https://njt.jog.gov.hu/jogszaba
+figures	Check each linked row against its page	2026-11-16T18:26:07.7552021Z - MISS `1,000,000` not on https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | row: | Any other breach of a tax-law duty (general fine) | Up to HUF 400,000 (individual) or HUF 1,000,000 (others) | Art. 220. § (1) https://njt.jog.gov.hu/jogszaba
+figures	Check each linked row against its page	2026-11-16T18:26:07.7553777Z - MISS `2,000,000` not on https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | row: | Failure to issue an invoice, simplified invoice or receipt, or issuing one not for the real consideration | Up to HUF 2,000,000 | Art. 228. § (1) a) https://n
+figures	Check each linked row against its page	2026-11-16T18:26:07.7555429Z - MISS `2,000,000` not on https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | row: | Failure to keep records | Up to HUF 2,000,000 | Art. 228. § (1) b) https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 |
+figures	Check each linked row against its page	2026-11-16T18:26:07.7557005Z - MISS `200,000` not on https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | row: | Printed invoices or receipts not kept | Up to HUF 200,000 (individual) or HUF 500,000 (others) times the number missing, whether or not they were used | Art. 
+figures	Check each linked row against its page	2026-11-16T18:26:07.7559277Z - MISS `500,000` not on https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | row: | Printed invoices or receipts not kept | Up to HUF 200,000 (individual) or HUF 500,000 (others) times the number missing, whether or not they were used | Art. 
+figures	Check each linked row against its page	2026-11-16T18:26:07.7560468Z 
+figures	Check each linked row against its page	2026-11-16T18:26:07.7561101Z **skills/hungary/hungary-vat-return.md**: 33 rows checked, 0 figure(s) not found on the linked page, 0 row(s) whose page could not be read
+figures	Check each linked row against its page	2026-11-16T18:26:07.7561748Z 
+figures	Check each linked row against its page	2026-11-16T18:26:07.7562284Z Total misses: 8. A miss is a figure that is not on the page its row links to: fix the figure or the link, or write the figure the way the page writes it.
+figures	Check each linked row against its page	2026-11-16T18:26:07.7627528Z ##[error]Process completed with exit code 1.

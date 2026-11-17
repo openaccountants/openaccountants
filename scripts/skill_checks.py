@@ -557,13 +557,25 @@ def check_reviewed_on(path, text, fm):
 
 
 CTA_MARKER = "<!-- openaccountants-cta-block -->"
+# Exact inherited attribution/contact lines, not a prefix or a free-text footer.
+# Keep the original spelling and fixed date; changing either needs normal review.
+INHERITED_CREDIT_LINES = frozenset({
+    "*Original content: [Artin (@ar-gen-tin)](https://github.com/ar-gen-tin/panrise) — MIT License.*",
+    "*OpenAccountants — open-source accounting skills for AI — info@openaaccountants.com*",
+    "*OpenAccountants — open-source tax computation skills — info@openaccountants.com*",
+    "*Data reflects 2025–2026 rules. OpenAccountants — open-source accounting skills for AI — info@openaccountants.com*",
+})
 
 
 def check_no_em_dash(path, text, fm):
-    """(h) no em dash character in the writer's text (the platform-stamped CTA block is not theirs)."""
+    """(h) no em dash in writer text; preserve exact inherited credits and platform CTA."""
     cut = text.find(CTA_MARKER)
     own = text if cut == -1 else text[:cut]
-    n = own.count(EM_DASH)
+    # Frontmatter and backtick-fenced examples are not inherited footer lines.
+    credit_body = FENCE_RE.sub("", _body(own))
+    inherited = sum(line.count(EM_DASH) for line in credit_body.split("\n")
+                    if line.removesuffix("\r") in INHERITED_CREDIT_LINES)
+    n = own.count(EM_DASH) - inherited
     return [] if n == 0 else [f"{n} em dash(es)"]
 
 

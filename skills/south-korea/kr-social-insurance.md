@@ -1,349 +1,349 @@
 ---
 name: kr-social-insurance
 description: >
-  Use this skill whenever asked about South Korean social insurance contributions for self-employed persons. Trigger on phrases like "National Pension Korea", "NPS self-employed", "Korean health insurance", "NHIS self-employed", "long-term care insurance Korea", "Korean social insurance", "4 major insurances Korea", or any question about social insurance obligations for a self-employed client in South Korea. This skill covers National Pension (NPS), National Health Insurance (NHIS), Long-Term Care Insurance, Employment Insurance, and Industrial Accident Insurance as they apply to self-employed individuals. ALWAYS read this skill before touching any Korean social insurance-related work.
-version: 2.0
+  South Korean social insurance for a sole trader or freelancer: National Pension
+  (NPS), community National Health Insurance (NHIS), Long-Term Care Insurance,
+  voluntary self-employed employment insurance and accident-insurance boundaries.
+  Use for Korean self-employed contribution estimates, NPS floors and ceilings,
+  health premiums, payment classification and tax deductions. Covers 2026 with
+  separately dated 2025 regression cases. Obtain the actual insured status and
+  assessment notice before calculating; employing staff can change the owner's
+  own status. Foreign-insured exceptions and disputes require individual review.
+version: 2.1
 jurisdiction: KR
-tax_year: 2025
-last_updated: 2026-06-12
+tax_year: 2026
+last_updated: 2026-11-16
 category: international
 tier: 2
-status: needs_sources
-domain: payroll
+type: computation
+domain: tax
 ---
 
-# South Korea Social Insurance Contributions -- Self-Employed Skill v2.0
+# South Korea Social Insurance Contributions for the Self-Employed v2.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Section 1 -- Quick reference
+## Scope
 
-Read this whole section before computing anything.
+Estimate a community-insured sole trader's Korean pension and health contributions in KRW for 2026, reconcile insurance bank entries and distinguish contribution payments from income-tax relief. Contributor: Open Accountants. This version has no accountant approval.
 
-| Field | Value |
-|---|---|
-| Country | South Korea |
-| Jurisdiction Code | KR |
-| Primary Legislation | National Pension Act; National Health Insurance Act; Long-Term Care Insurance Act; Employment Insurance Act; Industrial Accident Compensation Insurance Act |
-| Supporting Legislation | Income Tax Act -- deductibility of NPS and NHIS contributions |
-| Tax Authority | National Pension Service (NPS); National Health Insurance Service (NHIS); Ministry of Employment and Labor |
-| Tax Year | 2025 |
-| Currency | KRW only |
-| Contributor | Open Accountants |
-| Validation Date | Pending |
-| Skill Version | 2.0 |
-| Confidence Coverage | Tier 1: NPS rate/ceiling, NHIS rate, LTCI rate, payment schedule, tax deductibility. Tier 2: NHIS property-based assessment, income reclassification, voluntary employment insurance. Tier 3: disability exemptions, international social security agreements, arrears disputes. |
+Quick reference: an NPS regional subscriber pays the full **9.5%** in 2026; the income floor and ceiling change in July. NHIS uses **income plus property**, with no vehicle charge. LTCI uses the **month-specific statutory ratio**: the exact rate ratio for January-October 2026; the enacted amendment rounds that ratio for November premiums onward, with statutory commencement on 27 November 2026. The ordinary monthly payment deadline is the **10th of the following month**; special foreign community-insured persons can instead have advance payment by the **25th of the preceding month**. Sources: [NPS premium rules](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do), [NHIS 2026 formula](https://edi.nhis.or.kr/portal/images/popup/20251204_pop01longdesc.html), [LTCI Amendment Act No. 21690, art. 9 and addenda arts. 1 and 3](https://law.go.kr/LSW/lsRvsDocListP.do?chrClsCd=010202&lsId=010436&lsRvsGubun=all), National Health Insurance Act arts. 78 and 109(8), [operative Act PDF](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20261008&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=285273&mokChaChk=N).
 
-**NPS key figures (2025):**
+This is not employee payroll, a benefits calculation, a disability decision, a treaty determination or an arrears-dispute service. Employment/accident cover is classified below, not priced without the relevant registration and occupation. Do not present limited computation coverage as a complete assessment of every insurance regime.
 
-| Item | Value |
-|---|---|
-| Total contribution rate | 9.0% of monthly income |
-| Self-employed share | 9.0% (full amount, no employer) |
-| Monthly income floor (Jan-Jun 2025) | KRW 390,000 |
-| Monthly income ceiling (Jan-Jun 2025) | KRW 6,170,000 |
-| Monthly income floor (Jul 2025-Jun 2026) | KRW 400,000 |
-| Monthly income ceiling (Jul 2025-Jun 2026) | KRW 6,370,000 |
-| From 2026 | Rate increases to 9.5%, rising 0.5%/year to 13.0% by 2033 |
+## Ask the client first
 
-**Four major social insurances overview:**
+Read available records and assessment notices before asking for missing facts. Require:
 
-| Insurance | Applies to Self-Employed? | Self-Employed Pays |
+1. Date of birth, nationality, Korean residence/visa status, coverage dates and any treaty certificate.
+2. Actual NPS and NHIS category: regional/community, workplace, dependent, voluntarily continued or excluded. Identify employment alongside business income, and whether the business employs staff.
+3. Contribution month, NPS reported/assessed monthly income, and any accepted contribution-exception, adjustment or subsidy decision. Unknown income means **stop**, not substitution of the minimum base.
+4. NHIS household membership, assessed monthly income, income categories and reference year; property-tax bases, lease deposits/rent, property deductions and the NHIS property score. Vehicles are not a premium input after abolition.
+5. NHIS/LTCI notice, reductions/exemptions, actual payments/refunds and whose premiums they are. A percentage of turnover is not an assessment base.
+6. Employment/accident insurance registration, staff count, business/occupation, elected earnings grade and approval notice.
+7. For tax relief, business versus employment income, actual contributions paid, reimbursements/refunds and any relief already claimed. Prevent double deduction.
+
+Do not assume age, insured status, eligibility for an exemption or a zero property score from silence. Unknown property/income classifications prevent a complete NHIS estimate even when an NPS estimate is possible.
+
+## The method, step by step
+
+### 1. Establish which insurance category applies
+
+| Insurance | Treatment and conditions | Official source |
 |---|---|---|
-| National Pension (NPS) | YES -- mandatory ages 18-59 | Full 9% |
-| National Health Insurance (NHIS) | YES -- mandatory for all residents | Full contribution (income + property based) |
-| Long-Term Care Insurance (LTCI) | YES -- add-on to NHIS | 12.95% of NHIS premium |
-| Employment Insurance | NO (voluntary opt-in available) | N/A unless enrolled |
-| Industrial Accident Insurance | NO for most self-employed | N/A (some high-risk occupations may opt in) |
+| NPS | Domestic residents aged 18 to under 60 are generally covered; regional subscribers are people outside workplace coverage, subject to statutory exclusions. Regional subscribers bear the full contribution. No-income spouses and certain students/military members have distinct exclusion/exception rules. | [NPS eligibility and regional coverage FAQ](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0097M0.do) |
+| NHIS | Community membership excludes workplace-insured persons and dependants; coverage also has Medical Aid and other statutory exclusions. Community premiums are household based. | National Health Insurance Act arts. 5, 6 and 69(5), [operative Act PDF](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20261008&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=285273&mokChaChk=N) |
+| LTCI | Collected with health insurance, subject to its own reductions/exemptions; not a separate voluntary enrolment decision for an ordinary NHIS subscriber. | [Long-Term Care Insurance Act arts. 7-9 and 11, official PDF](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20260526&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=286217&mokChaChk=N) |
+| Employment insurance | The ordinary self-employed-owner scheme is voluntary, including a solo owner or an owner with fewer than 50 workers, subject to registration and exclusions. A contractor may instead fall within mandatory employee, artist or labour-provider coverage. | [MOEL self-employed scheme, membership and applications](https://ei.work24.go.kr/ei/eim/eg/ei/eiEminsr/retrievePb0206Info.do) |
+| Industrial accident insurance | Do not classify solely from the word self-employed. Voluntary small-business-owner cover can extend to insured employers with fewer than 300 workers and persons with no workers; the latter route excludes statutory labour providers, who have a separate regime. | Industrial Accident Compensation Insurance Act art. 124; [Enforcement Decree art. 122](https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lspttninfSeq=75327) |
 
-**NHIS key figures (2025):**
+### 2. Select the month and NPS standard income base
 
-| Item | Value |
-|---|---|
-| NHIS premium rate (nominal) | 7.09% |
-| Point value per score (community insured) | KRW 211.5 |
-| Monthly minimum premium | ~KRW 19,780 |
-| LTCI rate (as % of NHIS premium) | 12.95% |
-| LTCI rate from 2026 | 13.14% |
+NPS standard monthly income discards amounts below KRW 1,000, then applies that month's floor and ceiling. Calculate the **full** regional contribution, before any approved support: `base = clamp(floor(income / 1000) * 1000, floor_base, ceiling_base)`, then `contribution = floor(base * annual_rate / 10) * 10`. Discard the contribution's amount below KRW 10 under National Pension Act art. 117 and the Treasury rule. Match the issued notice; do not apply the employee half-share to a regional subscriber. Sources: [NPS, premium amount, standard income and regional rate sections](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do), [National Pension Act art. 117, operative PDF](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20261020&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=291347&mokChaChk=N).
 
-**Tax treatment:**
+| Period and subscriber | Full rate | Monthly income floor | Monthly income ceiling | Official source |
+|---|---:|---:|---:|---|
+| 1 January to 30 June 2026, regional subscriber | 9.5% | KRW 400,000 | KRW 6,370,000 | [NPS current premium rules and dated base table](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do) |
+| 1 July to 31 December 2026, regional subscriber; these bases continue through 30 June 2027 | 9.5% in 2026 | KRW 410,000 | KRW 6,590,000 | [NPS dated base table](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do) |
+| Historical: 1 January to 30 June 2025 | 9% | KRW 390,000 | KRW 6,170,000 | [NPS historical base and rate sections](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do) |
+| Historical: 1 July to 31 December 2025 | 9% | KRW 400,000 | KRW 6,370,000 | [NPS historical base and rate sections](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do) |
 
-| Contribution | Tax Benefit |
-|---|---|
-| NPS | Income deduction -- reduces taxable income directly |
-| NHIS + LTCI | Tax credit -- 12% of premiums paid credited against tax |
+The legislated schedule increases the full rate by 0.5 percentage points each year from 2026 to 13% in 2033. A base period crossing January does not freeze the previous year's rate. Do not extrapolate unannounced future July bases. Source: [NPS regional rate explanation](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do).
 
-**Conservative defaults:**
+### 3. Calculate community NHIS, then LTCI
 
-| Ambiguity | Default |
-|---|---|
-| Unknown monthly income | Use NPS floor (KRW 400,000 from Jul 2025) |
-| Unknown NHIS property/vehicle data | Flag for reviewer -- cannot compute without data |
-| Unknown employment status | Treat as self-employed (community insured) |
-| Unknown age for NPS | Assume mandatory (age 18-59) |
-
----
-
-## Section 2 -- Required inputs and refusal catalogue
-
-### Required inputs
-
-Before computing any social insurance figure, you MUST know:
-
-1. Age -- NPS is mandatory for persons aged 18 to 59
-2. Employment status -- self-employed, freelancer, or dual (employed + side self-employment)
-3. Monthly reported income -- basis for NPS contributions
-4. Property and vehicle ownership -- affects NHIS calculation for community insured
-5. Number of household members on NHIS -- NHIS for self-employed is household-based
-6. Is there any employment income? -- if fully employed, employer handles all 4 insurances
-
-If monthly income is unknown, STOP. Do not compute NPS. Income is mandatory for NPS calculation.
-
-### Refusal catalogue
-
-**R-KR-SI-1 -- Disability exemption.** Trigger: client asks about NPS exemption due to disability. Message: "NPS disability exemptions require verification of disability status with NPS. This is outside this skill's scope. Please escalate to a licensed Korean practitioner."
-
-**R-KR-SI-2 -- International social security agreement.** Trigger: client is a foreign national asking about NPS obligations under a bilateral agreement. Message: "NPS obligations for foreign nationals depend on the specific bilateral social security agreement between South Korea and the client's home country. Please escalate to a licensed Korean practitioner."
-
-**R-KR-SI-3 -- Arrears disputes.** Trigger: client disputes accumulated NPS or NHIS arrears. Message: "Arrears disputes require direct engagement with NPS or NHIS. This skill cannot advise on dispute resolution. Please escalate to a licensed Korean practitioner."
-
----
-
-## Section 3 -- Payment pattern library
-
-This is the deterministic pre-classifier for bank statement entries related to social insurance. Match by case-insensitive substring on the counterparty name or transaction description.
-
-### 3.1 National Pension (NPS) debits
-
-| Pattern | Treatment | Notes |
+| Item | Applicable figure/condition | Official source |
 |---|---|---|
-| NPS, NATIONAL PENSION, 국민연금 | NPS CONTRIBUTION | Monthly contribution -- due by 10th of following month |
-| 국민연금공단, PENSION SERVICE | NPS CONTRIBUTION | Same |
-| NPS REFUND, 연금환급 | NPS REFUND | Overpayment refund or exemption-related |
+| 2026 community income component | Assessed monthly income x 7.19%; add the property component | [NHIS 2026 operative formula](https://edi.nhis.or.kr/portal/images/popup/20251204_pop01longdesc.html), Act art. 69(5) |
+| 2026 property component | Assessed property score x KRW 211.5 | [NHIS 2026 operative formula](https://edi.nhis.or.kr/portal/images/popup/20251204_pop01longdesc.html) |
+| Community property assessment | Basic property deduction increased to KRW 100 million from February 2024; this is an assessment deduction, not an exemption for every property worth that sale price | [NHIS implementation explanation, March 2024](https://www.nhis.or.kr/static/alim/paper/oldpaper/202403/sub/section4_0.html) |
+| Vehicles | Vehicle premium abolished from February 2024; do not add a vehicle score in 2025 or 2026 | [NHIS implementation explanation](https://www.nhis.or.kr/static/alim/paper/oldpaper/202403/sub/section4_0.html) |
+| 2026 community monthly NHIS limits | General lower KRW 20,160; upper KRW 4,591,740, before LTCI; individual reductions and foreign-insured rules can alter the payable bill | [NHIS 2026 leaflet, qualification/collection section](https://www.nhis.or.kr/renewal_popup/poster/20260204_poster_longdesc_1.html) |
+| January-October 2026 LTCI premiums | NHIS premium after applicable relief x 0.9448% / 7.19%; computed approximation 13.14%, but use the exact ratio for these months | [NHIS 2026 formula](https://edi.nhis.or.kr/portal/images/popup/20251204_pop01longdesc.html); [LTCI Act art. 9](https://law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1031056547) |
+| November-December 2026 LTCI premiums, enacted amendment commencing 27 November | Round the ratio 0.9448% / 7.19% at its fifth decimal place, giving the computed multiplier 0.1314; then apply monetary truncation. Addenda apply this to the premium for the whole commencement month, not just days after commencement | [Act No. 21690, art. 9 and addenda arts. 1 and 3](https://law.go.kr/LSW/lsRvsDocListP.do?chrClsCd=010202&lsId=010436&lsRvsGubun=all) |
+| Historical 2025 health and LTCI rates | NHIS 7.09%, property point KRW 208.4; LTCI = NHIS x 0.9182% / 7.09%, computed approximation 12.95% | [NHIS official booklet p. 48, explicitly labelled 2025](https://www.nhis.or.kr/upload/e-book/promotion/files/basic-html/page48.html) |
+| Ordinary monetary truncation | Discard amounts below KRW 10; apply the statutory basis rather than rounding a headline rate first | NHIS Act art. 107; [National Treasury Funds Management Act art. 47](https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1031453575) |
 
-### 3.2 National Health Insurance (NHIS) debits
+The old formula `(income score + property score + vehicle score) x point value` is not the current method. Use NHIS-assessed income and property data, not a raw accounting profit substituted into every income category. The original September 2022 reform topic is retained as background only: the current authority explicitly separates income and property, and the February 2024 abolition removes vehicle assessment. Missing a property assessment does not mean property is zero.
 
-| Pattern | Treatment | Notes |
+For LTCI, use the health premium base to which the relevant reductions apply. For January-October 2026, retain the exact rate ratio until monetary truncation. Act No. 21690 commences on 27 November 2026 and its addenda art. 3 applies the revised ratio-rounding rule from the November 2026 premium: round at the fifth decimal place, retaining four decimal places in the ratio (computed multiplier 0.1314), then truncate the premium below KRW 10. Do not apportion the November premium by days. Source: [enacted amendment and commencement/application provisions](https://law.go.kr/LSW/lsRvsDocListP.do?chrClsCd=010202&lsId=010436&lsRvsGubun=all). Special LTCI relief can differ from health relief under art. 9(3); refer such a case rather than assuming an identical reduction. The examples assume no reduction and an ordinary domestic regional household.
+
+### 4. Classify payments and tax relief separately
+
+Bank-name matching is a preliminary bookkeeping instruction, not proof of eligibility or tax deductibility. Match case-insensitive substrings, then obtain the notice and allocate any combined bill:
+
+| Bank description/pattern | Preliminary classification | Verification |
 |---|---|---|
-| NHIS, 국민건강보험, 건강보험공단 | NHIS + LTCI PREMIUM | Monthly premium -- due by 25th of month (community insured) |
-| HEALTH INSURANCE, 건강보험료 | NHIS PREMIUM | Same |
-| 장기요양, LONG-TERM CARE | LTCI COMPONENT | Automatically included in NHIS billing |
+| NPS, NATIONAL PENSION, 국민연금, 국민연금공단, PENSION SERVICE | NPS contribution | Period, subscriber and notice; ordinary due date below |
+| NPS REFUND, 연금환급 | Pension refund | Link to original payment and reassess relief; do not book as another contribution |
+| NHIS, 국민건강보험, 건강보험공단, HEALTH INSURANCE, 건강보험료 | Health and possibly LTCI | Split the components from the notice; a combined debit is not a second LTCI payment |
+| 장기요양, LONG-TERM CARE | LTCI component | Verify whether already included in the health debit |
+| 고용보험, EMPLOYMENT INSURANCE | Employment premium | Verify self-employed voluntary approval versus employee/artist/labour-provider category |
+| 근로복지공단 | Employment or accident insurance | Identify insurance and insured person; the agency name does not decide |
+| NTS, 국세청, NATIONAL TAX SERVICE | Possible tax payment | Reconcile with NTS/Hometax records; not a social insurance premium merely because tax data later affects assessment |
+| HOMETAX, 홈택스 | Tax-portal-related entry | Determine whether payment, refund or reference text; a description alone proves neither filing nor payment |
 
-### 3.3 Employment Insurance (voluntary -- rare for self-employed)
-
-| Pattern | Treatment | Notes |
+| Contribution | Tax treatment, subject to the taxpayer's facts | Official source |
 |---|---|---|
-| 고용보험, EMPLOYMENT INSURANCE | VOLUNTARY EI PREMIUM | Only if self-employed person has voluntarily enrolled |
-| 근로복지공단 | EI or INDUSTRIAL ACCIDENT | Verify which insurance -- could be either |
+| Own qualifying public pension contributions paid by a resident with comprehensive income | Pension income deduction; subject to the aggregate-income limitation. Do not deduct employer contributions as the individual's own payments | Income Tax Act art. 51-3(1), (3), [operative Act PDF, p. 39](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20260701&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=280405&mokChaChk=N) |
+| Own NHIS/LTCI paid as community insured in calculating business income | Necessary business expense under the statutory expense rules; **not a 12% premium tax credit** | Income Tax Act Enforcement Decree art. 55(1)(11-3), [operative Decree PDF, p. 49](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20260701&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=286211&mokChaChk=N) |
+| Employment-income earner's qualifying employee-borne NHIS/EI/LTCI | Special income deduction against employment income; classification differs from the business-expense route. No double claim | Income Tax Act art. 52(1), [operative Act PDF, p. 39](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20260701&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=280405&mokChaChk=N) |
+| Employer's statutory health/EI/LTCI amounts; own qualifying workplace health/LTCI; qualifying self-employed EI and small-business-owner accident premiums | Potential business expenses in the respective statutory categories, not an automatic personal premium tax credit | Decree art. 55(1)(11) to (11-5), [operative Decree PDF, p. 49](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20260701&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=286211&mokChaChk=N) |
 
-### 3.4 Tax authority (income reporting triggers)
+Tax relief reduces a relevant income base; its tax saving depends on the full return. Do not invent a fixed saving for all income levels, deduct NPS twice or claim relief on amounts refunded or paid by somebody else without reviewing the entitlement.
 
-| Pattern | Treatment | Notes |
+## Boundary and exception table
+
+| Case retained from the earlier version | Treatment | Official source |
 |---|---|---|
-| NTS, 국세청, NATIONAL TAX SERVICE | TAX PAYMENT | Income tax payment; NPS/NHIS adjust based on NTS data |
-| HOMETAX, 홈택스 | TAX FILING | Filing portal -- triggers income data cross-reference |
+| EC1: employed plus self-employed | A person already covered by a workplace generally does not become a separate NPS regional subscriber merely for side income. NHIS workplace non-pay income can trigger a separate assessment above KRW 20 million annually; it is the statutory non-pay income total, not a business-turnover threshold | [NPS regional/workplace conversion FAQ](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0097M0.do); Act art. 71(1), Decree art. 41(4), [official law-service explanation](https://www.easylaw.go.kr/CSP/CnpClsMainPreview.laf?ccfNo=4&cciNo=1&cnpClsNo=1&csmSeq=1063&popMenu=ov) |
+| EC2: no or low income | Low positive NPS income is floored; no income can support an application for contribution exception, not automatic nonpayment. Some groups are excluded instead. NHIS does not disappear just because NPS accepts an exception; use the health notice and applicable minimum/relief | [NPS eligibility/no-income FAQ](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0097M0.do); [NHIS 2026 limits](https://www.nhis.or.kr/renewal_popup/poster/20260204_poster_longdesc_1.html) |
+| EC3: turning 60 | Mandatory NPS category ends under the statutory loss-of-status rule. For a regional subscriber turning 60 with no other status event, loss is the following day and contributions run through the month in which age 60 is reached. For mixed status events, determine the final insured month from the exact loss date; contributions run through the month containing the day before that date. Eligible former contributors may apply for voluntary continuation before 65, subject to exclusions; NHIS/LTCI do not cease merely because NPS age coverage ends | [NPS Act arts. 12-13](https://www.law.go.kr/LSW/lsLawLinkInfo.do?chrClsCd=010202&lsJoLnkSeq=1000829747); [NPS contribution-period rules](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do); NHIS Act arts. 5-6 |
+| EC4: new business/no prior tax return | Establish coverage and report actual income to NPS; obtain the initial assessed base. NHIS assesses from available qualifying information. Do not make up an income estimate, assume the floor, or promise a particular later adjustment date | [NPS income-reporting FAQ](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0097M0.do); NHIS Act arts. 69-72 |
+| EC5: foreign owner | NPS generally uses equal treatment subject to reciprocity, residence/status exclusions and any applicable agreement; a treaty is not the only route into coverage. Foreign NHIS has residence/status/registration and exclusion rules, and potentially a special minimum and advance due date. Refer for an individual determination | [NPS reciprocity/agreement explanation](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0110P0.do); NHIS Act art. 109(2)-(9), [official foreign-coverage guidance](https://www.nhis.or.kr/english/wbheaa02900m01.do) |
+| EC6: owner employs staff | Recheck the owner's own workplace-insured status as well as registering employees. Do not continue treating the owner as community insured automatically. Employee payroll calculations are outside this computation | [NPS workplace registration FAQ](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0097M0.do); NHIS Act art. 6(2) |
+| EC7: July base transition | Split January-June and July-December using that period's bases; the January rate change is separate. Never use the July ceiling for the entire year | [NPS dated base table and annual rate schedule](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do) |
+| EC8: health-premium dispute | Distinguish an adjustment request from formal objection. Formal objection normally requires writing within 90 days of learning of the disposition and within 180 days of disposition, with a justified-delay exception. Do not use 90 days from a bill as the only rule | [NHIS Act art. 87(1)-(3)](https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1026290197) |
 
----
+Self-employed employment insurance uses seven elected reference-earnings grades, not a premium rate changing merely because a different grade is selected. An approved owner can qualify for unemployment benefits after at least one year of paid self-employed coverage during the preceding 24 months, qualifying involuntary closure and active re-employment efforts; arrears and other restrictions matter. The original construction, transport, delivery and insurance-sales examples remain classification warnings: occupation-specific mandatory labour-provider coverage must be checked before assuming voluntary accident insurance. Sources: [MOEL scheme](https://ei.work24.go.kr/ei/eim/eg/ei/eiEminsr/retrievePb0206Info.do), [current Work24 benefit conditions](https://www.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systClId=SC00000258&systId=SI00000347), [accident Decree art. 122](https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lspttninfSeq=75327). No benefit amount is promised from staff count alone.
 
-## Section 4 -- NPS computation rules
+## Worked cases
 
-### 4.1 NPS eligibility (Tier 1)
+All amounts are KRW. Examples assume the stated insured category remains valid, no accepted NPS contribution exception/support and no health/LTCI reduction. The current cases cover 2026 and its enacted November premium transition. The eight original tests retain every original input below as historical/regression cases; `Jul 2025+` is bounded to July-December 2025, not permission to use 2025 rates indefinitely.
 
-Legislation: National Pension Act
+### Current example A: high-income regional subscriber across July 2026
 
-Self-employed pay the full 9%. There is no employer to share the burden. Income is self-reported to NPS. NPS may adjust based on tax return data.
+Assessed monthly income KRW 8,000,000. Apply each period's ceiling and the full 9.5% rate, rather than the employee share. Source: [NPS dated base/rate rules](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do).
 
-Ages 18 to 59 are mandatory. Persons aged 60-64 may voluntarily continue. Exemptions (for no income, students, military) must be applied for -- they are not automatic.
-
-### 4.2 NPS computation (Tier 1)
-
-```
-Monthly NPS = clamp(reported_monthly_income, floor, ceiling) x 9%
-```
-
-| Example Monthly Income | Period | NPS Base | Monthly NPS |
-|---|---|---|---|
-| KRW 3,000,000 | Jul 2025+ | KRW 3,000,000 | KRW 270,000 |
-| KRW 8,000,000 | Jul 2025+ | KRW 6,370,000 (capped) | KRW 573,300 |
-| KRW 300,000 | Jul 2025+ | KRW 400,000 (floor) | KRW 36,000 |
-
-### 4.3 NHIS computation -- community insured (Tier 2)
-
-Legislation: National Health Insurance Act
-
-For self-employed (community insured), NHIS is NOT a simple percentage of income:
-
-```
-Monthly NHIS Premium = (Income Score + Property Score + Vehicle Score) x Point Value per Score
-```
-
-Point value per score (2025): KRW 211.5
-
-Since September 2022, income is weighted more heavily (property-based portion reduced). However, property and vehicles still factor in. The exact NHIS premium cannot be computed without knowing income, property, and vehicle details. Flag for reviewer or direct client to the NHIS premium calculator.
-
-### 4.4 LTCI computation (Tier 1)
-
-```
-Monthly LTCI = NHIS Premium x 12.95%
+```oa-check
+name: Regional NPS ceiling transition in 2026
+inputs:
+  monthly_income: 8000000
+steps:
+  - jan_jun_base: clamp(monthly_income, 400000, 6370000)
+  - jan_jun_monthly: jan_jun_base * 0.095
+  - jul_dec_base: clamp(monthly_income, 410000, 6590000)
+  - jul_dec_monthly: jul_dec_base * 0.095
+  - annual_nps: jan_jun_monthly * 6 + jul_dec_monthly * 6
+expected:
+  jan_jun_base: 6370000
+  jan_jun_monthly: 605150
+  jul_dec_base: 6590000
+  jul_dec_monthly: 626050
+  annual_nps: 7387200
 ```
 
-LTCI is automatically calculated as a percentage of the NHIS premium. Not a separate enrolment.
+### Current example B: supplied 2026 health notice
 
----
+The NHIS health premium is KRW 350,000 before LTCI, with no relief. The LTCI estimate is KRW 45,990 and combined health/LTCI KRW 395,990 after truncation, under both the January-October exact-ratio rule and the November-December rounded-ratio rule. That coincidence does not make the methods interchangeable. Do not round a headline rate in the earlier period or round the resulting premium to the nearest won. Sources: [NHIS exact formula](https://edi.nhis.or.kr/portal/images/popup/20251204_pop01longdesc.html), LTCI Act art. 9 and NHIS Act art. 107.
 
-## Section 5 -- Payment schedule and income reporting
-
-### 5.1 Payment schedule (Tier 1)
-
-NPS: Monthly, due by 10th of following month. Bank transfer, auto-debit, or at designated banks/post offices.
-
-NHIS + LTCI: Monthly, due by 25th of each month (community insured). Bank transfer, auto-debit, credit card, or at designated locations.
-
-If the due date falls on a weekend or public holiday, payment is due by the next business day.
-
-### 5.2 Income reporting and adjustment (Tier 1)
-
-NPS: Self-employed report monthly income when first registering. NPS adjusts every July based on prior year tax return. Voluntary adjustment requests accepted at any time.
-
-NHIS: Adjusted annually based on income and property data from NTS and local government. Effective date typically November. Appeals within 90 days.
-
----
-
-## Section 6 -- Tax deductibility and employment/accident insurance
-
-### 6.1 Tax deductibility (Tier 1)
-
-Legislation: Income Tax Act
-
-NPS: income deduction -- the full amount paid is deducted from gross income before tax calculation. More valuable for higher-income earners.
-
-NHIS + LTCI: itemized deduction (tax credit) -- 12% of premiums paid is credited against tax liability. Benefits all income levels equally.
-
-### 6.2 Employment Insurance (Tier 1)
-
-Not mandatory for self-employed. Voluntary enrolment available for self-employed with at least 1 employee or certain solo categories. Benefits include unemployment payments if business closes. Rate varies by selected insured income grade (7 grades).
-
-### 6.3 Industrial Accident Insurance (Tier 1)
-
-Not mandatory for most self-employed. Voluntary enrolment for certain high-risk occupations (construction, transportation, delivery, insurance sales).
-
----
-
-## Section 7 -- Edge case registry
-
-### EC1 -- Dual status: employed and self-employed (Tier 2)
-Situation: Client is employed full-time and also has self-employment income.
-Resolution: NPS: No additional NPS on self-employment income if already paying as workplace insured. NHIS: Additional NHIS premium may be assessed on self-employment income exceeding KRW 20 million/year. Flag for reviewer.
-
-### EC2 -- Self-employed with zero or very low income (Tier 1)
-Situation: Client registered as self-employed but has no income or income below the NPS floor.
-Resolution: NPS: May apply for contribution exemption due to no income. Not automatic -- must be applied for. NHIS: Minimum premium of approximately KRW 19,780/month still applies.
-
-### EC3 -- Turning 60 during the year (Tier 1)
-Situation: Client turns 60.
-Resolution: NPS contributions cease from the month after turning 60. Client may opt for voluntary continued enrolment until age 65. NHIS and LTCI continue -- no age limit.
-
-### EC4 -- Newly registered self-employed (Tier 1)
-Situation: Client just registered with no prior tax return.
-Resolution: NPS: Client self-reports expected monthly income. NPS may accept declared amount until first tax return. NHIS: Initial premium assessed on available data; adjusted after first tax filing.
-
-### EC5 -- Foreign national self-employed in Korea (Tier 2)
-Situation: Client is a foreign national operating as self-employed.
-Resolution: NPS: Mandatory for nationals from countries with reciprocal agreements. Others may be exempt or contribute without benefits. NHIS: Mandatory for all foreign residents staying 6+ months. Flag for reviewer -- check bilateral agreement.
-
-### EC6 -- Self-employed with employees (Tier 1)
-Situation: Client employs staff.
-Resolution: The client's own contributions follow self-employed rules (this skill). For employees, the client must register as a workplace and pay employer shares -- separate obligation outside this skill.
-
-### EC7 -- NPS ceiling adjustment mid-year (July) (Tier 1)
-Situation: Client's income exceeds NPS ceiling, and ceiling changes in July.
-Resolution: January-June uses pre-July ceiling. From July, new ceiling applies. NPS adjusts automatically.
-
-### EC8 -- NHIS premium dispute (Tier 2)
-Situation: Client believes NHIS premium is too high.
-Resolution: May request adjustment by submitting updated income documentation to NHIS. Appeals within 90 days of premium notice. Flag for reviewer.
-
----
-
-## Section 8 -- Reviewer escalation protocol
-
-When a Tier 2 situation is identified:
-
-```
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Licensed Korean practitioner must confirm before advising client.
+```oa-check
+name: Health notice and exact LTCI ratio in 2026
+inputs:
+  nhis: 350000
+steps:
+  - ltci: floor(nhis * 0.9448 / 7.19 / 10) * 10
+  - total_health: nhis + ltci
+  - november_ratio: round(0.9448 / 7.19, 4)
+  - november_ltci: floor(nhis * november_ratio / 10) * 10
+  - november_total_health: nhis + november_ltci
+expected:
+  ltci: 45990
+  total_health: 395990
+  november_ratio: 0.1314
+  november_ltci: 45990
+  november_total_health: 395990
 ```
 
-When a Tier 3 situation is identified:
+### Current example C: November 2026 ratio transition changes the result
 
+For an NHIS health premium of KRW 3,000,000 with no relief, the January-October exact-ratio rule produces LTCI KRW 394,210; the enacted November-December rounded-ratio rule produces KRW 394,200. The KRW 10 difference demonstrates why the applicable contribution month matters. Source: [Act No. 21690, art. 9 and addenda arts. 1 and 3](https://law.go.kr/LSW/lsRvsDocListP.do?chrClsCd=010202&lsId=010436&lsRvsGubun=all).
+
+```oa-check
+name: LTCI November 2026 premium transition
+inputs:
+  nhis: 3000000
+steps:
+  - january_october_ltci: floor(nhis * 0.9448 / 7.19 / 10) * 10
+  - november_ratio: round(0.9448 / 7.19, 4)
+  - november_december_ltci: floor(nhis * november_ratio / 10) * 10
+  - difference: january_october_ltci - november_december_ltci
+expected:
+  january_october_ltci: 394210
+  november_ratio: 0.1314
+  november_december_ltci: 394200
+  difference: 10
 ```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to licensed Korean practitioner. Document gap.
+
+### Original tests 1-3: ordinary income, ceiling and floor in 2025
+
+Keep original inputs: test 1 age 35/income 3,000,000; test 2 age 40/income 8,000,000; test 3 age 25/income 300,000, each originally labelled `Jul 2025+`. NPS is 270,000, 573,300 and 36,000 respectively for July-December 2025. Test 1 still cannot yield total NHIS without household income/property data; vehicles are not required. Its LTCI uses the exact 2025 ratio. Test 3 may require a no-income/exception inquiry, but low positive income alone does not confer exemption. Sources: [NPS historical bases and rate](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do), [NHIS 2025 formula](https://www.nhis.or.kr/upload/e-book/promotion/files/basic-html/page48.html).
+
+```oa-check
+name: Original tests 1-3 bounded to July-December 2025
+inputs:
+  age_1: 35
+  income_1: 3000000
+  age_2: 40
+  income_2: 8000000
+  age_3: 25
+  income_3: 300000
+steps:
+  - nps_1: clamp(income_1, 400000, 6370000) * 0.09
+  - base_2: clamp(income_2, 400000, 6370000)
+  - nps_2: base_2 * 0.09
+  - base_3: clamp(income_3, 400000, 6370000)
+  - nps_3: base_3 * 0.09
+expected:
+  nps_1: 270000
+  base_2: 6370000
+  nps_2: 573300
+  base_3: 400000
+  nps_3: 36000
 ```
 
----
+### Original test 4: turning 60 in March 2025
 
-## Section 9 -- Test suite
+Original inputs: age 60, turned 60 in March 2025, monthly income KRW 4,000,000. Assuming no other status event and no contribution exception, March 2025 is the final mandatory contribution month, at KRW 360,000 (4,000,000 x 9%); no mandatory NPS is due for April 2025. Regional status ends on the day after age 60 is reached, and the contribution-period rule therefore includes March. Obtain exact dates where another status event may affect this result. Voluntary continuation requires application and eligibility; NHIS/LTCI continue if still insured. Sources: [NPS Act arts. 12-13](https://www.law.go.kr/LSW/lsLawLinkInfo.do?chrClsCd=010202&lsJoLnkSeq=1000829747), [NPS contribution-period rules](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do).
 
-### Test 1 -- Standard self-employed, income KRW 3,000,000/month
-Input: Age 35, monthly income KRW 3,000,000, period Jul 2025+.
-Expected output: NPS = KRW 3,000,000 x 9% = KRW 270,000/month. NHIS = requires property/vehicle data (flag Tier 2). LTCI = NHIS premium x 12.95%.
+### Original test 5: correct the premium tax-credit error
 
-### Test 2 -- Income above NPS ceiling
-Input: Age 40, monthly income KRW 8,000,000, period Jul 2025+.
-Expected output: NPS base capped at KRW 6,370,000. NPS = KRW 573,300/month.
+Original inputs: annual own NPS paid KRW 3,240,000 and annual own community NHIS/LTCI paid KRW 2,400,000. For a qualifying resident sole trader with sufficient comprehensive income and actual-expense accounts, NPS is a pension income deduction and health/LTCI a business expense. The old fixed KRW 288,000 tax-credit result is wrong. These facts do not determine the tax saving. Sources: Income Tax Act art. 51-3 and Decree art. 55(1)(11-3), linked in the relief table.
 
-### Test 3 -- Income below NPS floor
-Input: Age 25, monthly income KRW 300,000, period Jul 2025+.
-Expected output: NPS base raised to floor KRW 400,000. NPS = KRW 36,000/month. Client may apply for exemption.
+```oa-check
+name: Original test 5 correct relief categories without invented tax saving
+inputs:
+  own_nps_paid: 3240000
+  own_community_health_paid: 2400000
+steps:
+  - pension_income_deduction: own_nps_paid
+  - health_business_expense: own_community_health_paid
+expected:
+  pension_income_deduction: 3240000
+  health_business_expense: 2400000
+```
 
-### Test 4 -- Age 60, NPS cessation
-Input: Age 60 (turned 60 in March 2025), monthly income KRW 4,000,000.
-Expected output: NPS contributions cease from April 2025. Voluntary continued enrolment available. NHIS and LTCI continue.
+### Original test 6: owner with three employees
 
-### Test 5 -- Tax deductibility calculation
-Input: Annual NPS paid = KRW 3,240,000. Annual NHIS + LTCI paid = KRW 2,400,000.
-Expected output: NPS: income deduction of KRW 3,240,000. NHIS + LTCI: tax credit of KRW 288,000 (= KRW 2,400,000 x 12%).
+Original input: a self-employed owner with three employees wants unemployment coverage. Three is below the voluntary self-employed scheme's staff ceiling; obtain registration, occupation, age and approval rather than declaring unconditional eligibility. Business closure does not itself prove benefit entitlement. Recheck the owner's NPS/NHIS workplace status separately. Sources: [MOEL self-employed entry requirements](https://ei.work24.go.kr/ei/eim/eg/ei/eiEminsr/retrievePb0206Info.do), [Work24 benefit conditions](https://www.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systClId=SC00000258&systId=SI00000347).
 
-### Test 6 -- Employment insurance voluntary enrolment
-Input: Self-employed with 3 employees wants unemployment coverage.
-Expected output: Eligible for voluntary employment insurance. Not mandatory. Benefits include unemployment payments if business closes.
+### Original test 7: ceiling change in the full 2025 year
 
-### Test 7 -- NPS ceiling transition (Jan-Jun vs Jul-Dec)
-Input: Age 45, monthly income KRW 6,300,000, full year 2025.
-Expected output: Jan-Jun: NPS base = KRW 6,170,000 (capped). NPS = KRW 555,300/month. Jul-Dec: NPS base = KRW 6,300,000 (below new ceiling). NPS = KRW 567,000/month.
+Original inputs: age 45, monthly income KRW 6,300,000, full year 2025. January-June is capped at 6,170,000; July-December uses actual 6,300,000. Source: [NPS historical base/rate table](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do).
 
-### Test 8 -- LTCI computation
-Input: NHIS monthly premium = KRW 350,000.
-Expected output: LTCI = KRW 350,000 x 12.95% = KRW 45,325/month. Total health insurance = KRW 395,325/month.
+```oa-check
+name: Original test 7 full 2025 contribution year
+inputs:
+  age: 45
+  monthly_income: 6300000
+steps:
+  - first_half_base: clamp(monthly_income, 390000, 6170000)
+  - first_half_monthly: first_half_base * 0.09
+  - second_half_base: clamp(monthly_income, 400000, 6370000)
+  - second_half_monthly: second_half_base * 0.09
+  - annual_nps: 6 * first_half_monthly + 6 * second_half_monthly
+expected:
+  first_half_base: 6170000
+  first_half_monthly: 555300
+  second_half_base: 6300000
+  second_half_monthly: 567000
+  annual_nps: 6733800
+```
 
----
+### Original test 8: historical health/LTCI notice
 
-## Section 10 -- Prohibitions and disclaimer
+Original input: NHIS monthly premium KRW 350,000 under the old 2025 guide. Use the 2025 exact ratio and KRW 10 truncation: LTCI KRW 45,320 and combined health/LTCI KRW 395,320. The old KRW 45,325/395,325 output used rounded 12.95% and omitted truncation. The 2026 result for the same input is in current example B. Sources: [NHIS 2025 formula](https://www.nhis.or.kr/upload/e-book/promotion/files/basic-html/page48.html), [Treasury Act art. 47](https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1031453575), NHIS Act art. 107.
 
-### Prohibitions
+```oa-check
+name: Original test 8 health premium in 2025
+inputs:
+  nhis: 350000
+steps:
+  - ltci: floor(nhis * 0.9182 / 7.09 / 10) * 10
+  - total_health: nhis + ltci
+expected:
+  ltci: 45320
+  total_health: 395320
+```
 
-- NEVER compute NPS without knowing the client's monthly reported income
-- NEVER apply the employee NPS rate (4.5%) to a self-employed person -- self-employed pay the full 9%
-- NEVER compute NHIS for a self-employed person using only the 7.09% rate -- the community insured calculation requires income, property, and vehicle data
-- NEVER tell a client that employment insurance or industrial accident insurance is mandatory for self-employed -- it is voluntary (with limited exceptions)
-- NEVER ignore the NPS ceiling change that occurs every July
-- NEVER conflate NPS income deduction with NHIS/LTCI tax credit -- they are different mechanisms
-- NEVER assume NPS contribution exemption is automatic -- it must be applied for
-- NEVER advise on bilateral social security agreements without reviewer confirmation
-- NEVER present social insurance figures as definitive -- always label as estimated and direct client to NPS/NHIS notices
-- NEVER compute arrears or penalties without escalating to a licensed practitioner
+## When to refuse or refer
 
-### Disclaimer
+Preserve these refusal identifiers and record the documents needed:
+
+- **R-KR-SI-1, disability exemption:** disability status does not by itself establish a contribution exemption. Do not decide eligibility from this guide; refer with NPS status and disability documents to a licensed Korean practitioner/NPS.
+- **R-KR-SI-2, international social security agreement:** obtain nationality, actual insured work and the relevant agreement/certificate. Do not assert exemption or entitlement from nationality alone. Refer for the specific agreement determination.
+- **R-KR-SI-3, arrears disputes:** obtain the assessment, service dates and payment history; refer for direct NPS/NHIS engagement. Do not calculate disputed arrears, late charges or litigation advice here.
+
+For an unresolved assessment classification, produce a reviewer flag recording the person, coverage period, situation, ambiguous fact, possible treatments, source and required determination. For a matter outside scope, produce an escalation record with the issue and documents, and stop the disputed calculation. These are workflow flags, not claims that any rate or person has accountant approval.
+
+Never compute NPS without the assessed income and month; use an employee half-rate for regional coverage; add a vehicle premium; calculate community NHIS from income alone without establishing the property treatment; treat exception applications as approved; ignore a July base change; assume every contractor's employment/accident insurance is voluntary; invent the old NHIS/LTCI 12% tax credit; or advise on treaty exemptions, disputed arrears or penalties without individual review. Label calculations as estimates and reconcile to the issued notices before action.
+
+## Filing and payment
+
+| Obligation | Deadline/procedure | Official source |
+|---|---|---|
+| Ordinary monthly NPS | Next month's 10th; if Saturday, Sunday or public holiday, next business day. NHIS collects the premiums. Pay using the issued notice/payment reference and keep receipt | [NPS premium payment deadline and collection sections](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do) |
+| Ordinary monthly community NHIS/LTCI | Next month's 10th, not the current month's 25th. Check the actual notice and calendar; approved quarterly payment has separate procedures | [NHIS Act art. 78](https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1001733644); [LTCI Act arts. 8 and 11, official PDF](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20260526&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=286217&mokChaChk=N) |
+| Special foreign community NHIS | For persons within art. 109(9)'s proviso, preceding month's 25th; initial/late-month acquisition has NHIS-set exceptions. Identify the actual category before setting a calendar | Act art. 109(8)-(9), [operative Act PDF, pp. 51-52](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20261008&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=285273&mokChaChk=N) |
+| NPS income/coverage report or exception request | Report through NPS branch/available electronic service; keep the acknowledged decision and resulting notice. Income changes require a supported request, not unilateral reduced payments | [NPS registration, income and no-income FAQ](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0097M0.do) |
+| Voluntary owner employment insurance | Submit the self-employed employment-insurance application and supporting registration/identity documents to Korea Workers' Compensation and Welfare Service; retain approval/refusal notice and selected grade. This guide does not submit live forms | [MOEL application procedure](https://ei.work24.go.kr/ei/eim/eg/ei/eiEminsr/retrievePb0206Info.do) |
+
+For payment reconciliation, use the agency's notice and the available bank transfer, automatic debit or permitted card/bank/post-office route shown there; retain payment evidence. A successful debit does not prove a coverage adjustment has been accepted. Reconcile tax-data-driven reassessments with the income year and property base on the notice. The earlier blanket claim that every regional NPS income assessment resets in July is not confirmed and must not drive a payment calendar; the published floor/ceiling transition is confirmed independently.
+
+## Completion checklist
+
+- Coverage category, exact period, NPS income and household/property data documented; no invented defaults.
+- Rate year and July bases selected separately; regional full-share computation and the applicable monthly LTCI ratio rule recomputed.
+- NHIS ordinary/foreign due-date classification established; payment and refunds matched to the notice.
+- All original cases and refusals considered; employment/accident mandatory boundaries escalated where applicable.
+- Tax deductions/expenses mapped to their proper income category, supported by paid amounts, with no double relief.
+- Outstanding facts and source limitations recorded with a clear handoff. No statement of accountant approval.
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+
+## Sources
+
+| Official source | Actual reading scope | Read for this guide: date |
+|---|---|---|
+| [NPS, pension premiums](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do) | Read for this guide: income truncation, 2024-27 base table, regional/workplace rate schedule, collection, due-date, contribution-period and own-payment deduction paragraphs. Future support-program content is not used | 2026-11-16 |
+| [NPS lifecycle FAQ](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0097M0.do) | Read for this guide: no-income/student/military exclusions, regional/workplace conversion, workplace registration, foreign coverage and reporting/adjustment Q&As. An isolated stale 9% workplace answer is superseded by the explicit 2026 rate section | 2026-11-16 |
+| [National Pension Act official PDF](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20261020&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=291347&mokChaChk=N) | Read for this guide: art. 117 monetary truncation and neighboring record provisions, plus arts. 88 and 88-2 collection/notice paragraphs. The final art. 88 rate is phased by transitional law; current-year rates follow the explicit NPS authority schedule above | 2026-11-16 |
+| [NPS terms, reciprocity and agreements](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0110P0.do) | Read for this guide: reciprocity, treaty precedence and contribution-period entries; no country-specific agreement conclusion | 2026-11-16 |
+| [National Pension Act arts. 11-13](https://www.law.go.kr/LSW/lsLawLinkInfo.do?chrClsCd=010202&lsJoLnkSeq=1000829747) | Read for this guide: acquisition, loss and voluntary continuation including exclusions; operative text labelled 20 October 2026 | 2026-11-16 |
+| [NHIS 2026 premium notice](https://edi.nhis.or.kr/portal/images/popup/20251204_pop01longdesc.html) | Read for this guide: all displayed formulas and qualification labels: income, property and exact LTCI ratio | 2026-11-16 |
+| [NHIS 2026 changes leaflet](https://www.nhis.or.kr/renewal_popup/poster/20260204_poster_longdesc_1.html) | Read for this guide: qualification/collection section only, including effective January 2026 rates and community upper/lower premium limits | 2026-11-16 |
+| [NHIS March 2024 implementation explanation](https://www.nhis.or.kr/static/alim/paper/oldpaper/202403/sub/section4_0.html) | Read for this guide: property deduction and vehicle abolition paragraph; identifies February implementation, not merely a proposal | 2026-11-16 |
+| [NHIS official booklet p. 48](https://www.nhis.or.kr/upload/e-book/promotion/files/basic-html/page48.html) | Read for this guide: insured categories and formulas explicitly labelled 2025; used only for historical cases | 2026-11-16 |
+| [National Health Insurance Act, operative official PDF](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20261008&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=285273&mokChaChk=N) | Read for this guide: arts. 5-6, 69-73, 78, 87, 107 and 109. Selected text effective 8 October 2026; separately marked future 27 November 2026/2027 clauses are not treated as operative | 2026-11-16 |
+| [LTCI Act art. 9](https://law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1031056547) | Read for this guide: formula, statutory rate setting and differing-relief exception; operative 26 May 2026 text | 2026-11-16 |
+| [LTCI Act official PDF](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20260526&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=286217&mokChaChk=N) and [enacted Act No. 21690](https://law.go.kr/LSW/lsRvsDocListP.do?chrClsCd=010202&lsId=010436&lsRvsGubun=all) | Read for this guide: arts. 7-9 and 11, pp. 3-4, including ordinary membership, foreign exclusion, combined collection/separate bill components, and the two art. 9 texts. Read the enacted amendment art. 9 and addenda arts. 1 and 3: commencement 27 November 2026, revised rounding applies from the November premium | 2026-11-16 |
+| [National Treasury Funds Management Act art. 47](https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1031453575) | Read for this guide: truncation rule and delegated exception; ordinary standalone premium examples only | 2026-11-16 |
+| [Income Tax Act official PDF](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20260701&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=280405&mokChaChk=N) | Read for this guide: p. 39, arts. 51-3(1), (3) and 52(1), pension limitation and employee special deduction; not the full income-tax return | 2026-11-16 |
+| [Income Tax Act Enforcement Decree official PDF](https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20260701&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=286211&mokChaChk=N) | Read for this guide: art. 55 opening and insurance categories (11) to (11-5), pp. 47-49, including regional NHIS/LTCI business expense | 2026-11-16 |
+| [MOEL self-employed employment scheme](https://ei.work24.go.kr/ei/eim/eg/ei/eiEminsr/retrievePb0206Info.do) | Read for this guide: entry, voluntary application/approval, seven-grade structure and benefit conditions in the rendered official page. Local direct response is a redirect shell, not the reading evidence | 2026-11-16 |
+| [Work24 current self-employed benefit guidance](https://www.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systClId=SC00000258&systId=SI00000347) | Read for this guide: participation/payment period, closure, re-employment and restriction sections; no blanket entitlement from closure alone | 2026-11-16 |
+| [Industrial Accident Compensation Insurance Enforcement Decree art. 122](https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lspttninfSeq=75327) | Read for this guide: owner categories, fewer-than-300 limit, no-worker route and labour-provider exclusion; effective 1 July 2026 | 2026-11-16 |
+| [NHIS official foreign guidance](https://www.nhis.or.kr/english/wbheaa02900m01.do) | Read for this guide: registration/status conditions and foreign calculation warning. Its score-based English formula is stale; current Korean 2026 formula governs | 2026-11-16 |
+| [Official legal-information service: employee premiums](https://www.easylaw.go.kr/CSP/CnpClsMainPreview.laf?ccfNo=4&cciNo=1&cnpClsNo=1&csmSeq=1063&popMenu=ov) | Read for this guide: art. 71/Decree art. 41(4) non-pay-income threshold and assessed base explanation; not a universal turnover test | 2026-11-16 |
+
+**Not yet confirmed:** the earlier guide's approximate KRW 19,780 historical 2025 health minimum has not been reconfirmed and is superseded for current guidance by the sourced 2026 minimum above; the full current property-score bands, low-income health-income assessment cut-offs, all occupation-specific mandatory employment/accident classifications, disability-specific NPS exceptions, individual nationality/visa/treaty results, subsidy amounts, disputed arrears/late charges, the final insured month in mixed status events without the relevant dates, and regional NPS/NHIS income-reassessment timing and adjustment documentation in every category. The old general assertions of July regional NPS reassessment, November NHIS reassessment, universal six-month foreign NHIS entry and automatic acceptance of a new owner's declared estimate are not usable rules here. Current health coverage must be confirmed from the applicable residence/status rules and notice. Ordinary due dates, the NPS July floor/ceiling change and the tax-treatment correction are confirmed above.

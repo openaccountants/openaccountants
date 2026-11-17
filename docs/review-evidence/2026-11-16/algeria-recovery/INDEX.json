@@ -1,0 +1,323 @@
+{
+  "content_head": "d665a5f4338b3b65770e5fb82bd4db2c79454908",
+  "guide_hashes": {
+    "algeria-payroll.md": "e58169af573e568b872fee9c0f076fbc59a97cd0e9d1b53ff832275ec5a00add",
+    "algeria-social-contributions.md": "562287fbfde95227a25929acca2672e089f92627bd5844d4bde203662192ae55"
+  },
+  "archive": {
+    "path": "evidence.tar.gz",
+    "sha256": "d1b43e99e21458ed871cffb2c92cf426b0f4dad7b0b720c86d2258b81f24d37a",
+    "bytes": 421441,
+    "members": 61
+  },
+  "records": [
+    {
+      "path": "writer/CASE-CONTINUITY-AND-RECOMPUTATION.json",
+      "bytes": 2364,
+      "sha256": "f5d055fab85dd097c75457befa8e50edb503d6ddaa0928386553dfa4de0f8bb1"
+    },
+    {
+      "path": "writer/CHECK-RESULTS.json",
+      "bytes": 1052,
+      "sha256": "45417c4a147b7989c89285f45bf5595e5117f43f3e17b6de4b18066447e6bf06"
+    },
+    {
+      "path": "writer/COMMIT-RECEIPT.json",
+      "bytes": 532,
+      "sha256": "daca90a1d74363160510da45fc12243671b002085a9ba737ab30270ae7e1a2dd"
+    },
+    {
+      "path": "writer/CURRENT-OLD-LINE-MAPS.json",
+      "bytes": 1006078,
+      "sha256": "d21d9ce35efcce7fd73d49a551083a42eea817d06959774fd7ef55441245b8b4"
+    },
+    {
+      "path": "writer/CURRENT-OLD-TOPIC-MAPS.json",
+      "bytes": 208798,
+      "sha256": "1aed25cd27f8aba07b91bda80f4ee80fdd6a1f93c821196dbfab261bc124f36c"
+    },
+    {
+      "path": "writer/CURRENT-ROW-SOURCE-DISPOSITIONS.json",
+      "bytes": 26662,
+      "sha256": "34695566679322b74d541314e68aca50cb4dd90d03a26ee99db8e718d90e76d7"
+    },
+    {
+      "path": "writer/CURRENT-RULE-LEDGERS.json",
+      "bytes": 802103,
+      "sha256": "077a6dc080c5163cb43954afdf6827d5d8a5870f550ee01068020f195923141e"
+    },
+    {
+      "path": "writer/DESTINATION-REPAIR.md",
+      "bytes": 927,
+      "sha256": "9cf9168bdb9608b46cd655ace47d6187e8f0fcc24527814f3deea3c802ad0740"
+    },
+    {
+      "path": "writer/FINAL-MANIFEST.json",
+      "bytes": 26288,
+      "sha256": "79c4a17fbdafb8bafd82cbdaddc3b089382567ec70ad379bdbd02dabcb056a40"
+    },
+    {
+      "path": "writer/HANDOFF.md",
+      "bytes": 7562,
+      "sha256": "cfc98f81156bf95f3d7b24ed7d80d24927a2dba2b6f8ddd67c3b73efacf9d1d7"
+    },
+    {
+      "path": "writer/ORIGINAL-CONTEXT-BINDINGS.json",
+      "bytes": 2114,
+      "sha256": "77051d372c26ebf147afb393087bc914dc0a02637f7a859ca0bf9272160ad2c4"
+    },
+    {
+      "path": "writer/PROTECTED-CONTINUITY.json",
+      "bytes": 3404,
+      "sha256": "fd363a3d80545fa774e1c98448ebbe289d517a77a8e15551d3927ce8ac2561f5"
+    },
+    {
+      "path": "writer/RECOVERY-DELTA-LEDGER.json",
+      "bytes": 1851,
+      "sha256": "1985f4e436287a3ddcd18ade0b20410210789dcf43c278ee18ce3ad4641678ec"
+    },
+    {
+      "path": "writer/RECOVERY-DELTA.json",
+      "bytes": 1312,
+      "sha256": "eb561a588be00ae1112dcded0fd14bc5a65596aedbadc51470cfd074c7e8fe2c"
+    },
+    {
+      "path": "writer/SCOPES-AND-INTEGRATION.md",
+      "bytes": 3498,
+      "sha256": "f65cd7f3ab97408f3b91b3f9c42d088bd5560f76b33d06247695d8357e1fe9bf"
+    },
+    {
+      "path": "writer/SETUP-ISSUES.md",
+      "bytes": 829,
+      "sha256": "930c12c79974a9df1235d81a2309584d6d281eaf7e60d1ea96839e76efdb5ec1"
+    },
+    {
+      "path": "writer/SOURCE-CAPTURE-CONTINUITY.json",
+      "bytes": 133221,
+      "sha256": "1a0669c391ce715c1f4f4ddd436dc19d28c7450e63db7940dc4e491fa643bad9"
+    },
+    {
+      "path": "writer/calculator-quotes-final.log",
+      "bytes": 164,
+      "sha256": "f8aa451483cc5c3bd1bd9316e1a91046af7ae805575c8340736f4479e651d5a7"
+    },
+    {
+      "path": "writer/candidate.diff",
+      "bytes": 105473,
+      "sha256": "3d1c93d7037a441204f500b2e03af762acaeb72a538cc00ae68e0312a7b083aa"
+    },
+    {
+      "path": "writer/examples-initial-sparse-dependency-failure.log",
+      "bytes": 1762,
+      "sha256": "73b0f7ce0818c7a76325b93d1fd4de119e314b5ea238b26d600bdbe2a597101a"
+    },
+    {
+      "path": "writer/examples.log",
+      "bytes": 58,
+      "sha256": "854bae0e139a35716e6cf0b55f3b725491a15ed5d503cd4f0c72e166e395e90a"
+    },
+    {
+      "path": "writer/row-sources-live.log",
+      "bytes": 2937,
+      "sha256": "3f674f01e1f723e0272b104701bf4c04dae4c37b592ce5a11095829ccd782d62"
+    },
+    {
+      "path": "writer/standard-initial-sparse-dependency-failure.log",
+      "bytes": 1378,
+      "sha256": "ae20af87300dc8136560b14ee86ab8f35616c0b0b19eb587f799cfd288eb71fb"
+    },
+    {
+      "path": "writer/standard.log",
+      "bytes": 1323,
+      "sha256": "637acd4ba203443955bbec2a4dda1580523b5286b67ec629c61c8891ffa4eec0"
+    },
+    {
+      "path": "writer/sync-final.log",
+      "bytes": 81,
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9"
+    },
+    {
+      "path": "writer/validate-final.log",
+      "bytes": 192,
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa"
+    },
+    {
+      "path": "originals/algeria-payroll.md",
+      "bytes": 19769,
+      "sha256": "657ee4b54d54da89fc8e1ec91a520f7f896e27c34193de6d5008f224542832a6"
+    },
+    {
+      "path": "originals/algeria-social-contributions.md",
+      "bytes": 19182,
+      "sha256": "3bd9c3653821f1f596e0b555a9f150de9be2aa38dcd9f10c08715f499f6efbb3"
+    },
+    {
+      "path": "recovered-reading/algeria-payroll.md",
+      "bytes": 83957,
+      "sha256": "b13284fc0fef566b9073991e5d467f440bbe7766efd464804d6212691a7283c0"
+    },
+    {
+      "path": "recovered-reading/algeria-social-contributions.md",
+      "bytes": 90844,
+      "sha256": "764de897e91784bb54ccafa87b01a9f0350982bf85f8d04228333950aa8073ca"
+    },
+    {
+      "path": "recovered-reading/baseline.json",
+      "bytes": 1760,
+      "sha256": "a31c50fac6904986e91473845d7e89c6a4a7ece8d2c8ac52c1d5a933b30b2a78"
+    },
+    {
+      "path": "recovered-reading/payroll-final-manifest.json",
+      "bytes": 2862,
+      "sha256": "17e8d88f72b88d27795aeb9415bfbda0e2ce7a32213fb188ddcab749fd5c74b3"
+    },
+    {
+      "path": "recovered-reading/payroll-source-reading-log.md",
+      "bytes": 6508,
+      "sha256": "26589f08fd6ae776de55a77a01c4d19e1cf8c7113c78c1cc3f97fdf275012cd3"
+    },
+    {
+      "path": "recovered-reading/payroll-whole-pack-reading.json",
+      "bytes": 1915,
+      "sha256": "c1d08d1dc75ee4ca0fcf243c349c68403aff84104b2a17ea57674b05e2c1687f"
+    },
+    {
+      "path": "recovered-reading/root-source-reading-log.md",
+      "bytes": 3059,
+      "sha256": "4da4cff6981c15da5ed51f2a1c7e036085ba03cbb154555138df44ce0290c86e"
+    },
+    {
+      "path": "recovered-reading/root-whole-pack-reading.json",
+      "bytes": 1530,
+      "sha256": "620b1cb069f99f83b778f7a8e7f023a988213279f8cd5012fcef4f9265c91e75"
+    },
+    {
+      "path": "recovered-reading/social-final-manifest.json",
+      "bytes": 1569,
+      "sha256": "bad81fb3a56c14b1abc9684601269efcb98d35b8e97b4b3b4b4933a8343d8947"
+    },
+    {
+      "path": "writer-correction/EXACT-DELTA-PROOF.json",
+      "bytes": 1967,
+      "sha256": "a36a7d36e6539350ad0ebaaff51d070d280cda86e66759390bce9083a81274e1"
+    },
+    {
+      "path": "writer-correction/FINAL-MANIFEST.json",
+      "bytes": 528,
+      "sha256": "cb3e001531fc4c356f5585c516dde5a78677505d464228c5f8dcda6304a131cb"
+    },
+    {
+      "path": "writer-correction/HANDOFF.md",
+      "bytes": 868,
+      "sha256": "55f67a80c176c4148a23ac7dff84105d1c11d7611c73e4db7fb7093b820e2ea8"
+    },
+    {
+      "path": "writer-correction/candidate.diff",
+      "bytes": 6430,
+      "sha256": "4a37bff836cb05d4a02e7f256df6af683d74d4fce84ca4f5bbacef1f291998cf"
+    },
+    {
+      "path": "independent-full/FINAL-MANIFEST.json",
+      "bytes": 3057,
+      "sha256": "7e9d91f6f6f05f9da3f24e60530c5a465f70322d0106e6af0242e75694e14b43"
+    },
+    {
+      "path": "independent-full/FINDINGS.json",
+      "bytes": 2120,
+      "sha256": "474a70c76c6923e26567307435e87540d148122cad3614681533cae324681174"
+    },
+    {
+      "path": "independent-full/GROUP-APPLICABILITY.json",
+      "bytes": 151008,
+      "sha256": "6dedd06839f462abb13c050c87e93ba1b4af6baec3347082b5f5d847c4e5433b"
+    },
+    {
+      "path": "independent-full/INDEPENDENT-CASES.json",
+      "bytes": 1170,
+      "sha256": "3252ec20196a866cd18aeeaadf34d5f63cb24fa42676367507fa9fcb188c43c0"
+    },
+    {
+      "path": "independent-full/INDEPENDENT-SOURCE-READS.json",
+      "bytes": 10799,
+      "sha256": "096b6b614495a44384855feb9a58acceedb2657acef64b8ef449a81446891b9d"
+    },
+    {
+      "path": "independent-full/OLD-LINE-REVIEW.json",
+      "bytes": 514670,
+      "sha256": "6a9b21d2858ecd61242319a28a638c2707b956abeddbcafa494801c68804b214"
+    },
+    {
+      "path": "independent-full/OLD-TOPIC-REVIEW.json",
+      "bytes": 22554,
+      "sha256": "cdaf1f6c5c00c61c86584d0613732f0d5a5aa45e3612947e67560f34e901d36b"
+    },
+    {
+      "path": "independent-full/OWNER-PACKET-VERIFICATION.json",
+      "bytes": 2060,
+      "sha256": "aa618e0d60276e1f144bf08c45895ed21d1f813d93462769a826d93f171b52e3"
+    },
+    {
+      "path": "independent-full/PUBLIC-SAFE-INVENTORY.json",
+      "bytes": 819,
+      "sha256": "53f605760ee6ed3e923c2c586b8bf92e1a08230b80030a8c11c9f507c6e1593b"
+    },
+    {
+      "path": "independent-full/QUOTE-CAPTURE-CHECKS.json",
+      "bytes": 149111,
+      "sha256": "91a352628e99229e8a48fe4618174bd67b2024e4b36c786c9732a38ff19047c6"
+    },
+    {
+      "path": "independent-full/REPORT.md",
+      "bytes": 13668,
+      "sha256": "baa104ff5c8ff4416d34b4f54aca925d5aad8a7b00970bae900ce9e7416e2660"
+    },
+    {
+      "path": "independent-full/RESULT.json",
+      "bytes": 632,
+      "sha256": "23e6fe9ef30fbbf351bb94997d618c59818bfb0cf483ed9c24726ed542e5eb94"
+    },
+    {
+      "path": "independent-full/SOCIAL-LINE-BINDING-ADDENDUM.json",
+      "bytes": 204,
+      "sha256": "29a025f44620f077fd61dac8f859f35cf4792b0bb5edfd0d942f4d1841bbb7b0"
+    },
+    {
+      "path": "independent-full/arabic-fetch.json",
+      "bytes": 195,
+      "sha256": "b2b8d12882fdf304ddc81120fd1fa99896c44b7bc4ae60c155605882b7b4cd06"
+    },
+    {
+      "path": "independent-full/group-binding-shape.json",
+      "bytes": 3512,
+      "sha256": "1cebe3cbb1755a90cb5c03bdbec8c6440778da7b475834f42c71655a6e582e50"
+    },
+    {
+      "path": "independent-correction/EXACT-CONTINUITY.json",
+      "bytes": 16613,
+      "sha256": "4cbd7e14b54be684240b4bd285f22c9504f4b40b1f73427c40fbe9ce5f51125f"
+    },
+    {
+      "path": "independent-correction/FINAL-MANIFEST.json",
+      "bytes": 863,
+      "sha256": "3e0829ab53a954b111641ea748b4972a3d0bf453ef2c174a3cadeed19f69136e"
+    },
+    {
+      "path": "independent-correction/REPORT.md",
+      "bytes": 5021,
+      "sha256": "cf61723dee2cb9363f302338bee480ab6de18ddefc5312518d0169b1e8d394d5"
+    },
+    {
+      "path": "independent-correction/RESULT.json",
+      "bytes": 741,
+      "sha256": "911e53966bd734c24ce1ed75d25575350bdd5665f41d0b2d29bd84640112605e"
+    },
+    {
+      "path": "independent-correction/exact-delta.patch",
+      "bytes": 6430,
+      "sha256": "4a37bff836cb05d4a02e7f256df6af683d74d4fce84ca4f5bbacef1f291998cf"
+    }
+  ],
+  "report_sha256": "a64c4cf95df684c63c2ce9a4ac17e146a5d7781bc590b3269acbbbd762e6a753",
+  "raw_official_sources_included": false,
+  "packet_scope": "Selected own evidence from original138-artifact writer packet and separate review. Canonical original seals retained; full raw bodies/images/headers excluded."
+}

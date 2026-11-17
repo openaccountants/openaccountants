@@ -225,6 +225,25 @@ class DeliveryPlanTests(GitFixture, unittest.TestCase):
         self.assertEqual(batches, [{"headSha": head, "paths": [path], "deletedPaths": [path],
                                    "authors": [delivery.author("Retiring Writer", "retiring@example.test")]}])
 
+    def test_retry_recovers_a_human_merge_of_bot_written_source(self):
+        path = "skills/mt/accepted-merge-source.md"
+        self.git("checkout", "-b", "source")
+        self.commit({path: "accepted source"}, "Sync", delivery.SYNC_BOT)
+        self.git("checkout", "main")
+        self.commit({"README.md": "main moved"})
+        self.git("merge", "--no-ff", "source", "-m", "Accept source")
+        head = self.commit({"README.md": "later unrelated work"})
+        batches = delivery.collect_batches(self.repo, head, head, retry_paths=[path])
+        self.assertEqual(batches, [{"headSha": head, "paths": [path],
+                                   "authors": [delivery.author("Fixture Maintainer", "maintainer@example.test")]}])
+
+    def test_retry_does_not_invent_a_writer_for_bot_only_history(self):
+        path = "skills/mt/bot-only-retry.md"
+        self.commit({path: "bot source"}, "Sync", delivery.SYNC_BOT)
+        head = self.commit({"README.md": "later unrelated work"})
+        with self.assertRaisesRegex(ValueError, "no confirmed human writer"):
+            delivery.collect_batches(self.repo, head, head, retry_paths=[path])
+
     def test_retry_without_any_source_history_fails_before_any_delivery(self):
         with self.assertRaisesRegex(ValueError, "no reachable source history"):
             delivery.collect_batches(self.repo, self.base, retry_paths=["skills/mt/never-existed.md"])

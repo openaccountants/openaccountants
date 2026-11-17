@@ -1,0 +1,106 @@
+{
+  "content_head": "1c659e9d14b506faf24d432545b9b7705f6d2cbd",
+  "candidate_sha256": "f29720d154303cc04e436eab6f3597c6b56af7f1e59bfca4ff3a895e44e6b0f0",
+  "bundle": {
+    "path": "evidence.tar.gz",
+    "sha256": "d3b74edc7daf7fb2de1519c6e38b87bef362ee3ed45f952acb9e198162268cdd",
+    "bytes": 10203,
+    "members": 18
+  },
+  "records": [
+    {
+      "path": "independent/REPORT.md",
+      "bytes": 2182,
+      "sha256": "881fad3b09a9ab6bbabcd29f417a7ebc817fa5cb2feb802d6b69f6af0680afeb"
+    },
+    {
+      "path": "independent/result.json",
+      "bytes": 402,
+      "sha256": "d7d4113049bdf78f6db650dd7d990122da84040c1880d19751ff4e049d0732ba"
+    },
+    {
+      "path": "independent/route-identities.json",
+      "bytes": 1408,
+      "sha256": "7588b32a7a2365d11319895bf0871618785a1ea809f6823f59b6e371dc62d868"
+    },
+    {
+      "path": "writer/HANDOFF.md",
+      "bytes": 5777,
+      "sha256": "01f23000b0c6dfb3202ac090a419a104fa76216d2afbf2720e087d77d0eb7b92"
+    },
+    {
+      "path": "writer/calculator-quotes.txt",
+      "bytes": 135,
+      "sha256": "56f04c1b628360e14522c93d4a6f6747408a3cc986a0aa0253f6b0fe2afaf034"
+    },
+    {
+      "path": "writer/candidate-and-protection.json",
+      "bytes": 2815,
+      "sha256": "800a6e06381e59d580ad9b931d8662fddf398380c057788201d3c9680df8918e"
+    },
+    {
+      "path": "writer/check-results.json",
+      "bytes": 3808,
+      "sha256": "4479d561ec5c1676a3ab23266974fd4921277511e14e667b515aa08f7a0cf004"
+    },
+    {
+      "path": "writer/diff-check.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "writer/examples.txt",
+      "bytes": 58,
+      "sha256": "5292bc99afd8873a7f1e167bf429dfef9b0e36b2876d63ca35c07d907d3add9c"
+    },
+    {
+      "path": "writer/old-line-destinations.json",
+      "bytes": 12263,
+      "sha256": "a0f23286a0b069f5891d1b149b943ea74b44011bc4d162deedeff5b0bcc48b4c"
+    },
+    {
+      "path": "writer/original.md",
+      "bytes": 2306,
+      "sha256": "1707e025fb6ca59a890d100372b3b0b6f9551647ec5a009750cc359188bea216"
+    },
+    {
+      "path": "writer/row-sources.txt",
+      "bytes": 313,
+      "sha256": "54074b02ccd360a7b59bc70d8f33534e4283b1841e46e9f32da83992a8d35e07"
+    },
+    {
+      "path": "writer/source-and-rule-ledger.md",
+      "bytes": 4097,
+      "sha256": "bb44178451c1e3f3881c6eaa1fa90ebe7af26cb5e6ee25fa02269fb11e340979"
+    },
+    {
+      "path": "writer/strict-sync.txt",
+      "bytes": 81,
+      "sha256": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6"
+    },
+    {
+      "path": "writer/target-standard.txt",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "writer/validate-complete-dependency-tree.txt",
+      "bytes": 192,
+      "sha256": "a7d8a057660b3d212d944ce39725ec8cef8aa0fa1ee6a85ef9d7c717d65fc074"
+    },
+    {
+      "path": "writer/validate-with-dependencies.txt",
+      "bytes": 928,
+      "sha256": "adef86e923736574fba479cd1cf29696e02c1e99c897db2b15e9c45e1cbe1b91"
+    },
+    {
+      "path": "writer/validate.txt",
+      "bytes": 724,
+      "sha256": "b01637112a0f88934d3ecf9f01d887c18651b0dce5ef13464b477502355617e3"
+    }
+  ],
+  "report_sha256": "2a72c35150a9b81aff2259a277c95637edf09fbc54db1f6886fb3c2bd271f84b",
+  "raw_primary_source_capture_included": false,
+  "source_capture_local_sha256": "671795734ee30a2ecf2b7dfd43c1114ad414754e171ee2724b2d4c694dc9c1d7",
+  "display_projection": "Readable REPORT.md substitutes the Danish tax authority name in English to avoid a retired-label substring false positive. Canonical independent/REPORT.md and all original records in the archive are unchanged."
+}
