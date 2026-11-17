@@ -1,19 +1,15 @@
 {
- "generated_at": "2026-11-17T13:28:25+00:00",
+ "generated_at": "2026-11-17T15:00:52+00:00",
  "counts": {
-  "guides": 2553,
-  "loadable_skill_names": 2494,
+  "guides": 2554,
+  "loadable_skill_names": 2495,
   "jurisdictions": 290,
-  "accountant_reviewed": 126,
-  "held_skill_names": 3
+  "accountant_reviewed": 127,
+  "held_skill_names": 2
  },
  "publication_holds": [
   {
    "name": "laos-vat",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "stamp-duty-matrix",
    "reason": "status: needs_sources"
   },
   {
@@ -11112,6 +11108,19 @@
    "last_updated": "2026-11-16"
   },
   {
+   "slug": "stamp-duty-matrix",
+   "mcp_slug": "stamp-duty-matrix",
+   "path": "skills/global/cross-border/stamp-duty-matrix.md",
+   "name": "stamp-duty-matrix",
+   "jurisdiction": "GLOBAL",
+   "category": "cross-border",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-17"
+  },
+  {
    "slug": "succession-and-forced-heirship-compared",
    "mcp_slug": "succession-and-forced-heirship-compared",
    "path": "skills/global/cross-border/succession-and-forced-heirship-compared.md",
@@ -11186,8 +11195,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "asia-pacific-corridors",
@@ -11225,8 +11234,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "eu-intra-rates",
@@ -16400,7 +16409,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "lt-corporate-income-tax",
@@ -16452,7 +16461,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "lt-transfer-pricing",
@@ -16473,12 +16482,12 @@
    "path": "skills/lithuania/references.md",
    "name": "lithuania-references",
    "jurisdiction": "LT",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": null,
-   "last_updated": "2026-06-12"
+   "tax_year": "2026",
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "lu-corporate-tax",
@@ -17358,9 +17367,9 @@
    "name": "mt-corporate-tax",
    "jurisdiction": "MT",
    "category": "international",
-   "tier": 2,
+   "tier": 1,
    "verified_by": null,
-   "reviewed_by": null,
+   "reviewed_by": "Michael Cutajar",
    "tax_year": "2026",
    "last_updated": "2026-11-14"
   },
@@ -17972,8 +17981,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "mx-imss",
@@ -18024,8 +18033,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "mx-social-contributions",
