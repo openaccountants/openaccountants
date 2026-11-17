@@ -1,311 +1,373 @@
 ---
 name: uk-major-partners
-description: "Use when asked about UK Major Partners. Quick Reference"
+description: "Compare UK treaty withholding ceilings for dividends, interest, royalties and technical services with fourteen major partners in 2026. Apply beneficial ownership, residence, shareholding periods, LOB or PPT, permanent establishment and source-country relief procedures before calculating a payment."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/uk-major-partners"
   jurisdiction: "GLOBAL"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-17"
 ---
 
-# UK Major Partners
+# UK Major Partners v1.2
 
-## Quick Reference
+> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**Quick Reference**
+## Quick reference
 
-| Field | Value |
-| --- | --- |
-| Jurisdiction | United Kingdom (source/residence) |
-| Countries Covered | US, Germany, France, Ireland, Netherlands, Spain, Italy, Australia, Canada, India, Singapore, Japan, UAE, Switzerland |
-| Number of Treaties | 14 |
-| Last Verified | May 2026 |
-| Key Note | UK does NOT impose domestic WHT on dividends. UK domestic WHT on interest/royalties is 20% (reducible by treaty). |
+| Field | Value | Source |
+| --- | --- | --- |
+| Period | 2026; UK domestic basic-rate illustration uses tax year 2026-27 | [Finance Act 2026, sections 2-3](https://www.legislation.gov.uk/ukpga/2026/11/section/2), [savings rate](https://www.legislation.gov.uk/ukpga/2026/11/section/3) |
+| Direction | Each corridor compares source-state tax on income beneficially owned by a resident of the other state. Both directions are covered, subject to state-specific exceptions. A UK payer's domestic liability may be lower than the treaty ceiling. | [UK-US Articles 10-12](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force), with each other treaty cited below |
+| UK ordinary company dividends | No UK domestic dividend withholding; distinguish property-income distributions and special vehicles | [UK government tax guidance](https://www.business.gov.uk/invest-in-uk/investment/uk-tax-and-incentives/) |
+| UK interest and IP payments | 20% where the relevant UK withholding duty applies in 2026-27; exemptions and treaty procedure must be checked first | [HMRC SAIM9070](https://www.gov.uk/hmrc-internal-manuals/savings-and-investment-manual/saim9070), [ITA 2007, section 906](https://www.legislation.gov.uk/ukpga/2007/3/section/906), [Finance Act 2026, sections 2-3](https://www.legislation.gov.uk/ukpga/2026/11/section/2), [savings rate](https://www.legislation.gov.uk/ukpga/2026/11/section/3) |
 
-## UK → US
+## Scope
 
-**UK → US treaty rates**
+US, Germany, France, Ireland, Netherlands, Spain, Italy, Australia, Canada, India, Singapore, Japan, UAE and Switzerland are covered. Coverage comprises 14 listed treaties (computed count of the named source rows below). Use this comparison for treaty entitlement and the source tax on dividends, interest, royalties and technical-service payments involving the UK and a listed partner. A treaty cap is a maximum source charge, not a direction to deduct that percentage when domestic law charges less. Residence-state taxation and double-tax relief require the recipient's separate computation. The original directional corridor headings are retained below; the tables state the bilateral treaty rules, with each direction's exceptions identified.
 
-| Income Type | Treaty Rate | Treaty Article | Notes |
+## Ask the client first
+
+Obtain the payment date and source, payer and beneficial-owner identities, tax residence certificates, entity classification, ownership chain and holding dates, income contract, debt or IP terms, PE/fixed-base facts and relief documentation. For US benefits identify the actual LOB route. For Japanese benefits enumerated in Article 22(1), identify the applicable Article 22 eligibility route: Article 10(3), Article 11(1), and Articles 12, 13 and 21. That LOB gate does not extend to Article 10(2) general dividends or Article 7 business profits; their own conditions and applicable PPT remain. For other corridors check the applicable PPT or specific anti-abuse provision. [Japan Article 22(1)](https://www.gov.uk/government/publications/japan-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2006-uk-japan-double-taxation-convention-in-force). A conduit or a nominal address does not establish entitlement.
+
+## The method, step by step
+
+1. **Fix the direction and domestic charge.** Identify the state where the income arises under the actual article, including any PE-borne payment rule. UK ordinary company dividends generally have no withholding, whereas UK yearly interest within ITA 2007 section 874 is deducted at the savings basic rate. Deposit interest, qualifying lenders and other statutory exceptions can change that outcome. IP payments within section 906 are deducted at the basic rate; its scope and exceptions must be met. For 2026-27 both relevant basic rates are 20%. [HMRC SAIM9070](https://www.gov.uk/hmrc-internal-manuals/savings-and-investment-manual/saim9070), [section 906](https://www.legislation.gov.uk/ukpga/2007/3/section/906), [Finance Act 2026, sections 2-3](https://www.legislation.gov.uk/ukpga/2026/11/section/2), [savings rate](https://www.legislation.gov.uk/ukpga/2026/11/section/3).
+2. **Classify the income before choosing an article.** Apply the treaty definitions of dividends, debt interest and royalties. Technical or consultancy work can fall within a royalty/FTS article, independent personal services or employment rather than enterprise profits. Enterprise business profits are generally residence-only absent a source PE, but separately dealt-with income takes priority. Ireland uses Article 8 for business profits; India has Article 13 FTS and Article 15 independent services. [UK-Ireland Article 8](https://www.gov.uk/government/publications/ireland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1976-ireland-uk-double-taxation-convention-in-force), [UK-India Articles 7, 13 and 15](https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force), [UK-Australia Articles 7 and 12](https://www.gov.uk/government/publications/australia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2003-australia-uk-double-taxation-convention-in-force).
+3. **Prove treaty entitlement and the exact lower-rate conditions.** Establish residence, beneficial ownership, company or pension status, direct/indirect holding, capital versus votes, required period, LOB/PPT and any remittance-basis limitation. Check PE/fixed-base connection, related-party excess, property vehicles, profit-contingent interest and anti-conduit provisions. Use the full article cited in the relevant corridor, not only its percentage.
+4. **Apply the correct version and relief route.** The published MLI syntheses are reading aids: the authentic treaty, protocol and MLI texts prevail, with tax-specific effect dates. The UK EU Interest and Royalties Directive exemption ended for payments on or after 1 June 2021; domestic exemptions and bilateral relief remain separate questions. UK-source interest cannot simply be paid at a reduced treaty rate without the required HMRC authority. UK royalty relief has its own reasonable-belief and anti-avoidance rules. [HMRC INTM400030](https://www.gov.uk/hmrc-internal-manuals/international-manual/intm400030), [HMRC PIM2064](https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2064), [HMRC EIM00736](https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim00736).
+5. **Compute and retain the result.** Once relief is validly available, apply the lower domestic liability or applicable treaty ceiling to the correct gross base. Record withholding, net payment, any excess reclaim and the exact residence/holding/relief evidence. If relief at source is unavailable, follow the source state's withholding/refund process rather than assuming the economic treaty ceiling authorises an immediate reduced deduction. See the procedural table and worked case below.
+
+## Treaty corridor rates and conditions
+
+The source caps below assume the treaty's residence and beneficial-ownership conditions and its applicable LOB/PPT or specific anti-abuse rules. PE/fixed-base connected income and non-arm's-length excess can fall outside the stated gross caps. Ordinary company dividends must be distinguished from property-investment or pooled-vehicle distributions. Read all conditions in the cited article before using a row.
+
+### UK → US / reverse direction
+
+| Income type | Source treaty rate / ceiling | Operative conditions | Official authority |
 | --- | --- | --- | --- |
-| Dividends — portfolio | 15% | Art 10(2)(b) | US domestic rate 30% reduced |
-| Dividends — substantial (≥10% voting) | 5% | Art 10(2)(a) | Direct corporate investment |
-| Dividends — parent (≥80% direct, 12+ months) | 0% | Art 10(3) | Qualifying parent-subsidiary |
-| Interest | 0% | Art 11(1) | Complete exemption |
-| Royalties | 0% | Art 12(1) | Complete exemption |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
+| Dividends, general | 15% | Other qualifying beneficial owners; pooled investment vehicles have separate conditions in paragraph 4. | [Article 10(2)(b)](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force) |
+| Dividends, corporate holding | 5% | Company owns directly or indirectly at least 10% of voting power. | [Article 10(2)(a)](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force) |
+| Dividends, parent | 0% | At least 80% voting power for the 12 months ending on declaration AND the pre-October 1998 ownership, specified listed-company, derivative-benefits or discretionary-relief route in this paragraph. Holding alone is insufficient. | [Article 10(3)(a)](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force) |
+| Dividends, pension | 0% | Not derived from carrying on a business; pooled-vehicle conditions still apply. | [Article 10(3)(b)-(4)](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force) |
+| Ordinary interest | 0% | Profit-contingent interest can instead attract 15%; securitisation excess, PE connection, excessive related-party amounts and conduit arrangements are exceptions. | [Article 11(1), (3)-(7)](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force) |
+| Royalties | 0% | Includes qualifying software/copyright and contingent disposals; PE-connected amounts, related-party excess and conduits are exceptions. | [Article 12](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force) |
+| Technical services classified as enterprise business profits | Residence-state taxation absent source PE | First exclude royalties, employment and other separately governed income; apply Article 23 eligibility. | [Article 7](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force) |
 
-**Source:** UK-US Convention signed 24 July 2001, amended by 2002 Protocol. In force from May 2003.
-**Special provisions:** Comprehensive LOB clause (Art 23). Saving clause preserves US taxing power over US citizens. Zero-rate parent-subsidiary dividends was a first in US treaty practice.
-**Last verified:** May 2026
+The 2001 Convention, amended in 2002, entered into force on 31 March 2003; withholding provisions generally first applied on 1 May 2003. Article 23 LOB applies to treaty benefits; the stricter parent-dividend routes must also be met. Article 1(4)-(5) preserves US citizenship/residence taxation subject to its stated exceptions. The July 2021 arrangements preserve UK equivalent-beneficiary treatment and read the NAFTA reference as USMCA for this treaty. Article 10(7)-(8) separately limits qualifying additional branch tax to 5%, with its own exemptions. [Treaty text](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force).
 
-## UK → Germany
+### UK → Germany / reverse direction
 
-**UK → Germany treaty rates**
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
+| Income type | Source treaty rate / ceiling | Operative conditions | Official authority |
 | --- | --- | --- | --- |
-| Dividends — portfolio | 15% | Art 10 | Note: pension schemes 10% |
-| Dividends — substantial (≥10% capital) | 5% | Art 10 | Direct investment |
-| Interest | 0% | Art 11 | Taxable only in residence state |
-| Royalties | 0% | Art 12 | Taxable only in residence state |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
+| Dividends, general | 15% | Qualifying beneficial owner outside the lower-rate classes. | [Article 10(2)(c)](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) |
+| Dividends, corporate holding | 5% | Beneficial owner is a company, other than a partnership, holding directly at least 10% of capital. | [Article 10(2)(a)](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) |
+| Dividends, pension scheme | 10% | Beneficial owner is a qualifying pension scheme. | [Article 10(2)(b)](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) |
+| Interest | 0% | Treaty-defined interest; PE connection and excessive related-party amounts require separate treatment. | [Article 11](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) |
+| Royalties | 0% | Treaty-defined royalties; PE connection and excessive related-party amounts require separate treatment. | [Article 12](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) |
+| Technical services classified as enterprise business profits | Residence-state taxation absent source PE | Separate income articles take priority. | [Article 7](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) |
 
-**Source:** UK-Germany Convention signed 2010, amended by 2014 Protocol. Effective 1 January 2011.
-**Special provisions:** Post-Brexit, EU Parent-Subsidiary Directive no longer applies — bilateral treaty is now the only framework. Profit-participating debt (stiller Gesellschafter) may be reclassified as dividends.
-**Last verified:** May 2026
+Use the text amended by the 2021 Protocol, not only the older 2014 version. The original Convention's withholding provisions took effect on 1 January 2011. Article 30A contains a principal-purpose test (PPT). Article 10's dividend definition includes distributions treated as dividends under source law; classify profit-participating debt before assuming the interest exemption. The ending of EU relief does not eliminate domestic exemptions. [Treaty text](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force).
 
-## UK → France
+### UK → France / reverse direction
 
-**UK → France treaty rates**
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
+| Income type | Source treaty rate / ceiling | Operative conditions | Official authority |
 | --- | --- | --- | --- |
-| Dividends — portfolio | 15% | Art 11 | Note 1 below |
-| Dividends — substantial (≥10% capital) | 0% | Art 11 | Company liable to corp tax |
-| Dividends — REIT (≥10% capital) | Domestic rate | Art 11(5) | Special REIT provision |
-| Interest | 0% | Art 12 | Taxable only in residence state |
-| Royalties | 0% | Art 13 | Taxable only in residence state |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
+| Dividends, general | 15% | Subject to the property-vehicle exception below. | [Article 11(1)](https://www.gov.uk/government/publications/france-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-france-double-taxation-convention-in-force) |
+| Dividends, corporate holding | 0% | Company liable to corporation tax owns directly or indirectly at least 10% of capital; property-vehicle exception remains. | [Article 11(1)(c)](https://www.gov.uk/government/publications/france-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-france-double-taxation-convention-in-force) |
+| Dividends, exempt property investment vehicle | Source domestic rate if holding at least 10% | Vehicle distributes most income annually and is exempt on the relevant immovable-property income; this overrides the ordinary dividend limits for the specified holding. | [Article 11(5)](https://www.gov.uk/government/publications/france-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-france-double-taxation-convention-in-force) |
+| Interest | 0% | PE connection, related-party excess and the other Article 12 conditions remain. | [Article 12](https://www.gov.uk/government/publications/france-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-france-double-taxation-convention-in-force) |
+| Royalties | 0% | PE connection, related-party excess and the other Article 13 conditions remain. | [Article 13](https://www.gov.uk/government/publications/france-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-france-double-taxation-convention-in-force) |
+| Technical services classified as enterprise business profits | Residence-state taxation absent source PE | Separate income articles take priority. | [Article 7](https://www.gov.uk/government/publications/france-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-france-double-taxation-convention-in-force) |
 
-**Source:** UK-France Convention signed 19 June 2008. In force from 18 December 2009.
-**Special provisions:** Modified by MLI. 0% direct investment dividend threshold requires only 10% capital (indirect holdings count). Post-Brexit, EU directives no longer apply.
-**Last verified:** May 2026
+The Convention was signed on 19 June 2008 and entered into force on 18 December 2009. Use its MLI synthesis and PPT; the original treaty alone omits applicable anti-abuse modifications. Indirect capital holdings can qualify for the ordinary corporate dividend exemption. Apply Article 29's remittance-basis restriction where relevant; its express exclusions must be respected. [Treaty text](https://www.gov.uk/government/publications/france-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-france-double-taxation-convention-in-force).
 
-## UK → Ireland
+### UK → Ireland / reverse direction
 
-**UK → Ireland treaty rates**
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
+| Income type | Source treaty rate / ceiling | Operative conditions | Official authority |
 | --- | --- | --- | --- |
-| Dividends — portfolio | 15% | Art 11 | Standard rate |
-| Dividends — substantial (≥10% voting) | 5% | Art 11 | Direct investment |
-| Interest | 0% | Art 12 | Taxable only in residence state |
-| Royalties | 0% | Art 13 | Taxable only in residence state |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
+| Dividends, general | 15% | Ordinary qualifying beneficial owner. | [Article 11(1)(b)](https://www.gov.uk/government/publications/ireland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1976-ireland-uk-double-taxation-convention-in-force) |
+| Dividends, corporate holding | 5% | Company controls directly or indirectly at least 10% of voting power. | [Article 11(1)(a)](https://www.gov.uk/government/publications/ireland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1976-ireland-uk-double-taxation-convention-in-force) |
+| Dividends, qualifying exempt recipient | 0% | Specified charity, superannuation/pension scheme or insurance company's pension business, with competent-authority certification and the Article's exemption conditions. | [Article 11(2)](https://www.gov.uk/government/publications/ireland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1976-ireland-uk-double-taxation-convention-in-force) |
+| Interest | 0% | Treaty-defined interest; PE-connected and excessive related-party amounts are exceptions. | [Article 12](https://www.gov.uk/government/publications/ireland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1976-ireland-uk-double-taxation-convention-in-force) |
+| Royalties | 0% | Treaty-defined royalties; PE-connected and excessive related-party amounts are exceptions. | [Article 13](https://www.gov.uk/government/publications/ireland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1976-ireland-uk-double-taxation-convention-in-force) |
+| Technical services classified as enterprise business profits | Residence-state taxation absent source PE | The business-profits article here is Article 8, not Article 7. | [Article 8](https://www.gov.uk/government/publications/ireland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1976-ireland-uk-double-taxation-convention-in-force) |
 
-**Source:** UK-Ireland Convention 1976 (as modified by MLI). One of the oldest UK treaties.
-**Special provisions:** Post-Brexit, CTA (common travel area) provisions continue but EU directives ceased. Ireland revenue confirms 0/5/15 split on dividends. Treaty modified by MLI — PPT applies.
-**Last verified:** May 2026
+The 1976 Convention remains the treaty basis, with subsequent amendments and MLI PPT. The dividend split is conditional 0%/5%/15%; it is not a universal exemption. Common Travel Area arrangements do not themselves establish treaty residence or withholding eligibility. [Treaty text](https://www.gov.uk/government/publications/ireland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1976-ireland-uk-double-taxation-convention-in-force).
 
-## UK → Netherlands
+### UK → Netherlands / reverse direction
 
-**UK → Netherlands treaty rates**
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
+| Income type | Source treaty rate / ceiling | Operative conditions | Official authority |
 | --- | --- | --- | --- |
-| Dividends — portfolio | 15% | Art 10 | Standard rate |
-| Dividends — substantial (≥10% capital) | 10% | Art 10 | See note below |
-| Interest | 0% | Art 11 | Taxable only in residence state |
-| Royalties | 0% | Art 12 | Taxable only in residence state |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
+| Dividends, general | 10% | The ordinary treaty ceiling is 10%, not the former Guide's 15%. | [Article 10(2)(a)](https://www.gov.uk/government/publications/netherlands-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-netherlands-double-taxation-convention-in-force) |
+| Dividends, corporate holding | 0% | Company controls directly or indirectly at least 10% of voting power, not a 10% capital test. | [Article 10(2)(b)(i)](https://www.gov.uk/government/publications/netherlands-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-netherlands-double-taxation-convention-in-force) |
+| Dividends, qualifying pension or charity | 0% | Meet the specified pension-scheme or exempt charitable-organisation conditions. | [Article 10(2)(b)(ii)-(iii)](https://www.gov.uk/government/publications/netherlands-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-netherlands-double-taxation-convention-in-force) |
+| Dividends, exempt property investment vehicle | 15% | Specified annual distributions of exempt property income; pension/charity exceptions in the paragraph remain. | [Article 10(2)(a)(ii), (b)](https://www.gov.uk/government/publications/netherlands-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-netherlands-double-taxation-convention-in-force) |
+| Interest | 0% | PE connection and related-party excess remain exceptions. | [Article 11](https://www.gov.uk/government/publications/netherlands-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-netherlands-double-taxation-convention-in-force) |
+| Royalties | 0% | PE connection and related-party excess remain exceptions. | [Article 12](https://www.gov.uk/government/publications/netherlands-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-netherlands-double-taxation-convention-in-force) |
+| Technical services classified as enterprise business profits | Residence-state taxation absent source PE | Separate income articles take priority; PPT applies. | [Article 7](https://www.gov.uk/government/publications/netherlands-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-netherlands-double-taxation-convention-in-force) |
 
-**Source:** UK-Netherlands Convention signed 26 September 2008, amended by 2013 Protocol. Effective 25 December 2010.
-**Special provisions:** Netherlands conditional WHT (25.8% for 2026) applies to payments to low-tax jurisdictions — UK is NOT on the Dutch low-tax list. The 2008 treaty uses ≥10% capital threshold (not voting power). Modified by MLI.
-**Last verified:** May 2026
+The Convention was signed on 26 September 2008, entered into force on 25 December 2010, and is read with the 2013 Protocol and MLI. Do not infer Dutch conditional-withholding exemption solely from a UK address or a low-tax-jurisdiction list; the old domestic-rate assertion is held in Sources. [Treaty text](https://www.gov.uk/government/publications/netherlands-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-netherlands-double-taxation-convention-in-force).
 
-## UK → Spain
+### UK → Spain / reverse direction
 
-**UK → Spain treaty rates**
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
+| Income type | Source treaty rate / ceiling | Operative conditions | Official authority |
 | --- | --- | --- | --- |
-| Dividends — portfolio | 10% | Art 10 | Lower than many UK treaties |
-| Dividends — substantial (≥10% capital) | 0% | Art 10 | Full exemption |
-| Dividends — REIT/property (≥10% capital) | 15% | Art 10 | Property income dividends |
-| Interest | 0% | Art 11 | Taxable only in residence state |
-| Royalties | 0% | Art 12 | Taxable only in residence state |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
+| Dividends, general | 10% | Ordinary qualifying beneficial owner. | [Article 10(2)(a)](https://www.gov.uk/government/publications/spain-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-uk-spain-double-taxation-convention-in-force) |
+| Dividends, corporate holding | 0% | Company controls directly or indirectly at least 10% of capital, excluding the specified property investment vehicle. | [Article 10(2)(b)(i)](https://www.gov.uk/government/publications/spain-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-uk-spain-double-taxation-convention-in-force) |
+| Dividends, pension scheme | 0% | Qualifying pension scheme; the paragraph 2(b) exemption also overrides the specified property-vehicle cap. | [Article 10(2)(b)(ii)](https://www.gov.uk/government/publications/spain-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-uk-spain-double-taxation-convention-in-force) |
+| Dividends, exempt property investment vehicle | 15% | Specified annually distributing exempt-property vehicle; this is not limited to a 10% shareholder. The qualifying pension-scheme exemption remains. | [Article 10(2)(a)-(b)](https://www.gov.uk/government/publications/spain-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-uk-spain-double-taxation-convention-in-force) |
+| Interest | 0% | PE connection and related-party excess remain exceptions. | [Article 11](https://www.gov.uk/government/publications/spain-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-uk-spain-double-taxation-convention-in-force) |
+| Royalties | 0% | PE connection and related-party excess remain exceptions. | [Article 12](https://www.gov.uk/government/publications/spain-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-uk-spain-double-taxation-convention-in-force) |
+| Technical services classified as enterprise business profits | Residence-state taxation absent source PE | Separate income articles take priority. | [Article 7](https://www.gov.uk/government/publications/spain-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-uk-spain-double-taxation-convention-in-force) |
 
-**Source:** UK-Spain Convention signed 14 March 2013. In force from 12 June 2014.
-**Special provisions:** Pension scheme dividends exempt from Spanish tax. One of the most favourable UK treaties for portfolio dividends (10% vs typical 15%). Modified by MLI.
-**Last verified:** May 2026
+The Convention was signed on 14 March 2013 and entered into force on 12 June 2014. The MLI synthesis applies the PPT, with withholding modifications effective from 1 January 2023. The portfolio cap is lower than the 15% general cap in several listed corridors; this is not a ranking of all UK treaties. [Treaty text](https://www.gov.uk/government/publications/spain-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-uk-spain-double-taxation-convention-in-force).
 
-## UK → Italy
+### UK → Italy / reverse direction
 
-**UK → Italy treaty rates**
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
+| Income type | Source treaty rate / ceiling | Operative conditions | Official authority |
 | --- | --- | --- | --- |
-| Dividends — portfolio | 15% | Art 10 | Standard rate |
-| Dividends — substantial (≥10% voting) | 5% | Art 10 | Direct investment |
-| Interest | 10% | Art 11 | NOT zero — higher than most UK treaties |
-| Royalties | 8% | Art 12 | NOT zero — unusual non-zero rate |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
+| Dividends, general | 15% | Subject to the Article 10(9) dividend-stripping restriction and its commercial-purpose exception. | [Article 10(2)(b), (9)](https://www.gov.uk/government/publications/italy-tax-treaties/1988-uk-italy-double-taxation-convention-in-force) |
+| Dividends, corporate holding | 5% | Company controls directly or indirectly at least 10% of voting power; Article 10(9) still applies. | [Article 10(2)(a), (9)](https://www.gov.uk/government/publications/italy-tax-treaties/1988-uk-italy-double-taxation-convention-in-force) |
+| Interest, general | 10% | Check PE/fixed-base connection, excess, main-purpose restriction, and the exempt-recipient short-holding restriction. | [Article 11(2), (6)-(10)](https://www.gov.uk/government/publications/italy-tax-treaties/1988-uk-italy-double-taxation-convention-in-force) |
+| Interest, specified credit/government cases | 0% | Specified equipment/goods sale credit, government payer, or government/export-credit loan, guarantee or insurance. This is wider than government-to-government interest alone. | [Article 11(3)-(4)](https://www.gov.uk/government/publications/italy-tax-treaties/1988-uk-italy-double-taxation-convention-in-force) |
+| Royalties | 8% | Includes equipment; PE/fixed-base connection and excessive related-party amounts remain exceptions. | [Article 12](https://www.gov.uk/government/publications/italy-tax-treaties/1988-uk-italy-double-taxation-convention-in-force) |
+| Technical services classified as enterprise business profits | Residence-state taxation absent source PE | First check royalties and independent personal services rather than assuming all services are enterprise profits. | [Article 7](https://www.gov.uk/government/publications/italy-tax-treaties/1988-uk-italy-double-taxation-convention-in-force) |
 
-**Source:** UK-Italy Convention signed 21 October 1988. One of the older unreplaced UK treaties.
-**Special provisions:** Post-Brexit, EU Interest & Royalties Directive no longer applies — the 10%/8% treaty rates now bite. Government-to-government interest exempt. This treaty lacks an arbitration clause. Italy domestic WHT: dividends 26%, interest 26%, royalties 30%.
-**Last verified:** May 2026
+The Convention signed on 21 October 1988 remains the published in-force text. OECD's 12 November 2026 status records Italy as a signatory with no deposit or entry-into-force date, so do not treat the MLI as effective merely because Italy signed. Article 26 provides MAP without an arbitration paragraph in this treaty text. The UK EU interest/royalties exemption ended, but treaty rates do not override a lower domestic liability or a domestic exemption. [Treaty text](https://www.gov.uk/government/publications/italy-tax-treaties/1988-uk-italy-double-taxation-convention-in-force).
 
-## UK → Australia
+### UK → Australia / reverse direction
 
-**UK → Australia treaty rates**
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
+| Income type | Source treaty rate / ceiling | Operative conditions | Official authority |
 | --- | --- | --- | --- |
-| Dividends — portfolio | 15% | Art 10(2)(b) | Standard rate |
-| Dividends — substantial (≥10% voting) | 5% | Art 10(2)(a) | Direct investment |
-| Dividends — parent (≥80% voting, 12+ months) | 0% | Art 10(3) | Full exemption |
-| Interest | 10% | Art 11(2) | 0% for banks/financial institutions and government |
-| Royalties | 5% | Art 12(2) | Non-OECD definition of royalties |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
+| Dividends, general | 15% | Ordinary qualifying beneficial owner. | [Article 10(2)(b)](https://www.gov.uk/government/publications/australia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2003-australia-uk-double-taxation-convention-in-force) |
+| Dividends, corporate holding | 5% | Company holds directly at least 10% of voting power. | [Article 10(2)(a)](https://www.gov.uk/government/publications/australia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2003-australia-uk-double-taxation-convention-in-force) |
+| Dividends, qualifying parent | 0% | At least 80% voting power for 12 months ending on declaration AND the specified listing/qualifying ownership or competent-authority route; holding alone is insufficient. | [Article 10(3)](https://www.gov.uk/government/publications/australia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2003-australia-uk-double-taxation-convention-in-force) |
+| Interest, general | 10% | Treaty-defined interest; PE connection and related-party excess remain exceptions. | [Article 11(2)](https://www.gov.uk/government/publications/australia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2003-australia-uk-double-taxation-convention-in-force) |
+| Interest, specified government/FI | 0% | Government/central-bank cases or unrelated, wholly independent financial institution; back-to-back or economically equivalent arrangements restore the general limit. | [Article 11(3)-(4)](https://www.gov.uk/government/publications/australia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2003-australia-uk-double-taxation-convention-in-force) |
+| Royalties | 5% | Definition includes the listed IP rights, knowledge or information, ancillary/subsidiary assistance, film/broadcast rights and forbearance. Equipment hire alone is not listed in Article 12(3); classify the actual payment and test Articles 7 and 5 as applicable. | [Article 12](https://www.gov.uk/government/publications/australia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2003-australia-uk-double-taxation-convention-in-force) |
+| Technical services classified as enterprise business profits | Residence-state taxation absent source PE | Ancillary/subsidiary technical assistance can instead be a royalty. | [Article 7, 12(3)(c)](https://www.gov.uk/government/publications/australia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2003-australia-uk-double-taxation-convention-in-force) |
 
-**Source:** UK-Australia Convention signed 21 August 2003. Effective from 2004.
-**Special provisions:** Royalty definition does not follow standard OECD model — check exact wording. Parent-subsidiary 0% requires 80% voting for 12 months. Financial institution interest exemption requires unrelated parties dealing at arm's length.
-**Last verified:** May 2026
+The Convention signed on 21 August 2003 took effect under its tax-specific commencement provisions from 2004. Use the MLI synthesis and PPT. The financial-institution interest exemption requires the actual independence and anti-back-to-back conditions, not merely a bank label. [Treaty text](https://www.gov.uk/government/publications/australia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2003-australia-uk-double-taxation-convention-in-force).
 
-## UK → Canada
+### UK → Canada / reverse direction
 
-**UK → Canada treaty rates**
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
+| Income type | Source treaty rate / ceiling | Operative conditions | Official authority |
 | --- | --- | --- | --- |
-| Dividends — portfolio | 15% | Art 10 | Standard rate |
-| Dividends — substantial (≥10% voting) | 5% | Art 10 | Direct investment |
-| Interest | 10% | Art 11(2) | Government interest exempt |
-| Royalties — copyright, patents, software | 0% | Art 12(3) | Specific exemption |
-| Royalties — other (trademarks, franchises) | 10% | Art 12(2) | General rate |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
+| Dividends, general | 15% | Ordinary qualifying beneficial owner. | [Article 10(2)(b)](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) |
+| Dividends, corporate holding | 5% | Company controls directly or indirectly at least 10% of voting power. | [Article 10(2)(a)](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) |
+| Dividends, qualifying exempt pension organisation | 0% | Meet the exclusive pension-purpose, domestic exemption, holding and other conditions in these paragraphs; not a blanket pension exemption. | [Article 10(3)-(4)](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) |
+| Interest, general | 10% | Default ceiling, subject to the following exemptions and contingent-interest rule. | [Article 11(2)](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) |
+| Interest, arm's length or specified public/export-credit cases | 0% | Arm's-length beneficial owner and payer qualify, subject to the specified contingent-interest exception. Other paragraph 3 exemptions include defined public/export-credit cases; use the bilateral arm's-length interpretation. | [Article 11(3)-(4), interpretative protocol](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) |
+| Royalties, qualifying copyright/patent/software/know-how | 0% | Copyright excludes motion-picture and television categories; patent/know-how relief excludes rental/franchise connections. Read the exact categories. | [Article 12(3)](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) |
+| Royalties, other | 10% | Includes royalties outside the specified exemption categories, such as qualifying trademarks/franchises; PE and related-party excess exceptions remain. | [Article 12(2)](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) |
+| Technical services classified as enterprise business profits | Residence-state taxation absent source PE | Separate income articles take priority. | [Article 7](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) |
 
-**Source:** UK-Canada Convention 1978, consolidated 2014. Modified by MLI (effective January 2020).
-**Special provisions:** Split royalty rates — copyright/patent/software royalties at 0%, other royalties at 10%. MLI PPT now applies. Canada domestic WHT is 25% on dividends/interest/royalties.
-**Last verified:** May 2026
+The current synthesis incorporates the 2014 Protocol and 2015 notes, rather than ending at an unqualified 'consolidated 2014' label. MLI withholding modifications apply from 1 January 2020 and include PPT. The general 10% interest cap is not the outcome for all private lending: qualifying arm's-length interest is exempt. [Treaty text](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf).
 
-## UK → India
+### UK → India / reverse direction
 
-**UK → India treaty rates**
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
+| Income type | Source treaty rate / ceiling | Operative conditions | Official authority |
 | --- | --- | --- | --- |
-| Dividends — general | 10% | Art 11(2)(b) | Standard rate |
-| Dividends — property investment vehicle | 15% | Art 11(2)(a) | Immovable property income |
-| Interest — general | 15% | Art 12(2) | Higher than most UK treaties |
-| Interest — bona fide bank | 10% | Art 12(3)(a) | Banking business requirement |
-| Interest — government/RBI | 0% | Art 12(3)(b) | Full exemption |
-| Royalties | 15% | Art 13(2)(a) | Copyright/patent/know-how |
-| Royalties — equipment use | 10% | Art 13(2)(b) | Equipment rental |
-| Fees for technical services | 15% | Art 13(2)(a) | India-specific FTS article |
-| Fees for technical services — equipment | 10% | Art 13(2)(b) | Equipment-related |
+| Dividends, general | 10% | Ordinary qualifying beneficial owner. | [Article 11(2)(b)](https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force) |
+| Dividends, specified property investment vehicle | 15% | Specified distributions of exempt immovable-property income. | [Article 11(2)(a)](https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force) |
+| Interest, general | 15% | Check PE/fixed-base connection, related-party excess and the short-holding exemption restriction. | [Article 12(2)](https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force) |
+| Interest, bona fide bank | 10% | Beneficially owned by a bank carrying on bona fide banking business. | [Article 12(3)(a)](https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force) |
+| Interest, specified government/RBI/export-credit cases | 0% | Only the listed governmental, Reserve Bank of India and qualifying guaranteed/insured credit cases. | [Article 12(3)(b), (4)](https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force) |
+| Royalties, IP class | 15% | Current post-initial-period cap for qualifying copyright, patents, trademarks and know-how; apply the actual definition. | [Article 13(2)(a), (3)(a)](https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force) |
+| Royalties, equipment class | 10% | Use/right to use industrial, commercial or scientific equipment. | [Article 13(2)(b), (3)(b)](https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force) |
+| Technical/consultancy fees, IP-related or make-available class | 15% | FTS includes specified ancillary/subsidiary IP assistance or making available knowledge, skill, know-how, processes or a technical plan/design; paragraph 5 exclusions remain. | [Article 13(2)(a), (4)(a), (4)(c), (5)](https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force) |
+| Technical/consultancy fees, equipment-related class | 10% | Specified ancillary/subsidiary assistance for paragraph 3(b) equipment; paragraph 5 exclusions remain. | [Article 13(2)(b), (4)(b), (5)](https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force) |
 
-**Source:** UK-India Convention signed 25 January 1993, amended by 2012 Protocol. Modified by MLI.
-**Special provisions:** India has a separate FTS article (Art 13) — unusual in UK treaties. Export credit guaranteed loans exempt. India requires Form 10F (now Form 41 under IT Act 2025) + TRC. MLI PPT applies. India domestic WHT: dividends 20%, interest 20%, royalties/FTS 10%.
-**Last verified:** May 2026
+Article 13 is a separate FTS article; it is not limited to services satisfying a generic make-available slogan. First distinguish FTS, enterprise profits and Article 15 independent personal services. The MLI PPT applies. For Indian relief documentation select the applicable Act and tax year: current official guidance for the Income-tax Act 2025 uses Form 41 under section 159 and rule 75, with a TRC; Form 10F is the legacy Act form. [Treaty text](https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force).
 
-## UK → Singapore
+### UK → Singapore / reverse direction
 
-**UK → Singapore treaty rates**
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
+| Income type | Source treaty rate / ceiling | Operative conditions | Official authority |
 | --- | --- | --- | --- |
-| Dividends — portfolio | 0% | Art 10 | Full exemption |
-| Dividends — substantial | 0% | Art 10 | Full exemption |
-| Dividends — UK REIT | 15% | Art 10 | Property income exception |
-| Interest | 5% | Art 11 | 0% for banks/FIs and government |
-| Royalties | 8% | Art 12 | Gross amount |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
+| Dividends, ordinary portfolio or corporate | 0% | No substantial-shareholding threshold for the ordinary exemption; specified REIT distributions are separate. | [Article 10(1)](https://www.gov.uk/government/publications/singapore-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1997-uk-singapore-double-taxation-agreement-in-force) |
+| Dividends, UK or Singapore REIT | 15% | Read the two states' respective specified REIT distribution conditions. | [Article 10(2)](https://www.gov.uk/government/publications/singapore-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1997-uk-singapore-double-taxation-agreement-in-force) |
+| Interest, general | 5% | Treaty-defined interest; PE/fixed-base connection and related-party excess remain exceptions. | [Article 11(2)](https://www.gov.uk/government/publications/singapore-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1997-uk-singapore-double-taxation-agreement-in-force) |
+| Interest, specified government or bank/FI cases | 0% | Specified government beneficial owner, beneficial ownership by a bank or similar FI, OR payment by a bank or similar FI; paragraph 3 conditions govern. | [Article 11(3)](https://www.gov.uk/government/publications/singapore-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1997-uk-singapore-double-taxation-agreement-in-force) |
+| Royalties | 8% | Gross royalty amount; definition, PE/fixed-base connection and related-party excess still matter. | [Article 12(2)](https://www.gov.uk/government/publications/singapore-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1997-uk-singapore-double-taxation-agreement-in-force) |
+| Technical services classified as enterprise business profits | Residence-state taxation absent source PE | Separate income articles take priority; use the current Article 5, including its service-clause sunset. | [Article 7](https://www.gov.uk/government/publications/singapore-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1997-uk-singapore-double-taxation-agreement-in-force) |
 
-**Source:** UK-Singapore Agreement 1997, amended by 2012 Protocol. Updated dividend/interest/royalty provisions.
-**Special provisions:** Singapore does not levy WHT on dividends domestically. The 0% treaty dividend rate is bilateral. Bank/FI interest exempt. Singapore domestic WHT: interest 15%, royalties 10%. Modified by MLI.
-**Last verified:** May 2026
+The 2012 Second Protocol changed dividends, interest, royalties and PE provisions; it entered into force on 27 December 2012. Use the MLI synthesis and PPT. The ordinary dividend exemption is bilateral, but it does not exempt the specified REIT income. The former general 183-day service-PE clause has an express five-year sunset and is not a continuing 2026 threshold. [Treaty text](https://www.gov.uk/government/publications/singapore-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1997-uk-singapore-double-taxation-agreement-in-force).
 
-## UK → Japan
+### UK → Japan / reverse direction
 
-**UK → Japan treaty rates**
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
+| Income type | Source treaty rate / ceiling | Operative conditions | Official authority |
 | --- | --- | --- | --- |
-| Dividends — portfolio | 10% | Art 10(2) | Standard rate |
-| Dividends — substantial (≥10% voting, 6 months) | 0% | Art 10(3) | Full exemption |
-| Interest | 0% | Art 11 | 10% if return is contingent on profits |
-| Royalties | 0% | Art 12 | Full exemption |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
+| Dividends, general | 10% | Ordinary qualifying beneficial owner, subject to the applicable Article 10 conditions and PPT. Article 22(1) does not extend its LOB gate to this Article 10(2) benefit. | [Article 10(2)](https://www.gov.uk/government/publications/japan-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2006-uk-japan-double-taxation-convention-in-force) |
+| Dividends, corporate holding | 0% | Directly or indirectly at least 10% voting power for the six months ending on entitlement, plus LOB; deductible investment-company distributions are excluded as specified. | [Article 10(3)(a), (5), 22](https://www.gov.uk/government/publications/japan-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2006-uk-japan-double-taxation-convention-in-force) |
+| Dividends, pension | 0% | Qualifying pension fund, not income from a business carried on by it, and the other specified conditions. | [Article 10(3)(b), 22](https://www.gov.uk/government/publications/japan-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2006-uk-japan-double-taxation-convention-in-force) |
+| Interest, ordinary | 0% | Article 22 eligibility and applicable PPT remain; PE-connected amounts, related-party excess and conduit arrangements are exceptions. | [Article 11(1)](https://www.gov.uk/government/publications/japan-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2006-uk-japan-double-taxation-convention-in-force) |
+| Interest, specified contingent return | 10% | The interest contingent on the listed receipts, profits or similar measures is separately capped. | [Article 11(2)](https://www.gov.uk/government/publications/japan-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2006-uk-japan-double-taxation-convention-in-force) |
+| Royalties | 0% | Article 22 eligibility and applicable PPT remain, alongside PE connection, related-party excess and the Article 12(5) conduit restriction. | [Article 12](https://www.gov.uk/government/publications/japan-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2006-uk-japan-double-taxation-convention-in-force) |
+| Technical services classified as enterprise business profits | Residence-state taxation absent source PE | Separate income articles take priority and applicable PPT remains. Article 22(1) does not extend its LOB gate to the Article 7 business-profits benefit. | [Article 7](https://www.gov.uk/government/publications/japan-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2006-uk-japan-double-taxation-convention-in-force) |
 
-**Source:** UK-Japan Convention signed 2 February 2006, amended by 2013 Protocol. Effective from 2007/2015.
-**Special provisions:** Anti-conduit rules for interest (Art 11(6)) and royalties (Art 12(5)). 6-month holding period for reduced dividend rate. Arbitration clause (Art 25). Japan domestic WHT: dividends 15-20%, interest 15-20%, royalties 20%.
-**Last verified:** May 2026
+The 2006 Convention and 2013 Protocol have separate tax-specific effect dates; the register records entry into force on 12 October 2006 and 12 December 2014 respectively. Use the current synthesis. For the Article 10(3)(a) corporate zero-dividend route, Article 22 eligibility is additional to the six-month holding test. Article 22(1) limits its LOB gate to the enumerated benefits; it does not cover general Article 10(2) dividends or Article 7 business profits, whose own conditions and applicable PPT remain. Article 25 provides conditional arbitration after two years from presentation to the other state's competent authority, with the stated exclusions and acceptance requirements; a court decision and dual-residence cases can prevent that route. [Treaty text](https://www.gov.uk/government/publications/japan-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2006-uk-japan-double-taxation-convention-in-force).
 
-## UK → UAE
+### UK → UAE / reverse direction
 
-**UK → UAE treaty rates**
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
+| Income type | Source treaty rate / ceiling | Operative conditions | Official authority |
 | --- | --- | --- | --- |
-| Dividends | 0% | Art 10 | UAE has no income tax on dividends |
-| Interest | 0% | Art 11 | UAE has no income tax on interest |
-| Royalties | 0% | Art 12 | Taxable only in residence state |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
+| Dividends, ordinary | 0% | Specified exempt-property investment vehicles are separate. | [Article 10(2)](https://assets.publishing.service.gov.uk/media/5da850dce5274a5ca94bb5cc/2016_UK-UAE_Double_Taxation_Convention___in_force.pdf) |
+| Dividends, specified property vehicle | 15% | Specified annual distribution of exempt immovable-property income; qualifying pension exception remains. | [Article 10(2)](https://assets.publishing.service.gov.uk/media/5da850dce5274a5ca94bb5cc/2016_UK-UAE_Double_Taxation_Convention___in_force.pdf) |
+| Interest, qualifying recipient or public payer | 0% | Listed government/statutory body, individual, qualifying listed company, pension scheme, independent unrelated FI, other company approved by the source competent authority, OR specified public payer. | [Article 11(2)-(4)](https://assets.publishing.service.gov.uk/media/5da850dce5274a5ca94bb5cc/2016_UK-UAE_Double_Taxation_Convention___in_force.pdf) |
+| Interest, other | No general treaty ceiling in Article 11 | Apply source domestic law. A private non-listed corporate lender is not automatically entitled to 0%. | [Article 11(1)-(3)](https://assets.publishing.service.gov.uk/media/5da850dce5274a5ca94bb5cc/2016_UK-UAE_Double_Taxation_Convention___in_force.pdf) |
+| Royalties | 0% | PE connection and related-party excess remain exceptions. | [Article 12](https://assets.publishing.service.gov.uk/media/5da850dce5274a5ca94bb5cc/2016_UK-UAE_Double_Taxation_Convention___in_force.pdf) |
+| Technical services classified as enterprise business profits | Residence-state taxation absent source PE | Separate income articles take priority; PPT applies. | [Article 7](https://assets.publishing.service.gov.uk/media/5da850dce5274a5ca94bb5cc/2016_UK-UAE_Double_Taxation_Convention___in_force.pdf) |
 
-**Source:** UK-UAE Convention signed 12 April 2016. Modified by MLI.
-**Special provisions:** UAE introduced 9% corporate tax in June 2023 but with extensive exemptions. Treaty is effectively 0% across the board. UAE does not currently levy WHT on any payment type. The treaty primarily benefits UK-resident recipients of UAE-source income (preventing any future UAE WHT from exceeding treaty rates).
-**Last verified:** May 2026
+The Convention was signed on 12 April 2016 and is modified by the MLI. The UAE Federal Tax Authority confirms a current 0% domestic withholding rate for the relevant UAE-source payments to non-residents. That domestic outcome does not turn UK-source interest into an unconditional treaty exemption or prohibit all future source taxation. Corporate income tax and withholding tax are distinct; the old corporate-tax shorthand is held in Sources. [Treaty text](https://assets.publishing.service.gov.uk/media/5da850dce5274a5ca94bb5cc/2016_UK-UAE_Double_Taxation_Convention___in_force.pdf).
 
-## UK → Switzerland
+### UK → Switzerland / reverse direction
 
-**UK → Switzerland treaty rates**
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
+| Income type | Source treaty rate / ceiling | Operative conditions | Official authority |
 | --- | --- | --- | --- |
-| Dividends — portfolio | 15% | Art 10 | Swiss domestic WHT is 35% |
-| Dividends — substantial (≥10% capital) | 0% | Art 10 | Full exemption |
-| Dividends — pension scheme | 0% | Art 10 | Pension scheme exemption |
-| Interest | 0% | Art 11 | Taxable only in residence state |
-| Royalties | 0% | Art 12 | Taxable only in residence state |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
+| Dividends, general | 15% | Ordinary qualifying beneficial owner. | [Article 10(2)(b)](https://www.gov.uk/government/publications/switzerland-tax-treaties/1977-uk-switzerland-double-taxation-convention-as-amended-by-the-2017-protocol-in-force) |
+| Dividends, corporate holding | 0% | Company controls directly or indirectly at least 10% of capital. | [Article 10(2)(a)(i)](https://www.gov.uk/government/publications/switzerland-tax-treaties/1977-uk-switzerland-double-taxation-convention-as-amended-by-the-2017-protocol-in-force) |
+| Dividends, pension scheme | 0% | Qualifying pension scheme. | [Article 10(2)(a)(ii)](https://www.gov.uk/government/publications/switzerland-tax-treaties/1977-uk-switzerland-double-taxation-convention-as-amended-by-the-2017-protocol-in-force) |
+| Interest | 0% | PE/fixed-base connection, related-party excess and the dividend-classification exception remain. | [Article 11](https://www.gov.uk/government/publications/switzerland-tax-treaties/1977-uk-switzerland-double-taxation-convention-as-amended-by-the-2017-protocol-in-force) |
+| Royalties | 0% | PE/fixed-base connection and related-party excess remain. | [Article 12](https://www.gov.uk/government/publications/switzerland-tax-treaties/1977-uk-switzerland-double-taxation-convention-as-amended-by-the-2017-protocol-in-force) |
+| Technical services classified as enterprise business profits | Residence-state taxation absent source PE | Separate income articles take priority. | [Article 7](https://www.gov.uk/government/publications/switzerland-tax-treaties/1977-uk-switzerland-double-taxation-convention-as-amended-by-the-2017-protocol-in-force) |
 
-**Source:** UK-Switzerland Convention 1977, amended by 2009 Protocol. Arbitration clause (Art 24).
-**Special provisions:** Swiss domestic WHT on dividends is 35% — treaty relief critical. 0% for ≥10% capital holdings and pension schemes. Swiss refund procedure (Verrechnungssteuer) required to reclaim excess. Arbitration available.
-**Last verified:** May 2026
+Use the 1977 Convention amended through the 2017 Protocol, not a text stopping at 2009. Article 27A is a bilateral PPT. Article 24 contains conditional arbitration after three years from presentation to the other state's competent authority, subject to its court-decision and acceptance conditions. Swiss withholding can require a refund of the excess: the current official UK claimant form is 86, not the former Guide's 82/83. [Treaty text](https://www.gov.uk/government/publications/switzerland-tax-treaties/1977-uk-switzerland-double-taxation-convention-as-amended-by-the-2017-protocol-in-force).
 
-## PE Threshold Notes
 
-Standard PE thresholds under UK treaties are generally 12 months for construction/installation projects. Notable deviations:
 
-**PE Threshold Notes**
+## PE threshold notes
 
-| Treaty Partner | Construction PE Threshold | Service PE Threshold | Notes |
+Construction durations are strict **more-than** tests in the provisions below. These tests do not replace fixed-place, agency, resource, equipment or other PE rules. Services must first be classified under their applicable article. In particular, India's 90-day service test is not its construction test and is not measured by a fiscal year.
+
+| Treaty partner | Construction/project threshold | Service and neighboring conditions | Official authority |
 | --- | --- | --- | --- |
-| US | 12 months | None specified | Art 5(3) |
-| Germany | 12 months | None specified | Art 5(3) |
-| France | 12 months | None specified | Art 5(3) |
-| India | 90 days in any 12-month period | 90 days in any fiscal year | Art 5(2)(j) — very short |
-| Singapore | 12 months | 183 days in any 12-month period | Art 5(3)(b) service PE |
-| Japan | 12 months | None specified | Art 5(3) |
-| UAE | 12 months | None specified | Art 5(3) |
-| Australia | 12 months | None specified | Art 5(3) |
-| Canada | 12 months | None specified | Art 5(3) |
+| US | More than 12 months | Do not infer a service-day safe harbour; test fixed-place and agency PE as well. | [Article 5(1)-(6)](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force) |
+| Germany | More than 12 months | Test fixed-place, agency, anti-fragmentation and any separate natural-resource provisions. | [Article 5; 20](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) |
+| France | More than 12 months | Test fixed-place, agency and MLI anti-fragmentation provisions. | [Article 5](https://www.gov.uk/government/publications/france-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-france-double-taxation-convention-in-force) |
+| India | More than 6 months; a shorter machinery/equipment-incidental project can qualify if charges exceed 10% of the sale price | Services outside Article 13: more than 90 days in any 12 months, or more than 30 days for an associated enterprise. The mineral-oil services/facilities/hired-plant rule separately deems a PE. | [Article 5(2)(j)-(k)](https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force) |
+| Singapore | More than 6 months; connected supervisory activity also more than 6 months | The old more-than-183-days-in-a-fiscal-year service clause ceases for fiscal years beginning after five years from the Second Protocol first taking effect. It is expired for 2026; fixed-place/agency PE still matters. | [Article 5(3)-(7); Second Protocol 3, 16](https://www.gov.uk/government/publications/singapore-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1997-uk-singapore-double-taxation-agreement-in-force) |
+| Japan | More than 12 months | Test fixed-place, agency and MLI anti-fragmentation provisions. | [Article 5](https://www.gov.uk/government/publications/japan-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2006-uk-japan-double-taxation-convention-in-force) |
+| UAE | More than 12 months | Test fixed-place and agency PE; a construction threshold is not a general exemption for other activities. | [Article 5](https://assets.publishing.service.gov.uk/media/5da850dce5274a5ca94bb5cc/2016_UK-UAE_Double_Taxation_Convention___in_force.pdf) |
+| Australia | More than 12 months, including connected supervisory/consultancy activities | Substantial equipment maintained for rental or other purposes for more than 12 months excludes equipment let under a hire-purchase agreement. Article 5(4)(a) aggregates connected associated-enterprise construction/project/supervisory/consultancy activities under Article 5(3)(a); concurrent periods are counted once for that duration test. This is not a general equipment-activity aggregation rule. Manufacturing-agent and other PE rules also matter. | [Article 5(1)-(4), (6)-(8)](https://www.gov.uk/government/publications/australia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2003-australia-uk-double-taxation-convention-in-force) |
+| Canada | More than 12 months | Test fixed-place and agency PE; a construction threshold is not a general exemption for other activities. | [Article 5](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) |
 
-**India's 90-day PE threshold** is significantly shorter than most UK treaties and requires careful monitoring for on-site projects.
+## Key procedural requirements
 
-## Key Procedural Requirements
+The following rows concern relief from the **named foreign state's** source tax for a UK claimant. UK-source interest follows HMRC's authority procedure discussed in the method. These are source-reading instructions, not a claim that any live application was filed or accepted.
 
-**Key Procedural Requirements**
-
-| Country | Form Required | Filing Deadline | Notes |
+| Source country | Documentation and route | Timing/limits | Official authority |
 | --- | --- | --- | --- |
-| US | W-8BEN / W-8BEN-E | Before payment | Must certify LOB eligibility |
-| Germany | Freistellungsantrag | Before payment preferred | Application for exemption |
-| France | None standard for services | — | CoR sufficient |
-| India | Form 41 (replaces 10F) + TRC | Before payment | New IT Act 2025 form |
-| Japan | Application Form 1-7 | Submitted via payer | To local tax office |
-| Canada | NR301 / NR302 | Before payment | Declaration of eligibility |
-| Australia | CoR from UK | Before payment | No standard form |
-| Switzerland | Form 82/83 (refund) | Within 3 years | Swiss refund procedure |
+| US | Individuals generally use W-8BEN; foreign beneficial-owner entities generally use W-8BEN-E. Establish treaty residence and the applicable LOB route in the entity form; special income/transparent entities may need another form. | Give the appropriate form to the withholding agent before payment or credit, not to the IRS. | [IRS W-8BEN-E instructions](https://www.irs.gov/instructions/iw8bene), [requester instructions](https://www.irs.gov/instructions/iw8) |
+| Germany | The BZSt section 50c(2) exemption-certificate route applies to the specified foreign corporate dividend recipient subject to income or profit tax in its residence country without being exempt. It must receive the investment income from a corporation with unlimited German corporate tax liability and hold directly at least one tenth of that payer's nominal capital. | Certificate is for relief at source; it can cover future payments and reach back to the application date. Do not treat this as a universal application for all services/royalties. | [BZSt capital-income exemption procedure](https://online.portal.bzst.de/SharedDocs/Leistungsbeschreibung/EN/freistellung_abzugsteuer_kapitalertraege.html?nn=25056) |
+| France | Form 5000 residence certification, with annex 5001 dividends, 5002 interest or 5003 royalties for the applicable relief/refund claim. | Follow the relevant form's payer and foreign-tax-authority certification route; the old claim that a CoR always suffices for services is not established. | [DGFiP residence/relief documentation](https://www.impots.gouv.fr/international-particulier/questions/comment-obtenir-un-justificatif-de-residence-pour-beneficier-dun) |
+| India | For claims under the Income-tax Act 2025, online Form 41 supplies section 159/rule 75 information with the TRC; select the Act and tax year, complete the form and e-verify. Legacy Form 10F belongs to the earlier Act route. | Keep the transaction ID and acknowledgement after submission. The manual establishes the online steps; it does not substantiate a universal before-payment filing deadline. | [Income Tax Department Form 41 manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM) |
+| Japan | Application Form 1 for dividends, 2 for interest or 3 for royalties; submit through the withholding agent. Add Form 17 LOB attachment and residence certification where required. | Submit by the day before the first payment. Without timely relief documentation domestic withholding applies; Form 11 is the stated refund route. | [NTA application procedure](https://www.nta.go.jp/english/taxes/withholing/Information/13001.htm), [NTA form list](https://www.nta.go.jp/english/taxes/withholing/tax_convention.htm) |
+| Canada | NR301 identifies a non-resident taxpayer's treaty eligibility; NR302 covers a partnership with non-resident partners. | Select the declaration appropriate to the beneficial owner/entity and the payer's actual requirements. The form landing pages do not establish a universal filing deadline. | [CRA NR301](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/nr301.html), [CRA NR302](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/nr302.html) |
+| Australia | Residence evidence remains necessary to substantiate treaty entitlement. | The former assertion of a universally sufficient UK CoR, no standard form and a universal before-payment deadline is not confirmed; do not use it as a filing instruction. | [ATO source attempted; access hold](https://www.ato.gov.au/individuals-and-families/investments-and-assets/foreign-resident-investments/interest-unfranked-dividends-and-royalties) |
+| Switzerland | Official refund form 86 for UK claimants; supplementary beneficial-ownership declarations 86a/86b are separately listed. | Generally apply within three years after the end of the calendar year in which the taxable benefit fell due, subject to the statutory exceptions. This initial forfeiture limit differs from the separate relative prescription period. | [AFC UK forms](https://www.estv.admin.ch/fr/royaume-uni), [AFC deadline notice](https://www.estv.admin.ch/fr/delais-de-prescription-remboursement-de-impot-anticipe) |
 
-## Summary: Zero-WHT Corridors (All Three Categories)
+## Summary: conditional low-withholding corridors
 
-**Summary: Zero-WHT Corridors (All Three Categories)**
+This preserves the original seven-corridor comparison. It is a summary of the detailed rows, not an assertion that all three categories always have zero withholding. Domestic tax and all treaty conditions above still control.
 
-| Corridor | Dividends (substantial) | Interest | Royalties |
+| Corridor | Corporate dividends | Interest | Royalties | Official authority |
+| --- | --- | --- | --- | --- |
+| UK ↔ US | 5% at 10% voting; conditional 0% at 80%/12 months | Ordinary 0%; contingent/securitisation exceptions | 0%, subject to exceptions | [Articles 10-12, 23](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force) |
+| UK ↔ Germany | 5% at direct 10% capital | 0%, subject to exceptions | 0%, subject to exceptions | [Articles 10-12, 30A](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) |
+| UK ↔ France | 0% at direct/indirect 10% capital, liable company; property exception | 0%, subject to exceptions | 0%, subject to exceptions | [Articles 11-13](https://www.gov.uk/government/publications/france-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-france-double-taxation-convention-in-force) |
+| UK ↔ Spain | 0% at direct/indirect 10% capital; property exception | 0%, subject to exceptions | 0%, subject to exceptions | [Articles 10-12](https://www.gov.uk/government/publications/spain-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-uk-spain-double-taxation-convention-in-force) |
+| UK ↔ Japan | 0% at 10% voting/six months plus LOB | Ordinary 0%; specified contingent 10% | 0%, subject to exceptions | [Articles 10-12, 22](https://www.gov.uk/government/publications/japan-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2006-uk-japan-double-taxation-convention-in-force) |
+| UK ↔ UAE | Ordinary 0%; property-vehicle 15% exception | 0% only for Article 11 qualifying cases; otherwise source law | 0%, subject to exceptions | [Articles 10-12](https://assets.publishing.service.gov.uk/media/5da850dce5274a5ca94bb5cc/2016_UK-UAE_Double_Taxation_Convention___in_force.pdf) |
+| UK ↔ Switzerland | 0% at direct/indirect 10% capital | 0%, subject to exceptions | 0%, subject to exceptions | [Articles 10-12, 27A](https://www.gov.uk/government/publications/switzerland-tax-treaties/1977-uk-switzerland-double-taxation-convention-as-amended-by-the-2017-protocol-in-force) |
+
+## Worked case
+
+**UK-source interest paid to an Italian company in UK tax year 2026-27.** Gross yearly interest is GBP 10,000. The Italian company is resident, beneficial owner and taxable on the income; the interest is arm's length, has no PE/fixed-base connection, and satisfies Article 11's anti-abuse and holding conditions. Assume no domestic or treaty special exemption and that HMRC has authorised the applicable reduced-rate payment. UK withholding within the stated domestic duty would be 20%; Article 11(2) caps this qualifying interest at 10%. Withholding is GBP 1,000 and the net payment is GBP 9,000. Without the assumed HMRC authority, the payer must follow the domestic deduction/refund procedure rather than automatically using 10%. [Italy Article 11](https://www.gov.uk/government/publications/italy-tax-treaties/1988-uk-italy-double-taxation-convention-in-force), [HMRC PIM2064](https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2064), [2026-27 basic rates](https://www.legislation.gov.uk/ukpga/2026/11/section/3).
+
+```oa-check
+name: UK to Italy qualifying yearly interest, authorised treaty relief, 2026-27
+inputs:
+  gross_interest: 10000
+  domestic_rate: 0.20
+  treaty_ceiling: 0.10
+steps:
+  rate: min(domestic_rate, treaty_ceiling)
+  withholding: gross_interest * rate
+  net_payment: gross_interest - withholding
+expected:
+  rate: 0.10
+  withholding: 1000
+  net_payment: 9000
+```
+
+## When to refuse or refer
+
+Do not return a usable payment rate where the beneficial owner, residence, income class, source, holding period, LOB/PPT or required relief documentation is unresolved. Refer PE-connected income, property/pooled vehicles, contingent debt, conduit arrangements, related-party excess and disputed classifications for their separate computation. A source-access or domestic-rate hold below cannot be converted into a default percentage or a completed application.
+
+## Sources
+
+The completed original treaty/operative-context reads dated 2026-11-16 are retained below. Only the Australia definition/equipment-PE, Japan Article 22(1) eligibility scope and German exemption-procedure dependencies were reread for the finite corrections on 2026-11-17, as separately recorded. HMRC's published synthesis is a convenience text; authentic treaties, protocols and applicable MLI provisions prevail. A read date is not accountant approval. Full source captures are retained locally; no authenticated filing was attempted.
+
+| Source | Official URL | Read on | Actual scope and limits |
 | --- | --- | --- | --- |
-| UK ↔ US | 5% (0% at 80%) | 0% | 0% |
-| UK ↔ Germany | 5% | 0% | 0% |
-| UK ↔ France | 0% (≥10%) | 0% | 0% |
-| UK ↔ Spain | 0% (≥10%) | 0% | 0% |
-| UK ↔ Japan | 0% (≥10%) | 0% | 0% |
-| UK ↔ UAE | 0% | 0% | 0% |
-| UK ↔ Switzerland | 0% (≥10%) | 0% | 0% |
+| UK-US published in-force treaty edition | [Official text](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force); [HMRC treaty register](https://www.gov.uk/government/publications/usa-tax-treaties) | 2026-11-16 | Articles 1(4)-(8), 5, 7, 10-12, 23; register commencement; 2002 protocol as incorporated; July 2021 competent-authority arrangements. These are scoped reads, not a claim to have read every article of each treaty. |
+| UK-Germany published in-force treaty edition | [Official text](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force); [HMRC treaty register](https://www.gov.uk/government/publications/germany-tax-treaties) | 2026-11-16 | 2010 Convention as amended by 2014 and 2021 protocols; Articles 5, 7, 10-12, 30A; entry/effect header. These are scoped reads, not a claim to have read every article of each treaty. |
+| UK-France published in-force treaty edition | [Official text](https://www.gov.uk/government/publications/france-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-france-double-taxation-convention-in-force); [HMRC treaty register](https://www.gov.uk/government/publications/france-tax-treaties) | 2026-11-16 | 2008 Convention, MLI synthesis; Articles 5, 7, 11-13, 29, MLI7 PPT, introductory effect statement. These are scoped reads, not a claim to have read every article of each treaty. |
+| UK-Ireland published in-force treaty edition | [Official text](https://www.gov.uk/government/publications/ireland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1976-ireland-uk-double-taxation-convention-in-force); [HMRC treaty register](https://www.gov.uk/government/publications/ireland-tax-treaties) | 2026-11-16 | 1976 Convention as amended and modified by MLI; Articles 8, 11-13, MLI7 PPT; effect statement. These are scoped reads, not a claim to have read every article of each treaty. |
+| UK-Netherlands published in-force treaty edition | [Official text](https://www.gov.uk/government/publications/netherlands-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2008-uk-netherlands-double-taxation-convention-in-force); [HMRC treaty register](https://www.gov.uk/government/publications/netherlands-tax-treaties) | 2026-11-16 | 2008 Convention with 2013 protocol and MLI; Articles 5, 7, 10-12, MLI7 PPT; introductory edition/effect statement. These are scoped reads, not a claim to have read every article of each treaty. |
+| UK-Spain published in-force treaty edition | [Official text](https://www.gov.uk/government/publications/spain-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-uk-spain-double-taxation-convention-in-force); [HMRC treaty register](https://www.gov.uk/government/publications/spain-tax-treaties) | 2026-11-16 | 2013 Convention and MLI synthesis; Articles 7, 10-12, MLI7 PPT; effect statement. These are scoped reads, not a claim to have read every article of each treaty. |
+| UK-Italy published in-force treaty edition | [Official text](https://www.gov.uk/government/publications/italy-tax-treaties/1988-uk-italy-double-taxation-convention-in-force); [HMRC treaty register](https://www.gov.uk/government/publications/italy-tax-treaties) | 2026-11-16 | 1988 Convention Articles 7, 10-12, 26, 29; current OECD status limited receipt for Italy signature/non-party status. These are scoped reads, not a claim to have read every article of each treaty. |
+| UK-Australia published in-force treaty edition | [Official text](https://www.gov.uk/government/publications/australia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2003-australia-uk-double-taxation-convention-in-force); [HMRC treaty register](https://www.gov.uk/government/publications/australia-tax-treaties) | 2026-11-16 | 2003 Convention and MLI synthesis; Articles 5, 7, 10-12, MLI7 PPT; effect statement. These are scoped reads, not a claim to have read every article of each treaty. |
+| UK-Australia finite correction read | [Official source](https://www.gov.uk/government/publications/australia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2003-australia-uk-double-taxation-convention-in-force) | 2026-11-17 | Article 12(3)(a)-(e), with paragraphs 1-6 context; Article 5(3)(a)-(c) and 5(4)(a)-(c): closed royalty categories, equipment hire-purchase exclusion, construction-limb aggregation and concurrent periods only. No new full-treaty read. |
+| UK-Canada published in-force treaty edition | [Official text](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf); [HMRC treaty register](https://www.gov.uk/government/publications/canada-tax-treaties) | 2026-11-16 | 1978 Convention as amended by 2014 protocol/2015 notes and MLI; Articles 5, 7, 10-12, 2014 interpretative protocol, MLI7 PPT; introduction/effects. These are scoped reads, not a claim to have read every article of each treaty. |
+| UK-India published in-force treaty edition | [Official text](https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force); [HMRC treaty register](https://www.gov.uk/government/publications/india-tax-treaties) | 2026-11-16 | 1993 Convention amended by 2012 protocol and MLI; Articles 5, 7, 11-13, 15, MLI7 PPT; introductory effect statement. These are scoped reads, not a claim to have read every article of each treaty. |
+| UK-Singapore published in-force treaty edition | [Official text](https://www.gov.uk/government/publications/singapore-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-1997-uk-singapore-double-taxation-agreement-in-force); [HMRC treaty register](https://www.gov.uk/government/publications/singapore-tax-treaties) | 2026-11-16 | 1997 Agreement with 2012 Second Protocol and MLI; Articles 5, 7, 10-12, MLI7 PPT; Second Protocol Articles 3/16 and effect header. These are scoped reads, not a claim to have read every article of each treaty. |
+| UK-Japan published in-force treaty edition | [Official text](https://www.gov.uk/government/publications/japan-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2006-uk-japan-double-taxation-convention-in-force); [HMRC treaty register](https://www.gov.uk/government/publications/japan-tax-treaties) | 2026-11-16 | 2006 Convention amended by 2013 protocol and MLI; Articles 5, 7, 10-12, 22(2)-(6), 25; MLI7 PPT and effects. These are scoped reads, not a claim to have read every article of each treaty. |
+| UK-Japan finite correction read | [Official source](https://www.gov.uk/government/publications/japan-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2006-uk-japan-double-taxation-convention-in-force) | 2026-11-17 | Article 22(1) enumerated benefits, read with Article 7(1)-(4), Article 10(2)-(3), and the already reviewed eligibility/PPT context. General dividends/business profits are distinguished from covered zero-dividend, ordinary-interest and royalty benefits. |
+| UK-UAE published in-force treaty edition | [Official text](https://assets.publishing.service.gov.uk/media/5da850dce5274a5ca94bb5cc/2016_UK-UAE_Double_Taxation_Convention___in_force.pdf); [HMRC treaty register](https://www.gov.uk/government/publications/united-arab-emirates-tax-treaties) | 2026-11-16 | 2016 Convention and MLI synthesis; Articles 5, 7, 10-12, MLI7 PPT; effect statement. These are scoped reads, not a claim to have read every article of each treaty. |
+| UK-Switzerland published in-force treaty edition | [Official text](https://www.gov.uk/government/publications/switzerland-tax-treaties/1977-uk-switzerland-double-taxation-convention-as-amended-by-the-2017-protocol-in-force); [HMRC treaty register](https://www.gov.uk/government/publications/switzerland-tax-treaties) | 2026-11-16 | 1977 Convention as amended by 2009 and 2017 protocols; Articles 7, 10-12, 24, 27A; current Swiss refund pages. These are scoped reads, not a claim to have read every article of each treaty. |
+| UK domestic ordinary dividends | [Official source](https://www.business.gov.uk/invest-in-uk/investment/uk-tax-and-incentives/) | 2026-11-16 | Dividend-withholding statement only; not a source for all other tax incentives. |
+| UK domestic yearly-interest duty | [Official source](https://www.gov.uk/hmrc-internal-manuals/savings-and-investment-manual/saim9070) | 2026-11-16 | Section 874 scope, savings basic rate, statutory exemptions and gross-payment cases. |
+| UK domestic IP duty | [Official source](https://www.legislation.gov.uk/ukpga/2007/3/section/906) | 2026-11-16 | Subsections 1-8, including foreign usual abode, chargeability, exported-copy exception, basic-rate deduction and cross-referenced exceptions. |
+| UK 2026-27 basic rates | [Main rate](https://www.legislation.gov.uk/ukpga/2026/11/section/2), [default/savings rates](https://www.legislation.gov.uk/ukpga/2026/11/section/3) | 2026-11-16 | Main basic rate in section 2 and default/savings basic rates in section 3(1)-(2); no future proposal used. |
+| UK interest relief procedure | [Official source](https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2064) | 2026-11-16 | Overseas lender treaty application, HMRC authority and payer deduction responsibility. |
+| UK IP relief procedure | [Official source](https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim00736) | 2026-11-16 | UK-source royalty scope, section 911 reasonable belief and connected-party anti-avoidance. Its old EU-relief reference is read subject to the current termination notice below. |
+| UK EU interest/royalty exemption termination | [Official source](https://www.gov.uk/hmrc-internal-manuals/international-manual/intm400030) | 2026-11-16 | Explicit termination notice for payments on/after 1 June 2021; the historical exemption body is not treated as current relief. |
+| UK-US equivalent-beneficiary arrangement | [Official source](https://www.gov.uk/government/publications/usa-tax-treaties/uk-usa-double-taxation-convention-competent-authority-agreement-1-signed-in-july-2021-in-force) | 2026-11-16 | Operative agreement retains a UK resident within the stated European Community equivalent-beneficiary reference, subject to Article 23 tests. |
+| UK-US NAFTA/USMCA arrangement | [Official source](https://www.gov.uk/government/publications/usa-tax-treaties/uk-usa-double-taxation-convention-competent-authority-agreement-2-signed-in-july-2021-in-force) | 2026-11-16 | Operative agreement reads this treaty's NAFTA references as USMCA, not an assumption about other treaties. |
+| UK-Singapore Second Protocol | [Official source](https://www.gov.uk/government/publications/singapore-tax-treaties/2012-uk-singapore-second-protocol-in-force) | 2026-11-16 | Articles 3 and 16, including fiscal-year service-PE sunset and tax-specific initial effects. |
+| IRS W-8BEN-E instructions | [Official source](https://www.irs.gov/instructions/iw8bene) | 2026-11-16 | Beneficial-owner entity form, individual/transparent-entity alternatives, before-payment delivery, Part III/line 14 treaty and LOB documentation. |
+| IRS requester instructions | [Official source](https://www.irs.gov/instructions/iw8) | 2026-11-16 | Appropriate W-8 form and treaty documentation; not a universal W-8BEN-E requirement. |
+| BZSt exemption procedure | [Official source](https://online.portal.bzst.de/SharedDocs/Leistungsbeschreibung/EN/freistellung_abzugsteuer_kapitalertraege.html?nn=25056) | 2026-11-16 | Corporate capital-income section 50c(2) exemption certificate; direct one-tenth holding, prospective scope and application-date limit. |
+| BZSt finite correction read | [Official source](https://online.portal.bzst.de/SharedDocs/Leistungsbeschreibung/EN/freistellung_abzugsteuer_kapitalertraege.html?nn=25056) | 2026-11-17 | Published corporate-creditor residence-state income/profit-tax liability without exemption; German payer unlimited corporate tax liability and direct one-tenth nominal-capital holding. No unrelated duration figure or new procedure added. |
+| French residence/relief forms | [Official source](https://www.impots.gouv.fr/international-particulier/questions/comment-obtenir-un-justificatif-de-residence-pour-beneficier-dun) | 2026-11-16 | 5000 and 5001/5002/5003 annexes, certification workflow. Page states update 1 March 2021; no newer-edition assertion. |
+| Indian Form 41 official manual | [Official source](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM) | 2026-11-16 | Sections 1-4: section 159/rule 75, non-resident eligibility, TRC, Act/tax-year selection, online filing/e-verification and receipt. No authenticated form submitted; no universal before-payment deadline inferred. |
+| Japanese applications | [Official source](https://www.nta.go.jp/english/taxes/withholing/Information/13001.htm) | 2026-11-16 | First-payment timing, payer submission, domestic deduction/refund, LOB attachment/residence evidence and transparent-entity documentation. |
+| Japanese official form list | [Official source](https://www.nta.go.jp/english/taxes/withholing/tax_convention.htm) | 2026-11-16 | Forms 1-3, 11 and 17 applicable to the stated income/LOB routes; not an undifferentiated Forms 1-7 instruction. |
+| Canadian NR301 | [Official source](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/nr301.html) | 2026-11-16 | Official form identity and non-resident treaty-eligibility declaration; landing page only. |
+| Canadian NR302 | [Official source](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/nr302.html) | 2026-11-16 | Official form identity and partnership declaration; landing page only. |
+| Swiss UK refund forms | [Official source](https://www.estv.admin.ch/fr/royaume-uni) | 2026-11-16 | Official web-extractor body, UK form 86 and supplementary 86a/86b listing. Ordinary local transport failed; no raw successful HTML-download claim. |
+| Swiss refund deadlines | [Official source](https://www.estv.admin.ch/fr/delais-de-prescription-remboursement-de-impot-anticipe) | 2026-11-16 | Official web-extractor body, LIA32/LECF27 three-year initial forfeiture limit and reserved exceptions; distinguished from later relative prescription. |
+| UAE withholding FAQ | [Official source](https://tax.gov.ae/en/faq.aspx?keyword=Does+the+UAE+CT+regime+have+withholding+tax) | 2026-11-16 | Actual withholding FAQ answer: 0% for relevant UAE-source payments to non-residents; no withholding registration at that rate. Not a corporate-tax computation. |
+| OECD MLI status dated 12 November 2026 | [Official source](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-signatories-and-parties.pdf) | 2026-11-16 | Reused coordinator's completed limited official-body read: Italy signature, blank deposit and entry columns; UK party status. Arbitration-profile date is not ratification. No pair matching inferred from status alone. |
+| Australian procedure access attempt | [ATO](https://www.ato.gov.au/individuals-and-families/investments-and-assets/foreign-resident-investments/interest-unfranked-dividends-and-royalties) | Not read; attempted 2026-11-16 | Ordinary raw and web-extractor access returned 403. No bypass; treaty law remains independently read. |
+
+**Not yet confirmed:** The following retained historical assertions are **non-usable** for a payment, filing or eligibility decision. They do not replace the verified treaty rows above.
+
+- **US domestic shorthand:** the former portfolio-dividend assertion "US domestic rate 30% reduced" is retained as a specific non-usable historical claim. Its domestic payment class, recipient, base, exemptions and current scope were not established here; do not use 30% as a payment default. The conditional treaty ceiling is separately stated in the US corridor.
+
+- **Dutch domestic conditional withholding:** the old 25.8% for 2026 and 'UK not on the low-tax list, therefore unaffected' assertion has not been established here from operative domestic rules, including abuse conditions. Do not use either as a rate or exemption.
+- **Italian domestic shorthand:** the former dividends 26%, interest 26% and royalties 30% were not re-established with payer, recipient, base, exemptions and 2026 scope; none is a usable default.
+- **Canadian domestic shorthand:** the former blanket 25% on dividends/interest/royalties was not established for all those payments and exemptions; do not override verified treaty exemptions or assume every interest payment is chargeable.
+- **Indian domestic shorthand:** the former dividends 20%, interest 20% and royalties/FTS 10% were not established for the applicable Act, income year, recipient and surcharge/cess conditions. Do not use these figures as a payment computation.
+- **Singapore domestic shorthand:** the former no-dividend-withholding statement and interest 15%/royalties 10% were not independently established as domestic rules here. The verified bilateral ordinary-dividend exemption does not need that unconfirmed domestic assertion.
+- **Japanese domestic shorthand:** the former dividends/interest 15-20% and royalties 20% omit payment class and domestic additions; they are not usable gross rates here.
+- **UAE corporate-tax shorthand:** the former '9% introduced June 2023 with extensive exemptions' is not a corporate-tax computation verified by the withholding FAQ. It is not an input to these treaty caps.
+- **Swiss domestic shorthand:** the former blanket 35% dividend-withholding claim and its exact applicable exceptions were not established by the refund-form listing; do not use it as a default collection rate. The refund route and treaty ceilings are separately confirmed.
+- **Procedural overstatements:** a universally sufficient Australian UK CoR/no-standard-form/before-payment rule is held after the ATO access failure. A universal French 'CoR sufficient for services' rule and universal Indian/Canadian before-payment filing deadlines were not established by the sources read. Obtain the applicable source-state procedure before treating these as filing instructions.
+- **Historical and ancillary claims:** the former 'first in US treaty practice', exhaustive favourability/age rankings and Common Travel Area continuity assertion were not established by the tax sources read. None determines treaty residence, LOB or relief. No proposed treaty/protocol is used as operative law.
 
 ## Disclaimer
 
@@ -313,4 +375,4 @@ This skill and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-major-partners` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-major-partners. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-17. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-major-partners` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-major-partners. If neither is available, confirm every figure against the official source pages cited above before relying on it.
