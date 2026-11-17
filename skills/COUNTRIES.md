@@ -219,7 +219,7 @@ Owner: Ryan Duguid
 | [Botswana](botswana/) | Needs signature | 8 | 8 | 0 |
 | [Burkina Faso](burkina-faso/) | Needs writing | 12 | 12 | 0 |
 | [Burundi](burundi/) | Needs writing | 10 | 10 | 0 |
-| [Cameroon](cameroon/) | Needs writing | 7 | 4 | 0 |
+| [Cameroon](cameroon/) | Needs writing | 7 | 7 | 0 |
 | [Cape Verde](cape-verde/) | Needs writing | 6 | 6 | 0 |
 | [Chad](chad/) | Needs writing | 8 | 8 | 0 |
 | [Comoros](comoros/) | Needs writing | 4 | 4 | 0 |
