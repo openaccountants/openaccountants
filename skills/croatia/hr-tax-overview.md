@@ -5,13 +5,13 @@ jurisdiction: HR
 category: international
 tax_year: 2026
 last_updated: 2026-11-17
-version: 0.3
+version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 type: rates-card
 ---
 
-# Croatia Tax Overview v0.3
+# Croatia Tax Overview v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -33,23 +33,25 @@ Tax year 2026 (calendar year). Not yet approved: no accountant has signed this v
 | Item (tax year 2026) | Figure and conditions | Law | Source |
 |---|---|---|---|
 | Personal income tax band | Lower rate on the annual base up to EUR 60,000.00; higher rate on the part above EUR 60,000.00 | Income Tax Act (ZPD) art. 19 | https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3 |
-| Local rate ranges | Municipality lower 15% to 20%, higher 25% to 30%; town 15% to 21% and 25% to 31%; large town or county seat 15% to 22% and 25% to 32%; City of Zagreb 15% to 23% and 25% to 33%. The decision is published by the end of November and applies from 1 January of the next year | ZPD art. 19.a(2), (3) | same |
+| Local rate ranges | Municipality lower 15% to 20%, higher 25% to 30%; town 15% to 21% and 25% to 31%; large town or county seat 15% to 22% and 25% to 32%; City of Zagreb 15% to 23% and 25% to 33%. The decision is adopted by the end of November, published in Narodne novine and effective from 1 January of the next year; it continues until replaced | ZPD art. 19.a(2), (3) | same |
 | Default rates | 20% lower and 30% higher where the local unit made no decision in time | ZPD art. 19.a(5) | same |
 | Which unit's rates | The tax belongs to the local unit of the taxpayer's domicile or habitual abode | ZPD art. 1(2) | same |
 | Basic personal allowance | EUR 600.00 for each month of the tax year | ZPD art. 14(1) | same |
-| Dependants | Coefficient x EUR 600: close family member 0.5 (EUR 300.00), first child 0.5 (EUR 300.00), second child 0.7 (EUR 420.00), third child 1.0 (EUR 600.00), fourth child 1.4 (EUR 840.00) a month, rising for later children; a dependant's own income may not exceed six times the monthly allowance a year, EUR 3,600 (computed: 6 x EUR 600) | ZPD art. 14(3), 17(1) | same |
+| Dependants | Coefficient x EUR 600: close family member 0.5 (EUR 300.00), first child 0.5 (EUR 300.00), second child 0.7 (EUR 420.00), third child 1.0 (EUR 600.00), fourth child 1.4 (EUR 840.00) a month, rising for later children. Count taxable, non-taxable and non-income receipts after the art. 17(2) exclusions; the counted annual total may not exceed EUR 3,600 (computed: 6 x EUR 600). Exclusions include child benefit, specified social/parental support, family maintenance and listed education receipts; classify each receipt under art. 17(2) before rejecting a dependant | ZPD art. 14(3), 17(1), (2), (6), (7) | same |
 | Interest | 12% withheld by the payer | ZPD art. 70(1) | same |
 | Dividends and profit shares | 12% withheld | ZPD art. 70(19) | same |
-| Private use of company assets or services | 36% withheld | ZPD art. 70(2) | same |
+| Owner/member private withdrawals and services charged to current-period profit | 36% withheld on art. 66 hidden profit distributions; also covers withdrawals of profit-taxed sole traders and the art. 66(2) uncovered profit advance. An employee/director salary benefit is not automatically this capital-income category; classify it for payroll separately | ZPD art. 64, 66, 70(2) | same |
 | Profit tax | 10% where revenue in the tax period is up to EUR 1,000,000.00; 18% where it is above EUR 1,000,000.00 | Profit Tax Act art. 28 | https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dobit-redakcijski-procisceni-tekst/1641 |
 | Sole trader moved into profit tax | Receipts above EUR 1,000,000.00 in the previous period | Profit Tax Act art. 2(4) | same |
 | VAT standard rate | 25% | VAT Act art. 38(1) | https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dodanu-vrijednost/1651 |
 | VAT reduced rates | 13% (art. 38(3) list) and 5% (art. 38(2) list); the lists are in croatia-vat-return | VAT Act art. 38(2), (3) | same |
-| VAT small-business exemption | A business established in Croatia whose domestic turnover in the year was not above EUR 60,000.00 does not charge VAT; a business from another member state may use it if its Union turnover was not above EUR 100,000.00 and its Croatian supplies not above EUR 60,000.00 | VAT Act art. 90(1), (2) | same |
+| VAT small-business exemption | Croatian domestic statutory turnover not above EUR 60,000.00 in both the preceding and current calendar years, subject to art. 89.b exclusions and any binding regular-taxation election. A business established in another member state also needs Union turnover not above EUR 100,000.00 in both years, prior notification to its home state and the EX identification/confirmation that activates Croatian exemption. Current-year domestic/Union threshold crossing ends the relevant exemption at that moment; turnover is defined by arts. 89.a and 90(3), (4), not total cash receipts | VAT Act art. 89.b, 90(1)-(5), (9), 90.f(1)-(4), 90.h | same |
 | Pension contribution, Pillar I | 20% for a person only in Pillar I; 15% for a person also in Pillar II | Contributions Act art. 13(1) point 1 | https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-doprinosima-redakcijski-procisceni-tekst/3119 |
 | Pension contribution, Pillar II | 5% | Contributions Act art. 17(1) | same |
 | Health insurance contribution | 16.5% | Contributions Act art. 14(1) | same |
 | Lump-sum trade (paušalni obrt) | Income tax 12% on a deemed income set by bands, for a trade not in VAT with receipts not above the VAT registration amount | ZPD art. 82(1), (6) | https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3 |
+
+For the SME test, domestic/Union turnover is the annual value of supplies in the relevant territory, excluding VAT (VAT Act art. 89.a). Article 90(3) includes specified exempt supplies and non-ancillary property/financial/insurance transactions; art. 90(4) excludes disposals of tangible or intangible business assets. Do not substitute total business receipts. Cross-border exemption begins on the home state's notification of the identification number or confirmation after an updated notification, not merely on applying (art. 90(9)); route the notification, reporting and registration procedure through [croatia-vat-return](croatia-vat-return.md) against arts. 90.a to 90.f.
 
 ## Deadlines for 2026
 
@@ -100,7 +102,7 @@ expected:
 |---|---|---|
 | Zakon o porezu na dohodak, consolidated text NN 115/16 to 152/24 (Tax Administration register, node 3): art. 1, 3, 6, 7, 14, 17, 19, 19.a, 48, 50, 51, 54, 70, 82 read | https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3 | 2026-11-17 |
 | Zakon o porezu na dobit, consolidated text NN 177/04 to 151/25, in force from 1 January 2026 (node 1641): art. 2, 28, 29, 34, 35 read | https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dobit-redakcijski-procisceni-tekst/1641 | 2026-11-17 |
-| Zakon o porezu na dodanu vrijednost, consolidated text NN 73/13 to 48/26, in force from 9 May 2026 (node 1651): art. 38, 90 read | https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dodanu-vrijednost/1651 | 2026-11-17 |
+| Zakon o porezu na dodanu vrijednost, consolidated text NN 73/13 to 48/26, in force from 9 May 2026 (node 1651): art. 38 read; SME definitions, eligibility, notifications and commencement in arts. 89.a, 89.b, 90 to 90.i read for this correction | https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dodanu-vrijednost/1651 | 2026-11-17 |
 | Zakon o doprinosima, consolidated text NN 84/08 to 152/24 (node 3119): art. 13, 14, 17, 67, 71 read | https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-doprinosima-redakcijski-procisceni-tekst/3119 | 2026-11-17 |
 | Opći porezni zakon, consolidated text NN 115/16 to 151/25, in force from 1 January 2026 (node 3155): art. 4, 51 read | https://porezna-uprava.gov.hr/Propisi/Propis/opci-porezni-zakon-redakcijski-procisceni-tekst/3155 | 2026-11-17 |
 | Zakon o općem upravnom postupku, consolidated text NN 47/09, 110/21 (node 3162): art. 81 read | https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-opcem-upravnom-postupku-redakcijski-procisceni-tekst/3162 | 2026-11-17 |
