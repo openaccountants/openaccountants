@@ -5,7 +5,7 @@ jurisdiction: LV
 category: international
 tax_year: 2026
 last_updated: 2026-11-17
-version: 0.3
+version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
@@ -96,7 +96,7 @@ The ordinary domestic VAT registration threshold is EUR 50,000, computed under a
 | Small-capital SIA insolvent | Members jointly liable up to EUR 2,800 minus the capital the founders paid | KL art. 185.1(7)  [Official source](https://likumi.lv/ta/id/5490-komerclikums) |
 | AS or small-capital SIA wants to pay capital in kind before filing | Not allowed: the capital paid before filing must be money | KL art. 146(2)  [Official source](https://likumi.lv/ta/id/5490-komerclikums) |
 | Cash capital over EUR 50,000 | Payment service provider statement attached; KR4 confirmation is not enough | KL art. 149(3)(2), (4)  [Official source](https://likumi.lv/ta/id/5490-komerclikums) |
-| Natural person whose business stays under the IK thresholds | May trade as a registered self-employed person without becoming an IK | KL art. 75(1)-(2)  [Official source](https://likumi.lv/ta/id/5490-komerclikums) |
+| Natural person below the compulsory IK turnover/employee thresholds, whose activity is neither commercial agency nor brokerage and who has no other KL art. 75(1) trigger | May trade as a registered self-employed person without becoming an IK; voluntary IK registration remains available | KL art. 75(1)-(2)  [Official source](https://likumi.lv/ta/id/5490-komerclikums) |
 | SIA wants micro-enterprise tax | Not possible: only an IK, individual enterprise, farm or fishing household or registered individual | Micro-enterprise Tax Law art. 1(3)  [Official source](https://likumi.lv/ta/id/215302-mikrouznemumu-nodokla-likums) |
 
 ## Worked cases

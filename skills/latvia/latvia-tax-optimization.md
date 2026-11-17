@@ -1,7 +1,7 @@
 ---
 name: latvia-tax-optimization
 description: "Legal tax planning in Latvia for tax year 2026, for self-employed people and small companies. Covers the distributed-profits corporate income tax (0% on retained profit, 20% of the distribution divided by 0.8), the optional 15% rate with a 0.85 divisor plus 6% personal income tax for companies owned only by individuals, micro-enterprise tax at 25% of turnover and who may choose it, the self-employed (FIK) versus company (SIA) choice with 25.5% and 33% personal income tax and 31.07% social contributions, personal reliefs, and the deemed-distribution red lines. Trigger on: reduce tax Latvia, Latvia 0% retained profit, distributed profits tax, reinvested profit Latvia, micro-enterprise tax, mikrouzņēmuma nodoklis, FIK vs SIA, Latvia dividends, 15% dividend option, save tax Latvia, tax planning Latvia. Out of scope: computing the tax itself (latvia-income-tax, lv-corporate-income-tax, latvia-social-contributions, latvia-payroll, latvia-vat-return) and non-residents (lv-cross-border)."
-version: 0.3
+version: 0.4
 jurisdiction: LV
 tax_year: 2026
 last_updated: 2026-11-17
@@ -14,7 +14,7 @@ type: decision
 
 # Latvia Tax Optimization
 
-## Latvia Tax Optimization Skill v0.3
+## Latvia Tax Optimization Skill v0.4
 
 **Tier 2, built from the law; not yet approved. Figures for tax year 2026 come from the Latvian tax laws on likumi.lv and the State Revenue Service (VID) pages, read on 17 November 2026; the Sources table at the end lists them. They agree with `latvia-income-tax`, `lv-corporate-income-tax`, `latvia-social-contributions` and `latvia-payroll`; if they ever differ, those skills win. Not yet signed off by a Latvian tax adviser. Aggressive positions are never advised; every suggestion must be reviewed.**
 
@@ -124,8 +124,8 @@ The individual reliefs above apply only to eligible progressive-rate income, not
 | Dividend paid under the 15% option | The dividend exemption is switched off; 6% personal income tax withheld | PIT Law s. 9(3.9), 15(5.1); CIT Law art. 16(5)  [Official source](https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli) |
 | Micro-enterprise becomes or must become an ordinary VAT registrant, including a turnover excess beyond the EUR 5,000 tolerance | VAT registration under the VAT Law; micro status ends from the next tax year. The threshold is subject to art. 59(2), (3), (8)-(12); it is not a general exemption from cross-border registration | VAT Law art. 59(1), (4); Micro-enterprise Tax Law art. 4(8)  [Official source](https://likumi.lv/ta/id/215302-mikrouznemumu-nodokla-likums) |
 | Micro-enterprise registered under the special small-business VAT scheme | Keeps the micro status | Micro-enterprise Tax Law art. 4(10)  [Official source](https://likumi.lv/ta/id/215302-mikrouznemumu-nodokla-likums) |
-| No micro turnover for two tax years in a row | Status ends from the next tax year | Micro-enterprise Tax Law art. 4(8.1)  [Official source](https://likumi.lv/ta/id/215302-mikrouznemumu-nodokla-likums) |
-| Self-employed with no taxable business income in a later year | EUR 50 minimum tax by 23 June, unless contributions or wage tax were paid that year | PIT Law s. 19(2.1), (2.2)  [Official source](https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli) |
+| No micro turnover for consecutive tax periods | Status ends from the next tax period after two consecutive periods without turnover; for a taxpayer registered from the second quarter, the test is three consecutive periods without turnover, including the registration period | Micro-enterprise Tax Law art. 4(8.1), (8.2)  [Official source](https://likumi.lv/ta/id/215302-mikrouznemumu-nodokla-likums) |
+| Self-employed with no taxable business income in a later year | EUR 50 minimum tax by 23 June of the following year, subject to all s. 19(2.2)-(2.4) exclusions: qualifying employee PIT/social contributions or own self-employed contributions; the registration year and next year; the business-closure or completed-liquidation year; and a proportional exclusion for days caring for a child under two or days of incapacity, pregnancy or childbirth leave covered by sick note B | PIT Law s. 19(2.1)-(2.4)  [Official source](https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli) |
 | Total income above EUR 200,000 | 3% additional rate, counting exempt dividends too | PIT Law s. 15.1  [Official source](https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli) |
 
 ## Worked cases
