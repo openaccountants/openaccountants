@@ -1,29 +1,9 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2454,
+ "count": 2459,
  "publication_holds": [
   {
-   "name": "cameroon-social-contributions",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "cross-border-payroll-coordination",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "laos-vat",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "ne-payroll-social",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "ne-vat-gst",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "property-transfer-tax-matrix",
    "reason": "status: needs_sources"
   },
   {
@@ -3971,7 +3951,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "cameroon-social-contributions",
+   "jurisdiction": "CM",
+   "path": "skills/cameroon/cameroon-social-contributions.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "cameroon-transfer-pricing",
@@ -3989,7 +3978,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "can-a-foreigner-start-a-business-in-serbia",
@@ -4835,7 +4824,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "cross-border-payroll-coordination",
+   "jurisdiction": "INTL",
+   "path": "skills/global/cross-border/cross-border-payroll-coordination.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "cross-border-tax-router",
@@ -6824,7 +6822,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "eu-ioss-gb-sellers",
@@ -9587,7 +9585,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": null
   },
   {
    "name": "ifrs15-revenue",
@@ -10055,7 +10053,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "investment-funds-reits",
@@ -13349,7 +13347,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mozambique-payroll",
@@ -13358,7 +13356,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mozambique-social-contributions",
@@ -13367,7 +13365,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mozambique-vat",
@@ -13376,7 +13374,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mp-federal-payroll-taxes",
@@ -14420,7 +14418,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ne-corporate-tax",
@@ -14459,6 +14457,15 @@
    "tax_year": 2026
   },
   {
+   "name": "ne-payroll-social",
+   "jurisdiction": "NE",
+   "path": "skills/niger/ne-payroll-social.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "ne-sales-tax",
    "jurisdiction": "US-NE",
    "path": "skills/us/states/ne/ne-sales-tax.md",
@@ -14471,6 +14478,15 @@
    "name": "ne-tax-overview",
    "jurisdiction": "NE",
    "path": "skills/niger/ne-tax-overview.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "ne-vat-gst",
+   "jurisdiction": "NE",
+   "path": "skills/niger/ne-vat-gst.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -16283,7 +16299,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "peru-cross-border-tax",
@@ -16925,6 +16941,15 @@
    "tax_year": 2026
   },
   {
+   "name": "property-transfer-tax-matrix",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/cross-border/property-transfer-tax-matrix.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "pt-corporate-tax",
    "jurisdiction": "PT",
    "path": "skills/portugal/pt-corporate-tax.md",
@@ -17534,7 +17559,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "sage-integration",
@@ -18825,7 +18850,7 @@
   },
   {
    "name": "succession-and-forced-heirship-compared",
-   "jurisdiction": "general",
+   "jurisdiction": "GLOBAL",
    "path": "skills/global/cross-border/succession-and-forced-heirship-compared.md",
    "trust_label": null,
    "authored_by": null,
@@ -19752,7 +19777,7 @@
   },
   {
    "name": "trusts-vs-foundations-by-country",
-   "jurisdiction": "general",
+   "jurisdiction": "GLOBAL",
    "path": "skills/global/cross-border/trusts-vs-foundations-by-country.md",
    "trust_label": null,
    "authored_by": null,
