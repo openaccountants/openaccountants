@@ -7,12 +7,29 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/lt-company-formation"
   jurisdiction: "LT"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-17"
 ---
 
 # Lithuania Company Formation & Entity Choice
 
-## Entity types and incorporation in Lithuania
+## Scope
+
+Prepare an entity-choice and registration working paper for Lithuania in 2026. This covers UAB, AB, MB and IĮ formation; it does not determine a taxpayer's final corporate, VAT, payroll or personal tax. The legal and fee statements below reuse the completed 30 October source reads and separate review, including the enacted November amendment. No filing or payment authority follows.
+
+## Ask the client first
+
+Record the intended legal form and limited/unlimited liability, each founder's identity and capacity, whether an owner is an individual, subscribed capital and any premium, cash versus in-kind contributions, signature and filing route, planned income, related-entity ownership, VAT supplies and foreign purchases, financial year-end and any regulated activity. Obtain founding documents, valuations and payment evidence. Missing ownership, contribution or eligibility facts stop the relevant conclusion.
+
+## The method, step by step
+
+1. Compare the entity's liability and ownership conditions below; a lower registry fee does not determine the appropriate legal form.
+2. Build the founding-document and capital checklist. Compute the initial payment from both the per-founder minimum and the aggregate statutory capital floor; the examples assume one cash subscriber and no premium.
+3. Choose the actual online or paper service route, validate signature/notarial eligibility and evidence paid contributions and any valuation. Record registry, name and separate professional charges; do not invent an AB/notary fee.
+4. Check all registration conditions and the founding-meeting exception before treating the entity as registered. Preserve proof of the entry.
+5. Open a post-registration calendar using the applicable financial year-end and exact annual-account/meeting rules below. Refer detailed taxes to their sibling skills, carrying the small-company and linked-entity tests rather than assuming a formation grants a tax rate.
+6. Output the recommended route with reasons, required documents, capital/payment evidence, sourced fees, unresolved items and calendar. Withhold any unsupported filing, entitlement or cost conclusion.
+
+### Entity types and incorporation in Lithuania
 
 The most common business vehicle is the private limited liability company (uždaroji akcinė bendrovė, UAB). Every legal entity comes into existence on registration in the Register of Legal Entities (Juridinių asmenų registras), kept by the Centre of Registers (VĮ Registrų centras). Filing online with a qualified e-signature is the cheaper and faster route; paper documents must be certified by a notary or the Ministry of Justice. The figures below are in force in 2026.
 
@@ -29,26 +46,79 @@ The most common business vehicle is the private limited liability company (užda
 - **Registration timeline:** 1 working day for documents filed through the Centre of Registers self-service; 3 working days for paper documents. Bank account and document preparation time comes on top.  _(Centre of Registers service page: https://www.registrucentras.lt/lt/paslauga/juridinio-asmens-iregistravimas-kai-steigia-fizinis-asmuo)_
 - **Registration fees (2026):** UAB EUR 14.02 filed electronically, EUR 30.83 by post or at a customer office. IĮ EUR 13.08 electronically, EUR 21.12 on paper. MB EUR 17.13. Branch of a foreign company EUR 41.75. Name reservation (temporary entry of the name in the register) EUR 6.75. Notary fees, where a notary is used, are extra.  _(Centre of Registers price lists: https://www.registrucentras.lt/lt/paslauga/juridinio-asmens-iregistravimas-kai-steigia-fizinis-asmuo and https://www.registrucentras.lt/lt/paslauga/juridinio-asmens-pavadinimo-laikinas-rezervavimas)_
 - **Core annual compliance:** hold the ordinary general meeting within 5 months of the financial year end (this time limit applies to financial years ending on or after 1 July 2026). File the annual financial statements, with the management report, the audit report where an audit is required and the sustainability assurance report where sustainability reporting is required, with the Register of Legal Entities within 5 months of the year end. File the corporate income tax return by the 15th day of the 6th month after the tax period (15 June 2027 for calendar year 2026). Ongoing VAT, Sodra and payroll filings apply (see the sibling skills).  _(Law on Companies, art. 24(1), 58(3): https://www.e-tar.lt/portal/lt/legalAct/TAR.E22116F1B0E0/asr; Law on Corporate Income Tax, art. 51(2): https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr)_
-- **Corporate tax on a new small company:** a company with income of no more than EUR 300,000 in the period pays 0% on taxable profit for its first and second tax periods if its owners are only individuals, and 7% after that; the standard rate is 17%. Conditions and the linked-entity test are in lt-corporate-income-tax.  _(Law on Corporate Income Tax, art. 5(1)(1), 5(2): https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr)_
+- **Corporate tax on a new small company:** the standard rate is 17%. The conditional small-company route is 0% for the first and second tax periods and 7% after that where period income does not exceed EUR 300,000. The 0% route requires individual owners and no suspension, liquidation, reorganisation or share transfer to new owners during the specified 3 consecutive periods including the first 2. The statutory linked-entity test can remove both reduced rates when combined period income exceeds EUR 300,000; formation alone does not grant relief. Apply the complete conditions in lt-corporate-income-tax.  _(Law on Corporate Income Tax, art. 5(1)(1), 5(2): https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr)_
 - **VAT registration on formation:** a business need not charge VAT while its supplies were no more than EUR 45,000 in the previous calendar year and are not expected to pass it in the current year. Once the limit is passed, VAT is charged from the month in which it was passed. (The earlier version of this skill said "in 12 months"; the law tests the calendar year.) Voluntary registration is allowed earlier, and buying services from foreign suppliers can force registration below the limit (see lithuania-vat-return).  _(Law on VAT, art. 71(2): https://www.e-tar.lt/portal/lt/legalAct/TAR.ED68997709F5/asr)_
 - **Law change from 1 November 2026:** Law No. XV-1045 amends the Law on Companies from 1 November 2026. It does not amend art. 2 (minimum capital). In art. 8 it changes only part 10 (the register keeper is renamed "registro duomenų tvarkytojas"). The restated art. 11 keeps the same list of registration conditions, and the restated art. 58(3) keeps the 5-month deadline for filing the annual accounts.  _(Law No. XV-1045 of 18 June 2026: https://www.e-tar.lt/portal/lt/legalAct/23b77982715d11f1b53dfa020e517810)_
 
+## Worked cases
+
+### Minimum-capital UAB: compare registry routes
+
+Assume one capable founder subscribes EUR 1,000 nominal capital, cash only, no premium, and qualifies for either filing route. A quarter of nominal is EUR 250, but the aggregate floor is EUR 1,000, so all EUR 1,000 must be paid initially. Optional name reservation plus registry fees are EUR 20.77 online versus EUR 37.58 on paper: an administrative-fee difference of EUR 16.81. These are derived figures from the Centre of Registers fees below; capital is separate from fees and not a tax deduction or overall set-up-cost estimate. Signature/notarial eligibility and professional charges must still be checked.
+
+```oa-check
+name: UAB minimum capital and registry route comparison
+inputs:
+  nominal: 1000
+  quarter: 0.25
+  legal_floor: 1000
+  electronic_fee: 14.02
+  paper_fee: 30.83
+  name_fee: 6.75
+steps:
+  - quarter_nominal: nominal * quarter
+  - initial_cash: max(quarter_nominal, legal_floor)
+  - online_charges: electronic_fee + name_fee
+  - paper_charges: paper_fee + name_fee
+  - difference: paper_charges - online_charges
+expected:
+  quarter_nominal: 250
+  initial_cash: 1000
+  online_charges: 20.77
+  paper_charges: 37.58
+  difference: 16.81
+```
+
+### Higher subscription: the quarter test exceeds the capital floor
+
+Assume the same one-founder cash UAB instead subscribes EUR 12,000 nominal, with no premium. The per-founder quarter is EUR 3,000, greater than the EUR 1,000 aggregate floor: initial cash is EUR 3,000 and EUR 9,000 remains. The remainder is due within the founding agreement's period, never more than 12 months from signing. This is a derived payment schedule, not permission to spend the accumulation account before registration or to bypass valuation for a different in-kind case.
+
+```oa-check
+name: UAB higher cash subscription
+inputs:
+  nominal: 12000
+  quarter: 0.25
+  legal_floor: 1000
+steps:
+  - quarter_nominal: nominal * quarter
+  - initial_cash: max(quarter_nominal, legal_floor)
+  - remaining: nominal - initial_cash
+expected:
+  quarter_nominal: 3000
+  initial_cash: 3000
+  remaining: 9000
+```
+
+## When to refuse or refer
+
+Do not submit documents or release an accumulation account without registration/payment evidence. Refer disputed liability, regulated/public offers, foreign-founder eligibility, in-kind valuation and unusual corporate-body arrangements to the appropriate specialist. Missing tax eligibility facts, unsupported fees or the unconfirmed historical-year meeting rule cannot be replaced by a standard assumption.
+
 ## Sources
 
-| Source | URL | Read on |
+| Source / Read for | URL | Read on |
 |---|---|---|
-| Law on Companies (Akcinių bendrovių įstatymas) No. VIII-1835, consolidated version in force 2026-07-01 to 2026-10-31: art. 2, 3, 7, 8, 10, 11, 24, 58 | https://www.e-tar.lt/portal/lt/legalAct/TAR.E22116F1B0E0/asr | 2026-10-30 |
-| Law No. XV-1045 amending the Law on Companies, in force 2026-11-01 | https://www.e-tar.lt/portal/lt/legalAct/23b77982715d11f1b53dfa020e517810 | 2026-10-30 |
-| Law on Small Partnerships (Mažųjų bendrijų įstatymas) No. XI-2159, consolidated version in force from 2026-01-01: art. 2, 3 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A1FD809510BB/asr | 2026-10-30 |
-| Law on Individual Enterprises (Individualių įmonių įstatymas) No. IX-1805, consolidated version in force from 2024-09-01: art. 2, 3 | https://www.e-tar.lt/portal/lt/legalAct/TAR.FAB13F21783F/asr | 2026-10-30 |
-| Law on Corporate Income Tax (PMĮ) No. IX-675, consolidated version in force 2026-05-19 to 2026-12-31: art. 5, 51 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr | 2026-10-30 |
-| Law on Value Added Tax (PVMĮ) No. IX-751, consolidated version in force 2026-07-01 to 2026-12-31: art. 71 | https://www.e-tar.lt/portal/lt/legalAct/TAR.ED68997709F5/asr | 2026-10-30 |
-| Law on Personal Income Tax (GPMĮ) No. IX-1007, consolidated version in force 2026-06-11 to 2026-12-31: art. 6(8), 18-2 | https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr | 2026-10-30 |
-| Centre of Registers: registering a legal entity (individual founders), steps, timing and price list | https://www.registrucentras.lt/lt/paslauga/juridinio-asmens-iregistravimas-kai-steigia-fizinis-asmuo | 2026-10-30 |
-| Centre of Registers: temporary name reservation, price list | https://www.registrucentras.lt/lt/paslauga/juridinio-asmens-pavadinimo-laikinas-rezervavimas | 2026-10-30 |
+| Read for Law on Companies (Akcinių bendrovių įstatymas) No. VIII-1835, consolidated version in force 2026-07-01 to 2026-10-31: art. 2, 3, 7, 8, 10, 11, 24, 58 | https://www.e-tar.lt/portal/lt/legalAct/TAR.E22116F1B0E0/asr | 2026-10-30 |
+| Read for Law No. XV-1045 amending the Law on Companies, in force 2026-11-01 | https://www.e-tar.lt/portal/lt/legalAct/23b77982715d11f1b53dfa020e517810 | 2026-10-30 |
+| Read for Law on Small Partnerships (Mažųjų bendrijų įstatymas) No. XI-2159, consolidated version in force from 2026-01-01: art. 2, 3 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A1FD809510BB/asr | 2026-10-30 |
+| Read for Law on Individual Enterprises (Individualių įmonių įstatymas) No. IX-1805, consolidated version in force from 2024-09-01: art. 2, 3 | https://www.e-tar.lt/portal/lt/legalAct/TAR.FAB13F21783F/asr | 2026-10-30 |
+| Read for Law on Corporate Income Tax (PMĮ) No. IX-675, consolidated version in force 2026-05-19 to 2026-12-31: art. 5, 51 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr | 2026-10-30 |
+| Read for Law on Value Added Tax (PVMĮ) No. IX-751, consolidated version in force 2026-07-01 to 2026-12-31: art. 71 | https://www.e-tar.lt/portal/lt/legalAct/TAR.ED68997709F5/asr | 2026-10-30 |
+| Read for Law on Personal Income Tax (GPMĮ) No. IX-1007, consolidated version in force 2026-06-11 to 2026-12-31: art. 6(8), 18-2 | https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr | 2026-10-30 |
+| Read for Centre of Registers: registering a legal entity (individual founders), steps, timing and price list | https://www.registrucentras.lt/lt/paslauga/juridinio-asmens-iregistravimas-kai-steigia-fizinis-asmuo | 2026-10-30 |
+| Read for Centre of Registers: temporary name reservation, price list | https://www.registrucentras.lt/lt/paslauga/juridinio-asmens-pavadinimo-laikinas-rezervavimas | 2026-10-30 |
 
 Not yet confirmed: the Centre of Registers fee for registering an AB (not on the price list read); notary fees; the general-meeting time limit for financial years that ended before 1 July 2026; the "about 1-3 weeks overall" set-up time in the earlier version of this skill (no official source).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lt-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lt-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-17. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lt-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lt-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
