@@ -17,7 +17,7 @@
     "code": "AG",
     "name": "Antigua And Barbuda",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/antigua-and-barbuda"
   },
   {
@@ -52,7 +52,7 @@
     "code": "AR",
     "name": "Argentina",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/argentina"
   },
   {
@@ -80,7 +80,7 @@
     "code": "AW",
     "name": "Aruba",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/aruba"
   },
   {
@@ -108,7 +108,7 @@
     "code": "BB",
     "name": "Barbados",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/barbados"
   },
   {
@@ -164,14 +164,14 @@
     "code": "BL",
     "name": "Saint Barthelemy",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/saint-barthelemy"
   },
   {
     "code": "BM",
     "name": "Bermuda",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/bermuda"
   },
   {
@@ -185,7 +185,7 @@
     "code": "BO",
     "name": "Bolivia",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/bolivia"
   },
   {
@@ -199,14 +199,14 @@
     "code": "BR",
     "name": "Brazil",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/brazil"
   },
   {
     "code": "BS",
     "name": "Bahamas",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/bahamas"
   },
   {
@@ -227,21 +227,21 @@
     "code": "BZ",
     "name": "Belize",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/belize"
   },
   {
     "code": "CA",
     "name": "Canada",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/canada"
   },
   {
     "code": "CA-AB",
     "name": "Alberta (Canada)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/canada/alberta"
   },
   {
@@ -283,7 +283,7 @@
     "code": "CL",
     "name": "Chile",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/chile"
   },
   {
@@ -304,14 +304,14 @@
     "code": "CO",
     "name": "Colombia",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/colombia"
   },
   {
     "code": "CR",
     "name": "Costa Rica",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/costa-rica"
   },
   {
@@ -325,7 +325,7 @@
     "code": "CW",
     "name": "Cura Ao",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/curacao"
   },
   {
@@ -374,28 +374,28 @@
     "code": "DM",
     "name": "Dominica",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/dominica"
   },
   {
     "code": "DO",
     "name": "Dominican Republic",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/dominican-republic"
   },
   {
     "code": "DZ",
     "name": "Algeria",
     "region": "africa",
-    "owner": "ryan",
+    "owner": "michael",
     "dir": "skills/algeria"
   },
   {
     "code": "EC",
     "name": "Ecuador",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/ecuador"
   },
   {
@@ -451,7 +451,7 @@
     "code": "FK",
     "name": "Falkland Islands",
     "region": "americas",
-    "owner": "open",
+    "owner": "michael",
     "dir": "skills/falkland-islands"
   },
   {
@@ -493,7 +493,7 @@
     "code": "GD",
     "name": "Grenada",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/grenada"
   },
   {
@@ -507,7 +507,7 @@
     "code": "GF",
     "name": "French Guiana",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/french-guiana"
   },
   {
@@ -535,7 +535,7 @@
     "code": "GL",
     "name": "Greenland",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/greenland"
   },
   {
@@ -556,7 +556,7 @@
     "code": "GP",
     "name": "Guadeloupe",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/guadeloupe"
   },
   {
@@ -577,14 +577,14 @@
     "code": "GT",
     "name": "Guatemala",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/guatemala"
   },
   {
     "code": "GY",
     "name": "Guyana",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/guyana"
   },
   {
@@ -605,7 +605,7 @@
     "code": "HN",
     "name": "Honduras",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/honduras"
   },
   {
@@ -689,7 +689,7 @@
     "code": "JM",
     "name": "Jamaica",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/jamaica"
   },
   {
@@ -745,7 +745,7 @@
     "code": "KN",
     "name": "Saint Kitts And Nevis",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/saint-kitts-and-nevis"
   },
   {
@@ -766,7 +766,7 @@
     "code": "KY",
     "name": "Cayman Islands",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/cayman-islands"
   },
   {
@@ -787,7 +787,7 @@
     "code": "LC",
     "name": "Saint Lucia",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/saint-lucia"
   },
   {
@@ -843,7 +843,7 @@
     "code": "MA",
     "name": "Morocco",
     "region": "africa",
-    "owner": "ryan",
+    "owner": "michael",
     "dir": "skills/morocco"
   },
   {
@@ -871,7 +871,7 @@
     "code": "MF",
     "name": "Saint Martin",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/saint-martin"
   },
   {
@@ -934,7 +934,7 @@
     "code": "MQ",
     "name": "Martinique",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/martinique"
   },
   {
@@ -948,7 +948,7 @@
     "code": "MS",
     "name": "Montserrat",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/montserrat"
   },
   {
@@ -983,7 +983,7 @@
     "code": "MX",
     "name": "Mexico",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/mexico"
   },
   {
@@ -1039,7 +1039,7 @@
     "code": "NI",
     "name": "Nicaragua",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/nicaragua"
   },
   {
@@ -1095,14 +1095,14 @@
     "code": "PA",
     "name": "Panama",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/panama"
   },
   {
     "code": "PE",
     "name": "Peru",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/peru"
   },
   {
@@ -1144,7 +1144,7 @@
     "code": "PM",
     "name": "Saint Pierre And Miquelon",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/saint-pierre-and-miquelon"
   },
   {
@@ -1158,7 +1158,7 @@
     "code": "PR",
     "name": "Puerto Rico",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/puerto-rico"
   },
   {
@@ -1179,7 +1179,7 @@
     "code": "PY",
     "name": "Paraguay",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/paraguay"
   },
   {
@@ -1305,7 +1305,7 @@
     "code": "SR",
     "name": "Suriname",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/suriname"
   },
   {
@@ -1319,14 +1319,14 @@
     "code": "SV",
     "name": "El Salvador",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/el-salvador"
   },
   {
     "code": "SX",
     "name": "Sint Maarten",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/sint-maarten"
   },
   {
@@ -1340,7 +1340,7 @@
     "code": "TC",
     "name": "Turks And Caicos",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/turks-and-caicos"
   },
   {
@@ -1389,7 +1389,7 @@
     "code": "TN",
     "name": "Tunisia",
     "region": "africa",
-    "owner": "ryan",
+    "owner": "michael",
     "dir": "skills/tunisia"
   },
   {
@@ -1410,7 +1410,7 @@
     "code": "TT",
     "name": "Trinidad And Tobago",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/trinidad-and-tobago"
   },
   {
@@ -1459,378 +1459,378 @@
     "code": "US",
     "name": "United States (federal)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/federal"
   },
   {
     "code": "US-AK",
     "name": "Alaska (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ak"
   },
   {
     "code": "US-AL",
     "name": "Alabama (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/al"
   },
   {
     "code": "US-AR",
     "name": "Arkansas (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ar"
   },
   {
     "code": "US-AZ",
     "name": "Arizona (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/az"
   },
   {
     "code": "US-CA",
     "name": "California (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ca"
   },
   {
     "code": "US-CO",
     "name": "Colorado (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/co"
   },
   {
     "code": "US-CT",
     "name": "Connecticut (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ct"
   },
   {
     "code": "US-DC",
     "name": "District of Columbia (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/dc"
   },
   {
     "code": "US-DE",
     "name": "Delaware (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/de"
   },
   {
     "code": "US-FL",
     "name": "Florida (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/fl"
   },
   {
     "code": "US-GA",
     "name": "Georgia (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ga"
   },
   {
     "code": "US-HI",
     "name": "Hawaii (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/hi"
   },
   {
     "code": "US-IA",
     "name": "Iowa (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ia"
   },
   {
     "code": "US-ID",
     "name": "Idaho (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/id"
   },
   {
     "code": "US-IL",
     "name": "Illinois (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/il"
   },
   {
     "code": "US-IN",
     "name": "Indiana (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/in"
   },
   {
     "code": "US-KS",
     "name": "Kansas (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ks"
   },
   {
     "code": "US-KY",
     "name": "Kentucky (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ky"
   },
   {
     "code": "US-LA",
     "name": "Louisiana (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/la"
   },
   {
     "code": "US-MA",
     "name": "Massachusetts (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ma"
   },
   {
     "code": "US-MD",
     "name": "Maryland (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/md"
   },
   {
     "code": "US-ME",
     "name": "Maine (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/me"
   },
   {
     "code": "US-MI",
     "name": "Michigan (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/mi"
   },
   {
     "code": "US-MN",
     "name": "Minnesota (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/mn"
   },
   {
     "code": "US-MO",
     "name": "Missouri (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/mo"
   },
   {
     "code": "US-MS",
     "name": "Mississippi (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ms"
   },
   {
     "code": "US-MT",
     "name": "Montana (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/mt"
   },
   {
     "code": "US-NC",
     "name": "North Carolina (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/nc"
   },
   {
     "code": "US-ND",
     "name": "North Dakota (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/nd"
   },
   {
     "code": "US-NE",
     "name": "Nebraska (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ne"
   },
   {
     "code": "US-NH",
     "name": "New Hampshire (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/nh"
   },
   {
     "code": "US-NJ",
     "name": "New Jersey (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/nj"
   },
   {
     "code": "US-NM",
     "name": "New Mexico (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/nm"
   },
   {
     "code": "US-NV",
     "name": "Nevada (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/nv"
   },
   {
     "code": "US-NY",
     "name": "New York (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ny"
   },
   {
     "code": "US-NY-NYC",
     "name": "New York City (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ny-nyc"
   },
   {
     "code": "US-OH",
     "name": "Ohio (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/oh"
   },
   {
     "code": "US-OK",
     "name": "Oklahoma (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ok"
   },
   {
     "code": "US-OR",
     "name": "Oregon (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/or"
   },
   {
     "code": "US-PA",
     "name": "Pennsylvania (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/pa"
   },
   {
     "code": "US-RI",
     "name": "Rhode Island (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ri"
   },
   {
     "code": "US-SC",
     "name": "South Carolina (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/sc"
   },
   {
     "code": "US-SD",
     "name": "South Dakota (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/sd"
   },
   {
     "code": "US-TN",
     "name": "Tennessee (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/tn"
   },
   {
     "code": "US-TX",
     "name": "Texas (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/tx"
   },
   {
     "code": "US-UT",
     "name": "Utah (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/ut"
   },
   {
     "code": "US-VA",
     "name": "Virginia (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/va"
   },
   {
     "code": "US-VT",
     "name": "Vermont (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/vt"
   },
   {
     "code": "US-WA",
     "name": "Washington (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/wa"
   },
   {
     "code": "US-WI",
     "name": "Wisconsin (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/wi"
   },
   {
     "code": "US-WV",
     "name": "West Virginia (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/wv"
   },
   {
     "code": "US-WY",
     "name": "Wyoming (US)",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us/states/wy"
   },
   {
     "code": "UY",
     "name": "Uruguay",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/uruguay"
   },
   {
@@ -1851,21 +1851,21 @@
     "code": "VC",
     "name": "Saint Vincent And The Grenadines",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/saint-vincent-and-the-grenadines"
   },
   {
     "code": "VG",
     "name": "British Virgin Islands",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/british-virgin-islands"
   },
   {
     "code": "VI",
     "name": "Us Virgin Islands",
     "region": "americas",
-    "owner": "jeff",
+    "owner": "michael",
     "dir": "skills/us-virgin-islands"
   },
   {
