@@ -1,14 +1,13 @@
 ---
 name: cross-border-payroll-coordination
 description: "Coordinate cross-border employment tax, payroll collection, social security, contractor status and equity awards using actual treaty conditions, 2026 EU application dates, preserved cases and explicit national limits."
-version: 1.1
+version: 1.2
 jurisdiction: INTL
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-17
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: tax
 type: situation-rules
 ---
