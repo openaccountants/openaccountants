@@ -1,0 +1,41 @@
+name: Publish status.json
+
+# One file the admin control room reads: per jurisdiction, skills, at the 2026 standard,
+# approved, missing tax areas, owner. Published as an asset on the "status" release so the
+# site can read it without a token and without a commit to main every day.
+on:
+  schedule:
+    - cron: "15 5 * * *"
+  push:
+    branches: [main]
+    paths: ["skills/**", "scripts/data/jurisdictions.json", "scripts/coverage-report.py"]
+  workflow_dispatch:
+
+concurrency:
+  group: status-json
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Install validation dependencies
+        run: python3 -m pip install -r scripts/requirements-validation.txt
+      - name: Build status.json
+        run: python3 scripts/coverage-report.py --json > status.json
+      - name: Upload to the status release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh release view status -R "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release create status -R "$GITHUB_REPOSITORY" --title "Repository status (machine-readable)" \
+              --notes "status.json is rebuilt daily and on every skills change. Not a software release." --latest=false
+          fi
+          gh release upload status status.json -R "$GITHUB_REPOSITORY" --clobber
