@@ -1,208 +1,373 @@
 ---
 name: saf-t-realtime-ereporting-matrix
 description: "Use this skill whenever a tax preparer, ERP implementer, or e-invoicing project asks about country mandates for SAF-T (Standard Audit File for Tax), real-time invoice reporting, or e-receipt clearance. Trigger on phrases like \"SAF-T\", \"Standard Audit File\", \"SAF-T Poland\", \"SAF-T Portugal\", \"SAF-T Romania\", \"JPK\", \"SAF-T Norway\", \"real-time invoice reporting\", \"SII Spain\", \"RTIR Hungary\", \"KSeF Poland\", \"SDI Italy\", \"NF-e Brazil\", \"CFDI Mexico\", \"e-Fatura Turkey\", \"e-fapiao\", \"Peppol BIS\", \"ViDA\", \"DRR digital reporting requirements\", \"EN 16931\", \"structured invoice\", \"XRechnung\", \"Factur-X\", or any request to determine whether a country mandates SAF-T submission or real-time / near-real-time invoice transmission. Maps the mandate scope, file format, transmission method, threshold triggers, deadline, and penalty for 40+ countries. Does NOT cover: country-specific VAT rate determination (see country VAT skills); e-archiving requirements beyond minimums; structured invoice content beyond format references; software-vendor accreditation procedures. ALWAYS read this skill before scoping an e-invoicing or SAF-T implementation."
-version: 0.1
+version: 2.0
 jurisdiction: GLOBAL
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-16
 depends_on:
   - cross-border-workflow-base
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+source_checked: 2026-11-16
+type: cross-country-method
 ---
 
 # Saf T Realtime Ereporting Matrix
 
-## SAF-T and Real-Time E-Reporting Matrix v0.1
+## Quick reference
 
-## What this file is
+This Guide loads on `cross-border-workflow-base`. Use it to scope SAF-T, invoice issuance and transactional reporting separately, as of **16 November 2026**. It replaces the former calendar-2025/mid-2025 snapshot. A matrix row is a scope decision, not production software accreditation or a filing-ready schema.
 
-**This file is a content skill that loads on top of `cross-border-workflow-base`.** It maps the global landscape of digital invoice and ledger reporting mandates as of mid-2025.
+| Decision | Current position and boundary |
 
-**Tax year coverage.** Current for **calendar 2025**, reflecting:
-- The EU's **VAT in the Digital Age (ViDA)** package as politically agreed and published in Council Directive (EU) 2025/516 (with key Digital Reporting Requirements taking effect 1 July 2030 — earlier optional date 1 January 2027 for member states that wish to mandate)
-- **Germany e-invoicing** mandatory receipt phase from 1 January 2025 (B2B receipt) and outbound phase from 1 January 2027 / 2028 (size-based)
-- **France e-invoicing reform** rescheduled to begin September 2026 (receipt) / September 2027 (issue for SMEs)
-- **Belgium e-invoicing** mandatory B2B from 1 January 2026
-- **Poland KSeF** delayed; latest schedule has voluntary continuation through 2025 and mandatory 1 February 2026 for large taxpayers, 1 April 2026 for others
-- **Spain Veri*Factu / Verifactu** for non-SII taxpayers in force from 1 January 2026
-- **Romania e-Factura** B2B mandatory since 1 July 2024
-- **Greece myDATA** B2B fully effective since 2024
-- **Saudi Arabia ZATCA Fatoorah Phase 2** waves continuing rolling enrolment
-- **Israel "Form Mandate"** for invoice clearance > ILS 5,000 in force since 5 May 2024 (threshold lowering 2025)
-
-**The reviewer is the customer of this output.** E-reporting mandates carry steep penalties and ERP-blocking consequences. Every output must be reviewed by a credentialed e-invoicing / VAT specialist before any go-live decision.
-
-## Section 1 — Scope statement
-
-This skill covers:
-
-- **SAF-T mandates** (Standard Audit File for Tax — OECD-aligned XML extract on demand or periodic)
-- **Real-time / near-real-time invoice transmission** — clearance models (Italy SDI), pre-clearance models (Hungary RTIR), reporting models (Spain SII), centralised platform models (Poland KSeF, France PPF, Belgium PEPPOL)
-- **CTC (Continuous Transaction Controls)** taxonomies — clearance, reporting, hybrid, decentralised
-- **EU ViDA** alignment: by 2030 all intra-EU B2B invoices must be structured EN 16931 and digital reporting requirements (DRR) replace recapitulative statements
-
-This skill does NOT cover:
-
-- **VAT rate determination** (see country `*-vat-return.md` skills)
-- **B2C e-receipt mandates** (Greek myDATA B2C, Italian corrispettivi telematici) unless overlapping with the B2B system
-- **Software accreditation** procedures with national tax authorities
-- **Detailed XSD schema field-level mapping** beyond format and core blocks
-- **E-archiving retention beyond the minimum**
-
-## Section 2 — SAF-T matrix
-
-**SAF-T matrix**  _(Section 2 — SAF-T matrix)_
-
-| Country | Status | Trigger | Frequency | Source |
-| --- | --- | --- | --- | --- |
-| **Portugal** | Mandatory since 2008; expanded to invoicing 2013 | All entities with accounting obligations; threshold-based for invoicing module | Monthly transmission of invoicing SAF-T-PT; annual accounting SAF-T-PT | Decreto-Lei 28/2019; Portaria 302/2016 |
-| **Poland — JPK_V7M / V7K** | Mandatory monthly/quarterly for all VAT-registered taxpayers since 2020 | All VAT taxpayers | Monthly (V7M) or quarterly (V7K) | Ustawa o VAT art. 99 ust. 11c; Rozporządzenie MF 2019 |
-| **Poland — JPK_KR (general ledger)** | On-demand for all VAT taxpayers; mandatory periodic submission starting 2025–2026 for large taxpayers | Large taxpayers (revenue > EUR 50m); broader scope phased | Phased; periodic from 2025 | Ordynacja Podatkowa art. 193a |
-| **Romania — D406 (SAF-T)** | Mandatory since 1 Jan 2022 for large taxpayers; 1 Jan 2023 medium; 1 Jan 2025 small | All taxpayers (final phase 2025) | Monthly | OMFP 1783/2021 |
-| **Norway — SAF-T Financial** | Mandatory on demand since 1 Jan 2020 for entities with > NOK 5m revenue or > 600 vouchers | Trigger-based on tax authority request | On demand only | Skatteforvaltningsforskriften §7-3-7 |
-| **Lithuania — i.SAF + i.MAS** | Mandatory since 2016 i.SAF (sales/purchase journals) for VAT taxpayers; i.MAS for transport data | All VAT-registered businesses | Monthly | Law on Tax Administration art. 42 |
-| **Luxembourg — FAIA** | On demand for entities subject to Luxembourg Commercial Law accounting; FAIA is the local SAF-T variant | All commercial-law entities on request | On demand | Loi du 19 décembre 2008 |
-| **France — FEC** | Mandatory on tax audit since 2014; not periodic | Audited entities | On audit | CGI Art. L47 A I; LPF |
-| **Hungary — SAF-T Online (NAV)** | Voluntary now; mandatory tooling rollout 2025-2026 | Initially large taxpayers | Periodic upon mandate | Hungarian Tax Authority guidelines |
-| **Austria — SAF-T (Datenträger)** | On demand during tax audits | Audited entities | On audit | BAO §131-132 |
-| **Spain — TicketBAI (Basque)** | Mandatory in Basque Country since 2022 (phased entity-size) — region-specific | All entities in Basque Country | Real-time per invoice (CTC overlay) | Norma Foral 4/2020 (Bizkaia), parallel in Gipuzkoa/Álava |
-| **Mexico — Pólizas / Catálogo de Cuentas** | Monthly upload of journal entries linked to electronic invoices since 2015 | All taxpayers with accounting obligations | Monthly | Artículo 28 fracción IV CFF |
-| **Angola — SAF-T (AO)** | Mandatory since 2019 for VAT taxpayers | All VAT taxpayers | Monthly | Decreto Presidencial 312/18 |
-| **Cape Verde — SAF-T (CV)** | Mandatory since 2017 | VAT taxpayers | Monthly | Decreto-Lei 41/2017 |
-
-## Section 3 — Real-time / clearance e-invoice matrix
-
-**Real-time / clearance e-invoice matrix**  _(Section 3 — Real-time / clearance e-invoice matrix)_
-
-| Country | Mandate | Effective date | Model | Format | Transmission |
-| --- | --- | --- | --- | --- | --- |
-| **Italy — SDI** | All B2B and B2C since 2019 (residents); cross-border via Esterometro merged into SDI 2022 | Live | Pre-clearance | FatturaPA XML | SDI portal (centralised) |
-| **France — PPF + PDP** | Mandatory receipt 1 Sep 2026; outbound staged Sep 2026–Sep 2027 | 2026–2027 | Centralised + accredited PDPs | Factur-X (XML-PDF hybrid), Peppol BIS, UBL | PPF (Portail Public de Facturation) or via PDP |
-| **Germany — XRechnung / B2G + ZUGFeRD / B2B** | B2B receipt mandatory 1 Jan 2025; issue mandatory 1 Jan 2027 (large), 1 Jan 2028 (others) | 2025–2028 | Pre-issue structured invoice (no central clearance) | XRechnung / ZUGFeRD / Factur-X / EN 16931-compliant | Direct (any agreed channel) — clearance NOT centralised |
-| **Spain — SII** | Real-time near-time reporting since 2017 for ≥ EUR 6m turnover, voluntary for smaller | Live | Reporting (post-issue within 4 days) | XML JSON web service | AEAT web service |
-| **Spain — Verifactu / Veri*Factu** | All non-SII VAT taxpayers from 1 Jan 2026 (corporates) / 1 Jul 2026 (others) | 2026 | Post-issue reporting (transactional) | Verifactu XML | AEAT |
-| **Poland — KSeF** | Mandatory 1 Feb 2026 (large), 1 Apr 2026 (others) | 2026 | Pre-clearance | KSeF XML (FA(2)) | KSeF central platform |
-| **Belgium** | B2B mandatory 1 Jan 2026 | 2026 | Decentralised via Peppol BIS | Peppol BIS / EN 16931 | Peppol-network |
-| **Romania — e-Factura** | B2B mandatory since 1 Jul 2024 | Live | Pre-clearance | RO_CIUS_EN16931 | RO e-Factura portal (SPV) |
-| **Greece — myDATA** | Fully effective since 2024 for B2B + B2C | Live | Reporting (real-time/near-real-time) | myDATA XML | AADE portal |
-| **Hungary — RTIR (Online Számla)** | All B2B since 2018; B2C from 1 Jan 2021 | Live | Reporting near-real-time | NAV XML schema | NAV portal |
-| **Portugal — ATCUD / QR code + SAF-T** | ATCUD/QR mandatory since 2023; SAF-T invoicing monthly | Live | Pre-issue ATCUD + post-issue SAF-T | SAF-T-PT XML | Authority on demand + monthly SAF-T |
-| **Bulgaria** | SAF-T schedule TBD; VAT one-step return | Pending | TBD | TBD | TBD |
-| **Croatia — Fiskalizacija** | All B2C since 2013; B2B coming in line with ViDA | Live (B2C); B2B in development | Pre-issue clearance (B2C) | Croatian fiscalisation XML | Porezna uprava |
-| **Slovakia** | E-invoicing reform pending; 2026 target | 2026 (proposed) | TBD | TBD | TBD |
-| **Czech Republic** | E-invoicing reform pending; 2027 target | 2027 (proposed) | TBD | TBD | TBD |
-| **United Kingdom** | No B2B e-invoicing mandate as of 2025; consultation issued 2025 | Consultation | TBD | TBD | TBD |
-| **Ireland** | No mandate as of 2025; consultation in progress | Consultation | TBD | TBD | TBD |
-| **Norway — EHF** | Mandatory B2G since 2019; B2B voluntary | Live (B2G) | Decentralised | Peppol BIS / EHF | Peppol |
-| **Denmark — OIOUBL / Peppol** | Mandatory B2G; B2B from 2026 (digital bookkeeping act) | 2026 (B2B) | Decentralised | Peppol BIS | Peppol |
-| **Sweden** | Mandatory B2G since 2019; B2B in consultation | Live B2G | Decentralised | Peppol BIS | Peppol |
-| **Finland** | Buyer can request e-invoice since 2020 (right to receive) | Live (right-to-receive) | Decentralised | Finvoice / Peppol | Various |
-
-### Asia, Middle East, Latin America
-
-**Asia, Middle East, Latin America matrix**  _(Asia, Middle East, Latin America)_
-
-| Country | Mandate | Effective | Model | Format | Transmission |
-| --- | --- | --- | --- | --- | --- |
-| **Saudi Arabia — Fatoorah** | All VAT-registered; Phase 1 (Dec 2021) + Phase 2 integration in waves (Jan 2023 onwards) | Live (waves) | Pre-clearance (Phase 2) | XML / hybrid PDF/A-3 | ZATCA Fatoora platform |
-| **UAE** | E-invoicing scheme planned 2026 | 2026 | TBD | EN 16931-aligned | TBD |
-| **Egypt — ETA** | Mandatory B2B since 2021 | Live | Pre-clearance | ETA XML / JSON | ETA portal |
-| **Turkey — e-Fatura / e-Arşiv Fatura** | All VAT taxpayers ≥ TRY 5m turnover; lower thresholds in specific sectors | Live | Pre-clearance | UBL-TR | GİB |
-| **Israel — Form Mandate / Hashbonit** | Invoices > ILS 5,000 require pre-clearance number since 5 May 2024 (threshold reduces 2025/2026) | Live | Pre-clearance | XML | ITA portal |
-| **Vietnam** | All VAT taxpayers since 1 Jul 2022 | Live | Pre-clearance / pre-issue | XML | GDT |
-| **India — IRP / GSTN** | All taxpayers ≥ INR 5 crore turnover since 1 Aug 2023 (threshold lowered from 10 crore) | Live | Pre-clearance (IRN generation) | IRP JSON | IRP portals (NIC, etc.) |
-| **Indonesia — e-Faktur** | All VAT taxpayers since 2016 | Live | Pre-clearance | XML | DGT portal |
-| **Philippines** | EIS (Electronic Invoicing System) for top 100 taxpayers since 2022; phased expansion | Phased | Reporting near-real-time | JSON | EIS portal |
-| **Mexico — CFDI 4.0** | All VAT taxpayers since 2014; CFDI 4.0 from 2022 | Live | Pre-clearance via PAC | XML CFDI 4.0 | PAC (private certified provider) → SAT |
-| **Chile — DTE** | All VAT taxpayers since 2018 | Live | Pre-clearance | XML | SII |
-| **Brazil — NF-e / NFS-e / NFC-e** | All taxpayers (NF-e since 2008 for goods; NFS-e municipal services; NFC-e consumer goods) | Live | Pre-clearance | XML | SEFAZ (state) / municipal |
-| **Argentina — Comprobantes Electrónicos** | All VAT taxpayers since 2015 | Live | Pre-clearance | XML / web service | AFIP |
-| **Colombia — Factura Electrónica DIAN** | All taxpayers phased 2018-2020 | Live | Pre-clearance | XML | DIAN |
-| **Peru — SEE Sunat** | Phased rollout completed 2024 for all taxpayers | Live | Pre-clearance | XML UBL 2.1 | SUNAT or accredited PSE |
-| **Ecuador — Comprobantes Electrónicos** | All taxpayers since 2018 | Live | Pre-clearance | XML | SRI |
-| **Uruguay — CFE** | All taxpayers since 2019 | Live | Pre-clearance | XML | DGI |
-
-## Section 4 — EU ViDA — Digital Reporting Requirements
-
-**[T1] Council Directive (EU) 2025/516 elements**  _(Council Directive (EU) 2025/516 amending Directive 2006/112/EC and Regulation (EU) 282/2011)_
-
-| Element | Date | Detail |
-| --- | --- | --- |
-| Optional national e-invoicing without Article 232 derogation | 1 January 2027 | Member States may mandate B2B e-invoicing without prior Council authorisation; ViDA-aligned format required |
-| Recapitulative statements abolished | 1 July 2030 | Replaced by Digital Reporting Requirements (DRR) |
-| Mandatory structured EU intra-Community e-invoice | 1 July 2030 | EN 16931-compliant; 10-day issuance deadline; transactional reporting to each Member State of supplier and customer |
-| Single EU VAT identification + OSS expansion | 1 July 2028 | Extension of OSS to B2C movements of own goods |
-| Platform economy deemed-supplier | 1 July 2028 (with optional 2030) | Short-term accommodation and passenger transport platforms become deemed supplier |
-
-- **[T2] EN 16931 alignment and pre-clearance prohibition** — Member States must align national e-invoicing systems with EN 16931 by 1 July 2030. Pre-clearance models that block invoice transmission are NOT permitted under ViDA (post-clearance reporting only). Italy's SDI and France's PPF have explicit transition paths.  _([T2])_
-
-## Section 5 — Decision flow
-
-### Step 1 — Determine taxpayer status in each jurisdiction
-
-- **Taxpayer status determination steps** — For each country where the taxpayer issues invoices to local customers OR receives invoices from local suppliers OR has VAT registration: 1. VAT-registered? → check the country's e-invoicing scope 2. Threshold-based exemption? → check turnover thresholds 3. Sector-specific carve-out? → check (e.g., Italian SDI exempts certain micro-businesses under EUR 65k revenue with forfettario regime; Spanish SII exempts < EUR 6m turnover)  _(Step 1 — Determine taxpayer status in each jurisdiction)_
-
-### Step 2 — Select format
-
-- **Format selection by jurisdiction** — - Cross-border within EU → Peppol BIS billing 3.0 or EN 16931-aligned XML - Italy → FatturaPA - France → Factur-X (hybrid PDF/A-3 + UBL or CII) OR Peppol BIS - Germany → XRechnung (B2G) / ZUGFeRD or Factur-X / EN 16931 (B2B) - Spain → Verifactu XML for SII / Verifactu - Poland → KSeF FA(2) XML - Saudi Arabia → ZATCA XML or PDF/A-3 with embedded XML - LATAM → country-specific (CFDI Mexico, DTE Chile, etc.)  _(Step 2 — Select format)_
-
-### Step 3 — Select transmission channel
-
-- **Transmission channel selection** — - Centralised → Italy SDI, Poland KSeF, France PPF, Romania SPV, Spain Verifactu/SII web service - Decentralised via Peppol → Belgium, Norway, Denmark, Sweden, EU intra-Community by 2030 - Direct B2B without clearance → Germany B2B - LATAM PAC/PSE intermediaries → Mexico, Brazil, Peru, Chile  _(Step 3 — Select transmission channel)_
-
-### Step 4 — Plot deadlines and penalties
-
-**Typical penalty by country**  _(Step 4 — Plot deadlines and penalties)_
-
-| Country | Typical penalty |
 | --- | --- |
-| Italy SDI | EUR 250–2,000 per non-compliant invoice; deductibility disallowed |
-| Poland KSeF | Up to 100% of VAT shown on non-compliant invoice (initial 6-month grace) |
-| Germany B2B | Loss of input VAT recovery for non-EN-16931 invoice receipt |
-| Romania e-Factura | RON 1,000–10,000 per missing invoice |
-| Greece myDATA | EUR 5,000–100,000 fines |
-| Hungary RTIR | HUF 500,000 per missing report |
-| Saudi Arabia ZATCA Phase 2 | SAR 1,000+ per invoice; escalating |
-| India IRN | INR 25,000 per invoice without IRN; ITC disallowance |
-| Spain SII | EUR 0.5% of unreported amount, min EUR 300 / max EUR 6,000 per quarter |
 
-## Section 6 — Output specification
+| SAF-T is not one periodic return | Norway is on request; France FEC is supplied at the start of the relevant computerized-accounting audit; Portugal accounting SAF-T is scheduled for 2027 periods, filed from 2028. Invoice-data communication is a separate obligation. [NO](https://www.skatteetaten.no/en/business-and-organisation/start-and-run/best-practices-accounting-and-cash-register-systems/saf-t-financial/questions-and-answers---saf-t-financial/); [FRFEC](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037526053); [PT](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/lei-73-a-2025.pdf). |
 
-The reviewer brief must include:
+| Current German and French phases | Germany requires covered domestic B2B receipt from 1 January 2025, with issuance transitions through 2026/2027. France covered receipt and large/ETI issuance started 1 September 2026; SME/micro issuance starts 1 September 2027. [DEFAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html); [DE27](https://www.gesetze-im-internet.de/ustg_1980/__27.html); [FRFAQ](https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/faq---fe_je-decouvre-la-facturation-electronique.pdf). |
 
-1. **Jurisdiction inventory** — every country with mandate exposure for the entity.
-2. **Mandate status per country** — in-force / pending / proposed; effective date for the entity.
-3. **Format and transmission selection** per country.
-4. **Implementation roadmap** — ERP changes, intermediary selection (PAC / PDP), accreditation status, go-live dates.
-5. **Data residency and archiving** — required retention period per country (commonly 10 years), location restrictions.
-6. **Penalty exposure** if go-live missed.
-7. **EU ViDA alignment** — for EU-registered taxpayers, the 1 July 2030 DRR transition plan.
-8. **Reviewer questions** — open items flagged as [T2] or [T3].
+| Spain has separate systems | SII is VAT ledger reporting. Invoice-software adaptation dates are 1 January 2027 for covered corporate-income-tax persons and 1 July 2027 for other covered users. VERI*FACTU transmission is an option within that software regime. B2B invoice exchange under RD 238/2026 has a separate 12/24-month phase measured from the implementing order. [ESII](https://sede.agenciatributaria.gob.es/static_files/Sede/Procedimiento_ayuda/G417/FicherosSuministros/V_1_1/FaqGral/FAQs_SII_23_04_2026.pdf); [ESVER](https://www.boe.es/eli/es/rd/2023/12/05/1007/con); [ESB2B](https://www.boe.es/eli/es/rd/2026/03/25/238); [ESORDER](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-20587). |
 
-## Section 7 — Self-checks
+| Future EU phase | Adopted ViDA intra-EU digital reporting applies from 1 July 2030 to the specified transactions. It does not prescribe one universal Peppol channel or prohibit all clearance systems. [VIDA](https://publications.europa.eu/resource/celex/32025L0516). |
 
-- [ ] Every country of registration / supply / receipt mapped to a mandate status.
-- [ ] Threshold tests applied (turnover, sector) before assuming in-scope.
-- [ ] Format selected per country, not assumed by analogy.
-- [ ] Transmission channel matches model (centralised / decentralised / PAC).
-- [ ] Pre-clearance model identified where invoice transmission is blocking.
-- [ ] ViDA DRR transition plotted for 1 July 2030 deadline.
-- [ ] Italy SDI cross-border replacement of Esterometro reflected.
-- [ ] Mexico Pólizas + CFDI 4.0 + Catálogo de Cuentas integration documented.
-- [ ] Penalty schedule per country in the brief.
-- [ ] Output flags every [T2]/[T3] item for reviewer judgement.
+## Scope and required inputs
 
-## Section 8 — Prohibitions
+Cover SAF-T ledger extracts, FEC/FAIA/JPK local variants, invoice clearance, post-issue reporting, hybrid systems, decentralized exchange and overlapping B2C reporting. Classify each transaction; Hungary RTIR reporting is not pre-clearance merely because transmission is rapid, and Belgium Peppol exchange is not a central tax-clearance portal.
 
-- **Do not** assume Peppol BIS is universally accepted — Italy SDI, Mexico CFDI, Brazil NF-e use proprietary formats and Peppol is NOT the local mandate.
-- **Do not** treat a "B2G mandate" as equivalent to a "B2B mandate" — Norway, Sweden, Denmark have B2G mandates but B2B is still voluntary in 2025.
-- **Do not** rely on the EU ViDA 2030 dates as locked — Member State adoption pace varies and derogations may persist.
-- **Do not** propose a centralised-clearance go-live for ViDA-compliant intra-Community invoicing — post-clearance only is permitted under ViDA.
-- **Do not** advise on circumventing mandates (e.g., issuing PDF invoices in a clearance regime) — penalties and VAT recovery loss apply.
+Keep VAT-rate determination with the country VAT-return Guides. Pure B2C e-receipts (including Greek retail reporting and Italian corrispettivi), vendor accreditation, detailed XSD fields and archival requirements beyond the minimum scope are separate workstreams. Their overlap with a B2B system must still be identified.
 
-## Section 9 — Disclaimer
+Collect the legal entity and branches, establishment/intervening fixed establishment, VAT and corporate-tax status, sector, domestic/export/import/B2G/B2B/B2C transaction types, customer status, accounting method, prior-year turnover and currency, reference period, invoice count/value, current software, representative/provider, archive location and actual authority onboarding notice. VAT registration alone does not settle every mandate.
+
+## The method, step by step
+
+### Step 1: establish each mandate and its scope
+
+Build an inventory for every country of registration, supply and receipt. Record separately: legal scope, commencement/application dates, entity-specific phase, exception, required document, file/schema version, channel, transmission trigger, acknowledgement, correction method, retention and offence. An authority FAQ supports the stated scope; it does not establish unread statutory exceptions or technical certification.
+
+Do not use the former Italian EUR 65,000 forfettario exemption or Spanish EUR 6 million shortcut. The actual Italian domestic SdI provision and its amendments must be applied to the relevant period; Spanish SII also covers REDEME and VAT groups and has a precise large-business threshold. [IT](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-11-16); [ESII](https://sede.agenciatributaria.gob.es/static_files/Sede/Procedimiento_ayuda/G417/FicherosSuministros/V_1_1/FaqGral/FAQs_SII_23_04_2026.pdf).
+
+### Step 2: SAF-T and audit-file matrix
+
+| Jurisdiction and system | Supported scope, timing and execution boundary |
+
+| --- | --- |
+
+| Portugal: SAF-T (PT) | Budget Law 73-A/2025 Article 95(2) makes the accounting-file submission under Portaria 31/2019 apply to periods of **2027 onwards**, delivered in **2028 onwards**. This is separate from monthly invoice-element communication in the actual 2026 calendar. **Not yet confirmed:** the old universal accounting scope, 2008/2013 history, invoicing-module thresholds, exact monthly statutory deadline and choice of SAF-T upload versus other permitted communication methods under DL 198/2012; the old ATCUD/QR-from-2023 commencement and exceptions under DL 28/2019/Portaria 302/2016. Do not treat an annual accounting file as already due for 2026. [PT](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/lei-73-a-2025.pdf); [PTCAL](https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/calendario_fiscal/Documents/Obrigacoes_declarativas.pdf). |
+
+| Poland: JPK_V7M / V7K | Active VAT taxpayers, not every VAT registrant, submit the combined record/declaration system introduced 1 October 2020. Monthly reporting is due by the **25th** of the following month, shifted to the next working day for a Saturday/statutory holiday. V7K has records for each month and the quarterly declaration in the third month. **Not yet confirmed:** full current Article 99(11c) and the former 2019 ministerial-regulation citation; the authority page supports the stated filing pattern. [PLVAT](https://podatki.gov.pl/podatki-firmowe/jednolity-plik-kontrolny/jpk_vat-z-deklaracja/jpk_vat-z-deklaracja). |
+
+| Poland: JPK income-tax accounting | Separate JPK_KR_PD, JPK_ST_KR, JPK_PKPIR, JPK_EWP and JPK_ST structures. First phase: CIT tax groups and previous-year revenue **exceeding EUR 50 million**, tax years starting after 31 December 2024, submitted in 2026. Monthly-VAT-return taxpayers enter for years starting after 31 December 2025; the remaining phase follows years starting after 31 December 2026. **Not yet confirmed:** exact current annual deadline/2026 extension and every on-demand Article 193a entity condition; the former “all VAT taxpayers JPK_KR monthly from 2025” is not usable. [PLPD](https://podatki.gov.pl/podatki-firmowe/jednolity-plik-kontrolny/jpk_pd/jpk_pd). |
+
+| Romania: D406 | ANAF Order 1783/2021 (not the old OMFP attribution), Annex 5 phases: large taxpayers in 2022 (including its separate July cohort), medium in 2023, small in 2025; listed excluded persons remain excluded. Annex 4 uses monthly or quarterly VAT period; semiannual/annual VAT periods and non-VAT persons report quarterly. Ordinary deadline: last day of the next month. Assets follow annual financial-statements filing; stocks are on request with at least **30 calendar days**. Initial grace is conditional and varies by period; it is not an ongoing extension. **Not yet confirmed:** every later category/schema amendment and current e-Factura rules below. [ROSAFT](https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_1783_2021.pdf). |
+
+| Norway: SAF-T Financial | Electronic bookkeeping entities must be able to generate the file on audit request for periods starting **1 January 2020** onwards; it does not replace the tax return. Under **NOK 5 million** turnover is not a blanket exemption when bookkeeping information is electronically available. Fewer than **600 vouchers** with text-editor/spreadsheet manual accounting is a distinct condition. Correct reference: bookkeeping rules/authority SAF-T FAQ, not the former Skatteforvaltningsforskriften §7-3-7 attribution. [NO](https://www.skatteetaten.no/en/business-and-organisation/start-and-run/best-practices-accounting-and-cash-register-systems/saf-t-financial/questions-and-answers---saf-t-financial/). |
+
+| Lithuania: i.SAF and i.VAZ | i.SAF invoice registers cover registered taxable VAT persons subject to the stated domestic-SME/SVS exception. Legal persons submit monthly by the **20th** of the next month; natural persons follow their applicable monthly/half-year VAT period. i.VAZ concerns waybill/transport data from **1 October 2016**, not a general monthly ledger return. **Not yet confirmed:** the old i.SAF-from-2016 start, complete transport exceptions, exact current schema and implementation under the original Tax Administration Law Article 42 lead. [LTSAF](https://www.vmi.lt/evmi/duomenu-teikimas-tikslinimas); [LTVAZ](https://www.vmi.lt/evmi/i.vaz1?inheritRedirect=true). |
+
+| Luxembourg: FAIA | AED guidance connects electronically accessible accounting data to VAT Law Article 70(3) and audit requests; FAIA is a recommended standardized audit-file approach. Do not infer an annual submission by all commercial-law entities from the former 19 December 2008 citation. Full entity exceptions and execution schema remain **not yet confirmed**. [LU](https://pfi.public.lu/fr/professionnel/tva/faia/faia-201.html). |
+
+| France: FEC | LPF **Article L47 A I**, not a CGI article, requires the computerized-accounting taxpayer under the relevant audit to provide a dematerialized copy at the beginning of control. DGFiP explains application to audit notices from **1 January 2014**. This is not a periodic return. Complete A47A-1 fields and foreign-entity adaptations remain **not yet confirmed**. [FRFEC](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037526053); [FREFEC](https://www.impots.gouv.fr/les-comptabilites-informatisees). |
+
+| Hungary: SAF-T proposal | NAV’s actual notice is a consultation on a proposed audit-data structure published **2 December 2019**, with comments until **1 July 2020**. It does not establish the former mandatory large-taxpayer periodic rollout in 2025–2026. **Not yet confirmed:** any subsequently enacted mandate, start date, entity scope, frequency or final schema. Do not confuse that proposal with Online Számla. [HU](https://nav.gov.hu/sajtoszoba/hirek/Felhivas_SAF_T_adatst20191202). |
+
+| Austria: electronic audit data | BMF explains BAO §§131–132 electronic-data provision and SAF-T XML as an additional permitted standardized format available from **2009**. It does not establish exclusive universal SAF-T filing. **Not yet confirmed:** the individual request, complete current BAO exceptions and file specification; no periodic frequency is cleared. [AT](https://www.bmf.gv.at/themen/steuern/fristen-verfahren/bundesabgabenordnung/standard-audit-file-tax.html). |
+
+| Basque Spain: TicketBAI / Batuz | Treat Gipuzkoa, Álava/Araba and Bizkaia separately. Gipuzkoa’s calendar says the phased obligation reaches all economic-activity taxpayers there from **1 June 2023**, with applicable exemptions still to assess. **Not yet confirmed:** Álava and Bizkaia current calendars/exemptions, the old universal “since 2022” date, exact attribution of Norma Foral 4/2020, software/signature/real-time delivery rules and Batuz/LROE integration. A Gipuzkoa page is not proof for the other territories. [GIP](https://www.gipuzkoa.eus/es/web/ogasuna/ticketbai/calendario). |
+
+| Mexico: accounting XML / catálogo / balanza / pólizas | SAT’s compiled RMF 2026 rules **2.8.1.5–.6** distinguish XML chart-of-accounts first submission/changes and periodic trial balances, with Mis cuentas and other stated exceptions. Rule **2.8.1.8** addresses journal/auxiliary files required on audit/refund/offset, not an automatic monthly upload of every journal entry. Link CFDI folios, RFC, taxes and payment data to the accounting records. **Not yet confirmed:** the old since-2015 monthly-journal history, authentic DOF/current CFF Article 28 scope and all Annex 24 fields; the compilation expressly requires DOF for legal substantiation. [MX](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/compiladas/Compilado_Tercera_Modificacion_a_la-Resolucion_Miscelanea_Fiscal_para_2026.pdf). |
+
+| Angola: SAF-T (AO) | AGT’s **29 August 2025** notice identifies general and simplified VAT-regime taxpayers as required to submit SAF-T under DP 312/18 and DE 74/19. **Not yet confirmed:** complete operative law, exceptions, exact monthly deadline/frequency and the old “all VAT taxpayers since 2019” history; the producer-remediation notice is not that complete filing law. [AO](https://portaldocontribuinte.minfin.gov.ao/noticia?id=985537). |
+
+| Cape Verde: SAF-T (CV) | Portaria **47/2021 Articles 1–2 and 5**, effective **1 January 2022**, covers specified organized-accounting IRPC/Category B persons. Category B annual turnover **not exceeding CVE 5 million** is exempt. Annex I 1(c) provides annual submission by **30 June**, or **30 August** for Category B; inventory rules are separate, including **31 January** and special-period/cessation rules. The old 2017 universal monthly-VAT assertion and DL 41/2017 source attribution are replaced; that older decree is not independently cleared. **Not yet confirmed:** later amendments, complete current taxpayer eligibility and production schema. [CV](https://efatura.cv/assets/files/Portaria_n_47_2021_SAF_T_CV-f4cd9d8072a3875ab16872008bf5aa8f.pdf). |
+
+| Bulgaria: SAF-T | NRA’s **March 2026** FAQ II.1 describes an operative first cohort from **1 January 2026**, including category/reference-period conditions; public-interest status alone does not automatically satisfy the large-enterprise test. Foreign VAT registration without a Bulgarian PE does not by itself create an Accounting Act enterprise. **Not yet confirmed:** complete statutory §17 phase tests/amounts, all 2026–2030 cohorts, filing frequency/deadlines and schema. Replace “schedule TBD / VAT one-step return” with an individual scope decision; do not postpone a qualifying 2026 obligation. [BG](https://nra.bg/wps/wcm/connect/nra.bg25863/d404df7c-f89d-409d-9039-362a8f71b004/SAF-T%2BBlank_QA_%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%2B2.pdf?CACHEID=ROOTWORKSPACE.Z18_PPGAHG8009LJC0QTR5C2HH30I6-d404df7c-f89d-409d-9039-362a8f71b004-pQ69YDn&MOD=AJPERES). |
+
+### Step 3: EU and European invoice/reporting matrix
+
+| Jurisdiction and system | Current decision and boundary |
+
+| --- | --- |
+
+| Italy: SdI | Article 1(3) of DLgs 127/2015 governs covered resident/established domestic invoicing; do not infer every B2C invoice is required merely because a B2C sale exists. Article 1(3-bis) routes specified foreign-transaction data through SdI from **1 July 2022**, subject to customs/already-SdI and specified nonterritorial-purchase exceptions. FatturaPA XML and TD17/TD18/TD19 serve different flows. **Not yet confirmed:** complete sector exemptions, 2019 universal-history claim and every current schema/deployment field. Foreign reporting is not a foreign customer’s obligation to receive SdI invoices. [IT](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-11-16); [ITG](https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_compilazione-fe-esterometro-v1-10_aprile_2025). |
+
+| France: approved platforms | Covered domestic B2B transactions between French-established taxable persons under French invoicing rules use an approved **plateforme agréée (PA)**. Covered receipt and large/ETI issuance started **1 September 2026**; SME/micro issuance starts **1 September 2027**. International/B2C transaction reporting is separate; VAT-outside-scope and specified Articles 261–261 E exemptions matter. Compatible software must connect to a PA; do not send directly through PPF as an alternative private invoice exchange route. **Not yet confirmed:** exact Factur-X/CII, UBL, Peppol conversion profiles and complete payment/transaction-reporting frequencies. The old PDP/PPF names do not clear a provider’s current approval. [FRFAQ](https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/faq---fe_je-decouvre-la-facturation-electronique.pdf); [FRPA](https://www.impots.gouv.fr/facturation-electronique-et-plateformes-agreees); [FRDATE](https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation). |
+
+| Germany: domestic B2B | Covered domestic parties must receive structured invoices from **1 January 2025**. Other-invoice transition runs through **31 December 2026**; for 2027 transactions an issuer with previous-calendar-year §19(2) total turnover **not more than EUR 800,000** retains the stated transition, with a separate qualifying EDI transition through 2027. Paper/other-electronic rules differ on recipient consent. B2C, specified exempt supplies, small invoices **up to EUR 250**, travel tickets and small-business issuance have exceptions; small businesses still need receipt capability. Ordinary issuance transitions expire from **1 January 2028**; this future end does not remove today’s exceptions. No central clearance is imposed by this rule. **Not yet confirmed:** separate German B2G/XRechnung scope and exact Factur-X compatibility. [DEFAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html); [DE27](https://www.gesetze-im-internet.de/ustg_1980/__27.html). |
+
+| Spain: SII | Mandatory for the specified monthly VAT-period classes: REDEME, VAT groups, large business turnover **exceeding EUR 6,010,121.04**, and the authority’s stated fuel-depot/extraction category; voluntary entry also exists. Issued-invoice records normally use **4 days**, or **8 days** for recipient/third-party issuance, excluding Saturdays, Sundays and national holidays; outer limits and received/import/intra-EU/correction triggers differ. It is ledger reporting, not a universal pre-clearance invoice channel. **Not yet confirmed:** the old 2017 commencement, complete exception-by-exception deadline calculator and exact XML/service schema; JSON is not assumed from the old combined label. [ESII](https://sede.agenciatributaria.gob.es/static_files/Sede/Procedimiento_ayuda/G417/FicherosSuministros/V_1_1/FaqGral/FAQs_SII_23_04_2026.pdf). |
+
+| Spain: SIF / VERI*FACTU | RD 1007/2023 final provision 4 now requires covered corporate-income-tax users’ adapted systems before **1 January 2027**, other covered users before **1 July 2027**. Articles 3–5 contain entity/transaction exceptions, including the specified SII exclusion. Articles 15–16 make continuous record transmission an option; a compliant non-VERI*FACTU system retains records instead. **Not yet confirmed:** individual software certification, QR/signature details and production service fields; do not treat every non-SII person as an immediate 2026 transmitter. [ESVER](https://www.boe.es/eli/es/rd/2023/12/05/1007/con). |
+
+| Spain: separate B2B exchange reform | RD **238/2026** final provision 4 measures **12 months** for prior-calendar-year volume exceeding **EUR 8 million**, **24 months** for others, from entry of the implementing order. HAC/**1028/2026**, published **5 October 2026**, enters the next day and starts that clock. Keep invoice-status transitional rules separate. **Not yet confirmed:** complete covered/excluded transaction scope and all platform/service/schema conditions; do not equate this reform with SII or VERI*FACTU, or treat the order as still unissued. [ESB2B](https://www.boe.es/eli/es/rd/2026/03/25/238); [ESORDER](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-20587). |
+
+| Poland: KSeF | Covered issuers entered **1 February 2026** where 2024 gross sales exceeded **PLN 200 million**, others **1 April 2026**, with the temporary monthly **PLN 10,000 gross** concession through 2026. Crossing loses the concession starting with the invoice that crosses it, including later months. Scope exclusions include consumer invoices, specified foreign/no-intervening-FE cases and special schemes; current FA(3), not old FA(2), must be selected. Receipt and offline/outage rules are separate. **Not yet confirmed:** full current schema, outage authentication and every excluded/self-billing case for a production project. [PLS](https://ksef.podatki.gov.pl/informacje-ogolne-ksef-20/zakres-obowiazkowego-ksef/); [PLLAW](https://api.sejm.gov.pl/eli/acts/DU/2025/1203/text.pdf); [PLFAQ](https://ksef.podatki.gov.pl/wyjasnienia/co-warto-wiedziec-przed-startem-ii-etapu-wdrozenia-krajowego-systemu-e-faktur/). |
+
+| Belgium | Covered domestic established VAT-person B2B structured exchange started **1 January 2026**. Small-business exemption from VAT does not alone exempt invoicing. Exclusively Article 44-exempt persons/transactions, foreign persons without a Belgian FE and other listed issuer/recipient exceptions require separate tests. Peppol BIS is the default; mutually agreed EN 16931-compliant alternatives are permitted. This is decentralized exchange, not Belgian tax pre-clearance. Full exceptions/technical onboarding remain **not yet confirmed**. [BE](https://efacture.belgium.be/fr/article/pour-qui-la-facturation-electronique-deviendra-t-elle-obligatoire). |
+
+| Romania: RO e-Factura | **Not yet confirmed:** the old blanket B2B-from-1-July-2024 claim, current domestic/nonresident/B2C exclusions, transmission deadline, SPV channel, RO_CIUS_EN16931 schema, clearance effect and later amendments. ANAF D406 evidence above proves SAF-T, not e-Factura. Recover current OUG 120/2021 and amendments before go-live. |
+
+| Greece: myDATA versus mandatory invoice issuance | AADE’s actual implementation FAQ now states **2 March 2026** for businesses exceeding **EUR 1 million** gross revenue on the 2023 income-tax return, and **2 November 2026** for the remaining cohort. Its second-cohort gradual transition through **31 January 2027** requires the specified timely declaration/start by **1 October 2026**; it is not unconditional grace. Provider/timologio/myDATAapp issuance differs from ERP reporting alone. **Not yet confirmed:** full Decisions A.1128/A.1112 scope and exemptions, current myDATA XML/reporting timing and B2C overlays; “fully effective for all B2B/B2C since 2024” is not a usable substitute. [GR](https://www.aade.gr/en/mandatory-electronic-invoicing-digital-goods-movement-documents-frequently-asked-questions-answers). |
+
+| Hungary: Online Számla RTIR | **Not yet confirmed:** exact current invoice scope, 2018 B2B/1 January 2021 B2C phase assertions, transmission delay, NAV XML version and exclusions. The actual current portal returned a JavaScript shell, and the SAF-T consultation is unrelated. Do not call near-real-time reporting pre-clearance without an operative blocking rule. |
+
+| Croatia | Tax Authority guidance provides **1 January 2026** domestic B2B e-invoice issue/receipt/fiscalisation for covered VAT persons; non-VAT persons receive/fiscalise from 2026 and issue from **1 January 2027**. Own solution or intermediary is possible. **Not yet confirmed:** full current statute, sector/transaction exceptions, exact schema and the old universal B2C-from-2013/pre-clearance characterization. B2B is no longer merely “in development”. [HR](https://porezna.gov.hr/fiskalizacija/bezgotovinski-racuni/eracun). |
+
+| Slovakia | Authority guidance targets covered domestic VAT-person invoicing from **1 January 2027**, with recipient capability for those to whom the legally required invoice is issued; 2026 is voluntary preparation, not a universal mandatory start. **Not yet confirmed:** complete enacted statute/exceptions and XML/Peppol production route. The November 2026 FAQ expressly is not legally binding. [SK](https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DPH/2026/2026.11.10_009_DPH_IM_FaQ__eFakt.pdf). |
+
+| Czech Republic | **Not yet confirmed:** any enacted general B2B e-invoice mandate or a 2027 target, format, threshold or channel. The current Financial Administration VAT portal did not establish that proposed date. Do not schedule production from the old “2027 proposed/TBD” cell. |
+
+| United Kingdom | HMRC’s roadmap plans covered VAT-invoice e-invoicing from **1 April 2029**. Legislation, final standards, exemptions and implementation detail remain future work; the 2025 consultation is not the latest policy stage and the roadmap is not an existing 2026 mandate. **Not yet confirmed:** complete eventual transaction scope and production channel. [UK](https://www.gov.uk/government/publications/e-invoicing-implementation-roadmap/roadmap-for-e-invoicing-implementation). |
+
+| Ireland | Revenue’s **22 October 2026** update describes Finance Bill (No. 2) 2026 proposals/draft regulations, not an enacted mandate: planned **1 November 2028** large VAT-corporate issuance/all-business receipt, **1 November 2029** relevant cross-border VAT traders, then **July 2030** ViDA. **Not yet confirmed:** final enactment, precise cohort/exceptions and technical channel. [IE](https://www.revenue.ie/en/corporate/press-office/press-releases/2026/pr-102226-vat-modernisation.aspx). |
+
+| Norway: EHF / Peppol | **Not yet confirmed:** the old universal B2G-since-2019 rule, covered procurement/value/recipient conditions, any current private B2B mandate and exact EHF/Peppol profile. The official procurement-route fetch failed. The financial SAF-T rule does not establish these invoice obligations. |
+
+| Denmark: OIOUBL / Peppol | Business Authority’s 2026 registered-bookkeeping-system notice is about system capabilities and later requirements; its voluntary early implementation during **2026–2027** is not a universal B2B mandate from 2026. **Not yet confirmed:** complete B2G obligation, Digital Bookkeeping Act taxpayer phases and OIOUBL/Peppol implementation profiles. [DK](https://erhvervsstyrelsen.dk/vejledning-nye-krav-til-registrerede-bogfoeringssystemer-effektiv-og-sikker-e-fakturering). |
+
+| Sweden | Official Swedish procurement guidance explains structured invoices for covered public procurement begun from **1 April 2019**, with stated security/older-procurement and other exceptions. Peppol BIS Billing 3 is recommended; agreement on another applicable standard is possible. **Not yet confirmed:** any general B2B mandate/current consultation timetable or complete production profile. B2G does not establish B2B. [SE](https://www.upphandlingsmyndigheten.se/digitalisering-och-e-handel/e-handel/regler-for-e-handel-och-e-faktura/). |
+
+| Finland | Act 241/2019 sections 1–5 give a defined contracting entity or business a right, on request, to receive a structured electronic invoice from another such entity or business; section 4 applies from **1 April 2020**. The section 2 business definition requires accounting-period turnover **exceeding EUR 10,000** and activity under Act 360/1968. The invoice must meet the referenced European standard and a listed syntax; section 1 excludes disclosure of secret information or danger to essential state security interests. Section 3 separately covers receipt/processing of invoices under the specified procurement laws. **Not yet confirmed:** application of the cross-referenced entity/procurement definitions to the particular party, Finvoice/Peppol acceptance and production channels; do not infer a universal right to any requested format. [FI](https://www.finlex.fi/fi/lainsaadanto/2019/241). |
+
+### Step 4: Asia, Middle East and Latin America
+
+| Jurisdiction and system | Supported position or individual source request |
+
+| --- | --- |
+
+| Saudi Arabia: Fatoorah | ZATCA states Phase 1 generation/storage from **4 December 2021** for covered taxpayers, excluding nonresidents, and those issuing for VAT suppliers. Phase 2 integration started **1 January 2023** in notified waves; the authority gives at least **6 months** advance notice. **Not yet confirmed:** taxpayer’s current wave, standard-tax-invoice clearance versus simplified-invoice reporting, current XML/PDF-A-3 requirements and certification. Do not label all Phase 2 invoices pre-clearance. [SA](https://zatca.gov.sa/en/E-Invoicing/Introduction/Pages/Roll-out-phases.aspx). |
+
+| UAE: adopted phased system | MD 243/2025 as amended by **197/2026** covers business persons subject to exclusions. MD 244/2025 and **66/2026** set **1 July 2026** voluntary/pilot start; persons with revenue **at least AED 50 million** appoint an accredited provider by **30 October 2026** and implement **1 January 2027**; below that revenue appoint by **31 March 2027**, implement **1 July 2027**; government appointment **31 March 2027**, implementation **1 October 2027**. Revenue uses the most recent financial-statements/accepted-evidence definition. B2C is excluded until a later decision. This is no longer “planned 2026/TBD”. [U243](https://mof.gov.ae/wp-content/uploads/2025/10/Ministerial-Decision-no.-243-of-2025-on-the-Electronic-Invoicing-System.pdf); [U244](https://mof.gov.ae/wp-content/uploads/2025/10/Ministerial-Decision-No.-244-of-2025-on-the-Implementation-of-the-Electronic-Invoicing-System.pdf); [U66](https://mof.gov.ae/wp-content/uploads/2026/05/Ministerial-Resolution-No.-66-of-2026-Amending-Certain-Provisions-of-Ministerial-Resolution-No.-244-of-2025-Regarding-the-Implementation-of-the-Electronic-Invoicing-System-En-20260514.pdf); [U197](https://mof.gov.ae/wp-content/uploads/2026/10/Ministerial-Decision-No.-197-of-2026-%E2%80%93-Amending-Certain-Provisions-of-Ministerial-Decision-No.-243-of-2025-on-the-Electronic-Invoicing-System_En.pdf). |
+
+| UAE: operative exceptions and source limits | MD 197 applies **1 October 2026** and revises exclusions for sovereign noncompetitive government activity, passenger tickets/ancillary EMD, specified air cargo, exempt/zero-rated financial services and same-tax-group transactions; the specified air-cargo exclusion lasts **24 months from system effectiveness**, while same-tax-group transactions are excluded for **24 months from 1 January 2027**. Amended Article 6(5) uses **14 business days**, subject to VAT registrants’ Article 6(4). Amended storage requires retention/production under Tax Procedures rules, not the former universal UAE-only-server assertion. **Not yet confirmed:** complete Arabic Gazette original, accreditation/network/EN 16931 mapping, current penalties and every technical execution condition. The cited public Ministry-hosted English copies contain publication-date placeholders; original-language legal authority is not cleared. [U197](https://mof.gov.ae/wp-content/uploads/2026/10/Ministerial-Decision-No.-197-of-2026-%E2%80%93-Amending-Certain-Provisions-of-Ministerial-Decision-No.-243-of-2025-on-the-Electronic-Invoicing-System_En.pdf); [U243](https://mof.gov.ae/wp-content/uploads/2025/10/Ministerial-Decision-no.-243-of-2025-on-the-Electronic-Invoicing-System.pdf). |
+
+| Egypt: ETA | **Not yet confirmed:** the original blanket mandatory B2B-since-2021 claim, taxpayer/phase exemptions, XML/JSON specification, pre-clearance effect and ETA channel. The attempted official e-invoice route failed; recover current decisions and onboarding before implementation. |
+
+| Turkey: e-Fatura / e-Arşiv | **Not yet confirmed:** current general/sector thresholds, the former TRY 5 million blanket trigger, phase dates, UBL-TR schema, GİB/private-integrator channels and whether a particular document requires clearance. The official hub alone did not expose the complete current communiqué. Separate e-Fatura from e-Arşiv. |
+
+| Israel: invoice allocation number | Tax Authority’s actual Hebrew verification guidance states allocation-number requirement as an input-tax-deduction condition for invoices to registered dealers above the legal ceiling: **ILS 20,000 in 2025**, **ILS 10,000 from 1 January 2026**, **ILS 5,000 from 1 June 2026**. The 7 December 2025 procedure describes amount excluding VAT and transaction/customer conditions. **Not yet confirmed:** full current statutory exceptions, allocation/refusal workflow and XML claim; the former “over ILS 5,000 since 5 May 2024” is not the current threshold history. Hebrew PDF extraction is right-to-left and has not been visually validated; use the readable Hebrew service page for the stated threshold dates. [IL](https://www.gov.il/he/service/verify-vendor-invoice-information); [ILPROC](https://www.gov.il/BlobFolder/policy/inst-071225-1/he/vat_inst-071225-1.pdf). |
+
+| Vietnam | **Not yet confirmed:** the old all-VAT-persons-from-1-July-2022 assertion, current Decree 70/2025/sector exceptions, pre-issue/clearance distinction, XML and GDT channel. Official system retrieval timed out; no current filing-ready scope is claimed. |
+
+| India: IRP / IRN | Notification 13/2020 as amended by 61/2020, 70/2020, 23/2021 and **10/2023** uses aggregate turnover **exceeding INR 5 crore** in any preceding financial year from **2017–18**, applying from **1 August 2023** when 10/2023 substituted 5 crore for the former 10 crore, with specified entity/supply exclusions and covered exports. It is not “all taxpayers at least 5 crore”. **Not yet confirmed:** full Rule 54/current schema, exact current IRP/JSON fields and reporting-window advisory; do not infer registration/VAT category alone or universal portal eligibility. [IN13](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-13-central-tax-english-2020.pdf); [IN61](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-61-central-tax-english-2020.pdf); [IN70](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-70-central-tax-english-2020.pdf); [IN23](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-23-central-tax-english-2021.pdf); [IN10](https://www.gstcouncil.gov.in/sites/default/files/2024-05/10ct_eng.pdf). |
+
+| Indonesia: e-Faktur / Coretax | DGT’s **12 February 2025** operating notice permits specified PKP desktop use alongside Coretax and authorized-provider host-to-host channels, with exceptions for specified codes/centralized branches/new PKP. **Not yet confirmed:** later 2026 channel changes, universal since-2016 scope, current XML, validation and pre-clearance rules. Do not force every case into a single legacy desktop/DGT route. [ID](https://www.pajak.go.id/sites/default/files/2025-02/Pembuatan%20Faktur%20Pajak%20Melalui%20Aplikasi%20E-Faktur%20Client%20Desktop.pdf). |
+
+| Philippines: issuance versus sales reporting | Actual scanned RR **26/2025** amends RR **11/2025** transition to **31 December 2026** electronic-invoice issuance for small/medium/large e-commerce persons (micro excluded), LTS, large taxpayers and the specified CAS/CBA/invoicing-software class. Other classes and electronic sales reporting depend on a capable BIR system and separate regulations. The Commissioner may extend the period. **Not yet confirmed:** later RMC 98/2026 operative implementation, current cohort/PTI details and EIS JSON schema; its attempted official download failed. The old “top 100 from 2022” pilot does not clear current universal scope. Pages 1–3 of each scanned regulation were personally read visually; no full RMC approval is implied. [PH26](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%2026-2025.pdf); [PH11](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%2011-2025.pdf). |
+
+| Mexico: CFDI | SAT explains **CFDI 4.0** as the only valid version from **1 April 2023**, not merely “from 2022” without coexistence qualification. Compiled RMF 2.7.1.2/.8 distinguishes authorized certification and SAT facilities; it is not invariably a paid PAC route. **Not yet confirmed:** universal all-VAT-since-2014 scope, authentic current CFF/DOF, complete XML/complement schema and cross-system production integration. [MX](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/compiladas/Compilado_Tercera_Modificacion_a_la-Resolucion_Miscelanea_Fiscal_para_2026.pdf); [MX4](https://wwwmat.sat.gob.mx/consultas/35025/formato-de-factura-electronica-%28anexo-20%29). |
+
+| Chile: DTE | SII’s historical notice identifies **1 February 2018** as the last phased cohort under Law 20.727 for the specified micro/rural businesses. **Not yet confirmed:** all current 2026 exceptions, XML/clearance workflow and intermediary permissions; the historic phase does not establish every taxpayer’s current scope. [CL](https://www.sii.cl/noticias/2018/010218noti01er.htm). |
+
+| Brazil: NF-e / NFS-e / NFC-e | **Not yet confirmed:** the old universal taxpayer coverage, NF-e goods-from-2008 history, state versus municipal service/consumer scope, current national NFS-e overlays, XML and SEFAZ/municipal channels. The official NF-e route did not return an operative body. Do not generalize a municipal service model or Mexico’s PAC label across Brazil. |
+
+| Argentina: electronic comprobantes | Current authority portal is **ARCA**, not the old AFIP name as a current filing instruction. **Not yet confirmed:** all-VAT-since-2015 scope, current authorization regime/exceptions, XML/web-service formats and specific channel; the actual hub supplied only implementation leads, not complete operative law. [AR](https://www.arca.gob.ar/fe/). |
+
+| Colombia: DIAN | **Not yet confirmed:** current obligated/excluded taxpayers, the old universal phased-2018–2020 claim, pre-clearance effect, XML/version and DIAN transmission/provider route. The old route failed; the replacement exposed a JavaScript shell. |
+
+| Peru: SEE | SUNAT’s current page says **from 1 June 2026** the prior list consultation was removed because the majority, not all, are obligated; New RUS and specified timing exceptions remain. New registrations/regime changes and first-issue triggers require individual tests. **Not yet confirmed:** full RS 75/2026 operative scope, XML UBL 2.1, SUNAT/PSE/OSE responsibilities and pre-clearance effect. The old “all taxpayers rollout completed 2024” is not usable. [PE](https://cpe.sunat.gob.pe/informacion_general/obligados_cpe). |
+
+| Ecuador: electronic documents | SRI’s actual service page requires an electronic signature, software, connectivity and online access for electronic documents. **Not yet confirmed:** exact mandated/exempt population and historical start, the old universal “since 2018” assertion, XML/current schema and authorization timing. A platform explanation is not the complete mandate. [EC](https://www.sri.gob.ec/facturacion-electronica). |
+
+| Uruguay: CFE | DGI explains that from **1 January 2025** VAT persons, including IVA mínimo, enter electronic documentation subject to listed exclusions, including specified agricultural, construction, nonresident/exempt and Monotributo categories. It is not all taxpayers since 2019. **Not yet confirmed:** every exact exception/threshold, XML/current CFE schema and authorization flow. [UY](https://www.gub.uy/direccion-general-impositiva/comunicacion/noticias/facturacion-electronica-incorporacion-restantes-contribuyentes-iva). |
+
+### Step 5: apply ViDA without replacing national scope
+
+| Adopted element | Application and condition |
+
+| --- | --- |
+
+| National invoice mandate option | Directive 2025/516 Article 1 removes the specified Article 232 consent/derogation barrier from entry into force; the old **1 January 2027** optional starting date was wrong. Apply the actual domestic law and establishment scope; it is not a mandate everywhere from that date. [VIDA](https://publications.europa.eu/resource/celex/32025L0516). |
+
+| Single registration / OSS own goods | The **1 July 2028** phase includes an own-goods-transfer special scheme and other OSS changes. An own-goods transfer is not itself a B2C sale; do not describe this as “B2C movements of own goods” or automatic elimination of every local registration. [VIDA](https://publications.europa.eu/resource/celex/32025L0516). |
+
+| Platform deemed suppliers | The adopted specified short-term-accommodation/road-passenger rules belong to the **1 July 2028** phase, with the specified Member State deferral option to **1 January 2030**, subject to supplier-status and other exclusions. This is not all passenger transport/platform activity. [VIDA](https://publications.europa.eu/resource/celex/32025L0516). |
+
+| Intra-EU reporting | **1 July 2030** Article 5 changes govern the defined Article 262 transaction set and digital reporting/recapitulative-statement replacement. Amended Article 222 sets invoice issuance within **10 days** for the specified supplies. Separately, amended Article 263(1) sets self-billing data reporting no later than **5 days** after the invoice is issued or should have been issued; this is not a 5-day invoice-issuance exception or a present universal domestic deadline. European-standard/syntax requirements do not mean one mandatory Peppol network. [VIDA](https://publications.europa.eu/resource/celex/32025L0516). |
+
+| Existing domestic systems | Article 6 gives the specified pre-existing domestic reporting systems the **1 January 2035** alignment limit. National invoice/reporting choices and exceptions remain relevant. The former universal **pre-clearance prohibition** and “post-clearance only” instruction were wrong; do not reject SdI/other clearance design solely on that assertion or infer a universal French PPF transition. [VIDA](https://publications.europa.eu/resource/celex/32025L0516). |
+
+Directive 2025/516 amends Directive 2006/112/EC. Do not attribute amendments to Implementing Regulation 282/2011 to this Directive itself; any separate implementing-regulation changes need their own actual instrument. National implementation schedules can change, but adopted EU application dates are legal dates until amended, not merely political forecasts. [VIDA](https://publications.europa.eu/resource/celex/32025L0516).
+
+### Step 6: select format, channel, acknowledgement and archive
+
+Create a separate schema decision for every flow. EN 16931 compliance is not universal Peppol acceptance. Preserve FatturaPA/SdI for Italy, current KSeF FA(3), German XRechnung/ZUGFeRD suitability and the authority-approved French formats. Factur-X is a hybrid format; do not reuse the former “PDF/A-3 plus UBL or CII” combination without its exact current specification. Spain SII and VERI*FACTU have different services/record structures. Saudi XML/PDF-A-3, Mexico CFDI, Chile DTE, Brazil NF-e and other LATAM formats each need their own current schema approval. **Not yet confirmed:** the unbound technical profiles above; no field-level conformity is claimed. [ITG](https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_compilazione-fe-esterometro-v1-10_aprile_2025); [DEFAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html); [PLS](https://ksef.podatki.gov.pl/informacje-ogolne-ksef-20/zakres-obowiazkowego-ksef/); [VIDA](https://publications.europa.eu/resource/celex/32025L0516).
+
+Assign channels using the actual system: Italy SdI and Poland KSeF; French PA exchange rather than an assumed PPF fallback; Romanian SPV only after current legal/procedural recovery; SII versus optional VERI*FACTU; Belgian Peppol/default alternatives; German agreed direct channels. Do not infer that PAC/PSE labels authorize providers in Brazil or Chile or that all 2030 intra-EU exchange must pass through Peppol. Validate accreditation, identity, security, permitted delegation, receipt and rejection handling separately. [IT](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-11-16); [PLS](https://ksef.podatki.gov.pl/informacje-ogolne-ksef-20/zakres-obowiazkowego-ksef/); [FRPA](https://www.impots.gouv.fr/facturation-electronique-et-plateformes-agreees); [ESVER](https://www.boe.es/eli/es/rd/2023/12/05/1007/con); [ESII](https://sede.agenciatributaria.gob.es/static_files/Sede/Procedimiento_ayuda/G417/FicherosSuministros/V_1_1/FaqGral/FAQs_SII_23_04_2026.pdf); [BE](https://efacture.belgium.be/fr/article/pour-qui-la-facturation-electronique-deviendra-t-elle-obligatoire); [DEFAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html).
+
+Document provider selection (PAC/PA or other locally authorized role), ERP changes, data mapping, test environment, production credentials, acknowledgement IDs, correction/cancellation process, outage procedure, archive integrity and exportability. Do not store a rejected file as proof of accepted reporting. Full software accreditation, mandatory fields and exact live schemas remain outside this matrix’s cleared scope.
+
+Retention and residency need a country-specific legal record. The former “commonly 10 years” is an unconfirmed generalization, not a default period. Obtain the actual minimum period, extension/asset cases, permitted location and authority access before go-live. The amended UAE storage rule above illustrates why a historic local-server statement must not be copied universally.
+
+### Step 7: deadlines and penalty exposure
+
+Prepare an offence-specific schedule showing applicable period, taxpayer class, culpability, correction/grace/mitigation, calculation base, cap, currency, assessment unit and separate input-tax consequences. A bad file is not automatically the same offence as non-issuance, late reporting or failure to retain records. The following old figures are retained individually as **unusable source requests**, not “typical penalties”.
+
+| Former national claim | Current treatment and missing proof |
+
+| --- | --- |
+
+| Italy: EUR 250–2,000 per invoice plus automatic deduction loss | **Not yet confirmed:** exact current DLgs 471/1997 / successor provisions, offence/tax-impact distinction, unit, mitigation and purchaser regularization. The old range is not cleared as a universal per-invoice fine or automatic deduction refusal. |
+
+| Poland: up to 100% of VAT; initial 6-month grace | The 2025 Act commencement defers the specified KSeF penalties to **1 January 2027**, not a generic 6-month grace. **Not yet confirmed:** current final extension proposed in October 2026, exact current 100%/other-base offence, discretion, unit and mitigation; do not assume a proposal extends enacted law or publish a 2027 penalty calculation. [PLLAW](https://api.sejm.gov.pl/eli/acts/DU/2025/1203/text.pdf); [PLPROPOSAL](https://www.gov.pl/web/finanse/rada-ministrow-za-odroczeniem-kar-za-bledy-w-ksef-i-przedluzeniem-odwrotnego-obciazenia-vat). |
+
+| Germany: automatic input-VAT loss for non-EN-16931 receipt | BMF explains that authorized transition other-invoices can support deduction; the former automatic refusal is wrong. **Not yet confirmed:** particular defective-invoice correction and substantive deduction result; do not use format alone as a universal denial. [DEFAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html). |
+
+| Romania: RON 1,000–10,000 per missing invoice | **Not yet confirmed:** current e-Factura offence, person-size tiers, per-invoice versus reporting-period unit, applicable dates, reduced-payment/correction and tax consequences. Actual D406 rules do not substantiate that e-Factura amount. |
+
+| Greece: EUR 5,000–100,000 myDATA | **Not yet confirmed:** exact current offence, data type, statutory base/cap, commencement, correction and taxpayer class. AADE’s invoice FAQ states non-issuance consequences without substantiating this old universal range. [GR](https://www.aade.gr/en/mandatory-electronic-invoicing-digital-goods-movement-documents-frequently-asked-questions-answers). |
+
+| Hungary: HUF 500,000 per report | **Not yet confirmed:** current general/sector cap, invoice-count multiplier, culpability/relief and amendment dates. A current NAV portal shell and old SAF-T proposal are not penalty proof. |
+
+| Saudi Arabia: SAR 1,000+ per invoice, escalating | **Not yet confirmed:** current classification/repetition/remediation schedule and exact offence. Official discovery exposes different staged tables and historic fines; none establishes the old universal per-invoice amount or a taxpayer-specific assessment. |
+
+| India: INR 25,000 per invoice without IRN plus automatic ITC loss | **Not yet confirmed:** applicable CGST offence and current Sections 122/125, minimum/maximum/tax-linked alternative, unit, Rule 48 validity and purchaser ITC consequences. A 25,000 maximum in one provision is not a universal fixed per-invoice penalty. |
+
+| Spain SII: 0.5% of unreported amount, min EUR 300 / max EUR 6,000 quarterly | **Not yet confirmed:** precise current LGT 200 offence/base, quarterly aggregation, exemptions/relief and application to the actual delay. Remove the erroneous old “EUR 0.5%” currency-prefix expression; preserve the proposal only as an unverified percentage/minimum/maximum question. |
+
+### Step 8: threshold cases for reviewer testing
+
+**Case 1: Poland monthly KSeF concession.** Assume a domestic covered issuer in the April–December 2026 concession, no other exemption, gross in-scope invoices already PLN 9,600 this month, and the next invoice PLN 700. The new total is PLN 10,300: PLN 300 above the PLN 10,000 ceiling. The crossing invoice is PLN 700 in full, not just the PLN 300 excess. Issue it and subsequent required invoices through KSeF; a later low-sales month does not reinstate this concession. Consumer invoices excluded from the statutory KSeF population are not added merely to inflate this case. [PLLAW](https://api.sejm.gov.pl/eli/acts/DU/2025/1203/text.pdf); [PLFAQ](https://ksef.podatki.gov.pl/wyjasnienia/co-warto-wiedziec-przed-startem-ii-etapu-wdrozenia-krajowego-systemu-e-faktur/).
+
+```oa-check
+name: KSeF monthly threshold crossing
+inputs:
+  prior_gross: 9600
+  next_gross: 700
+  ceiling: 10000
+steps:
+  - new_total: prior_gross + next_gross
+  - excess: new_total - ceiling
+expected:
+  new_total: 10300
+  excess: 300
+```
+
+**Case 2: Germany 2027 issuer transition.** Assume ordinary covered domestic B2B 2027 transactions, no statutory exception or EDI alternative, and correctly determined previous-year §19(2) turnover. Supplier A at EUR 790,000 is EUR 10,000 below the EUR 800,000 ceiling; supplier B at EUR 810,000 is EUR 10,000 above. The turnover transition remains available to A, not B. Exactly EUR 800,000 is included. This is issuance-transition eligibility, not VAT-rate arithmetic or an exemption from receipt. [DE27](https://www.gesetze-im-internet.de/ustg_1980/__27.html); [DEFAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html).
+
+```oa-check
+name: German 2027 previous-year issuer turnover test
+inputs:
+  ceiling: 800000
+  turnover_a: 790000
+  turnover_b: 810000
+steps:
+  - headroom_a: ceiling - turnover_a
+  - excess_b: turnover_b - ceiling
+expected:
+  headroom_a: 10000
+  excess_b: 10000
+```
+
+## Outputs and self-checks
+
+The reviewer brief must contain: jurisdiction inventory; in-force/future/proposed/unconfirmed status with entity-specific effective date; format and channel decision; ERP/intermediary/accreditation roadmap; retention/residency record; offence-specific penalty exposure; EU ViDA 1 July 2030 transition plan; and individually named [T2]/[T3] reviewer questions. It must be reviewed and signed off by a credentialed e-invoicing/VAT specialist before go-live. This research is not that professional sign-off.
+
+- [ ] Every country of registration, supply and receipt has a separate status and actual application-date record.
+
+- [ ] Turnover reference year, gross/net basis, strict/inclusive threshold, sector and establishment exceptions precede any in-scope conclusion.
+
+- [ ] Schema and transmission channel are selected per flow; B2G, B2B, B2C, SAF-T and reporting are not conflated.
+
+- [ ] Any actual clearance block is distinguished from post-issue reporting; no universal ViDA clearance ban is assumed.
+
+- [ ] ViDA 1 July 2030 reporting and qualified 2035 legacy alignment are planned without replacing today’s national law.
+
+- [ ] Italian foreign-data/SdI and Esterometro replacement exceptions are evaluated separately.
+
+- [ ] Mexican pólizas, catálogo, balanza and CFDI 4.0 linkage is documented without assuming all journals are monthly uploads.
+
+- [ ] Each offence and retention/residency rule has current source proof or a named unusable gap.
+
+- [ ] Each [T2]/[T3] item is a concrete reviewer question, with source-recovery limits and no invented date, amount or platform approval.
+
+- [ ] Acknowledgement, rejection, correction, outages and archive access are tested before any professional go-live approval.
+
+## Prohibitions
+
+1. Do not assume Peppol is universal: FatturaPA, CFDI and NF-e are distinct local formats; EN 16931 does not select a universal network.
+
+2. Do not equate B2G with B2B. Preserve separate Norway, Sweden and Denmark procurement and private-sector scope questions; a historic 2025 voluntary-B2B statement is not a current clearance.
+
+3. Do not replace adopted ViDA dates with guesses about Member State pace; track amendments, domestic implementation and qualified legacy transitions.
+
+4. Do not prohibit centralized clearance solely by citing ViDA; the old “post-clearance only” instruction is corrected above.
+
+5. Do not circumvent a mandate with a PDF or unrelated provider. Determine the actual permitted transition/exception, offence and deduction consequences; no automatic universal penalty or VAT-loss rule is supplied here.
+
+## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax or implementation advice. E-invoicing and SAF-T mandates change frequently with national budget cycles and EU directives. Every output must be reviewed and signed off by a credentialed e-invoicing / VAT specialist before any go-live decision.
+
+## Sources
+
+**Not yet confirmed:** every individually identified scope, phase, schema, penalty, retention and execution question above remains unusable as a filing or go-live instruction. Authority guidance is distinguished from an authenticated operative instrument. This file does not certify software, every later amendment, every country’s complete law or a professional approval.
+
+Source read dates below are actual **2026-11-16** selected operative reads with neighboring conditions, including exact same-day source-body reuse from the invoicing review. Unrelated pages were retrieved only, not whole-read. Failed routes, JavaScript shells, search snippets and RDF metadata are not legal proof. Official-language passages are retained in the external rule ledger; Ministry-hosted English UAE copies and authority FAQs have the limits stated above.
+
+- [PT](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/lei-73-a-2025.pdf): read **2026-11-16** for Article95-1-2. Read in the actual official body at the selected clauses with neighboring conditions.
+- [NO](https://www.skatteetaten.no/en/business-and-organisation/start-and-run/best-practices-accounting-and-cash-register-systems/saf-t-financial/questions-and-answers---saf-t-financial/): read **2026-11-16** for FAQ1-7. Read in the actual official body at the selected clauses with neighboring conditions.
+- [FRFEC](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037526053): read **2026-11-16** for LPFL47A-I-audit-copy. Read in the actual official body at the selected clauses with neighboring conditions. Actual web native-body capture; tool citation wrappers removed while retaining visible anchor text. Raw complete response preserved.
+- [DEFAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html): read **2026-11-16** for FAQ1-8-scope-format-deduction-channel, FAQ11-12-transition-and-receipt. Read in the actual official body at the selected clauses with neighboring conditions.
+- [DE27](https://www.gesetze-im-internet.de/ustg_1980/__27.html): read **2026-11-16** for paragraph38. Read in the actual official body at the selected clauses with neighboring conditions.
+- [FRFAQ](https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/faq---fe_je-decouvre-la-facturation-electronique.pdf): read **2026-11-16** for FAQ1-1-to1-2-scope, FAQ3-1-to3-3-platforms, FAQ4-5-scope-and-calendar. Read in the actual official body at the selected clauses with neighboring conditions.
+- [ESII](https://sede.agenciatributaria.gob.es/static_files/Sede/Procedimiento_ayuda/G417/FicherosSuministros/V_1_1/FaqGral/FAQs_SII_23_04_2026.pdf): read **2026-11-16** for FAQ1-3-to1-5-scope-exceptions, FAQ1-12-issued-received-import-periods, FAQ1-12-rectification-counting-days. Read in the actual official body at the selected clauses with neighboring conditions.
+- [ESVER](https://www.boe.es/eli/es/rd/2023/12/05/1007/con): read **2026-11-16** for final4-Article5, Articles15-16. Read in the actual official body at the selected clauses with neighboring conditions.
+- [ESB2B](https://www.boe.es/eli/es/rd/2026/03/25/238): read **2026-11-16** for final4-commencement. Read in the actual official body at the selected clauses with neighboring conditions.
+- [ESORDER](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-20587): read **2026-11-16** for publication-date, final-only-order-entry. Read in the actual official body at the selected clauses with neighboring conditions.
+- [VIDA](https://publications.europa.eu/resource/celex/32025L0516): read **2026-11-16** for Article1, Article3-platform28a, Article5-217-218, Article5-222-223, Article5-262-263, Article5-271c, Article6, Article7-8, Article3-own-stock-scheme. Read in the actual official body at the selected clauses with neighboring conditions. Only selected operative scopes are claimed read; unrelated pages/remainder not whole-read.
+- [IT](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-11-16): read **2026-11-16** for paragraph3, paragraph3-bis, commencement-update3. Read in the actual official body at the selected clauses with neighboring conditions. Only selected operative scopes are claimed read; unrelated pages/remainder not whole-read.
+- [PTCAL](https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/calendario_fiscal/Documents/Obrigacoes_declarativas.pdf): read **2026-11-16** for invoice-elements-communication. Read in the actual official body at the selected clauses with neighboring conditions.
+- [PLVAT](https://podatki.gov.pl/podatki-firmowe/jednolity-plik-kontrolny/jpk_vat-z-deklaracja/jpk_vat-z-deklaracja): read **2026-11-16** for active-scope-records-quarterly-period. Read in the actual official body at the selected clauses with neighboring conditions.
+- [PLPD](https://podatki.gov.pl/podatki-firmowe/jednolity-plik-kontrolny/jpk_pd/jpk_pd): read **2026-11-16** for five-structures-and-phases. Read in the actual official body at the selected clauses with neighboring conditions.
+- [ROSAFT](https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_1783_2021.pdf): read **2026-11-16** for Annex4-deadlines-and-grace, Annex5-scope-phases-exclusions. Read in the actual official body at the selected clauses with neighboring conditions.
+- [LTSAF](https://www.vmi.lt/evmi/duomenu-teikimas-tikslinimas): read **2026-11-16** for iSAF-scope-and-periods. Read in the actual official body at the selected clauses with neighboring conditions. Actual successful web native body read at the selected clauses; capture URL reconciled with its preserved response on 2026-11-16. Ordinary CLI recovery failed.
+- [LTVAZ](https://www.vmi.lt/evmi/i.vaz1?inheritRedirect=true): read **2026-11-16** for iVAZ-waybills-and-historical-date. Read in the actual official body at the selected clauses with neighboring conditions. Actual successful web native body read at the selected clauses; capture URL reconciled with its preserved response on 2026-11-16. Ordinary CLI recovery failed.
+- [LU](https://pfi.public.lu/fr/professionnel/tva/faia/faia-201.html): read **2026-11-16** for FAIA-guidance-LTVA70-3. Read in the actual official body at the selected clauses with neighboring conditions.
+- [FREFEC](https://www.impots.gouv.fr/les-comptabilites-informatisees): read **2026-11-16** for 2014-audit-start-and-format-reference. Read in the actual official body at the selected clauses with neighboring conditions. Actual web native-body capture; tool citation wrappers removed while retaining visible anchor text. Raw complete response preserved.
+- [HU](https://nav.gov.hu/sajtoszoba/hirek/Felhivas_SAF_T_adatst20191202): read **2026-11-16** for historic-consultation-only. Read in the actual official body at the selected clauses with neighboring conditions.
+- [AT](https://www.bmf.gv.at/themen/steuern/fristen-verfahren/bundesabgabenordnung/standard-audit-file-tax.html): read **2026-11-16** for BAO131-132-extra-XML-format. Read in the actual official body at the selected clauses with neighboring conditions.
+- [GIP](https://www.gipuzkoa.eus/es/web/ogasuna/ticketbai/calendario): read **2026-11-16** for Gipuzkoa-calendar-2022-2023. Read in the actual official body at the selected clauses with neighboring conditions. Actual web native-body capture; tool citation wrappers removed while retaining visible anchor text. Raw complete response preserved.
+- [MX](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/compiladas/Compilado_Tercera_Modificacion_a_la-Resolucion_Miscelanea_Fiscal_para_2026.pdf): read **2026-11-16** for RMF2-8-1-4-to2-8-1-6, RMF2-8-1-8-conditional-journals, RMF2-7-1-2-certification, RMF2-7-1-8. Read in the actual official body at the selected clauses with neighboring conditions. Only selected operative scopes are claimed read; unrelated pages/remainder not whole-read.; Authority compiled current text, not authentic DOF publication; source itself says DOF is required to substantiate legal acts.; SAT compilation is not authentic DOF; actual CFF28 whole current text and Annex24 whole schema not read.
+- [AO](https://portaldocontribuinte.minfin.gov.ao/noticia?id=985537): read **2026-11-16** for notice-general-simplified-VAT-scope. Read in the actual official body at the selected clauses with neighboring conditions.
+- [CV](https://efatura.cv/assets/files/Portaria_n_47_2021_SAF_T_CV-f4cd9d8072a3875ab16872008bf5aa8f.pdf): read **2026-11-16** for Articles1-2-scope, Article5-commencement, AnnexI1-annual-inventory-special-period-rules. Read in the actual official body at the selected clauses with neighboring conditions. Reading-order pdftotext -raw extraction prevents interleaved two-column sentences; original layout extraction and actual official PDF retained.
+- [BG](https://nra.bg/wps/wcm/connect/nra.bg25863/d404df7c-f89d-409d-9039-362a8f71b004/SAF-T%2BBlank_QA_%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%2B2.pdf?CACHEID=ROOTWORKSPACE.Z18_PPGAHG8009LJC0QTR5C2HH30I6-d404df7c-f89d-409d-9039-362a8f71b004-pQ69YDn&MOD=AJPERES): read **2026-11-16** for cover-and-FAQII1-1-toII1-5-initial-scope. Read in the actual official body at the selected clauses with neighboring conditions. Actual web native-body capture; tool citation wrappers removed while retaining visible anchor text. Raw complete response preserved.; Authority March2026 FAQ selected scope only; complete current DOPK statutory phase/filing rules not read.
+- [ITG](https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_compilazione-fe-esterometro-v1-10_aprile_2025): read **2026-11-16** for TD17, TD18, TD19. Read in the actual official body at the selected clauses with neighboring conditions. Only selected operative scopes are claimed read; unrelated pages/remainder not whole-read.
+- [FRDATE](https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation): read **2026-11-16** for calendar. Read in the actual official body at the selected clauses with neighboring conditions.
+- [FRPA](https://www.impots.gouv.fr/facturation-electronique-et-plateformes-agreees): read **2026-11-16** for PA-role-and-compatible-software. Read in the actual official body at the selected clauses with neighboring conditions.
+- [PLS](https://ksef.podatki.gov.pl/informacje-ogolne-ksef-20/zakres-obowiazkowego-ksef/): read **2026-11-16** for scope-and-exclusions. Read in the actual official body at the selected clauses with neighboring conditions.
+- [PLLAW](https://api.sejm.gov.pl/eli/acts/DU/2025/1203/text.pdf): read **2026-11-16** for Article2-145l-m-n, Article2-commencement-and-Article3. Read in the actual official body at the selected clauses with neighboring conditions.
+- [PLFAQ](https://ksef.podatki.gov.pl/wyjasnienia/co-warto-wiedziec-przed-startem-ii-etapu-wdrozenia-krajowego-systemu-e-faktur/): read **2026-11-16** for crossing-and-excluded-sales, phases-B2C-and-FA3-context. Read in the actual official body at the selected clauses with neighboring conditions.
+- [BE](https://efacture.belgium.be/fr/article/pour-qui-la-facturation-electronique-deviendra-t-elle-obligatoire): read **2026-11-16** for covered-and-excluded-persons-transactions-channel. Read in the actual official body at the selected clauses with neighboring conditions.
+- [GR](https://www.aade.gr/en/mandatory-electronic-invoicing-digital-goods-movement-documents-frequently-asked-questions-answers): read **2026-11-16** for FAQ-phases-and-transition, FAQ-authorized-issuance-paths, FAQ-nonissuance-consequences. Read in the actual official body at the selected clauses with neighboring conditions. Actual successful web native body read at the selected clauses; capture URL reconciled with its preserved response on 2026-11-16. Ordinary CLI recovery failed.
+- [HR](https://porezna.gov.hr/fiskalizacija/bezgotovinski-racuni/eracun): read **2026-11-16** for scope-and-solution-choice. Read in the actual official body at the selected clauses with neighboring conditions.
+- [SK](https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DPH/2026/2026.11.10_009_DPH_IM_FaQ__eFakt.pdf): read **2026-11-16** for intro-nonbinding-scope, FAQ14-15-voluntary2026. Read in the actual official body at the selected clauses with neighboring conditions. Authority FAQ expressly nonbinding; actual current statute and full procedure not read.
+- [UK](https://www.gov.uk/government/publications/e-invoicing-implementation-roadmap/roadmap-for-e-invoicing-implementation): read **2026-11-16** for executive-summary-and-future-scope, future-legislation-and-detail. Read in the actual official body at the selected clauses with neighboring conditions.
+- [IE](https://www.revenue.ie/en/corporate/press-office/press-releases/2026/pr-102226-vat-modernisation.aspx): read **2026-11-16** for FinanceBill-proposal-and-announced-phases. Read in the actual official body at the selected clauses with neighboring conditions.
+- [DK](https://erhvervsstyrelsen.dk/vejledning-nye-krav-til-registrerede-bogfoeringssystemer-effektiv-og-sikker-e-fakturering): read **2026-11-16** for voluntary-einvoice-capability-policy. Read in the actual official body at the selected clauses with neighboring conditions.
+- [SE](https://www.upphandlingsmyndigheten.se/digitalisering-och-e-handel/e-handel/regler-for-e-handel-och-e-faktura/): read **2026-11-16** for public-procurement-scope-alternatives-exceptions. Read in the actual official body at the selected clauses with neighboring conditions.
+- [SA](https://zatca.gov.sa/en/E-Invoicing/Introduction/Pages/Roll-out-phases.aspx): read **2026-11-16** for rollout-phases. Read in the actual official body at the selected clauses with neighboring conditions.
+- [U243](https://mof.gov.ae/wp-content/uploads/2025/10/Ministerial-Decision-no.-243-of-2025-on-the-Electronic-Invoicing-System.pdf): read **2026-11-16** for Articles1-6-original-context. Read in the actual official body at the selected clauses with neighboring conditions. Public Ministry-hosted English copy; some publication-date placeholders. Arabic Gazette original not read; no original-language authenticity clearance.
+- [U244](https://mof.gov.ae/wp-content/uploads/2025/10/Ministerial-Decision-No.-244-of-2025-on-the-Implementation-of-the-Electronic-Invoicing-System.pdf): read **2026-11-16** for Articles1-5. Read in the actual official body at the selected clauses with neighboring conditions. Public Ministry-hosted English copy; some publication-date placeholders. Arabic Gazette original not read; no original-language authenticity clearance.
+- [U66](https://mof.gov.ae/wp-content/uploads/2026/05/Ministerial-Resolution-No.-66-of-2026-Amending-Certain-Provisions-of-Ministerial-Resolution-No.-244-of-2025-Regarding-the-Implementation-of-the-Electronic-Invoicing-System-En-20260514.pdf): read **2026-11-16** for ArticleOne-amended5-1-a. Read in the actual official body at the selected clauses with neighboring conditions. Public Ministry-hosted English copy; some publication-date placeholders. Arabic Gazette original not read; no original-language authenticity clearance.
+- [U197](https://mof.gov.ae/wp-content/uploads/2026/10/Ministerial-Decision-No.-197-of-2026-%E2%80%93-Amending-Certain-Provisions-of-Ministerial-Decision-No.-243-of-2025-on-the-Electronic-Invoicing-System_En.pdf): read **2026-11-16** for Articles1-4-amendment. Read in the actual official body at the selected clauses with neighboring conditions. Public Ministry-hosted English copy; some publication-date placeholders. Arabic Gazette original not read; no original-language authenticity clearance.
+- [IL](https://www.gov.il/he/service/verify-vendor-invoice-information): read **2026-11-16** for allocation-thresholds-and-legal-caution. Read in the actual official body at the selected clauses with neighboring conditions. Actual successful web native body read at the selected clauses; capture URL reconciled with its preserved response on 2026-11-16. Ordinary CLI recovery failed.
+- [ILPROC](https://www.gov.il/BlobFolder/policy/inst-071225-1/he/vat_inst-071225-1.pdf): read **2026-11-16** for procedure2025-threshold-context. Read in the actual official body at the selected clauses with neighboring conditions. Actual successful web native body read at the selected clauses; capture URL reconciled with its preserved response on 2026-11-16. Ordinary CLI recovery failed.
+- [IN13](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-13-central-tax-english-2020.pdf): read **2026-11-16** for whole-amending-notification. Read in the actual official body at the selected clauses with neighboring conditions. Only selected operative scopes are claimed read; unrelated pages/remainder not whole-read.
+- [IN61](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-61-central-tax-english-2020.pdf): read **2026-11-16** for whole-amending-notification. Read in the actual official body at the selected clauses with neighboring conditions. Only selected operative scopes are claimed read; unrelated pages/remainder not whole-read.
+- [IN70](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-70-central-tax-english-2020.pdf): read **2026-11-16** for whole-amending-notification. Read in the actual official body at the selected clauses with neighboring conditions. Only selected operative scopes are claimed read; unrelated pages/remainder not whole-read.
+- [IN23](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-23-central-tax-english-2021.pdf): read **2026-11-16** for whole-amending-notification. Read in the actual official body at the selected clauses with neighboring conditions. Only selected operative scopes are claimed read; unrelated pages/remainder not whole-read.
+- [IN10](https://www.gstcouncil.gov.in/sites/default/files/2024-05/10ct_eng.pdf): read **2026-11-16** for whole-amending-notification. Read in the actual official body at the selected clauses with neighboring conditions. Only selected operative scopes are claimed read; unrelated pages/remainder not whole-read.
+- [ID](https://www.pajak.go.id/sites/default/files/2025-02/Pembuatan%20Faktur%20Pajak%20Melalui%20Aplikasi%20E-Faktur%20Client%20Desktop.pdf): read **2026-11-16** for notice1-5-desktop-and-Coretax. Read in the actual official body at the selected clauses with neighboring conditions.
+- [PH26](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%2026-2025.pdf): read **2026-11-16** for Section2-amendedSection6-and-Section3. Read in the actual official body at the selected clauses with neighboring conditions. Scanned law: pages1–3 personally visually read, OCR is a retrieval aid and must be checked against page images. Remaining RR11 pages4–5 not read.; Native selected transcription personally checked against actual pages1–2; no OCR stamp/header artefacts retained. Verbatim duplicate comma and statutory Section14 reference retained.
+- [MX4](https://wwwmat.sat.gob.mx/consultas/35025/formato-de-factura-electronica-%28anexo-20%29): read **2026-11-16** for CFDI4-current-fromApril2023. Read in the actual official body at the selected clauses with neighboring conditions. Only selected operative scopes are claimed read; unrelated pages/remainder not whole-read.
+- [CL](https://www.sii.cl/noticias/2018/010218noti01er.htm): read **2026-11-16** for historical-final-cohort. Read in the actual official body at the selected clauses with neighboring conditions.
+- [AR](https://www.arca.gob.ar/fe/): read **2026-11-16** for current-authority-identity-only. Read in the actual official body at the selected clauses with neighboring conditions. Current authority identity/portal leads only; no substantive scope/schema approval.
+- [PE](https://cpe.sunat.gob.pe/informacion_general/obligados_cpe): read **2026-11-16** for current2026-scope-and-exceptions. Read in the actual official body at the selected clauses with neighboring conditions. Actual successful web native body read at the selected clauses; capture URL reconciled with its preserved response on 2026-11-16. Ordinary CLI recovery failed.
+- [EC](https://www.sri.gob.ec/facturacion-electronica): read **2026-11-16** for electronic-documents-requirements. Read in the actual official body at the selected clauses with neighboring conditions. Actual successful web native body read at the selected clauses; capture URL reconciled with its preserved response on 2026-11-16. Ordinary CLI recovery failed.
+- [UY](https://www.gub.uy/direccion-general-impositiva/comunicacion/noticias/facturacion-electronica-incorporacion-restantes-contribuyentes-iva): read **2026-11-16** for 2025-VAT-scope-and-exclusions. Read in the actual official body at the selected clauses with neighboring conditions.
+- [PLPROPOSAL](https://www.gov.pl/web/finanse/rada-ministrow-za-odroczeniem-kar-za-bledy-w-ksef-i-przedluzeniem-odwrotnego-obciazenia-vat): read **2026-11-16** for government-proposal-not-enactment. Read in the actual official body at the selected clauses with neighboring conditions. 20October2026 government proposal, not final enacted law. Later enactment not recovered.
+- [PH11](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%2011-2025.pdf): read **2026-11-16** in actual scanned pages 1–3 as context to RR26. Remaining pages 4–5 and later RMC98 not read; no complete current execution clearance.
+- [FI](https://www.finlex.fi/fi/lainsaadanto/2019/241): read **2026-11-16** for the complete ordered Finnish sections 1–5, definitions, inline reference labels, commencement and adjacent legislative references, recovered from the preserved server-rendered response. The initial HTML parser omitted this law; the source did not fail to expose it. Cross-referenced Acts and entity-specific application, Finvoice/Peppol implementation and later unreflected amendments remain unconfirmed.
