@@ -1,7 +1,7 @@
 ---
 name: mozambique-income-tax
 description: "Mozambique individual IRPS for 2026: annual scale and minimum, residence, income classification, personal/dependent and foreign-credit conditions, separate employment PAYE and ISPC, with current-form and filing holds."
-version: 0.2
+version: 0.3
 jurisdiction: MZ
 tax_year: 2026
 last_updated: 2026-11-17
@@ -28,7 +28,7 @@ This Guide preserves the annual statutory scale and conditions, but does **not**
 
 ### Annual aggregate scale, not the salary-withholding table
 
-The intervals below reproduce the statute's displayed whole-Metical limits. The subtraction column is the practical tax constant; it is not a personal deduction. Fractional-boundary/filing implementation is not inferred from the continuity checks. Confirm that the input is the properly established annual **rendimento colectavel** for this route, separately from employment, final-rate and autonomous income.
+The intervals below reproduce the statute's displayed whole-Metical limits. The subtraction column is the practical tax constant; it is not a personal deduction. Fractional-boundary/filing implementation is not inferred from the continuity checks. Confirm that the input is the properly established annual **rendimento colectavel** for this route, separately from employment, final-rate and autonomous income. [CIRPS 54(3)](https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf) qualifies this scale where aggregation contains only second-category income from agriculture or livestock: collection cannot exceed the result of the reduced 10% rate referred to in CIRPC 61(2), **during that reduced rate's validity**. Its actual 2026 validity and applicability have not been established. Do not apply or rule out that ceiling, or give an actual annual tax result for that route, until its operative validity and conditions are established; this is not a claim that 10% is currently available.
 
 | Annual collectable income MZN, as printed | Marginal rate | Parcela a abater MZN | Official source |
 |---|---:|---:|---|
@@ -189,11 +189,11 @@ This Guide and its outputs are provided for informational and computational purp
 
 | Official source | URL | Read on / actual scope |
 |---|---|---|
-| CIRPS 2017 enacted Gazette copy, OCAM | https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf | 2026-11-15 retained original read;2026-11-17 focused visual/text review of 26/29/31/54/56/57/59-61/65-A/66/69. Source is an actual Gazette copy, not PwC commentary. |
+| CIRPS 2017 enacted Gazette copy, OCAM | https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf | 2026-11-15 retained original read;2026-11-17 focused visual/text review of 26/29/31/54/56/57/59-61/65-A/66/69, including 54(3) conditional ceiling. CIRPC 61(2) actual 2026 validity was not established. Source is an actual Gazette copy, not PwC commentary. |
 | AT2025 reform Gazette Laws 9/10/11 | https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20FISCAL%2FLEI%2FBR_248_I_SERIE_SUPLEMENTO_2025.pdf | 2026-11-15 actual official download and operative reads;2026-11-17 focused ISPC, income/residence and PAYE review. Commencement 1 January 2026. Not a complete later regulation. |
 | Official AT form catalogue / actual retained M10V | https://www.at.gov.mz/formularios-tributarios | 2026-11-15:actual one-page download fully visually read and compared with text layer. Not a final 2026 form clearance. Catalogue access that failed is not described as read law. |
 | Official 2018 decree copy, partial | https://ocam.org.mz/wp-content/uploads/2024/06/Decreto-51-2018-altera-o-CIRPS.pdf | 2026-11-15:all six odd Gazette pages visually read;2026-11-17 selected pages rechecked. Missing even pages remain missing; no complete-republication claim. |
 | INSS contributor guidance | https://www.inss.gov.mz/direitos-e-obrigacoes-do-contribuinte/ | 2026-11-15; operative rate/registration/payment/carry text reopened/read 2026-11-17. |
 | INSS2024 RSSO | https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf | 2026-11-15 contribution/coverage chapters; retained source bank reused for routed social contribution cases. |
 
-Not yet confirmed: current annual minimum/form arithmetic and exact 2026 M10/M10V fields, fractional annual-band implementation, full current IRPS regulation/calendar and employee filing procedure, particular ISPC eligibility/accounting interaction and collection implementation, autonomous-gain and individual treaty/source/foreign-credit computations, complete CIRPC-specific business-cost restrictions, precise tax fines/juros-de-mora rate, municipal personal tax (old Maputo 510 in 2024 is not a current figure), detailed INSS component exclusions and special schemes. The 2018/2020 complete Gazette mirrors are retained research context, not official-host operative citations. No unverified secondary figure, hidden form text or unnumbered proposal is promoted to current law.
+Not yet confirmed: actual 2026 validity/application of 54(3) agricultural/livestock ceiling and its CIRPC 61(2) dependency, current annual minimum/form arithmetic and exact 2026 M10/M10V fields, fractional annual-band implementation, full current IRPS regulation/calendar and employee filing procedure, particular ISPC eligibility/accounting interaction and collection implementation, autonomous-gain and individual treaty/source/foreign-credit computations, complete CIRPC-specific business-cost restrictions, precise tax fines/juros-de-mora rate, municipal personal tax (old Maputo 510 in 2024 is not a current figure), detailed INSS component exclusions and special schemes. The 2018/2020 complete Gazette mirrors are retained research context, not official-host operative citations. No unverified secondary figure, hidden form text or unnumbered proposal is promoted to current law.
