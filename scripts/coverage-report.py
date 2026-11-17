@@ -316,6 +316,8 @@ def build_report(today=None):
         "states": {s: sum(1 for r in rows if r["state"] == s) for s in STATES},
         "with_readme": sum(1 for r in rows if r["has_readme"]),
         "reviewed_skills": index["counts"]["accountant_reviewed"],
+        "approvers": len({(a.get("by") or "").strip() for r in rows for a in r["approved"] if (a.get("by") or "").strip()}),
+        "approver_places": sum(1 for r in rows if any((a.get("by") or "").strip() for a in r["approved"])),
         "at_standard": sum(r["at_standard"] for r in rows),
         "below_standard": sum(len(r["below_standard"]) for r in rows),
         "rows": rows,

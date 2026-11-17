@@ -1,22 +1,79 @@
 # OpenAccountants
 
-**Open tax skills for AI.** Your AI answers tax questions from memory. Add these skills and it answers from the law: every rate, threshold and deadline cited to its official source, for 190+ jurisdictions.
+**Tax skills for AI, written from the law and approved by named accountants.** Your AI answers tax questions from memory. Add these skills and it answers from the law: every rate, threshold and deadline links to the official page it came from, and each skill says which accountant, if any, has approved it.
 
-[![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-047857)](LICENSE)
-[![PyPI](https://img.shields.io/pypi/v/openaccountants-mcp?label=openaccountants-mcp&color=047857)](https://pypi.org/project/openaccountants-mcp/)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/openaccountants/openaccountants/badge)](https://securityscorecards.dev/viewer/?uri=github.com/openaccountants/openaccountants)
+[![Skill checks](https://github.com/openaccountants/openaccountants/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/openaccountants/openaccountants/actions/workflows/validate.yml)
+[![Approved by accountants](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fopenaccountants%2Fopenaccountants%2Fstatus-data%2Fstatus.json&query=%24.approvers&label=named%20accountants&color=047857)](#the-accountants)
+[![MCP Registry](https://img.shields.io/badge/MCP_Registry-listed-047857)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.openaccountants/openaccountants)
+[![License: AGPL-3.0](https://img.shields.io/badge/code-AGPL--3.0-047857)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/openaccountants/openaccountants?style=social)](https://github.com/openaccountants/openaccountants/stargazers)
 
-<!-- oa-stats:start -->
-**2,132 AI skills** across **249 jurisdictions** · **33 accountant-reviewed** · **39 named accountants** · **6,115 questions answered** through connected AIs
+<a href="https://glama.ai/mcp/servers/openaccountants/openaccountants"><img width="380" height="200" src="https://glama.ai/mcp/servers/openaccountants/openaccountants/badges/card.svg" alt="OpenAccountants MCP server on Glama" /></a>
 
-<sub>Live from openaccountants.com — updated 2026-10-30 by the nightly sync.</sub>
+<!-- oa-stats:start -->
+**34 named accountants** approving skills in **28 countries and states** · skills for **283 countries, states and territories** · every figure linked to its official source
 <!-- oa-stats:end -->
 
 ---
 
-## Find your country
+## The accountants
 
-**[Browse all countries](skills/COUNTRIES.md)**, by region, with the state of each pack. United States: [federal](skills/us/federal/) and [states](skills/us/states/).
+A skill shows **Approved by [name]** only when a licensed accountant read that exact text and approved it from their own GitHub account. If the text changes, the approval is cleared until they approve again. These are the accountants on the record today, by country, read from the skill files themselves:
+
+<!-- oa-accountants:start -->
+| Country or state | Accountants |
+|---|---|
+| Australia | Ryan Duguid |
+| California (US) | DeFiAccountant21 |
+| Canada | Khushboo Talreja, Nathan Wiebe |
+| Dominican Republic | Miguel Lantigua |
+| Egypt | Ahmed Hassan |
+| Florida (US) | Rob Hoffman |
+| Georgia | Gvantsa Amiridze |
+| Georgia (US) | Jeff Watts |
+| India | Arshad raza |
+| Indonesia | RILIA PUTRI |
+| Kenya | Julian Njoroge Maina |
+| Malaysia | MUHAMMAD HANIS MAT HUSSIN |
+| Malta | Michael Cutajar, Michael Spiteri Staines |
+| Nepal | Ashish Bista |
+| Nigeria | Omolola Fasasi |
+| Pakistan | Ibrar Ali |
+| Saudi Arabia | Mehran Habib |
+| Serbia | Andrija Eminovic |
+| South Africa | Brandon Iverach, Werner Britz |
+| South Korea | Yeong Min Lee |
+| Spain | Jeff Watts |
+| Sri Lanka | Lal kumarasiri |
+| Tanzania | Baraka Cassian |
+| Tunisia | firas masmoudi |
+| Turkey | Yiğit Çelikel |
+| United Arab Emirates | Jonathan I. Ruiz |
+| United Kingdom | James Power, Nadir Khan |
+| United States (federal) | Anthony Bandura, Christopher Aryee, James Wallach, Vladimir Andjelic |
+<!-- oa-accountants:end -->
+
+**Are you an accountant?** Approve the skills for your country and your name appears next to every AI answer that uses them, in ChatGPT, Claude and Cursor. It takes one click from the [accountant portal](https://www.openaccountants.com/for-accountants), from your own GitHub account. Found something wrong? Correct it in the same place. Each accountant works under their own licence; OpenAccountants does not sell accountancy services.
+
+---
+
+## Every figure has a source
+
+A tax answer is only as good as the number in it. So every figure in a skill sits in a row that links the official page it came from, and the page can be opened and checked by anyone. A real row, from the Malta VAT skill:
+
+| Activity | Registration threshold | Exit threshold | Source |
+|---|---|---|---|
+| Economic activities consisting principally in the supply of goods | €35,000 | €28,000 | https://legislation.mt/getpdf/67691cdeb52f1d38d8a4103f |
+
+What keeps those figures honest:
+
+- **Official sources only.** Laws, gazettes and tax authority pages; never blogs or firm summaries.
+- **The figure check.** On every pull request, each figure in a rates table is looked for on the page its row links to. A figure that is not there blocks the merge until it is fixed or explained.
+- **The evidence archive.** Snapshots of the source pages and the working ledgers behind the skills live in [openaccountants/evidence](https://github.com/openaccountants/evidence), so a figure can still be traced after a government site changes.
+- **Worked examples that add up.** Every skill's examples are recomputed on every pull request.
+
+How skills are built, checked and corrected: [docs/ACCURACY-METHODOLOGY.md](docs/ACCURACY-METHODOLOGY.md).
 
 ---
 
@@ -28,21 +85,34 @@ Add this address to Claude, ChatGPT, Cursor, Windsurf or any AI that takes a con
 https://www.openaccountants.com/api/mcp
 ```
 
-Guided setup: **[openaccountants.com/connect](https://www.openaccountants.com/connect)**
+Guided setup: **[openaccountants.com/connect](https://www.openaccountants.com/connect)**. Then ask a question your AI would otherwise guess at:
 
-Then ask a question your AI would otherwise guess at:
-
-> *"What's the combined sales tax rate in Manatee County, Florida for 2026?"*
+> *"I'm a freelancer in Malta billing €40,000 this year. Do I have to register for VAT?"*
 
 <details>
 <summary><strong>Prefer self-hosting or manual files?</strong></summary>
 
 - **Python MCP server:** [install the tested GitHub revision](mcp/README.md). The current PyPI release is older and has no bundled skills.
-- **Manual:** download your jurisdiction's folder from [`packages/`](packages/) and upload the files to your AI. Start with your country's main package; `index.json` is the machine-readable inventory.
+- **Manual:** download your jurisdiction's folder from [`packages/`](packages/) and upload the files to your AI. `index.json` is the machine-readable inventory.
 
-Also listed on [Smithery](https://smithery.ai/server/info-ood9/openaccountants) and the [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.openaccountants/openaccountants).
+Also listed on the [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.openaccountants/openaccountants) and [Glama](https://glama.ai/mcp/servers/openaccountants/openaccountants).
 
 </details>
+
+---
+
+## Find your country
+
+**[Browse all countries](skills/COUNTRIES.md)**, by region, with the state of each pack. United States: [federal](skills/us/federal/) and [states](skills/us/states/).
+
+Each skill carries one of two labels:
+
+| Label | Meaning |
+|---|---|
+| **Approved by [name]** | A named, licensed accountant approved this exact text from their own GitHub account. |
+| **Not yet approved** | Built from the law and checked before merge, but no accountant has approved it yet. |
+
+⚠️ **General reference, not advice.** Skills may be incomplete, outdated, or wrong for your facts. Have a qualified professional review outputs before filing, payment, or action.
 
 ---
 
@@ -50,54 +120,11 @@ Also listed on [Smithery](https://smithery.ai/server/info-ood9/openaccountants) 
 
 Three ways in, all in **[CONTRIBUTING.md](CONTRIBUTING.md)**:
 
+- **I am an accountant.** Approve or correct the skills for your country, under your own name.
 - **I can write.** Take a country and write its missing skills from the law.
-- **I am an accountant.** Review a skill and put your name on it.
-- **I found a mistake.** Open an issue with the source that shows it.
+- **I found a mistake.** Open an issue with the official source that shows it.
 
----
-
-## How to read a skill
-
-Every skill shows **Built from the law**. An approved accountant publishing their own professional work is also its approver; they record their own approval in the original PR. No second accountant or separate approval PR is required. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
-
-Each skill has one approval status:
-
-| State | Meaning |
-|---|---|
-| **Approved by [name]** | The accountant's approval is recorded with `tier: 1`, `reviewed_by` and `reviewed_on`. The website resolves that name to a current approved accountant account. |
-| **Not yet approved** | No named accountant approval is recorded. Independent source checking before merge is separate from professional approval. |
-
-The definitions: [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md). How skills are built, checked and corrected: [docs/ACCURACY-METHODOLOGY.md](docs/ACCURACY-METHODOLOGY.md). Which number to quote and where it is measured: [docs/COVERAGE.md](docs/COVERAGE.md).
-
-⚠️ **General reference, not advice.** Skills may be incomplete, outdated, or wrong for your facts. Have a qualified professional review outputs before filing, payment, or action.
-
----
-
-## Need the work done?
-
-OpenAccountants also does the bookkeeping, VAT, payroll and tax work for businesses, in the countries they work in. [Talk to us](https://www.openaccountants.com/tax-help?source=github_readme#book). The skills and the AI connection stay free.
-
----
-
-## How it stays accurate
-
-A tax library is only as good as its worst stale number, so machines re-check this one
-every night:
-
-- **The maths check** re-reads every skill and flags sums that do not add up, tax bands
-  with gaps, totals that do not total, and years that disagree.
-- **The source watch** visits the official pages the figures came from and raises a hand
-  when a page changes.
-- **The refresh engine** re-derives the stalest skills from official sources on a fixed
-  monthly budget, refusing to publish any figure without a link.
-- **The nightly exam** tests whether AIs actually said what the skills say that day, or
-  improvised. Improvisation gets caught, counted and fixed at the source.
-
-GitHub is the source of truth for skill documents. Merged PRs are delivered to the
-platform and checked against the published content. Generated packages and indexes
-are refreshed by the scheduled sync. A merge alone does not prove that a skill is live.
-
-The whole story, in plain words: [openaccountants.com/how-it-works](https://www.openaccountants.com/how-it-works)
+Need an accountant for your own bookkeeping, VAT, payroll or return? [Get in touch](https://www.openaccountants.com/contact) and we will put you in touch with one in your country.
 
 ---
 
@@ -107,10 +134,10 @@ The whole story, in plain words: [openaccountants.com/how-it-works](https://www.
 |---|---|
 | Skill source (per jurisdiction) | [`skills/`](skills/) |
 | Per-country bundles (generated) | [`packages/`](packages/) |
-| Machine-readable inventory | [`index.json`](index.json) |
-| LLM entry point | [`llms.txt`](llms.txt) |
+| Machine-readable inventory | [`index.json`](index.json) · [`llms.txt`](llms.txt) |
+| What is left, per country (rebuilt daily) | [`status.json`](https://github.com/openaccountants/openaccountants/blob/status-data/status.json) |
 | Python MCP server | [`mcp/`](mcp/) · [PyPI](https://pypi.org/project/openaccountants-mcp/) |
-| Repo architecture + sync | [`docs/REPO-LAYOUT.md`](docs/REPO-LAYOUT.md) · [`docs/WEBSITE-SYNC.md`](docs/WEBSITE-SYNC.md) |
+| Repo layout and sync | [`docs/REPO-LAYOUT.md`](docs/REPO-LAYOUT.md) · [`docs/WEBSITE-SYNC.md`](docs/WEBSITE-SYNC.md) |
 
 API and platform integrations: [openaccountants.com/for-developers](https://www.openaccountants.com/for-developers)
 
