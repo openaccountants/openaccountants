@@ -1,0 +1,86 @@
+{
+  "reviewed_on": "2026-11-16",
+  "reviewer": "independent AI /root/review_li_fi",
+  "outcome": "pass_focused_CI_addendum",
+  "guide": "skills/hungary/hungary-einvoice.md",
+  "reviewed_sha256": "062d05e02362a591380588635bd93a76d66000deeffe85f47d2defd382c2d762",
+  "prior_reviewed_sha256": "201a521235e6ac90989018916240b81d02ea5cf0832908f7082f1452ef60cd67",
+  "scope": "Five source-column additions only; removing these additions exactly restores the prior accepted Guide bytes.",
+  "manual_occurrence_checks": 8,
+  "automatic_new_numeric_matches": 0,
+  "parser_behavior": "The supported phrase in words on the page skips numeric comparisons for each annotated row. These are eight manual source-to-numeral matches, not new automatic numeric matches.",
+  "row_checks": [
+    {
+      "row": "Data report missed, late, incomplete, wrong or untrue",
+      "article": "229; 220(1)",
+      "huf_numeral": "1,000,000",
+      "native_amount": "egymillió",
+      "person_scope": "non-natural person",
+      "outcome": "manual_match_pass"
+    },
+    {
+      "row": "Data report missed, late, incomplete, wrong or untrue",
+      "article": "229; 220(1)",
+      "huf_numeral": "400,000",
+      "native_amount": "négyszázezer",
+      "person_scope": "natural person",
+      "outcome": "manual_match_pass"
+    },
+    {
+      "row": "Any other breach of a tax-law duty (general fine)",
+      "article": "220(1)",
+      "huf_numeral": "400,000",
+      "native_amount": "négyszázezer",
+      "person_scope": "natural person",
+      "outcome": "manual_match_pass"
+    },
+    {
+      "row": "Any other breach of a tax-law duty (general fine)",
+      "article": "220(1)",
+      "huf_numeral": "1,000,000",
+      "native_amount": "egymillió",
+      "person_scope": "non-natural person",
+      "outcome": "manual_match_pass"
+    },
+    {
+      "row": "Failure to issue an invoice, simplified invoice or receipt, or issuing one not for the real consideration",
+      "article": "228(1)(a)",
+      "huf_numeral": "2,000,000",
+      "native_amount": "kétmillió",
+      "person_scope": "taxpayer",
+      "outcome": "manual_match_pass"
+    },
+    {
+      "row": "Failure to keep records",
+      "article": "228(1)(b)",
+      "huf_numeral": "2,000,000",
+      "native_amount": "kétmillió",
+      "person_scope": "taxpayer",
+      "outcome": "manual_match_pass"
+    },
+    {
+      "row": "Printed invoices or receipts not kept",
+      "article": "228(3)",
+      "huf_numeral": "200,000",
+      "native_amount": "kettőszázezer",
+      "person_scope": "natural person",
+      "outcome": "manual_match_pass"
+    },
+    {
+      "row": "Printed invoices or receipts not kept",
+      "article": "228(3)",
+      "huf_numeral": "500,000",
+      "native_amount": "ötszázezer",
+      "person_scope": "non-natural person",
+      "outcome": "manual_match_pass"
+    }
+  ],
+  "source_url": "https://njt.jog.gov.hu/jogszabaly/2017-150-00-00",
+  "source_local_snapshot": "hungary/cache/tax-procedure.txt",
+  "source_sha256": "08066556576f55ec3272a20cf108d8d0a90c0913cbaa2f8ba19951f21ec9a585",
+  "conditions": "Art 220(1) maxima remain ceilings. Art 229 multiplies the general taxpayer maximum by affected invoices/documents. Art 228(1) applies to both (a) and (b). Art 228(3) remains a ceiling multiplied by missing printed invoices/receipts, used or unused.",
+  "unchanged_review": "Canonical REPORT.md / RECEIPT.json source reads, 160-row inventory, 171 preservation destinations, three arithmetic controls and all holds remain applicable. VAT Guide is unchanged.",
+  "tests": "No source scan or suite rerun. Inspected the actual required CI failure and existing parser exception implementation. Parent owns the CI rerun.",
+  "open_findings": [],
+  "professional_approval": false
+}

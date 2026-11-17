@@ -1,0 +1,213 @@
+{
+  "schema": 1,
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "fc3c4930420386744577eda6d6243b9af4961ea2509b90ff07d6ec7818bdebfc",
+  "archive_bytes": 39684,
+  "content_commit": "6b8dfbac372cc34cc3bae902815b1cdc835e85d2",
+  "guide": {
+    "head": "6b8dfbac372cc34cc3bae902815b1cdc835e85d2",
+    "base": "bbab4f1a6d82cace432e6ca8eda89c98ffb1c038",
+    "file": "skills/angola/ao-company-formation.md",
+    "sha256": "271b21dc1bf18406c1970cbc942ca8ebb9c1ee739e8049725f432715971be607",
+    "original_sha256": "9682b0ad8b2f8a22e4a8cb6d3be7ba6826440d6acd101f301075735fa2bc4904",
+    "original_bytes": 3899,
+    "candidate_bytes": 26964,
+    "ledger_rows": 42,
+    "original_nonblank_lines_mapped": 23,
+    "original_case_count": 0,
+    "new_cases": 2,
+    "independent_review": "QUALIFIED PASS; independent-review/REVIEW.json, exact content head/hash; no accountant approval",
+    "push_pr_merge_prod": "none",
+    "prior_checked_head": "3bb2e70074fdeaebbcf03463a98b8612fc4a8662",
+    "correction": "AO-F01: historical2004 shareholder counts; current-count nonusablehold (Law11/15 art2(b)/19). No case/calculator/input changes."
+  },
+  "files": [
+    {
+      "path": "INDEX.json",
+      "bytes": 7026,
+      "sha256": "0e8530b50d8f402765bd1df84613c1e289b4f2e4f7c9e3e544b544a5f00e6b2d"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 5709,
+      "sha256": "5b2d96c889d23edaae6ecab4148a98b94554c9a03f890aa24eea6e221185f8da"
+    },
+    {
+      "path": "independent-review/ARITHMETIC.json",
+      "bytes": 740,
+      "sha256": "505b685cdcf1dba635550f3f294f8646a80259c6be939bde50a3ac66d935192e"
+    },
+    {
+      "path": "independent-review/FINDINGS.json",
+      "bytes": 1088,
+      "sha256": "0a943b91323f7df54eab4b2a5533d4a21b49ff50910e05948eaa3ff6b490fb5b"
+    },
+    {
+      "path": "independent-review/INITIAL-BINDINGS.json",
+      "bytes": 626,
+      "sha256": "a1ff7e9fb3e73bc77af4d1e9ce45d763483db2cced7a5e0676f7ac8136353397"
+    },
+    {
+      "path": "independent-review/PRESERVATION.json",
+      "bytes": 12995,
+      "sha256": "088a1ebb920c78316a2e548023037bdf9270214bd85dc9895a4d72c435d491df"
+    },
+    {
+      "path": "independent-review/PUBLIC-MANIFEST.json",
+      "bytes": 1277,
+      "sha256": "d49635e1d04532cfcccea55a30c8fa414e7b68603e09ce92dcbd395dc84db88a"
+    },
+    {
+      "path": "independent-review/REVIEW.json",
+      "bytes": 2822,
+      "sha256": "28506863525ef747a9061bdf17cb94fe605fd463b0209975ef37bd0c61e9072d"
+    },
+    {
+      "path": "independent-review/REVIEW.md",
+      "bytes": 3361,
+      "sha256": "53ec40848c6d9a707624ebc595be143ab9a1a7eb760faa4aabf14abc77987683"
+    },
+    {
+      "path": "independent-review/ROW-ASSESSMENTS.json",
+      "bytes": 22381,
+      "sha256": "0034c55d0b2376ab77df37cbc4111c93d622c815a8f324199d74841395ac864d"
+    },
+    {
+      "path": "independent-review/SOURCE-READS.json",
+      "bytes": 4684,
+      "sha256": "dacb2683cd966494b902d2e929bf0a792f29ea97bdf9d24b110790e57ba0618f"
+    },
+    {
+      "path": "source-receipts/cmc-fetch.json",
+      "bytes": 924,
+      "sha256": "8c7d94171aa28ab0c3665efd9c46bc608bfada00b485e1a6b3fd06d4719ebef2"
+    },
+    {
+      "path": "source-receipts/fetch-receipt.json",
+      "bytes": 574,
+      "sha256": "f109b0b682c856ed1b622e205744de157af24aea71d5c7e23a8ac92a8b6075e6"
+    },
+    {
+      "path": "source-receipts/source-urls.json",
+      "bytes": 853,
+      "sha256": "ba8464da9409d2d1c962931fee378b83380ae2ec59ea517e0bc4582121f8d910"
+    },
+    {
+      "path": "source-receipts/tax-onboarding-fetch.json",
+      "bytes": 820,
+      "sha256": "1464f1c4e9e576261ac9d9df83549378c6bbdfb9c3c94ea26867627ea237f37b"
+    },
+    {
+      "path": "writer/AO-F01-delta-checks.json",
+      "bytes": 485,
+      "sha256": "18e2adb2da8de17a73f4d878bece04991625f029f1e5160cb4a84586c586ca17"
+    },
+    {
+      "path": "writer/REPORT.md",
+      "bytes": 3694,
+      "sha256": "460bad4bae6faf89c29a49c13f12331054537db44018d44f4ca6b030cd578a8b"
+    },
+    {
+      "path": "writer/access-and-recovery.md",
+      "bytes": 1618,
+      "sha256": "983e72ff530f0227d9c3d67548e43fc880281f1db90fcba85b29fd2d840b4886"
+    },
+    {
+      "path": "writer/calculator-quotes.log",
+      "bytes": 204,
+      "sha256": "d686fbfae7227ebbdbd94b6f2adff11b7ff84c2eba05f6ce544a66be9837d4c3"
+    },
+    {
+      "path": "writer/calculator-tests.log",
+      "bytes": 195,
+      "sha256": "43ae634b80607f45cd6554d2e774436bfd15c121826044d3d7a22e2c04617275"
+    },
+    {
+      "path": "writer/candidate.json",
+      "bytes": 862,
+      "sha256": "c48c4d8f91b9fcffaa048d96c3387025a80ffce2fd31be7db2eb22ffd1e8d63a"
+    },
+    {
+      "path": "writer/checks.json",
+      "bytes": 1460,
+      "sha256": "fee0c6772731ebc8887e37caeed0fce952aaa96c72a2caf491b31b05711f5f5a"
+    },
+    {
+      "path": "writer/copy-tests.log",
+      "bytes": 169,
+      "sha256": "ca8375611b81ac9129ccd426db4ed2f449579dbe6a8f1b4b541cebbb0a4f132a"
+    },
+    {
+      "path": "writer/examples.log",
+      "bytes": 149,
+      "sha256": "495c3a36c4b713d1ebc91577448084e2029a068eb5ead65570c9b0b9735d7a1b"
+    },
+    {
+      "path": "writer/git-status-network-failure.log",
+      "bytes": 394,
+      "sha256": "293afb9d1d0dd02e72744b895a14fb798770fe7bf4d582ccc7c68776d0d86b8d"
+    },
+    {
+      "path": "writer/ledgers/ao-company-formation-old-topics.json",
+      "bytes": 8645,
+      "sha256": "40a0c073ea726832c28422cbb536492b03866fb8d0d82acc7f1aee755ef0228e"
+    },
+    {
+      "path": "writer/ledgers/ao-company-formation-old-topics.md",
+      "bytes": 7883,
+      "sha256": "6e03c21071cf030db8493e42f30c3e7b56c01f289103fd8135d3fef10087242b"
+    },
+    {
+      "path": "writer/ledgers/ao-company-formation.json",
+      "bytes": 23567,
+      "sha256": "6df4f215d389180fecd9f6135e6c26cbdb7e7bdcc2de6f089e50df65a970ff7c"
+    },
+    {
+      "path": "writer/ledgers/ao-company-formation.md",
+      "bytes": 18448,
+      "sha256": "8fab5846f5e5053ca630560b2f386125a9ace61120a021087a29430f46c8a930"
+    },
+    {
+      "path": "writer/open-pr-complete-files-before-edit.json",
+      "bytes": 46673,
+      "sha256": "51f2db3a204f0a7f6fdb4318f4bc4d96dc1c234a9c0f23f7ed4d03ebb3c95792"
+    },
+    {
+      "path": "writer/original-ao-company-formation.md",
+      "bytes": 3899,
+      "sha256": "9682b0ad8b2f8a22e4a8cb6d3be7ba6826440d6acd101f301075735fa2bc4904"
+    },
+    {
+      "path": "writer/row-sources.log",
+      "bytes": 647,
+      "sha256": "eb5d45be02a84faf016b49233a6392180b714d99f41c1c8fbb2a06323e7211ee"
+    },
+    {
+      "path": "writer/skill-checks.log",
+      "bytes": 224,
+      "sha256": "315805ff9100160f36977448891347e0a3ab5db499165186af77d5ec55bff3e1"
+    },
+    {
+      "path": "writer/source-read-scopes.json",
+      "bytes": 4465,
+      "sha256": "897bfd96e902cee14088d05fe1c8043a0daff1adbd39e2b91bb9f33b7b78f125"
+    },
+    {
+      "path": "writer/sync-integrity.log",
+      "bytes": 192,
+      "sha256": "baffe8fa49e2280cee1cfc1757c044564bfa01122002d68f38203b337752130d"
+    },
+    {
+      "path": "writer/validate-guides.log",
+      "bytes": 268,
+      "sha256": "782a1903faba1b5f62b287fcc09d3439f0403c9c3cac351eee1a8c3c55fbe085"
+    },
+    {
+      "path": "writer/validation-diagnostic-failure.log",
+      "bytes": 624,
+      "sha256": "702b1370e186a27c154369f917544d86d3cc04eecf1ea2757849112df1bf9d44"
+    }
+  ],
+  "readable_report_sha256": "5b2d96c889d23edaae6ecab4148a98b94554c9a03f890aa24eea6e221185f8da",
+  "raw_full_sources_included": false
+}

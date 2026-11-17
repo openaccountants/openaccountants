@@ -1,0 +1,528 @@
+{
+  "scope": "global-reviewed-cohort",
+  "wrapper_date": "2026-11-16",
+  "reviewed_source_commit": "277b0bad2c2a15750f2b1b6105068eaf684dc6e4",
+  "full_composition_parent": "1e622bc001979ed514d8b0827e4bb7705c81d2b3",
+  "archive": {
+    "path": "review-evidence.tar.gz",
+    "bytes": 178495,
+    "sha256": "ced474ebb1f2682defd9af12896a58be9f4606f9fd50afc5a680f96064032320",
+    "format": "tar.gz; USTAR; lexicographic regular files; uid/gid/mtime0; mode0644; empty names; gzip filename empty,mtime0,compression9",
+    "member_count": 41,
+    "payload_bytes": 1501007
+  },
+  "readable_report": {
+    "path": "REPORT.md",
+    "bytes": 15408,
+    "sha256": "021b8065d72043f7ed98b6ee94592cabfe68a1c1a0ae8103d167230d14a19a25",
+    "verbatim_final_report_path": "public-evidence/source-delta/REPORT.md",
+    "verbatim_final_report_sha256": "8d36cf18269b440b6246024b4df3bc001db2c06eba96ec2d492e508c36bd6703"
+  },
+  "complete_relative_path_inventory": [
+    {
+      "path": "public-evidence/boundaries/local-only-evidence-manifest.json",
+      "bytes": 176136,
+      "sha256": "5e2c7b3bfd3fadc7d87d3eaa99cecab46cdd6fd567e182dd1747152af88abb88",
+      "purpose": "Hash/path/reason metadata for403 local-only artifacts, not their underlying bodies",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/composition/REPORT.md",
+      "bytes": 11768,
+      "sha256": "6b39ab62df0e1740b78b3ab482b67b8030707ab859a96cc2be6e7979503f0c5e",
+      "purpose": "Approved public-safe composition/source/case/hash projection",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/composition/case-recomputation.json",
+      "bytes": 42471,
+      "sha256": "38089cdd25de3348403fd693d618be9058633eed313ca531615f15e99b8fcefe",
+      "purpose": "Approved public-safe composition/source/case/hash projection",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/composition/exact-bindings.json",
+      "bytes": 27106,
+      "sha256": "1f38e2de062c11d13710773aadc492991ac2ecf10bd0e8432ae84833a3657e19",
+      "purpose": "Approved public-safe composition/source/case/hash projection",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/composition/review-chain-summary.json",
+      "bytes": 27317,
+      "sha256": "1c92eadc6885a380446911e77fe1065408bb1be49622e299afbd58d041fcbd25",
+      "purpose": "Approved public-safe composition/source/case/hash projection",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/current-checks/examples.txt",
+      "bytes": 60,
+      "sha256": "449928f8ded873914fa72ef907fd241416c940fafe8cd40aab70970912c63d75",
+      "purpose": "Actual exact-head terminal machine check; unreadable and zero-row coverage limits retained",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/current-checks/quotes.txt",
+      "bytes": 669,
+      "sha256": "aa0ade6df4dc8ed2813bf606009399688caf8ec0def4efc278502831aeb92aa1",
+      "purpose": "Actual exact-head terminal machine check; unreadable and zero-row coverage limits retained",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/current-checks/row-sources-result.json",
+      "bytes": 70,
+      "sha256": "c9c5d055912ef4cb087ea56ef146e22742e36564adf0f9309ef7d9f26c232d1b",
+      "purpose": "Actual exact-head terminal machine check; unreadable and zero-row coverage limits retained",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/current-checks/row-sources.txt",
+      "bytes": 5664,
+      "sha256": "11feea7d53b326a90698aed6268269fa8993ba8fe957ee4c8425a0b8995bef98",
+      "purpose": "Actual exact-head terminal machine check; unreadable and zero-row coverage limits retained",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/current-checks/standards.json",
+      "bytes": 1430,
+      "sha256": "8ea0a52564c0c3a8081d22d98fcbf0a42d1a727f6d28c0f7a8f172e162204506",
+      "purpose": "Actual exact-head terminal machine check; unreadable and zero-row coverage limits retained",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/current-checks/sync.txt",
+      "bytes": 82,
+      "sha256": "bedd4b80ac243b16750369a4894220961bb3e7bc57d9f0ca973c9117a27c3bff",
+      "purpose": "Actual exact-head terminal machine check; unreadable and zero-row coverage limits retained",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/current-checks/validate.txt",
+      "bytes": 194,
+      "sha256": "dc7eae9625afd9e3c95dcc8f21d9d8d55f84cd4d97975e0d819ba2bbe10c67df",
+      "purpose": "Actual exact-head terminal machine check; unreadable and zero-row coverage limits retained",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/initial-figure-diagnostic/REPORT.md",
+      "bytes": 10222,
+      "sha256": "46240359ae0d825d04dcd9691c3586ff531a78229c3a52ec15a3d2e8ad9890c2",
+      "purpose": "Historical initial10MISS diagnostic and bounded unchanged-checker replay; final terminal log supersedes pending status",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/initial-figure-diagnostic/initial-row-sources.txt",
+      "bytes": 8162,
+      "sha256": "31509d01f37b43a7b56aee39d191d219ae98c37a3ad2258078a28c6c8fd7c7ac",
+      "purpose": "Historical initial10MISS diagnostic and bounded unchanged-checker replay; final terminal log supersedes pending status",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/initial-figure-diagnostic/target-row-proofs.json",
+      "bytes": 3893,
+      "sha256": "aeb23f2d2ff8e88abb5d77ec7411deae1f3e7d30e77be4df7dd803b7bfb05d38",
+      "purpose": "Historical initial10MISS diagnostic and bounded unchanged-checker replay; final terminal log supersedes pending status",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/independent-cbam/FINAL-REVIEW.md",
+      "bytes": 4346,
+      "sha256": "8afa0307a0a3216c48a8b598b2afe712ab67e987e023d90bb8fbacee37a83b3f",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/independent-cross-border-vat/FINAL-REVIEW.md",
+      "bytes": 5502,
+      "sha256": "e67f7aa27704191d782ceb451dbfc139db9bfc6ee392cafb029035e1e8f2579e",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/independent-dst/REVIEW-81077286.md",
+      "bytes": 1942,
+      "sha256": "3b22d93203ca3e6a76685c7372149de2a71da1aa0b31d89fc92ef15c3ce03109",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/independent-dst/REVIEW-be6e51f5.md",
+      "bytes": 4095,
+      "sha256": "13cba53e154b139be2db8390487bbcf8f6cdbe2b78b8e809f1f32ea9563597d9",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/independent-eu-directives/FINAL-REVIEW.md",
+      "bytes": 4970,
+      "sha256": "2dcde628640fdec2c28af45ef2b5827c5ba747f6d3f86e05f26afed68df50b18",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/independent-eu/FINAL-REVIEW-289ea8e8.md",
+      "bytes": 5501,
+      "sha256": "dfd8d07fbcae82ae8f831b0b83eb96afdec8ca96debd5d1409ae57f62daebcde",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/independent-research-template/review.md",
+      "bytes": 4787,
+      "sha256": "c2252e727286a8c8bedd443da129140020ef9936e320d5f7bdd76f5d6dc61abf",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/independent-tax-research-recovery/review.md",
+      "bytes": 5325,
+      "sha256": "12cfe72ae14aa83a1bae7713d2b4a78f21823590f26d61f0f1ed2c7f2d0302a6",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/independent-vat-master/final-ledger-review.md",
+      "bytes": 1751,
+      "sha256": "ec1ac3470b633f8b97824ec7be5b8f9112912b29c4445aaa1bf9f13fcd2f4551",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/resume-2026/independent-review/dst-freeze-d4f875641/FINAL-REUSE-AUDIT.md",
+      "bytes": 2474,
+      "sha256": "9317b25affc0197835a5cb4891e84ce806d14ce08191cdbef5efca1ee732786b",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/resume-2026/independent-review/dtt-native-delta-49d0072f/FINAL-INDEPENDENT-REVIEW.md",
+      "bytes": 2103,
+      "sha256": "0fa93ba0ce3ee1636625dd54e103d99dca094696b7cab6ea4a9a9e415476ae69",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/resume-2026/independent-review/egsa-complete-delta-8eec81cc/FINAL-INDEPENDENT-REVIEW.md",
+      "bytes": 3452,
+      "sha256": "a6406e241a4c63a9dbb9c7b6e16e59e113f9f9a3216d4bb52e48f121f73726ee",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/resume-2026/independent-review/financial-freeze-6717a2a4/FINAL-INDEPENDENT-REVIEW.md",
+      "bytes": 3746,
+      "sha256": "1b3ff6e1e6c07200935fd5354d13ce4862da67b76f04b86aa8e33d12a17f961c",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/resume-2026/independent-review/oecd-freeze-202be6f79/FINAL-INDEPENDENT-REVIEW.md",
+      "bytes": 2983,
+      "sha256": "5b964af6592ac33045e28cdfaa620e7bfb4286339730fd14a54bb86e9f6985b2",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/prior-reviews/resume-2026/independent-review/routing-freeze-96bb27d5/FINAL-INDEPENDENT-REVIEW.md",
+      "bytes": 6490,
+      "sha256": "09ac80f4766f3484e49cd79dc9d394853849e8800904f2d477869bc204c13021",
+      "purpose": "Own complete independent-review report; no reproduced full standard, paragraph reconstruction or fragment collection.",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/source-delta/FINAL-MANIFEST.json",
+      "bytes": 6594,
+      "sha256": "58ef094f629bb375b4d5829ea0fc1abba85a16e075bd2db08bb99223373736bf",
+      "purpose": "Immutable complete source-delta manifest; excluded-file references are metadata only",
+      "original_date_scope": "Original dates and reading scopes preserved verbatim",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/source-delta/REPORT.md",
+      "bytes": 12512,
+      "sha256": "8d36cf18269b440b6246024b4df3bc001db2c06eba96ec2d492e508c36bd6703",
+      "purpose": "Complete exact source-delta reviewer own continuity/case/hash/protection record, no native bodies",
+      "original_date_scope": "2026-11-16 source-delta review; actual earlier source dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/source-delta/all-old-topic-destinations.json",
+      "bytes": 347841,
+      "sha256": "fc161f91dfab55217d2a3775ce33646603595b9fc88cef9312ab0e71826b1404",
+      "purpose": "Complete exact source-delta reviewer own continuity/case/hash/protection record, no native bodies",
+      "original_date_scope": "2026-11-16 source-delta review; actual earlier source dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/source-delta/all-parent-lines-to-final.json",
+      "bytes": 533210,
+      "sha256": "8b1b93729c18d7c95239f7fb94b03127789311b20963927e120b7801f84cf6db",
+      "purpose": "Complete exact source-delta reviewer own continuity/case/hash/protection record, no native bodies",
+      "original_date_scope": "2026-11-16 source-delta review; actual earlier source dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/source-delta/all20-protections-and-shape.json",
+      "bytes": 10488,
+      "sha256": "7c6b37a41e0a7dc42b5ad9749b7ac58fa8cd083683c4385eb746011025d2145c",
+      "purpose": "Complete exact source-delta reviewer own continuity/case/hash/protection record, no native bodies",
+      "original_date_scope": "2026-11-16 source-delta review; actual earlier source dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/source-delta/exact-delta-summary.json",
+      "bytes": 2377,
+      "sha256": "1dad945fedebc577a57739eb9c4e3ffce36532fcd65b1cdc9e047b201ce956fb",
+      "purpose": "Complete exact source-delta reviewer own continuity/case/hash/protection record, no native bodies",
+      "original_date_scope": "2026-11-16 source-delta review; actual earlier source dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/source-delta/immutable-review-continuity.json",
+      "bytes": 158414,
+      "sha256": "2fe2f0312d9f608156c578cb2bf1bfb290115d4214b93980c46e3f30f7ee7a7c",
+      "purpose": "Complete exact source-delta reviewer own continuity/case/hash/protection record, no native bodies",
+      "original_date_scope": "2026-11-16 source-delta review; actual earlier source dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/source-delta/independent-decimal-cases.json",
+      "bytes": 32444,
+      "sha256": "5e3adea3252474e930e5e6f5009ccd6894c1289147cd27c6849feaa32364af0d",
+      "purpose": "Complete exact source-delta reviewer own continuity/case/hash/protection record, no native bodies",
+      "original_date_scope": "2026-11-16 source-delta review; actual earlier source dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/source-delta/review.py",
+      "bytes": 13362,
+      "sha256": "f952aa0862c0c62103d04dcb5a034987bae4d9203799ddc0af5499d91fad6b26",
+      "purpose": "Complete exact source-delta reviewer own continuity/case/hash/protection record, no native bodies",
+      "original_date_scope": "2026-11-16 source-delta review; actual earlier source dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/source-delta/source-continuity.json",
+      "bytes": 6499,
+      "sha256": "a80b233750d6d9709d177076e16f647227e85b474d998be8ba41d3761f8b8d99",
+      "purpose": "Complete exact source-delta reviewer own continuity/case/hash/protection record, no native bodies",
+      "original_date_scope": "2026-11-16 source-delta review; actual earlier source dates retained",
+      "payload_unchanged": true
+    },
+    {
+      "path": "public-evidence/source-delta/writer-check-log-bindings.json",
+      "bytes": 2555,
+      "sha256": "9789b23a9c9fc021f235bfa0a37fd66cd0383ca7332b8b961fa92a4de1582cae",
+      "purpose": "Complete exact source-delta reviewer own continuity/case/hash/protection record, no native bodies",
+      "original_date_scope": "2026-11-16 source-delta review; actual earlier source dates retained",
+      "payload_unchanged": true
+    }
+  ],
+  "selection_populations": {
+    "approved_public_safe_projections": 4,
+    "complete_own_prior_review_reports": 15,
+    "source_delta_own_records_including_final_manifest": 11,
+    "local_only_manifest_metadata_not_payloads": 1,
+    "final_machine_records": 7,
+    "initial_diagnostic_own_records": 3
+  },
+  "terminal_stock_result": {
+    "files": 20,
+    "parsed_rows": 121,
+    "MISS": 0,
+    "UNREADABLE": 8,
+    "zero_eligible_row_files": [
+      "skills/global/cross-border/tax-research-with-your-ai-how-to-do-it-defensibly.md",
+      "skills/global/financial-reporting/us-gaap/us-gaap-asc805-business-combinations.md",
+      "skills/global/financial-reporting/us-gaap/us-gaap-debt-vs-equity.md",
+      "skills/global/financial-reporting/us-gaap/us-gaap-asc842-leases.md",
+      "skills/global/financial-reporting/ifrs/ias32-debt-vs-equity.md",
+      "skills/global/financial-reporting/ifrs/ifrs16-leases.md",
+      "skills/global/financial-reporting/ifrs/ifrs3-business-combinations.md",
+      "skills/global/financial-reporting/ifrs/ifrs15-revenue.md",
+      "skills/global/financial-reporting/financial-reporting-router.md",
+      "skills/global/financial-reporting/financial-reporting-workflow-base.md",
+      "skills/global/cross-border/treaty-corridors/_templates/dtt-template.md",
+      "skills/global/cross-border/digital-services-tax-matrix.md"
+    ],
+    "financial_zero_eligible_row_files": [
+      "skills/global/financial-reporting/us-gaap/us-gaap-asc805-business-combinations.md",
+      "skills/global/financial-reporting/us-gaap/us-gaap-debt-vs-equity.md",
+      "skills/global/financial-reporting/us-gaap/us-gaap-asc842-leases.md",
+      "skills/global/financial-reporting/ifrs/ias32-debt-vs-equity.md",
+      "skills/global/financial-reporting/ifrs/ifrs16-leases.md",
+      "skills/global/financial-reporting/ifrs/ifrs3-business-combinations.md",
+      "skills/global/financial-reporting/ifrs/ifrs15-revenue.md",
+      "skills/global/financial-reporting/financial-reporting-router.md",
+      "skills/global/financial-reporting/financial-reporting-workflow-base.md"
+    ],
+    "exit": 0
+  },
+  "public_local_boundary": {
+    "local_only_artifact_count": 403,
+    "local_only_bodies_included": 0,
+    "raw_source_bodies_included": 0,
+    "primary_paragraph_reconstructions_included": 0,
+    "local_only_manifest_member": "public-evidence/boundaries/local-only-evidence-manifest.json",
+    "provenance_references_are_not_included_payloads": true
+  },
+  "source_manifest_bindings": {
+    "publication_inventory_sha256": "54f5ec6ea770897aa62f5646365e7d41900654f1eb0a8c28f883d26d91e83ef9",
+    "parent_final_manifest_sha256": "1e1864443865d56f9d30889c8193ec0f239a62a88720d062edc84be7eabcd9c8",
+    "source_delta_final_manifest_sha256": "58ef094f629bb375b4d5829ea0fc1abba85a16e075bd2db08bb99223373736bf",
+    "local_only_manifest_sha256": "5e2c7b3bfd3fadc7d87d3eaa99cecab46cdd6fd567e182dd1747152af88abb88"
+  },
+  "all20_skills_unchanged": [
+    {
+      "path": "skills/global/cross-border/eu-reverse-charge.md",
+      "bytes": 55955,
+      "sha256": "d309db4296b3c9a4b2ca8c5a7aa9333263e5a2c9492262ba6adfbaa9a2c9d745",
+      "git_blob": "b8f39c4f620bc1c51115489a951005ab53b30724"
+    },
+    {
+      "path": "skills/global/cross-border/eu-oss-digital.md",
+      "bytes": 53831,
+      "sha256": "8ee9e414bfc1f796c53edf3d5094fc16bb1b5350815812a9c725f7b77a77320b",
+      "git_blob": "8003acabf235c2a353e1b8793c6c8943f5d5229f"
+    },
+    {
+      "path": "skills/global/cross-border/vat-place-of-supply-master.md",
+      "bytes": 73141,
+      "sha256": "39051bf42749c3dd17ed4ae6fc38566ebb52161edba1e67a915359ca3a6445cf",
+      "git_blob": "1612fd3db901724106b9b87688f2d1c8620481f8"
+    },
+    {
+      "path": "skills/global/cross-border/cross-border-vat-gst.md",
+      "bytes": 76413,
+      "sha256": "b64d1be03fe3a686ce70924207948758ef0e23fe5cfcb50dab83b7958a206555",
+      "git_blob": "7e9a1831988a32e6365ec8944bcc25e8dd120bc7"
+    },
+    {
+      "path": "skills/global/cross-border/eu-directives-cross-border.md",
+      "bytes": 48415,
+      "sha256": "50f640c729bd733a871ec2d77bd30f89974152e0a76a4e96a365766d357a9cf7",
+      "git_blob": "95fbfa6b3edf0b0851aa5928bd7c6cd6c54d7816"
+    },
+    {
+      "path": "skills/global/cross-border/cbam-carbon-border-adjustment.md",
+      "bytes": 52084,
+      "sha256": "038f5d881224f524af535e276d19d6105c0233ec12d4b5c68133977c4bccef0e",
+      "git_blob": "a67c99a52ffa8908bd4f872027c0981325922815"
+    },
+    {
+      "path": "skills/global/cross-border/tax-research-with-your-ai-how-to-do-it-defensibly.md",
+      "bytes": 15313,
+      "sha256": "dc50df538877c7a6c9ef85887e6e1bcb65529fd7a347b59815042f26902638fb",
+      "git_blob": "6dac0f229319da9031c1a9dce92eb3c9fd4d7344"
+    },
+    {
+      "path": "skills/global/financial-reporting/us-gaap/us-gaap-asc805-business-combinations.md",
+      "bytes": 27243,
+      "sha256": "eafa87c000404d839b1b1236e09f0853123758fce28d7fa43a2bfb3387fb8bde",
+      "git_blob": "886f58385146982ed15b6b7bae47229b5700a7b7"
+    },
+    {
+      "path": "skills/global/financial-reporting/us-gaap/us-gaap-debt-vs-equity.md",
+      "bytes": 23961,
+      "sha256": "7a9ac52cc9b2e8be80780e567afaffa2bcb76db9067a77f4ca631097a1583294",
+      "git_blob": "984a4a5fb83cf8cd138e32e816b6aa528fc5959a"
+    },
+    {
+      "path": "skills/global/financial-reporting/us-gaap/us-gaap-asc842-leases.md",
+      "bytes": 22624,
+      "sha256": "e713b70751f8b49f46636e01abf71ad3831ba61b94a38784b9144215155b4891",
+      "git_blob": "e794c253a41f073ed0ed3d4c558d9220e64b8012"
+    },
+    {
+      "path": "skills/global/financial-reporting/ifrs/ias32-debt-vs-equity.md",
+      "bytes": 40424,
+      "sha256": "286fed80c8d6826edf48a8f93d1aab2e27190f8686bf0438f62cce1fffbfc145",
+      "git_blob": "70cc0d16cd6daf99ca85d5de4d3c371ed700e07b"
+    },
+    {
+      "path": "skills/global/financial-reporting/ifrs/ifrs16-leases.md",
+      "bytes": 36572,
+      "sha256": "bb7b916d66f1a4d2c6c4ff8b269f709c0b2fbb6c88b94371160f8583f4b568c4",
+      "git_blob": "5b12812bb15009c6cc6d350383fbbc7ed6fe8d28"
+    },
+    {
+      "path": "skills/global/financial-reporting/ifrs/ifrs3-business-combinations.md",
+      "bytes": 45070,
+      "sha256": "8e6809855346f52a14ea8f5a0080d47461eb31b8ca053dffbc67be0d55182d01",
+      "git_blob": "bd4918cc824e128b7fca32613d6cc98e8c7dc189"
+    },
+    {
+      "path": "skills/global/financial-reporting/ifrs/ifrs15-revenue.md",
+      "bytes": 25788,
+      "sha256": "62408d4b48f91c5d742400d22780a3fc17600a340d48e641f4c7b3f2caa45407",
+      "git_blob": "a59005a2859e998a75bd2e3e2b22e15ffa2fa25d"
+    },
+    {
+      "path": "skills/global/financial-reporting/financial-reporting-router.md",
+      "bytes": 19985,
+      "sha256": "2933b2aac0786d6813639ac36963bcf37c1abba096243f5fb8da5a52b2278116",
+      "git_blob": "9b4862a00b05b704d661bf6a51189186aba4a06b"
+    },
+    {
+      "path": "skills/global/financial-reporting/financial-reporting-workflow-base.md",
+      "bytes": 16862,
+      "sha256": "398c21443b75aea156de17e331c8bf116044a08e97702743f348db8ac612061a",
+      "git_blob": "0272638eda0ebfdc22e5e069107a5bc5c4e80258"
+    },
+    {
+      "path": "skills/global/cross-border/oecd-model-treaty-defaults.md",
+      "bytes": 58385,
+      "sha256": "c8b0711d591bba0d0862faa8c28124697252db5193efbf27cd1f8824451e9b07",
+      "git_blob": "7357a0fe1a326991a10a7f4bc014f2f49e70ad8f"
+    },
+    {
+      "path": "skills/global/cross-border/treaty-corridors/_templates/dtt-template.md",
+      "bytes": 16806,
+      "sha256": "4b59166c9803fb1cb8004622067f914ee717d55467682d9daccb3c70b942e929",
+      "git_blob": "21285e2a32c00ce8dc96440b5e7bdaaa3922bbc2"
+    },
+    {
+      "path": "skills/global/cross-border/treaty-corridors/eg-sa/dtt-summary.md",
+      "bytes": 63058,
+      "sha256": "e3bb59cec37e946e9dedf87394a97ca0d71f9eedc0e696fa62a579237a58bd9b",
+      "git_blob": "2b79fd47082830cefa848a883c9073b17a51cc65"
+    },
+    {
+      "path": "skills/global/cross-border/digital-services-tax-matrix.md",
+      "bytes": 59777,
+      "sha256": "810772862f119ead343eca5b07070272b9b9be85399fb03215e62c84c67dca9c",
+      "git_blob": "3d11aee0df40f1413f3fb1ebb2c407342b11c321"
+    }
+  ],
+  "scope_limits": "Original complete independent review plus exact source-delta continuity. Dates and legal/source holds unchanged. No accountant approval or country-completeness claim. Zero table rows are not full source proof."
+}

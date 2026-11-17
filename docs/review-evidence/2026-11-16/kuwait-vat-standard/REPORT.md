@@ -1,0 +1,9 @@
+# Independent Kuwait VAT standard-delta review
+
+PASS at4aa59929121f3358cb36b1f6e4d48d39b2773ed2, candidate SHA2565fda358516791e4e665fec92b637f7df6b4a926e4d04632efd4981ffab1dae9f. Root is independent of the writer. Read the complete current original, candidate delta, I1-I3 ledger, original per-row review, preservation/case report and final focused closure. Verified the seven historical review-chain hashes and current-body continuity once.
+
+This situation-rules declaration matches the existing indirect-tax applicability/invoice job; it does not turn an index search into an operative tax rule. The active table repeats only the previously reviewed financial/tax index-reading scopes, with original1November read dates. The former four held table rows are retained as non-operative Sources prose. All69 original populated lines have actual valid destinations; every original substantive cell, unresolved-source state and2026 research target is preserved. No VAT status/rate/exemption/customs rule is newly established.
+
+The entire original Sources section and held paragraph remain literal. Both narrative/executable cases, inputs, formulae and outputs are unchanged; the full prior independent recomputation remains applicable. Version, maintenance date, declared type and matching title are the only metadata changes. Current main's absent retired metadata/CTA is preserved rather than restoring the different historical wrapper. No person, approval or sibling changes.
+
+Reuse the applicable writer target standard {}, one-guide validator zero warnings, strict sync zero errors and quotation/whitespace results. Zero eligible numeric rows is not legal source clearance. All current VAT/excise/customs conclusions remain explicitly non-usable. This is conditional limited source-check publication, not comprehensive country coverage or a human approval. Required hosted CI remains the publication gate.

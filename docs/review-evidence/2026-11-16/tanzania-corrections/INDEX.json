@@ -1,0 +1,152 @@
+{
+  "country_source_head": "a4938d17fe9b2752e8824e63c017605598eb7c2a",
+  "composed_head_before_docs": "9a434f014496fcdbd819fea5e168864454be08a1",
+  "parser_dependency_pr": 2106,
+  "parser_source_head": "20622011b20ddb94a981e18272213a6dcc58c00d",
+  "original_country_evidence_unchanged": "../tanzania/review-evidence.tar.gz",
+  "bundle": {
+    "path": "evidence.tar.gz",
+    "bytes": 175359,
+    "sha256": "b420788f85149e46c6c5160d58b88c53e6f8d20a8086e3cf322056d37f1488af",
+    "members": 27
+  },
+  "records": [
+    {
+      "path": "review-tanzania-7392247dd/REPORT.md",
+      "bytes": 11265,
+      "sha256": "fac2cc6667d9952f8b372b368f51a166d87950cc5ae55f5516bb9e80cf0aee88"
+    },
+    {
+      "path": "review-tanzania-7392247dd/findings.json",
+      "bytes": 1194,
+      "sha256": "fda2b761a45f611725ea8f3110e52fd54ea21ec1a4b27c5303537273563ec9e5"
+    },
+    {
+      "path": "review-tanzania-7392247dd/actual-source-scope-review.json",
+      "bytes": 3408,
+      "sha256": "9a7722950069df241c89c33cfae2c3f7b9b0e594556ce514d16928c2d26e714a"
+    },
+    {
+      "path": "review-tanzania-7392247dd/rule-and-topic-continuity.json",
+      "bytes": 515,
+      "sha256": "a768148e188a1f4819cd99a0a093b8e423ce037661193805e82182d515f44acc"
+    },
+    {
+      "path": "review-tanzania-7392247dd/stock-log-binding.json",
+      "bytes": 378,
+      "sha256": "11fe3645c638af8ab60e1f303942c11a9b8a0614117dc5a86ca9cdcb0aa0e539"
+    },
+    {
+      "path": "review-tanzania-a4938d17f/REPORT.md",
+      "bytes": 6623,
+      "sha256": "25a7f6e140c22deae2bb11275f9ba8e7b8b053e8122acb4a8ee894ef0e4c1cac"
+    },
+    {
+      "path": "review-tanzania-a4938d17f/exact-delta.patch",
+      "bytes": 7366,
+      "sha256": "ff784073f4183e330da84bd0fe5c15a12af97900d474fbfc5a615f43c2dfecec"
+    },
+    {
+      "path": "review-tanzania-a4938d17f/delta-bindings.json",
+      "bytes": 5390,
+      "sha256": "f869b9cacfe66ff8637de2ba891edb6f65feda41d62fab6782e091d1696cfc42"
+    },
+    {
+      "path": "review-tanzania-a4938d17f/writer-final-check-bindings.json",
+      "bytes": 2636,
+      "sha256": "1c8c706d898f51aa9b8ed3ec5ba83b037bd6f10803b7a6474b8beaa207553036"
+    },
+    {
+      "path": "review-tanzania-a4938d17f/FINAL-MANIFEST.json",
+      "bytes": 1252,
+      "sha256": "4cdef34115af4c8d097f1dd5ff122fadc2f376c61b2b5302e9f203e35d60bf60"
+    },
+    {
+      "path": "evidence-tanzania-739-vat79-delta/HANDOFF.md",
+      "bytes": 4869,
+      "sha256": "0aa68f5658aa1f16770f873b9f3193ce8d3696b78495134a805b7e47b2e76a03"
+    },
+    {
+      "path": "evidence-tanzania-739-vat79-delta/delta.patch",
+      "bytes": 7366,
+      "sha256": "ff784073f4183e330da84bd0fe5c15a12af97900d474fbfc5a615f43c2dfecec"
+    },
+    {
+      "path": "evidence-tanzania-739-vat79-delta/affected-exact-destination-records.json",
+      "bytes": 335296,
+      "sha256": "a5bd5b26ed7ccfc901245054b00bff178e449fec75b02d65a73a4120d2c1142e"
+    },
+    {
+      "path": "evidence-tanzania-739-vat79-delta/complete-map-continuity-index.json",
+      "bytes": 927419,
+      "sha256": "d137a187b719132dc8952016d7fb44cfde18a994ca9aeec907eec18c1616f77f"
+    },
+    {
+      "path": "evidence-tanzania-739-vat79-delta/exact-candidate-and-protection.json",
+      "bytes": 7462,
+      "sha256": "2c761c8a85cca4584015c893fc0fb15924fab3b7de12bd60f28f2d1c95f69174"
+    },
+    {
+      "path": "evidence-tanzania-739-vat79-delta/terminal-checks.json",
+      "bytes": 1520,
+      "sha256": "5e64a90a7c44c52a2a49b9f4babfe3b97d3ab54376acec19f905fefb3919c42d"
+    },
+    {
+      "path": "evidence-tanzania-739-vat79-delta/strict-sync-actual-pr-merge-base.txt",
+      "bytes": 81,
+      "sha256": "76142d89a388590a8f53d7bfab66ba511e70d2f0197373082cae6d93e08c4615"
+    },
+    {
+      "path": "evidence-tanzania-739-vat79-delta/vat-standard.json",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "evidence-tanzania-739-vat79-delta/unchanged-stock-changed-row-replay.json",
+      "bytes": 844,
+      "sha256": "6c85513870f4841813dbf5761c1b852b0edb6b9a4f03f47d73dc4b14d431c203"
+    },
+    {
+      "path": "review-word-money-parser-root/REPORT.md",
+      "bytes": 1986,
+      "sha256": "d74050ea55e704b6a9066e1e7fe3918ad0b7930ceff8c091e7488415e31f7f65"
+    },
+    {
+      "path": "review-word-money-parser-root/RESULT.json",
+      "bytes": 274,
+      "sha256": "6318da9b1f004c618bdb0eb444bc1ecd0553806fb39ad27e8e74acc017e1437d"
+    },
+    {
+      "path": "review-word-money-parser-root/focused-independent-controls.json",
+      "bytes": 1304,
+      "sha256": "0aad57c5c9d6ee26e222b465729ccd678236fcd1e3df6ca5fbca006f0b85fad4"
+    },
+    {
+      "path": "tanzania-composed-candidate/composition-receipt.json",
+      "bytes": 1379,
+      "sha256": "0112f1712b086cf4409b887c74e1c14c7d88ae7e6c407863020c0c13cc101680"
+    },
+    {
+      "path": "tanzania-composed-candidate/precomposition-country-bindings.json",
+      "bytes": 1121,
+      "sha256": "cc2a33debdf3a33e5ddc8297fce631e6fd34b1524de5b07ea056a82faad6669f"
+    },
+    {
+      "path": "tanzania-composed-candidate/validate.txt",
+      "bytes": 192,
+      "sha256": "bd4a3cd173dff3a5424e6f0d4aacb0c4f12378ded586f866bd67c8205fcba150"
+    },
+    {
+      "path": "tanzania-composed-candidate/sync.txt",
+      "bytes": 81,
+      "sha256": "76142d89a388590a8f53d7bfab66ba511e70d2f0197373082cae6d93e08c4615"
+    },
+    {
+      "path": "tanzania-composed-candidate/quotes.txt",
+      "bytes": 95,
+      "sha256": "c57f17e47901b1793761436f9659308d309cb2572c29a162e9c7932a537719c8"
+    }
+  ],
+  "readable_report_sha256": "931a4212b0172c4fedc09b6ed4d5a72fd6ef7060d133c37dafb69e18c24ba1d6",
+  "raw_source_publication": false
+}

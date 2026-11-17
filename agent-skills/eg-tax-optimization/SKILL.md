@@ -7,57 +7,109 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/eg-tax-optimization"
   jurisdiction: "EG"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-17"
 ---
 
-# EG Tax Optimization v1.1
+# EG Tax Optimization v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## 1. What this file is
+The decision layer for lawful tax planning by self-employed people and small businesses in Egypt, tax year 2026, law as read on 16 November 2026. It loads on `income-tax-workflow-base` and produces a side-by-side computation for a reviewer. Reply in the user's language, English or Arabic. Planning only: never concealment, fake invoices or sham entities.
 
-The decision layer for lawful tax planning by self-employed people and small businesses in Egypt, tax year 2026. It loads on `income-tax-workflow-base` and produces a side-by-side computation for a reviewer. Reply in the user's language, English or Arabic. Planning only: never concealment, fake invoices or sham entities.
+**Answer first.** The main choice is the turnover regime of Law 6 of 2025 (tax on turnover, 0.4% to 1.5%, turnover up to EGP 20 million, locked for five years) against the general system (bands up to 27.5% on profit). Compute both before recommending. The Law 5 of 2025 relief windows have closed (the extended end of the registration window rests on the ETA's own guide, not on the decision itself); for old disputes, the dispute committees take new requests until 31 December 2026, and non-final 2023 to early 2025 periods of businesses up to EGP 10 million can be settled on turnover under Law 151 of 2026.
 
-## 2. Scope statement
+## Scope
 
-Covers: regime choice, e-invoicing, VAT registration timing, reliefs, settlement windows. Mechanics sit elsewhere: `eg-sme-tax`, `eg-income-tax`, `egypt-vat`, `eg-bookkeeping`.
+- **Covers:** the regime choice, records and e-invoicing as levers, VAT registration timing, reliefs, settlement and dispute windows.
+- **Mechanics sit elsewhere:** turnover regime in `eg-sme-tax`; bands, costs and losses in `eg-income-tax`; VAT in `egypt-vat`; books and e-documents in `eg-bookkeeping`.
+- **Out:** companies' planning beyond the regime choice, cross-border structuring, transfer pricing, and anything needing concealment.
 
-## 3. Filing requirements
+## Ask the client first
 
-Choosing the turnover regime: form 10/1 طلبات, five-year lock-in. Annual return dates are in `eg-income-tax` and `eg-sme-tax`.
+1. Turnover this year and last, and the expected turnover for the next five years.
+2. Net profit, and how well costs are documented (e-invoices, regular books).
+3. Is the client already in Law 6 (request date), or moved over from Law 152 of 2020?
+4. If consulting: share of turnover from the top one or two clients.
+5. Customers: businesses that recover VAT, or consumers?
+6. Any unfiled year, open examination, dispute or ETA notice?
 
-## 4. Rates and thresholds
+## The method, step by step
 
-Band tables live in `eg-income-tax` and `eg-sme-tax`. Figures owned here:
+### Figures this skill owns
+
+Band tables live in `eg-income-tax` and `eg-sme-tax`.
 
 | Item | Amount | Conditions | Official URL |
 |---|---|---|---|
-| Dispute committees | Open to 31 December 2026 | Law 152/2026 renews Law 79/2016 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.152.of_.2026.pdf |
-| Dispute application | Form to ETA, or free on its portal | MoF decision 450/2026 | https://eta.gov.eg/sites/default/files/2026-08/mof.qarar_.no_.450.of_.2026.pdf |
-| Past-period settlement | Turnover under 10,000,000 | Law 151/2026 art. 4, from 1 Jan 2023 as corrected; table in `eg-sme-tax` | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf |
-| Ceiling on delay charge | 100% of principal | Law 7/2025 | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf |
+| Dispute committees | Open to new requests until 31 December 2026 | Law 152 of 2026 art. 1 renews Law 79 of 2016; committees keep deciding pending requests | https://eta.gov.eg/sites/default/files/2026-08/law.no_.152.of_.2026.pdf |
+| Dispute application | On the form to the ETA (or the Real Estate Tax Authority), or free of charge on its portal | MoF Decision 450 of 2026 art. 1, issued 16 August 2026 | https://eta.gov.eg/sites/default/files/2026-08/mof.qarar_.no_.450.of_.2026.pdf |
+| Past-period turnover settlement | Turnover up to EGP 10 million a year (in words on the page) | Law 151 of 2026 art. 4: taxes not final on 29 July 2026, periods from 1 January 2023 (corrected from 2022 by the notice of 8 August 2026) to the last period before March 2025; never below the tax in the returns; the taxpayer may choose Law 91 instead; bands in `eg-sme-tax` | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf |
+| Same, correction | Start year 2023 | Correction notice, Official Gazette 32 bis, 8 August 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf |
+| Ceiling on delay charge or additional tax | 100% of the principal tax | Law 206 of 2020 new art. 45 bis, added by Law 7 of 2025 | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf |
+| Turnover regime ceiling and tolerance | EGP 20 million (in words on the page); over by no more than 20%, once in five years, stays in at 1.5% | Law 6 art. 10 last para.; a larger or second overshoot ends the regime from the following year | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf |
 
-## 5. Computation rules
+### Steps
 
-1. Get turnover, profit, documentation state, plans for five years.
-2. Compute general tax on profit with the row table.
-3. Compute turnover × band rate. Check art. 3 conditions and art. 4 exclusions.
-4. Add the non-rate effects: dividends, asset gains, stamp duty, withholding, audit timing, quarterly VAT.
-5. Show both numbers, then recommend. Never recommend in the abstract.
+1. Get turnover, profit, the state of the cost documents, and plans for five years (the Law 6 lock-in, art. 5).
+2. Compute the general tax on profit with the `eg-income-tax` row table: total net income picks the row, rounded down to EGP 10.
+3. Compute turnover times the `eg-sme-tax` band rate. Check the art. 3 conditions (returns on time; joined to the e-invoice or e-receipt system under the phase decisions and issuing documents) and the art. 4 exclusions (90% consultancy; improper entry, including splitting).
+4. Add the non-rate effects of Law 6: no stamp duty or development fee, no notarisation or registration fees on formation, credit and land contracts (art. 7); no tax on gains from disposing of fixed assets (art. 8) or on dividends from the activity (art. 9); outside withholding and advance payments both ways (art. 11); quarterly VAT and only the annual payroll settlement (art. 12); examination only after five years (art. 12); simplified records (art. 13).
+5. Weigh the general system's own levers: losses carried forward (`eg-income-tax`), depreciation, documented costs, and the cost of the regular books every taxpayer keeps from 29 July 2026 (Law 206 art. 38 as replaced by Law 150 of 2026).
+6. Show both numbers, then recommend. Never recommend in the abstract, and never assert a saving without the computation.
+
+### Why margin decides it
+
+The turnover regime taxes turnover; the general system taxes profit. The decision turns on the profit margin (صافي الربح ÷ رقم الأعمال). The turnover regime is cheaper when turnover times the band rate is below the general tax on profit, so the break-even margin is about the band rate divided by the effective general rate on that profit.
+
+- **High margin, few costs** (a freelance developer or consultant): profit is close to turnover, the general system taxes nearly all of it at up to 27.5%, and the turnover regime at 1.5% or less is far cheaper.
+- **Thin margin** (trading or reselling): a small percentage of a large turnover can exceed the income tax on a small profit. Run the numbers.
+- **Losses:** turnover tax is due even in a loss year; the general system charges nothing and carries the loss forward.
 
 | Situation | Direction |
 |---|---|
-| Few costs, turnover up to 20m | Turnover regime, if not 90% consulting for one or two clients |
+| Few costs, turnover up to EGP 20 million | Turnover regime, unless 90% or more of turnover is consulting for one or two persons |
 | Thin margin, heavy documented costs | Compute: the general system often wins |
-| Losses expected | General: turnover tax is due on a loss, losses carry five years |
-| Turnover over 20m and outside the tolerance | General is the only option |
-| Plans to pass 24m, or a second breach | General, or model the exit |
-| Needs freedom to change within five years | General |
-| Poor cost documents | Fix documents, then compare |
+| Losses expected | General: turnover tax is due on a loss; losses carry forward (`eg-income-tax`) |
+| Turnover above EGP 20 million outside the one-time tolerance | General is the only option |
+| Plans to pass EGP 24 million, or a second breach within five years | General, or model the exit from the following year |
+| Needs freedom to change within five years | General: no exit from Law 6 for five years |
+| Poor cost documents | Fix the documents, then compare both |
 
-Worked side by side:
+### E-invoices and records
 
-**Persona A. Developer, turnover 1,800,000, costs 200,000, profit 1,600,000.** General: 25% on 1,200,000 + 27.5% on 400,000 = 410,000. Turnover: 0.5% = 9,000. Saving 401,000.
+- **Turnover regime:** joining the ETA e-invoice or e-receipt system under the phase decisions and issuing the documents is a condition of the regime (Law 6 art. 3). Records are the MoF 420 simplified set.
+- **General system:** costs are supported by regular books backed by documents (`eg-income-tax`). Input VAT on purchases needs an e-invoice from the supplier (`eg-bookkeeping`, from the ETA e-receipt FAQ).
+- **Actions:** register on the ETA e-invoice or e-receipt system when named in a phase decision (check the inquiry lists in `eg-bookkeeping`); ask suppliers for e-invoices before paying; reconcile e-invoices to the books monthly. Held working default, not settled law: never rely on paper or PDF invoices for a deduction. It rests on the 1 July 2023 e-invoice-only rule on the Not yet confirmed line; refer any cost backed only by paper or PDF for review.
+
+### VAT registration timing
+
+- The limit is EGP 500,000 of taxable and exempt sales (VAT Law 67 of 2016 art. 16; `egypt-vat`). It counts gross sales, not profit: a business with EGP 520,000 of sales and EGP 20,000 of profit is in.
+- Monitor cumulative sales monthly and register within 30 days of reaching the limit. Voluntary early registration can pay where customers recover VAT and the business wants input credit on its costs (`egypt-vat`, Example 2).
+- In the turnover regime, VAT returns are quarterly (Law 6 art. 12), a real compliance saving.
+
+### Old periods and disputes
+
+- **Law 5 of 2025 windows are closed.** The law took effect on 13 February 2025 (art. 11). Non-filers for periods from 2020 had six months to file original or amended returns without penalties (art. 3). Unregistered persons who applied to register within three months, extendable once by the Minister, were not assessed for earlier periods for income tax, VAT, stamp duty or the development fee, provided no ETA action had been taken and all documents were filed on every e-system (art. 2). Disputes over periods ended before 1 January 2020 had three months, extendable once for an equal period, to apply (art. 6): estimated assessments settled by paying 30% of the tax in the return, or the last agreement plus 40% where no return, a nil return or a loss return was filed, in four quarterly instalments of 25% with no delay charge (art. 4); regular-books assessments settled with 100% of delay charges and additional tax waived if the principal was paid within three months (art. 5). Individuals with real estate or unlisted share disposals had six months (art. 7). The art. 3 and art. 7 windows, and the art. 6 window with its one equal extension, ended by 13 August 2025. The art. 2 window ended on 13 May 2025 unless extended; art. 2 lets the Minister extend it once but fixes no length. The ETA Services Guide (service 1/1/18) says MoF Decision 167 of 2025 extended it by three more months from 13 May 2025. That decision was not read, so the extended art. 2 end date is held (Not yet confirmed). Never promise Law 5 relief to anyone now.
+- **Now:** use the dispute committees for requests filed until 31 December 2026 (Law 152 of 2026), or the Law 151 art. 4 turnover settlement if eligible. Late payment charges cannot exceed 100% of the principal (Law 7 of 2025).
+- **Listed shares:** gains on Egyptian listed securities are exempt from 29 July 2026 and losses are neither deductible nor carried forward, unless the disposal delists the company (Income Tax Law art. 31 item 7, added by Law 151 of 2026 art. 2; `eg-income-tax`).
+- **Band steps:** total net income just over EGP 600,000, 700,000, 800,000, 900,000 or 1,200,000 loses a lower band (`eg-income-tax`). Lawful timing of a real receipt or a real expense can matter; invented timing cannot.
+
+## Boundary and exception table
+
+| Situation | Rule | Source |
+|---|---|---|
+| Request form 10/1 not filed | Not in the turnover regime; general system | Law 6 art. 1; MoF 420 art. 1 |
+| Wants out of Law 6 within five years | Not possible; form 11/1 only after five years from the day after the request | Law 6 art. 5; MoF 420 art. 1 |
+| Consultant, 90% or more from one or two persons | Outside Law 6 unless the Minister excepts the activity | Law 6 art. 4(1) |
+| One business split with no economic reason to stay under EGP 20 million | Outside Law 6; the ETA bears the burden of proof. Do not design it | Law 6 art. 4(2) |
+| Turnover over EGP 20 million by no more than 20%, first time in five years | Stays in at 1.5% | Law 6 art. 10 |
+| Over by more than 20%, or a second time | Regime ends from the following year | Law 6 art. 10 |
+| Law 6 taxpayer files late or leaves the e-systems | Breaks the art. 3 conditions | Law 6 art. 3 |
+| Asks about the Law 5 of 2025 relief | Arts. 3, 6 and 7 closed by 13 August 2025; art. 2 closed on 13 May 2025 unless extended (the ETA guide reports a three-month extension by MoF 167 of 2025, held). Do not promise relief; use Law 152 committees or Law 151 art. 4 | Law 5 arts. 2, 3, 6, 7; ETA Services Guide 1/1/18; Law 152; Law 151 |
+
+## Worked cases
+
+**Case A. Decision: developer, turnover EGP 1,800,000, costs EGP 200,000, profit EGP 1,600,000.** General: top row, 25% on 1,200,000 plus 27.5% on 400,000 = 410,000. Turnover regime: 0.5% = 9,000. The turnover regime saves 401,000, if the 90% consultancy test is passed and the five-year lock-in is accepted.
 
 ```oa-check
 name: Developer regime decision
@@ -74,7 +126,7 @@ expected:
   saving: 401000.00
 ```
 
-**Persona B. Trader, turnover 9,000,000, profit 350,000.** Turnover: 90,000. General: 1,500 + 2,250 + 26,000 + 33,750 = 63,500. The general system saves 26,500 if every cost is documented.
+**Case B. Decision the other way: trader, turnover EGP 9,000,000, profit EGP 350,000.** Turnover regime: 1% = 90,000. General, row "up to 600,000": 1,500 + 2,250 + 26,000 + 33,750 = 63,500. The general system saves 26,500, but only if every cost (about EGP 8.65 million) is documented by e-invoices and regular books. At a profit of EGP 600,000 the general tax is 124,750 and the turnover regime wins by 34,750: model the margin carefully.
 
 ```oa-check
 name: Thin-margin trader decision
@@ -91,99 +143,57 @@ expected:
   general_saves: 26500.00
 ```
 
-**Persona C. New consultant, turnover 240,000.** Compare the two, and check the VAT threshold in `egypt-vat` before crossing it.
-**Persona D. Old dispute.** Law 5/2025 windows have closed; use the committees to 31 December 2026 or the Law 151 art. 4 settlement if eligible.
+**Case C. New consultant, turnover EGP 240,000 in the first year, high margin.** Below the EGP 500,000 VAT limit, so registration is not yet required, but the e-invoice or e-receipt duty and any phase decision must still be checked. Compare the regimes now: 0.4% is EGP 960 against the general bands on profit. Monitor sales monthly and register for VAT within 30 days of reaching the limit. If growth is expected, weigh the five-year lock-in before filing form 10/1.
 
-## 6. Edge cases and special rules
+**Case D. Old dispute and unfiled amended returns for periods before 2020.** The Law 5 of 2025 windows for old disputes and unfiled returns (arts. 6 and 3) closed by 13 August 2025. Use a dispute committee request filed by 31 December 2026, or the Law 151 art. 4 settlement if the business is eligible. If a Law 5 settlement was already accepted, pay the instalments on its schedule. Evaluate the regimes for current years separately.
 
-- **Row steps:** income just over 600,000, 700,000, 800,000, 900,000 or 1,200,000 loses a band. A legitimate timing of a real receipt or a real expense can matter; invented timing cannot.
-- **Law 5/2025 windows are closed.** Non-filers had six months from 13 Feb 2025 (art. 3). Unregistered taxpayers and dispute applicants had three months, extended three more from 13 May 2025 by MoF decision 167/2025. All ended by mid August 2025. Payment and installment rules of those cases stay with cases already running.
-- **Listed shares:** gains exempt from 29 Jul 2026, losses lost (`eg-income-tax`).
-- **E-invoices:** art. 3 of Law 6 makes them a condition of the turnover regime. On the general system, regular books backed by documents support costs (Law 91 arts. 22, 23).
-- **Splitting:** one business split with no economic reason to stay under 20m is outside Law 6 (art. 4 item 2). Do not design it.
-- **Lock-in:** form 11/1 is available only after five years.
+## When to refuse or refer
 
-**Carried from the earlier version, not checked against the law.** Kept so no working rule is lost. Any figure here is unverified, and where it differs from the tables above the tables win.
+Refuse, and offer a lawful alternative (the genuinely cheaper regime, better e-invoice documentation, timely registration, a dispute committee request or a settlement), when asked to:
 
-- **Assume the general system unless eligibility for the simplified regime is confirmed.** Quote the simplified regime as an *option to evaluate*, not as the default.
-- **Never assert a saving without numbers.** Always show the side-by-side computation (turnover × simplified rate vs profit × progressive bracket) before recommending.
-- **Treat the 5-year lock-in as binding.** Electing the simplified regime under Law 6/2025 cannot be reversed for five years from the day after the request is submitted. Flag this prominently before recommending the election.
-- When two readings are possible, choose the one that keeps the taxpayer compliant and audit-safe, even if marginally more tax is paid.
+- evade tax (التهرب الضريبي): under-report turnover or income, omit sales, keep two sets of books, or claim costs not incurred;
+- issue or obtain fake, inflated or backdated invoices, or any document not reflecting a real transaction;
+- split one business into sham entities to stay under EGP 20 million or the VAT limit, or to multiply access to low rates (Law 6 art. 4(2) excludes it, and late or avoided VAT registration is treated as evasion in `egypt-vat`);
+- suppress or split turnover to avoid VAT registration;
+- conceal assets, foreign income or related-party transactions, or pass private spending off as business cost;
+- delay or skip filing to wait for the next amnesty.
 
-Because the simplified regime taxes turnover and the general system taxes profit, the decision hinges on the taxpayer's **profit margin** (صافي الربح ÷ رقم الأعمال).
+When two readings of the law are possible, take the one that keeps the taxpayer compliant and safe on examination, even at a little more tax. Never present planning as guaranteed or as a substitute for a qualified reviewer. Refer open examinations, disputes, settlements, cross-border structures and company planning to a qualified Egyptian accountant.
 
-- **High-margin, low-cost businesses** (e.g. a freelance developer or consultant with few deductible costs) → profit ≈ turnover, so the general system taxes nearly the whole amount at rates up to 27.5%. The simplified regime at <1.5% is **dramatically cheaper**.
-- **Low-margin businesses** (e.g. trading/retail reselling goods with thin margins) → a turnover tax can bite, because even a small % of a large turnover may exceed the income tax on a thin profit. Run the numbers.
-**2.3 Decision table**
+## Filing and payment
 
-**Decision table**
+Choosing the turnover regime: file form 10/1 طلبات on the ETA system (MoF 420 art. 1; steps in `eg-sme-tax`). Leaving after five years: form 11/1. Annual return dates are in `eg-income-tax` and `eg-sme-tax`. Dispute committee requests: on the form to the ETA, or free on its portal, until 31 December 2026.
 
-| Situation | Likely better regime | Why |
-| --- | --- | --- |
-| unverified: Freelancer/consultant, few costs, profit margin > ~40%, turnover ≤ 20m | **Simplified** | Turnover tax <1.5% beats up to 27.5% on near-full profit |
-| unverified: Low-margin trader/retailer (margin < ~10%) | **Often general** | Turnover tax can exceed income tax on a thin profit: model it |
-| unverified: Turnover above EGP 20m | **General (only option)** | Above simplified eligibility ceiling |
-| Heavy genuine deductible costs, modest profit | **Model both** | Deductions shrink the general-system base; compare carefully |
-| unverified: Wants flexibility to change soon | **General** | Simplified locks in for **5 years** |
-| Poor documentation / can't issue e-invoices | **Model both, fix docs first** | Without e-invoices, costs are disallowed on the general system, pushing toward simplified |
+## Completion checklist
 
-**Always produce the two numbers.** Do not recommend a regime in the abstract.
-- **E-invoice deductibility requirement**: On the general system, the value of deductions depends entirely on documentation. Since 1 July 2023, for taxpayers registered on the e-invoice system, only electronic invoices (الفاتورة الإلكترونية) count as valid evidence of deductible costs and expenses for income-tax purposes, and only e-invoices/e-receipts support input-VAT deduction or refund (verify).
+- [ ] Inputs trace to documents; rates match 2026.
+- [ ] Both systems computed; the row chosen on total net income.
+- [ ] Law 6 conditions (art. 3) and exclusions (art. 4) checked; lock-in shown before recommending.
+- [ ] No figure repeated from a sibling without its link.
+- [ ] Old-period options checked against the current windows (Laws 151 and 152 of 2026), not Law 5.
+- [ ] Nothing in the plan needs concealment.
 
-- **A cost without a valid e-invoice is effectively a non-deduction.** It raises taxable profit and the tax bill. Optimising the general system therefore *starts* with getting suppliers to issue compliant e-invoices and issuing your own.
-- **Input VAT on paper invoices is lost**: non-electronic invoices are not accepted for VAT input credit or refund.
-- The **simplified regime** is more forgiving on cost documentation (tax is on turnover, not profit), but e-invoicing/e-receipt integration is itself an **eligibility condition** of Law 6/2025, plus timely return filing. So e-invoicing is mandatory either way; on the general system it is also the gate to your deductions.
-
-**Optimization actions:** register on the ETA e-invoice/e-receipt system; require e-invoices from every supplier before paying; reconcile e-invoices to the books monthly; never rely on paper or PDF invoices for a deduction.
-- **Mandatory VAT (and e-invoicing) registration threshold**: Reduced from EGP 500,000 to EGP 250,000 of annual turnover under Resolution No. 281 of 2025 (verify). Businesses whose 2025 gross revenue exceeded EGP 250,000 must register with ETA before 31 March 2026 or face penalties (reported as an EGP 20,000 fine plus EGP 1,000/day: verify).
-- **Turnover definition for threshold**: "Turnover" for the threshold is gross revenue before costs: a business with EGP 260,000 revenue and EGP 20,000 net profit is still in scope.
-
-- **Do not artificially fragment or suppress turnover to stay under the threshold**: that is evasion, not planning (see PROHIBITIONS). Splitting one business into sham entities is illegal.
-- Legitimate timing: a genuinely seasonal or growing business should **monitor cumulative turnover** and register on time to avoid penalties; voluntary early registration can be sensible where customers are themselves VAT-registered (your VAT is recoverable to them) and where you want input-VAT recovery on your own costs.
-- On the simplified regime, VAT registrants benefit from **quarterly** filing: a real compliance-cost saving.
-- **Law No. 5 of 2025 facilities**: Law No. 5 of 2025 (in force from 13 February 2025) is a one-off facilitation window worth checking for any taxpayer with a backlog (verify): **Penalty/interest waiver:** up to a 100% waiver of penalties, late fees and additional tax where the principal tax is paid promptly. **Non-filers (2020 → 13 Feb 2025):** relief from penalties if outstanding or amended returns are filed within six months of 13 February 2025. **Unregistered taxpayers:** no tax obligations imposed for periods before 13 February 2025 (income tax, VAT, stamp tax, development fee) if they register within three months of that date. **Old disputes (pre-2020):** fast-track settlement: pay the principal within set windows and have delay fines / additional tax forfeited.
-
-**Timing caveat: verify the windows have not closed.** Today is **May 2026**. The six-month and three-month windows above ran from 13 February 2025 and have **likely expired**. Treat Law 5/2025 as relevant mainly for *already-initiated* settlements or any extension/successor facility. **Confirm current availability with ETA / a qualified accountant before relying on it.**
-- Turnover: **EGP 1,800,000**; deductible costs ≈ EGP 200,000; net profit ≈ **EGP 1,600,000**.
-- **Simplified system:** turnover EGP 1,800,000 falls in the 0.5% band → **EGP 9,000**.
-- Turnover: **EGP 9,000,000**; cost of goods + costs ≈ EGP 8,400,000; net profit ≈ **EGP 600,000**.
-- **Simplified system:** EGP 9,000,000 in the 1.0% band → **EGP 90,000**.
-- **Outcome:** roughly a wash: model carefully. If margins are thinner (say profit EGP 350,000), the **general system becomes cheaper** because 1% of EGP 9m exceeds the income tax on a small profit. Documentation (e-invoices for the EGP 8.4m of costs) is critical to make the general system viable.
-- Turnover: **EGP 240,000** (first year), high margin, almost no costs.
-- Below the **EGP 250,000** VAT registration threshold: not yet required to register for VAT (verify), but e-invoicing/registration obligations should be checked.
-- **Planning:** monitor cumulative turnover monthly; register for VAT and e-invoicing **before** crossing EGP 250,000 to avoid the late-registration penalties. If growth is expected, evaluate the simplified election early: but weigh the 5-year lock-in.
-- Has an open ETA dispute for periods before 2020 and unfiled amended returns.
-- **Planning:** check whether a Law 5/2025 settlement (or any successor facility) is **still open**; if a settlement is already in train, paying the principal promptly can forfeit delay fines and additional tax (verify the deadline has not lapsed). Going forward, evaluate simplified vs general for current years separately.
-- **5-year lock-in (simplified regime)**: The Law 6/2025 election cannot be withdrawn for five years. A business expecting to scale past EGP 20m, change activity, or want profit-based treatment soon should think twice.
-- **Exceeding the EGP 20m ceiling**: Going over by up to 20% keeps the 1.5% rate for one further year; exceeding the 20% buffer revokes all benefits the following year (verify). Plan growth around this.
-- **e-invoice non-compliance disallows costs**: On the general system, missing/paper invoices = lost deductions and lost input VAT. This is the most common, avoidable over-payment of tax.
-- **Misuse of the simplified regime = audit risk**: Splitting one business into multiple sham entities to stay under EGP 20m, or to access the low rate multiple times, is abuse and exposes the taxpayer to reassessment and penalties.
-- **Suppressing turnover to dodge the VAT threshold**: Suppressing turnover to dodge the VAT threshold is evasion, not planning.
-- **Late VAT/e-invoice registration penalty**: Late VAT/e-invoice registration after EGP 250,000 triggers fixed and daily penalties (verify).
-- **Stale amnesty windows**: Law 5/2025 deadlines ran from Feb 2025 and are likely closed by May 2026: do not promise relief without confirming it is live.
-- **Prohibited actions**: This skill performs **legal tax optimization only**. It must **never**: - Advise, design, or assist any form of **tax evasion** (التهرب الضريبي): under-reporting turnover or income, omitting sales, keeping two sets of books, or claiming costs that were not incurred. - Suggest **fake, inflated, or backdated invoices**, or any document not reflecting a real transaction. - Recommend **artificially fragmenting one business** into sham entities to stay under the EGP 20m simplified ceiling or the EGP 250,000 VAT threshold, or to multiply low-rate access. - Recommend **suppressing or splitting turnover** to avoid VAT registration. - Recommend **concealing assets, foreign income, or related-party transactions**, or misclassifying private spending as business cost. - Encourage **late or non-filing** to "wait for the next amnesty." - Present any planning as guaranteed, or substitute for a credentialed reviewer. If a user asks for any of the above, **refuse** and redirect to a legal, documented alternative (e.g. choosing the genuinely cheaper regime, improving e-invoice documentation, timely registration, or a legitimate settlement).
-
-## 7. Self-checks
-
-Inputs trace to documents; rates match 2026; both systems computed; row chosen on total income; exclusions checked; no figure repeated from a sibling without its link; nothing here needs concealment.
-
-## 8. Sources
+## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Law 5 of 2025, whole text (OCR) | https://eta.gov.eg/sites/default/files/2025-02/law_no.5.of_.2025.pdf | 2026-11-01 |
-| Law 7 of 2025, whole text (OCR) | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf | 2026-11-01 |
-| Law 152 of 2026, whole text (OCR) | https://eta.gov.eg/sites/default/files/2026-08/law.no_.152.of_.2026.pdf | 2026-11-01 |
-| MoF decision 450 of 2026, arts. 1 and 2 (OCR) | https://eta.gov.eg/sites/default/files/2026-08/mof.qarar_.no_.450.of_.2026.pdf | 2026-11-01 |
-| Correction notice, page image of the Law 151 table | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf | 2026-11-01 |
-| ETA Services Guide, 2nd edition, section 18 | https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf | 2026-11-01 |
+| Law 5 of 2025, arts. 1 to 11, whole text | https://eta.gov.eg/sites/default/files/2025-02/law_no.5.of_.2025.pdf | 2026-11-16 |
+| Law 6 of 2025, arts. 1 to 16, whole text | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf | 2026-11-16 |
+| Law 7 of 2025, arts. 1 and 2 (new arts. 45 bis, 75 bis, 75 bis 1) | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf | 2026-11-16 |
+| Law 151 of 2026, arts. 2, 4 to 7 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf | 2026-11-16 |
+| Law 152 of 2026, arts. 1 and 2, whole text | https://eta.gov.eg/sites/default/files/2026-08/law.no_.152.of_.2026.pdf | 2026-11-16 |
+| MoF Decision 450 of 2026, arts. 1 and 2 (page images read) | https://eta.gov.eg/sites/default/files/2026-08/mof.qarar_.no_.450.of_.2026.pdf | 2026-11-16 |
+| Correction notice, Gazette 32 bis, 8 August 2026, page 8 table (page image read) | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf | 2026-11-16 |
+| Law 7 of 2024, art. 1 (Income Tax Law art. 8 bands) | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf | 2026-11-16 |
+| MoF Decision 420 of 2025, arts. 1 to 4 (page images read) | https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.420.of_.2025.pdf | 2026-11-16 |
+| VAT Law 67 of 2016, art. 16 (page image read) | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.67-2016.pdf | 2026-11-16 |
+| Law 150 of 2026, art. 1 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.150.of_.2026.pdf | 2026-11-16 |
+| ETA list of VAT laws and decisions, list page read | https://eta.gov.eg/ar/content/qwanyn-aldrybt-ly-alqymt-almdaft | 2026-11-16 |
+| ETA Services Guide, 2nd edition, section 18/1, services 1/1/18 and 3/1/18 (Law 5 registration and dispute windows, MoF 167 of 2025 extension as reported) | https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf | 2026-11-17 |
+| ETA list of income tax laws and decisions, list page read (MoF 167 of 2025 not listed) | https://eta.gov.eg/ar/content/qwanyn-aldrybt-ly-aldkhl | 2026-11-17 |
 
-Not yet confirmed: the rule that only e-invoices prove costs and input VAT from 1 July 2023. VAT registration threshold changes, Resolution 281 of 2025 and its fine: left to `egypt-vat`. Whether Law 5 relief has a successor beyond Laws 151 and 152 of 2026.
-
-## 9. Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon. The most up-to-date version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com).
+Not yet confirmed: the rule that, from 1 July 2023, only e-invoices prove costs for income tax for taxpayers on the e-invoice system. The reported cut of the VAT registration limit to EGP 250,000 under a Resolution 281 of 2025, with registration due before 31 March 2026 and a fine of EGP 20,000 plus EGP 1,000 a day: not in VAT Law art. 16 and not on the ETA VAT list read, so held (`egypt-vat` keeps 500,000). The end of the Law 5 art. 2 registration window: the ETA Services Guide reports that MoF Decision 167 of 2025 extended it by three months from 13 May 2025, but the decision itself was not read (not on the ETA income tax list read on 17 November 2026), and art. 2 fixes no length for the extension, so the extended end date is held. The art. 6 window ended by 13 August 2025 with or without that decision. Whether any successor to Law 5 relief exists beyond Laws 151 and 152 of 2026.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `eg-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/eg-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-17. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `eg-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/eg-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.

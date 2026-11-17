@@ -1,0 +1,141 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "353ec1325c5e60fac567e12c56a922aca550af8f9e401d21949b4f7576b92ee7",
+  "members": [
+    {
+      "path": "writer/REPORT.md",
+      "sha256": "b7a03e137f0ad6661b54cc228fb9721531381bea1cdbcc856951ec80656a41e3",
+      "bytes": 1358
+    },
+    {
+      "path": "writer/actual-head-sync.txt",
+      "sha256": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6",
+      "bytes": 81
+    },
+    {
+      "path": "writer/actual-head-validation.txt",
+      "sha256": "a7d8a057660b3d212d944ce39725ec8cef8aa0fa1ee6a85ef9d7c717d65fc074",
+      "bytes": 192
+    },
+    {
+      "path": "writer/examples.txt",
+      "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "bytes": 58
+    },
+    {
+      "path": "writer/ledgers/kosovo-tax-optimization.md",
+      "sha256": "630b5a97f6031dca14a85632bdec85326c279f4f2857464f21802a509bd8bb00",
+      "bytes": 11090
+    },
+    {
+      "path": "writer/no-loss-map.json",
+      "sha256": "b589ff2a31439b88471d981af693025c8b1e3a826b4932d725abee1467c0ca55",
+      "bytes": 10999
+    },
+    {
+      "path": "writer/ownership-check.json",
+      "sha256": "79506b04664558259eeab427b538b2dd3497e25ce1d95bb911c740c1c1b7c947",
+      "bytes": 34636
+    },
+    {
+      "path": "writer/pr-body.md",
+      "sha256": "2ff834ca80b5baad68316af7e149f6d8ab3cd832b7f57935bc8eae5762420f96",
+      "bytes": 2365
+    },
+    {
+      "path": "writer/pr-title.txt",
+      "sha256": "990165fd997143ec0d5dd1881fec62c13b3175a5416ba75d84d3ea254d67a9cb",
+      "bytes": 63
+    },
+    {
+      "path": "writer/preservation.json",
+      "sha256": "3affbd5d9860d8c128c354b3a54fd90cc02de3c17582232f5bbe41ee69184183",
+      "bytes": 339
+    },
+    {
+      "path": "writer/recovery/2026-10-23-kosovo-corporate-sources.md",
+      "sha256": "3c511408600c1a6461ba4502a6d20f261fcf89dde028cf4a6e73df0be91d2341",
+      "bytes": 3424
+    },
+    {
+      "path": "writer/recovery/2026-10-23-kosovo-cross-border-sources.md",
+      "sha256": "4c1eaefb5fdeb35db108dc9377988166607486090f945046bac8f3a3ff3732cb",
+      "bytes": 1968
+    },
+    {
+      "path": "writer/recovery/2026-10-23-kosovo-transfer-pricing-sources.md",
+      "sha256": "0353b5bfb558db15fde925ecfac70fcd845773b803cdab7c889241633e88f65f",
+      "bytes": 4762
+    },
+    {
+      "path": "writer/recovery/PRIOR-REVIEW-6395420996.md",
+      "sha256": "d8cc49b0dafcddc2593499c50f5ce2827e05bd94557f0024f9f0902403b6ad2e",
+      "bytes": 17194
+    },
+    {
+      "path": "writer/recovery/PRIOR-REVIEW-6531000213.md",
+      "sha256": "ca5d426cda74039496406a894d59d35f59fbebae3e572658c91b37c05a761c02",
+      "bytes": 4582
+    },
+    {
+      "path": "writer/recovery/cache-record.json",
+      "sha256": "e450597e80d7f04162d330c2ebdc086b7cc185ed77e88dc8ce7118767baeffc6",
+      "bytes": 1657
+    },
+    {
+      "path": "writer/recovery/pr-784.json",
+      "sha256": "4156d92b60185db0d06155eea9c3be725b5cacc745d66bc4490a4c0b550661a8",
+      "bytes": 26387
+    },
+    {
+      "path": "writer/row-sources.txt",
+      "sha256": "8474fc30d07a12662811884f1be445c2079f2f261c7953e92180ff5e33a7d0fd",
+      "bytes": 1845
+    },
+    {
+      "path": "writer/skill-checks.txt",
+      "sha256": "97e49ebe80eb5ffdc08ed05895eb2142fb1456c8475b1352a171704ad310b8d7",
+      "bytes": 666
+    },
+    {
+      "path": "independent-review/FINAL-MANIFEST.json",
+      "sha256": "2b0d23bd705920558795e7e1ebcf991df6840cc36a4029ebf0058daf295ed6fc",
+      "bytes": 1013
+    },
+    {
+      "path": "independent-review/INDEPENDENT-CONTROLS.json",
+      "sha256": "30a633c7a31c46c48974b01217e8b2a58ef1691b184f2a4f37c0154238e0d31e",
+      "bytes": 1123
+    },
+    {
+      "path": "independent-review/PRESERVATION.json",
+      "sha256": "5990cd699127562107655f8b0fb352e4d0eb00242f16afed7ef9e8e6ac5687bb",
+      "bytes": 625
+    },
+    {
+      "path": "independent-review/REPORT.md",
+      "sha256": "cc65f7540b2f681d17efbb8a4b18af8e5e48f3a362a745ba92e65ed6dbac9279",
+      "bytes": 5987
+    },
+    {
+      "path": "independent-review/ROW-OUTCOMES.json",
+      "sha256": "b8992a90a3ee9cd10acbeb9c981a9b066672276f23f574c752df8277127d6d67",
+      "bytes": 28991
+    },
+    {
+      "path": "independent-review/STATUS.json",
+      "sha256": "f7ed61e162b255e08e0620c63c64cfad2c9fe5317a7ef744791dad38e9e19ed7",
+      "bytes": 379
+    },
+    {
+      "path": "validation/shared-tests.txt",
+      "sha256": "c54d9553ff84698b5faa931658d7df01424d158f3cee0a8afe99724e6f87da5f",
+      "bytes": 346
+    },
+    {
+      "path": "validation/shared-test-applicability.json",
+      "sha256": "50b60c40ce8a368ab0217f62c9bfe3a8870a3f8c861d2d59cb2b8d1ae1e6eca3",
+      "bytes": 589
+    }
+  ]
+}

@@ -345,6 +345,27 @@ class IfrsSkill(unittest.TestCase):
         self.assertFalse(domains.host_is_official("www.efrag.org", "financial-reporting"))
         self.assertTrue(domains.host_is_official("www.efrag.org", "sustainability-reporting"))
 
+    def test_oic_is_official_only_for_financial_reporting(self):
+        for host in ("fondazioneoic.eu", "www.fondazioneoic.eu"):
+            url = f"https://{host}/principi-contabili-category/2026/"
+            self.assertTrue(build_library.official_host(url, "financial-reporting"), host)
+            text = ifrs_skill(IFRS_SOURCES + f"| OIC in-force index | {url} | 2026-11-16 |\n")
+            self.assertEqual(skill_checks.check_source_hosts(
+                IFRS_PATH, text, skill_checks.read_frontmatter(text)), [], host)
+            for domain_id in domains.load()["domains"]:
+                if domain_id != "financial-reporting":
+                    self.assertFalse(domains.host_is_official(host, domain_id), (domain_id, host))
+
+    def test_oic_lookalike_hosts_remain_unofficial(self):
+        for host in ("fondazioneoic.eu.example.com", "fake-fondazioneoic.eu"):
+            url = f"https://{host}/principi-contabili-category/2026/"
+            self.assertFalse(build_library.official_host(url, "financial-reporting"), host)
+            text = ifrs_skill(IFRS_SOURCES + f"| Unrelated publisher | {url} | 2026-11-16 |\n")
+            problems = skill_checks.check_source_hosts(
+                IFRS_PATH, text, skill_checks.read_frontmatter(text))
+            self.assertTrue(any("not an official source for domain financial-reporting" in p
+                                and host in p for p in problems), (host, problems))
+
     def test_rates_table_is_optional(self):
         self.assertEqual(skill_checks.check_rates_rows_sourced(IFRS_PATH, "no table", IFRS_FM), [])
 

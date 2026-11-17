@@ -1,0 +1,431 @@
+{
+  "candidate_content_commit": "14de6846bf3bc95365da20364024a1c05c9ad90d",
+  "source_frozen_commit": "34d3435b4f7da42cb95d290f6a9bd4e7c096b66f",
+  "archive": "review-evidence.tar.gz",
+  "archive_sha256": "a788723dd1fe4dcb577af62775d46f9b520515cf8e8c6282f6cba460ce34dfeb",
+  "archive_bytes": 246424,
+  "payload_count": 85,
+  "internal_manifest_sha256": "bc485805d34d377b2400188e800b0e087155dd295219a06bf8cc0feca3135ce9",
+  "payloads": [
+    {
+      "path": "closeout-checks/calculator-quote-tests.json",
+      "size": 314,
+      "sha256": "1c1297605eec88954d65d30d12da4e5778d06eaeaa7a4e64f2a0c2d0f562ed47"
+    },
+    {
+      "path": "closeout-checks/check-0.json",
+      "size": 392,
+      "sha256": "3362905518d14d7a25495e1b8460eaa6208ae0311d90ec9bd1d811fc3c20434f"
+    },
+    {
+      "path": "closeout-checks/check-1.json",
+      "size": 390,
+      "sha256": "d6c51c63b67648c3cab04fbd962f575c3a278760a29c13253afbd075e5c48091"
+    },
+    {
+      "path": "closeout-checks/check-2.json",
+      "size": 314,
+      "sha256": "71d2e1317390eb8d1e99ec3a0a47dc1d9fc05159947544823f88045becbfdfa4"
+    },
+    {
+      "path": "closeout-checks/check-3.json",
+      "size": 367,
+      "sha256": "d06d19ff49051f08c4f620e8de4b2fed7e9703f40efb85f5bb099dbd95eca1c8"
+    },
+    {
+      "path": "closeout-checks/check-4.json",
+      "size": 288,
+      "sha256": "b435740de0203d91c700cf8e1d3203d328d4e4e083039cd882ad4eae98d4a2d2"
+    },
+    {
+      "path": "closeout-checks/check-5.json",
+      "size": 130,
+      "sha256": "08e0dc3c638a2a742c6355f367b4d189ac216c5295bab7bf4f5df1e730f67c2e"
+    },
+    {
+      "path": "closeout-checks/open-pr-heads-prepublication.json",
+      "size": 1703,
+      "sha256": "f119ef8028774b0559ea83f3df1c345d33fc8d5d89850ec6f9f2c36bacc8cb70"
+    },
+    {
+      "path": "closeout-checks/open-pr-overlap.json",
+      "size": 30171,
+      "sha256": "dbf52087338e2bb3cfa43c8cdaa579eb9125c7da20c6d2f0caf0e676b965b70f"
+    },
+    {
+      "path": "closeout-checks/parent-targeted-source-read.json",
+      "size": 1210,
+      "sha256": "ac89bdb4b186cdc0ac8ae476388101374b1773782302bd1a74b4b0fb443c4f50"
+    },
+    {
+      "path": "closeout-checks/prior-canonical-record-integrity.json",
+      "size": 3560,
+      "sha256": "d79397c2626f2d39eac2dab182e92eeac786672e40987192aaa75e069acf0eda"
+    },
+    {
+      "path": "closeout-checks/protected-metadata-and-cta.json",
+      "size": 2466,
+      "sha256": "230f6a6a835bed3cdbc38220d8a45d10c42929d7edd8ecac0aa8594ab213229d"
+    },
+    {
+      "path": "closeout-checks/recovery-preservation.json",
+      "size": 3242,
+      "sha256": "c08d423fd7b3fba388139c07ac7a2e1d9d44ec6eec5c5967129057c033a0e0c2"
+    },
+    {
+      "path": "closeout-checks/results.json",
+      "size": 2283,
+      "sha256": "a7979932552d30e0c1085081bd9fc30653e04d6d52a850cb61b791817357febc"
+    },
+    {
+      "path": "closeout-checks/row-sources-stock.txt",
+      "size": 856,
+      "sha256": "659de6a60737ed7e148886f7273305b31207e5efffbee5df2c123564185ca0e1"
+    },
+    {
+      "path": "closeout-checks/setup-failures.json",
+      "size": 605,
+      "sha256": "519f1ab983cc3400ebaa248983c811eca49981b9947e3d9871f52f4b32572fc8"
+    },
+    {
+      "path": "closeout-checks/skill-checks.json",
+      "size": 211,
+      "sha256": "0825ceae4de13bd4479a74d08b65d6853c04aaf1ab8ca1d8a3f91ab7961eb053"
+    },
+    {
+      "path": "closeout-checks/supplemental-cached-figures.json",
+      "size": 755,
+      "sha256": "adea6824a480ffe275c87c6eafdadc321b286f0c20d61f12d35769dcc474d9fe"
+    },
+    {
+      "path": "evidence-fiji/combined-candidate-binding.json",
+      "size": 2445,
+      "sha256": "1f0d6f9075f369d7958b70eb0d7d74d218cbcac7a6fc431ab099a810053d11d7"
+    },
+    {
+      "path": "evidence-fiji/combined-check-results.json",
+      "size": 3013,
+      "sha256": "069de300f14a790ded25280a06b532b59b7997cf0bb8831e18c480c7e84042d1"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/cached-figure-counts.json",
+      "size": 212,
+      "sha256": "10699b65fa9b3e498fad106c258e1ae3a5d5ea9c419b51e556583d4b861c0935"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/candidate-files.json",
+      "size": 638,
+      "sha256": "2d490044a84dc8a16daa361346b2b22c9c8dfdccbaa2c9490bee0b30340ff2fe"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/figure-row-bindings.json",
+      "size": 16597,
+      "sha256": "1f009ddf22673753fb0e3856944c9a852c4994b9926c2779ce7c217db8a7c652"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/final-binding.json",
+      "size": 2591,
+      "sha256": "d5112198581a06ad9d52b15939f33fde17c1ed461e3a91f1e57d21b685dbb366"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/handoff.md",
+      "size": 5669,
+      "sha256": "fe857936e6408b4e74f781719117d73bbbfd62461f56b4e91f5bc2d6916f35aa"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/ledger-units.json",
+      "size": 35347,
+      "sha256": "850ef1e4a37a1637853c29274b64d7d52fd1bad270c1dfb5f94716dfd0d67980"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/ledgers/fiji-payroll-vat.md",
+      "size": 27384,
+      "sha256": "1f81ff67d2ee0343cedd1cbbd7abe8cde2759fd996101632866ac2431681ee3f"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/old-line-destination-map.md",
+      "size": 137376,
+      "sha256": "99a51bb7fa91be4c6240d5a88be452514fea41a794489ef21960dfa45d099a66"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/original-pack-hashes.json",
+      "size": 1003,
+      "sha256": "60aeb611063ee872c7b8ef12678a021ba0da267b7f2c168bee2a5b8552cca4b5"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/referenced-source-text-hashes.json",
+      "size": 13726,
+      "sha256": "7c6480b3d65cd3292dc8786c28ab5cd3f0fecdfeb46c79111f8e79ba3b7ef87a"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/row-sources-cached.md",
+      "size": 482,
+      "sha256": "0e583bb24c085a1a717cdb2b168c0281abcb210b5e49e1836f9029e3a8ca3e26"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/row-sources-stock.txt",
+      "size": 444,
+      "sha256": "054670ac94b6bf23b2ad5690b2fd0144609b6b0f490f4fabbbdaa3a6f704b115"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/source-cache-map.json",
+      "size": 9226,
+      "sha256": "bef14faaf79dd43e13ce80fc660fdc6488b394db7372d5f8a6173ea5639834d9"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/source-hashes.json",
+      "size": 3186,
+      "sha256": "20c708996022406404a7e0cac8258d736f0a149901bfada6e6493f12c84bdff7"
+    },
+    {
+      "path": "evidence-fiji/payroll-vat-writer/source-urls.json",
+      "size": 2615,
+      "sha256": "7672abfd670c014a571171c155aa970d2ce7601bec35a1bf2da20ff83847078a"
+    },
+    {
+      "path": "evidence-fiji/review-corrections-34d3435b4/delta-binding.json",
+      "size": 2236,
+      "sha256": "2dc775fb47abc21c6f2487a540f6829e23d8649182b283d1d9d677c4488091f2"
+    },
+    {
+      "path": "evidence-fiji/review-corrections-34d3435b4/final-checks.json",
+      "size": 2220,
+      "sha256": "e1d8b66ac6f740a9f306052718cd213778db65e370528349729c86025d0cb1ce"
+    },
+    {
+      "path": "evidence-fiji/root-native-quote-ledger.json",
+      "size": 38315,
+      "sha256": "af968289bd612333fe5fbe6797b3e9a70356b8d8ea1368f606ffcc21c31cc1e4"
+    },
+    {
+      "path": "evidence-fiji/root-native-quote-ledger.md",
+      "size": 18194,
+      "sha256": "ba2323d491c99ecfa726b729f6ba39707ab00ce6d10d99568a1c43407fbbd31d"
+    },
+    {
+      "path": "evidence-fiji/root-old-line-map.json",
+      "size": 26054,
+      "sha256": "d4f7e676b7160a9862c68434870e6ea8bf25800a5e9dd6d49510e8175349790f"
+    },
+    {
+      "path": "evidence-fiji/root-old-line-map.md",
+      "size": 19527,
+      "sha256": "91df9da3733ea8f542958a5512c1fdde2f14e1c082e3bae27913890a18f59003"
+    },
+    {
+      "path": "evidence-fiji/root-three-checks.json",
+      "size": 1864,
+      "sha256": "98b49fd9eb7d8e26f84b9ae280c26ef4d022cdf2fe54dd7047bfed37dd15b5b4"
+    },
+    {
+      "path": "evidence-fiji/root-three-figures.log",
+      "size": 594,
+      "sha256": "40a4a47f01e9b180b2f2cfdd22ee0c53c22263aab4f0d55958a2e906abd6ff7e"
+    },
+    {
+      "path": "fresh-review/CANDIDATE-BINDING.json",
+      "size": 6214,
+      "sha256": "7ec2afe4eb96cfc263fbb1d1dbec96621f17cae22c53a9393539ae578541206f"
+    },
+    {
+      "path": "fresh-review/FINAL-TABLE-INVENTORY.json",
+      "size": 71716,
+      "sha256": "960dea891efe9db4a4d3aa354fc9c8216ebde984fee56a0562f1c0904415a746"
+    },
+    {
+      "path": "fresh-review/FINDINGS.json",
+      "size": 2584,
+      "sha256": "96711f844547e8f9488449feb4212d296452e6291eb98ba8d864bf316ccbcc0e"
+    },
+    {
+      "path": "fresh-review/INDEPENDENT-ARITHMETIC.json",
+      "size": 9666,
+      "sha256": "ff1f11488592eeebc1370952333e4b31ec95e8dd72422594645a252d565c1d3d"
+    },
+    {
+      "path": "fresh-review/LEDGER-ASSESSMENTS.json",
+      "size": 87670,
+      "sha256": "65899e66f6960f640a149cb39adaf58aaffa2fcd4ad35f5834c4a160449a7257"
+    },
+    {
+      "path": "fresh-review/METADATA-AND-COMPATIBILITY.json",
+      "size": 3083,
+      "sha256": "b096237d5928e74055109c0cc3f3ec4c912b7a90a35daa9b0f3afe55cc1d5c0b"
+    },
+    {
+      "path": "fresh-review/ORIGINAL-LINE-PRESERVATION.json",
+      "size": 428837,
+      "sha256": "71e5b927cfe0adb916ac3bc1340a06734b0166060efe61889b458d1fa63682e7"
+    },
+    {
+      "path": "fresh-review/PUBLIC-MANIFEST.json",
+      "size": 2126,
+      "sha256": "0505dcfb22881822a06e9c17d1843e03ec58a710167c2f31c3731cc235ed2762"
+    },
+    {
+      "path": "fresh-review/REPORT.md",
+      "size": 11813,
+      "sha256": "833a7cffc723ab3829d57e342bff222d1fc5d11a073b8d341c9f0e079850097f"
+    },
+    {
+      "path": "fresh-review/SOURCE-CACHE-PROVENANCE.json",
+      "size": 22117,
+      "sha256": "239fe63c193192c9d91a513410ee232bcce3032a81334572bb4af5c3c00cdecd"
+    },
+    {
+      "path": "fresh-review/SOURCE-READS.json",
+      "size": 33988,
+      "sha256": "05a30d87317d3a6b78c82469c554704a39f90cfc3fecab74c8e03e135198d4ac"
+    },
+    {
+      "path": "fresh-review/WRITER-EVIDENCE-BINDINGS.json",
+      "size": 1217,
+      "sha256": "a80874a65ddf27e9718714ec3c0b3c84f351c0fa457d2108b0ae800828d9d242"
+    },
+    {
+      "path": "ledgers/fiji-vat.md",
+      "size": 10636,
+      "sha256": "434f582539708fc38a668b1c2628e24a21faec79d98df4bfd9816dadf5626bbf"
+    },
+    {
+      "path": "ledgers/fj-company-formation.md",
+      "size": 6243,
+      "sha256": "5a85291b519b83f1d12e43bfeec7d23054431885c13525bcbfe31d1bf7daeceb"
+    },
+    {
+      "path": "ledgers/fj-corporate-income-tax.md",
+      "size": 6790,
+      "sha256": "938e0c8b95692fefe721b59ac97d0e9502a237861b19fdd09c7235b950df2eef"
+    },
+    {
+      "path": "ledgers/fj-payroll-social.md",
+      "size": 9327,
+      "sha256": "1fb30eb1aef28da68daaa1be0744224fe68fb7585813edf84d6cd8cb7d49ba26"
+    },
+    {
+      "path": "ledgers/fj-tax-overview.md",
+      "size": 2916,
+      "sha256": "98cd0ac64fa27c41831248e566a202fcd4d10bf439faec5c0c44ae96f90ac30f"
+    },
+    {
+      "path": "originals/fiji-vat.md",
+      "size": 10128,
+      "sha256": "e65c6d9b69a505fa65ff56831bcbd5814ccfc7cd7546f02a38104b2174516dfb"
+    },
+    {
+      "path": "originals/fj-company-formation.md",
+      "size": 3239,
+      "sha256": "e8aee43bf949f1127e38dc04cc80767d49b691a50607774c69f1830c42e3cb36"
+    },
+    {
+      "path": "originals/fj-corporate-income-tax.md",
+      "size": 3539,
+      "sha256": "106ab2c90e839bf4cedbba2aeb85ce92423a31e931299062cb16122a58bf93f1"
+    },
+    {
+      "path": "originals/fj-payroll-social.md",
+      "size": 28162,
+      "sha256": "cc59ea90b45ba44163ea98a7adc6b73ddaff079204122d03245fb0819b773b7d"
+    },
+    {
+      "path": "originals/fj-tax-overview.md",
+      "size": 2234,
+      "sha256": "85bdc27ca460dcf50ea3e70406518d78d47261a9f79f4a622b9406a3be9bf73b"
+    },
+    {
+      "path": "review-fiji-lane7/FINAL-FINDINGS-5c56d521.json",
+      "size": 1994,
+      "sha256": "f807d8154aa073f91f207d4c43630c2dc49a713db862d240dc283bbbf468332d"
+    },
+    {
+      "path": "review-fiji-lane7/FINAL-MANIFEST-5c56d521.json",
+      "size": 2489,
+      "sha256": "d56a36005edeb9c1fafaf370fcf640c3963a23a9945bf83005bf4a2fe907d9b3"
+    },
+    {
+      "path": "review-fiji-lane7/FINAL-REVIEW-5c56d521.md",
+      "size": 7140,
+      "sha256": "9dc782069811cf54b9b805197aac410de4759b8f3dae73b8e2c219a0f98b68de"
+    },
+    {
+      "path": "review-fiji-lane7/FINAL-SOURCE-READS-5c56d521.json",
+      "size": 20831,
+      "sha256": "1e7a918116967de82680892d513781bf85677fc0a705d2bc82ddffa733eece0f"
+    },
+    {
+      "path": "review-fiji-lane7/build-final-evidence.py",
+      "size": 10486,
+      "sha256": "44cb60f86c2b16dc4e9e5ec929ec2cc9fa99cfcfe4306e6b0821f26dc95fa7e2"
+    },
+    {
+      "path": "review-fiji-lane7/candidate-binding.json",
+      "size": 1124,
+      "sha256": "3fc66d566341ba07b04c72e6728a453018f5a095a22ef99820cc65ce1dfa3a2f"
+    },
+    {
+      "path": "review-fiji-lane7/final-ledger-assessments.json",
+      "size": 112475,
+      "sha256": "f9e4b348c0fa0faa2485e1bebff9a3a3bf9c45784a1e9260e84149f604f58ac1"
+    },
+    {
+      "path": "review-fiji-lane7/final-original-line-dispositions.json",
+      "size": 234016,
+      "sha256": "6c2708100da3765c3307b0ff63d960a0f6921fea5340f8ed267e1e434489f621"
+    },
+    {
+      "path": "review-fiji-lane7/final-table-claim-inventory.json",
+      "size": 53481,
+      "sha256": "0a10bc6cd82871314eb0a26542c03cfb1c577d91798396a30027ba2397e7c9ad"
+    },
+    {
+      "path": "review-fiji-lane7/independent-arithmetic.json",
+      "size": 7276,
+      "sha256": "6bfa9f2427fe61cfec2f3082630e7a083b559a24a7345768a562ff9b57993ca2"
+    },
+    {
+      "path": "review-fiji-lane7/independent-local-checks.json",
+      "size": 2137,
+      "sha256": "ebd644bb1e80a6cd7ac3a888449c924d67cb6497f7a91b958da8ec5413af0cc4"
+    },
+    {
+      "path": "review-fiji-lane7/metadata-and-sibling-proof.json",
+      "size": 2262,
+      "sha256": "c1d9019215497a8ae57ddccc3ab9f7d879c879a0a3d892eef3a4126320e5248b"
+    },
+    {
+      "path": "review-fiji-lane7/quote-transcription-check.json",
+      "size": 45807,
+      "sha256": "38d5d8bda5f77204d1a242e5bde9ce0c4cca9d312855840a3f108ba287fc1c67"
+    },
+    {
+      "path": "review-fiji-lane7/source-cache-rehash.json",
+      "size": 34209,
+      "sha256": "d7e03e6f5ec28ced3a8cfb8759d56ef70c049d204fa0e0f161fc50973580afc0"
+    },
+    {
+      "path": "review-fiji-lane7/verify-independent.py",
+      "size": 7401,
+      "sha256": "cf2bbfeaf3207f83e584391668b7b10d8fe423d5383ce20cf566eff48a1d4702"
+    },
+    {
+      "path": "review-fiji-lane7/writer-raw-text-cache-rehash.json",
+      "size": 6883,
+      "sha256": "17393eb9d0255a54eb39784597a82355b76935b8deb91f4f4fd5e68f45a6c524"
+    },
+    {
+      "path": "review-fiji/THREE-FILE-PREFLIGHT.md",
+      "size": 1415,
+      "sha256": "2d2c98b5fd10586bce7c72fccc8d26b9492f54932a851cc7ca968fd96f0768cd"
+    },
+    {
+      "path": "review-fiji/acquisition-rehash.json",
+      "size": 24031,
+      "sha256": "4dde2fef1807242dda7d6b1541f184de27005cd3f7586d87852b6e6c903f2187"
+    },
+    {
+      "path": "review-fiji/three-file-preflight.json",
+      "size": 19466,
+      "sha256": "764227b0b7632d8e7388ef8695cef70c4ee1c9568e74f98fb2a251805ad44326"
+    }
+  ]
+}

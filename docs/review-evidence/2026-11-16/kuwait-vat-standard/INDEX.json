@@ -1,0 +1,130 @@
+{
+  "content_head": "4aa59929121f3358cb36b1f6e4d48d39b2773ed2",
+  "candidate_sha256": "5fda358516791e4e665fec92b637f7df6b4a926e4d04632efd4981ffab1dae9f",
+  "archive": {
+    "path": "evidence.tar.gz",
+    "sha256": "128debc922dd88710954bfa0262ddcfd72d091a6f1aff67f619eb92aa0facfd2",
+    "bytes": 19590,
+    "members": 23
+  },
+  "records": [
+    {
+      "path": "writer/FINAL-MANIFEST.json",
+      "bytes": 5301,
+      "sha256": "dc59f592ebb4b0f3057b733727627a5ec6cd9876cc8289a932c1e6eae0bf420f"
+    },
+    {
+      "path": "writer/HANDOFF.md",
+      "bytes": 3159,
+      "sha256": "b0e4738e44ffb188be5fe7dabcba2cdaf4a49671ea0a894c7c81aca4d3076f32"
+    },
+    {
+      "path": "writer/calculator-quotes.txt",
+      "bytes": 127,
+      "sha256": "9f38d6c101c44543a14b349570c97d621e5313ca03459cd02ec3564986de4688"
+    },
+    {
+      "path": "writer/candidate-binding.json",
+      "bytes": 612,
+      "sha256": "7e754bc51a01f1dfe3fb89936a43671cef63ed4543390cdcb618df637d18ea82"
+    },
+    {
+      "path": "writer/candidate.md",
+      "bytes": 7666,
+      "sha256": "5fda358516791e4e665fec92b637f7df6b4a926e4d04632efd4981ffab1dae9f"
+    },
+    {
+      "path": "writer/continuity.json",
+      "bytes": 3322,
+      "sha256": "8107ff6ad59fa3745216045a484b7f9ddaca2823fe8db508bc21087795e0f1e6"
+    },
+    {
+      "path": "writer/delta-ledger.md",
+      "bytes": 3720,
+      "sha256": "da7a506ee0fc580f8072d698881877ade65af7386c4a550252ccb5bf32dc7c9b"
+    },
+    {
+      "path": "writer/delta.patch",
+      "bytes": 4974,
+      "sha256": "49a69131fc73f0a8c59232013668f7003a99d6316d94f9822def3774d0189a27"
+    },
+    {
+      "path": "writer/examples.txt",
+      "bytes": 58,
+      "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8"
+    },
+    {
+      "path": "writer/initial-table-relocation.py",
+      "bytes": 2394,
+      "sha256": "ac0e93d01566196a60e14697d935734ea2f93770571f11776cb00e2831fbf0d1"
+    },
+    {
+      "path": "writer/intermediate-layout-diagnostic.json",
+      "bytes": 396,
+      "sha256": "a14803d64d7e17d0518cd8bc0d8a7ecfd1ffbd7124f9115e63a89042ede0f5e7"
+    },
+    {
+      "path": "writer/nov1-reviewed.md",
+      "bytes": 7355,
+      "sha256": "d2407803d325d97e2b83f0639e3479189e6479cddad73b6c85e4755d317b5940"
+    },
+    {
+      "path": "writer/old-topic-destinations.json",
+      "bytes": 27684,
+      "sha256": "1d1b1f21a51b8e157009804bf8d875a74499c1abdace8de963c70c1560c743b3"
+    },
+    {
+      "path": "writer/open-pr-files.json",
+      "bytes": 22873,
+      "sha256": "2706e42c667c7ecf7f30295606085cb1aea52e999d56f0371e2ad48f437cb0ba"
+    },
+    {
+      "path": "writer/original-standard-findings.json",
+      "bytes": 297,
+      "sha256": "6c7ab29c61c8f07f08b2eb15336c519f37e6755640554d96280ac061cf37524a"
+    },
+    {
+      "path": "writer/original.md",
+      "bytes": 6606,
+      "sha256": "18cee488aaed65bd48b959c6f2cdc89037a307357a2650a3b0d913b5dbc0b97f"
+    },
+    {
+      "path": "writer/preflight.json",
+      "bytes": 620,
+      "sha256": "c3299347f584dc428a712b4b14a9950dd2c0e70111368831a63bb6df376e2b08"
+    },
+    {
+      "path": "writer/row-sources.txt",
+      "bytes": 312,
+      "sha256": "e31b0fcf290566dae648513a6a7d470db6e5e12844f1d4e7cdc9592ecdc8e3f6"
+    },
+    {
+      "path": "writer/standard.txt",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "writer/sync.txt",
+      "bytes": 81,
+      "sha256": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6"
+    },
+    {
+      "path": "writer/validate.txt",
+      "bytes": 192,
+      "sha256": "a7d8a057660b3d212d944ce39725ec8cef8aa0fa1ee6a85ef9d7c717d65fc074"
+    },
+    {
+      "path": "independent/REPORT.md",
+      "bytes": 1907,
+      "sha256": "cc4717c63f134fd9afedfbf497ab9d14357d44adae780121dbe1f46502a75689"
+    },
+    {
+      "path": "independent/bindings.json",
+      "bytes": 485,
+      "sha256": "b3c46210b77cdb25db3ecd24bb6dccaa12568adc62c347ab0a217dcfc67eccc6"
+    }
+  ],
+  "report_sha256": "cc4717c63f134fd9afedfbf497ab9d14357d44adae780121dbe1f46502a75689",
+  "raw_source_bodies_included": false,
+  "historical_review": "Existing public docs/research/2026-11-01-kuwait-independent-review and kuwait-closeout records remain canonical; see writer continuity.json for exact bindings. No duplicate full pack repackaging."
+}
