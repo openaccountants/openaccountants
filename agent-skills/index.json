@@ -1,13 +1,9 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2454,
+ "count": 2455,
  "publication_holds": [
   {
    "name": "cameroon-social-contributions",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "cross-border-payroll-coordination",
    "reason": "status: needs_sources"
   },
   {
@@ -4836,6 +4832,15 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2025
+  },
+  {
+   "name": "cross-border-payroll-coordination",
+   "jurisdiction": "INTL",
+   "path": "skills/global/cross-border/cross-border-payroll-coordination.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "cross-border-tax-router",
