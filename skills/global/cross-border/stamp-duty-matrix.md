@@ -1,268 +1,409 @@
 ---
 name: stamp-duty-matrix
 description: Use this skill whenever an attorney, transaction lawyer, or in-house counsel asks about stamp duty on documents, securities transfers, or financial transactions. Trigger on phrases like "stamp duty", "stamp tax", "SDRT", "stamp duty reserve tax", "stamp duty on shares", "share transfer tax", "FTT", "financial transaction tax", "France FTT", "Italy FTT", "Spain FTT IFT", "Ireland stamp duty shares", "Hong Kong stamp duty shares", "Singapore ACD additional conveyance duty", "stamp duty Australia", "Indian stamp duty", "Schedule I Indian Stamp Act", "stamp duty Bahamas", "Brazil IOF", "Argentina impuesto de sellos", "Mexico ISN", or any request to assess stamp duty exposure on a document, security transfer, lease, or financial transaction. Maps stamp duty AND financial transaction tax (FTT) regimes across 40+ jurisdictions. Excludes the property/real-estate transfer side (see property-transfer-tax-matrix). ALWAYS read this skill before computing stamp duty on a share transfer, instrument, or financial transaction.
-version: 0.1
+version: 0.2
 jurisdiction: GLOBAL
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-17
 depends_on:
   - cross-border-workflow-base
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: cross-border
+type: cross-country-method
 ---
 
 # Stamp Duty Matrix
 
-## Stamp Duty & Financial Transaction Tax Matrix v0.1
+## Scope
 
-## What this file is
+Classify the instrument, test the relevant country rules, and stop where a required condition is unverified. This content Guide loads on `cross-border-workflow-base`. It covers securities (shares, bonds and partnership interests), documents recording credit, leases or guarantees, documentary duties and analogous FTTs, and the original Belgian securities-account-tax topic. Its output is a working paper for a qualified local practitioner, not a filing or execution clearance.
 
-**This file is a content skill that loads on top of `cross-border-workflow-base`.** It covers stamp duties on documents, securities transfers, and the parallel financial transaction tax (FTT) regimes that economically resemble stamp duty.
+**2026 reference, checked through 17 November 2026 within the source scopes below.** A named country is not a promise that every branch is usable. All original jurisdictions and negative-tax questions remain: a branch with missing authority is a specific non-usable hold under Sources. A missing rate never means zero tax. The four original cases keep their facts and show where a missing venue, valuation or classification stops a conclusion.
 
-**Tax year coverage.** Current for **calendar 2025**, reflecting:
-- **UK stamp taxes** — SDRT 0.5% on chargeable securities; stamp duty on physical paper transfers; 1.5% SDRT/stamp duty on issuances to clearance services / depositary receipts confirmed by HMRC after the CJEU HSBC ruling
-- **Italian FTT** unchanged at 0.2% (regulated market) / 0.22% (OTC); derivatives schedule
-- **French FTT** at 0.3% on French listed company shares (in-scope > EUR 1bn cap)
-- **Spanish FTT (IFT)** at 0.2% on Spanish listed shares > EUR 1bn cap
-- **Hong Kong stamp duty on shares** reduced 0.10% buyer + 0.10% seller (cut from 0.13% in November 2023)
-- **Singapore ACD (Additional Conveyance Duty)** rules for property-rich entities
-- **Indian Stamp Act** as substantively amended (federal stamp duties on securities since 2020 + state stamp duty on instruments)
+Real-estate transfer duty is handed to `property-transfer-tax-matrix`; financial-services VAT/GST to the relevant VAT Guide; inheritance/gift duties to `inheritance-estate-gift-matrix`; customs to the relevant customs Guide. Property-rich **share** transactions still require the relevant entity/asset tests here before that handoff. Australia remains a state/territory landholder-law referral, not a federal share-duty abolition claim.
 
-**The reviewer is the customer of this output.** Stamp duty assessments depend on precise document characterisation and jurisdiction. Every output must be reviewed by a credentialed local practitioner before any document is executed.
+## Ask the client first
 
-## Section 1 — Scope statement
+- Transaction date and all execution, acceptance, settlement, receipt and conditional-agreement dates; execution/receipt countries and exact instruments.
+- Issuer residence, incorporation, register and security rights; actual trading venue and admission/listing status, annual capitalisation evidence and intermediary/CREST chain.
+- Both parties' residence, beneficial interests/voting rights and associates; group/reconstruction/market-maker status and documentary evidence.
+- Consideration, currency, market value, daily net acquisitions and any gift/non-cash or inadequate-value terms; the property's residential/immovable classification and direct/indirect asset values.
+- Who must collect, declare and pay; any previous stamp/SDRT payment, relief claim, certificate, account exemption and filing records.
+- The country/state/province and instrument branch for any held claim. Obtain its operative authority before giving a rate, exemption, deadline or zero-tax conclusion.
 
-- **Skill coverage — included** — Stamp duty on securities (shares, bonds, partnership interests); Stamp duty on instruments (loan agreements, mortgages, leases — to the extent not in property transfer skill); Financial transaction taxes (FTT) — France, Italy, Spain, OTC + listed; Documentary stamp taxes — US state-level documentary stamp taxes, Philippines DST, India state stamp duty; Bank levies and securities account taxes (Belgium TCT, illustrative)  _(Section 1 — Scope statement)_
-- **Skill coverage — excluded** — Real estate transfer tax / stamp duty on property — see property-transfer-tax-matrix.md; VAT/GST on financial services — see country VAT skills; Inheritance/gift documentary tax — see inheritance-estate-gift-matrix.md; Customs duty — see customs/duties skills  _(Section 1 — Scope statement)_
+## The method, step by step
 
-## Section 2 — UK Stamp Duty Reserve Tax (SDRT) and Stamp Duty
+1. Separate the agreement, transfer instrument, issue, acquisition, disposal, account holding and loan. Identify each potential charge and each party independently.
+2. Apply the country scope and transaction-date rule. Test every condition next to the rate and any genuine statutory exemption before calculating.
+3. Establish the statutory base and its valuation/netting/currency rules. Preserve the original consideration as a case fact; do not silently treat it as an established tax base.
+4. Compute each supported charge using its own rounding rule. Resolve offset/cancellation, exemptions and collection responsibility; do not add mutually exclusive branches together.
+5. Match the actual payer to the return, portal, supporting documents and time limit. An unresolved procedure or substantive hold prevents a filing-ready output.
+6. Produce the reviewer brief and completion checklist below. Show the amount, source, conditions, missing evidence and conclusion for each jurisdiction. Escalate every held branch.
 
-### 2.1 SDRT (FA 1986 Part IV)
+## Country rules and decision gates
 
-- **[T1] Rate** — 0.5% of consideration for the transfer of chargeable securities  _(FA 1986 Part IV)_
-- **Chargeable securities** — UK-incorporated company shares (and similar), some loan notes, units in unit trusts  _(s.99 FA 1986)_
-- **Trigger** — Agreement to transfer (regardless of whether share register is updated) settled through the CREST system → SDRT applied automatically; for off-CREST, payable via Stock Transfer Form + HMRC stamping  _(FA 1986 Part IV)_
+### United Kingdom, SDRT and duty on transfer instruments
 
-### 2.2 Stamp duty on paper instruments
+Separate an agreement charge, a transfer instrument and a depositary/clearance transfer. Obtain the security's issuer, register, rights, beneficial owners, agreement/condition/execution dates, consideration, venue, CREST settlement and exemption evidence. Physical stamping has been withdrawn; do not tell a user to obtain an old physical stamp. [HMRC, paper procedure](https://www.gov.uk/guidance/stamp-duty-on-shares)
 
-- **[T1] Rate** — 0.5% of consideration; minimum stamp GBP 5. Applies when transfer effected by paper instrument (Stock Transfer Form)  _(FA 1986 Part IV)_
-
-### 2.3 The "1.5% charge" — depositary receipts and clearance services
-
-- **[T1] 1.5% charge** — 1.5% SDRT (or stamp duty) on issuance to: a "depositary receipt issuer" (most commonly the bank issuing ADRs); a "clearance service" (e.g., DTC for US investors)  _(FA 1986 ss.67-70 / s.93)_
-- **HMRC post-CJEU HSBC ruling position** — Confirmed by HMRC post-2009 CJEU HSBC ruling: the 1.5% on issuance is not generally enforced for EU/EEA destinations (CJEU C-569/07); however, HMRC's position post-Brexit and current administrative practice (FA 2024 amendments) treats issuance into Crest as not subject to 1.5%; complex issue requires specialist review  _(CJEU C-569/07; FA 2024 amendments)_
-
-### 2.4 Exemptions
-
-- **Intra-group relief** — 0% for transfers within 75%+ group  _(s.42 FA 1930 / Sch 19 FA 1999)_
-- **Demergers and reconstructions** — Exempt  _(ss.75-77 FA 1986)_
-- **Loan capital (corporate debt)** — Most non-convertible debt exempt  _(Section 2.4 — Exemptions)_
-- **Shares listed on a recognised growth market** — 0% SDRT since 2014 for shares listed on a "recognised growth market" (AIM, AQSE Growth, certain SME markets)  _(Section 2.4 — Exemptions)_
-
-### 2.5 Filing
-
-- **Filing mechanics** — CREST: automatic. Off-CREST: file STF with HMRC within 30 days of execution; instrument stamped  _(Section 2.5 — Filing)_
-
-## Section 3 — Italy Financial Transaction Tax (FTT)
-
-### 3.1 Three pillars
-
-**Three pillars — Italy FTT**  _(Decreto Legge 24 aprile 2012 n.16)_
-
-| Pillar | Rate | Base |
+| Branch | Operative rule and conditions | Official authority |
 | --- | --- | --- |
-| **Tobin tax (cash equities)** | 0.2% (regulated market) / 0.22% (OTC) | Net daily balance per ISIN per intermediary; Italian-resident issuer share value > EUR 500m cap |
-| **Derivatives** | EUR 0.01875 to EUR 200 per contract (sliding scale by notional value) | Derivatives on FTT-in-scope underlyings |
-| **High frequency trading** | 0.02% on cancelled / modified orders | Orders cancelled within 0.5 seconds, > 60% modify-cancel ratio |
+| Ordinary SDRT | 0.5% on an agreement for money or money's worth to transfer chargeable securities. For a conditional agreement the relevant day is when the condition is satisfied; otherwise it is the agreement day. Non-money consideration uses open-market value. Apply the actual exemptions and cancellation rules before concluding tax remains due | [FA 1986 s 87](https://www.legislation.gov.uk/ukpga/1986/41/section/87) |
+| Security scope | Stocks, shares, loan capital, associated interests/rights/options and unit-trust units can be covered. Foreign incorporation is not sufficient for exemption: UK-register, paired-share and UK Societas branches matter. Separately test the exempt-security, loan-capital, overseas-unit-trust and exempt-investment conditions. Interests in depositary receipts themselves have their own exclusion | [FA 1986 s 99(3)-(12)](https://www.legislation.gov.uk/ukpga/1986/41/section/99) |
+| Transfer instrument | Ordinary share-transfer duty is 0.5%. The GBP 1,000 small-consideration certificate requires that the transfer is not part of a larger transaction or series exceeding that amount. Where duty is chargeable, round each instrument up to a multiple of GBP 5. Do not import this document rounding into SDRT | [HMRC, paper duty and certificates](https://www.gov.uk/guidance/stamp-duty-on-shares); [HMRC, share purchase](https://www.gov.uk/tax-buy-shares) |
+| SDRT rounding and overlap | SDRT rounds to the nearest penny, with half a penny rounded up. An instrument executing the agreement may support repayment/cancellation of the principal SDRT charge only when s 92's transfer and due-stamping/non-chargeability conditions are met; retain the proof and timely claim. Do not simply charge both taxes permanently | [FA 1986 s 99(13)](https://www.legislation.gov.uk/ukpga/1986/41/section/99); [s 92](https://www.legislation.gov.uk/ukpga/1986/41/section/92) |
+| Paper filing/payment | Send the signed and dated transfer form and required supporting material and pay within 30 days of execution. Claim a substantive relief with its evidence through HMRC's stated process. Do not confuse a relief claim with the small-consideration certificate or with CREST automation | [HMRC procedure](https://www.gov.uk/guidance/stamp-duty-on-shares) |
+| CREST SDRT | CREST normally deducts and pays automatically. Confirm security flags and the actual settlement; an off-CREST agreement is not automatically a paper-form case | [HMRC, pay SDRT](https://www.gov.uk/guidance/pay-stamp-duty-reserve-tax) |
+| Off-CREST SDRT | Notify HMRC in writing with the transaction, parties, security, value and relief facts. Where payment could have been made through CREST, notice/payment are due within 14 days of trade. Otherwise they are due by the seventh day of the following agreement month; payment must reach HMRC by the preceding working day where that date is a weekend/bank holiday | [HMRC, When to pay and Tell HMRC](https://www.gov.uk/guidance/pay-stamp-duty-reserve-tax) |
+| Recognised growth market | Eligible securities must be admitted to a recognised growth market and **not listed on that or any other market**. Verify the particular security's status against the current recognised-market list and CREST flags. An AIM label alone is insufficient; the paper exemption has the corresponding admission/no-listing test and certificate procedure | [s 99(4B)](https://www.legislation.gov.uk/ukpga/1986/41/section/99); [HMRC SDRT](https://www.gov.uk/hmrc-internal-manuals/stamp-taxes-shares-manual/stsm041270); [paper](https://www.gov.uk/hmrc-internal-manuals/stamp-taxes-shares-manual/stsm041260); [market list](https://www.gov.uk/hmrc-internal-manuals/stamp-taxes-shares-manual/stsm041330) |
+| Intra-group relief | The group test is beneficial ownership of at least 75% of ordinary capital, distributable profits and winding-up assets, directly/indirectly or through a common parent. Beneficial interest must pass between associated corporate bodies. Control arrangements that let a person obtain control of the transferee but not transferor can block relief, subject to the specific s 42A/B exceptions. Obtain the transaction/group/control evidence and HMRC relief treatment; the percentage alone is not clearance | [FA 1930 s 42](https://www.legislation.gov.uk/ukpga/Geo5/20-21/28/section/42); [HMRC relief procedure](https://www.gov.uk/guidance/stamp-duty-on-shares) |
+| Reconstruction of an undertaking | Section 75 requires a qualifying reconstruction and the actual consideration/shareholder tests: non-redeemable acquiring-company shares to all target shareholders, only qualifying liability assumption/discharge as other consideration, commercial reasons/no avoidance and the prescribed cross-holdings/proportions. Own-share cancellation and due-stamping rules matter. Do not label every demerger exempt. The former s 76 is repealed | [FA 1986 s 75](https://www.legislation.gov.uk/ukpga/1986/41/section/75); [s 76](https://www.legislation.gov.uk/ukpga/1986/41/section/76) |
+| Acquisition relief | Section 77 requires acquisition of the whole issued target capital for shares only, commercial/no-avoidance purpose and continuity of shareholders, classes and proportions, with own shares treated as cancelled. Test s 77A disqualifying control arrangements, including its qualifying prior-shareholder and relevant-merger exceptions and wider-scheme rule. A share-for-share label is not enough | [s 77](https://www.legislation.gov.uk/ukpga/1986/41/section/77); [s 77A](https://www.legislation.gov.uk/ukpga/1986/41/section/77A) |
+| Loan capital | The usual exemption is conditional. Conversion/acquisition rights, an excessive commercial return, business/property-linked interest or non-comparable redemption rights can disqualify it. Preserve the price-index, reverse-performance, limited-recourse capital-market and alternative-finance adjustments. Read the actual debt instrument and its history; non-convertibility alone is not sufficient | [FA 1986 s 79](https://www.legislation.gov.uk/ukpga/1986/41/section/79); [scope s 99(5)](https://www.legislation.gov.uk/ukpga/1986/41/section/99) |
+| Issues into depositary/clearance systems | The old blanket 1.5% **issue** charge is wrong. Issue charges were removed from 1 January 2024, without an EU/EEA-only restriction. Distinguish an issue from an existing-security transfer, and apply the capital-raising/listing provisions to their actual conditions | [FA 2024 s 20 and Sch 11](https://www.legislation.gov.uk/ukpga/2024/3/section/20); [HMRC STSM 053090](https://www.gov.uk/hmrc-internal-manuals/stamp-taxes-shares-manual/stsm053090) |
+| Higher-rate existing-security transfer | Sections 93/96 retain a 1.5% transfer charge for relevant depositary/clearance arrangements, subject to their listed exceptions, alternative charging election and other reliefs. For a consideration transfer use the prescribed consideration base, including the higher security-value branch for specified option directions; other transfers can use security value. Apply the instrument-duty offset and the actual liable issuer/operator/nonresident-agent branch. Do not automatically multiply every transfer into a system by this rate | [s 93](https://www.legislation.gov.uk/ukpga/1986/41/section/93); [s 96](https://www.legislation.gov.uk/ukpga/1986/41/section/96) |
+| Capital-raising/listing exceptions | Capital-raising transfers must occur in arrangements issuing securities to raise new capital. Qualifying listing arrangements require the prescribed first listing on that recognised exchange and no beneficial-ownership change. Their delayed-transfer protections require a preventing restriction and transfer as soon as reasonably practicable after it ends. Transfers of the issuer's own held shares have a separate exception. Other replacement/system-transfer/election conditions are not cleared merely by these descriptions | [s 97AB](https://www.legislation.gov.uk/ukpga/1986/41/section/97AB); [s 97AC](https://www.legislation.gov.uk/ukpga/1986/41/section/97AC); [s 97AD](https://www.legislation.gov.uk/ukpga/1986/41/section/97AD) |
 
-### 3.2 In-scope securities
+Retain the original review question about reconstruction, group relief and clearance/depositary arrangements. Where an unusual instrument or one of the unestablished special exceptions controls the answer, stop that claim pending the exact applicable statutory evidence rather than issue an unconditional exemption.
 
-- **In-scope securities** — Shares of Italian companies with EUR > 500m market cap; securitised products (ETF) on Italian shares; derivatives referencing Italian shares  _(Section 3.2 — In-scope securities)_
+### Italy, financial transaction tax
 
-### 3.3 Exemptions
+Use Law 228/2012 article 1(491)-(500), the implementing rules and the amendment operative on the transaction date. Law 199/2025 article 1(29)-(31) changes the cash-equity/HFT rates for operations from 1 January 2026. The application of the 2024 consolidated minor-tax code was postponed to 1 January 2027 by Decree-Law 200/2025 article 4(2), converted by Law 26/2026. Do not mistake that code for the operative 2026 statute. The original attribution to Decree-Law 16/2012 was wrong. [Law 228/2012](https://www.gazzettaufficiale.it/eli/id/2012/12/29/012G0252/sg); [Law 199/2025](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199); [application deferral](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2025-12-31;200)
 
-- **Exemptions** — Market making activities; pension funds and EU-equivalent retirement vehicles; sovereign wealth funds / central banks; ETF creation / redemption (in-kind); inheritance and gift transfers  _(Section 3.3 — Exemptions)_
-
-### 3.4 Filing
-
-- **Filing mechanics** — Italian intermediary acts as withholding agent; monthly remittance Model F24; annual reporting to Agenzia delle Entrate  _(Section 3.4 — Filing)_
-
-## Section 4 — France FTT
-
-### 4.1 Three components
-
-**Three components — France FTT**  _(CGI Articles 235 ter ZD - ZE)_
-
-| Component | Rate | Base |
+| Pillar | Operative 2026 rule, base and boundary | Official authority |
 | --- | --- | --- |
-| Tax on equity acquisitions | **0.3%** | Acquisitions of French-listed shares of EUR 1bn+ market cap issuers |
-| Tax on HFT cancellations | 0.01% | Orders modified or cancelled within 0.5 seconds |
-| Tax on sovereign CDS | 0.01% | Naked sovereign credit default swap purchases |
+| Cash securities | Ordinary rate 0.4%; half-rate 0.2% only for qualifying regulated-market/MTF transfers. Determine the actual transaction venue, not just the issuer's listing. Use the prescribed daily net balance and consideration/market-value rule | [Law 199/2025 art 1(29)-(31)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199); [Law 228 art 1(491)](https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.codiceRedazionale=012G0252&art.dataPubblicazioneGazzetta=2012-12-29&art.flagTipoArticolo=0&art.idArticolo=1&art.idGruppo=0&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.progressivo=5&art.versione=1) |
+| Issuer/security scope | Test Italian-resident issuer shares/participating financial instruments and their representative securities, regardless of the parties' residence or execution place. The listed small-cap exclusion uses average capitalisation in the previous November below EUR 500 million and the relevant official list/conditions. Do not turn this into an exemption for every unlisted issuer or every fund product | [Law 228 art 1(491)](https://www.gazzettaufficiale.it/eli/id/2012/12/29/012G0252/sg); [Law 228/2012 art 1(491); annual implementation held](https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.codiceRedazionale=012G0252&art.dataPubblicazioneGazzetta=2012-12-29&art.flagTipoArticolo=0&art.idArticolo=1&art.idGruppo=0&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.progressivo=5&art.versione=1) |
+| Derivatives and linked securities | Fixed duty applies **to each counterparty**, according to instrument family and notional band. Full Table 3 amounts range from EUR 0.01875 to EUR 200 across distinct cells; they are not one universal slider. Qualifying regulated-market/MTF contracts use one fifth of the relevant scheduled amount. Physical delivery can also create a separate cash-equity charge. The specific underlying/basket conditions must be established before selecting a cell | [Law 228 art 1(492)-(493)](https://www.gazzettaufficiale.it/eli/id/2012/12/29/012G0252/sg); [Table 3](https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.codiceRedazionale=012G0252&art.dataPubblicazioneGazzetta=2012-12-29&art.flagTipoArticolo=8&art.idArticolo=1&art.idGruppo=0&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.progressivo=0&art.versione=1) |
+| HFT | The current statutory rate is 0.04%, replacing the old 0.02%. Apply it to the qualifying excess cancelled/modified orders under the actual algorithm, market, timing and ratio rules. A numerical ratio/timing shortcut is not enough to establish liability; the implementing conditions remain required | [Law 199 art 1(29)-(31)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199); [Law 228 art 1(495)-(496)](https://www.gazzettaufficiale.it/eli/id/2012/12/29/012G0252/sg) |
 
-### 4.2 Scope
+Issue/cancellation transfers and inheritance/gift transfers have statutory exclusions, as do the specified conversion/new-issue and temporary-securities branches. Confirm each actual instrument and transfer. Market-making and liquidity activities, eligible pension institutions, central banks/reserve managers/international organisations, qualifying common-control reorganisations and ethical-product provisions have distinct conditions. The original generic claim that all sovereign wealth funds or all ETF creations/redemptions are exempt is not cleared; preserve those questions as non-usable pending their actual statutory/implementing predicates. [Law 228 art 1(491),(494),(500)](https://www.gazzettaufficiale.it/eli/id/2012/12/29/012G0252/sg)
 
-- **Scope** — French-incorporated companies listed on regulated EU market with market cap > EUR 1bn on 1 December prior year; maintained list published annually by Ministry of Finance (~140 issuers)  _(Section 4.2 — Scope)_
+The cash-taxpayer is the acquirer; derivatives can tax both parties. Banks, fiduciaries, investment firms and the specified resident/nonresident transaction-chain intermediaries collect/remit under the actual chain; where none applies, the taxpayer must handle the obligation. The base law uses the sixteenth day of the following month. Retain the original Model F 24/annual-FTT-return job, but obtain the applicable current form, codes, filing due date and authorised filing route before a filing-ready output. A nonresident buyer is not exempt merely because of residence. The tax is nondeductible for income-tax/IRAP purposes. [Law 228 art 1(494),(498)-(500)](https://www.gazzettaufficiale.it/eli/id/2012/12/29/012G0252/sg)
 
-### 4.3 Exemptions
+Historical control: the old 0.22% ordinary/0.12% venue rates applied in the commencement year, not the current rate pair. Do not reuse them as 2026 figures. Retain the original French-buyer EUR 10 million Generali case, but calculate its venue-dependent alternatives rather than silently invent the venue.
 
-- **Exemptions** — Primary market issuances; liquidity provision / market making; intra-group transfers; acquisitions by employee schemes  _(Section 4.3 — Exemptions)_
+### France
 
-### 4.4 Filing
+| Branch | 2026 rule and operative conditions | Official source |
+|---|---|---|
+| Equity acquisition | 0.4% of acquisition value. Paid acquisition must transfer ownership of an in-scope capital/assimilated security admitted to a French, European or foreign regulated market; issuer headquarters in France and capitalisation **strictly above EUR 1 billion on 1 December of the previous year**. Representative securities can be covered regardless of their issuer's residence. Listing only in France is not the test | [CGI 235terZD I,III,V](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000053543343/2026-11-01) |
+| Equity exemption screen | Test primary issues; qualifying clearing/CSD operations; the statutory market-making/liquidity branches; specified group/reorganisation transactions; temporary transfers; qualifying employee-plan acquisitions/buybacks; exchangeable/convertible bonds. Apply the particular statutory category and conditions, not a universal group or ETF exemption | [CGI 235terZD II(1)-(9)](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000053543343/2026-11-01); [BOI 2026 exemption detail](https://bofip.impots.gouv.fr/bofip/7573-PGP.html/identifiant=BOI-TCA-FIN-10-20-20260812) |
+| HFT | 0.01% of cancelled/modified order value **exceeding** the daily 80% nominal-volume threshold. French-operated business, habitual own-account automated equity-order activity and the statutory timing test must be met; decree threshold is half a second. Execution optimisation/routing/confirmation systems are excluded; the market-making exception is separate | [CGI 235terZD bis I-IV](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028447781/2026-11-01); [AnnexIII art 58S](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026265201/2026-05-26) |
 
-- **Filing mechanics** — Withheld by accountable person (Euroclear France or intermediary); returned via Form 3375 monthly  _(Section 4.4 — Filing)_
+The equity intermediary receiving the final buyer's order is liable; absent an investment-services provider, the account custodian is the statutory payer. Follow the CSD/participant/delivery chain: specified information reaches the CSD **before the fifth** of the following acquisition month, with declaration/payment **before the twenty-fifth**. The alternative direct and foreign-CSD branches and the election notified **before 1 November** have their own conditions. Form 3374 is the direct-return form described in the retained official filing guidance; do not use the original 3375 assertion. Follow current CGI VII-IX over conflicting older administrative dates. [CGI 235terZD VI-IX](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000053543343/2026-11-01); [BOI filing paragraphs 1-190](https://bofip.impots.gouv.fr/bofip/7578-PGP.html/identifiant=BOI-TCA-FIN-10-40-20150304).
 
-## Section 5 — Spain FTT (IFT — Impuesto sobre las Transacciones Financieras)
+For HFT, the cancellation ratio is (cancelled nominal plus modified nominal)/(initial nominal plus modified nominal), after excluded activity; nominal means number of securities. Taxable excess units use the official daily-average-price valuation rule, not an unqualified count of cancelled orders. [BOI paras 90-120](https://bofip.impots.gouv.fr/bofip/7581-PGP.html/identifiant=BOI-TCA-FIN-20-20150204). HFT is declared with the applicable VAT declaration/annex under the **2026** CGI VI, with payment on filing. The future 2027 procedure is not used. The official tax overview now describes equity and HFT taxes and records the sovereign-CDS tax's repeal; the original third current levy must not be charged. Historical CDS dates and the exact repealing clause remain a specific evidence hold. The approximate annual issuer count from the old Guide is not a scope test: identify the actual issuer and prior-year capitalisation. [fr-hft-2026](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028447781/2026-11-01); [fr-two-tax-cds-repeal](https://bofip.impots.gouv.fr/bofip/7554-PGP.html/identifiant=BOI-TCA-FIN-20191211).
 
-### 5.1 Mechanics (Ley 5/2020)
+### Spain
 
-- **[T1] Rate** — 0.2%  _(Ley 5/2020)_
-- **Scope** — Acquisitions of Spanish-listed shares of EUR 1bn+ market cap issuers (annually published list)  _(Ley 5/2020)_
-- **Liable party** — The financial intermediary  _(Ley 5/2020)_
-- **Exclusions** — Primary market issuance, intra-group transfers, market making  _(Ley 5/2020)_
+| Branch | Rule and conditions | Official source |
+|---|---|---|
+| IFT | 0.2% on paid acquisition of qualifying Spanish-company shares: regulated-market admission and capitalisation strictly above EUR 1 billion on 1 December of the previous year. Tax can apply off-market and regardless of party residence/place of acquisition; depositary receipts and physical delivery from derivatives/convertibles have their own branches | [Ley 5/2020 arts 1,2,7](https://www.boe.es/buscar/act.php?id=BOE-A-2020-12356) |
+| Exemptions/base/payer | Test the actual art 3 category, including primary-market, qualifying group and market-making transactions, and its evidence/communication requirements. Use settlement accrual, art 5 net-acquisition/consideration rules and art 6 intermediary chain; do not assume every intermediary or every intra-group transfer qualifies | [Ley 5/2020 arts 3-6](https://www.boe.es/buscar/act.php?id=BOE-A-2020-12356) |
 
-### 5.2 Filing
+The law requires monthly self-assessment. The original Model 604 filing topic is retained, but its current filing window, form fields, codes and CSD/direct-payment implementation have not been read and are not filing-ready. The official consolidated law was actually read through arts 1-8; it is an informational consolidation, not an assertion that every original Gazette/amendment was separately re-read. [Ley 5/2020 art 8](https://www.boe.es/buscar/act.php?id=BOE-A-2020-12356).
 
-- **Filing mechanics** — Monthly Form 604  _(Section 5.2 — Filing)_
+### Other Europe
 
-## Section 6 — Other European stamp / FTT
+| Jurisdiction/branch | Supported rule and boundary | Official source |
+|---|---|---|
+| Ireland shares | General share-transfer duty 1%, subject to the actual instrument/reliefs; consideration on a sale, market value for a gift. The separate 7.5% immovable-derived rule must not be triggered merely because a company owns any property; its qualifying predicates remain held | [Revenue share transfer rule](https://www.revenue.ie/en/property/stamp-duty/shares-stocks-marketable-securities/shares-and-rates.aspx) |
+| Ireland market-cap relief | Transfers executed 1 January 2026-31 December 2030 can qualify under s 86B only with eligible market admission, issuer closing capitalisation below EUR 1 billion on preceding 1 December (or qualifying expected value on a later admission), and an exemption period supported by a **valid Revenue notification**. An under-cap issuer alone is insufficient | [SDCA 1999 s 86B, Revenue eBrief 251/25](https://www.revenue.ie/en/tax-professionals/ebrief/2025/no-2512025.aspx) |
+| Switzerland turnover | 0.15% domestic/0.30% foreign securities are the whole transaction rates, **not each dealer's rate**. Swiss securities-dealer participation, taxable security/consideration and exemptions matter. In mediation, each non-exempt, non-registered-dealer party bears the relevant half-duty through the dealer; own-account allocations have their separate half-duty branches | [ESTV substantive 20-48](https://www.estv.admin.ch/de/umsatzabgabe-kurz-erklaert) |
+| Switzerland equity issue | 1% on in-scope domestic equity issues/contributions, with the CHF 1 million allowance for qualifying paid issues on formation/capital increase. Domestic company liable; qualifying reorganisations are excluded. Do not turn an old planned-abolition reference into enacted abolition; old debt-issue ranges remain held | [ESTV substantive 20-36](https://www.estv.admin.ch/de/emissionsabgabe-auf-eigenkapital-kurz-erklaert) |
+| Belgium TOB | Taxable paid securities disposals/acquisitions and specified capitalisation-share redemptions, with Belgian professional-intermediary or resident foreign-intermediary nexus. The art 121 debt/security/fund category uses 0.12% (cap EUR 1300); other securities 0.35% (cap EUR 1600); specified capitalisation-share operations 1.32% (cap EUR 4000). The debt/fund/other-security and capitalisation-share definitions, per-side base and art 126/1 exemptions must be tested before selecting a rate | [CDTD arts 120-126/1](https://www.ejustice.just.fgov.be/eli/loi/1927/03/02/1927030201/justel); [SPF scope/rates/caps](https://finances.belgium.be/fr/experts_partenaires/investisseurs/taxe-sur-les-op%C3%A9rations-de-bourse) |
+| Belgium securities account | Taxable account's reference-period average must exceed EUR 1 million. Rate 0.15% for periods ending by 31 May 2026; 0.30% for periods ending from 1 June 2026. It taxes the account, with resident/nonresident/intermediary and statutory exemption branches, not merely the excess over the threshold. Duty is limited to 10% of the base's excess over EUR 1 million. Use statutory reference points and shortened-period rules | [CDTD arts 201/3-201/9](https://www.ejustice.just.fgov.be/eli/loi/1927/03/02/1927030201/justel); [FOD dated transition and cap](https://finances.belgium.be/fr/node/14191) |
+| Cyprus | Law 239(I)/2025 repeals the Stamp Acts from 1 January 2026. Do not apply the old EUR 5000/170000 bands to a new 2026 instrument. Accrued liabilities and pre-repeal documents are not cleared by that repeal alone | [Law 239(I)/2025 s 2, official PDFp 1/printed 1247](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Malta | For an in-scope transfer under art 42(1), duty is **EUR 2 per EUR 100 or part** of higher consideration/real value. The additional EUR 3 per EUR 100 or part under art 42(2) produces the 5% shorthand only when its 75% immovable/non-current-asset test, including the specified indirect holdings/value rules, is met. It is not a universal generic property-rich test. Foreign-security/residence/broker and group exclusions require their actual statutory facts; exemptions and full valuation/filing remain conditional | [Cap 364 art 42(1)-(2), printed 34-39](https://legislation.mt/eli/cap/364/eng/pdf) |
+| Finland | Corporate shares can attract 1.5% on price and other consideration. Unlisted/direct acquisitions generally require filing/payment within 2months of the binding agreement. Listed-exchange exemption has its own intermediary/reporting conditions; foreign-intermediary and nonresident cases must be tested. The old Finland no-share-transfer-tax claim is wrong | [Vero corporate shares substantive 59-124](https://www.vero.fi/en/individuals/property/transfer-tax/corporate-stock/) |
 
-**Other European stamp / FTT**  _(Section 6 — Other European stamp / FTT)_
+Belgian TOB: use MyMinfin/DivTax or the authority's paper alternative, not an email return. Professional intermediaries pay by the last working day of the next month; a liable ordering customer by the last working day of the second next month. For securities-account tax, the Belgian intermediary/recognised representative declares and pays by the twentieth day of the third month after the reference period; a self-filing holder declares by 15 July and pays by 31 August of the following year. Establish the actual payer and period first. [be-tob](https://finances.belgium.be/fr/experts_partenaires/investisseurs/taxe-sur-les-op%C3%A9rations-de-bourse); [be-tct](https://finances.belgium.be/fr/node/14191).
 
-| Country | Mechanism | Rate |
-| --- | --- | --- |
-| **Ireland** | Stamp duty on share transfers | 1% on Irish shares (FA 1999 Sch 1) |
-| **Ireland** | Stamp duty on residential property | 1% / 2% / 10% (see property skill) |
-| **Switzerland** | Stamp duties on securities (Umsatzabgabe) | 0.15% Swiss securities / 0.30% non-Swiss (per dealer) |
-| **Switzerland** | Issuance stamp duty (Emissionsabgabe) | 1% above CHF 1m on equity issuance (planned abolition); 0.06%-0.12% on certain debt |
-| **Liechtenstein** | Mirrors Swiss stamps for shares | Same Swiss rates |
-| **Luxembourg** | Registration duty on certain documents | Variable; capital duty long abolished |
-| **Belgium** | Securities Transactions Tax (TOB) | 0.12% / 0.35% / 1.32% by category |
-| **Belgium** | Securities Account Tax (TCT) | 0.15% above EUR 1m per account |
-| **Greece** | Stamp duty on certain agreements | 2.4% or 3.6% |
-| **Cyprus** | Stamp duty on transactions of capital value > EUR 5,000 | 0.15% on EUR 5,001 - 170,000; 0.20% above |
-| **Malta** | Stamp duty on share transfers | 2% (5% if real-estate-rich entity) |
-| **Portugal** | Imposto do Selo on financial transactions, leases, loans, insurance, guarantees | 0.04%-25% by category |
-| **Norway** | Document duty (real-property only) | 2.5% (see property skill) |
-| **Sweden, Finland, Denmark** | No stamp duty on shares / FTT |  |
+Malta's 2026 amendment adds a Land Registry site plan signed and stamped by a Perit to the applicable valuation submissions under rules 11/12. That read does not clear every filing document, time limit or exemption. Ireland/Norway direct-property topics are preserved as a handoff to `property-transfer-tax-matrix`. Liechtenstein, Luxembourg, Greece, Portugal, Norway's claimed share-tax absence, Sweden and Denmark retain their individual holds below; no negative inference is drawn from Finland or Swiss rules. [LN 158/2026 rules 1-4](https://legislation.mt/eli/ln/2026/158/eng/pdf).
+### Asia-Pacific
 
-## Section 7 — Asia-Pacific
+| Jurisdiction/branch | Supported rule and boundary | Official source |
+|---|---|---|
+| Hong Kong shares | A sale/purchase of Hong Kong stock attracts 0.10% on **each** sold/bought contract note, on consideration or value where the statutory valuation rule requires it. Round each duty up to a whole HK dollar. An ordinary transfer instrument can separately bear HKD 5; a gift instrument has HKD 5 plus 0.2% of value. Do not apply the old 0.13% rate to a current sale | [Government stock-rate table](https://www.gov.hk/en/residents/taxes/stamp/stamp_duty_rates.htm); [IRD PN 04A](https://www.ird.gov.hk/eng/pdf/sog_pn04a.pdf) |
+| Singapore shares | 0.2% of the higher of purchase price or share value. Follow IRAS's company/valuation branch; round **down** to the nearest SGD, minimum SGD 1. This is a share-transfer charge, a separate share charge. ACD is an additional, separate test | [IRAS Buying or acquiring shares](https://www.iras.gov.sg/taxes/stamp-duty/for-shares/buying-or-acquiring-shares) |
+| Singapore ACD | Test the property-holding entity (PHE), prescribed immovable property (PIP), associates and significant-owner conditions below. Buyer ACD is the residential BSD component **plus 65%**, not a total capped at 65% and not 65% of share consideration. Apply the correct underlying PIP value and interest allocation | [IRAS ninth-edition ACD Guide, paras 2-6](https://www.iras.gov.sg/docs/default-source/stamp-duty/acd-e-tax-guide.pdf) |
+| Taiwan | Seller's ordinary rate is 0.3% for shares/certificates; corporate bonds and other approved securities ordinarily 0.1%. Government bonds are outside the charge. Corporate/financial-bond tax and qualifying bond-ETF tax are suspended through **31 December 2026**; the ETF suspension excludes leveraged/inverse funds. Do not extrapolate beyond that endpoint | [Securities Transaction Tax Act arts 1,2,2-1](https://law-out.mof.gov.tw/EngLawContent.aspx?id=20707&lan=E); [Chinese counterpart](https://law-out.mof.gov.tw/EngLawContent.aspx?id=20707&lan=C) |
+| Taiwan day trade | The 0.15% qualifying share day-trade rate runs through **31 December 2027**. It requires the same account, same broker, same day and like quantity in the statutory listed/OTC transaction branches; do not apply it to every sale or every security | [Act art 2-2](https://law-out.mof.gov.tw/EngLawContent.aspx?id=20707&lan=E); [tw-native-2026check](https://law-out.mof.gov.tw/EngLawContent.aspx?id=20707&lan=C) |
+| Japan documents | Classify the actual taxable document under the Stamp Tax Act schedule; its creator accounts for duty when it is created, normally affixing and cancelling stamps. The original general no-FTT conclusion and a complete current amount schedule are not established by these limited document-tax sources | [MOF stamp-tax outline](https://www.mof.go.jp/tax_policy/summary/property/e09.htm); [NTA No 7100](https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7100.htm) |
 
-**Asia-Pacific stamp / FTT**  _(Section 7 — Asia-Pacific)_
+Hong Kong's PN 04A distinguishes Hong Kong/overseas contract execution and the separate transfer instrument; establish the applicable timing, valuation evidence and stamping route. Its contract-note periods are two days for Hong Kong execution and thirty days for overseas execution; ordinary non-gift transfer instruments are stamped before execution if executed in Hong Kong, or within thirty days after overseas execution. Do not assume an in-house group transfer is exempt: the current IRD page describes a proposed 75% group regime **subject to enactment** and adjudication. The previous 90% rule's full operative conditions and the proposal's enactment state are not cleared for reliance here. [PN 04A timing table](https://www.ird.gov.hk/eng/pdf/sog_pn04a.pdf); [hk-relief-current](https://www.ird.gov.hk/eng/tax/sdu.htm).
 
-| Country | Mechanism | Rate |
-| --- | --- | --- |
-| **Hong Kong** | Stamp duty on share transfers | 0.10% buyer + 0.10% seller (reduced from 0.13%, November 2023) |
-| **Singapore** | Stamp duty on share transfers | 0.2% of consideration (BSD subset for share transfers; ACD applies for residential property-rich entities) |
-| **Singapore — ACD** | Additional conveyance duty | Up to 65% on acquisition of significant equity interests in property-rich entities |
-| **Australia** | Stamp duty on share transfers | Abolished federally 2002; state-level mostly abolished for shares but landholder/property-rich rules apply (each state) |
-| **New Zealand** | No stamp duty on shares | n/a |
-| **India** | Indian Stamp Act (federal stamp on securities since 2020; state stamp on instruments) | 0.005% on equity issuance and transfer; 0.015% on equity delivery-based; state-specific for other instruments |
-| **Japan** | Stamp duty on contracts and securities | Document-based (Stamp Tax Law, fixed amounts by document type); no FTT on share transfers |
-| **South Korea** | Securities Transaction Tax | 0.15% to 0.35% by market (reduced from previous 0.43%) |
-| **China** | Securities Transaction Stamp Tax | 0.1% one-sided (sale only since 2008 reform) on A-shares; reduced to 0.05% temporarily in August 2023 |
-| **Taiwan** | Securities Transaction Tax | 0.3% on equities; 0.1% on bonds (mostly exempt) |
-| **Indonesia** | No FTT on shares; small documentary stamp | n/a |
-| **Thailand** | Stamp duty on instruments | Fixed amounts by document type; share transfer 0.1% |
-| **Philippines** | Documentary Stamp Tax (DST) | Wide-ranging, see NIRC §173-201 |
-| **Malaysia** | Stamp duty on share transfers | 0.3% on physical shares; 0% on shares of public listed companies traded on Bursa Malaysia (FA 2023) |
-| **Vietnam** | Securities Transaction Tax | 0.1% on sale |
+For Singapore, Type 1 PHE requires PIP market value at least 50% of total tangible-asset market value. Type 2 adds qualifying direct/indirect Type 1 interests and a weighted asset test. Significant ownership means at least 50% equity **or** voting power, with applicable associates. Establish the Guide's defined residential PIP, valuation, associate/history and indirect-allocation predicates; a loose property-rich description is insufficient. [paras 2-6](https://www.iras.gov.sg/docs/default-source/stamp-duty/acd-e-tax-guide.pdf).
 
-## Section 8 — Americas
+Buyer ACD combines residential BSD (1%-6%) plus 65% for acquisitions from 27 April 2023 on the relevant PIP value/interest allocation. Seller ACD: pre-4-July-2025 interests sold within three years, 12%; interests acquired from that date and sold within four years, 16%, with FIFO identification. Restructuring, remission and filing remain held. [rate tables/paras 4-6](https://www.iras.gov.sg/docs/default-source/stamp-duty/acd-e-tax-guide.pdf).
 
-**Americas stamp / FTT**  _(Section 8 — Americas)_
 
-| Country | Mechanism | Rate |
-| --- | --- | --- |
-| **United States — Federal** | No federal stamp on shares; SEC Section 31 fee (~0.00229%) levied on equity transactions | n/a |
-| **United States — State** | New York stock transfer tax in force but 100% rebate has applied since 1981 (effectively 0% federal-state); Florida documentary stamp on stock = 35 cents per USD 100; other state DSTs by document | Varies |
-| **Canada** | No federal or provincial stamp duty on shares | n/a (subject to LTT in QC for certain documents) |
-| **Mexico** | Impuesto sobre Adquisición de Inmuebles ("ISAI") and Impuesto a la Adquisición de Acciones ("if applicable") | n/a as general FTT — primarily local property |
-| **Brazil — IOF on securities (IOF/títulos)** | Tax on securities transactions | 0% to 1.5% depending on issuer / holding period / instrument; complex matrix |
-| **Argentina — Impuesto de Sellos** | Provincial stamp duty | 0.5%-3% on contracts (mostly real estate, leases, loans) — varies by province |
-| **Chile — Impuesto de Timbres y Estampillas** | Stamp tax on loans and other documents | 0.066% per month (capped at 0.8%) on loan amount |
-| **Colombia — Impuesto de Timbre** | Stamp tax | Specific rates by document; reformed 2022 |
-| **Peru — Impuesto a las Transacciones Financieras (ITF)** | Tax on bank account movements | 0.005% per debit/credit on local bank accounts |
+Taiwan's collector collects at settlement, pays by the next day and supplies the preceding month's statement by the fifth day of the following month. In direct transfers the transferee can be the statutory collector; identify the art 3 branch rather than telling every seller to file personally. The last native amendment shown is 2 January 2025; its explicit suspension/day-trade endpoints, not the page's retrieval date, determine 2026 applicability. [arts 3-4](https://law-out.mof.gov.tw/EngLawContent.aspx?id=20707&lan=E); [tw-native-2026check](https://law-out.mof.gov.tw/EngLawContent.aspx?id=20707&lan=C).
 
-## Section 9 — Africa and Middle East
+Australia, New Zealand, India, South Korea, China, Indonesia, Thailand, Philippines, Malaysia and Vietnam remain individually scoped non-usable branches below. India's federal securities issue/delivery/non-delivery and state-document classifications must be resolved separately; no shared rate is assumed. Australian landholder duty is a state/territory referral to `property-transfer-tax-matrix`.
+### Americas
 
-**Africa and Middle East stamp / FTT**  _(Section 9 — Africa and Middle East)_
+| Jurisdiction/branch | Supported rule and boundary | Official source |
+|---|---|---|
+| United States federal fee | SEC Section 31 is a covered-sales regulatory fee, not a universal share-purchase stamp tax. Advisory 2026-2 sets USD 20.60 per USD 1 million from 4 April 2026 (derived 0.00206%), following zero through 3 April. SROs pay the Commission. The advisory's appropriation-linked endpoint and any later advisory must be checked for the actual transaction; a zero fee is not proof of no other federal tax | [SEC fee advisory 2026-2](https://www.sec.gov/rules-regulations/fee-rate-advisories/2026-2); [Official advisory list read 16Nov](https://www.sec.gov/rules-regulations/fee-rate-advisories) |
+| New York | Stock transfer tax remains in force. The authority allows a **100% rebate of tax paid by filing a claim**; payment/stamp or broker-agent procedures remain distinct from rebate. Do not call it a combined federal/state zero tax. The current authority links the older memorandum recording the 1 October 1981 start and method-dependent claim requirements | [NY stock transfer tax](https://www.tax.ny.gov/bus/stock/stktridx.htm); [TSB-M-82(6)M](https://www.tax.ny.gov/pdf/memos/stock_transfer/m82_6m.pdf) |
+| Florida documents | USD 0.35 per USD 100 **or part** applies to the specified notes/written debt obligations signed or delivered in Florida, with the note tax capped at USD 2450. Recorded mortgages/security instruments apply the rate to the secured debt **without that cap**. This does not support the original classification as a stock-transfer duty | [Florida DOR, notes/mortgages](https://floridarevenue.com/taxes/taxesfees/Pages/doc_stamp.aspx) |
+| Chile credit documents | DL 3475 art 1(3) charges the specified money-credit documents, including dematerialised documents, at 0.066% of amount for each month **or fraction** from issue to maturity, capped at 0.8%. Demand/no-maturity documents use 0.332%. Renewal/extension rules differ, and the cumulative-cap treatment needs the art 2 documentary/foreign-credit conditions; do not restart the cap automatically | [DL 3475 arts 1(3),2](https://www.sii.cl/normativa_legislacion/leyimpuestoyestampillas.pdf) |
+| Peru ITF | Current art 10 rate 0.005% applies to a taxable art 9 operation, not every movement without exception. Art 9(a) excludes transfers between the same holder's accounts within or across financial-system institutions. Other off-account payment/remittance/instrument branches have their own tests; art 11 and its Appendix exemptions must be resolved before a final amount | [TUO DS 150-2007-EF arts 9-13, Ley 29667 amendment](https://www.sunat.gob.pe/legislacion/itf/ds150_07.htm) |
 
-| Country | Mechanism | Rate |
-| --- | --- | --- |
-| **South Africa** | Securities Transfer Tax (STT) | 0.25% on share transfers and beneficial ownership changes |
-| **Egypt** | Stamp tax on securities transactions | 0.05% per side for tax residents (0.15% on disposal for non-residents) |
-| **Nigeria** | Stamp duty on instruments | 0.075% on share transfer; 1.5% on documentary purchases above NGN 10k |
-| **Kenya** | Stamp duty on shares | 1% on transfer; 0% on listed transfers since 2006 |
-| **UAE** | No general stamp duty | n/a (sector-specific fees apply) |
-| **Saudi Arabia** | No general stamp duty | n/a (5% real estate transaction tax separately) |
-| **Bahrain** | No stamp duty | n/a |
-| **Qatar** | No stamp duty | n/a |
-| **Israel** | Stamp duty abolished 2006 | n/a |
+Florida records are generally paid at county recording; unrecorded-document returns use DR-225 for registered persons or DR-228 for nonregistered persons. Returns/payment are due on the twentieth of the following month, with the stated business-day and electronic-payment initiation rules. Confirm the liable parties and document before selecting the route. [File and pay section](https://floridarevenue.com/taxes/taxesfees/Pages/doc_stamp.aspx).
 
-## Section 10 — Computation walk-through
+Chile's official instructions now route general cases through electronic Form F 24 and mutuos through F 24.1 with taxpayer authentication. For a private document, the FAQ specifies five working days after issue, while taxpayers keeping full accounting have the following-month branch; other payer/notarial/foreign-credit branches must be selected on their facts. Do not treat one period as universal or use the old paper process. The retained SII consolidation's amendment list ends in 2019: its operative rate text is read, but later amendments, all exemptions and non-standard instruments remain a current-authority hold before execution. [SII FAQ 0369](https://www.sii.cl/preguntas_frecuentes/otros_impuestos/001_390_0369.htm); [SII FAQ 0361](https://www.sii.cl/preguntas_frecuentes/otros_impuestos/001_390_0361.htm); [cl-law](https://www.sii.cl/normativa_legislacion/leyimpuestoyestampillas.pdf).
 
-### Example 1 — UK share acquisition
+Peru's art 12 uses the operation's value without deductions and its prescribed SBS exchange-rate rule. Art 13 has special truncation/rounding (including the five-cent increment), not ordinary nearest-cent rounding. The Appendix exemption conditions, collector and current return/deadline must be read for the actual operation before issuing an amount or filing instruction. [arts 11-13](https://www.sunat.gob.pe/legislacion/itf/ds150_07.htm).
+
+Canada, Mexico, Brazil, Argentina and Colombia retain the exact topic-specific holds below. The original Mexico ISN trigger is retained as a classification question; it is not silently equated to a general securities FTT. Other US states require their own documentary-law check.
+### Africa and Middle East
+
+| Jurisdiction/branch | Supported rule and boundary | Official source |
+|---|---|---|
+| South Africa | STT rate 0.25% of taxable amount. Scope includes shares/member interests of domestic companies/close corporations and foreign-company securities listed on a South African exchange; listed and unlisted branches differ. Establish taxable value, security/transfer and any actual exemption before calculation | [SARS STT, scope/rate/payer/payment](https://www.sars.gov.za/types-of-tax/securities-transfer-tax/) |
+| Egypt listed transactions | From 29 July 2026, ordinary EGX-listed securities transactions attract **0.05% on each buyer and seller**, resident or nonresident, on gross value without cost deduction. Same-day transactions have 0.025% each side. Specified listed fund units and approved market-maker operations are excluded. Settlement bodies withhold/remit within the first five days of the following month and are jointly liable | [Law 153/2026 arts 1-3, substituted 83bis](https://eta.gov.eg/sites/default/files/2026-08/law.no_.153.of_.2026.pdf) |
+| Nigeria transfer documents | From 1 January 2026, NTA 2025 s 184(h) exempts all stock/share-transfer **documents** from Chapter Five stamp duties. This does not exempt income or gains. Do not use the original 0.075% transfer rate. Nominal share-capital duty is a separate 0.75% company charge under s 135/Schedule 9 | [NTA ss 135,184(h),195; Schedule 9 row 8](https://nass.gov.ng/documents/download/11249) |
+| Nigeria receipts/transfers | Schedule 9 specifies NGN 50 for the receipt branch from NGN 10000 and for electronic receipt/transfer of NGN 10000 upwards (transferor liable). Section 184(i) excludes sub-NGN 10000 electronic transactions, salary payments and intrabank self-transfers. There is no general 1.5% duty on every purchase above NGN 10000 | [s 184(i); Schedule 9 rows 15,47-48](https://nass.gov.ng/documents/download/11249) |
+
+South Africa: listed payer branches include the member/participant or transferee through its custodian/issuer; the unlisted issuer is liable with recovery from the buyer. The unlisted transferee notifies the issuer within thirty days. Listed duty is payable by the fourteenth of the following month; unlisted duty within two months after the transfer month's end, using SARS eSTT. Full current exemptions and the detailed listed valuation branches remain to be established for the case. [SARS payer/payment sections](https://www.sars.gov.za/types-of-tax/securities-transfer-tax/).
+
+Egypt's 2026 law repeals the earlier resident stamp exemption. For a pre-29-July transaction, do not import the new rule backwards: the recovered older law used 1.25 per thousand each side for nonresidents, contradicting the original 0.15% one-sided assertion. The separate 33%-control/asset-exchange special duty and its two-year aggregation, older resident-CGT deferral interaction and current unlisted branches remain specific non-usable holds. Listed-gains income-tax changes are a separate analysis. [art 2](https://eta.gov.eg/sites/default/files/2026-08/law.no_.153.of_.2026.pdf); [Law 199/2020 old 83bis,arts 4-5](https://eta.gov.eg/sites/default/files/2024-03/law_no.199-2020.pdf); [Law 76/2017 art 3](https://eta.gov.eg/sites/default/files/2024-03/law_no.76-2017.pdf); [Law 151/2026](https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf).
+
+Nigeria's territorial instrument test covers domestic execution and the specified foreign-execution/Nigeria-property-or-matter branch. A liable domestically executed instrument is stamped within thirty days under s 125; s 124 permits digital tags/e-receipts among the evidence methods. Sections 195/198 repeal the former Stamp Duties Act but save earlier actions/rules only to the extent consistent with the new Act. Classify other documents under their own schedule row; a conveyance rate cannot be applied as a generic purchases tax. [ss 123-125,184,195,198 and Schedule 9](https://nass.gov.ng/documents/download/11249).
+
+Kenya, UAE, Saudi Arabia, Bahrain, Qatar and Israel remain individual evidence holds below. Saudi real-estate transaction tax belongs in `property-transfer-tax-matrix`; its old 5% shorthand is not a verified current rate in this Guide.
+## Worked examples
+
+The original four cases retain every stated input. Their calculations are conditional demonstrations, not findings that missing legal facts have been satisfied.
+
+### Example 1: UK share acquisition
 
 A UK private equity fund acquires GBP 50m of shares in a UK-incorporated AIM-listed company via CREST.
 
-- AIM exemption applies → **0% SDRT** on the AIM portion
-- Confirm AIM listing on relevant Recognised Growth Markets list as published by HMRC
+Confirm recognised growth-market admission **and that the security is not listed on that or any other market**, together with its actual CREST treatment. If those predicates hold, the exemption branch produces GBP 0. If they fail and the ordinary 0.5% charge/base applies without another exemption, GBP 50000000 × 0.005 = GBP 250000. AIM in the original facts does not establish the missing no-listing predicate. Hold the final amount until the security is checked. [s 99(4B)](https://www.legislation.gov.uk/ukpga/1986/41/section/99); [uk-growth-sdrt](https://www.gov.uk/hmrc-internal-manuals/stamp-taxes-shares-manual/stsm041270); [uk-fa 1986-87](https://www.legislation.gov.uk/ukpga/1986/41/section/87).
 
-### Example 2 — Italian listed share — non-resident purchaser
+```oa-check
+name: Original UK case, alternative legal branches
+inputs:
+  consideration: 50000000
+steps:
+  growth_exemption: consideration * 0
+  ordinary_sdrt: consideration * 0.005
+expected:
+  growth_exemption: 0
+  ordinary_sdrt: 250000
+```
+
+### Example 2: Italian listed share, nonresident purchaser
 
 A French institutional buyer purchases EUR 10m of shares in Generali (Italy-listed, > EUR 500m market cap).
 
-- Italian FTT: 0.2% × EUR 10m = **EUR 20,000**
-- Italian intermediary remits; non-resident bears the cost
+The original facts give no transaction venue. If the daily net taxable base is EUR 10000000, qualifying regulated-market/MTF execution gives 0.2% = EUR 20000; otherwise the ordinary 0.4% branch gives EUR 40000. Check the actual issuer/security, previous-November capitalisation exclusion and annual-list conditions, daily netting and any exemption. Neither the issuer's Italian listing nor the buyer's French residence proves the venue branch. Establish the actual collecting intermediary before remittance; its Italian residence is not a supplied case fact. [Law199/2025 art1(29)-(31)](https://www.normattiva.it/eli/stato/LEGGE/2025/12/30/199/CONSOLIDATED); [Law228/2012 art1(491),(494)](https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.codiceRedazionale=012G0252&art.dataPubblicazioneGazzetta=2012-12-29&art.flagTipoArticolo=0&art.idArticolo=1&art.idGruppo=0&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.progressivo=5&art.versione=1).
 
-### Example 3 — Hong Kong share transfer
+```oa-check
+name: Original Italy case, venue alternatives
+inputs:
+  consideration: 10000000
+steps:
+  qualifying_venue: consideration * 0.002
+  ordinary_venue: consideration * 0.004
+expected:
+  qualifying_venue: 20000
+  ordinary_venue: 40000
+```
+
+### Example 3: Hong Kong share transfer
 
 HKD 100m share transfer in a Hong Kong-incorporated private company.
 
-- Buyer side: 0.10% × HKD 100m = **HKD 100,000**
-- Seller side: 0.10% × HKD 100m = **HKD 100,000**
-- Both parties pay; intermediated through IRD stamping
+The consideration alone does not establish the statutory base where the relevant share value is greater. **If** HKD 100000000 is the correct base, 0.10% gives HKD 100000 on each sold/bought note (HKD 200000 combined); an applicable ordinary transfer instrument separately adds HKD 5. If valuation is higher or the instrument is a gift, recompute under that branch. Obtain valuation and execution/stamping facts before signing off. [hk-rates](https://www.gov.hk/en/residents/taxes/stamp/stamp_duty_rates.htm); [hk-process](https://www.ird.gov.hk/eng/pdf/sog_pn04a.pdf).
 
-### Example 4 — Singapore share-acquisition with property-rich target
+```oa-check
+name: Original Hong Kong case, conditional base
+inputs:
+  stated_amount: 100000000
+steps:
+  buyer_note: ceil(stated_amount * 0.001)
+  seller_note: ceil(stated_amount * 0.001)
+  two_notes: buyer_note + seller_note
+expected:
+  buyer_note: 100000
+  seller_note: 100000
+  two_notes: 200000
+```
+
+### Example 4: Singapore share acquisition with property-rich target
 
 Foreign investor acquires 100% of a Singapore Pte Ltd whose >50% of total tangible assets is Singapore residential property.
 
-- Basic transfer stamp duty: 0.2% × consideration
-- ACD: applies to "significant owner" (≥50% of qualifying equity interest) acquisitions of "property-holding entities"; **up to 65%** total when combined with the underlying property's ABSD rates
-- Specialist advice required; reviewer escalation
+The 100% acquisition exceeds the 50% equity threshold by 50 percentage points. Establish PIP/PHE market-value classification, indirect interests, associates and history. No price, share value or PIP value is supplied: **hold the monetary result**. Share duty is 0.2% of higher price/value; ACD uses underlying residential PIP value/interest allocation and BSD plus 65%. Obtain specialist review. [sg-shares](https://www.iras.gov.sg/taxes/stamp-duty/for-shares/buying-or-acquiring-shares); [paras2-6](https://www.iras.gov.sg/docs/default-source/stamp-duty/acd-e-tax-guide.pdf).
 
-## Section 11 — Output specification
 
-The reviewer brief must include:
+```oa-check
+name: Original Singapore case, equity gate only, no monetary base supplied
+inputs:
+  acquired_percent: 100
+  significant_percent: 50
+steps:
+  percentage_point_margin: acquired_percent - significant_percent
+expected:
+  percentage_point_margin: 50
+```
 
-1. **Transaction classification** — document type, instrument, security, financial transaction
-2. **Stamp / FTT analysis** per applicable jurisdiction
-3. **Rate and base** with statutory citation
-4. **Exemption analysis** — intra-group relief, market making, primary issuance, listed status
-5. **Liable party** (buyer / seller / both / intermediary withholding)
-6. **Filing mechanics** — when, how, by whom
-7. **Reviewer questions** — open items flagged as [T2] or [T3]
+## Reviewer brief and completion checks
 
-## Section 12 — Self-checks
+Produce (1) transaction/document/security classification, (2) each jurisdiction's separate analysis, (3) rate and statutory base with source and operative date, (4) evidence-backed exemption analysis, (5) each liable party/collector, (6) return, documents, route and deadline, and (7) open questions labelled [T 2] or [T 3]. A calculation with a held predicate is expressly conditional and cannot be submitted or used to execute a document.
 
-- [ ] Document characterisation tested per local taxonomy (each country has distinct "instruments" list)
-- [ ] Each transaction party's stamp duty position computed separately (buyer vs seller)
-- [ ] Intra-group relief documentary requirements confirmed (75% common ownership for UK)
-- [ ] AIM / recognised growth market exemption (UK) confirmed against current list
-- [ ] French / Italian / Spanish FTT scope confirmed against current annual list
-- [ ] Hong Kong rate (0.10% per side; 0.13% old rate not applied post-November 2023)
-- [ ] Singapore ACD tested for property-rich entity transfers
-- [ ] India federal + state stamp duty stacked correctly
-- [ ] Brazil IOF / Argentina sellos / Chile timbres per applicable transaction type
-- [ ] Output flags every [T2]/[T3] item for reviewer judgement
+- Check the document against the local instrument taxonomy; separate each party, instrument, charge and any double-charge cancellation.
+- Test UK group ownership/profits/assets, control arrangements and relief evidence; recognised growth-market admission **and** absence of listing; actual CREST flags.
+- Establish French/Italian/Spanish security, annual capitalisation/list, venue, netting and exemption facts; nonresidence is not a general exemption.
+- Use Hong Kong's current 0.10% sale/purchase rate and the correct valuation, rounding and instrument branch.
+- Apply Singapore's actual PIP/PHE, significant-owner and associates tests. Do not assume the same threshold for Australian state landholder laws.
+- Keep India's federal issue/delivery/non-delivery and state-document duties separate. Keep Brazil IOF, Argentine provincial sellos and Chile credit-document rules separate.
+- Carry every unresolved [T 2]/[T 3] item, original jurisdiction and evidence hold into the reviewer brief. No inferred zero, universal group relief or unsupported current rate.
 
-## Section 13 — Prohibitions
+## When to refuse or refer
 
-- **Prohibitions list** — - **Do not** apply the old 0.13% Hong Kong stamp duty rate to transactions executed after November 2023 — the rate is 0.10% per side. - **Do not** assume UK intra-group relief applies without confirming 75% common beneficial ownership AND the relief application has been correctly notified. - **Do not** advise that AIM-listed shares are exempt without confirming the listing is on a HMRC-recognised growth market. - **Do not** ignore Italian / French / Spanish FTT for non-resident purchasers — the tax is at the security level, not the purchaser's residence. - **Do not** apply property-rich entity rules (Singapore ACD, Australian landholder duty) without confirming the threshold (typically 50% of tangible assets) and qualifying equity interest tests.  _(Section 13 — Prohibitions)_
+Refuse an unconditional amount, exemption, filing instruction or execution clearance when the instrument, operative date, nexus, issuer list/venue, valuation, associate history, relief evidence or applicable procedure is unresolved. Use the specific hold below, say what evidence is missing and obtain a qualified local practitioner's review. Do not substitute a neighbouring country's rules or old figures. Every output must be reviewed and signed off by a credentialed local practitioner before a document is executed.
 
-## Section 14 — Disclaimer
+This Guide provides information and computations; it does not constitute tax, legal or financial advice.
+## Sources
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Stamp duty depends on precise document characterisation and is jurisdiction-specific. Every output must be reviewed and signed off by a credentialed local practitioner before any document is executed.
+Official sources below were actually read within the stated bounds on 16 or 17 November 2026. A retained earlier read is reused only for the same claim and period. A download or URL alone is not described as a read. The cited statutes/authority guidance support the stated branches; the holds below restrict all other uses. No independent or professional approval is claimed.
+
+### Not yet confirmed: non-usable holds
+
+These are preserved original topics or specific remaining operative dependencies. They are **not usable rates, exemptions, zero-tax opinions or filing instructions**. Refer with the missing-evidence question; do not fill the gap from an old table.
+
+| Topic | Missing operative evidence and required referral | Hold |
+|---|---|---|
+| Liechtenstein shares | Refer before a tax conclusion: the treaty/territorial application, security scope, current rate, exemptions and collector; Swiss authority alone does not establish Liechtenstein liability | H01 |
+| Luxembourg documents and capital duty | Refer before a tax conclusion: the actual document, compulsory/voluntary registration, current tariff and operative abolition provision | H02 |
+| Greece agreements | Refer before a tax conclusion: the current replacement/transition regime, agreement classification, territorial scope, rate and filing route | H03 |
+| Portugal documents, loans, leases, guarantees and insurance | Refer before a tax conclusion: the exact General Table entry, charge/base, maturity/territorial rules, exemptions, payer and return; the old range is not a usable tariff | H04 |
+| Norway shares and direct-property handoff | Refer before a tax conclusion: current affirmative no-share-duty authority; direct real property is referred to property-transfer-tax-matrix without endorsing the old rate | H05 |
+| Sweden shares/FTT | Refer before a tax conclusion: current operative abolition/exclusion and instrument/transaction scope; the old negative claim is not established | H06 |
+| Denmark shares/FTT | Refer before a tax conclusion: current operative abolition/exclusion and instrument/transaction scope; the old negative claim is not established | H07 |
+| Ireland property and land-derived shares | Refer before a tax conclusion: direct-property analysis in property-transfer-tax-matrix and the full land-derived-share predicates before selecting any rate | H08 |
+| Switzerland historic debt issue and abolition | Refer before a tax conclusion: operative debt-issue repeal/transition and a transaction-date rule; the actual equity source supports a current charge, not the old planned abolition | H09 |
+| Australia ordinary shares and landholder rules | Refer before a tax conclusion: each relevant state/territory ordinary-share and landholder law, asset/interest aggregation, acquisition history and relief; the historic federal claim is not established | H10 |
+| New Zealand shares | Refer before a tax conclusion: current abolition/exclusion and relevant security/document nexus; absence of a captured rate is not an exemption | H11 |
+| India federal securities and state instruments | Refer before a tax conclusion: actual ScheduleI federal issue/delivery/non-delivery and collector provisions plus each relevant state document charge and territorial rule; fresh official PDF route failed, not read | H12 |
+| South Korea securities transaction tax | Refer before a tax conclusion: 2026 market-specific STT and any separate rural levy, liable party, scope, transition and procedure | H13 |
+| China securities stamp tax | Refer before a tax conclusion: operative current statutory/security/venue scope, rate reduction and duration, seller collector and filing rules | H14 |
+| Indonesia documents and securities | Refer before a tax conclusion: current security-sale tax classification separately from document-stamp law, electronic documents, amounts, exemptions and collection | H15 |
+| Thailand share/document duty | Refer before a tax conclusion: exact share base/rounding, liable party, listed-market relief and other scheduled instruments under current law | H16 |
+| Philippines documentary stamp tax | Refer before a tax conclusion: current amended security issue/transfer and loan/lease instrument entries, rate/base, exemptions and collection/return | H17 |
+| Malaysia share transfers/Bursa | Refer before a tax conclusion: current instrument/market-specific tariff, remissions/caps/dates, valuation, payer and stamping route; a blanket listed-share zero is not established | H18 |
+| Vietnam securities disposals | Refer before a tax conclusion: whether the rate is income tax rather than transaction duty, taxpayer/residence/base and withholding; do not relabel it as a universal FTT | H19 |
+| US federal absence and other states | Refer before a tax conclusion: affirmative federal exclusion if a no-tax opinion is requested and the exact other-state document law; SEC fee authority does not establish every tax absence | H20 |
+| Canada shares and Quebec documents | Refer before a tax conclusion: current federal/provincial exclusions and exact Quebec property/document nexus; the original blanket negative is not established | H21 |
+| Mexico shares, ISAI and ISN trigger | Refer before a tax conclusion: the actual federal/state security/document or property charge and what the supplied ISN term means; do not silently substitute a different levy | H22 |
+| Brazil IOF/titulos | Refer before a tax conclusion: current decree/amendment chain, security/issuer/holding-period table, base, relief and collection; attempted official route 404 gave no operative read | H23 |
+| Argentina provincial sellos | Refer before a tax conclusion: the named province and 2026 operative fiscal law/tariff, execution/economic-effects nexus, instrument class, base, exemptions and payer; cached BuenosAires documents are downloads, not completed reads | H24 |
+| Colombia timbre | Refer before a tax conclusion: current national/local instrument scope and 2026 transition, rates, threshold, exemption, payer and procedure | H25 |
+| Kenya shares | Refer before a tax conclusion: current share-transfer tariff, valuation, listed-market exemption and operative conditions, payer and filing route | H26 |
+| UAE instruments | Refer before a tax conclusion: relevant emirate/security/document charge or affirmative exclusion, including any sector-specific fees; no general absence opinion is cleared | H27 |
+| Saudi Arabia instruments and property | Refer before a tax conclusion: operative no-general-duty authority and any document/security fee; property RETT is referred to property-transfer-tax-matrix, not computed from the unverified old rate | H28 |
+| Bahrain instruments | Refer before a tax conclusion: operative security/document exclusion and any registration fees for the actual instrument | H29 |
+| Qatar instruments | Refer before a tax conclusion: operative security/document exclusion and any registration fees for the actual instrument | H30 |
+| Israel historic abolition | Refer before a tax conclusion: the enacted repeal/commencement/savings and current document scope before relying on absence | H31 |
+| Bahamas documents | Refer before a tax conclusion: the actual document/security and operative Bahamian tariff, territorial, payer and filing rules; retained as a classification/referral topic | H32 |
+| Italy implementation and broad relief claims | Refer before a tax conclusion: current implementing HFT algorithm/ratio/venue conditions, the exact sovereign/fund exemption, current annual issuer list, return/F 24 codes/deadlines and authorised route; neither a nominal rate nor a downloaded consolidation clears these | H33 |
+| France historical sovereignCDS | Refer before a tax conclusion: the exact repealing clause and any historical-period conditions if a historic opinion is requested; current BOI records repeal and does not support charging a current third levy | H34 |
+| Spain Model 604 implementation | Refer before a tax conclusion: current form, codes, calendar, CSD/direct return/payment implementation; monthly statutory obligation is supported, the filing window is not | H35 |
+| HongKong group relief | Refer before a tax conclusion: full operative group-relief conditions, enactment/commencement and adjudication at transaction date; current 75% proposal is explicitly subject to enactment | H36 |
+| Singapore remaining ACD implementation | Refer before a tax conclusion: complete direct/indirect valuation/history and associate allocation for the actual structure, remission/restructuring/antiavoidance, current stamping time limit/return and any required adjudication; four-case inputs provide no monetary base | H37 |
+| Egypt pre 2026/unlisted and control transactions | Refer before a tax conclusion: operative pre 29 July resident-CGT-deferral chain, unlisted stamp rules and interaction of Law 76/2017 control/asset-exchange duty with 2026 amendments; no current special-charge conclusion is cleared | H38 |
+| Chile remaining current-law clearance | Refer before a tax conclusion: post 2019 amendment completeness, exemption schedule and exact payer/foreign-credit/other-document conditions; read rate text and current FAQs alone do not clear all these dependencies | H39 |
+| Peru remaining ITF clearance | Refer before a tax conclusion: Appendix exemptions and sworn/account conditions, exact collector, special art 9 branches and current return/deadline for the actual operation; a rate alone cannot produce a filing-ready amount | H40 |
+| UK unusual debt/depositary/reconstruction | Refer before a tax conclusion: any operative condition not established in the actual cited s 42/75/77/77A/79/93/96/97AB-AD scopes, including referenced special elections/replacement exceptions; do not infer relief from a shorthand | H41 |
+| Finland current exceptions | Refer before a tax conclusion: the actual exchange/intermediary/nonresident relief predicates, exact asset/security classification and filing evidence; general share 1.5% rule does not clear every exemption | H42 |
+| Belgium statutory exemption/court branches | Refer before a tax conclusion: the complete relevant art 126/1 or 201/4 exemption and court-annulled anti-splitting provisions before relying on them; the read rates/caps do not clear an unexamined exemption | H43 |
+| Malta remaining valuation/filing/relief | Refer before a tax conclusion: full actual debt/value/indirect holding and foreign-security/group exemption evidence plus current filing package/time limit; the 2026site-plan change alone does not clear it | H44 |
+| Japan general noFTT and amount schedule | Refer before a tax conclusion: affirmative security-transaction exclusion and current exact taxable-document schedule amounts; the creator/affix/cancel method does not establish all amounts | H45 |
+
+### Official source register and actual-read limits
+
+- **uk-buy**: [https://www.gov.uk/tax-buy-shares](https://www.gov.uk/tax-buy-shares). Read 2026-11-16: Body LF 70-100: principal 0.5%, paperover 1000, highertransfer 1.5%, UKincorporated/options/foreignUKregister/newissue/noconsideration
+- **uk-paper**: [https://www.gov.uk/guidance/stamp-duty-on-shares](https://www.gov.uk/guidance/stamp-duty-on-shares). Read 2026-11-16: Body LF 86-132,179-200,244-250: submit/pay 30days,physicalstampingwithdrawn,1000certificateaggregategate,reliefclaim,roundeachdocumentup 5
+- **uk-sdrt-pay**: [https://www.gov.uk/guidance/pay-stamp-duty-reserve-tax](https://www.gov.uk/guidance/pay-stamp-duty-reserve-tax). Read 2026-11-16: Body LF 93-129: CRESTautomatic; offmarketwrittennotice; 14daysifcouldhaveCREST; otherwise 7thnextmonth; priorworkingdayweekendholiday
+- **uk-noissues**: [https://www.gov.uk/hmrc-internal-manuals/stamp-taxes-shares-manual/stsm053090](https://www.gov.uk/hmrc-internal-manuals/stamp-taxes-shares-manual/stsm053090). Read 2026-11-16: Body LF 74-76: issue 1.5% removed 1 Jan 2024 underFA 1986ss 93/96
+- **uk-fa2024**: [https://www.legislation.gov.uk/ukpga/2024/3/section/20](https://www.legislation.gov.uk/ukpga/2024/3/section/20). Read 2026-11-16: Body LF 123-134: enacted 20/Schedule 11nochargeissues/capitalraising/qualifyinglisting/bearerissue
+- **uk-fa2024-sch11**: [https://www.legislation.gov.uk/ukpga/2024/3/schedule/11](https://www.legislation.gov.uk/ukpga/2024/3/schedule/11). Read 2026-11-16: Selectedactualdefinitions/par 7-14 and commencementLF 610-618; nooutstandingeffectnoticeLF 117; fullremainderpending
+- **uk-growth-manual**: [https://www.gov.uk/hmrc-internal-manuals/stamp-taxes-shares-manual/stsm041260](https://www.gov.uk/hmrc-internal-manuals/stamp-taxes-shares-manual/stsm041260). Read 2026-11-16: ActualwebbodyLF 71-92: admittedRGMandnotlistedanymarket; certificate 2/presentationexemption; sourceFA 2014Sch 24
+- **uk-growth-sdrt**: [https://www.gov.uk/hmrc-internal-manuals/stamp-taxes-shares-manual/stsm041270](https://www.gov.uk/hmrc-internal-manuals/stamp-taxes-shares-manual/stsm041270). Read 2026-11-16: Body LF 74-97: FA 1986s 99(4B), admittedRGM/notlistedanymarket; principal/higherexemption, CRESTstaticflags, refund/errorhandling
+- **uk-growth-list**: [https://www.gov.uk/hmrc-internal-manuals/stamp-taxes-shares-manual/stsm041330](https://www.gov.uk/hmrc-internal-manuals/stamp-taxes-shares-manual/stsm041330). Read 2026-11-16: Body LF 74-116: currentAIM/AQSElist; 31 Jul 2026EuronextAccessDublinentry
+- **ie-shares**: [https://www.revenue.ie/en/property/stamp-duty/shares-stocks-marketable-securities/shares-and-rates.aspx](https://www.revenue.ie/en/property/stamp-duty/shares-stocks-marketable-securities/shares-and-rates.aspx). Read 2026-11-16: Body LF 57-74:1% general,7.5% specifiedimmovablederivedspecialrule,saleconsideration/giftmarketvalue/unascertainedprice
+- **ie-smallcap**: [https://www.revenue.ie/en/tax-professionals/ebrief/2025/no-2512025.aspx](https://www.revenue.ie/en/tax-professionals/ebrief/2025/no-2512025.aspx). Read 2026-11-16: Body LF 52-64: SDCA 86B 2026-2030qualifyingregulated/MTF/admittedsecurities,under 1bnprior 1Decornewadmission,validnotification/exemptionperiod
+- **it-199**: [https://www.normattiva.it/eli/stato/LEGGE/2025/12/30/199/CONSOLIDATED](https://www.normattiva.it/eli/stato/LEGGE/2025/12/30/199/CONSOLIDATED). Read 2026-11-16: Body LF 500-513: enacted 1commi 29-31:equity 0.4%,HFT 0.04%,effectiveoperations 1 Jan 2026; botholdlaw 228/2012andnewTU 174amended
+- **es-ift**: [https://www.boe.es/buscar/act.php?id=BOE-A-2020-12356](https://www.boe.es/buscar/act.php?id=BOE-A-2020-12356). Read 2026-11-16: Actualwholeoperativearts 1-8 LF 144-303including 2depositary/physicaldelivery,3all 13exemptionsandcommunications,4settlement,5netbase,6liability,7rate,8monthlyreturn; 2022additionnote
+- **mt-shares**: [https://mtca.gov.mt/personal-tax/sharetransfers/faqs-share-transfers](https://mtca.gov.mt/personal-tax/sharetransfers/faqs-share-transfers). Read 2026-11-16: ActualwebreaderLF 437-443:2% higherprice/marketvalue,5% propertycompany,accountantvaluation
+- **sg-shares**: [https://www.iras.gov.sg/taxes/stamp-duty/for-shares/buying-or-acquiring-shares](https://www.iras.gov.sg/taxes/stamp-duty/for-shares/buying-or-acquiring-shares). Read 2026-11-16: ActualwebreaderLF 952-1000: higheractualprice/value; gifttrust/distributionscope,listedaverage/privateNAVaccountage/propertyrevalue/rights; 0.2%,rounddownnearestSGD,min 1
+- **sg-acdb**: [https://www.iras.gov.sg/taxes/stamp-duty/for-property-holding-entities-%28%27phe%27%29/buying-or-acquiring-property-holding-entities](https://www.iras.gov.sg/taxes/stamp-duty/for-property-holding-entities-%28%27phe%27%29/buying-or-acquiring-property-holding-entities). Read 2026-11-16: ActualwebreaderLF 943-1027: ACDBadditionalshare duty; nonbaretrust/beneficiaryrules; Type 1/Type 2BSDscale 1-6plus 65flatfrom 27 Apr 2023; associates 50%; example 50% gate
+- **hk-2026**: [https://www.ird.gov.hk/eng/pdf/2026/BriefGuide20252026.pdf](https://www.ird.gov.hk/eng/pdf/2026/BriefGuide20252026.pdf). Read 2026-11-16: ActualPDF 38/printed 34 wholeStampDutysection:documents/contractnotes 0.1% eachfrom 17Nov 2023,marketvalueifconsiderationinadequate
+- **it-199-gazette**: [https://www.gazzettaufficiale.it/eli/gu/2026/01/21/16/so/2/sg/pdf](https://www.gazzettaufficiale.it/eli/gu/2026/01/21/16/so/2/sg/pdf). Read 2026-11-16: ActualPDF 254/printed 250 fullnotes 29/30: amended 491and 495/42and 46,0.4% ordinary,halfregulatedMTF,0.04% HFT,netdailybase,issuer 500mNovemberaverageexception,issue/cancellation/donation/inheritance/conversionbranches
+- **it-defer2026**: [https://www.normattiva.it/atto/caricaDettaglioAtto?atto.articolo.numero=4&atto.codiceRedazionale=25G00213&atto.dataPubblicazioneGazzetta=2025-12-31](https://www.normattiva.it/atto/caricaDettaglioAtto?atto.articolo.numero=4&atto.codiceRedazionale=25G00213&atto.dataPubblicazioneGazzetta=2025-12-31). Read 2026-11-16: ActualbodyLF 53-62/88-114:convertedbyLaw 26/2026,current 16Novmetadata,article 4(2)replaces 1 Jan 2026by 1 Jan 2027forTU 174art 100(1)
+- **fi-corporate**: [https://www.vero.fi/en/individuals/property/transfer-tax/corporate-stock/](https://www.vero.fi/en/individuals/property/transfer-tax/corporate-stock/). Read 2026-11-16: ActualbodyLF 59-124:1.5% corporateconsideration; 2monthfile/pay; nonresidentsellercollection/bothnonresidentexceptionnotproperty; listed/direct/foreignintermediaryinformationcondition; bindingclosingdate
+- **cy-law239**: [https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf). Read 2026-11-16: ActualwholePDF 1/printed 1247:Law 239(I)/2025title/promulgation/ss 1-2repealstampActs 1 January 2026,fullstatutelist
+- **it-original491-500**: [https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.codiceRedazionale=012G0252&art.dataPubblicazioneGazzetta=2012-12-29&art.flagTipoArticolo=0&art.idArticolo=1&art.idGruppo=0&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.progressivo=5&art.versione=1](https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.codiceRedazionale=012G0252&art.dataPubblicazioneGazzetta=2012-12-29&art.flagTipoArticolo=0&art.idArticolo=1&art.idGruppo=0&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.progressivo=5&art.versione=1). Read 2026-11-16: Whole 491–500 actual originalGazetteHTMLread; netdailycashbase,qualifiedvenuehalf,500mNovexclusion,issue/cancel/gift/inheritance,derivativesperparty/fifthvenue,liability 16thnextmonth/exemptions/HFTdelegation/nondeductibility
+- **it-original-table3**: [https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.codiceRedazionale=012G0252&art.dataPubblicazioneGazzetta=2012-12-29&art.flagTipoArticolo=8&art.idArticolo=1&art.idGruppo=0&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.progressivo=0&art.versione=1](https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.codiceRedazionale=012G0252&art.dataPubblicazioneGazzetta=2012-12-29&art.flagTipoArticolo=8&art.idArticolo=1&art.idGruppo=0&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.progressivo=0&art.versione=1). Read 2026-11-16: WholeTable 3 threeinstrumentfamilies/eightnotionalbands read; EUR 0.01875–200fullschedule andqualifiedvenueonefifth
+- **it-tu-original-pdf**: [https://www.gazzettaufficiale.it/eli/gu/2024/11/28/279/so/40/sg/pdf](https://www.gazzettaufficiale.it/eli/gu/2024/11/28/279/so/40/sg/pdf). Read 2026-11-16: WholeTU 42–50 PDF 51–53/printed 47–49read as official 2024codificationcomparison includingpensionPEPP/MiFIDII/derivative 1Sep 2013
+- **uk-fa1930-42**: [https://www.legislation.gov.uk/ukpga/Geo5/20-21/28/section/42](https://www.legislation.gov.uk/ukpga/Geo5/20-21/28/section/42). Read 2026-11-16: Wholeoperative 42LF 129–249 andmodificationnotes:beneficial 75% ordinarycapital+distributableprofit+windingupassets; direct/indirect; transfereenottransferorcontrolarrangementsblock; 42A/Bcrossrefs
+- **uk-fa1986-79**: [https://www.legislation.gov.uk/ukpga/1986/41/section/79](https://www.legislation.gov.uk/ukpga/1986/41/section/79). Read 2026-11-16: Wholeoperative 79LF 130–282:loan-capitalexemption,conversion/acquisitionrights,commercialreturn/profitlink/redemptionrestrictions,index/reverseperformance/limitedrecourseexceptions,alternativefinanceadjustment
+- **uk-fa1986-87**: [https://www.legislation.gov.uk/ukpga/1986/41/section/87](https://www.legislation.gov.uk/ukpga/1986/41/section/87). Read 2026-11-16: Whole 87LF 122–182:consideration,moneyworth,conditionalagreementrelevantday,0.5principal
+- **uk-fa1986-93**: [https://www.legislation.gov.uk/ukpga/1986/41/section/93](https://www.legislation.gov.uk/ukpga/1986/41/section/93). Read 2026-11-16: Whole 93LF 126–263:1.5transfernotissue; consideration/value/options,instalments,stampoffset,payer/agent,exceptionslist 95/95A/97AB/AC/AD/B
+- **uk-fa1986-96**: [https://www.legislation.gov.uk/ukpga/1986/41/section/96](https://www.legislation.gov.uk/ukpga/1986/41/section/96). Read 2026-11-16: Whole 96LF 128–267:clearanceservicetransfer 1.5; consideration/value/options/instalmentbase/stampoffset/nonresidentagent,exceptions 97/97ZA/97A/97AB/AC/AD/B
+- **uk-fa1986-99**: [https://www.legislation.gov.uk/ukpga/1986/41/section/99](https://www.legislation.gov.uk/ukpga/1986/41/section/99). Read 2026-11-16: Whole 99LF 152–417:UK/foreignregister/paired/SEexclusions,RGMadmittedandNOTlistedanywhere,exemptloan/unittrust/derivativegates,DRinterests,near-pennyrounding
+- **uk-fa1986-75**: [https://www.legislation.gov.uk/ukpga/1986/41/section/75](https://www.legislation.gov.uk/ukpga/1986/41/section/75). Read 2026-11-16: Whole 75LF 126–184 reconstructionundertaking,nonredeemableshares/allshareholders,liabilitiesonlyotherconsideration,commercial/noavoidance,crossholdingsproportions/ownsharecancel,reliefstamp
+- **uk-fa1986-76**: [https://www.legislation.gov.uk/ukpga/1986/41/section/76](https://www.legislation.gov.uk/ukpga/1986/41/section/76). Read 2026-11-16: Whole 76repealcurrentbodyLF 130–157
+- **uk-fa1986-77**: [https://www.legislation.gov.uk/ukpga/1986/41/section/77](https://www.legislation.gov.uk/ukpga/1986/41/section/77). Read 2026-11-16: Whole 77LF 126–198:wholeissuedcapital,onlyshares,commercial/noavoidance,sameowners/classes/proportions,77Adisqualifyingarrangements,ownsharescancel,reliefstamp
+- **uk-fa1986-77a**: [https://www.legislation.gov.uk/ukpga/1986/41/section/77A](https://www.legislation.gov.uk/ukpga/1986/41/section/77A). Read 2026-11-16: Whole 120–200:controlarrangements; prior 25% three-yearholderexception; considerationshareissue/relevantmerger/widerschemeconditions
+- **uk-fa1986-97ab**: [https://www.legislation.gov.uk/ukpga/1986/41/section/97AB](https://www.legislation.gov.uk/ukpga/1986/41/section/97AB). Read 2026-11-16: Whole 119–152:capitalraisingpurpose,newissue,restrictiondelayandprompttransfer
+- **uk-fa1986-97ac**: [https://www.legislation.gov.uk/ukpga/1986/41/section/97AC](https://www.legislation.gov.uk/ukpga/1986/41/section/97AC). Read 2026-11-16: Whole 119–160:firstrecognisedexchangelisting,nochangebeneficialownership,restrictiondelayprompttransfer
+- **uk-fa1986-97ad**: [https://www.legislation.gov.uk/ukpga/1986/41/section/97AD](https://www.legislation.gov.uk/ukpga/1986/41/section/97AD). Read 2026-11-16: Whole 119–129:issuer-heldshares/treasuryhigherchargeexception
+- **uk-fa1986-92**: [https://www.legislation.gov.uk/ukpga/1986/41/section/92](https://www.legislation.gov.uk/ukpga/1986/41/section/92). Read 2026-11-16: Whole 128–243:principalSDRTreclaim/cancellation,transferallsecurities,duestampornonchargeability,sixyearclaim/conditions,ownsharebranch
+- **fr-modalities**: [https://bofip.impots.gouv.fr/bofip/7575-PGP.html/identifiant=BOI-TCA-FIN-10-30-20250528](https://bofip.impots.gouv.fr/bofip/7575-PGP.html/identifiant=BOI-TCA-FIN-10-30-20250528). Read 2026-11-16: ActualwholeoperativeBOIfiscalbodyparagraphs 1–150:PSI/intermediary/nominee/custodian,settlementaccrual,nextmonth,consideration/exfees/derivatives/FX/netting,0.4from 1 Apr 2025
+- **fr-scope**: [https://bofip.impots.gouv.fr/bofip/7570-PGP.html/identifiant=BOI-TCA-FIN-10-10-20151221](https://bofip.impots.gouv.fr/bofip/7570-PGP.html/identifiant=BOI-TCA-FIN-10-10-20151221). Read 2026-11-16: ActualwholeoperativeBOI 1–110:regulatedFrenchEUforeignadmission,FranceHQ,strict>1bnprior 1Dec,representatives/convertibles/derivativedelivery/gift/collateral/netting
+- **fr-exemptions-2026**: [https://bofip.impots.gouv.fr/bofip/7573-PGP.html/identifiant=BOI-TCA-FIN-10-20-20260812](https://bofip.impots.gouv.fr/bofip/7573-PGP.html/identifiant=BOI-TCA-FIN-10-20-20260812). Read 2026-11-16: Whole 1–290actualbodyread:2026currentprimary/clearing/marketmaking/liquidity/group/reorg/temporary/employees/convertiblesexemptionsandconditions
+- **fr-filing**: [https://bofip.impots.gouv.fr/bofip/7578-PGP.html/identifiant=BOI-TCA-FIN-10-40-20150304](https://bofip.impots.gouv.fr/bofip/7578-PGP.html/identifiant=BOI-TCA-FIN-10-40-20150304). Read 2026-11-16: Whole 1–190actualbodyread:FrenchCSDchain 5/25,direct/foreignCSD 3374(not 3375),options/annual,rounding/datareporting
+- **fr-hft**: [https://bofip.impots.gouv.fr/bofip/7581-PGP.html/identifiant=BOI-TCA-FIN-20-20150204](https://bofip.impots.gouv.fr/bofip/7581-PGP.html/identifiant=BOI-TCA-FIN-20-20150204). Read 2026-11-16: Whole 1–140actualbodyread:Francebusiness/ownaccounthabitualalgorithm,mediantimingdesk,smartorderroutingexcluded,foreignissuers,marketmaker,nominalratio/excesstimesvalue,0.01,taxforms 3310A/3517S
+- **fr-two-tax-cds-repeal**: [https://bofip.impots.gouv.fr/bofip/7554-PGP.html/identifiant=BOI-TCA-FIN-20191211](https://bofip.impots.gouv.fr/bofip/7554-PGP.html/identifiant=BOI-TCA-FIN-20191211). Read 2026-11-16: Wholeactualfiscalbody 1/10:onlyequity/HFT; sovereignCDStaxrepealed 1 Jan 2019by 2018Law 1317art 26
+- **tw-law**: [https://law-out.mof.gov.tw/EngLawContent.aspx?id=20707&lan=E](https://law-out.mof.gov.tw/EngLawContent.aspx?id=20707&lan=E). Read 2026-11-16: Whole operativearts 1-16 incl deleted 13/14, conditions/exceptions/collection/payer/commencement; actualcachedbodytext read in full.
+- **hk-process**: [https://www.ird.gov.hk/eng/pdf/sog_pn04a.pdf](https://www.ird.gov.hk/eng/pdf/sog_pn04a.pdf). Read 2026-11-16: Whole 3pagePN 04ANov 2024 paras 1-8 actualtext, contractnote fields, valuation,gift,methods,attachments,timingandlatepenalties; no genericexemption inferred
+- **jp-mof**: [https://www.mof.go.jp/tax_policy/summary/property/e09.htm](https://www.mof.go.jp/tax_policy/summary/property/e09.htm). Read 2026-11-16: Whole substantiveMOFoverview: taxeddocuments,creatorliable,fixed/bracketamounts,affix/cancelbycreation
+- **jp-7100**: [https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7100.htm](https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7100.htm). Read 2026-11-16: Wholebody 2026-04-01conditions 1-3 andadjacentclassification/examples/disasterexceptions; notpositiveauthorityfornoFTTnegative
+- **sec2026-reader**: [https://www.sec.gov/rules-regulations/fee-rate-advisories/2026-2](https://www.sec.gov/rules-regulations/fee-rate-advisories/2026-2). Read 2026-11-16: Actual web-reader body 23–38: entire advisory substance including transition condition, SROpayer, security-futuresseparateassessment.
+- **sec-list-reader**: [https://www.sec.gov/rules-regulations/fee-rate-advisories](https://www.sec.gov/rules-regulations/fee-rate-advisories). Read 2026-11-16: CurrentindexheadingslatestSection 6(b)andSection 31separatelyread; confirmedSEC 2026-2stilllatestSection 31listed.
+- **ny-stock**: [https://www.tax.ny.gov/bus/stock/stktridx.htm](https://www.tax.ny.gov/bus/stock/stktridx.htm). Read 2026-11-16: Complete substantive body current page stock-taxscope,ratebands,payment/rebate/exemptioncertificate and linkedforms; webbody 104–150; rawtext correspondingsection.
+- **ny-rebate**: [https://www.tax.ny.gov/pdf/memos/stock_transfer/m82_6m.pdf](https://www.tax.ny.gov/pdf/memos/stock_transfer/m82_6m.pdf). Read 2026-11-16: AllthreepagesTSB-M-82(6)M,9 July 1982:1 Oct 1981start; stamps/cancellation,twoyearpurchase/cancellationclaimroutes,nonrebatablepenalties; currentofficialpagelinksit.
+- **fl-dst**: [https://floridarevenue.com/taxes/taxesfees/Pages/doc_stamp.aspx](https://floridarevenue.com/taxes/taxesfees/Pages/doc_stamp.aspx). Read 2026-11-16: Substantive introduction/classification,notes/mortgagescompleteparagraphswithrenewalexemptions/modifications,allpartyliability; fileandpayrecorded/unrecordedDR 225/DR 22820thdayconditions.
+- **ZA-SARS**: [https://www.sars.gov.za/types-of-tax/securities-transfer-tax/](https://www.sars.gov.za/types-of-tax/securities-transfer-tax/). Read 2026-11-16: Whole substantive sections What is it/Who is it for/steps/deadlines/payment, reader lines 46–82; current webpage updated 19 August 2026. Supporting guide summary and unlisted taxable-value paragraphs read separately.
+- **EG153**: [https://eta.gov.eg/sites/default/files/2026-08/law.no_.153.of_.2026.pdf](https://eta.gov.eg/sites/default/files/2026-08/law.no_.153.of_.2026.pdf). Read 2026-11-16: Whole two-page Law 153/2026 arts 1–3, revised 83bis including all listed/fund/marketmaker/sameday/withholding conditions, repeal 199art 5 and day-after-publication commencement.
+- **EG199**: [https://eta.gov.eg/sites/default/files/2024-03/law_no.199-2020.pdf](https://eta.gov.eg/sites/default/files/2024-03/law_no.199-2020.pdf). Read 2026-11-16: Actual operative arts 1,3–5,7–9 and intervening capital/distribution paragraphs read; historical 83bis 1.25perthousand nonresident/.5resident; sameday exclusion; resident stamp exemption linked to end 2021CGTdeferral; commencement.
+- **EG151**: [https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf](https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf). Read 2026-11-16: Relevantart 1 revised 46bis 3/4 and 50(7),art 2 added 31(7),art 5 waiver,art 6 repeals andart 7 day-afterpublication; adjacent conditions read. Not whole law used as tax advice.
+- **EG76**: [https://eta.gov.eg/sites/default/files/2024-03/law_no.76-2017.pdf](https://eta.gov.eg/sites/default/files/2024-03/law_no.76-2017.pdf). Read 2026-11-16: PDFpages 3–4/printed 4–5: complete inserted 83bis(1) inart 3,33% rights/assets/liabilities/inshares exchange,2yearaggregation/credit/nondeductibility/withholding,arts 4–5regulation/repeal/commencement.
+- **NG-NTA**: [https://nass.gov.ng/documents/download/11249](https://nass.gov.ng/documents/download/11249). Read 2026-11-16: New scoped stamp read: commencement 1 January 2026; ChapterFive 123–141 actual stamp provisions; 184all exemptions and neighboring 185opening; 195repeal and 198savings; NinthSchedule relevantcapital,contractnotes,conveyance,agreements,receipts/electronictransfer rows. Prior completed Nigeria pack had not cleared this whole stamp scope, so no false reuse claim.
+- **fr-cgi-2026**: [https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000053543343/2026-11-01](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000053543343/2026-11-01). Read 2026-11-17: Operative CGI 235terZD I-XIII, reader 13200-13259 across retained reads 4/5/7; 2026 version and amendment metadata. Not navigation/search snippets.
+- **fr-hft-2026**: [https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028447781/2026-11-01](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028447781/2026-11-01). Read 2026-11-17: Whole operative 235terZD bis I-VII reader 13200-13223; proper 2026 version. Separately encountered 2027 future version was rejected.
+- **fr-58s**: [https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026265201/2026-05-26](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026265201/2026-05-26). Read 2026-11-17: Whole article 58S I-II, reader 119-128, timing threshold/definition and 80% threshold; same version in force since 2012.
+- **sg-acd-2026**: [https://www.iras.gov.sg/docs/default-source/stamp-duty/acd-e-tax-guide.pdf](https://www.iras.gov.sg/docs/default-source/stamp-duty/acd-e-tax-guide.pdf). Read 2026-11-17: Ninth edition 30 Jan 2026 PDFpp 4-16, printed 1-14: glossary, Type 1/2 PHE/PIP, associates/significant-owner, indirect aggregation, buyer/seller date tables, residential-value and acquisition-interest rules. No complete restructuring/antiavoidance/FAQ clearance.
+- **hk-relief-current**: [https://www.ird.gov.hk/eng/tax/sdu.htm](https://www.ird.gov.hk/eng/tax/sdu.htm). Read 2026-11-17: Current substantive relief paragraph reader 218-227: proposed 75% regime subject to enactment/adjudication, not unconditional relief.
+- **tw-native-2026check**: [https://law-out.mof.gov.tw/EngLawContent.aspx?id=20707&lan=C](https://law-out.mof.gov.tw/EngLawContent.aspx?id=20707&lan=C). Read 2026-11-17: Whole currently posted Chinese counterpart 26-85; 114.01.02 amendment history; rate/2026 suspension/2027 day-trade endpoints and collection match prior English read.
+- **be-tob**: [https://finances.belgium.be/fr/experts_partenaires/investisseurs/taxe-sur-les-op%C3%A9rations-de-bourse](https://finances.belgium.be/fr/experts_partenaires/investisseurs/taxe-sur-les-op%C3%A9rations-de-bourse). Read 2026-11-17: Whole substantive agency FAQ body 99-224:scope/payer/rates/caps/deadlines/MyMinfin; no bank-account details reproduced.
+- **be-tct**: [https://finances.belgium.be/fr/node/14191](https://finances.belgium.be/fr/node/14191). Read 2026-11-17: Agency substantive body 185-314:referenceperiod/end-date rate transition,scope/payer/report/pay,10% excess limit; later examples not needed for claims.
+- **be-cdtd**: [https://www.ejustice.just.fgov.be/eli/loi/1927/03/02/1927030201/justel](https://www.ejustice.just.fgov.be/eli/loi/1927/03/02/1927030201/justel). Read 2026-11-17: Decoded native statute arts 120-126/1 through read exemption branches, and 201/3-201/9:classification/per-side base/caps/payment; TCT scope/base/valuation/rate amendment annotation 1 June 2026 andcap. Unread exemption crossrefs remain conditional.
+- **mt-cap364**: [https://legislation.mt/eli/cap/364/eng/pdf](https://legislation.mt/eli/cap/364/eng/pdf). Read 2026-11-17: PDFprinted 34-39 art 42(1),(2)with neighboring reorganisation/foreign-security/indirect-value/liability conditions. Not entire Act/exhaustive exemptions.
+- **mt-ln158**: [https://legislation.mt/eli/ln/2026/158/eng/pdf](https://legislation.mt/eli/ln/2026/158/eng/pdf). Read 2026-11-17: Whole one-page 2026Rules 1-4; site-plan/Perit additions to rules 11/12. Filing package beyond these changes remains unconfirmed.
+- **ch-issue**: [https://www.estv.admin.ch/de/emissionsabgabe-auf-eigenkapital-kurz-erklaert](https://www.estv.admin.ch/de/emissionsabgabe-auf-eigenkapital-kurz-erklaert). Read 2026-11-17: Actual retained official-reader whole substantive 20-36:domestic equity issue/contribution scope,1%/CHF 1m allowance,payer/reorganisation; no debt-issue rate clearance.
+- **ch-turnover**: [https://www.estv.admin.ch/de/umsatzabgabe-kurz-erklaert](https://www.estv.admin.ch/de/umsatzabgabe-kurz-erklaert). Read 2026-11-17: Actual retained official-reader whole substantive 20-48:Swiss dealer scope/rates/base/exemptions/half-duty allocation.
+- **hk-rates**: [https://www.gov.hk/en/residents/taxes/stamp/stamp_duty_rates.htm](https://www.gov.hk/en/residents/taxes/stamp/stamp_duty_rates.htm). Read 2026-11-17: Actual stock section body 507-518 only:date/rates/whole-dollar rounding/gift/other instrument; property rates not used.
+- **cl-law**: [https://www.sii.cl/normativa_legislacion/leyimpuestoyestampillas.pdf](https://www.sii.cl/normativa_legislacion/leyimpuestoyestampillas.pdf). Read 2026-11-17: DL 3475 art 1(3) and art 2, PDFpp 2-3 reader 64-123: credit-document scope, issue-to-maturity rate/cap, demand instruments, renewals and prior-duty cap conditions. Not entire law or exemption schedule.
+- **cl-return**: [https://www.sii.cl/preguntas_frecuentes/otros_impuestos/001_390_0369.htm](https://www.sii.cl/preguntas_frecuentes/otros_impuestos/001_390_0369.htm). Read 2026-11-17: Whole current official FAQ 0369: electronic F 24/F 24.1 filing routes, authentication and paper cut-off. Live form not submitted.
+- **cl-deadline**: [https://www.sii.cl/preguntas_frecuentes/otros_impuestos/001_390_0361.htm](https://www.sii.cl/preguntas_frecuentes/otros_impuestos/001_390_0361.htm). Read 2026-11-17: Whole current FAQ 0361: payer/instrument-specific deadlines, private-document five-working-day rule and full-accounting following-month branch. Not exhaustive other statutory conditions.
+- **pe-law**: [https://www.sunat.gob.pe/legislacion/itf/ds150_07.htm](https://www.sunat.gob.pe/legislacion/itf/ds150_07.htm). Read 2026-11-17: Proper UTF-8 native art 9(a)-(j),10-13 actual operative read: bank operation exclusions, current amended rate, Appendix exemption gate, tax base/FX and special rounding. Appendix itself and current forms/deadlines not read.
