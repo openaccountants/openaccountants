@@ -6,7 +6,7 @@ Review date: 17 November 2026. This is AI source, preservation and arithmetic re
 
 - Original complete supporting-pack review: `e18f85976b5af8a447df49ee02dfc48d26598e02` (Claude helper rewrite).
 - Finite correction: `517dc51d3db679aedc484c5c408d4591dbadb3ba` (Codex).
-- Main integration: `dc769a74d0d530c0b6aa44407c01f22559e7c58e`, incorporating `fe4002fa24814fbefee6f5499f7316f2f3c2a690` cleanly. Every country file is byte-identical to the correction commit.
+- Main integration: `dc769a74d0d530c0b6aa44407c01f22559e7c58e`, incorporating `fe4002fa24814fbefee6f5499f7316f2f3c2a690` cleanly. All 11 North Macedonia files are byte-identical to the correction commit.
 - This record adds public audit evidence only. Its binding is to the file hashes below; it does not change a Guide, example or source-read date.
 
 | Country file | Final SHA-256 |
@@ -64,7 +64,7 @@ Updated-head hosted CI is a publication gate, reported by the live PR Checks tab
 
 - Completeness of later Companies Law amendments remains unestablished. The historical-source comparison is expressly non-usable as a completed current incorporation instruction pending operative rules for the actual filing.
 - Full simplified-company execution, live signing/uploads, current fees and regulated-sector conditions remain held. UJP PIT/CIT later-Gazette completeness is not independently certified beyond the stated current consolidation/listing checks.
-- The standalone departure/deemed-disposal gap and existing specialist exclusions remain. No zero charge, exemption, accountant attestation or complete filing approval is inferred.
+- The standalone departure/deemed-disposal gap and existing specialist exclusions remain. No zero charge, exemption, accountant approval or complete filing approval is inferred.
 - Original rewrite: Claude helper. Bounded correction and publication: Codex. The independent finite reviewer was separate from the correction writer. Claude's writer checkout was not modified.
 - Existing country PR #2148 is the publication unit. Root alone controls merges and ingestion, with no merge while an actual ingestion run is active. No model review was manually dispatched.
 
