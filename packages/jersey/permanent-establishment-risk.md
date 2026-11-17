@@ -1,356 +1,291 @@
 ---
 name: permanent-establishment-risk
-description: Use this skill whenever a freelancer or small business has cross-border activity that might create a tax presence (Permanent Establishment / PE) in the client's country. Trigger on phrases like "permanent establishment", "PE risk", "tax presence", "183-day rule", "fixed place of business", "dependent agent", "service PE", "effectively connected income", "do I need to file taxes in my client's country", "working abroad for client", "remote work PE", or any request about whether a freelancer's cross-border activity triggers a filing obligation in another country. This skill contains the OECD model treaty PE definition, country-specific PE thresholds, the 183-day rule, remote work analysis, avoidance strategies, and consequences of PE creation. This is primarily T2/T3 material -- flag for professional review in all but the most straightforward cases. ALWAYS read this skill before advising on any PE-related question.
+description: "Assess a freelancer or small business's cross-border fixed-place, agency, services or construction PE exposure, distinguish employment/residence/WHT tests, preserve the actual treaty and domestic-law analysis, and hand off attribution and filing work for professional review."
+version: 1.1
 jurisdiction: GLOBAL
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+tax_year_notes: "2026 source reading. OECD Model provisions are not enacted bilateral terms. UN comparison is expressly the 2021 edition. Country paragraphs identify the particular law, treaty or authority guidance read; unresolved pair-specific conclusions are not clearance."
+last_updated: 2026-11-16
+category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Permanent Establishment Risk
+# Permanent establishment risk
 
-## Skill Metadata
+## Scope
 
-- **Jurisdiction** — Multi-jurisdiction (OECD model + country-specific)
-- **Primary Legislation** — OECD Model Tax Convention on Income and on Capital, Article 5 (PE definition), Article 7 (business profits), Article 14 (independent personal services -- deleted in 2000 update, now subsumed by Art 7)
-- **Supporting Legislation** — UN Model Tax Convention Art 5 (broader PE definition, includes service PE); bilateral DTAs between specific country pairs
-- **Scope** — Whether a freelancer's cross-border activity creates a PE in the client's country, triggering a corporate/income tax filing obligation there
-- **Contributor** — OpenAccountants
-- **Validation Date** — April 2026
-- **Skill Version** — 1.0
-- **Confidence Coverage** — Tier 1: basic PE definition, remote work non-PE, clearly short visits. Tier 2: extended on-site presence, service PE under UN model treaties, borderline fixed place situations. Tier 3: multi-country PE assessment, profit attribution, anti-avoidance rules, actual PE triggered -- full professional review required.
-- **Cross-references** — `withholding-tax-matrix.md`, `non-eu-export-services.md`
+Use this Guide when a freelancer, employee, subcontractor or small business works across borders and needs to identify a potential income-tax presence. Separate **whose enterprise** is being tested and **in which state**: a freelancer's premises may concern their own enterprise, while their contract-making may raise a client's agency exposure. A foreign customer alone does not establish a PE in the customer's state; absence of a PE does not clear every tax, withholding or filing question. [OECD Model arts 5 and 7](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf); [IRS filing guidance](https://www.irs.gov/taxtopics/tc851).
 
-**Skill Metadata Table**
+Written by Codex; not reviewed by an accountant. The original internal [T1]/[T2]/[T3] work labels are retained below only as escalation labels: factual collection, judgement needed, professional referral. They are not approval tiers or a promise that a short visit or remote arrangement is deterministically tax-free. Complex multi-country cases, established PE and profit attribution require a qualified international tax professional. This Guide does not calculate attributable profits.
 
-| Field | Value |
-| --- | --- |
-| Jurisdiction | Multi-jurisdiction (OECD model + country-specific) |
-| Primary Legislation | OECD Model Tax Convention on Income and on Capital, Article 5 (PE definition), Article 7 (business profits), Article 14 (independent personal services -- deleted in 2000 update, now subsumed by Art 7) |
-| Supporting Legislation | UN Model Tax Convention Art 5 (broader PE definition, includes service PE); bilateral DTAs between specific country pairs |
-| Scope | Whether a freelancer's cross-border activity creates a PE in the client's country, triggering a corporate/income tax filing obligation there |
-| Contributor | OpenAccountants |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: basic PE definition, remote work non-PE, clearly short visits. Tier 2: extended on-site presence, service PE under UN model treaties, borderline fixed place situations. Tier 3: multi-country PE assessment, profit attribution, anti-avoidance rules, actual PE triggered -- full professional review required. |
-| Cross-references | `withholding-tax-matrix.md`, `non-eu-export-services.md` |
+### Quick reference
 
-## Confidence Tier Definitions
+| Question | Answer / controlling condition | Official source |
+|---|---|---|
+| Fixed-place PE? | Test a business place, location/permanence and enterprise activity through it; actual disposal and facts matter. An office, room, desk, workstation or construction site is not automatically sufficient. | OECD art 5(1)-(2), Commentary 5 paras 6-18/28-34, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Agent PE? | A fixed place is not necessary for the separate agency branch. Actual treaty wording, habitual conduct, relevant contracts and independent-agent exception matter; signature alone is not the whole current Model test. | OECD art 5(5)-(8), https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Universal day threshold? | None. Employment, independent services, services PE, construction, residence and domestic-source rules are different tests. See the specific period/inequality table below. | OECD arts 5 and 15, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf; UN 2021 arts 5 and 14, https://desapublications.un.org/file/914/download |
+| All work outside the client's country? | With no premises, personnel, agent or other relevant activities there, the stated facts do not create a Model fixed-place/agency PE merely through the payer's location. Reassess the state where work actually occurs and other income classifications. | OECD arts 5 and 7(4), https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| No PE, so no return? | Not a safe inference. A US treaty exemption can still require a return/disclosure; other states' procedural obligations need their own rules. | IRS Topic 851 filing section, https://www.irs.gov/taxtopics/tc851; Form 1120-F instructions, https://www.irs.gov/instructions/i1120f |
+| UAE low taxable profit, so PE irrelevant? | No. Natural-person scope uses business turnover, a different measure from taxable income. Registration/returns can remain relevant with a nil ordinary CT charge. | FTA CTGTNP1 sections3.3-3.5/3.11/6.1, https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf; Decision116/2022 arts2-3, https://mof.gov.ae/wp-content/uploads/2023/02/Cabinet-Decision-No-116-of-2022-on-CT-Article-3-Threshold-1.pdf |
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified tax professional must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate to a qualified international tax professional.
+## Ask the client first
 
-## Step 0: Pre-Check Questions [T1]
+1. What is the person/entity type and treaty residence of the freelancer, client and relevant enterprise? Identify every work/premises/agent state, not just the invoicing state, and obtain the applicable treaty/protocol/MLI versions and period.
+2. Where are services physically performed, for how long and how often? Obtain full travel/project records, cumulative relevant periods, interruptions, recurrent visits, connected projects and intended/actual duration.
+3. Which offices, desks, rooms, sites, equipment or other locations can the enterprise actually use, on what terms and for what work? Is the place at its disposal, and is use continuous/recurrent or transient?
+4. Who negotiates or concludes contracts, plays the principal role, secures orders or otherwise acts for whom? Obtain actual conduct, property/services rights, relationships and independence facts, not just the written title.
+5. Are activities core business or genuinely preparatory/auxiliary, and what complementary activities do this enterprise and related enterprises perform in that state? For remote staff obtain working-time records and the actual commercial reason for the location.
+6. What source-income, WHT, residence, registration, return, VAT/GST or other obligations have already been identified? For UAE individuals obtain aggregate business turnover and professionally established taxable income separately; for existing exposure obtain prior filings and authority notices.
 
-1. **Where is the freelancer tax-resident?** Home country for treaty purposes.
-2. **Where is the client located?** The potential PE country.
-3. **Does the freelancer travel to the client's country?** If yes: how many days per year? Do they have a fixed office/desk there?
-4. **Does the freelancer work entirely remotely from their home country?** If yes, PE risk is generally very low.
-5. **Does a double tax treaty (DTA) exist between the two countries?** The treaty PE definition overrides domestic law.
-6. **Does the freelancer have authority to conclude contracts on behalf of the client?** Dependent agent PE risk.
-7. **How long has the arrangement lasted or is expected to last?**
+**Step0 [T1 factual collection]:** stop any substantive PE conclusion until residence, all relevant locations, travel and premises are known. The original arrangement-duration, treaty-existence and contract-authority questions remain essential; a client's address is not the only potential PE state.
 
-**If items 1-4 are unknown, STOP.**
+## The method, step by step
 
-## Step 1: What Constitutes a Permanent Establishment? [T1]
+### Step1. Identify the law and test fixed-place PE
 
-**Legislation:** OECD Model Tax Convention, Article 5.
+Establish domestic liability first, then whether the person is entitled to a treaty limitation and which version applies. The OECD Model does not itself override domestic law or supply an absent treaty. The actual treaty may retain an independent-services/fixed-base article even though OECD Article14 was deleted in 2000. Document benefits/anti-abuse conditions rather than assuming that a treaty's existence clears them. [OECD arts1-5, 7, 29; deleted14 Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf).
 
-### OECD Model Definition (Art 5(1))
+| Fixed-place test [T2] | Evidence and limits | Official source |
+|---|---|---|
+| Place of business | Identify a facility/location, including an office, room, desk, workstation or site. Formal ownership/lease is not necessary; mere access or a meeting invitation does not prove the enterprise has a place at its disposal. | Art 5(1), Commentary5 paras6-18, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Fixed | Establish geographical connection and permanence. There is no general statutory six-month minimum in art 5(1); recurring periods, short-lived businesses carried on wholly there, interruptions and retrospective facts matter. | Art 5(1), Commentary5 paras28-34, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Business through it | Establish enterprise activity through that place. Apply any actual preparatory/auxiliary exception and anti-fragmentation rule, rather than declaring every planning meeting exempt. | Art 5(1), (4), (4.1), https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
 
-- **OECD Model Definition (Art 5(1))** — A PE is a **fixed place of business** through which the business of an enterprise is wholly or partly carried on.  _(OECD Model Tax Convention, Article 5(1))_
+All three fixed-place elements must be considered. The Model's specific examples are a management place, branch, office, factory, workshop and mine/oil or gas well/quarry/other extraction place; they are not exemptions from the general definition's conditions. [Art 5(1)-(2)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf).
 
-### The Three Tests [T1]
+| Activity previously described as excluded | Correct condition and practical question | Official source |
+|---|---|---|
+| Storage/display/delivery, including a client's warehouse holding samples | The Model's facilities/stock branch requires the enterprise's goods and the stated sole purpose, **plus preparatory/auxiliary character**. Verify whether the operation instead performs an essential business function. | Art 5(4)(a)-(b) and final condition, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Stock for processing by another | The same character condition applies even if uncommon for service freelancers. | Art 5(4)(c) and final condition, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Purchasing / information collection / requirements gathering | Assess the actual work and business context. An activity's label does not prove that it is only preparatory/auxiliary. | Art 5(4)(d), https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Administration or planning meetings / other or combined activities | Apply the final condition to the activity or overall combination; do not classify every administrative or planning task as exempt. | Art 5(4)(e)-(f), https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Fragmented operations | Art 5(4.1) can defeat exclusion where same/closely related enterprises perform complementary functions in a cohesive operation in that state, and either the other relevant place is a PE or the combined activity is not preparatory/auxiliary. | Art 5(4.1), https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
 
-**The Three Tests**  _(OECD Model Tax Convention, Article 5)_
+### Step2. Dependent-agent PE [T2]
 
-| Test | Requirement | Freelancer Application |
-| --- | --- | --- |
-| **Place of business** | A physical location: office, room, desk, workstation, construction site | Does the freelancer have an office, desk, or other fixed location in the client's country? |
-| **Fixed** | The place must be established at a distinct location with a degree of permanence (not merely temporary) | Is the location available to the freelancer on a continuing basis (not just for a single short visit)? |
-| **Business carried on through it** | The enterprise's business activities must be carried on through the fixed place | Does the freelancer actually perform their core service activities at this location? |
+Identify the enterprise being represented and the state in which the person acts. Under the current Model, habitual conclusion **or the habitual principal role leading to contracts routinely concluded without material modification** can qualify. Contracts may be in the enterprise's name, concern transfer/use of property owned by it or which it may use, or supply its services. Do not limit the test to formal authority plus signature in the client's name. Apply the specified activity exception subject to anti-fragmentation. [Art 5(5)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf).
 
-- **All three tests requirement** — All three must be met for a PE to exist under Art 5(1).  _(OECD Model Tax Convention, Article 5(1))_
+The independent-agent exception requires independence and ordinary-course activity. Acting exclusively or almost exclusively for closely related enterprises defeats that exception under the Model, but does not alone prove every agent-PE condition. Control/relatedness and mere parent/subsidiary status have their own tests. A promoter who never signs may still play the relevant principal role; someone performing their own services is not automatically a representative of the client, but their conduct needs checking. The original broker/general-commission-agent and own-name freelancer examples therefore remain fact questions. [Art 5(5)-(8)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf).
 
-### Specific PE Examples (Art 5(2)) [T1]
+### Step3. Keep the distinct presence rules separate
 
-The following are expressly included as PEs if they meet the general definition:
+The Model employment exception is not a freelancer's general tax exemption. Under art 15(2), **all three** conditions matter: presence not exceeding the stated limit in the relevant period, employer not resident in the work state, and remuneration not borne by an employer PE there. Independent services can instead be governed by a retained fixed-base/presence article. [OECD art 15](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf); specific examples below.
 
-- A place of management
-- A branch
-- An office
-- A factory
-- A workshop
-- A mine, oil well, quarry, or other place of extraction
+| Rule / particular text | Threshold / period and remaining conditions | Official source |
+|---|---|---|
+| OECD Model fixed place | No universal number of days; apply the complete fixed-place test | Art 5(1), Commentary5 paras28-34, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| OECD Model construction | **More than twelve months** for the defined building/construction/installation project; site-state preparatory work, subcontractor work/disposal, interruptions and completion/testing require analysis | Art 5(3), Commentary5 paras52-55, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| OECD Model employment | **Not more than 183 days in any twelve-month period commencing/ending in the fiscal year**, plus employer and PE-burden conditions | Art 15(2), Commentary15 paras4-6.2, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| UN Model, expressly 2021 services PE | Furnishing services including consultancy through employees/other personnel, activities of that nature aggregating **more than 183 days in any twelve-month period commencing/ending in the fiscal year**. The particular 2021 operative clause does not add a same-project condition | UN 2021 art 5(3)(b), https://desapublications.un.org/file/914/download |
+| UN 2021 independent services | Fixed base regularly available with attributable income, **or presence amounting to or exceeding 183 days** in that twelve-month/fiscal-year framework, with locally performed income in that branch | UN 2021 art 14, https://desapublications.un.org/file/914/download |
+| India-US services PE | **More than 90 days in any twelve-month period**, or the specified related-enterprise branch; excludes included services defined under art 12 and requires enterprise services through employees/other personnel. It is not a fiscal-year-only threshold. Where a PE otherwise exists under art 5(2)(j), (k) or (l) and the relevant period spans two taxable years, Protocol I excludes a PE in a year with fewer than 30 aggregate days of the relevant use, site, project or activity; a PE exists in the other taxable year, with art 7 taxation limited to income arising during that other year | Art 5(2)(l) and Protocol I Ad Article 5, https://www.irs.gov/pub/irs-trty/india.pdf |
+| India-US independent services | For qualifying individuals/firms of individuals other than companies, fixed base regularly available or **presence amounting to or exceeding90 days in the relevant taxable year** | Art 15(1)-(2), https://www.irs.gov/pub/irs-trty/india.pdf |
+| UK-India services PE | Excluding services taxable under art 13, through employees/other personnel: **more than 90 days in any twelve-month period**, or **more than 30 days** for the associated-enterprise limb | Official synthesis art 5(2)(k), https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force |
+| UK-India independent services | Its art 15 has its own professional-services, **90-day relevant-fiscal-year** and regularly available fixed-base branches, plus partnership presence rule; do not substitute the services-PE inequality | Official synthesis art 15, https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force |
+| Australia-India services PE | Defined services through employees/other personnel for the same/connected project aggregate **more than 183 days in any twelve-month period**, subject to the stated excluded-activity condition | Official synthesis art 5(3)(a), https://www.ato.gov.au/law/view/pdf/mli/india_c1.pdf |
+| Australia-India independent services | Qualifying individual/non-company firm: fixed base regularly available, or **presence amounting to or exceeding 183 days in a year of income**; attribution/local-performance restrictions differ by branch | Official synthesis art 14, https://www.ato.gov.au/law/view/pdf/mli/india_c1.pdf |
 
-### Exclusions -- NOT a PE (Art 5(4)) [T1]
+The two Australia-India provisions above correct the old Guide's **90-day** assumption for that pair. Those are different from the US-India and UK-India provisions. A particular person's treaty entitlement, classification and effective MLI/protocol position still need to be established; an official synthesis is an aid, and authentic texts control. The UN comparison is expressly historical 2021; its later 2025 operative PDF was not readable, so no current 2025-UN confirmation is claimed.
 
-**Exclusions -- NOT a PE (Art 5(4))**  _(OECD Model Tax Convention, Article 5(4))_
+### Step4. Remote work and visits [T2]
 
-| Exclusion | Example |
-| --- | --- |
-| Storage, display, or delivery of goods | Freelancer stores samples at client's warehouse |
-| Maintenance of stock for processing by another | N/A for most service freelancers |
-| Purchasing goods or collecting information | Freelancer visits client to gather requirements (no service delivery) |
-| Preparatory or auxiliary activities | Administrative tasks, attending planning meetings |
+If all the freelancer's work is in their home state and there are no relevant premises, personnel, agent or other activities in the client's state, the payer's residence alone does not establish the freelancer's Model PE there. **That is not a universal no-tax/no-filing statement**. Test the state where the freelancer actually works, domestic-source rules and special royalty/technical-service/independent-service articles separately. [OECD arts5,7(4)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf); [IRS source and filing guidance](https://www.irs.gov/individuals/international-taxpayers/source-of-income-personal-service-income), https://www.irs.gov/taxtopics/tc851.
 
-- **BEPS anti-fragmentation caveat** — The BEPS Action 6/7 anti-fragmentation rule (Art 5(4.1) of the 2017 OECD Model) may deny these exclusions if the overall activity is NOT preparatory or auxiliary. [T3]  _(OECD Model Tax Convention, Article 5(4.1), 2017 update)_
+For an employee working abroad from a home or similar place, the 2025 OECD Commentary's **less-than50% working-time indicator over any twelve-month period commencing/ending in the fiscal year** concerns whether that place is a place of business of the employer in the described context. At/above it, consider facts and commercial reason; retaining staff or saving office costs alone does not establish that reason. Customers' mere presence or a time-zone difference alone also does not suffice. Other facts can matter, and a sole/principal consultant's own enterprise is a different case. This is Commentary, not an automatic bilateral amendment or a universal PE safe harbour. [Commentary5 paras44.1-44.21](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/11/the-2025-update-to-the-oecd-model-tax-convention_c7031e1b/5798080f-en.pdf).
 
-## Step 2: Dependent Agent PE (Art 5(5)-(6)) [T2]
+| Original visit pattern | Corrected assessment; no automatic risk label | Official source |
+|---|---|---|
+|100% remote, never visits client's state | On the complete no-local-activity assumptions above, no Model PE arises merely from that foreign payer. Check other people, facilities, classifications and actual work states before concluding | Arts5,7, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+|1-2 meetings/year, less than2 weeks total | Short presence may be relevant; neither a two-week safe harbour nor automatic preparatory/auxiliary status exists in the Model | Art 5(1),(4), Commentary5 paras28-34, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+|1-2 days/month, recurrent visits | Recurrence and actual disposal/activity can matter even with short individual visits; do not grant a "low risk" clearance just from the monthly count | Art 5(1), Commentary5 paras28-34, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Client premises for1-2 months/year | Examine place/disposal, recurrence, activity and any special branch. No automatic "medium" category or universal approaching-threshold rule follows | Art 5 and Commentary5 paras28-34, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Dedicated desk and3+ months/year | A desk and continuing availability matter, but do not alone establish every element or a universal "probable PE" conclusion | Art 5(1), Commentary5 paras6-18/28-34, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Relocation for6+ months | Assess both residence and PE, actual treaty and domestic law. Neither is established solely by this generic period | Arts4-5, Commentary5 paras28-34, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
 
-Even without a fixed place, a PE can be created through a **dependent agent:**
+### Step5. Country-specific checks, with actual source boundaries
 
-**Dependent Agent PE conditions**  _(OECD Model Tax Convention, Article 5(5)-(6))_
+#### United States
 
-| Condition | Test |
-| --- | --- |
-| A person acts on behalf of the enterprise | The freelancer (or their employee/sub-contractor) acts in the client's country |
-| Habitually concludes contracts | The person has authority to conclude contracts in the name of the enterprise AND habitually exercises it |
-| Contracts are in the name of the enterprise | The contracts are binding on the enterprise |
+US domestic trade/business, ECI, income source and treaty PE are separate questions; the Model is not the domestic tax test. Personal-service income generally follows where services are performed, not the payer or invoice. Mixed-location service compensation usually needs a factual/time allocation. A single day is not a universal ECI/PE threshold; the old "any US-source business income is taxable" shorthand overlooks classification, exceptions and treaty conditions. [IRS personal-services source guidance](https://www.irs.gov/individuals/international-taxpayers/source-of-income-personal-service-income).
 
-### Does NOT Create Agent PE [T1]
+For an individual, IRS Topic 851 identifies Form 1040-NR and potential Form 8833 even where treaty protection means ECI is not attributable to a US PE/fixed base. For foreign corporations, Form 1120-F instructions identify filing, treaty/Code exemption and protective-return cases; no-PE treaty protection does not automatically eliminate a return. Use the proper person/type/year instructions, not the bare existence of a PE as the only trigger. [Topic 851](https://www.irs.gov/taxtopics/tc851); [Form 1120-F instructions, Who Must File / Treaty or Code exemption / Protective return](https://www.irs.gov/instructions/i1120f).
 
-- An **independent agent** (broker, general commission agent) acting in the ordinary course of their business.
-- A person who merely **promotes or advertises** but does not conclude contracts.
-- A freelancer who performs services under their own name and contract (i.e., the freelancer IS the enterprise, not an agent of the client).
+#### India
 
-**For most freelancers:** Agent PE is NOT a significant risk because the freelancer contracts in their own name, not the client's. However, if a freelancer is embedded in a client's team and signs deals on the client's behalf, agent PE risk increases. [T2]
+Do not use "India90 days" as a universal domestic/treaty rule. The table identifies actual India-US, UK-India and Australia-India services and independent-service branches, with different periods and conditions. Services classified under included/technical-service articles can fall outside the relevant services-PE branch. The original warning that WHT and PE are separate remains: classification and the actual withholding article require their own analysis. [India-US arts5,12,15](https://www.irs.gov/pub/irs-trty/india.pdf); [UK-India arts5,13,15](https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force); [Australia-India arts5,12,14](https://www.ato.gov.au/law/view/pdf/mli/india_c1.pdf).
 
-## Step 3: The 183-Day Rule [T1]
+This does not verify India's complete current domestic source, business-connection or filing regime. The original broad "services in India trigger tax" and "remote work outside India never gives PE" claims cannot replace domestic-law, entitlement, other-person/premises and income-classification checks. Obtain the current domestic provisions before that conclusion; no national tax rate is supplied here.
 
-### OECD Model -- Employment Income (Art 15)
+#### United Arab Emirates
 
-- **183-day rule scope** — The 183-day rule in the OECD Model applies to **employees**, not independent freelancers. However, many countries and treaties extend similar concepts to independent service providers.  _(OECD Model Tax Convention, Article 15)_
-- **Standard employment rule (Art 15(2))** — Employment income is taxable ONLY in the employee's residence country if: 1. The employee is present in the other country for not more than 183 days in any 12-month period, AND 2. The remuneration is paid by an employer NOT resident in the other country, AND 3. The remuneration is NOT borne by a PE of the employer in the other country.  _(OECD Model Tax Convention, Article 15(2))_
+The ordinary CT bands are **0% on taxable income not exceedingAED 375,000 and9% on the excess** under Decision116/2022 arts2-3, with its artificial-splitting condition. These are taxable-income bands, not turnover thresholds, and this paragraph does not establish free-zone, exempt-person or large-group treatment. [Decision116/2022](https://mof.gov.ae/wp-content/uploads/2023/02/Cabinet-Decision-No-116-of-2022-on-CT-Article-3-Threshold-1.pdf).
 
-### For Freelancers -- Service PE Under UN Model [T2]
+A natural person conducting a UAE business is within the separately stated natural-person scope only when relevant business turnover **exceedsAED 1 million in a Gregorian calendar year**. Wages, personal-investment and qualifying real-estate-investment income are excluded under the stated rules. The FTA explains domestic resident-person treatment of UAE business and the treaty-nonresident/PE case; for the latter the relevant PE turnover threshold still matters. Thus "no personal income tax" does not mean a freelancer's business escapes corporate tax, registration or returns. [FTA CTGTNP1 sections3.3-3.5, citing CTLaw11 and Decision49/2023 art 2](https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf); [current FTA natural-person page](https://www.tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/basis.of.taxation.natural.person.aspx).
 
-**Legislation:** UN Model Tax Convention, Art 5(3)(b).
+FTA's nonresident guide requires fixed-place/disposal/permanence/business-activity analysis and consideration of the actual DTA; its construction/supervision branch has its own **more than 6-month/any12-month** and connected-activity conditions. For a project starting before the Corporate Tax Law became applicable, count only time from the start of the nonresident person's first Tax Period (periods commencing on or after 1 June 2023); time before that first-period start does not count towards the six-month permanence test. An office lasting a number of months is evidence, not a substitute for the full analysis. [FTA CTGNRP1 sections7.1-7.2.1/7.2.3.7](https://tax.gov.ae/DataFolder/Files/Guides/CT/Taxable%20Non-Resident%20Person%20-%20EN%20-%2008%2010%202023.pdf).
 
-Many treaties (especially those involving developing countries like India, Brazil, and countries in Africa/Asia) include a **service PE** provision:
+The UAE federal corporate-tax start and lack of a general wage tax do not decide a current freelancer's obligations. Do not repeat the old conclusion that PE is "irrelevant" or practically inconsequential below the taxable-income band.
 
-> An enterprise shall be deemed to have a PE if it furnishes services through employees or other personnel in the other country, if such activities continue for a period exceeding **183 days** (or a shorter period in some treaties) within any 12-month period.
+#### Germany
 
-**Service PE Threshold by Treaty Type**  _(UN Model Tax Convention, Art 5(3)(b))_
+Domestic AO§12 defines a Betriebsstätte as a fixed business facility/installation serving the enterprise and lists specific places. Its construction/assembly branch covers the specified single, concurrent or uninterrupted successive works lasting **more than six months**. That is a **domestic AO branch**, not a universal German treaty threshold or a rule that every desk held for that period creates a PE. Check the actual bilateral PE, source-income and independent-services provisions. [AO§12, particularly sentence2 no8(a)-(c)](https://www.gesetze-im-internet.de/ao_1977/__12.html).
 
-| Treaty Type | Service PE Threshold | Countries Using This |
-| --- | --- | --- |
-| OECD Model (standard) | No service PE provision | Most developed-country treaties |
-| UN Model | 183 days in 12 months | India, Brazil, many developing countries |
-| India treaties | 90 days in many treaties | India-specific (see Step 5) |
-| US domestic law | Any day of presence may count ("effectively connected income") | US -- see Step 5 |
+#### United Kingdom
 
-## Step 4: Remote Work and PE [T1]
+Distinguish an individual from a company. ITTOIA2005§6(2)-(3) charges a nonresident's UK trade/profession profits from the UK trade or UK part of a trade, subject to the applicable treaty; it does not impose a universal domestic PE requirement on every individual freelancer. CTA2009§5 provides the corporate territorial charge, including the nonresident trading-through-PE limb and separate land/property limbs. A UK office or extended client-premises use needs factual/treaty analysis, not a generic "standard OECD, no servicePE" assumption. [ITTOIA§6](https://www.legislation.gov.uk/ukpga/2005/5/section/6); [CTA§5](https://www.legislation.gov.uk/ukpga/2009/4/section/5).
 
-### The Core Question
+#### Australia
 
-**Does working remotely from your home country for a foreign client create a PE in the client's country?**
+Obtain the person's domestic residence/source position and actual treaty branch. The Australia-India service and independent-service provisions in the table demonstrate why an assumed "standard OECD" or generic3-month risk label is insufficient. The original India example is preserved and corrected below; no Australian domestic tax computation or universal no-filing conclusion is supplied. [Official ATO Australia-India synthesis arts5 and14](https://www.ato.gov.au/law/view/pdf/mli/india_c1.pdf).
 
-### Answer: Generally NO [T1]
+#### Singapore
 
-**Answer: Generally NO factor analysis**
+IRAS says each DTA has its own PE definition. Its nonresident-company services guidance distinguishes work in Singapore, remote electronic services from outside, treaty business-profit relief and special service articles; an individual professional may instead use an independent-services article. In its UK-company example, a certificate of residence and payer FormIR37 filing remain relevant even where treaty relief removes WHT. Do not turn "business-friendly" into a legal short-visitor exemption or infer an individual's treatment from a company's example. [IRAS nonresident-company services / DTA relief / professional-services FAQ](https://www.iras.gov.sg/taxes/withholding-tax/payments-to-non-resident-company/payments-that-are-subject-to-withholding-tax).
 
-| Factor | Analysis |
-| --- | --- |
-| Fixed place of business | The freelancer's office is in their HOME country, not the client's country. No fixed place exists in the client's country. |
-| Physical presence | The freelancer does not travel to the client's country. No presence = no PE. |
-| Dependent agent | The freelancer is not an agent of the client and does not conclude contracts in the client's country. |
-| Conclusion | **Pure remote work from the freelancer's home country does NOT create a PE in the client's country.** |
+The original reference to the Income Tax Act§2 domestic PE definition remains a research item because the current official statute page did not open. No domestic definition is invented from the Model. The IRAS paragraphs above are the bounded authority guidance actually read.
 
-### Exceptions / Risks [T2]
+### Step6. Manage actual exposure, not appearances [T2]
 
-**Exceptions / Risks scenario table**
+| Original strategy | Safe use and limit | Official source |
+|---|---|---|
+| Work remotely from home | Record actual work state and all people/premises/agents; foreign invoicing alone is not protection and the home/work state may have its own claim | OECD art 5, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Limit travel | Monitor cumulative actual treaty periods and recurrence. "Under2 weeks" is not a legal safe harbour | Art 5, Commentary5 paras28-34, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Avoid a dedicated office/desk | Check effective disposal of meeting rooms, hotels or co-working places too; a name or lack of lease does not remove actual facts | Art 5(1), Commentary5 paras6-18, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Do not bind the client / contract in own name | Review principal contract-making roles and the relevant property/service contracts too; own-name signing does not clear another PE branch | Art 5(5)-(8), https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Keep activity preparatory/auxiliary | Record what is actually done; planning, requirements gathering and administration are not automatically auxiliary, and anti-fragmentation applies | Art 5(4)-(4.1), https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| Track cumulative days | Keep calendar, fiscal/tax year and rolling-period records as the applicable clause requires; employment and freelancer tests differ | Art 15, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf; specific treaty table above |
+| Home contract/invoice/registration | These are evidence of the real arrangement, not a defence against business actually conducted through a foreign place or agent | OECD arts5,7, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
 
-| Scenario | PE Risk Level | Notes |
-| --- | --- | --- |
-| 100% remote, never visits client's country | **None** | Clearly no PE |
-| Visits client's country 1-2 times/year for meetings (< 2 weeks total) | **Very low** | Preparatory/auxiliary, temporary visits |
-| Visits client's country regularly, 1-2 days/month | **Low** | No fixed place, but pattern of presence may attract scrutiny in aggressive jurisdictions |
-| Works at client's office 1-2 months/year | **Medium** | Approaching fixed place + permanence. Check treaty threshold. [T2] |
-| Has a dedicated desk at client's office, visits 3+ months/year | **High** | Likely meets fixed place + permanence + business carried on. PE probable. [T2] |
-| Relocates to client's country for 6+ months | **Very high** | Almost certainly creates PE (and likely tax residency shift). [T3] |
+### Step7. If PE may exist [T3]
 
-## Step 5: Country-Specific PE Thresholds and Rules [T2]
+Engage a qualified professional for the source and residence states. Assemble the evidence needed to determine local registration/tax identification, returns, attributable-profit tax, treaty exemption/credit and any refund/MAP process. Do not promise every country grants a credit: the actual relief article may use exemption, credit, switching or other conditions. [OECD arts7,23A-B,25](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf).
 
-### United States [T2]
+Preserve the original six consequence topics as separate checks: registration/tax number; local return; income/corporate charge; residence relief; separate VAT/GST analysis; and prior-period penalties/interest/disclosure. No local VAT registration or penalty mitigation is automatically established by an income-tax PE, and each needs the relevant country law. US return obligations can exist even with treaty no-PE protection, as described above. [IRS filing guidance](https://www.irs.gov/taxtopics/tc851), https://www.irs.gov/instructions/i1120f.
 
-**United States rules table**
+Profit attribution requires the actual treaty and professional analysis. Current Model art 7 looks to a separate independent enterprise, functions, assets and risks; art 7(4) preserves separate income articles. Do not mechanically allocate by foreign days or customer revenue. Keep days, revenue and functions as evidence for the professional, **not an unsupported attribution formula**. The prohibition on computing PE profit attribution remains; the worked CT figures below assume taxable income already professionally established. [OECD art 7](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf).
 
-| Rule | Detail |
-| --- | --- |
-| Domestic law | US taxes foreign persons on "effectively connected income" (ECI) -- income connected with a US trade or business. Even a single day of business activity in the US COULD create ECI. |
-| Treaty override | Most US treaties include an Art 5 PE definition. Without a PE, business profits are exempt. |
-| Key threshold | OECD-standard 183-day rule for employees; no specific service PE for independent contractors under most US treaties. BUT: US domestic law is aggressive -- if no treaty exists, any US-source business income may be taxed. |
-| Form required | If PE exists: file Form 1120-F (corporations) or Form 1040-NR (individuals). |
-| Practical risk for freelancers | A freelancer who works entirely remotely from outside the US for a US client has NO PE risk. A freelancer who works on-site at a US client's office for extended periods may create a PE. |
+## Boundary and exception table
 
-### India [T2]
+| Original edge case | Correct response | Official source |
+|---|---|---|
+| EC1: Portugal3 months, Thailand3 months, Bali3 months; US/UK/Australian customers | Identify each actual work state and applicable residence/source/treaty branches. Nine months' travel and customer locations do not clear any one state. All named locations remain a professional multi-country task; no national liability is established here | OECD arts4-5,7; Model limitation, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| EC2: subcontractor at foreign client's premises6 months | Test the freelancer enterprise's disposal/fixed-place and any personnel/services branch, plus agency conduct. Lack of signature authority does not clear fixed-place/services PE or the current Model principal-role branch | OECD art 5, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf; actual services treaty required |
+| EC3: badge, dedicated desk and laptop for2-month project | Inspect actual disposal/activity, intended duration, recurrence and business nature. Neither the equipment nor the two-month period alone determines PE | Art 5(1), Commentary5 paras6-18/28-34, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+| EC4: engineer supervising construction10 months | Determine the actual supervisory/construction or other service/fixed-base branch. The Model's construction threshold above cannot be assumed for all supervision or actual treaties; the old6-month bilateral possibility must be checked in the actual clause | Art 5(3), Commentary5 paras52-55, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf; actual treaty required |
+| EC5: UAE office8 months serving local clients / "no income tax" countries | Apply UAE business/turnover/taxable-income and PE conditions above; do not clear tax or returns from the office duration or a general no-personal-tax slogan. The old Bahamas/Cayman comparison remains unconfirmed, not national advice | FTA CTGTNP1 and CTGNRP1 scopes above, https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf, https://tax.gov.ae/DataFolder/Files/Guides/CT/Taxable%20Non-Resident%20Person%20-%20EN%20-%2008%2010%202023.pdf |
 
-**India rules table**
+## Worked cases
 
-| Rule | Detail |
-| --- | --- |
-| Domestic law | India taxes non-residents on income that "accrues or arises in India." Services performed in India trigger Indian tax. |
-| Treaty provision | Many Indian treaties include a **90-day service PE** (shorter than the standard 183 days). India-US treaty: service PE at 90 days in a fiscal year. India-UK treaty: 90 days. |
-| Key threshold | 90 days in many treaties (check specific treaty). |
-| Practical risk | A freelancer who visits India for a project exceeding 90 days in a year will likely trigger a service PE. Remote work from outside India: no PE. |
-| Note | India also imposes WHT on service fees (see `withholding-tax-matrix.md`), which is SEPARATE from PE. WHT applies even without PE. |
+### Original five factual tests, retained with corrections
 
-### United Arab Emirates [T1]
+| Original facts | Source-bounded result and handoff | Official source |
+|---|---|---|
+|1. UK freelancer works100% from London for US client, never visits US | Assume a non-US person, no US trade/business, premises/personnel/agent or other relevant US income. Mere US payer does not create Model PE; IRS service-source rule points to where work is performed. The old categorical no-return/no-WHT result is not a clearance without the full facts and applicable rules | OECD art 5, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf; IRS https://www.irs.gov/individuals/international-taxpayers/source-of-income-personal-service-income, https://www.irs.gov/taxtopics/tc851 |
+|2. Maltese developer visits German office5 days twice/year,10 total, meetings/planning, no dedicated desk | The arithmetic is5×2=10 days. Under the Model-style facts, examine actual disposal, recurrence and activities before concluding; short visits do not automatically establish preparatory/auxiliary status. Actual Malta-Germany entitlement/article and German filing position are not confirmed here | Art 5, Commentary5 paras6-18/28-34, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf; AO§12, https://www.gesetze-im-internet.de/ao_1977/__12.html |
+|3. Australian consultant works100 days at Indian client | The old assumed90-day Australia-India services PE is corrected: its services branch above usesmore than 183 days/any12 months, while a qualifying individual's professional-services article has its own fixed-base or≥183-day year-of-income branch.100 days does not meet those cited presence thresholds, but an available fixed base, other PE or special income article may matter. No automatic Indian return/tax/credit conclusion follows | Australia-India arts5(3)(a),12,14, https://www.ato.gov.au/law/view/pdf/mli/india_c1.pdf |
+|4. French designer uses dedicated desk/pass4 days/week for4 months in Amsterdam | These facts need disposal/permanence/activity and actual France-Netherlands treaty analysis. The Model has no automatic4-month threshold or medium-high category. No country-pair PE decision is supplied without its authentic/effective text | Model art 5 and Commentary5 paras6-18/28-34, https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf |
+|5. Indian freelancer uses Dubai office6 months/year for UAE/Indian customers | Determine business/treaty residence, UAE PE where relevant, aggregate UAE-business turnover, exclusions and taxable income. Neither the office nor taxable profit below the ordinary band removes all compliance. Indian residence/credit and actual India-UAE treaty remain separate unconfirmed questions | FTA CTGTNP1 sections3.3-3.5/3.11/6.1, https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf; Decision116/2022, https://mof.gov.ae/wp-content/uploads/2023/02/Cabinet-Decision-No-116-of-2022-on-CT-Article-3-Threshold-1.pdf |
 
-**United Arab Emirates rules table**
+### Numerical caseA: nil ordinary CT can coexist with compliance
 
-| Rule | Detail |
-| --- | --- |
-| Domestic law | UAE federal corporate tax (effective June 2023) applies to businesses with a PE or nexus in the UAE. BUT: 0% rate for taxable income up to AED 375,000; 9% thereafter. No personal income tax. |
-| Treaty provision | UAE has treaties with many countries. PE defined per OECD model. |
-| Practical risk | **Minimal.** Even if PE exists, the tax rate is 0% (below AED 375,000) or 9%. For a freelancer earning below the threshold, PE is irrelevant. No personal income tax in UAE. |
+Assume a natural person is within UAE business scope, relevant annual turnover is **AED1,200,000**, and a professional has already established **AED350,000 taxable income**. Assume ordinary CT treatment, no exempt/free-zone or other special regime, and no elected relief affecting this example. The turnover exceeds the natural-person scope threshold in the UAE section; taxable income is below the separate ordinary tax band. Ordinary CT is zero. This does **not** make PE, registration or returns irrelevant. The turnover, tax-band conditions and exact rates are sourced above; the supplied profit is not a PE attribution calculation. [FTA CTGTNP1 sections3.3-3.5/3.11/6.1](https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf); [Decision116/2022 arts2-3](https://mof.gov.ae/wp-content/uploads/2023/02/Cabinet-Decision-No-116-of-2022-on-CT-Article-3-Threshold-1.pdf).
 
-### Germany [T2]
+```oa-check
+name: UAE natural person in scope, established taxable income below ordinary band
+inputs:
+  turnover: 1200000
+  scope_threshold: 1000000
+  taxable_income: 350000
+  ordinary_band: 375000
+  excess_rate: 0.09
+steps:
+  turnover_above_threshold: turnover - scope_threshold
+  taxable_excess: max(0, taxable_income - ordinary_band)
+  ordinary_ct: taxable_excess * excess_rate
+expected:
+  turnover_above_threshold: 200000
+  taxable_excess: 0
+  ordinary_ct: 0
+```
 
-**Germany rules table**
+### Numerical caseB: charge only on the taxable-income excess
 
-| Rule | Detail |
-| --- | --- |
-| Domestic law | Non-residents are taxed on income from a PE in Germany (Betriebsstätte). |
-| Treaty provision | Standard OECD Art 5 PE. No service PE in most German treaties. |
-| Key threshold | 6 months for construction PE. No specific day count for services in OECD-model treaties. |
-| Practical risk | Low for remote freelancers. Medium if working on-site in Germany for extended periods. A desk at a German client's office for 6+ months = likely PE. |
+Keep the same in-scope turnover and ordinary-regime assumptions, but use professionally established taxable income of **AED400,000**. The ordinary band leaves an excess of **AED25,000**, so ordinary CT is **AED2,250**. The rate is not charged on the whole turnover or the whole taxable profit; other residence-state relief is not computed. This illustrates the two figures previously conflated in the old UAE risk conclusion. [Same FTA scope guide](https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf); [Decision116/2022 arts2-3](https://mof.gov.ae/wp-content/uploads/2023/02/Cabinet-Decision-No-116-of-2022-on-CT-Article-3-Threshold-1.pdf).
 
-### United Kingdom [T2]
+```oa-check
+name: UAE natural person, established taxable income above ordinary band
+inputs:
+  turnover: 1200000
+  scope_threshold: 1000000
+  taxable_income: 400000
+  ordinary_band: 375000
+  excess_rate: 0.09
+steps:
+  turnover_above_threshold: turnover - scope_threshold
+  taxable_excess: max(0, taxable_income - ordinary_band)
+  ordinary_ct: taxable_excess * excess_rate
+expected:
+  turnover_above_threshold: 200000
+  taxable_excess: 25000
+  ordinary_ct: 2250
+```
 
-**United Kingdom rules table**
+## When to refuse or refer
 
-| Rule | Detail |
-| --- | --- |
-| Domestic law | Non-residents taxed on UK-source trading income if they have a PE in the UK. |
-| Treaty provision | Standard OECD Art 5. No service PE in most UK treaties. |
-| Practical risk | Low for remote work. Medium-high if freelancer has a UK office or works at client's premises for extended periods. |
+1. Never dismiss significant foreign working time as nothing to worry about; assemble facts and obtain the actual law.
+2. Never compute PE profit attribution here. Professional analysis of functions, assets, risks and the actual treaty is required.
+3. Never assume a treaty exists or the person qualifies for it; verify authentic/effective terms and entitlement.
+4. Never apply an employment183-day or an assumed India90-day rule universally. Keep the actual taxpayer, article, inequality and period together.
+5. Never ignore domestic law or assert a universal anti-avoidance override of treaty protections. Identify both domestic charge/anti-abuse and actual treaty limitation/entitlement.
+6. Never tell a freelancer that remote service to a CountryA customer while physically in CountryB clears risk inB. Analyse the actual work state and all relevant persons/places.
+7. Never conflate PE with WHT. A special service/royalty article or domestic rule may impose withholding without PE; PE does not necessarily imply a particular withholding charge.
 
-### Australia [T2]
+Refer unresolved classification, actual fixed-place/agency findings, multi-country cases and established PE to qualified source/residence-state professionals. Load `withholding-tax-matrix.md`, `non-eu-export-services.md` and `oecd-model-treaty-defaults.md` for their separate jobs, preserving each one's source/period limits. They do not replace authentic treaty/domestic text.
 
-**Australia rules table**
+## Filing and payment
 
-| Rule | Detail |
-| --- | --- |
-| Domestic law | Non-residents taxed on Australian-source income. A PE creates a tax presence. |
-| Treaty provision | Standard OECD Art 5 in most treaties. Some treaties (e.g., Australia-India) include service PE at 183 days. |
-| Practical risk | Low for remote. Medium if on-site 3+ months. |
+Prepare a country-specific compliance handoff: person/entity and residence; actual in-force treaty/protocol/MLI position; activity and location dates; premises/disposal and personnel/agency evidence; income classification; relevant withholding already paid; professional attribution; return/registration/refund/disclosure obligations; and prior-period exposure. Obtain exact national forms, fields and deadlines from their current instructions rather than inventing a global filing rule.
 
-### Singapore [T1]
+The specific US routing above preserves Form 1040-NR for individuals, Form 1120-F for corporations and possible Form 8833 disclosure, including no-PE treaty/protective-return cases. Follow the correct year's instructions. In the UAE natural-person cases, registration and return questions follow the separate business-scope tests; a zero ordinary calculation is not an exemption from all procedure. [IRS Topic 851](https://www.irs.gov/taxtopics/tc851), [1120-F instructions](https://www.irs.gov/instructions/i1120f); [FTA CTGTNP1 sections3.3/6.1](https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf).
 
-**Singapore rules table**
+## Completion checklist
 
-| Rule | Detail |
-| --- | --- |
-| Domestic law | Non-residents taxed on Singapore-source income. PE defined under s2 of the Income Tax Act. |
-| Treaty provision | Standard OECD Art 5. Some treaties include service PE. |
-| Practical risk | Low. Singapore is generally business-friendly and does not aggressively pursue PE claims against short-term visitors. |
+- Actual enterprises, work states, treaty residence/entitlement, effective treaty/protocol/MLI versions and domestic-law questions identified.
+- Fixed-place/disposal/permanence, agency, services, independent-services and construction branches assessed separately where applicable.
+- Every presence total uses its actual inequality and relevant period; recurring/connected activity and special income exclusions checked.
+- Remote-location facts and commercial reasons recorded; neither payer location nor a short-visit label used as universal clearance.
+- Source/residence professionals receive attribution, return, withholding, VAT/GST and prior-period questions with supporting records.
+- UAE business turnover and taxable income kept distinct; calculations below do not attribute PE profit or settle foreign relief.
 
-## Step 6: How to Avoid PE [T1]
+### Disclaimer
 
-**How to Avoid PE strategies table**
+This Guide is for information and computation, not tax, legal or financial advice. Open Accountants and its contributors accept no liability for errors, omissions or outcomes from its use. PE depends on actual facts and the applicable bilateral treaty/domestic law; obtain qualified international tax review before acting. A licensed accountant's review can be requested through https://openaccountants.com.
 
-| Strategy | How It Helps |
-| --- | --- |
-| **Work remotely from your home country** | No physical presence = no PE. This is the strongest protection. |
-| **Limit travel to the client's country** | Keep visits short (under 2 weeks) and infrequent. Avoid patterns of regular presence. |
-| **Do NOT have a fixed office/desk in the client's country** | Use meeting rooms, hotel lobbies, co-working spaces for short visits. Do not accept a dedicated desk. |
-| **Do NOT sign contracts on behalf of the client** | Sign only in your own name, from your own country. Avoid authority to bind the client. |
-| **Keep visits preparatory/auxiliary** | Meetings, planning sessions, and requirement gathering are preparatory. Do not deliver core services on-site if avoidable. |
-| **Monitor cumulative days** | Track days spent in each country per calendar year (and per 12-month rolling period for treaties using that measure). |
-| **Contract structure** | Contract directly with the client from your home country. Invoice from your home country. Maintain your home country business registration. |
+## Sources
 
-## Step 7: What Happens If PE IS Triggered [T3]
+| Source, edition and exact actual reading scope | Official URL | Read on |
+|---|---|---|
+| OECD Model as at18November 2025, full edition published 2026: arts1-5,7,15,23A-B,25,29; Commentary5 paras6-18/28-34/52-55, deleted14 opening and Commentary15 paras4-6.2. Actual official PDF previously recovered; no whole-book read claimed | https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf | 2026-11-15; selected operative neighbours re-read 2026-11-16 |
+| OECD 2025 update, Commentary5 paras44.1-44.21 including examplesA-E; actual official PDF | https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/11/the-2025-update-to-the-oecd-model-tax-convention_c7031e1b/5798080f-en.pdf | 2026-11-15; substantive44.2-44.21 re-read 2026-11-16 |
+| UN 2021 arts5 and14, actual native operative clauses with adjacent provisions; historical comparison only | https://desapublications.un.org/file/914/download | 2026-11-16 |
+| IRS current personal-service source guidance, general rule/allocation/neighbouring exceptions | https://www.irs.gov/individuals/international-taxpayers/source-of-income-personal-service-income | 2026-11-16 |
+| IRS Topic 851, filing section including no-PE treaty/disclosure paragraph; residence detail not used as a PE test | https://www.irs.gov/taxtopics/tc851 | 2026-11-16 |
+| IRS Form 1120-F instructions 2025, Who Must File / Treaty or Code exemption / Protective return and neighbouring exceptions. Latest actual published edition read, not a claim of 2026 box instructions | https://www.irs.gov/instructions/i1120f | 2026-11-16 |
+| India-US authentic treaty, full art 5 and art 15, plus Protocol I Ad Article 5 in full and following Protocol II-III neighbours; service-exclusion reference to art 12 is a classification gate, not a verified technical-fee computation | https://www.irs.gov/pub/irs-trty/india.pdf | 2026-11-16 |
+| HMRC UK-India official MLI synthesis, art 5 with modification/agent neighbours and independent-services art 15; effective matching/authentic text required for a live case | https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force | 2026-11-16 |
+| ATO Australia-India official MLI synthesis, arts5(1)-(4) and14; native text actually read through web. Ordinary direct download and screenshot returned403; no PDF image/whole-document read claimed. Clauses cross-read in India's official synthesis as corroboration | https://www.ato.gov.au/law/view/pdf/mli/india_c1.pdf | 2026-11-16 |
+| FTA CTGTNP1 (published 2023) sections3.3-3.5,3.11 and6.1; actual PDF plus current natural-person scope page below. Source edition is not a new 2026 law | https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf | 2026-11-16 |
+| Current FTA natural-person scope page, business-turnover threshold and excluded income categories | https://www.tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/basis.of.taxation.natural.person.aspx | 2026-11-16 |
+| UAE Decision116/2022, complete operative arts1-5, particularly ordinary bands and artificial-splitting condition | https://mof.gov.ae/wp-content/uploads/2023/02/Cabinet-Decision-No-116-of-2022-on-CT-Article-3-Threshold-1.pdf | 2026-11-16 |
+| FTA CTGNRP1 (published 2023), sections7.1-7.2.1 and7.2.3.7, including the printed-page31 first-Tax-Period transitional paragraph and adjacent project example/subcontracting scope, with7.2.4.7 anti-fragmentation neighbour. No whole-guide read claimed | https://tax.gov.ae/DataFolder/Files/Guides/CT/Taxable%20Non-Resident%20Person%20-%20EN%20-%2008%2010%202023.pdf | 2026-11-16 |
+| German AO§12, complete domestic definition/list/construction-aggregation alternatives in German; no bilateral threshold inferred | https://www.gesetze-im-internet.de/ao_1977/__12.html | 2026-11-16 |
+| UK CTA2009§5 complete territorial charge and neighbour property/land exceptions; ITTOIA2005§6 complete individual/profession/vocation territorial charge | https://www.legislation.gov.uk/ukpga/2009/4/section/5; https://www.legislation.gov.uk/ukpga/2005/5/section/6 | 2026-11-16 |
+| IRAS nonresident-company services, DTA-relief and independent-professional FAQ scopes; Singapore-UK company documentation example and stated treaty exceptions, not a generic national PE exemption | https://www.iras.gov.sg/taxes/withholding-tax/payments-to-non-resident-company/payments-that-are-subject-to-withholding-tax | 2026-11-16 |
 
-**This section is entirely T3. If PE is triggered, the freelancer MUST engage a qualified tax professional in BOTH countries. Do not attempt to self-resolve.**
+Not yet confirmed: the laterUN 2025 operative edition (official PDF403); current Singapore ITA§2 native definition (official statute403: https://sso.agc.gov.sg/Act/ITA1947); India's complete 2026 domestic-source/business-connection regime; Germany's current domestic nonresident income-tax charging provisions for income from a German PE (the read AO§12 is a definition, not verification of that separate charging rule); the actual Malta-Germany and France-Netherlands treaty/filing outcomes in the preserved tests; Australia domestic residence/source and all unlisted actual treaty branches; India-UAE relief/residence/filing; Bahamas/Cayman Islands' current business/other-tax consequences; each unlisted state's local registration, VAT/GST and penalty/disclosure law. No blanket PE, WHT, filing or relief clearance is supplied for those questions.
 
-### General Consequences
-
-**General Consequences table**
-
-| Consequence | Detail |
-| --- | --- |
-| **Register for tax in the PE country** | File with the local tax authority. Obtain a tax identification number. |
-| **File a local tax return** | Report profits attributable to the PE. Profit attribution follows the "separate entity" principle (OECD Art 7). |
-| **Pay local income/corporate tax** | On the portion of profits attributable to activities performed through the PE. |
-| **Claim treaty credit in home country** | The home country taxes worldwide income but grants a credit for tax paid in the PE country under the treaty (Art 23A or 23B). Avoid double taxation. |
-| **VAT/GST registration may be required** | PE may trigger VAT/GST registration in the PE country (separate from income tax). |
-| **Potential penalties for late registration** | If PE existed for prior periods and was not reported, penalties and interest may apply. Voluntary disclosure may mitigate penalties. |
-
-### Profit Attribution to PE [T3]
-
-- **Separate and independent enterprise principle** — Under OECD Art 7, the profits attributable to a PE are those that the PE would have earned if it were a **separate and independent enterprise** performing the same functions, using the same assets, and assuming the same risks. **This is complex.** For a freelancer, the attribution might be based on: - Days worked in the PE country vs total days worked - Revenue from clients in the PE country - Functions performed at the PE **Escalate to a tax professional. Do not compute.**  _(OECD Model Tax Convention, Article 7)_
-
-## PROHIBITIONS
-
-1. **NEVER** tell a freelancer that PE is "nothing to worry about" when they are spending significant time in a foreign country. PE risk is real and the consequences are material.
-2. **NEVER** attempt to compute profit attribution to a PE. This is T3 material requiring professional input.
-3. **NEVER** assume that a treaty exists between two countries. Verify.
-4. **NEVER** assume that the OECD 183-day threshold applies universally. Many treaties (especially UN-model treaties with developing countries) use 90 days or other thresholds.
-5. **NEVER** ignore domestic law. Even if a treaty protects against PE, domestic anti-avoidance rules may override treaty provisions in some countries.
-6. **NEVER** advise a freelancer that remote work from Country A while physically present in Country B does not create risk in Country B. Physical presence in Country B creates risk in Country B, regardless of where the client is.
-7. **NEVER** conflate PE risk with WHT. A country can impose WHT on service fees (see `withholding-tax-matrix.md`) WITHOUT PE, and PE can exist WITHOUT WHT.
-
-## Edge Cases
-
-### EC1 -- Digital nomad working from multiple countries [T3]
-
-**Situation:** A freelancer works from Portugal for 3 months, then Thailand for 3 months, then Bali for 3 months, serving clients in the US, UK, and Australia.
-**Resolution:** Each country where the freelancer is physically present may assert taxing rights on income earned while present there, depending on domestic law and treaty provisions. This is a complex multi-jurisdiction question involving tax residency, PE, and source rules in each country. Escalate to an international tax professional. Do not advise.
-
-### EC2 -- Freelancer's employee works at client's premises [T2]
-
-**Situation:** A freelancer hires a subcontractor who works on-site at the client's office in another country for 6 months.
-**Resolution:** Under Art 5(5)-(6) and the service PE provisions in some treaties, the subcontractor's presence may create a PE for the freelancer's enterprise. The key question is whether the subcontractor habitually exercises authority to conclude contracts. If they simply perform technical work without contract authority, PE risk is lower but service PE thresholds still apply. Flag for review.
-
-### EC3 -- Client provides equipment (laptop, desk, badge) [T2]
-
-**Situation:** A freelancer visits a client's office and is given a badge, a desk, and a company laptop for the duration of a 2-month project.
-**Resolution:** Having a dedicated desk and badge increases "fixed place" risk. If the desk is available for the freelancer's exclusive use on a continuing basis, this weighs toward PE. However, 2 months alone may not meet the "permanence" requirement in many jurisdictions. The overall picture matters. Flag for review.
-
-### EC4 -- Construction site supervision abroad [T2]
-
-**Situation:** A freelance engineer supervises a construction project in another country for 10 months.
-**Resolution:** OECD Art 5(3) provides a specific construction PE rule: a building site or construction/installation project constitutes a PE only if it lasts more than 12 months (some treaties use 6 months). At 10 months, this may or may not exceed the treaty threshold. Check the specific treaty. Flag for review.
-
-### EC5 -- Country with no income tax (UAE, Bahamas) [T1]
-
-**Situation:** A freelancer creates a PE in the UAE (e.g., has an office there for 8 months serving local clients).
-**Resolution:** UAE corporate tax applies at 0% for income up to AED 375,000 and 9% above that. For small freelancers, the tax impact may be negligible. There is no personal income tax. PE risk is technically present but practically inconsequential for low earners. For larger operations, 9% corporate tax applies and filing is required. No personal income tax countries (e.g., Bahamas, Cayman Islands) have no PE consequence from an income tax perspective (but other regulatory obligations may exist).
-
-## Test Suite
-
-### Test 1 -- Pure remote, no travel
-
-**Input:** UK freelancer works 100% remotely from London for a US client. Never visits the US.
-**Expected:** No PE risk in the US. No filing obligation in the US. US does not withhold on service fees.
-
-### Test 2 -- Short business visits
-
-**Input:** Maltese developer visits client's office in Germany for 5 days twice a year (10 days total). No dedicated desk. Meetings and planning only.
-**Expected:** No PE risk. Visits are short, temporary, and preparatory/auxiliary. No filing obligation in Germany.
-
-### Test 3 -- Extended on-site, India (90-day service PE)
-
-**Input:** Australian consultant works on-site at an Indian client's office for 100 days in a 12-month period. India-Australia treaty includes a 90-day service PE.
-**Expected:** Service PE likely triggered (100 days > 90-day threshold). Flag T2/T3. Australian consultant should engage an Indian tax advisor. Must file Indian return and pay Indian tax on attributable profits. Claim credit in Australia.
-
-### Test 4 -- Dedicated desk at client's office, 4 months
-
-**Input:** French designer works at a Dutch client's Amsterdam office 4 days/week for 4 months. Has a dedicated desk and building pass.
-**Expected:** PE risk is MEDIUM-HIGH. Fixed place (dedicated desk), permanence (4 months), business carried on through it (core design work). Under the France-Netherlands treaty (OECD model), this may constitute a PE. Flag T2. Professional review required.
-
-### Test 5 -- UAE client, no income tax
-
-**Input:** Indian freelancer has a fixed office in Dubai, works there 6 months/year serving UAE and India clients.
-**Expected:** PE exists in UAE. UAE corporate tax applies (0% up to AED 375,000, 9% above). Minimal tax impact for small freelancers. No personal income tax. Indian tax on worldwide income still applies; claim credit for any UAE tax paid.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. Permanent establishment analysis is inherently fact-specific and depends on the precise terms of the applicable bilateral tax treaty. All PE assessments must be reviewed by a qualified international tax professional before acting upon.
-
-If you would like a licensed accountant to review your PE risk, visit [openaccountants.com](https://openaccountants.com) and log in to request a professional review.
+Unconfirmed legacy generalisations retained only as research items, **not usable law or risk ratings**: US "one day" ECI and "any US-source business income" tax assertions; "most" US/German/UK/Australian treaties following the Model or having no servicesPE; "many Indian treaties90 days" and Brazil/Africa/Asia service-PE prevalence; the remote-visit labels none/very-low/low/medium/high/very-high attached to1-2 meetings,2 weeks,1-2 days/month,1-2 months,3+months and6+months; Germany "dedicated desk6+months=likelyPE"; Australia "3+months=medium"; Singapore's claimed non-aggressive enforcement; the old universal domestic anti-avoidance override; voluntary disclosure always mitigating penalties; Bahamas/Cayman "no PE income-tax consequence"; and the UAE claim that low profit/no personal income tax makes PE irrelevant. The UAE corporate-tax commencement inJune 2023 is historical background from the old Guide, not proof of a current person's exemption. Corrections and conditional examples above replace the old unsupported outcomes; no unconfirmed value may be used in advice.
