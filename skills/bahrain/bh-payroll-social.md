@@ -3,8 +3,8 @@ name: bh-payroll-social
 description: "Bahrain private-sector payroll screening for 2026, including sourced employee pension/unemployment components, work-injury base rate, wage cap, EOSB and payment penalties. Holds employer pension phase-in implementation and the new October 2026 minimum-base amount pending source confirmation."
 jurisdiction: BH
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.5
+last_updated: 2026-11-17
+version: 0.6
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,7 +12,7 @@ domain: payroll
 type: computation
 ---
 
-# Bahrain Payroll and Social Insurance v0.5
+# Bahrain Payroll and Social Insurance v0.6
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -104,4 +104,4 @@ expected:
 | Unemployment Law, consolidated Arabic arts. 1 to 6 and 8(E) read | https://www.lloc.gov.bh/FullAr/L7806.docx | 2026-11-01 |
 | Decision 109/2023 and whole attached Regulation arts. 1 to 15 read | https://www.lloc.gov.bh/Legislation/HTM/RCAB10923 | 2026-11-01 |
 
-Not yet confirmed: exact 2026 employer pension phase-in implementation (therefore the inherited combined 18% employer rate is not executable); the former 17%/21% schedule; Cabinet amount for new art. 19 bis; other minimum wage/floor; current SIO online forms and WPS Resolution 68/2019 or enhanced 2026 procedure. Employee 7% pension plus 1% unemployment, employer base work injury 3%, and BHD 4,000 Social Insurance wage cap now have primary support; they are not blanket totals for every worker. Full predecessor text and exact destinations are preserved in [the country evidence](../../evidence/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.
+Not yet confirmed: exact 2026 employer pension phase-in implementation (therefore the inherited combined 18% employer rate is not executable); the former 17%/21% schedule; Cabinet amount for new art. 19 bis; other minimum wage/floor; current SIO online forms and WPS Resolution 68/2019 or enhanced 2026 procedure. Employee 7% pension plus 1% unemployment, employer base work injury 3%, and BHD 4,000 Social Insurance wage cap now have primary support; they are not blanket totals for every worker. Full predecessor text and exact destinations are preserved in [the country evidence](https://github.com/openaccountants/evidence/blob/main/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.

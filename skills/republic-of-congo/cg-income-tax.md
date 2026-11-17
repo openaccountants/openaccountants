@@ -5,15 +5,15 @@ jurisdiction: CG
 category: international
 tax_year: 2026
 tax_year_notes: "Initial 2026 enacted-law baseline; later 2026 currentness and filing procedures remain partial"
-last_updated: 2026-11-14
-version: 1.2
+last_updated: 2026-11-17
+version: 1.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Republic of Congo Personal and Business Income Tax v1.2
+# Republic of Congo Personal and Business Income Tax v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -130,6 +130,6 @@ expected:
 |---|---|---|
 | Finance Act 42-2025, official gazette special 3-2026. Enacted initial 2026 law: cover; art 5; art 47 replacement CGI 2–11,15–19,21,25,42,45–49,69–86A,86C–G,92–92E,93–99,102,104–110A,111C–116I,128–131(excerpts through part 6); amendments 374ter and VAT 24/29; state invoice rule 7.2.4; final arts 61–62. Focused provisions with neighbors, not all fiscal schedules or all 116pages read. | https://sgg.cg/JO/2026/congo-jo-2026-3-3.pdf | 2026-11-01 |
 
-Figure/rule quotations and source hashes: [country ledger](../../evidence/ledgers/republic-of-congo-draft-20261101/cg-income-tax.md). Every worked figure is conditional on the stated example facts.
+Figure/rule quotations and source hashes: [country ledger](https://github.com/openaccountants/evidence/blob/main/ledgers/republic-of-congo-draft-20261101/cg-income-tax.md). Every worked figure is conditional on the stated example facts.
 
 Not yet confirmed: Later 2026 amendments/currentness; operative IBA/annual multi-source salary deadlines and portal fields; forfait 5%/8% statutory chain and threshold; special foreign secondment 20% and old BNC 20% scope; full 116C special-share cases including malformed 116C(1)(b); current SMIG, social rates/ceilings, foreign credits and detailed investment gains. Every former topic is retained or routed to this hold in the old-topic map.

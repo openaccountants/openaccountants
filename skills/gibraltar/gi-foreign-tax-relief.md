@@ -5,8 +5,8 @@ description: >
 jurisdiction: GI
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
-version: "0.6"
+last_updated: 2026-11-17
+version: "0.7"
 sources:
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
     title: "UK–Gibraltar agreement, Articles 1, 4, 22, 28 and 29"
@@ -171,7 +171,7 @@ expected:
   exit_tax_base: 400000
 ```
 
-**Retained-PE boundary:** on the same charge assumptions, a second asset with market value £300,000 and tax value £150,000 remains effectively connected with a Gibraltar PE. It is excluded from this **tax-residence-transfer** charge by paragraph 18A(1)(c); do not add its £150,000 difference to the first asset's £400,000 exit base. That exclusion does not declare a later disposal tax-free. The [supplementary boundary control](../../evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/exit-controls.md) records the arithmetic after those asset classifications have been established. Negative-value cases, disputed valuations and overlapping adjustments are outside these illustrations.
+**Retained-PE boundary:** on the same charge assumptions, a second asset with market value £300,000 and tax value £150,000 remains effectively connected with a Gibraltar PE. It is excluded from this **tax-residence-transfer** charge by paragraph 18A(1)(c); do not add its £150,000 difference to the first asset's £400,000 exit base. That exclusion does not declare a later disposal tax-free. The [supplementary boundary control](https://github.com/openaccountants/evidence/blob/main/research/gibraltar-2026/ordinary-completion-2026-10-28/exit-controls.md) records the arithmetic after those asset classifications have been established. Negative-value cases, disputed valuations and overlapping adjustments are outside these illustrations.
 
 ## Ask the client first
 
@@ -189,6 +189,6 @@ expected:
 | [Income Tax Act 2010, 23 March 2026 consolidation](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf) | Complete section 37; paragraph 8A taxpayer/transfer definitions and complete paragraph 18A(1)–(10), printed pages 97–99, 190 and 202–204 | 2026-10-28 |
 | [UK–Gibraltar agreement, official text](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force) | Articles 1, 4, 22, 28 and 29 actually read for the full current quote ledger; earlier completed treaty reviews retained | 2026-10-28 |
 
-The [complete rule ledger and old-topics map](../../evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-foreign-tax-relief.md) and [independent country review records](../../evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/) identify the exact revisions checked, findings and bounded repair closure. Earlier reviews retain their stated scopes. This remains a source-cited draft; professional attestation is pending.
+The [complete rule ledger and old-topics map](https://github.com/openaccountants/evidence/blob/main/research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-foreign-tax-relief.md) and [independent country review records](https://github.com/openaccountants/evidence/tree/main/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/) identify the exact revisions checked, findings and bounded repair closure. Earlier reviews retain their stated scopes. This remains a source-cited draft; professional attestation is pending.
 
 Not yet confirmed: domestic relief claim/correction submission and foreign-currency conversion, assessed-but-unpaid tax and disputed source cases; actual exit-tax deferral applications, payment dates/amounts and interest treatment; the paragraph 8A asset-transfer-definition mismatch with 18A(1)(a)–(b), other asset-only/PE-business transfer applications, disputed/negative valuations and overlapping reliefs. Other treaty corridors and individual departures are not established by the corporate tax-residence example.

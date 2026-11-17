@@ -5,8 +5,8 @@ description: >
 jurisdiction: GI
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
-version: "0.13"
+last_updated: 2026-11-17
+version: "0.14"
 sources:
   - url: "https://www.legislation.gov.uk/uksi/2010/51"
     title: "Inheritance Tax (Qualifying Non-UK Pension Schemes) Regulations 2010, revised regulations 2–7 and Schedule"
@@ -77,7 +77,7 @@ domain: income-tax
 type: computation
 ---
 
-# Gibraltar individual income tax: ordinary assessment v0.13
+# Gibraltar individual income tax: ordinary assessment v0.14
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -398,7 +398,7 @@ Primary legislation and [self-employed payment guidance](https://www.gibraltar.g
 | IT1 for 2026 filing and period labels | [Official source](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/Tax_ReturnForm2026.pdf) | 2026-10-28 |
 | Current individual-return guidance and email instructions | [Official source](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Tax%20Returns/Tax%20Return%20Guidance%202026_.pdf) | 2026-10-28 |
 
-Earlier reads and completed review scopes remain recorded on their actual dates. On 28 October 2026 the writer read the additional ordinary provisions and public procedure pages recorded in the [full figure/rule ledger](../../evidence/research/gibraltar-2026/individual-completion-2026-10-28/ledgers/gi-individual-income-tax.md). The [legislature’s current allowance index](https://www.gibraltarlaws.gov.gi/legislations/income-tax-allowances-deductions-and-exemptions-rules-1992-405) still names the 23 March 2026 consolidation; its amendment table includes LN 2026/054 with commencement on that date. The writer has not recharacterised publication of the amendment on 26 March as a missing later version. The [fresh country review](../../evidence/research/gibraltar-2026/final-country-review-2026-10-28/review.md) and bounded repair closure record the exact revisions checked; professional attestation remains pending.
+Earlier reads and completed review scopes remain recorded on their actual dates. On 28 October 2026 the writer read the additional ordinary provisions and public procedure pages recorded in the [full figure/rule ledger](https://github.com/openaccountants/evidence/blob/main/research/gibraltar-2026/individual-completion-2026-10-28/ledgers/gi-individual-income-tax.md). The [legislature’s current allowance index](https://www.gibraltarlaws.gov.gi/legislations/income-tax-allowances-deductions-and-exemptions-rules-1992-405) still names the 23 March 2026 consolidation; its amendment table includes LN 2026/054 with commencement on that date. The writer has not recharacterised publication of the amendment on 26 March as a missing later version. The [fresh country review](https://github.com/openaccountants/evidence/blob/main/research/gibraltar-2026/final-country-review-2026-10-28/review.md) and bounded repair closure record the exact revisions checked; professional attestation remains pending.
 
 | Instrument | Official source | Read date |
 |---|---|---|
@@ -409,11 +409,11 @@ Earlier reads and completed review scopes remain recorded on their actual dates.
 | LN 2026/125, rules 2–3: read for the rules and figures this Guide cites from it | [Official source](https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-amendment-rules-2026-8467/download) | 2026-10-28 |
 | LN 2022/170, rules 2–3: read for the rules and figures this Guide cites from it | [Official source](https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-amendment-rules-2022-6610/download) | 2026-10-28 |
 
-The property/energy addition is v0.11 material outside the earlier f7d59d7c review. The [complete current ledger and topic map](../../evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/ledgers/gi-individual-income-tax.md) inherit the 60 accepted rule rows and their proof units unchanged and add 14 bounded source/limit rows. Its [separate independent review and closure records](../../evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/review.md) identify the exact revisions, findings and disposition; the prior review retains its exact scope. The [four conditional relief scenarios](../../evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/relief-controls.md) supplement the two main examples; they do not establish eligibility or actual tax saved.
+The property/energy addition is v0.11 material outside the earlier f7d59d7c review. The [complete current ledger and topic map](https://github.com/openaccountants/evidence/blob/main/research/gibraltar-2026/remaining-reliefs-2026-10-28/ledgers/gi-individual-income-tax.md) inherit the 60 accepted rule rows and their proof units unchanged and add 14 bounded source/limit rows. Its [separate independent review and closure records](https://github.com/openaccountants/evidence/blob/main/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/review.md) identify the exact revisions, findings and disposition; the prior review retains its exact scope. The [four conditional relief scenarios](https://github.com/openaccountants/evidence/blob/main/research/gibraltar-2026/remaining-reliefs-2026-10-28/relief-controls.md) supplement the two main examples; they do not establish eligibility or actual tax saved.
 
 ### Retained calculation controls
 
-Six original executable controls remain byte-exact in the [individual supplement](../../evidence/research/gibraltar-2026/individual-completion-2026-10-28/preserved-individual-controls.md), alongside the two main examples retained here. New independent scenarios are in the [ordinary-deduction controls](../../evidence/research/gibraltar-2026/individual-completion-2026-10-28/ordinary-deduction-controls.md). All source qualifications and original example prose remain in this Guide.
+Six original executable controls remain byte-exact in the [individual supplement](https://github.com/openaccountants/evidence/blob/main/research/gibraltar-2026/individual-completion-2026-10-28/preserved-individual-controls.md), alongside the two main examples retained here. New independent scenarios are in the [ordinary-deduction controls](https://github.com/openaccountants/evidence/blob/main/research/gibraltar-2026/individual-completion-2026-10-28/ordinary-deduction-controls.md). All source qualifications and original example prose remain in this Guide.
 
 Not yet confirmed: partial-year ABS/GIBS reference and eligibility; printed senior/dependant/special-home drafting questions; property/energy cross-scheme and claim interactions, the disabled-access certificate reference and social-insurance deduction authority; credit interactions and actual future-year authenticated fields/receipt. Current 2026 interim PDF filing instructions do not resolve those points.
 

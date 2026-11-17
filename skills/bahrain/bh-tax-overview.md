@@ -3,8 +3,8 @@ name: bh-tax-overview
 description: "Bahrain tax router for 2026: personal tax screening, hydrocarbon tax, DMTT, payroll/social insurance, VAT, transfer pricing and cross-border domain owners. Makes current-year procedural and source holds explicit."
 jurisdiction: BH
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.4
+last_updated: 2026-11-17
+version: 0.5
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,7 +12,7 @@ domain: income-tax
 type: situation-rules
 ---
 
-# Bahrain Tax Overview v0.4
+# Bahrain Tax Overview v0.5
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -94,4 +94,4 @@ expected:
 | DMTT Law, arts. 1 to 4 and 44 read with scope definitions | https://www.lloc.gov.bh/Legislation/HTM/L1124 | 2026-11-01 |
 | Social Insurance Law, arts. 1 to 4, 17 to 33 and 47 to 49 read | https://www.lloc.gov.bh/FullAr/L2476.docx | 2026-11-01 |
 
-Not yet confirmed: general corporate-tax enactment status; the older EDB blanket zero corporate-tax statement; excise; universal calendar-fiscal-year assumption; historic VAT rate/registration/filing assertions as current 2026 instructions; social employer phase-in and minimum-base implementation. Full predecessor text and exact destinations are preserved in [the country evidence](../../evidence/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.
+Not yet confirmed: general corporate-tax enactment status; the older EDB blanket zero corporate-tax statement; excise; universal calendar-fiscal-year assumption; historic VAT rate/registration/filing assertions as current 2026 instructions; social employer phase-in and minimum-base implementation. Full predecessor text and exact destinations are preserved in [the country evidence](https://github.com/openaccountants/evidence/blob/main/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.

@@ -1,10 +1,10 @@
 ---
 name: moldova-payroll
 description: "Compute Moldova payroll withholding for 2026 using the cumulative income-tax method, documented exemption months and separate social/medical contribution bases. Covers ordinary private and public employers, listed aviation conditions, qualifying agriculture, joiners, leavers, advances, benefits, corrections, IT-park transitions, nonresident source rules and treaty evidence. Use for salary tax, gross to net, CNAS, CNAM, IPC21, IRM19, personal and dependent exemptions, payment timing and payroll reconciliation. This source-cited draft corrects the former employee social deduction and exemption assumptions, and has a bounded source-review record linked under Sources. Its stated implementation gaps keep the domain partial; it does not claim accountant attestation or comprehensive coverage."
-version: "0.13"
+version: "0.14"
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 depends_on:
   - payroll-workflow-base
 category: payroll
@@ -14,7 +14,7 @@ domain: payroll
 type: computation
 ---
 
-# Moldova payroll withholding, 2026 v0.13
+# Moldova payroll withholding, 2026 v0.14
 
 ## Who this applies to
 
@@ -362,7 +362,7 @@ expected:
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](https://github.com/openaccountants/evidence/blob/main/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Primary-source reads on 30–31 October 2026, with individual dates below.
 

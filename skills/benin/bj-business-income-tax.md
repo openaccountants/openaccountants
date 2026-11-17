@@ -4,14 +4,14 @@ description: "Prepare a Benin individual business-profit tax working paper for 2
 jurisdiction: BJ
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.2
+last_updated: 2026-11-17
+version: 0.3
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Benin individual business IBA working paper v0.2
+# Benin individual business IBA working paper v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -144,4 +144,4 @@ expected:
 | [Original finance law 2025-22 of 8 December 2025](https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf) | Cached fiscal arts. 1–17 and final arts. 47–48 read in OCR; PDF pages 1, 4 and 14 visually read for the income-period clause, IBA-floor amendment and commencement/signature. Other measures do not establish an IBA filing or complete currentness chain. | 2026-11-01 |
 | [Rectifying finance law 2026-10 of 24 June 2026](https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf) | Cached fiscal arts. 1–19 and final arts. 48–49 read in OCR; PDF pages 1, 3 and 17 visually read for income period, TPS exclusion/cessation overlays and final/signature clauses. No budget-table review or automatic January commencement is asserted. | 2026-11-01 |
 
-Not yet confirmed: the actual numerical TPS threshold order and full TPS computation/filing; current first operative period and detailed exemption/credit transition instructions for the June TPS amendment; cash-election renewal-period and change-of-basis adjustments; complete expense-specific, partial-use property and sector/incentive calculations, including reduction/minimum interactions; natural-person residence, treaty allocation, foreign-credit/final-withholding interactions; later instruments not identified by the sources read; authenticated IBA form, field/upload mapping, payment reference and acknowledgement; live cessation/death and penalty assessments. Independent AI source review and focused repair closure passed on 1 November 2026 for this partial preparation job; no accountant has attested to this version. All seven country domains remain partial. Rule/figure ledger and preserved prior-file identities are in `evidence/ledgers/benin-business-20261101/`.
+Not yet confirmed: the actual numerical TPS threshold order and full TPS computation/filing; current first operative period and detailed exemption/credit transition instructions for the June TPS amendment; cash-election renewal-period and change-of-basis adjustments; complete expense-specific, partial-use property and sector/incentive calculations, including reduction/minimum interactions; natural-person residence, treaty allocation, foreign-credit/final-withholding interactions; later instruments not identified by the sources read; authenticated IBA form, field/upload mapping, payment reference and acknowledgement; live cessation/death and penalty assessments. Independent AI source review and focused repair closure passed on 1 November 2026 for this partial preparation job; no accountant has attested to this version. All seven country domains remain partial. Rule/figure ledger and preserved prior-file identities are in [`openaccountants/evidence/ledgers/benin-business-20261101/`](https://github.com/openaccountants/evidence/tree/main/ledgers/benin-business-20261101/).

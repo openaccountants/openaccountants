@@ -5,15 +5,15 @@ jurisdiction: CG
 category: formation
 tax_year: 2026
 tax_year_notes: "Initial 2026 enacted-law baseline; later 2026 currentness and filing procedures remain partial"
-last_updated: 2026-11-14
-version: 1.2
+last_updated: 2026-11-17
+version: 1.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
 type: filing-howto
 ---
 
-# Republic of Congo Company Formation and Entity Choice v1.2
+# Republic of Congo Company Formation and Entity Choice v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -127,6 +127,6 @@ expected:
 | ACPCE public online-creation portal. Public landing page: account/create flow, unique form/upload/payment/document delivery, displayed entity-specific fees. No account created or authenticated screen accessed. | https://monentreprise.acpce.cg/ | 2026-11-01 |
 | Congo decree 2017-41, 28 March 2017. All three pages, arts 1–8; critical capital/share denomination and deposit rules visually read on physical page 2. | https://acpce.cg/wp-content/uploads/2024/08/congo-decret_2017-41_sarl.pdf | 2026-11-01 |
 
-Figure/rule quotations and source hashes: [country ledger](../../evidence/ledgers/republic-of-congo-draft-20261101/cg-company-formation.md). Every worked figure is conditional on the stated example facts.
+Figure/rule quotations and source hashes: [country ledger](https://github.com/openaccountants/evidence/blob/main/ledgers/republic-of-congo-draft-20261101/cg-company-formation.md). Every worked figure is conditional on the stated example facts.
 
 Not yet confirmed: Later company-law/national amendments; authenticated ACPCE fields, fee assessment/exemptions and final NIU/RCCM issuance sequence; processing time; full recurring governance/accounting/beneficial-owner filings and sanctions; in-kind valuation and regulated-sector capital; special branch dispensations. The corporate tax Guide retains the DSF/annual filing-date conflict.

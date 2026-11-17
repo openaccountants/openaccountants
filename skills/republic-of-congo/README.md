@@ -41,7 +41,7 @@ Eight source-cited drafts, not comprehensive coverage. Initial 2026 enacted inco
 
 ## Source and preservation evidence
 
-[Ledgers and source hashes](../../evidence/ledgers/republic-of-congo-draft-20261101/README.md); [every old topic](../../evidence/ledgers/republic-of-congo-draft-20261101/old-topics.md).
+[Ledgers and source hashes](https://github.com/openaccountants/evidence/blob/main/ledgers/republic-of-congo-draft-20261101/README.md); [every old topic](https://github.com/openaccountants/evidence/blob/main/ledgers/republic-of-congo-draft-20261101/old-topics.md).
 
 ## Not yet confirmed
 

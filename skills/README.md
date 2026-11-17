@@ -9,7 +9,7 @@
 | [us/states/](us/states/) | United States, one folder per state |
 | [eu/](eu/) | European Union rules that every member state shares |
 | [global/](global/) | Skills that belong to no one place: cross-border rules, methods, accounting standards, industries, software |
-| [research/](../evidence/research/) | Evidence behind country reviews. Not skills |
+| [research/](https://github.com/openaccountants/evidence/tree/main/research/) | Evidence behind country reviews. Not skills |
 
 ## How the folders work
 

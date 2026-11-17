@@ -3,15 +3,15 @@ name: md-tax-overview
 description: "Route Moldova tax questions for 2026 to the correct taxpayer, source, base, period and connected Guide. Covers the ordinary individual and legal-person income-tax rates, standard VAT, current resident and nonresident income populations, income-tax and VAT periods, annual income-tax and ordinary VAT deadlines, separate annual accounts and payer reporting, and two assumed computations. Use for Moldova tax overview, personal or corporate tax, worldwide income, tax year, annual return, SFS, MDL, VAT and first-year compliance. This source-cited draft corrects blanket scope and deadline assumptions and makes remaining specialist and implementation gaps explicit. A bounded source-review record is linked under Sources; accountant attestation remains open."
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: "0.8"
+version: "0.9"
 tier: 2
 type: situation-rules
 ---
 
-# Moldova tax overview, 2026 v0.8
+# Moldova tax overview, 2026 v0.9
 
 ## Who this applies to
 
@@ -140,7 +140,7 @@ Establish legal form and registrations; residence and citizenship where relevant
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](https://github.com/openaccountants/evidence/blob/main/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Primary-source reads on 30–31 October 2026, with individual dates below. This overview does not complete a partial specialist domain or substitute for independent whole-country review.
 

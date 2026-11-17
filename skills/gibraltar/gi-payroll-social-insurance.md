@@ -5,8 +5,8 @@ description: >
 jurisdiction: GI
 category: payroll
 tax_year: 2026
-last_updated: 2026-11-14
-version: "0.17"
+last_updated: 2026-11-17
+version: "0.18"
 sources:
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/New%20Forms/SE1%20Application%20for%20trade%20income.pdf"
     title: "ITO SE1 trade-income registration form, sections 3–9"
@@ -83,7 +83,7 @@ domain: payroll
 type: computation
 ---
 
-# Gibraltar payroll and social insurance v0.17
+# Gibraltar payroll and social insurance v0.18
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -514,11 +514,11 @@ The detailed authority for recovering a missed employee deduction from later wag
 
 ### Current writer source scope and retained reviews
 
-Earlier full/delta review records keep their exact versions and source hashes. On 28 October 2026 the writer re-used or cached the official sources, rechecked the three rendered table pages and the relevant scanned UK-agreement pages, and recorded the full rule/figure ledger and old-topic map at [ledgers/gi-payroll-social-insurance.md](../../evidence/research/gibraltar-2026/payroll-completion-2026-10-28/ledgers/gi-payroll-social-insurance.md). The old source discrepancies remain disclosed; neither their repetition nor this writer ledger establishes independent country acceptance. No live filing, payment, certificate application or external enquiry was made.
+Earlier full/delta review records keep their exact versions and source hashes. On 28 October 2026 the writer re-used or cached the official sources, rechecked the three rendered table pages and the relevant scanned UK-agreement pages, and recorded the full rule/figure ledger and old-topic map at [ledgers/gi-payroll-social-insurance.md](https://github.com/openaccountants/evidence/blob/main/research/gibraltar-2026/payroll-completion-2026-10-28/ledgers/gi-payroll-social-insurance.md). The old source discrepancies remain disclosed; neither their repetition nor this writer ledger establishes independent country acceptance. No live filing, payment, certificate application or external enquiry was made.
 
 ### Retained controls
 
-Six original executable blocks remain byte-exact in [preserved payroll controls](../../evidence/research/gibraltar-2026/payroll-completion-2026-10-28/preserved-payroll-controls.md), alongside the two main examples here. Separate new benefit illustrations are in [benefit controls](../../evidence/research/gibraltar-2026/payroll-completion-2026-10-28/benefit-controls.md).
+Six original executable blocks remain byte-exact in [preserved payroll controls](https://github.com/openaccountants/evidence/blob/main/research/gibraltar-2026/payroll-completion-2026-10-28/preserved-payroll-controls.md), alongside the two main examples here. Separate new benefit illustrations are in [benefit controls](https://github.com/openaccountants/evidence/blob/main/research/gibraltar-2026/payroll-completion-2026-10-28/benefit-controls.md).
 
 Not yet confirmed: current-linked PAYE tables versus dated notes and grey cells; ordinary missed employee-SI wage recovery; general first-employer/concurrent allocation and annual/quarterly self-employed interaction; benefit-threshold wording and pension-definition reference; specialist employment-cost/coverage and actual submission/approval issues described above.
 

@@ -18,13 +18,13 @@ description: >
 jurisdiction: FO
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.3
+last_updated: 2026-11-17
+version: 0.4
 tier: 2
 type: filing-howto
 ---
 
-# Faroe Islands property-transfer and mortgage registration v0.3
+# Faroe Islands property-transfer and mortgage registration v0.4
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -361,7 +361,7 @@ expected:
 ## Sources
 
 Read 31 October 2026. This source-cited draft awaits independent review.
-Statutory clauses are recorded in the [figure/rule ledger](../../evidence/ledgers/faroe-islands-20261031-property/ledgers/fo-property-transfer-registration.md).
+Statutory clauses are recorded in the [figure/rule ledger](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031-property/ledgers/fo-property-transfer-registration.md).
 No professional attestation or full property-family closure is claimed.
 
 | Source | Provisions used |
@@ -380,7 +380,7 @@ mortgage form and its exact printed fields, any operative separate refinancing
 evidence form/rules, the mixed cash/gift/assumed-debt allocation, treatment of
 an inherited share on which no inheritance duty is paid, and acquisition-permission
 application execution are not resolved. The specific legal questions and exhausted sources
-are in the [remaining-evidence note](../../evidence/ledgers/faroe-islands-20261031-property/remaining-evidence.md).
+are in the [remaining-evidence note](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031-property/remaining-evidence.md).
 These are not relabelled as specialist work. Vehicle/retention-of-title digital
 filing, cadastral surveying/charges and the other country tax jobs also remain
 open. No future commencement date, portal box, valuation formula, automatic

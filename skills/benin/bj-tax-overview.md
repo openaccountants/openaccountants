@@ -3,16 +3,16 @@ name: bj-tax-overview
 description: "Use this Benin 2026 tax preparation map to select the appropriate country Guide and assemble a cash and filing evidence checklist. It routes salary ITS, corporate IS, VAT, employer VPS, transfer pricing, domestic cross-border withholding and company formation to their separate working papers. It explains why the original finance law and June rectifying law must be read together and provides two executable reconciliations of known obligations. All seven country domains remain partial. Current CNSS rules, certain threshold instruments, specialist calculations, treaty entitlements and authenticated submission procedures remain open. This map does not certify complete coverage, a completed filing or professional attestation. Trigger phrases include Benin tax overview, country pack and compliance preparation."
 jurisdiction: BJ
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.3
+version: 0.4
 tier: 2
 domain: income-tax
 type: situation-rules
 ---
 
-# Benin tax preparation map v0.3
+# Benin tax preparation map v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -117,4 +117,4 @@ expected:
 | [Signed original finance law 2025-22](https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf) | Fiscal arts. 1–17, PDF pages 1–5 read; arts. 2–17 visually checked. No claim to have reviewed the budget tables. | 2026-11-01 |
 | [Signed law 2026-10 of 24 June 2026](https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf) | Tax provisions arts. 1–19 and final arts. 48–49, PDF pages 1–6 and 17 visually read; adjacent article 20 heading read. OCR of the whole capture is not a whole-law review. | 2026-11-01 |
 
-Not yet confirmed: complete personal-business/property/capital computations and sector regimes; the numerical VAT threshold instrument; current CNSS rules; complete regional/directive/treaty coverage; authenticated DGI portal screens, exact field identifiers and payment-confirmation workflow; later instruments not identified by the sources read; application to a particular taxpayer. Independent AI source review closed on 1 November 2026 for the bounded job (see the [country README](README.md)); no accountant has attested to this version. Every legacy topic has a destination in evidence/ledgers/benin-old-topics.md. Rates and deadlines owned by sibling Guides are linked here, not recertified from the old overview.
+Not yet confirmed: complete personal-business/property/capital computations and sector regimes; the numerical VAT threshold instrument; current CNSS rules; complete regional/directive/treaty coverage; authenticated DGI portal screens, exact field identifiers and payment-confirmation workflow; later instruments not identified by the sources read; application to a particular taxpayer. Independent AI source review closed on 1 November 2026 for the bounded job (see the [country README](README.md)); no accountant has attested to this version. Every legacy topic has a destination in openaccountants/evidence/ledgers/benin-old-topics.md. Rates and deadlines owned by sibling Guides are linked here, not recertified from the old overview.

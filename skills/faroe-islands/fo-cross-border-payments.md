@@ -14,10 +14,10 @@ description: >
   exit-deferral adjustments and complex foreign-tax credit cases need additional
   source work. Independent AI review accepted partial draft publication;
   professional attestation remains pending.
-version: 0.4
+version: 0.5
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -25,7 +25,7 @@ domain: cross-border
 type: situation-rules
 ---
 
-# Faroe Islands cross-border payments and migration v0.4
+# Faroe Islands cross-border payments and migration v0.5
 
 > **Checked against the law.** Professional review is pending. This Guide prepares working papers for income year 2026 from the cited provisions read on 25 October 2026, with ordinary foreign-tax credit, branch attribution, corporate-loan interest and bounded later-disposal methods checked on 28 October.
 
@@ -125,7 +125,7 @@ Use only income and tax belonging to the same calculation. Deduct foreign-relate
 
 For individuals, TAKS distinguishes ordinary tax credits from refundable child credit: ordinary credits are allocated before foreign relief as described in O.1.8, while child credit follows relief and retains its statutory refund treatment. Relief is allocated proportionally between national, municipal and church tax under O.1.9. Do not copy the older guidance's illustrative bands or foreign-work deduction amounts into a 2026 calculation; use the current income-tax Guides and the actual treaty where relevant. [TAKS VLS O.1.8–O.1.9][relief]; [Assessment Act §§1–3][rate]
 
-[Ordinary company credit and its supporting arithmetic](../../../ledgers/faroe-islands-2026-evidence/fo-cross-border-payments-supplementary-controls.md) is retained in supplementary research.
+[Ordinary company credit and its supporting arithmetic](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-2026-evidence/fo-cross-border-payments-supplementary-controls.md) is retained in supplementary research.
 
 ## Two worked examples that recompute
 

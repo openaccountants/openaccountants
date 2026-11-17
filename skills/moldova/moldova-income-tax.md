@@ -1,10 +1,10 @@
 ---
 name: moldova-income-tax
 description: "Compute Moldova individual income tax for 2026 after classifying residence, citizenship, source, legal activity and the actual tax regime. Covers annual ordinary income, sole-trader and professional profit, personal/spouse/dependent exemptions, actual contribution and personal deductions, capital gains, final withholding, property rentals, foreign-tax credit and separate retail, plant-purchasing and independent-service regimes. Use for CET18, annual personal tax, self-employed tax, freelancer income, taxable investment receipts, exemption eligibility, foreign interest, capital disposals, fixed contributions and income-tax filing. This source-cited draft identifies ordinary and specialist gaps, and has a bounded source-review record linked under Sources. It does not certify every treaty or special-regime implementation or claim accountant attestation."
-version: "0.15"
+version: "0.16"
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -14,7 +14,7 @@ domain: income-tax
 type: computation
 ---
 
-# Moldova individual income tax and self-employment, 2026 v0.15
+# Moldova individual income tax and self-employment, 2026 v0.16
 
 ## Who this applies to
 
@@ -382,7 +382,7 @@ expected:
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](https://github.com/openaccountants/evidence/blob/main/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Primary-source reads on 30–31 October 2026, with individual dates below.
 

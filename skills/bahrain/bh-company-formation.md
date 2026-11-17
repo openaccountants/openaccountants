@@ -3,8 +3,8 @@ name: bh-company-formation
 description: "Company formation and entity choice in Bahrain, 2026: W.L.L., closed and public shareholding companies, partnerships, branches, individual establishments and Sijili, with minimum capital and commitments from the Sijilat portal. Use for questions like how to set up a company in Bahrain, minimum capital W.L.L. Bahrain, or can a foreigner own 100% in Bahrain."
 jurisdiction: BH
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.4
+last_updated: 2026-11-17
+version: 0.5
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,7 +12,7 @@ domain: formation
 type: filing-howto
 ---
 
-# Bahrain Company Formation and Entity Choice v0.4
+# Bahrain Company Formation and Entity Choice v0.5
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -97,4 +97,4 @@ expected:
 |---|---|---|
 | Sijilat Business Types, entire public page and all entity rows/requirements/notes/commitments read in ordinary browser; selective verbatim browser read receipt saved; raw HTML translation data contains stale values and is not substituted for the visible page | https://www.sijilat.bh/guides-laws/BusinessTypes.aspx | 2026-11-01 |
 
-Not yet confirmed: name reservation 60-day validity/about BHD 10 fee; 1-to-3-day/1-to-3-week completion estimates; SPC conversion under Decree-Law 28/2020; current annual CR renewal procedure; exact activity-specific ownership/licensing approvals; automatic ESR applicability. Earlier BHD 20,000 foreign W.L.L. and BHD 250,000 closed B.S.C. minima are contradicted by Sijilat and are not executable. Full predecessor text and exact destinations are preserved in [the country evidence](../../evidence/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.
+Not yet confirmed: name reservation 60-day validity/about BHD 10 fee; 1-to-3-day/1-to-3-week completion estimates; SPC conversion under Decree-Law 28/2020; current annual CR renewal procedure; exact activity-specific ownership/licensing approvals; automatic ESR applicability. Earlier BHD 20,000 foreign W.L.L. and BHD 250,000 closed B.S.C. minima are contradicted by Sijilat and are not executable. Full predecessor text and exact destinations are preserved in [the country evidence](https://github.com/openaccountants/evidence/blob/main/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.

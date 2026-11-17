@@ -3,8 +3,8 @@ name: bh-income-tax
 description: "Bahrain personal income tax screening for 2026 using an explicitly dated EDB official archive. Separates personal income tax from payroll, end-of-service, VAT and foreign-country obligations. No payroll or VAT filing is authorised by this Guide."
 jurisdiction: BH
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.4
+last_updated: 2026-11-17
+version: 0.5
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,7 +12,7 @@ domain: income-tax
 type: computation
 ---
 
-# Bahrain Personal Income Tax v0.4
+# Bahrain Personal Income Tax v0.5
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -90,4 +90,4 @@ expected:
 | EDB manufacturing factsheet, both pages read, decisive statement p. 2, archived 21 March 2026 | https://web.archive.org/web/20260321041012/https://www.bahrainedb.com/app/uploads/2026/01/Bahrain-EDB-MFG-Factsheet-2026.pdf | 2026-11-01 |
 | Social Insurance Law, consolidated Arabic, arts. 2 to 4 and 17 to 33 read | https://www.lloc.gov.bh/FullAr/L2476.docx | 2026-11-01 |
 
-Not yet confirmed: estate, inheritance and gift-tax absence; municipal rental tax; exact personal residence-certificate procedure; current WPS Resolution 68/2019 and enhanced 2026 procedure; minimum wage; VAT registration/returns/penalties and bank-description tax classifications in the predecessors. The former SIO percentages, cap and defaults now route to payroll; none is repeated here. Full predecessor text and exact destinations are preserved in [the country evidence](../../evidence/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.
+Not yet confirmed: estate, inheritance and gift-tax absence; municipal rental tax; exact personal residence-certificate procedure; current WPS Resolution 68/2019 and enhanced 2026 procedure; minimum wage; VAT registration/returns/penalties and bank-description tax classifications in the predecessors. The former SIO percentages, cap and defaults now route to payroll; none is repeated here. Full predecessor text and exact destinations are preserved in [the country evidence](https://github.com/openaccountants/evidence/blob/main/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.

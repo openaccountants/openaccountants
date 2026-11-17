@@ -1,6 +1,6 @@
 ---
 jurisdiction: NE
-version: 0.3
+version: 0.4
 last_updated: 2026-11-17
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -44,12 +44,12 @@ The ministry's original 2026 law and signed first rectification were downloaded 
 
 [Company formation](ne-company-formation.md) now reads the original OHADA companies Act and Niger’s 2014 decree with the actual 2017 gazetted amendment. It covers constitution/funding, registration stages, annual corporate duties and branch/office boundaries, while current guichet forms/fees, tax registrations and the complete currentness chain remain open. [Tax overview](ne-tax-overview.md) routes the two accepted tax jobs and explicitly holds the old rates, residence and general filing statements. All five other Guide files, all earlier ledgers and review evidence remain byte-identical to the pinned main base `59c23acba2ad66dd2bb29ffc81ffbb9289769ef8`. Existing platform fields and both rewritten Guides’ complete CTA suffixes remain exact. Retention is not recertification.
 
-- [Formation and overview figure ledgers, old-topic map and writer scope](../../evidence/ledgers/niger-formation-overview-20261101/writer-record.md).
-- Formation and overview independent source-fidelity review: accepted within the limited read scope; [closure evidence](../../evidence/ledgers/niger-formation-overview-review-20261101/closure.md). No accountant attestation or complete country coverage. The older 58-topic map below remains historical evidence; the new immutable map explicitly accounts for every paragraph, heading and bullet replaced in these two files.
+- [Formation and overview figure ledgers, old-topic map and writer scope](https://github.com/openaccountants/evidence/blob/main/ledgers/niger-formation-overview-20261101/writer-record.md).
+- Formation and overview independent source-fidelity review: accepted within the limited read scope; [closure evidence](https://github.com/openaccountants/evidence/blob/main/ledgers/niger-formation-overview-review-20261101/closure.md). No accountant attestation or complete country coverage. The older 58-topic map below remains historical evidence; the new immutable map explicitly accounts for every paragraph, heading and bullet replaced in these two files.
 
-- [Complete old-topic destination map](../../evidence/ledgers/niger-old-topics.md).
-- [Cash-payment rule ledger](../../evidence/ledgers/ne-cash-payment-tax.md).
-- [TDTA repeal rule ledger](../../evidence/ledgers/ne-money-transfer-tax-repeal.md).
-- [Source scope and integrity record](../../evidence/ledgers/niger-source-read-20261101.md).
+- [Complete old-topic destination map](https://github.com/openaccountants/evidence/blob/main/ledgers/niger-old-topics.md).
+- [Cash-payment rule ledger](https://github.com/openaccountants/evidence/blob/main/ledgers/ne-cash-payment-tax.md).
+- [TDTA repeal rule ledger](https://github.com/openaccountants/evidence/blob/main/ledgers/ne-money-transfer-tax-repeal.md).
+- [Source scope and integrity record](https://github.com/openaccountants/evidence/blob/main/ledgers/niger-source-read-20261101.md).
 
-Full raw PDFs, scans, HTML and OCR remain privately outside this Git worktree. No professional name or warrant is used to imply attestation. The earlier independent reviewer checked the accepted two-job batch’s 40 ledger rows, four examples, five then-preserved legacy files and 58-topic destination map. The [review and immutable candidate hashes](../../evidence/ledgers/niger-review-20261101/review.md) record the exact accepted scope. A later edit removed stale review-status wording from the two Guides and changed no rule. All seven domains remain partial.
+Full raw PDFs, scans, HTML and OCR remain privately outside this Git worktree. No professional name or warrant is used to imply attestation. The earlier independent reviewer checked the accepted two-job batch’s 40 ledger rows, four examples, five then-preserved legacy files and 58-topic destination map. The [review and immutable candidate hashes](https://github.com/openaccountants/evidence/blob/main/ledgers/niger-review-20261101/review.md) record the exact accepted scope. A later edit removed stale review-status wording from the two Guides and changed no rule. All seven domains remain partial.

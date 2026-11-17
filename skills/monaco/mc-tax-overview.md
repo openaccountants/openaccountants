@@ -1,17 +1,17 @@
 ---
 name: mc-tax-overview
 description: "Monaco tax overview for 2026 routing individual, business profits, VAT, payroll, social contribution, transfer pricing, cross border and formation questions to the detailed country Guides. Highlights the inclusive foreign turnover boundary, separate rights income scope, French national residence rules, dated October contribution changes and company reform transition limits. Use as the country entry point before preparing a working paper. Names specialist, formation implementation and professional review boundaries and avoids a general zero tax promise. Source cited draft with no named Monaco professional sign off."
-version: 1.4
+version: 1.5
 jurisdiction: MC
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-17
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 type: router
 ---
 
-# Monaco tax overview and routing v1.4
+# Monaco tax overview and routing v1.5
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -75,7 +75,7 @@ The new-activity exemption is conditional and period-specific; there is no gener
 
 ### Dates and evidence
 
-Law, government guidance and retrieval are distinct evidence. The ISB statute says at least 25%, despite the government summary's stricter wording. The 16 November consolidation also identifies Ordinance 12.211 of 23 October 2026 on period/advance and penalty provisions; the scope/rate and other overview pinpoints were checked separately and remain applicable. Do not use an older ISB penalty or period method without the current specialist text. At the 25 October source read, the employer PDF URL said October 2025 while serving October 2026. Dated archived 2025 employer/independent letters and native annual instruments establish the earlier 2026 periods; do not backdate the October rates. The full-year tables and effective-date changes are in the payroll/social Guide. The minimum-tax page is a project record; proposed dates do not establish operative law. The [preserved completion research](../../evidence/research/monaco-2026/completion-research.md) records the expanded source reading, calculations and fresh review. The earlier public [research report](../../docs/research/2026-10-24-monaco-research.md) and [retrieval register](../../docs/research/2026-10-24-monaco-sources.json) preserve those distinctions. [Art. 1](https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152); [Actual employer letter](https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf); [Project 1.129](https://legimonaco.mc/projet/1.129).
+Law, government guidance and retrieval are distinct evidence. The ISB statute says at least 25%, despite the government summary's stricter wording. The 16 November consolidation also identifies Ordinance 12.211 of 23 October 2026 on period/advance and penalty provisions; the scope/rate and other overview pinpoints were checked separately and remain applicable. Do not use an older ISB penalty or period method without the current specialist text. At the 25 October source read, the employer PDF URL said October 2025 while serving October 2026. Dated archived 2025 employer/independent letters and native annual instruments establish the earlier 2026 periods; do not backdate the October rates. The full-year tables and effective-date changes are in the payroll/social Guide. The minimum-tax page is a project record; proposed dates do not establish operative law. The [preserved completion research](https://github.com/openaccountants/evidence/blob/main/research/monaco-2026/completion-research.md) records the expanded source reading, calculations and fresh review. The earlier public [research report](../../docs/research/2026-10-24-monaco-research.md) and [retrieval register](../../docs/research/2026-10-24-monaco-sources.json) preserve those distinctions. [Art. 1](https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152); [Actual employer letter](https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf); [Project 1.129](https://legimonaco.mc/projet/1.129).
 
 ## Sources
 

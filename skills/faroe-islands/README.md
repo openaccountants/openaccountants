@@ -1,7 +1,7 @@
 ---
 jurisdiction: FO
-version: 0.7
-last_updated: 2026-10-31
+version: 0.8
+last_updated: 2026-11-17
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
@@ -18,7 +18,7 @@ partial:
 
 # Faroe Islands: tax pack
 
-The Faroes use DKK, national and municipal income tax, capital-income tax and MVG administered by TAKS. Owner: Michael, per [issue #393](https://github.com/openaccountants/openaccountants/issues/393). Twelve 2026 Guides are present; the new property-transfer/mortgage Guide received bounded independent review on 31 October 2026, with both procedural findings closed and its ordinary evidence gaps retained. The eleven predecessor Guides are unchanged. The inheritance/estate Guides received independent AI source review on 31 October 2026, with the five recorded findings closed and all stated gaps retained. The eight predecessor revisions have completed independent source review, preserved in the review archive; the new payroll-levy Guide and 31 October formation/formatting delta passed an [independent AI source review on 31 October](../../evidence/ledgers/faroe-islands-20261031/independent-review/review.md), accepting all 47 new ledger rows for partial tier-2 publication. Each has a figure/rule ledger. **This remains a partial pack with zero professional attestations.** The seven partial flags record ordinary implementation gaps; no not-applicable conclusion is asserted.
+The Faroes use DKK, national and municipal income tax, capital-income tax and MVG administered by TAKS. Owner: Michael, per [issue #393](https://github.com/openaccountants/openaccountants/issues/393). Twelve 2026 Guides are present; the new property-transfer/mortgage Guide received bounded independent review on 31 October 2026, with both procedural findings closed and its ordinary evidence gaps retained. The eleven predecessor Guides are unchanged. The inheritance/estate Guides received independent AI source review on 31 October 2026, with the five recorded findings closed and all stated gaps retained. The eight predecessor revisions have completed independent source review, preserved in the review archive; the new payroll-levy Guide and 31 October formation/formatting delta passed an [independent AI source review on 31 October](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031/independent-review/review.md), accepting all 47 new ledger rows for partial tier-2 publication. Each has a figure/rule ledger. **This remains a partial pack with zero professional attestations.** The seven partial flags record ordinary implementation gaps; no not-applicable conclusion is asserted.
 
 | Topic | Guide | Status |
 |---|---|---|
@@ -37,7 +37,7 @@ The Faroes use DKK, national and municipal income tax, capital-income tax and MV
 
 ## 31 October continuation
 
-The branch incorporates the current repository layout. Existing source Guides are in this folder; all 310 original ledger/review/source files move byte-exact to `evidence/ledgers/`. The [relocation and no-loss proof](../../evidence/ledgers/faroe-islands-20261031/preservation.json) maps all 1,520 original nonblank Guide units. It records 236 citation-format expansions to the same existing target URLs, plus formation parent-heading changes. Formation keeps every prior substantive paragraph and reservation and adds two executable cases and client questions. The new payroll-levy Guide supplies its separate activity/rate/base, registration, provisional/final assessment and payment methods. Its [43-row ledger](../../evidence/ledgers/faroe-islands-20261031/fo-payroll-levy.md) records the actual source scope and precise remaining limits.
+The branch incorporates the current repository layout. Existing source Guides are in this folder; all 310 original ledger/review/source files move byte-exact to [`openaccountants/evidence/ledgers/`](https://github.com/openaccountants/evidence/tree/main/ledgers/). The [relocation and no-loss proof](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031/preservation.json) maps all 1,520 original nonblank Guide units. It records 236 citation-format expansions to the same existing target URLs, plus formation parent-heading changes. Formation keeps every prior substantive paragraph and reservation and adds two executable cases and client questions. The new payroll-levy Guide supplies its separate activity/rate/base, registration, provisional/final assessment and payment methods. Its [43-row ledger](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031/fo-payroll-levy.md) records the actual source scope and precise remaining limits.
 
 The nine independently reviewed Guides pass the ten mechanical skill checks and their 18 executable cases pass. The independent delta review checked all 47 new ledger rows and preservation evidence; neither it nor these mechanical checks certifies completeness or professional attestation. No new source-date assertion is applied to unchanged old legal claims.
 
@@ -52,17 +52,17 @@ undivided estates, current opening/closing inventory fields, submission,
 assessment, payment and sanctions. The estate Guide supplies the statutory
 final-assessment election, inclusive settlement thresholds, opening tax
 schedule, estate periods, exemption conditions, securities distribution and
-private-estate handoff methods. Their [64 original rule/figure rows plus the repair row](../../evidence/ledgers/faroe-islands-20261031-inheritance/)
+private-estate handoff methods. Their [64 original rule/figure rows plus the repair row](https://github.com/openaccountants/evidence/tree/main/ledgers/faroe-islands-20261031-inheritance/)
 record responsive original-language clauses and the actual source-access limits.
-The [independent review](../../evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/final-report.md) checked all 64 original rows and requested four bounded repairs. The [final independent closure](../../evidence/ledgers/faroe-islands-20261031-inheritance/repair-02/independent-closure/final-report.md) accepted all five recorded repairs, including the additional §103(3) accounts-sanction row and matching heading versions, on 31 October 2026. No professional attestation is claimed.
+The [independent review](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031-inheritance/independent-review/final-report.md) checked all 64 original rows and requested four bounded repairs. The [final independent closure](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031-inheritance/repair-02/independent-closure/final-report.md) accepted all five recorded repairs, including the additional §103(3) accounts-sanction row and matching heading versions, on 31 October 2026. No professional attestation is claimed.
 
 The old nine Guide files and all completed review/source evidence are unchanged
-in this continuation, proved by the [byte-preservation and topic map](../../evidence/ledgers/faroe-islands-20261031-inheritance/preservation.json).
+in this continuation, proved by the [byte-preservation and topic map](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031-inheritance/preservation.json).
 This addition does not clear any seven-domain partial or close issue#393.
 Inheritance appeal routing and life-right actuarial implementation remain
 unresolved. Estate allowance/municipal calculation, the two statutory payment
 mechanisms and current-year special-period return implementation remain actual
-ordinary gaps, itemised in the [remaining-evidence note](../../evidence/ledgers/faroe-islands-20261031-inheritance/remaining-evidence.md).
+ordinary gaps, itemised in the [remaining-evidence note](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031-inheritance/remaining-evidence.md).
 
 ## Property registration continuation
 
@@ -73,8 +73,8 @@ conditions, increases and added-property security; statutory paper-document
 fields, approved-form requirements, witnessing, evidence, payment, journal
 priority, rejection/refund and appeal clocks. It distinguishes the 2025
 vehicle-register digital commencement from the evidenced land-book method.
-Its [43-row ledger](../../evidence/ledgers/faroe-islands-20261031-property/ledgers/fo-property-transfer-registration.md)
-received [bounded independent acceptance on 31 October 2026](../../evidence/ledgers/faroe-islands-20261031-property/repair-1/independent-closure/CLOSURE-REVIEW.md), closing the two procedural findings. New full captures stay private; the public
+Its [43-row ledger](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031-property/ledgers/fo-property-transfer-registration.md)
+received [bounded independent acceptance on 31 October 2026](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031-property/repair-1/independent-closure/CLOSURE-REVIEW.md), closing the two procedural findings. New full captures stay private; the public
 packet contains attributed operative statutory excerpts, receipt metadata
 and one short agency submission instruction. No general public-domain status
 or source-publication clearance is asserted.
@@ -82,8 +82,8 @@ or source-publication clearance is asserted.
 The current ordinary mortgage blank, separate refinancing evidence route,
 mixed cash/gift/debt allocation, inheritance-duty-exempt share treatment,
 acquisition-permission application execution remain
-[ordinary evidence gaps](../../evidence/ledgers/faroe-islands-20261031-property/remaining-evidence.md).
-The [preservation map](../../evidence/ledgers/faroe-islands-20261031-property/preservation.json)
+[ordinary evidence gaps](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031-property/remaining-evidence.md).
+The [preservation map](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031-property/preservation.json)
 keeps all eleven old Guide files byte-exact. This addition clears no domain
 partial, does not close the property job family or issue #393, and is not a
 professional attestation.
@@ -94,7 +94,7 @@ The 28 October continuation supplies the ordinary church-tax and full-year spous
 
 **Independent ledger review completed, 28 October:** all 453 prepared rule/figure receipts across the eight Guides were checked, reusing the completed whole-body/no-loss reading. Eight evidence findings were corrected and rechecked. The original 14 main tax examples remain byte-exact and pass. This accepts the stated working papers for partial tier-2 publication; it is not full ordinary-country completion or professional attestation. The dated writer review requests inside the Guides are succeeded by this completed review record.
 
-The eight [figure ledgers](../../evidence/ledgers/) contain exact source quotes, read dates, computed-case labels and complete old-topic destinations. [The four independent review tranches](../../evidence/ledgers/faroe-islands-2026-evidence/independent-review/) retain the scope, findings, controls and exact reviewed hashes. Their previous packaging paths are retained in the [historical path map](../../evidence/ledgers/faroe-islands-2026-evidence/PACKAGING-PATH-MAP.json); the [31 October relocation proof](../../evidence/ledgers/faroe-islands-20261031/preservation.json) supplies the current canonical destinations. Evidence sits outside the source-Guide ingestion tree, so preserved old Guide snapshots cannot be indexed as new Guides. The final path-only/readme check is recorded with that review archive.
+The eight [figure ledgers](https://github.com/openaccountants/evidence/tree/main/ledgers/) contain exact source quotes, read dates, computed-case labels and complete old-topic destinations. [The four independent review tranches](https://github.com/openaccountants/evidence/tree/main/ledgers/faroe-islands-2026-evidence/independent-review/) retain the scope, findings, controls and exact reviewed hashes. Their previous packaging paths are retained in the [historical path map](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-2026-evidence/PACKAGING-PATH-MAP.json); the [31 October relocation proof](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031/preservation.json) supplies the current canonical destinations. Evidence sits outside the source-Guide ingestion tree, so preserved old Guide snapshots cannot be indexed as new Guides. The final path-only/readme check is recorded with that review archive.
 
 The original seven tax Guides follow the nine-section method with exactly two executable examples each. They now distinguish national/municipal/personal capital tax and credits; ordinary/capital corporate bases and losses; MVG exemptions, input recovery and capital adjustments; separate worker/employer contribution bases and limits; statutory thin capitalisation and CbCR reporting; and cross-border payments, domestic PE screening and individual securities migration.
 
@@ -118,7 +118,7 @@ Selected provisions read **25 and 28 October 2026**, with precise scope, source 
 This batch is submitted for review as a **partial 2026 pack**. All existing
 ordinary gaps remain explicit and issue #393 stays open. All twelve Guide
 files are byte-exact to the accepted research candidate `dc2dddd64`.
-The [source publication map](../../evidence/ledgers/faroe-islands-20261031-publication/SOURCE-PUBLICATION-MAP.md)
+The [source publication map](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-20261031-publication/SOURCE-PUBLICATION-MAP.md)
 records the 310 byte-exact moves of already-public evidence and the 57 new
 capture payloads retained privately. Original ledger/review records and
 historical manifest hashes remain unchanged; omitted capture paths are

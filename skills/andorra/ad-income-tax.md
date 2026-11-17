@@ -1,17 +1,17 @@
 ---
 name: ad-income-tax
 description: "Compute Andorra resident personal income tax for calendar 2026, including employment, pensions, direct or objective sole-trader income, rental income, investments and capital gains. Use for fiscal residence, IRPF allowances and proportional bonus, family and housing reductions, loss pools, property sale and reinvestment, foreign-tax credits, advances and annual return reconciliation. This Guide distinguishes employment expense relief from business deductions, general income from savings and resident property taxation from IRNR. Read the payroll and social Guide for the actual 2026 CASS category and wage period, the IGI Guide for indirect tax, and the corporate and cross-border Guides for their separate computations. Figures require the cited facts and documents. Source-cited draft, without accountant attestation."
-version: 0.5
+version: 0.6
 jurisdiction: AD
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Andorra individual income tax (IRPF), 2026 v0.5
+# Andorra individual income tax (IRPF), 2026 v0.6
 
 ## Who this applies to
 
@@ -187,7 +187,7 @@ expected:
 | Labour Inspection circular, minimum wage 2024 (Decret 577/2023), monthly 1,376.27 | https://www.cass.ad/sites/default/files/documents/Circular-informativa-del-salari-minim-de-l-any-2024.pdf | 2026-10-29 |
 | General Tax Law 21/2014, art. 65, written tax consultations | https://www.portaljuridicandorra.ad/L2014021 | 2026-10-29 |
 
-The legal portal consolidations expressly lack official legal status; their current/historical text is provided through the BOPA service. The cited amendment is separately checked. Exact retrievals and article-read limits are in the country research record. The independent source and preservation review, including its repair closure, is recorded in [country research](../../evidence/research/andorra-2026/research.md). This remains a source-cited draft without licensed-accountant attestation. Only the 18,564.01 to 18,824.04 band of the 2026 dependant-income test remains open, as stated below.
+The legal portal consolidations expressly lack official legal status; their current/historical text is provided through the BOPA service. The cited amendment is separately checked. Exact retrievals and article-read limits are in the country research record. The independent source and preservation review, including its repair closure, is recorded in [country research](https://github.com/openaccountants/evidence/blob/main/research/andorra-2026/research.md). This remains a source-cited draft without licensed-accountant attestation. Only the 18,564.01 to 18,824.04 band of the 2026 dependant-income test remains open, as stated below.
 
 Not yet confirmed: The old share-gain 50% relief for five-to-ten-year holdings is not established by current article 5(k); use its actual ownership/holding exemption instead. The 2026 dependant-income test is settled except for annual income between 18,564.01 and 18,824.04: the Govern has not yet said whether 2026 uses months in force (18,564.00) or the rate in force at accrual × 12 (18,824.04). That band waits for the Govern's 2026 IRPF guide or a binding consultation from the Departament de Tributs i de Fronteres; do not claim the family reduction in that band on a guess. Where the taxpayer dies during 2026, the period ends at death (arts. 40(2) and 41) and the annual figure for that shorter period is not settled either. The old fixed 12.45/m² affordable-rent qualification, the separate immigration/deposit and wealth/other-property-tax claims, including the old fixed 50,000 deposit statement, are not established here. Verify the actual regulated affordable-home classification before article 38 bis relief. The old criminal-fraud claims (EUR 75,000/EUR 150,000 plus 5% tests, three-month-to-three-year or one-to-five-year imprisonment, one-to-four-times fines and automatic voluntary-regularisation immunity) have not been verified against the current Criminal Code and are not applied. Blanket absence of inheritance/gift/wealth/branch-remittance tax and no-filing claims are not established by this IRPF scope. The legacy simplified-IGI EUR 100,000 threshold is outside the ordinary IGI method and requires its actual special-regime conditions. Historic dividend and optional special-regime transitions, and case-specific treaty results are outside the ordinary computations. The ordinary CASS pension contribution-history reduction is supplied above. Article 5(r)'s closing reference to two years does not reconcile its stated four-year habitual-home condition; follow the actual prior approval and obtain clarification for a disputed period. No blanket no-filing or no-tax conclusion is made for those separate regimes.
 

@@ -4,15 +4,15 @@ description: >
   Burkina Faso lawful tax comparison workpaper for 2026, covering turnover regime classification, documented CME to RSI and RSI to RNI elections, approved management centre relief, minimum tax comparisons and ordinary deduction evidence. Use it for questions about whether a tax reduction actually changes the amount payable, what conditions attach to an option, and how a verified employer TPA base calculation differs from an unresolved interaction between relief provisions. It reads the official 2026 CGI and routes full business, company, VAT and payroll calculations to their existing Guides. It supplies two recomputing comparisons, not promised savings. Investment approvals, mining incentives, treaty relief, current portal boxes and accountant sign-off remain unresolved.
 jurisdiction: BF
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.2
+version: 1.3
 tier: 2
 domain: tax-optimization
 type: situation-rules
 ---
 
-# Burkina Faso lawful tax comparisons v1.2
+# Burkina Faso lawful tax comparisons v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -119,7 +119,7 @@ Obtain legal form and activity, start date and time-apportioned turnover, curren
 |---|---|---|
 | [DGI, CGI 2026](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) | 2026-11-01 | Selected articles 11, 14, 24–27, 53–56, 65–66, 87–90, 98-1–98-2, 196–197, 210–214, 228–229, 300–301, 527–540 and neighbouring conditions; actual 2026 text, including 2025 amendment annotations. Not the whole volume. |
 
-The [figure/rule ledger](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-optimization.md) records each rule, original-language quote and read scope. The [predecessor map](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.md) records every original topic, including retained gaps.
+The [figure/rule ledger](https://github.com/openaccountants/evidence/blob/main/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-optimization.md) records each rule, original-language quote and read scope. The [predecessor map](https://github.com/openaccountants/evidence/blob/main/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.md) records every original topic, including retained gaps.
 
 Not yet confirmed: CGA admission procedure, effective eligibility evidence, fees and service costs; filing/withdrawal form box IDs, authenticated eSINTAX workflows and proof of option receipt; controlling interaction between the article 196 RSI TPA reduction and article 228 base abatement, including any cumulation or exclusion; the article-228-only illustration does not establish final payable TPA; special VAT options/import and exemption interactions beyond the linked Guide; IBNC reduction/exemption branches not explicitly computed here; net commercial savings, investment/mining/sector approvals, reorganisation and treaty relief; any automatic best-regime claim; accountant attestation.
 

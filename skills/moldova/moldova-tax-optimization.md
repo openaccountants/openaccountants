@@ -1,10 +1,10 @@
 ---
 name: moldova-tax-optimization
 description: "Compare legally available Moldova tax regimes and owner extraction for 2026. Covers actual IT-park status and permitted activities, cumulative seventy-percent eligibility, the monthly sales base and employee minimum, included and separate taxes, annual verification, entry and exit, ordinary income tax, the eligible four-percent SME regime, dividends and employment classification. Use for Moldova tax planning, IT Park seven-percent tax, minimum per employee, non-IT revenue, small-business regime, SRL versus individual entrepreneur, dividend versus salary and a single-client contractor. This source-cited draft corrects unsupported savings and blanket prohibitions and states remaining form, procedure and case-specific gaps. A bounded source-review record is linked under Sources; accountant attestation remains pending."
-version: "0.9"
+version: "0.10"
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 category: tax-optimization
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,7 +12,7 @@ domain: tax-optimization
 type: situation-rules
 ---
 
-# Moldova tax planning and regime comparison, 2026 v0.9
+# Moldova tax planning and regime comparison, 2026 v0.10
 
 ## Who this applies to
 
@@ -103,7 +103,7 @@ IT-park entry/exit changes the tax regime from the **month after** status acquis
 
 ### Complete the actual monthly IU17 return
 
-The current Order 135 consolidation and all nine linked official DOCX attachments have now been read and retained unchanged, including all fourteen rendered pages. Its annex 2 completion instructions are published inline in the official order and were read there. The May 2026 amendment supplies the current monthly-sales wording; keep it separate from the January 2026 form change. [Current Order 135 and inline annex 2][parkorder]; [Order 59 point 2][iuamend]; [attachment/read-scope evidence](../../evidence/ledgers/md-country-evidence/itpark-current-attachments.json).
+The current Order 135 consolidation and all nine linked official DOCX attachments have now been read and retained unchanged, including all fourteen rendered pages. Its annex 2 completion instructions are published inline in the official order and were read there. The May 2026 amendment supplies the current monthly-sales wording; keep it separate from the January 2026 form change. [Current Order 135 and inline annex 2][parkorder]; [Order 59 point 2][iuamend]; [attachment/read-scope evidence](https://github.com/openaccountants/evidence/blob/main/ledgers/md-country-evidence/itpark-current-attachments.json).
 
 Use the registered name/fiscal code, CAEM-2 activity, actual park registration code, four-character head-office CUATM, SFS office and submission date. The monthly period format is **L/NN/YYYY**, with month 1–12. This monthly period code does not replace the separate annual IUPT code or the annual salary-information year. Establish resident status and the applicable entry/exit month before selecting the return. [Order 135 annex 2 part I points 1–8][parkorder]; [actual IU17 header][iu17actual]; [Code arts. 368, 375][code].
 
@@ -212,7 +212,7 @@ Model the legally available choices using those numbers before presenting a savi
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](https://github.com/openaccountants/evidence/blob/main/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Read 30 October 2026. The bounded source-review record is linked under Sources; accountant attestation remains pending.
 

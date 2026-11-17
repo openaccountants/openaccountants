@@ -2,10 +2,10 @@
 name: gg-company-formation
 description: >
   Guernsey local company incorporation reference covering the licensed applicant, founder, director, registered office and resident agent, application documents, ownership information, person registration and Registry fees. Includes a recomputable fee example and post-incorporation handover controls. Based on primary Registry guidance checked in October 2026; current statutory reconciliation, complex ownership and specialised entities remain outside this research draft. Independent whole-pack source review is recorded in the Sources section; professional attestation remains pending.
-version: "0.4"
+version: "0.5"
 jurisdiction: GG
 tax_year: 2026
-last_updated: 2026-11-15
+last_updated: 2026-11-17
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -82,7 +82,7 @@ Before using the application, reconcile the constitution, founder, director, own
 
 Section 17 now confirms the memorandum, first-director consents/particulars, registered office, resident-agent information/beneficial-owner compliance statement, founder details, initial share capital or guarantee, required consents/resolutions and compliance declaration. Distinguish cash from non-cash consideration in the initial-capital statement. The application may propose an incorporation date no later than **three months after application**; French constitutional text requires an English translation. The Registrar rejects a non-compliant application. These controls supplement the original application checklist rather than replacing it. [Companies Law s17(1)–(11)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998).
 
-Not yet confirmed: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated-sector permissions and specialised company forms. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending. This Guide's presence does not establish comprehensive Guernsey coverage.
+Not yet confirmed: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated-sector permissions and specialised company forms. The [fresh independent whole-pack review](https://github.com/openaccountants/evidence/blob/main/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](https://github.com/openaccountants/evidence/blob/main/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending. This Guide's presence does not establish comprehensive Guernsey coverage.
 
 ## Penalties and interest
 
@@ -143,6 +143,6 @@ expected:
 
 The original Registry review dated 22 October 2026 and subsequent scoped reviews remain in the linked research records. On 14 November 2026 the legal-library URL returned 403/429 and an ordinary browser remained on its verification page; the Law is therefore cited from the preserved genuine October primary PDF. Later amendments beyond that archived version are not established here.
 
-Not yet confirmed: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated permissions and specialised company forms. These are explicit exclusions from the ordinary application/fee method. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; no professional attestation is claimed.
+Not yet confirmed: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated permissions and specialised company forms. These are explicit exclusions from the ordinary application/fee method. The [fresh independent whole-pack review](https://github.com/openaccountants/evidence/blob/main/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](https://github.com/openaccountants/evidence/blob/main/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; no professional attestation is claimed.
 
 > Contributed by OpenAccountants.

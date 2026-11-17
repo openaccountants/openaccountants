@@ -1,10 +1,10 @@
 ---
 name: moldova-social-contributions
 description: "Compute Moldova social contributions and compulsory medical insurance for 2026. Distinguish ordinary private and public employers, special aviation roles, agricultural relief, IT-park insured income, independent physicians and justice professions, fixed-contribution categories, patents, taxi transitions, day workers and independent service entrepreneurs. Apply the social minimum base and separate part-time contribution floor, and distinguish salary accrual from medical-premium payment timing. Use for CNAS, CNAM, IPC21, fixed social insurance, health premiums, payroll contribution reconciliation, status overlaps, payment deadlines and arrears. This source-cited draft has a bounded source-review record linked under Sources and does not claim comprehensive coverage or accountant attestation."
-version: "0.16"
+version: "0.17"
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 depends_on:
   - social-contributions-workflow-base
 category: international
@@ -14,7 +14,7 @@ domain: payroll
 type: computation
 ---
 
-# Moldova social contributions and medical insurance, 2026 v0.16
+# Moldova social contributions and medical insurance, 2026 v0.17
 
 ## Who this applies to
 
@@ -421,7 +421,7 @@ expected:
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](https://github.com/openaccountants/evidence/blob/main/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Primary-source reads on 30–31 October 2026, with individual dates below. The bounded source-review record is linked below; no accountant attestation or comprehensive country coverage is claimed. Platform metadata and CTA are preserved.
 

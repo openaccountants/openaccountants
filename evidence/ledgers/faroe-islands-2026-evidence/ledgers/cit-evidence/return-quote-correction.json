@@ -1,9 +1,0 @@
-{
-  "date": "2026-10-28",
-  "fix": "CIT058 / TP018 append source quotes and nativeLF, no Guide change",
-  "source": "https://www.taks.fo/en/individuals/tax/tax-return",
-  "LF": [
-    32,
-    39
-  ]
-}
