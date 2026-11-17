@@ -140,9 +140,10 @@ raise SystemExit(module.main(sys.argv[2:]))
 
     def test_workflow_keeps_secret_scope_and_uses_one_shared_verified_entry(self):
         doc = yaml.safe_load((ROOT / ".github/workflows/ingest-to-platform.yml").read_text())
-        self.assertEqual(doc["permissions"], {"contents": "read", "issues": "write"})
+        self.assertEqual(doc["permissions"], {"contents": "read"})
         self.assertEqual(list(doc["jobs"]), ["ring"])
         job = doc["jobs"]["ring"]
+        self.assertEqual(job["permissions"], {"contents": "read", "issues": "write"})
         self.assertEqual(job["environment"], "production")
         self.assertEqual(job["if"], "github.ref == 'refs/heads/main'")
         self.assertEqual(job["steps"][0]["with"]["fetch-depth"], 0)
