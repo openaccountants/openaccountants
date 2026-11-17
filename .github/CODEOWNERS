@@ -28,3 +28,16 @@
 /REUSE.toml @michaelcutajar1995
 /CLA.md @michaelcutajar1995
 /COMMERCIAL-LICENSING.md @michaelcutajar1995
+
+# Data-model guards (Michael, 17 Nov 2026): every change needs the founder's review,
+# whoever opens it, people, bots or other chats.
+# The GitHub-to-accountant map that approval credit on the site relies on.
+/accountants.yml @michaelcutajar1995
+# The figure check and the calculator quote guard: weakening either must not self-merge.
+/scripts/check-row-sources.py @michaelcutajar1995
+/scripts/check-calculator-quotes.py @michaelcutajar1995
+/calculators/quoted-lines.json @michaelcutajar1995
+# Per-country price lists (each figure proven once).
+/library/ @michaelcutajar1995
+# The MCP registry manifest; the website reads it at runtime.
+/mcp/server.json @michaelcutajar1995
