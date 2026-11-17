@@ -1,264 +1,340 @@
 ---
 name: americas-corridors
-description: "Use when asked about Americas Corridors. Quick Reference"
+description: "Apply Americas treaty withholding ceilings to dividends, interest, royalties and services, including eligibility, PE tests, Brazilian protocols and relief documents."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/americas-corridors"
   jurisdiction: "GLOBAL"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-17"
 ---
 
 # Americas Corridors
 
-## Quick Reference
+Version 1.2. Apply the source country's domestic rule first, then the applicable treaty ceiling and its eligibility conditions. This Guide covers payments made in 2026 and the nine original corridors: US–Canada, US–Mexico, US–Brazil, Brazil–Argentina, Canada–UK, Mexico–Spain, Brazil–Portugal, Chile–Spain and Colombia–Spain, together with Brazil's Japan, India, France and Spain treaty comparisons.
 
-**Quick Reference**
+## Quick reference
 
-| Field | Value |
-| --- | --- |
-| Jurisdiction | Americas (North, Central, South) |
-| Corridors Covered | US-CA, US-MX, US-BR, BR-AR, CA-UK, MX-ES, BR-PT, CL-ES, CO-ES |
-| Number of Corridors | 9 |
-| Last Verified | May 2026 |
-| Key Note | US has NO treaty with Brazil. Brazil has limited treaty network. Latin American countries generally impose higher WHT rates than OECD average. |
+A corridor heading identifies the country pair. Unless a direction is stated, the treaty ceiling applies in either direction. It does not create a tax where domestic law exempts the payment. The old US–Brazil table actually described **Brazilian-source payments to US recipients**; both directions are distinguished below.
 
-## US → Canada
+| Payment or issue | Answer to establish before selecting a rate | Official source |
+|---|---|---|
+| US–Canada interest | Ordinary treaty interest is exempt at source even between related parties; contingent/participating interest and REMIC excess inclusions have separate rules. | [Arts XI(1), (3), (5)–(6)](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention-consolidated-1980-1983-1984-1995-1997-2007.html) |
+| US–Mexico dividends | Ordinary ceilings and a separately conditioned parent/pension exemption coexist. | [Protocol art II, replacing art 10](https://home.treasury.gov/system/files/131/Treaty-Mexico-Pr2-10-26-2002.pdf) |
+| Brazil dividends | The former general exemption is no longer the ordinary outbound rule; apply the new law and its transitions. | [Law 15,270/2025 arts 3 and 8](https://legis.senado.leg.br/norma/41758136/publicacao/41762089) |
+| Chile-source dividends | The ordinary bilateral dividend cap does not limit Chile's additional tax while first-category tax is creditable. | [Treaty art 10(2), final sentence](https://www.sii.cl/normativa_legislacion/archivos_pdf/mli_espana_esp.pdf) |
+| PE thresholds | Construction and service-day tests differ; absence of a service-day clause does not exclude a fixed-place or agency PE. | [Art V](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention-consolidated-1980-1983-1984-1995-1997-2007.html); [Art 5](https://www.sii.cl/normativa_legislacion/archivos_pdf/mli_espana_esp.pdf) |
 
-**US → Canada Withholding Tax Rates**  _(US-Canada Convention signed 26 September 1980, five Protocols (latest 2007). IRS Table 1.)_
+## Required inputs
 
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — portfolio | 15% | Art X(2)(b) | CA domestic WHT 25% |
-| Dividends — substantial (≥10% voting) | 5% | Art X(2)(a) | Direct corporate investment |
-| Interest — arm's length | 0% | Art XI(1) | 2007 Fifth Protocol eliminated |
-| Interest — related parties | 10% | Art XI | Related-party exception retained |
-| Royalties — copyright/literary/artistic/software | 0% | Art XII(2)(a) | Specific exemption |
-| Royalties — other (patents, trademarks) | 10% | Art XII(2)(b) | Industrial/commercial |
-| Technical services | 0% | Art VII/XIV | Business profits / independent services |
+Obtain the payer/source country, recipient's treaty residence and legal form, payment date, gross amount and currency, beneficial ownership and any intermediary or transparent entity. Identify the exact income: dividend, ordinary or participating interest, copyright, software, patent, trademark, equipment, know-how, technical assistance or another service. Obtain ownership percentage and voting/capital basis, direct or indirect holding, acquisition history, related-party terms, pension/government status, and evidence for the relevant limitation-on-benefits (LOB) or principal-purpose test (PPT). For services, obtain where the work occurs, project connections, days present, revenue facts, fixed places, agents, fixed bases and who bears the payment.
 
-**Source:** US-Canada Convention signed 26 September 1980, five Protocols (latest 2007). IRS Table 1.
-**Special provisions:** Fifth Protocol (2007) was transformative — eliminated arm's length interest WHT and merged independent personal services into business profits. Split royalty treatment is typical of Canadian treaty practice. Canada domestic WHT is 25% across the board. Comprehensive LOB. Cross-border pension rules (RRSP/RRIF recognition). This is the highest-volume bilateral tax treaty corridor in the world.
-**Last verified:** May 2026
+## The method, step by step
 
-## US → Mexico
+1. Establish the domestic source, classification, taxable amount and exemption. A treaty ceiling is a maximum, not the default domestic rate.
+2. Match the residence and payment to the actual treaty, amending protocols and applicable period. For an MLI modification, check both parties' deposited positions, matching provisions and effective dates. A signature alone is insufficient.
+3. Apply the specific income article before the residual business-profits rule. A technical-service label does not by itself establish exemption. Check PE/fixed-base connection and non-arm's-length excess clauses.
+4. Test ownership and holding periods, beneficial ownership where the article requires it, and LOB/PPT or special-regime restrictions. Retain the evidence rather than assuming that an address or residence certificate proves every condition.
+5. Calculate domestic withholding, then reduce it only to the available treaty ceiling or exemption. Keep any additional corporate-level tax, tax credit, gross-up or other levy separate.
+6. Obtain the payer's relief documentation before payment where appropriate. If excess withholding occurred, identify the source country's refund route and preserve the gross payment and withholding certificate. The country documentation section identifies confirmed requirements and specific remaining holds.
 
-**US → Mexico Withholding Tax Rates**  _(US-Mexico Convention signed 18 September 1992. IRS Table 1.)_
+## US–Canada
 
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — portfolio | 10% | Art 10(2)(b) | MX domestic WHT 10% |
-| Dividends — substantial (≥10% voting) | 5% | Art 10(2)(a) | Direct corporate investment |
-| Interest — general | 15% | Art 11(2) | Standard rate |
-| Interest — banks/publicly traded bonds | 10% | Art 11(2) | Financial institution rate |
-| Interest — certain bank/insurance | 4.9% | Art 11(2) | Special category |
-| Royalties | 10% | Art 12(2) | All categories 10% |
-| Technical services | 0% | Art 14 | Independent personal services — no fixed base |
+These are the current consolidated convention provisions, incorporating the latest protocol. The fifth protocol entered into force on 15 December 2008; its withholding provisions generally applied from 1 February 2009, subject to its separate interest, transparent-entity and service-PE transitions. Those transitional related-interest rates do not apply to a 2026 payment. [Finance Canada entry announcement](https://www.canada.ca/en/news/archive/2008/12/canada-global-competitiveness-aided-entry-force-updated-canada-united-states-income-tax-treaty.html); [Protocol art 27](https://home.treasury.gov/system/files/131/Treaty-Canada-Pr2-9-21-2007.pdf).
 
-**Source:** US-Mexico Convention signed 18 September 1992. IRS Table 1.
-**Special provisions:** Three-tier interest rate structure is unique. Mexico domestic WHT varies: dividends 10%, interest 4.9-35%, royalties 25-35%. Portfolio dividend treaty rate (10%) matches Mexico's domestic rate. NAFTA/USMCA investment provisions interact with treaty. LOB article.
-**Last verified:** May 2026
+| Income | Ceiling and conditions | Official source |
+|---|---|---|
+| Dividends | 5% if the beneficial owner is a company owning at least 10% of voting stock; 15% otherwise. Apply the transparent-entity ownership rule and the special nonresident-owned investment corporation, RIC and REIT provisions. A connected PE holding falls under business profits. | [Art X(2), (4), (7)](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention-consolidated-1980-1983-1984-1995-1997-2007.html) |
+| Ordinary interest, including related parties | 0% if beneficially owned by a resident of the other state. PE-connected debt and non-arm's-length excess are exceptions. The old flat 10% related-party entry was wrong. | [Art XI(1), (3), (5)](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention-consolidated-1980-1983-1984-1995-1997-2007.html) |
+| Contingent/participating interest | 15% ceiling for the US contingent-interest class and Canadian participating-interest class specified in XI(6)(a)–(b). REMIC residual excess inclusions remain subject to domestic law. | [Art XI(6), cross-referring to X(2)(b)](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention-consolidated-1980-1983-1984-1995-1997-2007.html) |
+| Copyright, software, patents and specified know-how | 0% for XII(3): eligible copyright excludes motion pictures and film/video or similar reproduction for television; software qualifies; patents and industrial/commercial/scientific experience qualify except information supplied with rental/franchise agreements. Broadcasting requires the specified exchange of notes. PE connection and excess-payment clauses still apply. | [Art XII(3), (5), (7)](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention-consolidated-1980-1983-1984-1995-1997-2007.html) |
+| Other royalties | 10% on the gross amount where the beneficial owner is the other state's resident, subject to PE connection and excess-payment clauses. Trademarks are not automatically exempt. | [Art XII(2), (4)–(7)](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention-consolidated-1980-1983-1984-1995-1997-2007.html) |
+| Services | Business profits are taxable only in the residence state absent a source-state PE. Independent personal services were moved into that framework; former art XIV was deleted. This is not an unconditional withholding waiver. | [Arts VII and XIV](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention-consolidated-1980-1983-1984-1995-1997-2007.html); [Protocol art 9](https://home.treasury.gov/system/files/131/Treaty-Canada-Pr2-9-21-2007.pdf) |
 
-## US → Brazil
+Residence, transparent/hybrid treatment, the US saving clause and the complete LOB article must be satisfied. Pension-fund dividend/interest exemptions are conditioned by XXI(2)–(4), including its business and related-person restrictions. RRSP/RRIF recognition is not a general exemption for every payment or account: XVIII(7) provides a conditional deferral mechanism for qualifying retirement arrangements, and contribution relief has separate rules. [Arts IV, XVIII(7), XXI(2)–(4), XXIX and XXIXA](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention-consolidated-1980-1983-1984-1995-1997-2007.html).
 
-**No comprehensive income tax treaty exists between the US and Brazil.**
+## US–Mexico
 
-**US → Brazil Domestic Rates (No Treaty)**
+The later protocol's dividend provisions apply to payments from 1 September 2003; its other provisions generally apply to taxable periods beginning from 1 January 2004. The original short transitional dividend and interest rates have expired. [Treasury's dated entry/effect announcement](https://home.treasury.gov/news/press-releases/js538).
 
-| Income Type | Rate | Notes |
-| --- | --- | --- |
-| Dividends | 0% (BR domestic) | Brazil does not withhold on dividends (unique globally) |
-| Interest | 15% (BR domestic) | IRRF; 25% if paid to tax haven |
-| Royalties | 15% (BR domestic) | IRRF; 25% if paid to tax haven |
-| Technical services | 15-25% (BR domestic) | IRRF depending on service type |
+| Income | Ceiling and conditions | Official source |
+|---|---|---|
+| Ordinary dividends | 5% for a beneficial-owner company directly owning at least 10% of voting stock; 10% otherwise. PE/fixed-base connected holdings and RIC/REIT distributions have special treatment. | [Art II, replacing treaty art 10(2), (4)–(5)](https://home.treasury.gov/system/files/131/Treaty-Mexico-Pr2-10-26-2002.pdf) |
+| Parent-company or pension dividends | 0% only if the parent owns at least 80% of voting stock throughout a 12-month period ending on declaration and satisfies one of the specified pre-existing ownership, listed-company LOB, derivative-benefits or competent-authority routes. The separate generally exempt pension/employee-benefit organization exemption excludes business-derived dividends. RIC/REIT restrictions remain. | [Art II, new art 10(3)–(4)](https://home.treasury.gov/system/files/131/Treaty-Mexico-Pr2-10-26-2002.pdf) |
+| Bank/insurance loans and traded securities interest | 4.9% for loans granted by banks, including investment/savings banks, and insurance companies, or bonds/securities regularly and substantially traded on a recognized securities market. Back-to-back loans follow domestic law. | [Art 11(2)(a), final sentence](https://www.irs.gov/pub/irs-trty/mexico.pdf) |
+| Other specified interest | 10% for interest paid by banks, or purchaser interest on machinery/equipment credit sales where the beneficial owner is the seller; 15% in other cases. This is different from interest on a bank-granted loan. | [Art 11(2)(b)–(c)](https://www.irs.gov/pub/irs-trty/mexico.pdf) |
+| Exempt interest | 0% for the government/political-subdivision/local-authority, generally exempt pension, and specified export-credit cases, only on the terms of art 11(4). PE/fixed-base connections and related excess remain outside the ordinary cap. | [Art 11(4), (6), (8)](https://www.irs.gov/pub/irs-trty/mexico.pdf) |
+| Royalties | 10%, including the defined know-how and equipment categories, subject to PE/fixed-base connection and related excess. | [Art 12](https://www.irs.gov/pub/irs-trty/mexico.pdf) |
+| Services | Company business profits use art 7 and the PE test. Independent individual services can be taxed at source through a regularly available fixed base or presence exceeding 183 days in a 12-month period. The original protocol additionally addresses US companies furnishing personal services through a Mexican fixed base. | [Arts 7, 14 and original Protocol para 14](https://www.irs.gov/pub/irs-trty/mexico.pdf) |
 
-**Note:** The US and Brazil have never concluded a comprehensive income tax treaty. Negotiations have been discussed for decades but no convention has been finalised as of May 2026. Brazil is not on the IRS A-to-Z list of US income tax treaties. US-source FDAP payments to Brazilian residents face default 30% US WHT with no treaty relief. Brazilian IRRF (15% general, 25% for tax haven recipients) applies to outbound payments with no treaty reduction to the US. However, Brazil uniquely does NOT withhold on dividend distributions.
-**Last verified:** May 2026
+Apply residence and the LOB article before relief. Its references to NAFTA are part of the treaty text; USMCA trade or investment status by itself does not establish an income-tax withholding reduction. The current interpretation of those legacy trade-agreement references is a specific hold below. [Arts 4 and 17](https://www.irs.gov/pub/irs-trty/mexico.pdf).
 
-## Brazil → Argentina
+## US–Brazil: no comprehensive income-tax treaty
 
-**Brazil → Argentina Withholding Tax Rates**  _(Brazil-Argentina DTA. PwC Argentina WHT table.)_
+Brazil is absent from the IRS comprehensive income-tax treaty list. Accordingly, there is no bilateral treaty ceiling for this pair; a domestic exemption can still apply. [IRS A–Z treaty register](https://www.irs.gov/businesses/international-businesses/united-states-income-tax-treaties-a-to-z).
 
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends | 15% | Art 10 | BR does not impose domestic dividend WHT |
-| Interest | 15% | Art 11 | AR domestic WHT 15.05-35% |
-| Royalties — general | 10%/15% | Art 12 | Split by type |
-| Technical services | 15% | Art 12/14 | Service fees |
+| Direction and income | Domestic rule, before any specific statutory exemption | Official source |
+|---|---|---|
+| Brazil payer, US recipient: dividends | 10% outbound IRRF from 1 January 2026. The law excludes qualifying profits through 2025 whose distribution was approved by 31 December 2025 and which are payable and paid/credited/employed/delivered on the original approved terms; it also provides specified government/sovereign-fund/retirement-entity exclusions. This is not the former general 0% regime. | [Art 3, Law 9,249 art 10(4)–(5), and art 8](https://legis.senado.leg.br/norma/41758136/publicacao/41762089) |
+| Brazil payer: ordinary interest/residual income | Generally 15% where no specific tax rule applies; 25% for the specified favored-tax-jurisdiction recipient class. Financial investments, exempt debt and interest on net equity require their own classification, so this is not a universal finance rate. | [Q129, “Demais rendimentos” and financial-operation distinctions](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf) |
+| Brazil payer: royalties and technical/administrative assistance | Generally 15%; 25% for a recipient resident in a favored-tax jurisdiction. Ordinary nontechnical service remuneration instead has the separate 25% rule. Apply the authority's definitions and exceptions, not a discretionary 15%–25% band. | [Q129, remuneration and royalties/technical assistance subsections](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf) |
+| US payer, Brazilian recipient: US-source FDAP | Generally 30% chapter 3 tax unless a US statutory exclusion or exemption applies. This is not a tax on every cross-border payment, and effectively connected income has a different regime. No Brazil treaty reduction is available. | [Publication 515 (2026), “Withholding of Tax”](https://www.irs.gov/pub/irs-pdf/p515.pdf); [Treaty register](https://www.irs.gov/businesses/international-businesses/united-states-income-tax-treaties-a-to-z) |
 
-**Source:** Brazil-Argentina DTA. PwC Argentina WHT table.
-**Special provisions:** Brazil uniquely does not withhold on dividends — treaty rate relevant only from Argentine side. Argentina domestic WHT on interest is 15.05-35%, reduced by treaty. Royalties split: 10% for certain categories, 15% for others. Both countries have limited treaty networks. MERCOSUR economic integration provides trade benefits but does not affect treaty rates.
-**Last verified:** May 2026
+The amended Brazilian law also creates an elective foreign-beneficiary credit where the combined effective company tax and dividend withholding exceeds the specified nominal combined company tax, subject to implementing rules. It is not an automatic reduction at payment. Current implementation is held below. Brazilian interest on net equity is a separate classification; the current consolidated statute has changed its domestic withholding, so do not reuse the former general-interest row for it. [Art 3, new art 10-A](https://legis.senado.leg.br/norma/41758136/publicacao/41762089); [Law 9,249 art 9(2)](https://legis.senado.gov.br/norma/551125/publicacao/34619641).
 
-## Canada → UK
+## Brazil–Argentina
 
-**Canada → UK Withholding Tax Rates**  _(Canada-UK Convention 1978, consolidated 2014. Modified by MLI (effective January 2020).)_
+The 2017 amending protocol has applied since 1 January 2019. It changes the old all-dividends ceiling and technical-services treatment. [ARCA official applicability record](https://www.afip.gob.ar/convenios-internacionales/materia/documentos/Convenios-para-evitar-la-doble-imposicion/Convenios/ficha-tecnica/Brasil-Protocolo-de-Enmienda.pdf).
 
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — portfolio | 15% | Art 10 | CA domestic WHT 25% |
-| Dividends — substantial (≥10% voting) | 5% | Art 10 | Direct investment |
-| Interest | 10% | Art 11(2) | Government interest exempt |
-| Royalties — copyright/patent/software | 0% | Art 12(3) | Specific exemption |
-| Royalties — other (trademarks, franchises) | 10% | Art 12(2) | General rate |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
+| Income | Ceiling and conditions | Official source |
+|---|---|---|
+| Dividends | 10% for a beneficial-owner company directly holding at least 25% of capital for a 365-day period including payment; specified merger/demerger ownership changes are disregarded. 15% otherwise. Brazil's lower ordinary domestic dividend rate still matters. | [Protocol art 7, replacing X(2)](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/argentina/argentina-protocolo-de-emenda-evitar-dupla-tributacao.pdf) |
+| Interest | 15% ordinary ceiling. Retain the original XI(3) government-recipient exemption and exclusive source taxation of specified government-issued debt; PE/fixed-base connection and related excess are separate. | [Protocol art 8](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/argentina/argentina-protocolo-de-emenda-evitar-dupla-tributacao.pdf); [original XI(3)–(7)](https://www.argentina.gob.ar/normativa/nacional/ley-22675-208184/texto) |
+| Royalties and technical assistance | 15% for trademarks; 10% for other royalties only subject to amended Protocol para 7, including technology-contract registration/authorization and the author/heir condition for the relevant literary/artistic/software payments. Otherwise the protocol retains a 15% limit. Technical/scientific/administrative assistance and defined technical services are expressly included in royalties; they are not a blanket business-profits exemption or an automatic flat 15% category. | [Arts 9, 20–21, replacing XII(2) and Protocol paras 7 and 9](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/argentina/argentina-protocolo-de-emenda-evitar-dupla-tributacao.pdf) |
 
-**Source:** Canada-UK Convention 1978, consolidated 2014. Modified by MLI (effective January 2020).
-**Special provisions:** Mirror of UK→Canada rates. Split royalty rates are characteristic of Canadian treaty practice. Copyright, patent, and software royalties at 0% — critical for tech/media cross-border flows. MLI PPT applies since January 2020. Canada domestic WHT is uniformly 25%.
-**Last verified:** May 2026
+The new XXVII includes a PPT, offshore-regime restriction, ownership/substantive-business condition and third-state PE restriction. MERCOSUR trade context does not supply an income-tax rate. [Art 16, new XXVII](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/argentina/argentina-protocolo-de-emenda-evitar-dupla-tributacao.pdf).
 
-## Mexico → Spain
+## Canada–UK
 
-**Mexico → Spain Withholding Tax Rates**  _(Mexico-Spain Convention. PwC Mexico/Spain WHT tables.)_
+The official synthesized text incorporates the convention, amendments and MLI PPT. The MLI withholding modifications took effect from 1 January 2020. [Official synthesized text, introductory dates and PPT box](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf).
 
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — portfolio | 10% | Art 10 | MX domestic WHT 10% |
-| Dividends — substantial (≥25% capital) | 5% | Art 10 | Higher threshold (25%) |
-| Interest — general | 10% | Art 11 | Standard rate |
-| Interest — banks/FIs | 4.9% | Art 11 | Special bank rate |
-| Royalties | 10% | Art 12 | All categories 10% |
-| Technical services | 0% | Art 7/14 | Business profits / independent services |
+| Income | Ceiling and conditions | Official source |
+|---|---|---|
+| Dividends | 5% for a beneficial-owner company controlling directly or indirectly at least 10% of voting power; 15% otherwise. A separate pension dividend exemption is described immediately below. | [Art 10(2)–(6)](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) |
+| Interest | 0% where the beneficial owner deals at arm's length with the payer, subject to the specified contingent-interest exception. Otherwise 10% ordinary cap; specified export-credit exemptions also apply on their stated terms. PE/fixed-base connection and related excess remain separate. | [Art 11, including (3)(c) and (4), and interpretative protocol](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) |
+| Royalties | 0% for the specified copyright category excluding films/television, patents/know-how excluding rental/franchise arrangements, and software; 10% other royalties. PE/fixed-base connection and related excess remain separate. | [Art 12](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) |
+| Technical services | Business profits are residence-only absent a source-state PE. Do not import a royalty classification from another Canadian treaty. | [Arts 5 and 7](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) |
 
-**Source:** Mexico-Spain Convention. PwC Mexico/Spain WHT tables.
-**Special provisions:** Spanish multinational investments in Mexico are substantial. 25% capital threshold for reduced dividends reflects older treaty practice. Mexico's 4.9% bank interest rate appears in multiple Mexican treaties. Spain domestic WHT: 19% on dividends to non-residents.
-**Last verified:** May 2026
+The pension dividend exemption is 0% for an organization constituted and operated in the other state exclusively to administer/provide benefits under recognized pension plans, if it beneficially owns and holds the shares as an investment, is generally exempt there, owns no more than 10% of capital **and** no more than 10% of voting power, and each plan primarily benefits other-state residents. Art 10(4) defines the recognized national plans and permits competent-authority agreement for others. [Art 10(3)–(4)](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf).
 
-## Brazil → Portugal
+Canada's usual Part XIII rate is 25%, but arm's-length interest is generally domestically exempt and other exceptions exist; the old “across the board” statement was wrong. [Part XIII and interest sections](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/non-residents-canada.html).
 
-**Brazil → Portugal Withholding Tax Rates**  _(Brazil-Portugal Convention. PwC Brazil WHT guidance.)_
+## Mexico–Spain
 
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends | 10%/15% | Art 10 | 10% if ≥25% capital; 15% otherwise |
-| Interest | 15% | Art 11 | Standard rate |
-| Royalties | 15% | Art 12 | Standard rate |
-| Technical services | 15% | Art 12/14 | Service fees |
+Use the convention as amended by the 2015 protocol, effective in 2017, plus the operative matched MLI provisions. The corporate dividend ownership condition below includes MLI art 8; the Spanish and Mexican deposited notifications both identify this provision. The MLI withholding changes apply from 1 January 2024. [Consolidated convention](https://www.boe.es/buscar/pdf/1994/BOE-A-1994-23743-consolidado.pdf); [Spanish deposited notifications and MLI arts 8 and 35](https://www.boe.es/buscar/pdf/2021/BOE-A-2021-21097-consolidado.pdf); [Mexican deposited position, art 8](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-position-mexico-instrument-deposit.pdf); [Spanish notification](https://www.boe.es/boe/dias/2023/11/18/pdfs/BOE-A-2023-23341.pdf).
 
-**Source:** Brazil-Portugal Convention. PwC Brazil WHT guidance.
-**Special provisions:** Historic Lusophone corridor. Brazil does not impose domestic dividend WHT — treaty rate relevant only from Portuguese side. Portugal domestic WHT: 25% across categories. Both countries are in the CPLP (Community of Portuguese Language Countries). One of Brazil's oldest treaty relationships.
-**Last verified:** May 2026
+| Income | Ceiling and conditions | Official source |
+|---|---|---|
+| Dividends | 10% ordinary cap. 0% for a resident beneficial-owner company with share/participation capital directly holding at least 10% of capital for a 365-day period including payment; qualifying reorganization changes are disregarded. Separate resident pension-fund exemption. A connected PE/fixed base changes treatment. | [Art 10](https://www.boe.es/buscar/pdf/1994/BOE-A-1994-23743-consolidado.pdf); [MLI art 8 and Spanish art 8 notification](https://www.boe.es/buscar/pdf/2021/BOE-A-2021-21097-consolidado.pdf); [matching Mexican notification](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-position-mexico-instrument-deposit.pdf) |
+| Interest | 4.9% on qualifying bank/other financial-institution/insurance loans and regularly/substantially traded bonds or other credit securities; 10% otherwise. Government/central-bank, government-paid, qualifying public export-finance and pension-fund interest can be exempt under XI(3). Connected PE/fixed base and excess-payment clauses remain. | [Art 11](https://www.boe.es/buscar/pdf/1994/BOE-A-1994-23743-consolidado.pdf) |
+| Royalties | 10% ordinary ceiling. 0% for the specified production/reproduction copyright payments where the other-state resident recipient is taxable on them; the film, television, disc and sound-tape exclusions matter. PE/fixed-base connection and excess-payment clauses remain. | [Art 12](https://www.boe.es/buscar/pdf/1994/BOE-A-1994-23743-consolidado.pdf) |
+| Technical assistance | Protocol para 7 applies arts 7 or 14. Business profits require the PE analysis; independent services may be taxed at source for a fixed base or at least 183 days in any continuous 12-month period, only to the attributable local income. | [Art 14 and Protocol para 7](https://www.boe.es/buscar/pdf/1994/BOE-A-1994-23743-consolidado.pdf) |
 
-## Chile → Spain
+The bilateral protocol already contains a PPT and domestic anti-abuse/CFC/thin-capitalization preservation. Its interest/royalty MFN clause requires the actual later agreement and effective conditions; never apply a third country's rate merely because it is lower. [Protocol paras 1 and 6](https://www.boe.es/buscar/pdf/1994/BOE-A-1994-23743-consolidado.pdf).
 
-**Chile → Spain Withholding Tax Rates**  _(Chile-Spain Convention. PwC Chile WHT table.)_
+## Brazil–Portugal
 
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — portfolio | 10% | Art 10 | CL domestic WHT 35% (credit system) |
-| Dividends — substantial (≥20% capital) | 5% | Art 10 | Lower rate |
-| Interest — general | 15% | Art 11 | Standard rate |
-| Interest — banks/FIs | 5% | Art 11 | Bank rate |
-| Royalties — copyright/literary/artistic | 5% | Art 12 | Cultural royalties |
-| Royalties — other (industrial/commercial) | 10% | Art 12 | Industrial royalties |
-| Technical services | 0% | Art 7/14 | Business profits / independent services |
+| Income | Ceiling and conditions | Official source |
+|---|---|---|
+| Dividends | 10% for a beneficial-owner company directly holding at least 25% of capital continuously for two years before payment; 15% otherwise. Connected PE holdings are excluded. The domestic Brazilian outbound rate can be lower than the treaty ceiling. | [Art 10(2), (4)](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/portugal/portugal-141-convencao-dupla-tributacao.pdf) |
+| Interest | 15% ordinary cap; qualifying government, subdivision/local-authority or wholly owned institution beneficial owners are exempt. Third-country PE, connected PE and excess-interest rules remain. | [Art 11 and Protocol para 4](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/portugal/portugal-141-convencao-dupla-tributacao.pdf) |
+| Royalties, technical assistance and technical services | 15% cap for the resident beneficial owner; the protocol expressly brings technical assistance and services within royalties. Connected PE and excess-payment rules remain. Do not treat these fees as automatically exempt business profits. | [Art 12 and Protocol para 5](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/portugal/portugal-141-convencao-dupla-tributacao.pdf) |
 
-**Source:** Chile-Spain Convention. PwC Chile WHT table.
-**Special provisions:** Spain is a major investor in Chile. Chile's integrated tax system uses a credit mechanism for dividends. Split royalty rates (5%/10%). Two-tier interest (5%/15%). Chile domestic WHT on royalties is 30% — treaty provides significant reduction.
-**Last verified:** May 2026
+The convention denies benefits for the specified Madeira, Santa Maria, Manaus, SUDAM/SUDENE or similar special tax benefits. Its professional-services and gains MFN clause is separate from technical-service classification. Portugal's domestic nonresident corporate withholding is ordinarily 25%, subject to exemption and the statutory special-recipient exceptions; the old statement did not cover all recipient types. [Protocol paras 6 and 9](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/portugal/portugal-141-convencao-dupla-tributacao.pdf); [CIRC arts 87(4) and 94](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx).
 
-## Colombia → Spain
+## Chile–Spain
 
-**Colombia → Spain Withholding Tax Rates**  _(Colombia-Spain Convention. PwC Colombia WHT guidance.)_
+The official synthesized text gives MLI effects from 1 January 2023. Use it together with SII Circular 50/2018's agreed MFN changes, which the unchanged base-rate text alone does not show. [Introductory applicability dates](https://www.sii.cl/normativa_legislacion/archivos_pdf/mli_espana_esp.pdf); [Section II(4), Spain, and III](https://www.sii.cl/normativa_legislacion/circulares/2018/circu50.pdf).
 
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — portfolio | 10% | Art 10 | CO domestic WHT 20% |
-| Dividends — substantial (≥20% capital) | 5% | Art 10 | Lower rate |
-| Interest | 10% | Art 11 | CO domestic WHT 15-20% |
-| Royalties | 10% | Art 12 | CO domestic WHT 20% |
-| Technical services | 10% | Art 12 | Included in royalties article |
+| Income | Ceiling and conditions | Official source |
+|---|---|---|
+| Dividends paid from Spain | 5% where the beneficial owner is a company directly or indirectly holding at least 20% of capital; 10% otherwise. Connected PE holdings use art 7. | [Art 10(2), (4)](https://www.sii.cl/normativa_legislacion/archivos_pdf/mli_espana_esp.pdf) |
+| Dividends paid from Chile | The bilateral 5%/10% limits do not limit Chile's additional tax while first-category tax is creditable. Apply the imputation calculation rather than multiplying the cash dividend by the ordinary bilateral rate. | [Art 10(2), final sentence](https://www.sii.cl/normativa_legislacion/archivos_pdf/mli_espana_esp.pdf) |
+| Specified qualifying lender interest | 4% where the beneficial owner is (i) a bank; (ii) an insurer; (iii) an enterprise substantially deriving its gross income from active, regular lending/financing business with unrelated parties and unrelated to the debtor; (iv) a machinery/equipment vendor receiving interest on that credit sale; or (v) an enterprise satisfying both tests over the three tax years before the interest-payment tax year: more than 50% of liabilities from financial-market bonds or interest-bearing deposits, and more than 50% of assets in loans to unrelated persons. For back-to-back/economically equivalent arrangements, the ceiling is instead 5% for classes (i), (ii), (iv), and 10% for classes (iii), (v). | [Spain, replacement XI(2)(a) and following anti-conduit terms](https://www.sii.cl/normativa_legislacion/circulares/2018/circu50.pdf) |
+| Other interest | 5% for regularly/substantially traded bonds/securities; 10% other interest from 1 January 2019. The old ordinary 15% entry is superseded. Connected PE and related excess remain separate. | [Spain, XI(2)(b)–(c) and final sentence](https://www.sii.cl/normativa_legislacion/circulares/2018/circu50.pdf); [Art 11(4), (6)](https://www.sii.cl/normativa_legislacion/archivos_pdf/mli_espana_esp.pdf) |
+| Royalties | 2% for industrial/commercial/scientific equipment; 10% otherwise. The equipment category is not a reduced copyright rate. Connected PE and excess-payment exceptions apply. | [Spain, replacement XII(2)](https://www.sii.cl/normativa_legislacion/circulares/2018/circu50.pdf); [Art 12(4), (6)](https://www.sii.cl/normativa_legislacion/archivos_pdf/mli_espana_esp.pdf) |
+| Technical services | Company business profits use art 7, including the service PE test below; ordinary assistance is not automatically know-how, but an actual transfer of experience/rights can fall under art 12. | [Arts 5, 7 and 12(3)](https://www.sii.cl/normativa_legislacion/archivos_pdf/mli_espana_esp.pdf) |
 
-**Source:** Colombia-Spain Convention. PwC Colombia WHT guidance.
-**Special provisions:** Spain is a major FDI source for Colombia. Colombia domestic WHT: 20% on royalties, 15-20% on interest, 20% on dividends. Treaty provides meaningful reduction across all categories. Colombia is part of the Pacific Alliance and OECD.
-**Last verified:** May 2026
+The matched MLI PPT and third-jurisdiction PE anti-abuse clause apply. Domestic Chilean dividend imputation and royalties must be classified separately; the domestic comparison is below. [Protocol IX with MLI arts 7 and 10](https://www.sii.cl/normativa_legislacion/archivos_pdf/mli_espana_esp.pdf).
 
-## Summary: Americas Treaty Rate Comparison
+## Colombia–Spain
 
-**Summary: Americas Treaty Rate Comparison**
+| Income | Ceiling and conditions | Official source |
+|---|---|---|
+| Dividends | 5% general; 0% for a beneficial-owner company directly or indirectly owning at least 20% of capital. The protocol's Colombian untaxed-profit/company-level tax and reinvestment conditions must be distinguished; the ordinary shareholder cap is not a blanket exemption for previously untaxed profits. Spanish partnerships are excluded from the corporate exemption. Connected PE holdings use art 7. | [Art 10 and Protocol VI](https://www.boe.es/buscar/pdf/2008/BOE-A-2008-17209-consolidado.pdf) |
+| Interest | 10% ordinary cap; 0% for a government/subdivision/local-authority beneficial owner, equipment/goods credit sales or qualifying bank/credit-institution loans. The protocol specifies included trade-credit cases; connected PE and related excess remain separate. | [Art 11 and Protocol VII](https://www.boe.es/buscar/pdf/2008/BOE-A-2008-17209-consolidado.pdf) |
+| Royalties and technical/consultancy services | 10%, including assistance, technical and consultancy services under XII(3), subject to connected PE and excess-payment rules. Colombia–UK's different service classification did **not** activate Spain's differently worded MFN clause. | [Art 12 and Protocol VIII](https://www.boe.es/buscar/pdf/2008/BOE-A-2008-17209-consolidado.pdf); [Concept 0191/3283 of 2020, Spain analysis](https://normograma.dian.gov.co/dian/compilacion/docs/concepto_tributario_dian_0000191_2020.htm) |
 
-| Corridor | Dividends (substantial) | Interest | Royalties | Key Feature |
-| --- | --- | --- | --- | --- |
-| US → CA | 5% | 0% (arm's length) | 0%/10% | Zero interest since 2007 |
-| US → MX | 5% | 4.9%/10%/15% | 10% | Three-tier interest |
-| US → BR | No treaty | 15% (domestic) | 15% (domestic) | No treaty exists |
-| BR → AR | 15% | 15% | 10%/15% | BR no dividend WHT |
-| CA → UK | 5% | 10% | 0%/10% | Split royalties |
-| MX → ES | 5% | 4.9%/10% | 10% | Bank rate 4.9% |
-| BR → PT | 10% | 15% | 15% | Lusophone corridor |
-| CL → ES | 5% | 5%/15% | 5%/10% | Split royalties |
-| CO → ES | 5% | 10% | 10% | OECD member |
+For the reduction of underlying Colombian tax in ProtocolVI(2)(a), distinguish profits exempt at company level and reinvestment in the same Colombian productive activity for at least three years. That clause also addresses the excess of maximum untaxed distributable profits over 65% of pre-tax commercial profits. These special conditions do not turn every company-level charge into a zero shareholder withholding. [ProtocolVI(1)–(3)](https://www.boe.es/buscar/pdf/2008/BOE-A-2008-17209-consolidado.pdf).
 
-## PE Threshold Notes — Americas
+DIAN's official 2024 court bulletin reports rejection of the challenge to that MFN interpretation. Do not import the Mexico, Portugal or other Colombian treaty result into this pair. [Flash Judicial 9/2024, operative result and treaty distinctions](https://www.dian.gov.co/normatividad/Judiciales/Flash-Judicial-No-9.pdf).
 
-**PE Threshold Notes — Americas**
+## PE threshold comparison
 
-| Corridor | Construction PE Threshold | Service PE | Notes |
-| --- | --- | --- | --- |
-| US → CA | 12 months | None (Art XIV merged) | Fifth Protocol merged services into Art VII |
-| US → MX | 6 months | 183 days in any 12-month period | Shorter than standard — monitor near-shoring |
-| US → BR | No treaty | No treaty | Brazil domestic PE rules apply |
-| BR → AR | 6 months | 6 months | Short threshold |
-| CA → UK | 12 months | None | Standard OECD |
-| MX → ES | 6 months | 183 days | Mexico standard |
-| CL → ES | 6 months | 183 days | Chile standard |
-| CO → ES | 12 months | 183 days | Colombia standard |
+These duration tests do not replace fixed-place, agency or other PE rules. Apply the anti-fragmentation and agent provisions actually in force for the pair. Service presence can also trigger the separate independent-services article without a corporate service PE.
 
-**Mexico and Chile** use 6-month construction PE thresholds — significantly shorter than the OECD 12-month standard. This is critical for infrastructure and energy projects.
+| Corridor | Construction / project test | Services and other important distinction | Official source |
+|---|---|---|---|
+| US–Canada | More than 12 months; natural-resource rig/ship use has its separate test. | At least 183 days in any 12 months and either V(9)(a): an individual present for that period with more than 50% of the enterprise's gross active-business revenues attributable to that individual's local services; or V(9)(b): services for the same/connected project for resident customers or customers' local PEs, with services respecting that PE. | [Art V(3)–(9)](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention-consolidated-1980-1983-1984-1995-1997-2007.html) |
+| US–Mexico | More than 6 months for listed construction/installation/resource/supervisory activities. | No general 183-day service PE clause in art 5; individual services use art 14's fixed-base or presence exceeding 183 days in 12 months. | [Arts 5 and 14](https://www.irs.gov/pub/irs-trty/mexico.pdf) |
+| US–Brazil | No bilateral treaty construction exemption. | Domestic source-country PE/business and withholding rules apply. | [Treaty register](https://www.irs.gov/businesses/international-businesses/united-states-income-tax-treaties-a-to-z) |
+| Brazil–Argentina | More than 6 months for construction/installation/assembly. | No general six-month service PE rule. Technical services are expressly royalties; original independent-professional rules and amended agent/insurance rules are distinct. | [Original arts V, XIV](https://www.argentina.gob.ar/normativa/nacional/ley-22675-208184/texto); [Arts 5–6 and 20–21](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/argentina/argentina-protocolo-de-emenda-evitar-dupla-tributacao.pdf) |
+| Canada–UK | More than 12 months. | No standalone general service-day PE clause in art 5; fixed-place/agency rules still apply. | [Art 5](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) |
+| Mexico–Spain | More than 6 months for listed works and related inspection. | No general service-day PE in art 5; independent-services art 14 separately uses a fixed base or at least 183 days in a continuous 12-month period. MLI agency/preparatory-activity changes must also be considered. | [Arts 5 and 14](https://www.boe.es/buscar/pdf/1994/BOE-A-1994-23743-consolidado.pdf); [MLI arts 12–13 and Spanish notifications](https://www.boe.es/buscar/pdf/2021/BOE-A-2021-21097-consolidado.pdf) |
+| Brazil–Portugal | More than 9 months for construction/assembly. | No standalone service-day PE clause in art 5. Do not override the technical-service royalty rule with that absence. | [Arts 5 and 12, Protocol para 5](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/portugal/portugal-141-convencao-dupla-tributacao.pdf) |
+| Chile–Spain | More than 6 months. | Enterprise services and individual independent services can create PE where the respective activity/presence exceeds 183 days in any 12 months. Aggregate identical/substantially similar associated-enterprise activity under art 5(3). | [Art 5(3), plus operative MLI modifications](https://www.sii.cl/normativa_legislacion/archivos_pdf/mli_espana_esp.pdf) |
+| Colombia–Spain | More than 6 months, not the former 12-month entry. | Art 5 has no standalone 183-day service PE. Technical services remain within art 12 even without PE. | [Arts 5 and 12](https://www.boe.es/buscar/pdf/2008/BOE-A-2008-17209-consolidado.pdf) |
 
-## Brazil's Treaty Network — Key Limitation
+## Brazil's wider treaty comparison
 
-Brazil has one of the most limited treaty networks among major economies:
+The Argentina, Chile and Portugal rows below point to their detailed conditions rather than creating a second conflicting rate home. The remaining partner comparisons retain the original Guide's scope.
 
-**Brazil Treaty Partner Rates**
+| Partner | Dividend ceiling | Interest ceiling | Royalty ceiling and conditions | Official source |
+|---|---|---|---|---|
+| Argentina | Use Brazil–Argentina above. | Use that section. | Use that section's registration/author conditions. | [Arts 7–9, 20–21](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/argentina/argentina-protocolo-de-emenda-evitar-dupla-tributacao.pdf) |
+| Chile | 10% for a beneficial-owner company controlling directly/indirectly at least 25% of voting shares; 15% otherwise. | 15%, with connected PE/fixed-base, third-state PE, special-relationship and purpose exceptions. | From 1 January 2026, 15% trademarks, 10% other royalties under the 2022 protocol. | [Base arts 10–12](https://www2.camara.leg.br/legin/fed/decret/2003/decreto-4852-2-outubro-2003-497514-publicacaooriginal-1-pe.html); [Protocol art 6 and applicability art 16](https://aplicacao.itamaraty.gov.br/ApiConcordia/Documento/download/33883) |
+| Portugal | Use Brazil–Portugal above. | Use that section. | Use that section, including technical services. | [Arts 10–12 and Protocol](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/portugal/portugal-141-convencao-dupla-tributacao.pdf) |
+| Japan | 12.5%; connected PE exception. | 12.5%; qualifying government/wholly owned agency exemption and connected PE/excess exceptions. | 25% trademarks; 15% film/radio/TV copyright; 12.5% other royalties. Art 11(6) limits relief on any royalty to fair and reasonable consideration, even without a special relationship. Connected PE and the separate special-relationship excess rule also remain applicable. | [Arts 9–11](https://www.mof.go.jp/tax_policy/summary/international/tax_convention/Brazil_ST_en.pdf); [1976 Protocol arts 1–3](https://legis.senado.leg.br/norma/503834/publicacao/15781804) |
+| India | From Brazil 1 January 2026, and India for fiscal years from 1 April 2026: 10% for a beneficial-owner company other than a partnership directly holding at least 20% of capital for 365 days including payment, with stated reorganization disregard; 15% otherwise. | 10% for a beneficial-owner bank loan of at least 5 years financing equipment purchase or investment projects; 15% otherwise; government exemption and third-state/connected PE exceptions remain. | 15% trademarks; 10% otherwise. New technical-services art 12-A has a 10% cap, its own exclusions, source and excess rules. | [2022 Protocol arts 8–11 and 22](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/india/india_protocolo-2022.pdf); [Decree 12,667/2025 entry recital](https://aplicacao.itamaraty.gov.br/ApiConcordia/Documento/download/33541) |
+| France | 15%, subject to connected PE and special distribution provisions. | 15%; 10% for qualifying bank/public-finance-participation loans of at least 7 years connected with the specified equipment/industrial/scientific/public-works projects; qualifying government loans exempt. | 10% specified copyright/qualifying resident-produced film/broadcast works; 25% trademarks; 15% otherwise. PE connection, third-state PE interest and related excess remain separate. | [Arts X–XII and Protocol para 1](https://legis.senado.leg.br/norma/493146/publicacao/15643363) |
+| Spain | Current MFN dividend ceiling specifically held below; do not use the old 10%–15% band as an automatic rate. | Base convention: 15%; 10% qualifying financial-institution equipment-finance loans of at least 10 years; specified government recipient/issuer exceptions. | Current MFN royalty/service outcome specifically held below. | [Arts 10–12 and Protocol paras 3–5](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/espanha/decreto-no-76-975-de-2-de-janeiro-de-1976) |
 
-| Brazil Treaty Partner | Dividends | Interest | Royalties | Notes |
-| --- | --- | --- | --- | --- |
-| Argentina | 15% | 15% | 10%/15% | MERCOSUR partner |
-| Chile | 10%/15% | 10%/15% | 10%/15% | 2026 Protocol cuts rates |
-| Portugal | 10%/15% | 15% | 15% | Historic Lusophone tie |
-| Japan | 12.5% | 12.5% | 12.5%/15%/25% | Category-dependent |
-| India | 10%/15% | 10%/15% | 10%/15%/25% | 2022 Protocol (effective 2026) |
-| France | 10%/15% | 10%/15% | 15%/25% | Older treaty |
-| Spain | 10%/15% | 10%/15% | 10%/15% | Key EU partner |
+Brazil–Chile's protocol entered into force internationally on 30 October 2025, with income/withholding effects from 1 January 2026; promulgation was by Decree 12,863 dated 2 March, published 3 March 2026. The protocol changes the royalty ceiling; it does not replace the ordinary dividend or interest article. The former claim of a new bank-interest cut is unsupported by these amending clauses. The new art 26A's qualified-person/active-business/competent-authority routes, third-state PE rule and PPT are substantive eligibility conditions. [Decree and Protocol arts 10 and 16](https://aplicacao.itamaraty.gov.br/ApiConcordia/Documento/download/33883).
 
-**Notable absences from Brazil's treaty network:** US, UK, Germany, Australia, Canada, Singapore, Netherlands. For these jurisdictions, Brazilian domestic IRRF rates apply with no treaty relief.
+Brazil–India's protocol entered into force on 18 October 2025. India notified it on **30 March 2026**, not the old Guide's 3 March date; the two countries' application dates are intentionally different. Technical services exclude employee payments, the specified educational services and an individual's personal-use services; connected PE/fixed base, source and related excess have their own clauses. Its new 26-A adds qualified-person/active-business/derivative-benefit/authority routes, third-state PE restrictions and a PPT. [Notification 39/2026, official date metadata](https://www.incometaxindia.gov.in/w/notification-no.-39/2026-f.-no.-cbdt/1/2022-ft-tr-v-section-cbdt-part-1-/-so-1647-e-); [Arts 11, 20 and 22](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/india/india_protocolo-2022.pdf).
 
-## Key Observations
+## Treaty status and domestic comparisons
 
-1. **Brazil's unique position:** Brazil does not impose WHT on dividend distributions and has a very limited treaty network (no US treaty). Brazil's IRRF of 15% (25% for tax haven recipients) applies to most outbound payments.
+| Topic | Confirmed position | Official source |
+|---|---|---|
+| Brazil's former absence list | Canada, Singapore and the Netherlands have treaties listed by Receita; their former inclusion as “no treaty” was wrong. Germany's agreement has had no effect since 1 January 2006. | [Named partner/status entries](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/acordos-para-evitar-a-dupla-tributacao-e-prevenir-a-evasao-fiscal) |
+| Brazil–UK | The comprehensive 2022 convention is signed but HMRC lists it as not in force. Do not confuse the limited shipping/air-transport arrangements with a comprehensive income treaty. | [HMRC treaty register](https://www.gov.uk/government/publications/brazil-tax-treaties) |
+| Brazil–Australia | No comprehensive convention is listed in the current Receita treaty register; no treaty rate is supplied here. | [Treaty register](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/acordos-para-evitar-a-dupla-tributacao-e-prevenir-a-evasao-fiscal) |
+| MLI currentness | Brazil signed on 20 October 2025 and Colombia on 7 June 2017; the current OECD table has no deposited ratification or entry date for either. Do not apply MLI clauses merely because a partner listed their treaty. | [OECD status table, Brazil and Colombia rows](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-signatories-and-parties.pdf) |
+| Canada domestic | Usual Part XIII 25%, with statutory exemptions including generally arm's-length interest; not a universal 25%. | [Part XIII and interest subsections](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/non-residents-canada.html) |
+| Mexico domestic | The additional dividend tax under art 164(I)/(IV) is 10% on profits generated from 2014 onward. Noveno Transitorio XXX requires separate CUFIN accounts for profits through 31 December 2013 and from 1 January 2014; absent separate accounts or identifiable vintage, profits are presumed generated from 2014. This does not remove any company-level tax or applicable treaty ceiling. Interest: art 166 has 4.9%, 10%, 15% and 21% statutory classes, with the maximum art 152 rate for residual/specified related-beneficiary cases. Royalties/technical assistance: generally 25%; specified patents, invention/improvement certificates, trademarks, trade names and advertising use that maximum; qualifying transport assets have 5% or 1% rules. The current maximum is 35%. Select no rate until the asset/lender class and all conditions below are established. | [LISR arts 164, 166–167, 171 and Noveno Transitorio XXX](https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf); [Annex 8, C(II), 2026 maximum](https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf) |
+| Argentina domestic interest | For the specified foreign borrowing classes, 35% applies to a presumed net base of 43%, giving **15.05% of gross**. Art 104(c)(1) includes regulated local financial borrowers, specified supplier-financed depreciable imports excluding cars, and the stated supervised foreign-bank/financial-creditor jurisdiction conditions; (c)(2) instead uses 100% for its other borrower/creditor class, giving 35% of gross. Debt-securities conditions and statutory exemptions must also be checked. | [Arts 102–104(c), especially (c)(1)–(2)](https://www.argentina.gob.ar/normativa/nacional/decreto-824-2019-332890/actualizacion) |
+| Colombia domestic | Dividends to foreign/nonresident recipients: 20%, with separate underlying untaxed-profit taxation; the dividend transition distinguishes profits generated from 2017. Royalties and ordinary interest: 20%; qualifying foreign credit of at least 1 year has 15%, with separate leasing, long infrastructure-credit and favored-regime rules. A 15%–20% band does not cover every financial instrument. | [Arts 245, 246-1 and 408, including neighboring exceptions](https://normograma.dian.gov.co/dian/compilacion/docs/estatuto_tributario.htm) |
+| Spain domestic | 19% for dividends and interest without an applicable treaty reduction or domestic exemption. | [Dividend and interest categories](https://sede.agenciatributaria.gob.es/Sede/no-residentes/irnr-sin-establecimiento-permanente/tipos-gravamen-irnr-sin-establecimiento-permanente.html) |
+| Portugal domestic corporate recipient | Ordinarily 25% for Portuguese-source income of an entity without Portuguese seat/effective management or an attributable PE; exemptions and the specified unidentified/favored-tax-recipient rules can change the outcome. | [CIRC 87(4)](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx); [Art 94(3)–(5)](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc94.aspx) |
+| Chile domestic | Dividend additional tax is 35%, with the company's income tax credited and the base increased by that credit. Art 59 ordinarily taxes royalties for trademarks, patents, formulas and similar rights at 30%. Its reduced 15% industrial-property list covers invention patents, utility models, industrial drawings/designs, integrated-circuit layouts/topographies and new plant varieties; it does not generally include trademarks. Software exploitation has a 15% rule, while standard end-user rights limited to using the program, without commercial exploitation or reproduction/modification beyond enabling use, are exempt. The first paragraph substitutes 30% where its royalty/remuneration beneficiary is constituted, domiciled or resident in an art 41 H preferential regime. Publishing/copyright rights separately have a 15% rule. Apply the precise licence, statutory paragraph and treaty/MFN category; do not import the repealed related-ownership override from an older FAQ. | [DL 824 art 59, current consolidated text](https://www.bcn.cl/leychile/navegar?idNorma=6368); [SII nonresident dividends and royalties](https://www.sii.cl/destacados/international_transactions/4562-4571-esp-4569.html) |
 
-2. **Latin American WHT rates** are generally higher than OECD/European rates. Treaty negotiations tend to produce rates of 10-15% rather than 0-5%.
+Mexico art 166 class I applies 10% to its specified foreign-state financing entities/foreign banks (including qualifying limited-purpose entities), qualifying externally raised capital, notified debt placed through banks/brokers in a non-treaty country, and credit-right acquisitions; establish each applicable beneficial-owner, SAT-information and notification requirement. Class II applies 4.9% to its qualifying publicly placed debt and specified financial-institution debt/credits (including notified treaty-country bank/broker placements), subject to its notice/information requirements, with 10% on failure of those requirements; its separate federal-government/central-bank-participated foreign-finance branch also requires beneficial ownership and SAT rules. Class III is 15% for reinsurers. Class IV is 21% for other bank-paid interest, foreign fixed-asset machinery/equipment suppliers, and the specified equipment/acquisition, working-capital or marketing finance documented in the contract; its express bank-to-class-I exception uses class I. Class V uses the current 35% maximum for residual interest. Classes I/II are displaced by that maximum where direct/indirect beneficial owners, individually or with related persons, receive more than 5% of the interest and either hold more than 10% of debtor voting shares or are companies more than 20% owned by the debtor, applying the statutory aggregation rules. Statutory foreign-bank-branch, government/export-finance and other express exemptions remain separate; do not infer them from a lender's name.
 
-3. **Mexico's bank interest rate** of 4.9% appears in multiple Mexican treaties and is one of the lowest interest rates available in the Americas.
+Mexico art 167(I)'s 5% transport-royalty rule covers railway cars, qualifying containers/trailers/semitrailers temporarily imported for up to one month, and federally permitted/concessioned commercial vessels, with the prescribed direct use by the lessee in passenger/goods transport. Art 167(III)'s 1% rule requires a federally permitted/concessioned commercial aircraft directly used by its lessee in passenger/goods transport. Other royalties/technical assistance generally fall under 25%; the specified patents, invention/improvement certificates, trademarks, trade names and advertising use the current 35% maximum. Record the asset, use, import/permit and contract facts before choosing a transport rate; an unclassified payment is **not usable for rate selection**. Art 171 can impose its separate preferential-regime treatment. A current annual or administrative concession must be bound before using it; none is assumed in these statutory classifications. [LISR arts 166–167 and 171](https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf).
 
-4. **Canada's split royalty approach** (0% copyright/software vs 10% industrial) is consistent across its treaty network and materially affects tech/media planning.
+Historical commercial-context topics include MERCOSUR, the CPLP (Community of Portuguese Language Countries), the Pacific Alliance, OECD membership, Spanish investment, the Lusophone relationship and technology/media flows. Their asserted scale, ranking, or oldest/most-limited treaty comparisons are not established here. Nearshoring, trade integration and comparisons with an “OECD average” are commercial context, not treaty-eligibility rules. This Guide makes no unsupported claim that the US–Canada corridor is the world's highest-volume corridor, that a rate structure is unique, or that an entire region has one prevailing rate.
 
-5. **Near-shoring impact:** Mexico's 6-month PE threshold requires careful structuring for US companies establishing manufacturing/service operations under USMCA.
+## Relief documentation and payment record
 
-6. **Chile-Brazil 2026 Protocol:** Brazil published Decree 12.863 on 3 March 2026 implementing the first amending protocol to the Brazil-Chile DTA. New reduced ceilings: dividends 10% (from 15%), interest 10% for qualifying banks, royalties 10%. Effective for income earned since January 2026.
+| Source country | Evidence or action confirmed for this job | Official source |
+|---|---|---|
+| United States | Obtain the applicable beneficial-owner certificate: W-8BEN for an individual or W-8BEN-E for an entity, with treaty residence, required identifiers and treaty/LOB certification. Intermediary, effectively connected, exempt-organization and personal-service cases can require different forms; a W-8 does not override an unmet treaty condition. | [Certificates of Foreign Status and treaty-benefit sections](https://www.irs.gov/pub/irs-pdf/p515.pdf) |
+| Canada | NR301 covers individuals, corporations and trusts; NR302 partnerships; NR303 hybrid entities. The forms are not mandatory if equivalent signed beneficial-ownership, residence and treaty-eligibility information is held. KYC alone is generally insufficient. PE-attributable income and art XXI exemptions have different procedures. | [Equivalent information, entity types, PE and exempt-organization sections](https://www.canada.ca/en/revenue-agency/services/forms-publications/information-on-forms-nr301-nr302-nr303.html) |
+| Mexico | LISR 4 requires residence, treaty conditions, the applicable fiscal-information filing under CFF 32-H or financial-statement audit report under CFF 32-A where obliged or that option was exercised, and designation of a legal representative. Determine actual statutory applicability rather than inventing a new unconditional filing. The payer may apply a lower treaty rate directly; excess withholding can be refunded. Foreign authority residence certificates need no legalization; an authorized translation is needed only if requested. For related-party operations, the authority may request a legal-representative-signed sworn statement establishing juridical double taxation, the applicable foreign provisions and supporting documents. | [LISR art 4](https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf) |
+| Brazil | Identify the actual treaty's implementation rule. For the Spain convention, Portaria 45/1976 item V addresses residence evidence for refunds of specified income outside arts10–12, with item VI extending its proof method to its referenced royalty case. A universal apostille/consular requirement is not established by that rule and is held below. | [Portaria MF 45/1976, item V](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/espanha/portaria-mf-no-45-de-4-de-fevereiro-de-1976) |
+| Argentina | RG 5855/2026 replaced RG 3497 for payments from 15 calendar days after its 3 June 2026 publication. Before payment/retention, supply the foreign-authority residence certificate for the fiscal period and the annex sworn statement. A certificate without an expiry is valid for 12 months. Apostille/consular legalization is waived where an official digital system verifies authenticity. Payer/withholder retain the evidence and renew changed/expired documentation; absent a valid certificate, withhold domestically. | [Arts 1–7 and 12–13](https://www.boletinoficial.gov.ar/detalleAviso/primera/342732/20260603) |
+| Chile | Supply the competent-authority residence certificate and the signed written declaration of no attributable Chilean PE/fixed base and treaty eligibility. Resolution 58/2021 uses Annex 1 generally; recurring dealings may use Annex 2 and Annex 3 ratification at 31 December or contract end. Conditions must hold when withholding arises; the declaration precedes remittance of withholding. Missing/noncompliant declarations require domestic withholding, subject to a supported refund claim. | [Recital 2 and operative items 1–6](https://www.sii.cl/normativa_legislacion/resoluciones/2021/reso58.pdf); [Annex 1](https://www.sii.cl/normativa_legislacion/resoluciones/2021/reso58_anexo01.pdf); [Annex 2](https://www.sii.cl/normativa_legislacion/resoluciones/2021/reso58_anexo02.pdf); [Annex 3](https://www.sii.cl/normativa_legislacion/resoluciones/2021/reso58_anexo03.pdf) |
+| Colombia | Retain residence and beneficial-ownership/PE facts with the payer's classification, especially technical services. The exact current certificate/form and payer claim mechanics remain specifically held. | [Arts 4, 10–12](https://www.boe.es/buscar/pdf/2008/BOE-A-2008-17209-consolidado.pdf); [Spain classification analysis](https://normograma.dian.gov.co/dian/compilacion/docs/concepto_tributario_dian_0000191_2020.htm) |
 
-7. **India-Brazil 2022 Protocol:** Notified by India on 3 March 2026, effective from 1 April 2026. Reduces dividend WHT to 10%/15% (from 15%/25%), interest to 10%/15%, and royalties to 10%/15%. Introduces separate FTS article at 10%.
+Argentina's payer/withholder refund route in RG 5855 art 8 requires verification, reimbursement of excess and cancellation/amendment of the SIRE withholding certificate; its alternative statutory recovery route covers the specified cases where reimbursement was not possible. Art 12 preserves prior sworn statements during their validity if their conditions remain unchanged. In Chile, the payer retains declarations for the statutory period and can be liable for underwithholding where treaty conditions were unmet. [Arts 8 and 12](https://www.boletinoficial.gov.ar/detalleAviso/primera/342732/20260603); [Items 3–6](https://www.sii.cl/normativa_legislacion/resoluciones/2021/reso58.pdf).
 
-## Key Procedural Requirements
+For every payment, retain the gross amount/currency and date, domestic classification, chosen article, eligibility/holding evidence, calculation, certificate supplied to the payer and actual withholding proof. A refund must reconcile the tax withheld with the amount legally due; a residence certificate alone does not resolve beneficial ownership, special regimes or anti-abuse.
 
-**Key Procedural Requirements**
+## Worked example
 
-| Country | Form Required for Treaty Benefits | Notes |
-| --- | --- | --- |
-| US | W-8BEN / W-8BEN-E | LOB certification required |
-| Canada | NR301 (individuals) / NR302 (entities) | Declaration of eligibility |
-| Mexico | No standard form; CoR required | Mexican tax authority format |
-| Brazil | CoR + apostille or consular certification | Limited treaty network |
-| Argentina | CoR from home country | Treaty benefits via domestic claim |
-| Chile | CoR from home country | DTA claim at source |
-| Colombia | CoR from home country | Treaty benefit claim via payer |
+A US-resident corporate beneficial owner receives CAD 100,000 of ordinary dividends from a Canadian company in 2026. It owns 12% of voting stock, satisfies XXIXA, has no connected Canadian PE and the company is not in a special X(7) category. Assume the ordinary Canadian domestic Part XIII rate applies and no other domestic exemption is available. Art X(2)(a) limits source withholding to 5%: CAD 100,000 × 5% = CAD 5,000, leaving CAD 95,000 cash. The ordinary domestic comparator is CAD 25,000; the treaty reduction is CAD 20,000. These cash figures do not compute the recipient's US tax or foreign-tax credit. [Art X(2)(a), XXIXA](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention-consolidated-1980-1983-1984-1995-1997-2007.html); [Usual Part XIII rate](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/non-residents-canada.html).
+
+```oa-check
+name: US corporate owner receives ordinary Canadian dividends
+inputs:
+  gross_cad: 100000
+  voting_percent: 12
+  minimum_voting_percent: 10
+  domestic_rate: 0.25
+  treaty_rate: 0.05
+steps:
+  - ownership_margin: voting_percent - minimum_voting_percent
+  - domestic_withholding: gross_cad * domestic_rate
+  - treaty_withholding: gross_cad * treaty_rate
+  - net_cash: gross_cad - treaty_withholding
+  - reduction: domestic_withholding - treaty_withholding
+expected:
+  ownership_margin: 2
+  domestic_withholding: 25000
+  treaty_withholding: 5000
+  net_cash: 95000
+  reduction: 20000
+```
+
+## When to refuse or refer
+
+Do not select a rate if the source country, treaty residence, legal form, payment classification or operative period is unresolved. Refer transparent/hybrid entities, REIT/RIC distributions, PE-connected income, non-arm's-length excess, back-to-back finance, treaty shopping, special tax regimes, Brazilian transitional distributions and conflicting relief documentation for qualified cross-border review. Do not convert a held historical figure below into a usable rate.
+
+## Sources
+
+Each date below is the actual reading date. Scope identifies the provisions read, rather than claiming a full read of unrelated legislation. Official consolidated/synthesized texts facilitate application; the underlying authentic convention, protocol and MLI prevail. Current official treaty/status indices were also read to check amendment/commencement dependencies. Where another writer completed the same primary read during this batch, that read is explicitly reused.
+
+| Primary source | Actual read date | Reading scope |
+|---|---|---|
+| [Canada–US consolidated convention](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention-consolidated-1980-1983-1984-1995-1997-2007.html) | 2026-11-16 | Read for this Guide: Full IV,V,VII,X–XII,XVIII(1)–(7),XXI(2)–(4),XXIX(1)–(3),XXIXA(1)–(7), consolidation disclaimer. |
+| [Canada–US fifth protocol](https://home.treasury.gov/system/files/131/Treaty-Canada-Pr2-9-21-2007.pdf) | 2026-11-16 | Read for this Guide: Arts3–7,9 and27, plus consolidated replacement income/LOB provisions. |
+| [Finance Canada entry announcement](https://www.canada.ca/en/news/archive/2008/12/canada-global-competitiveness-aided-entry-force-updated-canada-united-states-income-tax-treaty.html) | 2026-11-16 | Read for this Guide: Dated announcement and international entry date, not unrelated press links. |
+| [US–Mexico convention and original protocol](https://www.irs.gov/pub/irs-trty/mexico.pdf) | 2026-11-16 | Read for this Guide: Arts4,5,7(1),10–12,14,17,29; original Protocol14; 1994 amendment subject identified. |
+| [US–Mexico later protocol](https://home.treasury.gov/system/files/131/Treaty-Mexico-Pr2-10-26-2002.pdf) | 2026-11-16 | Read for this Guide: ArtsI–III andVI–VII, full replacement dividend/LOB conditions and effective dates. |
+| [US Treasury applicability announcement](https://home.treasury.gov/news/press-releases/js538) | 2026-11-16 | Read for this Guide: Full dated entry and dividend/other applicability paragraphs. |
+| [IRS treaty register](https://www.irs.gov/businesses/international-businesses/united-states-income-tax-treaties-a-to-z) | 2026-11-16 | Read for this Guide: Complete A–Z partner list and introductory saving-clause/no-treaty instructions; Brazil absent. |
+| [Brazil Law15,270/2025](https://legis.senado.leg.br/norma/41758136/publicacao/41762089) | 2026-11-16 | Read for this Guide: Art3 full amended10(4)–(5),10-A and art8 commencement; not unrelated individual-tax provisions. |
+| [Brazil Law9,249 consolidated](https://legis.senado.gov.br/norma/551125/publicacao/34619641) | 2026-11-16 | Read for this Guide: Current9(2) and10–10-A, amending/commencement notes; JCP override distinguished. |
+| [Receita IRPF questions2026](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf) | 2026-11-16 | Read for this Guide: Cover/introduction legislative cutoff and complete relevant Q129 nonresident remuneration, royalties/technical assistance, financial-investment and residual-income paragraphs; older JCP rate not reused. |
+| [Brazil–Portugal convention](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/portugal/portugal-141-convencao-dupla-tributacao.pdf) | 2026-11-16 | Read for this Guide: Arts5,7,10–12,14,28 and Protocol4–6,8–9, all nearby connection/excess/special-regime exceptions. |
+| [Brazil–France convention](https://legis.senado.leg.br/norma/493146/publicacao/15643363) | 2026-11-16 | Read for this Guide: Full X–XII,XXIX and Protocol1, including7-year finance conditions and neighbors. |
+| [Brazil–Spain convention](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/espanha/decreto-no-76-975-de-2-de-janeiro-de-1976) | 2026-11-16 | Read for this Guide: Full10–12 and Protocol3–5; base/MFN distinction, not unread2026 agreement outcome. |
+| [Brazil–Spain Portaria45/1976](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/espanha/portaria-mf-no-45-de-4-de-fevereiro-de-1976) | 2026-11-16 | Read for this Guide: ItemV refund/residence evidence; not treated as universal apostille or current MFN rate authority. |
+| [Receita treaty/status register](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/acordos-para-evitar-a-dupla-tributacao-e-prevenir-a-evasao-fiscal) | 2026-11-16 | Read for this Guide: Named partner entries for Argentina,Chile,Portugal,Japan,India,France,Spain,Canada,Singapore,Netherlands,Germany; full list checked for US/UK/Australia and current update field. |
+| [HMRC Brazil register](https://www.gov.uk/government/publications/brazil-tax-treaties) | 2026-11-16 | Read for this Guide: Comprehensive convention signed29Nov2022 and explicitly not in force; limited transport agreements distinguished. |
+| [Brazil–Chile2022 protocol and promulgation](https://aplicacao.itamaraty.gov.br/ApiConcordia/Documento/download/33883) | 2026-11-16 | Read for this Guide: Decree12,863 opening publication/entry recital; protocol arts3,5–6,10,14,16, new26A full; income effective Jan2026. |
+| [Brazil–India promulgation](https://aplicacao.itamaraty.gov.br/ApiConcordia/Documento/download/33541) | 2026-11-16 | Read for this Guide: Actual alternative Itamaraty Gazette opening decree entry recital, plus already-read full Portuguese Protocol8–11,20,22 from Receita scan; failed concordia-host transport preserved separately. |
+| [CBDT Notification39/2026](https://www.incometaxindia.gov.in/w/notification-no.-39/2026-f.-no.-cbdt/1/2022-ft-tr-v-section-cbdt-part-1-/-so-1647-e-) | 2026-11-16 | Read for this Guide: Actual HTML title, notification number,30March2026 date and31March upload; failed PDF body is not claimed read. |
+| [Colombia–Spain consolidated convention](https://www.boe.es/buscar/pdf/2008/BOE-A-2008-17209-consolidado.pdf) | 2026-11-16 | Read for this Guide: Arts4 relevant residence text,5,7,10–12,28 and ProtocolIV–VIII; complete income neighbors and untaxed-profit conditions. |
+| [DIAN Concept0191/3283 of2020](https://normograma.dian.gov.co/dian/compilacion/docs/concepto_tributario_dian_0000191_2020.htm) | 2026-11-16 | Read for this Guide: Spain-specific analysis and conclusion; not a claim to every other-country analysis. |
+| [DIAN FlashJudicial9/2024](https://www.dian.gov.co/normatividad/Judiciales/Flash-Judicial-No-9.pdf) | 2026-11-16 | Read for this Guide: Dated opening judicial outcome and Spain/Swiss classification discussion; unrelated decisions excluded. |
+| [Chile–Spain MLI synthesized convention](https://www.sii.cl/normativa_legislacion/archivos_pdf/mli_espana_esp.pdf) | 2026-11-16 | Read for this Guide: Applicability introduction,5,7,10–12,ProtocolIX–X and inserted MLI7/10 anti-abuse blocks. |
+| [SII Circular50/2018](https://www.sii.cl/normativa_legislacion/circulares/2018/circu50.pdf) | 2026-11-16 | Read for this Guide: Complete Spain II(4) replacement interest/royalty clauses,anti-conduit terms,dates,notes and III refund paragraph. |
+| [Mexico–Spain consolidated convention](https://www.boe.es/buscar/pdf/1994/BOE-A-1994-23743-consolidado.pdf) | 2026-11-16 | Read for this Guide: Relevant residence4; full5,10–12,14; business profits7;Protocol1,6–7 and30 applicability with amendment record. |
+| [Spanish MLI ratification and deposited position](https://www.boe.es/buscar/pdf/2021/BOE-A-2021-21097-consolidado.pdf) | 2026-11-16 | Read for this Guide: MLI8 full,35(1)–(3), Spanish art8 Mexico matching row and relevant notification headings; not unrelated global appendices. |
+| [Spanish MLI notification2023](https://www.boe.es/boe/dias/2023/11/18/pdfs/BOE-A-2023-23341.pdf) | 2026-11-16 | Read for this Guide: Entire two-page official receipt/effect notification with Mexico10Nov2023 entry. |
+| [CRA nonresident tax guidance](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/non-residents-canada.html) | 2026-11-16 | Read for this Guide: PartXIII usual25% and listed income classes, arm’s-length interest domestic exemption; not every immigration section. |
+| [CRA NR301–303 guidance](https://www.canada.ca/en/revenue-agency/services/forms-publications/information-on-forms-nr301-nr302-nr303.html) | 2026-11-16 | Read for this Guide: Payer/equivalent-information,entity types,PE/artXXI and retention paragraphs, including KYC limitations. |
+| [IRS Publication515(2026)](https://www.irs.gov/pub/irs-pdf/p515.pdf) | 2026-11-16 | Read for this Guide: Cover/date,printed3 withholding30%,printed15–17 beneficial-owner/treaty certificates and exceptions,printed66 treaty overview. |
+| [AEAT IRNR rate categories](https://sede.agenciatributaria.gob.es/Sede/no-residentes/irnr-sin-establecimiento-permanente/tipos-gravamen-irnr-sin-establecimiento-permanente.html) | 2026-11-16 | Read for this Guide: Dividend and interest19% categories and page update field. |
+| [Portuguese CIRC94](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc94.aspx) | 2026-11-16 | Read for this Guide: Full1–10, especially withholding/definitive tax and cross-reference to87; not relying on94(4) alone. |
+| [Portuguese CIRC87](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx) | 2026-11-16 | Read for this Guide: 87(4) nonresident25% and neighboring unidentified/favored-recipient exceptions; future general corporate rate differentiated. |
+| [SII international-payment guidance](https://www.sii.cl/destacados/international_transactions/4562-4571-esp-4569.html) | 2026-11-16 | Read for this Guide: Full nonresident dividends/royalties paragraphs incl35% imputation,30% ordinary/15% specifiedIP/software and end-user exclusion. |
+| [Argentina RG5855/2026](https://www.boletinoficial.gov.ar/detalleAviso/primera/342732/20260603) | 2026-11-16 | Read for this Guide: Actual BORA fullarts1–14,including prior-statement preservation,15-day application,renewal,apostille exception and excess-refund route; annex text not yet separately read. |
+| [Chile Resolution58/2021](https://www.sii.cl/normativa_legislacion/resoluciones/2021/reso58.pdf) | 2026-11-16 | Read for this Guide: Entire3-page resolution, recitals and alloperative1–7,with statement timing,refund,payer liability and retention. |
+| [Chile declaration Annex1](https://www.sii.cl/normativa_legislacion/resoluciones/2021/reso58_anexo01.pdf) | 2026-11-16 | Read for this Guide: Entire two-page model,identity/payee/payer and noPE/eligibility declarations. |
+| [Chile recurring declaration Annex2](https://www.sii.cl/normativa_legislacion/resoluciones/2021/reso58_anexo02.pdf) | 2026-11-16 | Read for this Guide: Entire two-page model,contract facts,conditions and31December/end ratification. |
+| [Chile recurring ratification Annex3](https://www.sii.cl/normativa_legislacion/resoluciones/2021/reso58_anexo03.pdf) | 2026-11-16 | Read for this Guide: Entire two-page model and repeated conditions. |
+| [DIAN Oficio67157/2014](https://normograma.dian.gov.co/dian/compilacion/docs/oficio_dian_67157_2014.htm) | 2026-11-16 | Read for this Guide: Residence/procedural discussion through quoted treaty residence and general withholding statement; not current prescribed foreign-recipient form. |
+| [Colombian tax statute consolidated](https://normograma.dian.gov.co/dian/compilacion/docs/estatuto_tributario.htm) | 2026-11-16 | Read for this Guide: Full245,246-1 and408 including nearby transitional,finance,PE and favored-regime exceptions; not full statute. |
+| [Argentine income-tax statute consolidated](https://www.argentina.gob.ar/normativa/nacional/decreto-824-2019-332890/actualizacion) | 2026-11-16 | Read for this Guide: Full102–104,especially(c)(1)–(2) foreign-interest bases, exemptions/separate determination proviso. |
+| [SAT Annex8 RMF2026](https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf) | 2026-11-16 | Read for this Guide: C(II)2026 annual table and heading onPDFpp18–19,35% maximum; not unrelated salary computations. |
+| [Canada–UK official MLI synthesized convention](https://assets.publishing.service.gov.uk/media/5e298a36ed915d1f19b595e6/Canada-UK_MLI_January_2020.pdf) | 2026-11-16 | Read for this Guide: Reuse completed independent_review writer primary read:5,7,10–12,MLI PPT box after27A, intro WHT1Jan2020 and2014 interpretative protocol; pension10(3)–(4) additionally read here. |
+| [Brazil–Argentina2017 amending protocol](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/argentina/argentina-protocolo-de-emenda-evitar-dupla-tributacao.pdf) | 2026-11-16 | Read for this Guide: Arts5–9,16(newXXVII full),20–21 and28; Portuguese OCR plus visual numeric pages5 and12. |
+| [Argentina–Brazil original convention](https://www.argentina.gob.ar/normativa/nacional/ley-22675-208184/texto) | 2026-11-16 | Read for this Guide: Actual web-extracted full IV,V,VII,X–XIV relevant articles/neighbor clauses; no claim to local403 body. |
+| [Brazil–Chile original convention](https://www2.camara.leg.br/legin/fed/decret/2003/decreto-4852-2-outubro-2003-497514-publicacaooriginal-1-pe.html) | 2026-11-16 | Read for this Guide: Actual official web-extracted IV,V,VII,X–XII and original connection/excess/purpose clauses. |
+| [Brazil–Japan official MOF consolidated reference](https://www.mof.go.jp/tax_policy/summary/international/tax_convention/Brazil_ST_en.pdf) | 2026-11-16 | Read for this Guide: Consolidation/authentic-text disclaimer, full9–11 including all income connections,source and excess clauses. |
+| [Brazil–Japan1976 protocol](https://legis.senado.leg.br/norma/503834/publicacao/15781804) | 2026-11-16 | Read for this Guide: Full1–3 and6effective, correcting original income rates. |
+| [Brazil–India2022 protocol](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/acordos-internacionais/acordos-para-evitar-a-dupla-tributacao/india/india_protocolo-2022.pdf) | 2026-11-16 | Read for this Guide: FullPortuguese8–11,20(new26A full)and22; visual dividend/royalty pages10/12; not allthree language renditions. |
+| [ARCA protocol applicability record](https://www.afip.gob.ar/convenios-internacionales/materia/documentos/Convenios-para-evitar-la-doble-imposicion/Convenios/ficha-tecnica/Brasil-Protocolo-de-Enmienda.pdf) | 2026-11-16 | Read for this Guide: Entireone-page officialrecord:entry29July2018,application1Jan2019. |
+| [Mexico deposited MLI position](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-position-mexico-instrument-deposit.pdf) | 2026-11-16 | Read for this Guide: Deposited15Mar2023 cover,treatySpain listing/amending instrument,art7 existingPPT reservation,art8 matchingSpain row; not provisionalsignature position. |
+| [OECD current MLI status](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-signatories-and-parties.pdf) | 2026-11-16 | Read for this Guide: Current Brazil,Colombia,Mexico,Spain signature/deposit/entry rows; actualwebPDFextractor. |
+| [Mexico current LISR](https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf) | 2026-11-16 | Read for this Guide: Currentcover,lastreform1Apr2024; full4,166–167 and nearby171,Art164 SATbodycorroboration;152table binding separately via2026Annex8. |
+| [SAT LISR164](https://wwwmat.sat.gob.mx/articulo/76538/articulo-164) | 2026-11-16 | Read for this Guide: Actual web-extracted art164(I) dividend10% and gross/definitive wording. |
+
+| [Finite review corrections: current Chile DL 824 art 59](https://www.bcn.cl/leychile/navegar?idNorma=6368) | 2026-11-17 | Read for this Guide: art 59 first paragraphs, exact industrial-property list, software/end-user boundary, art 41 H override and separate publishing/copyright paragraph; current text supersedes the older FAQ related-ownership condition. |
+| [Finite review corrections: Mexico LISR](https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf) | 2026-11-17 | Read for this Guide: art 4 first four paragraphs; art 166 classes I–V, notice/information fallback and related-beneficiary override; art 167 transport conditions; Noveno Transitorio XXX profit-vintage and separate-CUFIN rule. Unchanged earlier reads remain dated above. |
+| [Finite review corrections: Chile–Spain Circular 50/2018](https://www.sii.cl/normativa_legislacion/circulares/2018/circu50.pdf) | 2026-11-17 | Read for this Guide: II(4), replacement XI(2)(a)(i)–(v) and neighboring anti-conduit class split; three preceding tax years and both greater-than-50% tests. |
+| [Finite review corrections: Brazil–Japan reference](https://www.mof.go.jp/tax_policy/summary/international/tax_convention/Brazil_ST_en.pdf) | 2026-11-17 | Read for this Guide: art 11(6), general fair/reasonable-consideration ceiling followed by separate special-relationship excess rule and adjacent connection/source paragraphs; unchanged rates retain prior scope. |
+
+**Not yet confirmed:** Brazil–Spain's current dividend/royalty MFN result, including technical services: base arts 10–12 and Protocol 3–5 were read, but the Spanish authority's newly listed 12 March 2026 agreement note failed ordinary PDF access (TLS/timeout); the former dividend 10%–15% and royalty 10%–15% bands are not usable pending that dependency. Any current Mexican annual-law/administrative concession beyond the statutory classes stated above is not established here; the former interest 4.9%–35% and royalty 25%–35% bands must not replace those classifications. Argentina's former 15.05%–35% band is explained by its different presumed bases above, rather than a discretionary choice. Brazil's new foreign-beneficiary dividend-credit implementation under art 10-A and any current administrative/court extension of the grandfathered dividend conditions require a dated operative instrument before use. The older IRPF Q129 residual-income discussion includes the former interest-on-net-equity rate; the newer consolidated Law 9,249 art 9(2) controls that separate category. A universal Brazilian apostille/consular condition and the exact current Colombian foreign-recipient certificate/form and payer claim mechanics are not established by the sources read; the confirmed Argentine and Chilean procedures are stated above. The current treatment of US–Mexico LOB's legacy NAFTA references is not yet confirmed; USMCA participation alone cannot supply eligibility. The exact RRSP/RRIF account-specific administrative election/reporting requirements are not established here; XVIII(7) is conditional, not blanket account exemption. The old comparative marketing claims (world's highest-volume corridor, unique rate structure, region-versus-OECD average and nearshoring tax advantage) have no primary quantitative support and are not used to choose a rate.
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Treaty rates are subject to change through protocol amendments and renegotiations. Always verify current treaty text before relying on any rate. All outputs must be reviewed by a qualified professional before filing or acting upon.
+This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Treaty rates are subject to change through protocol amendments and renegotiations. All outputs must be reviewed by a qualified professional before filing or acting upon.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `americas-corridors` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/americas-corridors. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-17. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `americas-corridors` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/americas-corridors. If neither is available, confirm every figure against the official source pages cited above before relying on it.

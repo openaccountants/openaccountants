@@ -42,9 +42,9 @@ Owner: Michael Cutajar
 | [Kosovo](kosovo/) | Needs writing | 8 | 8 | 0 |
 | [Latvia](latvia/) | Needs signature | 10 | 10 | 0 |
 | [Liechtenstein](liechtenstein/) | Needs writing | 8 | 8 | 0 |
-| [Lithuania](lithuania/) | Needs signature | 9 | 8 | 0 |
+| [Lithuania](lithuania/) | Needs signature | 9 | 9 | 0 |
 | [Luxembourg](luxembourg/) | Needs signature | 8 | 8 | 0 |
-| [Malta](malta/) | Needs writing | 31 | 31 | 5 |
+| [Malta](malta/) | Needs writing | 31 | 31 | 6 |
 | [Moldova](moldova/) | Needs writing | 13 | 13 | 0 |
 | [Monaco](monaco/) | Needs signature | 8 | 8 | 0 |
 | [Montenegro](montenegro/) | Needs writing | 10 | 10 | 0 |
@@ -75,7 +75,7 @@ Owner: Michael Cutajar
 |---|---|---:|---:|---:|
 | [Alberta](canada/alberta/) | Needs writing | 4 | 4 | 0 |
 | [Anguilla](anguilla/) | Needs writing | 3 | 2 | 0 |
-| [Antigua And Barbuda](antigua-and-barbuda/) | Needs writing | 3 | 3 | 0 |
+| [Antigua and Barbuda](antigua-and-barbuda/) | Needs writing | 3 | 3 | 0 |
 | [Argentina](argentina/) | Needs writing | 12 | 12 | 0 |
 | [Aruba](aruba/) | Needs writing | 3 | 3 | 0 |
 | [Bahamas](bahamas/) | Needs writing | 6 | 6 | 0 |
@@ -106,7 +106,7 @@ Owner: Michael Cutajar
 | [Honduras](honduras/) | Needs writing | 7 | 7 | 0 |
 | [Jamaica](jamaica/) | Needs writing | 6 | 6 | 0 |
 | [Martinique](martinique/) | Needs writing | 1 | 1 | 0 |
-| [Mexico](mexico/) | Needs writing | 15 | 13 | 0 |
+| [Mexico](mexico/) | Needs writing | 15 | 15 | 0 |
 | [Montserrat](montserrat/) | Needs writing | 10 | 10 | 0 |
 | [Nicaragua](nicaragua/) | Needs writing | 7 | 7 | 0 |
 | [Panama](panama/) | Needs writing | 4 | 4 | 0 |
@@ -114,15 +114,15 @@ Owner: Michael Cutajar
 | [Peru](peru/) | Needs writing | 9 | 9 | 0 |
 | [Puerto Rico](puerto-rico/) | Needs writing | 7 | 7 | 0 |
 | [Saint Barthelemy](saint-barthelemy/) | Needs writing | 2 | 2 | 0 |
-| [Saint Kitts And Nevis](saint-kitts-and-nevis/) | Needs writing | 10 | 10 | 0 |
+| [Saint Kitts and Nevis](saint-kitts-and-nevis/) | Needs writing | 10 | 10 | 0 |
 | [Saint Lucia](saint-lucia/) | Needs writing | 5 | 5 | 0 |
 | [Saint Martin](saint-martin/) | Needs writing | 3 | 3 | 0 |
-| [Saint Pierre And Miquelon](saint-pierre-and-miquelon/) | Needs writing | 2 | 1 | 0 |
-| [Saint Vincent And The Grenadines](saint-vincent-and-the-grenadines/) | Needs writing | 3 | 3 | 0 |
+| [Saint Pierre and Miquelon](saint-pierre-and-miquelon/) | Needs writing | 2 | 1 | 0 |
+| [Saint Vincent and the Grenadines](saint-vincent-and-the-grenadines/) | Needs writing | 3 | 3 | 0 |
 | [Sint Maarten](sint-maarten/) | Needs writing | 3 | 3 | 0 |
 | [Suriname](suriname/) | Needs signature | 7 | 7 | 0 |
-| [Trinidad And Tobago](trinidad-and-tobago/) | Needs writing | 6 | 6 | 0 |
-| [Turks And Caicos](turks-and-caicos/) | Needs writing | 3 | 3 | 0 |
+| [Trinidad and Tobago](trinidad-and-tobago/) | Needs writing | 6 | 6 | 0 |
+| [Turks and Caicos Islands](turks-and-caicos/) | Needs writing | 3 | 3 | 0 |
 | [Uruguay](uruguay/) | Needs signature | 9 | 9 | 0 |
 | [Us Virgin Islands](us-virgin-islands/) | Needs writing | 4 | 4 | 0 |
 
@@ -153,7 +153,7 @@ Owner: Ryan Duguid
 | [Kazakhstan](kazakhstan/) | Needs writing | 17 | 17 | 0 |
 | [Kiribati](kiribati/) | Needs writing | 1 | 1 | 0 |
 | [Kyrgyzstan](kyrgyzstan/) | Needs writing | 6 | 6 | 0 |
-| [Laos](laos/) | Needs writing | 5 | 2 | 0 |
+| [Laos](laos/) | Needs writing | 5 | 5 | 0 |
 | [Macau](macau/) | Needs writing | 5 | 5 | 0 |
 | [Malaysia](malaysia/) | Needs writing | 8 | 7 | 1 |
 | [Maldives](maldives/) | Needs writing | 6 | 6 | 0 |
@@ -247,7 +247,7 @@ Owner: Michael Cutajar, Ryan Duguid
 | [Namibia](namibia/) | Needs signature | 8 | 8 | 0 |
 | [Niger](niger/) | Needs writing | 7 | 7 | 0 |
 | [Nigeria](nigeria/) | Needs writing | 16 | 14 | 1 |
-| [Republic Of Congo](republic-of-congo/) | Needs writing | 8 | 8 | 0 |
+| [Republic of the Congo](republic-of-congo/) | Needs writing | 8 | 8 | 0 |
 | [Reunion](reunion/) | Needs writing | 1 | 1 | 0 |
 | [Rwanda](rwanda/) | Needs signature | 9 | 9 | 0 |
 | [Saint Helena](saint-helena/) | Needs signature | 6 | 6 | 0 |
