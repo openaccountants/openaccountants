@@ -44,7 +44,7 @@ Owner: Michael Cutajar
 | [Liechtenstein](liechtenstein/) | Needs writing | 8 | 8 | 0 |
 | [Lithuania](lithuania/) | Needs signature | 9 | 8 | 0 |
 | [Luxembourg](luxembourg/) | Needs signature | 8 | 8 | 0 |
-| [Malta](malta/) | Needs writing | 31 | 31 | 5 |
+| [Malta](malta/) | Needs writing | 31 | 31 | 6 |
 | [Moldova](moldova/) | Needs writing | 13 | 13 | 0 |
 | [Monaco](monaco/) | Needs signature | 8 | 8 | 0 |
 | [Montenegro](montenegro/) | Needs writing | 10 | 10 | 0 |
