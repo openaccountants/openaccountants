@@ -11,7 +11,6 @@ README/reference documents and authoring templates are not skill entries.
 - `eu-ioss-gb-sellers.md`
 - `excise-tax-workflow-base.md`
 - `financial-reporting-router.md`
-- `financial-reporting-workflow-base.md`
 - `global-ad-platforms.md`
 - `global-cloud-infrastructure.md`
 - `global-home-office.md`
@@ -38,4 +37,5 @@ README/reference documents and authoring templates are not skill entries.
 - `wealth-estate-tax-workflow-base.md`
 - `workflow-base.md`
 - `eg-corporate-tax.md`
+- `financial-reporting-workflow-base.md`
 - `income-tax-workflow-base.md`
