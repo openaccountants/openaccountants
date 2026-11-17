@@ -1,311 +1,356 @@
 ---
 name: dac6-mdr-reportable-arrangements
-description: "Use this skill whenever an intermediary (tax adviser, lawyer, accountant, bank, trust company) or a relevant taxpayer asks about mandatory disclosure of cross-border tax arrangements. Trigger on phrases like \"DAC6\", \"MDR\", \"mandatory disclosure rules\", \"reportable cross-border arrangement\", \"hallmark A1\", \"hallmark E3\", \"main benefit test\", \"MBT\", \"legal professional privilege\", \"DAC6 notification\", \"BZSt reporting\", \"arrangement reference number\", \"ARN\", \"OECD model MDR\", \"CRS avoidance arrangement\", or any request to determine whether an arrangement must be reported under DAC6 (EU Directive 2018/822) or equivalent OECD MDR rules in non-EU jurisdictions. Covers EU Member States, UK MDR (the post-Brexit OECD-aligned regime in SI 2023/38), and the OECD Model Mandatory Disclosure Rules on CRS Avoidance Arrangements and Opaque Offshore Structures (2018). Does NOT cover: domestic-only tax shelter disclosure regimes (e.g., US §6111 reportable transactions, UK DOTAS, Canada §237.3), country-by-country reporting (BEPS Action 13), or FATCA/CRS automatic exchange (see fatca-crs-automatic-exchange). ALWAYS read this skill before advising on whether a cross-border arrangement triggers reporting."
-version: 0.1
+description: "Use when an intermediary or taxpayer needs a DAC6 or mandatory disclosure reporting analysis: cross-border scope, A-E hallmarks, main benefit test, reporter, deadline, privilege, reference numbers, national penalties, UK MDR and OECD model comparisons. Prepare a source-based reviewer brief; do not treat this as filing or no-filing approval."
+version: 0.2
 jurisdiction: GLOBAL
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-16
 depends_on:
   - cross-border-workflow-base
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: cross-country-method
 ---
 
-# DAC6 MDR Reportable Arrangements
+# DAC6 and mandatory disclosure of cross-border arrangements
 
-## DAC6 / MDR — Mandatory Disclosure of Reportable Cross-Border Arrangements v0.1
+## Scope
 
-## What this file is
+<!-- D01 -->
+Use this Guide with `cross-border-workflow-base` to prepare a source-based reporting decision and a draft disclosure for a qualified reviewer. It covers the EU DAC6 classification, reporter, timing, privilege and reference-number method; the distinct UK MDR regime; and the OECD model as a comparison framework. It does not approve an arrangement, a filing or a refusal to file. The reference date is **2026-11-16**; source-specific read dates and version boundaries appear below. The EU basis is Directive 2011/16/EU consolidated at **2026-01-01**, including DAC8 changes to privilege notifications and information content. National law, current filing specifications and the arrangement's actual dates remain necessary. [Current Directive, articles 3 and 8ab; Annex IV](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-**This file is a content skill that loads on top of `cross-border-workflow-base`.** It implements:
+<!-- D02 -->
+DAC6 applies to the taxes within article 2, rather than corporate income tax alone. VAT, customs duties, excise duties covered by other EU cooperation legislation, compulsory social-security contributions, public-document fees and contractual public-utility dues are outside that Directive's stated scope. Domestic-only arrangements do not become cross-border merely because they reduce tax; a Member State may have a separate domestic disclosure regime. US reportable-transaction/material-adviser disclosure, UK DOTAS, and the separate Australian/Canadian comparison routes below are outside this Guide’s domestic filing job; the original US section6011/6111/6112 route labels are not a filing clearance. DAC7 platform reporting, DAC8 crypto-asset reporting, FATCA/CRS automatic exchange, country-by-country reporting, state aid and Pillar Two are separate analyses. Do not infer a DAC6 D.1 hallmark merely from possible effects on any reporting regime: test its actual financial-account-information wording. Existing related Guides include `fatca-crs-automatic-exchange.md` and `pillar-two-globe-minimum-tax.md`; the old proposed `cbcr-beps-13.md`, `eu-state-aid-tax-rulings.md` and `dac7-platform-reporting.md` filenames are unconfirmed routing references, not proof that a current Guide exists. [Articles 2, 8ac, 8ad and Annex IV D](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-- **EU Council Directive 2018/822 (DAC6)** as transposed into the 27 EU Member States (in force from 1 July 2020 for reporting; reportable arrangements with first step from 25 June 2018 onwards).
-- **UK MDR (Mandatory Disclosure Rules)** under the International Tax Enforcement (Disclosable Arrangements) Regulations 2023 (SI 2023/38), in force from 28 March 2023.
-- **OECD Model Mandatory Disclosure Rules on CRS Avoidance Arrangements and Opaque Offshore Structures** (2018) as adopted by various non-EU jurisdictions.
+<!-- D03 -->
+DAC6's original national application date was **2020-07-01**, with a separate historical first-step window beginning **2018-06-25**. This Guide is not restricted to arrangements first implemented in 2025 or later. Distinguish those historical rules from a current event or a newly discovered omission. The **2026/0168(CNS)** recast remained **awaiting committee decision** on the European Parliament procedure record read on **2026-11-16**; COM(2026)308 is a proposal, not a replacement operative Directive. [2018/822 articles 2–3](https://publications.europa.eu/resource/celex/32018L0822); [current article 8ab(12)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1); [Parliament procedure status](https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F0168%28CNS%29).
 
-**Tax year coverage.** Current for **arrangements with a first step on or after 1 January 2025**. The historical DAC6 backlog (June 2018 → June 2020) is addressed in Section 5.
+## Ask the client first
 
-**The reviewer is the customer of this output.** DAC6 / MDR analysis turns on legal classification, intent, and privilege. Outputs must be reviewed by a credentialed practitioner (typically a tax lawyer or Big 4 specialist) before any filing or refusal-to-file decision.
+- Obtain the whole arrangement and linked steps, actual parties, tax residences, PEs, ownership/control/profit rights and affected jurisdictions. Record what is known and what remains unproved.
+- Obtain contemporaneous dates for availability, readiness, first implementation and each service provider's aid/advice; identify historical implementation and subsequent material changes.
+- Identify each person's actual promoter/service-provider role, knowledge and EU or UK nexus; obtain prior reports, the reported information and official receipt/reference numbers.
+- Obtain the expected tax advantage and commercial benefits, payment deductibility/recipient tax treatment, asset-transfer values, CRS/account/beneficial-owner evidence and transfer-pricing projections as relevant.
+- Obtain profession, admission, representation rights, retainer, protected information, any valid client release and the competent reporting jurisdiction before claiming privilege.
+- Identify the receiving jurisdiction, current schema, national annual-use obligations, existing notices and unresolved reviewer decisions. Do not ask a client for information already in the engagement record.
 
-## Section 1 — Scope statement
+## The method, step by step
 
-This skill covers:
+### 1. Establish the cross-border arrangement and the parties' roles
 
-- **Hallmark classification** (Categories A, B, C, D, E under DAC6; equivalent hallmarks under UK MDR and OECD model).
-- **Main Benefit Test (MBT)** application to Category A, B, and certain C hallmarks.
-- **Reporting obligations**: who reports (intermediary or relevant taxpayer), where (jurisdiction priority rules), when (30-day window), what (the eleven data points in Article 8ab(14)).
-- **Legal professional privilege (LPP) carve-outs** by Member State.
-- **Penalty regimes** by Member State and the UK.
-- **Interaction with DAC7 (digital platforms)** and **DAC8 (crypto-assets)** — out of scope for content but cross-referenced.
+<!-- D04 -->
+Article 3(18) requires an arrangement concerning **more than 1 Member State**, or a Member State and a third country, with at least 1 listed condition: participants not all tax resident in the same jurisdiction; simultaneous residence in more than 1 jurisdiction; another-jurisdiction PE whose business includes the arrangement; activity in another jurisdiction without residence or a PE; or possible impact on automatic information exchange or identification of beneficial ownership. A series of arrangements and multiple steps/parts can constitute the arrangement. Record the geographic opening condition as well as the particular limb; a label such as "international" is insufficient. [Article 3(18)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-This skill does NOT cover:
+<!-- D05 -->
+A reportable cross-border arrangement contains at least **1 Annex IV hallmark**. For an intermediary, distinguish the person designing, marketing, organising, making available or managing implementation from a person providing aid, assistance or advice. The latter must know, or reasonably be expected to know, the relevant involvement given the facts, available information, expertise and understanding needed for the service; the person may prove absence of that knowledge. Reporting is limited to information within knowledge, possession or control. A role label, invoice or job title alone does not establish every element. [Articles 3(19)–(21), 8ab(1)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-- **Domestic-only tax shelter disclosure** — US §6011/§6111/§6112 reportable transactions, UK DOTAS, Australian PCG 2024 reportable arrangements, Canadian §237.3 reportable transactions.
-- **Country-by-country reporting** under BEPS Action 13 — see `cbcr-beps-13.md` (forthcoming).
-- **FATCA/CRS automatic exchange** — see `fatca-crs-automatic-exchange.md`.
-- **State aid recovery and EU anti-abuse rules** — see `eu-state-aid-tax-rulings.md` (forthcoming).
-- **Pillar Two anti-abuse rules** — see `pillar-two-globe-minimum-tax.md`.
+<!-- D06 -->
+EU intermediary nexus requires at least **1** of: Member State tax residence; a Member State PE through which the arrangement services are provided; incorporation in or governance by Member State law; or registration with a Member State professional association for legal, tax or consultancy services. A non-EU adviser does not automatically satisfy that nexus, and a non-EU headquarters does not remove reporting duties of a qualifying EU intermediary or relevant taxpayer. A relevant taxpayer is the person to whom the arrangement is made available, who is ready to implement it, or who implements its first step. [Article 3(21)–(22)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-## Section 2 — Filing requirements
+<!-- D07 -->
+Where association matters, use article 3(23), not a general group label: significant management influence; **more than 25%** voting rights; direct/indirect capital ownership **more than 25%**; or entitlement to **25% or more** of profits. Apply the common-participation and joint-action rules, multiply successive indirect capital holdings, treat a person holding **more than 50%** voting rights as holding **100%** of those voting rights, and treat an individual, spouse and direct ascendants/descendants as a single person for that definition. The different strict/non-strict comparisons matter. [Article 3(23)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-### Who is the reporter
+### 2. Test every potentially relevant hallmark and the main benefit test
 
-- **Reporter priority order** — 1. **Intermediary** — any person that designs, markets, organises, makes available for implementation, or manages the implementation of a reportable cross-border arrangement. Includes service intermediaries (those who provide aid, assistance, or advice with respect to the foregoing). 2. **Relevant taxpayer** — the person to whom the reportable cross-border arrangement is made available, or who is ready to implement, or who has implemented the first step. Reports only where no intermediary is reportable in the EU/UK, or where all relevant intermediaries claim privilege.  _([T1] Article 8ab DAC6)_
+<!-- D08 -->
+The **main benefit test (MBT)** is met where, considering all relevant facts and circumstances, the main benefit or one of the main benefits a person may reasonably expect is obtaining a tax advantage. It applies to **all A and B** hallmarks and **C.1(b)(i), C.1(c), C.1(d)**. It does **not** apply to C.1(a), C.1(b)(ii), C.2–C.4, D or E. The original Guide reversed C.1(b)(i)/(ii). The mere presence of C.1(b)(i)/(c)/(d) conditions is not itself a reason to conclude that MBT is met. Document the expected tax benefit, commercial benefits, their relative importance and the reviewer's reasoned conclusion; no fixed monetary ranking or percentage safe harbour is supplied here. [Annex IV Part I](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-### Who is an intermediary
+| Hallmark | Complete classification question | MBT | Official provision |
+| --- | --- | --- | --- |
+| <!-- D09 --> A.1 | Does the relevant taxpayer or participant undertake confidentiality that may require non-disclosure of **how the arrangement could secure a tax advantage**, to other intermediaries or tax authorities? Ordinary commercial confidentiality alone is not this wording. | Yes | [Annex IV A.1](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D10 --> A.2 | Is the intermediary's fee, including interest, finance costs or other charges, fixed by reference to the tax advantage or whether it is actually derived, including a refund obligation if the intended advantage is not achieved? | Yes | [Annex IV A.2](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D11 --> A.3 | Is substantially standardised documentation or structure available to more than 1 relevant taxpayer without substantial customisation? | Yes | [Annex IV A.3](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D12 --> B.1 | Do contrived steps acquire a loss-making company, discontinue its main activity and use its losses to reduce tax, including transfer to another jurisdiction or accelerated use? Test all the connected elements. | Yes | [Annex IV B.1](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D13 --> B.2 | Does the arrangement convert income into capital, gifts or other revenue categories taxed at a lower level or exempt? | Yes | [Annex IV B.2](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D14 --> B.3 | Are circular transactions round-tripping funds through interposed entities without another primary commercial function, or through transactions that offset/cancel each other or have similar features? | Yes | [Annex IV B.3](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D15 --> C.1(a) | Is there a **deductible cross-border payment between 2 or more associated enterprises**, whose recipient is not tax resident in any jurisdiction? | No | [Annex IV C.1 opening and (a)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D16 --> C.1(b)(i) | With the same deductible-payment/associated-enterprise prerequisites, is the recipient resident where corporate tax is not imposed, or is imposed at **0 or almost 0**? This is not a universal numerical definition of "almost 0". | **Yes** | [Annex IV C.1(b)(i); Part I](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D17 --> C.1(b)(ii) | With those same prerequisites, is the recipient's residence included in a third-country non-cooperative assessment list issued **collectively by Member States or within the OECD framework**? Verify the applicable list and date; do not substitute only today's EU list or an invented local list. | **No** | [Annex IV C.1(b)(ii); Part I](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D18 --> C.1(c) | With those same prerequisites, does the payment benefit from full tax exemption in the recipient's residence jurisdiction? | Yes | [Annex IV C.1(c)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D19 --> C.1(d) | With those same prerequisites, does the payment benefit from a preferential tax regime in the recipient's residence jurisdiction? | Yes | [Annex IV C.1(d)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D20 --> C.2 | Are deductions for the same depreciation on an asset claimed in more than 1 jurisdiction? C.1's payment/association opening is not automatically an element of C.2. | No | [Annex IV C.2](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D21 --> C.3 | Is double-tax relief for the same item of income or capital claimed in more than 1 jurisdiction? | No | [Annex IV C.3](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D22 --> C.4 | Does an asset transfer involve a material difference in the amount treated as consideration in the jurisdictions involved? | No | [Annex IV C.4](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D23 --> D.1 | Could the arrangement undermine financial-account-information reporting under the implementing laws or equivalent agreements, including third-country agreements, or take advantage of their absence? Apply the actual patterns below and their opening condition. | No | [Annex IV D.1](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D24 --> D.2 | Is there a non-transparent legal/beneficial-ownership chain using persons, arrangements or structures that **cumulatively** lack substantive economic activity supported by adequate staff/equipment/assets/premises, are offshore relative to at least 1 beneficial owner of held assets, and make the Directive 2015/849 beneficial owners unidentifiable? | No | [Annex IV D.2(a)–(c)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D25 --> E.1 | Does the arrangement use unilateral safe-harbour rules? | No | [Annex IV E.1](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D26 --> E.2 | Is there a transfer of hard-to-value intangibles or rights **between associated enterprises**, with **both** no reliable comparables at transfer and highly uncertain projected cash flows/income or valuation assumptions, making ultimate success difficult to predict? | No | [Annex IV E.2(a)–(b)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| <!-- D27 --> E.3 | Does an intragroup cross-border transfer of functions/risks/assets leave projected annual EBIT of the transferor(s), during the **3-year** period after transfer, at **less than 50%** of the projected annual EBIT without the transfer? Exact equality is outside this comparison. | No | [Annex IV E.3](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
 
-**Two tests for intermediary status**  _([T1] Article 3(21) DAC6)_
+<!-- D28 -->
+DAC6 D.1 lists **6** patterns (derived count), **(a)–(f)**, rather than the original Guide's "8" or a separate (g): (a) an account/product/investment not, or purporting not to be, a Financial Account but substantially similar; (b) transfer of Financial Accounts/assets to, or use of, jurisdictions not bound to exchange with the taxpayer's residence; (c) reclassification into products/payments not subject to automatic exchange; (d) transfer/conversion of institutions/accounts/assets into institutions/accounts/assets not subject to that reporting; (e) entities/arrangements/structures eliminating or purporting to eliminate Account Holder/Controlling Person reporting; and (f) undermining or exploiting financial-institution due-diligence weaknesses, including inadequate AML enforcement or weak transparency requirements. Read the opening condition with each pattern. The OECD model has different lettering and must not be pasted over this Annex. [Annex IV D.1](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-| Test | Trigger |
-| --- | --- |
-| Promoter test | The person designs, markets, organises, makes available, or manages implementation |
-| Service-provider test | The person provides aid, assistance, or advice with respect to the design/marketing/organising/availability/implementation, *and* a reasonable person in the same position would have known the arrangement is reportable |
+<!-- D29 -->
+A no-MBT hallmark removes only the MBT dependency. It does not remove the cross-border definition, other hallmark elements, reporter nexus, knowledge, duplicate-report evidence or valid privilege rules. A reporting analysis does not establish that an arrangement is abusive or unlawful, nor that a non-reportable arrangement is tax-effective. Article 8ab(15) expressly says a tax administration's failure to react does not imply acceptance of validity or tax treatment. [Articles 3(18)–(21), 8ab(15); Annex IV](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-- **Connecting nexus to the EU** — At least one of: Tax resident in a Member State; Permanent establishment in a Member State through which services are provided; Incorporated/governed by laws of a Member State; Registered with a professional association related to legal, taxation or consultancy services in a Member State  _(Article 3(21) DAC6)_
+### 3. Determine each reporter and the competent jurisdiction
 
-### Reporting jurisdiction priority
+<!-- D30 -->
+The obligation applies to **all** intermediaries involved, subject to the specific exemptions. A relevant taxpayer reports where there is no intermediary or the qualifying waiver leaves the obligation with the taxpayer under article 8ab(6); do not treat one adviser's privilege as automatically exempting every other adviser. For multiple relevant taxpayers, priority is the taxpayer that agreed the arrangement with the intermediary, then the taxpayer managing implementation. Exemption applies only to the extent the **same information** is proved already reported. Obtain the report and adequate evidence, not merely an unsupported assertion or a reference number without its information coverage. [Article 8ab(5)–(6), (9)–(10)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-- **Priority order if multiple intermediaries / multiple Member States could claim reporting** — 1. Member State where the intermediary is **tax resident**. 2. Otherwise: Member State where the intermediary has a **PE** through which the services were provided. 3. Otherwise: Member State where the intermediary is **incorporated** or **governed**. 4. Otherwise: Member State where the intermediary is **registered with the professional association**. An intermediary is exempt where it can prove the arrangement has already been reported by another intermediary in a Member State or by the taxpayer.  _([T1] Article 8ab(3))_
+<!-- D31 -->
+An intermediary with reporting obligations in multiple Member States uses the first applicable connection: tax residence; service-providing PE; incorporation/governing law; professional-association registration. Evidence of the same information reported in another Member State supports the article 8ab(4) multiple-jurisdiction exemption. A relevant taxpayer's separate order is residence; a PE benefiting from the arrangement; receipt of income/generation of profits without residence or a PE in a Member State; then activity without such residence/PE. Apply the taxpayer's own duplicate-jurisdiction proof rule. The intermediary order is not the taxpayer order, and a general "EU/UK" priority list does not exist. [Article 8ab(3)–(4), (7)–(8)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-### When to report
+### 4. Calculate the applicable clock, updates and historical route
 
-- **30-day reporting window trigger events** — The clock starts on the EARLIEST of: The day after the arrangement is made available for implementation; The day after the arrangement is ready for implementation; The day after the first step of implementation has been taken. For service intermediaries the clock starts the day after they provide aid, assistance or advice. For marketable arrangements, the intermediary must file a quarterly update.  _([T1] Article 8ab(1); Article 8ab(2))_
+<!-- D32 -->
+For an intermediary, article 8ab(1)'s **30-day** period starts at the earliest of **the day after availability**, **the day after readiness**, or **when the first implementation step has been made**. The third limb is not drafted "the day after". For an auxiliary/service intermediary, C-623/22 paragraphs 82–86 clarify that the reporting period cannot start until the day after completion of the aid, assistance or advice and, at the latest, the first-subparagraph trigger insofar as the intermediary is aware of it. Earlier voluntary reporting is permitted. This qualification concerns the EU clock; the UK rules below are separate. [C-623/22, paragraphs 82–86](https://publications.europa.eu/resource/celex/62022CJ0623). For the relevant taxpayer, apply paragraph 7 to its own availability/readiness/first-step facts and exact wording; do not automatically reuse an intermediary's trigger date. Record the source wording, event, trigger date and national computation rules; do not apply a single mechanically shifted date to all reporter categories. [Article 8ab(1), (7)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-### What to report
+<!-- D33 -->
+A marketable arrangement is designed, marketed, ready or made available without substantial customisation. Intermediaries provide a report **every 3 months** with new article 8ab(14)(a), (d), (g), (h) information available since the last report; this is not an EU-wide rule that every update is due on 30 April/31 July/31 October/31 January. National periods and due dates matter. Germany, for example, requires the specified changes within **10 days after calendar-quarter end**, not the old Guide's universal dates. [Articles 3(24)–(25), 8ab(2)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1); [AO section 138h](https://www.gesetze-im-internet.de/ao_1977/__138h.html).
 
-- **The eleven data points** — 1. Identification of intermediaries and relevant taxpayers (name, DoB/incorporation, tax residence, TIN) 2. Details of the hallmarks that make the arrangement reportable 3. Summary of the arrangement (commercial name; abstract description; no LPP-protected detail required) 4. Date on which the first step has been or will be taken 5. Details of national tax provisions concerned 6. Value of the reportable cross-border arrangement 7. Identification of the Member State of the relevant taxpayer(s) and of any other Member States likely to be concerned 8. Identification of any other persons in a Member State likely to be affected 9. Identification of associated enterprises 10. The arrangement reference number (ARN) — issued by the receiving Member State and reused across all Member States 11. Updated data points where there is a change  _([T1] Article 8ab(14))_
+<!-- D34 -->
+The EU historical window is first implementation **2018-06-25 through 2020-06-30**. Original article 8ab(12) prescribed **2020-08-31**. Directive 2020/876 permitted Member States to defer that filing to **2021-02-28**, start the specified July–December 2020 clocks by **2021-01-01**, and move the first marketable update to **2021-04-30**. It was an **option**, not a universal extension. For a late discovery, identify the actual Member State's implementation, historical deadline, available correction route and limitation/penalty provisions. Do not invent a fresh 30-day clock simply because the omission was discovered today. [Articles 8ab(12), 27a–27b](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1); [2020/876 article 1](https://publications.europa.eu/resource/celex/32020L0876).
 
-## Section 3 — The five hallmark categories
+### 5. Prepare the information, preserve privilege and record the reference
 
-Each Member State transposed DAC6 substantially uniformly; UK MDR substantially mirrors hallmarks A, B, certain C, D, and E but uses different drafting.
+<!-- D35 -->
+Article 8ab(14) has **8 lettered categories (a)–(h)** (derived count), not 11 independent EU data points. Prepare: (a) intermediaries/relevant taxpayers' names, birth date/place for individuals, tax residence and TIN, including the associated enterprises where appropriate, but excluding identification of a privilege-waived intermediary under paragraph 5; (b) detailed hallmarks; (c) arrangement summary, common name if any, relevant arrangements and other information helping assess tax risk, subject to the listed secret/public-policy protection; (d) actual/intended first-step date; (e) relevant national legal provisions; (f) value; (g) relevant taxpayer Member State(s) and other concerned Member States; and (h) other affected Member State persons and the linked Member States. The current summary wording is wider than the former abstract-only description. National portal fields and reference numbers may add implementation requirements; updates remain distinct obligations. [Article 8ab(14)(a)–(h)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-### Category A — Generic hallmarks (MBT required)
+<!-- D36 -->
+Under current article 8ab(5), a Member State may grant a waiver where reporting breaches national legal professional privilege, within the law defining the profession. The waived intermediary must notify **its client**, without delay: an intermediary client, or if none, the relevant taxpayer client. Article 3(31) defines client by services including assistance, advice, counsel or guidance for the reportable arrangement. Do not send privileged details or the lawyer's identity to non-clients under the superseded blanket cascade. The taxpayer's or another intermediary's own obligation still requires analysis. [Articles 3(31), 8ab(5), (14)(a)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-**Category A hallmarks**
+<!-- D37 -->
+Read the courts' distinct holdings: **C-694/20**, paragraphs 19,24 and40–66, invalidated the obligation on a privilege-waived lawyer to notify a **non-client** intermediary; it did not erase client notification or other reporters' duties. **C-623/22**, paragraphs 94–120, distinguishes professionals authorised for legal representation from a general secrecy duty, and limits the special C-694/20 protection to lawyers with the Directive 98/5 professional titles. Do not infer privilege solely from a tax-adviser/accountant/bank title, or categorically deny it solely because work involved design/marketing: assess the national protected information and the actual role. The national comparisons below are limited to the identified texts and must be read with this current EU framework. [C-694/20](https://publications.europa.eu/resource/cellar/3748055b-76dd-11ed-9887-01aa75ed71a1.0007.05/DOC_1); [C-623/22](https://publications.europa.eu/resource/celex/62022CJ0623).
 
-| Hallmark | Description |
-| --- | --- |
-| **A.1** | Arrangement where the relevant taxpayer / participant undertakes to comply with a confidentiality condition that may require them not to disclose how the arrangement could secure a tax advantage. |
-| **A.2** | The intermediary is entitled to a fee fixed by reference to (a) the tax advantage derived OR (b) whether a tax advantage is actually derived (e.g., contingency fee). |
-| **A.3** | The arrangement has substantially standardised documentation or structure, available to more than one taxpayer, without need for substantial customisation. |
+<!-- D38 -->
+**Germany:** AO section 138f(6) provides a **partial-information transfer**, not a universal advice-only exemption. Where a statutory confidentiality duty has not been released, the specified user-linked data in paragraph 3 numbers2,3,10 pass to the user after the required notice, remaining-information report and provision of IDs; the user's clock follows the receipt conditions. The other arrangement information remains reportable. AO 102(1)(3)(b) lists lawyers, tax advisers, auditors and other listed professions, but the particular secrecy and EU representation requirements must still be satisfied. Do not use the original "design/marketing always outside" shortcut. [AO 138f(6),102](https://www.gesetze-im-internet.de/ao_1977/__138f.html); [profession/secrecy provision](https://www.gesetze-im-internet.de/ao_1977/__102.html).
 
-### Category B — Specific hallmarks (MBT required)
+<!-- D39 -->
+**France:** current CGI 1649AE(I)(4), effective **2025-02-16**, identifies avocats and avocats au Conseil d'État et à la Cour de cassation where disclosure would breach professional secrecy. Notify an intermediary **client**, otherwise a relevant taxpayer **client**, by a means giving a certain date; the specified information accompanies the taxpayer notification where applicable. This is not a blanket promoter exemption attributed to an unspecified 2022 Cour de cassation ruling. BOFiP's **2026-09-23** guidance explains the client-only rule and information boundary. [CGI 1649AE](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051215679/2025-02-16); [BOFiP paragraphs 150–210](https://bofip.impots.gouv.fr/bofip/12275-PGP.html/identifiant=BOI-CF-CPF-30-40-10-20-20260923).
 
-**Category B hallmarks**
+<!-- D40 -->
+**Ireland:** TCA 817RC(9)(b)/(10), read with Revenue's **March 2026** manual section 4.10, protects information for which LPP could be maintained in legal proceedings; a partial claim protects that information only. Ordinary transaction documents and parties' identity are not automatically protected; a client's limited waiver and actual litigation/legal-advice context require analysis. The manual says marketing is not privileged and requires notice to the relevant taxpayer without delay; unprivileged information remains reportable. For a partially privileged filing, Revenue's identified procedure may require Form DAC6(LPP) via MyEnquiries instead of ROS. The intermediary shares the Arrangement ID and notifies the taxpayer within the applicable Chapter 4.7 limits; the relevant taxpayer must file all specified information through ROS within **14 days of receiving the Arrangement ID**. Treat the form's requested details consistently with the current EU protection of a waived intermediary's identity; the precise treatment of any conflicting field is **not cleared here**. [Current Revenue manual 4.10, printed47–48](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-33/33-03-03.pdf); [current filing page](https://www.revenue.ie/en/companies-and-charities/international-tax/aeoi/dac6/file-dac6.aspx).
 
-| Hallmark | Description |
-| --- | --- |
-| **B.1** | A participant takes contrived steps consisting in acquiring a loss-making company, discontinuing its main activity, and using the losses in order to reduce its tax liability. |
-| **B.2** | Conversion of income into capital, gifts, or other categories of revenue taxed at a lower level or exempt. |
-| **B.3** | Circular transactions resulting in the round-tripping of funds through entities without primary commercial function or transactions that offset / cancel each other. |
+<!-- D41 -->
+**Netherlands:** the DAC6 provision is **WIB 10h**, not AWR 10h. WIB 10h(5) incorporates the confidentiality rule in **AWR 53a(1)** and current client notification; AWR 53a lists specified professions and information entrusted/communicated in that capacity, rather than every tax adviser. WIB 10h(2) excludes the waived intermediary's identification. Verify the person's qualifying capacity and actual protected information; an unqualified adviser cannot acquire a lawyer's protection merely by describing work as legal advice. [WIB 10h](https://wetten.overheid.nl/BWBR0003954); [AWR 53a](https://wetten.overheid.nl/BWBR0002320/2026-01-01).
 
-### Category C — Cross-border deductible payments
+<!-- D42 -->
+**Luxembourg:** article 3 of the **2020 original law** and the ACD page updated **2026-06-15** list professional-secrecy provisions for lawyers, experts-comptables and audit professionals, subject to profession limits; the ACD page distinguishes client-only notice for lawyers from its broader notice wording for the other listed professions and states a **10-day** notice period. Those national materials must not be used to bypass current article 8ab(5) or the C-623/22 representation limit. **Not yet confirmed for execution:** compatibility and the particular non-lawyer's eligibility/notification route under the current national implementing text. The original "lawyers only" row was incomplete; the national list is not an automatic full waiver. [Original law article 3](https://legilux.public.lu/filestore/eli/etat/leg/loi/2020/03/25/a192/jo/fr/pdfa/eli-etat-leg-loi-2020-03-25-a192-jo-fr-pdfa.pdf); [ACD sections 4.2,6.2](https://impotsdirects.public.lu/fr/echanges_electroniques/dispositifstransfrontieres.html); [current EU rule](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-**Category C hallmarks**
+<!-- D43 -->
+**Belgium:** distinguish the historical **167/2020** suspension from current conclusions. C-694/20 concerns non-client notification by a privilege-waived lawyer; it does not remove notification to the lawyer's own client. The Belgian Constitutional Court's **33/2025**, B.11–B.12 and B.14, applies the representation/professional-title distinctions and the continuing protection of the lawyer-client relationship. **Not yet confirmed for execution:** the exact current federal/regional implementing article and local procedure for a particular reporter. A historical suspension is not proof that every Belgian lawyer, accountant or intermediary can stop all notifications. [C-694/20 paragraphs 17–24,66](https://publications.europa.eu/resource/cellar/3748055b-76dd-11ed-9887-01aa75ed71a1.0007.05/DOC_1); [Belgian judgment33/2025, printed34–36](https://fr.const-court.be/public/f/2025/2025-033f.pdf).
 
-| Hallmark | MBT? | Description |
-| --- | --- | --- |
-| **C.1(a)** | No | Cross-border deductible payments where the recipient is not resident in any tax jurisdiction. |
-| **C.1(b)(i)** | No | Cross-border deductible payments where the recipient is resident in a jurisdiction that levies no corporate tax or a corporate tax rate of zero or almost zero. |
-| **C.1(b)(ii)** | **Yes** | Cross-border deductible payments where the recipient is resident in a jurisdiction included on the EU list of non-cooperative jurisdictions. |
-| **C.1(c)** | **Yes** | The payment benefits from a full exemption in the jurisdiction of the recipient. |
-| **C.1(d)** | **Yes** | The payment benefits from a preferential tax regime in the jurisdiction of the recipient. |
-| **C.2** | No | Deductions for the same depreciation on the same asset are claimed in more than one jurisdiction. |
-| **C.3** | No | Relief from double taxation in respect of the same item of income or capital is claimed in more than one jurisdiction. |
-| **C.4** | No | Arrangements that include transfers of assets where there is a material difference in the amount being treated as payable in consideration for the assets in those jurisdictions. |
+<!-- D44 -->
+**Italy:** current D.Lgs 100/2020 article 3(4) addresses client information obtained when examining legal position or defending/representing in judicial proceedings, including advice on starting/avoiding proceedings; paragraph 5 separately addresses self-incrimination. Current paragraph 6 requires notice **without delay to the client**, if an intermediary, otherwise the relevant taxpayer, and paragraphs 7–10 set taxpayer/duplicate/self-incrimination rules. The text does not support the old absolute "avvocati only; commercialisti never" shortcut. Check qualifying professional powers, protected information and the current EU limit. The identified article version applies in 2026; a national recodification after 2026 requires a fresh check. [Current article 3](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2020-07-30;100!vig=~art3).
 
-### Category D — CRS/transparency hallmarks (no MBT)
+<!-- D45 -->
+**Spain:** LGT additional provision 23(2) describes protected **neutral legal advice**, regardless of the professional activity, where the sole purpose is evaluating conformity with the applicable rules without seeking/facilitating implementation. A valid client release can permit reporting. Additional provision24 now addresses notification to the **client** intermediary or relevant taxpayer. Do not repeat "abogados only; asesores fiscales never", or let the broad national wording remove the current EU representation requirement. **Not yet confirmed for execution:** a particular non-lawyer's entitlement where the national wording and C-623/22 scope need reconciliation. [LGT additional provisions 23–24](https://www.boe.es/eli/es/l/2003/12/17/58/con); [C-623/22 paragraphs 94–120](https://publications.europa.eu/resource/celex/62022CJ0623).
 
-**Category D hallmarks**
+<!-- D46 -->
+Track an arrangement reference separately from report/disclosure/version IDs and registration IDs. In Germany, AO 138f(5) and the **2026-05-08** BZSt handbook 1.5 identify the ArrangementID, DisclosureID and references for user supplements/corrections. In Italy, the ministerial decree article 3 provides an arrangement number unless already assigned by Italy/another EU administration, notification to known participants and reuse in later reports/periodic information. Obtain the actual acknowledgement and evidence of information reported. An ARN is neither a ninth standalone category in 8ab(14) nor proof of substantive tax acceptance. The old claimed Regulation 2020/1132 legal basis is **not confirmed**. [AO 138f](https://www.gesetze-im-internet.de/ao_1977/__138f.html); [BZSt 1.5](https://www.bzst.de/SharedDocs/Downloads/DE/DAC6/KHB/khb_dac6_bop.pdf?__blob=publicationFile&v=23); [Italian decree article 3](https://www.finanze.gov.it/export/sites/finanze/.galleries/Documenti/Varie/dm_dac6_testo.docx_signed.pdf); [8ab(14)–(15)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-| Hallmark | Description |
-| --- | --- |
-| **D.1** | An arrangement that may have the effect of undermining the reporting obligation under the laws implementing the EU automatic exchange of information legislation (CRS / DAC2) or that takes advantage of the absence of such legislation. Covers eight specific sub-features (D.1(a)–(g)) reflecting the OECD Model MDR on CRS Avoidance Arrangements. |
-| **D.2** | An arrangement involving a non-transparent legal or beneficial ownership chain with the use of persons, legal arrangements or structures (a) that do not carry on substantive economic activity supported by adequate staff, equipment, assets and premises; (b) that are incorporated, managed, resident, controlled or established in any jurisdiction other than the jurisdiction of residence of one or more of the beneficial owners of the assets held; and (c) where the beneficial owners are made unidentifiable. |
+<!-- D47 -->
+Annual-use reporting is a **Member State option** under 8ab(11), not a universal EU annual-return obligation. Germany's AO 138k requires the arrangement's prescribed references in the return for the tax/period where the tax advantage first has an effect. Ireland's TCA 817RD(9) applies to a chargeable period in which a person enters an arrangement transaction or obtains/seeks a tax advantage, as explained in Revenue's current manual 5.6. Italy's decree article 3(3) covers relevant returns for each period of use; Luxembourg's ACD page identifies its national return route. Check the actual Member State's rule; do not add annual disclosure to every return solely by citing 8ab(11). [8ab(11)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1); [AO 138k](https://www.gesetze-im-internet.de/ao_1977/__138k.html); [Revenue manual 5.6](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-33/33-03-03.pdf); [Italian article 3(3)](https://www.finanze.gov.it/export/sites/finanze/.galleries/Documenti/Varie/dm_dac6_testo.docx_signed.pdf); [ACD](https://impotsdirects.public.lu/fr/echanges_electroniques/dispositifstransfrontieres.html).
 
-### Category E — Transfer pricing (no MBT)
+### 6. Apply the separate UK and OECD analyses
 
-**Category E hallmarks**
+<!-- D48 -->
+UK SI 2023/38 commenced **2023-03-28** and revoked the previous 2020 regulations. It applies OECD-model **CRS avoidance arrangements and opaque offshore structures**, not DAC6 categories A/B/C/E and not a verbatim copy of DAC6 D.1/D.2. Its regulation 2 incorporates specified OECD model definitions with UK adjustments. The official legislation page read on 2026-11-15 serves the instrument in **original format**; this source basis is read alongside the HMRC manual current in 2026. It is not labelled a revised 2026 consolidation. [Regulations 1–2,21](https://www.legislation.gov.uk/uksi/2023/38/pdfs/uksi_20230038_en.pdf); [HMRC introduction](https://www.gov.uk/hmrc-internal-manuals/international-exchange-of-information/ieim710010); [official version status](https://www.legislation.gov.uk/uksi/2023/38/contents).
 
-| Hallmark | Description |
-| --- | --- |
-| **E.1** | An arrangement that involves the use of unilateral safe harbour rules. |
-| **E.2** | An arrangement involving the transfer of hard-to-value intangibles for which no reliable comparables exist at the time of transfer and projections of future cash flows / income are uncertain. |
-| **E.3** | An arrangement involving an intragroup cross-border transfer of functions, risks or assets if the projected annual EBIT, during the three-year period after the transfer, of the transferor(s) is less than 50% of the projected annual EBIT of such transferor(s) if the transfer had not been made. |
+<!-- D49 -->
+UK intermediary reporting under regulations 3–4 covers information in knowledge/possession/control where the relevant UK branch/office supplies services, or UK residence, place of management or incorporation applies. The **30-day** period begins the day after making an arrangement/structure available or providing relevant services. The UK taxpayer's separate regulation 7 clock begins the day after the first implementation step. Regulation 5 exempts only the legally privileged information and requires written client notice by the relevant reporting deadline, subject to its protection; regulation 6 has its own documentary duplicate/partner-jurisdiction conditions. Regulation 9 requires written notification of the fact that a return was made to known/reasonably knowable other intermediaries/reportable taxpayers within **30 days beginning with the day the return is made**. Regulation 12 excludes an employee from intermediary status for the arrangement or structure where the employer is an intermediary or relevant taxpayer. Employee/employer have the ITEPA 2003 section 4 meanings, read with section 5(2); employment also extends to a connected employer closely bound by financial, economic or organisational links. These are not all the EU clocks. [Regulations3–12](https://www.legislation.gov.uk/uksi/2023/38/pdfs/uksi_20230038_en.pdf).
 
-## Section 4 — Computation rules
+<!-- D50 -->
+UK historical regulation 8 concerns a **promoter** of a **CRS avoidance arrangement** implemented **2018-06-25 through 2023-03-27**, with filing by **2023-09-25**, not every historic opaque structure. The exceptions include documented aggregate Financial Account balance/value immediately before implementation **less than USD 1,000,000** and specified prior 2020 regulation reporting; currency conversion uses the specified prior-day spot rate. Do not substitute the OECD model's **2014-10-29** starting point or **180-day** model deadline for this UK rule. [Regulation 8](https://www.legislation.gov.uk/uksi/2023/38/pdfs/uksi_20230038_en.pdf); [OECD model2.7](https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/03/model-mandatory-disclosure-rules-for-addressing-crs-avoidance-arrangements-and-opaque-offshore-structures_1d2a819d/e3cabd80-en.pdf).
 
-### Step 1 — Identify whether the arrangement is "cross-border"
+<!-- D51 -->
+The OECD 2018 model is a model, not a self-executing worldwide filing law. Its CRS-avoidance and opaque-offshore-structure definitions, national placeholders and reporting provisions must be read through the actual adopting jurisdiction's legislation. The UK incorporation and modifications are an example, not proof that every country uses the same scope, privilege, clock or historical window. Domestic schemes with a similar name are not proof of literal OECD adoption. The model was personally read through rules 1.1–2.7; no freestanding worldwide filing instruction is supplied. [OECD model, printed14–22](https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/03/model-mandatory-disclosure-rules-for-addressing-crs-avoidance-arrangements-and-opaque-offshore-structures_1d2a819d/e3cabd80-en.pdf); [UK regulation 2](https://www.legislation.gov.uk/uksi/2023/38/pdfs/uksi_20230038_en.pdf).
 
-- **Cross-border test** — An arrangement that concerns more than one Member State, or a Member State and a third country, where at least one of the following: Not all participants are tax resident in the same jurisdiction; One or more participants are simultaneously tax resident in more than one jurisdiction; One or more participants carry on business in another jurisdiction through a PE there, and the arrangement forms part or whole of the business of that PE; One or more participants carry on activity in another jurisdiction without being resident or creating a PE there; The arrangement has a possible impact on the automatic exchange of information or the identification of beneficial ownership. If purely domestic → not in scope.  _([T1] Article 3(18) DAC6)_
+## Boundary and exception table
 
-### Step 2 — Test each hallmark
+### Country comparisons retained from the original
 
-- **Hallmark testing procedure** — For each potential hallmark, walk the definition mechanically. Document: Which factual elements of the arrangement meet which sub-element of the hallmark; Where the evidence sits.
+These comparisons identify the legal route; they do not import the EU hallmark test, deadlines, penalties or privilege rules into another country.
 
-### Step 3 — Apply the Main Benefit Test where required (Article 3(19))
+<!-- D52 -->
+**Mexico:** the operative chapter is **Código Fiscal de la Federación 197–202**, not Ley del ISR 197–202. Current article 199 requires an actual/potential Mexican tax benefit and a listed feature, including its exchange-avoidance feature I with the documentary foreign-reporting exception and other broader features. Article197 covers specified advisers ; article 198 supplies taxpayer obligations in stated cases. This is Mexico's own reportable-schemes law, not evidence that every OECD model provision was adopted unchanged. The official Code reviewed is consolidated through **2026-04-09**; transaction execution also needs the applicable implementing rules. [Current CFF 197–202, printed234–241](https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf).
 
-- **MBT definition** — the main benefit, or one of the main benefits, that a person may reasonably expect to derive from an arrangement, having regard to all relevant facts and circumstances, is the obtaining of a tax advantage.  _([T1] Article 3(19))_
-- **MBT applies to** — all Category A hallmarks, all Category B hallmarks, hallmarks C.1(b)(ii), C.1(c), C.1(d).
-- **MBT does not apply to** — C.1(a), C.1(b)(i), C.2, C.3, C.4, Category D (all), Category E (all). These hallmarks make an arrangement reportable irrespective of tax-advantage intent.
+<!-- D53 -->
+**Argentina:** RG5306/2022 article9 expressly **replaced/left without effect RG4838 and its complementary rules**. Its own RICOI regime includes specified international operations, including CRS/FATCA circumvention features, and has different taxpayer, SME exception and annual information conditions. The original assertion that RG4838/2020 establishes the current adopted offshore-MDR regime is obsolete. The 2022 original resolution was personally read; **not yet confirmed here** is its complete 2026 amendment overlay and current execution form. Do not use the former regime or assume OECD adoption from its name. [RG5306/2022 articles1–3,5–10](https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-5306-2022-377151/texto).
 
-**[T2] MBT analysis is judgement-heavy.** Document:
-- The tax advantage hypothesised
-- The non-tax commercial benefits
-- A comparative ranking
-- The reviewer's conclusion
+<!-- D54 -->
+**Australia:** ATO's **2026-10-14** RTP material describes a schedule to the company tax return, for relevant large-company filing criteria, with uncertain-position, financial-statement and specified concern/PCG-risk categories. That is a separate disclosure route, not a "PCG 2024" statutory reportable-arrangements regime or proof of OECD model adoption/non-adoption. The actual ATO print-whole-section PDF was read on its public delivery host; the direct ATO public-content endpoint returned403. **Not yet confirmed:** the original blanket non-adoption assertion and unidentified "PCG 2024" citation. This comparison does not compute an Australian filing obligation. [ATO RTP scope/categories, PDF pages10–11](https://caat-p-001.sitecorecontenthub.cloud/api/public/content/0-643fc4e2-ea95-4c3e-93c2-cab5cc6c81a7).
 
-### Step 4 — Determine the reporter and reporting jurisdiction
+<!-- D55 -->
+**Canada:** Income Tax Act **237.3** reportable transactions and **237.4** Minister-designated same/substantially-similar notifiable transactions have their own conditions; CRA also identifies the separate uncertain-tax-treatment regime under 237.5. They are not a direct copy of DAC6/OECD Category D. The operative sections personally opened are current to **2026-10-19**, last amended **2026-06-18**. This comparison does not import their deadlines, penalty formulae or all exemptions into an EU decision. [ITA 237.3](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-237.3.html); [ITA 237.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-237.4.html); [CRA overview](https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance/mandatory-disclosure-rules-overview.html).
 
-- **Reporter determination procedure** — Apply Section 2 priority rules. Document: Whether the user is acting as intermediary or relevant taxpayer; Which Member State has primary reporting right; Whether other intermediaries are also reportable and whether they have filed.
+<!-- D56 -->
+**South Africa:** SARS's current reportable-arrangement guide routes the matter to **Tax Administration Act 34–39**, including section 35 criteria and section 36 exclusions, rather than the original Income Tax Act 80M reference. Its own form/reporting process is separate. Do not label this simply an adopted OECD Category D regime, or use the EU 30-day deadline. [SARS guide, sections 3–8](https://www.sars.gov.za/guide-to-reportable-arrangement/).
 
-### Step 5 — Assemble the 30-day timeline
+<!-- D57 -->
+**New Zealand:** Inland Revenue's identified foreign-exemption-trust route requires relevant trustee registration and ongoing disclosure/annual returns to retain the stated exemption. This is a distinct trust regime. **Not yet confirmed:** the original blanket 2026 statement that there is "no formal OECD MDR Category D adoption"; the trust page does not prove a negative across every New Zealand law. [IR foreign-exemption-trust scope](https://www.ird.govt.nz/international-tax/foreign-exemption-trusts).
 
-- **Timeline assembly procedure** — Identify each of the three trigger events (made available / ready / first step). Pick the earliest. Plot a 30-day countdown.
+<!-- D58 -->
+**Switzerland:** the original "no DAC6/MDR adoption; SBA AML and tax-evasion predicate provisions apply" bundles different questions. **Not yet confirmed:** current country-wide non-adoption, the unidentified SBA rule and the precise AML/tax-offence predicates for any particular person. Ordinary official Fedlex access exposed a JavaScript landing page rather than operative AML text; primary SIF searches did not establish the asserted negative. These assertions cannot support a no-report decision. A Swiss location still requires testing the actual EU connections and taxpayer duties in D04–D06/D30–D31. No vendor explanation is substituted for Swiss primary law.
 
-### Step 6 — Prepare the eleven data points
+### Penalty exposure is national and failure-specific
 
-- **Portal schema by jurisdiction** — Use the receiving Member State's portal schema (e.g., DAC6XML 4.0 in Germany; "DAC6 manager" in Italy; "DECLOYER" in France; UK HMRC's DAC6/MDR submission portal).
+Record the omitted obligation, reporter, date, culpability, information units, continuation, mitigation and competent decision/appeal route. The figures below are not automatic assessments or a price for electing not to report.
 
-### Step 7 — Confirm legal professional privilege if relied upon
+<!-- D59 -->
+**Germany:** AO 379(2) numbers 1e/1g, read with paragraph 7, sets the identified intentional/reckless DAC6 failures at up to **EUR 25,000**, subject to its stated relationship to section378. Identify the particular covered failure; the original "per failure" phrase does not establish a universal charge for every procedural omission. [AO 379](https://www.gesetze-im-internet.de/ao_1977/__379.html).
 
-LPP carve-outs vary materially:
+<!-- D60 -->
+**France:** CGI 1729 C ter provides up to **EUR 10,000** for failure to comply with 1649AD, 1649AE and 1649AG; the limit is **EUR 5,000** for the first infringement in the current calendar year and preceding **3 calendar years**. Fines on the same intermediary/taxpayer are capped at **EUR 100,000 per calendar year**. Its final paragraph excludes the specified obligation in the last paragraph of 1649AG(II) from this sanction. Do not omit that first-infringement or scope qualification. [CGI 1729 C ter](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039250301/2999-01-01).
 
-**LPP scope by jurisdiction**
+<!-- D61 -->
+**Italy:** D.Lgs 100/2020 article 12 increases the D.Lgs 471/1997 article 10(1) base by **50%** for omitted information and reduces it by **50%** for incomplete/inaccurate information. The current base is **EUR 1,500–15,000**, so the corresponding ranges are **EUR 2,250–22,500** and **EUR 750–7,500**, respectively (**derived**). The 2024 reform's transition applies to violations from **2024-09-01**; distinguish earlier violations. Article 10(1) **halves the sanction when transmission occurs within the following 15 days**. The illustrated ranges above exclude that timely-transmission reduction; establish its applicability before calculating a particular sanction. This is not the original universal EUR3,000–31,500 range, and it does not settle case-specific reductions or cumulation. [Article 12](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2020-07-30;100!vig=~art12); [current article 10(1)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471!vig=~art10); [D.Lgs 87/2024 article 5](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-06-14;87!vig=~art5); [amending article 2(1)(g)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-06-14;87!vig=~art2).
 
-| Jurisdiction | LPP scope |
-| --- | --- |
-| **Germany** | Rechtsanwälte, Steuerberater, Wirtschaftsprüfer have LPP for advice-only; design/marketing falls outside |
-| **France** | Avocats are exempt for promotor and service-provider activities — full LPP carve-out post-Cour de cassation 2022 |
-| **Ireland** | Solicitors and barristers — privilege carve-out for legal advice |
-| **Netherlands** | Advocaten — LPP carve-out; tax advisers without legal qualification do NOT have LPP |
-| **Luxembourg** | Avocats — LPP carve-out |
-| **Belgium** | Avocats — LPP carve-out, but the Constitutional Court (judgment 167/2020) found the LPP notification requirement (informing the next intermediary or taxpayer) incompatible with privilege; CJEU 8 Dec 2022 (C-694/20) confirmed |
-| **Italy** | Avvocati — LPP carve-out; commercialisti do NOT |
-| **Spain** | Abogados — LPP carve-out; asesores fiscales do NOT |
-| **UK** | LPP for legal advice from solicitors and barristers; the rest must report |
+<!-- D62 -->
+**Netherlands:** **WIB 11(2)** covers the stated non/tardy/incomplete/incorrect compliance where there is **intent or gross negligence**, up to criminal-code category 6. The official **2026-01-01** Wetboek van Strafrecht 23(4)annotation identifies that category as **EUR 1,100,000** in 2026, rather than the old EUR 870,000. It is a maximum, not an automatic per-arrangement sum; do not apply the criminal-code corporate-turnover rule automatically to this administrative cross-reference. [WIB 11(2)](https://wetten.overheid.nl/BWBR0003954); [WvS23(4),(9)](https://wetten.overheid.nl/BWBR0001854/2026-01-01#BoekEerste_TiteldeelII_Artikel23).
 
-**[T2] Where the user claims LPP:**
-- They must still notify any other intermediary (or, in the absence of intermediaries, the relevant taxpayer) of the reporting obligation, except where that notification itself is impermissible under national LPP (e.g., Belgium post-CJEU C-694/20).
-- The receiving Member State should be informed of the LPP claim.
+<!-- D63 -->
+**Spain:** LGT additional provision 23(4) generally uses **EUR 2,000 per data item/set** for omitted/incomplete/inaccurate/false disclosure, with **EUR 4,000 minimum** and a fee/tax-effect-based ceiling subject to its exceptions and proof rules. Unrequested late filing halves the penalty and limits. Wrong required electronic medium has **EUR 250 per item**, minimum **EUR 750**, maximum **EUR 1,500**. Additional provision24 separately has **EUR 600** for the stated missing, late or inaccurate notices. If omitted privilege notification coincides with the taxpayer's failure to report, its classification and sanction become those of the omitted report. Do not use the old EUR1,000–600,000/"DT4" summary. An actual calculation needs the full unit, fee/tax effect, timing and notification facts. [LGT additional provisions 23(4),24(3)(a)–(b)](https://www.boe.es/eli/es/l/2003/12/17/58/con).
 
-### Step 8 — Track the Arrangement Reference Number (ARN)
+<!-- D64 -->
+**Ireland:** TCA 817RH and current Revenue manual 6 distinguish specified marketable/privilege-notice/taxpayer-ID/historical failures, up to **EUR 4,000**, then up to **EUR 100 per continuing day after imposition**, from specified ordinary report/ID obligations, up to **EUR 500 per day** and further continuation. The annual-return reference failure can attract up to **EUR 5,000**. The court determines liability and amount with the statutory fee/tax-advantage factors. The original flat "EUR 4,000 for late filing" and unspecified criminal-fraud sanction are not reliable substitutes; the latter remains **not confirmed here**. [TCA 817RH as enacted](https://www.irishstatutebook.ie/eli/2019/act/45/enacted/en/print); [March 2026 manual 6.1–6.2](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-33/33-03-03.pdf).
 
-- **ARN tracking** — The receiving Member State issues an ARN at first filing. All subsequent reports for the same arrangement (by other intermediaries, by the taxpayer, or updated returns) reference the ARN.
+<!-- D65 -->
+**Luxembourg:** article 15 of the original law and current ACD section 7 identify up to **EUR 250,000** for the stated non/late/incomplete/inaccurate reporting and notification failures, with a competent administrative decision and judicial recourse. Apply the particular current obligation and law; do not assume a fixed fine. [Original article 15](https://legilux.public.lu/filestore/eli/etat/leg/loi/2020/03/25/a192/jo/fr/pdfa/eli-etat-leg-loi-2020-03-25-a192-jo-fr-pdfa.pdf); [current ACD section 7](https://impotsdirects.public.lu/fr/echanges_electroniques/dispositifstransfrontieres.html).
 
-### Step 9 — Annual taxpayer disclosure (Article 8ab(11))
+<!-- D66 -->
+**UK:** regulation 13 starts with up to **GBP 5,000**, or for the specified failures up to **GBP 600 per day** where 5,000 would be inappropriately low, with the regulation's distinct notification treatment and possible further daily continuation. Under 15(5), the tribunal can increase the penalty up to **GBP 1,000,000** where the prescribed maximum would be inappropriately low; this is not confined to the original phrase "deliberate failure". Regulations 19–20 address special circumstances and reasonable excuse. Determine the exact trigger, permitted procedure and reasonable-excuse facts; do not apply 600/day automatically. [Regulations 13–20](https://www.legislation.gov.uk/uksi/2023/38/pdfs/uksi_20230038_en.pdf).
 
-- **Annual disclosure obligation** — Each relevant taxpayer must, in their annual tax return, disclose the use of any reportable cross-border arrangement in which they are involved. This is independent of the 30-day intermediary report.  _(Article 8ab(11))_
+## Worked cases
 
-## Section 5 — Edge cases and special rules
+### E.3 projected EBIT: strict comparison decides the hallmark
 
-### 5.1 The June 2018 → June 2020 backlog
+<!-- D67 -->
+Assume an established cross-border intragroup transfer and all relevant factual predicates, with projected annual transferor EBIT without the transfer of **EUR 1,000,000** for each of the next **3 years**. At **EUR 500,000** after transfer in each year the ratio is **50%**, so this strict E.3 comparison is not met. At **EUR 490,000**, the ratio is **49%**, below 50%, so E.3 is met on those assumptions without MBT. This does not dispose of another hallmark, reporter, privilege or deadline. The equal annual projections avoid substituting a three-year total/average for the statutory annual comparison. [Annex IV E.3](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1).
 
-- **Backlog filing deadline** — Arrangements where the first step was implemented between 25 June 2018 and 30 June 2020 were reportable by 28 February 2021 (extended from 31 August 2020 by Council Directive (EU) 2020/876). New filings in this window today should be rare but may still arise on discovery.  _(Council Directive (EU) 2020/876)_
+```oa-check
+name: DAC6 E3 strict annual EBIT boundary (2026)
+inputs:
+  without_transfer_annual_ebit: 1000000
+  equal_after_transfer_annual_ebit: 500000
+  lower_after_transfer_annual_ebit: 490000
+steps:
+  statutory_boundary: without_transfer_annual_ebit * 0.5
+  equal_margin: equal_after_transfer_annual_ebit - statutory_boundary
+  lower_margin: lower_after_transfer_annual_ebit - statutory_boundary
+  equal_percent: equal_after_transfer_annual_ebit / without_transfer_annual_ebit * 100
+  lower_percent: lower_after_transfer_annual_ebit / without_transfer_annual_ebit * 100
+expected:
+  statutory_boundary: 500000
+  equal_margin: 0
+  lower_margin: -10000
+  equal_percent: 50
+  lower_percent: 49
+```
 
-### 5.2 Marketable arrangements (Article 3(24))
+### Italy: derive the current penalty ranges before case-specific adjustments
 
-- **Marketable arrangement definition and quarterly update rule** — A reportable cross-border arrangement that is designed, marketed, ready for implementation or made available for implementation without a need to be substantially customised. Quarterly updates required: by 30 April, 31 July, 31 October, 31 January, the intermediary must update the receiving Member State with the new relevant taxpayers identified in the prior quarter.  _(Article 3(24))_
+<!-- D68 -->
+Assume an identified information omission committed after **2024-09-01**, to which the current cross-reference applies, outside the following-15-day transmission reduction and with no further reduction/cumulation issue determined. The **EUR 1,500–15,000** base multiplied by **1.5** gives the omission range **EUR 2,250–22,500**. For incomplete/inaccurate information under article 12(2), multiplication by **0.5** gives **EUR 750–7,500**. These are derived ranges, not a determination of the imposed fine. An earlier breach requires separate transition analysis. Transmission within the following **15 days** engages the article 10(1) halving condition and is excluded from these illustrated unreduced ranges; any further interaction or cumulation requires case-specific analysis. [Article 12](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2020-07-30;100!vig=~art12); [current article 10(1)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471!vig=~art10); [transition article 5](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-06-14;87!vig=~art5).
 
-### 5.3 Hallmark D.1 — CRS avoidance sub-features
+```oa-check
+name: Italy DAC6 current cross-reference penalty ranges (2026)
+inputs:
+  statutory_base_minimum: 1500
+  statutory_base_maximum: 15000
+steps:
+  omission_minimum: statutory_base_minimum * 1.5
+  omission_maximum: statutory_base_maximum * 1.5
+  inaccurate_minimum: statutory_base_minimum * 0.5
+  inaccurate_maximum: statutory_base_maximum * 0.5
+expected:
+  omission_minimum: 2250
+  omission_maximum: 22500
+  inaccurate_minimum: 750
+  inaccurate_maximum: 7500
+```
 
-- **D.1 eight sub-features** — D.1 captures eight specific patterns from the OECD Model MDR on CRS Avoidance: - D.1(a) — use of an account, product or investment that is not, or purports not to be, a Financial Account - D.1(b) — transfer of accounts to jurisdictions not bound by automatic exchange of Financial Account information with the Member State of the taxpayer - D.1(c) — reclassification of income and capital into products / payments not subject to automatic exchange - D.1(d) — transfer or conversion of a Financial Institution or Financial Account into a Financial Institution or Financial Account not subject to CRS reporting - D.1(e) — use of legal entities, arrangements or structures that eliminate or purport to eliminate reporting of one or more Account Holders or Controlling Persons under CRS - D.1(f) — undermining or exploiting weaknesses in due diligence procedures used by Financial Institutions to identify Account Holders or Controlling Persons - D.1(g) — arrangements involving the transformation of a Reportable Account into a non-reportable account  _(OECD Model MDR on CRS Avoidance Arrangements)_
+<!-- D69 -->
+Classification check: a deductible associated-enterprise payment to a no/0/almost 0 corporate-tax jurisdiction engages **C.1(b)(i) only with MBT**; residence on the applicable non-cooperative list concerns **C.1(b)(ii) without MBT**. Neither conclusion follows if the deductible-payment, cross-border, association or relevant recipient conditions are missing. A UK-only MDR analysis does not decide an EU intermediary's A–E obligations. A privilege claim by one adviser does not prove another filed the same information. These qualitative decisions preserve the original refusal/edge-case logic with the corrected MBT list. [Annex IV; articles3(21),8ab(9)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1); [UK regulations 2–7](https://www.legislation.gov.uk/uksi/2023/38/pdfs/uksi_20230038_en.pdf).
 
-### 5.4 UK MDR specifics (SI 2023/38)
+## When to refuse or refer
 
-The UK exited DAC6 reporting on 28 March 2023. The new UK MDR captures only **Category D** hallmarks (CRS avoidance and opaque ownership) as adopted from the OECD Model MDR. Hallmarks A, B, C and E that were reportable under UK-DAC6 are NO LONGER reportable under UK MDR.
+- Refuse a definitive report/no-report conclusion where geography, actual role/knowledge, ownership, hallmark limbs, a required MBT assessment, dates, current national law or proof of duplicate information is missing. Deliver the supported analysis with the exact unresolved dependency and next source/record needed.
+- Do not pronounce an arrangement abusive, legal, tax-effective or accepted by a tax authority from its DAC6 classification or a silent authority. Refer substantive tax effectiveness/anti-abuse issues to the relevant legal analysis.
+- Do not rely on a profession-only privilege label, blanket design/marketing exclusion, old non-client cascade or a filed ARN without information-coverage proof. Preserve privilege and obtain the qualified reporting-jurisdiction decision.
+- Do not refuse to file solely because the reporting duty is disputed or a deadline passed. Identify the actual current/historical duty, correction route and exposure for review; no filing, privileged notification or refusal is authorised by this Guide alone.
+- Do not apply a UK scope limitation to EU intermediaries, or assume DAC7/DAC8/CRS reporting discharges DAC6. Perform each applicable legal test.
 
-**UK MDR summary table**  _(SI 2023/38)_
+## Filing and payment
 
-| Item | UK MDR |
-| --- | --- |
-| In-force date | 28 March 2023 |
-| Hallmark scope | Category D only (CRS avoidance and opaque structures) |
-| Reporter | "Intermediary" (promoter or service provider) or "Reportable Taxpayer" |
-| Window | 30 days |
-| Reference number | URN issued by HMRC |
-| Penalties | Up to £600/day for late filing; higher penalties for deliberate failure |
-| Privilege | LPP for legal advice; tax advice not privileged |
+<!-- D70 -->
+There is no common DAC6 tax payment calculation in this Guide. Prepare the competent authority's current submission, validate it and retain the acceptance/error record. **Germany:** the actual BZSt handbook version 1.1 dated **2026-05-08** describes the new BOP form, XML upload and DIP mass interface; the XML payload is **1.07** with ISO types **1.01**, not the original generic "DAC6XML4.0". **France:** EDI is professional-space XML filing with national validation; the page identifies specifications 4.0 and XSD 4.05 for deposits from **2026-09-03**, with earlier versions having their own periods. **Ireland:** register for DAC6 in ROS and use its online form/XML route, with the identified partial-LPP exception. **Luxembourg:** ACD identifies MyGuichet manual/XML filing. **UK:** register for an **MDR ID**, then use the reporting service/XML schema; this registration ID is not proof that the old "URN" is the arrangement reference. Corrections/deletions have their own schema/business rules. **Italy:** the legal reporting duty/reference rules above are sourced; the old "DAC6 manager" product/portal name and current technical filing package are **not confirmed here**. Do not file through an invented route. [BZSt 1.4–1.5](https://www.bzst.de/SharedDocs/Downloads/DE/DAC6/KHB/khb_dac6_bop.pdf?__blob=publicationFile&v=23); [French current specification page](https://www.impots.gouv.fr/cahier-des-charges?l=fr); [Revenue filing](https://www.revenue.ie/en/companies-and-charities/international-tax/aeoi/dac6/file-dac6.aspx); [ACD](https://impotsdirects.public.lu/fr/echanges_electroniques/dispositifstransfrontieres.html); [HMRC registration](https://www.gov.uk/guidance/register-to-report-a-cross-border-arrangement-mdr); [report/correct](https://www.gov.uk/guidance/report-a-cross-border-arrangement-to-hmrc-mdr).
 
-### 5.5 Penalties — illustrative
+## Completion checklist
 
-**Penalties by jurisdiction**
+The reviewer brief contains the anonymised arrangement/steps, parties/jurisdictions/value and source/version basis; the cross-border test and every potentially relevant A.1–E.3 limb; Yes/No/Indeterminate evidence-backed findings; the corrected MBT analysis; every reporter/nexus/competent-jurisdiction/duplicate-proof result; separate trigger dates and national deadline calculation; protected information and lawful client notifications; the **8** EU information categories plus actual national fields/reference/version controls; marketable/historical/annual-use obligations where applicable; failure-specific penalty exposure; and every unresolved judgement/source issue. It is a draft for reviewer decision, not "ready to submit" merely because fields are populated. Check privilege under the law applicable to the intermediary's profession and reporting Member State, rather than substituting the taxpayer's Member State. [Article 8ab(5)](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1). Preserve the reviewer's actual decision and sign-off; never invent it.
 
-| Jurisdiction | Penalty |
-| --- | --- |
-| **Germany** | Up to €25,000 per failure (§ 379 Abgabenordnung) |
-| **France** | Up to €10,000 per failure, capped at €100,000 per year (CGI art. 1729 C ter) |
-| **Italy** | €3,000 to €31,500 per failure (D.Lgs. 100/2020 art. 12) |
-| **Netherlands** | Up to €870,000 per failure for deliberate non-disclosure (AWR art. 10h) |
-| **Spain** | €1,000 to €600,000 depending on data points missing (Ley 10/2020 DT 4) |
-| **Ireland** | €500/day; €4,000 fixed for late filing; criminal sanctions for fraudulent failure |
-| **Luxembourg** | Up to €250,000 per failure |
-| **UK MDR** | £5,000 standard, up to £600/day continuation, higher for deliberate failures |
-
-### 5.6 Interaction with DAC7 (digital platforms) and DAC8 (crypto-assets)
-
-DAC7 (digital platform reporting) and DAC8 (crypto-assets) are separate exchange regimes. An arrangement that has a possible impact on DAC7 or DAC8 reporting can engage hallmark D.1 (CRS-style avoidance). See `dac7-platform-reporting.md` (forthcoming) and the EU crypto-tax skills.
-
-### 5.7 Cross-EU coordination of ARNs
-
-- **ARN cross-referencing across Member States** — Following Council Implementing Regulation (EU) 2020/1132, each Member State issues an ARN at first filing and all other Member States accept it for cross-references. The reporting intermediary in Member State A informs the taxpayer of the ARN, and the taxpayer or other intermediaries reference the same ARN when filing in Member State B.  _(Council Implementing Regulation (EU) 2020/1132)_
-
-### 5.8 OECD Model MDR adoption outside the EU
-
-**OECD Model MDR adoption status by jurisdiction**
-
-| Jurisdiction | Status |
-| --- | --- |
-| **UK** | Adopted (Category D only) — SI 2023/38 |
-| **Mexico** | Adopted (Ley del ISR Art. 197–202) — covers CRS avoidance hallmarks; broader hallmarks than D.1 |
-| **Argentina** | Adopted in respect of certain offshore structures (Resolución General 4838/2020) |
-| **Australia** | Not adopted as MDR; reportable arrangements regime under PCG 2024 covers a different scope |
-| **Canada** | Reportable Transactions and Notifiable Transactions under §237.3 / §237.4 — domestic regime, broader than OECD MDR but different drafting |
-| **South Africa** | Section 80M Income Tax Act — domestic-leaning regime |
-| **New Zealand** | Disclosure of foreign trusts; no formal adoption of OECD MDR Category D |
-| **Switzerland** | No DAC6/MDR adoption; SBA AML and tax-evasion-as-predicate-offence provisions apply |
-
-## Section 6 — Output specification
-
-The reviewer brief must include:
-
-1. **Arrangement summary** — anonymised description of the arrangement, parties, jurisdictions, value.
-2. **Cross-border test** — confirmation that Article 3(18) is met (or not).
-3. **Hallmark matrix** — for each potential hallmark A.1 through E.3, classify Yes / No / Indeterminate with reasoning.
-4. **MBT analysis** where any A, B, or C.1(b)(ii)/C.1(c)/C.1(d) hallmark is potentially in play.
-5. **Reporter analysis** — who reports, in which jurisdiction, by when.
-6. **LPP analysis** if applicable.
-7. **Data points draft** — eleven Article 8ab(14) data points filled in, ready for portal submission.
-8. **Penalty exposure** — estimated penalty if missed, by reporter and jurisdiction.
-9. **Reviewer questions** — open items at [T2]/[T3] flagged for sign-off.
-
-## Section 7 — Self-checks
-
-Before delivering output, verify:
-
-- [ ] The arrangement is cross-border per Article 3(18). Domestic arrangements are not reportable under DAC6.
-- [ ] Each hallmark walked sub-element by sub-element; no narrative shortcuts.
-- [ ] MBT applied only to A, B, and C.1(b)(ii)/(c)/(d).
-- [ ] D and E hallmarks treated as no-MBT — reportable irrespective of tax intent.
-- [ ] Reporter priority applied — intermediary first, taxpayer only if no intermediary OR all claim privilege.
-- [ ] 30-day window counted from earliest of the three triggers (made available / ready / first step).
-- [ ] LPP carve-out applied per the Member State of the intermediary, not the taxpayer.
-- [ ] CJEU C-694/20 considered for any LPP notification cascade.
-- [ ] Receiving Member State portal schema matched (DAC6XML 4.0 or local equivalent).
-- [ ] ARN registered and cross-referenced for any second filing.
-- [ ] Annual taxpayer disclosure obligation (Article 8ab(11)) noted on tax return checklist.
-- [ ] Output flags every [T2]/[T3] item for reviewer judgement.
-
-## Section 8 — Prohibitions
-
-- **Do not** advise on whether an arrangement is or is not "abusive". DAC6 is reporting, not anti-avoidance.
-- **Do not** treat absence of MBT as conclusive. Category C.1(a)/(b)(i)/(2)/(3)/(4) and all of D and E are reportable without MBT.
-- **Do not** rely on LPP without confirming the user is qualified for it in the relevant Member State and that the arrangement is genuinely legal advice (not design/marketing).
-- **Do not** refuse to file based on LPP without also serving the notification on the next intermediary or relevant taxpayer where the Member State requires it.
-- **Do not** apply UK MDR hallmark scope (Category D only) to arrangements with EU intermediaries — the EU intermediary remains subject to the full DAC6 hallmark list.
-
-## Section 9 — Disclaimer
+### Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. DAC6 / MDR involves classification under hallmarks whose interpretation is contested in the courts and varies materially by Member State. Every output must be reviewed and signed off by a credentialed tax lawyer or equivalent in the reporting jurisdiction before filing or refusing to file.
+
+## Sources
+
+Original operative-source reads are dated **2026-11-15**. The specific correction reads on **2026-11-16** cover C-623/22 paragraphs 82–86, UK regulations 12 and 21, the Irish partial-privilege and annual-reference passages, and the named native-evidence repairs; unchanged scopes retain their original read dates. Source rows below state the actual operative scopes and version boundaries; retrieval failures are not reads. Country comparisons are confined to the named scopes, not country-wide filing approval.
+
+| Source | Read for actual operative scope | Read date | Official URL |
+| --- | --- | --- | --- |
+| ar5306 | Read for ActualoriginalRG5306/2022 arts1–11; scope/SME/annualroute/CRS-FATCAfeature/substitutionarts9–10 andneighbors; 2026amendmentoverlaynotcleared. | 2026-11-15 | [Official source](https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-5306-2022-377151/texto) |
+| aurtp | Read for ATOactual39-pagepublicprint-whole-sectionPDF,updated14October2026; personalRTPscope/categoryreadPDFpp10–11withadjacentcontext,notall39pagesclaimedread. | 2026-11-15 | [Official source](https://caat-p-001.sitecorecontenthub.cloud/api/public/content/0-643fc4e2-ea95-4c3e-93c2-cab5cc6c81a7) |
+| becurrent | Read for Judgment33/2025 B.11–B.12 with B.14 and surroundingcourtcontext/operativepart; currentnationalreporterprocedure notcleared. | 2026-11-15 | [Official source](https://fr.const-court.be/public/f/2025/2025-033f.pdf) |
+| caguide | Read for CRAoverview | 2026-11-15 | [Official source](https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance/mandatory-disclosure-rules-overview.html) |
+| calaw3 | Read for ITA237.3(1),definition; JusticeLawsconsolidationheader | 2026-11-15 | [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-237.3.html) |
+| calaw4 | Read for ITA237.4(1)–(3) | 2026-11-15 | [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-237.4.html) |
+| case623 | Read for Judgment86–120, including94–120 and neighboring representation/professional-title analysis. | 2026-11-15 | [Official source](https://publications.europa.eu/resource/celex/62022CJ0623) |
+| case694 | Read for Judgment17–39 and40–67 including operativepart; specific holdings19,24,40–66; actual lawyer/client/non-client distinctions. | 2026-11-15 | [Official source](https://publications.europa.eu/resource/cellar/3748055b-76dd-11ed-9887-01aa75ed71a1.0007.05/DOC_1) |
+| dac | Read for Current consolidation header; article2; article3(18)–(25),31; complete article8ab(1)–(18); article25a,27a–27b; entire AnnexIV PartI and A–E, with neighboring definitions and reporting provisions. | 2026-11-15 | [Official source](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| dac6 | Read for articles2–3 | 2026-11-15 | [Official source](https://publications.europa.eu/resource/celex/32018L0822) |
+| de102 | Read for AO102(1)(3)(b),(3)–(4); AO102(3)–(4) | 2026-11-15 | [Official source](https://www.gesetze-im-internet.de/ao_1977/__102.html) |
+| de138f | Read for AO138f(6); AO138f(5) | 2026-11-15 | [Official source](https://www.gesetze-im-internet.de/ao_1977/__138f.html) |
+| de138h | Read for AO138h | 2026-11-15 | [Official source](https://www.gesetze-im-internet.de/ao_1977/__138h.html) |
+| de138k | Read for AO138k | 2026-11-15 | [Official source](https://www.gesetze-im-internet.de/ao_1977/__138k.html) |
+| de379 | Read for AO379opening; AO379(2)1e/1g; AO379(7) | 2026-11-15 | [Official source](https://www.gesetze-im-internet.de/ao_1977/__379.html) |
+| dehandbook | Read for Actual8May2026version1.1PDFcover,versionhistory,0.2,1.1–1.5 includingregistration/submission/XMLschemaandreferencecontrols,printed7–11. | 2026-11-15 | [Official source](https://www.bzst.de/SharedDocs/Downloads/DE/DAC6/KHB/khb_dac6_bop.pdf?__blob=publicationFile&v=23) |
+| delay | Read for article1/inserted27a(1)–(2) | 2026-11-15 | [Official source](https://publications.europa.eu/resource/celex/32020L0876) |
+| eprecast | Read the actual 2026/0168(CNS) recast identity, pending status, COM(2026)0308 proposal entry and key events. | 2026-11-16 | [Official source](https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F0168%28CNS%29) |
+| eslaw | Read for LGTDA23(2); LGTDA24(1); LGTDA23(4)(a)–(d); LGTDA24(3)(a)–(b) | 2026-11-15 | [Official source](https://www.boe.es/eli/es/l/2003/12/17/58/con) |
+| fr1649 | Read for Current1649AE entireI/II and versionheader effective16February2025. | 2026-11-15 | [Official source](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051215679/2025-02-16) |
+| frfiling | Read for EDIcurrentroute; Versionperiodsfor2026filing | 2026-11-15 | [Official source](https://www.impots.gouv.fr/cahier-des-charges?l=fr) |
+| frguide | Read for Actual23September2026BOFiP paragraphs150–210,client-onlynoticeandinformationboundarywithneighboringprofessional-secrecycontext. | 2026-11-15 | [Official source](https://bofip.impots.gouv.fr/bofip/12275-PGP.html/identifiant=BOI-CF-CPF-30-40-10-20-20260923) |
+| frpen | Read for CGI1729Cter,entirearticle | 2026-11-15 | [Official source](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039250301/2999-01-01) |
+| hmrc | Read for IEIM710010,currentmanual15Oct2026; HMRCmanualversionheader | 2026-11-15 | [Official source](https://www.gov.uk/hmrc-internal-manuals/international-exchange-of-information/ieim710010) |
+| iecurrent | Read for March2026cover; section4.10printed47–48 and neighboringrole/notificationdiscussion; section5.6 annual-return references; entire6.1–6.2 penalties and adjacent7association. | 2026-11-15 | [Official source](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-33/33-03-03.pdf) |
+| iefiling | Read for Howtofile,partialLPPparagraph; CurrentRevenuefilingpage | 2026-11-15 | [Official source](https://www.revenue.ie/en/companies-and-charities/international-tax/aeoi/dac6/file-dac6.aspx) |
+| ielaw | Read for FinanceAct2019section67 insertedChapter3A; actual817RH(1)–(7) penaltytext with preceding817RGinformation and followingcommencementsection67(2); historicalenactmentbasisreadwithMarch2026Revenuemanual. | 2026-11-15 | [Official source](https://www.irishstatutebook.ie/eli/2019/act/45/enacted/en/print) |
+| it12 | Read for D.Lgs100/2020art12(1)–(2) | 2026-11-15 | [Official source](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2020-07-30;100!vig=~art12) |
+| it3 | Read for CurrentD.Lgs100/2020art3(4)–(10) | 2026-11-15 | [Official source](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2020-07-30;100!vig=~art3) |
+| it471 | Read for Current471/1997art10(1) | 2026-11-15 | [Official source](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471!vig=~art10) |
+| it87 | Read for 87/2024art5(1) | 2026-11-15 | [Official source](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-06-14;87!vig=~art5) |
+| it87art2 | Read for D.Lgs87/2024art2(1)(g) | 2026-11-15 | [Official source](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-06-14;87!vig=~art2) |
+| itdm | Read for Ministerialdecreeart3(1)–(3) | 2026-11-15 | [Official source](https://www.finanze.gov.it/export/sites/finanze/.galleries/Documenti/Varie/dm_dac6_testo.docx_signed.pdf) |
+| lulaw | Read for Original2020law articles1–6 and15 with14/16neighbors; originalversiononly, currentACDguidanceandEUcompatibilityboundary separately labelled. | 2026-11-15 | [Official source](https://legilux.public.lu/filestore/eli/etat/leg/loi/2020/03/25/a192/jo/fr/pdfa/eli-etat-leg-loi-2020-03-25-a192-jo-fr-pdfa.pdf) |
+| lupage | Read for ACD4.2/6.2,updated15June2026; ACD6.2; ACD3,taxpayerannualuseforms; CurrentACD7; ACD9 | 2026-11-15 | [Official source](https://impotsdirects.public.lu/fr/echanges_electroniques/dispositifstransfrontieres.html) |
+| mxcurrent | Read for Current9April2026CFF articles197–202, printed234–241, including complete article199features and article200information,201timing/authority-response/receipt,202references/annualreturns/updates; neighboring203–204read as repealed. Current201–202 completed2026-11-15 after earlier197–200read. | 2026-11-15 | [Official source](https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf) |
+| nl23 | Read for WvS23(4),(9),2026annotation | 2026-11-15 | [Official source](https://wetten.overheid.nl/BWBR0001854/2026-01-01#BoekEerste_TiteldeelII_Artikel23) |
+| nl53acurrent | Read for AWR53a(1) | 2026-11-15 | [Official source](https://wetten.overheid.nl/BWBR0002320/2026-01-01) |
+| nllatest | Read for WIB10h(5); WIB11(2) | 2026-11-15 | [Official source](https://wetten.overheid.nl/BWBR0003954) |
+| nztrust | Read for WholeactualIRforeign-exemption-trustswebpage; registration/ongoingdisclosure/annual-returnconditions; nocountry-widenegativeadoptioninferred. | 2026-11-15 | [Official source](https://www.ird.govt.nz/international-tax/foreign-exemption-trusts) |
+| oecd | Read for 2018model rules1.1–2.7,printed14–22,includingdefinitions,reporterroles,nexus,information,privilege,duplicates,timing/historicalmodel; comparisononly. Shortoriginalextracts limited; UKlawseparatelyprovesoperativeUKconditions. | 2026-11-15 | [Official source](https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/03/model-mandatory-disclosure-rules-for-addressing-crs-avoidance-arrangements-and-opaque-offshore-structures_1d2a819d/e3cabd80-en.pdf) |
+| saguideweb | Read for WholeactualSARSreportable-arrangementswebguide,includingsections3–8scope,criteria,exclusionsandreportingroute. | 2026-11-15 | [Official source](https://www.sars.gov.za/guide-to-reportable-arrangement/) |
+| uk | Read for Whole originalSI2023/38PDF11pages,regulations1–21 andSchedules; operativeconditions readwithneighboringexceptions/definitions, not representedasrevised2026consolidation. | 2026-11-15 | [Official source](https://www.legislation.gov.uk/uksi/2023/38/pdfs/uksi_20230038_en.pdf) |
+| ukcurrent | Read for Officialversionstatus | 2026-11-15 | [Official source](https://www.legislation.gov.uk/uksi/2023/38/contents) |
+| ukregister | Read for HMRCregistration | 2026-11-15 | [Official source](https://www.gov.uk/guidance/register-to-report-a-cross-border-arrangement-mdr) |
+| ukreport | Read for HMRCreport/correctionprocedure | 2026-11-15 | [Official source](https://www.gov.uk/guidance/report-a-cross-border-arrangement-to-hmrc-mdr) |
+
+| C-623/22 correction | Read paragraphs82–86 with81/87neighbors: completion, awareness and optional earlier reporting. | 2026-11-16 | https://publications.europa.eu/resource/celex/62022CJ0623 |
+| UK correction | Read complete regulations12(1)–(4) and21(a)–(c), with adjacent provisions in retained official original. | 2026-11-16 | https://www.legislation.gov.uk/uksi/2023/38/pdfs/uksi_20230038_en.pdf |
+| Revenue correction | Read full4.10partial-LPP passage/footnotes and5.6annual-ID rule with pre2020/joint-assessment qualifications; same March2026manual. | 2026-11-16 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-33/33-03-03.pdf |
+| AO102 correction | Read complete102(1)opening, profession list and capacity closing, with(2)–(4)neighbors. | 2026-11-16 | https://www.gesetze-im-internet.de/ao_1977/__102.html |
+| WIB correction | Read complete10h(2)(a)identity exclusion with its opening and adjacent fields, retained11April2026consolidation. | 2026-11-16 | https://wetten.overheid.nl/BWBR0003954 |
+| CFF correction | Read197adviser/nexus/presumption passages and full198I–VI/closing scope, retained9April2026official text. | 2026-11-16 | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf |
+| RG5306 correction | Read original article5annual period/filing condition with4/6neighbors; no fresh2026overlay clearance. | 2026-11-16 | https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-5306-2022-377151/texto |
+| RTP public-delivery PDF correction | Read all CategoriesA/B/C and scope paragraphs426–489 in actual14October2026PDF. | 2026-11-16 | https://caat-p-001.sitecorecontenthub.cloud/api/public/content/0-643fc4e2-ea95-4c3e-93c2-cab5cc6c81a7 |
+| Canada237.3 correction | Read complete reportable-transaction definition(a)–(c) and adjacent defined terms. | 2026-11-16 | https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-237.3.html |
+| Canada237.4 correction | Read(1)definition and complete(2)–(3)interpretation/designation with adjacent(4). | 2026-11-16 | https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-237.4.html |
+| SARS correction | Read actual guide35criteria/36exclusions and37/38/form/data routes with adjacent explanatory definitions; not whole underlying TAA. | 2026-11-16 | https://www.sars.gov.za/guide-to-reportable-arrangement/ |
+| OECD comparison correction | Read actual model2.1,2.6,2.7and neighbors; comparison only, with national-law/UK differences retained. | 2026-11-16 | https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/03/model-mandatory-disclosure-rules-for-addressing-crs-avoidance-arrangements-and-opaque-offshore-structures_1d2a819d/e3cabd80-en.pdf |
+
+**Not yet confirmed:** exact national deadline computation/non-working-day extensions for a particular filing; Luxembourg/Spain non-lawyer privilege compatibility and Belgium's current federal/regional implementation for the actual reporter; conflicting Irish privileged-identity fields; current Italian technical filing package/"DAC6 manager"; the old Regulation 2020/1132 ARN citation; original proposed related-Guide filenames; a complete 2026 Argentina amendment/execution overlay; original unidentified Australian PCG 2024/blanket non-adoption; New Zealand blanket non-adoption; Switzerland's blanket non-adoption/SBA/precise AML assertions; unspecified Irish criminal-fraud penalties; a separate national authority notification of a privilege claim, for which no universal EU duty is inferred. These are individually outside executable guidance. Historical national texts are labelled; proposal status is not enacted law.

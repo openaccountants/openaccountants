@@ -1,10 +1,10 @@
 ---
 name: eg-return-assembly
 description: Use this skill as the final orchestrator that assembles the complete Egyptian filing package for an Egypt-resident self-employed person. It computes nothing itself; it sequences and stitches together the Egypt content skills into one reviewer-ready filing package (income tax return, VAT returns, social insurance, e-invoicing precondition, ETA submission). Trigger on phrases like "file my Egyptian tax return", "submit income tax return Egypt", "ETA filing", "assemble my Egypt return", "قدّم الإقرار الضريبي", "إقرار ضريبة الدخل مصر".
-version: 0.2
+version: 0.3
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-17
 depends_on:
   - eg-freelance-intake
 category: orchestrator
@@ -14,7 +14,7 @@ domain: income-tax
 type: filing-howto
 ---
 
-# EG Return Assembly v0.2
+# EG Return Assembly v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -64,7 +64,9 @@ START
   |           - Condition: returns on time, and joined to the ETA
   |             e-systems, e-invoice or e-receipt, under the phase
   |             decisions, with documents actually issued (art. 3).
-  |             If the condition fails, flag it for the reviewer.
+  |             If a condition is broken, form 20 is not used:
+  |             prepare the general return unless the reviewer
+  |             confirms otherwise.
   |           - Income: annual return on form 20 إقرارات (via eg-sme-tax)
   |           - VAT, if registered: QUARTERLY, within the month after
   |             the quarter, with payment (via egypt-vat)
@@ -132,7 +134,7 @@ A first return counts as notice of starting the activity, and a return is still 
 | Turnover regime request never filed | General return; Law 6 covers only projects that ask | Law 6 art. 1 |
 | Business was under Law 152 of 2020 small-enterprise tax | Moved to Law 6 without a request | ETA Services Guide 18/2 |
 | Consultant with 90% or more of turnover from one or two persons | Outside Law 6; general return | Law 6 art. 4(1) |
-| Not joined to the e-systems under the phase decisions, or late returns | Breaks the Law 6 art. 3 conditions; flag for the reviewer before using form 20 | Law 6 art. 3 |
+| Not joined to the e-systems under the phase decisions, or late returns | Breaks the Law 6 art. 3 conditions of benefit: do not use form 20; prepare the general return unless the reviewer confirms otherwise | Law 6 art. 3 |
 | Sole proprietor asks for a 30 April date | No: a natural person files before 1 April; before 1 May (or within four months of the year end) is for legal persons | Law 206 art. 31(c) |
 | Return filed without all tables | Not counted for the deadline | Law 206 art. 31(c) |
 | Late return or payment | Fines in `eg-income-tax` (Law 206 arts. 69, 70); late returns also break the Law 6 art. 3 condition | Law 206; Law 6 |

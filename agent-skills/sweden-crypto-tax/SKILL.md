@@ -7,16 +7,18 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/sweden-crypto-tax"
   jurisdiction: "SE"
   tax_year: "2026"
-  last_updated: "2026-09-25"
+  last_updated: "2026-11-16"
 ---
 
-# Sweden cryptoasset tax: calculate, reconcile and report
+# Sweden cryptoasset tax v1.1: calculate, reconcile and report
 
-## Scope and period
+Built from the law. Not yet approved.
+
+## Scope
 
 Use this method for a Swedish resident individual holding Bitcoin and comparable fungible cryptoassets as private capital investments during income year 2026. It also covers acquired NFTs within the private capital category and the ordinary income/disposal split for compensation, mining and the specified staking and lending arrangements. Establish residence and the legal nature of each token first: a token representing a share, debt, derivative or another underlying asset does not automatically take Bitcoin's treatment. The statutory home for other assets is Chapter 52 of the Income Tax Act, with general capital-gain rules in Chapter 44; Chapter 52 imports average-cost rules for a pooled holding of assets with uniform value. [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html)
 
-This is an annual ledger and filing method, not a complete business return, payroll computation, company-tax method or determination of cross-border residence. By law an individual must file the income tax return by 2 May of the year after the income year. When 2 May falls on a weekend or public holiday, the deadline moves to the next weekday. That is why the deadline for income year 2025 was 4 May 2026 for anyone without an extension. For income year 2026, 2 May 2027 is a Sunday, so the ordinary last day should be Monday 3 May 2027. Confirm the date Skatteverket publishes on the 2027 return. Do not mistake a provider-reporting deadline for the filing deadline. [Official guidance](https://www.skatteverket.se/deklarera) [Filing date and weekend rule](https://www.skatteverket.se/privat/etjansterochblanketter/svarpavanligafragor/deklaration/forseningsavgift/jagharintelamnatmindeklarationitidkommerjagattfabetalaforseningsavgift.5.48cfd212185efbb440b8a36.html) [Tax Procedure Act, Chapter 32 section 1](https://data.riksdagen.se/dokument/sfs-2011-1244.html)
+This is an annual ledger and filing method, not a complete business return, payroll computation, company-tax method or determination of cross-border residence. By law an individual must file the income tax return by 2 May of the year after the income year. When 2 May falls on a weekend or public holiday, the deadline moves to the next weekday. That is why the deadline for income year 2025 was 4 May 2026 for anyone without an extension. For income year 2026, 2 May 2027 is a Sunday, so the ordinary last day should be Monday 3 May 2027. Confirm the date Skatteverket publishes on the 2027 return. Do not mistake a provider-reporting deadline for the filing deadline. [Official guidance](https://www.skatteverket.se/deklarera) [Filing date and weekend rule](https://www.skatteverket.se/privat/etjansterochblanketter/svarpavanligafragor/deklaration/forseningsavgift.5.48cfd212185efbb440b8a36.html) [Tax Procedure Act, Chapter 32 section 1](https://data.riksdagen.se/dokument/sfs-2011-1244.html)
 
 ## Ask the client first
 
@@ -37,7 +39,7 @@ This is an annual ledger and filing method, not a complete business return, payr
 7. Add income rewards to their appropriate income category separately from later disposal gains. Include their recognised acquisition value in the relevant asset pool so the same receipt is not taxed twice. Apply the specific branches below and retain their supporting classification. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 8. Populate the annual return, reconcile its totals back to the ledger and bank evidence, submit, and retain the acknowledgement. Check the final assessment and payment instructions. Correct prior years in the proper year rather than moving the discrepancy into the current return. [Official guidance](https://www.skatteverket.se/privat/deklaration/sahardeklarerardu/andraomprovaelleroverklagadindeklaration.4.5dc1d8b31903014b1bfdf4.html)
 
-## Rates, loss limitation and final tax
+## Rates, bands and thresholds
 
 | Item | Treatment | Source |
 |---|---|---|
@@ -51,23 +53,23 @@ Special components, including investor deductions and the deduction for tax-free
 
 A capital-deficit reduction can only be set against that year's tax. It is not an unconditional refund of a crypto loss. A capital deficit is used only through that year's tax reduction (Income Tax Act Chapter 41 section 12 with Chapter 67 sections 2 and 10). There is no rule that carries an unused capital deficit or an unused reduction into a later year, so never carry a private crypto loss forward. The gain/loss recognition year and capital-deficit rules operate for the relevant tax year. [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html)
 
-## Worked calculations and ledger checks
+## Worked cases
 
 All cases below are hypothetical in SEK, with no other holdings, fees or capital items unless specified. They illustrate the method rather than statutory prices or a personalised final assessment. Preserve full precision in the ledger and follow the year's return-entry instructions. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
 | Case | Inputs and calculation | Output and return treatment | Source |
 |---|---|---|---|
-| A — sequential average cost | Buy two units for SEK 20,000, then two for SEK 40,000. Four units cost SEK 60,000: average SEK 15,000. Sell one for SEK 18,000. Buy one more for SEK 25,000. | First gain SEK 3,000; remaining pool SEK 45,000 for three units. New pool SEK 70,000 for four, average SEK 17,500. Future purchase never changes the earlier gain. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
-| B — swap and spending | One outgoing token has allocated cost SEK 10,000 and is swapped for another asset worth SEK 16,000. | Gain SEK 6,000; incoming asset cost SEK 16,000. Spending it immediately on goods worth SEK 16,000 is another disposal, with no further gain if there are no fees or other holdings. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
-| C — gains and losses | Total profitable trades gain SEK 20,000; losing trades lose SEK 20,000. | Deductible loss SEK 14,000; capital surplus SEK 6,000; tax SEK 1,800. Report gains and full losses separately, even though economic profit before tax is nil. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
-| D — deficit boundary | A realised private crypto loss of SEK 150,000, with no other capital items. | Deductible loss SEK 105,000. Potential reduction SEK 31,050: SEK 30,000 on the first SEK 100,000 and SEK 1,050 on the excess, subject to available tax. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/deklareraaktierochovrigavardepapper/kvittningochkvotering.4.7be5268414bea0646945a21.html) |
-| E — purchase and selling fees | Asset price SEK 10,000 plus acquisition commission SEK 100; gross sale SEK 15,000 less sale commission SEK 200. Fees paid in SEK. | Cost SEK 10,100; net proceeds SEK 14,800; gain SEK 4,700. Each fee is used once. | [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html) |
-| F — reward then disposal | Mining or qualifying staking receipt recognised at SEK 3,000; later sold for SEK 4,000, no other pool holdings. | Receipt income SEK 3,000 in its correct income category; later capital gain SEK 1,000. The income tax on a mining hobby is not the private capital rate. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
-| G — lending claim | Transfer crypto with allocated cost SEK 10,000 to a lender free to relend it when worth SEK 16,000; claim reward worth SEK 1,000; settle the whole claim for crypto worth SEK 18,000. | Initial crypto gain SEK 6,000; separate income SEK 1,000; claim cost SEK 17,000 and settlement gain SEK 1,000; recovered crypto starts with cost SEK 18,000. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
-| H — personal-use NFT | Proven personal-use game NFT sold for net SEK 80,000; choose permitted alternative cost SEK 20,000; no other personal-asset gains. | Gain SEK 60,000; taxable excess SEK 10,000 after the annual exemption; tax SEK 3,000. No personal-asset loss offset is allowed. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/beskattningavnftnonfungibletoken.4.77f3e230191ef88bf1d1457.html) |
-| I — gift continuity | Genuine gift of one token whose donor's allocated tax cost is SEK 10,000, market value SEK 16,000; recipient later sells for SEK 18,000 and has no other holdings. | Receipt does not reset cost to market value: recipient gain SEK 8,000 using inherited cost SEK 10,000. | [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html) |
-| P — hobby mining deficit | Hobby mining gives a deficit of SEK 12,000 in year 1 and a surplus of SEK 8,000 in year 2. The miner also has a salary. | Year 1: no deduction against salary or any other income. Year 2: deduct SEK 8,000 of the saved deficit, so taxable hobby surplus is nil. SEK 4,000 remains, usable only against a surplus of the same hobby within five years of year 1. | [Official guidance](https://www.skatteverket.se/privat/skatter/arbeteochinkomst/inkomster/hobby) |
-| Q — omitted gain and self-correction | A 2023 crypto gain of SEK 50,000 was never declared. Tax on it at 30% is SEK 15,000. | If the person asks for reconsideration on their own initiative, no tax surcharge applies. If Skatteverket finds the error first, the surcharge is normally 40% of SEK 15,000 = SEK 6,000, on top of the tax. It is not charged if the error was evident from control statements Skatteverket had within a year of the tax year (2023 predates crypto-provider reporting) or if the tax is insignificant. It is 10% if the gain was only declared in the wrong year, and it can be remitted as unreasonable. Reconsideration for 2023 is open until the end of 2029. | [Official guidance](https://www.skatteverket.se/privat/deklaration/sahardeklarerardu/andraomprovaelleroverklagadindeklaration.4.5dc1d8b31903014b1bfdf4.html) [Tax Procedure Act, Chapter 49](https://data.riksdagen.se/dokument/sfs-2011-1244.html) |
+| A : sequential average cost | Buy two units for SEK 20,000, then two for SEK 40,000. Four units cost SEK 60,000: average SEK 15,000. Sell one for SEK 18,000. Buy one more for SEK 25,000. | First gain SEK 3,000; remaining pool SEK 45,000 for three units. New pool SEK 70,000 for four, average SEK 17,500. Future purchase never changes the earlier gain. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
+| B : swap and spending | One outgoing token has allocated cost SEK 10,000 and is swapped for another asset worth SEK 16,000. | Gain SEK 6,000; incoming asset cost SEK 16,000. Spending it immediately on goods worth SEK 16,000 is another disposal, with no further gain if there are no fees or other holdings. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
+| C : gains and losses | Total profitable trades gain SEK 20,000; losing trades lose SEK 20,000. | Deductible loss SEK 14,000; capital surplus SEK 6,000; tax SEK 1,800. Report gains and full losses separately, even though economic profit before tax is nil. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
+| D : deficit boundary | A realised private crypto loss of SEK 150,000, with no other capital items. | Deductible loss SEK 105,000. Potential reduction SEK 31,050: SEK 30,000 on the first SEK 100,000 and SEK 1,050 on the excess, subject to available tax. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/deklareraaktierochovrigavardepapper/kvittningochkvotering.4.7be5268414bea0646945a21.html) |
+| E : purchase and selling fees | Asset price SEK 10,000 plus acquisition commission SEK 100; gross sale SEK 15,000 less sale commission SEK 200. Fees paid in SEK. | Cost SEK 10,100; net proceeds SEK 14,800; gain SEK 4,700. Each fee is used once. | [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html) |
+| F : reward then disposal | Mining or qualifying staking receipt recognised at SEK 3,000; later sold for SEK 4,000, no other pool holdings. | Receipt income SEK 3,000 in its correct income category; later capital gain SEK 1,000. The income tax on a mining hobby is not the private capital rate. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
+| G : lending claim | Transfer crypto with allocated cost SEK 10,000 to a lender free to relend it when worth SEK 16,000; claim reward worth SEK 1,000; settle the whole claim for crypto worth SEK 18,000. | Initial crypto gain SEK 6,000; separate income SEK 1,000; claim cost SEK 17,000 and settlement gain SEK 1,000; recovered crypto starts with cost SEK 18,000. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
+| H : personal-use NFT | Proven personal-use game NFT sold for net SEK 80,000; choose permitted alternative cost SEK 20,000; no other personal-asset gains. | Gain SEK 60,000; taxable excess SEK 10,000 after the annual exemption; tax SEK 3,000. No personal-asset loss offset is allowed. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/beskattningavnftnonfungibletoken.4.77f3e230191ef88bf1d1457.html) |
+| I : gift continuity | Genuine gift of one token whose donor's allocated tax cost is SEK 10,000, market value SEK 16,000; recipient later sells for SEK 18,000 and has no other holdings. | Receipt does not reset cost to market value: recipient gain SEK 8,000 using inherited cost SEK 10,000. | [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html) |
+| P : hobby mining deficit | Hobby mining gives a deficit of SEK 12,000 in year 1 and a surplus of SEK 8,000 in year 2. The miner also has a salary. | Year 1: no deduction against salary or any other income. Year 2: deduct SEK 8,000 of the saved deficit, so taxable hobby surplus is nil. SEK 4,000 remains, usable only against a surplus of the same hobby within five years of year 1. | [Official guidance](https://www.skatteverket.se/privat/skatter/arbeteochinkomst/inkomster/hobby) |
+| Q : omitted gain and self-correction | A 2023 crypto gain of SEK 50,000 was never declared. Tax on it at 30% is SEK 15,000. | If the person asks for reconsideration on their own initiative, no tax surcharge applies. If Skatteverket finds the error first, the surcharge is normally 40% of SEK 15,000 = SEK 6,000, on top of the tax. It is not charged if the error was evident from control statements Skatteverket had within a year of the tax year (2023 predates crypto-provider reporting) or if the tax is insignificant. It is 10% if the gain was only declared in the wrong year, and it can be remitted as unreasonable. Reconsideration for 2023 is open until the end of 2029. | [Official guidance](https://www.skatteverket.se/privat/deklaration/sahardeklarerardu/andraomprovaelleroverklagadindeklaration.4.5dc1d8b31903014b1bfdf4.html) [Tax Procedure Act, Chapter 49](https://data.riksdagen.se/dokument/sfs-2011-1244.html) |
 
 ## Lending, pools, borrowing and staking
 
@@ -113,7 +115,7 @@ Before a final assessment, amend and resubmit the complete return and attachment
 
 Penalties. The main rule is that an incorrect statement in the return that would have reduced final tax carries a tax surcharge (skattetillägg) of 40% of the tax that would have been avoided. If the only error is that an amount was put in the wrong income year, the surcharge on final tax is 10% instead. If the error would have created an unused deficit in employment income, such as an overstated hobby-mining deficit, the surcharge is calculated on a quarter of that deficit rather than on tax. No surcharge is charged in three cases. First, the incorrect statement is evident from control statements (avstämningsuppgifter) that Skatteverket had within one year after the end of the tax year. These include statements third parties must file without being asked. From income year 2026 they include crypto providers' DAC8/CARF statements (due 1 April 2027), but only to the extent the omission and the correct figure can actually be seen from them. A provider statement does not show the client's cross-wallet average cost, so do not assume it clears the surcharge. Second, the tax at stake is insignificant. Third, the person corrects the statement on their own initiative by requesting reconsideration. A correction does not count as on the person's own initiative if Skatteverket has announced a general control, the correction is connected to that control, and it is made only after the end of the second month following the month of the announcement. So a client with undeclared crypto disposals should correct them before being asked, and before any announced crypto control makes the relief unavailable. Skatteverket must remit a penalty in whole or part where charging it in full would be unreasonable, for example because of age, health or a misjudgement of a rule. [Tax Procedure Act, Chapters 49 and 51](https://data.riksdagen.se/dokument/sfs-2011-1244.html) [Official guidance](https://www.skatteverket.se/privat/deklaration/sahardeklarerardu/andraomprovaelleroverklagadindeklaration.4.5dc1d8b31903014b1bfdf4.html)
 
-Filing after the ordinary date without an extension, or after a granted extension date, can cost a late-filing fee of SEK 1,250. A second fee applies if the return is not in within three months of the ordinary date, and a third at five months or more, so up to SEK 3,750 in total. The second and third fees count from the ordinary date even where an extension was granted. People aged 65 or over pay no late fee, unless they work full time as employees, run an active business or trade securities to a very large extent. People living abroad pay no fee if the return arrives by 1 June. Not filing at all can lead to a discretionary assessment with a late fee and tax surcharge. [Official guidance](https://www.skatteverket.se/privat/etjansterochblanketter/svarpavanligafragor/deklaration/forseningsavgift/jagharintelamnatmindeklarationitidkommerjagattfabetalaforseningsavgift.5.48cfd212185efbb440b8a36.html)
+Filing after the ordinary date without an extension, or after a granted extension date, can cost a late-filing fee of SEK 1,250. A second fee applies if the return is not in within three months of the ordinary date, and a third at five months or more, so up to SEK 3,750 in total. The second and third fees count from the ordinary date even where an extension was granted. For the 2025-2026 filing cycle, Skatteverket states that people who reached 65 during 2025 pay no late fee, except full-time employees, active business owners and very extensive securities traders. Confirm that administrative age policy for the 2026 income-year return before applying it. SFL 48 kap. 3 § protects an individual resident abroad or habitually staying abroad at the filing deadline who files by 31 May, with the statutory weekend rule where relevant. The 1 June date on the authority's page is specifically 1 June 2026, not an annual deadline. Not filing at all can lead to a discretionary assessment with a late fee and tax surcharge. [Official guidance](https://www.skatteverket.se/privat/etjansterochblanketter/svarpavanligafragor/deklaration/forseningsavgift.5.48cfd212185efbb440b8a36.html)
 
 Keep bank and exchange records, wallet ownership evidence, transaction hashes, valuation evidence, fee allocations, protocol terms, annual pools and return reconciliations. General individual-return guidance says to keep supporting documents for six years; hobby records have a seven-year rule. Keep historical acquisition and gift-cost evidence while assets remain held and through the disposal return's applicable retention period; do not destroy the only evidence of a continuing pool merely because the acquisition is old. [Official guidance](https://www.skatteverket.se/privat/etjansterochblanketter/svarpavanligafragor/deklaration/efterattduhardeklarerat/behoverjagsparanagraunderlagnarjaghardeklarerat.5.48cfd212185efbb440b8988.html) [Official guidance](https://www.skatteverket.se/privat/skatter/arbeteochinkomst/inkomster/hobby) [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
@@ -125,6 +127,207 @@ Keep bank and exchange records, wallet ownership evidence, transaction hashes, v
 - K4 gains and full losses stay separate per asset; NFT personal-asset gains are separately aggregated; other capital items and available tax are included before stating final tax.
 - The submission uses the correct year, source documents and acknowledgement, with unresolved protocol, ownership or valuation issues clearly withheld from a definitive computation. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
+```oa-check
+name: 'A: sequential crypto pool, earlier sale unchanged'
+inputs:
+  first_units: 2
+  first_cost: 20000
+  second_units: 2
+  second_cost: 40000
+  sold_units: 1
+  sale: 18000
+  later_units: 1
+  later_cost: 25000
+steps:
+- opening_units: first_units + second_units
+- opening_cost: first_cost + second_cost
+- sale_cost: opening_cost / opening_units * sold_units
+- gain: sale - sale_cost
+- remaining_cost: opening_cost - sale_cost
+- new_cost: remaining_cost + later_cost
+- new_units: opening_units - sold_units + later_units
+- new_average: new_cost / new_units
+expected:
+  gain: 3000
+  remaining_cost: 45000
+  new_cost: 70000
+  new_units: 4
+  new_average: 17500
+```
+
+```oa-check
+name: 'B: swap and immediate spending, no other pool'
+inputs:
+  old_cost: 10000
+  swap_value: 16000
+  goods_value: 16000
+steps:
+- swap_gain: swap_value - old_cost
+- new_cost: swap_value
+- spending_gain: goods_value - new_cost
+expected:
+  swap_gain: 6000
+  new_cost: 16000
+  spending_gain: 0
+```
+
+```oa-check
+name: 'C: equal economic gains and losses still leave capital tax'
+inputs:
+  gains: 20000
+  losses: 20000
+  loss_fraction: 0.7
+  capital_rate: 0.3
+steps:
+- deductible_loss: losses * loss_fraction
+- surplus: gains - deductible_loss
+- tax: surplus * capital_rate
+expected:
+  deductible_loss: 14000
+  surplus: 6000
+  tax: 1800
+```
+
+```oa-check
+name: 'D: crypto capital deficit above the credit boundary'
+inputs:
+  loss: 150000
+  loss_fraction: 0.7
+  boundary: 100000
+steps:
+- deficit: loss * loss_fraction
+- potential_credit: min(deficit, boundary) * 0.30 + max(deficit - boundary, 0) * 0.21
+expected:
+  deficit: 105000
+  potential_credit: 31050
+```
+
+```oa-check
+name: 'E: acquisition and selling fees counted once'
+inputs:
+  purchase: 10000
+  buy_fee: 100
+  sale: 15000
+  sell_fee: 200
+steps:
+- cost: purchase + buy_fee
+- net_proceeds: sale - sell_fee
+- gain: net_proceeds - cost
+expected:
+  cost: 10100
+  net_proceeds: 14800
+  gain: 4700
+```
+
+```oa-check
+name: 'F: reward receipt basis prevents double taxation'
+inputs:
+  receipt_value: 3000
+  sale: 4000
+steps:
+- receipt_income: receipt_value
+- disposal_cost: receipt_value
+- capital_gain: sale - disposal_cost
+expected:
+  receipt_income: 3000
+  disposal_cost: 3000
+  capital_gain: 1000
+```
+
+```oa-check
+name: 'G: lending claim acquisition, income and settlement'
+inputs:
+  original_cost: 10000
+  transfer_value: 16000
+  reward_value: 1000
+  settlement_value: 18000
+steps:
+- initial_gain: transfer_value - original_cost
+- income: reward_value
+- claim_cost: transfer_value + reward_value
+- claim_gain: settlement_value - claim_cost
+- new_crypto_cost: settlement_value
+expected:
+  initial_gain: 6000
+  income: 1000
+  claim_cost: 17000
+  claim_gain: 1000
+  new_crypto_cost: 18000
+```
+
+```oa-check
+name: 'H: proven personal-use NFT, alternative cost'
+inputs:
+  net_sale: 80000
+  alternative_fraction: 0.25
+  exemption: 50000
+  capital_rate: 0.3
+steps:
+- alternative_cost: net_sale * alternative_fraction
+- gain: net_sale - alternative_cost
+- taxable_gain: max(gain - exemption, 0)
+- tax: taxable_gain * capital_rate
+expected:
+  alternative_cost: 20000
+  gain: 60000
+  taxable_gain: 10000
+  tax: 3000
+```
+
+```oa-check
+name: 'I: gift uses donor cost, not gift-date market value'
+inputs:
+  donor_cost: 10000
+  gift_market_value: 16000
+  later_sale: 18000
+steps:
+- carryover_cost: donor_cost
+- gain: later_sale - carryover_cost
+- wrong_market_reset_gain: later_sale - gift_market_value
+expected:
+  carryover_cost: 10000
+  gain: 8000
+  wrong_market_reset_gain: 2000
+```
+
+```oa-check
+name: 'P: saved deficit restricted to same hobby future surplus'
+inputs:
+  saved_deficit: 12000
+  next_year_hobby_surplus: 8000
+steps:
+- deduction: min(saved_deficit, next_year_hobby_surplus)
+- taxable_hobby_surplus: next_year_hobby_surplus - deduction
+- remaining_deficit: saved_deficit - deduction
+expected:
+  deduction: 8000
+  taxable_hobby_surplus: 0
+  remaining_deficit: 4000
+```
+
+```oa-check
+name: 'Q: 2023 omission, ordinary and timing surcharge comparison'
+inputs:
+  omitted_gain: 50000
+  tax_rate: 0.3
+  ordinary_surcharge: 0.4
+  timing_surcharge: 0.1
+  income_year: 2023
+  reconsideration_years: 6
+steps:
+- tax: omitted_gain * tax_rate
+- ordinary_penalty: tax * ordinary_surcharge
+- timing_penalty: tax * timing_surcharge
+- own_initiative_penalty: 0 * tax
+- last_reconsideration_year: income_year + reconsideration_years
+expected:
+  tax: 15000
+  ordinary_penalty: 6000
+  timing_penalty: 1500
+  own_initiative_penalty: 0
+  last_reconsideration_year: 2029
+```
+
 ## When to refuse or refer
 
 - Missing opening basis, incomplete wallet records or unsupported prices: identify the missing evidence and reconstruct it before issuing a filing-ready gain or loss.
@@ -132,6 +335,24 @@ Keep bank and exchange records, wallet ownership evidence, transaction hashes, v
 - Entity holdings, business inventory, disputed residency, foreign-entity/CFC structures and emigration: use the relevant taxpayer and treaty method. Do not apply a general crypto exit-tax rule or an invented residence-duration test; the Income Tax Act's limited-taxpayer asset scope and treaties require separate analysis.
 - Unresolved insolvency, fictitious/related-party loss, missing entitlement, or material uncertain deduction: obtain a reasoned decision from an appropriately qualified Swedish adviser before claiming it. [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html)
 
+## Sources
+
+| Source and scope | URL | Read on |
+|---|---|---|
+| Read for crypto classification, disposals, average cost, K4, custody/lending, DEX, staking, mining, employment and business receipts, Celsius, FTX and quantity fields | https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor | 2026-11-16 |
+| Read for acquired NFT asset/use classification, individual cost and personal-use versus investment reporting | https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/beskattningavnftnonfungibletoken.4.77f3e230191ef88bf1d1457.html | 2026-11-16 |
+| Read for hobby/business boundary, paid expenses, equipment, five-year same-hobby deficit, T2 and seven-year records | https://www.skatteverket.se/privat/skatter/arbeteochinkomst/inkomster/hobby | 2026-11-16 |
+| Read for first provider reporting year/deadline and existing-user self-certification | https://www.skatteverket.se/foretag/drivaforetag/startaochregistrera/kryptotillgangarrapporteringochinformationsutbyte.4.4a4da2a918795e864c3859.html | 2026-11-16 |
+| Read for gift continuity, disposal proceeds/cost and FX, definitive loss, average cost, personal-use and investment loss rules, no capital carryforward, capital rate and credit: IL 8 kap. 2 §; 41 kap.; 44 kap.; 48 kap. 7 §; 52 kap.; 65 kap. 7 §; 67 kap. 2 and 10 §§ | https://data.riksdagen.se/dokument/sfs-1999-1229.text | 2026-11-16 |
+| Read for ordinary filing date, late fees, incorrect statements, remission and reconsideration: SFL 32, 48, 49, 51 and 66 kap. | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-11-16 |
+| Read for weekend adjustment of a statutory date | https://data.riksdagen.se/dokument/sfs-1930-173.text | 2026-11-16 |
+| Read for amendment before assessment, reconsideration afterwards, six years and continuing payment duty | https://www.skatteverket.se/privat/deklaration/sahardeklarerardu/andraomprovaelleroverklagadindeklaration.4.5dc1d8b31903014b1bfdf4.html | 2026-11-16 |
+| Read for late fees and the older 2025-2026 filing-cycle age policy; that policy is not presented as confirmed for the next filing cycle | https://www.skatteverket.se/privat/etjansterochblanketter/svarpavanligafragor/deklaration/forseningsavgift.5.48cfd212185efbb440b8a36.html | 2026-11-16 |
+| Read for capital netting, the ordinary deficit reduction and its investor/capital-insurance/PEPP exceptions; the page's SEK 4,440 savings deduction is explicitly for 2025 and is not used for 2026 | https://www.skatteverket.se/privat/skatter/vardepapper/deklareraaktierochovrigavardepapper/kvittningochkvotering.4.7be5268414bea0646945a21.html | 2026-11-16 |
+| Read for the general individual-return supporting-record retention period | https://www.skatteverket.se/privat/etjansterochblanketter/svarpavanligafragor/deklaration/efterattduhardeklarerat/behoverjagsparanagraunderlagnarjaghardeklarerat.5.48cfd212185efbb440b8988.html | 2026-11-16 |
+
+Not yet confirmed: the authority's published 2027 filing-round instructions and administrative age-based late-fee policy; other protocols, receipt tokens, airdrops/forks without classified rights, later FTX distributions and unresolved insolvency claims; entity-specific residence/treaty and business inventory treatment. The historical 2025 FTX exchange rate is not a 2026 valuation rate. Do not compute a final result for these unresolved branches.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-09-25. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sweden-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sweden-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sweden-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sweden-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
