@@ -1,7 +1,7 @@
 ---
 jurisdiction: NE
-version: 0.2
-last_updated: 2026-11-01
+version: 0.3
+last_updated: 2026-11-17
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
@@ -10,26 +10,26 @@ covered_by:
   SC: ne-payroll-social
   PR: ne-payroll-social
 partial:
-  IT-IND: "No standalone current-year computation; overview now routes evidence and holds old figures, while payroll remains 2025."
-  IT-CORP: "2025 legacy Guide retained unchanged; 2026 law, amendments and procedure not rebuilt."
-  VAT: "2025 legacy Guide retained unchanged; 2026 rates, exemptions, recovery and filing not rebuilt."
-  SC: "2025 legacy payroll/social Guide retained unchanged; CNSS current rules not rebuilt."
-  PR: "2025 legacy payroll/social Guide retained unchanged; 2026 payroll tax and procedures not rebuilt."
+  IT-IND: "No standalone current-year computation; overview routes evidence; payroll covers the 2026 ITS scale only on a known taxable salary."
+  IT-CORP: "2026 amendments read (exemptions, deductions, IMF rates from 21 August 2026); IS headline rate, IMF base, annual return and withholding rates held because the consolidated 2026 Code was not readable."
+  VAT: "2026 exemptions and deduction exclusions read; standard rate, threshold, return calendar, reverse charge and refunds held because the consolidated 2026 Code was not readable."
+  SC: "CNSS rates, ceiling and declarations from CNSS pages; minimum base, payment calendar under 20 employees, rate decrees and penalties held."
+  PR: "2026 ITS scale and family reductions read; ITS taxable base, reduction method, remittance date and apprenticeship tax held."
   TP: "Missing; no current primary-source transfer-pricing job drafted."
   XB: "Missing comprehensive cross-border job; TDTA repeal review does not establish treaty, PE or withholding rules."
 ---
 
 # Niger tax pack
 
-**Partial pack, 1 November 2026.** Three legacy 2025 tax Guides remain unchanged. Two accepted limited 2026 tax jobs remain byte-identical. Formation and overview are now source-based 2026 intake drafts with separate ledgers and four executable cases; independent source-fidelity review has accepted their 47 ledger rows, 25 old-topic destinations and four examples after two company-law corrections. All seven domains remain partial. The accepted cash-payment and TDTA jobs retain their earlier review at `aa1f342de147326021335775874f4e7071ce1415`. None has accountant attestation. These contributions do not complete [issue #477](https://github.com/openaccountants/openaccountants/issues/477).
+**Partial pack, 17 November 2026.** The corporate tax, VAT and payroll/social Guides were rebuilt for 2026 on 17 November from the two 2026 finance ordinances and CNSS pages, with the unread core figures on visible holds (pending independent review). Two accepted limited 2026 tax jobs remain byte-identical. Formation and overview are now source-based 2026 intake drafts with separate ledgers and four executable cases; independent source-fidelity review has accepted their 47 ledger rows, 25 old-topic destinations and four examples after two company-law corrections. All seven domains remain partial. The accepted cash-payment and TDTA jobs retain their earlier review at `aa1f342de147326021335775874f4e7071ce1415`. None has accountant attestation. These contributions do not complete [issue #477](https://github.com/openaccountants/openaccountants/issues/477).
 
 | Domain | Retained Guide | Actual status |
 |---|---|---|
-| Individual income tax | [Tax overview](ne-tax-overview.md) and [Payroll](ne-payroll-social.md) | Partial; overview routes evidence, not a current individual-tax calculation; payroll remains 2025 |
-| Company tax | [Corporate income tax](ne-corporate-income-tax.md) | Partial; unchanged 2025 research |
-| VAT | [VAT](ne-vat-gst.md) | Partial; unchanged 2025 research |
-| Social contributions | [Payroll/social](ne-payroll-social.md) | Partial; unchanged 2025 research |
-| Payroll | [Payroll/social](ne-payroll-social.md) | Partial; unchanged 2025 research |
+| Individual income tax | [Tax overview](ne-tax-overview.md) and [Payroll](ne-payroll-social.md) | Partial; overview routes evidence, not a current individual-tax calculation; payroll has the 2026 ITS scale |
+| Company tax | [Corporate income tax](ne-corporate-income-tax.md) | Partial; 2026 amendments only, IS rate held |
+| VAT | [VAT](ne-vat-gst.md) | Partial; 2026 exemptions and deduction rules, rate held |
+| Social contributions | [Payroll/social](ne-payroll-social.md) | Partial; CNSS published figures, decrees not read |
+| Payroll | [Payroll/social](ne-payroll-social.md) | Partial; 2026 ITS scale, taxable base held |
 | Transfer pricing | None | Partial; missing |
 | Cross-border | None comprehensive | Partial; missing treaty/PE/withholding jobs |
 
