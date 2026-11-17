@@ -61,7 +61,7 @@ This is the Armenian country map for tax year 2026 (the calendar year). It route
 
 ### Deadlines to route correctly
 
-Ordinary corporate profit tax returns and payment are due by 20 April after the tax year. The annual individual declaration has different dates for the transition year: the 2025-income declaration window is 2 March through 1 November 2026; the general 2026-income window is 2 March through 1 July 2027. The latter date applies to the declaration population and rules in the Code (from tax year 2025 onwards, resident Armenian citizens, other than minors at 31 December, under Article 156(4.1)), not as a universal filing obligation for every person. Check the individual's filing status and any amended deadline before using it. [Tax Code, Articles 134, 136, 156 and 158](https://www.arlis.am/hy/acts/215611/latest); [HO-76-N](https://www.arlis.am/hy/acts/206337)
+Ordinary corporate profit tax returns and payment are due by 20 April after the tax year. The annual individual declaration has different dates for the transition year: the 2025-income declaration window is 2 March through 1 November 2026; the general 2026-income window is 2 March through 1 July 2027. The latter date applies to the declaration population and rules in the Code (under Article 156(4.1), individuals who are resident and Armenian citizens at 31 December of the reporting year, other than minors at that date), not as a universal filing obligation for every person. Check the individual's filing status and any amended deadline before using it. [Tax Code, Articles 134, 136, 156 and 158](https://www.arlis.am/hy/acts/215611/latest); [HO-76-N](https://www.arlis.am/hy/acts/206337)
 
 ## Worked cases
 
