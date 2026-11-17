@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ad-transfer-pricing"
   jurisdiction: "AD"
   tax_year: "2026"
-  last_updated: "2026-11-14"
+  last_updated: "2026-11-16"
 ---
 
-# Andorra transfer pricing v0.4
+# Andorra transfer pricing v0.5
 
 ## Who this applies to
 
@@ -20,17 +20,20 @@ This is a source-cited 2026 working-paper draft; no accountant has signed it off
 
 ## Rates, bands and thresholds
 
-These are relationship tests, not rates of tax or exemptions from pricing documentation.
+These are relationship tests and the related deduction limits, not rates of tax or exemptions from pricing documentation.
 
 | Relationship | Test | Year | Primary source |
 |---|---|---|---|
-| Shareholder/participant and entity | At least 15%; at least 3% for securities admitted to trading on a secondary market | 2026 | [Article 16(2)][law] |
-| Entity indirectly participating in another | At least 25% of capital or net assets | 2026 | [Article 16(1)(d)][law] |
-| Common owners or specified family holders in two entities | Direct or indirect participation of at least 25% of capital or net assets | 2026 | [Article 16(1)(f)][law] |
-| Directors, including de facto directors | Separate relationship category; do not impose the shareholder threshold on it | 2026 | [Article 16(1)(b)][law] |
-| Family relationships specified in the law | Spouses and blood relatives through the third degree, direct or collateral line | 2026 | [Article 16(1)(c), (f)][law] |
-| Group entities | Direct/indirect control; majority voting rights establish the stated presumption | 2026 | [Article 16(1)(e), (2)][law] |
-| Resident entity and foreign PE; non-resident entity and Andorran PE | Express relationship categories | 2026 | [Article 16(1)(g)–(h)][law] |
+| Shareholder/participant and entity | At least 15%; at least 3% for securities admitted to trading on a secondary market | 2026 | [Law 95/2010, Article 16(2)](https://www.portaljuridicandorra.ad/L2010095) |
+| Entity indirectly participating in another | At least 25% of capital or net assets | 2026 | [Law 95/2010, Article 16(1)(d)](https://www.portaljuridicandorra.ad/L2010095) |
+| Common owners or specified family holders in two entities | Direct or indirect participation of at least 25% of capital or net assets | 2026 | [Law 95/2010, Article 16(1)(f)](https://www.portaljuridicandorra.ad/L2010095) |
+| Directors, including de facto directors | Separate relationship category; do not impose the shareholder threshold on it | 2026 | [Law 95/2010, Article 16(1)(b)](https://www.portaljuridicandorra.ad/L2010095) |
+| Family relationships specified in the law | Spouses and blood relatives through the third degree, direct or collateral line | 2026 | [Law 95/2010, Article 16(1)(c), (f)](https://www.portaljuridicandorra.ad/L2010095) |
+| Group entities | Direct/indirect control; majority voting rights establish the stated presumption | 2026 | [Law 95/2010, Article 16(1)(e), (2)](https://www.portaljuridicandorra.ad/L2010095) |
+| Resident entity and foreign PE; non-resident entity and Andorran PE | Express relationship categories | 2026 | [Law 95/2010, Article 16(1)(g)–(h)](https://www.portaljuridicandorra.ad/L2010095) |
+| Related-party expense, low-taxed recipient | Not deductible where the related recipient's income is exempt, not taxed, or taxed at a nominal rate below 50% of the 10% general rate | 2026 | [Law 95/2010, Articles 13(1)(g), 41](https://www.portaljuridicandorra.ad/L2010095) |
+| Net finance cost limit | 30% of corrected profit, with EUR 500,000 always deductible | 2026; not for banks, credit or insurance entities, stand-alone entities, or groups with an Andorran-resident parent | [Law 95/2010, Article 14](https://www.portaljuridicandorra.ad/L2010095) |
+| CbCR group threshold | Consolidated revenue of EUR 750 million or more in the preceding fiscal year | 2026 | [Law 95/2010, Article 16 quater(c)](https://www.portaljuridicandorra.ad/L2010095) |
 
 The opening test also addresses common direct/indirect participation in management, control or capital. Review the complete relationship, not only a percentage. Do not use the 25% indirect/common-ownership tests as a universal threshold. [Article 16(1)–(2)][law]
 
@@ -45,7 +48,7 @@ For each controlled transaction, establish what was supplied, by whom, to whom, 
 3. Identify an independent comparison matching the actual supply and terms. Start with reliable internal sales/loans to independent parties where available; otherwise document the external transactions, date, geography, currency, volume, functions and risks. Record each comparability adjustment and why it can be measured. Do not simply call a group price, cost percentage, database median or CbCR profit a market price. The legal requirement is independent-party market value; no universal statutory service markup or interest safe harbour is established. [Article 16(3)][law]; [Regulation, Article 8(3)][reg]
 4. If comparing a service charge through a supported cost-plus approach, reconcile the eligible cost pool, exclude costs not supplied to the recipient, apply the evidenced allocation key, then the **independently supported** markup to the matching costs. A direct comparable price, resale-margin or profit-based comparison can instead be used where supported by the actual economics; those are workpaper approaches, not a claim that this statute prescribes a fixed method hierarchy. Show why the chosen method measures this transaction better than the available alternatives, and reject a result where the necessary comparable evidence is missing. [Article 16(3)][law]; [Regulation, Article 8(3)(b)][reg]
 5. Compute supported consideration minus booked consideration in the same units/period. For the supplier, underpricing generally creates an upward income reconciliation; for a recipient, amounts above supported value are not established deductions. Separate valuation from actual service receipt, legal deductibility, withholding, IGI and foreign corresponding relief. Preserve both sides' tax-year/valuation bridge and avoid counting the same correction twice. The ministry's binding-value/no-combined-excess rule is domestic, not a promise by a foreign authority. [Article 16(3)–(6)][law]; [Regulation, Article 7][reg]
-6. Test finance costs again under articles 13–14: recipient tax/mismatch restrictions and, where applicable, the net-finance limitation can disallow an arm's-length amount. The ordinary limit is 30% corrected profit with the EUR 500,000 minimum, subject to its exclusions, group and short-period rules; use `ad-corporate-income-tax` for the full deduction/loss/credit calculation. A pricing adjustment is not simply 10% of every invoice. [Articles 13–14, 16(6)][law]
+6. Test finance costs again under articles 13–14: recipient tax/mismatch restrictions and, where applicable, the net-finance limitation can disallow an arm's-length amount. The ordinary limit is 30% corrected profit with the EUR 500,000 minimum, subject to its exclusions (banks, credit and insurance entities; stand-alone entities; groups whose parent is resident in Andorra), group and short-period rules, a 17-year carry-forward of disallowed net finance costs and a 5-year carry-forward of unused capacity; use `ad-corporate-income-tax` for the full deduction/loss/credit calculation. A pricing adjustment is not simply 10% of every invoice. [Articles 13–14, 16(6)][law]
 
 ### Services and allocation evidence
 
@@ -56,6 +59,10 @@ As a practical workpaper, reconcile the charge to the service supplied and the l
 ### Financing
 
 Finance costs incurred by a resident entity on direct or indirect transactions with related resident individuals or related non-resident persons/entities are non-deductible unless the taxpayer proves financing terms comparable to those between independent parties. Record currency, amount, term, security, repayment, borrower credit risk and contemporaneous comparable terms. A market interest rate alone does not answer all financing conditions or other deduction restrictions. [Article 16(6)][law]
+
+Read literally, Article 16(6) denies the whole related-party finance cost unless market-comparable terms are proved; it does not say that only the part above a market amount is lost. Treat the full amount as at risk where the proof fails (worked example 3). Whether the ministry in practice limits the correction to the excess under Article 16(3)-(4) is not settled by the text and is held under `Not yet confirmed:`. [Article 16(3), (4), (6)][law]
+
+Separately, a related-party expense is not deductible where the related recipient's income from it is exempt, not taxed, or taxed at a nominal rate below 50% of the 10% general rate, including through a different tax classification at the recipient. A comparable income tax is presumed where the recipient is resident in a country with an applicable Andorran double tax treaty. [Articles 13(1)(g), 41][law]
 
 The examples below show pricing arithmetic only. The selected prices and rates are assumed supported facts, not statutory safe harbours, benchmarks supplied by this Guide or proof of a full tax deduction.
 
@@ -73,7 +80,7 @@ With the tax declaration, an approved-agreement holder submits a report identify
 
 Pricing adjustments and failure to prove comparable financing terms affect the tax base immediately. IS article 64 sets simple-offence fines of EUR 150–3,000 and defraudation sanctions of 50%–150%, with statutory classification/graduation; an adjustment alone does not prove culpable evasion. [Articles 16(4), (6), 64][law]
 
-For the information offence referred to by CbCR article 16 bis(8), General Tax Law article 128(2)(c) provides EUR 1,000 for the first failure to supply the required information and EUR 3,000 for second or later failures. Apply the actual information duty, request/history and offence, rather than inventing a per-document TP tariff. Other offences and agreement/payment reductions follow articles 125–132. [General Tax Law 21/2014, Articles 127(2)(c), 128(2)(c), 132](https://www.portaljuridicandorra.ad/L2014021).
+For the information offence referred to by CbCR article 16 bis(8), General Tax Law article 128(2)(c) provides EUR 1,000 for the first failure to supply the required information and EUR 3,000 for second or later failures. Apply the actual information duty, request/history and offence, rather than inventing a per-document TP tariff. Other offences and agreement/payment reductions follow articles 125–132: a sanction is reduced by 30% on agreement with the assessment and its voluntary payment, and the amount then due by a further 25% if paid in full in the voluntary period without appeal. [General Tax Law 21/2014, Articles 127(2)(c), 128(2)(c), 132](https://www.portaljuridicandorra.ad/L2014021).
 
 Voluntary late tax-bearing filings have the statutory 2%, 5%, 10% or post-request 15% surcharge route; distinguish the six-month interest coordination and enforcement 2%/10%/20% stage rules. Tax late interest for 2026 is 4.05% annually on the statutory base and period; an information-only failure is not automatically a tax-bearing late return. Use the actual assessment/payment dates. [General Tax Law, Articles 23–25](https://www.portaljuridicandorra.ad/L2014021); [Budget Law 1/2026, Article 17](https://www.portaljuridicandorra.ad/L2026001).
 
@@ -101,7 +108,7 @@ Prepare jurisdiction totals for revenue, profit/loss before tax, tax paid and ac
 
 Failure to meet these information duties is the offence referred to Article 127(2)(c) of Law 21/2014; the current EUR 1,000/EUR 3,000 information sanctions are described above. The ministry uses CbCR for risk assessment and cannot base transfer-pricing adjustments on the report. Reporting or exemption from reporting does not replace transaction-level pricing evidence. [Articles 16 bis(8), 16 ter][law]
 
-## Worked examples that recompute
+## Two worked examples that recompute
 
 ### 1. Underpriced service charge
 
@@ -140,6 +147,26 @@ expected:
   excess_over_supported: 4000
 ```
 
+### 3. Financing proof decision: reprice or keep the loan terms
+
+The same EUR 12,000 booked interest. Option A: the company documents comparable terms and reprices the loan so that it books the supported EUR 8,000; the finance cost can be deducted, subject to articles 13–14. Option B: it keeps the EUR 12,000 and cannot prove market-comparable terms; read literally, Article 16(6) denies the whole EUR 12,000. At the 10% company tax rate, Option B costs EUR 1,200 of tax on the disallowed amount against nothing under Option A, and the deduction lost compared with Option A is EUR 8,000. The amounts are illustrative; whether only the EUR 4,000 excess would be corrected in practice is not settled (see `Not yet confirmed:`).
+
+```oa-check
+name: Andorra related financing, repricing decision under Article 16(6)
+inputs:
+  booked_interest: 12000
+  supported_interest: 8000
+  is_rate: 0.10
+steps:
+  option_a_deductible: supported_interest
+  option_b_disallowed: booked_interest
+  option_b_extra_tax: option_b_disallowed * is_rate
+expected:
+  option_a_deductible: 8000
+  option_b_disallowed: 12000
+  option_b_extra_tax: 1200
+```
+
 ## Ask the client first
 
 - Who owns, controls or directs each party, including indirect holdings and relevant family links?
@@ -153,14 +180,14 @@ expected:
 
 | Primary source and provisions used | URL | Read on |
 |---|---|---|
-| Law 95/2010 current consolidation, arts 13–14, 16, 16 bis/ter/quater, 64 | https://www.portaljuridicandorra.ad/L2010095 | 2026-10-27 |
-| Corporate-tax regulation, arts 7–14 | https://www.portaljuridicandorra.ad/R20231229C | 2026-10-27 |
-| IRNR Law 94/2010, art 16 | https://www.portaljuridicandorra.ad/L2010094 | 2026-10-27 |
-| General Tax Law 21/2014, arts 23–25, 125–132 | https://www.portaljuridicandorra.ad/L2014021 | 2026-10-27 |
-| Budget Law 1/2026, art 17 | https://www.portaljuridicandorra.ad/L2026001 | 2026-10-27 |
-| Corporate-law version register, current consolidation and amendment provenance; consolidation lacks official legal status | https://www.portaljuridicandorra.ad/L2010095_F | 2026-10-27 |
+| Law 95/2010 consolidated text 21 (in force 13 February 2026), arts 13–14, 16, 16 bis/ter/quater, 41, 64 | https://www.portaljuridicandorra.ad/L2010095 | 2026-11-16 |
+| Corporate-tax regulation of 29 December 2023, arts 7–14 | https://www.portaljuridicandorra.ad/R20231229C | 2026-11-16 |
+| IRNR Law 94/2010 consolidated text 5, art 16 | https://www.portaljuridicandorra.ad/L2010094 | 2026-11-16 |
+| General Tax Law 21/2014 consolidated text 5, arts 23–25, 125–132 | https://www.portaljuridicandorra.ad/L2014021 | 2026-11-16 |
+| Budget Law 1/2026, art 17 | https://www.portaljuridicandorra.ad/L2026001 | 2026-11-16 |
+| Corporate-law version register, read for the current consolidation (text 21, in force 13 February 2026) and amendment provenance; consolidation lacks official legal status | https://www.portaljuridicandorra.ad/L2010095_F | 2026-11-16 |
 
-Not yet confirmed: a universal minimum transaction threshold, fixed markup/interest safe harbour, mandatory general annual master/local-file submission date or maximum agreement term is not established by these provisions. A real group's CbCR exemption needs the actual qualifying exchange relationship, reporting receipts and any systemic-failure notices effective at its deadline; no complete live matrix or electronic filing schema is certified here. A foreign corresponding adjustment or treaty dispute needs the operative treaty and actual competent-authority procedure; domestic binding valuation alone does not grant foreign relief. These specialist checks do not prevent the ordinary related-party workpaper above.
+Not yet confirmed: a universal minimum transaction threshold, fixed markup/interest safe harbour, mandatory general annual master/local-file submission date or maximum agreement term is not established by these provisions. A real group's CbCR exemption needs the actual qualifying exchange relationship, reporting receipts and any systemic-failure notices effective at its deadline; no complete live matrix or electronic filing schema is certified here. A foreign corresponding adjustment or treaty dispute needs the operative treaty and actual competent-authority procedure; domestic binding valuation alone does not grant foreign relief. These specialist checks do not prevent the ordinary related-party workpaper above. Whether, when related financing is above market terms, the ministry denies the whole finance cost under Article 16(6) or only corrects the excess under Article 16(3)-(4) is not settled by the text read; no published practice was read.
 
 [law]: https://www.portaljuridicandorra.ad/L2010095
 [reg]: https://www.portaljuridicandorra.ad/R20231229C
@@ -170,4 +197,4 @@ Not yet confirmed: a universal minimum transaction threshold, fixed markup/inter
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ad-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ad-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ad-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ad-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

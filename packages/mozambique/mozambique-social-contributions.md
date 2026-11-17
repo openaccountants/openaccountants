@@ -1,508 +1,181 @@
 ---
 name: mozambique-social-contributions
-description: Use this skill whenever asked about Mozambique social security contributions (INSS), payroll, or personal income tax (IRPS) for employees, employers, or self-employed individuals. Trigger on phrases like "how much INSS do I pay", "Mozambique social security", "INSS employer rate", "INSS employee 3%", "Segurança Social", "Instituto Nacional de Segurança Social", "Mozambique payroll tax", "IRPS calculation", "Mozambique income tax brackets", "PAYE Mozambique", "salário mínimo", "Mozambican minimum wage", or any question about Mozambique payroll or social-contribution obligations. Also trigger when classifying bank statement transactions that relate to INSS debits, IRPS/PAYE remittances, or salary payments from Mozambican banks (BCI, Millennium BIM, Standard Bank Moçambique, Absa Moçambique). This skill covers the 4% employer / 3% employee INSS rates, contribution base, registration and payment deadlines, IRPS resident brackets and PAYE, non-resident flat withholding, minimum wages by sector, bank statement classification patterns, and edge cases. ALWAYS read this skill before touching any Mozambique payroll or social-contribution work.
-version: 0.1
+description: "Mozambique INSS for 2026: separate employee/employer and self-employed contributions, actual bases, registration, remittance, interest, foreign coverage and preserved bank-statement cases."
+version: 0.2
 jurisdiction: MZ
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-17
 depends_on:
   - social-contributions-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Mozambique Social Security (INSS) & Payroll Tax
+# Mozambique social contributions
 
-## Mozambique Social Security (INSS) & Payroll Tax Skill v0.1
+## Who this applies to
 
-Mozambique **does** levy a personal income tax (IRPS), so this skill covers both the **INSS social contribution** (the primary subject) and the **IRPS payroll/PAYE reality** an employer must withhold. It is **not** a no-PIT jurisdiction.
+Ordinary INSS-covered workers and employers, plus separately classified self-employed workers (TCP). Mozambique has personal income tax as well as social security. IRPS is not INSS; payroll withholding is computed in [payroll](mozambique-payroll.md), annual non-employment tax in [income tax](mozambique-income-tax.md), and IVA in [VAT](mozambique-vat.md). This Guide does not establish that every contractor is an employee or that every foreign/public/domestic worker has the same coverage.
 
-## Section 1 -- Quick reference
+The current RSSO text used is the 2024 republication of Decreto 51/2017 by Decreto 56/2024. The administering site's label says article 100 in one place; the actual amending act names article 110. Do not mix that label or the old 2017 penalty cross-references with the enacted republication. No independent accountant attestation is claimed.
 
-**Quick reference field table**
+## Rates, bands and thresholds
 
-| Field | Value |
-| --- | --- |
-| Country | Mozambique (Republic of Mozambique) |
-| Currency | Mozambican Metical (MZN / MT) -- this skill uses MZN only |
-| Tax year | Calendar year (1 Jan -- 31 Dec) |
-| Social security authority | Instituto Nacional de Segurança Social (INSS) |
-| Tax authority | Autoridade Tributária de Moçambique (AT) |
-| INSS employer rate | **4%** of monthly remuneration (PwC; mozambiqueexpert) |
-| INSS employee rate | **3%** of monthly remuneration (PwC; mozambiqueexpert) |
-| INSS total rate | **7%** (PwC; mozambiqueexpert) |
-| INSS contribution floor | None found in authoritative sources [RESEARCH GAP -- reviewer to confirm] |
-| INSS contribution ceiling | None found in authoritative sources [RESEARCH GAP -- reviewer to confirm] |
-| INSS payment window | 20th of current month -- 10th of following month, via INSS e-platform (mozambiqueexpert) |
-| IRPS resident regime | Progressive 10%--32% on annual taxable income (PwC) |
-| IRPS PAYE remittance | By the 20th of the following month (PwC) |
-| Non-resident IRPS | Flat 20% definitive withholding on Mozambique-source income (PwC) |
-| Validation date | Pending |
+| Item | Rule | Official source |
+|---|---|---|
+| Ordinary employee / employer | 3% employee,4% employer;7% remitted in total. Employer share is on top, not shifted onto wages. | INSS contributor guidance; Law 4/2007 art 20: https://www.inss.gov.mz/direitos-e-obrigacoes-do-contribuinte/ |
+| TCP | 7%, entirely borne by the self-employed worker; classification and chosen-base rules apply. | INSS TCP guidance; Law 4/2007 art 23: https://www.inss.gov.mz/taxa-contributiva-tcp/ |
+| TCP base floor | Chosen conventional remuneration cannot be below the respective sector minimum, not a universal no-floor rule. | RSSO 65-66: https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
+| TCO base / ceiling | RSSO 11 listed remuneration; no general ceiling located in ordinary provisions read. Special conventional bases under 11(2) are not ruled out. | RSSO 11/14: https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
+| Employer affiliation | Within 15 days from activity start or acquisition. Missing required registration documents must be regularised within the separate 30 day rule. | RSSO 7: https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
+| Worker registration / changes | Electronic enrolment and validation documents within 30 days from vínculo under 9; ordinary identification/contract changes within 30 days under 10. | RSSO 9-10: https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
+| Contribution start | TCO:first contractual day through end of paid activity; TCP:month after registration/enquadramento. | RSSO 14/64: https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
+| Declaration and payment | From 20th of reference month to 10th next month; Saturday/Sunday/holiday/tolerancia carry under 12 and contributor guidance. | RSSO 12/14/67: https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
+| Business/TCP suspension or cessation | Specific written notice by 10th next month; employer supplies competent-authority evidence. Failure can create recorded contribution debt. | RSSO 16/63: https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
+| Arrears interest | 2% per month or fraction after the contribution deadline. Court appeal does not interrupt accrual. | RSSO 98: https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
+| Interest relief | Proved force-majeure exemption request; non-attributable production/productivity reduction may support a request, reduction no greater than 50% of interest. | RSSO 98(2)-(5): https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
+| Pension-branch foreign refund | Definitive departure before pension entitlement; specified foreign beneficiary; no bilateral agreement with origin country; request within 1 year of last contribution. Not an automatic refund of employee 3%. | RSSO 123: https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
+| TCP advance payment | May request up to 12 months in advance; contribution differences from minimum-wage changes paid the month after Gazette publication. | RSSO 67: https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
 
-**INSS contribution overview**
+| Fine band | Offences in actual republication | Official source |
+|---|---|---|
+| 1-5 sector-minimum wages | RSSO 93(a,d,f,q): specified missing registration documents/data/communications | RSSO 93-94: https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
+| 1-3 sector-minimum wages | RSSO 93(h,k,m): missing remuneration declaration, non-payment, specified employer false statement | RSSO 93-94: https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
+| 1-2 sector-minimum wages | RSSO 93(c,e,g,i,j): listed late documents/declaration, worker omission/false remuneration | RSSO 93-94: https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
+| Late payment 93(l) | Interest under 98; do not relabel it the preceding fixed-fine band | RSSO 93-94/98: https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf |
 
-| Party | Rate | Mechanism |
-| --- | --- | --- |
-| Employee | 3% | Withheld by employer from gross remuneration (PwC) |
-| Employer | 4% | Paid by employer on top of remuneration (PwC) |
-| **Total remitted** | **7%** | Employer remits combined 3% + 4% to INSS (PwC; mozambiqueexpert) |
+Apply the relevant fine once per affected employed person, using the branch minimum at the violation date. The omission of a clear 93(b) registration-failure mapping in the 94 bands read is not permission to silently assign the old blanket 1-5 band. Obtain the actual assessment/procedure. The old universal late-submission 1-3 headline does not distinguish absent from late declarations.
 
-*Arithmetic check: 3% (employee) + 4% (employer) = 7% (total). ✓*
+## The base
 
-**Conservative defaults**
+### TCO employee and employer contributions
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown whether worker is employee vs self-employed | Assume employee; INSS 7% (4%+3%) applies |
-| Unknown which pay items are in the contribution base | Include only basic wage + regular consistent items; EXCLUDE meal subsidy, one-off bonuses, reimbursements (PwC) |
-| Unknown residency for IRPS | Ask -- do not assume; resident = worldwide progressive, non-resident = flat 20% (PwC) |
-| Unknown whether foreign employee has home-country scheme | Apply INSS; exemption is by request only (PwC) |
-| Unknown contribution floor/ceiling | Apply rate to full remuneration base; no statutory cap found [RESEARCH GAP] |
-| Unknown sector for minimum-wage check | STOP -- minimum wage is sector-specific (DLA Piper) |
+RSSO 3 covers national/foreign employees, including part-time, probation and paid internships, specified paid directors/managers and other listed categories. Employers are responsible for their own and workers' contributions under Law 4/2007 art 20. Contributions and registration do not wait for a large headcount or a bank label.
 
-## Section 2 -- Required inputs and refusal catalogue
+RSSO 11 includes salary, seniority bonus, management gratuity, regular performance/productivity/attendance premiums, replacement remuneration, night-work remuneration and analogous regular bonuses, allowances and commissions. Law 4/2007 art 28 likewise addresses salary and regular/periodic additions. The original blanket exclusion of meal subsidies, one-off bonuses, profit-share/dividends, holiday pay and reimbursements was not established from the operative sources. Analyse each component's legal character and regularity, with actual pay records and current INSS confirmation where necessary. A true expense reimbursement is not proved merely by its narration; a distribution needs ownership and underlying records.
 
-### Required inputs
+Original Note 246/INSS/GAB-DG/432/2024 was not recovered/read. The INSS FAQ says 13th salary is included in its payment month, but carries revoked 53/2007 and old Penal Code references elsewhere. Preserve that agency statement and its source-version limit; do not treat it or the old blanket exclusion as complete current component clearance. The income-tax treatment is independently governed: employee INSS is not deducted before the CIRPS 29/65-A gross-employment PAYE algorithm.
 
-**Minimum viable** -- monthly gross remuneration and a breakdown of pay components (so the contribution base can be isolated), plus worker status (employee vs self-employed).
+For a proven ordinary contributory base B: employee=B x 3%, employer=B x 4%, combined remittance=B x 7%. No general maximum was found in the ordinary TCO clauses read, but special conventional bases and separate TCP/voluntary regimes remain possible. Do not infer the absence of every floor or cap from an unsuccessful source search. Sector minimum-wage compliance is a separate labour check; report underpayment and actual arrears instead of automatically rewriting paid remuneration.
 
-**Recommended** -- residency status for IRPS, sector (for minimum-wage validation), and whether the worker is a foreign employee with a comparable home-country scheme.
+### TCP, voluntary maintenance and foreign coverage
 
-**Ideal** -- INSS registration confirmation, prior payroll runs, and the AT NUIT (Número Único de Identificação Tributária) for the employer.
+TCP criteria in RSSO 58-59 distinguish an economic activity without collaborators and individual service contracts by control of working means/processes, hours, integration into a sole hierarchy and substitution. Do not presume employee status when the facts are missing. TCP declares activity within 30 days and supplies identification, activity licence/equivalent, NUIT and requested contact/account/family information under 61-62. Contributions begin the following month, on chosen remuneration no lower than the sector minimum under 64-66. A change of base is requested from INSS; upward age/income conditions and special suspension rules must be checked before a real election. Supported sickness exceeding 30 days has the 68 suspension rule; no general 'stop paying whenever work is quiet' election is provided.
 
-### Refusal catalogue
+Voluntary maintenance is a different route under RSSO 55-56, with an ordinary six-month average and minimum/INSS-approved alternative-base conditions, whole contribution borne by the beneficiary and request-based advance payment. Do not apply TCP's chosen-sector base or an employee/employer split to it without confirming the actual regime and eligibility. Full benefit/pension entitlement is not cleared here.
 
-- **R-MZ-INSS-1 -- Contribution base unclear** — "The INSS base includes basic wages, seniority/management bonuses, regular productivity/attendance premiums, night-work pay and consistent allowances/commissions, but EXCLUDES meal subsidies, irregular one-off bonuses and expense reimbursements. Cannot compute INSS without an itemised pay breakdown." (Trigger: pay components not itemised.)  _(PwC; mozambiqueexpert)_
-- **R-MZ-INSS-2 -- INSS arrears / penalties** — "Late INSS contributions attract monthly late-payment interest plus administrative fines; the exact percentages are not stated in authoritative sources [RESEARCH GAP -- reviewer to confirm]. Do not quantify arrears without an INSS statement. Escalate to a Mozambican licensed professional." (Trigger: client has unpaid INSS contributions.)  _([RESEARCH GAP -- reviewer to confirm])_
-- **R-MZ-INSS-3 -- Foreign-employee exemption** — "Foreign employees may request exemption only where they contribute to a comparable scheme in their home country. This is by application, not automatic. Escalate to confirm before excluding INSS." (Trigger: foreign employee claims INSS exemption.)  _(PwC)_
-- **R-MZ-IRPS-1 -- New IRPS residency / Law 11/2025 effects** — "Law No. 11/2025 (effective 29 Dec 2025) redefined residency (removed the 180-day test), introduced a 10% final withholding on digital-service income and e-money agent commissions, and added an autonomous capital-gains regime (Art. 54-A). These require case-specific analysis. Escalate to a Mozambican licensed professional." (Trigger: client circumstances touch residency, digital-service income, electronic-money agent commissions, or capital gains.)  _(DLA Piper)_
-- **R-MZ-IRPS-2 -- Exact penalty quantification** — "Exact statutory IRPS penalty figures in MZN were not located from the authority; secondary estimates cite roughly USD 100--USD 33,000 plus interest [RESEARCH GAP -- reviewer to confirm]. Do not state a definitive figure. Escalate." (Trigger: client asks for the exact MZN penalty for late filing/payment.)  _([RESEARCH GAP -- reviewer to confirm])_
+RSSO 4 excludes the registration obligation for a foreign worker who proves coverage by another country's social-security system, subject to applicable legislation. Proof needs Mozambique consular authentication or competent confirmation of issuing-country formalities. Law 4/2007 art 14 preserves bilateral-agreement qualifications. It is not limited by the old words 'comparable home-country scheme', and neither tax non-residence nor foreign nationality is sufficient proof. Do not omit contributions from an actual payroll without resolving coverage/documentation.
 
-## Section 3 -- Payment pattern library
+Foreign reimbursement under 123 is conditional on pension-branch status, definitive departure before pension entitlement and absence of the specified agreement, with a one-year request limit. Deduction for benefits already granted applies to restitution under 123(2). Do not promise all 7%, all 3% or a universal expatriate refund. Public/central-bank schemes, domestic-work Decreto 52/2026, detachment, Portugal/bilateral and system-articulation cases remain non-usable special-regime boundaries.
 
-Deterministic pre-classifier for Mozambican bank statement transactions. Match by case-insensitive substring on the counterparty/reference. INSS and IRPS payments always EXCLUDE from any VAT return or revenue/expense classification -- they are statutory payroll obligations, not business supplies. (Portuguese is the official language; references appear in Portuguese.)
+### Statements, postings and workpaper
 
-### 3.1 INSS social-security debits
+Match narratives case-insensitively, longest relevant pattern first, then inspect direction, counterparty, period, receipt and account. INSS/I.N.S.S., SEGURANCA SOCIAL/SEGURANÇA SOCIAL, INST NACIONAL/INST NAC SEG SOCIAL, CONTRIBUICAO/CONTRIBUIÇÃO INSS and CONTRIBUICAO SOCIAL are possible INSS transactions. IRPS, AT MOCAMBIQUE, AUTORIDADE TRIBUTARIA and EDECLARACAO denote a different tax job; IRPC is company tax, IVA/VAT is VAT. SALARIO/SALÁRIO, ORDENADO, VENCIMENTO and PAGAMENTO SALARIAL usually identify wage payment/receipt, not contribution remittance.
 
-**INSS social-security debit patterns**
+BCI/Banco Comercial e de Investimentos, Millennium BIM, Standard Bank Mocambique and Absa are the original illustrative bank sources; their narrative patterns and monthly recurrence are clues, not guaranteed statement formats. A debit can settle multiple workers, arrears or fines; a credit can reverse an earlier payment or pay a benefit. Do not impose the old 'always debit/full 7%' rule on every transaction. Liability settlement is not a second VAT supply or revenue item; the underlying employer contribution remains an expense where properly recorded, not excluded from all accounts.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| INSS, I.N.S.S. | EXCLUDE -- INSS contribution | Monthly 7% (4% employer + 3% employee) remittance |
-| SEGURANCA SOCIAL, SEGURANÇA SOCIAL | EXCLUDE -- INSS contribution | Portuguese-language reference |
-| INST NACIONAL SEGURANCA SOCIAL | EXCLUDE -- INSS contribution | Full authority name |
-| CONTRIBUICAO INSS, CONTRIBUIÇÃO INSS | EXCLUDE -- INSS contribution | Explicit contribution reference |
+The workpaper retains Client/NUIT, INSS contributor/beneficiary numbers, year and preparation date, worker/coverage/residence evidence, sector/date, each actual pay component, assessed base and supporting exclusions, employee/employer/TCP rate and amount, payment window/carry, reference/receipt, arrears periods and adjustments. Route PAYE through the actual gross-monthly matrix and keep annual non-employment aggregation separate. The old fields labelled 'meal/one-off/reimbursement EXCLUDED' become component review fields, not prefilled exclusions. Do not deduct employee INSS from an assumed annual employment IRPS base.
 
-### 3.2 IRPS / PAYE tax remittances (NOT INSS -- do not confuse)
+With statements alone, classify possible liabilities provisionally and request contracts, pay slips, nominative declarations and official account statements. Divide 2,100 by 7% to infer 30,000 only if evidence first proves it is solely the combined ordinary contribution on that base; otherwise refuse the inferred salary. Separate 3% employee liability,4% employer expense, payment and original salary. Unknown residence, sector, worker status or base remains an explicit stop for an exact computation.
 
-**IRPS/PAYE tax remittance patterns**
+## Deadlines and filing
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| IRPS | EXCLUDE -- income tax (PAYE), not INSS | Withheld employee income tax remitted to AT |
-| AUTORIDADE TRIBUTARIA, AT MOCAMBIQUE | EXCLUDE -- tax payment | AT remittance, not social security |
-| EDECLARACAO, eDeclaração | EXCLUDE -- tax filing/payment | AT income-tax platform |
-| IRPC | EXCLUDE -- corporate income tax | Company-level, not payroll INSS |
-| IVA, VAT | EXCLUDE -- value added tax (16%) | Not INSS |
+RSSO 7/9/10 registration and change deadlines,16/63 cessation and 12/14/67 monthly declarations/payment are separate obligations. A business suspension/cessation needs the specific next-month notice and supporting document; otherwise debt can continue. Use the actual INSS electronic declaration and payment guide/receipt, not a guessed tax portal.
 
-### 3.3 Salary and payroll (exclude from INSS classification)
+Official contributor guidance corroborates next-working-day carry for both declaration and payment. TCP can request advance payment; the old FAQ's categorical 'no advance' must not override 67. Current screens and detailed partial-month/unpaid-leave processing remain unverified. Do not substitute a tax calendar's 15th or 20th for the INSS deadline. M/19, Lista Nominal, annual IRPS filing and payment periods are separately addressed/held in payroll and income tax.
 
-**Salary and payroll patterns**
+## Penalties and interest
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SALARIO, SALÁRIO, ORDENADO (outgoing) | EXCLUDE -- payroll expense | Gross wage payment, not the INSS remittance |
-| VENCIMENTO, PAGAMENTO SALARIAL (outgoing) | EXCLUDE -- payroll expense | Same |
-| SALARIO, ORDENADO (incoming) | EXCLUDE -- employment income received | Not an INSS payment |
+Use the mapped 93-94 bands and 98 interest, not MAIBOR or a generic 1-3 multiplier. For a real bill obtain principal by period, due dates/carries, periods/fractions, payment allocation, notices, offence, affected workers, sector/date minimum, relief application and decision. Court appeal does not itself suspend interest. Force-majeure or productivity relief is request-based and conditional, not an automatic reduction.
 
-### 3.4 Mozambican banks -- typical debit descriptions
+Decreto 20/2025 was a 12-month programme from 9 July 2025, for specified debt from June 2022 to the month before commencement. It excluded prior-relief defaulters, required application/terms and principal payment, and specified 98% interest reduction for full principal payment or 75% for qualifying instalments with six-month/agreement/default conditions. No extension was located. At the read date it is historical/individual-agreement context, not an automatic current election; retrieve the actual agreement before applying any residual effect. It does not erase criminal liability or procedural costs merely because principal was paid.
 
-**Mozambican banks typical debit descriptions**
+Tax fines and tax juros de mora are different. The old approximately USD100-33,000 tax-penalty estimate has no verified current MZN schedule and is not usable. Refuse a definitive bill without the current primary tax law and official account. No fresh interest-rate guess or FX conversion is supplied.
 
-| Bank | Typical description | Treatment |
-| --- | --- | --- |
-| BCI (Banco Comercial e de Investimentos) | "INSS" or "SEGURANCA SOCIAL" | EXCLUDE -- INSS |
-| Millennium BIM | "INSS CONTRIB" or "SEGURANÇA SOCIAL" | EXCLUDE -- INSS |
-| Standard Bank Moçambique | "INSS" or "INST NAC SEG SOCIAL" | EXCLUDE -- INSS |
-| Absa Moçambique | "INSS" or "CONTRIBUICAO SOCIAL" | EXCLUDE -- INSS |
+## Cross-border points
 
-## Section 4 -- Worked examples
+Tax residence is governed by 2026 CIRPS 21, independently from INSS coverage and authentication. Source, treaty and category decide the appropriate income-tax route. Ordinary foreign-employee coverage, bilateral exceptions, public schemes and pension-branch reimbursement have distinct conditions. The old >180-day shortcut and a 'non-resident means no INSS' assumption are not usable. No treaty result or foreign refund is certified here.
 
-All examples use a hypothetical Maputo employer. INSS figures are recomputed to the cent. Contribution base = pensionable remuneration after excluding meal subsidy, one-off bonuses and reimbursements (PwC).
+## Two worked examples that recompute
 
-### Example 1 -- Standard monthly INSS remittance (Millennium BIM)
+### Original ordinary remittance, all-cash base confirmed
 
-**Input line:**
-`10.02.2025 ; INSS CONTRIB ; DEBITO ; REF JANEIRO 2025 ; -2,100.00 ; MZN`
+Original input: `10.02.2025 ; INSS CONTRIB ; DEBITO ; REF JANEIRO 2025 ; -2,100.00 ; MZN`. Assuming the receipt proves one worker's ordinary base 30,000: employee 900, employer 1,200, combined 2,100. The amount/date alone do not prove its period, actual base or timely filing.
 
-**Reasoning:**
-Matches "INSS CONTRIB" (pattern 3.4, Millennium BIM). Single employee, contribution base MZN 30,000.00. Total INSS = 7% x 30,000.00 = **2,100.00** (employer 4% = 1,200.00; employee 3% = 900.00). Paid within the 20th-of-month to 10th-of-following-month window. EXCLUDE from VAT.
-
-*Check: 30,000.00 x 0.07 = 2,100.00; 1,200.00 + 900.00 = 2,100.00. ✓*
-
-**Classification:** EXCLUDE -- INSS contribution.
-
-### Example 2 -- INSS where meal subsidy must be excluded (BCI)
-
-**Input line:**
-`08.03.2025 ; SEGURANCA SOCIAL ; DEBITO ; FEV 2025 ; -1,400.00 ; MZN`
-
-**Reasoning:**
-Employee gross pay MZN 25,000.00 but includes a MZN 5,000.00 meal subsidy, which is EXCLUDED from the base (PwC). Contribution base = 25,000.00 - 5,000.00 = 20,000.00. Total INSS = 7% x 20,000.00 = **1,400.00** (employer 800.00; employee 600.00).
-
-*Check: 20,000.00 x 0.07 = 1,400.00; 800.00 + 600.00 = 1,400.00. ✓*
-
-**Classification:** EXCLUDE -- INSS contribution. Confirm meal subsidy was correctly excluded from base.
-
-### Example 3 -- IRPS/PAYE remittance (NOT INSS)
-
-**Input line:**
-`18.02.2025 ; AUTORIDADE TRIBUTARIA ; DEBITO ; IRPS JANEIRO ; -3,200.00 ; MZN`
-
-**Reasoning:**
-Matches "AUTORIDADE TRIBUTARIA" + "IRPS" (pattern 3.2). This is withheld employee income tax remitted to the AT (due by the 20th of the following month, PwC), NOT a social-security contribution. Do not classify as INSS.
-
-**Classification:** EXCLUDE -- income tax (IRPS/PAYE). NOT INSS.
-
-### Example 4 -- Salary outgoing (payroll, not INSS)
-
-**Input line:**
-`25.02.2025 ; SALARIO JOAO MUCAVELE ; DEBITO ; VENCIMENTO FEV ; -28,100.00 ; MZN`
-
-**Reasoning:**
-Matches "SALARIO" / "VENCIMENTO" (pattern 3.3). This is the net wage paid to the employee, not the INSS remittance. The employee's 3% INSS and IRPS were already withheld; the employer's 4% INSS is remitted separately (see Example 1/2).
-
-**Classification:** EXCLUDE -- payroll expense. NOT the INSS remittance.
-
-### Example 5 -- Combined IRPS calculation for a mid-income employee
-
-**Input data:** Resident employee, annual taxable income MZN 300,000.00. (IRPS bracket 168,000--504,000: 20%, parcela a abater MZN 10,500 -- PwC.)
-
-**Reasoning:**
-Annual IRPS = 300,000.00 x 20% - 10,500.00 = 60,000.00 - 10,500.00 = **49,500.00**.
-
-*Check: 300,000.00 x 0.20 = 60,000.00; 60,000.00 - 10,500.00 = 49,500.00. ✓*
-
-INSS on this salary (assuming the full MZN 300,000.00 / 12 = 25,000.00/month is pensionable base): employee 3% = 750.00/month = 9,000.00/year; employer 4% = 1,000.00/month = 12,000.00/year. The employee 3% is deductible from gross income for IRPS (PwC) -- reviewer to apply before final taxable base.
-
-**Classification:** IRPS payable MZN 49,500.00 before the employee-INSS deduction adjustment. EXCLUDE all related remittances from VAT.
-
-### Example 6 -- Non-resident flat withholding
-
-**Input data:** Non-resident contractor, Mozambique-source fee MZN 100,000.00.
-
-**Reasoning:**
-Non-residents face a flat **20% definitive withholding** on Mozambique-source income (PwC). IRPS withheld = 100,000.00 x 20% = **20,000.00**. No progressive brackets, no annual return aggregation.
-
-*Check: 100,000.00 x 0.20 = 20,000.00. ✓*
-
-**Classification:** EXCLUDE from VAT. Definitive 20% withholding, not progressive IRPS.
-
-### Example 7 -- Minimum-wage validation (sector check)
-
-**Input data:** Construction-sector employee, basic wage MZN 8,000.00/month.
-
-**Reasoning:**
-2025 construction minimum wage (Decree 92/2025) = **8,400.00/month** (DLA Piper). The proposed MZN 8,000.00 is **below** the sector minimum. STOP -- flag for reviewer; the wage must be raised to at least 8,400.00 before INSS is computed on it.
-
-*Check: 8,000.00 < 8,400.00. ✓ (below minimum)*
-
-**Classification:** Payroll non-compliant -- minimum wage breach. Escalate.
-
-## Section 5 -- Tier 1 rules
-
-Apply exactly as written when pay data is clear and inputs are complete.
-
-### Rule 1 -- INSS formula
-
-- **INSS formula** — INSS_employee = contribution_base x 3% INSS_employer = contribution_base x 4% INSS_total    = contribution_base x 7% (Employer withholds the 3% and remits the combined 7%.)  _(PwC; mozambiqueexpert)_
-
-### Rule 2 -- Contribution base
-
-- **Contribution base composition** — Include: basic wages, seniority bonuses, management bonuses, regular productivity/attendance premiums, night-work pay, consistent allowances/commissions. EXCLUDE: meal subsidies, irregular/one-time bonuses, expense reimbursements.  _(PwC; mozambiqueexpert)_
-
-### Rule 3 -- No statutory floor/ceiling found
-
-- **No statutory floor/ceiling** — No statutory minimum or maximum INSS contribution base was found in authoritative sources [RESEARCH GAP -- reviewer to confirm]. Apply the 7% to the full qualifying base unless a reviewer confirms a cap.  _([RESEARCH GAP -- reviewer to confirm])_
-
-### Rule 4 -- Employee 3% is IRPS-deductible
-
-- **Employee 3% IRPS deduction** — The employee's 3% INSS is deductible from gross income for IRPS purposes. Apply before computing progressive IRPS.  _(PwC)_
-
-### Rule 5 -- IRPS resident progressive schedule
-
-**IRPS resident progressive schedule**  _(PwC; brackets confirmed unchanged by Law No. 11/2025, DLA Piper)_
-
-| Annual taxable income (MZN) | Rate | Parcela a abater (MZN) |
-| --- | --- | --- |
-| 0 -- 42,000 | 10% | 0 |
-| 42,000 -- 168,000 | 15% | 2,100 |
-| 168,000 -- 504,000 | 20% | 10,500 |
-| 504,000 -- 1,512,000 | 25% | 37,500 |
-| Over 1,512,000 | 32% | 141,540 |
-
-- **IRPS formula** — IRPS = income x marginal rate - parcela a abater. Monthly PAYE runs 0%--32%.  _(PwC; DLA Piper)_
-
-### Rule 6 -- Non-resident flat withholding
-
-- **Non-resident flat withholding** — Non-residents: flat 20% definitive withholding on Mozambique-source income. No aggregation, no annual return for that income.  _(PwC)_
-
-### Rule 7 -- Foreign-employee INSS exemption is by request only
-
-- **Foreign-employee exemption** — Foreign employees may request exemption only if they contribute to a comparable home-country scheme. Not automatic -- apply INSS unless a reviewer confirms exemption.  _(PwC)_
-
-### Rule 8 -- INSS payment window
-
-- **INSS payment window** — Contributions are payable between the 20th of the current month and the 10th of the following month, via the electronic INSS platform. Treat the 10th of the following month as the deadline.  _(mozambiqueexpert)_
-
-### Rule 9 -- IRPS / PAYE remittance and filing
-
-- **IRPS/PAYE remittance and filing** — Employer PAYE remittance by the 20th of the following month. Annual return filed January--April following the tax year; from 1 Jan 2026, resident individuals with only employment income must file an annual return (previously exempt if fully withheld). Final tax payment: end of May (employment income) / end of June (other income).  _(PwC)_
-
-### Rule 10 -- Registration deadlines (INSS)
-
-- **INSS registration deadlines** — Employers register with INSS within 15 days of business commencement; employees registered within 30 days of contract start; status changes notified within 30 days.  _(mozambiqueexpert)_
-
-### Rule 11 -- Municipal/local tax
-
-- **Municipal/local tax** — Local tax may apply, e.g. Maputo residents owe MZN 510/year (2024 rate), typically withheld by employer. Confirm the current-year figure with the municipality [RESEARCH GAP -- 2025/2026 rate to confirm].  _(PwC)_
-
-## Section 6 -- Tier 2 catalogue
-
-Flag these for reviewer confirmation when data is ambiguous.
-
-### T2-1 -- Pay-component classification ambiguity
-
-- **T2-1** — Trigger: A pay item (e.g. a commission or allowance) may or may not be "regular/consistent" enough to enter the INSS base. Issue: Only regular, consistent allowances/commissions are in-base; irregular ones are out. The boundary is judgemental. Action: Flag for reviewer with the payment history.  _(PwC)_
-
-### T2-2 -- Foreign employee with home-country scheme
-
-- **T2-2** — Trigger: Foreign employee asserts a comparable home-country contribution. Issue: Exemption is by application only and depends on the comparability of the foreign scheme. Action: Flag for reviewer; do not exclude INSS without confirmation.  _(PwC)_
-
-### T2-3 -- Law 11/2025 residency reclassification
-
-- **T2-3** — Trigger: Worker's residency status is unclear post-29 Dec 2025. Issue: Law 11/2025 removed the 180-day test and broadened residency to main residence, professional activity, centre of economic interests, Mozambican vessel/aircraft crew, and nationals on foreign assignment not fully taxed abroad. Action: Flag for reviewer to determine resident vs non-resident treatment.  _(DLA Piper)_
-
-### T2-4 -- Digital-service / e-money agent income
-
-- **T2-4** — Trigger: Worker earns digital-service income or electronic-money agent commissions. Issue: From Law 11/2025, these are subject to a final 10% withholding -- different from standard PAYE. Action: Flag for reviewer.  _(DLA Piper)_
-
-### T2-5 -- Capital gains (autonomous regime)
-
-- **T2-5** — Trigger: Individual realises capital gains. Issue: Law 11/2025 added an autonomous capital-gains regime (Art. 54-A) using the same 10%--32% schedule; such income is no longer aggregated. Action: Flag for reviewer; do not aggregate into employment IRPS.  _(DLA Piper)_
-
-### T2-6 -- INSS arrears / penalties
-
-- **T2-6** — Trigger: Unpaid INSS from prior periods. Issue: Monthly late-payment interest and administrative fines apply; exact rates not stated in authoritative sources [RESEARCH GAP]. Action: Do not quantify without an INSS statement. Escalate.  _([RESEARCH GAP])_
-
-### T2-7 -- Minimum-wage breach
-
-- **T2-7** — Trigger: Basic wage appears below the 2025 sector minimum (Section 10 table). Issue: Minimum wages are sector-specific (Decrees 87/2025--94/2025). A further revision took effect ~1 April 2026 [RESEARCH GAP -- 2026 figures not yet sourced]. Action: Flag for reviewer; payroll must comply before INSS computation.  _(DLA Piper)_
-
-## Section 7 -- Excel working paper template
-
-MOZAMBIQUE PAYROLL / INSS COMPUTATION -- WORKING PAPER
-Client: [name]               NUIT: [____]
-Tax Year: [year]             Prepared: [date]
-
-INPUT DATA
-  Worker status:                 [Employee / Self-employed]
-  Residency (IRPS):              [Resident / Non-resident]
-  Sector (minimum-wage check):   [____]
-  Gross monthly remuneration:    MZN [____]
-  Meal subsidy (EXCLUDED):       MZN [____]
-  One-off bonuses (EXCLUDED):    MZN [____]
-  Reimbursements (EXCLUDED):     MZN [____]
-  INSS contribution base:        MZN [____]
-
-INSS COMPUTATION (monthly)
-  Employee 3%:                   MZN [____]
-  Employer 4%:                   MZN [____]
-  Total 7% remitted:             MZN [____]
-  Payment due (10th of next mo): [____]
-
-IRPS COMPUTATION (annual, residents)
-  Annual taxable income:         MZN [____]
-  Less employee INSS deduction:  MZN [____]
-  Adjusted taxable income:       MZN [____]
-  Marginal rate:                 [10/15/20/25/32]%
-  Parcela a abater:              MZN [____]
-  IRPS = income x rate - parcela:MZN [____]
-  (Non-resident: 20% flat)       MZN [____]
-
-REVIEWER FLAGS
-  [List any Tier 2 flags here]
-
-RESEARCH GAPS APPLIED
-  [List any [RESEARCH GAP] items relied upon]
-
-## Section 8 -- Bank statement reading guide
-
-### How INSS and tax debits appear on Mozambican statements
-
-**BCI (Banco Comercial e de Investimentos):**
-- Description: "INSS" or "SEGURANCA SOCIAL"
-- Timing: monthly, in the 20th-to-10th window (deadline 10th of following month)
-- Amount: 7% of the monthly contribution base
-
-**Millennium BIM:**
-- Description: "INSS CONTRIB" or "SEGURANÇA SOCIAL"
-- Timing: same monthly cycle
-
-**Standard Bank Moçambique / Absa Moçambique:**
-- Description: "INSS" / "INST NAC SEG SOCIAL" / "CONTRIBUICAO SOCIAL"
-- Timing: same monthly cycle
-
-**Key identification tips:**
-1. INSS debits are outgoing (DEBITO), monthly, and equal 7% of the contribution base.
-2. Do NOT confuse with AT/IRPS debits (income tax, due 20th of following month) or IRPC (corporate) or IVA (16% VAT).
-3. Salary debits ("SALARIO", "VENCIMENTO", "ORDENADO") are net wages, not the INSS remittance.
-4. References are typically in Portuguese.
-5. The INSS figure should reconcile to 0.07 x base; the employee share alone is 0.03 x base.
-
-## Section 9 -- Onboarding fallback
-
-If the client provides only a bank statement and no other information:
-
-1. **Scan for INSS debits** -- identify outgoing payments matching Section 3.1/3.4 patterns.
-2. **Reverse-engineer the base** -- INSS / 0.07 = contribution base (e.g. 2,100.00 / 0.07 = 30,000.00).
-3. **Separate tax from social security** -- AT/IRPS debits are income tax, not INSS; IRPC/IVA are company-level.
-4. **Flag for reviewer:** "INSS and IRPS figures derived from bank statement amounts only. Contribution base composition, residency, and sector minimum wage have not been independently verified. Reviewer must confirm before filing."
-
-## Section 10 -- Reference material
-
-### INSS quick computation (illustrative)
-
-**INSS quick computation table**  _(Rates: PwC; mozambiqueexpert)_
-
-| Contribution base (MZN/mo) | Employee 3% | Employer 4% | Total 7% |
-| --- | --- | --- | --- |
-| 10,000.00 | 300.00 | 400.00 | 700.00 |
-| 20,000.00 | 600.00 | 800.00 | 1,400.00 |
-| 30,000.00 | 900.00 | 1,200.00 | 2,100.00 |
-| 50,000.00 | 1,500.00 | 2,000.00 | 3,500.00 |
-
-*Check each row: 3% + 4% = 7%; e.g. 900.00 + 1,200.00 = 2,100.00. ✓ (Rates: PwC; mozambiqueexpert)*
-
-### IRPS resident brackets 2025/2026 (PwC; DLA Piper)
-
-**IRPS resident brackets 2025/2026**  _(PwC; DLA Piper)_
-
-| Annual taxable income (MZN) | Rate | Parcela a abater (MZN) |
-| --- | --- | --- |
-| 0 -- 42,000 | 10% | 0 |
-| 42,000 -- 168,000 | 15% | 2,100 |
-| 168,000 -- 504,000 | 20% | 10,500 |
-| 504,000 -- 1,512,000 | 25% | 37,500 |
-| Over 1,512,000 | 32% | 141,540 |
-
-- **Non-resident flat withholding** — Non-residents: flat 20% definitive withholding on Mozambique-source income.  _(PwC)_
-
-### IRPS worked tax (parcela a abater method)
-
-**IRPS worked tax table**
-
-| Annual income (MZN) | Computation | IRPS (MZN) |
-| --- | --- | --- |
-| 42,000.00 | 42,000 x 15% - 2,100 | 4,200.00 |
-| 168,000.00 | 168,000 x 20% - 10,500 | 23,100.00 |
-| 300,000.00 | 300,000 x 20% - 10,500 | 49,500.00 |
-| 504,000.00 | 504,000 x 25% - 37,500 | 88,500.00 |
-| 2,000,000.00 | 2,000,000 x 32% - 141,540 | 498,460.00 |
-
-*Checks: 42,000 x 0.15 = 6,300; 6,300 - 2,100 = 4,200.00 ✓ | 168,000 x 0.20 = 33,600; - 10,500 = 23,100.00 ✓ | 300,000 x 0.20 = 60,000; - 10,500 = 49,500.00 ✓ | 504,000 x 0.25 = 126,000; - 37,500 = 88,500.00 ✓ | 2,000,000 x 0.32 = 640,000; - 141,540 = 498,460.00 ✓*
-
-### Minimum wages 2025 by sector (effective 1 July 2025; DLA Piper)
-
-**Minimum wages 2025 by sector**  _(DLA Piper)_
-
-| Sector | 2025 (MZN/month) | Decree |
-| --- | --- | --- |
-| Agriculture, Livestock, Hunting & Forestry | 6,688.00 | 87/2025 |
-| Industrial/Semi-industrial Fishing | 6,726.88 | 88/2025 |
-| Kapenta Fishing | 4,991.09 | 88/2025 |
-| Mining Extraction | 15,176.66 | 89/2025 |
-| Quarries/Sand (Medium) | 8,008.00 | 89/2025 |
-| Salt Mining (Micro/Small) | 6,538.44 | 89/2025 |
-| Manufacturing (excl. Bakery/Cashew) | 10,147.50 | 90/2025 |
-| Bakery | 7,200.00 | 90/2025 |
-| Cashew | 6,653.21 | 90/2025 |
-| Electricity/Gas/Water (Large) | 12,275.00 | 91/2025 |
-| Electricity/Gas/Water (SME) | 9,960.62 | 91/2025 |
-| Construction | 8,400.00 | 92/2025 |
-| Non-financial Services | 10,310.00 | 93/2025 |
-| Hotel/Tourism | 9,700.00 | 93/2025 |
-| Private Security | 8,465.00 | 93/2025 |
-| Fuel Retail | 9,739.00 | 93/2025 |
-| Banks/Insurance | 19,043.61 | 94/2025 |
-| Microfinance/Microinsurance | 16,764.47 | 94/2025 |
-
-A further revision took effect ~1 April 2026 [RESEARCH GAP -- 2026 figures not yet sourced authoritatively].
-
-### Corporate & other taxes (context, PwC)
-
-**Corporate & other taxes**  _(PwC)_
-
-| Tax | Rate |
-| --- | --- |
-| IRPC (corporate income tax) | 32% standard |
-| Non-resident WHT (no PE) | 20% generally; 10% for certain income incl. digital goods/services |
-| Autonomous tax on confidential/undocumented expenses | 35% |
-| VAT (IVA) | 16% standard |
-| Property transfer (SISA) | 2% (10% for privileged-tax-regime beneficiaries) |
-| Inheritance & gifts | 2%--10% |
-| Stamp duty | 0.03%--50%, or fixed MZN 0.50--5,000 |
-| Net wealth tax | None |
-
-### Forms & platforms (PwC)
-
-- **eDeclaração** (https://edeclaracao.at.gov.mz/) -- income-tax and payment returns.
-- **Contribuinte Portal** (https://portaldocontribuinte.at.gov.mz/) -- VAT.
-- **Form 6** -- declaration of commencement of activity.
-- **NUIT** -- Single Tax ID required post-incorporation.
-- INSS electronic platform -- contribution payments.
-
-### Penalties
-
-**Penalties**
-
-| Item | Position |
-| --- | --- |
-| INSS late payment | Monthly interest + administrative fines; exact % not stated [RESEARCH GAP -- reviewer to confirm] (mozambiqueexpert) |
-| IRPS late filing/payment | Secondary estimate ~USD 100 -- USD 33,000 plus interest; exact MZN figures not located [RESEARCH GAP] (PwC) |
-
-### Test suite
-
-**Test 1:** Contribution base MZN 30,000.00. -> Employee 900.00, Employer 1,200.00, Total 2,100.00. *(30,000 x 0.03 = 900; x 0.04 = 1,200; x 0.07 = 2,100 ✓)*
-
-**Test 2:** Gross 25,000.00 incl. 5,000.00 meal subsidy. -> Base 20,000.00; Total INSS 1,400.00. *(20,000 x 0.07 = 1,400 ✓)*
-
-**Test 3:** Resident annual taxable income 300,000.00. -> IRPS 49,500.00. *(300,000 x 0.20 - 10,500 = 49,500 ✓)*
-
-**Test 4:** Resident annual taxable income 504,000.00. -> IRPS 88,500.00. *(504,000 x 0.25 - 37,500 = 88,500 ✓)*
-
-**Test 5:** Resident annual taxable income 2,000,000.00. -> IRPS 498,460.00. *(2,000,000 x 0.32 - 141,540 = 498,460 ✓)*
-
-**Test 6:** Non-resident Mozambique-source fee 100,000.00. -> 20% flat = 20,000.00. *(100,000 x 0.20 = 20,000 ✓)*
-
-**Test 7:** Construction basic wage 8,000.00. -> Below 2025 minimum 8,400.00 (Decree 92/2025). STOP -- minimum-wage breach.
-
-**Test 8:** Foreign employee claims exemption, no confirmed home scheme. -> Apply INSS 7%; exemption is by request only (PwC).
-
-### Prohibitions
-
-- NEVER compute INSS without an itemised pay breakdown -- the base excludes meal subsidies, one-off bonuses and reimbursements.
-- NEVER assume an INSS floor or ceiling exists -- none was found in authoritative sources [RESEARCH GAP].
-- NEVER treat an AT/IRPS debit as INSS, or vice versa -- they are separate obligations with different deadlines.
-- NEVER apply progressive IRPS brackets to a non-resident -- they face a flat 20% definitive withholding.
-- NEVER exclude INSS for a foreign employee without confirmed home-country-scheme exemption.
-- NEVER compute payroll on a wage below the sector minimum -- validate against the 2025 decree table first.
-- NEVER quantify INSS or IRPS penalties from this skill -- exact figures are unconfirmed [RESEARCH GAP]; escalate.
-- NEVER ignore Law 11/2025 residency, digital-income, e-money or capital-gains changes -- flag to reviewer.
-- NEVER present figures as definitive -- label as estimated and direct the client to their INSS statement and the AT.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+```oa-check
+name: Original ordinary 30000 base and 2100 remittance
+inputs:
+  base: 30000
+steps:
+  employee: base * 0.03
+  employer: base * 0.04
+  combined: employee + employer
+expected:
+  employee: 900
+  employer: 1200
+  combined: 2100
+```
+
+### Original meal-component case: two explicitly conditional outcomes
+
+Original input: `08.03.2025 ; SEGURANCA SOCIAL ; DEBITO ; FEV 2025 ; -1,400.00 ; MZN`, gross 25,000 including meal 5,000. A legally established exclusion would leave 20,000, employee 600/employer 800/total 1,400. If the full 25,000 is contributory, employee 750/employer 1,000/total 1,750. The bank amount does not prove exclusion; current component classification remains held. These two arithmetic comparisons are not a unilateral exclusion election.
+
+```oa-check
+name: Original 25000 and 5000 case with base unresolved
+inputs:
+  gross: 25000
+  disputed_component: 5000
+steps:
+  conditional_excluded_base: gross - disputed_component
+  conditional_excluded_total: conditional_excluded_base * 0.07
+  conditional_included_total: gross * 0.07
+  difference: conditional_included_total - conditional_excluded_total
+expected:
+  conditional_excluded_base: 20000
+  conditional_excluded_total: 1400
+  conditional_included_total: 1750
+  difference: 350
+```
+
+### Remaining original cases and regressions retained
+
+- `18.02.2025 ; AUTORIDADE TRIBUTARIA ; DEBITO ; IRPS JANEIRO ; -3,200.00 ; MZN`: investigate tax remittance, not INSS. The description does not prove a correct PAYE amount, timely filing or gross salary; route tax reconciliation separately.
+- `25.02.2025 ; SALARIO JOAO MUCAVELE ; DEBITO ; VENCIMENTO FEV ; -28,100.00 ; MZN`: original name and facts retained. Possible net wage, not an INSS remittance; pay slips must establish deductions, not a narration-only assumption that 3% and PAYE were already correctly withheld.
+- Original resident employee with 'annual taxable income 300,000': the standalone art 54 arithmetic 300,000 x 20% -10,500 =49,500 is retained **only as an annual-table regression**, not annual employment assessment. Actual employment uses payroll's monthly matrix. The additional original assumption of 300,000/12 =25,000 fully contributory monthly pay yields employee 750/month/9,000 year and employer 1,000/month/12,000 year, independently from IRPS. Employee INSS does not reduce the monthly PAYE base.
+- Original non-resident contractor Mozambique-source fee 100,000: if the actual art 57(2) ordinary-services final 20% route is established and no treaty/special rule applies,20,000 withholding. Digital/e-money/artists cases have different conditions; a consultancy label alone does not establish the route.
+- Original construction salary 8,000/month is below the agency 2025 construction minimum 8,400 and current 2026 amount 8,652. Preserve the historical comparison and flag underpayment; do not automatically amend the pay record or declare a lawful contribution base without the assessment facts.
+- Original quick bases 10,000/20,000/30,000/50,000 produce employee 300/600/900/1,500; employer 400/800/1,200/2,000; total 700/1,400/2,100/3,500. These are derived ordinary equal-base arithmetic, not sector/floor compliance.
+- Original annual-table regressions 42,000/168,000/300,000/504,000/2,000,000 give 4,200/23,100/49,500/**90,300**/498,460 before any separately applicable annual minimum or collection deduction. Old 504,000 result 88,500 used the wrong 37,500 constant; correct annual 25% constant 35,700. They are not employment PAYE or a completed annual filing calculation.
+- Original foreign worker with unproved coverage: no final exclusion or exempt-pay calculation; obtain RSSO 4 evidence and actual coverage determination. Original unknown-sector/base and exact-penalty cases remain refusals, with the now-sourced 98 rate distinguished from a certified account bill.
+
+## Ask the client first
+
+Obtain actual worker regime/contract, itemised gross and documentary base, sector/date, residence/source facts for the separate tax job, registration, foreign-scheme proof/authentication, declarations/payment receipts, payroll records, arrears statements/notices and any relief agreement. Do not default every unknown worker to employment, every meal to exclusion, every remittance to full 7%, every foreign worker to exemption, or every unregistered case to the same fine. Outputs remain provisional and require qualified review before filing.
+
+### Original adjacent-tax topics kept as explicit boundaries
+
+Municipal personal tax remains a separate municipality/year determination; the old Maputo 510/year figure is a 2024 historical assertion, not a current payroll deduction. Sector wage values and all eighteen historical/current rows remain in payroll, with actual bank/case facts preserved here.
+
+The original corporate/other-tax context listed IRPC32%, general no-PE withholding 20%/some 10%, confidential expenses 35%, SISA2%/10%, inheritance/gifts 2%-10%, stamp 0.03%-50% or 0.50-5,000 fixed, and 'no net wealth tax'. Those are retained as **unverified adjacent topics, not operative 2026 rules**; obtain their current owning primary instruments before use. This INSS rewrite does not clear those taxes or confuse IRPC with individual IRPS54-A. Historical Form 6, commencement/NUIT and eDeclaracao/Portal do Contribuinte references also require current official form/portal confirmation.
+
+This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for errors, omissions or outcomes arising from its use. A qualified professional must review and sign off every output before filing or relying on it.
+
+## Sources
+
+| Official source | URL | Read on / actual scope |
+|---|---|---|
+| RSSO 2024 republication | https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf | 2026-11-15: contribution/coverage/registration/TCP/interest/refund provisions and relevant neighbours; operative text reused and reviewed 2026-11-17. Not full benefit clearance. |
+| Law 4/2007 | https://www.inss.gov.mz/wp-content/uploads/2024/04/Lei-4-2007-de-7-de-Fevereiro-Lei-da-Proteccao-Social.pdf | 2026-11-15:14-23,28-30 coverage, responsibilities and contribution rules. |
+| INSS contributor guidance | https://www.inss.gov.mz/direitos-e-obrigacoes-do-contribuinte/ | 2026-11-15; reopened/read 2026-11-17:7% split and full operative registration, monthly windows and carry. |
+| INSS TCP guidance | https://www.inss.gov.mz/taxa-contributiva-tcp/ | 2026-11-15; reopened/read 2026-11-17:7% wholly borne by TCP. |
+| TCP DM105/2015 | https://www.inss.gov.mz/wp-content/uploads/2024/04/Diploma-Ministerial-no-105-2015-de-27-de-Novembro-Determina-os-Requisitos-de-Inscricao-dos-TCP.pdf | 2026-11-15:actual instrument registration requirements and explicit 7%cross-reference; original 14/2015 scan not claimed visually cleared. |
+| INSS FAQ | https://www.inss.gov.mz/duvidas/ | 2026-11-15:operative guidance read with obsolete references recorded, including 13 thsalary statement; not a complete current exclusion schedule. |
+| Debt relief 20/2025 | https://www.inss.gov.mz/wp-content/uploads/2025/07/BR_129_I_SERIE_2025.pdf | 2026-11-15:both pages, scope, exclusions, reductions, application, duration and default conditions. |
+| Wage tables | https://www.inss.gov.mz/salarios-minimos-em-vigor/ | 2026-11-15:all 18 current 2026 and 18 historical 2025 amounts; full wage diplomas not read. |
+| CIRPS 2017 | https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf | 2026-11-15; focused text/image recheck 2026-11-17:26/29/54/56/57/59-61/65-A for corrected routed cases. |
+| Law 11/2025 | https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20FISCAL%2FLEI%2FBR_248_I_SERIE_SUPLEMENTO_2025.pdf | 2026-11-15 retained primary reading;2026-11-17 focused gross-matrix, residence, commencement and non-aggregation review. |
+
+Not yet confirmed: original Note 246/2024 and detailed component exclusions, statutory rounding/partial-month/unpaid-leave methods, special conventional bases, full wage-diploma clauses, domestic Decreto 52/2026, precise 93(b) fine mapping/procedure, current portals, individual public/bilateral/detachment/benefit/refund eligibility, current tax penalty and municipal/adjacent-tax figures. The full 2018 IRPS Gazette is a primary document on a private mirror, not cleared as an official-host operational calendar. No failed page is marked read and no historical relief is represented as an automatic current election.

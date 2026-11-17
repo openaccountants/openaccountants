@@ -1,8 +1,9 @@
 name: Publish status.json
 
 # One file the admin control room reads: per jurisdiction, skills, at the 2026 standard,
-# approved, missing tax areas, owner. Published as an asset on the "status" release so the
-# site can read it without a token and without a commit to main every day.
+# approved, missing tax areas, owner. Published to the status-data branch (one commit,
+# overwritten each run) so the site can read it without a token and without a commit to
+# main every day. Releases in this repo are immutable, so a release asset cannot be replaced.
 on:
   schedule:
     - cron: "15 5 * * *"
@@ -13,7 +14,7 @@ on:
 
 concurrency:
   group: status-json
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -30,12 +31,15 @@ jobs:
         run: python3 -m pip install -r scripts/requirements-validation.txt
       - name: Build status.json
         run: python3 scripts/coverage-report.py --json > status.json
-      - name: Upload to the status release
+      - name: Publish to the status-data branch
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if ! gh release view status -R "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            gh release create status -R "$GITHUB_REPOSITORY" --title "Repository status (machine-readable)" \
-              --notes "status.json is rebuilt daily and on every skills change. Not a software release." --latest=false
-          fi
-          gh release upload status status.json -R "$GITHUB_REPOSITORY" --clobber
+          # One commit, no history: the branch holds only today's file.
+          mkdir out && cp status.json out/ && cd out
+          git init -q -b status-data
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            add status.json
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -qm "status.json $(date -u +%F)"
+          git push -q "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" +status-data:status-data
