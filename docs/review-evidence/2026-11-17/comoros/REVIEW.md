@@ -40,6 +40,6 @@ The row helper's retained applicable check covers 14 rows, zero MISS and two UNR
 
 No figure or its linked authority changed in these rows. The unresolved L.4 ter substitution, unavailable official LF2024/LFR2025, e-filing rollout/platform/provider decisions, domicile/departure interpretation and implementing-order gaps remain non-usable holds. The new instalment-base discrepancy is also an explicit non-usable calculation boundary. No source gap is converted into operative advice.
 
-Only the assigned three Guides and this substantive review record belong to this PR. No source archive, workflow change, platform write, professional attestation, merge or ingestion is performed by this record. Root retains the no-merges-during-ingestion gate and delivery control.
+Only the assigned three Guides and this substantive review record belong to this PR. No source archive, workflow change, platform write, accountant approval, merge or ingestion is performed by this record. Root retains the no-merges-during-ingestion gate and delivery control.
 
 Written by Codex. Not reviewed by an accountant.
