@@ -1,10 +1,10 @@
 ---
 name: eg-freelance-intake
 description: ALWAYS USE THIS SKILL when a user asks for help with their Egyptian taxes AND mentions freelancing, self-employment, sole proprietorship, professional practice, or a small business in Egypt. Trigger on phrases like "help me with my Egyptian taxes", "I'm a freelancer in Egypt", "prepare my income tax return", "I have a small business in Cairo", "أنا أعمل لحسابي الخاص" (I am self-employed), "ضريبة الدخل" (income tax), "منشأة صغيرة" (small enterprise), "إقرار ضريبي" (tax return), "أنا فريلانسر" (I'm a freelancer), "نظام الضرائب المبسط" (simplified tax regime), or any similar phrasing where the user is an Egypt-resident self-employed individual. REQUIRED entry point for the Egypt self-employed workflow; downstream skills (eg-income-tax, eg-sme-tax, eg-social-insurance, egypt-vat, eg-return-assembly) depend on it. Egypt-resident self-employed only.
-version: 0.2
+version: 0.3
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-17
 category: orchestrator
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,7 +12,7 @@ domain: income-tax
 type: router
 ---
 
-# EG Freelance Intake v0.2
+# EG Freelance Intake v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -32,7 +32,7 @@ Reply in the language the user writes in: Arabic in, Arabic out. Write English p
 ## Scope
 
 - **In:** an individual who is an Egyptian tax resident for 2026 and carries on a commercial, industrial, craft or professional activity alone: sole traders, freelancers, consultants, designers, doctors, lawyers, software developers.
-- **Out, stop and refer:** non-residents (Income Tax Law 91 of 2005 art. 6 taxes them only on income realised in Egypt; see `eg-income-tax`), and companies of every form (joint-stock شركة مساهمة, limited liability شركة ذات مسؤولية محدودة, partnerships). Companies go to `eg-corporate-tax` and `eg-financial-statements`.
+- **Out, stop and refer:** non-residents (taxed only on income realised in Egypt: see `eg-income-tax`, Law 91 art. 6), and companies of every form (joint-stock شركة مساهمة, limited liability شركة ذات مسؤولية محدودة, partnerships). Companies go to `eg-corporate-tax` and `eg-financial-statements`.
 - **Two parallel income tax tracks** for the self-employed, mutually exclusive for any one year:
   1. **Turnover regime** (نظام الضرائب المبسط), Law 6 of 2025, in force 1 March 2025: tax is a percentage of turnover (حجم الأعمال), with lighter records (art. 13), quarterly VAT returns (art. 12) and examination of returns only after five years from the request (art. 12). Route: `eg-sme-tax`.
   2. **General system** (الضريبة على الدخل), Income Tax Law 91 of 2005 as amended (the band table in force is art. 8 as replaced by Law 7 of 2024): progressive bands on net profit (صافي الربح). It applies to everyone above EGP 20,000,000 and to anyone who has not asked for, or cannot use, the turnover regime. Route: `eg-income-tax`.

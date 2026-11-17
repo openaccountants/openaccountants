@@ -12,18 +12,18 @@ description: >
   "Greek island VAT". Out of scope: e-invoicing and myDATA transmission (greece-einvoice), company
   set-up (gr-company-formation), income tax (gr-income-tax), the country overview (gr-tax-overview),
   cross-border income (gr-cross-border). gr-vat-return points here.
-version: 2.3
+version: 2.4
 type: filing-howto
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-16
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 ---
 
-# Greece VAT (ΦΠΑ), 2026: rates, returns, reverse charge and penalties (v2.1)
+# Greece VAT (ΦΠΑ), 2026: rates, returns, reverse charge and penalties (v2.4)
 
 Tax year: calendar 2026. Authority: AADE (Ανεξάρτητη Αρχή Δημοσίων Εσόδων). Law: the VAT Code (Κώδικας ΦΠΑ) ratified by ν. 5144/2024 (ΦΕΚ Α' 162/11.10.2024), read here in the Ministry of Finance administrative codification current to ν. 5313/2026 (in force to 18.9.2026). The old code, ν. 2859/2000, is repealed (VAT Code art. 71(5)); a reference to it in another law now means the matching article of the new code (art. 71(1)). Fines and interest are in the Tax Procedure Code, ν. 5104/2024 ("TPC"). Article numbers below are VAT Code articles unless marked TPC. Sub-points keep the Greek letters of the law (α, β, γ, δ, ε, στ, ζ, η, θ).
 
@@ -71,7 +71,7 @@ Rounding on islands: the reduced rate is rounded to the nearest whole number, wi
 
 ## Deadlines and filing
 
-- **Tax period (art. 43(1)).** One calendar month for a business on double-entry books. One calendar quarter for a business on single-entry books. AADE may set a different period, not shorter than 1 month or longer than 1 year (art. 43(12)(α)).
+- **Tax period (art. 43(1), modified by [A.1049/2025 arts. 1-3](https://www.aade.gr/sites/default/files/2025-04/a1049_2025fek.pdf)).** Double-entry businesses file monthly. Single-entry books do not by themselves mean quarterly: for taxpayers making taxable supplies or exempt supplies with input deduction under art. 35, starts on or after 1 April 2025 file monthly; starts from 1 January 2024 to 31 March 2025 have filed monthly since 1 July 2025. This mandatory-monthly rule does not apply during the pre-formation activity period. A qualifying monthly business may elect quarterly after at least 24 months have elapsed since its start by the month immediately before the election. Submit by the penultimate working day of January, April, July or October through myAADE, Μητρώο και Επικοινωνία/Αλλαγή στοιχείων μητρώου; it takes effect on that month's first day and is locked for 12 months. A quarterly single-entry business started by 31 December 2023 may instead elect monthly through the same route and quarter-start window, available from 1 October 2025, likewise locked for 12 months. Return elections follow arts. 2(4) and 3(3): record the 24-month start history and the 12-month previous-election history, including both when art. 3(3) requires them. Keep the accepted election and its effective date. AADE's wider power to set a period remains bounded between 1 month and 1 year (art. 43(12)(α)).
 - **Return deadline (art. 43(4)).** The last working day for public services of the month after the period ends. A return is filed for every period, including nil periods, unless the business has declared it is dormant or suspended (art. 43(3)).
 - **Payment (art. 43(6)).** Net VAT over EUR 30 is paid by the same day as the return is due. Up to EUR 30 is carried to the next period. A negative balance is carried forward or refunded under art. 39.
 - **Two instalments (art. 43(6)).** If the tax due is over EUR 100 and the return is on time, the business may pay in two equal interest-free instalments; the second is due by the last working day of the month after the return is filed.
@@ -142,7 +142,7 @@ expected:
 
 ### Example 2: sole trader crosses the EUR 10,000 small business limit in September 2026
 
-A graphic designer in Thessaloniki keeps single-entry books and uses the small business exemption. Her 2025 turnover was EUR 8,000. From 1 January to 19 September 2026 she invoices EUR 9,400. On 20 September 2026 she issues an invoice for EUR 1,500. In Q4 2026 she invoices a further EUR 3,000 and pays EUR 150 of input VAT on supplies. On the day before she left the exemption she held stock on which she had paid EUR 480 of VAT; she files the stock declaration in November 2026.
+A graphic designer in Thessaloniki keeps single-entry books and uses the small business exemption. To make the quarterly timing below valid, assume she started by 31 December 2023 and has not elected monthly under A.1049/2025 art. 3. Her actual start date and election history were not supplied in the original facts; establish them before using these quarterly dates. The amounts below are unchanged period totals, not a statement that every single-entry designer files quarterly. Her 2025 turnover was EUR 8,000. From 1 January to 19 September 2026 she invoices EUR 9,400. On 20 September 2026 she issues an invoice for EUR 1,500. In Q4 2026 she invoices a further EUR 3,000 and pays EUR 150 of input VAT on supplies. On the day before she left the exemption she held stock on which she had paid EUR 480 of VAT; she files the stock declaration in November 2026.
 
 The 20 September invoice takes her to 9,400 + 1,500 = 10,900, which is 900 over the limit. Under art. 44α(3) she enters the normal regime from that invoice, for its whole value, so it carries 1,500 x 24% = 360 of VAT. Her Q3 return shows 360 payable, due by Friday 30 October 2026. In Q4, output is 3,000 x 24% = 720. The stock VAT of 480 is deducted on the return for the quarter in which she filed the stock declaration (art. 44α(7)), so Q4 deducts 480 + 150 = 630, leaving 90 payable by Friday 29 January 2027. Because she exceeded EUR 10,000 in 2026, she cannot use the exemption in 2027 (art. 44δ(1)).
 
@@ -175,7 +175,7 @@ expected:
 
 ## Ask the client first
 
-1. Double-entry or single-entry books? This sets monthly or quarterly returns (art. 43(1)) and the size of most fines.
+1. Double-entry or single-entry books, actual business-start date, any pre-formation period, and accepted VAT-period elections with effective dates? Apply art. 43(1) together with A.1049/2025 arts. 1-3 before selecting monthly or quarterly; books also affect many fines.
 2. Where is the business established, and where are the goods or the services physically supplied? An island on the annex to AADE circular Ε.2113/2025 cuts the rate by 30% (art. 26(4), (4A), (5)).
 3. Turnover in 2025 and 2026 so far, in Greece and across the EU? This decides the small business exemption and the EU SME scheme (arts. 44α, 44β).
 4. Does it buy or sell across borders: EU goods, EU or non-EU services, sales to EU consumers? This brings in the reverse charge, recapitulative statements, Intrastat and OSS.
@@ -186,6 +186,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
+| AADE A.1049/2025, arts. 1-4, read in full for the bounded monthly/cohort/election correction and Example 2 timing assumption; unchanged VAT claims below were not legally reverified in this pass | https://www.aade.gr/sites/default/files/2025-04/a1049_2025fek.pdf | 2026-11-16 |
 | VAT Code (ν. 5144/2024), Ministry of Finance administrative codification to ν. 5313/2026, arts. 2-4, 18, 19, 24, 26, 29, 33, 35-41, 43, 44 to 44ζ, 45, 56-58, 67, 71 and Annex III | https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf | 2026-10-23 |
 | Ministry of Finance page publishing that codification (12.10.2026) | https://minfin.gov.gr/koinopoiisi-dioikitikis-kodikopoiisis-tou-n-5144-2024-gia-ton-kodika-tou-forou-prostithemenis-axias-symfona-me-tin-par-55-tou-arthr-83-tou-n-5104-2024/ | 2026-10-23 |
 | Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025 (to ν. 5259/2025), arts. 52-54 and 57; not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
@@ -196,4 +197,4 @@ expected:
 | AADE, decision Α.1197/2026 (second period moved to 2.11.2026); not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/egkyklioi-kai-apofaseis/1197-30-09-2026 | 2026-10-23 |
 | AADE press release 17.2.2026 (e-invoicing dates and fines); not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/deltia-typoy-anakoinoseis/deltio-typoy-17022026 | 2026-10-23 |
 
-Not yet confirmed: the late payment interest rate (set outside the TPC); the fine for a late OSS return where Greece is the member state of consumption (TPC art. 53(3) was repealed from 19.4.2024 by ν. 5301/2026 art. 37(11), and no replacement was found); any amendment to TPC arts. 52-58 after ν. 5301/2026; the deadline and form for recapitulative statements and the AADE decision on how periodic returns are filed; the domestic refund procedure and timing for a Greek business with a credit balance; the capital goods adjustment periods in art. 38.
+Not yet confirmed: Example 2’s actual business-start and VAT-period election history (its quarterly dates require the explicit older-business assumption above); the late payment interest rate (set outside the TPC); the fine for a late OSS return where Greece is the member state of consumption (TPC art. 53(3) was repealed from 19.4.2024 by ν. 5301/2026 art. 37(11), and no replacement was found); any amendment to TPC arts. 52-58 after ν. 5301/2026; the deadline and form for recapitulative statements and the AADE decision on how periodic returns are filed; the domestic refund procedure and timing for a Greek business with a credit balance; the capital goods adjustment periods in art. 38.

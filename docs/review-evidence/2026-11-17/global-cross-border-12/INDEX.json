@@ -1,0 +1,873 @@
+{
+  "bundle": {
+    "filename": "evidence.tar.gz",
+    "members": 136,
+    "sha256": "4544e6d8913aa0a02d79a18cbdb200f97cd35ad4cecff418d89521c10246033b"
+  },
+  "cohort_size": 12,
+  "content_head": "c6b27d8c31f5c7cc840ac9a7ff970cd587d80e91",
+  "format": 1,
+  "guides": [
+    {
+      "artifacts": [
+        {
+          "canonical_private_sha256": "acfa0f4be82831204ae7acf6262ca072c2c4e834e0c6f95fcf70c34c4cb07520",
+          "path": "cross-border-payroll-coordination/ledger.json",
+          "projection": true,
+          "role": "ledger",
+          "sha256": "986ae6e96f612c3dae9a45b9a3c041bcd7c27f6158d14aa084ef52bfb7673ff1"
+        },
+        {
+          "canonical_private_sha256": "2180c5d0d3d56b7a5d5c9c5e4af0b7ef192e6744d47780dfc3742a9ec18c7174",
+          "path": "cross-border-payroll-coordination/source-register.json",
+          "projection": true,
+          "role": "source_register",
+          "sha256": "fae3a7ab46a490d32d0d9aa57d1787b533edca97365b26936272e3c74548ba9e"
+        },
+        {
+          "canonical_private_sha256": "205b911d824f072d58a4cccfcf02bf08699220ad50e13ea55d8a8a9247cb9e4c",
+          "path": "cross-border-payroll-coordination/old-topic-map.json",
+          "projection": true,
+          "role": "old_topic_map",
+          "sha256": "77d083884e1e40f791590789e95824ad95d063304fb71ba89f8bff41d70f560b"
+        },
+        {
+          "path": "ledgers/cross-border-payroll-coordination.md",
+          "projection": true,
+          "role": "human_ledger_projection",
+          "sha256": "76c7182044a0a48867b365875b389036428931c92e167b0c87e9fb310b7b27fe"
+        },
+        {
+          "byte_exact": true,
+          "path": "cross-border-payroll-coordination/canonical-writer-manifest.json",
+          "role": "writer_manifest",
+          "sha256": "84f6b36d2864668dd0a84c406e7b698397ee3da4b610f108168d60ddf25fc033"
+        },
+        {
+          "byte_exact": true,
+          "path": "cross-border-payroll-coordination/checks/checks.json",
+          "role": "canonical_check_record",
+          "sha256": "7530e5fab5fb3c9e8362559077e5b01d28a80dad91e654d090153376cd678410"
+        },
+        {
+          "byte_exact": true,
+          "path": "cross-border-payroll-coordination/checks/row-source-check.json",
+          "role": "canonical_check_record",
+          "sha256": "755919e2d9b7556b3b8e9a66cc51524f0228cbe9f1524eecc82a35d06504878d"
+        },
+        {
+          "byte_exact": true,
+          "path": "cross-border-payroll-coordination/reviews/01-COMPLETE-FIRST-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "f3de85f23e27b44f380e8a57ea3df61ec63c44450205e28254f9c57cf9572053"
+        },
+        {
+          "byte_exact": true,
+          "path": "cross-border-payroll-coordination/reviews/02-FINAL-INDEPENDENT-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "f2670a76f6d4959b30b72e948f01acb5ae8a1533a2b2a07b08c2a45eec0ee900"
+        }
+      ],
+      "expected_guide_sha256": "173c4aac1c7f1a8af6f7e88a7a82548c7ea407eac94b699caffa20c917e7bb45",
+      "guide": "skills/global/cross-border/cross-border-payroll-coordination.md",
+      "independent_pass": true,
+      "slug": "cross-border-payroll-coordination"
+    },
+    {
+      "artifacts": [
+        {
+          "canonical_private_sha256": "d5314807d7e1f2f74eaab5fa28620a7a4b6e313ccdc58447e46916eeb9e7518c",
+          "path": "dac6-mdr-reportable-arrangements/ledger.json",
+          "projection": true,
+          "role": "ledger",
+          "sha256": "7d4fb738216ec9c0a1605e84eda2c4c787ececcae0c684f02c6abf3452103345"
+        },
+        {
+          "canonical_private_sha256": "b361db844849e5e6778cc62466eda4845812a6240079074e79c38c0649a236b1",
+          "path": "dac6-mdr-reportable-arrangements/source-register.json",
+          "projection": true,
+          "role": "source_register",
+          "sha256": "fe0ab01dc2ef84828a50811274c9d105ae94142bc345b79e5ea7916d3ab1ae9e"
+        },
+        {
+          "canonical_private_sha256": "60a8771cff5c8027847634e81ad568d8c7d39e5d12c3983148c7e91a79b202b2",
+          "path": "dac6-mdr-reportable-arrangements/old-topic-map.json",
+          "projection": true,
+          "role": "old_topic_map",
+          "sha256": "8d00c65d5eedd90e6e323bdeaadf7d75d8c0913b145bae3eb8c05e73b4d8ec1d"
+        },
+        {
+          "path": "ledgers/dac6-mdr-reportable-arrangements.md",
+          "projection": true,
+          "role": "human_ledger_projection",
+          "sha256": "08d22ffd107986ec1ef5239814064c7300dbdbdecfaa5632307c8327bd92c56f"
+        },
+        {
+          "byte_exact": true,
+          "path": "dac6-mdr-reportable-arrangements/canonical-writer-manifest.json",
+          "role": "writer_manifest",
+          "sha256": "ce70622df5992bd82bd73cdf864be0135483cfe28e477dc4dfa38b6f79601592"
+        },
+        {
+          "byte_exact": true,
+          "path": "dac6-mdr-reportable-arrangements/checks/checks.json",
+          "role": "canonical_check_record",
+          "sha256": "394aa99dd7f03a63086ec4fd267cad0e15d322cb6a9808a3eca869ad9b6d9c7b"
+        },
+        {
+          "byte_exact": true,
+          "path": "dac6-mdr-reportable-arrangements/checks/delta.json",
+          "role": "canonical_check_record",
+          "sha256": "ba5e6cd57a5d124adfdbbb4849219b069ff1cc426a51d52a18674ef5afc5a88f"
+        },
+        {
+          "byte_exact": true,
+          "path": "dac6-mdr-reportable-arrangements/reviews/01-FIRST-INDEPENDENT-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "8526e2e6fcf7e4fa2aff9110b4b9134b2ffaa5b87117c5ba8f0322dbfc507247"
+        },
+        {
+          "byte_exact": true,
+          "path": "dac6-mdr-reportable-arrangements/reviews/02-FINAL-INDEPENDENT-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "fb99d01e4950d7baef944828a7e681ed14a2995826096926e4e1665c8fcba79e"
+        },
+        {
+          "byte_exact": true,
+          "path": "dac6-mdr-reportable-arrangements/reviews/03-INDEPENDENT-DELTA-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "8406a666bbb9a8e781c57e14526b45f73bc8e4d824f0a016e290a7838c513e32"
+        }
+      ],
+      "expected_guide_sha256": "06217caabbf99d50a957df269c9b7568648241fcb3452bc5d17ab47381b3716e",
+      "guide": "skills/global/cross-border/dac6-mdr-reportable-arrangements.md",
+      "independent_pass": true,
+      "slug": "dac6-mdr-reportable-arrangements"
+    },
+    {
+      "artifacts": [
+        {
+          "canonical_private_sha256": "18b0265c07d7f55d79f82fd1915b2d4b48331263b982d9384c023c417502439f",
+          "path": "exit-taxes-when-a-family-moves/ledger.json",
+          "projection": true,
+          "role": "ledger",
+          "sha256": "493ce43fb45442f9cc9c94b1b4de757053aa34e421e2aedf3e978010436cdade"
+        },
+        {
+          "canonical_private_sha256": "e6bf7d92882d8d58d6c7895fb702b45c92e3dde765f45ab3f757038a170bc381",
+          "path": "exit-taxes-when-a-family-moves/source-register.json",
+          "projection": true,
+          "role": "source_register",
+          "sha256": "01b4b8215a5d5ac85142c182ed6c6a2a7bc1950fe18b3c8c23d447e438ae2c8a"
+        },
+        {
+          "canonical_private_sha256": "d2e7361ba47d2d7016b08ab4f633fc11e7157b2fb093c90ce32abbfbd530763d",
+          "path": "exit-taxes-when-a-family-moves/old-topic-map.json",
+          "projection": true,
+          "role": "old_topic_map",
+          "sha256": "b86a98f944e701bc0bf68d8ec1f44ab825d841e21e98add70f17b13e9c2a2812"
+        },
+        {
+          "path": "ledgers/exit-taxes-when-a-family-moves.md",
+          "projection": true,
+          "role": "human_ledger_projection",
+          "sha256": "e7cfa4f72bfd7bee0634edbca6f16c9497b3ac66c82c59c1ddcc5e50112b7cbd"
+        },
+        {
+          "byte_exact": true,
+          "path": "exit-taxes-when-a-family-moves/canonical-writer-manifest.json",
+          "role": "writer_manifest",
+          "sha256": "fb7fb230efbdf5f9c57f401169b3aa2572843f3917916781cc757043229496e9"
+        },
+        {
+          "byte_exact": true,
+          "path": "exit-taxes-when-a-family-moves/checks/source-check-exceptions.json",
+          "role": "canonical_check_record",
+          "sha256": "58a1b86a52686944f3cc83547fe1d96aef649947963b70046def5af8562b7cc5"
+        },
+        {
+          "byte_exact": true,
+          "path": "exit-taxes-when-a-family-moves/checks/figure-row-bindings.json",
+          "role": "canonical_check_record",
+          "sha256": "a15ea5cdbf68b5a1cf7846b2c01874148f78151247f4478ef6c119b57902b14e"
+        },
+        {
+          "byte_exact": true,
+          "path": "exit-taxes-when-a-family-moves/reviews/01-FINAL-INDEPENDENT-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "fdd5d5086c9a2a5c6aee00e0b7ccaa23a511bf54c55b10d1c1812705d709af61"
+        },
+        {
+          "byte_exact": true,
+          "path": "exit-taxes-when-a-family-moves/reviews/02-FIRST-INDEPENDENT-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "8eb8e7c97ca7d3a1e7aa50480cf6b9f21479e4a8241866257e2bf7484ad53319"
+        }
+      ],
+      "expected_guide_sha256": "7715fda063d5d0c15cb53685c4c53ecf75c3724527803555903f55d84c51caa0",
+      "guide": "skills/global/cross-border/exit-taxes-when-a-family-moves.md",
+      "independent_pass": true,
+      "slug": "exit-taxes-when-a-family-moves"
+    },
+    {
+      "artifacts": [
+        {
+          "canonical_private_sha256": "ef3689f32893d326339fc69eb23bc5339e11ad7dc815f5c904822f6979899192",
+          "path": "family-holding-company-location-compared/ledger.json",
+          "projection": true,
+          "role": "ledger",
+          "sha256": "03a33a50a4de9e53dffd50e14239249ac1c51ab00ca7020fd3e38d957a87f0dd"
+        },
+        {
+          "canonical_private_sha256": "b5e5591d7e422fd714af5718c5f55c820b12b8fd52b1a48acaf4ed439614bd5c",
+          "path": "family-holding-company-location-compared/source-register.json",
+          "projection": true,
+          "role": "source_register",
+          "sha256": "2896cd55e48831b511c52bb8803bdc6452b246d96ac8d7ed61951b316902fae6"
+        },
+        {
+          "canonical_private_sha256": "ef3a8daf323b948514c897e258fd420aee5fd3c5fcd223c221b4ef6c6e84fc37",
+          "path": "family-holding-company-location-compared/old-topic-map.json",
+          "projection": true,
+          "role": "old_topic_map",
+          "sha256": "89f032a1b4a5a39626f1f911cc5f65afff1943ad02b73740feb255c764bd45f2"
+        },
+        {
+          "path": "ledgers/family-holding-company-location-compared.md",
+          "projection": true,
+          "role": "human_ledger_projection",
+          "sha256": "a95c6ac18fd7f2f1607912d3a6b631d97305516eea66ff3db7dd31c4642ecc71"
+        },
+        {
+          "byte_exact": true,
+          "path": "family-holding-company-location-compared/canonical-writer-manifest.json",
+          "role": "writer_manifest",
+          "sha256": "e538cb8501cc20481fadc1fdb7084adb5b2eba1321e4f6874eb7dfc4c2e78716"
+        },
+        {
+          "byte_exact": true,
+          "path": "family-holding-company-location-compared/checks/writer-independent-arithmetic.json",
+          "role": "canonical_check_record",
+          "sha256": "a5e3a3729f5272358dcb81c550cd6ee8950ba7d0d979b7837242331ecf662767"
+        },
+        {
+          "byte_exact": true,
+          "path": "family-holding-company-location-compared/checks/checks-proof.json",
+          "role": "canonical_check_record",
+          "sha256": "e292866f91ee69d61d26fecf7cdd1c7332aee41c729615cff4397046ac054c8e"
+        },
+        {
+          "byte_exact": true,
+          "path": "family-holding-company-location-compared/reviews/01-COMPLETE-FIRST-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "5d05efa010cda25a07a32614edcfd211e82ba3fd51ec6c870162f1af5adb6a9c"
+        },
+        {
+          "byte_exact": true,
+          "path": "family-holding-company-location-compared/reviews/02-FINAL-INDEPENDENT-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "1c506fd231d5e70abd60f729b50de8db89aaf3fb7a11441561aa1ed5f1c017d2"
+        }
+      ],
+      "expected_guide_sha256": "34ea8aee420be18b6d8487414adda5fe42b77818fbeb7c72338ba400b0b24049",
+      "guide": "skills/global/cross-border/family-holding-company-location-compared.md",
+      "independent_pass": true,
+      "slug": "family-holding-company-location-compared"
+    },
+    {
+      "artifacts": [
+        {
+          "canonical_private_sha256": "ab3943cceab6db8462dabfbbb6e80014207e144d1e40dfa2d67c62079b3a5ec7",
+          "path": "family-office-residency-regimes-compared/ledger.json",
+          "projection": true,
+          "role": "ledger",
+          "sha256": "cc35187767f798056232747973554e6b5466a430a7a14d0c1a88c8d42e24c539"
+        },
+        {
+          "canonical_private_sha256": "692c516895312d3ab47664fed70e0c459d85a90df0c2efa29b686aff897bac2f",
+          "path": "family-office-residency-regimes-compared/source-register.json",
+          "projection": true,
+          "role": "source_register",
+          "sha256": "bd728c4f7c82ac1fff77ab7b0818adea5e4cee19a563c5065cad436e301896b4"
+        },
+        {
+          "canonical_private_sha256": "36ba5f27ec4d99fc42cbd6af82ee264f904efc159210dffea4f6adc5b832384b",
+          "path": "family-office-residency-regimes-compared/old-topic-map.json",
+          "projection": true,
+          "role": "old_topic_map",
+          "sha256": "ef98741881bea25ba97210b98cf0055ee8dbfdb834911450ab334e5e0e08daf1"
+        },
+        {
+          "path": "ledgers/family-office-residency-regimes-compared.md",
+          "projection": true,
+          "role": "human_ledger_projection",
+          "sha256": "8ded4089b3dfa2e97ae2199339b369d43323f97cd9c3f824c2fc1a912fb10466"
+        },
+        {
+          "byte_exact": true,
+          "path": "family-office-residency-regimes-compared/canonical-writer-manifest.json",
+          "role": "writer_manifest",
+          "sha256": "1f2b0dd9c3f479c7e1da45d963a77e25294e137309ec324c9fc1dad0ccd2244a"
+        },
+        {
+          "byte_exact": true,
+          "path": "family-office-residency-regimes-compared/checks/source-check-exceptions.json",
+          "role": "canonical_check_record",
+          "sha256": "af8bf2fce118924d08a6a8fac5c7a2cbb82cd829444d5b0165cf1a01263d0e6b"
+        },
+        {
+          "byte_exact": true,
+          "path": "family-office-residency-regimes-compared/checks/figure-row-bindings.json",
+          "role": "canonical_check_record",
+          "sha256": "0c34f68916f2705f306d4cd24e71fbf9603c8b1c699db91a41966bab62d00a26"
+        },
+        {
+          "byte_exact": true,
+          "path": "family-office-residency-regimes-compared/reviews/01-COMPLETE-FIRST-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "59ad365a77e615eb07933ecb81b16e90b6266bf5ddac32dd07541497eb668f41"
+        },
+        {
+          "byte_exact": true,
+          "path": "family-office-residency-regimes-compared/reviews/02-FINAL-INDEPENDENT-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "a8c754cd8ff72f90d6d9c28fff92d3cad3a23ee37ff6dc30a7e661b6ad388118"
+        }
+      ],
+      "expected_guide_sha256": "4142b8cb7677053d271c20e80336494326da1dc5766ee1ec94e30df78af3af9f",
+      "guide": "skills/global/cross-border/family-office-residency-regimes-compared.md",
+      "independent_pass": true,
+      "slug": "family-office-residency-regimes-compared"
+    },
+    {
+      "artifacts": [
+        {
+          "canonical_private_sha256": "c16fc3a1d0895d044b409e96d24469ba35dbee2defd9490767b0c66a51f36dab",
+          "path": "fatca-crs-automatic-exchange/ledger.json",
+          "projection": true,
+          "role": "ledger",
+          "sha256": "06afac51ee8302c71fb0995f51e2e090fed70e2af43ac95cc2ae1594e73c36ed"
+        },
+        {
+          "canonical_private_sha256": "7ef2f7364359358ec73a9b9b8d5385886d030d12e489d1f06cee907893834249",
+          "path": "fatca-crs-automatic-exchange/source-register.json",
+          "projection": true,
+          "role": "source_register",
+          "sha256": "3f9a5a7c8d941d3f70d75961b207a3c8f99a9b81fa2c62e2f2a6ccf2ad6b194b"
+        },
+        {
+          "canonical_private_sha256": "97240512c2e71358ca4b4cb8e977144627411ea4c32c2128f45b493ad7a0826c",
+          "path": "fatca-crs-automatic-exchange/old-topic-map.json",
+          "projection": true,
+          "role": "old_topic_map",
+          "sha256": "49b46e33834faa9e9356a2b1eb8bb4cde436db07ce50d7543da81443cbd3d533"
+        },
+        {
+          "path": "ledgers/fatca-crs-automatic-exchange.md",
+          "projection": true,
+          "role": "human_ledger_projection",
+          "sha256": "846959cc2e38900fdc3b8be557d00c9dd71b5cb9c9de18cffc9f6023c306d241"
+        },
+        {
+          "byte_exact": true,
+          "path": "fatca-crs-automatic-exchange/canonical-writer-manifest.json",
+          "role": "writer_manifest",
+          "sha256": "67a1bade862e290c0ce97b344ab1582bd0c5b14663fdf6c7a4a665e2e247e309"
+        },
+        {
+          "byte_exact": true,
+          "path": "fatca-crs-automatic-exchange/checks/checks.json",
+          "role": "canonical_check_record",
+          "sha256": "6310cc93e052205c47fb607824358c9157dff0bae1cadf0a5c2f7bbca8afb82f"
+        },
+        {
+          "byte_exact": true,
+          "path": "fatca-crs-automatic-exchange/checks/row-source-check.json",
+          "role": "canonical_check_record",
+          "sha256": "d0197620ac14244fd049e1293378e1975eed0ae654ae2f5e81d17aeee3ec856a"
+        },
+        {
+          "byte_exact": true,
+          "path": "fatca-crs-automatic-exchange/checks/correction-row-source-check.json",
+          "role": "canonical_check_record",
+          "sha256": "eea7eeec4ccf628c3b616401c600196069c53fc6446c8e24ce8394d9c1e1bfed"
+        },
+        {
+          "byte_exact": true,
+          "path": "fatca-crs-automatic-exchange/reviews/01-COMPLETE-FIRST-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "3e483f51c68c5966c254a10d2ac24e6c4505c953b92933bfb671598d85ddb5e3"
+        },
+        {
+          "byte_exact": true,
+          "path": "fatca-crs-automatic-exchange/reviews/02-FINAL-INDEPENDENT-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "9bfd1f3a5d48f1e16c8b2b27fc5ba57977eb8af3cab85f55c49d2d31595fb76a"
+        }
+      ],
+      "expected_guide_sha256": "282d0195ac8d1b7a47e2e17e8c9522b8bff09bb97480fb42eaf6095bd4416e94",
+      "guide": "skills/global/cross-border/fatca-crs-automatic-exchange.md",
+      "independent_pass": true,
+      "slug": "fatca-crs-automatic-exchange"
+    },
+    {
+      "artifacts": [
+        {
+          "canonical_private_sha256": "1e629beed892227c031083bd797ab7c9d5e0c28cb590cd998b1f31f4f1b7aea7",
+          "path": "forex-controls/ledger.json",
+          "projection": true,
+          "role": "ledger",
+          "sha256": "764f4de5a10e36d870a9f5ac7dd100d470d5d4a314033c56893e9865f5814430"
+        },
+        {
+          "canonical_private_sha256": "81d93ca66fa539b3d55d64d1cb919dee41009bab0c67d5fa38d64e6cf04f4e8d",
+          "path": "forex-controls/source-register.json",
+          "projection": true,
+          "role": "source_register",
+          "sha256": "4174deb121b4970d073eaa45054e684e49a357dc93e827f890668bdd9a652f8b"
+        },
+        {
+          "canonical_private_sha256": "2aee932196db98ef0349059dbb413306c073139eb3676ea2b34ba2864cfce570",
+          "path": "forex-controls/old-topic-map.json",
+          "projection": true,
+          "role": "old_topic_map",
+          "sha256": "2831671c84580fca7d5b958533c116a0f50cfcf2055da4e9d096446d3529827f"
+        },
+        {
+          "path": "ledgers/forex-controls.md",
+          "projection": true,
+          "role": "human_ledger_projection",
+          "sha256": "a69628d358b1578f1c15972329084f2376005dba96dc75b7467589e5cd7dd3a1"
+        },
+        {
+          "byte_exact": true,
+          "path": "forex-controls/canonical-writer-manifest.json",
+          "role": "writer_manifest",
+          "sha256": "942f8050ca7eab90198a38faf099fb6bee725096313b63059b56f1382cc94803"
+        },
+        {
+          "byte_exact": true,
+          "path": "forex-controls/checks/checks.json",
+          "role": "canonical_check_record",
+          "sha256": "ba2cc959892737be7570b8fec2c1acfdb2b2f333cd9ed7b9f041bde3ee8f2805"
+        },
+        {
+          "byte_exact": true,
+          "path": "forex-controls/checks/FINITE-DELTA-CHECKS.json",
+          "role": "canonical_check_record",
+          "sha256": "5efb086a42232982e3d6d328331edbefdb23dca5dd72b450bb71a38b5cf3eab4"
+        },
+        {
+          "byte_exact": true,
+          "path": "forex-controls/checks/row-source-check.json",
+          "role": "canonical_check_record",
+          "sha256": "d1c1f4f6d15b623e8f2cbf9a67b6318eef61852c737faa225a936fdd6ca3e3d4"
+        },
+        {
+          "byte_exact": true,
+          "path": "forex-controls/checks/row-source-native-unit-resolution.json",
+          "role": "canonical_check_record",
+          "sha256": "30e095b5bcb114b78dbef8cd81967e8e11f9000b93892e5d697e31a6df27ed93"
+        },
+        {
+          "byte_exact": true,
+          "path": "forex-controls/reviews/01-COMPLETE-FIRST-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "464023fe75f6144cc4e2d3fd5635415d364e219ca5a5161f4d6c7f085d69c60b"
+        },
+        {
+          "byte_exact": true,
+          "path": "forex-controls/reviews/02-FINAL-INDEPENDENT-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "ca2003298abd0402687f4b97ec66a46f339258d771c0d054ebf23ca850546482"
+        }
+      ],
+      "expected_guide_sha256": "6e25af726f20c43e098756000d02e7f2626a452737cd5e13e3adc2570be52689",
+      "guide": "skills/global/cross-border/forex-controls.md",
+      "independent_pass": true,
+      "slug": "forex-controls"
+    },
+    {
+      "artifacts": [
+        {
+          "canonical_private_sha256": "abaab9daef8b62cbf0e255b63cbaf76b6109dbc505068fecbb8128aff591a71b",
+          "path": "free-zones-sez-matrix/ledger.json",
+          "projection": true,
+          "role": "ledger",
+          "sha256": "9c36cf0d09053bac11dbf23b8ff733416beb595b9ac860846f4720fbcfea0036"
+        },
+        {
+          "canonical_private_sha256": "29264173bd4809faa99feeb1ba12d95ae4e495199f57e8a97889d0f66957c8de",
+          "path": "free-zones-sez-matrix/source-register.json",
+          "projection": true,
+          "role": "source_register",
+          "sha256": "af6b3881fbc83ed750033f1b5520c391620e1b365378c2cd661c9a770902a924"
+        },
+        {
+          "canonical_private_sha256": "1d0697b109608ea7152fabaad0430332545ed1c1bb4650059f8e6580b2800f42",
+          "path": "free-zones-sez-matrix/old-topic-map.json",
+          "projection": true,
+          "role": "old_topic_map",
+          "sha256": "6cfdf98e79f64dfd6728212d2b8b9741eb7822b9f381b8d3e1384ce90d635c1a"
+        },
+        {
+          "path": "ledgers/free-zones-sez-matrix.md",
+          "projection": true,
+          "role": "human_ledger_projection",
+          "sha256": "97a7defee4904639faacb9d0d8e2bd250f5b83c99c23b309ec46b6840ab5578e"
+        },
+        {
+          "byte_exact": true,
+          "path": "free-zones-sez-matrix/canonical-writer-manifest.json",
+          "role": "writer_manifest",
+          "sha256": "03113775baf169b80d5d6c88d77a01ad68529e00616bdce06f55d04c2ffb7b5e"
+        },
+        {
+          "byte_exact": true,
+          "path": "free-zones-sez-matrix/checks/review-delta-checks.json",
+          "role": "canonical_check_record",
+          "sha256": "5e5734be07c176776da630ce3db40157a1f25345dab616677936b0e8ca2be9bf"
+        },
+        {
+          "byte_exact": true,
+          "path": "free-zones-sez-matrix/checks/writer-check-results-captured.json",
+          "role": "canonical_check_record",
+          "sha256": "0cb33e95328c6d8a72a9dcdcb04c5655305e1fe3177cbe419e863ec0b161a1e7"
+        },
+        {
+          "byte_exact": true,
+          "path": "free-zones-sez-matrix/checks/helper-manual-dispositions.json",
+          "role": "canonical_check_record",
+          "sha256": "823bb3f810381f2f2c30b67a7c814fc2c0094e7e8a77ebe9a08a4d64d95ed244"
+        },
+        {
+          "byte_exact": true,
+          "path": "free-zones-sez-matrix/reviews/01-COMPLETE-FIRST-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "5e569c378291f06cbc398fab7c505bdd44d5b36c256e2c2405413a39c12f27bf"
+        },
+        {
+          "byte_exact": true,
+          "path": "free-zones-sez-matrix/reviews/02-FINAL-INDEPENDENT-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "98765c770dc44fc868f60b8dce111fb62441ff83132b9146c392c59ce51a3b07"
+        },
+        {
+          "byte_exact": true,
+          "path": "free-zones-sez-matrix/reviews/03-REPORT.md",
+          "role": "independent_review",
+          "sha256": "53a457872ab962520635ed323a09fa14f3601373fdd671bdbff89cd1a4f08ac1"
+        }
+      ],
+      "expected_guide_sha256": "4504bb31c8c1e56c58d5c3c0652b1d01b89aa1fb103b17965df0e38c3a066f14",
+      "guide": "skills/global/cross-border/free-zones-sez-matrix.md",
+      "independent_pass": true,
+      "slug": "free-zones-sez-matrix"
+    },
+    {
+      "artifacts": [
+        {
+          "canonical_private_sha256": "a4997f46183f56579e342662e78b57ac35955a01671c665c26314b74ac5bb959",
+          "path": "non-eu-export-services/ledger.json",
+          "projection": true,
+          "role": "ledger",
+          "sha256": "306b4ec618808411737dedd012f647a8a4aa1afa8a62b9615b0a080de4aefeed"
+        },
+        {
+          "canonical_private_sha256": "6660eb3d3c4e772a8de39e4595047c15aff10facc48ddf6cb86c9c70b74c3f49",
+          "path": "non-eu-export-services/old-topic-map.json",
+          "projection": true,
+          "role": "old_topic_map",
+          "sha256": "1057cfb2af89459f36acfb51a2d014cd0fc4f9a21ddcf12584e6d8c9b4917f37"
+        },
+        {
+          "path": "ledgers/non-eu-export-services.md",
+          "projection": true,
+          "role": "human_ledger_projection",
+          "sha256": "09e08085f92a2f36ddfa79a4c7a68f5d7d3261ff3ea0786fbb8d766eda7b1291"
+        },
+        {
+          "byte_exact": true,
+          "path": "non-eu-export-services/canonical-writer-manifest.json",
+          "role": "writer_manifest",
+          "sha256": "03ff6a93b94d7e5bc652b817330969396f16c7ab952b7c3bc0a87447b887a4a9"
+        },
+        {
+          "byte_exact": true,
+          "path": "non-eu-export-services/checks/checks.json",
+          "role": "canonical_check_record",
+          "sha256": "2bce41dee310364ae713540c7bb7ae6f4d2cc5449f3c47fdfec1348094cffe12"
+        },
+        {
+          "byte_exact": true,
+          "path": "non-eu-export-services/reviews/01-FINAL-INDEPENDENT-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "86f9baeb805d159da977eae3b086b9600d172aa61578370df1a41932b10d7e24"
+        },
+        {
+          "byte_exact": true,
+          "path": "non-eu-export-services/reviews/02-REPORT.md",
+          "role": "independent_review",
+          "sha256": "6f2aa3164f334ba4b77b42f937b43c7d47babad2b0082a4443d07f74ccbb7802"
+        },
+        {
+          "byte_exact": true,
+          "path": "non-eu-export-services/reviews/03-final-d011ef35-review.md",
+          "role": "independent_review",
+          "sha256": "76a1ddd84d5f7b713d1aa9c6dc044693ac4806f72f47eba5b2b644332c61eb7d"
+        }
+      ],
+      "expected_guide_sha256": "c9131df236195cd73534f926582cf25e3f21d6dbdd70d0b2c2357697745351aa",
+      "guide": "skills/global/cross-border/non-eu-export-services.md",
+      "independent_pass": true,
+      "slug": "non-eu-export-services"
+    },
+    {
+      "artifacts": [
+        {
+          "canonical_private_sha256": "735fd6bd7ffea5cbef752b4bf116d60f3a4ac0b6a1dd65a0d2ecf06e1bad2d5a",
+          "path": "pillar-two-globe-minimum-tax/ledger.json",
+          "projection": true,
+          "role": "ledger",
+          "sha256": "abe5a2a0869fcdd720e1205e229946c8fa4be611356a6903d9c94180895da60f"
+        },
+        {
+          "canonical_private_sha256": "33436ce122aebaf1d754dc41894b1568858267ac70475bf9e660dd713ed977f3",
+          "path": "pillar-two-globe-minimum-tax/source-register.json",
+          "projection": true,
+          "role": "source_register",
+          "sha256": "cfc8497d52d0f1f83e11e4914462d59242518509bc5c202873d87c18e7af938a"
+        },
+        {
+          "canonical_private_sha256": "1dd97aafd00f7691a8c0c9975a2195585ddaaaa0c298920177408f8a94dba750",
+          "path": "pillar-two-globe-minimum-tax/old-topic-map.json",
+          "projection": true,
+          "role": "old_topic_map",
+          "sha256": "8a46f6f262caac805e4528832a46520a09a4ff2a7b835283086a34ca75563fd7"
+        },
+        {
+          "path": "ledgers/pillar-two-globe-minimum-tax.md",
+          "projection": true,
+          "role": "human_ledger_projection",
+          "sha256": "5f2dae63a7910d71a4a8426a45ecd4d9896739773a77ec4ff2099fc69dcbd3d3"
+        },
+        {
+          "byte_exact": true,
+          "path": "pillar-two-globe-minimum-tax/canonical-writer-manifest.json",
+          "role": "writer_manifest",
+          "sha256": "4b8c28bbb8f9f8fa7c24c106ea1661fbb942dd146b2ec5c9ef3157366beb23d3"
+        },
+        {
+          "byte_exact": true,
+          "path": "pillar-two-globe-minimum-tax/checks/checks.json",
+          "role": "canonical_check_record",
+          "sha256": "a86ad4c4ceff5bf685263806a315f9da187fce07d93f7f31e3f6dd202761bdcd"
+        },
+        {
+          "byte_exact": true,
+          "path": "pillar-two-globe-minimum-tax/checks/mechanical-delta.json",
+          "role": "canonical_check_record",
+          "sha256": "9e31e735f37d8f70c398378f54149c13fa0989ca7350cf428e260a1f5550b33d"
+        },
+        {
+          "byte_exact": true,
+          "path": "pillar-two-globe-minimum-tax/checks/delta.json",
+          "role": "canonical_check_record",
+          "sha256": "3c2edf8cbc7d9684d3ef77b0c888381b44be454224e8436cc75f0b32c6209804"
+        },
+        {
+          "byte_exact": true,
+          "path": "pillar-two-globe-minimum-tax/checks/DELTA-FINAL-MANIFEST.json",
+          "role": "canonical_check_record",
+          "sha256": "106f0eb551b6bffb1322bc5224071796b8b3d22cb96a657c855d11ea5b9309b1"
+        },
+        {
+          "byte_exact": true,
+          "path": "pillar-two-globe-minimum-tax/checks/MANIFEST.json",
+          "role": "canonical_check_record",
+          "sha256": "ed529388e8bf9d99b8a1dc3fd71e9725e68e10c9a25fb42e7f9f0c7a1b5532a9"
+        },
+        {
+          "byte_exact": true,
+          "path": "pillar-two-globe-minimum-tax/reviews/01-REPORT.md",
+          "role": "independent_review",
+          "sha256": "4a27aee6436c132d0d9e487bba9919136d489ddd4c049ec91ee3bcda50d60149"
+        },
+        {
+          "byte_exact": true,
+          "path": "pillar-two-globe-minimum-tax/reviews/02-DELTA-REPORT.md",
+          "role": "independent_review",
+          "sha256": "9cf7a66e6c05001d7922eb2005c47144cc4c270ec66e74dbc70982c292978401"
+        },
+        {
+          "byte_exact": true,
+          "path": "pillar-two-globe-minimum-tax/reviews/03-REPORT.md",
+          "role": "independent_review",
+          "sha256": "604e91f4a0c84d53a6f6ae26ee7e889a6746ac9b2e09ac5a97ddc5fd1e1dec08"
+        },
+        {
+          "byte_exact": true,
+          "path": "pillar-two-globe-minimum-tax/reviews/04-REPORT.md",
+          "role": "independent_review",
+          "sha256": "a7ca56c3fd099714bc678cdba39268ab0d06e4f975784006d6237e7ee10e6f9a"
+        }
+      ],
+      "expected_guide_sha256": "bbef70b4a365b70ea0954bc215ea70743db3fc8183d6439066840f1074f1acae",
+      "guide": "skills/global/cross-border/pillar-two-globe-minimum-tax.md",
+      "independent_pass": true,
+      "slug": "pillar-two-globe-minimum-tax"
+    },
+    {
+      "artifacts": [
+        {
+          "canonical_private_sha256": "6a18a2c0b32d94d588b810b599fb588d1b24cc7962e9d20673b1c11e46a31c27",
+          "path": "tax-residency-planning/ledger.json",
+          "projection": true,
+          "role": "ledger",
+          "sha256": "52a153d57f76030d803faf83d4f0f6f0d8bdab3e2502c3af3c87bcb8426098b5"
+        },
+        {
+          "canonical_private_sha256": "10e075cb55350d834eb8407d183fe0c1086052a413b2c0bf24c545fe191ec99e",
+          "path": "tax-residency-planning/source-register.json",
+          "projection": true,
+          "role": "source_register",
+          "sha256": "7ee8b3293308ca05067806b32efc337e00ca1e59e61b3162f079c9be104b94b7"
+        },
+        {
+          "canonical_private_sha256": "b96dd7cc1c8f3285ee91dd5dd5b84dc359d6db53778be4a25ab64126dc2b01ac",
+          "path": "tax-residency-planning/old-topic-map.json",
+          "projection": true,
+          "role": "old_topic_map",
+          "sha256": "d8706452b0f63735d1bb4be1c4eb28cf26129a5afee84755e079e3f65b952fa1"
+        },
+        {
+          "path": "ledgers/tax-residency-planning.md",
+          "projection": true,
+          "role": "human_ledger_projection",
+          "sha256": "fada271e8f10bed7788e7c17429a875fde2fd3878f396dd88effc98e80ccdd64"
+        },
+        {
+          "byte_exact": true,
+          "path": "tax-residency-planning/canonical-writer-manifest.json",
+          "role": "writer_manifest",
+          "sha256": "b19edbda30df757bb145e37bbb00f840fe72ff9e8ec4b8b7d8175ed2a9b5f0ac"
+        },
+        {
+          "byte_exact": true,
+          "path": "tax-residency-planning/checks/check-row-sources.json",
+          "role": "canonical_check_record",
+          "sha256": "36168f28ad34c6bb11996c85062a1f8eb86b5daa7c2b08e85edcb52cce10e5e1"
+        },
+        {
+          "byte_exact": true,
+          "path": "tax-residency-planning/reviews/01-INDEPENDENT-DELTA-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "bf12aed4253e0d69123313b914067d4eec753a905bccb8594f2b7e81fc07a061"
+        },
+        {
+          "byte_exact": true,
+          "path": "tax-residency-planning/reviews/02-FIRST-INDEPENDENT-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "99b4338740cb8fc13174bc898bf57e1e1f0c161a004c908d7ce6d411a5b33092"
+        },
+        {
+          "byte_exact": true,
+          "path": "tax-residency-planning/reviews/03-FINAL-INDEPENDENT-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "fcbae8054421057c1215fd7159ef6c1ff960586dc2b2ae0ed4c3ac7f8ae1c2e0"
+        },
+        {
+          "byte_exact": true,
+          "path": "tax-residency-planning/reviews/04-REPORT.md",
+          "role": "independent_review",
+          "sha256": "8d9e076f7b951bb101e36c63e1dc1d313abd4bc593bbad7543a3e628f9e1f88a"
+        }
+      ],
+      "expected_guide_sha256": "0efc4533c915175a5d5f0407773779e19edcb970eebc154ed4a3c1bbf0064daf",
+      "guide": "skills/global/cross-border/tax-residency-planning.md",
+      "independent_pass": true,
+      "slug": "tax-residency-planning"
+    },
+    {
+      "artifacts": [
+        {
+          "canonical_private_sha256": "56057a95ce71eba01b664342381913f03c046e4e1146af24020f084f5cbd7c97",
+          "path": "wealth-tax-matrix/ledger.json",
+          "projection": true,
+          "role": "ledger",
+          "sha256": "df2b59ef0b43d99a7e61d01b50415f59708f1ee78b8a0070d3e0086bd19da524"
+        },
+        {
+          "canonical_private_sha256": "11ca241984281a5e858483a27612324d1fb03e60416d033c7a060d356b5e17da",
+          "path": "wealth-tax-matrix/source-register.json",
+          "projection": true,
+          "role": "source_register",
+          "sha256": "41b56d085c4699969f9b6c4b409dbbfa45a135e0175b944e8b997956d26b54b1"
+        },
+        {
+          "canonical_private_sha256": "df6d017d6a7189d36527f729090292faee4c3e41604b5d7f7906320da57c15c5",
+          "path": "wealth-tax-matrix/old-topic-map.json",
+          "projection": true,
+          "role": "old_topic_map",
+          "sha256": "43d234d0e28c8a58e440a988fd3657f3dcd0539709bdd7a1547bc2a1d550cd45"
+        },
+        {
+          "path": "ledgers/wealth-tax-matrix.md",
+          "projection": true,
+          "role": "human_ledger_projection",
+          "sha256": "12c4d97c499c6c1f01ab458a1b9f256efcf360bdebb5f17e87c761e4bd8a177b"
+        },
+        {
+          "byte_exact": true,
+          "path": "wealth-tax-matrix/canonical-writer-manifest.json",
+          "role": "writer_manifest",
+          "sha256": "1136a7587fa57f9cec25f5822772d0f6892d5bbabe755019dc263d5076464499"
+        },
+        {
+          "byte_exact": true,
+          "path": "wealth-tax-matrix/checks/writer-independent-arithmetic.json",
+          "role": "canonical_check_record",
+          "sha256": "736f22942f20c707bab78ccc27f8eded7d1a2098b913250c8af08cb2b641cc5a"
+        },
+        {
+          "byte_exact": true,
+          "path": "wealth-tax-matrix/checks/source-check-exceptions.json",
+          "role": "canonical_check_record",
+          "sha256": "fea928427dbde4becc0c76bc7c0a0e8dff4768f7096157c0969d5746db9fb2fd"
+        },
+        {
+          "byte_exact": true,
+          "path": "wealth-tax-matrix/checks/reservations.json",
+          "role": "canonical_check_record",
+          "sha256": "30f3d45ac9f5cd55b6f20c94347d9b2ef0647219ec411ad8d81cbe6839bfa23b"
+        },
+        {
+          "byte_exact": true,
+          "path": "wealth-tax-matrix/checks/wealth-metadata-delta.json",
+          "role": "canonical_check_record",
+          "sha256": "a4ec90de3ea76d0bb1302448cf15fb7c98d54fab5d044002e29cb49e35d8f1ae"
+        },
+        {
+          "byte_exact": true,
+          "path": "wealth-tax-matrix/reviews/01-FINAL-INDEPENDENT-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "008c3393c8da11738b9ec505b75fcf9aa0f7c118446eb800fc3c47ffbf15e70e"
+        },
+        {
+          "byte_exact": true,
+          "path": "wealth-tax-matrix/reviews/02-ROOT-METADATA-DELTA-REVIEW.md",
+          "role": "independent_review",
+          "sha256": "96c700b2ad30d87b260669406cee08f4ec1514da2182c4ead8b294f630e03f66"
+        }
+      ],
+      "expected_guide_sha256": "09c001fd8acb258c76df119f88a4d8b4721c4429ac6eb1957bb1bc62c19312ff",
+      "guide": "skills/global/cross-border/wealth-tax-matrix.md",
+      "independent_pass": true,
+      "retained_full_content_sha256": "a6dbe93c734b9db38114a389125bf83f575266824b2732e6a81a503dc7bd5f71",
+      "slug": "wealth-tax-matrix"
+    }
+  ],
+  "human_approval_claim": false,
+  "raw_sources_included": false,
+  "source_read_claim": "Read boundaries and dates are in the canonical evidence; a successful retrieval alone is not a read."
+}

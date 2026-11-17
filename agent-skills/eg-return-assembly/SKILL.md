@@ -1,169 +1,203 @@
 ---
 name: eg-return-assembly
-description: "Use this skill as the final orchestrator that assembles the complete Egyptian filing package for an Egypt-resident self-employed person. It computes nothing itself — it sequences and stitches together the Egypt content skills into one reviewer-ready filing package (income tax return, VAT returns, social insurance, e-invoicing precondition, ETA submission). Trigger on phrases like \"file my Egyptian tax return\", \"submit income tax return Egypt\", \"ETA filing\", \"assemble my Egypt return\", \"قدّم الإقرار الضريبي\", \"إقرار ضريبة الدخل مصر\"."
+description: "Use this skill as the final orchestrator that assembles the complete Egyptian filing package for an Egypt-resident self-employed person. It computes nothing itself; it sequences and stitches together the Egypt content skills into one reviewer-ready filing package (income tax return, VAT returns, social insurance, e-invoicing precondition, ETA submission). Trigger on phrases like \"file my Egyptian tax return\", \"submit income tax return Egypt\", \"ETA filing\", \"assemble my Egypt return\", \"قدّم الإقرار الضريبي\", \"إقرار ضريبة الدخل مصر\"."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/eg-return-assembly"
   jurisdiction: "EG"
   tax_year: "2026"
-  last_updated: "2026-07-13"
+  last_updated: "2026-11-17"
 ---
 
-# EG Return Assembly
+# EG Return Assembly v0.3
 
-## Egypt Return Assembly — Filing Package Orchestrator (تجميع الإقرار الضريبي المصري)
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## 1. What this file is
+Egypt return assembly (تجميع الإقرار الضريبي المصري), tax year 2026, law as read on 16 November 2026. This is the final orchestrator (المُجمِّع النهائي) for an Egypt-resident self-employed person (مهني / صاحب نشاط تجاري). It assembles the filing package and computes no figure: every number comes from the content skills. It decides which return applies, what attaches, when each filing is due and how it is submitted. Reply in the user's language, Arabic or English, and keep native Arabic terms so the package reads naturally for an Egyptian reviewer.
 
-This is the **final orchestrator (المُجمِّع النهائي)** for an Egypt-resident self-employed person (مهني / صاحب نشاط تجاري). It **assembles the filing package** — it does **not compute** any figure. Every number comes from the upstream content skills; this file decides *which return applies*, *what schedules attach*, *when each filing is due*, and *how to submit through the ETA portal*.
+Authorities: the Egyptian Tax Authority (ETA, مصلحة الضرائب المصرية, eta.gov.eg) for income tax, VAT and payroll tax; the National Organization for Social Insurance (NOSI, الهيئة القومية للتأمين الاجتماعي) for contributions.
 
-The Egyptian Tax Authority (**ETA — مصلحة الضرائب المصرية**, eta.gov.eg) is the single authority for income tax and VAT. The National Organisation for Social Insurance (**NOSI — الهيئة القومية للتأمينات الاجتماعية**) handles social insurance.
+**Answer first.** For tax year 2026 an individual files the annual income tax return between 1 January and 31 March 2027 (before 1 April), on the general return or, in the turnover regime, on form 20 إقرارات. VAT is monthly on the general system and quarterly in the turnover regime, each within the month after the period. Joining the ETA e-invoice or e-receipt system under its phase decisions is a condition of the turnover regime.
 
-AI replies in the **user's language** (Arabic or English). Native Arabic terms appear throughout so the package reads naturally for an Egyptian reviewer.
+## Scope
 
-> **Precondition (شرط مسبق):** e-invoicing / e-receipt compliance. See Section 3. Without it, the simplified regime is unavailable and input VAT credit can be disallowed.
+- **In:** a resident individual, sole proprietor or professional, whose facts `eg-freelance-intake` has confirmed. Both income tracks: the general system (`eg-income-tax`) and the turnover regime under Law 6 of 2025 (`eg-sme-tax`); VAT under VAT Law 67 of 2016 and its executive regulations (`egypt-vat`); payroll (`eg-payroll`) and social insurance under Law 148 of 2019 (`eg-social-insurance`); records (`eg-bookkeeping`).
+- **Out:** companies (`eg-corporate-tax`, `eg-financial-statements`), non-residents, partnerships, and any computation (the content skills own every figure).
 
-## 2. Inputs required
+## Ask the client first
 
-Collect these from `eg-freelance-intake` before assembling. Do not re-interrogate scope the intake already settled.
-
-**Inputs required table**  _(eg-freelance-intake)_
+Take these from `eg-freelance-intake`; do not re-ask what the intake settled.
 
 | Input | Source skill | Used for |
-| --- | --- | --- |
-| Residency confirmation, activity type (professional vs commercial) | `eg-freelance-intake` | Routing the return |
-| Annual turnover (إجمالي الأعمال) in EGP | `eg-freelance-intake` / `egypt-vat` | Simplified vs general decision; VAT registration |
-| ETA Tax Registration Number (رقم التسجيل الضريبي) | intake | All ETA filings |
-| National ID (الرقم القومي) | intake | ETA portal account |
-| Net profit on commercial/professional activity | `eg-income-tax` | General return |
-| Turnover-based liability figures | `eg-sme-tax` | Simplified return |
-| VAT output/input position, e-invoice UUIDs | `egypt-vat` | VAT return(s) |
-| Social insurance contribution wage & status | `eg-social-insurance` | NOSI filing |
-| e-invoice / e-receipt registration status | `egypt-vat` / intake | Precondition gate |
-| ETA portal credentials, digital signature (token) | intake | Submission |
+|---|---|---|
+| Residence, activity type (professional or commercial) | `eg-freelance-intake` | Routing the return |
+| Annual turnover (إجمالي الأعمال / حجم الأعمال) in EGP | `eg-freelance-intake`, `egypt-vat` | Turnover regime or general system; VAT registration |
+| ETA tax registration number (رقم التسجيل الضريبي) | intake | Every ETA filing |
+| National ID (الرقم القومي) | intake | ETA system account |
+| Net profit of the commercial or professional activity | `eg-income-tax` | General return |
+| Turnover tax figures | `eg-sme-tax` | Form 20 return |
+| VAT output and input, e-invoice identifiers | `egypt-vat` | VAT returns |
+| Contribution wage and status | `eg-social-insurance` | NOSI payments |
+| Staff pay and tax withheld | `eg-payroll` | Payroll returns |
+| E-invoice or e-receipt registration status | `eg-bookkeeping`, intake | Turnover regime condition |
+| ETA system user name and password; accountant registered on the system | intake | Submission |
 
-- **Missing content skill output handling** — If a content skill did not run or returned no validated output, note the gap in the reviewer brief and continue with available data rather than halting.  _(Section 2, Egypt Return Assembly)_
+If a content skill did not run or returned no validated output, record the gap in the reviewer brief and continue with the data available rather than halting.
 
-## 3. Decision tree — which return applies
+## The method, step by step
+
+### Step 1. Decide which income return applies
 
 ```
 START
-  │
-  ├─ Is e-invoice + e-receipt compliance in place?
-  │     NO  ─► Simplified regime UNAVAILABLE. Flag precondition failure.
-  │           Default to GENERAL return. Note remediation in reviewer brief.
-  │     YES ─► continue
-  │
-  ├─ Annual turnover ≤ EGP 20,000,000 AND a formal election
-  │   to join Law No. 6 of 2025 was filed (and 5-yr lock-in accepted)?
-  │
-  ├── YES ─► SIMPLIFIED REGIME (نظام مبسّط — Law No. 6 of 2025)
-  │            • Return: simplified turnover-based annual income tax return
-  │              (separate form from the standard return — via eg-sme-tax)
-  │            • VAT: QUARTERLY return (if VAT-registered) — within one
-  │              month after each quarter (via egypt-vat)
-  │            • Liability is turnover-based; eg-sme-tax holds the bands.
-  │              (Do not restate rates here.)
-  │
-  └── NO  ─► GENERAL REGIME (النظام العام)
-               • Return: standard annual individual income tax return
-                 — net profit on commercial/professional activity
-                 (via eg-income-tax)
-               • Filed by 31 March (individuals) following the tax year
-               • VAT: MONTHLY return (if VAT-registered) — via egypt-vat
-               • Attach activity P&L / accounts as schedules
+  |
+  +- Turnover up to EGP 20,000,000 AND (request form 10/1 filed,
+  |  or business moved over from Law 152 of 2020) AND not excluded
+  |  (90% consultancy test, improper splitting)?
+  |
+  +-- YES -> TURNOVER REGIME (Law 6 of 2025)
+  |           - Condition: returns on time, and joined to the ETA
+  |             e-systems, e-invoice or e-receipt, under the phase
+  |             decisions, with documents actually issued (art. 3).
+  |             If a condition is broken, form 20 is not used:
+  |             prepare the general return unless the reviewer
+  |             confirms otherwise.
+  |           - Income: annual return on form 20 إقرارات (via eg-sme-tax)
+  |           - VAT, if registered: QUARTERLY, within the month after
+  |             the quarter, with payment (via egypt-vat)
+  |           - Payroll: annual settlement return only, with payment
+  |
+  +-- NO  -> GENERAL SYSTEM (النظام العام)
+              - Income: annual individual return with every table
+                of the form, net profit of the activity (via eg-income-tax)
+              - VAT, if registered: MONTHLY, within the month after
+                the month (via egypt-vat)
+              - Payroll, if staff: quarterly returns and the January
+                annual settlement (via eg-payroll)
 
 ALWAYS (both branches):
-   • Social insurance filing/registration with NOSI (via eg-social-insurance)
-   • e-invoicing / e-receipt running and reconciled
+   - Social insurance with NOSI (via eg-social-insurance)
+   - E-invoice or e-receipt documents issued and reconciled
 ```
 
-### Routing notes
+Routing notes:
 
-- **Simplified regime is an election** — The simplified regime is an election, not automatic. Eligibility is turnover ≤ EGP 20m, but the taxpayer must have formally requested it and accepted the ~5-year lock-in. If no election exists, use the general return.  _(Section 3, Egypt Return Assembly, Routing notes)_
-- **VAT registration independent of income-tax regime** — VAT registration is independent of the income-tax regime. Confirm registration status from `egypt-vat` (the registration threshold tightened in 2026 — verify the current threshold in `egypt-vat`; do not hard-code it here).  _(Section 3, Egypt Return Assembly, Routing notes)_
-- **Professional vs commercial activity** — Professional vs commercial: both file the general individual return when not in the simplified regime; `eg-income-tax` handles the distinction.  _(Section 3, Egypt Return Assembly, Routing notes)_
+- The turnover regime is an election, not automatic: Law 6 art. 1 covers projects that ask for it. The request is form 10/1 طلبات (MoF Decision 420 of 2025 art. 1). Leaving is possible only after five years from the day after the request (Law 6 art. 5), on form 11/1 طلبات. Without a request, and unless the business moved over from Law 152 of 2020, use the general return.
+- VAT registration does not depend on the income regime. Take registration status and the limit from `egypt-vat`; do not hard-code them here.
+- Professional and commercial activity both use the individual return on the general system; `eg-income-tax` handles the difference.
 
-## 4. Filing & payment calendar
+### Step 2. Map the filing and payment calendar
 
-All filings are electronic via the ETA portal; payment is electronic at the time of filing. e-invoicing/e-receipt compliance is a precondition running underneath the whole calendar.
+All returns go through the ETA electronic system. E-invoice and e-receipt compliance runs underneath the whole calendar.
 
-**Filing & payment calendar table**  _(Section 4, Egypt Return Assembly)_
+| Filing | Track | Frequency | Deadline (tax year 2026) | Source |
+|---|---|---|---|---|
+| Individual income tax return (الإقرار السنوي) with all tables | General | Annual | Before 1 April 2027; a return missing tables does not count as filed | Law 206 of 2020 art. 31(c): https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf |
+| Turnover regime return, form 20 إقرارات | Turnover regime | Annual | Same dates as the general return: 1 January to 31 March 2027 for an individual | Law 6 art. 12: https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf; MoF 420 art. 2: https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.420.of_.2025.pdf |
+| VAT return (إقرار ض.ق.م) | General | Monthly, even with no sales | Within the month after the month | Law 206 art. 31(a): https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf |
+| VAT return | Turnover regime | Quarterly | Within the month after the quarter, with payment | Law 6 art. 12: https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf |
+| Payroll tax, quarterly return | General, with staff | Quarterly | In January, April, July and October | Law 206 art. 31(b): https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf |
+| Payroll tax, annual settlement | Both, with staff | Annual | During January; in the turnover regime this is the only payroll return, with payment | Law 206 art. 31(b); Law 6 art. 12: https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf |
+| Social insurance (تأمينات اجتماعية) | Both | Monthly | Due date and grace period in `eg-social-insurance` | Law 148 of 2019 art. 121, as read in `eg-social-insurance` |
+| E-invoice and e-receipt documents | Both | As issued | Timing rules in `eg-bookkeeping` | ETA e-invoice and e-receipt rules, as read in `eg-bookkeeping` |
 
-| Filing | Regime | Frequency | Deadline | Source skill |
-| --- | --- | --- | --- | --- |
-| Individual income tax return (الإقرار السنوي) | General | Annual | **31 March** following the tax year (individuals) | `eg-income-tax` |
-| Simplified turnover-based return | Simplified (Law 6/2025) | Annual | Per the Unified Tax Procedures Law due date — **verify on ETA** | `eg-sme-tax` |
-| VAT return (إقرار ض.ق.م) | General | **Monthly** | By the end of the following month *(see note)* | `egypt-vat` |
-| VAT return | Simplified | **Quarterly** | Within **one month** after each quarter | `egypt-vat` |
-| Social insurance (تأمينات اجتماعية) | Both | Per NOSI schedule (typically monthly) | Per NOSI rules — confirm | `eg-social-insurance` |
-| e-invoice / e-receipt reporting | Both (precondition) | Real-time | Same day the document is issued | `egypt-vat` |
+A first return counts as notice of starting the activity, and a return is still due for a period in which the taxpayer is exempt (Law 206 art. 31). No annual return is needed where income is only salary, or only real estate income within the exempt band, or only those two within that band (same article).
 
-> **VAT deadline — flag (uncertainty).** Sources disagree. The ETA-practice and the `egypt-vat` skill state **end of the following month**. VAT Law No. 67 of 2016 / PwC describe a statutory window of **two months after the tax period, with the April return due by 15 June**. Use the **earlier (end of following month)** conservatively and **confirm the exact monthly deadline with the reviewer / on eta.gov.eg** before filing.
+### Step 3. Assemble the package
 
-> **Simplified-return due date — flag.** The simplified annual return uses the due date in the Unified Tax Procedures Law and a separate form; the precise 2026 calendar date was **not verifiable** at time of writing — confirm on ETA.
+1. Intake summary from `eg-freelance-intake`, with the route and its facts.
+2. Income: the general return workpapers from `eg-income-tax` (receipts, deductible costs, depreciation, net profit, bands, credits), or the turnover figure and band from `eg-sme-tax` for form 20.
+3. VAT: one reconciliation per period from `egypt-vat`, with every e-invoice identifier. Input VAT on purchases needs the supplier's e-invoice, or the credit can be disallowed (`eg-bookkeeping`).
+4. Payroll and social insurance schedules, if there are staff.
+5. A reconciliation of VAT turnover to income tax turnover; flag every difference for the reviewer.
+6. The reviewer brief: open flags, data gaps, judgement calls.
 
-## 5. Submission (ETA portal & digital signature)
+### Step 4. Submit through the ETA system
 
-0. **Account login** — Account — log in to the ETA online portal (eta.gov.eg) using the National ID (الرقم القومي) or the Tax Registration Number (رقم التسجيل الضريبي). Electronic filing is mandatory for these taxpayers.
-0. **Select the correct form** — Select the correct form — general individual return or the simplified turnover-based return (do not file both); plus the VAT return at the correct frequency for the chosen regime.
-0. **Attach schedules** — Attach schedules — activity accounts / P&L, VAT reconciliation, and any supporting workpapers produced by the content skills.
-0. **Digital signature** — Digital signature (التوقيع الإلكتروني) — sign with the ETA-recognised electronic signature / token where required. Confirm the signing certificate is valid and not expired before submission.
-0. **Pay electronically** — Pay electronically — settle the tax due at the time of filing through the portal's payment channels.
-0. **Capture confirmation** — Capture confirmation — save the ETA submission reference / acknowledgment for the file. Do not consider a return filed until acknowledgment is received.
+1. **Log in.** Merged tax offices use the ETA electronic tax system; offices not yet merged use https://eservice.incometax.gov.eg/etax (ETA Services Guide, section 18/2). The ETA front offices help with registering on the portal, registering the accountant and the agent on the system to approve the return, and uploading returns (Services Guide, service 2/1).
+2. **Pick the form.** General return or form 20, never both, plus the VAT return at the frequency of the track.
+3. **Complete every table.** A return without all its tables and data is not counted as filed on time (Law 206 art. 31(c)).
+4. **Attach schedules.** Activity accounts or profit and loss, the VAT reconciliation, and supporting workpapers.
+5. **Have the registered accountant approve the return** on the system where the client uses one (Services Guide, service 2/1).
+6. **Pay.** Payment runs through a payment claim (مطالبة) linked to the ETA system, by card (Services Guide, service 2/1). For VAT, `egypt-vat` sets out paying by claim number after filing.
+7. **Keep the confirmation.** Save the submission reference. A return is not treated as filed until the system acknowledges it.
 
-## 6. Final pre-filing checklist
+## Boundary and exception table
 
-- [ ] Intake (`eg-freelance-intake`) complete; residency & activity type confirmed.
-- [ ] **e-invoice + e-receipt** compliance verified (precondition gate passed).
-- [ ] Regime decided via Section 3 (general vs simplified) and election status
-      confirmed for simplified.
-- [ ] Correct income-tax form selected (general return *or* simplified return —
-      never both).
-- [ ] Income figures reconciled: VAT turnover ↔ income-tax gross/net (flag any
-      mismatch for the reviewer).
-- [ ] VAT returns prepared at the correct frequency (monthly = general /
-      quarterly = simplified) and all e-invoice UUIDs present.
-- [ ] Social insurance (NOSI) registration current and contributions reconciled.
-- [ ] Deadlines mapped to dates (Section 4); VAT monthly deadline confirmed.
-- [ ] Digital signature certificate valid; ETA portal credentials working.
-- [ ] Payment method ready; expected tax due figure available from content skills.
-- [ ] All open flags (VAT deadline, simplified due date, any data gaps) listed in
-      the reviewer brief.
-- [ ] Package routed for **qualified Egyptian accountant (محاسب قانوني)** sign-off
-      before any submission.
+| Situation | Rule | Source |
+|---|---|---|
+| Turnover regime request never filed | General return; Law 6 covers only projects that ask | Law 6 art. 1 |
+| Business was under Law 152 of 2020 small-enterprise tax | Moved to Law 6 without a request | ETA Services Guide 18/2 |
+| Consultant with 90% or more of turnover from one or two persons | Outside Law 6; general return | Law 6 art. 4(1) |
+| Not joined to the e-systems under the phase decisions, or late returns | Breaks the Law 6 art. 3 conditions of benefit: do not use form 20; prepare the general return unless the reviewer confirms otherwise | Law 6 art. 3 |
+| Sole proprietor asks for a 30 April date | No: a natural person files before 1 April; before 1 May (or within four months of the year end) is for legal persons | Law 206 art. 31(c) |
+| Return filed without all tables | Not counted for the deadline | Law 206 art. 31(c) |
+| Late return or payment | Fines in `eg-income-tax` (Law 206 arts. 69, 70); late returns also break the Law 6 art. 3 condition | Law 206; Law 6 |
 
-## 7. Reference (forms, deadlines, sources)
+## Worked cases
 
-**Reference table**  _(Section 7, Egypt Return Assembly)_
+**Case 1. Turnover regime developer, first VAT quarter of 2026.** A developer in the turnover regime has turnover of EGP 1,200,000 for 2026. The band from `eg-sme-tax` is 0.5%, so form 20 shows EGP 6,000, due by 31 March 2027. In the first quarter of 2026 the developer made taxable sales of EGP 300,000 at the 14% rate from `egypt-vat`, and holds e-invoices for EGP 7,000 of input VAT. Output is EGP 42,000 and the quarterly return, due with payment by 30 April 2026, shows EGP 35,000.
 
-| Item | Reference / value | Status |
-| --- | --- | --- |
-| Individual income tax return deadline | **31 March** following the tax year | Verified (ETA / PwC) |
-| Sole proprietorship / partnership deadline | 30 April (where applicable) | Verified (secondary) |
-| Simplified regime | Law No. 6 of 2025 (turnover ≤ EGP 20m; separate form; ~5-yr lock-in) | Verified (EY / law firms) |
-| Simplified VAT frequency | Quarterly, within 1 month after quarter | Verified (Law 6/2025 commentary) |
-| General VAT frequency | Monthly | Verified |
-| General VAT deadline | End of following month **vs** 2-month statutory window (April → 15 June) | **Conflicting — confirm** |
-| VAT Law | No. 67 of 2016 + Executive Regulations | Verified |
-| Social insurance | Law No. 148 of 2019 (NOSI) | Verified |
-| e-invoicing / e-receipt | ETA mandate; precondition for simplified regime; same-day reporting | Verified |
-| ETA portal | https://www.eta.gov.eg ; e-invoice: https://invoicing.eta.gov.eg | Verified |
+```oa-check
+name: Turnover regime developer, annual return and first VAT quarter
+inputs:
+  turnover: 1200000
+  band_rate: 0.005
+  q1_taxable_sales: 300000
+  vat_rate: 0.14
+  q1_input_vat: 7000
+steps:
+  - form_20_tax: turnover * band_rate
+  - q1_output_vat: q1_taxable_sales * vat_rate
+  - q1_vat_payable: q1_output_vat - q1_input_vat
+expected:
+  form_20_tax: 6000.00
+  q1_output_vat: 42000.00
+  q1_vat_payable: 35000.00
+```
 
-**Could not verify / flag for reviewer:**
-- Exact monthly VAT deadline (end of following month vs two-month statutory rule).
-- Exact 2026 calendar due date and form code for the simplified turnover-based
-  return.
-- Current 2026 VAT registration threshold (defer to `egypt-vat`; reportedly
-  lowered in 2026 — confirm).
-- Whether digital signature is mandatory for *every* individual return or only
-  certain filings — confirm with the reviewer / ETA.
+On the general system the same developer would file the individual return by 31 March 2027 and twelve monthly VAT returns.
 
-## Disclaimer
+## When to refuse or refer
 
-This skill performs **orchestration and assembly only** — it computes no tax figures. All amounts originate from the Egypt content skills (`eg-freelance-intake`, `eg-income-tax`, `eg-sme-tax`, `egypt-vat`, `eg-social-insurance`) and **must be reviewed and signed off by a qualified Egyptian accountant (محاسب قانوني)** before anything is filed with the ETA or NOSI. Deadlines, forms, thresholds, and the simplified-regime election rules change frequently; verify every flagged item against eta.gov.eg at filing time. Nothing here is tax, legal, or financial advice.
+- Refuse to file both the general return and form 20 for the same year.
+- Refuse to present the package as filed, or as a professional sign-off. Route it for sign-off by a qualified Egyptian accountant (محاسب قانوني) before any submission to the ETA or NOSI.
+- Refer companies, partnerships, non-residents, free zone projects and any open examination, dispute or settlement (see `eg-tax-optimization` for the dispute committees).
+- Refer where a content skill returned no validated output for a figure the return needs.
+
+## Filing and payment
+
+Returns and payments go through the ETA electronic system (Step 4). Turnover regime VAT is paid with the quarterly return (Law 6 art. 12). On the general system, VAT is paid after the return through the claim the system issues (`egypt-vat`). Social insurance is paid to NOSI as set out in `eg-social-insurance`.
+
+## Completion checklist
+
+- [ ] Intake from `eg-freelance-intake` complete; residence and activity confirmed.
+- [ ] E-invoice or e-receipt status checked against the ETA phase decisions (Law 6 art. 3 condition for the turnover regime).
+- [ ] Track decided under Step 1, with the form 10/1 request date (or the Law 152 move) recorded for the turnover regime.
+- [ ] One income tax form only: the general return or form 20.
+- [ ] VAT turnover reconciled to income tax turnover; differences flagged.
+- [ ] VAT returns at the right frequency (monthly general, quarterly turnover regime) with all e-invoice identifiers.
+- [ ] Payroll returns and NOSI contributions reconciled, if there are staff.
+- [ ] Deadlines mapped to dates from Step 2.
+- [ ] Every table of the return form completed.
+- [ ] ETA system access working; accountant registered to approve the return where used.
+- [ ] Payment route ready; tax due taken from the content skills.
+- [ ] Every open flag listed in the reviewer brief.
+- [ ] Package routed for sign-off by a qualified Egyptian accountant before submission.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Unified Tax Procedures Law 206 of 2020, arts. 25 to 28, 31, 38, 68 to 71 (page images and OCR read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-16 |
+| Law 6 of 2025, arts. 1 to 16, whole text | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf | 2026-11-16 |
+| MoF Decision 420 of 2025, arts. 1 to 4 (page images read) | https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.420.of_.2025.pdf | 2026-11-16 |
+| ETA Services Guide, 2nd edition, services 1/1, 2/1 and section 18/2, read in part | https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf | 2026-11-16 |
+| ETA list of VAT laws and decisions, list page read | https://eta.gov.eg/ar/content/qwanyn-aldrybt-ly-alqymt-almdaft | 2026-11-16 |
+
+Not yet confirmed: whether an electronic signature or token is required on every individual return or only on some filings (the Services Guide describes accountant approval on the system, not a signature rule). Whether electronic filing is compulsory for every individual taxpayer by a rule other than the e-system practice described here. The same-day reporting rule for e-invoices and e-receipts in the earlier version (timing rules sit in `eg-bookkeeping`). The e-invoice portal address invoicing.eta.gov.eg in the earlier version (not opened). The VAT limit reportedly cut to EGP 250,000 (held in `egypt-vat`). How partnerships and their partners file.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `eg-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/eg-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-17. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `eg-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/eg-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.

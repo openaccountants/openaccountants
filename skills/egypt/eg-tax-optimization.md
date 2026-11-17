@@ -1,10 +1,10 @@
 ---
 name: eg-tax-optimization
 description: Use this skill whenever asked about legitimate tax optimization, tax planning, or how to legally reduce tax for self-employed people, freelancers, professionals, sole proprietors, and small businesses in Egypt. Trigger on phrases like "reduce tax Egypt", "save tax freelancer Egypt", "simplified vs general Egypt", "Egypt tax planning", "SME regime worth it Egypt", "lower my tax bill Egypt", "is the simplified regime cheaper", "تخطيط ضريبي مصر", "تقليل الضرائب مصر", "النظام المبسط أم العام", "هل النظام المبسط أوفر", "توفير ضرائب". Covers the choice between the turnover-based simplified SME regime (Law No. 6 of 2025) and the general progressive income-tax system, the break-even logic, e-invoicing as a deductibility lever, VAT threshold management, and the Law No. 5 of 2025 dispute-settlement / amnesty facilities. LEGAL planning only , never tax evasion. AI replies in the user's language (English or Arabic).
-version: 1.2
+version: 1.3
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-17
 depends_on:
   - income-tax-workflow-base
 category: tax-optimization
@@ -14,13 +14,13 @@ domain: tax-optimization
 type: decision
 ---
 
-# EG Tax Optimization v1.2
+# EG Tax Optimization v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 The decision layer for lawful tax planning by self-employed people and small businesses in Egypt, tax year 2026, law as read on 16 November 2026. It loads on `income-tax-workflow-base` and produces a side-by-side computation for a reviewer. Reply in the user's language, English or Arabic. Planning only: never concealment, fake invoices or sham entities.
 
-**Answer first.** The main choice is the turnover regime of Law 6 of 2025 (tax on turnover, 0.4% to 1.5%, turnover up to EGP 20 million, locked for five years) against the general system (bands up to 27.5% on profit). Compute both before recommending. The Law 5 of 2025 relief windows have all closed; for old disputes, the dispute committees take new requests until 31 December 2026, and non-final 2023 to early 2025 periods of businesses up to EGP 10 million can be settled on turnover under Law 151 of 2026.
+**Answer first.** The main choice is the turnover regime of Law 6 of 2025 (tax on turnover, 0.4% to 1.5%, turnover up to EGP 20 million, locked for five years) against the general system (bands up to 27.5% on profit). Compute both before recommending. The Law 5 of 2025 relief windows have closed (the extended end of the registration window rests on the ETA's own guide, not on the decision itself); for old disputes, the dispute committees take new requests until 31 December 2026, and non-final 2023 to early 2025 periods of businesses up to EGP 10 million can be settled on turnover under Law 151 of 2026.
 
 ## Scope
 
@@ -83,7 +83,7 @@ The turnover regime taxes turnover; the general system taxes profit. The decisio
 
 - **Turnover regime:** joining the ETA e-invoice or e-receipt system under the phase decisions and issuing the documents is a condition of the regime (Law 6 art. 3). Records are the MoF 420 simplified set.
 - **General system:** costs are supported by regular books backed by documents (`eg-income-tax`). Input VAT on purchases needs an e-invoice from the supplier (`eg-bookkeeping`, from the ETA e-receipt FAQ).
-- **Actions:** register on the ETA e-invoice or e-receipt system when named in a phase decision (check the inquiry lists in `eg-bookkeeping`); ask suppliers for e-invoices before paying; reconcile e-invoices to the books monthly.
+- **Actions:** register on the ETA e-invoice or e-receipt system when named in a phase decision (check the inquiry lists in `eg-bookkeeping`); ask suppliers for e-invoices before paying; reconcile e-invoices to the books monthly. Held working default, not settled law: never rely on paper or PDF invoices for a deduction. It rests on the 1 July 2023 e-invoice-only rule on the Not yet confirmed line; refer any cost backed only by paper or PDF for review.
 
 ### VAT registration timing
 
@@ -93,7 +93,7 @@ The turnover regime taxes turnover; the general system taxes profit. The decisio
 
 ### Old periods and disputes
 
-- **Law 5 of 2025 windows are closed.** The law took effect on 13 February 2025 (art. 11). Non-filers for periods from 2020 had six months to file original or amended returns without penalties (art. 3). Unregistered persons who applied to register within three months, extendable once by the Minister, were not assessed for earlier periods for income tax, VAT, stamp duty or the development fee, provided no ETA action had been taken and all documents were filed on every e-system (art. 2). Disputes over periods ended before 1 January 2020 had three months, extendable once for an equal period, to apply (art. 6): estimated assessments settled by paying 30% of the tax in the return, or the last agreement plus 40% where no return, a nil return or a loss return was filed, in four quarterly instalments of 25% with no delay charge (art. 4); regular-books assessments settled with 100% of delay charges and additional tax waived if the principal was paid within three months (art. 5). Individuals with real estate or unlisted share disposals had six months (art. 7). Every window, at its longest, ended by 13 August 2025.
+- **Law 5 of 2025 windows are closed.** The law took effect on 13 February 2025 (art. 11). Non-filers for periods from 2020 had six months to file original or amended returns without penalties (art. 3). Unregistered persons who applied to register within three months, extendable once by the Minister, were not assessed for earlier periods for income tax, VAT, stamp duty or the development fee, provided no ETA action had been taken and all documents were filed on every e-system (art. 2). Disputes over periods ended before 1 January 2020 had three months, extendable once for an equal period, to apply (art. 6): estimated assessments settled by paying 30% of the tax in the return, or the last agreement plus 40% where no return, a nil return or a loss return was filed, in four quarterly instalments of 25% with no delay charge (art. 4); regular-books assessments settled with 100% of delay charges and additional tax waived if the principal was paid within three months (art. 5). Individuals with real estate or unlisted share disposals had six months (art. 7). The art. 3 and art. 7 windows, and the art. 6 window with its one equal extension, ended by 13 August 2025. The art. 2 window ended on 13 May 2025 unless extended; art. 2 lets the Minister extend it once but fixes no length. The ETA Services Guide (service 1/1/18) says MoF Decision 167 of 2025 extended it by three more months from 13 May 2025. That decision was not read, so the extended art. 2 end date is held (Not yet confirmed). Never promise Law 5 relief to anyone now.
 - **Now:** use the dispute committees for requests filed until 31 December 2026 (Law 152 of 2026), or the Law 151 art. 4 turnover settlement if eligible. Late payment charges cannot exceed 100% of the principal (Law 7 of 2025).
 - **Listed shares:** gains on Egyptian listed securities are exempt from 29 July 2026 and losses are neither deductible nor carried forward, unless the disposal delists the company (Income Tax Law art. 31 item 7, added by Law 151 of 2026 art. 2; `eg-income-tax`).
 - **Band steps:** total net income just over EGP 600,000, 700,000, 800,000, 900,000 or 1,200,000 loses a lower band (`eg-income-tax`). Lawful timing of a real receipt or a real expense can matter; invented timing cannot.
@@ -109,7 +109,7 @@ The turnover regime taxes turnover; the general system taxes profit. The decisio
 | Turnover over EGP 20 million by no more than 20%, first time in five years | Stays in at 1.5% | Law 6 art. 10 |
 | Over by more than 20%, or a second time | Regime ends from the following year | Law 6 art. 10 |
 | Law 6 taxpayer files late or leaves the e-systems | Breaks the art. 3 conditions | Law 6 art. 3 |
-| Asks about the Law 5 of 2025 relief | Closed by 13 August 2025 at the latest; use Law 152 committees or Law 151 art. 4 | Law 5 arts. 2, 3, 6, 7; Law 152; Law 151 |
+| Asks about the Law 5 of 2025 relief | Arts. 3, 6 and 7 closed by 13 August 2025; art. 2 closed on 13 May 2025 unless extended (the ETA guide reports a three-month extension by MoF 167 of 2025, held). Do not promise relief; use Law 152 committees or Law 151 art. 4 | Law 5 arts. 2, 3, 6, 7; ETA Services Guide 1/1/18; Law 152; Law 151 |
 
 ## Worked cases
 
@@ -149,7 +149,7 @@ expected:
 
 **Case C. New consultant, turnover EGP 240,000 in the first year, high margin.** Below the EGP 500,000 VAT limit, so registration is not yet required, but the e-invoice or e-receipt duty and any phase decision must still be checked. Compare the regimes now: 0.4% is EGP 960 against the general bands on profit. Monitor sales monthly and register for VAT within 30 days of reaching the limit. If growth is expected, weigh the five-year lock-in before filing form 10/1.
 
-**Case D. Old dispute and unfiled amended returns for periods before 2020.** The Law 5 of 2025 windows closed by 13 August 2025. Use a dispute committee request filed by 31 December 2026, or the Law 151 art. 4 settlement if the business is eligible. If a Law 5 settlement was already accepted, pay the instalments on its schedule. Evaluate the regimes for current years separately.
+**Case D. Old dispute and unfiled amended returns for periods before 2020.** The Law 5 of 2025 windows for old disputes and unfiled returns (arts. 6 and 3) closed by 13 August 2025. Use a dispute committee request filed by 31 December 2026, or the Law 151 art. 4 settlement if the business is eligible. If a Law 5 settlement was already accepted, pay the instalments on its schedule. Evaluate the regimes for current years separately.
 
 ## When to refuse or refer
 
@@ -193,5 +193,7 @@ Choosing the turnover regime: file form 10/1 طلبات on the ETA system (MoF 4
 | VAT Law 67 of 2016, art. 16 (page image read) | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.67-2016.pdf | 2026-11-16 |
 | Law 150 of 2026, art. 1 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.150.of_.2026.pdf | 2026-11-16 |
 | ETA list of VAT laws and decisions, list page read | https://eta.gov.eg/ar/content/qwanyn-aldrybt-ly-alqymt-almdaft | 2026-11-16 |
+| ETA Services Guide, 2nd edition, section 18/1, services 1/1/18 and 3/1/18 (Law 5 registration and dispute windows, MoF 167 of 2025 extension as reported) | https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf | 2026-11-17 |
+| ETA list of income tax laws and decisions, list page read (MoF 167 of 2025 not listed) | https://eta.gov.eg/ar/content/qwanyn-aldrybt-ly-aldkhl | 2026-11-17 |
 
-Not yet confirmed: the rule that, from 1 July 2023, only e-invoices prove costs for income tax for taxpayers on the e-invoice system. The reported cut of the VAT registration limit to EGP 250,000 under a Resolution 281 of 2025, with registration due before 31 March 2026 and a fine of EGP 20,000 plus EGP 1,000 a day: not in VAT Law art. 16 and not on the ETA VAT list read, so held (`egypt-vat` keeps 500,000). Whether MoF Decision 167 of 2025 extended the Law 5 art. 2 and art. 6 windows by three months from 13 May 2025 (the decision was not read; either way they ended by 13 August 2025). Whether any successor to Law 5 relief exists beyond Laws 151 and 152 of 2026.
+Not yet confirmed: the rule that, from 1 July 2023, only e-invoices prove costs for income tax for taxpayers on the e-invoice system. The reported cut of the VAT registration limit to EGP 250,000 under a Resolution 281 of 2025, with registration due before 31 March 2026 and a fine of EGP 20,000 plus EGP 1,000 a day: not in VAT Law art. 16 and not on the ETA VAT list read, so held (`egypt-vat` keeps 500,000). The end of the Law 5 art. 2 registration window: the ETA Services Guide reports that MoF Decision 167 of 2025 extended it by three months from 13 May 2025, but the decision itself was not read (not on the ETA income tax list read on 17 November 2026), and art. 2 fixes no length for the extension, so the extended end date is held. The art. 6 window ended by 13 August 2025 with or without that decision. Whether any successor to Law 5 relief exists beyond Laws 151 and 152 of 2026.
