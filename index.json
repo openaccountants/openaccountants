@@ -1,31 +1,15 @@
 {
- "generated_at": "2026-11-17T09:52:47+00:00",
+ "generated_at": "2026-11-17T12:14:57+00:00",
  "counts": {
-  "guides": 2548,
-  "loadable_skill_names": 2489,
+  "guides": 2552,
+  "loadable_skill_names": 2493,
   "jurisdictions": 290,
   "accountant_reviewed": 126,
-  "held_skill_names": 8
+  "held_skill_names": 4
  },
  "publication_holds": [
   {
-   "name": "cameroon-social-contributions",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "cross-border-payroll-coordination",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "laos-vat",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "ne-payroll-social",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "ne-vat-gst",
    "reason": "status: needs_sources"
   },
   {
@@ -612,7 +596,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "ad-corporate-income-tax",
@@ -677,7 +661,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "ad-transfer-pricing",
@@ -690,7 +674,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-16"
   },
   {
    "slug": "andorra-igi",
@@ -1041,7 +1025,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-28"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "am-corporate-income-tax",
@@ -1080,7 +1064,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-28"
+   "last_updated": "2026-11-16"
   },
   {
    "slug": "am-transfer-pricing",
@@ -1145,7 +1129,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-28"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "armenia-vat",
@@ -3667,7 +3651,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-16"
   },
   {
    "slug": "bw-corporate-income-tax",
@@ -3732,7 +3716,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-16"
   },
   {
    "slug": "bw-transfer-pricing",
@@ -4719,8 +4703,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-15"
+  },
+  {
+   "slug": "cameroon-social-contributions",
+   "mcp_slug": "cameroon-social-contributions",
+   "path": "skills/cameroon/cameroon-social-contributions.md",
+   "name": "cameroon-social-contributions",
+   "jurisdiction": "CM",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-15"
   },
   {
    "slug": "cameroon-transfer-pricing",
@@ -4745,8 +4742,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-15"
   },
   {
    "slug": "ab-corporate-tax",
@@ -6579,7 +6576,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "km-personal-tax-domicile",
@@ -6592,7 +6589,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-16"
   },
   {
    "slug": "km-registration-and-tax-clearance",
@@ -6605,7 +6602,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "km-transfer-pricing",
@@ -6800,7 +6797,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "croatia-vat-return",
@@ -6826,7 +6823,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "hr-corporate-income-tax",
@@ -6860,12 +6857,12 @@
    "path": "skills/croatia/hr-tax-overview.md",
    "name": "hr-tax-overview",
    "jurisdiction": "HR",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "hr-transfer-pricing",
@@ -7060,7 +7057,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "cyprus-vat-return",
@@ -10479,7 +10476,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-22"
+   "last_updated": "2026-11-15"
   },
   {
    "slug": "gi-category-2-income-tax",
@@ -10505,7 +10502,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-22"
+   "last_updated": "2026-11-15"
   },
   {
    "slug": "gi-company-formation",
@@ -10557,7 +10554,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-22"
+   "last_updated": "2026-11-15"
   },
   {
    "slug": "gi-foreign-tax-relief",
@@ -10766,6 +10763,19 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "cross-border-payroll-coordination",
+   "mcp_slug": "cross-border-payroll-coordination",
+   "path": "skills/global/cross-border/cross-border-payroll-coordination.md",
+   "name": "cross-border-payroll-coordination",
+   "jurisdiction": "INTL",
+   "category": "cross-border",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "cross-border-tax-router",
@@ -11097,13 +11107,13 @@
    "mcp_slug": "succession-and-forced-heirship-compared",
    "path": "skills/global/cross-border/succession-and-forced-heirship-compared.md",
    "name": "succession-and-forced-heirship-compared",
-   "jurisdiction": "general",
-   "category": null,
+   "jurisdiction": "GLOBAL",
+   "category": "cross-border",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-12"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "tax-controversy-map-apa",
@@ -11219,8 +11229,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-16"
   },
   {
    "slug": "uk-major-partners",
@@ -11253,13 +11263,13 @@
    "mcp_slug": "trusts-vs-foundations-by-country",
    "path": "skills/global/cross-border/trusts-vs-foundations-by-country.md",
    "name": "trusts-vs-foundations-by-country",
-   "jurisdiction": "general",
-   "category": null,
+   "jurisdiction": "GLOBAL",
+   "category": "cross-border",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-05"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "vat-place-of-supply-master",
@@ -19951,12 +19961,12 @@
    "path": "skills/niger/ne-corporate-income-tax.md",
    "name": "ne-corporate-income-tax",
    "jurisdiction": "NE",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "ne-money-transfer-tax-repeal",
@@ -19972,6 +19982,19 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "ne-payroll-social",
+   "mcp_slug": "ne-payroll-social",
+   "path": "skills/niger/ne-payroll-social.md",
+   "name": "ne-payroll-social",
+   "jurisdiction": "NE",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-17"
+  },
+  {
    "slug": "ne-tax-overview",
    "mcp_slug": "ne-tax-overview",
    "path": "skills/niger/ne-tax-overview.md",
@@ -19983,6 +20006,19 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "ne-vat-gst",
+   "mcp_slug": "ne-vat-gst",
+   "path": "skills/niger/ne-vat-gst.md",
+   "name": "ne-vat-gst",
+   "jurisdiction": "NE",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "ng-cgt",
@@ -20515,7 +20551,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "mk-corporate-income-tax",
@@ -20541,7 +20577,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "north-macedonia-cross-border",
@@ -20606,7 +20642,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "north-macedonia-transfer-pricing",
@@ -23193,7 +23229,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "st-income-tax",
@@ -23206,7 +23242,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "st-payroll-social",
@@ -23232,7 +23268,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "st-vat-gst",
@@ -23245,7 +23281,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "references",
@@ -32904,7 +32940,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "references",
