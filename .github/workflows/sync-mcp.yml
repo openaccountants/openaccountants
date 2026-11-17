@@ -20,6 +20,9 @@ on:
       - '.github/workflows/sync-mcp.yml'
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 concurrency:
   group: sync-mcp
   cancel-in-progress: false
