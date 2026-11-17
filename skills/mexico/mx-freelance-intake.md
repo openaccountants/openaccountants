@@ -255,6 +255,10 @@ For late tax, the applicable CFF update/recargos rules and current fine classifi
 - [ ] Employees, PTU, own insurance and employer IMSS separated; deductions sent to the correct annual branch.
 - [ ] Client document checklist and open items handed to assembly; no unsupported figure or unresolved secret placed in the case record.
 
+## Disclaimer
+
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Contador Público Certificado, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+
 ## Sources
 
 Read on **2026-11-17** means the specified provisions were actually read, not merely downloaded. Native excerpts below identify the controlling propositions; this is a provision-level reading, not a claim that every page of each law was reviewed.

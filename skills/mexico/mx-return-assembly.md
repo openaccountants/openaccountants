@@ -113,6 +113,8 @@ For losses: retain the year originated, original loss, PTU component, available 
 
 These deductions apply to the eligible individual's annual progressive-tax calculation; they do not reduce definitive RESICO ISR. A prefilled invoice is a candidate, not proof. Require the proper CFDI, actual eligible payment, correct beneficiary and any certificate. Do not duplicate a business deduction.
 
+For medical and funeral deductions under art. 151 I–II, the fiscal evidence must establish amounts actually paid during the calendar year to institutions or persons resident in Mexico. Record any recovered or reimbursed amount and deduct only the unrecovered difference. Carry these tests into the medical and funeral validation below before including either amount in F. [LISR art. 151, common paragraph for I–II](https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf).
+
 | Personal deduction | Conditions and cap | Official source |
 |---|---|---|
 | Medical/dental, qualifying psychology/nutrition and hospital costs | Proper professional title/provider, eligible taxpayer/spouse/cohabiting partner/direct ascendant or descendant; qualifying family-income condition; specified taxpayer-account cheque, transfer or card payment. Ordinary costs are subject to the global cap. | LISR art. 151 I: https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf |
@@ -311,6 +313,10 @@ CFF art. 22's ordinary **40-day** return period starts from a properly supported
 - [ ] Correct year's annual tariff and operative administrative procedure used; 2025 screens not passed off as the 2026-income service.
 - [ ] CLABE, election and existing requests checked; payment/refund/debt follow-up assigned.
 - [ ] Human approval, submitted return, acuse, capture line, actual bank receipt and subsequent status retained where submission occurred. Otherwise label the output **working papers only**.
+
+## Disclaimer
+
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Contador Público Certificado, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 ## Sources
 
