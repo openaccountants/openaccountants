@@ -1,19 +1,15 @@
 {
- "generated_at": "2026-11-17T09:52:47+00:00",
+ "generated_at": "2026-11-17T10:50:03+00:00",
  "counts": {
-  "guides": 2548,
-  "loadable_skill_names": 2489,
+  "guides": 2549,
+  "loadable_skill_names": 2490,
   "jurisdictions": 290,
   "accountant_reviewed": 126,
-  "held_skill_names": 8
+  "held_skill_names": 7
  },
  "publication_holds": [
   {
    "name": "cameroon-social-contributions",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "cross-border-payroll-coordination",
    "reason": "status: needs_sources"
   },
   {
@@ -612,7 +608,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "ad-corporate-income-tax",
@@ -677,7 +673,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "ad-transfer-pricing",
@@ -690,7 +686,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-16"
   },
   {
    "slug": "andorra-igi",
@@ -6579,7 +6575,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "km-personal-tax-domicile",
@@ -6592,7 +6588,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-16"
   },
   {
    "slug": "km-registration-and-tax-clearance",
@@ -6605,7 +6601,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "km-transfer-pricing",
@@ -10479,7 +10475,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-22"
+   "last_updated": "2026-11-15"
   },
   {
    "slug": "gi-category-2-income-tax",
@@ -10505,7 +10501,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-22"
+   "last_updated": "2026-11-15"
   },
   {
    "slug": "gi-company-formation",
@@ -10557,7 +10553,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-22"
+   "last_updated": "2026-11-15"
   },
   {
    "slug": "gi-foreign-tax-relief",
@@ -10766,6 +10762,19 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "cross-border-payroll-coordination",
+   "mcp_slug": "cross-border-payroll-coordination",
+   "path": "skills/global/cross-border/cross-border-payroll-coordination.md",
+   "name": "cross-border-payroll-coordination",
+   "jurisdiction": "INTL",
+   "category": "cross-border",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "cross-border-tax-router",
@@ -20515,7 +20524,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "mk-corporate-income-tax",
@@ -20541,7 +20550,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "north-macedonia-cross-border",
@@ -20606,7 +20615,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "north-macedonia-transfer-pricing",
