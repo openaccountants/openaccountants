@@ -1,0 +1,992 @@
+{
+  "date": "2026-11-16",
+  "status": "HOLD — partial official-source recovery; Cyprus remains draft and excluded from merge",
+  "qualifies_historical_review": "REPORT.md/RECEIPT.json/row-results.json remain historical substantive-review receipts. Their acceptance is superseded for publication eligibility by this provenance HOLD; they do not establish official-source compliance.",
+  "guide_at_review_sha256": "d5aac6be13ca26518d6fc84ee0d2467bee116241a042b63752bba16e7c70eb91",
+  "official_recovery": {
+    "url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 2305972,
+    "sha256": "9891d351a097a80588bb2aa8ef5db39d20dd08e4fd2c6dadd45f99e2d78d1e4f",
+    "local_pdf": "provenance-cache/official-gazette5070.pdf",
+    "local_text": "provenance-cache/official-gazette5070.txt",
+    "access_path": "Direct urllib outside network sandbox, public government URL; initial web reader timed out. No security bypass.",
+    "visual_read": "Government244/245first pages rendered and checked: issue5070,31December2025, law numbers, Article52promulgation, printed pages1281/1300.",
+    "comparison": {
+      "method": "Whitespace-token comparison after removing standalone printed page-number lines.244 government PDF35–53 vs prior244text;245from government PDF54 through end of law245 vs prior245text, excluding private clerk/footer and subsequentlaw246.",
+      "244_tokens_each": 7744,
+      "244_identical": true,
+      "245_operative_tokens_each": 7671,
+      "245_identical": true,
+      "byte_equality": "Not claimed. Whole government issue differs from extracted/private copies."
+    }
+  },
+  "remaining_source_dependencies": {
+    "income": "Actual official base/consolidated118(I)/2002 and retained conditions; current correction/17/66/67(2026) chain. A government copy through219(I)/2025 was identified but not read (403).",
+    "SDC": "Actual official117(I)/2002 base through220(I)/2025 for domicile/residence definitions and exceptions; current applicability chain.245published body identity closed, not old article2 text.",
+    "assessment": "Actual official4/1978 article30 base for specified-income scope and200000/500000/two-year review gate;243article17only changes70000to120000.",
+    "GHS": "Actual official current89(I)/2001articles16/19and amendment chain; HIO legislation route identified, current copy not recovered in bounded pass.",
+    "historical_domicile": "Official119(I)/2015publication/commencement identity, unless supplied by an official current base copy; prior private PDF reading retained but not official identity proof."
+  },
+  "access_results": [
+    {
+      "route": "GPO Gazette5070",
+      "web_reader": "timeout",
+      "sandbox_urllib": "DNS failure",
+      "escalated_urllib": "200PDF; recovered and compared"
+    },
+    {
+      "route": "Tax Department income landing",
+      "url": "https://www.gov.cy/mof-tax/documents/nomothesia-egkyklioi-kai-synafes-yliko-amesis-forologias/nomoi/n-118i-2002-o-peri-forologias-toy-eisodimatos-nomos-toy-2002/",
+      "web_reader": "403",
+      "escalated_urllib": "403"
+    },
+    {
+      "route": "Tax Department legislation index",
+      "url": "https://www.gov.cy/mof-tax/documents/eyretirio-nomothesias/",
+      "web_reader": "403; search-indexed description is discovery, not recovered document"
+    },
+    {
+      "route": "Official income base through219/2025",
+      "url": "https://www.mof.gov.cy/mof/tax/taxdep.nsf/All/F4E48D3487A29A88C2258D6F003D7418/%24file/IT118%28I%29%202002.pdf?OpenElement=",
+      "web_reader": "403",
+      "escalated_urllib": "403"
+    },
+    {
+      "route": "Official SDC base through220/2025",
+      "url": "https://www.mof.gov.cy/mof/tax/taxdep.nsf/All/F9C2A74872F3C5FAC22581FA002B70E8/%24file/Defence%20117%28I%292002.pdf?OpenElement=",
+      "web_reader": "403",
+      "escalated_urllib": "403"
+    },
+    {
+      "route": "Browser fallback",
+      "result": "Selected Brave; tab creation failed with tool timeoutMs error before page read; no source recovery claimed."
+    },
+    {
+      "route": "Official assessment landing",
+      "url": "https://www.gov.cy/mof-tax/documents/nomothesia-egkyklioi-kai-synafes-yliko-amesis-forologias/nomoi/n-4-1978-o-peri-vevaioseos-kai-eispraxeos-foron-nomos-toy-1978/",
+      "result": "Identified in official search; actual base PDF not recovered."
+    },
+    {
+      "route": "HIO legislation",
+      "url": "https://www.gesy.org.cy/sites/Sites?d=Desktop&locale=el_GR&lookuphost=%2Fel-gr%2F&lookuppage=hiolegislation",
+      "result": "Identified in official search; current base/chain not recovered.2017English rendering and2022consolidation are not asserted current."
+    }
+  ],
+  "counts": {
+    "rows": 63,
+    "government_amendment_passage_identity_closed": 37,
+    "government_amendment_partial_old_base_pending": 5,
+    "official_current_base_pending": 19,
+    "existing_official_social_insurance_rows": 2,
+    "full_publication_gate": "HOLD"
+  },
+  "rows": [
+    {
+      "id": "CY-01",
+      "claim": "2026 reform commencement; delayed paragraph exception not applied prematurely",
+      "original_source": "https://www.cylaw.org/nomoi/arith/2025_1_244.pdf",
+      "original_capture": "cache/15dca5bc6d.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-02",
+      "claim": "2026 bands 22k/32k/42k/72k; rates0/20/25/30/35",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-03",
+      "claim": "2026 marginal-band boundary €22.000; following rate is applied only to the slice",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-04",
+      "claim": "2026 marginal-band boundary €32.000; following rate is applied only to the slice",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-05",
+      "claim": "2026 marginal-band boundary €42.000; following rate is applied only to the slice",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-06",
+      "claim": "2026 marginal-band boundary €72.000; following rate is applied only to the slice",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-07",
+      "claim": "More than183days primary test;60day cumulative alternative",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-08",
+      "claim": "No more183days stay in any one otherstate; other tax residence no longer exclusion",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-09",
+      "claim": "60days plus business/employment/office in CYtaxresidentperson; termination condition; owned/rented permanenthome",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-10",
+      "claim": "Departure outside;arrival inside;same-day distinctions",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-11",
+      "claim": "SDC resident means income-tax-resident AND domicile; non-dom/nonresident excluded individual SDC",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-12",
+      "claim": "Foreignchoice + any20consecutive nonresidentyears;precommencement exception;17of20deemed;20exit",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-13",
+      "claim": "First exception is any20-yearperiod,not necessarily immediately preceding taxyear",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-14",
+      "claim": "RentalSDC abolished from2026 replacementlaw; no non-dom rentadvantage",
+      "original_source": "https://www.cylaw.org/nomoi/arith/2025_1_245.pdf",
+      "original_capture": "cache/authentic245.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-15",
+      "claim": "SDC amendment actual2026commencement, consolidationnote numbertypo resolved",
+      "original_source": "https://www.cylaw.org/nomoi/arith/2025_1_245.pdf",
+      "original_capture": "cache/authentic245.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-16",
+      "claim": "NoCYorigin + deemed domicile; annual50000 independent income",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-17",
+      "claim": "Irrevocable5consecutiveyears",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-18",
+      "claim": "Prescribed acceptedapplicationby30Junfirstyear",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-19",
+      "claim": "250000oneinstalment,endmonthfollowingapproval;lateinvalidatesallperiod",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-20",
+      "claim": "No offset,nonrefund,noforeigntaxcredit,exhaustsSDC;max2periods",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-21",
+      "claim": "Individual ordinarydividend5% and priorcharged/deemedrelief",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-22",
+      "claim": "Oldprofit<=2025,CYresidentcompany,6yeartransition17%,no8profit-yearrestriction",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-23",
+      "claim": "Generalinterest17% and compensationexemption,lowincome<=12000refundto3%",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-24",
+      "claim": "Specified government/listedqualifyingsecuritiesinterest3%",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-25",
+      "claim": "70%netcorporatetaxprofits2024/25,2years17%",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-26",
+      "claim": "OnlyindividualSDCresidentprofitshare;actualdividendsoffset;dissolutionseparate",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-27",
+      "claim": "Disguiseddistribution10%;indirectshareholdersincluded",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-28",
+      "claim": "Privateusemarketvalue/proportion;increaseusescurrentvalue;nodecreaserefund",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-29",
+      "claim": "Belowmarkettransferlessconsideration/priorusebenefit;donorexceptions;employment/capitalexclusions;laternofund",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "original_capture": "cache/sdc.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,245(I)/2025,PDF54–71/printed1300–1317",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-30",
+      "claim": "Individualdividendsincome-taxexempt,notautomaticallyGHSexempt",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-31",
+      "claim": "Ordinaryperson2.65%;employer2.90%;selfemployed4%",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html",
+      "original_capture": "cache/ghs.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-32",
+      "claim": "Selfemployed4% operativecurrentstatute,notjust2025returnguide",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html",
+      "original_capture": "cache/ghs.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-33",
+      "claim": "Incomeearner2.65% including dividendincome",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html",
+      "original_capture": "cache/ghs.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-34",
+      "claim": "180000aggregatebase/order/refund;notperpayer",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html",
+      "original_capture": "cache/ghs.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-35",
+      "claim": "Coordinationcoveragecondition,procedureheld",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html",
+      "original_capture": "cache/ghs.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-36",
+      "claim": "ManagedcontrolORincorporationexcepttreaty;seattransferdeemedincorporation",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-37",
+      "claim": "Corporate15%taxableprofit",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-38",
+      "claim": "Loss7yearscope and ownership/businesschange restrictions",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_partially_closes_identity_base_and_chain_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "244 article8 changes the carry-forward period; underlying13(1) scope and ownership/business restrictions require official base text.",
+      "unsatisfied": [
+        "Official underlying retained base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-39",
+      "claim": "Additional R&D deduction 20% in 2025-2030: R&D recognized under international accounting standards; business and economic ownership of resulting/potential intangible; exclude art.10 machinery/plant/building/staff accommodation costs; capital timing; no IP box for same asset in any year",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_partially_closes_identity_base_and_chain_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "244 article5 replaces9(1)(d) provisos: extra20%, dates, capital timing, art10 exclusion and IP interaction. Opening business/economic-ownership/IAS condition remains old text and needs official base copy.",
+      "unsatisfied": [
+        "Official underlying retained base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-40",
+      "claim": "SI16.6person5.2state;insurableincome",
+      "original_source": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "original_capture": "cache/guide-source-07.txt",
+      "provenance_status": "existing_official_source_retained",
+      "official_passage": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "dependency_note": "Already read government business portal contribution/earnings paragraphs; no private law database dependency for this row.",
+      "unsatisfied": [],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": true
+    },
+    {
+      "id": "CY-41",
+      "claim": "Estimatedearnings,notflataccountingprofit",
+      "original_source": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "original_capture": "cache/guide-source-07.txt",
+      "provenance_status": "existing_official_source_retained",
+      "official_passage": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "dependency_note": "Already read government business portal contribution/earnings paragraphs; no private law database dependency for this row.",
+      "unsatisfied": [],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": true
+    },
+    {
+      "id": "CY-42",
+      "claim": "120000turnover+specifiedothergrossincomeaccounts exemption,recordsremain",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html",
+      "original_capture": "cache/assessment.txt",
+      "provenance_status": "official_amendment_partially_closes_identity_base_and_chain_hold",
+      "official_passage": "Gazette5070,243(I)/2025,PDF14–34/printed1260–1280",
+      "dependency_note": "243 article17 substitutes120000 for70000; full natural-person specified-income scope remains in underlying30(1).",
+      "unsatisfied": [
+        "Official underlying retained base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-43",
+      "claim": "Reviewrouteabove120000upto200000 andassets5000002consecutiveyears",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html",
+      "original_capture": "cache/assessment.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-44",
+      "claim": "Thresholdamendmentoperative2026;old70kstale",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html",
+      "original_capture": "cache/assessment.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,243(I)/2025,PDF14–34/printed1260–1280",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-45",
+      "claim": "Crypto8%separate;anyperson;miningexcluded;lossessameyearonlynocfgroup",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-46",
+      "claim": "Crypto disposalincludes sale/gift/swap/payment",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-47",
+      "claim": "Shareplanresidentemployee/directorapprovedperperson8%",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-48",
+      "claim": "Twiceemployerincomevestingendyear exclbenefit;excessordinary",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-49",
+      "claim": "3yearvestingapprovalstart,nontransfer,sharetypes,50%valuepricefloor",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-50",
+      "claim": "Expiredtransition30Jun2026;3yearvestinghadnotendedbydate",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-51",
+      "claim": "Rolling10year1mcap;connectedexclusion;separateincome",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_passage_identity_closed_current_applicability_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "Relied-on replacement/new provision or commencement appears in recovered government Gazette5070; full244/245 operative-text comparison matches prior reading.",
+      "unsatisfied": [
+        "Official current amendment/applicability chain not closed in this bounded pass"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-52",
+      "claim": "Foreignpensionresident5%above5000annualchoiceordinary",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_partially_closes_identity_base_and_chain_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "244 article12 changes pension threshold to5000 and rate wording to5%; foreign-services/residence/election scope remains underlying20.",
+      "unsatisfied": [
+        "Official underlying retained base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-53",
+      "claim": "80%qualifyingprofitdeduction;waiver;eligibleloss20%;paragraphεpriority;regulationsneeded",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-54",
+      "claim": "21B25%cap25000earnings/profit>30000first12monthandannual",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-55",
+      "claim": "21Bstart2025-2030;7yearsfromstart;CYresidentexceptstart;prior7nonresidentandearlierresident",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-56",
+      "claim": "21Bdegree+36of84monthsor84fulltimeforeignemployer;nonstack21A;once",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-57",
+      "claim": "23A50%;15nonresidentyears;firstemployment2022on",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-58",
+      "claim": "23A17yearsoruntilrepeal;strict>55000;first/secondyearantifluctuation/start12months",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-59",
+      "claim": "23AfirstpaidCYservicesafter15taxyearsnone;resident/nonresidentemployer",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-60",
+      "claim": "23Atransitionspre2022continuous/protectedpre2023beneficiaries,nonstack21/21A/21B/23,once",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-61",
+      "claim": "21A20%cap8550,prior3foreignemployeryears,2022pub-2027start,7followingyears,23Adefinition",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-62",
+      "claim": "Legacy21same20%8550butoldeligibility/duration;23historicreferral",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_base_identity_and_current_applicability_hold",
+      "official_passage": null,
+      "dependency_note": "Prior substantive reading retained as evidence of work, but private-hosted consolidation/facsimile is not accepted as official source identity.",
+      "unsatisfied": [
+        "Actual official copy of relied-on current/base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    },
+    {
+      "id": "CY-63",
+      "claim": "GAARnongenuinearrangementmainpurposeadvantage defeatsobject/commercialreality",
+      "original_source": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "original_capture": "cache/income.txt",
+      "provenance_status": "official_amendment_partially_closes_identity_base_and_chain_hold",
+      "official_passage": "Gazette5070,244(I)/2025,PDF35–53/printed1281–1299",
+      "dependency_note": "244 article18 removes corporate-only limitation; underlying full33A test is not reproduced.",
+      "unsatisfied": [
+        "Official underlying retained base provision",
+        "Official current amendment/applicability chain"
+      ],
+      "substantive_review": "retained; no full legal rereview or case rerun",
+      "publication_usable": false
+    }
+  ],
+  "original_four_nonusable_holds": "TD38;TD631/TFAadvance/attachments;foreign-GHSscope/docs/exclusivity;IPasset/nexusregulations remain. This provenance HOLD is additional.",
+  "reuse": "Both independently calculated cases,178-line preservation and completed operative-text review retained; no duplicate63-row research/test suite.",
+  "mutations": "Only this local review addendum and local official capture created. Shared Guide/source/ledger, historical receipt and Git untouched."
+}
