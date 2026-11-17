@@ -1,19 +1,19 @@
 ---
 name: ne-vat-gst
-description: "Niger value added tax (taxe sur la valeur ajoutée, TVA) for 2026: the full list of exempt operations and products as replaced from 1 January 2026 and again from 21 August 2026, the input VAT that may not be deducted (including purchases of XOF 2,000,000 or more not paid by bank and gifts above XOF 20,000), and the registration duty and fines. Built only from the two 2026 finance ordinances actually read (Ordonnance 2025-44 and its first rectification, Ordonnance 2026-45). The standard VAT rate, any reduced rate, the registration threshold, the return and payment calendar, refunds and the reverse charge on imported services sit on visible holds because the consolidated 2026 Code was not readable. Use it to screen whether a supply is exempt and whether input VAT is deductible, not to compute output VAT. Two executable cases. Not yet approved by an accountant."
+description: "Niger value added tax (taxe sur la valeur ajoutée, TVA) for 2026: the full list of exempt operations and products as replaced from 1 January 2026 and again from 21 August 2026, the input VAT that may not be deducted (including purchases of XOF 2,000,000 or more not paid by bank and gifts above XOF 20,000), and the registration duty and fines. Built only from the two 2026 finance ordinances actually read (Ordonnance 2025-44 and its first rectification, Ordonnance 2026-45). The standard VAT rate, any reduced rate, the registration threshold, the return and payment calendar, refunds and the reverse charge on imported services sit on visible holds because the consolidated 2026 Code was not readable. Use it to screen exemptions and listed input-VAT exclusions. It cannot establish a right to deduct or a deductible total: general entitlement, timing and pro-rata remain held. Two executable exclusion-screen cases. Not yet approved by an accountant."
 jurisdiction: NE
 category: international
 tax_year: 2026
 tax_year_notes: "Calendar 2026. Ordonnance 2025-44 amendments apply from 1 January 2026; Ordonnance 2026-45 amendments apply from its signature on 21 August 2026."
 last_updated: 2026-11-17
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.1
+version: 0.2
 tier: 2
 domain: vat-gst
 type: situation-rules
 ---
 
-# Niger VAT (TVA) v0.1
+# Niger VAT (TVA) v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -21,7 +21,7 @@ type: situation-rules
 
 ## Who this applies to
 
-Businesses making operations within the scope of Niger VAT, and their advisers, who need to know whether an operation is exempt and whether VAT on a purchase is deductible. The CGI ties VAT to the UEMOA framework: Ordonnance 2025-44 refers to "la directive communautaire portant harmonisation des législations des Etats membres en matière de taxe sur la valeur ajoutée" [CGI art. 23(3), PDF page 5](https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44). Who must register, the turnover threshold and the rate were not in the texts read and are held.
+Businesses making operations within the scope of Niger VAT, and their advisers, who need to screen exempt operations and the listed input-VAT exclusions. Passing an exclusion screen does not establish deduction entitlement, timing or the deductible amount. The CGI ties VAT to the UEMOA framework: Ordonnance 2025-44 refers to "la directive communautaire portant harmonisation des législations des Etats membres en matière de taxe sur la valeur ajoutée" [CGI art. 23(3), PDF page 5](https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44). Who must register, the turnover threshold and the rate were not in the texts read and are held.
 
 ## Rates, bands and thresholds
 
@@ -115,7 +115,7 @@ The registration fines are in the table. Fraudulent use of a tax identification 
 
 ## Two worked examples that recompute
 
-**1. Input VAT screen.** In October 2026 a business holds four purchase invoices, each with the VAT amount shown on it (amounts taken as documented; no rate is assumed): office equipment, XOF 3,000,000 excluding VAT, paid by bank transfer, VAT XOF 540,000; goods for resale, XOF 2,500,000, paid in cash, VAT XOF 450,000; a passenger car used as a fixed asset, VAT XOF 1,800,000; staff restaurant meals, VAT XOF 90,000. Only the office equipment VAT is deductible: the cash purchase is excluded by art. 339(g), the car by 339(b) and the meals by 339(a). Deductible VAT is XOF 540,000; excluded VAT is XOF 2,340,000.
+**1. Input VAT screen.** In October 2026 a business holds four purchase invoices, each with the VAT amount shown on it (amounts taken as documented; no rate is assumed): office equipment, XOF 3,000,000 excluding VAT, paid by bank transfer, VAT XOF 540,000; goods for resale, XOF 2,500,000, paid in cash, VAT XOF 450,000; a passenger car used as a fixed asset, VAT XOF 1,800,000; staff restaurant meals, VAT XOF 90,000. The cash purchase is excluded by art. 339(g), the car by 339(b) and the meals by 339(a): excluded VAT is XOF 2,340,000. The office-equipment VAT of XOF 540,000 survives these specified exclusion screens on the stated facts. It is a potential amount only. General entitlement, timing and any pro-rata remain unconfirmed, so no right to deduct or deductible total is established.
 
 ```oa-check
 name: Niger 2026 input VAT exclusions under CGI art. 339
@@ -125,16 +125,16 @@ inputs:
   vat_passenger_car: 1800000
   vat_staff_meals: 90000
 steps:
-  deductible: vat_office_equipment_bank
+  potential_after_listed_exclusions: vat_office_equipment_bank
   excluded: vat_cash_purchase_over_limit + vat_passenger_car + vat_staff_meals
-  total_documented: deductible + excluded
+  total_documented: potential_after_listed_exclusions + excluded
 expected:
-  deductible: 540000
+  potential_after_listed_exclusions: 540000
   excluded: 2340000
   total_documented: 2880000
 ```
 
-**2. Advertising gifts at the XOF 20,000 boundary.** A business gives away 100 branded items at XOF 20,000 each excluding VAT (documented VAT XOF 3,600 each) and 50 items at XOF 20,500 each (documented VAT XOF 3,690 each). Items whose unit price does not exceed XOF 20,000 keep the deduction; the dearer items do not. Deductible VAT XOF 360,000; excluded VAT XOF 184,500. Decision: keeping each item's unit price at or below XOF 20,000 excluding VAT is what keeps the VAT deductible.
+**2. Advertising gifts at the XOF 20,000 boundary.** A business gives away 100 branded items at XOF 20,000 each excluding VAT (documented VAT XOF 3,600 each) and 50 items at XOF 20,500 each (documented VAT XOF 3,690 each). The first lot falls within the low-value advertising exception to art. 339(c); the dearer items do not. VAT surviving only this gift-exclusion screen is XOF 360,000; VAT excluded by the gift rule is XOF 184,500. The first lot totals XOF 2,000,000 excluding VAT and XOF 2,360,000 including documented VAT (both totals derived). Its payment method was not supplied: the bank-payment condition in art. 339(g) remains unresolved under either threshold basis. Decision: the unit-price limit answers only the gift-exclusion question. General entitlement, timing, pro-rata and the payment condition remain unconfirmed, so no right to deduct or deductible total is established.
 
 ```oa-check
 name: Niger 2026 advertising gifts, unit price limit XOF 20,000
@@ -144,10 +144,10 @@ inputs:
   qty_over_limit: 50
   vat_each_over_limit: 3690
 steps:
-  deductible: qty_at_limit * vat_each_at_limit
+  potential_after_gift_exclusion: qty_at_limit * vat_each_at_limit
   excluded: qty_over_limit * vat_each_over_limit
 expected:
-  deductible: 360000
+  potential_after_gift_exclusion: 360000
   excluded: 184500
 ```
 
