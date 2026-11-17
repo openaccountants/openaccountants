@@ -1,0 +1,1270 @@
+{
+ "about": "Lines in the skills that OpenAccountants calculations rely on. Keep each one, word for word, when you edit its skill.",
+ "lines": [
+  {
+   "slug": "ab-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Alberta says: \"In 2026, thresholds and credit amounts will rise by 2%.\""
+  },
+  {
+   "slug": "ab-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Basic personal amount | $22,323 | 2025"
+  },
+  {
+   "slug": "ab-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Basic personal amount | $22,769 | 2026"
+  },
+  {
+   "slug": "ab-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Rate used for non-refundable credits (\"specified percentage\") | 8% | 2025 and later"
+  },
+  {
+   "slug": "ab-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Supplemental tax credit | 25% of (credits at 8%, leaving out unused tuition, minus $4,800) | 2025"
+  },
+  {
+   "slug": "ab-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Taxable income up to $60,000 | 8% | 2025\n$60,000.01 to $151,234 | 10% ... | 2025\n$151,234.01 to $181,481 | 12% ... | 2025\n$181,481.01 to $241,974 | 13% ... | 2025\n$241,974.01 to $362,961 | 14% ... | 2025\nOver $362,961 | 15% ... | 2025"
+  },
+  {
+   "slug": "ab-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Taxable income up to $61,200 | 8% | 2026\n$61,200.01 to $154,259 | 10% | 2026\n$154,259.01 to $185,111 | 12% | 2026\n$185,111.01 to $246,813 | 13% | 2026\n$246,813.01 to $370,220 | 14% | 2026\nOver $370,220 | 15% | 2026"
+  },
+  {
+   "slug": "ab-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Three 2026 amounts are not printed by the CRA or Alberta yet\nsupplemental tax credit base: $4,896 (2025: $4,800);"
+  },
+  {
+   "slug": "ab-individual-return",
+   "section": "The taxable base",
+   "quote": "CPP and EI (lines 30800, 31000, 31200 and 31217 of the return)"
+  },
+  {
+   "slug": "au-individual-return",
+   "section": "Section 1 -- Quick Reference / Small Business Income Tax Offset (SBITO) [T1]; Section 4 -- Worked Examples / Example 1 -- Standard Sole Trader (Graphic Designer)",
+   "quote": "Rate | 16% of income tax on business income\nbusiness is 100% of income, so 16% x 15,070"
+  },
+  {
+   "slug": "au-rates-2026-27",
+   "section": "Individual income tax / Offsets and deductions",
+   "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
+  },
+  {
+   "slug": "au-rates-2026-27",
+   "section": "Individual income tax / Offsets and deductions",
+   "quote": "LITO | $700 to $37,500; taper 5c/$1 to $45,000; then 1.5c/$1 to nil at $66,667"
+  },
+  {
+   "slug": "au-rates-2026-27",
+   "section": "Individual income tax / Offsets and deductions",
+   "quote": "SBITO | ... aggregated turnover must be < $5m"
+  },
+  {
+   "slug": "au-rates-2026-27",
+   "section": "Individual income tax / Offsets and deductions",
+   "quote": "SBITO | ... capped at $1,000"
+  },
+  {
+   "slug": "au-rates-2026-27",
+   "section": "Individual income tax / Offsets and deductions",
+   "quote": "SBITO | For eligible individuals with positive taxable income: 16% x (total net small business income / taxable income) x basic income tax liability"
+  },
+  {
+   "slug": "au-rates-2026-27",
+   "section": "Individual income tax / Resident brackets",
+   "quote": "Taxable income | 2025-26 rate | 2026-27 rate\n$0 -- $18,200 | 0% | 0%\n$18,201 -- $45,000 | 16% | **15%**\n$45,001 -- $135,000 | 30% | 30%\n$135,001 -- $190,000 | 37% | 37%\n$190,001+ | 45% | 45%"
+  },
+  {
+   "slug": "au-rates-2026-27",
+   "section": "Medicare",
+   "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
+  },
+  {
+   "slug": "au-rates-2026-27",
+   "section": "Medicare",
+   "quote": "Levy | 2% of taxable income"
+  },
+  {
+   "slug": "au-rates-2026-27",
+   "section": "Medicare",
+   "quote": "MLS base tier | Single $101,000 / family $202,000 (then 1% / 1.25% / 1.5%)"
+  },
+  {
+   "slug": "bc-individual-return",
+   "section": "2026 basic non-refundable credits",
+   "quote": "Basic personal amount (BC428 line 16) | $13,216 | 2026"
+  },
+  {
+   "slug": "bc-individual-return",
+   "section": "2026 basic non-refundable credits",
+   "quote": "CPP base contributions | up to $3,519.45 | 2026\nEI premiums | up to $1,123.07 | 2026"
+  },
+  {
+   "slug": "bc-individual-return",
+   "section": "2026 BC tax reduction and other credits",
+   "quote": "BC tax reduction, basic amount | $690 | 2026 to 2030\nBC tax reduction, net income threshold where it starts to fall | $25,570 | 2026\nBC tax reduction, rate of reduction | 3.56% of net income above the threshold | 2026"
+  },
+  {
+   "slug": "bc-individual-return",
+   "section": "Rates, bands and thresholds / 2025 figures",
+   "quote": "Basic personal amount (line 16) | $12,932 | 2025"
+  },
+  {
+   "slug": "bc-individual-return",
+   "section": "Rates, bands and thresholds / 2025 figures",
+   "quote": "BC tax reduction: basic reduction (line 73) | $562 | 2025\nBC tax reduction: base amount (line 75), where it starts to fall | $25,020 | 2025\nBC tax reduction: rate (line 77) | 3.56% | 2025"
+  },
+  {
+   "slug": "bc-individual-return",
+   "section": "Rates, bands and thresholds / 2025 figures",
+   "quote": "Credit rate (line 55) | 5.06% | 2025"
+  },
+  {
+   "slug": "bc-individual-return",
+   "section": "Rates, bands and thresholds / 2025 figures (for 2025 returns), as printed on Form BC428 2025",
+   "quote": "Taxable income $0 to $49,279 | 5.06% | 2025\n$49,279.01 to $98,560 ... | 7.7% | 2025\n$98,560.01 to $113,158 ... | 10.5% | 2025\n$113,158.01 to $137,407 ... | 12.29% | 2025\n$137,407.01 to $186,306 ... | 14.7% | 2025\n$186,306.01 to $259,829 ... | 16.8% | 2025\nOver $259,829 ... | 20.5% | 2025"
+  },
+  {
+   "slug": "bc-individual-return",
+   "section": "Rates, bands and thresholds / 2026 brackets and rates",
+   "quote": "Credit rate for non-refundable credits (lowest rate) | 5.6% | 2026"
+  },
+  {
+   "slug": "bc-individual-return",
+   "section": "Rates, bands and thresholds / 2026 brackets and rates",
+   "quote": "Taxable income $0 to $50,363 | 5.6% | 2026\n$50,363.01 to $100,728 ... | 7.7% | 2026\n$100,728.01 to $115,648 ... | 10.5% | 2026\n$115,648.01 to $140,430 ... | 12.29% | 2026\n$140,430.01 to $190,405 ... | 14.7% | 2026\n$190,405.01 to $265,545 ... | 16.8% | 2026\nOver $265,545 ... | 20.5% | 2026"
+  },
+  {
+   "slug": "ca-fed-cpp-ei",
+   "section": "4.5 Tax treatment of self-employed CPP (Tier 1)",
+   "quote": "CPP2 split -- CPP2 contributions (8% between YMPE and YAMPE) are DEDUCTIBLE, not creditable"
+  },
+  {
+   "slug": "ca-fed-cpp-ei",
+   "section": "4.5 Tax treatment of self-employed CPP (Tier 1)",
+   "quote": "federal credit at the lowest federal rate: 14.5% for 2025, 14% for 2026"
+  },
+  {
+   "slug": "ca-fed-cpp-ei",
+   "section": "4.6 EI for self-employed (Tier 1)",
+   "quote": "(line 31200 is EI through employment)"
+  },
+  {
+   "slug": "ca-fed-cpp-ei",
+   "section": "Rates and thresholds / CPP-CPP2-EI",
+   "quote": "Employee CPP2 rate -- 4.00%\nSelf-employed CPP2 rate (2x employee) -- 8.00%"
+  },
+  {
+   "slug": "ca-fed-cpp-ei",
+   "section": "Rates and thresholds / CPP-CPP2-EI",
+   "quote": "line 22200 deduction = employer-equivalent half of the BASE contribution (4.95% of the 9.9%) plus ALL enhancement (first-additional and CPP2) contributions; only the employee-equivalent half of the base is the line 31000 credit"
+  },
+  {
+   "slug": "ca-fed-cpp-ei",
+   "section": "Rates and thresholds / CPP-CPP2-EI",
+   "quote": "Max insurable earnings (MIE) -- $65,700.00"
+  },
+  {
+   "slug": "ca-fed-cpp-ei",
+   "section": "Rates and thresholds / CPP-CPP2-EI",
+   "quote": "YAMPE -- $81,200.00"
+  },
+  {
+   "slug": "ca-fed-cpp-ei",
+   "section": "Section 1 -- Quick reference / CPP1 thresholds (2025)",
+   "quote": "CPP1 thresholds (2025)\nEmployee rate | 5.95%\nSelf-employed rate (2x employee) | 11.90%"
+  },
+  {
+   "slug": "ca-fed-cpp-ei",
+   "section": "Section 1 -- Quick reference / CPP1 thresholds (2025)",
+   "quote": "CPP1 thresholds (2025)\nYear's Basic Exemption | $3,500.00"
+  },
+  {
+   "slug": "ca-fed-cpp-ei",
+   "section": "Section 1 -- Quick reference / CPP1 thresholds (2025)",
+   "quote": "CPP1 thresholds (2025)\nYear's Maximum Pensionable Earnings (YMPE) | $71,300.00"
+  },
+  {
+   "slug": "ca-fed-t1-return",
+   "section": "Basic Personal Amount (2025)",
+   "quote": "Basic Personal Amount (2025)\nNet Income | BPA\n$177,882 or less | $16,129\n$177,882 -- $253,414 | Graduated reduction\n$253,414+ | $14,538"
+  },
+  {
+   "slug": "ca-fed-t1-return",
+   "section": "CPP Self-Employed (2025)",
+   "quote": "Half of base CPP plus all first and second additional (CPP2) contributions are deductible (line 22200); the other half of base CPP is a non-refundable credit (line 31000)."
+  },
+  {
+   "slug": "ca-fed-t1-return",
+   "section": "Rates and thresholds / T1 Return",
+   "quote": "Canada employment amount (line 31260) -- $1,471 (2025); $1,501 (2026). Employment income only; not for the self-employed"
+  },
+  {
+   "slug": "ca-fed-t1-return",
+   "section": "Rates and thresholds / T1 Return",
+   "quote": "EI rate (2025) -- $1.64/$100"
+  },
+  {
+   "slug": "ca-fed-t1-return",
+   "section": "Section 1 -- Quick Reference / Federal Tax Brackets (2025)",
+   "quote": "Federal Tax Brackets (2025)\nTaxable Income (CAD) | Rate | Cumulative Tax\n0 -- 57,375 | 14.5%* | 8,319\n57,376 -- 114,750 | 20.5% | 20,081\n114,751 -- 177,882 | 26% | 36,495\n177,883 -- 253,414 | 29% | 58,399\n253,415+ | 33% | 58,399+\n*14.5% is a blended rate for 2025 (15% Jan-Jun, 14% Jul-Dec)."
+  },
+  {
+   "slug": "ca-fed-t1-return",
+   "section": "Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required) / 6.2 BPA Reduction for High Earners",
+   "quote": "BPA = $16,129 - $1,591 x (net income - $177,882) / $75,532. Flag if net income between $177,882 and $253,414."
+  },
+  {
+   "slug": "ca-fed-t1-return",
+   "section": "Section 7 -- Excel Working Paper Template",
+   "quote": "D2. Non-refundable credits (x 14.5%)"
+  },
+  {
+   "slug": "canada-payroll",
+   "section": "Federal Basic Personal Amount (BPA) -- 2026",
+   "quote": "Federal Basic Personal Amount (BPA) -- 2026\nIncome Level | BPA (CAD)\nUp to $181,440 | $16,452\n$181,440 -- $258,482 | Claws back to $14,829\nAbove $258,482 | $14,829"
+  },
+  {
+   "slug": "canada-payroll",
+   "section": "Federal Tax Brackets (2026)",
+   "quote": "The lowest bracket rate was reduced from 15% to 14% effective for the 2026 tax year"
+  },
+  {
+   "slug": "canada-payroll",
+   "section": "Rates and thresholds / Payroll",
+   "quote": "Basic exemption — $3,500"
+  },
+  {
+   "slug": "canada-payroll",
+   "section": "Rates and thresholds / Payroll",
+   "quote": "CPP employee rate — 5.95%"
+  },
+  {
+   "slug": "canada-payroll",
+   "section": "Rates and thresholds / Payroll",
+   "quote": "EI employee rate (non-QC) — 1.63%"
+  },
+  {
+   "slug": "canada-payroll",
+   "section": "Rates and thresholds / Payroll",
+   "quote": "Max insurable earnings — $68,900"
+  },
+  {
+   "slug": "canada-payroll",
+   "section": "Rates and thresholds / Payroll",
+   "quote": "YAMPE (2026) — $85,000"
+  },
+  {
+   "slug": "canada-payroll",
+   "section": "Rates and thresholds / Payroll",
+   "quote": "YMPE (2026) — $74,600"
+  },
+  {
+   "slug": "canada-payroll",
+   "section": "Section 2 -- Income Tax Withholding (Source Deductions) / Federal Tax Brackets (2026)",
+   "quote": "Federal Tax Brackets (2026)\nTaxable Income (CAD) | Rate\n0 -- 58,523 | 14%\n58,523 -- 117,045 | 20.5%\n117,045 -- 181,440 | 26%\n181,440 -- 258,482 | 29%\n258,482+ | 33%"
+  },
+  {
+   "slug": "canada-payroll",
+   "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+   "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+  },
+  {
+   "slug": "canada-tax-optimization",
+   "section": "Section 8 -- CPP/EI & Social Security Optimization / CPP Contributions (2026)",
+   "quote": "Self-employed CPP -- Self-employed pay both halves (11.9% CPP1 + 8% CPP2)"
+  },
+  {
+   "slug": "capital-gains-tax-rate-tables-2023-to-2027",
+   "section": "Section 2 — CGT exclusions and inclusion rate",
+   "quote": "YoA | Annual exclusion | Annual exclusion (year of death) | Primary residence exclusion | Inclusion rate\n2026 (2025/26) | R40,000 | R300,000 | R2,000,000 | 40%\nThen apply the annual exclusion to the aggregate remaining gain for the year\nThen apply the inclusion rate to what survives, and only then carry the result into"
+  },
+  {
+   "slug": "germany-income-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+  },
+  {
+   "slug": "germany-income-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+  },
+  {
+   "slug": "germany-income-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+  },
+  {
+   "slug": "germany-income-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+  },
+  {
+   "slug": "germany-income-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+  },
+  {
+   "slug": "germany-income-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+  },
+  {
+   "slug": "germany-income-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "Taxable income x and the tax are both rounded down to whole euros"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Deadlines and filing",
+   "quote": "The 2026 return is due by 31 October 2027, with 2027 preliminary tax. Revenue has not yet announced the 2027 ROS date."
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "Age Tax Credit, single / married | EUR 245 / EUR 490 | 2025 and 2026"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "Band, married or civil partners (s.15, Part 3) | first EUR 53,000 at 20%, balance at 40% | 2025 and 2026"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "Band, single person qualifying for the Single Person Child Carer Credit (s.15, Part 2) | first EUR 48,000 at 20%, balance at 40% | 2025 and 2026"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "Earned Income Tax Credit (s.472AB) | lower of EUR 2,000 or 20% of qualifying earned income; with the Employee credit, the two together cannot exceed EUR 2,000 | 2025 and 2026"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "Employee (PAYE) Tax Credit (s.472) | EUR 2,000 | 2025 and 2026"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "Home Carer Tax Credit, maximum (s.466A) | EUR 1,950 | 2025 and 2026"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "Increase for a second income (s.15(3)(i)) | lower of EUR 35,000 or the lower earner's income; not transferable | 2025 and 2026"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "Pension relief (RAC, PRSA), % of net relevant earnings by age | under 30: 15%; 30-39: 20%; 40-49: 25%; 50-54: 30%; 55-59: 35%; 60+: 40% | 2026"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "Pension relief earnings limit | EUR 115,000 a year | 2026"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "Preliminary tax safe harbours (s.959AO) | lowest of 90% of current year, 100% of previous year, 105% of pre-preceding year (direct debit only, not if that year was nil) | 2026"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "PRSI Class S on 2025 income | 4.125% blended, minimum EUR 650 | 2025"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "Single Person Child Carer Credit (s.462B) | EUR 1,900 | 2025 and 2026"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit (s.461) | EUR 2,000 / EUR 4,000 | 2025 and 2026"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "Standard rate band, single or widowed, no qualifying children (s.15, Table Part 1) | first EUR 44,000 at 20%, balance at 40%"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "Standard rate band, single or widowed, no qualifying children (s.15, Table Part 1) | first EUR 44,000 at 20%, balance at 40% | 2025 and 2026"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "Rates, bands and thresholds",
+   "quote": "USC for the 2025 return due now | 0.5% on first EUR 12,012; 2% from EUR 12,012 to EUR 27,382; 3% to EUR 70,044; 8% on the balance | 2025"
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "The taxable base",
+   "quote": "Deduct pension contributions (Panel I) within the age percentage of net relevant earnings and the EUR 115,000 earnings limit. Rental income is not relevant earnings."
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "The taxable base",
+   "quote": "Then subtract credits; credits reduce tax, not income ... The Earned Income Credit is for self-employed earned income and a proprietary director's pay, not rent or interest."
+  },
+  {
+   "slug": "ie-income-tax-form11",
+   "section": "The taxable base",
+   "quote": "USC: on total income after capital allowances (active traders) but before pension contributions; the surcharge tests non-PAYE income only.\nPRSI Class S: on gross income after capital allowances, before pension contributions; minimum EUR 650"
+  },
+  {
+   "slug": "ie-payroll",
+   "section": "Rates, bands and thresholds",
+   "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+  },
+  {
+   "slug": "ie-payroll",
+   "section": "Rates, bands and thresholds",
+   "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+  },
+  {
+   "slug": "ie-payroll",
+   "section": "Rates, bands and thresholds",
+   "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+  },
+  {
+   "slug": "ie-payroll",
+   "section": "Rates, bands and thresholds",
+   "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+  },
+  {
+   "slug": "ie-payroll",
+   "section": "Rates, bands and thresholds",
+   "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+  },
+  {
+   "slug": "ie-payroll",
+   "section": "Rates, bands and thresholds",
+   "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+  },
+  {
+   "slug": "ie-preliminary-tax",
+   "section": "Penalties and interest",
+   "quote": "The whole 2026 income tax (with USC and PRSI) is treated as due on 31 October 2026 if (a) preliminary tax was not paid, (b) it was less than the lowest test that applies, or (c) it was paid after 31 October 2026 (s.959AO(3))."
+  },
+  {
+   "slug": "ie-preliminary-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "Balance of 2026 tax (if preliminary tax was sufficient and on time) | Specified return date: 31 October 2027 | 2026"
+  },
+  {
+   "slug": "ie-preliminary-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "Preliminary tax due date (not direct debit) | 31 October of the tax year: 31 October 2026 for 2026 | 2026\nROS extension, 2025 Form 11 balance and 2026 preliminary tax | Wednesday 18 November 2026, only if the person both pays and files through ROS | 2026"
+  },
+  {
+   "slug": "ie-preliminary-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "Safe harbour 1: current year | 90% of the income tax payable for 2026 | 2026\nSafe harbour 2: preceding year | 100% of the income tax payable for 2025 | 2026\nSafe harbour 3: pre-preceding year, direct debit payers only | 105% of the income tax payable for 2024; not available if that was nil"
+  },
+  {
+   "slug": "ie-preliminary-tax",
+   "section": "The taxable base",
+   "quote": "Working rule. For each option: income tax + USC + PRSI for that year, after credits and after tax deducted at source."
+  },
+  {
+   "slug": "ie-prsi-class-s",
+   "section": "Rates, bands and thresholds",
+   "quote": "Blended rate for 2026 self-assessed income: ((4.2 x 9) + (4.35 x 3)) / 12 | 4.2375% | 2026"
+  },
+  {
+   "slug": "ie-prsi-class-s",
+   "section": "Rates, bands and thresholds",
+   "quote": "Income floor: below this, no Class S (total before capital allowances) | under EUR 5,000 | 2026"
+  },
+  {
+   "slug": "ie-prsi-class-s",
+   "section": "Rates, bands and thresholds",
+   "quote": "Minimum annual contribution (reckonable income, emoluments, or both together) | EUR 650 | 2026"
+  },
+  {
+   "slug": "ie-prsi-class-s",
+   "section": "The taxable base",
+   "quote": "Reckonable income is the aggregate income from all sources for the contribution year, as estimated under the Income Tax Acts, after capital allowances. It leaves out reckonable earnings and reckonable emoluments\nso each spouse or civil partner's Class S is worked out on their own income"
+  },
+  {
+   "slug": "ie-prsi-class-s",
+   "section": "Who this applies to",
+   "quote": "a person whose total reckonable income, emoluments and earnings, before capital allowances, is below EUR 5,000"
+  },
+  {
+   "slug": "ie-prsi-class-s",
+   "section": "Who this applies to",
+   "quote": "Every person aged over 16 and under pensionable age (66) who has reckonable income or reckonable emoluments is a self-employed contributor"
+  },
+  {
+   "slug": "ie-usc",
+   "section": "Rates, bands and thresholds",
+   "quote": "Exemption: no USC if aggregate income does not exceed (s.531AM(2)); above it, USC on the full income | EUR 13,000 | 2026"
+  },
+  {
+   "slug": "ie-usc",
+   "section": "Rates, bands and thresholds",
+   "quote": "Reduced rate, full medical card holder under 70, aggregate income EUR 60,000 or less (s.531AN(3)) | Standard bands up to EUR 28,700, then 2% at most on the excess (same result as the reduced rates) | 2026\nAbove EUR 60,000 the standard rates apply to all income, not just the excess"
+  },
+  {
+   "slug": "ie-usc",
+   "section": "Rates, bands and thresholds",
+   "quote": "Standard band 1 (s.531AN, Table Part 1) | 0.5% on the first EUR 12,012 | 2026\nStandard band 2 | 2% on the next EUR 16,688 | 2026\nStandard band 3 | 3% on the next EUR 41,344 | 2026\nBalance | 8% on the remainder (above EUR 70,044) | 2026"
+  },
+  {
+   "slug": "ie-usc",
+   "section": "Rates, bands and thresholds",
+   "quote": "Surcharge on relevant (non-PAYE) income over EUR 100,000 (s.531AN(2)) | 3% on the excess, so 11% in total on it | 2026"
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "2025 income (year of assessment 2026)",
+   "quote": "Status (basis year 2025) | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nMarried, joint | €15,000 | €15,000 to €23,000 (€2,250) | €23,000 to €60,000 (€4,550) | over €60,000 (€10,550)"
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "2025 income (year of assessment 2026)",
+   "quote": "Status (basis year 2025) | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nParent | €13,000 | €13,000 to €17,500 (€1,950) | €17,500 to €60,000 (€3,700) | over €60,000 (€9,700)"
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "2025 income (year of assessment 2026)",
+   "quote": "Status (basis year 2025) | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nSingle | €12,000 | €12,000 to €16,000 (€1,800) | €16,000 to €60,000 (€3,400) | over €60,000 (€9,400)"
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "2025 income (year of assessment 2026)",
+   "quote": "The four qualifying-child tables do not apply to 2025 income."
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Part-time work final tax",
+   "quote": "Article 90A(9) extends this to a spouse living with a qualifying spouse."
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Part-time work final tax",
+   "quote": "Caps (rule 3(2)): the rate covers self-employed profit (article 4(1)(a)) up to €12,000 ... Any excess is declared in the return at normal rates."
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Part-time work final tax",
+   "quote": "Opting out: the person may declare all part-time income in the return at progressive rates. Any final tax already paid is then credited or refunded (article 90A(2))."
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Part-time work final tax",
+   "quote": "Paying as a self-employed part-timer: pay the tax by 30 April of the year after the income was earned."
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Part-time work final tax",
+   "quote": "Rate: 10% from year of assessment 2023 (article 90A(11)). Before that it was 15%. The tax is final, and the income is not declared in the return."
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+   "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nMarried, 1 qualifying child, art. 56(1)(a)(ii) | €17,500 | over €17,500 and under €26,500 (€2,625) | over €26,500 and under €60,000 (€5,275) | over €60,000 (€11,275)"
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+   "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nMarried, 2 or more qualifying children, art. 56(1)(a)(iii) | €22,500 | over €22,500 and under €32,000 (€3,375) | over €32,000 and under €60,000 (€6,575) | over €60,000 (€12,575)"
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+   "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nMarried, joint, no qualifying child, art. 56(1)(a)(i) | €15,000 | over €15,000 and under €23,000 (€2,250) | over €23,000 and under €60,000 (€4,550) | over €60,000 (€10,550)"
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+   "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nParent, 1 qualifying child, art. 56(1)(b)(iv) | €14,500 | over €14,500 and under €21,000 (€2,175) | over €21,000 and under €60,000 (€4,275) | over €60,000 (€10,270; MTCA's table shows €10,275)"
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+   "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nParent, 2 or more qualifying children, art. 56(1)(b)(v) | €18,500 | over €18,500 and under €25,500 (€2,775) | over €25,500 and under €60,000 (€5,325) | over €60,000 (€11,325)"
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+   "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nParent, art. 56(1)(b)(ii) | €13,000 | over €13,000 and under €17,500 (€1,950) | over €17,500 and under €60,000 (€3,700) | over €60,000 (€9,700)"
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+   "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nSingle (other individual), art. 56(1)(b)(i) | €12,000 | over €12,000 and under €16,000 (€1,800) | over €16,000 and under €60,000 (€3,400) | over €60,000 (€9,400)"
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+   "quote": "The Act is the law, so compute with €10,270. Tell the user that MTCA's table shows €10,275"
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Who gets which table",
+   "quote": "a spouse, the individual, or the individual's spouse must be an EU/EEA national or hold long-term resident status;\nif nobody is an EU/EEA national, the child (or each of the two children) must have been born in Malta and be resident in Malta."
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Who gets which table",
+   "quote": "for the married tables (a)(ii) and (a)(iii), the couple kept the child (or the two children) in their custody. Maintenance does not count for these tables"
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Who gets which table",
+   "quote": "for the parent tables (b)(iv) and (b)(v), the individual kept the child in custody (their own child, a spouse's child or a certified cohabitant's child) or paid maintenance for their own child under article 12(1)(t)"
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Who gets which table",
+   "quote": "If any condition fails, fall back to the married (i) or parent (ii) table."
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Who gets which table",
+   "quote": "Married tables (article 56(1)(a)) apply to a married couple resident in Malta and taxed jointly under article 49. If either spouse elected a separate return (article 49A), or the responsible spouse opted for a separate computation (article 50), each spouse uses the article 56(1)(b) tables instead."
+  },
+  {
+   "slug": "malta-income-tax",
+   "section": "Who gets which table",
+   "quote": "Parent table (article 56(1)(b)(ii)): the individual was a parent who kept a child in custody, or paid maintenance for the child under article 12(1)(t). The child must be not over 18, or not over 23 if in full-time education."
+  },
+  {
+   "slug": "nl-corporate-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026"
+  },
+  {
+   "slug": "nl-corporate-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "up to and including EUR 200,000 ... 19% | 2026"
+  },
+  {
+   "slug": "nl-corporate-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "Vpb on taxable amount up to and including EUR 200,000 (Wet Vpb art. 22) | 19%"
+  },
+  {
+   "slug": "on-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Band 1: taxable income up to $52,886 | 5.05% | 2025\nBand 2: $52,886.01 to $105,775 ... | 9.15% | 2025\nBand 3: $105,775.01 to $150,000 ... | 11.16% | 2025\nBand 4: $150,000.01 to $220,000 ... | 12.16% | 2025\nBand 5: over $220,000 ... | 13.16% | 2025"
+  },
+  {
+   "slug": "on-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Band 1: taxable income up to $53,891 | 5.05% | 2026\nBand 2: $53,891.01 to $107,785 | 9.15% | 2026\nBand 3: $107,785.01 to $150,000 | 11.16% | 2026\nBand 4: $150,000.01 to $220,000 | 12.16% | 2026\nBand 5: over $220,000 | 13.16% | 2026"
+  },
+  {
+   "slug": "on-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Basic personal amount | $12,747 | 2025"
+  },
+  {
+   "slug": "on-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Basic personal amount | $12,989 | 2026"
+  },
+  {
+   "slug": "on-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "LIFT credit | lesser of $875 and 5.05% of employment income, less 5% of the greater of adjusted net income over $32,500 and adjusted family net income over $65,000 | 2026, 2025"
+  },
+  {
+   "slug": "on-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Non-refundable credit rate (all Part B amounts, CPP and EI included) | 5.05% | 2026, 2025"
+  },
+  {
+   "slug": "on-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Ontario surtax | 20% of basic Ontario tax over $5,710, plus 36% of basic Ontario tax over $7,307 | 2025"
+  },
+  {
+   "slug": "on-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Ontario surtax | 20% of basic Ontario tax over $5,818, plus 36% of basic Ontario tax over $7,446 | 2026"
+  },
+  {
+   "slug": "on-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Ontario tax reduction | basic $294 ... | 2025"
+  },
+  {
+   "slug": "on-individual-return",
+   "section": "Rates, bands and thresholds",
+   "quote": "Ontario tax reduction | basic $300 ... reduction is twice that total minus Ontario tax | 2026"
+  },
+  {
+   "slug": "on-individual-return",
+   "section": "Rates, bands and thresholds / Ontario Health Premium chart (ON428, line 89)",
+   "quote": "Ontario Health Premium | chart below; not indexed, same for 2025 and 2026 | 2026, 2025\n$20,000 or less | $0\nmore than $20,000, not more than $25,000 | 6% of the amount over $20,000\nmore than $25,000, not more than $36,000 | $300\nmore than $36,000, not more than $38,500 | $300 plus 6% of the amount over $36,000\nmore than $38,500, not more than $48,000 | $450\nmore than $48,000, not more than $48,600 | $450 plus 25% of the amount over $48,000\nmore than $48,600, not more than $72,000 | $600\nmore than $72,000, not more than $72,600 | $600 plus 25% of the amount over $72,000\nmore than $72,600, not more than $200,000 | $750\nmore than $200,000, not more than $200,600 | $750 plus 25% of the amount over $200,000\nmore than $200,600 | $900"
+  },
+  {
+   "slug": "pt-social-contributions",
+   "section": "Rates, bands and thresholds",
+   "quote": "Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5)"
+  },
+  {
+   "slug": "pt-social-contributions",
+   "section": "Rates, bands and thresholds",
+   "quote": "Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4)"
+  },
+  {
+   "slug": "pt-social-contributions",
+   "section": "Rates, bands and thresholds",
+   "quote": "IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1"
+  },
+  {
+   "slug": "pt-social-contributions",
+   "section": "Rates, bands and thresholds",
+   "quote": "Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2)"
+  },
+  {
+   "slug": "pt-social-contributions",
+   "section": "Rates, bands and thresholds",
+   "quote": "Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1)"
+  },
+  {
+   "slug": "pt-social-contributions",
+   "section": "Rates, bands and thresholds",
+   "quote": "Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a)"
+  },
+  {
+   "slug": "pt-social-contributions",
+   "section": "Rates, bands and thresholds",
+   "quote": "Self-employed rate | 21.4% | 2026 | Code art. 168(1)"
+  },
+  {
+   "slug": "pt-social-contributions",
+   "section": "The taxable base",
+   "quote": "Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1))"
+  },
+  {
+   "slug": "uk-dividends",
+   "section": "The taxable base",
+   "quote": "The allowance is a rate, not a deduction. The first GBP 500 of dividends is taxed at the dividend nil rate. Those GBP 500 still count as income and still use up the basic or higher rate band (ITA 2007 s.13A)."
+  },
+  {
+   "slug": "uk-income-tax-sa100",
+   "section": "Rates, bands and thresholds",
+   "quote": "High Income Child Benefit Charge (ITEPA 2003 s.681C) | 1% of Child Benefit per GBP 200 of adjusted net income over GBP 60,000; 100% at GBP 80,000"
+  },
+  {
+   "slug": "uk-income-tax-sa100",
+   "section": "Rates, bands and thresholds",
+   "quote": "Higher rate limit (ITA 2007 s.10(5A)) | GBP 125,140 ... 2 x 12,570 + 100,000) | 2025-26 and 2026-27"
+  },
+  {
+   "slug": "uk-income-tax-sa100",
+   "section": "Rates, bands and thresholds",
+   "quote": "Marriage Allowance transferable amount (ITA 2007 s.55B(4)-(5)) | 10% of the Personal Allowance rounded up to GBP 10: GBP 1,260; tax cut up to GBP 252"
+  },
+  {
+   "slug": "uk-income-tax-sa100",
+   "section": "Rates, bands and thresholds",
+   "quote": "Personal Allowance taper (ITA 2007 s.35(2)) | Reduced by half the adjusted net income over GBP 100,000"
+  },
+  {
+   "slug": "uk-income-tax-sa100",
+   "section": "The taxable base",
+   "quote": "Step 3: adjusted net income (ITA 2007 s.58). Take total taxable income less those reliefs, then also deduct grossed-up Gift Aid and grossed-up relief-at-source pension contributions"
+  },
+  {
+   "slug": "uk-income-tax-sa100",
+   "section": "The taxable base",
+   "quote": "Step 4: the Personal Allowance. GBP 12,570, reduced by half of the adjusted net income over GBP 100,000. A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))."
+  },
+  {
+   "slug": "uk-income-tax-sa100",
+   "section": "The taxable base",
+   "quote": "Step 5: extend the bands. Grossed-up relief-at-source pension contributions and Gift Aid extend the basic rate limit (and the higher rate limit) by the gross amount."
+  },
+  {
+   "slug": "uk-income-tax-sa100",
+   "section": "The taxable base / Step 3: adjusted net income (ITA 2007 s.58)",
+   "quote": "deduct grossed-up Gift Aid and grossed-up relief-at-source pension contributions"
+  },
+  {
+   "slug": "uk-income-tax-sa100",
+   "section": "The taxable base / Step 4: the Personal Allowance",
+   "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+  },
+  {
+   "slug": "uk-income-tax-sa100",
+   "section": "UK Income Tax for individuals: the SA100 Self Assessment return (2026-27)",
+   "quote": "Rental profits, finance costs and the property allowance: uk-rental-sa105."
+  },
+  {
+   "slug": "uk-income-tax-sa100",
+   "section": "Worked examples / Example 2: Personal Allowance taper and the Child Benefit charge, England, 2026-27",
+   "quote": "pension_gross: pension_net / 0.8"
+  },
+  {
+   "slug": "uk-national-insurance",
+   "section": "Rates, bands and thresholds",
+   "quote": "2025/26 figures (for 2025/26 returns and voluntary payments due by 31 January 2027) | LEL GBP 125 a week; small profits threshold GBP 6,845; voluntary Class 2 GBP 3.50 a week"
+  },
+  {
+   "slug": "uk-national-insurance",
+   "section": "Who this applies to",
+   "quote": "Out of Class 4: a person over State Pension age at the start of the tax year, and a person not resident in the UK for income tax in that year"
+  },
+  {
+   "slug": "uk-payments-on-account",
+   "section": "Rates, bands and thresholds",
+   "quote": "At-source test: relevant amount must be at least this share of the assessed amount | 1 to 5 (20%); so more than 80% at source means no payments"
+  },
+  {
+   "slug": "uk-payments-on-account",
+   "section": "Rates, bands and thresholds",
+   "quote": "Each payment on account | 50% of the relevant amount"
+  },
+  {
+   "slug": "uk-payments-on-account",
+   "section": "Rates, bands and thresholds",
+   "quote": "Threshold: relevant amount at or above which payments on account are due | GBP 1,000"
+  },
+  {
+   "slug": "uk-payments-on-account",
+   "section": "The taxable base",
+   "quote": "relevant amount = assessed income tax and Class 4 for last year minus tax deducted at source\neach payment on account = 50% of the relevant amount"
+  },
+  {
+   "slug": "uk-payments-on-account",
+   "section": "The taxable base",
+   "quote": "Voluntary Class 2 NIC is collected with the balancing payment and \"will not be included in Payments on Account\" (HMRC manual SAM121665)."
+  },
+  {
+   "slug": "uk-payroll",
+   "section": "Rates, bands and thresholds",
+   "quote": "40% £37,701 to £125,140; 45% above"
+  },
+  {
+   "slug": "uk-payroll",
+   "section": "Rates, bands and thresholds",
+   "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+  },
+  {
+   "slug": "uk-payroll",
+   "section": "Rates, bands and thresholds",
+   "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+  },
+  {
+   "slug": "uk-payroll",
+   "section": "Rates, bands and thresholds",
+   "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+  },
+  {
+   "slug": "uk-payroll",
+   "section": "Rates, bands and thresholds",
+   "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+  },
+  {
+   "slug": "uk-payroll",
+   "section": "Rates, bands and thresholds",
+   "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+  },
+  {
+   "slug": "uk-payroll",
+   "section": "Rates, bands and thresholds",
+   "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Figures with years",
+   "quote": "Item | 2025-26 (return due 31 January 2027) | 2026-27 (year in force)\nBasic rate 20% | £12,571 to £50,270 | £12,571 to £50,270\nHigher rate 40% | £50,271 to £125,140 | £50,271 to £125,140\nAdditional rate 45% | Over £125,140 | Over £125,140"
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Figures with years",
+   "quote": "Item | 2025-26 (return due 31 January 2027) | 2026-27 (year in force)\nBasic rate limit (band above the allowance) | £37,700 | £37,700"
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Figures with years",
+   "quote": "Item | 2025-26 (return due 31 January 2027) | 2026-27 (year in force)\nPersonal Allowance | £12,570 | £12,570"
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Figures with years",
+   "quote": "Item | 2025-26 (return due 31 January 2027) | 2026-27 (year in force)\nTaper | £1 for every £2 of adjusted net income above £100,000 | Same\nAllowance nil at | £125,140 or more | £125,140 or more"
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Figures with years",
+   "quote": "Item | 2025-26 | 2026-27\nClass 4 main rate, profits over £12,570 up to £50,270 | 6% | 6%\nClass 4 rate on profits over £50,270 | 2% | 2%"
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Figures with years",
+   "quote": "Item | 2025-26 | 2026-27\nDividend allowance | £500 | £500"
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Figures with years",
+   "quote": "Item | 2025-26 | 2026-27\nDividend ordinary rate | 8.75% | 10.75%\nDividend upper rate | 33.75% | 35.75%\nDividend additional rate | 39.35% | 39.35%"
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Figures with years",
+   "quote": "Item | 2025-26 | 2026-27\nPersonal Savings Allowance | £1,000 basic rate, £500 higher rate, £0 additional rate | Same"
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Figures with years",
+   "quote": "Item | 2025-26 | 2026-27\nSavings rates | 20%, 40%, 45% | 20%, 40%, 45%"
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Figures with years",
+   "quote": "Item | 2025-26 | 2026-27\nSmall profits threshold: at or above it, Class 2 is treated as paid | £6,845 | £7,105\nVoluntary Class 2, only below the threshold and only if the client chooses | £3.50 a week | £3.65 a week"
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Figures with years",
+   "quote": "Item | 2025-26 | 2026-27\nStarting rate for savings band | Up to £5,000; only if other income is less than £17,570 | Same"
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Filing and payment",
+   "quote": "Balancing payment for 2025-26 and first payment on account for 2026-27 | 11:59pm on 31 January 2027\nSecond payment on account for 2026-27 | 31 July 2027"
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Other thresholds the assembly tests",
+   "quote": "Student loan yearly thresholds, 2025-26 ... | Plan 1 £26,065; Plan 2 £28,470; Plan 4 £32,745; Postgraduate Loan £21,000. The page gives no Plan 5 threshold for 2025-26"
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Stage 2: run the part Guides in dependency order",
+   "quote": "Property and gains. Run uk-rental-sa105 and uk-capital-gains-sa108 if they apply."
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Stage 3: put the computation together in the statutory order",
+   "quote": "Allowances. Deduct the Personal Allowance, after the taper (below). It is set against non-savings income first, then savings, then dividends."
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Stage 3: put the computation together in the statutory order",
+   "quote": "Savings. Apply, in order: any unused Personal Allowance, the starting rate for savings, the Personal Savings Allowance, then the savings rates. The starting rate is available only if other taxable income \"is less than £17,570\". It covers \"up to £5,000 of interest\", reduced £1 for every £1 of other income above the Personal Allowance."
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Stage 3: put the computation together in the statutory order",
+   "quote": "Take off tax already paid: PAYE from the SA102, tax taken off at source, Construction Industry Scheme deductions, and the payments on account already made for the year."
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "Stage 6: payments on account and the calendar (payments on account)",
+   "quote": "At exactly 80% paid outside Self Assessment, they are still due."
+  },
+  {
+   "slug": "uk-return-assembly",
+   "section": "When to refuse or refer",
+   "quote": "Scottish taxpayers (main home in Scotland, or unclear between homes): refer. Their non-savings bands differ; savings and dividends use UK rates"
+  },
+  {
+   "slug": "uk-self-employment-sa103",
+   "section": "Rates, bands and thresholds",
+   "quote": "Transition profit spreading (basis period reform) | 20% a year in 2023-24 to 2026-27; balance in 2027-28"
+  },
+  {
+   "slug": "us-2026-federal-tax-changes",
+   "section": "Boundary and exception table / Families",
+   "quote": "Child tax credit (permanent). USD 2,200 per child, USD 1,700 refundable (section 70104, taxable years beginning after 31 December 2024)."
+  },
+  {
+   "slug": "us-capital-gains",
+   "section": "2025 returns (tax year 2025, extended deadline 15 October 2026)",
+   "quote": "Filing status (2025) | 0% up to taxable income of | 15% up to taxable income of | 20% above\nSingle | USD 48,350 | USD 533,400 | USD 533,400\nMarried filing jointly, surviving spouse | USD 96,700 | USD 600,050 | USD 600,050\nMarried filing separately | USD 48,350 | USD 300,000 | USD 300,000\nHead of household | USD 64,750 | USD 566,700 | USD 566,700"
+  },
+  {
+   "slug": "us-capital-gains",
+   "section": "2025 returns (tax year 2025, extended deadline 15 October 2026)",
+   "quote": "The NIIT thresholds, the 3.8% rate and the USD 3,000 / USD 1,500 loss limit are the same as for 2026."
+  },
+  {
+   "slug": "us-capital-gains",
+   "section": "Rates, bands and thresholds",
+   "quote": "Long-term gain and qualified dividends: maximum zero rate amount, married filing jointly and surviving spouse | USD 98,900\nMaximum 15 percent rate amount, married filing jointly and surviving spouse (20% above) | USD 613,700\nMaximum zero rate amount, married filing separately | USD 49,450\nMaximum 15 percent rate amount, married filing separately | USD 306,850\nMaximum zero rate amount, head of household | USD 66,200\nMaximum 15 percent rate amount, head of household | USD 579,600\nMaximum zero rate amount, all other individuals (single) | USD 49,450\nMaximum 15 percent rate amount, all other individuals (single) | USD 545,500\nRates on adjusted net capital gain | 0%, 15%, 20%"
+  },
+  {
+   "slug": "us-capital-gains",
+   "section": "Rates, bands and thresholds; Step 8: the net investment income tax",
+   "quote": "Net investment income tax rate | 3.8%\nNIIT threshold, joint return or surviving spouse | USD 250,000\nNIIT threshold, married filing separately (half the joint amount) | USD 125,000\nNIIT threshold, any other case (single, head of household) | USD 200,000\nOn Form 8960: 3.8% of the lesser of (A) net investment income or (B) modified adjusted gross income over the threshold"
+  },
+  {
+   "slug": "us-capital-gains",
+   "section": "Step 5: split the long-term gain into rate groups; Step 6: stack the gain on top of ordinary income",
+   "quote": "0/15/20 group: all other net capital gain, plus qualified dividends.\nOrdinary taxable income fills the brackets first; the preferential gain sits on top.\nUse the Qualified Dividends and Capital Gain Tax Worksheet in the Form 1040 instructions."
+  },
+  {
+   "slug": "us-capital-gains",
+   "section": "Step 8: the net investment income tax",
+   "quote": "Net investment income includes capital gains, interest, dividends, ... It excludes wages, most self-employment income"
+  },
+  {
+   "slug": "us-federal-income-tax-return-1040",
+   "section": "Changes made by Public Law 119-21 that apply to a tax year 2026 return",
+   "quote": "Charitable deduction for a taxpayer who does not itemize, taxable years beginning after 31 December 2025 | up to USD 1,000 (USD 2,000 joint)"
+  },
+  {
+   "slug": "us-federal-income-tax-return-1040",
+   "section": "Changes made by Public Law 119-21 that apply to a tax year 2026 return",
+   "quote": "Limit on itemized deductions in the 37% bracket, taxable years beginning after 31 December 2025 | itemized deductions reduced by 2/37 of the lesser of (1) the itemized deductions, or (2) taxable income, computed before this reduction and increased by those itemized deductions, above the dollar amount at which the 37% bracket begins for the taxpayer"
+  },
+  {
+   "slug": "us-federal-income-tax-return-1040",
+   "section": "Tax year 2026 deductions, credits and other amounts",
+   "quote": "Alternative minimum tax exemption, married filing jointly and surviving spouses | USD 140,200\nAlternative minimum tax exemption, unmarried (not surviving spouse) | USD 90,100\nAlternative minimum tax exemption, married filing separately | USD 70,100\nAlternative minimum tax exemption, phase-out starts and ends, joint returns | USD 1,000,000; USD 1,280,400\nAlternative minimum tax exemption, phase-out starts and ends, unmarried | USD 500,000; USD 680,200\nAlternative minimum tax exemption, phase-out starts and ends, married filing separately | USD 500,000; USD 640,200"
+  },
+  {
+   "slug": "us-federal-income-tax-return-1040",
+   "section": "Tax year 2026 deductions, credits and other amounts",
+   "quote": "Child tax credit, maximum per qualifying child | USD 2,200\nChild tax credit, refundable amount per child | USD 1,700"
+  },
+  {
+   "slug": "us-federal-income-tax-return-1040",
+   "section": "Tax year 2026 deductions, credits and other amounts",
+   "quote": "Standard deduction, married filing jointly and surviving spouses | USD 32,200\nStandard deduction, head of household | USD 24,150\nStandard deduction, single and married filing separately | USD 16,100"
+  },
+  {
+   "slug": "us-federal-income-tax-return-1040",
+   "section": "Tax year 2026 rate schedules",
+   "quote": "Head of household, up to USD 17,700 | 10% of taxable income\nHead of household, over USD 17,700 up to USD 67,450 | USD 1,770 plus 12% of the excess over USD 17,700\nHead of household, over USD 67,450 up to USD 105,700 | USD 7,740 plus 22% of the excess over USD 67,450\nHead of household, over USD 105,700 up to USD 201,750 | USD 16,155 plus 24% of the excess over USD 105,700\nHead of household, over USD 201,750 up to USD 256,200 | USD 39,207 plus 32% of the excess over USD 201,750\nHead of household, over USD 256,200 up to USD 640,600 | USD 56,631 plus 35% of the excess over USD 256,200\nHead of household, over USD 640,600 | USD 191,171 plus 37% of the excess over USD 640,600"
+  },
+  {
+   "slug": "us-federal-income-tax-return-1040",
+   "section": "Tax year 2026 rate schedules",
+   "quote": "Married filing jointly and surviving spouses, up to USD 24,800 | 10% of taxable income\nMarried filing jointly, over USD 24,800 up to USD 100,800 | USD 2,480 plus 12% of the excess over USD 24,800\nMarried filing jointly, over USD 100,800 up to USD 211,400 | USD 11,600 plus 22% of the excess over USD 100,800\nMarried filing jointly, over USD 211,400 up to USD 403,550 | USD 35,932 plus 24% of the excess over USD 211,400\nMarried filing jointly, over USD 403,550 up to USD 512,450 | USD 82,048 plus 32% of the excess over USD 403,550\nMarried filing jointly, over USD 512,450 up to USD 768,700 | USD 116,896 plus 35% of the excess over USD 512,450\nMarried filing jointly, over USD 768,700 | USD 206,583.50 plus 37% of the excess over USD 768,700"
+  },
+  {
+   "slug": "us-federal-income-tax-return-1040",
+   "section": "Tax year 2026 rate schedules",
+   "quote": "Single, and married filing separately, up to USD 12,400 | 10% of taxable income\nSingle, and married filing separately, over USD 12,400 up to USD 50,400 | USD 1,240 plus 12% of the excess over USD 12,400\nSingle, and married filing separately, over USD 50,400 up to USD 105,700 | USD 5,800 plus 22% of the excess over USD 50,400\nSingle, and married filing separately, over USD 105,700 up to USD 201,775 | USD 17,966 plus 24% of the excess over USD 105,700\nSingle, and married filing separately, over USD 201,775 up to USD 256,225 | USD 41,024 plus 32% of the excess over USD 201,775\nMarried filing separately only, over USD 256,225 up to USD 384,350 | USD 58,448 plus 35% of the excess over USD 256,225\nMarried filing separately only, over USD 384,350 | USD 103,291.75 plus 37% of the excess over USD 384,350"
+  },
+  {
+   "slug": "us-federal-income-tax-return-1040",
+   "section": "Tax year 2026 rate schedules",
+   "quote": "Single, and married filing separately, up to USD 12,400 | 10% of taxable income\nSingle, and married filing separately, over USD 12,400 up to USD 50,400 | USD 1,240 plus 12% of the excess over USD 12,400\nSingle, and married filing separately, over USD 50,400 up to USD 105,700 | USD 5,800 plus 22% of the excess over USD 50,400\nSingle, and married filing separately, over USD 105,700 up to USD 201,775 | USD 17,966 plus 24% of the excess over USD 105,700\nSingle, and married filing separately, over USD 201,775 up to USD 256,225 | USD 41,024 plus 32% of the excess over USD 201,775\nSingle only, over USD 256,225 up to USD 640,600 | USD 58,448 plus 35% of the excess over USD 256,225\nSingle only, over USD 640,600 | USD 192,979.25 plus 37% of the excess over USD 640,600"
+  },
+  {
+   "slug": "us-form-1040-individual-return",
+   "section": "15. Estimated tax — §6654",
+   "quote": "Safe harbors — 90% of current year tax, OR 100% of prior year tax (110% if prior-year AGI > $150,000 / $75,000 MFS)"
+  },
+  {
+   "slug": "us-form-1040-individual-return",
+   "section": "2.1 Standard deduction (§63(c))",
+   "quote": "Filing status | 2025 amount\nSingle | $15,750\nMarried filing jointly (MFJ) | $31,500\nMarried filing separately (MFS) | $15,750\nHead of household (HoH) | $23,625"
+  },
+  {
+   "slug": "us-form-1040-individual-return",
+   "section": "2.2 Ordinary income tax brackets — §1(j) (post-TCJA, OBBBA-permanent)",
+   "quote": "HoH (2025) tax brackets\nRate | Taxable income\n10% | $0 – $17,000\n12% | $17,000 – $64,850\n22% | $64,850 – $103,350\n24% | $103,350 – $197,300\n32% | $197,300 – $250,500\n35% | $250,500 – $626,350\n37% | over $626,350"
+  },
+  {
+   "slug": "us-form-1040-individual-return",
+   "section": "2.2 Ordinary income tax brackets — §1(j) (post-TCJA, OBBBA-permanent)",
+   "quote": "MFJ (2025) tax brackets\nRate | Taxable income\n10% | $0 – $23,850\n12% | $23,850 – $96,950\n22% | $96,950 – $206,700\n24% | $206,700 – $394,600\n32% | $394,600 – $501,050\n35% | $501,050 – $751,600\n37% | over $751,600"
+  },
+  {
+   "slug": "us-form-1040-individual-return",
+   "section": "2.2 Ordinary income tax brackets — §1(j) (post-TCJA, OBBBA-permanent)",
+   "quote": "Single (2025) tax brackets\nRate | Taxable income\n10% | $0 – $11,925\n12% | $11,925 – $48,475\n22% | $48,475 – $103,350\n24% | $103,350 – $197,300\n32% | $197,300 – $250,525\n35% | $250,525 – $626,350\n37% | over $626,350"
+  },
+  {
+   "slug": "us-form-1040-individual-return",
+   "section": "2.4 AMT exemption — §55(d) (post-TCJA, OBBBA-permanent)",
+   "quote": "AMT rates — 26% on AMTI up to ... 28% above."
+  },
+  {
+   "slug": "us-form-1040-individual-return",
+   "section": "2.4 AMT exemption — §55(d) (post-TCJA, OBBBA-permanent)",
+   "quote": "Filing status | Exemption | Phaseout begins | Fully phased out\nSingle / HoH | $88,100 | $626,350 | $978,750\nMFJ / QSS | $137,000 | $1,252,700 | $1,800,700\nMFS | $68,500 | $626,350 | $900,350"
+  },
+  {
+   "slug": "us-form-1040-individual-return",
+   "section": "2.6 Additional Medicare Tax — §3101(b)(2) and §1401(b)(2)",
+   "quote": "Additional Medicare Tax thresholds\nFiling status | Threshold\nSingle / HoH | $200,000\nMFJ | $250,000\nMFS | $125,000\nAdditional Medicare Tax rate — 0.9% on wages/SE income over threshold"
+  },
+  {
+   "slug": "us-form-1040-individual-return",
+   "section": "2.9 Other OBBBA changes",
+   "quote": "Child Tax Credit — $2,200 per qualifying child under 17 (§24(h)), ... made permanent by OBBBA §70104. Phaseout begins $400k MFJ / $200k other."
+  },
+  {
+   "slug": "us-form-1040-individual-return",
+   "section": "2.9 Other OBBBA changes",
+   "quote": "Child Tax Credit — $2,200 per qualifying child under 17 (§24(h)), refundable portion $1,700 in 2025"
+  },
+  {
+   "slug": "us-form-1040-individual-return",
+   "section": "9.2 AMT computation flow",
+   "quote": "AMT computation steps — 1. Start with regular taxable income (Line 15). 2. Add back the standard deduction (if claimed). 3. Add AMT adjustments and preferences (Form 6251 Lines 2a-2t). 4. Subtract the AMT exemption (with phaseout if AMTI > threshold). 5. Apply 26%/28% AMT rates. 6. Subtract AMT foreign tax credit. 7. Compare to regular tax."
+  },
+  {
+   "slug": "us-qbi-deduction",
+   "section": "Rates, bands and thresholds",
+   "quote": "The final One Big Beautiful Bill Act (Public Law 119-21, section 70105) kept the 20% rate, removed the end-2025 expiry\nDeduction rate on QBI | 20% (the 23% in the House-passed bill was not enacted)"
+  },
+  {
+   "slug": "us-qbi-deduction",
+   "section": "Rates, bands and thresholds",
+   "quote": "Threshold amount, all other returns (single, head of household, qualifying surviving spouse) | USD 201,750\nThreshold amount, married filing separately | USD 201,775\nThreshold amount, married filing jointly | USD 403,500"
+  },
+  {
+   "slug": "us-qbi-deduction",
+   "section": "Rates, bands and thresholds; Step 3: where taxable income sits",
+   "quote": "Overall cap | 20% of (taxable income before the QBI deduction minus net capital gain, with qualified dividends added to net capital gain)\nAt or below the threshold ... | 20% of QBI for every business, SSTB or not; no wage or UBIA limit | Form 8995"
+  },
+  {
+   "slug": "us-qbi-deduction",
+   "section": "Rates, bands and thresholds; Step 7: combine, cap, then the minimum",
+   "quote": "Minimum deduction, taxable years beginning after 31 December 2025 | USD 400\nQBI needed for the minimum, from active businesses (material participation, section 469(h)) | USD 1,000\nMinimum (new for 2026): if aggregate QBI from all businesses the taxpayer materially participated in is at least USD 1,000, the deduction is the greater of the step 3 result and USD 400"
+  },
+  {
+   "slug": "us-qbi-deduction",
+   "section": "Section 3 — Year-specific figures table for tax year 2025",
+   "quote": "Taxable income threshold (single / HoH / QSS) | $197,300\nTaxable income threshold (MFJ) | $394,600\nTaxable income threshold (MFS) | $197,300"
+  },
+  {
+   "slug": "us-qbi-deduction",
+   "section": "Step 1: qualified business income for each business; Step 2: taxable income before the QBI deduction",
+   "quote": "QBI = Schedule C line 31 minus the deductible half of self-employment tax (Schedule 1) minus the self-employed health insurance deduction minus the deduction for contributions to SEP, SIMPLE or solo 401(k) plans for the owner.\nUse Form 1040 line 11a (adjusted gross income) minus the standard or itemized deduction and the other deductions the 2026 draft Form 8995 instructions list for line 11"
+  },
+  {
+   "slug": "us-quarterly-estimated-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "1st installment due | 15 April 2026\n2nd installment due | 15 June 2026\n3rd installment due | 15 September 2026\n4th installment due | 15 January 2027"
+  },
+  {
+   "slug": "us-quarterly-estimated-tax",
+   "section": "Rates, bands and thresholds",
+   "quote": "Each regular installment | 25% of the required annual payment"
+  },
+  {
+   "slug": "us-quarterly-estimated-tax",
+   "section": "Rates, bands and thresholds; Boundary and exception table",
+   "quote": "Current-year safe harbour: share of the 2026 tax | 90%\nPrior-year safe harbour: share of the 2025 tax | 100%\nPrior-year safe harbour where 2025 AGI exceeds the limit below | 110%\n2025 AGI limit for 100% (110% above it) | USD 150,000\n2025 AGI limit, married filing separately for 2026 | USD 75,000\n2025 return not filed, or 2025 a short year | Prior-year safe harbour not available: only 90% of 2026 tax"
+  },
+  {
+   "slug": "us-quarterly-estimated-tax",
+   "section": "Section 1 -- Quick reference",
+   "quote": "1st | April 15, 2025\n2nd | June 16, 2025\n3rd | September 15, 2025\n4th | January 15, 2026"
+  },
+  {
+   "slug": "us-quarterly-estimated-tax",
+   "section": "Step 1: is anything required?",
+   "quote": "The zero-tax exception: no payments are required if the person was a US citizen or resident alien for all of 2025, the 2025 tax year was 12 months, and they had no tax liability for 2025"
+  },
+  {
+   "slug": "us-schedule-c-and-se-computation",
+   "section": "Rates, bands and thresholds",
+   "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%"
+  },
+  {
+   "slug": "us-schedule-c-and-se-computation",
+   "section": "Rates, bands and thresholds",
+   "quote": "Medicare part of self-employment tax | 2.9%"
+  },
+  {
+   "slug": "us-schedule-c-and-se-computation",
+   "section": "Rates, bands and thresholds",
+   "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%"
+  },
+  {
+   "slug": "us-schedule-c-and-se-computation",
+   "section": "Rates, bands and thresholds",
+   "quote": "No self-employment tax below this net earnings amount | USD 400"
+  },
+  {
+   "slug": "us-schedule-c-and-se-computation",
+   "section": "Rates, bands and thresholds",
+   "quote": "Social Security part of self-employment tax | 12.4%"
+  },
+  {
+   "slug": "us-schedule-c-and-se-computation",
+   "section": "Rates, bands and thresholds; Form 8959: Additional Medicare Tax on self-employment income",
+   "quote": "Additional Medicare Tax on self-employment income | 0.9%\nAdditional Medicare Tax threshold, single, head of household, qualifying surviving spouse | USD 200,000\nAdditional Medicare Tax threshold, married filing jointly | USD 250,000\nAdditional Medicare Tax threshold, married filing separately | USD 125,000\nTake the threshold for the filing status (USD 200,000, 250,000 or 125,000). Reduce it, not below zero, by the person's Medicare wages. Self-employment income (Schedule SE line 6) above the reduced threshold is taxed at 0.9%."
+  },
+  {
+   "slug": "us-tax-workflow-base",
+   "section": "Figures for 2026, with years",
+   "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base"
+  },
+  {
+   "slug": "za-income-tax-tables",
+   "section": "Rates, bands and thresholds / Donations, interest exemption and foreign dividends",
+   "quote": "YoA | s 18A donations limit | Interest exemption, under 65 | Interest exemption, 65 and older\n2026 (2025/26) | 10% of taxable income | R23,800 | R34,500\nThe interest exemption applies to interest from a South African source (other than from a tax-free investment) earned by a natural person ... Interest from a foreign source is not exempt."
+  },
+  {
+   "slug": "za-income-tax-tables",
+   "section": "Rates, bands and thresholds / Medical scheme fees tax credits (s 6A), per month",
+   "quote": "The credit cannot create a refund. The medical scheme fees tax credit is a rebate, not a deduction: it is not refundable and cannot exceed the normal tax payable, because it is limited to the tax payable before employees' tax and provisional tax are set off. Any excess is lost; it is not carried forward to a later year"
+  },
+  {
+   "slug": "za-income-tax-tables",
+   "section": "Rates, bands and thresholds / Medical scheme fees tax credits (s 6A), per month",
+   "quote": "YoA | One person | Taxpayer and one dependant (combined) | Each additional dependant\n2026 (2025/26) | R364 | R728 | R246"
+  },
+  {
+   "slug": "za-income-tax-tables",
+   "section": "Rates, bands and thresholds / Medical scheme fees tax credits (s 6A), per month",
+   "quote": "YoA | One person | Taxpayer and one dependant (combined) | Each additional dependant\n2027 (2026/27) | R376 | R752 | R254"
+  },
+  {
+   "slug": "za-income-tax-tables",
+   "section": "Rates, bands and thresholds / Progressive brackets",
+   "quote": "YoA 2024, 2025 and 2026 (2023/24, 2024/25, 2025/26): one table, unchanged across the three years\n1 to 237,100 | 0 | 18%\n237,101 to 370,500 | 42,678 | 26% above 237,100\n370,501 to 512,800 | 77,362 | 31% above 370,500\n512,801 to 673,000 | 121,475 | 36% above 512,800\n673,001 to 857,900 | 179,147 | 39% above 673,000\n857,901 to 1,817,000 | 251,258 | 41% above 857,900\n1,817,001 and above | 644,489 | 45% above 1,817,000"
+  },
+  {
+   "slug": "za-income-tax-tables",
+   "section": "Rates, bands and thresholds / Progressive brackets",
+   "quote": "YoA 2027 (2026/27), 1 March 2026 to 28 February 2027\n1 to 245,100 | 0 | 18%\n245,101 to 383,100 | 44,118 | 26% above 245,100\n383,101 to 530,200 | 79,998 | 31% above 383,100\n530,201 to 695,800 | 125,599 | 36% above 530,200\n695,801 to 887,000 | 185,215 | 39% above 695,800\n887,001 to 1,878,600 | 259,783 | 41% above 887,000\n1,878,601 and above | 666,339 | 45% above 1,878,600"
+  },
+  {
+   "slug": "za-income-tax-tables",
+   "section": "Rates, bands and thresholds / Provisional tax (IRP6) payments and due dates, YoA 2027",
+   "quote": "Due dates for YoA 2027: first payment by 31 August 2026 (a Monday); second payment by 26 February 2027, the last business day of February 2027 (28 February 2027 is a Sunday)."
+  },
+  {
+   "slug": "za-income-tax-tables",
+   "section": "Rates, bands and thresholds / Provisional tax (IRP6) payments and due dates, YoA 2027",
+   "quote": "Total tax payable (A): normal tax on the estimated taxable income, less the s 6 primary, secondary and tertiary rebates, less the s 6A medical scheme fees tax credit, less the s 6B additional medical expenses tax credit.\nFirst payment: half of A (A/2), less the employees' tax deducted from the taxpayer's remuneration during the first period, less foreign tax credits (s 6quat and s 6quin) for the first 6 months. Employees' tax is deducted after halving, not before.\nSecond payment: A, less the employees' tax deducted from the taxpayer's remuneration during the year, less the first provisional tax payment (if actually paid), less foreign tax credits for the year."
+  },
+  {
+   "slug": "za-income-tax-tables",
+   "section": "Rates, bands and thresholds / Rebates (s 6)",
+   "quote": "YoA | Primary | Secondary (65 and older, added) | Tertiary (75 and older, added)\n2026 (2025/26) | R17,235 | R9,444 | R3,145"
+  },
+  {
+   "slug": "za-income-tax-tables",
+   "section": "Rates, bands and thresholds / Rebates (s 6)",
+   "quote": "YoA | Primary | Secondary (65 and older, added) | Tertiary (75 and older, added)\n2027 (2026/27) | R17,820 | R9,765 | R3,249"
+  },
+  {
+   "slug": "za-income-tax-tables",
+   "section": "Rates, bands and thresholds / Retirement fund contributions (s 11F)",
+   "quote": "the annual rand cap in the table below (s 11F(2)(a));\n27.5% of the higher of remuneration (as defined in paragraph 1 of the Fourth Schedule) and taxable income, each excluding retirement fund lump sum benefits, retirement fund lump sum withdrawal benefits and severance benefits, with taxable income determined before the s 11F and s 18A deductions; a taxable capital gain is included in this taxable income (s 11F(2)(b));\ntaxable income determined before the s 11F deduction and before the inclusion of any taxable capital gain (s 11F(2)(c)). This third limit is the taxable income itself, not 27.5% of it.\nContributions above the limit carry forward to the next year of assessment and are deemed to be contributed in that year.\nYoA | Percentage | Annual rand cap | Source\n2026 (2025/26) | 27.5% | R350,000"
+  },
+  {
+   "slug": "za-income-tax-tables",
+   "section": "Rates, bands and thresholds / Tax thresholds",
+   "quote": "YoA | Under 65 | 65 and older | 75 and older\n2026 (2025/26) | R95,750 | R148,217 | R165,689"
+  }
+ ]
+}

@@ -7,13 +7,13 @@ tax_year: 2026
 tax_year_notes: "Calendar 2026. Ordonnance 2025-44 amendments apply from 1 January 2026; Ordonnance 2026-45 amendments apply from its signature on 21 August 2026."
 last_updated: 2026-11-17
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.1
+version: 0.2
 tier: 2
 domain: income-tax
 type: situation-rules
 ---
 
-# Niger corporate income tax v0.1
+# Niger corporate income tax v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -48,7 +48,7 @@ The IMF rates in force from 1 January to 20 August 2026 were set by the CGI text
 
 ## The base
 
-**Accounting.** Every enterprise operated in Niger must keep its accounts there, in the working language and under the OHADA Uniform Act on accounting law and financial reporting. A non-resident operating in Niger keeps separate accounts for its Niger activity; a permanent establishment keeping accounts in another language must supply a translation by a State service or an approved translator. [CGI art. 799 as replaced by Ordonnance 2025-44 art. 19, PDF page 29](https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44).
+**Accounting.** Every enterprise operated in Niger must keep its accounts there, in the working language. The OHADA Uniform Act on accounting law and financial reporting applies within its scope. Under CGI art. 799(5), enterprises outside that accounting system's scope must use the particular accounting system prescribed for their professional sector or specific legal status; the text expressly includes banks, financial establishments and insurance companies. A non-resident operating in Niger keeps separate accounts for its Niger activity; a permanent establishment keeping accounts in another language must supply a translation by a State service or an approved translator. [CGI art. 799 as replaced by Ordonnance 2025-44 art. 19, PDF page 29](https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44).
 
 **Deductible charges from 1 January 2026** (CGI art. 23 as replaced by Ordonnance 2025-44 art. 11, PDF pages 4 to 5). A charge is deductible only if it meets **all** of these conditions:
 
@@ -69,7 +69,7 @@ Then apply the three overrides in the same article:
 
 **Minimum tax (IMF).** The rates are in the table. The definition of turnover or gross margin, how the IMF compares with IS, any floor amount and the payment schedule are in CGI articles not amended by the texts read, so they are held.
 
-**IRCM exemptions that touch companies, from 1 January 2026** (CGI arts. 178 and 180 as replaced, PDF pages 7 to 8): among others, gains on sales of securities by enterprises under the reinvestment condition of CGI art. 20; income from SICAF and SICAV investments; income distributed by UCITS and other collective schemes approved by the regional market authority (CREPMF); and, under art. 180(c), interest and other income on business current accounts, but only where both parties are industrial, commercial, craft, agricultural or mining operators, the entries relate exclusively to both parties' activity, and the recipient's current-account income is taxed to IS or IBA in Niger. Art. 180 also exempts, among others, interest on savings-bank books and decentralised financial system accounts, and loan income of banks and financial establishments not represented by negotiable securities (not where funded from their own funds). Art. 20 and the IRCM rates were not read.
+**IRCM exemptions that touch companies, from 1 January 2026** (CGI arts. 178 and 180 as replaced, PDF pages 7 to 9): among others, gains on sales of securities by enterprises under the reinvestment condition of CGI art. 20; income from SICAF and SICAV investments; income distributed by UCITS and other collective schemes approved by the regional market authority (CREPMF); and, under art. 180(c), interest and other income on business current accounts, but only where both parties are industrial, commercial, craft, agricultural or mining operators, the entries relate exclusively to both parties' activity, and the recipient's current-account income is taxed to IS or IBA in Niger. Art. 180 also exempts, among others, interest on savings-bank books and decentralised financial system accounts, and loan income of banks and financial establishments not represented by negotiable securities (not where funded from their own funds). Art. 20 and the IRCM rates were not read.
 
 ## Deadlines and filing
 
@@ -151,7 +151,7 @@ expected:
 
 | Official source | What was read | Read on |
 |---|---|---|
-| [Ministry of Finance, Ordonnance 2025-44 of 31 December 2025, 2026 finance ordinance](https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44) | PDF downloaded through the page's public download form (SHA-256 a841c4fa...2f42e) and read: arts. 10 and 11 (CGI preamble art. 1, arts. 6, 23, 45, 72, 90, 92, 178, 180), PDF pages 3 to 8; arts. 19 and 20 (CGI arts. 774, 799, 801, 818), pages 28 to 32; arts. 43 and 44 and signature, page 47 | 2026-11-17 |
+| [Ministry of Finance, Ordonnance 2025-44 of 31 December 2025, 2026 finance ordinance](https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44) | PDF downloaded through the page's public download form (SHA-256 a841c4fa...2f42e) and read: arts. 10 and 11 (CGI preamble art. 1, arts. 6, 23, 45, 72, 90, 92, 178, 180), PDF pages 3 to 9; arts. 19 and 20 (CGI arts. 774, 799, 801, 818), pages 28 to 32; arts. 43 and 44 and signature, page 47 | 2026-11-17 |
 | [Ministry of Finance, Ordonnance 2026-45 of 21 August 2026, first rectification](https://finances.gouv.ne/index.php/actualites/publications-du-ministere/file/1351-ordonnance-n-2026-45-premiere-rectification-de-la-loi-de-finances-2026) | Scanned PDF downloaded through the public download form (SHA-256 5e8a3a25...8fae); scan pages 2 to 5 (arts. 1 to 6, including CGI arts. 7, 62, 90, 112 bis to quater) and page 48 (art. 25, signature 21 August 2026) read as page images | 2026-11-17 |
 
 Not yet confirmed: the IS headline rate (the old Guide's 30%, from an unread CGI 2025 link, is not used); the general IS scope and territoriality article; the IMF base definitions, the comparison of IMF with IS, any IMF floor amount (the old Guide's "approximately 1% of turnover with a floor" is replaced by the 21 August 2026 rates above) and the IMF rates for 1 January to 20 August 2026; the annual return date (the old Guide's 30 April) and form; précompte rates and crediting (the old Guide's "instalments with a final balancing payment"); IRVM/IRCM rates on dividends (old Guide 10%) and interest (old Guide 13% to 25%); withholding on royalties and services paid to non-residents (old Guide about 16%); taxation of business capital gains (old Guide 20%) and the art. 20 reinvestment condition; the SICAF tax advantages; art. 802 invoice particulars; IS late-filing and late-payment penalties and interest; treaties. The consolidated CGI text in force for 2026 was not readable: the tax administration host impots.gouv.ne serves an expired certificate and the warning was not bypassed. Not yet approved by an accountant.
