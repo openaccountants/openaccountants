@@ -1,364 +1,289 @@
 ---
 name: cross-border-invoicing-compliance
-description: "Cross-border invoicing rules — which country's requirements apply, what goes on the invoice, and how to handle e-invoicing mandates. Use when the user asks about: cross-border invoice, invoicing foreign client, reverse charge invoice, multi-currency invoice, self-billing cross-border, credit note cross-border, e-invoicing cross-border, which invoicing rules apply, Article 219a, supplier country invoicing, Italy SDI foreign, India IRN cross-border, Mexico CFDI foreign, invoice retention cross-border, archiving invoices, ECB exchange rate, VAT currency conversion, recipient-created invoice, or any question about the correct format, content, or process for invoices crossing borders."
+description: "Cross-border invoicing rules - which country's requirements apply, what goes on the invoice, and how to handle e-invoicing mandates. Use when the user asks about: cross-border invoice, invoicing foreign client, reverse charge invoice, multi-currency invoice, self-billing cross-border, credit note cross-border, e-invoicing cross-border, which invoicing rules apply, Article 219a, supplier country invoicing, Italy SDI foreign, India IRN cross-border, Mexico CFDI foreign, invoice retention cross-border, archiving invoices, ECB exchange rate, VAT currency conversion, recipient-created invoice, or any question about the correct format, content, or process for invoices crossing borders."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/cross-border-invoicing-compliance"
   jurisdiction: "INTL"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-16"
 ---
 
 # Cross Border Invoicing Compliance
 
-## Cross-Border Invoicing Compliance
+## Quick reference
+
+Choose the applicable invoicing law separately from the VAT treatment, the electronic transmission channel and the archive. A foreign customer does not, by itself, remove domestic invoicing or data-reporting duties.
+
+| Decision | Current rule and boundary |
+| --- | --- |
+| EU governing law | Start with the place-of-supply Member State. Article 219a(2)(a) changes this for specified supplier-establishment cases, while Article 219a(2)(b) separately assigns the identification Member State's rules for supplies declared under an OSS/IOSS special scheme. [VAT Directive, Article 219a](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| EU invoice deadline | **15th of the following month** applies under Article 222 to Article 138 supplies and services taxed to the customer under Article 196. It is not a general deadline for every domestic invoice. [VAT Directive, Article 222](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Reverse charge | Establish the legal liability first. Include **“Reverse charge”** where the customer is liable; do not describe the supply as zero-rated merely because the supplier does not collect VAT. [VAT Directive, Articles 196, 226(11a), 226a](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Currency | Invoice values may use a currency agreed by the parties, but VAT payable must use the relevant national currency with Article 91 conversion. OSS/IOSS conversion rules are separate. [VAT Directive, Articles 91, 230, 366, 369h, 369u](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Future ViDA | **1 July 2030** is the adopted intra-EU digital-reporting phase. The **1 January 2035** limit concerns the specified pre-existing domestic reporting systems, not a universal expiry date for Italy's SdI. [Directive 2025/516, Articles 5–6](https://publications.europa.eu/resource/celex/32025L0516). |
+
+## Scope and required inputs
+
+Use this Guide for cross-border invoice jurisdiction, content, currency, self-billing, corrections, electronic channels and archiving. It is a method across jurisdictions, not a completed national filing specification. Cross-references: [EU reverse charge](eu-reverse-charge.md), [VAT place of supply](vat-place-of-supply-master.md), [EU OSS](eu-oss-digital.md), [reporting systems](saf-t-realtime-ereporting-matrix.md) and the relevant country Guide.
+
+Obtain both parties' establishment and participating fixed establishments, VAT registrations and business/private capacity; goods versus services and any special place rule; supply/tax-point/payment dates; OSS/IOSS identification Member State and scheme; who creates the invoice; transaction and VAT currencies; customer delivery channel; and each party's storage location, accounting requirements and open disputes. Retain the underlying contract, status evidence, invoice, validation result, correction chain and rate evidence.
 
 > **Disclaimer:** This skill provides general guidance on cross-border invoicing rules. Invoice requirements are jurisdiction-specific and evolving rapidly due to e-invoicing mandates. Consult a qualified advisor before relying on this information for compliance.
 
-## Skill Metadata
+The former metadata described Articles 217–240, a **May 2026** validation and a **2028–2035** ViDA window. The source scopes below now distinguish the current rules, adopted future changes and individually unresolved national details. Contributor remains OpenAccountants; this source-cited draft carries no professional attestation.
 
-**Skill Metadata**
+## The method, step by step
 
-| Field | Value |
+1. Decide the place and VAT liability before choosing the invoice law. For ordinary B2B services Article 44 points to the customer establishment or receiving fixed establishment; special rules can displace it. An identification number alone does not settle capacity, location or establishment. [VAT Directive, Articles 43–47; Regulation 282/2011, Articles 18–24](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [implementing rules](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
+2. Apply Article 219a, then the national invoice obligation and deadline. Identify any simplified-invoice exemption, scheme or special rule before preparing the document. [VAT Directive, Articles 219a–226a](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
+3. Add the legally required content and correct VAT treatment. Resolve missing registration information through the applicable procedure rather than inventing an identifier or a zero rate. [VAT Directive, Articles 226, 226a; Regulation 282/2011, Article 18](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [status evidence](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
+4. Select the actual national electronic invoice, data-reporting or clearance route. Supplier transmission to a tax platform and delivery to a foreign customer can be separate obligations. Check technical version, recipient scope, exceptions and acknowledgement. [Italy, Legislative Decree 127/2015, Article 1(3)–(3-bis)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-11-16).
+5. Record currency conversion, archive both the invoice and its evidence, and connect any later correction to its original supply and reporting period. [VAT Directive, Articles 91, 219, 244–249, 369g(4)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
+
+## Whose rules govern the invoice?
+
+| Situation | Application of the current Article 219a |
 | --- | --- |
-| Jurisdiction | Multi-jurisdiction (EU, UK, US, India, Italy, Mexico, and general principles) |
-| Primary Legislation | EU: VAT Directive 2006/112/EC, Articles 217–240; Art 219a (invoicing rules applicable); ViDA Directive (phased 2028–2035) |
-| Scope | Invoice format, content, currency, e-invoicing, and archiving requirements for cross-border transactions |
-| Contributor | OpenAccountants |
-| Validation Date | May 2026 |
-| Skill Version | 1.0 |
-| Cross-references | `eu-reverse-charge.md`, `vat-place-of-supply-master.md`, `eu-oss-digital.md`, country-specific e-invoicing skills |
+| Basic rule | Use the rules of the Member State in which Title V deems the supply made. Retention Articles 244–248 remain separately applicable. [Article 219a(1), (3)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Supplier-establishment reverse-charge exception | Where the supplier is not established in the supply Member State, or its establishment there does not intervene, and the customer is liable, use the supplier's business-establishment Member State, the supplying fixed-establishment Member State, or failing those its permanent-address/usual-residence Member State. The exception does not apply where the customer self-bills. It is wider than intra-EU Article 196 services, but requires the stated EU supplier connection. [Article 219a(2)(a)(i)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Supply outside the EU | The same supplier-establishment hierarchy applies where Title V deems goods or services supplied outside the Community. A US customer's self-billing for an ordinary German supplier's service does not remove this separate outside-EU limb. [Article 219a(2)(a)(ii)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| OSS/IOSS special scheme | Use the identification Member State's invoicing rules for supplies covered by the supplier's Chapter 6 special scheme. A US SaaS supplier using non-Union OSS does not automatically follow the consumer's country. France is the invoice-law answer only if the applicable scheme identifies it there. Determine whether an invoice is required under those rules. [Article 219a(2)(b); Article 220(1)(2)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Other non-EU supplier | If there is no applicable scheme exception or EU supplier-establishment limb, apply the place-of-supply Member State's rules. Do not state that non-EU suppliers can never benefit from an exception. [Article 219a](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
 
-## Section 1: General Principle — Whose Rules Govern the Invoice?
+Ordinary examples, assuming the stated service place and reverse charge are established: German consultant to French business: Germany; French domestic goods: France; Italian consulting to US business: Italy; Dutch customer self-billing Maltese or Italian ordinary B2B services under reverse charge: Netherlands. A receiving fixed establishment or a special place rule can change those results. [Articles 44, 219a](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-### The Basic Rule — Article 219a(1) [T1]
+## EU invoice content and reverse charge
 
-- **Basic invoicing rule** — Invoicing follows the rules of the Member State where the supply is deemed to take place (i.e., the place-of-supply country).  _(Article 219a(1))_
-
-### The Exceptions — Article 219a(2) [T1]
-
-**The Exceptions — Article 219a(2)**  _(Article 219a(2))_
-
-| Exception | When It Applies | Whose Rules |
-| --- | --- | --- |
-| **(a) Reverse charge — supplier not established in supply country** | B2B intra-EU services where customer self-assesses VAT (Art 196) | **Supplier's** country sets the invoicing rules |
-| **(b) Supply outside the EU** | Services deemed supplied outside the EU | **Supplier's** country sets the invoicing rules |
-| **Self-billing under reverse charge** | Customer issues the invoice on behalf of the supplier | Place-of-supply country's rules apply (basic rule) |
-| **Non-EU supplier making taxable supplies in EU** | Non-EU seller with EU-taxable transactions | Place-of-supply country's rules always apply (no exception) |
-
-### Practical Impact [T1]
-
-**Practical Impact**
-
-| Scenario | Whose Invoicing Rules? |
+| Field | Current full-invoice requirement and limitation |
 | --- | --- |
-| German consultant invoices French company (B2B reverse charge) | **Germany** (supplier's rules — exception (a)) |
-| French company sells goods domestically | **France** (place of supply = France) |
-| Italian company invoices US client for consulting | **Italy** (supply outside EU — exception (b)) |
-| US company sells SaaS to French consumer via non-Union OSS | **France** (place of supply = France; non-EU supplier — no exception) |
-| Dutch company issues self-billing invoice for services received from Malta under reverse charge | **Netherlands** (self-billing under reverse charge = basic rule) |
+| Issue and supply dates | Issue date; date of supply or completion, or qualifying payment on account, if determinable and different from issue date. [Article 226(1), (7)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Number | A sequential number, based on one or more series, uniquely identifying the invoice. [Article 226(2)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Supplier | Full name and address; VAT identification number under which the supplier made the supply. [Article 226(3), (5)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Customer | Full name and address; VAT identification number under which the customer received a supply for which it is liable, or an Article 138 supply. The customer number is not universally required for every normal invoice. [Article 226(4), (5)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Description | Quantity and nature of goods or extent and nature of services. [Article 226(6)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Amount | Taxable amount for each rate or exemption, unit price exclusive of VAT, and discounts/rebates not included in that price. Article 226a permits the qualifying non-established supplier to omit points (8)–(10) and give the taxable amount by reference to quantity/extent and nature. [Articles 226(8)–(10), 226a](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| VAT and notation | Ordinarily show rate and VAT payable, subject to the relevant exception. Where the customer is liable, include **“Reverse charge”**. Omitting supplier VAT under the correct procedure is not a **0%** tax rate. A legislative citation can help explain the treatment but Article 226(11a) does not require an Article 196 citation in every case. [Articles 226(9)–(11a), 226a](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Other applicable content | Include **“Self-billing”** for customer-issued invoices; exemption reference or indication where exempt; and applicable cash-accounting, new-vehicle, margin-scheme or tax-representative details. These are conditional fields, not reasons to label a reverse charge as an exemption. [Article 226(7a), (10a)–(15)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
 
-## Section 2: EU Cross-Border Invoicing (Intra-EU B2B)
+### Reverse-charge wording by language
 
-### Mandatory Invoice Content for Intra-EU B2B Under Reverse Charge [T1]
+These language leads preserve the earlier drafting aids. The English Directive wording and the stated German, French, Italian, Spanish, Dutch and Portuguese formulations below were read in the cited official scopes. The longer legal references are optional explanatory drafts, not universal mandatory formulations.
 
-**Mandatory Invoice Content for Intra-EU B2B Under Reverse Charge**  _(VAT Directive Art 226)_
-
-| Element | Requirement |
+| Language | Wording and exact boundary |
 | --- | --- |
-| Invoice number | Sequential, unique |
-| Date of issue | Date the invoice is created |
-| Date of supply | Date the service was performed or goods delivered (if different from issue date) |
-| Supplier identification | Full name, address, VAT identification number |
-| Customer identification | Full name, address, **VAT identification number** (verified via VIES) |
-| Description | Nature and quantity of goods supplied or extent and nature of services |
-| Taxable amount | Net amount in the agreed currency |
-| VAT rate | N/A for reverse charge (0%) |
-| VAT amount | EUR 0.00 or blank |
-| **Reverse charge notation** | **Mandatory.** Must state "Reverse charge" or equivalent in the relevant language |
-| Reference to legislation | "Article 196, Council Directive 2006/112/EC" or national equivalent |
+| English | **“Reverse charge”** is the Directive wording. The previous addition **“Article 196, Council Directive 2006/112/EC”** is appropriate only if that is the actual liability provision. [Article 226(11a)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| German | **“Steuerschuldnerschaft des Leistungsempfängers”** is required in the applicable §14a cases. The old suffix **“§13b UStG”** is not a substitute for selecting the actual liability rule. [UStG §14a(1), (5)](https://www.gesetze-im-internet.de/ustg_1980/__14a.html). |
+| French | **“Autoliquidation”** is required where the acquirer/recipient is liable under Article242noniesA(I)(13°). The earlier **“Article196, Directive2006/112/CE”** suffix remains an explanatory draft only where Article196 is the actual basis. [Article242noniesA(I)(13°)](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050811276/). |
+| Italian | **“inversione contabile”** applies under Article 21(6-bis)(a) to the specified supplies to an EU taxable recipient liable there; **“operazione non soggetta”** is the outside-EU limb. The old **“Art. 196, Direttiva 2006/112/CE”** suffix is not automatically the relevant rule. [DPR 633/1972, Article 21(6-bis)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633!vig=2026-11-16~art21). |
+| Spanish | **“inversión del sujeto pasivo”** is expressly required when the recipient is the taxable person under Article6(1)(m). The old **“Artículo196, Directiva2006/112/CE”** addition is appropriate only if it is the actual liability provision. [Article6(1)(m)](https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696). |
+| Dutch | Belastingdienst requires **“btw verlegd”**, the recipient VAT identification number and the stated consideration-by-rate information when shifting VAT. The old **“Artikel196, Richtlijn2006/112/EG”** suffix is not automatically the governing liability provision. [Official reverse-charge invoice guidance](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_berekenen_aan_uw_klanten/waarover_btw_berekenen/verleggingsregeling/hoe_werkt_btw_verleggen). |
+| Portuguese | CIVA36(13) requires **“IVA - autoliquidação”** in its listed and other recipient-liability cases, rather than merely the old standalone **“Autoliquidação”**. The earlier **“Artigo196.º, Diretiva2006/112/CE”** addition requires the actual liability basis. [CIVA36(13)](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva36.aspx). |
 
-### Reverse Charge Notation by Country [T1]
+For comparison only, the old normal-invoice illustration used **19%** and **EUR950 VAT** on an assumed **EUR5,000** taxable base. Those are supplied illustration figures, not a current national-rate determination; 5,000 × 19% = 950. The reverse-charge alternative omits supplier-collected VAT under its actual rule, rather than applying a zero rate.
 
-**Reverse Charge Notation by Country**
+### Invoice deadlines
 
-| Country | Notation |
+| Rule / country | Correct current limit or individually reserved old proposal |
 | --- | --- |
-| English | "Reverse charge — Article 196, Council Directive 2006/112/EC" |
-| German | "Steuerschuldnerschaft des Leistungsempfängers — § 13b UStG" |
-| French | "Autoliquidation — Article 196, Directive 2006/112/CE" |
-| Italian | "Inversione contabile — Art. 196, Direttiva 2006/112/CE" |
-| Spanish | "Inversión del sujeto pasivo — Artículo 196, Directiva 2006/112/CE" |
-| Dutch | "BTW verlegd — Artikel 196, Richtlijn 2006/112/EG" |
-| Portuguese | "Autoliquidação — Artigo 196.º, Diretiva 2006/112/CE" |
+| EU specified cross-border supplies | Article 138 supplies and Article 196 services: no later than the **15th** of the month following the chargeable event. Other deadlines are nationally set. [Article 222](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Germany | The ordinary §14(2) obligation covers specified supplies within **6 months**, subject to its exempt-supply exclusion, but §14a remains applicable. Ordinary cross-Member-State B2B services under §3a(2) have the specific **15th of the following month** deadline and both VAT IDs under §14a(1). “Immediately, no later than 6 months” was not a sufficient cross-border rule. [§14(2)](https://www.gesetze-im-internet.de/ustg_1980/__14.html); [§14a(1)](https://www.gesetze-im-internet.de/ustg_1980/__14a.html). |
+| Italy | Ordinary issuance is within **12 days**, not on the **12th** day of the following month. Article 21(4)(a) allows qualifying documented same-month supplies a summary invoice by the following month's **15th**; (c) and (d) give that **15th** limit for their specified EU/non-EU services. Do not extend those exceptions to every invoice. [Article 21(4)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633!vig=2026-11-16~art21). |
+| France | BOFiP states the general Article289(I)(3) rule is issue at the taxable event, subject to its limited administrative/special deferrals. Its specified intra-EU supplies/services may be invoiced by the following month’s **15th**. Periodic invoices have the stated same-calendar-month/end-month conditions. The former blanket following-month **15th** claim is superseded. [Actual BOFiP §§1–110](https://bofip.impots.gouv.fr/export/pdf/320447). |
+| Spain | Article11 generally requires issue when the transaction occurs; where the recipient is a business/professional acting as such, issue **before the 16th** of the following month after VAT accrues. The specified intra-EU-goods limb uses dispatch/transport commencement; the cash-accounting limb has its own transaction-date wording. This is not a universal following-month deadline for all consumers. [RD1619/2012 Article11](https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696). |
+| Netherlands | Belastingdienst says send no later than the **15th day** of the month following delivery, rather than the old **“before the 15th”** wording. Its guidance expressly flags adapted/special rules and foreign-trade cases; check those for the actual supply. [Official invoicing guidance](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/administratie_bijhouden/facturen_maken/facturen_maken). |
+| Belgium | Royal Decree1 Article4 generally gives the following month’s **15th** after the tax event, with separate chargeability/advance, intra-EU goods, successive-period, continuous-service and VAT-group document limbs. Identify the applicable limb; a universal invoice deadline omits those conditions. [Article4(1)–(4)](https://www.ejustice.just.fgov.be/eli/arrete/1992/12/29/1992003823/justel). |
 
-### Time Limits for Issuing Invoices [T1]
+### Customer obligations and error handling
 
-- **General EU deadline** — The VAT Directive requires invoices to be issued by the 15th of the month following the month in which the supply took place. Individual member states may impose shorter deadlines.  _(Art 222)_
+For an ordinary Article 44 service supplied by a non-established taxable supplier, Article 196 assigns liability to the taxable customer or VAT-identified non-taxable legal person receiving it. Check the local output tax and the separately available deduction. Deduction depends on taxable business use and the Article 168/173 restrictions; output and input amounts are not automatically equal. Current return boxes, recapitulative reporting and national correction procedures must be obtained from the relevant Guide. The old Intrastat/acquisition-reporting proposal is not a universal obligation established by these invoicing provisions; obtain the actual transaction-specific statistical/reporting scope before including a service. [Articles 43–44, 168, 173, 196, 250](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-### Time Limits for Issuing Invoices [T1]
-
-**Time Limits for Issuing Invoices by Country**
-
-| Country | Deadline |
+| Error | Correct response and limit |
 | --- | --- |
-| Germany | Immediately, but no later than 6 months after supply (§14 UStG) |
-| France | By the 15th of the following month |
-| Italy | By the 15th of the following month (12th for immediate invoices) |
-| Spain | By the 15th of the following month |
-| Netherlands | Before the 15th of the following month |
-| Belgium | By the 15th of the following month |
+| Supplier charged VAT when customer should account | Investigate liability and correct under the applicable national procedure. VAT entered on an invoice can itself be payable under Article 203; do not simply deduct incorrectly invoiced foreign VAT or promise an automatic credit-note remedy in every case. [Articles 196, 203, 219](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Missing reverse-charge words | Correct the deficient document. Do not predict automatic denial of a substantive deduction solely from this defect; the exact remedial/deduction outcome needs the applicable law and facts. [Articles 168, 226(11a)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Missing customer VAT ID | Resolve invoice content and registration. This alone does not prove private consumption or automatically change place of supply to B2C. Never invent an ID. [Article 226(4)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Regulation 282/2011, Articles 18–19](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1). |
+| VIES failure or pending registration | Verify evidence rather than assume either outcome. Article 18(1)(b) permits the specified pending-ID evidence and reasonable verification; Article 18(2) has its contrary-information qualification and special telecommunications/broadcasting/electronic-service option. For non-EU customers use Article 18(3)'s certificate/ID/other proof and reasonable checks. These status rules do not waive mandatory invoice content. [Articles 18–24](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1). |
 
-## Section 3: Reverse Charge Invoice Requirements
+## Multi-currency invoices and returns
 
-### What Changes on the Invoice When Reverse Charge Applies [T1]
+Article 230 permits invoice amounts in any currency while requiring VAT payable in the national currency of the Member State where the supply occurs, using Article 91. For non-import transactions Article 91(2) refers to the latest selling rate at the time VAT becomes chargeable under national market rules; Member States must accept the latest ECB rate at that time and may require notification of the option. Cross-currency conversions use the euro rates. Import conversion instead follows customs valuation rules; Member States may allow that import method for other transactions under Article 91(2). The tax point can differ from the invoice or service date. [Articles 91, 230](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-**What Changes on the Invoice When Reverse Charge Applies**
-
-| Normal Invoice | Reverse Charge Invoice |
+| Jurisdiction / return | Rule and boundary |
 | --- | --- |
-| Shows VAT rate (e.g., 19%) | Shows 0% or no VAT line |
-| Shows VAT amount (e.g., EUR 950) | Shows EUR 0.00 or omits VAT amount |
-| No special notation needed | **Must include reverse charge notation** |
-| Only supplier's VAT number required | **Both** supplier and customer VAT numbers required |
-| Customer pays gross amount | Customer pays net amount only |
+| EU invoice versus domestic return | Keep contractual amounts separate from VAT payable and the national return's conversion. Preserve the rate date, source, direction and method in the records. There is no general EU requirement in Article 226 to print the exchange-rate source on every invoice. Switching a permitted method may have national notification/consistency conditions. [Articles 91, 226, 230](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| UK | Use the UK market selling rate at the time of supply, or the permitted HMRC period-rate alternative; an elected period-rate method cannot be changed without agreement. An alternative commercial method requires written approval and must satisfy the stated criteria. A VAT invoice for a UK supply in foreign currency must express total VAT payable in sterling. Do not treat any ECB or “reputable financial source” rate as automatically accepted. [VAT Notice 700, §§7.6, 16.3–16.4](https://www.gov.uk/guidance/vat-guide-notice-700). |
+| US | **Not yet confirmed:** the old uniform transaction-date conversion, Federal Reserve source and **3–7-year** state-sales-tax retention claims. State, locality, tax type, records and transaction facts must be selected before recovering the operative rules; a federal currency source does not establish a state sales-tax method. |
+| Non-Union OSS | Return in euro; a non-euro identification Member State may require its currency. For other currencies use the ECB rate on the tax period's last day, or the next publication day if none is published then. [Article 366](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Union OSS | Same euro/non-euro identification-state option and quarter-end ECB/next-publication rule. This is not an invoice-date conversion or a rule dependent only on whether the identification state uses euro. [Article 369h](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| IOSS | Euro, with the same option for a non-euro identification state; monthly period-end ECB/next-publication rule. IOSS is not quarterly. [Articles 369s, 369u](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
 
-### Customer's Obligations Upon Receiving a Reverse Charge Invoice [T1]
+## Self-billing and recipient-created invoices
 
-- **Customer obligations on receipt of reverse charge invoice** — 1. Self-assess output VAT at local rate on the net amount. 2. Claim input VAT on the same return (if entitled — fully taxable business). 3. Both entries must appear on the VAT return (see eu-reverse-charge.md for box mappings). 4. Report on Intrastat / acquisition reporting if required by the member state.  _(eu-reverse-charge.md)_
+Article 224 permits the customer to prepare the supplier's invoice where there is a **prior agreement** and a procedure for the supplier's acceptance of **each invoice**. The Directive does not itself say that the prior agreement must always be written; obtain any applicable national writing requirement. The Member State may require issuance in the supplier's name and on its behalf, and Article 226(10a) requires **“Self-billing”**. [Articles 224, 226(10a)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-### Common Mistakes [T1]
+A Dutch customer self-billing an Italian or Maltese supplier's ordinary Netherlands-place B2B service under reverse charge follows Netherlands rules because Article 219a(2)(a)(i) excludes customer-issued invoices. A US customer self-billing the ordinary German supplier's outside-EU service still follows the separate German supplier-rule limb in Article 219a(2)(a)(ii). Check national execution and non-EU third-party restrictions; Italy's Article 21(1) has specific conditions for customer/third-party issuance from a country without mutual-assistance arrangements. [Article 219a](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Italian Article 21(1)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633!vig=2026-11-16~art21).
 
-**Common Mistakes**
+Retailer payments to many small suppliers, royalties calculated by the recipient, and principal/agent commission arrangements are possible commercial use cases, not exemptions from the agreement, acceptance, content or governing-law tests.
 
-| Mistake | Consequence |
+## Credit notes and corrections
+
+| Trigger / field | Current rule and boundary |
 | --- | --- |
-| Supplier charges domestic VAT instead of reverse charge | Customer pays VAT they shouldn't. Double taxation risk if customer also self-assesses. Supplier must issue credit note. |
-| Missing reverse charge notation | Invoice does not meet legal requirements. Customer's tax authority may deny input VAT deduction. |
-| Customer's VAT number not on invoice | Cannot prove B2B nature. Tax authority may reclassify as B2C. |
-| Supplier doesn't verify VAT number via VIES | If number is invalid, reverse charge does not apply. Supplier liable for domestic VAT. |
+| Price cut, goods return, retrospective volume rebate or cancellation | Establish the Article 90 reduction under the Member State's conditions; total/partial non-payment has an express Member State derogation. A returned good or agreed rebate still needs the national document and reporting procedure. [Article 90](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Document linking | Article 219 treats a document/message as an invoice where it amends and refers specifically and unambiguously to the original. Keep original number and date as a sound linking practice, and where national law requires them. Current Article 219 does not itself prescribe those two separate fields in every case. [Article 219](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Wrong amount or VAT | Use the applicable amendment/cancellation/reissue mechanism. A credit plus a new invoice may be suitable, but is not the only EU-wide permitted route. Preserve corrected amounts, VAT treatment and an unambiguous audit trail. [Articles 203, 219](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Reverse-charge correction | Keep the legally required reverse-charge treatment and notation where still applicable; supplier and recipient separately adjust liability and any deduction under their national rules. Article 184 requires correction of an excessive/insufficient initial deduction; Article 185 supplies triggers and exceptions and Article 186 leaves detailed implementation to Member States. [Articles 184–186, 219, 226(11a)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Different periods or currencies | **Not yet confirmed:** the former universal rules “supplier reports in credit-note issue period”, “customer adjusts in receipt period”, and “use the credit-note-date FX rate”. Each needs the selected country's tax-point, adjustment and rate rules. Do not move an original-period error automatically to the current period. [Articles 90–91, 184–186](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Union OSS correction | A post-submission amendment belongs in a **subsequent return within 3 years** of the original return's due date, identifying consumption Member State, original period and adjustment. It need not be only the next return. Quarterly returns are due by the end of the following month. [Articles 369f, 369g(4)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
 
-## Section 4: Multi-Currency Invoicing
+## National electronic channels
 
-### Which Currency for VAT Calculation? [T1]
+### Italy: SdI, foreign transactions and retention
 
-**Which Currency for VAT Calculation?**  _(VAT Directive Art 230)_
-
-| Jurisdiction | Rule |
+| Topic | Current finding or specific execution limit |
 | --- | --- |
-| **EU (VAT Directive Art 230)** | VAT amount must be expressed in the currency of the Member State where the supply takes place. If invoiced in a foreign currency, convert using ECB rate or national customs rate. |
-| **ECB exchange rate** | Use the rate on the **date of the chargeable event** (typically date of supply). Alternatively, some member states accept the rate on the date of invoice. |
-| **UK** | HMRC accepts the rate at the date of supply. Use HMRC, ECB, or a reputable financial source. |
-| **US** | No VAT — but for sales tax, use the exchange rate on the date of transaction. |
+| Domestic mandate | The general domestic framework applied from **1 January2019** under the historical commencement note, subject to its then-current scope; this is not proof that every exempt class was included from that date. Article1(3) of Legislative Decree127/2015 requires electronic invoices through SdI for covered supplies between resident/established subjects, including the stated intermediary/consumer rules. Do not translate this into “every foreign supplier must use SdI” or a universal rule without sector/exemption checks. [Article 1(3)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-11-16). |
+| Cross-border reporting | Article 1(3-bis) covers data for transactions with non-established subjects, with exclusions for customs-bill transactions, transactions already evidenced by an SdI invoice, and purchases not territorially relevant in Italy of no more than **EUR 5,000 per transaction**. From **1 July 2022** data use SdI: outward by the invoice/receipt issue deadline; inward by the following month's **15th**, based on receipt or the event. This replaces the former cross-border data channel; it does not mean foreign-customer delivery has become an ordinary domestic SdI invoice. [Article 1(3-bis)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-11-16). |
+| Foreign supplier / Italian buyer | Determine the supply, Italian establishment's intervention and liability. TD17 concerns foreign services; TD18 intra-EU goods acquisitions; TD19 specified goods already in Italy, rather than imports/intra-EU acquisitions. The guide distinguishes EU integration/non-EU self-invoicing and cases where an intervening Italian establishment removes that reverse charge. Do not use all TD17–TD19 for every purchase or treat their transmission as proof of a full input deduction. [AdE guide v1.10, TD17–TD19, pp11–17](https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_compilazione-fe-esterometro-v1-10_aprile_2025). |
+| Outside-place service | N2.1 is for the specified territoriality exclusions under Articles 7–7-septies; the ordinary outside-EU Italian invoice carries **“operazione non soggetta”**. N2.2 has different uses, including specified SME-franchise/report-only cases. A foreign address alone does not select either code. [Article 21(6-bis)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633!vig=2026-11-16~art21); [AdE guide, pp34–35](https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_compilazione-fe-esterometro-v1-10_aprile_2025). |
+| Version and validation | The prescribed SdI data use **XML** under the technical schema, the route previously labelled **FatturaPA XML**. Technical validation and delivery/rejection receipts do not establish the substantive VAT result or replace foreign-customer delivery. The actual official technical document is **version 1.9.1**, dated **31 March 2026**. Its recipient-field check **00327** concerns a VAT-group fiscal code not belonging to a participant when the relevant VAT ID is absent; it is not an all-invoice tax-rate test. **Not yet confirmed:** the old exact **15 May 2026** deployment date, because the operative specification body was recovered but its official deployment-page fetch failed. [Technical specification, version history, §2.1.4 and error catalogue](https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1). |
+| Conservation | **10 years** under Civil Code Article 2220 runs from the last registration and includes the specified received invoices and issued copies; it does not by itself establish every electronic-conservation execution step. Article 1(6-bis) deems specified conservation duties met for SdI data/invoices stored by AdE, subject to its implementing procedure. **Not yet confirmed:** the former blanket “approved conservazione sostitutiva for every transaction” instruction, complete technical archive workflow, extensions for open assessments and application of any special exclusion. [Article 2220](https://def.giustiziatributaria.gov.it/DocTribFrontend/executePrintArticolo.do?codiceOrdinamento=0000000000022200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000&id=%7B2F7FDDA1-DE25-4E09-B676-90D0687622A0%7D&idAttoNormativo=%7B9E93F1BE-06AE-4F24-8E9D-B838F7E0C2E6%7D); [Article 1(6-bis)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-11-16). |
 
-### Practical Guidance for Multi-Currency Invoices [T1]
+### India: notified e-invoice class and export boundary
 
-**Practical Guidance for Multi-Currency Invoices**
-
-| Element | Best Practice |
+| Topic | Current finding or specific unresolved item |
 | --- | --- |
-| Invoice currency | Invoice in whatever currency the contract specifies (USD, GBP, EUR, etc.) |
-| VAT amount | Convert to the local currency using the applicable exchange rate |
-| Exchange rate source | ECB daily rate (EU), HMRC rate (UK), Federal Reserve rate (US) |
-| Document the rate | State the exchange rate and source on the invoice or in your records |
-| Consistency | Use the same exchange rate source consistently — switching sources can trigger audit queries |
+| Scope and threshold | The notified class uses aggregate turnover **exceeding ₹5 crore**, not **≥₹5 crore**, in **any preceding financial year from 2017–18 onwards**, for the covered registered-recipient supplies and exports. The ₹5 crore substitution applies from **1 August 2023**. Check all notified exclusions: government departments, local authorities, SEZ units and the specified Rule 54(2), (3), (4), (4A) classes. This is not an all-business obligation based on the current year's turnover alone. [Notifications 13/2020](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-13-central-tax-english-2020.pdf), [61/2020](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-61-central-tax-english-2020.pdf), [70/2020](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-70-central-tax-english-2020.pdf), [23/2021](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-23-central-tax-english-2021.pdf) and [10/2023](https://www.gstcouncil.gov.in/sites/default/files/2024-05/10ct_eng.pdf). |
+| IRN and QR | Obtain the IRN under the applicable Rule 48(4) process; Notification 72/2020 inserted the invoice QR requirement with embedded IRN and a power to exempt a person/class for a specified period and conditions. Notification 13/2020 invokes that Rule 48(4) process. **Not yet confirmed:** the complete current JSON schema, signing/validation implementation and every exclusion's present Rule 54 wording. The recovered generic CBIC rules PDF only consolidates through **2018** and is not current e-invoice law. [Notification 13/2020](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-13-central-tax-english-2020.pdf); [72/2020, clauses2–3](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-72-central-tax-english-2020.pdf). |
+| Exports | Export invoices are expressly added by Notification 70/2020. **Not yet confirmed:** exact current schema use of **EXPWP** versus **EXPWOP**, IGST-paid eligibility versus LUT/bond route, and when shipping-bill information applies to goods. Do not require a shipping bill for every exported consulting/service invoice. [Notification 70/2020](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-70-central-tax-english-2020.pdf). |
+| Foreign supplier | **Not yet confirmed:** the former universal “foreign supplier not in IRP; Indian buyer handles GST under reverse charge” outcome. Supplier registration, ordinary service imports, goods imports, OIDAR and the recipient's status have different rules; the e-invoice threshold does not establish them. |
+| Platform time control | **Not yet confirmed as primary GSTN advisory:** the IRP operator's notice states a **30-day** restriction from **1 April 2025** for AATO **₹10 crore and above**, covering invoices/credit/debit notes. The linked GST portal response retrieved only a JavaScript shell. Do not confuse this operational lead with the separate **₹5 crore** mandate or assume a reporting deadline extends the lawful invoice-issue date. [Linked GST advisory](https://services.gst.gov.in/services/advisoryandreleases/read/543). |
 
-### OSS Returns and Currency [T1]
+### Mexico: CFDI and foreign counterparties
 
-**OSS Returns and Currency**
-
-| Scheme | Currency Required |
+| Topic | Current finding or specific unresolved item |
 | --- | --- |
-| Union OSS / Non-Union OSS | EUR. If your MSI doesn't use EUR, convert at ECB rate on the last day of the quarter. |
-| IOSS | EUR |
-| Domestic VAT return | Local currency of the member state |
+| Format and certification | SAT's current Anexo20 page identifies **CFDI 4.0** as the only valid version from **1 April 2023**. RMF2026 rule2.7.1.2 describes validation, folio and SAT seal via the authorised certification provider and permits systems/third-party/free applications; its text also refers to SAT validation. Do not call a paid PAC the only possible issue channel. **Not yet confirmed:** all present CFF29/29-A scope exclusions and production credentials/cancellation checks; a whole CFF source body was not recovered. [SAT Anexo20](https://wwwmat.sat.gob.mx/consultas/35025/formato-de-factura-electronica-%28anexo-20%29); [RMF2026, rule2.7.1.2](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/compiladas/Compilado_Tercera_Modificacion_a_la-Resolucion_Miscelanea_Fiscal_para_2026.pdf). |
+| Foreign customer without RFC | Under rule2.7.1.23 the generic foreign code is **XEXX010101000** for a foreign resident not registered in the RFC. It is not the domestic-public generic **XAXX010101000**. Complete the other required recipient fields; do not infer export VAT treatment from that code. [Rule2.7.1.23](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/compiladas/Compilado_Tercera_Modificacion_a_la-Resolucion_Miscelanea_Fiscal_para_2026.pdf). |
+| Foreign supplier document | Rule2.7.1.14 permits specified foreign-no-Mexican-PE documents for deduction/credit if its identification, date/place, recipient RFC/name, description, value and conditional tax details are met; the goods/temporary-use limb is limited to transactions in Mexican territory under the VAT law. A **payment-receipt complement** is not a universal buyer-created replacement for every foreign supplier's invoice. [Rule2.7.1.14](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/compiladas/Compilado_Tercera_Modificacion_a_la-Resolucion_Miscelanea_Fiscal_para_2026.pdf). |
+| Payments | Rule2.7.1.32 covers specified deferred/instalment receipts with the initial full-value CFDI and subsequent payment CFDIs, including where payment was absent at issue. Its payment complement is about receipts by the issuer, not automatically a Mexican buyer's payment abroad. Current execution requires its remaining conditions. [Rule2.7.1.32](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/compiladas/Compilado_Tercera_Modificacion_a_la-Resolucion_Miscelanea_Fiscal_para_2026.pdf). |
+| Other complements | Rule2.7.1.8 makes the applicable published complements compulsory subject to its timing/exception provisions. Payroll **nómina**, foreign trade **comercio exterior**, payments **pagos** and withholding **retenciones** remain distinct research routes. **Not yet confirmed:** current payroll/withholding schemas and foreign-trade complement scope for the selected transaction; software services do not, merely because the customer is abroad, establish a goods-customs complement requirement. [Rule2.7.1.8](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/compiladas/Compilado_Tercera_Modificacion_a_la-Resolucion_Miscelanea_Fiscal_para_2026.pdf). |
+| Penalties and digital certificates | **Not yet confirmed:** the old general **5%–10% of invoice value** penalty, criminal-prison conditions for fraudulent CFDI, and expedited certificate-suspension grounds/procedure. Current CFF83/84, fraud and certificate provisions must be recovered and read for the actual offence; no general percentage or prison outcome is cleared here. |
 
-## Section 5: Self-Billing / Recipient-Created Invoices Cross-Border
+The SAT RMF2026 source is the authority's **third compiled modification**; it expressly says the authentic Diario Oficial publication must be used to substantiate legal acts or resolutions. Its current compiled rule text supports this method, not a claim that an authentic DOF consolidation or every 2026 amendment has been read. [Compilation notice](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/compiladas/Compilado_Tercera_Modificacion_a_la-Resolucion_Miscelanea_Fiscal_para_2026.pdf).
 
-### What Is Self-Billing? [T1]
+## Adopted future ViDA phases
 
-- **Self-billing / recipient-created tax invoice** — Self-billing (or recipient-created tax invoice) is where the customer issues the invoice on behalf of the supplier. This is permitted under Art 224 of the VAT Directive, subject to conditions.  _(Art 224, VAT Directive)_
+These dates are future application gates, not current November2026 filing instructions. Directive 2025/516 amends the VAT Directive; the earlier generic reference must not be read as if it amended every implementing rule or prescribed a single platform. [Articles1–8](https://publications.europa.eu/resource/celex/32025L0516).
 
-### Conditions for Self-Billing [T1]
-
-**Conditions for Self-Billing**
-
-| Condition | Requirement |
+| Phase | Adopted scope and exceptions |
 | --- | --- |
-| Prior agreement | Supplier and customer must have a **written agreement** that the customer will issue invoices on the supplier's behalf |
-| Acceptance procedure | There must be a mechanism for the supplier to accept or reject each invoice |
-| Invoicing rules | Follow the rules of the **place-of-supply** country (Art 219a basic rule applies to self-billing under reverse charge) |
+| Current domestic options | Article1 allows the specified established-person domestic electronic-invoice mandates and linked recipient-acceptance changes from entry into force. This is not present mandatory intra-EU digital reporting. [Article1; Article6(1)](https://publications.europa.eu/resource/celex/32025L0516). |
+| **1 July 2028**, with platform option | Article3 includes platform deemed-supplier rules for short-term accommodation of up to **30 nights** and road passenger transport, with the specified VAT-ID/declaration, travel-agent and Member State SME exclusions. Member States can implement the Article28a deemed-supplier measure from **1 July 2028 to 1 January 2030**. Other Article3 changes have their own **1 July 2028** application, including the Article194 mandatory customer-liability conditions for non-established/unidentified suppliers, with the dealer-margin exception. [Article3(1), (7); Article6(3)](https://publications.europa.eu/resource/celex/32025L0516). |
+| **1 July 2030** reporting | Article5's intra-EU transaction reporting and electronic-invoice rules apply. The new Article222 deadline for Article138 goods and supplies taxed to the customer under Articles194–197 is **10 days** after the chargeable event or qualifying advance; summary invoices have their specified month-end/issue rules. New supplier reporting is generally at invoice issue, with specified self-billing/acquirer **5-day** rules and a Member State option for acquirer reports. Do not import those future deadlines into 2026. [Article5(6)–(7), (15)–(16); Article6(5)](https://publications.europa.eu/resource/celex/32025L0516). |
+| Technical model | Future Article218 uses the European standard/syntax framework and permits other domestic standards in its stated cases; Article218(4) requires measures ensuring the required information and technical standards, while (5) requires allowing the issuer or its agent to comply and permits a public-portal option. These clauses do not prescribe a single Peppol network. Verify the actual national controls rather than assume the European-standard reference authorises or prohibits a particular clearance model. The previous **EN16931** label remains a standards research lead here; the full technical standard and each syntax were not independently read. [Article5(5), future Article218](https://publications.europa.eu/resource/celex/32025L0516). |
+| **1 January 2035** | The alignment limit is for the qualified pre-existing domestic real-time transaction-reporting systems described by Article6(5), not a universal “SdI derogation expires” claim. Article5's **31 March 2033** assessment and possible legislative proposal are not an automatic postponement. **Not yet confirmed:** Italy's exact future implementation and any separate derogation expiry. [Article6(5); Article5(19), future Article271c](https://publications.europa.eu/resource/celex/32025L0516). |
 
-### Cross-Border Self-Billing [T2]
+## Archiving cross-border invoices
 
-**Cross-Border Self-Billing**
+Invoice-law choice under Article219a does not displace storage Articles244–248. Keep copies of issued invoices, including customer/third-party issued invoices, and received invoices. Member States set territorial-supply/established-recipient retention periods and may require original formats and supporting authenticity data. Determine both parties' obligations separately; retaining to the longest applicable requirement is a records-policy decision, not permission to ignore local location/format or data requirements. [Articles219a(3),244–248](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-| Scenario | Whose Rules? |
+| Country | Current source finding and precise reservation |
 | --- | --- |
-| Dutch customer self-bills for services received from Italian supplier (reverse charge) | **Netherlands** (place of supply = Netherlands; self-billing under reverse charge follows basic rule, not supplier's rules) |
-| US customer self-bills for services from German supplier | **Germany** (supply outside EU — exception (b) — supplier's rules) |
+| Germany | **8 years** under §14b(1), starting at calendar-year end of issue; other AO obligations are preserved. §27(40) applies the shortened rule to invoices whose former period had not expired at **31 December 2024**, with the specified financial/insurance/securities entities' later **1 January 2026** boundary. Preserve authenticity, integrity and legibility; storage abroad has notification/access/location conditions. The original **10-year** general VAT-invoice row is superseded. **Not yet confirmed:** the exact German original-electronic-format/GoBD archive execution and any separate commercial-retention period. [§14b](https://www.gesetze-im-internet.de/ustg_1980/__14b.html); [§27(40)](https://www.gesetze-im-internet.de/ustg_1980/__27.html). |
+| France | Fiscal LPFL102B generally **6 years** from the last book operation or document date, with its electronic-format/scan conditions; it gives OSS records a distinct **10-year** rule. Commercial accounting documents/supporting evidence are **10 years** under Code de commerce L123-22. The former “10 years under L102B” citation was wrong. **Not yet confirmed:** future amendments/commencement beyond the current version and any longer litigation duty in the particular case. [L102B](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006315184/); [L123-22](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006219327/). |
+| Italy | Article2220's **10 years** from last registration includes specified invoice copies/received documents, subject to the electronic-conservation execution limits above. An invoice is not safely destroyed merely because its total was posted to the ledger. [Article2220](https://def.giustiziatributaria.gov.it/DocTribFrontend/executePrintArticolo.do?codiceOrdinamento=0000000000022200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000&id=%7B2F7FDDA1-DE25-4E09-B676-90D0687622A0%7D&idAttoNormativo=%7B9E93F1BE-06AE-4F24-8E9D-B838F7E0C2E6%7D). |
+| Spain | **Not yet confirmed:** the old **4 years under LGT29.2 plus open-audit extensions**, original-format assertion and overlap with commercial retention. A tax assessment limitation period is not by itself a complete invoice-destruction rule. |
+| Netherlands | Generally **7 years**, **10 years** for real-estate invoices and the specified Union/import OSS records. Keep native digital invoices; compliant scans can replace paper only if accurate, complete and preserving authenticity features, and still available for audit. “Original format” is not an absolute ban on permitted scanning. [Belastingdienst, entire invoice-retention guidance](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/administratie_bijhouden/facturen_maken/uw_facturen_bewaren). |
+| UK | Generally at least **6 years** for VAT records, potentially longer for other taxes, with an HMRC shorter-period concession only where allowed. Digital-account data alone do not replace the invoice; the guidance permits retention of a complete scanned image subject to other original-document duties. [VAT Notice700/21, §§2.4,6](https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021). |
+| Belgium | Current government guidance gives **7 years from 1 January following issue**, and **15/25 years** for the stated immovable-investment adjustment cases. The **18 December 2025** law's Articles97/101 changed Article60§3/§4 from **10 to7 years**, applicable to VAT chargeable from **1 January 2023**. The government permits format changes, including paper retention, if authenticity/integrity/legibility remain guaranteed; native XML is strongly recommended. Do not impose a universal original-electronic-format rule from the old row. [Actual amending law, Articles97–101](https://www.ejustice.just.fgov.be/mopdf/2025/12/30_1.pdf); [official archiving guidance](https://efacture.belgium.be/fr/article/comment-conserver-des-factures-recues-la-facturation-electronique). |
+| US | **Not yet confirmed:** state-specific **3–7-year** ranges, a purported **7-year** recommendation and “any legible format”. These retained old proposals cannot support a filing or destruction date without selecting the state, tax and actual retention/access rules. |
 
-### Common Use Cases
-
-- Large retailers issuing invoices to many small suppliers
-- Royalty payments where recipient calculates the amount
-- Commission arrangements where the principal issues invoices to agents
-
-## Section 6: Credit Notes and Corrections Cross-Border
-
-### When to Issue a Credit Note [T1]
-
-**When to Issue a Credit Note**
-
-| Trigger | Action |
+| Archive control | Required distinction |
 | --- | --- |
-| Price reduction after supply | Issue credit note referencing original invoice |
-| Return of goods | Issue credit note for returned items |
-| Invoice error (wrong amount, wrong VAT) | Issue credit note + new corrected invoice |
-| Retrospective discount (e.g., volume rebate) | Issue credit note at end of period |
+| Authenticity | Establish issuer identity. Article233 permits business controls giving a reliable invoice/supply audit trail; signature and qualifying EDI are examples, not the only general method. [Article233](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Integrity and legibility | Preserve required content without alteration and readability through the storage period. Keep appropriate validation, source data and migration/audit evidence rather than only extracting ledger totals. [Articles233,247](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Storage location | Article245 permits a chosen location with access without undue delay, but national notification, local-storage requirements where full electronic online access is absent, and Article247(3) third-country restrictions remain. “Outside the Member State with online access” is not an unconditional global permission. [Articles245,247,249](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1). |
+| Language | Article248a permits translations for specified control cases, not a universal translation requirement. Italy Article21(3) and UK Notice700§16.2.4 expressly address requested translations; **not yet confirmed** are the former blanket French/German local-language requirements and their current procedure. [Article248a](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Italian Article21(3)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633!vig=2026-11-16~art21); [HMRC§16.2.4](https://www.gov.uk/guidance/vat-guide-notice-700). |
 
-### Credit Note Requirements (EU) [T1]
+## Required outputs and prohibitions
 
-**Credit Note Requirements (EU)**  _(VAT Directive Art 219)_
+Return the jurisdiction decision with its Article219a limb; place/liability assumptions; invoice fields and notation; national issue deadline and electronic/data channel; currency/rate evidence; correction linkage and period; archive country, duration, start date, format and access controls; and each unresolved execution item. Preserve the taxpayer's evidence and validation receipts. If a required national detail is reserved below, stop that filing step and obtain its current official rule before issue/submission.
 
-| Element | Requirement |
-| --- | --- |
-| Format | "Any document or message that amends and refers specifically and unambiguously to the initial invoice" |
-| Reference | Must cite the original invoice number and date |
-| Content | Corrected amounts, including VAT adjustments |
-| Reverse charge credit notes | Same reverse charge notation as original. Customer must reverse their self-assessment. |
+1. Do not issue a covered reverse-charge invoice without its required wording; resolve the defect without predicting automatic loss of every deduction.
+2. Do not assume supplier-country rules always govern. Apply the place rule, supplier exceptions, self-billing carve-out and special-scheme identification rule separately.
+3. Do not convert foreign-currency VAT without recording the lawful rate, date, method and direction; a rate is unnecessary for a VAT amount that is not actually due merely because the contract uses USD.
+4. Do not issue an unlinked credit note. Keep the original number/date in the audit trail and meet actual national fields; do not mistake that practice for the full text of Article219.
+5. Do not assume a foreign seller never has an Italian SdI concern. Establish residence/establishment/intervention and distinguish supplier invoice from buyer integration and cross-border reporting.
+6. Do not treat applicable Mexican CFDI requirements as optional because a customer is abroad; the certification, recipient data and complement route must match the transaction.
+7. Do not destroy original electronic invoices merely because a paper copy or ledger total exists. Determine the actual archive law and permitted conversion first; Belgium's format option does not establish the law elsewhere.
+8. Do not apply one retention period everywhere. Determine issuer, recipient and transaction-country obligations, format, start date and any continuing dispute holds separately.
 
-### Cross-Border Credit Note Complications [T2]
+## Test suite and worked examples
 
-**Cross-Border Credit Note Complications**
+### Test1: German consultant to French business
 
-| Issue | Guidance |
-| --- | --- |
-| Different reporting periods | Credit note may fall in a different quarter from the original invoice. Report in the period the credit note is issued. |
-| OSS corrections | Corrections to previous OSS quarters are made on the **next** regular quarterly return (not by amending the original). |
-| Currency differences | If exchange rate has changed since the original invoice, use the rate at the date of the credit note for the adjustment. |
-| Customer in a different country has already filed | Customer must adjust their VAT return in the period the credit note is received. |
+Original facts: ordinary advisory services, a German consultant, French business with valid French VAT ID, **EUR5,000**, no participating French supplier establishment. Article44/196 places liability on the customer, and Article219a(2)(a)(i) assigns German invoice rules. Include both VAT IDs and **“Steuerschuldnerschaft des Leistungsempfängers”**; no supplier VAT is collected. This is not a zero-rated supply. German §14a's specific following-month **15th** deadline applies on these assumed facts. French output/deduction/return execution is separate. [Articles44,196,219a,226](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [§14a(1)](https://www.gesetze-im-internet.de/ustg_1980/__14a.html).
 
-## Section 7: Country-Specific E-Invoicing Quirks
+### Test2: Italian software supplier to US client
 
-### Italy — SDI (Sistema di Interscambio) [T1]
+Original **EUR20,000** development service. Assuming an ordinary B2B service received by the US business and no special-place rule, Article44 places it outside the EU; Article219a(2)(a)(ii) assigns Italian invoice rules. Use **“operazione non soggetta”** and the appropriate current Italian data/format route; Article1(3-bis)'s exemptions must be checked, not assumed from “export”. N2.1 applies to the stated territorial exclusion, not a zero rate. Article2220 supplies the **10-year** civil retention rule; electronic conservation execution remains individually gated. [EU rules](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Article21(6-bis)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633!vig=2026-11-16~art21); [Article1(3-bis)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-11-16); [AdE pp34–35](https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_compilazione-fe-esterometro-v1-10_aprile_2025); [Article2220](https://def.giustiziatributaria.gov.it/DocTribFrontend/executePrintArticolo.do?codiceOrdinamento=0000000000022200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000&id=%7B2F7FDDA1-DE25-4E09-B676-90D0687622A0%7D&idAttoNormativo=%7B9E93F1BE-06AE-4F24-8E9D-B838F7E0C2E6%7D).
 
-**Italy — SDI (Sistema di Interscambio)**
+### Test3: Maltese supplier's USD invoice to Japan
 
-| Element | Rule |
-| --- | --- |
-| Mandate | All Italian-established businesses must issue e-invoices via SDI (since 2019 for domestic; since July 2022 for cross-border) |
-| Cross-border sales | Italian businesses must submit an XML e-invoice to SDI even when invoicing foreign customers. The Esterometro was abolished in 2022; replaced by SDI reporting. |
-| Format | FatturaPA XML format. SDI validates the invoice before forwarding. |
-| Foreign supplier selling to Italy | Not required to use SDI (unless established in Italy). The Italian buyer self-assesses VAT and reports via SDI using document types TD17–TD19. |
-| 2026 update | SDI technical specs v1.9.1 effective May 15, 2026. New validation checks (error 00327 for VAT Groups). |
-| ViDA impact | EU ViDA Directive will require alignment with EN16931 standard. Italy's SdI clearance model may need adaptation by 2035. |
+Original **USD10,000** consulting service, with place supplied as Japan and assumed ordinary B2B facts. EU Article219a's outside-EU limb selects Maltese invoice rules. It does not supply an independently verified Maltese format, archive period or national conversion election here. The USD contract does not itself create EU VAT. If a separate taxable transaction required EUR VAT, use its lawful chargeability date/method, not automatically the consulting date. [Articles44,91,219a,230](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-### India — IRN (Invoice Reference Number) [T1]
+For a meaningful currency check, separately assume a **taxable EUR VAT liability**, USD10,000 net, a lawful rate expressly supplied as **USD1.10 per EUR1**, **20% VAT**, and rounding only at the final cent. These are supplied arithmetic assumptions, not a claim about Maltese, Japanese or any current national rate. Net EUR is **9,090.91**, VAT EUR **1,818.18**, total EUR **10,909.09**. A rate quoted in the opposite direction would need different arithmetic. [Conversion framework, Articles91/230](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-**India — IRN (Invoice Reference Number)**
+```oa-check
+name: Invoice currency direction and separately assumed taxable VAT
+inputs:
+  usd_net: 10000
+  usd_per_eur: 1.10
+  assumed_vat_rate: 0.20
+steps:
+  eur_net: usd_net / usd_per_eur
+  eur_vat: eur_net * assumed_vat_rate
+  eur_total: eur_net + eur_vat
+expected:
+  eur_net: 9090.90909090909
+  eur_vat: 1818.181818181818
+  eur_total: 10909.090909090908
+```
 
-| Element | Rule |
-| --- | --- |
-| Mandate | E-invoicing mandatory for businesses with turnover ≥₹5 crore (since August 2023) |
-| Cross-border exports | Export invoices must also be reported to the Invoice Registration Portal (IRP) and receive an IRN. Tax invoice must include QR code. |
-| Format | JSON schema submitted to IRP. IRP validates, generates IRN + QR code, digitally signs. |
-| Foreign supplier to India | Not required to use IRP. Indian buyer handles GST under reverse charge. |
-| Key fields for exports | Supply type = "EXPWP" (export with payment of IGST) or "EXPWOP" (export without payment — under LUT). Shipping bill details required. |
+### Test4: Union OSS return of goods
 
-### Mexico — CFDI (Comprobante Fiscal Digital por Internet) [T1]
+Original German e-commerce seller, Italian consumer, Q1 sale, return of goods in Q2. Assuming Union OSS applies, Q1 was already submitted, the substantive reduction is valid and the correction remains within **3 years** of the original due date, report it in a subsequent OSS return identifying Italy and Q1. Q2 can be that return; “only the next return” is too narrow. Keep the credit/correction linked to the original supply. [Articles90,219,369f,369g(4)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-**Mexico — CFDI (Comprobante Fiscal Digital por Internet)**
+For arithmetic only, add supplied original net **EUR1,000**, original VAT rate **20%** and a **25%** partial return, with no intervening adjustment or shipping/refund complication. Correct net by **EUR250** and VAT by **EUR50**, reducing the original gross **EUR1,200** by **EUR300** to **EUR900**. The rate is expressly hypothetical, not Italy's current standard rate. [Adjustment framework](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-| Element | Rule |
-| --- | --- |
-| Mandate | All invoices by Mexican-established entities must be CFDI 4.0 format, issued through a PAC (Authorized Certification Provider) with real-time SAT clearance |
-| Cross-border sales | Mexican entity invoicing a foreign client not registered with SAT must still generate a CFDI through the clearance process. Use RFC "XEXX010101000" for foreign recipients. |
-| Foreign supplier to Mexico | Not required to issue CFDI. Mexican buyer may need to issue a CFDI for the foreign payment (complemento de pagos). |
-| Penalties | Non-compliance: 5%–10% of invoice amount. Fraudulent CFDI: criminal liability (prison). SAT has expedited powers to suspend digital certificates. |
-| Complements | Specific transaction types require CFDI complements: payroll (nómina), foreign trade (comercio exterior), payments (pagos), tax withholdings (retenciones). |
+```oa-check
+name: Union OSS partial-return amount linked to original tax period
+inputs:
+  original_net: 1000
+  assumed_original_vat_rate: 0.20
+  returned_share: 0.25
+steps:
+  original_vat: original_net * assumed_original_vat_rate
+  original_gross: original_net + original_vat
+  net_reduction: original_net * returned_share
+  vat_reduction: original_vat * returned_share
+  gross_reduction: net_reduction + vat_reduction
+  remaining_gross: original_gross - gross_reduction
+expected:
+  original_vat: 200
+  original_gross: 1200
+  net_reduction: 250
+  vat_reduction: 50
+  gross_reduction: 300
+  remaining_gross: 900
+```
 
-### EU ViDA (VAT in the Digital Age) — Phased Rollout [T1]
+### Test5: Mexican SaaS supplier to Colombia
 
-**EU ViDA (VAT in the Digital Age) — Phased Rollout**
-
-| Date | Change |
-| --- | --- |
-| July 2028 | Deemed supplier rules for platforms (accommodation, transport). Strengthened reverse charge. |
-| July 2030 | **Mandatory e-invoicing for intra-EU B2B transactions.** Digital reporting requirements. E-invoicing becomes default form. EN16931 standard. |
-| 2035 | Italy's SdI derogation expires. Full ViDA alignment required. |
-
-## Section 8: Archiving Obligations When Invoicing Cross-Border
-
-### Whose Retention Rules Apply? [T1]
-
-**Whose Retention Rules Apply?**  _(VAT Directive Articles 244–248)_
-
-| Rule | Detail |
-| --- | --- |
-| **General principle** | Each member state sets its own retention period and format requirements for invoices related to supplies made in its territory. |
-| **Supplier** | Must retain copies of issued invoices per the rules of the member state where they are established. |
-| **Customer** | Must retain received invoices per the rules of the member state where they are established. |
-| **Cross-border** | Both parties retain under their own country's rules. If these differ, the stricter rule is the safest approach. |
-
-### Retention Periods by Country [T1]
-
-**Retention Periods by Country**
-
-| Country | Retention Period | Format |
-| --- | --- | --- |
-| Germany | **10 years** (§14b UStG) | Original format (paper or electronic). Electronic invoices must remain in electronic form. |
-| France | **10 years** (Art L102B, Livre des Procédures Fiscales) | Electronic invoices in original electronic format |
-| Italy | **10 years** (Art 2220, Codice Civile) | Must be stored via approved electronic conservation ("conservazione sostitutiva") |
-| Spain | **4 years** (Art 29.2, Ley General Tributaria) + additional years if open audit | Original format |
-| Netherlands | **7 years** (Art 52 AWR) | Original format |
-| UK | **6 years** (VAT Regulations 1995) | Original format |
-| Belgium | **7 years** (Art 60 Code TVA) | Original format |
-| US | **Varies by state** — typically 3–7 years for sales tax; 7 years recommended | Any legible format |
-
-### Key Principles for Cross-Border Archiving [T1]
-
-**Key Principles for Cross-Border Archiving**
-
-| Principle | Guidance |
-| --- | --- |
-| **Authenticity of origin** | You must be able to prove who issued the invoice (digital signature, EDI, internal controls) |
-| **Integrity of content** | The invoice content must not have been altered after issue |
-| **Legibility** | The invoice must be readable (human or machine) throughout the retention period |
-| **Storage location** | EU: May store outside the member state, but must provide online access to the tax authority on request (Art 247) |
-| **Language** | Some countries (France, Germany, Italy) may require invoices to be in the local language or translatable on request during audit |
-
-## PROHIBITIONS
-
-- **Prohibitions list** — 1. NEVER issue an intra-EU B2B reverse charge invoice without the mandatory notation. The invoice is legally deficient without it. 2. NEVER assume the supplier's country rules always apply. Check Art 219a — the basic rule is place-of-supply country. 3. NEVER invoice in a foreign currency without documenting the exchange rate used for VAT conversion. 4. NEVER issue a credit note without referencing the original invoice number and date. 5. NEVER assume foreign suppliers to Italy don't need to worry about SDI — if established in Italy, SDI is mandatory. 6. NEVER treat Mexican CFDI requirements as optional for cross-border sales by Mexican entities. 7. NEVER destroy electronic invoices and store only paper copies. Many jurisdictions require retention in original electronic format. 8. NEVER assume one retention period fits all. Apply the rules of your own country AND consider the rules of the transaction country.  _(Art 219a)_
-
-## Test Suite
-
-### Test 1 — Intra-EU reverse charge invoice, DE to FR
-
-**Input:** German consultant invoices French company (valid FR VAT) EUR 5,000 for advisory services.
-**Expected:** Invoice follows German rules (Art 219a exception (a)). No VAT. Notation: "Steuerschuldnerschaft des Leistungsempfängers" or "Reverse charge — Art 196 Directive 2006/112/EC." Both VAT numbers on invoice.
-
-### Test 2 — Italian company invoicing US client
-
-**Input:** Italian software company invoices US client EUR 20,000 for development services.
-**Expected:** Supply outside EU (Art 219a exception (b)). Italian invoicing rules apply. Must submit XML to SDI (post-July 2022). No VAT (out of scope). Retain for 10 years in electronic conservation.
-
-### Test 3 — Multi-currency, Maltese company invoicing in USD
-
-**Input:** Maltese company invoices a Japanese client USD 10,000 for consulting. Place of supply = Japan.
-**Expected:** Maltese invoicing rules (exception (b)). Invoice in USD is fine. If VAT were applicable, convert to EUR at ECB rate on date of supply. Retain for Maltese period.
-
-### Test 4 — Credit note for OSS sale
-
-**Input:** German e-commerce seller issued an OSS invoice to an Italian consumer in Q1. In Q2, the consumer returns the goods.
-**Expected:** Issue credit note referencing original invoice. Report the correction on the Q2 OSS return under Italy, not by amending Q1.
-
-### Test 5 — Mexican company invoicing foreign client
-
-**Input:** Mexican SaaS company invoices a Colombian client $5,000/month for software.
-**Expected:** Must issue CFDI 4.0 via PAC with real-time clearance. Use RFC "XEXX010101000" for foreign recipient. Complemento de comercio exterior may be required.
+Original software fee **USD5,000/month**, Mexican supplier and Colombian foreign customer not RFC-registered. SAT's current ordinary format lead is CFDI4.0; rule2.7.1.23 supplies **XEXX010101000** for the specified foreign recipient. Use the applicable certification/issue channel and current recipient fields; verify tax/export classification separately. No primary scope proof here makes a **comercio exterior** goods complement automatically necessary for SaaS. Payroll, withholding and payment complements are separate conditional routes. [SAT Anexo20](https://wwwmat.sat.gob.mx/consultas/35025/formato-de-factura-electronica-%28anexo-20%29); [RMF2026 rules2.7.1.2, .8, .23, .32](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/compiladas/Compilado_Tercera_Modificacion_a_la-Resolucion_Miscelanea_Fiscal_para_2026.pdf).
 
 ## Disclaimer
 
@@ -366,6 +291,37 @@ This skill and its outputs are provided for informational and computational purp
 
 *Data reflects 2025–2026 rules. OpenAccountants — open-source accounting skills for AI — info@openaccountants.com*
 
+## Sources
+
+Read dates are **16 November2026**. “Read for” below names the actual operative scope, including neighboring conditions; it does not claim a whole instrument or live production filing. Consolidated versions, compiled authority text, translations, future application dates and failed recovery attempts are kept distinct. The unresolved fields above remain unusable until the applicable source is recovered and checked.
+
+| Source | Actual read scope and limits |
+| --- | --- |
+| [VAT Directive2006/112/EC, official consolidation14April2025](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1) | Read for Articles43–47,90–91,167–168a/169intro,173,184–186,194–196,200–204,217–236,244–250,358–366,369f–369k,369r–369x and immediate neighbors. Documentary consolidation; future2025/516 overlay separately read. No current national return-box approval.  Read on **2026-11-16**. |
+| [Regulation282/2011, official consolidation14April2025](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1) | Read for Articles18–24 in full, including pending-ID, private-use, contrary-information and fixed-establishment/location conditions. No full-Regulation read claimed.  Read on **2026-11-16**. |
+| [Published Directive2025/516](https://publications.europa.eu/resource/celex/32025L0516) | Read for Article1; Article2 initial points1–3; Article3 specified platform/194/222 and own-stock clauses; Article4; Article5 in full; Articles6–8/publication date. Actual operative XHTML recovered through ordinary public content negotiation; challenge pages/resolver metadata were not law.  Read on **2026-11-16**. |
+| [Germany §14](https://www.gesetze-im-internet.de/ustg_1980/__14.html), [§14a](https://www.gesetze-im-internet.de/ustg_1980/__14a.html), [§14b](https://www.gesetze-im-internet.de/ustg_1980/__14b.html), [§27](https://www.gesetze-im-internet.de/ustg_1980/__27.html) | Read for §14(1)–(7), §14a(1)–(7), §14b(1)–(5), §27(38)/(40) and neighbors. Not every historical §27 transition. Figures originally expressed in words are rendered as numerals above, without altering native evidence.  Read on **2026-11-16**. |
+| [Italy Legislative Decree127/2015 Article1](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-11-16) | Read for current Article1(1)–(6-quater) and updates, particularly (3)/(3-bis)/(6-bis); operative version12August–31December2026. No complete conservation implementation or health-sector exception clearance.  Read on **2026-11-16**. |
+| [Italy DPR633/1972 Article21](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633!vig=2026-11-16~art21) | Read for Article21(1)–(8), update notes and neighboring current-version date21April–31December2026. No wider tax-point/special-sector clearance.  Read on **2026-11-16**. |
+| [AdE compilation guidev1.10, April2025](https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_compilazione-fe-esterometro-v1-10_aprile_2025) | Read for TD17–TD19 pp11–17 and N2.1/N2.2 pp34–35 with notes/corrections/SME exceptions. This is compilation-guide1.10, not technical-specification1.9.1.  Read on **2026-11-16**. |
+| [AdE actual technical specification1.9.1](https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1) | Read for XML schema §1.2, receipt procedure §1.5.7, version history31March2026, recipient-field VAT-group controls §2.1.4 and catalogue00324–00327. Deployment-page access failed; exact15May2026 date remains separately reserved.  Read on **2026-11-16**. |
+| [Italy Civil Code2220, official DEF print](https://def.giustiziatributaria.gov.it/DocTribFrontend/executePrintArticolo.do?codiceOrdinamento=0000000000022200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000&id=%7B2F7FDDA1-DE25-4E09-B676-90D0687622A0%7D&idAttoNormativo=%7B9E93F1BE-06AE-4F24-8E9D-B838F7E0C2E6%7D) | Read for entire Article2220 and image-storage proviso; 10-year civil period is not full tax/conservation execution clearance.  Read on **2026-11-16**. |
+| [India13/2020](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-13-central-tax-english-2020.pdf), [61/2020](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-61-central-tax-english-2020.pdf), [70/2020](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-70-central-tax-english-2020.pdf), [23/2021](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-23-central-tax-english-2021.pdf), [10/2023](https://www.gstcouncil.gov.in/sites/default/files/2024-05/10ct_eng.pdf), [72/2020](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-72-central-tax-english-2020.pdf) | Read for each whole short notification, amendment target, scope exclusions, threshold/date and QR/exemption clauses; no current full schema/Rule54 consolidation. Older2018 generic CBIC PDF was read only for historical context and does not supply current e-invoice clauses.  Read on **2026-11-16**. |
+| [GST portal advisory543](https://services.gst.gov.in/services/advisoryandreleases/read/543) | Recovery attempted; actual response was a JavaScript shell, not the advisory body. Operator IRP6 notification read as an operational lead only; 30-day/₹10crore/1April2025 claim remains individually unconfirmed.  Read on **2026-11-16**. |
+| [SAT Anexo20 format](https://wwwmat.sat.gob.mx/consultas/35025/formato-de-factura-electronica-%28anexo-20%29) | Read for current format/version statement and recipient/export-field description. Not every linked schema or every stale FAQ on the page.  Read on **2026-11-16**. |
+| [SAT third compiled RMF2026](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/compiladas/Compilado_Tercera_Modificacion_a_la-Resolucion_Miscelanea_Fiscal_para_2026.pdf) | Read for rules2.7.1.1–.2, .8, .14, .23, .32–.33 and neighboring text/compilation warning. Authentic DOF underlying publication not fully recovered; current CFF body fetch failed/timeout, not law.  Read on **2026-11-16**. |
+| [France L102B](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006315184/), [L123-22](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006219327/) | Read for entire current L102B I/Ibis/II and commencement note; entire L123-22. No future retention amendment read claimed.  Read on **2026-11-16**. |
+| [Netherlands invoice storage](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/administratie_bijhouden/facturen_maken/uw_facturen_bewaren) | Read for entire operative invoice-storage guidance, native digital format, scanning conditions, ordinary/real-estate/OSS distinctions.  Read on **2026-11-16**. |
+| [UK VAT Notice700](https://www.gov.uk/guidance/vat-guide-notice-700), [700/21](https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021) | Read for §§7.6,16.1–16.4,18.2 with exceptions and Notice700/21 §§2.1–3.3,6. No UK-wide endorsement of arbitrary ECB/financial-source rates.  Read on **2026-11-16**. |
+| [Belgium actual18December2025 law, Moniteur30December2025](https://www.ejustice.just.fgov.be/mopdf/2025/12/30_1.pdf) | Read for Articles97–102 and immediate neighboring section, especially10-to7-year amendment and VAT-from1January2023 application. Rest of the large gazette retrieval is not a whole-read claim.  Read on **2026-11-16**. |
+| [Belgium official8April2026 archiving guidance](https://efacture.belgium.be/fr/article/comment-conserver-des-factures-recues-la-facturation-electronique) | Read for entire operative Q&A:7-year start,15/25-year immovable exceptions, permitted format changes, authenticity/integrity/legibility and location/access/third-party obligations.  Read on **2026-11-16**. |
+
+| [French BOFiP deadline commentary](https://bofip.impots.gouv.fr/export/pdf/320447), [Spanish RD1619/2012](https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696), [Dutch invoice guidance](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/administratie_bijhouden/facturen_maken/facturen_maken), [Belgian Royal Decree1](https://www.ejustice.just.fgov.be/eli/arrete/1992/12/29/1992003823/justel) | Read for BOFiP §§1–110 whole4page actual PDF; Spanish Articles6(1)(m),11–13 and19–23 with neighbors; Dutch operative invoice guidance; Belgian Article4(1)–(4) with neighboring provisions and update notes. Spanish consolidation states it is informative; authentic publication is separately required for legal use. Read on **2026-11-16**. |
+
+| [France Article242noniesA](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050811276/), [Dutch reverse-charge invoice guidance](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_berekenen_aan_uw_klanten/waarover_btw_berekenen/verleggingsregeling/hoe_werkt_btw_verleggen), [Portugal CIVA36](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva36.aspx) | Read for entire French I/II and commencement notes, especially I(13°); entire operative Dutch reverse-charge page with entitlement/error qualifications; Portuguese Article36 in full with paragraph13 and adjacent self-billing/special-format/commencement conditions. Only the stated wording conclusions are applied. Read on **2026-11-16**. |
+
+**Not yet confirmed:** special national issue-deadline exceptions beyond the cited scopes; transaction-specific legal references appended to national reverse-charge wording; complete Italian conservation workflow/special exceptions and exact technical1.9.1 deployment date; current Indian schema/export-field/shipping-bill detail, complete Rule54 exclusions, foreign-supplier liability and primary30-day advisory; current Mexican CFF scope, schemas/complements and offence/certificate sanctions; Spanish complete invoice retention; US state currency/retention rules; national correction-period/FX outcomes and blanket French/German language requirements; Maltese execution details in Test3; exact Italian future SdI implementation/derogation. Each retained old proposal appears individually with its limitation above; no reserved item is a filing instruction.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cross-border-invoicing-compliance` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cross-border-invoicing-compliance. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cross-border-invoicing-compliance` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cross-border-invoicing-compliance. If neither is available, confirm every figure against the official source pages cited above before relying on it.

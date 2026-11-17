@@ -69,7 +69,7 @@ Owner: Michael Cutajar
 
 ## Americas
 
-Owner: Jeff Watts, Michael Cutajar
+Owner: Michael Cutajar
 
 | Country | State | Skills | On 2026 | Accountant-reviewed |
 |---|---|---:|---:|---:|
@@ -209,7 +209,7 @@ Owner: Michael Cutajar
 
 ## Africa
 
-Owner: Ryan Duguid
+Owner: Michael Cutajar, Ryan Duguid
 
 | Country | State | Skills | On 2026 | Accountant-reviewed |
 |---|---|---:|---:|---:|
@@ -219,7 +219,7 @@ Owner: Ryan Duguid
 | [Botswana](botswana/) | Needs signature | 8 | 8 | 0 |
 | [Burkina Faso](burkina-faso/) | Needs writing | 12 | 12 | 0 |
 | [Burundi](burundi/) | Needs writing | 10 | 10 | 0 |
-| [Cameroon](cameroon/) | Needs writing | 7 | 4 | 0 |
+| [Cameroon](cameroon/) | Needs writing | 7 | 7 | 0 |
 | [Cape Verde](cape-verde/) | Needs writing | 6 | 6 | 0 |
 | [Chad](chad/) | Needs writing | 8 | 8 | 0 |
 | [Comoros](comoros/) | Needs writing | 4 | 4 | 0 |
@@ -243,9 +243,9 @@ Owner: Ryan Duguid
 | [Mauritius](mauritius/) | Needs signature | 8 | 8 | 0 |
 | [Mayotte](mayotte/) | Needs writing | 2 | 2 | 0 |
 | [Morocco](morocco/) | Needs signature | 17 | 17 | 0 |
-| [Mozambique](mozambique/) | Needs writing | 4 | 0 | 0 |
+| [Mozambique](mozambique/) | Needs writing | 4 | 4 | 0 |
 | [Namibia](namibia/) | Needs signature | 8 | 8 | 0 |
-| [Niger](niger/) | Needs writing | 7 | 4 | 0 |
+| [Niger](niger/) | Needs writing | 7 | 7 | 0 |
 | [Nigeria](nigeria/) | Needs writing | 16 | 14 | 1 |
 | [Republic Of Congo](republic-of-congo/) | Needs writing | 8 | 8 | 0 |
 | [Reunion](reunion/) | Needs writing | 1 | 1 | 0 |
