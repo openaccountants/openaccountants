@@ -1,256 +1,340 @@
 ---
 name: fatca-crs-automatic-exchange
-description: "Use this skill whenever a Financial Institution (FI), trustee, or account holder asks about automatic exchange of financial account information. Trigger on phrases like \"FATCA\", \"CRS\", \"Common Reporting Standard\", \"automatic exchange of information\", \"AEOI\", \"Form W-9\", \"Form W-8BEN\", \"Form W-8BEN-E\", \"self-certification\", \"Reportable Account\", \"Reportable Person\", \"Controlling Person\", \"passive NFE\", \"active NFFE\", \"GIIN\", \"responsible officer certification\", \"FATCA 8966\", \"FBAR\", \"Form 8938\", \"DAC2\", \"CARF\", or any question about whether a financial account, entity, or person is reportable for AEOI purposes. Covers the US Foreign Account Tax Compliance Act (FATCA — IRC §1471-1474 and Treasury Regulations §§1.1471-1.1474, intergovernmental agreements Model 1 and Model 2), the OECD Common Reporting Standard (CRS — published 2014, updated 2023 with the Crypto-Asset Reporting Framework / CARF and CRS 2.0 amendments), and the EU's CRS implementation under DAC2 (Council Directive 2014/107/EU). Does NOT cover: FBAR (FinCEN 114) which is a US-only beneficial-owner disclosure; Form 8938 individual reporting; ultimate-beneficial-ownership (UBO) registers under EU AMLD; or the OECD MDR on CRS Avoidance Arrangements (see dac6-mdr-reportable-arrangements). ALWAYS read this skill before classifying an account as reportable or determining due diligence obligations."
-version: 0.1
+description: "Financial-account and entity classification, due diligence, FATCA withholding, CRS/DAC2 reporting and DAC8 crypto rules for 2026, with jurisdiction-specific dates, exclusions, evidence and explicit unresolved limits."
+version: 0.2
 jurisdiction: GLOBAL
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-16
 depends_on:
   - cross-border-workflow-base
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: cross-border
+domain: tax
+type: situation-rules
 ---
 
-# FATCA CRS Automatic Exchange
+# FATCA and CRS automatic exchange v0.2
 
-## What this file is
+> **General reference only.** This Guide supports a practitioner review of financial-account classification, due diligence, reporting and FATCA withholding. Obtain advice for the actual entity, account, jurisdiction, reporting period and documents before signing a self-certification or filing.
 
-**This file is a content skill that loads on top of `cross-border-workflow-base`.** It implements three overlapping AEOI regimes:
+## Who this applies to
 
-- **FATCA (United States)** — IRC §1471-1474 and Treasury Regulations, with bilateral Intergovernmental Agreements (IGAs Model 1A, 1B, and Model 2) signed with 100+ jurisdictions.
-- **CRS (OECD Common Reporting Standard)** — Multilateral Competent Authority Agreement (MCAA-CRS) and bilateral Competent Authority Agreements; ~120 committed jurisdictions; first exchanges 2017 (early adopters) and 2018 (rest).
-- **DAC2 (EU CRS implementation)** — Council Directive 2014/107/EU; mandatory CRS adoption by all 27 EU Member States; first exchange 2017.
+This Guide loads on top of `cross-border-workflow-base`. Use it for Financial Institutions (FIs), trustees, account holders and crypto service providers assessing FATCA, CRS, DAC2 or DAC8. It produces a reviewer brief and working papers, rather than an executed return or a professional approval. Its scope includes entity classification, Financial Account types, Excluded Accounts, Reportable Persons, Controlling Persons, documentary status, due diligence, portals/XML, deadlines, penalties, withholding and crypto reporting.
 
-**Tax year coverage.** Current for **reportable period 2025** (information collected in 2025, exchanged in 2026), reflecting the **CRS 2.0 amendments** adopted by the OECD in 2023 (in force for reporting periods 2026+ but with many jurisdictions adopting earlier), and the **Crypto-Asset Reporting Framework (CARF)** for crypto reporting (first exchanges 2027 for most committed jurisdictions, 2026 for early adopters).
+FATCA is the US chapter 4 regime, IRC sections 1471–1474, operating with Treasury Regulations and the actual bilateral IGA. Model 1A is reciprocal, Model 1B is non-reciprocal, and Model 2 uses direct IRS reporting subject to the agreement. The Treasury model documents cited here illustrate their terms; they do not prove which signed agreement, annex or local implementing law applies to an actual institution. The old assertion of more than 100 signed jurisdictions is not a maintained count in this Guide. [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf) [Treasury, FATCA agreements and model list](https://home.treasury.gov/policy-issues/tax-policy/foreign-account-tax-compliance-act)
 
-**The reviewer is the customer of this output.** FATCA / CRS classification of entities (e.g., Financial Institution vs Non-Financial Entity, Active vs Passive) is fact-specific and carries strict liability for misclassification. Every output must be reviewed by a credentialed practitioner (typically a Big 4 international tax / AEOI specialist or in-house FATCA Responsible Officer) before submission of a self-certification or filing of a return.
+CRS is an OECD standard implemented through domestic law and exchange agreements, including the multilateral competent-authority agreement or bilateral arrangements. A commitment is not itself domestic law or an activated reporting relationship. The former approximate 120-jurisdiction count is not a current population claim. Determine the FI's local Reportable Jurisdiction list for the relevant year, the agreement requiring exchange, and separately its Participating Jurisdiction list. The OECD model requires the exchange agreement and a published local list for Reportable Jurisdiction status. [OECD, consolidated CRS (2025)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/04/consolidated-text-of-the-common-reporting-standard-2025_e478bc04/055664b1-en.pdf)
 
-## Section 1 — Scope statement
+The EU implements financial-account exchange through Directive 2011/16/EU, Annex I, as amended by DAC2 and DAC8. Apply the current consolidated text and national implementation. Do not assume every Member State's first CRS exchange was in 2017: Annex I Section X expressly provides Austria's later 2017/2018 substitution. The historical 2017/2018 rollout is background, rather than a test of current account reportability. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-This skill covers:
+**Period boundary:** the main rules below are checked for 2026, including returns for calendar 2025 filed in 2026 where expressly identified. The 2023 OECD amendments have jurisdiction-specific commencement. The EU amended financial-account scope applies for 2026 under the consolidated Annex I; the UK guidance says 1 January 2026, while Singapore says 1 January 2027. A filing year, data year and inter-authority exchange year are different. Do not apply a universal "CRS 2.0 in force 2026+" assumption. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) [HMRC, AEOI financial institutions](https://www.gov.uk/guidance/automatic-exchange-of-information-financial-institutions) [IRAS, CRS overview and latest developments](https://www.iras.gov.sg/taxes/international-tax/common-reporting-standard-%28crs%29/crs-overview-and-latest-developments)
 
-- **Entity classification** under FATCA, CRS, and DAC2.
-- **Due diligence procedures** for new accounts (self-certification, reasonableness checks) and pre-existing accounts (indicia search, electronic search, paper-record search, residency address tests, curing procedures).
-- **Account identification** — Financial Account types (Depository, Custodial, Cash Value Insurance, Annuity Contracts, Equity/Debt Interests), Reportable Accounts, Documented Accounts, Excluded Accounts.
-- **Reportable Person and Controlling Person identification**.
-- **Reporting mechanics** — XML schema, filing portals, deadlines, penalty exposure.
-- **Withholding obligations** under FATCA (30% withholdable payments under §1471(a) and §1472(a)).
-- **CARF / Crypto reporting** mechanics under the OECD framework and EU implementation in DAC8.
-- **CRS 2.0 amendments** — broadened definition of Investment Entity, expanded due diligence on Controlling Persons, anti-avoidance test for joint accounts.
+FBAR/FinCEN 114, Form 8938, beneficial-ownership registers under EU AML rules or the US Corporate Transparency Act, and independent AML/KYC compliance are separate. Do not assume that an intended `us-fbar-individual`, `us-fincen-cta-boi` or `eu-amld-boi` file exists or establishes an answer. CRS-avoidance intermediary disclosure belongs with `dac6-mdr-reportable-arrangements`; this Guide does not decide that filing. AEOI classification is fact-specific, but the old universal strict-liability description is incorrect: the UK reasonable-excuse and culpability rules and Germany's intentional/reckless offence conditions below must be considered. [UK SI 2025/740](https://www.legislation.gov.uk/uksi/2025/740/made/data.html) [Germany, FKAustG](https://www.gesetze-im-internet.de/fkaustg/BJNR253110015.html)
 
-This skill does NOT cover:
+## Rates, bands and thresholds
 
-- **FBAR (FinCEN 114)** — see `us-fbar-individual.md` (forthcoming).
-- **Form 8938 (Statement of Specified Foreign Financial Assets)** — see US federal individual skills.
-- **Beneficial ownership registers** under EU AMLD5/6 or the US Corporate Transparency Act — see `us-fincen-cta-boi.md` and `eu-amld-boi.md` (forthcoming).
-- **OECD MDR on CRS Avoidance Arrangements** — see `dac6-mdr-reportable-arrangements.md`.
-- **Anti-money-laundering KYC requirements** beyond CRS due diligence overlap.
+### Quick reference
 
-## Section 2 — Filing requirements
+| Question | Rule, figure and boundary | Official authority |
+|---|---|---|
+| FATCA withholding | 30% of a qualifying withholdable payment when the payee/documentation rules require it; not an automatic charge on all foreign accounts or only a passive owner's proportional share | [IRS Publication 515 (2026)](https://www.irs.gov/publications/p515) |
+| Custodial institution | At least 20% of gross income attributable to holding Financial Assets and related financial services, over the shorter of the preceding three-year period and the entity's existence | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| Investment Entity | Relevant gross income at least 50%, over the shorter three-year/existence period; distinguish customer-business limb (a) from FI-managed investment limb (b) | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| Active NFE ordinary income/assets test | Both passive gross income and passive-producing/held-for-production assets must be less than 50% in the preceding calendar year or appropriate period | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| Start-up Active NFE | No prior operating history, investing toward a non-FI business; exception ends 24 months after initial organisation | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| Liquidating/reorganising Active NFE | Not an FI in the preceding five years; liquidating assets or intending to continue/recommence a non-FI business. There is no general 24-month liquidation permission | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| CRS high-value individual account | Aggregate value exceeds USD 1,000,000 at the applicable year-end; exactly USD 1,000,000 is not over the boundary | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| CRS optional pre-existing entity threshold | At most USD 250,000 at 31 December 2015, subject to the local election; review after a later year-end exceeds USD 250,000 | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| Model 1 FATCA pre-existing entity threshold | At most USD 250,000 at the agreement's Determination Date; the model's later review trigger is above USD 1,000,000, not CRS's USD 250,000 trigger | [Treasury Model 1 Annex I](https://home.treasury.gov/system/files/131/FATCA-Annex-I-to-Model-1-Agreement-11-30-14.pdf) |
+| Joint accounts | Attribute the full joint balance to each holder for aggregation; report the full balance for each reportable holder. No general documentary proportional-ownership election | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) [OECD, consolidated CRS (2025)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/04/consolidated-text-of-the-common-reporting-standard-2025_e478bc04/055664b1-en.pdf) |
+| Insurance | No universal CRS USD 50,000 reporting floor. Model 1 pre-existing cash-value/annuity accounts can have a specific USD 250,000 exclusion; other USD 50,000 gates concern different account categories | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) [Treasury Model 1 Annex I](https://home.treasury.gov/system/files/131/FATCA-Annex-I-to-Model-1-Agreement-11-30-14.pdf) |
+| Crypto retail-payment category | Value must exceed USD 50,000 or equivalent; equality is insufficient. This is not a blanket exemption for all smaller crypto transactions | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
 
-### FATCA — who reports
+The USD amounts in the EU Annex are translated into the relevant domestic currency as prescribed there. Establish the reporting institution's applicable currency conversion and election; a table in USD does not authorise a reporting-system exchange rate. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-- **Reporting Financial Institutions (FIs) [T1]** — 1. **US FIs** report Foreign Account Holders to the IRS (Form 8966 for chapter 4) — payer-side reporting on the US payer. 2. **Foreign FIs (FFIs)** in Model 1 IGA jurisdictions report US account holders to their local tax authority, which exchanges with the IRS. 3. **FFIs in Model 2 IGA jurisdictions** report US account holders directly to the IRS under FATCA Form 8966, plus supplemental local reporting in some jurisdictions. 4. **Non-IGA FFIs** that have entered into an FFI Agreement with the IRS report directly to the IRS. 5. **Non-participating FFIs (NPFFIs)** face 30% withholding on US-source withholdable payments.
+## The base
 
-### CRS / DAC2 — who reports
+### Step 1: establish the institution and reporting route
 
-- **Reporting FIs [T1]** — Reporting FIs in a CRS-committed jurisdiction identify and report **Reportable Accounts** held by **Reportable Persons** (tax residents of any other CRS jurisdiction). Reporting is to the local tax authority, which exchanges with each Reportable Jurisdiction.
+Model 1 Reporting FFIs generally report US Reportable Accounts to their local authority for exchange with the IRS. Model 2 FFIs and participating FFIs follow their direct IRS obligations; non-consenting Model 2 accounts have the special aggregate/reporting and request procedures of the actual IGA. A non-participating FFI may suffer chapter 4 withholding, but that is not a substitute reporting classification. [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf) [IRS Form 8966 instructions](https://www.irs.gov/instructions/i8966) [IRS Publication 515 (2026)](https://www.irs.gov/publications/p515)
 
-### Deadlines (illustrative; verify per jurisdiction)
+**US institutions do not generally file Form 8966 for every foreign account holder.** The reciprocal Model 1A Article 2 US-side categories and information are narrower than the partner's US-reportable-account information. Establish the actual interest/income category and applicable Form 1099, Form 1042-S or other reporting duty. Form 8966 instructions separately identify participating FFIs, certain deemed-compliant/sponsoring/trustee entities, direct-reporting NFFEs and withholding agents reporting specified NFFE owners; the exact filer category controls. [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf) [IRS Form 8966 instructions](https://www.irs.gov/instructions/i8966)
 
-**Deadlines (illustrative; verify per jurisdiction)**  _(National AEOI rules)_
+For CRS, first determine Reporting FI versus Non-Reporting FI under local law. Then identify a Financial Account maintained by that FI, its actual holder, and either a Reportable Person holder or a Passive NFE with reportable Controlling Persons. An account is not reportable merely because its holder lives in any jurisdiction that has announced CRS participation. Do not confuse the holder's direct reportability with the Passive NFE look-through test. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) [OECD, consolidated CRS (2025)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/04/consolidated-text-of-the-common-reporting-standard-2025_e478bc04/055664b1-en.pdf)
 
-| Filing | Deadline | Source |
-| --- | --- | --- |
-| FATCA Form 8966 — US FIs | 31 March following reportable year | Treas. Reg. §1.1474-1(d)(1) |
-| FATCA Form 8966 — Model 2 FFIs | 31 March (extended deadlines under IGA) | IGA Article 3 |
-| FATCA Model 1 — to local tax authority | National deadline (varies; usually 30 June or 31 July) | National AEOI rules |
-| CRS — to local tax authority | National deadline (e.g., 31 May Germany; 31 May UK; 30 June France; 31 May Australia; 31 May Singapore) | National AEOI rules |
-| Late or non-filing penalty | Varies widely (e.g., UK: GBP 300 per failure plus up to GBP 60/day; Germany: up to EUR 50,000; Singapore: SGD 5,000 fine and/or 12 months imprisonment) | National AEOI rules |
+### Step 2: classify the entity before choosing an NFE label
 
-### What to report (FATCA)
+CRS Financial Institutions comprise Custodial Institutions, Depository Institutions, Investment Entities and Specified Insurance Companies. The custodial 20% test includes related financial services; the measurement period is the shorter of the three-year period ending on 31 December (or the final day of a non-calendar accounting period) before the determination year, and the entity's existence. A Depository Institution accepts deposits in a banking/similar business; the amended EU definition also includes holding qualifying E-money or central-bank digital currencies for customers. A Specified Insurance Company, including a holding company, issues or owes payments under Cash Value Insurance or Annuity Contracts. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-- **Article 3 IGA / §1.1474-1(i) Treas. Reg. [T1]** — 1. Name, address, US TIN of each Specified US Person (or for Controlling Persons of a Passive NFFE that is a US Specified Person, the Controlling Person details) 2. Account number 3. Name and identifying number (GIIN) of the Reporting FI 4. Account balance or value as of end of calendar year (or other reporting period) 5. **Custodial Accounts:** total gross interest, dividends, other income, and gross proceeds from sale or redemption 6. **Depository Accounts:** total gross interest 7. **Other accounts:** total gross amount paid or credited to the account holder  _(Article 3 IGA / §1.1474-1(i) Treas. Reg.)_
+Investment Entity limb (a) covers a business conducting specified trading, portfolio management, or investing/administering/managing assets or money for customers. It does **not** require that business to be managed by another FI. Limb (b) covers an entity whose relevant investment income is primarily attributable to Financial Assets or, under the amended rules, Reportable Crypto-Assets, and which is managed by a Depository Institution, Custodial Institution, Specified Insurance Company or limb-(a) Investment Entity. The gross-income threshold is **at least 50%**, not greater than 50%, over the shorter three-year/existence period. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-### What to report (CRS)
+The amended definition excludes mere services effectuating Exchange Transactions from limb (a)(iii), and excludes an entity qualifying as Active NFE under the non-financial holding/start-up/liquidation/treasury limbs (d)–(g). Classify the actual activity and manager; do not claim that a family-office-managed passive holding company became an FI only because a new "gap" closed in 2023. The FI-managed investment limb already needs a fact-specific test, and its local version and commencement matter. A direct non-debt interest in real property is outside the Financial Asset definition, while an interest in an investment entity is a different question. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-- **Section I CRS [T1]** — 1. Name, address, jurisdiction(s) of residence, TIN(s), date and place of birth of each Reportable Person (and each Controlling Person of a Passive NFE that is reportable) 2. Account number 3. Name and identifying number of Reporting FI 4. Account balance/value as of end of relevant calendar year (or, if closed, the closure) 5. **Custodial Accounts:** total gross interest, dividends, other income generated, gross proceeds from sale or redemption 6. **Depository Accounts:** total gross interest paid or credited 7. **Other accounts:** total gross amount paid or credited including aggregate amount of redemption payments  _(Section I CRS)_
+FATCA classifications must be tested separately under the relevant regulations/IGA. The Model 1 FI definition and US regulatory categories are not identical to the amended CRS definition; IRS Publication 515 also identifies holding/treasury entities in specified FFI groups. Do not paste the CRS result into a W-8BEN-E without checking the applicable FATCA route. [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf) [IRS Publication 515 (2026)](https://www.irs.gov/publications/p515)
 
-## Section 3 — Entity classification
+### Step 3: apply the complete Active NFE category
 
-### Step 1 — Is the entity a Financial Institution (FI)?
+The CRS model has eight lettered categories (a)–(h), with cumulative conditions inside each. EU Annex I uses the equivalent Section VIII.D(8). The FATCA Model 1 Annex I VI.B.4 instead has ten categories (a)–(j), including territory and excepted-NFFE routes. The former generic "nine categories" must not be reused. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) [OECD, consolidated CRS (2025)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/04/consolidated-text-of-the-common-reporting-standard-2025_e478bc04/055664b1-en.pdf) [Treasury Model 1 Annex I](https://home.treasury.gov/system/files/131/FATCA-Annex-I-to-Model-1-Agreement-11-30-14.pdf)
 
-**FI types (CRS §VIII(A) / FATCA §1.1471-5(e))**  _(CRS §VIII(A) / FATCA §1.1471-5(e))_
+| CRS/EU category | Required conditions and exclusions | Source |
+|---|---|---|
+| (a) Income/assets | Both preceding-period passive-income share and passive-asset share below 50%; failure of either defeats this category | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| (b) Listed entity | Stock regularly traded on an established securities market, or Related Entity of such an entity | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| (c) Public bodies | Governmental Entity, International Organisation, Central Bank, or wholly owned by one or more of them | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| (d) Non-financial holding group | Substantially all activity consists of holding/financing/servicing subsidiaries carrying on non-FI businesses; an investment fund or vehicle holding businesses as capital investments is excluded | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| (e) Start-up | No operating business or prior operating history; investing capital toward a non-FI business, with the 24-month limit | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| (f) Liquidation/reorganisation | No FI status in the preceding five years; liquidation or reorganisation toward continuing/recommencing a non-FI business | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| (g) Treasury centre | Primarily finances/hedges with or for non-FI Related Entities; no financing/hedging for unrelated entities; related group primarily carries on non-FI business | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| (h) Non-profit | All conditions below must hold; a charity name alone is insufficient | [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
 
-| Type | Definition |
-| --- | --- |
-| **Custodial Institution** | An entity that holds, as a substantial portion of its business (≥20% of gross income test over 3 years), Financial Assets for the account of others |
-| **Depository Institution** | Accepts deposits in the ordinary course of a banking or similar business |
-| **Investment Entity** | Two limbs: (a) primarily conducts as a business managed by an FI one or more of: trading in money market / FX / interest rate / index / transferable securities / commodity futures, individual or collective portfolio management; OR (b) gross income primarily attributable (≥50%) to investing, reinvesting, or trading in Financial Assets and the entity is managed by another FI (the "professionally managed" test) |
-| **Specified Insurance Company** | An insurance company (or holding company of an insurance company) that issues or is obligated to make payments on Cash Value Insurance Contracts or Annuity Contracts |
+For non-profit category (h), the entity must be established and operated in its residence jurisdiction exclusively for the specified charitable/religious/scientific/artistic/cultural/athletic/educational purposes, or fall within the listed professional/business/labour/agricultural/horticultural/civic/social-welfare organisations; be income-tax-exempt there; have no shareholders or members with proprietary/beneficial interests; and have legal/constitutional restrictions on private distributions. Permitted charitable activities, reasonable service compensation and fair-market-value property purchases are the specified distribution exceptions. On dissolution, assets must go to government or another non-profit, or escheat to government, under the governing law/documents. Do not replace the last requirement with a generic transfer to any Active NFE. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-- **CRS 2.0 broadening (2023 OECD amendments, in force 2026+) [T1]** — Investment Entity definition expanded to capture entities where a substantial activity is investing in Financial Assets *and* the entity is managed by another FI — closes the "passive holding company managed by a family office FI" gap. The professionally managed test is sharpened: the manager itself must be an FI as defined.
+An ordinary Passive NFE is an NFE failing all Active categories. CRS also treats a limb-(b) Investment Entity that is not a Participating Jurisdiction FI as Passive for this purpose, so an apparent investment FI can still require look-through. Document the applicable Participating Jurisdiction list and the manager's status. FATCA "substantial US owners" under the regulations and IGA "Controlling Persons" must be distinguished. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf) [IRS Publication 515 (2026)](https://www.irs.gov/publications/p515)
 
-### Step 2 — If not an FI, classify as NFE/NFFE
+### Step 4: identify account types, holders and controlling persons
 
-- **Non-Financial Entity (NFE) / Non-Financial Foreign Entity (NFFE) [T1]** — - **Active NFE/NFFE (CRS §VIII(D)(9) / FATCA §1.1472-1(c)(1)(iv)):** Meets at least one of nine categories — broadly, an entity that is not primarily passive. Most common in scope: - Less than 50% of preceding-year gross income is passive AND less than 50% of assets produce passive income - Stock is regularly traded on an established securities market (or it is a Related Entity of such) - Governmental Entity, International Organisation, Central Bank - Holding NFE that is a non-financial group member - Start-up NFE (first 24 months) - NFE in liquidation or emerging from bankruptcy (24 months) - Treasury Center for a non-financial group - Non-profit entity meeting specific charity / public-benefit tests - **Passive NFE/NFFE:** Any NFE that is not Active. Passive NFE Controlling Persons must be looked through and reported if they are Reportable Persons.  _(CRS §VIII(D)(9) / FATCA §1.1472-1(c)(1)(iv))_
+Inventory Depository Accounts, Custodial Accounts, relevant equity/debt interests in Investment Entities and anti-avoidance cases, Cash Value Insurance Contracts and Annuity Contracts. Apply the actual Financial Account and Excluded Account definitions before treating all equity/debt or every insurance policy as reportable. The EU definition contains the investment-advice/portfolio-management-only account exception and specified insurance/annuity exclusions; a "Documented Account" is an evidence status, not an independent statutory exemption. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-### Step 3 — Specific FI sub-classifications under FATCA
+A nominee, custodian, agent or signatory that is not itself an FI generally does not displace the actual person for whose account it holds the Financial Account. For insurance/annuities, identify who can access cash value/change a beneficiary, or the contract owner/vested payee where neither right exists; at maturity identify each person entitled to payment. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-- **FI sub-classifications** — - **Participating FFI (PFFI)** — entered into FFI Agreement (rare under Model 1 IGAs; common in non-IGA jurisdictions) - **Reporting Model 1 FFI** — reports to local tax authority - **Reporting Model 2 FFI** — reports directly to IRS - **Registered Deemed-Compliant FFI** — limited categories (local FFI, qualified credit card issuer, etc.) - **Certified Deemed-Compliant FFI** — small jurisdictions, retirement funds, limited-life debt funds - **Exempt Beneficial Owner** — government entities, international organizations, central banks, treaty-qualified retirement funds - **Non-participating FFI (NPFFI)** — 30% withholding applies on US-source withholdable payments
+CRS Controlling Persons are natural persons exercising control, interpreted consistently with the applicable AML/FATF framework. Do not use ">25% beneficial owner" as a universal sole test or ignore control by other means and the applicable fallback. For trusts include settlors, trustees, protectors if any, beneficiaries/classes and other persons exercising ultimate effective control; equivalent positions apply to other legal arrangements. Record role, residence and required self-certification, rather than assuming a legal entity in one role ends the analysis. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-### Step 4 — GIIN registration (FATCA only)
+A trust may be an Investment Entity under the relevant income/management conditions. A trustee title or professional registration alone does not prove the manager is a qualifying FI. The EU Trustee-Documented Trust exemption requires a trustee that is a Reporting FI and reports all Section I information required for all the trust's Reportable Accounts. FATCA TDT treatment needs its own applicable IGA/non-reporting category and documentation. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) [IRS Form 8966 instructions](https://www.irs.gov/instructions/i8966)
 
-- **GIIN registration [T1]** — A Participating FFI, Registered Deemed-Compliant FFI, Reporting Model 1 or Model 2 FFI must register with the IRS via the FATCA Registration System and obtain a **Global Intermediary Identification Number (GIIN)**. The GIIN takes the form `XXXXXX.XXXXX.XX.NNN` where NNN is the FATCA country code.
+### Step 5: obtain new-account evidence and cure contradictions
 
-## Section 4 — Due diligence procedures
+For new individual CRS accounts obtain self-certification at opening sufficient to determine all tax residences, and confirm reasonableness against opening/AML/KYC information. Apply the TIN and birth-information requirements and exceptions; do not treat citizenship, a residence permit or one postal address as conclusive tax residence. Changed or contradictory evidence prevents continued reliance without the required new valid evidence. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-### 4.1 New Accounts — Individuals
+For new entities, obtain a self-certification establishing residence and confirm reasonableness; a no-tax-residence entity can use its principal-office address under Annex I VI.A(1). Determine Reportable Person status, and then Passive NFE/Controlling Person status separately. FI/Active status may in specified circumstances be reasonably determined from existing or public information. The new-entity Controlling Person residence route uses self-certification from the holder or person; existing AML evidence does not universally replace it. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-- **Self-certification at account opening [T1]** — - Identity, residence address, all jurisdictions of tax residence, TIN(s), date of birth. - Reasonableness check against AML/KYC information. - For US: a Form W-9 (if US person) or W-8BEN (if non-US person) under FATCA. - For CRS: a CRS Self-Certification Form. - Cure: if self-certification proves unreasonable or contradictory, obtain a corrected form within 90 days.
+The former general "correct the form within 90 days" permission is withdrawn. Annex II's particular residence-address change rule allows the **later of the relevant calendar-year end or 90 calendar days after notice/discovery** to obtain the required self-certification and documentary evidence; failing that, apply the electronic-record search. It is not a universal account-opening grace period. Annex I VII.Aa separately addresses exceptional temporary absence of new-account self-certification by applying pre-existing procedures until it is obtained/validated; establish the actual local rule before onboarding. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-### 4.2 New Accounts — Entities
+For FATCA, W-9 documents the US-person/TIN position where appropriate; W-8BEN is the foreign individual beneficial-owner form, W-8BEN-E the entity form, W-8IMY the intermediary/flow-through/certain-US-branch form with required supporting allocation/documentation, W-8ECI the ECI claim, and W-8EXP specified foreign governments or other foreign organisations. Use the actual form instructions and required chapter 3/chapter 4 certifications; an ECI or exemption assertion does not remove unrelated reporting duties. Never rely on an incomplete form or one inconsistent with known facts. [IRS Publication 515 (2026)](https://www.irs.gov/publications/p515)
 
-- **Determine FI vs NFE status [T1]** — Determine FI vs NFE status from self-certification + AML/KYC + publicly available information. If FI: confirm GIIN (for FATCA) or non-participating status; no further look-through for FATCA chapter 4 generally. If Passive NFE: identify Controlling Persons (>25% beneficial owner under AML standards, plus settlors/trustees/protectors/beneficiaries of trusts) and obtain self-certification from each.
+### Step 6: review pre-existing individual accounts
 
-### 4.3 Pre-existing Accounts — Individuals
+Under EU Annex I the ordinary old-account cut-off is 31 December 2015, with new accounts from 1 January 2016; newly included financial products under DAC8 have the 31 December 2025 / 1 January 2026 boundary. The FATCA Model 1 uses an agreement-specific Determination Date. The old 30 June 2014 FATCA date cannot be imposed on every IGA/account class. Preserve the actual local definition and permitted same-holder new-account treatment. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) [Treasury Model 1 Annex I](https://home.treasury.gov/system/files/131/FATCA-Annex-I-to-Model-1-Agreement-11-30-14.pdf)
 
-- **Lower Value Accounts threshold [T1]** — ≤ USD 1m at 30 June 2014 for FATCA; ≤ USD 1m at 31 Dec 2015 for CRS USD
-- **Lower Value Accounts procedures [T1]** — - **Residence address test** — current residence address based on documentary evidence - If no current residence address → **electronic indicia search** for indicia of US (FATCA) or other CRS jurisdiction residence - Indicia: identification as US/CRS-jurisdiction resident; current mailing/residence address; current telephone number; standing instructions to transfer funds; current effective POA / signatory authority granted to a person with a US/CRS-jurisdiction address; "in-care-of" or "hold mail" address - **Cure**: obtain self-certification + documentary evidence
-- **High Value Accounts (> USD 1m) [T1]** — Electronic search PLUS paper record search PLUS Relationship Manager inquiry (does the RM have actual knowledge of US/CRS-jurisdiction residence?). Annual rerun until cured.
+For lower-value EU accounts the balance is at most USD 1,000,000 at the applicable cut-off. A current residence address based on Documentary Evidence can support the residence-address test. Otherwise search electronic records for the specified residence identification, current address, qualifying telephone numbers, standing transfer instructions excluding Depository Accounts, current power-of-attorney/signatory address, and sole hold-mail/in-care-of indicia. A tax-residence indicium is not the same as a universal nationality test. Apply the specific cure alternatives: some require both self-certification and Documentary Evidence, whereas the power-of-attorney limb permits either. Sole hold-mail/in-care-of cases require the special paper-search/evidence and undocumented-account route. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-### 4.4 Pre-existing Accounts — Entities
+For high-value accounts, add the paper-record review unless the electronic system contains all the specified information, and the relationship-manager actual-knowledge inquiry. A complete electronic record is a statutory exception to the paper search, not an exception to manager knowledge. After enhanced procedures, there is no automatic annual rerun of every paper search: the manager inquiry continues, changed circumstances must be addressed, and undocumented accounts have annual enhanced procedures until documented. An account first exceeding USD 1,000,000 at a later year-end must receive enhanced review within the next calendar year under the Annex. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-- **Two-step process [T1]** — 1. Is the entity itself reportable? (Specified US Person under FATCA, or Reportable Person under CRS — usually applies only if directly tax resident in a Reportable Jurisdiction) 2. If a Passive NFE → identify Controlling Persons and apply individual due diligence to each
-- **Pre-existing entity accounts review threshold** — ≤ USD 250,000 are not required to be reviewed under FATCA (some IGAs follow this; CRS has a similar threshold) USD
+Use the actual FATCA IGA's pre-existing individual procedures and optional exclusions. In the Model 1 Annex, the specified USD 50,000 individual/deposit gates and USD 250,000 cash-value/annuity gate have different conditions, including applicable elections and restrictions on insurance sales to US residents. Do not transfer a CRS residence-address test or one category's threshold wholesale into FATCA. [Treasury Model 1 Annex I](https://home.treasury.gov/system/files/131/FATCA-Annex-I-to-Model-1-Agreement-11-30-14.pdf)
 
-### 4.5 Aggregation rules
+### Step 7: review pre-existing entities and aggregate accounts
 
-- **Aggregation of accounts [T1]** — Aggregate accounts of the same Account Holder at the same FI to determine threshold tests (Section VII CRS / §1.1471-5(b)(4)). Includes financial accounts where the same Account Holder is on AML/KYC records as the holder (including joint accounts at the relevant proportional share for CRS pre-2.0; CRS 2.0 imposes joint-account aggregation across both holders).  _(Section VII CRS / §1.1471-5(b)(4))_
+Determine both whether the entity holder is itself reportable and whether it is Passive with reportable Controlling Persons. For pre-existing EU entity accounts of at most USD 1,000,000, specified AML/KYC information can establish Controlling Person residence; otherwise obtain the required self-certification. The separate optional USD 250,000 review threshold does not make every account below that value permanently exempt. If an elected unreviewed account later exceeds USD 250,000 at year-end, review it within the following calendar year. Do not repeat the unsupported Netherlands-specific assertion that all accounts must be reviewed without current local authority. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-## Section 5 — Reportable accounts and reporting
+Aggregate balances at the FI and Related Entities where computerised systems link accounts by a data element and permit aggregation; apply the special relationship-manager rule **for determining High Value Accounts**, aggregating accounts known to be commonly owned/controlled by the same person **other than in a fiduciary capacity**. Allocate the **entire joint account balance to each holder** for threshold tests, and the full reportable balance/payment amounts for each reportable holder. The former proportional pre-"CRS 2.0" rule and the claimed documentary proportional-ownership exception are both withdrawn. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) [OECD, consolidated CRS (2025)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/04/consolidated-text-of-the-common-reporting-standard-2025_e478bc04/055664b1-en.pdf)
 
-### 5.1 Reportable Person — CRS
+For cash-value insurance and annuities there is no general CRS USD 50,000 floor. The optional special group-contract beneficiary procedure has cumulative conditions, including an employer group covering at least 25 employees/certificate holders and the USD 1,000,000 payable cap; it does not exempt every group contract or remove identification when a payment is due. Apply the actual VII.B conditions and normal account definitions. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-- **Reportable Person [T1]** — A Reportable Person is an individual or entity that is a tax resident of a Reportable Jurisdiction other than: a corporation whose stock is regularly traded on a securities market; a corporation that is a Related Entity of a publicly traded corporation; a Governmental Entity, International Organization, Central Bank, or FI. Reportable Jurisdictions: any jurisdiction with which the FI's jurisdiction has an active CRS exchange relationship. Maintained on the OECD AEOI portal.
+### Step 8: determine reportable persons and required fields
 
-### 5.2 Specified US Person — FATCA
+For CRS apply the residence definition and all exclusions for the relevant version: publicly traded entities/related entities, government, international organisations, central banks and FIs. The amended EU text uses "Entity" for the traded-entity exclusions. Local Reportable Jurisdiction lists and competent-authority relationships control exchange; a Participating Jurisdiction is a distinct definition used, among other things, for investment-entity look-through. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) [OECD, consolidated CRS (2025)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/04/consolidated-text-of-the-common-reporting-standard-2025_e478bc04/055664b1-en.pdf)
 
-- **Specified US Person [T1]** — A US Person other than (§1.1471-5(f)(2)): Publicly traded corporation; Tax-exempt organisation (§501(a)); US, any state, DC, US possession, agency or instrumentality; Bank under §581; REIT; RIC, Common Trust Fund (§584(a)), or Trust exempt under §664(c) or §4947(a)(1); Dealer in securities/commodities; Broker.  _(§1.1471-5(f)(2))_
+For FATCA use the actual Specified US Person definition. The correct regulatory reference is section **1.1473-1(c)**, not the old 1.1471-5(f)(2). Model 1 Article 1(ff) excludes the specified publicly traded corporations and expanded affiliated group members; section 501(a) organisations and individual retirement plans; US/state/DC/territory governmental bodies and wholly owned instrumentalities; banks; REITs; RICs and specified SEC-registered investment entities; common trust funds; section 664(c)/4947(a)(1) trusts; registered dealers; brokers; and section 403(b)/457(g) tax-exempt trusts. Match every condition, rather than treating this as a universal foreign-account exclusion list. [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf) [Official CFR 2025, section 1.1473-1](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol14/pdf/CFR-2025-title26-vol14-sec1-1473-1.pdf)
 
-### 5.3 Cash Value Insurance and Annuity Contracts
+| Reporting item | FATCA Model 1 partner-to-US information | CRS/EU information | Source |
+|---|---|---|---|
+| Identity | Name, address, US TIN of specified US holder; entity and specified US Controlling Person details under the applicable NFFE rule | Name, address, residence jurisdiction(s), TIN(s), individual date/place of birth, and entity/Controlling Person identity where applicable; defined TIN/birth exceptions apply | [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf) [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| Account/FI | Account number or functional equivalent; Reporting FI name and identifying number | Account number/equivalent; FI name and identifying number if any; amended account-type/self-certification/joint-holder information | [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf) [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| Balance/closure | Year-end balance/value or applicable closure information under the IGA | Year-end balance/value; closure during the year, and cash/surrender value for relevant insurance/annuities | [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf) [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| Custodial account | Gross interest, dividends, other income and gross sale/redemption proceeds under Article 2 | Gross interest/dividends/other income and gross sale/redemption proceeds when acting as custodian/broker/nominee/agent; Annex I I.F excludes proceeds to the extent the same FI reports them under Article 8ad, unless it elects otherwise for a clearly identified account group | [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf) [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| Depository account | Gross interest | Gross interest | [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf) [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
+| Other account | Gross amounts paid/credited, including redemption payments where required | Gross paid/credited amounts where the FI is obligor/debtor, including aggregate redemption payments | [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf) [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) |
 
-- **Cash Value Insurance Contract reporting threshold** — Cash Value Insurance Contracts with cash value > USD 50,000 are reportable. Group Cash Value Insurance Contracts and Group Annuity Contracts have specific look-through requirements to certificate holders. USD
+The EU amended reporting fields include Controlling Person/equity-interest roles and applicable account/new-or-pre-existing/joint-holder/self-certification information. Annex I XI gives a limited transition for roles on accounts maintained at 31 December 2025: for reporting periods ending by the end of the second following calendar year, report those roles only if electronically searchable. It does not postpone all amended reporting fields. Record currency for each reported amount. Do not prescribe account currency as an absolute worldwide conversion rule or invent the receiving authority's year-end translation method. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-### 5.4 Currency reporting
+### Step 9: document FATCA status and GIIN
 
-All amounts reported in the currency of the account. The receiving Reportable Jurisdiction's tax authority may translate at year-end exchange rates.
+Distinguish a Participating FFI, Reporting Model 1 FFI, Reporting Model 2 FFI, Registered Deemed-Compliant FFI, Certified Deemed-Compliant FFI, Exempt Beneficial Owner and NPFFI. Model 1 reporting does not mean the FI has the same direct FFI agreement as a participating non-IGA FFI. Non-reporting IGA categories and exempt beneficial owners have specific conditions. The old shortcuts "small jurisdictions = certified deemed-compliant" and "all retirement funds = certified deemed-compliant" are unusable; establish the precise category and documentation. [IRS Publication 515 (2026)](https://www.irs.gov/publications/p515) [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf)
 
-## Section 6 — Withholding under FATCA (chapter 4)
+Where the category requires registration, establish lead/member/single/sponsoring/sponsored/branch status, obtain the GIIN and check its current IRS-list/documentation requirements. The GIIN has 19 characters, shaped `XXXXXX.XXXXX.XX.XXX`, including three periods; the last three positions are numeric ISO 3166-1 country/jurisdiction code (999 for Other). IRS composition guidance excludes the letter O. Direct-reporting NFFEs and sponsoring entities can also have GIINs, so possession alone does not prove FI classification or reporting compliance. Responsible-officer certification dates/status and the precise certified-deemed-compliant exceptions are engagement-specific open items here. [IRS GIIN composition](https://www.irs.gov/businesses/corporations/fatca-registration-and-ffi-list-giin-composition-information) [IRS Publication 515 (2026)](https://www.irs.gov/publications/p515)
 
-### 6.1 30% withholding on US-source withholdable payments
+### Step 10: compute FATCA withholding separately from account reporting
 
-- **Withholdable payment (§1.1473-1) [T1]** — - Interest, dividends, rents, royalties, premiums, annuities, compensation, remuneration, and other FDAP income from US sources - Gross proceeds from the sale or other disposition of property of a type that can produce US-source interest or dividends (foreign passthru payment grandfathering remains in effect; passthru payment withholding has been deferred multiple times — confirm current status)  _(§1.1473-1)_
+Chapter 4 generally requires 30% withholding on a qualifying US-source FDAP withholdable payment to an FFI unless the documented status supplies a relevant participating/deemed-compliant/exempt exception. For an NFFE, the identification/certification of substantial US owners and the applicable section 1472 exception control. A failure is not a licence to withhold only the owners' proportional slice of an otherwise withholdable NFFE payment. PFFI recalcitrant-holder duties and the special IGA conditions must be checked separately. A compliant account report does not itself eliminate withholding. [IRS Publication 515 (2026)](https://www.irs.gov/publications/p515)
 
-### 6.2 Withholding when payee is
+FDAP includes the relevant US-source interest, dividends, rents, royalties, salaries/wages, premiums, annuities and other fixed/determinable annual/periodical income, subject to the actual statutory/regulatory exceptions. Keep source, payee, beneficial-owner/intermediary allocation, ECI/exemption documentation and chapter 3 analysis. Chapter 3 and chapter 4 are not automatically stacked into 60% on one payment. Form 1042-S/1042 payment/withholding reporting is separate from Form 8966 account information. [IRS Publication 515 (2026)](https://www.irs.gov/publications/p515) [IRS Form 1042-S instructions (2026)](https://www.irs.gov/instructions/i1042s)
 
-- **Withholding scenarios** — - A non-participating FFI (NPFFI) → 30% withhold - A passive NFFE that fails to provide Controlling Person info → 30% withhold on the proportionate share - A recalcitrant account holder of a PFFI in certain cases
+**Gross-proceeds and foreign-passthru boundary:** the 2025 official CFR still contains gross proceeds in section 1.1473-1(a). The published 2018 **proposed** regulations REG-132881-17 would remove gross-proceeds withholding and allow reliance until final regulations, subject to their stated exceptions. Their foreign-passthru proposal defers it until two years after publication of final regulations defining that term. The 2026 Form 1042-S instructions still acknowledge general permitted reliance on those proposals. Do not describe a proposed amendment as already enacted or impose gross-proceeds/foreign-passthru withholding from an old table alone; verify the actual payment, reliance position and later applicable final guidance before instructing withholding. The Guide does not clear a transaction-specific current passthru obligation. [Official CFR 2025, section 1.1473-1](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol14/pdf/CFR-2025-title26-vol14-sec1-1473-1.pdf) [Published FATCA proposal, REG-132881-17](https://www.govinfo.gov/content/pkg/FR-2018-12-18/pdf/2018-27290.pdf) [IRS Form 1042-S instructions (2026)](https://www.irs.gov/instructions/i1042s)
 
-### 6.3 Forms
+### Step 11: assess CARF and EU DAC8 independently
 
-- Form W-8BEN — individual non-US persons
-- Form W-8BEN-E — non-US entities
-- Form W-8IMY — intermediaries and flow-through entities (with attached withholding statements)
-- Form W-8ECI — non-US person with US ECI
-- Form W-8EXP — government, international organization, foreign central bank, foreign tax-exempt org
+The OECD CARF is a model framework, rather than a worldwide self-executing tax statute. The OECD commitment list dated 14 September 2026 groups first exchanges into 2027, 2028 and 2029. The old first-exchange claim for early adopters in 2026 is withdrawn. A first-exchange commitment does not by itself prove the domestic first collection period, filing date, provider nexus or activated exchange relationship. [OECD, CARF commitments, September 2026](https://www.oecd.org/content/dam/oecd/en/networks/global-forum-tax-transparency/commitments-carf.pdf)
 
-## Section 7 — CARF and DAC8 — crypto-asset reporting
+Under current EU DAC8, Reporting Crypto-Asset Service Providers include qualifying MiCA-authorised/notified providers **and** Crypto-Asset Operators conducting covered exchange services for Reportable Users. The scope is not limited to MiCA licensees. Annex VI I applies authorisation/notification, tax residence, incorporation/legal-personality or tax-filing, management, regular-business-place and branch nexuses, with specific duplicate-reporting relief where the equivalent duties are completed in another Member State or Qualified Non-Union Jurisdiction and required notifications are made. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-- **OECD Crypto-Asset Reporting Framework (CARF, March 2023) [T1]** — - Reporting Crypto-Asset Service Providers (RCASPs) report transactions with Reportable Users. - Reportable Crypto-Assets: crypto-assets used as means of payment or investment; excludes Central Bank Digital Currencies (which fall under CRS 2.0) and certain closed-loop assets. - Transactions reported: crypto-to-fiat exchanges, crypto-to-crypto exchanges, reportable retail payment transactions ≥ USD 50,000. - First reporting period: 2026 for early adopters; 2027 for most committed jurisdictions.
-- **EU DAC8 (Council Directive (EU) 2023/2226) [T1]** — - Transposes CARF into EU law. - Entry into force: 1 January 2026 (reporting from 2026 reference period, first exchange 2027). - Crypto-Asset Service Providers (CASPs) authorised under MiCA report to their Member State of authorization.  _(Council Directive (EU) 2023/2226)_
+Reportable Crypto-Assets exclude central-bank digital currencies, qualifying E-money and assets adequately determined incapable of payment or investment use. Exchange transactions include crypto-to-fiat and crypto-to-crypto; transfers, including qualifying retail payments, also matter. A Reportable Retail Payment Transaction has value **exceeding USD 50,000**, rather than at least that amount. A merchant's customer is additionally treated as a Crypto-Asset User for that payment only where the specified domestic AML identity-verification condition holds. Smaller payments may still be reportable under another transfer/exchange category. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-## Section 8 — Edge cases and special rules
+EU reporting covers user/entity/Controlling Person and provider identifiers; aggregate acquisitions/disposals, units and transaction counts by crypto-asset/type; retail-payment and other transfers; and specified transfers to addresses not known to belong to an FI or virtual-asset provider. Use consistently determined transaction-time fiat values and identify the currency. Obtain/validate self-certifications and identify entity Controlling Persons under Annex VI III, rather than assume a CRS file satisfies all crypto duties. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-### 8.1 Joint accounts (CRS 2.0)
+Article 8ad(6) makes 2026 the first relevant reporting period and requires inter-authority exchange within nine months after calendar-year end: the first calendar-2026 exchange is therefore due by 30 September 2027. That is not a common domestic provider filing date. The old description of 1 January 2026 as the directive's "entry into force" is not used: distinguish application/first period, national transposition and the directive's formal commencement. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-- **Joint accounts treatment [T1]** — Pre-CRS-2.0: each holder's share was reported separately. CRS 2.0 (in force 2026+): the **full account balance** is reported for each holder unless the FI can establish proportional ownership through documentary evidence. Plan for system upgrade.
+## Deadlines and filing
 
-### 8.2 Trusts as FIs
+| Route / period | Deadline or operative boundary | Official source |
+|---|---|---|
+| Direct Form 8966 filer, where required | 31 March following the calendar year, with the stated US weekend/legal-holiday next-business-day rule. Eligible automatic 90-day extension uses Form 8809-I filed by the due date; additional hardship relief has separate conditions. The non-consenting Model 2 account report does not get that automatic extension | [IRS Form 8966 instructions](https://www.irs.gov/instructions/i8966) |
+| Model 1 local reporting | Actual national deadline, rather than a presumed 30 June or 31 July. Identify nil-report and registration duties separately | [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf) [HMRC, how to report AEOI](https://www.gov.uk/guidance/how-to-report-automatic-exchange-of-information) [IRAS, CRS filing](https://www.iras.gov.sg/taxes/international-tax/common-reporting-standard-%28crs%29/crs-filing) |
+| UK CRS/FATCA return | 31 May after calendar-year end. Thus calendar 2025 is due 31 May 2026 under the published rule; apply any actual relief separately | [HMRC, how to report AEOI](https://www.gov.uk/guidance/how-to-report-automatic-exchange-of-information) |
+| Germany CRS, FKAustG section 27(2) | 31 July following the reporting calendar year, not the former 31 May. Authority-to-authority exchange by 30 September is a separate date | [Germany, FKAustG](https://www.gesetze-im-internet.de/fkaustg/BJNR253110015.html) |
+| France CRS | 31 July after calendar-year end under the cited official BOFiP deadline; do not confuse the separate L.102 AG declaration due in March or the FATCA transmission calendar | [France, BOI-INT-AEA-20-40](https://bofip.impots.gouv.fr/bofip/10340-PGP.html/identifiant=BOI-INT-AEA-20-40-20200226) |
+| France FATCA income 2025, 2026 campaign | The official version 5.3 calendar specifies regulatory deposit by 15 July 2026. This particular campaign is not authority for an unverified 2027 deadline | [France, FATCA specifications v5.3](https://www.impots.gouv.fr/sites/default/files/media/1_metier/3_partenaire/tiers_declarants/cdc_td_bilateral/cahier-des-charges-fatca-v5.3.pdf) |
+| Singapore CRS | 31 May following the calendar year; nil return where applicable. Calendar 2025 return due 31 May 2026. Filing-extension exceptions are specific, not automatic | [IRAS, CRS filing](https://www.iras.gov.sg/taxes/international-tax/common-reporting-standard-%28crs%29/crs-filing) |
+| Australia CRS/FATCA | The former blanket 31 May deadline is unusable; current local filing date, concessions and portal for the actual period remain on Not yet confirmed | Not yet confirmed: current Australian primary filing instructions |
 
-- **Trust as Investment Entity / TDT** — A trust qualifies as an Investment Entity if its income is primarily from Financial Assets AND it is managed by a professional trustee that is itself an FI. **Trustee-Documented Trust** (TDT) status allows the trustee FI to absorb the trust's reporting obligation.
+Form 8966 FI filers generally use electronic filing regardless of return count, subject to the stated waiver process, and the instructions refer to IDES and the applicable XML publications. Do not treat Form 1042-S's filing system as the account-information route. For the UK, use HMRC registration/reporting access and the permitted submission format; CRS and FATCA become separate schemas from **1 January 2027**, including corrections for earlier periods, and the combined schema ends after **31 December 2026**. Singapore likewise requires CRS XML version 3 from **1 January 2027** for new/nil/corrected/deleted submissions; its amended CRS substantive rules start then. Portal acceptance and a technically optional field do not waive a legal information requirement. [IRS Form 8966 instructions](https://www.irs.gov/instructions/i8966) [HMRC, how to report AEOI](https://www.gov.uk/guidance/how-to-report-automatic-exchange-of-information) [IRAS, CRS filing](https://www.iras.gov.sg/taxes/international-tax/common-reporting-standard-%28crs%29/crs-filing) [IRAS, CRS overview and latest developments](https://www.iras.gov.sg/taxes/international-tax/common-reporting-standard-%28crs%29/crs-overview-and-latest-developments)
 
-### 8.3 Non-Profit NFEs
+An FI's use of an agent does not automatically transfer its legal responsibility. The UK guidance requires separate reports for each Reporting FI in a group; nil-report obligations differ, including specified de-minimis arrangements. Retain the return, acknowledgement/error log, submission authority and corrections schedule. This Guide does not authorise filing through a live account or provide a universal XML version for every receiving authority. [HMRC, AEOI financial institutions](https://www.gov.uk/guidance/automatic-exchange-of-information-financial-institutions) [IRS Form 8966 instructions](https://www.irs.gov/instructions/i8966)
 
-- **Non-profit NFE active status test** — To qualify as Active NFE on non-profit grounds, must meet all of: established and operated in jurisdiction of residence exclusively for religious, charitable, scientific, artistic, cultural, athletic, or educational purposes / or as a professional organisation; tax-exempt; no shareholders/owners with proprietary or beneficial interest; applicable law / governing documents preclude distribution other than for charitable/non-profit purposes; require distribution of assets on liquidation to a Governmental Entity or another Active NFE.
+## Penalties and interest
 
-### 8.4 Pre-existing entity accounts under USD 250,000
+**UK replacement law:** SI 2025/740 took effect on **16 July 2025** and replaced regulations 13–22 with regulations 22A–22N. The old HMRC CC/FS46 factsheet's GBP 300 plus GBP 60/day amounts and the Guide's other GBP 3,000 shorthand are not current general AEOI penalties. Use the actual obligation-specific rules and transitional/application conditions; the same amending instrument defers specified amended CRS definitions to periods from 2026. [UK SI 2025/740](https://www.legislation.gov.uk/uksi/2025/740/made/data.html)
 
-- **Threshold election** — Optional review — many FIs document the choice to apply or not apply this threshold and operate accordingly. CRS allows the threshold; some Member States (e.g., Netherlands) require all accounts to be reviewed.
+| UK obligation | Current statutory maximum and operative condition | Source |
+|---|---|---|
+| Due diligence, regulation 22A(1) | GBP 100 per person for failure to comply with the specified due-diligence requirements, subject to the self-certification exception below | [UK SI 2025/740](https://www.legislation.gov.uk/uksi/2025/740/made/data.html) |
+| Valid self-certification, 22A(2) | GBP 300 per person for the specified failure to obtain a valid self-certification | [UK SI 2025/740](https://www.legislation.gov.uk/uksi/2025/740/made/data.html) |
+| Records, 22B | GBP 5,000 for the specified relevant period's recordkeeping failure | [UK SI 2025/740](https://www.legislation.gov.uk/uksi/2025/740/made/data.html) |
+| Report, 22C | GBP 5,000 for failure to report, with up to GBP 600/day for continuation after notification of assessment, subject to the statutory conditions | [UK SI 2025/740](https://www.legislation.gov.uk/uksi/2025/740/made/data.html) |
+| Inaccurate report, 22D | GBP 100 per person where the specified careless/deliberate or discovered-inaccuracy conditions apply | [UK SI 2025/740](https://www.legislation.gov.uk/uksi/2025/740/made/data.html) |
+| Required notifications, 22E | GBP 100 per person and up to GBP 100/day for the stated continuing failure after assessment notification | [UK SI 2025/740](https://www.legislation.gov.uk/uksi/2025/740/made/data.html) |
+| Registration, 22F | GBP 1,000 and up to GBP 300/day for the stated continuing failure after assessment notification | [UK SI 2025/740](https://www.legislation.gov.uk/uksi/2025/740/made/data.html) |
+| Information/documents, 22G | GBP 5,000 and up to GBP 600/day after assessment notification for continued failure to comply | [UK SI 2025/740](https://www.legislation.gov.uk/uksi/2025/740/made/data.html) |
+| Self-certification provider, 22H | GBP 300 for a deliberate or careless failure to provide a valid self-certification under regulation 12GA | [UK SI 2025/740](https://www.legislation.gov.uk/uksi/2025/740/made/data.html) |
 
-### 8.5 Anti-avoidance — using third-country residence to escape reporting
+Read the statutory assessment and continued-failure triggers before computing days. Regulations 22I–22N include reasonable excuse, assessment/payment and appeal rules; funds shortage or reliance on another person alone is not an excuse, and a ceased excuse must be remedied without unreasonable delay. There is no double penalty under 22A, 22B and 22D for the same act/omission. The notification-based assessment and appeal time limits, and any reasonable care or other culpability condition, cannot be replaced with a strict-liability slogan. No general AEOI late-payment interest rate is determined here. [UK SI 2025/740](https://www.legislation.gov.uk/uksi/2025/740/made/data.html)
 
-- **Anti-avoidance rules** — Both FATCA (§1.1471-4(f)(2) RO certification) and CRS (Section IX) contain anti-avoidance rules. If an arrangement's primary purpose is to avoid reporting, the FI must treat the relevant account as if the arrangement did not exist. The OECD MDR on CRS Avoidance Arrangements (2018) creates a parallel intermediary disclosure regime. See `dac6-mdr-reportable-arrangements.md`.  _(§1.1471-4(f)(2); CRS Section IX)_
+| Other jurisdiction | Confirmed position or explicit unusable hold | Official source |
+|---|---|---|
+| Germany CRS | Section 28 covers intentional or reckless specified failures. Maximum EUR 50,000 applies to paragraph 1 points 5b and 6–20; the other listed cases have a EUR 10,000 maximum. It is not EUR 50,000 for every mistake | [Germany, FKAustG](https://www.gesetze-im-internet.de/fkaustg/BJNR253110015.html) |
+| Singapore CRS | IRAS filing guidance states a fine up to SGD 5,000 for late/non-filing. The old additional general 12-month imprisonment claim is not cleared for that offence by this source | [IRAS, CRS filing](https://www.iras.gov.sg/taxes/international-tax/common-reporting-standard-%28crs%29/crs-filing) |
+| US FATCA | Form 8966 instructions identify potential sections 6721–6724 consequences for failure to meet required electronic filing. The superseded/unverified general penalty amounts are individually unusable on Sources; identify the actual provision, year, correction window and intent before quoting an amount | [IRS Form 8966 instructions](https://www.irs.gov/instructions/i8966) |
+| Australia | The former base plus indexation is individually unusable on Sources pending current statutory penalty-unit, entity-size and offence verification | Not yet confirmed: current Australian AEOI penalty computation |
+| Switzerland | The former "per failure" amount is individually unusable on Sources as a universal FATCA/AEOIA penalty. Identify offence, responsible person/entity, culpability and operative current law | Not yet confirmed: current Swiss FATCA/AEOIA sanctions |
 
-### 8.6 US-EU IGA developments
+FATCA 30% withholding exposure is separate from these administrative fines. Do not add it automatically to the account balance as a penalty or guarantee the account holder alone bears the legal liability. [IRS Publication 515 (2026)](https://www.irs.gov/publications/p515)
 
-The CJEU has confirmed (Joined Cases C-457/21 P and others) that Member States can transmit FATCA data to the US under Model 1 IGAs notwithstanding GDPR concerns, subject to the data protection guarantees in the IGA itself.
+## Cross-border points
 
-### 8.7 Penalty exposure — examples
+**Anti-avoidance:** EU Annex I IX requires rules preventing circumvention, compliance and records, including records available **not longer than necessary but in any event not less than five years**. The actual local retention start event and any other applicable retention rule require their own authority; Annex I does not state the crypto-provider end-of-report-period clock. Do not invent a uniform worldwide "primary purpose" test or assume responsible-officer certification is itself the whole anti-avoidance law. Record the actual local rule, any FATCA responsible-officer obligations and whether the separate OECD MDR/DAC6 analysis is required; do not advise on reshuffling residence or entity labels to suppress reporting. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-**Penalty exposure — examples**
+**Privacy and US–EU exchange:** the original CJEU citation C-457/21 P is incorrect. The Court's official 14 December 2023 announcement identifies that appeal as **Commission v Amazon.com and Others**, concerning Luxembourg state aid. It does not establish blanket FATCA/GDPR legality. Preserve the privacy question as an unresolved, jurisdiction-specific legal check: the applicable IGA, domestic basis, data-protection safeguards and any operative restriction/judgment need actual review. No FATCA privacy clearance is supplied by the miscited case. [CJEU press release 190/23](https://curia.europa.eu/site/upload/docs/application/pdf/2023-12/cp230190en.pdf)
 
-| Jurisdiction | Penalty |
-| --- | --- |
-| **US** (FATCA) | Up to USD 250 per failure (cap USD 3m); higher for intentional disregard. 30% withholding loss to Account Holder. |
-| **UK** | Up to GBP 3,000 per failure + GBP 600/day continuing |
-| **Germany** | Up to EUR 50,000 per failure |
-| **Singapore** | SGD 5,000 and/or 12 months imprisonment |
-| **Australia** | Up to AUD 12,500 base + indexation |
-| **Switzerland** | Up to CHF 50,000 per failure (FATCA), separate sanctions under AEOIA |
+**Insurance, joint holders, trusts and low-value elections:** do not erase these questions merely because an account has one documented owner, a charitable label, a low balance or a trustee with a GIIN. Verify the account-definition/exclusion, all owners' full aggregation, the exact Active category, the controlling-person chain and the chosen local threshold election. A correct CRS classification does not prove FATCA, CARF or AML treatment. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) [Treasury Model 1 Annex I](https://home.treasury.gov/system/files/131/FATCA-Annex-I-to-Model-1-Agreement-11-30-14.pdf) [IRS Publication 515 (2026)](https://www.irs.gov/publications/p515)
 
-## Section 9 — Output specification
+## Worked examples
 
-The reviewer brief must include:
+### Example 1: the Active NFE decision needs both tests
 
-1. **FI vs NFE classification** for the entity with supporting evidence and code references.
-2. **GIIN status** (if FI) — registered? lapsed? sponsoring vs sponsored?
-3. **Active vs Passive NFE** determination with the gross income/asset test or specific category.
-4. **Account inventory** — every Financial Account with type (Depository / Custodial / Cash Value / Annuity / Equity-Debt), holder, Controlling Persons (if any), aggregated balance.
-5. **Reportable Account determination** per account, with the reasoning (which Reportable Jurisdiction, which indicium triggered).
-6. **Due diligence completion log** — self-certifications received, indicia search results, cures performed.
-7. **Reporting schedule** — XML payloads by jurisdiction with deadlines.
-8. **FATCA withholding exposure** — any payments at risk of 30% chapter 4 withholding.
-9. **CARF / DAC8 readiness** — whether the entity is a Reporting Crypto-Asset Service Provider.
-10. **Reviewer questions** — open items flagged as [T2] or [T3].
+Assume a non-FI company with no other Active category, preceding-period gross income of USD 200,000, passive income USD 98,000 and average assets USD 600,000. With USD 294,000 passive-producing assets, both shares are 49%, so category (a) is available. If passive assets are instead USD 300,000, their share is exactly 50%, and that category fails despite the same 49% passive-income share. Identify reportable Controlling Persons if the resulting Passive NFE has the relevant account; this example does not prove its residence or a reportable jurisdiction. All dollar inputs are hypothetical; the dual less-than-50% test is EU Annex I VIII.D(8)(a). [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1)
 
-## Section 10 — Self-checks
+```oa-check
+name: Active NFE income and asset boundary
+inputs:
+  gross_income: 200000
+  passive_income: 98000
+  total_assets: 600000
+  passive_assets_a: 294000
+  passive_assets_b: 300000
+steps:
+  income_percent: passive_income / gross_income * 100
+  asset_percent_a: passive_assets_a / total_assets * 100
+  asset_percent_b: passive_assets_b / total_assets * 100
+expected:
+  income_percent: 49
+  asset_percent_a: 49
+  asset_percent_b: 50
+```
 
-Before delivering output, verify:
+### Example 2: full joint aggregation changes the high-value decision
 
-- [ ] FI status tested against all four FI categories under CRS §VIII(A) and §1.1471-5(e).
-- [ ] Investment Entity test correctly applies the >50% passive gross income test AND the "managed by an FI" test (post-CRS-2.0 broadening).
-- [ ] Active NFE test against the nine categories with documentary evidence.
-- [ ] Controlling Persons identified for every Passive NFE following AML/KYC, settlor/trustee/protector/beneficiary rules for trusts.
-- [ ] Indicia search completed for pre-existing individual accounts.
-- [ ] Aggregation rules applied to determine threshold tests.
-- [ ] CRS 2.0 joint-account treatment applied for reporting periods 2026+.
-- [ ] GIIN registration verified on FATCA portal and not lapsed.
-- [ ] XML schema for the receiving jurisdiction matched (e.g., CRS XML 3.0; FATCA XML v2.0; jurisdiction-specific overlays).
-- [ ] Deadlines plotted for every receiving jurisdiction.
-- [ ] CARF / DAC8 status reviewed for any crypto-asset activity.
-- [ ] Output flags every [T2]/[T3] item for reviewer judgement.
+Assume two reportable holders, A and B, share a USD 800,000 account. At the same FI A also has USD 250,000, and B USD 100,000, with the computerised linking conditions satisfied. Attribute USD 800,000 to **each**: A's aggregate is USD 1,050,000, above the USD 1,000,000 high-value threshold; B's is USD 900,000. A false half-share allocation would produce USD 650,000 for A and miss enhanced review. Report the full USD 800,000 joint-account balance for each reportable holder, not USD 400,000 each; this is not a statement that the underlying assets doubled. All inputs are hypothetical; use the actual account/year and residence facts. [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) [OECD, consolidated CRS (2025)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/04/consolidated-text-of-the-common-reporting-standard-2025_e478bc04/055664b1-en.pdf)
 
-## Section 11 — Prohibitions
+```oa-check
+name: Full joint balance for each holder
+inputs:
+  joint: 800000
+  a_sole: 250000
+  b_sole: 100000
+  high_value_threshold: 1000000
+steps:
+  a_aggregate: joint + a_sole
+  b_aggregate: joint + b_sole
+  a_over_threshold: a_aggregate - high_value_threshold
+  incorrect_a_half_share: joint / 2 + a_sole
+  report_joint_each: joint
+expected:
+  a_aggregate: 1050000
+  b_aggregate: 900000
+  a_over_threshold: 50000
+  incorrect_a_half_share: 650000
+  report_joint_each: 800000
+```
 
-- **Do not** classify an entity as Active NFE without testing against the specific nine categories — the gross income/asset test is one of nine, not the only one.
-- **Do not** treat absence of indicia as conclusive — Relationship Manager actual knowledge can override electronic and paper searches.
-- **Do not** rely on a self-certification that contradicts AML/KYC information without curing.
-- **Do not** treat an account under threshold as out of scope without explicitly documenting the threshold election.
-- **Do not** ignore CARF / DAC8 just because the entity is not a traditional FI — crypto-asset service providers face independent registration and reporting.
-- **Do not** advise on FATCA / CRS structuring to reduce reporting (e.g., reorganising to qualify as Active NFE) without explicit escalation — anti-avoidance rules apply, and intermediaries face DAC6 / OECD MDR exposure.
+## Ask the client first
 
-## Section 12 — Disclaimer
+1. Where is each institution/branch/provider resident, established, authorised and reporting, and what are the exact data and filing periods?
+2. What activities, gross-income/asset evidence, manager permissions and group relationships establish FI or a precise Active category?
+3. Who legally/beneficially holds each account, who controls each relevant entity/trust, and where is each person tax-resident?
+4. When was each account opened, what year-end/aggregate values and currencies apply, and what threshold elections/documentation changes are recorded?
+5. What signed self-certifications, AML/KYC evidence, US indicia, GIIN status and reporting acknowledgements exist?
+6. What US-source payments or crypto transactions occurred, what amounts/types, and which withholding, schema, portal and privacy issues remain unresolved?
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. FATCA and CRS classification is fact-specific, strict-liability, and varies between IGA partners and committed CRS jurisdictions. Every output must be reviewed and signed off by a credentialed AEOI specialist before any self-certification, filing, or onboarding decision is made.
+## Reviewer output and completion checklist
+
+The reviewer brief retains all ten original output topics: (1) FI/NFE conclusion and authority; (2) GIIN/registration/branch/sponsor status; (3) precise Active/Passive category and evidence; (4) Financial Account inventory, actual holders, Controlling Persons and full aggregates; (5) account-by-account reportability and local jurisdiction-list basis; (6) self-certification, indicia, cures and due-diligence log; (7) reporting schedule/schema/payload/deadline; (8) payment-specific FATCA withholding exposure; (9) CARF/DAC8 provider/user readiness; and (10) unresolved reviewer questions. Old T1/T2/T3 marks are not accountant approval or substitutes for an explicit non-usable hold.
+
+- [ ] Test all four CRS FI categories and the separately applicable FATCA definition.
+- [ ] Apply both Investment Entity limbs correctly, with at-least-50% and the correct management condition.
+- [ ] Test every potentially applicable Active category: eight under CRS, the actual IGA/regulatory FATCA categories separately.
+- [ ] Identify all relevant controlling persons and trust roles; do not stop at an ownership percentage alone.
+- [ ] Complete required pre-existing-account indicia, paper-record and relationship-manager procedures and document exceptions.
+- [ ] Apply linked-account aggregation and full joint balances to the actual threshold/year.
+- [ ] Use full joint reporting for each reportable holder; do not invent a proportional-ownership exception.
+- [ ] Verify GIIN/documentation status where required; do not infer compliance from its presence.
+- [ ] Match XML/schema, legal fields and portal to the actual authority and submission date.
+- [ ] Plot each local filing, permitted extension, correction and inter-authority exchange date separately.
+- [ ] Determine crypto reporting independently, with actual provider nexus and domestic commencement.
+- [ ] Flag all unresolved questions explicitly for the practitioner before any self-certification, onboarding or filing decision.
+
+Retain the six refusal gates: no unsupported Active classification; no reliance on absence of indicia against actual manager knowledge; no reliance on contradictory self-certification; no undeclared threshold election; no exemption from crypto reporting merely because the provider is not a conventional FI; and no reporting-avoidance structuring advice without specialist escalation and the separate disclosure analysis. These are workflow safeguards, not invented statutory safe harbours.
+
+### Disclaimer
+
+This Guide and its outputs provide general tax/accounting reference, not tax, legal or financial advice for a person's facts. FATCA/CRS classification varies by applicable law, IGA, period and evidence. A qualified practitioner must review and sign off before a self-certification, filing or onboarding decision. Professional names, approvals or statutory culpability cannot be supplied by an AI research pass.
+
+## Sources
+
+**Individual FATCA category reservations:** the original proposed **local FFI**, **qualified credit card issuer**, **limited-life debt funds**, and exempt-beneficial-owner examples of **government entities**, **international organisations**, **central banks** and **treaty-qualified retirement funds** are preserved as specific research questions. Their precise applicable regulatory/IGA category, conditions, certification/registration and current relief have not been established here; each proposed shortcut is **non-usable** until those conditions are verified. A category name alone does not confer deemed-compliant or exempt status.
+
+Actual reads on 16 November 2026 cover the operative scopes below and their stated neighboring conditions, rather than every page of every standard. Ordinary failed/challenge requests are not source reads. Retained official copies and successful official web-body reads were used; model standards are distinguished from enacted local law.
+
+| Official source | Actual operative read scope and limitations | Read on |
+|---|---|---|
+| [EU Directive 2011/16/EU, consolidated 1 January 2026](https://publications.europa.eu/resource/cellar/4328aa6c-1209-11f1-8870-01aa75ed71a1.0002.02/DOC_1) | Read for Articles 8(3a), 8(6) and 8ad; used operative clauses and exceptions in Annex I Sections I–XI, Annex II paragraphs 1–6 and Annex VI Sections I–IV. Official current consolidated XHTML; actual used paragraphs and neighboring exceptions read; not every unrelated Directive article. | 2026-11-16 |
+| [Treasury Model 1A agreement, November 2014](https://home.treasury.gov/system/files/131/FATCA-Reciprocal-Model-1A-Agreement-Preexisting-TIEA-or-DTC-11-30-14.pdf) | Read for Article 1(g)–(l) and (ff) definitions; full Article 2 partner and US reporting. Model text only, not proof of actual national IGA/AnnexII. | 2026-11-16 |
+| [Treasury Model 1 Annex I](https://home.treasury.gov/system/files/131/FATCA-Annex-I-to-Model-1-Agreement-11-30-14.pdf) | Read for Section II.A individual exclusions; Section IV entity thresholds; Section VI.A/B Active NFFE categories and Determination Date. Model threshold/election conditions, not uniform domestic elections. | 2026-11-16 |
+| [IRS Publication 515 (2026)](https://www.irs.gov/publications/p515) | Read for Form list; chapter 4 withholding requirements; documentation and reason-to-know rules; FI/NFFE/IGA definitions. Actual selected complete paragraphs and neighbors read; no blanket full-publication read. | 2026-11-16 |
+| [IRS Form 8966 instructions](https://www.irs.gov/instructions/i8966) | Read for General instructions, purpose, who must file, filing date, extensions and electronic filing. Current official instructions read; no taxpayer account or live filing. | 2026-11-16 |
+| [IRS Form 1042-S instructions (2026)](https://www.irs.gov/instructions/i1042s) | Read for Reliance on proposed regulations and FATCA reporting reminders. Current instructions corroborate permitted proposal reliance, not final enactment. | 2026-11-16 |
+| [IRS GIIN composition](https://www.irs.gov/businesses/corporations/fatca-registration-and-ffi-list-giin-composition-information) | Read for Introductory 19-character rule and complete category/country position table. Official page reviewed5December2025; actual full used composition fields read. | 2026-11-16 |
+| [Official CFR 2025, section 1.1473-1](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol14/pdf/CFR-2025-title26-vol14-sec1-1473-1.pdf) | Read for Section 1.1473-1(a)(1) and (c), read with Model 1 Article 1(ff). Historical annual edition, not falsely labelled live2026eCFR. LiveeCFRchallenge not read. | 2026-11-16 |
+| [Published FATCA proposal, REG-132881-17](https://www.govinfo.gov/content/pkg/FR-2018-12-18/pdf/2018-27290.pdf) | Read for 83 FR 64757: preamble I, II, Reliance on Proposed Regulations and relevant proposed changes. PROPOSED2018rules and permitted reliance explicitly separated from enacted rules. | 2026-11-16 |
+| [HMRC, AEOI financial institutions](https://www.gov.uk/guidance/automatic-exchange-of-information-financial-institutions) | Read for Main guidance: 2026 scope, reporting entity responsibility, group reports and nil returns. Actual main body read; no universal nil exemption. | 2026-11-16 |
+| [HMRC, how to report AEOI](https://www.gov.uk/guidance/how-to-report-automatic-exchange-of-information) | Read for Annual 31 May deadline and separate CRS/FATCA schemas from 2027. Actual main body read, technically optional fields not legal optionality. | 2026-11-16 |
+| [UK SI 2025/740](https://www.legislation.gov.uk/uksi/2025/740/made/data.html) | Read for Regulations 1, 3, 6, 9 and 11–14; substituted regulations 22A–22N, including all penalty conditions and commencement. Actual whole used operative amendment1–248 read. Current law controls superseded2025factsheet. | 2026-11-16 |
+| [Germany, FKAustG](https://www.gesetze-im-internet.de/fkaustg/BJNR253110015.html) | Read for Sections 27(1)–(3) and 28(1)–(3), including all offence branches and their application dates. Current official consolidated German text, complete used sections and neighbors read. | 2026-11-16 |
+| [France, BOI-INT-AEA-20-40](https://bofip.impots.gouv.fr/bofip/10340-PGP.html/identifiant=BOI-INT-AEA-20-40-20200226) | Read for Version 26 February 2020, III.A/B paragraphs 330–355: CRS and separate L.102 AG declarations. Version date disclosed; current-source recency boundary retained, not entire French regime clearance. | 2026-11-16 |
+| [France, FATCA specifications v5.3](https://www.impots.gouv.fr/sites/default/files/media/1_metier/3_partenaire/tiers_declarants/cdc_td_bilateral/cahier-des-charges-fatca-v5.3.pdf) | Read for Cover, version history and printed page 10 calendar for 2026 deposits concerning 2025 income. Only2026campaign for2025income; not2027date. | 2026-11-16 |
+| [IRAS, CRS filing](https://www.iras.gov.sg/taxes/international-tax/common-reporting-standard-%28crs%29/crs-filing) | Read for Annual and nil returns, 31 May deadline, late/non-filing penalty, extension exceptions, portal and XML change. Ordinary direct fetch403; actual successful official web body personally read, not eTaxPDF clearance. | 2026-11-16 |
+| [IRAS, CRS overview and latest developments](https://www.iras.gov.sg/taxes/international-tax/common-reporting-standard-%28crs%29/crs-overview-and-latest-developments) | Read for 2026 amendment publication, substantive commencement on 1 January 2027 and XML version transition. Actual IRAS web body, eTaxPDF403 not read. | 2026-11-16 |
+| [OECD, consolidated CRS (2025)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/04/consolidated-text-of-the-common-reporting-standard-2025_e478bc04/055664b1-en.pdf) | Read for Section VIII.D/E definitions and full Active categories; Commentary on Section I paragraph 13 joint reporting; selected FI and aggregation clauses. 2025CCBY4standard, not domesticlaw. Actual selected clauses only, not whole128pages. | 2026-11-16 |
+| [OECD, CARF commitments, September 2026](https://www.oecd.org/content/dam/oecd/en/networks/global-forum-tax-transparency/commitments-carf.pdf) | Read for Whole one-page list updated 14 September 2026, with first-exchange groups for 2027, 2028 and 2029. Dated political commitments, not proof of national enactment. | 2026-11-16 |
+| [CJEU press release 190/23](https://curia.europa.eu/site/upload/docs/application/pdf/2023-12/cp230190en.pdf) | Read for Headline and opening paragraphs identifying C-457/21 P, Commission v Amazon.com and Others. Only caseidentity correction; no FATCA/GDPR judgment clearance. | 2026-11-16 |
+| [Treasury, FATCA agreements and model list](https://home.treasury.gov/policy-issues/tax-policy/foreign-account-tax-compliance-act) | Read for FATCA introduction and reciprocal Model 1A, non-reciprocal Model 1B and Model 2 listings. Official model type list read, no jurisdiction-count verification. | 2026-11-16 |
+
+Not yet confirmed: actual signed country IGA/Annex II and local elections for a particular institution; live Reportable/Participating Jurisdiction lists and actual activated exchange relationships; current aggregate FATCA/CRS jurisdiction counts; exact registration, certified-deemed-compliant or exempt retirement-fund conditions and responsible-officer certification timetable for the engagement; the former Netherlands mandatory-all-account claim; current Australian filing date/concessions and former AUD 12,500 penalty base; current Swiss FATCA/AEOIA offence-specific sanctions and former CHF 50,000 general figure; current US offence/year-specific penalty amounts replacing the old USD 250 / USD 3,000,000 shorthand; Singapore's former blanket 12-month imprisonment claim; formal national DAC8 transposition/provider filing dates and non-EU CARF domestic commencement; transaction-specific gross-proceeds reliance/foreign-passthru duties and any later final guidance; operative FATCA privacy/GDPR restrictions and judgments. These are non-usable holds, not alternative rates or permissions. The old universal 90-day cure, nine Active categories, 24-month liquidation rule, proportional joint balances, all-foreign-account US Form 8966 claim, blanket strict liability, Amazon-case privacy clearance and universal 2026 amendment commencement have been corrected, not retained as usable alternatives.
