@@ -1,7 +1,7 @@
 ---
 jurisdiction: ML
-version: 0.4
-last_updated: 2026-11-01
+version: 0.5
+last_updated: 2026-11-17
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
@@ -24,7 +24,7 @@ partial:
 
 # Mali tax pack
 
-**Partial source-baseline draft, 1 November 2026. No new current-year coverage is claimed.** The formation, overview, transfer-pricing and cross-border payment/allocation jobs have now been rebuilt as conditional source-reference drafts; independent conditional source review of these latest checkpoints is accepted below. Four ordinary tax Guides now contain conditional 2026 research workpapers reconstructed from identified older sources; their year metadata does not certify operative 2026 law. A new tier-2 CSS draft reconstructs the enacted 2025 rules and two executable examples while the enacted 2026 fiscal annex remains unavailable. Its `tax_year: 2025` and explanatory notes are deliberate. The historical baseline passed independent source review at `03052d5dbd3fc013bb610ce76f70fd13fb40b5d6`; no accountant has attested to it. The mandatory 2026 hold remains. This does not complete [issue #471](https://github.com/openaccountants/openaccountants/issues/471).
+**Partial source-baseline draft, updated 17 November 2026. No new current-year coverage is claimed.** The formation, overview, transfer-pricing and cross-border payment/allocation jobs have now been rebuilt as conditional source-reference drafts; independent conditional source review of these latest checkpoints is accepted below. Four ordinary tax Guides now contain conditional 2026 research workpapers reconstructed from identified older sources; their year metadata does not certify operative 2026 law. The tier-2 CSS computation draft reconstructs the enacted 2025 rules and preserves two executable diagnostic cases while the enacted 2026 fiscal annex remains unavailable. It retains `tax_year: 2025`; the explicit 2025-2026 filing-cycle label identifies the research workpaper, not a statutory fiscal year or verified 2026 law. The historical baseline passed independent source review at `03052d5dbd3fc013bb610ce76f70fd13fb40b5d6`; the new input, dependency and output holds do not extend that acceptance. No accountant has attested to it. The mandatory 2026 hold remains. This does not complete [issue #471](https://github.com/openaccountants/openaccountants/issues/471).
 
 | Domain | Guide | Actual status |
 |---|---|---|
@@ -47,7 +47,7 @@ The writer read the complete Ordonnance 2025-007 in SGG gazette pages 89–91 an
 
 The writer also read enacted 2026 finance-law articles 1 and 46. Article 46 refers to fiscal Annex U, which is not printed in the retrieved gazette. A focused search of the official DGI, ministry and SGG sources did not obtain the enacted annex. The ministry's accessible 2026 publication is labelled **Projet de loi de Finances 2026**, dated 2 October 2025, and links `PLF 2026_CNT_v_26-09-2025.pdf`. That proposed bill and the proposed rectifying bill supply no enacted tax figures here. Generic 2026 collection permission and the absence of a sunset in the 2025 ordinance do not establish an unchanged 2026 rate.
 
-The missing enacted Annex U and any relevant later amendment block current-year approval and publication. CSS form identifiers and boxes, authenticated filing/payment/confirmation steps, detailed VAT tax points, exemption/conventions, cross-border treatment, unpaid deduction timing, late-payment interest and wider sanction interaction also remain unconfirmed. All seven core domains remain applicable and partial; none is declared inapplicable. TP and XB now have limited conditional workpapers, with their wider current-law gaps held below.
+The missing enacted Annex U and any relevant later amendment block current-law clearance, liability and filing instructions. Publishing a held research draft through the repository process does not close that gate. The complete operative chain for an actual 2025 period also remains unproved. CSS form identifiers and boxes, authenticated filing/payment/confirmation steps, detailed VAT tax points, exemption/conventions, cross-border treatment, unpaid deduction timing, late-payment interest and wider sanction interaction also remain unconfirmed. The corporate and VAT siblings retain their own holds and cannot supply current classification or timing clearance. All seven core domains remain applicable and partial; none is declared inapplicable. TP and XB now have limited conditional workpapers, with their wider current-law gaps held below.
 
 ## Next action
 

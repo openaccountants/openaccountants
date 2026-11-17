@@ -1,30 +1,42 @@
 ---
 name: ml-solidarity-contribution
 description: >
-  Mali Contribution spéciale de Solidarité, enacted 2025 source baseline held for 2026 verification: prepare a monthly turnover-based CSS working paper for an enterprise subject to industrial and commercial profits tax or corporate income tax. Use this Guide for the separate solidarity contribution, the tax-exclusive turnover base, loss-making businesses, the deduction of CSS paid, monthly reporting and the distinct late-declaration and incorrect-declaration penalty branches. It uses the enacted 2025 ordinance and ratification law rather than a proposed finance bill. It includes two executable cases. Current form boxes, authenticated filing steps, exemption conventions and complex VAT tax points remain outside this limited draft; no accountant has attested to it.
+  Mali Contribution spéciale de Solidarité: latest available enacted 2025 source baseline for a held 2025-2026 filing-cycle research workpaper. Reconstruct the ordinary domestic monthly turnover computation for an enterprise whose IBIC/IS status and VAT tax points are independently established. Distinguish turnover from profit, CSS paid from unpaid accruals, and notice-dependent late-declaration penalties from inaccurate or missing returns. Two diagnostic cases test the baseline. The enacted 2026 fiscal Annex U and later amendment chain remain unconfirmed; this Guide cannot determine an actual 2026 liability or filing. Current forms, exemption conventions and complex VAT tax points remain held. No accountant has attested to it.
 jurisdiction: ML
 category: international
 tax_year: 2025
-tax_year_notes: "Enacted 2025 source baseline only; 2026 application is unverified pending enacted fiscal Annex U and later-amendment checks."
-last_updated: 2026-11-01
-version: 0.2
+tax_year_notes: "2025-2026 filing cycle, latest available enacted 2025 source baseline only; not a fiscal-year period or verified 2026 law. Enacted 2026 Annex U and later amendments remain unconfirmed."
+type: computation
+last_updated: 2026-11-17
+version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 ---
 
-# Mali solidarity contribution source-baseline draft v0.2
+# Mali solidarity contribution: held 2025-2026 filing-cycle workpaper v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**2026 application is unverified.** The enacted 2025 ordinance and its ratification are the source baseline reconstructed below. The enacted 2026 fiscal Annex U has not been obtained. Do not use this draft to state the 2026 rate, compute a client's 2026 liability or instruct a 2026 filing until that amendment check is complete. The examples test the ordinance baseline only; they do not confirm continuation. `tax_year: 2025` marks this draft as historical; it is not proof that a retrieval or publication system will enforce that limit.
+**Latest available enacted 2025 baseline; 2026 application is unverified.** The 2025-2026 filing-cycle label identifies this research workpaper, not a statutory fiscal year or confirmation of a 2026 enactment. The enacted 2025 ordinance and its ratification are reconstructed below. Enacted 2026 fiscal Annex U and the complete later amendment chain have not been obtained and reconciled. Do not use this draft to state the 2026 rate, compute a client's 2026 liability or instruct a 2026 filing. It also does not establish the complete operative chain for an actual 2025 period. The examples test the ordinance baseline only; they do not confirm continuation. Neither metadata nor the filing-cycle label is a technical retrieval or publication safeguard.
 
 ## Who this applies to
+
+**Required inputs before calculation.** Record the intended period and purpose, evidence of IBIC/IS classification, ordinary domestic turnover excluding tax, independently established VAT tax points, special-regime or convention documents, CSS declarations and payment evidence, and any formal notice with its service date. Missing applicability or timing evidence means stop at a document request; do not substitute a neighbouring Guide's held figures.
+
+**Answer for the diagnostic cases.** Under the identified ordinance baseline only, ordinary supported turnover is multiplied by **0.005**; a business loss does not reduce that turnover base. CSS **paid** has a separate profit-tax deduction. Article 8 selects a penalty branch from the actual declaration and notice facts. These are the source rules reconstructed below, not cleared current filing instructions. [Ordonnance arts. 2–8](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 
 Under the enacted 2025 baseline, the CSS working paper concerns an enterprise subject to **impôt sur les bénéfices industriels et commerciaux (IBIC)** or **impôt sur les sociétés (IS)**. The enterprise is both the real and legal debtor. This is a turnover contribution, not a percentage of taxable profit. A loss does not remove turnover from the base. [Ordonnance 2025-007/PT-RM arts. 1–4](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 
 The job covers ordinary domestic turnover whose VAT tax point is already established. Do not infer a CSS exemption merely because a transaction is exempt from VAT: article 2 sets a turnover base while articles 5 and 7 refer to VAT timing and procedures. A convention, tax holiday, synthetic regime, export or uncertain territorial position needs a separate applicability check before computation. This draft does not resolve those cases. [Ordonnance arts. 2–3, 5, 7](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 
 **Enacted source and duration.** The ordinance is dated 7 February 2025 and published in the official gazette; Loi 2025-022 of 12 June 2025 ratifies it without changing the text. The CSS operative chapter, articles 1–9, and final article 20 set no fixed term, sunset or delayed commencement. The 2026 finance law authorises collection under the laws in force; it is not the source of the CSS rate. This source-baseline draft, held for 2026 verification, does not determine the first partial 2025 period or claim that an unread fiscal annex contains no amendments. [Ordonnance arts. 1–9](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10), [final art. 20](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=11); [Loi 2025-022, article unique](https://sgg-mali.ml/JO/2025/mali-jo-2025-18.pdf#page=12); [Loi 2025-056, art. 1](https://sgg-mali.ml/JO/2025/mali-jo-2025-33-5.pdf#page=4).
+
+| Facts encountered | Permitted workpaper result or stop condition | Source boundary |
+|---|---|---|
+| Hypothetical ordinary domestic turnover, stipulated IBIC/IS status and established VAT tax points | Recompute the identified baseline and label the result historical and diagnostic | [Ordonnance arts. 2–5](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
+| Actual period with an incomplete operative amendment chain, including a 2026 request | Hold liability and filing output; report the missing authority instead of assuming continuation | [Loi 2025-056 arts. 1, 46](https://sgg-mali.ml/JO/2025/mali-jo-2025-33-5.pdf#page=11); article 46 names unread Annex U |
+| VAT exemption, synthetic regime, tax holiday, export, convention or uncertain territory | Hold applicability; VAT timing/procedure references do not decide CSS relief | [Ordonnance arts. 2–3, 5, 7](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
+| Unpaid CSS accrual, disputed tax point, post-notice non-filing or overlapping sanctions | Hold the unresolved deduction, period or sanction interaction; preserve the evidence for review | [Ordonnance arts. 5–6, 8–9](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10) |
 
 ## Rates, bands and thresholds
 
@@ -43,10 +55,14 @@ No separate turnover registration threshold appears in articles 2–4. Establish
 
 ## The base
 
+**Gate the output first.** For an actual taxpayer period, obtain and reconcile the operative CSS amendment chain and the relevant IBIC/IS and VAT dependencies before producing a liability or filing instruction. [Corporate income tax](ml-corporate-income-tax.md) and [VAT](ml-vat-gst.md) are document-routing aids with their own currentness holds; neither closes this gate. Until then, the steps below produce only a historical baseline diagnostic from stipulated facts.
+
 1. Obtain the enterprise's tax classification, monthly sales ledger, invoices/credit notes and the evidence establishing the relevant VAT tax points. Reconcile the ordinary domestic tax-exclusive turnover assigned to the month. The ordinance sets a tax-exclusive turnover base and borrows VAT tax-point rules; it does not replace turnover with the accounting result. [Ordonnance arts. 2–5](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 2. Multiply that supported turnover by **0.005**. The calculation has no profit deduction or general expense deduction in its base. Expense and loss figures are relevant to the profit-tax computation, not a reduction to CSS turnover. [Ordonnance arts. 2, 4](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 3. Record the amount of CSS **paid** as deductible in determining IBIC/IS profit under article 6. Reconcile payment evidence and prevent a duplicate deduction if it is already included in the accounts. The statute speaks of the amount paid; do not extend this Guide's conclusion to an unpaid accrual. It does not create a CSS input-tax credit. [Ordonnance art. 6](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 4. Produce a working paper showing taxpayer identity and classification, period, turnover reconciliation, tax-point support, CSS due, payment evidence and any notice/late-filing computation. These are working-paper labels, not invented official form box numbers. The declaration must use the administration's prescribed form. [Ordonnance arts. 5, 7–8](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
+
+Keep three outputs distinct: the baseline turnover/CSS schedule; the separately supported CSS-paid profit-tax adjustment; and any notice-dependent penalty diagnostic. Mark each **HOLD for actual liability and filing** while its operative law or factual dependency is unresolved. A computation that recomputes successfully is not evidence that the source rule applies to the requested period.
 
 ## Deadlines and filing
 
@@ -74,6 +90,8 @@ The ordinance's CSS base is business turnover, while article 7 refers to domesti
 The ordinance's alcohol contribution is a separate chapter and job. Its scope, exemptions and volume-based calculation are not imported into CSS. [Ordonnance chapters I–II](https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf#page=10).
 
 ## Two worked examples that recompute
+
+Both cases are hypothetical diagnostics of the enacted 2025 ordinance. Their original facts and executable blocks are preserved. Neither closes the period, amendment, form or filing holds above.
 
 **A business loss does not erase CSS.** Assume a hypothetical IBIC/IS enterprise's supported domestic monthly turnover excluding tax is XOF 20 million, all assigned to that month under the established VAT tax points. Other business expenses are XOF 25 million. CSS is XOF 100,000 despite the XOF 5 million loss before CSS. If that CSS is paid, article 6 permits its deduction in determining the profit-tax result, making the case's result a XOF 5.1 million loss before any other tax adjustments. This does not calculate the enterprise's separate minimum profit tax.
 
@@ -133,4 +151,4 @@ expected:
 | [DGI CSS announcement](https://www.dgi.gouv.ml/institution-de-taxes-et-prelevements-divers-au-profit-du-budget-detat/) | Announcement and link to the ordinance, including rate/base. Used as corroboration, not to replace the gazette. | 2026-11-01 |
 | [DGI digital-services explanation, 3 August 2026](https://www.dgi.gouv.ml/semaine-du-numerique-au-mali-la-dgi-sacree-meilleure-administration-digitalisee/) | E-Impôt declaration/payment and E-Liasses explanation; no authenticated CSS session or form read. | 2026-11-01 |
 
-Not yet confirmed: enacted 2026 fiscal Annex U and any specific later amendment affecting this ordinary CSS computation; precise first liable partial period in 2025; current CSS form identifiers/boxes and authenticated filing/payment/confirmation workflow; detailed VAT tax points for a particular transaction; exemption/convention and cross-border treatment; deduction timing of unpaid CSS; additional late-payment interest, general minimum-penalty interaction and sanction cumulation. The ministry's proposed 2026/rectifying bills are not used as enacted law. The preparation result must stop at any unresolved item that changes it. The 2026 source gap blocks current-year approval or publication. Independent review accepted the historical source baseline only; no accountant has attested to this draft.
+Not yet confirmed: enacted 2026 fiscal Annex U and the complete later amendment chain affecting this ordinary CSS computation; precise first liable partial period and complete operative chain for an actual 2025 period; current IBIC/IS classification and VAT tax-point dependencies; current CSS form identifiers/boxes and authenticated filing/payment/confirmation workflow; detailed VAT tax points for a particular transaction; exemption/convention and cross-border treatment; deduction timing of unpaid CSS; additional late-payment interest, general minimum-penalty interaction and sanction cumulation. The 2025-2026 filing-cycle label uses the latest available enacted 2025 baseline and does not establish unchanged 2026 law. The ministry's proposed 2026/rectifying bills are not used as enacted law. The preparation result must stop at any unresolved item that changes it. Publication of this held research draft, if approved through the repository process, is not current-law clearance. Independent review accepted the historical source baseline only; no accountant has attested to this draft.
