@@ -2,10 +2,10 @@
 name: km-electronic-filing-and-tax-procedure
 description: >
   Comoros (Union of the Comoros) electronic filing and payment (tele-procedures, LPF L.10 bis to L.10 undecies) and selected enforcement rules for tax year 2026, from Finance Law 2026 (Law 25-020/AU), the Amending Finance Law 2024 and the 2023 General Tax Code. Distinguishes the enacted framework from the Director General's decisions and the ministerial order still needed for rollout; explains when an e-return counts as filed and an e-payment as made, authentication and electronic mandates, outages, the eight-working-day electronic answer to an information request, the KMF 100,000 fine and KMF 50,000 per day penalty for obstructing the right of communication, the fiscal-flagrance report with its fifteen-day challenge period, bank reporting of business accounts, the beneficial-owner register, on-site audit length, late-payment interest (10% a month, capped at 50%) and the other charges enacted for 2026. Use for questions such as: is e-filing mandatory in Comoros, when is an electronic tax payment treated as made, what is the penalty for not answering a tax information request. Not reviewed by an accountant.
-version: 0.4
+version: 0.5
 jurisdiction: KM
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-17
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -35,7 +35,7 @@ This skill does not replace the full appeals and penalty regime. No live filing,
 | Bank and microfinance reporting of business accounts (L.46 bis, 2026) | Within thirty days of opening the account | 2026 | same |
 | On-site audit length (L.42 as amended in 2024) | Three months for sole traders, six months for companies; plus three months for a company under the L.21 bis documentation duty or where a treaty information request is sent abroad | 2026 (Amending Finance Law 2024; no later change found) | https://finances.gouv.km/wp-content/uploads/2024/12/LOI-DE-FINANCES-RECTIFICATIVES-2024.pdf |
 | Late-payment interest (L.115) | 10% per month of delay, capped at 50% of the principal debt ("10 % par mois de retard, plafonné à 50 %") | 2026 (2023 code; no change found in the laws read) | https://justice.gouv.km/wp-content/uploads/2025/03/comores-cgi-2023.pdf |
-| Interest on a reassessment (L.96, L.99) | 10% per month, capped at 50% of the principal debt | 2026 (same) | same |
+| Interest on a reassessment (L.96, L.99) | 10% per month (a month being 30 working days under L.96), capped at 50% of the principal debt | 2026 (same) | same |
 | Surcharges on a reassessment (L.97) | 50% good faith, 100% bad faith, 150% fraudulent manoeuvres | 2026 (same) | same |
 | Assessment after a formal notice to file (L.98) | Surcharge of 100%, 150% for a repeat | 2026 (same) | same |
 | Late nil return after formal notice (L.100) | Fixed fine KMF 10,000 ("10.000 KMF") | 2026 (same) | same |
@@ -93,7 +93,7 @@ L.10 nonies links failure to use mandatory electronic procedures to the code's p
 
 Amended L.113 specifies **KMF 100,000** for attempting to evade or obstruct the right of communication or third-party collection notice, and a **KMF 50,000 per-day** coercive amount for the stated delaying conduct, with distinct timing language. The 2023 code amounts were KMF 20,000 and KMF 10,000 a day. Those are specific enforcement provisions; do not treat them as the automatic penalty for every late tax return. [Page 14](https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf).
 
-General rules in the 2023 code, not amended by the laws read: late payment carries interest of 10% per month, capped at 50% of the principal. It runs from the first day of the month after receipt of a collection notice, from the day after the legal filing date (every month begun counting as a whole month), or from the day after the legal due date, to the last day of the month of payment (L.115). Reassessments carry the same 10% a month, capped at 50% (L.96, L.99), plus surcharges of 50%, 100% or 150% (L.97). Assessment after an unanswered formal notice to file carries a 100% surcharge, 150% on a repeat (L.98). Not filing a nil return after formal notice costs KMF 10,000 (L.100). [2023 code, L.95 to L.115](https://justice.gouv.km/wp-content/uploads/2025/03/comores-cgi-2023.pdf).
+General rules in the 2023 code, not amended by the laws read: late payment carries interest of 10% per month, capped at 50% of the principal. It runs from the first day of the month after receipt of a collection notice, from the day after the legal filing date (every month begun counting as a whole month), or from the day after the legal due date, to the last day of the month of payment (L.115). Reassessments carry the same 10% a month (a month being 30 working days under L.96), capped at 50% (L.96, L.99), plus surcharges of 50%, 100% or 150% (L.97). Assessment after an unanswered formal notice to file carries a 100% surcharge, 150% on a repeat (L.98). Not filing a nil return after formal notice costs KMF 10,000 (L.100). Late provisional instalments under CGI article 38 have a separate rule: 10% per month of delay on the provisional third, with no 50% cap stated in L.115 bis. [2023 code, L.95 to L.115 bis](https://justice.gouv.km/wp-content/uploads/2025/03/comores-cgi-2023.pdf).
 
 ### Fiscal flagrance and response
 

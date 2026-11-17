@@ -2,10 +2,10 @@
 name: km-registration-and-tax-clearance
 description: >
   Comoros (Union of the Comoros) tax registration and tax clearance documents for tax year 2026, from Finance Law 2026 (Law 25-020/AU), the Amending Finance Law 2024 (Law 24-013/AU) and the 2023 General Tax Code. Covers the fifteen-day registration request after starting activity (LPF L.1, including operators of electronic platforms), the earlier declaration before starting operations and its KMF 500,000 fine (CGI art. 42 bis), the contents of the registration request and the NIF (L.2, L.3), the ten-day notice on sale or closure, the quitus fiscal (one month) and the attestation de regularite fiscale (three calendar months), who must ask for the attestation, and the 15% customs withholding on an importer without one. Use for questions such as: when must a new business in Comoros register for tax, what is a quitus fiscal, how long is a tax clearance certificate valid, what happens at customs without the attestation. Out of scope: company formation, tax rates, Mayotte. Not reviewed by an accountant.
-version: 0.4
+version: 0.5
 jurisdiction: KM
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-17
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -152,7 +152,7 @@ expected:
   withheld: 1500000
 ```
 
-A decision, worked both ways: a trader with turnover of KMF 40,000,000 has not registered and has no NIF. Under L.102 the minimum collection is 5% of turnover, KMF 2,000,000, and it cannot import, bid or borrow. Registering costs at most the KMF 20,000 L.101 fine for the late request (plus the KMF 500,000 art. 42 bis fine if no declaration was made before starting). The difference is KMF 1,980,000 against the L.101 fine alone, before any income tax on actual profit. On these facts registering is far cheaper, and it also lifts the import, tender and credit bans.
+A decision, worked both ways: a trader with turnover of KMF 40,000,000 has not registered and has no NIF. Under L.102 the minimum collection is 5% of turnover, KMF 2,000,000, and it cannot import, bid or borrow. The L.101 fine for a late registration request is KMF 20,000; the KMF 500,000 art. 42 bis fine also applies if no declaration was made before starting. The arithmetic difference between the minimum collection and the L.101 fine alone is KMF 1,980,000, before any income tax on actual profit. This is a forward-looking comparison of the stated amounts, not a saving on liabilities already incurred: nothing in the provisions read says that registering removes the L.102 or L.114 consequences for the earlier period without a NIF. Registration addresses the NIF requirement for future imports, tenders and credit applications; it does not establish that every existing restriction is lifted.
 
 ```oa-check
 name: No NIF against late registration
