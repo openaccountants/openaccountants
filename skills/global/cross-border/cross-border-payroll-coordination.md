@@ -1,393 +1,326 @@
 ---
 name: cross-border-payroll-coordination
-description: "Cross-border payroll compliance for companies with employees or contractors in multiple countries. Use when the user asks about: cross-border payroll, remote worker payroll, shadow payroll, hypothetical tax, employer of record, EOR, 183-day rule, economic employer, PE risk from employees, A1 certificate, social security certificate, bilateral social security, posted worker, business traveler tax, contractor vs employee cross-border, misclassification, equity compensation cross-border, RSU cross-border, stock options international, payroll obligations foreign employee, remote worker abroad, digital nomad payroll, cross-border withholding, or any question about payroll compliance when workers cross borders."
-version: 1.0
+description: "Coordinate cross-border employment tax, payroll collection, social security, contractor status and equity awards using actual treaty conditions, 2026 EU application dates, preserved cases and explicit national limits."
+version: 1.1
 jurisdiction: INTL
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-16
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 status: needs_sources
-domain: cross-border
+domain: tax
+type: situation-rules
 ---
 
-# Cross Border Payroll Coordination
+# Cross-border payroll coordination
 
-## Cross-Border Payroll Coordination
+Use the worker's actual location, employment facts and applicable treaty or coordination instrument to decide each obligation separately. A short visit, foreign payroll or contractor label does not establish an exemption.
 
-> **Disclaimer:** This skill provides general guidance on cross-border payroll obligations. Employment law, tax, and social security rules are jurisdiction-specific and change frequently. Consult qualified employment tax and legal advisors before acting on this information.
+## Who this applies to
 
-## Skill Metadata
+For employers, employees, self-employed people and advisers planning remote work, assignments, business travel, shadow payroll or cross-border equity awards. The jurisdictions retained here are the EU, UK, US, Australia, India, Singapore and the individual country examples below. Contributor: OpenAccountants. This is a source-cited draft, not an accountant attestation.
 
-**Skill Metadata**
+The former May 2026 validation and 2025 tax-year label did not establish current law. This revision distinguishes sources actually read, historical consolidations with a current amendment overlay, model provisions and individually unresolved national execution rules. Do not treat a model as the actual treaty.
 
-| Field | Value |
-| --- | --- |
-| Jurisdiction | Multi-jurisdiction (EU, UK, US, Australia, India, Singapore, and general principles) |
-| Primary Legislation | OECD Model Tax Convention Art 15; EU Regulation 883/2004 (social security coordination); country-specific employment and tax laws |
-| Scope | Payroll tax, social security, and employment law obligations when employees or contractors work across borders |
-| Contributor | OpenAccountants |
-| Validation Date | May 2026 |
-| Skill Version | 1.0 |
-| Cross-references | `non-eu-export-services.md`, `permanent-establishment-risk.md`, country-specific payroll skills |
+| Obligation | Decision to make |
+|---|---|
+| Employment income tax | Identify residence, actual work state, remuneration, domestic charge and the actual treaty's employment article and exceptions. Taxing rights and the employer's collection procedure are separate questions. [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf) [UK–Germany treaty, consolidated after2021Protocol](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) |
+| Social security | Identify personal/material scope and the competent system; use the actual posting, multistate or bilateral conditions. An income-tax day count does not decide coverage. [Regulation883/2004,31July2019consolidation](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1) [Regulation987/2009,1January2018consolidation](https://publications.europa.eu/resource/cellar/00185d05-a69f-4055-8a8e-341c14c29d50.0020.02/DOC_1) [US–Portugal SocialSecurityAgreement](https://www.ssa.gov/international/Agreement_Texts/portugal.html) |
+| Employment protection | Identify applicable law and mandatory host protections. Choosing a foreign law cannot necessarily remove habitual-work protections. The UK retained Rome I Article 8 is a bounded example, not a worldwide conflict rule. [UK-retained RomeI Article8](https://www.legislation.gov.uk/eur/2008/593/article/8/data.html) |
+| Employer corporate tax | Assess fixed-place, dependent-agent and any actual service/construction clause independently. A payroll registration or EOR arrangement is not a universal PE exemption. [UK–Germany treaty, consolidated after2021Protocol](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) |
 
-## Section 1: When Does a Foreign Employee Create Payroll Obligations?
+## Rates, bands and thresholds
 
-### The Core Question [T1]
+| Figure | Operative boundary |
+|---|---|
+| 183 days | OECD Model Article 15(2) uses **not exceeding** 183 days in any twelve-month period commencing or ending in the fiscal year; all three conditions must hold. Actual treaty wording controls. UK–Germany uses Article **14**, not Article 15. [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf) [UK–Germany treaty, consolidated after2021Protocol](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) |
+| 24 months | Current EU Article 12 posting requires the stated anticipated period, the employer's normal activity and no replacement of another posted person; self-employment has its own similar-activity test. It is not an automatically renewable A1 term. [Regulation883/2004,31July2019consolidation](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1) |
+| Less than 25% | Under implementing Article 14(8), this is an **indicator** that a substantial part is not performed in the state, within an overall assessment. It is not an isolated automatic residence-country switch. [Regulation987/2009,1January2018consolidation](https://publications.europa.eu/resource/cellar/00185d05-a69f-4055-8a8e-341c14c29d50.0020.02/DOC_1) |
+| Less than 50% | The 2023 telework Framework is an Article 16 exception **on request**, with eligible signatory states and the other conditions below. Exactly 50% is outside that Framework route. [2023Framework Agreement on cross-border telework](https://socialsecurity.belgium.be/sites/default/files/content/docs/en/international/framework_agreement_on_cross-border_telework.pdf) |
+| 1 November 2026 / 2 November 2028 | Regulation 2026/2359 entered into force on the former date; listed attestation changes apply then, but the revised posting and business-trip notification provisions identified below apply from the latter date. [Regulation(EU)2026/2359, enacted English body](https://publications.europa.eu/resource/cellar/5794f71b-d1a7-11f1-9458-01aa75ed71a1.0006.03/DOC_1) |
 
-If your company is in Country A and you hire someone who works in Country B, you may owe:
+## The base
 
-**Obligations triggered table**
+### Step 1: choose an employment arrangement after checking the obligations
 
-| Obligation | Triggered by |
-| --- | --- |
-| **Income tax withholding** in Country B | Employee performing work in Country B (subject to treaty exemptions) |
-| **Social security contributions** in Country B | Employee working in Country B (subject to A1/bilateral agreements) |
-| **Employment law compliance** in Country B | Employment relationship with a person habitually working in Country B |
-| **Corporate tax (PE risk)** in Country B | Employee's activities may create a permanent establishment for the employer |
+| Arrangement | What to document |
+|---|---|
+| Local subsidiary or branch | Identify the actual employer, local payroll/registration and who bears remuneration. A subsidiary's existence or group control alone does not create its parent's PE under UK–Germany Article 5(7). [UK–Germany treaty, consolidated after2021Protocol](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) |
+| Employer of Record | Identify the licensed/legal employer, supervision, employment protections, payroll collection, social coverage and contractual allocation of duties. Do not assume outsourcing removes the end user's treaty-employer or PE analysis. [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf) [UK–Germany treaty, consolidated after2021Protocol](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) |
+| Direct employment without a local entity | Check whether foreign-employer registration, withholding, reporting and representation are required or available in the work state. Short duration or a single worker is not clearance. This Guide does not verify every national registration route. |
 
-### Three Approaches to Employing Abroad [T1]
+The former EOR **1–10 employee** recommendation and **USD 300–700 per employee/month** range are not verified current market facts or legal thresholds. They remain individually non-usable in Sources. A commercial quote must cover the actual services and local licensing conditions.
 
-**Three approaches table**
+For PE risk, an actual fixed place and the business carried on through it require analysis; employer consent to a home office alone is insufficient. Dependent-agent provisions require their actual contracting conditions. Preparatory/auxiliary exceptions have their own scope and anti-fragmentation conditions. There is no universal **more-than-six-month** employee/project safe harbour or PE trigger: the read UK–Germany treaty, for example, uses **more than twelve months** for a building site/construction or installation project. Use `permanent-establishment-risk` for the fuller analysis. [UK–Germany treaty, consolidated after2021Protocol](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force)
 
-| Approach | How It Works | When to Use |
-| --- | --- | --- |
-| **Set up a local entity** | Establish a subsidiary or branch in Country B. Full local payroll. | Long-term, multiple employees, need full legal presence |
-| **Employer of Record (EOR)** | Third-party company becomes the legal employer in Country B. You manage the work; EOR handles payroll, tax, social security. | 1–10 employees, speed, no local entity desired. Cost: $300–$700/employee/month. |
-| **Direct employment (no local entity)** | You employ the person from Country A. Run payroll from Country A + shadow payroll or local registration in Country B. | Single employee, short-term. High compliance risk — not recommended without expert advice. |
+### Step 2: plan remote work before it starts
 
-### PE Risk from Employees [T2]
+| Original scenario | Required analysis |
+|---|---|
+| Short stay, originally “under 183 days” | Check all actual treaty conditions, domestic collection relief, social coverage and employment/immigration rules. A visit of even a few days can fail the nonresident-employer limb; social-security documentation has a different test. [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf) [Regulation883/2004,31July2019consolidation](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1) |
+| Longer stay or failed treaty condition | Identify the host-attributable remuneration and domestic tax/withholding procedure. Do not tax all worldwide salary merely because one exemption condition fails. [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf) [UK–Germany treaty, consolidated after2021Protocol](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) |
+| Permanent relocation | Revisit residence, ordinary work-state coverage, payroll, contract and mandatory employment protections. Home payroll continuing is not proof that home law continues. [Regulation883/2004,31July2019consolidation](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1) [UK-retained RomeI Article8](https://www.legislation.gov.uk/eur/2008/593/article/8/data.html) |
+| Digital nomad / moving among states | Record physical presence and workdays separately, each employer, residence and changes in activity. Obtain the appropriate multistate determination rather than selecting a convenient system. [Regulation883/2004,31July2019consolidation](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1) [Regulation987/2009,1January2018consolidation](https://publications.europa.eu/resource/cellar/00185d05-a69f-4055-8a8e-341c14c29d50.0020.02/DOC_1) |
 
-An employee working in Country B can create a **permanent establishment** for the employer, triggering corporate tax in Country B:
+Before work begins, record the locations, dates and expected pattern; review PE, actual treaty, social-security coverage, immigration/work permission and host employment protections. During the arrangement, maintain travel/work records, pursue the competent institution's documents, reconcile payroll records and reassess changed facts. This is an internal control checklist, not a list of already verified national filing deadlines.
 
-**PE trigger table**
+An employer may impose approved/prohibited-country lists or a **30–90 day** internal limit. Neither that range nor any private approval policy is a statutory exemption from tax, social security, immigration or employment law. The original numerical policy range is retained only as an illustrative employer choice.
 
-| PE Trigger | Risk Level |
-| --- | --- |
-| Employee has authority to conclude contracts on behalf of employer | **High** — "dependent agent" PE under OECD Art 5(5) |
-| Employee works from a fixed location (home office) regularly | **Medium** — "fixed place of business" PE if employer consents to arrangement |
-| Employee performs auxiliary activities only (e.g., market research) | **Low** — typically excluded under Art 5(4) |
-| Employee works from Country B for >6 months on a project | **High** — construction/service PE threshold in many treaties |
+### Step 3: apply the actual employment treaty
 
-## Section 2: Remote Worker Scenarios
+Under OECD Model Article 15(1), subject to the special articles for directors, pensions and government service, remuneration for employment exercised in the other state may be taxed there. Article 15(2) retains exclusive residence-state taxation only if **all** of these hold: (a) physical presence does not exceed 183 days in the specified twelve-month period; (b) remuneration is paid by/on behalf of an employer not resident in the work state; and (c) it is not borne by the employer's PE there. The model has a distinct international ship/aircraft crew paragraph. Verify the actual instrument before applying any of these provisions. [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf)
 
-### Employee in Country B, Employer in Country A [T1]
+Failure of one limb removes this particular exemption for the remuneration within the actual work-state taxing rule, potentially from the first relevant workday. It does **not** itself create a domestic charge, a universal withholding deadline or tax all salary unrelated to that work. Older actual treaties may use a calendar/fiscal year instead of the model's rolling period. [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf)
 
-**Remote worker scenarios table**
+The model Commentary uses physical presence, including parts of days, arrival/departure, weekends, holidays and generally sickness; it excludes transit between two outside points and addresses sickness that prevents leaving when the person otherwise qualified. Days wholly outside are not counted, and the residence-change qualification must be considered. Keep a separate service-day record for remuneration allocation. Do not interchange those two clocks. [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf)
 
-| Scenario | Tax Obligation | Social Security | Action Required |
-| --- | --- | --- | --- |
-| Short-term (<183 days, treaty conditions met) | Likely exempt from Country B tax | Country A (with A1/certificate) | Obtain social security certificate. Monitor day count. |
-| Long-term (>183 days or treaty conditions not met) | Country B income tax withholding required | Country B (unless A1 applies) | Register for payroll in Country B or use EOR. Shadow payroll may be needed. |
-| Permanent relocation to Country B | Full Country B tax and employment law | Country B | Establish local payroll. Update employment contract. |
-| Digital nomad (moves between countries) | Depends on days in each country | Complex — may require multi-state determination | Track workdays meticulously. Assess each country's rules. |
+### Step 4: identify the substantive employer and collection procedure
 
-### Practical Checklist for Remote Workers Abroad [T1]
+The employment Commentary considers the domestic-law employment concept within treaty limits, the integral nature of services and who bears responsibility/risk. Relevant facts include authority over work, workplace control, tools, personnel selection, discipline and working arrangements. A state cannot arbitrarily deem every genuine inter-business service contract to be employment. Direct salary recharge is a relevant factor but **not necessarily conclusive**; a genuine service fee with salary as one of many cost inputs is not automatically a direct recharge. [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf)
 
-1. **Before the employee starts working from Country B:**
-   - Assess PE risk in Country B
-   - Check tax treaty between Country A and Country B
-   - Determine social security obligations (A1 if EU/EEA)
-   - Review immigration/work permit requirements
-   - Check Country B employment law implications (minimum wage, termination rules, benefits)
+Do not equate a charge to a German **subsidiary** with remuneration borne by the foreign employer's **PE**. The actual economic-employer limb and the separate PE-cost limb must each be tested. The original Germany, Sweden, Denmark, Norway, Finland, UK, Australia, India and Singapore list is not verified as a uniform 2026 national adoption matrix; its unverified jurisdiction-specific positions are individually held in Sources. [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf) [UK–Germany treaty, consolidated after2021Protocol](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force)
 
-2. **During the arrangement:**
-   - Track workdays in each country (use timesheets or travel records)
-   - File required social security certificates
-   - Run shadow payroll if needed (see Section 4)
+| Original travel band | What the band can establish |
+|---|---|
+| 1–30 days/year | A tracking band only; no general exemption. |
+| 31–60 days/year | A tracking band only; identify any actual de minimis/collection arrangement separately. |
+| 61–90 days/year | A tracking band only; duration does not itself require or excuse shadow payroll. |
+| 91–183 days/year | Still requires every actual treaty condition; exactly 183 is not the same as exceeding 183. |
+| More than 183 days/year | Test the treaty's actual measuring period, not merely a calendar-year total. Where the relevant limit is exceeded, this short-stay exemption is unavailable. [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf) |
 
-3. **Common employer policies:**
-   - Many companies limit remote work abroad to 30–90 days/year to avoid triggering obligations
-   - Some companies maintain a list of "approved" vs "prohibited" countries
+UK Appendix 4 short-term business visitor arrangements illustrate why treaty exemption and PAYE administration differ: there must be an actual HMRC arrangement and its detailed residence, employer, cost-bearing, duration and reporting conditions. The manual includes specific short-visit branches, not a general worldwide safe harbour. No current registration or filing approval for the reader's employer is supplied. [HMRC PAYE82000, short-term visitors](https://www.gov.uk/hmrc-internal-manuals/paye-manual/paye82000)
 
-## Section 3: Short-Term Business Travelers
+### Step 5: coordinate home, shadow and hypothetical payroll
 
-### The 183-Day Rule — OECD Model Art 15(2) [T1]
+“Shadow payroll” here means the host calculation/reporting record used where required while cash continues through home payroll. It is not a second salary payment or an independent tax exemption. Reconcile taxable compensation/benefits, lawful currency conversion, actual remittances, home withholding relief, social coverage and annual statements. The legal payer, collection mechanism and reporting obligations must be confirmed locally.
 
-The "183-day rule" is the most cited — and most misunderstood — rule in cross-border employment tax. It provides an **exemption** from host-country tax, NOT an automatic right.
+| Home/host item | Treatment to establish |
+|---|---|
+| Salary cash | Identify which payroll pays; avoid paying twice merely because there are two records. |
+| Income tax | Establish both countries' collection rules and actual treaty/credit/exemption relief; a shadow record alone does not remit tax. [UK–Germany treaty, consolidated after2021Protocol](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) [HMRC PAYE82000, short-term visitors](https://www.gov.uk/hmrc-internal-manuals/paye-manual/paye82000) |
+| Social security | Follow the applicable system and coverage document; neither tax equalisation nor shadow payroll selects the system. [Regulation883/2004,31July2019consolidation](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1) [US–Portugal SocialSecurityAgreement](https://www.ssa.gov/international/Agreement_Texts/portugal.html) |
+| Reporting | Identify employer payroll filings and employee returns separately. This Guide does not confirm every national form, return box or due date. |
 
-**All three conditions must be met for the exemption to apply:**
+Retain the original triggers as **review prompts**, not automatic conclusions: a worker paid from the UK but working **200 days in Germany**; a US parent's cost recharge to its German subsidiary; an asserted Swedish economic employer; and a worker moving to Portugal without an employer entity. Determine actual treaty period, substantive employer, domestic collection and social scope for each. Cost recharge to a subsidiary alone does not prove the PE limb fails. [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf) [UK–Germany treaty, consolidated after2021Protocol](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) [US–Portugal SocialSecurityAgreement](https://www.ssa.gov/international/Agreement_Texts/portugal.html)
 
-**Three conditions table**
+Tax equalisation is a contractual allocation of tax cost, not treaty relief. HMRC's 2026 helpsheet describes specified net cash/non-cash earnings with the employer meeting UK income tax and providing tax support. A **hypothetical tax** deduction is an agreed home-tax comparator, not a payment discharging actual tax; **tax protection** describes an agreement reimbursing specified excess host costs. The policy must define scope, refunds, benefits, spouse/investment income and true-ups rather than assuming identical outcomes. In the read UK NIC guidance, employer-paid income tax is included in gross pay for Class 1 purposes, so gross-up consequences need attention. [HMRC2026 helpsheetHS212](https://www.gov.uk/government/publications/tax-equalisation-hs212-self-assessment-helpsheet/tax-equalisation-2026-hs212) [HMRC NIM02380](https://www.gov.uk/hmrc-internal-manuals/national-insurance-manual/nim02380)
 
-| Condition | Requirement |
-| --- | --- |
-| (a) Days present | The employee is present in the host country for ≤183 days in the relevant period |
-| (b) Employer not resident | The remuneration is paid by, or on behalf of, an employer who is NOT a resident of the host country |
-| (c) Not borne by PE | The remuneration is NOT borne by a permanent establishment the employer has in the host country |
+### Step 6: establish EU social-security coverage and evidence
 
-- **Condition failure consequence** — If ANY condition fails → host-country tax applies from day one.  _(OECD Model Art 15(2))_
+First establish the personal/material and territorial scope: Regulation 883/2004 covers the defined persons and listed social-security branches, with separate extension instruments/agreements for other nationality or EEA/Swiss/UK situations. Do not presume every person in Europe qualifies. Within scope, Article 11's starting point is one applicable system and, for ordinary employment/self-employment, the work state's legislation, subject to the relevant exceptions. [Regulation883/2004,31July2019consolidation](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1)
 
-### Counting the 183 Days [T1]
+| Situation | Current rule and material conditions |
+|---|---|
+| Employee posted temporarily | Article 12(1): employer normally carries out activities in the sending state; worker is posted on that employer's behalf; anticipated work does not exceed **24 months** and the person is not sent to replace another posted person. Implementing Article 14 requires meaningful activities beyond internal management and addresses prior coverage for a recruited worker. [Regulation883/2004,31July2019consolidation](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1) [Regulation987/2009,1January2018consolidation](https://publications.europa.eu/resource/cellar/00185d05-a69f-4055-8a8e-341c14c29d50.0020.02/DOC_1) |
+| Self-employed temporary work | Article 12(2): person normally self-employed in the sending state performs **similar** activity abroad, anticipated not more than **24 months**. Prior substantial activity, ability to resume and actual nature matter; registration alone is not enough. [Regulation883/2004,31July2019consolidation](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1) [Regulation987/2009,1January2018consolidation](https://publications.europa.eu/resource/cellar/00185d05-a69f-4055-8a8e-341c14c29d50.0020.02/DOC_1) |
+| Employment normally in two or more states | Article 13(1): residence state if a substantial part is performed there; otherwise apply the complete employer branches. A single employer, or multiple employers all established in one state, points to that state. Two employer states including residence point to the other state. Multiple employers in at least two different states outside residence point to residence. Do not compress these into “otherwise employer country.” [Regulation883/2004,31July2019consolidation](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1) |
+| Self-employment in multiple states / mixed employed and self-employed | Residence if substantial self-employed activity there, otherwise centre of interest. The mixed case follows the employed activity's state or its multistate determination. Article 14 sets the relevant factual criteria and excludes marginal activities. [Regulation883/2004,31July2019consolidation](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1) [Regulation987/2009,1January2018consolidation](https://publications.europa.eu/resource/cellar/00185d05-a69f-4055-8a8e-341c14c29d50.0020.02/DOC_1) |
+| Substantial-activity assessment | Working time and/or remuneration for employment; turnover, time, services and/or income for self-employment. **Less than 25%** is an indicator within the overall assessment, using the situation projected over the next **12 calendar months**. Special foreign-employer and other Article 13/14 branches still require checking. [Regulation987/2009,1January2018consolidation](https://publications.europa.eu/resource/cellar/00185d05-a69f-4055-8a8e-341c14c29d50.0020.02/DOC_1) |
+| Exceptional continuation | Article 16 permits competent authorities to agree exceptions in the interests of certain persons/categories. There is no automatic renewal beyond Article 12's period. [Regulation883/2004,31July2019consolidation](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1) |
 
-**Counting the 183 days table**
+For multistate work, notify the designated **residence-state** institution under implementing Article 16; it determines the applicable legislation provisionally and coordinates with the other institutions. It is wrong to tell every applicant to use the home/employer institution regardless of the relevant procedure. For current posting notifications, Article 15 calls for information whenever possible in advance. [Regulation987/2009,1January2018consolidation](https://publications.europa.eu/resource/cellar/00185d05-a69f-4055-8a8e-341c14c29d50.0020.02/DOC_1)
 
-| Treaty Version | Counting Period | Days Counted |
-| --- | --- | --- |
-| OECD Model (current) | Any 12-month period starting or ending in the fiscal year | Days of physical presence (including arrival, departure, weekends, holidays, sick days) |
-| Older treaties | Calendar year or fiscal year | Same |
+An A1 attests which legislation applies; it does not create a right to choose it. From **1 November 2026**, amended Article 19(2)/(3) requires an attestation on request by the person or employer, in a **standardised format**, stating relevant date/conditions, and a proper assessment of the facts with confirmation that its information is correct. Article 5 provides that another state's institutions accept an issued document until the issuing state withdraws or invalidates it, with a clarification/withdrawal procedure. Missing paperwork must be resolved, but it does **not automatically change the applicable law**; the 2026 amendment's new recital expressly recognizes that principle. Do not state that a missing A1 alone proves host contributions are due. [Regulation987/2009,1January2018consolidation](https://publications.europa.eu/resource/cellar/00185d05-a69f-4055-8a8e-341c14c29d50.0020.02/DOC_1) [Regulation(EU)2026/2359, enacted English body](https://publications.europa.eu/resource/cellar/5794f71b-d1a7-11f1-9458-01aa75ed71a1.0006.03/DOC_1)
 
-### The Economic Employer Concept [T2]
+### Step 7: use the telework Framework only within its scope
 
-Many countries now look beyond the formal employer to the **substance** of the relationship:
+The 2023 Framework applies where residence and the employer's registered office/place of business are in two **signatory** states and, without the exception, habitual cross-border telework would produce residence-state coverage. The worker must be employed, with one or more employers all in the same other state; no habitual non-telework activity in residence and no habitual activity in a third state. Self-employed people are excluded. It is **upon request**, not an automatic “25–49.99%” rule. Verify that the actual pair and date are covered by the depositary's current signatory record. [2023Framework Agreement on cross-border telework](https://socialsecurity.belgium.be/sites/default/files/content/docs/en/international/framework_agreement_on_cross-border_telework.pdf)
 
-**Economic employer factors table**
+Residence-state telework must be **less than 50%** of total working time. Each agreement can cover at most **3 years**, with a new request for extension. Current retrospective requests are limited to **3 months**, subject to contributions paid/coverage in the requested employer state. The old **12-month** retrospective window applied only to requests submitted by **30 June 2024**; it is not a current option. An individual Article 16 exception may still be requested outside the Framework, without guaranteed agreement. The A1 procedure remains relevant. [2023Framework Agreement on cross-border telework](https://socialsecurity.belgium.be/sites/default/files/content/docs/en/international/framework_agreement_on_cross-border_telework.pdf)
 
-| Factor | Question |
-| --- | --- |
-| Supervision | Who directs and controls the employee's daily work? |
-| Risk | Who bears the risk of the employee's work product? |
-| Integration | Is the employee integrated into the host entity's organisation? |
-| Cost reallocation | Is the home entity cross-charging the employee's cost to the host entity? |
+### Step 8: distinguish enacted 2026 changes from future provisions
 
-- **Economic employer effect on condition (b)** — If the host entity is the "economic employer," condition (b) of Art 15(2) fails — even if the employee is formally employed and paid by the home entity. Host-country tax withholding is then required from day one.  _(OECD Model Art 15(2))_
+Regulation (EU) **2026/2359** was adopted on **7 October 2026**, published on **27 October**, and entered into force on **1 November 2026**. It supersedes the original description of an April provisional agreement. The actual operative application clauses, rather than a press-summary shorthand, control. [Regulation(EU)2026/2359, enacted English body](https://publications.europa.eu/resource/cellar/5794f71b-d1a7-11f1-9458-01aa75ed71a1.0006.03/DOC_1)
 
-Countries actively applying economic employer concepts: **Germany, Sweden, Denmark, Norway, Finland, UK, Australia, India, Singapore.**
+| Application date | Bounded payroll consequence |
+|---|---|
+| **1 November 2026** | Listed provisions apply, including the standardized attestation and proper facts assessment in implementing Article 19(2)/(3). Do not describe all Title II amendments as already applicable. [Regulation(EU)2026/2359, enacted English body](https://publications.europa.eu/resource/cellar/5794f71b-d1a7-11f1-9458-01aa75ed71a1.0006.03/DOC_1) |
+| **2 November 2028** | The listed revised posting Article 12 and implementing provisions, including the revised prior-notification/business-trip exception, apply from this date. They are not current 2026 exemptions from A1/notification. [Regulation(EU)2026/2359, enacted English body](https://publications.europa.eu/resource/cellar/5794f71b-d1a7-11f1-9458-01aa75ed71a1.0006.03/DOC_1) |
+| Transition | New Article 87b contains specific preservation/request rules for unchanged situations and pre-**2 November 2028** postings; the specified continuity can run no later than **2 November 2036**. Eligibility must be checked against that complete transitional clause, not assumed for every worker. [Regulation(EU)2026/2359, enacted English body](https://publications.europa.eu/resource/cellar/5794f71b-d1a7-11f1-9458-01aa75ed71a1.0006.03/DOC_1) |
 
-### Business Traveler Compliance Matrix [T1]
+The business-trip exemption is a future **notification** exception within its precise scope, not a general income-tax, immigration, posted-worker-employment-law or social-coverage exemption. No general automatic **24-month certificate renewal** follows from the amendment. [Regulation(EU)2026/2359, enacted English body](https://publications.europa.eu/resource/cellar/5794f71b-d1a7-11f1-9458-01aa75ed71a1.0006.03/DOC_1)
 
-**Business traveler compliance matrix**
+### Step 9: use bilateral coverage instruments separately
 
-| Days in Host Country | Treaty Exemption Likely? | Recommended Action |
-| --- | --- | --- |
-| 1–30 days/year | Usually exempt | Track days. Obtain A1 if EU. |
-| 31–60 days/year | Usually exempt | Track days carefully. Check local de minimis rules. |
-| 61–90 days/year | Likely exempt if treaty conditions met | Track days. Consider shadow payroll registration as precaution. |
-| 91–183 days/year | Exempt only if ALL three conditions met | Formal assessment required. Shadow payroll likely needed. |
-| >183 days/year | Condition (a) fails — host tax applies | Full payroll registration in host country. |
+SSA's official status list confirms US agreements with the **UK, Germany, France, Italy, Japan and Portugal**. Their scope and detached-worker/self-employed branches are not identical; the list alone does not prove exemption from every host social charge. [SSA agreements-in-force register](https://www.ssa.gov/international/status.html)
 
-## Section 4: Shadow Payroll / Hypothetical Tax
+The actual US–Portugal agreement has been in force since **1 August 1989**. Article 4 ordinarily follows employment's work state. Article 5 permits qualifying temporarily sent employees to remain under the sending state's covered legislation where expected work does not exceed **5 years**; an unforeseen extension requires competent-authority consent, requested before the five years expire, and is limited to **1 year**. Self-employment, transport and exceptional agreement branches have separate conditions; the material scope does not encompass every possible levy or benefit. This directly corrects the original “no US–Portugal totalization agreement” assertion. [US–Portugal SocialSecurityAgreement](https://www.ssa.gov/international/Agreement_Texts/portugal.html)
 
-### What Is Shadow Payroll? [T1]
+Within the TCA’s applicable personal/material scope and UK–Member-State cross-border nexus, SSC.11 permits eligible detached employees and similar temporary self-employed activity to retain sending-state coverage for anticipated work not exceeding **24 months**. Employer normal activity, sending on its behalf, employee non-replacement and the relevant state participation conditions apply. Decision 1/2021 places all EU Member States in Annex SSC-8’s detached-worker category; this does not waive individual conditions. Foreign-employer obligations and any notified employee-payment agreement follow SSC.14; the employer is not released. The unchanged actual source scopes and completed independent social-security review are reused here. No EU Article16/telework derogation is imported into a TCA-only case. [UK–EU TCA Protocol](https://assets.publishing.service.gov.uk/media/608ae0c0d3bf7f0136332887/TS_8.2021_UK_EU_EAEC_Trade_and_Cooperation_Agreement.pdf) [UK–EU Decision1/2021,AnnexSSC8](https://assets.publishing.service.gov.uk/media/61a5f3ebe90e07043c35f448/TS_21.2021_Decision_No_1.2021_Specialised_Committee_Social_Security.pdf)
 
-- **Shadow payroll** — Shadow payroll is a **parallel payroll record** in the host country that calculates and remits host-country income tax and (sometimes) social security, while the employee continues to be paid through home-country payroll.
+The original **Australia 30+ agreements** and **India–Germany/France/Belgium/Netherlands** statements remain individual research questions in Sources: current operative texts and their conditions were not read successfully here. Do not substitute EU Article 12 for UK TCA eligibility or infer contribution relief from an agreement count. Where no applicable coordination relief is established, assess both domestic systems; dual charges are a risk to establish, not an inevitable conclusion for every worker.
 
-**Home vs shadow payroll comparison table**
+### Step 10: classify the worker under the relevant legal regime
 
-| Element | Home Payroll | Shadow Payroll (Host) |
-| --- | --- | --- |
-| Salary payment | YES — employee is paid through home payroll | NO — no separate payment to employee |
-| Tax withholding | May need adjustment (home country) | YES — calculates and remits host-country tax |
-| Social security | Depends on A1/certificate | Depends on applicable legislation |
-| Reporting | Home-country tax return | Host-country payroll filings |
+| Jurisdiction | Verified routing and limits |
+|---|---|
+| US federal | IRS common-law analysis considers behavioral control, financial control and the relationship; all facts matter and no single factor decides. A remote location, invoice or contract label alone is insufficient. [IRS employee/contractor classification](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee) |
+| California | Where applicable, the hiring entity must satisfy **all three ABC limbs**: freedom from control in contract/fact; work outside its usual business; and an independently established same-nature business. Statutory exceptions and other tests, including Borello, must be checked. Do not declare the B limb universally “hardest” or import California's test into federal tax. [CaliforniaDIR employee/contractor guidance](https://www.dir.ca.gov/dlse/FAQ_IndependentContractor.htm) |
+| UK | Off-payroll rules concern services through an intermediary and their actual charge/scope conditions. HMRC ESM10025 distinguishes a wholly overseas non-UK-connected client and the intermediary's Chapter 8 position; the worker's UK tax/NIC charge still matters. A worker abroad is not automatically outside every UK rule. Public/medium-large client responsibility must be assessed under current scope, not a universal contractor label. [HMRC ESM10025, international off-payroll](https://www.gov.uk/hmrc-internal-manuals/employment-status-manual/esm10025) |
+| Germany | SGB IV §7 focuses on dependent employment, especially instructions and integration. SGB VI §2(9) separately imposes pension coverage on specified genuinely self-employed people with no regular insured employee and essentially one permanent client. It is not an income-percentage employment-classification test. [Germany SGBIV section7](https://www.gesetze-im-internet.de/sgb_4/__7.html) [Germany SGBVI section2](https://www.gesetze-im-internet.de/sgb_6/__2.html) |
+| France | The read **28 May 2026** L.8221-6 version provides a nonemployment presumption for listed registered categories, rebuttable by a permanent legal-subordination relationship; intentional concealment and employer-contribution consequences have distinct conditions. That dated text is not clearance of every current French employment/tax rule. [France L8221-6,28May2026version](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000006178267/2026-05-28) |
+| Netherlands | Official current guidance says the moratorium ended **1 January 2025**; corrections/assessments can follow without the former preliminary instruction. In **2026**, culpability penalties (**vergrijpboetes**) can apply, but default penalties (**verzuimboetes**) are not imposed. Ordinary retrospective assessment starts at **1 January 2025**, with malicious/ignored-instruction exceptions extending the period. [Belastingdienst, current labour-relation enforcement](https://www.belastingdienst.nl/wps/wcm/connect/nl/arbeidsrelaties/content/handhaving) |
+| Spain | Estatuto Article 1(1) addresses voluntary remunerated services for another within that person's organization/direction; Article 1 exclusions and special relationships must be considered. Classification does not automatically establish unlimited retroactive recovery of every benefit. [Spain Estatuto de los Trabajadores](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430) |
+| Australia | FWO says constitutionally covered businesses use the whole-of-relationship test from **26 August 2024**: substance, practical reality, true nature, contract and performance. State-referred businesses, earlier work and valid high-income opt-outs follow the separate start-of-relationship route. All factors matter; an ABN/invoice alone does not decide. [FWO whole-of-relationship test](https://www.fairwork.gov.au/find-help-for/independent-contractors/whole-of-relationship-test) |
+| India | Original control/integration questions are retained as factual review prompts. The old Contract Labour Act label does not establish the current classification, applicable Labour Code, agency-employment, withholding or social-security result. Each remains non-usable pending the specified primary-source checks in Sources. |
 
-### When Shadow Payroll Is Required [T1]
+### Step 11: assess equity awards without a universal vesting formula
 
-**Shadow payroll triggers table**
+Record grant/award documents, service/vesting conditions, residence changes, actual workdays, taxable event, valuation/currency, restrictions, withholding and the actual employment/relief articles. A service-period allocation is a question to establish for the actual award and country; calendar vesting days and physical-presence treaty days are not interchangeable. The model employment framework alone does not verify domestic RSU/option timing. [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf)
 
-| Trigger | Example |
-| --- | --- |
-| Assignment exceeds treaty de minimis | Employee works 200 days in Germany but is paid from UK payroll |
-| Cost recharged to host entity | US parent recharged employee cost to German subsidiary — condition (c) fails |
-| Economic employer in host country | Swedish tax authority determines Swedish entity is the economic employer |
-| Remote worker in a country with no employer entity | Employee relocates to Portugal; employer has no Portuguese entity but must withhold tax |
+Where the actual award/country rule requires a service-day allocation, the arithmetic is **relevant Country X service days ÷ total relevant service days × allocable employment income**. The original vesting-period formula is retained as that conditional computation, not as a universal legal rule. Establish the actual service period, denominator, sourcing exceptions and amount before using it.
 
-### Hypothetical Tax (Tax Equalisation) [T2]
+| Original country row | Current usable boundary |
+|---|---|
+| US | IRS distinguishes statutory ISO/ESPP from nonstatutory options. Statutory options generally produce no grant/exercise gross income, but ISO exercise can cause AMT and disposition conditions affect ordinary/capital treatment. A nonstatutory option with readily determinable fair value can be taxed at grant; otherwise exercise generally produces the spread as income. Later sale has its own gain/loss. “ISO only capital gain at sale” is false. This source does **not** clear every RSU event. [IRS Topic427, stockoptions](https://www.irs.gov/taxtopics/tc427) |
+| UK | The old universal RSU-vesting/option-exercise table is held individually; actual plan, employment-income rules, international allocation and post-April-2025 rules must be verified. The recovered historic remittance-basis manual is not current-law clearance. |
+| Germany | The old universal vest/exercise and flat Abgeltungsteuer sale description is held individually; actual plan, restrictions, employment income and later investment gain/relief require current sources. |
+| France | Qualified/nonqualified awards, acquisition/sale events and social charges require the actual statutory plan/date conditions; the old vesting/sale shorthand is held individually. |
+| India | The old vesting/allotment or option-exercise perquisite and capital-gain statements require current charging/valuation rules and plan facts; no universal result is supplied. |
+| Australia | The old upfront-vesting versus deferred-sale summary is held individually. Actual ESS conditions and taxing point must be read; sale is not assumed to be the universal deferral endpoint. |
 
-**Tax equalisation concepts table**
+Treaty allocation, domestic tax timing and double-tax relief are separate. The actual treaty may provide exemption or a limited credit; UK–Germany Article 23's UK credit branch is subject to its conditions and does not prove that every German-resident award receives a credit. A mismatch in years, character or income attribution can prevent full matching. Contractual equalisation may allocate remaining cost but does not create statutory relief. [UK–Germany treaty, consolidated after2021Protocol](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) [HMRC2026 helpsheetHS212](https://www.gov.uk/government/publications/tax-equalisation-hs212-self-assessment-helpsheet/tax-equalisation-2026-hs212)
 
-| Concept | Explanation |
-| --- | --- |
-| Tax equalisation | Company ensures the employee pays no more (and no less) tax than they would have paid staying in their home country |
-| Hypothetical tax | The home-country tax the employee "would have" paid — deducted from salary. Company pays the actual tax in both countries and absorbs any difference. |
-| Tax protection | Employee pays actual taxes, but company reimburses if host-country tax exceeds what home-country tax would have been |
+## Deadlines and filing
 
-## Section 5: Social Security Certificates
+Build a country-specific calendar for employer registration, commencement/posted-worker notification, social-security application, periodic withholding/reporting/payment, annual employer statements and employee returns. Record the authority, rule version and party responsible. No universal payroll deadline or automatic short-visit collection relief is verified here. For multistate EU procedures and current advance-information duties, use the specific competent-institution route above; for UK short-term PAYE, confirm the employer's actual approved arrangement. [Regulation987/2009,1January2018consolidation](https://publications.europa.eu/resource/cellar/00185d05-a69f-4055-8a8e-341c14c29d50.0020.02/DOC_1) [HMRC PAYE82000, short-term visitors](https://www.gov.uk/hmrc-internal-manuals/paye-manual/paye82000)
 
-### EU: A1 Certificate (Portable Document A1) [T1]
+## Penalties and interest
 
-- **Legislation** — Legislation: Regulation (EC) No 883/2004, coordinated by Regulation (EC) No 987/2009.  _(Regulation (EC) No 883/2004; Regulation (EC) No 987/2009)_
+| Country | Verified consequence and individually unresolved limits |
+|---|---|
+| Germany | SGB IV §25 normally limits contribution claims to **4 years after the end of the calendar year in which due**, and **30 years** for intentionally withheld contributions, with its suspension/extension rules. The original blanket fine and automatic criminal consequence were not verified and cannot be used as the result of every misclassification. [Germany SGBIV section25](https://www.gesetze-im-internet.de/sgb_4/__25.html) |
+| US federal | Section 3509 is a conditional worker-reclassification computation, **not “20% of wages plus 100% FICA.”** Under the ordinary lower branch: **1.5% of wages** for withholding and **20% of the employee FICA share**, plus the full employer share. Specified reporting failure raises the first amounts to **3% / 40%**, subject to reasonable-cause/not-willful-neglect relief. Intentional disregard and other statutory exclusions can make the reduced regime inapplicable; employer FICA/FUTA is not erased. Additional tax, interest and penalty provisions need their own conditions. The statute capture is the explicit **2024 edition**, corroborated by current IRS IRM 4.23.8.5. [USCode2024,26USC3509](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleC-chap25-sec3509.htm) [IRS IRM4.23.8.5](https://www.irs.gov/irm/part4/irm_04-023-008) |
+| California | DIR describes **USD 5,000–25,000 per willful violation** under Labor Code 226.8, separate from other restitution/tax consequences. This is a summary range, not proof that the top applies to every error or a cleared statutory distinction between ordinary and pattern/practice branches. [CaliforniaDIR employee/contractor guidance](https://www.dir.ca.gov/dlse/FAQ_IndependentContractor.htm) |
+| Netherlands | Current guidance distinguishes 2026 culpability/default penalties and the ordinary retrospective boundary described above. The original generic “penalties resumed” was incomplete. [Belastingdienst, current labour-relation enforcement](https://www.belastingdienst.nl/wps/wcm/connect/nl/arbeidsrelaties/content/handhaving) |
+| Australia | FWO's current sham-contracting page requires consideration of the reasonable-belief defense and the particular prohibited conduct. It lists different ceilings for individuals and business sizes; the old uniform ceiling is non-usable. The page's size wording does not resolve the exact-15-employee case here; no universal maximum or automatic **6 years of back leave** is supplied. Superannuation, unpaid entitlements and limitation periods need their own applicable rules. [FWO sham contracting](https://www.fairwork.gov.au/find-help-for/independent-contractors/sham-contracting) |
+| France | Original blanket fine and imprisonment/repeat-offender claims and their current offence/person conditions are individually non-usable pending the actual penalty articles. Do not treat every reclassification as intentional concealed employment. [France L8221-6,28May2026version](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000006178267/2026-05-28) |
+| UK / Spain | Back-tax/NIC or employment-rights exposure must follow the applicable charging, culpability and limitation rules. The original automatic/unlimited retroactive benefits and generic penalty outcome are individually non-usable; no numeric assessment is supplied. |
 
-**A1 certificate elements table**
+### Platform work is a separate scope question
 
-| Element | Detail |
-| --- | --- |
-| Purpose | Proves which country's social security system applies, preventing double contributions |
-| When needed | Any time a person works in an EU/EEA/Swiss country other than where they normally pay social security |
-| Who applies | The employer or self-employed person, to the competent institution of the home country |
-| Duration | Up to 24 months for posted workers (Art 12); renewable |
-| Without A1 | The host country can demand social security contributions under its own rules |
+Directive (EU) **2024/2831** entered into force **1 December 2024**; Article 29 sets **2 December 2026** for transposition. Article 5's rebuttable presumption concerns facts indicating direction/control under the relevant national law, with the platform bearing rebuttal. It is not a universal presumption that every overseas contractor is employed. Article 5(3) does not itself apply the presumption to tax, criminal or social-security proceedings, **but a Member State may do so under national law**. For relationships entered into before and still ongoing on **2 December 2026**, Article 5(6) applies it only to the period starting then. National transposition and actual procedures must be checked; a transposition deadline alone is not proof of every state's implementation. [Directive(EU)2024/2831](https://publications.europa.eu/resource/cellar/564844cf-9fd2-11ef-85f0-01aa75ed71a1.0006.03/DOC_1)
 
-### Key EU Social Security Rules [T1]
+The original effective/proportionate/dissuasive national-sanctions topic is retained as a matter requiring the actual implementing penalty provision; this Guide does not approve a national tariff merely from the Directive's existence.
 
-**Key EU social security rules table**
+## Cross-border points
 
-| Situation | Applicable Legislation |
-| --- | --- |
-| Posted worker (temporary, ≤24 months) | Home country (Art 12) — A1 required |
-| Working in 2+ EU countries | Country of residence if ≥25% of activity there; otherwise employer's country (Art 13) |
-| Teleworking (Multilateral Framework Agreement, 2023) | If 25–49.99% of working time in residence country, may remain under employer's country legislation |
-| Self-employed person working temporarily in another EU state | Home country (Art 12(2)) — A1 required |
+### Original case 1: US employer and developer in Portugal
 
-### 2026 Update
+Original facts unchanged: a US tech company hires a developer living and working in Portugal, without EOR or Portuguese entity. Establish Portuguese employment, employer-registration/withholding and mandatory-protection rules before starting; absence of an entity does not itself remove these questions. Those specific Portuguese execution provisions are not cleared by this Guide.
 
-In April 2026, the EU reached a provisional agreement to modernize Regulation 883/2004:
-- Proposed exemptions from A1 requirements for **short-term business trips**
-- Initial A1 certificates can be issued for up to **24 months** subject to renewal
-- Greater employer responsibility for documentation
-- 24-month transitional period expected for certain elements
+The original assertion of **no US–Portugal agreement** is wrong. The actual agreement exists; ordinary local work generally points to Portugal within its covered scope, while a qualifying temporary sending could produce a different result. A newly hired permanent Portugal-based worker is not proven to be a detached employee merely because the payer is American. Assess home-office PE under the actual US–Portugal treaty/domestic facts, not a presumed consent test. EOR versus lawful direct registration remains an option to evaluate, not an already licensed solution. [US–Portugal SocialSecurityAgreement](https://www.ssa.gov/international/Agreement_Texts/portugal.html)
 
-### Non-EU: Bilateral Social Security Agreements [T1]
+### Original case 2: UK employee, German subsidiary, 80 days
 
-**Bilateral social security agreements table**
+Original **80 days in a twelve-month period** retained. Under the read UK–Germany Article **14(2)**, 80 is below 183, but confirm residence, all relevant periods, nonresident employer and PE-cost conditions. A subsidiary recharge alone does not prove the UK's employer has a German PE or fail limb (c); determine the substantive employer and actual cost facts. Assess domestic collection separately, with shadow payroll if that is the applicable mechanism. Social coverage uses the actual UK–EU instrument and certificate procedure, not an assumption that UK workers are automatically under EU Article 12. The actual German collection and case-specific UK TCA coverage/certificate result remains unapproved pending worker/assignment facts and national procedures. [UK–Germany treaty, consolidated after2021Protocol](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf)
 
-| Countries | Agreement Covers |
-| --- | --- |
-| US–UK | Totalization agreement — prevents double social security |
-| US–Germany, US–France, US–Italy, US–Japan | Same principle — worker pays into one system only |
-| UK–EU (TCA Protocol) | 24-month posting limit; governed by Trade and Cooperation Agreement |
-| Australia–numerous | Bilateral agreements with 30+ countries |
-| India–select countries | Agreements with Germany, France, Belgium, Netherlands, and others |
+### Original case 3: Indian developer, UK client, monthly GBP
 
-- **No bilateral agreement risk** — Without a bilateral agreement: The employee may owe social security in both countries simultaneously — a potentially devastating cost for freelancers and small companies.
+Original independent software developer in India, paid monthly in **GBP**, retained. Own clients/tools and limited integration are factual evidence, not automatic status clearance. The UK off-payroll analysis depends on the intermediary, client connection and worker's UK tax/NIC charge; “overseas contractors are always outside IR35” is wrong. If genuinely outside any UK tax/NIC charge, that affects the off-payroll analysis, but the currency and overseas address alone do not prove it. [HMRC ESM10025, international off-payroll](https://www.gov.uk/hmrc-internal-manuals/employment-status-manual/esm10025)
 
-## Section 6: Contractor vs Employee Cross-Border
+Indian classification/withholding, the applicable current labour legislation and GST registration/export conditions require separate verified sources. A registered person does **not** necessarily charge output GST merely because registered; use `non-eu-export-services` for the actually verified export-services/LUT route and its conditions. This case does not establish those facts, a registration threshold or a zero-rated export. Exclusivity is a risk fact, not conclusive Indian employment status.
 
-### The Misclassification Risk [T1]
+### Original case 4: Malta employer posts worker to Germany for 18 months
 
-- **Misclassification risk** — A worker can be a legitimate contractor under one country's law and a misclassified employee under another's. The host country's classification rules apply to work performed there, regardless of what the contract says.
+Original **18-month** sending retained. It is within Article 12's **24-month anticipated limit**, but continued Maltese coverage still requires actual scope, genuine normal activity, sending on the employer's behalf, no replacement and the other current conditions. Seek the competent institution's attestation; it is not automatically granted because 18 is below 24. No new **2 November 2028** posting/notification permission applies in 2026. [Regulation883/2004,31July2019consolidation](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1) [Regulation987/2009,1January2018consolidation](https://publications.europa.eu/resource/cellar/00185d05-a69f-4055-8a8e-341c14c29d50.0020.02/DOC_1) [Regulation(EU)2026/2359, enacted English body](https://publications.europa.eu/resource/cellar/5794f71b-d1a7-11f1-9458-01aa75ed71a1.0006.03/DOC_1)
 
-### Classification Tests by Country [T1]
+An 18-month duration is not itself a verified income-tax day-count: identify physical presence and the actual Malta–Germany treaty/collection rules. EU posted-worker employment conditions form a separate clock: Directive 96/71 Articles 1–3 cover qualifying transnational postings; mandatory host terms include remuneration, work/rest, leave, health/safety and other listed matters. After **12 months**, expanded host terms apply subject to the specified contract-conclusion/termination and occupational-pension exclusions; a motivated notification can extend that threshold to **18 months**. Same-task/place replacements are cumulated. More-favourable terms and applicable collective agreements still matter. Actual German notification/sector/remuneration execution is not cleared here. [Directive96/71/EC,30July2020consolidation](https://publications.europa.eu/resource/cellar/68a991b1-7027-11ea-a07e-01aa75ed71a1.0006.03/DOC_1)
 
-**Classification tests by country table**
+## Worked examples
 
-| Country | Test | Key Factors |
-| --- | --- | --- |
-| **US** | Common-law (IRS) / ABC test (California AB5) | Behavioral control, financial control, type of relationship. CA: strict ABC test — B (outside usual course of business) is hardest to meet. |
-| **UK** | IR35 off-payroll rules | Personal service, mutuality of obligation, control. Since April 2021, medium/large hirers determine status. |
-| **Germany** | Deutsche Rentenversicherung | Integration into business, economic dependence, single-client >83% of income triggers mandatory pension |
-| **France** | Code du Travail | Subordination link (lien de subordination) — fixed schedule, supervision, integration |
-| **Netherlands** | DBA (Deregulering Beoordeling Arbeidsrelaties) | Enforcement moratorium lifted January 2025. Active auditing in 2026. |
-| **Spain** | Estatuto de los Trabajadores | Reclassified contractors receive full employment rights retroactively |
-| **Australia** | "Whole-of-relationship" test (Closing Loopholes reforms 2024) | Practical reality, not contract terms. Sham contracting penalties up to AUD 469,500. |
-| **India** | Contract Labour (Regulation and Abolition) Act | Supervision, control, integration into principal employer's work |
+### Example 1: preserve the original mid-vest arithmetic
 
-### Penalties for Misclassification [T1]
+Original inputs: **1,000 RSUs**, a **4-year** vest, Germany in years **1–2**, UK in years **3–4**, total vest value **EUR 200,000**, and the original illustrative **730 / 1,460** allocation to each country. The supplied UK **GBP 85,000** result implies a hypothetical conversion of **GBP 0.85 per EUR 1**; it is not a sourced current FX rate.
 
-**Penalties for misclassification table**
+Each half is **50%**, hence **EUR 100,000**; the UK illustration converts EUR 100,000 × 0.85 to **GBP 85,000**. These original calendar-day counts are preserved for arithmetic only. They are not verified actual workdays, a legal service period, a domestic taxing event, applicable tax rate or automatic foreign-tax credit. The actual award and both countries' rules must establish those points; the old conclusion that both automatically tax these exact amounts with full residence-country credit is withdrawn.
 
-| Country | Penalty |
-| --- | --- |
-| Germany | Retroactive social security for 4 years (30 years if intentional); fines up to €500,000; criminal prosecution possible (§266a StGB) |
-| France | Fines from €45,000; potential imprisonment for repeat offenders |
-| UK | Employer pays back-tax, NICs, and penalties for IR35 failures |
-| US (federal) | 20% of wages owed + 100% of unpaid FICA. California: $5,000–$25,000 per wilful violation |
-| Netherlands | Retroactive corrections + penalties under resumed DBA enforcement |
-| Australia | Up to AUD 469,500 per contravention + back superannuation + 6 years of back leave |
-| Spain | Full retroactive employment rights (severance, paid leave, social security) |
+```oa-check
+name: Original RSU split and illustrative conversion
+inputs:
+  vest_value_eur: 200000
+  germany_days: 730
+  uk_days: 730
+  total_days: 1460
+  gbp_per_eur: 0.85
+steps:
+  germany_eur: vest_value_eur * germany_days / total_days
+  uk_gbp: vest_value_eur * uk_days / total_days * gbp_per_eur
+expected:
+  germany_eur: 100000
+  uk_gbp: 85000
+```
 
-### EU Platform Work Directive (2024/2831) [T1]
+### Example 2: the telework boundary is strictly below 50%
 
-- **Platform Work Directive provisions** — Effective December 1, 2024. Member states must transpose by December 2, 2026: - Creates a rebuttable presumption of employment for platform workers - Platforms must rebut the presumption to maintain contractor status - Does not apply to tax, criminal, or social security proceedings (employment law only) - Member states will define penalties — must be "effective, dissuasive, and proportionate"  _(EU Platform Work Directive 2024/2831)_
+Assume an employee, two eligible signatory states, all Framework conditions satisfied, a valid request and **200 total working days**. At **80 residence telework days**, the share is **40%**, within the Framework's numerical ceiling; at **100 days**, it is **50%**, outside. The first result proves only this numerical condition, not approval, scope or automatic continuation under employer-state law. [2023Framework Agreement on cross-border telework](https://socialsecurity.belgium.be/sites/default/files/content/docs/en/international/framework_agreement_on_cross-border_telework.pdf)
 
-## Section 7: Equity Compensation Cross-Border
+```oa-check
+name: Telework Framework strict fifty-percent boundary
+inputs:
+  total_days: 200
+  inside_days: 80
+  boundary_days: 100
+steps:
+  inside_percent: inside_days / total_days * 100
+  boundary_percent: boundary_days / total_days * 100
+expected:
+  inside_percent: 40
+  boundary_percent: 50
+```
 
-### The Problem [T2]
+## Ask the client first
 
-When an employee receives stock options or RSUs and works in multiple countries during the vesting period, multiple countries may claim the right to tax the same income.
+Before asking, inspect the available case record, prior advice, payroll/travel logs, contract/award documents and authority correspondence. Then request only missing facts: worker/employer identities and residence, locations/dates/work patterns, actual employment/control/recharges, assignment origin and intended end, prior coverage and replacements, certificates/approvals, cash/benefits/equity facts and the relevant policies. This is an information checklist, not a request to expose personal identifiers in public evidence.
 
-### Time-Based Apportionment Formula [T1]
+## Reviewer output and completion checklist
 
-- **Time-based apportionment formula** — Income sourced to Country X = (Days worked in Country X during vesting period ÷ Total days in vesting period) × Total vest value  _(Most jurisdictions and tax treaties)_
+Return a country-by-country decision with the actual rule/version and facts: tax allocation, collection/registration, social system and document, employment protection, PE/immigration review, equity timing/allocation/relief, dates, responsible party and unresolved non-usable items. Do not call the file implementation-ready while a required authority/condition remains missing.
 
-### Country-Specific Timing of Tax [T2]
+Preserve the seven original prohibitions with correct scope: (1) no automatic 183-day exemption; (2) no ignoring the relevant substantive-employer test; (3) no status determination from the contract label alone; (4) no skipping competent social-security determination/documentation, while missing A1 alone does not change applicable law; (5) no assumption that all equity is taxed only at vesting residence; (6) no unassessed overseas remote arrangement; (7) no ignoring mandatory host employment protections. These are review controls, not seven new independent legal exemptions.
 
-**Country-specific timing of tax table**
+### Disclaimer
 
-| Country | RSUs Taxed At | Stock Options Taxed At | Character |
-| --- | --- | --- | --- |
-| US | Vesting | Exercise (NSO) or sale (ISO) | Ordinary income (RSU/NSO); capital gain (ISO at sale) |
-| UK | Vesting | Exercise | Employment income; capital gains on sale |
-| Germany | Vesting | Exercise | Employment income; Abgeltungsteuer on sale |
-| France | Vesting (with qualified plan exceptions) | Exercise or sale (depending on plan) | Salary income + social charges; capital gains on sale |
-| India | Vesting/allotment (perquisite) | Exercise (perquisite) | Salary income; capital gains on sale |
-| Australia | Vesting (taxed upfront scheme) or sale (deferred scheme) | Exercise or sale | Employment income / capital gains |
+Informational and computational material only; not tax, legal or financial advice. A qualified professional must review the actual facts and current applicable instruments before implementation. OpenAccountants and contributors do not approve a live payroll, return, certificate application or filing through this Guide. Contact: info@openaccountants.com.
 
-### Double Taxation Relief [T2]
+## Sources
 
-**Double taxation relief mechanisms table**
+Official operative scopes were actually read on **16 November 2026**, with the limits below. This is research verification only, not an accountant approval. Prior completed primary-source research is reused only within its unchanged scope; new EU application dates and the payroll-specific sources were read directly. No successful download, RDF metadata response, error page or blocked URL is represented as a source read.
 
-| Mechanism | How It Works |
-| --- | --- |
-| **Foreign Tax Credit** | Home country gives credit for tax paid abroad on the same equity income (limited to home-country tax on that income) |
-| **Treaty allocation** | Tax treaty may allocate taxing rights based on where services were performed during vesting |
-| **Tax equalisation** | Employer absorbs excess tax burden through hypothetical tax arrangement |
+| Official source | Actually read scope and limits | Read on |
+|---|---|---|
+| [OECD Model 2025, employment article and Commentary](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/model-tax-convention-on-income-and-on-capital-2025-full-version_4fd97b89/db32e18b-en.pdf) | Read for Article15; Commentary4–6.2 and8.1–8.15. Completed primary Model research reused; payroll-specific employer/recharge paragraphs actually read16November. Model only, not a national treaty. | 2026-11-16 |
+| [UK–Germany treaty, consolidated after2021Protocol](https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force) | Read for Articles5(1)–(8),14(1)–(3),23(2)(a). Actual complete used PE/employment clauses and UKcredit branch read. No claim to German-resident relief or all domestic collection rules. | 2026-11-16 |
+| [Regulation883/2004,31July2019consolidation](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1) | Read for Articles2–3,11–16; current application checked against2026/2359. Completed full scoped primary/independent social review reused; payroll posting/multistate scopes also read directly. Historical source expressly overlaid, not silently treated as current full consolidation. | 2026-11-16 |
+| [Regulation987/2009,1January2018consolidation](https://publications.europa.eu/resource/cellar/00185d05-a69f-4055-8a8e-341c14c29d50.0020.02/DOC_1) | Read for Articles5,14–16,19–21 with current19(2)/(3)overlay. Actual scoped reads and completed prior independent review reused; no flightcrew old-homebase instruction imported. | 2026-11-16 |
+| [Regulation(EU)2026/2359, enacted English body](https://publications.europa.eu/resource/cellar/5794f71b-d1a7-11f1-9458-01aa75ed71a1.0006.03/DOC_1) | Read for Article1(8),(13)–(15),(36),(39); Article2(13),(52); Article3. Actual application/transition and attestation scopes read; complete15Nov independent instrument review reused once, no repeat whole scan. Earlier RDF response is not this operative body. | 2026-11-16 |
+| [2023Framework Agreement on cross-border telework](https://socialsecurity.belgium.be/sites/default/files/content/docs/en/international/framework_agreement_on_cross-border_telework.pdf) | Read for Wholepreamble andArticles1–6,including scope,request/retroactivity/term. Actual complete shortinstrument read. Current named-state eligibility not inferred; hypothetical pair only. | 2026-11-16 |
+| [UK-retained RomeI Article8](https://www.legislation.gov.uk/eur/2008/593/article/8/data.html) | Read for Article8(1)–(4)infull. Actual UK-hosted retained text read; not a worldwide conflict rule. | 2026-11-16 |
+| [HMRC PAYE82000, short-term visitors](https://www.gov.uk/hmrc-internal-manuals/paye-manual/paye82000) | Read for Opening operative conditions68–89. Actual conditions read; no unread reporting-tier dates or current employer approval claimed. | 2026-11-16 |
+| [HMRC2026 helpsheetHS212](https://www.gov.uk/government/publications/tax-equalisation-hs212-self-assessment-helpsheet/tax-equalisation-2026-hs212) | Read for Section1 definition,including contractualscope90. Actual definition and neighboring introductory paragraphs read; no universal private-policy promises. | 2026-11-16 |
+| [HMRC NIM02380](https://www.gov.uk/hmrc-internal-manuals/national-insurance-manual/nim02380) | Read for Wholemain67–70. Actual mainbody read:employer-paidtax includedin Class1grosspay. | 2026-11-16 |
+| [SSA agreements-in-force register](https://www.ssa.gov/international/status.html) | Read for Germany,France,Italy,Japan,Portugal,UKrows andUKstagednote. Actual official web register read,not proof of each agreement’s complete scope. | 2026-11-16 |
+| [US–Portugal SocialSecurityAgreement](https://www.ssa.gov/international/Agreement_Texts/portugal.html) | Read for Articles1–8,inparticular materialscope2 andcoverage4–7;effectivedate. Actual official web legalbody read. No whole628line page/adminarrangementread claimed. | 2026-11-16 |
+| [IRS employee/contractor classification](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee) | Read for Mainbody260–285:threecontrolgroups andremote-worker paragraph. Actual used operative mainbody read; not state employmentlaw clearance. | 2026-11-16 |
+| [CaliforniaDIR employee/contractor guidance](https://www.dir.ca.gov/dlse/FAQ_IndependentContractor.htm) | Read for Questions1–4,9–10;exceptions scope,allABClimbs,willfulpenaltysummary. Actual operative guidance read; no claim to all industryexceptions or the blocked226.8operativebody. | 2026-11-16 |
+| [HMRC ESM10025, international off-payroll](https://www.gov.uk/hmrc-internal-manuals/employment-status-manual/esm10025) | Read for Main68–95:overseasclient/intermediary/workercharge. Actual whole used mainparagraphs read. No automatic overseasworker exception. | 2026-11-16 |
+| [Germany SGBIV section7](https://www.gesetze-im-internet.de/sgb_4/__7.html) | Read for Section7whole,especially(1). Actual German statutorybody read,not translatedsecondarysummary. | 2026-11-16 |
+| [Germany SGBVI section2](https://www.gesetze-im-internet.de/sgb_6/__2.html) | Read for WholeSection2,especially9(a)/(b). Actual nativebody read;self-employedpensioncoverage distinguishedfromemployment. | 2026-11-16 |
+| [France L8221-6,28May2026version](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000006178267/2026-05-28) | Read for WholeL8221-6 I/II andneighborL8221-6-1. Actual official datedlegalwebbody read;directcurrentdatepath403,not currentpenaltyclearance. | 2026-11-16 |
+| [Belastingdienst, current labour-relation enforcement](https://www.belastingdienst.nl/wps/wcm/connect/nl/arbeidsrelaties/content/handhaving) | Read for Wholeoperativebody19–end. Actual Dutchmainbodyread;2026partialsoftlanding controlsoldergenericstatements. | 2026-11-16 |
+| [Spain Estatuto de los Trabajadores](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430) | Read for Articles1–3:scope/exclusions/specialrelationships/mandatorysources. Actual completeusednativeclauses read;notbenefitlimitationorallretroactivityclearance. | 2026-11-16 |
+| [FWO whole-of-relationship test](https://www.fairwork.gov.au/find-help-for/independent-contractors/whole-of-relationship-test) | Read for Main439–514:businessscope,startdate,optout,allfactors. Actual officialwebbody read;directrequesttimeoutnot calledsourceclearance. | 2026-11-16 |
+| [FWO sham contracting](https://www.fairwork.gov.au/find-help-for/independent-contractors/sham-contracting) | Read for Main446–464:prohibitedconduct,reasonablebelief,penaltysummary. Actual officialwebbodyread. Exact15employeesgapinwordingnotresolved,old469500notcurrentmax. | 2026-11-16 |
+| [IRS Topic427, stockoptions](https://www.irs.gov/taxtopics/tc427) | Read for Main250–262:statutory/nonstatutoryevents,AMT,disposition. Actual wholeusedbody read,updated24September2026. NotRSUclearance. | 2026-11-16 |
+| [Germany SGBIV section25](https://www.gesetze-im-internet.de/sgb_4/__25.html) | Read for Section25whole,including tolling/extension. Actual nativecompletebodyread;notcriminal/fineprovision. | 2026-11-16 |
+| [USCode2024,26USC3509](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleC-chap25-sec3509.htm) | Read for Whole(a)–(d),amendment/effectivenotes. Actual valid2024statutecapture,editionexplicit;2025soft404notused. CurrentIRMcorroboratesusedstructure. | 2026-11-16 |
+| [IRS IRM4.23.8.5](https://www.irs.gov/irm/part4/irm_04-023-008) | Read for 4.23.8.5–.5.2,completeusedrules/exclusions;685–749. Actual usedoperativeparagraphs read;no new generalizedpenaltytariff. | 2026-11-16 |
+| [Directive(EU)2024/2831](https://publications.europa.eu/resource/cellar/564844cf-9fd2-11ef-85f0-01aa75ed71a1.0006.03/DOC_1) | Read for Articles4–5,29–31. Actual fullusedlegalclausesread. InitialCELEXRDFnotbody;no nationaltranspositioninferred. | 2026-11-16 |
+| [Directive96/71/EC,30July2020consolidation](https://publications.europa.eu/resource/cellar/68a991b1-7027-11ea-a07e-01aa75ed71a1.0006.03/DOC_1) | Read for Articles1–3infull. Actual wholeusedlegalclausesreadincluding exceptions/remuneration/replacements/collectiveagreements. NotGermanexecutionclearance. | 2026-11-16 |
+| [UK–EU TCA Protocol](https://assets.publishing.service.gov.uk/media/608ae0c0d3bf7f0136332887/TS_8.2021_UK_EU_EAEC_Trade_and_Cooperation_Agreement.pdf) | Read for Official UK treaty publication of TCA: cover; Articles 489–490 and 783; SSC.2–3, 10–14, 17–18, 21–27, 56–58, 68–71; Annex SSC-7 SSCI.13–17 and opening SSCI.18(1). No blanket reading claim for the full treaty or every benefit annex.. Actual completed15Nov primary/independentreview reused unchanged;16Nov boundedapplicabilitycheck. EUamendmentnotimportedintoTCA. | 2026-11-15 |
+| [UK–EU Decision1/2021,AnnexSSC8](https://assets.publishing.service.gov.uk/media/61a5f3ebe90e07043c35f448/TS_21.2021_Decision_No_1.2021_Specialised_Committee_Social_Security.pdf) | Read for Decision 1/2021: cover, recitals, Articles 1–2 and complete Annex II replacement SSC-8 list; benefit-specific Annex I entries not relied on.. Actual completed15Nov primary/independentreview reused unchanged;16Nov boundedapplicabilitycheck. EUamendmentnotimportedintoTCA. | 2026-11-15 |
 
-### Example: Employee Moves Mid-Vest [T2]
+Individually **not yet confirmed and non-usable**: current EOR employee-count/fee/licensing claims; exact foreign-employer registration/withholding procedures in unlisted states; the former national economic-employer list for Germany/Sweden/Denmark/Norway/Finland/UK/Australia/India/Singapore as a uniform adoption claim; actual case-specific UK–Germany TCA coverage and national certificate routing; Australia's current “30+” agreement count and each agreement's scope; Indian agreements with Germany/France/Belgium/Netherlands and current domestic classification/labour-code/withholding/GST execution; French current penalty amounts/person/offence/recidivism; German EUR 500,000/§266a criminal claims; UK/Spain specific penalty and benefit limitation outcomes; Australia's old AUD 469,500 ceiling, exact-15 employee size branch, superannuation and six-year leave recovery; all original UK/German/French/Indian/Australian equity event/rate/relief rows and US RSU event; actual Germany–UK RSU workday/vesting/event/credit outcome and lawful FX conversion; US–Portugal PE and Portuguese payroll/employment execution; Malta–Germany tax treaty and German posted-worker notification/sector pay execution. Do not use these as current rules or pass them through a calculator. Failed ordinary retrievals, historical manual boundaries and the narrow reasons are retained in the private evidence register.
 
-**Facts:** Employee granted 1,000 RSUs with 4-year vest. Works in Germany for years 1–2, then moves to UK for years 3–4. Vest value: €200,000.
-
-**Apportionment table**
-
-| Country | Apportionment | Taxable Amount |
-| --- | --- | --- |
-| Germany | 730 / 1,460 days = 50% | €100,000 at German income tax rates |
-| UK | 730 / 1,460 days = 50% | £85,000 (converted) at UK income tax rates |
-
-Both countries tax their portion. Employee claims Foreign Tax Credit in whichever country is the residence at vest to avoid double taxation. Coordination between German and UK advisors is essential.
-
-## Section 8: Practical Scenarios
-
-### Scenario 1 — Remote Developer, Employer US, Worker in Portugal [T1]
-
-**Facts:** US tech company hires a developer who lives and works from Portugal. No EOR. No Portuguese entity.
-
-**Issues:**
-- Portugal requires income tax withholding on employment income earned there
-- Portuguese social security contributions are owed (no US-Portugal totalization agreement)
-- The developer's home office could create a PE for the US company in Portugal
-- Portuguese employment law may apply (termination protections, minimum benefits)
-
-**Recommendation:** Use an EOR in Portugal, or register the US company for Portuguese payroll. Do NOT ignore local obligations.
-
-### Scenario 2 — Business Traveler, UK Employee Visits Germany 80 Days [T1]
-
-**Facts:** UK employee travels to the German subsidiary for 80 days in a 12-month period.
-
-**Assessment:**
-- 80 days < 183 days ✓
-- Paid by UK employer ✓
-- BUT: Is cost recharged to German subsidiary? If yes, condition (c) fails.
-- Does Germany apply economic employer concept? Yes — if German entity supervises and benefits, tax may be due from day one.
-
-**Recommendation:** Assess economic employer status. If recharge exists, set up shadow payroll in Germany. Obtain A1 certificate for social security.
-
-### Scenario 3 — Contractor in India for UK Client [T1]
-
-**Facts:** UK company engages an Indian independent contractor for software development. Paid monthly in GBP.
-
-**Assessment:**
-- If genuinely independent (own clients, own tools, no integration): legitimate contractor
-- India's contract labour rules and withholding requirements still apply
-- UK IR35 does NOT apply to overseas contractors (only UK-based engagements)
-- Indian contractor must invoice with GST if registered, or without if below threshold
-
-**Key risk:** If the Indian "contractor" works exclusively for the UK company, Indian authorities may reclassify as employment.
-
-### Scenario 4 — EU Posted Worker, Malta to Germany [T1]
-
-**Facts:** Maltese company sends an employee to Germany for 18 months.
-
-**Assessment:**
-- A1 certificate needed: apply to Malta's social security authority
-- Employee remains under Maltese social security (Art 12, ≤24 months)
-- German income tax withholding required (>183 days)
-- Shadow payroll needed in Germany
-- EU Posted Workers Directive: employee must receive at least German minimum wage, working time limits, and other core conditions
-
-## PROHIBITIONS
-
-- **Prohibition 1** — NEVER assume the 183-day rule is an automatic exemption. All three conditions must be met.
-- **Prohibition 2** — NEVER ignore the economic employer concept in countries that apply it — host-country tax can be triggered from day one.
-- **Prohibition 3** — NEVER rely on the contract label (contractor vs employee) to determine classification. Host-country substance-over-form rules apply.
-- **Prohibition 4** — NEVER skip the A1 certificate for EU/EEA cross-border work. Without it, the host country can demand contributions.
-- **Prohibition 5** — NEVER assume equity compensation is only taxed in the country where the employee is at vest. Multi-country apportionment applies.
-- **Prohibition 6** — NEVER let an employee work remotely from a foreign country without assessing PE risk, tax obligations, and social security.
-- **Prohibition 7** — NEVER ignore employment law in the host country. Local minimum wage, termination rules, and benefits may apply regardless of what the contract says.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. Employment tax, social security, and employment law rules vary by jurisdiction and change frequently. All outputs must be reviewed by a qualified professional before acting upon.
-
-*Data reflects 2025–2026 rules. OpenAccountants — open-source accounting skills for AI — info@openaccountants.com*
+The **USD 300–700** EOR range and **1–10** employee recommendation, **83%** German pension shorthand, **more-than-six-month** PE trigger, **EUR 45,000 / EUR 500,000 / AUD 469,500** blanket penalties, and **six years** of automatic leave remain here solely to identify superseded/unverified assertions. They do not supply a usable threshold or tariff. The original “20% of wages” federal computation and “no US–Portugal agreement” were affirmatively corrected, not put back into service through this reservation.
