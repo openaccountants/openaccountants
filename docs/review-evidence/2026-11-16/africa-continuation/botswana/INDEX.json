@@ -1,0 +1,153 @@
+{
+  "state": "independently reviewed limited draft; CIPA incorporation incomplete",
+  "base_main": "bbab4f1a6d82cace432e6ca8eda89c98ffb1c038",
+  "reviewed_guide_commit": "ee5814f8b8ab580b1930244b1bc7b7eeb4faf627",
+  "guides": {
+    "bw-company-formation.md": {
+      "sha256": "63c2bbeaed1e2b17733a97da32e7cd21cb0f53c543232501daa84849b06f3655",
+      "bytes": 11014,
+      "role": "candidate"
+    },
+    "bw-tax-overview.md": {
+      "sha256": "a916136f9b5f0f5b12035a74f00e300144fa5bf0976bec81301d423ed0578a12",
+      "bytes": 11126,
+      "role": "candidate"
+    }
+  },
+  "archive": {
+    "path": "evidence.tar.gz",
+    "sha256": "a0c57300d7094c3be71f54d7c60e3f7b4b7655408dedb159cc6be611e7de104f",
+    "bytes": 24967,
+    "members": [
+      {
+        "path": "FINAL-OWNERSHIP-PREFLIGHT.json",
+        "bytes": 3495,
+        "sha256": "21461c1b3998ef899e5f9df37a4b12469f1e7d565964229fba78a65d3c29aef1"
+      },
+      {
+        "path": "independent-review/REVIEW.json",
+        "bytes": 9545,
+        "sha256": "91642b958e43679963fc37e3b5b8e4ef5cfad14ea57207ab4066d54f255a4533"
+      },
+      {
+        "path": "independent-review/REVIEW.md",
+        "bytes": 7813,
+        "sha256": "4ca0ed741c9238b8c9cb1cf414848b94a1ddb6663de0e42245815e0694a4092a"
+      },
+      {
+        "path": "original-guides/bw-company-formation.md",
+        "bytes": 4317,
+        "sha256": "e1f3df9e51fedc8c2242e3063e9f34f8e7d2b5d6b9c9afccf2417029a5c59c18"
+      },
+      {
+        "path": "original-guides/bw-tax-overview.md",
+        "bytes": 4351,
+        "sha256": "fbfbeaa866c8d2b157e0babeb76498bdea64b317fc92a1bc10a00f845e0c2853"
+      },
+      {
+        "path": "reviewed-guides/bw-company-formation.md",
+        "bytes": 11014,
+        "sha256": "63c2bbeaed1e2b17733a97da32e7cd21cb0f53c543232501daa84849b06f3655"
+      },
+      {
+        "path": "reviewed-guides/bw-tax-overview.md",
+        "bytes": 11126,
+        "sha256": "a916136f9b5f0f5b12035a74f00e300144fa5bf0976bec81301d423ed0578a12"
+      },
+      {
+        "path": "writer/FILE-BINDINGS.json",
+        "bytes": 2165,
+        "sha256": "99c2a91ad172151535e99a69936eb46c02a7c2e5d91ac750e50aa0e1a6399e55"
+      },
+      {
+        "path": "writer/OLD-TOPICS.md",
+        "bytes": 7519,
+        "sha256": "b42170f29a05d36ae929cb835cf801c1e133bd82de5e66e44246c5ead7ee70d4"
+      },
+      {
+        "path": "writer/PUBLIC-MANIFEST.json",
+        "bytes": 2455,
+        "sha256": "4fa25312558816fa4253b4bc010590f9d661e32a68c972910ba1084ebd328891"
+      },
+      {
+        "path": "writer/SOURCE-INVENTORY.json",
+        "bytes": 3476,
+        "sha256": "98ae94d52a3dcf0740c13b3abcd4cc1816ce68b29e8c58e69309f0302cb0277c"
+      },
+      {
+        "path": "writer/WRITER-REPORT.md",
+        "bytes": 3191,
+        "sha256": "8d2f0961ff8dedc96382bec71f771d5c0d6fc04ebbf64ebaed10ceb7d5b507dc"
+      },
+      {
+        "path": "writer/checks/INITIAL-SETUP-FAILURES.txt",
+        "bytes": 598,
+        "sha256": "d8633e2aec20c8c6c5ebeee675fd4f8f4d5d6373ec4a3e97a678f0e36a6f28dc"
+      },
+      {
+        "path": "writer/checks/RESULTS.json",
+        "bytes": 1178,
+        "sha256": "f6061dd1b9bae8548e57270d9bef1d34d658e1bd7c4b4265d684e5301052a733"
+      },
+      {
+        "path": "writer/checks/calculator-quote-tests.txt",
+        "bytes": 119,
+        "sha256": "9c32248925f6c11679bbad644bebd877af1ee0bf36c774455f2562493da4f606"
+      },
+      {
+        "path": "writer/checks/calculator-quotes.txt",
+        "bytes": 156,
+        "sha256": "8375491306397d767a4fbd63d9c1352d39cd7b93726c352de02aee87678ae807"
+      },
+      {
+        "path": "writer/checks/copy-tests.txt",
+        "bytes": 100,
+        "sha256": "31cdcb869d5dd1f5b84ae4dddcf52f3ecc3d5b36aa4ed61beba81727b12e4955"
+      },
+      {
+        "path": "writer/checks/examples.txt",
+        "bytes": 58,
+        "sha256": "7c590db046c651c68e400ac610a23d93cbd7f4b58fcafb9da660491c644e5209"
+      },
+      {
+        "path": "writer/checks/row-sources-cached.json",
+        "bytes": 381,
+        "sha256": "77c3cf066eb36dbb31f3f8e8c8b2402c9a99b2a6b288426c856d783f6ec969b2"
+      },
+      {
+        "path": "writer/checks/skill-checks.json",
+        "bytes": 96,
+        "sha256": "c2297a4ca59c4b4a1c2bf6c911355315ffc64ba025ff913230a0ad47d0300cb8"
+      },
+      {
+        "path": "writer/checks/sync.txt",
+        "bytes": 81,
+        "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9"
+      },
+      {
+        "path": "writer/checks/validate.txt",
+        "bytes": 192,
+        "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa"
+      },
+      {
+        "path": "writer/ledgers/bw-company-formation.md",
+        "bytes": 5776,
+        "sha256": "759831af32da86b40b5017eaec8a9d4dc47db74b86474745421769db29398990"
+      },
+      {
+        "path": "writer/ledgers/bw-tax-overview.md",
+        "bytes": 7619,
+        "sha256": "1d28dcb371ee72a2ff5755d527aef0ff0a1b0cdfdcdf57036a376a32c4a0c2d2"
+      }
+    ]
+  },
+  "independent_review": {
+    "path": "independent-review/REVIEW.json",
+    "canonical_bytes_preserved": true,
+    "rules_checked": 35,
+    "old_topics_checked": 65,
+    "cases_recomputed": 2,
+    "material_findings": 0
+  },
+  "full_law_html_session_captures_published": false
+}
