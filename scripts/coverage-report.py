@@ -204,6 +204,14 @@ def on_current_year(guide):
     return not skill_checks.check_tax_year_current(path, text, skill_checks.read_frontmatter(text))
 
 
+def standard_problems(guide):
+    """Names of the 2026-standard checks a skill file fails (skill_checks.run_checks). Empty = passes."""
+    path = os.path.join(REPO_ROOT, guide["path"])
+    with open(path, encoding="utf-8", errors="replace") as fh:
+        text = fh.read()
+    return sorted(name for name, problems in skill_checks.run_checks(path, text, skill_checks.read_frontmatter(text)).items() if problems)
+
+
 def is_reviewed(guide):
     return str(guide.get("tier")) == "1" and bool(guide.get("reviewed_by"))
 
@@ -263,6 +271,9 @@ def build_report(today=None):
         in_scope = required_guides(guides, required, covered_by)
         outdated = sorted(g["slug"] for g in in_scope if not on_current_year(g))
         unsigned = sorted(g["slug"] for g in in_scope if not is_reviewed(g))
+        # Approved files are never rewritten by us, so they are not counted against the standard.
+        failing = {g["slug"]: standard_problems(g) for g in guides if not is_reviewed(g)}
+        failing = {slug: names for slug, names in failing.items() if names}
         rows.append({
             "code": code,
             "name": info.get("name") or code,
@@ -271,6 +282,9 @@ def build_report(today=None):
             "dir": pack_dir,
             "skills": len(guides),
             "reviewed": sum(1 for g in guides if is_reviewed(g)),
+            "approved": sorted(({"slug": g["slug"], "by": g.get("reviewed_by")} for g in guides if is_reviewed(g)), key=lambda a: a["slug"]),
+            "at_standard": sum(1 for g in guides if not is_reviewed(g)) - len(failing),
+            "below_standard": [{"slug": slug, "fails": names} for slug, names in sorted(failing.items())],
             "stale": sum(1 for g in guides if is_stale(g, today)),
             "present": sorted(present, key=DOMAIN_CODES.index),
             "missing": missing,
@@ -288,6 +302,7 @@ def build_report(today=None):
             rows.append({
                 "code": code, "name": info.get("name") or code, "region": info.get("region") or "unassigned",
                 "owner": info.get("owner") or "open", "dir": info.get("dir") or "", "skills": 0, "reviewed": 0,
+                "approved": [], "at_standard": 0, "below_standard": [],
                 "stale": 0, "present": [], "missing": list(DOMAIN_CODES), "not_applicable": {}, "partial": {},
                 "has_readme": False, "outdated": [], "unsigned": [], "complete": False, "state": "needs_writing",
             })
@@ -301,6 +316,8 @@ def build_report(today=None):
         "states": {s: sum(1 for r in rows if r["state"] == s) for s in STATES},
         "with_readme": sum(1 for r in rows if r["has_readme"]),
         "reviewed_skills": index["counts"]["accountant_reviewed"],
+        "at_standard": sum(r["at_standard"] for r in rows),
+        "below_standard": sum(len(r["below_standard"]) for r in rows),
         "rows": rows,
         "not_covered_sanctioned": [
             {"code": c["code"], "name": c["name"], "state": "Not covered (sanctioned)"}
