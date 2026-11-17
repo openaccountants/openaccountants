@@ -66,7 +66,7 @@ maintainer-controlled readiness or merge outside ingestion.
 
 The truthful SRC method for the Yerevan tourist-house meal declaration remains
 unverified and non-usable. Every earlier specialist, unread-future-enactment,
-taxpayer-fact, source/implementation and professional-attestation limit remains.
+taxpayer-fact, source/implementation and professional-approval limit remains.
 The seven referral-domain skills are not newly certified by this three-file
 review. No live portal or return, production data, professional approval or
 ingestion was supplied by this review.
