@@ -1,10 +1,10 @@
 ---
 name: eg-financial-statements
 description: Use this skill whenever asked about Egyptian financial statements, financial reporting, or the accounting standards an Egyptian business must follow. Trigger on phrases like "Egypt financial statements", "Egyptian Accounting Standards", "EAS", "القوائم المالية", "المعايير المحاسبية المصرية", "do I file accounts Egypt", "audit Egypt company", "audited financial statements Egypt", "balance sheet Egypt", "IFRS Egypt", "EGX listed company accounts", "FRA filing", or any request to explain who must prepare, audit, or file financial statements in Egypt and and what a self-employed person files instead. ALWAYS read this skill before advising on Egyptian financial reporting or audit.
-version: 1.2
+version: 1.3
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-17
 depends_on:
   - income-tax-workflow-base
 category: financial-statements
@@ -14,7 +14,7 @@ domain: financial-statements
 type: situation-rules
 ---
 
-# EG Financial Statements v1.2
+# EG Financial Statements v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -87,7 +87,7 @@ Plain-language framing for a sole proprietor: "You file your income tax return w
 | Taxpayer | What is filed | Deadline | Source |
 |---|---|---|---|
 | Individual, general system | Annual return with every table; a return missing tables does not count | Before 1 April of the following year (tax year 2026: by 31 March 2027) | [Law 206 of 2020](https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf) art. 31(c) |
-| Individual, Law 6 | Form 20 إقرارات | Same dates: 1 January to 31 March | [Law 6 of 2025](https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf) art. 12; [MoF 420 of 2025](https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.420.of_.2025.pdf) art. 2 |
+| Individual, Law 6 | Form 20 إقرارات | Same dates: before 1 April of the following year | [Law 6 of 2025](https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf) art. 12; [MoF 420 of 2025](https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.420.of_.2025.pdf) art. 2 |
 | Company | Annual return with the statements | Before 1 May, or within four months of the financial year end | [Law 206 of 2020](https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf) art. 31(c) |
 | Listed or FRA-regulated company | FRA and EGX periodic statements in addition | FRA rules (the FRA has extended some periodic filing periods by board decision) | [FRA list](https://fra.gov.eg/%d8%aa%d8%b4%d8%b1%d9%8a%d8%b9%d8%a7%d8%aa-%d9%85%d8%b9%d8%a7%d9%8a%d9%8a%d8%b1-%d8%a7%d9%84%d9%85%d8%ad%d8%a7%d8%b3%d8%a8%d8%a9-%d9%88%d9%85%d8%b1%d8%a7%d9%82%d8%a8%d9%8a-%d8%a7%d9%84%d8%ad%d8%b3-2/) |
 

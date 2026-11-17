@@ -1,1102 +1,206 @@
 ---
 name: ng-return-assembly
-description: "Use this skill whenever asked to assemble, finalize, or package a Nigerian annual tax return. Trigger on phrases like \"assemble Nigerian return\", \"Nigeria SPT package\", \"final review Nigerian tax\", \"FIRS Tax Pro-Max submission\", \"year-end Nigeria\", \"prepare CIT return\", \"prepare PIT return\", \"Nigeria filing package\", \"Form A annual return\", \"Form H1 reconciliation\", or \"Nigerian working paper\". This is the capstone orchestrator that pulls together outputs from ng-cit, ng-personal-income-tax, ng-paye, ng-statutory-deductions, ng-wht, ng-cgt, ng-vat, ng-payroll, and ng-formation into a single unified working paper plus payment and filing instructions. It does not recompute anything itself — it reconciles upstream outputs, builds the line-by-line return working paper, generates Tax Pro-Max / Remita payment instructions, and produces a reviewer brief and taxpayer action list. ALWAYS read this skill last — it's the capstone."
+description: "Assemble Nigerian 2026 personal or company tax working papers from completed computations, including identity, income, gains, credits, VAT, PAYE and contribution reconciliations. Produce the master workbook, reviewer brief and taxpayer action list with separate federal/state filing and payment evidence. Does not submit returns, invent upstream figures or revive old rates and portal assumptions."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ng-return-assembly"
   jurisdiction: "NG"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-16"
 ---
 
-# NG Return Assembly
+# Nigeria return assembly v1.1
 
-## Nigeria — Return Assembly (Capstone) — Skill v1.0
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Rates and thresholds
+## Scope
 
-- **Review statement** — Reviewed against the cited tax authorities by Omolola Fasasi on 2026-06-21. Items flagged for further clarification are tracked separately and excluded here. This block is generated from verified skill_facts — edit the facts, not the prose.
+Produce a reviewer-ready annual return package for a full-year Nigerian resident individual/sole proprietor or ordinary resident company. This is an assembly method: consume the owning computations and independently reconcile their totals without substituting another set of tax rates. A taxpayer can need a State/FCT personal return and a separate NRS VAT or employer obligation. Authority follows the tax and person; a single combined workbook is not a single combined filing. [NTAA sections 3,11,13,14,22 and28](https://nass.gov.ng/documents/download/11250).
 
-### ng-return-assembly
+Historical provenance retained from the original: **"Reviewed against the cited tax authorities by Omolola Fasasi on 2026-06-21."** That is an old exported body statement, not approval of this rewrite. This file remains tier2 and carries no current accountant approval. The old instruction that this paragraph was generated from verified skill_facts is not a source for current law.
 
-- **Individual PIT (Form A) filing deadline** — 31 March (90 days after year-end)  _(PITA Section 41)_
-- **Employer Form H1 (annual PAYE reconciliation) filing deadline** — 46053  _(PITA Section 81)_
-- **CIT Self-Assessment Return deadline (31 December 2025 year-end)** — 6 months after FYE; 30 June 2026 for 31 Dec 2025 year-end  _(CITA Section 55)_
-- **VAT monthly return deadline** — 21st of the following month  _(VAT Act Section 14)_
-- **Plc CIT rate** — 30% percent (typically falls in the large-company band under NTA 2025)  _(NTA 2025)_
-- **CIT rate — medium companies** — 20%  _(CITA + Finance Acts)_
-- **CIT rate — small companies** — 0%  _(CITA + Finance Acts)_
-- **NTA 2025 CIT changes effective date** — 46023  _(Nigeria Tax Act 2025)_
-- **Tertiary Education Tax (TET) rate** — Abolished  _(Nigeria Tax Act 2025)_
-- **CGT rate - companies** — 0.3  _(NIGERIA TAX ACT 2025)_
-- **Employee pension contribution rate** — 8% of monthly emoluments  _(Pension Reform Act 2014)_
-- **Employer pension contribution rate** — 10% of monthly emoluments  _(Pension Reform Act 2014)_
-- **Total combined pension contribution rate (employer + employee)** — 18% of monthly emoluments  _(Pension Reform Act 2014)_
-- **Pension remittance deadline** — Within 7 working days of salary payment  _(PRA 2014 Section 11(3))_
-- **NHF contribution rate** — 2.5% of basic salary
-- **NHF contribution — minimum earnings threshold** — #70,000 per month
-- **ITF levy rate** — 1% of total annual payroll
-- **ITF levy applicability — employee threshold** — Employers with ≥ 5 employees
-- **ITF levy applicability — turnover threshold** — ≥ ₦50,000,000 turnover
-- **ITF levy payment due date (2025 payroll year)** — 1 April 2026
-- **NSITF contribution rate** — 1% of total monthly payroll
-- **ITF levy applicability — employee threshold** — Employers with ≥ 5 employees
-- **WHT rate on professional fees** — 5%
-- **WHT rate on rent / royalties / dividends / interest** — 10%
-- **WHT on contract payments to individuals (State IRS)** — 5%
-- **Late-filing penalty for Form H1 — company employer** — ₦500,000  _(PITA Section 81(3))_
-- **Late-filing penalty for Form H1 — individual employer** — ₦50,000  _(PITA Section 81(3))_
-- **WHT credit note shelf life under CITA** — 6 years  _(CITA Section 78A (Finance Act 2019))_
-- **WHT credit note practical verification flag age** — 3 years (flag any credit note older than 3 years for confirmation)
-- **TIN digit length** — 10 digits
-- **Tax year for individuals** — Calendar year: 1 January – 31 December
-- **Tax year for companies** — Accounting year-end (any 12-month period)
-- **NTA 2025 assent date** — June 2025  _(Nigeria Tax Act 2025)_
-- **NTA 2025 key provisions effective date** — 1 January 2026  _(Nigeria Tax Act 2025)_
-- **Foreign tax credit cap — individual (PIT)** — Under the Nigeria Tax Act (NTA), the cap for the Foreign Tax Credit for resident individuals (Personal Income Tax - PIT) is limited to the lower of the tax actually paid in the foreign country or the Nigerian tax attributable to that foreign incom  _(Nigeria Tax Act 2025)_
-- **Foreign tax credit cap — corporate (CIT)** — there is no flat, unilateral foreign tax credit cap for Companies Income Tax (CIT)  _(Nigeria Tax Act 2025)_
+| Filing control | Rule and conditions | Primary source |
+| --- | --- | --- |
+| Existing company annual return | Within6 months after accounting year-end | [NTAA section 11(5)(a)](https://nass.gov.ng/documents/download/11250) |
+| New company first return | Earlier of18 months after incorporation and6 months after its first accounting period | [NTAA section 11(5)(b)](https://nass.gov.ng/documents/download/11250) |
+| Company cessation | No later than6 months after cessation | [NTAA section 11(5)(c)](https://nass.gov.ng/documents/download/11250) |
+| Individual annual return | JRB:31 March of assessment year, preceding income basis; PAYE/nil-tax status does not alone remove filing | [NTAA section 13](https://nass.gov.ng/documents/download/11250); [JRB paragraph 11](https://cms-api.jrb.gov.ng/api/publication-assets/file/2026-pit-guidelines-TJG3n9-T%20%281%29.pdf) |
+| Employer annual return |31 January for employees in the preceding year | [NTAA section 14](https://nass.gov.ng/documents/download/11250) |
+| Self-assessed payment | By filing due date; approved instalments must finish by that date | [NTAA section 49](https://nass.gov.ng/documents/download/11250) |
+| Records | Keep required records6 years after relevant assessment year | [NTAA section 31](https://nass.gov.ng/documents/download/11250) |
+| Late return | NGN 100,000 first month and NGN 50,000 each subsequent month of failure; do not use the old CITA or PITA filing penalties for a current NTAA obligation | [NTAA section 101](https://nass.gov.ng/documents/download/11250) |
+| Tax clearance | Issue within 2 weeks of demand or give denial reasons, where assessment fully paid/no tax due; prescribed dealings refer to preceding3 assessment years | [NTAA section 72](https://nass.gov.ng/documents/download/11250) |
 
-## How this workflow runs
+For illustration, an existing ordinary company with31 December2026 year-end has30 June2027 due date;2026 employee annual reporting has31 January2027 due date. A preceding-basis individual2027 assessment filing date is31 March2027 under the JRB guideline. These are derived calendar examples, subject to actual period and a sourced extension. Earlier2025 year-end/company30June2026, individual31March2026 and employer31January2026 examples are historical dates, already past at this read date; do not present them as upcoming.
 
-Intake and the content Guides have already collected the facts for this working paper. Use what they captured, and ask the user again only where something is missing or contradicts itself.
+## Ask the client first
 
-Specifically:
+Use the complete existing intake, case record, accounts and upstream outputs before asking anything again. Ask only for a missing item that changes finalisation:
 
-- Do NOT ask "do you want me to assemble the full package". The user asked for the return. Produce it.
-- Do NOT re-interrogate the user about residency, TIN, RC number, or business structure — intake already captured this; trust the upstream packages.
-- Do NOT pause between reconciliation steps to check in. Run all cross-checks in sequence; flag failures in the reviewer brief and continue.
-- Self-checks are targets, not blockers. If a check fails, note it under "Reviewer Attention Flags" and continue.
-- Do NOT submit anything to FIRS Tax Pro-Max or any State IRS portal. This skill produces a working paper plus filing instructions. A Chartered Accountant in Nigeria (ICAN or ANAN member) must review, and the taxpayer (or authorised filer) submits via the relevant portal.
+1. Taxpayer legal identity/individual-company status, Tax ID, RC/BN/NIN as applicable, employer code/RSA where relevant, State/FCT and residence history, tax office, basis period and assessment year.
+2. Signed/attested accounts, bookkeeping trial balance, current computation outputs, asset/loss schedules and all-source income, including gains, foreign items and employment.
+3. PAYE/WHT credit evidence and schedules, advance tax, prior offsets/refunds, assessments, payment proof and filing acknowledgements; authority/period for each item.
+4. Monthly VAT, payroll and social-contribution returns/remittances, employer headcount, contribution coverage and outstanding certificates/notices.
+5. Related-party transactions, donations/incentives, special-sector facts, unresolved discrepancies, missing upstream work and actual filing authority/portal access delegated to the authorised filer.
 
-If you feel the urge to ask "how should I proceed", pick the most defensible path, proceed, and flag the decision for the reviewer.
+## The method, step by step
 
-## What this file is
+### Consume the existing work and fix identity/period
 
-The final capstone skill for Nigerian annual tax returns. It consumes the outputs of every other Nigeria skill and assembles a single unified working paper covering either:
+Do the authorised reconciliation and prepare the package without asking whether to assemble it. Use [ng-freelance-intake](ng-freelance-intake.md), [ng-formation](ng-formation.md), [ng-personal-income-tax](ng-personal-income-tax.md), [ng-cit](ng-cit.md), [ng-cgt](ng-cgt.md), [ng-wht](ng-wht.md), [ng-payroll](ng-payroll.md), [ng-pension-nhf-social-contributions](ng-pension-nhf-social-contributions.md) and [nigeria-vat](nigeria-vat.md), subject to their own unresolved items. ng-income-tax retains the narration library. Old ng-paye/ng-statutory-deductions/ng-foundation/ng-intake names are not existing owning files. Do not edit or infer renewed approval for the held VAT files.
 
-- Personal Income Tax (PIT) Form A — annual return for resident individuals (including sole proprietors), filed with the relevant State Internal Revenue Service (SIRS / LIRS for Lagos, FCT-IRS for Abuja, etc.) under the Personal Income Tax Act (PITA) as amended
-- Companies Income Tax (CIT) Self-Assessment Return — annual return for resident companies (RC), filed with the Federal Inland Revenue Service (FIRS) under the Companies Income Tax Act (CITA) as amended, supplemented by Tertiary Education Tax (TET) under the Tertiary Education Trust Fund Act, and where applicable the new Development Levy introduced by the Nigeria Tax Act 2025
+Make one identity sheet: legal name, person type, registration/TIN evidence, RC/BN, NIN where required, address/contact, State/LGA, employer code, RSA, authority, accounting start/end and YOA. Verify the issued Tax ID rather than demand a fictional universal10-digit or12-digit format. Keep federal and State tax/payroll codes separate. NTAA sections 4 to8 require registration/use and prohibit multiple/misused Tax IDs. Do not substitute place of employment for the First Schedule residence test. [NTAA sections 3 to8/First Schedule](https://nass.gov.ng/documents/download/11250).
 
-The output is a reviewer-ready package: line-by-line return working paper, cross-skill reconciliation table, payment instructions (Tax Pro-Max billing reference and Remita RRR), filing instructions for federal and state portals, reviewer checklist, and taxpayer action list.
+Resolve effective-law and basis-period differences before selecting rates. ng-cit records the official NTA-copy differences; ng-personal-income-tax records current versus historical CRA, gains and basis rules. The original2026 planning notes are now current-law review topics, not permission to back-apply new thresholds. Unresolved full transition guidance remains held under Sources. State all comparison alternatives where necessary; no arbitrary higher bracket, automatic allowance cap, donor disallowance or authority selection can replace evidence.
 
-## Section 1 — Quick reference
+If an upstream computation did not run or a self-check fails, name it and continue assembling the available working paper. A partial package may be useful, but it is not final or ready to file until material held positions and identity/payment issues are resolved. Do not fabricate a missing amount or treat a failed check as passed.
 
-**Quick reference table**
+### Run the eight reconciliations
 
-| Field | Value |
+1. **Revenue:** anchor to books/trial balance. Bridge gross income in the tax computation to annual VAT supplies and WHT-associated receipts. Explain exempt/zero-rated/out-of-scope supplies, accrual/cash timing, credit notes, disposals, foreign receipts and intragroup elimination. WHT divided by a rate can be a diagnostic only after correct rate/base/period and gross-up are known; it is not substitute turnover.
+2. **Credits:** separate PAYE, creditable recipient WHT, advance payments, foreign tax and approved prior offsets. Match each to taxpayer, period, authority, gross receipt and supporting evidence; eliminate duplicates and final-taxed dividends/passive items. Outgoing WHT remitted for suppliers is not the payer's own income-tax credit. Final dividend withholding is not ordinary CIT credit; use ng-wht and ng-cit for franked income/redistribution and excess-dividend exceptions. Do not assume a universal6-year WHT expiry; section 55's refund-claim period is a different issue. A credit older than3 years is an internal verification flag, not statutory expiry.
+3. **Payroll:** employee/YTD totals and employer annual return must reconcile to every monthly payroll return, salary bank payment, PAYE liability and authority receipt, including joiners/leavers, benefits, bonus and December true-up. Use actual H1/FormG labels only where the authority prescribes them.
+4. **Contributions:** employee deductions plus employer accruals must reconcile to scheme coverage, monthly registers, pension/PFC/NHF/ECS/ITF/health payments and receipts; identify arrears, missing RSA allocation and penalty exposure. Do not automatically treat every certificate as a statutory TCC prerequisite.
+5. **WHT agent:** contracts, expense/AP ledger, payer schedules and deductions/remittances agree by payee, nature, residence, Tax ID, tax point, authority and currency. Apply the separate receipt-credit rule; recipient credit is not always defeated by a payer's failure to remit.
+6. **VAT:** sum every relevant return and reconcile output supplies, credit notes, input recovery, balances and payments. VAT is not a CIT/PIT credit. Recoverable input VAT is not also an expense/asset cost; non-recoverable VAT follows the relevant underlying treatment. A company income-tax exemption does not by itself remove VAT.
+7. **Assets/gains/losses:** compare fixed-asset register, book depreciation, additions/disposals, qualifying cost, allowances, gain residue, reinvestment and loss use; prevent double deduction. Transfer current chargeable gains into income tax rather than assume every current gain needs an independent flat10% charge.
+8. **Differences:** retain the original internal policy: investigate and show every difference; above NGN 1,000 flag Needs Input, above NGN 100,000 give it prominent reviewer attention. These are workflow priorities, not statutory tolerances or authority to write off smaller amounts. Explain and resolve differences; do not round them away.
+
+### Individual return working paper and field map
+
+Consume all-source employment, net trade/professional, partnership, rent, investment, digital and other income, chargeable gains, exemptions, eligible deductions, tax bands and credits from the personal-tax computation. Attach accounts, cost/asset/loss schedules, rent/insurance/pension evidence, PAYE and WHT registers and foreign-tax computation where relevant. Do not make another CRA or rate calculation inside this assembly.
+
+[JRB Appendix2](https://cms-api.jrb.gov.ng/api/publication-assets/file/2026-pit-guidelines-TJG3n9-T%20%281%29.pdf) maps **A** taxpayer identity; **B** YOA/filing mode/tax office; **C** employment/business information and source selection; **D** annual employment, business ScheduleX, rent ScheduleY, investment, gains ScheduleM and other ScheduleQ; **E** eligible deductions; **F** chargeable-income computation; **G** tax; **H** credits; **I** payable/overpayment; **J** taxpayer declaration; **K** official use. Its PartF repeats deduction references including E1/E2 not clearly labelled in PartE. Reconcile to the statute and actual authority's form and deduct eligible amounts once, rather than blindly subtract the same figure twice. Mark exempt/final-taxed income and corresponding adjustments transparently; do not force exempt amounts into taxable fields merely because a form has a line.
+
+NTAA section 13 permits audited statements OR accounts attested by the individual for trade/business; do not claim every sole trader needs a statutory audit. Employer filing does not replace personal annual filing. Do not complete official-use fields or sign the taxpayer declaration for them. A legacy "FormA" label does not guarantee identical parts across States.
+
+### Company self-assessment working paper
+
+Bring in legal identity/period/accounts; turnover and company-size test; accounting profit; add-backs; exempt/final-taxed adjustments; assessable profit; qualifying losses; allowances and taxable profit; CIT; development levy; any ETR top-up; separate historic TET/minimum-tax/incentive schedules where legally applicable; credit register; balance due/overpayment and payment evidence. Use the owners' actual ordering and limits. CIT and levy bases differ; the4% development levy replaces the legacy levies for the adopted current regime, with historical transition held separately. A levy can remain when taxable profit falls after allowances. Apply ng-cit's **Dividend substitution check (NTA9)** to each declared dividend: source accounts/year, no/insufficient-total-profit trigger, entire-dividend base and all four exceptions; keep recipient WHT separate. Add conditional SCUML and scheme-certificate evidence to the compliance intake where the formation/AML owner or actual authority requires it. The original blanket SCUML/ITF/NSITF certificate prerequisite for TCC is unconfirmed and held, not a universal filing condition.
+
+Attach accounts and signed principal-officer attestation, computation, fixed assets/allowances, losses, donations/beneficiary evidence, recipient WHT, foreign-tax, incentives, related-party and gain schedules. NTAA section 11 allows a small company's taxpayer-attested accounts instead of audited statements; this is not a determination of CAMA corporate-audit exemption. Companies in the ETR regime have the additional prescribed return information. Related-party transactions require the arm's-length test under [NTA section 191](https://nass.gov.ng/documents/download/11249); do not invent a blanket LocalFile attachment or an unverified TP threshold. Separate current development levy from repealed/continuing historical levies and preserve transition evidence. [NTAA section 11](https://nass.gov.ng/documents/download/11250); [NTA sections 27,56,57,59,163,191,195 to198](https://nass.gov.ng/documents/download/11249).
+
+### Build the three deliverables
+
+1. **`[taxpayer_slug]_[income_period]_ng_master.xlsx`**, retaining the old2025 naming convention only for an actual2025 package. Sheets: Cover, Identity, FormA or CIT Self-Assessment, Tax Computation, Capital Allowances, Loss Relief, WHT Credit Notes Register, Statutory Deductions Register, VAT Reconciliation, Employer Annual/Monthly Reconciliation, Cross-Check Summary, Payment Schedule and Compliance Certificates Tracker. Keep source documents/references, formulas and status on every schedule; recalculate and check for broken references. This skill describes the output; it does not pretend an actual workbook has already been made.
+2. **`reviewer_brief.md`**: executive summary/identity/period; federal or State headline calculation; contributions; recipient/agent WHT; VAT; gains; payroll; formation/compliance identity; all eight reconciliations; attention flags; positions taken with legal sources; current-versus-historical planning and unresolved items. Include the exact tax, credits, paid amounts, remaining payable/overpayment, earliest deadline and responsible filer/body. Separate an evidenced fact, calculation, assumption and held position.
+3. **`taxpayer_action_list.md`**: immediate deadlines, each payment amount/tax type/authority/period/reference/status, each separate return/attachment, missing evidence, statutory contribution steps, certificate/TCC requests, monthly calendar, record policy, and authorised post-review submission. Clearly label partial outputs if interrupted; complete and disclose what remains.
+
+Place files in the actual writable delivery directory for the current environment and link all three. The old hardcoded `/mnt/user-data/outputs/` is not portable. Do not claim an incomplete output is final because a formatted file exists.
+
+### Review and attestation control
+
+Keep the original workflow's human-review gate before a filing package is released as ready. NTAA section 33 permits self-representation or an accredited agent; it does not impose a universal ICAN/ANAN signature on every self-filed return. Professional review here is the package's quality control, distinct from that legal representation rule. Preserve the original ICAN/ANAN/CITN/FRC fields as optional reviewer credentials where applicable, without inventing a person's name/number or reproducing private identifiers in public material.
+
+The brief carries an unsigned attestation with taxpayer/period/preparer, reviewer name/firm/credentials/date and checkboxes: accounts signed/attested; tax adjustments/allowances/reliefs checked; contribution/certificate status; credits verified; revenue/VAT differences explained; employer annual/monthly/payments tied; correct transition law; TP and special obligations assessed; applicable minimum-tax/ETR and dividend tests; actual payment and filing steps explained. An AI must not tick "reviewed" on behalf of a professional or fabricate a signature. An unresolved material item keeps the package in working-paper status.
+
+## Boundary and exception table
+
+| Trigger | Output consequence |
 | --- | --- |
-| Country | Federal Republic of Nigeria |
-| Federal tax authority | Federal Inland Revenue Service (FIRS) — soon transitioning to Nigeria Revenue Service (NRS) under NTA 2025 |
-| State tax authorities | 36 State Internal Revenue Services + FCT-IRS (Lagos = LIRS, Rivers = RIRS, etc.) |
-| Federal filing portal | FIRS Tax Pro-Max (https://taxpromax.firs.gov.ng) |
-| Payment platform | Remita (https://www.remita.net) — Treasury Single Account (TSA) consolidation |
-| Currency | NGN (Nigerian Naira / ₦) |
-| Tax year | Calendar year for individuals (1 January – 31 December); accounting year-end for companies (commonly 31 December, but any 12-month period) |
-| Current tax year | 2025 (filing window for Dec 2025 year-ends opens January 2026) |
-| Individual return | PIT — Form A (annual income declaration), filed with State IRS |
-| Corporate return | CIT Self-Assessment Return (Tax Pro-Max electronic form), filed with FIRS |
-| Employer annual return | Form H1 (annual PAYE reconciliation), filed with State IRS |
-| VAT return | FIRS VAT Form 002 (monthly) |
-| Individual filing deadline | **31 March 2026** (PITA Section 41 — 90 days after year-end) |
-| Employer Form H1 deadline | **31 January 2026** (PITA Section 81 — 31 January following year-end) |
-| CIT deadline | **6 months after FYE** — for 31 December 2025 year-end, due **30 June 2026** (CITA Section 55) |
-| VAT monthly deadline | **21st of following month** (VAT Act Section 14) |
-| Confirmation receipt | Tax Pro-Max acknowledgement (Federal); SIRS portal acknowledgement (State); Remita RRR / e-receipt for payment |
-| Governing law | Companies Income Tax Act (CITA, Cap C21 LFN 2004 as amended); Personal Income Tax Act (PITA, Cap P8 LFN 2004 as amended); Value Added Tax Act (Cap V1 LFN 2004 as amended); Capital Gains Tax Act (Cap C1 LFN 2004 as amended); Tertiary Education Trust Fund Act 2011; FIRS Establishment Act 2007; **Nigeria Tax Act 2025 (NTA 2025)** — assented June 2025, key provisions effective 1 January 2026 |
-| Skill version | 1.0 |
-
-## Section 2 — Required inputs from upstream skills
-
-The assembly skill does not recompute anything. It expects structured outputs from the following upstream skills. If an upstream skill did not run, the assembly notes the gap and continues with available data.
-
-### 2.1 Individual return (PIT Form A) — inputs
-
-**Individual return (PIT Form A) — inputs table**
-
-| Upstream skill | Output consumed | Where it lands on Form A |
-| --- | --- | --- |
-| `ng-personal-income-tax` | Chargeable income computation: gross income, allowable deductions, consolidated relief allowance (CRA), reliefs, PIT due at graduated rates | Form A Parts B, C, D |
-| `ng-paye` | Employment income from employer Form H1; PAYE already deducted at source via monthly Form G | Form A Part B (employment income); credit for PAYE in Part D |
-| `ng-statutory-deductions` | Pension (8% employee contribution), NHF (2.5%), NHIS, life assurance premium — all reducing chargeable income | Form A Part C (reliefs and allowances) |
-| `ng-wht` | WHT credit notes received as a recipient (e.g., 5%/10% on professional fees, rent, royalties, dividends, interest) | Form A Part D (tax credits) |
-| `ng-cgt` | Capital gains tax computation on chargeable assets disposed of in the year (10% rate under CGTA) | Filed separately on CGT return; cross-referenced in Form A net worth schedule |
-| `ng-vat` | If sole proprietor is VAT-registered: monthly VAT return position; cross-check of turnover only | Cross-check, not on Form A directly |
-| `ng-payroll` | Sole proprietor as employer: PAYE for staff, pension remittance, NHF — supports the H1 the proprietor files | Separate Form H1; supports Form A Part C if proprietor's own pension contribution exists |
-| `ng-formation` | Business registration evidence: CAC BN number (sole proprietor) or RC number (if incorporated and individual is director); TIN | Identity section of Form A |
-
-### 2.2 Corporate return (CIT Self-Assessment) — inputs
-
-**Corporate return (CIT Self-Assessment) — inputs table**
-
-| Upstream skill | Output consumed | Where it lands on the CIT return |
-| --- | --- | --- |
-| `ng-cit` | Adjusted profit, capital allowances claimed, taxable profit, CIT at applicable rate (30% large, 20% medium, 0% small under CITA + Finance Acts; NTA 2025 changes apply from FY 2026), Tertiary Education Tax at 3% of assessable profits, Development Levy where applicable | Tax Pro-Max CIT return Schedules |
-| `ng-paye` | Employee payroll cost classification; PAYE remittance evidence | Operating expenses section; supports Form H1 filing |
-| `ng-statutory-deductions` | Employer pension (10%), NHF, NHIS, ITF (1% of payroll), NSITF (1% of payroll) — all deductible business expenses | Operating expenses; ITF/NSITF compliance certificates required for CAC and tax clearance |
-| `ng-wht` | WHT deducted from company on dividends/interest received and on contracts (credit notes); WHT the company remitted as a withholding agent (compliance only) | Schedule of WHT credits; reconciliation to monthly remittances |
-| `ng-cgt` | CGT on chargeable assets disposed in the year (10% rate) | Separate CGT return; cross-referenced |
-| `ng-vat` | Monthly VAT return position; VAT paid is not creditable against CIT; non-recoverable input VAT is a cost in the P&L | Cross-check; non-recoverable input VAT flows into P&L expenses |
-| `ng-payroll` | Full payroll cost classification; supports Form H1 and monthly Form G | Operating expenses; supports H1 |
-| `ng-formation` | CAC registration evidence (RC number); FIRS TIN; SCUML if applicable; ITF / NSITF compliance certificates | Identity section of CIT return; required for Tax Clearance Certificate |
-
-### 2.3 Intake-required identifiers
-
-**Intake-required identifiers table**
-
-| Identifier | Required for |
-| --- | --- |
-| TIN (Tax Identification Number) — 10-digit, FIRS-issued for companies, JTB/State-issued for individuals (unified TIN under NTA 2025) | All returns |
-| RC Number (Registration Number) — issued by Corporate Affairs Commission (CAC) for companies | CIT return |
-| BN Number (Business Name) — issued by CAC for sole proprietors / partnerships | PIT return if trading under a business name |
-| NIN (National Identity Number) — NIMC-issued, now linked to individual TIN | PIT return |
-| Employer Code — issued by State IRS for PAYE / Form G filing | All payroll filings |
-| State of Residence — determines which State IRS has jurisdiction for PIT (PITA First Schedule "place of residence" rule) | PIT return — critical, drives filing portal |
-| LGA (Local Government Area) of residence | PIT return supplementary |
-| Pension PIN (PenCom-issued RSA PIN) | Pension reliefs and remittance evidence |
-
-If any identifier is missing, the assembly skill flags it as "Needs Input" and produces the working paper with placeholders rather than halting.
-
-### 2.4 Federal vs State coordination
-
-Nigeria has a bifurcated tax administration:
-
-- Federal (FIRS): CIT, TET, VAT, WHT on companies, CGT on companies, Stamp Duties on certain instruments, Petroleum Profits Tax (out of scope), Development Levy (NTA 2025).
-- State (SIRS): PIT including PAYE remittance, CGT on individuals, business premises levy, development levies (state), road tax, withholding tax on individuals (5% of contract payments to individuals).
-
-The capstone produces separate filing packs for federal and state. A single individual sole proprietor may have BOTH a federal VAT obligation (FIRS) AND a PIT obligation (State IRS). The assembly cross-references both.
-
-## Section 3 — Tax computation reconciliation
-
-- **Reconciliation tolerance rule** — The assembly skill verifies that numbers from the upstream skills are mutually consistent. If a cross-check fails by more than ₦1,000, the discrepancy is raised in the reviewer brief — never silently rounded.
-
-### Cross-check 1 — Revenue reconciliation (turnover ties across skills)
-
-**Revenue reconciliation table**
-
-| Source | Figure | Rule |
-| --- | --- | --- |
-| Bookkeeping / management accounts gross revenue | Total operating revenue | Anchor figure |
-| `ng-vat` annual taxable supplies | Sum of monthly VAT 002 output Box | Must reconcile to bookkeeping revenue ± permitted timing differences and VAT-exempt revenue |
-| `ng-cit` (corporates) / `ng-personal-income-tax` (individuals) gross income | Top line of fiscal computation | Must equal bookkeeping ± fiscal-vs-accounting adjustments |
-| `ng-wht` (as recipient) — contract values from WHT credit notes received | Implicit gross from WHT credits ÷ WHT rate | Should reconcile to a subset of bookkeeping revenue |
-
-If mismatch: Likely causes are (i) VAT-exempt or zero-rated supplies not in VAT output, (ii) cash vs accrual timing, (iii) intra-group eliminations, (iv) revenue subject to final WHT (rent, royalties to individuals) not in the same bucket.
-
-### Cross-check 2 — Tax credits add up correctly
-
-**Tax credits for individuals (Form A) table**
-
-| Line | Source skill | Description |
-| --- | --- | --- |
-| PAYE deducted by employer(s) | ng-paye (Form H1 from employer) | Credit |
-| WHT on professional fees / rent / royalties / dividends / interest received | ng-wht (credit notes) | Credit |
-| Provisional tax paid (instalments under PITA Section 44) | ng-personal-income-tax | Credit |
-| Foreign tax credit (where DTT exists or unilateral relief under PITA Section 38) | ng-personal-income-tax | Credit, capped at Nigerian PIT on same income |
-
-### Cross-check 2 — Tax credits add up correctly
-
-**Tax credits for corporates (CIT) table**
-
-| Line | Source skill | Description |
-| --- | --- | --- |
-| WHT suffered on contracts, rent, dividends, interest (FIRS / SIRS credit notes) | ng-wht | Credit |
-| Provisional tax / advance CIT paid | ng-cit | Credit |
-| Foreign tax credit (CITA Section 44 — DTT or unilateral relief) | ng-cit | Credit, capped |
-| Excess Dividend Tax (EDT) prior-year offset under CITA Section 19 | ng-cit | If applicable |
-
-- **Credits cap and shelf-life rule** — Total credits cannot exceed tax payable for refund purposes unless excess is supported by valid FIRS/SIRS credit notes with verifiable serial numbers. WHT credit notes have a 6-year shelf life under Section 78A CITA (introduced by Finance Act 2019), but practical FIRS verification is shorter — flag any credit note older than 3 years for confirmation.  _(Section 78A CITA (Finance Act 2019))_
-
-### Cross-check 3 — PAYE reconciliation between annual H1 and monthly Form G
-
-**PAYE reconciliation table**
-
-| Item | Source | Rule |
-| --- | --- | --- |
-| Sum of monthly Form G PAYE remitted (Jan–Dec 2025) | ng-paye / ng-payroll | Should equal total PAYE in Form H1 |
-| Form H1 total PAYE | ng-paye | Annual reconciliation |
-| Form H1 due date | Fixed | **31 January 2026** |
-| Late-filing penalty | PITA Section 81(3) | ₦500,000 (company) or ₦50,000 (individual employer) per month |
-
-If mismatch: Likely cause is mid-year joiners/leavers, bonus / 13th-month paid in December not captured in monthly remittance, or PAYE on benefits-in-kind only recognised at year-end.
-
-### Cross-check 4 — Statutory deductions remittance compliance
-
-**Statutory deductions remittance compliance table**
-
-| Item | Source | Rule |
-| --- | --- | --- |
-| Pension — 18% combined (10% employer + 8% employee) of monthly emoluments | ng-statutory-deductions | Must be remitted to RSA PFA within 7 working days of salary payment (PRA 2014 Section 11(3)) |
-| NHF — 2.5% of basic salary (employees earning ≥ ₦3,000/month) | ng-statutory-deductions | Remitted monthly to FMBN |
-| NHIS — varies by scheme | ng-statutory-deductions | Monthly |
-| ITF — 1% of total annual payroll (employers with ≥ 5 employees or ≥ ₦50M turnover) | ng-statutory-deductions | Due by **1 April 2026** |
-| NSITF — 1% of total annual payroll (employers ≥ 5 employees) | ng-statutory-deductions | Monthly within 14 days; annual reconciliation |
-
-Compliance certificates required for FIRS Tax Clearance Certificate (TCC):
-- ITF Compliance Certificate
-- NSITF Compliance Certificate
-- PenCom Compliance Certificate
-- NHF Compliance Certificate
-
-Missing any of these blocks TCC issuance, which in turn blocks government contracts, visa applications, and bank loans. Flag any missing certificate in the reviewer brief.
-
-### Cross-check 5 — WHT compliance as a withholding agent
-
-**WHT compliance as withholding agent table**
-
-| Item | Source | Rule |
-| --- | --- | --- |
-| WHT on contracts paid (5% companies, 5%/10% individuals) | ng-wht | Remitted monthly by 21st of following month (FIRS for companies; State IRS for individuals) |
-| WHT on rent paid (10%) | ng-wht | Monthly |
-| WHT on professional fees (10% individuals, 5% companies) | ng-wht | Monthly |
-| WHT on dividends, interest, royalties (10%, sometimes final) | ng-wht | Monthly |
-| WHT credit notes issued to suppliers | ng-wht | Must be issued promptly; failure exposes principal to disallowance of expense (Section 81 CITA / Section 73 PITA) |
-
-- **Withholding failure penalty rule** — Withholding is the entity's obligation, not its own tax credit. Failure to withhold can result in (a) penalty of ₦500,000 (company) or ₦50,000 (individual) plus 10% of unremitted amount, and (b) disallowance of the underlying expense. Flag any apparent failure for the reviewer.  _(Section 81 CITA / Section 73 PITA)_
-
-### Cross-check 6 — VAT-to-CIT/PIT consistency (for VAT-registered taxpayers)
-
-**VAT-to-CIT/PIT consistency table**
-
-| Item | Source | Rule |
-| --- | --- | --- |
-| Output VAT (7.5% on taxable supplies) | ng-vat | NOT income — held in trust for FIRS |
-| Input VAT recoverable | ng-vat | NOT a cost in fiscal P&L — netted against output |
-| Input VAT non-recoverable (e.g., on overhead before VAT Modification Order rules) | ng-vat | IS a cost in fiscal P&L |
-| VAT on imported services (reverse charge per Finance Act 2020) | ng-vat | Self-account; reverse charge entries must reconcile |
-
-If inconsistency: An expense net of VAT in the P&L while the VAT was also not claimed on the VAT return means the VAT is lost. Flag for reviewer.
-
-### Cross-check 7 — Capital allowances (companies) and CGT (both)
-
-**Capital allowances and CGT table**
-
-| Item | Source | Rule |
-| --- | --- | --- |
-| Capital allowances claimed in CIT computation | ng-cit | Cannot exceed 66 2/3% of assessable profits for non-manufacturing companies (CITA Section 31 / Second Schedule); manufacturing companies have no cap |
-| Tax Written Down Value (TWDV) roll-forward | ng-cit | Opening TWDV + additions − initial + annual allowances = closing TWDV |
-| CGT on chargeable assets disposed | ng-cgt | 10% on net gain; CGTA Section 2; principal private residence and certain shares exempt |
-| Roll-over relief claimed | ng-cgt | Confirm CGTA Section 32 conditions met |
-
-Note: NTA 2025 introduces revised capital allowance rates and an updated definition of "qualifying capital expenditure" effective 1 January 2026 — this does NOT affect FY 2025 computations but must be flagged in 2026 planning.
-
-### Cross-check 8 — Tolerance discipline
-
-- **Tolerance discipline rule** — For every cross-check above, the threshold is ₦1,000. If a difference is between ₦1,000 and ₦100,000, document the variance and proceed with a reviewer flag. If above ₦100,000, raise as "Needs Input" — the reviewer should resolve before sign-off.
-
-## Section 4 — Working paper template: individual PIT Form A
-
-Form A is the annual income declaration filed with the relevant State Internal Revenue Service (the SIRS of the taxpayer's "place of residence" as defined in PITA First Schedule). For Lagos residents this is LIRS; FCT residents file with FCT-IRS; Rivers with RIRS, etc.
-
-### 4.1 Form A — line-by-line
-
-**Form A line-by-line table**
-
-| Part | Line | Description | Source |
-| --- | --- | --- | --- |
-| **Identity** | TIN, NIN, name, BN (if applicable), address, state, LGA, marital status, dependants, employer details | All | Intake |
-| **A. Gross Income** | 1 | Employment income (salary, wages, bonus, 13th-month, BIK) | ng-paye |
-|  | 2 | Trade, business, profession (sole-proprietor net profit per accounts) | ng-personal-income-tax |
-|  | 3 | Rental income (gross) | ng-personal-income-tax (rental subject to 10% WHT often final) |
-|  | 4 | Dividends, interest, royalties (gross, before WHT) | ng-personal-income-tax |
-|  | 5 | Pensions and annuities | ng-personal-income-tax |
-|  | 6 | Other income | ng-personal-income-tax |
-|  | 7 | **Total Gross Income** | Sum 1–6 |
-| **B. Allowable Deductions** | 8 | Trade / business allowable expenses | ng-personal-income-tax |
-|  | 9 | Capital allowances on business assets | ng-personal-income-tax |
-|  | 10 | Other allowable deductions (interest on owner-occupied mortgage etc.) | ng-personal-income-tax |
-|  | 11 | **Total Deductions** | Sum |
-| **C. Reliefs & Allowances** | 12 | Consolidated Relief Allowance (CRA) — higher of ₦200,000 or 1% of gross income, plus 20% of gross income (PITA Sixth Schedule as amended by Finance Act 2020) | ng-personal-income-tax |
-|  | 13 | Pension contribution (8% employee or self-employed equivalent) | ng-statutory-deductions |
-|  | 14 | NHF (2.5%) | ng-statutory-deductions |
-|  | 15 | Life assurance premium | ng-statutory-deductions |
-|  | 16 | NHIS | ng-statutory-deductions |
-|  | 17 | **Total Reliefs** | Sum |
-| **D. Chargeable Income** | 18 | Line 7 − Line 11 − Line 17 | Computed |
-| **E. Tax Computation** | 19 | Apply graduated PIT rates (7% / 11% / 15% / 19% / 21% / 24% — PITA Sixth Schedule) to Line 18 | ng-personal-income-tax |
-| **F. Tax Credits** | 20 | PAYE deducted at source (per Form H1 from employer) | ng-paye |
-|  | 21 | WHT suffered (per credit notes) | ng-wht |
-|  | 22 | Provisional tax paid (instalments) | ng-personal-income-tax |
-|  | 23 | Foreign tax credit (capped) | ng-personal-income-tax |
-|  | 24 | **Total Credits** | Sum |
-| **G. Tax Payable / Refundable** | 25 | Line 19 − Line 24 (positive = balance due; negative = refund / carry-forward) | Computed |
-
-### 4.2 Supporting schedules
-
-**Supporting schedules table**
-
-| Schedule | Title | When used |
-| --- | --- | --- |
-| Schedule 1 | Statement of Assets & Liabilities (Net Worth Statement) | Mandatory for high-net-worth and discretionary for others — required by LIRS for income > ₦25M |
-| Schedule 2 | Business income detailed P&L (sole-proprietor) | If business income on Line 2 |
-| Schedule 3 | Capital allowances schedule (additions, disposals, TWDV) | If business assets |
-| Schedule 4 | Rental income property-by-property breakdown | If rental income |
-| Schedule 5 | WHT credit notes register (serial number, payer, date, amount) | If WHT credits claimed |
-| Schedule 6 | Foreign income & foreign tax credit working | If foreign income |
-
-### 4.3 NTA 2025 transitional note for individuals
-
-The Nigeria Tax Act 2025 (assented June 2025) revises the PIT regime from 1 January 2026, including:
-- New graduated PIT rates (0% / 15% / 18% / 21% / 23% / 25% per draft as published — confirm at FY 2026 filing time)
-- New tax-free threshold of ₦800,000 annual chargeable income (replacing CRA structure)
-- Rent relief of up to ₦200,000 per year
-- Consolidation of the unified TIN regime
-- None of these apply to the 2025 return. Flag in the 2026 planning section.
-
-## Section 5 — Working paper template: corporate CIT Self-Assessment
-
-Filed via FIRS Tax Pro-Max (https://taxpromax.firs.gov.ng). Tax Pro-Max generates an assessment notice, billing reference, and Remita RRR for payment.
-
-### 5.1 CIT Self-Assessment — line-by-line
-
-**CIT Self-Assessment line-by-line table**
-
-| Section | Line | Description | Source |
-| --- | --- | --- | --- |
-| **Identity** | RC No., TIN, name, registered office, year of assessment, accounting period, principal activity | All | Intake |
-| **A. Profit/Loss per Accounts** | 1 | Turnover (revenue) | Bookkeeping |
-|  | 2 | Cost of sales | Bookkeeping |
-|  | 3 | Gross profit | Computed |
-|  | 4 | Operating expenses | Bookkeeping |
-|  | 5 | Other income (non-operating) | Bookkeeping |
-|  | 6 | Profit/(Loss) per accounts | Computed |
-| **B. Tax Adjustments** | 7 | Add: depreciation per accounts | ng-cit (disallowed; replaced by capital allowances) |
-|  | 8 | Add: disallowable expenses (donations not approved, entertainment, fines/penalties, general provisions, etc. per CITA Section 27) | ng-cit |
-|  | 9 | Less: non-taxable income (dividends from Nigerian companies — franked, certain exempt) | ng-cit |
-|  | 10 | Less: capital gains taxed separately under CGTA | ng-cgt |
-|  | 11 | **Assessable Profit** | Computed |
-| **C. Capital Allowances** | 12 | Initial allowances on qualifying capital expenditure | ng-cit |
-|  | 13 | Annual allowances | ng-cit |
-|  | 14 | Investment allowances (where applicable) | ng-cit |
-|  | 15 | Balancing allowances / (charges) | ng-cit |
-|  | 16 | **Total Capital Allowances** (capped at 66 2/3% of assessable profit for non-manufacturing; no cap for manufacturing per CITA Second Schedule) | Computed |
-| **D. Loss Relief** | 17 | Brought-forward losses utilised (indefinite carry-forward under CITA Section 31, post-Finance Act 2019) | ng-cit |
-| **E. Total Profit (Taxable Profit)** | 18 | Line 11 − Line 16 − Line 17 | Computed |
-| **F. Tax Charge** | 19 | CIT rate applied: **0%** (small company — turnover ≤ ₦25M); **20%** (medium — ₦25M < turnover ≤ ₦100M); **30%** (large — turnover > ₦100M) per CITA Section 40 as amended by Finance Act 2019/2020 | ng-cit |
-|  | 20 | CIT liability | Line 18 × rate |
-|  | 21 | **Tertiary Education Tax (TET)** at **3%** of assessable profit (TET Act as amended by Finance Act 2023 — rate increased from 2.5% to 2.5% then to 3.0% under Finance Act 2023; confirm rate effective for FY 2025) | ng-cit |
-|  | 22 | **Development Levy** (NTA 2025) — not applicable for FY 2025; effective FY 2026 onward at 4% of assessable profit consolidating TET, NITDA, NASENI levies | n/a for 2025 |
-|  | 23 | NITDA Levy 1% (companies with turnover ≥ ₦100M, IT-related sectors) | ng-cit |
-|  | 24 | NASENI Levy 0.25% (specified sectors) | ng-cit |
-|  | 25 | Police Trust Fund Levy 0.005% of net profit | ng-cit |
-|  | 26 | **Total Federal Tax Liability** | Sum 20–25 |
-| **G. Tax Credits** | 27 | WHT suffered (credit notes) | ng-wht |
-|  | 28 | Advance / provisional CIT paid | ng-cit |
-|  | 29 | Foreign tax credit | ng-cit |
-|  | 30 | **Total Credits** | Sum |
-| **H. Net Tax Payable** | 31 | Line 26 − Line 30 | Computed |
-| **I. Minimum Tax Check** | 32 | Minimum tax under CITA Section 33 (where company has no/insufficient tax payable): 0.5% of gross turnover less franked investment income, for non-exempt companies. NTA 2025 introduces **Minimum Effective Tax Rate (MEFR)** of 15% for large groups effective 2026 (out of scope for 2025) | ng-cit |
-
-### 5.2 Supporting schedules (Tax Pro-Max attachments)
-
-**Supporting schedules (Tax Pro-Max attachments) table**
-
-| Schedule | Title | When used |
-| --- | --- | --- |
-| Schedule 1 | Audited Financial Statements (Statement of Profit or Loss, Statement of Financial Position, Statement of Cash Flows, Notes) — signed by directors + auditors (ICAN/ANAN) | Always (CITA Section 55 + CAMA 2020) |
-| Schedule 2 | Detailed Tax Computation | Always |
-| Schedule 3 | Capital Allowances Schedule (per asset class, with TWDV roll-forward) | Always if fixed assets |
-| Schedule 4 | Loss Relief Schedule (YOA-by-YOA brought-forward losses) | If losses |
-| Schedule 5 | WHT credit notes register | If WHT credits claimed |
-| Schedule 6 | Related-party transactions / Transfer Pricing Declaration Form (FIRS TP Regulations 2018) | If related-party transactions exist |
-| Schedule 7 | Country-by-Country Reporting notification (multinationals with consolidated revenue ≥ ₦160 billion) | If MNE |
-| Schedule 8 | Donations schedule (specified Sixth Schedule beneficiaries only) | If charitable donations |
-| Schedule 9 | Compliance certificates (ITF, NSITF, PenCom, NHF) | Always for TCC |
-
-### 5.3 Tertiary Education Tax detail
-
-- **TET detail rule** — TET is computed at 3% of assessable profit (Line 11 in 5.1), not total profit. It applies to all Nigerian-resident companies regardless of size (no small-company exemption — confirmed by Finance Act 2023). TET is administered by FIRS and paid alongside CIT through Tax Pro-Max.  _(Finance Act 2023)_
-
-### 5.4 NTA 2025 transitional note for companies
-
-The Nigeria Tax Act 2025 (effective 1 January 2026) introduces sweeping changes that do NOT apply to FY 2025 but must be flagged for FY 2026:
-
-- Development Levy at 4% consolidating TET (3%), NITDA (1%), and NASENI (0.25%) into a single levy
-- Small company threshold raised to ₦100M annual turnover (currently ₦25M)
-- CIT rate reduced to 25% for large companies (down from 30%)
-- Minimum Effective Tax Rate (MEFR) of 15% for multinational groups with ≥ €750M consolidated revenue (Pillar Two adoption)
-- VAT rate to remain at 7.5% in 2026 (NTA 2025 left the rate untouched after political pushback on proposed increase)
-- Nigeria Revenue Service (NRS) replaces FIRS as the federal tax authority
-- Unified TIN regime
-- Digital services tax updates
-
-The 2026 planning section of the reviewer brief flags every NTA 2025 item materially affecting the taxpayer.
-
-## Section 6 — Payment instructions: Tax Pro-Max, Remita, Treasury Single Account
-
-Nigerian tax payments flow through the Treasury Single Account (TSA) via the Remita payment platform. The taxpayer logs into Tax Pro-Max, the system generates an assessment and an associated billing reference / Remita Retrieval Reference (RRR), the taxpayer pays the RRR via bank channel (any commercial bank, internet banking, mobile banking, USSD, or POS), and Remita issues a payment receipt that auto-feeds back to Tax Pro-Max as payment evidence.
-
-### 6.1 Tax types and FIRS / State channels
-
-**Tax types and FIRS / State channels table**
-
-| Tax | Authority | Portal / Form | Payment channel |
-| --- | --- | --- | --- |
-| CIT | FIRS (federal) | Tax Pro-Max — CIT Self-Assessment | Remita RRR → bank → TSA |
-| TET | FIRS | Tax Pro-Max — TET module | Same |
-| VAT | FIRS | Tax Pro-Max — VAT Form 002 (monthly) | Same |
-| WHT (companies) | FIRS | Tax Pro-Max — WHT module | Same |
-| PAYE | State IRS (LIRS, FCT-IRS, RIRS, etc.) | State portal (e.g., eTax LIRS) — Form G monthly, Form H1 annual | State-specific Remita / portal payment |
-| PIT (individual annual) | State IRS | State portal — Form A | Same |
-| WHT (individuals) | State IRS | State portal | Same |
-| CGT (companies) | FIRS | Tax Pro-Max | Same |
-| CGT (individuals) | State IRS | State portal | Same |
-| ITF Levy | ITF | ITF portal | Direct |
-| NSITF | NSITF | NSITF portal | Direct |
-| Pension | PenCom (regulator) → PFA (custodian) | RSA via PFA | Bank transfer to PFA custodian |
-| NHF | FMBN | FMBN portal | Direct |
-
-### 6.2 Tax Pro-Max → Remita → TSA flow
-
-1. Log into Tax Pro-Max with TIN + password (or FIRS-issued digital certificate for high-volume filers)
-2. Select tax type (CIT, TET, VAT, WHT) and period (year of assessment / month)
-3. Enter computation OR upload XML / spreadsheet (Tax Pro-Max accepts bulk upload templates)
-4. Submit — system generates Assessment Notice and Billing Reference Number (BRN)
-5. Tax Pro-Max generates Remita RRR (15-digit) tied to the BRN
-6. Pay the RRR via:
-   - Any commercial bank teller (cash/cheque/bank transfer)
-   - Internet banking (most Tier-1 banks integrate Remita)
-   - Mobile banking app
-   - USSD (Remita short code per bank)
-   - POS at FIRS office
-7. Bank confirms payment → Remita issues e-receipt with Remita Transaction Reference (RTR) + Tax Pro-Max payment evidence
-8. Tax Pro-Max marks the assessment as settled; the corresponding return becomes filed (or filing is now actionable if payment was required first)
-
-### 6.3 Tax Pro-Max payment timing relative to filing
-
-**Payment timing relative to filing table**
-
-| Payment | Due date | Filing reference |
-| --- | --- | --- |
-| CIT — FY ending 31 December 2025 | **30 June 2026** (CITA Section 55) | Self-Assessment Return |
-| TET — FY ending 31 December 2025 | **30 June 2026** (paid with CIT) | Within CIT return |
-| VAT monthly (December 2025) | **21 January 2026** | VAT 002 |
-| WHT monthly (December 2025 deductions) | **21 January 2026** | WHT schedule |
-| PAYE monthly (December 2025) | **10 January 2026** (PITA Section 81; 10th of following month) | Form G |
-| PIT annual (individual) | **31 March 2026** (PITA Section 41 — 90 days after year-end) | Form A |
-| Employer annual PAYE reconciliation | **31 January 2026** | Form H1 |
-| ITF Levy (FY 2025) | **1 April 2026** | ITF annual return |
-| NSITF (December 2025) | **14 January 2026**; annual reconciliation also due | Monthly |
-| Pension (December 2025 salary) | Within 7 working days of salary payment | RSA contribution schedule |
-
-- **Payment evidence upload rule** — For CIT, FIRS practice is to require payment evidence (RTR) to be uploaded before the Self-Assessment Return is treated as accepted. Plan to settle BEFORE the formal submission step — or in two instalments per CITA Section 77 (one with provisional return at 3 months, balance with final return).  _(CITA Section 77)_
-
-### 6.4 Provisional / instalment CIT under CITA Section 77
-
-- **Instalment options** — CITA Section 77 permits payment in instalments: - Option 1 (Single payment): Pay full CIT liability on filing date (or on or before due date if filing earlier) - Option 2 (Instalments): Up to 6 monthly instalments with FIRS approval; first instalment with the return, subsequent monthly. 2% interest applies on outstanding balance. For provisional tax (where statute requires), the company pays an estimate within 3 months of year-end and trues up at filing. FIRS practice is increasingly tolerant of single-payment-at-filing where the company is a "good standing" taxpayer.  _(CITA Section 77)_
-
-### 6.5 Payment evidence to retain
-
-**Payment evidence to retain table**
-
-| Document | Issued by | Retain for |
-| --- | --- | --- |
-| Remita RRR | Tax Pro-Max | Until settled |
-| Remita e-Receipt (RTR) | Remita | Indefinite — proof of payment |
-| Tax Pro-Max Payment Confirmation | FIRS | Indefinite |
-| Tax Clearance Certificate (TCC) | FIRS / State IRS | 12-month validity; renew annually |
-| Compliance Certificates (ITF, NSITF, PenCom, NHF) | Respective agencies | 12-month validity each |
-
-### 7.1 Federal (FIRS) filings via Tax Pro-Max
-
-**Federal filing channels table**
-
-| Channel | Description | Best for |
-| --- | --- | --- |
-| **Tax Pro-Max Web — Direct Entry** | Fill the return directly in browser | Small / medium taxpayers |
-| **Tax Pro-Max Web — Bulk Upload** | Upload FIRS-template Excel / XML | Larger taxpayers, multi-line schedules |
-| **Tax Pro-Max API** | Direct integration for ERP / accounting software | Big-4 / multinational filers |
-
-Submission steps (CIT example):
-
-1. Prepare — finalise audited accounts, sign-off by directors and external auditors (ICAN-registered)
-2. Log into Tax Pro-Max (TIN + password)
-3. Navigate to CIT → File Return → Year of Assessment 2026 (relating to FY 2025)
-4. Enter / upload computation; attach audited financial statements (PDF), tax computation (PDF/XLSX), capital allowances schedule, and compliance certificates
-5. Validate — Tax Pro-Max runs arithmetic checks; resolve errors
-6. Submit return → system generates Assessment Notice + Remita RRR
-7. Pay the RRR (or set up instalment plan if applicable)
-8. After payment, retrieve filed-and-paid acknowledgement — this is proof of compliance and is the basis for Tax Clearance Certificate (TCC) application
-9. Apply for TCC for the year (separate Tax Pro-Max workflow)
-
-### 7.2 State (SIRS) filings — example: LIRS eTax
-
-Each State IRS operates its own portal; LIRS is the largest. General pattern:
-
-1. Log into State IRS portal (e.g., https://etax.lirs.net for Lagos)
-2. Navigate to Annual Returns → Form A (Individuals) or Annual Returns → Form H1 (Employers)
-3. Enter income, deductions, reliefs, credits
-4. Upload supporting documents (payslips, WHT credit notes, business accounts for sole proprietors)
-5. Submit → portal generates Assessment Notice + Remita RRR for any balance
-6. Pay via Remita
-7. Retrieve filing acknowledgement → basis for State TCC
-
-### 7.3 Deadlines summary (tax year 2025 / year of assessment 2026)
-
-**Deadlines summary table**
-
-| Filer type | Return | Authority | Deadline |
-| --- | --- | --- | --- |
-| Individual (resident) | Form A (annual PIT) | State IRS | **31 March 2026** (PITA Section 41) |
-| Employer | Form H1 (annual PAYE reconciliation) | State IRS | **31 January 2026** (PITA Section 81) |
-| Employer | Form G (monthly PAYE) | State IRS | **10th of following month** |
-| Company | CIT Self-Assessment (FY 31 Dec 2025) | FIRS | **30 June 2026** (CITA Section 55 — 6 months after FYE) |
-| Company | TET (with CIT) | FIRS | **30 June 2026** |
-| VAT-registered taxpayer | VAT Form 002 (monthly) | FIRS | **21st of following month** |
-| Withholding agent | WHT monthly schedule | FIRS (companies) / State IRS (individuals) | **21st of following month** (FIRS) / **10th** (State) |
-| Sole proprietor | Form A + Schedule 2 (business income) | State IRS | **31 March 2026** |
-| ITF | Annual contribution | ITF | **1 April 2026** |
-| NSITF | Annual reconciliation | NSITF | **31 March 2026** |
-
-### 7.4 Late filing penalties
-
-**Late filing penalties table**
-
-| Filer | Tax | Penalty | Basis |
-| --- | --- | --- | --- |
-| Company | CIT late filing | ₦25,000 first month + ₦5,000 per additional month | CITA Section 55(3) |
-| Company | CIT late payment | 10% of unpaid tax + interest at CBN MPR + 5% per annum | CITA Section 85 |
-| Company | TET late | Same as CIT proportionally | TET Act |
-| Employer | Form H1 late | ₦500,000 (corporate) / ₦50,000 (individual employer) | PITA Section 81(3) |
-| Individual | Form A late | ₦5,000 + ₦100 per day of default | PITA Section 94 |
-| VAT-registered | VAT late filing | ₦50,000 first month + ₦25,000 per additional month | VAT Act Section 19 (Finance Act 2020) |
-| WHT | Failure to deduct/remit | 10% of unremitted amount + interest at CBN MPR + 5% | CITA Section 81 / PITA Section 73 |
-
-### 7.5 Filing-versus-payment ordering
-
-Unlike some jurisdictions, in Nigerian practice the assessment is generated FROM the filed return, then the Remita RRR is settled. There is no true "pay first, then file" — but for the return to be treated as substantively complete, the matching payment must be made before the deadline. Late payment penalties accrue independently of late filing penalties.
-
-## Section 8 — Working paper structure for the credentialed reviewer
-
-The reviewer is a Chartered Accountant in Nigeria — ICAN (Institute of Chartered Accountants of Nigeria) or ANAN (Association of National Accountants of Nigeria) member, and (for tax-specific opinions) potentially a CITN (Chartered Institute of Taxation of Nigeria) member. The reviewer brief is a single markdown file the reviewer reads before sign-off.
-
-```markdown
-# Complete Return Package — [Taxpayer Name] — Year of Assessment 2026 (FY 2025)
-
-## Executive Summary
-- Filing entity: [Individual / Sole Proprietor / Company (Small/Medium/Large per CITA)]
-- TIN: [10-digit]
-- RC No. / BN No.: [if applicable]
-- State of Residence (individuals): [for SIRS jurisdiction]
-- Tax regime: [PIT graduated rates / CIT 0% / CIT 20% / CIT 30%]
-- VAT status: [Registered / Below threshold]
-- Returns to be filed:
-  - [ ] Form A (PIT) — State IRS — due 31 March 2026
-  - [ ] Form H1 (PAYE annual) — State IRS — due 31 January 2026
-  - [ ] CIT Self-Assessment — FIRS Tax Pro-Max — due 30 June 2026
-  - [ ] TET — within CIT return
-  - [ ] VAT 002 December — FIRS — due 21 January 2026
-- Total federal tax liability: ₦X
-- Total state tax liability: ₦X
-- Total credits: ₦X
-- Net payable / refundable: ₦X
-- TCC application due: [date]
-
-## Federal Tax Computation (CIT + TET + Levies)
-[From ng-cit]
-- Audited P&L reconciliation
-- Tax adjustments schedule (disallowables, exempt income)
-- Capital allowances schedule with TWDV roll-forward
-- Loss relief schedule
-- CIT at applicable rate (0% / 20% / 30%)
-- TET at 3% of assessable profit
-- NITDA, NASENI, Police Trust Fund Levy (where applicable)
-
-## State Tax Computation (PIT / PAYE)
-[From ng-personal-income-tax, ng-paye]
-- Form A line-by-line
-- Form H1 employer reconciliation
-- State of residence determination (PITA First Schedule)
-
-## Statutory Deductions Compliance
-[From ng-statutory-deductions]
-- Pension remittance log (PFA confirmations) — within 7 working days
-- NHF monthly remittance
-- ITF annual compliance certificate status
-- NSITF annual compliance certificate status
-- NHIS / NHIA scheme status
-- PenCom compliance certificate status
-
-## Withholding Tax (WHT)
-[From ng-wht]
-- As withholding agent: monthly remittance schedule, credit notes issued to suppliers
-- As recipient: WHT credit notes received, serial number register, ageing analysis
-
-## VAT
-[From ng-vat]
-- Monthly VAT 002 summary for 2025
-- Output VAT, input VAT recoverable, net VAT remitted
-- Cross-check to bookkeeping turnover
-
-## Capital Gains Tax
-[From ng-cgt]
-- Disposals schedule
-- Net chargeable gains at 10% CGT rate
-- Roll-over relief claims
-
-## Payroll
-[From ng-payroll]
-- Annual payroll summary
-- BIK computation
-- Payroll reconciliation to general ledger
-
-## Formation / Compliance Identity
-[From ng-formation]
-- CAC RC / BN status
-- TIN status (FIRS / JTB unified)
-- ITF / NSITF / PenCom / NHF certificate status
-
-## Cross-Skill Reconciliation
-- Revenue reconciliation: [pass/fail]
-- Tax credits add up: [pass/fail]
-- PAYE annual H1 vs monthly G: [pass/fail]
-- Statutory deductions remitted on time: [pass/fail]
-- WHT agent compliance: [pass/fail]
-- VAT-to-income consistency: [pass/fail]
-- Capital allowances within Section 31 cap (non-manufacturing): [pass/fail]
-
-## Reviewer Attention Flags
-- Items requiring ICAN / CITN confirmation
-- Disallowable expenses borderline (entertainment, donations not on Sixth Schedule, general provisions)
-- Related-party transactions (TP Regulations 2018 — local file due with return)
-- WHT credit notes older than 3 years (ageing risk)
-- Missing compliance certificates blocking TCC
-- Minimum tax check under CITA Section 33
-- Excess Dividend Tax (EDT) risk under CITA Section 19
-- State of residence ambiguity for PIT (multi-state employee)
-
-## Positions Taken
-[List with legislation citations]
-- e.g., "Small company exemption applied — turnover ₦X ≤ ₦25M, CITA Section 40 as amended by Finance Act 2019"
-- e.g., "TET at 3% of assessable profit per Finance Act 2023 amendment to TET Act"
-- e.g., "Donations of ₦X to [Sixth Schedule beneficiary] — CITA Sixth Schedule, item Y"
-- e.g., "Capital allowances claimed at full rate, no Section 31 cap (manufacturing exception)"
-
-## Planning Notes for 2026 (NTA 2025 impact)
-- Development Levy at 4% replaces TET/NITDA/NASENI from 1 Jan 2026
-- Small company threshold rising to ₦100M turnover
-- CIT large-company rate dropping to 25%
-- MEFR of 15% for MNE groups (if applicable)
-- New PIT rates and ₦800,000 tax-free threshold for individuals
-- Rent relief up to ₦200,000 for individuals
-- Unified TIN regime full rollout
-- FIRS → Nigeria Revenue Service (NRS) rebrand
-- Consolidated Nigeria Tax Account view in Tax Pro-Max from 1 Jan 2026
+| Missing upstream result, identity or Tax ID | Retain placeholders, name missing item and complete available schedules; finalisation blocked where material. |
+| Unverified WHT/foreign credit, donation, allowance or loss | Separate proposed amount and evidence gap; show effect/alternatives, no invented disallowance or promised refund. |
+| Missing certificate or account audit question | Determine actual requirement for that body/transaction; distinguish corporate-law audit from tax-return attestation and procurement certificates from TCC. |
+| Petroleum/hydrocarbon, mining, telecom/gaming, pioneer/priority incentive or NEPZA/OGFZA free zone | Specialist computation required; do not fill ordinary formulas into a special regime. |
+| Non-resident/PE/SEP, treaty, mixed-residency or expatriate year | Refer with evidence; this capstone does not decide those legal positions. |
+| Combined federal/State dispute, TAT, audit defence or TP audit | Refer to appropriately qualified adviser/counsel; preserve notices and dispute payment/deadline evidence. |
+| Asked to upload, pay, sign or submit | This skill produces working papers and filing instructions. An authorised filer acts after the review gate; no submission or payment is authorised by this reference alone. |
+
+## Worked cases
+
+**Company package with separate levy base.** Upstream ng-cit supplies assessable profit20m, taxable profit12m, CIT3.6m and development levy800k for a company already determined non-small and outside ETR. Supported creditable WHT2m and advance CIT1m leave CIT600k; levy800k remains separate, so total outstanding1.4m. Supplier WHT remitted400k is a compliance liability, not another credit: using it would wrongly reduce outstanding to1m. The case checks assembly of supplied computations, not another tax-rate home. Keep the underlying owner method and actual eligibility with the package.
+
+```oa-check
+name: Nigeria company return own credits versus supplier withholding
+inputs:
+  upstream_cit: 3600000
+  upstream_development_levy: 800000
+  recipient_credit: 2000000
+  advance_cit: 1000000
+  supplier_wht_remitted: 400000
+steps:
+  - cit_balance: upstream_cit - recipient_credit - advance_cit
+  - all_outstanding: cit_balance + upstream_development_levy
+  - incorrect_credit_result: all_outstanding - supplier_wht_remitted
+expected:
+  cit_balance: 600000
+  all_outstanding: 1400000
+  incorrect_credit_result: 1000000
 ```
 
-## Section 9 — Tax computation summary (PIT or CIT bottom line)
+**Revenue decision under the internal control policy.** Books10m versus VAT-supply total9.8m gives200k difference. Evidence shows exempt supply150k and timing50k, leaving0: documented bridge passes. If only150k is supported, unexplained50k is Needs Input under the1,000 policy; it does not disappear because below the100,000 priority flag. Without any evidence the full200k requires prominent reviewer attention. These priorities do not establish tax treatment of the purported exemption/timing adjustment, which the VAT owner must confirm.
 
-This section is the single "headline" block the reviewer and taxpayer read first.
-
-### 9.1 Individual headline block
-
-- **PIT 2025 headline template** — ```markdown # PIT 2025 — Headline (₦) Gross Income:                      X Less: Allowable deductions:        (X) Less: Reliefs (CRA + statutory):   (X) = Chargeable Income:               X PIT at graduated rates:            X Less: PAYE deducted:               (X) Less: WHT credits:                 (X) Less: Provisional tax:             (X) = Net PIT payable / (refundable):  X / (X) Filing: Form A, State IRS [name], due 31 March 2026 Payment: Remita RRR generated post-filing ```
-
-### 9.2 Corporate headline block
-
-- **CIT 2025 headline template** — ```markdown # CIT 2025 — Headline (₦) — Year of Assessment 2026 Turnover:                          X Profit per accounts:               X Add: Disallowables:                X Less: Exempt income:               (X) = Assessable Profit:               X Less: Capital allowances (capped): (X) Less: Loss relief:                 (X) = Total Profit (Taxable):          X CIT at [0% / 20% / 30%]:           X TET at 3% of assessable profit:    X NITDA / NASENI / PTF (if app):     X = Total federal tax liability:     X Less: WHT credits:                 (X) Less: Advance tax paid:            (X) Less: Foreign tax credit:          (X) = Net tax payable:                 X Minimum tax check (CITA s.33):     [pass/fail] Filing: CIT Self-Assessment, FIRS Tax Pro-Max, due 30 June 2026 Payment: Remita RRR via TSA; instalments under CITA s.77 available ```
-
-## Section 10 — Payment instructions block (for the action list)
-
-```markdown
-# Payment Instructions
-
-## Federal payments via Tax Pro-Max / Remita
-
-1. Log into Tax Pro-Max → CIT module → File 2026 YOA return
-2. After submission, Tax Pro-Max generates Assessment Notice + Remita RRR
-3. Note the RRR (15-digit)
-4. Pay via:
-   - Bank teller (any commercial bank) — quote RRR
-   - Bank internet banking — Remita Bills Payment menu
-   - Bank mobile app — Remita section
-   - USSD — bank-specific Remita short code
-   - POS at FIRS office
-5. Bank confirms → Remita issues e-Receipt (RTR)
-6. Return to Tax Pro-Max; payment auto-reconciles; status changes to "Paid"
-7. Save: Assessment Notice PDF, RRR slip, Remita e-Receipt, Tax Pro-Max Payment Confirmation
-
-## State payments via State IRS portal / Remita
-
-1. Log into State IRS portal (e.g., LIRS eTax for Lagos)
-2. File Form A (PIT) or Form H1 (PAYE) as applicable
-3. Portal generates Assessment + Remita RRR
-4. Pay via Remita (same channels as federal)
-5. Retrieve filing acknowledgement → basis for State TCC
-
-## Statutory contributions (parallel — not via Tax Pro-Max)
-
-- Pension: direct bank transfer to PFA custodian within 7 working days of salary payment
-- NHF: FMBN portal
-- ITF: ITF portal — annual return + payment by 1 April
-- NSITF: NSITF portal — monthly + annual reconciliation
+```oa-check
+name: Nigeria return revenue bridge evidence decision
+inputs:
+  books: 10000000
+  vat_supplies: 9800000
+  supported_exempt: 150000
+  supported_timing: 50000
+steps:
+  - gross_difference: books - vat_supplies
+  - explained_balance: gross_difference - supported_exempt - supported_timing
+  - missing_timing_balance: gross_difference - supported_exempt
+  - unexplained_no_evidence: gross_difference
+expected:
+  gross_difference: 200000
+  explained_balance: 0
+  missing_timing_balance: 50000
+  unexplained_no_evidence: 200000
 ```
 
-## Section 11 — Filing instructions block (federal and state, with deadlines)
+## When to refuse or refer
 
-```markdown
-# Filing Instructions
+Retain the original refusal set: missing upstream work/self-check, material reconciliation or intake gap; specialist sectors/incentives; non-resident/PE/SEP/mixed residence; federal/State litigation/audit/TP dispute; direct portal submission; and retrospective use of new rules. Keep working, naming each gap, but do not declare the final return ready, choose an unsupported conservative position, manufacture identifiers/references or imply professional approval. No automated PDF filling, TaxProMax XML/bulk upload, CbCR XML or full TP documentation is produced here.
 
-## Federal (FIRS)
-- CIT Self-Assessment: Tax Pro-Max, due 30 June 2026 (for 31 Dec 2025 FYE)
-- TET: included in CIT return
-- VAT 002 (December 2025): Tax Pro-Max, due 21 January 2026
-- WHT (December 2025): Tax Pro-Max, due 21 January 2026
-- Required attachments: Audited Financial Statements, Tax Computation, Capital Allowances Schedule, Compliance Certificates (ITF, NSITF, PenCom, NHF)
+## Current company electronic route
 
-## State (State IRS — taxpayer's state of residence)
-- Form A (Individual annual PIT): State IRS portal, due 31 March 2026
-- Form H1 (Employer annual PAYE reconciliation): State IRS portal, due 31 January 2026
-- Form G (Monthly PAYE): State IRS portal, due 10th of following month
-- WHT (individuals): State IRS portal, due 10th of following month
+NRS's public Rev360 CIT tutorial was read in full on16November2026. It documents this route; it is not an authenticated-session test. From the official [NRS service entry](https://www.nrs.gov.ng/), use the assigned Rev360 account and verify the taxpayer and period before following its company-income-tax route.
 
-## Statutory bodies (parallel filings)
-- Pension contribution schedule: PFA, within 7 working days of salary payment (PenCom monitoring)
-- NHF: FMBN, monthly
-- ITF: ITF, annual by 1 April 2026
-- NSITF: NSITF, monthly + annual reconciliation by 31 March 2026
+The tutorial shows Self Tax Filing, Taxes Due, the earliest company-income-tax form and File Now. Declare/update fixed assets; disclose MNE group turnover and CFC particulars where applicable. Download the current income-tax Excel template, read its instructions and complete revenue/cost-of-sales/other income, itemised expenses, comprehensive income/retained earnings, financial position and profit adjustments. Tie assets to liabilities plus equity, label add-backs/deductions, reach100% completion, save and upload. Preview and reconcile taxable profit/adjustments/tax; upload complete supporting financial statements, select the declaration and submit. Save the acknowledgement, submitted return and uploaded evidence. [NRS primary public tutorial](https://www.linkedin.com/posts/nrsnigeria_rev360-howtoseries-nrs-activity-7458448517695606784-5y9q).
 
-## Post-filing
-- Apply for FIRS TCC (Federal Tax Clearance Certificate) via Tax Pro-Max
-- Apply for State TCC via State IRS portal
-- Both TCCs are 12-month validity; renew annually
-```
+The tutorial's audited-accounts instruction must be read with NTAA11's small-company attested-accounts exception; resolve an incompatible portal requirement through NRS without fabricating an audit. It does not establish the payment-reference sequence, authenticated screen state, a particular workbook version's formulas or State filing fields. Those precise steps remain held; payment controls below still apply. No filing is performed by this Guide.
 
-## Section 12 — Final taxpayer action list
+## Filing and payment
 
-```markdown
-# Action List — [Taxpayer Name] — Tax Year 2025 / Year of Assessment 2026
+Use the verified authority's current official service entry point. For federal accounts start at [NRS](https://www.nrs.gov.ng/); older TaxProMax links and FIRS labels in historical evidence do not establish a current screen. For Lagos start at [LIRS](https://lirs.gov.ng/) and its eTax service; for another State/FCT use that authority, not a Lagos form by default. Current authenticated fields, XML templates and payment reference formats were not inspected, so do not invent box numbers or an RRR. NRS/company and State personal/PAYE packages remain separate.
 
-## Immediate (before earliest deadline — 10 January 2026 for December PAYE)
+For each tax: verify entity, period, tax type and computation; prepare the return/attachments; obtain the actual assessment/payment request from the authorised official channel; have the authorised payer pay the exact remaining balance; save reference, receipt, date, bank evidence and authority allocation; have the authorised filer submit/complete the return; save the separate return acknowledgement. Reconcile assessment, payment and filing statuses independently. A Remita payment reference, where that channel is actually offered, is not a return acknowledgement; payment does not itself file. Approved instalments under section 49 do not postpone the final deadline or create quarterly15April/July/October/January defaults. Late assessed-tax notices and objections have their own payment/abeyance rules. [NTAA sections 11,13,49 and85](https://nass.gov.ng/documents/download/11250).
 
-### Individuals — deadlines:
-1. **10 January 2026** — Confirm December 2025 PAYE (Form G) remitted by employer
-2. **31 March 2026** — File Form A with State IRS; pay net PIT of ₦X via Remita RRR
-3. Apply for State TCC after Form A acceptance
+Build a monthly calendar for VAT, PAYE, WHT and each applicable scheme using owning skills and actual assessments; resolve ng-wht's disclosed State deadline conflict. Keep formation, social certificates and tax clearance distinct. Apply TCC separately through the relevant authority using the preceding3 years' assessment/payment evidence; nil liability and evidenced source deductions have statutory protections. A tax clearance certificate is not a declaration that every procurement or contribution certificate is current. [NTAA section 72](https://nass.gov.ng/documents/download/11250).
 
-### Employers (PAYE):
-1. **10 January 2026** — File December 2025 Form G; remit December PAYE
-2. **31 January 2026** — File Form H1 (annual PAYE reconciliation) with State IRS
-3. **31 March 2026** — NSITF annual reconciliation
-4. **1 April 2026** — ITF annual contribution + return
-5. Apply for compliance certificates: ITF, NSITF, PenCom, NHF (each ~12-month validity)
+An overpayment is subject to verification/set-off/refund: section 55 permits a written claim within 6 years of the relevant assessment year and refund within 90 days of the authority's decision after audit, with a set-off option; no promise of payment90 days after filing. Late payment uses section 65's10% penalty plus specified interest, distinct from withheld-tax non-remittance under section 107. Resolve applicable sanctions by obligation and actual period rather than compound old penalty tables. Preserve books/returns/payment and receipt records for the statutory period; retain asset acquisition and relief histories through use and subsequent enquiry as prudent policy. [NTAA sections 31,49,55,65 and107](https://nass.gov.ng/documents/download/11250).
 
-### Companies (CIT):
-1. **21 January 2026** — File VAT 002 December; remit VAT
-2. **21 January 2026** — File WHT December schedule; remit WHT
-3. **31 January 2026** — File Form H1 with State IRS (employer reconciliation)
-4. **31 March 2026** — NSITF annual; ensure compliance certificates current
-5. **1 April 2026** — ITF annual return + payment
-6. **30 June 2026** — File CIT Self-Assessment on Tax Pro-Max for FY ending 31 December 2025; remit CIT + TET via Remita
-7. Apply for FIRS TCC after CIT acceptance
-8. Generate transfer pricing local file (if related-party transactions); attach to CIT filing
-```
+## Additional evidence schedules retained from the original
 
-## Monthly compliance through 2026
+For imported services, ask the VAT owner to determine any self-accounting/reverse-charge obligation and reconcile the resulting VAT entries to foreign-supplier expenses/payables and actual VAT returns/payments. This preserves the distinct imported-services reconciliation; it does not rewrite or approve the protected VAT Guides.
 
-**Monthly compliance through 2026 table**
+Retain a statement of assets and liabilities/net worth where required by the actual authority or useful to reconcile a high-net-worth individual's income/funding. The original assertion that LIRS mandates it whenever income exceeds NGN 25m is specifically unconfirmed pending an operative LIRS source. Do not treat the identity sheet or a TP threshold as that schedule.
 
-| Item | Authority | Due |
+## Completion checklist
+
+- All identity, tax and period fields evidenced; relevant federal/State authority confirmed.
+- All required upstream owners loaded; gaps and special regimes explicitly marked.
+- Every revenue, credit, payroll, scheme, WHT, VAT, asset and tolerance check reconciled or held with quantified effect.
+- Correct current/historical law, exemptions, levy/minimum-tax/ETR/dividend and foreign-tax treatment checked by their owners.
+- Return schedules tied to accounts and actual prescribed form; no double deductions or final-taxed credits.
+- Payment, filing and certificate statuses distinct; references genuine; due dates sourced and responsibility assigned.
+- Three outputs recalculated, internally consistent, linked, and labelled partial or reviewer-ready honestly.
+- Reviewer attestation remains unsigned until the actual reviewer acts; no material gap hidden by a passed formatting check.
+
+## Sources
+
+| Source and actual read scope | URL | Read on |
 | --- | --- | --- |
-| PAYE Form G | State IRS | 10th of following month |
-| WHT (companies) | FIRS Tax Pro-Max | 21st of following month |
-| WHT (individuals) | State IRS | 10th of following month |
-| VAT 002 | FIRS Tax Pro-Max | 21st of following month |
-| Pension (RSA) | PFA | 7 working days from salary |
-| NHF | FMBN | Monthly |
-| NSITF | NSITF | Monthly (14 days) |
-
-## Record retention
-
-- **Record retention requirement** — Per CITA Section 26 (companies) and PITA Section 53 (individuals), accounting records must be retained for 6 years after the year to which they relate (i.e., FY 2025 records must be kept until end of 2031). FIRS practice for VAT records under VAT Act Section 31: 6 years. Records may be kept in electronic form provided they are accessible to FIRS / State IRS on demand. Cross-border storage is permissible but reasonable on-demand access in Nigeria is expected. Retain at minimum: - Audited financial statements - General ledger and supporting source documents - WHT credit notes (received and issued) with serial numbers - VAT invoices and VAT credit notes - Remita e-Receipts (RTRs) and Tax Pro-Max payment evidence - Tax Pro-Max filing acknowledgements - State IRS filing acknowledgements - Form G monthly + Form H1 annual employer returns - Compliance certificates (ITF, NSITF, PenCom, NHF) - TCCs (federal and state)  _(CITA Section 26; PITA Section 53; VAT Act Section 31)_
-
-## Section 2 — Required inputs from upstream skills
-
-0. **Consume individual return inputs**
-0. **Consume ng-personal-income-tax output** — Chargeable income computation feeding Form A Parts B, C, D
-
-## Section 13 — 2026 planning notes (NTA 2025 transitional impact)
-
-The capstone produces a forward-looking section so the taxpayer arrives at the next year's filing aware of the structural changes the **Nigeria Tax Act 2025** introduces.
-
-### 13.1 NTA 2025 — what changes from 1 January 2026
-
-**NTA 2025 transitional changes table**  _(Nigeria Tax Act 2025 (NTA 2025))_
-
-| Area | FY 2025 (current) | FY 2026 (NTA 2025) | Action |
-| --- | --- | --- | --- |
-| CIT large-company rate | 30% | **25%** | Re-forecast tax in 2026 budget |
-| Small company threshold | Turnover ≤ ₦25M | **Turnover ≤ ₦100M** | Many medium companies move into small-company exemption (0% CIT) |
-| TET + NITDA + NASENI | 3% + 1% + 0.25% separate levies | Consolidated **Development Levy of 4%** | Single line in 2026 computation |
-| Minimum tax (companies) | Section 33 CITA: 0.5% turnover | **MEFR 15%** for MNE groups ≥ €750M consolidated revenue (Pillar Two) | Pillar Two diagnostic for MNE clients |
-| PIT structure | Graduated 7–24%, CRA, Sixth Schedule reliefs | New brackets 0–25%; ₦800K tax-free threshold; rent relief ₦200K | Update payroll PAYE calculations from 1 Jan 2026 |
-| TIN | Separate FIRS TIN (companies) and JTB TIN (individuals) | **Unified TIN** — single identifier | Re-validate identifiers post 1 Jan 2026 |
-| Tax authority | FIRS | **Nigeria Revenue Service (NRS)** | Portal rebrand; processes substantively unchanged in short term |
-| VAT rate | 7.5% | **7.5%** (unchanged — proposed increase dropped) | No change |
-| Digital services | Significant Economic Presence rules (FA 2019) | NTA 2025 codifies + expands; includes non-resident e-commerce | If MNE: review SEP exposure |
-| Consolidated view | Separate modules in Tax Pro-Max | **Nigeria Tax Account** consolidates all obligations in one ledger from 1 Jan 2026 | Reconciliation should be easier post-rollout |
-
-- **Plc CIT rate** — 30% percent (typically falls in the large-company band under NTA 2025)  _(NTA 2025)_
-- **Small company threshold** — Turnover ≤ ₦25M  _(Many medium companies move into small-company exemption (0% CIT))_
-- **TET + NITDA + NASENI** — 3% + 1% + 0.25% separate levies  _(Single line in 2026 computation)_
-- **Minimum tax (companies)** — Section 33 CITA: 0.5% turnover  _(Pillar Two diagnostic for MNE clients)_
-- **PIT structure** — Graduated 7–24%, CRA, Sixth Schedule reliefs  _(Update payroll PAYE calculations from 1 Jan 2026)_
-- **TIN** — Separate FIRS TIN (companies) and JTB TIN (individuals)  _(Re-validate identifiers post 1 Jan 2026)_
-- **Tax authority** — FIRS  _(Portal rebrand; processes substantively unchanged in short term)_
-- **VAT rate** — 7.5%  _(No change)_
-- **Digital services** — Significant Economic Presence rules (FA 2019)  _(If MNE: review SEP exposure)_
-- **Consolidated view** — Separate modules in Tax Pro-Max  _(Reconciliation should be easier post-rollout)_
-
-### 13.2 Provisional / advance tax for 2026
-
-- **CIT provisional tax** — Plan provisional CIT under CITA Section 77 if the company will pay in instalments; first instalment due with provisional return (typically within 3 months of FY-end). Provisional return is filed on the basis of current-year forecast.  _(CITA Section 77)_
-- **PIT provisional tax** — Self-employed individuals pay provisional PIT in 4 quarterly instalments under PITA Section 44 (15 April, 15 July, 15 October, 15 January). Compute on best estimate of FY 2026 chargeable income at NEW NTA 2025 rates.  _(PITA Section 44)_
-
-### 13.3 Compliance certificate renewals
-
-All four compliance certificates (ITF, NSITF, PenCom, NHF) renew annually. Plan applications **early Q1 2026** to ensure TCC is not blocked. Each can take 2–6 weeks.
-
-### 13.4 Transfer pricing (companies)
-
-If related-party transactions exist:
-
-- **Local File** — Required for entities with related-party transactions ≥ ₦300M (FIRS TP Regulations 2018 Regulation 16). Due with CIT return (30 June 2026 for 31 Dec 2025 FYE).  _(FIRS TP Regulations 2018 Regulation 16)_
-- **Master File** — Required for entities part of MNE groups ≥ ₦160B consolidated revenue. Same due date.  _(FIRS TP Regulations 2018)_
-- **CbCR Notification** — Annual within 12 months of FY-end if MNE.  _(FIRS TP Regulations 2018)_
-- **TP Declaration Form** — Submitted as schedule to Tax Pro-Max return.  _(FIRS TP Regulations 2018)_
-
-### 13.5 Minimum tax monitoring
-
-- **Minimum tax rule** — Under CITA Section 33, where a company has insufficient tax payable (e.g., due to large capital allowances or losses), minimum tax of **0.5% of gross turnover** applies (excluded: small companies under Section 40, companies in first 4 years of operation, manufacturing within first 4 years, agricultural). Flag in 2026 forecast if minimum tax is likely to bite.  _(CITA Section 33)_
-
-### 13.6 Excess Dividend Tax (EDT)
-
-- **Excess Dividend Tax** — Under CITA Section 19, if a company pays dividends in excess of its taxable profits for the year, the excess is taxable at the corporate rate. Plan dividend distributions to avoid EDT exposure. Finance Act 2020 narrowed but did not eliminate EDT.  _(CITA Section 19; Finance Act 2020)_
-
-## Section 14 — Conservative defaults
-
-When inputs from upstream skills are ambiguous or missing, apply the following defaults and flag for the reviewer:
-
-**Conservative defaults table**
-
-| Situation | Conservative default |
-| --- | --- |
-| Cross-skill reconciliation differs by > ₦1,000 | Flag as "Needs Input"; do not silently round |
-| Tax Pro-Max billing reference / Remita RRR unknown | Use "TBC — generate via Tax Pro-Max" and DO NOT estimate the RRR |
-| Company size classification borderline (turnover near ₦25M / ₦100M boundary) | Use HIGHER tax bracket as conservative; flag for reviewer |
-| State of residence ambiguous (multi-state employee) | Default to state of principal employment per PITA First Schedule; flag |
-| Capital allowances cap applicability unclear (non-manufacturing vs manufacturing) | Apply 66 2/3% cap; flag for reviewer |
-| TIN missing or unverified | Cannot finalise return; flag as blocker |
-| WHT credit notes claimed but not in hand | Exclude the credit; flag for taxpayer to obtain |
-| Audit requirement unclear (small company exempted from audit by CAMA 2020 Section 402 — must be a small company per CAMA definition) | Recommend audit unless clearly exempt; conservative position |
-| Donation deductibility uncertain (recipient not on CITA Sixth Schedule) | Disallow; flag for reviewer |
-| December payroll true-up not booked | Treat year as incomplete; cannot finalise return until December payroll closed |
-| Foreign tax credit certificate of payment missing | Disallow credit; flag for documentation |
-| Related-party transactions undocumented | Flag transfer pricing risk; do not assume arm's-length |
-| Compliance certificate missing or expired | Flag as TCC blocker |
-| NTA 2025 rate or threshold assumed for FY 2025 | Reject; FY 2025 uses pre-NTA rules; NTA 2025 applies from 1 Jan 2026 only |
-| Tax Pro-Max payment evidence missing | Mark assessment as "pending payment"; advise to settle before deadline |
-
-- **Cross-skill reconciliation differs by > ₦1,000** — Flag as "Needs Input"; do not silently round
-- **Tax Pro-Max billing reference / Remita RRR unknown** — Use "TBC — generate via Tax Pro-Max" and DO NOT estimate the RRR
-- **Company size classification borderline (turnover near ₦25M / ₦100M boundary)** — Use HIGHER tax bracket as conservative; flag for reviewer
-- **State of residence ambiguous (multi-state employee)** — Default to state of principal employment per PITA First Schedule; flag
-- **Capital allowances cap applicability unclear (non-manufacturing vs manufacturing)** — Apply 66 2/3% cap; flag for reviewer
-- **TIN missing or unverified** — Cannot finalise return; flag as blocker
-- **WHT credit notes claimed but not in hand** — Exclude the credit; flag for taxpayer to obtain
-- **Audit requirement unclear (small company exempted from audit by CAMA 2020 Section 402 — must be a small company per CAMA definition)** — Recommend audit unless clearly exempt; conservative position
-- **Donation deductibility uncertain (recipient not on CITA Sixth Schedule)** — Disallow; flag for reviewer
-- **December payroll true-up not booked** — Treat year as incomplete; cannot finalise return until December payroll closed
-- **Foreign tax credit certificate of payment missing** — Disallow credit; flag for documentation
-- **Related-party transactions undocumented** — Flag transfer pricing risk; do not assume arm's-length
-- **Compliance certificate missing or expired** — Flag as TCC blocker
-- **NTA 2025 rate or threshold assumed for FY 2025** — Reject; FY 2025 uses pre-NTA rules; NTA 2025 applies from 1 Jan 2026 only
-- **Tax Pro-Max payment evidence missing** — Mark assessment as "pending payment"; advise to settle before deadline
-- **Tolerance rule (repeated for emphasis)** — ₦1,000 reconciliation tolerance. Any larger discrepancy is escalated, not absorbed.
-
-## Section 15 — Refusals
-
-- **R-NG-ASM-1** — Upstream skill did not run. Name the missing skill. Continue with available data; flag the gap; do not fabricate the missing computation.  _(R-NG-ASM-1)_
-- **R-NG-ASM-2** — Upstream self-check failed. Note the specific check; continue but flag.  _(R-NG-ASM-2)_
-- **R-NG-ASM-3** — Cross-skill reconciliation > ₦1,000. Raise as "Needs Input"; do not silently round.  _(R-NG-ASM-3)_
-- **R-NG-ASM-4** — Out of scope: Petroleum Profits Tax (PPTA), Hydrocarbon Tax under PIA 2021, mining royalties, telecommunications-specific levies, gaming tax, betting tax, freezone tax holidays (NEPZA / OGFZA pioneer status under Industrial Development Income Tax Relief Act). Flag for human specialist; do not attempt.  _(R-NG-ASM-4)_
-- **R-NG-ASM-5** — Out of scope: non-resident companies / non-resident individuals, Permanent Establishment determination under DTT, mixed-residency years, expatriate Significant Economic Presence under FA 2019 / NTA 2025. Refer to a specialist; this skill assumes full-year Nigerian tax residency.  _(R-NG-ASM-5)_
-- **R-NG-ASM-6** — Out of scope: combined federal-state tax disputes, Tax Appeal Tribunal (TAT) proceedings, FIRS audit defence, transfer pricing audit defence. Refer to a tax lawyer / CITN member with TAT practice.  _(R-NG-ASM-6)_
-- **R-NG-ASM-7** — Intake incomplete. Name the missing intake field (TIN, RC/BN, NIN, State of Residence, etc.). Cannot finalise the return until provided.  _(R-NG-ASM-7)_
-- **R-NG-ASM-8** — Asked to submit to Tax Pro-Max or State IRS portal directly. This skill produces a working paper. Submission is the taxpayer's (or their authorised filer's) action, after ICAN / CITN review and sign-off. Decline politely; provide the filing instructions instead.  _(R-NG-ASM-8)_
-- **R-NG-ASM-9** — NTA 2025 retroactive application. NTA 2025 effective dates govern; do not back-apply 2026 rates / thresholds to 2025 returns. Decline politely; explain transitional rules.  _(R-NG-ASM-9)_
-- **R-NG-ASM-10** — Out of scope: oil and gas sector (PIA 2021 Chapter 4 fiscal terms), pioneer status companies, free zone enterprises, NIPC-incentivised entities. Refer to specialist.  _(R-NG-ASM-10)_
-
-## Section 16 — Self-checks
-
-All upstream skills required for the chosen filing type have produced output, or the gap is flagged.
-
-Revenue reconciles between bookkeeping, ng-vat, and the chosen income-tax skill (ng-cit / ng-personal-income-tax) within ₦1,000.
-
-Tax credits sum correctly across PAYE, WHT, provisional tax, foreign tax credit; each WHT credit note backed by FIRS / State IRS serial number.
-
-Form H1 sum equals Form G monthly totals within ₦1,000; December true-up is booked.
-
-All four statutory deductions (Pension, NHF, NHIS, ITF/NSITF) remitted; compliance certificates current.
-
-For companies: capital allowances within Section 31 cap (66 2/3% for non-manufacturing) unless manufacturing exemption applies; TWDV roll-forward ties.
-
-Minimum tax check under CITA Section 33 performed; result documented.
-
-CIT rate band (0% / 20% / 30%) correctly applied based on FY 2025 turnover (₦25M / ₦100M thresholds); company classified small/medium/large.
-
-TET at 3% of assessable profit (NOT total profit); applied to ALL companies (no small-company exemption from TET per Finance Act 2023).
-
-Filing deadlines explicitly stated in action list: 10 Jan (PAYE), 21 Jan (VAT/WHT), 31 Jan (H1), 31 Mar (Form A / NSITF), 1 Apr (ITF), 30 Jun (CIT).
-
-Tax Pro-Max workflow described: file → Assessment → Remita RRR → Pay → e-Receipt → Reconciliation.
-
-State IRS jurisdiction for PIT correctly identified per taxpayer's "place of residence" under PITA First Schedule.
-
-Record retention period (6 years per CITA Section 26 / PITA Section 53 / VAT Act Section 31) is stated.
-
-Reviewer brief contains legislation citations for every position taken (CITA, PITA, VAT Act, CGTA, TET Act, Finance Acts, NTA 2025 where prospective).
-
-TCC application workflow noted in action list (FIRS TCC + State TCC).
-
-ICAN / CITN reviewer sign-off requirement stated in executive summary and action list.
-
-NTA 2025 transitional impacts flagged in 2026 planning section; rates/thresholds NOT back-applied to 2025.
-
-## Section 17 — Reviewer attestation block
-
-The final working paper carries an attestation block the credentialed reviewer signs:
-
-```markdown
-# Reviewer Attestation — Year of Assessment 2026 (FY 2025)
-
-I, [Name], [ICAN/ANAN] member with ICAN/ANAN number [____], 
-and [CITN member where applicable] number [____], 
-acting for [Taxpayer name, TIN ________], 
-have reviewed the working paper prepared by [preparer / OpenAccountants AI], 
-verified the cross-skill reconciliations to my satisfaction, 
-and confirm that:
-
-  [ ] The audited financial statements (companies) or business accounts (sole 
-       proprietors) on which this return is based are signed off
-  [ ] Tax adjustments, capital allowances, and reliefs comply with CITA / PITA / 
-       relevant Finance Acts
-  [ ] Statutory compliance certificates (ITF, NSITF, PenCom, NHF) are in place 
-       (or absence is flagged)
-  [ ] WHT credit notes claimed have verifiable serial numbers
-  [ ] VAT-to-income reconciliation is within ₦1,000 tolerance (or explained)
-  [ ] PAYE Form H1 reconciles to monthly Form G remittances
-  [ ] No NTA 2025 prospective rule has been back-applied to 2025
-  [ ] Transfer pricing local file is prepared (where required) and attached
-  [ ] Minimum tax check under CITA Section 33 (companies) is documented
-  [ ] All payment due dates and Remita / Tax Pro-Max workflows are explained 
-       to the taxpayer
-
-Signed: ___________________  Date: ___________________
-        [Reviewer name]
-ICAN/ANAN no.: ___________________
-CITN no. (if applicable): ___________________
-Firm: ___________________  FRC no.: ___________________
-```
-
-**No filing without this signed attestation.**
-
-## Section 18 — Output files
-
-The final output is **three files**:
-
-1. **`[taxpayer_slug]_2025_ng_master.xlsx`** — Master workbook. Sheets: Cover, Identity, Form A (or CIT Self-Assessment), Tax Computation, Capital Allowances, Loss Relief, WHT Credit Notes Register, Statutory Deductions Register, VAT Reconciliation, Form H1 / Form G Reconciliation, Cross-Check Summary, Tax Pro-Max / Remita Payment Schedule, Compliance Certificates Tracker. Use live formulas where possible; verify no `#REF!` errors.
-
-2. **`reviewer_brief.md`** — Markdown file with all Section 8 contents, plus the headline blocks from Section 9 and the attestation block from Section 17.
-
-3. **`taxpayer_action_list.md`** — Markdown file with all Section 12 contents, plus the payment instructions block from Section 10 and filing instructions block from Section 11.
-
-All three files are placed in `/mnt/user-data/outputs/` and presented to the user at the end.
-
-If execution runs out of context mid-build, complete the computation work first and produce whichever formatted outputs are finished, then state clearly which deliverables are partial.
-
-## Section 19 — Known gaps
-
-1. PDF form filling is not automated; the reviewer or taxpayer enters values into Tax Pro-Max / State IRS portals using the working paper.
-2. Tax Pro-Max XML / bulk upload templates are not generated by this skill; integrations with ERP / accounting software handle that.
-3. Audited financial statements attachment is the taxpayer's responsibility; this skill only flags when audit is required (CAMA 2020 Section 402 small-company exemption).
-4. Transfer pricing local file / master file content is referenced but not assembled here (separate skill needed for full TP documentation).
-5. Petroleum Profits Tax / Hydrocarbon Tax under PIA 2021 is out of scope.
-6. Pioneer status (NIPC) / freezone (NEPZA / OGFZA) regime computations are out of scope.
-7. Country-by-Country Reporting XML is not assembled here.
-8. NTA 2025 implementing regulations may evolve through 2025–2026; every prospective rule in this skill should be re-verified against the gazetted NTA 2025 commencement notice and any FIRS / NRS implementation guidance.
-9. State IRS portal mechanics vary by state; this skill describes the LIRS pattern as the most-developed example. Smaller states may require paper filings; flag in intake.
-10. CGT on shares: NTA 2025 changes the CGT treatment of certain share disposals from 1 Jan 2026 — not relevant for 2025 returns but flagged in planning.
-
-### Change log
-
-- **v1.0 (May 2026):** Initial release. Modelled on mt-return-assembly, us-ca-return-assembly, and id-return-assembly. Adapted for Nigerian PIT Form A, CIT Self-Assessment via FIRS Tax Pro-Max, State IRS coordination, Remita / TSA payment, and NTA 2025 transitional impact. Coordinates nine upstream Nigeria skills.
-
-## Section 20 — Sources
-
-**Sources table**
-
-| Source | Reference |
-| --- | --- |
-| Companies Income Tax Act (CITA), Cap C21 LFN 2004 (as amended) | CIT framework; Sections 31 (capital allowances cap), 33 (minimum tax), 40 (rates), 55 (filing deadline), 77 (instalments), 81 (WHT compliance), 85 (interest), Second Schedule (capital allowances), Sixth Schedule (donations) |
-| Personal Income Tax Act (PITA), Cap P8 LFN 2004 (as amended) | PIT framework; Sections 41 (annual return), 44 (provisional tax), 73 (WHT compliance), 81 (PAYE), 94 (penalties), First Schedule (residence), Sixth Schedule (CRA & graduated rates) |
-| Value Added Tax Act, Cap V1 LFN 2004 (as amended through Finance Act 2020) | VAT framework, 7.5% rate, monthly filing, reverse charge on imported services |
-| Capital Gains Tax Act (CGTA), Cap C1 LFN 2004 (as amended) | CGT at 10%; Section 32 roll-over relief |
-| Tertiary Education Trust Fund Act 2011 (as amended by Finance Act 2023) | TET at 3% of assessable profit; applies to all resident companies |
-| Pension Reform Act 2014 | Pension framework; 8% employee + 10% employer; Section 11(3) seven-day remittance |
-| National Housing Fund Act 1992 | 2.5% NHF contribution |
-| Industrial Training Fund Act (as amended) | 1% of payroll; annual return |
-| Employees Compensation Act 2010 | NSITF 1% of payroll |
-| National Health Insurance Authority Act 2022 (replacing NHIS Act) | NHIA scheme rates |
-| Companies and Allied Matters Act (CAMA) 2020 | Section 402 small-company audit exemption; CAC RC/BN issuance |
-| FIRS Establishment Act 2007 | FIRS powers; transitioning to NRS under NTA 2025 |
-| Federal Inland Revenue Service Transfer Pricing Regulations 2018 | Local file, master file, TP declaration, related-party thresholds |
-| Finance Act 2019 | Small company exemption; WHT reforms; minimum tax narrowing |
-| Finance Act 2020 | VAT reforms; SEP rules; EDT narrowing; CRA enhancement |
-| Finance Act 2021 | Capital gains on shares; further VAT amendments |
-| Finance Act 2023 | TET rate to 3%; further refinements |
-| **Nigeria Tax Act 2025 (NTA 2025)** — assented June 2025, key provisions effective 1 January 2026 | New CIT rate (25% large), new small-company threshold (₦100M), Development Levy (4% consolidating TET/NITDA/NASENI), new PIT brackets and ₦800K threshold, unified TIN, NRS rebrand, MEFR 15% for MNEs (Pillar Two) — **prospective only; does NOT apply to FY 2025** |
-| FIRS Tax Pro-Max | https://taxpromax.firs.gov.ng |
-| Remita | https://www.remita.net |
-| Lagos State Internal Revenue Service (LIRS) eTax | https://etax.lirs.net |
-| FCT-IRS | https://fctirs.gov.ng |
-| Institute of Chartered Accountants of Nigeria (ICAN) | https://icanig.org |
-| Association of National Accountants of Nigeria (ANAN) | https://anan.org.ng |
-| Chartered Institute of Taxation of Nigeria (CITN) | https://citn.org |
-| Skill version | 1.0 |
-
-- **CIT framework; Sections 31 (capital allowances cap), 33 (minimum tax), 40 (rates), 55 (filing deadline), 77 (instalments), 81 (WHT compliance), 85 (interest), Second Schedule (capital allowances), Sixth Schedule (donations)** — CIT framework; Sections 31 (capital allowances cap), 33 (minimum tax), 40 (rates), 55 (filing deadline), 77 (instalments), 81 (WHT compliance), 85 (interest), Second Schedule (capital allowances), Sixth Schedule (donations)  _(Companies Income Tax Act (CITA), Cap C21 LFN 2004 (as amended))_
-- **PIT framework; Sections 41 (annual return), 44 (provisional tax), 73 (WHT compliance), 81 (PAYE), 94 (penalties), First Schedule (residence), Sixth Schedule (CRA & graduated rates)** — PIT framework; Sections 41 (annual return), 44 (provisional tax), 73 (WHT compliance), 81 (PAYE), 94 (penalties), First Schedule (residence), Sixth Schedule (CRA & graduated rates)  _(Personal Income Tax Act (PITA), Cap P8 LFN 2004 (as amended))_
-- **Value Added Tax Act, Cap V1 LFN 2004 (as amended through Finance Act 2020)** — VAT framework, 7.5% rate, monthly filing, reverse charge on imported services
-- **CGT at 10%; Section 32 roll-over relief** — CGT at 10%; Section 32 roll-over relief  _(Capital Gains Tax Act (CGTA), Cap C1 LFN 2004 (as amended))_
-- **Tertiary Education Trust Fund Act 2011 (as amended by Finance Act 2023)** — TET at 3% of assessable profit; applies to all resident companies
-- **Pension framework; 8% employee + 10% employer; Section 11(3) seven-day remittance** — Pension framework; 8% employee + 10% employer; Section 11(3) seven-day remittance  _(Pension Reform Act 2014)_
-- **2.5% NHF contribution** — 2.5% NHF contribution  _(National Housing Fund Act 1992)_
-- **1% of payroll; annual return** — 1% of payroll; annual return  _(Industrial Training Fund Act (as amended))_
-- **NSITF 1% of payroll** — NSITF 1% of payroll  _(Employees Compensation Act 2010)_
-- **NHIA scheme rates** — NHIA scheme rates  _(National Health Insurance Authority Act 2022 (replacing NHIS Act))_
-- **Section 402 small-company audit exemption; CAC RC/BN issuance** — Section 402 small-company audit exemption; CAC RC/BN issuance  _(Companies and Allied Matters Act (CAMA) 2020)_
-- **FIRS powers; transitioning to NRS under NTA 2025** — FIRS powers; transitioning to NRS under NTA 2025  _(FIRS Establishment Act 2007)_
-- **Local file, master file, TP declaration, related-party thresholds** — Local file, master file, TP declaration, related-party thresholds  _(Federal Inland Revenue Service Transfer Pricing Regulations 2018)_
-- **Small company exemption; WHT reforms; minimum tax narrowing** — Small company exemption; WHT reforms; minimum tax narrowing  _(Finance Act 2019)_
-- **VAT reforms; SEP rules; EDT narrowing; CRA enhancement** — VAT reforms; SEP rules; EDT narrowing; CRA enhancement  _(Finance Act 2020)_
-- **Capital gains on shares; further VAT amendments** — Capital gains on shares; further VAT amendments  _(Finance Act 2021)_
-- **Finance Act 2023** — TET rate to 3%; further refinements
-- **New CIT rate (25% large), new small-company threshold (₦100M), Development Levy (4% consolidating TET/NITDA/NASENI), new PIT brackets and ₦800K threshold, unified TIN, NRS rebrand, MEFR 15% for MNEs (Pillar Two) — **prospective only; does NOT apply to FY 2025**** — New CIT rate (25% large), new small-company threshold (₦100M), Development Levy (4% consolidating TET/NITDA/NASENI), new PIT brackets and ₦800K threshold, unified TIN, NRS rebrand, MEFR 15% for MNEs (Pillar Two) — **prospective only; does NOT apply to FY 2025**  _(**Nigeria Tax Act 2025 (NTA 2025)** — assented June 2025, key provisions effective 1 January 2026)_
-- **https://taxpromax.firs.gov.ng** — https://taxpromax.firs.gov.ng  _(FIRS Tax Pro-Max)_
-- **https://www.remita.net** — https://www.remita.net  _(Remita)_
-- **https://etax.lirs.net** — https://etax.lirs.net  _(Lagos State Internal Revenue Service (LIRS) eTax)_
-- **https://fctirs.gov.ng** — https://fctirs.gov.ng  _(FCT-IRS)_
-- **https://icanig.org** — https://icanig.org  _(Institute of Chartered Accountants of Nigeria (ICAN))_
-- **https://anan.org.ng** — https://anan.org.ng  _(Association of National Accountants of Nigeria (ANAN))_
-- **https://citn.org** — https://citn.org  _(Chartered Institute of Taxation of Nigeria (CITN))_
-- **1.0** — 1.0  _(Skill version)_
-
-## OpenAccountants footer disclaimer
-
-*OpenAccountants — open-source accounting skills for AI*
-*This is not tax advice. All outputs must be reviewed and signed off by a Chartered Accountant in Nigeria (ICAN or ANAN member, and where tax-specific opinions are required, also CITN-registered) before filing via FIRS Tax Pro-Max or the relevant State Internal Revenue Service portal.*
+| NTAA sections 3 to8,11,13 to15,22,28,31,33,49,51,55,65,72,85,100 to107 and relevant First Schedule residence rules | https://nass.gov.ng/documents/download/11250 | 2026-11-16 |
+| NTA sections 20 to32,56 to59,119 to121,163,191,195 to198; owning computation scopes recorded in their source tables | https://nass.gov.ng/documents/download/11249 | 2026-11-16 |
+| JRB2026 PIT Guidelines paragraphs 11 to15/22 to26 and full Appendix1/2 form structure, including PartF ambiguity | https://cms-api.jrb.gov.ng/api/publication-assets/file/2026-pit-guidelines-TJG3n9-T%20%281%29.pdf | 2026-11-16 |
+| NRS public Rev360 CIT tutorial: full transcript, company workflow and named template sections; no authenticated session/payment screens | https://www.linkedin.com/posts/nrsnigeria_rev360-howtoseries-nrs-activity-7458448517695606784-5y9q | 2026-11-16 |
+| Government transition announcement only; full operative document unavailable | https://fmino.gov.ng/federal-government-issues-transition-guidelines-for-tax-acts-2025/ | 2026-11-16 |
+
+Not yet confirmed: live authenticated federal/State portal fields, current TaxProMax/Remita/TSA payment sequence/reference lengths, universal VAT002/H1/FormG nomenclature and paper-filing requirements in each State; complete transition Guidelines and straddling periods; CAMA section 402 audit exemption; TP LocalFile NGN 300m, MasterFile NGN 160b, CbCR and purported NGN 12m thresholds/filing dates; universal12-month validity or TCC prerequisite for ITF/NSITF/PenCom/NHF certificates; the original6-year WHT shelf-life claim or routine quarterly advance-tax dates; historic CITA/PITA penalties and credits/EDT offsets not confirmed by the owning computation. These topics are preserved for resolution, with no guessed current instruction. The repeated old rate/threshold tables, conservative defaults and action lists are replaced by the owning methods, eight specific reconciliations and current workflow above; old2025 files/dates remain historical conventions only.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ng-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ng-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ng-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ng-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -10,15 +10,16 @@
 3. `README.md`
 4. `references.md`
 5. `th-company-formation.md`
-6. `th-payroll-social.md`
-7. `th-tax-overview.md`
-8. `th-top-up-tax.md`
-9. `thailand-pit.md`
-10. `thailand-vat.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
-13. `workflow-base.md`
-14. `vat-workflow-base.md`
+6. `th-corporate-income-tax.md`
+7. `th-payroll-social.md`
+8. `th-tax-overview.md`
+9. `th-top-up-tax.md`
+10. `thailand-pit.md`
+11. `thailand-vat.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
+14. `workflow-base.md`
+15. `vat-workflow-base.md`
 
 ## Also known as
 

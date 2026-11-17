@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/kw-vat-gst"
   jurisdiction: "KW"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-16"
 ---
 
-# Kuwait VAT / GST v0.3
+# Kuwait VAT / GST v0.4
 
 Tax year 2026.
 
@@ -22,12 +22,13 @@ Businesses reviewing a Kuwait indirect-tax question. The MOF laws, decree-laws a
 
 ## Rates, bands and thresholds
 
-| Item | Figure and conditions | Tax year | Official URL |
+No current Kuwait rate, registration threshold or return frequency is established here. The table records only the existing 2026-11-01 index-reading scope, not tax rates or proof of implementation. The held tax questions remain under Sources.
+
+| Index | Reading boundary only | Read on | Official URL |
 |---|---|---|---|
-| VAT, GST and excise status | unverified: NON-OPERATIVE HOLD. MOF title searches did not establish current legal status | 2026 | https://www.mof.gov.kw/MOFDesicions/mofDesicions1.aspx |
-| Rate, registration threshold and return frequency | unverified: no current rule established. Do not adopt a GCC framework percentage as Kuwait law | 2026 | unverified |
-| Reverse charge, input recovery and invoice requirements | unverified: no current Kuwait procedure established | 2026 | unverified |
-| Customs duty | unverified: rate, tariff classification and exemptions require current customs evidence | 2026 | unverified |
+| MOF laws list | Financial/tax law titles read; index scope only, no VAT or excise title identified | 2026-11-01 | https://www.mof.gov.kw/MOFDesicions/mofDesicions1.aspx |
+| MOF decree-laws list | Financial/tax decree titles including 157/2024 read; index scope only | 2026-11-01 | https://www.mof.gov.kw/MOFDesicions/mofDesicions2.aspx |
+| MOF resolutions list | Tax resolution titles and 2025 DMTT material read; index scope only | 2026-11-01 | https://www.mof.gov.kw/MOFDesicions/mofDesicions3.aspx |
 
 ## The base
 
@@ -92,6 +93,18 @@ expected:
 
 Not yet confirmed: NON-OPERATIVE HOLDS. The inherited assertions that Kuwait has no VAT/GST, no general consumption or sales tax, no excise, no registration, return, invoice tax, reverse charge, input recovery or penalties, and that foreign VAT is irrecoverable. Current enactment, commencement and implementation dates require affirmative official evidence. Historical GCC VAT Framework Agreement (2017), claimed 5% framework rate, GCC Excise Framework Agreement (2016) and Kuwait signature/domestic-adoption status have not been read at source. Historical customs 5% of CIF on most goods, higher tobacco/product rates and the description of customs as the main indirect tax remain unverified; customs.gov.kw access failure was reported by the prior writer, not treated as a source reading. Old domestic zero-VAT invoice cases and digital-services no-VAT conclusion must not be used as current tax advice.
 
+### Held questions retained from the former rates table
+
+These are non-operative source gaps, not usable tax guidance. The research target is tax year 2026, not confirmation of current law.
+
+**VAT, GST and excise status:** unverified: NON-OPERATIVE HOLD. MOF title searches did not establish current legal status. Index reference only: https://www.mof.gov.kw/MOFDesicions/mofDesicions1.aspx (index read 2026-11-01 only; legal status remains unverified).
+
+**Rate, registration threshold and return frequency:** unverified: no current rule established. Do not adopt a GCC framework percentage as Kuwait law. Official URL: unverified.
+
+**Reverse charge, input recovery and invoice requirements:** unverified: no current Kuwait procedure established. Official URL: unverified.
+
+**Customs duty:** unverified: rate, tariff classification and exemptions require current customs evidence. Official URL: unverified.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `kw-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/kw-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `kw-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/kw-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.

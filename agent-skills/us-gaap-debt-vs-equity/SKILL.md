@@ -1,170 +1,154 @@
 ---
 name: us-gaap-debt-vs-equity
-description: "US GAAP classification of issued financial instruments as liabilities, equity, mezzanine (temporary) equity, or compound instruments under ASC 480 (Distinguishing Liabilities from Equity), ASC 470-20 (convertible debt, as amended by ASU 2020-06), ASC 815-40 (contracts in an entity's own equity), and ASC 505 (equity). Covers the three classes of freestanding instruments classified as liabilities, the post-ASU 2020-06 single-liability model for most convertible debt, the indexed-to-own-stock and equity-classification conditions, and SEC temporary/mezzanine equity. Produces classification conclusions, journal entries, and a reviewer brief. Issued as the US GAAP edition of the debt-vs-equity topic; see ias32-debt-vs-equity for the IFRS edition. MUST load alongside financial-reporting-workflow-base."
+description: "Issuer financial-instrument working papers using official ASU 2020-06 and ASU 2024-04 amendment-basis checks, with original ASC 480, own-equity, mezzanine and treasury-stock topics individually retained pending current authoritative Codification access. Load financial-reporting-workflow-base."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/us-gaap-debt-vs-equity"
   jurisdiction: "US"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  last_updated: "2026-11-16"
 ---
 
-# US GAAP Debt Vs Equity
+# US GAAP debt versus equity v0.3
 
-## US GAAP Debt vs. Equity — ASC 480 / 470-20 / 815-40 / 505 v0.1
+**General reference only.** Working papers and reviewer brief only; not an audit or assurance opinion. Tier 2; not approved by an accountant.
 
-## What this file is
+## Scope
 
-**This is a content skill that loads on top of `financial-reporting-workflow-base`.** It supplies the classification, measurement, presentation, and disclosure rules for issued financial instruments under US GAAP — distinguishing liabilities from equity, identifying temporary (mezzanine) equity, and accounting for convertible debt. The base supplies the two-layer output contract, the journal-entry format, and the self-checks.
+**Standard and effective-date basis:** ASC 470-20 and ASC 815-40 (ASU 2024-04 and ASU 2020-06 amendment basis); effective-date key **2025-12-16**. It identifies the first possible annual-period start after 15 December 2025 for ASU 2024-04, including interim periods therein. Earlier adoption requires adoption of ASU 2020-06; use the specified prospective or retrospective transition. ASU 2020-06 applies to SEC-filer PBEs other than entities eligible to be smaller reporting companies, determined from the most recent determination as of 5 August 2020, for fiscal years beginning after 15 December 2021, and to all others after 15 December 2023, including interim periods therein; the general early-adoption rule cannot precede fiscal years beginning after 15 December 2020 and is at the annual-year beginning. A narrow exception permits entities that have not adopted ASU 2017-11 to early adopt the convertible-instrument down-round amendments for fiscal years beginning after 15 December 2019; apply the specific transition conditions, not a general earlier adoption of all amendments. Establish actual adoption and transition before use. [ASU 2024-04 transition summary](https://storage.fasb.org/ASU%202024-04.pdf); [ASU 2020-06 transition summary](https://storage.fasb.org/ASU%202020-06.pdf).
 
-**Standard currency.** ASC 480, ASC 815-40, and ASC 505 as effective, and ASC 470-20 **as amended by ASU 2020-06** (*Debt — Debt with Conversion and Other Options; Derivatives and Hedging — Contracts in Entity's Own Equity*), effective for public business entities for fiscal years beginning after 15 December 2021 and for all other entities after 15 December 2023. ASU 2020-06 **eliminated** the cash-conversion and most beneficial-conversion-feature (BCF) separation models.
+Load `financial-reporting-workflow-base`. This issuer/transaction worksheet retains the complete original topic coverage, but separates the actually read amendment-basis computations from unrecovered current authoritative guidance. It does not cover the holder's accounting, control or valuation methodologies beyond the explicit steps.
 
-**Scope.** This skill addresses the **issuer's** classification of instruments it has issued. It does not cover the holder's classification, embedded-derivative measurement methodology beyond bifurcation triggers, EPS computation, or share-based payment (ASC 718).
+**Source boundary for 2026 work.** This is a source-bounded research and computation worksheet. Current authoritative ASC text was attempted through the official site and an ordinary browser on 15 November 2026 but did not render. The FASB amendments below were opened and their stated operative paragraphs read. Each Update expressly distinguishes itself from the authoritative Codification; reading an ASU does not establish that every intervening amendment is incorporated. Consequently, the method explains only the stated amendment-basis checks. Do not use it to sign a current-ASC conclusion until the authoritative, entity-applicable text is recovered. The official ASC web attempt on 16 November 2026 likewise returned no operative text. Broader unresolved rules are individually reserved under Sources.
 
-## Section 1 — Scope statement
+## Ask the client first
 
-- **Scope covered** — The three classes of freestanding instruments classified as liabilities (or assets) under ASC 480; convertible debt under ASC 470-20 after ASU 2020-06 (single-liability default; the limited remaining separation cases); contracts in the entity's own equity under ASC 815-40 (indexed-to-own-stock assessment and equity-classification conditions); temporary (mezzanine) equity for SEC registrants under ASC 480-10-S99-3A; treasury stock and the classification of dividends/distributions (ASC 505-30, 505-10).  _(ASC 480; ASC 470-20; ASC 815-40; ASC 480-10-S99-3A; ASC 505-30; ASC 505-10)_
-- **Scope excluded** — This skill does NOT cover: share-based payment (ASC 718), EPS (ASC 260), embedded-derivative valuation methodology, or the holder's accounting. It defers the IFRS treatment to ias32-debt-vs-equity.  _(ASC 718; ASC 260)_
+- Reporting framework, reporting-period start, SEC/PBE status, the most recent smaller-reporting-company determination as of 5 August 2020 for the ASU 2020-06 transition bucket, and actual adoption dates.
+- All instrument/side-agreement terms, freestanding versus embedded assessment, settlement currency/options and redemption/dividend obligations.
+- Proceeds, coupon, maturity, conversion ratios, premiums, transaction costs and fair-value option/embedded-derivative conclusions.
+- Authorised shares and competing commitments, cash-settlement, registration, make-whole and counterparty rights.
+- For induced conversion: original/current terms, limited offer period, acceptance date, prior-year modifications, share fair value and substantive-conversion-feature evidence.
 
-## Section 2 — Reference layer (Layer A): the classification rules
+## The method, step by step
 
-### The order of analysis
+1. **Establish the source and scope gate.** Obtain current authoritative ASC 480/815-15/815-40/470-20/505 conclusions for every feature, including freestanding versus embedded, fair-value option, settlement and SEC temporary-equity scope. Do not classify a whole instrument from its legal name. The complete original sequence and all 3 ASC 480 classes remain individually reserved below pending the actual current text.
+2. **ASU 2020-06 conversion-debt basis.** Under amended ASC 470-20-25-1/-25-12, consider the fair-value option and embedded-derivative guidance first. A debt with an embedded conversion feature is otherwise a single liability; separation persists for a bifurcated embedded derivative and the substantial-premium presumption in -25-13. Other stated/unstated rights may require allocation under -25-15. Consequently the old $1,000,000 bond calculation below assumes no such separate component or designation, no issue costs and issue at par. [Official amendment](https://storage.fasb.org/ASU%202020-06.pdf).
+3. **Correct the old own-equity Gate 2 list.** ASU 2020-06 removes the unregistered-share, higher-counterparty-right and collateral conditions. Amended ASC 815-40-25-10/-25-10A retains sufficient authorised/unissued shares after other commitments, an explicit share limit, no required net cash settlement for untimely SEC filings, and no cash-settled top-off/make-whole provisions. A mere cash penalty is not automatically net cash settlement. A requirement for registered shares alone does not disqualify, but an explicit cash fallback if they are unavailable can. The full indexation analysis and other settlement exceptions must still be sourced; this is not a complete equity-classification checklist. [Official amendment](https://storage.fasb.org/ASU%202020-06.pdf).
+4. **ASU 2024-04 induced-conversion basis for applicable 2026 periods.** Effective for all entities for annual periods beginning after 15 December 2025 and interim periods therein, with prospective or retrospective transition as specified. Under amended ASC 470-20-40-13/-40-13A, require a limited offer period, preservation of conversion consideration in form and amount, and a substantive conversion feature at issuance and offer acceptance even if not currently convertible. Assess at acceptance; for relevant non-substantial exchanges/modifications in the preceding 1 year, compare the terms 1 year before acceptance. Use acceptance-date share fair value for future-price/VWAP comparisons. Changes to non-share-price indexation can change the form of settlement. Expense the excess fair value of the inducement consideration under -40-16. [Official amendment](https://storage.fasb.org/ASU%202024-04.pdf).
+5. **Prepare the reviewer brief.** Show the scope/version decisions and each surviving source request. Do not use the old broad foreign-currency-strike statement as an unconditional exemption: its precise indexation exceptions remain unrecovered. Preserve the ASC 480 classes, mezzanine accretion, treasury shares, down-round and cross-framework questions as distinct open items rather than inferring their answers from the specifically read Updates.
 
-- **Sequence of analysis for freestanding financial instruments** — For a freestanding financial instrument, US GAAP applies a sequence: (1) Is it within the scope of and classified as a liability under ASC 480? If not, (2) for SEC registrants, is it redeemable such that it must sit in temporary equity (ASC 480-10-S99-3A)? (3) For contracts in own equity, does it meet the ASC 815-40 indexation and equity-classification conditions, or is it a derivative/liability? Convertible debt runs through ASC 470-20 (post-ASU 2020-06) with an ASC 815-15 embedded-derivative screen.  _(ASC 480; ASC 480-10-S99-3A; ASC 815-40; ASC 470-20; ASC 815-15)_
+### Verified corrections and remaining boundary
 
-### ASC 480 — three classes classified as liabilities — `ASC 480-10-25`
+The old blanket PBE effective-date statement was too broad: ASU 2020-06 uses fiscal years beginning after 15 December 2021 for SEC-filer PBEs excluding eligible smaller reporting companies, and after 15 December 2023 for all others (transition summary). The original Gate 2 wrongly retained conditions removed by ASU 2020-06 and overstated a cash-penalty ban. The original currency-strike exemption is not blanket verified guidance. Its exact scope, all ASC 480 deferrals, temporary-equity measurement, treasury stock, down-round treatment, issue costs and IFRS comparison remain individually reserved. The complete original monetary example is retained and independently recomputed; a normal book-value maturity conversion and an induced conversion are separate cases.
 
-- **Freestanding financial instrument liability classification** — A freestanding financial instrument is classified as a liability (or in some cases an asset) if it falls into any of three classes.  _(ASC 480-10-25)_
-- **Class 1 — Mandatorily redeemable financial instruments** — An instrument embodying an unconditional obligation requiring the issuer to redeem it by transferring assets at a specified or determinable date or on an event certain to occur (e.g. mandatorily redeemable preferred stock). Liability classification applies even though the instrument is legally equity.  _(ASC 480-10-25-4)_
-- **Class 2 — Obligations to repurchase the issuer's equity shares by transferring assets** — Instruments that embody an obligation (other than only on liquidation/termination) to repurchase the issuer's own shares, or that are indexed to such an obligation, and that may require settlement by transferring assets — e.g. a written put option or a forward purchase contract on the issuer's own shares.  _(ASC 480-10-25-8)_
-- **Class 3 — Certain obligations settleable in a variable number of shares** — Instruments embodying an unconditional obligation, or a financial instrument other than an outstanding share that may require settlement by issuing a variable number of shares, where the monetary value of the obligation at inception is based predominantly on any one of: a fixed monetary amount known at inception (e.g. a note settleable in $1m of shares); variations in something other than the issuer's own share price (e.g. a commodity price or an index); or variations inversely related to the issuer's share price (e.g. a written put settled in shares).  _(ASC 480-10-25-14)_
-- **AUDIT FLASH POINT — mandatorily redeemable preferred is a liability, dividends are interest** — A preferred share that must be redeemed for cash on a fixed date is an ASC 480-10-25-4 liability; its "dividends" are recognised in interest expense, not as an equity distribution. Misclassifying it as equity overstates equity and understates expense. (Note: ASC 480 defers liability classification for certain mandatorily redeemable instruments of non-SEC-registrant entities and for those redeemable only on liquidation — ASC 480-10-65 / 25-4 scope nuances. Document the scope conclusion.)  _(ASC 480-10-25-4; ASC 480-10-65)_
 
-### ASC 470-20 — convertible debt after ASU 2020-06 — `ASC 470-20-25`
+### Later issued amendments: adoption gates
 
-- **Single liability default after ASU 2020-06** — ASU 2020-06 eliminated the cash-conversion model and most of the beneficial-conversion-feature (BCF) model. For most convertible debt instruments the issuer records the entire proceeds as a debt liability with no separation of an equity component. The conversion feature is not bifurcated into equity.  _(ASC 470-20-25 as amended)_
-- **Separation required — substantial premium** — If convertible debt is issued at a substantial premium, the premium may be attributable to the conversion feature and recorded in paid-in capital.  _(ASC 470-20-25-13)_
-- **Separation required — embedded derivative requiring bifurcation** — If the conversion feature (or another embedded feature) meets the ASC 815-15-25 criteria for separation from the debt host (not clearly-and-closely related, would be a derivative standalone, and does not qualify for the own-equity scope exception in ASC 815-10-15-74(a)/ASC 815-40), bifurcate it as an embedded derivative liability measured at fair value, with changes in P&L.  _(ASC 815-15-25; ASC 815-10-15-74(a); ASC 815-40)_
-- **AUDIT FLASH POINT — single-liability default is the headline divergence from IFRS** — Post-ASU 2020-06, a plain convertible bond is one liability at full proceeds with no equity component under US GAAP, whereas IAS 32 always splits it into liability + equity. For an identical bond, reported equity, leverage, and the interest-expense profile differ between frameworks. Confirm no embedded-derivative bifurcation or substantial-premium fact pattern overrides the single-liability default.  _(ASC 470-20-25; IAS 32)_
+**PIK preferred dividends, ASU 2026-01.** The read amendment to ASC 505-10 covers PIK dividends on equity-classified preferred stock, including temporary equity: additional preferred stock with the same terms, or an increase in the preferred stock's value under the agreement, such as its liquidation value. The measurement rule applies where monetary value varies with the additional shares or liquidation-value increase. The Subtopic separately excludes convertible preferred awards within Topic 718 unless modified so they are no longer subject to that Topic; recover award and embedded-feature classification first. It excludes fixed monetary dividends settled with a variable number of preferred shares and deemed dividends such as certain redemptions. Measure an in-scope PIK dividend using the stated contractual PIK dividend rate; the Update does not determine when recognition occurs. It applies to annual periods beginning after 15 December 2026 and interim periods within them. Early adoption is allowed for financial statements not issued or available for issuance; interim adoption applies from the annual-period beginning. Choose prospective application to PIK dividends recognised on or after initial application, or modified retrospective application to preferred shares outstanding then, with the specified comparative recasting and opening-equity adjustment. Apply the corresponding transition disclosures. This future or early-adopted amendment does not resolve liability/equity classification. [ASU 2026-01, 505-10-15-1 to -15-4, -30-1 and -65-1](https://storage.fasb.org/ASU%202026-01.pdf).
 
-### ASC 815-40 — contracts in the entity's own equity — `ASC 815-40-15` and `-25`
+**Retirement of treasury shares, ASU 2025-12.** The read amendment to ASC 505-30-30-8 adds an option to charge the excess of repurchase price over par or stated value entirely to additional paid-in capital, provided that account does not become negative. The paragraph also retains allocation between additional paid-in capital and retained earnings subject to its same-issue limitation, or charging entirely to retained earnings. This is a retirement/constructive-retirement paragraph; it does not establish every reacquisition or reissuance rule. The Update also removes an obsolete pooling-of-interests reference from ASC 815-40-55-5. These amendments apply to annual periods beginning after 15 December 2026 and interim periods within them. Early adoption is permitted for unissued/not-available financial statements, at the annual-period beginning if adopted in an interim period. Prospective or retrospective transition and the associated disclosures apply; the treasury-share and own-equity amendments can have separate early-adoption and transition elections. [ASU 2025-12, 505-30-30-8, 815-40-55-5 and 105-10-65-10](https://storage.fasb.org/ASU%202025-12.pdf).
 
-- **Two gates for equity classification** — A contract on the issuer's own stock (e.g. warrants, written options, forward sale of shares, the conversion feature screened above) avoids derivative/liability treatment — i.e. qualifies for equity classification — only if it passes two gates.  _(ASC 815-40-15; ASC 815-40-25)_
-- **Gate 1 — Indexed to the entity's own stock** — A two-step test: (Step 1) evaluate the contract's exercise contingencies (must not be based on an observable market/index other than those referenced to the issuer's own operations or stock); (Step 2) evaluate the settlement provisions — the settlement amount must equal the difference between the fair value of a fixed number of shares and a fixed monetary amount (a "fixed-for-fixed" analogue, but not identical to IAS 32). A notable allowance: a strike price denominated in a currency other than the issuer's functional currency does not by itself preclude indexation under US GAAP — an FX exception that differs from IFRS.  _(ASC 815-40-15-5 to 15-8; ASC 815-40-15-7I)_
-- **Gate 2 — Equity classification conditions** — Settlement in unregistered shares is permitted, the entity has sufficient authorised and unissued shares, there is an explicit share cap, no required cash payment if the entity fails to timely file, no cash-settled top-off/make-whole, and the contract ranks no higher than other equity in a bankruptcy — among others. Failing any condition → asset/liability (derivative), remeasured through earnings.  _(ASC 815-40-25-1 to 25-43)_
-- **AUDIT FLASH POINT — share-settled vs. cash-settled, and the FX exception** — Whether a warrant is equity or a fair-valued liability hinges on the ASC 815-40-25 conditions; a single failing condition (e.g. a net-cash-settlement provision on a failed registration) makes the whole instrument a liability remeasured through earnings, injecting P&L volatility. The functional-currency-strike conclusion can differ from IFRS's fixed-for-fixed — flag for dual-reporters.  _(ASC 815-40-25)_
+## Worked cases
 
-### ASC 480-10-S99-3A — temporary (mezzanine) equity — SEC registrants
+All case values and rates are illustrative input facts. Classification/application gates are stated in each case; arithmetic does not verify those gates.
 
-- **Temporary equity classification conditions** — For SEC registrants, an equity-classified instrument (most commonly redeemable preferred stock or redeemable non-controlling interest) that is redeemable: at a fixed or determinable price on a fixed or determinable date, at the option of the holder, or upon an event not solely within the control of the issuer, and that is not already a liability under ASC 480, must be presented in "temporary equity" — a mezzanine section between liabilities and permanent equity on the balance sheet. Subsequent measurement follows one of two methods (accrete to the redemption amount over the period to the earliest redemption date, or recognise changes immediately).  _(ASC 480-10-S99-3A)_
-- **AUDIT FLASH POINT — temporary equity has no IFRS equivalent** — A redeemable preferred whose redemption is outside the issuer's control sits in mezzanine equity under SEC US GAAP, but is generally a financial liability under IAS 32. This is a structural balance-sheet difference, not a measurement nuance. Confirm registrant status and the "outside the issuer's control" assessment.  _(ASC 480-10-S99-3A; IAS 32)_
+On 1 January 20X1, the preserved convertible bond facts are $1,000,000 proceeds and par, 3 years, 5% annual coupons and conversion into a fixed number of the issuer's own shares. A comparable non-convertible yield of 8% is not used to split a conversion option under the stated single-liability basis; assume no bifurcated derivative, substantial premium, other right, cost or fair-value designation. Record Dr cash/Cr debt $1,000,000; at each year end in 20X1, 20X2 and 20X3, Dr interest/Cr cash $50,000. A normal conversion at par is not an inducement. At maturity on 31 December 20X3, the original journal is retained as a conditional working-paper proposal: Dr debt $1,000,000 / Cr common stock and additional paid-in capital $1,000,000, with no gain or loss, only if the separately sourced current ordinary-conversion rule permits that book-value treatment. It is not a cleared current-ASC instruction. For the separate IAS 32 compound-instrument case, assume all IAS 32 liability/equity conditions hold: discounting the same coupons and principal at 8% gives liability $922,687 and residual equity $77,313; successive effective interest rounds to $73,815, $75,720 and $77,778, against the US case's $50,000 each year. This comparison does not imply that IAS 32 splits every convertible instrument. See `ias32-debt-vs-equity` for the actual classification conditions.
 
-### Treasury stock and distributions — `ASC 505-30`, `505-10`
+```oa-check
+name: Preserved par convertible bond under the stated single-liability basis
+inputs:
+  proceeds: 1000000
+  principal: 1000000
+  coupon_rate: 0.05
+  years: 3
+steps:
+  - initial_liability: proceeds
+  - annual_coupon: principal * coupon_rate
+  - annual_interest: initial_liability * coupon_rate
+  - total_coupon: annual_coupon * years
+  - liability_after_coupon: initial_liability + annual_interest - annual_coupon
+expected:
+  initial_liability: 1000000
+  annual_coupon: 50000
+  annual_interest: 50000
+  total_coupon: 150000
+  liability_after_coupon: 1000000
+```
 
-- **Treasury stock and dividend classification** — Reacquired own shares (treasury stock) are recorded as a reduction of equity (cost or par-value method); no gain or loss in earnings on reacquisition/reissuance — differences go to paid-in capital / retained earnings. Dividends declared on equity-classified stock reduce retained earnings; "dividends" on liability-classified instruments are interest expense.  _(ASC 505-30; ASC 505-10)_
+An induced-conversion edge case assumes all amended conditions above hold, no prior-year modification and no embedded derivative: original terms deliver 50,000 shares, the limited accepted offer delivers 55,000 of the same shares, and acceptance-date fair value is $20 each. Original consideration is $1,000,000; offer consideration is $1,100,000; the excess expense is $100,000. If instead the offered form or amount fails preservation, this expense shortcut does not decide the accounting; apply the current extinguishment guidance after source recovery.
 
-## Section 3 — Reference layer: high-frequency special topics
+```oa-check
+name: Limited inducement preserving original share consideration
+inputs:
+  original_shares: 50000
+  offered_shares: 55000
+  share_fair_value: 20
+steps:
+  - original_value: original_shares * share_fair_value
+  - offered_value: offered_shares * share_fair_value
+  - extra_expense: offered_value - original_value
+expected:
+  original_value: 1000000
+  offered_value: 1100000
+  extra_expense: 100000
+```
 
-- **Freestanding vs. embedded** — ASC 480 applies to freestanding instruments; conversion and similar features inside a host contract are embedded and screened under ASC 815-15 for bifurcation. Getting this scoping wrong is the most common error.  _(ASC 480-10-25 scope; ASC 815-15)_
-- **Order of consolidation/sequencing** — When an entity has multiple contracts competing for the same authorised shares, evaluate sequencing to determine whether enough shares remain for equity classification.  _(ASC 815-40-25)_
-- **Down-round features** — A down-round feature no longer precludes equity classification of an otherwise-equity instrument; its effect is recognised as a deemed dividend when triggered (interaction with EPS).  _(ASU 2017-11)_
-- **Convertible debt issuance costs** — Post-ASU 2020-06, issuance costs are allocated entirely to the single debt liability and amortised as part of the effective interest rate (no allocation to an equity component, because there generally is none).  _(post-ASU 2020-06)_
-- **Induced conversions / extinguishments** — Conversions induced by sweetened terms, and repurchases, follow the extinguishment/induced-conversion guidance.  _(ASC 470-20-40)_
+## When to refuse or refer
 
-## Section 4 — Executable layer (Layer B): the procedure
+Refuse a final current-US-GAAP accounting conclusion while authoritative ASC text or required contracts/adoption facts are unavailable. Do not treat a readable ASU as full current Codification access. Refer scope, complex own-equity/lease/acquisition classifications, valuation, enforceability, impairment, SEC presentation and tax effects to the appropriate specialist. Return the source gap and proposed arithmetic working paper, not a signed financial statement or assurance conclusion. Exclude holder accounting, EPS computation under ASC 260, share-based payment under ASC 718 and embedded-derivative valuation methodology. For dual reporters prepare both framework answers using `ias32-debt-vs-equity`; do not substitute a US conclusion for the IFRS assessment.
 
-Run these steps on the instrument's facts. Each cites the Layer A rule it executes.
-
-- **Step 1** — Determine freestanding vs. embedded (ASC 480-10 scope / ASC 815-15). Freestanding → continue with ASC 480; embedded feature → screen under ASC 815-15.  _(ASC 480-10; ASC 815-15)_
-- **Step 2** — Run the ASC 480 three-class test (480-10-25-4, -8, -14): mandatorily redeemable? obligation to repurchase own shares by transferring assets? variable-share obligation based predominantly on a fixed amount / non-share variable / inverse to share price? Any → liability.  _(ASC 480-10-25-4; ASC 480-10-25-8; ASC 480-10-25-14)_
-- **Step 3** — If convertible debt (ASC 470-20): default to a single liability at full proceeds; check for a substantial premium (25-13) or an embedded derivative needing bifurcation (ASC 815-15-25).  _(ASC 470-20; ASC 470-20-25-13; ASC 815-15-25)_
-- **Step 4** — For contracts on own equity (ASC 815-40): apply the indexed-to-own-stock two-step test (15-5 to 15-8, incl. the FX allowance) and the equity-classification conditions (25-1 to 25-43). Pass both → equity; fail → derivative/liability remeasured through earnings.  _(ASC 815-40-15-5 to 15-8; ASC 815-40-25-1 to 25-43)_
-- **Step 5** — For SEC registrants, screen equity instruments for temporary equity (480-10-S99-3A); set up accretion to the redemption amount if applicable.  _(ASC 480-10-S99-3A)_
-- **Step 6** — Book the journal entries (base §3 format) at initial recognition and over subsequent periods (effective-interest accretion, fair-value remeasurement of any liability-classified contract, mezzanine accretion).  _(base §3)_
-- **Step 7** — Classify distributions: interest expense (liability) vs. dividend to retained earnings (equity); deemed dividend for any down-round trigger.
-- **Step 8** — Produce the disclosure checklist (§6) and reviewer brief with every flash point.  _(§6)_
-
-### Worked example (illustrative) — convertible bond, US GAAP single liability
-
-Same as the IFRS edition for direct comparison: on 1 Jan 20X1 a non-SEC-or-SEC entity issues a $1,000,000 par, 3-year, 5% annual-coupon convertible bond at par, convertible into a fixed number of the issuer's shares. The market rate for similar non-convertible debt is 8%. Assume the conversion feature does not require bifurcation (it meets the ASC 815-40 own-equity scope exception) and there is no substantial premium.
-
-Under ASU 2020-06 the cash-conversion separation model is eliminated; with no bifurcated derivative and no substantial premium, the entire $1,000,000 proceeds are recorded as a single debt liability with no equity component (ASC 470-20-25). Because the bond was issued at par, there is no discount/premium to amortise and the coupon rate equals the carrying yield — the 8% market rate for "similar non-convertible debt" is not used to split the instrument (contrast IFRS, which uses 8% to carve out an equity component).
-
-1 Jan 20X1 — issue of convertible bond, single liability — driving rule: ASC 470-20-25 (post-ASU 2020-06)
-  Dr  Cash                                       1,000,000
-      Cr  Convertible debt (liability)                 1,000,000
-  (memo: full proceeds to a single liability; NO equity conversion component
-   recognised. Debits = credits ✓)
-
-31 Dec 20X1 — coupon paid (issued at par, no discount) — driving rule: ASC 835-30 effective interest
-  Dr  Interest expense (P&L)                         50,000
-      Cr  Cash                                              50,000
-  (memo: 5% coupon = carrying yield because issued at par; no amortisation.
-   Repeats end 20X2 and 20X3. Debits = credits ✓)
-
-31 Dec 20X3 — conversion at maturity (assume all converted) — driving rule: ASC 470-20-40 (book-value method)
-  Dr  Convertible debt (liability)               1,000,000
-      Cr  Common stock / additional paid-in capital     1,000,000
-  (memo: carrying amount of the debt reclassified to equity on conversion; no
-   gain or loss under the book-value method. Debits = credits ✓)
-
-Contrast with IFRS (see ias32-debt-vs-equity §4). For the identical bond, IAS 32 splits the proceeds into a $922,687 liability (PV at 8%) and a $77,313 equity conversion option, then accretes the liability to par at an 8% effective rate (interest expense $73,815 / $75,720 / $77,778 vs. US GAAP's flat $50,000). Same cash flows, materially different equity, leverage, and interest expense.
-
-The single-liability answer holds only if the conversion (and any other embedded) feature is not a bifurcated derivative and the bond is not issued at a substantial premium. If the conversion feature failed the ASC 815-40 own-equity scope exception (e.g. a net-cash-settlement or insufficient-shares problem), it would be a fair-valued embedded derivative with earnings volatility — a completely different P&L.
-
-## Section 5 — Presentation
-
-- **ASC 480 liabilities presentation** — ASC 480 liabilities are presented within liabilities, even where the instrument is legally equity (e.g. mandatorily redeemable preferred).  _(ASC 480)_
-- **Temporary (mezzanine) equity presentation** — Temporary (mezzanine) equity is presented between liabilities and permanent equity on an SEC registrant's balance sheet, captioned separately.  _(ASC 480-10-S99-3A)_
-- **Equity-classified contracts presentation** — Equity-classified contracts (qualifying warrants, conversion features where separated as a substantial premium) sit in permanent equity / additional paid-in capital.
-- **Treasury stock presentation** — Treasury stock reduces equity; no earnings gain/loss on reacquisition or reissuance.  _(ASC 505-30)_
-- **Distributions presentation** — Interest expense for liability-classified instruments; dividends to retained earnings for equity; deemed dividend on a triggered down-round feature.
-
-## Section 6 — Divergence from IFRS (IAS 32 / IFRS 9)
-
-This is the section a dual-reporter scrutinises most. For an identical instrument the two frameworks frequently reach different classifications and amounts.
-
-**US GAAP vs IFRS divergence table**  _(ASC 480/470-20/815-40; IAS 32)_
-
-| Area | US GAAP (ASC 480/470-20/815-40) | IFRS (IAS 32) |
-| --- | --- | --- |
-| **Convertible bonds** | Post-**ASU 2020-06**, generally **a single liability** at full proceeds — no equity component (BCF/cash-conversion separation **eliminated**); split only for a substantial premium or a bifurcated embedded derivative | **Split** into liability (PV at market rate) + equity (residual) — **always** for a conventional convertible (`IAS 32.28`–`32`) |
-| **Mezzanine / temporary equity** | **Temporary equity** between liabilities and permanent equity for SEC registrants (`ASC 480-10-S99-3A`) — redeemable preferred, redeemable NCI | **No such category** — typically a **financial liability** under IAS 32 |
-| **Own-equity contracts** | **Indexed-to-own-stock** test (`ASC 815-40-15`) with an explicit **FX exception** (non-functional-currency strike does not preclude indexation, `15-7I`) | **Fixed-for-fixed** test (`IAS 32.16(b)`); a non-functional-currency settlement amount generally **fails** fixed-for-fixed |
-| **Puttable instruments** | **No equity exception** — generally a liability or, for SEC filers, temporary equity | **Equity by exception** if `IAS 32.16A`–`16D` conditions met |
-| **Mandatorily redeemable instruments** | **Liability** (`ASC 480-10-25-4`), with deferrals/scope nuances for non-SEC entities and liquidation-only redemption | **Liability** (`IAS 32.18(a)`), with its own scope nuances |
-| **"Dividends" on liability-classified preferred** | Charged to income (interest); EPS/presentation mechanics differ | **Interest expense** in P&L (`IAS 32.40`) |
-
-Run `ias32-debt-vs-equity` in parallel for dual-reporters and present both answers (base §2).
-
-## Section 7 — Disclosure checklist — `ASC 480-10-50`, `470-20-50`, `815-40-50`, SEC S-X
-
-- **ASC 480 instruments disclosure** — Nature and terms, including redemption requirements, settlement alternatives, and the number of shares potentially issuable.  _(ASC 480-10-50-1 to 50-3)_
-- **Mandatorily redeemable instruments disclosure** — Amount that would be paid and number of shares, at the balance-sheet date as if settlement occurred.  _(ASC 480-10-50-2)_
-- **Convertible debt disclosure** — Principal, coupon, conversion terms, conversion price, number of shares on conversion, and (post-ASU 2020-06) the if-converted EPS effect.  _(ASC 470-20-50)_
-- **Own-equity contracts disclosure** — Terms, classification (equity vs. liability), and fair-value/remeasurement information for liability-classified contracts.  _(ASC 815-40-50)_
-- **Temporary (mezzanine) equity disclosure** — Separate balance-sheet caption, redemption terms, accretion method and amounts.  _(ASC 480-10-S99-3A)_
-- **Treasury stock disclosure** — Shares held and method (cost/par).
-- **Down-round feature triggered disclosure** — Deemed dividend and EPS effect.  _(ASU 2017-11)_
-- **Defaults/covenant breaches disclosure** — Defaults/covenant breaches on liability-classified instruments.
-
-## Section 8 — Topic self-checks (in addition to base §7)
-
-- [ ] Freestanding vs. embedded scoping resolved first; each conclusion cites its ASC paragraph
-- [ ] ASC 480 three-class test applied (`25-4`, `25-8`, `25-14`); mandatorily-redeemable / repurchase-obligation / variable-share cases identified
-- [ ] Convertible debt: **single-liability** default applied unless a substantial premium or a bifurcated embedded derivative is documented (`ASC 470-20`, `815-15-25`)
-- [ ] Own-equity contracts: **indexed-to-own-stock** two-step test **and** equity-classification conditions both applied (`ASC 815-40-15`, `-25`); FX allowance noted
-- [ ] SEC registrants screened for **temporary (mezzanine) equity**; accretion method stated (`480-10-S99-3A`)
-- [ ] Subsequent measurement shown: effective-interest on debt, fair-value remeasurement of any liability-classified contract, mezzanine accretion
-- [ ] Distributions classified: interest expense (liability) vs. dividend to retained earnings (equity); deemed dividend on down-round trigger
-- [ ] Treasury stock reduces equity, no earnings gain/loss
-- [ ] **Divergence from IAS 32** checked for dual-reporters (especially single-liability convertible vs. split, and mezzanine vs. liability)
-
-## Section 9 — Disclaimer
+## Disclaimer
 
 Provides computational and interpretive guidance on ASC 480 / 470-20 / 815-40 / 505 only. Not an audit and not assurance. Classifying instruments as liabilities, equity, or temporary equity turns heavily on the specific contractual terms, registrant status, and significant judgement. Have outputs reviewed and signed by a qualified accountant before they are reflected in financial statements relied upon by third parties.
 
+## Sources
+
+| Source | Official URL | Actual read scope and date |
+|---|---|---|
+| ASU 2020-06 | [ASU 2020-06](https://storage.fasb.org/ASU%202020-06.pdf) | Read for summary, ASC 470-20-25-1/-25-12 through -25-15, ASC 815-40-25-1 through -25-10A, related conventional-hybrid exceptions and transition summary; actual official PDF; 2026-11-15 |
+| ASU 2024-04 | [ASU 2024-04](https://storage.fasb.org/ASU%202024-04.pdf) | Read for scope/effective-date summary, ASC 470-20-40-13 through -40-17 and neighbouring substantive-feature guidance; actual official PDF; 2026-11-15 |
+| Current authoritative Codification | [ASC](https://asc.fasb.org/) | Attempted 2026-11-15; web root returned no readable lines; ordinary Brave visit reached /Login but rendered only a stalled loader. Not read; no current-authority claim. |
+
+
+| ASU 2026-01 | [Official PDF](https://storage.fasb.org/ASU%202026-01.pdf) | Summary and operative ASC 505-10-15-1 through -15-4, -30-1 and -65-1 with neighbouring scope and transition; read 2026-11-16. |
+| ASU 2025-12 | [Official PDF](https://storage.fasb.org/ASU%202025-12.pdf) | ASC 505-30-30-8, ASC 815-40-55-5 and ASC 105-10-65-10 with neighbouring amendments and transition elections; read 2026-11-16. |
+
+### Not yet confirmed: individual current-ASC source requests
+
+Each row preserves a specific original question or condition. The official current Codification did not yield operative text; these are source requests, not accounting instructions. The read ASU corrections and the later-amendment gates above control their stated topics.
+
+| Original topic retained | Current source still required before execution |
+|---|---|
+| Scope and analysis order | Distinguish freestanding instruments from embedded features; apply ASC 480 and the relevant own-equity/convertible-debt guidance before the SEC temporary-equity presentation screen. Obtain the precise current ordering and scope; do not run mezzanine presentation before deciding liability/equity. |
+| ASC 480 class 1 | Unconditional asset-transfer redemption at a specified/determinable date or event certain to occur, including legally preferred equity; verify liquidation-only and non-SEC deferrals before treating mandatory redemption as a liability. |
+| ASC 480 class 2 | Obligations to repurchase own shares, or indexed obligations, that may require asset transfer, including written puts and forwards; preserve the liquidation/termination qualification. |
+| ASC 480 class 3 | Unconditional obligations, or non-outstanding-share instruments potentially settled in variable shares, whose inception monetary value is predominantly fixed, linked to a non-share variable, or inversely linked to own-share price. Verify all 3 alternatives and the outstanding-share distinction. |
+| Embedded derivative separation | Current ASC 815-15 standalone-derivative, clearly-and-closely-related and own-equity-exception conditions, host measurement, initial fair value and subsequent earnings effects. The ASU single-liability default does not clear these separate gates. |
+| Own-equity indexation | For warrants, written options, forwards and other own-equity contracts, both exercise-contingency and settlement tests, including permitted own-operations/stock contingencies and fixed-share/fixed-amount inputs; the precise foreign-currency-strike exception in ASC 815-40-15-7I is not a blanket exemption. |
+| Settlement consequences and share sequencing | Current exceptions and whether a failed gate produces an asset/liability or derivative with fair-value changes in earnings; allocation of available authorised shares among competing contracts. The actual ASU 2020-06 removals and retained conditions are stated above, not the superseded unregistered-share/collateral/bankruptcy-ranking list. |
+| SEC temporary equity | Equity-classified redeemable preferred or NCI redeemable on a fixed/determinable date/price, at holder option or on an event outside issuer control; registrant scope, separate mezzanine caption and the exact accretion eligibility, earliest-redemption timing and immediate-versus-over-time methods. |
+| Own-equity presentation | Permanent-equity/additional-paid-in-capital presentation for qualifying warrants or separated substantial-premium rights; no classification from labels alone. |
+| Treasury stock beyond the read retirement amendment | Cost versus par-value methods, equity deduction, reacquisition/reissuance differences and the no-earnings assertion; obtain current ASC 505-30 and entity adoption before posting. The later retirement option is not a universal treasury-stock method. |
+| Distributions | Interest/expense treatment for liability-classified preferred versus retained-earnings distributions for equity; precise recognition and presentation, including when a declared dividend becomes payable. The PIK measurement amendment does not answer recognition timing. |
+| Down-round features | ASU 2017-11 instrument scope, indexation consequences, trigger measurement, deemed-dividend treatment and EPS interaction; do not apply a deemed dividend to every triggered feature. |
+| Issue costs | Allocation where debt, an embedded derivative, a premium-related equity amount or another right is recognised; amortised-cost/effective-interest treatment. Do not allocate all costs to debt regardless of surviving components. |
+| Ordinary conversion, repurchase and extinguishment | Current ASC 470-20-40 ordinary book-value conversion conditions and journals, repurchase/extinguishment rules and interaction with bifurcated derivatives. The original maturity journal above is conditional; the separately read induced-conversion route is not universal. |
+| IFRS comparison: convertible debt | Retain the 3-year $1,000,000 / 5% / 8% conditional calculation above; IAS 32 liability/equity classification is required before any split. Obtain current ASC classification for an actual instrument. |
+| IFRS comparison: redeemable and puttable instruments | Compare the actual ASC 480/SEC scope with IAS 32 mandatory-redemption, puttable and liquidation exceptions; do not infer a universal US no-exception rule or a universal IFRS liability from mezzanine presentation. |
+| IFRS comparison: own-equity and distributions | Compare the precise ASC indexation/foreign-currency exceptions and IAS 32 fixed-for-fixed conditions, and liability-preferred interest versus equity distributions. Do not claim identical EPS or presentation mechanics. |
+| ASC 480 disclosures | Nature, terms, redemption requirements, settlement alternatives and potential shares; mandatorily redeemable settlement amount and share number as if settled at reporting date. Verify scope and exact required amounts. |
+| Convertible-debt disclosures | Principal, coupon, conversion terms/price, shares deliverable and any if-converted EPS disclosure; EPS computation remains outside this Guide. |
+| Own-equity disclosures | Instrument terms, equity/liability classification and liability-contract fair-value/remeasurement information. |
+| Mezzanine disclosures | Separate caption, redemption terms, accretion method and amounts. |
+| Treasury and down-round disclosures | Shares held, cost/par method, trigger/deemed-dividend information and any EPS effect, subject to precise instrument scope. |
+| Defaults and covenants | Current reporting requirements for liability-instrument defaults and breaches. |
+
+### Retained execution and reviewer checks
+
+For each instrument: (1) settle freestanding/embedded scope with an actual paragraph; (2) document each relevant ASC 480 class and exception; (3) for convertible debt record the single-liability or separately supported component conclusion; (4) test both own-equity gates, foreign-currency terms, available shares and settlement exceptions; (5) screen eligible SEC equity for temporary presentation and source its accretion; (6) prepare initial and subsequent journals, effective interest, any derivative fair-value movements and any mezzanine movements; (7) source the distribution/down-round conclusion; (8) assemble every applicable disclosure above and the reviewer brief. These are completion checks: unresolved source rows prevent the corresponding booking or presentation conclusion.
+
+The retained 9 topic self-checks are: scoping; the 3 ASC 480 classes; convertible separation exceptions; both own-equity gates and precise FX scope; SEC temporary equity and accretion; subsequent measurement; distributions and triggered features; treasury-stock presentation; and a separately sourced IAS 32 comparison. No successful arithmetic check closes an unresolved legal accounting condition.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-gaap-debt-vs-equity` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-gaap-debt-vs-equity. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-gaap-debt-vs-equity` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-gaap-debt-vs-equity. If neither is available, confirm every figure against the official source pages cited above before relying on it.
