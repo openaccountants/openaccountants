@@ -16,19 +16,19 @@ partial:
 
 # North Macedonia: 2026 tax pack
 
-North Macedonia uses the calendar year and Macedonian denar (MKD). The Public Revenue Office (UJP) administers the taxes below. All seven computational skills are **Checked against the law** (tier 2): written from primary sources on 24 October 2026 and independently reviewed on 30 October 2026. No named licensed accountant has signed off. The cross-border domain retains the specific exit gap above; its presence is not complete coverage. Do not close issue #413 or treat CI/AI review as professional attestation.
+North Macedonia uses the calendar year and Macedonian denar (MKD). The Public Revenue Office (UJP) administers the taxes below. All seven computational skills are **Built from the law** and **Not yet approved** (tier 2): written from primary sources on 24 October 2026 and independently reviewed on 30 October 2026. No named licensed accountant has signed off. The cross-border domain retains the specific exit gap above; its presence is not complete coverage. Do not close issue #413 or treat CI/AI review as professional attestation.
 
 ## Domains
 
 | Tax | Computational skill | Status |
 |---|---|---|
-| Income tax | [north-macedonia-income-tax](north-macedonia-income-tax.md) | Checked against the law |
-| Company tax | [mk-corporate-income-tax](mk-corporate-income-tax.md) | Checked against the law |
-| VAT or sales tax | [north-macedonia-vat](north-macedonia-vat.md) | Checked against the law |
-| Social contributions | [north-macedonia-social-contributions](north-macedonia-social-contributions.md) | Checked against the law |
-| Payroll | [north-macedonia-payroll](north-macedonia-payroll.md) | Checked against the law |
-| Transfer pricing | [north-macedonia-transfer-pricing](north-macedonia-transfer-pricing.md) | Checked against the law |
-| Cross-border | [north-macedonia-cross-border](north-macedonia-cross-border.md) | Checked against the law; partial |
+| Income tax | [north-macedonia-income-tax](north-macedonia-income-tax.md) | Built from the law; Not yet approved |
+| Company tax | [mk-corporate-income-tax](mk-corporate-income-tax.md) | Built from the law; Not yet approved |
+| VAT or sales tax | [north-macedonia-vat](north-macedonia-vat.md) | Built from the law; Not yet approved |
+| Social contributions | [north-macedonia-social-contributions](north-macedonia-social-contributions.md) | Built from the law; Not yet approved |
+| Payroll | [north-macedonia-payroll](north-macedonia-payroll.md) | Built from the law; Not yet approved |
+| Transfer pricing | [north-macedonia-transfer-pricing](north-macedonia-transfer-pricing.md) | Built from the law; Not yet approved |
+| Cross-border | [north-macedonia-cross-border](north-macedonia-cross-border.md) | Built from the law; Not yet approved; partial |
 
 The contribution split changes for **July-December 2026 wage months**: the combined ordinary employee rate remains 28%, but pension becomes 19.9% and unemployment 0.1%, replacing 18.8% and 1.2% for January-June. Self-employed and standalone director groups have different fund coverage. Use the individual skills, including their dated rate tables and limitations, for calculation.
 
