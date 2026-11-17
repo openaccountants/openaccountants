@@ -34,7 +34,7 @@ Prospective 1 April 2027 micro provisions are not usable confirmed guidance. The
 
 Current CIT art. 3(3) and Accounting Law art. 13 support the quarter permission; an ancillary VID rates page retains the former Accounting Law art. 8 reference. The candidate uses current art. 13. Older SIA references in CIT arts. 2(4)/4(11) do not restore micro eligibility: Micro Law art. 1(3) and transitional provision 36 govern.
 
-This is source-cited research. No accountant approval, human attestation or filing clearance is added.
+This is research checked against the law. No accountant approval or filing clearance is added.
 
 ## Evidence and validation
 
@@ -45,3 +45,17 @@ The correction packet manifest is `f8acd0ac64cb86dac2803c0262fa5370d5db027707266
 The completed appropriate source-level checks remain applicable: 19 standards per Guide, five recomputing examples, strict source integrity and calculator quotes. Source bytes and check scripts did not change during the normal merge from current main. Required integration checks and actual hosted outcomes belong to this PR; no full source scan, case review or optional test suite is repeated merely for an integration commit. The advisory figure diagnostic is reported with every actual exception, never treated as substantive legal review.
 
 Live Ryan scope and approval protection were refreshed before publication. Closed PR #1336 and its latest instruction remain protected; Latvia has no file overlap. Current main's approved versions, their names and approval fields remain untouched. Michael's explicit instruction to finish already-reviewed packs authorizes this integration only. Root retains ready, merge and ingestion decisions.
+
+
+## Actual hosted figure exceptions
+
+The initial head `d3fde82309b57f38478192cf802db97d2270efe2` returned 58 checked rows, four MISS and zero UNREADABLE: planning 27 rows/four MISS, formation 12/zero, overview 19/zero. The advisory job exited 1. These are short-row citation-coverage defects, not four disproved values. The detailed key-figure rows and completed independent ledger already carry the correct primary sources. The accepted Guide bytes are preserved.
+
+| MISS in planning row | Actual primary authority and explanation |
+| --- | --- |
+| FIK row: EUR 105,300 absent from its PIT-only link | PIT s. 15(2) uses the maximum social-insurance base; the amount is in [Social Insurance Law s. 14(5)](https://likumi.lv/ta/id/45466-par-valsts-socialo-apdrosinasanu), retained native line 303, ledger S01/P02. The detailed PIT key-figure row links both laws. |
+| FIK row: 31.07% absent from its PIT-only link | [VID self-employed guidance](https://www.vid.gov.lv/lv/pasnodarbinata-socialas-apdrosinasanas-iemaksas), retained native line 1566, prints 31,07% on at least EUR 780 monthly; ledger S04 and the detailed social-contribution row carry that source and the category restrictions. |
+| Micro row: EUR 50,000 absent from its Micro Law-only link | Micro Law art. 4 refers to the VAT registration threshold. [VAT Law art. 59(1)](https://likumi.lv/ta/id/253451-pievienotas-vertibas-nodokla-likums), retained native line 912, supplies EUR 50,000; ledger V02 and the detailed turnover-cap row link that law with the applicable exclusions. |
+| VAT-status boundary row: EUR 5,000 absent from its Micro Law-only link | [VAT Law art. 59(4)](https://likumi.lv/ta/id/253451-pievienotas-vertibas-nodokla-likums), retained native line 919, supplies the EUR 5,000 excess tolerance; ledger V03 preserves the separate application deadlines and scope. Micro Law art. 4(8) governs later micro-status loss, not the tolerance amount. |
+
+The four retained native source files still match the completed review's bound hashes. No new legal scan or guessed figure replaces that evidence. The initial required unit job also failed on this record's prohibited copy term; that wording is corrected here. Its failed result remains recorded, and the subsequent hosted result must be observed separately.
