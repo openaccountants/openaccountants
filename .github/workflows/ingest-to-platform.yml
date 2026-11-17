@@ -17,7 +17,6 @@ on:
 
 permissions:
   contents: read
-  issues: write # only the persistent delivery work list; source remains read-only
 
 # Keep pending events instead of replacing earlier pushes. Read main only after
 # this lock is acquired: an older queued event must not replay an older head.
@@ -33,6 +32,9 @@ jobs:
     environment: production
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    permissions:
+      contents: read
+      issues: write # only the persistent delivery work list; source remains read-only
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
