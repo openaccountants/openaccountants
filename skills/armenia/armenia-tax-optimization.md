@@ -1,18 +1,18 @@
 ---
 name: armenia-tax-optimization
 description: "Use for 2026 Armenian business-regime comparisons and lawful tax planning for a company or individual entrepreneur. Separates ordinary company profit tax, turnover-tax eligibility and activity rates, entrepreneur profit tax and micro-business conditions. Test the legal form, activity classification, exclusions, turnover and election dates before comparing amounts. Trigger on Armenia tax regime, microenterprise, turnover tax, individual entrepreneur, LLC comparison or business tax planning. Includes preserved calculation and threshold controls with explicit eligibility assumptions and a worked general-system versus turnover-tax decision. Read alongside the detailed personal, corporate, VAT and payroll Guides. Includes ordinary aggregation, entry and exit dates, documented cost-reduction carries, asset transitions and published filing forms. Checked against the law; independent source review is recorded in the country research; named professional attestation remains pending."
-version: 0.5
+version: 0.6
 type: decision
 jurisdiction: AM
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-17
 category: tax-optimization
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax-optimization
 ---
 
-# Armenia business tax planning v0.5
+# Armenia business tax planning v0.6
 
 ## Scope
 
@@ -103,7 +103,7 @@ Micro status ends when relevant current-year turnover **exceeds AMD 24 million**
 
 Article 267(5)'s exclusions cover financial/insurance/investment/payment/crypto providers and the other expressly named regulated businesses; notaries; gambling/lotteries; saunas/baths/steam baths; audit organisations; and **commercial buying-and-selling by companies or entrepreneurs**. The professional-services exclusion includes consultancy, law, accounting, engineering, advertising, design, marketing, translation, expert/examination work, medical care and services, dental technology, hair/body care, vehicle repair, intermediary services, software development, data processing/transmission, R&D/experimental work, construction works, architectural/construction-design documentation, and property valuation/measurement, plus similar listed work. Head-office/management consultancy (70), temporary labour (78.2), other labour supply (78.3), and inter-/intra-regional bus-route operation/passenger services have separate exclusions. [Article 267(5)(1)-(2.2)][regimecode]
 
-Yerevan catering is excluded, with the express exception for meals directly connected to Annex 3 tourist-house hotel services. Activities in State Duty Law 19.7/19.8 are excluded **for those activities**. A current agreement to receive rent, interest or royalties excludes a company/entrepreneur, except interest on the positive balance of its servicing-bank current account. The ownership, SRC-decision aggregation and prohibited-contract screens above still apply. Do not revive repealed retail-location or business-customer prohibitions from an older form. [Article 267(5)(4), (6)-(11)][regimecode]
+Yerevan catering is excluded, with the express exception for meals directly connected to Annex 3 tourist-house hotel services. Activities in State Duty Law 19.7/19.8 are excluded **for those activities**. A current agreement to receive rent, interest or royalties excludes a company/entrepreneur, except interest on the positive balance of its servicing-bank current account. The ownership, SRC-decision aggregation and prohibited-contract screens above still apply. Do not revive repealed retail-location or business-customer prohibitions from an older form. [Article 267(5)(2), (4), (6)-(11)][regimecode]
 
 A **non-entrepreneur individual** has a different route: exclusively Annex 3 activity, prior-year relevant turnover no more than AMD 24 million, a declaration **before starting or continuing** the chosen activity period, and an SRC licence issued within one working day after declaration. The individual cannot use other non-entrepreneur individuals' labour in that activity. Annex 3 permits the specified customer-ordered footwear/leather, clothing, hats, carpets, wood/furniture, non-precious jewellery, computer/household-appliance repair and software servicing, bicycle/wheelchair and other household repairs, pottery/ceramics and sheet-metal work; clock/timepiece/instrument repair; listed specialist/language/admission courses; dance/singing and performing/creative work; event-hosting; sports education; private-household own-consumption services; smithing; and tourist-house hotel services with directly connected meals. Preserve the exact activity conditions: software **servicing** in the annex is not the excluded software-**development** business. [Articles 267(2)-(5), Annex 3][regimecode]
 
@@ -114,10 +114,12 @@ Micro exempts the covered activity's state taxes, including profit-tax advances,
 | Instrument | Fields and use |
 |---|---|
 | **191-N**, current turnover-status declaration | TIN, taxpayer, address, proposed start, confirmations of the prior-year threshold and each activity/relationship/contract exclusion, and signature/name. This is the ordinary declaration, not the catering exception election. [191-N][turnstatement] |
-| **558-N Annex 1**, company/entrepreneur micro declaration | TIN/name/address/start; non-VAT/non-turnover status; prior-year AMD 24 million test; current exclusion confirmations; signature. Use the current incorporated form, including the separate labour-route, crypto and rent/interest/royalty confirmations. [558-N][microforms] |
+| **558-N Annex 1**, company/entrepreneur micro declaration | TIN/name/address/start; non-VAT/non-turnover status; prior-year AMD 24 million test; current exclusion confirmations; signature. Use the current incorporated form, including the separate labour-route, crypto and rent/interest/royalty confirmations, subject to the tourist-house meal filing hold below. [558-N][microforms] |
 | **558-N Annexes 2/3**, non-entrepreneur declaration/licence | Identity/passport, public-service number or absence certificate, TIN, residence, exact Annex 3 activities/places and start/end periods; licence records the approved person, activities, place and period. [558-N][microforms] |
 | **558-N Annex 4**, annual turnover/stamp report | Identity/year; production 5, services 6, works 7, specified state-duty activities 9, other 10; total 11 = 5+6+7+9+10. Stamp base 12 follows 11 and stamp 13 is automatically completed for an entrepreneur exclusively in micro for that year. Activity-code shares are reported separately. Check the separate stamp-law method rather than inventing a micro-only exemption. [558-N][microforms] |
 | **299-N**, quarterly turnover calculation | TIN/name/address and year/quarter; AMD without luma. For trade, table 5 records base, gross tax, eligible current costs, current reduction, opening reduction carry, total available reduction, tax floor, payable tax and closing carry. Tables 6/7/9 do the same for production/catering/other activity. Total income/tax is row 22; row 27 adds the separately identified non-turnover-tax categories. To correct a period, submit a new calculation with corrected data. [299-N, instructions 1-29, 30-41, 49-70][turnreturn] |
+
+**Stop for the Yerevan tourist-house meal exception.** The printed 558-N Annex 1 paragraph 5 declares that the applicant does not carry on Yerevan catering, without printing the Code's exception for meals directly connected to Annex 3 tourist-house hotel services. If the facts rely on that statutory exception, hold completion and submission of this declaration until the SRC filing method for the case is confirmed. Do not sign a false negative confirmation, infer that the statutory exception is unavailable, or guess a checkbox or portal workaround. Substantive eligibility under Article 267(5)(2) and truthful operational filing are separate questions; the live handling of this mismatch has not been verified. [Tax Code, Article 267(5)(2)][regimecode]; [558-N, Annex 1 paragraph 5][microforms]
 
 The old **table 8** outside-Yerevan catering computation is expressly for periods before 1 January 2026; do not carry its old 4% floor into 2026. The special catering election under Articles 254(6)-(8) uses **626-N**, not the ordinary 191-N declaration: the Code permits the stated threshold/relationship/contract exceptions, but not the prohibited regulated/professional activities in 254(3)(3)/(3.1), and voluntary VAT entry ends the route. A qualifying current-year event requires the catering election within 20 days. Under 258(8), the elected route applies **12% to catering and 20% to the specified other assets/activity**, with the catering cost-reduction method where applicable. [Articles 254, 258][regimecode]; [626-N][cateringstatement]; [299-N, instructions 30, 42-48][turnreturn]
 
@@ -242,7 +244,7 @@ expected:
 
 ## When to refuse or refer
 
-Specialist investment/sector incentives, tax disputes and penalties, and taxpayer-specific treaty interaction require their own instruments and facts. Ordinary regime entry, activity exclusions, aggregation, computation, published declarations and asset/cost transitions are supplied above. Do not state that a taxpayer qualifies for a regime, that an activity code is right or that a declaration was accepted. Independent source review is recorded in the country research; Armenian professional attestation remains pending. The English translation is supporting text only; the current Armenian Code controls where its language or subsequent changes differ. No accountant has attested to this Guide.
+Specialist investment/sector incentives, tax disputes and penalties, and taxpayer-specific treaty interaction require their own instruments and facts. Ordinary regime entry, activity exclusions, aggregation, computation, published declarations and asset/cost transitions are supplied above. Refer a Yerevan tourist-house meal case relying on Article 267(5)(2) for confirmation of the truthful SRC filing method; the 558-N operational hold above remains. Do not state that a taxpayer qualifies for a regime, that an activity code is right or that a declaration was accepted. Independent source review is recorded in the country research; Armenian professional attestation remains pending. The English translation is supporting text only; the current Armenian Code controls where its language or subsequent changes differ. No accountant has attested to this Guide.
 
 ## Filing and payment
 
@@ -264,6 +266,7 @@ Turnover-tax returns and payment are quarterly and due by the 20th day of the fo
 | Official source and read scope | URL | Read on |
 |---|---|---|
 | Current Armenian Tax Code, native Armenian official incorporation: Articles 30, 59(1), 63, 125, 134, 136, 150(1) and (8), 253-264, 267-272 and Annex 3, with their amendment annotations | https://www.arlis.am/hy/acts/215611/latest | 2026-11-16 |
+| Targeted form/Code correction read: Code Article 267(5)(2) and neighboring activity exclusions against 558-N Annex 1 paragraph 5 and adjacent confirmations; retained native captures, no live portal or filing method verified | https://www.arlis.am/hy/acts/215611/latest ; https://www.arlis.am/hy/acts/200746/latest | 2026-11-17 |
 | 299-N quarterly turnover calculation, instructions 30 and 42 (table 8 limited to periods before 1 January 2026) | https://www.arlis.am/hy/acts/201377/latest | 2026-11-16 |
 | Government 142-N high-technology list: commencement paragraph and the 32 activity codes | https://www.arlis.am/hy/acts/203094/latest | 2026-11-16 |
 | 1001-N commencement paragraph (1 February and 1 June 2027) | https://www.arlis.am/hy/acts/231487/latest | 2026-11-16 |
@@ -291,6 +294,6 @@ The official Armenian Tax Code text controls; the English translation is support
 [hightechlist]: https://www.arlis.am/hy/acts/203094/latest
 [microfuture]: https://www.arlis.am/hy/acts/231487/latest
 
-**Not yet confirmed:** taxpayer-specific classification and facts; the texts of HO-83-N, HO-391-N and HO-385-N (2027 changes) were not read; the specialist incentives/disputes/treaty matters stated outside this ordinary comparison; fresh independent whole-country review and named professional attestation. No live taxpayer portal or return was accessed.
+**Not yet confirmed:** the truthful SRC filing method for a Yerevan tourist-house meal case within Code Article 267(5)(2) despite the unqualified negative catering confirmation in 558-N Annex 1 paragraph 5; taxpayer-specific classification and facts; the texts of HO-83-N, HO-391-N and HO-385-N (2027 changes) were not read; the specialist incentives/disputes/treaty matters stated outside this ordinary comparison; fresh independent whole-country review and named professional attestation. No live taxpayer portal or return was accessed.
 
 > Contributed by Michael Cutajar.
