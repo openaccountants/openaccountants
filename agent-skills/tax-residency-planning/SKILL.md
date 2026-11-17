@@ -6,286 +6,279 @@ metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/tax-residency-planning"
   jurisdiction: "INTL"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-16"
 ---
 
 # Tax Residency Planning
 
-## Introduction
+## Scope
 
-xaxcscdwscdwcedkhjcbhefqvc beq saodc dshib cedw HELLO MY NAME IS JEFF
+Resolve personal residence, company residence and income source separately. Incorporating an entity, obtaining an immigration permit, opening an account or securing a residence certificate does not by itself settle the other questions. A pass-through label describes a particular tax system's classification; establish whether every relevant country recognises that treatment.
 
-## Tax Residency Planning — Personal Tax Rules for International Founders
+The comparison concerns 2026 planning and explicitly dated adjacent rules. It supplies a conditional analysis, not permission to file or a promise of a tax saving. Domestic residence, treaty residence, immigration, permanent establishment, social insurance and reporting can produce different answers for the same person.
 
 > **Based on work by [Artin (@ar-gen-tin)](https://github.com/ar-gen-tin/panrise)**, licensed under MIT. Adapted for the OpenAccountants format.
 
 > **Disclaimer:** This skill provides general guidance on personal tax residency. It does not constitute tax or legal advice. Tax residency determinations are fact-specific and can have severe financial consequences if handled incorrectly. Consult a qualified cross-border tax advisor before changing your tax residency or structuring around residency rules.
 
-## Core Concepts
+## Ask the client first
 
-**Core Concepts**
+Read the complete existing record before asking. Establish citizenships, green-card and other immigration history; actual arrival/departure dates and time zones; daily presence and working days in each country; homes available and actually used; spouse, dependants and schools; personal/economic connections; tax residence and returns for the relevant lookback periods; intended move and possible return dates; and any certificates, elections or authority correspondence.
 
-| Concept | Definition | Can You Change It? |
-| --- | --- | --- |
-| Company incorporation | Where the business is registered | Yes — choose jurisdiction |
-| Company tax residency | Where the business pays corporate tax (usually where it's managed) | Partially — depends on substance |
-| Personal tax residency | Where YOU pay personal income tax | Yes — but requires genuine relocation |
+For each receipt establish payer, owner, entity classification, contract, work location, gross receipts, allowable expenses, currency and timing. Obtain ownership/control chains and changes, asset market values and tax bases, pre-arrival assets and inheritances, deferred gains, pensions, trusts and stock compensation. For entities establish the real decision-makers, where strategic decisions are made, premises, employees, contracts and signing activity. Record social-insurance coverage and any agreement certificate separately.
 
-Three separate concepts determine how an international founder is taxed:
+## The method, step by step
 
-For solo founders using pass-through entities (e.g., US LLC), personal tax residency is the primary tax determinant.
+### 1. Establish each domestic residence test and period
 
-## The 183-Day Rule
+Do not apply a universal 183-day rule. The US weighted test, Portugal's 12-month tests, UK fiscal year and home/work/ties tests, German available-home rules, Japanese domicile rules, and UAE alternative statutory conditions operate differently. A late-night arrival is not automatically counted in every country: use that country's presence, overnight, midnight, transit, medical and excluded-day rules.
 
-Most countries use 183 days of physical presence as a threshold for tax residency. However, the rule is more complex than it appears.
+**United States.** A noncitizen's raw substantial-presence test requires at least 31 current-year days and at least 183 weighted days: all current-year days + one-third of the preceding year's days + one-sixth of the second preceding year's days. Apply the statutory excluded-day classes first, and consider the closer-connection exception, green-card test and applicable treaty separately. Form 8843 and Form 8840 have distinct purposes and conditions. The closer-connection exception generally requires fewer than 183 actual current-year days, a foreign tax home throughout the year, closer foreign connections and no disqualifying permanent-resident steps; the special two-foreign-country path has further conditions. [IRS presence test](https://www.irs.gov/individuals/international-taxpayers/substantial-presence-test); [closer connection](https://www.irs.gov/individuals/international-taxpayers/closer-connection-exception-to-the-substantial-presence-test).
 
-## Variations by Country
+**UK.** The tax year runs from 6 April to 5 April. Apply the automatic overseas tests, automatic UK tests and sufficient-ties test in their legal order. Fewer than 183 days does not alone establish nonresidence; an available home, work and ties can matter. Each tax year is tested separately. [RDR 3 current guidance](https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3); [departure procedure](https://www.gov.uk/tax-right-retire-abroad-return-to-uk).
 
-**Variations by Country**
+**Germany.** EStG 1 and AO 8–9 look to a residence held in circumstances indicating it will be retained/used, or ordinary residence; continuous presence beyond 6 months generally creates ordinary residence from the start, with the specified private-visit exception. An Abmeldung is evidence of registration, not the statutory date on which all tax residence necessarily ends. [EStG 1](https://www.gesetze-im-internet.de/estg/__1.html), [AO 8](https://www.gesetze-im-internet.de/ao_1977/__8.html), [AO 9](https://www.gesetze-im-internet.de/ao_1977/__9.html).
 
-| Variation | Countries | Detail |
-| --- | --- | --- |
-| Any partial day = 1 day | Most countries | Arriving at 11pm counts as a full day |
-| Calendar year basis | US (substantial presence), most EU | January 1 – December 31 |
-| Fiscal year basis | UK (April 6), Australia (July 1) | Offset calendar |
-| Additional tests beyond days | Germany, Netherlands, Japan | Family, property, "center of vital interests" |
-| Permanent home test | Most OECD countries | Having a home available can trigger residency even with <183 days |
-| Citizenship-based | United States | US citizens are ALWAYS US tax residents regardless of location |
+**Portugal.** CIRS 16 includes more than 183 days in any 12-month period beginning or ending in the year, or a home in circumstances indicating an intention to maintain and occupy it as habitual residence. A counted day includes an overnight stay. Arrival/departure can create a partial resident period, but the prior-year, departure-year and following-year provisions can restore whole-year residence. [CIRS 16](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs16.aspx).
 
-## What 183 Days Does NOT Capture
+**UAE.** Keep the alternative natural-person routes in Cabinet Decision 85/2022 Art 4 separate: the native usual/main-place-of-residence and personal/financial-interests route OR the ministerial-criteria limb in Art4(1); 183 or more days during a relevant consecutive 12 months; or the qualified 90-or-more-day route, with nationality/residence-permit and permanent-home or employment/business conditions. MD 27/2023 supplies detailed meanings and counting rules. The Arabic Art 4(1) wording must be retained accurately; the authority-hosted English translation is expressly unofficial and differs in its conjunction. Treaty certificates require the relevant treaty's separate test. [Native Cabinet Decision](https://tax.gov.ae/DataFolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%2085%20of%202022%20-%20For%20publishing%20Ar.pdf); [native MD 27](https://tax.gov.ae//Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2027%20of%202023%20-%20For%20publishing%20Arabic.pdf).
 
-- A country may claim residency with <183 days if you maintain a "permanent home" there
-- Some countries use a lookback period (US substantial presence test: weighted 3-year count)
-- "Center of vital interests" (family, property, social ties) can override day counts
-- Leaving a country does not automatically end tax residency — formal deregistration is often required
+**Japan.** A domicile in Japan or a continuous residence of at least 1 year is a domestic resident route; staying below 183 days does not displace a domicile. Nonpermanent-resident status has a separate noncitizenship and 5-of-10-year condition, and limited foreign-source/remittance treatment rather than blanket exemption. [NTA No 2010](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2010.htm).
 
-## Country-by-Country Tax Residency Rules
+**Singapore.** Residence is assessed annually on the preceding calendar-year basis. IRAS distinguishes citizens/PRs normally resident, foreigners present/working at least 183 days, a continuous 3-year concession, and a 2-calendar-year employment concession with at least 183 continuous days including immediately adjacent presence. Directors, public entertainers and professionals are excluded from that last concession. A work pass initially treated as resident is reviewed on tax clearance. [IRAS current residence guidance](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/working-out-my-tax-residency).
 
-## Zero / Very Low Personal Income Tax Countries
+**Panama.** Art 762-N, reproduced by DGI's Resolution 201-8394/2024, uses more than 183 continuous or alternate days in the fiscal year or immediately preceding year, or an established permanent home. Company direction/administration conditions are separate. The resolution removes the specific 2022 original migration-certificate requirement but maintains the 2016 certificate procedure; DGI can still request migration evidence. [Official Gazette 30184](https://s3-legispan.asamblea.gob.pa/legispan/GACETAS/2020/2024/30184_2024.pdf), printed 3–4.
 
-**Zero / Very Low Personal Income Tax Countries**
+**Australia.** ITAA 1936 s 6 has separate ordinary-residence, domicile, more-than-half-income-year and specified Commonwealth superannuation routes, with their actual exceptions. A short stay does not defeat an Australian domicile or ordinary residence. The general financial year is 12 months beginning 1 July; approved substituted accounting periods and statutory exceptions must be checked. Resident ordinary and statutory income generally have worldwide scope; foreign-resident source and specifically included income are separate from exemptions and temporary-resident concessions. [Current residence definition](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html); [income-year and scope provisions](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html).
 
-| Country | Tax on Foreign Income | Residency Visa | Annual Cost | Notes |
-| --- | --- | --- | --- | --- |
-| UAE/Dubai | 5% (effective January 2026; was 0% until December 2025) | Via freezone visa | $3,000–10,000 | Must establish genuine residency |
-| Cayman Islands | 0% | Investment-based | $18,000–24,000 | Expensive but total tax freedom |
-| Bahamas | 0% | Permanent Residency available | ~$1,000 | Caribbean lifestyle |
-| Monaco | 0% | Deposit required | €500,000+ deposit | Ultra-high-net-worth only |
+**Netherlands.** Belastingdienst's current guidance weighs actual home/stay, family, work, insurance, doctor, associations and schooling. Company policy decisions, management, administration, incorporation and legal form are different facts. A bank's CRS classification need not settle the income-tax assessment. This is the authority's factual guidance; a treaty conflict still needs the relevant bilateral article. [Published residence factors](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/vermogen/common_reporting_standard/regels).
 
-## Territorial Tax Countries (0% on Foreign Income)
+**Georgia.** Tax Code 34 generally makes a person resident for the whole current tax year after 183 or more days within a continuous 12-calendar-month period ending in it. Its actual-stay rules include specified absences, exclude specified diplomatic/public-service/transit/treatment/leisure presence, and count any part of a qualifying day. Prior-period days cannot automatically be reused for the following period. Public-service and special granted-status routes are separate. [Native current Code 34](https://www.matsne.gov.ge/ka/document/view/1043717).
 
-**Territorial Tax Countries (0% on Foreign Income)**
+**Malaysia.** Section 7 uses 182 days, a linked-period route with specified temporary absences, a 90-day route with 3 qualifying years in the previous 4, and a preceding-3/following-year residence route. Partial days and the specified citizen public-service deeming rule also matter. MM2H's immigration stay requirement does not replace these tax tests. The authority-hosted Act is expressly an updated online text as at 1 January 2026, rather than an assertion that every later legislative change has been incorporated. [ITA 1967 s 7](https://www.hasil.gov.my/wp-content/uploads/Income-Tax-Act-1967-online-version-as-at-1-January-2026.pdf), printed 50–52.
 
-| Country | Local Tax Rate | Foreign Income Tax | Digital Nomad Visa | Notes |
-| --- | --- | --- | --- | --- |
-| Panama | 15–25% | 0% (territorial) | Friendly Nations Visa | Easy residency |
-| Costa Rica | 10–25% | 0% (territorial) | Rentista visa | Growing tech scene |
-| Georgia | 1% (micro business) | 0% (territorial) | Easy residency | Ultra-low tax for <GEL 500,000 revenue |
-| Paraguay | 10% | 0% (territorial) | Easy residency | Cheapest South American option |
-| Malaysia | 0–30% | 0% (pre-2024, changing) | MM2H visa | Rules tightening — verify current status |
-| Thailand | 0–35% | Changing (2024+ remittance rule) | LTR visa | LTR visa holders: flat 17% |
+**Thailand.** Revenue Code 41 treats at least 180 days in a tax year as residence for its foreign-income rule; that rule differs from taxation of local work, employer activities and property regardless of payment location. Apply the foreign-income and remittance chronology below. [Native Code 41](https://www.rd.go.th/5937.html).
 
-## Popular Digital Nomad Visas
+**Estonia.** A home or the 183-day/12-month route can establish domestic residence; see the separate immigration discussion below. **Paraguay:** establish the resident-person scope of Law 6380 and the actual local activity; a migration permit or the word “territorial” cannot by itself prove a foreign-client exemption. No unrecovered universal Paraguay day-count rule is supplied. Sources: [EMTA native Residentsusemääramine:Residendi mõiste and actual home/daycount neighbors](https://www.emta.ee/eraklient/valismaalasele-mitteresidendile/maksuresidentsus/residentsuse-maaramine); [Law6380 Art49 whole](https://www.dnit.gov.py/en/web/portal-institucional/w/ley-n-6380-19).
 
-**Popular Digital Nomad Visas**
+**China.** The domestic test includes domicile or, without domicile, at least 183 days in the calendar tax year. Domicile means habitual residence because of household registration, family or economic interests. The nondomiciled foreign-paid foreign-income concession has a separate continuous-6-year/183-day rule, filing conditions and reset after a qualifying absence of more than 30 days. A Chinese passport plus a Dubai address does not establish nonresidence from China. [Native implementing regulation, Arts 2–5](https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20260727143743677.shtml).
 
-| Country | Visa Name | Duration | Minimum Income | Tax Implication |
-| --- | --- | --- | --- | --- |
-| Portugal | D8 (Digital Nomad) | 1 year + renew | €3,500/month | NHR abolished 2024; now taxed at standard rates |
-| Spain | Digital Nomad Visa | 1 year + renew | €2,520/month | Beckham Law: 24% flat rate (limited applicability) |
-| Croatia | Digital Nomad | 1 year | €2,540/month | 0% local tax in first year |
-| Estonia | Digital Nomad | 1 year | €4,500/month | Not tax resident if <183 days |
-| Greece | Digital Nomad | 2 years | €3,500/month | 50% income tax reduction for 7 years |
-| Dubai | Virtual Working Program | 1 year | $5,000/month | 5% PIT (effective January 2026) |
-| Thailand | LTR Visa | 5–10 years | Varies | Flat 17% (vs normal up to 35%) |
+### 2. Separate low personal tax from all other charges
 
-## Effective Tax Rate Comparison by Residency
+The UAE does not levy the original purported 5% personal income tax from January 2026. Natural-person business activity has a separate corporate-tax scope where calendar-year business turnover exceeds AED 1 million; wages, Personal Investment Income and Real Estate Investment Income are excluded under the published conditions. This is not a tax on every individual's receipts. Free-zone incorporation and its separate qualifying-person/income rules cannot be replaced by a universal 9% + 5% calculation. The old >AED375000 condition concerns a separate taxable-income threshold: the FTA-hosted CD116/2022 text sets ordinary 0% treatment on the portion up to AED375000 and 9% on the excess, once per taxable person’s combined businesses, with anti-fragmentation conditions. It is expressly an unofficial English translation; native Arabic116 and complete current company-tax execution are not cleared here. [Actual decision Arts2–3](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf). [Government FAQ](https://u.ae/en/Help/FAQs/finance-and-investment); [FTA natural persons](https://www.tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/basis.of.taxation.natural.person.aspx).
 
-**Effective Tax Rate Comparison by Residency**
+Cayman's current Ministry describes duties/fees and an indirect consumption-based model and expressly preserves other countries' taxing rights. Its archived government page expressly says no income tax. A final current-law conclusion must disclose this dated basis; the old “total tax freedom” promise and universal USD 18000–24000 annual residence cost have no source support in that material. [Current Ministry](https://gov.ky/web/mfsc/regulation); archived government economy page retained in the evidence. Sources: [Archived government economy page](https://cigarchives.gov.ky/economy); [Taxation section](https://gov.ky/web/mfsc/regulation).
 
-| Residency | On $100K Profit | On $200K Profit | Effort to Establish |
-| --- | --- | --- | --- |
-| UAE/Dubai | ~$5,000 (5% PIT) | ~$10,000 | High (must live there) |
-| Panama | $0 (foreign income) | $0 | Medium |
-| Georgia | ~$1,000 (1% micro) | ~$2,000 | Low |
-| Paraguay | $0 (foreign income) | $0 | Low |
-| Germany | ~$35,000 | ~$80,000 | Already there |
-| US citizen (abroad) | ~$0–15,000 (after FEIE) | ~$20,000–35,000 | Complex |
+The Bahamas finance authority's dated MAP guidance expressly says it has no personal income-tax regime. That does not eliminate business, insurance, consumption, property, immigration or foreign-country obligations. The old approximately USD 1000 annual cost is not an established all-in permanent-residence cost. The current economic-permanent-residence route requires at least BSD 1000000 in qualifying real estate or Central Bank zero-coupon bonds, held for at least 10 years. The BSD 200 nonrefundable processing fee is not an all-in residence cost. The historical no-PIT source and current immigration conditions have different dates. Sources: [2024MAPguidance printed3](https://cdn.bahamas.gov.bs/tenant/tenantministryoffinance/documents/All%20Documents/BAHAMAS-JAPANMAPGUIDANCEDOCUMENT-20240718120503.pdf); [Economicpermanentresidence eligibility and application processing fee](https://www.immigration.gov.bs/residence/permanent-residence/).
 
-On $100,000 and $200,000 annual profit from a pass-through entity:
+Monaco's current government personal-tax guidance has the French-national treaty exception. Its residence-permit financial-resource test does not establish a universal EUR 500000 deposit for everyone. A permit, bank's commercial deposit policy and tax residence are different questions. The original “ultra-high-net-worth only” label is not a statutory eligibility rule. Sources: [Fiscalité des personnes physiques paragraph](https://monservicepublic.gouv.mc/thematiques/fiscalite/informations-sur-la-fiscalite/informations-generales/la-fiscalite-monegasque); [Conditions](https://monservicepublic.gouv.mc/en/themes/nationality-and-residency/residency/new-entrants/how-to-apply-for-a-residence-permit).
 
-## Tax Traps for International Founders
+### 3. Determine the source and category before using a territorial exemption
 
-## Trap 1: US Citizens Cannot Escape US Tax
+A foreign customer, invoice, LLC or bank does not make services performed locally foreign-source. Use the following country conditions to identify the applicable base and regime before calculating tax.
 
-- US taxes worldwide income regardless of where the citizen lives
-- Must file US return even if living abroad permanently
-- **FEIE (Foreign Earned Income Exclusion):** Excludes up to ~$130,000 (2025) / $132,900 (2026) of earned income if bona fide foreign residence established
-- **FTC (Foreign Tax Credit):** Credits foreign taxes paid against US liability
-- **CFC rules:** Owning >50% of a foreign corporation triggers Subpart F / GILTI — Form 5471 mandatory ($10,000+ penalty per year if missed)
-- **Solution for US citizens:** US LLC (pass-through) avoids CFC complexity
+| Jurisdiction | Conditional treatment and source basis |
+|---|---|
+| Panama | Establish actual Panama source. The published individual tariff is zero through PAB 11,000,15% on the excess through PAB 50,000 and 25% above, applied to the actual statutory base; the historical 2011 official compilation and current DGI rate table do not prove that all foreign-client remote services are exempt. Friendly Nations is an immigration category, not a digital-nomad tax exemption or “easy” approval guarantee. Sources: [DGI IncomeTax individual tariff](https://dgi.mef.gob.pa/DInforme/Tarifa). |
+| Costa Rica | The authority’s 2025 presentation for the 2024 closure describes domestic profitable-activity scope irrespective of nationality and the listed contractual connections; it is dated guidance, not the recovered full current Code. [Actual scope presentation pp2–4](https://www.hacienda.go.cr/docs/CHARLAISU-2024-27-02-2025.pdf). The official 2026 self-employed annual bands are zero through CRC 6244000,10% on the excess through 8329000,15% through 10414000,20% through 20872000 and 25% above. Employment has different monthly bands. Rentista permission does not itself classify work income. Sources: [2026ratechart](https://www.hacienda.go.cr/docs/TramosRenta2026.pdf). |
+| Georgia | Microbusiness is distinct from small business: qualifying independent natural persons with no hired labour and annual gross income not above GEL 30000 can have micro status. Small-business status generally taxes qualifying Georgian-source receipts, excluding wages/excluded categories, at 1%;3% begins with the crossing month when gross income exceeds GEL 500000, with the specific GEL 700000 wine/agrotourism rule. Two consecutive excess years and other cancellation conditions are separate. Foreign-source exemption does not cover Georgian-source services just because a client is abroad. Sources: [TaxCode84–85 complete](https://www.matsne.gov.ge/ka/document/view/1043717). |
+| Paraguay | Law 6380 covers resident individuals' Paraguayan-source income; local activity and specified services abroad to IRE/IRP taxpayers matter. Personal-service IRP has the gross-income scope exceeding G 80000000 and progressive 8%,9%,10% net-income bands at G 50000000 and G 150000000, subject to the statutory base/expense rules. “Flat 10%” and universal foreign-client 0 are incomplete. Sources: [Law6380 Art49 whole](https://www.dnit.gov.py/en/web/portal-institucional/w/ley-n-6380-19). |
+| Malaysia | The authority-hosted 2026 Act general resident tariff runs from 0% to 30%, under its actual chargeable-income bands and exception categories. The actual foreign-income exemption source has conditions for resident individuals, excludes partnership income received in Malaysia, and addresses subject-to-foreign-tax exceptions and records. Its 2024 extension commencing 1 January 2027 must not be described as a new 2026 exemption. MM2H is a category-dependent long-term social visit programme; MM2H permits general employment/business activity only in the Platinum category under the current FAQ; other categories need the relevant separate pass. Sources: [ITA1967Schedule1PartIparagraph1and1Aneighbor](https://www.hasil.gov.my/wp-content/uploads/Income-Tax-Act-1967-online-version-as-at-1-January-2026.pdf); [20June2024DGguideline5.2.2.1–2 allactualtax/deemed-taxconditions;5.2.4recordkeeping;PDFpp27–32](https://www.hasil.gov.my/wp-content/uploads/20240620-guidelines-tax-treatment-in-relation-to-income-received-from-abroad-amendment-june-2024.pdf); [PU(A)451/2024 native paragraphs1–2](https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/2584396/PUA%20451_2024.pdf); [MM2H Topic2](https://www.motac.gov.my/en/frequently-asked-questions-faqs/). |
+| Thailand | Local-source work/business can be taxable irrespective of payment abroad. The current published ordinary PIT schedule runs from 0% to 35%, with 35% above THB 5 million, subject to the actual base, exemptions and other calculation methods. For qualifying residents, P161/P162 cover foreign-source income arising from 1 January 2024 and later remitted, including later-year remittance; pre 2024 income is treated separately. LTR 17% concerns qualifying Highly-Skilled Professional employment. Decree 743 Art 5 separately names 3 other LTR categories and specified foreign income from prior tax years; an unconditional same-year foreign-income exemption is not established by that wording. Sources: [RevenueCode41 all3paragraphs and linked directive notes](https://www.rd.go.th/5937.html); [CurrentRDnative2017-onwardtableandbothstatutoryexemption/effectnotes](https://www.rd.go.th/59670.html); [OrderP161/2566 paragraph1](https://www.rd.go.th/fileadmin/user_upload/kormor/newlaw/dn161A.pdf); [OrderP162/2566 sole operative amendment](https://www.rd.go.th/fileadmin/user_upload/kormor/newlaw/dn162A.pdf); [Royal Decree743/2565 Art5; printed31/PDF3](https://ltr.boi.go.th/documents/Royal%20Decree%20issued%20under%20the%20Revenue%20Code%20No.743%20(TH).pdf). |
 
-## Trap 2: Permanent Establishment (PE) Risk
+### 4. Compare immigration permission and tax treatment separately
 
-- Working from a co-working space in Country X for >90–183 days may create a PE for your company there
-- PE = your company owes corporate tax in that country on attributable profits
-- "Service PE" triggered by extended project work in a country
-- **Mitigation:** Track days carefully, don't sign contracts locally, hold board meetings in the incorporation country
+Portugal's temporary-stay and residence-visa routes for foreign remote work are distinct. The remote-work funding test is four times the applicable continental minimum wage, averaged over the preceding 3 months. With the 2026 continental minimum of EUR 920, the derived income amount is EUR 3680 monthly. Distinguish either visa from the conditional 2-year residence permit, renewable for 3 years. Portuguese citizens moving to a listed low-tax jurisdiction also need CIRS Art 16(6)–(7): residence can continue for the departure year and 4 further years, subject to the stated reasonable-ground and different-jurisdiction exceptions. Repeal of NHR does not erase protected existing or transitional cases. IFICI requires its own qualifying activities, prior 5-year nonresidence and registration conditions; its 20% net employment/self-employment treatment for 10 consecutive years is not a D8 entitlement. Sources: [RegulatoryDecree4/2022 inserted31-A(1)](https://files.dre.pt/1s/2022/09/19000/0002800097.pdf); [DecreeLaw139/2025 Arts2–3](https://files.diariodarepublica.pt/1s/2025/12/24900/0001400016.pdf); [AIMA Notes](https://aima.gov.pt/pt/trabalhar/autorizacao-de-residencia-para-o-exercicio-de-atividade-profissional-prestada-de-forma-remota-com-visto-de-residencia-para-o-exe); [CIRS16(6)–(7)](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs16.aspx); [EBF58A(1)](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf58a.aspx).
 
-## Trap 3: Company Tax Residency ≠ Incorporation
+Spain's telework visa is generally up to 1 year or the shorter work period. Under Law 14/2013, the residence authorisation can be up to 3 years or the shorter work period, with conditional 2-year renewals. The official consular funds test is 200% of SMI for the teleworker,75% for the first accompanying person and 25% for each additional person; the old fixed EUR 2520 is not a current universal threshold. Foreign-employer work, qualifications/experience, actual existing relationship and social-insurance conditions apply. Self-employed Spanish clients are limited to 20% of activity under the immigration rule. LIRPF Art 93's elective regime requires no Spanish residence in the preceding 5 tax periods, a qualifying reason for the move and the relevant activity/no-PE conditions and exceptions. It covers the move year and the following 5 tax periods. Its ordinary base has 24% through EUR 600000 and 47% above; the separately defined investment-income base has different bands. A nomad visa alone neither elects nor proves eligibility for this regime. Sources: [Law14/2013 Art74bis all2paragraphs](https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074); [Documentación que acredite los recursos económicos](https://www.exteriores.gob.es/Consulados/miami/es/ServiciosConsulares/Paginas/index.aspx?scca=Visados&scco=Estados+Unidos&scd=196&scs=Visados+Nacionales+-+Visado+de+residencia+para+teletrabajo+%28n%C3%B3mada+digital%29); [LIRPF93(1)](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764).
 
-- A company incorporated in Singapore but managed from a laptop in Portugal may be tax resident in Portugal
-- Tax authorities examine where "central management and control" happens
-- **Mitigation:** Hold board meetings (even virtual) in the incorporation country, keep documented minutes
+Croatia's current permission can extend to 18 months, with shorter-stay extension and later-application conditions. The current published funds amount is EUR 3622.50 per month for the principal. The regulation uses 2.5 times the prior-year average monthly net salary, plus 10% of that average for each additional qualifying family member or partner; alternative period-total evidence is also published. The 2020 tax amendment introduced an exemption for specified digital-nomad receipts from work for a foreign employer/business. It did not create an arbitrary first-tax-year exemption for every receipt. The complete current tax-law overlay remains specifically reserved below; the immigration conditions above are separately recovered current authority rules. Sources: [ActNN40/2025Art12substitutingArt61(1)](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_03_40_545.html); [RegNN14/2021 Art2(3)complete](https://narodne-novine.nn.hr/clanci/sluzbeni/2021_02_14_273.html); [RegNN3/2026 all3articles](https://narodne-novine.nn.hr/clanci/sluzbeni/full/2026_01_3_10.html); [MUPdigitalnomadproof-of-funds currentprincipalamountparagraph](https://mup.gov.hr/aliens-281621/286833).
 
-## Trap 4: "Nowhere" Tax Residency Does Not Work
+Estonia’s digital-nomad D-visa is conditional permission for up to 365 days within 12 consecutive months; 2 consecutive long-stay visas are limited to 548 days in 730 consecutive days. This corrects the old unconditional-looking ‘1 year’ duration without granting a tax exemption. [Current MFA duration and consecutive-visa limits](https://www.vm.ee/en/consular-visa-and-travel-information/visa-information/application-long-stay-d-visa). Estonia's domestic residence can arise from a place of residence or at least 183 days over 12 consecutive calendar months. An immigration stay shorter than 183 days does not rule out the home limb. The currently recovered official visa-income pages disagree about gross/net measures and the general D-visa subsistence figure; the original EUR 4500 rule must remain specifically reserved until reconciled with the current operative visa instrument. Sources: [EMTA native Residentsusemääramine:Residendi mõiste and actual home/daycount neighbors](https://www.emta.ee/eraklient/valismaalasele-mitteresidendile/maksuresidentsus/residentsuse-maaramine).
 
-- Traveling constantly and claiming no tax residency invites problems
-- Tax authorities examine: passport, bank accounts, property, family, center of vital interests
-- **Mitigation:** Deliberately establish tax residency in ONE favorable country
+Greece's Art 68 route is a national visa up to 12 months for remote work for employers/clients outside Greece. The ordinary resources test is EUR 3500 net monthly under the stated conditions, plus 20% spouse/partner and 15% each child. A separate conditional 2-year residence permit can follow an application before visa expiry. Law 5275/2026 Art 13 repealed the former Art 12(7) short-stay/visa-waiver in-country path. The conditional Art 5C 50% relief for qualifying Greek employment/sole-business income lasts 7 tax years; it requires its own previous 5-of-6-year nonresidence, eligible prior country, actual qualifying activity, intended 2-year stay and application/approval conditions. The 2026 A1096 procedure overlay covers specified applications from 28 July 2025 and pending then, including public employment. A nomad visa does not itself establish Art 5C eligibility. Sources: [Law5038/2023 Art68(2)(e)](https://migration.gov.gr/wp-content/uploads/2023/04/%CE%9A%CF%8E%CE%B4%CE%B9%CE%BA%CE%B1%CF%82-%CE%9C%CE%B5%CF%84%CE%B1%CE%BD%CE%AC%CF%83%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82.pdf); [Law5275/2026Art13 introductory operative amendments](https://migration.gov.gr/wp-content/uploads/2026/02/%CE%A6%CE%95%CE%9A%CE%9117_6.2.2025.pdf); [A1138/2025 Art1(2) substitutingA1087Art3(1)](https://www.aade.gr/sites/default/files/2025-10/a1138fek.pdf); [A1087/2021Art5(1)](https://www.aade.gr/sites/default/files/2025-10/%CE%91.1087_2021.pdf); [A1096/2026 Art2 complete](https://www.aade.gr/sites/default/files/2026-05/a1096_2026_0.pdf).
 
-## Trap 5: Social Security Double Contribution
+Dubai's virtual-work permit is 1 year subject to renewal; the current GDRFA external-employer income requirement is at least USD 3500 monthly, not the original USD 5000. A residence permit does not introduce 5% PIT. Sources: [Terms And Conditions](https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936).
 
-- Many countries require social security contributions from residents
-- Without totalization agreements, the founder may pay into two systems
-- EU countries have coordination rules; US has agreements with ~30 countries
+Thailand's LTR is an initial 5 years and conditional further 5 years. Decree 743 Arts 3–4 apply the 17% rate to qualifying Highly-Skilled Professional employment with the specified eligible employers; the alternative normal withholding, consent, no-refund/no-credit and return conditions matter. Notification 427 additionally requires the qualifying employer's notice and applies relief to income from the notice-receipt date, with timely PND95 filing and loss of relief for a noncompliant year. Art 5's exemption for the other 3 named LTR categories is a separate foreign-income rule expressly referring to prior tax years. “All LTR holders pay 17%” is incorrect. [Native Decree 743](https://ltr.boi.go.th/documents/Royal%20Decree%20issued%20under%20the%20Revenue%20Code%20No.743%20(TH).pdf); [implementing Notification 427](https://ltr.boi.go.th/documents/Notification%20of%20Income%20Tax%20No.%20427%20(TH).pdf). Do not execute a same-year foreign-income exemption without resolving that provision's exact application.
 
-## Exit Tax (Departure Tax)
+### 5. Retain US citizenship, owner classification and reporting consequences
 
-When leaving a high-tax country, departure can trigger a large one-time tax bill. This is often the single largest tax event in a founder's life.
+US citizens generally remain within worldwide-income taxation abroad; return filing depends on the applicable filing thresholds and special duties, not whether tax is ultimately payable. The FEIE is conditional relief for qualifying foreign earned income, not all business profits, investment returns or self-employment tax. For 2026 the maximum is USD 132900 for a fully qualifying year; tax home/foreign abode, bona fide residence or physical-presence conditions, excluded-income credits and tax-rate stacking matter. Bona fide residence is not the 330-full-day test: the latter is a separate physical-presence test over 12 consecutive months. Sources: [Worldwide-income/general filing paragraph and relief-return sentence](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad); [2026instructions opening maximum](https://www.irs.gov/instructions/i2555); [Other rules](https://www.irs.gov/individuals/international-taxpayers/foreign-earned-income-exclusion).
 
-**Exit Tax (Departure Tax) table**
+Foreign tax credits apply under their own categories and limitations; taxes on excluded income cannot simply be credited again. A foreign corporation can trigger Subpart F and, for the applicable post 2025 taxable years, net CFC tested income rules. The general CFC test is more than 50% vote or value owned by US shareholders, with direct/indirect/constructive attribution; a US shareholder generally meets a 10% vote/value gate. Special insurance and possession rules exist. New 2026 pro-rata timing must be applied using the actual foreign corporation's taxable year. Sources: [Foreign tax credit or deduction paragraph](https://www.irs.gov/instructions/i2555); [IRC957(a)](https://uscode.house.gov/us/usc/t26/s957/); [IRC951A(a)–(d)](https://uscode.house.gov/us/usc/t26/s951A/); [PL119-21 s70354(c)](https://uscode.house.gov/us/usc/t26/s951/).
 
-| Country | Rule | Trigger | Deferral? |
-| --- | --- | --- | --- |
-| Germany | § 6 AStG | Deemed disposal of shares in foreign companies on departure (>1% shareholding held 5+ years) | 5-year deferral within EU/EEA; installments for non-EU moves |
-| United States | HEART Act (2008) | Mark-to-market on all worldwide assets for covered expatriates renouncing citizenship | No deferral; net worth >$2M OR avg annual net income tax >$190K (2024, indexed) |
-| Australia | CGT Event I1 | Deemed disposal of all taxable Australian property on becoming non-resident | Main residence exemption may apply |
-| Canada | Departure Tax | Deemed disposition of all property at FMV on ceasing to be resident | Deferral available if security posted with CRA |
-| France | Exit Tax (Art. 167 bis CGI) | Shareholdings worth >€800K or >50% of company profits | 5-year deferral (EU/EEA); 2-year deferral (other) |
-| Netherlands | Conservatory Assessment | 10-year lookback on substantial interest holdings (>5% shareholding) | Tax assessed at departure; collected on actual disposal within 10 years |
+Form 5471 duties depend on the actual reporting category, attribution, exceptions and current forms. The retained December 2025 instructions describe a USD 10000 initial section 6038 failure penalty per annual accounting period/foreign corporation and additional notice-based penalties; they are not a final 2026 form execution manual. A domestic disregarded single-member LLC is not a foreign corporation merely because its owner lives abroad. Corporate election, local-country classification, US trade/business and foreign-owned disregarded entity reporting still require separate checks. The retained December 2024 Form 5472 instructions are the source basis, rather than a final 2026 filing manual. Form 5472 with a proforma 1120 can apply to a foreign-owned domestic disregarded entity with reportable related-party transactions, even without an entity income-tax return. Sources: [Penalties:failure6038informationandreliefneighbors](https://www.irs.gov/instructions/i5471); [Foreign-owned US DE definition](https://www.irs.gov/instructions/i5472).
 
-**Planning guidance:**
-- Plan departure 12–24 months in advance — most mitigation strategies require lead time
-- Get a written tax opinion BEFORE moving, not after
-- Germany § 6 deferral only works for EU/EEA moves; moving to Dubai triggers installment payments
-- US covered expatriates: $800K per-person lifetime exclusion on mark-to-market gain
+FBAR is separate: the FinCEN landing rule covers US persons with financial interest or signature authority over foreign accounts exceeding USD 10000 in aggregate at any time during the calendar year, subject to the detailed rules/exceptions. Mercury or Wise names do not settle account location, filing status, eligibility, fees or a bank's acceptance of a customer. Sources: [Who Must File](https://www.fincen.gov/report-foreign-bank-and-financial-accounts).
 
-## Split Tax Year (Mid-Year Relocation)
+### 6. Check company residence, permanent establishments and social insurance
 
-## Countries WITH Formal Split-Year Treatment
+A Singapore-incorporated company actually managed from Portugal needs a Portuguese domestic seat/effective-management analysis as well as any Singapore rules and applicable treaty. Minutes and an incorporation address cannot replace the facts about who makes strategic decisions. A home office or co-working place needs the relevant domestic and treaty fixed-place/agency tests; service-PE provisions exist only where actually applicable. There is no worldwide 90–183 day PE safe harbour. If the actual law and treaty establish a PE, compute the relevant charge and attributable profits under those provisions; do not tax all company receipts simply because a workspace exists. Keep day and decision records, but withholding local signatures or recording overseas board meetings does not cure contrary facts. Sources: [CIRC2(1)–(3)](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc2.aspx); [Current authority guidance](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/vermogen/common_reporting_standard/regels).
 
-**Countries WITH Formal Split-Year Treatment**
+The 2025 OECD Commentary's remote-work discussion is commentary, not a replacement for a bilateral treaty. Its below 50% working-time observation and commercial-reason analysis are conditional; at least 50% is not an automatic PE. Apply its analysis only where the actual bilateral treaty and domestic law make it relevant. Sources: [2025UpdateArt5Commentary44.8–44.16; actual44.4–44.17andneighborsread](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/11/the-2025-update-to-the-oecd-model-tax-convention_c7031e1b/5798080f-en.pdf).
 
-| Country | Rule | Detail |
-| --- | --- | --- |
-| UK | Statutory Residence Test (SRT) | 8 defined "cases" for split-year treatment; each half taxed separately |
-| Germany | Prorated income | Unlimited liability ends on Abmeldung date; limited liability continues for German-source income |
-| Australia | Partial-year resident | ATO determines residency date based on facts; foreign income not taxed in non-resident portion |
+Income-tax residence does not determine social-insurance coverage. EU coordination assigns applicable legislation under its own work/posting/multistate rules. The SSA's September 2026 table lists 31 US totalization agreements, including Romania from 1 September 2026; an agreement's actual personal/material scope, detached-worker or self-employed rules and coverage certificate must be established. An agreement is not an automatic exemption from both systems. Sources: [Reg883/2004 Art11 all5paragraphs](https://publications.europa.eu/resource/cellar/296c9322-ca95-11e9-992f-01aa75ed71a1.0007.03/DOC_1); [POMS GN01701.005 country/effective-date table](https://secure.ssa.gov/apps10/poms.nsf/lnx/0201701005).
 
-## Countries WITHOUT Split-Year Treatment
+### 7. Quantify exit exposure before the move
 
-- **USA:** No split year for citizens (always filing). Dual-status return applies for green card holders.
-- **Singapore:** No formal split; authorities consider tax residency for the full year.
-- **UAE:** No income tax, so split year is irrelevant.
-- **Panama / Georgia / Paraguay:** Territorial systems; foreign income not taxed regardless.
+| Country | Corrected planning gate |
+|---|---|
+| Germany | AStG 6 covers specified loss/restriction of taxing rights, cessation of unlimited liability and gifts to persons outside it. Generally 7 years of unlimited liability in the preceding 12 years, linked to EStG 17's at-least 1% direct/indirect holding at any time in the preceding 5 years. Seven equal annual instalments require application, normally security, and have acceleration/reporting conditions; not an EU-only 5 year deferral. Return relief has separate 7 year/up-to 5 additional-year conditions. Sources: [AStG6(1)](https://www.gesetze-im-internet.de/astg/__6.html); [EStG17(1) full share/predecessor paragraph](https://www.gesetze-im-internet.de/estg/__17.html). |
+| United States | IRC 877A concerns covered expatriation, not an ordinary overseas move by a citizen. For 2026 the indexed average-tax gate is more than USD 211000 and the net-worth gate is at least USD 2000000; failure to certify 5 years' compliance is a separate route. Dual-birth/minor exceptions have their own conditions and do not cure certification failure. The 2026 USD 910000 indexed covered-gain exclusion is not a lifetime 800000 exclusion. Eligible mark-to-market tax can have property-specific irrevocable deferral with security, interest and waiver conditions; deferred-compensation, specified accounts and nongrantor trusts have different rules. Sources: [IRC877(a)(2)](https://uscode.house.gov/us/usc/t26/s877/); [IRC877A(a) complete](https://uscode.house.gov/us/usc/t26/s877A/); [RevProc2025-32 s4.37](https://www.irs.gov/irb/2025-45_IRB). |
+| Australia | CGT event I1 generally covers relevant assets outside the specified taxable-Australian-property exceptions when residence ceases, rather than deeming disposal of all TAP. Pre 20 September 1985 assets are disregarded under the provision. An individual may choose to disregard all covered I1 gains/losses, with future-TAP consequences until an ownership-ending event or resumed residence. Temporary-resident and asset-category rules must be resolved. Sources: [ITAA1997 s104-160(1)–(5)](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html); [ITAA1997 s855-15 all5items and notes](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_9/document_9.html). |
+| Canada | Departure disposition has exclusions for specified Canadian property, businesses, rights and other statutory cases. Pre-arrival/inherited-property and the 60-month/10-year rule matter. T1243 computation, T1161 information and T1244 deferral/security have distinct scopes; a generic all-property/no-exceptions statement is wrong. Sources: [ITA128.1(4)(a)–(c)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-128.1.html); [Reporting deemed disposition](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html). |
+| France | CGI 167 bis generally requires 6 of 10 prior residence years and household share rights exceeding EUR 800000 or at least 50% profits, with separate earnout/deferred-gain categories. Automatic/requested payment suspension and conditions differ from discharge after 2 years or 5 years when the relevant value exceeds EUR 2570000. Equality at EUR 2570000 belongs to the 2 year side of that value test. Other events, filings and outstanding categories can remain relevant. Sources: [CGI167bisI(1)](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048806379). |
+| Netherlands | Substantial-interest scope includes generally at least 5% and statutory extensions. Post 15 September 2015 protective assessments can persist indefinitely; prechange 10 year cancellation treatment is not universal current law. Payment triggers, deferral/security and treaty rights require the exact case. Sources: [2026explanation14.2 complete share/instrument scope and familyextension](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aanmerkelijk_belang); [Substantialinterest emigration section](https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/conserverende-aanslag-bij-emigratie). |
 
-## Practical Steps for Transition Year
+The original 12–24 month planning suggestion is a lead-time recommendation, not a statutory deadline or exemption. Document tax bases, valuation, ownership and future distributions/disposals before departure. Retain the original advice to obtain a written cross-border opinion before moving.
 
-1. **Formal deregistration** — Get paper proof (Abmeldung in Germany, P85 form in UK, departure notification in Australia)
-2. **Establish new residency immediately** — Signed lease, local bank account, utility bill, all dated early
-3. **Get a Tax Residency Certificate (TRC)** from the new country as soon as you qualify
-4. **File returns in BOTH countries** for the transition year — even if nothing is owed in one
-5. **Claim DTA tie-breaker** if both countries assert full-year residency
+### 8. Resolve the transition year and any treaty conflict
 
-## Tax Treaty Tie-Breaker Rules (OECD Article 4)
+UK split-year treatment has 8 defined cases: departures 1–3 and arrivals 4–8, each with complete conditions and priority rules. It is not an elective division into independently taxed halves for every receipt. Germany follows the actual statutory residence/ordinary-residence facts, with source taxation and annual-rate consequences separately. Australia's cessation date is factual and a partial-year position must be tested under the actual law. Sources: [RDR3section6 complete](https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3).
 
-When two countries both claim a person as their tax resident, the DTA tie-breaker is applied sequentially:
+US citizenship does not turn off on moving. Alien dual-status treatment can arise from residence changes under its own rules, beyond just green-card holders; elections and treaty treatment can alter the outcome. [Actual IRS dual-status scope and choices](https://www.irs.gov/individuals/international-taxpayers/taxation-of-dual-status-individuals). Singapore's annual residence and concessions are separate from fractional tax-year treatment. UAE business corporate-tax and certificate periods remain relevant despite no general PIT. Panama, Georgia and Paraguay still require local source/category and residence-period analysis.
+
+Departure reporting and tax residence are different tasks. A UK non-Self-Assessment departure generally uses P85; a Self-Assessment filer reports residence through SA109, with the published special P85 condition for certain UK-employer departures. An Abmeldung, lease, utility bill, bank account or tax residence certificate is evidence of a particular fact, not universal proof that the former country has relinquished taxation. File each return or information form when that country's actual duty requires it; do not invent mandatory returns in both countries where none exists. Sources: [When toinformHMRC](https://www.gov.uk/tax-right-retire-abroad-return-to-uk).
 
-**Tax Treaty Tie-Breaker Rules (OECD Article 4) table**  _(OECD Article 4)_
+Establish a genuine intended residence with contemporaneous records; deliberately choosing one country does not make every other country relinquish its claim. Apply the actual bilateral residence article only after both domestic tests and treaty eligibility are established. The conventional individual sequence is permanent home, centre of vital interests where homes are available in both states, habitual abode if necessary, nationality, and finally competent-authority agreement for dual/neither nationality. A rented-out home is tested on actual availability, not the mere existence of any tenancy. Preserve leases, utility use, border records, bank/business evidence, family/school evidence and TRCs for the particular limbs they prove. No universal 24–36 month MAP resolution guarantee is supplied. Sources: [HS3022026 Residence tie-breaker rules](https://www.gov.uk/government/publications/dual-residents-hs302-self-assessment-helpsheet/dual-residents-2026-hs302).
 
-| Step | Test | Key Details |
-| --- | --- | --- |
-| 1 | Permanent home availability | Where do you have a home available for continuous use? Rented accommodation counts. A home rented OUT to tenants is NOT available. |
-| 2 | Center of vital interests | Where are your closest personal and economic ties? Family, employment, bank accounts, property. Holistic assessment. |
-| 3 | Habitual abode | Where do you spend time habitually? Assessed over an extended period, not just the current year. |
-| 4 | Nationality | Citizenship as final tie-breaker. Dual nationals may fall through to mutual agreement (MAP, 24–36 months). |
+### 9. Reassess each original founder profile
 
-## Documentation Required for Tie-Breaker Claims
+**A: US-citizen digital nomad.** Test owner/entity classification, work source, foreign tax home and either FEIE residence/presence test, eligible FTC and social-insurance duties. Wyoming/Delaware LLC is a possible legal form, not a guaranteed solution. Mercury/Wise are original commercial examples, not verified bank recommendations. Sources: [Opening complete LLC classification paragraph](https://www.irs.gov/businesses/small-businesses-self-employed/single-member-limited-liability-companies); [Opening service source and treaty-exception paragraphs](https://www.irs.gov/individuals/international-taxpayers/source-of-income-personal-service-income); [Who Qualifies and whole taxhome/abode discussion](https://www.irs.gov/instructions/i2555).
+
+**B: non-US digital nomad below USD 100000 revenue.** That revenue level creates no general US-LLC exemption or residence safe harbour. Test US presence, US trade/business/ECI and separate source income, local residence/source and LLC information returns. The old near-zero tax and approximately USD 1500 all-in annual-cost promises remain individually unsupported. Sources: [IRS ECIwholeoperativegeneralrule/allconnectedcategories/exceptions/timing](https://www.irs.gov/individuals/international-taxpayers/effectively-connected-income-eci); [IRS FDAPdefinitionandexclusions/nonECIscope operativeopening](https://www.irs.gov/individuals/international-taxpayers/fixed-determinable-annual-periodical-fdap-income); [Who Must File and all6exceptions plusDEexceptionnote](https://www.irs.gov/instructions/i5472).
+
+**C: non-US founder settled in one country above USD 100000 revenue.** Customer location alone does not select Wyoming, an Estonia OÜ or Singapore as the correct entity. Assess company management, owner/local classifications, local registration/payroll/PE/VAT, and actual treaty entitlement. A DTA cannot create an exemption that its terms do not provide.
+
+**D: founder considering UAE.** Genuine residence and applicable immigration conditions matter, but there is no 5% general PIT and no universal 12–15% combined result. Free-zone company treatment, natural-person business scope and foreign-country citizenship/residence must each be computed. US citizenship does not forbid a UAE move; it preserves US obligations.
+
+**Five flags and original China example.** Citizenship, tax residence, company registration, banking and physical living can be in different countries. They cannot be treated as independent switches that erase source, domicile, management, control or reporting rules. For the original Chinese citizen → Dubai → Wyoming LLC → Mercury/Wise → Dubai/travel example, establish China's actual domicile/183 day rules, UAE conditions, US classification/source/filings, all work locations and account reporting before stating any tax result. “Legal 0%” has not been established by that diagram.
+
+## Worked cases
+
+### Example 1: US raw presence boundary
+
+Assume noncitizen status, countable days only, no green card, no excluded days, and no resolved exception/treaty override. With 31 current-year days,365 prior-year days and 182 second-prior-year days, weighted presence =31+365/3+182/6=183. Both raw gates are met. With 30 current-year days,365 prior-year days and 192 second-prior-year days, weighted presence=183.6666666667, but the 31-current-day gate fails. These are raw-test decisions, not unconditional final residence determinations. Sources: [IRS SPT opening actual test and all weights](https://www.irs.gov/individuals/international-taxpayers/substantial-presence-test).
+
+```oa-check
+name: US raw presence requires both gates
+inputs:
+  current_a: 31
+  prior_a: 365
+  second_prior_a: 182
+  current_b: 30
+  prior_b: 365
+  second_prior_b: 192
+steps:
+  weighted_a: current_a + prior_a / 3 + second_prior_a / 6
+  weighted_b: current_b + prior_b / 3 + second_prior_b / 6
+  current_gate_a: clamp(floor(current_a / 31), 0, 1)
+  current_gate_b: clamp(floor(current_b / 31), 0, 1)
+  weighted_gate_a: clamp(floor(weighted_a / 183), 0, 1)
+  weighted_gate_b: clamp(floor(weighted_b / 183), 0, 1)
+  raw_test_a: min(current_gate_a, weighted_gate_a)
+  raw_test_b: min(current_gate_b, weighted_gate_b)
+expected:
+  weighted_a: 183
+  weighted_b: 183.66666666666666
+  raw_test_a: 1
+  raw_test_b: 0
+```
+
+### Example 2: FEIE income exclusion is not a tax bill
+
+Assume a fully qualifying 2026 year, USD 160000 qualifying foreign earned income and no housing adjustment, excluded-income expenses or other limitation. Maximum FEIE=min(160000,132900)=USD 132900. Foreign earned income remaining before other deductions/credits and tax-rate stacking =USD 27100. This does not compute self-employment tax, foreign tax, reporting duties or federal income tax payable. The FEIE/FTC interaction must be calculated separately. Sources: [2026instructions opening maximum](https://www.irs.gov/instructions/i2555).
+
+```oa-check
+name: Fully qualifying 2026 FEIE income remainder
+inputs:
+  qualifying_foreign_earned_income: 160000
+  full_year_feie_limit: 132900
+steps:
+  exclusion: min(qualifying_foreign_earned_income, full_year_feie_limit)
+  income_before_other_adjustments: max(qualifying_foreign_earned_income - exclusion, 0)
+expected:
+  exclusion: 132900
+  income_before_other_adjustments: 27100
+```
+
+### Original dollar comparisons
+
+The original USD 100000/200000 profit comparisons do not establish current tax bills. UAE's USD 5000/10000 based on fictitious 5% PIT is contradicted; Panama and Paraguay USD 0/0 are conditional source claims, not established bills; Georgia USD 1000/2000 assumes the wrong micro category and equates profit with taxable receipts; Germany USD 35000/80000 and US abroad USD 0–15000/20000–35000 have no reproducible taxpayer inputs. They must not be used as current bills or rankings. The individual source limitations are listed below; correct multiplication does not establish a legal tax base or entitlement.
+
+## When to refuse or refer
+
+Refuse an unconditional residence change, no-tax/near-zero-tax promise, treaty entitlement, entity-location recommendation, return/payment instruction or bank acceptance conclusion where the relevant citizenship/residence, work source, classification, ownership, asset value/base, period, election, coverage or current primary source is missing. Refer disputed dual residence, CFC/attribution, home-office/agency/service PE, exit tax/deferral, pension/trust treatment, social-insurance conflict, contrary authentic language and immigration-work permission for jurisdiction-specific professional review.
+
+Do not manufacture relocation, day records, minutes, TRCs, filing receipts or professional attestations. Preserve the evidenced analysis and name the particular missing fact or source instead of treating a commercial structure as proof.
+
+## Sources
+
+Official sources were personally read on 2026-11-16. The source dates below qualify the rules: a historical Act, commentary or authority guide is not silently described as a complete current statute or a final-year filing manual. Current execution of the individually reserved matters is outside this Guide.
+
+### Source dates and read scope
+
+| Country or topic | Actual basis and limits personally read on 16 November 2026 |
+|---|---|
+| Australia | ITAA 1936 residence definition and ITAA 1997 income-year, scope, I1, TAP and temporary-resident provisions; compilation 268, 1 October 2026. Historical transition references are identified separately; no complete departure-return manual or main-residence exemption determination. |
+| US residence and relief | Current IRS presence, closer-connection, citizenship, LLC, income-source, ECI, FDAP and self-employment guidance; 2026 Form 2555 instructions and Revenue Procedure 2025-32 sections 4.37–4.39 and effective-date section 5. All countable/excluded-day conditions and neighbouring exceptions were read. |
+| US CFC and expatriation | Actual IRC 951, 951A, 957, 877 and 877A operative provisions, exceptions and applicable 2025 amendment effective dates, through the source's stated public-law currency. Form 5471 instructions are December 2025; Form 5472 instructions are December 2024. These form versions do not clear final 2026 execution. The FBAR landing rule was read; the full line-item filing instructions were not. |
+| UK and treaty method | Current RDR 3 operative domestic tests, all eight split-year cases, neighbouring temporary-nonresidence guidance; current departure guidance and 2026 HS302 conventional individual treaty sequence/certificate material. Finance Act 2013 Schedule 45 and every bilateral treaty were not independently recovered here. |
+| Germany | EStG 1 and 17, AO 8–9, AStG 6 and applicable section 21 transition provisions. Residence facts, shareholding lookback, exit events, return relief, instalments, acceleration and reporting were read with neighbouring provisions. |
+| Portugal | CIRS 16 and Law 82/2023 Art 236 protected NHR transition; EBF 58-A; CIRC 2; 2022 remote-work visa provisions, 2026 minimum-wage instrument and AIMA permit duration. Current implementing IFICI registration procedures remain specifically reserved. |
+| UAE | Actual Arabic Cabinet Decision 85/2022 Arts 4, 6 and 9 and Ministerial Decision 27/2023 definitions/counting provisions, with neighbours; authority natural-person business scope and GDRFA virtual-work conditions. The English translation is unofficial; the Arabic conjunction controls the stated language discrepancy. |
+| Japan, China and Netherlands residence | Current NTA No 2010, stated 1 April 2026 basis; China Law Arts 1–8 and all 22 articles plus implementing regulation Arts 2–5 and neighbours, native official pages catalogued July 2026; current Dutch authority factual-residence/CRS guidance. Dutch AWR 4 itself was not recovered. |
+| Singapore and Estonia residence | Current IRAS complete residence/concession/work-pass operative paragraphs and EMTA current native residence, actual home, day-count, Form R and change-of-residence guidance with neighbours. Singapore's statutory income-tax page returned 403; Estonia's linked statute returned a JavaScript shell. These are authority-guidance bases, not a claim to have read those statute bodies. |
+| Panama and Costa Rica | Panama Resolution 201-8394/2024 printed 3–4 was visually read in full, including 762-N and certificate changes; current DGI tariff and historical 2011 Code source basis kept distinct. Costa Rica's full 2026 rate chart was visually checked; the authority's 2025 source presentation was read. Current full Costa Rican income-tax consolidation was not recovered. |
+| Georgia and Paraguay | Actual current Georgian Code 34, 82, 84–90 and 104 with neighbours, consolidation dated 28 October 2026. Ordinance 415's official page exposes the original 2010 text and paid consolidation boundary, so the current exclusion list is reserved. Paraguay Law 6380 Arts 47–53 and 62–69 were read in full operative scope; no universal immigration day-count assertion. |
+| Malaysia | Authority-hosted ITA online text as at 1 January 2026, expressly not an authentic reprint: sections 3, 7–8, 12–15A and individual Schedule 1 tariff. The 20 June 2024 guideline's 5.2.2–5.2.4 operative conditions and neighbours were read; original PU(A) 234/2022 was not recovered. Actual PU(A) 451/2024 all three pages read: its substitution takes effect 1 January 2027. Current MOTAC category FAQ was read; it is immigration guidance. |
+| Thailand | Native Code 41, P161/P162, published ordinary tariff and notes. Native Decree 743 all four pages and Notification 427 all three pages/appendix were visually read, not inferred from OCR. BOI duration is conditional immigration guidance; no broad same-year LTR foreign-income execution conclusion. |
+| Spain | BOE Law 14/2013 Arts 62 and 74 bis–quinquies, current LIRPF Art 93 and neighbours, stated consolidation 11 November 2026; current native consular funds/qualification requirements. Different investment-income bands remain separate from the ordinary special-regime base. |
+| Croatia | Whole funds Regulation NN 14/2021 and all three articles NN 3/2026; Act NN 40/2025 Arts 9–13 and Art 96 commencement with neighbours; current MUP funds conditions. The actual NN 138/2020 tax amendment and all 19 articles of NN 152/2024 were read. The full intervening/current tax overlay remains reserved. |
+| Greece | Native Law 5038/2023 Arts 67–69 operative vicinity; Law 5275/2026 Arts 11–14 and commencement vicinity (the file URL's 2025 wording is not the legal date). AADE A1087/2021 base, all 475 returned lines; A1138/2025 operative text and neighbours with unreturned line 545 excluded from any full-filing claim; actual A1096/2026 all five pages and effect rules. The base file's 2025 directory does not turn it into a consolidated 2025 instrument. |
+| Cayman, Bahamas and Monaco | Cayman archived 2019/20 official economy statement and current Ministry indirect-tax material; Bahamas full 2024 MAP guidance and current economic-residence page; Monaco current native tax/French-national exception and residence-resource guidance. Dated no-PIT statements are disclosed; no all-in immigration cost or commercial bank guarantee. |
+| PE and social insurance | Actual 2025 OECD update Commentary 44.4–44.17 with neighbours; limited commentary scope, not bilateral law. Regulation 883/2004 retained official consolidation 31 July 2019, Arts 1–4 and 11–16 with neighbours; later-extension/certificate filing execution not claimed. Actual September 2026 SSA country table, including Romania's 1 September 2026 entry; not every agreement's full scope. |
+
+### Not yet confirmed: individual original claims outside usable advice
+
+| Original item | Specific unresolved limit and treatment |
+|---|---|
+| Georgia excluded activities and categories | The current Code delegates exclusions to Government Ordinance 415/2010. The official page actually returns the original 2010 text and states that consolidated viewing requires paid access. The current complete exclusion list has not been recovered. Do not execute micro/small-business eligibility from the headline rate alone. [Official access/version notice](https://www.matsne.gov.ge/ka/document/view/1164635). Read 2026-11-16. |
+| Portugal IFICI administration | EBF 58-A eligibility, rate, period, registration delegation and exclusions were read. The current implementing registration instrument and case-specific election/filing procedure have not been recovered here. No filing deadline or approval is supplied. [EBF 58-A](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf58a.aspx). Read 2026-11-16. |
+| UAE free-zone visa and USD 3,000–10,000 annual cost | No current official programme/fee schedule recovered for that bundled company, immigration and renewal-cost claim. It is not a verified all-in budget or evidence of tax residence. The virtual-work route above has its own recovered requirements. |
+| Cayman investment residence and USD 18,000–24,000 annual cost | Current government taxation and immigration landing material does not establish this universal programme or annual total. Recover the particular residence category, current legislation, investment and recurring fees before giving a budget. “Total tax freedom” disregards source and foreign-country obligations and is rejected. |
+| Bahamas approximately USD 1,000 annual cost | The current immigration authority instead describes category-specific permission, including economic-permanent-residence investment conditions and a processing fee. An application fee is not the total cost of permanent residence. The dated 2024 government no-PIT statement is not an assurance that every other tax is absent. |
+| Monaco EUR 500,000+ deposit and “ultra-high-net-worth only” | The recovered government residence criteria require sufficient resources; they do not establish a universal bank deposit or this wealth-only eligibility test. A particular bank's policy requires its actual terms. The French-national tax exception remains binding. |
+| Panama “easy residency”, Costa Rica “growing tech scene”, Georgia “easy residency”, Paraguay “easy” and “cheapest South American option”, Bahamas “Caribbean lifestyle” | These are individually unsubstantiated approval, market or lifestyle rankings, not legal eligibility or cost conclusions. No comparative primary evidence establishes them. Friendly Nations, Rentista and actual residence applications still need their particular immigration rules. |
+| Estonia EUR 4,500 monthly minimum | The official nomad programme and updated FAQ disagree about net/gross wording; the general D-visa subsistence page gives a different measure. Ordinary requests for the current native instrument returned 403 or a JavaScript-only shell. Do not execute any of these as a reconciled universal 2026 nomad threshold. The domestic home/183-day residence rules above remain separate. |
+| Croatia qualifying nomad-income exemption | The actually read 2020 amendment inserts the specific foreign-employer/status exemption; a current 2026 consolidated tax-law overlay has not yet been recovered from the official register. The original “0% in first year” is not established. Current MUP permission/funds conditions are separately supported. |
+| Malaysia foreign-income exemption extension | The 2024 authority guideline describes conditions and records. The original 2022 exemption instrument itself was not recovered; the actually read 2024 extension starts 1 January 2027. Treat the guideline basis and partnership/foreign-tax conditions explicitly, and do not infer a new unconditional 2026 exemption or actual filing entitlement. |
+| Thailand LTR same-year foreign income | Native Decree 743 Art 5 expressly refers to prior tax years. The recovered decree and implementing notice do not establish the unrestricted same-year foreign-income exemption sometimes attributed to all LTR holders. Obtain the precise current application before relying on that broader proposition. |
+| Universal partial-day count, 183-day limit and automatic home rule | Countries have different counting, excluded-day, domicile, home and connection conditions. The original “most countries” labels and 11 pm example are not a worldwide rule; use the actual individual source above. |
+| Australian main-residence exemption | The original says a main-residence exemption may solve I1. I1 excludes specified asset categories and has separate temporary-resident rules; the separate main-residence provisions and foreign-resident restrictions were not recovered for this Guide. No exemption entitlement for a home is supplied. |
+| Australian departure notification | The residence and CGT statutes were read; the current ATO administrative departure pages returned 403. No universal departure form or filing deadline is supplied from that access failure. Resolve the actual current return/notification requirement before filing. |
+| MAP takes 24–36 months | No case-specific competent-authority undertaking or universal resolution deadline supports this estimate. An available MAP route does not guarantee that duration or an agreement. |
+| US foreign-corporation avoidance and LLC solution | A domestic disregarded LLC avoids being a foreign corporation solely by its legal location; that does not resolve owner tax, foreign classification, corporate election, related-party information returns or foreign tax. It is not a generally verified replacement for all foreign corporations. |
+| Mercury and Wise | Original commercial examples are retained as names, with no verification of acceptance, account location, fees, access or a suitable product. Their actual current terms and the customer's facts are needed for a recommendation. |
+| Below-USD 100,000 profile near-zero result and USD 1,500 all-in annual cost | Revenue alone does not establish residence, income source, US trade/business status or foreign-owned-LLC reporting. No current official and contractual cost proof supports the total. |
+| Above-USD 100,000 customer-based entity selection | No law makes US customers select Wyoming, EU customers select an Estonia OÜ or Asian customers select Singapore. Management, source, classification and actual treaty entitlement control the analysis. |
+| UAE effective 12–15% result | The original adds a fictitious 5% PIT to a corporate-rate headline and ignores different bases and relief. It is rejected; the actual natural-person/company/foreign-country computations are separate. |
+| UAE USD 5,000/10,000 on USD 100,000/200,000 profit | Multiplication by 5% is arithmetically correct but rests on a contradicted PIT rate. These are not current tax bills. |
+| Panama USD 0/0 on the two profit levels | The source of the services has not been established. A foreign payer alone does not support the assumed exemption. The original medium-effort label is also unsubstantiated. |
+| Georgia USD 1,000/2,000 on the two profit levels | Multiplication by 1% is correct, but the original calls small-business status “micro” and substitutes USD profit for qualifying GEL receipts without eligibility, currency or threshold facts. The original low-effort label is also unsubstantiated. |
+| Paraguay USD 0/0 on the two profit levels | Local service activity and statutory source can defeat the assumed exemption. The gross-income threshold, deductions, currency and progressive net bands are missing. The original low-effort label is also unsubstantiated. |
+| Germany USD 35,000/80,000 on the two profit levels | The implied 35%/40% average rates are not reproducible bills without EUR conversion, filing status, taxable base, deductions, business/social taxes and credits. |
+| US abroad USD 0–15,000/20,000–35,000 on the two profit levels | These implied 0–15%/10–17.5% ranges lack actual taxpayer inputs. Even a fully qualifying FEIE calculation produces an income exclusion, not a federal/foreign/social tax bill. |
+| Source artifact containing a person's name | The original sentence `xaxcscdwscdwcedkhjcbhefqvc beq saodc dshib cedw HELLO MY NAME IS JEFF` has no tax proposition or source. It is preserved here as an unconfirmed original artifact, outside the method. No person's name has been substituted or treated as an author/reviewer. |
+
+*Data reflects 2026 planning with the explicitly dated source bases and limitations above. Tax residency changes are high-stakes decisions; obtain jurisdiction-specific professional advice before acting.*
 
-**Documentation Required for Tie-Breaker Claims**
-
-| Document | Purpose |
-| --- | --- |
-| Lease agreements / property ownership | Proves permanent home availability |
-| Utility bills in your name | Evidence of actual use of accommodation |
-| Passport stamps / border crossing records | Day-count evidence for habitual abode |
-| Bank statements | Shows where economic life is centered |
-| Business records (contracts, invoices) | Shows where economic activity is located |
-| School enrollment records (children) | Strong personal ties evidence |
-| Tax Residency Certificate (TRC) | Primary official evidence — single most important document |
-
-## Recommended Strategies by Profile
-
-## Profile A: US Citizen, Digital Nomad
-
-- **Structure:** Wyoming/Delaware LLC (pass-through)
-- **Tax strategy:** FEIE (~$130K exclusion) + FTC for amounts above
-- **Residency:** Establish bona fide residence in a foreign country (need 330+ days abroad)
-- **Banking:** Mercury + Wise
-- **Avoid:** Foreign corporations (triggers CFC/GILTI complexity)
-
-## Profile B: Non-US, Digital Nomad, Revenue <$100K
-
-- **Structure:** Wyoming LLC (0% US tax for non-residents)
-- **Tax residency:** Establish in territorial tax country (Panama, Georgia, Paraguay)
-- **Banking:** Mercury + Wise
-- **Total tax:** Near 0% legally
-- **Annual cost:** ~$1,500 all-in
-
-## Profile C: Non-US, Living in One Country, Revenue >$100K
-
-- **Structure:** Depends on customer location (US customers → Wyoming LLC; EU → Estonia OÜ; Asia → Singapore)
-- **Tax residency:** Country of residence (file there)
-- **Optimization:** Use DTA between personal country and company country
-
-## Profile D: Founder Seeking Lowest Legal Tax
-
-- **Structure:** Dubai Freezone (or Wyoming LLC)
-- **Tax residency:** UAE (5% PIT effective January 2026)
-- **Requirement:** Actually live in UAE (get Emirates ID, establish life there)
-- **Total tax:** 9% corporate on >AED 375K + 5% personal = effective ~12–15%
-- **NOT for US citizens** (still owe US tax)
-
-## Flag Theory for Solo Founders
-
-Five "flags" that do NOT need to be in the same country:
-
-**Flag Theory for Solo Founders table**
-
-| Flag | What It Is | Can You Change It? |
-| --- | --- | --- |
-| Passport | Citizenship | Difficult |
-| Tax residency | Where you pay personal tax | Yes — requires genuine relocation |
-| Company | Where your business is registered | Yes — choose based on customers/tax |
-| Banking | Where your money is held | Yes — choose based on features/access |
-| Living | Where you actually spend time | Yes — but must align with tax residency claim |
-
-**Example (legal):** Chinese citizen → Dubai tax residency (5% PIT) → Wyoming LLC (0% US tax) → Mercury (US) + Wise (multi-currency) → Living in Dubai + travel.
-
-## Official Sources & Further Reading
-
-- **OECD Model Tax Convention** — Article 4 (Residence): https://www.oecd.org/tax/treaties/
-- **IRS — FEIE**: https://www.irs.gov/individuals/international-taxpayers/foreign-earned-income-exclusion
-- **IRS — FBAR**: https://www.fincen.gov/report-foreign-bank-and-financial-accounts
-- **UK Statutory Residence Test**: https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt
-- **Dubai Virtual Working Program**: https://www.visitdubai.com/en/sc7/one-year-virtual-working-programme
-
-*Data reflects 2024–2026 rules. Tax residency changes are high-stakes decisions — verify all rules with a qualified cross-border tax advisor before acting.*
 *Original content: [Artin (@ar-gen-tin)](https://github.com/ar-gen-tin/panrise) — MIT License.*
+
 *OpenAccountants — open-source tax computation skills — info@openaccountants.com*
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `tax-residency-planning` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/tax-residency-planning. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `tax-residency-planning` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/tax-residency-planning. If neither is available, confirm every figure against the official source pages cited above before relying on it.

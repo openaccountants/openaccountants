@@ -1,469 +1,177 @@
 ---
 name: kh-income-tax
-description: "Use this skill whenever asked about Cambodia personal income tax, Tax on Salary (TOS), or Tax on Income (TOI) for individuals, sole proprietors, and employers. Trigger on phrases like \"how much salary tax do I pay in Cambodia\", \"Tax on Salary\", \"TOS withholding\", \"Tax on Income Cambodia\", \"monthly salary tax bracket\", \"NSSF contribution\", \"tax on fringe benefits\", \"non-resident 20% salary tax\", \"dependent allowance Khmer\", \"sole proprietor tax Cambodia\", \"GDT e-filing\", \"20th of the month tax return\", or any question about computing or filing employment-income tax, payroll withholding, or annual business-income tax for a Cambodian taxpayer. Also trigger when preparing or reviewing a monthly TOS return, computing NSSF (National Social Security Fund) contributions, applying dependent relief, or advising on annual TOI for a physical person. Cambodia has NO Western-style \"personal income tax\" — it runs Tax on Salary (monthly, progressive 0%–20%) and Tax on Income (annual, progressive 0%–20"
+description: "Compute Cambodia monthly Tax on Salary for residents and non-residents and basic annual Tax on Income for physical persons in 2026. Covers residence, salary-base adjustments, dependent relief, fringe benefits, annual bands, prepayments, filing and review boundaries. Use for Cambodia salary tax, TOS, personal income tax, sole-proprietor TOI and payroll withholding. NSSF current wage-table and full special-regime calculations require separate confirmation."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/kh-income-tax"
   jurisdiction: "KH"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-15"
 ---
 
-# cambodia-income-tax
+# Cambodia Income Tax: Salary and Physical-Person Business Income v0.2
 
-## Cambodia Income Tax (Tax on Salary & Tax on Income) -- Skill v0.1
+**General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Section 1 -- Quick Reference
+## Scope
 
-**Section 1 Quick Reference table**
+The tax authority is the General Department of Taxation (GDT), Ministry of Economy and Finance. Prepare a KHR working paper distinguishing monthly employment Tax on Salary(TOS), separate fringe-benefit tax and annual business/professional Tax on Income(TOI) for a physical person, sole proprietorship or relevant partnership share. Do not combine these different bases merely because their progressive rates match. A bank/payroll descriptor is an intake clue. Legal-person company tax routes to [corporate income tax](kh-corporate-income-tax.md); VAT routes to [Cambodia VAT](cambodia-vat.md); social-security assessment routes to [payroll/social](kh-payroll-social.md). The Khmer legislation prevails.
 
-| Field | Value |
-| --- | --- |
-| Country | Kingdom of Cambodia |
-| Tax (employment) | Tax on Salary (TOS) -- monthly progressive withholding |
-| Tax (business/professional) | Tax on Income (TOI) -- annual progressive tax on physical persons |
-| Currency | Khmer Riel (KHR). Wages often quoted in USD (USD ≈ KHR 4,000–4,100); statutory tax tables are in KHR |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Primary legislation | Law on Taxation; rate tables set by **Sub-Decree No. 196 ANKr.BK of 28 Sept 2022**, effective 1 Jan 2023 (current for 2025/2026) [PwC; DFDL] |
-| Tax authority | General Department of Taxation (GDT), Ministry of Economy and Finance — www.tax.gov.kh [PwC; Acclime] |
-| Social security | National Social Security Fund (NSSF) [NSSF; PwC] |
-| Filing portal | GDT E-Filing / e-Tax system [PwC; Acclime] |
-| Monthly TOS deadline | 20th day of the following month [PwC; Acclime] |
-| Annual TOI deadline | 31 March (within 3 months of calendar year-end) [PwC; Acclime] |
-| Validation date | Pending |
-| Skill version | 0.1 |
+The current instrument is **Sub-Decree 48 of 11 March 2024**, read with the 2023 Law and **Prakas 575 of 19 September 2024**. The GDT register lists old Sub-Decree 196 of 28 September 2022 as abrogated; do not call it the current 2026 instrument. The band amounts below are confirmed by the replacement, rather than guessed from the old citation.
 
-> **CONCEPTUAL NOTE — there is no "personal income tax" in the Western sense in Cambodia.** Individuals are taxed through two distinct progressive regimes that currently share the same 0%–20% rate ladder:
-> 1. **Tax on Salary (TOS)** — a monthly progressive tax on employment income, withheld and remitted by the employer.
-> 2. **Tax on Income (TOI)** — an annual progressive tax on the business/professional income of physical persons (sole proprietors, partnerships).
->
-> This skill computes both. Always confirm which regime applies before producing any figure.
+| Quick reference | Amount / rule and complete population | Source |
+|---|---|---|
+| Resident salary | Monthly worldwide salary; progressive 0%to 20% after lawful base adjustments | [Law 41-47](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); [SD48 arts 1-3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35); [Prakas575,12-14](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/fb78dfde-8342-4e3c-80e0-84ef81919c70) |
+| Non-resident salary | 20% final salary tax on Cambodian-source taxable salary, with the technical-assistance source rule; fringe benefits separate; no resident dependent relief | [Law 42(6),46(3),49](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); [Prakas575,3,5,14](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/fb78dfde-8342-4e3c-80e0-84ef81919c70) |
+| Fringe benefits | 20% of fair-market value inclusive of all taxes, employer withholding/payment obligation; test exemptions and value before applying | [Law 48](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); [Prakas575,15-18](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/fb78dfde-8342-4e3c-80e0-84ef81919c70) |
+| Dependent relief | KHR 150,000 per qualifying child and KHR 150,000 for the qualifying non-working spouse per month; resident salary only, evidence required; where both spouses work, child relief is granted to only one spouse | [SD48 art 3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35); [Prakas575,12-13](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/fb78dfde-8342-4e3c-80e0-84ef81919c70) |
+| Child age / transition | Age no more than 14; or no more than 25 and full-time study at a recognized institution, with required evidence. Retain relief in the specified month of reaching 15, finishing studies or reaching 26 | [Prakas575,13](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/fb78dfde-8342-4e3c-80e0-84ef81919c70) |
+| Monthly filing | Statutory 20th of following month; actual electronic calendar may differ | [Law 53](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); [Prakas575,22](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/fb78dfde-8342-4e3c-80e0-84ef81919c70) |
+| Annual business year / filing | Calendar year baseline; annual return/payment within 3 months after year-end, including loss return; approved alternative-year rules separate | [Law 8,29-30,39](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
+| Monthly TOI prepayment | 1% of previous-month turnover including all taxes except VAT, within self-assessment liability; credit, not expense; check actual incentives/suspensions | [Law 28,32,38-39](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
 
-### 1.1 Tax on Salary (TOS) -- Monthly Brackets, RESIDENTS
+### Resident monthly salary bands
 
-**TOS monthly brackets, residents**  _([PwC; DFDL; MEF open data])_
+Each rate applies only to its tranche of the confirmed resident monthly taxable base. Cumulative amounts are **derived**, not an official quick-deduction column. Source: [SD48 art 3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) and [Prakas575,14](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/fb78dfde-8342-4e3c-80e0-84ef81919c70).
 
-| Monthly taxable salary (KHR) | Rate | Cumulative tax at top of band (KHR) |
-| --- | --- | --- |
-| 0 -- 1,500,000 | 0% | 0 |
-| 1,500,001 -- 2,000,000 | 5% | 25,000 |
-| 2,000,001 -- 8,500,000 | 10% | 675,000 |
-| 8,500,001 -- 12,500,000 | 15% | 1,275,000 |
-| Over 12,500,000 | 20% | -- |
+| Taxable monthly base KHR | Rate | Derived cumulative tax at upper limit KHR | Official source |
+|---|---|---|---|
+| 0 to 1,500,000 | 0% | 0 | [SD48 art 3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) |
+| 1,500,001 to 2,000,000 | 5% | 25,000 | [SD48 art 3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) |
+| 2,000,001 to 8,500,000 | 10% | 675,000 | [SD48 art 3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) |
+| 8,500,001 to 12,500,000 | 15% | 1,275,000 | [SD48 art 3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) |
+| Above 12,500,000 | 20% | No upper limit | [SD48 art 3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) |
 
-*Cumulative-tax check: 0 + (5% × 500,000 = 25,000) → 25,000; + (10% × 6,500,000 = 650,000) → 675,000; + (15% × 4,000,000 = 600,000) → 1,275,000. Reconciled.*
+### Annual physical-person business-income bands
 
-- **GDT computation method** — The GDT publishes a "quick lump-sum deduction" per band so payroll can compute TOS = (monthly tax base × marginal rate) − quick deduction. The exact deduction column from the official Sub-Decree 196 table is [RESEARCH GAP — reviewer to confirm] (tax.gov.kh table is image-only / 403-blocked). This skill computes TOS directly by the marginal-band method above, which yields the same result; do not publish the lump-sum deduction figures until verified.  _([Acclime])_
+Apply to annual taxable income of the physical-person/sole-proprietor or distributive partnership-share population specified in SD48; not the ordinary legal-person corporate rate. Cumulative figures are derived.
 
-### 1.2 Tax on Salary -- NON-RESIDENTS
+| Annual taxable base KHR | Rate | Derived cumulative tax at upper limit KHR | Official source |
+|---|---|---|---|
+| 0 to 18,000,000 | 0% | 0 | [SD48 art 4](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) |
+| 18,000,001 to 24,000,000 | 5% | 300,000 | [SD48 art 4](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) |
+| 24,000,001 to 102,000,000 | 10% | 8,100,000 | [SD48 art 4](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) |
+| 102,000,001 to 150,000,000 | 15% | 15,300,000 | [SD48 art 4](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) |
+| Above 150,000,000 | 20% | No upper limit | [SD48 art 4](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) |
 
-**Non-resident TOS and fringe benefit rates**
+## Ask the client first
 
-| Item | Rate / Treatment |
-| --- | --- |
-| Cambodia-sourced salary | Flat **20%**, **final tax** — no brackets, no allowances [PwC] |
-| Tax on Fringe Benefits (all employees) | Flat **20%** of the value of the benefit, **employer-borne**, monthly [PwC] |
+Obtain actual employment/business facts, legal form, residence evidence, domicile/principal abode and arrival/departure day records; actual month/year, payment dates and all payers; gross pay, cash allowances/bonus/overtime, advances/loans and repayments; foreign salary/tax certificates; documented exempt reimbursements; fringe-benefit register and valuation; family, birth/study and spouse-income evidence; mandatory withholding required by labour/social-security law; actual NSSF assessment, registration and employee headcount as an intake fact; currency/rate instruction; payroll register, prior returns/acknowledgments and payment receipts.
 
-### 1.3 Annual Tax on Income (TOI) -- Sole proprietors / individuals / partnerships
+For TOI obtain complete income/expense books and invoices, taxpayer classification, turnover, deductible-expense reconciliation, related-party/private/capital items, losses, proper-accounting/minimum-tax status and prepayment receipts. A full-year bank statement starts reconciliation; it does not establish taxable profit or expense deductions. Missing salary or residence means stop TOS; missing business income/base or classification means stop TOI. Identify mixed TOS/TOI facts instead of guessing.
 
-**Annual TOI brackets**  _([Orbitax; PwC])_
+## The method, step by step
 
-| Annual taxable income (KHR) | Rate | Cumulative tax at top of band (KHR) |
-| --- | --- | --- |
-| 0 -- 18,000,000 | 0% | 0 |
-| 18,000,001 -- 24,000,000 | 5% | 300,000 |
-| 24,000,001 -- 102,000,000 | 10% | 8,100,000 |
-| 102,000,001 -- 150,000,000 | 15% | 15,300,000 |
-| Over 150,000,000 | 20% | -- |
+### Establish residence, employment and source
 
-*Cumulative-tax check: 5% × 6,000,000 = 300,000 → 300,000; + 10% × 78,000,000 = 7,800,000 → 8,100,000; + 15% × 48,000,000 = 7,200,000 → 15,300,000. Reconciled.*
+[Law 41-42](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) and [Prakas575,3-5](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/fb78dfde-8342-4e3c-80e0-84ef81919c70) use residence/domicile, principal place of abode or presence **more than 182 days in a 12-month period ending in the current tax year**; review all independent residence limbs, not day count alone. Non-residents are outside the resident definition and receive Cambodian-source salary. Cambodian source generally follows employment activities in Cambodia, but a non-resident's technical-assistance salary follows payer residence. Prakas575 art 5(3) separately excepts specified technical-assistance/other-services salary where the payer has no Cambodian PE or fixed base and the salary is not borne by a Cambodian PE or fixed base. Establish both conditions and refer the actual technical/service arrangement; a foreign payer alone does not resolve taxation. Count any part of a day as 1 full day and aggregate one or multiple stays under Prakas575 art 5(1)(c). Apply the factual residence provisions; border cases, dual residence and treaties require referral.
 
-- **Sole proprietorship definition (for TOI)** — a business owned 100% by one physical person; husband, wife and dependent children are treated as one physical person.  _([PwC])_
-- **Monthly TOI prepayment** — 1% of monthly turnover (inclusive of all taxes except VAT) under the self-assessment/real regime, creditable against annual TOI and minimum tax. (Micro/small simplified-regime taxpayers may differ — verify per turnover-based classification.)  _([PwC])_
+Prakas 575 art 4 treats a person as an employee subject to salary tax where 2 of its conditions are met: no risk of non-payment after attending the specified workplace and performing the agreed work; inability to set their own work time and place; no need to invest capital to buy work equipment; and not working for multiple persons simultaneously. Apply those actual facts rather than the word “consultant.” The employee definition excludes National Assembly and Senate members; refer that special population. Salary includes direct/indirect cash and in-kind remuneration, indemnity, bonus and overtime. Classify benefits separately under arts 15-18 and genuine salary exemptions under arts 8-11; do not tax every unexplained payment as a benefit automatically.
 
-### 1.4 Dependent Allowances (resident TOS only)
+### Build resident salary base before the bands
 
-**Dependent allowances**
+[Law 44-46](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) controls the base: exclude separately taxed fringe benefits, deduct mandatory withholding required by labour and social-security law, and apply confirmed exempt payments. Then apply evidenced resident dependent relief. Prakas 575 art 12 details family relief and the treatment of employer advances/loans/installments and repayments; it does not erase the statutory deduction in Law 45. Do not subtract an assumed current NSSF maximum. Use the actual legally required withholding amount and retain its separate assessment evidence.
 
-| Allowance | Monthly amount (KHR) | Condition |
-| --- | --- | --- |
-| Dependent child | 150,000 per child | Under 14, or under 25 if a full-time student [Acclime; DFDL] |
-| Non-working dependent spouse | 150,000 | Spouse with no income [Acclime; DFDL] |
+Law 44/Prakas 575 art 8 exempt genuine business-expense reimbursement only under employer instructions, for the direct/exclusive employer interest, with a reasonable amount and already-paid detailed invoices in the reimbursement recipient's name; termination indemnities, pension/social-welfare remuneration and specific professional uniform/equipment/travel allowances have their own labour-law and implementing conditions. Uniforms must be necessary for work and supplied uniformly to employees in the same role; uniforms/equipment must be returned when employment ends (art 8(4)). Mission/travel lump sums replace actual reimbursement, cannot duplicate it and cannot exceed the government allowance for equivalent work (art 8(5)). Diplomatic/consular exemptions require art 9 official-function, passport and reciprocity conditions; art 10 international-organization relief has its headquarters-hired staff scope. These special applications are held for a complete document-specific review here. For art 11 technical-cooperation relief, the MEF-approved project documents must identify the technical-assistance staff. Resident administrative/helper staff remain taxable. A contractor must keep clear staff/work records separating the approved project from non-project work and other staff. Not every foreign employee qualifies.
 
-- **Allowance application scope** — Allowances reduce the monthly TOS tax base before applying the band table. They do not apply to non-resident flat-20% salary, fringe-benefit tax, or annual TOI.
+Under Law 46/Prakas 575 art 12, employer advances, loans or installments enter taxable salary when paid; repayment reduces that month's taxable salary within the prescribed limits, with loan principal distinguished from interest. Retain separate schedules; do not net an entire loan balance against annual pay.
 
-### 1.5 Conservative Defaults
+Dependent relief needs the actual family situation. Prakas 575 art 13 requires birth/supporting documents and recognized full-time study proof for the older child population; GDT can reject false study certificates. The old “under 14/under 25” wording excludes the ages the current rule includes. Claim qualifying children through the specified birthday/completion transition month, and grant child relief to only one spouse where both spouses work, without splitting different children between them. Relief does not apply to non-resident salary, fringe-benefit tax or annual TOI.
 
-**Conservative defaults table**
+Apply the monthly marginal bands mechanically without intermediate hand-rounding; record the final rounding instruction used. An official quick-deduction column is not confirmed here: do not present derived cumulative figures as that column. For USD contracts, obtain the applicable official conversion rule and actual period rate; the former KHR 4,000 to 4,100 approximation is not a filing exchange rate.
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown residency status | STOP — residency changes the entire computation (brackets vs flat 20%). Do not guess |
-| Unknown regime (TOS vs TOI) | Treat employment income as TOS; business income as TOI; if mixed, STOP and ask |
-| Unknown dependent eligibility | 0 allowances |
-| Unknown whether a payment is a fringe benefit | Treat as a fringe benefit (20% employer-borne) |
-| Unknown NSSF registration status | Assume employer is registered (≥8 employees) and apply NSSF; flag for reviewer |
-| Currency of a USD-quoted wage | Convert to KHR at the documented monthly rate; flag the rate used |
-| Unknown turnover-regime classification (sole proprietor) | STOP — affects prepayment and filing obligations |
+### Non-resident salary and benefits
 
-## Section 2 -- Required Inputs and Refusal Catalogue
+Apply [Law 49](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e)/Prakas 575 art 14 to confirmed Cambodian-source taxable salary:20%final salary tax, no resident bands/dependents. Do not automatically deduct a resident-only base adjustment for a non-resident. Keep NSSF/other payroll liabilities separate and establish actual coverage.
 
-### Required Inputs
+[Law 48](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) and [Prakas575,15-18](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/fb78dfde-8342-4e3c-80e0-84ef81919c70) impose 20%on fringe-benefit value inclusive of taxes with employer withholding/payment. Benefits can include private vehicles, food, housing, utilities, domestic help, below-market loans, discounts, personal education/children's school fees, non-uniform insurance, unreasonable or unnecessary employer costs, social-security/pension contributions above the allowed limit, and other listed benefits. Unconfirmed cash-benefit thresholds and special valuation rules are held for separate confirmation; the list and exceptions govern. Necessary work transport/accommodation/meals supplied to all employees regardless of role are excluded under art 16. Uniform benefit-insurance and employment-training/business-need exceptions must be tested before applying tax. Art 18 requires market value and taxes the benefit in the month provided, regardless of when it becomes an employer expense; below-market loan interest needs the prescribed market rate. Unknown valuation or exemption means hold and refer, not automatic 20%classification.
 
-**Minimum viable (TOS / payroll)** — gross monthly salary per employee, residency status of each employee, and dependent details (spouse, children) for residents.
+For resident foreign salary, [Law 50](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e)/Prakas 575 arts 19-20 determine the foreign credit annually, excluding separately taxed benefits, and require all-source salary in the computation, certified foreign tax and a per-country credit equal to the lower of actual foreign salary tax paid in that country and same-period all-source Cambodian salary tax multiplied by that country's salary divided by all-source salary, plus procedural/employer/tax-authority documents and certified translations of documents not in Khmer or English. This skill does not complete a treaty or foreign-credit application; route R-KH-3 rather than omit foreign salary silently.
 
-**Minimum viable (TOI / sole proprietor)** — annual income and expense account or full-year bank statement, and confirmation of taxpayer classification (real/self-assessment regime).
+### Annual physical-person TOI and credits
 
-**Recommended** — employment contracts, NSSF registration confirmation and employee count, fringe-benefit register, USD→KHR conversion rates used, prior-period TOS/TOI returns.
+[Law 4-11,19-20,28-39](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) and [SD48 art 4](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) govern the ordinary outline. A sole proprietorship is owned by a physical person; husband, wife and dependent children form the specified physical-person unit for this tax definition. Determine the actual taxable business base from books, recognizing taxable receipts and deducting only substantiated business costs under the law. Owner drawings/private living costs, income tax and unsupported costs do not become deductions because they left a business bank account. Capital/depreciation, interest limits, related-party sale/exchange losses, loss eligibility and specific penalty deductibility need their actual detailed rules; do not assume every pattern is deductible.
 
-**Ideal** — full payroll register, NSSF contribution records, monthly TOI prepayment receipts, GDT e-filing acknowledgements.
+Apply the annual bands to the established base, then reconcile verified prepayments/withholding and any minimum-tax exposure in the statutory order. Proper-accounting and classification conditions matter; a taxpayer's ordinary annual burden can be higher than progressive TOI if minimum tax applies. Minimum tax is not an unrestricted extra credit against TOI. The simple annual example below assumes minimum tax does not apply and no special credit/incentive/loss. A negative balance goes to the lawful refund/carryforward process, not a guaranteed cash refund. Current Prakas 578 details/classification thresholds and special small-taxpayer calculations are not computed here. The 2023 Law has 3 self-assessment classes; do not revive an estimated regime as current merely from the old text.
 
-**Refusal if minimum is missing — SOFT WARN.** No salary figure or no residency status = hard stop for TOS. For TOI, no income figure = hard stop. Bank statement without supporting invoices = proceed with reviewer warning: "This computation was produced from bank/payroll data alone. The reviewer must verify residency, dependent eligibility, and the deductibility of any business expenses."
+### Filing and the review working paper
 
-### Refusal Catalogue
+Withhold at payment and retain employee identity, salary/benefit detail, family/adjustment evidence and accounting records; report withholding to the employee and GDT. A foreign employer's Cambodian representative and the employer/employee responsibility rules in [Law 51-53](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) require separate attention. The statutory monthly 20th is a baseline. The GDT calendar actually read on 14 November 2026 shows October 2026 manual returns 20 November/online 25 November; confirm the actual period/channel notice before filing. Annual 2026 calendar-year TOI has a derived 31 March 2027 baseline, subject to actual extensions/notices. Do not invent e-filing box IDs. Salary-tax deadlines are not NSSF deadlines.
 
-- **R-KH-1** — Residency status unknown. "Residency determines whether salary is taxed on the resident progressive brackets (0%–20% with allowances) or as a non-resident flat 20% final tax. This skill cannot compute Tax on Salary without it. Please confirm domicile, principal abode, or day-count (>182 days)."
-- **R-KH-2** — Companies / corporate TOI. "This skill covers Tax on Salary and the Tax on Income of physical persons (sole proprietors/partnerships). Corporate income tax for legal persons, qualified investment projects, and minimum tax for companies are out of scope. Escalate to a Cambodian tax practitioner."
-- **R-KH-3** — Cross-border / treaty / withholding on payments abroad. "Withholding tax on payments to non-residents, double-tax-treaty relief, and permanent-establishment questions require specialised analysis. Out of scope. Escalate."
-- **R-KH-4** — Simplified / estimated-regime sole proprietor. "Micro and small simplified-regime taxpayers are taxed differently from the self-assessment/real regime modelled here. Confirm taxpayer classification before relying on these figures. [RESEARCH GAP — turnover thresholds not authoritatively captured]"
-- **R-KH-5** — Tax arrears / GDT enforcement. "Client has outstanding tax or is under GDT reassessment. Penalties run 10%–40% plus 1.5%/month interest and are severe. Do not advise. Escalate immediately."
-- **R-KH-6** — VAT requested. "This skill covers Tax on Salary and Tax on Income only. Cambodian VAT is a separate regime — out of scope here."
+Working-paper cover: tax year, month, employee, residence and contract currency with conversion rate/source. Working paper: A 1 base salary+A 2 taxable cash allowances/bonus=A 3 gross; separate advances/repayments and exemptions; B 1 mandatory statutory withholding; B 2 qualifying spouse relief+B 3 child relief; Cconfirmed resident taxable base; Dresident marginal or non-resident final salary tax; Eseparate fringe-benefit value/tax; Factual employee contribution/other deductions; Gnet cash pay=A 3 less employee deductions and salary tax, avoiding a second cash deduction for an amount already withheld. Annual schedule records turnover, tax-adjusted expenses/base, annual band tax, minimum-tax status, receipts-backed credits and balance. Preserve separate NSSF employer/employee records. Explicit reviewer checklist: residence; documented currency conversion; dependent proof; benefit scope/value and tax; NSSF registration and scheme phase; sole-proprietor taxpayer classification; and prepayment credits matched to receipts.
 
-## Section 3 -- Transaction / Payment Pattern Library
+### Payment patterns and statement reading
 
-This is the deterministic pre-classifier for payroll registers and sole-proprietor bank statements. Match by case-insensitive substring on the counterparty/description as it appears. If multiple match, use the most specific. If none match, fall through to Tier 1 rules (Section 5).
+These are preserved search prompts, not a deterministic classifier or proof of deductibility/residence/registration. Inspect actual documents, underlying invoices and currency. A refund, transfer or wallet descriptor can conceal a different transaction.
 
-Cambodian descriptions mix English, Khmer transliteration, and USD/KHR amounts. Terms below include common Khmer transliterations.
-
-### 3.1 Income / Salary Patterns (Credits)
+### 1 Income / Salary Patterns (Credits)
 
 **Income/salary patterns table**
 
-| Pattern | Regime / Line | Treatment | Notes |
-| --- | --- | --- | --- |
-| SALARY, PAYROLL, BROAS (ប្រាក់ខែ), WAGE, EMPLOYER [name] | TOS tax base | Employment income | Apply resident brackets or non-resident 20% per status |
-| ALLOWANCE (cash, taxable), OVERTIME, BONUS (cash) | TOS tax base | Add to monthly taxable salary | Cash allowances/bonuses are part of the TOS base |
-| FRINGE BENEFIT, HOUSING PROVIDED, CAR PROVIDED, SCHOOL FEES PAID | Fringe benefit | 20% employer-borne ToFB | NOT in employee TOS base; employer pays 20% of value |
-| CLIENT PAYMENT, INVOICE, PROFESSIONAL FEES, CONSULTANCY (sole proprietor) | TOI turnover | Business income | Feeds annual TOI + 1% monthly prepayment base |
-| STRIPE / PAYPAL / WISE PAYOUT (sole proprietor) | TOI turnover | Business income | Match to underlying invoices |
-| TAX REFUND, GDT REFUND | EXCLUDE | Not income | Refund of prior tax |
-| INTEREST RECEIVED, DIVIDEND | OUT OF SCOPE | Flag | Investment income — separate withholding rules; escalate |
+| Pattern | Regime / Line | Treatment | Notes | Source / condition |
+| --- | --- | --- | --- | --- |
+| SALARY, PAYROLL, BROAS (ប្រាក់ខែ), WAGE, EMPLOYER [name] | TOS tax base | Employment income | Apply resident brackets or non-resident 20% per status  | [Law arts 7,11,19,40-54](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| ALLOWANCE (cash, taxable), OVERTIME, BONUS (cash) | TOS tax base | Add to monthly taxable salary | Cash allowances/bonuses are part of the TOS base  | [Law arts 7,11,19,40-54](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| FRINGE BENEFIT, HOUSING PROVIDED, CAR PROVIDED, SCHOOL FEES PAID | Fringe benefit | Test fringe-benefit scope/valuation/exemption | Separate eligible fringe benefits from salary; Prakas575 exclusions and value rules apply  | [Law arts 7,11,19,40-54](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| CLIENT PAYMENT, INVOICE, PROFESSIONAL FEES, CONSULTANCY (sole proprietor) | TOI turnover | Business income | Feeds annual TOI + 1% monthly prepayment base  | [Law arts 7,11,19,28,38-39](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| STRIPE / PAYPAL / WISE PAYOUT (sole proprietor) | TOI turnover | Business income | Match to underlying invoices  | [Law arts 7,11,19,28,38-39](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| TAX REFUND, GDT REFUND | Tax recovery | Hold/reconcile tax nature | A profit-tax refund is not sales income; establish the actual tax/recovery | [Law arts 7,11,19](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| INTEREST RECEIVED, DIVIDEND | OUT OF SCOPE | Flag | Investment income ; separate withholding rules; escalate  | [Law arts 7,11,19,40-54](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
 
-### 3.2 Expense Patterns (Sole-Proprietor Debits) -- Deductible against TOI
+### 2 Expense Patterns (Sole-Proprietor Debits) / Potential business expense; substantiate against TOI
 
 **Expense patterns table**
 
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| OFFICE RENT, KIRI (ការជួល), SHOP RENT | Premises rent | Deductible | Business premises only |
-| ACCOUNTANT, AUDITOR, BOOKKEEP, LEGAL (business) | Professional fees | Deductible | Business-related |
-| SUPPLIES, STATIONERY, INVENTORY, STOCK PURCHASE | Cost of goods / supplies | Deductible | Trading inputs |
-| MARKETING, FACEBOOK ADS, GOOGLE ADS | Advertising | Deductible |  |
-| UTILITIES (business premises), EDC ELECTRICITY, WATER | Utilities | Deductible | Business premises; apportion if mixed |
-| BANK FEE, ABA CHARGE, ACLEDA CHARGE, WING FEE | Bank/transfer charges | Deductible | Business account |
-| SOFTWARE SUBSCRIPTION, SAAS | Software | Deductible | Recurring operating expense |
+| Pattern | Category | Treatment | Notes | Source / condition |
+| --- | --- | --- | --- | --- |
+| OFFICE RENT, KIRI (ការជួល), SHOP RENT | Premises rent | Potential business expense; substantiate | Business premises only  | [Law arts 7,11,19](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| ACCOUNTANT, AUDITOR, BOOKKEEP, LEGAL (business) | Professional fees | Potential business expense; substantiate | Business-related  | [Law arts 7,11,19](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| SUPPLIES, STATIONERY, INVENTORY, STOCK PURCHASE | Cost of goods / supplies | Potential business expense; substantiate | Trading inputs  | [Law arts 7,11,19](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| MARKETING, FACEBOOK ADS, GOOGLE ADS | Advertising | Potential business expense; substantiate |   | [Law arts 7,11,19](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| UTILITIES (business premises), EDC ELECTRICITY, WATER | Utilities | Potential business expense; substantiate | Business premises; apportion if mixed  | [Law arts 7,11,19](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| BANK FEE, ABA CHARGE, ACLEDA CHARGE, WING FEE | Bank/transfer charges | Potential business expense; substantiate | Business account  | [Law arts 7,11,19](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| SOFTWARE SUBSCRIPTION, SAAS | Software | Potential business expense; substantiate | Recurring operating expense  | [Law arts 7,11,19](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
 
-### 3.3 Statutory Withholdings / Contributions (Debits)
+### 3 Statutory Withholdings / Contributions (Debits)
 
 **Statutory withholdings table**
 
-| Pattern | Category | Treatment | Notes |
+| Pattern | Category | Treatment | Notes | Source / condition |
+| --- | --- | --- | --- | --- |
+| NSSF, SOCIAL SECURITY FUND | NSSF contribution | See NSSF boundary below | Obtain actual period-specific NSSF assessment; no current ceiling confirmed  | NSSF boundary; no current rate/base confirmed here |
+| TOS PAYMENT, SALARY TAX, GDT TOS | TOS remittance | Liability payment | Statutory 20th; check actual period/channel calendar  | [Law arts 7,11,19,40-54](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| TOI PREPAYMENT, 1% TURNOVER TAX | TOI monthly prepayment | Credit vs annual TOI | Not an expense ; creditable  | [Law arts 7,11,19,28,38-39](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| VAT PAYMENT, GDT VAT | EXCLUDE | Out of scope | Separate regime  | [Law arts 7,11,19,40-54](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+
+### 4 Excluded or unresolved deductions
+
+**Excluded or unresolved deduction patterns**
+
+| Pattern | Treatment | Notes | Source / condition |
 | --- | --- | --- | --- |
-| NSSF, SOCIAL SECURITY FUND | NSSF contribution | See Section 4 | Banded contributory wage, KHR 1,200,000 ceiling |
-| TOS PAYMENT, SALARY TAX, GDT TOS | TOS remittance | Liability payment | Remitted by 20th of following month |
-| TOI PREPAYMENT, 1% TURNOVER TAX | TOI monthly prepayment | Credit vs annual TOI | Not an expense — creditable |
-| VAT PAYMENT, GDT VAT | EXCLUDE | Out of scope | Separate regime |
+| OWNER DRAWINGS, PERSONAL WITHDRAWAL, ATM (personal) | EXCLUDE | Not a business expense  | [Law arts 7,11,19,40-54](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| FINE, PENALTY, GDT PENALTY | Hold deduction pending confirmation | Establish actual tax deductibility; current specific rule not confirmed here  | [Law arts 7,11,19](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| INCOME TAX, TOI PAYMENT (final) | Not deductible | Tax on income  | [Law arts 7,11,19](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| INTERNAL TRANSFER, OWN ACCOUNT | EXCLUDE | Own-account movement  | [Law arts 7,11,19,40-54](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
+| PERSONAL GROCERIES, RESTAURANT (personal) | Not deductible | Private living cost  | [Law arts 7,11,19](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); actual transaction controls |
 
-### 3.4 Not Deductible / Exclude
-
-**Not deductible / exclude table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| OWNER DRAWINGS, PERSONAL WITHDRAWAL, ATM (personal) | EXCLUDE | Not a business expense |
-| FINE, PENALTY, GDT PENALTY | NOT deductible | Public policy |
-| INCOME TAX, TOI PAYMENT (final) | NOT deductible | Tax on income |
-| INTERNAL TRANSFER, OWN ACCOUNT | EXCLUDE | Own-account movement |
-| PERSONAL GROCERIES, RESTAURANT (personal) | NOT deductible | Private living cost |
-
-### 3.5 Cambodian Banks / Wallets -- Statement Format Reference
+### 5 Cambodian Banks / Wallets / Statement Format Reference
 
 **Banks/wallets statement format reference table**
 
-| Provider | Common patterns | Notes |
-| --- | --- | --- |
-| ABA Bank | TRANSFER, PAYWAY, QR PAYMENT, CHARGE | App/CSV export; USD and KHR accounts common |
-| ACLEDA Bank | TRANSFER, ACLEDA UNITY, FEE | PDF/CSV; dual-currency |
-| Wing (WingMoney) | CASH IN, CASH OUT, TRANSFER | Mobile wallet; many micro-payments |
-| Canadia / Vattanac | TRANSFER, STANDING ORDER, CHARGE | PDF statements |
-| Bakong / KHQR | QR PAYMENT, BAKONG TRANSFER | National QR rail; counterparty in reference |
-
-## Section 4 -- NSSF (National Social Security Fund) Contributions
-
-**NSSF scheme rates table**  _([NSSF; PwC])_
-
-| Scheme | Total rate | Employer share | Employee share | Contributory-wage band (KHR/month) |
-| --- | --- | --- | --- | --- |
-| Occupational Risk (ORC) | 0.8% | 0.8% | 0.0% | 400,000 floor – 1,200,000 ceiling [NSSF; PwC] |
-| Health Care (HIP) | 2.6% | 2.6% (full burden since 1 Jan 2018) | 0.0% | 200,000 floor – 1,200,000 ceiling [NSSF; Aplus] |
-| Pension (Old-Age), years 1–5 | 4.0% | 2.0% | 2.0% | 400,000 floor – 1,200,000 ceiling [PwC; NSSF] |
-| **TOTAL (years 1–5)** | **7.4%** | **5.4%** | **2.0%** | ceiling KHR 1,200,000 |
-
-NSSF is not a flat percentage of actual salary. It is calculated on a banded "contributory/assigned wage" with a ceiling of KHR 1,200,000/month. Three schemes apply. [NSSF; PwC]
-
-*Column check: employer 0.8 + 2.6 + 2.0 = 5.4%; employee 0.0 + 0.0 + 2.0 = 2.0%; total 0.8 + 2.6 + 4.0 = 7.4%; and 5.4 + 2.0 = 7.4. Reconciled.*
-
-> **Healthcare presentation flag.** The NSSF statute defines health care as 1.3% employer + 1.3% worker = 2.6%, but a decree requires the employer to bear 100% since 1 Jan 2018. Present it as employer-borne 2.6%, employee 0%. [NSSF; Aplus]
-
-### 4.1 Pension escalation
-
-- **Pension escalation** — Pension rises over time: 4% (years 1–5) → 8% (years 6–10) and then ~2.75% increases each subsequent 10-year period, split evenly employer/employee. Use 4% (2%/2%) for current-period computations unless the reviewer confirms a later phase.  _([PwC])_
-
-### 4.2 Contribution ceilings (computed)
-
-- **Maximum monthly employee NSSF** — pension 2% × KHR 1,200,000 = KHR 24,000. (2% × 1,200,000 = 24,000. Reconciled.)
-- **Maximum monthly employer NSSF (years 1–5)** — 5.4% × KHR 1,200,000 = KHR 64,800. (0.054 × 1,200,000 = 64,800. Reconciled.)
-
-### 4.3 Registration threshold
-
-- **NSSF registration threshold** — 8 or more employees employees (must register with NSSF within 45 days and contribute to ORC, health care and pension. (Some practitioner sources note enforcement has effectively extended toward all employers/≥1 employee — verify current Prakas. [RESEARCH GAP — reviewer to confirm scope]))  _([PwC])_
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-- **section header** — 
-
-### 5.1 Residency Test
-
-- **Residency test** — A person is resident if ANY of: domiciled in Cambodia; principal place of abode in Cambodia; or present in Cambodia more than 182 days in any 12-month period ending in the tax year. Residents are taxed on worldwide salary; non-residents on Cambodia-sourced salary only. (Most sources say "more than 182 days" — treat as the >182-day test. [RESEARCH GAP — confirm exact wording vs 183 in Law on Taxation])  _([PwC; Acclime])_
-
-### 5.2 Resident TOS Computation (monthly)
-
-- **Resident TOS computation steps** — 1. Start with gross monthly salary (cash salary + taxable cash allowances/bonuses; exclude fringe benefits — those are taxed separately). 2. Subtract dependent allowances: KHR 150,000 per qualifying child + KHR 150,000 for a non-working spouse → monthly tax base. 3. Apply the resident band table (Section 1.1) by the marginal method. 4. Pass the result to the deterministic engine; do not hand-round intermediate bands.
-
-### 5.3 Non-Resident TOS Computation
-
-- **Non-resident TOS computation** — Flat 20% of Cambodia-sourced salary. Final tax. No allowances, no brackets.  _([PwC])_
-
-### 5.4 Tax on Fringe Benefits
-
-- **Tax on fringe benefits** — Flat 20% of the value of the benefit (housing, vehicle, school fees, low-interest loans, etc.), employer-borne, remitted monthly. Not added to the employee's TOS base.  _([PwC])_
-
-### 5.5 Annual TOI (sole proprietor / physical person)
-
-- **Annual TOI computation steps** — 1. Determine annual net business income (turnover less deductible business expenses incurred to earn it). 2. Apply the annual band table (Section 1.3) by the marginal method. 3. Credit the 1% monthly turnover prepayments paid during the year (and minimum tax, if applicable) against the annual liability. 4. Husband, wife and dependent children of a sole proprietor are treated as one physical person.  _([PwC])_
-
-### 5.6 Non-Deductible Items (TOI)
-
-**Non-deductible items table**
-
-| Item | Reason |
-| --- | --- |
-| Owner drawings | Not a business expense |
-| Fines and penalties | Public policy |
-| Income tax itself (TOI) | Tax on income |
-| Personal/private expenses | Not incurred to earn income |
-| VAT remittances | Separate regime — exclude |
-
-### 5.7 Filing & Deadlines
-
-**Filing and deadlines table**
-
-| Obligation | Deadline | Channel |
-| --- | --- | --- |
-| Monthly TOS return + payment | 20th of the following month | GDT e-filing [PwC; Acclime] |
-| Monthly TOI prepayment (1% turnover) | 20th of the following month | GDT e-filing [PwC] |
-| Annual TOI return | 31 March (within 3 months of year-end) | GDT e-Tax [PwC; Acclime] |
-| NSSF contributions | Monthly per NSSF schedule | NSSF portal [NSSF] |
-
-### 5.8 Penalties
-
-**Penalties table**
-
-| Trigger | Charge |
-| --- | --- |
-| Minor/negligent error or late payment | 10% additional tax [PwC; Acclime] |
-| Unilateral reassessment / failure to file by deadline | 25% additional tax [PwC] |
-| Repeat offense / obstruction (2nd notice within 3 years) | 40% additional tax [PwC] |
-| Interest on unpaid tax | 1.5% per month (current statutory rate) [PwC; RUMAVI] |
-
-*Some practitioner summaries cite "2% monthly interest"; the current statutory rate is 1.5%/month — treat 1.5% as authoritative. [RESEARCH GAP — reviewer to confirm against current Prakas]*
-
-## Section 6 -- Worked Examples
-
-All amounts in KHR. Computations use the marginal-band method.
-
-### Example 1 -- Resident salary, no dependents
-
-**Input line:**
-`31/03/2025 ; ABA PAYROLL ; EMPLOYER SOKHA TRADING CO ; SALARY MAR ; +6,000,000 ; KHR`
-
-**Reasoning:**
-Resident, monthly tax base = KHR 6,000,000 (no allowances). Falls in the 2,000,001–8,500,000 band (10%).
-TOS = 0 (first 1,500,000) + 5% × 500,000 (=25,000) + 10% × (6,000,000 − 2,000,000) (=400,000) = 425,000.
-Employee NSSF = 2% × min(6,000,000, 1,200,000 ceiling) = 2% × 1,200,000 = 24,000.
-Net pay = 6,000,000 − 425,000 − 24,000 = 5,551,000.
-
-**Classification:** TOS withheld 425,000; employee NSSF 24,000; net 5,551,000.
-
-### Example 2 -- Resident salary in the 0% band
-
-**Input line:**
-`31/04/2025 ; ACLEDA PAYROLL ; GARMENT FACTORY KH ; WAGE APR ; +1,200,000 ; KHR`
-
-**Reasoning:**
-Resident, tax base KHR 1,200,000 ≤ 1,500,000 → 0% band → TOS = 0.
-Employee NSSF = 2% × min(1,200,000, 1,200,000) = 24,000.
-Net pay = 1,200,000 − 0 − 24,000 = 1,176,000.
-
-**Classification:** TOS 0; employee NSSF 24,000; net 1,176,000.
-
-### Example 3 -- Resident salary, non-working spouse + 2 children
-
-**Input line:**
-`31/05/2025 ; ABA PAYROLL ; MEKONG LOGISTICS ; SALARY MAY ; +10,000,000 ; KHR`
-
-**Reasoning:**
-Dependent allowances = spouse 150,000 + 2 children × 150,000 = 450,000.
-Tax base = 10,000,000 − 450,000 = 9,550,000 → falls in the 8,500,001–12,500,000 band (15%).
-TOS = 675,000 (cumulative to 8,500,000) + 15% × (9,550,000 − 8,500,000) (=157,500) = 832,500.
-Employee NSSF = 2% × 1,200,000 (ceiling) = 24,000.
-Net pay = 10,000,000 − 832,500 − 24,000 = 9,143,500.
-
-**Classification:** TOS 832,500; employee NSSF 24,000; net 9,143,500.
-
-### Example 4 -- Non-resident salary (flat 20% final)
-
-**Input line:**
-`31/06/2025 ; CANADIA PAYROLL ; INTL CONSULTING SARL ; SALARY (NON-RESIDENT) ; +8,000,000 ; KHR`
-
-**Reasoning:**
-Non-resident → flat 20% final tax on Cambodia-sourced salary, no allowances, no brackets.
-TOS = 20% × 8,000,000 = 1,600,000 (final).
-Net pay (before any NSSF, if the employer is NSSF-registered) = 8,000,000 − 1,600,000 = 6,400,000.
-
-**Classification:** TOS 1,600,000 (final tax). No brackets, no dependent relief.
-
-### Example 5 -- Tax on Fringe Benefits (employer-borne)
-
-**Input line:**
-`30/06/2025 ; ABA TRANSFER ; LANDLORD — STAFF HOUSING ; HOUSING PROVIDED TO MANAGER ; -2,000,000 ; KHR`
-
-**Reasoning:**
-Employer provides housing valued at KHR 2,000,000/month. Tax on Fringe Benefits = 20% × 2,000,000 = 400,000, paid by the employer monthly. Not added to the employee's TOS base.
-
-**Classification:** ToFB 400,000 (employer-borne). Excluded from employee TOS computation.
-
-### Example 6 -- Annual TOI, sole proprietor
-
-**Input summary:**
-`FY2025 ; sole proprietor (real regime) ; annual net business income +60,000,000 ; KHR`
-
-**Reasoning:**
-Annual taxable income 60,000,000 → falls in the 24,000,001–102,000,000 band (10%).
-TOI = 300,000 (cumulative to 24,000,000) + 10% × (60,000,000 − 24,000,000) (=3,600,000) = 3,900,000.
-Less 1% monthly turnover prepayments already paid (creditable). If prepayments during the year totalled, say, 1,500,000, then balance due = 3,900,000 − 1,500,000 = 2,400,000.
-
-**Classification:** Annual TOI 3,900,000; less prepayment credits; balance due to GDT by 31 March.
-
-## Section 7 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 7.1 Residency determination at the margin
-
-- Day-count near the >182-day threshold, dual residence, or mid-year arrival/departure changes the whole computation.
-- **Flag for reviewer:** confirm domicile, principal abode, and day-count evidence. Do not auto-classify near the boundary.
-
-### 7.2 Fringe-benefit valuation
-
-- Housing, vehicles, low-interest loans, school fees, and meals each have specific valuation rules.
-- **Conservative default:** treat unexplained employer-paid personal benefits as taxable fringe benefits at 20%.
-- **Flag for reviewer:** confirm the assessed value of each benefit.
-
-### 7.3 USD-quoted wages → KHR
-
-- Many contracts state salary in USD; the statutory tables are in KHR.
-- **Flag for reviewer:** confirm the conversion rate applied (document the date and source; USD ≈ KHR 4,000–4,100). [RESEARCH GAP — confirm whether GDT-published rate or contractual rate applies]
-
-### 7.4 Sole-proprietor expense deductibility
-
-- Mixed personal/business expenses (home premises, vehicle, phone) must be apportioned on a reasonable, documented basis.
-- **Conservative default:** 0% deduction for mixed-use items until apportionment is evidenced.
-
-### 7.5 Taxpayer-classification (turnover regime)
-
-- Real/self-assessment vs simplified/estimated regime affects prepayment, VAT, and filing.
-- **Flag for reviewer:** confirm turnover-band classification against the GDT Prakas. [RESEARCH GAP — thresholds not authoritatively captured]
-
-### 7.6 NSSF pension phase
-
-- Pension rate escalates (4% → 8% → +~2.75% per decade). The applicable phase depends on scheme tenure.
-- **Flag for reviewer:** confirm whether years 1–5 (4%) or a later phase applies.
-
-## Section 8 -- Excel Working Paper Template
-
-```
-CAMBODIA TAX ON SALARY (TOS) -- MONTHLY WORKING PAPER (KHR)
-Tax Year: 2025   Month: ____________
-Employee: ___________________________
-Residency: Resident / Non-resident
-Currency of contract: KHR / USD   (rate used if USD: __________)
-
-A. GROSS MONTHLY SALARY (cash)
-  A1. Base salary                                ___________
-  A2. Taxable cash allowances / bonuses          ___________
-  A3. TOTAL gross (A1 + A2)                       ___________
-
-B. DEPENDENT ALLOWANCES (residents only)
-  B1. Non-working spouse (150,000)               ___________
-  B2. Children (150,000 each × ___)              ___________
-  B3. TOTAL allowances                           ___________
-
-C. MONTHLY TAX BASE (A3 - B3)                    ___________
-
-D. TOS (pass to deterministic engine)
-  D1. Resident: marginal-band table              ___________
-      OR Non-resident: 20% × A3 (final)          ___________
-
-E. NSSF (banded, ceiling 1,200,000)
-  E1. Employee pension (2% × min(A3,1,200,000))  ___________
-  E2. Employer ORC 0.8% + HIP 2.6% + Pension 2%  ___________
-
-F. NET PAY (A3 - D - E1)                          ___________
-
-----------------------------------------------------------
-ANNUAL TAX ON INCOME (TOI) -- SOLE PROPRIETOR (KHR)
-  G1. Annual turnover                            ___________
-  G2. Deductible business expenses               ___________
-  G3. Net taxable income (G1 - G2)               ___________
-  G4. Annual TOI (marginal-band table)           ___________
-  G5. Less: 1% monthly prepayments credited      ___________
-  G6. Balance due / (refund) (G4 - G5)           ___________
-
-REVIEWER FLAGS:
-  [ ] Residency status confirmed?
-  [ ] USD→KHR conversion rate documented?
-  [ ] Dependent eligibility evidenced?
-  [ ] Fringe benefits valued & taxed at 20% (employer)?
-  [ ] NSSF registration & pension phase confirmed?
-  [ ] Sole-proprietor turnover-regime classification confirmed?
-  [ ] Prepayment credits reconciled to receipts?
-```
-
-## Section 9 -- Bank Statement / Payroll Reading Guide
-
-### Cambodian Statement Formats
-
-**Cambodian statement formats table**
-
-| Provider | Format | Key Fields | Notes |
+| Provider | Common patterns | Notes | Source / condition |
 | --- | --- | --- | --- |
-| ABA Bank | App export / CSV / PDF | Date, Description, Amount, Currency, Balance | USD and KHR accounts; PayWay & KHQR references |
-| ACLEDA Bank | PDF / CSV | Date, Particulars, Debit, Credit, Balance | Dual-currency; bilingual descriptions |
-| Wing (WingMoney) | App / CSV | Date, Type (Cash In/Out), Amount | Mobile wallet; many micro-payments |
-| Canadia / Vattanac | PDF | Date, Description, Withdrawal, Deposit | Standing orders for rent/payroll |
-| Bakong / KHQR | App | Date, Counterparty, Amount, Reference | National QR rail |
+| ABA Bank | TRANSFER, PAYWAY, QR PAYMENT, CHARGE | App/CSV export; USD and KHR accounts common  | Illustrative original workflow; inspect actual bank export |
+| ACLEDA Bank | TRANSFER, ACLEDA UNITY, FEE | PDF/CSV; dual-currency  | Illustrative original workflow; inspect actual bank export |
+| Wing (WingMoney) | CASH IN, CASH OUT, TRANSFER | Mobile wallet; many micro-payments  | Illustrative original workflow; inspect actual bank export |
+| Canadia / Vattanac | TRANSFER, STANDING ORDER, CHARGE | PDF statements  | Illustrative original workflow; inspect actual bank export |
+| Bakong / KHQR | QR PAYMENT, BAKONG TRANSFER | National QR rail; counterparty in reference  | Illustrative original workflow; inspect actual bank export |
 
-### Key Khmer Terms / Transliterations
+
+### Khmer terms and bank-format clues
+
+
 
 **Key Khmer terms table**
 
@@ -471,115 +179,154 @@ REVIEWER FLAGS:
 | --- | --- | --- |
 | ប្រាក់ខែ / BROAS KHE | Monthly salary | TOS tax base |
 | ការជួល / KIRI | Rent | Business expense (premises) or personal |
-| ពន្ធ / PUNH | Tax | TOS/TOI remittance — not an expense |
+| ពន្ធ / PUNH | Tax | TOS/TOI remittance ; not an expense |
 | ផ្ទេរ / PHTOR / TRANSFER | Transfer | Check direction for income/expense |
-| សោហ៊ុយ / SOHUY / CHARGE | Fee / charge | Bank charge (deductible if business) |
-| NSSF / បេឡាជាតិ | Social security | NSSF contribution (Section 4) |
+| សោហ៊ុយ / SOHUY / CHARGE | Fee / charge | Bank charge; verify business/tax conditions |
+| NSSF / បេឡាជាតិ | Social security | NSSF contribution (NSSF boundary) |
 | ប្រាក់រង្វាន់ / BONUS | Bonus | Cash bonus → TOS base |
 
-## Section 10 -- Onboarding Fallback
 
-If the client provides payroll or bank data but cannot answer onboarding questions immediately:
 
-1. Classify all lines using the pattern library (Section 3).
-2. Mark all Tier 2 items as "PENDING — reviewer must confirm."
-3. Apply conservative defaults (Section 1.5).
-4. Generate the working paper (Section 8) with clear flags.
-5. Present the following questions:
+Actual bank exports control: ABA Bank app/CSV/PDF may show date, description, amount,currency,balance and PayWay/KHQR references; ACLEDA Bank exports may show particulars/debit/credit and bilingual currency data; Wing(WingMoney)cash-in/out and micro-payments need underlying facts; Canadia/Vattanac standing orders and Bakong/KHQRreferences need tracing. These are illustrative old format clues, not current bank-interface guarantees.
 
+| Original provider | Illustrative format | Illustrative exported fields, subject to actual file |
+|---|---|---|
+| ABA Bank | App / CSV / PDF | Date, Description, Amount, Currency, Balance |
+| ACLEDA Bank | PDF / CSV | Date, Particulars, Debit, Credit, Balance |
+| Wing (WingMoney) | App / CSV | Date, Type (Cash In/Out), Amount |
+| Canadia / Vattanac | PDF | Date, Description, Withdrawal, Deposit |
+| Bakong / KHQR | App | Date, Counterparty, Amount, Reference |
+
+## Boundary and exception table
+
+| Situation | Action |
+|---|---|
+| Residence/regime/base missing | Stop affected calculation; obtain facts, not a default residence or band. |
+| Unproved dependent | No relief claimed until proof; retain the pending claim for review. |
+| Unexplained personal benefit | Hold nature/value/exemption; do not automatically assess fringe tax. |
+| NSSF coverage/contributory wage/phase unknown | Obtain registration and actual period assessment. Do not infer registration from employee count or apply the old ceiling. |
+| Mixed/private business cost | Withhold the deduction pending documented lawful apportionment. |
+| Current small-taxpayer regime/classification | Confirm current GDT classification and detailed method; R-KH-4. |
+| USD contract | Obtain official conversion basis and actual monthly rate. |
+| Arrears/assessment/penalties | R-KH-5; no penalty calculation from the old percentage table. |
+
+### NSSF and minimum-wage boundary
+
+NSSF assessment and sector wage compliance remain part of payroll intake, but the current contribution-wage table and transition instruments have not been recovered. **No usable current ceiling/floor or automatic NSSF calculation is supplied here.** Do not charge employer-only health/risk contributions to the employee or turn a historical ceiling into a 2026 default. Confirm the actual registration, worker coverage, scheme/phase, base, employer/employee shares, contributions and reporting/payment dates in the separate payroll working paper. The old 8 employees/45 days assumption is not a current instruction. The pension schedule is a scheme-phase question, not automatically each worker's individual tenure.
+
+Sector minimum wage and additional garment benefits are separate labour-law questions; do not infer an economy-wide rate or current probation wage from a salary-tax exemption band. The old minimum-wage and additional-benefit amounts are retained below as unresolved historical claims, not active payroll inputs.
+
+## Worked cases
+
+All amounts are hypothetical KHR inputs or derived. Original employer/supplier identities and historical transaction strings are retained; the old March-June 2025 dates are scenario provenance, not newly validated current filing periods. The original 31 April/31 June are invalid calendar dates and must be corrected from source documents before posting. Current examples below apply the confirmed 2026 salary/annual rules to those amounts; any mandatory contribution 24,000 is an **assumed documented input**, never a computed current maximum.
+
+| Original scenario / identity | Inputs | Derived result under stated assumptions | Source |
+|---|---|---|---|
+| 31/03/2025; ABA PAYROLL; EMPLOYER SOKHA TRADING CO; SALARY MAR | Gross 6,000,000; resident; no dependents; documented mandatory withholding 24,000 | Base 5,976,000; TOS 422,600; cash 5,553,400 | [Law 45-47](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); [SD48 art 3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) |
+| 31/04/2025; ACLEDA PAYROLL; GARMENT FACTORY KH; WAGE APR | Gross 1,200,000; resident; assumed required withholding 24,000 | Base 1,176,000; TOS 0; cash 1,176,000; invalid date held | [Law 45-47](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); [SD48 art 3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) |
+| 31/05/2025; ABA PAYROLL; MEKONG LOGISTICS; SALARY MAY | Gross 10,000,000; qualifying spouse+2 children; documented withholding 24,000 | Relief 450,000; base 9,526,000; TOS 828,900; cash 9,147,100 | [Law 45-47](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); [SD48 art 3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35) |
+| 31/06/2025; CANADIA PAYROLL; INTL CONSULTING SARL; SALARY(NON-RESIDENT) | Cambodian-source taxable salary 8,000,000; no fringe benefit | TOS 1,600,000 final; cash 6,400,000 before separately determined contributions; invalid date held | [Law 49](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
+| 30/06/2025; ABA TRANSFER; LANDLORD / STAFF HOUSING; HOUSING PROVIDED TO MANAGER | Confirmed taxable private housing, fair-market value inclusive of taxes 2,000,000; no exemption | Fringe-benefit tax 400,000 paid and borne by employer as a scenario assumption, separate from employee TOS | [Law 48](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); [Prakas575,16-18](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/fb78dfde-8342-4e3c-80e0-84ef81919c70) |
+| FY 2025; sole proprietor(real regime) | Scenario taxable business income 60,000,000; eligible prepayments 1,500,000; assume no minimum-tax/special-credit exposure | Annual tax 3,900,000; balance 2,400,000; verify actual period/classification before filing | [SD48 art 4](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35); [Law 28,38-39](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
+
+```oa-check
+name: Resident salary after documented mandatory withholding
+inputs:
+  gross: 6000000
+  statutory_withholding: 24000
+steps:
+  base: gross - statutory_withholding
+  tax: 500000 * 0.05 + (base - 2000000) * 0.10
+  cash: gross - statutory_withholding - tax
+expected:
+  base: 5976000
+  tax: 422600
+  cash: 5553400
 ```
-ONBOARDING QUESTIONS -- CAMBODIA INCOME TAX
-1. For each employee: resident or non-resident? (domicile / principal abode / >182 days?)
-2. Is salary quoted in KHR or USD? If USD, what conversion rate should apply?
-3. For residents: non-working spouse? How many qualifying children (under 14, or under 25 if full-time student)?
-4. Any non-cash benefits provided (housing, car, school fees, loans)? Values?
-5. Is the employer NSSF-registered? How many employees? Which pension phase?
-6. Sole proprietor? If so, what is the annual turnover and taxpayer-regime classification?
-7. Were 1% monthly TOI prepayments made? Totals and receipts?
-8. Any GDT arrears, reassessments, or penalties outstanding?
+
+```oa-check
+name: Family relief plus required withholding
+inputs:
+  gross: 10000000
+  statutory_withholding: 24000
+  children: 2
+steps:
+  relief: (children + 1) * 150000
+  base: gross - statutory_withholding - relief
+  tax: 675000 + (base - 8500000) * 0.15
+  cash: gross - statutory_withholding - tax
+expected:
+  relief: 450000
+  base: 9526000
+  tax: 828900
+  cash: 9147100
 ```
 
-## Section 11 -- Reference Material
+```oa-check
+name: Physical-person annual bands and prepayment credit
+inputs:
+  taxable_income: 60000000
+  prepayments: 1500000
+steps:
+  first_taxed_band: (24000000 - 18000000) * 0.05
+  next_band: (taxable_income - 24000000) * 0.10
+  tax: first_taxed_band + next_band
+  balance: tax - prepayments
+expected:
+  first_taxed_band: 300000
+  tax: 3900000
+  balance: 2400000
+```
 
-### Key Legislation / Authority References
+```oa-check
+name: Non-resident final salary and separate employer benefit
+inputs:
+  nonresident_taxable_salary: 8000000
+  taxable_benefit_value: 2000000
+steps:
+  final_salary_tax: nonresident_taxable_salary * 0.20
+  cash_before_other_deductions: nonresident_taxable_salary - final_salary_tax
+  employer_benefit_tax: taxable_benefit_value * 0.20
+expected:
+  final_salary_tax: 1600000
+  cash_before_other_deductions: 6400000
+  employer_benefit_tax: 400000
+```
 
-**Key legislation table**
+## When to refuse or refer
 
-| Topic | Reference |
-| --- | --- |
-| TOS & TOI rate tables (2023→) | Sub-Decree No. 196 ANKr.BK of 28 Sept 2022, effective 1 Jan 2023 [PwC; DFDL; Orbitax] |
-| Residency & sourcing | Law on Taxation; PwC "Taxes on personal income" [PwC] |
-| Dependent allowances | KHR 150,000/month per child and per non-working spouse [Acclime; DFDL] |
-| Non-resident salary / fringe benefits | Flat 20% [PwC] |
-| NSSF schemes, rates, ceiling | NSSF Contribution Payment; PwC "Other taxes" [NSSF; PwC; Aplus] |
-| Filing deadlines (TOS 20th; TOI 31 March) | PwC "Corporate tax administration"; Acclime [PwC; Acclime] |
-| Penalties (10/25/40%; 1.5%/month) | PwC; Acclime; RUMAVI [PwC; Acclime; RUMAVI] |
-| Tax authority | General Department of Taxation (GDT), www.tax.gov.kh |
+- **R-KH-1:** Residence unknown or marginal; obtain domicile/abode/day-count evidence before choosing resident/non-resident treatment.
+- **R-KH-2:** Corporate/legal-person TOI, QIP or company minimum-tax special application: route corporate skill and qualified review.
+- **R-KH-3:** Cross-border treaty/non-resident payments/PE/foreign-credit application: specialist analysis; preserve all-source salary facts.
+- **R-KH-4:** Unconfirmed current small-taxpayer classification or special method: confirm GDT regime; obsolete estimated-regime wording is not current law.
+- **R-KH-5:** Arrears, reassessment or enforcement: refer with actual notices. Do not reuse the old penalty category assignments.
+- **R-KH-6:** VAT: separate skill. NSSF and labour minimum-wage questions need their own confirmed instruments/period.
 
-### Minimum Wage (context — sector-specific, not economy-wide)
+On incomplete onboarding, produce a visibly pending working paper, not a completed tax bill. Questions cover each employee's residence, currency/conversion, spouse/children/study proof, benefit type/value, NSSF registration/assessment, sole-proprietor turnover/classification, prepayment receipts and any enforcement notices. Do not allow missing documentation to become a legal assumption.
 
-Cambodia has no economy-wide statutory minimum wage; the statutory minimum applies only to the textile, garment, footwear, travel-goods and bag sectors. [ASEAN Briefing; KPMG; DFDL]
+## Sources
 
-**Minimum wage table**
+| Source | URL | Read for; actual date |
+|---|---|---|
+| Law 2023,original Khmer pages 3-24 and 77-78; corresponding English reference operative income/salary provisions and enforcement passages read separately | https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e | Residence/base/business outline, salary 41-54, base 45, nonresident 49, benefits 48, foreigncredit 50, payment/records; original salary 20-24 read 2026-11-15; original corporate 3-19 and 77-78 read 2026-11-14 |
+| SD48,11 March 2024 | https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1f25fa42-ed6e-4757-a15f-94ec109aae35 | Original Khmer pages 2-3, salary bands/relief and annual bands/abrogation;2026-11-14 |
+| Prakas575,19 September 2024 | https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/fb78dfde-8342-4e3c-80e0-84ef81919c70 | All 10 original Khmer pages visually read, salary definitions/employee tests/residence/exemptions/base/child/benefits/credits/filing; OCRassisted clauses 12-14 compared to images;2026-11-15 |
+| GDT registers | https://www.tax.gov.kh/en/sub-decree | SD48 valid/196 abrogated;2026-11-14. Prakas 575 valid at https://www.tax.gov.kh/en/prakas read 2026-11-15 |
+| GDT calendar | https://www.tax.gov.kh/en/ | October 2026 manual 20 November/online 25 November entries, not future calendar;2026-11-14 |
 
-| Year | Minimum wage | Probationary |
-| --- | --- | --- |
-| 2025 | USD 208/month (effective 1 Jan 2025) | USD 206/month [ASEAN Briefing; KPMG] |
-| 2026 | USD 210/month (effective 1 Jan 2026) | rises to 210 post-probation [Xinhua; DFDL] |
+The [English reference translation](https://embindpp.gov.in/pdf/menu/Tax-Law-Cambodia-2023.pdf) was read 2026-11-14 for the specified law passages; it is an unofficial reference hosted by the Embassy of India in Phnom Penh. Original Khmer controls and exact original-language ledger quotations are separate. Downloading Prakas 578 is not claimed as reading its 48 pages.
 
-Mandatory additional garment-sector benefits: transport/accommodation USD 7/month; attendance bonus USD 10/month; seniority bonus USD 2–11/month; OT meal allowance USD 0.5/day. [ASEAN Briefing]
+Not yet confirmed: current NSSF contributory-wage table/transition instruments and a current complete scheme computation; exact official currency conversion and rounding instruction; official quick-deduction column; full 2026 minimum-wage/additional-benefit instruments; current GDT box identifiers; cash-benefit scope thresholds and special fringe-benefit valuations; detailed Prakas 578 physical-person/small-taxpayer classification, deductions, losses and special credits; individual treaty/foreign-credit procedure and future deadline extensions. These are not usable calculations here; README retains partial coverage.
 
-### Sources
+Historical claims preserved, excluded from current instructions: old healthcare presentation of a statutory 1.3%/1.3% employer/worker split with the employer bearing all 2.6% from 1 January 2018 (unconfirmed historical claim); old NSSF 400,000 floor/1,200,000 ceiling (health old 200,000 floor),0.8%risk/2.6%health/4%first-phase pension split 2%+2%, derived employer 5.4%/employee 2%/total 7.4%, old maximum employee 24,000/employer 64,800,8 employees/45-dayregistration, first 5 years 4%then next 5 years 8%and later 2.75 percentage-pointdecade steps. Earlier official English NSSF sources were opened, but these do not establish the current wage table/transition. The actual 24,000 example is a hypothetical documented withholding input, not a revived ceiling.
 
-- PwC Tax Summaries — Cambodia, Individual: taxes on personal income; Individual: other taxes; Corporate: tax administration. https://taxsummaries.pwc.com/cambodia
-- DFDL — "Changes to Tax on Income and Tax on Salary tables"; "Increase in minimum wage for 2026." https://www.dfdl.com
-- Orbitax — "Cambodia Sets New Individual Income Tax Brackets from 2023." https://orbitax.com/news/archive.php/Cambodia-Sets-New-Individual-I-51045
-- MEF Open Data — Monthly salary tax brackets. https://data.mef.gov.kh
-- Acclime Cambodia — Personal Income Tax; Taxation introduction; Annual filing requirements. https://cambodia.acclime.com
-- NSSF — Contribution Payment. https://www.nssf.gov.kh
-- Aplus Consulting — NSSF / Cambodia labour law. https://www.aplusconsulting.com.kh
-- ASEAN Briefing — 2025 minimum wage. https://www.aseanbriefing.com
-- KPMG Cambodia — Technical update (2025 minimum wage). https://assets.kpmg.com
-- Xinhua — 2026 USD 210 minimum wage. https://english.news.cn
-- RUMAVI — Cambodia tax guide 2026. https://rumavi.com
+Historical minimum-wage claims awaiting current operative confirmation:2025 regularUSD 208/probation 206;2026 regularUSD 210 and the old unclear probation statement; garment/textile/footwear/travel-goods/bag scope; transport/accommodationUSD 7,attendanceUSD 10,seniorityUSD 2 to 11,OTmealUSD 0.5/day. They are not current payroll instructions. The old generic fines/penalties deduction prohibition needs its specific current legal basis; do not allow a deduction pending review. Old enforcement “unilateral 25%/repeat 40%” assignments were wrong: current Law 223-224/233 distinguishes negligence, serious negligence, unilateral assessment, reminder/interest triggers and bases. The old 10%/25%/40%and 1.5%-per-month table is retained only as superseded incomplete material, not a penalty calculator; neither an unsupported 2%monthly interest proposal nor its category labels is usable.
 
-*Note: tax.gov.kh returns HTTP 403 to automated fetches; the official Sub-Decree 196 PDF could not be retrieved directly. All figures above are cross-confirmed via the national authority (NSSF, MEF open data) and Big-4/established practitioner guides (PwC, DFDL, KPMG, Acclime, Orbitax).*
+Historical arithmetic retained for reconciliation: the old 6,000,000 salary example omitted the Law 45 mandatory withholding deduction and gave 425,000 tax/net 5,551,000 using 24,000 contribution; applying that documented deduction gives 422,600/net 5,553,400. The old 10,000,000 family example gave base 9,550,000/tax 832,500/net 9,143,500; with the same documented deduction it is 9,526,000/828,900/9,147,100. The old 1,200,000 example remains tax 0/net 1,176,000 on its assumed 24,000 input. The former 5,000,000 salary “NSSF ceiling test” and its 24,000/64,800 outputs are not a current assessment. All 7 old tests remain mapped in the evidence ledger; unsupported claims are not silently deleted.
 
-### Test Suite
+Prohibitions retained: confirm residence before bands; no resident allowances/bands for non-residents; no double inclusion of separately taxed benefits; no employee charge for employer-only contributions; no stale NSSF ceiling; no invented official quick-deduction figures; prepayment is a credit, not expense; no unsupported private/owner/income-tax deductions; no USD-to-KHR guess; all results pending qualified review.
 
-**Test 1 — Resident, no dependents, KHR 6,000,000.**
-Expected: TOS = 25,000 + 400,000 = 425,000; employee NSSF = 24,000; net = 5,551,000.
-
-**Test 2 — Resident, 0% band, KHR 1,200,000.**
-Expected: TOS = 0; employee NSSF = 24,000; net = 1,176,000.
-
-**Test 3 — Resident, spouse + 2 children, KHR 10,000,000.**
-Expected: allowances 450,000; base 9,550,000; TOS = 675,000 + 157,500 = 832,500; NSSF 24,000; net = 9,143,500.
-
-**Test 4 — Non-resident, KHR 8,000,000.**
-Expected: TOS = 20% × 8,000,000 = 1,600,000 (final); no allowances.
-
-**Test 5 — Fringe benefit, KHR 2,000,000 housing.**
-Expected: ToFB = 20% × 2,000,000 = 400,000 (employer-borne); excluded from employee TOS base.
-
-**Test 6 — Annual TOI, net income KHR 60,000,000.**
-Expected: TOI = 300,000 + 3,600,000 = 3,900,000; less 1% prepayment credits = balance due.
-
-**Test 7 — NSSF ceiling.**
-Expected: salary KHR 5,000,000 → contributory wage capped at 1,200,000 → employee NSSF = 24,000; employer NSSF = 5.4% × 1,200,000 = 64,800.
-
-## PROHIBITIONS
-
-- NEVER apply the resident progressive brackets without confirming residency — non-residents pay a flat 20% final tax.
-- NEVER add dependent allowances or brackets to a non-resident salary computation.
-- NEVER include fringe benefits in the employee's TOS base — they are taxed at 20%, employer-borne.
-- NEVER charge employees the health-care (HIP) contribution — the employer bears the full 2.6% since 1 Jan 2018.
-- NEVER compute NSSF on actual salary above the KHR 1,200,000 contributory-wage ceiling.
-- NEVER publish the GDT "quick lump-sum deduction" figures — they are an unconfirmed RESEARCH GAP; compute TOS by the marginal-band method.
-- NEVER treat the 1% monthly TOI turnover prepayment as a deductible expense — it is a creditable prepayment.
-- NEVER allow income tax, fines, penalties, or owner drawings as deductions against TOI.
-- NEVER apply a USD-quoted wage to the KHR statutory table without documenting the conversion rate.
-- NEVER present tax calculations as definitive — always label as estimated, pending professional review.
+Built from the law. Written by Codex. Not reviewed by an accountant.
 
 ## Disclaimer
 
@@ -587,4 +334,4 @@ This skill and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `kh-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/kh-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-15. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `kh-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/kh-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
