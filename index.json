@@ -1,19 +1,15 @@
 {
- "generated_at": "2026-11-17T09:52:47+00:00",
+ "generated_at": "2026-11-17T10:03:50+00:00",
  "counts": {
-  "guides": 2548,
-  "loadable_skill_names": 2489,
+  "guides": 2549,
+  "loadable_skill_names": 2490,
   "jurisdictions": 290,
   "accountant_reviewed": 126,
-  "held_skill_names": 8
+  "held_skill_names": 7
  },
  "publication_holds": [
   {
    "name": "cameroon-social-contributions",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "cross-border-payroll-coordination",
    "reason": "status: needs_sources"
   },
   {
@@ -10766,6 +10762,19 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "cross-border-payroll-coordination",
+   "mcp_slug": "cross-border-payroll-coordination",
+   "path": "skills/global/cross-border/cross-border-payroll-coordination.md",
+   "name": "cross-border-payroll-coordination",
+   "jurisdiction": "INTL",
+   "category": "cross-border",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "cross-border-tax-router",
