@@ -1,604 +1,199 @@
 ---
 name: mozambique-income-tax
-description: Use this skill whenever asked about Mozambique personal income tax (IRPS) for employees, self-employed individuals, and small businesses. Trigger on phrases like "how much IRPS do I pay", "Modelo 10", "income tax return Mozambique", "IRPS rates", "PAYE Mozambique", "INSS contributions", "ISPC simplified regime", "first category income", "second category income", "imposto sobre o rendimento", "rendimento colectável", "self-employed tax Mozambique", "pagamentos por conta", or any question about filing or computing IRPS for a resident or non-resident individual. Also trigger when preparing or reviewing a Modelo 10 return, computing INSS payroll deductions, applying the progressive IRPS scale, or advising on the 2026 Law 11/2025 reform. This skill covers IRPS rate brackets, income categories, personal/dependent deductions, INSS social security, ISPC, sector minimum wages, filing deadlines, penalties, and the Law 11/2025 reform. ALWAYS read this skill before touching any Mozambique income tax or payroll work.
-version: 0.1
+description: "Mozambique individual IRPS for 2026: annual scale and minimum, residence, income classification, personal/dependent and foreign-credit conditions, separate employment PAYE and ISPC, with current-form and filing holds."
+version: 0.2
 jurisdiction: MZ
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-17
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Mozambique Personal Income Tax (IRPS)
+# Mozambique individual income tax
 
-## Section 1 -- Quick Reference
+## Who this applies to
 
-**Section 1 -- Quick Reference**
+Individuals with Mozambique employment, business/professional, capital, rental or other income. Establish actual residence, income category, source, year and applicable regime before calculating anything. Use MZN/Metical and the actual calendar year, not an assumed 2025 default. Corporate IRPC is a separate job; this Guide does not calculate company tax.
 
-| Field | Value |
-| --- | --- |
-| Country | Mozambique (República de Moçambique) |
-| Tax | IRPS -- Imposto sobre o Rendimento das Pessoas Singulares (personal income tax) |
-| Currency | Metical (MZN / MT) only |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Primary legislation | Código do IRPS (CIRPS); reformed by Law No. 11/2025 of 29 December 2025 (in force 1 Jan 2026) |
-| Tax authority | Autoridade Tributária de Moçambique (AT) -- at.gov.mz |
-| Social security | Instituto Nacional de Segurança Social (INSS) -- inss.gov.mz |
-| Annual return form | Modelo 10 (declaração anual de rendimentos) |
-| Filing portal | eDeclaração -- edeclaracao.at.gov.mz |
-| Filing deadline | 31 March (employment-only) / 30 April (all other cases) of following year |
-| Validation date | Pending |
-| Skill version | 0.1 |
+Employment PAYE is separately definitive under CIRPS 65-A(6) and excluded from annual aggregation by 26(3)(a), with no employment-income deductions under 29. Use [payroll](mozambique-payroll.md)'s actual gross-monthly dependent matrix. INSS employee/employer contributions and TCP are separately addressed in [social contributions](mozambique-social-contributions.md); VAT belongs in [VAT](mozambique-vat.md).
 
-Regime note. The 2025 tax year and earlier follow the long-standing CIRPS. Law No. 11/2025 (29 Dec 2025) enters into force 1 January 2026: it does not change the rate brackets but redefines residency, abolishes simplified/exemption regimes, ends the employee filing waiver, and adds digital-service withholding. See Section 11. Source: DLA Piper Africa / SAL & Caldeira — https://www.dlapiperafrica.com/en/mozambique/insights/2026/Changes-to-the-Personal-Income-Tax-Code
+This Guide preserves the annual statutory scale and conditions, but does **not** clear a complete 2026 annual return or live Modelo 10/M10V workflow: the statutory minimum and the currently downloaded form's visible/hidden fields disagree. Do not solve that by discarding the statute or silently relabelling a gross/net-income input as post-minimum collectable income. No accountant approval is claimed.
 
-### IRPS Rate Brackets (Resident -- 2025, continuing under 2026 reform)
+## Rates, bands and thresholds
 
-**IRPS Rate Brackets (Resident -- 2025, continuing under 2026 reform)**  _(PwC Worldwide Tax Summaries — https://taxsummaries.pwc.com/mozambique/individual/taxes-on-personal-income (last reviewed 04 Mar 2026); AT IRPS rate page — https://www.at.gov.mz/por/Comercio-Internacional/Procedimento-Fiscais/Taxas-IRPS (AT page returned a TLS error to the fetcher; PwC corroborates the same schedule).)_
+### Annual aggregate scale, not the salary-withholding table
 
-| Annual taxable income (MZN) | Rate | Deductible amount (parcela a abater, MZN) | Cumulative tax at bracket top (MZN) |
-| --- | --- | --- | --- |
-| 0 -- 42,000 | 10% | 0 | 4,200 |
-| 42,000 -- 168,000 | 15% | 2,100 | 23,100 |
-| 168,000 -- 504,000 | 20% | 10,500 | 90,300 |
-| 504,000 -- 1,512,000 | 25% | 37,500 | 340,500 |
-| Over 1,512,000 | 32% | 141,540 | -- |
+The intervals below reproduce the statute's displayed whole-Metical limits. The subtraction column is the practical tax constant; it is not a personal deduction. Fractional-boundary/filing implementation is not inferred from the continuity checks. Confirm that the input is the properly established annual **rendimento colectavel** for this route, separately from employment, final-rate and autonomous income.
 
-- **IRPS calculation mechanism** — tax = (annual income × bracket rate) − deductible amount (parcela a abater) for the bracket  _(PwC Worldwide Tax Summaries — https://taxsummaries.pwc.com/mozambique/individual/taxes-on-personal-income)_
+| Annual collectable income MZN, as printed | Marginal rate | Parcela a abater MZN | Official source |
+|---|---:|---:|---|
+| Up to 42,000 | 10% | 0 | CIRPS 54, printed 2602(137): https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf |
+| 42,001 to 168,000 | 15% | 2,100 | CIRPS 54, printed 2602(137): https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf |
+| 168,001 to 504,000 | 20% | 10,500 | CIRPS 54, printed 2602(137): https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf |
+| 504,001 to 1,512,000 | 25% | 35,700 | CIRPS 54, printed 2602(137): https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf |
+| Above 1,512,000 | 32% | 141,540 | CIRPS 54, printed 2602(137): https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf |
 
-[RESEARCH GAP — reviewer to confirm] The published deductible amounts for the 25% bracket (MZN 37,500) and 32% bracket (MZN 141,540) do not produce perfectly continuous brackets (strict continuity would require 35,700 and 143,340 respectively). The published "parcela a abater" values are the figures AT applies and are used in this skill as authoritative; reviewer to verify against the official CIRPS schedule. The cumulative-tax column above is computed using the published deductible amounts.
+| Item | Rule / amount MZN | Official source |
+|---|---|---|
+| Annual minimum | Article 56:annual collectable income at/below 225,000 is not taxed; excess subject to tax; family provision applies per income holder up to that holder's income. Current form/implementation reconciliation held. | CIRPS 56: https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf |
+| Personal collection deduction |1,800 per resident taxable person, up to tax due; not a monthly PAYE deduction | CIRPS 59-60: https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf |
+| Dependents |1:600;2:900;3:1,200;4+:1,800 annually, provided the dependents are not themselves taxable persons; limited to the collection and subject to article 60 conditions | CIRPS 60: https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf |
+| Foreign-tax credit | Lesser of qualifying foreign income tax and the proportional Mozambique collection before deduction; treaty limit and source/category conditions apply | CIRPS 26(6),59,61: https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf |
+| Ordinary non-resident services/employment final-rate routes |20% on gross for the income specifically listed in 57(2), including the applicable employment/services clauses; not every non-resident receipt | CIRPS 57(1),(2),(4): https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf |
+| Artists/athletes |10% in 57(3)(d), subject to its exception for regular employed remuneration | CIRPS 57(3)-(4): https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf |
+| Capital/final-rate distinctions | Article 57 separately lists 20% categories and 10% categories such as term-deposit interest; do not aggregate every interest/dividend receipt into the annual scale | CIRPS 26(3),57: https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf |
+| New e-money/digital final-rate clauses |10% for actual 57(3)(e)-(g) cases; payer/payee/category/source and regulated collection matter | Law 11/2025,57/65(6): https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20FISCAL%2FLEI%2FBR_248_I_SERIE_SUPLEMENTO_2025.pdf |
+| New autonomous gains | Separate 54-A scale 10%/15%/20%/25%/32%, with its own treatment; do not import 54's subtraction constants, annual minimum or personal deductions without authority | Law 11/2025,54-A: https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20FISCAL%2FLEI%2FBR_248_I_SERIE_SUPLEMENTO_2025.pdf |
+| Reform commencement |1 January 2026; publication 29 December 2025 is different | Law 11/2025 art 6: https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20FISCAL%2FLEI%2FBR_248_I_SERIE_SUPLEMENTO_2025.pdf |
 
-- **Non-residents withholding rate** — 20% percent (flat withholding on Mozambique-source income (including employment))  _(PwC — https://taxsummaries.pwc.com/mozambique/individual/taxes-on-personal-income)_
+### Separate ISPC regime: do not call it abolished
 
-### INSS Social Security Contributions
+Law 11/2025 revokes CIRPS's former simplified-bookkeeping/taxable-income paths and requires second-category organised accounting. **Law 9/2025 separately retains and changes ISPC**, including optional qualifying taxation and its own activity/exclusion/accounting conditions. Do not infer an individual's valid ISPC election or its interaction with the CIRPS accounting duty from turnover alone. Confirm the actual regime and registration with the authority before using an ISPC amount.
 
-**INSS Social Security Contributions**  _(PwC — https://taxsummaries.pwc.com/mozambique/individual/other-taxes ; INSS — https://www.inss.gov.mz/duvidas/)_
+| ISPC provision, not ordinary IRPS/IVA | Enacted rule, subject to actual eligibility/classification | Official source |
+|---|---|---|
+| Scope/threshold | Annual turnover up to 4,000,000; optional, qualifying activities, exclusions and accounting condition in 2-4. New activity forecast confirmed by AT. | Law 9/2025 reprinted 2-4: https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20FISCAL%2FLEI%2FBR_248_I_SERIE_SUPLEMENTO_2025.pdf |
+| Goods/defined activities | Article 8(1)(a) specifies 3% up to 1,000,000 annual turnover;4% above 1,000,000 through 2,500,000;5% above 2,500,000 through 4,000,000. Do not invent a marginal-band engine or choose a rate without actual annual classification. | Law 9/2025 art 8: https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20FISCAL%2FLEI%2FBR_248_I_SERIE_SUPLEMENTO_2025.pdf |
+| Specified services / liberal professions |12% for specified trades/services;15% for liberal professions including consultants; higher applicable rate for mixed activities. Five-year liberal-profession stay limit with transitional terms. | Law 9/2025 art 8/9-A and transition: https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20FISCAL%2FLEI%2FBR_248_I_SERIE_SUPLEMENTO_2025.pdf |
+| Excess |20% on the part exceeding the maximum turnover limit; not an ordinary flat payroll rate | Law 9/2025 art 8(1)(d): https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20FISCAL%2FLEI%2FBR_248_I_SERIE_SUPLEMENTO_2025.pdf |
+| Quarter / invoices | Quarterly turnover base and payment/declaration; ISPC invoice must not include IVA. Article 10-A waives payment below 500 but not declaration; exact implementation/deadline held. | Law 9/2025 arts 9,10-A,11,12: https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20FISCAL%2FLEI%2FBR_248_I_SERIE_SUPLEMENTO_2025.pdf |
 
-| Party | Rate of monthly salary |
-| --- | --- |
-| Employee | 3% |
-| Employer | 4% |
-| **Total** | **7%** |
+The old 2,500,000 threshold, universal 3%, fixed 75,000 and blanket 2026 abolition/default-organised-accounting conclusion are not current instructions. The preserved VAT retailer case has quarter turnover 400,000, which by itself does not establish the annual band, activity/election or a 12,000 liability.
 
-- **INSS base** — Base: all salaries, wages, regular bonuses and other regular income; meal subsidy excluded. No contribution ceiling identified from authoritative sources (state explicitly: no ceiling found). Employer withholds the employee's 3% and remits the full 7%.  _(PwC — https://taxsummaries.pwc.com/mozambique/individual/other-taxes ; INSS — https://www.inss.gov.mz/duvidas/)_
+## The base
 
-Arithmetic check: employee 3% + employer 4% = total 7%. ✓
+### Residence, source and route before arithmetic
 
-### Conservative Defaults
+Current CIRPS 21 covers principal residence; professional activity in Mozambique unless proved secondary; centre of economic interests; and specified crew serving Mozambique-resident/managed entities. Its household provision and Mozambican nationals abroad not fully taxed there also matter. It applies independently of days/nationality. Do not decide residence under the removed>180-day shortcut or from a bank's location; obtain home/activity/economic-interest, household, foreign-tax and treaty facts.
 
-**Conservative Defaults**
+For aggregate annual income, article 26 distinguishes income categories and excludes employment, article 57 final-rate receipts, qualifying exemptions and the new autonomous route. Annual business/professional taxable income follows the CIRPC rules as adapted by CIRPS 34/31; organised accounting and actual business assets/activities matter. A receipt's description does not prove revenue, an expense deduction or an exemption.
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown residency | STOP -- residency determines whole-scale vs 20% flat; do not compute |
-| Unknown income category (1st vs 2nd) | STOP -- ask before classifying |
-| Unknown whether item is "regular income" for INSS | Treat as INSIDE the INSS base (only meal subsidy is confirmed excluded) |
-| Unknown number of dependents | 0 dependents (no dependent deduction) |
-| Unknown ISPC vs organized accounting | Organized accounting (ISPC abolished from 2026 — see Section 5) |
-| Unknown expense business-use % (2nd category) | 0% deduction |
-| Unknown INSS payment deadline | Use the earlier INSS-site date (10th of following month) — see Section 6 |
+Rental income is separately classified; amended 48 specifies documented maintenance/conservation with its limit and specified interest conditions. Interest, dividends, commissions, independent technical/scientific work, artists, digital goods/services and e-money agents need their actual clauses, not the old 'all other income uses the same scale' shortcut. New 57(3)(e) concerns e-money agent commissions; (f) and(g) have specific digital provider/payer/IRPS-recipient conditions and 65(6) refers collection to regulation. Do not charge 10% on every digital-looking bank credit or automatically use 20% for every consultant.
 
-## Section 2 -- Required Inputs and Refusal Catalogue
+Foreign tax is recorded gross under 26(6). Article 61 caps the credit by foreign tax and the attributable Mozambique collection, with treaty restrictions and conditional category-limited carryforward. Keep foreign-tax documentation and source/category calculations; a foreign withholding receipt is not an automatic full credit. Resident personal/family deductions under 59-60 cannot create a refund by themselves and do not migrate to salary PAYE, autonomous gains or a non-resident final-rate case. Where marital status changes during the year,60(2)apportions the specified personal/family deductions by the days of the relevant periods; do not assume a full-year deduction for a part-year status.
 
-### Required Inputs
+### Statutory annual minimum and form discrepancy
 
-Minimum viable -- residency status (resident / non-resident), income category (1st = employment, 2nd = business/self-employment), and either a payroll summary (employment) or a bank statement for the full tax year (self-employment), plus number of dependents.
+Article 54 prints 35,700 for the 25% band and 141,540 for 32%. The old 37,500 constant was wrong; replacing 141,540 with 143,340 would introduce another error. Formula comparisons tie at 42,000/168,000/504,000/1,512,000 at 4,200/23,100/90,300/342,300. They are continuity checks, not repeal of the minimum or an alternative PAYE algorithm.
 
-Recommended -- monthly PAYE withholding records, INSS contribution records, all invoices/receipts (2nd category), prior-year Modelo 10 or assessment.
+Article 56 expressly preserves 225,000 and the per-holder family condition. The enacted 2020 M/10V primary Gazette retained on a private mirror has a minimum-before-rate step. The current AT-listed one-page M/10V has a visible total-net-income row and collectable-income reference without a visible minimum row; its extraction contains hidden/duplicate minimum text. Its listing date 22 October 2025 is not commencement or final 2026 clearance. That form conflict does not repeal 56; the private mirror is not promoted to an official-host operative citation. Hold final annual filing calculations and box mapping until the applicable route/current implementation is reconciled.
 
-Ideal -- complete income and expenditure account with organized accounting, advance-payment (pagamentos por conta) confirmations, double-taxation relief documentation.
+Consequently an example expressly starting from a separately established **post-minimum aggregate collectable base** may illustrate 54/60 arithmetic. An input originally described as salary or pre-minimum net income cannot silently be relabelled that way. Do not compute an annual employee liability by multiplying pay by 12, subtracting INSS and personal deductions, then dividing by 12.
 
-Refusal if minimum is missing -- SOFT WARN. No income evidence at all = hard stop. Bank statement without invoices (2nd category) = proceed with reviewer warning: "This computation was produced from bank statement alone. The reviewer must verify that all deductions are supported by organized-accounting records."
+### Statements, expenses and the workpaper
 
-### Refusal Catalogue
+Match Portuguese terms case-insensitively and inspect direction/underlying evidence. Most-specific narratives win only for provisional bookkeeping classification, not final legal treatment. Preserve these original pattern groups:
 
-- **R-MZ-1 -- Residency unknown** — Residency determines whether the progressive 10%–32% scale or the flat 20% non-resident rate applies, and Law 11/2025 redefined residency from 2026. This skill cannot compute IRPS without residency status. Confirm before proceeding.
-- **R-MZ-2 -- Companies / IRPC** — This skill covers individuals (IRPS) only. Corporate income tax (IRPC) is a separate regime. Escalate to a Mozambican tax professional.
-- **R-MZ-3 -- Non-resident complex source rules** — Non-resident source-of-income and treaty questions require specialised analysis. Out of scope. Escalate to a Mozambican tax professional.
-- **R-MZ-4 -- Capital gains** — Capital gains under the new autonomous regime (Art. 54-A, from 2026) require specialised analysis. Escalate to a Mozambican tax professional.
-- **R-MZ-5 -- Arrears / enforcement** — Client has outstanding tax arrears or is subject to AT enforcement. Default interest (juros de mora) accrues immediately and statutory fines apply. Do not advise. Escalate immediately.
-- **R-MZ-6 -- VAT (IVA) requested** — This skill covers IRPS only. Mozambique VAT (IVA) is a separate skill.
-- **R-MZ-7 -- 2026 mechanics not yet regulated** — Law 11/2025 grants the government 180 days to issue implementing regulations. Some 2026 mechanics (e.g. survival of personal/dependent deductions) are pending. Flag and escalate for any 2026 computation that depends on unregulated detail.
+| Pattern group | Provisional treatment / evidence required |
+|---|---|
+| SALARIO, ORDENADO, VENCIMENTO, REMUNERACAO, regular SUBSIDIO | Employment candidate; obtain gross/pay slips and use payroll. No automatic meal exclusion. |
+| HONORARIOS, PRESTACAO DE SERVICOS, FACTURA, RECIBO, COMISSAO/COMISSOES | Business/service/commission candidate; identify employment, ordinary services, e-money or digital route and actual withholding/election |
+| RENDA RECEBIDA, ARRENDAMENTO; JUROS RECEBIDOS/JUROS; DIVIDENDOS | Rental/capital candidate; apply actual category/final-rate/aggregation rules, not one universal annual scale |
+| REEMBOLSO IMPOSTO, RESTITUICAO AT | Reconcile prior-year tax refund/liability; not automatically new business/salary income |
+| RENDA ESCRITORIO, ARRENDAMENTO COMERCIAL; CONTABILISTA, CONTABILIDADE, TOC | Rent/accountancy business-cost candidate with activity, invoice and current tax-law support |
+| ADVOGADO, JURIDICO, NOTARIO; MATERIAL ESCRITORIO/PAPELARIA; PUBLICIDADE/MARKETING/GOOGLE ADS/META | Legal, supplies and advertising candidates, not narration-only deductions |
+| COMISSAO BANCARIA, ENCARGOS, MANUTENCAO CONTA; FORMACAO/CURSO/SEMINARIO; SOFTWARE/ASSINATURA/MICROSOFT/GOOGLE WORKSPACE | Business bank, training and subscription candidates; establish actual business connection and applicable deduction rules |
+| EDM/ELECTRICIDADE, AGUA/FIPAG, TMCEL/VODACOM/MOVITEL | Utilities/telecoms: documented business/private split; no assumed home-office percentage |
+| COMBUSTIVEL/GASOLINA/GASOLEO/GALP/PUMA/TOTAL | Fuel/running costs: actual business-use and vehicle records; no automatic deduction or invented percentage |
+| RESTAURANTE/ALMOCO/JANTAR/ENTRETENIMENTO; SUPERMERCADO/SHOPRITE/GROCERIES/PESSOAL | Identify private/entertainment costs and current restrictions before any deduction; private living costs are not business drawings disguised as expense |
+| MULTA/COIMA/PENALIDADE; IRPS/PAGAMENTO IMPOSTO/AT PAGAMENTO; LEVANTAMENTO/ATM/RETIRADA | Separate fines, income-tax settlement and private drawings from the business-cost subtotal; do not assume a deduction from a debit |
+| INSS/SEGURANCA SOCIAL; PAGAMENTO POR CONTA/PPC | Separate contribution regimes, payroll liabilities and supported advance-tax credits, not a duplicated expense/credit |
+| TRANSFERENCIA INTERNA/CONTA PROPRIA; EMPRESTIMO/REEMBOLSO EMPRESTIMO | Prove own-account transfer or loan principal, reconcile both sides and interest separately |
 
-## Section 3 -- Transaction Pattern Library
+Original banks remain illustrative: BCI/Banco Comercial e de Investimentos (PDF/CSV; Data/Descricao/Debito/Credito/Saldo), Millennium BIM (Data Valor/Descricao/Montante/Saldo; TRF/DD/PAGAMENTO/COMPRA POS), Standard Bank Mocambique (Date/Description/Amount/Balance), Absa (Date/Narrative/Amount/Balance) and Banco Unico/Nedbank (Data/Movimento/Valor/Saldo). TRANSFERENCIA/TRF, DEBITO DIRECTO/DD, LEVANTAMENTO, ENCARGOS, JUROS and COMPRA POS are clues, not guarantees of format, tax character or deductibility.
 
-Deterministic pre-classifier. Match by case-insensitive substring on the counterparty/description as it appears on the bank statement (Portuguese terms common in MZ). Most specific match wins. If none match, fall through to Tier 1 rules (Section 5). Terms are in Portuguese as they appear in Mozambican statements.
+The workpaper retains year, Client/NUIT, residence/source/category and dependent evidence, payroll and INSS records; separate employment, business, rental, investment and autonomous-income schedules; candidate expenses by rent, accountancy/legal, supplies/software, advertising, bank fees, training, utilities, vehicle and telecoms; documented business/private splits; actual aggregate collectable base/minimum reconciliation;54 scale/constant,59-61 collection deductions, withholding/advances, payment/refund reconciliation and reviewer flags. Keep employment outside the old A5-all-income minus B10-all-expenses shortcut. Do not use an unsupported Box 2 or M/10V line mapping.
 
-### 3.1 Income Patterns (Credits)
+With only statements, classify provisionally, mark every uncertain cost/transfer/regime and obtain invoices, organised-accounting records, prior assessment, payroll, PAYE and advance-payment confirmations. No income evidence is a hard stop. A bank-only cost list is not a supported filing calculation. Missing business-use evidence may be shown as a zero-deduction comparison with an explicit flag; it is not a legal finding that all costs are personal. No residence/category means no exact tax. Never default a valid or invalid ISPC election from missing data.
 
-**3.1 Income Patterns (Credits)**
+## Deadlines and filing
 
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| SALÁRIO, ORDENADO, VENCIMENTO, REMUNERAÇÃO | 1st category (employment) | PAYE income | Subject to monthly PAYE 0%–32% |
-| SUBSÍDIO (regular) | 1st category | Employment income | Regular subsidies in IRPS base; meal subsidy excluded from INSS base |
-| HONORÁRIOS, PRESTAÇÃO DE SERVIÇOS, FACTURA, RECIBO | 2nd category (business/professional) | Self-employment income | Organized accounting required |
-| COMISSÃO, COMISSÕES | 2nd category | Commission income | E-money agent commissions: 10% final WHT from 2026 (Section 11) |
-| RENDA RECEBIDA, ARRENDAMENTO | Property/rental income | Same scale | Rental income on the IRPS scale |
-| JUROS RECEBIDOS, JUROS | Investment income | Same scale | Interest income |
-| DIVIDENDOS | Investment income | Same scale | Dividend income |
-| REEMBOLSO IMPOSTO, RESTITUIÇÃO AT | EXCLUDE | Not income | Tax refund from prior year |
+Law 11/2025 repeals the stated old employee declaration waiver, but definitive employment withholding and non-aggregation remain distinct. Do not carry the old employment-only 31 March deadline into a universal 2026 instruction. The official OCAM2018 copy visibly has the prefatory annual-declaration rule 1 January-30 April except employment/final-rate income, while missing even pages of its republication; the complete retained Gazette mirror supplies historical context but is not an official-host current consolidation. Reconcile current employee filing, regulator amendments, form and applicable dates before filing.
 
-### 3.2 Expense Patterns (Debits) -- 2nd Category, Fully Deductible
+Original monthly PAYE20th-next-month, annual general 30 April, final 31 May/30 June and three advance dates 20 June/20 September/20 November remain calendar topics held for current operative confirmation and correct scope. CIRPS 66 does establish three equal second-category advances, total 80% of its prior-year/category-share computation, rounded upward under its terms; dates and exact current implementation must not be inferred from a secondary summary or incomplete page. Organised-accounting annual information and employee certificate/authority information are distinct obligations, not simply the Lista Nominal.
 
-**3.2 Expense Patterns (Debits) -- 2nd Category, Fully Deductible**
+Modelo 10/M10V, eDeclaracao, e-fatura and Portal do Contribuinte were historical labels/URLs. Obtain the current official entry point, version and receipt. No live account, portal box or final current annual form was tested. ISPC has separate quarterly declarations/payment and invoicing under Law 9/2025; normal IVA is a different monthly regime.
 
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| RENDA ESCRITÓRIO, ARRENDAMENTO COMERCIAL | Office rent | Deductible | Dedicated business premises |
-| CONTABILISTA, CONTABILIDADE, TOC | Accountancy fees | Deductible | Organized accounting is mandatory (2nd category) |
-| ADVOGADO, JURÍDICO, NOTÁRIO (business) | Legal fees | Deductible | Must be business-related |
-| MATERIAL ESCRITÓRIO, PAPELARIA | Office supplies | Deductible |  |
-| PUBLICIDADE, MARKETING, GOOGLE ADS, META | Marketing/advertising | Deductible |  |
-| COMISSÃO BANCÁRIA, ENCARGOS, MANUTENÇÃO CONTA | Bank charges | Deductible | Business account only |
-| FORMAÇÃO, CURSO, SEMINÁRIO | Training | Deductible | Must relate to current activity |
-| SOFTWARE, ASSINATURA, MICROSOFT, GOOGLE WORKSPACE | Software subscription | Deductible | Recurring operating expense |
+## Penalties and interest
 
-### 3.3 Expense Patterns (Debits) -- Mixed Use (Apportion, Tier 2)
+CIRPS 69 addresses arrears interest from the unpaid liability's due date; taxpayer-caused under-assessment may invoke compensatory interest. The precise current tax juros-de-mora rate and RGIT fixed fines remain unverified; do not convert the old USD estimate or apply MAIBOR plus 2% to every tax or INSS debt. INSS has the distinct RSSO 98 monthly-or-fraction 2% rule and offence-specific fines in social contributions. Escalate disputed enforcement or a request for a certified exact bill with official account/notices and dates; do not infer it from a bank debit.
 
-**3.3 Expense Patterns (Debits) -- Mixed Use (Apportion, Tier 2)**
+## Cross-border points
 
-| Pattern | Category | Tier | Notes |
-| --- | --- | --- | --- |
-| EDM, ELECTRICIDADE DE MOÇAMBIQUE | Electricity | T2 if home office | 100% if dedicated office; proportional if home |
-| ÁGUA, FIPAG | Water | T2 if home office | Apportion |
-| TMCEL, VODACOM, MOVITEL | Phone/telecoms | T2 | Business-use portion only; default 0% if mixed |
-| COMBUSTÍVEL, GASOLINA, GASÓLEO, GALP, PUMA, TOTAL | Vehicle fuel | T2 | Business % only; requires mileage log |
+Residence, Mozambique source/category, actual payer/payee, treaty and foreign tax must be established. Resident worldwide scope does not mean every receipt uses the annual scale; non-resident source does not mean every receipt is 20%. New digital/e-money and autonomous gains need their own clauses and collection rules. Non-resident complex source/treaty, capital-gain computations, corporate IRPC and unresolved 2026 regulation/form dependencies remain specialist/referral boundaries. INSS foreign coverage is a separate authenticated-proof question.
 
-### 3.4 Expense Patterns (Debits) -- NOT Deductible
+## Two worked examples that recompute
 
-**3.4 Expense Patterns (Debits) -- NOT Deductible**
+### Correct the old annual-table discontinuity claim
 
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| RESTAURANTE, ALMOÇO, JANTAR, ENTRETENIMENTO | Entertainment | NOT deductible | Personal/entertainment |
-| SUPERMERCADO, SHOPRITE, GROCERIES, PESSOAL | Personal expenses | NOT deductible | Private living costs |
-| MULTA, COIMA, PENALIDADE | Fines/penalties | NOT deductible | Public policy |
-| IRPS, PAGAMENTO IMPOSTO, AT PAGAMENTO | Tax payments | NOT deductible | Income tax cannot reduce income |
-| LEVANTAMENTO, ATM (personal), RETIRADA | Drawings | NOT deductible | Not an expense |
+At the original 504,000 test boundary, compare the adjacent 54 formulas:20% x 504,000 -10,500 =90,300 and 25% x 504,000 -35,700 =90,300. At 1,512,000 both adjacent formulas give 342,300. This is a mathematical check of the printed constants, not a completed annual return, employment assessment or determination of the minimum's application to a particular input.
 
-### 3.5 Statutory Items (Special Boxes, Not Box 2)
-
-**3.5 Statutory Items (Special Boxes, Not Box 2)**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| INSS, SEGURANÇA SOCIAL | INSS contribution | Employer remits 7% (3% employee + 4% employer) |
-| PAGAMENTO POR CONTA, PPC | Advance payment | Credit against final IRPS, not an expense |
-| TRANSFERÊNCIA INTERNA, CONTA PRÓPRIA | EXCLUDE | Own-account transfer |
-| EMPRÉSTIMO, REEMBOLSO EMPRÉSTIMO | EXCLUDE | Loan principal movement |
-
-### 3.6 Mozambican Banks -- Statement Format Reference
-
-**3.6 Mozambican Banks -- Statement Format Reference**
-
-| Bank | Common Patterns | Notes |
-| --- | --- | --- |
-| BCI (Banco Comercial e de Investimentos) | TRANSFERÊNCIA, DÉBITO DIRECTO, LEVANTAMENTO | PDF/CSV; date DD/MM/YYYY |
-| Millennium BIM | TRF, DD, PAGAMENTO, COMPRA POS | PDF/CSV; merchant in description |
-| Standard Bank Moçambique | TRANSFER, DEBIT ORDER, POS | PDF; English/Portuguese mix |
-| Absa Bank Moçambique | TRANSFER, DEBIT ORDER, FEE | PDF/CSV |
-| Banco Único / Nedbank | TRANSFERÊNCIA, ENCARGOS | PDF |
-
-## Section 4 -- Worked Examples
-
-All amounts in MZN. IRPS computed as: annual tax = annual income × bracket rate − parcela a abater, then subtract personal/dependent collection deductions (Section 2/Section 5). Figures recomputed end-to-end.
-
-### Example 1 -- Resident employee, mid-range salary
-
-Input line:
-`25/03/2025 ; BCI TRANSFERÊNCIA ; EMPRESA XYZ LDA ; SALÁRIO MARÇO ; +50,000.00 ; MZN`
-
-Reasoning:
-Monthly gross salary MZN 50,000 → annualised MZN 600,000 (1st category). Falls in the 504,000–1,512,000 (25%) bracket.
-Gross IRPS = 600,000 × 25% − 37,500 = 150,000 − 37,500 = 112,500.
-Less personal deduction (single/married taxpayer) MZN 1,800 → 112,500 − 1,800 = 110,700 annual IRPS.
-INSS employee contribution = 3% × 50,000 = MZN 1,500/month.
-
-Classification: 1st category. Annual gross IRPS MZN 112,500; after MZN 1,800 personal deduction, MZN 110,700. INSS employee MZN 1,500/month. (Personal deduction per PwC — https://taxsummaries.pwc.com/mozambique/individual/deductions.)
-
-### Example 2 -- Resident employee, lower salary, two dependents
-
-Input line:
-`25/03/2025 ; MILLENNIUM BIM ; ORGANIZAÇÃO ABC ; ORDENADO ; +14,000.00 ; MZN`
-
-Reasoning:
-Gross salary MZN 14,000/month → annual MZN 168,000 (1st category). At the top of the 42,000–168,000 (15%) bracket.
-Gross IRPS = 168,000 × 15% − 2,100 = 25,200 − 2,100 = 23,100.
-Less personal deduction MZN 1,800; less 2-dependent deduction MZN 900 → 23,100 − 1,800 − 900 = 20,400 annual IRPS.
-INSS employee = 3% × 14,000 = MZN 420/month.
-
-Classification: 1st category. Annual IRPS MZN 20,400 after deductions. INSS employee MZN 420/month.
-
-### Example 3 -- Non-resident consultant
-
-Input line:
-`10/04/2025 ; STANDARD BANK ; CLIENTE INTERNACIONAL ; HONORÁRIOS ; +200,000.00 ; MZN`
-
-Reasoning:
-Payment to a non-resident for Mozambique-source services. Non-residents are taxed at a flat 20% withholding on MZ-source income (PwC). The progressive scale and personal deductions do NOT apply.
-IRPS withheld = 200,000 × 20% = 40,000.
-
-Classification: Non-resident, flat 20%. IRPS MZN 40,000. No personal deductions.
-
-### Example 4 -- Self-employed (2nd category), deductible expense
-
-Input line:
-`05/05/2025 ; BCI DÉBITO ; CONTABILISTA LDA ; HONORÁRIOS CONTABILIDADE ; -8,000.00 ; MZN`
-
-Reasoning:
-Accountancy fee for a 2nd-category (business/professional) taxpayer with organized accounting (mandatory). Fully deductible against business income.
-
-Classification: 2nd category deductible expense MZN 8,000.
-
-### Example 5 -- INSS contribution remittance
-
-Input line:
-`08/04/2025 ; MILLENNIUM BIM ; INSS ; CONTRIBUIÇÃO MARÇO ; -3,500.00 ; MZN`
-
-Reasoning:
-For a MZN 50,000 monthly payroll: total INSS = 7% × 50,000 = MZN 3,500 (employee 3% = 1,500 + employer 4% = 2,000). Employer remits the full 7%. Per the INSS site the remittance window runs from the 20th of the current month to the 10th of the following month; PwC states the 15th — flag the discrepancy (Section 6).
-
-Classification: INSS remittance MZN 3,500 (1,500 employee + 2,000 employer). Statutory, not a Box-2 business expense.
-
-### Example 6 -- Internal transfer (exclude)
-
-Input line:
-`15/05/2025 ; BCI TRANSFERÊNCIA ; CONTA PRÓPRIA - POUPANÇA ; ; -20,000.00 ; MZN`
-
-Reasoning:
-Transfer between the client's own accounts. Neither income nor expense. Exclude entirely.
-
-Classification: EXCLUDE.
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-### 5.1 Residency Determines the Regime
-
-- **Residency determines the regime** — Resident: progressive 10%–32% scale on worldwide income; personal/dependent deductions apply. Non-resident: flat 20% withholding on Mozambique-source income; no progressive scale, no personal deductions. From 2026 (Law 11/2025) residency no longer hinges on the >180-day test — see Section 11.  _(PwC — https://taxsummaries.pwc.com/mozambique/individual/taxes-on-personal-income)_
-
-### 5.2 The Progressive Scale (resident)
-
-- **Progressive scale computation** — Annual tax = annual taxable income × bracket rate − parcela a abater (Section 1 table). For monthly PAYE, annualise the salary, compute annual tax, then divide as withholding (employer remits by the 20th of the following month — Section 7).  _(PwC; AT IRPS process page — https://www.at.gov.mz/por/Processos-Fiscais/Imposto-sobre-o-Rendimento-de-Pessoas-Singulares-IRPS)_
-
-### 5.3 Income Categories
-
-**5.3 Income Categories**  _(PwC — https://taxsummaries.pwc.com/mozambique/individual/taxes-on-personal-income)_
-
-| Category | Scope | Notes |
-| --- | --- | --- |
-| 1st (Primeira) | Dependent/employment income | Monthly PAYE 0%–32% |
-| 2nd (Segunda) | Business and professional/self-employed income | Organized accounting mandatory (Law 11/2025) |
-| Other | Capital/investment, rental, commissions, independent work | Same 10%–32% scale |
-
-### 5.4 Personal / Dependent Collection Deductions
-
-**5.4 Personal / Dependent Collection Deductions**  _(PwC — https://taxsummaries.pwc.com/mozambique/individual/deductions)_
-
-| Item | Annual deduction (MZN) |
-| --- | --- |
-| Each taxpayer (married or single) | 1,800 |
-| 1 dependent | 600 |
-| 2 dependents | 900 |
-| 3 dependents | 1,200 |
-| 4+ dependents | 1,800 |
-
-- **Double-taxation relief credit** — Double-taxation relief credit is also available.  _(PwC — https://taxsummaries.pwc.com/mozambique/individual/deductions)_
-
-[RESEARCH GAP — reviewer to confirm] These are legacy values and may be revised by the pending Law 11/2025 regulations; not yet confirmed for 2026.
-
-### 5.5 The Wholly-and-Exclusively Test (2nd category)
-
-- **Wholly-and-exclusively test** — A business expense is deductible only if incurred for the business activity, supported by organized accounting. Mixed-use expenses must be apportioned reasonably and documented.
-
-### 5.6 Non-Deductible Items
-
-**5.6 Non-Deductible Items**
-
-| Item | Reason |
-| --- | --- |
-| Entertainment / personal meals | Private |
-| Personal living expenses | Not business-related |
-| Fines and penalties | Public policy |
-| IRPS itself | Tax on income |
-| Drawings / personal withdrawals | Not an expense |
-
-### 5.7 INSS (Social Security)
-
-- **INSS rules** — Employee 3% + employer 4% = 7% of monthly salary (Section 1). Base excludes the meal subsidy. No ceiling identified. Employer withholds the 3% employee share and remits the full 7%. Worker registration: within 30 days of the start of the employment relationship. Foreign employees may apply for exemption from registration if contributing to a comparable scheme in their home country.  _(PwC — https://taxsummaries.pwc.com/mozambique/individual/other-taxes ; INSS — https://www.inss.gov.mz/duvidas/)_
-
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Home Office Apportionment (2nd category)
-
-- **Home office apportionment** — Apportion electricity (EDM), water (FIPAG), internet by business-use proportion of the home. Must be a genuinely dedicated workspace. Conservative default: 0% until reviewer confirms arrangement.
-
-### 6.2 Vehicle Business Use (2nd category)
-
-- **Vehicle business use** — Only the business-use percentage of fuel and running costs is deductible; mileage log required. Conservative default: 0% until log provided.
-
-### 6.3 Phone / Internet Mixed Use
-
-- **Phone/internet mixed use** — Business portion only (TMCEL / Vodacom / Movitel). Conservative default: 0% until business percentage confirmed.
-
-### 6.4 INSS Payment Deadline Conflict
-
-[RESEARCH GAP — reviewer to confirm] The INSS official site states the remittance window runs from the 20th of the current month to the 10th of the following month; PwC states contributions are due by the 15th of the following month. The INSS site is the primary authority — default to the 10th and flag for the reviewer to resolve against INSS legislation. Sources: INSS — https://www.inss.gov.mz/duvidas/ ; PwC — https://taxsummaries.pwc.com/mozambique/individual/other-taxes
-
-### 6.5 ISPC vs Organized Accounting (2026 transition)
-
-- **ISPC vs organized accounting** — ISPC (simplified) and exemption regimes are abolished for IRPS from 2026 (Law 11/2025). Affected taxpayers move to organized accounting. Flag for reviewer: confirm the taxpayer's current regime status against AT before applying ISPC for any 2026 period.
-
-### 6.6 Residency Reclassification (2026)
-
-- **Residency reclassification** — Law 11/2025 may make foreign workers resident regardless of days present (Section 11). Flag for reviewer: confirm residency under the new test for any 2026 computation.
-
-### 6.7 Survival of Personal/Dependent Deductions (2026)
-
-Whether the MZN 1,800 personal deduction and dependent deductions survive Law 11/2025 is not confirmed. Flag for reviewer before relying on them for 2026.
-
-## Section 7 -- Excel Working Paper Template
-
-```
-MOZAMBIQUE IRPS -- WORKING PAPER (MZN)
-Tax Year: 2025
-Client: ___________________________
-Residency: Resident / Non-resident
-Income category: 1st (employment) / 2nd (business) / Other
-Number of dependents: ____
-
-A. INCOME
-  A1. Employment income (1st category, annual)   ___________
-  A2. Business/professional income (2nd cat.)     ___________
-  A3. Rental income                                ___________
-  A4. Investment income (interest/dividends)       ___________
-  A5. TOTAL annual income                          ___________
-
-B. ALLOWABLE EXPENSES (2nd category only)
-  B1. Office rent                                  ___________
-  B2. Accountancy / legal fees                     ___________
-  B3. Office supplies / software                    ___________
-  B4. Marketing / advertising                       ___________
-  B5. Bank charges                                  ___________
-  B6. Training                                      ___________
-  B7. Utilities (home office %)                     ___________
-  B8. Vehicle (business %)                          ___________
-  B9. Telecoms (business %)                         ___________
-  B10. TOTAL allowable expenses                     ___________
-
-C. TAXABLE INCOME (A5 - B10)                       ___________
-
-D. IRPS COMPUTATION (pass to deterministic engine)
-  Resident: tax = (C × bracket rate) − parcela a abater
-  Non-resident: tax = C × 20%
-  D1. Gross IRPS                                    ___________
-
-E. COLLECTION DEDUCTIONS (resident only)
-  E1. Personal deduction (MZN 1,800)               ___________
-  E2. Dependent deduction (per table)              ___________
-  E3. Double-taxation relief credit                ___________
-  E4. TOTAL collection deductions                  ___________
-
-F. IRPS PAYABLE (D1 - E4, not below 0)            ___________
-  F1. Less: PAYE withheld / pagamentos por conta   ___________
-  F2. IRPS due / refund                            ___________
-
-G. INSS (employment)
-  G1. Employee 3% of monthly salary                ___________
-  G2. Employer 4% of monthly salary                ___________
-  G3. Total 7% remitted by employer                ___________
-
-REVIEWER FLAGS:
-  [ ] Residency confirmed?
-  [ ] Income category confirmed?
-  [ ] Dependent count confirmed?
-  [ ] Home office / vehicle / telecoms % confirmed?
-  [ ] INSS payment deadline resolved (10th vs 15th)?
-  [ ] ISPC/exemption regime status confirmed for 2026?
-  [ ] Personal/dependent deductions confirmed for the tax year?
-  [ ] Entertainment / personal items excluded?
-  [ ] Meal subsidy excluded from INSS base?
+```oa-check
+name: Statutory annual constants meet at original boundaries
+inputs:
+  boundary_1: 504000
+  boundary_2: 1512000
+steps:
+  lower_1: boundary_1 * 0.20 - 10500
+  upper_1: boundary_1 * 0.25 - 35700
+  lower_2: boundary_2 * 0.25 - 35700
+  upper_2: boundary_2 * 0.32 - 141540
+expected:
+  lower_1: 90300
+  upper_1: 90300
+  lower_2: 342300
+  upper_2: 342300
 ```
 
-## Section 8 -- Bank Statement Reading Guide
+### Original non-resident consultant, with route established
 
-### Mozambican Bank Statement Formats
+Original input: `10/04/2025 ; STANDARD BANK ; CLIENTE INTERNACIONAL ; HONORÁRIOS ; +200,000.00 ; MZN`. If this is the actual ordinary Mozambique-source non-resident service category under 57(2)(g), with no treaty/digital/special exception, withholding 20% of 200,000 is 40,000, leaving 160,000 after that withholding. The narrative alone is insufficient and no resident personal deduction is applied.
 
-**Mozambican Bank Statement Formats**
-
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| BCI | PDF, CSV | Data, Descrição, Débito, Crédito, Saldo | Most common; Portuguese descriptions |
-| Millennium BIM | PDF, CSV | Data Valor, Descrição, Montante, Saldo | POS shows merchant |
-| Standard Bank Moçambique | PDF | Date, Description, Amount, Balance | English/Portuguese mix |
-| Absa Bank Moçambique | PDF, CSV | Date, Narrative, Amount, Balance |  |
-| Banco Único / Nedbank | PDF | Data, Movimento, Valor, Saldo |  |
-
-### Key Mozambican / Portuguese Banking Terms
-
-**Key Mozambican / Portuguese Banking Terms**
-
-| Term | English | Classification Hint |
-| --- | --- | --- |
-| TRANSFERÊNCIA / TRF | Transfer | Check direction for income/expense |
-| DÉBITO DIRECTO / DD | Direct debit | Regular expense (utility, subscription) |
-| SALÁRIO / ORDENADO / VENCIMENTO | Salary | 1st category employment income |
-| HONORÁRIOS | Professional fees | 2nd category income |
-| LEVANTAMENTO | Cash withdrawal | Ask what cash was spent on |
-| ENCARGOS / COMISSÃO BANCÁRIA | Bank charges | Deductible (2nd category) |
-| JUROS | Interest | Interest income or bank charge |
-| COMPRA POS | Card purchase | Expense -- check merchant |
-| INSS / SEGURANÇA SOCIAL | Social security | Statutory contribution |
-| SUBSÍDIO REFEIÇÃO | Meal subsidy | Excluded from INSS base |
-
-## Section 9 -- Onboarding Fallback
-
-If the client provides a bank statement but cannot answer onboarding questions immediately:
-
-1. Classify all transactions using the pattern library (Section 3).
-2. Mark all Tier 2 items as "PENDING -- reviewer must confirm".
-3. Apply conservative defaults (Section 1).
-4. Generate the working paper (Section 7) with clear flags.
-5. Present the following questions:
-
-```
-ONBOARDING QUESTIONS -- MOZAMBIQUE IRPS
-1. Residency: resident or non-resident in Mozambique?
-2. Income category: employment (1st), business/self-employed (2nd), or other?
-3. Number of dependents?
-4. For self-employed: do you keep organized accounting? Are you (or were you) under ISPC?
-5. Home office: dedicated space? If yes, what % of the home?
-6. Vehicle: used for business? What % is business use? Mileage log?
-7. Phone/internet: what % is business use?
-8. INSS: are you registered? Are contributions up to date?
-9. Any foreign income / double-taxation relief to claim?
-10. Any advance payments (pagamentos por conta) or PAYE already withheld?
+```oa-check
+name: Original 200000 consultant conditional ordinary final-rate route
+inputs:
+  gross: 200000
+  established_rate: 0.20
+steps:
+  withheld: gross * established_rate
+  after_withholding: gross - withheld
+expected:
+  withheld: 40000
+  after_withholding: 160000
 ```
 
-## Section 10 -- Reference Material
+### Remaining original cases, workpaper tests and corrections
 
-### Key References
+- `25/03/2025 ; BCI TRANSFERÊNCIA ; EMPRESA XYZ LDA ; SALÁRIO MARÇO ; +50,000.00 ; MZN`: retain the original salary facts; do not treat a bank credit as proved gross. If gross monthly taxable pay really is 50,000 with zero dependents, payroll's matrix gives 1,775 +(50,000 -32,750) x 20% =5,225. On a separately established equal INSS base, employee 1,500/employer 2,000/combined 3,500; cash net 43,275. The old annual 600,000 / gross 112,500 / after-personal 110,700 employment computation is superseded, not an alternative liability.
+- `25/03/2025 ; MILLENNIUM BIM ; ORGANIZAÇÃO ABC ; ORDENADO ; +14,000.00 ; MZN`, original two dependents: if 14,000 is established gross, monthly PAYE zero and employee INSS420. The old annual 168,000 / gross 23,100 / after 1,800+900 deduction 20,400 employment computation is rejected. It is not permissible to use annual personal/dependent deductions instead of the monthly column.
+- `05/05/2025 ; BCI DÉBITO ; CONTABILISTA LDA ; HONORÁRIOS CONTABILIDADE ; -8,000.00 ; MZN`: retained accountancy-cost candidate for an actual business/professional job, not an unconditional 8,000 deduction. Obtain invoice, business link, regime and applicable CIRPC/CIRPS restrictions.
+- `08/04/2025 ; MILLENNIUM BIM ; INSS ; CONTRIBUIÇÃO MARÇO ; -3,500.00 ; MZN`: matches 7% of an assumed 50,000 ordinary base, split 1,500 employee/2,000 employer, but needs receipt and period/base proof. INSS's own rule resolves the old 10th-versus 15th conflict; payroll tax has separate timing. Do not duplicate employer expense and liability settlement.
+- `15/05/2025 ; BCI TRANSFERÊNCIA ; CONTA PRÓPRIA - POUPANÇA ; ; -20,000.00 ; MZN`: prove own-account transfer and reconcile the other side, then exclude from a new income/expense subtotal; do not infer a business deduction.
+- Original annual tests 42,000,168,000,600,000 and 2,000,000: **if** each is a separately established aggregate post-minimum collectable base eligible for 54, scale arithmetic is 4,200;23,100;114,300;498,460. If 60's personal 1,800 and, for the original 168,000 case, two-dependent 900 deduction separately apply, arithmetic becomes 2,400;20,400;112,500;496,660. These are bounded formula regressions, not final liability on the original employment/pre-minimum facts or the unresolved current form. The former 37,500 constant and alleged statutory discontinuity are rejected.
+- Original salary 30,000 + meal 4,000: no blanket meal exclusion. If competent evidence establishes a 30,000 contributory base, employee 900/employer 1,200/total 2,100; if all 34,000 is contributory,1,020/1,360/2,380. Obtain the component ruling; the old 2,100 default is not proved by its label.
 
-**Key References**
+## Ask the client first
 
-| Topic | Reference |
-| --- | --- |
-| IRPS rates | Código do IRPS; PwC — https://taxsummaries.pwc.com/mozambique/individual/taxes-on-personal-income |
-| AT rate page | https://www.at.gov.mz/por/Comercio-Internacional/Procedimento-Fiscais/Taxas-IRPS (TLS error to fetcher) |
-| Personal/dependent deductions | PwC — https://taxsummaries.pwc.com/mozambique/individual/deductions |
-| INSS contributions & rules | PwC — https://taxsummaries.pwc.com/mozambique/individual/other-taxes ; INSS — https://www.inss.gov.mz/duvidas/ |
-| Filing & administration | AT IRPS FAQ — https://www.at.gov.mz/por/Perguntas-Frequentes2/IRPS ; PwC — https://taxsummaries.pwc.com/mozambique/individual/tax-administration |
-| Law 11/2025 reform | DLA Piper — https://www.dlapiperafrica.com/en/mozambique/insights/2026/Changes-to-the-Personal-Income-Tax-Code ; PwC PT Inforfisco — https://www.pwc.pt/pt/pwcinforfisco/flash/mocambique/mocambique-irps-alteracoes-cirps.html ; EY — https://www.ey.com/pt_mz/technical/tax-alerts/alteracoes-do-codigo-do-irps-em-mocambique ; Law text — https://www.lexlink.eu/conteudo/geral/mocambique/4123555/lei-no-112025/147/por-tema |
+Preserve the original onboarding questions: residence evidence; employment/business/other category and source; dependents and their taxable status; organised accounts and actual ISPC election; dedicated home-office arrangements; vehicle/mileage and business-use splits; telecoms use; INSS registration/payments; foreign income/tax and treaty facts; PAYE/advance payments and prior assessments. Add the actual year, payer/payee/beneficial ownership and current form/version when relevant. No invoices/organised books means no certified business deduction or annual return.
 
-### Filing -- Forms & Deadlines (2025 regime)
+R-MZ-1 unknown residence/category/income is a stop; R-MZ-2 companies/IRPC is a separate job; R-MZ-3 complex non-resident source/treaty and R-MZ-4 autonomous gains require specialist facts; R-MZ-5 arrears/enforcement needs official records; R-MZ-6 routes IVA separately; R-MZ-7 holds unverified 2026 mechanics. Do not misuse personal deductions, automatic meal exclusions, the removed day test, an assumed ISPC abolition/election, unverified tax interest or an annual salary fallback. Every output is provisional pending qualified review.
 
-**Filing -- Forms & Deadlines (2025 regime)**
+This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for errors, omissions or outcomes arising from its use. A qualified professional must review and sign off every output before filing or relying on it.
 
-| Item | Detail | Source |
-| --- | --- | --- |
-| Tax year | Calendar year | PwC |
-| Annual return | Modelo 10 (declaração anual de rendimentos) | AT IRPS process page |
-| Filing — employment only | 1 Jan → **31 March** of following year | AT IRPS FAQ — https://www.at.gov.mz/por/Perguntas-Frequentes2/IRPS |
-| Filing — all other cases | 1 Jan → **30 April** of following year | AT IRPS FAQ |
-| IRPS payment | **31 May** of following year | AT IRPS FAQ |
-| Self-employed advance payments | 3 equal instalments: **20 June, 20 September, 20 November** | AT IRPS process page |
-| Employer PAYE remittance | By the **20th** of the following month | PwC — https://taxsummaries.pwc.com/mozambique/individual/tax-administration |
-| Online platform | eDeclaração — https://edeclaracao.at.gov.mz/ | AT |
+## Sources
 
-### Penalties (IRPS)
+| Official source | URL | Read on / actual scope |
+|---|---|---|
+| CIRPS 2017 enacted Gazette copy, OCAM | https://ocam.org.mz/wp-content/uploads/2024/06/Lei-n-19_2017-de-28-de-Dezembro-IRPS-2-1.pdf | 2026-11-15 retained original read;2026-11-17 focused visual/text review of 26/29/31/54/56/57/59-61/65-A/66/69. Source is an actual Gazette copy, not PwC commentary. |
+| AT2025 reform Gazette Laws 9/10/11 | https://www.at.gov.mz/api/webdav?path=%2FLEGISLA%C3%87%C3%83O%2FLEGISLA%C3%87%C3%83O%20FISCAL%2FLEI%2FBR_248_I_SERIE_SUPLEMENTO_2025.pdf | 2026-11-15 actual official download and operative reads;2026-11-17 focused ISPC, income/residence and PAYE review. Commencement 1 January 2026. Not a complete later regulation. |
+| Official AT form catalogue / actual retained M10V | https://www.at.gov.mz/formularios-tributarios | 2026-11-15:actual one-page download fully visually read and compared with text layer. Not a final 2026 form clearance. Catalogue access that failed is not described as read law. |
+| Official 2018 decree copy, partial | https://ocam.org.mz/wp-content/uploads/2024/06/Decreto-51-2018-altera-o-CIRPS.pdf | 2026-11-15:all six odd Gazette pages visually read;2026-11-17 selected pages rechecked. Missing even pages remain missing; no complete-republication claim. |
+| INSS contributor guidance | https://www.inss.gov.mz/direitos-e-obrigacoes-do-contribuinte/ | 2026-11-15; operative rate/registration/payment/carry text reopened/read 2026-11-17. |
+| INSS2024 RSSO | https://www.inss.gov.mz/wp-content/uploads/2025/02/Decreto-56.2024-Altera-os-artigos-5-27-60-73-e-110-do-RSSO-aprovado-pelo-Decreto-5.2017-de-9-de-Outubro.pdf | 2026-11-15 contribution/coverage chapters; retained source bank reused for routed social contribution cases. |
 
-**Penalties (IRPS)**  _(AT IRPS FAQ — https://www.at.gov.mz/por/Perguntas-Frequentes2/IRPS)_
-
-| Item | Detail |
-| --- | --- |
-| Late payment | Juros de mora (default interest) accrues immediately from the due date |
-| Taxpayer-caused under-assessment | Juros compensatórios (compensatory interest) |
-| Statutory interest rates / fixed fines (RGIT) | **[RESEARCH GAP — reviewer to confirm]** — exact juros de mora % and fixed fines under the Regime Geral das Infracções Tributárias were not obtainable from an authoritative fetched source; do not state numbers without verification |
-
-### INSS Penalties
-
-**INSS Penalties**
-
-| Item | Detail | Source |
-| --- | --- | --- |
-| Non-payment / late submission | Fine of **1 to 3 minimum salaries × number of workers** on the declaration | INSS — https://www.inss.gov.mz/duvidas/ |
-| Failure to register a worker | **1 to 5 minimum salaries** | INSS — https://www.inss.gov.mz/duvidas/ |
-
-### Sector Minimum Wages (2025, effective 1 July 2025, retroactive)
-
-Set by Ministerial Diplomas Nos. 87–94/2025 (approved 22 Sep 2025). There is no single national minimum — it is sector-based.
-
-**Sector Minimum Wages table**  _(DLA Piper Africa / SAL & Caldeira — https://www.dlapiperafrica.com/pt/mozambique/insights/2025/Approval-of-New-Minimum-Wages-2025 ; Club of Mozambique — https://clubofmozambique.com/news/mozambique-minimum-wages-increase-2-9-to-9-depending-on-sector-with-retroactive-effect-from-1-july/)_
-
-| Sector | 2025 monthly minimum (MZN) |
-| --- | --- |
-| Agriculture, livestock, hunting, forestry | 6,688.00 |
-| Maritime/industrial/semi-industrial fishing | 6,726.88 |
-| Kapenta fishing | 4,991.09 |
-| Mineral extraction — large companies | 15,176.66 |
-| Mineral extraction — medium enterprises | 8,008.00 |
-| Mineral extraction — micro/small (incl. salt) | 6,538.44 |
-| Manufacturing (excl. bread & cashew) | 10,147.50 |
-| Bread manufacturing | 7,200.00 |
-| Cashew industry | 6,653.21 |
-| Electricity/gas/water — large companies | 12,275.00 |
-| Electricity/gas/water — small/medium | 9,960.62 |
-| Construction | 8,400.00 |
-| Non-financial services | 10,310.00 |
-| Hotels/tourism | 9,700.00 |
-| Private security | 8,465.00 |
-| Fuel retail | 9,739.00 |
-| Banking & insurance | 19,043.61 |
-| Microfinance & micro-insurance | 16,764.47 |
-
-### Municipal Personal Tax (Imposto Pessoal Autárquico)
-
-Small annual flat tax that varies by municipality (e.g., Maputo cited ~MZN 510 for 2024 per PwC). [RESEARCH GAP — reviewer to confirm] current-year value per municipality. Source: PwC.
-
-### Test Suite
-
-Input: Resident, annual employment income 600,000, single (no dependents).
-Expected: 25% bracket → 600,000 × 25% − 37,500 = 150,000 − 37,500 = 112,500 gross IRPS; less personal deduction 1,800 = 110,700.
-
-Input: Resident, annual 168,000, 2 dependents.
-Expected: 15% bracket → 168,000 × 15% − 2,100 = 25,200 − 2,100 = 23,100; less 1,800 personal − 900 (2 dependents) = 20,400.
-
-Input: Resident, annual 42,000, single.
-Expected: 10% bracket → 42,000 × 10% − 0 = 4,200; less 1,800 = 2,400.
-
-Input: Resident, annual 2,000,000, single.
-Expected: 32% bracket → 2,000,000 × 32% − 141,540 = 640,000 − 141,540 = 498,460; less 1,800 = 496,660.
-
-Input: Non-resident, 200,000.
-Expected: 200,000 × 20% = 40,000. No personal deductions.
-
-Input: Monthly salary 50,000.
-Expected: Employee 3% = 1,500; employer 4% = 2,000; total 7% = 3,500 remitted by employer. (1,500 + 2,000 = 3,500. ✓)
-
-Input: Salary 30,000 + meal subsidy 4,000.
-Expected: INSS base = 30,000 (meal subsidy excluded). Employee 3% = 900; employer 4% = 1,200; total = 2,100.
-
-## Section 11 -- Law No. 11/2025 (IRPS reform, in force 1 January 2026)
-
-Key changes (verify final regulations, due within 180 days of the law):
-
-1. Residency redefined. The >180-day physical-presence test is removed. Residency now turns on having one's main residence, main professional activity, or centre of economic interests in Mozambique; ship/aircraft crew of MZ entities; and MZ nationals on foreign assignment not fully taxed abroad. Effect: many foreign workers become resident regardless of days present.
-2. Simplified & exemption regimes abolished for IRPS → affected taxpayers move to organized accounting (see ISPC, Section 5/Section 6).
-3. Filing waiver removed for employees with PAYE-only income — from 2026 such employees must also file the Modelo 10.
-4. Digital services / e-money agent commissions: 10% final (liberatory) withholding on income from digital services and electronic-money agent commissions (including by non-residents); broadened taxable base for digital services performed/used in Mozambique.
-5. Capital gains: new autonomous regime (Art. 54-A) taxed on the 10%–32% scale.
-6. Second-category taxpayers: must keep organized accounting.
-
-Sources: DLA Piper Africa / SAL & Caldeira — https://www.dlapiperafrica.com/en/mozambique/insights/2026/Changes-to-the-Personal-Income-Tax-Code ; PwC PT Inforfisco — https://www.pwc.pt/pt/pwcinforfisco/flash/mocambique/mocambique-irps-alteracoes-cirps.html ; EY — https://www.ey.com/pt_mz/technical/tax-alerts/alteracoes-do-codigo-do-irps-em-mocambique ; Law text — https://www.lexlink.eu/conteudo/geral/mocambique/4123555/lei-no-112025/147/por-tema
-
-## Section 12 -- Open Items (figures NOT confirmed from authoritative fetched sources)
-
-[RESEARCH GAP — reviewer to confirm] each of the following before publishing a number:
-
-1. ISPC threshold (MZN 2,500,000 turnover), 3% rate, and fixed amount (MZN 75,000) — commonly published but not reconfirmed from a fetched AT page this session (AT TLS error). Verify on the AT ISPC page — https://www.at.gov.mz/por/Processos-Fiscais/Imposto-Simplificado-para-Pequenos-Contribuintes-ISPC . Note ISPC is abolished for IRPS from 2026.
-2. AT official IRPS rate/process pages could not be fetched directly (certificate error); bracket data corroborated by PwC — confirm against AT when accessible.
-3. Exact IRPS penalty/interest rates (juros de mora %, fixed fines under RGIT) — not obtained; verify before publishing numbers.
-4. INSS payment deadline conflict — INSS site says by the 10th of the following month; PwC says by the 15th. Resolve against INSS legislation.
-5. Whether the MZN 1,800 personal deduction / dependent deductions survive Law 11/2025 — not confirmed for 2026.
-6. Municipal personal tax (Imposto Pessoal Autárquico) — varies by municipality (Maputo ~MZN 510 for 2024 per PwC); confirm current-year value.
-
-## PROHIBITIONS
-
-- NEVER apply the progressive scale without confirming residency — non-residents pay a flat 20%
-- NEVER apply personal/dependent deductions to a non-resident
-- NEVER include the meal subsidy in the INSS contribution base
-- NEVER state a total INSS rate other than 7% (3% employee + 4% employer)
-- NEVER include IRPS itself, fines, drawings, or personal expenses as deductions
-- NEVER apply the ISPC simplified regime to a 2026 period without confirming it survived Law 11/2025 (it is abolished)
-- NEVER invent juros de mora / RGIT penalty rates — they are a RESEARCH GAP
-- NEVER assume the >180-day residency test for 2026 — Law 11/2025 replaced it
-- NEVER present tax calculations as definitive — always label as estimated and pending reviewer sign-off
-- NEVER rely on the published parcela-a-abater continuity without the reviewer note in Section 1
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: current annual minimum/form arithmetic and exact 2026 M10/M10V fields, fractional annual-band implementation, full current IRPS regulation/calendar and employee filing procedure, particular ISPC eligibility/accounting interaction and collection implementation, autonomous-gain and individual treaty/source/foreign-credit computations, complete CIRPC-specific business-cost restrictions, precise tax fines/juros-de-mora rate, municipal personal tax (old Maputo 510 in 2024 is not a current figure), detailed INSS component exclusions and special schemes. The 2018/2020 complete Gazette mirrors are retained research context, not official-host operative citations. No unverified secondary figure, hidden form text or unnumbered proposal is promoted to current law.
