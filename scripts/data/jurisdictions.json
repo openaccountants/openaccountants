@@ -8,14 +8,14 @@
   },
   {
     "code": "AE",
-    "name": "Uae",
+    "name": "United Arab Emirates",
     "region": "middle-east",
     "owner": "michael",
     "dir": "skills/uae"
   },
   {
     "code": "AG",
-    "name": "Antigua And Barbuda",
+    "name": "Antigua and Barbuda",
     "region": "americas",
     "owner": "michael",
     "dir": "skills/antigua-and-barbuda"
@@ -253,7 +253,7 @@
   },
   {
     "code": "CG",
-    "name": "Republic Of Congo",
+    "name": "Republic of the Congo",
     "region": "africa",
     "owner": "ryan",
     "dir": "skills/republic-of-congo"
@@ -323,7 +323,7 @@
   },
   {
     "code": "CW",
-    "name": "Cura Ao",
+    "name": "Curaçao",
     "region": "americas",
     "owner": "michael",
     "dir": "skills/curacao"
@@ -484,7 +484,7 @@
   },
   {
     "code": "GB",
-    "name": "Uk",
+    "name": "United Kingdom",
     "region": "europe",
     "owner": "michael",
     "dir": "skills/uk"
@@ -743,7 +743,7 @@
   },
   {
     "code": "KN",
-    "name": "Saint Kitts And Nevis",
+    "name": "Saint Kitts and Nevis",
     "region": "americas",
     "owner": "michael",
     "dir": "skills/saint-kitts-and-nevis"
@@ -1142,7 +1142,7 @@
   },
   {
     "code": "PM",
-    "name": "Saint Pierre And Miquelon",
+    "name": "Saint Pierre and Miquelon",
     "region": "americas",
     "owner": "michael",
     "dir": "skills/saint-pierre-and-miquelon"
@@ -1310,7 +1310,7 @@
   },
   {
     "code": "ST",
-    "name": "S O Tom And Pr Ncipe",
+    "name": "São Tomé and Príncipe",
     "region": "africa",
     "owner": "ryan",
     "dir": "skills/sao-tome-and-principe"
@@ -1338,7 +1338,7 @@
   },
   {
     "code": "TC",
-    "name": "Turks And Caicos",
+    "name": "Turks and Caicos Islands",
     "region": "americas",
     "owner": "michael",
     "dir": "skills/turks-and-caicos"
@@ -1408,7 +1408,7 @@
   },
   {
     "code": "TT",
-    "name": "Trinidad And Tobago",
+    "name": "Trinidad and Tobago",
     "region": "americas",
     "owner": "michael",
     "dir": "skills/trinidad-and-tobago"
@@ -1849,7 +1849,7 @@
   },
   {
     "code": "VC",
-    "name": "Saint Vincent And The Grenadines",
+    "name": "Saint Vincent and the Grenadines",
     "region": "americas",
     "owner": "michael",
     "dir": "skills/saint-vincent-and-the-grenadines"

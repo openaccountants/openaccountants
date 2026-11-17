@@ -1,0 +1,41 @@
+name: OpenSSF Scorecard
+
+# Independent security score from the Open Source Security Foundation; feeds the
+# Scorecard badge in README.md. Read-only on the code; publishes results to the
+# public Scorecard API and to the repo's code-scanning tab.
+on:
+  branch_protection_rule:
+  schedule:
+    - cron: "30 6 * * 1"
+  push:
+    branches: [main]
+    paths: [".github/workflows/**"]
+  workflow_dispatch:
+
+permissions: read-all
+
+jobs:
+  analysis:
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+      id-token: write
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: ossf/scorecard-action@v2.5.0
+        with:
+          results_file: results.sarif
+          results_format: sarif
+          publish_results: true
+      - uses: actions/upload-artifact@v7
+        with:
+          name: scorecard-results
+          path: results.sarif
+          retention-days: 5
+      - uses: github/codeql-action/upload-sarif@v4
+        with:
+          sarif_file: results.sarif
