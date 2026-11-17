@@ -54,7 +54,7 @@ to the published material and professional referral. Publication does not depend
 on the unpublished succession rewrite or clear that topic's current work.
 
 Current-head repository and hosted checks are separate publication gates. This
-record is a source/content PASS, not a merge approval or professional attestation.
+record provides source/content review only and records no human approval.
 Root alone controls merging and ingestion; no merge occurs during ingestion.
 
 Written by Codex. Not reviewed by an accountant.
