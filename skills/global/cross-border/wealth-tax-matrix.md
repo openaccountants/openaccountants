@@ -1,9 +1,12 @@
 ---
 name: wealth-tax-matrix
 description: "Use this Guide for annual net wealth tax, IFI, patrimoine, patrimonio, Vermögensteuer, formueskatt, Swiss or Norway wealth tax, Spain IP and solidarity tax, Argentina Bienes Personales, Colombia patrimonio, Uruguay patrimonio and Netherlands Box 3. Compare 2026 regimes, reference dates, valuations, debts, exemptions, caps and cross-border relief. Distinguish asset-specific Italy IVIE/IVAFE and Belgium securities-account tax, historical repeals and unconfirmed proposals. Read before computing; use inheritance-estate-gift-matrix and property-transfer-tax-matrix for other taxes."
-jurisdiction: general
+jurisdiction: GLOBAL
+category: cross-border
+depends_on:
+  - cross-border-workflow-base
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-17
 version: 1.0
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
