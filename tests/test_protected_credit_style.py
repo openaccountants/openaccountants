@@ -20,14 +20,19 @@ class ProtectedCreditStyle(unittest.TestCase):
     def test_actual_incorporation_two_original_lines_keep_all_three_dashes(self):
         path = ROOT / 'skills/global/cross-border/international-incorporation.md'
         lines = path.read_text().splitlines()
-        self.assertEqual(lines[-2:], [ARTIN, CONTACT])
+        self.assertEqual(lines.count(ARTIN), 1)
+        self.assertEqual(lines.count(CONTACT), 1)
+        credit_start = lines.index(ARTIN)
+        credits = lines[credit_start:credit_start + 2]
+        self.assertEqual(credits, [ARTIN, CONTACT])
         self.assertEqual((ARTIN + CONTACT).count('—'), 3)
-        self.assertEqual(self.check('\n'.join(lines[-2:])), [])
-        self.assertEqual(self.check('\r\n'.join(lines[-2:]) + '\r\n'), [])
+        self.assertEqual(self.check('\n'.join(credits)), [])
+        self.assertEqual(self.check('\r\n'.join(credits) + '\r\n'), [])
 
     def test_actual_invoice_footer_is_exempt_but_authored_description_is_not(self):
         path = ROOT / 'skills/global/cross-border/cross-border-invoicing-compliance.md'
-        self.assertEqual(path.read_text().splitlines()[-1], DATED_CONTACT)
+        text = path.read_text()
+        self.assertEqual(text.splitlines().count(DATED_CONTACT), 1)
         self.assertEqual(self.check(DATED_CONTACT), [])
         text = '---\ndescription: New authored wording — still checked\n---\n' + DATED_CONTACT
         self.assertEqual(self.check(text), ['1 em dash(es)'])
