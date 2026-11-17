@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Does every skill still say the line each calculator quotes?
 
-Each calculator in calculators/engines/<engine>/rules.json lists its figures as rules with a
-`slug`, a `section` and a `quote`: the line of that skill the figure was taken from. The app
+OpenAccountants calculations run on our servers; calculators/quoted-lines.json lists, for each
+figure they use, the skill `slug`, its `section` and the `quote`: the line of that skill the figure
+was taken from (no code, no values). Any calculator folder with calculators/engines/<engine>/rules.json
+is read the same way. The app
 refuses to run a calculator when the skill no longer states the quoted line, so a skill edit
 that drops or rewords that line silently switches the calculator off. This check says so on
 the pull request instead.
@@ -124,6 +126,11 @@ def skill_index(root):
 def load_rules(root):
     """[(engine, rule)] for every rule with a slug and a quote."""
     out = []
+    quoted = root / "calculators" / "quoted-lines.json"
+    if quoted.exists():
+        for r in json.loads(quoted.read_text(encoding="utf-8")).get("lines", []):
+            if isinstance(r, dict) and str(r.get("slug") or "").strip() and str(r.get("quote") or "").strip():
+                out.append(("openaccountants", {"name": "quoted line", **r}))
     for f in sorted((root / "calculators" / "engines").glob("*/rules.json")):
         data = json.loads(f.read_text(encoding="utf-8"))
         engine = data.get("engine") or f.parent.name

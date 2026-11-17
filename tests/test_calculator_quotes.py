@@ -140,6 +140,17 @@ class Repo(unittest.TestCase):
         self.assertIn("> Cap | $2,000,000", out)
         self.assertNotIn("`xx_tax`", out)
 
+    def test_quoted_lines_file_is_checked(self):
+        self.write("calculators/quoted-lines.json", json.dumps({"lines": [
+            {"slug": "xx-rates", "section": "Rates", "quote": "CPP employee rate | 5.95%"},
+            {"slug": "xx-rates", "section": "Rates", "quote": "Cap | $9,999"},
+        ]}))
+        code, out = self.run_main([])
+        self.assertEqual(code, 1)
+        self.assertIn("calculator `openaccountants` quotes", out)
+        self.assertIn("> Cap | $9,999", out)
+        self.assertNotIn("> CPP employee rate | 5.95%", out)
+
     def test_missing_skill_is_broken(self):
         self.rules("zz_tax", [{"name": "X", "slug": "gone-skill", "section": "S", "quote": "anything"}])
         code, out = self.run_main([])
