@@ -13,7 +13,7 @@ description: >
   a self-employed contribution exemption, loss relief or a foreign treaty result.
   Supporting planning material for licensed professional review. Built from the
   law (tier 2); Not yet approved.
-version: 0.3
+version: 0.4
 jurisdiction: MK
 tax_year: 2026
 last_updated: 2026-11-17
@@ -24,7 +24,7 @@ domain: tax-optimization
 type: decision
 ---
 
-# North Macedonia tax planning and regime comparison v0.3
+# North Macedonia tax planning and regime comparison v0.4
 
 ## Scope
 
@@ -51,7 +51,7 @@ recommend a route merely from the ordinary 10% headline rate.
 |---|---|---|
 | Ordinary PIT / company profit tax | 10% on the appropriate reconciled category/profit base; not a reason alone to choose a legal form | [PIT art. 11](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf#page=3); [Profit Tax Law art. 2](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf#page=1) |
 | Individual assessed lump-sum staffing/prior-income gates | No more than 1 employee besides the proprietor; prior-year net income not above 2 annual average gross wages under the statutory reference; the numbers 1 and 2 are in words on the page. Other activity/investor/bookkeeping conditions below still apply | [PIT art. 29](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf#page=13) (in words on the page) |
-| Individual lump-sum application | Each year by the end of the preceding year; for a new activity the text reads "within 15 days or from the day of registration in the relevant register, or before starting the activity"; UJP decision required, due by 31 January of the year after the application or by the end of the month after the activity starts | [PIT arts. 29(2)-(3), 99(3)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf#page=13) |
+| Individual lump-sum application | Each year by the end of the preceding year; UJP's DLD-P instructions specify within 15 days from registration in the relevant register or before starting the activity; temporary activity must apply before it starts. Preserve the alternative filing routes. UJP decision required, due by 31 January of the year after the application or by the end of the month after the activity starts | [PIT arts. 29(2)-(3), 99(3)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf#page=13); [DLD-P instructions, p. 2](https://www.ujp.gov.mk/files/attachment/0000/1166/89-19-DLD-P_07.05.2019.pdf#page=2) |
 | Eligible company annual-revenue exemption | Total revenue from all sources not above MKD 3,000,000; eligible micro/small/resident legal-person accounting regime; excluded activities below | [Profit Tax Law arts. 31-32](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf#page=11) |
 | Eligible company turnover election | MKD 3,000,001-6,000,000 total revenue; 1% on the whole revenue, not only excess; consistent for 3 years including election year while within the band | [Arts. 33-34](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf#page=12) (in words on the page) |
 | Salary/pension reduction | MKD 10,932 monthly; published annual MKD 131,184; only the eligible salary/salary-compensation/pension right actually used, not sole-trader profit, rent or dividends | [PIT art. 10](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf#page=3); [UJP 2026 publication](https://www.ujp.gov.mk/e/plakjanje/licno_osloboduvanje) |
@@ -73,9 +73,7 @@ the proprietor; investment by other persons; and prior-year **net income** above
 2 annual average gross wages under the statutory reference. Do not replace
 that net-income test with a guessed sales threshold or a salary-insurance
 January reference. An eligible applicant files annually by the preceding year's
-end; for a new activity art. 29(3) reads "within 15 days or from the day of
-registration in the relevant register, or before starting the activity", so file
-at the earliest of those points rather than reading them as cumulative. Until UJP
+end. The scanned art. 29(3) contains the words "во рок од 15 дена или од денот на регистрација". UJP's [DLD-P instructions, page 2](https://www.ujp.gov.mk/files/attachment/0000/1166/89-19-DLD-P_07.05.2019.pdf#page=2) clarify the filing route as within 15 days from registration in the relevant register or before starting the activity. Keep the alternative filing routes; do not replace them with a requirement to meet both deadlines. A person carrying on a temporary activity applies before it starts, using the form's temporary-activity field. Until UJP
 sets the assessed income, the taxpayer pays advances at the level of the prior-year
 decision, and UJP decides by 31 January after the application year or by the end of
 the month after a new activity starts ([PIT arts. 95, 99(3)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf#page=30)). If UJP finds
@@ -120,10 +118,10 @@ approval/carry rule and must not be confused with investment-base relief.
 
 Company reinvested-profit relief instead follows [Profit Tax Law art. 28](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf),
 including its own eligibility, retention and recapture conditions, described in
-the corporate skill. Disposal within five years of the investment, or ending a
+the corporate skill. Disposal within 5 years of the investment (in words on the page), or ending a
 finance lease, makes the forgone tax due on form DD-DO within 30 days; failing to
-prove the qualifying investment, or to self-assess under art. 39(2), makes it due
-fivefold (arts. 28(3)-(6), 39(2)). Do not transfer an individual deduction into a company
+prove the qualifying investment, or to determine and pay the recapture tax under art. 39(2), makes it due
+at 5 times the forgone tax (in words on the page) (arts. 28(3)-(6), 39(2)). Do not transfer an individual deduction into a company
 calculation or assume that buying a private-use asset creates relief.
 
 ### Identify the retained-profit vintage
@@ -213,6 +211,7 @@ Keep the individual's annual lump-sum application/decision separate from company
 | Actual material read | Official URL | Read on |
 |---|---|---|
 | Read for PIT salary reduction/rate, actual business and lump-sum assessment, ordinary investment and capital-income bases, lump-sum advances/decision timing: arts. 10-11, 19-30, 55-57, 95, 99; visually read PDF pages 3, 9-13, 17-18, 30-31 | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-11-15 |
+| Read for DLD-P application timing and temporary-activity filing instructions, PDF page 2; read with the scanned PIT art. 29(3), preserving its alternatives | https://www.ujp.gov.mk/files/attachment/0000/1166/89-19-DLD-P_07.05.2019.pdf#page=2 | 2026-11-17 |
 | Read for company ordinary rate/taxpayer, reinvestment, small-company regime/recapture, DD-DO/DB-VP timing, advances and historical distribution charge: arts. 2, 4-5, 28, 31-36, 39-41, 48; PDF pages 1, 10-14, 16 | https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf | 2026-11-15 |
 | Read for insured classes, own-proprietor calculation/base, first-calendar-year and professional boundaries, arts. 7, 10-16; PDF pages 2-4, 6-10 | https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf | 2026-11-15 |
 | Read for 2026 salary/pension reduction and publication number/date, HTML | https://www.ujp.gov.mk/e/plakjanje/licno_osloboduvanje | 2026-11-15 |
