@@ -42,9 +42,9 @@ Owner: Michael Cutajar
 | [Kosovo](kosovo/) | Needs writing | 8 | 8 | 0 |
 | [Latvia](latvia/) | Needs signature | 10 | 10 | 0 |
 | [Liechtenstein](liechtenstein/) | Needs writing | 8 | 8 | 0 |
-| [Lithuania](lithuania/) | Needs signature | 9 | 8 | 0 |
+| [Lithuania](lithuania/) | Needs signature | 9 | 9 | 0 |
 | [Luxembourg](luxembourg/) | Needs signature | 8 | 8 | 0 |
-| [Malta](malta/) | Needs writing | 31 | 31 | 5 |
+| [Malta](malta/) | Needs writing | 31 | 31 | 6 |
 | [Moldova](moldova/) | Needs writing | 13 | 13 | 0 |
 | [Monaco](monaco/) | Needs signature | 8 | 8 | 0 |
 | [Montenegro](montenegro/) | Needs writing | 10 | 10 | 0 |

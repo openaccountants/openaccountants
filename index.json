@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-17T13:28:25+00:00",
+ "generated_at": "2026-11-17T14:17:55+00:00",
  "counts": {
   "guides": 2553,
   "loadable_skill_names": 2494,
   "jurisdictions": 290,
-  "accountant_reviewed": 126,
+  "accountant_reviewed": 127,
   "held_skill_names": 3
  },
  "publication_holds": [
@@ -16400,7 +16400,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "lt-corporate-income-tax",
@@ -16452,7 +16452,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-30"
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "lt-transfer-pricing",
@@ -16473,12 +16473,12 @@
    "path": "skills/lithuania/references.md",
    "name": "lithuania-references",
    "jurisdiction": "LT",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": null,
-   "last_updated": "2026-06-12"
+   "tax_year": "2026",
+   "last_updated": "2026-11-17"
   },
   {
    "slug": "lu-corporate-tax",
@@ -17358,9 +17358,9 @@
    "name": "mt-corporate-tax",
    "jurisdiction": "MT",
    "category": "international",
-   "tier": 2,
+   "tier": 1,
    "verified_by": null,
-   "reviewed_by": null,
+   "reviewed_by": "Michael Cutajar",
    "tax_year": "2026",
    "last_updated": "2026-11-14"
   },

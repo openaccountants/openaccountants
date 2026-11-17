@@ -8,6 +8,7 @@ metadata:
   jurisdiction: "MT"
   tax_year: "2026"
   last_updated: "2026-11-14"
+  reviewed_by: "Michael Cutajar"
 ---
 
 # Malta corporate income tax: 35%, imputation, refunds and filing (basis year 2026)
