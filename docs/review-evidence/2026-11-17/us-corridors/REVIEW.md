@@ -1,0 +1,38 @@
+# US major partners: independent full review and finite closure
+
+17 November 2026. Independent AI review, not accountant approval. The complete first review and the same reviewer's finite closure support 152 operative/derived groups within their stated conditions; nine explicit non-usable holds remain. No human approval, tier or contributor identity was created or changed.
+
+## Exact review chain
+
+The first independent reviewer did not write or edit this Guide. All 161 ledger groups were reviewed at `8273933fbb557594199acbed1c3d5723fda32e7e`, source SHA256 `ba988db2a823b7ede511535fe02ddb8f60c1d9282e0de458fb7f2017c3c839ab`. Actual operative clauses and material neighboring conditions were checked: protocol supersession, source direction, beneficial ownership, saving clauses, LOB routes, holding periods, special investment vehicles, contingent interest/REMIC, royalty definitions, separate individual services and exact PE periods. All 209 original bindings resolved across 155 native clause sets. The 121-file input manifest matched `fd54e73c0494a8190bb8a0f084544f21a4e1d429302e87184e3efbe299538852`.
+
+The same reviewer closed all six findings at `ff030b08339ea9d29e2a64c2040339f0d3851691`, source SHA256 `1981d7aec90f1780b3ce885eeb06425859683d741fd596f50de72aaa73f9abba`, with zero remaining required findings. The correction manifest matched `7c2c5370594d784ba3d8b7bfc5a93a7ec86e78e4fdc7c630cf8786ee3fb6a5ef`. This was finite closure of the existing full review, not another full research scan or a writer's self-approval.
+
+| Finding | Accepted correction and primary authority |
+|---|---|
+| US-F1, France | Investment-vehicle references point to replacement Article 10(5), not company-profit paragraph 4. Rates unchanged. [2009 Protocol, Article II](https://home.treasury.gov/system/files/131/Treaty-France-Pr2-1-13-2009.pdf). |
+| US-F2, Canada | The separate US-source contingent-interest ceiling remains 15%; the domestic-law REMIC exception is XI(6)(c), not 6(b). [Consolidated Convention, XI](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention-consolidated-1980-1983-1984-1995-1997-2007.html). |
+| US-F3, Canada | The rental/franchise exclusion concerns the specified information supplied in connection with those agreements; the distinct patent exemption remains. The case assumes a non-exempt trademark/franchise royalty. [XII(3)(c)](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention-consolidated-1980-1983-1984-1995-1997-2007.html). |
+| US-F4, Japan | Article 10(4)'s US RIC/REIT limits are distinguished from 10(5)'s Japanese deductible-dividend vehicle, expressly reverse-direction context. [2003 Convention, 10(4)-(5)](https://home.treasury.gov/system/files/131/Treaty-Japan-11-6-2003.pdf). |
+| US-F5, read provenance | India's completed 17-November signed Protocol I-V read is bound separately from reused 16-November Convention/MOU reads. Netherlands scopes reflect its separate completed domestic-page read. [India Protocol](https://www.irs.gov/pub/irs-trty/india.pdf); [Dutch guidance](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/bronbelasting-rente-en-royalty/). |
+| US-F6, UK | Both actual July 2021 arrangements are directly cited and bound: specified UK equivalent-beneficiary treatment and specified NAFTA/USMCA interpretation. Neither automatically amends another treaty. [CAA 1](https://www.gov.uk/government/publications/usa-tax-treaties/uk-usa-double-taxation-convention-competent-authority-agreement-1-signed-in-july-2021-in-force); [CAA 2](https://www.gov.uk/government/publications/usa-tax-treaties/uk-usa-double-taxation-convention-competent-authority-agreement-2-signed-in-july-2021-in-force). |
+
+Closure checked nine changed records plus the Netherlands source-scope dependency, 26 metadata-only native updates, five added native sets and three added source bindings. All 214 claim bindings resolve across 160 clause sets and 45 source bindings. India base/MOU and Protocol share a PDF with distinct actual read dates/scopes. The UK supplements reuse the independent reader's completed 17-November reads/captures; no writer 16-November read or new research is invented.
+
+Actual reads are bounded. Damaged India interest text was resolved visually on PDF pages 24-25. All five operative Swiss 2009 protocol pages 9-13 were visually read; its current pension arrangement was read in full four pages, its 2020 arrangement in full one page, and Singapore's current 1988 Notes I on pages 1-4. Unrelated historical annexes and form instructions are not claimed read. Failed direct downloads are distinguished from observed official web excerpts. A URL, hash, download or numeric match alone was not treated as legal verification.
+
+## Preservation and non-usable limits
+
+All 237 nonblank original lines retain their text and destinations. Fourteen corridors, nine original PE partners, seven summary corridors, four LOB route topics, original disclaimer, names, tier and licence remain. The original had no numerical worked case. The two added cases were independently recomputed: Canada 0/1,000/difference 1,000; Japan 500/1,000/conditional parent 0/difference 500, subject to the stated eligibility assumptions. Both calculation fences, inputs, formulas and expected outputs remain exact. No original topic or case was replaced to hide a gap.
+
+The nine non-usable holds cover historical/network rankings; an unestablished French MFN outcome; Canadian reverse domestic shorthand; Australian franking analysis; a universal Indian domestic-rate/no-amendment assertion; Israeli domestic ranges/negotiations; Swiss old-form shorthand; unproved other-treaty territorial/USMCA routes; and unsupported reverse/comparative shortcuts. Missing operative conditions or taxpayer facts still prevent relief. These holds are not filing instructions or confirmation of a particular taxpayer's entitlement.
+
+## Mechanical successor and integration
+
+After legal closure, a declared mechanical delta normalized 64 writer punctuation separators, including only punctuation in the two writer-added case titles. Both `oa-check` fences remain byte-identical; case word/numeric sequences and meanings are unchanged; neither old title was quoted by a calculator. The Irish Revenue instrument row now describes that publisher's instrument; its already-completed IRS Table 3 entry-read statement moves to the existing IRS-linked row. Actual source dates, legal text, URLs and native quotations remain. Neither checker nor website changed.
+
+Publication source SHA256 is `0c56bffc1efd9d3b7faf14a445363cfca7bd48b1de57932612c2c439a5f13f1c`, 90,578 bytes. Exact bytes reconstruct from the accepted finite source using only the declared punctuation and publisher-scope changes. All frontmatter is byte-identical to the finite PASS. Normal current-main integration preserves this source exactly; unrelated main updates are outside the authored PR scope.
+
+All 19 standard checks pass, including punctuation and source identity. Required changed-Guide validation, strict sync, example/calculator-quote and whitespace results are recorded on the PR; hosted CI remains required. The retained 97-row and finite six-row diagnostics had zero MISS/UNREADABLE results: cached numeric checks, not fresh network or legal reads. Any actual hosted figure exceptions must be individually recorded before publication. Root alone owns readiness, merge and ingestion control, including the active-ingestion merge prohibition.
+
+Written by Codex. Not reviewed by an accountant.
