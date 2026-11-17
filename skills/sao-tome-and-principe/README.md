@@ -5,8 +5,8 @@ not_applicable: {}
 covered_by: {}
 partial:
   IT-IND: "2009 code read; band table not confirmed for 2026 or in current dobras, 30% band status open"
-  IT-CORP: "2009 code read; Decree-Law 6/2016 minimum-tax rule and incentive rates unread"
-  VAT: "2023 amendments and current art. 48 unread; portal steps missing"
+  IT-CORP: "2009 code read; 2026 minimum tax and Group 1 threshold held; DL 6/2016 and incentives unread"
+  VAT: "Rules from a 2019 bill; enacted Code, start date and amendments unread, all held"
   SC: "Decree-Law 1/2025 rates unread; official text shows 6% and 4%"
   PR: "Wage withholding table unread; Decree-Law 1/2025 rates unread"
 ---
