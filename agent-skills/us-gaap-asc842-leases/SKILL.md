@@ -1,226 +1,163 @@
 ---
 name: us-gaap-asc842-leases
-description: "US GAAP lease accounting under ASC 842 (Leases). Covers the lessee dual model — every lease (other than short-term) puts a right-of-use asset and a lease liability on the balance sheet, then splits into finance leases (front-loaded interest + straight-line ROU amortization) versus operating leases (a single straight-line total lease cost). Covers lease identification and the finance-versus-operating classification criteria, initial and subsequent measurement, the discount rate, short-term and component elections, variable lease payments, remeasurement and reassessment triggers, modifications, the lessor model (sales-type, direct financing, operating), and sale-leaseback. Produces classification conclusions, journal entries, and a reviewer brief. Issued as the US GAAP edition of the leases topic; see ifrs16-leases for the IFRS edition. MUST load alongside financial-reporting-workflow-base."
+description: "Lessee lease working-paper computations based on official ASU 2016-02 and ASU 2021-09 text, with original identification, lessor, modification, sale-and-leaseback and disclosure topics retained individually for current authoritative ASC source recovery. Load financial-reporting-workflow-base."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/us-gaap-asc842-leases"
   jurisdiction: "US"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  last_updated: "2026-11-16"
 ---
 
-# US GAAP Asc842 Leases
+# US GAAP ASC 842 leases v0.3
 
-## US GAAP Leases — ASC 842 v0.1
+**General reference only.** Working papers and reviewer brief only; not an audit or assurance opinion. Tier 2; not approved by an accountant.
 
-## What this file is
+## Scope
 
-**This is a content skill that loads on top of `financial-reporting-workflow-base`.** It supplies the recognition, measurement, presentation, and disclosure rules for leases under US GAAP. The base supplies the two-layer output contract, the journal-entry format, and the self-checks.
+**Standard and effective-date basis:** ASC 842 Leases (ASU 2016-02 and ASU 2021-09 amendment basis); effective-date key **2021-12-16**. This is a version-index date for the first possible fiscal-year start after 15 December 2021, not universal ASC 842 adoption. For an entity that had adopted Topic 842 by 11 November 2021, ASU 2021-09 is effective for fiscal years beginning after 15 December 2021 and interim periods within fiscal years beginning after 15 December 2022; early application is permitted and specified modified-retrospective transition applies. An entity that had not adopted Topic 842 by 11 November 2021 adopts the amendment with Topic 842 using 842-10-65-1 transition. Determine the entity-specific original adoption date separately; the read original ASU 2016-02 alone is not current adoption authority. [ASU 2021-09 effective-date and transition summary](https://storage.fasb.org/ASU%202021-09.pdf).
 
-- **Standard currency** — ASC 842 as effective for all entities (public business entities since annual periods beginning after 15 Dec 2018; all other entities after 15 Dec 2021). ASC 842 superseded ASC 840. Confirm no entity-specific scope exclusion applies.  _(ASC 842)_
-- **Scope** — ASC 842 applies to leases of property, plant, and equipment except: leases of intangible assets (ASC 350), leases to explore for or use minerals/oil/gas (ASC 930), leases of biological assets, leases of inventory, and leases of assets under construction.  _(ASC 842-10-15-1)_
+Load `financial-reporting-workflow-base`. This issuer/transaction worksheet retains the complete original topic coverage, but separates the actually read amendment-basis computations from unrecovered current authoritative guidance. It does not cover the holder's accounting, control or valuation methodologies beyond the explicit steps.
 
-## Section 1 — Scope statement
+**Source boundary for 2026 work.** This is a source-bounded research and computation worksheet. Current authoritative ASC text was attempted through the official site and an ordinary browser on 15 November 2026 but did not render. The FASB amendments below were opened and their stated operative paragraphs read. Each Update expressly distinguishes itself from the authoritative Codification; reading an ASU does not establish that every intervening amendment is incorporated. Consequently, the method explains only the stated amendment-basis checks. Do not use it to sign a current-ASC conclusion until the authoritative, entity-applicable text is recovered. A further official ASC web attempt on 16 November 2026 returned no operative text. Broader unresolved rules are individually reserved under Sources.
 
-This skill covers:
+## Ask the client first
 
-- Identifying a lease — an identified asset the customer controls the use of (`ASC 842-10-15-3` to `15-16`).
-- The **lessee dual model**: classification as finance or operating, and the differing P&L pattern of each.
-- Initial and subsequent measurement of the lease liability and right-of-use (ROU) asset (`ASC 842-20-30`, `-35`).
-- The discount rate, short-term lease exemption, and the practical expedient not to separate lease/non-lease components.
-- Variable lease payments, remeasurement, reassessment, and modifications.
-- The **lessor model**: sales-type, direct financing, and operating leases (`ASC 842-30`).
-- Sale-and-leaseback (`ASC 842-40`, tied to the `ASC 606` control-transfer test).
+- Reporting period, PBE/non-PBE status, all adopted lease Updates and lessee/lessor/intermediate-lessor role.
+- Complete asset/control/substitution/term/options analysis, commencement and documented finance/operating classification.
+- Each payment, index/rate, guarantee, incentive, prepayment, direct cost and non-lease component with standalone prices.
+- Readily determinable implicit rate, evidenced incremental borrowing rate, any non-PBE risk-free election and asset class.
+- Impairments, modifications, termination/sublease/sale-and-leaseback facts and required disclosure balances.
 
-This skill does NOT cover: leveraged leases grandfathered under ASC 840 transition, lease revenue subject to `ASC 606`, or impairment of ROU assets (handled by `ASC 360`, cross-referenced). It defers the IFRS treatment to `ifrs16-leases`.
+## The method, step by step
 
-### Step 0 — Is there a lease? — `ASC 842-10-15-3` to `15-16`
+1. **Version and contract gate.** Obtain a current authoritative ASC 842 scope/identification/classification conclusion. The original exclusions, all 5 finance criteria, 75%/90% reasonable-approach indicators, term/options and complete special-topic instructions are individually retained below; they are not asserted fully current by this worksheet.
+2. **Read amendment-basis recognition and measurement.** ASU 2016-02 Section A sets out ASC 842-20-25-1/-25-2: both recognised classifications have a ROU asset and liability, subject to the elected short-term exception by asset class. Under -30-1/-30-5 the liability is PV of unpaid lease payments; ROU cost adds prepayments and eligible initial direct costs and subtracts incentives received. Do not double-count a lessee guarantee already included in payments when applying a classification test (842-10-25-2(d)). [Official original amendment](https://storage.fasb.org/ASU%202016-02_Section%20A.pdf).
+3. **Apply the read discount-rate amendment.** ASC 842-20-30-3 as amended by ASU 2021-09 uses readily determinable implicit rate first. Otherwise use IBR, or for a non-PBE an elected risk-free rate with a term comparable to the lease, by underlying asset class. The election does not override an available implicit rate; disclose election and relevant asset classes under -50-10. [Official amendment](https://storage.fasb.org/ASU%202021-09.pdf).
+4. **Compute the stated expense pattern.** In ASU 2016-02, ASC 842-20-25-5/-25-8 and -35-1/-35-8 give finance interest plus ROU amortisation, and an operating single lease cost normally on a straight-line basis. A different representative systematic basis and costs capitalised into another asset are explicit exceptions. Impairment changes subsequent operating cost mechanics; do not retain a flat-cost plug after impairment. The original text's claim that an operating lease preserves EBITDA relative to finance is backwards under a conventional EBITDA definition: operating lease cost usually reduces EBITDA; finance interest/amortisation are generally excluded. EBITDA/covenant definitions are contractual and must be checked. [Official original amendment](https://storage.fasb.org/ASU%202016-02_Section%20A.pdf).
+5. **Components and elections.** ASC 842-10-15-33/-15-37 in that Update allocates relative standalone consideration unless the lessee elects, by asset class, to combine each lease component with its associated non-lease components. The election can increase the measured lease balance. This lessee expedient is not a general lessor allocation rule. [Official original amendment](https://storage.fasb.org/ASU%202016-02_Section%20A.pdf).
+6. **Do not extrapolate to unrecovered current rules.** Remeasurement, modification, lessor variable-payment classification, common-control arrangements, sale-and-leaseback and Topic 230 interest presentation require current authoritative source recovery. Individual source requests below preserve the original conditions, special topics and completion checks. The read 2016 amendment itself gives investing exceptions for operating cash flows capitalised into another asset; a bare always-operating cash-flow statement is too broad (842-20-45-5). [Official original amendment](https://storage.fasb.org/ASU%202016-02_Section%20A.pdf).
 
-- **Lease definition and control test** — A contract is or contains a lease if it conveys the right to control the use of an identified asset for a period in exchange for consideration. Control requires both: (1) the right to obtain substantially all of the economic benefits from use of the identified asset (15-17); and (2) the right to direct the use of the asset (15-20) — i.e. the customer decides how and for what purpose the asset is used. An asset is identified when explicitly or implicitly specified, and the supplier has no substantive substitution right (15-9 to 15-14). If the supplier can substitute the asset for its own economic benefit, there is no identified asset and no lease — it is a service contract.  _(ASC 842-10-15-3 to 15-16)_
+### Verified corrections and remaining boundary
 
-### Step 1 — Determine the lease term — `ASC 842-10-30-1`
+The original annuity-factor display used 4.2124 as though it exactly produced $210,618; the full factor is 4.2123637856 and the cent result $210,618.19. The old operating-lease EBITDA wording was reversed; capitalisation/impairment and cash-flow exceptions were missing. Its lessor/sale/remeasurement rules and claimed comparison with IFRS require current-ASC access and are individually reserved. The original short-term wording also needs the actual glossary definition checked; no IFRS low-value monetary threshold is adopted from it.
 
-- **Lease term definition** — Lease term = non-cancellable period + periods covered by an option to extend that the lessee is reasonably certain to exercise + periods covered by an option to terminate that the lessee is reasonably certain not to exercise.  _(ASC 842-10-30-1)_
+## Worked cases
 
-⚑ AUDIT FLASH POINT — reasonably-certain option assessment. Renewal/termination judgement directly sizes both the ROU asset and the lease liability, and it gates classification. "Reasonably certain" is a high threshold based on economic incentive (significant leasehold improvements, below-market rate, importance of the location). Document the incentive analysis; this is the most-challenged lessee judgement.
+All case values and rates are illustrative input facts. Classification/application gates are stated in each case; arithmetic does not verify those gates.
 
-### Step 2 — Classify the lease (lessee) — `ASC 842-10-25-2` to `25-3`
+The original illustrative facts are a 5-year equipment lease with $50,000 annual payments in arrears and an implicit rate that is not readily determinable, with a supplied incremental borrowing rate of 6%. There are no incentives, prepayments, direct costs, impairment or other asset-capitalisation effects. Conditional on the supplied lease/classification conclusions, liability and initial ROU are $210,618.19; first-year interest is $12,637.09 and closing liability $173,255.28. The 5-year straight-line finance-ROU amortisation period is a supplied case assumption requiring a separately supported applicable amortisation conclusion, rather than a period derived solely from the lease term. Under that assumption, ROU expense is $42,123.64 and combined expense $54,760.73. Conditional on operating classification with the stated assumptions, single lease expense is $50,000 and the ROU reduction is $37,362.91. Both classifications have the same liability cash-flow schedule on these facts. The original whole-dollar proposed journals, rounded independently from full precision, are retained below.
 
-- **Finance lease classification criteria** — A lease is a finance lease if it meets any one of the following five criteria at commencement; otherwise it is an operating lease: (a) The lease transfers ownership of the underlying asset to the lessee by the end of the term. (b) The lease grants a purchase option the lessee is reasonably certain to exercise. (c) The lease term is for the major part of the remaining economic life of the asset (unless commencement is at or near the end of the asset's economic life — 25-3(b)). (d) The present value of the lease payments plus any lessee-guaranteed residual value equals or exceeds substantially all of the fair value of the underlying asset. (e) The asset is so specialized that it is expected to have no alternative use to the lessor at the end of the term.  _(ASC 842-10-25-2 to 25-3)_
-
-⚑ AUDIT FLASH POINT — "major part" and "substantially all" are no longer bright lines. ASC 842 deliberately removed ASC 840's 75% / 90% bright lines, but `ASC 842-10-55-2` permits an entity to use those thresholds as one reasonable approach. Many preparers retain ≈75% (major part) and ≈90% (substantially all) as a policy. The threshold chosen is a judgement that can flip classification — and classification changes the P&L pattern and EBITDA. Document the policy and the inputs.
-
-### Step 3 — Both classifications: recognize ROU asset + lease liability — `ASC 842-20-25-1`
-
-- **Dual recognition** — Critically, both finance and operating leases recognize a right-of-use asset and a lease liability on the balance sheet (842-20-30-1, -30-5). The dual model lives in the P&L pattern and subsequent measurement, not in whether the lease is on the balance sheet.  _(ASC 842-20-25-1)_
-
-### Initial measurement — `ASC 842-20-30`
-
-- **Lease liability discount rate** — Lease liability = present value of the lease payments not yet paid, discounted at the rate implicit in the lease if readily determinable; otherwise the lessee's incremental borrowing rate (IBR). A lessee that is not a public business entity may elect, as an accounting policy by asset class, to use a risk-free rate.  _(842-20-30-1, -30-2, -30-3)_
-- **Lease payments included** — Lease payments included: fixed payments (less incentives receivable), in-substance fixed payments, variable payments that depend on an index or rate (measured using the index/rate at commencement), the exercise price of a reasonably-certain purchase option, termination penalties if the term reflects termination, and amounts probable of being owed under a residual value guarantee.  _(842-10-30-5)_
-- **ROU asset formula** — ROU asset = lease liability + lease payments made at/before commencement (prepaid) + initial direct costs − lease incentives received  _(842-20-30-5)_
-
-### Subsequent measurement — the dual model — `ASC 842-20-35`
-
-- **Finance lease subsequent measurement** — The lease liability accretes at the discount rate; each payment is split into interest expense and principal reduction (effective-interest method). The ROU asset is amortized, generally straight-line, over the shorter of the lease term or the asset's useful life (over useful life if ownership transfers or a purchase option is reasonably certain). P&L shows two separate line items — interest + amortization — which are front-loaded (interest is higher early when the liability is larger).  _(842-20-35-1 to -35-7)_
-- **Operating lease subsequent measurement** — A single total lease cost is recognized on a straight-line basis over the lease term (total payments ÷ term). The lease liability still accretes at the discount rate (interest on the liability), and the ROU asset is reduced by the difference between the straight-line cost and the periodic interest on the liability (the ROU amortization is the plug). This keeps total cost level even as the interest/principal split changes. P&L shows one line — operating lease cost — typically in operating expenses, not split into interest and amortization. This preserves EBITDA relative to a finance lease.  _(842-20-35-3 to -35-6)_
-
-### Short-term lease exemption — `ASC 842-20-25-2`
-
-- **Short-term lease exemption** — A lessee may elect, by class of underlying asset, not to recognize an ROU asset or lease liability for a short-term lease — a lease with a term of 12 months or less that does not include a purchase option the lessee is reasonably certain to exercise. Recognize the lease cost straight-line over the term.  _(ASC 842-20-25-2)_
-- **Short-term lease term threshold** — 12 months or less months  _(ASC 842-20-25-2)_
-
-### Separating components — `ASC 842-10-15-28` to `15-42`
-
-- **Separating lease and non-lease components** — Consideration is allocated between lease and non-lease components (e.g. maintenance) on a relative standalone-price basis. A lessee may elect, by asset class, the practical expedient not to separate non-lease components — accounting for the whole as a single lease component (842-10-15-37), which grosses up the ROU asset and liability.  _(ASC 842-10-15-28 to 15-42)_
-
-### Variable lease payments — `ASC 842-20-55-1`
-
-- **Variable lease payment treatment** — Variable payments that depend on an index or rate are included in the liability at the index/rate in effect at commencement; subsequent changes in that index/rate are expensed as incurred (they do not trigger remeasurement on their own). Variable payments based on usage or performance (e.g. % of sales) are excluded from the liability and expensed as incurred.  _(ASC 842-20-55-1)_
-
-⚑ AUDIT FLASH POINT — index-based payments are frozen at day one. A common error is remeasuring the liability every time CPI moves. Under US GAAP, a change in an index/rate alone is a period expense, not a remeasurement (`842-20-35-5`). Remeasurement is triggered only by the events below — and this differs in mechanics from IFRS 16.
-
-### Remeasurement and reassessment triggers — `ASC 842-20-35-4` to `-35-5`
-
-- **Remeasurement triggers** — Remeasure the lease liability (and adjust the ROU asset) when: the lease term or a purchase-option assessment changes (35-4); the amount probable of being owed under a residual value guarantee changes; a contingency resolves such that some variable payments become fixed (in-substance fixed). Reassess classification only on a modification not accounted for as a separate contract, or on a change in lease term / purchase-option assessment (842-10-25-1).  _(ASC 842-20-35-4 to -35-5)_
-
-### Modifications — `ASC 842-10-25-8` to `25-18`
-
-- **Modification treatment** — A modification that grants an additional right of use at a price commensurate with its standalone price → separate new lease. Otherwise, remeasure the existing lease at the modification date using a revised discount rate, and reclassify if the criteria warrant. A modification that fully or partially terminates a lease reduces the ROU asset/liability with any difference to P&L.  _(ASC 842-10-25-8 to 25-18)_
-
-### Lessor model — `ASC 842-30`
-
-- **Lessor classification tests** — Lessor classification mirrors the lessee finance criteria (a)–(e) plus collectibility and residual tests: Sales-type lease — meets any of criteria (a)–(e) (842-10-25-2). Derecognize the asset, recognize a net investment in the lease and selling profit/loss at commencement (842-30-25-1). Direct financing lease — fails (a)–(e) but the PV of payments + any third-party residual guarantee ≥ substantially all of fair value, and collection is probable (842-10-25-3). Selling profit is deferred into the net investment. Operating lease — neither of the above. The lessor keeps the asset on its books and recognizes lease income straight-line (842-30-25-11).  _(ASC 842-30)_
-
-### Sale-and-leaseback — `ASC 842-40`
-
-- **Sale-leaseback treatment** — First test whether the transfer is a sale under ASC 606 (does control pass to the buyer-lessor?). If a leaseback would be a finance lease for the seller-lessee, the transfer is not a sale — account for it as a financing (the asset stays on the seller's books; proceeds are a borrowing) (842-40-25-2). If control transfers and the leaseback is operating, it is a sale — recognize the full gain/loss on the sale, adjusted for any off-market terms (842-40-30-1 to -30-3). US GAAP recognizes the full gain on the rights sold (subject to off-market adjustment), unlike IFRS 16's proportional-gain mechanic.  _(ASC 842-40-25-2, 842-40-30-1 to -30-3)_
-
-## Section 4 — Executable layer (Layer B): the procedure
-
-Run these steps on the transaction's facts. Each cites the Layer A rule it executes.
-
-1. **Confirm a lease exists** (Step 0 / §2): identified asset + control. If it is a service contract, stop — not in ASC 842.
-2. **Determine the lease term** (Step 1 / §2): include reasonably-certain renewals/terminations.
-3. **Check the short-term exemption** (§3, `842-20-25-2`): if ≤ 12 months and no reasonably-certain purchase option, expense straight-line and stop.
-4. **Classify** finance vs. operating (Step 2 / §2): test criteria (a)–(e); state the policy thresholds used.
-5. **Determine the discount rate** (§3): implicit rate, else IBR, else (non-PBE election) risk-free rate.
-6. **Measure the lease liability** = PV of lease payments (§3). Show the PV math in a memo line.
-7. **Measure the ROU asset** = liability + prepaid + initial direct costs − incentives (§3).
-8. **Book day-1 recognition** and **subsequent-period** entries (base §3 format) per the classification's P&L pattern.
-9. **Handle variable payments, remeasurement, modifications** as triggered (§3).
-10. **Classify balances and cash flows**, produce the **disclosure checklist** (§6) and **reviewer brief** with every flash point.
-
-### Worked example (illustrative)
-
-A lessee leases equipment for 5 years, paying $50,000 annually in arrears. The rate implicit in the lease is not readily determinable, so the lessee uses its incremental borrowing rate of 6%. There are no initial direct costs, prepayments, or incentives. PV of an ordinary annuity, 5 periods @ 6% = annuity factor 4.2124.
-
-> Lease liability = 50,000 × 4.2124 = $210,618 (rounded). ROU asset = $210,618.
-
-#### Day 1 — recognition (identical for finance and operating) — `ASC 842-20-30-1`, `-30-5`
-
-```
-Day 1 — recognize ROU asset and lease liability — driving rule: ASC 842-20-30-1 / -30-5
-  Dr  Right-of-use asset                     210,618
-      Cr  Lease liability                         210,618
-  (memo: PV = 50,000 × annuity factor 4.2124 @ 6%, 5 yrs; no IDC/prepaid/incentive; debits = credits ✓)
+```oa-check
+name: Existing 5-year equipment lease, full-precision discounting
+inputs:
+  payment: 50000
+  rate: 0.06
+  years: 5
+steps:
+  - factor: 1 / (1 + rate) + 1 / ((1 + rate) * (1 + rate)) + 1 / ((1 + rate) * (1 + rate) * (1 + rate)) + 1 / ((1 + rate) * (1 + rate) * (1 + rate) * (1 + rate)) + 1 / ((1 + rate) * (1 + rate) * (1 + rate) * (1 + rate) * (1 + rate))
+  - liability: round(payment * factor, 2)
+  - interest: round(liability * rate, 2)
+  - closing_liability: liability + interest - payment
+  - depreciation: round(liability / years, 2)
+  - total_finance_cost: interest + depreciation
+expected:
+  liability: 210618.19
+  interest: 12637.09
+  closing_liability: 173255.28
+  depreciation: 42123.64
+  total_finance_cost: 54760.73
 ```
 
-#### Year 1 — FINANCE LEASE — `ASC 842-20-35-1` to `-35-7`
+The component-election case has a 2-year contract with $60,000 annual combined payments in arrears. Standalone annual lease price is $50,000 and maintenance is $10,000; the supplied evidenced discount rate is 6%. Without the non-separation election the allocated lease PV is $91,669.63; with a valid election the combined lease PV is $110,003.56, an increase of $18,333.93. These are illustrative prices/rates, not prescribed thresholds.
 
-Interest = 6% × 210,618 = 12,637. Payment 50,000 → principal reduction = 50,000 − 12,637 = 37,363. ROU amortization (straight-line) = 210,618 ÷ 5 = 42,124.
-
-```
-End of Yr 1 — accrue interest and pay — driving rule: ASC 842-20-35-1 (effective interest)
-  Dr  Interest expense                        12,637
-  Dr  Lease liability                         37,363
-      Cr  Cash                                     50,000
-  (memo: interest 6% × 210,618 = 12,637; principal plug 37,363; liability → 173,255; debits 50,000 = credits 50,000 ✓)
-
-End of Yr 1 — amortize ROU asset — driving rule: ASC 842-20-35-7 (straight-line)
-  Dr  Amortization expense                    42,124
-      Cr  Right-of-use asset (accum. amort.)      42,124
-  (memo: 210,618 / 5 = 42,124; ROU → 168,494; debits = credits ✓)
-```
-
-Year-1 total P&L (finance) = 12,637 + 42,124 = 54,761 — front-loaded (> the 50,000 cash payment early on). Interest hits below the EBITDA line; amortization is a non-cash add-back.
-
-#### Year 1 — OPERATING LEASE — `ASC 842-20-35-3` to `-35-6`
-
-Single straight-line lease cost = 250,000 ÷ 5 = 50,000 per year. The liability still accretes interest of 12,637; the ROU asset is reduced by the plug = 50,000 − 12,637 = 37,363 so that total cost stays level at 50,000.
-
-```
-End of Yr 1 — single straight-line operating lease cost — driving rule: ASC 842-20-25-6
-  Dr  Operating lease cost (operating expense) 50,000
-      Cr  Lease liability (interest accretion)      12,637
-      Cr  Right-of-use asset (amortization plug)    37,363
-  (memo: SL cost 250,000/5 = 50,000; interest 6% × 210,618 = 12,637; ROU plug = 50,000 − 12,637 = 37,363; debits 50,000 = credits 50,000 ✓)
-
-End of Yr 1 — pay the lessor — driving rule: ASC 842-20-35-3
-  Dr  Lease liability                         50,000
-      Cr  Cash                                     50,000
-  (memo: liability after accretion 223,255 then payment 50,000 → 173,255; matches finance-lease liability balance; debits = credits ✓)
+```oa-check
+name: Component separation versus valid asset-class election
+inputs:
+  combined_payment: 60000
+  lease_ssp: 50000
+  service_ssp: 10000
+  rate: 0.06
+steps:
+  - lease_payment: combined_payment * lease_ssp / (lease_ssp + service_ssp)
+  - factor: 1 / (1 + rate) + 1 / ((1 + rate) * (1 + rate))
+  - separated_liability: round(lease_payment * factor, 2)
+  - combined_liability: round(combined_payment * factor, 2)
+  - increase: combined_liability - separated_liability
+expected:
+  separated_liability: 91669.63
+  combined_liability: 110003.56
+  increase: 18333.93
 ```
 
-Year-1 total P&L (operating) = 50,000, a single line above EBITDA — flat across all five years. Note the lease liability follows the identical amortization schedule under both models (173,255 after Year 1); only the ROU asset and the P&L geography/pattern differ.
 
-> ⚑ AUDIT FLASH POINT — classification swings EBITDA and the expense pattern, not the liability. Finance vs. operating produces the same balance-sheet liability schedule but a higher, front-loaded total cost and an EBITDA-favourable geography (interest + amortization vs. a single operating expense) under finance. A wrong classification misstates EBITDA, leverage covenants, and the expense trajectory. Evidence the criteria (a)–(e) conclusion and the threshold policy.
+### Preserved original whole-dollar journal proposals
 
-## Section 5 — Divergence from IFRS 16
+Subject to the case assumptions and separately sourced current classification and amortisation conclusions: commencement Dr ROU asset / Cr lease liability $210,618. For the finance case, first-year Dr interest / Cr liability $12,637, Dr liability / Cr cash $50,000, then Dr ROU amortisation / Cr accumulated ROU amortisation $42,124. The liability closes at $173,255; net ROU is $168,494 and total finance expense is $54,761. Each journal balances; independent whole-dollar rounding can differ from cent-level displayed balances.
 
-The headline divergence in leases is the lessee model itself, and it is one of the largest US-GAAP/IFRS differences in practice.
+For the operating case, total fixed payments $250,000 / 5 years give $50,000 annual lease cost. The liability first accretes to $223,255 and payment reduces it to $173,255. A combined proposed journal is Dr lease cost $50,000 / Cr lease liability $12,637 / Cr ROU asset $37,363, followed by Dr lease liability / Cr cash $50,000. The $37,363 ROU reduction is the expense less liability accretion, not a separate extra expense. These ordinary mechanics do not apply unchanged after impairment, a modification, a representative alternative systematic pattern or capitalisation into another asset.
 
-**US GAAP vs IFRS 16 comparison table**  _(IFRS 16.31, .36, .5-.8, .42, .100, .61)_
+## When to refuse or refer
 
-| Area | US GAAP (ASC 842) | IFRS (IFRS 16) |
-| --- | --- | --- |
-| **Lessee model** | **Dual model** — finance *or* operating. Operating leases keep a **single straight-line operating expense** (EBITDA-neutral) | **Single model** — **all** leases front-loaded: depreciation of ROU + interest on liability. **Boosts EBITDA, raises finance costs** (`IFRS 16.31`, `.36`) |
-| Operating-lease P&L pattern | One straight-line line; no interest/amortization split | No operating leases for lessees; every lease is front-loaded |
-| **Low-value asset exemption** | **None** | **Yes** — leases of low-value assets (~USD 5,000 new) may be expensed (`IFRS 16.5`–`.8`); unique to IFRS |
-| Short-term exemption | ≤ 12 months, by asset class (`842-20-25-2`) | ≤ 12 months, by asset class (`IFRS 16.5`) — same |
-| Index-linked payment remeasurement | Change in index/rate alone is **expensed**, no remeasurement (`842-20-35-5`) | Change in index/rate **triggers remeasurement** of the liability (`IFRS 16.42`) |
-| Discount-rate fallback | Risk-free-rate election available to non-PBEs | No risk-free election |
-| Sale-leaseback gain | **Full gain** on rights sold (off-market adjusted) | **Proportional gain** — only on rights transferred to the buyer (`IFRS 16.100`) |
-| Lessor model | Sales-type / direct financing / operating (`842-30`) | Finance / operating (`IFRS 16.61`) — substantially aligned |
-| Cash-flow presentation | Operating-lease payments → **operating**; finance-lease principal → **financing**, interest per policy | All lease principal → **financing**; interest per policy. IFRS pushes more cash to financing |
+Refuse a final current-US-GAAP accounting conclusion while authoritative ASC text or required contracts/adoption facts are unavailable. Do not treat a readable ASU as full current Codification access. Refer scope, complex own-equity/lease/acquisition classifications, valuation, enforceability, impairment, SEC presentation and tax effects to the appropriate specialist. Return the source gap and proposed arithmetic working paper, not a signed financial statement or assurance conclusion. Exclude grandfathered leveraged leases under ASC 840 transition, revenue outside the lease model under ASC 606 and execution of ASC 360 impairment. Refer their scope/interaction questions separately. For dual reporters prepare a separate `ifrs16-leases` assessment.
 
-Always run `ifrs16-leases` in parallel for dual-reporters and present both answers (base §2). The same lease can be a flat $50,000 operating expense under ASC 842 and a front-loaded $54,761 (depreciation + interest) under IFRS 16.
-
-## Section 6 — Disclosure checklist — `ASC 842-20-50`
-
-Trigger and produce as relevant:
-
-- [ ] Nature of leases, terms, options, and significant judgements (`50-3`)
-- [ ] Total lease cost disaggregated: finance (amortization + interest), operating lease cost, short-term, variable, and sublease income (`50-4`)
-- [ ] Weighted-average remaining lease term and weighted-average discount rate, by finance and operating (`50-4`)
-- [ ] Cash paid for amounts in lease liabilities, split by operating/financing (`50-4`)
-- [ ] ROU assets obtained in exchange for new lease liabilities (`50-4`)
-- [ ] **Maturity analysis** of lease liabilities (undiscounted) for each of the next five years and thereafter, reconciled to the discounted liability (`50-6`)
-- [ ] Practical expedients and accounting policy elections taken — short-term, non-separation of components, risk-free rate (`50-9`)
-- [ ] Lessor disclosures: lease income, net investment components, residual-value risk management (`842-30-50`)
-
-## Section 7 — Topic self-checks (in addition to base §7)
-
-- [ ] Lease vs. service determined (identified asset + control of use); cited `842-10-15`
-- [ ] Lease term includes only reasonably-certain renewals/terminations
-- [ ] Short-term exemption considered (≤ 12 mo, no reasonably-certain purchase option)
-- [ ] Classification tested against all five criteria (a)–(e); threshold policy (≈75% / ≈90%) stated as judgement
-- [ ] **Both** ROU asset and lease liability recognized (dual model is P&L pattern, not on/off balance sheet)
-- [ ] Discount rate: implicit, else IBR, else risk-free (non-PBE) — stated
-- [ ] Lease liability = PV of payments; PV math shown in a memo line
-- [ ] ROU = liability + prepaid + IDC − incentives
-- [ ] Finance: interest (effective rate) + straight-line ROU amortization, front-loaded
-- [ ] Operating: single straight-line cost; ROU reduced by the plug; liability accretes
-- [ ] Index/rate payments frozen at commencement; usage-based excluded
-- [ ] Remeasurement/modification triggers checked
-- [ ] Lessor classification (sales-type / direct financing / operating) where the entity is the lessor
-- [ ] Divergence from IFRS 16 checked for dual-reporters (especially the single vs. dual model)
-
-## Section 8 — Disclaimer
+## Disclaimer
 
 Provides computational and interpretive guidance on ASC 842 only. Not an audit and not assurance. Lease classification and measurement turn heavily on entity-specific facts and significant judgement (lease term, discount rate, classification thresholds). Have outputs reviewed and signed by a qualified accountant before they are reflected in financial statements relied upon by third parties.
 
+## Sources
+
+| Source | Official URL | Actual read scope and date |
+|---|---|---|
+| ASU 2016-02 Section A | [ASU 2016-02 Section A](https://storage.fasb.org/ASU%202016-02_Section%20A.pdf) | Read for ASC 842-10-15-33 through -15-37, -25-1 through -25-7, -55-2/-55-3; 842-20-25-1 through -25-8, -30-1 through -30-6, -35-1 through -35-9, -45-5 and neighbouring exceptions; actual official PDF; 2026-11-15 |
+| ASU 2021-09 | [ASU 2021-09](https://storage.fasb.org/ASU%202021-09.pdf) | Read for ASC 842-20-30-3, -50-10, transition/effective-date summary and adjacent disclosure changes; actual official PDF; 2026-11-15 |
+| Current authoritative Codification | [ASC](https://asc.fasb.org/) | Attempted 2026-11-15; web root returned no readable lines; ordinary Brave visit reached /Login but rendered only a stalled loader. Not read; no current-authority claim. |
+
+
+### Not yet confirmed: individual current-ASC source requests
+
+The official Codification recovery did not yield operative text. Each following item is a specific retained current-source request, not executable current-ASC guidance; read ASU calculations and corrections above have only their stated version scope.
+
+| Original topic retained | Exact question or condition to resolve |
+|---|---|
+| Initial adoption and scope | Original PBE periods after 15 December 2018 and other-entity periods after 15 December 2021, all subsequent deferrals and transition choices, and replacement of ASC 840; do not use an original adoption date without entity-specific amendments. |
+| Excluded assets and arrangements | Intangibles under ASC 350, mineral/oil/gas exploration/use under ASC 930, biological assets, inventory and assets under construction; grandfathered leveraged leases, non-lease revenue and ASC 360 impairment need separate applicable guidance. |
+| Identified asset and substitution | Explicit/implicit identification and supplier substantive substitution: practical ability throughout use plus economic benefit, not benefit alone. Recover current exceptions and assessment evidence. |
+| Control of use | Both substantially all economic benefits and direction of how/for-what-purpose use; predetermined-use and protective-right conditions must be read before concluding lease versus service. |
+| Lease term | Non-cancellable period, reasonably certain extension/purchase and termination options, lessor-controlled periods and reassessment conditions. The original economic-incentive assessment inputs, including significant leasehold improvements, below-market rates and importance of the location, remain individually unconfirmed under current ASC; retain and document those facts without treating the old high-threshold description as cleared. |
+| Finance criterion 1 | Ownership transfers by end of term. |
+| Finance criterion 2 | Purchase option reasonably certain to be exercised. |
+| Finance criterion 3 | Major part of remaining economic life, including the near-end-of-economic-life qualification. |
+| Finance criterion 4 | PV of lease payments plus applicable residual guarantee not already in payments is substantially all fair value. Do not double-count the same guarantee. |
+| Finance criterion 5 | Specialised nature leaving no expected alternative lessor use at term end. |
+| 75% and 90% indicators | Verify the current reasonable-approach status and conditions of the original 75% major-part and 90% substantially-all illustrations; they are not automatic bright-line classification rules. |
+| Payment perimeter | Fixed/in-substance fixed payments less incentives; index/rate at commencement; reasonably certain purchase price; term-consistent termination penalties and probable residual-guarantee payments. Check current inclusions and avoid double counting. |
+| Short-term election | The original no-more-than-12-month term and no reasonably certain purchase-option wording require the actual ASC glossary and election conditions; do not import IFRS's different purchase-option definition or an IFRS low-value exemption. |
+| Finance ROU amortisation | Useful life versus lease term when ownership transfers or a purchase option is reasonably certain; case amortisation period above is supplied, not a universal 5-year rule. |
+| Operating subsequent cost | Current impairment consequences, alternative representative systematic basis and other-asset capitalisation; the read original ASU ordinary single-cost mechanics are not a universal flat plug. |
+| Variable payments | Index/rate changes versus usage/performance amounts, initial exclusion and later expense/capitalisation, and events requiring liability remeasurement. Do not apply an unconditional no-index-reset statement. |
+| Reassessment and remeasurement | Option/term changes, residual-guarantee expectation changes, resolution of variable payments into fixed payments and the applicable revised/unchanged discount rate and reclassification triggers. |
+| Modification | Added right at commensurate standalone price as separate contract versus remeasurement with revised rate; scope reductions and partial-termination gain/loss versus ROU adjustment, with all current conditions. |
+| Lessor sales-type classification | Applicable finance-type criteria, control, collectibility and variable-payment exceptions; recover intervening amendments. The original proposed commencement outcome, derecognise the underlying asset and recognise a net investment and selling profit or loss, remains individually unconfirmed for execution until current recognition conditions and exceptions are recovered. |
+| Lessor direct financing | PV of payments plus relevant third-party guarantees, substantially-all fair value, probable collectibility and no sales-type condition; deferred selling profit and later income require current text. |
+| Lessor operating | Asset retention, depreciation, lease-income pattern and any representative alternative; current variable-payment and common-control guidance cannot be inferred from the original 2016 text. |
+| Sale and leaseback | ASC 606 control transfer, finance/sales-type leaseback bars, repurchase rights and their exceptions require current text. Preserve the original proposed failed-sale financing outcome, seller retains the asset and records proceeds as borrowing, and the contrasting control-passing operating-leaseback proposal, full sale gain or loss adjusted for off-market terms. Both outcomes and the seller/buyer entries remain individually unconfirmed for execution until all current sale, recognition and measurement conditions are recovered; operating classification alone does not establish a sale. |
+| Components | Current lessor allocation and any lessor election are separate from the actually read lessee relative-standalone-price and asset-class combination election. |
+| Presentation | Finance interest/ROU amortisation versus operating single-cost presentation; separate balance-sheet presentation/disclosure and all impairment/capitalisation exceptions. |
+| Cash flows | Principal financing and interest under Topic 230 for finance leases; operating classification and amounts capitalised into another asset, including investing exceptions. Do not import IFRS's policy choice or say all operating-lease payments are always operating cash flows. |
+| Disclosures: narrative and judgments | Nature, options, restrictions/guarantees, significant classification/term/rate judgments and policy/election choices. |
+| Disclosures: amounts | Disaggregated finance/operating/short-term/variable costs, sublease income, weighted-average remaining term and discount rate by type, cash paid and non-cash ROU additions. |
+| Disclosures: maturity and lessor | Payments for each of the next 5 years and thereafter with liability reconciliation; lessor income, net investment and residual-value risk information. Verify current scope and detail. |
+| IFRS comparison: recognition and cost | Compare conditional finance/single-model and operating expense profiles, not an assertion that operating leases preserve conventional EBITDA. Both frameworks have their own exemptions and capitalisation/impairment conditions. |
+| IFRS comparison: low value and short term | The old approximately $5,000 IFRS low-value illustration is not a US threshold or a mandatory IFRS rule; actual IFRS Basis for Conclusions recovery remains needed. Short-term purchase-option conditions are not identical. |
+| IFRS comparison: measurement and specials | Separately source each framework's index/rate remeasurement, discount-rate/risk-free election, sale-and-leaseback gains and continuing rights, lessor model and cash-flow classification. Run both Guides, not a generic identical-treatment assertion. |
+
+### Retained execution and self-checks
+
+The original work programme remains: establish a lease and applicable scope; determine term/options; record classification and every relevant criterion; identify payment components and rate/elections; compute PV and ROU; book initial and subsequent journals; track variable payments and reassessment; separately analyse modifications, lessor and sale-and-leaseback facts; prepare cash flows and disclosure reconciliations; submit source gaps and the reviewer brief.
+
+The retained checks cover identified-asset/control/substitution evidence; term and options; all 5 classification criteria without treating 75%/90% as mandatory bright lines; complete payment perimeter; implicit-rate/IBR/election order; ROU reconciliation and journals; expense pattern and impairment; variables/remeasurement/modifications; lessor and sale-and-leaseback conditions; presentation/cash flows; disclosures; and a separate IFRS comparison. Resolve each applicable source row before a final accounting conclusion.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-gaap-asc842-leases` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-gaap-asc842-leases. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-gaap-asc842-leases` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-gaap-asc842-leases. If neither is available, confirm every figure against the official source pages cited above before relying on it.
