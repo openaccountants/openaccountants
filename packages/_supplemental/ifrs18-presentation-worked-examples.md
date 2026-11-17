@@ -11,7 +11,9 @@ depends_on:
   - financial-reporting-workflow-base
 category: financial-reporting
 type: computation
-tier: 2
+tier: 1
+reviewed_by: "Talha Mehmood"
+reviewed_on: 2026-11-11
 sources_checked: IFRS 18 and IAS 7 official texts, checked 2026-11-08
 authored_by: Talha Mehmood, ACA, FCCA
 domain: financial-reporting
