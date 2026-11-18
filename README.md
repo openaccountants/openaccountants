@@ -3,6 +3,7 @@
 **Tax skills for AI, written from the law and approved by named accountants.** Your AI answers tax questions from memory. Add these skills and it answers from the law: every rate, threshold and deadline links to the official page it came from, and each skill says which accountant, if any, has approved it.
 
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/openaccountants/openaccountants/badge)](https://securityscorecards.dev/viewer/?uri=github.com/openaccountants/openaccountants)
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/16906/badge)](https://www.bestpractices.dev/projects/16906)
 [![Skill checks](https://github.com/openaccountants/openaccountants/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/openaccountants/openaccountants/actions/workflows/validate.yml)
 [![Approved by accountants](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fopenaccountants%2Fopenaccountants%2Fstatus-data%2Fstatus.json&query=%24.approvers&label=named%20accountants&color=047857)](#the-accountants)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-listed-047857)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.openaccountants/openaccountants)
