@@ -1,279 +1,250 @@
 ---
 name: emerging-market-corridors
-description: "version: 1.0"
-version: 1.0
+description: >
+  Treaty withholding and permanent-establishment comparison for the ten retained
+  UAE, Saudi, South African, Indian, Turkish, Israeli and Kenyan corridors, with
+  source direction, eligibility, protocol dates and explicit evidence holds for 2026.
+version: 1.1
 jurisdiction: GLOBAL
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-17
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: cross-country-method
 ---
 
-# Emerging Market Corridors
+# Emerging Market Treaty Corridors v1.1
 
-## Quick Reference
+> **General reference only.** This material supports AI-assisted tax/accounting workflows. It has not been reviewed for any particular person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review a filing, payment, amendment or tax position.
 
-**Quick Reference**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Jurisdiction | Emerging and frontier markets |
-| Corridors Covered | UAE-IN, SA-UK, ZA-UK, ZA-NL, IN-SG, IN-MU, TR-DE, TR-NL, IL-US, KE-UK |
-| Number of Corridors | 10 |
-| Last Verified | May 2026 |
-| Key Note | Several corridors involve jurisdictions with no/low income tax (UAE) or special regimes (Mauritius). India-Mauritius is one of the most scrutinised treaty corridors globally due to treaty shopping concerns. |
+Payers and recipients examining the original ten treaty pairs below. The arrows preserve the corridor names; they do **not** identify payment direction. A source-state ceiling limits a tax that domestic law charges; it does not create that tax or establish a final withholding instruction. A lower domestic rate or exemption can prevail. Unless a row expressly distinguishes direction, read it as a convention ceiling for income arising in one state and derived by a qualifying resident of the other, subject to that article's source rule.
+
+## Quick reference and required inputs
+
+Use the corridor sections for dividend ownership tests, interest/royalty definitions, technical-service treatment and exceptions. Do not extract a percentage without its row. The PE comparison gives particular project/service triggers, not permission to ignore a fixed place, agent or separate service article. **Not yet approved:** no professional approval is claimed for this version.
+
+Before giving a rate, obtain the payer/source state, recipient/treaty residence, payment date and type, gross amount and any net-of-tax promise; beneficial-owner evidence where required; legal form, direct ownership and holding dates; prior-year income mix where required; service location/duration and connected projects; PE/fixed-base connection; treaty abuse/LOB facts; domestic exemptions, residence certificate and relief-at-source/refund documents. If an operative condition is missing, return a conditional comparison and identify the missing evidence, not a final withholding amount.
+
+## The method, step by step
+
+1. Establish domestic charge, payment source and treaty residence. Read the relevant article's actual income definition; an invoice heading does not determine classification.
+2. Select the operative treaty, protocols and matched MLI provisions for the payment date. Synthesized texts are reading aids; authentic instruments prevail. Check residence, any saving clause and anti-abuse/LOB conditions.
+3. Apply the article's ownership, recipient, subject-to-tax and remittance conditions. Then check the connected-PE/fixed-base and related-party-excess exceptions before using a gross ceiling.
+4. Compare the ceiling with the applicable domestic charge and exemptions. Obtain the prescribed relief documents; if relief-at-source is unavailable, use the applicable refund procedure rather than silently under-withholding.
+5. Record the conditional result and sources for professional review. This comparison does not prepare a return or compute residence-state credits, VAT, payroll or branch-profit attribution.
+
+These steps follow the payment articles and exceptions cited on each row; for practical relief documentation see the South African royalty declaration guidance in Sources.
 
 ## UAE → India
 
-**UAE → India Withholding Tax Rates**  _(Art 10(2), 11(2)(a), 11(2)(b), 11(3), 12(2))_
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends | 10% | Art 10(2) | Flat rate (2007 Protocol) |
-| Interest — banks/FIs | 5% | Art 11(2)(a) | Bona fide banking business |
-| Interest — general | 12.5% | Art 11(2)(b) | All other interest |
-| Interest — government | 0% | Art 11(3) | Government/central bank exempt |
-| Royalties | 10% | Art 12(2) | Standard rate |
-| Fees for technical services | N/A | — | No FTS article — domestic law applies (10%) |
-
-**Source:** India-UAE DTAA signed 1992, amended by 2007 Protocol. Treaty text (TaxSutra). Beacon Filing.
-**Special provisions:** UAE introduced 9% corporate tax in June 2023, but the treaty structure predates this. The 2007 Protocol changed dividends from 5%/15% split to flat 10%. No FTS article — India taxes fees for technical services at domestic rate (10% under IT Act s.115A) or under Art 7 (business profits). UAE does NOT withhold on any outbound payments. India requires Form 10F (Form 41 from 2026) + TRC. Major corridor for NRI investment and Middle East-India business flows.
-**Last verified:** May 2026
+| Item | Rule and operative conditions | Authority |
+| --- | --- | --- |
+| Dividends | 10% source-state ceiling for a treaty-resident beneficial owner; no shareholding tier. The PE/fixed-base-connected holding exception applies. | Arts 10(2),(4); [Official text](https://wm.incometaxindia.gov.in/w/uae-synthesised-text-1) |
+| Interest | 5% on a loan granted by a bank carrying on bona fide banking business or similar financial institution; 12.5% otherwise. Exempt if derived and beneficially owned by the other government, political subdivision/local authority or central bank. PE/fixed-base connection and related-party excess override the ceiling. | Art 11(2)–(7); [Official text](https://wm.incometaxindia.gov.in/w/uae-synthesised-text-1) |
+| Royalties | 10% of gross royalties for a treaty-resident beneficial owner. The definition includes equipment/know-how but excludes payments for mines, quarries, petroleum or other natural resources; PE/fixed-base and non-arm’s-length excess exceptions apply. | Art 12(2)–(6); [Official text](https://wm.incometaxindia.gov.in/w/uae-synthesised-text-1) |
+| Technical services and residence | There is no separate FTS ceiling in this text. Classify the actual payment: ordinary enterprise services within Art 7 are source-exempt only without a PE; royalties and independent personal services need their own articles. A UAE company must be incorporated there and managed and controlled wholly there; a residence certificate alone does not replace Art 4 eligibility. Apply the MLI PPT replacing Art 29. Do not substitute a domestic FTS percentage merely because the treaty lacks an FTS article. | Arts 4(1)(b),7,12,14,29; MLI 7(1); [Official text](https://wm.incometaxindia.gov.in/w/uae-synthesised-text-1) |
 
 ## Saudi Arabia → UK
 
-**Saudi Arabia → UK Withholding Tax Rates**  _(Art 10, 11, 12, 7)_
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — general | 5% | Art 10 | Standard rate |
-| Dividends — property investment vehicle | 15% | Art 10 | Qualifying property income |
-| Interest | 0% | Art 11 | Taxable only in residence state |
-| Royalties — equipment use | 5% | Art 12 | Industrial/commercial/scientific equipment |
-| Royalties — other | 8% | Art 12 | Copyright, patents, etc. |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
-
-**Source:** Saudi Arabia-UK Convention signed 2007. HMRC DT16603. PwC Saudi Arabia WHT table.
-**Special provisions:** Saudi domestic WHT: 5% on dividends, 5% on interest, 15% on royalties. Treaty interest rate of 0% is better than Saudi domestic 5%. Split royalty rates (5% equipment, 8% other). Saudi Arabia does not tax personal income — treaty primarily relevant for corporate cross-border flows. New UK-GCC FTA signed May 2026 covers trade but does not affect treaty WHT rates.
-**Last verified:** May 2026
+| Item | Rule and operative conditions | Authority |
+| --- | --- | --- |
+| Dividends | 5% of gross dividends generally; 15% where qualifying dividends are paid by a property investment vehicle. Beneficial owner must be a treaty resident; PE/fixed-base connected holdings move to Art 7/14. Do not treat an ordinary company as a property investment vehicle without establishing that category. | Art 10(2),(4); Art 3(2); [Official text](https://www.gov.uk/government/publications/saudi-arabia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2007-uk-saudi-arabia-double-taxation-convention-and-protocol-in-force) |
+| Debt-claim income | Residence-state-only taxation (0% source tax) for a treaty-resident beneficial owner. Effective PE/fixed-base connection moves to Art 7/14; related-party excess remains taxable under domestic law. | Art 11(1)–(4); [Official text](https://www.gov.uk/government/publications/saudi-arabia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2007-uk-saudi-arabia-double-taxation-convention-and-protocol-in-force) |
+| Royalties | 5% of gross equipment royalties; 8% for other royalties, for the beneficial owner. The PE/fixed-base connection, source rule and related-party excess provisions remain applicable. | Art 12(2)–(6); [Official text](https://www.gov.uk/government/publications/saudi-arabia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2007-uk-saudi-arabia-double-taxation-convention-and-protocol-in-force) |
+| Services and treaty abuse | Ordinary corporate business profits are source-exempt only without a PE and only if no separate income article governs. Individuals must test Art 14 fixed base or presence of at least 183 days in the stated twelve-month period. The MLI PPT replaces Art 28; a paper intermediary is not entitled merely because the table rate is low. | Arts 7(1),(5),14,28; MLI 7(1); [Official text](https://www.gov.uk/government/publications/saudi-arabia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2007-uk-saudi-arabia-double-taxation-convention-and-protocol-in-force) |
 
 ## South Africa → UK
 
-**South Africa → UK Withholding Tax Rates**  _(Art 10(2)(a), 10(2)(b), 10(2)(c), 11(1), 12(1), 7)_
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — substantial (≥10% capital) | 5% | Art 10(2)(a) | Direct investment |
-| Dividends — property investment company | 15% | Art 10(2)(b) | Property income exception |
-| Dividends — portfolio | 10% | Art 10(2)(c) | Standard rate |
-| Interest | 0% | Art 11(1) | Taxable only in residence state |
-| Royalties | 0% | Art 12(1) | Taxable only in residence state |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
-
-**Source:** UK-South Africa Convention signed 2002, amended by 2010 Protocol (effective April 2012). HMRC. PwC South Africa WHT table.
-**Special provisions:** Three-tier dividend structure (5%/10%/15%). SA domestic WHT: dividends 20%, interest 15%, royalties 15%. Zero interest and royalties is highly favourable — one of SA's best treaty rates. 2010 Protocol updated dividend article. London remains a key financial centre for South African businesses.
-**Last verified:** May 2026
+| Item | Rule and operative conditions | Authority |
+| --- | --- | --- |
+| Dividends | 5% if the treaty-resident beneficial owner is a company holding at least 10% of capital; 15% for qualifying dividends paid by a property investment company; 10% otherwise. Establish the relevant category and the Art 3 property/tax-exempt-income definitions, and do not use this table for a PE-connected holding. | Arts 3(1)(l)–(m),10(2),(4); [Official text](https://www.gov.uk/government/publications/south-africa-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2002-uk-south-africa-double-taxation-convention-in-force) |
+| Interest and royalties | Residence-state-only (0% source tax) for the treaty-resident beneficial owner under Arts 11 and 12. The PE-connected claim/right and related-party excess rules are exceptions, not automatic exemptions for every payment. | Arts 11(1),(3)–(4),12(1),(3)–(4); [Official text](https://www.gov.uk/government/publications/south-africa-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2002-uk-south-africa-double-taxation-convention-in-force) |
+| Services, residence and relief | Art 7 ordinary business profits require a no-PE conclusion; independent services by an individual can create an Art 5(3)(b) PE. Apply the MLI PPT; a dual-resident entity needs the competent-authority result under MLI Art 4 rather than an assumed effective-management tie-breaker. Art 22 limits relief where the other state taxes only remitted/received amounts, to the income/gains taxed there. | Arts 4,5(3)(b),7,22; MLI 4,7; [Official text](https://www.gov.uk/government/publications/south-africa-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2002-uk-south-africa-double-taxation-convention-in-force) |
 
 ## South Africa → Netherlands
 
-**South Africa → Netherlands Withholding Tax Rates**  _(Art 10, 11, 12, 7)_
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — substantial (≥10% capital) | 5% | Art 10 | Direct investment |
-| Dividends — portfolio | 10% | Art 10 | Standard rate |
-| Interest | 0% | Art 11 | Taxable only in residence state |
-| Royalties | 0% | Art 12 | Taxable only in residence state |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
-
-**Source:** South Africa-Netherlands Convention. MLI-modified synthesised text (SARS June 2024). PwC South Africa WHT table.
-**Special provisions:** Netherlands has historically been a key holding company jurisdiction for African investments. Zero interest and royalties make the NL-ZA corridor highly attractive. SA domestic WHT: dividends 20%, interest 15%, royalties 15%. Treaty modified by MLI — PPT applies. Netherlands conditional WHT (25.8%) does not apply (SA is not on low-tax list).
-**Last verified:** May 2026
+| Item | Rule and operative conditions | Authority |
+| --- | --- | --- |
+| Dividends | Textual ceiling 5% if the treaty-resident beneficial owner is a company holding at least 10% of capital throughout a 365-day period including payment (corporate reorganisation exception in MLI Art 8); 10% otherwise. Art 10(9) can override the table for specified substantial individual shareholders who emigrated within the last ten years, subject to its shareholding and outstanding-assessment conditions. | Art 10(2),(6),(9); MLI 8(1); [Official text](https://www.sars.gov.za/wp-content/uploads/Legal/Agreements/Legal-INTA-DTA-MLI-2024-06-Netherlands-SA-Model-Synthesised-Text-MLI.pdf) |
+| MFN limitation | Art 10(10) contains an automatic later-third-country MFN clause for the substantial dividend category. The 5% textual ceiling is not a conclusion that no lower entitlement exists. A claim to exemption or a lower MFN rate is held until the triggering convention, operative dates and any relevant judicial consequences are established for the payment. | Art 10(10); [Official text](https://www.sars.gov.za/wp-content/uploads/Legal/Agreements/Legal-INTA-DTA-MLI-2024-06-Netherlands-SA-Model-Synthesised-Text-MLI.pdf) |
+| Interest and royalties | Residence-state-only (0% source tax) for a treaty-resident beneficial owner; PE-connected claim/right and related-party excess are excluded from that simple result. Art 12 does not list equipment rent as a royalty merely because domestic law might. | Arts 11(1),(3)–(6),12(1),(3)–(6); [Official text](https://www.sars.gov.za/wp-content/uploads/Legal/Agreements/Legal-INTA-DTA-MLI-2024-06-Netherlands-SA-Model-Synthesised-Text-MLI.pdf) |
+| Services and eligibility | Art 7 business profits are source-exempt without a PE, subject to separate articles. The MLI PPT and dual-resident-entity mutual-agreement rule apply; the synthesized text is an aid and the authentic convention/MLI prevail. Do not recommend an Amsterdam holding structure from the rate alone. | Arts 4,7; MLI 4,7; [Official text](https://www.sars.gov.za/wp-content/uploads/Legal/Agreements/Legal-INTA-DTA-MLI-2024-06-Netherlands-SA-Model-Synthesised-Text-MLI.pdf) |
+| Dutch conditional withholding | Dutch-source related-body payments can fall within Wet bronbelasting 2021, including low-tax-country and specified abuse situations; the 2026 rate is 25.8%. A South African recipient address does not establish exemption from every abuse or indirect-payment case. Check the actual related-body/low-tax/abuse conditions alongside treaty eligibility. | Wet bronbelasting 2021; Belastingdienst scope/rate headings; [Official text](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/bronbelasting-rente-en-royalty/) |
 
 ## India → Singapore
 
-**India → Singapore Withholding Tax Rates**  _(Art 10, 11, 12, Protocol)_
+| Item | Rule and operative conditions | Authority |
+| --- | --- | --- |
+| Dividends | 10% of gross if the beneficial owner is a company owning at least 25% of the shares; 15% otherwise. The PE/fixed-base exception applies. In the reverse direction Art 10(3) exempts additional Singapore dividend tax while Singapore does not impose such a tax in addition to tax on company profits. | Art 10(2),(3),(5); [Official text](https://www.iras.gov.sg/media/docs/default-source/dtas/protocol-amending-singapore-india-dta-%28ratified%29%28mli%29%281-oct-2019%29.pdf) |
+| Interest | 10% for a loan granted by a bank carrying on bona fide banking business or similar financial institution, including an insurance company; 15% otherwise, for a treaty-resident beneficial owner. PE/fixed-base connection and related-party excess remain exceptions. | Art 11(2),(4),(6); [Official text](https://www.iras.gov.sg/media/docs/default-source/dtas/protocol-amending-singapore-india-dta-%28ratified%29%28mli%29%281-oct-2019%29.pdf) |
+| Royalties and FTS | 10% for a beneficial owner under Art 12(2) as replaced by the 2005 Protocol Art 4. FTS must satisfy Art 12(4): ancillary/subsidiary to a royalty right, make available usable technology, or qualifying development/transfer of a technical plan/design enabling application. Apply every Art 12(5) exclusion, the PE/fixed-base exception and the related-party excess rule. A consultancy label alone does not establish FTS. | Art 12(2)–(8); 2005 Protocol Art 4; [Official text](https://www.iras.gov.sg/media/docs/default-source/dtas/protocol-amending-singapore-india-dta-%28ratified%29%28mli%29%281-oct-2019%29.pdf) |
+| Share gains and LOB | The 2016 Protocol preserves residence-only treatment for shares acquired before 1 April 2017 under Art 13(4A); shares acquired on/after that date fall within source taxation under 4B. The 50% domestic-rate transition covered gains arising 1 April 2017–31 March 2019 only. Art 24A applies to 4A/4C benefits: primary-purpose and shell/conduit tests; grandfathered-share shell test uses each of the two preceding twelve-month blocks, annual Singapore operations expenditure S$200,000 / Indian Rs5,000,000, or the stated recognized listing route, without displacing the purpose test. The transition is historical, not a current discount. | 2016 Protocol Arts 2–4; Arts 13(4A)–(5),24A; [Official text](https://www.iras.gov.sg/media/docs/default-source/dtas/protocol-amending-singapore-india-dta-%28ratified%29%28mli%29%281-oct-2019%29.pdf) |
+| Remittance and PPT | Art 24 limits source relief to income remitted/received where the residence state taxes on that basis, except the stated government/approved-person rule. Apply Annex A’s Art 29A PPT. The 2005 LOB history is not a general substance safe harbour for every dividend, royalty or FTS claim. | Art 24; Annex A (MLI), new Art 29A; [Official text](https://www.iras.gov.sg/media/docs/default-source/dtas/protocol-amending-singapore-india-dta-%28ratified%29%28mli%29%281-oct-2019%29.pdf) |
 
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — substantial (≥25% capital) | 10% | Art 10 | Lower rate |
-| Dividends — portfolio | 15% | Art 10 | Standard rate |
-| Interest — banks/FIs | 10% | Art 11 | Bona fide banking business |
-| Interest — general | 15% | Art 11 | Standard rate |
-| Royalties | 10% | Art 12 | Standard rate |
-| Fees for technical services | 10% | Protocol | Protocol provision |
+## India → Mauritius
 
-**Source:** India-Singapore DTAA. PwC India and Singapore WHT tables.
-**Special provisions:** Singapore is India's largest FDI source. LOB article introduced by 2005 Protocol requires Singapore recipient to pass "shell/conduit company" test. Capital gains on shares — treaty allows source-country taxation (India) subject to conditions (unlike pre-2017 India-Mauritius treaty). India domestic WHT: 20% on most categories. FTS provision added by protocol.
-**Last verified:** May 2026
-
-## India → Mauritius (Famous Corridor)
-
-**India → Mauritius Withholding Tax Rates**  _(Art 10, 11, 12, 13)_
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — substantial (≥10% capital) | 5% | Art 10 | Lower rate |
-| Dividends — portfolio | 15% | Art 10 | Standard rate |
-| Interest | 7.5% | Art 11 | Unique rate — lower than most India treaties |
-| Royalties | 15% | Art 12 | Standard rate |
-| Fees for technical services | 10% | Art 13 | Standard rate |
-| Capital gains on shares | Taxable in India | Art 13 | 2016 Protocol amendment — source taxation |
-
-**Source:** India-Mauritius DTAA signed 1983, amended by 2016 Protocol and 2024 Protocol. ClearTax India. PwC Mauritius.
-**Special provisions:**
-
-**CRITICAL — This is one of the most scrutinised treaty corridors globally:**
-
-1. **Capital gains history:** Pre-2016, capital gains on Indian shares by Mauritius residents were exempt from Indian tax (taxable only in Mauritius, which imposed 0% on foreign-source gains). This created massive treaty shopping. The 2016 Protocol introduced source-country taxation at 50% of India's domestic rate (grandfathered for investments made before April 2017; full domestic rate from April 2019).
-
-2. **2024 Protocol (signed 7 March 2024):** Introduces Principal Purpose Test (PPT) aligned with MLI. Awaiting ratification/notification by both countries. Once effective, treaty benefits will be denied if one of the principal purposes of an arrangement is to obtain treaty benefits.
-
-3. **LOB clause:** Mauritius-resident companies must satisfy LOB conditions including expenditure, substance, and no-round-tripping requirements.
-
-4. **Interest rate of 7.5%** is notably lower than most India treaties (typically 10-15%).
-
-5. India domestic WHT: dividends 20%, interest 20%, royalties/FTS 10%. India requires Form 10F (Form 41 from 2026) + TRC + LOB declaration.
-**Last verified:** May 2026
+| Item | Rule and operative conditions | Authority |
+| --- | --- | --- |
+| Dividends | 5% if the beneficial owner is a company holding directly at least 10% of capital; 15% otherwise. Art 10(3) separately addresses Mauritius-source dividends while deductible in computing payer profits; a PE/fixed-base-connected holding does not use the simple ceilings. | Art 10(2),(3),(5); [Official text](https://www.mra.mu/download/Mtius_India.pdf) |
+| Interest | 7.5% of gross for a treaty-resident beneficial owner, subject to Art 11(3), 3A and 4 exemptions and PE/fixed-base/excess rules. Government/local-authority and government-created agency/entity exemptions survive; bank exemption is limited to debt claims existing on or before 31 March 2017. Other approved transactions require the source government’s approval, not an assumed exemption. | 2016 Protocol Art 2; Art 11(2)–(4); [Official text](https://www.mra.mu/download/GN156of2016-DTCIndiaAmendmentReg2016.pdf); [Official text](https://www.mra.mu/download/Mtius_India.pdf) |
+| Royalties | 15% gross source-state ceiling for a treaty-resident recipient, with Art 12 definition, PE/fixed-base, source and related-party excess conditions. Do not relabel a royalty as a service to avoid this article. | Art 12(2)–(6); [Official text](https://www.mra.mu/download/Mtius_India.pdf) |
+| Technical services | 10% gross under Art 12A for a treaty-resident beneficial owner of managerial, technical or consultancy fees, including personnel services, excluding income within Arts 14/15. Unlike Singapore’s text, this definition does not require making technology available. PE/fixed-base connection and related-party excess override the gross ceiling. The article applies for Indian income fiscal years beginning on/after 1 April 2017 and Mauritius fiscal years beginning on/after 1 July 2017. | 2016 Protocol Arts 3,9(2); Art 12A; [Official text](https://www.mra.mu/download/GN156of2016-DTCIndiaAmendmentReg2016.pdf) |
+| Share-gain history and transition | Under amended Art 13(3A), source taxation concerns shares acquired on/after 1 April 2017; pre-date shares remain within 13(4), subject to the other gain categories and anti-abuse rules. The 50% source domestic-rate transition covered gains arising 1 April 2017–31 March 2019 on the 3A shares, not every grandfathered holding. It is not a 2026 discount. | 2016 Protocol Art 4; Art 13(3A),(3B),(4); [Official text](https://www.mra.mu/download/GN156of2016-DTCIndiaAmendmentReg2016.pdf) |
+| Historical LOB scope | Art 27A’s primary-purpose and shell/conduit rules are tied to the historical Art 13(3B) transition benefit. The preceding twelve-month operations-expenditure tests were MUR1,500,000 / INR2,700,000, or the stated recognized listing route; meeting expenditure did not displace the purpose test. They are not a universal current treaty-benefit safe harbour or a promise that no round-tripping enquiry can arise. | 2016 Protocol Art 8; Art 27A; [Official text](https://www.mra.mu/download/GN156of2016-DTCIndiaAmendmentReg2016.pdf) |
+| PPT operative in 2026 | The protocol signed 7 March 2024 entered into force and took effect on 10 August 2026, as established by Indian Notification 135/2026, S.O.5611(E), dated 13 October 2026. Its Art 27B denies a benefit where obtaining it was one principal purpose, unless granting it accords with the relevant provisions’ object and purpose. Art 3(2) applies from entry into force without regard to levy date or taxable year. Do not describe the protocol as still pending or promise that a grandfathered share is immune from every anti-abuse rule. | Notification 135/2026 recital; Protocol Arts 2–3; [Official text](https://egazette.gov.in/WriteReadData/2026/277118.pdf); [Official text](https://www.mra.mu/download/GN136_2026India.pdf) |
 
 ## Turkey → Germany
 
-**Turkey → Germany Withholding Tax Rates**  _(Art 10, 11, 12, 7)_
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — portfolio | 15% | Art 10 | TR domestic WHT 10-15% |
-| Dividends — substantial (≥25% capital) | 5% | Art 10 | Higher threshold |
-| Interest | 10% | Art 11 | TR domestic WHT 10% — no treaty reduction |
-| Royalties | 10% | Art 12 | TR domestic WHT 20% — treaty reduces |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
-
-**Source:** Turkey-Germany Convention. PwC Germany and Turkey WHT tables.
-**Special provisions:** Large Turkish diaspora in Germany creates substantial cross-border flows. Turkey domestic WHT on dividends is 10% (recently increased from 7.5%). Interest WHT at 10% matches domestic rate — no treaty benefit. Royalties reduced from 20% domestic to 10% treaty. 25% threshold for reduced dividends is higher than modern standard.
-**Last verified:** May 2026
+| Item | Rule and operative conditions | Authority |
+| --- | --- | --- |
+| Dividends | 5% if the treaty-resident beneficial owner is a company other than a partnership holding directly at least 25% of capital; 15% otherwise. PE/fixed-base-connected holdings are excluded. Protocol paragraph 3 separately permits domestic source taxation for specified deductible profit-participating income. | Art 10(2),(4); Protocol 3; [Official text](https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fmevzuat%2Fuluslararasi_mevzuat%2FTURKCE_METIN%2FALMANYA_01012011.pdf) |
+| Interest | 10% gross for the treaty-resident beneficial owner, subject to PE/fixed-base connection and related-party excess. Art 11(3) exempts specified governments/central banks, Turkish-source German-guaranteed export/direct-investment loans, KfW/DEG and German-source payments to Türk Eximbank as stated; do not extend those named exemptions to all financial institutions. Protocol 3/4 also needs testing for profit participation/late-payment income. | Art 11(2)–(7); Protocol 3–4; [Official text](https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fmevzuat%2Fuluslararasi_mevzuat%2FTURKCE_METIN%2FALMANYA_01012011.pdf) |
+| Royalties and technical services | 10% gross royalty ceiling for the treaty-resident beneficial owner, with PE/fixed-base and related-party excess exceptions. Protocol 2(a) directs actual technical, engineering, consultancy and supervisory service payments to Arts 7 or 14; source exemption requires the applicable PE/fixed-base/day test to fail, not merely a service invoice. | Arts 12,14; Protocol 2(a); [Official text](https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fmevzuat%2Fuluslararasi_mevzuat%2FTURKCE_METIN%2FALMANYA_01012011.pdf) |
+| Residence and anti-avoidance | A dual-resident non-individual requires competent-authority agreement; without it the person is not treated as resident of either state for claiming treaty benefits. Protocol 10 preserves domestic anti-avoidance/evasion rules. The current depositary list shows Türkiye as a signatory without deposited ratification or MLI entry into force; do not invent an MLI modification from signature alone. | Art 4(3); Protocol 1,9–10; [Official text](https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fmevzuat%2Fuluslararasi_mevzuat%2FTURKCE_METIN%2FALMANYA_01012011.pdf) |
 
 ## Turkey → Netherlands
 
-**Turkey → Netherlands Withholding Tax Rates**  _(Art 10, 11, 12, 7)_
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — portfolio | 20% | Art 10 | Older treaty — high rate |
-| Dividends — substantial (≥25% capital) | 15% | Art 10 | Still high |
-| Interest | 10%/15% | Art 11 | 10% general; 15% for certain types |
-| Royalties | 10% | Art 12 | TR domestic 20% reduced |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
-
-**Source:** Turkey-Netherlands Convention. PwC Netherlands and Turkey WHT tables.
-**Special provisions:** One of the LEAST generous treaties in both countries' networks. 20% portfolio dividend rate and 15% substantial rate are the highest in the Netherlands treaty table. Netherlands has been a traditional holding company jurisdiction for Turkish investments — these rates limit the benefit. Treaty is older and has not been renegotiated.
-**Last verified:** May 2026
+| Item | Rule and operative conditions | Authority |
+| --- | --- | --- |
+| Dividends and direction | Art 10(2) textual ceilings are 15% for a recipient company other than a partnership holding directly at least 25% of capital; 20% otherwise. Integral Protocol IX reduces that substantial-company category to 10% for Turkish-source dividends, and 5% for Dutch-source dividends, while the stated Dutch participation exemption condition holds. Establish that condition; do not quote 15% as the final qualified Turkish-source rate, or reverse the two directions. Art 10(6) PE/fixed-base exception remains. | Art 10(2),(6); integral Protocol IX; [Official text](https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fmevzuat%2Fuluslararasi_mevzuat%2FTURKCE_METIN%2FHOLLANDA.pdf) |
+| Interest and royalties | Interest ceiling 10% where the debt has a maturity exceeding two years, 15% otherwise; Art 11(3) exempts the named central banks/governments/subdivisions/local authorities. Deferred goods/equipment sale proceeds in 11(9) are not automatically interest. Royalties have a 10% ceiling; PE/fixed-base and related-party excess rules apply, with Protocol X–XI distinguishing actual services and proven outright alienation. | Arts 11(2)–(9),12; Protocol X–XI; [Official text](https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fmevzuat%2Fuluslararasi_mevzuat%2FTURKCE_METIN%2FHOLLANDA.pdf) |
+| Professional and technical services | Do not apply a blanket Art 7/no-PE exemption: Art 14(2) covers enterprise professional/similar services performed in Turkey and permits source taxation if there is a PE or the connected activities exceed 183 days in any continuous twelve-month period. Turkish withholding may apply, with the treaty’s net-basis election. Art 14(1) separately tests individuals’ fixed base or presence of at least 183 days. Protocol XII aggregates connected activities, not unrelated ones. | Art 14(1)–(3); Protocol XII; [Official text](https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fmevzuat%2Fuluslararasi_mevzuat%2FTURKCE_METIN%2FHOLLANDA.pdf) |
 
 ## Israel → US
 
-**Israel → US Withholding Tax Rates**  _(Art 12(2), 13(2), 14(1), 7)_
-
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — portfolio | 25% | Art 12(2) | Highest in US treaty network |
-| Dividends — substantial (≥10% voting) | 12.5% | Art 12(2) | Still high |
-| Interest | 17.5% | Art 13(2) | Highest in US treaty network |
-| Royalties — industrial | 10% | Art 14(1) | Patents/know-how |
-| Royalties — copyright/films | 15% | Art 14(1) | Literary/artistic |
-| Fees for included services | 0% | Art 7 | Business profits — no WHT without PE |
-
-**Source:** US-Israel Convention signed 20 November 1975. IRS Table 1.
-**Special provisions:**
-
-**This is the OLDEST and LEAST favourable treaty in the US network:**
-
-1. **25% portfolio dividend rate** is the highest in any US treaty — all modern US treaties cap at 15%.
-2. **17.5% interest rate** is the highest in any US treaty — most modern treaties provide 0%.
-3. A new treaty has been under discussion since the 1990s but has never been concluded.
-4. Israel domestic WHT: dividends 25-30%, interest 15-25%.
-5. Despite the unfavourable treaty rates, US-Israel business flows are massive — practical workaround is structuring payments as business profits (Art 7) where possible.
-6. Israel has a broad treaty network with over 50 countries, many with more favourable rates.
-**Last verified:** May 2026
+| Item | Rule and operative conditions | Authority |
+| --- | --- | --- |
+| Dividends | 25% general ceiling; 12.5% for a corporation owning at least 10% of voting stock throughout the payer’s pre-payment part of the current taxable year and the whole preceding taxable year, provided the dividend is not income from the Israeli approved-enterprise reduced-rate period and prior-year interest/dividend gross income is no more than 25% (excluding interest from banking/insurance/financing and dividends/interest from subsidiaries at least 50% of whose voting shares the payer then owns). The approved-enterprise-period corporate category is 15% only with the same ownership and income tests. US RICs use the general category; US REITs use that category only for an individual beneficial owner holding less than 10%, otherwise domestic rates. Israeli sections 64/64A flow-through corporations move to Art 8. A current 10% holding alone is insufficient. | Art 12 as replaced by 1980 Protocol VIII; 1993 Protocol VII; [Official text](https://www.irs.gov/pub/irs-trty/israel.pdf) |
+| Interest | 17.5% general gross ceiling; 10% on loans granted by a bank, savings institution, insurance company or the like. Specified state/instrumentality-derived or government-guaranteed/insured debt income is exempt. Read the 1993 Protocol’s net-basis option, REMIC excess-inclusion restriction and connected-PE exception before applying a simple gross ceiling. | Art 13; 1993 Protocol VIII; [Official text](https://www.irs.gov/pub/irs-trty/israel.pdf) |
+| Royalties | 10% for copyright/film royalties; 15% for industrial royalties (not the reverse). Art 14 definitions, PE connection and related-party excess provisions apply. | Art 14(1)–(4); [Official text](https://www.irs.gov/pub/irs-trty/israel.pdf) |
+| Services and eligibility | Corporate business profits use Art 8 (not Art 7), with source taxation if attributable to a PE; individuals test Art 16’s presence rule. Residence, the Art 6 saving clause and the full Art 25 limitation-on-benefits article must be satisfied. Preserve the high-WHT planning question as a classification enquiry: never disguise a royalty or interest payment as business profits. Network-wide “worst treaty” and renegotiation claims are not established by this treaty. | Arts 3,6,8,16,25; 1993 Protocol; [Official text](https://www.irs.gov/pub/irs-trty/israel.pdf) |
 
 ## Kenya → UK
 
-**Kenya → UK Withholding Tax Rates**  _(Art 10, 11, 12, 7, 13)_
+| Item | Rule and operative conditions | Authority |
+| --- | --- | --- |
+| Dividends: Kenya source | 15% gross ceiling if the UK-resident recipient is subject to UK tax on the dividend; no substantial-shareholding reduced rate. Art 11(6) has a pre-acquisition-profits anti-avoidance exception, and 11(7) a PE-connected-holding exception. This is not a symmetric statement of UK-source dividend tax; UK-source dividends have separate Art 11(1)–(3) tax-credit/exemption wording. | Art 11(1)–(7); [Official text](https://www.gov.uk/government/publications/kenya-tax-treaties/1973-uk-kenya-double-taxation-agreement-as-amended-by-the-1976-protocol-in-force) |
+| Interest and royalties | 15% gross source ceilings only where the treaty-resident recipient is subject to residence-state tax on that income. Art 12(3) exempts specified governments, local authorities, central banks and wholly government-owned agencies; a further Kenyan interest exemption is discretionary. PE connection, source and related-party excess clauses remain relevant for interest/royalties. | Arts 12(2)–(8),13(2)–(6); [Official text](https://www.gov.uk/government/publications/kenya-tax-treaties/1973-uk-kenya-double-taxation-agreement-as-amended-by-the-1976-protocol-in-force) |
+| Management, technical and consultancy fees | 12.5% gross under Art 14, notwithstanding Art 8, for a treaty-resident recipient subject to tax there. The definition includes managerial, technical and consultancy services, excluding employees; no blanket technical-service 0% rule. Source treatment is limited to services rendered in the payer/source state under 14(6), including PE-borne payments. PE connection moves to Art 8. A qualifying annual net-basis election is available, with deductible expenses capped at 75% of gross fees. | Art 14(1)–(6); [Official text](https://www.gov.uk/government/publications/kenya-tax-treaties/1973-uk-kenya-double-taxation-agreement-as-amended-by-the-1976-protocol-in-force) |
+| Other services and remittance | Art 8 ordinary enterprise profits require a no-PE conclusion and do not override Art 14. Art 16 independent services expressly exclude Art 14 management fees and tests fixed base or more than 183 days in the fiscal year. Art 6 limits remittance-basis relief to amounts remitted or received. | Arts 6,8(7),16; [Official text](https://www.gov.uk/government/publications/kenya-tax-treaties/1973-uk-kenya-double-taxation-agreement-as-amended-by-the-1976-protocol-in-force) |
 
-| Income Type | Treaty Rate | Treaty Article | Notes |
-| --- | --- | --- | --- |
-| Dividends — substantial (≥25% voting) | 15% | Art 10 | Higher threshold |
-| Dividends — portfolio | 15% | Art 10 | Same rate |
-| Interest | 15% | Art 11 | Government interest exempt |
-| Royalties | 15% | Art 12 | Standard rate |
-| Technical services | 0% | Art 7 | Business profits — no WHT without PE |
-| Management fees | 12.5% | Art 13 | Kenya-specific provision |
+## PE comparison
 
-**Source:** UK-Kenya Convention. HMRC treaty summary.
-**Special provisions:** Kenya has a management fees article (Art 13) — unusual in UK treaties and reflects Kenya's domestic WHT on management/professional fees. Flat 15% across dividends, interest, and royalties is simple but not particularly generous. Kenya domestic WHT: dividends 15%, interest 15%, royalties 20%, management fees 20%. UK is a key trading partner for Kenya.
-**Last verified:** May 2026
+Every duration is a particular treaty trigger, not an overall safe harbour. Fixed-place and dependent-agent PE provisions must still be tested. Apply the matched MLI preparatory/auxiliary and anti-fragmentation changes where operative. “No general service-day clause” does not remove a separately taxable services article.
 
-## Summary: Emerging Market Treaty Rate Comparison
+| Item | Rule and operative conditions | Authority |
+| --- | --- | --- |
+| UAE → India | Construction/assembly or related supervision: more than 9 months. Enterprise services through personnel for the same/connected project: more than 9 months within any twelve-month period. | Art 5(2)(h)–(i); [Official text](https://wm.incometaxindia.gov.in/w/uae-synthesised-text-1) |
+| Saudi Arabia → UK | Construction/assembly/installation or supervision: more than 6 months. Personnel services/consultancy for the same/connected project: more than 183 days in any twelve-month period. | Art 5(3); [Official text](https://www.gov.uk/government/publications/saudi-arabia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2007-uk-saudi-arabia-double-taxation-convention-and-protocol-in-force) |
+| South Africa → UK | Construction/assembly/installation or supervision: more than 12 months. Independent professional/other services by an individual: more than 183 days in any twelve-month period commencing/ending in the fiscal year. | Art 5(3); [Official text](https://www.gov.uk/government/publications/south-africa-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2002-uk-south-africa-double-taxation-convention-in-force) |
+| South Africa → Netherlands | Construction/assembly/installation or supervision: more than 12 months. No separate general service-day PE clause in Art 5; fixed-place and agency rules still apply. | Art 5; [Official text](https://www.sars.gov.za/wp-content/uploads/Legal/Agreements/Legal-INTA-DTA-MLI-2024-06-Netherlands-SA-Model-Synthesised-Text-MLI.pdf) |
+| India → Singapore | Construction/installation/assembly and related supervision: more than 183 days in any fiscal year. Personnel services other than Art 5(4)/(5) and Art 12 technical services: more than 90 days in any fiscal year, or more than 30 days for a related enterprise. Mineral-oil services and natural-resource installations have separate tests. | Art 5(2)(j),(3)–(6); [Official text](https://www.iras.gov.sg/media/docs/default-source/dtas/protocol-amending-singapore-india-dta-%28ratified%29%28mli%29%281-oct-2019%29.pdf) |
+| India → Mauritius | Construction/assembly or supervision: more than 9 months. Personnel services including consultancy for the same/connected project: more than 90 days within any twelve-month period under the 2016 Protocol. | Base Art 5(2)(i); 2016 Protocol Art 1 / new 5(2)(j); [Official text](https://www.mra.mu/download/GN156of2016-DTCIndiaAmendmentReg2016.pdf); [Official text](https://www.mra.mu/download/Mtius_India.pdf) |
+| Turkey → Germany | Construction/assembly/installation or supervision: more than 6 months. Personnel services including consultancy on the same/connected project: more than 6 months within any twelve-month period. | Art 5(3); [Official text](https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fmevzuat%2Fuluslararasi_mevzuat%2FTURKCE_METIN%2FALMANYA_01012011.pdf) |
+| Turkey → Netherlands | Construction/assembly/installation: more than 6 months. Art 5 has no general service-day clause, but Art 14 enterprise professional services performed in Turkey can be taxable after more than 183 days of connected activities in any continuous twelve-month period. | Arts 5(3),14(2); Protocol XII; [Official text](https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fmevzuat%2Fuluslararasi_mevzuat%2FTURKCE_METIN%2FHOLLANDA.pdf) |
+| Israel → US | Construction/assembly or connected supervision: more than 6 months; maintenance of substantial equipment or machinery within the source state also has a more-than-six-month test. No separate general Art 5 service-day clause; fixed-place, agency and Art 16 individual tests remain. | Art 5(2)(j),(3)(g), Art 16; 1993 Protocol IV; [Official text](https://www.irs.gov/pub/irs-trty/israel.pdf) |
+| Kenya → UK | Building site/construction/assembly and related supervisory activities: more than 6 months. No general enterprise service-day PE clause; Art 14 management/technical/consultancy fees can be taxed without a PE and Art 16 independently tests individuals. | Arts 5(2)(h)–(i),14,16; [Official text](https://www.gov.uk/government/publications/kenya-tax-treaties/1973-uk-kenya-double-taxation-agreement-as-amended-by-the-1976-protocol-in-force) |
 
-**Summary: Emerging Market Treaty Rate Comparison**
+## Domestic fallback comparison
 
-| Corridor | Dividends (substantial) | Interest | Royalties | Key Feature |
-| --- | --- | --- | --- | --- |
-| UAE → IN | 10% | 5%/12.5% | 10% | UAE no WHT outbound |
-| SA → UK | 5% | 0% | 5%/8% | Split royalties |
-| ZA → UK | 5% | 0% | 0% | Excellent rates |
-| ZA → NL | 5% | 0% | 0% | Holding co. corridor |
-| IN → SG | 10% | 10%/15% | 10% | LOB applies |
-| IN → MU | 5% | 7.5% | 15% | PPT incoming (2024) |
-| TR → DE | 5% | 10% | 10% | Large diaspora flows |
-| TR → NL | 15% | 10%/15% | 10% | Unfavourable treaty |
-| IL → US | 12.5% | 17.5% | 10%/15% | Worst US treaty |
-| KE → UK | 15% | 15% | 15% | Flat rate treaty |
+These are the verified portions of the original domestic comparison. They do not replace the payment-specific domestic statute or treaty relief procedure. The remaining original domestic topics are preserved as non-usable holds under Sources.
 
-## Key Observations
+| Item | Rule and operative conditions | Authority |
+| --- | --- | --- |
+| Saudi Arabia | For Saudi-source payments to a nonresident outside a Saudi PE: ordinary dividends 5%, loan charges 5%, royalties 15%; management fees 20%, technical/consultancy 5% in the guideline table. Establish source, classification, treaty relief and the stated oil/gas/hydrocarbon dividend exception. Zakat/personal-tax treatment is a separate enquiry, not a withholding exemption. | Income Tax Law/Regulations; ZATCA guideline §§3–4; [Official text](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf) |
+| South Africa | The authority’s current summary gives dividends tax 20% for distributions to individuals and final interest withholding 15% on South African-source interest payable to nonresidents. This does not decide every company exemption or connected-PE case; apply the relevant domestic exemption/declaration and treaty procedure. | SARS 2026 Interest and Dividends headings; [Official text](https://www.sars.gov.za/tax-rates/income-tax/interest-and-dividends/) |
+| South African royalties | Foreign-person South African-source royalties ordinarily face final 15% withholding. Exemptions/reduced treaty rates require the prescribed WTRD before payment (subject to the stated headquarters-company exception); a printed treaty zero is insufficient on its own. | Income Tax Act royalty WHT; SARS WTRD guidance; [Official text](https://www.sars.gov.za/types-of-tax/withholding-tax-on-royalties/) |
+| Kenya | The KRA table gives ordinary nonresident dividends 15%, bank interest 15%, royalties 20% and management/professional/consultancy fees 20%. Interest is not uniformly 15%: other bearer-bond interest is shown at 25%; special instruments, exempt payees and SEZ payments require their own rules. Apply these as fallback categories only after establishing source, payee and the actual statutory category. | KRA nonresident WHT table and exemptions; [Official text](https://www.kra.go.ke/individual//filing-paying/types-of-taxes/individual-withholding-tax) |
+| UAE withholding | The FTA FAQ describes a 0% withholding rate on certain UAE-source income paid to nonresidents, with no withholding due in practice at that rate. It does not establish that every form of income or every special regime is tax-free; treaty ceilings for Indian-source payments are a different question. | FTA corporate-tax FAQ question 20; [Official text](https://tax.gov.ae/en/faq.aspx?keyword=income) |
+| UAE corporate-tax context | The ordinary corporate-tax framework began with financial years starting on/after 1 June 2023: 0% on taxable income up to AED375,000 and 9% on the excess. This is not a gross outbound-payment withholding rate or a computation of special regimes, exemptions or any top-up tax. | Corporate Tax Law Art 3 / Cabinet Decision 116 of 2022; MoF threshold announcement; [Official text](https://mof.gov.ae/en/news/ministry-of-finance-confirms-applicable-taxable-income-threshold-for-corporate-tax-abu-dhabi-uae/) |
 
-1. **India-Mauritius** remains under intense scrutiny. The 2024 PPT Protocol, once ratified, will require genuine business purpose for treaty benefits. Investors should ensure substance in Mauritius entities and document non-tax business rationale.
+## Operative instruments and eligibility
 
-2. **South Africa corridors** (UK and NL) offer surprisingly favourable rates — 0% interest and royalties. This makes London and Amsterdam attractive intermediary jurisdictions for African operations.
+| Item | Rule and operative conditions | Authority |
+| --- | --- | --- |
+| UAE–India MLI | The synthesized agreement includes the 2007 and 2012 protocols. Its MLI withholding changes apply in India from 1 April 2020 and in UAE from 1 January 2020; other-tax periods start on/after 1 April 2020 in each. Do not confuse the original 2007 dividend amendment with the later PPT effective dates. | Synthesized disclaimer / entry into effect; [Official text](https://wm.incometaxindia.gov.in/w/uae-synthesised-text-1) |
+| South Africa–Netherlands MLI | MLI withholding provisions apply to events from 1 January 2023; other taxes to taxable periods beginning on/after 1 July 2023. The synthesized document includes the 2008 protocol. Transparent-entity income is treaty-resident income only to the extent treated as resident income by the relevant state under the inserted MLI rule. | Synthesized effect section; Art 1 / MLI 3; [Official text](https://www.sars.gov.za/wp-content/uploads/Legal/Agreements/Legal-INTA-DTA-MLI-2024-06-Netherlands-SA-Model-Synthesised-Text-MLI.pdf) |
+| Türkiye MLI status | The OECD depositary table is dated 12 November 2026: Türkiye signed on 7 June 2017 but has no deposited ratification or entry-into-force date. Signature alone does not modify the Turkey–Germany or Turkey–Netherlands conventions. | Depositary table: Türkiye row; MLI Arts 1–2,34; [Official text](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-signatories-and-parties.pdf); [Official text](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/multilateral-convention-to-implement-tax-treaty-related-measures-to-prevent-beps.pdf) |
+| Kenya–UK MLI matching | Both definitive positions list this treaty (Kenya agreement 16; UK agreement 53). Kenya’s MLI entry into force was 1 May 2025; withholding effect follows Art 35(1)(a) from 1 January 2026. Apply the PPT and dual-resident-entity mutual-agreement rule. Kenya choosing simplified LOB does not alone make it apply to the UK pair: the UK position does not choose or opt into that provision. The UK reserves MLI Arts 8,12 and 14; do not add a 365-day dividend rule or changed agency/split-contract test from those articles. PE anti-fragmentation under MLI 13(4) still needs testing. | Definitive Kenya/UK positions; MLI Arts 4,7,13,35; depositary dates; [Official text](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-position-kenya-instrument-deposit.pdf); [Official text](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-position-united-kingdom-instrument-deposit.pdf); [Official text](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/multilateral-convention-to-implement-tax-treaty-related-measures-to-prevent-beps.pdf); [Official text](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-signatories-and-parties.pdf) |
+| UK–GCC context | The UK announcement records conclusion of negotiations on 20 May 2026; its next-steps section contemplated finalising legal text, signing, scrutiny, ratification and entry into force. It does not establish that an operative FTA was signed that May, and does not amend the Saudi–UK income-tax convention. | UK conclusion summary, Introduction and Next steps; [Official text](https://www.gov.uk/government/publications/uk-gulf-cooperation-council-gcc-trade-deal-conclusion-summary/uk-gulf-cooperation-council-gcc-trade-deal-conclusion-summary--2) |
 
-3. **UAE-India** is a high-volume corridor but the absence of an FTS article creates uncertainty. Technical services may be taxed at India's domestic rate or under Art 7 depending on characterisation.
+## Worked examples
 
-4. **Turkey-Netherlands** is one of the worst treaty relationships in the Netherlands network — 20% portfolio dividend rate. Turkish holding structures through the Netherlands may not achieve expected WHT savings.
+### Israel-source copyright royalty versus an industrial royalty
 
-5. **Israel-US** treaty urgently needs renegotiation — rates are 40-50 years out of date. Despite massive bilateral investment, WHT rates are the worst in the US treaty network.
+Assume a genuine US treaty resident entitled under Art 25, no saving-clause issue, no connected PE, no related-party excess, gross payment USD100,000, no gross-up and a domestic charge at least as high as the treaty ceiling. Actual copyright/film rights produce a USD10,000 ceiling; actual industrial rights produce USD15,000. The contract's real rights determine classification; changing its label cannot obtain the lower ceiling. These are treaty ceiling calculations, not instructions that ignore lower domestic tax. [Convention Art 14](https://www.irs.gov/pub/irs-trty/israel.pdf).
 
-## PE Threshold Notes — Emerging Markets
+```oa-check
+name: Israel US royalty category ceilings
+inputs:
+  gross: 100000
+  copyright_rate: 10
+  industrial_rate: 15
+steps:
+  - copyright_ceiling: gross * copyright_rate / 100
+  - industrial_ceiling: gross * industrial_rate / 100
+expected:
+  copyright_ceiling: 10000
+  industrial_ceiling: 15000
+```
 
-**PE Threshold Notes — Emerging Markets**
+### India-source dividend to a UAE-resident beneficial owner
 
-| Corridor | Construction PE Threshold | Service PE | Notes |
-| --- | --- | --- | --- |
-| UAE → IN | 9 months | None specified | Between standard and India norm |
-| SA → UK | 12 months | None | Standard OECD |
-| ZA → UK | 12 months | None | Standard OECD |
-| ZA → NL | 12 months | None | Standard OECD |
-| IN → SG | 90 days in any 12-month period | 90 days | India's short PE threshold |
-| IN → MU | 9 months | 90 days | India norm for Mauritius |
-| TR → DE | 12 months | None | Standard OECD |
-| TR → NL | 12 months | None | Standard OECD |
-| IL → US | 12 months | None | Standard OECD |
-| KE → UK | 12 months | None | Standard OECD |
+Assume gross INR800,000, an eligible UAE company incorporated and wholly managed/controlled there, no connected PE/fixed base, a satisfied PPT, a domestic charge at least 10%, and all required relief documents. The treaty ceiling is INR80,000 and the amount after that ceiling is INR720,000. Without residence/PPT/document evidence, hold the relief conclusion; do not present INR80,000 as the withholding to make. [Agreement Arts 4,10,29 and MLI PPT](https://wm.incometaxindia.gov.in/w/uae-synthesised-text-1).
 
-## Domestic WHT Rate Comparison
+```oa-check
+name: India UAE dividend ceiling
+inputs:
+  gross: 800000
+  ceiling_rate: 10
+steps:
+  - treaty_ceiling: gross * ceiling_rate / 100
+  - after_ceiling: gross - treaty_ceiling
+expected:
+  treaty_ceiling: 80000
+  after_ceiling: 720000
+```
 
-**Domestic WHT Rate Comparison**
+## Key observations and refusals
 
-| Jurisdiction | Dividends | Interest | Royalties | Notes |
-| --- | --- | --- | --- | --- |
-| UAE | 0% | 0% | 0% | 9% CIT introduced 2023 but no WHT |
-| Saudi Arabia | 5% | 5% | 15% | Zakat on Saudi nationals instead |
-| South Africa | 20% | 15% | 15% | DWT on dividends |
-| India | 20% | 20% | 10% | IT Act s.115A (excl. surcharge/cess) |
-| Mauritius | 0% | 15% | 15% | No dividend WHT |
-| Turkey | 10-15% | 10% | 20% | Recently increased dividend WHT |
-| Israel | 25-30% | 15-25% | Various | High domestic rates |
-| Kenya | 15% | 15% | 20% | Management fees 20% |
+The Mauritius share-acquisition and gain-realisation dates answer different questions; preserve both. The operative PPT now also requires an actual purpose analysis. The South African interest/royalty provisions support conditional comparisons, not automatic London/Amsterdam intermediary recommendations. UAE–India services require classification and a PE/fixed-base enquiry; absence of an FTS article is not permission to choose an unsupported rate. The Turkish–Dutch integral protocol and service article prevent the old bare-rate ranking. Israel–US rates must be read with ownership history, income mix and LOB. The primary texts do not prove that any treaty is the “worst” in a network or urgently awaiting renegotiation.
 
-## Disclaimer
+Do not produce a final treaty benefit for a paper conduit, disguise royalties/interest as services, treat a TRC as conclusive proof of every condition, or reuse historical transition discounts for a current gain. Stop at a documented hold where residence, beneficial ownership, LOB/PPT, share history, PE connection or an operative instrument cannot be established.
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Treaty rates are subject to change through protocol amendments and renegotiations. Always verify current treaty text before relying on any rate. All outputs must be reviewed by a qualified professional before filing or acting upon.
+## Sources
+
+Read dates below mean the stated portions were actually read; a capture alone is not a read. The US–Israel reading is reused at its original date after an unchanged-hash applicability check. All other listed reads are scoped, not whole-document certifications.
+
+| Source | Portions read | Read date |
+| --- | --- | --- |
+| sa: [Official text](https://www.gov.uk/government/publications/saudi-arabia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2007-uk-saudi-arabia-double-taxation-convention-and-protocol-in-force) | Actual scoped read: Arts 3–5, 7, 10–12, 14, 28; MLI PPT and PE anti-fragmentation boxes. No claim to unrelated articles. | 2026-11-17 |
+| za: [Official text](https://www.gov.uk/government/publications/south-africa-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2002-uk-south-africa-double-taxation-convention-in-force) | Actual scoped read: Arts 3–5, 7, 10–12, 22; MLI dual residence, PPT and PE anti-fragmentation boxes. No claim to unrelated articles. | 2026-11-17 |
+| ke: [Official text](https://www.gov.uk/government/publications/kenya-tax-treaties/1973-uk-kenya-double-taxation-agreement-as-amended-by-the-1976-protocol-in-force) | Actual scoped read: Arts 4–6, 8, 11–14, 16, including complete payment-article exceptions, management source rule and net election. Read with definitive MLI positions. | 2026-11-17 |
+| mu: [Official text](https://www.mra.mu/download/Mtius_India.pdf) | Actual scoped read: Arts 4–5, 7, 10–14, including adjacent exceptions. Scanned original read through scoped OCR and page images; no full treaty read claimed. | 2026-11-17 |
+| mu16: [Official text](https://www.mra.mu/download/GN156of2016-DTCIndiaAmendmentReg2016.pdf) | Actual scoped read: Protocol Arts 1–5, 8–9, plus 2026 regulation recital confirming operation on 19 July 2016. OCR and page images; collection/information articles not used. | 2026-11-17 |
+| mu26: [Official text](https://www.mra.mu/download/GN136_2026India.pdf) | Actual full five-page English instrument read: regulations 1–6 and protocol Arts 1–3. Regulation 6 alone does not establish commencement; separate Indian gazette read below. | 2026-11-17 |
+| uae: [Official text](https://wm.incometaxindia.gov.in/w/uae-synthesised-text-1) | Actual scoped read: synthesized disclaimer/effect, Arts 4–5, 7, 10–12, 14 and 29/PPT; no unrelated whole-document read. | 2026-11-17 |
+| nl: [Official text](https://www.sars.gov.za/wp-content/uploads/Legal/Agreements/Legal-INTA-DTA-MLI-2024-06-Netherlands-SA-Model-Synthesised-Text-MLI.pdf) | Actual scoped read: disclaimer/effect, Arts 4–5, 7, 10–12 including 10(9) emigration and 10(10) MFN, MLI dividend 365-day, dual-residence/PPT/PE boxes. | 2026-11-17 |
+| sg: [Official text](https://www.iras.gov.sg/media/docs/default-source/dtas/protocol-amending-singapore-india-dta-%28ratified%29%28mli%29%281-oct-2019%29.pdf) | Actual scoped read: cover and Arts 4–5, 7, 10–14, 24; Annex A (MLI), Annex B Arts 2–6, Annex D Art 4 and its entry-into-force clause. Retired 1981 agreement Annex E not treated as operative. | 2026-11-17 |
+| de: [Official text](https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fmevzuat%2Fuluslararasi_mevzuat%2FTURKCE_METIN%2FALMANYA_01012011.pdf) | Actual Turkish scoped read: cover dates, Arts 4–5, 7, 10–12, 14 and integral Protocol paragraphs 1–4, 9–10; page images used to resolve scans. No unrelated whole-treaty read. | 2026-11-17 |
+| trnl: [Official text](https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fmevzuat%2Fuluslararasi_mevzuat%2FTURKCE_METIN%2FHOLLANDA.pdf) | Actual Turkish scoped read: Arts 4–5, 7, 10–12 and 14, integral Protocol IX, X, XI and XII (including directional dividend reductions and corporate professional services). Page images used for critical clauses. | 2026-11-17 |
+| gaz: [Official text](https://egazette.gov.in/WriteReadData/2026/277118.pdf) | Actual English pages 3–4 read: notification 135/2026/SO5611(E) recital, Annex Arts 1–3 and signature; Hindi pages not claimed read. | 2026-11-17 |
+| ukmli: [Official text](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-position-united-kingdom-instrument-deposit.pdf) | Actual scoped OCR read: covered agreements Kenya row p8; Arts 4/6/7/8/12/13/14 relevant notices, pp19–20,26,29–35,39–44; end p57 establishes no separate Art35 reservation. Scanned definitive 29 June 2018 position, not provisional signature file. | 2026-11-17 |
+| kemli: [Official text](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-position-kenya-instrument-deposit.pdf) | Actual scoped read: covered agreements UK row p4; Arts 3–8, 12–14 and final page for absence Art35 reservation. Definitive deposit 8 January 2025, not 2019 provisional signature file. | 2026-11-17 |
+| mli: [Official text](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/multilateral-convention-to-implement-tax-treaty-related-measures-to-prevent-beps.pdf) | Actual scoped read: Arts 2–4; 7(1)–(7),15–17; 13(4); 35(1)–(7), including matching/optional conditions. No claim to unrelated treaty text. | 2026-11-17 |
+| sad: [Official text](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf) | Actual scoped read: guideline definitions of distributed profits, loan charges and recipient/source scope; section 3 rate table pp28 and section 4 exemptions pp29; not whole guideline. | 2026-11-17 |
+| zad: [Official text](https://www.sars.gov.za/tax-rates/income-tax/interest-and-dividends/) | Actual scoped read: Withholding Tax on Interest and Dividends Tax headings, dated 25 February 2026 no change; not unrelated exemptions/foreign-dividend guidance. | 2026-11-17 |
+| zar: [Official text](https://www.sars.gov.za/types-of-tax/withholding-tax-on-royalties/) | Actual scoped read: foreign-person/source scope, final 15% paragraph, exemptions/reduced rates and WTRD-before-payment condition; not a full filing manual read. | 2026-11-17 |
+| ked: [Official text](https://www.kra.go.ke/individual//filing-paying/types-of-taxes/individual-withholding-tax) | Actual scoped read: nonresident rate-table dividend/interest/royalty/management rows, interest subcategories and exemptions/SEZ; not a new filing-deadline instruction. | 2026-11-17 |
+| nld: [Official text](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/bronbelasting-rente-en-royalty/) | Actual scoped read: Wet bronbelasting scope, affiliated body/qualifying interest, 2026 rate and low-tax/abuse headings. Not a read of every low-tax list member. | 2026-11-17 |
+| gcc: [Official text](https://www.gov.uk/government/publications/uk-gulf-cooperation-council-gcc-trade-deal-conclusion-summary/uk-gulf-cooperation-council-gcc-trade-deal-conclusion-summary--2) | Actual scoped read: introduction and next-steps sections; not market forecasts or every chapter. | 2026-11-17 |
+| mlistatus: [Official text](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-signatories-and-parties.pdf) | Actual read: cover status as of 12 November 2026, Kenya/UK/Türkiye rows and column meanings; not every country position. Türkiye has signature but no deposited ratification/entry-into-force date. | 2026-11-17 |
+| uaed: [Official text](https://tax.gov.ae/en/faq.aspx?keyword=income) | Actual read: corporate tax FAQ question 20, 0% withholding for certain UAE-source nonresident income and domestic-resident exclusion; not unrelated FAQs. | 2026-11-17 |
+| uaect: [Official text](https://mof.gov.ae/en/news/ministry-of-finance-confirms-applicable-taxable-income-threshold-for-corporate-tax-abu-dhabi-uae/) | Actual read: ordinary CT threshold/rate and first-period commencement paragraphs; not special/free-zone/top-up regimes or a whole CT computation. | 2026-11-17 |
+| il: [Official text](https://www.irs.gov/pub/irs-trty/israel.pdf) | Actual full relevant Arts3,5,6,8,12–14,16;1980ProtocolArtVIII dividendreplacement;1993ProtocolArtsII–V,VII–VIII,XII(completeLOB),XVI–XVII;cover general effective1Jan1995. Not full unrelatedtreatyread. Reused, not restated as a new full read. | 2026-11-16 |
+
+Not yet confirmed: **non-usable holds** remain for the original generalized domestic India dividends/interest/royalties/FTS figures and 2026 Act/form transition (including the Form 10F/Form 41 procedure: official form capture failed); Mauritius domestic dividend/interest/royalty and foreign-gain exemptions; Turkey domestic dividend/interest/royalty rates and the alleged recent change; Israel domestic dividend/interest/royalty categories; UAE special regimes beyond the ordinary context above and pre-2007 UAE–India dividend-rate history; Saudi personal-tax/Zakat assertions; the South Africa–Netherlands lower-MFN outcome and the individual-emigration facts; unsupported corridor-volume/diaspora/FDI-ranking claims and treaty-network age/ranking/renegotiation claims. The original claim that Israel has tax treaties with over 50 countries is a specific **non-usable network-size hold**: the network count has not been established from a read official inventory and must not be used as a current size figure. None of those original unsupported figures is a usable fallback rate. The original UK–GCC topic is retained as context: official conclusion/next-step material was read, but an FTA is not this income-tax convention and does not itself change these ceilings. A payment affected by a hold needs the missing primary rule or case evidence before a final answer.
