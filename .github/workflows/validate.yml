@@ -204,6 +204,28 @@ jobs:
           git fetch origin "$BASE_REF" --depth 50
           python3 scripts/check-row-sources.py --changed-only
 
+  # Links: a Markdown file this PR changes must not link to a repo path that does not
+  # exist (the website rewrites skill links to github blob URLs, so a broken one 404s for
+  # readers). Checks only changed files (scripts/check-links.py --changed-only). No network.
+  links:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.11"
+      - name: Check relative links in changed Markdown
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          git fetch origin "$BASE_REF" --depth 50
+          python3 scripts/check-links.py --changed-only
+
   # Calculator quotes: every rule in calculators/engines/*/rules.json quotes a line of a
   # skill, and the app refuses to run the calculator once that line is gone. Checks only the
   # rules whose skill this PR changes (scripts/check-calculator-quotes.py --changed-only).
