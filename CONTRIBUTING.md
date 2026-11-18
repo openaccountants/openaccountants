@@ -82,4 +82,6 @@ Always set `jurisdiction:` in the frontmatter too. The full spec (frontmatter ke
 
 **Licence and terms.** Code is AGPL-3.0-only. Skills are under the Open Accountants Skills License ([LICENSING.md](LICENSING.md)). By opening a pull request you accept the [contributor terms](CONTRIBUTOR-TERMS.md): the work is yours to give, it is published on openaccountants.com and served to AI tools, an accountant may check and approve it under their name, and you keep your copyright and credit. Contributions made before 6 November 2026 under the earlier [CLA](CLA.md) keep those terms. Questions: info@openaccountants.com.
 
+**Changing code** (scripts/, mcp/, calculators/): new or changed behaviour comes with tests in `tests/` in the same pull request, and `python3 -m unittest discover -s tests -p "test_*.py"` must pass. CI also runs a linter (ruff), CodeQL and the checks above on every pull request.
+
 **Merging.** Maintainers in [docs/OWNERS.md](docs/OWNERS.md) merge. A skill is live once the website has received it and checked it against this repository.
