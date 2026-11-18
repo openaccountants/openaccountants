@@ -35,6 +35,7 @@ def load_report():
 
 def blocks(report):
     people = collections.defaultdict(lambda: {"skills": 0, "places": set()})
+    folders = {}
     for row in report["rows"]:
         for a in row.get("approved", []):
             name = (a.get("by") or "").strip()
@@ -42,6 +43,8 @@ def blocks(report):
                 continue
             people[name]["skills"] += 1
             people[name]["places"].add(row["name"])
+            if row.get("dir"):
+                folders[row["name"]] = row["dir"]
     places = {p for v in people.values() for p in v["places"]}
     covered = sum(1 for r in report["rows"] if r["skills"] > 0)
 
@@ -55,7 +58,8 @@ def blocks(report):
             by_place[p].add(name)
     lines = ["| Country or state | Accountants |", "|---|---|"]
     for place in sorted(by_place, key=str.lower):
-        lines.append(f"| {place} | {', '.join(sorted(by_place[place], key=str.lower))} |")
+        cell = f"[{place}]({folders[place]}/)" if place in folders else place
+        lines.append(f"| {cell} | {', '.join(sorted(by_place[place], key=str.lower))} |")
     return stats, "\n".join(lines)
 
 
