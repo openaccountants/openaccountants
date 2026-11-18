@@ -9,6 +9,7 @@ metadata:
   tax_year: "2027"
   last_updated: "2026-11-10"
   authored_by: "Talha Mehmood, ACA, FCCA"
+  reviewed_by: "Talha Mehmood"
 ---
 
 # IFRS 18 worked examples (`ifrs18-presentation-worked-examples`)
