@@ -9,6 +9,7 @@ metadata:
   tax_year: "2027"
   last_updated: "2026-11-10"
   authored_by: "Talha Mehmood, ACA, FCCA"
+  reviewed_by: "Talha Mehmood"
 ---
 
 # IFRS 18 Presentation and Disclosure in Financial Statements (`ifrs18-presentation`)
