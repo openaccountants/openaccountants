@@ -49,7 +49,6 @@ docs/                      # Repo documentation: this file, GOAL.md, OWNERS.md, 
                            # the skill standard, quality tiers, coverage, website sync, research/
 tools/workbooks/           # Verification-workbook generator (out/ is gitignored build output)
 plugins/ + .claude-plugin/ # Claude Code plugin marketplace manifest + commands
-assets/                    # Images and brand files
 .github/                   # CI: validation, MCP sync (sync-mcp.yml mirrors packages/ to the MCP repo)
 
 Root (only what a tool or GitHub needs there):
@@ -62,7 +61,6 @@ CITATION.cff               # GitHub's "Cite this repository"
 glama.json                 # Read by the Glama directory
 Dockerfile, .dockerignore  # Container build
 VERIFIERS.md               # Reviewing accountants on record (written nightly by the platform sync)
-PARTNERS.md                # Stub pointing at VERIFIERS.md; the platform links to it
 ```
 
 ## Generated vs hand-maintained
