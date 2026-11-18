@@ -380,7 +380,7 @@ def read_bytes(raw):
     article = next_data_text(t)
     # Some sites (vero.fi) keep a table as JSON inside a long attribute value: keep that text too.
     attrs = " ".join(html.unescape(a) for a in re.findall(r'="([^"]{50,})"', t))
-    t = re.sub(r"(?s)<script.*?</script>|<style.*?</style>", " ", t)
+    t = re.sub(r"(?is)<script\b.*?</script\b[^>]*>|<style\b.*?</style\b[^>]*>", " ", t)
     return html.unescape(re.sub(r"<[^>]+>", " ", t)) + flight + article + (" " + attrs if attrs else "")
 
 
@@ -449,7 +449,7 @@ def next_data_text(page):
             continue
         if isinstance(data, dict) and isinstance(data.get('props'), dict):
             article_bodies(data['props'].get('pageProps'))
-    text = re.sub(r'(?is)<script\b.*?</script>|<style\b.*?</style>', ' ', ' '.join(bodies))
+    text = re.sub(r'(?is)<script\b.*?</script\b[^>]*>|<style\b.*?</style\b[^>]*>', ' ', ' '.join(bodies))
     return ' ' + html.unescape(re.sub(r'<[^>]+>', ' ', text)) if text else ''
 
 
