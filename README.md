@@ -19,39 +19,39 @@
 
 ## The accountants
 
-A skill shows **Approved by [name]** only when a licensed accountant read that exact text and approved it from their own GitHub account. If the text changes, the approval is cleared until they approve again. These are the accountants on the record today, by country, read from the skill files themselves:
+A skill shows **Approved by [name]** only when a licensed accountant read that exact text and approved it from their own GitHub account ([how approval works](CONTRIBUTING.md#2-approve-a-skill-accountants)). If the text changes, the approval is cleared until they approve again. These are the accountants on the record today, by country, read from the skill files themselves:
 
 <!-- oa-accountants:start -->
 | Country or state | Accountants |
 |---|---|
-| Australia | Ryan Duguid |
-| California (US) | DeFiAccountant21 |
-| Canada | Khushboo Talreja, Nathan Wiebe |
-| Dominican Republic | Miguel Lantigua |
-| Egypt | Ahmed Hassan |
-| Florida (US) | Rob Hoffman |
-| Georgia | Gvantsa Amiridze |
-| Georgia (US) | Jeff Watts |
-| India | Arshad raza |
-| Indonesia | RILIA PUTRI |
-| Kenya | Julian Njoroge Maina |
-| Malaysia | MUHAMMAD HANIS MAT HUSSIN |
-| Malta | Michael Cutajar, Michael Spiteri Staines |
-| Nepal | Ashish Bista |
-| Nigeria | Omolola Fasasi |
-| Pakistan | Ibrar Ali |
-| Saudi Arabia | Mehran Habib |
-| Serbia | Andrija Eminovic |
-| South Africa | Brandon Iverach, Werner Britz |
-| South Korea | Yeong Min Lee |
-| Spain | Jeff Watts |
-| Sri Lanka | Lal kumarasiri |
-| Tanzania | Baraka Cassian |
-| Tunisia | firas masmoudi |
-| Turkey | Yiğit Çelikel |
-| United Arab Emirates | Jonathan I. Ruiz |
-| United Kingdom | James Power, Nadir Khan |
-| United States (federal) | Anthony Bandura, Christopher Aryee, James Wallach, Vladimir Andjelic |
+| [Australia](skills/australia/) | Ryan Duguid |
+| [California (US)](skills/us/states/ca/) | DeFiAccountant21 |
+| [Canada](skills/canada/) | Khushboo Talreja, Nathan Wiebe |
+| [Dominican Republic](skills/dominican-republic/) | Miguel Lantigua |
+| [Egypt](skills/egypt/) | Ahmed Hassan |
+| [Florida (US)](skills/us/states/fl/) | Rob Hoffman |
+| [Georgia](skills/georgia/) | Gvantsa Amiridze |
+| [Georgia (US)](skills/us/states/ga/) | Jeff Watts |
+| [India](skills/india/) | Arshad raza |
+| [Indonesia](skills/indonesia/) | RILIA PUTRI |
+| [Kenya](skills/kenya/) | Julian Njoroge Maina |
+| [Malaysia](skills/malaysia/) | MUHAMMAD HANIS MAT HUSSIN |
+| [Malta](skills/malta/) | Michael Cutajar, Michael Spiteri Staines |
+| [Nepal](skills/nepal/) | Ashish Bista |
+| [Nigeria](skills/nigeria/) | Omolola Fasasi |
+| [Pakistan](skills/pakistan/) | Ibrar Ali |
+| [Saudi Arabia](skills/saudi-arabia/) | Mehran Habib |
+| [Serbia](skills/serbia/) | Andrija Eminovic |
+| [South Africa](skills/south-africa/) | Brandon Iverach, Werner Britz |
+| [South Korea](skills/south-korea/) | Yeong Min Lee |
+| [Spain](skills/spain/) | Jeff Watts |
+| [Sri Lanka](skills/sri-lanka/) | Lal kumarasiri |
+| [Tanzania](skills/tanzania/) | Baraka Cassian |
+| [Tunisia](skills/tunisia/) | firas masmoudi |
+| [Turkey](skills/turkey/) | Yiğit Çelikel |
+| [United Arab Emirates](skills/uae/) | Jonathan I. Ruiz |
+| [United Kingdom](skills/uk/) | James Power, Nadir Khan |
+| [United States (federal)](skills/us/federal/) | Anthony Bandura, Christopher Aryee, James Wallach, Vladimir Andjelic |
 <!-- oa-accountants:end -->
 
 **Are you an accountant?** Approve the skills for your country and your name appears next to every AI answer that uses them, in ChatGPT, Claude and Cursor. It takes one click from the [accountant portal](https://www.openaccountants.com/for-accountants), from your own GitHub account. Found something wrong? Correct it in the same place. Each accountant works under their own licence; OpenAccountants does not sell accountancy services.
@@ -69,9 +69,9 @@ A tax answer is only as good as the number in it. So every figure in a skill sit
 What keeps those figures honest:
 
 - **Official sources only.** Laws, gazettes and tax authority pages; never blogs or firm summaries.
-- **The figure check.** On every pull request, each figure in a rates table is looked for on the page its row links to. A figure that is not there blocks the merge until it is fixed or explained.
+- **[The figure check](docs/AUTOMATED-REVIEW.md).** On every pull request, each figure in a rates table is looked for on the page its row links to. A figure that is not there blocks the merge until it is fixed or explained.
 - **The evidence archive.** Snapshots of the source pages and the working ledgers behind the skills live in [openaccountants/evidence](https://github.com/openaccountants/evidence), so a figure can still be traced after a government site changes.
-- **Worked examples that add up.** Every skill's examples are recomputed on every pull request.
+- **Worked examples that add up.** Every skill's examples are recomputed on every pull request ([`scripts/check-examples.py`](scripts/check-examples.py)).
 
 How skills are built, checked and corrected: [docs/ACCURACY-METHODOLOGY.md](docs/ACCURACY-METHODOLOGY.md).
 
@@ -79,7 +79,7 @@ How skills are built, checked and corrected: [docs/ACCURACY-METHODOLOGY.md](docs
 
 ## Add to your AI
 
-Add this address to Claude, ChatGPT, Cursor, Windsurf or any AI that takes a connector:
+Add this address to [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com), [Cursor](https://cursor.com), [Windsurf](https://windsurf.com) or any AI that takes a connector:
 
 ```
 https://www.openaccountants.com/api/mcp
@@ -92,7 +92,7 @@ Guided setup: **[openaccountants.com/connect](https://www.openaccountants.com/co
 <details>
 <summary><strong>Prefer self-hosting or manual files?</strong></summary>
 
-- **Python MCP server:** [install the tested GitHub revision](mcp/README.md). The current PyPI release is older and has no bundled skills.
+- **[Python MCP server](mcp/):** [install the tested GitHub revision](mcp/README.md). The current PyPI release is older and has no bundled skills.
 - **Manual:** download your jurisdiction's folder from [`packages/`](packages/) and upload the files to your AI. `index.json` is the machine-readable inventory.
 
 Also listed on the [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.openaccountants/openaccountants) and [Glama](https://glama.ai/mcp/servers/openaccountants/openaccountants).
@@ -105,7 +105,7 @@ Also listed on the [MCP Registry](https://registry.modelcontextprotocol.io/v0/se
 
 **[Browse all countries](skills/COUNTRIES.md)**, by region, with the state of each pack. United States: [federal](skills/us/federal/) and [states](skills/us/states/).
 
-Each skill carries one of two labels:
+Each skill carries one of two labels ([definitions](docs/QUALITY-TIERS.md)):
 
 | Label | Meaning |
 |---|---|
