@@ -1,7 +1,7 @@
 ---
 jurisdiction: AD
-version: 0.7
-last_updated: 2026-10-30
+version: 0.8
+last_updated: 2026-11-17
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
@@ -25,7 +25,7 @@ Six skills cover Andorra's seven tax areas for 2026. Amounts are in EUR; IGI is 
 | Transfer pricing | [Transfer pricing](ad-transfer-pricing.md) | Relationship tests, ordinary market-value method, financing proof, advance agreements, statutory CbCR and enforcement |
 | Cross-border | [Non-resident income](ad-non-resident-income-tax.md) | Source, non-PE/PE computations, internal charges, property, cessation/departure, selected Spain/France treaty methods, foreign credits, withholding and refunds |
 
-Ordinary computations were rebuilt from the current primary texts; calculation/schema checks and independent review are recorded separately in [country research](../../evidence/research/andorra-2026/research.md). Rule-11 old/new preservation, unchanged extra controls and exact limitations remain visible there. Portal consolidations expressly lack official legal status; authentic enactments and treaty/MLI texts control.
+Ordinary computations were rebuilt from the current primary texts; calculation/schema checks and independent review are recorded separately in [country research](https://github.com/openaccountants/evidence/blob/main/research/andorra-2026/research.md). Rule-11 old/new preservation, unchanged extra controls and exact limitations remain visible there. Portal consolidations expressly lack official legal status; authentic enactments and treaty/MLI texts control.
 
 Specialist scope outside the ordinary methods: tax consolidation/CFC/reorganisations and sector/national-project incentives; historic holding/transitional gain allocations; IGI simplified, used-goods, investment-gold, financial-sector and traveller administrative schemes; full treaty-rate/social-agreement matrix, MAP/arbitration administration; immigration/deposits, separate ITP/foreign-investment taxes and actual legal termination entitlements. Particular authorisations, notices, regulated affordable-rent classification and partial-month CASS complement amounts are actual case inputs, not permission to invent a rate. Each Guide's Sources lists precise unconfirmed legacy claims and statutory inconsistencies.
 

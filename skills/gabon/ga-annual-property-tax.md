@@ -6,18 +6,18 @@ jurisdiction: GA
 category: international
 tax_year: 2026
 tax_year_notes: "2026 partial research draft; enacted CFU text read, full law chain, commencement and zoning unresolved"
-last_updated: 2026-11-14
-version: 0.2
+last_updated: 2026-11-17
+version: 0.3
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Gabon annual property tax v0.2
+# Gabon annual property tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**2026 research draft and currency hold.** This Guide adds a new annual-property job to the eight previously source-reviewed research drafts. The frozen property draft received an [independent source-fidelity review](../../evidence/ledgers/gabon-property-review-20261101/README.md). It has not received accountant attestation. The DGI-hosted CGI 2025 is a historical baseline. Enacted Law 041/2025 of 29 December 2025 rewrites CFU; Law 002/2026 of 17 July 2026 changes article 284(1). These read texts do not establish a complete intervening amendment chain, first operative assessment period or implementation. Neither promulgation nor the budget-year label proves activation of every property reform. All calculations below are conditional research computations, not operative 2026 assessments. See the [new figure ledger](../../evidence/ledgers/gabon-property-20261101/README.md) and the [accepted prior review and closure](../../docs/research/2026-11-01-gabon-review/CLOSURE.json).
+**2026 research draft and currency hold.** This Guide adds a new annual-property job to the eight previously source-reviewed research drafts. The frozen property draft received an [independent source-fidelity review](https://github.com/openaccountants/evidence/blob/main/ledgers/gabon-property-review-20261101/README.md). It has not received accountant attestation. The DGI-hosted CGI 2025 is a historical baseline. Enacted Law 041/2025 of 29 December 2025 rewrites CFU; Law 002/2026 of 17 July 2026 changes article 284(1). These read texts do not establish a complete intervening amendment chain, first operative assessment period or implementation. Neither promulgation nor the budget-year label proves activation of every property reform. All calculations below are conditional research computations, not operative 2026 assessments. See the [new figure ledger](https://github.com/openaccountants/evidence/blob/main/ledgers/gabon-property-20261101/README.md) and the [accepted prior review and closure](../../docs/research/2026-11-01-gabon-review/CLOSURE.json).
 
 ## Who this applies to
 

@@ -1,10 +1,10 @@
 ---
 name: md-corporate-income-tax
 description: "Compute Moldova resident-company corporate income tax for 2026, including the ordinary taxable-profit reconciliation and the separate eligible non-VAT SME accounting-income regime. Use for regime and legal-category selection, business expenses, employee benefits, financing, depreciation, losses, foreign-tax credits, instalments, distributions and withholding. Distinguish company tax from shareholder withholding and the dividend-linked payment-deferral option. Establish actual tax-period, VAT, ownership, activity, profit-origin and payment facts before calculating. This source-cited draft preserves the earlier Guide subjects, states exact remaining ordinary and specialist gaps, and has a bounded source-review record linked under Sources. It does not claim accountant attestation or comprehensive coverage."
-version: "0.17"
+version: "0.18"
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tier: 2
@@ -12,7 +12,7 @@ domain: corporate-tax
 type: computation
 ---
 
-# Moldova corporate income tax, 2026 v0.17
+# Moldova corporate income tax, 2026 v0.18
 
 ## Who this applies to
 
@@ -400,7 +400,7 @@ expected:
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](https://github.com/openaccountants/evidence/blob/main/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Primary-source reads on 30–31 October 2026, with each date below.
 

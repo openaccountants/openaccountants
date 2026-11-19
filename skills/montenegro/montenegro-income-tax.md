@@ -1,11 +1,11 @@
 ---
 name: montenegro-income-tax
 description: "Montenegro personal income tax (porez na dohodak fizičkih lica) for tax year 2026, from the Personal Income Tax Law as amended by 160/25 (from 1 January 2026) and 70/26 (from 21 May 2026). Covers residence and scope, the monthly salary bands (0, 9 and 15% at EUR 700 and 1,000), the annual bands for a principal independent activity (0, 9 and 15% at EUR 8,400 and 12,000), the flat 15% for supplementary entrepreneurs, occasional work, rent, capital income, capital gains, sport, royalties, other receipts and internet or gaming income, and gambling winnings (progressive to 20 May, 12% from 21 May). Sets out business-profit adjustments, standard expense percentages, losses, reliefs, the municipal surtax, the GPP-FL return due by the end of April, monthly advances, withholding, lump-sum tax, fines and the foreign tax credit. Payroll, social contributions and VAT have their own skills."
-version: 0.5
+version: 0.6
 type: computation
 jurisdiction: ME
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -509,7 +509,7 @@ expected:
   tax_from_21_may: 180
 ```
 
-The [additional controls](../../evidence/ledgers/montenegro-income-tax-evidence/additional-controls.md) recompute the complete pausal table and the new form crosswalk.
+The [additional controls](https://github.com/openaccountants/evidence/blob/main/ledgers/montenegro-income-tax-evidence/additional-controls.md) recompute the complete pausal table and the new form crosswalk.
 
 ## Ask the client first
 

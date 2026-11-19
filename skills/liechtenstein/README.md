@@ -1,7 +1,7 @@
 ---
 jurisdiction: LI
-version: 0.9
-last_updated: 2026-10-31
+version: 0.10
+last_updated: 2026-11-17
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
@@ -36,7 +36,7 @@ Also in the pack: [li-tax-overview](li-tax-overview.md) (router and headline fig
 
 Out of scope: VAT platform, margin, group and net-tax-rate schemes; expenditure (lump-sum) taxation; trusts and foundations; GloBE top-up tax; the terms of individual tax treaties.
 
-The individual-tax Guide now supplies the ordinary unquoted-company valuation under SteV 7a and Annex 1: weighted earnings/substance, the 60% operating-substance minimum, company-type exceptions and voting-right minority deductions. The official 2026 helper is retained with separate formula observations. The [bounded independent review](../../evidence/ledgers/li-income-tax-evidence/valuation-20261031/independent-review/independent-review.md) and [final date/hash repair](../../evidence/ledgers/li-income-tax-evidence/valuation-20261031/independent-review/repair-verification.json) are recorded separately; actual asset/company classifications and values, unequal share classes, municipal rates and the other explicit Guide limits remain unresolved. The [prior pack review](../../evidence/ledgers/li-pack-review-evidence/README.md) remains tied to its reviewed snapshot.
+The individual-tax Guide now supplies the ordinary unquoted-company valuation under SteV 7a and Annex 1: weighted earnings/substance, the 60% operating-substance minimum, company-type exceptions and voting-right minority deductions. The official 2026 helper is retained with separate formula observations. The [bounded independent review](https://github.com/openaccountants/evidence/blob/main/ledgers/li-income-tax-evidence/valuation-20261031/independent-review/independent-review.md) and [final date/hash repair](https://github.com/openaccountants/evidence/blob/main/ledgers/li-income-tax-evidence/valuation-20261031/independent-review/repair-verification.json) are recorded separately; actual asset/company classifications and values, unequal share classes, municipal rates and the other explicit Guide limits remain unresolved. The [prior pack review](https://github.com/openaccountants/evidence/blob/main/ledgers/li-pack-review-evidence/README.md) remains tied to its reviewed snapshot.
 
 ## Official sources
 

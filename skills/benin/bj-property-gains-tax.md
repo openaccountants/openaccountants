@@ -5,14 +5,14 @@ jurisdiction: BJ
 category: international
 tax_year: 2026
 tax_year_notes: "DGI CGI 2026 with selected original and June rectifying Finance Law checks; unresolved instruments and specialist interactions remain held"
-last_updated: 2026-11-14
-version: 1.1
+last_updated: 2026-11-17
+version: 1.2
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Benin Property Gains Tax (TPVI) - v1.1
+# Benin Property Gains Tax (TPVI) - v1.2
 
 > **General reference only.** This is a partial source-based working paper, not tax, legal or financial advice or accountant attestation. Establish the transaction, operative law and supporting evidence before relying on a computation.
 
@@ -124,6 +124,6 @@ Obtain the transferor/transferee and residence details, asset and exact rights, 
 | [Law 2025-22 of 8 December 2025, original Finance Law](https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf) | Fiscal arts. 1–17 and final 47–48; article 48 expressly sets 1 January 2026 commencement. | No direct amendment to 108–118 identified in these read fiscal clauses. No whole budget-table certification. | 2026-11-01 |
 | [Law 2026-10 of 24 June 2026, rectifying Finance Law](https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf) | Fiscal arts. 1–20 and final 48–49, including article 12's CGI 81 securities limb and article 20's State/local private-domain price reference. | That price table is not assumed to be the missing CGI 112 acquisition-reference order. Exact first operative securities period and TPVI interaction remain held. | 2026-11-01 |
 
-The [figure/rule ledger](../../evidence/ledgers/benin-tpvi-20261101/bj-property-gains-tax.md) binds the actual clauses, short French quotes, pages, source hashes and this draft. Eleven prior Guide bodies and all earlier Benin evidence remain unchanged; the complete old-topic map records their existing destinations.
+The [figure/rule ledger](https://github.com/openaccountants/evidence/blob/main/ledgers/benin-tpvi-20261101/bj-property-gains-tax.md) binds the actual clauses, short French quotes, pages, source hashes and this draft. Eleven prior Guide bodies and all earlier Benin evidence remain unchanged; the complete old-topic map records their existing destinations.
 
 Not yet confirmed: current CGI 112 reference-acquisition-value instruments; treatment of negative/no gain and noncash/gratuitous transfers under the price minimum; estate/death transfers; disputed value, fee or improvement deductions; property-rich securities cost, indirect holdings, loss use and CGI 81/TPVI coordination; mining agreements, specialised collection and treaty relief; creditor-adjudicatee civil-procedure cross-reference and execution; local revenue-allocation instrument; actual registration due-day rule, prescribed declaration/form boxes, supporting schedules, payment references and authenticated acceptance; complete later-law currentness and transaction-specific sanctions/relief. All seven country domains remain partial. This new job passed independent source review on 1 November 2026 for the stated partial working-paper scope; no accountant has attested to it.

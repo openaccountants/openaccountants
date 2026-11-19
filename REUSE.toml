@@ -29,7 +29,6 @@ SPDX-License-Identifier = "AGPL-3.0-only"
 path = [
   "skills/**",
   "library/**",
-  "evidence/research/**",
   "packages/**",
   "workflows/**",
   "agent-skills/**/SKILL.md",
@@ -45,12 +44,9 @@ precedence = "override"
 SPDX-FileCopyrightText = "2026 Glimpse Ltd and Open Accountants contributors"
 SPDX-License-Identifier = "LicenseRef-OA-Guide-License-2.0"
 
-# Exact statutory API data and generated readers retain their source licence.
-[[annotations]]
-path = "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/**"
-precedence = "override"
-SPDX-FileCopyrightText = "Stiftelsen Lovdata; source Norwegian legislative authorities"
-SPDX-License-Identifier = "NLOD-2.0"
+# evidence/ (with its research/ and NLOD-2.0 Svalbard API data) moved to
+# https://github.com/openaccountants/evidence on 2026-11-17; its own REUSE.toml
+# keeps the same licences there.
 
 # Two Japan Guides adapt MIT-licensed work by Kazuki Nagata
 # (https://github.com/kazukinagata/shinkoku). MIT requires its copyright and

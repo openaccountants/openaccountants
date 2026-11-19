@@ -3,16 +3,16 @@ name: md-company-formation
 description: "Prepare Moldova company formation and entity choice for 2026 using the current SRL, state-registration, joint-stock and accounting laws. Covers ordinary SRL constitution, founders and statute, subscribed capital and payments, the SA capital screen, ASP application documents and representation, foreign documents, standard and urgent company-registration tariffs, one-stop fiscal records, register changes and annual accounts. Use for incorporation, SRL versus individual entrepreneur, an SA proposal, IDNO, beneficial-owner disclosure, foreign founders, accounting and filing planning. This source-cited draft states current-form and specialist gaps, and has a bounded source-review record linked under Sources. It does not establish every securities, regulated-sector, AML, banking or historical procedure or claim accountant attestation."
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: "0.10"
+version: "0.11"
 tier: 2
 domain: formation
 type: filing-howto
 ---
 
-# Moldova company formation and entity choice, 2026 v0.10
+# Moldova company formation and entity choice, 2026 v0.11
 
 ## Who this applies to
 
@@ -230,7 +230,7 @@ Obtain the activities and regulated permissions; founders' legal form, countries
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](https://github.com/openaccountants/evidence/blob/main/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Sources read 30 October 2026.
 

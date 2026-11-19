@@ -39,7 +39,6 @@ packages/                  # GENERATED per-jurisdiction bundles: do not edit (on
                            #   reviewed by Christopher Aryee, CPA). Never regenerated.
 
 agent-skills/              # GENERATED Agent Skills format (one folder per skill, SKILL.md) + install.sh
-evidence/                  # Source records, not skills: ledgers/ and research/ (not read by any build)
 calculators/               # quoted-lines.json (skill lines our calculations rely on) + contributed checks
 workflows/                 # Guided 6-phase advisor workflows (cross-border intake, UK CGT, ...)
 mcp/                       # Python MCP server source (openaccountants-mcp on PyPI)
@@ -104,6 +103,7 @@ If you need a machine-readable listing, read `index.json` or run `python3 script
 - **A guided workflow:** `workflows/`.
 - **A calculator:** `calculators/<name>/`.
 - **The MCP server:** `mcp/`.
+- **Source snapshots and ledgers (evidence behind skill figures):** not here. They moved on 17 November 2026 to [openaccountants/evidence](https://github.com/openaccountants/evidence), same paths minus the `evidence/` prefix. New evidence goes there.
 - **Anything under `packages/`, `agent-skills/<slug>/` or `plugins/openaccountants/skills/`:** do not. Edit the source in `skills/`; after it merges, `.github/workflows/rebuild-derived.yml` runs `scripts/build-derived.sh` and opens a bot PR with the regenerated trees. Do not run the generators in a PR.
 
 Contribution process, frontmatter conventions, and the website-sync rule: [CONTRIBUTING.md](../CONTRIBUTING.md) and [WEBSITE-SYNC.md](WEBSITE-SYNC.md).

@@ -2,10 +2,10 @@
 name: gg-secondary-pensions
 description: >
   Prepare 2026 Guernsey secondary-pension enrolment and contribution working papers for employers. Covers designated and voluntary employees, phased employer start dates, minimum contributions, the earnings base, enrolment deferral, opt-outs, refunds, re-enrolment and quarterly reporting. Distinguishes payments to the pension provider from Revenue Service returns and social-insurance contributions. Use for workplace pension setup, payroll contribution calculations and compliance reviews. Based on official employer guidance checked in October 2026. Direct statutory reconciliation, detailed enforcement, scheme-specific conditions and independent review remain outstanding; this source-cited draft does not establish comprehensive payroll coverage or professional attestation.
-version: 0.4
+version: 0.5
 jurisdiction: GG
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -133,7 +133,7 @@ All frontmatter sources were read on 22 October 2026. Exact page titles, URLs an
 |---|---|---|
 | [Secondary Pensions Penalties and Miscellaneous Provisions Regulations 2026](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=327675) | Full rr1–8: scheme election, fixed/escalating penalty, review period, schedule amendments and 12 May commencement | 2026-10-27 |
 
-Not yet confirmed: full underlying-Law notice prerequisites, new-employer commencement, precise age boundaries and absence/status changes, specialist/foreign schemes, full enforcement/appeal/interest and commutation/transfer eligibility. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending. Neither this file's presence nor its arithmetic checks establish comprehensive pension or country coverage.
+Not yet confirmed: full underlying-Law notice prerequisites, new-employer commencement, precise age boundaries and absence/status changes, specialist/foreign schemes, full enforcement/appeal/interest and commutation/transfer eligibility. The [fresh independent whole-pack review](https://github.com/openaccountants/evidence/blob/main/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](https://github.com/openaccountants/evidence/blob/main/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending. Neither this file's presence nor its arithmetic checks establish comprehensive pension or country coverage.
 
 ## Disclaimer
 

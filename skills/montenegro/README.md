@@ -38,7 +38,7 @@ Also in the pack: montenegro-tax-optimization, me-tax-overview and me-company-fo
 
 ## 31 October source follow-up
 
-The PIT Guide now includes the original pausal scale, application and turnover book, and the promulgated 103/2025 GPP-FL attachments. IT-IND stays partial for the ordinary form-mapping and partial-year questions named above. This update does not re-attest the other nine Guides or convert prior AI source reviews into accountant attestation. The [figure ledger and complete predecessor destinations](../../evidence/ledgers/montenegro-income-tax.md) retain the source and preservation chain.
+The PIT Guide now includes the original pausal scale, application and turnover book, and the promulgated 103/2025 GPP-FL attachments. IT-IND stays partial for the ordinary form-mapping and partial-year questions named above. This update does not re-attest the other nine Guides or convert prior AI source reviews into accountant attestation. The [figure ledger and complete predecessor destinations](https://github.com/openaccountants/evidence/blob/main/ledgers/montenegro-income-tax.md) retain the source and preservation chain.
 
 - Pausal rule, arts. 2 to 7: https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0 (read 2026-10-31).
 - GPP-FL amendment 103/2025 with all schedules: https://www.sluzbenilist.me/propisi/385024/download (read 2026-10-31).

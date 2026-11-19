@@ -5,15 +5,15 @@ jurisdiction: CG
 category: international
 tax_year: 2026
 tax_year_notes: "Initial 2026 enacted-law baseline; later 2026 currentness and filing procedures remain partial"
-last_updated: 2026-11-14
-version: 1.2
+last_updated: 2026-11-17
+version: 1.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Republic of Congo Corporate Income Tax v1.2
+# Republic of Congo Corporate Income Tax v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -123,6 +123,6 @@ expected:
 | ACPCE 2026 fiscal and social calendar. All five pages OCR after 180-degree correction; annual/monthly/varied deadlines and rate table. Conflicts with statute are recorded, not silently resolved. | https://acpce.cg/wp-content/uploads/2026/02/Calendrier-des-obligations-fiscales-et-sociales-au-titre-de-lannee-2026.pdf | 2026-11-01 |
 | Finance Act 42-2025, official gazette special 3-2026. Enacted initial 2026 law: cover; art 5; art 47 replacement CGI 2–11,15–19,21,25,42,45–49,69–86A,86C–G,92–92E,93–99,102,104–110A,111C–116I,128–131(excerpts through part 6); amendments 374ter and VAT 24/29; state invoice rule 7.2.4; final arts 61–62. Focused provisions with neighbors, not all fiscal schedules or all 116pages read. | https://sgg.cg/JO/2026/congo-jo-2026-3-3.pdf | 2026-11-01 |
 
-Figure/rule quotations and source hashes: [country ledger](../../evidence/ledgers/republic-of-congo-draft-20261101/cg-corporate-income-tax.md). Every worked figure is conditional on the stated example facts.
+Figure/rule quotations and source hashes: [country ledger](https://github.com/openaccountants/evidence/blob/main/ledgers/republic-of-congo-draft-20261101/cg-corporate-income-tax.md). Every worked figure is conditional on the stated example facts.
 
 Not yet confirmed: The conflict between CGI53 and75 for deferred depreciation remains unresolved; no carryforward duration is selected.  Later 2026 rectifying law and implementation chain; the 86F four-month versus ACPCE 15May filing conflict; live electronic portal/forms/boxes; the old blanket 5% surtax and minimum floors; ordinary enforced late-return/late-payment sanctions; sector incentives and full depreciation tables. These gaps prevent operative or comprehensive 2026 coverage.

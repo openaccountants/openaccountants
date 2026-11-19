@@ -15,13 +15,13 @@ description: >
 jurisdiction: MG
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.2
+last_updated: 2026-11-17
+version: 0.3
 tier: 2
 type: situation-rules
 ---
 
-# Madagascar capital income: ordinary IRCM withholding v0.2
+# Madagascar capital income: ordinary IRCM withholding v0.3
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Madagascar.
 
@@ -142,4 +142,4 @@ expected:
 | [Loi 2025-021, LFI 2026](https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf), printed p.42: complete IRCM amendments to 01.04.02,04,10, visually checked; printed p.129: article24 activation text and signature | 2026-11-01 |
 | [Signed Loi 2026-004, LFR 2026](https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf), printed p.20: II-B repeal and II-D insertion; p.22: full 01.04.02(6) replacement and 01.04.10 paragraph deletion, visually checked; p.48: article22 activation text and signature | 2026-11-01 |
 
-**Not yet confirmed:** Actual LFI article24/LFR article22 radio/posted-publication activation dates and boundary-period transactions; historical nonresident-dividend II-B/IRCM interaction; complete securities-disposal cost basis, expenses, losses, lot/valuation and payer/intermediary collection rules; variable/deemed issue-amount redemption-premium computations; actual treaty entitlement/rates/forms; foreign-payer collection and foreign tax credits; special-sector eligibility and IRCM regimes; full current filing form/identifier/boxes, electronic validation/payment reference and receipt workflow; complete IRCM sanctions/procedural relief. All seven ordinary pack domains remain partial. Independent AI source review accepted the stated partial scope on 1 November 2026; see the [closure review](../../evidence/ledgers/madagascar-capital-review-20261101/closure-review.md). No accountant attestation.
+**Not yet confirmed:** Actual LFI article24/LFR article22 radio/posted-publication activation dates and boundary-period transactions; historical nonresident-dividend II-B/IRCM interaction; complete securities-disposal cost basis, expenses, losses, lot/valuation and payer/intermediary collection rules; variable/deemed issue-amount redemption-premium computations; actual treaty entitlement/rates/forms; foreign-payer collection and foreign tax credits; special-sector eligibility and IRCM regimes; full current filing form/identifier/boxes, electronic validation/payment reference and receipt workflow; complete IRCM sanctions/procedural relief. All seven ordinary pack domains remain partial. Independent AI source review accepted the stated partial scope on 1 November 2026; see the [closure review](https://github.com/openaccountants/evidence/blob/main/ledgers/madagascar-capital-review-20261101/closure-review.md). No accountant attestation.

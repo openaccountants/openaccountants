@@ -16,14 +16,14 @@ description: >
 jurisdiction: FO
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.7
+last_updated: 2026-11-17
+version: 0.8
 tier: 2
 domain: corporate-tax
 type: computation
 ---
 
-# Faroe Islands corporate income tax v0.7
+# Faroe Islands corporate income tax v0.8
 
 ## Who this applies to
 
@@ -279,7 +279,7 @@ expected:
 | [Tax Act §35a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) | Full purchased-intangible acquisition, term, disposal, cessation and deemed-transfer provisions | 2026-10-28 |
 | [TAKS VLS N](https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/n-skattligar-avskrivingar) | §25 worked example: separate recapture capped at deductions and indexed gain; current Depreciation Act §25 cross-check; older §26 timing not adopted | 2026-10-28 |
 
-The [whole-Guide figure/rule ledger and old-topic destination table](../../../ledgers/faroe-islands-2026-evidence/ledgers/fo-corporate-income-tax.md) records source quotes, read scopes and derived-example inputs. Supplementary controls there preserve exactly the two main examples in this Guide.
+The [whole-Guide figure/rule ledger and old-topic destination table](https://github.com/openaccountants/evidence/blob/main/ledgers/faroe-islands-2026-evidence/ledgers/fo-corporate-income-tax.md) records source quotes, read scopes and derived-example inputs. Supplementary controls there preserve exactly the two main examples in this Guide.
 
 Not yet confirmed: conflicting historic acquisition-index entries; capital-group implementing conditions and case-specific group schedule/filing fields; employee-benefit adjustments and full exemption implementation; foreign-credit nonpositive bases, changes/refunds, unused-credit treatment and filing fields, and treaty procedures; current monetary fine practice; other common deductions not resolved above. The supplied ordinary group allocation and purchased-intangible methods are distinct from these reservations. Special industry levies, tonnage tax, reorganisations and minimum-tax scope require separate applicability work. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026; professional attestation remains outstanding; this Guide does not establish complete corporate coverage. The 28 October additions require fresh independent review and do not extend the earlier review to this version.
 

@@ -5,13 +5,13 @@ description: >
 jurisdiction: BF
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.2
+last_updated: 2026-11-17
+version: 0.3
 tier: 2
 type: situation-rules
 ---
 
-# Burkina Faso investment income and IRCM withholding v0.2
+# Burkina Faso investment income and IRCM withholding v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -160,6 +160,6 @@ Obtain investor and beneficial-owner identity, domicile/residence evidence, debt
 | [DGI, official CGI 2026](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) | Complete arts. 129–159 and neighbouring arts. 127–128/160; complete selected exemptions in art. 130/134 read although only the specified branches are operationally drafted; arts. 93–94, 610–611 with neighbours, 669–673 and 763–767. Printed/physical pages 77–80 visually inspected for rates, timing and distinct calendars. This is a selected reading, not a whole-volume amendment-chain certification. | 2026-11-01 |
 | [Signed 2026 finance law, Loi 021-2025/ALT, Journal officiel special 1](https://dgi.bf/wp-content/uploads/2026/01/JOURNAL-OFFICIEL-N%C2%B001-SPECIAL-LOI-DE-FINANCES-2026.pdf) | Identity/promulgation pages and OCR amendment headings screened across arts. 14–36 against CGI article numbers. No amendment of arts. 129–159, 610–611 or 765–766 identified in those headings. This is limited overlay screening, not verification of every provision or all later legislation. | 2026-11-01 |
 
-The [rule ledger](../../evidence/ledgers/burkina-faso-capital-20261101/bf-investment-income.md) records every drafted rule, original-language anchor and source hash. The [migration receipt](../../evidence/ledgers/burkina-faso-capital-20261101/old-topic-destinations.md) preserves the corporate Guide's two transferred table rows against an immutable commit; its IS-credit body and all other Guide bodies remain unchanged.
+The [rule ledger](https://github.com/openaccountants/evidence/blob/main/ledgers/burkina-faso-capital-20261101/bf-investment-income.md) records every drafted rule, original-language anchor and source hash. The [migration receipt](https://github.com/openaccountants/evidence/blob/main/ledgers/burkina-faso-capital-20261101/old-topic-destinations.md) preserves the corporate Guide's two transferred table rows against an immutable commit; its IS-credit body and all other Guide bodies remain unchanged.
 
 Not yet confirmed: current prescribed declaration/claim/certificate IDs and boxes, authenticated portal upload/acknowledgement and electronic payment references; administrative rounding and detailed penalty month-counting/cumulation; general-administrator or non-dividend borrowing-product remittance calendar beyond the expressly read branches; exact interaction between deemed dividend payment and an absent distribution resolution; individual residence, final-tax/credit treatment, foreign dividends and foreign tax relief; convention force, entitlement and relief procedure for any recipient; current community-company classification evidence; special exemptions outside the drafted art. 130/134 branches, art. 134(6) restructuring interpretation and redemption issue-basis execution; associate-reimbursement claim form/time limit/refund execution; PE deemed distributions and investment disposals; further amendments outside the selected source set. All seven pack domains remain partial. This new job and its two migrated corporate rows have completed independent conditional source review, with one correction closed; no accountant has attested to them.

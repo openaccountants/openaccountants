@@ -3,8 +3,8 @@ name: bh-corporate-income-tax
 description: "Bahrain hydrocarbon income tax and Domestic Minimum Top-up Tax (DMTT) screening and simplified computations for tax year 2026. Covers statutory taxpayer scope, adjusted income, returns and penalties. Current general corporate-tax enactment status and electronic filing/payment workflows remain unconfirmed."
 jurisdiction: BH
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.5
+last_updated: 2026-11-17
+version: 0.6
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,7 +12,7 @@ domain: income-tax
 type: computation
 ---
 
-# Bahrain Corporate Income Tax v0.5
+# Bahrain Corporate Income Tax v0.6
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -101,4 +101,4 @@ expected:
 | DMTT Law, arts. 1 to 4, 6 to 10, 17 to 22, 28 and 44 read with neighbours | https://www.lloc.gov.bh/Legislation/HTM/L1124 | 2026-11-01 |
 | DMTT ER, promulgation and arts. 65 to 70 read with surrounding filing provisions | https://www.lloc.gov.bh/Legislation/HTM/RFNE17224 | 2026-11-01 |
 
-Not yet confirmed: current general corporate-tax enactment status, blanket zero withholding, the former 2025 advance-payment dates, permanent-safe-harbour/newly internationalised-group implementation, current NBR form boxes/payment workflow and hydrocarbon final-return administrative procedure. Full predecessor text and exact destinations are preserved in [the country evidence](../../evidence/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.
+Not yet confirmed: current general corporate-tax enactment status, blanket zero withholding, the former 2025 advance-payment dates, permanent-safe-harbour/newly internationalised-group implementation, current NBR form boxes/payment workflow and hydrocarbon final-return administrative procedure. Full predecessor text and exact destinations are preserved in [the country evidence](https://github.com/openaccountants/evidence/blob/main/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.

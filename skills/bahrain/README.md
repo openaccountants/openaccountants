@@ -37,4 +37,4 @@ tax is held pending current general corporate-tax enactment verification.
 No Guide in this repair receives a licensed Bahrain professional's signature.
 Fresh independent source review is required before acceptance. Source identities,
 actual read scopes, operative rule ledgers, exact predecessor destinations and
-all preserved text are in [the country evidence](../../evidence/ledgers/bahrain-20261101/README.md).
+all preserved text are in [the country evidence](https://github.com/openaccountants/evidence/blob/main/ledgers/bahrain-20261101/README.md).

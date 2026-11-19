@@ -15,9 +15,9 @@ description: >
 jurisdiction: MD
 category: cross-border
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: "0.11"
+version: "0.12"
 tier: 2
 domain: cross-border
 type: situation-rules
@@ -323,7 +323,7 @@ All examples assume their stated legal facts; arithmetic checks do not independe
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](https://github.com/openaccountants/evidence/blob/main/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 | Source actually read | Provisions used | Read |
 |---|---|---|

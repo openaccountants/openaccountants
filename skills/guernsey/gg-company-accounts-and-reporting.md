@@ -2,10 +2,10 @@
 name: gg-company-accounts-and-reporting
 description: >
   Guernsey company accounting and reporting reference for ordinary local trading companies limited by shares. Covers transaction records, retention, annual accounts, financial periods, member circulation, audit-waiver timing and the separate annual validation. Includes December-incorporation and advance-waiver examples, a document workflow and explicit gaps for audit-excluded companies and specialised entities. Prepared for 2026 from Guernsey Registry primary guidance, including the current annual-validation page and directors handbook. Current consolidated accounts, validation and audit-waiver provisions and the audit-exclusion regulations were recovered and checked on 27 October 2026. Specialised entities and the detailed civil-penalty boundary rules remain outside the established ordinary methods; this draft requires professional review before reliance.
-version: "0.7"
+version: "0.8"
 jurisdiction: GG
 tax_year: 2026
-last_updated: 2026-11-15
+last_updated: 2026-11-17
 category: financial-statements
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -205,6 +205,6 @@ Source-access record, 14 November 2026: ordinary legal-library URLs returned 403
 | [Audit Exemption Amendment 2021](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=265841) | Full instrument, replaced thresholds/revocations | 2026-10-27 |
 | Registry sources cited in the body: [directors handbook](https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0), [resolutions](https://www.guernseyregistry.com/resolutions), [annual validation](https://www.guernseyregistry.com/article/183449/Annual-Validation---Companies), [fees](https://www.guernseyregistry.com/companyfees), [validation penalties](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174583&p=0), [general penalties](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0), [2026 questions](https://www.guernseyregistry.com/CHttpHandler.ashx?id=172173&p=0), [how-to](https://www.guernseyregistry.com/CHttpHandler.ashx?id=173525&p=0) and [audit guidance](https://www.guernseyregistry.com/CHttpHandler.ashx?id=5097&p=0) | Read for the original accounts, waivers, fee classification, validation workflow/questions, separate civil-penalty bands, notice/payment and appeal clocks described above; prior independent scoped reviews retained | Original review 2026-10-22; fees 2026-10-27 |
 
-Not yet confirmed: precise civil-penalty band boundary rules, full current court challenge/suspension procedure, referenced historic dormant/asset-holding definitions and specialised-company requirements. No accountant attestation is claimed. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending.
+Not yet confirmed: precise civil-penalty band boundary rules, full current court challenge/suspension procedure, referenced historic dormant/asset-holding definitions and specialised-company requirements. No accountant attestation is claimed. The [fresh independent whole-pack review](https://github.com/openaccountants/evidence/blob/main/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](https://github.com/openaccountants/evidence/blob/main/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending.
 
 > Contributed by OpenAccountants.

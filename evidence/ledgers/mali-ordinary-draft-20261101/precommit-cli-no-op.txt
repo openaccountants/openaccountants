@@ -1,2 +1,0 @@
-changed-only mode: validating 0 changed guide file(s)
-no guide files changed — validation passed

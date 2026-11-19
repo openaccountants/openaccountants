@@ -5,6 +5,12 @@ Every file moved by `scripts/migrate-layout.py` (the first table), then every la
 Use this to update `skills.github_path` on the platform (`scripts/reconnect-github-paths.ts`
 in the platform repo reads every two-column row of this file).
 
+**17 November 2026: `evidence/` left this repository.** Every `evidence/...` path in the tables below
+now lives at the same path, minus the `evidence/` prefix, in
+[openaccountants/evidence](https://github.com/openaccountants/evidence) (for example
+`evidence/ledgers/x.md` is now `https://github.com/openaccountants/evidence/blob/main/ledgers/x.md`).
+The tables are kept as the record of each move. No skill moved.
+
 | Old path | New path |
 |---|---|
 | ledgers/china-2026/cn-corporate-tax.json | evidence/ledgers/china-2026/cn-corporate-tax.json |

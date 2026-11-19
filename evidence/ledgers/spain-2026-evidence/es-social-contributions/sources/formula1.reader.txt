@@ -1,1 +1,0 @@
-% reducción mes = 7,36% × (1 + (Base mes − 986,70)/Base mes × 2,52 × 6,15%/7,36%)

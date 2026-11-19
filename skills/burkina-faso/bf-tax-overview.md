@@ -4,15 +4,15 @@ description: >
   Burkina Faso tax intake and routing workpaper for 2026. It directs business income, corporate tax, VAT, payroll withholding, social contributions, transfer pricing and non-resident services withholding to their separate source homes. Use it to distinguish turnover from profit, employee deductions from employer charges, tax declarations from company accounts approval, and ordinary domestic jobs from specialist cross-border questions. It preserves the previous overview topics as routed items or explicit gaps without copying headline figures away from their conditions. Two reconciliations illustrate common intake errors. Current authenticated filing steps, individual residence and foreign income, treaty relief, specialist sectors and professional attestation are outside the verified scope.
 jurisdiction: BF
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.2
+version: 1.3
 tier: 2
 domain: income-tax
 type: situation-rules
 ---
 
-# Burkina Faso tax overview and routing v1.2
+# Burkina Faso tax overview and routing v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -117,7 +117,7 @@ Obtain legal form and identifiers, all activities and locations, start/close dat
 |---|---|---|
 | [DGI, CGI 2026](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) | 2026-11-01 | Selected articles 1, 4, 28, 42, 46–53, 65–66, 105, 210–214, 227–229, 296, 303–306, 530, 535, 557, 561-1, 561-4 and sanctions headings for routing only. Not the whole volume. |
 
-The [figure/rule ledger](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-overview.md) records each rule, original-language quote and read scope. The [predecessor map](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.md) records every original topic, including retained gaps.
+The [figure/rule ledger](https://github.com/openaccountants/evidence/blob/main/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-overview.md) records each rule, original-language quote and read scope. The [predecessor map](https://github.com/openaccountants/evidence/blob/main/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.md) records every original topic, including retained gaps.
 
 Not yet confirmed: The old individual habitual-abode/source-only residence rule, foreign income and investment income; current filing form/box identifiers, authenticated eSINTAX confirmation/payment sequences and any supposedly universal tenth-day payroll or monthly social obligation; complete treaty/PE/exit/property/customs/special-sector coverage; currency/monetary-union descriptive claims not independently sourced in this pass; current controlling social law/rates, timing/AMU/SMIG gaps carried by the social Guide; national formation/registration holds and all remaining home-Guide gaps; comprehensive coverage and accountant attestation.
 

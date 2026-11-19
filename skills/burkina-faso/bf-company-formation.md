@@ -4,15 +4,15 @@ description: >
   Burkina Faso company formation and entity choice workpaper for the 2026 intake. It separates SARL, ordinary SA and SAS rules, subscription from paid capital, incorporation from RCCM personality, and company accounts approval from tax filing. Use it to prepare articles, contribution evidence, capital payment schedules, the SARL audit threshold test, declaration of existence and beneficial owner tax records. The official OHADA company Act and selected 2026 CGI articles are the sources actually read. National SARL capital exceptions, current CEFORE registration steps, fees, processing times, sector licences and authenticated form boxes remain explicit gaps. It produces a source-cited preparation file, not registration or professional attestation.
 jurisdiction: BF
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-17
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.2
+version: 1.3
 tier: 2
 domain: formation
 type: filing-howto
 ---
 
-# Burkina Faso company formation and entity choice v1.2
+# Burkina Faso company formation and entity choice v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -117,7 +117,7 @@ Obtain the proposed form, owners and ultimate controllers, activity/regulated pe
 | [DGI, CGI 2026](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) | 2026-11-01 | Selected articles 49, 89–91, 96-1–96-2, 554–557, 561-4 and neighbouring conditions. Not the whole volume. |
 | [OHADA, signed AUSCGIE 2014](https://biblio.ohada.org/doc_num.php?explnum_id=2032) | 2026-11-01 | Physical pages 8–13, 28, 36, 76–78, 93, 95–96 and 207–208: the selected articles in the ledger. Both SA capital pages 95 and 96 visually inspected, including unpaid-share and financing restrictions. Not every provision of the Act. |
 
-The [figure/rule ledger](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-company-formation.md) records each rule, original-language quote and read scope. The [predecessor map](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.md) records every original topic, including retained gaps.
+The [figure/rule ledger](https://github.com/openaccountants/evidence/blob/main/ledgers/burkina-faso-legacy-jobs-20261101/bf-company-formation.md) records each rule, original-language quote and read scope. The [predecessor map](https://github.com/openaccountants/evidence/blob/main/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.md) records every original topic, including retained gaps.
 
 Not yet confirmed: Burkina national SARL capital/nominal exceptions and current execution/deposit derogations; current CEFORE portal, forms, fees, notary budget, end-to-end processing time and registration workflow; UBO identity methodology under the referenced AML law and current declaration form/box IDs; CEFORE-specific UBO step; sole-trader registration, pre-registration commitments and ratification; registry accounts-deposit process and deadlines, licences and blanket annual business-registration renewal; formation/UBO penalties; sector/public-offering capital rules, foreign-owner/branch/immigration/exchange restrictions; authenticated eSINTAX filing and accountant attestation.
 
