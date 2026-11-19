@@ -1,11 +1,13 @@
 # OpenAccountants
 
-**Tax skills for AI, written from the law and approved by named accountants.** Your AI answers tax questions from memory. Add these skills and it answers from the law: every rate, threshold and deadline links to the official page it came from, and each skill says which accountant, if any, has approved it.
+> Every skill here is written from the official law and the tax authority's own pages, with each figure linked to its source, and checked before it is published. Accountants write and approve these skills, but approvals, and the accountant's name, appear only through the OpenAccountants plugin (MCP). More than 100 skills are approved by a named, licensed accountant, and this repository runs behind what the plugin serves. For the current, accountant-approved version, add the plugin to your AI: https://www.openaccountants.com/connect
+
+**Tax skills for AI, written from the law and approved by named accountants.** Your AI answers tax questions from memory. Add these skills and it answers from the law: every rate, threshold and deadline links to the official page it came from, and the plugin says which accountant, if any, has approved each skill.
 
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/openaccountants/openaccountants/badge)](https://securityscorecards.dev/viewer/?uri=github.com/openaccountants/openaccountants)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/16906/badge)](https://www.bestpractices.dev/projects/16906)
 [![Skill checks](https://github.com/openaccountants/openaccountants/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/openaccountants/openaccountants/actions/workflows/validate.yml)
-[![Approved by accountants](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fopenaccountants%2Fopenaccountants%2Fstatus-data%2Fstatus.json&query=%24.approvers&label=named%20accountants&color=047857)](#the-accountants)
+[![Approved by accountants](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fopenaccountants%2Fopenaccountants%2Fstatus-data%2Fstatus.json&query=%24.approvers&label=named%20accountants&color=047857)](#accountants)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-listed-047857)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.openaccountants/openaccountants)
 [![License: AGPL-3.0](https://img.shields.io/badge/code-AGPL--3.0-047857)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/openaccountants/openaccountants?style=social)](https://github.com/openaccountants/openaccountants/stargazers)
@@ -18,42 +20,9 @@
 
 ---
 
-## The accountants
+## Accountants
 
-A skill shows **Approved by [name]** only when a licensed accountant read that exact text and approved it from their own GitHub account ([how approval works](CONTRIBUTING.md#2-approve-a-skill-accountants)). If the text changes, the approval is cleared until they approve again. These are the accountants on the record today, by country, read from the skill files themselves:
-
-<!-- oa-accountants:start -->
-| Country or state | Accountants |
-|---|---|
-| [Australia](skills/australia/) | Ryan Duguid |
-| [California (US)](skills/us/states/ca/) | DeFiAccountant21 |
-| [Canada](skills/canada/) | Khushboo Talreja, Nathan Wiebe |
-| [Dominican Republic](skills/dominican-republic/) | Miguel Lantigua |
-| [Egypt](skills/egypt/) | Ahmed Hassan |
-| [Florida (US)](skills/us/states/fl/) | Rob Hoffman |
-| [Georgia](skills/georgia/) | Gvantsa Amiridze |
-| [Georgia (US)](skills/us/states/ga/) | Jeff Watts |
-| [India](skills/india/) | Arshad raza |
-| [Indonesia](skills/indonesia/) | RILIA PUTRI |
-| [Kenya](skills/kenya/) | Julian Njoroge Maina |
-| [Malaysia](skills/malaysia/) | MUHAMMAD HANIS MAT HUSSIN |
-| [Malta](skills/malta/) | Michael Cutajar, Michael Spiteri Staines |
-| [Nepal](skills/nepal/) | Ashish Bista |
-| [Nigeria](skills/nigeria/) | Omolola Fasasi |
-| [Pakistan](skills/pakistan/) | Ibrar Ali |
-| [Saudi Arabia](skills/saudi-arabia/) | Mehran Habib |
-| [Serbia](skills/serbia/) | Andrija Eminovic |
-| [South Africa](skills/south-africa/) | Brandon Iverach, Werner Britz |
-| [South Korea](skills/south-korea/) | Yeong Min Lee |
-| [Spain](skills/spain/) | Jeff Watts |
-| [Sri Lanka](skills/sri-lanka/) | Lal kumarasiri |
-| [Tanzania](skills/tanzania/) | Baraka Cassian |
-| [Tunisia](skills/tunisia/) | firas masmoudi |
-| [Turkey](skills/turkey/) | Yiğit Çelikel |
-| [United Arab Emirates](skills/uae/) | Jonathan I. Ruiz |
-| [United Kingdom](skills/uk/) | James Power, Nadir Khan |
-| [United States (federal)](skills/us/federal/) | Anthony Bandura, Christopher Aryee, James Wallach, Vladimir Andjelic |
-<!-- oa-accountants:end -->
+A skill is **Approved by [name]** only when a licensed accountant read that exact text and approved it ([how approval works](CONTRIBUTING.md#2-approve-a-skill-accountants)). If the text changes, the approval is cleared until they approve again. Who approved which skill is shown on [openaccountants.com](https://www.openaccountants.com) and in the plugin's answers, not in this repository.
 
 **Are you an accountant?** Approve the skills for your country and your name appears next to every AI answer that uses them, in ChatGPT, Claude and Cursor. It takes one click from the [accountant portal](https://www.openaccountants.com/for-accountants), from your own GitHub account. Found something wrong? Correct it in the same place. Each accountant works under their own licence; OpenAccountants does not sell accountancy services.
 
@@ -106,11 +75,11 @@ Also listed on the [MCP Registry](https://registry.modelcontextprotocol.io/v0/se
 
 **[Browse all countries](skills/COUNTRIES.md)**, by region, with the state of each pack. United States: [federal](skills/us/federal/) and [states](skills/us/states/).
 
-Each skill carries one of two labels ([definitions](docs/QUALITY-TIERS.md)):
+In the plugin, each skill carries one of two labels ([definitions](docs/QUALITY-TIERS.md)):
 
 | Label | Meaning |
 |---|---|
-| **Approved by [name]** | A named, licensed accountant approved this exact text from their own GitHub account. |
+| **Approved by [name]** | A named, licensed accountant approved this exact text. The name is shown in the plugin and on the website. |
 | **Not yet approved** | Built from the law and checked before merge, but no accountant has approved it yet. |
 
 ⚠️ **General reference, not advice.** Skills may be incomplete, outdated, or wrong for your facts. Have a qualified professional review outputs before filing, payment, or action.
