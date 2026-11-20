@@ -1,0 +1,81 @@
+# Owner scope (Michael, 20 Nov 2026): Ryan Duguid merges Australia only.
+#
+# 1. Required check "owner-scope": a pull request opened by a scoped owner that touches any file
+#    outside their folders fails until Michael approves the current version of it.
+# 2. Watcher: if a scoped owner merges anyone's pull request that touches files outside their
+#    folders, an issue is opened for Michael.
+#
+# pull_request_target runs this file as it is on main, so a pull request cannot change the rule
+# that judges it. Nothing from the pull request is checked out or run.
+name: owner-scope
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review, closed]
+  pull_request_review:
+    types: [submitted, dismissed]
+
+permissions:
+  contents: read
+  pull-requests: read
+  issues: write
+
+concurrency:
+  group: owner-scope-${{ github.event.pull_request.number }}-${{ github.event.action == 'closed' }}
+  cancel-in-progress: true
+
+env:
+  # One line per scoped owner: GitHub login, then the folders they may change (regex).
+  SCOPED_OWNER: ryanduguid
+  ALLOWED: '^(skills/australia/|packages/australia/|agent-skills/[^/]*australia[^/]*/|calculators/au-[^/]+/)'
+  APPROVER: michaelcutajar1995
+
+jobs:
+  owner-scope:
+    if: github.event.action != 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check the files against the owner's folders
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+          HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          if [ "$AUTHOR" != "$SCOPED_OWNER" ]; then
+            echo "Not a scoped owner's pull request: nothing to check."; exit 0
+          fi
+          outside=$(gh api --paginate "repos/$REPO/pulls/$PR/files" -q '.[].filename' | grep -Ev "$ALLOWED" || true)
+          if [ -z "$outside" ]; then
+            echo "Every file is inside $SCOPED_OWNER's folders."; exit 0
+          fi
+          approved=$(gh api --paginate "repos/$REPO/pulls/$PR/reviews" \
+            -q "[.[] | select(.user.login == \"$APPROVER\" and .commit_id == \"$HEAD\")] | last | .state // \"\"")
+          if [ "$approved" = "APPROVED" ]; then
+            echo "Files outside the owner's folders, approved by $APPROVER on this version."; exit 0
+          fi
+          echo "::error::$SCOPED_OWNER may merge Australia only. These files are outside it and need $APPROVER's approval:"
+          echo "$outside"
+          exit 1
+
+  watch-merge:
+    if: github.event_name == 'pull_request_target' && github.event.action == 'closed' && github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tell Michael if a scoped owner merged outside their folders
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+          TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          set -euo pipefail
+          merger=$(gh api "repos/$REPO/pulls/$PR" -q '.merged_by.login')
+          [ "$merger" = "$SCOPED_OWNER" ] || { echo "Merged by $merger: nothing to check."; exit 0; }
+          outside=$(gh api --paginate "repos/$REPO/pulls/$PR/files" -q '.[].filename' | grep -Ev "$ALLOWED" || true)
+          [ -n "$outside" ] || { echo "Inside the owner's folders."; exit 0; }
+          body=$(printf '%s merged #%s (%s), which changes files outside Australia:\n\n```\n%s\n```\n\nRule (Michael, 20 Nov 2026): %s merges Australia only. Nothing was reverted.' \
+            "$SCOPED_OWNER" "$PR" "$TITLE" "$(echo "$outside" | head -50)" "$SCOPED_OWNER")
+          gh issue create -R "$REPO" --title "Merged outside Australia: #$PR" --assignee "$APPROVER" --body "$body"
