@@ -41,7 +41,7 @@ depends_on:
 
 In scope: any taxpayer, of any residence or commercial domicile, that gives up California real property in a section 1031 exchange and receives like-kind property located outside California, in the exchange year and in each later year until the California-source deferred gain is recognized ([FTB 3840 instructions (2025), B Who Must File](https://www.ftb.ca.gov/forms/2025/2025-3840-instructions.html)). "Taxpayer" here covers individuals, estates, trusts, general and limited partnerships, LLPs, LLCs and corporations. A disregarded entity does not file; its owner does.
 
-It also covers the reverse direction (out-of-state property exchanged into California property), because the later sale of the California replacement is California-source ([FTB Pub. 1100, section F](https://www.ftb.ca.gov/forms/misc/1100.html)), and the Form 593 withholding that applies to exchanges of California real property ([FTB 593 instructions (2025)](https://www.ftb.ca.gov/forms/2025/2025-593-instructions.html)).
+It also covers the reverse direction (out-of-state property exchanged into California property), because the later sale of the California replacement is California-source ([FTB Pub. 1100, section F](https://www.ftb.ca.gov/forms/misc/1100.html)), and the Form 593 withholding that applies to exchanges of California real property ([FTB 593 instructions (2026)](https://www.ftb.ca.gov/forms/2026/2026-593-instructions.html)).
 
 Out of scope, and where it goes:
 
@@ -52,7 +52,7 @@ Out of scope, and where it goes:
 | Nonresident and part-year computation on Form 540NR | `ca-540-individual-return` (refer the 540NR computation) |
 | Whether the owner is still a California resident | `ca-residency-leaving-california` |
 | Partnership or LLC entity-level returns that carry the exchange (Form 565, 568) | `ca-smllc-form-568` or refer |
-| Real estate withholding in full (all Form 593 exemptions and methods) | refer; only the exchange rules are here |
+| Real estate withholding in full (all Form 593 exemptions, methods and penalties) | `ca-real-estate-withholding-form-593`; only the exchange rules are here |
 
 ## Ask the client first
 
@@ -71,9 +71,9 @@ Out of scope, and where it goes:
 | --- | --- | --- | --- |
 | Personal property exchanges, AGI limit, head of household, surviving spouse or married filing jointly | under USD 500,000 | Only for exchanges initiated after 10 January 2019 and completed before 1 January 2025, AGI for the year the exchange began. None allowed for taxable years beginning on or after 1 January 2025. | [FTB 3840 instructions (2025), What's New](https://www.ftb.ca.gov/forms/2025/2025-3840-instructions.html) |
 | Personal property exchanges, AGI limit, other individuals | under USD 250,000 | Same window and conditions as the row above | same |
-| Boot that triggers Form 593 withholding in an exchange | more than USD 1,500 | Money or other property received by the seller. Simultaneous exchange: the real estate escrow person withholds. Deferred exchange: the qualified intermediary withholds. | [FTB 593 instructions (2025)](https://www.ftb.ca.gov/forms/2025/2025-593-instructions.html) |
-| Form 593 withholding on a failed exchange | 3 1/3% of the sales price | The intermediary or accommodator withholds when the exchange does not take place or does not qualify; a cash-poor QI's duty is limited to available funds. The alternative method uses gain times ownership share times the applicable rate, less any amount already withheld on boot. | same |
-| Form 593 general exception | sales price USD 100,000 or less | A general real estate withholding exception, not specific to exchanges | same |
+| Boot that triggers Form 593 withholding in an exchange | more than USD 1,500 | Money or other property received by the seller. Simultaneous exchange: the real estate escrow person withholds. Deferred exchange: the qualified intermediary withholds. | [FTB 593 instructions (2026)](https://www.ftb.ca.gov/forms/2026/2026-593-instructions.html) |
+| Form 593 withholding on a failed exchange | 3 1/3% of the sales price | The intermediary withholds when the exchange does not take place or does not qualify. The 2025 instructions add that a cash-poor QI's duty is limited to available funds, and that the alternative method uses gain times ownership share times the applicable rate, less any amount already withheld on boot. | same; [FTB 593 instructions (2025)](https://www.ftb.ca.gov/forms/2025/2025-593-instructions.html) |
+| Form 593 general exception | sales price USD 100,000 or less | A general real estate withholding exception, not specific to exchanges | [FTB 593 instructions (2026)](https://www.ftb.ca.gov/forms/2026/2026-593-instructions.html) |
 
 ### Steps
 
@@ -87,7 +87,7 @@ Out of scope, and where it goes:
 8. **Schedule A, Parts II and III (properties received and allocation).** Line 9: each property received, its location and ownership percentage. Line 10: one property received, enter the Part I line 8 amount; several, allocate the whole California-source deferred gain across all properties received, wherever they are, and attach a statement. Line 11: for an apportioning business, the Schedule R line 18a apportionment percentage for the exchange year, entered on the first Schedule A only.
 9. **File every year.** Attach FTB 3840 to the California return for the year. With no other California filing requirement, complete the whole form, sign Side 1, and file it on its own: Franchise Tax Board, PO Box 1998, Rancho Cordova, CA 95741-1998, or e-file it with the California return ([FTB, Reporting like-kind exchanges](https://www.ftb.ca.gov/file/personal/reporting-like-kind-exchanges.html)). A form attached to a return needs no signature.
 10. **When a replacement property is sold.** Report the California-source deferred gain allocated to that property on that year's California return, remove the property from FTB 3840, and attach a statement. Keep filing for the remaining replacement properties. If the property was exchanged again instead, file a new FTB 3840 for the new exchange with that property as the property given up, carrying its share of the original California deferred gain; the duty continues whether or not the new property is in California (FTB page, Examples 1 and 2).
-11. **Form 593 at closing.** A deferred exchange is exempt from real estate withholding at the initial transfer; the seller certifies the exchange in Part IV, line 10, and the buyer does not sign. Boot over USD 1,500 and a failed exchange are withheld on as set out in the rates table. For a deferred exchange the Form 593 date is the date boot was distributed, or the date the exchange failed ([FTB 593 instructions (2025)](https://www.ftb.ca.gov/forms/2025/2025-593-instructions.html)).
+11. **Form 593 at closing.** A deferred exchange is exempt from real estate withholding at the initial transfer; the seller certifies the exchange in Part IV, line 10, and the buyer does not sign. Boot over USD 1,500 and a failed exchange are withheld on as set out in the rates table. For a deferred exchange the Form 593 date is the date boot was distributed, or the date the exchange failed ([FTB 593 instructions (2026)](https://www.ftb.ca.gov/forms/2026/2026-593-instructions.html)).
 
 ## Boundary and exception table
 
@@ -193,7 +193,8 @@ Tax on the California-source deferred gain is paid with the return for the year 
 | FTB 3840 (2025) form. Read for the entity boxes, Initial, Amended, Annual and Final boxes, the AGI note and the layout of Schedule A. | https://www.ftb.ca.gov/forms/2025/2025-3840.pdf | 2026-11-21 |
 | FTB, Reporting like-kind exchanges, Internal Revenue Code section 1031 and FTB 3840 (last updated 01/28/2026). Read for the two filing conditions, annual filing, Notice of Proposed Assessment, Examples 1 and 2, mailing address and e-file. | https://www.ftb.ca.gov/file/personal/reporting-like-kind-exchanges.html | 2026-11-21 |
 | FTB Publication 1100, Taxation of Nonresidents and Individuals Who Change Residency (rev. 10/2024). Read for section F, Examples 16, 17 and 18. | https://www.ftb.ca.gov/forms/misc/1100.html | 2026-11-21 |
-| FTB, 2025 Instructions for Form 593. Read for the exchange rules: Part IV line 10 certification, boot over USD 1,500, the QI's duty, cash-poor exchanges, 3 1/3% on failed exchanges, the alternative exchange methods, the USD 100,000 exception and the line 32 dates. | https://www.ftb.ca.gov/forms/2025/2025-593-instructions.html | 2026-11-21 |
+| FTB, 2026 Instructions for Form 593. Read for Part IV line 10 (exchanges), boot over USD 1,500 and 3 1/3% on failed exchanges. | https://www.ftb.ca.gov/forms/2026/2026-593-instructions.html | 2026-11-21 |
+| FTB, 2025 Instructions for Form 593. Read for the QI's duty in a deferred exchange, cash-poor exchanges, the alternative exchange methods and the line 32 dates. | https://www.ftb.ca.gov/forms/2025/2025-593-instructions.html | 2026-11-21 |
 | FTB, 2025 Instructions for Schedule D-1. Read for Form 8824 completed with California amounts. | https://www.ftb.ca.gov/forms/2025/2025-540-d-1-instructions.html | 2026-11-21 |
 
 Not yet confirmed: the 2026 FTB 3840 and instructions (not published on 2026-11-21; the 2025 versions are relied on); the text of R&TC 18031.5, 18032 and 24953 (leginfo.legislature.ca.gov refused our reader; cited as the FTB instructions name them); any FTB method for allocating the California-source deferred gain among several replacement properties (the instructions require an allocation and a statement but name no formula); FTB treatment of a section 721 (UPREIT) contribution of a replacement property.
