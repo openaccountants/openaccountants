@@ -2,19 +2,17 @@
 name: au-super-guarantee
 description: >
   Use this skill whenever asked about Australian Superannuation Guarantee (SG) obligations, payday super deadlines, voluntary super contributions, concessional and non-concessional caps, Division 293 tax, Division 296 large-balance tax, government co-contribution, spouse contribution tax offset, carry-forward rules, or any question about super for sole traders or employers. Trigger on phrases like "how much super do I pay", "SG rate", "super guarantee", "payday super", "7 business days super", "SG shortfall", "concessional cap", "Division 293", "Division 296", "$3 million super tax", "salary sacrifice super", "personal super contribution deduction", "co-contribution", "BPAY super", "super clearing house", "super fund contribution", or any question about Australian superannuation. Also trigger when classifying bank statement transactions showing super fund payments, BPAY super debits, or clearing house payments. ALWAYS read this skill before touching any SG-related work.
-version: 3.3
+version: 3.4
 jurisdiction: AU
 tax_year: 2026
-last_updated: 2026-09-12
+last_updated: 2026-11-21
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Ryan Duguid"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: payroll
 ---
 
-# Australia Superannuation Guarantee (SG) -- Sole Trader & Employer Skill v3.3
+# Australia Superannuation Guarantee (SG) -- Sole Trader & Employer Skill v3.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -63,6 +61,7 @@ The remaining payday calculations and indexed figures below concern 2026–27. [
 | Unknown whether sole trader has employees | Ask -- determines SG requirement |
 | Unknown payment date vs 1 July 2026 | Ask -- decides quarterly vs payday regime |
 | Unknown SG rate year | 2024-25 = 11.5%; 2025-26 onwards = 12% |
+| Gross pay or disputed loading supplied without confirmed qualifying earnings | Obtain the component breakdown and payroll classification. Refer disputed amounts before giving a single SG figure. |
 | Unknown YTD qualifying earnings vs $270,830 | Assume below cap; flag to confirm before stopping SG |
 | Unknown TSB for carry-forward | Assume >= $500,000 (no carry-forward); ask client |
 | Unknown s 290-170 notice status | Assume NOT lodged; warn about deadline |
@@ -220,6 +219,10 @@ Matches "ATO" + "IAS" (pattern 3.6). This is an Instalment Activity Statement (P
 
 Establish SG eligibility before calculating. The $450 monthly earnings threshold ended on 1 July 2022, but employee exclusions still apply. An employee under 18 must work **more than 30 actual hours in the week**: exactly 30 does not qualify. Assess each week, including within a fortnightly pay cycle. Some contractors are employees for SG purposes, including qualifying labour contracts under SGAA s 12(3); refer uncertain cases to T2-1. Work wholly or principally of a domestic or private nature for 30 hours or less a week is excluded under s 12(11). Check any separate award or agreement obligation. See [business.gov.au: superannuation](https://business.gov.au/finance/superannuation) and [SGAA s 12](https://www.ato.gov.au/law/view/print?DocID=PAC%2F19920111%2F12&PiT=99991231235958).
 
+Use confirmed qualifying earnings for each payday. Under [SGAA s 10A](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf), these can include ordinary time earnings, all commissions, specified labour-contract and other payments, and salary sacrificed from amounts that would otherwise qualify. Count each amount once and apply the statutory exclusions. Establish whether an amount qualifies before deciding whether the out-of-cycle deadline applies.
+
+**AUDIT FLASH POINT**. The Federal Court held a particular Victorian government school teachers' annual salary loading allowance was outside ordinary time earnings for the periods at issue. The ATO appealed both issues and says [LCR 2026/D1](https://www.ato.gov.au/law/view/print?DocID=COD%2FLCR2026D1%2FNAT%2FATO%2F00001&PiT=99991231235958) remains draft pending the appeal. Obtain the award or agreement and the payment details and refer a disputed loading before giving an SG amount. The case concerned pre-1 July 2026 periods. [Judgment](https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2026/2026fca0898) and [ATO interim decision impact statement](https://www.ato.gov.au/law/view/document?docid=LIT/ICD/VID204of2025/00001), read 21 November 2026.
+
 ```
 remaining_base = max(0, $270,830 - YTD_qualifying_earnings_before_this_payday)
 SG per payday  = 12% x min(Qualifying_earnings_paid_this_payday, remaining_base)
@@ -227,17 +230,58 @@ SG per payday  = 12% x min(Qualifying_earnings_paid_this_payday, remaining_base)
 
 SG applies only to the first $270,830 of qualifying earnings paid in the financial year -- the payday that crosses the base attracts SG only on the portion beneath it, and later paydays attract none. Annual maximum SG per employee: exactly $32,499.60.
 
+
+An eligible employee below the annual cap is paid $2,300 for ordinary hours after a $200 qualifying salary sacrifice, $200 in commissions on work outside ordinary hours and $300 for separately identified overtime. After confirming those classifications under section 10A, the employer's qualifying earnings base is $2,700 and SG is $324.
+
+```oa-check
+name: Qualifying earnings include separately paid commission and the qualifying sacrifice
+inputs:
+  ordinary_cash: 2300
+  outside_hours_commission: 200
+  qualifying_sacrifice: 200
+steps:
+  - earnings: ordinary_cash + outside_hours_commission + qualifying_sacrifice
+  - super: pct(earnings, 12)
+expected:
+  earnings: 2700
+  super: 324
+```
+
 ### Rule 2 -- SG rate
 
 - **SG rate** — 2024-25: 11.5%. 2025-26 onwards: 12% (terminal rate). %
 
 ### Rule 3 -- Payment deadline (earnings paid from 1 July 2026)
 
-- **Payment deadline (earnings paid from 1 July 2026)** — A contribution is on time only if it is **received by the employee's super fund**, with the information needed to allocate it to the member account, **within 7 business days after payday** (the "QE day"). - **Business day** = any day except Saturday, Sunday, or a public holiday applying to the WHOLE of any Australian state or territory. A territory-wide holiday anywhere in Australia extends the deadline for ALL employers; part-of-state holidays do not. - **New employee (or new fund):** first contribution due within 20 business days of the relevant QE day; later paydays revert to 7. If the extended date overlaps the next payday's deadline, the later contribution inherits the extended date. - **Out-of-cycle payments** (e.g. bonuses, per LI 2026/20): SG rides with the next regular payday's 7-business-day deadline. - **Exceptional circumstances** (ATO class determination, e.g. natural disasters): later of 20 business days after the QE day or 20 business days after the determination. - Funds must allocate or return contributions within 3 business days (down from 20). **Legacy:** earnings paid up to 30 June 2026 keep the quarterly deadlines (28 Oct / 28 Jan / 28 Apr / 28 Jul); the final quarterly deadline was 28 July 2026.
+- **Payment deadline (earnings paid from 1 July 2026)**. Ordinarily, the employee's super fund must **receive the contribution** with the information needed to allocate it to the member account **within 7 business days after payday** (the QE day).
+- **Business day**. Any day except Saturday, Sunday or a public holiday applying to the whole of any Australian state or territory. A statewide or territory-wide holiday extends the deadline nationally. Local holidays do not. Refer an affected statewide part-day holiday deadline for review before giving a definitive date.
+- **First eligible contribution**. Allow 20 business days after the QE day for the first eligible contribution to a complying fund or RSA after the employee starts or restarts employment or after eligible contributions to another complying fund or RSA cease. For item 4, use the earlier contribution's latest applicable due day if the later QE day's usual period ends before that date and an eligible contribution for the employee was made and applied to the earlier QE day. [SGAA s 18C(2) items 1 and 4](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf), read 21 November 2026.
+- **Out-of-cycle payments**. The 7 business days run from the employee's next regular qualifying earnings payment if the employer pays qualifying earnings of a specified kind outside that employee's established pay schedule and actually makes the regular payment on the next scheduled day. The specified kinds are allowances, bonuses, commissions, loadings, advance payments and back payments. A bonus processed separately on the regular payday or a final payment with no subsequent payday does not qualify. Apply the ordinary deadline unless another exception applies. Use the later day's ordinary 7-business-day window for this exception, even if that later day qualifies for a separate extension ([LCR 2026/2](https://www.ato.gov.au/law/view/print?DocID=COG%2FLCR20262%2FNAT%2FATO%2F00001&PiT=99991231235958), paragraph 57, read 21 November 2026). [SGAA s 18C(2) item 2](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf) and [Out-of-Cycle Qualifying Earnings Determination 2026 s 5](https://www.legislation.gov.au/F2026L00784/asmade/text), read 21 November 2026.
+- **Exceptional circumstances**. For an ATO class determination, use the later of 20 business days after the QE day and 20 business days after the determination.
+- **Fund processing**. For contributions outside defined benefit interests, regulated funds other than SMSFs must allocate or refund as soon as practicable and within 3 business days of receipt. SMSFs generally allocate within 28 days after the month of receipt, with a longer period allowed where reasonable in the circumstances. [SIS Regulations 7.07G and 7.07H](https://www.legislation.gov.au/F1996B00580/2026-07-01/2026-07-01/text/1/epub/OEBPS/document_1/document_1.html), read 21 November 2026.
+- **Legacy**. Earnings paid up to 30 June 2026 keep the quarterly deadlines (28 October, 28 January, 28 April and 28 July). The final quarterly deadline was 28 July 2026.
 
 ### Rule 4 -- Maximum contribution base is ANNUAL from 2026-27
 
 - **Maximum contribution base is ANNUAL from 2026-27** — $270,830 of qualifying earnings for 2026-27 (formula: concessional cap x 100 / 12, rounded down to nearest $10 = $32,500 x 100 / 12). Applied on a year-to-date basis per the Rule 1 formula: SG is payable on qualifying earnings up to the base, the crossing payday is prorated, and nothing is payable on earnings beyond it. Maximum SG per employee per year: $32,499.60. (Last quarterly MCB: $62,500/quarter in 2025-26.)
+
+
+For an employee with $270,000 in qualifying earnings from this employer before payday, a $1,500 confirmed payment crosses the $270,830 annual maximum contributions base for 2026-27. The employer's SG for that payday is $99.60 on the remaining $830.
+
+```oa-check
+name: Crossing the annual maximum contributions base
+inputs:
+  employer_ytd_earnings: 270000
+  payday_earnings: 1500
+  annual_base: 270830
+steps:
+  - remaining_base: max(0, annual_base - employer_ytd_earnings)
+  - capped_earnings: min(payday_earnings, remaining_base)
+  - super: pct(capped_earnings, 12)
+expected:
+  capped_earnings: 830
+  super: 99.60
+```
 
 ### Rule 5 -- Sole traders have NO SG obligation to themselves
 
@@ -278,7 +322,10 @@ Sources: [ATO: Division 293](https://www.ato.gov.au/individuals-and-families/sup
 
 ### Rule 11 -- Redesigned SGC (QE days from 1 July 2026)
 
-- **Redesigned SGC (QE days from 1 July 2026)** — ATO-assessed per payday (no SG statement is lodged; ATO matches STP against fund reporting). Components: 1. **Final SG shortfall** -- unpaid SG on qualifying earnings at 12% 2. **Notional earnings** -- GIC-rate interest on the shortfall, compounding daily from the day after the deadline 3. **Administrative uplift** -- starts at 60% of (shortfall + notional earnings); reduced 20 points for a clean 2-year history and up to 40 points for voluntary disclosure (0% if disclosed within 30 days with clean history) 4. **Choice loading** -- 25% of contributions where choice-of-fund rules breached, capped at $1,200 per notice period Payment due the day the assessment is made. Unpaid 28 days after assessment -> Notice to Pay -> late payment penalty of 25% or 50% of unpaid SGC. **The new SGC is tax-deductible** (all four components); GIC on late SGC and the late payment penalty are not, and old-regime SGC (quarters before 1 July 2026) remains non-deductible. First-year approach: PCG 2026/1.  _(PCG 2026/1)_
+- **Redesigned SGC** is assessed by the ATO for QE days from 1 July 2026. It includes the final SG shortfall, notional earnings, administrative uplift and any choice loading. The final shortfall generally starts with 12% of qualifying earnings up to the applicable annual cap, less eligible contributions applied under the statutory timing rules. Notional earnings compound daily at the GIC rate on the base shortfall over the days covered by s 19A. Choice loading is 25% of the eligible contributions to which the loading applies, subject to the $1,200 limit for each employee across the applicable choice-of-fund notice period. [SGAA ss 16B, 19A, 19B, 20A and 20C](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf)
+- **Administrative uplift** starts at 60% of the combined total of the employer's individual final SG shortfalls and individual notional earnings for that qualifying earnings (QE) day. Reduce it by 20 percentage points if the employer has neither a qualifying Commissioner-initiated assessment nor a qualifying estimate made in the 24-month period ending on that QE day. The positive assessment must still be in force on the QE day. An assessment qualifies if the ATO initiated it or made it in response to a purported disclosure that failed s 33. Disregard an estimate revoked or reduced to nil by the QE day. For QE days from 1 July 2026 to 30 June 2028, the lookback starts on 1 July 2026. A voluntary disclosure in the approved form must be lodged before the assessment day for that employer and QE day. It reduces the rate by 40, 35, 30 or 15 percentage points for lodgment on days 1–30, 31–60, 61–120 or after day 120, respectively, counting the QE day as day 1. Both reductions can apply, down to a 0% rate. For example, an approved statement lodged on day 30 before the assessment day leaves 20% if a qualifying estimate prevents the 20-point reduction. [SGAA ss 19B and 33](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf) · [SGAR regs 13B–13D](https://www.legislation.gov.au/F2018L01289/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html)
+- **Late payment of assessed SGC.** Payment is due on the day of assessment. If charge remains unpaid 28 days after it became payable, the ATO must issue a notice if the specified amount includes some of that unpaid charge and exceeds $30 or any higher prescribed amount. No prior notice can have been given in the 50 days before that trigger day and none of the specified amount can have appeared in a previous notice. The notice specifies a start date and its payment period ends 28 days after that date. The penalty applies to the amount specified in the notice that remains unpaid at the end of that period. It is normally 25%, or 50% if the employer became liable for a positive penalty on an earlier notice in the 24 months ending on the day after the current notice payment period ends. The rate is 0% if an s 18C(4) determination covers the employer at any point from the day the relevant charge became payable to the end of the notice payment period. A reduction of the underlying charge can reduce or cancel the notice before the payment period ends. The ATO must amend a penalty assessment if the underlying liability is reduced or ceases, or if an applicable determination reduces the penalty to nil. [SGAA ss 36 and 59A–59E](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf)
+- **Deductibility.** The redesigned SGC is tax-deductible when paid. General interest charge on late SGC, the late payment penalty and old-regime SGC for quarters before 1 July 2026 remain non-deductible. See PCG 2026/1 for the ATO's first-year compliance approach.
 
 ## Personal deduction notice validity
 
@@ -439,11 +486,13 @@ Sole trader asks about SG to self. -> $0. No obligation. Advise voluntary contri
 
 **Test 9:** Payday Friday 4 Sep 2026; contribution received by fund Wednesday 16 Sep 2026 (8 business days). -> LATE. ATO-assessed SGC per Rule 11; new-regime SGC deductible.
 
-**Test 10:** New employee starts, first payday 10 Jul 2026, no fund details yet. -> First contribution due within 20 business days of the QE day; subsequent paydays revert to 7.
+**Test 10:** New employee starts, first payday 10 Jul 2026, no fund details yet. -> Apply the 20-business-day window to the first eligible contribution. Confirm whether a contribution was made and applied before using that later deadline for another payday under Rule 3.
 
 **Test 11:** Employee aged 17 works exactly 30 hours in one week and 31 in the next. -> The first week fails the SG hours test; the second meets it. Check separate award or agreement obligations and the qualifying earnings attributable to each week.
 
 **Test 12:** Only the bank debit in Example 1 is available. -> Candidate super contribution; actual payday, qualifying earnings, fund receipt, timeliness and deduction remain unverified.
+
+**Test 13:** An eligible employee receives a $1,000 confirmed qualifying bonus on Monday 7 December 2026, outside a weekly Thursday pay schedule. If regular qualifying earnings are paid on Thursday 10 December, the bonus has the usual window for that later payday and is due Monday 21 December. If the next scheduled payment does not occur, the bonus is due Wednesday 16 December under the usual window, assuming no other exception applies.
 
 ### Prohibitions
 
@@ -464,3 +513,14 @@ Sole trader asks about SG to self. -> $0. No obligation. Advise voluntary contri
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, tax agent, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 > Contributed by Ryan Duguid.
+
+## Sources
+
+- [Superannuation Guarantee (Administration) Act 1992](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf), read 2026-11-21. Ss 6, 10A, 17A and 18C set the earnings base, annual limit, SG amount and payment periods.
+- [Out-of-Cycle Qualifying Earnings Determination 2026](https://www.legislation.gov.au/F2026L00784/asmade/text), read 2026-11-21. S 5 specifies the payment kinds and the requirement for the next regular payment.
+- [ATO LCR 2026/2](https://www.ato.gov.au/law/view/print?DocID=COG%2FLCR20262%2FNAT%2FATO%2F00001&PiT=99991231235958), read for the extended periods and the out-of-cycle deadline in paragraphs 53–58 on 2026-11-21.
+- [SIS Regulations](https://www.legislation.gov.au/F1996B00580/2026-07-01/2026-07-01/text/1/epub/OEBPS/document_1/document_1.html), read 2026-11-21. Regulations 7.07G and 7.07H set distinct rules for allocating or refunding contributions.
+- [Federal Court judgment](https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2026/2026fca0898), read for the earlier-period allowance treatment in paragraphs 61–73 on 2026-11-21.
+- [ATO interim decision impact statement](https://www.ato.gov.au/law/view/document?docid=LIT/ICD/VID204of2025/00001), read for the appeal and interim treatment in paragraphs 22–25 on 2026-11-21.
+
+Final ATO guidance on disputed salary loading and the treatment of statewide part-day holidays for Payday Super are not yet confirmed.
