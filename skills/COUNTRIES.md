@@ -168,7 +168,7 @@
 | [Philippines](philippines/) | Needs writing | 7 | 5 |
 | [Pitcairn](pitcairn/) | Needs writing | 1 | 1 |
 | [Samoa](samoa/) | Needs writing | 6 | 6 |
-| [Singapore](singapore/) | Needs writing | 10 | 10 |
+| [Singapore](singapore/) | Needs writing | 11 | 11 |
 | [Solomon Islands](solomon-islands/) | Needs writing | 1 | 1 |
 | [South Korea](south-korea/) | Needs writing | 6 | 4 |
 | [Sri Lanka](sri-lanka/) | Needs writing | 10 | 9 |

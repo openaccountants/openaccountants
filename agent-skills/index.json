@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2461,
+ "count": 2462,
  "publication_holds": [
   {
    "name": "za-vat-return",
@@ -17908,6 +17908,15 @@
    "name": "set-up-your-company-in-kenya-we-handle-it-from-abroad",
    "jurisdiction": "KE",
    "path": "skills/kenya/set-up-your-company-in-kenya-we-handle-it-from-abroad.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "sg-corporate-income-tax",
+   "jurisdiction": "SG",
+   "path": "skills/singapore/sg-corporate-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
