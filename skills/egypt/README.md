@@ -39,6 +39,7 @@ Tracked in [\[EG\] Complete the pack](https://github.com/openaccountants/openacc
 - [Crypto tax](eg-crypto-tax.md) (2026)
 - [Financial statements](eg-financial-statements.md) (2026)
 - [Formation](eg-formation.md) (2026)
+- [Investment incentives](eg-investment-incentives.md) (2026)
 - [Real estate tax](eg-real-estate-tax.md) (2026)
 - [SME tax](eg-sme-tax.md) (2026)
 - [Stamp duty](eg-stamp-duty.md) (2026)
