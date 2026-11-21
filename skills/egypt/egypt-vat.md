@@ -1,10 +1,10 @@
 ---
 name: egypt-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for an Egypt VAT return or advise on Egyptian VAT registration, filing, and e-invoicing compliance. Trigger on phrases like "prepare Egypt VAT return", "Egyptian VAT", "ضريبة القيمة المضافة مصر", "ETA e-invoice", or any Egypt VAT request. ALWAYS read this skill before touching any Egypt VAT work.
-version: 2.2
+version: 2.3
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-21
 depends_on:
   - vat-workflow-base
 category: international
@@ -26,6 +26,8 @@ For tax year 2026. Figures come from the VAT Law as amended up to Law 149 of 202
 - Every producer, provider or importer of a Schedule item, whatever the turnover (arts. 1, 41).
 - Non-residents selling to unregistered customers in Egypt, under the simplified supplier system (art. 17, replaced by Law 3 of 2022; Regulations art. 21 bis text added by Decision 24 of 2023).
 - Legal persons who sell nothing taxable but must account for imported services, for reverse charge purposes (art. 17).
+
+**The limit is EGP 500,000, not 250,000.** Art. 16 sets EGP 500,000 and its last paragraph lets the Minister change the limit by decision. A reported cut to EGP 250,000 "under Resolution 281 of 2025" has no support in any official text found: ETA Head Decision 281 of 2025 (issued 9 July 2025) is an e-receipt mandate decision. It binds the taxpayers listed with it (phase 8, second sub-phase) to issue e-receipts from 15 September 2025 and says nothing about VAT registration. No ministerial decision changing the limit is on ETA's VAT laws list (read 21 November 2026), and neither Law 157 of 2025 nor Law 149 of 2026 amends art. 16. E-receipt and e-invoice phases are in `eg-bookkeeping`.
 
 **May register:** a person under the limit (art. 18). They then carry all the duties of a registered person.
 
@@ -253,12 +255,17 @@ Keep a working paper with date, party, registration number, invoice reference, n
 | Regulations, Decree 66/2017, arts. searched, not the whole; archived copy; read for the figures cited | https://web.archive.org/web/2025/https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.66-2017.pdf | 2026-11-01 |
 | Decision 24/2023, non-resident parts; archived copy; read for the figures cited | https://web.archive.org/web/2025/https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.24-2023.pdf | 2026-11-01 |
 | Decision 417/2025; read for the figures cited | https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.417.of_.2025.pdf | 2026-11-01 |
+| Law 67/2016 art. 16, page image (Gazette 35 bis (c), 7 Sep 2016, p. 16) re-read for the registration limit and the Minister's power to change it | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.67-2016.pdf | 2026-11-21 |
+| ETA Head Decision 281 of 2025, e-receipt phase 8 second sub-phase (page image read in full) | https://eta.gov.eg/sites/default/files/2025-07/karar-281-2025-e.reciept-phase8-wave2.pdf | 2026-11-21 |
+| Law 149/2026 art. 1 (page image), checked for any change to art. 16: none | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.of_.2026.pdf | 2026-11-21 |
+| Law 157/2025 arts. 1 to 7 (OCR), checked for any change to art. 16: none | https://eta.gov.eg/sites/default/files/2025-07/vat-law_no.157.of_.2025.pdf | 2026-11-21 |
+| ETA VAT laws and decisions list, re-read for any decision changing the limit | https://eta.gov.eg/ar/content/qwanyn-aldrybt-ly-alqymt-almdaft | 2026-11-21 |
 | UTPL Law 206/2020, issuing art. 4 (VAT repeals), arts. 25, 28, 31, 38, 44, 55, 69, 70, 75, refund chapter; read for the figures cited | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-01 |
 | Law 6/2025, arts. 4, 5, 12; read for the figures cited | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf | 2026-11-01 |
 | ETA FAQ, returns (VAT), 2nd edition; archived copy; read for the figures cited | https://web.archive.org/web/2026/https://eta.gov.eg/sites/default/files/2024-12/faqs-value-added-tax.v2.pdf | 2026-11-01 |
 | ETA VAT laws list and VAT forms page, sales sheet archived copy; read for the figures cited | https://eta.gov.eg/ar/content/qwanyn-aldrybt-ly-alqymt-almdaft | 2026-11-01 |
 
-Not yet confirmed: the EGP 250,000 VAT limit attributed to Resolution 281 of 2025: VAT Law art. 16 reads EGP 500,000, ETA's VAT law list shows no such decision, and the minister's power to change the limit means a decision outside that list would displace the figure; e-invoice and e-receipt scope and phases (old text said mandatory for all registered businesses; the decisions were not read); VAT Regulations article numbers for the simplified system, opening stock form number and continuous services (OCR digits); whether any later law changed the 1.5% additional tax; the Schedule rate reading of 14% has no ETA instruction behind it for gypsum and detergents; government bodies' direct payment share under art. 31 as replaced in 2022 (the figure did not read clearly); mobile telecom Schedule II rate and current Schedule rates for tobacco, alcohol, fuel, vehicles; used goods 90% base in art. 10(10) (digit not image-checked); deregistration conditions; VAT on real estate sale details and construction contract straddling terms in Decision 418/2025; simplified agricultural regimes; form box numbers of Form 10 itself, which ETA does not publish outside the logged-in portal (the old Section A to K letters had no official source and are removed); portal screens not seen, steps come from the ETA FAQ; ride-hailing, courier and post, payment gateway and mobile wallet treatment by named supplier.
+Not yet confirmed: a ministerial decision under art. 16 changing the EGP 500,000 limit that ETA has not listed (none found on the ETA VAT list or in Laws 157/2025 and 149/2026 on 21 November 2026; the EGP 250,000 claim traced to e-receipt Decision 281 of 2025, which sets no limit); whether every VAT-registered business is bound to the e-invoice system (old text said so; the 2025 phase decisions read name taxpayers by list, see `eg-bookkeeping`); VAT Regulations article numbers for the simplified system, opening stock form number and continuous services (OCR digits); whether any later law changed the 1.5% additional tax; the Schedule rate reading of 14% has no ETA instruction behind it for gypsum and detergents; government bodies' direct payment share under art. 31 as replaced in 2022 (the figure did not read clearly); mobile telecom Schedule II rate and current Schedule rates for tobacco, alcohol, fuel, vehicles; used goods 90% base in art. 10(10) (digit not image-checked); deregistration conditions; VAT on real estate sale details and construction contract straddling terms in Decision 418/2025; simplified agricultural regimes; form box numbers of Form 10 itself, which ETA does not publish outside the logged-in portal (the old Section A to K letters had no official source and are removed); portal screens not seen, steps come from the ETA FAQ; ride-hailing, courier and post, payment gateway and mobile wallet treatment by named supplier.
 
 ## Disclaimer
 
