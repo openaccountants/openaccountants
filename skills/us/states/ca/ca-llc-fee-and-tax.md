@@ -4,7 +4,7 @@ description: Work out a California LLC's 2026 annual tax and LLC fee. Covers the
 version: "2.0"
 jurisdiction: US-CA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-21
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -28,7 +28,7 @@ Both are reported on **Form 568**. It is for preparers and owners working out wh
 
 It does **not** cover forming or registering an LLC, the Statement of Information, or entity choice. Those are in `ca-formation`. The SMLLC return itself (consent, Schedule IW, owner returns) is in `ca-smllc-form-568`. It also does not cover members' personal income tax, nonresident withholding, or the pass-through entity elective tax (`ca-pte-elective-tax`).
 
-An LLC that is taxed as a **corporation** does not pay either charge. It files as a corporation under the Corporation Tax Law ([R&TC §18633.5(h)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18633.5.)). California and federal classification must be the same.
+An LLC that is taxed as a **corporation** does not pay either charge. It files as a corporation under the Corporation Tax Law ([R&TC §18633.5(h)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18633.5.)). California and federal classification must be the same. For a C corporation or LLC taxed as a C corporation, use `ca-corporation-franchise-tax` for Form 100 and corporation tax; S corporations use Form 100S rules.
 
 ## Ask the client first
 

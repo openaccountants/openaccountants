@@ -4,15 +4,15 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   IT-IND: ca-540-individual-return
-  IT-CORP: ca-llc-fee-and-tax
+  IT-CORP: ca-corporation-franchise-tax
   VAT: california-sales-tax
   SC: ca-payroll
   PR: ca-payroll
   XB: ca-residency-leaving-california
 partial:
   IT-IND: "2026 standard deduction, exemption credits and credit amounts not yet published by the FTB; 2025 amounts shown"
-  IT-CORP: "LLC annual tax and fee only (with Form 568 and the PTE elective tax); no Form 100 or 100S corporation franchise tax skill"
-  TP: "no transfer pricing or combined-report skill"
+  IT-CORP: "Form 100S and Form 100W are not covered; transfer pricing and advanced combined-report issues need separate guidance"
+  TP: "no dedicated transfer-pricing skill; ca-corporation-franchise-tax covers only basic combined-report and apportionment rules"
 ---
 
 # California (US-CA): tax pack
@@ -27,7 +27,8 @@ Calendar tax year for individuals. Income tax authority: the Franchise Tax Board
 | IT-IND, individual income tax (figures card, linked from the method) | ca-income-tax | checked against the law (partial) |
 | IT-IND, estimated tax | ca-estimated-tax-540es | checked against the law |
 | IT-IND, health coverage penalty | ca-form-3853-coverage | checked against the law |
-| IT-CORP, LLC annual tax and fee (the `covered_by` owner) | ca-llc-fee-and-tax | checked against the law (partial) |
+| IT-CORP, C corporation franchise and income tax, Form 100 (the `covered_by` owner) | ca-corporation-franchise-tax | checked against the law (partial) |
+| IT-CORP, LLC annual tax and fee (subtopic; corporation-classified LLCs use the owner above) | ca-llc-fee-and-tax | checked against the law |
 | IT-CORP, single-member LLC Form 568 filing | ca-smllc-form-568 | checked against the law |
 | IT-CORP, pass-through entity elective tax | ca-pte-elective-tax | checked against the law |
 | VAT / sales and use tax | california-sales-tax | checked against the law |
@@ -40,7 +41,7 @@ Calendar tax year for individuals. Income tax authority: the Franchise Tax Board
 
 Each job in `covered_by` names one skill. The other files in a row with the same domain do a different step of that job (figures, estimates, a filing, a workflow) and link to the owner. `ca-540-es-estimated-tax` was retired on 2026-11-13; its content is in `ca-estimated-tax-540es`. `ca-sales-use-tax` was retired on 2026-11-13; its content is in `california-sales-tax`.
 
-Out of scope for this pack: property tax (county level); corporate franchise tax on Form 100 and S corporations on Form 100S; cannabis, fuel, insurance and other industry taxes; local business taxes (city and county). California has no estate or inheritance tax.
+Out of scope for this pack: property tax (county level); S corporation franchise tax on Form 100S and water's-edge corporation returns on Form 100W; cannabis, fuel, insurance and other industry taxes; local business taxes (city and county). California has no estate or inheritance tax.
 
 ## Official sources
 
@@ -52,3 +53,7 @@ Out of scope for this pack: property tax (county level); corporate franchise tax
 - R&TC 17043 (Behavioral Health Services Tax): https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17043 (read 2026-11-13)
 - R&TC 17014 (residents): https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17014 (read 2026-11-13)
 - FTB limited liability company: https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html (read 2026-11-13)
+- 2025 Instructions for Form 100 Corporation Tax Booklet: https://www.ftb.ca.gov/forms/2025/2025-100-booklet.html (read 2026-11-21)
+- 2026 Instructions for Form 100-ES Corporation Estimated Tax: https://www.ftb.ca.gov/forms/2026/2026-100-es-instructions.html (read 2026-11-21)
+- 2025 Instructions for Schedule R Apportionment and Allocation of Income: https://www.ftb.ca.gov/forms/2025/2025-100r-instructions.html (read 2026-11-21)
+- California conformity to federal law: https://www.ftb.ca.gov/tax-pros/law/conformity.html (read 2026-11-21)

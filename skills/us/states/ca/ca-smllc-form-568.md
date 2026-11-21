@@ -4,7 +4,7 @@ description: Prepare and file California Form 568 for a single-member LLC that i
 version: "1.0"
 jurisdiction: US-CA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-21
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
@@ -29,7 +29,7 @@ So the SMLLC's income is reported on the **owner's** return, but the SMLLC itsel
 
 The annual tax and fee rules, fee bands and the full doing-business tests are set out in the companion skill **ca-llc-fee-and-tax**. This skill applies them to a single owner and adds what is special to an SMLLC: the owner's consent, Schedule IW, the owner-based due dates, nonresident and corporate owners, and cancellation.
 
-It does **not** cover multi-member LLCs, LLCs taxed as corporations (they file Form 100 or 100S), the owner's own income tax computation (for a California resident individual, see **ca-540-individual-return**), estimated personal tax, nonresident withholding, or the pass-through entity elective tax.
+It does **not** cover multi-member LLCs, LLCs taxed as corporations (they file Form 100 or 100S; for a C corporation's Form 100 computation, see `ca-corporation-franchise-tax`), the owner's own income tax computation (for a California resident individual, see **ca-540-individual-return**), estimated personal tax, nonresident withholding, or the pass-through entity elective tax.
 
 ## Ask the client first
 
@@ -173,7 +173,7 @@ The FTB tells an owner: "If you are a single member limited liability company, t
 
 #### Corporate owner: Form 100 or 100S ([2025 Form 100 booklet](https://www.ftb.ca.gov/forms/2025/2025-100-booklet.html))
 
-- **Where the income goes.** Form 100 Question CC asks whether the corporation owns an SMLLC. The FTB says: "an SMLLC reports its income, deductions, and credits on Form 100. However, the SMLLC is required to file a Form 568 regardless of its inclusion on this form."
+- **Where the income goes.** Form 100 Question CC asks whether the corporation owns an SMLLC. The FTB says: "an SMLLC reports its income, deductions, and credits on Form 100. However, the SMLLC is required to file a Form 568 regardless of its inclusion on this form." For the C corporation's Form 100 computation, see `ca-corporation-franchise-tax`.
 - **Due date.** An SMLLC owned by a C corporation files by the 15th day of the 4th month after the close of the owner's year. One owned by an S corporation files by the 15th day of the 3rd month (see the table above).
 - **Credit limit.** The corporation applies the credit limit below on Schedule P (100).
 - **Nonresident corporate owner.** A foreign corporation that owns the SMLLC signs the consent or faces Schedule T at the corporate rate in the table above.
