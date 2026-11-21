@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-17T19:42:04+00:00",
+ "generated_at": "2026-11-21T09:19:32+00:00",
  "counts": {
-  "guides": 2555,
-  "loadable_skill_names": 2496,
+  "guides": 2557,
+  "loadable_skill_names": 2498,
   "jurisdictions": 290,
   "accountant_reviewed": 129,
   "held_skill_names": 1
@@ -13509,6 +13509,19 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "india-corporate-income-tax",
+   "mcp_slug": "india-corporate-income-tax",
+   "path": "skills/india/india-corporate-income-tax.md",
+   "name": "india-corporate-income-tax",
+   "jurisdiction": "IN",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-20"
+  },
+  {
    "slug": "india-crypto-tax",
    "mcp_slug": "india-crypto-tax",
    "path": "skills/india/india-crypto-tax.md",
@@ -23894,6 +23907,19 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "sg-corporate-income-tax",
+   "mcp_slug": "sg-corporate-income-tax",
+   "path": "skills/singapore/sg-corporate-income-tax.md",
+   "name": "sg-corporate-income-tax",
+   "jurisdiction": "SG",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-20"
   },
   {
    "slug": "sg-cpf-medisave",
