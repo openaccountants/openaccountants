@@ -1,10 +1,10 @@
 ---
 name: eg-bookkeeping
 description: Use this skill whenever asked about Egyptian record-keeping, bookkeeping, or the mandatory ETA digital systems for self-employed people, sole proprietors (منشأة فردية), and professionals (أصحاب المهن الحرة). Trigger on phrases like "Egypt e-invoicing", "الفاتورة الإلكترونية", "ETA e-receipt", "الإيصال الإلكتروني", "bookkeeping Egypt", "records sole proprietor Egypt", "EGS item coding", "digital signature ETA", "what books must I keep in Egypt", or any request to set up, review, or explain the books and records an Egyptian self-employed taxpayer must keep. ALWAYS read this skill before touching any Egyptian record-keeping or e-invoicing/e-receipt work.
-version: 1.2
+version: 1.3
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-21
 depends_on:
   - income-tax-workflow-base
 category: bookkeeping
@@ -85,6 +85,22 @@ Reply to the user in their own language (English or Arabic).
 - **Big-ticket sales.** Under the FAQ, a consumer receipt whose value exceeds EGP 150 thousand must carry the buyer's national ID number (the FAQ says "currently") ([ETA e-receipt FAQ](https://eta.gov.eg/sites/default/files/2024-02/ERECEIPT-FAQ-V24-31-1-2024.pdf)).
 - **POS devices.** Buy POS devices only from ETA-approved suppliers (list on the [e-receipt services page](https://www.eta.gov.eg/ar/content/e-receipt-services)). An ERP can be registered as a virtual POS where the taxpayer has a single branch or outlet.
 - **Phases.** The mandate has been extended group by group by ETA decisions. The test is whether the taxpayer is named on the [e-receipt inquiry](https://www.eta.gov.eg/ar/ereceipt-inquiry) list, or holds a decision addressed to them.
+
+### Phase decisions issued in 2025 and 2026
+
+ETA publishes its mandate decisions on two lists: [e-receipt decisions](https://www.eta.gov.eg/ar/content/qrarat-alalzam-baltaml-balaysal-alalktrwny) and [e-invoice decisions](https://www.eta.gov.eg/ar/content/qrarat-alalzam-bmnzwmt-alfatwrt-alalktrwnyt). Both were read on 21 November 2026.
+
+| ETA Head decision | Group | Must issue e-receipts from | Source |
+|---|---|---|---|
+| 123 of 2025 | Main phase 7, both sub-phases | 1 July 2025 | [Decision 123/2025](https://eta.gov.eg/sites/default/files/2025-03/karar-123-2025-e.reciept-phase7-wave12.pdf) |
+| 225 of 2025 (issued 25 May 2025) | Main phase 8, first sub-phase | 15 July 2025 | [Decision 225/2025](https://eta.gov.eg/sites/default/files/2025-05/karar-225-2025-e.reciept-phase8-wave1.pdf) |
+| 281 of 2025 (issued 9 July 2025) | Main phase 8, second sub-phase | 15 September 2025 | [Decision 281/2025](https://eta.gov.eg/sites/default/files/2025-07/karar-281-2025-e.reciept-phase8-wave2.pdf) |
+| 361 of 2025 (issued 17 September 2025) | Main phase 9, first sub-phase | 15 November 2025 | [Decision 361/2025](https://eta.gov.eg/sites/default/files/2025-09/karar-361-2025-e.reciept-phase9-wave1.pdf) |
+
+- **How each decision works.** Article 1 binds only the taxpayers named in the list attached to it and published on ETA's official page. They must issue e-receipts on the live system for goods and services sold to final consumers from the date shown. Article 2 binds them to ETA's technical operating conditions. Article 3 binds them to register on the citizen incentive portal (فاتورتك .. حمايتك وجايزتك) from the same date. None of the four decisions sets a turnover threshold or a VAT registration limit. Decision 281 of 2025 is not a VAT decision.
+- **2026.** The e-receipt list read on 21 November 2026 holds no decision dated 2026. Decision 361 of 2025 is the latest.
+- **E-invoices.** The e-invoice decisions list holds no decision after Decision 323 of 2022 (phase 8). The [e-invoice inquiry](https://www.eta.gov.eg/ar/einvoice-inquiry) page gives the start dates of the last phases: phase 5 from 15 December 2021, phase 6 from 15 February 2022, phase 7 from 15 June 2022, and phase 8 in four sub-phases from 15 September, 15 October, 15 November and 15 December 2022. No 2025 or 2026 e-invoice phase decision is published there.
+- **What to do.** A client not named in any list is not bound by these decisions. Still check both inquiry pages with the registration number, because a decision may be addressed to the taxpayer directly, and Law 6 of 2025 makes joining a condition of the simplified regime.
 
 ### Which system applies
 
@@ -285,8 +301,15 @@ Hand off to a qualified Egyptian accountant (محاسب قانوني) or tax adv
 | Law No. 7 of 2025, Arts 45 bis, 75 bis | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf | 2026-09-25, previous version; eta.gov.eg refused script connections on 2026-11-01 |
 | ETA Services Guide, 2nd edition | https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf | 2026-09-25, previous version; not reopened on 2026-11-01 |
 | ETA e-receipt FAQ, edition 24 | https://eta.gov.eg/sites/default/files/2024-02/ERECEIPT-FAQ-V24-31-1-2024.pdf | 2026-09-25, previous version; not reopened on 2026-11-01 |
+| ETA list of e-receipt mandate decisions | https://www.eta.gov.eg/ar/content/qrarat-alalzam-baltaml-balaysal-alalktrwny | 2026-11-21 |
+| ETA Head Decision 123 of 2025 (page image read) | https://eta.gov.eg/sites/default/files/2025-03/karar-123-2025-e.reciept-phase7-wave12.pdf | 2026-11-21 |
+| ETA Head Decision 225 of 2025 (page image read) | https://eta.gov.eg/sites/default/files/2025-05/karar-225-2025-e.reciept-phase8-wave1.pdf | 2026-11-21 |
+| ETA Head Decision 281 of 2025 (page image read) | https://eta.gov.eg/sites/default/files/2025-07/karar-281-2025-e.reciept-phase8-wave2.pdf | 2026-11-21 |
+| ETA Head Decision 361 of 2025 (page image read) | https://eta.gov.eg/sites/default/files/2025-09/karar-361-2025-e.reciept-phase9-wave1.pdf | 2026-11-21 |
+| ETA list of e-invoice mandate decisions | https://www.eta.gov.eg/ar/content/qrarat-alalzam-bmnzwmt-alfatwrt-alalktrwnyt | 2026-11-21 |
+| ETA e-invoice inquiry page (phase start dates) | https://www.eta.gov.eg/ar/einvoice-inquiry | 2026-11-21 |
 
-Not yet confirmed: whether an amendment after 2020 other than Law 150 of 2026 changed the Article 71 fine amounts; the ETA decision setting the temporary tax card form; 2025 and 2026 e-invoice and e-receipt phase decisions, dates and any lowered turnover threshold; "tiered penalties for 2026" for late e-documents; the claim that costs without an e-invoice are not deductible for income tax; the current e-receipt submission window beyond the 2024 FAQ (a 72-hour figure has no ETA source).
+Not yet confirmed: whether an amendment after 2020 other than Law 150 of 2026 changed the Article 71 fine amounts; the ETA decision setting the temporary tax card form; any e-receipt or e-invoice phase decision addressed to named taxpayers but not on ETA's two decision lists (the 2025 e-receipt decisions are now in the body; no 2026 decision and no turnover threshold was found on 21 November 2026); the day of issue of Decision 123 of 2025 (the scan shows only March 2025); "tiered penalties for 2026" for late e-documents; the claim that costs without an e-invoice are not deductible for income tax; the current e-receipt submission window beyond the 2024 FAQ (a 72-hour figure has no ETA source).
 
 ## Disclaimer
 

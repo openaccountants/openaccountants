@@ -1,10 +1,10 @@
 ---
 name: eg-payroll
 description: Use this skill for running payroll for an employer in Egypt for tax year 2026, including a sole proprietor who hires staff. It covers salary tax withholding, the unified payroll system, monthly calculation form, Form 4 and annual settlement, gross to net, employer cost and employee versus freelancer. Trigger on "Egypt payroll", "salary tax Egypt", "ضريبة كسب العمل", "payroll tax Egypt", "hiring employees Egypt", "withholding tax on salaries Egypt", "Form 4 Egypt", "نموذج 4", "gross to net salary Egypt", "employer cost Egypt", "end of service Egypt" or "employee vs freelancer Egypt". Read this skill before any Egypt payroll work. Social insurance computation sits in eg-social-insurance.
-version: 1.2
+version: 1.3
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-21
 type: computation
 depends_on:
   - income-tax-workflow-base
@@ -14,7 +14,7 @@ tier: 2
 domain: payroll
 ---
 
-# Egypt Payroll v1.2
+# Egypt Payroll v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -43,8 +43,11 @@ Tax year: calendar 2026 (the annual settlement runs January to December whatever
 | Employee profit share | Exempt up to 100% of annual wages | 2026 | After general assembly approval. Excess goes in other earnings. Art. 13(6) | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
 | Martyrs fund contribution | EGP 5 per EGP 10,000 | 2026 | Basic pay runs only; all workers except Egyptian daily workers | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
 | Employee social insurance | 11% of the insurance wage | 2026 | Owned by eg-social-insurance; 2026 band EGP 2,700 to 16,700 | https://www.nosi.gov.eg/ar/news/Pages/2025-11-30.aspx |
-| Private sector minimum wage | EGP 7,000 a month | From 1 March 2025 | National Wages Council decision; later change on the Not yet confirmed line | https://mped.gov.eg/singlenews?id=6009 |
+| Private sector minimum wage | EGP 7,000 a month | From 1 March 2025, and for the whole of 2026 | National Wages Council decision; the 15 November 2026 decision changes it only from 1 January 2027 | https://mped.gov.eg/singlenews?id=6009 |
+| Private sector minimum wage from 2027 | EGP 8,500 a month | From 1 January 2027 | National Wages Council meeting of 15 November 2026 | https://www.cabinet.gov.eg/News/Details/86511 |
+| Hourly minimum, temporary or part-time work | EGP 34 net an hour | Approved 15 November 2026 for work temporary by nature or part-time; the cabinet notice gives no separate start date | National Wages Council meeting of 15 November 2026 | https://www.cabinet.gov.eg/News/Details/86511 |
 | Periodic raise, private sector | Minimum 3% of the insurance wage, at least EGP 250 a month | From 2025 | National Wages Council decision | https://mped.gov.eg/singlenews?id=6009 |
+| Periodic raise, private sector, from financial year 2027 | At least 3% of the insurance wage under the social insurance law, minimum EGP 350 | From financial year 2027, by each establishment's accounting year | National Wages Council meeting of 15 November 2026 | https://www.cabinet.gov.eg/News/Details/86511 |
 
 ### Salary tax table, Law 91 art. 8 as replaced by Law 7/2024
 
@@ -247,5 +250,6 @@ expected:
 | Law 151/2026: read for the art. 2 page | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf | 2026-11-14 |
 | NOSI notice of 30 Nov 2025: read in full for the 2026 insurance wage band (EGP 2,700 to 16,700) | https://www.nosi.gov.eg/ar/news/Pages/2025-11-30.aspx | 2026-11-14 |
 | National Wages Council, Ministry of Planning, 2025: read for the headline decision (EGP 7,000 minimum wage, 3% and EGP 250 periodic raise) | https://mped.gov.eg/singlenews?id=6009 | 2026-11-14 |
+| Cabinet news, National Wages Council meeting of 15 November 2026: EGP 8,500 from 1 January 2027, EGP 34 net an hour, periodic raise 3% and EGP 350 from FY 2027 | https://www.cabinet.gov.eg/News/Details/86511 | 2026-11-21 |
 
-Not yet confirmed: the private sector minimum wage after March 2025; delay charge rate under art. 110 as amended and the Unified Tax Procedures Law penalties (the old "up to 80%" could not be traced); the exact annual settlement due date (old text said end January) and the day of the month for Form 4; whether the martyrs contribution base is gross pay and who bears it (the form has an employee and a company field); whether the old 0.05% wording matches EGP 5 per 10,000 on every run type; Law 91 arts. 12 to 16 as amended since 2005 where only the original text was read; Labour Law 14 of 2025 end-of-service formulas (half a month a year for five years, then a full month), not read in the law; Civil Code Law 131/1948 as the contractor test; employee comprehensive health insurance rate; the commencement date of Labour Law 14 of 2025 (old text: 1 September 2025).
+Not yet confirmed: the text of the National Wages Council decision of 15 November 2026 as issued (the cabinet news item reports the approval; no decision text or Gazette copy was found), and whether the EGP 34 hourly rate starts with the monthly rate on 1 January 2027; delay charge rate under art. 110 as amended and the Unified Tax Procedures Law penalties (the old "up to 80%" could not be traced); the exact annual settlement due date (old text said end January) and the day of the month for Form 4; whether the martyrs contribution base is gross pay and who bears it (the form has an employee and a company field); whether the old 0.05% wording matches EGP 5 per 10,000 on every run type; Law 91 arts. 12 to 16 as amended since 2005 where only the original text was read; Labour Law 14 of 2025 end-of-service formulas (half a month a year for five years, then a full month), not read in the law; Civil Code Law 131/1948 as the contractor test; employee comprehensive health insurance rate; the commencement date of Labour Law 14 of 2025 (old text: 1 September 2025).
