@@ -167,7 +167,7 @@ Remember the **5-year lock-in (§2)**: a taxpayer who expects to scale past EGP 
 6. Press موافق, enter your name and the legal representative's, and press send. ETA states the filing is instant, with no fee.
 7. The five years start the next day. Errors are fixed by a signed record at the tax office.
 
-**Minister of Finance Decision 420 of 2025** (Official Gazette 237 cont. (d), 23 October 2025; in force the day after publication, art. 4) is the ministerial decision under Law 6:
+**Minister of Finance Decision 420 of 2025** (Al-Waqa'i al-Misriyya (الوقائع المصرية) no. 237 cont. (d), 23 October 2025; in force the day after publication, art. 4) is the ministerial decision under Law 6:
 - **Joining** (art. 1, first para.): the request to benefit from Law 6 is made on form 10/1 طلبات, on the ETA website.
 - **Leaving** (art. 1, second para.): the request to withdraw is made on form 11/1 طلبات, on the ETA website, only after at least five years starting the day after the joining request.
 - **Annual return** (art. 2): the annual tax return for the commercial, industrial or professional activity is made on form 20 إقرارات.
