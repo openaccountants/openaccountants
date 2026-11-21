@@ -4,7 +4,8 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   SC: in-pf-esi-employer
-partial: {}
+partial:
+  IT-CORP: "Company income tax covers ordinary business income, the rate regimes, the minimum tax, losses and filing; capital gains rates, special sectors and the full book-profit adjustments are still open"
 ---
 
 # India: tax pack
