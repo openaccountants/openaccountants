@@ -37,6 +37,7 @@ Tracked in [\[EG\] Complete the pack](https://github.com/openaccountants/openacc
 
 - [Bookkeeping](eg-bookkeeping.md) (2026)
 - [Crypto tax](eg-crypto-tax.md) (2026)
+- [Customs](eg-customs.md) (2026)
 - [Financial statements](eg-financial-statements.md) (2026)
 - [Formation](eg-formation.md) (2026)
 - [Real estate tax](eg-real-estate-tax.md) (2026)
