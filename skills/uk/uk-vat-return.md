@@ -1,10 +1,10 @@
 ---
 name: uk-vat-return
 description: "UK VAT for a business registered in Great Britain, as the law stands on 24 October 2026. VAT has no tax year: each figure carries the date it applies from. Covers the 20%, 5% and 0% rates, exempt supplies, the temporary zero rate on domestic electricity (1 October 2026 to 31 March 2027), registration at GBP 90,000, deregistration at GBP 88,000, Making Tax Digital, the nine boxes, the deadline, blocked input tax (cars, business entertainment), mobile phones, bad debt relief, the Capital Goods Scheme (GBP 600,000 from 29 July 2026), the Flat Rate, cash and annual accounting schemes, reverse charges for overseas services and construction, penalty points, late payment penalties and interest. Trigger on: VAT return, VAT100, 9 boxes, VAT threshold, MTD for VAT, reverse charge, input tax, bad debt relief, VAT penalty. Out of scope: the short routine (vat-returns-for-small-businesses-in-the-uk), Xero closes (xero-uk-vat-close), EU goods sellers (gb-vat-eu-goods-sellers)."
-version: 2.4
+version: 2.5
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -47,8 +47,8 @@ This skill is the method and the figures. It links to the other UK VAT skills an
 | Registration threshold, 12-month and 30-day tests (Sch 1 para 1) | GBP 90,000 | 1 April 2024 (SI 2024/307); unchanged since | https://www.legislation.gov.uk/ukpga/1994/23/schedule/1/paragraph/1 |
 | Deregistration and temporary-excess limit (Sch 1 paras 1(3) and 4) | GBP 88,000 | 1 April 2024 (SI 2024/307); unchanged since | https://www.legislation.gov.uk/ukpga/1994/23/schedule/1/paragraph/4 |
 | Flat Rate Scheme: join | Expected VAT taxable turnover GBP 150,000 or less (excluding VAT) in the next 12 months | in force | https://www.gov.uk/vat-flat-rate-scheme/who-can-join |
-| Flat Rate Scheme: must leave | Over GBP 230,000 (including VAT) in the last 12 months at the anniversary of joining, or expected in the next 12 months, or in the next 30 days alone | in force | https://www.gov.uk/vat-flat-rate-scheme/if-your-circumstances-change |
-| Flat Rate Scheme: limited cost business rate | 16.5% if goods cost less than 2% of turnover, or more than 2% but less than GBP 1,000 a year | in force | https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay |
+| Flat Rate Scheme: turnover exit tests | At the joining anniversary, total VAT-inclusive income in the year then ending exceeds GBP 230,000; or there are reasonable grounds to expect income in the next 30 days alone to exceed GBP 230,000. Exclude capital-asset disposals. At the annual check, HMRC can allow retention if satisfied that income in the coming year will not exceed GBP 191,500; apply for agreement under Notice 733, section 11.2. Other exit conditions and effective dates are in section 12.2 | in force | https://www.legislation.gov.uk/uksi/1995/2518/regulation/55M ; https://www.gov.uk/guidance/flat-rate-scheme-for-small-businesses-vat-notice-733--2 |
+| Flat Rate Scheme: limited cost business rate | 16.5% where VAT-inclusive spending on relevant goods in the return period is below the higher of 2% of VAT-inclusive flat-rate turnover and GBP 1,000 apportioned to the period (GBP 250 for a quarter). Relevant goods must be exclusively for the business and meet the exclusions in regulation 55A(4)(a); test each return period | in force | https://www.legislation.gov.uk/uksi/1995/2518/regulation/55A ; https://www.gov.uk/guidance/flat-rate-scheme-for-small-businesses-vat-notice-733--2 |
 | Flat Rate Scheme: first-year discount | 1 percentage point off in the first year of VAT registration | in force | https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay |
 | Cash accounting: join / must leave | GBP 1.35 million or less expected / over GBP 1.6 million | in force | https://www.gov.uk/vat-cash-accounting-scheme/eligibility |
 | Annual accounting: join / must leave | GBP 1.35 million or less expected / over GBP 1.6 million | in force | https://www.gov.uk/vat-annual-accounting-scheme/eligibility |
@@ -65,6 +65,8 @@ This skill is the method and the figures. It links to the other UK VAT skills an
 | Late payment penalties (FA 2021 Sch 26 paras 5 and 8) | 3% of VAT unpaid at day 15, plus 3% of VAT unpaid at day 30, plus 10% a year from day 31 | VAT periods starting on or after 1 April 2025 (SI 2025/589); earlier periods 2%, 2%, 4% | https://www.legislation.gov.uk/ukpga/2021/26/schedule/26 |
 | Late payment interest | Bank of England base rate plus 4%: 7.75% (base rate 3.75%) | plus 4% since 6 April 2025; 7.75% since 9 January 2026 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
 | Error correction on the current return (method 1) | Net errors up to GBP 10,000, or up to GBP 50,000 if not more than 1% of box 6 | in force | https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045 |
+
+For the Flat Rate Scheme turnover tests, regulation 55M and Notice 733 control. The short GOV.UK "if your circumstances change" page also mentions expected income in the next 12 months, but regulation 55M does not create that additional exit test.
 
 Exempt supplies carry no VAT and give no right to reclaim VAT on related costs. Examples: postage stamps, financial and insurance services, most residential lettings ([gov.uk VAT rates](https://www.gov.uk/vat-rates)). Outside the scope: wages, money you put in, loans, dividends, and business services sold to customers who belong outside the UK.
 
@@ -242,6 +244,8 @@ expected:
 
 **Example 3: which should I use, the Flat Rate Scheme or standard VAT accounting?** An IT consultancy past its first year of registration sells GBP 100,000 net to UK businesses at 20% and expects to stay there, so it can join (limit GBP 150,000 excluding VAT). VAT-inclusive turnover is GBP 120,000. The flat rate is charged on that inclusive figure ([GOV.UK: Flat Rate Scheme](https://www.gov.uk/vat-flat-rate-scheme/print), read 2026-10-31).
 
+For this comparison, the goods figures are VAT-inclusive spending on relevant goods, and spending and turnover are assumed to arise in the same proportions in each return period. Test the actual figures for each return separately; annual spending alone does not establish the rate for a quarterly return ([VAT Regulations 1995 reg 55A(4)](https://www.legislation.gov.uk/uksi/1995/2518/regulation/55A), read 2026-11-22).
+
 - Worked one way, standard accounting: pay output VAT of GBP 20,000 less input VAT.
 - Worked the other way, with goods of GBP 3,000 a year: this is above 2% of turnover and above GBP 1,000, so the sector rate of 14.5% applies and the payment is GBP 17,400.
 - The deciding figure: standard accounting wins once reclaimable input VAT passes GBP 20,000 - 17,400 = GBP 2,600. With input VAT of GBP 3,500 it pays GBP 16,500, which is GBP 900 less. With input VAT of GBP 1,500 the flat rate is GBP 1,100 cheaper.
@@ -309,6 +313,9 @@ expected:
 | HMRC, interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
 | Bank of England, Bank Rate (3.75%, held 17 September 2026) | https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate | 2026-10-24 |
 | HMRC, Flat Rate Scheme: who can join, how much you pay, if circumstances change | https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay | 2026-10-24 |
+| VAT Regulations 1995 reg 55M(1) to (4), turnover exit tests, retention and capital-asset exclusion; operative text read | https://www.legislation.gov.uk/uksi/1995/2518/regulation/55M | 2026-11-22 |
+| VAT Regulations 1995 reg 55A(4), limited-cost definition, relevant-goods exclusions and proportional annual floor; operative text read | https://www.legislation.gov.uk/uksi/1995/2518/regulation/55A | 2026-11-22 |
+| HMRC, VAT Notice 733, sections 4.4 to 4.6 and 11.2 to 12.3; threshold conditions and exit dates read | https://www.gov.uk/guidance/flat-rate-scheme-for-small-businesses-vat-notice-733--2 | 2026-11-22 |
 | HMRC, Cash Accounting Scheme eligibility | https://www.gov.uk/vat-cash-accounting-scheme/eligibility | 2026-10-24 |
 | HMRC, Annual Accounting Scheme eligibility and deadlines | https://www.gov.uk/vat-annual-accounting-scheme/return-and-payment-deadlines | 2026-10-24 |
 | HMRC, Construction domestic reverse charge | https://www.gov.uk/guidance/vat-domestic-reverse-charge-for-building-and-construction-services | 2026-10-24 |
@@ -335,4 +342,4 @@ expected:
 | GOV.UK, if you cannot pay your tax bill | https://www.gov.uk/difficulties-paying-hmrc | 2026-10-31 |
 | GOV.UK, Flat Rate Scheme, all parts | https://www.gov.uk/vat-flat-rate-scheme/print | 2026-10-31 |
 
-Not yet confirmed: HMRC's interest rate table was last updated 23 December 2025; the 7.75% figure is confirmed only by adding 4% to the Bank of England rate shown on 24 October 2026. The statutory instrument that adds the 7 days to the online return deadline was not read; the deadline is from HMRC's page. The legal basis for Making Tax Digital for VAT (VAT Regulations 1995 Part V) and for late payment interest (Finance Act 2009 s 101) was not read; those rules are from HMRC's notices. The VAT Notice 700/1 supplement threshold table ends at 31 March 2026; the GBP 90,000 figure for later dates rests on the statute, which shows no outstanding changes. How-to: whether the 2% limited cost test runs on turnover with or without VAT was not settled from the page; Example 3 uses goods figures that fall on the same side either way. What the software itself shows as a submission receipt varies by product and was not read.
+Not yet confirmed: HMRC's interest rate table was last updated 23 December 2025; the 7.75% figure is confirmed only by adding 4% to the Bank of England rate shown on 24 October 2026. The statutory instrument that adds the 7 days to the online return deadline was not read; the deadline is from HMRC's page. The legal basis for Making Tax Digital for VAT (VAT Regulations 1995 Part V) and for late payment interest (Finance Act 2009 s 101) was not read; those rules are from HMRC's notices. The VAT Notice 700/1 supplement threshold table ends at 31 March 2026; the GBP 90,000 figure for later dates rests on the statute, which shows no outstanding changes. What the software itself shows as a submission receipt varies by product and was not read.
