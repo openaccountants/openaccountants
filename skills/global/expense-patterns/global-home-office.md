@@ -10,7 +10,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax
 type: cross-country-method
-checked_on: 2026-11-22
+checked_on: 2026-11-14
 ---
 
 # Home office and working from home deductions v1.1
@@ -186,7 +186,7 @@ If no country Guide covers home office costs, say so and refer the client to a l
 1. Claiming the US simplified rate for an employee. It is not available to employees, whichever method is chosen.
 2. Using the UK GBP 6 a week employee relief for 2026 to 2027. It has ended for that year; earlier years may still be claimed.
 3. Applying the Canadian temporary flat rate after 2022.
-4. Leaving out the hours step for a shared space in Canada, or an area step where the chosen method uses area. The UK simplified homeworking flat rate uses monthly business hours and does not require a room or area allocation ([GOV.UK simplified expenses](https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home)).
+4. Leaving out the hours step for a shared space in Canada, or an area step where the chosen method uses area. The UK simplified homeworking flat rate uses monthly business hours and does not require a room or area allocation ([GOV.UK simplified expenses](https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home)). This UK flat-rate exception was rechecked on 2026-11-22.
 5. Ignoring Canada's no-loss limit or the US ordering/income limit for otherwise nondeductible home costs. Mortgage interest/taxes that are independently deductible require their separate rules.
 6. Forgetting phone and internet are outside the UK flat rate and can be claimed at their business share.
 
