@@ -179,7 +179,7 @@ Deadline source check (22 November 2026): the [Tax Department notice of 4 May 20
 | Late notification of the obligation to register | EUR 85 for each month the failure lasts | VAT Law art. 45(1) |
 | Return not received by the deadline | EUR 100 per return | VAT Law art. 45(2) |
 | VAT shown on a return not paid by the deadline, or VAT assessed by the Commissioner | Additional tax of 10% of the VAT due | VAT Law art. 45(3) |
-| Interest on VAT subject to the 10% | From the date the VAT became due, at 3.50% a year for arrears periods in 2026; use the prescribed rate for each arrears period, not the printed 9% in VAT Law art. 45(4) | Uniform Public Default Interest Law 167(I)/2006, arts 3–4: https://www.cylaw.org/nomoi/enop/non-ind/2006_1_167/full.html; annual order Κ.Δ.Π. 376/2025: https://www.cylaw.org/KDP/data/2025_1_376.pdf |
+| Interest on VAT subject to the 10% | From the date the VAT became due, at 3.50% a year for arrears periods in 2026; use the prescribed rate for each arrears period, not the printed 9% in VAT Law art. 45(4) | VAT Law art. 45(3)–(4): https://www.cylaw.org/nomoi/enop/ind/2000_1_95/section-sced833a56-3884-5b76-c351-cb00b306de64.html; Uniform Public Default Interest Law 167(I)/2006, arts 3–4: https://www.cylaw.org/nomoi/enop/non-ind/2006_1_167/full.html; annual order Κ.Δ.Π. 376/2025: https://www.cylaw.org/KDP/data/2025_1_376.pdf |
 | Reverse charge not applied (arts 11 to 11Ε, 12Α) | EUR 200 per tax period, at most EUR 4,000 | VAT Law art. 45(7Β) |
 | VIES statement not received by the deadline | EUR 50 | VAT Law art. 45Β |
 | VIES statement wrong and not corrected in time | EUR 15 | VAT Law art. 45Α(1) |
