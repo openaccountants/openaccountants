@@ -1,10 +1,10 @@
 ---
 name: malta-payroll
 description: Use this skill whenever asked about Malta payroll for employed persons in 2026. Trigger on phrases like Malta payroll, FSS deduction, employee SSC, Class 1 contributions, FS4, FS5, FS3, FS7, payslip Malta, net salary Malta, PAYE Malta, tax withholding Malta, employer SSC Malta, Maternity Leave Fund, COLA Malta, minimum wage Malta, overtime Malta, gross to net Malta, statutory bonus Malta. Covers payer registration, the FS4, the Final Settlement System (FSS) methods (Main cumulative formula or tables, Part-Time, 15% Overtime, 20% Other Emoluments), euro rounding and the 50% cap, the 2026 Class 1 categories and caps, the employer-only 0.3% Maternity Leave Fund, the 2026 minimum wage and EUR 4.66 cost-of-living increase, statutory bonuses and weekly allowances, leave rules that touch payroll, and the FS5, FS3 and FS7 deadlines and Schedule C additional tax. Income tax rate tables are in malta-income-tax.
-version: "2.0"
+version: "2.1"
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 depends_on:
   - payroll-workflow-base
 category: payroll
@@ -44,7 +44,7 @@ Built from the law: not yet approved by an accountant.
 5. **Main tax**: the cumulative formula (Schedule B Part I) with the 2026 art. 56(1) table for the FS4 status. A payer with fewer than ten full-time payees may use the Commissioner's Main Tax Deduction Tables instead, never both in one year (rule 7(4)).
 6. **Round**: "disregard any fraction of a euro being equal to or less than fifty cents, and round up to one euro any fraction of a euro exceeding fifty cents" (rule 6(3)).
 7. **Cap** the deduction at 50% of the cash part of the pay, unless the payee consents or a listed exception applies (rule 11); termination payments are not capped (rule 34).
-8. **Class 1** on the basic weekly wage: employee share, matching employer share, and the employer's Maternity Leave Fund contribution (Cap. 318 art. 7, Tenth Schedule; MTCA 2026 table).
+8. **Class 1** on the basic weekly wage: calculate the employee and employer shares separately, and add the employer's Maternity Leave Fund contribution. A Category B employee's reduced-contribution election does not reduce the employer's share (Cap. 318 art. 7, Tenth Schedule; MTCA 2026 table).
 9. **Pay statement** to each payee: gross pay by category (fringe benefits separately) and tax deducted (rule 19).
 10. **Remit and file the FS5** by the last working day of the next month (rules 15, 20).
 11. **Year end**: FS3 to each payee by 31 January; FS7 with the FS3 originals by 15 February (rules 21, 22).
@@ -76,7 +76,7 @@ The 2026 Main Tax Deduction Tables are published by the Commissioner, not in the
 | Overtime eligibility | Basic weekly wage not over EUR 375; not managerial; full-time employment registered with Jobsplus | Up to the lower of EUR 10,000 and hours x maxrate (twice the hourly equivalent of basic; hourly = basic / 40) | Tax on Overtime Rules, S.L. 123.200: https://legislation.mt/getpdf/62026ae5c9c73a144cfb58eb |
 | Deduction cap | Fifty per cent of the cash part of the emoluments (as the rule words it) | Unless the payee consents or the listed exceptions apply; not on termination payments | FSS rule 11: https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3 |
 | Class 1, Category A (under 18) | EUR 6.62 employee and employer; Maternity EUR 0.20 | Basic weekly wage EUR 0.10 to EUR 229.44 | MTCA Class 1 rates 2026: https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates/2026 |
-| Class 1, Category B (18+) | EUR 22.94 each, or 10% if the employee chooses; Maternity EUR 0.69 | Basic weekly wage EUR 0.10 to EUR 229.44 | same |
+| Class 1, Category B (18+) | Employee EUR 22.94, or 10% of actual basic weekly wage if an eligible part-time employee elects; employer EUR 22.94; Maternity EUR 0.69 | Basic weekly wage EUR 0.10 to EUR 229.44; the employee election does not change the employer or Maternity amounts | same |
 | Class 1, Category C, born by 31 December 1961 | 10% each; Maternity 0.3% | EUR 229.45 to EUR 490.38 | same |
 | Class 1, Category D, born by 31 December 1961 | EUR 49.04 each; Maternity EUR 1.47 | EUR 490.39 and over | same |
 | Class 1, Category C, born from 1 January 1962 | 10% each; Maternity 0.3% | EUR 229.45 to EUR 559.30 | same |
@@ -99,7 +99,7 @@ The 2026 Main Tax Deduction Tables are published by the Commissioner, not in the
 
 - "Three contributions per week shall be payable ... one by the employed person, one by his employer, and one out of the Consolidated Fund" (Cap. 318 art. 7(1)); the State adds 50% of the combined contribution. The employer is liable for both shares in the first instance (art. 8(1)) and recovers the employee's share only from that week's wages (art. 8(3)). Deducting its own share from the employee "shall be guilty of an offence" (art. 8(2)).
 - **Base**: the basic weekly wage, "excluding any remuneration for overtime, any form of bonus, any extra allowances, any remuneration in kind and commissions" (art. 2). Two insurable jobs: the one with the higher basic wage (art. 7(1) proviso). Percentages to the nearest cent.
-- **Low earners**: a part-time employee whose part-time basic earnings do not exceed the National Minimum Wage may pay 10% instead of the Category B flat rate (from 1 January 2018); paying less may reduce contributory benefits. From 1 January 2022 a person with more than one part-time job and no full-time job may pay on all part-time jobs up to forty hours a week (art. 7(2)(a)).
+- **Low earners**: a part-time employee whose part-time basic earnings do not exceed the National Minimum Wage may pay 10% instead of the Category B flat rate (from 1 January 2018); paying less may reduce contributory benefits. This election changes only the employee's contribution: the employer still pays EUR 22.94 and Maternity EUR 0.69 per week in 2026. Article 7(2)(a) specifies "instead of the category B contribution in Part I of the Tenth Schedule payable by the employed person" ([Cap. 318](https://legislation.mt/eli/cap/318/eng/pdf)); the [MTCA 2026 table](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates/2026) marks the election only in the employee column (correction sources read 22 November 2026). From 1 January 2022 a person with more than one part-time job and no full-time job may pay on all part-time jobs up to forty hours a week (art. 7(2)(a)).
 - **Change of employer mid-week**: the former employer pays that week (art. 7(3)).
 - **Maternity Leave Fund**: employer only, "0.3% calculated to the nearest cent of their basic weekly wage", flat at the bottom and capped at Category D. Nothing is deducted from the employee.
 - **Late Class 1**: from 1 January 2026 the further contribution under art. 116(1)(c) and (d) is replaced by interest at the ITMA art. 44(2A) rate (0.6% a month or part).
