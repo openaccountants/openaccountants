@@ -3,10 +3,10 @@ name: mt-reverse-charge-vat-services-received-from
 description: How a Malta-established recipient self-accounts for VAT on services bought from a supplier not established in Malta (EU or non-EU), for business owners, self-employed persons and the accountants reviewing their VAT returns.
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-version: 2.0
+version: 2.1
 domain: vat-gst
 type: situation-rules
 ---
@@ -100,7 +100,7 @@ The customer charges itself the Maltese VAT that would apply if the same service
 | 18% | Standard rate: "eighteen per cent of the taxable value of the supply" (art. 19(1)) | Most business services: consultancy, legal, accounting, software, advertising, hosting | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 |
 | 12% | Eighth Schedule | "Custody and management of securities", credit management by a person other than the grantor | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 |
 | 7% | Eighth Schedule | "Use of sporting facilities"; accommodation in licensed premises | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 |
-| 5% | Eighth Schedule | "The supply of electricity"; listed minor repairs | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 |
+| 5% | Eighth Schedule item 8 | Listed minor repairs: bicycles; shoes and leather goods; clothing and household linen, including mending and alteration. Electricity is also taxed at 5% (item 2), but is goods under Second Schedule item 2 and is outside this services method | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 |
 | No VAT | Fifth Schedule (exempt with credit or exempt without credit) | No reverse charge: an exempt supply is not a "taxable supply" (art. 2) | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 |
 
 Most services bought from abroad by a business fall under the 18% rate. Check the Eighth Schedule item before using a reduced rate; the skill on Malta VAT returns has the fuller rate table.
@@ -117,7 +117,7 @@ Source: [Act, Fourth Schedule items 2 and 3](https://legislation.mt/getpdf/6ac35
 - **Periodic billing.** Where a service gives rise to successive statements of account or payments, it is treated as performed, up to the amount covered, on the last day of each period those statements or payments refer to. A continuous service with no statements or payments during a year is treated as completed at least once a year (item 2(2)).
 - **Long reverse-charged services.** Where a service taxed under art. 20(2)(b) runs continuously for more than one year with no statements of account or payments in that period, it is treated as completed at the end of each calendar year until it ends (item 2(3)). So the VAT becomes chargeable on 31 December each year.
 - **Advance payments.** The tax becomes chargeable on the earlier of the chargeable event and the date of a payment, to the extent of that payment (item 3). A deposit paid before the service is performed is taxed when paid.
-- **Invoice proviso (check).** Item 3 adds that where a tax invoice is issued by the fifteenth day of the month after the chargeable event, the tax becomes chargeable on the invoice date. The Act does not exclude reverse-charged services from this proviso. Where the invoice date and the performance date fall in different tax periods, confirm the period with MTCA before filing (check).
+- **Invoice proviso (check).** Item 3 adds that where a tax invoice is issued by the fifteenth day of the month following the date determined by the earlier-of-chargeable-event-or-payment test above, the tax becomes chargeable on the invoice date. An advance payment can therefore start this cutoff before performance; it is not always measured from the performance date. The Act does not exclude reverse-charged services from this proviso. Where the invoice date and the performance date fall in different tax periods, confirm the period with MTCA before filing (check).
 
 For an Article 10 person, the date fixes which return the VAT goes on. For everyone else it fixes the art. 21(3) payment date together with the invoice date (see "Filing and payment").
 
@@ -293,6 +293,7 @@ Source: [VAT Act, Cap. 406](https://legislation.mt/getpdf/6ac352947b5e681a8405fb
 | Source and scope read | Official URL | Read on |
 |---|---|---|
 | VAT Act, Cap. 406: read for arts 2, 11(10), 12, 13, 19 to 23, 27, 30A, 37 to 42, 48 and 73, and the Third, Fourth, Seventh, Eighth, Tenth, Eleventh and Twelfth Schedule service rules (consolidation to Act III of 2026 and L.N. 75 and 86 of 2026) | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 | 2026-11-14 |
+| VAT Act, Cap. 406: Second Schedule items 1(b) and 2 (electricity is goods), Eighth Schedule items 2 and 8 (5% electricity and listed repairs), Fourth Schedule item 3 including the invoice proviso; operative passages and pages 65/108 read | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 | 2026-11-22 |
 | MTCA, VAT rates page: read for the 18% standard rate and the reduced rates | https://mtca.gov.mt/business-tax/vat1/vat-compliance/vat-rates/vat-rates | 2026-11-14 |
 | VAT (Rate of Interest) Regulations, S.L. 406.19: read for reg. 2 (0.6% a month; 0.33% on older balances) | https://legislation.mt/getpdf/632835ddda6f862638d03ac1 | 2026-11-14 |
 | National Holidays and Other Public Holidays Act, Cap. 252: read for the Schedule (15 August, Feast of the Assumption) | https://legislation.mt/eli/cap/252/eng/pdf | 2026-11-14 |
