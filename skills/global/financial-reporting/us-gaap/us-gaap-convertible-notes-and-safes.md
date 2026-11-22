@@ -13,6 +13,7 @@ last_updated: 2026-11-22
 version: 0.1
 depends_on:
   - financial-reporting-workflow-base
+  - us-gaap-debt-vs-equity
 ---
 
 # US GAAP convertible notes and SAFEs v0.1
@@ -45,7 +46,7 @@ The date key 2025-12-16 marks the first possible annual-period start after 15 De
 3. **Prepare the debt rollforward.** Reconcile opening carrying amount, proceeds, interest, payments, conversions, fees and any separately measured components. The par/no-fee case below uses its stated coupon as the effective interest input. Discounted issuance, transaction costs, noncash interest and modifications require separately sourced measurement; do not use the par shortcut for them.
 4. **For a SAFE, finish classification before the journal.** Require current conclusions for ASC 480 obligations, ASC 815 derivative scope/indexation and settlement provisions, and applicable equity/temporary-equity presentation. The read own-equity amendment removes some old disqualifiers, but does not establish that a particular SAFE qualifies. Its remaining share-availability, share-limit and cash-settlement conditions are not a substitute for the whole indexation test. SAFE classification/measurement remains held under Sources. [ASU 2020-06, 815-40-25-10/-25-10A](https://storage.fasb.org/ASU%202020-06.pdf).
 5. **Recompute the actual conversion contract.** Only after reading the definitions, calculate each candidate share price, identify the contractual comparison rule, apply any accrued-interest conversion clause and reconcile the resulting share count to the cap table. Pre-money and post-money definitions may produce different equations. This is contract arithmetic; it neither measures fair value nor clears the accounting entry.
-6. **Separate ordinary and induced conversions.** For an adopted ASU 2024-04 induced-conversion analysis, inspect the limited offer period, preservation of conversion consideration in form/amount and substantive conversion feature at issuance and acceptance. Assess relevant prior-year modifications and acceptance-date fair-value inputs. If the conditions hold, the read rule expenses the inducement's excess fair value. Failure is not permission to use the shortcut; obtain the applicable extinguishment analysis. [ASU 2024-04, 470-20-40-13/-40-13A and -40-16](https://storage.fasb.org/ASU%202024-04.pdf).
+6. **Separate ordinary and induced conversions.** For an adopted ASU 2024-04 induced-conversion analysis, inspect the limited offer period, preservation of conversion consideration in form/amount and substantive conversion feature at issuance and acceptance. If a non-substantial exchange or modification occurred in the one year before acceptance, compare against the conversion privileges existing one year before acceptance. Where either settlement formula depends on future share prices, use acceptance-date share fair value; indexing to something other than future issuer share price changes settlement form. If the conditions hold, the read rule expenses the inducement's excess fair value. Failure is not permission to use the shortcut; obtain the applicable extinguishment analysis. [ASU 2024-04, 470-20-40-13/-40-13A and -40-16](https://storage.fasb.org/ASU%202024-04.pdf).
 
 ## Worked cases
 

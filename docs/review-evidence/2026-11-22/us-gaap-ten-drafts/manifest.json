@@ -1,0 +1,106 @@
+{
+  "review_date": "2026-11-22",
+  "publication_state": "held; not current-ASC publication clearance",
+  "guides": [
+    {
+      "slug": "us-gaap-asc230-cash-flow-statement",
+      "path": "skills/global/financial-reporting/us-gaap/us-gaap-asc230-cash-flow-statement.md",
+      "sha256": "86b1393566140af499d2d8270b474541dd1826044e826d1c1582f1411c510edf",
+      "ledger_rows": 9,
+      "examples": 2,
+      "status": "needs_sources",
+      "independent_review": "review-b.md",
+      "ledger_sha256": "9d977dff0674c9dae762d3504b0d1136696d6a343414fc1e5fd1955516361a82"
+    },
+    {
+      "slug": "us-gaap-asc326-receivable-credit-losses",
+      "path": "skills/global/financial-reporting/us-gaap/us-gaap-asc326-receivable-credit-losses.md",
+      "sha256": "02f8a3aac61965b8ef93aca2ad40bebbd12e7df567fe86703d1ae50058fd52c9",
+      "ledger_rows": 10,
+      "examples": 2,
+      "status": "needs_sources",
+      "independent_review": "review-a.md",
+      "ledger_sha256": "2b133082eba22d039952f7e3bbc4ad3a805a7ac1f38bdb361f804b65f782591d"
+    },
+    {
+      "slug": "us-gaap-asc330-inventory",
+      "path": "skills/global/financial-reporting/us-gaap/us-gaap-asc330-inventory.md",
+      "sha256": "219b8c102c41b754dd770a832a863810c634d39cbd6071dcbb9f9340de3bc969",
+      "ledger_rows": 9,
+      "examples": 2,
+      "status": "needs_sources",
+      "independent_review": "review-b.md",
+      "ledger_sha256": "09d4da79fa5da4fefb8d21d123550d9ea82075858bd82b7203c0e9db58d005fe"
+    },
+    {
+      "slug": "us-gaap-asc350-goodwill-and-intangibles",
+      "path": "skills/global/financial-reporting/us-gaap/us-gaap-asc350-goodwill-and-intangibles.md",
+      "sha256": "d008abb598b6dc38d38b46c9780f4f4a6eab76c940c65d359febfa464ebaf3dc",
+      "ledger_rows": 10,
+      "examples": 2,
+      "status": "needs_sources",
+      "independent_review": "review-b.md",
+      "ledger_sha256": "cbc3f802bbdc16fbad46fa05fe293434e327a730ba1f2b2ee3ae2e012afaa4da"
+    },
+    {
+      "slug": "us-gaap-asc360-fixed-assets-and-impairment",
+      "path": "skills/global/financial-reporting/us-gaap/us-gaap-asc360-fixed-assets-and-impairment.md",
+      "sha256": "0bd13ed7d572ff8144ead8029c9b218edd975586e797cf15a9b008ebc2dee377",
+      "ledger_rows": 10,
+      "examples": 2,
+      "status": "needs_sources",
+      "independent_review": "review-b.md",
+      "ledger_sha256": "614d90f34a0783206e7808740f32d686e34f02d3d7b5da551ea6189c90eb4190"
+    },
+    {
+      "slug": "us-gaap-asc718-share-based-compensation",
+      "path": "skills/global/financial-reporting/us-gaap/us-gaap-asc718-share-based-compensation.md",
+      "sha256": "039a1034c1f8c4ac373f893578b9c9f93abcea3f508071cd6a569a4968e850ea",
+      "ledger_rows": 10,
+      "examples": 2,
+      "status": "needs_sources",
+      "independent_review": "review-a.md",
+      "ledger_sha256": "af0307684abb62228ceee18a4043cda8e8bf78730f9ed490761a316c650b5b3e"
+    },
+    {
+      "slug": "us-gaap-asc740-income-provision",
+      "path": "skills/global/financial-reporting/us-gaap/us-gaap-asc740-income-provision.md",
+      "sha256": "aa83b5f641842f3ae00b14daa3d1f9e6ba9ef6b808e05048f3b27e3f3001bb32",
+      "ledger_rows": 10,
+      "examples": 2,
+      "status": "needs_sources",
+      "independent_review": "review-a.md",
+      "ledger_sha256": "1cf874396b51f86ecff70371dad71003d4c642296bc5aa43280330daaf4afce1"
+    },
+    {
+      "slug": "us-gaap-asc810-consolidation",
+      "path": "skills/global/financial-reporting/us-gaap/us-gaap-asc810-consolidation.md",
+      "sha256": "9428f4fce34197c43c4fa7630bea50e12b3f1f85cb01872fe7164a7603ea6439",
+      "ledger_rows": 9,
+      "examples": 2,
+      "status": "needs_sources",
+      "independent_review": "review-b.md",
+      "ledger_sha256": "a5b01fd15434729d69d347bc81143107cd58b50d654fc368d900e66dbb016764"
+    },
+    {
+      "slug": "us-gaap-convertible-notes-and-safes",
+      "path": "skills/global/financial-reporting/us-gaap/us-gaap-convertible-notes-and-safes.md",
+      "sha256": "5ecf4af9a1d92ff3c4b9ed196ce323f76ab2b317dc6e39af3def0b1936c16e2e",
+      "ledger_rows": 10,
+      "examples": 2,
+      "status": "needs_sources",
+      "independent_review": "review-a.md",
+      "ledger_sha256": "7ce99c95e49f480054e38dace26e9769c6da4f7cd78d927748532b16f9e616a4"
+    },
+    {
+      "slug": "us-gaap-software-development-costs",
+      "path": "skills/global/financial-reporting/us-gaap/us-gaap-software-development-costs.md",
+      "sha256": "552377cf86e4baa3110aca0ff791af2b4d9dc412bcf6e6ab78976c7115523229",
+      "ledger_rows": 9,
+      "examples": 2,
+      "status": "needs_sources",
+      "independent_review": "review-a.md",
+      "ledger_sha256": "6fc6b193d33d3404ea874918794cdce38611c079c12a1489e981df57a7b8ca05"
+    }
+  ]
+}

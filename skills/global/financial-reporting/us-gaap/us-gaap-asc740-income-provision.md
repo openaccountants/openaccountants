@@ -95,7 +95,7 @@ expected:
 
 ## When to refuse or refer
 
-Hold recognition/measurement conclusions until current authoritative rules and actual enacted law are available. Refer uncertain tax positions, valuation allowances, loss/credit limitations, outside-basis differences, acquisitions, intraperiod allocation and international minimum taxes. A mathematically correct deferred balance is not evidence that its tax basis or rate is valid. No filing position is taken; any US federal tax advice requires the fact-specific analysis required by Circular 230 §10.37, separately from this accounting worksheet.
+Hold recognition/measurement conclusions until current authoritative rules and actual enacted law are available. Refer uncertain tax positions, valuation allowances, loss/credit limitations, outside-basis differences, acquisitions, intraperiod allocation and international minimum taxes. A mathematically correct deferred balance is not evidence that its tax basis or rate is valid. No filing position is taken; any written advice on a US federal tax matter requires the fact-specific analysis required by [Circular 230 §10.37](https://www.ecfr.gov/current/title-31/subtitle-A/part-10/subpart-B/section-10.37), separately from this accounting worksheet.
 
 ## Sources
 
@@ -105,5 +105,6 @@ Hold recognition/measurement conclusions until current authoritative rules and a
 | [ASU 2015-17](https://storage.fasb.org/ASU%202015-17.pdf) | 740-10-45-4/-45-6; -55-1/-55-15. Noncurrent classification, offsetting and enacted-law/scheduling boundary. Redline visually checked. | 2026-11-21 |
 | [ASU 2023-09](https://storage.fasb.org/ASU%202023-09.pdf) | 740-10-50-13, -50-22/-50-23 and -65-9. Read disclosure and transition passages only. | 2026-11-21 |
 | [ASU 2025-12](https://storage.fasb.org/ASU%202025-12.pdf) | Issue 12 description; 105-10-65-10 effective/early-adoption and transition text. | 2026-11-21 |
+| [31 CFR §10.37](https://www.ecfr.gov/current/title-31/subtitle-A/part-10/subpart-B/section-10.37) | Written federal-tax advice requirements, §10.37(a); referral boundary only. | 2026-11-22 |
 
 **Not yet confirmed:** Current ASC 740 full scope/exceptions; complete enacted-rate and reversal measurement requirements; valuation-allowance probability/evidence test; uncertain-tax-position recognition/measurement; carryforward restrictions; intraperiod allocation; full PBE reconciliation; actual jurisdiction tax law/rates and complete intervening-amendment applicability. None is cleared by the conditional examples. Official ASC access attempted 2026-11-21 stopped at CAPTCHA/terms. The Circular 230 reference is a referral boundary, not a tax-advice method.
