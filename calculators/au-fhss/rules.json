@@ -1,0 +1,40 @@
+{
+  "as_of": "2026-11-21",
+  "sources": [
+    {
+      "title": "Taxation Administration Act 1953, sch 1 ss 138-20 to 138-40 and 280-105",
+      "url": "https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html"
+    },
+    {
+      "title": "Income Tax Assessment Act 1997, ss 313-20 and 313-25",
+      "url": "https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text"
+    },
+    {
+      "title": "ATO shortfall interest charge rates",
+      "url": "https://www.ato.gov.au/tax-rates-and-codes/shortfall-interest-charge-rates"
+    },
+    {
+      "title": "ATO guidance GN 2024/1 and taxation ruling TR 2024/4",
+      "url": "https://www.ato.gov.au/law/view/document?LocID=%22GDN%2FGDN20241%2FNAT%2FATO%22"
+    }
+  ],
+  "limits": [
+    "Supply eligible ordinary voluntary contributions and exclude any excess or mandated amount.",
+    "Reconcile the contribution history with fund records. Use the ATO determination for a release."
+  ],
+  "first_contribution_date": "2017-07-01",
+  "first_request_date": "2018-07-01",
+  "latest_sic_date": "2026-12-31",
+  "sic_annual_basis_points": [
+    473, 470,
+    472, 477, 496, 496,
+    494, 496, 454, 398,
+    391, 389, 310, 310,
+    302, 301, 304, 301,
+    304, 307, 400, 531,
+    606, 646, 690, 715,
+    738, 734, 736, 738,
+    742, 717, 678, 661,
+    665, 696, 743, 751
+  ]
+}

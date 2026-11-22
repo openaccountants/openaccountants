@@ -1,0 +1,55 @@
+{
+  "as_of": "2026-11-18",
+  "jurisdiction": "AU",
+  "basis": "A company's tax rate for an income year from 2021-22 to 2026-27 under the base rate entity test, and, from its own previous-year inputs, its corporate tax rate for imputation purposes and the maximum franking credit as a fraction of a frankable distribution.",
+  "income_years": {
+    "first": "2021-22",
+    "last": "2026-27",
+    "earlier": "Before 2021-22 the base rate entity rate was 27.5% (2017-18 to 2019-20) or 26% (2020-21), and the 2017-18 turnover threshold was $25 million; those years are refused.",
+    "later": "Income years after 2026-27 are refused until the Rates Act is reread for them."
+  },
+  "base_rate_entity": {
+    "turnover_threshold": "50000000",
+    "passive_income_limit_percent": 80,
+    "basis": "Income Tax Rates Act 1986 s 23AA: (a) no more than 80% of the entity's assessable income for the year is base rate entity passive income (s 23AB); and (b) its aggregated turnover (ITAA 1997 s 328-115) for the year, worked out as at the end of the year, is less than $50 million."
+  },
+  "rates": {
+    "base_rate_entity_percent": 25,
+    "other_percent": 30,
+    "basis": "Income Tax Rates Act 1986 s 23(2): 25% if the company is a base rate entity for the year, otherwise 30%, where subsections 23(3) to (5) and s 23A do not apply to the company. The ATO's rate table gives 25% and 30% with the $50 million threshold for 2021-22 and later years."
+  },
+  "imputation": {
+    "basis": "ITAA 1997 s 995-1 'corporate tax rate for imputation purposes': the corporate tax rate for the year worked out on the assumptions that aggregated turnover, base rate entity passive income and assessable income for the year equal those for the previous income year; if the entity did not exist in the previous income year, the s 23(2)(a) rate. 'Corporate tax rate': 25% for a company to which s 23(2)(a) applies, otherwise 30%.",
+    "maximum_franking_credit_basis": "ITAA 1997 s 202-60(2): the frankable distribution times 1 over the applicable gross-up rate, the corporate tax gross-up rate (s 995-1) of (100% less the corporate tax rate for imputation purposes) over that rate, for the income year in which the distribution is made; s 202-65 limits a stated credit to that maximum."
+  },
+  "entity_types": {
+    "covered": {
+      "company": "A company, not acting as a trustee, to which s 23(2) applies alone: none of the refused types below."
+    },
+    "refused": {
+      "company_as_trustee": "Income Tax Rates Act 1986 s 23(1): the company rates do not cover a company in the capacity of a trustee.",
+      "rsa_provider": "s 23(3): an RSA provider's RSA component is taxed at 15%.",
+      "pooled_development_fund": "s 23(4) and (5): a PDF's SME income and unregulated investment components have their own rates.",
+      "life_insurance_company": "s 23A: ordinary and complying superannuation classes.",
+      "non_profit_company": "s 23(6): a non-profit company's rate is 25% or 30% under s 23(2), but its tax is capped at 55% of taxable income above $416 where taxable income is no more than $762 (base rate entity) or $915 (otherwise); this calculator does not apply the cap.",
+      "recognised_medium_credit_union": "s 23(7): a recognised medium credit union's rate is 25% or 30% under s 23(2), but its tax is capped at 37.5% (base rate entity) or 45% (otherwise) of taxable income above $49,999; this calculator does not apply the cap.",
+      "public_trading_trust": "s 25: a public trading trust's trustee is outside this calculator."
+    }
+  },
+  "sources": [
+    "https://www.legislation.gov.au/C2004A03348/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19970038/995-1",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19970038/328-115",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19970038/202-60",
+    "https://www.ato.gov.au/law/view/document?docid=COG/LCR20195/NAT/ATO/00001",
+    "https://www.ato.gov.au/tax-rates-and-codes/company-tax-rate-changes",
+    "https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/imputation/paying-dividends-and-other-distributions/allocating-franking-credits"
+  ],
+  "limits": [
+    "Preparation aid requiring professional review; it does not establish any input.",
+    "Aggregated turnover (with connected entities and affiliates, worked out at year end), assessable income and base rate entity passive income are caller-established; the calculator does not classify income, group entities or trace trust and partnership amounts.",
+    "The entity type is caller-attested; companies taxed under s 23(3) to (7) or s 23A, trustees and public trading trusts are refused.",
+    "The corporate tax rate for imputation purposes comes only from the previous year's inputs, or the statement that the company did not exist then; without them it is not given.",
+    "Tax payable, offsets, the franking account, the benchmark rule and franking deficit tax are not computed."
+  ]
+}

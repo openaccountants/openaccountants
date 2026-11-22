@@ -1,0 +1,50 @@
+{
+  "as_of": "2026-11-18",
+  "jurisdiction": "AU",
+  "currency": "AUD",
+  "basis": "One individual's concessional and non-concessional contributions caps for an income year under ITAA 1997 ss 291-20 and 292-85 (compilation 268, 1 October 2026), with the unused concessional cap carried forward year by year from 2018-19.",
+  "supported_years": ["2024-25", "2025-26", "2026-27"],
+  "concessional_caps": {
+    "basis": "ITAA 1997 s 291-20(2): $25,000 for 2017-18, indexed annually under Subdivision 960-M (s 960-285). Amounts are the ATO's Table 1.1 on its contributions caps page.",
+    "amounts": {
+      "2018-19": "25000",
+      "2019-20": "25000",
+      "2020-21": "25000",
+      "2021-22": "27500",
+      "2022-23": "27500",
+      "2023-24": "27500",
+      "2024-25": "30000",
+      "2025-26": "30000",
+      "2026-27": "32500"
+    }
+  },
+  "carry_forward": {
+    "first_unused_year": "2018-19",
+    "previous_years": 5,
+    "total_super_balance_below": "500000",
+    "basis": "ITAA 1997 s 291-20(3) to (7): when the year's concessional contributions would exceed its cap and the total superannuation balance just before the year is less than $500,000, the previously unapplied unused cap of the previous 5 years increases the cap, earliest year first, by no more than the excess. A year's unused cap is its shortfall below its cap, and there is none for a year before 2018-19."
+  },
+  "non_concessional": {
+    "general_cap_multiple": 4,
+    "basis": "ITAA 1997 s 292-85(2): 4 times the s 291-20(2) cap, or nil when the total superannuation balance immediately before the year equals or exceeds the general transfer balance cap. s 292-85(3) to (5): in a first year of bring forward, twice or 3 times that cap, by the first year cap space. s 292-90(1)(b): excess concessional contributions count.",
+    "general_transfer_balance_caps": {
+      "2024-25": "1900000",
+      "2025-26": "2000000",
+      "2026-27": "2100000"
+    },
+    "transfer_balance_cap_basis": "ATO Table 26, General transfer balance cap (ITAA 1997 s 294-35(3): $1,600,000 for 2017-18, indexed annually)."
+  },
+  "sources": [
+    "https://www.legislation.gov.au/C2004A05138/latest/text",
+    "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/contributions-caps",
+    "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/transfer-balance-cap",
+    "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/concessional-contributions-cap",
+    "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/non-concessional-contributions-cap"
+  ],
+  "limits": [
+    "Preparation aid requiring professional review; it does not decide what to contribute, issue a determination or work out the tax on an excess.",
+    "Every amount and fact is caller-attested: which contributions are concessional (s 291-25) or non-concessional (s 292-90), each total superannuation balance, the age test and whether an earlier bring forward covers the year are not verified.",
+    "Defined benefit interests (Subdivision 291-C), interests in a constitutionally protected fund, a second or third year of bring forward (s 292-85(6) and (7)) and a release of excess concessional contributions (s 292-90(1A)) are refused.",
+    "Contributions count in the year the fund receives them; the calculator does not allocate contributions between years, apply a reallocation or disregard decision, or count the CGT cap, downsizer or other excluded contributions."
+  ]
+}

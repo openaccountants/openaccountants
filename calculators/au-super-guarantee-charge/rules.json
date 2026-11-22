@@ -1,0 +1,54 @@
+{
+  "as_of": "2026-11-19",
+  "jurisdiction": "AU",
+  "currency": "AUD",
+  "basis": "An estimate of the super guarantee charge for one employee and one QE day from 1 July 2026 to 30 June 2027 under Payday Super: SGAA 1992 Compilation No. 78 (1 July 2026) ss 16B(2)(a) to (c), 17A, 10A(5) and (6), 18C, 18D, 19A and 19B, and the SG (Administration) Regulations 2018 Compilation No. 8 (1 July 2026) regs 13B to 13D. Treasury Laws Amendment (Payday Superannuation) Act 2025 Sch 1 item 182 applies these to QE days from 1 July 2026; a quarter ending by 30 June 2026 stays under the old Act and is refused.",
+  "qe_days": { "from": "2026-07-01", "to": "2027-06-30" },
+  "charge_percentage": 12,
+  "maximum_contributions_base": {
+    "2026-27": "270830.00",
+    "basis": "SGAA s 10A(5): the basic concessional contributions cap times 100, divided by the charge percentage, rounded down to a multiple of $10; ATO Key superannuation rates and thresholds, Super guarantee, Table 23, gives $270,830 for 2026-27. Under s 10A(6) a payment that takes the employee's qualifying earnings from the employer in the year past it counts only to it, and later payments count as nil."
+  },
+  "notional_earnings": {
+    "basis": "SGAA s 19A: for each day of the late period on which the individual final shortfall is above nil, the notional sum (the base shortfall plus the earlier days' amounts) times the general interest charge rate for the day. TAA 1953 s 8AAD(1): the base interest rate plus 7 percentage points, divided by the days in the calendar year.",
+    "receipt_day": "The day the fund receives the late contribution that brings the final shortfall to nil is counted, following the ATO's Juliet example (What to do if you miss a Payday Super contribution, last updated 27 June 2026: contributions received 25 days late, 25 days of earnings). The late period ends the day before the assessment (s 6(1)).",
+    "gic_quarters": [
+      { "from": "2026-07-01", "to": "2026-09-30", "annual_percent": "11.43" },
+      { "from": "2026-10-01", "to": "2026-12-31", "annual_percent": "11.51" }
+    ],
+    "gic_checked": "2026-11-19"
+  },
+  "administrative_uplift": {
+    "percent": 60,
+    "basis": "SGAA s 19B(1): 60% of the final shortfall plus the notional earnings; reduced under regs 13B to 13D, not below nil.",
+    "no_commissioner_initiated_assessment_reduction": 20,
+    "no_commissioner_initiated_assessment_basis": "Reg 13C: no Commissioner-initiated assessment made during the 24 months ending on the QE day is in force on it, and no SG charge estimate under TAA Sch 1 s 268-10(1) was made in that time (one revoked or reduced to nil by the QE day is disregarded). For a QE day from 1 July 2026 to 30 June 2028 the 24 months start on 1 July 2026 (reg 13C(3)).",
+    "voluntary_disclosure": [
+      { "lodged_by_day": 30, "reduction": 40 },
+      { "lodged_by_day": 60, "reduction": 35 },
+      { "lodged_by_day": 120, "reduction": 30 },
+      { "lodged_by_day": null, "reduction": 15 }
+    ],
+    "voluntary_disclosure_basis": "Reg 13D: a voluntary disclosure statement lodged before the day of the assessment, by the end of the 30, 60 or 120-day period starting on the QE day (the QE day is day 1), or later."
+  },
+  "latest_assessment_day": "2031-06-30",
+  "rounding": "Exact integer arithmetic. The SG amount (12% of qualifying earnings in cents), the notional earnings (compounded exactly) and the uplift are each rounded once to the nearest cent, half up; the uplift is worked on the rounded notional earnings. The Act and Regulations set no rounding for these amounts, so the cent rounding is a calculator convention.",
+  "sources": [
+    "https://www.legislation.gov.au/C2004A04402/latest/text",
+    "https://www.legislation.gov.au/F2018L01289/latest/text",
+    "https://www.legislation.gov.au/C2025A00057/asmade/text",
+    "https://www.ato.gov.au/law/view/document?DocID=COG/LCR20261/NAT/ATO/00001",
+    "https://www.ato.gov.au/law/view/document?DocID=PAC/19530001/8AAD",
+    "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/missed-or-late-payday-super-payments/what-happens-if-you-dont-pay-super-correctly",
+    "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/missed-or-late-payday-super-payments/what-to-do-if-you-miss-a-payday-super-contribution",
+    "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/super-guarantee",
+    "https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates"
+  ],
+  "limits": [
+    "An estimate requiring professional review; the ATO calculates and assesses the charge for each QE day and its notice of assessment sets it.",
+    "Every amount, date and answer is caller-attested: which payments are qualifying earnings, which contributions are eligible contributions applied to this QE day and when each fund received them, and whether reg 13C applies are not verified.",
+    "The choice loading (s 20A) is not computed: add it where the choice of fund rules were not met.",
+    "Not covered: A QE day with any Norfolk Island salary or wages under Payday Super Act Sch 1 item 189, defined benefit interests and notional contributions (s 18A(3)), employer shortfall exemption certificates (s 17B), contributions made from 1 to 28 July 2026 that Payday Super Act Sch 1 item 186 first applies to a June 2026 quarter shortfall (supply only the remainder), a disclosed contribution with no receipt day (s 36(3)), and general interest charge or penalties once the charge is payable.",
+    "General interest charge rates after 31 December 2026 were not published on the check date: a late period that runs past it needs an assumed annual rate, and the result counts those days."
+  ]
+}

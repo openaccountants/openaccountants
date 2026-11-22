@@ -1,0 +1,28 @@
+{
+  "as_of": "2026-11-18",
+  "jurisdiction": "AU",
+  "currency": "AUD",
+  "basis": "An estimate of one individual's Division 293 tax (ITAA 1997 Subdivision 293-B, compilation 268, 1 October 2026) for an income year, from the income components and low tax contributed amounts the caller supplies. The ATO assesses the tax from the tax return and what each fund reports.",
+  "supported_years": ["2024-25", "2025-26", "2026-27"],
+  "years_basis": "ITAA 1997 compilation 250 (in force from 1 July 2024) gives the same text as compilation 268 for ss 293-15 to 293-25 and 301-20 and the s 995-1 definitions of income for surcharge purposes, total net investment loss and assessable FHSS released amount. The compilation from 1 December 2026 adds only Act No. 61, 2026, Schedule 1, items 41 to 45, which change none of them.",
+  "threshold": "250000",
+  "rate_percent": 15,
+  "formulas": {
+    "division_293_income": "ITAA 1997 s 293-20(1)(a) and s 995-1 'income for surcharge purposes' (a), (b) and (d), disregarding (c), the reportable superannuation contributions: taxable income disregarding the assessable FHSS released amount and ITAA 1936 Sch 2F s 271-105(1) (one input), plus the reportable fringe benefits total (FBTAA s 135N) and the total net investment loss (net financial investment loss plus net rental property loss). The reduction by the s 301-20(3) amount is nil from 2024-25: s 301-20(1) needs a lump sum received under 60 at or above preservation age, and under SISR reg 6.01(2) nobody is both from 1 July 2024.",
+    "low_tax_contributions": "ITAA 1997 s 293-25: the low tax contributed amounts covered by s 293-30, less the excess concessional contributions for the year.",
+    "taxable_contributions": "ITAA 1997 s 293-20(1) and (2): when Division 293 income plus low tax contributions exceeds $250,000, the lesser of the low tax contributions and the excess; none when the low tax contributions are nil.",
+    "tax": "Superannuation (Sustaining the Superannuation Contribution Concession) Imposition Act 2013 s 5: 15% of the taxable contributions; liability under ITAA 1997 s 293-15."
+  },
+  "rounding": "Exact integer arithmetic in cents. The tax is 15% of the taxable contributions, rounded once to the nearest cent, half away from zero. The Acts set no rounding for this amount, so the cent rounding is a calculator convention.",
+  "sources": [
+    "https://www.legislation.gov.au/C2004A05138/latest/text",
+    "https://www.legislation.gov.au/C2013A00087/latest/text",
+    "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-293-tax-on-concessional-contributions-by-high-income-earners"
+  ],
+  "limits": [
+    "An estimate from the caller's inputs, requiring professional review; the ATO's Division 293 notice of assessment sets the tax.",
+    "Every amount and answer is caller-attested: the low tax contributed amounts (s 293-30, under the law for the year), the excess concessional contributions and each income component are not verified.",
+    "Refused: a defined benefit interest in the year (Subdivision 293-D), an interest in a constitutionally protected fund (Subdivision 293-E and Imposition Act s 6), a State higher level office holder of a kind declared for Subdivision 293-E (Imposition Act s 6), a justice or judge in s 293-190 (Subdivision 293-F), and a departing Australia superannuation payment (Subdivision 293-G).",
+    "Debt accounts, deferral, release authorities, payment dates and interest (Subdivision 293-C) are outside scope."
+  ]
+}

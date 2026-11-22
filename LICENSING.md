@@ -69,3 +69,7 @@ This structure is introduced on **2026-07-16**. Guide versions previously
 distributed under AGPL-3.0 remain available under AGPL-3.0 for the copies already
 distributed; this change is forward-looking and does not purport to revoke rights
 already granted (see § 9 of the Guide License).
+
+## Worksheets from the Australian fork
+
+The nine Australian worksheets listed as fork imports retain their file-level licences. Their rules files use the OpenAccountants Guide License v1.0. The software uses AGPL-3.0-only. The benchmark datasets retain the ATO and Creative Commons terms documented in the calculator README. See `REUSE.toml` for the file-level mapping.

@@ -1,0 +1,509 @@
+{
+  "attribution": "© Australian Taxation Office for the Commonwealth of Australia. Turnover bands, total expenses ranges and key cost of sales ranges adapted from the ATO's 'Small Business Benchmarks' dataset (2023-24 Benchmarks, https://data.gov.au/data/dataset/small-business-benchmarks), licensed under Creative Commons Attribution 2.5 Australia (https://creativecommons.org/licenses/by/2.5/au/); arranged as JSON, with percentages as whole numbers, by Ryan Duguid for OpenAccountants. This file is licensed under Creative Commons Attribution 2.5 Australia.",
+  "benchmark_year": "2023-24",
+  "dataset": {
+    "title": "Small Business Benchmarks",
+    "resource": "2023-24 Benchmarks",
+    "page": "https://data.gov.au/data/dataset/small-business-benchmarks",
+    "url": "https://data.gov.au/data/dataset/591b444b-be7f-4121-8252-119a9fe07c19/resource/db3ab8b7-e029-48de-8e7a-c61532e25496/download/small-business-benchmarks-2023-24-data.xlsx",
+    "last_modified": "2026-03-15T22:07:39.563377",
+    "bytes": 20826,
+    "sha256": "84925348cc6abfdbfb2cd14c62456e02d44057b7c7b444a6839e6179f71440f5",
+    "licence": "Creative Commons Attribution 2.5 Australia",
+    "licence_url": "https://creativecommons.org/licenses/by/2.5/au/"
+  },
+  "read": "2026-11-18",
+  "industries": {
+    "Air conditioning, refrigeration and heating services": { "bands": [
+        {"label": "$50,000 - $150,000", "from": 50000, "to": 150000, "total_expenses": [54, 73]},
+        {"label": "$150,001 - $600,000", "from": 150001, "to": 600000, "total_expenses": [65, 78]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [79, 89]}
+    ] },
+    "Alarm systems installation - fire and security": { "bands": [
+        {"label": "$50,000 - $150,000", "from": 50000, "to": 150000, "total_expenses": [53, 71]},
+        {"label": "$150,001 - $600,000", "from": 150001, "to": 600000, "total_expenses": [59, 76]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [76, 87]}
+    ] },
+    "Architectural services": { "bands": [
+        {"label": "$135,000 - $220,000", "from": 135000, "to": 220000, "total_expenses": [29, 56]},
+        {"label": "$220,001 - $400,000", "from": 220001, "to": 400000, "total_expenses": [40, 65]},
+        {"label": "More than $400,000", "from": 400001, "to": null, "total_expenses": [61, 79]}
+    ] },
+    "Automotive electrical services": { "bands": [
+        {"label": "$50,000 - $250,000", "from": 50000, "to": 250000, "total_expenses": [58, 74], "cost_of_sales": [28, 42]},
+        {"label": "$250,001 - $750,000", "from": 250001, "to": 750000, "total_expenses": [65, 80], "cost_of_sales": [33, 43]},
+        {"label": "More than $750,000", "from": 750001, "to": null, "total_expenses": [79, 87], "cost_of_sales": [37, 46]}
+    ] },
+    "Bakeries and hot bread shops": { "bands": [
+        {"label": "$65,000 - $400,000", "from": 65000, "to": 400000, "total_expenses": [69, 81], "cost_of_sales": [31, 38]},
+        {"label": "$400,001 - $750,000", "from": 400001, "to": 750000, "total_expenses": [75, 86], "cost_of_sales": [34, 39]},
+        {"label": "More than $750,000", "from": 750001, "to": null, "total_expenses": [82, 90], "cost_of_sales": [29, 36]}
+    ] },
+    "Barber and men's hairdressing": { "bands": [
+        {"label": "$65,000 - $150,000", "from": 65000, "to": 150000, "total_expenses": [43, 61]},
+        {"label": "More than $150,000", "from": 150001, "to": null, "total_expenses": [65, 81]}
+    ] },
+    "Beauty services": { "bands": [
+        {"label": "$65,000 - $200,000", "from": 65000, "to": 200000, "total_expenses": [48, 69]},
+        {"label": "$200,001 - $400,000", "from": 200001, "to": 400000, "total_expenses": [69, 83]},
+        {"label": "More than $400,000", "from": 400001, "to": null, "total_expenses": [77, 88]}
+    ] },
+    "Blocklaying services": { "bands": [
+        {"label": "$75,000 - $155,000", "from": 75000, "to": 155000, "total_expenses": [38, 57]},
+        {"label": "$155,001 - $500,000", "from": 155001, "to": 500000, "total_expenses": [58, 71]},
+        {"label": "More than $500,000", "from": 500001, "to": null, "total_expenses": [78, 88]}
+    ] },
+    "Book retailing": { "bands": [
+        {"label": "$65,000 - $250,000", "from": 65000, "to": 250000, "total_expenses": [64, 82], "cost_of_sales": [29, 51]},
+        {"label": "$250,001 - $750,000", "from": 250001, "to": 750000, "total_expenses": [75, 90], "cost_of_sales": [45, 57]},
+        {"label": "More than $750,000", "from": 750001, "to": null, "total_expenses": [88, 93], "cost_of_sales": [53, 56]}
+    ] },
+    "Bottle shops and liquor retailing": { "bands": [
+        {"label": "$65,000 - $500,000", "from": 65000, "to": 500000, "total_expenses": [78, 89], "cost_of_sales": [63, 74]},
+        {"label": "$500,001 - $2,000,000", "from": 500001, "to": 2000000, "total_expenses": [90, 95], "cost_of_sales": [69, 77]},
+        {"label": "More than $2,000,000", "from": 2000001, "to": null, "total_expenses": [92, 95], "cost_of_sales": [74, 79]}
+    ] },
+    "Bricklaying services": { "bands": [
+        {"label": "$50,000 - $150,000", "from": 50000, "to": 150000, "total_expenses": [29, 46]},
+        {"label": "$150,001 - $350,000", "from": 150001, "to": 350000, "total_expenses": [51, 68]},
+        {"label": "More than $350,000", "from": 350001, "to": null, "total_expenses": [70, 84]}
+    ] },
+    "Cabinet makers": { "bands": [
+        {"label": "$100,000 - $300,000", "from": 100000, "to": 300000, "total_expenses": [53, 71]},
+        {"label": "$300,001 - $900,000", "from": 300001, "to": 900000, "total_expenses": [72, 84]},
+        {"label": "More than $900,000", "from": 900001, "to": null, "total_expenses": [82, 90]}
+    ] },
+    "Cake shops and patisseries": { "bands": [
+        {"label": "$65,000 - $300,000", "from": 65000, "to": 300000, "total_expenses": [62, 79], "cost_of_sales": [28, 37]},
+        {"label": "$300,001 - $600,000", "from": 300001, "to": 600000, "total_expenses": [78, 87], "cost_of_sales": [30, 35]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [83, 91], "cost_of_sales": [31, 37]}
+    ] },
+    "Carpentry services": { "bands": [
+        {"label": "$50,000 - $110,000", "from": 50000, "to": 110000, "total_expenses": [32, 50]},
+        {"label": "$110,001 - $400,000", "from": 110001, "to": 400000, "total_expenses": [46, 66]},
+        {"label": "More than $400,000", "from": 400001, "to": null, "total_expenses": [76, 87]}
+    ] },
+    "Carpet laying services": { "bands": [
+        {"label": "$50,000 - $100,000", "from": 50000, "to": 100000, "total_expenses": [32, 45]},
+        {"label": "$100,001 - $250,000", "from": 100001, "to": 250000, "total_expenses": [37, 55]},
+        {"label": "More than $250,000", "from": 250001, "to": null, "total_expenses": [60, 79]}
+    ] },
+    "Catering services": { "bands": [
+        {"label": "$50,000 - $200,000", "from": 50000, "to": 200000, "total_expenses": [60, 76], "cost_of_sales": [31, 43]},
+        {"label": "$200,001 - $600,000", "from": 200001, "to": 600000, "total_expenses": [68, 83], "cost_of_sales": [32, 41]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [81, 91], "cost_of_sales": [31, 41]}
+    ] },
+    "Cement rendering": { "bands": [
+        {"label": "$50,000 - $150,000", "from": 50000, "to": 150000, "total_expenses": [37, 52]},
+        {"label": "$150,001 - $400,000", "from": 150001, "to": 400000, "total_expenses": [61, 77]},
+        {"label": "More than $400,000", "from": 400001, "to": null, "total_expenses": [75, 89]}
+    ] },
+    "Chicken shops": { "bands": [
+        {"label": "$60,000 - $250,000", "from": 60000, "to": 250000, "total_expenses": [76, 87], "cost_of_sales": [38, 46]},
+        {"label": "$250,001 - $575,000", "from": 250001, "to": 575000, "total_expenses": [81, 89], "cost_of_sales": [41, 49]},
+        {"label": "More than $575,000", "from": 575001, "to": null, "total_expenses": [85, 93], "cost_of_sales": [40, 48]}
+    ] },
+    "Child care services": { "bands": [
+        {"label": "$65,000 - $200,000", "from": 65000, "to": 200000, "total_expenses": [42, 59]},
+        {"label": "$200,001 - $600,000", "from": 200001, "to": 600000, "total_expenses": [60, 77]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [79, 88]}
+    ] },
+    "Chiropractic and osteopathic services": { "bands": [
+        {"label": "$65,000 - $200,000", "from": 65000, "to": 200000, "total_expenses": [34, 52]},
+        {"label": "$200,001 - $600,000", "from": 200001, "to": 600000, "total_expenses": [54, 71]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [67, 82]}
+    ] },
+    "Cleaning services - building and other industrial": { "bands": [
+        {"label": "$50,000 - $115,000", "from": 50000, "to": 115000, "total_expenses": [30, 53]},
+        {"label": "$115,001 - $250,000", "from": 115001, "to": 250000, "total_expenses": [46, 69]},
+        {"label": "More than $250,000", "from": 250001, "to": null, "total_expenses": [69, 85]}
+    ] },
+    "Cleaning services - carpet, rug and furniture upholstery": { "bands": [
+        {"label": "$65,000 - $150,000", "from": 65000, "to": 150000, "total_expenses": [37, 58]},
+        {"label": "$150,001 - $300,000", "from": 150001, "to": 300000, "total_expenses": [43, 61]},
+        {"label": "More than $300,000", "from": 300001, "to": null, "total_expenses": [60, 75]}
+    ] },
+    "Clothing retailing": { "bands": [
+        {"label": "$65,000 - $250,000", "from": 65000, "to": 250000, "total_expenses": [72, 85], "cost_of_sales": [39, 55]},
+        {"label": "$250,001 - $500,000", "from": 250001, "to": 500000, "total_expenses": [78, 88], "cost_of_sales": [46, 58]},
+        {"label": "More than $500,000", "from": 500001, "to": null, "total_expenses": [83, 91], "cost_of_sales": [48, 57]}
+    ] },
+    "Coffee shops": { "bands": [
+        {"label": "$65,000 - $250,000", "from": 65000, "to": 250000, "total_expenses": [73, 86], "cost_of_sales": [34, 42]},
+        {"label": "$250,001 - $600,000", "from": 250001, "to": 600000, "total_expenses": [81, 90], "cost_of_sales": [35, 41]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [86, 93], "cost_of_sales": [33, 38]}
+    ] },
+    "Computer retailing": { "bands": [
+        {"label": "$65,000 - $200,000", "from": 65000, "to": 200000, "total_expenses": [64, 80], "cost_of_sales": [40, 57]},
+        {"label": "$200,001 - $600,000", "from": 200001, "to": 600000, "total_expenses": [70, 85], "cost_of_sales": [43, 56]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [82, 91], "cost_of_sales": [49, 65]}
+    ] },
+    "Concreting services": { "bands": [
+        {"label": "$50,000 - $200,000", "from": 50000, "to": 200000, "total_expenses": [38, 59]},
+        {"label": "$200,001 - $500,000", "from": 200001, "to": 500000, "total_expenses": [63, 77]},
+        {"label": "More than $500,000", "from": 500001, "to": null, "total_expenses": [76, 87]}
+    ] },
+    "Confectionery retailing": { "bands": [
+        {"label": "$65,000 - $250,000", "from": 65000, "to": 250000, "total_expenses": [73, 84], "cost_of_sales": [42, 55]},
+        {"label": "More than $250,000", "from": 250001, "to": null, "total_expenses": [81, 90], "cost_of_sales": [43, 53]}
+    ] },
+    "Courier services": { "bands": [
+        {"label": "$50,000 - $100,000", "from": 50000, "to": 100000, "total_expenses": [42, 58]},
+        {"label": "$100,001 - $300,000", "from": 100001, "to": 300000, "total_expenses": [48, 71]},
+        {"label": "More than $300,000", "from": 300001, "to": null, "total_expenses": [76, 89]}
+    ] },
+    "Craft shops": { "bands": [
+        {"label": "$65,000 - $150,000", "from": 65000, "to": 150000, "total_expenses": [66, 84], "cost_of_sales": [35, 51]},
+        {"label": "More than $150,000", "from": 150001, "to": null, "total_expenses": [75, 90], "cost_of_sales": [38, 53]}
+    ] },
+    "Delicatessen": { "bands": [
+        {"label": "$65,000 - $250,000", "from": 65000, "to": 250000, "total_expenses": [76, 87], "cost_of_sales": [40, 57]},
+        {"label": "$250,001 - $500,000", "from": 250001, "to": 500000, "total_expenses": [80, 89], "cost_of_sales": [46, 56]},
+        {"label": "More than $500,000", "from": 500001, "to": null, "total_expenses": [86, 93], "cost_of_sales": [52, 63]}
+    ] },
+    "Delivery services": { "bands": [
+        {"label": "$50,000 - $90,000", "from": 50000, "to": 90000, "total_expenses": [38, 56]},
+        {"label": "$90,001 - $210,000", "from": 90001, "to": 210000, "total_expenses": [48, 66]},
+        {"label": "More than $210,000", "from": 210001, "to": null, "total_expenses": [66, 82]}
+    ] },
+    "Dental specialists": { "bands": [
+        {"label": "$65,000 - $300,000", "from": 65000, "to": 300000, "total_expenses": [43, 65]},
+        {"label": "$300,001 - $900,000", "from": 300001, "to": 900000, "total_expenses": [60, 73]},
+        {"label": "More than $900,000", "from": 900001, "to": null, "total_expenses": [59, 72]}
+    ] },
+    "Dental surgeons - general": { "bands": [
+        {"label": "$50,000 - $435,000", "from": 50000, "to": 435000, "total_expenses": [55, 67]},
+        {"label": "$435,001 - $815,000", "from": 435001, "to": 815000, "total_expenses": [65, 73]},
+        {"label": "More than $815,000", "from": 815001, "to": null, "total_expenses": [67, 80]}
+    ] },
+    "Discount and variety stores": { "bands": [
+        {"label": "$65,000 - $250,000", "from": 65000, "to": 250000, "total_expenses": [79, 88], "cost_of_sales": [42, 53]},
+        {"label": "$250,001 - $600,000", "from": 250001, "to": 600000, "total_expenses": [83, 92], "cost_of_sales": [47, 52]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [86, 93], "cost_of_sales": [47, 55]}
+    ] },
+    "Domestic appliance repair and maintenance": { "bands": [
+        {"label": "$50,000 - $150,000", "from": 50000, "to": 150000, "total_expenses": [48, 67]},
+        {"label": "$150,001 - $600,000", "from": 150001, "to": 600000, "total_expenses": [59, 76]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [77, 88]}
+    ] },
+    "Driving schools and instructors": { "bands": [
+        {"label": "$50,000 - $75,000", "from": 50000, "to": 75000, "total_expenses": [32, 45]},
+        {"label": "$75,001 - $165,000", "from": 75001, "to": 165000, "total_expenses": [34, 50]},
+        {"label": "More than $165,000", "from": 165001, "to": null, "total_expenses": [51, 70]}
+    ] },
+    "Electrical and electronic product retailing": { "bands": [
+        {"label": "$65,000 - $750,000", "from": 65000, "to": 750000, "total_expenses": [71, 87], "cost_of_sales": [44, 61]},
+        {"label": "$750,001 - $2,000,000", "from": 750001, "to": 2000000, "total_expenses": [83, 92], "cost_of_sales": [54, 67]},
+        {"label": "More than $2,000,000", "from": 2000001, "to": null, "total_expenses": [89, 95], "cost_of_sales": [59, 73]}
+    ] },
+    "Electrical services": { "bands": [
+        {"label": "$50,000 - $200,000", "from": 50000, "to": 200000, "total_expenses": [51, 68]},
+        {"label": "$200,001 - $500,000", "from": 200001, "to": 500000, "total_expenses": [59, 75]},
+        {"label": "More than $500,000", "from": 500001, "to": null, "total_expenses": [75, 86]}
+    ] },
+    "Entertainment media retailing": { "bands": [
+        {"label": "$65,000 - $350,000", "from": 65000, "to": 350000, "total_expenses": [54, 75], "cost_of_sales": [32, 51]},
+        {"label": "More than $350,000", "from": 350001, "to": null, "total_expenses": [76, 87], "cost_of_sales": [39, 56]}
+    ] },
+    "Fence construction": { "bands": [
+        {"label": "$50,000 - $250,000", "from": 50000, "to": 250000, "total_expenses": [59, 71]},
+        {"label": "$250,001 - $400,000", "from": 250001, "to": 400000, "total_expenses": [66, 77]},
+        {"label": "More than $400,000", "from": 400001, "to": null, "total_expenses": [75, 85]}
+    ] },
+    "Fish and chips shops": { "bands": [
+        {"label": "$65,000 - $250,000", "from": 65000, "to": 250000, "total_expenses": [79, 86], "cost_of_sales": [43, 49]},
+        {"label": "$250,001 - $500,000", "from": 250001, "to": 500000, "total_expenses": [80, 89], "cost_of_sales": [45, 51]},
+        {"label": "More than $500,000", "from": 500001, "to": null, "total_expenses": [81, 90], "cost_of_sales": [44, 50]}
+    ] },
+    "Fish and seafood retailing - fresh": { "bands": [
+        {"label": "$65,000 - $500,000", "from": 65000, "to": 500000, "total_expenses": [76, 88], "cost_of_sales": [58, 69]},
+        {"label": "$500,001 - $1,000,000", "from": 500001, "to": 1000000, "total_expenses": [85, 92], "cost_of_sales": [57, 67]},
+        {"label": "More than $1,000,000", "from": 1000001, "to": null, "total_expenses": [90, 94], "cost_of_sales": [63, 73]}
+    ] },
+    "Floor covering retailing": { "bands": [
+        {"label": "$65,000 - $800,000", "from": 65000, "to": 800000, "total_expenses": [66, 83], "cost_of_sales": [35, 54]},
+        {"label": "$800,001 - $2,000,000", "from": 800001, "to": 2000000, "total_expenses": [85, 93], "cost_of_sales": [48, 60]},
+        {"label": "More than $2,000,000", "from": 2000001, "to": null, "total_expenses": [88, 93], "cost_of_sales": [51, 64]}
+    ] },
+    "Florists": { "bands": [
+        {"label": "$65,000 - $300,000", "from": 65000, "to": 300000, "total_expenses": [68, 82], "cost_of_sales": [40, 51]},
+        {"label": "$300,001 - $600,000", "from": 300001, "to": 600000, "total_expenses": [78, 88], "cost_of_sales": [43, 50]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [83, 91], "cost_of_sales": [45, 53]}
+    ] },
+    "Footwear retailing": { "bands": [
+        {"label": "$65,000 - $180,000", "from": 65000, "to": 180000, "total_expenses": [66, 82], "cost_of_sales": [40, 59]},
+        {"label": "$180,001 - $600,000", "from": 180001, "to": 600000, "total_expenses": [78, 87], "cost_of_sales": [51, 59]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [84, 91], "cost_of_sales": [48, 56]}
+    ] },
+    "Fruit and vegetable retailing": { "bands": [
+        {"label": "$65,000 - $450,000", "from": 65000, "to": 450000, "total_expenses": [78, 88], "cost_of_sales": [58, 71]},
+        {"label": "$450,001 - $1,100,000", "from": 450001, "to": 1100000, "total_expenses": [87, 92], "cost_of_sales": [65, 73]},
+        {"label": "More than $1,100,000", "from": 1100001, "to": null, "total_expenses": [92, 96], "cost_of_sales": [69, 76]}
+    ] },
+    "Fuel retailing": { "bands": [
+        {"label": "$75,000 - $500,000", "from": 75000, "to": 500000, "total_expenses": [79, 91], "cost_of_sales": [65, 79]},
+        {"label": "$500,001 - $2,000,000", "from": 500001, "to": 2000000, "total_expenses": [91, 96], "cost_of_sales": [67, 81]},
+        {"label": "More than $2,000,000", "from": 2000001, "to": null, "total_expenses": [96, 98], "cost_of_sales": [79, 88]}
+    ] },
+    "Furniture removalists": { "bands": [
+        {"label": "$50,000 - $125,000", "from": 50000, "to": 125000, "total_expenses": [43, 65]},
+        {"label": "$125,001 - $525,000", "from": 125001, "to": 525000, "total_expenses": [60, 79]},
+        {"label": "More than $525,000", "from": 525001, "to": null, "total_expenses": [78, 89]}
+    ] },
+    "Furniture retailing": { "bands": [
+        {"label": "$65,000 - $500,000", "from": 65000, "to": 500000, "total_expenses": [73, 86], "cost_of_sales": [42, 55]},
+        {"label": "$500,001 - $1,000,000", "from": 500001, "to": 1000000, "total_expenses": [81, 91], "cost_of_sales": [47, 57]},
+        {"label": "More than $1,000,000", "from": 1000001, "to": null, "total_expenses": [87, 95], "cost_of_sales": [52, 58]}
+    ] },
+    "Garden supplies retailing": { "bands": [
+        {"label": "$65,000 - $250,000", "from": 65000, "to": 250000, "total_expenses": [67, 83], "cost_of_sales": [34, 50]},
+        {"label": "$250,001 - $750,000", "from": 250001, "to": 750000, "total_expenses": [74, 88], "cost_of_sales": [39, 53]},
+        {"label": "More than $750,000", "from": 750001, "to": null, "total_expenses": [84, 92], "cost_of_sales": [46, 56]}
+    ] },
+    "Gift stores": { "bands": [
+        {"label": "$65,000 - $150,000", "from": 65000, "to": 150000, "total_expenses": [77, 85], "cost_of_sales": [44, 56]},
+        {"label": "$150,001 - $600,000", "from": 150001, "to": 600000, "total_expenses": [79, 88], "cost_of_sales": [46, 55]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [84, 92], "cost_of_sales": [48, 56]}
+    ] },
+    "Glazing services": { "bands": [
+        {"label": "$50,000 - $200,000", "from": 50000, "to": 200000, "total_expenses": [46, 65]},
+        {"label": "$200,001 - $600,000", "from": 200001, "to": 600000, "total_expenses": [62, 76]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [77, 88]}
+    ] },
+    "Grocery retailing and convenience stores": { "bands": [
+        {"label": "$65,000 - $300,000", "from": 65000, "to": 300000, "total_expenses": [82, 90], "cost_of_sales": [59, 71]},
+        {"label": "$300,001 - $950,000", "from": 300001, "to": 950000, "total_expenses": [88, 94], "cost_of_sales": [64, 73]},
+        {"label": "More than $950,000", "from": 950001, "to": null, "total_expenses": [92, 96], "cost_of_sales": [71, 77]}
+    ] },
+    "Hairdressers": { "bands": [
+        {"label": "$50,000 - $150,000", "from": 50000, "to": 150000, "total_expenses": [40, 57]},
+        {"label": "$150,001 - $300,000", "from": 150001, "to": 300000, "total_expenses": [58, 75]},
+        {"label": "More than $300,000", "from": 300001, "to": null, "total_expenses": [75, 86]}
+    ] },
+    "Health and fitness centres": { "bands": [
+        {"label": "$65,000 - $175,000", "from": 65000, "to": 175000, "total_expenses": [40, 64]},
+        {"label": "$175,001 - $600,000", "from": 175001, "to": 600000, "total_expenses": [69, 83]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [72, 85]}
+    ] },
+    "Health food retailing": { "bands": [
+        {"label": "$65,000 - $400,000", "from": 65000, "to": 400000, "total_expenses": [73, 89], "cost_of_sales": [48, 64]},
+        {"label": "$400,001 - $600,000", "from": 400001, "to": 600000, "total_expenses": [86, 92], "cost_of_sales": [55, 64]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [87, 94], "cost_of_sales": [57, 65]}
+    ] },
+    "Homewares retailing": { "bands": [
+        {"label": "$65,000 - $250,000", "from": 65000, "to": 250000, "total_expenses": [72, 85], "cost_of_sales": [41, 55]},
+        {"label": "$250,001 - $900,000", "from": 250001, "to": 900000, "total_expenses": [81, 91], "cost_of_sales": [47, 56]},
+        {"label": "More than $900,000", "from": 900001, "to": null, "total_expenses": [86, 93], "cost_of_sales": [49, 60]}
+    ] },
+    "Ice cream retailing": { "bands": [
+        {"label": "$65,000 - $275,000", "from": 65000, "to": 275000, "total_expenses": [69, 82], "cost_of_sales": [26, 33]},
+        {"label": "$275,001 - $475,000", "from": 275001, "to": 475000, "total_expenses": [83, 91], "cost_of_sales": [28, 34]},
+        {"label": "More than $475,000", "from": 475001, "to": null, "total_expenses": [80, 89], "cost_of_sales": [27, 35]}
+    ] },
+    "Kebab shops": { "bands": [
+        {"label": "$50,000 - $170,000", "from": 50000, "to": 170000, "total_expenses": [77, 84], "cost_of_sales": [38, 47]},
+        {"label": "$170,001 - $300,000", "from": 170001, "to": 300000, "total_expenses": [81, 89], "cost_of_sales": [41, 47]},
+        {"label": "More than $300,000", "from": 300001, "to": null, "total_expenses": [84, 91], "cost_of_sales": [43, 49]}
+    ] },
+    "Landscape construction": { "bands": [
+        {"label": "$50,000 - $200,000", "from": 50000, "to": 200000, "total_expenses": [46, 64]},
+        {"label": "$200,001 - $500,000", "from": 200001, "to": 500000, "total_expenses": [63, 77]},
+        {"label": "More than $500,000", "from": 500001, "to": null, "total_expenses": [76, 86]}
+    ] },
+    "Laundry and dry-cleaning services": { "bands": [
+        {"label": "$65,000 - $150,000", "from": 65000, "to": 150000, "total_expenses": [62, 76]},
+        {"label": "$150,001 - $600,000", "from": 150001, "to": 600000, "total_expenses": [63, 79]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [75, 87]}
+    ] },
+    "Lawn mower retailing": { "bands": [
+        {"label": "$65,000 - $550,000", "from": 65000, "to": 550000, "total_expenses": [75, 83], "cost_of_sales": [48, 62]},
+        {"label": "$550,001 - $1,450,000", "from": 550001, "to": 1450000, "total_expenses": [85, 91], "cost_of_sales": [59, 64]},
+        {"label": "More than $1,450,000", "from": 1450001, "to": null, "total_expenses": [89, 94], "cost_of_sales": [64, 69]}
+    ] },
+    "Lawn mowing and garden services": { "bands": [
+        {"label": "$50,000 - $90,000", "from": 50000, "to": 90000, "total_expenses": [36, 51]},
+        {"label": "$90,001 - $175,000", "from": 90001, "to": 175000, "total_expenses": [41, 58]},
+        {"label": "More than $175,000", "from": 175001, "to": null, "total_expenses": [58, 74]}
+    ] },
+    "Machinery and equipment repairs and maintenance": { "bands": [
+        {"label": "$50,000 - $200,000", "from": 50000, "to": 200000, "total_expenses": [47, 68]},
+        {"label": "$200,001 - $600,000", "from": 200001, "to": 600000, "total_expenses": [54, 76]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [77, 87]}
+    ] },
+    "Manchester and other textile goods retailing": { "bands": [
+        {"label": "$65,000 - $150,000", "from": 65000, "to": 150000, "total_expenses": [64, 83], "cost_of_sales": [38, 53]},
+        {"label": "$150,001 - $500,000", "from": 150001, "to": 500000, "total_expenses": [74, 86], "cost_of_sales": [42, 54]},
+        {"label": "More than $500,000", "from": 500001, "to": null, "total_expenses": [81, 90], "cost_of_sales": [46, 56]}
+    ] },
+    "Meat and poultry retailing - fresh": { "bands": [
+        {"label": "$65,000 - $450,000", "from": 65000, "to": 450000, "total_expenses": [81, 90], "cost_of_sales": [56, 66]},
+        {"label": "$450,001 - $850,000", "from": 450001, "to": 850000, "total_expenses": [85, 91], "cost_of_sales": [60, 68]},
+        {"label": "More than $850,000", "from": 850001, "to": null, "total_expenses": [87, 93], "cost_of_sales": [61, 69]}
+    ] },
+    "Motor vehicle parts and batteries retailing": { "bands": [
+        {"label": "$65,000 - $400,000", "from": 65000, "to": 400000, "total_expenses": [69, 85], "cost_of_sales": [42, 61]},
+        {"label": "$400,001 - $1,250,000", "from": 400001, "to": 1250000, "total_expenses": [80, 90], "cost_of_sales": [50, 62]},
+        {"label": "More than $1,250,000", "from": 1250001, "to": null, "total_expenses": [86, 92], "cost_of_sales": [55, 64]}
+    ] },
+    "Motor vehicle retail - new and used car": { "bands": [
+        {"label": "$75,000 - $500,000", "from": 75000, "to": 500000, "total_expenses": [75, 89], "cost_of_sales": [60, 78]},
+        {"label": "$500,001 - $1,500,000", "from": 500001, "to": 1500000, "total_expenses": [87, 93], "cost_of_sales": [67, 82]},
+        {"label": "More than $1,500,000", "from": 1500001, "to": null, "total_expenses": [91, 96], "cost_of_sales": [76, 85]}
+    ] },
+    "Musical instruments retail": { "bands": [
+        {"label": "$65,000 - $285,000", "from": 65000, "to": 285000, "total_expenses": [58, 83], "cost_of_sales": [40, 55]},
+        {"label": "$285,001 - $765,000", "from": 285001, "to": 765000, "total_expenses": [81, 87], "cost_of_sales": [51, 63]},
+        {"label": "More than $765,000", "from": 765001, "to": null, "total_expenses": [87, 93], "cost_of_sales": [57, 68]}
+    ] },
+    "Newsagents": { "bands": [
+        {"label": "$65,000 - $500,000", "from": 65000, "to": 500000, "total_expenses": [77, 88], "cost_of_sales": [42, 59]},
+        {"label": "$500,001 - $1,000,000", "from": 500001, "to": 1000000, "total_expenses": [83, 91], "cost_of_sales": [47, 62]},
+        {"label": "More than $1,000,000", "from": 1000001, "to": null, "total_expenses": [89, 95], "cost_of_sales": [55, 81]}
+    ] },
+    "Painting services": { "bands": [
+        {"label": "$50,000 - $150,000", "from": 50000, "to": 150000, "total_expenses": [36, 51]},
+        {"label": "$150,001 - $600,000", "from": 150001, "to": 600000, "total_expenses": [54, 71]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [74, 86]}
+    ] },
+    "Panel beating and smash repairs": { "bands": [
+        {"label": "$50,000 - $150,000", "from": 50000, "to": 150000, "total_expenses": [46, 67]},
+        {"label": "$150,001 - $300,000", "from": 150001, "to": 300000, "total_expenses": [51, 73]},
+        {"label": "More than $300,000", "from": 300001, "to": null, "total_expenses": [73, 86]}
+    ] },
+    "Pest control services": { "bands": [
+        {"label": "$50,000 - $150,000", "from": 50000, "to": 150000, "total_expenses": [43, 62]},
+        {"label": "$150,001 - $400,000", "from": 150001, "to": 400000, "total_expenses": [45, 66]},
+        {"label": "More than $400,000", "from": 400001, "to": null, "total_expenses": [64, 81]}
+    ] },
+    "Pets and pet supply retailing": { "bands": [
+        {"label": "$65,000 - $250,000", "from": 65000, "to": 250000, "total_expenses": [55, 79], "cost_of_sales": [30, 54]},
+        {"label": "$250,001 - $750,000", "from": 250001, "to": 750000, "total_expenses": [80, 88], "cost_of_sales": [39, 55]},
+        {"label": "More than $750,000", "from": 750001, "to": null, "total_expenses": [85, 93], "cost_of_sales": [54, 64]}
+    ] },
+    "Pharmacy": { "bands": [
+        {"label": "$400,000 - $1,500,000", "from": 400000, "to": 1500000, "total_expenses": [86, 92], "cost_of_sales": [61, 67]},
+        {"label": "$1,500,001 - $3,500,000", "from": 1500001, "to": 3500000, "total_expenses": [87, 93], "cost_of_sales": [63, 67]},
+        {"label": "More than $3,500,000", "from": 3500001, "to": null, "total_expenses": [89, 94], "cost_of_sales": [66, 70]}
+    ] },
+    "Physiotherapy services": { "bands": [
+        {"label": "$75,000 - $240,000", "from": 75000, "to": 240000, "total_expenses": [29, 50]},
+        {"label": "$240,001 - $600,000", "from": 240001, "to": 600000, "total_expenses": [52, 73]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [73, 84]}
+    ] },
+    "Picture framing retailing": { "bands": [
+        {"label": "$55,000 - $140,000", "from": 55000, "to": 140000, "total_expenses": [56, 73], "cost_of_sales": [26, 34]},
+        {"label": "$140,001 - $260,000", "from": 140001, "to": 260000, "total_expenses": [60, 76], "cost_of_sales": [25, 33]},
+        {"label": "More than $260,000", "from": 260001, "to": null, "total_expenses": [69, 84], "cost_of_sales": [26, 31]}
+    ] },
+    "Pizza shops - takeaway": { "bands": [
+        {"label": "$65,000 - $150,000", "from": 65000, "to": 150000, "total_expenses": [75, 84], "cost_of_sales": [33, 44]},
+        {"label": "$150,001 - $600,000", "from": 150001, "to": 600000, "total_expenses": [80, 89], "cost_of_sales": [38, 44]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [87, 94], "cost_of_sales": [34, 41]}
+    ] },
+    "Plastering and ceiling services": { "bands": [
+        {"label": "$50,000 - $300,000", "from": 50000, "to": 300000, "total_expenses": [35, 55]},
+        {"label": "$300,001 - $1,000,000", "from": 300001, "to": 1000000, "total_expenses": [68, 82]},
+        {"label": "More than $1,000,000", "from": 1000001, "to": null, "total_expenses": [84, 93]}
+    ] },
+    "Plumbing services": { "bands": [
+        {"label": "$50,000 - $150,000", "from": 50000, "to": 150000, "total_expenses": [50, 66]},
+        {"label": "$150,001 - $600,000", "from": 150001, "to": 600000, "total_expenses": [59, 74]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [75, 86]}
+    ] },
+    "Printing": { "bands": [
+        {"label": "$65,000 - $200,000", "from": 65000, "to": 200000, "total_expenses": [64, 81], "cost_of_sales": [26, 43]},
+        {"label": "$200,001 - $500,000", "from": 200001, "to": 500000, "total_expenses": [72, 84], "cost_of_sales": [30, 43]},
+        {"label": "More than $500,000", "from": 500001, "to": null, "total_expenses": [80, 89], "cost_of_sales": [33, 46]}
+    ] },
+    "Printing support services": { "bands": [
+        {"label": "$65,000 - $300,000", "from": 65000, "to": 300000, "total_expenses": [59, 79]},
+        {"label": "$300,001 - $900,000", "from": 300001, "to": 900000, "total_expenses": [68, 83]},
+        {"label": "More than $900,000", "from": 900001, "to": null, "total_expenses": [81, 90]}
+    ] },
+    "Pubs, taverns and bars": { "bands": [
+        {"label": "$100,000 - $750,000", "from": 100000, "to": 750000, "total_expenses": [78, 90], "cost_of_sales": [34, 46]},
+        {"label": "$750,001 - $2,500,000", "from": 750001, "to": 2500000, "total_expenses": [86, 93], "cost_of_sales": [33, 41]},
+        {"label": "More than $2,500,000", "from": 2500001, "to": null, "total_expenses": [87, 94], "cost_of_sales": [31, 42]}
+    ] },
+    "Restaurants": { "bands": [
+        {"label": "$65,000 - $500,000", "from": 65000, "to": 500000, "total_expenses": [79, 89], "cost_of_sales": [32, 39]},
+        {"label": "$500,001 - $2,000,000", "from": 500001, "to": 2000000, "total_expenses": [84, 93], "cost_of_sales": [32, 38]},
+        {"label": "More than $2,000,000", "from": 2000001, "to": null, "total_expenses": [88, 94], "cost_of_sales": [31, 36]}
+    ] },
+    "Road freight transport services": { "bands": [
+        {"label": "$50,000 - $200,000", "from": 50000, "to": 200000, "total_expenses": [52, 71]},
+        {"label": "$200,001 - $600,000", "from": 200001, "to": 600000, "total_expenses": [63, 80]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [78, 89]}
+    ] },
+    "Roofing services, including roof tiling, guttering and metal roofing": { "bands": [
+        {"label": "$50,000 - $325,000", "from": 50000, "to": 325000, "total_expenses": [43, 63]},
+        {"label": "$325,001 - $900,000", "from": 325001, "to": 900000, "total_expenses": [65, 80]},
+        {"label": "More than $900,000", "from": 900001, "to": null, "total_expenses": [80, 89]}
+    ] },
+    "Sports and physical recreation instruction": { "bands": [
+        {"label": "$50,000 - $150,000", "from": 50000, "to": 150000, "total_expenses": [36, 58]},
+        {"label": "$150,001 - $600,000", "from": 150001, "to": 600000, "total_expenses": [56, 75]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [71, 85]}
+    ] },
+    "Sports, camping and fishing retailing": { "bands": [
+        {"label": "$65,000 - $250,000", "from": 65000, "to": 250000, "total_expenses": [68, 84], "cost_of_sales": [45, 62]},
+        {"label": "$250,001 - $750,000", "from": 250001, "to": 750000, "total_expenses": [78, 88], "cost_of_sales": [53, 63]},
+        {"label": "More than $750,000", "from": 750001, "to": null, "total_expenses": [86, 92], "cost_of_sales": [58, 66]}
+    ] },
+    "Stationery goods retailing": { "bands": [
+        {"label": "$65,000 - $250,000", "from": 65000, "to": 250000, "total_expenses": [66, 82], "cost_of_sales": [39, 58]},
+        {"label": "$250,001 - $750,000", "from": 250001, "to": 750000, "total_expenses": [81, 88], "cost_of_sales": [47, 57]},
+        {"label": "More than $750,000", "from": 750001, "to": null, "total_expenses": [86, 93], "cost_of_sales": [52, 63]}
+    ] },
+    "Takeaway food services": { "bands": [
+        {"label": "$65,000 - $200,000", "from": 65000, "to": 200000, "total_expenses": [69, 82], "cost_of_sales": [34, 42]},
+        {"label": "$200,001 - $600,000", "from": 200001, "to": 600000, "total_expenses": [76, 87], "cost_of_sales": [36, 43]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [84, 93], "cost_of_sales": [35, 41]}
+    ] },
+    "Tiling services - floor and wall": { "bands": [
+        {"label": "$50,000 - $150,000", "from": 50000, "to": 150000, "total_expenses": [36, 52]},
+        {"label": "$150,001 - $600,000", "from": 150001, "to": 600000, "total_expenses": [53, 71]},
+        {"label": "More than $600,000", "from": 600001, "to": null, "total_expenses": [79, 90]}
+    ] },
+    "Timber floor sanding": { "bands": [
+        {"label": "$50,000 - $100,000", "from": 50000, "to": 100000, "total_expenses": [42, 56]},
+        {"label": "$100,001 - $200,000", "from": 100001, "to": 200000, "total_expenses": [44, 62]},
+        {"label": "More than $200,000", "from": 200001, "to": null, "total_expenses": [59, 78]}
+    ] },
+    "Tobacco retailing": { "bands": [
+        {"label": "$100,000 - $700,000", "from": 100000, "to": 700000, "total_expenses": [84, 93], "cost_of_sales": [66, 78]},
+        {"label": "$700,001 - $1,500,000", "from": 700001, "to": 1500000, "total_expenses": [91, 95], "cost_of_sales": [78, 86]},
+        {"label": "More than $1,500,000", "from": 1500001, "to": null, "total_expenses": [94, 97], "cost_of_sales": [86, 90]}
+    ] },
+    "Towing services": { "bands": [
+        {"label": "$50,000 - $200,000", "from": 50000, "to": 200000, "total_expenses": [55, 70]},
+        {"label": "$200,001 - $500,000", "from": 200001, "to": 500000, "total_expenses": [61, 78]},
+        {"label": "More than $500,000", "from": 500001, "to": null, "total_expenses": [73, 86]}
+    ] },
+    "Toy and game retailing": { "bands": [
+        {"label": "$65,000 - $150,000", "from": 65000, "to": 150000, "total_expenses": [76, 85], "cost_of_sales": [47, 63]},
+        {"label": "$150,001 - $550,000", "from": 150001, "to": 550000, "total_expenses": [77, 89], "cost_of_sales": [51, 65]},
+        {"label": "More than $550,000", "from": 550001, "to": null, "total_expenses": [85, 92], "cost_of_sales": [56, 64]}
+    ] },
+    "Tutoring and coaching": { "bands": [
+        {"label": "$50,000 - $300,000", "from": 50000, "to": 300000, "total_expenses": [31, 63]},
+        {"label": "$300,001 - $800,000", "from": 300001, "to": 800000, "total_expenses": [57, 80]},
+        {"label": "More than $800,000", "from": 800001, "to": null, "total_expenses": [69, 87]}
+    ] },
+    "Tyre retailing": { "bands": [
+        {"label": "$65,000 - $1,000,000", "from": 65000, "to": 1000000, "total_expenses": [83, 91], "cost_of_sales": [57, 67]},
+        {"label": "$1,000,001 - $2,500,000", "from": 1000001, "to": 2500000, "total_expenses": [88, 93], "cost_of_sales": [58, 65]},
+        {"label": "More than $2,500,000", "from": 2500001, "to": null, "total_expenses": [90, 94], "cost_of_sales": [61, 68]}
+    ] },
+    "Veterinary services": { "bands": [
+        {"label": "$100,000 - $300,000", "from": 100000, "to": 300000, "total_expenses": [44, 67]},
+        {"label": "$300,001 - $800,000", "from": 300001, "to": 800000, "total_expenses": [55, 77]},
+        {"label": "More than $800,000", "from": 800001, "to": null, "total_expenses": [74, 84]}
+    ] },
+    "Watch and jewellery retailing": { "bands": [
+        {"label": "$65,000 - $250,000", "from": 65000, "to": 250000, "total_expenses": [65, 79], "cost_of_sales": [30, 44]},
+        {"label": "$250,001 - $750,000", "from": 250001, "to": 750000, "total_expenses": [73, 85], "cost_of_sales": [37, 50]},
+        {"label": "More than $750,000", "from": 750001, "to": null, "total_expenses": [82, 91], "cost_of_sales": [44, 56]}
+    ] }
+  }
+}

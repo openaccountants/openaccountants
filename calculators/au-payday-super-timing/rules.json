@@ -1,0 +1,65 @@
+{
+  "as_of": "2026-11-18",
+  "jurisdiction": "AU",
+  "basis": "Employer super guarantee contributions for qualifying earnings paid from 1 July 2026 (Payday Super). The latest day a contribution can be received under SGAA 1992 s 18C(1)(c)(i) and the applicable items of the s 18C(2) table.",
+  "regime_start": "2026-07-01",
+  "periods": {
+    "usual": { "business_days": 7, "basis": "SGAA 1992 s 6(1) 'usual period': starts on the QE day and ends on the seventh business day after it." },
+    "item_1": { "business_days": 20, "basis": "SGAA 1992 s 18C(2) item 1 and s 6(1) 'extended usual period': the first eligible contribution to a fund or RSA after the employee commenced or recommenced, or after the employer ceased contributing to another fund or RSA; ends on the 20th business day after the QE day." },
+    "item_2": { "business_days": 7, "basis": "SGAA 1992 s 18C(2) item 2 and LI 2026/20 (F2026L00784) s 5: out-of-cycle qualifying earnings; the usual period of the first standard QE day after the current QE day." },
+    "item_3": { "business_days": 20, "basis": "SGAA 1992 s 18C(2) item 3 and s 18C(4): a determination for exceptional circumstances; the later of the extended usual period and 20 business days starting on the day after the determination is made." },
+    "item_4": { "basis": "SGAA 1992 s 18C(2) item 4: the latest due day of an earlier eligible contribution made and applied for an earlier QE day." }
+  },
+  "business_day": "SGAA 1992 s 6(1): any day other than a Saturday, a Sunday or a public holiday for the whole of any State, the ACT or the NT.",
+  "calendar": {
+    "verified_from": "2026-07-01",
+    "verified_until": "2027-08-31",
+    "checked": "2026-11-18",
+    "horizon_note": "Victoria's 2027 Friday before the AFL Grand Final is not yet published, so no count may pass 31 August 2027.",
+    "excluded": "Part-day holidays: 7pm to midnight on 24 and 31 December in SA (Public Holidays Act 2023 (SA) s 4) and the NT (Public Holidays Act 1981 (NT) s 5 and Schedule 2), and 6pm to midnight on 24 December in Queensland; these make part of the day a public holiday, not the day. Also excluded: regional holidays (show days, Royal Queensland Show, Tasmanian regional days), Melbourne Cup Day (in 2026 Greater Geelong, Warrnambool and other non-metropolitan councils substituted a local day), WA King's Birthday 2026 (Karratha and Port Hedland observed 3 August 2026 instead), Tasmania's Easter Tuesday (generally the Tasmanian Public Service only) and the NSW and ACT Bank Holiday (not a public holiday for everyone). Weekend holidays need no row.",
+    "weekday_holidays": [
+      { "date": "2026-08-03", "name": "Picnic Day", "jurisdictions": ["NT"] },
+      { "date": "2026-09-25", "name": "Friday before the AFL Grand Final", "jurisdictions": ["VIC"] },
+      { "date": "2026-10-05", "name": "Labour Day; King's Birthday", "jurisdictions": ["ACT", "NSW", "QLD", "SA"] },
+      { "date": "2026-12-25", "name": "Christmas Day", "jurisdictions": ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"] },
+      { "date": "2026-12-28", "name": "Boxing Day or its additional day; Proclamation Day additional day", "jurisdictions": ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"] },
+      { "date": "2027-01-01", "name": "New Year's Day", "jurisdictions": ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"] },
+      { "date": "2027-01-26", "name": "Australia Day", "jurisdictions": ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"] },
+      { "date": "2027-03-01", "name": "Labour Day", "jurisdictions": ["WA"] },
+      { "date": "2027-03-08", "name": "Canberra Day; Adelaide Cup Day; Eight Hours Day; Labour Day", "jurisdictions": ["ACT", "SA", "TAS", "VIC"] },
+      { "date": "2027-03-26", "name": "Good Friday", "jurisdictions": ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"] },
+      { "date": "2027-03-29", "name": "Easter Monday", "jurisdictions": ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"] },
+      { "date": "2027-04-26", "name": "ANZAC Day additional or observed day", "jurisdictions": ["ACT", "NSW", "NT", "QLD", "WA"] },
+      { "date": "2027-05-03", "name": "May Day; Labour Day", "jurisdictions": ["NT", "QLD"] },
+      { "date": "2027-05-31", "name": "Reconciliation Day", "jurisdictions": ["ACT"] },
+      { "date": "2027-06-07", "name": "Western Australia Day", "jurisdictions": ["WA"] },
+      { "date": "2027-06-14", "name": "King's Birthday", "jurisdictions": ["ACT", "NSW", "NT", "SA", "TAS", "VIC"] },
+      { "date": "2027-08-02", "name": "Picnic Day", "jurisdictions": ["NT"] }
+    ],
+    "sources": [
+      "https://www.act.gov.au/living-in-the-act/public-holidays-school-terms-and-daylight-saving",
+      "https://www.nsw.gov.au/about-nsw/public-holidays",
+      "https://nt.gov.au/nt-public-holidays",
+      "https://www.qld.gov.au/recreation/travel/holidays/public",
+      "https://safework.sa.gov.au/resources/public-holidays",
+      "https://worksafe.tas.gov.au/topics/laws-and-compliance/public-holidays",
+      "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2026",
+      "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2027",
+      "https://business.vic.gov.au/business-information/public-holidays/victorian-non-metropolitan-public-holidays-2026",
+      "https://www.wa.gov.au/service/employment/workplace-arrangements/public-holidays-western-australia"
+    ]
+  },
+  "sources": [
+    "https://www.legislation.gov.au/C2004A04402/latest/text",
+    "https://www.legislation.gov.au/F2026L00784/latest/text",
+    "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/payment-deadlines-for-payday-super"
+  ],
+  "limits": [
+    "Preparation aid requiring professional review; it does not decide whether a contribution was on time or assess the super guarantee charge.",
+    "Every extension is caller-attested: whether a contribution is the first to a fund, whether earnings are out-of-cycle under LI 2026/20, whether a determination covers the employer and QE day, and whether an earlier eligible contribution was made and applied for an earlier QE day are not verified.",
+    "An extension the caller does not supply is not applied: omitting one can make the result earlier than the law allows, never later.",
+    "A contribution counts only if received with the information the fund needs to allocate it; amounts, the order of application, the 12-month pre-payment window in s 18C(1)(c)(ii) and the shortfall are not computed.",
+    "Defined benefit interests (s 18A(3)) and constitutionally protected funds are outside scope.",
+    "Holidays declared or moved after the calendar check date are not reflected."
+  ]
+}

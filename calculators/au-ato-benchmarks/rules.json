@@ -1,0 +1,58 @@
+{
+  "as_of": "2026-11-18",
+  "jurisdiction": "AU",
+  "basis": "Where a business's tax return ratios sit against the ATO's small business benchmark ranges for its industry and turnover band. A comparison only: the ATO uses the benchmarks with other risk indicators and never in isolation.",
+  "benchmark_year": "2023-24",
+  "data": {
+    "files": [
+      "benchmarks-2023-24.json",
+      "ato-pages-2023-24.json"
+    ],
+    "read": "2026-11-18",
+    "derivation": "Total expenses and cost of sales ranges are the dataset's, which prints them as fractions (0.31 is 31%). Labour, rent and motor vehicle ranges, and cost of sales where it is not the key range, are copied as printed from each industry's page; a single figure, such as '1%', is stored as both bounds. Each page's key ranges and turnover bands were checked against the dataset. Bands are as printed: '$400,001 - $750,000' starts at $400,001 and 'More than $750,000' at $750,001.",
+    "excluded": {
+      "Hardware and building supplies retailing": "The industry page (QC43766, key table headed 'Key benchmarks for 2023–23') gives cost of sales of 56% to 66% for $400,001 to $1,000,000; the dataset gives 55% to 66%."
+    },
+    "anomalies": {
+      "Health and fitness centres": "The industry page's key table is headed 'Key benchmarks for 2022–23' under '2023–24 benchmarks'; its ranges equal the 2023-24 dataset's, and its other benchmarks table is headed 2023–24."
+    }
+  },
+  "turnover": {
+    "rule": "Turnover excludes GST. It is the sales of goods and services amount; if that is blank, zero or less than 50% of total business income, total business income is used instead.",
+    "sales_labels": {
+      "company": "6C",
+      "partnership_or_trust": "5G + 5H",
+      "individual": "P8 I + P8 J"
+    },
+    "total_business_income_labels": {
+      "company": "6S",
+      "partnership_or_trust": "5",
+      "individual": "P8"
+    }
+  },
+  "ratios": {
+    "total_expenses": "Total expenses minus payments to associated persons. Total expenses: company 6Q, partnership or trust 5O, individual P8S + P8T. Payments to associated persons: company 8Q, partnership or trust 45 M, individual P16 H.",
+    "cost_of_sales": "Cost of sales excluding salary and wages: where the total salary and wages code is C (included in cost of sales), total salary and wages are deducted. Cost of sales: company 6A, partnership or trust 5E, individual P8 K + L − M. Total salary and wages and its code: company 8D, partnership or trust 44 L, individual P15 G.",
+    "labour": "Total salary and wages + contractor, subcontractor and commission expenses − payments to associated persons; the activity statement's W1 is used instead of total salary and wages where it is greater. Contractor expenses: company 6C, partnership or trust 5C, individual P8 F.",
+    "rent": "Rent expenses: company 6H, partnership or trust 5H, individual P8 K.",
+    "motor_vehicle": "Motor vehicle expenses: company 6Y, partnership or trust 5L, individual P8 N."
+  },
+  "sources": [
+    "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/small-business-benchmarks/small-business-benchmarks-methodology-and-ratio-calculations/how-we-calculate-benchmark-ratios",
+    "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/small-business-benchmarks/what-it-means-to-be-outside-the-benchmark-range",
+    "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/small-business-benchmarks/how-we-use-business-performance-benchmarks",
+    "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/small-business-benchmarks/compare-your-business-now/how-to-compare-your-business-performance-manually",
+    "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/small-business-benchmarks/benchmarks-a-z",
+    "https://data.gov.au/data/dataset/small-business-benchmarks",
+    "https://www.ato.gov.au/about-ato/using-our-website/copyright-notice"
+  ],
+  "limits": [
+    "A comparison with the ATO's published ranges, not a finding: a ratio outside a range does not mean a return is wrong, and one inside does not mean it is right.",
+    "The 2023-24 benchmarks only, the ATO's most current set on the read date. Other years, industries the ATO does not publish, Hardware and building supplies retailing (its 2 ATO sources disagree) and turnover below an industry's lowest band are refused.",
+    "The caller chooses the industry; the ATO allocates a business by its industry code, main business activity and trading name. A business that runs more than one business compares each separately.",
+    "Amounts are the caller's whole-dollar tax return amounts and are not verified. Where total business income or total expenses is blank, zero or incomplete, the ATO sums other labels; the caller must supply that sum.",
+    "The ATO prints whole percentages and says nothing about rounding. This calculator's convention, following the ATO's examples, is to round the ratio half up to 2 decimal places and compare that with the bounds as printed, inclusive; a single-figure range, such as 1%, is within only at exactly that figure.",
+    "The ATO does not quantify the 'small amount' of cost of sales below which total expenses becomes the key range. This calculator assumes cost of sales stays the key range unless it is omitted or zero, and shows both ratios; whether a reported amount is small is the reader's judgement.",
+    "Activity statement benchmarks, not produced since 1 July 2017, and the ATO's averages are not used."
+  ]
+}

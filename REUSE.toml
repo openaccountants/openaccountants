@@ -67,3 +67,154 @@ path = [
 precedence = "override"
 SPDX-FileCopyrightText = ["2026 Glimpse Ltd and Open Accountants contributors", "2025 Kazuki Nagata"]
 SPDX-License-Identifier = "LicenseRef-OA-Guide-License-2.0 AND MIT"
+
+[[annotations]]
+path = ["calculators/au-payg-withholding/index.mjs", "calculators/au-payg-withholding/index.test.mjs", "calculators/au-payg-withholding/README.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+[[annotations]]
+path = "calculators/au-payg-withholding/rules.json"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "LicenseRef-OA-Guide-License-2.0"
+
+[[annotations]]
+path = ["calculators/au-fhss/index.mjs", "calculators/au-fhss/index.test.mjs", "calculators/au-fhss/README.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+[[annotations]]
+path = "calculators/au-fhss/rules.json"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "LicenseRef-OA-Guide-License-2.0"
+
+# The imported fork worksheets retain their file-level licences.
+[[annotations]]
+path = ["calculators/au-payday-super-timing/index.mjs", "calculators/au-payday-super-timing/index.test.mjs", "calculators/au-payday-super-timing/README.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+[[annotations]]
+path = "calculators/au-payday-super-timing/rules.json"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "LicenseRef-OA-Guide-License-1.0"
+
+[[annotations]]
+path = ["calculators/au-lodgment-due-dates/index.mjs", "calculators/au-lodgment-due-dates/index.test.mjs", "calculators/au-lodgment-due-dates/README.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+[[annotations]]
+path = "calculators/au-lodgment-due-dates/rules.json"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "LicenseRef-OA-Guide-License-1.0"
+
+[[annotations]]
+path = ["calculators/au-division-296/index.mjs", "calculators/au-division-296/index.test.mjs", "calculators/au-division-296/README.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+[[annotations]]
+path = "calculators/au-division-296/rules.json"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "LicenseRef-OA-Guide-License-1.0"
+
+[[annotations]]
+path = ["calculators/au-fbt-car-taxable-value/index.mjs", "calculators/au-fbt-car-taxable-value/index.test.mjs", "calculators/au-fbt-car-taxable-value/README.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+[[annotations]]
+path = "calculators/au-fbt-car-taxable-value/rules.json"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "LicenseRef-OA-Guide-License-1.0"
+
+[[annotations]]
+path = ["calculators/au-base-rate-entity/index.mjs", "calculators/au-base-rate-entity/index.test.mjs", "calculators/au-base-rate-entity/README.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+[[annotations]]
+path = "calculators/au-base-rate-entity/rules.json"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "LicenseRef-OA-Guide-License-1.0"
+
+[[annotations]]
+path = ["calculators/au-division-293/index.mjs", "calculators/au-division-293/index.test.mjs", "calculators/au-division-293/README.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+[[annotations]]
+path = "calculators/au-division-293/rules.json"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "LicenseRef-OA-Guide-License-1.0"
+
+[[annotations]]
+path = "calculators/au-ato-benchmarks/index.mjs"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+[[annotations]]
+path = ["calculators/au-ato-benchmarks/index.test.mjs", "calculators/au-ato-benchmarks/README.md"]
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Ryan Duguid", "Australian Taxation Office for the Commonwealth of Australia"]
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+[[annotations]]
+path = "calculators/au-ato-benchmarks/rules.json"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "LicenseRef-OA-Guide-License-1.0"
+
+[[annotations]]
+path = "calculators/au-ato-benchmarks/benchmarks-2023-24.json"
+precedence = "override"
+SPDX-FileCopyrightText = "Australian Taxation Office for the Commonwealth of Australia"
+SPDX-License-Identifier = "CC-BY-2.5-AU"
+
+[[annotations]]
+path = "calculators/au-ato-benchmarks/ato-pages-2023-24.json"
+precedence = "override"
+SPDX-FileCopyrightText = "Australian Taxation Office for the Commonwealth of Australia"
+SPDX-License-Identifier = "LicenseRef-ATO-Copyright-Notice"
+
+[[annotations]]
+path = ["calculators/au-contribution-caps/index.mjs", "calculators/au-contribution-caps/index.test.mjs", "calculators/au-contribution-caps/README.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+[[annotations]]
+path = "calculators/au-contribution-caps/rules.json"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "LicenseRef-OA-Guide-License-1.0"
+
+[[annotations]]
+path = ["calculators/au-super-guarantee-charge/index.mjs", "calculators/au-super-guarantee-charge/index.test.mjs", "calculators/au-super-guarantee-charge/README.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+[[annotations]]
+path = "calculators/au-super-guarantee-charge/rules.json"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Ryan Duguid"
+SPDX-License-Identifier = "LicenseRef-OA-Guide-License-1.0"

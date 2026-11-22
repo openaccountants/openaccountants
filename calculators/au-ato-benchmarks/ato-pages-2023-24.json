@@ -1,0 +1,512 @@
+{
+  "attribution": "© Australian Taxation Office for the Commonwealth of Australia. Labour, rent, motor vehicle and other cost of sales ranges, page numbers, key ranges and guidance text taken from the ATO's industry benchmark and guidance pages (https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/small-business-benchmarks/benchmarks-a-z) under the ATO's copyright notice (QC17043, https://www.ato.gov.au/about-ato/using-our-website/copyright-notice), which lets anyone copy, adapt, modify, transmit and distribute them; arranged as JSON, with percentages as whole numbers, by Ryan Duguid for OpenAccountants.",
+  "benchmark_year": "2023-24",
+  "source": {
+    "ato_statement": "Performance benchmarks use information reported on tax returns for the 2023–24 financial year and are updated each year. This is the most current data.",
+    "industry_pages_last_updated": "2026-03-16",
+    "industry_index": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/small-business-benchmarks/benchmarks-a-z",
+    "read": "2026-11-18"
+  },
+  "ato_guidance": {
+    "key_range": "You should fall within the key benchmark range for your annual turnover. If you fall outside the range for your industry, your business may have room to improve.",
+    "cost_of_sales_key": "If you don't report cost of sales, or only report a small amount, use total expenses to turnover as your key benchmark range instead.",
+    "other_benchmarks": "Not all expenses are reported by every business. Only use this information as a guide if it applies to your business.",
+    "within": "If your business is reporting inside the benchmark range for your industry, you: don't need to do anything else; can still identify where adjustments can be made to costs and expenses and consider profit margins to improve your business performance; can consider if your record keeping or business operations need any improvement to increase profitability and performance.",
+    "above": "If your business is reporting above the benchmarks, it means your expenses are high relative to your sales. This may indicate that your: wastage is higher; goods taken for personal use have been counted as business stock; competitors may be able to source inputs at lower cost than you; rent or labour costs are high considering your volume of sales; mark-up is lower than your competitors; sales are not completely recorded; internal cash controls may need to be examined.",
+    "below": "If your business is reporting below the benchmarks, it means your expenses are low relative to sales. This may indicate that: your expenses are recorded under the wrong label; some of your expenses may not have been recorded; your mark-up is higher than your competitors; you are more efficient.",
+    "ato_use": "We never use the benchmarks in isolation when deciding to review a business or when looking at the business's records."
+  },
+  "industries": {
+    "Air conditioning, refrigeration and heating services": { "page": "QC43639", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [26, 45], "labour": null, "rent": [4, 8], "motor_vehicle": [7, 10]},
+        {"cost_of_sales": [34, 49], "labour": null, "rent": [3, 6], "motor_vehicle": [4, 6]},
+        {"cost_of_sales": [41, 53], "labour": null, "rent": [2, 3], "motor_vehicle": [2, 4]}
+    ] },
+    "Alarm systems installation - fire and security": { "page": "QC43654", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [20, 40], "labour": [23, 39], "rent": [6, 9], "motor_vehicle": [6, 10]},
+        {"cost_of_sales": [27, 41], "labour": [17, 31], "rent": [3, 6], "motor_vehicle": [5, 7]},
+        {"cost_of_sales": [31, 43], "labour": [22, 36], "rent": [2, 3], "motor_vehicle": [2, 4]}
+    ] },
+    "Architectural services": { "page": "QC43655", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": null, "rent": [5, 10], "motor_vehicle": [3, 5]},
+        {"cost_of_sales": null, "labour": null, "rent": [5, 8], "motor_vehicle": [2, 4]},
+        {"cost_of_sales": null, "labour": null, "rent": [4, 6], "motor_vehicle": [1, 2]}
+    ] },
+    "Automotive electrical services": { "page": "QC43658", "key": "cost_of_sales", "bands": [
+        {"labour": [19, 29], "rent": [7, 12], "motor_vehicle": [5, 8]},
+        {"labour": [16, 25], "rent": [5, 8], "motor_vehicle": [3, 5]},
+        {"labour": [20, 28], "rent": [3, 5], "motor_vehicle": [2, 3]}
+    ] },
+    "Bakeries and hot bread shops": { "page": "QC43659", "key": "cost_of_sales", "bands": [
+        {"labour": [14, 25], "rent": [10, 17], "motor_vehicle": [2, 4]},
+        {"labour": [15, 28], "rent": [8, 12], "motor_vehicle": [1, 2]},
+        {"labour": [25, 34], "rent": [5, 8], "motor_vehicle": [1, 1]}
+    ] },
+    "Barber and men's hairdressing": { "page": "QC43660", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [24, 40], "rent": [17, 24], "motor_vehicle": [3, 5]},
+        {"cost_of_sales": null, "labour": [32, 46], "rent": [11, 17], "motor_vehicle": [1, 3]}
+    ] },
+    "Beauty services": { "page": "QC43661", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [23, 35], "rent": [13, 21], "motor_vehicle": [3, 5]},
+        {"cost_of_sales": null, "labour": [25, 37], "rent": [12, 19], "motor_vehicle": [2, 2]},
+        {"cost_of_sales": null, "labour": [27, 39], "rent": [9, 16], "motor_vehicle": [1, 2]}
+    ] },
+    "Blocklaying services": { "page": "QC43662", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [7, 10]},
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [6, 9]},
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [2, 4]}
+    ] },
+    "Book retailing": { "page": "QC43663", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [14, 19], "motor_vehicle": [2, 5]},
+        {"labour": null, "rent": [9, 14], "motor_vehicle": [1, 2]},
+        {"labour": null, "rent": [6, 11], "motor_vehicle": [0, 1]}
+    ] },
+    "Bottle shops and liquor retailing": { "page": "QC43823", "key": "cost_of_sales", "bands": [
+        {"labour": [12, 18], "rent": [6, 11], "motor_vehicle": [2, 3]},
+        {"labour": [8, 13], "rent": [4, 7], "motor_vehicle": [1, 1]},
+        {"labour": [7, 10], "rent": [3, 4], "motor_vehicle": [0, 1]}
+    ] },
+    "Bricklaying services": { "page": "QC43822", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [23, 38], "rent": null, "motor_vehicle": [7, 11]},
+        {"cost_of_sales": null, "labour": [29, 43], "rent": null, "motor_vehicle": [5, 7]},
+        {"cost_of_sales": null, "labour": [35, 49], "rent": null, "motor_vehicle": [3, 4]}
+    ] },
+    "Cabinet makers": { "page": "QC43821", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [21, 40], "labour": [18, 30], "rent": [7, 11], "motor_vehicle": [5, 8]},
+        {"cost_of_sales": [34, 45], "labour": [16, 28], "rent": [5, 7], "motor_vehicle": [3, 4]},
+        {"cost_of_sales": [38, 48], "labour": [22, 32], "rent": [3, 5], "motor_vehicle": [1, 2]}
+    ] },
+    "Cake shops and patisseries": { "page": "QC43820", "key": "cost_of_sales", "bands": [
+        {"labour": [18, 27], "rent": [11, 17], "motor_vehicle": [3, 5]},
+        {"labour": [18, 26], "rent": [9, 15], "motor_vehicle": [1, 3]},
+        {"labour": [21, 28], "rent": [7, 11], "motor_vehicle": [1, 1]}
+    ] },
+    "Carpentry services": { "page": "QC43819", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [24, 39], "rent": null, "motor_vehicle": [8, 12]},
+        {"cost_of_sales": null, "labour": [21, 35], "rent": null, "motor_vehicle": [5, 8]},
+        {"cost_of_sales": null, "labour": [27, 43], "rent": null, "motor_vehicle": [2, 4]}
+    ] },
+    "Carpet laying services": { "page": "QC43818", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [26, 38], "rent": null, "motor_vehicle": [8, 11]},
+        {"cost_of_sales": null, "labour": [21, 34], "rent": null, "motor_vehicle": [6, 9]},
+        {"cost_of_sales": null, "labour": [26, 42], "rent": null, "motor_vehicle": [3, 5]}
+    ] },
+    "Catering services": { "page": "QC43816", "key": "cost_of_sales", "bands": [
+        {"labour": [19, 28], "rent": [6, 12], "motor_vehicle": [4, 7]},
+        {"labour": [16, 27], "rent": [6, 11], "motor_vehicle": [2, 5]},
+        {"labour": [23, 33], "rent": [4, 8], "motor_vehicle": [1, 2]}
+    ] },
+    "Cement rendering": { "page": "QC43813", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [20, 32], "rent": null, "motor_vehicle": [7, 11]},
+        {"cost_of_sales": null, "labour": [25, 38], "rent": null, "motor_vehicle": [5, 7]},
+        {"cost_of_sales": null, "labour": [32, 44], "rent": null, "motor_vehicle": [2, 4]}
+    ] },
+    "Chicken shops": { "page": "QC43812", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [13, 20], "motor_vehicle": [2, 3]},
+        {"labour": null, "rent": [10, 16], "motor_vehicle": [1, 2]},
+        {"labour": null, "rent": [7, 11], "motor_vehicle": [1, 1]}
+    ] },
+    "Child care services": { "page": "QC43811", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": null, "rent": [10, 16], "motor_vehicle": [4, 6]},
+        {"cost_of_sales": null, "labour": null, "rent": [7, 12], "motor_vehicle": [2, 4]},
+        {"cost_of_sales": null, "labour": null, "rent": [8, 12], "motor_vehicle": [0, 1]}
+    ] },
+    "Chiropractic and osteopathic services": { "page": "QC43810", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [23, 40], "rent": [13, 21], "motor_vehicle": [3, 5]},
+        {"cost_of_sales": null, "labour": [21, 38], "rent": [9, 14], "motor_vehicle": [2, 3]},
+        {"cost_of_sales": null, "labour": [26, 45], "rent": [6, 9], "motor_vehicle": [1, 2]}
+    ] },
+    "Cleaning services - building and other industrial": { "page": "QC43801", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [31, 48], "rent": null, "motor_vehicle": [7, 11]},
+        {"cost_of_sales": null, "labour": [29, 47], "rent": null, "motor_vehicle": [5, 9]},
+        {"cost_of_sales": null, "labour": [35, 56], "rent": null, "motor_vehicle": [3, 5]}
+    ] },
+    "Cleaning services - carpet, rug and furniture upholstery": { "page": "QC43800", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [9, 13]},
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [7, 10]},
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [5, 7]}
+    ] },
+    "Clothing retailing": { "page": "QC43799", "key": "cost_of_sales", "bands": [
+        {"labour": [14, 22], "rent": [11, 19], "motor_vehicle": [2, 4]},
+        {"labour": [11, 19], "rent": [8, 14], "motor_vehicle": [1, 2]},
+        {"labour": [12, 18], "rent": [5, 10], "motor_vehicle": [1, 1]}
+    ] },
+    "Coffee shops": { "page": "QC43798", "key": "cost_of_sales", "bands": [
+        {"labour": [21, 32], "rent": [10, 17], "motor_vehicle": [2, 4]},
+        {"labour": [21, 32], "rent": [8, 14], "motor_vehicle": [1, 2]},
+        {"labour": [27, 35], "rent": [6, 10], "motor_vehicle": [1, 1]}
+    ] },
+    "Computer retailing": { "page": "QC43797", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [7, 14], "motor_vehicle": [4, 6]},
+        {"labour": null, "rent": [6, 9], "motor_vehicle": [2, 3]},
+        {"labour": null, "rent": [2, 4], "motor_vehicle": [1, 2]}
+    ] },
+    "Concreting services": { "page": "QC43796", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [7, 12]},
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [5, 8]},
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [3, 5]}
+    ] },
+    "Confectionery retailing": { "page": "QC43795", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [11, 15], "motor_vehicle": [3, 5]},
+        {"labour": null, "rent": [6, 13], "motor_vehicle": [1, 2]}
+    ] },
+    "Courier services": { "page": "QC43794", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [15, 23]},
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [14, 21]},
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [7, 17]}
+    ] },
+    "Craft shops": { "page": "QC43793", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [13, 20], "motor_vehicle": [3, 5]},
+        {"labour": null, "rent": [6, 12], "motor_vehicle": [1, 3]}
+    ] },
+    "Delicatessen": { "page": "QC43792", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [9, 18], "motor_vehicle": [3, 4]},
+        {"labour": null, "rent": [9, 14], "motor_vehicle": [1, 2]},
+        {"labour": null, "rent": [5, 9], "motor_vehicle": [1, 1]}
+    ] },
+    "Delivery services": { "page": "QC43791", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [14, 21]},
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [14, 21]},
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [9, 20]}
+    ] },
+    "Dental specialists": { "page": "QC43790", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": null, "rent": [8, 12], "motor_vehicle": [2, 4]},
+        {"cost_of_sales": null, "labour": null, "rent": [8, 12], "motor_vehicle": [1, 2]},
+        {"cost_of_sales": null, "labour": null, "rent": [4, 7], "motor_vehicle": [0, 1]}
+    ] },
+    "Dental surgeons - general": { "page": "QC43789", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [25, 41], "rent": [9, 15], "motor_vehicle": [1, 3]},
+        {"cost_of_sales": null, "labour": [24, 37], "rent": [7, 10], "motor_vehicle": [1, 1]},
+        {"cost_of_sales": null, "labour": [23, 37], "rent": [4, 7], "motor_vehicle": [0, 1]}
+    ] },
+    "Discount and variety stores": { "page": "QC43788", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [20, 30], "motor_vehicle": [2, 3]},
+        {"labour": null, "rent": [19, 25], "motor_vehicle": [1, 2]},
+        {"labour": null, "rent": [12, 21], "motor_vehicle": [1, 1]}
+    ] },
+    "Domestic appliance repair and maintenance": { "page": "QC43787", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [20, 35], "labour": null, "rent": [6, 12], "motor_vehicle": [7, 11]},
+        {"cost_of_sales": [29, 42], "labour": null, "rent": [4, 8], "motor_vehicle": [5, 7]},
+        {"cost_of_sales": [36, 48], "labour": null, "rent": [2, 4], "motor_vehicle": [3, 4]}
+    ] },
+    "Driving schools and instructors": { "page": "QC43786", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [16, 22]},
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [12, 18]},
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [6, 14]}
+    ] },
+    "Electrical and electronic product retailing": { "page": "QC43785", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [5, 10], "motor_vehicle": [3, 5]},
+        {"labour": null, "rent": [3, 6], "motor_vehicle": [1, 2]},
+        {"labour": null, "rent": [2, 4], "motor_vehicle": [1, 1]}
+    ] },
+    "Electrical services": { "page": "QC43784", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [22, 34], "labour": [21, 35], "rent": null, "motor_vehicle": [6, 10]},
+        {"cost_of_sales": [26, 36], "labour": [17, 30], "rent": null, "motor_vehicle": [4, 7]},
+        {"cost_of_sales": [30, 41], "labour": [23, 34], "rent": null, "motor_vehicle": [3, 4]}
+    ] },
+    "Entertainment media retailing": { "page": "QC43783", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [9, 13], "motor_vehicle": [3, 5]},
+        {"labour": null, "rent": [4, 8], "motor_vehicle": [1, 1]}
+    ] },
+    "Fence construction": { "page": "QC43782", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [27, 45], "labour": [16, 25], "rent": null, "motor_vehicle": [6, 9]},
+        {"cost_of_sales": [33, 47], "labour": [14, 23], "rent": null, "motor_vehicle": [4, 7]},
+        {"cost_of_sales": [38, 49], "labour": [16, 26], "rent": null, "motor_vehicle": [3, 5]}
+    ] },
+    "Fish and chips shops": { "page": "QC43781", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [12, 17], "motor_vehicle": [2, 3]},
+        {"labour": null, "rent": [9, 13], "motor_vehicle": [1, 2]},
+        {"labour": null, "rent": [5, 9], "motor_vehicle": [1, 1]}
+    ] },
+    "Fish and seafood retailing - fresh": { "page": "QC43780", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [6, 10], "motor_vehicle": [3, 5]},
+        {"labour": null, "rent": [6, 9], "motor_vehicle": [1, 2]},
+        {"labour": null, "rent": [4, 7], "motor_vehicle": [1, 1]}
+    ] },
+    "Floor covering retailing": { "page": "QC43779", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [6, 11], "motor_vehicle": [3, 6]},
+        {"labour": null, "rent": [5, 7], "motor_vehicle": [1, 2]},
+        {"labour": null, "rent": [3, 5], "motor_vehicle": [1, 1]}
+    ] },
+    "Florists": { "page": "QC43778", "key": "cost_of_sales", "bands": [
+        {"labour": [13, 23], "rent": [8, 14], "motor_vehicle": [3, 5]},
+        {"labour": [14, 22], "rent": [7, 11], "motor_vehicle": [2, 3]},
+        {"labour": [16, 23], "rent": [4, 8], "motor_vehicle": [1, 2]}
+    ] },
+    "Footwear retailing": { "page": "QC43777", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [11, 19], "motor_vehicle": [3, 5]},
+        {"labour": null, "rent": [8, 14], "motor_vehicle": [2, 3]},
+        {"labour": null, "rent": [6, 10], "motor_vehicle": [0, 1]}
+    ] },
+    "Fruit and vegetable retailing": { "page": "QC43776", "key": "cost_of_sales", "bands": [
+        {"labour": [11, 18], "rent": [6, 11], "motor_vehicle": [3, 5]},
+        {"labour": [8, 13], "rent": [5, 9], "motor_vehicle": [2, 3]},
+        {"labour": [8, 13], "rent": [4, 6], "motor_vehicle": [1, 1]}
+    ] },
+    "Fuel retailing": { "page": "QC43775", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": null, "motor_vehicle": [1, 3]},
+        {"labour": null, "rent": null, "motor_vehicle": [0, 1]},
+        {"labour": null, "rent": null, "motor_vehicle": [0, 0]}
+    ] },
+    "Furniture removalists": { "page": "QC43774", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [12, 20]},
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [9, 16]},
+        {"cost_of_sales": null, "labour": null, "rent": null, "motor_vehicle": [6, 12]}
+    ] },
+    "Furniture retailing": { "page": "QC43773", "key": "cost_of_sales", "bands": [
+        {"labour": [12, 20], "rent": [11, 19], "motor_vehicle": [3, 5]},
+        {"labour": [10, 17], "rent": [8, 14], "motor_vehicle": [1, 2]},
+        {"labour": [10, 14], "rent": [7, 11], "motor_vehicle": [1, 1]}
+    ] },
+    "Garden supplies retailing": { "page": "QC43772", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [8, 14], "motor_vehicle": [4, 7]},
+        {"labour": null, "rent": [5, 9], "motor_vehicle": [2, 4]},
+        {"labour": null, "rent": [3, 6], "motor_vehicle": [2, 4]}
+    ] },
+    "Gift stores": { "page": "QC43771", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [13, 23], "motor_vehicle": [3, 5]},
+        {"labour": null, "rent": [10, 18], "motor_vehicle": [2, 3]},
+        {"labour": null, "rent": [7, 15], "motor_vehicle": [1, 1]}
+    ] },
+    "Glazing services": { "page": "QC43769", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [19, 36], "labour": null, "rent": [4, 8], "motor_vehicle": [7, 10]},
+        {"cost_of_sales": [28, 44], "labour": null, "rent": [4, 7], "motor_vehicle": [4, 6]},
+        {"cost_of_sales": [36, 47], "labour": null, "rent": [3, 4], "motor_vehicle": [2, 4]}
+    ] },
+    "Grocery retailing and convenience stores": { "page": "QC43768", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [10, 15], "motor_vehicle": [2, 3]},
+        {"labour": null, "rent": [7, 11], "motor_vehicle": [1, 2]},
+        {"labour": null, "rent": [3, 6], "motor_vehicle": [0, 1]}
+    ] },
+    "Hairdressers": { "page": "QC43767", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [12, 18], "labour": [23, 36], "rent": [14, 21], "motor_vehicle": [3, 5]},
+        {"cost_of_sales": [11, 16], "labour": [25, 37], "rent": [11, 17], "motor_vehicle": [2, 3]},
+        {"cost_of_sales": [12, 16], "labour": [32, 44], "rent": [8, 13], "motor_vehicle": [1, 2]}
+    ] },
+    "Health and fitness centres": { "page": "QC43765", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [21, 36], "rent": [14, 23], "motor_vehicle": [4, 6]},
+        {"cost_of_sales": null, "labour": [22, 35], "rent": [15, 23], "motor_vehicle": [2, 3]},
+        {"cost_of_sales": null, "labour": [19, 33], "rent": [13, 19], "motor_vehicle": [1, 1]}
+    ] },
+    "Health food retailing": { "page": "QC43763", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [7, 13], "motor_vehicle": [2, 4]},
+        {"labour": null, "rent": [6, 10], "motor_vehicle": [1, 2]},
+        {"labour": null, "rent": [5, 9], "motor_vehicle": [0, 1]}
+    ] },
+    "Homewares retailing": { "page": "QC43762", "key": "cost_of_sales", "bands": [
+        {"labour": [15, 20], "rent": [11, 20], "motor_vehicle": [3, 5]},
+        {"labour": [11, 19], "rent": [9, 18], "motor_vehicle": [1, 2]},
+        {"labour": [12, 18], "rent": [5, 12], "motor_vehicle": [1, 1]}
+    ] },
+    "Ice cream retailing": { "page": "QC43760", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [10, 18], "motor_vehicle": [5, 9]},
+        {"labour": null, "rent": [12, 15], "motor_vehicle": [2, 3]},
+        {"labour": null, "rent": [8, 13], "motor_vehicle": [1, 2]}
+    ] },
+    "Kebab shops": { "page": "QC43759", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [14, 19], "motor_vehicle": [3, 5]},
+        {"labour": null, "rent": [12, 18], "motor_vehicle": [2, 3]},
+        {"labour": null, "rent": [8, 14], "motor_vehicle": [1, 2]}
+    ] },
+    "Landscape construction": { "page": "QC43758", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [15, 30], "labour": [18, 29], "rent": null, "motor_vehicle": [7, 11]},
+        {"cost_of_sales": [24, 36], "labour": [17, 28], "rent": null, "motor_vehicle": [4, 7]},
+        {"cost_of_sales": [27, 38], "labour": [24, 34], "rent": null, "motor_vehicle": [3, 5]}
+    ] },
+    "Laundry and dry-cleaning services": { "page": "QC43757", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": null, "rent": [21, 33], "motor_vehicle": [4, 7]},
+        {"cost_of_sales": null, "labour": null, "rent": [14, 22], "motor_vehicle": [3, 5]},
+        {"cost_of_sales": null, "labour": null, "rent": [7, 13], "motor_vehicle": [2, 3]}
+    ] },
+    "Lawn mower retailing": { "page": "QC43756", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": null, "motor_vehicle": [2, 3]},
+        {"labour": null, "rent": null, "motor_vehicle": [1, 2]},
+        {"labour": null, "rent": null, "motor_vehicle": [1, 1]}
+    ] },
+    "Lawn mowing and garden services": { "page": "QC43747", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [25, 37], "rent": null, "motor_vehicle": [9, 14]},
+        {"cost_of_sales": null, "labour": [20, 32], "rent": null, "motor_vehicle": [7, 11]},
+        {"cost_of_sales": null, "labour": [24, 37], "rent": null, "motor_vehicle": [5, 8]}
+    ] },
+    "Machinery and equipment repairs and maintenance": { "page": "QC43746", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [17, 35], "labour": [22, 38], "rent": [6, 11], "motor_vehicle": [6, 10]},
+        {"cost_of_sales": [19, 39], "labour": [19, 36], "rent": [4, 8], "motor_vehicle": [4, 7]},
+        {"cost_of_sales": [31, 49], "labour": [19, 34], "rent": [2, 4], "motor_vehicle": [2, 4]}
+    ] },
+    "Manchester and other textile goods retailing": { "page": "QC43744", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [10, 17], "motor_vehicle": [4, 6]},
+        {"labour": null, "rent": [8, 14], "motor_vehicle": [2, 3]},
+        {"labour": null, "rent": [4, 8], "motor_vehicle": [1, 2]}
+    ] },
+    "Meat and poultry retailing - fresh": { "page": "QC43741", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [5, 9], "motor_vehicle": [2, 4]},
+        {"labour": null, "rent": [4, 8], "motor_vehicle": [1, 2]},
+        {"labour": null, "rent": [3, 6], "motor_vehicle": [1, 1]}
+    ] },
+    "Motor vehicle parts and batteries retailing": { "page": "QC43737", "key": "cost_of_sales", "bands": [
+        {"labour": [14, 24], "rent": [7, 12], "motor_vehicle": [3, 6]},
+        {"labour": [11, 18], "rent": [5, 7], "motor_vehicle": [2, 3]},
+        {"labour": [11, 16], "rent": [3, 5], "motor_vehicle": [1, 2]}
+    ] },
+    "Motor vehicle retail - new and used car": { "page": "QC43734", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [6, 11], "motor_vehicle": [2, 5]},
+        {"labour": null, "rent": [4, 7], "motor_vehicle": [1, 3]},
+        {"labour": null, "rent": [2, 3], "motor_vehicle": [0, 1]}
+    ] },
+    "Musical instruments retail": { "page": "QC43731", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [10, 13], "motor_vehicle": [3, 5]},
+        {"labour": null, "rent": [6, 9], "motor_vehicle": [1, 3]},
+        {"labour": null, "rent": [4, 7], "motor_vehicle": [0, 1]}
+    ] },
+    "Newsagents": { "page": "QC43706", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [9, 16], "motor_vehicle": [2, 3]},
+        {"labour": null, "rent": [7, 14], "motor_vehicle": [1, 2]},
+        {"labour": null, "rent": [4, 9], "motor_vehicle": [0, 1]}
+    ] },
+    "Painting services": { "page": "QC43705", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [13, 19], "labour": [22, 35], "rent": null, "motor_vehicle": [7, 11]},
+        {"cost_of_sales": [14, 21], "labour": [26, 40], "rent": null, "motor_vehicle": [4, 6]},
+        {"cost_of_sales": [14, 21], "labour": [36, 49], "rent": null, "motor_vehicle": [2, 4]}
+    ] },
+    "Panel beating and smash repairs": { "page": "QC43704", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [17, 31], "labour": [21, 33], "rent": [12, 19], "motor_vehicle": [5, 8]},
+        {"cost_of_sales": [19, 35], "labour": [18, 29], "rent": [9, 15], "motor_vehicle": [4, 6]},
+        {"cost_of_sales": [34, 45], "labour": [20, 29], "rent": [4, 7], "motor_vehicle": [1, 3]}
+    ] },
+    "Pest control services": { "page": "QC43703", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [28, 40], "rent": null, "motor_vehicle": [9, 13]},
+        {"cost_of_sales": null, "labour": [20, 38], "rent": null, "motor_vehicle": [6, 9]},
+        {"cost_of_sales": null, "labour": [25, 38], "rent": null, "motor_vehicle": [5, 7]}
+    ] },
+    "Pets and pet supply retailing": { "page": "QC43702", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [10, 18], "motor_vehicle": [4, 7]},
+        {"labour": null, "rent": [7, 13], "motor_vehicle": [1, 3]},
+        {"labour": null, "rent": [4, 7], "motor_vehicle": [1, 1]}
+    ] },
+    "Pharmacy": { "page": "QC43701", "key": "cost_of_sales", "bands": [
+        {"labour": [10, 15], "rent": [3, 5], "motor_vehicle": [0, 1]},
+        {"labour": [10, 14], "rent": [3, 4], "motor_vehicle": [0, 0]},
+        {"labour": [10, 13], "rent": [2, 4], "motor_vehicle": [0, 0]}
+    ] },
+    "Physiotherapy services": { "page": "QC43698", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [24, 44], "rent": [10, 16], "motor_vehicle": [3, 5]},
+        {"cost_of_sales": null, "labour": [29, 45], "rent": [9, 13], "motor_vehicle": [2, 3]},
+        {"cost_of_sales": null, "labour": [41, 52], "rent": [6, 9], "motor_vehicle": [1, 1]}
+    ] },
+    "Picture framing retailing": { "page": "QC43696", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [15, 22], "motor_vehicle": [3, 5]},
+        {"labour": null, "rent": [12, 18], "motor_vehicle": [3, 4]},
+        {"labour": null, "rent": [10, 14], "motor_vehicle": [1, 3]}
+    ] },
+    "Pizza shops - takeaway": { "page": "QC43694", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [7, 15], "motor_vehicle": [3, 5]},
+        {"labour": null, "rent": [7, 12], "motor_vehicle": [2, 3]},
+        {"labour": null, "rent": [4, 7], "motor_vehicle": [1, 2]}
+    ] },
+    "Plastering and ceiling services": { "page": "QC43693", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [12, 22], "labour": [24, 40], "rent": null, "motor_vehicle": [7, 10]},
+        {"cost_of_sales": [19, 29], "labour": [30, 45], "rent": null, "motor_vehicle": [3, 5]},
+        {"cost_of_sales": [24, 33], "labour": [34, 50], "rent": null, "motor_vehicle": [1, 2]}
+    ] },
+    "Plumbing services": { "page": "QC43692", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [20, 33], "labour": [21, 34], "rent": null, "motor_vehicle": [7, 11]},
+        {"cost_of_sales": [26, 35], "labour": [16, 27], "rent": null, "motor_vehicle": [5, 7]},
+        {"cost_of_sales": [29, 38], "labour": [23, 33], "rent": null, "motor_vehicle": [3, 5]}
+    ] },
+    "Printing": { "page": "QC43690", "key": "cost_of_sales", "bands": [
+        {"labour": [22, 34], "rent": [8, 14], "motor_vehicle": [4, 6]},
+        {"labour": [18, 29], "rent": [7, 11], "motor_vehicle": [2, 4]},
+        {"labour": [19, 28], "rent": [4, 6], "motor_vehicle": [1, 2]}
+    ] },
+    "Printing support services": { "page": "QC43688", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [26, 44], "labour": [19, 30], "rent": [7, 13], "motor_vehicle": [4, 6]},
+        {"cost_of_sales": [30, 44], "labour": [16, 27], "rent": [6, 9], "motor_vehicle": [2, 3]},
+        {"cost_of_sales": [35, 51], "labour": [18, 28], "rent": [4, 6], "motor_vehicle": [1, 2]}
+    ] },
+    "Pubs, taverns and bars": { "page": "QC43685", "key": "cost_of_sales", "bands": [
+        {"labour": [18, 28], "rent": [9, 14], "motor_vehicle": [1, 2]},
+        {"labour": [23, 32], "rent": [6, 10], "motor_vehicle": [0, 1]},
+        {"labour": [20, 27], "rent": [6, 9], "motor_vehicle": [0, 0]}
+    ] },
+    "Restaurants": { "page": "QC43683", "key": "cost_of_sales", "bands": [
+        {"labour": [18, 30], "rent": [11, 17], "motor_vehicle": [1, 3]},
+        {"labour": [23, 32], "rent": [8, 12], "motor_vehicle": [1, 1]},
+        {"labour": [27, 34], "rent": [6, 9], "motor_vehicle": [0, 1]}
+    ] },
+    "Road freight transport services": { "page": "QC43681", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [25, 37], "rent": null, "motor_vehicle": [14, 25]},
+        {"cost_of_sales": null, "labour": [18, 31], "rent": null, "motor_vehicle": [12, 28]},
+        {"cost_of_sales": null, "labour": [21, 32], "rent": null, "motor_vehicle": [5, 26]}
+    ] },
+    "Roofing services, including roof tiling, guttering and metal roofing": { "page": "QC43680", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [20, 33], "rent": null, "motor_vehicle": [6, 10]},
+        {"cost_of_sales": null, "labour": [22, 35], "rent": null, "motor_vehicle": [4, 6]},
+        {"cost_of_sales": null, "labour": [23, 33], "rent": null, "motor_vehicle": [2, 3]}
+    ] },
+    "Sports and physical recreation instruction": { "page": "QC43677", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": null, "rent": [11, 20], "motor_vehicle": [5, 8]},
+        {"cost_of_sales": null, "labour": null, "rent": [9, 18], "motor_vehicle": [2, 4]},
+        {"cost_of_sales": null, "labour": null, "rent": [7, 13], "motor_vehicle": [1, 2]}
+    ] },
+    "Sports, camping and fishing retailing": { "page": "QC43679", "key": "cost_of_sales", "bands": [
+        {"labour": [14, 22], "rent": [7, 14], "motor_vehicle": [3, 6]},
+        {"labour": [11, 19], "rent": [6, 10], "motor_vehicle": [2, 3]},
+        {"labour": [10, 16], "rent": [4, 6], "motor_vehicle": [1, 1]}
+    ] },
+    "Stationery goods retailing": { "page": "QC43676", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [8, 13], "motor_vehicle": [3, 4]},
+        {"labour": null, "rent": [6, 11], "motor_vehicle": [1, 3]},
+        {"labour": null, "rent": [3, 6], "motor_vehicle": [1, 2]}
+    ] },
+    "Takeaway food services": { "page": "QC43675", "key": "cost_of_sales", "bands": [
+        {"labour": [16, 26], "rent": [10, 17], "motor_vehicle": [3, 6]},
+        {"labour": [15, 24], "rent": [10, 15], "motor_vehicle": [1, 3]},
+        {"labour": [19, 27], "rent": [7, 12], "motor_vehicle": [1, 1]}
+    ] },
+    "Tiling services - floor and wall": { "page": "QC43673", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [12, 19], "labour": null, "rent": null, "motor_vehicle": [7, 11]},
+        {"cost_of_sales": [14, 21], "labour": null, "rent": null, "motor_vehicle": [5, 7]},
+        {"cost_of_sales": [15, 25], "labour": null, "rent": null, "motor_vehicle": [2, 3]}
+    ] },
+    "Timber floor sanding": { "page": "QC43672", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [17, 26], "labour": null, "rent": null, "motor_vehicle": [7, 12]},
+        {"cost_of_sales": [19, 27], "labour": null, "rent": null, "motor_vehicle": [6, 9]},
+        {"cost_of_sales": [20, 28], "labour": null, "rent": null, "motor_vehicle": [4, 6]}
+    ] },
+    "Tobacco retailing": { "page": "QC43671", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [6, 8], "motor_vehicle": [1, 2]},
+        {"labour": null, "rent": [4, 6], "motor_vehicle": [0, 1]},
+        {"labour": null, "rent": [2, 3], "motor_vehicle": [0, 0]}
+    ] },
+    "Towing services": { "page": "QC43670", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [21, 35], "rent": [6, 11], "motor_vehicle": [19, 30]},
+        {"cost_of_sales": null, "labour": [16, 28], "rent": [4, 8], "motor_vehicle": [13, 24]},
+        {"cost_of_sales": null, "labour": [21, 32], "rent": [3, 6], "motor_vehicle": [10, 20]}
+    ] },
+    "Toy and game retailing": { "page": "QC43669", "key": "cost_of_sales", "bands": [
+        {"labour": null, "rent": [9, 16], "motor_vehicle": [3, 5]},
+        {"labour": null, "rent": [8, 13], "motor_vehicle": [2, 3]},
+        {"labour": null, "rent": [5, 8], "motor_vehicle": [1, 1]}
+    ] },
+    "Tutoring and coaching": { "page": "QC43668", "key": "total_expenses", "bands": [
+        {"cost_of_sales": null, "labour": [26, 43], "rent": [8, 16], "motor_vehicle": [3, 6]},
+        {"cost_of_sales": null, "labour": [25, 41], "rent": [6, 11], "motor_vehicle": [1, 2]},
+        {"cost_of_sales": null, "labour": [25, 43], "rent": [3, 9], "motor_vehicle": [0, 1]}
+    ] },
+    "Tyre retailing": { "page": "QC43667", "key": "cost_of_sales", "bands": [
+        {"labour": [11, 17], "rent": [5, 7], "motor_vehicle": [2, 3]},
+        {"labour": [12, 16], "rent": [3, 5], "motor_vehicle": [1, 2]},
+        {"labour": [12, 16], "rent": [3, 4], "motor_vehicle": [1, 1]}
+    ] },
+    "Veterinary services": { "page": "QC43666", "key": "total_expenses", "bands": [
+        {"cost_of_sales": [18, 28], "labour": null, "rent": [6, 11], "motor_vehicle": [4, 7]},
+        {"cost_of_sales": [20, 27], "labour": null, "rent": [5, 8], "motor_vehicle": [2, 4]},
+        {"cost_of_sales": [21, 25], "labour": null, "rent": [3, 5], "motor_vehicle": [1, 1]}
+    ] },
+    "Watch and jewellery retailing": { "page": "QC43664", "key": "cost_of_sales", "bands": [
+        {"labour": [15, 26], "rent": [9, 19], "motor_vehicle": [3, 5]},
+        {"labour": [13, 21], "rent": [7, 14], "motor_vehicle": [1, 2]},
+        {"labour": [12, 20], "rent": [5, 10], "motor_vehicle": [0, 1]}
+    ] }
+  }
+}

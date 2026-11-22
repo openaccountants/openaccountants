@@ -1,0 +1,104 @@
+{
+  "as_of": "2026-11-18",
+  "jurisdiction": "AU",
+  "basis": "Lodgment and payment due dates of monthly and quarterly activity statements under the ATO's 2026-27 lodgment program, for calendar-month and standard-quarter periods, moved to the next business day as the ATO's 2026-27 weekend and public holiday tables apply that rule.",
+  "program_year": "2026-27",
+  "coverage": {
+    "due_from": "2026-07-01",
+    "due_until": "2027-06-30",
+    "note": "The ATO's tables of public holidays for the 2026-27 program list weekdays from 3 August 2026 to 14 June 2027 and nothing after June 2027, so a statement whose due date, before or after moving, lies outside 1 July 2026 to 30 June 2027 is refused. That leaves out the June 2027 monthly and quarter 4 2026-27 statements, and the agent date for quarter 4 2026-27, which the ATO marks 'to be confirmed when the BAS agent lodgment program 2027-28 is developed'."
+  },
+  "monthly": {
+    "due_day": 21,
+    "basis": "21st day of the month after the month: GST Act s 31-10(1)(a) for a GST return of a tax period other than a quarter; TAA 1953 Sch 1 s 16-75(2) for a medium withholder; ATO, Due dates for lodging and paying your BAS.",
+    "december_agent": {
+      "month": 2,
+      "day": 21,
+      "basis": "ATO registered agent and BAS agent lodgment programs 2026-27: the December monthly business activity statement of a business client with up to $10 million annual turnover that reports GST monthly and lodges electronically through a registered agent is due on 21 February; not for a business registered for deferred GST."
+    }
+  },
+  "quarterly": {
+    "original": {
+      "03": { "month": 4, "day": 28 },
+      "06": { "month": 7, "day": 28 },
+      "09": { "month": 10, "day": 28 },
+      "12": { "month": 2, "day": 28 }
+    },
+    "basis": "GST Act s 31-8(1) table: a quarter containing 1 September, 1 December, 1 March or 1 June is due the following 28 October, 28 February, 28 April or 28 July; ATO, Due dates for lodging and paying your BAS.",
+    "online_concession": {
+      "days": 14,
+      "basis": "ATO, Two week lodgment concession: terms and conditions (last updated 18 August 2025): 2 weeks after the original due date for quarterly activity statements received and lodged online for the standard quarters ending 30 September, 31 March and 30 June; not quarter 2, which already has 8 weeks. The ATO's activity statements due dates page gives 11 November, 12 May and 11 August."
+    },
+    "agent_program": {
+      "2026-06": "2026-08-25",
+      "2026-09": "2026-11-25",
+      "2027-03": "2027-05-26",
+      "basis": "ATO, BAS agent lodgment program 2026-27 and registered agent lodgment program, activity statements (both last updated 1 July 2026): eligible quarterly activity statements lodged electronically through Online services for agents or the Practitioner lodgment service. Quarter 2 is 'Not applicable' and keeps 28 February. Quarter 4 2026-27 (25 August 2027) is 'to be confirmed' and is not listed."
+    }
+  },
+  "head_company_payg_instalment": {
+    "due_day": 21,
+    "basis": "TAA 1953 Sch 1 s 45-715(1): a consolidated group's head company pays a quarterly instalment on or before the 21st day of the month after the quarter, whether or not it is a deferred BAS payer; the ATO's activity statements pages give 21 October, 21 January, 21 April and 21 July, with no online or agent concession."
+  },
+  "business_day": "TAA 1953 s 8AAZMB(1) moves a tax debt payable on a day that is not a business day to the first business day after it, and Sch 1 s 388-52 lets an approved form due on such a day be given on the first business day after it. A business day is any day other than a Saturday, a Sunday or a public holiday for the whole of any State, the ACT or the NT (s 8AAZMB(2); ITAA 1997 s 995-1).",
+  "holidays": {
+    "checked": "2026-11-18",
+    "source": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/lodgment-and-payment-dates-on-weekends-or-public-holidays",
+    "ato_page_updated": "2026-07-01",
+    "note": "Tables 1 and 2 of the ATO page, which says 'A public holiday is defined as a day that is a public holiday for the whole of any state or territory in Australia' and that its tables may change during the year. They include Melbourne Cup and the Christmas Eve and New Year's Eve evening holidays, which the ATO applies although they are not holidays for a whole State or the whole day; following them gives the ATO's later date. The Payday Super calculator's calendar, read from the 8 jurisdictions' pages on 18 November 2026, has no whole-state weekday holiday from 1 July to 2 August 2026 or from 15 to 30 June 2027, which the tables also leave empty.",
+    "excluded": [
+      {
+        "date": "2026-09-28",
+        "name": "King's Birthday (WA)",
+        "ato_first_business_day": "2026-09-29",
+        "reason": "The ATO's tables contradict themselves: they give 28 September as the first business day after 25 September and also list 28 September as a holiday. The City of Karratha and Town of Port Hedland held the 2026 King's Birthday on 3 August 2026, and 'The date on which the public holiday is observed in the rest of WA is not a public holiday in these regions' (WA Government, Public holidays in Western Australia, last updated 5 November 2026), so 28 September was not a public holiday for the whole of WA. Leaving it out keeps 25 September on the ATO's 28 September; a due date on 28 September would stand, a day before the ATO's 29 September. No covered statement is due on either day."
+      }
+    ],
+    "weekday_holidays": [
+      { "date": "2026-08-03", "name": "Picnic Day (NT)", "ato_first_business_day": "2026-08-04" },
+      { "date": "2026-09-25", "name": "Friday before AFL Grand Final (VIC)", "ato_first_business_day": "2026-09-28" },
+      { "date": "2026-10-05", "name": "Labour Day (ACT, NSW, SA); King's Birthday (QLD)", "ato_first_business_day": "2026-10-06" },
+      { "date": "2026-11-03", "name": "Melbourne Cup (VIC)", "ato_first_business_day": "2026-11-04" },
+      { "date": "2026-12-24", "name": "Christmas Eve (QLD, NT, SA)", "ato_first_business_day": "2026-12-29" },
+      { "date": "2026-12-25", "name": "Christmas Day", "ato_first_business_day": "2026-12-29" },
+      { "date": "2026-12-28", "name": "Additional public holiday for Boxing Day (ACT, NSW, NT, QLD, TAS, VIC, WA); Additional public holiday for Proclamation Day (SA)", "ato_first_business_day": "2026-12-29" },
+      { "date": "2026-12-31", "name": "New Year's Eve (NT, SA)", "ato_first_business_day": "2027-01-04" },
+      { "date": "2027-01-01", "name": "New Year's Day", "ato_first_business_day": "2027-01-04" },
+      { "date": "2027-01-26", "name": "Australia Day", "ato_first_business_day": "2027-01-27" },
+      { "date": "2027-03-01", "name": "Labour Day (WA)", "ato_first_business_day": "2027-03-02" },
+      { "date": "2027-03-08", "name": "Eight Hours Day (TAS); Labour Day (VIC); Adelaide Cup Day (SA); Canberra Day (ACT)", "ato_first_business_day": "2027-03-09" },
+      { "date": "2027-03-26", "name": "Good Friday", "ato_first_business_day": "2027-03-30" },
+      { "date": "2027-03-29", "name": "Easter Monday", "ato_first_business_day": "2027-03-30" },
+      { "date": "2027-04-26", "name": "Additional public holiday for ANZAC Day (ACT, NSW, NT, QLD, WA)", "ato_first_business_day": "2027-04-27" },
+      { "date": "2027-05-03", "name": "May Day (NT); Labour Day (QLD)", "ato_first_business_day": "2027-05-04" },
+      { "date": "2027-05-31", "name": "Reconciliation Day (ACT)", "ato_first_business_day": "2027-06-01" },
+      { "date": "2027-06-07", "name": "Western Australia Day", "ato_first_business_day": "2027-06-08" },
+      { "date": "2027-06-14", "name": "King's Birthday (excluding WA and QLD)", "ato_first_business_day": "2027-06-15" }
+    ]
+  },
+  "sources": [
+    "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas",
+    "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/reports-and-returns/due-dates-for-lodging-and-paying/due-dates-by-topic/activity-statements",
+    "https://www.ato.gov.au/online-services/businesses-and-organisations-online-services/lodgments-in-online-services-for-business/two-week-lodgment-concession-terms-and-conditions",
+    "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/bas-agent-lodgment-program-2026-27",
+    "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-by-obligation-type/activity-statements",
+    "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/lodgment-and-payment-dates-on-weekends-or-public-holidays",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19530001/8AAZMB",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19530001/Sch1-16-75",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19530001/Sch1-388-52",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19530001/Sch1-45-61",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19530001/Sch1-45-715",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19990055/31-8",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19990055/31-10",
+    "https://www.wa.gov.au/service/employment/workplace-arrangements/public-holidays-western-australia"
+  ],
+  "limits": [
+    "Preparation aid requiring professional review. The due date shown on the activity statement, or the ATO's record for the client, governs.",
+    "A concession is caller-attested: eligibility for the 2-week online concession or the agent program, including electronic lodgment of the previous statement, is not verified. An omitted concession can only make the result earlier.",
+    "A first activity statement, or one after a paper lodgment, may be due earlier than the agent program date.",
+    "A large withholder pays withheld amounts earlier than the 21st (TAA 1953 Sch 1 s 16-75(1)); a deferred BAS payer's later dates (ss 16-75(2A) and 45-61(2)) are not applied.",
+    "Annual GST returns, instalment notices (forms N, R, S and T), deferred GST amounts on imports (a deferred GST registration is used only to withhold the December 21 February date), substituted accounting periods, tax periods that are not calendar months or standard quarters, and income tax, FBT and other returns are outside scope.",
+    "Deferrals the Commissioner grants (TAA 1953 Sch 1 ss 388-55 and 255-10), including disaster extensions, are not applied.",
+    "Holidays the ATO adds to or removes from its tables after the check date are not reflected."
+  ]
+}

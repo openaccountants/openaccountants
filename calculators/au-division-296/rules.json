@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-18",
+  "jurisdiction": "AU",
+  "currency": "AUD",
+  "basis": "An estimate of one individual's Division 296 tax (ITAA 1997 Division 296, Subdivision 296-B) for the 2026-27 income year, from a total superannuation balance and total superannuation earnings the caller supplies. The ATO assesses the tax from what each fund reports.",
+  "enactment": "Treasury Laws Amendment (Building a Stronger and Fairer Super System) Act 2026 (No. 8, 2026) and Superannuation (Building a Stronger and Fairer Super System) Imposition Act 2026 (No. 9, 2026), both assented to on 13 March 2026; Schedule 1 of Act No. 8 and the Imposition Act commenced on 1 April 2026. Division 296 applies from the 2026-27 income year (Income Tax (Transitional Provisions) Act 1997 s 296-1(1)).",
+  "years": {
+    "2026-27": {
+      "large_threshold": "3000000",
+      "very_large_threshold": "10000000",
+      "balance_basis": "ITTPA 1997 s 296-1(2): for 2026-27 only the total superannuation balance at the end of the year (30 June 2027) counts, not the balance just before the start of the year.",
+      "death_basis": "ITTPA 1997 s 296-1(3): not liable for 2026-27 if the person dies on or before 30 June 2027. ITAA 1997 s 296-50 also takes the balance to be nil after death.",
+      "threshold_basis": "ITAA 1997 ss 296-30(a) and 296-35(a). Both thresholds are indexed from 2027-28 (ss 296-30(b) and 296-35(b)); no later year is supported."
+    }
+  },
+  "rates": {
+    "taxable_superannuation_earnings_percent": 15,
+    "very_large_component_percent": 10,
+    "basis": "Superannuation (Building a Stronger and Fairer Super System) Imposition Act 2026 s 5: 15% of taxable superannuation earnings, plus 10% of the very large superannuation balance earnings component when the person has one."
+  },
+  "formulas": {
+    "liability": "ITAA 1997 s 296-15: liable if the person has taxable superannuation earnings for the year, subject to s 296-20 (child recipient of a superannuation income stream at any time in the year) and s 296-25 (a structured settlement contribution made in that year or any earlier year).",
+    "taxable_superannuation_earnings": "ITAA 1997 s 296-40(1): percentage above the large threshold x total superannuation earnings, when the balance is greater than the large threshold and the earnings are greater than nil.",
+    "very_large_component": "ITAA 1997 s 296-45(1): percentage above the very large threshold x total superannuation earnings, when the balance is greater than the very large threshold. There is no earnings condition, so a negative amount is possible; no tax arises then, as s 296-40(1)(b) leaves no liability.",
+    "percentage": "ITAA 1997 ss 296-40(2), (3) and 296-45(2), (3): (balance - threshold) / balance x 100, rounded to 2 decimal places, rounding up if the third decimal place is 5 or more."
+  },
+  "rounding": "Exact rational arithmetic. Each share is rounded as the Act requires. Each amount shown is worked from exact values, not from other rounded amounts, and rounded once to the nearest cent, half away from zero; the total is the sum of the 2 tax amounts shown. The Acts set no rounding for these amounts, so the cent rounding is a calculator convention.",
+  "sources": [
+    "https://www.legislation.gov.au/C2004A05138/latest/text",
+    "https://www.legislation.gov.au/C2004A05128/latest/text",
+    "https://www.legislation.gov.au/C2026A00009/asmade/text",
+    "https://www.legislation.gov.au/C2026A00008/asmade/text",
+    "https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r7437",
+    "https://parlinfo.aph.gov.au/parlInfo/search/display/display.w3p;query=Id%3A%22legislation%2Fems%2Fr7437_ems_ca5dcd95-fbcc-4d6e-8e70-378c07a75670%22"
+  ],
+  "limits": [
+    "An estimate from the caller's inputs, requiring professional review; the ATO's notice of assessment sets the tax.",
+    "The total superannuation balance (with LRBA amounts left out, ITAA 1997 s 296-260), the total superannuation earnings and the 3 exception answers are caller-attested, not verified.",
+    "It does not work out the total superannuation balance or the total superannuation earnings (ss 296-55 to 296-75): each fund's Division 296 fund earnings, based on its taxable income and nil if negative, their attribution to each interest, including interests supporting a death benefit income stream, the s 296-70 formula for defined benefit and other interests, and the nil earnings of foreign funds and Division 296 excluded interests, such as judges' pension interests and non-complying plans. The earnings supplied must already reflect these rules.",
+    "Refused: a person who, in the year, had an interest in or a death benefit income stream from a constitutionally protected fund, is or was a judge named in s 296-55(3) items 2 to 4 or a State higher level office holder, or receives a death benefit income stream because of such a person's death. For them s 296-55(3) and Imposition Act s 6, which removes the tax where imposing it would exceed the Commonwealth's legislative power, can reduce or remove the tax.",
+    "2026-27 only: later years use indexed thresholds not yet published and the greater of the balances just before the start and at the end of the year.",
+    "Temporary residents who depart Australia (Subdivision 296-E), Division 296 debt accounts, release authorities, payment and notices of assessment are outside scope.",
+    "No projection, withdrawal comparison or advice on holding assets inside or outside super."
+  ]
+}

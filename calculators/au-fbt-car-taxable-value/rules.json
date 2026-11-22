@@ -1,0 +1,50 @@
+{
+  "as_of": "2026-11-18",
+  "jurisdiction": "AU",
+  "basis": "Taxable value of the car fringe benefits relating to one car held by one provider in one FBT year, by the statutory formula (FBTAA s 9) or, where the employer elects, the operating cost method (FBTAA s 10), with s 10(5) applying the statutory formula where it gives the lower value.",
+  "years": {
+    "2027": {
+      "start": "2026-04-01",
+      "end": "2027-03-31",
+      "days": 365,
+      "basis": "A year of tax is the year starting on 1 April 1987 and each later year starting on 1 April (FBTAA s 136(1)); the year ending 31 March 2027 has 365 days."
+    }
+  },
+  "statutory_formula": {
+    "percent": 20,
+    "basis": "FBTAA s 9(1): 0.2 x base value x days in the year on which the car fringe benefits were provided by the provider / days in the year, less the recipient's payment. The 0.2 fraction does not apply where the last commitment by the employer, the employee or an associate to the car's application or availability for the period was made before 7.30 pm AEST on 10 May 2011 (Tax Laws Amendment (2011 Measures No. 5) Act 2011, Sch 5 item 8(2)); the earlier statutory percentages (ATO employer guide 7.8.2.1) are not applied.",
+    "base_value": "FBTAA s 9(2)(a): the cost price of the car (s 136(1)) where the provider or an associate owned it at the earliest holding time, otherwise its leased car value (s 136(1)) at that time, multiplied by 2/3 where the year of tax begins later than the fourth anniversary of the earliest holding time, plus the cost price of each non-business accessory fitted after that time and before the end of the year that remained fitted at a time in the year when the provider held the car. The earliest holding time is the earliest time the provider or an associate held the car (s 9(2)(b)).",
+    "reduction": { "numerator": 2, "denominator": 3 },
+    "recipients_payment": "FBTAA s 9(2)(e) and s 10(3)(c): consideration the recipients paid the provider or employer for the benefits, fuel or oil expenses they bore with a declaration or documentary evidence given before the declaration date, and other car expenses they bore with documentary evidence so given, each less any reimbursement."
+  },
+  "operating_cost_method": {
+    "basis": "FBTAA s 10(1), (2): where the employer elects, the taxable value is (C x (100% - BP)) - R, where C is the operating cost of the car during the holding period (s 10(3)(a): car expenses, registration and insurance attributable to the holding period, and deemed depreciation and deemed interest for an owned car or lease charges for a leased one), BP the business use percentage and R the recipient's payment.",
+    "business_use_percentage": "FBTAA s 136(1): business kilometres travelled by the car during the holding period / total kilometres travelled by it during that period x 100%. The business kilometres are a reasonable estimate under s 162F.",
+    "records": "BP is nil unless the employer is entitled to a reduction for business journeys (s 10(2)). In a log book year (s 10A): log book records and odometer records were maintained for an applicable log book period (s 162H), odometer records were maintained for the holding period, and, where the provider is not the employer, those records were given to the employer before the declaration date. In another year (s 10B): odometer records were maintained for the holding period and, where the provider is not the employer, given to the employer before the declaration date. In both, the employer specifies its estimate of business kilometres and the business use percentage. A year is a log book year if none of the previous 4 years was one, the employer elects it or the Commissioner requires it (s 162G(1)).",
+    "lower_value": "FBTAA s 10(5): where the operating cost value exceeds the value s 9 would give, the Act applies as if the election had not been made."
+  },
+  "rounding": "The Act prescribes no rounding and no floor. Each value is computed exactly and the recipient's payment subtracted. A negative result is nil, following the ATO's FBT return 2026 instructions for item 23 (show zero, not a negative; excess contributions for one benefit type do not reduce other benefits); flooring each car rather than each category is this calculator's assumption. By this calculator's convention the result is rounded half up to the cent; the ATO's employer guide examples show whole dollars and drop the cents (Example 28 gives $5,983 for $5,983.56).",
+  "sources": [
+    "https://www.legislation.gov.au/C2004A03280/latest/text",
+    "https://www.legislation.gov.au/C2011A00062/latest/text",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19860039/7",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19860039/9",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19860039/10",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19860039/10A",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19860039/10B",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19860039/136",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19860039/162F",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19860039/162G",
+    "https://www.ato.gov.au/law/view/document?docid=PAC/19860039/162H",
+    "https://www.ato.gov.au/law/view/document?docid=SAV/FBTGEMP/00008",
+    "https://www.ato.gov.au/forms-and-instructions/fringe-benefits-tax-return-2026-instructions/item-23-fringe-benefit-categories-for-fbt-return-2026"
+  ],
+  "limits": [
+    "Preparation aid requiring professional review. It values car fringe benefits the caller has established; whether a car benefit arises (s 7) and whether it is exempt (s 8, including the s 8A electric car exemption) are not assessed.",
+    "Every input is caller-supplied: the base value, holding date, private use days, operating cost, kilometres, records and recipient's payment are not verified.",
+    "A car whose last commitment to its application or availability was made before 7.30 pm AEST on 10 May 2011 is refused; the earlier statutory percentages are not applied.",
+    "The operating cost total is the caller's: deemed depreciation and deemed interest (s 11) are not computed.",
+    "The result is a taxable value. Gross-up, FBT payable, reportable fringe benefits amounts, the otherwise deductible rule, not-for-profit concessions and the record keeping exemption are outside scope.",
+    "Cars whose identity changes under s 162K, fleets valued under PCG 2016/10 and FBT years other than the one ending 31 March 2027 are outside scope."
+  ]
+}
