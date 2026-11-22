@@ -1,10 +1,10 @@
 ---
 name: nl-income-tax
 description: "Dutch personal income tax (inkomstenbelasting) for a resident individual, tax year 2026, with 2025 figures for returns still open. Covers the three boxes: box 1 bands (8.10% tax plus 27.65% national insurance in the first band, 37.56%, 49.50%) and the AOW-age rates; the tariefsaanpassing; the algemene heffingskorting and arbeidskorting with their phase-outs; the inkomensafhankelijke combinatiekorting and ouderenkorting; box 2 at 24.5% and 31%; box 3 for 2026 under the bridging law, the Hoge Raad rulings and the tegenbewijsregeling (actual return); fiscal-partner allocation; the 1 May return, extensions, voorlopige aanslag, belastingrente and penalties. Trigger phrases: aangifte inkomstenbelasting, box 1 tarief, heffingskortingen, arbeidskorting, box 3 werkelijk rendement, tegenbewijsregeling, voorlopige aanslag, belastingrente. Out of scope: entrepreneur reliefs (nl-zzp-deductions), personal and home deductions (nl-deductions), AOW-age detail (nl-income-tax-special-groups), box 2 detail (nl-box2-substantial-interest), expat scheme (nl-30-percent-ruling), payroll (nl-payroll-tax), non-residents (nl-cross-border)."
-version: 2.4
+version: 2.5
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -174,6 +174,7 @@ expected:
 | Wet inkomstenbelasting 2001, version 1 January 2026 (art. 5.2 before the retroactive 2025 change in Stcrt. 2026, 3708) | https://wetten.overheid.nl/BWBR0011353/2026-01-01 | 2026-10-24 |
 | Wet financiering sociale verzekeringen, art. 9-12 | https://wetten.overheid.nl/BWBR0017745/2026-01-01 | 2026-10-24 |
 | Algemene wet inzake rijksbelastingen (art. 4, 9, 13, 15, 30f, 30fa, 30fc, 30hb, 67a, 67c, 67d, 67e) | https://wetten.overheid.nl/BWBR0002320/ | 2026-10-24 |
+| Invorderingswet 1990, art. 63b(1), statutory power for an assessment-payment default penalty | https://wetten.overheid.nl/BWBR0004770/ | 2026-11-22 |
 | Belastingdienst, box 1 rates 2026 and 2025, AOW-age month table | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 | 2026-10-31 |
 | Fiscale informatie 2026 ch. 21, tax credits | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen | 2026-10-31 |
 | Fiscale informatie 2025, tax credits | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/heffingskortingen | 2026-10-24 |
@@ -194,4 +195,4 @@ expected:
 
 Pending law: the Belastingplan 2027 bill (Kamerstuk 37022, sent to the Tweede Kamer on 29 September 2026, not enacted on 24 October 2026) would apply some changes back to 1 January 2026 (art. LXIII(1)(a)): the car rate in Wet IB art. 3.15(6), 3.17(1)(b), 6.17(6) and 6.36(2) from EUR 0.23 to EUR 0.25 per km, an amendment to art. 3.76(3) (the starter's increase of the zelfstandigenaftrek) and the classic-car age rule in art. 3.20(5). See `nl-zzp-deductions` and `nl-deductions`. Its new box 1 table (first band 8.58% to EUR 39,247, second band 38.16%) and the higher labour credit take effect from 2027, not 2026.
 
-Not yet confirmed: (1) the final 2026 box 3 bank and debt percentages (set after the year ends; 1.28% and 2.70% are provisional; the statute text currently reads 1.37% and 2.70%); (2) whether the Hoge Raad has ruled on the 2026 bridging rules as such (only the 2021 and 2024 rulings were read); (3) the late-payment penalty on an income tax assessment: the Belastingdienst penalties page describes a betaalverzuimboete of 5% of the unpaid amount (minimum EUR 50, maximum EUR 6,709), but no statutory basis for it was found (AWR art. 67c covers only taxes paid on a return; the Invorderingswet 1990 has none), and the Besluit Bestuurlijke Boeten Belastingdienst was not read; (4) the 2026 filing thresholds (EUR 58 and EUR 19 are for the 2025 return); (5) the bijdrage Zvw base for a sole trader (profit before or after the entrepreneur reliefs), left to `nl-social-contributions`; (6) the conserving assessment on emigration, left to `nl-cross-border`.
+Not yet confirmed: (1) the final 2026 box 3 bank and debt percentages (set after the year ends; 1.28% and 2.70% are provisional; the statute text currently reads 1.37% and 2.70%); (2) whether the Hoge Raad has ruled on the 2026 bridging rules as such (only the 2021 and 2024 rulings were read); (3) the detailed policy conditions for the late-payment penalty on an income tax assessment: the Belastingdienst penalties page describes a betaalverzuimboete of 5% of the unpaid amount (minimum EUR 50, maximum EUR 6,709). The statutory power is in Invorderingswet 1990 art. 63b(1), which permits "een bestuurlijke boete van ten hoogste" EUR 6,709 for an unpaid, partly paid or late-paid assessment (source read 22 November 2026). AWR art. 67c instead covers taxes paid on a return. The complete collection-policy conditions and the Besluit Bestuurlijke Boeten Belastingdienst have not been reviewed here; (4) the 2026 filing thresholds (EUR 58 and EUR 19 are for the 2025 return); (5) the bijdrage Zvw base for a sole trader (profit before or after the entrepreneur reliefs), left to `nl-social-contributions`; (6) the conserving assessment on emigration, left to `nl-cross-border`.
