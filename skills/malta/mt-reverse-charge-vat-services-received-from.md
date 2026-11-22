@@ -293,7 +293,7 @@ Source: [VAT Act, Cap. 406](https://legislation.mt/getpdf/6ac352947b5e681a8405fb
 | Source and scope read | Official URL | Read on |
 |---|---|---|
 | VAT Act, Cap. 406: read for arts 2, 11(10), 12, 13, 19 to 23, 27, 30A, 37 to 42, 48 and 73, and the Third, Fourth, Seventh, Eighth, Tenth, Eleventh and Twelfth Schedule service rules (consolidation to Act III of 2026 and L.N. 75 and 86 of 2026) | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 | 2026-11-14 |
-| VAT Act, Cap. 406: Second Schedule items 1(b) and 2 (electricity is goods), Eighth Schedule items 2 and 8 (5% electricity and listed repairs), Fourth Schedule item 3 including the invoice proviso; operative passages and pages 65/108 read | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 | 2026-11-22 |
+| VAT Act, Cap. 406: Second Schedule items 1(b) and 2 (electricity is goods), Eighth Schedule items 2 and 8 (5% electricity and listed repairs), Fourth Schedule item 3 including the invoice proviso; operative passages and pages 65, 81, 108 and 111 read | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 | 2026-11-22 |
 | MTCA, VAT rates page: read for the 18% standard rate and the reduced rates | https://mtca.gov.mt/business-tax/vat1/vat-compliance/vat-rates/vat-rates | 2026-11-14 |
 | VAT (Rate of Interest) Regulations, S.L. 406.19: read for reg. 2 (0.6% a month; 0.33% on older balances) | https://legislation.mt/getpdf/632835ddda6f862638d03ac1 | 2026-11-14 |
 | National Holidays and Other Public Holidays Act, Cap. 252: read for the Schedule (15 August, Feast of the Assumption) | https://legislation.mt/eli/cap/252/eng/pdf | 2026-11-14 |
