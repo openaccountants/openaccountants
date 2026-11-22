@@ -53,7 +53,7 @@ Out of scope, and where it goes:
 | Additional Medicare Tax on self-employment income | 0.9% | [26 U.S.C. 1401(b)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
 | Additional Medicare Tax threshold, single, head of household, qualifying surviving spouse | USD 200,000 | [26 U.S.C. 1401(b)(2)(A)(iii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
 | Additional Medicare Tax threshold, married filing jointly | USD 250,000 | [26 U.S.C. 1401(b)(2)(A)(i)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
-| Additional Medicare Tax threshold, married filing separately | USD 125,000 | [26 U.S.C. 1401(b)(2)(A)(ii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
+| Additional Medicare Tax threshold, married filing separately | USD 125,000 (derived: half of the USD 250,000 joint threshold) | [26 U.S.C. 1401(b)(2)(A)(ii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
 | Social Security wage base (wages plus net self-employment earnings) | USD 184,500 | [Schedule SE (Form 1040) 2026, line 7](https://www.irs.gov/pub/irs-pdf/f1040sse.pdf) |
 | Net earnings factor (Schedule SE line 4a) | 92.35% | [Schedule SE (Form 1040) 2026, line 4a](https://www.irs.gov/pub/irs-pdf/f1040sse.pdf) |
 | No self-employment tax below this net earnings amount | USD 400 | [26 U.S.C. 1402(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1402.htm) |
