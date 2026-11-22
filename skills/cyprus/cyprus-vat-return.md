@@ -1,11 +1,11 @@
 ---
 name: cyprus-vat-return
 description: "Use this skill for Cyprus VAT (Φ.Π.Α.) in tax year 2026 (law at 24 October 2026). It covers the 19% standard rate, the 9%, 5% and 3% reduced rates, the temporary 0% on basic goods (baby milk, nappies, feminine hygiene products and listed fruit and vegetables to 31 December 2027; meat and fish 6 April 2026 to 31 May 2027; bread, milk, coffee, sugar and baby food 12 October 2026 to 31 May 2027), household electricity and home solar rates, property VAT, partial exemption, cash accounting, the EUR 15,600 registration threshold, the EUR 10,000 EU distance-sales threshold, quarterly returns and payment by the 10th of the second month, return boxes 1 to 11B, VIES by the 15th, domestic reverse charge (construction, scrap, phones and laptops, precious metals, property in loan restructuring), TFA filing, the EUR 100 late-return charge, 10% additional tax and interest. Trigger on: Cyprus VAT, Φ.Π.Α., VAT return Cyprus, TFA VAT, Cyprus reverse charge, VIES Cyprus. Out of scope: corporate tax (cy-corporate-tax), income tax (cyprus-income-tax), payroll (cyprus-payroll), cross-border income tax (cy-cross-border)."
-version: 2.2
+version: 2.3
 type: filing-howto
 jurisdiction: CY
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -164,11 +164,13 @@ Bank exports from Bank of Cyprus and Hellenic Bank usually use comma delimiters 
 ## Deadlines and filing
 
 - **Tax periods.** Usually quarterly, set at registration from the business's activity code; the Commissioner may allow or require monthly periods (Κ.Δ.Π. 314/2001 reg. 17). Quarters are not always calendar quarters: the official calendar shows quarters such as May to July and June to August.
-- **Return and payment.** By the 10th day after the end of the month that follows the end of the period (reg. 17). Examples from the official calendar: quarter January to March 2026 due 10 May 2026; April to June 2026 due 10 August 2026; May to July 2026 due 10 September 2026. A deadline on a weekend or public holiday moves to the next working day.
+- **Return and payment.** By the 10th day after the end of the month that follows the end of the period (reg. 17). Examples from the official calendar: quarter January to March 2026 exceptionally due 20 May 2026 under the Tax Department's 4 May 2026 extension; April to June 2026 due 10 August 2026; May to July 2026 due 10 September 2026. A deadline on a weekend or public holiday moves to the next working day.
 - **Where.** Electronically through Tax For All (TFA). Before the deadline a business can amend its own return in TFA. Boxes 6 to 11B of a return whose deadline is after 27 March 2023 can be amended in TFA by the business; older returns need a written request.
 - **Correcting errors.** Errors in earlier returns go in the current period's VAT account under reg. 24 only if the net total of all errors found is not more than EUR 1,708.60 and the period is less than three years old. The net total sets under-declared output VAT and over-claimed input VAT against over-declared output VAT and under-claimed input VAT. Otherwise the business writes to the Tax Department through TFA.
 - **VIES recapitulative statement.** Monthly, by the 15th day after the end of each month in which the business supplied goods or services to a person registered in another member state (art. 42Γ(2)). A corrective statement is due within one month of the end of the month it concerns.
 - **Records and invoices.** Keep records as the Tenth Schedule para. 5 and regs 22 and 23 require. A retailer must issue a VAT invoice to a taxable customer who asks for one when the price passes EUR 85 (reg. 14).
+
+Deadline source check (22 November 2026): the [Tax Department notice of 4 May 2026](https://www.gov.cy/mof-tfa/mi-katigoriopoiimeno/prosorini-diakopi-sti-leitoyrgia-toy-taxforall-tfa-kai-paratasi-prothesmion-ypovolis-pliromis-f-p-a-kai-vies/) extends both the return and payment for the quarter ending 31 March 2026 to 20 May 2026. Its operative wording includes “παρατείνονται μέχρι και τις 20/05/2026.” This is a specific extension, separate from the ordinary deadline rule.
 
 ## Penalties and interest
 
@@ -177,11 +179,13 @@ Bank exports from Bank of Cyprus and Hellenic Bank usually use comma delimiters 
 | Late notification of the obligation to register | EUR 85 for each month the failure lasts | VAT Law art. 45(1) |
 | Return not received by the deadline | EUR 100 per return | VAT Law art. 45(2) |
 | VAT shown on a return not paid by the deadline, or VAT assessed by the Commissioner | Additional tax of 10% of the VAT due | VAT Law art. 45(3) |
-| Interest on VAT subject to the 10% | 9% a year from the day the VAT became due | VAT Law art. 45(4) |
+| Interest on VAT subject to the 10% | 3.50% a year for 2026; use the prescribed rate for each arrears period, not the printed 9% in VAT Law art. 45(4) | Uniform Public Default Interest Law 167(I)/2006, arts 3–4: https://www.cylaw.org/nomoi/enop/non-ind/2006_1_167/full.html; annual order Κ.Δ.Π. 376/2025: https://www.cylaw.org/KDP/data/2025_1_376.pdf |
 | Reverse charge not applied (arts 11 to 11Ε, 12Α) | EUR 200 per tax period, at most EUR 4,000 | VAT Law art. 45(7Β) |
 | VIES statement not received by the deadline | EUR 50 | VAT Law art. 45Β |
 | VIES statement wrong and not corrected in time | EUR 15 | VAT Law art. 45Α(1) |
 | Not issuing a legal receipt to a consumer | Up to 20% of the transaction value | Tax Department rights and obligations page |
+
+Interest source check (22 November 2026): Law 167(I)/2006, art. 3 substitutes the uniform rate “αντί του καθοριζόμενου σ’ αυτόν επιτοκίου υπερημερίας”. Order Κ.Δ.Π. 376/2025 sets the 2026 rate: “το ύψος του δημόσιου επιτοκίου υπερημερίας καθορίζεται στο 3,50%.” It takes effect on 1 January 2026.
 
 The Tax Department VAT return FAQ confirms the EUR 100 charge, the 10% additional tax and default interest for a missing return, and says TFA also raises an estimated assessment. The EUR 51 late-return figure sometimes quoted is not the law in force: art. 45(2) says EUR 100.
 
@@ -201,7 +205,7 @@ The Tax Department VAT return FAQ confirms the EUR 100 charge, the 10% additiona
 
 A registered consultancy in Limassol sells EUR 40,000 of consulting to Cyprus clients in January to March 2026, all at 19%. It buys Google Ads from Google Ireland Ltd for EUR 2,000 (an EU service, so the business reverse-charges it) and has Cyprus purchase invoices showing EUR 3,800 of input VAT, all for its taxable business.
 
-Output VAT on sales is 40,000 x 19% = EUR 7,600. The Google service adds 2,000 x 19% = EUR 380 to Box 1 and the same EUR 380 to Box 4. Box 1 is EUR 7,980. Box 4 is 3,800 + 380 = EUR 4,180. Box 5 is EUR 3,800. Box 6 includes the EUR 2,000 service as well as the EUR 40,000 of sales, and Boxes 7 and 11B include the EUR 2,000. The return and payment are due on 10 May 2026.
+Output VAT on sales is 40,000 x 19% = EUR 7,600. The Google service adds 2,000 x 19% = EUR 380 to Box 1 and the same EUR 380 to Box 4. Box 1 is EUR 7,980. Box 4 is 3,800 + 380 = EUR 4,180. Box 5 is EUR 3,800. Box 6 includes the EUR 2,000 service as well as the EUR 40,000 of sales, and Boxes 7 and 11B include the EUR 2,000. The return and payment are due on 20 May 2026 under the Tax Department's 4 May 2026 extension.
 
 ```oa-check
 name: Limassol consultancy, Q1 2026, 19% sales plus an EU reverse-charge service
@@ -229,7 +233,7 @@ A Nicosia grocer has a quarter running August to October 2026. Its sales, withou
 
 Fish is at 0% for the whole quarter: to 30 September under Κ.Δ.Π. 168/2026 and from 1 October under Κ.Δ.Π. 354/2026. The fruit and vegetables are at 0% (Κ.Δ.Π. 337/2025 runs to 31 December 2026). Bread and milk are at the 5% food rate up to 11 October, 12,000 x 5% = EUR 600, and at 0% from 12 October (Κ.Δ.Π. 354/2026). Other food is at 5%: EUR 2,500. Soft drinks are excluded from the food rate, so 19%: EUR 1,520. Output VAT is 600 + 2,500 + 1,520 = EUR 4,620 and Box 5 is 4,620 - 3,000 = EUR 1,620.
 
-The return and payment were due on 10 December 2026. The grocer files and pays in January 2027. The late return costs EUR 100 (art. 45(2)) and the late payment adds 10% of the VAT due, EUR 162 (art. 45(3)): EUR 262 before interest at 9% a year (art. 45(4)).
+The return and payment were due on 10 December 2026. The grocer files and pays in January 2027. The late return costs EUR 100 (art. 45(2)) and the late payment adds 10% of the VAT due, EUR 162 (art. 45(3)): EUR 262 before interest. Apply the prescribed public default interest rate for each arrears period: 3.50% for the 2026 portion under Κ.Δ.Π. 376/2025; confirm the rate prescribed for 2027 before calculating the January 2027 portion. The 2026 order does not establish the 2027 rate.
 
 ```oa-check
 name: Grocer, Aug-Oct 2026, basic goods split by date, late return and payment
@@ -303,5 +307,8 @@ expected:
 | Tax Department, guide to completing the VAT return (06082024) | https://www.gov.cy/media/sites/167/2026/01/%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%B3%CE%B9%CE%B1-%CE%A3%CF%85%CE%BC%CF%80%CE%BB%CE%AE%CF%81%CF%89%CF%83%CE%B7-%CE%94%CE%AE%CE%BB%CF%89%CF%83%CE%B7%CF%82-%CE%A6%CE%A0%CE%91-06082024.pdf | 2026-10-02 (still published 2026-10-24) |
 | Tax Department, exempt transactions | https://www.gov.cy/mof-tax/documents/exairoymenes-synallages/ | 2026-10-02 |
 | Tax Department, General VAT Guide (Information Leaflet 10, November 2001) | https://www.gov.cy/media/sites/167/2026/01/%CE%93%CE%B5%CE%BD%CE%B9%CE%BA%CF%8C%CF%82-%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%A6.%CE%A0.%CE%91.-%CE%95%CE%BD%CE%B7%CE%BC%CE%B5%CF%81%CF%89%CF%84%CE%B9%CE%BA%CF%8C-%CE%88%CE%BD%CF%84%CF%85%CF%80%CE%BF-10.pdf | 2026-10-02 |
+| Uniform Public Default Interest Law 167(I)/2006, arts 1–5, including the substitution rule in art. 3; full operative text read | https://www.cylaw.org/nomoi/enop/non-ind/2006_1_167/full.html | 2026-11-22 |
+| Κ.Δ.Π. 376/2025: full one-page order read for 3.50% public default interest in 2026, effective 1 January 2026 | https://www.cylaw.org/KDP/data/2025_1_376.pdf | 2026-11-22 |
+| Tax Department notice, 4 May 2026: operative return/payment extension to 20 May 2026; full official notice read | https://www.gov.cy/mof-tfa/mi-katigoriopoiimeno/prosorini-diakopi-sti-leitoyrgia-toy-taxforall-tfa-kai-paratasi-prothesmion-ypovolis-pliromis-f-p-a-kai-vies/ | 2026-11-22 |
 
-Not yet confirmed: the VAT rate on household electricity for meter readings from 1 January to 31 March 2026 (Κ.Δ.Π. 337/2025 deleted the earlier 5% entry); whether the Tax Department charges VAT default interest at a rate other than the 9% in art. 45(4); the euro amendment that set the EUR 15,600 registration threshold (the CyLaw consolidation still prints the old Cyprus pound figure in the First Schedule); the euro amounts of the art. 45(5) to (7) charges still printed in Cyprus pounds; the input VAT block on cars and entertainment in current law (only the 2001 guide states it); the box guide, the EUR 17 gift limit and the exemptions page were read on 2 October 2026, not re-read in full today; the Cyprus VAT number format; rates row taken out of the table until read on the official page: Gifts of goods, output VAT due when cost per gift passes EUR 17 (Tax Department VAT return guide on gov.cy, which refuses scripted reads; the VAT Law text on CyLaw still states the business-gift limit as CYP 10).
+Not yet confirmed: the VAT rate on household electricity for meter readings from 1 January to 31 March 2026 (Κ.Δ.Π. 337/2025 deleted the earlier 5% entry); the prescribed public default interest rate for 2027; the euro amendment that set the EUR 15,600 registration threshold (the CyLaw consolidation still prints the old Cyprus pound figure in the First Schedule); the euro amounts of the art. 45(5) to (7) charges still printed in Cyprus pounds; the input VAT block on cars and entertainment in current law (only the 2001 guide states it); the box guide, the EUR 17 gift limit and the exemptions page were read on 2 October 2026, not re-read in full today; the Cyprus VAT number format; rates row taken out of the table until read on the official page: Gifts of goods, output VAT due when cost per gift passes EUR 17 (Tax Department VAT return guide on gov.cy, which refuses scripted reads; the VAT Law text on CyLaw still states the business-gift limit as CYP 10).
