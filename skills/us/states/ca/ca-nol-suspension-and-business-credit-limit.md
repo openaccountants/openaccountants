@@ -92,7 +92,7 @@ Out of scope, and where it goes:
 
 | Situation | Treatment | Source |
 | --- | --- | --- |
-| Individual with MAGI USD 900,000 and an NOL carryover | NOL deduction allowed in 2026 | [FTB, Net operating loss](https://www.ftb.ca.gov/file/business/deductions/net-operating-loss.html) |
+| Individual below the USD 1,000,000 MAGI threshold with an NOL carryover | NOL deduction allowed in 2026 | [FTB, Net operating loss](https://www.ftb.ca.gov/file/business/deductions/net-operating-loss.html) |
 | Disaster loss carryover, income over USD 1,000,000 | Allowed; not affected by the suspension | same |
 | Combined-report group, credits spread across members | One USD 5,000,000 cap for the group in aggregate | [FTB Tax News, March 2025](https://www.ftb.ca.gov/about-ftb/newsroom/tax-news/2025/03.html) |
 | Credits disallowed, no FTB 3870 | Carry over, with the period lengthened by the years disallowed | same |
