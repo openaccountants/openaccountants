@@ -370,3 +370,5 @@ Source for the table: [2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/
 | 26 CFR 301.7701-3 (eCFR). Read for the disregarded entity default. | https://www.ecfr.gov/current/title-26/chapter-I/subchapter-F/part-301/subpart-ZZ/section-301.7701-3 | 2026-11-13 |
 
 Not yet confirmed: the 2026 Form 568 booklet and its Schedule T rates (not yet published, so the 2025 rates are shown and labelled 2025-2026 filing cycle); whether the FTB charges the R&TC 19172 per-member penalty to a disregarded SMLLC; the 2026 doing-business amounts (see `ca-llc-fee-and-tax`).
+
+> **Disclaimer.** This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon. The most up-to-date version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com).
