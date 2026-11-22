@@ -1,10 +1,10 @@
 ---
 name: us-schedule-c-and-se-computation
 description: Compute a US sole proprietor's 2026 Schedule C net profit, the home office deduction (simplified method or Form 8829), and Schedule SE self-employment tax, with the Form 8959 Additional Medicare Tax on self-employment income. Covers single-member LLCs disregarded for federal tax. 2026 figures from the 2026 Schedule SE and IRS Pub. 15, including the Social Security wage base of $184,500, the 92.35% net earnings factor, 12.4% plus 2.9%, the $400 floor, the 0.9% Additional Medicare Tax with its threshold reduced by wages, and the deductible half under section 164(f). Trigger on "Schedule C", "self-employment tax", "SE tax", "Schedule SE", "1099 contractor tax", "home office deduction", "Form 8829", "sole proprietor profit". Load after us-sole-prop-bookkeeping when transactions still need classifying. Federal only.
-version: "3.0"
+version: "3.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -38,7 +38,7 @@ Out of scope, and where it goes:
 1. **Filing status for 2026**, and whether the spouse also has self-employment income. Each spouse files a separate Schedule SE; the Additional Medicare Tax threshold depends on filing status.
 2. **W-2 wages for 2026** (Form W-2 box 3 Social Security wages and box 5 Medicare wages, for every job). Wages use up the $184,500 Social Security base first and reduce the Additional Medicare Tax threshold.
 3. **Home office:** square feet used regularly and only for the business, total square feet of the home, and whether the client wants the simplified method or actual expenses this year.
-4. **Vehicle:** business miles driven 1 January to 30 June and 1 July to 31 December 2026 separately (the standard mileage rate changed on 1 July), and whether the actual-cost method was used for this vehicle in an earlier year.
+4. **Vehicle:** business miles driven 1 January to 30 June and 1 July to 31 December 2026 separately (the standard mileage rate changed on 1 July); owned or leased; the method chosen in its first business-use year; and any later actual-expense, depreciation, section 179, bonus-depreciation or simultaneous-fleet use.
 5. **Prior-year Form 8829 carryovers** (operating expenses and excess casualty losses and depreciation not allowed in 2025).
 6. **Losses and risk:** is any of the investment not at risk (nonrecourse debt, guarantees), and has the business had losses in most recent years?
 
@@ -70,14 +70,14 @@ None of the statutory rates or the Additional Medicare Tax thresholds is indexed
 
 ### Schedule C: from gross receipts to net profit
 
-1. **Line 1, gross receipts.** Total business income received in 2026, before fees. Payment processor payouts are grossed up to the amount the customer paid; the processor fee goes on line 27b. Line 1 should be at least the total of every 1099-NEC and 1099-K the client received; the IRS matches them. Source: [Schedule C (Form 1040) 2026](https://www.irs.gov/pub/irs-pdf/f1040sc.pdf).
+1. **Line 1, gross receipts.** Total business income received in 2026, before fees. Payment processor payouts are grossed up to the amount the customer paid; the processor fee goes on line 27b. Reconcile the business records with every 1099-NEC and 1099-K; report the proper business income once, without adding duplicate transactions or nontaxable amounts merely to reach a form total. Document discrepancies, request corrections for erroneous forms, and attach the explanation required where reported 1099-NEC totals exceed line 1. The [Schedule C line 1 instructions](https://www.irs.gov/instructions/i1040sc) say: “Enter gross receipts from your trade or business.” The [IRS 1099-K instructions for recipients](https://www.irs.gov/businesses/what-to-do-with-form-1099-k) require reconciliation with records and explain erroneous and nontaxable amounts. The [IRS third-party-filer FAQ, Q11](https://www.irs.gov/newsroom/form-1099-k-faqs-third-party-filers-of-form-1099-k), separately confirms that a transaction reportable on 1099-K should not also be reported on 1099-NEC/MISC.
 2. **Lines 2 to 7.** Subtract returns and allowances (line 2) and cost of goods sold from Part III (line 4); add other business income (line 6). Line 7 is gross income.
 3. **Lines 8 to 27b, expenses.** Ordinary and necessary business expenses by line, from the bookkeeping working paper. Line 9 car and truck expenses: either business miles times the standard mileage rate for each half of 2026, or actual costs times business-use share. Line 13: depreciation and section 179 (see `us-section-179-and-bonus-depreciation` for the 2026 figures). Line 24b: business meals at 50%. Line 27a is the energy efficient commercial buildings deduction (Form 7205); everything else listed in Part V totals to line 27b.
 4. **Line 28** adds lines 8 to 27b. **Line 29**, tentative profit, is line 7 minus line 28.
 5. **Line 30, home office.** Choose one method for the year (either can be used in any year):
    - Simplified: square feet used regularly and exclusively for business, up to 300, times USD 5. No depreciation, no carryover, and the home's mortgage interest and taxes stay in full on Schedule A. Source: [Rev. Proc. 2013-13](https://www.irs.gov/pub/irs-drop/rp-13-13.pdf).
    - Actual expenses (Form 8829): business share of the home (office area divided by total area) times indirect expenses (mortgage interest, real estate taxes, insurance, utilities, repairs, rent), plus direct expenses for the office, plus depreciation on the business share of the building (39-year straight line; land is never depreciated). The business share of mortgage interest and taxes moves from Schedule A to Form 8829.
-   - Under either method the deduction cannot exceed the gross income from the business use minus the other business deductions, so it cannot create or increase a loss. Under the actual method the excess carries forward to 2027 on Form 8829; under the simplified method it is lost. Source: [26 U.S.C. 280A(c)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280A.htm).
+   - Simplified: the deduction is limited to business-use gross income after the other business deductions; the unused simplified amount is not carried forward. Actual: apply the Form 8829 ordering. First separate the business part of otherwise independently deductible mortgage interest, real estate taxes and any qualifying casualty losses, subject to their own rules. Other home operating costs are limited by the remaining business-use income, and home depreciation is taken last. Only the limited, unallowed actual costs carry forward, subject to the limit in a later actual-method year. Do not cap every actual cost indiscriminately at tentative profit. [26 U.S.C. 280A(b) and (c)(5)](https://uscode.house.gov/us/usc/t26/s280A/) distinguish independently deductible items from the limited expenses. [IRS Pub. 587, Deduction Limit](https://www.irs.gov/publications/p587), describes the limited costs as “otherwise nondeductible expenses” and specifies “with depreciation of your home taken last”.
 6. **Line 31, net profit or loss** = line 29 minus line 30. A loss goes to Schedule 1 but first meets the at-risk rules (line 32; see the refusal table).
 
 ### Schedule SE Part I: self-employment tax
@@ -105,9 +105,9 @@ The deductible half on Schedule 1 reduces adjusted gross income, not Schedule C 
 | Net earnings (line 4c) under USD 400 | No self-employment tax; Schedule SE not required for this person |
 | Wages already at or above USD 184,500 | Line 9 is zero: only the 2.9% applies to self-employment earnings |
 | Schedule C loss | No self-employment tax from this business; the loss does not reduce wages for Additional Medicare Tax |
-| Home office deduction larger than tentative profit | Capped at the profit (280A(c)(5)); actual method carries the excess forward, simplified method loses it |
+| Home office costs larger than tentative profit | Simplified amount is limited and the unused amount does not carry forward. Actual costs require Form 8829 ordering: independently deductible items are treated separately, limited operating costs follow, and depreciation is last; limited excess carries to a later actual-method year |
 | Home depreciation taken (actual method) | The depreciation allowed or allowable is taxed on a later sale of the home and is not covered by the home sale exclusion: tell the client before choosing |
-| Vehicle used with the actual method in an earlier year | Cannot switch that vehicle to the standard mileage rate |
+| Vehicle used with the actual method in an earlier year | Do not impose an automatic ban for an owned car: mileage must have been chosen in its first business-use year, after which either method can be available. Check disqualifiers: non-straight-line depreciation/MACRS, section 179, bonus depreciation, five or more cars used simultaneously, and actual expenses after 1997 for a leased car. For a lease, mileage must generally continue throughout the lease period. [IRS Pub. 463, Choosing the standard mileage rate](https://www.irs.gov/publications/p463): “Then, in later years, you can choose to use either the standard mileage rate or actual expenses.” |
 | Married couple both self-employed | Two Schedules SE; each spouse has their own USD 184,500 base |
 | Low earnings and the client wants Social Security credits | Optional methods (Schedule SE Part II): nonfarm method only if net profits are under USD 8,186 and under 72.189% of gross, with at least USD 400 of net earnings in 2 of the prior 3 years; at most five times in a lifetime |
 
@@ -166,6 +166,8 @@ expected:
   se_saving: 292.36
 ```
 
+The profit cap does not bind in Case 1. Its oa-check compares only the stated inputs; use the Form 8829 ordering above for an actual-expense case where the limit binds.
+
 **Case 2, wages plus self-employment, single.** A single filer earns USD 100,000 of W-2 wages (boxes 3 and 5) and has Schedule C net profit of USD 120,000.
 
 Line 4a: USD 120,000 x 92.35% = USD 110,820. Line 9: USD 184,500 minus USD 100,000 = USD 84,500 of Social Security base left. Line 10: the smaller of USD 110,820 and USD 84,500 is USD 84,500, times 12.4% = USD 10,478. Line 11: USD 110,820 x 2.9% = USD 3,213.78. Line 12, self-employment tax: USD 13,691.78. Line 13, deductible half: USD 6,845.89. Form 8959: the USD 200,000 threshold less USD 100,000 of wages leaves USD 100,000; self-employment income above it is USD 10,820, times 0.9% = USD 97.38 of Additional Medicare Tax, which is not part of the deductible half.
@@ -211,9 +213,9 @@ Schedule C, Schedule SE, Form 8829 (actual method) and Form 8959 (if owed) are a
 
 ## Completion checklist
 
-- Line 1 is at least the total of the 1099-NEC and 1099-K forms received, or the difference is explained.
+- Line 1 is reconciled to the records and all 1099-NEC/1099-K forms, with duplicate, nontaxable or erroneous amounts resolved and required explanations attached.
 - Mileage split between the two 2026 rates.
-- Home office method chosen, with the 280A(c)(5) cap applied and any Form 8829 carryover recorded.
+- Home office method chosen, with the simplified limit or ordered actual-expense limits applied and any eligible Form 8829 carryover recorded.
 - Schedule SE line 8a uses W-2 boxes 3 and 7 from every job.
 - Deductible half on Schedule 1 line 15, excluding the 0.9%.
 - Form 8959 run whenever wages plus self-employment income could pass the threshold.
@@ -222,6 +224,10 @@ Schedule C, Schedule SE, Form 8829 (actual method) and Form 8959 (if owed) are a
 
 | Source | URL | Read on |
 | --- | --- | --- |
+| IRS Schedule C line 1 instructions and 1099-K recipient guidance; gross receipts, reconciliation and incorrect/nonbusiness amounts. The Schedule C instructions currently display 2025; only unchanged structural rules are used, checked against the 2026 form. | https://www.irs.gov/instructions/i1040sc ; https://www.irs.gov/businesses/what-to-do-with-form-1099-k | 2026-11-22 |
+| IRS third-party-filer 1099-K FAQ, Q11; no duplicate information reporting of the same transaction. | https://www.irs.gov/newsroom/form-1099-k-faqs-third-party-filers-of-form-1099-k | 2026-11-22 |
+| IRS Pub. 463 (currently 2025), Choosing the standard mileage rate and Standard mileage rate not allowed; method history and disqualifiers, not the 2026 mileage amounts. | https://www.irs.gov/publications/p463 | 2026-11-22 |
+| Current 26 U.S.C. 280A(b), (c)(5), and IRS Pub. 587 (currently 2025), Deduction Limit; independently deductible items, ordering and carryforward. | https://uscode.house.gov/us/usc/t26/s280A/ ; https://www.irs.gov/publications/p587 | 2026-11-22 |
 | Schedule SE (Form 1040) 2026. Read for lines 4a, 4c, 7 ($184,500), 8a to 13 and Part II optional-method amounts ($7,560, $8,186, 72.189%). | https://www.irs.gov/pub/irs-pdf/f1040sse.pdf | 2026-11-13 |
 | Instructions for Schedule SE (Form 1040) 2026. Read for What's New (2026 maximum $184,500) and the optional-method conditions. | https://www.irs.gov/pub/irs-pdf/i1040sse.pdf | 2026-11-13 |
 | Schedule C (Form 1040) 2026. Read for lines 1 to 32, line 27a (Form 7205) and Part V to line 27b. | https://www.irs.gov/pub/irs-pdf/f1040sc.pdf | 2026-11-13 |
