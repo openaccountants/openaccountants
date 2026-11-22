@@ -31,6 +31,7 @@ Calendar tax year for individuals. Income tax authority: the Franchise Tax Board
 | IT-CORP, single-member LLC Form 568 filing | ca-smllc-form-568 | checked against the law |
 | IT-CORP, pass-through entity elective tax | ca-pte-elective-tax | checked against the law |
 | VAT / sales and use tax | california-sales-tax | checked against the law |
+| Special taxes and fees, 911 and 988 surcharges on access lines and prepaid mobile telephony services | ca-911-988-surcharges | checked against the law |
 | SC and PR, payroll withholding, SDI and unemployment insurance | ca-payroll | checked against the law |
 | XB, cross-border and residency | ca-residency-leaving-california | checked against the law |
 | Workflow, freelancer intake | us-ca-freelance-intake | checked against the law |
