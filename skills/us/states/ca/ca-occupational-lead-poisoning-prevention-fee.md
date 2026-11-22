@@ -203,3 +203,5 @@ expected:
 | CDPH, Occupational Lead Poisoning Prevention Program, Lead Fees. Read for who pays, CDTFA administration since July 2017, and SIC questions going to CDTFA. | https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/OLPPP/Pages/LeadFees.aspx | 2026-11-21 |
 
 Not yet confirmed: which annual return each year's rates apply to (CDTFA L-1041 and L-997 give rates by effective period, the CDTFA rates page did not show a lead fee table when read, and no page read says in words whether the return due 1 March 2027 for calendar 2026 uses the 2026 or the 2027 rates; the online return calculates it); the current interest rate under R&TC 43155; the text of Regulation 4901 and of 17 CCR 38002 to 38005 (waiver eligibility, procedure, periods and applicable industries), which were listed but not read; the current CDPH de minimis definition.
+
+> **Disclaimer.** This is general information for AI-assisted workflows, not personalized tax advice. Confirm the applicable period, eligibility, rate, and filing requirements with CDTFA or a qualified California tax professional before filing or paying.
