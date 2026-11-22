@@ -41,7 +41,7 @@ test("ATO example: Sam's unused caps raise his 2024-25 cap to $97,500 with no ex
   assert.ok(result.carryForward.years.every((row) => row.remaining === "0.00" && row.appliedThisYear === row.unusedCap));
   assert.equal(result.carryForward.expiringAtEndOfYear, "0.00");
   assert.equal(result.carryForward.years[0].expiresAtEndOf, "2024-25");
-  assert.deepEqual(result.reason_codes, ["caller_attested_inputs", "carry_forward_applied"]);
+  assert.deepEqual(result.reason_codes, ["caller_supplied_inputs", "carry_forward_applied"]);
   assert.doesNotThrow(() => JSON.stringify(result));
 });
 
@@ -55,7 +55,7 @@ test("ATO contributions caps table 2: unused amounts accrued from 2018-19, and 2
   assert.equal(result.concessional.capIncrease, "0.00");
   assert.equal(result.concessional.balanceBelowCarryForwardThreshold, true);
   assert.equal("carryForwardAllowed" in result.concessional, false);
-  assert.deepEqual(result.reason_codes, ["caller_attested_inputs"]);
+  assert.deepEqual(result.reason_codes, ["caller_supplied_inputs"]);
   assert.equal(result.carryForward.expiringAtEndOfYear, "22000.00");
 });
 
@@ -190,14 +190,14 @@ test("bring forward starts only above the general cap, and only under 75", () =>
   assert.equal(over.nonConcessional.bringForwardYears, 3);
   assert.equal(over.nonConcessional.cap, "390000.00");
   assert.equal(over.nonConcessional.remaining, "259999.99");
-  assert.deepEqual(over.reason_codes, ["caller_attested_inputs", "bring_forward_triggered"]);
+  assert.deepEqual(over.reason_codes, ["caller_supplied_inputs", "bring_forward_triggered"]);
   const aged = check({ nonConcessionalContributions: "200000", under75AtAnyTimeInYear: false });
   assert.equal(aged.nonConcessional.firstYearCapIfBringForwardStarts, null);
   assert.equal(aged.nonConcessional.cap, "130000.00");
   assert.equal(aged.nonConcessional.excess, "70000.00");
   const excess = check({ nonConcessionalContributions: "400000" });
   assert.equal(excess.nonConcessional.excess, "10000.00");
-  assert.deepEqual(excess.reason_codes, ["caller_attested_inputs", "bring_forward_triggered", "excess_non_concessional"]);
+  assert.deepEqual(excess.reason_codes, ["caller_supplied_inputs", "bring_forward_triggered", "excess_non_concessional"]);
 });
 
 test("an unreleased concessional excess counts as non-concessional and can start bring forward", () => {

@@ -108,9 +108,9 @@ export function estimateDivision293(input) {
   return {
     ...base,
     verdict: "estimate_calculated",
-    reason_codes: ["caller_attested_inputs", code],
+    reason_codes: ["caller_supplied_inputs", code],
     reasons: [
-      "Every amount and answer is caller-attested; this calculator has not verified them. The ATO assesses the tax from the tax return and what funds report.",
+      "Every amount and answer is caller-supplied; this calculator has not verified them. The ATO assesses the tax from the tax return and what funds report.",
       outcomes[code],
     ],
     incomeYear: input.incomeYear,

@@ -33,8 +33,8 @@ const result = assessSuperGuaranteeCharge({
 ## Inputs and scope
 
 Money is a non-negative AUD decimal string with at most 2 decimal places; `"0"` when there is
-none. Dates are `YYYY-MM-DD` strings. Every input is the caller's attestation, which the
-calculator does not verify.
+none. Dates are `YYYY-MM-DD` strings. Every input is supplied by the caller, and the
+calculator does not verify it.
 
 | Input | Required meaning |
 | --- | --- |

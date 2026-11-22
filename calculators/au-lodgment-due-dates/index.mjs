@@ -65,7 +65,7 @@ function nominal(form, year, month, concession, decemberEligible) {
  * @param {"monthly"|"quarterly"|"head_company_payg_instalment"} input.form Activity statement kind;
  *   the last is a consolidated group head company's quarterly PAYG instalment activity statement.
  * @param {string} input.period "YYYY-MM": the month, or the last month of a standard quarter.
- * @param {"none"|"online"|"agent"} [input.concession] Caller-attested eligibility for the 2-week
+ * @param {"none"|"online"|"agent"} [input.concession] Caller-supplied eligibility for the 2-week
  *   online concession or the registered agent program date; omitted means none.
  * @param {boolean} [input.turnoverUpTo10Million] Required for a December monthly statement with
  *   concession "agent", as are the next 2: annual turnover is up to $10 million.
@@ -127,7 +127,7 @@ export function assessActivityStatementDueDate(input) {
     reasons.push(reason);
   };
   if (named.notApplicable) add("concession_not_applicable", named.notApplicable);
-  if (named.rule !== "original") add("caller_attested_concession", "Eligibility for the concession is caller-attested; this calculator has not verified it.");
+  if (named.rule !== "original") add("caller_supplied_concession", "Eligibility for the concession is caller-supplied; this calculator has not verified it.");
   add(named.rule, {
     original: "The original due date applies.",
     online_concession: "The 2-week online lodgment concession applies.",

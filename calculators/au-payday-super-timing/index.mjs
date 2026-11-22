@@ -40,13 +40,13 @@ function businessDaysAfter(day, count) {
 /**
  * @param {object} input
  * @param {string} input.qeDay Day the qualifying earnings were paid, "YYYY-MM-DD".
- * @param {boolean} [input.firstContributionToFund] s 18C(2) item 1, caller-attested.
+ * @param {boolean} [input.firstContributionToFund] s 18C(2) item 1, caller-supplied.
  * @param {string} [input.outOfCycleNextStandardQeDay] s 18C(2) item 2: the first standard QE day
- *   after an out-of-cycle QE day under LI 2026/20, caller-attested.
+ *   after an out-of-cycle QE day under LI 2026/20, caller-supplied.
  * @param {string} [input.exceptionalCircumstancesDeterminationDay] s 18C(2) item 3: the day a
- *   determination covering the employer and this QE day was made, caller-attested.
+ *   determination covering the employer and this QE day was made, caller-supplied.
  * @param {string} [input.earlierContributionLatestDueDay] s 18C(2) item 4: the latest due day of an
- *   earlier eligible contribution made and applied for an earlier QE day, caller-attested.
+ *   earlier eligible contribution made and applied for an earlier QE day, caller-supplied.
  * @returns {object} JSON-safe result; dates are "YYYY-MM-DD" strings or null.
  */
 export function assessPaydaySuperTiming(input) {
@@ -107,9 +107,9 @@ export function assessPaydaySuperTiming(input) {
   return {
     ...base,
     verdict: "latest_receipt_day_calculated",
-    reason_codes: ["caller_attested_inputs", governingRule],
+    reason_codes: ["caller_supplied_inputs", governingRule],
     reasons: [
-      "The QE day and every extension are caller-attested; this calculator has not verified them.",
+      "The QE day and every extension are caller-supplied; this calculator has not verified them.",
       governingRule === "usual_period"
         ? "The usual period of 7 business days governs."
         : `s 18C(2) ${governingRule.replace("_", " ")} gives the latest day; establish its conditions before relying on it.`,

@@ -48,7 +48,7 @@
   "limits": [
     "Preparation aid requiring professional review; it does not establish any input.",
     "Aggregated turnover (with connected entities and affiliates, worked out at year end), assessable income and base rate entity passive income are caller-established; the calculator does not classify income, group entities or trace trust and partnership amounts.",
-    "The entity type is caller-attested; companies taxed under s 23(3) to (7) or s 23A, trustees and public trading trusts are refused.",
+    "The entity type is caller-supplied; companies taxed under s 23(3) to (7) or s 23A, trustees and public trading trusts are refused.",
     "The corporate tax rate for imputation purposes comes only from the previous year's inputs, or the statement that the company did not exist then; without them it is not given.",
     "Tax payable, offsets, the franking account, the benchmark rule and franking deficit tax are not computed."
   ]

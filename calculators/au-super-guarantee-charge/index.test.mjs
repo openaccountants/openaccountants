@@ -58,7 +58,7 @@ test("ATO's Juliet example: $3,600 for 25 days or 50 days at an assumed 10%", ()
   assert.equal(paid.notionalEarnings, "24.74");
   assert.equal(paid.upliftPercent, 60);
   assert.equal(paid.administrativeUplift, "14.84");
-  assert.deepEqual(paid.reason_codes, ["caller_attested_inputs", "assumed_gic_rate"]);
+  assert.deepEqual(paid.reason_codes, ["caller_supplied_inputs", "assumed_gic_rate"]);
   // The late period ends the day before the assessment (s 6(1)), so 50 days of earnings need an assessment on day 51.
   const unpaid = check({ ...input, assessmentDay: "2027-02-25" });
   assert.equal(unpaid.notionalEarningsDays, 50);
@@ -108,10 +108,10 @@ test("the maximum contributions base of $270,830 caps the SG amount (s 10A(6))",
   const partial = check(record({ qeDay: "2026-09-03", earlierQualifyingEarningsThisYear: "270000", onTimeContributions: "99.60" }));
   assert.equal(partial.verdict, "no_shortfall");
   assert.equal(partial.sgAmount, "99.60");
-  assert.deepEqual(partial.reason_codes, ["caller_attested_inputs", "on_time_contributions_cover"]);
+  assert.deepEqual(partial.reason_codes, ["caller_supplied_inputs", "on_time_contributions_cover"]);
   const reached = check(record({ qeDay: "2026-09-03", earlierQualifyingEarningsThisYear: "270830" }));
   assert.equal(reached.sgAmount, "0.00");
-  assert.deepEqual(reached.reason_codes, ["caller_attested_inputs", "maximum_contributions_base_reached"]);
+  assert.deepEqual(reached.reason_codes, ["caller_supplied_inputs", "maximum_contributions_base_reached"]);
   const below = check(record({ qeDay: "2026-09-03", earlierQualifyingEarningsThisYear: "270829.99", onTimeContributions: "0" }));
   assert.equal(below.sgAmount, "0.00");
   assert.equal(below.verdict, "no_shortfall");

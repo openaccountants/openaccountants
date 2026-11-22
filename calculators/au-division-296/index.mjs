@@ -50,16 +50,16 @@ function decimal(value, scale = 1n) {
  * @param {object} input
  * @param {string} input.incomeYear Supported year: "2026-27".
  * @param {string} input.totalSuperBalanceAtYearEnd Total superannuation balance at 30 June 2027 with
- *   LRBA amounts left out (s 296-260), AUD decimal string, caller-attested.
+ *   LRBA amounts left out (s 296-260), AUD decimal string, caller-supplied.
  * @param {string} input.totalSuperEarnings Total superannuation earnings for the year, AUD decimal
- *   string that may be negative, caller-attested.
+ *   string that may be negative, caller-supplied.
  * @param {boolean} input.protectedOfficeOrFund At any time in the year: an interest in, or a death
  *   benefit income stream from, a constitutionally protected fund; an office or death benefit in
  *   s 296-55(3) items 2 to 5; or a State higher level office, held now or before. True is refused.
- *   Caller-attested.
- * @param {boolean} input.childRecipient s 296-20, caller-attested.
- * @param {boolean} input.structuredSettlementContribution s 296-25, caller-attested.
- * @param {boolean} input.diedOnOrBeforeYearEnd ITTPA s 296-1(3), caller-attested.
+ *   Caller-supplied.
+ * @param {boolean} input.childRecipient s 296-20, caller-supplied.
+ * @param {boolean} input.structuredSettlementContribution s 296-25, caller-supplied.
+ * @param {boolean} input.diedOnOrBeforeYearEnd ITTPA s 296-1(3), caller-supplied.
  * @returns {object} JSON-safe estimate; shares and money are decimal strings or null.
  */
 export function estimateDivision296(input) {
@@ -121,9 +121,9 @@ export function estimateDivision296(input) {
   return {
     ...base,
     verdict: "estimate_calculated",
-    reason_codes: ["caller_attested_inputs", code],
+    reason_codes: ["caller_supplied_inputs", code],
     reasons: [
-      "The balance, the earnings and the exception answers are caller-attested; this calculator has not verified them. The ATO assesses the tax from what funds report.",
+      "The balance, the earnings and the exception answers are caller-supplied; this calculator has not verified them. The ATO assesses the tax from what funds report.",
       exception ? exception[2] : outcomes[code],
     ],
     incomeYear: input.incomeYear,

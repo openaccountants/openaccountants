@@ -59,7 +59,7 @@ function maximumFrankingCredit(rate) {
 /**
  * @param {object} input
  * @param {string} input.incomeYear "YYYY-YY", 2021-22 to 2026-27.
- * @param {"company"} input.entityType Caller-attested: a company, not acting as a trustee, to which
+ * @param {"company"} input.entityType Caller-supplied: a company, not acting as a trustee, to which
  *   only s 23(2) applies. The refused types in rules.json are refused by name.
  * @param {string} input.aggregatedTurnover This year's aggregated turnover (ITAA 1997 s 328-115), dollars.
  * @param {string} input.assessableIncome This year's assessable income, dollars.

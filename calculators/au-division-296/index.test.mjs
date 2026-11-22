@@ -23,7 +23,7 @@ const calculated = ["incomeYear", "liable", "largeBalanceSharePercent", "veryLar
 test("EM Example 1.1: $4 million and $100,000 of earnings give $3,750", () => {
   const result = estimate("4000000", "100000");
   assert.equal(result.verdict, "estimate_calculated");
-  assert.deepEqual(result.reason_codes, ["caller_attested_inputs", "liable"]);
+  assert.deepEqual(result.reason_codes, ["caller_supplied_inputs", "liable"]);
   assert.equal(result.liable, true);
   assert.deepEqual(figures(result), ["25.00", "0.00", "25000.00", "0.00", "3750.00", "0.00", "3750.00"]);
   assert.equal(result.reason_codes.length, result.reasons.length);

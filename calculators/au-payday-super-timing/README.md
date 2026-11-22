@@ -27,7 +27,7 @@ const result = assessPaydaySuperTiming({
 
 Dates are `YYYY-MM-DD` strings. Other forms, impossible dates, timestamps, numbers and `Date`
 objects are rejected. The optional inputs claim an extension under the s 18C(2) table; each is
-the caller's attestation, which the calculator does not verify.
+supplied by the caller, and the calculator does not verify it.
 
 | Input | Required meaning |
 | --- | --- |

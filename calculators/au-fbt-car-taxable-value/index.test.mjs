@@ -41,7 +41,7 @@ test("au-fbt Example 1: $40,000 base value for all 365 days less $1,000 is $7,00
   assert.equal(result.statutoryValue, "7000.00");
   assert.equal(result.operatingCostValue, null);
   assert.equal(result.taxableValue, "7000.00");
-  assert.deepEqual(result.reason_codes, ["caller_attested_inputs", "statutory"]);
+  assert.deepEqual(result.reason_codes, ["caller_supplied_inputs", "statutory"]);
   assert.equal(result.reason_codes.length, result.reasons.length);
   assert.doesNotThrow(() => JSON.stringify(result));
 });
@@ -97,7 +97,7 @@ test("s 10(5): a higher operating cost value gives way to the statutory formula;
   assert.equal(higher.operatingCostValue, "13000.00");
   assert.equal(higher.method, "statutory");
   assert.equal(higher.taxableValue, "8000.00");
-  assert.deepEqual(higher.reason_codes, ["caller_attested_inputs", "statutory_lower", "statutory"]);
+  assert.deepEqual(higher.reason_codes, ["caller_supplied_inputs", "statutory_lower", "statutory"]);
   const tie = check({ ...operatingCar, operatingCost: "40000" });
   assert.equal(tie.operatingCostValue, "8000.00");
   assert.equal(tie.method, "operating_cost");

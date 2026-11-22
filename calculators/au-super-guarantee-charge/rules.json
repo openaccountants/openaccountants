@@ -46,7 +46,7 @@
   ],
   "limits": [
     "An estimate requiring professional review; the ATO calculates and assesses the charge for each QE day and its notice of assessment sets it.",
-    "Every amount, date and answer is caller-attested: which payments are qualifying earnings, which contributions are eligible contributions applied to this QE day and when each fund received them, and whether reg 13C applies are not verified.",
+    "Every amount, date and answer is caller-supplied: which payments are qualifying earnings, which contributions are eligible contributions applied to this QE day and when each fund received them, and whether reg 13C applies are not verified.",
     "The choice loading (s 20A) is not computed: add it where the choice of fund rules were not met.",
     "Not covered: A QE day with any Norfolk Island salary or wages under Payday Super Act Sch 1 item 189, defined benefit interests and notional contributions (s 18A(3)), employer shortfall exemption certificates (s 17B), contributions made from 1 to 28 July 2026 that Payday Super Act Sch 1 item 186 first applies to a June 2026 quarter shortfall (supply only the remainder), a disclosed contribution with no receipt day (s 36(3)), and general interest charge or penalties once the charge is payable.",
     "General interest charge rates after 31 December 2026 were not published on the check date: a late period that runs past it needs an assumed annual rate, and the result counts those days."

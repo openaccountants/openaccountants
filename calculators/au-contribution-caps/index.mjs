@@ -185,9 +185,9 @@ export function assessContributionCaps(input) {
   return {
     ...base,
     verdict: "caps_calculated",
-    reason_codes: ["caller_attested_inputs", ...findings.map(([, code]) => code)],
+    reason_codes: ["caller_supplied_inputs", ...findings.map(([, code]) => code)],
     reasons: [
-      "Every amount and fact is caller-attested; this calculator has not verified them.",
+      "Every amount and fact is caller-supplied; this calculator has not verified them.",
       ...findings.map(([, , reason]) => reason),
     ],
     incomeYear: input.incomeYear,

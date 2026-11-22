@@ -35,7 +35,7 @@ test("ATO example: Jan's $240,000 and $15,000 give $5,000 taxable and $750 tax",
     assert.equal(result.taxableContributions, "5000.00");
     assert.equal(result.division293TaxEstimate, "750.00");
     assert.equal(result.liable, true);
-    assert.deepEqual(result.reason_codes, ["caller_attested_inputs", "liable"]);
+    assert.deepEqual(result.reason_codes, ["caller_supplied_inputs", "liable"]);
     assert.doesNotThrow(() => JSON.stringify(result));
   }
 });
@@ -45,7 +45,7 @@ test("$250,000.00 exactly is not over the threshold; each cent above is, rounded
   assert.equal(at.liable, false);
   assert.equal(at.taxableContributions, "0.00");
   assert.equal(at.division293TaxEstimate, "0.00");
-  assert.deepEqual(at.reason_codes, ["caller_attested_inputs", "not_above_threshold"]);
+  assert.deepEqual(at.reason_codes, ["caller_supplied_inputs", "not_above_threshold"]);
   for (const [income, taxable, tax] of [
     ["230000.01", "0.01", "0.00"], ["230000.03", "0.03", "0.00"], ["230000.04", "0.04", "0.01"],
     ["230000.10", "0.10", "0.02"], ["230000.30", "0.30", "0.05"], ["230001", "1.00", "0.15"],
@@ -69,7 +69,7 @@ test("nil low tax contributions give no taxable contributions, whatever the inco
   assert.equal(result.excessOverThreshold, "150000.00");
   assert.equal(result.taxableContributions, "0.00");
   assert.equal(result.liable, false);
-  assert.deepEqual(result.reason_codes, ["caller_attested_inputs", "no_low_tax_contributions"]);
+  assert.deepEqual(result.reason_codes, ["caller_supplied_inputs", "no_low_tax_contributions"]);
   const allExcess = check({ taxableIncomeForSurchargePurposes: "400000", lowTaxContributedAmounts: "40000", excessConcessionalContributions: "40000" });
   assert.equal(allExcess.lowTaxContributions, "0.00");
   assert.equal(allExcess.liable, false);

@@ -39,7 +39,7 @@ That is the ATO's example of Sam, whose balance the ATO gives only as below $500
 ## Inputs and scope
 
 Amounts are non-negative AUD decimal strings with at most 2 decimal places; a missing amount is
-not zero. Every input is the caller's attestation, which the calculator does not verify.
+not zero. Every input is supplied by the caller, and the calculator does not verify it.
 
 | Input | Required meaning |
 | --- | --- |

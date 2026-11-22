@@ -165,9 +165,9 @@ export function assessSuperGuaranteeCharge(input) {
       administrativeUplift: "0.00",
       chargeBeforeChoiceLoading: "0.00",
       verdict: "no_shortfall",
-      reason_codes: ["caller_attested_inputs", counted === 0n ? "maximum_contributions_base_reached" : "on_time_contributions_cover"],
+      reason_codes: ["caller_supplied_inputs", counted === 0n ? "maximum_contributions_base_reached" : "on_time_contributions_cover"],
       reasons: [
-        "Every amount, date and answer is caller-attested; this calculator has not verified them.",
+        "Every amount, date and answer is caller-supplied; this calculator has not verified them.",
         counted === 0n
           ? "Earlier qualifying earnings in 2026-27 have reached the maximum contributions base, so the SG amount is nil (s 10A(6))."
           : "On-time contributions cover the SG amount, so there is no base shortfall and no SG charge for this QE day before any choice loading (ss 16B(1) and 18C).",
@@ -248,9 +248,9 @@ export function assessSuperGuaranteeCharge(input) {
     administrativeUplift: formatMoney(upliftAmount),
     chargeBeforeChoiceLoading: formatMoney(finalShortfall + notional + upliftAmount),
     verdict: "charge_estimated",
-    reason_codes: ["caller_attested_inputs", assumed === null ? "published_gic_rates" : "assumed_gic_rate"],
+    reason_codes: ["caller_supplied_inputs", assumed === null ? "published_gic_rates" : "assumed_gic_rate"],
     reasons: [
-      "Every amount, date and answer is caller-attested; this calculator has not verified them.",
+      "Every amount, date and answer is caller-supplied; this calculator has not verified them.",
       assumed === null
         ? "Every day of notional earnings uses a published GIC rate."
         : `${assumedDays} days of notional earnings use the assumed GIC rate of ${input.assumedGicAnnualPercent}% a year: recompute when the ATO publishes the rate.`,

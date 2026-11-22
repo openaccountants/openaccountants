@@ -19,7 +19,7 @@ const result = estimateDivision296({
   structuredSettlementContribution: false,
   diedOnOrBeforeYearEnd: false,
 });
-// verdict: "estimate_calculated", reason_codes: ["caller_attested_inputs", "liable"]
+// verdict: "estimate_calculated", reason_codes: ["caller_supplied_inputs", "liable"]
 // largeBalanceSharePercent: "75.00", veryLargeBalanceSharePercent: "16.67"
 // taxableSuperannuationEarnings: "375000.00", veryLargeBalanceEarningsComponent: "83350.00"
 // taxOnTaxableEarnings: "56250.00", taxOnVeryLargeComponent: "8335.00"
@@ -37,8 +37,8 @@ calculator follows the enacted text, not the earlier proposals.
 ## Inputs and scope
 
 Money is an AUD decimal string with at most 15 whole digits and 2 decimal places, such as
-`"4000000"` or `"-1250.50"`. Numbers, grouped digits and exponents are rejected. Every input is the
-caller's attestation, which the calculator does not verify.
+`"4000000"` or `"-1250.50"`. Numbers, grouped digits and exponents are rejected. Every input is supplied
+by the caller, and the calculator does not verify it.
 
 | Input | Required meaning |
 | --- | --- |

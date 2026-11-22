@@ -24,7 +24,7 @@ const result = assessActivityStatementDueDate({ form: "quarterly", period: "2026
 | --- | --- |
 | `form` | `monthly`, `quarterly`, or `head_company_payg_instalment` for a consolidated group head company's quarterly PAYG instalment activity statement |
 | `period` | `YYYY-MM`: the calendar month, or the last month of a standard quarter (March, June, September or December) |
-| `concession` | Optional: `none` (the default), `online` or `agent`. The caller's attestation that the statement qualifies; not verified |
+| `concession` | Optional: `none` (the default), `online` or `agent`. The caller states that the statement qualifies; not verified |
 | `turnoverUpTo10Million`, `reportsGstMonthly`, `deferredGst` | Booleans, required for a December monthly statement with `agent` and ignored otherwise: annual turnover is up to $10 million, GST is reported monthly, the business is registered for deferred GST |
 
 `online` claims the 2-week concession for a quarterly activity statement received and lodged

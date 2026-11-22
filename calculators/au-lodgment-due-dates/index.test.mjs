@@ -59,7 +59,7 @@ for (const [form, period, concession, rule, nominalDueDate, dueDate] of [
     assert.equal(result.dueDate, dueDate);
     assert.ok(![0, 6].includes(weekday(result.dueDate)));
     assert.equal(result.reason_codes.includes("moved_to_business_day"), nominalDueDate !== dueDate);
-    assert.equal(result.reason_codes.includes("caller_attested_concession"), concession !== "none");
+    assert.equal(result.reason_codes.includes("caller_supplied_concession"), concession !== "none");
     assert.equal(result.reason_codes.length, result.reasons.length);
     assert.doesNotThrow(() => JSON.stringify(result));
   });
@@ -123,7 +123,7 @@ for (const [label, input, dueDate] of [
     assert.equal(result.rule, "original");
     assert.equal(result.dueDate, dueDate);
     assert.equal(result.reason_codes[0], "concession_not_applicable");
-    assert.ok(!result.reason_codes.includes("caller_attested_concession"));
+    assert.ok(!result.reason_codes.includes("caller_supplied_concession"));
   });
 }
 

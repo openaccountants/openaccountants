@@ -36,8 +36,8 @@ That is the ATO's example of Jan.
 ## Inputs and scope
 
 Amounts are non-negative AUD decimal strings with at most 2 decimal places. Every amount is
-required, `"0"` when there is none; a missing amount is not zero. Every input is the caller's
-attestation, which the calculator does not verify.
+required, `"0"` when there is none; a missing amount is not zero. Every input is supplied by the caller,
+and the calculator does not verify it.
 
 | Input | Required meaning |
 | --- | --- |
@@ -76,7 +76,7 @@ $250,000 does not exceed the threshold. `combinedAmount` is `division293Income` 
 ## Outputs and limits
 
 Results include the verdict, reason codes (`liable`, `not_above_threshold` or
-`no_low_tax_contributions` after `caller_attested_inputs`), reasons, sources, the rounding note,
+`no_low_tax_contributions` after `caller_supplied_inputs`), reasons, sources, the rounding note,
 the limits and the amounts above.
 
 Out of scope: which contributions are low tax contributed amounts, debt accounts, deferral,

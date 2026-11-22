@@ -110,7 +110,7 @@ export function assessCarFringeBenefit(input) {
     return stop("unknown", "private_use_days", `privateUseDays must be a whole number from 0 to ${heldDays}, the days from ${start >= held ? year.start : input.earliestHoldingDate} to ${year.end}.`);
   }
 
-  const reason_codes = ["caller_attested_inputs"];
+  const reason_codes = ["caller_supplied_inputs"];
   const reasons = ["Every input is caller-supplied; this calculator has not verified them, nor whether a car benefit arises or is exempt."];
   const add = (code, reason) => {
     reason_codes.push(code);
