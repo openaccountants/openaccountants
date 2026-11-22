@@ -43,9 +43,9 @@ type: computation
 - **Returns:**
   - **Service suppliers:** an electronic return each month, due the last day of the second month after the month the surcharges were collected (R&TC 41051, 41052).
   - **Prepaid MTS sellers that are not service suppliers:** a quarterly return, due the last day of the month after the quarter (R&TC 41053.1).
-- **Late payment or filing:** 10% plus interest (R&TC 41095).
+- **Late payment or filing (service suppliers):** 10% plus interest (R&TC 41095).
 
-**Tax year.** Tax year label 2026-27. The 2026 rates apply to access lines and prepaid transactions from 1 January to 31 December 2026, and the 2027 rates from 1 January to 31 December 2027 ([CDTFA L-1012](https://cdtfa.ca.gov/formspubs/L1012.pdf); [CDTFA L-1051](https://www.cdtfa.ca.gov/formspubs/L1051.pdf)). The rates follow the month of service or the retail transaction (R&TC 41031).
+**Tax year.** Tax year label 2026-27. The 2026 rates apply to access lines and prepaid transactions from 1 January to 31 December 2026, and the 2027 rates from 1 January to 31 December 2027 ([CDTFA L-1012](https://cdtfa.ca.gov/formspubs/L1012.pdf); [CDTFA L-1051](https://www.cdtfa.ca.gov/formspubs/L1051.pdf)). Each new amount "shall be effective with respect to access lines and the purchase of prepaid mobile telephony services on or after January 1 of the next succeeding calendar year" ([R&TC 41031](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch2-all.html)). Service supplier returns are due by reference to the month the surcharges were collected (R&TC 41051, 41052). How a billing cycle that straddles 1 January 2027 is treated is listed under Not yet confirmed.
 
 **Circular 230 disclosure.** This material is general information, not written advice on a specific transaction under 31 CFR 10.37. It is not intended to be used, and cannot be used, to avoid penalties.
 
@@ -84,10 +84,10 @@ Out of scope, and where it goes:
 
 | Item | Figure | Conditions | Source |
 | --- | --- | --- | --- |
-| 911 surcharge, 2027 | USD 0.59 per access line per month, or per prepaid retail transaction | "January 1, 2027, through December 31, 2027" | [CDTFA L-1051](https://www.cdtfa.ca.gov/formspubs/L1051.pdf) |
+| 911 surcharge, 2027 | USD 0.59 per access line per month, or per prepaid retail transaction | "January 1, 2027, through December 31, 2027" (per access line); prepaid: "January 1, 2027 through December 31, 2027", per retail transaction | [CDTFA L-1051](https://www.cdtfa.ca.gov/formspubs/L1051.pdf); [CDTFA prepaid MTS rates](https://cdtfa.ca.gov/taxes-and-fees/mts.htm) |
 | 988 surcharge, 2027 | USD 0.11 per access line per month, or per prepaid retail transaction | same | same |
-| 911 surcharge, 2026 | USD 0.41 | "January 1, 2026, through December 31, 2026" | [CDTFA L-1012](https://cdtfa.ca.gov/formspubs/L1012.pdf) |
-| 988 surcharge, 2026 | USD 0.05 | same | same |
+| 911 surcharge, 2026 | USD 0.41 per access line per month, or per prepaid retail transaction | "January 1, 2026, through December 31, 2026" (per access line); prepaid page lists USD 0.41 for 1 January 2025 through 31 December 2026 | [CDTFA L-1012](https://cdtfa.ca.gov/formspubs/L1012.pdf); [CDTFA prepaid MTS rates](https://cdtfa.ca.gov/taxes-and-fees/mts.htm) |
+| 988 surcharge, 2026 | USD 0.05 per access line per month, or per prepaid retail transaction | "January 1, 2026, through December 31, 2026" | same |
 | 911 surcharge cap | USD 0.80 per access line per month | "in no event shall the surcharge amount in any month be greater than eighty cents ($0.80) per access line per month" | [R&TC 41030(b)(1)](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch2-all.html) |
 | 988 surcharge cap | USD 0.30 per access line per month | "in no event shall the surcharge amount in any month be greater than thirty cents ($0.30) per access line per month" | [R&TC 41030(b)(3)](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch2-all.html) |
 | Prepaid MTS surcharge | equal to the per-line amounts, per retail transaction | "equal to the amount set forth in subdivision (b) for each retail transaction in this state" | [R&TC 41030(f)(2)](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch2-all.html) |
@@ -95,8 +95,8 @@ Out of scope, and where it goes:
 | Service supplier return and payment | last day of the second month after the month collected | Monthly, filed electronically | [R&TC 41051, 41052(a)](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html) |
 | Prepaid seller (not a service supplier) return and payment | last day of the month after each calendar quarter | Filed electronically | [R&TC 41053.1](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html) |
 | Electronic funds transfer required | estimated liability averaging USD 20,000 or more per month | Service suppliers, as determined by CDTFA | [R&TC 41060(a)](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html) |
-| Late payment penalty | 10% of the surcharge | Plus interest at the modified adjusted rate under R&TC 6591.5 | [R&TC 41095(a)](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html) |
-| Late return penalty | 10% of the surcharge for the period | Penalties under 41095 capped at 10% of the surcharge for any one return | [R&TC 41095(b), (c)](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html) |
+| Late payment penalty, service suppliers | 10% of the surcharge | Plus interest at the modified adjusted rate under R&TC 6591.5; prepaid sellers that are not service suppliers remit under the Sales and Use Tax Law (R&TC 41028(f)), see Not yet confirmed | [R&TC 41095(a)](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html) |
+| Late return penalty, service suppliers | 10% of the surcharge for the period | Returns due under R&TC 41052 or 41052.1; penalties under 41095 capped at 10% of the surcharge for any one return | [R&TC 41095(b), (c)](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html) |
 | Deficiency: negligence; fraud | 10%; 25% of the determination | Negligence or intentional disregard; fraud or intent to evade | [R&TC 41073, 41074](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html) |
 | Refusal-to-pay list | USD 3 or more, cumulative, per service user | Names, addresses and reasons, with each return | [R&TC 41024, 41052(b)](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html) |
 | Records | 4 years from when the surcharge is due | Service suppliers and sellers | [R&TC 41056](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html) |
@@ -158,20 +158,21 @@ Out of scope, and where it goes:
 
 Both cases are made up for illustration. The rates come from CDTFA L-1051 and L-1012.
 
-**Case 1: VoIP and wireline supplier, January 2027 return, and the change from 2026.**
+**Case 1: VoIP and wireline supplier, January 2027 return, the change from 2026, and a late payment.**
 
-- **Lines:** a service supplier bills 12,000 access lines with California billing addresses for January 2027. Of these:
+- **Lines:** a service supplier bills 12,000 access lines with California billing addresses for January 2027, and collects those bills in January 2027. Of these:
   - 150 are Lifeline lines (exempt under 41046);
   - 50 are VoIP lines for customers whose place of primary use is outside California (exempt under 41020(b)(2)).
 - **Taxable lines:** 12,000 - 150 - 50 = 11,800.
 - **911 surcharge:** 11,800 x USD 0.59 = USD 6,962.00.
 - **988 surcharge:** 11,800 x USD 0.11 = USD 1,298.00.
-- **Total:** USD 8,260.00, reported as two separate amounts. The return and payment are due Wednesday 31 March 2027 (the last day of the second month after January).
+- **Total:** USD 8,260.00, reported as two separate amounts. The return and payment for surcharges collected in January are due Wednesday 31 March 2027 (the last day of the second month after the month collected).
 - **At the 2026 rates:** the same lines would have owed 11,800 x USD 0.46 = USD 5,428.00, so January 2027 costs USD 2,832.00 more.
 - **EFT:** at about USD 8,260 a month, the supplier is under the USD 20,000 average monthly threshold for mandatory electronic funds transfer, unless CDTFA determines otherwise.
+- **Late payment:** the supplier files on time but pays on 20 April 2027. The penalty is 10% x USD 8,260.00 = USD 826.00 (R&TC 41095(a)), plus interest at the modified adjusted rate (the rate was not stated on the pages read). Penalties for one return under 41095 are capped at 10% (41095(c)).
 
 ```oa-check
-name: Service supplier January 2027 911 and 988 surcharges, and change from 2026
+name: Service supplier January 2027 911 and 988 surcharges, change from 2026, late payment
 inputs:
   lines_billed: 12000
   lifeline_lines: 150
@@ -180,6 +181,7 @@ inputs:
   rate_988_2027: 0.11
   rate_911_2026: 0.41
   rate_988_2026: 0.05
+  penalty_rate: 0.10
 steps:
   - taxable_lines: lines_billed - lifeline_lines - out_of_state_primary_use
   - surcharge_911: taxable_lines * rate_911_2027
@@ -187,6 +189,8 @@ steps:
   - total_2027: surcharge_911 + surcharge_988
   - total_2026_rates: taxable_lines * (rate_911_2026 + rate_988_2026)
   - increase: total_2027 - total_2026_rates
+  - late_penalty: total_2027 * penalty_rate
+  - total_with_penalty: total_2027 + late_penalty
 expected:
   taxable_lines: 11800
   surcharge_911: 6962.00
@@ -194,40 +198,45 @@ expected:
   total_2027: 8260.00
   total_2026_rates: 5428.00
   increase: 2832.00
+  late_penalty: 826.00
+  total_with_penalty: 9086.00
 ```
 
-**Case 2: convenience-store prepaid MTS seller, first quarter of 2027, paid late.**
+**Case 2: prepaid MTS seller with store and online sales, first quarter of 2027.**
 
-- **Transactions:** a retail store (not a service supplier) makes 3,000 in-store retail sales of prepaid wireless top-ups between 1 January and 31 March 2027.
-- **Exempt:** 40 are sold to consumers certified for Lifeline, and the store is authorized to provide Lifeline service. Under R&TC 41028(h) both conditions must hold.
-- **Taxable transactions:** 3,000 - 40 = 2,960. Each carries the flat USD 0.59 plus USD 0.11, whatever the top-up's price.
-- **911 surcharge:** 2,960 x USD 0.59 = USD 1,746.40.
-- **988 surcharge:** 2,960 x USD 0.11 = USD 325.60.
-- **Total:** USD 2,072.00, due with the electronic return by Friday 30 April 2027 (the last day of the month after the quarter).
-- **Late payment:** the store pays on 20 May 2027. The penalty is 10% x USD 2,072.00 = USD 207.20, plus interest at the modified adjusted rate (the rate was not stated on the pages read). Penalties for one return under R&TC 41095 are capped at 10%, so a late return adds nothing further.
+- **Seller:** a retailer (not a service supplier) sells prepaid wireless top-ups from 1 January to 31 March 2027.
+  - **In store:** 3,000 sales at its California store. These are point-of-sale transactions in California (R&TC 41028(e)(1)).
+  - **Online:** 200 sales.
+    - 150 to customers whose billing or shipping address is in California: known-address transactions in California ((e)(2)).
+    - 30 with no address available, where the mobile number is associated with California: deemed in California ((e)(3)).
+    - 20 to customers whose known address is in Oregon: not in California, so no California surcharges.
+- **Taxable transactions:** 3,000 + 150 + 30 = 3,180. Each carries the flat USD 0.59 plus USD 0.11, whatever the top-up's price.
+- **911 surcharge:** 3,180 x USD 0.59 = USD 1,876.20.
+- **988 surcharge:** 3,180 x USD 0.11 = USD 349.80.
+- **Total:** USD 2,226.00, due with the electronic prepaid MTS return by Friday 30 April 2027 (the last day of the month after the quarter, R&TC 41053.1).
+- **Local charges:** any local charges on these sales are computed separately as a percentage of price and are out of scope here.
 
 ```oa-check
-name: Prepaid MTS seller Q1 2027 surcharges per transaction, with late-payment penalty
+name: Prepaid MTS seller Q1 2027 surcharges per transaction, store and online sourcing
 inputs:
-  transactions: 3000
-  lifeline_exempt: 40
+  store_sales: 3000
+  online_known_ca_address: 150
+  online_ca_mobile_number_only: 30
+  online_known_oregon_address: 20
   rate_911_2027: 0.59
   rate_988_2027: 0.11
-  penalty_rate: 0.10
 steps:
-  - taxable_transactions: transactions - lifeline_exempt
+  - taxable_transactions: store_sales + online_known_ca_address + online_ca_mobile_number_only
   - surcharge_911: taxable_transactions * rate_911_2027
   - surcharge_988: taxable_transactions * rate_988_2027
   - total_due: surcharge_911 + surcharge_988
-  - late_penalty: total_due * penalty_rate
-  - total_with_penalty: total_due + late_penalty
+  - all_transactions: taxable_transactions + online_known_oregon_address
 expected:
-  taxable_transactions: 2960
-  surcharge_911: 1746.40
-  surcharge_988: 325.60
-  total_due: 2072.00
-  late_penalty: 207.20
-  total_with_penalty: 2279.20
+  taxable_transactions: 3180
+  surcharge_911: 1876.20
+  surcharge_988: 349.80
+  total_due: 2226.00
+  all_transactions: 3200
 ```
 
 ## When to refuse or refer
@@ -250,10 +259,11 @@ expected:
   - **Service suppliers:** required when the estimated liability averages USD 20,000 or more a month ([R&TC 41060(a)](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html)).
   - **Prepaid sellers:** a seller (not a service supplier) that pays sales tax by EFT also pays these surcharges by EFT ([R&TC 41028(g)](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch2-all.html)).
 - **Extensions:** CDTFA may extend a return or payment by up to one month for good cause, or up to three months after a disaster, if asked before the period ends ([R&TC 41054](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html)).
-- **Penalties and interest:**
-  - **Late:** 10% for late payment and 10% for a late return, capped at 10% per return, plus interest ([R&TC 41095](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html)).
+- **Penalties and interest (service suppliers):**
+  - **Late:** 10% for late payment and 10% for a late return (a return due under 41052 or 41052.1), capped at 10% per return, plus interest ([R&TC 41095](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html)).
   - **EFT payers:** 41060 applies instead of 41095: 10% for a late return, 10% for paying by other than EFT, and 10% for late payment, together capped at 10% of the surcharges for any one return ([R&TC 41060(d), (e), (f), (h)](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html)).
   - **Deficiencies:** 10% for negligence and 25% for fraud ([R&TC 41073, 41074](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch4-all.html)).
+- **Prepaid MTS sellers that are not service suppliers:** their remittances and returns are administered under the Sales and Use Tax Law, Part 1 ([R&TC 41028(f)](https://cdtfa.ca.gov/lawguides/vol4/etusl/etusl-ch2-all.html)). The Part 1 penalty and interest rules were not read for this skill: see Not yet confirmed.
 
 ## Completion checklist
 
@@ -281,6 +291,6 @@ expected:
 | Same guide, Telecommunication Service Suppliers. Read for registration, monthly electronic return, due-date example, weekend rule, bulk filing, EFT and refunds. | https://cdtfa.ca.gov/industry/sellers-of-prepaid-mobile-telephony-services-and-telecommunication-service-suppliers/telecommunication-service-suppliers.htm | 2026-11-22 |
 | Same guide, Sellers. Read for prepaid MTS account and seller's permit, separate electronic return, and the 2% reimbursement (local charges only). | https://cdtfa.ca.gov/industry/sellers-of-prepaid-mobile-telephony-services-and-telecommunication-service-suppliers/sellers.htm | 2026-11-22 |
 
-Not yet confirmed: the current modified adjusted interest rate under R&TC 6591.5 (not read); whether the weekend and holiday due-date rule on CDTFA's service supplier page also applies to the quarterly prepaid seller return (the seller page read does not say); the two exemptions CDTFA's industry page still lists (news-gathering toll lines and common carriers' wide-area telephone service lines), which the 2022 amendment deleted from R&TC 41027; the statutory basis for CDTFA's PBX concurrent-call rule (stated on the CDTFA page, not found in the sections read); Cal OES's 2027 rate calculation summary (not read); the text of the Mobile Telecommunications Sourcing Act (Public Law 106-252), referenced but not read.
+Not yet confirmed: the current modified adjusted interest rate under R&TC 6591.5 (not read); the penalty and interest rules for prepaid MTS sellers that are not service suppliers, whose remittances and returns are administered under the Sales and Use Tax Law (R&TC 41028(f)), not read here; how a billing cycle that straddles 1 January 2027 is split between the 2026 and 2027 amounts (R&TC 41031 makes each amount effective for access lines on or after 1 January, and returns are due by the month collected; no CDTFA guidance on split cycles was found in the pages read); whether the weekend and holiday due-date rule on CDTFA's service supplier page also applies to the quarterly prepaid seller return (the seller page read does not say); the two exemptions CDTFA's industry page still lists (news-gathering toll lines and common carriers' wide-area telephone service lines), which the 2022 amendment deleted from R&TC 41027; the statutory basis for CDTFA's PBX concurrent-call rule (stated on the CDTFA page, not found in the sections read); Cal OES's 2027 rate calculation summary (not read); the text of the Mobile Telecommunications Sourcing Act (Public Law 106-252), referenced but not read.
 
 **Disclaimer.** This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon. The most up-to-date version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com).
