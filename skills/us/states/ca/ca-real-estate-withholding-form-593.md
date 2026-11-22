@@ -67,7 +67,7 @@ Out of scope, and where it goes:
 | --- | --- | --- | --- |
 | Sales price method | 3 1/3% (.0333) | Of the sales price times the ownership percentage; also applies to boot, the principal part of installment payments and a failed exchange | [2026 Form 593 instructions](https://www.ftb.ca.gov/forms/2026/2026-593-instructions.html) |
 | No withholding: low sales price | USD 100,000 or less | Total sales price; parcels or units sold in one escrow are added together, so withholding applies if the total is over USD 100,000 even when each is under | same; [FTB Pub. 1016](https://www.ftb.ca.gov/forms/misc/1016.html) |
-| Optional gain method, individual | 12.3% | Of the estimated gain on line 28 | same |
+| Optional gain method, individual | 12.3% | Of the estimated gain on line 28 | [2026 Form 593 instructions](https://www.ftb.ca.gov/forms/2026/2026-593-instructions.html) |
 | Optional gain method, non-California partnership | 12.3% | same | same |
 | Optional gain method, corporation | 8.84% | same | same |
 | Optional gain method, bank and financial corporation | 10.84% | same | same |
