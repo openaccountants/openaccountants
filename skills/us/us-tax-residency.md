@@ -1,10 +1,10 @@
 ---
 name: us-tax-residency
 description: Decide whether an individual is a US resident or nonresident for federal income tax in 2026, and from which date. Covers US citizens (always resident and taxed on worldwide income), the green card test, the substantial presence test under 26 U.S.C. 7701(b) (at least 31 days in 2026 and 183 weighted days counting all 2026 days, one-third of 2025 days and one-sixth of 2024 days), days that do not count, exempt individuals on F, J, M, Q, A and G visas and their year limits, the closer connection exception on Form 8840, the first-year choice, residency starting and termination dates with the 10-day rule, treaty tie-breakers on Form 8833, the spousal elections under section 6013(g) and (h), and dual-status returns. Trigger on "US tax resident", "substantial presence test", "183-day US test", "green card tax residency", "first year choice", "closer connection exception", "Form 8840", "Form 8843", "dual status return", "nonresident alien", "treaty tie-breaker US", "moving to the US taxes", "leaving the US taxes". Federal only.
-version: "2.0"
+version: "2.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-22
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -229,7 +229,7 @@ Order matters: counting days before removing exempt-individual days makes studen
 | NATO visa dependant | Counts every day |
 | Arrival visit of 10 days or fewer before the real move | Can be disregarded for the starting date with a signed statement; still counted in the 183 |
 | Arrival visit longer than 10 consecutive days | Cannot be split; the starting date is the first day of that visit |
-| Leaves mid-2026 and returns at any time in 2027 | Resident through December 31, 2026 |
+| Leaves mid-2026 and is a US resident at any time in 2027 | Resident through December 31, 2026; a return visit alone does not establish residency in 2027 |
 | Not resident in 2026, will be resident in 2027, arrived late in 2026 | First-year choice possible; return waits until the 2027 test is met |
 | Married on December 31 to a citizen or resident | 6013(g) or (h) can replace dual status with a full-year joint return |
 | Dual citizen holding US citizenship | Resident by citizenship; no treaty tie-breaker escapes it |
@@ -346,6 +346,7 @@ expected:
 | Source | URL | Read on |
 | --- | --- | --- |
 | 26 U.S.C. 7701(b) (govinfo, 2024 edition). Read for (b)(1) the three routes to residence, (b)(2) first and last year and the 10-day rule, (b)(3) the 31-day and 183-day test, multipliers 1, 1/3, 1/6 and the closer connection exception, (b)(4) the first-year election (31 consecutive days, 75 percent, 5 days), (b)(5) exempt individuals and the 2-year, 4-year and 5-year limits, (b)(6) LPR and the treaty sentence, (b)(7) presence, commuters, transit, crew, (b)(9) taxable year and (b)(10) the 3-year rule. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap79-sec7701.htm | 2026-11-13 |
+| Current 26 U.S.C. 7701(b)(2)(B)(iii). Read for the next-year residency condition: "not a resident of the United States at any time during the next calendar year"; a later visit alone does not satisfy a residency test. | https://uscode.house.gov/us/usc/t26/s7701/ | 2026-11-22 |
 | Public Law 119-21 (One Big Beautiful Bill Act), govinfo. Read (searched) for any amendment to 7701(b), 6013 or 877A; found only new 7701(a)(51) and (a)(52) definitions, none touching individual residence. | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
 | 26 U.S.C. 6013 (govinfo). Read for (g) nonresident spouse election, duration, termination and one-election rule, and (h) the year-of-arrival joint return election. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partII-subpartB-sec6013.htm | 2026-11-13 |
 | 26 U.S.C. 6712 (govinfo). Read for the USD 1,000 penalty per failure to disclose a treaty-based position and the reasonable cause waiver. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapB-partI-sec6712.htm | 2026-11-13 |
