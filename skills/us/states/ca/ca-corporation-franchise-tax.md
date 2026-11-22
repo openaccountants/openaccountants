@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 19402)
-Total output lines: 359
-
 ---
 name: ca-corporation-franchise-tax
 description: >
