@@ -37,6 +37,7 @@ Calendar tax year for individuals. Income tax authority: the Franchise Tax Board
 | Workflow, federal and California assembly | us-ca-return-assembly | checked against the law |
 | Bookkeeping | ca-bookkeeping-monthly-close | accountant-reviewed |
 | Formation | ca-formation | checked against the law |
+| IT-IND and IT-CORP, local news outlet journalist credit | ca-local-news-journalist-credit | checked against the law |
 
 Each job in `covered_by` names one skill. The other files in a row with the same domain do a different step of that job (figures, estimates, a filing, a workflow) and link to the owner. `ca-540-es-estimated-tax` was retired on 2026-11-13; its content is in `ca-estimated-tax-540es`. `ca-sales-use-tax` was retired on 2026-11-13; its content is in `california-sales-tax`.
 
