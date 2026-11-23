@@ -852,7 +852,7 @@ Layouts are carried from the prior version and untested. Each treatment assumes 
 | Inland Revenue, IR3 page | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3 | 2026-11-05 | Read in part for who files and the June note |
 | Inland Revenue, IR3 in myIR | https://www.ird.govt.nz/myir-help/what-you-can-do/how-to-file-an-ir3-individual-income-tax-return-in-myir | 2026-11-05 | Read in part for the filing steps |
 | Inland Revenue, provisional tax | https://www.ird.govt.nz/income-tax/provisional-tax | 2026-11-05 | Read in part for who pays |
-| Inland Revenue, standard option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/standard-option | 2026-11-05 | Read in part for the default and the 105% wording |
+| Inland Revenue, standard option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/standard-option | 2026-11-05 | Read in part for the default and the "previous year's RIT plus 5%" wording |
 | Inland Revenue, ratio option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/ratio-option | 2026-11-05 | Read in part for the interest statement |
 | Inland Revenue, interest on provisional tax | https://www.ird.govt.nz/income-tax/provisional-tax/interest-on-provisional-tax | 2026-11-05 | Read in part for the NZD 100 wording |
 | Inland Revenue, first year in business | https://www.ird.govt.nz/income-tax/provisional-tax/paying-tax-in-your-first-year-in-business | 2026-11-05 | Read in part for the early payment discount and rates |
