@@ -1,20 +1,20 @@
 ---
 name: sri-lanka-income-tax
 description: Use this skill whenever asked about Sri Lanka income tax for individuals, sole proprietors, freelancers, and self-employed people for the year of assessment 2026/27 (1 April 2026 to 31 March 2027). Trigger on phrases like how much income tax do I pay in Sri Lanka, APIT, PAYE, personal relief, Inland Revenue Department, IRD, year of assessment, self-assessment instalments, EPF ETF, TIN registration, Asmt_IIT return, withholding tax interest, freelancer tax LKR, or any question about computing or filing personal income tax for a resident or non-resident individual in Sri Lanka. Gives the Rs. 1,800,000 personal relief, the 6% to 36% slabs, the 15% maximum rate on foreign-currency income remitted through a bank, the 45% rate, the capital gains rate rise to 15% from 3 June 2026, credits, instalments, the return date and penalties, under the Inland Revenue Act No. 24 of 2017 as amended up to Act No. 11 of 2026.
-version: "1.0"
+version: "1.1"
 jurisdiction: LK
 tax_year: 2026
 tax_year_notes: "Year of assessment 2026/27 (2026-27), 1 April 2026 to 31 March 2027"
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Sri Lanka Income Tax: individual and self-employed, year of assessment 2026/27, v1.0
+# Sri Lanka Income Tax: individual and self-employed, year of assessment 2026/27, v1.1
 
-Built from the law: not yet approved by an accountant. Figures are taken from the Inland Revenue Act No. 24 of 2017 (IRA) as consolidated by the Inland Revenue Department (IRD), the Inland Revenue (Amendment) Act No. 11 of 2026, and IRD pages read on 14 November 2026. Anything not confirmed there sits on the Not yet confirmed line under Sources.
+Built from the law: not yet approved by an accountant. Figures are taken from the Inland Revenue Act No. 24 of 2017 (IRA), its amendments including Act No. 11 of 2026 and the Inland Revenue Department (IRD) guidance listed under Sources.
 
 ## Scope and who this is for
 
@@ -26,12 +26,13 @@ Built from the law: not yet approved by an accountant. Figures are taken from th
 | Year of assessment (YA) | 1 April to 31 March; this skill: YA 2026/27 |
 | Law | IRA No. 24 of 2017, as amended by Acts No. 10 of 2021, 45 of 2022, 4 and 14 of 2023, 2 of 2025 and 11 of 2026 (certified 3 June 2026) |
 | Filing portal | IRD e-Services (e-filing) |
-| Return deadline | Eight months after the year end: 30 November 2027 for YA 2026/27 (section 93(1)) |
+| Ordinary payment deadline | 30 September 2027, six months after year end (section 82(2)(c)(ii)) |
+| Return deadline | 30 November 2027, eight months after year end (section 93(1)) |
 
 - **Sri Lanka has a progressive personal income tax** on resident individuals and non-resident individuals. The rates in First Schedule paragraph 1(1D) apply "for a year of assessment commencing from April 1, 2025" and were not changed by Act No. 11 of 2026, so they apply to 2026/27.
 - **In:** residents, non-resident citizens and non-citizen non-residents with employment, business, investment or other income; sole proprietors and freelancers.
 - **Out:** company tax (`sri-lanka-corporate-tax`), partnership returns (only the partnership rate is noted), capital gains tax computation (`sri-lanka-capital-gains-tax`), payroll APIT tables (`sri-lanka-payroll`), withholding by payers (`sri-lanka-withholding-tax`), instalment detail (`sri-lanka-provisional-tax-ait`), VAT (`sri-lanka-vat`), SSCL (`sri-lanka-sscl`).
-- **What changed for 2026/27:** capital gains on investment assets of individuals and partnerships rose from 10% to 15% from 3 June 2026, the date Act No. 11 of 2026 became law (its section 36 amending First Schedule paragraphs 1(2)(a) and 2(2)(a)); motor vehicle gains are now listed in section 8(2)(c); instalments moved to a prior-year basis from 1 April 2026; interest of up to Rs. 5,000 for the year no longer needs a return on its own (new section 94(1)(d)); a resident individual with no taxable income may give a self-declaration so that a financial institution does not withhold on interest (new section 84(3)(f)); a return declaring at least 120% of the previous year's tax, paid in full with no refund claim and an affidavit, is accepted as filed (new section 135(7)); senior citizens may file in writing or electronically (section 113(1D)).
+- **2026 amendments:** The rate on taxable investment gains of individuals and partnerships rose from 10% to 15% on 3 June 2026. Motor vehicle gains are listed in section 8(2)(c), with effect from 1 April 2024. The instalment rules changed for YA 2026/27. Sections 94(1)(d) and 135(7) provide the filing exception and assessment protection described below. Section 84(3)(f) permits the prescribed interest self-declaration for qualifying resident individuals. Senior citizens may file in writing or electronically under section 113(1D) from YA 2025/26.
 
 ## Ask the client first
 
@@ -57,16 +58,16 @@ Built from the law: not yet approved by an accountant. Figures are taken from th
 | Services for use outside Sri Lanka, paid in foreign currency and remitted through a bank | Maximum rate of 15% | Paragraph 1(6)(a), from 1 April 2025 | same |
 | Foreign-source gains and profits in foreign currency remitted through a bank | Maximum rate of 15% | Paragraph 1(6)(b), from 1 April 2025 | same |
 | Betting and gaming, manufacture and sale or import and sale of liquor or tobacco | 45% | Paragraph 1(2)(c), from 1 April 2025 | same |
-| Gains from the realisation of investment assets, individuals | 15% from 3 June 2026; 10% before | Act No. 11 of 2026 section 36(1), operative on the date the Bill became an Act | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
-| Partnership: taxable income up to Rs. 1,000,000 | 0%, then 6% on the excess | Partners' shares then exempt at the individual level | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx |
+| Taxable gains from the realisation of investment assets, individuals | 15% from 3 June 2026, 10% earlier in YA 2026/27 | Check Third Schedule exemptions, including quoted shares on a licensed stock exchange. Act No. 11 of 2026 section 36(1). | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
+| Partnership: taxable income up to Rs. 1,000,000 | 0%, then 6% on the excess | Include the partner's share of partnership income under section 55(1) and check the allocation of partnership tax as a credit under section 55(4). | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
 | Partnership investment-asset gains | 15% from 3 June 2026; 10% before | Act No. 11 of 2026 section 36(2) | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
-| Terminal benefits (commuted pension, retiring gratuity, approved loss-of-office scheme, ETF payment) | 0% on the first Rs. 10,000,000; 6% on the next Rs. 10,000,000; 12% on the balance | Paragraph 1(2)(b)(iii) and (3), from 1 January 2020 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
-| Rent relief, resident individual's investment asset | 25% of rent income | IRD tax chart list of reliefs | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx |
-| Solar panel relief, resident individual | Rs. 600,000 a year, up to the expenditure | IRD tax chart list of reliefs | same |
-| Late filing penalty | Greater of 5% of tax owing plus 1% a month, or fifty thousand rupees plus ten thousand rupees a month; capped at four hundred thousand rupees | Section 178 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
-| Late payment penalty | 20% of tax due but not paid (10% for an instalment) | Not paid within 14 days of the due date; section 179 | same |
+| Qualifying terminal benefits | 0% on the first Rs. 10,000,000, 6% on the next Rs. 10,000,000 and 12% on the balance | Paragraph 1(2)(b)(iii) and (3), from 1 January 2020. Covers commuted pensions, retiring gratuities, approved uniform loss-of-office or employment compensation and taxable ETF payments at or after retirement. | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
+| Rent relief, resident individual's investment asset | 25% of rent income | Fifth Schedule paragraph 2(c). Available to the extent the taxpayer has claimed no deduction or cost for actual repair, maintenance or depreciation. | same |
+| Solar panel relief, resident individual | Up to Rs. 600,000 a year | Fifth Schedule paragraph 2(g). Panels must be installed on the person's premises and connected to the national grid. Limit the relief to qualifying spending or payments to a bank on the acquisition loan. | same |
+| Late filing penalty | Greater of 5% of tax owing plus 1% per month or part month, or Rs. 50,000 plus Rs. 10,000 per month or part month, capped at Rs. 400,000 per return | Section 178 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
+| Late payment penalty | 20% of unpaid tax, or 10% of an unpaid instalment | Section 179. The penalty applies after 14 days from the due date. For the 20% penalty, a later due date in an assessment notice or a section 151 extension can take precedence. | same |
 | Late payment interest | one and one-half per cent per month or part month | Sections 157, 159(1) | same |
-| Interest income with no return needed on that ground | Not over five thousand rupees for the year | New section 94(1)(d), from 1 April 2025 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
+| Interest filing exception | Interest of Rs. 5,000 or less for the year | Section 94(1)(d) applies to an individual meeting the section 94(1)(c) employment and APIT conditions. It operates from 1 April 2025 and is subject to section 94(2) and (2A). | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
 
 ### Steps
 
@@ -74,21 +75,21 @@ Built from the law: not yet approved by an accountant. Figures are taken from th
 2. Build assessable income: employment (per APIT certificate), business profit (income less deductible expenses, capital allowances), investment income (gross up any net-of-WHT receipts), other income. A VAT-registered person excludes the VAT collected.
 3. Set aside special-rate income: investment-asset gains (15% from 3 June 2026; relief does not apply), 45% activities, terminal benefits (own scale), and foreign-currency remitted income eligible for the 15% maximum (only with bank evidence).
 4. Deduct the Rs. 1,800,000 personal relief (residents and non-resident citizens), and any rent or solar relief that applies.
-5. Apply the slabs to the remaining taxable income. For income eligible for the 15% maximum, the slab rate on that income is capped at 15% (reading of "maximum rate of 15%"; confirm with the IRD where material).
-6. Deduct APIT, withholding credits and instalments. The balance is due on the return due date (section 145(2)(b)).
+5. Apply the ordinary slabs to ordinary taxable income. The IRD individual return guide applies 6% to the first Rs. 1,000,000 and 15% to the balance of eligible remitted foreign income after relief. Use the IRD examples to allocate income and reliefs when there is also ordinary taxable income.
+6. Deduct APIT, eligible non-final withholding credits and instalments. Pay the ordinary balance by 30 September 2027 under section 82(2)(c)(ii). Section 145(2) is subject to the payment time stipulated under the Act.
 7. File the return (Asmt_IIT) on IRD e-Services by 30 November 2027.
 
 ### Penalties and interest
 
 | Default | Consequence | Section |
 | --- | --- | --- |
-| Return late | Greater of 5% of tax owing plus 1% a month, or Rs. 50,000 plus Rs. 10,000 a month; cap Rs. 400,000 | 178 |
-| Tax not paid within 14 days | 20% of the unpaid tax | 179(1) |
+| Return late | Greater of 5% of tax owing plus 1% per month or part month, or Rs. 50,000 plus Rs. 10,000 per month or part month. Cap Rs. 400,000 per return. | 178 |
+| Tax not paid within 14 days | 20% of unpaid tax, taking account of a later assessment notice deadline or a section 151 extension | 179(1), (3) |
 | Instalment not paid within 14 days | 10% of the unpaid instalment | 179(2) |
 | Any late tax | Interest at 1.5% a month or part month from the due date | 157, 159 |
-| Negligent or intentional understatement | 25%, or 75% if over Rs. 10,000,000 or 25% of the liability | 180 |
+| Underpayment due to a negligent or intentional incorrect statement or material omission | 25% of the underpayment, or 75% if it exceeds Rs. 10,000,000 or 25% of the tax liability for the period | 180 |
 | Failing to register | Up to Rs. 50,000 | 177 |
-| Failing to file after a 30-day notice | Fine up to Rs. 400,000, up to six months' imprisonment, or both | New section 185A |
+| Failure without reasonable cause to comply with a section 185A notice within 30 days of service | On conviction, a fine up to Rs. 400,000, imprisonment up to six months, or both | 185A |
 
 ### Transaction Pattern Library
 
@@ -105,9 +106,9 @@ Deterministic pre-classifier. When a bank-statement transaction matches a patter
 | STRIPE PAYOUT, PAYONEER, WISE, PAYPAL | Business income (often foreign-currency service income) | May qualify for max-15% concession: FLAG, do not auto-apply |
 | UPWORK, FIVERR, TOPTAL, FREELANCER | Business income | Freelance platform; net of platform commission; often foreign-currency: FLAG concession |
 | SALARY, SALARIES, EMP [name], MAASIKA (monthly pay) | Employment income | Subject to APIT at source: reconcile to APIT certificate |
-| RENT RECEIVED, KULIYA (rent) | Rental income | 10% AIT applies if rent > Rs. 100,000/month to resident individual |
-| INTEREST, INTERESSI, FD INTEREST, SAVINGS INT | Investment income | 10% WHT/AIT deducted at source |
-| DIVIDEND, DIVIDENDS | Investment income | 15% final WHT |
+| RENT RECEIVED, KULIYA (rent) | Rental income | Check withholding duty. If it applies, AIT is 10% of the full payment once monthly aggregate rent to the resident payee exceeds Rs. 100,000. |
+| INTEREST, INTERESSI, FD INTEREST, SAVINGS INT | Investment income | The standard rate is 10% WHT/AIT on taxable interest. Check exemptions and any valid self-declaration. |
+| DIVIDEND, DIVIDENDS | Investment income | 15% final WHT on ordinary taxable dividends from resident companies. Check exemptions and residence. |
 | IRD REFUND, TAX REFUND | EXCLUDE | Refund of prior-year tax, not income |
 | GOVERNMENT GRANT, RELIEF GRANT | Check nature | Capital grants EXCLUDE; revenue grants = business income |
 
@@ -156,7 +157,7 @@ Deterministic pre-classifier. When a bank-statement transaction matches a patter
 | LAPTOP, COMPUTER, MACBOOK, DESKTOP | Computer hardware | Capital allowance | Do NOT fully expense; see Section 5.4 [RESEARCH GAP: confirm rate] |
 | PRINTER, SCANNER, COPIER | Office equipment | Capital allowance | [RESEARCH GAP: confirm rate] |
 | FURNITURE, DESK, CHAIR | Furniture/fittings | Capital allowance | [RESEARCH GAP: confirm rate] |
-| VEHICLE, CAR (business) | Motor vehicle | Capital allowance, business % only | [RESEARCH GAP: confirm rate] |
+| VEHICLE, CAR (business) | Motor vehicle | Review operating costs and capital allowance separately | Fourth Schedule paragraph 2(4) limits allowances to eligible road vehicle classes. |
 
 #### 3.6 Expense Patterns (Debits): NOT deductible
 
@@ -213,7 +214,7 @@ Input line:
 `28/06/2025 ; COMBANK CEFT ; PAYONEER INC ; USD SERVICE PAYOUT ; +480,000.00 ; LKR`
 
 Reasoning:
-Service income earned in / remitted via foreign currency through a bank may qualify for the max-15% concession (IRD tax chart 2025/2026). This is reviewer judgement: it depends on remittance routing and documentation. Do NOT auto-apply the 15% cap. Default: include Rs. 480,000 as business income at progressive rates and FLAG for the reviewer to assess the concession.
+The deposit shows Rs. 480,000. Reconcile the gross fee and platform commission to the invoice and payout record. Verify use outside Sri Lanka, payment in foreign currency and bank remittance to Sri Lanka before applying the 15% cap. Otherwise use the ordinary rates pending review.
 
 Classification: Business income = Rs. 480,000. FLAG: possible 15% foreign-currency-service concession (R-LK-4).
 
@@ -223,7 +224,7 @@ Input line:
 `30/09/2025 ; HNB ; FD INTEREST CREDIT ; NET OF WHT ; +90,000.00 ; LKR`
 
 Reasoning:
-Interest and discount income carries 10% WHT/AIT at source from 1 Apr 2025 (up from 5%). If the credit is shown net of WHT, gross it up: Rs. 90,000 / 0.90 = Rs. 100,000 gross, with Rs. 10,000 WHT credit. For a resident with total annual income above Rs. 1,800,000, interest is included; the 10% deducted is a credit against the final liability. For a non-resident citizen, the 10% on bank interest is a final tax (not added to the progressive computation).
+The standard WHT/AIT rate on taxable interest and discounts rose from 5% to 10% on 1 April 2025. A credit of Rs. 90,000 after 10% withholding represents Rs. 90,000 ÷ 0.90 = Rs. 100,000 gross and Rs. 10,000 withheld. For a resident with taxable bank interest, include the gross amount and verify the credit. For a non-resident citizen, section 88(1A)(c) treats interest as final withholding except for the part within available personal relief after other assessable income.
 Source: IRD tax chart (withholding table, from 1 April 2025).
 
 Classification: Investment income gross = Rs. 100,000; WHT credit = Rs. 10,000. (Confirm whether net or gross is shown on the statement.)
@@ -266,7 +267,7 @@ Classification: Payroll cost (employer share deductible). FLAG: confirm employer
 
 #### 5.4 Capital allowances (depreciation)
 
-- **Capital allowances research gap**: Capital assets are not fully expensed in year one; they are written off over time via capital allowances under the Inland Revenue Act No. 24 of 2017. [RESEARCH GAP: reviewer to confirm the current per-class capital-allowance rates and the depreciable-asset classes under IRA No. 24 of 2017 before applying any depreciation figure.] Until confirmed, flag every capital asset for reviewer treatment rather than guessing a rate.  _(Inland Revenue Act No. 24 of 2017)_
+- **Capital allowances:** Section 16 and Fourth Schedule paragraphs 1 and 2 give the asset classes and straight-line rules. Computers, qualifying equipment and office furniture generally use five years in classes 1 or 3, subject to business use and any separate allowance. Classify the asset and check exceptions before calculating the claim.
 
 
 #### 5.7 Non-deductible expenses
@@ -286,11 +287,11 @@ Classification: Payroll cost (employer share deductible). FLAG: confirm employer
 
 #### 6.1 Home office deduction
 
-- **Home office deduction rules**: - Calculate the proportion of the home used wholly for business (dedicated room / floor area). - Apply that percentage to rent, electricity (CEB/LECO), water (NWSDB), broadband. - A dual-use room does not qualify. Conservative default: 0% until reviewer confirms a dedicated workspace and basis. Flag for reviewer: confirm room/floor-area basis and that the space is genuinely dedicated.
+- **Home office deduction:** Sections 10 and 11 exclude domestic expenses and allow eligible costs to the extent incurred in producing business or investment income. For mixed use, document the business portion of each eligible cost. Floor area and usage records can support an allocation. Leave the deduction pending where the business portion or other eligibility conditions are unverified.
 
 #### 6.2 Motor vehicle business use
 
-- **Motor vehicle business use rules**: - Only the business-use percentage of fuel, insurance, maintenance and depreciation is deductible. - Requires a mileage log. Conservative default: 0% business use until a log is provided. Flag for reviewer: confirm business percentage and capital-allowance rate (see Section 5.4 research gap).
+- **Motor vehicle business use:** Apportion eligible fuel, insurance and maintenance to documented business use. A mileage log is one way to support the allocation. Apply a capital allowance only if the vehicle meets a Fourth Schedule exception, such as an eligible commercial vehicle, goods vehicle or motorcycle. An ordinary passenger car used partly for business does not qualify by reason of that use alone.
 
 #### 6.3 EPF: Employees' Provident Fund
 
@@ -298,11 +299,11 @@ Classification: Payroll cost (employer share deductible). FLAG: confirm employer
 
 #### 6.4 ETF: Employees' Trust Fund
 
-- **ETF rules**: - Employer: 3% of total monthly earnings. Employee: nil: the employer may not deduct ETF from the employee. - Remit on or before the last working day of the succeeding month. - Late surcharge: same escalating 5% -> 50% scale; late half-yearly returns add a 1% surcharge per delayed month on face value.  _(ETF Board Employers FAQ: https://etfb.lk/employers-faq/)_
+- **ETF rules:** The employer pays 3% of covered monthly earnings. Section 16(1) of the ETF Act says by the last day of the following month. Use the Board's last working day instruction for remittance. Late contributions incur the 5% to 50% scale. The 1% monthly surcharge on late half-yearly returns applies to employers required to file them using the R1 process. [ETF Board guidance](https://etfb.lk/employers-faq/)
 
 #### 6.5 Gratuity
 
-- **Gratuity rules**: gratuity is payable on termination under the Payment of Gratuity Act No. 12 of 1983. The service and headcount conditions and the formula in the earlier version came from a secondary source and are on the Not yet confirmed line; refer.
+- **Gratuity:** Payment of Gratuity Act No. 12 of 1983 sections 5 to 7 cover employers with at least 15 workmen on any day in the preceding 12 months and workers with at least five completed years of service. The ordinary deadline is 30 days after termination. For a monthly rated worker, section 6(2)(a) ordinarily uses half a month's last wage or salary per completed year. Refer for statutory exceptions or a different wage basis.
 
 #### 6.6 Foreign-currency / foreign-source concession (max 15%)
 
@@ -318,13 +319,13 @@ Classification: Payroll cost (employer share deductible). FLAG: confirm employer
 | Situation | Treatment |
 | --- | --- |
 | Non-citizen non-resident | No personal relief; slabs apply to taxable income |
-| Investment asset sold before 3 June 2026 | 10% |
-| Investment asset sold on or after 3 June 2026 | 15% |
+| Taxable investment gain before 3 June 2026 | 10%. Check exemptions and file and pay within 30 days after the end of the month of realisation. |
+| Taxable investment gain on or after 3 June 2026 | 15%. The same separate filing and payment deadline applies. |
 | Gain on a motor vehicle | Now listed as a gain in section 8(2)(c) (Act No. 11 of 2026, from 1 April 2024); refer the computation |
 | Foreign-currency fees kept abroad | Normal slabs, no 15% cap |
-| Interest only, not over Rs. 5,000 for the year | No return needed on that ground (section 94(1)(d)) |
+| Interest of Rs. 5,000 or less for the year in addition to qualifying employment income | Section 94(1)(d) may waive filing if the individual meets section 94(1)(c). Check a filing notice and section 94(2A). |
 | Salary arrears received this year | Tax credit under new section 96A (from 1 January 2024); refer the computation |
-| Declared tax at least 120% of last year, paid in full, no refund claim, affidavit | Return accepted as filed (section 135(7), from 1 April 2025) |
+| Declared tax at least 120% of last year's tax on taxable income, paid in full, no refund claim and required affidavit | Section 135(7) applies from 1 April 2025. The affidavit must state no fraud, evasion or wilful default in relation to the current year's tax. The return is accepted as filed and protected from amendment or addition under section 135 for that year. |
 
 #### Conservative Defaults
 
@@ -367,7 +368,7 @@ expected:
 
 ### Case 2: decision, bring foreign client fees home through a bank or not
 
-A resident freelance developer earns the same Rs. 5,300,000 profit from overseas clients, paid in US dollars. If the fees are remitted through a Sri Lankan bank, paragraph 1(6)(a) caps the rate at 15%, so every slab above 15% falls to 15%. If the money stays abroad, the normal slabs apply. The developer also sold listed shares held as an investment on 10 July 2026 for a gain of Rs. 2,000,000: after 3 June 2026 the rate is 15%, not 10%, and the relief does not apply to it.
+A resident freelance developer earns Rs. 5,300,000 profit from services used outside Sri Lanka, paid in US dollars. For qualifying bank remittance to Sri Lanka, the IRD calculation applies 6% to the first Rs. 1,000,000 of taxable profit and 15% to the balance. Ordinary rates apply if the money stays abroad. The developer also makes a taxable gain of Rs. 2,000,000 from unquoted shares held as an investment and sold on 10 July 2026. The tax is 15%, compared with 10% for a taxable realisation earlier in YA 2026/27 before 3 June. If the gain were from qualifying quoted shares, it would be exempt.
 
 ```oa-check
 name: Foreign-currency fees remitted against not remitted, plus a 2026 gain
@@ -390,7 +391,7 @@ expected:
   gain_tax_before_june: 200000
 ```
 
-The 15% cap is read here as capping each slab rate; if the IRD applies it differently, recompute. Use it only with bank-remittance evidence.
+Verify overseas use, foreign currency and bank remittance before applying the capped rate. This example has a single ordinary or qualifying services stream plus a separately taxed investment gain.
 
 #### Test Suite
 
@@ -443,7 +444,7 @@ Expected: include as business income at progressive rates by default; FLAG for r
 
 - NEVER apply the Rs. 1,800,000 personal relief to a non-citizen non-resident, or against investment-asset gains.
 - NEVER auto-apply the max-15% foreign-currency / foreign-source concession: it requires reviewer confirmation of remittance routing.
-- NEVER fully expense a capital asset: it is recovered via capital allowances (and the rate is a [RESEARCH GAP] pending confirmation).
+- Confirm the capital allowance class and any separate allowance before claiming capital costs.
 - NEVER treat EPF/ETF as the proprietor's personal income-tax deduction without separating employer vs employee share.
 - NEVER include VAT collected on sales as income for a VAT-registered person.
 - NEVER allow entertainment, fines/penalties, drawings, or income tax itself as a deduction.
@@ -457,9 +458,9 @@ Expected: include as business income at progressive rates by default; FLAG for r
 | Step | Detail |
 | --- | --- |
 | Return | Asmt_IIT return of income on IRD e-Services, by 30 November 2027 for YA 2026/27 (eight months after the year end, section 93(1)) |
-| Balance of tax | Self-assessed tax is due on the due date for the return (section 145(2)(b)) |
-| Instalments | 15 August, 15 November, 15 February, 15 May for instalment payers (section 90(2)); prior-year basis from 2026/27 (`sri-lanka-provisional-tax-ait`) |
-| TIN | Register with the IRD (section 102); a TIN certificate is needed for bank accounts, vehicle and land registration and other listed purposes from 1 April 2026 (section 103(6)) |
+| Balance of tax | Pay the ordinary self-assessment balance by 30 September 2027 under section 82(2)(c)(ii). For taxable investment gains, sections 82(2)(c)(i) and 93(3) give the separate deadline. |
+| Instalments | 15 August, 15 November, 15 February and 15 May under section 90(2). Use prior-year tax unless the taxpayer had no prior-year taxable income or expects lower taxable income this year. Check the current IRD instalment declaration under section 90(3). |
+| TIN | Register with the IRD under section 102. Section 103(6) has effect from 1 April 2026. The IRD certificate procedure applies from 1 November 2026 for the specified persons and transactions. |
 
 ### Excel Working Paper Template
 
@@ -519,7 +520,7 @@ REVIEWER FLAGS:
   [ ] Residence status confirmed?
   [ ] Foreign-currency 15% concession assessed?
   [ ] Capital gains (15% from 3 June 2026, 10% before) handled separately?
-  [ ] Capital-allowance rates confirmed (Section 5.4 gap)?
+  [ ] Capital-allowance class and rate confirmed?
   [ ] Home office / vehicle % documented?
   [ ] EPF/ETF employer vs employee split correct?
   [ ] WHT/AIT certificates reconciled?
@@ -579,7 +580,7 @@ ONBOARDING QUESTIONS: SRI LANKA INCOME TAX
 8. Do you employ staff (EPF/ETF obligations)?
 9. WHT/AIT deducted on interest, rent, or dividends? Have certificates?
 10. APIT deducted by an employer? Self-assessment instalments paid?
-11. Are you VAT- or SSCL-registered (turnover near Rs. 60m/Rs. 15m per quarter)?
+11. Are you VAT- or SSCL-registered? Check ordinary VAT against Rs. 15m per quarter or Rs. 60m over 12 months. From 1 July 2026 check domestic SSCL against Rs. 9m per quarter or Rs. 36m over four consecutive quarters.
 12. Do you have a TIN?
 ```
 
@@ -602,5 +603,13 @@ ONBOARDING QUESTIONS: SRI LANKA INCOME TAX
 | Read for the list of reliefs (rent, solar), the partnership rates, the terminal benefits scale and the withholding table in the IRD tax chart, the latest on the site | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx | 2026-11-14 |
 | Read for the EPF employer and employee rates and the payment deadline used in Example 5 and the tier 2 catalogue, on the EPF Department of the Central Bank of Sri Lanka site | https://epf.lk/?page_id=811 | 2026-11-14 |
 | Read for the 3% ETF rate, the employer-only rule and the surcharge scale on the ETF Board employers page | https://etfb.lk/employers-faq/ | 2026-11-14 |
+| IRD individual return guide, taxable remitted income and mixed-income examples | https://www.ird.gov.lk/en/Downloads/IT_Individuals_Doc/Asmt_IIT_004_2025_2026_E.pdf | 2026-11-24 |
+| IRD capital gains exemptions, rates, return and payment deadline | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Capital%20Gain%20Tax%20(CGT).aspx | 2026-11-24 |
+| VAT registration and ordinary threshold | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Value%20Added%20Tax%20(VAT).aspx | 2026-11-24 |
+| Social Security Contribution Levy (Amendment) Act, No. 10 of 2026, section 2 | https://www.documents.gov.lk/view/acts/2026/4/10-2026_E.pdf | 2026-11-24 |
+| IRD TIN certificate circular SEC/2026/E/07 | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2026_E_07_E.pdf | 2026-11-24 |
+| IRD instalment calculation and declaration circular SEC/2026/E/06 (Re-Revised) | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2026_E_06_ReRiv_E.pdf | 2026-11-24 |
+| Payment of Gratuity Act, sections 5 to 7 | https://labourdept.gov.lk/downloads/labour_code/55.pdf | 2026-11-24 |
+| Employees' Trust Fund Act, section 16 | https://labourdept.gov.lk/downloads/labour_code/51.pdf | 2026-11-24 |
 
-Not yet confirmed: an IRD 2026/27 tax chart (the latest page is the prior year's; the Act's individual rates are unchanged); capital allowance rates and asset classes; how the IRD applies the 15% maximum rate to slab income (this skill caps each slab); the final balance date of 30 September after the year end in the earlier version (the Act read here makes self-assessed tax due on the return due date); the earlier version's claim that the VAT threshold drops to Rs. 36 million from 1 April 2026 (not in VAT Acts No. 4 of 2025 or 14 of 2026, nor in PN/VAT/2025-01); the claim that 10% WHT on interest is a final tax for non-resident citizens (secondary source); gratuity conditions (5 years' service, 15 or more employees, half a month's salary per year) from a secondary source; the Rs. 1,800,000 relief applying to non-resident citizens and not to non-citizen non-residents is taken from the IRD chart wording, not the Act section.
+Not yet confirmed: a standalone IRD 2026/27 tax chart. Use the Acts for 2026/27 figures. The ordinary VAT registration thresholds and the SSCL thresholds are separate. Verify any case-specific gratuity, capital allowance, foreign tax credit and expense allocation against the relevant provisions and facts.
