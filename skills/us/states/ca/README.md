@@ -33,6 +33,7 @@ Calendar tax year for individuals. Income tax authority: the Franchise Tax Board
 | VAT / sales and use tax | california-sales-tax | checked against the law |
 | SC and PR, payroll withholding, SDI and unemployment insurance | ca-payroll | checked against the law |
 | XB, cross-border and residency | ca-residency-leaving-california | checked against the law |
+| IT-CORP, exempt organizations: exemption by federal determination letter and federal suspension or revocation (AB 2084) | ca-exempt-status-federal-revocation | checked against the law |
 | Workflow, freelancer intake | us-ca-freelance-intake | checked against the law |
 | Workflow, federal and California assembly | us-ca-return-assembly | checked against the law |
 | Bookkeeping | ca-bookkeeping-monthly-close | accountant-reviewed |
