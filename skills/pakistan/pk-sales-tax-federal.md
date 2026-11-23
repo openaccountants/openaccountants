@@ -3,15 +3,15 @@ name: pk-sales-tax-federal
 description: Use for pakistan federal goods sales-tax computation and return. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
 jurisdiction: PK
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
-version: 2.1
+version: 2.2
 type: computation
 ---
 
-# Pakistan federal goods sales-tax computation and return v2.1
+# Pakistan federal goods sales-tax computation and return v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -34,10 +34,10 @@ Obtain legal identity/NTN/STRN, period/category/status, all bank/wallet statemen
 | Cottage manufacturer exclusion | All four: no industrial gas/electric connection; residential location; at most 10 workers; all-supply turnover≤8,000,000 (in words on the page) | [s.2(5 AB)](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
 | Tier 1 retailer electricity marker | Immediately preceding 12 consecutive months' electricity bill>1,200,000; other independent markers also apply (amount in words on the page) | [s.2(43 A)](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
 | Input delayed claim | Relevant period **plus 6 succeeding tax periods**, subject to ss.7/8/8 B/73 (6 succeeding periods in words on the page) | [s.7(1)](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
-| Ordinary input adjustment restriction |90% of period output tax; fixed-assets/capital-goods exception, notified exclusions, annual adjustment/refund and risk-system branches must be tested (90% limit in words on the page) | [s.8B](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
+| Ordinary input adjustment restriction |90% of period output tax; test fixed assets, notified exclusions, annual adjustment and risk-system branches. Table 1 item 4 excludes persons whose zero-rated supplies, including exports, exceed 50% of all taxable supplies by value for the period | [s.8B](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) and [SRO 1190(I)/2019, Table 1 item 4](https://download1.fbr.gov.pk/Docs/202551615541769POSBooklet.pdf) |
 | Banking payment evidence | Transactions>50,000 aggregate to one supplier in a tax period; utilities exception; credit payment within 180 days of tax-invoice issuance; prior-approved netting conditions (amount and period in words on the page) | [s.73](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
 | Ordinary revised return | Within 120 days from filing, Commissioner approval; within 60 days higher tax/lower refund branch needs no approval unless risk-system restriction (120-day and 60-day windows in words on the page) | [s.26(3)-(3 A)](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
-| Late-return penalty |10,000; if filed within 10 days of due date,200 per default day instead (10,000/200 amounts and 10-day period in words on the page) | [s.33 item 1](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
+| Late-return penalty |PKR 10,000 or PKR 200 per day if filed within 10 days under the pre-July 2026 law. From 1 July 2026, PKR 50,000 or PKR 2,000 per default day if filed within 10 days. Check the law for the actual default. | [Earlier s.33 item 1](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf), [Finance Act 2026](https://download1.fbr.gov.pk/Docs/20266291261044366FinanceAct2026.pdf) and [amended s.33 item 1](https://download1.fbr.gov.pk/Docs/20267171373418951SalesTaxAct1990updatedupto30.06.2026.pdf#page=80) |
 | Ordinary default surcharge | Higher of 12% yearly or KIBOR+3%; fraud 2% monthly is a separate branch, with statutory accrual windows (12%, 3% and 2% rates in words on the page) | [s.34](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
 | Record retention |6 years from end of relevant tax period; pending proceedings/final-decision period can extend it (in words on the page) | [s.24](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
 
@@ -93,7 +93,7 @@ Rule 17's STR 10 annual return applies registered private/public limited compani
 
 Original case: registered cotton-garment manufacturer in Karachi, May 2026, active since 2022, goods B2B/export only and not a Tier 1 retailer. Preserve all 8 original lines: 3 May cotton T-shirt sale to RETAILER A (Tier 1, registered, illustrative STRN 1234567-8), gross 5,900,000; 7 May T-shirt sale to unregistered KIRYANA STORE B, gross 1,100,000; 12 May T-shirt export to ACME USA INC, 8,000,000 inward USD-equivalent, GD KHI-EXP-2026-3344; 15 May cotton-yarn purchase from registered YARN MILLS LTD (illustrative STRN 7654321-2), gross 4,720,000; 18 May dyes/chemicals import GD KHI-IMP-2026-9988 with sales tax **1,180,000 itself**; 20 May K-ELECTRIC electricity bill, gross 590,000; 22 May purchase from XYZ TRADERS, gross 944,000, later suspected/suspended supplier; and 28 May fabric-scrap sale to UNREGISTERED RECYCLER, gross 220,000. These are hypothetical labels, identifiers and references, not validated real documents.
 
-Assume taxable classifications/rates are independently confirmed, further-tax exclusions do not apply to the 2 unregistered sales, stated gross values include the actual taxes, export conditions met, domestic yarn/utility tax admissible and import GD supports the stated tax. Hold XYZ's 144,000 input pending actual status/payment/disallowance evidence rather than claim it blindly. No exemption from s.8B or fixed/capital asset applies in this conditional arithmetic.
+Assume taxable classifications/rates are independently confirmed, further-tax exclusions do not apply to the 2 unregistered sales, stated gross values include the actual taxes, export conditions met, domestic yarn/utility tax admissible and import GD supports the stated tax. Hold XYZ's 144,000 input pending actual status/payment/disallowance evidence rather than claim it blindly. The zero-rated exports are PKR 8,000,000 of PKR 14,081,967.21 in total taxable supplies by value, or 56.81%. Table 1 item 4 excludes the business from s.8B(1) because the share exceeds 50%. Assume no separate risk-system restriction. [SRO 1190(I)/2019, Table 1 item 4](https://download1.fbr.gov.pk/Docs/202551615541769POSBooklet.pdf).
 
 ```oa-check
 name: Garment manufacturer complete output split
@@ -121,7 +121,7 @@ expected:
 ```
 
 ```oa-check
-name: Garment manufacturer admissibility and conditional90percent restriction
+name: Garment manufacturer input credit and exporter exclusion
 inputs:
   yarn_gross: 4720000
   utility_gross: 590000
@@ -134,22 +134,20 @@ steps:
   - utility_input: utility_gross - utility_gross / 1.18
   - held_not_claimed: held_supplier_gross - held_supplier_gross / 1.18
   - supported_input: yarn_input + utility_input + supported_import_tax
-  - ordinary_limit: ordinary_output * 0.9
-  - adjusted_input: min(supported_input, ordinary_limit)
-  - unadjusted_input: supported_input - adjusted_input
+  - adjusted_input: min(supported_input, ordinary_output)
+  - excess_input: supported_input - adjusted_input
   - payable: ordinary_output - adjusted_input + further_tax
 expected:
   yarn_input: 720000
   utility_input: 90000
   held_not_claimed: 144000
   supported_input: 1990000
-  ordinary_limit: 985278.69
-  adjusted_input: 985278.69
-  unadjusted_input: 1004721.31
-  payable: 152754.1
+  adjusted_input: 1094754.1
+  excess_input: 895245.9
+  payable: 43278.69
 ```
 
-The old displayed import base 6,555,556 is a reverse calculation:1,180,000/18%=6,555,555.56 (derived), not an independently assessed Customs valuation. Amounts rounded for display; final return uses operative rounding. **No refund 570,782.30 is certified**: the old turnover-ratio shortcut on restricted input does not establish a lawful export refund. Allocate actual inputs/stocks/export consumption and apply current refund rules/FASTER eligibility. The export 8,000,000 has 0 output only after actual conditions; the import 1,180,000 is tax input, not gross invoice. Manufacturer output does not acquire a retailer concession merely because the buyer is Tier 1. May 2026 ordinary 15/18 June dates remain subject to actual extension/category evidence.
+The old displayed import base 6,555,556 is a reverse calculation:1,180,000/18%=6,555,555.56 (derived), not an independently assessed Customs valuation. Amounts rounded for display; final return uses operative rounding. The PKR 895,245.90 excess does not establish a payable refund. The old PKR 570,782.30 turnover-ratio estimate had no verified refund basis. Allocate actual inputs/stocks/export consumption and apply current refund rules/FASTER eligibility. The export 8,000,000 has 0 output only after actual conditions; the import 1,180,000 is tax input, not gross invoice. Manufacturer output does not acquire a retailer concession merely because the buyer is Tier 1. May 2026 ordinary 15/18 June dates remain subject to actual extension/category evidence.
 
 ## Penalties, refunds and special regimes
 
@@ -171,6 +169,8 @@ Internal review markers retained from the earlier workflow are **firm policy, no
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|
 | Read for Act ss.2(5 AB),(43 A),(44),3/7/8/8 B/14,21 A-24,26,33 item 1,34,66/73 and adjacent exceptions | https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf |2026-11-14|
+| Read for SRO 1190(I)/2019 Table 1 item 4, zero-rated share exclusion from s.8B(1) | https://download1.fbr.gov.pk/Docs/202551615541769POSBooklet.pdf | 2026-11-24 |
+| Read for Finance Act 2026 commencement and the amended Sales Tax Act s.33 item 1 late-filing amounts | https://download1.fbr.gov.pk/Docs/20266291261044366FinanceAct2026.pdf and https://download1.fbr.gov.pk/Docs/20267171373418951SalesTaxAct1990updatedupto30.06.2026.pdf#page=80 | 2026-11-24 |
 | Read for Rules 14/17/18 and STR 7 annex structure; consolidation only updated 1 January 2025, later amendments require period check | https://download1.fbr.gov.pk/Docs/20251141513138962Sales-Tax-Rules-2006-UpdatedUpto01-01-2025.pdf |2026-11-14|
 
-Not yet confirmed: exact goods/actionable-claim/money/share/security boundary; continuous utility supply tax point; particular nonmonetary/associated-party/discount/retail valuation conditions; zero/exempt categories for diplomats, international organisations, conveyance stores, duty-free shops, notified machinery, food, pharmaceuticals, agricultural seeds/pesticides/tractors, education/newsprint, health and renewable equipment; historic Seventh Schedule/five-sector treatment; actual nil-return/status consequences, Tax Asaan/helpline details and authentication/2FA/CSV/API capabilities. Also, complete later 2026 amendment/extension calendar, actual current portal/form/payment-provider screens, SRO 297/1190/660 operative status and all special schedule/POS/withholding/value-addition/item rates, statutory penalty/nonintegration/fraud figures beyond the sourced table, actual exporter refund procedure/eligibility and every cross-credit arrangement with provincial services. Preserve those topics for targeted specialist work. No professional accountant approval is claimed.
+Not yet confirmed: exact goods/actionable-claim/money/share/security boundary; continuous utility supply tax point; particular nonmonetary/associated-party/discount/retail valuation conditions; zero/exempt categories for diplomats, international organisations, conveyance stores, duty-free shops, notified machinery, food, pharmaceuticals, agricultural seeds/pesticides/tractors, education/newsprint, health and renewable equipment; historic Seventh Schedule/five-sector treatment; actual nil-return/status consequences, Tax Asaan/helpline details and authentication/2FA/CSV/API capabilities. Also, complete later 2026 amendment/extension calendar, actual current portal/form/payment-provider screens, operative status of other provisions of SRO 1190 and of SROs 297 and 660, all special schedule/POS/withholding/value-addition/item rates, statutory penalty/nonintegration/fraud figures beyond the sourced table, actual exporter refund procedure/eligibility and every cross-credit arrangement with provincial services. Preserve those topics for targeted specialist work. No professional accountant approval is claimed.
