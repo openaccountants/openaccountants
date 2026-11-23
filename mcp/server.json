@@ -2,9 +2,9 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.openaccountants/openaccountants",
   "title": "OpenAccountants",
-  "description": "Read-only tax skills for AI in 190+ jurisdictions, built from the law. Approval shown per skill.",
-  "version": "1.4.0",
-  "websiteUrl": "https://www.openaccountants.com",
+  "description": "Tax and VAT MCP server for Claude, ChatGPT and Cursor. Official sources, accountant approval shown.",
+  "version": "1.5.0",
+  "websiteUrl": "https://www.openaccountants.com/mcp",
   "repository": {
     "url": "https://github.com/openaccountants/openaccountants",
     "source": "github"
