@@ -1,18 +1,18 @@
 ---
 name: sri-lanka-corporate-tax
 description: "ALWAYS read this skill before touching any Sri Lanka corporate income tax work for a resident company, year of assessment 2026/27 (1 April 2026 to 31 March 2027). Trigger on phrases like Sri Lanka corporate tax, Sri Lanka CIT, company tax Sri Lanka, 30% corporate rate Sri Lanka, betting and gaming tax Sri Lanka, liquor tobacco tax Sri Lanka, Inland Revenue Act 24 of 2017 company, or year of assessment 2026/27 company. Covers the Inland Revenue Act No. 24 of 2017 as amended up to Act No. 11 of 2026, the 30% standard rate, the 15% rate on qualifying foreign-currency income remitted through a bank, the 45% rate on betting and gaming and on domestic liquor and tobacco, the 30% rate on investment-asset gains, the 14% remittance tax, instalments, return dates and penalties. Out of scope are personal income tax, withholding, SSCL, VAT, banking and insurance regimes, groups and transfer pricing."
-version: "2.0"
+version: "2.1"
 jurisdiction: LK
 tax_year: 2026
 tax_year_notes: "Year of assessment 2026/27 (2026-27), 1 April 2026 to 31 March 2027"
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Sri Lanka Corporate Income Tax, year of assessment 2026/27, v2.0
+# Sri Lanka Corporate Income Tax, year of assessment 2026/27, v2.1
 
 Built from the law: not yet approved by an accountant. Produced by OpenAccountants (openaccountants.com). Not tax advice.
 
@@ -29,7 +29,7 @@ Built from the law: not yet approved by an accountant. Produced by OpenAccountan
 
 - **In:** resident companies computing taxable income and tax for the year; the special-rate lines below.
 - **Out:** personal tax (`sri-lanka-income-tax`), withholding (`sri-lanka-withholding-tax`), instalments in detail (`sri-lanka-provisional-tax-ait`), SSCL (`sri-lanka-sscl`), VAT (`sri-lanka-vat`), banking, insurance and other sector regimes, group taxation, transfer pricing, reorganisations.
-- **No change to the company rates for 2026/27:** Act No. 11 of 2026 did not amend paragraph 4 rates. Its item (4) confirmed, from 1 April 2022, that the liquor and tobacco higher rate does not reach exports.
+- **Company rates for 2026/27:** First Schedule paragraph 4(2C)(d) has excluded liquor and tobacco exports from the higher rate since 1 April 2025. Act No. 11 of 2026 section 36(4) inserted the export exclusion into the earlier paragraph 4(2B)(b), with effect from 1 April 2022 under section 1(3).
 
 ## Ask the client first
 
@@ -52,38 +52,40 @@ Built from the law: not yet approved by an accountant. Produced by OpenAccountan
 | Betting and gaming | 45% | From 1 April 2025 (40% before); paragraph 4(2C) | same |
 | Manufacture and sale or import and sale of liquor or tobacco, other than export | 45% | From 1 April 2025; export of such products is not at 45% | same |
 | Gains from the realisation of investment assets | 30% | From 1 October 2022; paragraph 4(4) | same |
-| Remittance tax on a non-resident person | 14% | Tax chart, remittance tax row; 0% on remittances of retained income invested for three years, per the chart | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx |
-| Late filing penalty | Greater of 5% of tax owing plus 1% a month, or fifty thousand rupees plus ten thousand rupees a month; capped at four hundred thousand rupees | Section 178 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
-| Late payment penalty | 20% of tax due but not paid | Not paid within 14 days of the due date; section 179(1) | same |
+| Remittance tax on a non-resident person with a Sri Lankan permanent establishment | 14% of gross remitted profits | Section 62 and First Schedule paragraph 9. Pay by the 30th day after remitting. The 0% rate applies to remittances of qualifying retained and reinvested income. | same |
+| Late filing penalty | Greater of 5% of tax owing plus 1% per month or part month, or Rs. 50,000 plus Rs. 10,000 per month or part month, capped at Rs. 400,000 per return | Section 178 | same |
+| Late payment penalty | 20% of unpaid tax, or 10% of an unpaid instalment | Section 179. The penalty applies after 14 days from the due date. For the 20% penalty, a later due date in an assessment notice or a payment extension under section 151 takes precedence where applicable. | same |
 | Late payment interest | one and one-half per cent per month or part month | Sections 157 and 159(1) | same |
-| Underpayment from negligence or intent | 25%; 75% if over Rs. 10,000,000 or over 25% of the liability | Section 180 | same |
-| Failure to register | Up to fifty thousand rupees | Section 177 (in the consolidated Act: https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf); companies must register within 30 days of incorporation (new section 102(1A)) | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
+| Underpayment from a negligent or intentional incorrect statement or material omission in the return | 25% of the underpayment, or 75% if it exceeds Rs. 10,000,000 or 25% of the tax liability for the period | Section 180 | same |
+| Failure to register | Up to Rs. 50,000 | Section 177 of the consolidated Act. Companies incorporated or registered in Sri Lanka must apply for tax registration within 30 days of incorporation or registration under section 102(1A). | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
 
 ### Steps
 
 1. Compute taxable income under the IRA from the accounts (business income, investment income, deductions, capital allowances and losses: detail not set out here, see Not yet confirmed).
-2. Split out each special-rate stream: 15% remitted foreign-currency income (only with bank remittance evidence), 45% betting and gaming and domestic liquor and tobacco, 30% investment-asset gains.
+2. Split out each applicable special-rate stream. Verify the source or overseas use and bank remittance for the 15% streams. Apply 45% to betting and gaming and to qualifying domestic liquor and tobacco profits. Apply 30% to taxable investment-asset gains after checking exemptions.
 3. Tax the remainder at 30%.
-4. Deduct instalments paid (`sri-lanka-provisional-tax-ait`) and withholding credits (`sri-lanka-withholding-tax`); the balance is payable with the return.
+4. Deduct instalments paid (`sri-lanka-provisional-tax-ait`) and eligible withholding credits (`sri-lanka-withholding-tax`). Pay the ordinary balance by 30 September 2027 under section 82(2)(c)(ii). File the annual return by 30 November 2027 under section 93(1).
 5. For a non-resident company with a branch, add remittance tax at 14% where it applies.
 
 ### Conservative defaults
 
 | Ambiguity | Default |
 | --- | --- |
-| Sector or rate unclear | Apply 30% standard |
-| 15% concession claimed | Apply 30% until foreign currency and bank-remittance evidence is seen |
+| Sector or rate unclear | Confirm the activity and any special rate before finalising |
+| 15% concession claimed | Verify foreign source or overseas use, payment in foreign currency and bank remittance to Sri Lanka |
 | Betting, gaming, liquor or tobacco activity | Apply 45% unless the income is from export of liquor or tobacco (then the normal rate) |
 | SME or sector concession asserted | Do not apply: the 14% SME and sector rates in paragraph 4(2) and (2A) ended for periods after 30 September 2022, and none is confirmed for 2026/27 |
-| Asset is business or investment asset | Flag for the practitioner; the rate is 30% either way for a company, but the base and instalment rules differ |
+| Asset is business or investment asset | Confirm the classification and exemptions. A business asset gain enters the business computation under section 6(2)(c). A taxable investment asset gain is generally taxed separately at 30%. Gains on quoted Colombo Stock Exchange shares are exempt under Third Schedule paragraph (h). Section 37(3) prevents double counting where a gain is included in business income. |
 
 ## Boundary and exception table
 
 | Situation | Treatment |
 | --- | --- |
-| Export of liquor or tobacco products | Not at 45%; taxed at the 30% standard rate (paragraph 4(2C)(d), confirmed by Act No. 11 of 2026 from 1 April 2022) |
+| Export of liquor or tobacco products | Ordinary taxable export profits use the 30% rate. Paragraph 4(2C)(d) excludes exports from 45% from 1 April 2025. The 2026 amendment added the export exclusion to the earlier 40% provision. |
 | IT services exporter paid in foreign currency but funds kept abroad | Not remitted through a bank: 30% |
-| Investment-asset gain | 30%, separate from the business stream; excluded from instalments |
+| Taxable investment-asset gain | 30%, separate from the business stream and excluded from instalments. File the gain return and pay within 30 days after the end of the month of realisation under sections 82(2)(c)(i) and 93(2). |
+| 0% remittance tax on retained income | Retain the year's total income in Sri Lanka for at least three years from the first day of the following year of assessment and invest it in business expansion, eligible Colombo Stock Exchange securities, Treasury bills, Treasury bonds or Sri Lanka International Sovereign Bonds. |
+| Remitted profits | Section 62(3) includes relevant Sri Lankan taxable profits retained abroad and excludes dividends paid by a resident company. |
 | Historic 24% or 28% rates | Do not use for 2026/27; 30% since 1 April 2023 |
 | Old 40% rate for betting, gaming, liquor and tobacco | Applied before 1 April 2025 only |
 | BOI agreement company | Refer: agreement terms may give other rates |
@@ -93,7 +95,7 @@ Built from the law: not yet approved by an accountant. Produced by OpenAccountan
 
 ### Case 1: standard company with a foreign-currency services stream
 
-Taxable income Rs. 50,000,000, of which Rs. 10,000,000 is IT services for overseas clients paid in US dollars and remitted through a Sri Lankan bank. Tax: 30% of 40,000,000 plus 15% of 10,000,000.
+Taxable income Rs. 50,000,000, of which Rs. 10,000,000 is from IT services used outside Sri Lanka, paid in US dollars and remitted through a bank to Sri Lanka. Tax is 30% of Rs. 40,000,000 plus 15% of Rs. 10,000,000.
 
 ```oa-check
 name: Company with remitted foreign-currency services, YA 2026/27
@@ -112,7 +114,7 @@ expected:
 
 ### Case 2: decision, sell liquor at home or export
 
-A liquor manufacturer has Rs. 50,000,000 of profit and can sell domestically or export the same output. Domestic sale is taxed at 45%, export at the 30% standard rate. The company also sold shares held as investment assets at a gain of Rs. 5,000,000, taxed at 30%. Export saves Rs. 7,500,000 of income tax on the same profit.
+A liquor manufacturer has Rs. 50,000,000 of taxable profit and can sell domestically or export the same output. Domestic sale is taxed at 45% and export at the 30% standard rate. The company also sold unquoted shares held as investment assets at a taxable gain of Rs. 5,000,000, taxed at 30%. Export saves Rs. 7,500,000 of income tax on the same profit.
 
 ```oa-check
 name: Liquor profit, domestic against export, plus investment gain
@@ -146,28 +148,30 @@ expected:
 | Item | Detail |
 | --- | --- |
 | Year of assessment | 1 April 2026 to 31 March 2027 |
-| Quarterly instalments | 15 August 2026, 15 November 2026, 15 February 2027, 15 May 2027 (section 90(2)); from 2026/27 based on the prior year's tax (`sri-lanka-provisional-tax-ait`) |
-| Statement of estimated tax | Section 91 now applies only to years before 1 April 2026 (Act No. 11 of 2026) |
+| Quarterly instalments | 15 August 2026, 15 November 2026, 15 February 2027 and 15 May 2027 under section 90(2). Use prior-year tax unless section 90(3) requires a current-year estimate. See `sri-lanka-provisional-tax-ait`. |
+| Statement of estimated tax | Section 91 applies to years beginning before 1 April 2026. For 2026/27, check the separate IRD instalment declaration requirements. |
 | Return of income | Eight months after the year end, so by 30 November 2027 (section 93(1)), through IRD e-Services |
-| Balance of tax | Paid with the return; late payment penalty 20% after 14 days and interest at 1.5% a month |
-| TIN | New section 103(6): a TIN certificate is needed for share transfers, bank accounts and other listed purposes from 1 April 2026 |
+| Balance of tax | Pay ordinary income tax by 30 September 2027, six months after year end. Late payment can incur the section 179 penalty and interest from the due date at 1.5% per month or part month. |
+| TIN | Section 103(6) has effect from 1 April 2026. The IRD certificate procedure for the persons specified in section 102(3) started on 1 November 2026. Both parties must produce a certificate when transferring shares of a company incorporated in Sri Lanka. See the IRD circular for covered financial accounts and other transactions. |
 
 ## Completion checklist
 
 - [ ] Each income stream mapped to its rate
-- [ ] 15% claimed only with bank-remittance evidence
+- [ ] 15% claimed only after checking foreign source or overseas use, foreign currency and qualifying bank remittance
 - [ ] Liquor or tobacco export kept out of the 45% rate
-- [ ] Investment-asset gains at 30% and out of instalments
+- [ ] Investment-asset gains checked for exemptions and taxable gains at 30% kept out of instalments
 - [ ] Instalment and withholding credits deducted
-- [ ] Return due date and penalties noted
+- [ ] Payment and return due dates and penalties noted
 
 ## Sources
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Read for First Schedule paragraph 4 (rates for companies, subparagraphs (1), (2), (2A), (2B), (2C), (4)), sections 90 to 93, 157, 159, 177 to 180, in the IRD consolidated Act | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf | 2026-11-14 |
+| Read for First Schedule paragraphs 4 and 9, Third Schedule paragraph (h), and sections 6, 37, 62, 82, 90 to 93, 157, 159 and 177 to 180 in the IRD consolidated Act | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf | 2026-11-24 |
 | Read for sections 1(3), 23 (new section 102(1A)), 24 (section 103(6)) and 36(4) (liquor and tobacco export wording) of the Inland Revenue (Amendment) Act No. 11 of 2026 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf | 2026-11-14 |
 | Read for the company rates table and the remittance tax rows of the IRD tax chart (the latest chart on the site) | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx | 2026-11-14 |
-| Read for the list of amending Acts on the IRD income tax page | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Income%20Tax.aspx?menuid=1201 | 2026-11-14 |
+| Read for the amending Acts and the final payment and annual filing deadlines | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Income%20Tax.aspx?menuid=1201 | 2026-11-24 |
+| IRD instalment calculation and declaration circular SEC/2026/E/06 (Re-Revised) | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2026_E_06_ReRiv_E.pdf | 2026-11-24 |
+| IRD TIN certificate circular SEC/2026/E/07 | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2026_E_07_E.pdf | 2026-11-24 |
 
-Not yet confirmed: the IRD has not published a 2026/27 tax chart (the latest page is headed for the prior year; the company rates in the Act are unchanged); loss carry-forward and capital allowance detail (Second and Fourth Schedules not read for this rewrite); the remittance tax conditions in the Act (only the chart was read); any SME or sector rate for 2026/27.
+The linked IRD tax chart is for 2025/26. The company rates for 2026/27 follow the Act. Loss carry-forward, capital allowances and any company-specific concessions need a separate check.
