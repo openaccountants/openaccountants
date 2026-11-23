@@ -141,7 +141,7 @@
 | [French Polynesia](french-polynesia/) | Needs writing | 1 | 1 |
 | [Heard Island and McDonald Islands](heard-island-and-mcdonald-islands/) | Needs writing | 1 | 1 |
 | [Hong Kong](hong-kong/) | Needs writing | 7 | 7 |
-| [India](india/) | Needs writing | 20 | 19 |
+| [India](india/) | Needs writing | 21 | 20 |
 | [Indonesia](indonesia/) | Needs writing | 12 | 10 |
 | [Japan](japan/) | Needs writing | 18 | 18 |
 | [Kazakhstan](kazakhstan/) | Needs writing | 17 | 17 |
@@ -168,7 +168,7 @@
 | [Philippines](philippines/) | Needs writing | 7 | 5 |
 | [Pitcairn](pitcairn/) | Needs writing | 1 | 1 |
 | [Samoa](samoa/) | Needs writing | 6 | 6 |
-| [Singapore](singapore/) | Needs writing | 10 | 10 |
+| [Singapore](singapore/) | Needs writing | 11 | 11 |
 | [Solomon Islands](solomon-islands/) | Needs writing | 1 | 1 |
 | [South Korea](south-korea/) | Needs writing | 6 | 4 |
 | [Sri Lanka](sri-lanka/) | Needs writing | 10 | 9 |

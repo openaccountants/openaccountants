@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ws-corporate-income-tax"
   jurisdiction: "WS"
   tax_year: "2026"
-  last_updated: "2026-11-15"
+  last_updated: "2026-11-22"
 ---
 
-# Samoa Corporate Income Tax v0.1
+# Samoa Corporate Income Tax v0.2
 
 > **General reference only.** This skill supports AI-assisted working papers. It is not approval to file, pay or take a tax position for a particular person. Obtain qualified local review of the facts, applicable law and filing instructions.
 
@@ -50,7 +50,7 @@ The enacted 2026 removal Act commences on 1 January 2028 and preserves the remov
 
 The default year is calendar year. A company may use another 12-month period only with written Commissioner approval; the statutory transition-year rules apply. File the annual income tax return within 3 months of year end, including where there is a statutory loss, and pay on that due date. Thus a 31 December 2026 year end gives 31 March 2027, derived. IR4 is the company return; the listed 2025 form is the 2025-2026 filing-cycle form, not a final 2026 form. [section 2, tax year](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 34](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 80](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 82](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [Income Tax Forms, current listing](https://revenue.gov.ws/inland-revenue-services/).
 
-Provisional instalments fall on 31 March, 31 July and 31 October. Start with the preceding-year assessed tax after relevant credits less the specified withholding-paid amount; normally pay 1/3 at each date (in words on the page). If the provisional amount is below WST 500, pay it on 31 March. File an estimate when new/unassessed, or a justified revision for significantly lower income; reconcile credits at final assessment. An estimate below 80% of actual statutory tax can attract 50% of the shortfall for fraud/wilful neglect or 10% otherwise, with the statutory reasonable-care/beyond-control protection for the latter. [section 85](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 86](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 88](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf).
+Provisional instalments are normally due on 31 March, 31 July and 31 October. A Saturday, Sunday or Samoa public holiday moves the due date to the next business day. The third 2026 instalment was due Monday 2 November 2026. Start with the preceding-year assessed tax after relevant credits less the specified withholding-paid amount; normally pay 1/3 at each date (in words on the page). If the provisional amount is below WST 500, pay it on 31 March. File an estimate when new/unassessed, or a justified revision for significantly lower income; reconcile credits at final assessment. An estimate below 80% of actual statutory tax can attract 50% of the shortfall for fraud/wilful neglect or 10% otherwise, with the statutory reasonable-care/beyond-control protection for the latter. [section 85](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 86](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 88](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [Tax Administration Act section 26](https://www.ag.gov.ws/wp-content/uploads/2024/02/Tax-Administration-Act-2012.pdf); [Samoa public holidays calendar](https://mcil.gov.ws/public-holidays-calendar).
 
 Withhold at the earlier of crediting the recipient’s account and actual payment. Pay withholding to the Commissioner within 15 days after month end; retain the certificate and reconcile any eligible credit. A withholding failure creates payer liability rather than permission to deduct the payment unchecked. [section 98](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 99](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 103](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf).
 
@@ -130,9 +130,11 @@ Read on **2026-11-15** for the stated sections. The Attorney General tax consoli
 | Read for Non-resident withholding, life/reinsurance rate | https://revenue.gov.ws/wp-content/uploads/2026/10/IS01_Income-Tax-1-2026.pdf | 2026-11-15 |
 | Read for regulation 2, scanned page 2 visually checked | https://revenue.gov.ws/wp-content/uploads/2025/01/Tax-Administration-Late-Payment-Interest-Regulations-2015.pdf | 2026-11-15 |
 | Read for section 31; section 47; section 48; section 49 | https://www.ag.gov.ws/wp-content/uploads/2024/02/Tax-Administration-Act-2012.pdf | 2026-11-15 |
+| Read for section 26, non-business-day rule | https://www.ag.gov.ws/wp-content/uploads/2024/02/Tax-Administration-Act-2012.pdf | 2026-11-23 |
+| Samoa public holidays calendar, 2026 | https://mcil.gov.ws/public-holidays-calendar | 2026-11-23 |
 
 Not yet confirmed: Final 2026 IR4 and live return boxes; treaty relief, transfer pricing, sector incentives, detailed loss/capital-allowance and insurance/transport computations; post-2027 implementation of the enacted exemption removal. International-company treatment needs entity and activity evidence, not the old unconditional offshore 0% claim.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-15. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ws-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ws-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ws-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ws-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
