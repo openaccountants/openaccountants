@@ -29,6 +29,7 @@ Calendar tax year for individuals. Income tax authority: the Franchise Tax Board
 | IT-IND, health coverage penalty | ca-form-3853-coverage | checked against the law |
 | IT-CORP, LLC annual tax and fee (the `covered_by` owner) | ca-llc-fee-and-tax | checked against the law (partial) |
 | IT-CORP, single-member LLC Form 568 filing | ca-smllc-form-568 | checked against the law |
+| IT-IND and IT-CORP, State Historic Rehabilitation Tax Credit (2021 to 2026 credit and AB 1265 credit from 2027) | ca-historic-rehabilitation-credit | checked against the law |
 | IT-CORP, pass-through entity elective tax | ca-pte-elective-tax | checked against the law |
 | VAT / sales and use tax | california-sales-tax | checked against the law |
 | SC and PR, payroll withholding, SDI and unemployment insurance | ca-payroll | checked against the law |
