@@ -21,7 +21,7 @@ version: 0.1
 jurisdiction: US-CA
 category: state-tax
 tax_year: 2026
-last_updated: 2026-11-23
+last_updated: 2026-11-22
 tier: 2
 domain: tax
 type: computation
@@ -31,7 +31,7 @@ type: computation
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-> **Source-cited draft.** Built from the chaptered text of SB 1406 (Stats. 2026, Ch. 1036) and the codified Revenue and Taxation Code (R&TC) and Vehicle Code sections in the official California Legislature bulk data archive; R&TC 6201, 6202, 6247, 6248, 6292, 6406, 6485, 6485.1 and 6591 in the CDTFA Business Taxes Law Guide (Revision 2026); CDTFA Regulations 1610 and 1620; CDTFA Publication 52 (November 2025); form CDTFA-401-CUTS (rev. 12-25) and its instructions; the CDTFA Vehicles, Vessels and Aircraft industry guide; and the CDTFA sales and use tax rate table effective 1 October 2026. All were read on 2026-11-22 or 2026-11-23. No accountant has reviewed it.
+> **Source-cited draft.** Built from the chaptered text of SB 1406 (Stats. 2026, Ch. 1036) and the codified Revenue and Taxation Code (R&TC) and Vehicle Code sections in the official California Legislature bulk data archive; R&TC 6201, 6202, 6247, 6248, 6292, 6406, 6485, 6485.1 and 6591 in the CDTFA Business Taxes Law Guide (Revision 2026); CDTFA Regulations 1610 and 1620; CDTFA Publication 52 (November 2025); form CDTFA-401-CUTS (rev. 12-25) and its instructions; the CDTFA Vehicles, Vessels and Aircraft industry guide; and the CDTFA sales and use tax rate table effective 1 October 2026. All were read on 2026-11-22 (California, Pacific time). No accountant has reviewed it.
 
 **Answer first.**
 
@@ -291,24 +291,26 @@ expected:
 
 ## Sources
 
+Read dates are California (Pacific time) local dates: all sources for this skill, and the LegInfo access test, were opened on 22 November 2026, Pacific time.
+
 | Source | URL | Read on |
 | --- | --- | --- |
 | SB 1406 (McNerney), chaptered text, Stats. 2026, Ch. 1036, chaptered and approved 30 September 2026, from the official California Legislature bulk data archive (version 20250SB140695CHP, entry BILL_VERSION_TBL_19286.lob). Read in full: SEC. 1 (R&TC 6247), SEC. 2 (R&TC 6248), SEC. 3 (new R&TC 6829.5), SEC. 4, SEC. 5 (tax levy, immediate effect). | https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip | 2026-11-22 |
 | Same archive, codified law table (LAW_SECTION_TBL). Read: R&TC 6829.5 ("Added by Stats. 2026, Ch. 1036, Sec. 3. (SB 1406) Effective September 30, 2026", entry LAW_SECTION_TBL_151802.lob); R&TC 6248 row ("Amended by Stats. 2026, Ch. 1036, Sec. 2. (SB 1406) Effective September 30, 2026", entry LAW_SECTION_TBL_122000.lob); Vehicle Code 516 (entry LAW_SECTION_TBL_101195.lob). | https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip | 2026-11-22 |
-| CDTFA Business Taxes Law Guide (Revision 2026), R&TC 6248. Read both texts and the history note. The page heads both the former and the amended text "Text of Section Operative Through September 29, 2026"; the amended text matches the chaptered bill. | https://cdtfa.ca.gov/lawguides/vol1/sutl/6248.html | 2026-11-22 |
-| Same, R&TC 6247 (out-of-state delivery presumption, amended by SB 1406; history note "in effect on September 30, 2026"). | https://cdtfa.ca.gov/lawguides/vol1/sutl/6247.html | 2026-11-22 |
-| Same, R&TC 6201 (use tax imposed) and 6202 (purchaser liable; brokers). | https://cdtfa.ca.gov/lawguides/vol1/sutl/6201.html; https://cdtfa.ca.gov/lawguides/vol1/sutl/6202.html | 2026-11-22; 2026-11-23 |
-| Same, R&TC 6292 (use tax paid to DMV; late application penalty, no interest). | https://cdtfa.ca.gov/lawguides/vol1/sutl/6292.html | 2026-11-23 |
-| Same, R&TC 6406 (credit for tax paid to another state, capped at the California taxes). | https://cdtfa.ca.gov/lawguides/vol1/sutl/6406.html | 2026-11-22 |
-| Same, R&TC 6485 (25% fraud or intent to evade) and 6485.1 (50% for registering outside California to evade). | https://cdtfa.ca.gov/lawguides/vol1/sutl/6485.html; https://cdtfa.ca.gov/lawguides/vol1/sutl/6485-1.html | 2026-11-22; 2026-11-23 |
-| Same, R&TC 6591 (10% late payment and late return penalties; interest). | https://cdtfa.ca.gov/lawguides/vol1/sutl/6591.html | 2026-11-23 |
+| CDTFA Business Taxes Law Guide (Revision 2026), R&TC 6248. Read for both texts and the history note. The page heads both the former and the amended text "Text of Section Operative Through September 29, 2026"; the amended text matches the chaptered bill. | https://cdtfa.ca.gov/lawguides/vol1/sutl/6248.html | 2026-11-22 |
+| Same, R&TC 6247. Read for the out-of-state delivery presumption, as amended by SB 1406, and its history note ("in effect on September 30, 2026"). | https://cdtfa.ca.gov/lawguides/vol1/sutl/6247.html | 2026-11-22 |
+| Same, R&TC 6201 and 6202. Read for the imposition of use tax (6201) and purchaser liability and broker rules (6202). | https://cdtfa.ca.gov/lawguides/vol1/sutl/6201.html; https://cdtfa.ca.gov/lawguides/vol1/sutl/6202.html | 2026-11-22 |
+| Same, R&TC 6292. Read for use tax paid to DMV and the late application penalty with no interest. | https://cdtfa.ca.gov/lawguides/vol1/sutl/6292.html | 2026-11-22 |
+| Same, R&TC 6406. Read for the credit for tax paid to another state, capped at the California taxes. | https://cdtfa.ca.gov/lawguides/vol1/sutl/6406.html | 2026-11-22 |
+| Same, R&TC 6485 and 6485.1. Read for the 25% fraud or intent-to-evade penalty (6485) and the 50% penalty for registering outside California to evade (6485.1). | https://cdtfa.ca.gov/lawguides/vol1/sutl/6485.html; https://cdtfa.ca.gov/lawguides/vol1/sutl/6485-1.html | 2026-11-22 |
+| Same, R&TC 6591. Read for the 10% late payment and late return penalties and interest. | https://cdtfa.ca.gov/lawguides/vol1/sutl/6591.html | 2026-11-22 |
 | CDTFA Regulation 1610, Vehicles, Vessels, and Aircraft. Read for definitions (a), payment by purchaser (c)(1) and (c)(2), the 1.2 and 1.8 DMV factors, aircraft and documented vessel due dates, and the 50% penalty. | https://cdtfa.ca.gov/lawguides/vol1/sutr/1610.html | 2026-11-22 |
-| CDTFA Regulation 1620, Interstate and Foreign Commerce. Read (b)(3), (b)(4), (b)(5)(A) to (E) and the history notes. Its (b)(5)(A)1 still names only corporations and LLCs (pre-SB 1406). | https://cdtfa.ca.gov/lawguides/vol1/sutr/1620.html | 2026-11-22 |
-| CDTFA Publication 52, Vehicles and Vessels: Use Tax (November 2025). Read the introduction and pp. 5 to 9. Predates SB 1406: its resident note names only corporations and LLCs. Excludes documented vessels. | https://cdtfa.ca.gov/formspubs/pub52.pdf | 2026-11-22 |
-| CDTFA-401-CUTS, Combined State and Local Consumer Use Tax Return for Vehicle, Mobilehome, Vessel, or Aircraft (rev. 10, 12-25), with instructions. Read in full (pages 1 to 7). | https://cdtfa.ca.gov/DownloadFile.ashx?path=/formspubs/cdtfa401cuts.pdf | 2026-11-23 |
-| CDTFA Tax Guide for Purchasers of Vehicles, Vessels, and Aircraft: Vehicles, Vessels, Aircraft and File a Return pages. Read for the 12-month test, functional use, rebuttal documents and filing. None mentions SB 1406. | https://cdtfa.ca.gov/industry/vehicles-vessels-aircraft/vehicles.htm; https://cdtfa.ca.gov/industry/vehicles-vessels-aircraft/vessels.htm; https://cdtfa.ca.gov/industry/vehicles-vessels-aircraft/aircraft.htm; https://cdtfa.ca.gov/industry/vehicles-vessels-aircraft/file-a-return.htm | 2026-11-23 |
-| CDTFA, Sales and Use Tax Rates (statewide 7.25%) and rate table effective 1 October 2026 (City of Sacramento 0.0875). | https://cdtfa.ca.gov/taxes-and-fees/sales-use-tax-rates.htm; https://cdtfa.ca.gov/taxes-and-fees/SalesTaxRates10-1-26.xlsx | 2026-11-22; 2026-11-23 |
-| leginfo.legislature.ca.gov, SB 1406 bill status page. Secondary reference only: returned a security check page (HTTP 403, "Just a moment...") to a direct request on 2026-11-23, not bypassed. Not read. | https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1406 | not read |
+| CDTFA Regulation 1620, Interstate and Foreign Commerce. Read for (b)(3), (b)(4), (b)(5)(A) to (E) and the history notes. Its (b)(5)(A)1 still names only corporations and LLCs (pre-SB 1406). | https://cdtfa.ca.gov/lawguides/vol1/sutr/1620.html | 2026-11-22 |
+| CDTFA Publication 52, Vehicles and Vessels: Use Tax (November 2025). Read for the introduction and pp. 5 to 9. Predates SB 1406: its resident note names only corporations and LLCs. Excludes documented vessels. | https://cdtfa.ca.gov/formspubs/pub52.pdf | 2026-11-22 |
+| CDTFA-401-CUTS, Combined State and Local Consumer Use Tax Return for Vehicle, Mobilehome, Vessel, or Aircraft (rev. 10, 12-25), with instructions. Read in full (pages 1 to 7). | https://cdtfa.ca.gov/DownloadFile.ashx?path=/formspubs/cdtfa401cuts.pdf | 2026-11-22 |
+| CDTFA Tax Guide for Purchasers of Vehicles, Vessels, and Aircraft: Vehicles, Vessels, Aircraft and File a Return pages. Read for the 12-month test, functional use, rebuttal documents and filing. None mentions SB 1406. | https://cdtfa.ca.gov/industry/vehicles-vessels-aircraft/vehicles.htm; https://cdtfa.ca.gov/industry/vehicles-vessels-aircraft/vessels.htm; https://cdtfa.ca.gov/industry/vehicles-vessels-aircraft/aircraft.htm; https://cdtfa.ca.gov/industry/vehicles-vessels-aircraft/file-a-return.htm | 2026-11-22 |
+| CDTFA, Sales and Use Tax Rates page and rate table effective 1 October 2026. Read for the statewide 7.25% rate and the City of Sacramento row (0.0875). | https://cdtfa.ca.gov/taxes-and-fees/sales-use-tax-rates.htm; https://cdtfa.ca.gov/taxes-and-fees/SalesTaxRates10-1-26.xlsx | 2026-11-22 |
+| leginfo.legislature.ca.gov, SB 1406 bill status page. Secondary reference only: returned a security check page (HTTP 403, "Just a moment...") to a direct request on 2026-11-22, not bypassed. Not read. | https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1406 | not read |
 
 Not yet confirmed: whether the SB 1406 resident tests apply to property bought, or under binding contract, before 30 September 2026 but brought into California after it (SB 1406 has no transition rule, and 6248(d) refers to the earlier amendments); whether R&TC 6829.5 reaches purchases before 30 September 2026; the meaning of "beneficial owner" in 6248 and 6829.5, and of "closely held" in 6248(a)(1)(A) (neither is defined in the sections read); how the 10%, 25% and 50% penalties combine on one determination; the current modified adjusted interest rate under R&TC 6591.5 (not read); any CDTFA notice, regulation change or bill analysis on SB 1406 (none found on the CDTFA pages read, and Reg 1620 and Publication 52 still describe the pre-SB 1406 resident rule); the application of the 12-month test to vessels and aircraft used partly in California waters or airspace without being moored or hangared there (not addressed in the sources read); R&TC 6829 (corporate officer liability), fetched but not read, so no comparison with 6829.5 is made.
 
