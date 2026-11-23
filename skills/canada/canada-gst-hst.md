@@ -4,6 +4,7 @@ description: Use this skill whenever asked to prepare, review, or classify trans
 version: 2.1
 jurisdiction: CA
 tax_year: 2025
+tax_year_notes: "Retains the original 2025 scope and April 2026 hypothetical examples; the correction distinguishes the 2025 and 2026 vehicle-acquisition limits. This is not a full 2026 source review."
 last_updated: 2026-11-23
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Nathan Wiebe"
@@ -348,7 +349,7 @@ Retain the hypothetical USD 16.00 / CAD 21.89 invoice and assume normal registra
 
 | Date | Counterparty | Gross | Net | GST/HST | Rate | Line (self-assess) | Line (ITC) | Default? | Question? | Excluded? |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-04-03 | NOTION LABS INC | -21.89 | -21.89 | 0 | — | — | — | N | — | No tax allocation: exclusively commercial imported service |
+| 2026-04-03 | NOTION LABS INC | -21.89 | -21.89 | 0 | — | — | — | N | — | No tax allocation: exclusively commercial imported service. [ETA s.217](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-217.html) |
 
 ### Example 2 — Domestic purchase with HST (Shopify)
 
@@ -361,6 +362,19 @@ Assume the hypothetical invoice supports 13% Ontario HST under the applicable pl
 | Date | Counterparty | Gross | Net | GST/HST | Rate | Line | Default? | Question? | Excluded? |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2026-04-10 | SHOPIFY | -49.00 | -43.36 | -5.64 | 13% HST | 106 | N | — | — |
+
+```oa-check
+name: Ontario software invoice, supported 13% inclusive tax
+inputs:
+  gross: 49
+  rate: 0.13
+steps:
+  net: round(gross / (1 + rate), 2)
+  tax: gross - net
+expected:
+  net: 43.36
+  tax: 5.64
+```
 
 ### Example 3 — Entertainment, restricted ITC
 
@@ -384,7 +398,20 @@ CAD 3,729 including 13% HST: net = 3,729 / 1.13 = 3,300.00 and HST = 429.00. Ass
 
 | Date | Counterparty | Gross | Net | GST/HST | Rate | Line | Default? | Question? | Excluded? |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-04-18 | APPLE STORE | -3,729.00 | -3,300.00 | -429.00 | 13% HST | 106 | N | — | — |
+| 2026-04-18 | APPLE STORE | -3,729.00 | -3,300.00 | -429.00 | 13% HST | 106 | N | — | [ETA s.199](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-199.html) |
+
+```oa-check
+name: Computer invoice, supported 13% inclusive tax
+inputs:
+  gross: 3729
+  rate: 0.13
+steps:
+  net: round(gross / (1 + rate), 2)
+  tax: gross - net
+expected:
+  net: 3300
+  tax: 429
+```
 
 ### Example 5 — Export sale (zero-rated)
 
@@ -664,6 +691,8 @@ This skill is v2.0, rewritten in April 2026 to align with the three-tier OpenAcc
 9. Bank of Canada daily exchange rates — bankofcanada.ca
 10. CRA My Business Account — business registration verification
 
+## Sources
+
 ### Correction sources (operative reads reused from 21 November 2026)
 
 These linked readings support only the corrected claims, not full clearance of unchanged content. The 2025/2026 vehicle-limit readings were completed in the earlier linked tax research and applied in the 21 November GST/HST report.
@@ -731,7 +760,7 @@ These linked readings support only the corrected claims, not full clearance of u
 14. HST rate table complete with NS 14%: yes (Section 1).
 15. Zero-rated vs exempt distinction explicit: yes (Section 5.4–5.5).
 
-## End of Canada GST/HST Return Skill v2.0
+## End of Canada GST/HST Return Skill v2.1
 
 This skill is incomplete without the companion workflow file loaded alongside it: `vat-workflow-base` v0.1 or later (Tier 1, workflow architecture). Do not attempt to produce a GST34 without it loaded.
 
