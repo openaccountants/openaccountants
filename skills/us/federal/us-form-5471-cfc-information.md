@@ -129,7 +129,7 @@ What each schedule holds, in short:
 | Schedule | Content | Revision in use |
 | --- | --- | --- |
 | A | Classes of stock and shares outstanding at the start and end of the year; each class listed separately | Form 5471, Dec 2025 |
-| B | Part I: for ordinary Category 3 and 4 reporting, US persons owning 10% or more of vote or value directly or indirectly through foreign entities; apply the separate section 953(c) rule where relevant. Constructive-only ownership does not itself put a person in this Part I population. Part II: direct shareholders of the corporation ([Instructions, Schedule B](https://www.irs.gov/instructions/i5471)) | Form 5471, Dec 2025 |
+| B | Part I: for ordinary Category 3 and 4 reporting, US persons owning 10% or more of vote or value at any time during the annual accounting period, directly or indirectly through foreign entities; apply the separate section 953(c) rule where relevant. Constructive-only ownership does not itself put a person in this Part I population. Part II: direct shareholders of the corporation ([Instructions, Schedule B](https://www.irs.gov/instructions/i5471)) | Form 5471, Dec 2025 |
 | C | Income statement in functional currency and US dollars; the starting point for subpart F and tested income and for E&P on Schedule H | Form 5471, Dec 2025 |
 | E, E-1 | Foreign income taxes paid, accrued or deemed paid, by separate category; E-1 is included with E. Feeds the section 901 and 960 credits | Dec 2021 |
 | F | Balance sheet, start and end of year, prepared in functional currency and translated to US dollars using US GAAP; DASTM corporations instead use the tax balance-sheet rules in Treas. Reg. 1.985-3(d) ([Instructions, Schedule F](https://www.irs.gov/instructions/i5471)) | Form 5471, Dec 2025 |
