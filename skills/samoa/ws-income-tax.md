@@ -3,16 +3,16 @@ name: ws-income-tax
 description: "Samoa personal income tax for 2026: source-cited rules, conditions, filing boundaries and recomputing cases. Not yet approved by an accountant."
 jurisdiction: WS
 tax_year: 2026
-last_updated: 2026-11-15
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: computation
 category: international
-version: 0.1
+version: 0.2
 ---
 
-# Samoa Personal Income Tax v0.1
+# Samoa Personal Income Tax v0.2
 
 > **General reference only.** This skill supports AI-assisted working papers. It is not approval to file, pay or take a tax position for a particular person. Obtain qualified local review of the facts, applicable law and filing instructions.
 
@@ -48,7 +48,7 @@ The Schedule does not deny the ordinary individual bands merely because the indi
 
 The ordinary tax year is the calendar year. File the income tax return within 3 months after year end if liable for income tax or carrying a statutory loss; tax is due on the return’s due date. For the 2026 calendar year this gives 31 March 2027 (derived). IR2 is the sole-trader return. The Ministry currently lists a 2025 IR2 for the 2025-2026 filing cycle; do not relabel it a final 2026 form. [section 2, tax year](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 80](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 82](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [Income Tax Forms, current listing](https://revenue.gov.ws/inland-revenue-services/).
 
-Provisional tax is a prepayment, not extra tax. The statutory starting amount is preceding-year assessed tax after relevant credits, less the specified tax met by withholding; instalments are due 31 March, 31 July and 31 October. Below WST 500, pay the amount on 31 March. New/unassessed businesses must estimate, and a materially lower liability may support a revised estimate. Retain estimates and reconcile payments against final liability. [section 85](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 86](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf).
+Provisional tax is a prepayment, not extra tax. The statutory starting amount is preceding-year assessed tax after relevant credits, less the specified tax met by withholding; instalments are normally due 31 March, 31 July and 31 October. A Saturday, Sunday or Samoa public holiday moves the due date to the next business day. The third 2026 instalment was due Monday 2 November 2026. Below WST 500, pay the amount on 31 March. New/unassessed businesses must estimate, and a materially lower liability may support a revised estimate. Retain estimates and reconcile payments against final liability. [section 85](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 86](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [Tax Administration Act section 26](https://www.ag.gov.ws/wp-content/uploads/2024/02/Tax-Administration-Act-2012.pdf); [Samoa public holidays calendar](https://mcil.gov.ws/public-holidays-calendar).
 
 ## Penalties and interest
 
@@ -119,5 +119,7 @@ Read on **2026-11-15** for the stated sections. The Attorney General tax consoli
 | Read for regulation 2, scanned page 2 visually checked | https://revenue.gov.ws/wp-content/uploads/2025/01/Tax-Administration-Late-Payment-Interest-Regulations-2015.pdf | 2026-11-15 |
 | Read for Company Tax and Small Business Tax | https://revenue.gov.ws/rates/ | 2026-11-15 |
 | Read for section 31; section 47; section 48; section 49 | https://www.ag.gov.ws/wp-content/uploads/2024/02/Tax-Administration-Act-2012.pdf | 2026-11-15 |
+| Read for section 26, non-business-day rule | https://www.ag.gov.ws/wp-content/uploads/2024/02/Tax-Administration-Act-2012.pdf | 2026-11-23 |
+| Samoa public holidays calendar, 2026 | https://mcil.gov.ws/public-holidays-calendar | 2026-11-23 |
 
 Not yet confirmed: Final 2026 IR2 and live filing-field mapping; client-specific exemptions, loss/depreciation schedules and foreign-tax-credit/treaty computations. Do not infer an exemption or a non-resident denial of the ordinary bands from the old draft.
