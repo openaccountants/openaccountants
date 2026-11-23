@@ -193,7 +193,7 @@ Reasonable cause works by moving the start of the time limits: the deadline and 
 | Same, but client lives in the US and filed returns for the last 3 years | Streamlined domestic offshore procedures: 3 years of amended returns with information returns, 6 years of FBARs, Form 14654 | 5% miscellaneous offshore penalty on the highest aggregate year-end balance of the assets it covers, instead of information return penalties |
 | Willful failure, or under exam or investigation | Refer: IRS Criminal Investigation Voluntary Disclosure Practice or counsel | Outside this skill |
 
-Streamlined procedures are for failures to report income from foreign financial assets. A client whose only failure is the information return, with all income reported, goes through the delinquent information return route, not streamlined. Neither streamlined route is open to a taxpayer under civil exam or criminal investigation, and a non-willfulness certification is signed under penalty of perjury. Sources: [IRS streamlined filing compliance procedures](https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures); [IRS delinquent international information return submission procedures](https://www.irs.gov/individuals/international-taxpayers/delinquent-international-information-return-submission-procedures).
+Streamlined procedures are for failures to report income from foreign financial assets. A client whose only failure is the information return, with all income reported, may use the delinquent information return route only if not under IRS civil examination or criminal investigation and not already contacted by the IRS about the delinquent returns. Otherwise use the notice-response or counsel route; do not promise penalty relief. Neither streamlined route is open to a taxpayer under civil exam or criminal investigation, and a non-willfulness certification is signed under penalty of perjury. Sources: [IRS streamlined filing compliance procedures](https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures); [IRS delinquent international information return submission procedures](https://www.irs.gov/individuals/international-taxpayers/delinquent-international-information-return-submission-procedures).
 
 ### Step 8: related items reported elsewhere (pointers only)
 
@@ -207,7 +207,7 @@ Streamlined procedures are for failures to report income from foreign financial 
 
 | Situation | Treatment |
 | --- | --- |
-| Client owns 8% directly, spouse 4% | 12% by family attribution: a US shareholder. Siblings' stock would not count |
+| Client owns 8% directly, spouse 4% | 12% by family attribution: a US shareholder for the CFC tests. Siblings' stock does not count under section 318 for those tests; section 6046(c) includes siblings for Categories 2 and 3 reporting |
 | Parent is a nonresident alien holding 40% | Not attributed to the US child for the CFC and US shareholder tests (section 958(b)(1)) |
 | 51% of value, 30% of vote (preferred stock) | Category 4 and CFC tests are vote or value: still control |
 | Officer or director with no shares, a US investor buys 10% | Category 2 for the officer or director, with Schedule O Part I |
