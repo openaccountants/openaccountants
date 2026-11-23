@@ -152,7 +152,7 @@ expected:
 | Statement of estimated tax | Section 91 applies to years beginning before 1 April 2026. For 2026/27, check the separate IRD instalment declaration requirements. |
 | Return of income | Eight months after the year end, so by 30 November 2027 (section 93(1)), through IRD e-Services |
 | Balance of tax | Pay ordinary income tax by 30 September 2027, six months after year end. Late payment can incur the section 179 penalty and interest from the due date at 1.5% per month or part month. |
-| TIN | Section 103(6) has effect from 1 April 2026. The IRD certificate procedure for the persons specified in section 102(3) started on 1 November 2026. Both parties must produce a certificate when transferring shares of a company incorporated in Sri Lanka. See the IRD circular for covered financial accounts and other transactions. |
+| TIN | Section 103(6) has effect from 1 April 2026. The procedure covers specified persons under section 102(3) and calls for TIN certificates for both parties in covered transfers of shares in a Sri Lankan-incorporated company. Check the verification routes and statutory exceptions in sections 103(6)(c) and 103(7). The IRD deferred implementation of mandatory certificate submission for individuals in the specified transactions until 1 April 2027. |
 
 ## Completion checklist
 
@@ -173,5 +173,6 @@ expected:
 | Read for the amending Acts and the final payment and annual filing deadlines | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Income%20Tax.aspx?menuid=1201 | 2026-11-24 |
 | IRD instalment calculation and declaration circular SEC/2026/E/06 (Re-Revised) | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2026_E_06_ReRiv_E.pdf | 2026-11-24 |
 | IRD TIN certificate circular SEC/2026/E/07 | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2026_E_07_E.pdf | 2026-11-24 |
+| IRD 5 November 2026 TIN certificate deferral notice | https://www.ird.gov.lk/en/Lists/Latest%20News%20%20Notices/Attachments/823/SEC_PN_IT_2026-06_E.pdf | 2026-11-24 |
 
 The linked IRD tax chart is for 2025/26. The company rates for 2026/27 follow the Act. Loss carry-forward, capital allowances and any company-specific concessions need a separate check.
