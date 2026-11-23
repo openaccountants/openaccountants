@@ -1,25 +1,25 @@
 ---
 name: png-gst
 description: >
-  Prepare an already registered PNG business GST working paper for 2026 using the published IRC G1 lines, standard output/input calculation, direct and common input attribution, special-payment withholding and enacted household-goods relief. Confirm registration and assigned period from records. Missing current legal inputs remain held rather than being filled from old unsupported figures.
+  Prepare an already registered PNG business GST working paper for 2026 using the published monthly IRC G1 lines, standard output/input calculation, direct and common input attribution, special-payment withholding and enacted household-goods relief. Confirm registration and assigned period from records. Use the separate quarterly G1 for approved quarterly lodgers. Missing current legal inputs remain held rather than being filled from old unsupported figures.
 jurisdiction: PG
 category: international
 tax_year: 2026
-last_updated: 2026-11-16
-version: 1.2
+last_updated: 2026-11-22
+version: 1.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 type: filing-howto
 ---
 
-# Papua New Guinea GST return preparation v1.2
+# Papua New Guinea GST return preparation v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Scope
 
-Prepare a supported 2026 PNG GST working paper for an already registered business with its filing period confirmed by IRC. Use the IRC G1 return published with an effective date of January 2024, its instructions and the enacted budget amendments. This is a field-mapping and review workflow, not proof that the live portal or every general GST provision was accessed. Do not submit a return or apply a registration threshold without the actual current registration rule and client's status record.
+Prepare a supported 2026 PNG GST working paper for an already registered business with its filing period confirmed by IRC. For monthly filers, use the IRC G1 effective 1 January 2024 and the mapping below. Approved quarterly lodgers use the separate quarterly G1 and its own field instructions. [IRC revised GST forms notice](https://www.linkedin.com/posts/internal-revenue-commission-png_public-notice-on-g1-abd-cr-forms-activity-7392335151764029441-4eNW). This is a field-mapping and review workflow, not proof that the live portal or every general GST provision was accessed. Do not submit a return or apply a registration threshold without the actual current registration rule and client's status record.
 
 | Field | Entry |
 |---|---|
@@ -64,7 +64,7 @@ For a medical supply, use the current applicable IRC ruling rather than treating
 
 ### 3. Prepare the actual G1 field mapping
 
-The published G1 has numbered lines and three calculation blocks. The old invented Parts A-F and B.1/E.1 fields are not return boxes. TIN, taxpayer/contact/address and period appear above the calculation. Retain the official field names in the working paper and reconcile to the actual form version used for filing. [IRC G1 form](https://static.irc.gov.pg/2023/October/P0Jjks-media-g1_2023.pdf).
+The published monthly G1 has numbered lines and three calculation blocks. The old invented Parts A-F and B.1/E.1 fields are not return boxes. TIN, taxpayer/contact/address and period appear above the calculation. Retain the official field names in the working paper and reconcile to the actual form version used for filing. [IRC G1 form](https://static.irc.gov.pg/2023/October/P0Jjks-media-g1_2023.pdf).
 
 | G1 field | What to enter or calculate | Official source |
 |---|---|---|
@@ -268,11 +268,12 @@ Refuse finalisation for an unknown registration/period, unsupported supply class
 
 ## Sources
 
-Read on 16 November 2026. A scoped read does not certify every provision in a long Act.
+Read on the dates below. A scoped read does not certify every provision in a long Act.
 
 | Official source and scope read | URL | Read on |
 |---|---|---|
-| Read for IRC G1, effective 1 January 2024: all numbered fields and Notes 1-8, input attribution, vehicles, provincial allocation and credit note; historical benefit values not certified for 2026 | https://static.irc.gov.pg/2023/October/P0Jjks-media-g1_2023.pdf | 2026-11-16 |
+| Read for monthly IRC G1, effective 1 January 2024: all numbered fields and Notes 1-8, input attribution, vehicles, provincial allocation and credit note; historical benefit values not certified for 2026 | https://static.irc.gov.pg/2023/October/P0Jjks-media-g1_2023.pdf | 2026-11-16 |
+| Read for the IRC revised forms notice: the January 2024 monthly G1 and separate approved quarterly G1 | https://www.linkedin.com/posts/internal-revenue-commission-png_public-notice-on-g1-abd-cr-forms-activity-7392335151764029441-4eNW | 2026-11-23 |
 | Read for IRC special-payment factsheet: standard rate, output/input, withholding notice and refund evidence; historical penalty annex superseded by amendment | https://static.irc.gov.pg/2021/December/5ExWcL-media-GST-Section-65A-Fact-Sheet.pdf | 2026-11-16 |
 | Read for Certified GST 2025 Budget amendment: zero-rated goods, longer taxable period, varied return date, special fine and refund limitation changes | https://static.irc.gov.pg/2025/January/mrifwz-media-goodsandserviceact2024.pdf | 2026-11-16 |
 | Read for Certified GST 2026 Budget amendment: commencement, monitoring classes and relief extension | https://pdis.parliament.gov.pg/uploads/953e2445-7185-4aa7-9d0f-0fcea47e75a9 | 2026-11-16 |
