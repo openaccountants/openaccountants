@@ -32,6 +32,7 @@ Calendar tax year for individuals. Income tax authority: the Franchise Tax Board
 | IT-CORP, pass-through entity elective tax | ca-pte-elective-tax | checked against the law |
 | VAT / sales and use tax | california-sales-tax | checked against the law |
 | SC and PR, payroll withholding, SDI and unemployment insurance | ca-payroll | checked against the law |
+| Sales and use tax, infant formula and infant feeding products (SB 1151) | ca-infant-formula-sales-tax | checked against the law |
 | XB, cross-border and residency | ca-residency-leaving-california | checked against the law |
 | Workflow, freelancer intake | us-ca-freelance-intake | checked against the law |
 | Workflow, federal and California assembly | us-ca-return-assembly | checked against the law |
