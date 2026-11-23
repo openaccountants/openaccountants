@@ -22,7 +22,7 @@ spec.loader.exec_module(vg)
 REL = "skills/malta/fictional-vat.md"
 OLD = ("---\nname: fictional-vat\ndescription: A complete fictional input fixture, never legal guidance.\n"
        "jurisdiction: MT\ntier: 2\nlast_updated: 2026-11-12\n"
-       "---\n\n# Fictional source\n" + "Unchanged fictional guidance.\n" * 4500)
+       "---\n\n# Fictional source\n" + "Unchanged fictional guidance.\n" * 5000)
 HELD = OLD.replace("name: fictional-vat\n", "name: fictional-vat\nstatus: needs_sources\n", 1)
 
 

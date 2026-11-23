@@ -386,9 +386,9 @@ def check_sanctioned(errors, paths=None, read=_read_or_none):
 #: The website refuses a skill file larger than this, after the merge
 #: (the limit in its ingest lint). Mirror of the platform's value: change both
 #: together. Checked here so the contributor hears it on the PR instead.
-#: 110 KB since 11 Nov 2026 (was 100 KB). A split preserves content in distinct
-#: linked base/companion jobs, with independent no-loss review; never truncate.
-PLATFORM_MAX_SKILL_BYTES = 112_640
+#: 128 KiB since 23 Nov 2026 (was 110 KiB). The merged South Africa VAT source
+#: is 127,975 bytes. Accept its full text; publication/source holds stay separate.
+PLATFORM_MAX_SKILL_BYTES = 131_072
 PLATFORM_MIN_DESCRIPTION_CHARS = 40
 
 #: Files under skills/ that are not skills and not Markdown. Generated.
