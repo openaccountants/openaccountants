@@ -1,10 +1,10 @@
 ---
 name: canada-gst-hst
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Canadian GST/HST return (Form GST34) for a self-employed individual or small business in Canada. Trigger on phrases like "prepare GST return", "file HST", "Canadian sales tax", "GST/HST return", "Form GST34", "input tax credits", "ITC claim", or any request involving Canadian GST/HST filing. Also trigger when classifying transactions for GST/HST purposes from bank statements, invoices, or other source data. This skill covers federal GST and harmonized HST provinces only under the regular method. Quebec QST, Saskatchewan PST, Manitoba RST, British Columbia PST, Quick Method, and simplified method for charities are in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). ALWAYS read this skill before touching any Canadian GST/HST work.
-version: 2.0
+version: 2.1
 jurisdiction: CA
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-11-23
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Nathan Wiebe"
 reviewed_on: 2026-11-03
@@ -14,7 +14,7 @@ domain: vat-gst
 
 # Canada GST HST
 
-## Canada GST/HST Return Skill (Form GST34) v2.0
+## Canada GST/HST Return Skill (Form GST34) v2.1
 
 ## Section 1 — Quick reference
 
@@ -37,7 +37,7 @@ domain: vat-gst
 | Authority | Canada Revenue Agency (CRA) |
 | Currency | CAD only |
 | Filing frequencies | Annual (taxable supplies <= $1.5M), Quarterly ($1.5M–$6M), Monthly (> $6M or voluntary election) |
-| Deadline | Monthly/quarterly: 1 month after period end; Annual: 3 months after fiscal year end (individuals: June 15 but payment due April 30) |
+| Deadline | Monthly/quarterly: one month after period end; ordinary annual: three months after fiscal year-end. June 15 filing / April 30 payment applies to an annual-filer individual with business income and a December 31 year-end; weekends/recognized holidays move the deadline to the next business day. [dates](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/reporting-requirements-deadlines.html). |
 | Small supplier threshold | $30,000 in any single calendar quarter or in the last four consecutive calendar quarters (ETA s.148) |
 | Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Contributor | Open Accounting Skills Community |
@@ -52,15 +52,15 @@ domain: vat-gst
 | 104 | Adjustments to GST/HST (e.g., bad debt recovery, change-in-use) |
 | 105 | Total GST/HST and adjustments (= 103 + 104) |
 | 106 | Input tax credits (ITCs) |
-| 107 | Adjustments to ITCs (e.g., recapture of ITCs on large business inputs — expired 2018) |
+| 107 | Adjustments deducted in determining net tax, including eligible bad-debt relief; not a recaptured-ITC debit. [lines](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/instructions-preparing-return.html). |
 | 108 | Total ITCs and adjustments (= 106 + 107) |
 | 109 | Net tax (= 105 − 108; positive = owing, negative = refund) |
 | 110 | Instalments paid |
 | 111 | Rebates claimed |
 | 112 | Total other credits (= 110 + 111) |
-| 113 | Balance (= 109 − 112; positive = amount owing) |
-| 114 | Refund claimed |
-| 115 | Amount owing |
+| 113A / 113B / 113C | 113A = 109 − 112; 113B = 205 + 405; final balance 113C = 113A + 113B. [form](https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/bsnss/tpcs/gst-tps/bspsbch/rtrns/wrkngcp-eng.pdf). |
+| 114 | Refund claimed when final line 113C is negative |
+| 115 | Amount owing when final line 113C is positive |
 
 **GST/HST rates by province (complete)**
 
@@ -84,9 +84,9 @@ domain: vat-gst
 
 | Ambiguity | Default |
 | --- | --- |
-| Unknown rate on a sale | HST at rate of province of supply (default ON 13% if province unknown) |
+| Unknown rate on a sale | Hold the rate and affected return allocation until place of supply is established; do not default to Ontario. [place](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-place-supply.html). |
 | Unknown GST/HST status of a purchase | Not eligible for ITC |
-| Unknown province of supply | Province of registration |
+| Unknown province of supply | Obtain supply/delivery/recipient-address evidence; registration province alone is insufficient. [place](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-place-supply.html). |
 | Unknown business-use proportion (vehicle, phone, home office) | 0% ITC |
 | Unknown whether personal or business expense | Personal (no ITC) |
 | Unknown blocked-input status (club dues, personal) | Blocked |
@@ -108,11 +108,11 @@ domain: vat-gst
 
 **Minimum viable** — bank statement for the period in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any Canadian or international business bank: RBC, TD, Scotiabank, BMO, CIBC, National Bank, Desjardins, Tangerine, Simplii, EQ Bank, Revolut Business, Wise Business, or any other.
 
-**Recommended** — sales invoices for the period (especially for zero-rated exports and interprovincial supplies), purchase invoices for any ITC claim above CAD 400, the client's GST/HST Business Number (BN format: 123456789RT0001).
+**Recommended** — sales invoices for the period, especially for exports/interprovincial supplies, the GST/HST account number and purchase documents for every claimed ITC. CAD 400 is only an internal review flag; the statutory documentation tiers are under CAD 100, CAD 100–499.99 and CAD 500 or more (Section 5.6). [docs](https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-45/section-3.html).
 
 **Ideal** — complete sales journal, purchase journal, prior period GST34, Quick Method election (if applicable — but then R-CA-3 fires).
 
-**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement is available at all, hard stop. If bank statement only without invoices, proceed but record in reviewer brief: "This GST34 was produced from bank statement alone. The reviewer must verify that ITC claims above CAD 400 are supported by compliant invoices containing the supplier's BN and that place-of-supply determinations are correct."
+**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement is available at all, hard stop. A bank-only working paper is provisional: hold every unsupported ITC and unestablished place-of-supply conclusion. The reviewer brief must identify the missing invoice/source documents for each affected claim; the CAD 400 internal flag does not excuse documentation below that amount. [docs](https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-45/section-3.html); [itc](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html).
 
 ### Canada-specific refusal catalogue
 
@@ -127,7 +127,7 @@ domain: vat-gst
 
 ## Section 3 — Supplier pattern library (the lookup table)
 
-This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment directly. If none match, fall through to Tier 1 rules in Section 5.
+Use these counterparty patterns to identify transactions requiring classification. A name match alone does not prove the supply, registration regime, exemption, rate or ITC entitlement. Hold an affected return allocation until the invoice, supply facts and applicable rule support it. [itc](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html); [place](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-place-supply.html).
 
 **How to read this table.** Match by case-insensitive substring on the counterparty name. If multiple patterns match, use the most specific.
 
@@ -194,7 +194,7 @@ This is the deterministic pre-classifier. When a transaction's counterparty matc
 
 | Pattern | Treatment | Rate | Notes |
 | --- | --- | --- | --- |
-| CANADA POST, POSTES CANADA | EXCLUDE for standard letter mail |  | Exempt (ETA Schedule V, Part VII.1) |
+| CANADA POST, POSTES CANADA | Taxable domestic letter mail/postage, subject to actual supply facts | GST/HST | Do not treat standard letter mail as categorically exempt. [place](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-place-supply.html). |
 | CANADA POST (courier, Xpresspost, Priority) | Taxable | GST/HST | Non-universal services are taxable |
 | PUROLATOR | Taxable | GST/HST | Express courier |
 | FEDEX CANADA, UPS CANADA, DHL CANADA | Taxable | GST/HST | Courier services |
@@ -207,7 +207,7 @@ This is the deterministic pre-classifier. When a transaction's counterparty matc
 | Pattern | Treatment | Rate | Notes |
 | --- | --- | --- | --- |
 | VIA RAIL | Taxable | GST/HST | Domestic passenger rail |
-| GO TRANSIT, TTC, STM, TRANSLINK, OC TRANSPO | EXCLUDE or zero-rated |  | Municipal transit — zero-rated per ETA Schedule VI, Part VII |
+| GO TRANSIT, TTC, STM, TRANSLINK, OC TRANSPO | Exempt if a qualifying public-transit service | — | Exempt under Schedule V, not zero-rated. Charters/tours and other services require separate classification. [municipal](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4049/gst-hst-information-municipalities.html). |
 | UBER CANADA | Taxable | GST/HST | Ride-sharing; platform is GST-registered |
 | LYFT | Taxable | GST/HST | Same |
 | AIR CANADA (international) | Zero-rated | 0% | International transport — Schedule VI, Part VII |
@@ -231,27 +231,27 @@ This is the deterministic pre-classifier. When a transaction's counterparty matc
 
 ### 3.8 SaaS — non-resident suppliers (self-assessment under ETA s.218)
 
-Non-resident digital services suppliers to Canadian businesses: the Canadian registrant must self-assess GST/HST on imported taxable supplies under ETA s.218. Report on Line 405 of GST34 and claim offsetting ITC on Line 106.
+For non-resident digital-service invoices, establish whether the supplier uses normal or simplified registration and whether the acquisition is an imported taxable supply. Under ETA s.217, ordinary services acquired exclusively in commercial activities are excluded; CRA generally treats 90% or more as exclusive commercial use. No tax on an invoice alone does not trigger self-assessment. Where s.218 actually applies, report the liability on 405 and separately determine any ITC. [217](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-217.html); [rc](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html).
 
 **SaaS non-resident table**
 
 | Pattern | Billing entity | Treatment | Notes |
 | --- | --- | --- | --- |
-| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) or Google LLC (US) | Self-assess GST/HST s.218 | Report on Line 405, claim ITC Line 106 |
-| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | Self-assess GST/HST s.218 | Same |
-| ADOBE | Adobe Systems Software Ireland Ltd (IE) | Self-assess GST/HST s.218 | Same |
-| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | Self-assess GST/HST s.218 | Same |
-| NOTION | Notion Labs Inc (US) | Self-assess GST/HST s.218 | Same |
-| ANTHROPIC, CLAUDE | Anthropic PBC (US) | Self-assess GST/HST s.218 | Same |
-| OPENAI, CHATGPT | OpenAI Inc (US) | Self-assess GST/HST s.218 | Same |
-| FIGMA | Figma Inc (US) | Self-assess GST/HST s.218 | Same |
-| CANVA | Canva Pty Ltd (AU) | Self-assess GST/HST s.218 | Same |
-| SLACK | Slack Technologies Ltd (various) | Self-assess GST/HST s.218 | Check if registered in Canada |
-| ZOOM | Zoom Video Communications Inc (US) | Self-assess GST/HST s.218 | Same |
-| ATLASSIAN | Atlassian Pty Ltd (AU) | Self-assess GST/HST s.218 | Same |
-| DROPBOX | Dropbox Inc (US) | Self-assess GST/HST s.218 | Same |
+| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) or Google LLC (US) | Check invoice/regime/use; no automatic self-assessment | Apply Section 5.7 only if its conditions are met |
+| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | Check invoice/regime/use; no automatic self-assessment | Same |
+| ADOBE | Adobe Systems Software Ireland Ltd (IE) | Check invoice/regime/use; no automatic self-assessment | Same |
+| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | Check invoice/regime/use; no automatic self-assessment | Same |
+| NOTION | Notion Labs Inc (US) | Check invoice/regime/use; no automatic self-assessment | Same |
+| ANTHROPIC, CLAUDE | Anthropic PBC (US) | Check invoice/regime/use; no automatic self-assessment | Same |
+| OPENAI, CHATGPT | OpenAI Inc (US) | Check invoice/regime/use; no automatic self-assessment | Same |
+| FIGMA | Figma Inc (US) | Check invoice/regime/use; no automatic self-assessment | Same |
+| CANVA | Canva Pty Ltd (AU) | Check invoice/regime/use; no automatic self-assessment | Same |
+| SLACK | Slack Technologies Ltd (various) | Check invoice/regime/use; no automatic self-assessment | Check actual registration and invoice |
+| ZOOM | Zoom Video Communications Inc (US) | Check invoice/regime/use; no automatic self-assessment | Same |
+| ATLASSIAN | Atlassian Pty Ltd (AU) | Check invoice/regime/use; no automatic self-assessment | Same |
+| DROPBOX | Dropbox Inc (US) | Check invoice/regime/use; no automatic self-assessment | Same |
 
-**Note:** Many non-resident digital services suppliers have registered for GST/HST under the simplified registration framework (effective July 2021) and now charge GST/HST directly. If the invoice shows GST/HST charged with a valid BN, treat as a regular domestic purchase with ITC. If no GST/HST is charged, self-assess under s.218.
+**Note:** A normal GST/HST registrant should give its registration details to a simplified-regime supplier. Tax charged under the simplified regime is not claimable as an ordinary ITC or rebate; seek correction from the supplier. A normal-regime invoice has separate ITC/documentation requirements. No named supplier’s current billing entity or regime is established by this pattern list. [itc](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html).
 
 ### 3.9 Canadian SaaS / domestic suppliers (ITC-eligible)
 
@@ -259,7 +259,7 @@ Non-resident digital services suppliers to Canadian businesses: the Canadian reg
 
 | Pattern | Treatment | Rate | Notes |
 | --- | --- | --- | --- |
-| SHOPIFY | Taxable domestic | GST/HST (ON entity, 13% HST) | Platform subscription — ITC eligible |
+| SHOPIFY | Check actual invoice and supply | Applicable place-of-supply rate | Supplier headquarters alone does not establish 13%; claim ITC only to the eligible commercial-use extent with support. [place](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-place-supply.html); [itc](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html). |
 | STRIPE PAYMENTS CANADA | Taxable domestic or exempt | Check invoice | Transaction fees may be exempt financial service; subscription taxable |
 | WEALTHSIMPLE | EXCLUDE (exempt) | — | Financial service |
 | FRESHBOOKS | Taxable domestic | GST/HST | Accounting software |
@@ -294,7 +294,7 @@ Non-resident digital services suppliers to Canadian businesses: the Canadian reg
 
 | Pattern | Treatment | Rate | Notes |
 | --- | --- | --- | --- |
-| CPA, CHARTERED PROFESSIONAL ACCOUNTANT | Taxable | GST/HST | Always ITC-eligible |
+| CPA, CHARTERED PROFESSIONAL ACCOUNTANT | Taxable service subject to actual facts | GST/HST | ITC only for eligible commercial use with required documentation; not automatic. [itc](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html). |
 | LAWYER, LAW OFFICE, BARRISTERS | Taxable | GST/HST | ITC-eligible if business purpose |
 | NOTARY, NOTAIRE | Taxable | GST/HST | ITC-eligible if business purpose |
 | CONSULTANT, CONSULTING | Taxable | GST/HST | ITC-eligible if business purpose |
@@ -338,23 +338,23 @@ Non-resident digital services suppliers to Canadian businesses: the Canadian reg
 
 These are six fully worked classifications drawn from a hypothetical bank statement of an Ontario-based self-employed software consultant.
 
-### Example 1 — Non-resident SaaS, self-assessment (Notion)
+### Example 1 — Non-resident SaaS, commercial-use exclusion (Notion)
 
 `2026-04-03 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; CAD 21.89`
 
-Notion Labs Inc is a US entity (Section 3.8). No GST/HST on the invoice. This is an imported taxable supply under ETA s.218. The registrant must self-assess GST/HST at the applicable rate. Client is in Ontario → 13% HST. Self-assess HST of CAD 2.85 (21.89 * 0.13). Report on Line 405 (tax on imported supplies) and claim offsetting ITC on Line 106. Net effect zero.
+Retain the hypothetical USD 16.00 / CAD 21.89 invoice and assume normal registration, no charged GST/HST and exclusively commercial software use by the Ontario consultant. The ordinary service is excluded from imported taxable supplies under s.217: no self-assessment on 405 and no ITC for tax that was neither charged nor payable. CAD 21.89 × 13% = CAD 2.85 is arithmetic only, not a liability. If the commercial-use exclusion fails, determine the imported-supply liability and ITC separately before allocating it. [217](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-217.html); [rc](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html).
 
 **Output table**
 
 | Date | Counterparty | Gross | Net | GST/HST | Rate | Line (self-assess) | Line (ITC) | Default? | Question? | Excluded? |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-04-03 | NOTION LABS INC | -21.89 | -21.89 | 2.85 | 13% HST | 405 | 106 | N | — | — |
+| 2026-04-03 | NOTION LABS INC | -21.89 | -21.89 | 0 | — | — | — | N | — | No tax allocation: exclusively commercial imported service |
 
 ### Example 2 — Domestic purchase with HST (Shopify)
 
 `2026-04-10 ; SHOPIFY COMMERCE INC ; DEBIT ; Monthly plan ; -49.00 ; CAD`
 
-Shopify is an Ontario-headquartered Canadian company. They charge 13% HST. The CAD 49.00 is the HST-inclusive price. Net = 49.00 / 1.13 = 43.36. HST = 5.64. Full ITC eligible on Line 106 for business software.
+Assume the hypothetical invoice supports 13% Ontario HST under the applicable place-of-supply rule, normal supplier registration and exclusively eligible commercial use. CAD 49.00 is HST-inclusive: net = 49.00 / 1.13 = 43.36 and HST = 5.64, claimable on 106 if the documentation conditions are met. The supplier’s headquarters alone does not establish the rate. [place](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-place-supply.html); [itc](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html).
 
 **Output table**
 
@@ -366,7 +366,7 @@ Shopify is an Ontario-headquartered Canadian company. They charge 13% HST. The C
 
 `2026-04-15 ; THE KEG STEAKHOUSE ; DEBIT ; Client dinner ; -285.00 ; CAD`
 
-Restaurant meal. Under ETA s.67.1 (via Income Tax Act cross-reference), meals and entertainment expenses are limited to 50% for income tax purposes. However, the full GST/HST ITC is claimable on the portion that is deductible for income tax (i.e., 50% of the GST/HST). Conservative default: block entirely as likely personal. If confirmed as business entertainment, 50% of ITC is claimable.
+Restaurant meal. Under ETA s.236 (which cross-references Income Tax Act s.67.1), meals and entertainment expenses are limited to 50% for income tax purposes. However, the full GST/HST ITC is claimable on the portion that is deductible for income tax (i.e., 50% of the GST/HST). Conservative default: block entirely as likely personal. If confirmed as business entertainment, 50% of ITC is claimable.
 
 **Output table**
 
@@ -374,23 +374,23 @@ Restaurant meal. Under ETA s.67.1 (via Income Tax Act cross-reference), meals an
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2026-04-15 | THE KEG STEAKHOUSE | -285.00 | -285.00 | 0 | — | — | Y | Q1 | "Meals/entertainment: blocked (conservative)" |
 
-### Example 4 — Capital asset (over $30,000)
+### Example 4 — Capital asset (computer purchase)
 
 `2026-04-18 ; APPLE STORE YORKDALE ; DEBIT ; MacBook Pro 16 ; -3,729.00 ; CAD`
 
-CAD 3,729 including HST. Net = 3,729 / 1.13 = 3,300.88. HST = 428.12. This is a capital asset used in the business. Full ITC is claimable on Line 106. Capital assets are reported on Line 106 the same as current expenses in Canada (no separate capital line on GST34). However, if the asset is a passenger vehicle exceeding the CCA Class 10.1 ceiling (CAD 37,000 + tax for 2025/2026), the ITC is limited to the ceiling amount.
+CAD 3,729 including 13% HST: net = 3,729 / 1.13 = 3,300.00 and HST = 429.00. Assume the documented computer is used primarily in commercial activities and meets the ordinary capital-personal-property ITC conditions under s.199; on those assumptions, claim 429.00 on 106. A passenger vehicle instead requires the separate entity/use rules in Section 5.8; do not apply this computer result to a mixed-use vehicle. [199](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-199.html); [201](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-201.html); [202](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-202.html).
 
 **Output table**
 
 | Date | Counterparty | Gross | Net | GST/HST | Rate | Line | Default? | Question? | Excluded? |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-04-18 | APPLE STORE | -3,729.00 | -3,300.88 | -428.12 | 13% HST | 106 | N | — | — |
+| 2026-04-18 | APPLE STORE | -3,729.00 | -3,300.00 | -429.00 | 13% HST | 106 | N | — | — |
 
 ### Example 5 — Export sale (zero-rated)
 
 `2026-04-22 ; ACME CORP USA ; CREDIT ; Invoice CA-2026-018 IT consulting March ; +5,500.00 ; CAD`
 
-Incoming CAD 5,500 from a US company. The client provides IT consulting services to a non-resident. Under ETA Schedule VI, Part V, s.5, services performed for a non-resident who is not registered for GST/HST and not a consumer in Canada are zero-rated. Report as revenue on Line 101 but zero-rated (no GST/HST on Line 103). Full ITC recovery on related inputs is preserved.
+Retain the hypothetical CAD 5,500 IT-consulting receipt. Consulting/advisory services fall under Schedule VI, Part V, s.23 if its conditions and exclusions are satisfied; s.5 instead concerns agency/arranging services. Confirm non-residency, the service classification and the s.23 exclusions before using zero-rating. Under that conditional scenario, report 5,500 on 101 and no output tax on 103; related ITCs still need commercial-use and documentation support. [export](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/4-5-3/exports-services-intangible-personal-property.html); [itc](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html).
 
 **Output table**
 
@@ -425,7 +425,7 @@ Fuel purchase. In Canada, there is no blanket block on vehicle expenses (unlike 
 
 ### 5.4 Zero-rated supplies (ETA Schedule VI)
 
-- **Zero-rated supplies** — Basic groceries (Part III), prescription drugs (Part I), medical devices (Part II), exports of goods (Part V), services to non-residents (Part V, s.5 — conditions apply), international transport (Part VII), agricultural products (Part IV), financial services to non-residents (Part IX). Zero-rated means 0% tax but full ITC eligibility on related inputs.  _(ETA Schedule VI)_
+- **Zero-rated supplies** — Basic groceries (Part III), prescription drugs (Part I), medical devices (Part II), exports of goods (Part V), services to non-residents (the applicable Part V provision and exclusions must be identified; consulting/advisory services use s.23, not the agency provision s.5), international transport (Part VII), agricultural products (Part IV), financial services to non-residents (Part IX). Zero-rated means 0% tax but full ITC eligibility on related inputs.  _(ETA Schedule VI)_
 
 ### 5.5 Exempt supplies (ETA Schedule V)
 
@@ -433,41 +433,41 @@ Fuel purchase. In Canada, there is no blanket block on vehicle expenses (unlike 
 
 ### 5.6 Input tax credits (ETA s.169)
 
-- **ITC documentation thresholds** — ITCs are claimable on GST/HST paid on purchases used in commercial (taxable + zero-rated) activities. Documentation requirements (ETA Input Tax Credit Information Regulations): purchases under $30 need vendor name and amount; $30–$149.99 need vendor name, BN, date, amount, GST/HST; $150+ need all of the above plus purchaser name/address. Report on Line 106.  _(ETA s.169; Input Tax Credit Information (GST/HST) Regulations)_
+- **ITC documentation thresholds** — Obtain the prescribed information before claiming an eligible commercial-use ITC on 106. Under CAD 100: supplier/trading name, invoice date (or date tax paid/payable where no invoice) and total paid/payable. CAD 100–499.99: also supplier registration number, the prescribed tax amount/included-tax statement and exempt/taxable status where mixed. CAD 500 or more: also recipient/trading name, payment terms and a sufficient supply description. The regulation does not prescribe a purchaser-address field. [docs](https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-45/section-3.html); [itc](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html).
 
 ### 5.7 Self-assessment on imported taxable supplies (ETA s.218)
 
-- **Self-assessment on imports** — When a registrant receives a taxable supply from a non-resident who did not charge GST/HST: self-assess on Line 405 and claim offsetting ITC on Line 106. Net effect zero for fully taxable registrants. This is the Canadian equivalent of EU reverse charge.  _(ETA s.218)_
+- **Self-assessment on imports** — First apply the imported-taxable-supply definition in s.217. Ordinary services acquired exclusively in commercial activities are excluded (CRA generally uses 90% or more). Only where the applicable imported-supply rules impose tax is 405 used; determine any ITC independently rather than assuming a matching offset. Check normal versus simplified supplier registration; absence of charged tax alone is insufficient. [217](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-217.html); [rc](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html); [itc](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html).
 
 ### 5.8 Capital personal property / passenger vehicles (ETA s.201–202)
 
-- **CCA Class 10.1 ceiling** — $37,000 + tax for 2025/2026  _(ETA s.201–202)_
-- **Passenger vehicle ITC limitation** — ITCs on passenger vehicles are limited by the Income Tax Act CCA ceiling (Class 10.1: $37,000 + tax for 2025/2026). For luxury vehicles, ITC is capped at GST/HST on the ceiling amount. Leased vehicles: ITC limited proportionally. Business-use percentage applies on top.  _(ETA s.201–202)_
+- **CCA Class 10.1 ceiling** — Before-tax passenger-vehicle capital cost limit: CAD 38,000 for 2025 acquisitions and CAD 39,000 for 2026 acquisitions; s.201 links the ITC cost restriction to the applicable ceiling. [201](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-201.html); [car25](https://gazette.gc.ca/rp-pr/p2/2025/2025-10-08/html/sor-dors193-eng.html); [car26](https://www.canada.ca/en/department-finance/news/2026/01/government-announces-the-2026-automobile-deduction-limits-and-expense-benefit-rates-for-businesses.html).
+- **Passenger vehicle ITC limitation** — Establish the entity type, acquisition year and commercial use. For an individual/partnership, a nonexclusive-use passenger-vehicle purchase generally follows the annual CCA-based deemed-tax mechanism in s.202; do not claim acquisition tax merely by multiplying business-use percentage by the ceiling. Other entities follow their applicable primary-use rules. Leasing is a separate calculation; hold it until its conditions are established. [201](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-201.html); [202](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-202.html).
 
 ### 5.9 Blocked ITCs (ETA s.170)
 
-- **Blocked ITCs** — - Club memberships (golf, fitness, social clubs) — ETA s.170(1)(a) — fully blocked - Personal expenses — ETA s.170(1)(b) — fully blocked - Gifts over $50 (except food/drink) — limited - Passenger vehicles: not blocked per se but limited to business-use proportion and CCA ceiling  _(ETA s.170)_
+- **Blocked ITCs** — Apply the actual s.170 restrictions, including club memberships (with the exclusively-for-resale exception) and personal-consumption/benefit restrictions and their statutory exceptions. There is no general CAD 50 non-food promotional-gift ITC limit. Commercial-purpose promotional gifts remain subject to ordinary eligibility; food/entertainment and employee-benefit rules are separate. Passenger vehicles follow Section 5.8. [170](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-170.html); [rc](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html); [202](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-202.html).
 
 ### 5.10 Meals and entertainment — 50% rule
 
-- **50% ITC restriction on meals and entertainment** — ETA s.236(1) cross-references ITA s.67.1: the GST/HST ITC on meals and entertainment is limited to 50% of the GST/HST paid. This is not a full block — it is a 50% restriction. The 50% rule does NOT apply to: meals provided at a remote work camp, meals included in convention fees, meals provided for fundraising, or meals for which the full cost is reimbursed by the client.  _(ETA s.236(1); ITA s.67.1)_
+- **50% ITC restriction on meals and entertainment** — The ordinary rule is 50% under ETA s.236 and ITA s.67.1. Meals included in convention fees do not escape it; allocate the meal portion, including the prescribed daily amount where not separately priced. Remote-work, fundraising and reimbursement exceptions require their particular statutory conditions; a category label alone does not establish full recovery. [236](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-236.html); [convention](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses/convention-expenses.html); [mealsGuide](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses.html).
 
 ### 5.11 Change in use — capital property (ETA s.195–199)
 
-- **Change in use rule** — When a capital asset changes from business to personal use (or vice versa), a deemed supply/acquisition occurs. The registrant must self-assess or claim ITC based on the FMV at the time of change. Flag for reviewer.  _(ETA s.195–199)_
+- **Change in use rule** — Identify property and entity type before applying a change-of-use rule. For ordinary capital personal property under s.199, primary-commercial-use thresholds and basic tax content govern the relevant deemed acquisition/supply; do not calculate every change as tax on current fair market value. Passenger vehicles and real property have separate rules; hold unresolved calculations for review. [199](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-199.html); [202](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-202.html).
 
 ### 5.12 Small supplier threshold (ETA s.148)
 
 - **Small supplier threshold** — $30,000 in any single calendar quarter or over four consecutive calendar quarters — measured on the worldwide taxable supplies (before expenses) of the person AND associated persons; excludes capital property, financial services, and goodwill on the sale of a business. Small-supplier status is lost immediately on exceeding $30,000 in a single quarter  _(ETA s.148)_
-- **Small supplier registration rule** — Below threshold: no obligation to register or charge GST/HST (but may voluntarily register). Above threshold: must register within 29 days.  _(ETA s.148)_
+- **Small supplier registration rule** — For ordinary suppliers, apply the single-quarter or cumulative four-quarter timing in CRA’s registration table, including the following-month rule for a cumulative-only breach. The ordinary 29-day application period runs from the relevant taxable supply/effective date. Below-threshold mandatory-registration exceptions exist; do not infer no obligation solely from revenue. [reg](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html); [required](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/2-1/required-registration.html).
 
 ### 5.13 Bad debts (ETA s.231)
 
-- **Bad debt recovery rule** — If a registrant has previously reported GST/HST on a sale and the receivable becomes uncollectable, the GST/HST can be recovered via Line 107 (adjustment). Must be written off in the registrant's books. Recovery if the debt is later collected.  _(ETA s.231)_
+- **Bad debt recovery rule** — Section 231 relief on 107 requires, among other conditions, an arm’s-length supply, tax already reported/remitted, a debt written off in the books and the statutory proportional calculation and four-year limit. Include the corresponding adjustment if a relieved debt is recovered. Hold relief until these conditions are supported. [231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html).
 
 ### 5.14 Reporting sales on Line 101
 
-- **Line 101 reporting rule** — Line 101 includes all revenue — taxable, zero-rated, and exempt. It also includes GST/HST collected. This is a gross-inclusive line. Line 103 is the GST/HST collected portion.
+- **Line 101 reporting rule** — Under the regular method used here, report sales and other revenue excluding GST/HST and provincial sales tax. Do not use the tax-inclusive Quick Method rule. Report collected/collectible GST/HST separately on 103. [lines](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/instructions-preparing-return.html).
 
 ## Section 6 — Tier 2 catalogue (compressed)
 
@@ -525,7 +525,7 @@ Fuel purchase. In Canada, there is no blanket block on vehicle expenses (unlike 
 
 ### 6.14 Tips and gratuities
 
-*Pattern:* restaurant charges with tip component. *Default:* GST/HST only on pre-tip amount. *Question:* "Confirm pre-tip amount for ITC calculation."
+*Pattern:* restaurant charges with tip component. *Default:* distinguish voluntary tips (not subject to GST/HST) from mandatory service charges (taxable consideration). *Question:* "Which part is a voluntary tip and which part is a mandatory service charge?" [CRA special cases](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-special-cases.html).
 
 ### 6.15 US dollar transactions
 
@@ -537,15 +537,15 @@ The base specification is in `vat-workflow-base` Section 3. This section provide
 
 ### Sheet "Transactions"
 
-Columns A–L per the base. Column H ("Line code") accepts GST34 line references (101, 103, 106, 405, etc.). Column I adds the GST/HST rate used (5%, 13%, 14%, 15%). For self-assessed imports, enter "405" in column H.
+Keep the base A–L columns: G = rate, H = treatment/allocation IDs, I = treatment label. Do not overwrite I with a rate or use G as a text treatment criterion. Add a linked **Return Allocations** table with stable transaction/allocation IDs, return line and a signed CAD return amount. One transaction may have separate eligible allocations to several lines; prevent duplicates. Source debits may be negative in Transactions, but positive eligible purchase tax must be normalized to a positive 106 credit; recovery/debit adjustments retain the correct return sign. An imported-service liability, when actually due, has its own 405 allocation; any eligible 106 credit is separate. [lines](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/instructions-preparing-return.html); [form](https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/bsnss/tpcs/gst-tps/bspsbch/rtrns/wrkngcp-eng.pdf).
 
 ### Sheet "Line Summary"
 
-- **Line Summary sheet formulas** — One row per GST34 line. Column A is the line number, column B is the description, column C is the value. ``` | 101 | Total sales and revenue | =SUM of all credit transactions (sales, zero-rated, exempt) | | 103 | GST/HST collected | =SUMIFS(Transactions!F:F, Transactions!G:G, "SALE") | | 105 | Total GST/HST and adjustments | =C[103]+C[104] | | 106 | Input tax credits | =SUMIFS(Transactions!F:F, Transactions!G:G, "ITC") | | 108 | Total ITCs and adjustments | =C[106]+C[107] | | 109 | Net tax | =C[105]-C[108] | | 405 | Tax on imported supplies (s.218) | =SUMIFS(Transactions!F:F, Transactions!H:H, "405") | ```
+- **Line Summary sheet formulas** — Sum the signed **Return Allocations** amounts by return line (for example, `=SUMIFS(ReturnAllocations[ReturnAmountCAD],ReturnAllocations[Line],"106")`). Use separate allocations for tax-exclusive 101 revenue, 103 output tax, eligible 106 ITCs and any 405 liability. Compute 105 = 103 + 104; 108 = 106 + 107; 109 = 105 − 108; 112 = 110 + 111; 113A = 109 − 112; 113B = 205 + 405; 113C = 113A + 113B. Do not sum raw bank credits as 101 or negative bank-debit tax directly as 106. [lines](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/instructions-preparing-return.html); [form](https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/bsnss/tpcs/gst-tps/bspsbch/rtrns/wrkngcp-eng.pdf).
 
 ### Sheet "Return Form"
 
-- **Return Form final figures** — Final GST34-ready figures: ``` Line 105 = Total GST/HST collected + adjustments Line 108 = Total ITCs + adjustments Line 109 = Line 105 - Line 108   [net tax] Line 113 = Line 109 - Line 112   [balance] Positive Line 113 → amount owing to CRA Negative Line 113 → refund claimed ```
+- **Return Form final figures** — Carry final 113C (109 − 110 − 111 + 205 + 405) to the refund/payment decision: positive → amount owing on 115; negative → refund on 114. Do not stop at 113A when other debits exist. [form](https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/bsnss/tpcs/gst-tps/bspsbch/rtrns/wrkngcp-eng.pdf).
 
 ### Mandatory recalc step
 
@@ -664,6 +664,37 @@ This skill is v2.0, rewritten in April 2026 to align with the three-tier OpenAcc
 9. Bank of Canada daily exchange rates — bankofcanada.ca
 10. CRA My Business Account — business registration verification
 
+### Correction sources (operative reads reused from 21 November 2026)
+
+These linked readings support only the corrected claims, not full clearance of unchanged content. The 2025/2026 vehicle-limit readings were completed in the earlier linked tax research and applied in the 21 November GST/HST report.
+
+| Correction | Official source | Read date |
+| --- | --- | --- |
+| lines | [lines](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/instructions-preparing-return.html) | 2026-11-21 |
+| form | [form](https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/bsnss/tpcs/gst-tps/bspsbch/rtrns/wrkngcp-eng.pdf) | 2026-11-21 |
+| place | [place](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-place-supply.html) | 2026-11-21 |
+| itc | [itc](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html) | 2026-11-21 |
+| rc | [rc](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html) | 2026-11-21 |
+| export | [export](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/4-5-3/exports-services-intangible-personal-property.html) | 2026-11-21 |
+| convention | [convention](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses/convention-expenses.html) | 2026-11-21 |
+| dates | [dates](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/reporting-requirements-deadlines.html) | 2026-11-21 |
+| docs | [docs](https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-45/section-3.html) | 2026-11-21 |
+| car25 | [car25](https://gazette.gc.ca/rp-pr/p2/2025/2025-10-08/html/sor-dors193-eng.html) | 2026-11-21 |
+| car26 | [car26](https://www.canada.ca/en/department-finance/news/2026/01/government-announces-the-2026-automobile-deduction-limits-and-expense-benefit-rates-for-businesses.html) | 2026-11-21 |
+| recapture | [recapture](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/gi-165/prince-edward-island-transition-harmonized-sales-tax-builders-recaptured-input-tax-credits.html) | 2026-11-21 |
+| municipal | [municipal](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4049/gst-hst-information-municipalities.html) | 2026-11-21 |
+| reg | [reg](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) | 2026-11-21 |
+| required | [required](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/2-1/required-registration.html) | 2026-11-21 |
+| mealsGuide | [mealsGuide](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses.html) | 2026-11-21 |
+| fx | [fx](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/3-6/conversion-foreign-currency.html) | 2026-11-21 |
+| 170 | [170](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-170.html) | 2026-11-21 |
+| 199 | [199](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-199.html) | 2026-11-21 |
+| 201 | [201](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-201.html) | 2026-11-21 |
+| 202 | [202](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-202.html) | 2026-11-21 |
+| 217 | [217](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-217.html) | 2026-11-21 |
+| 231 | [231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html) | 2026-11-21 |
+| 236 | [236](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-236.html) | 2026-11-21 |
+
 ### Known gaps
 
 1. Quebec QST is entirely refused — a separate skill is needed.
@@ -676,6 +707,8 @@ This skill is v2.0, rewritten in April 2026 to align with the three-tier OpenAcc
 8. The s.218 self-assessment landscape is changing as more non-residents register voluntarily — always check the invoice first.
 
 ### Change log
+
+- **v2.1 (23 November 2026, draft correction):** Correct return lines, regular-method revenue, imported-service and simplified-regime treatment, documentation tiers, vehicle/gift/meal/change-of-use rules, export authority, examples and return-allocation formulas using the existing 21 November findings. Existing approval fields are preserved for accountant sign-off; this edit does not itself re-attest the changed version.
 
 - **v2.0 (April 2026):** Full rewrite to align with three-tier OpenAccountants architecture. 10-section Malta v2.0 structure adopted. Supplier pattern library added (Section 3). Six worked examples added (Section 4). Tier 1 rules compressed (Section 5). Tier 2 catalogue added (Section 6). Excel template added (Section 7). Bank statement guide with RBC/TD/BMO/CIBC formats added (Section 8). Onboarding moved to fallback (Section 9).
 - **v2.0 (prior, April 2026):** Previous version with inline tier tags. Superseded.
