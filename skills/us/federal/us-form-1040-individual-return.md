@@ -204,7 +204,7 @@ This skill prepares **Form 1040** and its three core schedules (1, 2, 3) plus **
 - **Status determination date** — Status is determined on December 31 of the tax year (§7703).  _(§7703)_
 - **Single** — unmarried, not HoH, not QSS.  _(§1)_
 - **Married filing jointly (MFJ)** — married on 12/31, both spouses agree to file jointly, joint and several liability under §6013.  _(§6013)_
-- **Married filing separately (MFS)** — Married taxpayers may file separately, but test each benefit individually. Education credits and student-loan interest are generally unavailable; EITC and dependent-care rules have qualifying separated-spouse exceptions. An IRA deduction is not universally barred: coverage, income and living-apart conditions matter. Apply the status-specific SALT cap and other limits; do not infer disqualification for every listed benefit from MFS alone. [P501](https://www.irs.gov/publications/p501); [P590A](https://www.irs.gov/publications/p590a).
+- **Married filing separately (MFS)** — Married taxpayers may file separately, but test each benefit individually. Education credits, student-loan interest and the education savings-bond interest exclusion are generally unavailable; EITC and dependent-care rules have qualifying separated-spouse exceptions. The elderly/disabled credit is generally unavailable if the spouses lived together at any time during the year. The adoption exclusion/credit is unavailable in most cases. If one spouse itemizes, the other MFS spouse cannot take the standard deduction. An IRA deduction is not universally barred: plan coverage, income and living-apart conditions matter. Apply the status-specific SALT cap and other limits. [Publication 501](https://www.irs.gov/publications/p501); [Publication 590-A](https://www.irs.gov/publications/p590a).
 - **Head of household (HoH)** — Meet the unmarried/considered-unmarried rules, pay more than half the home’s cost and have a qualifying person under Publication 501. A qualifying parent can satisfy the separate-parent-home rule without living with the taxpayer; other qualifying persons generally need the required residence. A qualifying relative who is a dependent only because of full-year household membership is not a qualifying person for HoH. Apply the listed relationship and dependency conditions rather than treating every resident qualifying relative as sufficient. [P501](https://www.irs.gov/publications/p501).
 - **Qualifying surviving spouse (QSS)** — spouse died in one of the two preceding tax years, taxpayer has not remarried, taxpayer maintained a home for a qualifying child for the whole year, and taxpayer would have been entitled to file jointly in the year of death. Get MFJ brackets and standard deduction. After two years, file as single or HoH.  _(§2(a))_
 
@@ -218,7 +218,7 @@ This skill prepares **Form 1040** and its three core schedules (1, 2, 3) plus **
 
 ### 3.4 Tiebreaker rules — §152(c)(4)
 
-- **Tiebreaker rules** — When more than one eligible person could claim the same qualifying child, apply the parent priority and parent residence/AGI rules. If an eligible parent does not claim the child, a nonparent can claim only if that person’s AGI exceeds the highest AGI of any eligible parent. The highest eligible nonparent AGI alone is insufficient where that parent comparison fails. [P501](https://www.irs.gov/publications/p501).
+- **Tiebreaker rules** — A parent prevails over a nonparent. If two eligible parents do not file jointly, the parent with whom the child lived longer prevails; if equal, use the higher parent AGI. If no parent can claim the child as a qualifying child, the eligible person with the highest AGI prevails. If a parent can claim but no eligible parent does so, a nonparent can claim only if that person’s AGI exceeds the highest AGI of any eligible parent. [Publication 501](https://www.irs.gov/publications/p501).
 
 ## 4. Income — Form 1040 lines 1-8
 
@@ -396,9 +396,9 @@ See §5.
 - **Taxes paid — Lines 5-7 — SALT cap** — Line 5a: State and local income tax OR general sales tax (election) — sales tax via the IRS optional sales tax tables in Pub 600 / Schedule A instructions, plus actual receipts for big-ticket items. Line 5b: State and local real estate tax (excluding rental property — that goes on Schedule E). Line 5c: State and local personal property tax (e.g., car registration based on value). Line 5d: Sum 5a + 5b + 5c. Line 5e: Lesser of 5d or SALT cap (see §2.7 — $40,000 / $20,000 MFS for 2025, phased down above $500k/$250k MAGI). Line 6: Other taxes (foreign income tax NOT used for FTC, occupational taxes). Line 7: Sum 5e + 6
 - **Interest paid — Lines 8-10** — Line 8a: Home mortgage interest from 1098 (acquisition debt up to $750,000 post-12/15/2017 origination; $1,000,000 grandfathered for older debt — §163(h)(3) as amended by TCJA, made permanent by OBBBA §70108). Line 8b: Mortgage interest not on 1098 (seller-financed; report payee name, address, SSN/EIN). Line 8c: Points not on 1098. Line 8d: Mortgage insurance premiums. OBBBA §70108 amended IRC §163(h)(3)(F) to treat qualified mortgage insurance premiums as qualified residence interest, so they are deductible again for tax years beginning after 31 December 2025. On the 2025 Schedule A, line 8d is still "Reserved for future use", so mortgage insurance premiums are not deductible on 2025 returns. Line 8e: Sum. Line 9: Investment interest (Form 4952) — limited to net investment income. Line 10: Sum 8e + 9  _([§163(h)(3); OBBBA §70108](https://www.irs.gov/pub/irs-pdf/f1040sa.pdf))_
 - **Home equity interest deductibility** — Home equity interest is deductible only if proceeds used to buy, build, or substantially improve the residence securing the loan (§163(h)(3)(F) post-TCJA). Cash-out for personal use is nondeductible.  _(§163(h)(3)(F))_
-- **Gifts to charity — Lines 11-14** — Classify property, recipient and applicable percentage limit separately. Ordinary noncash gifts to qualifying public charities can fall under the 50% limit; long-term capital-gain property generally has the 30% limit, with elections and special rules. Do not apply 30% to every noncash public-charity gift. Form 8283 is generally required above $500; qualified appraisal rules above $5,000 have exceptions. Generally obtain/retain the appraisal; attachment is generally required above $500,000, with special-category exceptions. Preserve carryover rules. The 0.5% contribution-base floor starts with tax years after December 31, 2025 under §70425 and does not apply to 2025. [P526](https://www.irs.gov/publications/p526); [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
+- **Gifts to charity — Lines 11-14** — Line 11 reports cash gifts; the ordinary cash-to-qualifying-public-charity limit is 60% of AGI. Line 12 reports other-than-cash gifts: ordinary noncash gifts to qualifying public charities can have a 50% limit, long-term capital-gain property generally 30%, and qualifying capital-gain-property gifts to private nonoperating foundations generally 20%; classify recipient/property and apply the relevant elections/special rules. Form 8283 is generally required above $500; appraisal rules above $5,000 have exceptions. Generally obtain/retain the appraisal; attachment generally begins above $500,000, with special-category exceptions. Line 13 reports carryovers: excess charitable contributions generally carry forward for up to 5 years under the applicable percentage/order rules. Line 14 totals the deductible amounts. The 0.5% contribution-base floor starts with tax years after December 31, 2025 under §70425; it does not apply to 2025. [Publication 526](https://www.irs.gov/publications/p526); [P.L.119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
 - **AUDIT FLASH POINT — Charitable contributions outsized vs AGI** — Above $5,000, establish whether a qualified appraisal is required and was obtained, with the correct Form 8283 section. Do not call every appraisal “attached”: attachment generally begins above $500,000, subject to special rules/exceptions. Vehicle gifts, conservation easements and acknowledgment requirements remain separate checks; refer unresolved specialist cases. [P526](https://www.irs.gov/publications/p526).
-- **Casualty and theft losses — Line 15** — For 2025 personal-use losses, apply the federally declared-disaster restriction and the exception allowing other personal casualty losses to the extent of personal casualty gains. The ordinary $100/event and 10%-of-AGI floors are not universal: qualifying disaster losses can instead use the $500 reduction without that percentage floor. Establish the disaster/category before calculating Form 4684. The §70109 state-declared-disaster expansion applies to tax years beginning after December 31, 2025. [P547](https://www.irs.gov/publications/p547); [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
+- **Casualty and theft losses — Line 15** — For 2025 personal-use losses, apply the federally declared-disaster restriction and the exception allowing other personal casualty losses to the extent of personal casualty gains. The ordinary $100/event and 10%-of-AGI floors are not universal: qualified disaster losses, as defined in Publication 547, can instead use the $500 reduction without that percentage floor. Establish the disaster/category before calculating Form 4684. The §70109 state-declared-disaster expansion applies to tax years beginning after December 31, 2025. [P547](https://www.irs.gov/publications/p547); [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
 - **Other itemized — Line 16** — gambling losses up to gambling winnings (§165(d)), federal estate tax on income in respect of a decedent (§691(c)), impairment-related work expenses, deduction for unrecovered investment in pension at death, amortizable bond premium on pre-10/23/86 taxable bonds.  _(§165(d); §691(c))_
 - **Misc itemized deductions 2% floor suspension** — Misc itemized deductions subject to 2% AGI floor are SUSPENDED through 2025 by TCJA §11045, made permanent by OBBBA §70110. Exception, for tax years beginning after 31 December 2025: OBBBA §70110(b) adds IRC §67(b)(13), so unreimbursed educator expenses are no longer miscellaneous itemized deductions and remain deductible. This means unreimbursed employee business expenses, tax preparation fees, investment advisory fees, safe deposit box fees, and home office for an employee are not deductible. Reservists, performing artists, and fee-basis officials may still deduct via Schedule 1 Line 12.  _([TCJA §11045; OBBBA §70110](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm))_
 
@@ -512,11 +512,11 @@ The nonrefundable child/other-dependent credit belongs on Form 1040 line 19 via 
 | 13 | Refundable credits not elsewhere |
 | 13a | Form 2439 (regulated investment company undistributed LTCG) |
 | 13b | Credit for repayment of amounts under claim of right >$3,000 (§1341) |
-| 13c | Elective payment election amount from Form 3800 Part III column (j) | [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf).
-| 13d | Deferred section 965 net tax liability (see instructions) | [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf).
+| 13c | Net elective payment election amount from Form 3800 Part III line 6, column (j) [2025 Schedule 3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
+| 13d | Deferred section 965 net tax liability (see instructions) [2025 Schedule 3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
 | 13z | Other refundable |
-| 14 | Total other payments/refundable credits (13a–13z) | [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf).
-| 15 | Total Part II (9–12 and 14) → Form 1040 line 31 | [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf).
+| 14 | Total other payments/refundable credits (13a–13z) [2025 Schedule 3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
+| 15 | Total Part II (9–12 and 14) → Form 1040 line 31 [2025 Schedule 3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
 
 ### 12.3 Credits cheat sheet
 
@@ -527,13 +527,13 @@ The nonrefundable child/other-dependent credit belongs on Form 1040 line 19 via 
 | Child Tax Credit (CTC) | Partially ($1,700 ACTC) | $2,200/child <17 (OBBBA §70104) | $400,000 |
 | Credit for Other Dependents (ODC) | No | $500/dependent | $400,000 |
 | Earned Income Credit (EITC) | Yes | $649 – $8,046 by # kids | varies by household |
-| Child & Dependent Care | No | $3,000 / $6,000 expenses × 20–35% | Rate begins declining above $15,000 AGI; 20% applies above $43,000 (not a phaseout to zero). [ICARE](https://www.irs.gov/instructions/i2441). |
+| Child & Dependent Care | No | $3,000 / $6,000 expenses × 20–35% | Rate begins declining above $15,000 AGI; 20% applies above $43,000 (not a phaseout to zero). [2025 Form 2441, line 8](https://www.irs.gov/pub/irs-pdf/f2441.pdf). |
 | AOTC | 40% refundable | $2,500 (100% first $2k + 25% next $2k) | $160k MFJ ($80k other) |
 | LLC | No | $2,000 (20% of $10k) | $160k MFJ ($80k other) |
 | Saver's Credit | No | $1,000 ($2,000 MFJ) | $47,500 MFJ (credit ends above $79,000) |
 | Adoption Credit | Partially: up to $5,000 refundable under OBBBA §70402 (IRC §23(a)(4)); no separate election required | $17,280 | $259,190 |
 | Residential Clean Energy (§25D) | No | 30% of qualified spend | none — but OBBBA terminated for expenditures made after 12/31/2025; flag |
-| New clean vehicle (§30D) | No (transferable if eligible) | Up to $7,500 | MAGI $300,000 MFJ / $225,000 HoH / $150,000 other; applicable MSRP limits and acquisition deadline still apply. [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm). |
+| New clean vehicle (§30D) | No (transferable if eligible) | Up to $7,500 | **Not yet confirmed — filing hold:** the original new-vehicle MAGI/MSRP figures were not fully established in the existing report. Retain for source follow-up, without clearing them for filing: MAGI $300,000 MFJ / $225,000 HoH / $150,000 other; MSRP cap $80,000 for vans/SUVs/pickups and $55,000 for other vehicles, with all eligibility conditions still to be established. The linked Act supports only the acquisition deadline; it does not verify these dollar figures. [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm). |
 | Previously owned clean vehicle (§25E) | No (transferable if eligible) | Up to $4,000 | MAGI $150,000 MFJ / $112,500 HoH / $75,000 other; acquisition after September 30, 2025 is ineligible. [USED](https://www.irs.gov/credits-deductions/used-clean-vehicle-credit); [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm). |
 
 ## 13. Schedule 2 — Additional taxes
@@ -613,7 +613,7 @@ Although primarily a freelancer concern (refer to `us-quarterly-estimated-tax`),
 
 ### 17.4 E-file mandate
 
-- **E-file mandate** — A specified tax-return preparer generally must e-file when reasonably expecting to file 11 or more covered individual income-tax returns during the calendar year, subject to the written taxpayer paper-filing choice, hardship and other permitted exceptions. Do not substitute the separate 10-return information/business-return rule or treat 2024 as the mandate’s start. [EF](https://www.irs.gov/e-file-providers/frequently-asked-questions-e-file-requirements-for-specified-tax-return-preparers-sometimes-referred-to-as-the-e-file-mandate).
+- **E-file mandate** — A specified tax-return preparer generally must e-file when reasonably expecting to file 11 or more covered individual income-tax returns during the calendar year, subject to the written taxpayer paper-filing choice, hardship and other permitted exceptions. [EF](https://www.irs.gov/e-file-providers/frequently-asked-questions-e-file-requirements-for-specified-tax-return-preparers-sometimes-referred-to-as-the-e-file-mandate).
 
 ### 17.5 §183 hobby loss
 
@@ -639,7 +639,7 @@ Although primarily a freelancer concern (refer to `us-quarterly-estimated-tax`),
 8. **NIIT** not computed when AGI > $200k/$250k and investment income present.
 9. **Kiddie tax** Form 8615 missed for college student dependents with brokerage 1099-DIV.
 10. **AMT** not run for ISO exercises.
-11. **Standard deduction limitation** — Apply the dependent’s regular standard-deduction limit: for 2025, the greater of $1,350 or earned income + $450, capped at $15,750; any age/blindness additions require their separate conditions. [P501](https://www.irs.gov/publications/p501).
+11. **Standard deduction limitation** — Apply the dependent’s regular standard-deduction limit: for 2025, the greater of $1,350 or earned income + $450, capped at the regular standard deduction for the filing status ($15,750 for Single/MFS in 2025); any age/blindness additions require their separate conditions. [P501](https://www.irs.gov/publications/p501).
 12. **Wrong filing status** — HoH claimed without a qualifying person; QSS claimed in year 3+ after spouse's death.
 13. **Box 12 W-2 code DD** (employer-sponsored health coverage) mistakenly added to income — informational only.
 14. **Form 1098-T scholarship amount** not added back when in excess of qualified tuition for AOTC.
@@ -853,7 +853,8 @@ ISO exercise-and-hold: exercised 4,000 incentive stock options (strike $3, FMV $
 
 | Line | Item | Amount |
 | --- | --- | --- |
-| 1 | Taxable income (Form 1040 line 15) | $216,094 |
+| 1a | Form 1040 line 14 minus Schedule 1-A line 37 (none in supplied facts) | $15,750 [2025 Form 6251](https://www.irs.gov/pub/irs-pdf/f6251.pdf) |
+| 1b | Form 1040 line 11b ($231,844) minus line 1a ($15,750) | $216,094 [2025 Form 6251](https://www.irs.gov/pub/irs-pdf/f6251.pdf) |
 | 2a | Standard deduction add-back | $15,750 |
 | 2i | ISO exercise adjustment — 4,000 × ($28 − $3), §56(b)(3) | $100,000  [2025 Form 6251](https://www.irs.gov/pub/irs-pdf/f6251.pdf) |
 | 4 | AMTI | $331,844 |
@@ -1004,6 +1005,7 @@ The following operative readings are reused from the completed 22 November 2026 
 | P547 | [P547](https://www.irs.gov/publications/p547) | 2026-11-22 |
 | P925 | [P925](https://www.irs.gov/publications/p925) | 2026-11-22 |
 | KID | [KID](https://www.irs.gov/instructions/i8615) | 2026-11-22 |
+| CARE, 2025 line 8 percentage table | [2025 Form 2441](https://www.irs.gov/pub/irs-pdf/f2441.pdf) | 2026-11-22 |
 | ICARE | [ICARE](https://www.irs.gov/instructions/i2441) | 2026-11-22 |
 
 ## End of skill note
