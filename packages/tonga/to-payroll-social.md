@@ -6,14 +6,14 @@ jurisdiction: TO
 category: payroll
 type: computation
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
-version: 0.1
+version: 0.2
 ---
 
-# Tonga Payroll and Retirement Contributions v0.1
+# Tonga Payroll and Retirement Contributions v0.2
 
 **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -31,7 +31,7 @@ Use the [individual income-tax skill](to-income-tax.md) for residence, employmen
 | Fund earnings versus PAYE gross | Statutory earnings include remuneration, bonuses, commissions and allowances, but exclude overtime, gratuity, retrenchment/redundancy/termination, retirement benefits, sickness/maternity/work-injury payments, travel allowance/concession and employment-expense reimbursements. Verify the actual item. | [s 2 earnings definition](https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2016/2016-0442/NationalRetirementBenefitsFundAct_3.pdf) |
 | Review-date base | Regulations refer to annual salary applicable at 1 July review date; current Guide uses annual earnings at that review date. Do not substitute every item of current PAYE gross or invent a cap/floor. | [regs 2,4-5; current Guide panel 9](https://nrbf.to/download/resources/governance/3.%20NationalRetirementBenefitsScheme%28Administration%29Regulations2012.pdf) |
 | PAYE monthly return/payment | Form 7 and PAYE within 28 days after month end; use current prescribed withholding method from the individual-tax owner. | [ss 76,82; MORC PAYE and due-date table](https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2007/2007-0010/IncomeTaxAct_3.pdf) |
-| Tax certificates/reconciliation | Form 4 within 14 days after employer financial year per MORC; Form 8 plus each Form 4 within 2 months after statutory 30 June withholding year, ordinarily 31 August. | [certificate/reconciliation; ITA s 86](https://www.revenue.gov.to/paye) |
+| Tax certificates/reconciliation | Form 4 within 14 days after the 30 June employment fiscal year ends, ordinarily 14 July, or within 7 days after employment ends during the year. Form 8 plus each Form 4 is due within 2 months after 30 June, ordinarily 31 August. | [Form 4 and certificate deadlines](https://www.revenue.gov.to/sites/default/files/inline-files/form4%20-%20annual%20tax%20witholding_1.pdf); [Income Tax Regulations reg 16](https://ago.gov.to/cms/images/LEGISLATION/SUBORDINATE/2608/2608-0004/IncomeTaxRegulations_2.pdf#page=17); [PAYE reconciliation](https://www.revenue.gov.to/paye) |
 | Fund payer and recovery | Employer remits both parts; its own part cannot be deducted from employee wages. Employee deductions relate to the relevant pay period; failure-to-deduct and arrears have different statutory recovery rules. | [ss 20-23](https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2016/2016-0442/NationalRetirementBenefitsFundAct_3.pdf) |
 
 ## Ask the client first
@@ -60,7 +60,7 @@ Compute PAYE on its tax base using the prescribed period worksheet, then employe
 
 Complete Form 7 with every employee's gross wage details for the month and PAYE, including a nil withholding position where applicable. The employer withholds and remits under the current tax method; another payroll deduction does not reduce the employer's PAYE duty (ITA s 76(2)). Match the total employee ledger to the return and payment receipt. The old 15th-day tax deadline is replaced by the confirmed monthly rule above.
 
-Issue each annual Form 4 with gross pay and tax deducted. File Form 8 with copies of all employee Forms 4 and reconcile to every monthly return/payment. The statute defines the annual withholding year to 30 June; the Ministry lists 31 August for the annual reconciliation, not 31 March. A Form 4 certificate period under the Ministry's employer-year wording must be reconciled to that annual statutory statement period where they differ; obtain a Ministry direction rather than silently change the period. Refer any live form/period ambiguity before submission.
+Issue each Form 4 with gross pay and tax deducted. The annual Form 4 uses the employment fiscal year ending 30 June, including for an employer with a different company balance date. File Form 8 with copies of all employee Forms 4 and reconcile to every monthly return and payment. The Ministry lists 31 August for the annual reconciliation. Refer any live form or period ambiguity before submission.
 
 ### Pay Fund contributions without inventing a grace period
 
@@ -156,6 +156,7 @@ Check registrations, employee classification, dual pay-item bases, current tax m
 | Current NRBF member information: Read for complete current member/voluntary/employer account and membership information | https://nrbf.to/ | 2026-11-16 |
 | Income Tax Act, Cap.11.05, 2020 consolidation: Read for ss 13,22,26,76,82-86 and 89-90; no employee retirement deduction inferred | https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2007/2007-0010/IncomeTaxAct_3.pdf | 2026-11-15 |
 | MORC PAYE: Read for complete withholding, Form 7, Form 4 and Form 8 procedure | https://www.revenue.gov.to/paye | 2026-11-16 |
+| Income Tax Regulations reg 16(2)–(4) and MORC Form 4: Read for the certificate fiscal year and annual and cessation deadlines | [Regulation](https://ago.gov.to/cms/images/LEGISLATION/SUBORDINATE/2608/2608-0004/IncomeTaxRegulations_2.pdf#page=17), [Form 4](https://www.revenue.gov.to/sites/default/files/inline-files/form4%20-%20annual%20tax%20witholding_1.pdf) | 2026-11-22 |
 | MORC Tax Due Dates and Extensions: Read for complete monthly/annual dates and weekend rule | https://www.revenue.gov.to/Tax-Due-Dates-and-Extensions | 2026-11-16 |
 | Revenue Services Administration Regulations 2021: Read for regs 14-18 and 24-26, including payment receipts and weekends | https://www.revenue.gov.to/sites/default/files/inline-files/RevenueServicesAdministrationRegulations2021_FINAL_Eng_0.pdf | 2026-11-15 |
 
