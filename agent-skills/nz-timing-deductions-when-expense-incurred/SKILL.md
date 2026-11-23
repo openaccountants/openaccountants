@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/nz-timing-deductions-when-expense-incurred"
   jurisdiction: "NZ"
   tax_year: "2026"
-  last_updated: "2026-11-22"
+  last_updated: "2026-11-14"
 ---
 
 # Timing of deductions in New Zealand: when an expense is incurred
@@ -28,7 +28,7 @@ This skill answers one question for a New Zealand business: an amount is deducti
 
 It assumes the amount already passes the deduction rules. A person is denied a deduction for expenditure to the extent it is of a capital nature (the capital limitation) or of a private or domestic nature (the private limitation). Settle that first, then date the deduction.
 
-The Income Tax Act 2007, the Tax Administration Act 1994 and Determination E12 govern these timing rules.
+Law: Income Tax Act 2007 and Tax Administration Act 1994, as explained in Inland Revenue (IRD) guidance, Tax Information Bulletins (TIBs), interpretation statements, a public ruling and Determination E12. The legislation website could not be read for this update (it refused script access again on 14 November 2026), so where a point depends on the exact wording of a section it is marked "check the Act".
 
 ## Ask the client first
 
@@ -50,12 +50,12 @@ The Income Tax Act 2007, the Tax Administration Act 1994 and Determination E12 g
 2. **Allocate the deduction to the year the expense is incurred.** "A deduction must be allocated to the income year in which it is incurred." Expenditure is incurred even if nothing has been paid, once the taxpayer has "definitively committed" itself. It is not enough that the expenditure is "impending, threatened or expected"; there must be an "existing obligation", judged on all the circumstances. Where it arises under a written agreement, that is a question of reading the agreement ([TRA 14/07 case summary](https://www.taxtechnical.ird.govt.nz/case-summaries/2007/timing-of-deduction-for-accounting-services)).
 3. **Do not let the accounts decide.** Accounting principles and good commercial practice "cannot be substituted for the statutory test of deductibility" (same case summary, citing *Mitsubishi Motors*). An accrual in the accounts for work not yet done is not, by itself, an incurred expense.
 4. **Apply any specific timing rule that overrides the general test** (steps 5 to 10). If none applies, stop: the deduction sits in the year incurred.
-5. **Prepayments.** For deducted expenses within section EA 3, identify the part that is unexpired at balance date. This includes unused goods still suitable for deriving income, unperformed services and rights enforceable after balance date to the extent the expenditure relates to that later period. The rule generally adds back the unexpired amount as income and allows a deduction in the following income year. Check the exclusions and special rules in [section EA 3](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514272/).
+5. **Prepayments (section EA 3).** At balance date, find the unexpired portion of each deducted expense: for goods, those not yet used up in deriving income (and not destroyed or rendered useless); for services, those not yet performed. The unexpired amount is added back as income in the same year and is deductible in the following income year ([IS 14/03](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/interpretation-statements/is1403.pdf), paras on s EA 3(3)(a) and (b)).
 6. **Check Determination E12 before adding anything back.** The add-back is excused, for a row of the schedule below, only if all five conditions are met: (a) the expense is described by that row; (b) the unexpired portions of **all** expenses described by that row, added together, do not exceed the row's maximum total amount; (c) the time from balance date to the expiry date does not exceed the row's time period; (d) for consumable aids and stationery (rows d and k), the goods are in the person's possession at balance date; and (e) the deduction has **not** been deferred to a later year for financial reporting purposes ([Determination E12](https://www.taxpolicy.ird.govt.nz/-/media/project/ir/tp/publications/2009/2009-other-determination-e12/2009-other-determination-e12-pdf.pdf), clause 4).
 7. **If a row's total is over its limit, the whole row is added back, not just the excess.** IRD's example for consumable aids: if the unexpired portion of all consumable aids "exceeds $58,000 at the end of the income year, the person does not get the benefit of DET E12 and s EA 3 applies to the total amount of expenditure" ([IS 14/03](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/interpretation-statements/is1403.pdf), para 34). Goods not in possession and amounts deferred in the accounts cannot use E12 themselves, but still count toward the $58,000 total (para 39).
 8. **Repeat at every balance date.** An amount added back and deducted the next year is tested again at the end of that year if part of it is still unexpired (IS 14/03). A prepayment running over several years is spread year by year until it is used up ([TIB Vol 34 No 9](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-34---2022/tib-vol-34-no9.pdf), paras 28-29).
-9. **Employee remuneration.** Start with an otherwise allowable deduction. Under [section EA 4](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514274/), add back the amount unpaid at the end of day 63 after the income year, or at the statutory deadline for shareholder-employees. From 2017-18 an employer can choose in its return to use the end of the income year instead. [Section DB 51](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1513730/) allows the unpaid amount as a deduction in the following income year. Test it again under section EA 4 if it remains unpaid.
-10. **Other specific rules.** A qualifying low-value asset can be written off in the year of acquisition. Trading stock uses opening and closing values. An ordinary bad debt deduction requires a debt written off as bad during the year. Financial arrangements generally follow spreading rules, with an exception for cash basis persons.
+9. **Employee remuneration (section EA 4).** Employment income (salary and wages, holiday pay, bonuses and other employment income) accrued at balance date is deductible in that year only to the extent it is **paid within 63 days** after the end of the income year. From 2017-18 the employer can choose not to apply this rule; then only employment income actually paid in the year is deductible, and accrued holiday pay or bonuses unpaid at year end are deducted when paid ([TIB Vol 29 No 4](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-29---2017/tib-vol29-no4.pdf)). For shareholder-employees the payment window is longer (see the table); check the Act for the current wording.
+10. **Other specific rules.** Low-value assets are written off in the year bought if they qualify; trading stock is dealt with by opening and closing values rather than by when purchases are incurred; a bad debt is deducted in the year it is both bad and written off; and financial arrangements follow their own spreading rules unless the person is a cash basis person. Each is set out below.
 11. **Partnerships.** For E12, ignore section HG 2 and treat the expenditure as incurred by the partnership, not the partners (E12 clause 5).
 12. **Record the working.** Keep the balance-date schedule of unexpired amounts by E12 row, the post-balance-date payroll report for the 63-day test, the low-value asset list and the bad debt write-off entries with their dates. IRD may ask for them.
 
@@ -74,17 +74,17 @@ Determination E12 was signed on the 4th day of March 2009, is made under section
 | c | Rent for lease or bailment of livestock or bloodstock | $26,000 | 6 months |
 | d | Consumable aids (goods must be in possession) | $58,000 | unlimited |
 | e | Insurance premiums, if the premiums incurred in the year under that contract do not exceed $12,000 | No cap | 12 months |
-| f | Equipment service contracts or warranties whose consideration is an inseparable and indeterminate part of the asset price | No cap | unlimited |
+| f | Equipment service contracts or warranties sold as an inseparable part of the asset price | No cap | unlimited |
 | g | Service or maintenance of plant, equipment or machinery, if the amount incurred in the year under that contract does not exceed $23,000 | No cap | 3 months |
 | h | Use or maintenance of telephone and other communication equipment | No cap | 2 months |
 | i | Costs for services not covered elsewhere | $14,000 | 6 months |
-| j | Residual periodic charges regularly incurred on a rated annual or more frequent basis, including local authority levies other than rates, licences and registrations | $14,000 | 12 months |
+| j | Periodic charges not covered elsewhere (includes local authority levies other than rates, licences, registrations) | $14,000 | 12 months |
 | k | Stationery (goods must be in possession) | No cap | unlimited |
 | l | Newspaper, journal and periodical subscriptions | No cap | unlimited |
 | m | Motor vehicle registration and drivers' licence fees | No cap | unlimited |
 | n | Trade, professional or other association fees (not franchise payments), if the amount incurred in the year for that association does not exceed $6,000 | No cap | 12 months |
 | o | Postal and courier services, including stamps and PO boxes | No cap | unlimited |
-| p | Rates made and levied under Part 3 of the Local Government (Rating) Act 2002, to the extent invoiced on or before balance date | No cap | unlimited |
+| p | Local authority rates, to the extent invoiced on or before balance date | No cap | unlimited |
 | q | Advance bookings for travel and hotel or motel accommodation | $14,000 | 6 months |
 | r | Advertising | $14,000 | 6 months |
 | s | Road-user charges | No cap | unlimited |
@@ -93,7 +93,7 @@ Determination E12 was signed on the 4th day of March 2009, is made under section
 | v | Expenditure described in section DB 3(1) and not excluded by DB 3(2) | No cap | unlimited |
 | w | General insurers' direct claim settlement costs in the outstanding claims reserve, if the gross claim cost for any 1 claim does not exceed $65,000 (excluding GST) | No cap | unlimited |
 
-For a service, the expiry date is when completion is reasonably expected. For a right over a definite period, use its last day. For an indefinite period, use its reasonably expected end date (E12 clause 3).
+The "expiry date" for a service is the date by which the service is reasonably expected to be completed; for a right over a definite period, the last day of that period (E12 clause 3).
 
 ### Employee remuneration
 
@@ -101,7 +101,7 @@ For a service, the expiry date is when completion is reasonably expected. For a 
 |---|---|---|
 | Accrued employment income deductible in the earlier year if paid within | 63 days of the end of the income year | [TIB Vol 29 No 4, May 2017](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-29---2017/tib-vol29-no4.pdf) |
 | Option not to apply the rule (deduct only what is paid in the year) | 2017-18 and later income years | same |
-| Shareholder-employee remuneration payment cut-off | The latest date the return could be filed with the maximum extension. For a 31 March balance date, this is 31 March of the following year. Use the statutory calculation for other balance dates. | [Income Tax Act, s EA 4(3)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514274/), [Tax Administration Act, s 37(5)](https://www.legislation.govt.nz/act/public/1994/166/en/latest/sections/DLM351161/) |
+| Shareholder-employees: remuneration must be paid by | the 31 March that is the latest date to which an extension of time for filing could be granted (6 to 18 months after year end, depending on balance date) | [TIB Vol 3 No 9, June 1992](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-03---1991-1992/tib-vol3-no09.pdf): the rule as introduced; check the Act for the current wording |
 
 ### Low-value assets ([IRD claiming depreciation](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/depreciation/claiming-depreciation))
 
@@ -109,31 +109,31 @@ Cost for this test excludes GST if the business is GST-registered, and includes 
 
 | Asset bought | Threshold for immediate write-off | Source |
 |---|---|---|
-| On or after 17 March 2021 (includes 2026-27) | $1,000 or less | [Income Tax Act, s EE 38(2)(d)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514633/) |
-| 17 March 2020 to 16 March 2021 | $5,000 or less | [Income Tax Act, s EE 38(2)(c)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514633/) |
+| 17 March 2021 onwards (includes 2026-27) | $1,000 | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/depreciation/claiming-depreciation |
+| 17 March 2020 to 16 March 2021 | $5,000 (temporary) | same |
 
-The limits in [section EE 38](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514633/) are inclusive, including the historical $500 band from 19 May 2005 to 16 March 2020. A qualifying item must be used or available for use, otherwise depreciable, never part of another depreciable item and otherwise ineligible for an immediate deduction. When items with the same depreciation rate are bought at the same time from the same supplier, compare their combined cost with the threshold. For a group generally comprising trading stock, count items not treated solely as trading stock. Use the cost before any Investment Boost reduction.
+IRD's web page shows the threshold as "$1,000", and its IR260 guide says "Up to $1,000", which reads as including an asset costing exactly $1,000. IRD's two sources word the earlier $500 band differently ("less than" on the web page, "Up to" in IR260), so check the Act before writing off an asset at exactly $1,000. The write-off is not available for an asset bought from the same supplier at the same time as other assets with the same depreciation rate, or one that becomes part of a depreciable asset ([IR260 Depreciation guide](https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir260/ir260.pdf)).
 
 ### Trading stock
 
 | Rule | Figure | Source |
 |---|---|---|
-| Use this year's opening value as closing value if turnover is | $1.3 million or less | [Income Tax Act, s EB 23](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514335/) |
+| Keep last year's closing value as this year's (no stocktake needed) if sales for the year are | less than $1.3 million | [IRD valuing trading stock](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-income/trading-stock/valuing-trading-stock) |
 | ...and a reasonable estimate of closing stock is | less than $10,000 | same |
-| Low-turnover trader (concessionary valuation rules) | $3 million or less in combined turnover of the business and specified associated persons, unless an Order in Council sets a higher threshold | [Income Tax Act, s EB 13](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514313/) |
+| Low-turnover trader (concessionary valuation rules, sections EB 13 to EB 22) | sales of less than $3 million for the income year | same |
 
 ### Financial arrangements: cash basis person ([IRD financial arrangements rules](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-income/interest-and-dividends/financial-arrangements-rules))
 
 | Test (meet either one) | 2025-26 and later income years | Source |
 |---|---|---|
-| Absolute value of the year’s income and expenditure from all in-scope financial arrangements | $200,000 or less | [Income Tax Act, ss EW 57(1)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1515380/) and [EW 58](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1515387/) |
-| Sum of absolute values of in-scope financial arrangements on every day in the income year | $2 million or less | [Income Tax Act, ss EW 57(2)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1515380/) and [EW 58](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1515387/) |
+| Income and expenditure from all financial arrangements, on an accrual basis | under $200,000 | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-income/interest-and-dividends/financial-arrangements-rules |
+| Total financial assets and liabilities, added together ignoring signs | less than $2 million | same |
 
-For 2026-27, apply section EW 57(2)(d) to foreign-currency arrangements. Convert the entry value and any reduction to NZD using the entry-date exchange rate. Convert increases using the exchange rate when the increase occurs. The 2024-25 and earlier rules had lower thresholds and a separate deferral test. [Income Tax Act, s EW 57](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1515380/), [IRD IS 22/05](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/interpretation-statements/2022/is-22-05.pdf).
+Source: [IRD financial arrangements rules](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-income/interest-and-dividends/financial-arrangements-rules). IRD's own example: assets of $1.5 million and debts of $600,000 total $2.1 million, which is over the limit. For 2024-25 and earlier years lower thresholds and an extra deferral test applied: use [IS 22/05](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/interpretation-statements/2022/is-22-05.pdf) for those years.
 
 ### Bad debts
 
-For an ordinary write-off, the debt must be bad and written off in the income year ([BR Pub 18/07](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/rulings/public/pub00300-august2018.pdf)):
+No figure. Two tests, both needed ([BR Pub 18/07](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/rulings/public/pub00300-august2018.pdf)):
 
 - **Bad:** a reasonably prudent commercial person would conclude there is no reasonable likelihood that the debt will be paid, in whole or in part, by the debtor or anyone else. A debt is not bad merely because a set time (for example 90 days or 180 days) has passed without payment or contact.
 - **Written off in the income year the deduction is claimed**, in line with the taxpayer's own accounting and record-keeping systems, in one of these ways:
@@ -142,7 +142,7 @@ For an ordinary write-off, the debt must be bad and written off in the income ye
   - another taxpayer keeping double-entry accounts: an authorised person makes the entries in the business's account books;
   - an unincorporated sole trader or small unincorporated business without double-entry accounts: the taxpayer makes a note in its bookkeeping records giving the amount owed by the debtor, stating that the debt has been written off, and recording the date of the write-off.
 
-An ordinary write-off must occur by the end of the year and cannot be backdated. Apply the other conditions in [section DB 31](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1513650/). A qualifying statutory insolvency release or company composition can be an alternative to write-off if the person must calculate a base price adjustment in that year.
+The write-off must happen before the end of the income year and cannot be backdated (para 36).
 
 ## Boundaries and exceptions
 
@@ -154,17 +154,17 @@ An ordinary write-off must occur by the end of the year and cannot be backdated.
 | Consumables bought but not yet delivered at balance date | E12 cannot be used for them; still counted toward the $58,000 row total | IS 14/03 paras 35 and 39 |
 | Consumable aids consumed or incorporated into other assets by balance date | "Used up", so there is no unexpired portion and no EA 3 add-back. Consumable aids used in producing trading stock are themselves excluded from the definition of trading stock | IS 14/03 paras 5 and 25 |
 | Goods held for sale or exchange | Trading stock: timing comes from opening and closing values, not from the prepayment rule. Consumable aids, depreciated assets, spare parts not held for resale, land and financial arrangements are not trading stock | [IRD trading stock](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-income/trading-stock) |
-| Bonus accrued at year end, paid 70 days later, ordinary 63-day rule | Add back in the accrual year and deduct in the following year on these facts | [Income Tax Act, ss EA 4](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514274/) and [DB 51](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1513730/) |
-| Business chooses the year-end cut-off in its return | Add back the unpaid amount at year end and deduct it in the following year, subject to a further section EA 4 test if still unpaid | [Income Tax Act, ss EA 4](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514274/) and [DB 51](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1513730/) |
+| Bonus accrued at year end, paid 70 days later, 63-day rule applied | Deductible in the year paid, not the year accrued | TIB Vol 29 No 4 |
+| Business has opted out of the 63-day rule | Only amounts paid by year end are deductible that year | TIB Vol 29 No 4 |
 | Asset over the low-value threshold | Depreciate it; Investment Boost (20% of the cost of new assets from 22 May 2025) may apply | IRD claiming depreciation |
-| Ordinary bad debt written off after balance date | Deduct in the later year if it qualifies. The write-off cannot be backdated. | [Income Tax Act, s DB 31](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1513650/), BR Pub 18/07 para 36 |
+| Debt written off in the books after balance date but before the accounts are finished | Deductible in the later year only; a write-off cannot be backdated | BR Pub 18/07 para 36 |
 | Cash basis person | May report financial arrangement income and expenditure on a cash basis during the term, but usually still does a base price adjustment when the arrangement ends | IRD financial arrangements rules |
 
 ## Worked cases
 
 **C1. Accrued accounting fees (the TRA 14/07 facts).** A company with a 31 March balance date accrued $2,285 on 31 March 2003 as an estimate of its accountants' fees for the 2003 accounts and return. The engagement letter said the accountants would bill as work was performed; the work was done and invoiced in the 2004 year. At balance date the company was not contractually bound to have the work done and could have used someone else. **Result:** not incurred at balance date; deductible in 2004, not 2003 ([case summary](https://www.taxtechnical.ird.govt.nz/case-summaries/2007/timing-of-deduction-for-accounting-services)). The same reasoning applies to a 2026-27 year-end accrual for 2026-27 accounts work done after 31 March 2027.
 
-**C2. Insurance premium within E12, 2026-27.** A business with a 31 March balance date pays an annual premium of $9,000 on 1 October 2026 for cover from 1 October 2026 to 30 September 2027. If the premium is allocated evenly by month, half the cover is unexpired at 31 March 2027: $9,000 x 6 / 12 = $4,500. Row (e) of E12: the premium incurred in the year under that contract is not over $12,000, and expiry is 6 months after balance date, inside 12 months. If the prepayment is not deferred in the financial statements, EA 3 is excused and the full $9,000 is deducted in 2026-27. If the accounts carry the $4,500 as a prepayment, condition (e) fails: $4,500 is income in 2026-27 and deductible in 2027-28 ([E12](https://www.taxpolicy.ird.govt.nz/-/media/project/ir/tp/publications/2009/2009-other-determination-e12/2009-other-determination-e12-pdf.pdf)).
+**C2. Insurance premium within E12, 2026-27.** A business with a 31 March balance date pays an annual premium of $9,000 on 1 October 2026 for cover from 1 October 2026 to 30 September 2027. At 31 March 2027 half the cover is unexpired: $9,000 x 6 / 12 = $4,500. Row (e) of E12: the premium incurred in the year under that contract is not over $12,000, and expiry is 6 months after balance date, inside 12 months. If the prepayment is not deferred in the financial statements, EA 3 is excused and the full $9,000 is deducted in 2026-27. If the accounts carry the $4,500 as a prepayment, condition (e) fails: $4,500 is income in 2026-27 and deductible in 2027-28 ([E12](https://www.taxpolicy.ird.govt.nz/-/media/project/ir/tp/publications/2009/2009-other-determination-e12/2009-other-determination-e12-pdf.pdf)).
 
 ```oa-check
 name: NZ E12 row (e) insurance, not deferred vs deferred in the accounts
@@ -191,7 +191,7 @@ expected:
 
 **C3. Consumable aids over the row limit (IRD's own example).** Cailuna Ltd, a paper mill, has unused chemicals costing $10,500, cleaning products $40,000 and fuel $9,000 at balance date: $10,500 + $40,000 + $9,000 = $59,500. That is more than $58,000, so E12 does not apply to any of it and the whole $59,500 is returned as income in that year (IRD's example uses the 2012/13 year; the rule is the same for 2026-27) and deducted the next year ([IS 14/03](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/interpretation-statements/is1403.pdf), Example 4).
 
-**C4. Year-end bonus and holiday pay, 2026-27.** Balance date 31 March 2027. Accrued at year end: staff bonuses of $20,000 and holiday pay of $8,000. The 63-day window ends on 2 June 2027 (30 days in April, 31 in May, 2 in June). The bonuses are paid on 20 May 2027; $3,000 of the holiday pay is taken and paid by 2 June 2027, and the other $5,000 later in the same 2027-28 income year. **Applying the 63-day rule:** deduct $20,000 + $3,000 = $23,000 in 2026-27 and $5,000 in 2027-28 (when paid). **Opted out of the rule:** none of the $28,000 accrued is deductible in 2026-27; it is deducted in 2027-28 as paid ([TIB Vol 29 No 4](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-29---2017/tib-vol29-no4.pdf)). The decision: applying the rule brings $23,000 forward into 2026-27.
+**C4. Year-end bonus and holiday pay, 2026-27.** Balance date 31 March 2027. Accrued at year end: staff bonuses of $20,000 and holiday pay of $8,000. The 63-day window ends on 2 June 2027 (30 days in April, 31 in May, 2 in June). The bonuses are paid on 20 May 2027; $3,000 of the holiday pay is taken and paid by 2 June 2027, and the other $5,000 later. **Applying the 63-day rule:** deduct $20,000 + $3,000 = $23,000 in 2026-27 and $5,000 in 2027-28 (when paid). **Opted out of the rule:** none of the $28,000 accrued is deductible in 2026-27; it is deducted in 2027-28 as paid ([TIB Vol 29 No 4](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-29---2017/tib-vol29-no4.pdf)). The decision: applying the rule brings $23,000 forward into 2026-27.
 
 ```oa-check
 name: NZ 63-day rule applied vs opted out
@@ -219,18 +219,18 @@ expected:
   brought_forward: 23000
 ```
 
-**C5. Low-value asset, 2026-27.** A GST-registered sole trader buys a printer on 10 October 2026 for $1,138.50 including GST of $148.50. Cost for the test is $990, under $1,000, and the printer is used in the year, the GST is fully recoverable and the other conditions in section EE 38 are met. If they elect, write off $990 in 2026-27. A trader who is not GST-registered uses $1,138.50, which is over $1,000, so the printer is depreciated instead ([IRD claiming depreciation](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/depreciation/claiming-depreciation)).
+**C5. Low-value asset, 2026-27.** A GST-registered sole trader buys a printer on 10 October 2026 for $1,138.50 including GST of $148.50. Cost for the test is $990, under $1,000, and it was not bought with other same-rate assets from that supplier: write off $990 in 2026-27. A trader who is not GST-registered uses $1,138.50, which is over $1,000, so the printer is depreciated instead ([IRD claiming depreciation](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/depreciation/claiming-depreciation)).
 
-**C6. Bad debt written off after balance date.** A debtor went into liquidation in March 2027 and the debt was bad by 31 March 2027, but the bookkeeper recorded the write-off on 15 April 2027 while preparing the accounts. **Result:** assuming this is an ordinary write-off with no qualifying release and base price adjustment, there is no deduction in 2026-27. The eligible write-off falls in 2027-28 ([BR Pub 18/07](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/rulings/public/pub00300-august2018.pdf), para 36).
+**C6. Bad debt written off after balance date.** A debtor went into liquidation in March 2027 and the debt was bad by 31 March 2027, but the bookkeeper recorded the write-off on 15 April 2027 while preparing the accounts. **Result:** no deduction in 2026-27; the deduction falls in 2027-28, because the write-off must happen before the end of the year in which it is claimed and cannot be backdated ([BR Pub 18/07](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/rulings/public/pub00300-august2018.pdf), para 36).
 
-**C7. Cash basis person, 2026-27.** On one day, an individual’s foreign bank account and business loan have statutory NZD values of $1.5 million and $600,000. The $2.1 million total fails the daily value test. The year’s absolute total of income and expenditure for all in-scope arrangements is $150,000, which is $50,000 below the other limit. They qualify on that basis, subject to the statutory exclusions. Calculate a base price adjustment when required. [Income Tax Act, ss EW 57](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1515380/) and [EW 58](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1515387/).
+**C7. Cash basis person, 2026-27.** An individual has a foreign bank account and a business loan: financial assets of $1.5 million and debts of $600,000, total $2.1 million, which fails the assets-and-liabilities test. Accrual-basis income and expenditure from all the arrangements is $150,000, under $200,000, so the person meets the other test and is a cash basis person: return interest as received and do a base price adjustment when each arrangement ends ([IRD financial arrangements rules](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-income/interest-and-dividends/financial-arrangements-rules)).
 
 ## When to refuse or refer
 
 - The real question is whether the amount is deductible at all (capital or private character, apportionment, a specific denial rule).
 - A prepayment does not clearly fit one E12 row, or a row's condition (such as the $12,000 insurance or $23,000 maintenance contract limit in [E12](https://www.taxpolicy.ird.govt.nz/-/media/project/ir/tp/publications/2009/2009-other-determination-e12/2009-other-determination-e12-pdf.pdf)) is not met and the client wants to rely on another row.
-- Shareholder-employee remuneration where the statutory filing-extension deadline depends on a non-standard balance date.
-- Bad debts involving a statutory release, company composition or base price adjustment.
+- Shareholder-employee remuneration paid long after year end: confirm the current EA 4 time limit in the Act before advising.
+- The answer turns on the exact wording of a section of the Act (for example whether an asset costing exactly $1,000 qualifies under [IRD's low-value asset table](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/depreciation/claiming-depreciation)): the legislation website could not be read for this skill.
 - Trading stock valuation choices (cost, discounted selling price, replacement price, market selling value), livestock, or disposals below market value.
 - Financial arrangements beyond the cash basis test: spreading methods, base price adjustments, foreign currency movements.
 - Depreciation beyond the low-value write-off, including pooling and Investment Boost.
@@ -257,8 +257,8 @@ IRD: "You need to send us your completed return by 7 July unless you have a tax 
 - [ ] Amounts added back this year diarised for deduction next year and retested at next balance date.
 - [ ] 63-day rule: election confirmed; payments within 63 days (or the shareholder-employee date) reconciled to the accrual.
 - [ ] Low-value assets: cost on the right GST basis, same-supplier rule checked, date on or after 17 March 2021.
-- [ ] Trading stock: return the closing value as income. Use the low-value stock option only if turnover is $1.3 million or less and closing stock is reasonably estimated below $10,000. [Income Tax Act, s EB 23](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514335/).
-- [ ] Bad debts: confirm the ordinary write-off date and entries, or the statutory release or composition and base price adjustment conditions.
+- [ ] Trading stock: closing value taken as income; low-value stock rule used only if sales under $1.3 million and closing stock estimated under $10,000 ([IRD valuing trading stock](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-income/trading-stock/valuing-trading-stock)).
+- [ ] Bad debts: bad and written off before balance date by one of the BR Pub 18/07 methods (software entry by an authorised person, company account book entries by an authorised officer, double-entry book entries, or a dated note in the records of a business without double-entry accounts).
 - [ ] Financial arrangements: cash basis tests for 2025-26 and later applied; base price adjustments done where arrangements ended.
 - [ ] Partnership expenditure tested at partnership level for E12.
 
@@ -283,16 +283,9 @@ IRD: "You need to send us your completed return by 7 July unless you have a tax 
 | IRD, Individual income tax return IR3: read for the 7 July due date | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3 | 2026-11-14 |
 | IRD, Extension of time arrangements: read for filing up to 31 March the following year | https://www.ird.govt.nz/topics/intermediaries/extension-of-time-arrangements | 2026-11-14 |
 | IRD, Balance dates: read for non-standard balance dates | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/balance-dates | 2026-11-14 |
-| Income Tax Act, s EA 3. Prepayment timing and exceptions | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514272/ | 2026-11-22 |
-| Income Tax Act, s EA 4 and DB 51. Deferred employment income | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514274/ | 2026-11-22 |
-| Income Tax Act, s EE 38. Inclusive threshold and grouped acquisitions | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514633/ | 2026-11-22 |
-| Income Tax Act, s EB 23. Low-value trading stock | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514335/ | 2026-11-22 |
-| Income Tax Act, s EB 13. Low-turnover trader | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1514313/ | 2026-11-22 |
-| Income Tax Act, s EW 57. Inclusive thresholds and valuation | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1515380/ | 2026-11-22 |
-| Income Tax Act, s DB 31. Bad debt deduction | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1513650/ | 2026-11-22 |
 
-Not yet confirmed: the taxpayer’s actual contract terms, use dates, payment records, group turnover and financial arrangement values. Confirm those before allocating deductions.
+Not yet confirmed: the current wording of Income Tax Act 2007 sections EA 3, EA 4 (including the shareholder-employee payment date) and the low-value asset section, because legislation.govt.nz refused script access on 14 November 2026; whether an asset costing exactly NZD 1,000 qualifies for the low-value write-off (IRD's web page and IR260 word the earlier band differently).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nz-timing-deductions-when-expense-incurred` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nz-timing-deductions-when-expense-incurred. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nz-timing-deductions-when-expense-incurred` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nz-timing-deductions-when-expense-incurred. If neither is available, confirm every figure against the official source pages cited above before relying on it.
