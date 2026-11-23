@@ -30,7 +30,7 @@ type: computation
 
 This skill covers monthly EPF, EPS, EDLI and ESI obligations in FY 2026-27 (1 April 2026 to 31 March 2027), using law checked on 22 November 2026. Most provisions of the Code on Social Security, 2020 commenced on 21 November 2025. The Social Security (Central) Rules, 2026 were issued on 8 May 2026, and the 2026 EPF, EPS and EDLI schemes were notified on 29 June 2026. The Chapter III wage ceiling rose to 25,000 rupees on 17 September 2026. From 21 November 2026, the new Chapter IV wage-ceiling and employee-exemption notices apply. The ESI (General) Regulations, 2026 supersede the 1950 regulations with a saving for earlier matters.
 
-The rates table gives the statutory rates. Obtain the applicable notification for the EPF administrative charge and EDLI contribution rate for the month.
+Use the rates table for ordinary covered employment. Check the applicable period, establishment class and any exemption or higher-wage option.
 
 ## Who this applies to
 
@@ -77,12 +77,14 @@ The First Schedule sets thresholds of 20 employees for EPF and 10 persons for ES
 | ESI coverage wage ceiling | 21,000 rupees a month, or 25,000 rupees for an employee meeting the specified disability test | From 21 November 2026, S.O. 6339(E). The proviso names the Rights of Persons with Disabilities Act, 2016 and the National Trust Act, 1999 | https://egazette.gov.in/WriteReadData/2026/278112.pdf |
 | EPF employer contribution | Twelve per cent (12%) of wages | EPF Scheme 2026 paragraph 18; on wages up to the ceiling unless a joint option | https://egazette.gov.in/WriteReadData/2026/273957.pdf |
 | EPF employee contribution | Equal to the employer's | Paragraph 18 | https://egazette.gov.in/WriteReadData/2026/273957.pdf |
-| EPF reduced rate | Ten per cent (10%) | Only for the class of establishments notified by the Central Government | https://egazette.gov.in/WriteReadData/2026/273957.pdf |
-| Code s 16(1)(a) provident fund rate as printed | Ten per cent, twelve per cent for notified establishments | The Code's own text; the 2026 Scheme prints the reverse (see refer list) | https://egazette.gov.in/WriteReadData/2020/222111.pdf |
+| EPF reduced rate | Ten per cent (10%) | S.O. 3582(E) excludes specified establishments from the twelve per cent substitution, deemed effective from 21 November 2025 | https://egazette.gov.in/WriteReadData/2026/274112.pdf#page=2 |
+| Code s 16(1)(a) provident fund rate | Ten per cent, with substitution of twelve per cent by notification | Apply S.O. 3582(E) for the substituted rate and excluded establishments | https://egazette.gov.in/WriteReadData/2020/222111.pdf |
 | EPS: part of employer's contribution sent to the Pension Fund | Eight and thirty-three hundredths per cent (8.33%) | Of wages up to the wage ceiling, Pension Scheme 2026 paragraph 4 | https://egazette.gov.in/WriteReadData/2026/273951.pdf |
 | Central Government contribution to the Pension Fund (not an employer cost) | One and sixteen hundredths per cent (1.16%) of pay | Paragraph 4 | https://egazette.gov.in/WriteReadData/2026/273951.pdf |
 | EPS employer share for members with an accepted higher-wage joint option (from 1 September 2014) | Nine and forty-nine hundredths per cent (9.49%) | The increase applies to wages above fifteen thousand rupees per month | https://egazette.gov.in/WriteReadData/2026/273951.pdf |
 | EDLI contribution limit in the Code | One per cent (1%) of wages, or the percentage notified by the Central Government | EDLI Scheme paragraph 5 requires the notified rate | https://egazette.gov.in/WriteReadData/2020/222111.pdf |
+| EDLI employer contribution | 0.5% of wages up to the applicable ceiling | S.O. 3581(E) specifies the monthly rate with effect from 29 June 2026 | https://egazette.gov.in/WriteReadData/2026/274104.pdf#page=2 |
+| Ordinary EPF administrative charge | 0.5% of applicable wages, with an establishment-wide monthly minimum | 500 rupees if there is at least one contributing member that month, or 75 rupees where there are no active contributory members | https://unifiedportal-emp.epfindia.gov.in/epfo/ |
 | EDLI death benefit, twelve months' continuous employment limb | Not less than 2,50,000 and not more than 7,00,000 rupees | Paid by the EPFO to the family | https://egazette.gov.in/WriteReadData/2026/273942.pdf |
 | ESI employer contribution | Three and one-fourth per cent (3.25%) of wages | Rule 19(1), rounded to the next higher rupee | https://egazette.gov.in/WriteReadData/2026/272366.pdf |
 | ESI employee contribution | Three-fourth per cent (0.75%) of wages | Rule 19(1). The section 2(31) exemption applies through average daily wages of 176 rupees inclusive under S.O. 6338(E) and 1950 rule 52 | https://egazette.gov.in/WriteReadData/2026/278111.pdf |
@@ -124,25 +126,25 @@ The one-half rule: if the excluded items in the first nine exclusions (bonus to 
 - Each contribution is rounded to the nearest rupee: fifty paise or more goes up, less than fifty paise is ignored (paragraph 18(5)).
 - Where the monthly wage is above the wage ceiling, both shares are limited to the contribution on the ceiling (paragraph 18(3)), unless the employer and the employee jointly opt in writing to contribute on the higher wage; the employer then also pays administrative charges on it (paragraph 9(4)).
 - An employee whose wage is above the ceiling when he would otherwise join is an "excluded employee" (paragraph 2(f)(i)); he joins as soon as he stops being excluded (paragraph 9(3)). With the ceiling at 25,000 rupees from 17 September 2026, employees earning above the old ceiling but not above 25,000 rupees are no longer excluded.
-- The ten per cent rate applies only to a class of establishments the Central Government has notified. The list was not on any page read; ask for the notification before using it.
+- Apply the ten per cent Code rate for the establishments excluded by S.O. 3582(E). They are establishments with an approved insolvency resolution or repayment plan and establishments in the jute, beedi, brick, coir other than spinning, and guar gum factory categories. Verify the establishment's actual classification. [S.O. 3582(E)](https://egazette.gov.in/WriteReadData/2026/274112.pdf#page=2)
 - The ceiling is the "wage ceiling" in section 2(89) of the Code (the EDLI Scheme applies "the wage ceiling specified in clause (89) of section 2 of the Code").
 
 ### Pension share (Employees' Pension Scheme 2026, paragraph 4)
 
 - The pension share comes out of the applicable employer contribution. The balance stays in the provident fund account.
-- The pension share is on wages up to the wage ceiling only. Where the wage is above the ceiling, the employer's and the Central Government's pension contributions are limited to the amount on the ceiling.
+- The pension share is on wages up to the wage ceiling. Pension Scheme paragraph 4 and the employer FAQ use 8.33%. S.O. 3580(E) specifies eight and one-third per cent. If those expressions produce different whole-rupee contributions for the actual wages, confirm the applicable figure before remittance. [S.O. 3580(E)](https://egazette.gov.in/WriteReadData/2026/274111.pdf#page=2) · [EPFO employer FAQ](https://unifiedportal-emp.epfindia.gov.in/epfo/)
 - The higher pension share applies only to members who exercised the joint option under paragraph 11 of the old 1995 scheme and were found eligible. Do not read the "fifteen thousand rupees" in that rule as the general wage ceiling.
 - The pension share is rounded to the nearest rupee, fifty paise up (paragraph 4(3)), and remitted within fifteen days of the close of every month, with the cost of remittance borne by the employer (paragraph 4(1)).
 
 ### EDLI (Employees' Deposit-Linked Insurance Scheme 2026)
 
 - Only the employer pays EDLI. It may not deduct the contribution from wages or recover it from the employee (paragraph 8).
-- The contribution is on section 2(88) wages up to the wage ceiling (paragraph 5(1)), at the notified rate (not read). The earlier fixed rate is not stated here.
+- The employer contributes 0.5% of section 2(88) wages up to the wage ceiling under paragraph 5(1). S.O. 3581(E) states 29 June 2026 as its effective date. Check the saved earlier instrument for an earlier wage month. [S.O. 3581(E)](https://egazette.gov.in/WriteReadData/2026/274104.pdf#page=2)
 - Paragraph 21(4) measures the 12 months before the month of death and disregards a 60-day gap between employment spells for the qualifying service test. The assurance benefit uses the wage and balance formula or the balance-based benefit in paragraph 21(1), whichever is higher. Leave claims to the EPFO.
 
 ### Administrative charges
 
-The EPF Scheme 2026 makes the employer pay "administrative charges or other fees or charges" with the contributions (paragraph 20(1)) and extra administrative charges on wages above the ceiling where there is a joint option (paragraph 9(4)) or voluntary contributions (paragraph 19(3)). It does not print the rate. Take the current rate from the EPFO portal.
+The ordinary employer administrative charge is 0.5% of applicable wages. Apply the minimum across the establishment for each month. The EPFO FAQ gives 500 rupees if there is a contributing member and 75 rupees if there is no active contributory member that month. Apply the higher-wage rules in paragraphs 9(4) and 19(3) where an option or voluntary contributions affect the base. Check applicable exemption-specific fees separately. [EPFO employer FAQ, Q13](https://unifiedportal-emp.epfindia.gov.in/epfo/)
 
 ### ESI (Social Security (Central) Rules 2026, rule 19)
 
@@ -222,7 +224,7 @@ No allowed page prints the number of social security agreements, so none is give
 
 ## Two worked examples that recompute
 
-All wages are hypothetical section 2(88) wages with no exclusions above one-half. EDLI and administrative charges are left out because their rates are notified and not read: add them from the EPFO portal.
+The examples use hypothetical section 2(88) wages with no exclusions above one-half. They show EPF, EPS and ESI before employer EDLI and administration charges. In Example 1, ordinary EDLI adds 60 rupees and the employee's wages contribute 60 rupees to the establishment's percentage-based administrative charge. Apply the monthly floor to the total establishment charge.
 
 ### Example 1: Employee on 12,000 rupees a month, in both EPF and ESI
 
@@ -298,9 +300,9 @@ expected:
 
 ### When to refuse or refer
 
-- Which provident fund rate governed a month from 21 November 2025 until the EPF Scheme 2026: section 16(1)(a) of the Code prints ten per cent with twelve per cent only for notified establishments, while paragraph 18(2) of the 2026 Scheme prints twelve per cent with ten per cent for a notified class. No notification under the first proviso to section 16(1)(a) was read. Refer any dispute about the rate for those months.
+- A disputed S.O. 3582(E) establishment classification or a case where the Pension Scheme and notified EPS rates produce different rounded results.
 - An EPF month before 29 May 2026 that needs an earlier ceiling.
-- A computation requiring an unverified EPF administrative charge, EDLI rate or notification identifying the 10% establishment class.
+- Exemption-specific fees or a contribution governed by an earlier notification that still needs checking.
 - International Workers: whether the wage ceiling exclusion applies to them, totalisation and detachment under a specific agreement, and withdrawals on leaving India.
 - ESI coverage at the start of a contribution period or after pay changes. Check wage components, the date the worker first qualified and the applicable ceiling.
 - Exempted PF trusts (section 143), damages waivers under an insolvency plan, VISHWAS, 2026 cases, and any EPFO inquiry under section 125 or appeal.
@@ -341,7 +343,11 @@ expected:
 | Read for Ministry of Labour FAQ of 16 March 2026, replies 7 and 12 (wages definition from 21 November 2025, ESI limit of Rs 21,000) | https://www.labour.gov.in/static/uploads/2026/03/a4ccf4c6d97c4f1f36a6d83f8c64213d.pdf | 2026-11-14 |
 | Read for the government backgrounder on the Labour Codes of 21 November 2025 (ESI opt-in below 10 employees) | https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251121701501.pdf | 2026-11-14 |
 | Read for the government backgrounder on the Code on Social Security of 22 November 2025 (50% add-back, 25% appeal deposit, EPF for all establishments with 20 or more) | https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251122702601.pdf | 2026-11-14 |
+| S.O. 3582(E), ordinary EPF rate, excluded establishments and deemed effective date, read in the original Gazette PDF | https://egazette.gov.in/WriteReadData/2026/274112.pdf#page=2 | 2026-11-24 |
+| S.O. 3581(E), ordinary EDLI contribution rate and effective date, read in the original Gazette PDF | https://egazette.gov.in/WriteReadData/2026/274104.pdf#page=2 | 2026-11-24 |
+| S.O. 3580(E), wording of ordinary pension contribution rate, read in the original Gazette PDF | https://egazette.gov.in/WriteReadData/2026/274111.pdf#page=2 | 2026-11-24 |
+| EPFO public employer portal, September 2026 wage-ceiling FAQ Q7 and Q13, read the PDF after opening the portal | https://unifiedportal-emp.epfindia.gov.in/epfo/ | 2026-11-24 |
 | EPFO employer pages (tried for the administrative charge and EDLI rate) | https://www.epfindia.gov.in/site_en/For_Employers.php | Refused (403) on 2026-11-14, not read |
 | ESIC contribution page (tried for the payment due date and ESI ceiling) | https://www.esic.gov.in/contribution | Timed out on 2026-11-14, not read |
 
-Verify the EPF ceiling before 29 May 2026, the applicable EPF administrative charge and minimum, the notified EDLI rate and any establishment-class notification for the 10% EPF rate. Check the relevant exemption order or any special campaign extension before relying on it.
+Verify the EPF ceiling before 29 May 2026, any earlier EDLI instrument needed for the wage month, the precise EPS rate where the published expressions affect rounding, and any exemption-specific fees or campaign extension.
