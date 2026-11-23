@@ -136,18 +136,20 @@ Both cases are made up for illustration.
   - 240 employees on staff all year, each paid for well over 500 hours (some of them partly worked in Oregon).
   - 30 part-time field representatives, each paid for 300 hours worked in California, 140 hours worked in Arizona, 40 hours of paid travel time and 40 hours of vacation during employment: 520 hours.
   - 10 part-time employees, each paid for exactly 500 hours.
+  - 4 part-time employees, each paid for 500.5 hours.
   - 25 seasonal workers, each paid for 480 hours.
   - 12 employees terminated mid-year, each paid for 450 hours worked, plus vacation paid out on leaving.
   - 8 employees who worked 1,800 hours each at the corporation's California plant but were reported to Nevada's EDD.
 - **Count:**
   - The 240 count on total hours paid.
   - The 30 field representatives count: 300 + 140 + 40 + 40 = 520 hours, more than 500. Counting only their 300 California hours would wrongly exclude them; CDTFA says not to prorate.
-  - The 10 at exactly 500 hours do not count.
+  - The 10 at exactly 500 hours do not count: the test is more than 500.
+  - The 4 at 500.5 hours each count as one employee: anyone over 500 hours counts in full, however small the excess.
   - The 25 seasonal workers (480 hours) do not count.
   - The 12 terminated employees do not count: 450 hours, and the payout on leaving is excluded.
   - The 8 reported to Nevada's EDD are not employed in California under CDTFA's guidance.
-  - Qualifying employees: 240 + 30 = 270.
-- **Fee:** 270 falls in the 250 to 499 band: **USD 2,651**, due 1 March 2027.
+  - Qualifying employees: 240 + 30 + 4 = 274.
+- **Fee:** 274 falls in the 250 to 499 band: **USD 2,651**, due 1 March 2027.
 
 ```oa-check
 name: Environmental Fee employee count and 2026 fee, EDD reporting and total paid hours
@@ -160,6 +162,8 @@ inputs:
   rep_paid_leave_hours: 40
   exact_500_count: 10
   exact_500_hours: 500
+  just_over_count: 4
+  just_over_hours: 500.5
   seasonal_count: 25
   seasonal_hours: 480
   terminated_count: 12
@@ -170,23 +174,25 @@ inputs:
   fee_250_499: 2651
 steps:
   - rep_total_paid_hours: rep_hours_ca + rep_hours_out_of_state + rep_paid_travel_hours + rep_paid_leave_hours
-  - rep_counted: rep_count * min(1, max(0, rep_total_paid_hours - threshold_hours))
-  - rep_counted_if_prorated: rep_count * min(1, max(0, rep_hours_ca - threshold_hours))
-  - exact_500_counted: exact_500_count * min(1, max(0, exact_500_hours - threshold_hours))
-  - seasonal_counted: seasonal_count * min(1, max(0, seasonal_hours - threshold_hours))
-  - terminated_counted: terminated_count * min(1, max(0, terminated_hours_worked - threshold_hours))
+  - rep_counted: rep_count * min(1, ceil(max(0, rep_total_paid_hours - threshold_hours)))
+  - rep_counted_if_prorated: rep_count * min(1, ceil(max(0, rep_hours_ca - threshold_hours)))
+  - exact_500_counted: exact_500_count * min(1, ceil(max(0, exact_500_hours - threshold_hours)))
+  - just_over_counted: just_over_count * min(1, ceil(max(0, just_over_hours - threshold_hours)))
+  - seasonal_counted: seasonal_count * min(1, ceil(max(0, seasonal_hours - threshold_hours)))
+  - terminated_counted: terminated_count * min(1, ceil(max(0, terminated_hours_worked - threshold_hours)))
   - other_state_counted: other_state_edd_count * other_state_edd_counted_flag
-  - qualifying_employees: full_year_staff + rep_counted + exact_500_counted + seasonal_counted + terminated_counted + other_state_counted
+  - qualifying_employees: full_year_staff + rep_counted + exact_500_counted + just_over_counted + seasonal_counted + terminated_counted + other_state_counted
   - fee: fee_250_499
 expected:
   rep_total_paid_hours: 520
   rep_counted: 30
   rep_counted_if_prorated: 0
   exact_500_counted: 0
+  just_over_counted: 4
   seasonal_counted: 0
   terminated_counted: 0
   other_state_counted: 0
-  qualifying_employees: 270
+  qualifying_employees: 274
   fee: 2651
 ```
 
