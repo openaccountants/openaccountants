@@ -1,10 +1,10 @@
 ---
 name: bangladesh-vat
 description: "Bangladesh 2026 VAT/turnover-tax working papers, registration, classification, input-credit conditions and Mushak return preparation. Corrected current law replaces the old deterministic supplier-rate and form-part map."
-version: 2.1
+version: 2.2
 jurisdiction: BD
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -12,13 +12,13 @@ type: computation
 category: international
 ---
 
-# Bangladesh VAT and turnover tax working papers v2.1
+# Bangladesh VAT and turnover tax working papers v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Scope
 
-Standard VAT-registered and turnover-tax-enlisted businesses. Load vat-workflow-base for document ingestion and review architecture. This file prepares transaction and return working papers; sector relief/SROs, EPZ/SEZ, separate-BIN consolidation, supplementary duty, VDS agents and refund claims require specialist review. Rules below state the law read on 14 November 2026; older 2026 filing periods need their applicable versions.
+Standard VAT-registered and turnover-tax-enlisted businesses. Load vat-workflow-base for document ingestion and review architecture. This file prepares transaction and return working papers; sector relief/SROs, EPZ/SEZ, separate-BIN consolidation, supplementary duty, VDS agents and refund claims require specialist review. The filing rules reflect Act No. 113 of 2026, which applies from 1 October 2026. Check the law for earlier filing periods.
 
 ## Ask the client first
 
@@ -86,7 +86,7 @@ Retain questions for fuel/CNG (Padma Oil/Jamuna Oil), commercial versus passenge
 13. Normalize source bank dates, debit/credit signs, currency and Bangla/transliterated descriptions. CSV delimiter/date/column formats vary; common Date/Description/Debit/Credit/Balance columns are cues, not guaranteed DBBL/BRAC schemas. Match internal transfers across bank/bKash accounts, distinguish proprietor drawings from wages, and classify the underlying MFS payment. Use documented transaction-date currency conversion; no fixed USD/BDT rate is supplied.
 14. Keep a Transactions sheet with original line, date, counterparty, document reference, legal classification, net consideration, output VAT, eligible input VAT, import challan, adjustments and unresolved facts. Keep output and input in separate columns so a service-import row cannot disappear from a SUMIFS exact-text match.
 15. Build Return Summary by summing those controlled columns and reconciling net liability/credit, SD (where externally computed), adjustments and prior credit. Return Form contains reviewed amounts and actual current form fields. The old synthetic Part 1-12 mapping and `Part 2 + Part 6` string formula are not verified current Mushak boxes and must not be used as filing instructions.
-16. Current Rule 47, replaced by SRO 125 item 11 effective 1 July 2026, uses VAT-9.1 for registered manufacturers/service providers, VAT-9.1.1 for registered traders and VAT-9.2 for enlisted turnover-tax persons (https://nbr.gov.bd/uploads/sros/VAT_SRO-125.pdf). Use the actual current form at https://vat.gov.bd, confirm identity, registration, period and applicable output/input/adjustment fields, pay the amount due and retain challan/submission acknowledgement. The published 9.1.1 has taxpayer, submission, output, noncreditable local purchases, increasing/decreasing adjustment, net-tax, treasury-payment, closing and declaration parts; this is not a certified live portal field map.
+16. Rule 47(1), replaced by SRO 125 item 11 effective 1 July 2026, uses VAT-9.1 for registered manufacturers/service providers, VAT-9.1.1 for registered traders and VAT-9.2 for enlisted turnover-tax persons (https://nbr.gov.bd/uploads/sros/VAT_SRO-125.pdf). Apply Rule 47's submission, signature and verification requirements where applicable. Check any mandatory electronic filing order under section 64(4). Use the current form at https://vat.gov.bd, confirm identity, registration, period and applicable output/input/adjustment fields, pay the amount due and retain challan/submission acknowledgement. The published 9.1.1 has taxpayer, submission, output, noncreditable local purchases, increasing/decreasing adjustment, net-tax, treasury-payment, closing and declaration parts; this is not a certified live portal field map.
 
     **Dated form/statute inconsistency:** the July replacement 9.2 form prints a January-December annual period, but current section 2(30) defines a calendar-month tax period and the later October replacement section 64 requires each period's return with the 15-/20-day conditioned deadlines above. Retain that later statutory monthly rule. Do not infer an annual deadline from the printed form; resolve the current 9.2 portal/instruction implementation before submitting an enlisted person's return. Earlier periods and Board extensions need their applicable instrument.
 17. Escalate an unknown entity type, certificate/BIN, filing period, industry/exempt activity, export evidence or credit balance. The base workflow's materiality flags may prioritize review but do not turn unsourced old fixed red-flag amounts into statutory thresholds.
@@ -205,8 +205,8 @@ R-BD-1: do not claim input VAT for a turnover-tax filer. R-BD-2: refer EPZ/SEZ/b
 | Read for section 52 credit/debit-note conditions | https://bdlaws.minlaw.gov.bd/act-1106/section-42348.html | 2026-11-14 |
 | Read for section 63 turnover-tax fallback, fixed-amount power and no-credit rule | https://bdlaws.minlaw.gov.bd/act-1106/section-42359.html | 2026-11-14 |
 | Read for section 64 current deadlines and exceptions, effective October 2026 | https://bdlaws.minlaw.gov.bd/act-1106/section-42360.html | 2026-11-14 |
-| Read for VAT Rules 40-42 registers/ERP, invoice/adjustment/transfer/VDS document jobs; old Rule 47 superseded by SRO 125 | https://nbr.gov.bd/uploads/rules/Authentic_English_Text_VAT_Rules_2016.pdf | 2026-11-14 |
-
-| Read for SRO 125 replacement Rules 4-5, items 10-11 invoice/ERP and return populations, replacement forms 9.1.1/9.2 and 1 July commencement | https://nbr.gov.bd/uploads/sros/VAT_SRO-125.pdf | 2026-11-14 |
+| Read for VAT Rules 40-42 registers/ERP, invoice/adjustment/transfer/VDS documents and Rule 47 submission, signature and verification | https://nbr.gov.bd/uploads/rules/Authentic_English_Text_VAT_Rules_2016.pdf | 2026-11-24 |
+| Read for SRO 125 replacement Rules 4-5, item 10 invoice/ERP, item 11 replacement of Rule 47(1), forms 9.1.1/9.2 and 1 July commencement | https://nbr.gov.bd/uploads/sros/VAT_SRO-125.pdf | 2026-11-24 |
+| Read for Act No. 113 of 2026, sections 1-3, replacement of section 64 from 1 October 2026 and repeal and saving | https://www.dpp.gov.bd/upload_file/gazettes/63510_75719.pdf | 2026-11-24 |
 
 Not yet confirmed: Current activity-specific fixed turnover-tax notifications, reduced/truncated rates (old 5%, 7.5%, 10% labels are not assigned to a supply), First-Schedule/sector exemptions, telecom SD, live Mushak-9.1/9.1.1/9.2 fields and the printed 9.2 annual-period/current monthly-statute inconsistency, EFD notifications, bank-realization deadlines, historical filing periods, VAT penalties/interest, exact mixed-use/annual-adjustment method and currency conversion requirements. The old fixed red-flag values were workflow choices, not sourced legal thresholds; use explicit reviewer policy. No automatic bank/insurance/MFS exemption or input credit is certified.
