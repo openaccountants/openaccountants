@@ -3,7 +3,7 @@ name: ca-wildfire-mitigation-payment-exclusion
 description: >
   California exclusion from gross income for a "California qualified wildfire
   loss mitigation payment" under R&TC 17138.8 (personal income tax) and
-  24308.10 (corporation tax), as amended by SB 195 (Stats. 2026, Ch. 261, in
+  24308.10 (corporation tax, for C corporations filing Form 100), as amended by SB 195 (Stats. 2026, Ch. 261, in
   effect 18 September 2026). Covers who qualifies (the owner of the
   structure), which payments count (grants, rebates, direct assistance or other
   financial assistance through the California Wildfire Mitigation Financial
@@ -12,7 +12,8 @@ description: >
   (beginning on or after 1 January 2024 and before 1 January 2031), how to
   subtract an amount included in federal income on Schedule CA (540 or 540NR)
   line 8z column B, Form 100 line 15 or Schedule K (565 or 568) line 11b
-  column (c), FTB 4197 code WMP, and the open questions on back years, basis
+  column (c), FTB 4197 code WMP, S corporations and Form 100S referred to the
+  separate Form 100S guidance, and the open questions on back years, basis
   and non-residential structures. Not wildfire settlement payments, federal
   wildfire relief payments or earthquake mitigation payments. Trigger on
   "California wildfire mitigation grant taxable", "home hardening grant
@@ -22,7 +23,7 @@ version: 0.1
 jurisdiction: US-CA
 category: state-tax
 tax_year: 2026
-last_updated: 2026-11-23
+last_updated: 2026-11-22
 tier: 2
 domain: tax
 type: situation-rules
@@ -32,7 +33,7 @@ type: situation-rules
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-> **Source-cited draft.** Built from the chaptered text of SB 195 (Stats. 2026, Ch. 261) and the codified R&TC 17138.8, 24308.10 and 17131, Government Code 8654.2 to 8654.10 and Public Resources Code 91510, all in the official California Legislature bulk data archives; the pre-SB 195 text of R&TC 17138.8 and 24308.10 as added by SB 946 (Stats. 2024, Ch. 987), from the 2023-24 archive; the Franchise Tax Board's analysis of SB 195 (as amended 28 August 2026); and the FTB 2025 instructions for Schedule CA (540), Schedule CA (540NR), Form 100, Form 565, Form 568 and form FTB 4197. All were read on 2026-11-23. No accountant has reviewed it.
+> **Source-cited draft.** Built from the chaptered text of SB 195 (Stats. 2026, Ch. 261) and the codified R&TC 17138.8, 24308.10 and 17131, Government Code 8654.2 to 8654.10 and Public Resources Code 91510, all in the official California Legislature bulk data archives; the pre-SB 195 text of R&TC 17138.8 and 24308.10 as added by SB 946 (Stats. 2024, Ch. 987), from the 2023-24 archive; the Franchise Tax Board's analysis of SB 195 (as amended 28 August 2026); and the FTB 2025 instructions for Schedule CA (540), Schedule CA (540NR), Form 100, Form 100S (for the S corporation referral only), Form 540, Form 541, Form 565, Form 568 and form FTB 4197. All were read on 2026-11-22 (California, Pacific time). No accountant has reviewed it.
 
 **Answer first.**
 
@@ -48,11 +49,12 @@ type: situation-rules
   - FTB's analysis reads the changes as "operative for taxable years beginning on or after January 1, 2026" ([FTB analysis of SB 195](https://www.ftb.ca.gov/tax-pros/law/legislation/2025-2026/SB195-082826.pdf), p. 2).
 - **How it is claimed.** The exclusion is a California-only adjustment. If the amount was included in federal income, subtract it ([FTB 2025 Schedule CA (540) instructions](https://www.ftb.ca.gov/forms/2025/2025-540-ca-instructions.html); [FTB 2025 Form 100 booklet](https://www.ftb.ca.gov/forms/2025/2025-100-booklet.html)):
   - **Individuals:** Schedule CA (540 or 540NR), line 8z, column B.
-  - **Corporations:** Form 100, line 15.
+  - **C corporations:** Form 100, line 15.
   - **Partnerships and LLCs:** Schedule K (565 or 568), line 11b, column (c).
+  - **S corporations (Form 100S):** not covered; use the separate Form 100S guidance.
   - **Reporting:** also report it on form FTB 4197 with code **WMP**, amount in column (e) ([FTB 4197 instructions](https://www.ftb.ca.gov/forms/2025/2025-4197-instructions.pdf)).
 
-**Tax year.** Tax year 2026. SB 195 took effect immediately as a bill related to the budget (SEC. 4), and the codified sections read "Effective September 18, 2026". The exclusion covers taxable years beginning on or after 1 January 2024 and before 1 January 2031. Both sections are repealed on 1 December 2031 (R&TC 17138.8(d); 24308.10(c)). FTB's analysis treats the SB 195 changes as operative for taxable years beginning on or after 1 January 2026, so the worked cases use 2026. Years beginning in 2024 and 2025 are covered by the SB 946 wording; see the AUDIT FLASH POINT on back years. The FTB forms and instructions cited here are the 2025 versions, which describe the pre-SB 195 rule (one program, years before 2029); the 2026 versions were not yet published (404 on 2026-11-23).
+**Tax year.** Tax year 2026. SB 195 took effect immediately as a bill related to the budget (SEC. 4), and the codified sections read "Effective September 18, 2026". The exclusion covers taxable years beginning on or after 1 January 2024 and before 1 January 2031. Both sections are repealed on 1 December 2031 (R&TC 17138.8(d); 24308.10(c)). FTB's analysis treats the SB 195 changes as operative for taxable years beginning on or after 1 January 2026, so the worked cases use 2026. Years beginning in 2024 and 2025 are covered by the SB 946 wording; see the AUDIT FLASH POINT on back years. The FTB forms and instructions cited here are the 2025 versions, which describe the pre-SB 195 rule (one program, years before 2029); the 2026 versions were not yet published (404 on 2026-11-22).
 
 **Circular 230 disclosure.** This material is general information, not written advice on a specific transaction under 31 CFR 10.37. It is not intended to be used, and cannot be used, to avoid penalties.
 
@@ -61,7 +63,9 @@ type: situation-rules
 In scope:
 
 - **Individuals, estates and trusts** (Personal Income Tax Law, R&TC 17138.8) that own a structure and received a qualifying payment. For estates and trusts, the 2025 Form 541 booklet lists the FTB 4197 reporting item but gives no line for the subtraction; refer the Form 541 line.
-- **Corporations** (Corporation Tax Law, R&TC 24308.10) that own a structure and received a qualifying payment.
+- **C corporations filing Form 100** (Corporation Tax Law, R&TC 24308.10) that own a structure and received a qualifying payment.
+
+Not covered: **S corporations**. R&TC 24308.10 is part of the Corporation Tax Law, and FTB's 2025 Form 100S booklet carries its own Wildfire Mitigation Payment instructions, but this skill does not cover the S corporation return or how the item reaches shareholders. Refer S corporations and Form 100S to the separate Form 100S guidance.
 - **Partnerships and LLCs** that report the exclusion on Schedule K (565 or 568), following the FTB instructions.
 
 The job: decide whether a payment is a California qualified wildfire loss mitigation payment received by a qualified taxpayer in a covered year, then make the California adjustment and the FTB 4197 report.
@@ -75,7 +79,9 @@ Out of scope, and where it goes:
 | Earthquake loss mitigation payments from the California Residential Mitigation Program or California Earthquake Authority | refer; FTB Schedule CA (540) instructions, line 8z |
 | Federal income tax treatment of the payment (including IRC 139) | refer; this skill does not decide it |
 | Casualty losses after a fire | refer |
-| Form 100S lines; the Form 541 line for estates and trusts (not stated in the 2025 Form 541 booklet) | not covered here; refer |
+| S corporations: the Form 100S lines and the shareholder pass-through of the exclusion (FTB's 2025 Form 100S booklet has its own Wildfire Mitigation Payment items) | refer to the separate Form 100S guidance |
+| Water's-edge filers (Form 100W) | refer; Form 100W instructions not read |
+| The Form 541 line for estates and trusts (not stated in the 2025 Form 541 booklet) | refer |
 | Property tax, defensible space inspections and local fire rules | refer (local) |
 
 ## Ask the client first
@@ -104,7 +110,7 @@ Out of scope, and where it goes:
 | California Wildfire Mitigation Financial Assistance Program sunset | 1 July 2029 | "This article shall remain in effect only until July 1, 2029"; operation "contingent upon an appropriation" | [Gov. Code 8654.10 (archive entry LAW_SECTION_TBL_70760.lob)](https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip) |
 | Repeal of the exclusion sections | 1 December 2031 | "shall remain in effect only until December 1, 2031, and as of that date is repealed" | [R&TC 17138.8(d), 24308.10(c)](https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip) |
 | Individual return line | Schedule CA (540), Part I, Section B, line 8z, column B; Schedule CA (540NR), Part II, Section B, line 8z, column B | "If any qualified amount was included as income for federal purposes, enter the amount on line 8z, column B" (2025 instructions) | [FTB 2025 Schedule CA (540) instructions](https://www.ftb.ca.gov/forms/2025/2025-540-ca-instructions.html); [FTB 2025 Schedule CA (540NR) instructions](https://www.ftb.ca.gov/forms/2025/2025-540nr-ca-instructions.html) |
-| Corporation return line | Form 100, line 15 (other deductions) | "If the corporation included any amount as income for federal purposes, deduct the amount on line 15" (2025 booklet) | [FTB 2025 Form 100 booklet](https://www.ftb.ca.gov/forms/2025/2025-100-booklet.html) |
+| C corporation return line | Form 100, line 15 (other deductions) | "If the corporation included any amount as income for federal purposes, deduct the amount on line 15" (2025 booklet) | [FTB 2025 Form 100 booklet](https://www.ftb.ca.gov/forms/2025/2025-100-booklet.html) |
 | Partnership and LLC line | Schedule K (565 or 568), line 11b, column (c) | "exclude that amount for California purposes on line 11b, column (c)", in the Schedule K (565) and Schedule K (568) specific line instructions for income (2025 booklets) | [FTB 2025 Form 565 booklet](https://www.ftb.ca.gov/forms/2025/2025-565-booklet.html); [FTB 2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html) |
 | Tax expenditure report | FTB 4197, Part I, code WMP, amount in column (e) | "Wildfire Mitigation Payment WMP Enter amount in column (e) – Exclusions"; complete columns (a) and (e) only | [FTB 2025 FTB 4197 instructions](https://www.ftb.ca.gov/forms/2025/2025-4197-instructions.pdf) |
 
@@ -120,7 +126,8 @@ Out of scope, and where it goes:
 5. **Find what was included federally.** The FTB lines move only amounts "included as income for federal purposes". If nothing was included in federal income, there is nothing to subtract. This skill does not decide whether federal law includes or excludes the payment.
 6. **Subtract it on the right line** (2025 FTB instructions; check the 2026 versions when published):
    - **Individuals:** Schedule CA, line 8z, column B.
-   - **Corporations:** Form 100, line 15.
+   - **C corporations:** Form 100, line 15.
+   - **S corporations:** refer to the separate Form 100S guidance.
    - **Partnerships and LLCs:** Schedule K, line 11b, column (c).
 7. **Report it.** Complete FTB 4197 Part I, column (a) "WMP" and column (e) the amount excluded, and attach it to the return.
 
@@ -143,8 +150,9 @@ Out of scope, and where it goes:
 | County or nonprofit pays a homeowner with PRC 91510 Home Hardening money | Likely through the program; confirm the funding source; see Not yet confirmed | R&TC 17138.8(b)(1)(B); PRC 91510(a) |
 | Tenant receives assistance for the building it rents | Not a qualified taxpayer | R&TC 17138.8(b)(2) |
 | Contractor paid by the program to do the work | Not a qualified taxpayer | R&TC 17138.8(b)(2) |
-| Corporation owns an apartment building and receives program assistance, 2026 | Excluded under R&TC 24308.10; deduct on Form 100 line 15 if included federally | R&TC 24308.10; FTB 2025 Form 100 booklet |
+| C corporation (Form 100) owns an apartment building and receives program assistance, 2026 | Excluded under R&TC 24308.10; deduct on Form 100 line 15 if included federally | R&TC 24308.10; FTB 2025 Form 100 booklet |
 | Commercial building owner receives program assistance | Unsettled; refer | R&TC 17138.8(b)(1), (b)(3) |
+| S corporation receives program assistance | Out of scope; refer to the separate Form 100S guidance | FTB 2025 Form 100S booklet |
 | Payment not included in federal income | No California subtraction needed | FTB 2025 Schedule CA (540) instructions |
 | Fiscal year beginning 1 July 2030 | Covered | R&TC 17138.8(a) |
 | Taxable year beginning 1 January 2031 | Not covered | R&TC 17138.8(a) |
@@ -187,7 +195,7 @@ expected:
   ftb_4197_column_e: 12000
 ```
 
-**Case 2: corporation owning an apartment building, 2026.**
+**Case 2: C corporation (Form 100) owning an apartment building, 2026.**
 
 - **Facts:** a calendar-year C corporation owns a 12-unit apartment building. In 2026:
   - It receives USD 40,000 of structure-hardening assistance through the California Wildfire Mitigation Financial Assistance Program (Gov. Code Article 16.5) for new ember-resistant vents and exterior materials on the building.
@@ -201,7 +209,7 @@ expected:
 - **FTB 4197:** the corporation reports WMP, column (e) USD 40,000.
 
 ```oa-check
-name: Corporation 2026, program assistance deducted on Form 100 line 15, tenant not qualified
+name: C corporation 2026, program assistance deducted on Form 100 line 15, tenant not qualified
 inputs:
   program_assistance_to_owner: 40000
   program_assistance_to_tenant: 3000
@@ -225,6 +233,7 @@ expected:
 - **Back years.** Any 2024 or 2025 claim that relies on the Proposition 4 program or the wider SB 195 definition.
 - **Basis and deductions.** Any question about adding grant-funded work to basis, depreciating it, or deducting it.
 - **Commercial and public structures.** Payments for non-residential structures.
+- **S corporations.** Any S corporation or Form 100S question: refer to the separate Form 100S guidance.
 - **Owner and recipient differ.** Tenants, contractors, pass-through grantees, or a structure held in a trust or entity different from the recipient.
 - **Federal treatment.** Whether the payment is excluded federally (for example under IRC 139). Refer.
 - **Look-alike payments.** Wildfire settlement payments, federal wildfire relief payments and earthquake mitigation payments (out-of-scope table).
@@ -234,7 +243,7 @@ expected:
 
 - **No separate filing.** The exclusion is claimed on the annual return for the year the payment was received:
   - Form 540 or 540NR with Schedule CA, line 8z, column B;
-  - Form 100, line 15;
+  - Form 100, line 15 (C corporations; S corporations use the separate Form 100S guidance);
   - Form 565 or 568, Schedule K, line 11b, column (c) (2025 FTB instructions).
 - **FTB 4197.** Attach FTB 4197 with code WMP and the amount in column (e). The 2025 instructions list individuals, C corporations including water's-edge filers, S corporations, exempt organizations, estates or trusts, partnerships and LLCs as filers for this item.
 - **Records.** Keep the award letter, proof of payment and receipt, the owner's title or deed, and invoices for the work.
@@ -253,21 +262,24 @@ expected:
 
 ## Sources
 
+Read dates are California (Pacific time) local dates: all sources for this skill were opened on 22 November 2026, Pacific time.
+
 | Source | URL | Read on |
 | --- | --- | --- |
-| SB 195 (Committee on Budget and Fiscal Review), chaptered text, Stats. 2026, Ch. 261, approved and chaptered 18 September 2026, from the official California Legislature bulk data archive (version 20250SB19596CHP, entry BILL_VERSION_TBL_18674.lob; bill status table: Chaptered, 2026, Chapter 261). Read in full: SEC. 1 (R&TC 17138.8), SEC. 2 (R&TC 24308.10), SEC. 3 (USD 10,000 appropriation), SEC. 4 (immediate effect), and the Legislative Counsel's Digest. | https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip | 2026-11-23 |
-| Same archive, codified law table. Read for the codified text and history line of R&TC 17138.8 ("Amended by Stats. 2026, Ch. 261, Sec. 1. (SB 195) Effective September 18, 2026", LAW_SECTION_TBL_123487.lob); R&TC 24308.10 (Sec. 2, LAW_SECTION_TBL_149429.lob, text read in full); R&TC 17131 (LAW_SECTION_TBL_123677.lob); Gov. Code 8654.2 (LAW_SECTION_TBL_10996.lob), 8654.3 (71240), 8654.4 (70632) and 8654.10 (70760); PRC 91510 (LAW_SECTION_TBL_42037.lob). | https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip | 2026-11-23 |
-| California Legislature bulk data archive for 2023-24, codified law table. Read for R&TC 17138.8 and 24308.10 as added by SB 946 (Stats. 2024, Ch. 987, "Effective September 29, 2024"; LAW_SECTION_TBL_67499.lob and LAW_SECTION_TBL_108138.lob): the pre-SB 195 definition and the end date before 2029. | https://downloads.leginfo.legislature.ca.gov/pubinfo_2023.zip | 2026-11-23 |
-| Franchise Tax Board, Bill Analysis of SB 195, as amended 28 August 2026 (the last amendment before the bill passed on 31 August and was enrolled on 4 September 2026, per the archive's version history). Read in full, for the summary, analysis, effective and operative date, federal and state law, technical and policy considerations (double benefit through basis), legislative history (SB 946), program background, revenue estimate. Linked from FTB's Senate bill analyses page. | https://www.ftb.ca.gov/tax-pros/law/legislation/2025-2026/SB195-082826.pdf | 2026-11-23 |
-| FTB, 2025 Instructions for Schedule CA (540). Read for the "Wildfire Mitigation Payment" general information item and the Part I, Section B, line 8z items for wildfire mitigation payments, wildfire disaster settlements, federal wildfire relief payments and earthquake loss mitigation. | https://www.ftb.ca.gov/forms/2025/2025-540-ca-instructions.html | 2026-11-23 |
-| FTB, 2025 Instructions for Schedule CA (540NR). Read for the same items (Part II, Section B, line 8z). | https://www.ftb.ca.gov/forms/2025/2025-540nr-ca-instructions.html | 2026-11-23 |
-| FTB, 2025 Form 100 booklet. Read for "Line 15 – Other deductions" (Wildfire Mitigation Payment) and the R&TC 41 reporting list. | https://www.ftb.ca.gov/forms/2025/2025-100-booklet.html | 2026-11-23 |
-| FTB, 2025 Form 565 and Form 568 booklets. Read for the Wildfire Mitigation Payment item (Schedule K, line 11b, column (c)) and the R&TC 41 reporting list. The 565 booklet's list gives the start as taxable years beginning on or after 1 January 2025; the statute and the 568 booklet say 2024. | https://www.ftb.ca.gov/forms/2025/2025-565-booklet.html; https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html | 2026-11-23 |
-| FTB, 2025 Form 540 booklet. Read for the R&TC 41 reporting requirement list (FTB 4197). | https://www.ftb.ca.gov/forms/2025/2025-540-booklet.html | 2026-11-23 |
-| FTB, 2025 Form 541 booklet. Read for the R&TC 41 reporting list (wildfire mitigation payment listed); no line instruction for the subtraction was found. | https://www.ftb.ca.gov/forms/2025/2025-541-booklet.html | 2026-11-23 |
-| FTB, 2025 form FTB 4197 and its instructions. Read for who should file, code WMP, column (e). | https://www.ftb.ca.gov/forms/2025/2025-4197.pdf; https://www.ftb.ca.gov/forms/2025/2025-4197-instructions.pdf | 2026-11-23 |
-| leginfo.legislature.ca.gov, SB 195 bill status page. Secondary reference only: returned a security check page (HTTP 403) to a direct request on 2026-11-23, not bypassed. Not read. | https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB195 | not read |
+| SB 195 (Committee on Budget and Fiscal Review), chaptered text, Stats. 2026, Ch. 261, approved and chaptered 18 September 2026, from the official California Legislature bulk data archive (version 20250SB19596CHP, entry BILL_VERSION_TBL_18674.lob; bill status table: Chaptered, 2026, Chapter 261). Read in full: SEC. 1 (R&TC 17138.8), SEC. 2 (R&TC 24308.10), SEC. 3 (USD 10,000 appropriation), SEC. 4 (immediate effect), and the Legislative Counsel's Digest. | https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip | 2026-11-22 |
+| Same archive, codified law table. Read for the codified text and history line of R&TC 17138.8 ("Amended by Stats. 2026, Ch. 261, Sec. 1. (SB 195) Effective September 18, 2026", LAW_SECTION_TBL_123487.lob); R&TC 24308.10 (Sec. 2, LAW_SECTION_TBL_149429.lob, text read in full); R&TC 17131 (LAW_SECTION_TBL_123677.lob); Gov. Code 8654.2 (LAW_SECTION_TBL_10996.lob), 8654.3 (71240), 8654.4 (70632) and 8654.10 (70760); PRC 91510 (LAW_SECTION_TBL_42037.lob). | https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip | 2026-11-22 |
+| California Legislature bulk data archive for 2023-24, codified law table. Read for R&TC 17138.8 and 24308.10 as added by SB 946 (Stats. 2024, Ch. 987, "Effective September 29, 2024"; LAW_SECTION_TBL_67499.lob and LAW_SECTION_TBL_108138.lob): the pre-SB 195 definition and the end date before 2029. | https://downloads.leginfo.legislature.ca.gov/pubinfo_2023.zip | 2026-11-22 |
+| Franchise Tax Board, Bill Analysis of SB 195, as amended 28 August 2026 (the last amendment before the bill passed on 31 August and was enrolled on 4 September 2026, per the archive's version history). Read in full, for the summary, analysis, effective and operative date, federal and state law, technical and policy considerations (double benefit through basis), legislative history (SB 946), program background, revenue estimate. Linked from FTB's Senate bill analyses page. | https://www.ftb.ca.gov/tax-pros/law/legislation/2025-2026/SB195-082826.pdf | 2026-11-22 |
+| FTB, 2025 Instructions for Schedule CA (540). Read for the "Wildfire Mitigation Payment" general information item and the Part I, Section B, line 8z items for wildfire mitigation payments, wildfire disaster settlements, federal wildfire relief payments and earthquake loss mitigation. | https://www.ftb.ca.gov/forms/2025/2025-540-ca-instructions.html | 2026-11-22 |
+| FTB, 2025 Instructions for Schedule CA (540NR). Read for the same items (Part II, Section B, line 8z). | https://www.ftb.ca.gov/forms/2025/2025-540nr-ca-instructions.html | 2026-11-22 |
+| FTB, 2025 Form 100 booklet. Read for "Line 15 – Other deductions" (Wildfire Mitigation Payment) and the R&TC 41 reporting list. | https://www.ftb.ca.gov/forms/2025/2025-100-booklet.html | 2026-11-22 |
+| FTB, 2025 Form 565 and Form 568 booklets. Read for the Wildfire Mitigation Payment item (Schedule K, line 11b, column (c)) and the R&TC 41 reporting list. The 565 booklet's list gives the start as taxable years beginning on or after 1 January 2025; the statute and the 568 booklet say 2024. | https://www.ftb.ca.gov/forms/2025/2025-565-booklet.html; https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html | 2026-11-22 |
+| FTB, 2025 Form 100S booklet. Read for the Wildfire Mitigation Payment items and the R&TC 41 reporting list, only to confirm that FTB addresses S corporations separately; no Form 100S line is given in this skill. | https://www.ftb.ca.gov/forms/2025/2025-100s-booklet.html | 2026-11-22 |
+| FTB, 2025 Form 540 booklet. Read for the R&TC 41 reporting requirement list (FTB 4197). | https://www.ftb.ca.gov/forms/2025/2025-540-booklet.html | 2026-11-22 |
+| FTB, 2025 Form 541 booklet. Read for the R&TC 41 reporting list (wildfire mitigation payment listed); no line instruction for the subtraction was found. | https://www.ftb.ca.gov/forms/2025/2025-541-booklet.html | 2026-11-22 |
+| FTB, 2025 form FTB 4197 and its instructions. Read for who should file, code WMP, column (e). | https://www.ftb.ca.gov/forms/2025/2025-4197.pdf; https://www.ftb.ca.gov/forms/2025/2025-4197-instructions.pdf | 2026-11-22 |
+| leginfo.legislature.ca.gov, SB 195 bill status page. Secondary reference only: returned a security check page (HTTP 403) to a direct request on 2026-11-22, not bypassed. Not read. | https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB195 | not read |
 
-Not yet confirmed: whether the SB 195 definition (including the Proposition 4 program) applies to taxable years beginning in 2024 and 2025 (the statute has no separate applicability clause; FTB's analysis reads the changes as operative from 2026); the federal income tax treatment of these payments, including IRC 139 (not read), so both worked cases assume federal inclusion; whether California basis must exclude, or deductions must be denied for, costs paid with an excluded payment (the sections read are silent; FTB flags a possible double benefit); whether payments for non-residential structures qualify after SB 195; whether payments under PRC 91510 paragraphs (1) to (3), rather than (4), can reach a structure owner as a qualifying payment; the 2026 FTB forms and instructions (not yet published on 2026-11-23); whether amounts that a program pays directly to a contractor count as "received by" the owner (FTB's line instructions refer to amounts included in income, and the statute says "any amount received"); how the exclusion applies when the payment funds work on a structure owned by a different person from the applicant; whether PRC 91510 money delivered by a local agency, joint powers authority or nonprofit counts as received "through" the program in every case; whether FTB 4197 must be filed when the payment was not included in federal income (the 2025 instructions do not say); and the Form 541 line for estates and trusts.
+Not yet confirmed: whether the SB 195 definition (including the Proposition 4 program) applies to taxable years beginning in 2024 and 2025 (the statute has no separate applicability clause; FTB's analysis reads the changes as operative from 2026); the federal income tax treatment of these payments, including IRC 139 (not read), so both worked cases assume federal inclusion; whether California basis must exclude, or deductions must be denied for, costs paid with an excluded payment (the sections read are silent; FTB flags a possible double benefit); whether payments for non-residential structures qualify after SB 195; whether payments under PRC 91510 paragraphs (1) to (3), rather than (4), can reach a structure owner as a qualifying payment; the 2026 FTB forms and instructions (not yet published on 2026-11-22); whether amounts that a program pays directly to a contractor count as "received by" the owner (FTB's line instructions refer to amounts included in income, and the statute says "any amount received"); how the exclusion applies when the payment funds work on a structure owned by a different person from the applicant; whether PRC 91510 money delivered by a local agency, joint powers authority or nonprofit counts as received "through" the program in every case; whether FTB 4197 must be filed when the payment was not included in federal income (the 2025 instructions do not say); and the Form 541 line for estates and trusts.
 
 **Disclaimer.** This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon. The most up-to-date version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com).
