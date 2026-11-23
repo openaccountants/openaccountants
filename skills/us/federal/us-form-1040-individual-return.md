@@ -674,11 +674,11 @@ Student loan interest paid: $1,800
 | 7 | Capital gains (Schedule D: $5,000 LT + $1,200 ST = $6,200) | $6,200 |
 | 9 | Total income | $105,250 |
 | 10 | Eligible HSA $4,300; student-loan interest deduction $0 | $4,300 [I](https://www.irs.gov/instructions/i1040gi). |
-| 11 | AGI | $100,950 |
+| 11 | AGI | $100,950  [2025 instructions](https://www.irs.gov/instructions/i1040gi) |
 | 12 | Standard deduction | $15,750 |
 | 13 | QBI | 0 |
 | 14 | Sum | $15,750 |
-| 15 | Taxable income | $85,200 |
+| 15 | Taxable income | $85,200  [2025 instructions](https://www.irs.gov/instructions/i1040gi) |
 
 - **Tax computation (Qualified Dividends and Capital Gain Tax Worksheet)** — Preserve all supplied income, contribution and withholding facts and assume eligible HSA/qualified-dividend treatment. Student-loan MAGI is $105,250 − $4,300 = $100,950, above the $100,000 single phaseout endpoint: no deduction for the $1,800 paid. AGI $100,950 less $15,750 gives taxable income $85,200. Ordinary portion = $85,200 − $5,000 LTCG − $2,800 qualified dividends = $77,400. The 2025 Single Tax Table row $77,400–$77,450 gives $11,948; add $7,800 × 15% = $1,170. Tax is $13,118; subtract $12,400 withholding: $718 owed. [I](https://www.irs.gov/instructions/i1040gi).
 
@@ -686,13 +686,13 @@ Student loan interest paid: $1,800
 
 | Line | Item | Amount |
 | --- | --- | --- |
-| 16 | Tax | $13,118 |
-| 22 | Total tax before other | $13,118 |
+| 16 | Tax | $13,118  [2025 instructions](https://www.irs.gov/instructions/i1040gi) |
+| 22 | Total tax before other | $13,118  [2025 instructions](https://www.irs.gov/instructions/i1040gi) |
 | 23 | Other taxes (Schedule 2) | 0 |
-| 24 | Total tax | $13,118 |
+| 24 | Total tax | $13,118  [2025 instructions](https://www.irs.gov/instructions/i1040gi) |
 | 25a | Withholding W-2 | $12,400 |
 | 33 | Total payments | $12,400 |
-| 37 | Amount owed | **$718** |
+| 37 | Amount owed | **$718**  [2025 instructions](https://www.irs.gov/instructions/i1040gi) |
 
 - **NIIT check Example A** — AGI $100,950 < $200k threshold — no NIIT  _(§1411)_
 
@@ -818,11 +818,11 @@ Federal withholding: $4,200 from pension; $2,800 from IRA
 
 | Line | Item | Amount |
 | --- | --- | --- |
-| 16 | Tax | $4,157 |
-| 24 | Total tax | $4,157 |
+| 16 | Tax | $4,157  [2025 instructions](https://www.irs.gov/instructions/i1040gi) |
+| 24 | Total tax | $4,157  [2025 instructions](https://www.irs.gov/instructions/i1040gi) |
 | 25b | 1099 withholding | $7,000 |
 | 33 | Total payments | $7,000 |
-| 34 | Overpayment | **$2,843 refund** |
+| 34 | Overpayment | **$2,843 refund**  [2025 instructions](https://www.irs.gov/instructions/i1040gi) |
 
 - **NIIT and RMD checks Example C** — NIIT check: AGI $72,300 < $200k — none. RMD check: Walter is 73, RMD age (73 under SECURE 2.0 §107 for those born 1951-1959) — confirm full RMD was satisfied. The $10,000 QCD counts toward RMD (§408(d)(8)(B)).  _(SECURE 2.0 §107; §408(d)(8)(B))_
 
@@ -855,15 +855,15 @@ ISO exercise-and-hold: exercised 4,000 incentive stock options (strike $3, FMV $
 | --- | --- | --- |
 | 1 | Taxable income (Form 1040 line 15) | $216,094 |
 | 2a | Standard deduction add-back | $15,750 |
-| 2i | ISO exercise adjustment — 4,000 × ($28 − $3), §56(b)(3) | $100,000 |
+| 2i | ISO exercise adjustment — 4,000 × ($28 − $3), §56(b)(3) | $100,000  [2025 Form 6251](https://www.irs.gov/pub/irs-pdf/f6251.pdf) |
 | 4 | AMTI | $331,844 |
 | 5 | AMT exemption (single $88,100; AMTI below $626,350 phaseout → full) | ($88,100) |
 | 6 | Base | $243,744 |
-| 7 | AMT computation before AMT foreign tax credit (none assumed) | $58,643 |
-| 8 | AMT foreign tax credit (none in supplied facts) | $0 |
-| 9 | Tentative minimum tax ($200,744 × 26% + $43,000 LTCG × 15%) | $58,643 |
-| 10 | Regular tax | $40,840 |
-| 11 | AMT — to Schedule 2, line 2 | $17,803 |
+| 7 | AMT computation before AMT foreign tax credit (none assumed) | $58,643  [2025 Form 6251](https://www.irs.gov/pub/irs-pdf/f6251.pdf) |
+| 8 | AMT foreign tax credit (none in supplied facts) | $0  [2025 Form 6251](https://www.irs.gov/pub/irs-pdf/f6251.pdf) |
+| 9 | Tentative minimum tax ($200,744 × 26% + $43,000 LTCG × 15%) | $58,643  [2025 Form 6251](https://www.irs.gov/pub/irs-pdf/f6251.pdf) |
+| 10 | Regular tax | $40,840  [2025 Form 6251](https://www.irs.gov/pub/irs-pdf/f6251.pdf) |
+| 11 | AMT — to Schedule 2, line 2 | $17,803  [2025 Form 6251](https://www.irs.gov/pub/irs-pdf/f6251.pdf) |
 
 - **AMT result and minimum tax credit — Example D** — Without the ISO seam AMT would be $0; the $100,000 preference produces ~$17,803 of real AMT. That AMT also generates a ~$17,803 minimum tax credit (Form 8801), recoverable when the shares are sold — a timing item, not a permanent cost.  _(§55; §53)_
 - **NIIT and Additional Medicare checks — Example D** — NIIT (§1411): AGI $231,844 > $200,000 → 3.8% × lesser of net investment income ($46,844) and MAGI over threshold ($31,844) = ~$1,210 — separate from AMT. Additional Medicare Tax (§3101(b)(2)): Medicare wages $197,000 < $200,000 → none.  _(§1411; §3101(b)(2))_
