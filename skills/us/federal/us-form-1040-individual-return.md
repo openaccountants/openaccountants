@@ -1,9 +1,11 @@
 ---
 name: us-form-1040-individual-return
 description: Tier 2 US federal content skill for preparing Form 1040 — the standard individual income tax return for non-freelance taxpayers (W-2 employees, retirees, investors, families). Covers tax year 2025 under OBBBA including the $40k SALT cap, the $15,750/$31,500/$23,625 standard deduction, capital gains brackets (0/15/20%), the §1411 3.8% NIIT, AMT post-TCJA, Schedule 1/2/3 walkthrough, dependents and filing status, kiddie tax §1(g), and itemized deduction Schedule A. Distinct from us-federal-return-assembly which orchestrates Schedule C freelance returns. Federal only.
+version: 1.1
 jurisdiction: US
 tax_year: 2025
-last_updated: 2026-07-13
+tax_year_notes: "2025 individual return and final 2025 forms, with expressly labelled 2026 effective-date notes. Existing 22 November 2026 findings support this scoped correction; not a full 2026 return review."
+last_updated: 2026-11-23
 source_checked: 2026-10-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Christopher Aryee"
@@ -128,7 +130,7 @@ This skill prepares **Form 1040** and its three core schedules (1, 2, 3) plus **
 | 20% | over $533,400 | over $600,050 | over $566,700 |
 
 - **§1250 unrecaptured gain (real estate depreciation recapture)** — 25% maximum  _(§1250)_
-- **Collectibles (art, coins, gold, NFTs)** — 28% maximum  _(§1(h))_
+- **Collectibles (art, coins and gold where classified as collectibles)** — 28% maximum under §1(h). An NFT is not automatically a collectible: Notice 2023-27 describes the IRS’s intended look-through analysis of the associated asset while further guidance is pending; hold unresolved classification. [NFT](https://www.irs.gov/pub/irs-drop/n-23-27.pdf).
 - **Qualified small business stock (§1202)** — exclusion 50/75/100% depending on acquisition date; for stock acquired after July 4, 2025, OBBBA §70431 phases the exclusion by holding period instead: 50% at 3 years, 75% at 4 years, 100% at 5 years, with a $15 million per-issuer cap and a $75 million aggregate gross asset test  _(§1202)_
 - **Short-term capital gain taxation** — Short-term capital gain (held ≤ 1 year): taxed at ordinary rates per §2.2.  _(§1(h))_
 
@@ -179,7 +181,7 @@ This skill prepares **Form 1040** and its three core schedules (1, 2, 3) plus **
 ### 2.8 Kiddie tax — §1(g)
 
 - **Kiddie tax unearned income threshold** — For tax year 2025: a child's unearned income over $2,700 is taxed at the parents' marginal rate.  _(§1(g))_
-- **Kiddie tax applicability** — Applies to: Children under 18 at year-end, OR Children 18 with earned income ≤ half their support, OR Children 19-23 who are full-time students with earned income ≤ half their support  _(§1(g))_
+- **Kiddie tax applicability** — Apply the Form 8615 tests together: unearned income over $2,700 for 2025; a required return; at least one living parent; no joint return; and the applicable age/earned-income/support test (under 18, age 18 without earned income exceeding half support, or a full-time student age 19–23 without earned income exceeding half support). Age/support alone does not establish liability. [KID](https://www.irs.gov/instructions/i8615).
 - **Form 8615 / Form 8814 election** — Computed on Form 8615. Parents may elect to report the child's unearned income on their own return via Form 8814 if the child has only interest/dividend income under $13,500 (2025) and the child files no other return.  _(§1(g))_
 
 ### 2.9 Other OBBBA changes
@@ -187,13 +189,13 @@ This skill prepares **Form 1040** and its three core schedules (1, 2, 3) plus **
 - **§199A QBI** — made permanent at 20% (OBBBA §70105); the final OBBBA did not enact the proposed 23% rate. §70105 instead widened the phase-in range to $75,000 ($150,000 joint) and added a $400 minimum deduction for active qualified business income, both for tax years beginning after 31 December 2025, so not on 2025 returns. For 2025 the threshold is $197,300 ($394,600 joint), fully phased in at $247,300 ($494,600 joint) (Rev. Proc. 2024-40). Not applicable to pure W-2 / investment returns (Line 13 = 0) but flag if Schedule K-1 PTP income or REIT dividends are present — these qualify for QBI even without a trade or business.  _([§199A](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf))_
 - **§1(j) brackets permanence** — permanent (see §2.2).  _(§1(j))_
 - **Standard deduction increase** — increased for 2025 under OBBBA (see §2.1).  _(OBBBA)_
-- **Child Tax Credit** — $2,200 per qualifying child under 17 (§24(h)), refundable portion $1,700 in 2025 (Rev. Proc. 2024-40), made permanent by OBBBA §70104. Phaseout begins $400k MFJ / $200k other.  _(§24(h); OBBBA §70301; Rev. Proc. 2024-40)_
-- **§25D Residential Clean Energy Credit termination** — AUDIT FLASH POINT — OBBBA accelerated termination. Pre-OBBBA the credit phased to 26% in 2033 and 22% in 2034. OBBBA P.L. 119-21 §70506 terminated the credit for any expenditures made after December 31, 2025 (IRC §25D(h)) — verify against IRS guidance Notice 2025-XX before claiming for late-2025 installations. Flag to reviewer.  _([OBBBA P.L. 119-21 §70501](https://www.law.cornell.edu/uscode/text/26/25D))_
+- **Child Tax Credit** — $2,200 per qualifying child under 17 (§24(h)), refundable portion $1,700 in 2025 (Rev. Proc. 2024-40), made permanent by OBBBA §70104. Phaseout begins $400k MFJ / $200k other.  _(§24(h); OBBBA §70104; Rev. Proc. 2024-40)_
+- **§25D Residential Clean Energy Credit termination** — **AUDIT FLASH POINT** — P.L.119-21 §70506 terminates the credit for expenditures made after December 31, 2025 (IRC §25D(h)). Apply the operative expenditure/completion rules to the actual installation; the former phase-down does not extend that deadline. A placeholder notice number is not authority. [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
 - **§30D Clean Vehicle Credit termination** — OBBBA P.L. 119-21 §70502 terminated §30D for vehicles acquired after September 30 2025. Vehicles placed in service through 9/30/2025 still qualify under the existing point-of-sale transferable election rules. Flag to reviewer for any 2025 EV purchase — confirm date of acquisition vs date of placement in service.  _(OBBBA P.L. 119-21 §70502)_
-- **§25E Used Clean Vehicle Credit termination** — also terminated 9/30/2025 under OBBBA §70502.  _(OBBBA §70502)_
-- **Tip income deduction** — NEW under OBBBA §70201 — up to $25,000 of qualified tip income deductible after AGI (it does not reduce AGI) for occupations on the IRS-published tip-receiving occupations list (Treasury list issued under OBBBA §70201). Phases out above $150k single / $300k MFJ. Reported on Schedule 1-A, which flows to Form 1040 line 13b.  _([OBBBA §70601](https://www.irs.gov/pub/irs-pdf/f1040s1a.pdf))_
-- **Overtime pay deduction** — NEW under OBBBA §70202 — up to $12,500 single / $25,000 MFJ of FLSA-mandated overtime premium pay deductible after AGI (it does not reduce AGI). Same phaseout. Reported on Schedule 1-A, which flows to Form 1040 line 13b.  _([OBBBA §70602](https://www.irs.gov/pub/irs-pdf/f1040s1a.pdf))_
-- **Auto loan interest deduction** — NEW under OBBBA §70203 — up to $10,000 of interest on a loan for a US-assembled passenger vehicle deductible after AGI (it does not reduce AGI). Phases out $100k single / $200k MFJ. Reported on Schedule 1-A, which flows to Form 1040 line 13b.  _([OBBBA §70603](https://www.irs.gov/pub/irs-pdf/f1040s1a.pdf))_
+- **§25E Used Clean Vehicle Credit termination** — P.L.119-21 §70501 terminates §25E for vehicles acquired after September 30, 2025. Establish acquisition and other eligibility conditions separately. [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
+- **Tip income deduction** — NEW under OBBBA §70201 — up to $25,000 of qualified tip income deductible after AGI (it does not reduce AGI) for occupations on the IRS-published tip-receiving occupations list (Treasury list issued under OBBBA §70201). Phases out above $150k single / $300k MFJ. Reported on Schedule 1-A, which flows to Form 1040 line 13b.  _([OBBBA §70201](https://www.irs.gov/pub/irs-pdf/f1040s1a.pdf))_
+- **Overtime pay deduction** — NEW under OBBBA §70202 — up to $12,500 single / $25,000 MFJ of FLSA-mandated overtime premium pay deductible after AGI (it does not reduce AGI). Same phaseout. Reported on Schedule 1-A, which flows to Form 1040 line 13b.  _([OBBBA §70202](https://www.irs.gov/pub/irs-pdf/f1040s1a.pdf))_
+- **Auto loan interest deduction** — NEW under OBBBA §70203 — up to $10,000 of interest on a loan for a US-assembled passenger vehicle deductible after AGI (it does not reduce AGI). Phases out $100k single / $200k MFJ. Reported on Schedule 1-A, which flows to Form 1040 line 13b.  _([OBBBA §70203](https://www.irs.gov/pub/irs-pdf/f1040s1a.pdf))_
 
 ## 3. Filing status and dependents
 
@@ -202,13 +204,13 @@ This skill prepares **Form 1040** and its three core schedules (1, 2, 3) plus **
 - **Status determination date** — Status is determined on December 31 of the tax year (§7703).  _(§7703)_
 - **Single** — unmarried, not HoH, not QSS.  _(§1)_
 - **Married filing jointly (MFJ)** — married on 12/31, both spouses agree to file jointly, joint and several liability under §6013.  _(§6013)_
-- **Married filing separately (MFS)** — married on 12/31, file separately. Generally inferior — disqualifies from EITC, education credits, student loan interest deduction, child & dependent care credit, exclusion of US savings bond interest for education, traditional IRA deduction if spouse is covered, and the elderly/disabled credit. SALT cap halved. Use only when justified (innocent spouse protection, income-driven student loan repayment, large medical expenses on one spouse).  _(§1)_
-- **Head of household (HoH)** — unmarried (or "considered unmarried" — lived apart from spouse last 6 months and home is principal residence of qualifying child) AND paid more than half the cost of keeping up a home that was the principal residence for more than half the year of a qualifying person: A qualifying child (any age if permanently disabled, otherwise under 19 or under 24 if full-time student); A qualifying relative who is the taxpayer's parent (parent need not live with taxpayer); Another qualifying relative who lived with taxpayer more than half the year  _(§2(b))_
+- **Married filing separately (MFS)** — Married taxpayers may file separately, but test each benefit individually. Education credits and student-loan interest are generally unavailable; EITC and dependent-care rules have qualifying separated-spouse exceptions. An IRA deduction is not universally barred: coverage, income and living-apart conditions matter. Apply the status-specific SALT cap and other limits; do not infer disqualification for every listed benefit from MFS alone. [P501](https://www.irs.gov/publications/p501); [P590A](https://www.irs.gov/publications/p590a).
+- **Head of household (HoH)** — Meet the unmarried/considered-unmarried rules, pay more than half the home’s cost and have a qualifying person under Publication 501. A qualifying parent can satisfy the separate-parent-home rule without living with the taxpayer; other qualifying persons generally need the required residence. A qualifying relative who is a dependent only because of full-year household membership is not a qualifying person for HoH. Apply the listed relationship and dependency conditions rather than treating every resident qualifying relative as sufficient. [P501](https://www.irs.gov/publications/p501).
 - **Qualifying surviving spouse (QSS)** — spouse died in one of the two preceding tax years, taxpayer has not remarried, taxpayer maintained a home for a qualifying child for the whole year, and taxpayer would have been entitled to file jointly in the year of death. Get MFJ brackets and standard deduction. After two years, file as single or HoH.  _(§2(a))_
 
 ### 3.2 Qualifying child — §152(c)
 
-- **Qualifying child tests** — All five tests must be met: 1. Relationship: child, stepchild, foster child, sibling, half-sibling, step-sibling, or descendant of any of these. 2. Age: under 19 at year-end, OR under 24 and full-time student for at least 5 months, OR any age if permanently and totally disabled. 3. Residency: lived with taxpayer for more than half the year (temporary absences for school, illness, military service count as present). 4. Support: child did not provide more than half of their own support. 5. Joint return: child is not filing a joint return (unless only to claim a refund of withholding).  _(§152(c))_
+- **Qualifying child tests** — All five tests must be met: 1. Relationship: child, stepchild, foster child, sibling, half-sibling, step-sibling, or descendant of any of these. 2. Age: under 19 at year-end and younger than the taxpayer (or spouse if filing jointly), OR under 24, a full-time student for at least 5 months and younger than the taxpayer (or spouse), OR any age if permanently and totally disabled. 3. Residency: lived with taxpayer for more than half the year (temporary absences for school, illness, military service count as present). 4. Support: child did not provide more than half of their own support. 5. Joint return: child is not filing a joint return (unless only to claim a refund of withholding).  _(§152(c))_ [P501](https://www.irs.gov/publications/p501).
 
 ### 3.3 Qualifying relative — §152(d)
 
@@ -216,7 +218,7 @@ This skill prepares **Form 1040** and its three core schedules (1, 2, 3) plus **
 
 ### 3.4 Tiebreaker rules — §152(c)(4)
 
-- **Tiebreaker rules** — When two or more taxpayers could claim the same qualifying child: 1. Parent prevails over non-parent. 2. If both are parents who don't file jointly: parent with whom child lived longer; if equal, parent with higher AGI. 3. If no parent claims the child: the eligible taxpayer with the highest AGI prevails.  _(§152(c)(4))_
+- **Tiebreaker rules** — When more than one eligible person could claim the same qualifying child, apply the parent priority and parent residence/AGI rules. If an eligible parent does not claim the child, a nonparent can claim only if that person’s AGI exceeds the highest AGI of any eligible parent. The highest eligible nonparent AGI alone is insufficient where that parent comparison fails. [P501](https://www.irs.gov/publications/p501).
 
 ## 4. Income — Form 1040 lines 1-8
 
@@ -243,11 +245,11 @@ This skill prepares **Form 1040** and its three core schedules (1, 2, 3) plus **
 
 - **Line 2a — tax-exempt interest** — Tax-exempt interest (municipal bonds, mutual fund exempt-interest dividends). Reported informationally only. Watch: private activity bond interest from these may be an AMT preference (§57(a)(5)).  _(§57(a)(5))_
 - **Line 2b — taxable interest** — Includes: Bank/CD interest (1099-INT Box 1); US Treasury interest (1099-INT Box 3) — taxable federally, exempt from state tax; Original issue discount (1099-OID); Seller-financed mortgage interest received; Interest on income tax refunds (1099-INT from IRS or state)
-- **Schedule B requirement** — Schedule B required when (a) taxable interest > $1,500, (b) tax-exempt interest is from a private activity bond, (c) seller-financed mortgage interest, or (d) foreign account or foreign trust ownership (Part III FBAR questions).
+- **Schedule B requirement** — Apply the Schedule B instructions: taxable interest over $1,500 or ordinary dividends over $1,500 is a separate threshold test, not their combined sum. Seller-financed mortgage interest and applicable foreign-account/trust and other listed conditions can also require it. Private-activity-bond tax-exempt interest alone is not a listed Schedule B trigger. [B](https://www.irs.gov/instructions/i1040sb).
 
 ### 4.3 Line 3: Dividends
 
-- **Line 3a — qualified dividends** — Qualified dividends (1099-DIV Box 1b) — taxed at capital gains rates per §2.3. Must satisfy §1(h)(11) holding period (more than 60 days during the 121-day period beginning 60 days before ex-dividend date; 90 of 181 for preferred stock).  _(§1(h)(11))_
+- **Line 3a — qualified dividends** — Report qualified dividends from 1099-DIV box 1b subject to the holding-period and other eligibility rules. Ordinarily, hold the stock more than 60 days during the 121-day period beginning 60 days before the ex-dividend date. The more-than-90-days/181-day preferred-stock rule applies to dividends attributable to periods totaling more than 366 days; it is not a rule for every preferred dividend. [P550](https://www.irs.gov/publications/p550).
 - **Line 3b — ordinary dividends** — Ordinary dividends (1099-DIV Box 1a) — includes qualified dividends; reports the total.
 - **Schedule B requirement for dividends** — Schedule B required if Line 3b > $1,500.
 
@@ -256,7 +258,7 @@ This skill prepares **Form 1040** and its three core schedules (1, 2, 3) plus **
 - **Line 4a/4b overview** — Line 4a: Gross IRA distributions (1099-R from traditional, SEP, SIMPLE IRAs); Line 4b: Taxable portion
 - **Determining 4b — no basis** — Traditional IRA with all-deductible contributions (no basis): 4b = 4a.
 - **Determining 4b — basis from nondeductible contributions** — Traditional IRA with basis from nondeductible contributions (Form 8606 history): pro-rata recovery via Form 8606 Part I.
-- **Roth IRA distribution ordering rules** — Roth IRA distribution: tax-free if qualified (5-year holding + age 59½ or other qualifying event). Otherwise ordering rules: contributions first (tax-free), conversions next (10% penalty if within 5 years, otherwise tax-free), earnings last (taxable + 10% penalty).
+- **Roth IRA distribution ordering rules** — Apply the qualified-distribution rules first. For nonqualified distributions, regular contributions come out first, then conversions/rollovers under the separate ordering and five-year rules, then earnings. A conversion recapture tax generally concerns its taxable conversion portion distributed within the separate five-year period before age 59½, subject to exceptions. Nonqualified earnings may be taxable; the 10% additional tax depends on age and exceptions. Do not impose an unconditional penalty on all conversion amounts or earnings. [P590B](https://www.irs.gov/publications/p590b).
 - **Qualified charitable distribution (QCD)** — up to $108,000 in 2025 (Rev. Proc. 2024-40), age 70½+, direct from IRA trustee to qualified charity. Excluded from 4b — write "QCD" next to Line 4b.  _(Rev. Proc. 2024-40)_
 - **Rollover** — write "Rollover" next to Line 4b, 4b = 0 if direct trustee-to-trustee or completed within 60 days.
 - **RMD failure penalty** — pre-SECURE 2.0 penalty was 50%; under SECURE 2.0 it is 25%, reduced to 10% if corrected within the correction window. Reported on Form 5329.  _(SECURE 2.0)_
@@ -264,7 +266,7 @@ This skill prepares **Form 1040** and its three core schedules (1, 2, 3) plus **
 ### 4.5 Line 5: Pensions and annuities
 
 - **Line 5a/5b overview** — Line 5a: Gross distributions (1099-R from employer plans, 401(k), 403(b), 457, defined benefit); Line 5b: Taxable portion
-- **Determining 5b** — Fully taxable if all contributions were pre-tax (most 401(k) distributions). Simplified method (Pub 575 / 939) if after-tax contributions are present and pension started after 11/18/1996. General rule for older annuities. Lump-sum distribution with NUA (net unrealized appreciation) of employer securities: use Form 4972.
+- **Determining 5b** — Fully taxable where all contributions were pre-tax. Where after-tax basis exists, choose the Simplified Method or General Rule using Publication 575’s qualified-plan, annuity-starting-date, age and guaranteed-payment conditions; a start after November 18, 1996 alone is insufficient. Employer-securities NUA and Form 4972 special lump-sum treatment have separate eligibility tests; NUA alone does not require Form 4972. [P575](https://www.irs.gov/publications/p575).
 
 ### 4.6 Line 6: Social Security benefits
 
@@ -274,7 +276,7 @@ This skill prepares **Form 1040** and its three core schedules (1, 2, 3) plus **
 
 ### 4.7 Line 7: Capital gains
 
-- **Line 7 sourcing** — From Schedule D Line 16. If only capital gain distributions from mutual funds (1099-DIV Box 2a) and no other capital gain transactions, taxpayer can skip Schedule D and enter the amount directly on Line 7 with the Schedule D checkbox unchecked.
+- **Line 7 sourcing** — Use final 2025 Form 1040 line 7a for the amount. Where the instructions permit capital-gain distributions to be reported without Schedule D, check line 7b (Schedule D not required); do not leave it unchecked merely because the schedule is omitted. [F](https://www.irs.gov/pub/irs-pdf/f1040.pdf); [I](https://www.irs.gov/instructions/i1040gi).
 
 ### 4.8 Line 8: Other income (from Schedule 1 Line 10)
 
@@ -309,7 +311,7 @@ See §5.
 | 7 | Unemployment compensation | 1099-G Box 1 |
 | 8a | Net operating loss | §172 |
 | 8b | Gambling winnings | W-2G; losses deductible only as itemized misc up to winnings under §165(d) |
-| 8c | Cancellation of debt | 1099-C — but check §108 exclusions (insolvency, qualified principal residence indebtedness extended under OBBBA §70405 through 2026, bankruptcy, qualified farm/real property business) |
+| 8c | Cancellation of debt | Apply §108 exclusions. Qualified principal-residence indebtedness requires discharge before January 1, 2026, or a qualifying arrangement entered into and evidenced in writing before that date; there is no blanket extension of all 2026 discharges. [CODE108](https://uscode.house.gov/us/usc/119-124/t26/s108/). |
 | 8d | Foreign earned income exclusion | Form 2555 (NEGATIVE amount) — refer to `us-foreign-earned-income-2555` |
 | 8e | Income from Form 8853 (Archer MSA) |  |
 | 8f | Income from Form 8889 (HSA distributions for non-medical) |  |
@@ -323,11 +325,11 @@ See §5.
 | 8n | §951(a) Subpart F inclusion | International — refer out |
 | 8o | §951A GILTI inclusion | Refer to `us-gilti-fdii-beat` |
 | 8p | §461(l) excess business loss disallowed | Re-included in income |
-| 8q | Tax credit bond interest |  |
+| 8q | Taxable distributions from an ABLE account | [S1](https://www.irs.gov/pub/irs-pdf/f1040s1.pdf). |
 | 8r | Scholarship/fellowship not reported on W-2 |  |
-| 8s | Nontaxable amount of pension from work not covered by SS |  |
+| 8s | Nontaxable Medicaid waiver payments included on Form 1040 line 1a or 1d | Enter as the prescribed subtraction. [S1](https://www.irs.gov/pub/irs-pdf/f1040s1.pdf). |
 | 8t | Pension/annuity from a non-qualified deferred comp plan | §457 from tax-exempt orgs |
-| 8u | Wages from Form 8919 | If on Line 1g already, skip here |
+| 8u | Wages earned while incarcerated | [S1](https://www.irs.gov/pub/irs-pdf/f1040s1.pdf). |
 | 8v | Digital asset received as reward/award/payment | Property transaction — refer to `us-digital-asset-transactions` if material |
 | 8z | Other income | Itemize on a statement |
 | 9 | Total other income | sum 8a-8z |
@@ -364,7 +366,7 @@ See §5.
 | 24h | Attorney fees and court costs for §62(a)(20) discrimination suits |  |
 | 24i | Attorney fees and court costs for whistleblower awards |  |
 | 24j | Housing deduction (Form 2555) |  |
-| 24k | Excess deferrals (e.g., over-contribution to 401(k)) |  |
+| 24k | Excess deductions of section 67(e) expenses from Schedule K-1 (Form 1041) | [S1](https://www.irs.gov/pub/irs-pdf/f1040s1.pdf). |
 | 24z | Other adjustments |  |
 | 25 | Total other adjustments | sum 24a-24z |
 | 26 | Total adjustments to income | sum 11-23, 25 → 1040 Line 10 |
@@ -392,23 +394,23 @@ See §5.
 
 - **Medical and dental — Lines 1-4** — deductible to extent total exceeds 7.5% of AGI (§213(a) post-TCJA permanent). Includes premiums (other than self-employed health insurance taken above the line), prescription drugs, doctors, dentists, surgery, mental health, long-term care insurance (subject to age-based caps), medical mileage at 21¢/mile for 2025 (Notice 2025-XX), home modifications for medical purposes.  _(§213(a))_
 - **Taxes paid — Lines 5-7 — SALT cap** — Line 5a: State and local income tax OR general sales tax (election) — sales tax via the IRS optional sales tax tables in Pub 600 / Schedule A instructions, plus actual receipts for big-ticket items. Line 5b: State and local real estate tax (excluding rental property — that goes on Schedule E). Line 5c: State and local personal property tax (e.g., car registration based on value). Line 5d: Sum 5a + 5b + 5c. Line 5e: Lesser of 5d or SALT cap (see §2.7 — $40,000 / $20,000 MFS for 2025, phased down above $500k/$250k MAGI). Line 6: Other taxes (foreign income tax NOT used for FTC, occupational taxes). Line 7: Sum 5e + 6
-- **Interest paid — Lines 8-10** — Line 8a: Home mortgage interest from 1098 (acquisition debt up to $750,000 post-12/15/2017 origination; $1,000,000 grandfathered for older debt — §163(h)(3) as amended by TCJA, made permanent by OBBBA §70108). Line 8b: Mortgage interest not on 1098 (seller-financed; report payee name, address, SSN/EIN). Line 8c: Points not on 1098. Line 8d: Mortgage insurance premiums. OBBBA §70108 amended IRC §163(h)(3)(F) to treat qualified mortgage insurance premiums as qualified residence interest, so they are deductible again for tax years beginning after 31 December 2025. On the 2025 Schedule A, line 8d is still "Reserved for future use", so mortgage insurance premiums are not deductible on 2025 returns. Line 8e: Sum. Line 9: Investment interest (Form 4952) — limited to net investment income. Line 10: Sum 8e + 9  _([§163(h)(3); OBBBA §70110](https://www.irs.gov/pub/irs-pdf/f1040sa.pdf))_
+- **Interest paid — Lines 8-10** — Line 8a: Home mortgage interest from 1098 (acquisition debt up to $750,000 post-12/15/2017 origination; $1,000,000 grandfathered for older debt — §163(h)(3) as amended by TCJA, made permanent by OBBBA §70108). Line 8b: Mortgage interest not on 1098 (seller-financed; report payee name, address, SSN/EIN). Line 8c: Points not on 1098. Line 8d: Mortgage insurance premiums. OBBBA §70108 amended IRC §163(h)(3)(F) to treat qualified mortgage insurance premiums as qualified residence interest, so they are deductible again for tax years beginning after 31 December 2025. On the 2025 Schedule A, line 8d is still "Reserved for future use", so mortgage insurance premiums are not deductible on 2025 returns. Line 8e: Sum. Line 9: Investment interest (Form 4952) — limited to net investment income. Line 10: Sum 8e + 9  _([§163(h)(3); OBBBA §70108](https://www.irs.gov/pub/irs-pdf/f1040sa.pdf))_
 - **Home equity interest deductibility** — Home equity interest is deductible only if proceeds used to buy, build, or substantially improve the residence securing the loan (§163(h)(3)(F) post-TCJA). Cash-out for personal use is nondeductible.  _(§163(h)(3)(F))_
-- **Gifts to charity — Lines 11-14** — Line 11: Cash contributions (limit: 60% of AGI for public charities under §170(b)(1)(G); 30% for non-cash to public; 20% for capital gain property to private foundations). Line 12: Other than cash (Form 8283 required if > $500; qualified appraisal if > $5,000). Line 13: Carryover from prior year (5-year carryforward under §170(d)). Line 14: Total. From 2026 returns (tax years beginning after 31 December 2025), a 0.5% AGI floor applies (OBBBA §70425; IRC §170(b)(1)(I)); it does not apply to 2025 returns. Individual charitable contributions are deductible only to the extent the aggregate exceeds 0.5% of the taxpayer's contribution base (generally AGI). Example: with $100,000 AGI, subtract $500; only contributions above $500 are deductible on Schedule A.  _([§170(b)(1)(G); OBBBA §70203; §170(d)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm))_
-- **AUDIT FLASH POINT — Charitable contributions outsized vs AGI** — A red flag is non-cash contributions over $5,000 without a qualified appraisal attached (Form 8283 Section B). The IRS DIF score weights charitable deductions relative to AGI heavily. For non-cash gifts of vehicles, refer to Pub 4303 and the contemporaneous written acknowledgment requirement under §170(f)(8). Conservation easements (§170(h)) and syndicated conservation easements are an enforcement priority — refer to a tax controversy specialist if encountered.  _(§170(f)(8); §170(h))_
-- **Casualty and theft losses — Line 15** — deductible only if the loss is attributable to a federally declared disaster or, for tax years beginning after 31 December 2025 (OBBBA §70109), certain state-declared disasters (§165(h)(5) post-TCJA, made permanent and expanded by OBBBA §70109). Subject to $100 floor per event and 10% AGI floor. Form 4684.  _([§165(h)(5); OBBBA §70112](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm))_
+- **Gifts to charity — Lines 11-14** — Classify property, recipient and applicable percentage limit separately. Ordinary noncash gifts to qualifying public charities can fall under the 50% limit; long-term capital-gain property generally has the 30% limit, with elections and special rules. Do not apply 30% to every noncash public-charity gift. Form 8283 is generally required above $500; qualified appraisal rules above $5,000 have exceptions. Generally obtain/retain the appraisal; attachment is generally required above $500,000, with special-category exceptions. Preserve carryover rules. The 0.5% contribution-base floor starts with tax years after December 31, 2025 under §70425 and does not apply to 2025. [P526](https://www.irs.gov/publications/p526); [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
+- **AUDIT FLASH POINT — Charitable contributions outsized vs AGI** — Above $5,000, establish whether a qualified appraisal is required and was obtained, with the correct Form 8283 section. Do not call every appraisal “attached”: attachment generally begins above $500,000, subject to special rules/exceptions. Vehicle gifts, conservation easements and acknowledgment requirements remain separate checks; refer unresolved specialist cases. [P526](https://www.irs.gov/publications/p526).
+- **Casualty and theft losses — Line 15** — For 2025 personal-use losses, apply the federally declared-disaster restriction and the exception allowing other personal casualty losses to the extent of personal casualty gains. The ordinary $100/event and 10%-of-AGI floors are not universal: qualifying disaster losses can instead use the $500 reduction without that percentage floor. Establish the disaster/category before calculating Form 4684. The §70109 state-declared-disaster expansion applies to tax years beginning after December 31, 2025. [P547](https://www.irs.gov/publications/p547); [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
 - **Other itemized — Line 16** — gambling losses up to gambling winnings (§165(d)), federal estate tax on income in respect of a decedent (§691(c)), impairment-related work expenses, deduction for unrecovered investment in pension at death, amortizable bond premium on pre-10/23/86 taxable bonds.  _(§165(d); §691(c))_
-- **Misc itemized deductions 2% floor suspension** — Misc itemized deductions subject to 2% AGI floor are SUSPENDED through 2025 by TCJA §11045, made permanent by OBBBA §70110. Exception, for tax years beginning after 31 December 2025: OBBBA §70110(b) adds IRC §67(b)(13), so unreimbursed educator expenses are no longer miscellaneous itemized deductions and remain deductible. This means unreimbursed employee business expenses, tax preparation fees, investment advisory fees, safe deposit box fees, and home office for an employee are not deductible. Reservists, performing artists, and fee-basis officials may still deduct via Schedule 1 Line 12.  _([TCJA §11045; OBBBA §70113](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm))_
+- **Misc itemized deductions 2% floor suspension** — Misc itemized deductions subject to 2% AGI floor are SUSPENDED through 2025 by TCJA §11045, made permanent by OBBBA §70110. Exception, for tax years beginning after 31 December 2025: OBBBA §70110(b) adds IRC §67(b)(13), so unreimbursed educator expenses are no longer miscellaneous itemized deductions and remain deductible. This means unreimbursed employee business expenses, tax preparation fees, investment advisory fees, safe deposit box fees, and home office for an employee are not deductible. Reservists, performing artists, and fee-basis officials may still deduct via Schedule 1 Line 12.  _([TCJA §11045; OBBBA §70110](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm))_
 
 ### 6.3 Pease limitation
 
-- **Pease limitation suspension** — Pease (§68 overall limitation on itemized deductions) was suspended by TCJA; the permanent modification of §68 is codified in OBBBA §70111. No Pease limitation for 2025.  _(§68; OBBBA §70114)_
+- **Pease limitation suspension** — Pease (§68 overall limitation on itemized deductions) was suspended by TCJA; the permanent modification of §68 is codified in OBBBA §70111. No Pease limitation for 2025.  _(§68; OBBBA §70111)_
 
 ## 7. Line 12-15 — Standard/itemized deduction, QBI, taxable income
 
 - **Line 12** — Greater of standard deduction (Line 2.1) or Schedule A Line 17.  _(Form 1040)_
 - **Line 13 — §199A QBI deduction** — For pure W-2 / investment taxpayers without a trade or business: Line 13 = 0. If the taxpayer has REIT dividends (1099-DIV Box 5) or PTP income (Schedule K-1) without an active trade or business, QBI may still apply — refer to `us-qbi-deduction`.  _(§199A)_
-- **Line 14** — Sum Line 12 + Line 13.  _(Form 1040)_
+- **Line 14** — On final 2025 Form 1040, total line 12e + line 13a (QBI) + line 13b (Schedule 1-A); the additional deductions must not be dropped. [F](https://www.irs.gov/pub/irs-pdf/f1040.pdf).
 - **Line 15 — Taxable income** — Taxable income = Line 11 (AGI) - Line 14. If negative, enter 0.  _(Form 1040)_
 
 ## 8. Line 16 — Tax computation
@@ -482,15 +484,20 @@ Computed on **Form 8960**, flows to **Schedule 2 Line 12**.
 | 5b | Energy efficient home improvement credit (§25C) | Form 5695 — **OBBBA accelerated termination flag** | — |
 | 6 | Other nonrefundable credits | various | — |
 | 6a | General business credit | Form 3800 | — |
-| 6b | Adoption credit | Form 8839 ($17,280 in 2025, Rev. Proc. 2024-40) | — |
-| 6c | DC first-time homebuyer (legacy) | — | — |
-| 6d | Mortgage interest credit | Form 8396 | — |
-| 6e | Plug-in electric vehicle credit (§30D personal use) | Form 8936 — **OBBBA termination 9/30/2025, see §2.9** | — |
-| 6f | Mortgage interest credit (prior year carryforward) | — | — |
-| 6g | Alt fuel vehicle refueling property credit (§30C personal) | Form 8911 | — |
-| 6l | Credit for elderly or disabled | Schedule R | — |
-| 6m | Credit for child tax (nonrefundable portion) | Schedule 8812 | — |
-| 7 | Total nonrefundable | sum | — |
+| 6b | Prior-year minimum tax credit | Form 8801 | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
+| 6c | Nonrefundable adoption credit | Form 8839; refundable part goes to Form 1040 line 30 | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
+| 6d | Credit for the elderly or disabled | Schedule R | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
+| 6e | Reserved for future use | — | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
+| 6f | Clean vehicle credit | Form 8936 | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
+| 6g | Mortgage interest credit, including eligible carryforward | Form 8396 | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
+| 6h | District of Columbia first-time homebuyer credit (legacy carryforward) | Form 8859 | [2025 Schedule 3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
+| 6j | Alternative fuel vehicle refueling property credit | Form 8911 | [2025 Schedule 3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
+| 6l | Amount from Form 8978 line 14 | Form 8978 | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
+| 6m | Previously owned clean vehicle credit | Form 8936 | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
+| 7 | Total other nonrefundable credits (lines 6a–6z) | Schedule 3 | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
+| 8 | Total Part I (lines 1–4, 5a, 5b and 7) → Form 1040 line 20 | Schedule 3 | [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
+
+The nonrefundable child/other-dependent credit belongs on Form 1040 line 19 via Schedule 8812, not Schedule 3 line 6m. [Final 2025 Form 1040](https://www.irs.gov/pub/irs-pdf/f1040.pdf).
 
 ### 12.2 Part II — Refundable credits and other payments
 
@@ -505,10 +512,11 @@ Computed on **Form 8960**, flows to **Schedule 2 Line 12**.
 | 13 | Refundable credits not elsewhere |
 | 13a | Form 2439 (regulated investment company undistributed LTCG) |
 | 13b | Credit for repayment of amounts under claim of right >$3,000 (§1341) |
-| 13c | Net §965 transition tax (rare for individuals) |
-| 13d | Credit for previously taxed income under §962 |
+| 13c | Elective payment election amount from Form 3800 Part III column (j) | [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf).
+| 13d | Deferred section 965 net tax liability (see instructions) | [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf).
 | 13z | Other refundable |
-| 14 | Total → 1040 Line 31 |
+| 14 | Total other payments/refundable credits (13a–13z) | [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf).
+| 15 | Total Part II (9–12 and 14) → Form 1040 line 31 | [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf).
 
 ### 12.3 Credits cheat sheet
 
@@ -519,13 +527,14 @@ Computed on **Form 8960**, flows to **Schedule 2 Line 12**.
 | Child Tax Credit (CTC) | Partially ($1,700 ACTC) | $2,200/child <17 (OBBBA §70104) | $400,000 |
 | Credit for Other Dependents (ODC) | No | $500/dependent | $400,000 |
 | Earned Income Credit (EITC) | Yes | $649 – $8,046 by # kids | varies by household |
-| Child & Dependent Care | No | $3,000 / $6,000 expenses × 20-35% | $43,000 (rate drops to 20%) |
+| Child & Dependent Care | No | $3,000 / $6,000 expenses × 20–35% | Rate begins declining above $15,000 AGI; 20% applies above $43,000 (not a phaseout to zero). [ICARE](https://www.irs.gov/instructions/i2441). |
 | AOTC | 40% refundable | $2,500 (100% first $2k + 25% next $2k) | $160k MFJ ($80k other) |
 | LLC | No | $2,000 (20% of $10k) | $160k MFJ ($80k other) |
 | Saver's Credit | No | $1,000 ($2,000 MFJ) | $47,500 MFJ (credit ends above $79,000) |
 | Adoption Credit | Partially: up to $5,000 refundable under OBBBA §70402 (IRC §23(a)(4)); no separate election required | $17,280 | $259,190 |
 | Residential Clean Energy (§25D) | No | 30% of qualified spend | none — but OBBBA terminated for expenditures made after 12/31/2025; flag |
-| EV Credit (§30D) | No (transferable at point of sale) | $7,500 new / $4,000 used | $300k MFJ / $225k HoH / $150k other; MSRP cap $80k vans, SUVs, pickups, $55k other vehicles — OBBBA terminated 9/30/2025 |
+| New clean vehicle (§30D) | No (transferable if eligible) | Up to $7,500 | MAGI $300,000 MFJ / $225,000 HoH / $150,000 other; applicable MSRP limits and acquisition deadline still apply. [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm). |
+| Previously owned clean vehicle (§25E) | No (transferable if eligible) | Up to $4,000 | MAGI $150,000 MFJ / $112,500 HoH / $75,000 other; acquisition after September 30, 2025 is ineligible. [USED](https://www.irs.gov/credits-deductions/used-clean-vehicle-credit); [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm). |
 
 ## 13. Schedule 2 — Additional taxes
 
@@ -539,13 +548,13 @@ Computed on **Form 8960**, flows to **Schedule 2 Line 12**.
 | 7 | Unreported SS/Medicare from Form 4137 / 8919 |  |
 | 8 | Additional tax on IRAs (early withdrawal, RMD failure) | Form 5329 |
 | 9 | Household employment taxes | Schedule H |
-| 10 | First-time homebuyer credit repayment (legacy) | Form 5405 |
+| 10 | Reserved for future use | [S2](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf). |
 | 11 | Additional Medicare Tax | Form 8959 |
 | 12 | Net Investment Income Tax | Form 8960 |
-| 13 | §72(m)(5) excess benefits / §72(q) §72(t) |  |
+| 13 | Uncollected Social Security/Medicare or RRTA tax on tips or group-term life insurance | [S2](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf). |
 | 14 | Interest on §453(l) deferred installment sale tax |  |
 | 15 | Interest on §453A deferred tax on installment sales > $5M |  |
-| 16 | §72(m)(5) recapture |  |
+| 16 | Recapture of low-income housing credit | Form 8611. [S2](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf). |
 | 17a-17z | Other additional taxes |  |
 | 18-21 | Various |  |
 
@@ -604,7 +613,7 @@ Although primarily a freelancer concern (refer to `us-quarterly-estimated-tax`),
 
 ### 17.4 E-file mandate
 
-- **E-file mandate for paid preparers** — Most paid preparers must e-file under §6011(e) and Regs §301.6011-7 (10-return rule effective 2024, aggregating across return types). Paper allowed only with a §6011(e) hardship waiver or specific exception (Form 8948).  _(§6011(e); Regs §301.6011-7)_
+- **E-file mandate** — A specified tax-return preparer generally must e-file when reasonably expecting to file 11 or more covered individual income-tax returns during the calendar year, subject to the written taxpayer paper-filing choice, hardship and other permitted exceptions. Do not substitute the separate 10-return information/business-return rule or treat 2024 as the mandate’s start. [EF](https://www.irs.gov/e-file-providers/frequently-asked-questions-e-file-requirements-for-specified-tax-return-preparers-sometimes-referred-to-as-the-e-file-mandate).
 
 ### 17.5 §183 hobby loss
 
@@ -612,7 +621,7 @@ Although primarily a freelancer concern (refer to `us-quarterly-estimated-tax`),
 
 ### 17.6 §469 passive activity losses
 
-- **Rental real estate passive loss allowance** — Rental real estate losses are generally passive. Up to $25,000 of rental loss may offset active income for taxpayers who actively participate (lower bar than material participation), phased out between $100,000 and $150,000 MAGI under §469(i)(3). Suspended losses carry forward to offset future passive income or are released on full disposition.  _(§469(i)(3))_
+- **Rental real estate passive loss allowance** — The ordinary actively participating rental-real-estate allowance is up to $25,000, phased out over $100,000–$150,000 MAGI. MFS taxpayers living apart for the entire year have a maximum $12,500 allowance, phased out over $50,000–$75,000; MFS taxpayers living with their spouse at any time do not qualify for the allowance. Apply all participation/eligibility conditions; suspended losses and disposition rules are separate. [P925](https://www.irs.gov/publications/p925).
 
 ### 17.7 §461(l) excess business loss
 
@@ -621,8 +630,8 @@ Although primarily a freelancer concern (refer to `us-quarterly-estimated-tax`),
 ## 18. Common errors checklist
 
 1. **SS taxable amount (Line 6b)** computed wrong — failed to use Pub 915 Worksheet 1; over- or understated tax-exempt interest in the formula. (See §4.6 Audit Flash.)
-2. **Wrong tax computation method** — used Tax Tables when LTCG/qualified div present; should use Qualified Dividends and Capital Gain Tax Worksheet. (See §8 Audit Flash.)
-3. **Forgot Schedule B** when interest + dividends > $1,500 — must answer Part III foreign account / FBAR questions.
+2. **Wrong tax computation method** — Follow the Qualified Dividends and Capital Gain Tax Worksheet where required; its ordinary-income tax step can itself require the Tax Table. Do not substitute continuous brackets merely because the worksheet is used. [I](https://www.irs.gov/instructions/i1040gi).
+3. **Forgot Schedule B** — Test taxable interest over $1,500 and ordinary dividends over $1,500 separately, plus the other listed triggers and applicable Part III questions. [B](https://www.irs.gov/instructions/i1040sb).
 4. **Excess Social Security tax** from two employers not credited on Schedule 3 Line 11.
 5. **Capital loss carryover** not picked up from prior return (line 6 / Line 14 of Schedule D).
 6. **Dependent claimed by both parents** post-divorce — Form 8332 release of claim or §152(e) custodial parent rule violated.
@@ -630,7 +639,7 @@ Although primarily a freelancer concern (refer to `us-quarterly-estimated-tax`),
 8. **NIIT** not computed when AGI > $200k/$250k and investment income present.
 9. **Kiddie tax** Form 8615 missed for college student dependents with brokerage 1099-DIV.
 10. **AMT** not run for ISO exercises.
-11. **Standard deduction limitation** when claimed as a dependent — taxpayer used the regular $15k instead of the §63(c)(5) limit ($1,350 or earned income + $450, capped at $15k).
+11. **Standard deduction limitation** — Apply the dependent’s regular standard-deduction limit: for 2025, the greater of $1,350 or earned income + $450, capped at $15,750; any age/blindness additions require their separate conditions. [P501](https://www.irs.gov/publications/p501).
 12. **Wrong filing status** — HoH claimed without a qualifying person; QSS claimed in year 3+ after spouse's death.
 13. **Box 12 W-2 code DD** (employer-sponsored health coverage) mistakenly added to income — informational only.
 14. **Form 1098-T scholarship amount** not added back when in excess of qualified tuition for AOTC.
@@ -664,28 +673,28 @@ Student loan interest paid: $1,800
 | 3b | Ordinary dividends | $3,200 |
 | 7 | Capital gains (Schedule D: $5,000 LT + $1,200 ST = $6,200) | $6,200 |
 | 9 | Total income | $105,250 |
-| 10 | Adjustments (Sch 1 Line 13 HSA $4,300 + Line 21 SLI $1,800) | $6,100 |
-| 11 | AGI | $99,150 |
+| 10 | Eligible HSA $4,300; student-loan interest deduction $0 | $4,300 [I](https://www.irs.gov/instructions/i1040gi). |
+| 11 | AGI | $100,950 |
 | 12 | Standard deduction | $15,750 |
 | 13 | QBI | 0 |
 | 14 | Sum | $15,750 |
-| 15 | Taxable income | $83,400 |
+| 15 | Taxable income | $85,200 |
 
-- **Tax computation (Qualified Dividends and Capital Gain Tax Worksheet)** — Ordinary taxable income portion: $83,400 - $5,000 LTCG - $2,800 QDIV = $75,600; STCG of $1,200 is in ordinary portion; Tax on $75,600 (single, §1(j)): 10% × $11,925 = $1,192.50; 12% × ($48,475 - $11,925) = $4,386.00; 22% × ($75,600 - $48,475) = $5,967.50; Total = $11,546; Tax on $5,000 + $2,800 = $7,800 LTCG/QDIV at 15% (since ordinary income > $48,350 threshold): $1,170; Line 16 tax: ~$12,716  _(§1(j))_
+- **Tax computation (Qualified Dividends and Capital Gain Tax Worksheet)** — Preserve all supplied income, contribution and withholding facts and assume eligible HSA/qualified-dividend treatment. Student-loan MAGI is $105,250 − $4,300 = $100,950, above the $100,000 single phaseout endpoint: no deduction for the $1,800 paid. AGI $100,950 less $15,750 gives taxable income $85,200. Ordinary portion = $85,200 − $5,000 LTCG − $2,800 qualified dividends = $77,400. The 2025 Single Tax Table row $77,400–$77,450 gives $11,948; add $7,800 × 15% = $1,170. Tax is $13,118; subtract $12,400 withholding: $718 owed. [I](https://www.irs.gov/instructions/i1040gi).
 
 **Return (Example A, Part 2)**  _(Example A return table part 2)_
 
 | Line | Item | Amount |
 | --- | --- | --- |
-| 16 | Tax | $12,716 |
-| 22 | Total tax before other | $12,716 |
+| 16 | Tax | $13,118 |
+| 22 | Total tax before other | $13,118 |
 | 23 | Other taxes (Schedule 2) | 0 |
-| 24 | Total tax | $12,716 |
+| 24 | Total tax | $13,118 |
 | 25a | Withholding W-2 | $12,400 |
 | 33 | Total payments | $12,400 |
-| 37 | Amount owed | **$316** |
+| 37 | Amount owed | **$718** |
 
-- **NIIT check Example A** — AGI $99,150 < $200k threshold — no NIIT  _(§1411)_
+- **NIIT check Example A** — AGI $100,950 < $200k threshold — no NIIT  _(§1411)_
 
 ### 19.2 Example B — MFJ with kids, mortgage, HSA, large itemized
 
@@ -803,17 +812,17 @@ Federal withholding: $4,200 from pension; $2,800 from IRA
 | 14 | Total deductions | $23,750 |
 | 15 | Taxable income | $48,550 |
 
-- **Tax (Qualified Dividends and Capital Gain Worksheet)** — Ordinary portion: $48,550 - $9,000 LTCG - $3,200 QDIV = $36,350; Tax on $36,350 single: 10% × $11,925 = $1,192.50; 12% × ($36,350 - $11,925) = $2,931; Total = $4,123.50; Tax on $9,000 + $3,200 = $12,200 LTCG/QDIV: $36,350 ordinary + $12,200 = $48,550 total; $48,350 - $36,350 = $12,000 at 0%; $12,200 - $12,000 = $200 at 15% = $30; Line 16 tax: ~$4,154  _([§1(h)](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf))_
+- **Tax (Qualified Dividends and Capital Gain Tax Worksheet)** — Keep taxable income $48,550 and all supplied eligibility assumptions. Ordinary portion = $48,550 − $9,000 LTCG − $3,200 qualified dividends = $36,350. The 2025 Single Tax Table row $36,350–$36,400 gives $4,127. The first $12,000 of preferential income is in the 0% band; remaining $200 × 15% = $30. Tax = $4,157, giving a $2,843 refund on $7,000 withholding. [I](https://www.irs.gov/instructions/i1040gi).
 
 **Return (Example C, Part 3)**  _(Example C return table part 3)_
 
 | Line | Item | Amount |
 | --- | --- | --- |
-| 16 | Tax | $4,154 |
-| 24 | Total tax | $4,154 |
+| 16 | Tax | $4,157 |
+| 24 | Total tax | $4,157 |
 | 25b | 1099 withholding | $7,000 |
 | 33 | Total payments | $7,000 |
-| 34 | Overpayment | **$2,846 refund** |
+| 34 | Overpayment | **$2,843 refund** |
 
 - **NIIT and RMD checks Example C** — NIIT check: AGI $72,300 < $200k — none. RMD check: Walter is 73, RMD age (73 under SECURE 2.0 §107 for those born 1951-1959) — confirm full RMD was satisfied. The $10,000 QCD counts toward RMD (§408(d)(8)(B)).  _(SECURE 2.0 §107; §408(d)(8)(B))_
 
@@ -840,29 +849,83 @@ ISO exercise-and-hold: exercised 4,000 incentive stock options (strike $3, FMV $
 
 - **Regular tax computation — Example D** — Ordinary income $173,094 (taxable income $216,094 − $43,000 net long-term capital gain) at 2025 single rates = $34,390; plus $43,000 LTCG × 15% = $6,450 → regular tax $40,840. The ISO exercise-and-hold adds ZERO regular-tax income: the $100,000 bargain element is invisible to the regular system and surfaces only in AMT (common error #10).  _(§1(j); §1(h))_
 
-**Form 6251 (Example D — AMT)**  _([Example D Form 6251 AMT](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf))_
+**Form 6251 (Example D — AMT)**  _([Example D Form 6251 AMT](https://www.irs.gov/pub/irs-pdf/f6251.pdf))_
 
 | Line | Item | Amount |
 | --- | --- | --- |
 | 1 | Taxable income (Form 1040 line 15) | $216,094 |
 | 2a | Standard deduction add-back | $15,750 |
-| 2m | ISO exercise adjustment — 4,000 × ($28 − $3), §56(b)(3) | $100,000 |
+| 2i | ISO exercise adjustment — 4,000 × ($28 − $3), §56(b)(3) | $100,000 |
 | 4 | AMTI | $331,844 |
 | 5 | AMT exemption (single $88,100; AMTI below $626,350 phaseout → full) | ($88,100) |
 | 6 | Base | $243,744 |
-| 7 | Tentative minimum tax ($200,744 × 26% + $43,000 LTCG × 15%) | $58,643 |
-| 9 | Regular tax | $40,840 |
-| 10 | AMT — to Schedule 2, line 2 | $17,803 |
+| 7 | AMT computation before AMT foreign tax credit (none assumed) | $58,643 |
+| 8 | AMT foreign tax credit (none in supplied facts) | $0 |
+| 9 | Tentative minimum tax ($200,744 × 26% + $43,000 LTCG × 15%) | $58,643 |
+| 10 | Regular tax | $40,840 |
+| 11 | AMT — to Schedule 2, line 2 | $17,803 |
 
 - **AMT result and minimum tax credit — Example D** — Without the ISO seam AMT would be $0; the $100,000 preference produces ~$17,803 of real AMT. That AMT also generates a ~$17,803 minimum tax credit (Form 8801), recoverable when the shares are sold — a timing item, not a permanent cost.  _(§55; §53)_
 - **NIIT and Additional Medicare checks — Example D** — NIIT (§1411): AGI $231,844 > $200,000 → 3.8% × lesser of net investment income ($46,844) and MAGI over threshold ($31,844) = ~$1,210 — separate from AMT. Additional Medicare Tax (§3101(b)(2)): Medicare wages $197,000 < $200,000 → none.  _(§1411; §3101(b)(2))_
+
+
+```oa-check
+name: Example A, student-loan phaseout and final 2025 tax-table result
+inputs:
+  total_income: 105250
+  eligible_hsa: 4300
+  standard_deduction: 15750
+  ltcg: 5000
+  qualified_dividends: 2800
+  ordinary_tax_table: 11948
+  withholding: 12400
+steps:
+  student_loan_magi: total_income - eligible_hsa
+  student_loan_deduction: 0
+  agi: total_income - eligible_hsa - student_loan_deduction
+  taxable_income: agi - standard_deduction
+  ordinary_income: taxable_income - ltcg - qualified_dividends
+  preferential_tax: (ltcg + qualified_dividends) * 0.15
+  tax: ordinary_tax_table + preferential_tax
+  owed: tax - withholding
+expected:
+  student_loan_magi: 100950
+  agi: 100950
+  taxable_income: 85200
+  ordinary_income: 77400
+  tax: 13118
+  owed: 718
+```
+
+```oa-check
+name: Example C, final 2025 tax-table ordinary portion
+inputs:
+  taxable_income: 48550
+  ltcg: 9000
+  qualified_dividends: 3200
+  zero_rate_ceiling: 48350
+  ordinary_tax_table: 4127
+  withholding: 7000
+steps:
+  ordinary_income: taxable_income - ltcg - qualified_dividends
+  preferential_income: ltcg + qualified_dividends
+  zero_rate_income: min(preferential_income, max(0, zero_rate_ceiling - ordinary_income))
+  preferential_tax: (preferential_income - zero_rate_income) * 0.15
+  tax: ordinary_tax_table + preferential_tax
+  refund: withholding - tax
+expected:
+  ordinary_income: 36350
+  preferential_tax: 30
+  tax: 4157
+  refund: 2843
+```
 
 ## 20. Provenance and citations
 
 ### 20.1 Primary authority
 
 **Internal Revenue Code** (Title 26 USC): §§1, 1(g), 1(h), 1(j), 2, 24, 25A, 25D, 30D, 32, 55, 56, 57, 63, 68, 86, 121, 151, 152, 162, 163, 164, 165, 170, 172, 183, 199A, 213, 408, 411, 469, 691, 877A, 1091, 1202, 1211, 1250, 1402, 1411
-**OBBBA (One Big Beautiful Bill Act, P.L. 119-21)**: §70101 (rate permanence), §70110 (mortgage cap permanence), §70112 (casualty loss), §70113 (misc itemized suspension permanent), §70114 (Pease permanent), §70201 (QBI 23% in 2026), §70203 (60% charity limit permanent), §70205 (§461(l) permanent), §70301 (CTC permanence), §70302 (adoption credit), §70401 ($40k SALT cap 2025-2029), §70405 (§108 QPRI extension), §70501 (§25D termination), §70502 (§30D / §25E termination), §70601 (tip deduction), §70602 (overtime deduction), §70603 (auto loan interest)
+**OBBBA (One Big Beautiful Bill Act, P.L.119-21)**: The operative sections already read for this correction include §70105 (20% QBI permanence and post-2025 changes), §70120 (SALT), §70431 (QSBS), §70501 (used clean vehicle), §70502 (new clean vehicle), and §70506 (residential clean energy termination). Other original topics remain covered above, including mortgage, casualty, miscellaneous deductions, charitable deductions, CTC, adoption, tips, overtime, auto-loan interest and excess-business-loss rules; use each operative citation there, not the former contradictory index. A blanket 2026 QPRI extension is not established; apply IRC §108’s written-arrangement timing. [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm); [CODE108](https://uscode.house.gov/us/usc/119-124/t26/s108/).
 **TCJA (Tax Cuts and Jobs Act, P.L. 115-97)**: §11045 (misc itemized suspension), §11049 (moving expense), §11051 (alimony)
 **SECURE 2.0 Act (Division T of Consolidated Appropriations Act, 2023)**: §107 (RMD age), §302 (RMD penalty reduction)
 **Inflation Reduction Act (P.L. 117-169)**: §13301 (§25C/§25D pre-OBBBA), §13401 (§30D pre-OBBBA)
@@ -913,6 +976,35 @@ The reviewer must confirm:
 13. 1095-A reconciliation on Form 8962 if marketplace coverage.
 14. Direct deposit routing/account verified character by character.
 15. Preparer signature, PTIN, firm EIN, and §6695 due diligence checklist (Form 8867 for EITC, CTC, AOTC, HoH) complete.
+
+## Sources
+
+The following operative readings are reused from the completed 22 November 2026 report. They support the changed claims only; unchanged held claims and synthetic eligibility assumptions are not cleared. Generic form URLs returned the final 2025 forms in that reading; confirm the tax-year heading before reusing a later download.
+
+| Source | Official URL | Read date |
+| --- | --- | --- |
+| LAW | [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) | 2026-11-22 |
+| CODE108 | [CODE108](https://uscode.house.gov/us/usc/119-124/t26/s108/) | 2026-11-22 |
+| F | [F](https://www.irs.gov/pub/irs-pdf/f1040.pdf) | 2026-11-22 |
+| I | [I](https://www.irs.gov/instructions/i1040gi) | 2026-11-22 |
+| S1 | [S1](https://www.irs.gov/pub/irs-pdf/f1040s1.pdf) | 2026-11-22 |
+| S3 | [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) | 2026-11-22 |
+| S2 | [S2](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf) | 2026-11-22 |
+| AMT | [AMT](https://www.irs.gov/pub/irs-pdf/f6251.pdf) | 2026-11-22 |
+| B | [B](https://www.irs.gov/instructions/i1040sb) | 2026-11-22 |
+| USED | [USED](https://www.irs.gov/credits-deductions/used-clean-vehicle-credit) | 2026-11-22 |
+| EF | [EF](https://www.irs.gov/e-file-providers/frequently-asked-questions-e-file-requirements-for-specified-tax-return-preparers-sometimes-referred-to-as-the-e-file-mandate) | 2026-11-22 |
+| NFT | [NFT](https://www.irs.gov/pub/irs-drop/n-23-27.pdf) | 2026-11-22 |
+| P501 | [P501](https://www.irs.gov/publications/p501) | 2026-11-22 |
+| P550 | [P550](https://www.irs.gov/publications/p550) | 2026-11-22 |
+| P590B | [P590B](https://www.irs.gov/publications/p590b) | 2026-11-22 |
+| P590A | [P590A](https://www.irs.gov/publications/p590a) | 2026-11-22 |
+| P575 | [P575](https://www.irs.gov/publications/p575) | 2026-11-22 |
+| P526 | [P526](https://www.irs.gov/publications/p526) | 2026-11-22 |
+| P547 | [P547](https://www.irs.gov/publications/p547) | 2026-11-22 |
+| P925 | [P925](https://www.irs.gov/publications/p925) | 2026-11-22 |
+| KID | [KID](https://www.irs.gov/instructions/i8615) | 2026-11-22 |
+| ICARE | [ICARE](https://www.irs.gov/instructions/i2441) | 2026-11-22 |
 
 ## End of skill note
 
