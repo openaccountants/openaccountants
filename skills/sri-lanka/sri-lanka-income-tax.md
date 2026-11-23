@@ -460,7 +460,7 @@ Expected: include as business income at progressive rates by default; FLAG for r
 | Return | Asmt_IIT return of income on IRD e-Services, by 30 November 2027 for YA 2026/27 (eight months after the year end, section 93(1)) |
 | Balance of tax | Pay the ordinary self-assessment balance by 30 September 2027 under section 82(2)(c)(ii). For taxable investment gains, sections 82(2)(c)(i) and 93(3) give the separate deadline. |
 | Instalments | 15 August, 15 November, 15 February and 15 May under section 90(2). Use prior-year tax unless the taxpayer had no prior-year taxable income or expects lower taxable income this year. Check the current IRD instalment declaration under section 90(3). |
-| TIN | Register with the IRD under section 102. Section 103(6) has effect from 1 April 2026. The IRD certificate procedure applies from 1 November 2026 for the specified persons and transactions. |
+| TIN | Register with the IRD under section 102. Section 103(6) has effect from 1 April 2026. The IRD deferred mandatory TIN certificate submission for individuals in the specified transactions until 1 April 2027. Check the verification routes and statutory exceptions in sections 103(6)(c) and 103(7). |
 
 ### Excel Working Paper Template
 
@@ -608,6 +608,7 @@ ONBOARDING QUESTIONS: SRI LANKA INCOME TAX
 | VAT registration and ordinary threshold | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Value%20Added%20Tax%20(VAT).aspx | 2026-11-24 |
 | Social Security Contribution Levy (Amendment) Act, No. 10 of 2026, section 2 | https://www.documents.gov.lk/view/acts/2026/4/10-2026_E.pdf | 2026-11-24 |
 | IRD TIN certificate circular SEC/2026/E/07 | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2026_E_07_E.pdf | 2026-11-24 |
+| IRD 5 November 2026 TIN certificate deferral notice | https://www.ird.gov.lk/en/Lists/Latest%20News%20%20Notices/Attachments/823/SEC_PN_IT_2026-06_E.pdf | 2026-11-24 |
 | IRD instalment calculation and declaration circular SEC/2026/E/06 (Re-Revised) | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2026_E_06_ReRiv_E.pdf | 2026-11-24 |
 | Payment of Gratuity Act, sections 5 to 7 | https://labourdept.gov.lk/downloads/labour_code/55.pdf | 2026-11-24 |
 | Employees' Trust Fund Act, section 16 | https://labourdept.gov.lk/downloads/labour_code/51.pdf | 2026-11-24 |
