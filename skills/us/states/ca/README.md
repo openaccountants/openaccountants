@@ -35,6 +35,7 @@ Calendar tax year for individuals. Income tax authority: the Franchise Tax Board
 | XB, cross-border and residency | ca-residency-leaving-california | checked against the law |
 | Workflow, freelancer intake | us-ca-freelance-intake | checked against the law |
 | Workflow, federal and California assembly | us-ca-return-assembly | checked against the law |
+| Special taxes and fees, hazardous waste Environmental Fee (CDTFA, 2026 return due 1 March 2027) | ca-hazardous-waste-environmental-fee | checked against the law |
 | Bookkeeping | ca-bookkeeping-monthly-close | accountant-reviewed |
 | Formation | ca-formation | checked against the law |
 
