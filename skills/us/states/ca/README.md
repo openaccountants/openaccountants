@@ -34,6 +34,7 @@ Calendar tax year for individuals. Income tax authority: the Franchise Tax Board
 | SC and PR, payroll withholding, SDI and unemployment insurance | ca-payroll | checked against the law |
 | XB, cross-border and residency | ca-residency-leaving-california | checked against the law |
 | Workflow, freelancer intake | us-ca-freelance-intake | checked against the law |
+| IT-IND and IT-CORP, film credits 2.0, 3.0 and 4.0: carryover, sale and program 4.0 refund (SB 186) | ca-film-credit-carryover-sale-refund | checked against the law |
 | Workflow, federal and California assembly | us-ca-return-assembly | checked against the law |
 | Bookkeeping | ca-bookkeeping-monthly-close | accountant-reviewed |
 | Formation | ca-formation | checked against the law |
