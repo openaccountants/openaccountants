@@ -4,7 +4,7 @@ description: Decide whether an individual is a US resident or nonresident for fe
 version: "2.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-22
+last_updated: 2026-11-23
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -22,7 +22,7 @@ type: situation-rules
 
 In scope: one individual's federal income tax residency for calendar year 2026, the dates it starts and ends, and the statements and forms that make the position stick. The result decides which return is filed (Form 1040, Form 1040-NR or a dual-status return) and whether worldwide income is taxed.
 
-- **US citizens**, including dual citizens who hold US citizenship, are resident by citizenship. They are taxed on worldwide income from all sources whether they live in the US or abroad, and reliefs such as the foreign earned income exclusion and the foreign tax credit are only available by filing a return ([IRS: U.S. citizens and resident aliens abroad](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad)). A treaty does not change this: the saving clause lets the US tax its citizens as if the treaty had not come into effect (for example the [US-Germany treaty](https://www.irs.gov/pub/irs-trty/germany.pdf), Protocol paragraph 1(a)). The rest of this skill is about non-citizens.
+- **US citizens**, including dual citizens who hold US citizenship, are resident by citizenship. They are taxed on worldwide income from all sources whether they live in the US or abroad, and reliefs such as the foreign earned income exclusion and the foreign tax credit are only available by filing a return ([IRS: U.S. citizens and resident aliens abroad](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad)). For example, the US-Germany Convention's saving clause in Article 1(4)(a), as substituted by [2006 Protocol Article I](https://www.irs.gov/pub/irs-trty/germanprot06.pdf), preserves US taxation of its citizens, subject to the exceptions in Article 1(5). The rest of this skill is about non-citizens.
 - **Resident or nonresident matters because** a resident alien is taxed like a citizen, on worldwide income; a nonresident alien is taxed only on US-source income and on income effectively connected with a US trade or business ([Pub. 519](https://www.irs.gov/publications/p519), chapters 1 and 4).
 - **Immigration status and tax status are separate.** A work visa does not by itself make someone a tax resident, and a student visa does not by itself make someone a nonresident.
 
@@ -356,7 +356,8 @@ expected:
 | Form 8843 (2026). Read for the A-3 and G-5 rule, teacher and trainee 2 of 6 years and the four-part exception, students over 5 calendar years, medical condition limits, where to file and the penalty for not filing. | https://www.irs.gov/pub/irs-pdf/f8843.pdf | 2026-11-13 |
 | Form 8833 (Rev. December 2022). Read for the USD 1,000 penalty line, the dual-resident box and the long-term resident note on termination of residency and Form 8854. | https://www.irs.gov/pub/irs-pdf/f8833.pdf | 2026-11-13 |
 | Instructions for Form 1040-NR (2025). Read for "When and Where Should You File?": 15th day of the 4th month with withheld wages, otherwise the 6th month, and the weekend rule. | https://www.irs.gov/pub/irs-pdf/i1040nr.pdf | 2026-11-13 |
-| US-Germany income tax treaty (IRS copy). Read for Article 4(2) tie-breaker order and Protocol paragraph 1(a), the saving clause. | https://www.irs.gov/pub/irs-trty/germany.pdf | 2026-11-13 |
+| US-Germany income tax treaty (IRS copy). Article 4(2) supplies the tie-breaker order; apply the later protocol amendments as well. The original Protocol paragraph 1(a) is superseded. | https://www.irs.gov/pub/irs-trty/germany.pdf | 2026-11-13 |
+| US-Germany 2006 Protocol, Article I: replaces Convention Article 1, including saving clause 1(4)(a) and exceptions 1(5), "Except to the extent provided in paragraph 5". Article XVI replaces original Protocol paragraphs 1–28; its new paragraph 1 defines long-term resident. These bounded passages were read; not the whole protocol. | https://www.irs.gov/pub/irs-trty/germanprot06.pdf | 2026-11-23 |
 | IRS: Substantial presence test. Read for the test, excluded days, the definition of United States and the Form 8843 timing consequence. | https://www.irs.gov/individuals/international-taxpayers/substantial-presence-test | 2026-11-13 |
 | IRS: Residency starting and ending dates. Read for the green card date, a card received abroad, both tests, the exempt-individual note and residency in the next year. | https://www.irs.gov/individuals/international-taxpayers/residency-starting-and-ending-dates | 2026-11-13 |
 | IRS: Closer connection exception to the substantial presence test. Read for the conditions and Form 8840. | https://www.irs.gov/individuals/international-taxpayers/closer-connection-exception-to-the-substantial-presence-test | 2026-11-13 |
