@@ -83,7 +83,7 @@ Built from the law: not yet approved by an accountant. Produced by OpenAccountan
 | --- | --- |
 | Export of liquor or tobacco products | Ordinary taxable export profits use the 30% rate. Paragraph 4(2C)(d) excludes exports from 45% from 1 April 2025. The 2026 amendment added the export exclusion to the earlier 40% provision. |
 | IT services exporter paid in foreign currency but funds kept abroad | Not remitted through a bank: 30% |
-| Taxable investment-asset gain | 30%, separate from the business stream and excluded from instalments. File the gain return and pay within 30 days after the end of the month of realisation under sections 82(2)(c)(i) and 93(2). |
+| Taxable investment-asset gain | 30%, separate from the business stream and excluded from instalments. File the gain return and pay within 30 days after the end of the month of realisation under sections 82(2)(c)(i) and 93(3). |
 | 0% remittance tax on retained income | Retain the year's total income in Sri Lanka for at least three years from the first day of the following year of assessment and invest it in business expansion, eligible Colombo Stock Exchange securities, Treasury bills, Treasury bonds or Sri Lanka International Sovereign Bonds. |
 | Remitted profits | Section 62(3) includes relevant Sri Lankan taxable profits retained abroad and excludes dividends paid by a resident company. |
 | Historic 24% or 28% rates | Do not use for 2026/27; 30% since 1 April 2023 |
