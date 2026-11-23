@@ -1,10 +1,10 @@
 ---
 name: us-form-5471-cfc-information
 description: Decide whether a US person must file Form 5471 for a foreign corporation in tax year 2026, which filer category or categories apply (1a to 1c, 2, 3, 4, 5a to 5c), and which schedules follow, using the December 2025 Form 5471 and its instructions. Covers the 10% US shareholder and more-than-50% CFC tests with family and entity attribution, the filing exceptions (constructive owners, joint filers, foreign-controlled CFCs under Rev. Proc. 2019-40, dormant corporations under Rev. Proc. 92-70), the $10,000 penalties under sections 6038 and 6679 with the $50,000 continuing-failure cap, the foreign tax credit reduction, the open statute under section 6501(c)(8), and the routes to fix missed years. Explains the One Big Beautiful Bill Act changes that reach Form 5471 from 2026 (GILTI renamed net CFC tested income, the one-month deferral election repealed, section 958(b)(4) restored with new section 951B, the new pro rata share rule). Trigger on "Form 5471", "CFC", "controlled foreign corporation", "foreign company owner", "5471 penalty", "Category 4", "Category 5", "US shareholder of a foreign corporation". The NCTI (GILTI) computation itself is in us-gilti-fdii-beat. Federal only.
-version: "2.2"
+version: "2.3"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-23
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
@@ -39,7 +39,7 @@ Out of scope, and where it goes:
 ## Ask the client first
 
 1. **The ownership chart on every day of the foreign corporation's 2026 tax year.** For each shareholder: name, US or foreign person, class of stock, number of shares, votes and value, and dates of every purchase, sale, issue or redemption. Category 4 is tested at any time in the filer's tax year; Category 5 looks at who owned stock on the last day the corporation was a CFC; Category 3 is triggered by the transaction itself.
-2. **Family.** Shares owned by the client's spouse, children, grandchildren and parents (section 318(a)(1)), and whether each of them is a US citizen or resident. Stock of a nonresident alien relative is not attributed to a US citizen or resident for the CFC tests (section 958(b)(1)). Siblings are never attributed.
+2. **Family.** Shares owned by the client's spouse, children, grandchildren and parents (section 318(a)(1)), and whether each of them is a US citizen or resident. Stock of a nonresident alien relative is not attributed to a US citizen or resident for the CFC tests (section 958(b)(1)). Siblings are not included in section 318 family attribution for the CFC tests. For the separate section 6046 reporting tests behind Categories 2 and 3, the family definition includes brothers and sisters (whole or half blood), spouse, ancestors and lineal descendants; apply that definition separately ([26 U.S.C. 6046(c)](https://uscode.house.gov/us/usc/t26/s6046/)).
 3. **Entities and estates in between.** Any partnership, corporation, trust or estate that owns shares, whether it is US or foreign, and the client's share of it. Foreign entities pass ownership up proportionately (section 958(a)(2)); US entities count only through constructive ownership (section 958(b)).
 4. **Roles.** Is the client (or a US person related to them) an officer or director of the foreign corporation? That alone can create Category 2.
 5. **The foreign corporation's tax year**, and whether it used the one-month deferral election under former section 898(c)(2). For a year beginning after 30 November 2025 that election is gone and the first year under the new rule may be short.
@@ -129,10 +129,10 @@ What each schedule holds, in short:
 | Schedule | Content | Revision in use |
 | --- | --- | --- |
 | A | Classes of stock and shares outstanding at the start and end of the year; each class listed separately | Form 5471, Dec 2025 |
-| B | Part I: US shareholders of the corporation (section 951(b), direct, indirect or constructive); Part II: direct shareholders of the corporation | Form 5471, Dec 2025 |
+| B | Part I: for ordinary Category 3 and 4 reporting, US persons owning 10% or more of vote or value directly or indirectly through foreign entities; apply the separate section 953(c) rule where relevant. Constructive-only ownership does not itself put a person in this Part I population. Part II: direct shareholders of the corporation ([Instructions, Schedule B](https://www.irs.gov/instructions/i5471)) | Form 5471, Dec 2025 |
 | C | Income statement in functional currency and US dollars; the starting point for subpart F and tested income and for E&P on Schedule H | Form 5471, Dec 2025 |
 | E, E-1 | Foreign income taxes paid, accrued or deemed paid, by separate category; E-1 is included with E. Feeds the section 901 and 960 credits | Dec 2021 |
-| F | Balance sheet, start and end of year, on US tax principles, not local GAAP | Form 5471, Dec 2025 |
+| F | Balance sheet, start and end of year, prepared in functional currency and translated to US dollars using US GAAP; DASTM corporations instead use the tax balance-sheet rules in Treas. Reg. 1.985-3(d) ([Instructions, Schedule F](https://www.irs.gov/instructions/i5471)) | Form 5471, Dec 2025 |
 | G | Other information: yes/no questions on hybrids, elections, disregarded entities, section 304 transactions (new line 21) and the pro rata share transition rule (line 22a and new 22b); new question 3b on qualified business units with a different functional currency (Form 8964-TRA). The main source of audit questions: answer each one | Form 5471, Dec 2025 |
 | G-1 | Cost sharing arrangements | Dec 2023 |
 | H | Current earnings and profits under section 964, from book income with tax adjustments | Dec 2021 |
@@ -256,7 +256,7 @@ Streamlined procedures are for failures to report income from foreign financial 
 
 Dana counts her own 8% plus her husband's 4% (section 318(a)(1)(A)(i)): 12%, so she is a US shareholder. The brother's 40% is not attributed to her (no sibling attribution), but he is a US shareholder on his own. Stock owned by US shareholders: 8% + 4% + 40% = 52%, more than 50%, so the company is a CFC. Dana's 12% is far from control, so not Category 4. No acquisition in 2026, so not Category 3. Dana is **Category 5a**: page 1 plus Schedule B Part II, E, E-1, G, G-1, H, I, I-1, J, P, Q and R. Her husband (also 12%, with a direct interest) is Category 5a as well; the constructive-owner exception does not apply to either of them because each owns shares directly, but they may file one joint Form 5471 with item H completed and a statement plus Schedule P attached to the other return.
 
-The other way: if the brother owned 35% (foreigners 53%), US shareholders would own 47%. The company is not a CFC, so no Category 5, and with no acquisition and no control, **no Form 5471** for 2026. The 3-point difference decides the whole filing; confirm the share register on every day of the year, since the CFC test is met on any one day.
+The other way: if the brother owned 35% (foreigners 53%), US shareholders would own 47%. The company is not a CFC, so no Category 5, and with no acquisition and no control, **no Form 5471** for 2026. The 5-percentage-point difference between 52% and 47% decides the whole filing; confirm the share register on every day of the year, since the CFC test is met on any one day.
 
 ```oa-check
 name: Category decision, Dana, 2026 (CFC at 52%, not at 47%)
@@ -287,7 +287,7 @@ The flags read 1 for yes and 0 for no. The CFC test is "more than 50%", so exact
 
 **Case 2, penalty exposure for missed years.** Leo, a US citizen in Texas, wholly owns two foreign companies and filed no Form 5471 for 2023, 2024 or 2025 (six failures, each a section 6038(b) failure as Category 4). One IRS notice covers all six. He files everything 150 days after the notice was mailed, with no reasonable cause accepted.
 
-Base penalty: 2 companies x 3 years x USD 10,000 = USD 60,000. After the notice, 150 - 90 = 60 days remain, which is 2 periods of 30 days, so USD 20,000 more per failure (below the USD 50,000 cap), USD 120,000 in all. Total USD 180,000, before any foreign tax credit reduction under section 6038(c) (which is itself reduced by these penalties). The returns for 2023 to 2025 also stay open for assessment until 3 years after the forms are furnished (section 6501(c)(8)). If his income was all reported, the next step is the delinquent information return route with a reasonable cause statement for each form.
+Base penalty: 2 companies x 3 years x USD 10,000 = USD 60,000. After the notice, 150 - 90 = 60 days remain, which is 2 periods of 30 days, so USD 20,000 more per failure (below the USD 50,000 cap), USD 120,000 in all. Total USD 180,000, before any foreign tax credit reduction under section 6038(c) (which is itself reduced by these penalties). The returns for 2023 to 2025 also stay open for assessment until 3 years after the forms are furnished (section 6501(c)(8)). Because an IRS notice about these delinquent forms has already been received, the no-prior-contact condition for the delinquent international information return submission procedures is not met. Respond to the notice with the filing evidence and any supported reasonable cause position through the penalty-response route in `us-irs-collections-and-controversy`; do not promise penalty relief merely because the income was reported ([IRS procedure eligibility](https://www.irs.gov/individuals/international-taxpayers/delinquent-international-information-return-submission-procedures)).
 
 ```oa-check
 name: Section 6038(b) penalties, 2 corporations x 3 years, filed 150 days after notice
@@ -366,6 +366,7 @@ The foreign corporation's tax year that ends with or within the filer's tax year
 
 | Source | URL | Read on |
 | --- | --- | --- |
+| Selected correction passages: section 6046(c) family definition; Instructions for Form 5471, Schedule B Part I and Schedule F; current Form 5471 page 4 Schedule F; delinquent procedure eligibility. Exact anchors: "brothers and sisters (whether by the whole or half blood)"; "directly or indirectly through foreign entities"; "using U.S. GAAP translation rules"; "have not already been contacted by the IRS". The five-percentage-point case correction is derived from the unchanged 52% and 47% results. | https://uscode.house.gov/us/usc/t26/s6046/ ; https://www.irs.gov/instructions/i5471 ; https://www.irs.gov/pub/irs-pdf/f5471.pdf ; https://www.irs.gov/individuals/international-taxpayers/delinquent-international-information-return-submission-procedures | 2026-11-22 to 2026-11-23; selected passages only |
 | Instructions for Form 5471 (Rev. December 2025). Read for What's New (section 70352 repeal, pro rata share transition rule, Schedule G 3b, 21, 22b), Categories of Filers and their exceptions, Additional Filing Exceptions, the filing requirements chart (page 8), item B, penalties, dormant corporations, exchange rates, corrections. | https://www.irs.gov/pub/irs-pdf/i5471.pdf | 2026-11-13 |
 | Form 5471 (Rev. December 2025). Read for item B category boxes, items F to H, and the section 898 tax year line. | https://www.irs.gov/pub/irs-pdf/f5471.pdf | 2026-11-13 |
 | IRS, About Form 5471. Read for the current revision and the schedule list (Schedule I-1 still titled for GILTI). | https://www.irs.gov/forms-pubs/about-form-5471 | 2026-11-13 |
