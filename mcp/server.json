@@ -3,7 +3,7 @@
   "name": "io.github.openaccountants/openaccountants",
   "title": "OpenAccountants",
   "description": "Read-only tax skills for AI in 190+ jurisdictions, built from the law. Approval shown per skill.",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "websiteUrl": "https://www.openaccountants.com",
   "repository": {
     "url": "https://github.com/openaccountants/openaccountants",
