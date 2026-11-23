@@ -1,10 +1,10 @@
 ---
 name: bangladesh-pit
 description: "Compute Bangladesh ordinary individual income tax for assessment year 2026-2027, with current salary relief, category bands, investment rebate, minimum tax and filing windows. Historical salary-component and rebate algorithms are superseded."
-version: 1.1
+version: 1.2
 jurisdiction: BD
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 depends_on:
   - workflow-base
 category: international
@@ -14,7 +14,7 @@ domain: income-tax
 type: computation
 ---
 
-# Bangladesh personal income tax v1.1
+# Bangladesh personal income tax v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -59,7 +59,7 @@ Amounts are BDT. These are enacted figures, not the original budget proposal.
 3. For ordinary employment use the statutory employment-income base and the aggregate exclusion above. Do not deduct the old separate house-rent, medical, conveyance or leave-fare limits on top. Basic pay, house rent, medical, conveyance, bonuses and other benefits enter the employment analysis; exclusions for particular benefits must be separately sourced.
 4. Apply ordinary bands to aggregated ordinary income using the taxpayer's category threshold. Do not subtract the threshold and then apply a second full exemption. Check special-rate/final-tax income separately.
 5. Rebate A excludes exempt income, reduced-rate income, partnership/AOP share income and income subject to final tax liability. Rebate B includes only qualifying investments/expenditure under Sixth Schedule part 3, subject to each instrument's limits. Do not use the old income-tiered rebate or a percentage-of-income investment cap. Insurance, approved/recognized funds, savings/deposit schemes, securities and donations require instrument-specific qualification; an investment label alone is insufficient (https://bdlaws.minlaw.gov.bd/act-1429/section-51908.html).
-6. Deduct the available rebate, then enforce the applicable ordinary minimum when income exceeds the threshold. Test other statutory minimum tax, surcharge and special regimes before deducting supported source/advance tax under section 173. A missing certificate is not a supported credit (https://bdlaws.minlaw.gov.bd/act-1429/section-52003.html). A credit excess is a reconciliation item, not an automatic cash refund.
+6. Deduct the available rebate, then enforce the applicable ordinary minimum when income exceeds the threshold. Test other statutory minimum tax, surcharge and special regimes before deducting supported source/advance tax under section 173. A missing certificate is not a supported credit (https://bdlaws.minlaw.gov.bd/act-1429/section-52003.html). Reconcile any credit excess. If a section 180 self-assessment return produces a refund for an individual whose income is confined to employment, financial assets and agriculture, section 170A(3) provides for an automated refund under section 215. For other self-assessment returns showing a refund, section 170A(5) routes the return to the Deputy Commissioner of Taxes for assessment under section 183.
 
 ### Filing, payment and timing adjustments
 
@@ -146,6 +146,8 @@ Do not infer an exemption, rebate instrument, credit or residence. Refer non-Ban
 | Read for Income Tax Act section 78, investment formula and income exclusions | https://bdlaws.minlaw.gov.bd/act-1429/section-51908.html | 2026-11-14 |
 | Read for Income Tax Act section 170, complete individual windows, first-filer/overseas and holiday exceptions | https://bdlaws.minlaw.gov.bd/act-1429/section-52000.html | 2026-11-14 |
 | Read for Income Tax Act section 173, payable tax and source/advance tax credits | https://bdlaws.minlaw.gov.bd/act-1429/section-52003.html | 2026-11-14 |
+| Read for Finance Act 2026 section 98, inserting the self-assessment refund and assessment routes in Income Tax Act section 170A | https://bdlaws.minlaw.gov.bd/act-1725/section-59472.html | 2026-11-24 |
+| Read for Income Tax Act section 215, bank transfer and refund processing | https://bdlaws.minlaw.gov.bd/act-1429/section-52045.html | 2026-11-24 |
 | Read for original Sixth Schedule part 1 paragraph 27 one-third salary exclusion, with its cap superseded by the following 2026 amendment | https://nbr.gov.bd/uploads/acts/Income_tax_act_2023.pdf | 2026-11-14 |
 | Read for Finance Act 89 section 135, services banking proviso and salary cap amendment | https://bdlaws.minlaw.gov.bd/act-1718/section-59129.html | 2026-11-14 |
 | Read for Income Tax Act section 2(15), (24), (45), periods and residence | https://bdlaws.minlaw.gov.bd/act-1429/section-51794.html | 2026-11-14 |
