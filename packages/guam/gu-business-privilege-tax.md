@@ -1,10 +1,10 @@
 ---
 name: gu-business-privilege-tax
-description: Work out and file the Guam business privilege tax (gross receipts tax, GRT) for 2026. Covers the tax on gross income with no deduction for costs, the rate cut from 4.5% (1 October 2025 to 30 September 2026) to 4% (from 1 October 2026), the 5% rate for primary contractors on military buildup construction contracts, the contractor deduction for amounts paid to licensed contractors who already paid the tax, the small business LECSB reduction to an effective 3%, banks on net income with an annual return, monthly GRT returns due on the 20th even when nothing is owed, Schedule GRT-E exemptions, the 5% per 30 days penalty (25% cap), the USD 50 missing identifying number penalty, and use and hotel occupancy tax lines on the same return. Trigger on "Guam BPT", "Guam gross receipts tax", "Form GRT", "GRT-1", "business privilege tax Guam", "Guam DRT business tax", "LECSB".
-version: "1.0"
+description: Work out and file the Guam business privilege tax (gross receipts tax, GRT) for 2026. Covers the gross-income base and its exceptions, the rate cut from 4.5% (1 October 2025 to 30 September 2026) to 4% (from 1 October 2026), the 5% rate for qualifying military buildup contracts, the contractor deduction, the capped small business LECSB reduction to an effective 3%, banks on net income with an annual return, monthly GRT due dates and zero returns, exemptions, late payment and identifying-number penalties, and use and occupancy tax lines on the same return. Trigger on "Guam BPT", "Guam gross receipts tax", "Form GRT", "GRT-1", "business privilege tax Guam", "Guam DRT business tax", "LECSB".
+version: "1.1"
 jurisdiction: US-GU
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -16,7 +16,7 @@ type: computation
 
 > **Source-cited draft.** Built from Guam Public Law 38-136 (the General Appropriations Act of 2027, which restates 11 GCA section 26202), the Guam Department of Revenue and Taxation (DRT) Form GRT-ONLINE samples (202511.3.D and 202610.1.D), Form GRT-1, the GRT instructions and the DRT tax calendar, read on 2026-11-14. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-**Answer first.** Guam has no sales tax or VAT. It charges a **business privilege tax** (BPT, filed as the gross receipts tax or GRT) on the **gross income** of almost every business carried on in Guam, with no deduction for costs. For calendar 2026 the general rate is **4.5% for January to September 2026** and **4% from 1 October 2026** (11 GCA 26202 as restated by P.L. 38-136). A primary contractor on a **military buildup construction contract** pays **5%**. Every business files a **monthly** return (Form GRT online) by the **20th of the following month**, even with no receipts. Late payment costs **5% for each 30 days or part of 30 days, up to 25%**, plus interest at the rate the Tax Commissioner sets.
+**Answer first.** Guam has no general sales tax or VAT. Its **business privilege tax** (BPT, filed as the gross receipts tax or GRT) generally applies to **gross receipts or income**, with statutory exceptions. For calendar 2026 the general rate is **4.5% for January to September 2026** and **4% from 1 October 2026** (11 GCA § 26202 as restated by P.L. 38-136). A primary contractor pays **5%** on the Guam portion of a qualifying **military buildup construction contract**. Monthly filers file and pay by the **20th of the following month**, including months with no tax due. Adjust for weekends and legal holidays. Banks and specified lenders file annually. Late payment costs **5% for each 30 days or part of 30 days, up to 25%**, subject to the statutory minimum, plus interest.
 
 ## Scope and who this is for
 
@@ -54,15 +54,15 @@ Out of scope, and where it goes:
 | Poker machines, on gross proceeds less winnings, pay-outs and refunds | 8% | [P.L. 38-136, 11 GCA 26202(a)](https://guamlegislature.gov/38th_Guam_Legislature/Public_Laws_38th/Public%20Law%2038-136.pdf) |
 | Boxing, on gross income | 12% | [P.L. 38-136, 11 GCA 26202(b)(3)](https://guamlegislature.gov/38th_Guam_Legislature/Public_Laws_38th/Public%20Law%2038-136.pdf) |
 | Banks and lending institutions, on net income, annual return within 90 days after the tax year | 4.5% then 4% (same dates) | [P.L. 38-136, 11 GCA 26202(f)](https://guamlegislature.gov/38th_Guam_Legislature/Public_Laws_38th/Public%20Law%2038-136.pdf) |
-| LECSB: prior-year gross income of at least | USD 50,000 | [DRT Form GRT-ONLINE (202610.1.D), Worksheet A](https://www.guamtax.com/forms/FormGRT_OnlineSample_v202610.1.D_FINAL_SECURED.pdf) |
-| LECSB: prior-year gross income of no more than | USD 500,000 | [DRT Form GRT-ONLINE (202610.1.D), Worksheet A](https://www.guamtax.com/forms/FormGRT_OnlineSample_v202610.1.D_FINAL_SECURED.pdf) |
+| LECSB: prior-year aggregate gross annual income | More than USD 50,000 and no more than USD 500,000 | [P.L. 36-081 § 1, 11 GCA § 26203.2](https://archives.guamlegislature.gov/36th_Guam_Legislature/Mess_Comms_36th/Doc.%20No.%2036GL-22-1738.pdf) |
+| LECSB: current tax year qualifying receipts | First USD 500,000 in aggregate | [P.L. 36-081 § 1, 11 GCA § 26203.2](https://archives.guamlegislature.gov/36th_Guam_Legislature/Mess_Comms_36th/Doc.%20No.%2036GL-22-1738.pdf) |
 | LECSB reduction on qualifying income, months at 4.5% (effective rate 3%) | 1.5% | [DRT Form GRT-ONLINE (202511.3.D), Worksheet A line 6](https://www.guamtax.com/forms/FormGRT_OnlineSample_v202511.3.D_FINAL.pdf) |
 | LECSB reduction on qualifying income, months at 4% (effective rate 3%) | 1% | [DRT Form GRT-ONLINE (202610.1.D), Worksheet A line 6](https://www.guamtax.com/forms/FormGRT_OnlineSample_v202610.1.D_FINAL_SECURED.pdf) |
-| Use tax on property imported or bought for use, not resale | 4% | [DRT Form GRT-ONLINE (202610.1.D), lines 15 to 17](https://www.guamtax.com/forms/FormGRT_OnlineSample_v202610.1.D_FINAL_SECURED.pdf) |
-| Hotel and motel occupancy tax, on the room price per occupancy | 11% | [DRT Form GRT-ONLINE (202610.1.D), line 19](https://www.guamtax.com/forms/FormGRT_OnlineSample_v202610.1.D_FINAL_SECURED.pdf) |
-| Return and payment due | 20th day of the following month, even with nothing to report | [DRT GRT instructions](https://www.guamtax.com/forms/GRTi.pdf); [DRT tax calendar](https://www.guamtax.com/info/calendar.html) |
+| Use tax on landed value of taxable property used or consumed in Guam | 4%. Check the exclusions and exemptions, including for transactions already taxed or exempted under Chapter 26. | [11 GCA §§ 28102–28106](https://guamcourts.gov/compileroflaws/GCA/11gca/11gc028.PDF) |
+| Transient occupancy tax on rent per occupancy per day | 11% for a hotel or motel. 4% for a registered bed and breakfast. | [11 GCA § 30101](https://guamcourts.org/compileroflaws/GCA/11gca/11gc030.PDF) |
+| Monthly return and payment due | 20th day of the following month, even with no tax due. Move a Saturday, Sunday or legal holiday deadline to the next business day. | [DRT GRT instructions](https://www.guamtax.com/forms/GRTi.pdf); [DRT tax calendar](https://www.guamtax.com/info/calendar.html) |
 | Late payment penalty | 5% of the tax for each 30 days or part of 30 days, at most 25%; at least the smaller of the tax or USD 25 | [DRT Form GRT-ONLINE (202610.1.D), page 2, 11 GCA 26111](https://www.guamtax.com/forms/FormGRT_OnlineSample_v202610.1.D_FINAL_SECURED.pdf) |
-| Missing taxpayer identification number on a return | USD 50 each | [DRT Form GRT-ONLINE (202610.1.D), page 2, 11 GCA 26111](https://www.guamtax.com/forms/FormGRT_OnlineSample_v202610.1.D_FINAL_SECURED.pdf) |
+| Missing taxpayer identification number on a return | USD 50 each unless the taxpayer shows reasonable cause and no wilful neglect | [11 GCA § 26111(c)](https://guamcourts.org/compileroflaws/GCA/11gca/11gc026.PDF) |
 
 Before 1 October 2025 the general rate was 5% (since 1 April 2018, per the note on Form GRT-1); older forms and the 2010 instructions still show 4% or 5%. Use the rate for the month the income falls in.
 
@@ -72,21 +72,21 @@ Before 1 October 2025 the general rate was 5% (since 1 April 2018, per the note 
 
 ### Step 2: the base for each line
 
-2. **Gross income** of each activity goes in column A on its line (wholesaling, retailing, service, rental, profession, commission, insurance premium, contracting, military contracting, interest, amusement, others). No deduction for cost of goods, wages, rent or any other expense.
-3. **Retailer that also wholesales**: the law taxes the retail proceeds and requires books that show each business separately (26202(a)(2)). A manufacturer selling at wholesale or for delivery outside Guam is not taxed on those sales (26202(a)(4)), except alcoholic beverage manufacturers.
-4. **Export sales** of goods in foreign commerce are not part of the base but are still reported (26202(a)(1)); claim them in column B with Schedule GRT-E.
-5. **Contractors**: deduct amounts paid to another licensed contractor who has already paid the tax on them, and show that contractor's name and licence number on the return (26202(e)).
+2. **Gross income** of each activity goes in column A on its line (wholesaling, retailing, service, rental, profession, commission, insurance premium, contracting, military contracting, interest, amusement, others). Deduct only statutory amounts, such as qualifying contractor deductions. Banks use the statutory net-income base. Check the special bases for insurers and foreign currency dealers.
+3. **Retailer that also wholesales**: the law taxes the retail proceeds and requires books that show each business separately (§ 26202(a)(2)). The manufacturing exception in § 26202(a)(4) covers the manufacturer’s own goods delivered outside Guam or sold to manufacturers, wholesalers, licensed retailers or persons actually selling to the US government. Alcoholic beverage manufacturers cannot use it.
+4. **Export sales** of goods in foreign commerce are excluded from the base (§ 26202(a)(1)). Report them in column B with the supported schedule of exemptions and deductions.
+5. **Contractors**: deduct only the included income on qualifying goods and services for which the other contractor already paid the tax under the applicable provision. Record the identifier allowed by § 26202(e), such as the contractor’s name and contractor licence number, Guam business licence number, specified professional registration number or Certificate of Authorization number.
 6. **Military buildup construction contract**: only the primary contractor contracting directly with the Department of Defense or a federal agency acting for it pays 5%, on the part performed in Guam. Subcontractors, suppliers and consultants under that contract pay the general rate (26202(e)(1)).
 
 ### Step 3: tax, LECSB and total
 
 7. Column C (taxable) = A minus B. Column E = C times the rate.
-8. **LECSB (Worksheet A)**: only if 2025 gross income for all activities was **USD 50,000 to USD 500,000**, and only on the taxable amounts on lines 2 to 8 (retail, service, rentals, profession, commission, insurance premium). Reduction = qualifying amount times 1.5% (months at 4.5%) or 1% (months at 4%), giving an effective 3%. Enter on line 14a; line 14b is the total GRT. Keep the running total of LECSB income for the year (Worksheet A line 7).
-9. Line 42 = total tax (GRT plus use and occupancy tax). Lines 43 and 44 add penalty and interest if late; line 45 takes credits; line 46 is the balance due.
+8. **LECSB (Worksheet A)**: verify prior-year aggregate gross income **above USD 50,000 and up to USD 500,000** under § 26203.2. Both DRT samples say ‘at least $50,000’. Refer a filer exactly at that boundary to DRT before filing, and use the statute for the computation. Subtract previously used qualifying receipts from the USD 500,000 annual limit, flooring the remainder at zero. Apply 1.5% (months at 4.5%) or 1% (months at 4%) to the lesser of the remaining limit and the month’s qualifying taxable receipts. This portion is effectively taxed at 3%. Worksheet A totals lines 2C to 8C. Section 26203.2 also lists farming, so confirm its reporting and any separate exemption with DRT. Enter the reduction on line 14a, total GRT on line 14b and the running receipt total on Worksheet A line 7.
+9. Reconcile line 42 to total taxes, including the LECSB-adjusted GRT, use and occupancy taxes and any separately applicable excises. Lines 43 and 44 add penalty and interest, line 45 takes credits and line 46 gives the balance.
 
 ### Step 4: file and pay
 
-10. File online at GuamTax.com (Business E-Services, "E-File GRT") by the 20th of the next month, and pay online at guampay.com, at the DRT Business Privilege Tax Branch (1240 Route 16, Barrigada), at Treasurer of Guam cashiers or at authorised banks. With no income, still file, entering zero.
+10. Monthly filers file at GuamTax.com (Business E-Services, "E-File GRT") by the applicable deadline, even if no tax is due. Pay by the same deadline using [PayGuam](https://pay.guam.gov/), the DRT Business Privilege Tax Branch, Treasurer of Guam cashiers or an authorised bank. Refer an electronic filing hardship request to DRT. For banks and other businesses covered by § 26202(f), use the annual return.
 
 ## Boundary and exception table
 
@@ -94,10 +94,10 @@ Before 1 October 2025 the general rate was 5% (since 1 April 2018, per the note 
 | --- | --- |
 | Invoice in September 2026, cash received in October 2026, cash method | October income, 4% |
 | Same, accrual method | September income, 4.5% |
-| Subcontractor did not pay the tax, or no licence number shown | No contractor deduction |
+| Subcontractor did not pay the tax, or no permitted identifier shown | No supported contractor deduction |
 | Subcontractor under a military buildup contract | General rate, not 5% |
 | LECSB business whose 2025 gross income was USD 520,000 | Not eligible for any month of 2026 |
-| LECSB business with wholesale or contracting income only | No reduction: lines 2 to 8 only |
+| LECSB business with wholesale or contracting income only | No reduction on those activities |
 | Bank or lending institution | Annual return on net income, not monthly |
 | Payment 31 days late | Two 30-day periods: 10% penalty |
 
@@ -107,22 +107,22 @@ Before 1 October 2025 the general rate was 5% (since 1 April 2018, per the note 
 | --- | --- |
 | Reporting method | Use the method in the books; confirm before splitting September and October |
 | 2025 gross income | No LECSB until shown |
-| Subcontractor licence number | No deduction |
-| Activity line | Line 13 "Others", at the general rate |
+| Subcontractor identifier | Hold the deduction until a permitted identifier and proof of tax paid are available |
+| Activity line | Determine the activity and statutory rate before using the residual line 13 |
 
 ### Red flags to raise with the client
 
 | Flag | Why it matters |
 | --- | --- |
-| Tax worked out on profit | Understated tax; the base is gross income |
+| An ordinary gross-income activity worked on profit | Check the gross-income tax base and allowed deductions |
 | 4% used for January to September 2026 | Understated by 0.5% of the base |
-| 5% still used after October 2025 (old form or software) | Overpaid; claim a refund (DRT has a BPT claim form) |
-| Missing zero returns | A return is due every month |
-| LECSB claimed without checking the annual cap | The 2026 form leaves the cap blank; confirm with DRT |
+| Old 5% rate used on a general-rate receipt from October 2025 | Recompute and check eligibility for a refund using the DRT BPT claim form |
+| Missing zero returns for a monthly filer | A return is still due |
+| LECSB claimed without checking use of the annual cap | Reconcile the running qualifying receipts to the USD 500,000 limit in § 26203.2 |
 
 ## Worked cases
 
-**Case 1, the rate change and the LECSB reduction.** A Guam consulting firm (service, line 3) had 2025 gross income of USD 300,000, so it qualifies for LECSB. It has USD 30,000 of taxable service income in September 2026 and USD 30,000 in October 2026. September: tax USD 1,350 at 4.5%, LECSB reduction USD 450 at 1.5%, net USD 900. October: tax USD 1,200 at 4%, reduction USD 300 at 1%, net USD 900. The effective rate is 3% both months; without LECSB the two months cost USD 2,550.
+**Case 1, the rate change and the LECSB reduction.** A Guam consulting firm (service, line 3) had 2025 gross income of USD 300,000, so it qualifies for LECSB. It has USD 30,000 of taxable service income in September 2026 and USD 30,000 in October 2026, with at least USD 60,000 of its annual LECSB limit unused before September. September: tax USD 1,350 at 4.5%, LECSB reduction USD 450 at 1.5%, net USD 900. October: tax USD 1,200 at 4%, reduction USD 300 at 1%, net USD 900. The effective rate is 3% both months; without LECSB the two months cost USD 2,550.
 
 ```oa-check
 name: Guam GRT, September and October 2026, with LECSB
@@ -185,20 +185,22 @@ Monthly return (Form GRT online at GuamTax.com) and payment by the **20th of the
 ## Completion checklist
 
 - Each amount placed in its month by the reporting method; 4.5% to September 2026, 4% from October 2026.
-- No costs deducted, except the contractor deduction with licence numbers.
+- Each deduction is authorised by the relevant provision. Contractor deductions have proof of tax paid and the required identifier.
 - 5% used only for a primary contractor on a military buildup construction contract.
-- LECSB tested on 2025 gross income, applied only to lines 2 to 8.
-- Zero returns filed for quiet months; payment by the 20th.
+- LECSB tested on the prior tax year's gross annual income and the current tax year's remaining USD 500,000 limit. Confirm reporting for farming receipts with DRT.
+- Monthly filers make zero returns and pay by the applicable day, accounting for weekends and legal holidays.
 
 ## Sources
 
 | Source | URL | Read on |
 | --- | --- | --- |
 | Guam P.L. 38-136, General Appropriations Act of 2027 (lapsed into law 30 August 2026). Read for section 2 (4% from 1 October 2026) and the restated 11 GCA 26202: 4.5% from 1 October 2025, 4% from 1 October 2026, the 5% military buildup rate, the contractor deduction, banks on net income with a 90-day annual return, poker machines 8%, boxing 12%, export sales, retailer-wholesaler and manufacturer rules. | https://guamlegislature.gov/38th_Guam_Legislature/Public_Laws_38th/Public%20Law%2038-136.pdf | 2026-11-14 |
-| DRT Form GRT-ONLINE sample (202610.1.D). Read for the 4% and 5% line rates, use tax 4%, occupancy 11%, Worksheet A (LECSB, USD 50,000 to USD 500,000, 1% reduction, 3% effective), lines 42 to 46, the 20th-day rule, the 5% per 30 days penalty with the 25% cap and USD 25 minimum, the USD 50 identifying number penalty. Image file, read by OCR and checked by eye. | https://www.guamtax.com/forms/FormGRT_OnlineSample_v202610.1.D_FINAL_SECURED.pdf | 2026-11-14 |
+| DRT Form GRT-ONLINE sample (202610.1.D). Read for the October rates and Worksheet A, fields 42 to 46, the 20th-day rule, late payment and identifying-number penalties. The form's inclusive lower LECSB boundary differs from the statute and the worksheet leaves the annual cap blank. | https://www.guamtax.com/forms/FormGRT_OnlineSample_v202610.1.D_FINAL_SECURED.pdf | 2026-11-22 |
+| Guam P.L. 36-081 § 1, 11 GCA § 26203.2. Confirmed strict lower and inclusive upper prior-year thresholds, qualifying activities, and USD 500,000 current-year limit. | https://archives.guamlegislature.gov/36th_Guam_Legislature/Mess_Comms_36th/Doc.%20No.%2036GL-22-1738.pdf | 2026-11-22 |
+| 11 GCA Chs 26, 28 and 30. Confirmed monthly filing, penalties and interest, use tax and transient occupancy tax. | https://guamcourts.org/compileroflaws/GCA/11gca/11gc026.PDF · https://guamcourts.gov/compileroflaws/GCA/11gca/11gc028.PDF · https://guamcourts.org/compileroflaws/GCA/11gca/11gc030.PDF | 2026-11-22 |
 | DRT Form GRT-ONLINE sample (202511.3.D). Read for the 4.5% line rates and the 1.5% LECSB reduction. | https://www.guamtax.com/forms/FormGRT_OnlineSample_v202511.3.D_FINAL.pdf | 2026-11-14 |
 | DRT Form GRT-1 (0616v11). Read for the note that 4% applied before 1 April 2018. | https://www.guamtax.com/forms/GRT1.pdf | 2026-11-14 |
 | DRT General Instructions for Forms GRT-1, GRT-2 and GRT-3 (Rev. March 2010). Read for monthly filing even with no tax, Schedule GRT-E, where and how to pay, amended returns. Its rates are out of date. | https://www.guamtax.com/forms/GRTi.pdf | 2026-11-14 |
 | DRT tax calendar. Read for GRT due on the 20th and the weekend and holiday rule. | https://www.guamtax.com/info/calendar.html | 2026-11-14 |
 
-Not yet confirmed: the Guam Code Annotated chapter 26 on the Compiler of Laws site was not opened (its links returned errors), so the law is read as restated in P.L. 38-136; the LECSB annual cap (left blank on the 2026 form; an earlier form showed USD 500,000) and whether P.L. 35-90 still authorises LECSB; the interest rate; the bed and breakfast occupancy rate (unreadable on the 2026 sample).
+Confirm the applicable interest rate with DRT for the overdue period. Section 26112 applies the Commissioner's adjusted annual rate to the unpaid balance of tax and penalties.
