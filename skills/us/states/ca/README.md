@@ -30,6 +30,7 @@ Calendar tax year for individuals. Income tax authority: the Franchise Tax Board
 | IT-CORP, LLC annual tax and fee (the `covered_by` owner) | ca-llc-fee-and-tax | checked against the law (partial) |
 | IT-CORP, single-member LLC Form 568 filing | ca-smllc-form-568 | checked against the law |
 | IT-CORP, pass-through entity elective tax | ca-pte-elective-tax | checked against the law |
+| Sales and use tax, vehicles, vessels and aircraft bought out of state (12-month use tax presumption, shell companies) | ca-out-of-state-vehicle-vessel-aircraft-use-tax | checked against the law |
 | VAT / sales and use tax | california-sales-tax | checked against the law |
 | SC and PR, payroll withholding, SDI and unemployment insurance | ca-payroll | checked against the law |
 | XB, cross-border and residency | ca-residency-leaving-california | checked against the law |
