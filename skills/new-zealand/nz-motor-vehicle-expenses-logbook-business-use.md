@@ -312,4 +312,4 @@ Had Kōwhai Ltd opted out in time, it would instead claim only the business shar
 | IRD, Ways to value: read for the minimum tax book values (NZD 8,333 and 7,317), the 5-year rule and the Investment Boost rates from 1 April 2026 | https://www.ird.govt.nz/employing-staff/deductions-from-other-payments/fringe-benefit-tax/types/motor-vehicles/ways-to-value | 2026-11-14 |
 | IRD, Close companies and FBT: read for income-year FBT returns (NZD 1,000,000 test), election deadlines, due dates and the opt-out conditions | https://www.ird.govt.nz/employing-staff/deductions-from-other-payments/fringe-benefit-tax/close-companies | 2026-11-14 |
 
-Not yet published at 22 November 2026: Inland Revenue's kilometre rates for 2026-27. Use the published rates for the income year of the claim.
+Not yet confirmed: Inland Revenue's kilometre rates for 2026-27, which were not yet published at 22 November 2026. Use the published rates for the income year of the claim.
