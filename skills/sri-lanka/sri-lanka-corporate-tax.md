@@ -176,3 +176,5 @@ expected:
 | IRD 5 November 2026 TIN certificate deferral notice | https://www.ird.gov.lk/en/Lists/Latest%20News%20%20Notices/Attachments/823/SEC_PN_IT_2026-06_E.pdf | 2026-11-24 |
 
 The linked IRD tax chart is for 2025/26. The company rates for 2026/27 follow the Act. Loss carry-forward, capital allowances and any company-specific concessions need a separate check.
+
+Not yet confirmed: a standalone IRD tax chart for YA 2026/27 and any taxpayer-specific concessions, losses or capital allowances without the relevant facts.
