@@ -39,9 +39,9 @@ Authorities: the Revenue Division, Ministry of Finance and Economy (MOFE) for in
 | Corporate income tax | 18.5% of chargeable income (YA 2015 onward) | YA 2026 | https://www.mof.gov.bn/div_revenue_faq_corporatetax/ |
 | Gross sales or turnover exemption | Qualifying company income is exempt if gross sales or turnover is BND 1,000,000 or less. Count goods, services, interest, royalties and dividends | YA 2026 | https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-35-2024-ED-INCOME-TAX-ACT.pdf#page=30 |
 | Corporate partial exemption | For companies outside the turnover exemption, tax the first BND 100,000 of chargeable income at 25% of the standard rate and the next BND 150,000 at 50% of that rate. Eligible companies incorporated and registered in Brunei and resident there in each of their first 3 consecutive YAs can exempt the first BND 100,000 in those YAs | YA 2026 | https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-35-2024-ED-INCOME-TAX-ACT.pdf#page=70 |
-| Oil and gas exploration and production profits | 55% of chargeable profits, subject to any allowance under section 8A | YA 2026 | https://www.agc.gov.bn/AGC%20Images/LAWS/ACT_PDF/I/CHAPTER%20119%20%282022%29.pdf#page=28 |
+| Oil and gas exploration and production profits | 55% of chargeable profits, subject to any allowance under section 8A | YA 2026 | https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-119-6-2022-ED-INCOME-TAX-PETROLEUM-ACT.pdf#page=28 |
 | Ordinary domestic personal income, unincorporated business income and capital gains | No general tax levied. Special non-resident withholding can apply | 2026 | https://www.mof.gov.bn/div_revenue_faq_corporatetax/ |
-| Withholding on payments to non-residents | 2.5% covered loan interest; 10% covered royalties, technical services, management fees, rent of movable property and remuneration of non-resident company directors. Check source, local activity, permanent establishment and treaty relief | 2026 | https://www.mof.gov.bn/div_revenue_withholdingoftax_whtrate/ |
+| Withholding on payments to non-residents | 2.5% covered loan interest; 10% covered royalties, technical services, management fees, rent of movable property and remuneration of non-resident company directors. Check source, local activity, permanent establishment and treaty relief | 2026 | https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-35-2024-ED-INCOME-TAX-ACT.pdf#page=69 |
 | Company return | By 30 June each year. ECI and related payment within 3 months of accounting period end unless the return has already been furnished | YA 2026 | https://www.mof.gov.bn/div_revenue_paymentoftax/ |
 | SPK, employee | 8.5% of covered wages under ordinary SPK | 2026 | https://www.tap.com.bn/spk-members-contribution |
 | SPK, employer | For ordinary SPK: BND 57.50 up to BND 500 of wages, 10.5% from BND 500.01 to BND 1,500 (minimum BND 57.50), 9.5% from BND 1,500.01 to BND 2,800, and 8.5% above BND 2,800 | 2026 | https://www.tap.com.bn/employers-responsibilities-contribution |
@@ -127,9 +127,9 @@ expected:
 
 | Income Tax Act, Chapter 35 | Turnover exemption, bands, withholding and penalties | https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-35-2024-ED-INCOME-TAX-ACT.pdf | 2026-11-22 |
 | Stamp Act, Chapter 34 | Domestic and overseas stamping and late-stamping periods, sections 34–39 | https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-34-2022-ED-STAMP-ACT-ACT.pdf#page=32 | 2026-11-22 |
-| Brunei–Singapore double taxation agreement | Article 14 on independent personal services | https://www.iras.gov.sg/media/docs/default-source/dtas/singapore-brunei-dta-%28ratified%29%2830july2010%29.pdf#page=12 | 2026-11-22 |
+| Brunei–Singapore double taxation agreement | Article 14 on independent personal services | https://www.agc.gov.bn/wp-content/uploads/2026/08/S-96-2006-E.pdf#page=15 | 2026-11-22 |
 | Revenue Division withholding tax relief | Claim procedure and supporting evidence | https://www.mof.gov.bn/div_revenue_withholdingoftax_claimofrelief/ | 2026-11-22 |
 | Registry of Companies and Business Names | Sole proprietor eligibility | https://www.mofe.gov.bn/wp-content/uploads/2025/10/1.-Register-a-Business-Name-Brochure.pdf | 2026-11-22 |
 | Brunei Darussalam Central Bank | Currency Interchangeability Agreement | https://www.bdcb.gov.bn/monetary-policy/monetary-policy-framework | 2026-11-22 |
 
-Customs and excise rates depend on tariff classification. Stamp duty rates depend on the instrument.
+Not yet confirmed: transaction-specific customs and excise rates without a tariff classification and origin, or stamp duty without the instrument details.
