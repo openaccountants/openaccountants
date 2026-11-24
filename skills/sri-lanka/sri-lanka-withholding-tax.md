@@ -46,22 +46,22 @@ Apply the investment and service rates to payments with a Sri Lankan source. Che
 | Payment | Rate | Conditions | Source |
 | --- | --- | --- | --- |
 | Interest or discount | 10% | From 1 April 2025 | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx |
-| Dividend | 15% | From 1 January 2023, subject to the section 84(3) exclusions | First Schedule, paragraph 10 |
-| Rent to a resident person | 10% on the full payment | Only if aggregate rent exceeds Rs. 100,000 in the calendar month | same |
-| Service fee under section 85(1C) to a resident individual who is not an employee (teaching, lecturing, examining, invigilating, exam supervision; commission or brokerage to an insurance, sales or canvassing agent; listed or prescribed independent service providers) | 5% on the full payment | Only if aggregate payment exceeds Rs. 100,000 in the calendar month | same |
-| Winnings from a lottery, reward, betting or gambling | 14% | | same |
-| Charge, natural resource payment or premium (section 195) | 14% | | same |
-| Royalty (section 195) | 14% | | same |
-| Rent to a non-resident | 14% | Treaty may reduce | same |
-| Service fee or insurance premium to a non-resident | 14% | Treaty may reduce | same |
+| Dividend | 15% | From 1 January 2023, subject to the section 84(3) exclusions | [First Schedule, paragraph 10](https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf) |
+| Rent to a resident person | 10% on the full payment | Only if aggregate rent exceeds Rs. 100,000 in the calendar month | [First Schedule, paragraph 10](https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf) |
+| Service fee under section 85(1C) to a resident individual who is not an employee (teaching, lecturing, examining, invigilating, exam supervision; commission or brokerage to an insurance, sales or canvassing agent; listed or prescribed independent service providers) | 5% on the full payment | Only if aggregate payment exceeds Rs. 100,000 in the calendar month | [First Schedule, paragraph 10](https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf) |
+| Winnings from a lottery, reward, betting or gambling | 14% | | [First Schedule, paragraph 10](https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf) |
+| Charge, natural resource payment or premium (section 195) | 14% | | [First Schedule, paragraph 10](https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf) |
+| Royalty (section 195) | 14% | | [First Schedule, paragraph 10](https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf) |
+| Rent to a non-resident | 14% | Treaty may reduce | [First Schedule, paragraph 10](https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf) |
+| Service fee or insurance premium to a non-resident | 14% | Treaty may reduce | [First Schedule, paragraph 10](https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf) |
 | Land, sea or air transport or telecom service by a non-resident | 2% | Resident payer and a payment within section 73(h) or (i); section 85(2) | https://www.ird.gov.lk/en/publications/gazette_documents/2018_2064-51_e.pdf |
 | Sale price of a gem sold at a National Gem and Jewellery Authority auction | 2.5% | | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx |
 | Payment of tax withheld | Within 15 days after the end of each calendar month | Section 86(1) | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
-| Annual statement | Within 30 days after 31 March | Section 86(2) | same |
-| Late payment penalty | 20% of tax due but not paid | Unpaid 14 days after the due date, or by the date on the assessment notice if later; section 179(1) | same |
-| Late payment interest | one and one-half per cent per month or part month | Computed monthly from the original due date, disregarding extensions; sections 157 and 159(1) | same |
+| Annual statement | Within 30 days after 31 March | Section 86(2) | [Income Tax Act s 86(2)](https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf) |
+| Late payment penalty | 20% of tax due but not paid | Unpaid 14 days after the due date, or by the date on the assessment notice if later; section 179(1) | [Income Tax Act s 179(1)](https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf) |
+| Late payment interest | one and one-half per cent per month or part month | Computed monthly from the original due date, disregarding extensions; sections 157 and 159(1) | [Income Tax Act ss 157 and 159](https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf) |
 | Statement format non-compliance | Up to two hundred thousand rupees a year, after a warning notice not complied with within 14 days | New sections 86(9), 178A(1), (2) | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
-| False self-declaration by an individual (interest) | Up to two hundred thousand rupees | Prior notice must specify the false or misleading particulars. After a penalty, no substitute declaration may be given for the declaration in the notice; sections 178A(3)–(5) | same |
+| False self-declaration by an individual (interest) | Up to two hundred thousand rupees | Prior notice must specify the false or misleading particulars. After a penalty, no substitute declaration may be given for the declaration in the notice; sections 178A(3)–(5) | [Act No. 11 of 2026, s 30](https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf) |
 
 ### Steps
 
@@ -169,10 +169,10 @@ expected:
 | Read for the withholding tax and AIT rate table, with effect from 1 April 2025, in the IRD tax chart | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx | 2026-11-24 |
 | Read for sections 84 to 87, 94, 157, 159 and 179 in the IRD consolidated Act | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf | 2026-11-24 |
 | Read for sections 12 to 15 (sections 84 to 87), 19 (section 94) and 30 (new section 178A) of the Inland Revenue (Amendment) Act No. 11 of 2026 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf | 2026-11-24 |
-| Gazette 2064/51, prescribed transport and telecommunications rate | https://www.ird.gov.lk/en/publications/gazette_documents/2018_2064-51_e.pdf | 2026-11-24 |
-| Circular SEC/2025/E/02, interest and treaty clearance | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2025_E_02_E.pdf | 2026-11-24 |
-| Circular SEC/2025/E/03, earlier self-declaration guidance | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2025_E_03_e.pdf | 2026-11-24 |
-| IRD notice of 24 March 2026, resident deposit self-declaration validity, updates and TIN exception | https://www.ird.gov.lk/en/Lists/Latest%20News%20%20Notices/Attachments/779/SEC_PN_IT_2026-01_E.pdf | 2026-11-24 |
+| Read for the 2% transport and telecommunications rate in Gazette 2064/51 | https://www.ird.gov.lk/en/publications/gazette_documents/2018_2064-51_e.pdf | 2026-11-24 |
+| Read for the 10% interest deduction and treaty clearance in circular SEC/2025/E/02 | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2025_E_02_E.pdf | 2026-11-24 |
+| Read for the earlier procedure and self-declaration annex in circular SEC/2025/E/03 | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2025_E_03_e.pdf | 2026-11-24 |
+| Read for resident deposit declaration validity, updates and the TIN exception in the 24 March 2026 notice | https://www.ird.gov.lk/en/Lists/Latest%20News%20%20Notices/Attachments/779/SEC_PN_IT_2026-01_E.pdf | 2026-11-24 |
 | IRD notice of 3 November 2026, payment channels and payment references | https://www.ird.gov.lk/en/Lists/Latest%20News%20%20Notices/Attachments/822/AIT_WHT_APIT_03112026_E.pdf | 2026-11-24 |
 | Circular SEC/2026/E/01, resident deposit self-declarations from 2026/27 | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2026_E_01_E.pdf | 2026-11-24 |
 
