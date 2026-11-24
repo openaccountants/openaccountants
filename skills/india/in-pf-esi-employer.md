@@ -84,7 +84,7 @@ The First Schedule sets thresholds of 20 employees for EPF and 10 persons for ES
 | EPS employer share for members with an accepted higher-wage joint option (from 1 September 2014) | Nine and forty-nine hundredths per cent (9.49%) | The increase applies to wages above fifteen thousand rupees per month | https://egazette.gov.in/WriteReadData/2026/273951.pdf |
 | EDLI contribution limit in the Code | One per cent (1%) of wages, or the percentage notified by the Central Government | EDLI Scheme paragraph 5 requires the notified rate | https://egazette.gov.in/WriteReadData/2020/222111.pdf |
 | EDLI employer contribution | 0.5% of wages up to the applicable ceiling | S.O. 3581(E) specifies the monthly rate with effect from 29 June 2026 | https://egazette.gov.in/WriteReadData/2026/274104.pdf#page=2 |
-| Ordinary EPF administrative charge | 0.5% of applicable wages, with an establishment-wide monthly minimum | 500 rupees if there is at least one contributing member that month, or 75 rupees where there are no active contributory members | https://unifiedportal-emp.epfindia.gov.in/epfo/ |
+| Ordinary EPF administrative charge | 0.50% of applicable wages, with an establishment-wide monthly minimum | 500 rupees if there is at least one contributing member that month, or 75 rupees where there are no active contributory members. See the current EPFO employer FAQ, Q13 | https://pmvbry-cdn.epfindia.gov.in/wp-content/uploads/2025/08/Annual_Report_2023-24.pdf |
 | EDLI death benefit, twelve months' continuous employment limb | Not less than 2,50,000 and not more than 7,00,000 rupees | Paid by the EPFO to the family | https://egazette.gov.in/WriteReadData/2026/273942.pdf |
 | ESI employer contribution | Three and one-fourth per cent (3.25%) of wages | Rule 19(1), rounded to the next higher rupee | https://egazette.gov.in/WriteReadData/2026/272366.pdf |
 | ESI employee contribution | Three-fourth per cent (0.75%) of wages | Rule 19(1). The section 2(31) exemption applies through average daily wages of 176 rupees inclusive under S.O. 6338(E) and 1950 rule 52 | https://egazette.gov.in/WriteReadData/2026/278111.pdf |
@@ -350,4 +350,4 @@ expected:
 | EPFO employer pages (tried for the administrative charge and EDLI rate) | https://www.epfindia.gov.in/site_en/For_Employers.php | Refused (403) on 2026-11-14, not read |
 | ESIC contribution page (tried for the payment due date and ESI ceiling) | https://www.esic.gov.in/contribution | Timed out on 2026-11-14, not read |
 
-Verify the EPF ceiling before 29 May 2026, any earlier EDLI instrument needed for the wage month, the precise EPS rate where the published expressions affect rounding, and any exemption-specific fees or campaign extension.
+Not yet confirmed: the EPF ceiling before 29 May 2026, any earlier EDLI instrument needed for the wage month, the precise EPS rate where the published expressions affect rounding, and any exemption-specific fees or campaign extension.
