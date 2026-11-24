@@ -195,3 +195,5 @@ File Form 941 with the IRS on its own quarterly timetable and make federal depos
 | 5 GCA chapter 34, article 3. New hire reporting. | https://www.guamcourts.org/compileroflaws/GCA/05gca/5gc034.pdf | 2026-11-22 |
 
 Confirm with the DRT whether it uses the 2026 Pub. 15-T tables without changes, any Guam employer unemployment contribution and any generally applicable SWICA weekend extension.
+
+Not yet confirmed: DRT adoption of every federal 2026 withholding worksheet without adjustment, deposit treatment at exactly USD 2,500 and local holiday treatment of the separate SWICA report. Confirm the due dates with DRT for the affected period.
