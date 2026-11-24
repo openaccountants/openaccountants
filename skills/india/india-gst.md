@@ -135,7 +135,7 @@ Every figure with its official source on the row. Subsection numbers (5.2, 5.5 a
 | Individual life insurance, health insurance and their reinsurance | Exempt from 22 September 2025 | Includes family floater and senior citizen policies given the insured meets the definition of individual. Group policies follow their own treatment | https://egazette.gov.in/WriteReadData/2025/266220.pdf#page=53 |
 
 | Hotel accommodation at or below INR 7,500 per unit per day or equivalent | 5% | From 1 November 2026 the hotel may take credit on same-line hotel accommodation inputs, capped at 2.5% CGST on their value and subject to the other ITC conditions | https://egazette.gov.in/WriteReadData/2026/277456.pdf#page=6 |
-| Hotel accommodation above INR 7,500 per unit per day or equivalent | 18% | Ordinary ITC conditions apply | https://gstcouncil.gov.in/sites/default/files/2024-02/gstservicerates.pdf |
+| Hotel accommodation above seven thousand five hundred rupees per unit per day or equivalent | 18% | Heading 9963, item 7(vi). Ordinary ITC conditions apply | https://cbic-gst.gov.in/hindi/gst-goods-services-rates.html |
 | Gyms, salons, barbers, yoga centres and similar physical well-being services | 5% | Supplier ITC condition applies under the rate entry | https://egazette.gov.in/WriteReadData/2025/266220.pdf#page=9 |
 | Cement | 18% | Heading 2523, check the current tariff description | https://egazette.gov.in/WriteReadData/2025/266209.pdf#page=76 |
 | Air transport of passengers in other than economy class | 18% | See heading 9964 and its specific entries | https://egazette.gov.in/WriteReadData/2025/266220.pdf#page=9 |
@@ -1166,4 +1166,4 @@ The version history (October 2026 team rewrite, v2.1 and v2.2 merges of the reti
 | Health Security se National Security Cess | https://dor.gov.in/files/acts_files/Act.pdf and https://www.dor.gov.in/files/rules_files/Rule.pdf | 2026-11-24 |
 
 
-The two transaction portals could not be opened directly on 24 November 2026. Verify portal-specific workflows with GSTN guidance. Use the relevant State or UT instruments for local late fees and any rate variation.
+Not yet confirmed: transaction-specific portal behaviour at the inaccessible live endpoints and any local late fees or rate variation without the relevant State or Union Territory instruments. Use the cited GSTN guidance for the supported workflows.
