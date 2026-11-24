@@ -287,6 +287,8 @@ expected:
 | Rates and Monetary Amounts and Amendment of Revenue Laws Bill B34–2026, sections 3, 4 and 7 and Schedule I, for YoA 2027 figures | https://www.parliament.gov.za/storage/app/media/Bills/2026/B34-2026_Rates_and_Monetary_Amounts.pdf | 2026-11-22 |
 | SARS, s 11F annual allowable deductions and short-year cap | https://www.sars.gov.za/latest-news/retirement-fund-contribution-deductions-section-11f2a/ | 2026-11-22 |
 
+Not yet confirmed: enactment of the YoA 2027 rates at the 22 November 2026 cutoff. Check the final Act for the applicable year before relying on the bill or interim SARS tables.
+
 ## Disclaimer
 
 > **General reference only.** This file is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. Do not rely on it to file, pay, amend or take a tax position without review by a qualified professional in South Africa.
