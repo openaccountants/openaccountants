@@ -158,3 +158,5 @@ expected:
 For the separate motor vehicle regime, from 1 May 2026 SSCL applies at importation and domestic wholesale or retail sales of motor vehicles are exempt. See section 4 of Act No. 10 of 2026 and `sri-lanka-sscl`.
 
 Refer for excise, tariff classification, import VAT and SSCL calculations, PAL, CESS, anti-dumping and countervailing duties, BOI and SDP exemptions, and applicable licensing instruments.
+
+Not yet confirmed: the historical Gambling Regulatory Authority operational target and transaction-specific customs or excise figures without the commodity, import date and relief facts.
