@@ -204,3 +204,5 @@ Monthly return (Form GRT online at GuamTax.com) and payment by the **20th of the
 | DRT tax calendar. Read for GRT due on the 20th and the weekend and holiday rule. | https://www.guamtax.com/info/calendar.html | 2026-11-14 |
 
 Confirm the applicable interest rate with DRT for the overdue period. Section 26112 applies the Commissioner's adjusted annual rate to the unpaid balance of tax and penalties.
+
+Not yet confirmed: the DRT interest rate for the particular overdue period and the online reporting line for a specific farming receipt. Establish the receipt and tax periods before applying a rate.
