@@ -827,3 +827,5 @@ IRAS: "The NOR scheme has ceased. The last NOR status granted will run / be vali
 | Self-employed guidance on taxi fares, client entertainment and the records to retain. | https://www.iras.gov.sg/media/docs/default-source/e-tax/starter-guide-for-self-employed-tuition-centre-or-agency-operators.pdf | 2026-11-22 |
 
 Check the final YA 2027 portal opening, field and attachment details, and rounding before filing. Some relief pages illustrate YA 2026 facts, so apply their continuing rules to the relevant 2026 inputs. Refer unproved home-office apportionment, mixed client entertainment and uncertain ride-hailing arrangements.
+
+Not yet confirmed: the allowable home-office allocation without evidence of business use and the exact YA 2027 individual portal opening date. The IRAS calendar gives the closing date.
