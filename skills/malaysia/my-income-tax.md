@@ -1,11 +1,11 @@
 ---
 name: my-income-tax
 description: Use this skill whenever asked about Malaysia income tax for self-employed individuals, sole proprietors and partners for year of assessment 2026. Trigger on phrases like Malaysia income tax, LHDN, Lembaga Hasil Dalam Negeri, hasil.gov.my, Form B, Form BE, Form M, section 4(a), personal reliefs Malaysia, chargeable income Malaysia, tax rebate RM400, Malaysian tax return, e-Filing Malaysia, or any question about Malaysian income tax rates, reliefs, deductions, capital allowances, filing or penalties for a business individual. Covers the Schedule 1 resident scale, the 30% non-resident rate, adjusted income, capital allowances, personal reliefs under sections 46 to 49 and 46B, the section 6A rebate, Form B filing and penalties. Year of assessment 2026 is calendar 2026 income, filed in 2027.
-version: "2.0"
+version: "2.1"
 jurisdiction: MY
 tax_year: 2026
 tax_year_notes: "Year of assessment 2026 (basis year = calendar 2026), return due in 2027. Figures read from the Income Tax Act 1967 as at 1 January 2026."
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -37,7 +37,7 @@ Out of scope, with the skill that owns it:
 
 ## Ask the client first
 
-1. **Residence for 2026.** Days in Malaysia in 2026, and in 2025 and 2027 if under 182 (section 7). Residence switches the whole computation.
+1. **Residence for 2026.** Days in Malaysia in 2026, and in adjacent years and, where relevant, the preceding 4 years for the section 7 tests. Residence switches the whole computation.
 2. **Type of income.** Business or profession (Form B), employment only (Form BE), or both.
 3. **Structure.** Sole proprietor, partner (partnership files Form P), or a company (out of scope).
 4. **Gross income and expenses** for the 2026 basis year, with the asset purchases list for capital allowances.
@@ -48,7 +48,7 @@ Conservative defaults when a fact is missing:
 
 | Ambiguity | Default |
 | --- | --- |
-| Residence unknown | Treat as non-resident (30% flat, no reliefs) until confirmed |
+| Residence unknown | Confirm section 7 residence before finalising the return. Show a scenario only if its residence assumption is explicit. |
 | Business-use share unknown | 0% deduction |
 | Expense category unknown | Not deductible |
 | Relief eligibility or receipt unknown | Do not claim |
@@ -57,13 +57,13 @@ Minimum records: bank statements for 2026, business type, residence facts. Bette
 
 ## The method, step by step
 
-1. **Confirm residence** under section 7(1): 182 days or more in Malaysia in 2026 makes a resident; shorter stays can still qualify when linked to 182 consecutive days spanning the year boundary, or under the 90-day and three-year tests in section 7(1)(c) and (d). If not resident, go to step 8.
-2. **Gross business income.** All receipts of the business for the basis year.
+1. **Confirm residence** under section 7(1): 182 days or more in Malaysia in 2026 makes a resident; shorter stays can still qualify when linked to 182 consecutive days spanning the year boundary, or under section 7(1)(c) if the individual is in Malaysia for at least 90 days in 2026 and 3 of the 4 preceding years meet the residence or 90-day test. Section 7(1)(d) applies if the individual is resident in all 3 preceding years and in the following year. If not resident, go to step 8.
+2. **Gross business income.** Apply sections 22 to 24 to business income for the basis period. Include qualifying sale or service debts when they arise and applicable advance payments when received.
 3. **Adjusted income.** Deduct expenses wholly and exclusively incurred in producing the income (section 33(1)) and remove the items barred by section 39 (table under "The base").
-4. **Statutory income.** Deduct capital allowances under Schedule 3. Initial allowance is one-fifth of qualifying plant expenditure (Schedule 3 para 10); annual allowances are at prescribed rates (para 15). Assets of RM2,000 or less each may be written off in full (para 19A), capped at RM20,000 a year in total.
-5. **Losses.** Unabsorbed business losses are set against aggregate income and carried forward for ten consecutive years of assessment (section 44(5F)), then lapse.
+4. **Statutory income.** Deduct capital allowances under Schedule 3. The standard initial allowance is 20% of qualifying plant expenditure (Schedule 3 para 10). Annual allowances depend on the asset category under para 15. A qualifying asset of RM 2,000 or less can use the para 19A allowance in place of the ordinary allowances. The combined special allowance for a sole proprietor is capped at RM 20,000 per YA.
+5. **Losses.** Deduct current-year adjusted business losses against aggregate income under section 44(2). Carry forward the unused amount for the 10 consecutive YAs immediately after the loss year. Section 43(2) restricts those carried losses to aggregate statutory business income. Any balance then lapses under section 44(5F).
 6. **Chargeable income.** Total income less the personal reliefs in the table below (sections 46 to 49 and 46B). Reliefs are for residents only.
-7. **Tax.** Apply the Schedule 1 resident scale. Deduct the RM400 rebate if chargeable income is RM35,000 or less (section 6A), then zakat or fitrah paid (section 6A(3)), then CP500 instalments already paid.
+7. **Tax.** Apply the Schedule 1 resident scale. Apply the RM 400 personal rebate at chargeable income of RM 35,000 or less and check the additional RM 400 spouse rebate where the statutory conditions apply. Deduct qualifying zakat or fitrah paid to an authorised religious authority, capped with other rebates at the tax charged (section 6A). Credit CP500 instalments paid against the balance.
 8. **Non-resident.** Tax at a flat 30% of chargeable income (Schedule 1 para 1A), with no personal reliefs and no rebate.
 
 ### Rates, bands and thresholds
@@ -90,7 +90,7 @@ Resident scale, YA 2026 (ITA Schedule 1 Part I para 1). LHDN's tax-rate page sho
 | Small value asset, each (Sch. 3 para 19A) | RM2,000 | | | same |
 | Small value assets, total a year (Sch. 3 para 19A proviso) | RM20,000 | | | same |
 | Entertainment, share disallowed unless an exception applies (s. 39(1)(l)) | 50% | | | same |
-| Rental of a non-commercial vehicle, deduction cap (s. 39(1)(k)) | RM50,000; RM100,000 if new and cost up to RM150,000 | | | same |
+| Rental of a vehicle without a commercial passenger or goods licence, aggregate deduction cap over all YAs (s. 39(1)(k)) | RM 50,000 per vehicle, or RM 100,000 if unused before rental and total cost is at most RM 150,000 | | | same |
 
 Personal reliefs, YA 2026 (resident individuals; amounts are maximums unless fixed).
 
@@ -108,27 +108,30 @@ Personal reliefs, YA 2026 (resident individuals; amounts are maximums unless fix
 | SOCSO and EIS contributions (s. 46(1)(n)) | 350 | same |
 | Lifestyle: books, computer, smartphone, tablet, internet, skills courses (s. 46(1)(p)) | 2,500 | same |
 | Breastfeeding equipment, child aged 2 or under, once every two YAs (s. 46(1)(q)) | 1,000 | same |
-| Registered child care centre or kindergarten, child aged 6 or under (s. 46(1)(r)) | 3,000 | same |
+| Registered childcare centre or kindergarten for a child aged 6 or under, or registered care centre for a child aged 12 or under (s. 46(1)(r)) | 3,000 total | [Act 874](https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/3276537_BI/Act%20874%20-%20FINANCE%20ACT%202025.pdf) |
+| Qualifying Malaysian tourist attraction or cultural or arts programme entrance fees, YA 2026 (s. 46(1)(sa)) | 1,000 | [Act 874](https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/3276537_BI/Act%20874%20-%20FINANCE%20ACT%202025.pdf) |
 | Sports equipment, facility, competition and gym fees, additional (s. 46(1)(u)) | 1,000 | same |
-| EV charging, food waste compost machine, and from YA 2026 food waste grinder and home CCTV (s. 46(1)(v) and (1A)) | 2,500 total | same |
+| Personal EV charging and qualifying household food waste compost machines, grinders and CCTV (s. 46(1)(v) and (1A)) | 2,500 total | same |
 | Housing loan interest, first home, SPA 1 Jan 2025 to 31 Dec 2027, three consecutive years, citizen (s. 46B), price up to RM500,000 | 7,000 | same |
 | Same, price over RM500,000 up to RM750,000 (s. 46B) | 5,000 | same |
 | Wife (or husband under s. 45A) with no income or joint assessment (s. 47(1)(a)); alimony to former wife within the same cap (s. 47(2)) | 4,000 | same |
 | Disabled spouse, further (s. 47(1)(b)) | 6,000 | same |
-| Each unmarried child under 18, or 18 and over in A-level, matriculation or preparatory study (s. 48(2)(a)) | 2,000 | same |
-| Each unmarried child 18 and over at diploma level or higher in Malaysia, or degree level or higher abroad (s. 48(2)(b)) | 8,000 | same |
-| Disabled child; a further 8,000 if 18 or over and studying at diploma level or higher (s. 48) | 8,000 | https://www.hasil.gov.my/en/individu/pelepasan-cukai/ |
+| Each qualifying unmarried child under 18, or older child in qualifying full-time study or under articles or indentures (s. 48(1)(a) to (c) and (2)(a)) | 2,000 | same |
+| Each qualifying older unmarried child in approved full-time diploma or higher study in Malaysia, degree or equivalent study overseas, or qualifying articles or indentures in Malaysia (s. 48(3)(a)(i)) | 8,000 | same |
+| Qualifying unmarried disabled child. Add RM 8,000 for an older child meeting the approved higher education or qualifying training conditions under s. 48(3) | 8,000 base | [Public Ruling 5/2026](https://www.hasil.gov.my/wp-content/uploads/20261104-PR-5_Taxation-Of-A-Resident-Individualpart-I-Gifts-Or-Contributions-And-Allowable-Deductions.pdf) |
 | Life insurance or family takaful, and additional voluntary EPF (s. 49(1)(a)) | 3,000 | https://www.hasil.gov.my/wp-content/uploads/Income-Tax-Act-1967-online-version-as-at-1-January-2026.pdf ; https://www.hasil.gov.my/en/individu/pelepasan-cukai/ |
 | EPF or approved scheme contributions, including voluntary EPF of the self-employed (s. 49(1)(b)) | 4,000 | same |
-| Education or medical insurance premiums (s. 49(1)(c)) | 4,000 | same |
+| Education or medical insurance premiums (s. 49(1B)) | 4,000 | same |
 | Private Retirement Scheme and deferred annuity (s. 49(1D)) | 3,000 | same |
+
+Apply the eligibility and receipt rules in [Public Ruling 5/2026](https://www.hasil.gov.my/wp-content/uploads/20261104-PR-5_Taxation-Of-A-Resident-Individualpart-I-Gifts-Or-Contributions-And-Allowable-Deductions.pdf). Childcare relief is per claimant across eligible children, with one claim between spouses living together. Section 48 child claims require maintenance and a check of the child's income and any claim by another eligible person. For first-home interest, count 3 YAs from the first interest payment and exclude a home used to earn income. Under section 46(1A), claim the compost machine once in 2025–27 and the grinder and CCTV once in 2026–27. For YA 2026, section 49(3A) extends qualifying life insurance and family takaful to children within section 48(9).
 
 ### The base: what is deductible
 
 | Item | Treatment |
 | --- | --- |
 | Cost of goods sold, staff wages and employer EPF, business rent, utilities, professional fees, marketing, business travel, business insurance | Deductible under s. 33(1) when wholly and exclusively for the business |
-| Bad debts written off as irrecoverable | Deductible |
+| Irrecoverable trade debts | Deduct the qualifying amount under s. 34(2)–(3) when the debt was included in gross income and reasonable recovery steps support the write-off. Include recoveries in gross income. [Public Ruling 4/2019](https://www.hasil.gov.my/wp-content/uploads/PR_04_2019.pdf) |
 | Repairs and maintenance | Deductible if revenue in nature; improvements go to capital allowances |
 | Export promotion, approved training, disabled employee costs, approved R&D | Double deduction where the specific rule allows; check it before claiming |
 | Private or domestic expenses | Not deductible (s. 39(1)(a)) |
@@ -138,11 +141,15 @@ Personal reliefs, YA 2026 (resident individuals; amounts are maximums unless fix
 | Fines and penalties | Not deductible |
 | Donations | Not a business expense; approved gifts are deducted from aggregate income under s. 44(6) and following |
 
+For a vehicle without a commercial passenger or goods licence, the separate purchase-cost limit for capital allowances is RM 50,000. Schedule 3 para 2(2) raises it to RM 100,000 if the vehicle was unused and total cost does not exceed RM 150,000. This caps qualifying plant expenditure rather than the rental deduction.
+
+IRBM lists ordinary annual allowances of 20% for motor vehicles and heavy machinery, 14% for general plant and machinery and 10% for office equipment, furniture, fixtures and other assets. Under P.U. (A) 328/2024, qualifying scheduled ICT equipment can instead receive 40% initial and 20% annual allowance. Check the specific conditions and exclusions. Compare the distinct eligible e-invoicing relief, which uses a 20% initial and 40% annual allowance under P.U. (A) 162/2026 or 163/2026 as applicable.
+
 ## Boundary and exception table
 
 | Situation | Treatment |
 | --- | --- |
-| Present fewer than 182 days but linked to 182 consecutive days with 2025 or 2027 | Resident under s. 7(1)(b); temporary absences for business, treatment or social visits up to 14 days count |
+| Present fewer than 182 days but linked to at least 182 consecutive days with 2025 or 2027 | Apply s. 7(1)(b). Qualifying absence for Malaysian service, illness or social visits totalling at most 14 days can count under the statutory conditions. The individual must be in Malaysia immediately before and after the absence. The 14-day limit applies to social visits. |
 | Non-resident with business income | Form M, 30% flat, no reliefs, no rebate (a non-resident consultant with RM200,000 Malaysian income pays RM60,000) |
 | Chargeable income exactly RM35,000 | Rebate RM400 applies (s. 6A: "does not exceed") |
 | Husband and wife both with income | Separate assessment by default; joint assessment by election (s. 45); spouse relief only where one has no income or they elect joint |
@@ -223,11 +230,13 @@ Penalties (LHDN offences page and ITA):
 | --- | --- |
 | Not furnishing a return (s. 112(1)) | Fine RM200 to RM20,000, prison up to 6 months, or both; or a penalty under s. 112(3) instead of prosecution |
 | Late payment of the balance (s. 103(3)) | Increase of 10% of the tax unpaid (the further 5% under old s. 103(4) was deleted) |
-| CP500 instalment paid more than 30 days late (s. 107B(3)) | 10% of the instalment outstanding |
-| Actual tax more than 30% above the revised estimate (s. 107B(4)) | 10% of the difference |
+| CP500 instalment unpaid more than 30 days after its due date (s. 107B(3)) | 10% of the amount then unpaid, subject to any applicable concession |
+| Shortfall after an approved CP500 variation (s. 107B(4)) | If assessed tax less instalments payable exceeds 30% of assessed tax, charge 10% on the part of the shortfall above that 30% |
 | Incorrect return, no prosecution (s. 113(2)) | Penalty equal to the tax undercharged |
 | Incorrect return, prosecuted (s. 113(1)) | Fine RM1,000 to RM10,000 and 200% of the tax undercharged |
 | Wilful evasion (s. 114(1)) | Fine RM1,000 to RM20,000, prison up to 3 years, or both, and 300% of the tax undercharged |
+
+[IRBM's 5 January 2026 notice](https://www.hasil.gov.my/wp-content/uploads/20260105-kenyataan-media-hasil-konsesi-pengenaan-penalti-cp500-bg-individu-yg-menerima-pendapatan-penggajian.pdf) gives a YA 2026 CP500 non-payment penalty concession to individuals with both employment and non-employment income. Check the taxpayer's income sources and use the assessed balance for final payment.
 
 ## Completion checklist
 
@@ -248,5 +257,13 @@ Penalties (LHDN offences page and ITA):
 | Read for LHDN's YA 2025 relief list and the disabled-child further relief | https://www.hasil.gov.my/en/individu/pelepasan-cukai/ | 2026-11-14 |
 | Read for the fines and penalties table (s. 112 to 120, s. 103(3), s. 107B) | https://www.hasil.gov.my/en/perundangan/kesalahan-denda-dan-penalti/ | 2026-11-14 |
 | Read for the 2026 return filing programme: Forms BE, B, P, M due dates and the 15-day e-Filing grace | https://www.hasil.gov.my/wp-content/uploads/rf-filing-programme-for-2026.pdf | 2026-11-14 |
+| Finance Act 2025, Act 874, YA 2026 relief amendments. | https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/3276537_BI/Act%20874%20-%20FINANCE%20ACT%202025.pdf | 2026-11-22 |
+| Public Ruling 5/2026, resident deductions and conditions. | https://www.hasil.gov.my/wp-content/uploads/20261104-PR-5_Taxation-Of-A-Resident-Individualpart-I-Gifts-Or-Contributions-And-Allowable-Deductions.pdf | 2026-11-22 |
+| Public Ruling 4/2026, small-value assets. | https://www.hasil.gov.my/wp-content/uploads/PR-No.4_2026-Special-Allowances-For-Small-Value-Assets.pdf | 2026-11-22 |
+| Public Ruling 4/2019, trade debt deduction and recovery. | https://www.hasil.gov.my/wp-content/uploads/PR_04_2019.pdf | 2026-11-22 |
+| IRBM general annual allowances for plant, equipment and vehicles. | https://www.hasil.gov.my/syarikat/perniagaan-digital/ | 2026-11-22 |
+| P.U. (A) 328/2024, eligible ICT equipment. | https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/2460510/PUA%20328%20%282024%29.pdf | 2026-11-22 |
+| IRBM FAQ on the specified e-invoicing accelerated allowance. | https://www.hasil.gov.my/wp-content/uploads/lhdnm-e-invoice-general-faqs.pdf | 2026-11-22 |
+| IRBM CP500 January 2026 penalty concession for mixed income. | https://www.hasil.gov.my/wp-content/uploads/20260105-kenyataan-media-hasil-konsesi-pengenaan-penalti-cp500-bg-individu-yg-menerima-pendapatan-penggajian.pdf | 2026-11-22 |
 
-Not yet confirmed: the annual allowance rates for plant (prescribed by rules under Schedule 3 para 15, not opened; the old table showed 14% general plant, 10% office equipment, 20% motor vehicles and heavy machinery, 40% computers); the motor vehicle qualifying cost cap for capital allowances (old file RM100,000, or RM200,000 if on-the-road price up to RM150,000), also in the rules; the e-Filing grace period for YA 2026 returns (LHDN's 2027 programme is not yet published).
+Not yet confirmed: the e-Filing and payment grace period for YA 2026 individual returns. Use the statutory dates until IRBM publishes the 2027 programme. Asset-specific accelerated allowances require the asset, acquisition and use dates and the applicable legal instrument.
