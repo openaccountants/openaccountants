@@ -383,3 +383,5 @@ expected:
 | Act 21 of 2026, section 6, company surcharge exception | https://egazette.gov.in/WriteReadData/2026/275521.pdf#page=6 | 2026-11-24 |
 
 Confirm the actual state stamp duty, form fees and professional charges for the chosen facts. The ordinary 25% company rate for an entity with no 2024-25 turnover history, the OPC annual return date for a specific case and the LLP filing outcome when the thresholds split need case-specific confirmation.
+
+Not yet confirmed: the MCA cost for a particular authorised capital, state or filing, and the applicable FDI treatment without the actual investor, sector and company facts. Verify the LLP audit and Form 8 certification duties separately when only one threshold is exceeded.
