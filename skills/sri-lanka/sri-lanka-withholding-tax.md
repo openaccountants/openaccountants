@@ -55,7 +55,7 @@ Apply the investment and service rates to payments with a Sri Lankan source. Che
 | Rent to a non-resident | 14% | Treaty may reduce | same |
 | Service fee or insurance premium to a non-resident | 14% | Treaty may reduce | same |
 | Land, sea or air transport or telecom service by a non-resident | 2% | Resident payer and a payment within section 73(h) or (i); section 85(2) | https://www.ird.gov.lk/en/publications/gazette_documents/2018_2064-51_e.pdf |
-| Sale price of a gem sold at a National Gem and Jewellery Authority auction | 2.5% | | same |
+| Sale price of a gem sold at a National Gem and Jewellery Authority auction | 2.5% | | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx |
 | Payment of tax withheld | Within 15 days after the end of each calendar month | Section 86(1) | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
 | Annual statement | Within 30 days after 31 March | Section 86(2) | same |
 | Late payment penalty | 20% of tax due but not paid | Unpaid 14 days after the due date, or by the date on the assessment notice if later; section 179(1) | same |
@@ -175,3 +175,5 @@ expected:
 | IRD notice of 24 March 2026, resident deposit self-declaration validity, updates and TIN exception | https://www.ird.gov.lk/en/Lists/Latest%20News%20%20Notices/Attachments/779/SEC_PN_IT_2026-01_E.pdf | 2026-11-24 |
 | IRD notice of 3 November 2026, payment channels and payment references | https://www.ird.gov.lk/en/Lists/Latest%20News%20%20Notices/Attachments/822/AIT_WHT_APIT_03112026_E.pdf | 2026-11-24 |
 | Circular SEC/2026/E/01, resident deposit self-declarations from 2026/27 | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2026_E_01_E.pdf | 2026-11-24 |
+
+Not yet confirmed: a non-resident's treaty rate and final withholding treatment without the treaty country, source, permanent establishment and other eligibility facts.
