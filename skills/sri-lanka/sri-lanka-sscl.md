@@ -163,3 +163,5 @@ expected:
 | Amendment Act No. 10 of 2026 for thresholds, dates and motor vehicle treatment | https://www.ird.gov.lk/en/publications/Acts_SSCL/SSCL_Act_No_10-2026_E.pdf | 2026-11-22 |
 | IRD implementation notice for the 2026 registration and motor vehicle changes | https://www.ird.gov.lk/en/Lists/Latest%20News%20%20Notices/Attachments/780/PN_SSCL_2026-04_1_E.pdf | 2026-11-22 |
 | VAT Amendment Act No. 14 of 2026, section 8, for the 20.5% financial services VAT rate | https://www.parliament.lk/uploads/acts/gbills/english/6427.pdf | 2026-11-22 |
+
+Not yet confirmed: transaction-specific commodity classification, statutory turnover, a distributor appointment or the treatment of an isolated transaction without the supporting records.
