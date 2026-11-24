@@ -25,6 +25,7 @@ Calendar tax year for individuals. Income tax authority: the Franchise Tax Board
 |---|---|---|
 | IT-IND, individual income tax (method, the `covered_by` owner) | ca-540-individual-return | checked against the law (partial) |
 | IT-IND, individual income tax (figures card, linked from the method) | ca-income-tax | checked against the law (partial) |
+| IT-IND, personal tax benefit intake and skill routing | ca-individual-tax-benefit-router | checked against official guidance |
 | IT-IND, estimated tax | ca-estimated-tax-540es | checked against the law |
 | IT-IND, health coverage penalty | ca-form-3853-coverage | checked against the law |
 | IT-CORP, LLC annual tax and fee (the `covered_by` owner) | ca-llc-fee-and-tax | checked against the law (partial) |
