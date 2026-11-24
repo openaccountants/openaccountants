@@ -151,3 +151,5 @@ expected:
 | IRD re-revised circular SEC/2026/E/06, 12 August 2026, for the calculation, supporting declarations and instalment dates | https://www.ird.gov.lk/en/publications/Circulars_Circulars/SEC_2026_E_06_ReRiv_E.pdf | 2026-11-22 |
 | IRD form SEC/2026/SA/01, declaration of tax payable or not payable in instalments | https://www.ird.gov.lk/en/Downloads/IT_SET_2021_Doc/SEC_2026_SA_01_E.pdf | 2026-11-22 |
 | IRD form SEC/2026/SA/02, declaration for newly registered taxpayers | https://www.ird.gov.lk/en/Downloads/IT_SET_2021_Doc/SEC_2026_SA_02_E.pdf | 2026-11-22 |
+
+Not yet confirmed: eligibility for the reduced estimate or its precise amount without the adjusted prior-year figures, current expectations and supporting documents.
