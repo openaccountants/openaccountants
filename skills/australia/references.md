@@ -50,30 +50,30 @@ OpenAccountants is AGPL-3.0. MIT, Apache-2.0, GPL-3.0, and AGPL-3.0 content can 
   - Use as the primary-source verification layer when reviewing or updating any Australian guide's legislative citations.
 - Disclosure: maintained by an OpenAccountants contributor (ryanduguid).
 
-## Aus Accounting MCP (v0.12.0)
+## Aus Accounting MCP
 
 - Repository: [ryanduguid/australian-accounting: aus-accounting-mcp](https://github.com/ryanduguid/australian-accounting/tree/main/apps/aus-accounting-mcp)
-- Release: [aus-accounting-mcp/v0.12.0](https://github.com/ryanduguid/australian-accounting/releases/tag/aus-accounting-mcp/v0.12.0) · [PyPI 0.12.0](https://pypi.org/project/aus-accounting-mcp/0.12.0/) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.ryanduguid%2Faus-accounting&version=latest) · [Glama](https://glama.ai/mcp/servers/ryanduguid/australian-accounting)
+- Distribution: [GitHub Releases](https://github.com/ryanduguid/australian-accounting/releases) · [PyPI](https://pypi.org/project/aus-accounting-mcp/) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.ryanduguid%2Faus-accounting&version=latest) · [Glama](https://glama.ai/mcp/servers/ryanduguid/australian-accounting)
 - License: AGPL-3.0-or-later
 - Language: English
-- Scope: Local stdio MCP server for Australian accounting workflows: ATO small business benchmark reviews, Payday Super timing and evidence packs, Division 7A review, GST coding and BAS reconciliation review, 102 bounded tax and super worksheets (paired with `australian-tax-calculators` 1.2.0), and cited retrieval from a user's local Markdown folder.
+- Scope: Local stdio MCP server for Australian accounting workflows: ATO small business benchmark reviews, Payday Super timing and evidence packs, Division 7A review, GST coding and BAS reconciliation review, bounded tax and super worksheets (paired with `australian-tax-calculators`), and cited retrieval from a user's local Markdown folder.
 - Why it matters: Complements the Australian skill pack with deterministic local calculation and review tools over MCP (including a `.mcpb` Desktop bundle) without sending client figures to an external calculator service.
 - Integration approach:
   - AGPL-3.0-or-later is in the same license family as OpenAccountants.
   - Pair with OpenAccountants Australian skills when an AI workflow needs verified deterministic worksheets alongside legislative guidance.
 - Disclosure: maintained by an OpenAccountants contributor (ryanduguid).
 
-## Australian Tax Calculators (v1.2.0)
+## Australian Tax Calculators
 
 - Repository: [ryanduguid/australian-accounting: australian-tax-calculators](https://github.com/ryanduguid/australian-accounting/tree/main/packages/australian-tax-calculators)
-- Release: [australian-tax-calculators/v1.2.0](https://github.com/ryanduguid/australian-accounting/releases/tag/australian-tax-calculators/v1.2.0)
+- Distribution: [GitHub Releases](https://github.com/ryanduguid/australian-accounting/releases)
 - License: AGPL-3.0-or-later
 - Language: English
-- Scope: Standalone local Rust CLI providing 102 bounded Australian tax and superannuation calculation worksheets covering income tax, PAYG withholding, super caps, Division 7A, Division 293/296, CGT, FBT, GST, fuel tax credits, LCT, WET, ASIC fees, and state land tax, stamp duty, FHOG and payroll tax, with explicit statutory scope and refusal boundaries.
+- Scope: Standalone local Rust CLI providing bounded Australian tax and superannuation calculation worksheets covering income tax, PAYG withholding, super caps, Division 7A, Division 293/296, CGT, FBT, GST, fuel tax credits, LCT, WET, ASIC fees, and state land tax, stamp duty, FHOG and payroll tax, with explicit statutory scope and refusal boundaries.
 - Why it matters: Direct validation and calculation companion for the Australian tax skills; every worksheet outputs structured workings, cited statutory parameters and explicit refusals for out-of-scope inputs.
 - Integration approach:
   - AGPL-3.0-or-later is in the same license family as OpenAccountants.
-  - Use to cross-check worked examples across the Australian tax and superannuation skills, or invoke locally via CLI or `aus-accounting-mcp` 0.12.0.
+  - Use to cross-check worked examples across the Australian tax and superannuation skills, or invoke locally via CLI or `aus-accounting-mcp`.
 - Disclosure: maintained by an OpenAccountants contributor (ryanduguid).
 
 ## Payday Super Checker
