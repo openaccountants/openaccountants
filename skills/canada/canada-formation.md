@@ -165,7 +165,7 @@ HOLD the nationwide no-minimum claim; no complete federal/provincial census was 
 | Item | Cost (CAD) |
 | --- | --- |
 | Corporations Canada annual return | $12 online / $40 by other means. [Schedule 5 item 1(k)](https://laws-lois.justice.gc.ca/eng/regulations/SOR-2001-512/FullText.html) |
-| Provincial annual return | No universal $0–$50 range: NL ordinary extra-provincial share-capital return is $200 paper / $180 electronic; 9(j) $50 furniture-moving/tour-operator route requires no more than five trips in the return period; 9(i) no-share-capital no-fee route is separate. HOLD current operative fee/category before charging; the published schedule is dated 2016. [9(g)-(h)](https://www.gov.nl.ca/gs/files/registries-companies-fees-corp.pdf) |
+| Provincial annual return | No universal $0–$50 range: NL ordinary extra-provincial share-capital return is $200 paper / $180 electronic; 9(j) $50 furniture-moving/tour-operator route requires no more than five trips in the return period; 9(i) no-share-capital no-fee route is separate. HOLD current operative fee/category before charging; the published schedule is dated 2016. [9(g)-(j)](https://www.gov.nl.ca/gs/files/registries-companies-fees-corp.pdf) |
 | Accountant fees | HOLD unsupported market estimate $1,500–$5,000/year; not a statutory charge or firm quote |
 | Corporate tax return (T2) | HOLD actual agreed engagement/package; not automatically included |
 | Extra-provincial renewal fees | Varies by province |
