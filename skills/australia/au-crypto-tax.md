@@ -21,7 +21,7 @@ domain: crypto
 
 **Quick Reference**
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Country | Australia (Commonwealth of Australia) |
 | Tax | Income Tax -- Cryptocurrency / Digital Assets |
@@ -58,7 +58,7 @@ Bitcoin and similar investment crypto assets are generally CGT assets. Identify 
 
 | Item | Value |
 | --- | --- |
-| Personal use asset exemption | First element of cost base is $10,000 or less and the asset qualifies as a personal use asset |
+| Personal use asset exemption | First element of cost base is $10,000 or less and the asset qualifies as a personal use asset ([ATO crypto personal use asset](https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/crypto-asset-as-a-personal-use-asset)) |
 | CGT discount (held 12+ months) | 50% for individuals and trusts |
 | CGT discount -- companies | Not available |
 | Capital loss carry forward | Indefinite (offset against future capital gains only) |
@@ -315,6 +315,54 @@ The ATO requires the following records for each transaction:
 ## Section 7 -- Prohibitions
 
 - Confirm the personal use test and discount eligibility before applying a concession. Apply eligible capital losses against capital gains before discounting. Include taxable swap disposals, staking and airdrop income. Resolve uncertain DeFi and other transactions before finalising, and label provisional figures as estimates.
+
+## Worked examples
+
+**Example 1. Long-term investment disposal with current-year capital loss.** An investor sells crypto held more than 12 months for AUD 15,000 (cost base AUD 8,000 including brokerage), and has a current-year capital loss of AUD 1,000 from another disposal before 1 July 2027. Apply the loss before the 50% discount: (15,000 - 8,000 - 1,000) x 50% = AUD 3,000.
+
+```oa-check
+name: AU crypto long-term CGT disposal with capital loss before 50% discount
+inputs:
+  proceeds: 15000
+  cost_base: 8000
+  capital_loss: 1000
+steps:
+  - gross_gain: proceeds - cost_base
+  - after_losses: gross_gain - capital_loss
+  - net_capital_gain: pct(after_losses, 50)
+expected:
+  gross_gain: 7000
+  after_losses: 6000
+  net_capital_gain: 3000
+```
+
+**Example 2. Crypto-to-crypto swap within 12 months.** Swapping one token for another is a CGT disposal at market value in AUD. Proceeds AUD 12,000, acquisition cost AUD 9,200 plus AUD 50 acquisition fee and AUD 50 disposal fee gives cost base AUD 9,300 and a short-term net capital gain of AUD 2,700 (no discount).
+
+```oa-check
+name: AU crypto short-term swap with brokerage fees in cost base
+inputs:
+  swap_market_value: 12000
+  purchase_price: 9200
+  buy_fee: 50
+  sell_fee: 50
+steps:
+  - cost_base: purchase_price + buy_fee + sell_fee
+  - net_capital_gain: swap_market_value - cost_base
+expected:
+  cost_base: 9300
+  net_capital_gain: 2700
+```
+
+## Sources
+
+- [ATO, Tax rates: Australian resident](https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents) (read 2026-11-22)
+- [ATO, Transactions: acquiring and disposing of crypto assets](https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/transactions-acquiring-and-disposing-of-crypto-assets) (read 2026-11-22)
+- [ATO, Crypto asset as a personal use asset](https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/crypto-asset-as-a-personal-use-asset) (read 2026-11-22)
+- [ATO, Staking rewards and airdrops](https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/transactions-acquiring-and-disposing-of-crypto-assets/staking-rewards-and-airdrops) (read 2026-11-22)
+- [ATO, Decentralised finance and wrapping crypto](https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/decentralised-finance-and-wrapping-crypto) (read 2026-11-22)
+- [ATO, Keeping crypto records](https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/keeping-crypto-records) (read 2026-11-22)
+- [ATO, Chain splits](https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/transactions-acquiring-and-disposing-of-crypto-assets/chain-splits) (read 2026-11-22)
+- [ITAA 1997, section 121-25](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html) and [Treasury Laws Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00049/asmade/text) (read 2026-11-22)
 
 ## Disclaimer
 
