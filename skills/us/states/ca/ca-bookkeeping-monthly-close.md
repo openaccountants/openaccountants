@@ -12,10 +12,10 @@ description: >
   bookkeeping, monthly close, trial balance, payroll-tax reconciliation,
   sales-tax clearing, or agency-control questions. It does not prepare returns
   or give legal advice.
-version: 0.1
+version: 0.2
 jurisdiction: US-CA
 tax_year: 2026
-last_updated: 2026-09-21
+last_updated: 2026-11-25
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
@@ -26,11 +26,12 @@ tier: 1
 domain: bookkeeping
 ---
 
-# California Bookkeeping and Monthly Close v0.1
+# California Bookkeeping and Monthly Close v0.2
 
-## California Bookkeeping and Monthly Close v0.1
+## California Bookkeeping and Monthly Close v0.2
 
-> **Source-cited draft — not reviewed by an accountant.** This guide is
+> **Correction draft; approval of this changed version is pending.** The existing
+> approval metadata is retained and does not certify these edits. This guide is
 > general bookkeeping reference material for AI-assisted workflows. A
 > credentialed California reviewer must review the working papers before a
 > return is prepared, a payment is made, a journal is posted to a client ledger,
@@ -357,10 +358,10 @@ reason.
 
 | # | Pattern | Debit | Credit | Control or handoff |
 | --- | --- | --- | --- | --- |
-| 1 | Direct customer payment with a matching invoice or sales report | Bank or A/R | Service or product revenue | Separate any tax amount only when the reviewer or tax skill supplies the treatment. |
-| 2 | Stripe, PayPal, Square, or other processor settlement | Processor clearing | Bank | The payout is not revenue; reconstruct gross receipts, fees, refunds, and tax. |
+| 1 | Direct customer payment | Bank | A/R for an already-booked invoice; service/product revenue only for an unrecorded cash sale | Do not credit revenue again when collecting an invoice already in A/R. Separate tax only when the reviewer or tax skill supplies treatment. |
+| 2 | Stripe, PayPal, Square, or other processor settlement | Bank | Processor clearing | The payout is not revenue; reconstruct gross receipts, fees, refunds, and tax. |
 | 3 | Processor fee on a settlement | Merchant-processor fees | Processor clearing | Tie to the processor fee report. |
-| 4 | Marketplace settlement | Marketplace clearing | Bank | Post gross sales and deductions from the marketplace report before the payout. |
+| 4 | Marketplace settlement | Bank | Marketplace clearing | Post gross sales and deductions from the marketplace report before the payout. |
 | 5 | Marketplace facilitator-collected tax | Marketplace clearing or tax clearing | CDTFA tax control only when the source establishes the seller's liability | Do not infer marketplace responsibility; retain the facilitator statement. |
 | 6 | Customer refund or chargeback | Returns, refunds, and allowances | Bank or processor clearing | Link to the original sale. |
 | 7 | Inventory purchase for resale | Inventory or freight-in | A/P or bank | Do not post all merchandise purchases directly to expense when an inventory schedule is required. |
@@ -390,7 +391,7 @@ reason.
 | 31 | Credit-card payment from the operating account | Credit-card payable | Bank | Exclude the payment from expense; expense was recorded on the charge. |
 | 32 | Duplicate bank-feed and processor line | No journal | No journal | Exclude one line with a duplicate source reference. |
 | 33 | Unexplained round-number transfer | Review suspense | Bank or receiving account | Tier 3; ask whether it is a contribution, draw, loan, refund, or revenue. |
-| 34 | Mixed personal and business purchase | Business portion of expense only | Bank or card | Ask for the business percentage; if the user selects “do not know,” use 0% business and post the personal portion to the owner account. |
+| 34 | Mixed personal and business purchase | Business expense/asset plus personal portion to owner equity | Full bank or card payment | Ask for the business percentage; if the user selects “do not know,” use 0% business and post the personal portion to the owner account. |
 | 35 | Nonprofit donor receipt | Bank | Operating support or contribution revenue | If restricted or grant-conditioned, stop and refer to the nonprofit reviewer. |
 
 ### Conservative defaults
@@ -638,7 +639,7 @@ control current filing details.
 ## Section 12 — Required outputs
 
 The five bookkeeping-base outputs are mandatory. This California guide adds
-seven schedules to make agency handoff reviewable.
+six additional schedules (Outputs 6–11) to make agency handoff reviewable.
 
 ### Output 1 — Trial balance
 
@@ -757,6 +758,22 @@ funding entry clears payroll-provider clearing. The EDD and federal payments
 debit the appropriate liability accounts. No worker-status, payroll-rate, or
 deductibility opinion is made.
 
+```oa-check
+name: Existing Example A processor clearing
+inputs:
+  gross_receipts: 1000
+  processor_fees: 30
+  bank_payout: 970
+steps:
+  clearing_remaining: gross_receipts - processor_fees - bank_payout
+  debits: gross_receipts + processor_fees + bank_payout
+  credits: gross_receipts + processor_fees + bank_payout
+expected:
+  clearing_remaining: 0
+  debits: 2000
+  credits: 2000
+```
+
 ### Example B — Disregarded SMLLC owner transfers and contractor
 
 An owner deposits 2,000.00 to fund the business and later withdraws 500.00.
@@ -789,6 +806,18 @@ fees, and an 1,080.00 payout. The entries are:
 Inventory and COGS are posted from the inventory schedule. Marketplace-collected
 tax is not assumed to be the LLC's CDTFA liability; the facilitator statement
 and the sales-tax reviewer determine the treatment.
+
+```oa-check
+name: Existing Example C marketplace clearing
+inputs:
+  gross_sales: 1200
+  fees: 120
+  bank_payout: 1080
+steps:
+  clearing_remaining: gross_sales - fees - bank_payout
+expected:
+  clearing_remaining: 0
+```
 
 ### Example D — Fiscal-year operating nonprofit
 
@@ -882,3 +911,14 @@ taking a tax position.
   handoff schedules, worked examples, and validation tests.
 
 > Contributed by DeFiAccountant21.
+
+
+## Sources
+
+The agency source register and its scope above remain in place. This correction changes journal consistency and output enumeration; it makes no new tax-rate or filing-law determination.
+
+| Authority | Actual read scope | Read on |
+| --- | --- | --- |
+| [IRS employment recordkeeping](https://www.irs.gov/businesses/small-businesses-self-employed/employment-tax-recordkeeping) | Read in the full operative recordkeeping list, general four-year baseline and specified six-year credit records. These are recordkeeping boundaries, not approval of a client's journals. | 2026-11-22 |
+
+Not yet confirmed; non-usable holds: actual entity/basis/framework and agency instructions; foreign-LLC and other annual-tax exceptions; complete owner-specific PTE computation; exact W-2/1099 populations/dates; five/six-year retention exceptions in the actual calendar; new-hire special cases; the 2026 federal-reportability gateway for DE 542; mixed-year Form 592-B template provenance; inherited bookkeeping-base counts; owner versus entity estimates; invoice/payment and transfer directions without source evidence; duplicate-feed exclusions versus unposted settlement entries; execution of the proposed agent tests; and full current-law/form/DE 44 completeness. No actual client ledger, filing or election is cleared. Independent changed-line review and accountant approval of this version remain pending.
