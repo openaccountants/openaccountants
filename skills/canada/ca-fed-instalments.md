@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Canadian federal quarterly inst
 version: 2.1
 jurisdiction: CA
 tax_year: 2025
-tax_year_notes: This corrects the existing 2025 instalment workpaper using its completed 21 November 2026 audit; 2023 and 2024 remain the prior-year example inputs. It is not a relabelled 2026 calculation or a fictitious 2025/2026 fiscal period.
+tax_year_notes: This corrects the existing 2025 instalment workpaper using its completed 21 November 2026 audit; 2023 and 2024 remain the prior-year example inputs. It remains a historical calendar-year workpaper and does not claim current-year or cross-year coverage.
 last_updated: 2026-11-25
 depends_on:
   - income-tax-workflow-base
