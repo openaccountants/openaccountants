@@ -1,11 +1,11 @@
 ---
 name: vat-returns-for-small-businesses-in-the-uk
 description: "A short routine for a VAT-registered small UK business filing a standard quarterly VAT return in 2026/27. Covers the GBP 90,000 registration and GBP 88,000 deregistration thresholds, the 20%, 5% and 0% rates, the return and payment deadline of one month and 7 days after the period ends, Making Tax Digital for VAT, the points-based late submission penalty and the late payment penalty, and the Flat Rate Scheme limits (join at GBP 150,000, leave over GBP 230,000, 16.5% limited cost business rate, 1% first-year discount). Trigger phrases: small business VAT return, quarterly VAT return, VAT deadline, VAT threshold 2026, flat rate scheme, limited cost business, VAT penalty points. Out of scope: the full 9-box method and corrections (uk-vat-return), EU goods sellers (gb-vat-eu-goods-sellers), partial exemption, VAT groups, margin schemes and Northern Ireland goods trade."
-version: 1.2
+version: 1.3
 jurisdiction: GB
 category: international
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-11-25
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Nadir Khan"
 reviewed_on: 2026-11-03
@@ -40,18 +40,18 @@ It is not for a business with partial exemption, cross-border goods trade, a VAT
 3. Sort everything by VAT rate (20%, 5%, 0%, exempt, outside the scope). This is where mistakes creep in.
 4. Work out the numbers: VAT due on sales, VAT reclaimable on purchases, and the net VAT due or repayable.
 5. Check it over before you submit. A second pass catches the errors a first pass misses.
-6. File through Making Tax Digital compatible software. All VAT-registered businesses are signed up for Making Tax Digital for VAT.
+6. Establish the Making Tax Digital exemption/application status first. File through compatible software unless exempt or an exemption application applies; use the filing route agreed with HMRC where exempt. Digital-exclusion applications and the automatic insolvency/final-return exceptions have their own conditions ([HMRC MTD exemptions](https://www.gov.uk/guidance/apply-for-an-exemption-from-making-tax-digital-for-vat), read 2026-11-22).
 7. Pay so the money reaches HMRC by the deadline, even if it falls on a weekend or bank holiday.
 8. Keep the records and proof of submission.
 
 ## The traps
 
 - **Wrong rate on a mixed basket.** Most goods and services are 20%; some are 5% or 0%; some are exempt. Exempt and zero-rated are not the same: zero-rated sales count towards the registration threshold, exempt sales do not.
-- **Threshold watch for a business that is not yet registered.** The test is rolling: taxable turnover in the last 12 months over GBP 90,000, or an expectation that the next 30 days alone will go over GBP 90,000. On the 12-month test, register within 30 days of the end of the month in which you went over. On the 30-day test, register by the end of that 30-day period.
+- **Threshold watch for a business that is not yet registered.** For a UK-established business, the test is rolling: taxable turnover in the last 12 months over GBP 90,000, or an expectation that the next 30 days alone will go over GBP 90,000. On the 12-month test, register within 30 days of the end of the month in which you went over. On the 30-day test, register by the end of that 30-day period.
 - **Weekend deadlines.** The deadline does not move for weekends or bank holidays. The payment must reach HMRC on or before it.
 - **Flat Rate Scheme limited cost test.** A business that spends little on goods pays 16.5% of VAT-inclusive turnover, which can be more than it would pay under the standard method. Run the test every period.
-- **Flat Rate Scheme exit.** You must leave the scheme if, on the anniversary of joining, turnover in the last 12 months was over GBP 230,000 including VAT (or you expect it to be over that in the next 12 months), or if you expect more than GBP 230,000 in the next 30 days alone.
-- **Penalty points stack.** A late nil return still earns a point.
+- **Flat Rate Scheme exit.** Test turnover in the year ending on the anniversary of joining: over GBP 230,000 including VAT normally requires leaving. A one-off rise may qualify for HMRC-agreed retention under Notice 733 section 11.2; do not assume permission. The separate forward test is expected turnover over GBP 230,000 in the next 30 days alone. Expected turnover over GBP 230,000 in the next 12 months is not an additional exit trigger ([Notice 733 sections 11.2 and 12.2](https://www.gov.uk/guidance/flat-rate-scheme-for-small-businesses-vat-notice-733--2), read 2026-11-22).
+- **Penalty points stack.** An ordinary late nil return still earns a point, but the first return after new registration, final return after cancellation and qualifying one-off returns are exceptions ([HMRC late-return exceptions](https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late), read 2026-11-22).
 
 ## Rates, thresholds and deadlines
 
@@ -65,11 +65,11 @@ It is not for a business with partial exemption, cross-border goods trade, a VAT
 | Registration threshold (taxable turnover, last 12 months or next 30 days) | GBP 90,000 | 2026/27 | https://www.legislation.gov.uk/ukpga/1994/23/schedule/1/paragraph/1 |
 | Deregistration threshold (next 12 months) | GBP 88,000 | 2026/27 | https://www.legislation.gov.uk/ukpga/1994/23/schedule/1/paragraph/4 |
 | Return and payment deadline | One calendar month and 7 days after the end of the period | 2026/27 | https://www.gov.uk/submit-vat-return |
-| Late submission penalty | One point per late return; threshold 4 points for quarterly filers (2 annual, 5 monthly); GBP 200 at the threshold and for each further late return | 2026/27 | https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late |
+| Late submission penalty | One point per ordinary late return, including nil returns; first, final and qualifying one-off return exceptions above; threshold 4 points for quarterly filers (2 annual, 5 monthly); GBP 200 at the threshold and for each further late return | 2026/27 | https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late |
 | Late payment penalty | None up to 15 days; 3% of VAT owed at day 15 if paid between days 16 and 30; if 31 days or more, 3% at day 15 plus 3% of what is still owed at day 30, plus a second penalty at 10% a year from day 31 | 2026/27 | https://www.gov.uk/guidance/how-late-payment-penalties-work-if-you-pay-vat-late |
-| Late payment interest | Base rate + 4%; 7.75% from 9 January 2026 | 2026/27 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
+| Late payment interest | Base rate + 4%; 7.75% from 9 January to 23 November 2026; 8% from 24 November 2026 | 2026/27 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
 | Flat Rate Scheme: join | Expected VAT taxable turnover GBP 150,000 or less (excluding VAT) in the next 12 months | 2026/27 | https://www.gov.uk/vat-flat-rate-scheme/print |
-| Flat Rate Scheme: must leave | Turnover over GBP 230,000 (including VAT) | 2026/27 | https://www.gov.uk/vat-flat-rate-scheme/print |
+| Flat Rate Scheme: must leave | Turnover over GBP 230,000 including VAT in the anniversary year just ended, subject to HMRC-agreed retention under section 11.2; also expected turnover over GBP 230,000 in the next 30 days alone | 2026/27 | Notice 733 sections 11.2, 12.2: https://www.gov.uk/guidance/flat-rate-scheme-for-small-businesses-vat-notice-733--2 |
 | Flat Rate Scheme: limited cost business | 16.5%, if goods cost less than 2% of turnover, or less than GBP 1,000 a year where costs are more than 2% | 2026/27 | https://www.gov.uk/vat-flat-rate-scheme/print |
 | Flat Rate Scheme: first year | 1% off the flat rate in the first year of VAT registration | 2026/27 | https://www.gov.uk/vat-flat-rate-scheme/print |
 
@@ -77,7 +77,7 @@ It is not for a business with partial exemption, cross-border goods trade, a VAT
 
 ### Example 1: limited cost business on the Flat Rate Scheme
 
-A consultant on the Flat Rate Scheme has VAT-inclusive turnover of GBP 57,600 in the year (GBP 48,000 plus 20% VAT). She spent GBP 600 on goods. 2% of turnover is GBP 1,152, and GBP 600 is under that figure and under GBP 1,000. So she is a limited cost business and pays 16.5% of VAT-inclusive turnover: GBP 9,504. Under the standard method she would pay GBP 9,600 output VAT less GBP 120 input VAT on the goods: GBP 9,480. The scheme costs her GBP 24 more.
+Assume the goods qualify for the limited-cost test, their VAT is fully deductible under the standard method, and no first-year discount applies. A consultant on the Flat Rate Scheme has VAT-inclusive turnover of GBP 57,600 in the year (GBP 48,000 plus 20% VAT). She spent GBP 600 on goods. 2% of turnover is GBP 1,152, and GBP 600 is under that figure and under GBP 1,000. So she is a limited cost business and pays 16.5% of VAT-inclusive turnover: GBP 9,504. Under the standard method she would pay GBP 9,600 output VAT less GBP 120 input VAT on the goods: GBP 9,480. The scheme costs her GBP 24 more.
 
 ```oa-check
 name: Limited cost business on the Flat Rate Scheme (2026/27)
@@ -100,7 +100,7 @@ expected:
 
 ### Example 2: photographer in the first year of registration
 
-A photographer bills a customer GBP 1,000 plus 20% VAT, GBP 1,200 in total. The flat rate for photography is 11% (GOV.UK example). In the first year of VAT registration the rate is 1 point lower, 10%, so the business pays GBP 120 on this sale instead of GBP 132.
+Assume the photographer is not a limited cost business and is eligible for the first-year discount. A photographer bills a customer GBP 1,000 plus 20% VAT, GBP 1,200 in total. The flat rate for photography is 11% (GOV.UK example). In the first year of VAT registration the rate is 1 point lower, 10%, so the business pays GBP 120 on this sale instead of GBP 132.
 
 ```oa-check
 name: Photographer flat rate with first-year discount
@@ -123,10 +123,12 @@ expected:
 - The return period and its deadline (one month and 7 days after the period ends).
 - The scheme the business is actually registered on, and for the Flat Rate Scheme, the sector rate and the limited cost test for this period.
 - Every sale and purchase is in the right period and at the right rate.
-- Any services bought from abroad are reverse charged (see `uk-vat-return`).
+- For services bought from abroad, establish the place of supply, supplier and customer establishments, taxable status and any special rules before applying the reverse charge. A foreign purchase alone does not establish a UK reverse charge; exempt supplies or supplies with a place of supply outside the UK do not automatically qualify ([Notice 741A sections 5.1 to 5.6](https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a), read 2026-11-22; see `uk-vat-return`).
 - The payment will reach HMRC by the deadline.
 
 ## Sources
+
+Correction evidence reuses the relevant primary-source passages read on 2026-11-22. Other source rows retain their original read dates. These corrections do not clear the remaining source gaps or establish any particular business's eligibility.
 
 | Source | URL | Read on |
 |---|---|---|
@@ -135,10 +137,13 @@ expected:
 | GOV.UK, Register for VAT | https://www.gov.uk/vat-registration/print | 2026-10-23 |
 | GOV.UK, VAT rates | https://www.gov.uk/vat-rates | 2026-10-23 |
 | GOV.UK, Submit a VAT return (deadline) | https://www.gov.uk/submit-vat-return | 2026-10-23 |
-| GOV.UK, Penalty points for late VAT returns | https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late | 2026-10-23 |
+| GOV.UK, Penalty points for late VAT returns (ordinary returns and exceptions) | https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late | 2026-11-22 |
 | GOV.UK, How late payment penalties work for VAT | https://www.gov.uk/guidance/how-late-payment-penalties-work-if-you-pay-vat-late | 2026-10-23 |
-| HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-23 |
+| HMRC interest rates (including announced 24 November change) | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-11-22 |
 | GOV.UK, VAT Flat Rate Scheme | https://www.gov.uk/vat-flat-rate-scheme/print | 2026-10-23 |
 | GOV.UK, Making Tax Digital for VAT | https://www.gov.uk/guidance/making-tax-digital-for-vat | 2026-10-23 |
+| VAT Notice 733 (sections 11.2 and 12.2: retention and exit) | https://www.gov.uk/guidance/flat-rate-scheme-for-small-businesses-vat-notice-733--2 | 2026-11-22 |
+| GOV.UK, MTD for VAT exemption conditions | https://www.gov.uk/guidance/apply-for-an-exemption-from-making-tax-digital-for-vat | 2026-11-22 |
+| VAT Notice 741A (sections 5.1 to 5.6: reverse charge conditions) | https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-22 |
 
 Not yet confirmed: the full table of Flat Rate Scheme sector percentages (only the 11% photography example and the 16.5% limited cost rate were read today); the limited cost test amount for a single quarter.
