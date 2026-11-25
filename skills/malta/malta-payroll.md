@@ -54,10 +54,10 @@ Order matters: split out qualifying overtime and part-time pay before the Main f
 
 ### Mid-year starters and income outside FSS
 
-- **FSS only taxes emoluments.** "Emoluments" covers employment income and pensions, and excludes payments received "in the course of his trade, business, profession or vocation" (FSS rule 2). A payee who was self-employed earlier in the year, or has rent or investment income, settles the tax on that income on their own return and provisional tax, not through payroll.
-- **The formula counts the calendar pay period.** In A = (E / C) x N, C is the pay period number in the calendar year, so a payee who starts in November has C = 11 on the first payslip. Only this payer's main emoluments to date are projected, which is usually far below a full year, so the deduction is often nil in the first year.
-- **The Tables reach the same total.** They deduct each period from the table, then make a year-end adjustment in the final pay period on the year's total main emoluments, which "will be complete only if the payee produces the relative Statements of Earnings (FS3's)" from previous payers (Schedule B Part II). For a mid-year starter the Tables may deduct in the early months and give it back in December; the formula and the Tables end the year at the same tax.
-- **Tell the payee in writing** when payroll shows nil or low tax but they had self-employed or other income in the year: the combined income is assessed on their return, and tax may be due then. Name it in the payslip email; do not leave it to the year-end FS3.
+- **FSS only taxes emoluments.** "Emoluments" means employment income and fringe benefits (art. 4(1)(b)), pensions (art. 4(1)(d)) and other remuneration for services, and limb (iii) excludes payments received "in the course of his trade, business, profession or vocation" (FSS rule 2). Rent and investment income fall outside because no limb covers them. A payee who was self-employed earlier in the year, or has rent or investment income, is taxed on that income on their own return, not through payroll.
+- **The formula projects the year's main emoluments to date.** In A = (E / C) x N, E is the "Total 'Main' Emoluments for the calendar year up to and including the Current Pay Period": this payer's, plus any previous payer's main emoluments shown on an FS3 the payee hands over. C, the "Current Pay Period Number", is read as the pay period's number in the calendar year (N periods), so a payee who starts in November on monthly pay is at C = 11. With little pay to date, the projection is low and the first-year deduction is often nil.
+- **The Tables can over-deduct for a mid-year starter.** They deduct each period from the table, then make a year-end adjustment in the final pay period on the year's total main emoluments, which "will be complete only if the payee produces the relative Statements of Earnings (FS3's)" from previous payers (Schedule B Part II). If that adjustment comes out negative, "no tax deduction should be made for the last pay period": nothing is refunded through payroll, and the excess is recovered on assessment.
+- **Practice, not law: tell the payee in writing** when payroll shows nil or low tax but they had self-employed or other income in the year. The combined income is assessed on their return, and tax may be due then. Say it in the payslip email; do not leave it to the year-end FS3.
 
 ### The cumulative formula (FSS Schedule B)
 
@@ -129,7 +129,7 @@ The 2026 Main Tax Deduction Tables are published by the Commissioner, not in the
 | Ten or more full-time payees | Cumulative formula compulsory; fewer may use Tables, not both in a year | Rule 7(4) |
 | More than one employment | One main source; others at 20% | Rules 7(1), 9 |
 | Started mid-year after self-employment or with other non-employment income | FSS deducts on this payer's emoluments only; the other income is taxed on the payee's return; warn the payee in writing | Rule 2 ("emoluments"); Schedule B Parts I and II |
-| Started mid-year after another job | Main emoluments from the previous payer count in the year-end adjustment only if the payee hands over that payer's FS3 | Schedule B Part II |
+| Started mid-year after another job | The previous payer's main emoluments count only if the payee hands over that payer's FS3 | Schedule B Parts I and II |
 | Deduction above 50% of cash pay | Limited to 50% unless consent or ITA art. 71 or ITMA art. 46 | Rule 11(1) |
 | Termination payment | Rule 6 and/or rule 10, no 50% limit | Rule 34 |
 | Employer pays the employee's tax | Gross up: emoluments = net pay + tax | Rule 33 |
@@ -191,7 +191,7 @@ expected:
 - **No FS4.** EUR 2,500 a month: 35% = EUR 875, under the 50% cap (EUR 1,250).
 - **Qualifying overtime.** Basic EUR 360 a week, non-managerial, Jobsplus-registered; 40 overtime hours at EUR 13.50 = EUR 540. Hourly basic EUR 9.00, maxrate cap EUR 18.00: within it. 15% = EUR 81.00 final, reported separately on the FS5 and FS3, kept out of the Main formula.
 - **Second job.** EUR 1,000 in a month as Other Emoluments: 20% = EUR 200, unless a higher or (pensioner, student) lower rate was directed.
-- **Mid-year starter after self-employment (invented).** Single FS4, starts 1 November on EUR 3,000 a month, was self-employed January to October. November: A = 3,000 / 11 x 12 = EUR 3,272.73, under the EUR 12,000 single 0% band, so nil. December: E = EUR 6,000, C = 12, A = EUR 6,000, nil. Payroll deducts nothing for the year, but the self-employed profit and the EUR 6,000 salary are added together on the payee's own return, where tax may be due. The payslip email says so.
+- **Mid-year starter after self-employment (invented).** Single FS4, starts 1 November on EUR 3,000 a month, was self-employed January to October. Cumulative formula. November: A = 3,000 / 11 x 12 = EUR 3,272.73, under the EUR 12,000 single 0% band, so nil. December: E = EUR 6,000, C = 12, A = EUR 6,000, nil. Payroll deducts nothing for the year (under the Tables, any November deduction would stay deducted until assessment), but the self-employed profit and the EUR 6,000 salary are added together on the payee's own return, where tax may be due. The payslip email says so.
 
 ## When to refuse or refer
 
