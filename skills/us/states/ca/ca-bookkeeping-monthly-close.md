@@ -391,7 +391,7 @@ reason.
 | 31 | Credit-card payment from the operating account | Credit-card payable | Bank | Exclude the payment from expense; expense was recorded on the charge. |
 | 32 | Duplicate bank-feed and processor line | No journal | No journal | Exclude one line with a duplicate source reference. |
 | 33 | Unexplained round-number transfer | Review suspense | Bank or receiving account | Tier 3; ask whether it is a contribution, draw, loan, refund, or revenue. |
-| 34 | Mixed personal and business purchase | Business expense/asset plus personal portion to owner equity | Full bank or card payment | Ask for the business percentage; if the user selects “do not know,” use 0% business and post the personal portion to the owner account. |
+| 34 | Mixed personal and business purchase | Business expense/asset for the supported business share, plus a separate debit for the personal share | Full bank or card payment | Establish the business percentage and the entity-specific personal counterpart account. An owner draw may fit a sole proprietor; do not assume an owner-equity account for every corporation or nonprofit. HOLD the counterpart classification and any unproved business share for the reviewer rather than claim a deduction. |
 | 35 | Nonprofit donor receipt | Bank | Operating support or contribution revenue | If restricted or grant-conditioned, stop and refer to the nonprofit reviewer. |
 
 ### Conservative defaults
@@ -766,12 +766,8 @@ inputs:
   bank_payout: 970
 steps:
   clearing_remaining: gross_receipts - processor_fees - bank_payout
-  debits: gross_receipts + processor_fees + bank_payout
-  credits: gross_receipts + processor_fees + bank_payout
 expected:
   clearing_remaining: 0
-  debits: 2000
-  credits: 2000
 ```
 
 ### Example B — Disregarded SMLLC owner transfers and contractor
