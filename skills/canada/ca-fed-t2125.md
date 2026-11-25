@@ -325,11 +325,11 @@ inputs:
   fuel: 3600
   insurance: 2400
   repairs: 800
-  licence: 120
+  vehicle_licence_cost: 120
   vehicle_cost: 36000
 steps:
   - business_share: business_km / total_km
-  - operating_costs: fuel + insurance + repairs + licence
+  - operating_costs: fuel + insurance + repairs + vehicle_licence_cost
   - business_operating_costs: operating_costs * business_share
   - full_rate_cca_arithmetic: vehicle_cost * 0.30 * business_share
   - conditional_enhanced_arithmetic: full_rate_cca_arithmetic * 1.5
@@ -402,7 +402,7 @@ expected:
 
 | Condition | Eligibility |
 | --- | --- |
-| Principal place of business | YES -- deduction allowed |
+| Principal place of business | Eligibility route only; actual use, expenses and loss limit required. [ITA 18(12)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) |
 | Exclusive income-earning use plus regular and continuous client/customer/patient meetings | Eligibility route only; actual use, expenses and loss limit required. [ITA 18(12)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) |
 | Neither condition met | NO deduction |
 
