@@ -79,7 +79,8 @@ The historical review attribution above is preserved; it does not certify this p
 | Employer registration | Business Number (BN) + payroll program account (RP) via CRA |
 | Provincial variation | Each province/territory has its own income tax brackets, ESA, and minimum wage |
 | Validated by | Verified by Nathan Wiebe on 2026-06-21 |
-| Skill version | v1.1 |
+
+Skill version: 1.1.
 
 ## Section 2 -- Income Tax Withholding (Source Deductions)
 
@@ -450,36 +451,36 @@ This correction reuses the completed **21 November 2026** audit reads against th
 
 | Official source | Scope actually read and reused | Date read |
 | --- | --- | --- |
-| [CRA T4032 Ontario 2026](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032on-jan/t4032on-january-general-information.html) | 2026 federal, CPP and non-QC EI rates; BPA and province-of-employment boundaries | 2026-11-21 |
-| [CRA T4032 Quebec 2026](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032qc-jan/t4032qc-january-general-information.html) | 2026 Quebec EI rates and maxima; abatement and 2025/2026 lowest-rate context | 2026-11-21 |
-| [Revenu Québec 2026 changes](https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/employers-principal-changes-for-2026/) | 2026 QPP/QPIP inputs and HSF sector/payroll boundaries, not complete individual Quebec formulas | 2026-11-21 |
-| [CRA T4127 2026](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-122nd-edition-effective-january-1-2026/t4127-jan-payroll-deductions-formulas-computer-programs.html) | 2026 basic-exemption truncation/table, CPP and cumulative CPP2 formulas; example inputs preserved | 2026-11-21 |
-| [CPP post-retirement eligibility](https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-post-retirement/eligibility.html) | CPP pension-status/election qualification; age alone is not a stopping algorithm | 2026-11-21 |
-| [Ontario EHT](https://www.ontario.ca/document/employer-health-tax-eht) | Authority-indexed exemption/group and rate-basis text; direct restrictions disclosed | 2026-11-21 |
-| [BC Employer Health Tax Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042) | Ordinary rate formula with group, special-employer and part-year qualifications | 2026-11-21 |
-| [Manitoba levy table](https://payment.manitoba.ca/finance/taxation/taxes/payroll.html) | Current levy exemption/rate table | 2026-11-21 |
-| [Manitoba budget bulletin](https://www.gov.mb.ca/finance/taxation/pubs/bulletins/2025budget.pdf) | Budget bulletin's operative 1 January 2026 levy effective-date passage | 2026-11-21 |
-| [National minimum-wage data](https://minwage-salairemin.service.canada.ca/en/general.html?1353fe24_page=3&86c20c73_page=2) | General covered-employee wage rates/effective dates, not all special worker categories | 2026-11-21 |
-| [Ontario wage release](https://news.ontario.ca/en/release/1008075/ontario-protecting-workers-by-raising-minimum-wage) | 1 October 2026 general minimum-wage change | 2026-11-21 |
-| [CNESST wages](https://www.cnesst.gouv.qc.ca/en/working-conditions/wage-and-pay/wages) | 1 May 2026 general minimum-wage change | 2026-11-21 |
-| [Manitoba wage release](https://news.gov.mb.ca/news/?archive=&item=73242) | Pre/post 1 October 2026 general minimum rates | 2026-11-21 |
-| [Saskatchewan wage guidance](https://www.saskatchewan.ca/Business/Employment-Standards/payment-of-wages-payroll-administration-benefits-and-time-sheets) | 1 October 2026 general rate; earlier-2026 amount not confirmed here | 2026-11-21 |
-| [Federal vacations and holidays](https://www.canada.ca/en/services/jobs/workplace/federal-labour-standards/vacations-holidays.html) | Federal service tiers including 10-year vacation tier; ten general holidays | 2026-11-21 |
-| [BC Employment Standards Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/00_96113_01) | ESA 40, 49.1, 57–58 and 63; ordinary overtime, sick-leave eligibility, vacation and termination | 2026-11-21 |
-| [BC Employment Standards Regulation](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/396_95) | Regulation 45.031: prescribed five paid days; completed audit follow-up | 2026-11-21 |
-| [BC statutory holidays](https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/statutory-holidays) | 2026 list of eleven holidays; not a province-wide national census | 2026-11-21 |
-| [Federal leaves](https://www.canada.ca/en/services/jobs/workplace/federal-labour-standards/leaves.html) | Medical-leave accrual, initial wait and carryover conditions | 2026-11-21 |
-| [Ontario sick leave](https://www.ontario.ca/document/your-guide-employment-standards-act-0/sick-leave) | Authority-indexed operative text: three unpaid days/two-week service; direct access restricted | 2026-11-21 |
-| [CNESST illness leave](https://www.cnesst.gouv.qc.ca/fr/conditions-travail/conges/accidents-maladies/maladie-accident-non-lie-au-travail) | Shared paid entitlement and 26-week/12-month absence protection | 2026-11-21 |
-| [Alberta illness/injury leave](https://www.alberta.ca/long-term-illness-injury-leave) | 27-week leave and 90-day/certificate conditions | 2026-11-21 |
-| [EI maternity/parental benefits](https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental/benefit-amount.html) | 2026 EI weekly maxima, individual weeks and shared extras | 2026-11-21 |
-| [EI temporary measures](https://www.canada.ca/en/services/benefits/ei/temporary-measures-for-major-economic-conditions.html) | Temporary waiting-period waiver claim-start dates and stated exception option | 2026-11-21 |
-| [CRA remittance due dates](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-source-deductions/how-when-remit-due-dates.html) | Quarterly branches and accelerated pay/remitting-period due-date tables | 2026-11-21 |
-| [CRA information-return deadlines](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/when-to-file.html) | Ordinary February filing deadline and continuing small-filer administrative relief | 2026-11-21 |
-| [Revenu Québec RL-1 guide](https://www.revenuquebec.ca/en/online-services/forms-and-publications/rl-1-g-v/guide-to-filing-the-rl-1-slip-employment-and-other-income/) | Ordinary RL-1 deadline; exceptional/year-adjusted dates remain held | 2026-11-21 |
-| [Service Canada ROE guide](https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/reports/roe-guide.html) | Electronic timing by pay frequency; paper/code branches not completed here | 2026-11-21 |
-| [CRA T4001](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001/employers-guide-payroll-deductions-remittances.html) | Remittance day ladder, failure-to-deduct conditions and ROE penalty maxima | 2026-11-21 |
-| [Alberta vacation pay](https://www.alberta.ca/vacation-pay) | Monthly versus non-monthly vacation-pay basis; no universal per-cheque permission | 2026-11-21 |
-| [Ontario severance](https://www.ontario.ca/document/your-guide-employment-standards-act-0/severance-pay) | Authority-indexed Ontario payroll/closure/partial-year/cap text; individual outcome held | 2026-11-21 |
+| [CRA T4032 Ontario 2026](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032on-jan/t4032on-january-general-information.html) | Read bounded text: 2026 federal, CPP and non-QC EI rates; BPA and province-of-employment boundaries | 2026-11-21 |
+| [CRA T4032 Quebec 2026](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032qc-jan/t4032qc-january-general-information.html) | Read bounded text: 2026 Quebec EI rates and maxima; abatement and 2025/2026 lowest-rate context | 2026-11-21 |
+| [Revenu Québec 2026 changes](https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/employers-principal-changes-for-2026/) | Read bounded text: 2026 QPP/QPIP inputs and HSF sector/payroll boundaries, not complete individual Quebec formulas | 2026-11-21 |
+| [CRA T4127 2026](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-122nd-edition-effective-january-1-2026/t4127-jan-payroll-deductions-formulas-computer-programs.html) | Read bounded text: 2026 basic-exemption truncation/table, CPP and cumulative CPP2 formulas; example inputs preserved | 2026-11-21 |
+| [CPP post-retirement eligibility](https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-post-retirement/eligibility.html) | Read bounded text: CPP pension-status/election qualification; age alone is not a stopping algorithm | 2026-11-21 |
+| [Ontario EHT](https://www.ontario.ca/document/employer-health-tax-eht) | Read bounded text: Authority-indexed exemption/group and rate-basis text; direct restrictions disclosed | 2026-11-21 |
+| [BC Employer Health Tax Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042) | Read bounded text: Ordinary rate formula with group, special-employer and part-year qualifications | 2026-11-21 |
+| [Manitoba levy table](https://payment.manitoba.ca/finance/taxation/taxes/payroll.html) | Read bounded text: Current levy exemption/rate table | 2026-11-21 |
+| [Manitoba budget bulletin](https://www.gov.mb.ca/finance/taxation/pubs/bulletins/2025budget.pdf) | Read bounded text: Budget bulletin's operative 1 January 2026 levy effective-date passage | 2026-11-21 |
+| [National minimum-wage data](https://minwage-salairemin.service.canada.ca/en/general.html?1353fe24_page=3&86c20c73_page=2) | Read bounded text: General covered-employee wage rates/effective dates, not all special worker categories | 2026-11-21 |
+| [Ontario wage release](https://news.ontario.ca/en/release/1008075/ontario-protecting-workers-by-raising-minimum-wage) | Read bounded text: 1 October 2026 general minimum-wage change | 2026-11-21 |
+| [CNESST wages](https://www.cnesst.gouv.qc.ca/en/working-conditions/wage-and-pay/wages) | Read bounded text: 1 May 2026 general minimum-wage change | 2026-11-21 |
+| [Manitoba wage release](https://news.gov.mb.ca/news/?archive=&item=73242) | Read bounded text: Pre/post 1 October 2026 general minimum rates | 2026-11-21 |
+| [Saskatchewan wage guidance](https://www.saskatchewan.ca/Business/Employment-Standards/payment-of-wages-payroll-administration-benefits-and-time-sheets) | Read bounded text: 1 October 2026 general rate; earlier-2026 amount not confirmed here | 2026-11-21 |
+| [Federal vacations and holidays](https://www.canada.ca/en/services/jobs/workplace/federal-labour-standards/vacations-holidays.html) | Read bounded text: Federal service tiers including 10-year vacation tier; ten general holidays | 2026-11-21 |
+| [BC Employment Standards Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/00_96113_01) | Read bounded text: ESA 40, 49.1, 57–58 and 63; ordinary overtime, sick-leave eligibility, vacation and termination | 2026-11-21 |
+| [BC Employment Standards Regulation](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/396_95) | Read bounded text: Regulation 45.031: prescribed five paid days; completed audit follow-up | 2026-11-21 |
+| [BC statutory holidays](https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/statutory-holidays) | Read bounded text: 2026 list of eleven holidays; not a province-wide national census | 2026-11-21 |
+| [Federal leaves](https://www.canada.ca/en/services/jobs/workplace/federal-labour-standards/leaves.html) | Read bounded text: Medical-leave accrual, initial wait and carryover conditions | 2026-11-21 |
+| [Ontario sick leave](https://www.ontario.ca/document/your-guide-employment-standards-act-0/sick-leave) | Read bounded text: Authority-indexed operative text: three unpaid days/two-week service; direct access restricted | 2026-11-21 |
+| [CNESST illness leave](https://www.cnesst.gouv.qc.ca/fr/conditions-travail/conges/accidents-maladies/maladie-accident-non-lie-au-travail) | Read bounded text: Shared paid entitlement and 26-week/12-month absence protection | 2026-11-21 |
+| [Alberta illness/injury leave](https://www.alberta.ca/long-term-illness-injury-leave) | Read bounded text: 27-week leave and 90-day/certificate conditions | 2026-11-21 |
+| [EI maternity/parental benefits](https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental/benefit-amount.html) | Read bounded text: 2026 EI weekly maxima, individual weeks and shared extras | 2026-11-21 |
+| [EI temporary measures](https://www.canada.ca/en/services/benefits/ei/temporary-measures-for-major-economic-conditions.html) | Read bounded text: Temporary waiting-period waiver claim-start dates and stated exception option | 2026-11-21 |
+| [CRA remittance due dates](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-source-deductions/how-when-remit-due-dates.html) | Read bounded text: Quarterly branches and accelerated pay/remitting-period due-date tables | 2026-11-21 |
+| [CRA information-return deadlines](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/when-to-file.html) | Read bounded text: Ordinary February filing deadline and continuing small-filer administrative relief | 2026-11-21 |
+| [Revenu Québec RL-1 guide](https://www.revenuquebec.ca/en/online-services/forms-and-publications/rl-1-g-v/guide-to-filing-the-rl-1-slip-employment-and-other-income/) | Read bounded text: Ordinary RL-1 deadline; exceptional/year-adjusted dates remain held | 2026-11-21 |
+| [Service Canada ROE guide](https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/reports/roe-guide.html) | Read bounded text: Electronic timing by pay frequency; paper/code branches not completed here | 2026-11-21 |
+| [CRA T4001](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001/employers-guide-payroll-deductions-remittances.html) | Read bounded text: Remittance day ladder, failure-to-deduct conditions and ROE penalty maxima | 2026-11-21 |
+| [Alberta vacation pay](https://www.alberta.ca/vacation-pay) | Read bounded text: Monthly versus non-monthly vacation-pay basis; no universal per-cheque permission | 2026-11-21 |
+| [Ontario severance](https://www.ontario.ca/document/your-guide-employment-standards-act-0/severance-pay) | Read bounded text: Authority-indexed Ontario payroll/closure/partial-year/cap text; individual outcome held | 2026-11-21 |
 
 **Not yet confirmed:** complete 2025 payroll (outside this 2026 correction); employee-specific province/coverage and pension elections; actual Quebec contribution bases, second tier and individual formulas; WCB class/year schedules; health-tax group/special/proration cases; detailed holiday-pay totals; province-specific complete payslip fields; quarterly eligibility and CRA status; RL-1 exceptional/year-adjusted deadlines; penalty/recovery exceptions; individual period CPP2, vacation-payment consent and termination/severance outcomes. Saskatchewan pre-1 October 2026 amount and ROE code/paper branches are not certified here. No client payroll, payslip or filing was verified.
