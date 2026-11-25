@@ -7,8 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/mv-tax-overview"
   jurisdiction: "MV"
   tax_year: "2026"
-  last_updated: "2026-11-22"
-  version: "1.1"
+  last_updated: "2026-11-16"
 ---
 
 # Maldives tax overview
@@ -41,7 +40,7 @@ An individual's tax-free slice and top marginal rate are in [individual income t
 |---|---|---|
 | Employee, self-employed or sole-proprietor annual tax | [Individual income tax](mv-income-tax.md) | Residence/source, income heads, deductions/losses, annual bands, EWT/foreign-credit reconciliation, filing exemption and annual calendar. |
 | Company, partnership, bank or non-resident business payment | [Corporate income tax](mv-corporate-income-tax.md) | Entity/group category, accounts-to-tax, losses, withholding classes/finality, interims and entity return. Specialist bank/insurance branches remain qualified. |
-| Sales/purchases, general GST or tourism GST | [Maldives GST](maldives-gst.md) | Correct sector/place/time of supply, rates and exemptions, registration, input attribution, period and return/payment. The GST Guide gives the current tourism rate and the November repeal and refund rules for overseas suppliers with no fixed place of business in the Maldives. |
+| Sales/purchases, general GST or tourism GST | [Maldives GST](maldives-gst.md) | Correct sector/place/time of supply, rates and exemptions, registration, input attribution, period and return/payment. The current tourism rate and its change date are recorded there, including the later overseas-inbound regime. |
 | Staff remuneration or pension | [Payroll and social contributions](mv-payroll-social.md) | MRPS eligibility/base versus EWT remuneration, contributions, pension deduction, multiple payers, monthly filing and remittance. |
 | Incorporation and other legal vehicles | [Company formation and entity choice](mv-company-formation.md) | Registrar/name/constitution/ownership/foreign-investment preparation, actual service and tax/staff handoff. |
 
@@ -67,7 +66,7 @@ For each obligation, record taxpayer/TIN, registration/effective date, period, r
 
 **Employee with side business.** Obtain gross payroll/EWT/pension records and side-business accounts. Load the personal Guide for the combined annual result and return test; use payroll for monthly bases and credits, and GST if the business meets its own registration/supply rules. Do not decide that employer withholding settles all personal obligations.
 
-**Tourism business with overseas booking receipts.** Establish the legal entity and contracting parties, gross accommodation receipts, commissions, deposits and levy components. Load the company or individual income-tax owner, the GST owner for tourism and place-of-supply rules, including any refund due on GST charged from 1 October to 19 November 2026 under the repealed overseas inbound-tourism rules, payroll if staff, and the separate official Green Tax workflow. Do not classify every overseas platform deduction as the same tax.
+**Tourism business with overseas booking receipts.** Establish the legal entity and contracting parties, gross accommodation receipts, commissions, deposits and levy components. Load the company or individual income-tax owner, the GST owner for tourism/place-of-supply and overseas-platform rules, payroll if staff, and the separate official Green Tax workflow. Do not classify every overseas platform deduction as the same tax.
 
 ## When to refuse or refer
 
@@ -82,8 +81,6 @@ Stop tax-base or rate selection where taxpayer identity, year, residence/source,
 | Tax Administration Act, consolidated 31 August 2026: establishment and tax-administration functions of MIRA in sections 2-3 | https://www.mira.gov.mv/Legislations/View/tax-admin-act-consolidated | 2026-11-16 |
 | GST Act consolidated 31 August 2026: general/tourism structure, periods and currency; owning Guide supplies full calculation and sources | https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated | 2026-11-16 |
 | GST Regulation section 95, record/conversion currency conditions | https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated | 2026-11-16 |
-| GST ninth amendment, Law 19/2026, section 14: repeal and refund for overseas inbound-tourism suppliers without a fixed place of business | https://www.mira.gov.mv/Files/GetFile/1c2c70cf-4c2c-4fee-a585-ed454689c1e7#page=8 | 2026-11-22 |
-| MIRA circular 220-TD/CIR/2026/07: repeal and deregistration effective 19 November 2026 and refunds of GST charged from 1 October to 19 November 2026 | https://mira.gov.mv/ContentItems/View/circular-issued-regarding-repeal-of%20GST-on-ITP | 2026-11-22 |
 | MIRA Green Tax page: liable establishments/operator/local-agent registration, per-day-of-stay structure, guest conditions and separate monthly filing/payment section | https://www.mira.gov.mv/Pages/View/whatisgreentax | 2026-11-16 |
 
 Official English legal pages are labelled unofficial translations; the Dhivehi original prevails. MIRA native fetches were blocked, and the actual official HTML was read through the web reader. No authenticated tax account or client filing was accessed.
