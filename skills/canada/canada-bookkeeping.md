@@ -1,10 +1,11 @@
 ---
 name: canada-bookkeeping
 description: Use this skill whenever asked about Canadian bookkeeping for sole proprietors, partnerships, or private corporations. Trigger on phrases like "chart of accounts", "GIFI codes", "bookkeeping", "profit and loss", "balance sheet", "ASPE", "ASNPO", "CRA categories", "bank reconciliation", "expense categories", "revenue recognition", "depreciation", "CCA", "capital cost allowance", "GST/HST", "input tax credits", "T2125", "T2", "general ledger", "HST return", or any question about day-to-day transaction recording, financial statement preparation, or account coding for a Canadian business.
-version: 1.0
+version: 1.1
 jurisdiction: CA
 tax_year: 2025
-last_updated: 2026-07-13
+tax_year_notes: This remains a 2025 skill. Corrections reuse the 21 November 2026 claim audit; the 2025 payroll and passenger-vehicle figures have not been relabelled as 2026 figures. Unresolved framework, classification and eligibility checks below block the affected outputs.
+last_updated: 2026-11-25
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
@@ -17,6 +18,8 @@ domain: bookkeeping
 
 # Canada Bookkeeping
 
+This is a **2025 bookkeeping and tax-mapping workpaper**, not a completed return or a certification of financial-statement compliance. Preserve the actual entity, reporting framework, fiscal period and business-use facts. A **HOLD** below means that the affected classification or calculation must not be used until its stated check is completed; it never means a zero balance or an automatic disallowance. The unresolved checks from the existing audit have not been certified as correct by this correction.
+
 ## Section 1 -- Quick Reference
 
 **Quick Reference**
@@ -24,19 +27,19 @@ domain: bookkeeping
 | Field | Value |
 | --- | --- |
 | Country | Canada |
-| Currency | CAD ($) only |
-| Financial year | Corporations: any year-end; Sole proprietors: calendar year (Jan 1 – Dec 31) |
-| Accounting standards | ASPE (Part II — private enterprises); ASNPO (Part III — not-for-profits); IFRS (Part I — public) |
+| Currency | CAD workpapers only. **HOLD:** an eligible corporation using elected functional-currency reporting needs its own reporting/conversion treatment; this is not a universal CAD prohibition. |
+| Financial year | Establish the actual fiscal period and applicable elections before mapping a return. **HOLD:** the original corporation/sole-proprietor shorthand does not resolve ITA 249.1 or a change of year-end. |
+| Accounting standards | **HOLD:** establish the applicable ASPE, ASNPO or IFRS framework. Operative standards and framework-selection conditions were not verified in this audit. |
 | Governing body | Accounting Standards Board (AcSB) of CPA Canada |
 | Tax authority | Canada Revenue Agency (CRA) |
 | Key legislation | Income Tax Act (ITA); Excise Tax Act (GST/HST); Canada Business Corporations Act |
-| GST/HST registration threshold | $30,000 in four consecutive quarters (small supplier threshold) |
+| GST/HST registration threshold | **HOLD:** do not decide registration solely from the $30,000 headline. The single-quarter and four-consecutive-quarter tests, associates, exclusions and other registration regimes must be resolved. [CRA registration](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
 | Record keeping requirement | 6 years from end of the last tax year to which records relate |
 | GIFI codes | General Index of Financial Information — CRA's standardized code system for T2 filing |
 
 ## Section 2 -- Standard Chart of Accounts
 
-Canadian small businesses use 4-digit codes mapped to GIFI for T2/T2125 reporting.
+The four-digit nominal codes below are an illustrative internal chart, not a statutory chart imposed on every Canadian business. GIFI reporting for corporate financial statements is different from T2125 line coding; use Section 4 for the latter. Select GIFI against the actual statement detail, entity and account maturity. **HOLD** entries are not approved filing mappings. [CRA RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html).
 
 ### Assets (1000–1999)
 
@@ -44,9 +47,9 @@ Canadian small businesses use 4-digit codes mapped to GIFI for T2/T2125 reportin
 
 | Code | Account | GIFI | Type |
 | --- | --- | --- | --- |
-| 1000 | Cash — Operating Account | 1001 | Current asset |
-| 1010 | Cash — Savings Account | 1001 | Current asset |
-| 1020 | Petty Cash | 1001 | Current asset |
+| 1000 | Cash — Operating Account | **HOLD — 1001; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Current asset |
+| 1010 | Cash — Savings Account | **HOLD — 1001; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Current asset |
+| 1020 | Petty Cash | **HOLD — 1001; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Current asset |
 | 1050 | Short-Term Investments | 1180 | Current asset |
 | 1100 | Accounts Receivable | 1060 | Current asset |
 | 1110 | Allowance for Doubtful Accounts | 1061 | Contra asset |
@@ -57,17 +60,17 @@ Canadian small businesses use 4-digit codes mapped to GIFI for T2/T2125 reportin
 | 1300 | Land | 1600 | Non-current asset |
 | 1310 | Buildings | 1680 | Non-current asset |
 | 1311 | Accumulated Amortization — Buildings | 1681 | Contra asset |
-| 1320 | Machinery and Equipment | 1740 | Non-current asset |
-| 1321 | Accumulated Amortization — Equipment | 1741 | Contra asset |
-| 1330 | Furniture and Fixtures | 1740 | Non-current asset |
-| 1331 | Accumulated Amortization — Furniture | 1741 | Contra asset |
+| 1320 | Machinery and Equipment | **HOLD — 1740; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Non-current asset |
+| 1321 | Accumulated Amortization — Equipment | **HOLD — 1741; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Contra asset |
+| 1330 | Furniture and Fixtures | **HOLD — 1740; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Non-current asset |
+| 1331 | Accumulated Amortization — Furniture | **HOLD — 1741; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Contra asset |
 | 1340 | Computer Hardware | 1774 | Non-current asset |
 | 1341 | Accumulated Amortization — Computer | 1775 | Contra asset |
 | 1350 | Motor Vehicles | 1742 | Non-current asset |
 | 1351 | Accumulated Amortization — Vehicles | 1743 | Contra asset |
 | 1360 | Leasehold Improvements | 1918 | Non-current asset |
 | 1361 | Accumulated Amortization — Leasehold | 1919 | Contra asset |
-| 1400 | Intangible Assets (Software, Patents) | 2010 | Non-current asset |
+| 1400 | Intangible Assets (Software, Patents) | **HOLD — 2010; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Non-current asset |
 | 1401 | Accumulated Amortization — Intangibles | 2011 | Contra asset |
 | 1500 | Goodwill | 2012 | Non-current asset |
 
@@ -77,21 +80,21 @@ Canadian small businesses use 4-digit codes mapped to GIFI for T2/T2125 reportin
 
 | Code | Account | GIFI | Type |
 | --- | --- | --- | --- |
-| 2000 | Accounts Payable | 2620 | Current liability |
-| 2010 | Accrued Liabilities | 2620 | Current liability |
+| 2000 | Accounts Payable | **HOLD — 2620; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Current liability |
+| 2010 | Accrued Liabilities | **HOLD — 2620; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Current liability |
 | 2050 | GST/HST Payable (Collected) | 2680 | Current liability |
 | 2060 | GST/HST Net (Control) | 2680 | Current liability |
 | 2100 | Income Tax Payable | 2680 | Current liability |
-| 2110 | Payroll Liabilities — CPP | 2620 | Current liability |
-| 2120 | Payroll Liabilities — EI | 2620 | Current liability |
-| 2130 | Payroll Liabilities — Income Tax W/H | 2620 | Current liability |
-| 2140 | Vacation Pay Payable | 2620 | Current liability |
-| 2150 | Workers' Compensation Payable | 2620 | Current liability |
+| 2110 | Payroll Liabilities — CPP | **HOLD — 2620; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Current liability |
+| 2120 | Payroll Liabilities — EI | **HOLD — 2620; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Current liability |
+| 2130 | Payroll Liabilities — Income Tax W/H | **HOLD — 2620; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Current liability |
+| 2140 | Vacation Pay Payable | **HOLD — 2620; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Current liability |
+| 2150 | Workers' Compensation Payable | **HOLD — 2620; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Current liability |
 | 2200 | Credit Card Payable | 2707 | Current liability |
 | 2300 | Current Portion of Long-Term Debt | 2920 | Current liability |
-| 2400 | Bank Loan — Long-Term | 3140 | Non-current liability |
+| 2400 | Bank Loan — Long-Term | **HOLD — 3140; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Non-current liability |
 | 2410 | Mortgage Payable | 3141 | Non-current liability |
-| 2500 | Shareholder Loan | 3260 | Non-current liability |
+| 2500 | Shareholder Loan | **HOLD — 3260; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Non-current liability |
 | 2600 | Deferred Revenue | 2770 | Current liability |
 
 ### Equity (3000–3999)
@@ -100,14 +103,16 @@ Canadian small businesses use 4-digit codes mapped to GIFI for T2/T2125 reportin
 
 | Code | Account | GIFI | Type |
 | --- | --- | --- | --- |
-| 3000 | Share Capital (Common Shares) | 3500 | Equity |
+| 3000 | Share Capital (Common Shares) | **HOLD — 3500; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Equity |
 | 3010 | Share Capital (Preferred) | 3520 | Equity |
 | 3100 | Retained Earnings | 3600 | Equity |
-| 3200 | Owner's Equity / Capital (sole prop) | 3500 | Equity |
-| 3210 | Owner's Drawings | 3750 | Equity |
-| 3220 | Owner's Contributions | 3500 | Equity |
+| 3200 | Owner's Equity / Capital (sole prop) | **HOLD — 3500; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Equity |
+| 3210 | Owner's Drawings | **HOLD — no automatic GIFI assignment; entity-specific equity mapping required** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Equity |
+| 3220 | Owner's Contributions | **HOLD — 3500; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Equity |
 | 3300 | Dividends Declared | 3700 | Equity |
 | 3400 | Current Year Net Income/Loss | 3680 | Equity |
+
+The held nominal rows cover cash versus deposits; equipment versus furniture and related accumulated amortization; software/intangible type; trade versus payroll liabilities; bank-loan type and shareholder-loan maturity; corporate share capital versus proprietors' equity; foreign exchange; tangible amortization; and office/postage/software classification. RC4088's definition is not enough to settle those facts. The former drawings code was not listed in the source and has been removed rather than replaced with another guess.
 
 ### Revenue (4000–4999)
 
@@ -122,7 +127,7 @@ Canadian small businesses use 4-digit codes mapped to GIFI for T2/T2125 reportin
 | 4200 | Professional Fees Earned | 8000 | Revenue |
 | 4300 | Rental Income | 8140 | Revenue |
 | 4400 | Interest and Investment Income | 8090 | Revenue |
-| 4500 | Other Income | 8230 | Revenue |
+| 4500 | Other Income | **HOLD — 8230; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Revenue |
 | 4600 | Gain on Disposal of Assets | 8210 | Revenue |
 | 4900 | Sales Returns and Allowances | 8000 | Contra revenue |
 | 4910 | Sales Discounts | 8000 | Contra revenue |
@@ -159,23 +164,23 @@ Canadian small businesses use 4-digit codes mapped to GIFI for T2/T2125 reportin
 | 6130 | Employee Benefits (Health, Dental) | 8620 | Expense |
 | 6140 | Workers' Compensation | 8622 | Expense |
 | 6200 | Advertising and Promotion | 8520 | Expense |
-| 6210 | Meals and Entertainment (50% deductible) | 8523 | Expense |
+| 6210 | Meals and Entertainment (eligibility and applicable limit required) | 8523 | Expense |
 | 6220 | Travel Expenses | 9200 | Expense |
 | 6230 | Vehicle Expenses — Fuel | 9281 | Expense |
 | 6240 | Vehicle Expenses — Insurance | 9281 | Expense |
 | 6250 | Vehicle Expenses — Repairs | 9281 | Expense |
 | 6260 | Vehicle Expenses — Lease Payments | 8915 | Expense |
-| 6300 | Office Supplies and Expenses | 8810 | Expense |
-| 6310 | Postage and Courier | 8810 | Expense |
+| 6300 | Office Supplies and Expenses | **HOLD — 8810; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Expense |
+| 6310 | Postage and Courier | **HOLD — 8810; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Expense |
 | 6320 | Telephone and Internet | 9225 | Expense |
-| 6330 | Software Subscriptions (SaaS) | 8810 | Expense |
+| 6330 | Software Subscriptions (SaaS) | **HOLD — 8810; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Expense |
 | 6400 | Professional Fees — Accounting | 8860 | Expense |
 | 6410 | Professional Fees — Legal | 8860 | Expense |
 | 6420 | Professional Fees — Consulting | 8860 | Expense |
 | 6500 | Bank Charges and Credit Card Fees | 8710 | Expense |
 | 6510 | Interest Expense — Bank | 8710 | Expense |
 | 6520 | Interest Expense — Other | 8710 | Expense |
-| 6600 | Amortization (Book Depreciation) | 8670 | Expense |
+| 6600 | Amortization (Book Depreciation) | **HOLD — 8670; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Expense |
 | 6610 | Bad Debts | 8590 | Expense |
 | 6700 | Business Tax and Licences | 8760 | Expense |
 | 6800 | Miscellaneous / Sundry Expenses | 9270 | Expense |
@@ -189,7 +194,7 @@ Canadian small businesses use 4-digit codes mapped to GIFI for T2/T2125 reportin
 | 7000 | Interest Income | 8090 | Other income |
 | 7010 | Dividend Income | 8095 | Other income |
 | 7100 | Loss on Disposal of Assets | 8210 | Other expense |
-| 7200 | Foreign Exchange Gain/Loss | 8230 | Other income/expense |
+| 7200 | Foreign Exchange Gain/Loss | **HOLD — 8230; confirm classification** [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Other income/expense |
 
 ### Tax (8000–8999)
 
@@ -202,13 +207,15 @@ Canadian small businesses use 4-digit codes mapped to GIFI for T2/T2125 reportin
 
 ## Section 3 -- Revenue Recognition
 
-### ASPE Section 3400 Revenue
+### ASPE Section 3400 Revenue — HOLD
 
-- **Revenue recognition criteria** — Revenue is recognised when: Performance is achieved (goods delivered / services rendered); Collection is reasonably assured; Amount is measurable  _(ASPE Section 3400)_
+**HOLD — do not use the following legacy recognition assumptions to make an ASPE-compliance conclusion. Operative ASPE 3400 was not read. Each recognition method requires its applicable paragraph, contract facts and framework before use.**
+
+- **HOLD — unverified legacy revenue recognition criteria** — The original assumptions were: Performance is achieved (goods delivered / services rendered); Collection is reasonably assured; Amount is measurable  _(ASPE Section 3400)_
 
 **Revenue recognition by type**  _(ASPE Section 3400)_
 
-| Revenue Type | Recognition Point |
+| Revenue Type | Unverified legacy recognition assumption — blocked from use |
 | --- | --- |
 | Sale of goods | Risks and rewards transferred, amount measurable, collection probable |
 | Rendering of services | Percentage of completion, or completed contract if outcome uncertain |
@@ -223,11 +230,11 @@ Canadian small businesses use 4-digit codes mapped to GIFI for T2/T2125 reportin
 
 | Method | CRA Requirement |
 | --- | --- |
-| Accrual | Default for all businesses |
-| Cash (modified) | Permitted for farming and fishing businesses only (ITA s.28) |
-| Billed-basis | ELIMINATED — s.34 election repealed (Budget 2017) for tax years beginning after 22 Mar 2017; WIP included in income under s.10(5)(a) at lesser of cost and FMV |
+| Accrual | General business-income method: income when earned and allowable expenses when incurred; an invoice date alone does not determine recognition. [CRA](https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/business-income-tax-reporting/accounting-your-earnings.html) |
+| Cash (modified) | CRA identifies farmers, fishers **and self-employed commission agents** as users of the cash method. Do not apply an exclusive farming/fishing list or infer that every other business can elect it. [CRA accounting methods](https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/business-income-tax-reporting/accounting-your-earnings.html) |
+| Billed-basis | The former election was repealed for tax years beginning **on or after 22 March 2017**. **HOLD:** full WIP valuation and transition conditions were not confirmed; do not apply the former blanket lesser-of-cost/FMV instruction. [ITA 34](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-34.html), [Finance history](https://www.canada.ca/en/department-finance/services/publications/federal-tax-expenditures/2025/part-5.html) |
 
-Most sole proprietors must use the accrual method — income when invoiced/earned, expenses when incurred.
+Use the applicable accounting method and the actual earning/incurrence facts; do not equate an invoice, bank deposit or payout date with income earned in every case.
 
 ## Section 4 -- Expense Classification
 
@@ -238,25 +245,30 @@ Most sole proprietors must use the accrual method — income when invoiced/earne
 | Line | Category | Description | Nominal Codes |
 | --- | --- | --- | --- |
 | 8521 | Advertising | Marketing, advertising, signage | 6200 |
-| 8523 | Meals and entertainment | 50% deductible for tax | 6210 |
+| 8523 | Meals and entertainment | **HOLD:** determine eligible amount and the applicable limit/exception; do not apply a universal 50% deduction | 6210 |
 | 8590 | Bad debts | Written-off uncollectable accounts | 6610 |
 | 8690 | Insurance | Business insurance premiums | 6030 |
 | 8710 | Interest and bank charges | Loan interest, service charges | 6500–6520 |
 | 8760 | Business taxes, licences, dues, memberships | Professional dues, municipal permits | 6700 |
-| 8764 | Motor vehicle expenses (not CCA) | Fuel, insurance, repairs, lease | 6230–6260 |
-| 8810 | Office expenses | Supplies, stationery, postage | 6300–6330 |
+| 9281 | Motor vehicle expenses (not CCA) | Eligible business-use fuel, insurance, repairs and lease costs; check applicable limits [2025 T2125](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf) | 6230–6260 |
+| 8810 | Office expenses | **HOLD:** the nominal group spans supplies, postage and software; classify each expense under the actual T2125 instructions instead of importing the whole GIFI group | 6300–6330 |
 | 8860 | Professional fees | Accounting, legal, consulting | 6400–6420 |
-| 8871 | Management and admin fees | Fees paid to related parties | 6420 |
+| 8871 | Management and admin fees | Business management/administration category, not restricted universally to related-party fees; **HOLD** actual expense classification and eligibility | 6420 |
 | 8910 | Rent | Business premises rent | 6000 |
 | 8960 | Repairs and maintenance | Building/equipment repairs | 6040 |
 | 9180 | Property taxes | Municipal/provincial property tax | 6010 |
 | 9200 | Travel | Airfare, hotels, transport | 6220 |
-| 9270 | Utilities | Electricity, gas, water, phone | 6020, 6320 |
+| 9220 | Utilities | Eligible utilities; classify telephone/internet and any mixed use against the actual form instructions [2025 T2125](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf) | 6020, 6320 |
 | 9936 | Capital cost allowance (CCA) | Tax depreciation (not book) | See Section 5 |
+
+The corrected vehicle and utilities fields are from the [2025 T2125](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf). Field 9270 is **other expenses**, not utilities. The expense-category and eligibility holds above remain subject to the [CRA expense instructions](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/expenses-section-form-t2125.html).
 
 ### Non-Deductible Expenses (CRA)
 
-- **Non-deductible items** — Personal expenses and owner's drawings; 50% of meals and entertainment (only 50% deductible); Club membership dues (golf, fitness) — Not deductible (ITA para 18(1)(l)); Political contributions — claim as federal/provincial tax credit instead; Fines and penalties imposed by law; Capital expenditures (must claim CCA); Life insurance premiums (unless collateral for loan); Accrued bonuses not paid within 180 days of year-end  _(CRA)_
+- Separate book posting from tax deductibility. Personal expenses/drawings, clubs, political contributions, fines, capital expenditure and life-insurance exceptions require the actual entity and statutory facts. A political contribution does not automatically produce a credit for every entity. **HOLD:** do not turn this list into blanket automatic tax adjustments. [CRA expenses](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/expenses-section-form-t2125.html).
+- The ordinary meals/entertainment limitation has exceptions, including separately conditioned long-haul cases. **HOLD:** determine the actual applicable rule before adding back a fixed proportion; do not label every meal 50% deductible. [CRA business expenses](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses.html).
+- Capital expenditure is not an ordinary current-expense deduction. CCA is a separate **maximum elective claim**, not a mandatory write-off of every capital purchase.
+- The unpaid-remuneration timing rule concerns amounts remaining unpaid 180 days after year-end, subject to the operative exceptions; the deduction is normally deferred to the payment year, not permanently denied. [ITA 78(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-78.html).
 
 ## Section 5 -- Asset vs Expense Thresholds
 
@@ -267,22 +279,24 @@ Most sole proprietors must use the accrual method — income when invoiced/earne
 | Class | Rate | Method | Typical Assets |
 | --- | --- | --- | --- |
 | 1 | 4% | Declining balance | Commercial buildings (post-1987) |
-| 1 (M&P) | 10% | Declining balance | Manufacturing buildings |
+| 1 (M&P) | **HOLD — conditional allowance, not a universal 10%** | Verify acquisition/use and separate-class conditions | Manufacturing buildings |
 | 8 | 20% | Declining balance | Office furniture, equipment, tools ≥ $500 |
-| 10 | 30% | Declining balance | Motor vehicles (cost ≤ $38,000 + tax in 2025) |
+| 10 | 30% base rate | Declining balance; first-year rules separate | Qualifying Class 10 vehicles; the 2025 passenger-vehicle limit is not a universal cap on all motor vehicles [CRA classes](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html) |
 | 10.1 | 30% | Declining balance | Passenger vehicles > $38,000 limit (separate class per vehicle) |
-| 12 | 100% | Full write-off | Small tools < $500, computer software (not systems) |
-| 13 | Lease term | Straight-line | Leasehold improvements |
-| 14.1 | 5% | Declining balance | Goodwill and other eligible capital property |
+| 12 | 100% base rate | **Not an automatic full first-year write-off**: half-year treatment applies to application software and certain tools under the applicable rules; enhanced relief requires its own conditions | Qualifying small tools below $500 and application software; not every low-value asset [CRA classes](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html) |
+| 13 | **HOLD — verify leasehold allowance maximum** | Term, type and renewal conditions required; not a universal straight-line remaining-lease calculation | Leasehold improvements |
+| 14.1 | 5% general base rate | **HOLD** transition treatment for pre-2017 property; do not apply 5% universally to every historic balance | Goodwill and eligible capital property [CRA classes](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html) |
 | 43 | 30% | Declining balance | Manufacturing and processing machinery (post-2025) |
 | 50 | 55% | Declining balance | Computer hardware and systems software |
 | 53 | 50% | Declining balance | M&P machinery (acquired 2016–2025) |
-| 54 | 30% | Declining balance | Zero-emission passenger vehicles |
-| 55 | 40% | Declining balance | Zero-emission non-passenger vehicles |
+| 54 | 30% base rate | First-year allowance and eligibility separate | Qualifying zero-emission vehicles that would otherwise be Class 10 or 10.1; not restricted to passenger vehicles [CRA classes](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html) |
+| 55 | 40% base rate | First-year allowance and eligibility separate | Qualifying zero-emission vehicles that would otherwise be Class 16; not every non-passenger vehicle [CRA classes](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html) |
 
-### Accelerated Investment Incentive (from 2025)
+Base rates and Class 12/54/55 descriptions: [CRA depreciable-property classes](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html). The retained $38,000 Class 10.1 passenger limit is for **2025 acquisitions**, not a 2026 refresh. [2025 regulation](https://gazette.gc.ca/rp-pr/p2/2025/2025-10-08/html/sor-dors193-eng.html). The Class 1 M&P and Class 13 holds require the detailed conditions in [CRA T5013 guidance](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4068/guide-partnership-information-return-t5013-forms.html).
 
-- **Accelerated Investment Incentive** — For eligible property acquired after 20 Nov 2018; enhanced first-year deduction phases out for property available for use after 2023 and is eliminated after 2027.  _(unsure)_
+### Accelerated Investment Incentive and acquisition cohorts
+
+**HOLD — enhanced first-year CCA:** do not apply the original AII phase-out to every 2025 acquisition. Original AII and qualifying post-2024 reaccelerated-investment property have different acquisition/available-for-use cohorts and conditions. Resolve those facts and the operative rule before computing a first-year claim. No enhanced-allowance calculation is certified here. [Regulation 1104](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-1104.html).
 
 ### Practical Thresholds
 
@@ -290,17 +304,17 @@ Most sole proprietors must use the accrual method — income when invoiced/earne
 
 | Threshold | Treatment |
 | --- | --- |
-| < $500 | Expense immediately (supplies); or Class 12 at 100% |
-| $500 – above | Capitalize: Class 8 (20%) or appropriate class |
-| Current expense test | Repair vs improvement — repairs maintain; improvements extend/enhance |
+| Current versus capital | Determine the nature of the expenditure; a purchase below $500 is not automatically a current expense |
+| Tool-class boundary | The $500 boundary applies to specified tools under the prescribed class rules, not every asset or expense |
+| Repairs / improvements | Assess the actual current/capital facts, then apply the eligible property class; do not capitalize every payment merely because it reaches $500 |
 
 ### Book Amortization vs Tax CCA
 
-- **Book amortization vs CCA** — Book amortization (ASPE Section 3061) uses straight-line over useful life. CCA is a separate tax schedule. They rarely match — the difference creates a deferred tax timing difference.  _(ASPE Section 3061)_
+**HOLD — book amortization and deferred tax:** the operative accounting standards were not read. Do not prescribe universal straight-line book amortization or infer a deferred-tax entry solely because book and tax amounts differ. Keep the book schedule, tax CCA election and applicable framework analysis separate.
 
 ## Section 6 -- P&L Format
 
-### Income Statement (ASPE Multi-Step)
+### Illustrative Income Statement Layout — framework review required
 
 ```
 INCOME STATEMENT
@@ -342,7 +356,7 @@ Net income                                            xxx
 
 ## Section 7 -- Balance Sheet Format
 
-### Statement of Financial Position (ASPE — Vertical / Report Form)
+### Illustrative Statement of Financial Position — framework review required
 
 ```
 BALANCE SHEET
@@ -405,6 +419,8 @@ TOTAL LIABILITIES AND EQUITY                          xxx
 
 ## Section 8 -- Bank Reconciliation Patterns
 
+The formats and description patterns below are workflow illustrations, not verified bank specifications or evidence of tax treatment. Confirm the actual export fields, transaction direction, counterparty and gross/net settlement reconciliation before classification.
+
 ### Common Canadian Bank Formats
 
 **Common Canadian Bank Formats**
@@ -445,18 +461,22 @@ TOTAL LIABILITIES AND EQUITY                          xxx
 
 | Concession | Eligibility | Detail |
 | --- | --- | --- |
-| Quick Method (GST/HST) | Taxable revenue ≤ $400,000 | Remit flat percentage of revenue; keep the difference |
-| Instalment threshold | Tax owing < $3,000 (individuals; $1,800 for Québec residents) or < $3,000 (corporations) | No quarterly instalments required |
-| Simplified ITC claims | Worldwide taxable supplies ≤ $1,000,000 AND taxable purchases in Canada ≤ $4,000,000 | Simplified METHOD for calculating ITCs; separate documentary thresholds apply to receipts |
-| GIFI-Short | Revenue and assets each < $1 million | ~100 common codes instead of full GIFI list |
-| T2 Short Return | Various small corporation criteria | Reduced filing requirements |
-| Filing deadline | Sole prop: June 15 (return); April 30 (payment) | 2-month extension for filing but not paying |
+| Quick Method (GST/HST) | **HOLD:** the $400,000 headline alone does not establish eligibility; tax-inclusive supplies, associates, testing period, exclusions and permanent-establishment conditions matter | Remittance and reduced ITC entitlement require the actual election/supply rules; do not treat the difference as unrestricted profit |
+| Instalments | **HOLD:** individual and corporate tests are separate; current/prior-year amounts, the exact boundary and exceptions must be resolved | Do not infer one universal quarterly schedule or exemption; corporate monthly/quarterly and first-year rules differ |
+| Simplified ITC claims | **HOLD:** the $1,000,000 / $4,000,000 headlines require associates, testing-period/current-quarter, exclusion and entity checks | Calculation method is distinct from documentary requirements; do not infer entitlement from the amounts alone |
+| GIFI-Short | **HOLD:** resolve RC4088 entity and filing-method restrictions before selecting the short form | Not a T2125 rule; the approximate code count was not independently verified and is not used here |
+| T2 Short Return | **HOLD:** specific eligibility was not verified | Do not select the return or infer filing readiness solely from business size |
+| Filing deadline | Ordinary self-employed individual: June 15 return; April 30 payment | Use the actual dates and applicable calendar adjustments, not an assumed two-full-calendar-month extension |
 
-### ASPE vs IFRS Choice
+Quick Method conditions: [RC4058](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4058/quick-method-accounting-gst-hst.html). Instalment conditions: [individuals](https://www.canada.ca/en/revenue-agency/services/payments/payments-cra/individual-payments/income-tax-instalments/who-pays-instalments.html), [corporations](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t7b-corp/corporation-instalment-guide.html). Simplified ITC conditions: [CRA](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit/calculate-methods.html). GIFI-Short: [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html).
+
+### ASPE vs IFRS Choice — HOLD
 
 **ASPE vs IFRS Choice**  _([CRA Guide RC4088, Appendix A](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html))_
 
-| Factor | ASPE (Private Enterprises) | IFRS (Public / Large) |
+**HOLD — this comparison was not verified against operative standards. Do not use these legacy shorthand assumptions to select a framework or determine recognition, goodwill, lease, instrument measurement or engagement cost.**
+
+| Factor | Unverified ASPE assumption — blocked | Unverified IFRS assumption — blocked |
 | --- | --- | --- |
 | Who | Any private company | Publicly accountable entities |
 | Complexity | Simplified (no fair value for most items) | Full fair value, complex disclosures |
@@ -467,13 +487,15 @@ TOTAL LIABILITIES AND EQUITY                          xxx
 
 ### Compilation Engagement (NTR)
 
-Most small Canadian businesses engage a CPA for a "compilation" (Notice to Reader) — the CPA compiles financial statements from client-provided information without performing audit or review procedures. No assurance is expressed.
+**HOLD — compilation:** the operative compilation standard and engagement-specific conditions were not read. Do not equate the historical "Notice to Reader" label with current compliance, select an engagement solely from size, or certify assurance/filing readiness from this skill.
 
 ## Section 10 -- Interaction with Tax Skills
 
 ### Corporate Income Tax (T2 Return)
 
-- **T2 return mapping and considerations** — Financial statements mapped via GIFI codes to T2; Schedule 1: Net Income Reconciliation (add back: amortization, meals 50%, non-deductible items; deduct: CCA, eligible capital deductions); Schedule 8: CCA calculation (separate from book amortization); Schedule 125: Income Statement Information (GIFI); Schedule 100: Balance Sheet Information (GIFI); Active business income ≤ $500,000: small business deduction (combined federal/provincial ~12.2% varies by province); Investment income: taxed at ~50%, refundable upon dividend distribution (RDTOH)  _(unsure)_
+- Map the actual corporate financial statements through GIFI to Schedules 100/125, reconcile book profit to tax on Schedule 1, and calculate the elective CCA claim separately on Schedule 8. Do not use a fixed meals addback without its actual limitation and exceptions. [Schedule 1](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch1.html), [Schedule 8](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch8.html).
+- **HOLD — small-business tax:** the $500,000 headline is not a universal entitlement. The former approximately 12.2% figure describes 9% federal plus 3.2% Ontario for qualifying **2025 Ontario** income, not every province/entity or a 2026 update. Resolve the actual eligibility, business-limit and province facts before computing tax. [CRA corporation rates](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html).
+- **HOLD — investment income/RDTOH:** there is no universal approximately 50% rate or automatic refund of all investment-income tax. Resolve the entity, province, income type, refundable account balances and taxable dividends; only the applicable refundable portion is potentially recovered. [CRA dividend-refund rules](https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/budget-2018-equality-growth-strong-middle-class/passive-investment-income/dividend-refund-rules.html).
 
 ### GST/HST Return
 
@@ -481,11 +503,14 @@ Most small Canadian businesses engage a CPA for a "compilation" (Notice to Reade
 
 | Line | Description | CoA Mapping |
 | --- | --- | --- |
-| 101 | GST/HST collected (or collectible) | 2050 |
+| 101 | Regular-method sales and other revenue **excluding GST/HST/PST** | Eligible revenue accounts, not the tax-payable control |
+| 103 | GST/HST collected or collectible | Reconciled eligible tax amounts, including 2050 |
 | 105 | Total GST/HST and adjustments | 2050 + adjustments |
 | 106 | Input Tax Credits (ITCs) | 1150 |
 | 108 | Total ITCs and adjustments | 1150 + adjustments |
 | 109 | Net tax (remit or refund) | 2060 |
+
+The mappings above follow the [GST/HST working copy](https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/bsnss/tpcs/gst-tps/bspsbch/rtrns/wrkngcp-eng.pdf). Net tax on 109 is not automatically the final amount payable/refundable: the remaining return credits/debits and final balance must be reconciled separately. Quick Method and special-regime differences are not resolved by this regular-method example.
 
 ### Payroll Remittances
 
@@ -500,7 +525,72 @@ Most small Canadian businesses engage a CPA for a "compilation" (Notice to Reade
 
 ### Provincial Considerations
 
-- **Provincial tax considerations** — Quebec: separate QST (9.975%) and QPP (instead of CPP); file with Revenu Québec; PST provinces (BC, SK, MB): PST is not an input tax credit — it becomes part of the asset/expense cost; HST provinces (ON, NB, NS, NL, PE): combined rate; single return to CRA; Alberta: GST only (5%), no provincial sales tax  _(unsure)_
+- Quebec: separate QST (9.975%) and QPP (instead of CPP); establish the actual filing obligations. HST provinces (ON, NB, NS, NL, PE) and Alberta GST (5%) use the applicable supply/place rules, not a headquarters default. **HOLD — provincial sales tax:** a provincial tax is not automatically a GST/HST ITC; current expense versus asset cost, exemptions, refunds and recoverability require the actual province and expenditure facts. Do not automatically post every provincial-tax amount to unrecoverable cost.
+
+## Worked mapping examples — fictional 2025 inputs
+
+These examples test the corrected field mapping and arithmetic only. Eligibility/business use is assumed already established for the stated amounts; they do not clear any HOLD or complete a filing.
+
+### T2125 vehicle and utilities mapping
+
+Eligible vehicle fuel of 200 and repairs of 100 belong in the vehicle-expense workpaper for line 9281. Eligible utilities of 120 belong in the utilities workpaper for line 9220, not other-expenses field 9270. No CCA or personal expenditure is included. [2025 T2125](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf).
+
+```oa-check
+name: Fictional T2125 eligible vehicle and utilities totals
+inputs:
+  eligible_vehicle_fuel: 200
+  eligible_vehicle_repairs: 100
+  eligible_utilities: 120
+steps:
+  - line_9281: eligible_vehicle_fuel + eligible_vehicle_repairs
+  - line_9220: eligible_utilities
+  - combined_expenses: line_9281 + line_9220
+expected:
+  line_9281: 300
+  line_9220: 120
+  combined_expenses: 420
+```
+
+### Regular-method GST/HST revenue and tax mapping
+
+Assume reconciled 2025 regular-method ledger amounts: revenue excluding sales taxes of 1000, GST/HST collected/collectible of 130, allowable ITCs of 50, and zero adjustments on lines 104 and 107. Line 101 is 1000, not 130; line 103 is 130. The net tax is 80. The final payable/refundable balance remains uncomputed until the other return lines are established. [GST/HST working copy](https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/bsnss/tpcs/gst-tps/bspsbch/rtrns/wrkngcp-eng.pdf).
+
+```oa-check
+name: Fictional regular-method revenue versus GST/HST collected
+inputs:
+  sales_excluding_sales_taxes: 1000
+  tax_collected: 130
+  allowable_itcs: 50
+  adjustments_104: 0
+  adjustments_107: 0
+steps:
+  - line_101: sales_excluding_sales_taxes
+  - line_103: tax_collected
+  - line_105: line_103 + adjustments_104
+  - line_108: allowable_itcs + adjustments_107
+  - line_109: line_105 - line_108
+expected:
+  line_101: 1000
+  line_103: 130
+  line_105: 130
+  line_108: 50
+  line_109: 80
+```
+
+## Sources
+
+The correction reuses the completed **21 November 2026** reads below; this is not a claim that the entire skill or the operative accounting standards were verified on 25 November. No fresh date is attached to unchanged research.
+
+| Official source | Scope of the completed read reused here |
+| --- | --- |
+| [CRA RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | GIFI definitions; 3750 absent; held classifications remain conditional |
+| [CRA accounting methods](https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/business-income-tax-reporting/accounting-your-earnings.html) | Accrual/cash methods, including self-employed commission agents |
+| [2025 T2125](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf) | Previously read form; disputed vehicle 9281 and utilities 9220 fields rechecked on 21 November |
+| [CRA CCA classes](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html) | Base rates; Class 12 first-year qualification and Class 54/55 classification; not an unrestricted enhanced-allowance computation |
+| [GST/HST working copy](https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/bsnss/tpcs/gst-tps/bspsbch/rtrns/wrkngcp-eng.pdf) | Revenue 101 versus tax 103 and core net-tax relationships |
+| Other official links adjacent to affected rows | Existing audit's bounded conditions and source reads; unresolved aspects remain HOLD |
+
+**Not yet confirmed:** operative ASPE/ASNPO/IFRS provisions and framework choice; held GIFI account classifications; full WIP transition/valuation; detailed leasehold/enhanced CCA calculations; the short-return/compilation conditions and the other eligibility/measurement holds explicitly attached to their rows. No bank export or client statement was verified.
 
 ## Disclaimer
 
