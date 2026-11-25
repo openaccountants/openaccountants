@@ -21,9 +21,9 @@ domain: income-tax
 | --- | --- |
 | Country | Australia |
 | Applies to | Non-residents of Australia disposing of Australian assets |
-| CGT rate (non-resident individual) | Apply the rates in section 4 to total taxable income including the net capital gain. Confirm full-year residence status. |
-| Key test | Taxable Australian property (TAP). Apply the changes effective 1 October 2026 for events from that date. |
-| Withholding | 15% of the statutory amount, ordinarily the arm's-length sale price, from 1 January 2025. There is no real property value threshold for those contracts. The prior 12.5% rate and $750,000 real property market value threshold applied from 1 July 2017 to 31 December 2024. |
+| CGT rate (non-resident individual) | Apply the rates in section 4 to total taxable income including the net capital gain. Confirm full-year residence status. ([ATO foreign-resident rates](https://www.ato.gov.au/tax-rates-and-codes/tax-rates-foreign-residents)) |
+| Key test | Taxable Australian property (TAP). Apply the changes effective 1 October 2026 for events from that date. ([ITAA 1997 Div 855](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_9/document_9.html)) |
+| Withholding | 15% of the statutory amount, ordinarily the arm's-length sale price, from 1 January 2025. There is no real property value threshold for those contracts. The prior 12.5% rate and $750,000 real property market value threshold applied from 1 July 2017 to 31 December 2024. ([ATO FRCGW](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-resident-capital-gains-withholding-overview); [Amending Act Schedule 1](https://www.legislation.gov.au/C2024A00135/asmade/2024-12-10/text/original/pdf)) |
 | Primary legislation | ITAA 1997 Div 855; TAA 1953 Sch 1 Subdiv 14-D |
 | Tax authority | ATO (ato.gov.au) |
 | Verified by | Pending — Australian CPA/CA sign-off required |
@@ -74,11 +74,42 @@ domain: income-tax
 
 | FRCGW threshold | None, for contracts signed from 1 January 2025 |
 | --- | --- |
-| Withholding rate | 15% of the statutory amount absent a variation |
+| Withholding rate | 15% of the statutory amount absent a variation ([ATO FRCGW](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-resident-capital-gains-withholding-overview)) |
 | Who withholds | The buyer (purchaser) |
 | Remittance deadline | Day of settlement |
 
 **Example** (synthetic): a full-year foreign resident individual sells taxable Australian real property at arm's length for AUD $10 million under a contract signed after 1 January 2025. With no variation or exclusion, the purchaser withholds and pays 15%, or AUD $1.5 million. Suppose the net capital gain after any available discount is AUD $8 million, with no other taxable income or offsets. Australian tax on the foreign resident scale is $60,850 plus 45c for each dollar above $190,000, giving $60,850 + 0.45 × $7,810,000 = AUD $3,575,350. Crediting the $1.5 million paid leaves AUD $2,075,350 payable through the Australian tax return.
+
+```oa-check
+name: AU non-resident TARP sale AUD 10m with 15% FRCGW and AUD 8m gain
+inputs:
+  sale_price: 10000000
+  frcgw_rate: 15
+  net_capital_gain: 8000000
+  top_threshold: 190000
+  top_base_tax: 60850
+  top_rate: 45
+steps:
+  - withholding_paid: pct(sale_price, frcgw_rate)
+  - total_tax: top_base_tax + pct(net_capital_gain - top_threshold, top_rate)
+  - net_tax_payable: total_tax - withholding_paid
+expected:
+  withholding_paid: 1500000
+  total_tax: 3575350
+  net_tax_payable: 2075350
+```
+
+```oa-check
+name: AU FRCGW AUD 700,000 contract from 1 January 2025 vs pre-2025
+inputs:
+  sale_price: 700000
+steps:
+  - withholding_pre_2025: 0
+  - withholding_from_2025: pct(sale_price, 15)
+expected:
+  withholding_pre_2025: 0
+  withholding_from_2025: 105000
+```
 
 ## Section 6 — Clearance Certificate
 
@@ -99,18 +130,20 @@ Use the ATO's approved online form, or the paper clearance certificate form if n
 
 Check the applicable treaty's alienation of property article, permanent establishment definition, relevant protocols and any Multilateral Instrument modification. A treaty may limit Australia's taxing right on an asset that passes the domestic TAP test. From 1 October 2026, where an agreement adopts the Australian law meaning of real property, immovable property or land, use the taxable Australian real property definition under s 3(5) of the International Tax Agreements Act 1953.
 
-## Section 9 — Sources
+## Sources
 
 - ITAA 1997 Division 855 (non-resident CGT)
 - Tax Administration Act 1953, Schedule 1, Subdivision 14-D (FRCGW)
-- ATO: ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax
-- ATO: Foreign resident capital gains withholding (ato.gov.au/FRCGW)
-- [ITAA 1997, Div 855 from 1 October 2026](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_9/document_9.html)
-- [Treasury Laws Amendment (Strengthening Accountability for Tax Adviser Misconduct and Other Measures) Act 2026, commencement and Schedules 2 and 3](https://www.legislation.gov.au/C2026A00086/asmade/2026-09-15/text/original/epub/OEBPS/document_1/document_1.html)
-- [TAA 1953 Schedule 1, Subdivision 14-D and Division 18](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)
-- [ATO guidance for non-IARPI notices](https://www.ato.gov.au/api/public/content/0-2f5524ea-eb96-464a-b5e5-b3779f4e2379)
-- [Income Tax Rates Act 1986, Schedule 7 Part II](https://www.legislation.gov.au/C2004A03348/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html)
-- [Taxation Laws (Requirement to Lodge a Return for the 2026 Year) Instrument 2026, ss 6 to 8](https://www.legislation.gov.au/F2026L00618/asmade/2026-05-22/text/original/epub/OEBPS/document_1/document_1.html)
-- [Treasury treaty list](https://treasury.gov.au/tax-treaties/income-tax-treaties)
+- [ATO Foreign residents and capital gains tax](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/cgt-discount-for-foreign-residents) (read 2026-11-22)
+- [ATO Foreign resident capital gains withholding overview](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-resident-capital-gains-withholding-overview) (read 2026-11-22)
+- [Treasury Laws Amendment (2024 Tax and Other Measures No. 1) Act 2024 Schedule 1](https://www.legislation.gov.au/C2024A00135/asmade/2024-12-10/text/original/pdf) (read 2026-11-22)
+- [ATO Tax rates: foreign resident](https://www.ato.gov.au/tax-rates-and-codes/tax-rates-foreign-residents) (read 2026-11-22)
+- [ITAA 1997, Div 855 from 1 October 2026](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_9/document_9.html) (read 2026-11-22)
+- [Treasury Laws Amendment (Strengthening Accountability for Tax Adviser Misconduct and Other Measures) Act 2026, commencement and Schedules 2 and 3](https://www.legislation.gov.au/C2026A00086/asmade/2026-09-15/text/original/epub/OEBPS/document_1/document_1.html) (read 2026-11-22)
+- [TAA 1953 Schedule 1, Subdivision 14-D and Division 18](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) (read 2026-11-22)
+- [ATO guidance for non-IARPI notices](https://www.ato.gov.au/api/public/content/0-2f5524ea-eb96-464a-b5e5-b3779f4e2379) (read 2026-11-22)
+- [Income Tax Rates Act 1986, Schedule 7 Part II](https://www.legislation.gov.au/C2004A03348/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html) (read 2026-11-22)
+- [Taxation Laws (Requirement to Lodge a Return for the 2026 Year) Instrument 2026, ss 6 to 8](https://www.legislation.gov.au/F2026L00618/asmade/2026-05-22/text/original/epub/OEBPS/document_1/document_1.html) (read 2026-11-22)
+- [Treasury treaty list](https://treasury.gov.au/tax-treaties/income-tax-treaties) (read 2026-11-22)
 
 > **Working paper only.** The TAP classification requires analysis of the company's asset composition by market value — not book value. Engage a qualified Australian tax adviser for transaction-specific advice.
