@@ -1,10 +1,11 @@
 ---
 name: canada-formation
 description: Use this skill whenever asked about forming, incorporating, or registering a company in Canada. Trigger on phrases like "set up a company in Canada", "Canadian incorporation", "Corporations Canada", "federal incorporation", "provincial incorporation", "CBCA", "Ontario corporation", "BC incorporation", "Inc. Canada", "Canadian company formation", "register a business Canada", or any question about starting a business entity in Canada. Covers federal vs provincial incorporation, entity types, registration process, costs, post-formation compliance, and bank account opening. ALWAYS read this skill before advising on Canadian company formation.
-version: 1.0
+version: 1.1
 jurisdiction: CA
 tax_year: 2025
-last_updated: 2026-07-13
+tax_year_notes: Historical 2025 formation workpaper; separately dated 2026 fees, access routes and source checks do not recertify the entire skill for the current year.
+last_updated: 2026-11-25
 depends_on:
   - company-formation-workflow-base
 category: formation
@@ -17,7 +18,7 @@ domain: formation
 
 # Canada Formation
 
-## Canada Company Formation Skill v1.0
+## Canada Company Formation Skill v1.1
 
 ## Rates and thresholds
 
