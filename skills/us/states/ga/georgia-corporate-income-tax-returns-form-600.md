@@ -3,7 +3,8 @@ name: georgia-corporate-income-tax-returns-form-600
 description: Georgia Corporate Income Tax Return (Form 600) — STARTER DRAFT
 jurisdiction: US-GA
 tax_year: 2025
-last_updated: 2026-08-10
+last_updated: 2026-11-25
+version: "1.1"
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Jeff Watts"
 reviewed_on: 2026-11-03
@@ -20,11 +21,13 @@ STARTER DRAFT, generic. Your corrections below will make it yours.
 
 Form 600 is the annual corporate income tax return filed with Georgia's state tax authority (name and portal — citation to confirm) by C-corporations that do business in, own property in, or derive income from Georgia. It covers the corporation's tax year (calendar or fiscal) and reports Georgia taxable income, and may also include a net worth tax component (concept — confirm before filing).
 
+> **Non-usable hold:** This remains an incomplete 2025 starter. The unfilled rate, net-worth, deadline, extension, estimates, electronic-filing and penalty rows below do not establish a filing method. Independent changed-line review, exact source-quotation evidence and accountant approval are pending; retained approval fields do not certify the correction draft.
+
 ## Who this is for
 
 C-corporations incorporated in Georgia, or foreign (out-of-state) corporations registered or doing business in Georgia.
 Preparers handling a first-year Georgia filing or picking up an existing client.
-Not for S-corporations, partnerships, or LLCs taxed as pass-throughs — those use different forms (confirm which before filing).
+Partnerships and LLCs taxed as pass-throughs use their applicable return. Do not categorically exclude a federal S corporation: required nonresident-shareholder Form 600S-CA consents affect Georgia S recognition. Failure of those required consents can require Form 600 and regular corporate tax. Apply the actual 2025 recognition conditions in the [IT611 filing paragraph](https://dor.georgia.gov/document/document/2025-it611-corporate-income-tax-instruction-booklet/download), read 2026-11-22 (filing/600S-CA passage only; not the full booklet).
 
 ## Before you start, ask the client
 
