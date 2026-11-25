@@ -99,6 +99,19 @@ expected:
   combined_percent: 7
 ```
 
+The existing Liberty ordinary combined rate is 6% + 1.5% = 7.5%; its component expiry correction likewise leaves that rate unchanged.
+
+```oa-check
+name: Existing Liberty ordinary combined rate
+inputs:
+  state_percent: 6
+  county_percent: 1.5
+steps:
+  combined_percent: state_percent + county_percent
+expected:
+  combined_percent: 7.5
+```
+
 ## Sources
 
 Bounded reads completed 2026-11-22, reused for this correction. The four November extension notices supersede older expiry notes; all existing 2026 rate pairs remain unchanged.
