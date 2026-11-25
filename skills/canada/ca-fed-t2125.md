@@ -197,7 +197,7 @@ These are candidate intake and matching patterns, not proof of income nature or 
 | CAR REPAIR, SERVICE, OIL CHANGE | Motor vehicle expenses | T2 | Business km proportion only |
 | PARKING (business) | Motor vehicle or travel | T1 | Fully deductible if business purpose |
 | CRA INCOME TAX, TAX INSTALMENT | EXCLUDE | Not deductible | Income tax is not a business expense |
-| CRA GST PAYMENT, GST REMITTANCE | HOLD actual tax-method adjustment | T1 | Do not infer ordinary expense or apply universal net-of-GST treatment from the debit. Bind the actual Part 3/method sequence. [2025 form](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf) |
+| CRA GST PAYMENT, GST REMITTANCE | HOLD actual tax-method adjustment | T2 | Do not infer ordinary expense or apply universal net-of-GST treatment from the debit. Bind the actual Part 3/method sequence. [2025 form](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf) |
 | CPP CONTRIBUTION | EXCLUDE from T2125 | T1 | Personal line 22200 uses half base plus all first/second additional CPP in the applicable self-employment branch. [Schedule 8](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-s8/5000-s8-25e.pdf) |
 | PERSONAL, GROCERY, AMAZON (personal) | EXCLUDE | Not deductible | Personal expenses |
 | COMPUTER, LAPTOP, EQUIPMENT (legacy $500 shortcut) | HOLD capital/current and class determination | T1 | $500 is a specific small-tool class boundary, not a universal capitalisation test. See 5.4/6.4. [CRA classes](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html) |
@@ -238,7 +238,7 @@ Assume eligible home/expense inputs, full-year CPP-only self-employment, no empl
 
 Computation:
 - Revenue: CAD 95,000
-- Expenses: 2,400 + 1,500 + 8,000 + 3,000 + 600 + 2,175 = CAD 17,675
+- Combined cost deductions: 2,400 + 1,500 + 8,000 + 3,000 + 600 + 2,175 = CAD 17,675. For a business filer, place the CAD 8,000 subcontract cost in Part 3D/A6b, not again in Part 4/B13; home costs remain in their separate deduction. This grouped arithmetic does not assign all costs to one form part.
 - Net business income: CAD 77,325
 - Base CPP: (71,300 − 3,500) × 9.9% = CAD 6,712.20
 - First additional CPP: 67,800 × 2% = CAD 1,356
@@ -486,7 +486,8 @@ B. OPERATING EXPENSES (Part 4, CCA shown separately in D)
   B9. Rent (8910)                                  ___________
   B10. Telephone and utilities (9220)              ___________
   B11. Travel (9200)                               ___________
-  B12. Other expenses (9270)                       ___________
+  B12. Other expenses (9270) and remaining Part 4
+       lines, itemised separately; no CCA/COGS/home ___________
   B13. Total operating expenses excluding CCA/home
        and the A6 cost-of-goods-sold amounts       ___________
 
