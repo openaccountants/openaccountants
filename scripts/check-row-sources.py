@@ -492,7 +492,12 @@ def fetch(url):
     r = subprocess.run(["curl", "-sL", "-m", "45", "-A", "Mozilla/5.0 (OpenAccountants figure check)",
                         *headers, "-w", "\n%{http_code}", url], capture_output=True)
     raw, code = r.stdout[:-4], r.stdout[-3:].decode("ascii", "replace")
-    text = read_bytes(raw) if code.startswith("2") else ""
+    # Wettenbank serves its Anubis browser check with HTTP 200 and enough text
+    # to pass the length check. Its figures are not evidence from the statute.
+    browser_check = (re.search(
+        rb"(?is)<title\b[^>]*>\s*Even geduld\s*-\s*Wettenbank\s*</title>", raw)
+        and b"anubis" in raw.lower())
+    text = read_bytes(raw) if code.startswith("2") and not browser_check else ""
     _cache[url] = text if len(text) >= 400 else None
     return _cache[url]
 
@@ -516,6 +521,9 @@ def check_text(text, fetcher=fetch):
             if _value(f) == 0 or derived:
                 continue
             if not found(f, vals):
+                if len(readable) < len(pages):
+                    unreadable.append((urls, row))
+                    break  # The figure may be on a linked page we could not read.
                 misses.append((f, urls, row))
     return n, misses, unreadable
 
