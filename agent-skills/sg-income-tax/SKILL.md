@@ -7,12 +7,12 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/sg-income-tax"
   jurisdiction: "SG"
   tax_year: "2026"
-  last_updated: "2026-11-14"
+  last_updated: "2026-11-22"
 ---
 
-# Singapore self-employed income tax, 2026 income / YA 2027 v3.0
+# Singapore self-employed income tax, 2026 income / YA 2027 v3.1
 
-2026 income, ordinarily YA 2027, for resident sole proprietors/freelancers. Confirm the actual accounting basis period. The ongoing rate table applies from YA 2024; this version adds the expressly announced YA 2027 FEDR and MMSS changes. Historical YA 2026 filing covered 2025 income and ran 1 March to 18 April 2026; those dates are not a newly verified YA 2027 announcement. Source read scopes and remaining gaps are below. It is a working method, not a filed return.
+2026 income, ordinarily YA 2027, for resident sole proprietors and freelancers. Confirm the accounting basis period. The [IRAS calendar](https://www.iras.gov.sg/due-dates?dueYear=2027) gives 18 April 2027 as the filing deadline. The resident rate table applies from YA 2024. Section 5 covers the YA 2027 changes to deemed expenses and CPF cash top-up relief.
 
 ## Scope and who this is for
 
@@ -22,23 +22,23 @@ metadata:
 | Country | Singapore |
 | Tax | Individual income tax, progressive resident rates (table below) |
 | Currency | SGD only |
-| Tax year basis | Preceding year basis: YA 2027 taxes income earned 1 Jan 2026 to 31 Dec 2026 |
+| Tax year basis | YA 2027 uses the preceding year for individuals. Confirm the 2026 accounting period used for business income. |
 | Primary legislation | Income Tax Act 1947 |
 | Tax authority | Inland Revenue Authority of Singapore (IRAS) |
-| Filing portal | myTax Portal, with Singpass |
-| Return | Form B (self-employed) |
-| Filing deadline | Historical YA 2026: 18 Apr 2026 for both; confirm the actual YA 2027 notice/window |
+| Filing portal | myTax Portal, with Singpass or a Singpass Foreign User Account |
+| Return | Form B/B1 (self-employed) |
+| Filing deadline | 18 April 2027, subject to any specific IRAS notice |
 
 ### Tax residence for YA 2027
 
-A person is a tax resident for YA 2027 if, per the [IRAS tax residency page](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/working-out-my-tax-residency), any ONE of these holds:
+Check the following residence tests for YA 2027. [IRAS tax residency](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/working-out-my-tax-residency)
 
 - a Singapore Citizen or Singapore Permanent Resident who normally resides in Singapore except for temporary absences; OR
 - a foreigner who stayed or worked in Singapore for at least 183 days in calendar year 2026; OR
 - a foreigner who stayed or worked in Singapore continuously for 3 consecutive years (an administrative concession that applies even if the first and third years are under 183 days); OR
 - a foreign employee whose employment straddles 2 calendar years with a continuous stay of at least 183 days. This last test is for employees only and excludes directors, public entertainers and professionals, so it does not help a self-employed person.
 
-A stay under 183 days with none of the other tests met means non-resident.
+A foreign employee with a work pass valid for at least 1 year can be treated as resident initially. IRAS reviews the status at tax clearance using the actual stay. Apply the appropriate residence tests before calculating a sole proprietor’s tax. Refer unresolved residence or treaty questions.
 
 ### Conservative Defaults
 
@@ -58,7 +58,7 @@ A stay under 183 days with none of the other tests met means non-resident.
 
 - Where were you resident in 2026: citizen, PR, or a foreigner with how many days in Singapore (and in the years either side)? This decides whether any of this skill applies.
 - When does your accounting year end? A non-December year end changes which accounts feed YA 2027.
-- Are you GST-registered, and from what date? This changes revenue on every receipt.
+- Are you GST-registered, and from what date? Which invoices include output GST?
 - Are you a commission agent, private hire car or taxi driver, or delivery worker? FEDR may replace actual expenses.
 - What vehicle do you use: private car (S, Q or E plate) or a van, lorry or motorcycle? This decides whether any motor cost or allowance is allowed.
 - What are the gross income and actual expenses of every nature of business, including separate businesses within the same NOB, for FEDR eligibility? Which of these did you have in 2026: compulsory MediSave, voluntary CPF, SRS contributions, children born or adopted (and their dates), parents you supported? Each relief turns on 2026 facts.
@@ -105,10 +105,10 @@ These are the resident rates "From YA 2024 onwards", so they apply to YA 2027. T
 | SGD 320,000 to SGD 500,000 | 22% | SGD 44,550  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates) |
 | SGD 500,000 to SGD 1,000,000 | 23% | SGD 84,150  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates) |
 | Above SGD 1,000,000 | 24% | SGD 199,150  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates) |
-| Non-resident: employment income | 15% | "or the progressive resident tax rates (see table above), whichever is the higher tax amount"  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates) |
+| Non-resident: taxable employment income | 15% | Compare with the progressive resident rates and use the higher tax amount. Check the exemption for employment of 60 days or less and its exclusions for directors, public entertainers and professionals. [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates) |
 | Non-resident: director's fees, consultation fees, rental and all other income | 24% | Except employment income and income taxed at reduced withholding rates  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates) |
 
-The legacy statutory reference is the Second Schedule to the Income Tax Act 1947, which keeps old tables for YA 2012 to 2016 and YA 2017 to 2023 next to the current one; the IRAS rate page independently confirms the ongoing rates. The statute could not be reopened in this pass. Legacy Table 3 is titled "YEAR OF ASSESSMENT 2024 AND SUBSEQUENT YEARS".
+Table 3 applies to YA 2024 and later. The Second Schedule also shows the historical rate tables for YA 2012 to 2016 and YA 2017 to 2023. [Income Tax Act 1947, Second Schedule](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=Sc2-)
 
 | Item | Rate | Note |
 | --- | --- | --- |
@@ -123,14 +123,14 @@ No Personal Income Tax Rebate is printed for YA 2027. The IRAS rebate page cover
 1. Confirm the year and the person. YA 2027 taxes 2026 income ([IRAS tax residency page](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/working-out-my-tax-residency)). Confirm the person is self-employed: a sole proprietor or partner registered with ACRA is generally self-employed and reports business income, not salary ([IRAS basic guide for self-employed persons](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/tax-obligations-of-self-employed-persons/basic-guide-for-self-employed-persons)).
 2. Confirm tax residence for YA 2027 using the tests under Scope. A non-resident is out of scope (refusal R-SG-1). See the [IRAS tax residency page](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/working-out-my-tax-residency).
 3. Confirm the accounting period. Most businesses end on 31 Dec, so the 2026 accounts feed YA 2027; a different year end feeds the YA after the year in which it ends ([IRAS basic guide for self-employed persons](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/tax-obligations-of-self-employed-persons/basic-guide-for-self-employed-persons)).
-4. Build revenue from the bank statement and invoices (Sections 3 and 8). Strip GST out of receipts if the person is GST-registered; see the [IRAS current GST rate](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/basics-of-gst/current-gst-rates) and the `sg-gst-return` skill.
-5. Deduct allowable business expenses and remove disallowable ones, using the IRAS lists summarised in Section 5.3 ([IRAS business expenses and deductions](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/business-expenses-and-deductions)). Qualifying commission agents, private hire car and taxi drivers and delivery workers may instead claim a deemed expense under the Fixed Expense Deduction Ratio ([IRAS FEDR page](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/business-expenses-and-deductions/fixed-expense-deduction-ratio-for-self-employed-persons-and-platform-workers)).
+4. Reconcile invoices, settlement reports and receipts (Sections 3 and 8). Exclude output GST shown on the supply records. Check the effective registration date and the GST treatment of each supply. [IRAS GST rates](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/basics-of-gst/current-gst-rates)
+5. Deduct the actual allowable expenses or the applicable deemed expenses. Check the industry-specific and YA 2027 broad-based FEDR conditions in Section 5.3. [IRAS business expenses and deductions](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/business-expenses-and-deductions) · [IRAS FEDR](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/business-expenses-and-deductions/fixed-expense-deduction-ratio-for-self-employed-persons-and-platform-workers)
 6. Claim capital allowances on qualifying plant and machinery under Section 19 or 19A of the Income Tax Act 1947 (Section 5.2; [IRAS capital allowances page](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/capital-allowances)). Never on an S-plated private car.
-7. Report revenue and adjusted profit on Form B as a 2-line or 4-line statement, depending on revenue (Section 5.5; [IRAS basic guide for self-employed persons](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/tax-obligations-of-self-employed-persons/basic-guide-for-self-employed-persons)).
+7. Report revenue and adjusted profit on Form B/B1 using the 2-line or 4-line statement for the revenue level (Section 5.5). [IRAS basic guide for self-employed persons](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/tax-obligations-of-self-employed-persons/basic-guide-for-self-employed-persons)
 8. Deduct qualifying donations made in 2026 from statutory income to reach assessable income ([IRAS donations page](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/donations)).
 9. Deduct personal reliefs, each tested on 2026 facts, within the overall relief cap (Section 5.4; [IRAS tax reliefs page](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs)). The result is chargeable income.
 10. Apply the resident Rates, bands and thresholds table ([IRAS individual income tax rates](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates)). IRAS prints a Personal Income Tax Rebate for YA 2024 and YA 2025 only, so apply none for YA 2027 unless IRAS publishes one ([IRAS Personal Income Tax Rebate page](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/personal-income-tax-rebate)).
-11. File within the actual YA 2027 window on myTax Portal, then pay within 1 month of the Notice of Assessment (Sections 5.5 and 5.6; [IRAS historical Tax Season 2026 page](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/tax-season-2026---all-you-need-to-know)).
+11. File by 18 April 2027 and pay within 1 month of the Notice of Assessment, subject to a specific notice or approved payment plan (Sections 5.5 and 5.6). [IRAS calendar](https://www.iras.gov.sg/due-dates?dueYear=2027)
 
 
 ### Section 3. Transaction pattern library
@@ -168,7 +168,7 @@ This is the deterministic pre-classifier. When a bank statement line matches a p
 | SP SERVICES / SP GROUP UTILITIES | Utilities | Business portion only | Home use: apportion, Section 6.1 |
 | SINGTEL BROADBAND / STARHUB HOME / M1 FIBRE | Telephone and internet | Business portion only | Mixed use: apportion |
 | SINGTEL MOBILE / STARHUB MOBILE / M1 MOBILE | Telephone | Business portion only | Mixed use: apportion |
-| GRAB [ride] / GOJEK / COMFORT TAXI | Travel | Allowable only for a business trip; flag for review | A ride is a transportation service. IRAS lets companies deduct business rides but not hiring or running a private car; the self-employed page does not address fares (Section 6.2) |
+| GRAB [ride] / GOJEK / COMFORT TAXI | Travel | Check the trip purpose and keep the receipt | See the distinction between buying transport and hiring a private car in Section 6.2 |
 | SINGAPORE AIRLINES / SCOOT / JETSTAR | Travel | Allowable only for a business trip | Travelling expenses for personal trips are private |
 | MRT / SBS TRANSIT / EZ-LINK | Travel | Allowable only in the course of business | Travel to and from home is private |
 | GOOGLE ADS / META / LINKEDIN | Advertising | Allowable | IRAS lists advertising costs as allowable |
@@ -181,7 +181,7 @@ This is the deterministic pre-classifier. When a bank statement line matches a p
 | BANK CHARGES / ADMIN FEE [DBS/OCBC/UOB] | Bank charges | Allowable if business account | Personal account: private |
 | STRIPE FEE / PAYPAL FEE / WISE FEE | Transaction fees | Allowable | Payment processing |
 | HIRE PURCHASE / VEHICLE LOAN [bank] | Capital repayment | Principal NOT deductible | Hire purchase interest is allowable; the asset itself goes to capital allowances if it qualifies |
-| SHELL / ESSO / SPC / CALTEX [fuel] | Motor | NOT deductible for a private car | Allowable only for a qualifying vehicle (van, lorry, motorcycle) or under FEDR for drivers |
+| SHELL / ESSO / SPC / CALTEX [fuel] | Motor | Check the vehicle and use | Qualifying business vehicles and eligible driving businesses have their own rules (Section 6.2) |
 | PERSONAL WITHDRAWAL / OWN TRANSFER | EXCLUDE | Drawings | Not a business expense |
 
 ### 3.3 Capital Allowance Qualifying Assets
@@ -230,9 +230,9 @@ Capital allowances replace depreciation, which is not deductible. They apply to 
 | Low-value assets: total 1-year claim per YA | SGD 30,000 | "must not exceed" this per YA. Assets above the cap go to 3 years or working life  [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/capital-allowances) |
 | 3-year write-off, Section 19A(1) | 1/3 of cost a year | Any qualifying asset  [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/capital-allowances) |
 | Working life, Section 19: initial allowance in the first YA | 20% | Of cost  [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/capital-allowances) |
-| Working life, Section 19: annual allowance each YA | 80% | Of cost, divided by the working life. By irrevocable election: 6 or 12 years if the Sixth Schedule life is 12 years or less; 6, 12 or 16 years if it is 16 years  [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/capital-allowances) |
+| Working life, Section 19: annual allowance each YA | 80% after the initial allowance | Divide by the working life. If the initial allowance is not claimed, use 100% divided by the working life. Elect 6 or 12 years if the Sixth Schedule life is 12 years or less, or 6, 12 or 16 years if it is 16 years. The election is irrevocable. [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/capital-allowances) |
 
-- **Private cars.** No capital allowance is given on private cars (S-plated), RU-plated cars or company cars (Q-plated or S-plated), except where the cars are registered as private hire cars or cars for instructional purpose and are hired out or used for providing driving instruction in the course of the business. A private hire car or taxi driver's car-related running costs are allowable expenses (Section 5.3), not capital allowances. Vans, lorries and motorcycles qualify under Section 19 or 19A; the COE paid is part of their cost ([IRAS business expenses and deductions](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/business-expenses-and-deductions)).
+- **Private cars.** The general capital-allowance bar covers private, RU-plated and company cars. Check the exception for registered vehicles hired out or used for driving instruction in the business. A foreign-registered car can qualify if used exclusively outside Singapore for business. Private hire and taxi drivers can separately claim eligible running costs under Section 5.3. Business vans, lorries and motorcycles can qualify under Section 19 or 19A, including the COE cost. [IRAS capital allowances](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/capital-allowances)
 - **Hire purchase.** Allowances follow the principal (and deposit) actually paid in each period, not the full price.
 - **Government grants.** Capital allowances are not given on expenditure funded by government capital grants approved on or after 1 Jan 2021.
 - **Not plant.** Fixed partitions, flooring, false ceilings, lighting fittings and similar items are part of the premises; consider the Section 14N renovation deduction in Section 6.3 instead.
@@ -249,7 +249,7 @@ IRAS's general rules: the expense must be incurred (the legal liability to pay h
 
 ### 5.3A New broad-based FEDR, YA 2027 onwards
 
-For income earned in 2026 onwards, eligible self-employed individuals may use a 20% deemed expense where they incurred allowable expenses, annual gross income per nature of business (NOB) does not exceed S$50,000, and the income is not covered by the industry-specific commission/PHC/taxi/delivery FEDRs. Aggregate businesses under the same NOB and use one method consistently across that NOB; different NOBs can use different methods. The deemed amount replaces actual allowable expenses, not an extra deduction on top. Qualifying e-filers receive FEDR automatically unless they opt out for actual allowable expenses. [IRAS FEDR](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/business-expenses-and-deductions/fixed-expense-deduction-ratio-for-self-employed-persons-and-platform-workers).
+From YA 2027, eligible self-employed individuals may use a 20% deemed expense if they incurred deductible expenses and gross income per nature of business (NOB) for the basis period is at most S$50,000. Exclude partnership income and income covered by the industry-specific commission, PHC, taxi or delivery FEDRs. Aggregate businesses under the same NOB and use one method consistently across that NOB. Different NOBs can use different methods. The deemed amount replaces actual deductions. Qualifying e-filers receive FEDR automatically unless they elect to use actual deductions. [IRAS FEDR](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/business-expenses-and-deductions/fixed-expense-deduction-ratio-for-self-employed-persons-and-platform-workers) · [Finance (Income Taxes) Act 2026, section 13(2)](https://sso.agc.gov.sg/Acts-Supp/23-2026/Published/20261104?DocDate=20261104&ViewType=Pdf)
 
 Keep the pre-existing industry routes: commission eligibility is based on the total relevant gross income and its own conditions, not the new per-NOB test; PHC/taxi actual driving losses are ring-fenced to future driving income. Do not use the broad-based rate to evade an industry exclusion.
 
@@ -294,6 +294,8 @@ This current working method applies the ongoing relief rules to YA 2027, tested 
 
 A child born or adopted before 1 Jan 2024 who became a Singapore Citizen only after 1 Jan 2024 takes the fixed amount, not the percentage. The overall relief cap still applies.
 
+IRAS allows relief for an otherwise qualifying child who died during the year. Check the separate counting rules for a deceased child or a stillborn child when determining child order. [IRAS Working Mother’s Child Relief](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/working-mother%27s-child-relief-%28wmcr%29)
+
 **Parent Relief.** All conditions in 2026: the taxpayer supported the dependant (parent, parent-in-law, grandparent, grandparent-in-law, step-parent, step-grandparent, adoptive parent or grandparent); the dependant was 55 or above; the dependant's 2026 annual income was not more than SGD 8,000 (the limit in the spouse table); neither the age nor the income condition applies to Parent Relief (Disability); and the dependant either lived with the taxpayer in Singapore, or lived in a separate household in Singapore and the taxpayer spent at least the support amount below.
 
 | Item | Value | Note |
@@ -302,11 +304,14 @@ A child born or adopted before 1 Jan 2024 who became a Singapore Citizen only af
 | Not staying with the dependant, per dependant | SGD 5,500 | Disability version: SGD 10,000  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/parent-relief-parent-relief-%28disability%29) |
 | Minimum support for a dependant in a separate household | SGD 2,000 | Spent "or more in supporting him/her" in 2026  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/parent-relief-parent-relief-%28disability%29) |
 
+Living in Singapore means residing there with only temporary absences. IRAS generally applies this test to foreign dependants who stay at least 8 months. [IRAS Parent Relief](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/parent-relief-parent-relief-%28disability%29)
+
 **CPF relief for the self-employed.** The person must have made compulsory MediSave or voluntary CPF contributions in 2026. From YA 2026 the rule changed:
 
 - Compulsory MediSave contributions made in 2026 get relief in full, with no cap, even if there is no assessable net trade income for that YA.
 - Voluntary CPF contributions: no relief if compulsory MediSave is more than the share of net trade income below. Otherwise relief is the lowest of (a) that share of net trade income assessed, less the relief on compulsory contributions; (b) the CPF annual limit, less the applicable compulsory contributions (including employer and employee CPF for a concurrent employee); (c) the voluntary amount actually paid.
 - A person who is also an employee: if compulsory employer and employee CPF plus compulsory MediSave already exhaust the CPF annual limit, no relief is given on voluntary contributions.
+- Apply IRAS’s platform-worker exclusion when reducing the voluntary relief limits for compulsory contributions of a worker mandated or opted in to increased CPF contributions.
 - MediSave contribution rates are set by the CPF Board by age and net trade income. See `sg-cpf-medisave`.
 
 | Item | Value | Note |
@@ -317,7 +322,7 @@ A child born or adopted before 1 Jan 2024 who became a Singapore Citizen only af
 | CPF monthly salary ceiling, 1 Jan 2025 to 31 Dec 2025 | SGD 7,400 | Historical 2025 wages, YA 2026  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund-%28cpf%29-relief-for-self-employed-employee-who-is-also-self-employed) |
 | CPF monthly salary ceiling, on or after 1 Jan 2026 | SGD 8,000 | 2026 wages, YA 2027; do not backdate to YA 2026  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund-%28cpf%29-relief-for-self-employed-employee-who-is-also-self-employed) |
 
-**CPF Cash Top-up Relief.** Only for a Singapore Citizen or Permanent Resident who made cash top-ups in 2026 under the CPF Retirement Sum Topping-Up Scheme to own or family members' accounts. Top-ups that attract Matched Retirement Savings Scheme (MRSS) grants get no relief from YA 2026 (top-ups received from 1 Jan 2025). Cash top-ups attracting Matched MediSave Scheme (MMSS) grants get no cash-top-up relief from YA 2027 (cash top-ups made from 1 Jan 2026). For a top-up to a spouse or sibling (not one with disability), that person must not have had annual income of more than SGD 8,000 in 2025, the year before the top-up. There is no income condition for parents, grandparents, or a spouse or sibling with disability. A self-employed person topping up a MediSave Account must be up to date with MediSave payable.
+**CPF Cash Top-up Relief.** A Singapore Citizen or Permanent Resident can claim eligible 2026 cash top-ups to their own or qualifying family members’ Special, Retirement or MediSave Accounts. Apply the remaining Full Retirement Sum or Basic Healthcare Sum limit for that account before the relief caps below. Top-ups that attract Matched Retirement Savings Scheme (MRSS) grants get no relief from YA 2026 (top-ups received from 1 Jan 2025). Cash top-ups attracting Matched MediSave Scheme (MMSS) grants get no cash top-up relief from YA 2027 (cash top-ups made from 1 Jan 2026). A spouse or sibling without a disability must have had annual income of at most SGD 8,000 in 2025, the year before the top-up. This income test excludes qualifying parents, grandparents and a spouse or sibling with a disability. A self-employed person topping up a MediSave Account must be up to date with MediSave payable.
 
 | Item | Value | Note |
 | --- | --- | --- |
@@ -340,7 +345,7 @@ A child born or adopted before 1 Jan 2024 who became a Singapore Citizen only af
 
 **Course Fees Relief: discontinued.** IRAS: "Course Fees Relief has been discontinued with effect from Year of Assessment (YA) 2026. The final year in which Course Fees Relief may be claimed is in YA 2025." Do not claim it for YA 2026 or later ([IRAS Course Fees Relief page](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/course-fees-relief)).
 
-**Donations (a deduction, not a relief).** Qualifying cash donations made in 2026 to an approved Institution of a Public Character (IPC) or the Community Chest are deducted from statutory income before reliefs, so they sit outside the relief cap. IRAS computes them automatically from the IPC's records; the donor must give an NRIC, FIN or UEN to the IPC. Not every registered charity is an approved IPC. The current IRAS donations page expressly illustrates a 2026 qualifying IPC donation deducted in YA 2027. The old statutory expiry quotation was not newly read; no claim is made here about donations after 2026. [IRAS donations](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/donations).
+**Donations.** Deduct qualifying cash donations made in 2026 to an approved Institution of a Public Character (IPC) or the Community Chest from statutory income before applying capped personal reliefs. Give the IPC the taxpayer’s NRIC, FIN or UEN so IRAS can use its records. Check that the charity is an approved IPC. The Finance (Income Taxes) Act 2026 extends the 250% deduction for qualifying donations through 31 December 2029. [IRAS donations](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/donations) · [Finance (Income Taxes) Act 2026, section 17(d)](https://sso.agc.gov.sg/Acts-Supp/23-2026/Published/20261104?DocDate=20261104&ViewType=Pdf)
 
 | Item | Value | Note |
 | --- | --- | --- |
@@ -350,7 +355,7 @@ A child born or adopted before 1 Jan 2024 who became a Singapore Citizen only af
 
 | Item | Value | Note |
 | --- | --- | --- |
-| Compulsory GST registration: taxable turnover | more than SGD 1 million | At the end of the calendar year (retrospective view), OR expected in the next 12 months (prospective view)  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst) |
+| Compulsory GST registration: taxable turnover | more than SGD 1 million | Test taxable turnover at calendar year-end or on a reasonably supported forecast for the next 12 months. Check statutory exceptions and the effective date. [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst) |
 
 | Item | Value | Note |
 | --- | --- | --- |
@@ -408,7 +413,7 @@ Present these questions:
 ONBOARDING QUESTIONS: SINGAPORE INCOME TAX (YA 2027)
 1. Are you a Singapore citizen, PR or foreigner? If a foreigner, how many days were you in Singapore in 2026, and in 2025 and 2027?
 2. Are you GST-registered?
-3. Are you a sole proprietor (Form B), also an employee, or a partner?
+3. Are you a sole proprietor, also an employee, or a partner? Which return did IRAS issue?
 4. What is your business, and when does your accounting year end?
 5. Are you a commission agent, private hire car or taxi driver, or delivery worker (FEDR)?
 6. Do you work from home or from separate premises?
@@ -429,15 +434,15 @@ No saved IRAS page sets a home office method. IRAS allows "Rent, utility, and te
 
 ### 6.2 Motor Vehicles and Ride-hailing
 
-IRAS disallows expenses "on using private hire cars or private cars (E, Q or S-plate cars) such as repair, maintenance, parking fees, petrol costs", "even if the private cars were used for business purposes". The exception is a private hire car or taxi driver claiming car-related expenses in earning driving income. Vans, lorries, pick-ups and motorcycles used in the business qualify for capital allowances and upkeep. **Flag for reviewer:** vehicle type and plate; whether the person is a driver eligible for FEDR; whether IRAS's company rule applies to a sole proprietor: "Payments for transportation services for business purposes qualify for tax deduction. In contrast, expenses incurred on hiring a private car and the operation or maintenance of a hired private car are not tax-deductible" ([IRAS tax treatment of business expenses (M-R)](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/business-expenses/tax-treatment-of-business-expenses-%28m-r%29)).
+IRAS generally disallows the costs of operating or hiring a private car, including when used on business. Private hire car and taxi drivers can claim eligible running costs incurred to earn driving income if they use actual expenses. Check their FEDR option separately. Vans, lorries, pick-ups and motorcycles can qualify for business upkeep and capital allowances. A taxi fare for a business journey can qualify as public transport. Check the trip purpose and keep the receipt. Refer uncertain ride-hailing arrangements and foreign vehicle cases. [IRAS self-employed business expenses](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/business-expenses-and-deductions) · [IRAS guide for self-employed tuition operators, section 3.4](https://www.iras.gov.sg/media/docs/default-source/e-tax/starter-guide-for-self-employed-tuition-centre-or-agency-operators.pdf) · [IRAS distinction between transport services and car hire](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/business-expenses/tax-treatment-of-business-expenses-%28m-r%29)
 
 ### 6.3 Capital vs Revenue Expenditure; Renovation (Section 14N)
 
-Capital expenditure is not an expense; it goes through capital allowances if the asset qualifies. Qualifying renovation or refurbishment that does not affect the structure of the premises may be deducted under Section 14N. For a sole proprietor the cap applies to the individual, however many sole proprietorships he or she owns. From YA 2025 the expenditure cap uses fixed three-YA periods, first YA 2025 to YA 2027, rather than a rolling project-specific period. Three-year straight-line treatment exists, with an irrevocable option to claim qualifying expenditure in one year permanently available from YA 2025. Do not also claim the same expenditure as repairs or capital allowances. Claim it under allowable business expenses on the 4-line statement, starting from the YA of the basis period in which the cost is first incurred. Keep an itemised list, confirmation that no Building Control approval is needed, and invoices for 5 years.
+For capital expenditure, check capital allowances and any specific statutory deduction. Qualifying renovation or refurbishment that does not affect the structure of the premises may be deducted under Section 14N. For a sole proprietor the cap applies across all their sole proprietorships. The first fixed three-YA period is YA 2025 to YA 2027. Claim in equal instalments over 3 years or elect irrevocably to claim qualifying expenditure in one year. Start in the YA for the basis period in which the expenditure is incurred. Include the deduction when calculating adjusted profit and in allowable deductions if filing a 4-line statement. Claim each cost once. Keep an itemised list, confirmation that no Building Control approval is needed and invoices for 5 years.
 
 | Item | Value | Note |
 | --- | --- | --- |
-| Section 14N renovation deduction cap | SGD 300,000 | Per fixed three-YA period, first YA2025-YA2027; qualifying-cost and no-double-deduction conditions, not a fresh cap per project. [Official source](https://www.iras.gov.sg/media/docs/default-source/e-tax/etaxguide_it_deduction_r_r_costs.pdf) |
+| Section 14N renovation deduction cap | SGD 300,000 | Per fixed three-YA period, first YA 2025 to YA 2027. Check the cessation rule before claiming any remaining instalment. [Official source](https://www.iras.gov.sg/media/docs/default-source/e-tax/etaxguide_it_deduction_r_r_costs.pdf) |
 
 ### 6.4 CPF MediSave Contributions
 
@@ -449,7 +454,7 @@ WMCR has two regimes (Section 5.4): a fixed amount for a Singapore Citizen child
 
 ### 6.6 Entertainment
 
-The live version allowed "business entertainment (with documentation)". The saved IRAS page lists only "Food, household and entertainment expenses for yourself, family members, and friends" as private and does not address client entertainment. **Flag for reviewer:** treat client entertainment as PENDING until an accountant confirms.
+Client entertainment can qualify if wholly and exclusively incurred to earn business income. Keep invoices or receipts and record the business purpose and attendees. Exclude private entertainment and refer unresolved mixed expenses. [IRAS guide for self-employed tuition operators, section 3.4](https://www.iras.gov.sg/media/docs/default-source/e-tax/starter-guide-for-self-employed-tuition-centre-or-agency-operators.pdf) · [IRAS self-employed business expenses](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/business-expenses-and-deductions)
 
 
 ## Worked cases
@@ -464,9 +469,9 @@ All amounts in these examples are hypothetical bank lines, shown as plain number
 15 Mar 2026 | PayNow Credit ALPHA DESIGN PTE LTD | +8,500.00 | Balance 24,310.50
 ~~~
 
-**Reasoning:** a PayNow receipt from a business client for design services is business income. If the person is not GST-registered, the whole receipt is revenue. If the person is GST-registered, the receipt includes GST at the standard rate in the GST table (Section 5.7); the GST portion is not revenue. Take the split from the tax invoice, not from a calculation on the bank line.
+**Reasoning:** confirm the design invoice and when the revenue was earned. If the agreed SGD 8,500 is GST-inclusive for a standard-rated supply after GST registration, output GST is SGD 701.83 (8,500 × 9/109, rounded to cents) and revenue is SGD 7,798.17. If the business is unregistered or the supply is zero-rated, the example has no output GST and revenue is SGD 8,500. Use the tax invoice to identify the actual treatment. [IRAS GST-inclusive pricing](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/basics-of-gst/invoicing-price-display-and-record-keeping/displaying-and-quoting-prices)
 
-**Classification:** business revenue; GST split only if GST-registered.
+**Classification:** business revenue, excluding any output GST.
 
 ### Example 2. Stripe Payout (Net of Stripe Fees)
 
@@ -488,7 +493,7 @@ All amounts in these examples are hypothetical bank lines, shown as plain number
 
 **Reasoning:** a self-employed person's compulsory MediSave contribution is not a business expense; IRAS lists "Your own ... MediSave/CPF contributions" as disallowable. It is claimed as CPF relief. From YA 2026, compulsory MediSave paid in 2026 gets relief in full, without the old cap, even if the person has no net trade income for YA 2027 ([IRAS CPF relief for self-employed](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund-%28cpf%29-relief-for-self-employed-employee-who-is-also-self-employed)). Voluntary contributions remain capped (Section 5.4). The relief counts toward the overall relief cap.
 
-**Classification:** EXCLUDE from business expenses. Record as CPF relief.
+**Classification:** exclude from business expenses. If the CPF record confirms SGD 3,600 of compulsory MediSave paid in 2026, record SGD 3,600 of CPF relief before the overall relief cap.
 
 ### Example 4. WeWork Office Subscription
 
@@ -508,7 +513,7 @@ All amounts in these examples are hypothetical bank lines, shown as plain number
 15 Jul 2026 | APPLE SINGAPORE PTE LTD | -2,899.00 | Balance 19,200.00
 ~~~
 
-**Reasoning:** a laptop is a fixed asset, so its cost is not an expense. Computers qualify for a 100% write-off in one year under Section 19A(2), so the laptop is written off in YA 2027 without using the low-value cap. A different item at this price (a camera, a desk) would use the low-value write-off under Section 19A(10A), which counts toward the yearly cap in Section 5.2.
+**Reasoning:** assume the laptop is bought and used wholly in the business during the basis period and SGD 2,899 is the qualifying cost after excluding any recoverable GST and government-funded cost. Elect the 100% computer write-off under Section 19A(2) for YA 2027. A business camera or desk at this price may qualify for the low-value write-off under Section 19A(10A), subject to the annual cap and the taxpayer’s choice of method.
 
 **Classification:** capital allowance for the full cost in YA 2027, Section 19A(2).
 
@@ -519,7 +524,7 @@ All amounts in these examples are hypothetical bank lines, shown as plain number
 10 Aug 2026 | SHELL SELECT QUEENSTOWN | -120.00 | Balance 22,100.00
 ~~~
 
-**Reasoning:** fuel for a private car (E, Q or S-plate) is disallowable. IRAS says such expenses "are not deductible even if the private cars were used for business purposes". The exception is a private hire car or taxi driver, who claims car-related expenses, usually through FEDR. A van, lorry or motorcycle used in the business is different: its upkeep is allowable.
+**Reasoning:** SGD 120 of fuel for an ordinary Singapore-registered private car gives a deduction of SGD 0. A private hire car or taxi driver using the actual-expense method can deduct eligible fuel incurred to earn driving income. Business use of a van, lorry or motorcycle can qualify for an upkeep deduction.
 
 **Classification:** private car: NOT deductible. Ask whether the person is a private hire car or taxi driver, or whether the vehicle is a van, lorry or motorcycle.
 
@@ -536,7 +541,7 @@ GST registered: Yes / No [circle one]
 
 A. GROSS REVENUE AND COST OF SALES
   A1. Total receipts from clients (grossed up for platform fees)   ___________
-  A2. Less: GST collected (if GST-registered)                      ___________
+  A2. Less: output GST on relevant invoices                         ___________
   A3. Net revenue                                                   ___________
   A4. Less: cost of goods sold                                      ___________
   A5. Gross profit (A3 - A4)                                        ___________
@@ -668,7 +673,7 @@ These are two qualifying businesses in the same NOB, each with allowable expense
 - NEVER apply resident rates without confirming tax residence for YA 2027.
 - NEVER treat YA 2027 as income earned in 2027. YA 2027 is 2026 income.
 - NEVER include GST collected as revenue for a GST-registered person.
-- NEVER allow capital allowances on a private, RU-plated or company car unless it is registered as a private hire or instructional car and hired out or used for driving instruction in the business. NEVER allow private car running costs, except a private hire car or taxi driver's car-related expenses.
+- Check the private-car restrictions and the exceptions for hired-out, instructional and exclusively overseas business vehicles in Sections 5.2 and 6.2.
 - NEVER give the 1-year write-off to an asset that is not a computer, prescribed automation equipment or a low-value asset.
 - NEVER allow income tax, drawings, own CPF or own insurance as business expenses.
 - NEVER allow personal or domestic expenses as business deductions.
@@ -682,14 +687,14 @@ These are two qualifying businesses in the same NOB, each with allowable expense
 ## Filing and payment
 ### 5.5 Filing and Payment
 
-Historical YA 2026 filing ran 1 Mar to 18 Apr 2026. The general IRAS self-employed guide states a 1 Mar to 18 Apr annual window, but this pass has not established a YA 2027-specific announcement. Use the actual YA 2027 notice/window; do not silently reuse a historical form. Anyone who receives a letter, form or SMS from IRAS telling them to file must file, regardless of the previous year's earnings ([IRAS late filing page](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/late-filing-or-non-filing-of-individual-income-tax-returns-form-b1-b-p-m)). For the retained historical YA 2026 cycle, the thresholds below test 2025 income. For YA 2027 use the current filing checker and actual notification; these historical rows do not certify a new-year filing exemption. The historical paper return deadline was also 18 Apr, the same as e-filing ([IRAS paper filing page](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/filing-a-paper-income-tax-return)).
+The IRAS calendar gives 18 April 2027 for individual income tax returns. IRAS publishes a general 1 March to 18 April filing window. Check the actual YA 2027 portal opening and any specific notification. Anyone instructed to file by letter, form or SMS must file regardless of their income. Check the IRAS filing checker and any No-Filing Service or Direct Notice of Assessment notification. [IRAS calendar](https://www.iras.gov.sg/due-dates?dueYear=2027) · [IRAS filing responsibilities](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/tax-obligations-of-self-employed-persons/filing-responsibilities-of-self-employed-persons-%28including-individual-partners%29) · [IRAS late filing](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/late-filing-or-non-filing-of-individual-income-tax-returns-form-b1-b-p-m)
 
 | Item | Value | Note |
 | --- | --- | --- |
-| Historical YA 2026: must file if 2025 total income was more than | SGD 22,000 | "Your total income is more than" this; OR  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/tax-season-2026---all-you-need-to-know) |
-| Historical YA 2026: must file if 2025 self-employment net profit was more than | SGD 6,000 | OR a non-resident who derived income from Singapore  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/tax-season-2026---all-you-need-to-know) |
+| Preceding-year total income exceeds | SGD 22,000 | General filing trigger, subject to IRAS notification. [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/tax-obligations-of-self-employed-persons/filing-responsibilities-of-self-employed-persons-%28including-individual-partners%29) |
+| Preceding-year self-employment net profit exceeds | SGD 6,000 | Alternative trigger. A non-resident who derives Singapore income is also covered by the filing guidance. [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/tax-obligations-of-self-employed-persons/filing-responsibilities-of-self-employed-persons-%28including-individual-partners%29) |
 
-Form B carries a 2-line or 4-line statement taken from the accounts. At the end of every accounting period the person must prepare a Profit and Loss Account and a Balance Sheet.
+Form B/B1 carries a 2-line or 4-line statement taken from the accounts. Prepare a profit and loss account and a balance sheet at the end of every accounting period.
 
 | Item | Value | Note |
 | --- | --- | --- |
@@ -718,12 +723,14 @@ Tax is payable within 1 month from the date of the Notice of Assessment, even if
 
 IRAS may also appoint agents (bank, employer, tenant) to collect, and may issue a Travel Restriction Order.
 
-**Incorrect returns** ([IRAS errors in tax returns page](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/consequences-of-non-compliance/errors-in-tax-returns)).
+**Incorrect returns and tax evasion.** The table shows the statutory penalty on conviction using the tax undercharged. The evasion provisions also contain rules for repeat offences. [Income Tax Act 1947, sections 95 to 96A](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr95-%2Cpr96-%2Cpr96A-)
 
 | Item | Value | Note |
 | --- | --- | --- |
-| Without reasonable excuse or through negligence: penalty, share of tax undercharged | up to 200% | Plus a fine up to SGD 5,000 and/or imprisonment up to three years  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/consequences-of-non-compliance/errors-in-tax-returns) |
-| With wilful intention to evade: penalty, share of tax undercharged | up to 400% | Plus a fine up to SGD 50,000 and/or imprisonment up to five years  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/consequences-of-non-compliance/errors-in-tax-returns) |
+| Incorrect return under Section 95(1) | 100% | Subject to Part 18 of the Act |
+| Incorrect return without reasonable excuse or through negligence, Section 95(2) | 200% | Also liable to a fine up to SGD 5,000, imprisonment up to 3 years or both |
+| Wilful tax evasion, Section 96 | 300% | Also liable to a fine up to SGD 10,000, imprisonment up to 3 years or both |
+| Serious fraudulent tax evasion, Section 96A | 400% | Applies to specified fraudulent conduct. Also liable to a fine up to SGD 50,000, imprisonment up to 5 years or both |
 
 A voluntary disclosure within one year of the statutory filing date can get the penalty waived if IRAS's qualifying conditions are met.
 
@@ -737,7 +744,7 @@ For the current published workflow, log in at myTax Portal with Singpass/SFA, ch
 
 | Topic | Provision |
 | --- | --- |
-| Resident rates | Income Tax Act 1947, Second Schedule, Table 3 (YA 2024 and later) |
+| Resident rates | [Income Tax Act 1947, Second Schedule, Table 3](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=Sc2-) (YA 2024 and later) |
 | Capital allowances, working life | Income Tax Act 1947, Section 19 and Sixth Schedule |
 | Capital allowances, 3-year write-off | Section 19A(1) |
 | Computers and prescribed automation equipment | Section 19A(2) |
@@ -770,7 +777,7 @@ IRAS: "The NOR scheme has ceased. The last NOR status granted will run / be vali
 - [ ] Compulsory MediSave relief given in full; voluntary CPF relief capped?
 - [ ] Relief cap applied; donations deducted before reliefs?
 - [ ] Course Fees Relief not claimed; no YA 2027 Personal Income Tax Rebate applied?
-- [ ] Actual YA 2027 filing notice/window confirmed; historical YA 2026 deadline not reused?
+- [ ] 18 April 2027 deadline, any specific notice and portal details checked?
 
 
 ## Sources
@@ -805,14 +812,19 @@ IRAS: "The NOR scheme has ceased. The last NOR status granted will run / be vali
 | Read for current nine-percent GST standard rate. | https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/basics-of-gst/current-gst-rates | 2026-11-14 |
 | Read for taxable-turnover retrospective/prospective GST boundary. | https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst | 2026-11-14 |
 | Read for transportation-service versus hired/private-car rule only. | https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/business-expenses/tax-treatment-of-business-expenses-%28m-r%29 | 2026-11-14 |
-
 | Read for Form B/B1 published portal path, two/four-line fields, prior-year filing triggers, five-year retention and certified-account attachment threshold. | https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/tax-obligations-of-self-employed-persons/filing-responsibilities-of-self-employed-persons-%28including-individual-partners%29 | 2026-11-14 |
 | Read for revenue, cost of goods, gross profit, allowable-expense sequence and sole-proprietor reporting fields; partnership allocation remains out of scope. | https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/calculating-my-business-income/calculating-business-income | 2026-11-14 |
-
 | Read for paragraphs2.3-2.6,4-6: Section14N one-year option, fixed three-YA cap, sole-proprietor aggregation and no double deduction. | https://www.iras.gov.sg/media/docs/default-source/e-tax/etaxguide_it_deduction_r_r_costs.pdf | 2026-11-14 |
+| Calendar entry for the YA 2027 individual filing deadline. | https://www.iras.gov.sg/due-dates?dueYear=2027 | 2026-11-22 |
+| Enacted YA 2027 FEDR and extension of the qualifying donation deduction. | https://sso.agc.gov.sg/Acts-Supp/23-2026/Published/20261104?DocDate=20261104&ViewType=Pdf | 2026-11-22 |
+| Distinct penalties on conviction for incorrect returns, evasion and serious fraudulent evasion. | https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr95-%2Cpr96-%2Cpr96A- | 2026-11-22 |
+| GST-inclusive price and tax fraction. | https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/basics-of-gst/invoicing-price-display-and-record-keeping/displaying-and-quoting-prices | 2026-11-22 |
+| Self-employed guidance on taxi fares, client entertainment and the records to retain. | https://www.iras.gov.sg/media/docs/default-source/e-tax/starter-guide-for-self-employed-tuition-centre-or-agency-operators.pdf | 2026-11-22 |
 
-Not yet confirmed: the exact YA 2027 announced filing window, final Form B field/attachment/rounding requirements and any new personal rebate; do not reuse a YA 2026 form by changing its date. Some relief pages still illustrate YA 2026 facts; ongoing conditions and expressly announced YA 2027 changes above are the planning basis, to be reconciled with the final YA 2027 form before filing. The old statutory donation expiry and Income Tax Act/GST Act article text could not be newly opened. Home-office apportionment, client entertainment, sole-proprietor ride-hailing application, non-residence, partnerships, property/crypto character and refund/disputes remain the stated referral questions.
+Check the final YA 2027 portal opening, field and attachment details, and rounding before filing. Some relief pages illustrate YA 2026 facts, so apply their continuing rules to the relevant 2026 inputs. Refer unproved home-office apportionment, mixed client entertainment and uncertain ride-hailing arrangements.
+
+Not yet confirmed: the allowable home-office allocation without evidence of business use and the exact YA 2027 individual portal opening date. The IRAS calendar gives the closing date.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sg-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sg-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sg-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sg-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -1,10 +1,10 @@
 ---
 name: vu-corporate-income-tax
 description: "Vanuatu company taxation, tax year 2026: no ordinary corporate income tax; rent tax on companies at 12.5% of all chargeable rent; the International Companies Act s 118 exemptions (income, estate, stamp duty, exchange control) and the conflict between its 20-year and 31 December 2099 durations."
-version: 1.3
+version: 1.4
 jurisdiction: VU
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -25,7 +25,7 @@ Local companies (Companies Act No. 25 of 2012), overseas companies doing busines
 |---|---|---|---|
 | Ordinary corporate income tax | None | 2026 | https://vanuatucustoms.gov.vu/images/Forms/VCA/VU_AEOI_Guide_v4.pdf |
 | Rent tax, taxpayer not a natural person | 12.5% of all chargeable rent for the six-month period; the VT 200,000 natural-person threshold does not apply (Sch 1) | 2026 | https://vanuatucustoms.gov.vu/images/TAA/196_Rent_Taxation_Act_Consolidated_2020.pdf |
-| International company: income, profits, capital gains, distributions | Company and shareholder not subject to any tax (s 118(1)) | 2026 | https://www.vfsc.vu/wp-content/uploads/2026/04/International-Companies-Act-CAP.-222-Consolidated-Edition-2026.pdf |
+| International company: income, profits, capital gains, distributions | Exempt for the company or its shareholder where the amounts accrue to or are derived by or from the company (s 118(1)) | 2026 | https://www.vfsc.vu/wp-content/uploads/2026/04/International-Companies-Act-CAP.-222-Consolidated-Edition-2026.pdf |
 | International company: exemption duration, s 118(4) | Twenty years from the date of registration | 2026 | https://www.vfsc.vu/wp-content/uploads/2026/04/International-Companies-Act-CAP.-222-Consolidated-Edition-2026.pdf |
 | International company: exemption duration, s 118(5) | Until 31 December 2099 | 2026 | https://www.vfsc.vu/wp-content/uploads/2026/04/International-Companies-Act-CAP.-222-Consolidated-Edition-2026.pdf |
 
@@ -35,15 +35,15 @@ There is no profits base. Rent tax falls on chargeable rent from leases of land 
 
 International Companies Act s 118, read from the 2026 consolidation:
 
-- **Income.** s 118(1): a company is not, unless carrying on business in Vanuatu, subject to any business licence fee. A company or a shareholder is not subject to any tax on income, profits, capital gains or distributions. The licence-fee exemption carries the "not carrying on business in Vanuatu" condition; the income sentence does not, and it reaches shareholders.
+- **Income.** Section 118(1) exempts the company from business licence fees unless it carries on business in Vanuatu. The income, profits, capital gains and distributions exemption applies to the company or its shareholder where the amounts accrue to or are derived by or from that company.
 - **Estate and gift.** s 118(2): no estate, inheritance, succession or gift tax, duty or other charge on shares, debt obligations or other securities of an international company.
 - **Stamp duty.** The second s 118(2): exempt are transfers of property other than real property situate in Vanuatu to or by the company; transactions in its shares, debt obligations or securities; and all other transactions relating to its business. Real property in Vanuatu is outside the exemption.
-- **Exchange control.** s 118(3): none applies. But s 118(3A) and (6): a transfer by an international company of securities in a Companies Act company, or of beneficial ownership of an international company that is a shareholder in a Companies Act company, must comply with the Companies Act.
-- **Duration conflict.** s 118(4) says the exemptions run twenty years from registration; s 118(5) says they run until 31 December 2099. Both sit in the 2026 consolidation. (5) reads like a later amendment that should have replaced (4), but that is an inference. Do not advise reliance on the exemption for a company registered more than twenty years ago without resolving it. The consolidation also has two subsections numbered (2) and a stray closing quotation mark after (5).
+- **Exchange control.** Section 118(3) exempts the international company and securities transactions between its security holders. Under s 118(3A), the exemption is unavailable when the international company transfers securities in a Companies Act company, and that transfer must comply with the Companies Act. Section 118(6) also disapplies s 118(3) when beneficial or equitable ownership of an international company that is a shareholder in a Companies Act company is transferred. Check which ownership and reporting rules apply to that transfer.
+- **Duration conflict.** The 2026 consolidation gives twenty years from registration in s 118(4) and an end date of 31 December 2099 in s 118(5). The 2006 consolidation put the twenty-year term in s 118(5). Schedule item 32 of Act No. 4 of 2016 expressly repealed and replaced that subsection with the 2099 end date. Seek confirmation of the applicable term before relying on an exemption for a company registered more than twenty years ago. The 2026 consolidation also numbers two subsections (2).
 
 ## Deadlines and filing
 
-No corporate income tax return. Rent tax: return all rent within 28 days after each period ending 31 May and 30 November and pay by the return date (ss 11 and 14); see [personal income tax](vu-income-tax.md) for the period rules. Annual return and business licence dates: [company formation](vu-company-formation.md).
+There is no corporate income tax return. Return all rent within 28 days after each period ending 31 May and 30 November and pay by the return date (ss 11 and 14). Check the [DCIR calendar](https://vanuatucustoms.gov.vu/index.php/important-dates) for the actual due date. See [personal income tax](vu-income-tax.md) for the period rules and [company formation](vu-company-formation.md) for annual return and business licence dates.
 
 ## Penalties and interest
 
@@ -67,7 +67,7 @@ expected:
   tax: 37500
 ```
 
-**2. International company registered in 2002.** Under s 118(4) the exemptions end in 2022 (2002 plus twenty years, derived); under s 118(5) they run to 31 December 2099. The two readings differ by 77 years (derived), which is why the conflict must be resolved before reliance.
+**2. International company registered in 2002.** On a twenty-year reading, the exemptions end on the registration anniversary in 2022 (2002 plus twenty years, derived). The 2099 reading gives 31 December 2099. The expiry years differ by 77 (derived). The registration date is needed to calculate the exact interval between the two dates.
 
 ```oa-check
 name: Vanuatu ICA exemption duration gap
@@ -95,6 +95,9 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | International Companies Act [Cap 222], Consolidated Edition 2026, s 118 (Read for the exemptions and both durations) | https://www.vfsc.vu/wp-content/uploads/2026/04/International-Companies-Act-CAP.-222-Consolidated-Edition-2026.pdf | 2026-11-14 |
+| International Companies Act [Cap 222], Consolidated Edition 2006, s 118(5) (original twenty-year term) | https://www.vfsc.vu/wp-content/uploads/2025/06/222-International-Companies-Act-1.pdf | 2026-11-22 |
+| International Companies (Amendment) Act No. 4 of 2016, Schedule items 31–33 (replacement of s 118(5) and transfer rules) | https://www.vfsc.vu/wp-content/uploads/2025/06/International-Companies-Amendment-Act-No.-4-of-2016.pdf | 2026-11-22 |
+| DCIR Important Dates (operational rent tax dates) | https://vanuatucustoms.gov.vu/index.php/important-dates | 2026-11-22 |
 | Rent Taxation Act [Cap 196], Consolidated Edition 2020, Sch 1 (Read for the company rate) | https://vanuatucustoms.gov.vu/images/TAA/196_Rent_Taxation_Act_Consolidated_2020.pdf | 2026-11-14 |
 | Vanuatu Competent Authority, AEOI guide v4 (Read for no income tax system) | https://vanuatucustoms.gov.vu/images/Forms/VCA/VU_AEOI_Guide_v4.pdf | 2026-11-14 |
 | DCIR rent tax guide (Read for the company case and penalties line) | https://vanuatucustoms.gov.vu/images/Brochures/IRD/eng/Rent_Tax_Guide.pdf | 2026-11-14 |

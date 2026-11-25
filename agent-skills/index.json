@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2461,
+ "count": 2465,
  "publication_holds": [
   {
    "name": "za-vat-return",
@@ -1309,6 +1309,15 @@
    "tax_year": 2026
   },
   {
+   "name": "au-forex-realisation-gains-losses-division-775",
+   "jurisdiction": "AU",
+   "path": "skills/australia/foreign-currency-forex-realisation-gains-and-losses-under-division-775.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": "Ryan Duguid",
+   "tax_year": null
+  },
+  {
    "name": "au-freelance-intake",
    "jurisdiction": "AU",
    "path": "skills/australia/au-freelance-intake.md",
@@ -1363,6 +1372,15 @@
    "tax_year": 2026
   },
   {
+   "name": "au-leaving-australia-cgt-departure-choice",
+   "jurisdiction": "AU",
+   "path": "skills/australia/leaving-australia-residency-the-cgt-departure-choice-and-what-follows-you.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": "Ryan Duguid",
+   "tax_year": null
+  },
+  {
    "name": "au-lodgment-deadlines-penalties",
    "jurisdiction": "AU",
    "path": "skills/australia/au-lodgment-deadlines-penalties.md",
@@ -1396,7 +1414,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "au-nonresident-cgt-2",
@@ -9922,6 +9940,15 @@
    "tax_year": null
   },
   {
+   "name": "india-corporate-income-tax",
+   "jurisdiction": "IN",
+   "path": "skills/india/india-corporate-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "india-crypto-tax",
    "jurisdiction": "IN",
    "path": "skills/india/india-crypto-tax.md",
@@ -17908,6 +17935,15 @@
    "name": "set-up-your-company-in-kenya-we-handle-it-from-abroad",
    "jurisdiction": "KE",
    "path": "skills/kenya/set-up-your-company-in-kenya-we-handle-it-from-abroad.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "sg-corporate-income-tax",
+   "jurisdiction": "SG",
+   "path": "skills/singapore/sg-corporate-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
