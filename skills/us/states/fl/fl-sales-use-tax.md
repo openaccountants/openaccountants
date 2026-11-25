@@ -110,7 +110,7 @@ This is a Tier 2 content skill that loads on top of `us-tax-workflow-base`. It c
 
 | Item | Amount | Source |
 | --- | --- | --- |
-| Collection allowance | 2.5% of first $1,200 in tax due; maximum $30 per reporting location/period, subject to eligibility | §212.12(1), F.S. |
+| Collection allowance | 2.5% of first $1,200 in tax due; maximum $30 per reporting location/period, subject to eligibility | [212.12(1)](https://www.flsenate.gov/Laws/Statutes/2025/212.12); [DR-15](https://floridarevenue.com/Forms_library/current/dr15.pdf) |
 
 - **Collection allowance application** — The collection allowance is a compensation to the dealer for collecting and remitting sales tax. It is deducted on line 11. Return and payment must both be timely and electronic; incomplete returns can also lose allowance. Do not multiply the $30 maximum automatically by months in a reporting period. [Source](https://floridarevenue.com/Forms_library/current/dr15.pdf). [Source](https://www.flsenate.gov/Laws/Statutes/2025/212.12).  _(§212.12(1), F.S.)_
 
