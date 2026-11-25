@@ -85,8 +85,8 @@ Provincial tax is additional. Each province has its own brackets. This skill cov
 
 | Item | Amount (CAD) |
 | --- | --- |
-| Maximum basic personal amount, subject to actual residency/eligibility | $16,129 at the 2025 net-income threshold of $177,882; [CRA BPA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30000-basic-personal-amount.html) |
-| Minimum basic personal amount above the taper zone | $14,538 at the 2025 net-income threshold of $253,414; [CRA BPA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30000-basic-personal-amount.html) |
+| Maximum basic personal amount, subject to actual residency/eligibility | $16,129 where 2025 line 23600 net income is $177,882 or less; [CRA BPA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30000-basic-personal-amount.html) |
+| Minimum basic personal amount above the taper zone | $14,538 where 2025 line 23600 net income is $253,414 or more; [CRA BPA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30000-basic-personal-amount.html) |
 | BPA clawback zone | Use actual line 23600 net income and worksheet between the thresholds; HOLD an individual result without those inputs. [CRA BPA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30000-basic-personal-amount.html) |
 
 ### CPP Self-Employed Contributions (2025) [T1]
@@ -202,7 +202,7 @@ These are candidate intake and matching patterns, not proof of income nature or 
 | PERSONAL, GROCERY, AMAZON (personal) | EXCLUDE | Not deductible | Personal expenses |
 | COMPUTER, LAPTOP, EQUIPMENT (legacy $500 shortcut) | HOLD capital/current and class determination | T1 | $500 is a specific small-tool class boundary, not a universal capitalisation test. See 5.4/6.4. [CRA classes](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html) |
 | MEMBERSHIP, DUES, PROFESSIONAL BODY | Line 8760 covers business taxes/licences/memberships; management/admin is 8871 | T1 | Bind actual expense nature and allowability; do not call 8760 management fees. [2025 form](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf) |
-| SUBCONTRACTOR, CONTRACTOR PAYMENT | Line 8360 (Subcontracts); 8340 is direct wage costs in cost of goods sold | T1 | Confirm allowable expense. T4A fees threshold concerns calendar-year total over $500, with actual exceptions/form type. [2025 form](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf); [CRA fees reporting](https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance/reporting-fees-for-service/fact-sheet-reporting-fees-services.html) |
+| SUBCONTRACTOR, CONTRACTOR PAYMENT | Line 8360 (Subcontracts) and 8340 (direct wage costs) are both in Part 3D cost of goods sold, for business income only | T2 | HOLD the branch/line for a professional-income filer; confirm allowable expense and actual business/professional branch. T4A fees threshold concerns calendar-year total over $500, with actual exceptions/form type. [2025 form](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf); [CRA fees reporting](https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance/reporting-fees-for-service/fact-sheet-reporting-fees-services.html) |
 
 ### 3.3 SaaS Subscriptions
 
@@ -459,13 +459,23 @@ A. GROSS INCOME
   A2. Actual method-specific Part 3 adjustments    ___________
   A3. Adjusted sales/fees under Part 3A or 3B       ___________
   A4. Other business income / actual Part 3C items ___________
-  A5. Gross business income, Line 8299, Part 3C     ___________
+  A5. Gross business/professional income, 8299     ___________
       HOLD if tax has already been removed; no duplicate subtraction
+  A6. Part 3D cost of goods sold (business income only)
+      A6a. Direct wage costs (8340)                ___________
+      A6b. Subcontracts (8360)                     ___________
+      A6c. Other Part 3D inputs: opening inventory,
+           purchases and other costs              ___________
+      A6d. Total costs less closing inventory
+           gives cost of goods sold (8518)         ___________
+  A7. Gross profit (8519) = A5 - A6d for business;
+      use A5 for professional income without 3D   ___________
 
-B. EXPENSES
+B. OPERATING EXPENSES (Part 4, CCA shown separately in D)
   B1. Advertising (8521)                           ___________
   B2. Allowable meals/entertainment (8523)         ___________
-  B3. Subcontracts (8360)                          ___________
+  B3. Subcontracts memo: included in A6b only;
+      excluded from B13. HOLD professional branch ___________
   B4. Insurance (8690)                             ___________
   B5. Interest and bank charges (8710)             ___________
   B6. Management and admin (8871)                  ___________
@@ -477,10 +487,11 @@ B. EXPENSES
   B10. Telephone and utilities (9220)              ___________
   B11. Travel (9200)                               ___________
   B12. Other expenses (9270)                       ___________
-  B13. Total current expenses, excluding CCA/home  ___________
+  B13. Total operating expenses excluding CCA/home
+       and the A6 cost-of-goods-sold amounts       ___________
 
 C. NET INCOME BEFORE CCA AND HOME OFFICE
-  C1. A5 - B13                                     ___________
+  C1. A7 - B13 (before CCA; C1 - D5 is 9369)        ___________
 
 D. CCA
   D1. Class 8 (20%)                                ___________
@@ -495,7 +506,10 @@ E. BUSINESS-USE-OF-HOME
   E3. Actual eligible use/time allocation, loss limit
       and carryforward under Part 7 / 18(12)       ___________
 
-F. NET BUSINESS INCOME (C1 - D5 - E3)              ___________
+F. NET SOLE-PROPRIETOR INCOME (C1 - D5 - E3)       ___________
+   Reconcile Part 4 total expenses 9368 to B13 + D5.
+   This assumes no Part 5 partnership adjustments;
+   HOLD other branches and reconcile actual 5D/9945/9946.
 
 REVIEWER FLAGS:
   [ ] Vehicle km log available?
@@ -572,7 +586,7 @@ ONBOARDING QUESTIONS -- CANADA T2125
 
 | Scenario | Income Tax Treatment |
 | --- | --- |
-| GST/HST sales treatment | Ordinary method: apply actual tax-removal adjustments before the form sequence reaches 8299. Quick Method income uses its own Part 3B/C sequence; HOLD its retained-tax/adjustment application until established. [2025 form](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf) |
+| GST/HST sales treatment | Ordinary method: apply actual tax-removal adjustments before the form sequence reaches 8299. Both ordinary and Quick Method filers use Part 3A for business or Part 3B for professional income, then Part 3C. The Quick Method government-assistance calculation sits inside the selected 3A/3B branch; HOLD actual election, eligible sales and remittance-rate application. [2025 form](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf) |
 | Ordinary recoverable ITCs | Remove recoverable tax from the ordinary expense cost; no duplicate recovery. Quick Method expense rules are separate. [2025 form](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf) |
 | Actual non-registrant | Non-recoverable GST/HST can be part of the appropriate cost, subject to expense/capital/use rules; unknown status is not proof of non-registration. [2025 form](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf) |
 | Non-recoverable tax | Apply the actual business-use/expense/capital rules; personal-use tax is not converted into a deductible business expense. [2025 form](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf) |
@@ -589,7 +603,7 @@ Completed 21 November reads are reused for this unchanged historical 2025 baseli
 | [CRA basic personal amount](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-30000-basic-personal-amount.html) | 2025 federal amount/taper paragraph and line 23600 net-income basis; actual residency/claim still required | 2026-11-21 |
 | [Schedule 8 landing page](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/5000-s8.html), [2025 Schedule 8](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-s8/5000-s8-25e.pdf) | Pages 1, 3, 6-7: scope/proration and Part 4 self-employment base, additional contributions and line 22200. Not a full employment-overlap/QPP/election computation | 2026-11-21 |
 | [ITA 18](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) | Subsection (12)(a)-(c) completely read: home qualification, no-loss restriction and carryforward; area alone does not establish individual entitlement | 2026-11-21 |
-| [T2125 landing page](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), [2025 T2125](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf), [CRA expense list](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/expenses-section-form-t2125.html) | All nine form pages read in memory: Part 3 sequence, expense lines, Chart A, CCA, home-use and ordinary/Quick Method distinctions. No bank merchant or actual expense is thereby certified | 2026-11-21 |
+| [T2125 landing page](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), [2025 T2125](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t2125/t2125-25e.pdf), [CRA expense list](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/expenses-section-form-t2125.html) | All nine form pages read in memory on 21 November. Bounded 25 November re-read of pages 2-4 resolves 3A/3B Quick Method branches, business-only 3D 8340/8360, 8518/8519 to Part 4, Part 5/home sequence. Exact captions: “Part 3B – Professional income”; “Subcontracts”. No bank merchant or actual expense certified | 2026-11-21; bounded follow-up 2026-11-25 |
 | [ITR 1100](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-1100.html) | Complete subsection (2) formula including A/A.1, B/B.1, C and Class 50 factor 9/11; base-rate evidence read separately. Actual eligibility/pool remains held | 2026-11-21 |
 | [ITR 1104](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-1104.html), [Parliament C-15 record](https://www.parl.ca/legisinfo/en/bill/45-1/c-15) | Subsection (4.01) post-2024 acquisition, availability and eligibility conditions; Parliament record of royal assent on 26 March 2026. No new case is assumed eligible from the heading alone | 2026-11-21 |
 | [2025 vehicle regulation](https://gazette.gc.ca/rp-pr/p2/2025/2025-10-08/html/sor-dors193-eng.html) | Prescribed $38,000 amendment, its 2025 applicability and explanatory text | 2026-11-21 |
