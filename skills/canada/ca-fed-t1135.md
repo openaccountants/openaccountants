@@ -1,10 +1,11 @@
 ---
 name: ca-fed-t1135
 description: Use this skill whenever asked about Canada Form T1135, Foreign Income Verification Statement, specified foreign property, foreign asset reporting, the $100,000 cost amount threshold, the $250,000 simplified-versus-detailed reporting boundary, or how to classify foreign accounts, foreign securities, foreign real estate, foreign trusts, and other foreign property for a Canadian resident taxpayer. Trigger on phrases like "T1135", "foreign income verification statement", "specified foreign property", "foreign assets over 100000", "do I need to file T1135", "foreign bank account reporting Canada", "US brokerage T1135", "foreign rental property T1135", "simplified T1135", "Part A Part B T1135", or any question about whether a Canadian resident individual, corporation, trust, or partnership must disclose foreign property. ALWAYS read this skill before touching any Canada T1135-related work.
-version: 2.0
+version: 2.1
 jurisdiction: CA
 tax_year: 2025
-last_updated: 2026-07-13
+tax_year_notes: Historical 2025 return workpaper; VDP routing is separately determined by the application receipt date, not by the return year.
+last_updated: 2026-11-25
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -17,15 +18,17 @@ domain: cross-border
 
 # CA Fed T1135
 
+This proposed correction retains the 2025 return examples. **HOLD** prevents final use of an affected conclusion until its stated source, convention or taxpayer inputs are established; it is not a conclusion of zero tax or no filing.
+
 ## Rates and thresholds
 
-- **Reviewer note** — Reviewed against the cited tax authorities by Nathan Wiebe on 2026-06-21. Items flagged for further clarification are tracked separately and excluded here. This block is generated from verified skill_facts — edit the facts, not the prose.
+- **Reviewer note** — Reviewed against the cited tax authorities by Nathan Wiebe on 2026-06-21. That historical attribution does not approve this proposed correction. Source gaps and unresolved applications are explicitly held below.
 
 ### T1135 (Foreign Property)
 
 - **Filing threshold** — Total cost > $100,000 CAD at any time  _(ITA s.233.3; CRA — T1135 guide — canada.ca)_
-- **Basis** — Cost amount, NOT fair market value  _(ITA s.233.3(1) definition of 'cost amount'; CRA — Questions and answers about T1135)_
-- **Simplified (Part A)** — $100,000–$249,999 throughout the entire year  _(ITA s.233.3; CRA Form T1135 instructions)_
+- **Basis** — Cost amount, not fair market value. CRA identifies the cost-amount definition in ITA 248(1), not a definition in 233.3(1). [CRA Q&A](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/questions-answers-about-form-t1135.html)
+- **Simplified (Part A)** — Filing threshold exceeded $100,000 at some time, while aggregate cost remained strictly below $250,000 throughout the year: Part A or Part B. It need not stay above $100,000 all year. [CRA Q&A](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/questions-answers-about-form-t1135.html)
 - **Detailed (Part B)** — $250,000+ at any time  _(ITA s.233.3; CRA Form T1135 instructions)_
 - **Cat 1** — Funds held outside Canada  _(CRA Form T1135)_
 - **Cat 2** — Shares of non-resident corporations  _(CRA Form T1135)_
@@ -36,11 +39,11 @@ domain: cross-border
 - **Cat 7** — Property held with Canadian registered dealer/trust co  _(CRA Form T1135; CRA — T1135 reporting for 2015 and later years)_
 - **Personal-use property** — Excluded  _(ITA s.233.3(1))_
 - **Active business property** — Excluded  _(ITA s.233.3(1))_
-- **Registered plans (RRSP/RRIF/TFSA/RESP/DPSP)** — Excluded  _(ITA s.233.3(1))_
+- **Registered plans (RRSP/RRIF/TFSA/RESP/DPSP)** — RRSP/TFSA exclusion is confirmed. **HOLD RRIF/RESP/DPSP:** their T1135 authority is not fully bound here; do not exclude them solely from this list or CRS guidance. [CRA Q&A](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/questions-answers-about-form-t1135.html)
 - **First year of Canadian residence** — Individuals only (other than trusts): excluded for the year the individual first becomes resident in Canada — not a general exemption for other taxpayer types  _(ITA s.233.7)_
 - **Late filing — up to 100 days** — Late filing (s.162(7)): $25/day, minimum $100, maximum $2,500 (100 days). The separate s.162(10)(a) knowing/grossly-negligent penalty is $500/month up to 24 months (max $12,000), less any s.162(7) penalty applied. There is no "$100/day, max $12,000" tier.  _(ITA s.162(7) — max $2,500; ITA s.162(10)(a) — $500/month up to 24 months, max $12,000; CRA — Table of penalties (foreign reporting) — canada.ca)_
-- **Knowing / grossly negligent failure to file** — s.162(10)(a): $500 per month, up to 24 months (max $12,000), less any s.162(7) penalty already applied; after 24 months s.162(10.1) adds 5% of the cost amount. There is no "$100/day" penalty in the T1135 regime.  _(ITA s.162(10)(a); CRA — Table of penalties (foreign reporting))_
-- **Knowingly non-filed > 24 months** — Additional 5% of the cost amount of the property (ITA s.162(10.1)). The separate false-statement penalty under s.163(2.4) is the greater of $24,000 and 5% of cost amount. Reassessment period is extended 3 years under s.152(4)(b.2).  _(ITA s.162(10.1); ITA s.163(2.4); ITA s.152(4)(b.2); CRA — Table of penalties)_
+- **Knowing / grossly negligent failure to file** — Section 162(10)(a): $500/month up to 24 months, maximum $12,000 less the applicable 162(7) penalty. Continuing-failure liability under 162(10.1) has additional conditions and offsets; do not add an unconditional annual 5% charge. [ITA 162](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-162.html)
+- **Knowingly non-filed > 24 months** — Section 162(10.1) uses the greatest relevant aggregate cost and statutory offsets where its liability/period conditions apply. Section 163(2.4) has a separate knowledge/gross-negligence test and greater-of-$24,000/5% rule. The three-year reassessment extension also requires unreported foreign-property income and a deficient/late/missing T1135; non-filing alone is insufficient. **HOLD actual liability** pending the facts. [ITA 162](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-162.html), [163](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-163.html), [152(4)(b.2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-152.html)
 
 ## Section 1 -- Quick reference
 
@@ -62,7 +65,7 @@ Read this whole section before classifying anything.
 | Contributor | Open Accountants Community |
 | Validated by | Verified by Nathan Wiebe on 2026-06-21 |
 | Validation date | Verified by Nathan Wiebe on 2026-06-21 |
-| Skill version | 2.0 |
+| Skill version | See frontmatter version; proposed correction |
 | Confidence coverage | Tier 1: threshold testing, Part A / Part B decision, category mapping, common exclusions, form-field capture. Tier 2 (Section 7 catalogue, T2-1 to T2-10): residency timing, beneficial ownership, foreign affiliate exposure, partnership/trust attribution, digital-asset situs, mixed-use real estate, pre-construction deposits, functional currency / amended returns, joint ownership, missed prior-year filings. Tier 3: foreign affiliate filings (T1134), formal voluntary disclosure execution. |
 
 ### Core thresholds (2025 form usage)
@@ -73,7 +76,7 @@ Read this whole section before classifying anything.
 | --- | --- |
 | Basic filing threshold | File T1135 if total cost amount of specified foreign property exceeded $100,000 CAD at any time in the year |
 | Threshold basis | Cost amount, NOT fair market value |
-| Simplified boundary | If total cost was more than $100,000 CAD but **less than $250,000 CAD throughout the entire year** (i.e., did not reach $250,000 CAD at any time), complete either Part A or Part B |
+| Simplified boundary | If aggregate cost exceeded $100,000 CAD at some time but remained **strictly below $250,000 throughout the year**, complete either Part A or Part B. The lower threshold need not stay exceeded all year. [CRA Q&A](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/questions-answers-about-form-t1135.html) |
 | Detailed boundary | If total cost reached $250,000 CAD or more at any time in the year, complete Part B |
 
 ### T1135 categories
@@ -98,7 +101,7 @@ Read this whole section before classifying anything.
 | --- | --- |
 | Personal-use property | Excluded |
 | Property used or held exclusively in an active business | Excluded |
-| Property inside registered plans (RRSP, RRIF, TFSA, RESP, DPSP) | Excluded |
+| Property inside RRSP or TFSA | Excluded with actual plan status confirmed. RRIF/RESP/DPSP remain HOLD pending applicable T1135 authority, not a blanket exclusion. [CRA Q&A](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/questions-answers-about-form-t1135.html) |
 | First year of Canadian tax residence for an individual (other than a trust) | Excluded under ITA s. 233.7 for that first resident year |
 
 ### Conservative defaults
@@ -156,7 +159,8 @@ This is the deterministic pre-classifier for T1135 assets. Each asset gets exact
 
 | Pattern | Treatment | Reason |
 | --- | --- | --- |
-| Foreign property inside RRSP / RRIF / TFSA / RESP / DPSP | EXCLUDED | Registered-plan exclusion |
+| Foreign property inside RRSP / TFSA | EXCLUDED | Confirm actual plan status; [CRA Q&A](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/questions-answers-about-form-t1135.html) |
+| Foreign property inside RRIF / RESP / DPSP | REVIEWER FLAG | HOLD until the applicable T1135 exclusion is source-bound; do not substitute CRS account rules |
 | Foreign vacation property used as personal-use property | EXCLUDED | Personal-use property exclusion |
 | Property used or held exclusively in an active business | EXCLUDED | Active-business exclusion |
 | Canadian mutual fund trust / Canadian mutual fund corporation | EXCLUDED | Investor holds Canadian property, not underlying foreign property |
@@ -212,7 +216,9 @@ Aggregate the **cost amount** of all reportable specified foreign property held 
 
 ### 4.4 Part A -- Simplified reporting method
 
-- **Part A requirements** — Part A requires: type-of-property boxes; top three country codes based on maximum cost amount during the year; gross income from all specified foreign property; gain (loss) from disposition of all specified foreign property. Even if Part A is used, still build the underlying asset inventory for reviewer support.
+- **Part A requirements** — Part A requires: type-of-property boxes; top three country codes; gross income from all specified foreign property; gain (loss) from disposition of all specified foreign property. Even if Part A is used, still build the underlying asset inventory for reviewer support.
+
+Part A country selection needs a documented convention: the form says maximum cost during the year, while CRA Q&A specifies the highest month-end aggregate cost for the top three countries. **HOLD final country ranking** until monthly records and the chosen convention are reconciled; do not label the form's maximum wording numerically wrong solely from the Q&A. [CRA Q&A](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/questions-answers-about-form-t1135.html); [form page 1](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1135/t1135-23e.pdf).
 
 ### 4.5 Part B -- Detailed reporting method
 
@@ -234,7 +240,7 @@ Aggregate the **cost amount** of all reportable specified foreign property held 
 
 ### 5.4 Category 4 -- Interests in non-resident trusts
 
-- **Capture fields** — Capture: name of trust; country code; maximum cost amount during the year; income received; capital received; gain (loss) on disposition.
+- **Capture fields** — Capture: name of trust; country code; maximum cost amount during the year; cost amount at year-end; income received; capital received; gain (loss) on disposition. [Current T1135 form](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1135.html)
 
 ### 5.5 Category 5 -- Real property outside Canada
 
@@ -248,11 +254,13 @@ Aggregate the **cost amount** of all reportable specified foreign property held 
 
 - **Capture fields, country-by-country** — Capture, country-by-country (one aggregated line per country code): dealer / trust company name; country code; maximum fair market value during the year (aggregate across all securities of that country); fair market value at year-end (aggregate across all securities of that country); gross income (aggregate across all securities of that country); gain (loss) on disposition (aggregate across all securities of that country).
 - **Category 7 aggregation rule** — Category 7 is a special aggregation rule that permits country-by-country reporting in lieu of security-by-security detail when property is held with a Canadian registered securities dealer or Canadian trust company. Do not force Categories 2 to 6 line-by-line reporting if valid Category 7 aggregation is available and chosen. Aggregation is by country of the issuer of the underlying property, not by dealer.
-- **Why Category 7 uses fair market value, not cost amount** — Categories 1 to 6 use cost amount for both the threshold test and the in-form reporting fields. Category 7 is the deliberate exception: CRA permits FMV reporting because Canadian registered securities dealers and Canadian trust companies already track daily FMV (T5008 / T3 / T5 reporting infrastructure), and reconstructing cost amount across high-volume trading would impose disproportionate compliance burden. The Category 7 FMV concession is reporting-side only. The threshold test under s. 233.3 still uses cost amount -- you cannot use FMV to decide whether the $100,000 CAD threshold is crossed, even if every reportable asset will ultimately land in Category 7.  _(CRA, "Form T1135 -- Reporting for 2015 and later tax years.")_
+- **Why Category 7 uses fair market value, not cost amount** — Categories 1 to 6 use cost amount for both the threshold test and the in-form reporting fields. Category 7 is the deliberate exception: **HOLD the explanatory rationale:** the claim that the concession follows from dealer daily-FMV infrastructure (T5008 / T3 / T5) and disproportionate cost-reconstruction burden is not authenticated in the completed sources; do not cite it as CRA's stated reason. The Category 7 FMV concession is reporting-side only. The threshold test under s. 233.3 still uses cost amount -- you cannot use FMV to decide whether the $100,000 CAD threshold is crossed, even if every reportable asset will ultimately land in Category 7.  _(CRA, "Form T1135 -- Reporting for 2015 and later tax years.")_
+
+The form instructions permit maximum month-end FMV for Category 7, and CRA's separate reporting page describes the highest month-end value. Document that concession and the actual country aggregation; it is not proof that a daily-maximum amount is always erroneous. **HOLD unsupported rationale:** the explanation above about dealer reporting infrastructure and compliance burden is not authenticated here as CRA's reason. The confirmed concession does not verify that causal explanation. [Form instructions](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1135/t1135-23e.pdf); [CRA reporting rule](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/form-t1135-reporting-2015-later-tax-years.html).
 
 ### 5.8 Country code rules
 
-- **Country code rules** — Capture country code in form-ready format wherever the form requires it. For Part A, identify the top three countries based on maximum cost amount during the year. For shares of non-resident corporations, generally use the country of residence of the corporation. For interests in non-resident trusts, generally use the country of residence of the trust. If country coding is uncertain, flag reviewer confirmation.
+- **Country code rules** — Capture country code in form-ready format wherever the form requires it. For Part A, apply the form/Q&A convention and country-ranking HOLD in 4.4, not an undocumented valuation shortcut. For shares of non-resident corporations, generally use the country of residence of the corporation. For interests in non-resident trusts, generally use the country of residence of the trust. If country coding is uncertain, flag reviewer confirmation.
 
 ### 5.9 Income and gain rules
 
@@ -262,7 +270,7 @@ Aggregate the **cost amount** of all reportable specified foreign property held 
 
 ### 6.1 Registered plans
 
-- **Registered plans exclusion** — Foreign property inside RRSP, RRIF, TFSA, RESP, and DPSP is excluded from T1135. Do not include those assets in the threshold calculation.
+- **Registered plans exclusion** — Foreign property inside an actual RRSP or TFSA is excluded. **HOLD RRIF/RESP/DPSP:** establish the operative T1135 exclusion before removing those assets from the threshold test; the current research did not fully bind those plans. [CRA Q&A](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/questions-answers-about-form-t1135.html)
 
 ### 6.2 Personal-use property
 
@@ -290,10 +298,10 @@ Aggregate the **cost amount** of all reportable specified foreign property held 
 
 | Penalty | Statute | Amount |
 | --- | --- | --- |
-| Late filing of T1135 | ITA s. 162(7) | $25 per day, minimum $100, maximum $2,500 (100 days). Applied automatically; due-diligence defence available but narrow. |
+| Late filing of T1135 | ITA s. 162(7) | $25 per day, minimum $100, maximum $2,500 (100 days). **HOLD any defence/relief:** the statutory 233.5 exception does not cover T1135; a separate common-law defence was not verified. [CRA penalty table](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/table-penalties.html) |
 | Knowing or grossly negligent failure to file | ITA s. 162(10)(a) | $500 per month, up to 24 months. Maximum $12,000, less penalties already levied under s. 162(7). |
 | Failure to file after CRA demand (knowing or gross negligence) | ITA s. 162(10)(b) | $1,000 per month, up to 24 months. Maximum $24,000, less penalties already levied. |
-| Continuing failure beyond 24 months | ITA s. 162(10.1) | 5% of the cost amount of the specified foreign property, less any penalty already levied under s. 162(7) and s. 162(10). |
+| Continuing failure beyond 24 months | ITA s. 162(10.1) | Subject to 162(10) liability and the statutory period conditions: 5% of the greatest relevant aggregate cost, with the prescribed 162(7)/(10) offsets. Not an unconditional recurring annual charge for one deficient return. [Operative section](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-162.html) |
 | False statement or omission on T1135 | ITA s. 163(2.4) | Greater of $24,000 and 5% of the greatest cost amount of the specified foreign property to which the false statement or omission relates. CRA bears burden of proving knowledge or gross negligence. |
 | Extended reassessment exposure | ITA s. 152(4)(b.2) | The normal reassessment period is extended by three years for unreported income from specified foreign property where T1135 was not filed, was filed late, or contained a misrepresentation. |
 
@@ -301,8 +309,8 @@ Penalty references: CRA, "Table of penalties -- Foreign reporting." Late filing 
 
 #### 6.6.2 Voluntary Disclosures Program
 
-- **VDP overview** — If prior-year T1135 filings were missed and the omission has not been the subject of CRA enforcement action, the Voluntary Disclosures Program (VDP) may provide penalty relief and protection from prosecution. Conditions are set out in CRA Information Circular IC00-1R6, Voluntary Disclosures Program (effective 1 March 2018). The five validity conditions are: voluntary, complete, involves application or potential application of a penalty, includes information that is at least one year past due, and includes payment of estimated tax owing.  _(CRA Information Circular IC00-1R6, Voluntary Disclosures Program (effective 1 March 2018))_
-- **VDP outcome caution** — VDP outcomes are streamed (General Program vs Limited Program) at CRA's discretion. Do NOT promise a specific stream or relief outcome. Flag VDP eligibility for reviewer; do not file the application within routine workflow.
+- **VDP overview** — Applications received on/after 1 October 2025 use IC00-1R7; earlier applications retain the applicable R6 process. R7 requires voluntary eligibility, complete supporting information, an error/omission with relevant interest, penalties or both, the prescribed overdue-year condition, and payment or a request for a payment arrangement where applicable. Do not require an assessed penalty or payment in full as a universal admission test. **HOLD eligibility:** bind the application date and R7 exclusions/conditions; do not promise relief or submit within this workflow. [CRA R7](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic00-1/ic00-1r7-voluntary-disclosures-program.html)
+- **VDP outcome caution** — R7 distinguishes unprompted/general and prompted/partial relief. Prior contact is not automatically disqualifying, but an audit/investigation already initiated against the taxpayer or a related taxpayer in respect of the disclosed information prevents voluntariness. **HOLD actual routing:** bind the communication, investigation and disclosure facts. Do not promise relief. [CRA R7, paragraphs 16–23](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic00-1/ic00-1r7-voluntary-disclosures-program.html)
 
 ## Section 7 -- Tier 2 reviewer catalogue
 
@@ -469,11 +477,46 @@ Input: Canadian-resident individual with foreign brokerage holdings cost $310,00
 
 Expected result:
 - T1135 required for each year cost amount exceeded $100,000 CAD
-- Penalty exposure: s. 162(7) ($25/day, max $2,500 per year) at minimum; s. 162(10)(a) up to $12,000 per year (at $500/month, up to 24 months, less any s. 162(7) penalty already applied) if knowing or grossly negligent; s. 162(10.1) 5% of cost amount after 24 months; s. 163(2.4) greater of $24,000 or 5% if false statement / omission
-- Extended reassessment exposure under s. 152(4)(b.2) (additional three years for unreported foreign income)
-- Reviewer flag: assess Voluntary Disclosures Program eligibility under IC00-1R6 -- voluntary, complete, penalty applies, at least one year overdue, payment of estimated tax owing
-- Do NOT promise General Program vs Limited Program outcome; CRA's discretion
+- Penalty exposure is conditional, per deficient tax-year return: ordinary 162(7) schedule $25/day, minimum $100, maximum $2,500; 162(10) knowledge/gross-negligence and demand branches, 162(10.1) liability/period/base/offset conditions and 163(2.4) knowledge/gross-negligence conditions must be established separately. **HOLD any actual total or defence.** A 5% penalty is not charged again each succeeding year for the same deficient return. [ITA 162](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-162.html); [163](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-163.html)
+- Reassessment extension additionally needs unreported foreign-property income and the deficient/late/missing T1135. The asset holding alone does not supply an unreported-income fact. **HOLD actual extension.** [ITA 152(4)(b.2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-152.html)
+- Reviewer flag: assess VDP using the application receipt date: R7 for receipt on/after 1 October 2025, R6 only for applicable older receipts. Bind the current conditions/exclusions in 6.6.2. [CRA R7](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic00-1/ic00-1r7-voluntary-disclosures-program.html)
+- Do NOT promise an unprompted/general or prompted/partial relief outcome under R7; an actual disclosure needs the current facts and reviewer determination
 - Do NOT file VDP application within routine workflow; escalate to Tier 2 (T2-10)
+
+These blocks recompute original example amounts only. They do not establish residency, beneficial ownership, exclusions, reporting conventions or penalty liability.
+
+```oa-check
+name: Original below-threshold asset total
+inputs:
+  bank_cost: 42000
+  share_cost: 31000
+steps:
+  - aggregate_cost: bank_cost + share_cost
+expected:
+  aggregate_cost: 73000
+```
+
+```oa-check
+name: Original pre-sale asset total
+inputs:
+  bank_cost: 18000
+  share_cost: 108000
+steps:
+  - aggregate_cost_before_sale: bank_cost + share_cost
+expected:
+  aggregate_cost_before_sale: 126000
+```
+
+```oa-check
+name: Original first-resident example total, exemption facts separate
+inputs:
+  bank_cost: 180000
+  rental_cost: 420000
+steps:
+  - aggregate_cost: bank_cost + rental_cost
+expected:
+  aggregate_cost: 600000
+```
 
 ## Section 10 -- Onboarding fallback
 
@@ -493,9 +536,31 @@ Expected result:
 - **CRA -- Foreign Income Verification Statement (overview)** — Overview page.  _(https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/foreign-income-verification-statement.html)_
 - **CRA -- Table of penalties (foreign reporting)** — Table of penalties.  _(https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/table-penalties.html)_
 - **CRA -- Questions and answers about penalties (foreign reporting)** — Q&A about penalties.  _(https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/questions-answers-about-penalties.html)_
-- **CRA Information Circular IC00-1R6, Voluntary Disclosures Program** — Effective 1 March 2018.  _(https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic00-1/ic00-1r6-voluntary-disclosures-program.html)_
+- **Historical CRA IC00-1R6, Voluntary Disclosures Program** — Archived; applicable older application receipts, not the current process.  _(https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic00-1/ic00-1r6-voluntary-disclosures-program.html)_
 
-Versioning note: the CRA replaced IC00-1R5 with IC00-1R6 effective 1 March 2018 for income-tax VDP applications. Confirm the current version of any CRA publication before relying on it; CRA periodically reissues these documents under new revision suffixes (e.g., IC00-1R7).
+Versioning note: historically, R6 replaced R5 effective 1 March 2018; R6 is now historical for application routing. Application receipt date controls the R6/R7 boundary even for a 2025 or earlier return; a stale R6 reference in the posted T1135 PDF does not override R7. [Current R7 applicability](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic00-1/ic00-1r7-voluntary-disclosures-program.html)
+
+## Sources
+
+Completed 21 November reads below are reused for the unchanged historical baseline. The 25 November R7 follow-up checked its applicability and relevant conditions; it does not recertify all foreign-reporting law or every personal application. The posted form was revision 23, usable for 2015 and later years; no revision-25 form is invented for this 2025 workpaper.
+
+| Primary source | Completed read scope | Read date |
+| --- | --- | --- |
+| [ITA 233.3](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-233.3.html) | Operative reporting-entity/property definitions and subsection (3) due dates; not a cost-amount definition in 233.3(1) | 2026-11-21 |
+| [CRA T1135 Q&A](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/questions-answers-about-form-t1135.html) | Threshold, sold assets, Parts A/B, country, RRSP/TFSA, income/gain, residency and reassessment answers; other named plan exclusions remain held. Country selection uses the highest month-end aggregate cost | 2026-11-21 |
+| [CRA reporting from 2015](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/form-t1135-reporting-2015-later-tax-years.html) | Parts A/B and Category 7 country aggregation/month-end FMV; no authenticated dealer-infrastructure rationale claimed | 2026-11-21 |
+| [Form landing page](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1135.html), [T1135-23 PDF](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1135/t1135-23e.pdf) | All six pages read in memory, including Category 4 year-end cost, Category 7 concession, instructions and the obsolete R6 reference. Form/Q&A country conventions distinguished | 2026-11-21 |
+| [ITA 233.7](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-233.7.html) | Complete operative first-resident-year exception for an individual other than a trust; no corporate/trust exemption inferred | 2026-11-21 |
+| [CRA foreign-reporting penalty table](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/table-penalties.html) | All penalty rows/conditions and statutory 233.5 coverage; a separate common-law due-diligence defence is unverified here | 2026-11-21 |
+| [ITA 162](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-162.html) | Subsections (7), (10) and complete (10.1) formula/offsets, including knowledge/negligence, demand and continuing-failure conditions | 2026-11-21 |
+| [CRA penalty Q&A](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/questions-answers-about-penalties.html) | Operative answers; separate deficient tax-year returns versus a recurring charge on one return | 2026-11-21 |
+| [ITA 163](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-163.html) | Subsection (2.4)(c), related knowledge/gross-negligence conditions and greatest relevant property base | 2026-11-21 |
+| [ITA 152](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-152.html) | Subsection (4)(b.2): both deficient reporting and unreported foreign-property income prerequisites, and three-year extension | 2026-11-21 |
+| [CRA foreign-reporting overview](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/foreign-income-verification-statement.html) | Filing categories, due dates, exceptions and extra reassessment conditions | 2026-11-21 |
+| [Archived IC00-1R6](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic00-1/ic00-1r6-voluntary-disclosures-program.html) | Historical application/stream provisions only; accessible does not mean currently operative | 2026-11-21 |
+| [IC00-1R7](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic00-1/ic00-1r7-voluntary-disclosures-program.html) | Applicability; paragraphs 1, 10, 16–23, 27 and 32–34. Bounded follow-up also checked paragraph 11 exclusions. Exact clause: “interest charges, penalties, or both”. Actual eligibility/supporting documents/payment-arrangement approval remain case-specific | 2026-11-21; bounded follow-up 2026-11-25 |
+
+**Not yet confirmed:** RRIF/RESP/DPSP exclusion authority in this record; final Part A country ranking without monthly records/convention; the causal rationale for Category 7; a separate common-law due-diligence defence; individual knowledge/negligence, demand, relevant costs/years, offsets and actual penalty/reassessment liability; and actual VDP voluntariness, exclusions, application/supporting-document completeness, routing and relief. Original specialist classification and ownership/referral jobs remain fact-sensitive. No actual return, disclosure or relief outcome is certified.
 
 ### Prohibitions
 
