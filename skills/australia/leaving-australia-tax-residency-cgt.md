@@ -1,9 +1,11 @@
 ---
 name: leaving-australia-tax-residency-cgt
-description: Ceasing Australian tax residency triggers one of tax's strangest decisions — CGT event I1 deems you to sell your entire share portfolio the day you leave, unless you elect otherwise. Add the loss of the main-residence exemption for non-residents, the death of the tax-free threshold, HECS repayments that chase worldwide income, and super you cannot touch, and 'moving overseas' becomes a sequencing problem. This Guide sequences it.
+description: Determine when Australian tax residency ends and compare CGT event I1 with its deferral choice. Covers the main-residence exemption, part-year income, overseas study loan reporting, super and returning residents.
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-26
+tax_year_notes: "2025-26 Australian income year (1 July 2025 to 30 June 2026)"
+version: 0.1
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
@@ -11,15 +13,9 @@ domain: cross-border
 
 # Leaving Australia: residency, the CGT departure choice, and what follows you
 
-**Why this corridor needs a guide.** Australians leave in large numbers — to the UK, the
-Gulf, Singapore, the US — and the departure rules are unusually decision-heavy: the day you
-cease residency, the law **deems you to have sold your non-property assets** (unless you
-choose otherwise), your **family home quietly loses its lifetime tax exemption** if you sell
-while away, the **tax-free threshold disappears** for the Australian income you keep, and
-your **HECS debt starts chasing your foreign payslip**. None of these are avoidable by
-ignorance and all of them are manageable by sequencing. Our own connector data shows
-capital-gains questions from Australia going unanswered more than almost anywhere — this
-Guide is the answer's backbone.
+**What to check.** Determine the actual cessation date and identify the assets covered by CGT
+event I1. Check the main-residence exemption before signing a sale contract, apply the
+part-year tax-free threshold where eligible and assess overseas study loan reporting.
 
 **Who it's for.** Australian residents (citizens and long-term residents) moving abroad, and
 their accountants. Rules stated for the 2025-26 income year; the residency-law modernisation
@@ -28,28 +24,30 @@ tests still govern, but watch this space before relying on edge cases.
 
 ## Part 2 — CGT event I1: the deemed disposal, and the election
 
-The centrepiece. On ceasing residency, **CGT event I1** deems you to dispose of all your CGT
-assets **except taxable Australian property (TAP)** — broadly, Australian real estate and
-mining interests, plus significant stakes (10%+) in land-rich entities — at market value on
-the cessation date. Your share portfolio, managed funds, foreign assets, crypto: all deemed
-sold, gains taxable in your final resident return, *without any cash changing hands*.
+**CGT event I1** happens when Australian residency ceases. Section 104-160 excludes taxable
+Australian real property, assets used in a business through an Australian permanent establishment
+and covered options or rights to acquire those assets. Indirect Australian real property
+interests can remain in scope. For classification, apply the 10% non-portfolio interest test,
+including relevant associates and the statutory lookback, and the principal asset test. Value
+affected assets at cessation, disregard applicable pre-CGT gains and losses and check the
+separate temporary resident rules. For a recognised I1 gain or loss on an indirect real property
+interest or a right over it, check the market-value cost-base adjustment in section 104-160(4A).
 
-**The election (the "I1 choice"):** you may instead elect to treat those assets as TAP —
-**deferring** tax until actual sale, but keeping those assets inside the Australian CGT net
-while non-resident, with two costs baked in:
-- the **50% CGT discount is frozen** for periods of foreign residency (post-May-2012
-  apportionment), so long absences erode the discount on eventual sale; and
-- Australia taxes the *entire* eventual gain, even growth that happened while you lived in a
-  country that would not have taxed it.
+**The election (the I1 choice).** An individual can disregard all I1 gains and losses.
+The affected assets are treated as taxable Australian property until the earlier of a CGT event
+involving the asset where ownership ceases or Australian residency resumes. Calculate any
+eventual gain using the applicable cost base, losses, treaty and foreign tax relief rules.
+Apply the foreign-resident restriction to any discount, including the rules for assets acquired
+on or before 8 May 2012. Events from 1 July 2027 also require the enacted CGT changes below.
 
 **How to choose, honestly:**
 
 | Situation | Lean |
 |---|---|
 | Large unrealised gains, no cash to pay a dry tax bill | Elect (defer) — but diarise the discount erosion |
-| Modest gains, or losses available to absorb them | Pay on I1 — a clean exit; future growth is Australia-free |
-| Moving to a zero-CGT country (UAE, Singapore, NZ for most assets) **long-term** | Pay on I1 — post-departure growth then escapes both countries |
-| Likely to return within a few years | Election matters less — returning residents' assets re-enter the net anyway; model both |
+| Modest gains, or losses available to absorb them | Model recognising I1 against the deferral choice. Identify which assets remain taxable Australian property |
+| Long-term move overseas | Model the destination's tax on the asset, alongside Australian source and treaty rules |
+| Likely to return within a few years | Compare both choices and test which assets qualify for market-value entry on resuming residency |
 
 There is no single right answer; there *is* a right process — a market-value schedule of every
 asset on the cessation date (you need it under either path), then the two computations side by
@@ -60,45 +58,40 @@ departure-year filing, not to memory.
 
 ## Part 3 — The house: the main-residence exemption ambush
 
-The harshest rule on this corridor, and the least known: since the 2019 changes, a person who
-is a **foreign resident at the time they sell** their former Australian main residence gets
-**no main-residence exemption at all** — not a reduced one; **none**, reaching back over the
-entire ownership period. The narrow "life events" carve-out (death, terminal illness, divorce
-within a 6-year window) rarely helps a planned move.
+Under the 2019 amendments, a **foreign resident at the CGT event** generally cannot claim
+the main-residence exemption for any part of the ownership period. The life-events exception
+requires continuous foreign residency of 6 years or less and a specified terminal illness,
+death or relationship breakdown event. Check ordinary main-residence eligibility separately.
 
 **The sequencing consequences:**
-- **Selling? Sell while still resident** (contract date governs), or move back into residency
-  before selling. The same sale, contracted a month after cessation, can swing from tax-free
-  to a six-figure CGT bill.
-- **Keeping and renting it out?** The old 6-year absence concession only pays off if you are
-  *resident again* when you eventually sell. Get a **valuation at first rental** (the
-  home-first-used-to-produce-income rule resets the cost base) and hold the evidence.
-- Any sale as a non-resident also meets **foreign-resident capital gains withholding** —
-  the purchaser withholds **15%** of the price (threshold removed from 2025 — it applies to
-  effectively all Australian property sales by foreign residents) — recovered, if excessive,
-  only through the return.
+- **Selling?** Check residence on the contract date for an ordinary sale. If resident on that
+  date, calculate the exemption under the ordinary use and ownership rules.
+- **Keeping and renting it out?** The ordinary absence rule can cover up to 6 years of
+  income-producing use if its conditions hold and the foreign-resident restriction does not
+  apply. Retain a valuation at first income use where the statutory market-value rule applies.
+- **Withholding.** For covered real property contracts from 1 January 2025, the purchaser
+  generally withholds **15%** of the applicable value, with no value threshold. Check any
+  clearance certificate, variation or statutory exclusion. Withholding is credited on assessment.
 
 ---
 
 ## Part 4 — What follows you abroad
 
-- **HECS/HELP debt does not stay home.** Moving overseas obliges you to notify the ATO
-  (myGov), lodge an **overseas travel notification**, and report **worldwide income**
-  annually; repayments apply once income crosses the repayment threshold, computed on your
-  global earnings. Silence compounds into penalties; the debt also now accrues indexation
-  against you while you ignore it.
-- **Superannuation is a one-way lockbox.** Citizens and permanent residents **cannot**
-  withdraw super on departure (the DASP refund exists only for temporary-visa holders). The
-  balance stays invested under Australian rules until preservation age. Planning notes:
-  consolidate before leaving, check insurance inside super (often lapses or becomes
-  poor value for non-residents), be careful with **SMSFs** — a trustee moving abroad can break
-  the fund's Australian-residency conditions and render it non-complying (penalty tax at the
-  top rate on the fund); professional trustees or winding up are the standard fixes.
-- **Australian-source income keeps its own rules:** rent (taxable by assessment at
-  non-resident rates; negative-gearing losses carry forward), **fully franked dividends**
-  (no further Australian tax for non-residents — franking does the job; unfranked: 30%
-  withholding, treaty-reduced), **interest** (10% final withholding). Bank and broker
-  paperwork: update tax-residency declarations so the right withholding applies at source.
+- **Study loan obligations.** The overseas notification rule applies to borrowers within the
+  183-day test below. For affected non-residents in 2025–26, report worldwide income above
+  $16,750 or lodge non-lodgment advice at or below that amount. The minimum repayment threshold
+  is $67,000. An overseas levy or compulsory repayment depends on the income composition.
+  Apply ordinary indexation and check any penalties separately from the levy.
+- **Superannuation.** Departure alone does not release preserved Australian super for citizens
+  or permanent residents. Check ordinary release conditions and fund insurance terms. For an
+  SMSF, assess actual management and membership arrangements. A non-complying fund generally pays
+  45% on taxable income. In the first non-complying year, the statutory asset-value adjustment
+  deducts relevant non-concessional contributions. Obtain SMSF advice before changing trustees or winding up.
+- **Australian-source income.** Account for rent and allowable expenses in the Australian return.
+  Apply ordinary loss offset and carry-forward rules if applicable. The franked portion of a
+  dividend is generally exempt from withholding. The general domestic rates are 30% for unfranked
+  dividends and 10% for interest, subject to exemptions and treaties. Update residency information
+  with banks, brokers and payers.
 - **Employee share schemes** straddling the move are apportioned between countries by
   sourcing rules — flag any unvested equity to both ends' advisers *before* the move; the
   deferred-taxing-point rules interact badly with surprise.
@@ -107,30 +100,30 @@ within a 6-year window) rarely helps a planned move.
 
 ## Part 5 — The destination layer (briefly)
 
-Australia has treaties with the major destinations (UK, US, Singapore; **none with the
-UAE** — double-non-taxation is the point there, but also no treaty tie-breaker if statuses
-collide). Two destination-specific notes our corridor data keeps surfacing:
-- **AU→UK**: the UK taxes arrivals under its own SRT from day one; the old remittance basis
-  is gone (FIG regime now — 4 years of foreign-income relief for genuinely new arrivals).
-  Australian franked dividends lose their magic in UK hands; super interacts with UK pension
-  rules unglamorously. Sequencing bonuses and I1 decisions around the UK arrival year is
-  standard.
-- **AU→UAE/Singapore**: no local tax on the salary; the whole game is the Australian exit
-  done cleanly (Parts 1–4) — and evidence, because a "permanent place of abode" in Dubai is
-  exactly what the domicile test wants to see documented.
+Australia has income-tax treaties with the UK, US and Singapore. No comprehensive
+Australia–UAE income-tax treaty applies on the audit date. Check each residence and income rule.
+
+- **AU→UK.** Apply the Statutory Residence Test and any applicable split-year treatment.
+  From 6 April 2025, a qualifying UK resident who claims the FIG relief can use it on eligible
+  income and gains within the first 4 tax years of UK residence after at least 10 non-resident tax
+  years. Check the UK treatment of Australian dividends, super and deferred employment income.
+- **AU→UAE/Singapore.** UAE wages are outside the UAE natural-person corporate tax business
+  income rules. Singapore generally taxes employment exercised there, including work for a foreign
+  employer, subject to applicable exemptions and treaty relief. Keep evidence of where you worked,
+  where you lived and the relevant cessation facts.
 
 ---
 
 ## Part 6 — Sequenced checklist
 
 **Before the move**
-1. Build the residency-cessation evidence plan (lease/purchase abroad, family, home
-   let/sold arm's-length, closures) and pick the intended **cessation date**.
+1. Document residence facts, including the overseas home, family, employment and travel.
+   Determine the Australian **cessation date** from the applicable tests.
 2. Market-value every CGT asset for that date; run the **I1 pay-vs-elect** comparison.
-3. Decide the **house** strategy while still resident: sell now (exempt), or rent with a
-   first-income valuation and a documented plan for the eventual sale.
-4. Time income: bonuses/invoices before cessation use the resident thresholds; after, 30%
-   from dollar one.
+3. Check whether **selling or renting the house** affects the exemption and whether a
+   first-income-use valuation is needed.
+4. Classify bonuses and invoices by derivation, source and treaty. Apply the departure-year
+   rules and any eligible part-year threshold.
 5. Super: consolidate, review insurance, fix SMSF trusteeship.
 
 **Departure year**
@@ -140,11 +133,10 @@ collide). Two destination-specific notes our corridor data keeps surfacing:
 8. Update banks/brokers/registries to non-resident withholding status.
 
 **While away**
-9. File Australian returns whenever Australian-source assessable income exists (rent, most
-   commonly); watch the 15% purchaser-withholding on any property sale.
-10. Before any *return* to Australia: assets acquired abroad enter the CGT net at
-    market value on resuming residency — realise or re-base deliberately, and re-run the
-    house plan if it was rented out.
+9. Check whether Australian assessable income requires a return, including rental income.
+   Apply foreign-resident withholding separately to covered property sales.
+10. Before returning, determine which assets meet the market-value entry rules and identify
+    assets already treated as taxable Australian property immediately before re-entry.
 
 ---
 
@@ -153,13 +145,13 @@ collide). Two destination-specific notes our corridor data keeps surfacing:
 | Trap | Why it bites |
 |---|---|
 | "I'll figure out I1 later" | The deemed disposal happens at the cessation date by law; the only question is whether you computed it. Un-elected and unreported is an audit, not a strategy. |
-| Selling the family home from abroad | Main-residence exemption vanishes entirely for foreign-resident vendors — the single most expensive surprise on this corridor. |
-| Electing deferral, forgetting the discount freeze | Years abroad shave the 50% discount on eventual sale; the deferral isn't free. |
-| SMSF trustee on a plane | Residency conditions breach → non-complying fund → top-rate tax on the fund's assets. |
-| HECS silence | Worldwide-income reporting is mandatory; the debt indexes and penalties accrue while you look away. |
-| Bonus paid a week after cessation | Non-resident rates from the first dollar; timing was worth thousands. |
+| Selling the family home from abroad | Check residence at the CGT event and the statutory life-events exception. |
+| Electing deferral | Model the later capital gain, affected discount and the law in the eventual disposal year. |
+| SMSF trustee moving abroad | Test actual management and control, active members and other residency conditions. Calculate the statutory non-complying base if relevant. |
+| Overseas study loan reporting | Complete the applicable worldwide income report or non-lodgment advice and check separate indexation and penalty rules. |
+| Bonus paid after cessation | Determine source, derivation, departure-year rates and any treaty relief. |
 | Assuming a UAE treaty exists | There is none — no tie-breaker to rescue a messy dual-status year. |
-| Returning with an offshore portfolio, no re-basing plan | Market-value entry on resuming residency is automatic; realising gains just before return (in a zero-tax country) versus just after is a five-figure difference. |
+| Returning with an offshore portfolio | Document market values for eligible assets and check whether assets affected by an earlier I1 deferral are excluded. |
 
 ---
 
@@ -188,9 +180,10 @@ sources on 8 September 2026, are the ones that most often change the number.
   ordinary six-year absence rule does not overcome the foreign-resident restriction. If the home
   is rented, keep occupation and rental dates and establish whether the first-income-use market
   value rule applies; not every conversion to rental resets the cost base. [ITAA 1997 (Cth) s 118-110](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/118-110)
-- **Withholding is a credit.** For contracts from 1 January 2025 the purchaser withholds 15%
-  with no value threshold; the amount is credited in the return, and a variation is applied
-  for before settlement. [ATO, FRCGW overview](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-resident-capital-gains-withholding-overview)
+- **Withholding is a credit.** For covered real property contracts from 1 January 2025, apply the
+  15% general rate without a value threshold. Check clearance, variation or statutory exclusions.
+  Withholding is credited on assessment. Apply early enough for an approved variation to reach
+  the purchaser before settlement. [ATO, FRCGW overview](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-resident-capital-gains-withholding-overview)
 - **Study loans: seven days.** HELP, VSL and AASL borrowers who intend to live overseas for 183
   days or more in any 12-month period must submit the overseas travel notification and update
   contact details within seven days of leaving, then report worldwide income or lodge the
@@ -199,11 +192,11 @@ sources on 8 September 2026, are the ones that most often change the number.
   visa, departure and eligibility conditions, and Australian and New Zealand citizens and
   Australian permanent residents are excluded. Check the ordinary conditions of release and the
   fund's insurance terms separately. [ATO, DASP](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/temporary-residents-and-superannuation/departing-australia-superannuation-payment-dasp)
-- **SMSF: three conditions, and the two years are a limit.** Review establishment or Australian
-  assets, central management and control ordinarily in Australia, and the active member test.
-  The temporary-absence treatment does not authorise managing the fund overseas for two years,
-  and appointing a nominee does not settle where decisions are made. Resolve the arrangements
-  before departure. [ATO, Check your fund is an Australian super fund](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/setting-up-an-smsf/check-your-fund-is-an-australian-super-fund)
+- **SMSF: three residency conditions.** Review establishment or Australian assets, central
+  management and control ordinarily in Australia, and the active member test. The statutory
+  deeming rule covers temporary absence up to 2 years. Outside that rule, assess whether central
+  management and control remains ordinarily in Australia on the facts.
+  [ITAA 1997 s 295-95](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/295-95)
 - **Income in the departure year.** Apply the part-year tax-free threshold and classify each
   receipt by timing, source and treaty. A bonus paid after departure is not automatically taxed at
   a flat 30%, an overseas employer does not by itself make salary foreign-source, rental income can
@@ -220,10 +213,40 @@ sources on 8 September 2026, are the ones that most often change the number.
 
 ---
 
-## Sources (primary, verify current figures)
+## Worked examples
 
-ITAA 1997 s.104-160 (CGT event I1) and the TAP definition (s.855); ATO guidance on residency
-(TR 2023/1, incorporating Harding); main-residence exemption denial for foreign residents
+**Example 1. CGT event I1 deemed disposal vs deferral choice on non-TAP shares.** Listed shares held more than 12 months with cost base AUD 40,000 and market value at cessation AUD 100,000 yield a gross I1 gain of AUD 60,000. Recognising the gain on cessation whilst still an Australian resident qualifies for the 50% CGT discount, producing a net capital gain of AUD 30,000 (assuming disposal event before 1 July 2027).
+
+```oa-check
+name: AU leaving Australia CGT event I1 recognised with 50% resident discount
+inputs:
+  market_value_at_cessation: 100000
+  cost_base: 40000
+steps:
+  - gross_gain: market_value_at_cessation - cost_base
+  - net_capital_gain: pct(gross_gain, 50)
+expected:
+  gross_gain: 60000
+  net_capital_gain: 30000
+```
+
+**Example 2. Post-departure disposal of Australian real property (15% FRCGW).** Selling Australian residential land as a foreign resident for AUD 1,200,000 under a contract from 1 January 2025 without a variation requires 15% FRCGW withholding of AUD 180,000 at settlement.
+
+```oa-check
+name: AU leaving Australia post-departure TARP 15% FRCGW withholding
+inputs:
+  sale_price: 1200000
+  frcgw_rate: 15
+steps:
+  - withholding_credit: pct(sale_price, frcgw_rate)
+expected:
+  withholding_credit: 180000
+```
+
+## Sources
+
+ITAA 1997 s.104-160 (CGT event I1) and the TAP definition (s 855-15); ATO guidance on residency
+(TR 2023/1); main-residence exemption denial for foreign residents
 (2019 amendments + life-events test); 50% discount apportionment for foreign residents
 (post-8 May 2012); foreign-resident capital gains withholding (15%, threshold removed from
 1 Jan 2025); non-resident tax rates 2025-26; HECS/HELP overseas obligations (ATO overseas
@@ -234,6 +257,13 @@ AU–UAE income-tax treaty); UK FIG regime for the AU→UK leg.
 Part 7 cites ITAA 1997 sections 104-160, 104-165, 118-110 and 855-45 on the ATO legal database,
 TR 2023/1, the ATO pages on foreign resident capital gains withholding, overseas study loan
 repayments, DASP and SMSF residency, and the Treasury Laws Amendment (Tax Reform No. 1) Act 2026.
+
+Read 22 November 2026 for the departure rules and destination checks.
+
+- [ITAA 1997 ss 104-160, 104-165, 118-110, 118-145 and 118-192](https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_3/document_3.html), covering I1, the choice and the home rules. (read 2026-11-22)
+- [ITAA 1997 Division 855](https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_9/document_9.html), covering taxable Australian property and market-value entry. (read 2026-11-22)
+- [ATO overseas study loan obligations](https://www.ato.gov.au/individuals-and-families/study-and-training-support-loans/overseas-repayments) and [tax on non-complying SMSFs](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-regulation-and-compliance/smsf-compliance/our-smsf-non-compliance-actions). (read 2026-11-22)
+- [HMRC foreign income and gains relief](https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime), [IRAS employment for a foreign employer](https://www.iras.gov.sg/taxes/individual-income-tax/employees/scenario-based-faqs-for-working-in-Singapore-and-abroad/i-am-working-for-a-foreign-employer) and [UAE Federal Tax Authority rules for natural persons](https://www.tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/basis.of.taxation.natural.person.aspx). (read 2026-11-22)
 
 ---
 
