@@ -1,11 +1,11 @@
 ---
 name: fiji-vat
 description: Prepare a 2026 Fiji VAT reconciliation from invoices, customs entries and bank transactions. Apply the current standard rate, distinguish zero-rated and exempt supplies, check imported services, preserve unresolved evidence and prepare TPOS return working papers. Load vat-workflow-base alongside this skill; supplier names alone do not establish tax treatment.
-version: 2.1
+version: 2.2
 jurisdiction: FJ
 category: vat-gst
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -14,7 +14,7 @@ depends_on:
   - vat-workflow-base
 ---
 
-# Fiji VAT v2.1
+# Fiji VAT v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -65,7 +65,7 @@ Confirm that a payment represents a supply, who supplied it, where it is supplie
 | Ordinary domestic sale | Apply 12.5% only after taxable supply, registration, place and date are established | [Act 10 of 2025 s. 5; VAT Act ss. 15-18](https://www.parliament.gov.fj/wp-content/uploads/2025/08/Act-10-Value-Added-Tax-Budget-Amendment-Act-2025.pdf) |
 | Exports | Zero-rated only under the relevant Schedule 2 entry; obtain export and remitted-earnings evidence, not just a foreign customer name | [VAT Act Schedule 2 chapeau and paras. 1-4, 14](https://frcs.org.fj/files/2026/06/VALUE-ADDED-TAX-ACT-1991-Revised-to-1-August-2025.pdf) |
 | Basic food and essential items | Match the actual item and tariff description in Schedule 2 para. 31; the old phrase basic foodstuffs is not a blanket zero rate | [VAT Act Schedule 2 para. 31](https://frcs.org.fj/files/2026/06/VALUE-ADDED-TAX-ACT-1991-Revised-to-1-August-2025.pdf) |
-| Prescription medicines | Do not use the repealed Schedule 2 para. 17 as current authority; hold any claim for special relief until the actual current item/concession is read | [VAT Act Schedule 2 para. 17 and s. 14](https://frcs.org.fj/files/2026/06/VALUE-ADDED-TAX-ACT-1991-Revised-to-1-August-2025.pdf) |
+| Prescription medicines | Zero-rate retail medicines or drugs dispensed by a pharmacist on an authorised prescriber’s prescription under Schedule 2 para. 17 from 1 August 2023. Apply FRCS evidence rules for repeats. Check import relief separately | [Act 6 of 2023 ss. 1, 5](https://www.parliament.gov.fj/wp-content/uploads/2023/07/Act-6-Value-Added-Tax-Budget-Amendment.pdf); [FRCS guideline 2024-02](https://www.frcs.org.fj/wp-content/uploads/2024/02/2023-2024-National-Budget-Amendment-VAT-Zero-Rating-on-Prescribed-Medicine-or-Drugs.pdf) |
 | Educational materials | The special educational-items entry in para. 26 has an expired limited period; distinguish exempt education by an eligible educational institution from retail supplies of books or stationery | [VAT Act Schedule 1 paras. 8-9 and definition; Schedule 2 para. 26](https://frcs.org.fj/files/2026/06/VALUE-ADDED-TAX-ACT-1991-Revised-to-1-August-2025.pdf) |
 | Residential rent | Exempt where the dwelling is predominantly used as a place of residence or abode; distinguish commercial/hotel accommodation | [VAT Act Schedule 1 para. 2 and dwelling definition](https://frcs.org.fj/files/2026/06/VALUE-ADDED-TAX-ACT-1991-Revised-to-1-August-2025.pdf) |
 | Medical services and insurance | No blanket medical-services exemption was established by reading Schedule 1; medical insurance is a specified exemption, a different transaction | [VAT Act Schedule 1 para. 1(b)](https://frcs.org.fj/files/2026/06/VALUE-ADDED-TAX-ACT-1991-Revised-to-1-August-2025.pdf) |
@@ -100,11 +100,11 @@ Private consumption, entertainment, passenger vehicles, taxis/rental vehicles an
 
 For import VAT, use the customs value plus applicable duties, import excise and other specified charges, excluding VAT itself, subject to actual relief. Do not reduce the law to an unconditional CIF-plus-duty shortcut. From the enacted amendment's relevant commencement dates, the electric-vehicle concession paragraph was deleted and the drug-rehabilitation concession was added; a tariff code or concession must be checked against the actual date and authorisation. [VAT Act s. 14(1)-(4A)](https://frcs.org.fj/files/2026/06/VALUE-ADDED-TAX-ACT-1991-Revised-to-1-August-2025.pdf); [Act 15 of 2026 ss. 1-2](https://www.parliament.gov.fj/wp-content/uploads/2026/07/Act-15-Value-Added-Tax-Budget-Amendment-Act-2026.pdf?ver=1794354122).
 
-### 5. Test imported services without manufacturing a matching input claim
+### 5. Calculate reverse charge and reconcile paid input
 
 Section 21 covers its defined relevant services, including the specified ICT/data-processing/professional categories, received for a taxable activity by a recipient belonging in Fiji from a supplier belonging abroad. Intra-entity foreign/Fiji establishments are treated separately and open-market-value rules can apply. Read the contract and the statutory service description. Use actual consideration, not a fictional VAT-inclusive net. [VAT Act s. 21(1)-(6), Schedule 2 para. 14](https://frcs.org.fj/files/2026/06/VALUE-ADDED-TAX-ACT-1991-Revised-to-1-August-2025.pdf).
 
-The old automatic Output + Input posting is unsafe. The consolidation records that the express deduction language and subsection 21(3) were removed in 2020. A self-supplied output-tax liability does not itself prove tax on a supply **to** the recipient within the input-tax definition. Do not offset imported-service output with equal input merely to make the transaction tax neutral. Establish any separate deduction entitlement from the actual law and documents first; otherwise retain the output assessment and a held deduction separately. [VAT Act s. 2 input-tax definition, s. 21 legislative history, s. 39](https://frcs.org.fj/files/2026/06/VALUE-ADDED-TAX-ACT-1991-Revised-to-1-August-2025.pdf).
+Check the contract’s tax allocation before fixing the reverse-charge base. FRCS distinguishes a net-off calculation from a contractual gross-up. Calculate the section 21 reverse charge separately from the ordinary VAT return. FRCS collects it through tax clearance. In the VAT return, reconcile the paid amount to the TPOS reverse-charge line under purchases and expenses. Adding the paid charge to ordinary sales output would count the same liability twice. A VAT-registered recipient can claim the eligible amount in the period it pays the charge, subject to taxable use, apportionment and supporting evidence. An unregistered recipient cannot claim it. Hold a claim while payment or entitlement is unverified. [VAT Act s. 21 and s. 39](https://frcs.org.fj/files/2026/06/VALUE-ADDED-TAX-ACT-1991-Revised-to-1-August-2025.pdf); [FRCS reverse-charge brochure, payment and claims](https://frcs.org.fj/wp-content/uploads/2025/03/Brochure-VAT-Reverse-Charge.pdf); [FRCS interpretation guideline, paras. 9–10](https://www.frcs.org.fj/wp-content/uploads/2022/09/SIG-on-Value-Added-Tax-Act-1991-2022-2023-National-Budget-Amendments-2022-09.pdf); [FRCS VAT e-filing guide, steps 5–6](https://www.frcs.org.fj/wp-content/uploads/2022/12/Filing-Payable-VAT-Return.pdf).
 
 ### 6. Apply adjustments and build the working paper
 
@@ -112,7 +112,7 @@ Link credit/debit notes to the original supply and reason. A supplier credit red
 
 Build a workbook with transaction/source ID, date, invoice and settlement dates, supplier/customer legal entity and TIN, description, FJD gross, tax-exclusive value, rate, output VAT, input VAT claimed, input held, business-use basis, domestic/imported goods/imported services category, standard/zero/exempt/outside-scope distinction, return field, evidence link and unresolved question. Keep opening credit, adjustments and refund claims separate. Reconcile sales, purchases, bank movements, customs records and the return summary without double counting.
 
-The original Fiji summary fields remain: standard output, zero-rated output, exempt supplies, domestic input, import input and net VAT. Add imported-service output and any separately supported deduction visibly. Do not invent TPOS box numbers: open the actual period's return, map each ledger category to its displayed field and keep the preview before submission.
+The original Fiji summary fields remain: standard output, zero-rated output, exempt supplies, domestic input, import input and net VAT. Reconcile the imported-service reverse charge outside ordinary output and show eligible paid reverse-charge input separately. Do not invent TPOS box numbers: open the actual period's return, map each ledger category to its displayed field and keep the preview before submission.
 
 Check bank CSV delimiters, date order and credit/debit signs from actual statements; do not assume every BSP/HFC export uses one format. Match transfers between the client's own BSP/HFC/ANZ accounts on both sides. Investigate missing invoices and cash purchases rather than classifying them from narration alone. See the companion base for the full workbook controls.
 
@@ -166,24 +166,21 @@ expected:
 
 **Original input:** `18.04.2026 ; MICROSOFT ; DEBIT ; Azure April ; FJD -218`
 
-The raw line alone is held: it does not identify the contracting entity, service description, establishments or whether Fiji VAT was charged. For a **separate conditional computation**, assume the invoice proves qualifying relevant services supplied by a person belonging abroad, received for the Fiji recipient's taxable activity, and consideration of 218 **excluding Fiji VAT**. Section 21 output tax is 27.25. The foreign charge remains 218, not the old invented net of 200. No matching input claim is supported by these facts; keep it out of deductible input. The additional tax increases the cash cost to 245.25 under those assumptions. If domestic Fiji VAT was actually charged, reclassify from the invoice instead. [VAT Act ss. 2, 17, 21, 39](https://frcs.org.fj/files/2026/06/VALUE-ADDED-TAX-ACT-1991-Revised-to-1-August-2025.pdf); [Act 10 of 2025 s. 5](https://www.parliament.gov.fj/wp-content/uploads/2025/08/Act-10-Value-Added-Tax-Budget-Amendment-Act-2025.pdf).
+The raw line alone is held: it does not identify the contracting entity, service description, establishments or whether Fiji VAT was charged. For a **separate conditional computation**, assume the invoice proves qualifying relevant services supplied by a person belonging abroad, received for the Fiji recipient's taxable activity, and consideration of 218 **excluding Fiji VAT**. The section 21 reverse charge is 27.25 on that confirmed base. The foreign charge is 218. Gross cash outlay is 245.25 once the charge is paid. No input claim enters the return before payment is established. If a VAT-registered recipient pays the 27.25 to FRCS and the service is wholly taxable-use with the required evidence, the return for the payment period can include 27.25 eligible input, leaving 218 as the cost after recovery. Reclassify from the invoice if the supplier actually charged domestic Fiji VAT. [VAT Act ss. 2, 17, 21, 39](https://frcs.org.fj/files/2026/06/VALUE-ADDED-TAX-ACT-1991-Revised-to-1-August-2025.pdf); [FRCS reverse-charge brochure](https://frcs.org.fj/wp-content/uploads/2025/03/Brochure-VAT-Reverse-Charge.pdf); [FRCS interpretation guideline, para. 9](https://www.frcs.org.fj/wp-content/uploads/2022/09/SIG-on-Value-Added-Tax-Act-1991-2022-2023-National-Budget-Amendments-2022-09.pdf); [Act 10 of 2025 s. 5](https://www.parliament.gov.fj/wp-content/uploads/2025/08/Act-10-Value-Added-Tax-Budget-Amendment-Act-2025.pdf).
 
 ```oa-check
-name: Fiji conditional foreign service no automatic input offset
+name: Fiji reverse charge and gross cash outlay
 inputs:
   signed_bank_amount: -218
   confirmed_exclusive_consideration: 218
 steps:
   - bank_cost: abs(signed_bank_amount)
-  - output_vat: round(confirmed_exclusive_consideration * 0.125, 2)
-  - supported_input_vat: 0
-  - additional_vat: output_vat - supported_input_vat
-  - total_cost: bank_cost + additional_vat
+  - reverse_charge: round(confirmed_exclusive_consideration * 0.125, 2)
+  - cash_outlay: bank_cost + reverse_charge
 expected:
   bank_cost: 218
-  output_vat: 27.25
-  supported_input_vat: 0
-  total_cost: 245.25
+  reverse_charge: 27.25
+  cash_outlay: 245.25
 ```
 
 ### Case 4: account-operation fee
@@ -222,8 +219,13 @@ The following sources were opened and read on the dates shown. The scopes distin
 | Read for Tourism Services Tax Act 2026: complete enacted Act and Schedule; rate, threshold, tax base, invoice separation, payment/return and commencement | https://www.parliament.gov.fj/wp-content/uploads/2026/07/Act-20-Tourism-Services-Tax-Act-2026.pdf?ver=1794354122 | 2026-11-16 |
 | Read for FRCS calculation notice: pre/post-change calculations and inclusive/exclusive examples | https://frcs.org.fj/public-notice/value-added-tax-vat-calculation-notice/ | 2026-11-16 |
 | Read for FRCS VAT guide: registration, rates/history, taxpayer obligations, TPOS, records and payment instructions; historical rate tables are not current rules | https://frcs.org.fj/our-services/taxation-section/non-individuals/reporting-and-paying-taxes/vat-guide/ | 2026-11-16 |
+| Act 6 of 2023 ss. 1, 5, commencement and inserted prescription-medicine zero rate | https://www.parliament.gov.fj/wp-content/uploads/2023/07/Act-6-Value-Added-Tax-Budget-Amendment.pdf | 2026-11-23 |
+| FRCS guideline 2024-02, prescription, dispensing and repeat conditions | https://www.frcs.org.fj/wp-content/uploads/2024/02/2023-2024-National-Budget-Amendment-VAT-Zero-Rating-on-Prescribed-Medicine-or-Drugs.pdf | 2026-11-23 |
+| FRCS brochure, reverse-charge tax clearance and paid input claims (rate examples predate August 2025) | https://frcs.org.fj/wp-content/uploads/2025/03/Brochure-VAT-Reverse-Charge.pdf | 2026-11-23 |
+| FRCS interpretation guideline, reverse-charge basis and input claims, paras. 9–10 (historical rates) | https://www.frcs.org.fj/wp-content/uploads/2022/09/SIG-on-Value-Added-Tax-Act-1991-2022-2023-National-Budget-Amendments-2022-09.pdf | 2026-11-23 |
+| FRCS VAT e-filing guide, output and reverse-charge input mapping, steps 5–6 (historical rates) | https://www.frcs.org.fj/wp-content/uploads/2022/12/Filing-Payable-VAT-Return.pdf | 2026-11-23 |
 
-Not yet confirmed: The actual client's TPOS fields and obligation, invoice/establishment facts, specific imported-service input entitlement, disputed special concessions, vehicle/entertainment special-rule claims and medicine-specific relief. These remain explicit holds; the general pattern library is not evidence of those facts.
+Not yet confirmed: The actual client's TPOS fields and obligation, invoice/establishment facts, specific imported-service input entitlement, disputed special concessions, vehicle/entertainment special-rule claims and specific medicine import relief. These remain explicit holds; the general pattern library is not evidence of those facts.
 
 Version 2.1 corrects the obsolete rate, return-category threshold, blanket supplier/exemption rules, imported-service arithmetic and tourism treatment. The four original raw inputs and all original topic/referral categories remain. Duplicate disclaimers and repeated compressed headings are consolidated into the notice and operative steps rather than repeated as separate rules.
 

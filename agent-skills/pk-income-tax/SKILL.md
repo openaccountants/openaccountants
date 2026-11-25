@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/pk-income-tax"
   jurisdiction: "PK"
   tax_year: "2026"
-  last_updated: "2026-11-16"
+  last_updated: "2026-11-22"
 ---
 
-# Pakistan personal income tax and AOP working paper v1.2
+# Pakistan personal income tax and AOP working paper v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -74,10 +74,10 @@ An AOP is taxed separately. A member's share from taxed AOP income is exempt sub
 |---|---|---|
 | Individual/AOP annual return | 30 September following tax-year end; ordinary tax-year-2026 date is 30 September 2026 (derived); applicable extension must be checked | [s.118(3)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Resident individual wealth/reconciliation; AOP-member first-proviso branch | Resident individual with own return; every AOP member also with the AOP's income return; notice-based statements by their notice date | [sections 116 and 118(4)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
-| Return-balance tax payment | By the return due date | [s.137(1)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
+| Return-balance tax payment | By the return due date. An individual filing extension under s.119(3) leaves the original payment date in place for the s.205(1) default surcharge. | [s.137(1)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf#page=302); [s.119(6)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf#page=260) |
 | Individual advance-tax quarters | 15 September,15 December,15 March,15 June; s.147 exclusions/threshold/formula apply | [s.147(4 B)-(5)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | AOP advance-tax quarters | 25 September,25 December,25 March,15 June; turnover formula applies, not an individual-income threshold | [s.147(4),(5 A)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
-| Extension application | Apply under s.119 with reasons before the applicable due date; not automatic relief | [s.119](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
+| Extension application | Apply in writing to the Commissioner on or before the applicable due date. Give the reason that prevents timely filing. The Commissioner may grant an extension by written order. | [s.119(1)–(3)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf#page=259) |
 
 For an individual, s.147(4 B) uses latest assessed tax divided by 4 less relevant quarter credits, with its statutory exclusions; it is not simply current brackets on last year's income. For an AOP, s.147(4) uses quarter turnover x latest assessed tax / latest-year turnover less relevant quarter tax. Estimates have their own conditions. Refer changed-income, missing-turnover or estimate cases rather than invent inputs. [s.147](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 
@@ -105,12 +105,12 @@ ATL affects specified withholding events under the Tenth Schedule, with general 
 
 ## Two worked examples that recompute
 
-### Saad's mixed export and domestic business example, corrected
+### Mixed export and domestic business example
 
-Saad remains the single Karachi-resident freelance developer with no dependents in the earlier case, with total fees 5,000,000 and no other income, foreign-tax credit or zakat assumed. Assume fully qualifying PSEB export proceeds 4,000,000 with authorised-dealer proof and all s.154A finality conditions; domestic receipts 1,000,000 and allowable attributable expenses 200,000. The old assumed 3% domestic-service withholding is not a verified tax-year-2026 rate or automatically an adjustable credit. Use actual section/treatment/payment evidence before claiming it.
+Assume a single Karachi-resident freelance developer with no dependants, total fees of 5,000,000 and no other income, foreign-tax credit or zakat. Assume fully qualifying PSEB export proceeds 4,000,000 with authorised-dealer proof and all s.154A finality conditions; domestic receipts 1,000,000 and allowable attributable expenses 200,000. The old assumed 3% domestic-service withholding is not a verified tax-year-2026 rate or automatically an adjustable credit. Use actual section/treatment/payment evidence before claiming it.
 
 ```oa-check
-name: Saad ordinary and final streams kept separate
+name: Ordinary and final streams in a mixed freelance business
 inputs:
   export_proceeds: 4000000
   domestic_fees: 1000000
@@ -179,4 +179,4 @@ Not yet confirmed: client-specific residence/treaty/source/classification, actua
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pk-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pk-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pk-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pk-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

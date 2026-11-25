@@ -1,10 +1,10 @@
 ---
 name: in-tax-residency
 description: "India individual tax residence: resident, non-resident and resident but not ordinarily resident (RNOR); employment departures, visits, deemed residence, scope of foreign income, return schedules and treaty paperwork. Covers Tax Year 2026-27 under the Income-tax Act, 2025 and the separately labelled 2025-2026 filing cycle under the 1961 Act. Trigger on India 182-day rule, 120-day rule, NRI returning to India, foreign income and RNOR."
-version: 1.1
+version: 1.2
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,7 +12,7 @@ domain: cross-border
 type: situation-rules
 ---
 
-# India individual tax residence v1.1
+# India individual tax residence v1.2
 
 > **General reference only.** This skill produces a residence working paper for professional review. Residence, treaty entitlement and exchange-control status depend on the client's documents and circumstances.
 
@@ -57,7 +57,7 @@ All current-year figures below are in enacted **s.6 of the 2025 Act**, as amende
 4. Apply the income-scope table below. Identify first receipt, accrual, deemed accrual and India-controlled activities, then route the return.
 5. Keep a residence memorandum with every year's days, historic residence, qualifying income computation, statutory limb, foreign-tax-liability evidence, treaty position and unresolved fact.
 
-**Qualifying income is not simply Indian-source cash receipts.** Section 6(14) defines foreign-source income as income accruing/arising outside India, excluding income from a business controlled in or a profession set up in India, and excluding income deemed to accrue/arise in India. Compute total income other than that defined foreign income. Exactly the threshold does not satisfy an **exceeds** test. [s.6(14)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=29).
+Use the statutory person-of-Indian-origin definition. The individual, either parent or any grandparent must have been born in undivided India. For the income threshold, compute total income excluding foreign-source income as defined in s.6(14). Income from a business controlled in India, from a profession set up there or deemed to accrue or arise there remains in the threshold calculation. The high-income tests require more than INR 15 lakh. [ss.2(78) and 6(14)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=29).
 
 **The visitor FAQ wording is not a separate legal uncertainty.** It says more than the basic day threshold; the enacted basic limb includes equality for every individual. Apply the Act. The 2025-2026 filing-cycle return's residence panel also includes the basic limb without adding a look-back condition to it. The visitor and leaver ticks elsewhere in that panel do not override the statute. [Act s.6](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27); [AY return Part A-GEN](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf#page=2).
 
@@ -93,13 +93,13 @@ Domestic residence and treaty residence are separate conclusions. Dual residence
 
 | Period/job | Procedure | Official source |
 |---|---|---|
-| Tax Year 2026-27, NR claiming treaty relief in India | Obtain foreign TRC and foreign TIN; file Form 41 under s.159 and rule 75 | [Form 41 manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM) |
-| 2025-2026 filing cycle, NR claiming preferable treaty rate | Form 10F and TRC; the return validation treats the TRC flag as No if the form is absent | [ITR-2 category D item 21](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf#page=51) |
+| Tax Year 2026-27, NR claiming treaty relief in India | Obtain the foreign TRC and file Form 41 under s.159 and rule 75. Enter the foreign TIN or, if unavailable, the unique identifier used by the foreign government | [Form 41, note 6](https://www.incometaxindia.gov.in/documents/d/guest/en-notified-it-rules-2026-20-03-2026-pdf#page=416) |
+| 2025-2026 filing cycle, NR claiming preferential treaty rate | Obtain a TRC. Rule 21AB(2) may dispense with information already in the certificate. The AY 2026-27 ITR-2 validation treats the TRC flag as No if Form 10F is absent. Check that filing requirement separately | [Rule 21AB](https://www.incometaxindia.gov.in/documents/20117/6507196/920110000000000057.pdf/55cc6625-9d5e-e400-a360-6fb8fdc3bd44?t=1763127404849) · [ITR-2 category D item 21](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf#page=51) |
 | Tax Year 2026-27, Indian resident seeking Indian TRC | Apply in Form 42 to the Assessing Officer under s.159(1)-(2); if satisfied, officer issues Form 43 | [Form 42 manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form42-UM) |
 | Tax Year 2026-27, resident claiming foreign credit | Form 44 under rule 76, with evidence; foreign tax refunds/disputes need the rule's separate procedure | [Notified Rules, rule 76](https://www.incometaxindia.gov.in/documents/d/guest/en-notified-it-rules-2026-20-03-2026-pdf#page=54); [official Forms 44/45 guidance](https://www.incometaxindia.gov.in/documents/d/guest/fn-44) |
 | 2025-2026 filing cycle, resident foreign credit | Form 67 and FSI/TR under the old Act; do not substitute the new form or assume an obsolete manual's deadline controls | [FA/FSI guide](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/Step%20by%20Step%20Guide%20FA%20FSI.pdf); [dual-residence/credit skill](in-cross-border-india-dual-resident-treaty.md) |
 
-**Form 41 workflow.** Login > e-File > Income Tax Forms > File Income Tax Forms > Forms as per Income Tax Act 2025 > choose Form 41 and tax year. Complete applicant particulars, residential information and declaration; preview and e-verify; retain transaction ID and acknowledgement. PAN users use EVC/DSC as applicable. A nonresident without PAN who is not required to have one uses the separate NR ID category and email/mobile OTPs. The foreign certificate and TIN are prerequisites. Select the old-Act tab for the earlier period's forms. [Manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM).
+**Form 41 workflow.** Login > e-File > Income Tax Forms > File Income Tax Forms > Forms as per Income Tax Act 2025 > choose Form 41 and tax year. Complete applicant particulars, residential information and declaration. Upload the foreign residence certificate and enter the identifier specified above. Preview and e-verify. Retain the transaction ID, acknowledgement and supporting documents. PAN users use EVC/DSC as applicable. A non-resident without PAN who is not required to have one uses the separate NR ID category and email/mobile OTPs. Select the old-Act tab for the earlier period's forms. [Manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM) · [Rule 75 and Form 41](https://www.incometaxindia.gov.in/documents/d/guest/en-notified-it-rules-2026-20-03-2026-pdf#page=53).
 
 **Form 42 workflow.** Registered user with active PAN: choose the new-Act forms tab, form and tax year; complete applicant, TRC details, attachments and verification; preview, e-verify and retain acknowledgement. The address must be for the year for which the certificate is sought. Application is not itself a granted certificate. The earlier form was Form 10FA; obtain the applicable old-Act procedure for earlier years. [Manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form42-UM); [official form mapping, p.2](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/Navigator%201.pdf).
 
@@ -236,11 +236,13 @@ The transition FAQ describes July 2027 as the ordinary next filing period for Ta
 | [NR AY 2026-27 page](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0) | Read for residence introduction, visitor/deemed rules and ITR-2/3 routing; labelled 2025-2026 filing cycle | 2026-11-14 |
 | [Notified AY 2026-27 ITR-2](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf) | Read for Part A-GEN residence panels, PDF pp.2-3, including NR country/TIN and historic presence; Schedule FA, PDF p.27, calendar year ending 31 December 2025 | 2026-11-14 |
 | [ITR-2 validation rules](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf) | Read for rules 442-455, 533-535 and category D item 21: FSI/TR, resident rebate boundary, treaty paperwork | 2026-11-14 |
+| [Income-tax Rules 1962, rule 21AB](https://www.incometaxindia.gov.in/documents/20117/6507196/920110000000000057.pdf/55cc6625-9d5e-e400-a360-6fb8fdc3bd44?t=1763127404849) | Form 10F and information already contained in the certificate | 2026-11-24 |
 | [FA/FSI/TR official guide](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/Step%20by%20Step%20Guide%20FA%20FSI.pdf) | Read for sections 2-5: correct forms, taxable foreign income, credit, FA ownership and calendar-year scope, NR/RNOR exclusion | 2026-11-14 |
 | [Salaried individual return routing](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1) | Read for AY 2026-27 ITR-1 resident-other-than-RNOR condition and exclusions for foreign assets, signing authority and income; no unrelated figures adopted | 2026-11-14 |
 | [ITR-4 FAQ](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/itr%204-faqs) | Read for Q1-2 eligibility and RNOR/NR exclusions for the 2025-2026 filing cycle | 2026-11-14 |
 | [ITR-3 validation rules](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/CBDT_e-filing_ITR-3_Validation%20Rules_V1.0_AY%2026-27.pdf) | Read for rule 37: utility restriction on specified treaty-rate fields, not a general denial of foreign tax credit | 2026-11-14 |
 | [Form 41 manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM) | Read for overview, prerequisites, panels, year selection, PAN/NR-ID verification and acknowledgement | 2026-11-14 |
+| [Notified Form 41](https://www.incometaxindia.gov.in/documents/d/guest/en-notified-it-rules-2026-20-03-2026-pdf#page=416) | Note 6 alternative identifier where a foreign TIN is unavailable | 2026-11-24 |
 | [Form 42 manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form42-UM) | Read for Indian TRC application, officer-issued certificate, year/address and verification workflow | 2026-11-14 |
 | [Forms 44/45 official guidance](https://www.incometaxindia.gov.in/documents/d/guest/fn-44) | Read for full guidance, pp.1-5: new-Act foreign-credit forms, documents, deadlines, accountant verification and disputes | 2026-11-14 |
 | [Official form mapping](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/Navigator%201.pdf) | Read for p.2: old Form 10F to Form 41 and Form 10FA to Form 42 | 2026-11-14 |

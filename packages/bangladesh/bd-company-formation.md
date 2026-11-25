@@ -3,16 +3,16 @@ name: bd-company-formation
 description: "Bangladesh 2026 company incorporation workflow, private-company member/director conditions, foreign capital evidence, statutory reporting and separate branch/liaison-office referral."
 jurisdiction: BD
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
-version: 0.1
+version: 0.2
 type: filing-howto
 category: international
 ---
 
-# Bangladesh company incorporation v0.1
+# Bangladesh company incorporation v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -33,7 +33,7 @@ Ordinary company incorporation through RJSC/OSS. This is distinct from the sole-
 
 | Condition | Requirement | Official source |
 |---|---|---|
-| Ordinary private company, not the separate one-person regime | At least 2 subscribers; private-company definition generally limits members to 50 excluding employees, joint holders count as one | Companies Act sections 5 and 2(1)(t): https://bdlaws.minlaw.gov.bd/act-788/section-32025.html; https://bdlaws.minlaw.gov.bd/act-788/section-32006.html |
+| Ordinary private company, excluding the separate one-person regime | At least 2 subscribers. The articles restrict share transfers, bar public subscription invitations and limit members to 50 excluding employees. Joint holders count as one. | Companies Act sections 5 and 2(1)(ট): https://bdlaws.minlaw.gov.bd/act-788/section-32025.html; https://bdlaws.minlaw.gov.bd/act-788/section-32006.html |
 | Private company other than a public company's subsidiary | At least 2 natural-person directors | Section 90: https://bdlaws.minlaw.gov.bd/act-788/section-32914.html |
 | Public company or its private subsidiary | At least 3 directors; public formation requires at least 7 subscribers | Sections 90 and 5: https://bdlaws.minlaw.gov.bd/act-788/section-32914.html; https://bdlaws.minlaw.gov.bd/act-788/section-32025.html |
 
@@ -87,7 +87,7 @@ Refer one-person/public companies, regulated sectors, foreign branch/liaison/wor
 
 | Source and sections actually read | Official URL | Read on |
 |---|---|---|
-| Read for company definition, private membership exceptions and one-person company definition | https://bdlaws.minlaw.gov.bd/act-788/section-32006.html | 2026-11-14 |
+| Read for section 2(1)(ট), private-company definition and membership exceptions, and the separate one-person company definition | https://bdlaws.minlaw.gov.bd/act-788/section-32006.html | 2026-11-24 |
 | Read for ordinary formation subscribers and limited-liability forms | https://bdlaws.minlaw.gov.bd/act-788/section-32025.html | 2026-11-14 |
 | Read for director counts, public-parent exception and natural-person condition | https://bdlaws.minlaw.gov.bd/act-788/section-32914.html | 2026-11-14 |
 | Read for incorporation, bank/encashment documents, post-incorporation registrations and separate branch process | https://investbangladesh.gov.bd/faq | 2026-11-14 |
