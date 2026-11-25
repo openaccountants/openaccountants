@@ -58,8 +58,6 @@ That historical attribution does not approve this proposed correction. Unresolve
 | Filing authority | Corporations Canada (federal); Provincial corporate registries (provincial) |
 | Primary legislation | Canada Business Corporations Act (CBCA); Provincial acts (OBCA, BCBCA, ABCA, etc.) |
 | Supporting legislation | Income Tax Act (R.S.C. 1985, c.1); CPA Canada Handbook |
-| Accounting standards | HOLD (unverified) actual IFRS/ASPE/ASNPO/pension framework scope; Section 2 retains the topics without certifying eligibility |
-| Financial year | HOLD (unverified) actual fiscal period, year-end choice/change and applicable restrictions; not an unrestricted election |
 | CRA filing deadline | 6 months after fiscal year-end (corporate tax return T2) |
 | Annual return | CBCA ordinary 60-day anniversary rule covers incorporation, amalgamation or continuance; initial-event year excluded. Provincial rules differ. [registry policy](https://ised-isde.canada.ca/site/corporations-canada/en/business-corporations/policy-annual-filings-canada-business-corporations-act) |
 | Digital filing | CRA My Business Account (T2); Corporations Canada Online Filing |
@@ -137,7 +135,7 @@ HOLD (unverified) the ASPE/IFRS requirement and comparison cells below pending o
 
 **Year-End Adjustments Checklist**
 
-| # | HOLD (unverified operative standard): Adjustment | Canada-specific notes |
+| # | Adjustment | Canada-specific notes |
 | --- | --- | --- |
 | 1 | HOLD (unverified operative standard): Amortization/depreciation | ASPE 3061; systematic and rational; CCA rates for tax (not accounting) |
 | 2 | HOLD (unverified operative standard): Provisions | ASPE 3290; likely, estimable contingencies |
@@ -249,7 +247,7 @@ Total liabilities and shareholders' equity
 
 **Notes to Financial Statements**
 
-| # | HOLD (unverified operative standard): Disclosure | ASPE | IFRS |
+| # | Disclosure | ASPE | IFRS |
 | --- | --- | --- | --- |
 | 1 | HOLD (unverified operative standard): Significant accounting policies | Required (Section 1505) | Required (IAS 1/IAS 8) |
 | 2 | HOLD (unverified operative standard): Capital assets / PPE | Required (Section 3061) | Required (IAS 16) |
@@ -416,7 +414,7 @@ The unchanged baseline reuses completed 21 November reads. No operative licensed
 | [AcSB project](https://www.frascanada.ca/en/aspe/projects/goodwill-and-acquired-intangibles) | Originalstandardsetterstatus:proposedamendments,plannedfinalissuancefirsthalf2027;notoperativeHandbook | 2026-11-21 |
 | [AcSB exposure explanation](https://www.frascanada.ca/en/aspe/projects/goodwill-and-acquired-intangibles/in-brief-acsb-ed-relief-from-recognition-acquired-intangible-assets-amortization-goodwill) | Proposed1Jan2029effectivewith earlyapplication;proposaldoesnotproveissuedcurrentelection | 2026-11-21 |
 
-**Not yet confirmed:** every operative ASPE/IFRS/ASNPO/pension/assurance-standard requirement and scope, current goodwill base/election and40-year citation, national framework/size negatives, Ontario/Quebec present applicability, actual fiscal period/currency/functional-currency eligibility, current provincial licensing/CPD and every case's status/resolutions/filing package or independent funder/securities obligations. Original statement/note/checklist topics are retained as non-usable research holds. Loan bands/layouts are illustrative or unsupported policy, not verified standards. Five statutory/CRA contradiction groups are corrected; no complete fact census or whole-skill verification is claimed.
+**Not yet confirmed:** Quick-reference accounting-standard scope (IFRS/ASPE/ASNPO/pension) and choice of financial year are removed from the usable reference table; HOLD actual framework eligibility and fiscal period/year-end choice or change. Also held: every operative ASPE/IFRS/ASNPO/pension/assurance-standard requirement and scope, current goodwill base/election and40-year citation, national framework/size negatives, Ontario/Quebec present applicability, actual fiscal period/currency/functional-currency eligibility, current provincial licensing/CPD and every case's status/resolutions/filing package or independent funder/securities obligations. Original statement/note/checklist topics are retained as non-usable research holds. Loan bands/layouts are illustrative or unsupported policy, not verified standards. Five statutory/CRA contradiction groups are corrected; no complete fact census or whole-skill verification is claimed.
 
 ## Disclaimer
 
