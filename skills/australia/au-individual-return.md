@@ -28,7 +28,7 @@ domain: income-tax
 
 **Section 1 -- Quick Reference**
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Country | Australia |
 | Tax | Income tax + Medicare levy + HELP repayments (if applicable) |
@@ -61,9 +61,9 @@ domain: income-tax
 | Item | Value |
 | --- | --- |
 | Rate | 2% of taxable income |
-| Low-income threshold (single) | $28,011 (no levy at or below this amount), with phase-in up to $35,013 for taxpayers without seniors and pensioners tax offset eligibility |
+| Low-income threshold (single) | $28,011 (no levy at or below this amount), with phase-in up to $35,013 for taxpayers without seniors and pensioners tax offset eligibility ([2026 Medicare levy](https://www.ato.gov.au/forms-and-instructions/individual-tax-return-2026-instructions/medicare-levy-questions-m1-m2-individual-tax-return-2026/m1-medicare-levy-reduction-or-exemption-2026)) |
 | Low-income threshold (family) | $47,238 + $4,338 per dependent child |
-| Surcharge (no appropriate private hospital cover) | Single 2025–26 thresholds start above $101,000 of income for surcharge purposes, at 1% to 1.5%. Check family and part-year rules below |
+| Surcharge (no appropriate private hospital cover) | Single 2025–26 thresholds start above $101,000 of income for surcharge purposes, at 1% to 1.5%. Check family and part-year rules below ([2026 Medicare levy surcharge](https://www.ato.gov.au/individuals-and-families/your-tax-return/instructions-to-complete-your-tax-return/mytax-instructions/2026/medicare-and-private-health-insurance/medicare-levy-surcharge)) |
 
 ### Low Income Tax Offset (LITO) [T1]
 
@@ -82,9 +82,11 @@ domain: income-tax
 
 | Item | Value |
 | --- | --- |
-| Rate | 16% of basic income tax attributable to total net small business income |
+| Rate | 16% of income tax on business income |
 | Cap | $1,000 |
-| Eligibility | An individual carrying on an eligible business as a sole trader, or with an eligible share of net small business income from a partnership or trust. The business must have aggregated turnover below $5 million |
+| Eligibility | An individual carrying on an eligible business as a sole trader, or with an eligible share of net small business income from a partnership or trust. The business must have aggregated turnover below $5 million ([ITAA 1997 Subdiv 328-F](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_7/document_7.html)) |
+
+Statutorily, the SBITO rate is 16% of basic income tax attributable to total net small business income under Subdivision 328-F.
 
 ### Key Deduction Rate Lookups
 
@@ -95,7 +97,7 @@ domain: income-tax
 | Home office -- fixed rate method | 70 cents per hour (2024-25 and 2025-26) | T2 -- method choice, hours, and records/substantiation required |
 | Motor vehicle -- cents per km method | 88 cents per km (max 5,000 km) | T2 -- method choice and business-km support required |
 | Instant asset write-off (small business) | Eligible asset cost strictly less than $20,000; taxable-use deduction only | T1 only after eligibility, simplified-depreciation choices, first-use dates and cost are confirmed; otherwise escalate. [ITAA 1997, ss 328-180, 328-185 and 328-210](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html); [2025-26 thresholds, ITTPA s 328-180](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) |
-| Superannuation (deductible personal contribution) | General concessional cap $30,000 in 2025–26 and $32,500 in 2026–27 | Count all concessional contributions. Apply the separate deduction rules, including a valid acknowledged notice and any applicable age conditions |
+| Superannuation (deductible personal contribution) | General concessional cap $30,000 in 2025–26 and $32,500 in 2026–27 | Count all concessional contributions. Apply the separate deduction rules, including a valid acknowledged notice and any applicable age conditions ([ATO concessional contributions cap](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/concessional-contributions-cap)) |
 
 ### Conservative Defaults [T1]
 
@@ -226,7 +228,8 @@ Classify subscription charges by the actual business use. The deductible operati
 - Tax: 0 + 4,288 + (80,940 - 45,000) x 30% = 4,288 + 10,782 = AUD 15,070
 - Medicare: 80,940 × 2% = AUD 1,618.80
 - LITO: $0 (income > $66,667)
-- SBITO: All taxable income is eligible net small business income. AUD 15,070 × 16% = AUD 2,411.20, capped at AUD 1,000
+- SBITO: business is 100% of income, so 16% x 15,070
+  gives AUD 2,411.20 of eligible small business income tax offset, capped at AUD 1,000
 - Estimated tax and levy: AUD 15,070 − 1,000 + 1,618.80 = AUD 15,688.80
 
 ### Example 2 -- Instant Asset Write-Off
@@ -388,11 +391,11 @@ Use the 2025-26 thresholds for this return workflow. Use the separately labelled
 | Income year | Minimum repayment income | Second threshold | Source |
 | --- | ---: | ---: | --- |
 | 2025-26 | $67,000 | $125,000 | [HESA ss 154-10 and 154-20](https://www.legislation.gov.au/C2004A01234/2026-10-17/2026-10-17/text/original/epub/OEBPS/document_1/document_1.html) |
-| 2026-27 | $69,528 | $129,717 | [2026-27 indexation notice, entries for ss 154-10 and 154-20](https://www.legislation.gov.au/C2026G00249/asmade/text) |
+| 2026-27 | $69,528 | $129,717 | [2026-27 indexation notice, entries for ss 154-10 and 154-20](https://www.legislation.gov.au/C2026G00249/asmade/2026-04-21/text/original/pdf) |
 
 **Calculation for both years.** Calculate 15% of repayment income above the minimum up to the second threshold, plus 17% of repayment income above the second threshold. The compulsory repayment is the least of that marginal sum, 10% of total repayment income and the repayable debt for the income year. Determine that debt under section 154-15, allowing for relevant payments and amounts already assessed. At or below the minimum, there is no domestic compulsory repayment. Do not use the former whole-income percentage scale. [HESA ss 154-1, 154-15 and 154-20](https://www.legislation.gov.au/C2004A01234/2026-10-17/2026-10-17/text/original/epub/OEBPS/document_1/document_1.html).
 
-The first slice reaches $8,700 in 2025-26 and $9,028.35 in 2026-27. Retain the statutory arithmetic before any applicable assessment rounding; the displayed $9,028 shorthand is not the exact 2026-27 first-slice amount. The 10% cap first becomes smaller than the marginal sum at whole-dollar repayment income of $179,286 in 2025-26 and $186,051 in 2026-27. [HESA ss 154-20 and 154-25](https://www.legislation.gov.au/C2004A01234/2026-10-17/2026-10-17/text/original/epub/OEBPS/document_1/document_1.html) and [2026-27 notice](https://www.legislation.gov.au/C2026G00249/asmade/text).
+The first slice reaches $8,700 in 2025-26 and $9,028.35 in 2026-27. Retain the statutory arithmetic before any applicable assessment rounding; the displayed $9,028 shorthand is not the exact 2026-27 first-slice amount. The 10% cap first becomes smaller than the marginal sum at whole-dollar repayment income of $179,286 in 2025-26 and $186,051 in 2026-27. [HESA ss 154-20 and 154-25](https://www.legislation.gov.au/C2004A01234/2026-10-17/2026-10-17/text/original/epub/OEBPS/document_1/document_1.html) and [2026-27 notice](https://www.legislation.gov.au/C2026G00249/asmade/2026-04-21/text/original/pdf).
 
 **Worked example: repayment-income adjustments, 2025-26.** A resident has $70,000 taxable income including a $10,000 assessable FHSS released amount and $15,000 net section 23AG exempt foreign income. There are no other additions, no section 154-1(2) relief and $20,000 repayable debt. Repayment income is $75,000 and the compulsory repayment before assessment rounding is $1,200.
 
@@ -462,10 +465,10 @@ expected:
 | Item | Value |
 | --- | --- |
 | Self-lodge deadline | 2 November 2026 (31 October is Saturday; check extensions) |
-| Tax agent deadline | Check the client's recorded due date and applicable program. Dates depend on lodgment history, client circumstances and concessions, including some earlier deadlines and the 5 June concession |
-| Failure to lodge on time | $364 per 28-day period or part, up to five base units ($1,820) for the applicable period from 1 July 2026; apply relevant multipliers and remission rules. [Crimes (Amount of a Penalty Unit) Instrument 2026](https://www.legislation.gov.au/F2026N00424/asmade/text) |
-| Shortfall penalty (reasonable care not taken) | Base rate 25% of the shortfall or affected part |
-| Shortfall penalty (recklessness) | Base rate 50% of the shortfall or affected part |
+| Tax agent deadline | Check the client's recorded due date and applicable program. Dates depend on lodgment history, client circumstances and concessions, including some earlier deadlines and the 5 June concession ([ATO agent lodgment due dates](https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-for-tax-returns-by-client-type/individuals-and-trusts)) |
+| Failure to lodge on time | $364 per 28-day period or part, up to five base units ($1,820, derived: 5 x $364) for the applicable period from 1 July 2026; apply relevant multipliers and remission rules. [Crimes (Amount of a Penalty Unit) Instrument 2026](https://www.legislation.gov.au/F2026N00424/asmade/2026-06-15/text/original/pdf); [ATO FTL penalty](https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty) |
+| Shortfall penalty (reasonable care not taken) | Base rate 25% of the shortfall or affected part ([ATO statement penalties](https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/penalties-for-making-false-or-misleading-statements)) |
+| Shortfall penalty (recklessness) | Base rate 50% of the shortfall or affected part ([ATO statement penalties](https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/penalties-for-making-false-or-misleading-statements)) |
 | General Interest Charge (GIC) | Rate set quarterly and published on the ATO website; calculated daily and compounded |
 
 ## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
@@ -673,13 +676,13 @@ This skill and its outputs are provided for informational and computational purp
 
 Rates, lodgment and sole trader return treatment checked on 2026-11-22.
 
-- [Income Tax Rates Act 1986, Schedule 7](https://www.legislation.gov.au/C2004A03348/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html) and [2026 Medicare levy](https://www.ato.gov.au/forms-and-instructions/individual-tax-return-2026-instructions/medicare-levy-questions-m1-m2-individual-tax-return-2026/m1-medicare-levy-reduction-or-exemption-2026).
-- [Small business income tax offset, Subdivision 328-F](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_7/document_7.html) and [2026 Medicare levy surcharge](https://www.ato.gov.au/individuals-and-families/your-tax-return/instructions-to-complete-your-tax-return/mytax-instructions/2026/medicare-and-private-health-insurance/medicare-levy-surcharge).
-- [2026 business schedule P8](https://www.ato.gov.au/api/public/content/d4e347b76aca4585a9fd567df1931c8e?v=80e95725), [government payments](https://www.ato.gov.au/forms-and-instructions/individual-tax-return-2026-instructions/income-questions-1-12-individual-tax-return-2026/5-australian-government-allowances-and-payments-2026), [tax affairs costs](https://www.ato.gov.au/forms-and-instructions/individual-tax-return-2026-instructions/deduction-questions-d1-d10-individual-tax-return-2026/d10-cost-of-managing-tax-affairs-2026) and [other deductions](https://www.ato.gov.au/forms-and-instructions/individual-supplementary-tax-return-2026-instructions/deduction-questions-d11-d15-supplementary-tax-return-2026/d15-other-deductions-not-claimable-elsewhere-in-your-tax-return-2026).
-- [ATO home-based businesses](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/deductions/deductions-for-home-based-business-expenses/home-based-business-expenses-sole-trader-or-partnership), [actual method](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses/actual-cost-method) and [fixed rate record keeping](https://www.ato.gov.au/Individuals/Income-deductions-offsets-and-records/Deductions-you-can-claim/Working-from-home-expenses/Fixed-rate-method---67-cents/?anchor=Recordkeepingforthefixedratemethod).
-- [ATO business records](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/detailed-business-record-keeping-requirements/running-your-business-records/income-tax-return-records-business), [agent lodgment](https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-for-tax-returns-by-client-type/individuals-and-trusts) and [tax estimate](https://www.ato.gov.au/individuals-and-families/your-tax-return/instructions-to-complete-your-tax-return/mytax-instructions/2026/mytax-2026-estimate).
-- [ATO gifts and donations](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/gifts-and-donations) and [ITAA 1997 s 30-15](https://www.legislation.gov.au/C2004A05138/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html).
-- [Taxation Administration Act 1953, Schedule 1 s 45-30](https://www.legislation.gov.au/C1953A00001/2026-05-21/2026-05-21/text/original/epub/OEBPS/document_2/document_2.html) and [ITAA 1997, Divisions 17, 27 and 32](https://www.legislation.gov.au/C2004A05138/2026-06-27/2026-06-27/text/original/pdf/1).
+- [Income Tax Rates Act 1986, Schedule 7](https://www.legislation.gov.au/C2004A03348/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html) and [2026 Medicare levy](https://www.ato.gov.au/forms-and-instructions/individual-tax-return-2026-instructions/medicare-levy-questions-m1-m2-individual-tax-return-2026/m1-medicare-levy-reduction-or-exemption-2026). (read 2026-11-22)
+- [Small business income tax offset, Subdivision 328-F](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_7/document_7.html) and [2026 Medicare levy surcharge](https://www.ato.gov.au/individuals-and-families/your-tax-return/instructions-to-complete-your-tax-return/mytax-instructions/2026/medicare-and-private-health-insurance/medicare-levy-surcharge). (read 2026-11-22)
+- [2026 business schedule P8](https://www.ato.gov.au/api/public/content/d4e347b76aca4585a9fd567df1931c8e?v=80e95725), [government payments](https://www.ato.gov.au/forms-and-instructions/individual-tax-return-2026-instructions/income-questions-1-12-individual-tax-return-2026/5-australian-government-allowances-and-payments-2026), [tax affairs costs](https://www.ato.gov.au/forms-and-instructions/individual-tax-return-2026-instructions/deduction-questions-d1-d10-individual-tax-return-2026/d10-cost-of-managing-tax-affairs-2026) and [other deductions](https://www.ato.gov.au/forms-and-instructions/individual-supplementary-tax-return-2026-instructions/deduction-questions-d11-d15-supplementary-tax-return-2026/d15-other-deductions-not-claimable-elsewhere-in-your-tax-return-2026). (read 2026-11-22)
+- [ATO home-based businesses](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/deductions/deductions-for-home-based-business-expenses/home-based-business-expenses-sole-trader-or-partnership), [actual method](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses/actual-cost-method) and [fixed rate record keeping](https://www.ato.gov.au/Individuals/Income-deductions-offsets-and-records/Deductions-you-can-claim/Working-from-home-expenses/Fixed-rate-method---67-cents/?anchor=Recordkeepingforthefixedratemethod). (read 2026-11-22)
+- [ATO business records](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/detailed-business-record-keeping-requirements/running-your-business-records/income-tax-return-records-business), [agent lodgment](https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-for-tax-returns-by-client-type/individuals-and-trusts) and [tax estimate](https://www.ato.gov.au/individuals-and-families/your-tax-return/instructions-to-complete-your-tax-return/mytax-instructions/2026/mytax-2026-estimate). (read 2026-11-22)
+- [ATO gifts and donations](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/gifts-and-donations) and [ITAA 1997 s 30-15](https://www.legislation.gov.au/C2004A05138/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html). (read 2026-11-22)
+- [Taxation Administration Act 1953, Schedule 1 s 45-30](https://www.legislation.gov.au/C1953A00001/2026-05-21/2026-05-21/text/original/epub/OEBPS/document_2/document_2.html) and [ITAA 1997, Divisions 17, 27 and 32](https://www.legislation.gov.au/C2004A05138/2026-06-27/2026-06-27/text/original/pdf/1). (read 2026-11-22)
 
 Read 2026-11-12 for the depreciation correction:
 
@@ -690,4 +693,4 @@ Read 2026-11-12 for the depreciation correction:
 - [ITTPA 1997, s 328-180(4)(d) and (6)(e)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) -- read 2026-11-12 for the temporary 2025-26 asset and pool thresholds.
 - [Tax Reform No. 2 Act 2026, schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text) -- read 2026-11-12 for the permanent threshold application from July 2026.
 
-- [Higher Education Support Act 2003, ss 154-1, 154-5, 154-10, 154-15, 154-20, 154-25 and 154-32](https://www.legislation.gov.au/C2004A01234/2026-10-17/2026-10-17/text/original/epub/OEBPS/document_1/document_1.html) and [2026-27 indexation notice](https://www.legislation.gov.au/C2026G00249/asmade/text) -- selected HELP liability, income, thresholds and caps read 2026-11-12.
+- [Higher Education Support Act 2003, ss 154-1, 154-5, 154-10, 154-15, 154-20, 154-25 and 154-32](https://www.legislation.gov.au/C2004A01234/2026-10-17/2026-10-17/text/original/epub/OEBPS/document_1/document_1.html) and [2026-27 indexation notice](https://www.legislation.gov.au/C2026G00249/asmade/2026-04-21/text/original/pdf) -- selected HELP liability, income, thresholds and caps read 2026-11-12.
