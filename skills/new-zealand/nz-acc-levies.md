@@ -38,8 +38,8 @@ Out of scope: ACC claims, weekly compensation, rehabilitation, levy disputes and
 | Levy | What it covers | Who pays | Where the rate comes from |
 | --- | --- | --- | --- |
 | Earners' levy | Injuries outside work (IR335 page 18: "to cover the cost of non-work-related injuries") | Employees through PAYE; the self-employed on their ACC invoice; close companies on shareholder-employee pay with no PAYE | IRD rates page (below) (https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates) |
-| Work levy | Injuries at work | Employers, for their employees, and self-employed people | Use the rate for the applicable classification unit in the Work Account Levies Regulations and check the ACC invoice |
-| Working Safer levy | Funds WorkSafe New Zealand | Businesses and the self-employed | Flat rate of NZD 0.08 per NZD 100 before GST. Check the earnings or compensation base on the invoice |
+| Work levy | Injuries at work | Employers, for their employees, and self-employed people | Use the rate for the applicable classification unit in [Work Account Levies Regulations 2025, Schedule 2](https://www.legislation.govt.nz/regulation/public/2025/0017/12.0/contents.html) and check the ACC invoice |
+| Working Safer levy | Funds WorkSafe New Zealand | Businesses and the self-employed | Flat rate of 8 cents per NZD 100 before GST ([Rates of Funding Levy regulations](https://www.legislation.govt.nz/regulation/public/2016/0020/8.0/DLM6725448.html)). Check the earnings or compensation base on the invoice |
 
 Source for the self-employed list: IRD, "I am coming to work or study in New Zealand": "In addition to the Earners' levy that people getting salary or wages pay, you'll also pay the: Work levy Working Safer levy" ([IRD](https://www.ird.govt.nz/situations/work-or-study-in-new-zealand)).
 
