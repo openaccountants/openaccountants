@@ -307,7 +307,7 @@ These include planning reminders, not only statutory deadlines. Tax-year 2026 pe
 
 **Scenario:** CCPC earns $200,000 active business income. Owner is sole shareholder.
 
-**All salary ($200,000):** For an ordinary full-year non-Quebec CPP contributor reaching both 2026 maxima, employee CPP is **$4,230.45 + $416 = $4,646.45**; employer CPP is the same, so combined CPP is **$9,292.90**. A $200,000 gross salary therefore costs the corporation **$204,646.45** before any other employer costs, exceeding this scenario's $200,000 income budget. The historical $8,300 CPP estimate is not either of those totals. **HOLD:** personal tax, deductible corporate costs, actual CPP eligibility and a matched corporate cash budget are not supplied, so no salary take-home or tax saving is certified. The old $138,000 was also arithmetically inconsistent: even its stated $200,000 − $52,700 − $8,300 equals $139,000. The $52,700 is an unverified old input, not usable tax guidance. New 2027 RRSP room is conditionally min($200,000 × 18%, $35,390) = $35,390 before pension adjustments. [CPP contributions](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html); [2026 formulas](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-122nd-edition-effective-january-1-2026/t4127-jan-payroll-deductions-formulas-computer-programs.html); [owner EI treatment](https://www.canada.ca/en/revenue-agency/services/tax/canada-pension-plan-cpp-employment-insurance-ei-rulings/cpp-ei-explained/employees-self-employed-workers-responsibilities-benefits-entitlements.html)
+**All salary ($200,000):** For an ordinary full-year non-Quebec CPP contributor reaching both 2026 maxima, employee CPP is **$4,230.45 + $416 = $4,646.45**; employer CPP is the same, so combined CPP is **$9,292.90**. A $200,000 gross salary therefore costs the corporation **$204,646.45** before any other employer costs, exceeding this scenario's $200,000 income budget. The historical $8,300 CPP estimate is not either of those totals. **HOLD:** personal tax, deductible corporate costs, actual CPP eligibility and a matched corporate cash budget are not supplied, so no salary take-home or tax saving is certified. The old personal-tax and take-home estimates are not usable results; compute them only after the missing individual and corporate inputs are established. New 2027 RRSP room is conditionally min($200,000 × 18%, $35,390) = $35,390 before pension adjustments. [CPP contributions](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html); [2026 formulas](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-122nd-edition-effective-january-1-2026/t4127-jan-payroll-deductions-formulas-computer-programs.html); [owner EI treatment](https://www.canada.ca/en/revenue-agency/services/tax/canada-pension-plan-cpp-employment-insurance-ei-rulings/cpp-ei-explained/employees-self-employed-workers-responsibilities-benefits-entitlements.html)
 
 **All eligible dividends — HOLD:** the old 12.2%/$24,400 corporate tax, $175,600 residual, $25,200 personal tax, $150,400 net and $12,400 saving are not verified results. Ontario's lower corporate rate changed on 1 July 2026; establish the actual fiscal period and SBD eligibility. Eligible-dividend treatment also requires sufficient GRIP, which is not established merely by SBD-taxed income. Match the corporate cash budgets and actual owner inputs before comparing. Dividends themselves do not create earned-income RRSP room or CPP contributions. [CRA corporate rates](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html); [CRA GRIP](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/eligible-dividends/general-rate-income-pool-grip.html)
 
@@ -321,21 +321,17 @@ inputs:
   gross_salary: 200000
   cpp_max: 4230.45
   cpp2_max: 416
-  old_unverified_tax: 52700
-  old_wrong_cpp: 8300
 steps:
   employee_cpp: cpp_max + cpp2_max
   employer_cpp: employee_cpp
   combined_cpp: employee_cpp + employer_cpp
   corporate_salary_cost: gross_salary + employer_cpp
-  old_input_subtraction_only: gross_salary - old_unverified_tax - old_wrong_cpp
   new_rrsp_room_before_adjustments: min(gross_salary * 0.18, 35390)
 expected:
   employee_cpp: 4646.45
   employer_cpp: 4646.45
   combined_cpp: 9292.90
   corporate_salary_cost: 204646.45
-  old_input_subtraction_only: 139000
   new_rrsp_room_before_adjustments: 35390
 ```
 
