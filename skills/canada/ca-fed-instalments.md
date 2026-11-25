@@ -54,7 +54,7 @@ The historical review attribution above is retained; it does not approve this pr
 | --- | --- |
 | Country | Canada (federal) |
 | Tax | Quarterly income tax instalments |
-| Primary legislation | Income Tax Act (ITA), s 156 (ordinary instalments); s 156.1 (thresholds, NTO definition and exceptions); s 155 (farming/fishing regime) |
+| Primary legislation | Income Tax Act (ITA), [s 156](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-156.html) (ordinary instalments); [s 156.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-156.1.html) (thresholds, NTO definition and exceptions); [s 155](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-155.html) (farming/fishing regime) |
 | Supporting legislation | ITA s 161(2) (interest); s 163.1 (penalty); Interpretation Act s 26 (due date rules) |
 | Authority | Canada Revenue Agency (CRA) |
 | Portal | My Account (cra-arc.gc.ca) |
