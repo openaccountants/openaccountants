@@ -1,10 +1,10 @@
 ---
 name: malta-vat-return
 description: "Malta VAT return preparation and review for Article 10, Article 11 declarations and distinct Article 12 goods-acquisition and reverse-charge service obligations. Check registration, place of supply, taxability, rates, deduction, actual filing dates and records. Specialist schemes and unsupported portal details remain outside the filing-ready scope."
-version: 2.2
+version: 2.3
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-08
+last_updated: 2026-11-25
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 1
 reviewed_by: Michael Cutajar
@@ -62,7 +62,7 @@ Main sources, all on legislation.mt:
 | --- | --- | --- |
 | Article 10 (standard) | A taxable person established in Malta who makes supplies in Malta other than exempt-without-credit supplies, or who supplies services in another Member State where the customer pays the VAT | Apply within thirty days of the first such supply. Charges VAT, recovers input VAT, files periodic returns. Apply to cancel within fifteen days of ceasing to qualify. |
 | Article 11 (small enterprise, domestic) | A taxable person established in Malta whose turnover in the preceding calendar year was not more than the domestic threshold of €35,000 | Optional: the person applies. Charges no VAT and recovers none. Loses status on the date turnover passes €35,000 within a calendar year and must apply to cancel within fifteen days. An Article 10 registrant cannot switch in the first whole 12 calendar months, and the Commissioner may accept an earlier switch only if no input tax was claimed. |
-| Article 11A | A small enterprise established in Malta using another Member State's small-enterprise exemption | EU-wide turnover must stay below the Union threshold of €100,000. Quarterly declaration by the last day of the month after the quarter. Number carries the suffix EX. |
+| Article 11A | A small enterprise established in Malta using another Member State's small-enterprise exemption | For entry, Union turnover in the preceding calendar year must be less than €100,000. During the current calendar year, the exemption in other Member States ends when Union turnover exceeds €100,000; reaching exactly €100,000 does not alone end it (Sixth Schedule Part Two items 1 and 5). Quarterly declaration by the last day of the month after the quarter. Number carries the suffix EX. |
 | Article 11B | A small enterprise established in another Member State using Malta's exemption | Needs Malta turnover not above €35,000 and EU turnover below €100,000 in the preceding year. |
 | Article 12 | A person not registered under Article 10 who: buys goods from other Member States above the acquisitions threshold of €10,000 in a calendar year ([Act, art. 12(1) and Third Schedule Part Three item 3](https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4)); or receives services on which it must pay Maltese VAT under art. 20(2); or supplies services in another Member State where the customer pays | Register by the date of the acquisition, the service received or the service supplied. Pays the VAT; no input VAT recovery. An Article 11 person who does any of these must also register under Article 12. |
 
@@ -299,6 +299,7 @@ expected:
 | Source and scope actually read | Official URL | Read on |
 |---|---|---|
 | VAT Act, Cap. 406: registration, liability, rates, deductions, filing, penalties, records, calendar shift, SME/OSS and relevant schedules cited above (consolidation to Act III of 2026 and L.N. 75 and 86 of 2026) | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 | 2026-11-08 |
+| VAT Act, Sixth Schedule Part Two items 1 and 5: preceding-year entry test and current-year cessation, "as from the date the Union threshold is exceeded". These bounded provisions were read on the date shown; their unchanged completed source read is reused for this correction, not a new whole-Act review. | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 | 2026-11-23 |
 | Recapitulative statement regulations, read for reg. 3 monthly/quarterly periods, EUR 50,000 boundary and due date | https://legislation.mt/eli/sl/406.14/eng/pdf | 2026-11-04 |
 | Capital goods regulations, read for definition, EUR 1,160 exclusion, 5/20-year adjustment and retention | https://legislation.mt/eli/sl/406.12/eng/pdf | 2026-11-04 |
 | VAT interest regulation, read for current and pre-September-2022 balance rates | https://legislation.mt/eli/sl/406.19/eng/pdf | 2026-11-04 |
