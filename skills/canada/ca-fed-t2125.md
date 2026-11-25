@@ -1,10 +1,11 @@
 ---
 name: ca-fed-t2125
 description: Use this skill whenever asked about Canadian self-employment business income reported on Form T2125 (Statement of Business or Professional Activities). Trigger on phrases like "T2125", "business income Canada", "self-employed expenses", "CCA", "capital cost allowance", "home office Canada", "motor vehicle expenses CRA", "business-use-of-home", "sole proprietor Canada", "net business income", "business number BN", "fiscal year end", "GST ITC", or any question about computing, classifying, or reporting business income and expenses for a Canadian sole proprietor. Covers Parts 1-8 of T2125, allowable expenses, CCA classes and rates, AccII, business-use-of-home, motor vehicle expenses, GST/HST interaction, and net income computation. ALWAYS read this skill before touching any T2125 work.
-version: 2.0
+version: 2.1
 jurisdiction: CA
 tax_year: 2025
-last_updated: 2026-07-13
+tax_year_notes: Historical 2025 return calculations and original example inputs; separately dated 2026 vehicle announcements do not recertify the whole workpaper for 2026.
+last_updated: 2026-11-25
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -17,11 +18,13 @@ domain: income-tax
 
 # CA Fed T2125
 
-## Canada Self-Employment (T2125) -- Sole Proprietor Skill v2.0
+## Canada Self-Employment (T2125) -- Sole Proprietor Skill v2.1
+
+This corrects the historical 2025 workpaper. **HOLD** prevents final use of an affected result until its specified evidence or condition is established; it does not establish zero deduction, no tax or non-registration.
 
 ## Rates and thresholds
 
-Reviewed against the cited tax authorities by Nathan Wiebe on 2026-06-21. Items flagged for further clarification are tracked separately and excluded here. This block is generated from verified `skill_facts` — edit the facts, not the prose.
+Reviewed against the cited tax authorities by Nathan Wiebe on 2026-06-21. That historical attribution does not approve this proposed correction. Unresolved source, eligibility and input conditions are explicitly held below.
 
 ### T2125 (Business)
 
