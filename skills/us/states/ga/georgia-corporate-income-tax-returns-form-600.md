@@ -21,13 +21,13 @@ STARTER DRAFT, generic. Your corrections below will make it yours.
 
 Form 600 is the annual corporate income tax return filed with Georgia's state tax authority (name and portal — citation to confirm) by C-corporations that do business in, own property in, or derive income from Georgia. It covers the corporation's tax year (calendar or fiscal) and reports Georgia taxable income, and may also include a net worth tax component (concept — confirm before filing).
 
-> **Non-usable hold:** This remains an incomplete 2025 starter. The unfilled rate, net-worth, deadline, extension, estimates, electronic-filing and penalty rows below do not establish a filing method. Independent changed-line review, exact source-quotation evidence and accountant approval are pending; retained approval fields do not certify the correction draft.
+> **Non-usable hold:** This remains an incomplete 2025 starter. The unfilled rate, net-worth, deadline, extension, estimates, electronic-filing and penalty rows below do not establish a filing method. Independent changed-line review, required worked examples and accountant approval are pending; retained approval fields do not certify the correction draft.
 
 ## Who this is for
 
 C-corporations incorporated in Georgia, or foreign (out-of-state) corporations registered or doing business in Georgia.
 Preparers handling a first-year Georgia filing or picking up an existing client.
-Partnerships and LLCs taxed as pass-throughs use their applicable return. Do not categorically exclude a federal S corporation: required nonresident-shareholder Form 600S-CA consents affect Georgia S recognition. Failure of those required consents can require Form 600 and regular corporate tax. Apply the actual 2025 recognition conditions in the [IT611 filing paragraph](https://dor.georgia.gov/document/document/2025-it611-corporate-income-tax-instruction-booklet/download), read 2026-11-22 (filing/600S-CA passage only; not the full booklet).
+Partnerships and LLCs taxed as pass-throughs use their applicable return. Do not categorically exclude a federal S corporation: required nonresident-shareholder Form 600S-CA consents affect Georgia S recognition. Failure of those required consents can require Form 600 and regular corporate tax. Apply the actual 2025 recognition conditions in the [IT611 filing paragraph](https://dor.georgia.gov/document/document/2025-it611-corporate-income-tax-instruction-booklet/download), read 2026-11-22, with the missing exact quotation recovered from the same filing paragraph on 2026-11-25 (printed page 8; this is not a new whole-booklet review).
 
 ## Before you start, ask the client
 
@@ -77,6 +77,12 @@ Filing under the wrong entity registration or FEIN mismatch with the state accou
 | Late filing / late payment penalties and interest | confirm before filing | citation to confirm |
 
 ## Sources
+
+| Authority | Exact excerpt and read scope | Read on |
+| --- | --- | --- |
+| [2025 IT611, printed page 8, Filing Requirements](https://dor.georgia.gov/document/document/2025-it611-corporate-income-tax-instruction-booklet/download) | Read in the nonresident-shareholder Form 600S-CA paragraph only, recovering the missing quotation: “negates Georgia’s recognition of the election, requiring each corporation to file Form 600 and pay the regular corporate tax.” No full-booklet or whole-current-law review. | 2026-11-25 |
+
+Not yet confirmed; non-usable holds: full nexus/classification, federal/Georgia adjustments and conformity, apportionment, NOL/credits, complete net-worth base/brackets/exemptions/short periods, deadline/extension/payment exceptions, estimate gateway/calendar, mandatory e-filing and complete penalty/interest method. The original placeholder rows below are not usable computation instructions. No actual taxpayer or filing is verified. Two required executable examples are still absent; this scope correction does not invent tax inputs or certify the missing method.
 
 State tax authority — corporate income tax pages: citation to confirm
 Form 600 instructions, current year: citation to confirm
