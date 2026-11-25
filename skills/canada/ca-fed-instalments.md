@@ -29,7 +29,7 @@ The historical review attribution above is retained; it does not approve this pr
 
 ### Fed Instalments
 
-- **Net tax owing threshold** — > $3,000 current AND either of 2 prior years  _(ITA s.156(1))_
+- **Net tax owing threshold** — Ordinary individual: > $3,000 current AND either of two prior years; use $1,800 for Quebec and the separate farming/fishing test below. [ITA 156.1(1)-(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-156.1.html)
 - **Quebec federal threshold** — $1,800  _(ITA s.156.1(1); CRA — Instalments — canada.ca)_
 - **Q1** — March 15  _(ITA s.156(1))_
 - **Q2** — June 15  _(ITA s.156(1))_
@@ -54,7 +54,7 @@ The historical review attribution above is retained; it does not approve this pr
 | --- | --- |
 | Country | Canada (federal) |
 | Tax | Quarterly income tax instalments |
-| Primary legislation | Income Tax Act (ITA), s 156 (instalment obligation); s 156.1 (Quebec residents) |
+| Primary legislation | Income Tax Act (ITA), s 156 (ordinary instalments); s 156.1 (thresholds, NTO definition and exceptions); s 155 (farming/fishing regime) |
 | Supporting legislation | ITA s 161(2) (interest); s 163.1 (penalty); Interpretation Act s 26 (due date rules) |
 | Authority | Canada Revenue Agency (CRA) |
 | Portal | My Account (cra-arc.gc.ca) |
