@@ -5,15 +5,15 @@ description: >
 jurisdiction: PG
 category: international
 tax_year: 2026
-last_updated: 2026-11-16
-version: 1.0
+last_updated: 2026-11-22
+version: 1.1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Papua New Guinea corporate income tax v1.0
+# Papua New Guinea corporate income tax v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -68,7 +68,7 @@ A PNG PE-attributable amount is not automatically taxed again at the gross non-r
 | Calendar-year 2026 illustrations | Derived: 30 September 2027 for agent-prepared company return; 30 June 2027 otherwise | [s. 135(1)](https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf) |
 | Income tax and PE non-resident tax | Return due date for a self-assessment; the assessment notice's specified date otherwise | [s. 137](https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf) |
 | Provisional income tax | 3 instalments, last day of the month following the third, sixth and ninth tax-year months | [s. 138](https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf) |
-| Calendar-year instalment dates | Derived: 30 April, 31 July, 31 October | [s. 138](https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf) |
+| Calendar-year 2026 instalment dates | 30 April, 31 July and 2 November 2026. The last instalment rolls forward because 31 October is a Saturday. | [s. 138](https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf); [TAA s. 68](https://pdis.parliament.gov.pg/uploads/4b825861-6fb1-41a1-b3a6-01ce3dd7fb5d); [IPA business calendar](https://www.ipa.gov.pg/public/Holidays.aspx?lang=en-US) |
 | Non-employment withholding return and payment | By 21st of the month after the payment month, unless the specific collection rule applies | [s. 158](https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf) |
 | Annual withholding statement | Within 3 months of fiscal-year end | [s. 159](https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf) |
 
@@ -169,12 +169,14 @@ Stop finalisation if the accounting year, residence, taxable-income reconciliati
 
 ## Sources
 
-Read on 16 November 2026. A scoped read does not certify every provision in a long Act.
+Original sources read on 16 November 2026. The business-day rule and calendar were checked on 23 November 2026.
 
 | Official source and scope read | URL | Read on |
 |---|---|---|
 | Read for Income Tax Act 2025: residence, income/deductions, accounting and GST, PE and foreign-income rules, project boundaries, ss. 133-160 and Schedule 1 | https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf | 2026-11-16 |
 | Read for Enacted Income Tax 2026 Budget amendment: ss. 1-4 and commencement | https://pdis.parliament.gov.pg/uploads/e755f62f-9e85-40b1-bb96-d8a162d32050 | 2026-11-16 |
 | Read for Tax Administration Act 2017: ss. 11, 18, 24-27, 39, 79, 92-101, as incorporated for income tax | https://pdis.parliament.gov.pg/uploads/4b825861-6fb1-41a1-b3a6-01ce3dd7fb5d | 2026-11-16 |
+| Read for Tax Administration Act 2017: s. 68, due dates falling on weekends or public holidays | https://pdis.parliament.gov.pg/uploads/4b825861-6fb1-41a1-b3a6-01ce3dd7fb5d#page=48 | 2026-11-23 |
+| Read for the 2026 business calendar, including the business day after 31 October | https://www.ipa.gov.pg/public/Holidays.aspx?lang=en-US | 2026-11-23 |
 
 Not yet confirmed: Current provisional-tax regulatory uplift, live 2026 IRC return fields, actual extensions, current interest-rate input and taxpayer-specific treaty/project terms. Company statutory deadlines are verified, but no administrative extension is assumed.
