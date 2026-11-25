@@ -8,10 +8,10 @@ description: >
   election and current remittance rates. Reconcile QST and GST separately within
   the actual permitted joint or separate return route, with correct annual
   individual filing/payment dates and no automatic tax on all foreign SaaS.
-version: 3.0
+version: 3.1
 jurisdiction: CA-QC
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-25
 depends_on:
   - vat-workflow-base
 category: international
@@ -21,7 +21,7 @@ domain: vat-gst
 type: computation
 ---
 
-# Quebec QST return v3.0
+# Quebec QST return v3.1
 
 ## Scope
 
@@ -60,14 +60,14 @@ This method produces reviewable computations and proposed postings. It does not 
 | General assigned annual frequency | Annual taxable sales 1,500,000 or less; permitted more-frequent election and special entity rules | [IN-203 filing-frequency table](https://www.revenuquebec.ca/documents/en/publications/in/IN-203-V(2026-03).pdf) |
 | General assigned quarterly frequency | Over 1,500,000 through 6,000,000 inclusive; actual account and monthly-election route | [IN-203 frequency table](https://www.revenuquebec.ca/documents/en/publications/in/IN-203-V(2026-03).pdf) |
 | General assigned monthly frequency | Over 6,000,000; not the exact lower boundary | [IN-203 frequency table](https://www.revenuquebec.ca/documents/en/publications/in/IN-203-V(2026-03).pdf) |
-| Quick-method sales ceiling |400,000 including GST/HST; 418,952 including QST, with actual worldwide/associate/four-of-five-quarter population | [RQ eligibility](https://www.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/reporting-gsthst-and-qst/the-quick-method-of-accounting-for-calculating-gst-and-qst-remittances/who-can-use-the-quick-method/) |
+| Quick-method sales ceiling |400,000 including GST/HST; 418,952 including QST, using the actual worldwide/associate population for any four **consecutive** fiscal quarters included in the five most recent quarters | [RQ eligibility](https://www.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/reporting-gsthst-and-qst/the-quick-method-of-accounting-for-calculating-gst-and-qst-remittances/who-can-use-the-quick-method/) |
 | Quick-method QST goods route | 3.4% of eligible QST-inclusive Quebec sales for qualifying resale businesses meeting the 40% goods-cost condition | [RQ rates and goods test](https://www.revenuquebec.ca/fr/entreprises/taxes/tpstvh-et-tvq/declaration-de-la-tps-et-de-la-tvq/methode-rapide-de-calcul-des-montants-de-la-tps-et-de-la-tvq-a-remettre/taux-applicables/) |
 | Quick-method QST other eligible route | 6.6% of eligible QST-inclusive Quebec sales, often services; eligibility exclusions remain | [RQ actual rates](https://www.revenuquebec.ca/fr/entreprises/taxes/tpstvh-et-tvq/declaration-de-la-tps-et-de-la-tvq/methode-rapide-de-calcul-des-montants-de-la-tps-et-de-la-tvq-a-remettre/taux-applicables/) |
 | Quick-method QST reduction | 1% on first 31,421 QST-inclusive eligible sales in the fiscal-year credit population, not 30,000 or a fresh limit each return | [RQ annual credit and cumulative examples](https://www.revenuquebec.ca/fr/entreprises/taxes/tpstvh-et-tvq/declaration-de-la-tps-et-de-la-tvq/methode-rapide-de-calcul-des-montants-de-la-tps-et-de-la-tvq-a-remettre/taux-applicables/) |
 
 ### Establish registration, period and supply population
 
-Use the actual registration date/system. The ordinary small-supplier test includes associates' worldwide taxable and zero-rated supplies; it excludes the stated tax, financial-service and capital-property amounts. A single-quarter crossing causes immediate loss of small-supplier status and collection on the crossing supply; the rolling four-quarter route generally ends status after the following calendar month. Do not tax earlier supplies retroactively just because a later year exceeds a threshold. Voluntary registration, mandatory taxi/admission and specified-product/QST routes can change the result; the ordinary threshold is not an exemption for every trader. [Actual small-supplier timing](https://www-prd.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/registering-for-the-gst-and-qst/small-suppliers/), [registration exceptions](https://www.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/registering-for-the-gst-and-qst/).
+Use the actual registration date/system. The ordinary small-supplier test includes associates' worldwide taxable and zero-rated supplies; it excludes the stated taxes, financial services, sales of capital property and goodwill of a business. A single-quarter crossing causes immediate loss of small-supplier status and collection on the crossing supply; the rolling four-quarter route generally ends status after the following calendar month. Do not tax earlier supplies retroactively just because a later year exceeds a threshold. Voluntary registration, mandatory taxi/admission and specified-product/QST routes can change the result; the ordinary threshold is not an exemption for every trader. [Actual small-supplier timing](https://www-prd.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/registering-for-the-gst-and-qst/small-suppliers/), [registration exceptions](https://www.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/registering-for-the-gst-and-qst/).
 
 Check actual general-system versus specified-system registration before input-credit or remote-sale conclusions. The non-resident-supplier route is not settled by an AWS/Google/Microsoft merchant name. Financial services, real property and non-resident/specified suppliers retain the original R-QC-QST 1-3 referral jobs. A wrong claim needs correction of its legal basis, not a fallback of 'taxable at 9.975%' or 'not registered' whenever unknown. [IN-203 system boundary and specified-supplier input treatment](https://www.revenuquebec.ca/documents/en/publications/in/IN-203-V(2026-03).pdf).
 
@@ -127,9 +127,13 @@ For bank-statement intake retain the original Desjardins CSV, RBC/TD/BMO/Scotiab
 
 Check written accepted election, exact worldwide/associate/quarter population and ineligible entities. Accounting, legal, actuarial, fiscal/financial consulting, bookkeeping and tax-return preparation businesses are among the exclusions; 'small service business' is not universal eligibility. The actual QST inclusive ceiling differs from GST/HST inclusive ceiling. Use actual ordinary sale collection first: quick remittance rates are **not customer tax rates**. [RQ eligibility](https://www.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/reporting-gsthst-and-qst/the-quick-method-of-accounting-for-calculating-gst-and-qst-remittances/who-can-use-the-quick-method/), [actual current rate method](https://www.revenuquebec.ca/fr/entreprises/taxes/tpstvh-et-tvq/declaration-de-la-tps-et-de-la-tvq/methode-rapide-de-calcul-des-montants-de-la-tps-et-de-la-tvq-a-remettre/taux-applicables/).
 
+Do not choose four non-consecutive quarters to avoid an intervening high quarter. **HOLD eligibility:** also establish the applicable 365-day commercial-activity and election/revocation history under 434R0.11, with the operative new-registrant route in 434R0.15. A new business is not automatically barred for 365 days. Bind the statutory definitions, expected qualification and reasonable rate required for that route before applying it; an accepted election alone does not prove every operative condition. [QST regulation 434R0.11 and 434R0.15](https://www.legisquebec.gouv.qc.ca/fr/document/rc/T-0.1,%20r.%202).
+
 The old goods/services remittance rates were reversed: qualifying retail/wholesale goods use 3.4% QST, other eligible route commonly services 6.6%. The goods-cost 40% condition and exclusions matter. Apply each to eligible QST-inclusive Quebec sales, excluding the actual zero-rated, capital/immovable and other excluded populations; capital transactions generally remit actual tax and eligible capital ITRs separately. Operating ITRs are ordinarily already reflected in the quick rate, so do not deduct them again. Keep annual credit used and election/revocation/deadline evidence. [Actual RQ rates and goods condition](https://www.revenuquebec.ca/fr/entreprises/taxes/tpstvh-et-tvq/declaration-de-la-tps-et-de-la-tvq/methode-rapide-de-calcul-des-montants-de-la-tps-et-de-la-tvq-a-remettre/taux-applicables/), [IN-203 quick-method scope/election](https://www.revenuquebec.ca/documents/en/publications/in/IN-203-V(2026-03).pdf).
 
-The detailed rate page and IN-203 say the 1% reduction is on the first 31,421 QST-inclusive eligible sales **per fiscal year**, used cumulatively across returns, with no unused annual carryforward. FPZ-2034.G-V line 207 wording says 'for each period', which can misleadingly suggest a fresh limit each return. The Act could not be read to settle a material conflicting claim; record both sources and **do not reset the cap each period** or finalise a disputed enhanced claim without that law check. The bounded examples below supply a supported available annual balance rather than infer a new allowance. [Detailed annual rule and cumulative example](https://www.revenuquebec.ca/fr/entreprises/taxes/tpstvh-et-tvq/declaration-de-la-tps-et-de-la-tvq/methode-rapide-de-calcul-des-montants-de-la-tps-et-de-la-tvq-a-remettre/taux-applicables/), [conflicting field wording](https://www.revenuquebec.ca/en/online-services/forms-and-publications/fpz-2034-g-v/guide-to-detailed-gst/hst-and-qst-calculations-and-the-return-respecting-taxable-real-property-immovables-taxable-carbon-emission-allowances-and-imported-taxable-supplies/).
+For the 40% test, the cost numerator excludes basic groceries and goods on which the registrant was not required to pay QST, and concerns tangible movable goods acquired for resale. Use the regulation's determinant period and base determining amount (montant déterminant de base), not an unqualified percentage of raw annual sales. **HOLD the 3.4% route** until the actual numerator, period and denominator are established. [QST regulation 434R0.8](https://www.legisquebec.gouv.qc.ca/fr/document/rc/T-0.1,%20r.%202).
+
+The 1% reduction uses the first 31,421 QST-inclusive eligible sales **per fiscal year**, cumulatively across returns, with no unused annual base carried forward. Regulation 434R0.13 D(b) and D(c)(ii) use the earlier periods in that fiscal year to determine the remaining base; **do not reset the cap each period**. D(a) also requires the election to be in force from the first day of the fiscal year, or from registration day for that applicable branch. **HOLD the credit** until commencement, actual qualifying supplies and remaining annual capacity are established. FPZ-2034.G-V line 207's 'for each period' wording does not establish a fresh allowance each return. This interpretation is limited to the French regulation consolidation reviewed (1 July 2026); later amendments have not been cleared. [Regulation 434R0.13 D(a)-(c)](https://www.legisquebec.gouv.qc.ca/fr/document/rc/T-0.1,%20r.%202), [detailed annual rule and cumulative example](https://www.revenuquebec.ca/fr/entreprises/taxes/tpstvh-et-tvq/declaration-de-la-tps-et-de-la-tvq/methode-rapide-de-calcul-des-montants-de-la-tps-et-de-la-tvq-a-remettre/taux-applicables/), [field wording](https://www.revenuquebec.ca/en/online-services/forms-and-publications/fpz-2034-g-v/guide-to-detailed-gst/hst-and-qst-calculations-and-the-return-respecting-taxable-real-property-immovables-taxable-carbon-emission-allowances-and-imported-taxable-supplies/).
 
 ### Filing, payment, records and penalties
 
@@ -137,7 +141,9 @@ Use actual assigned/elected frequency. The general annual-sales threshold table 
 
 Monthly/quarterly returns are due one month after period-end; ordinary annual returns generally three months after year-end. A qualifying individual with business income and 31 December annual fiscal year files by 15 June but pays any balance by 30 April. This is not all annual filers or all personal property-income cases. Calendar 2026 individual return would ordinarily file 15 June 2027/pay 30 April 2027 subject to actual holiday rules and account. Required annual instalments have a separate current/prior net-tax test; filing extension does not defer quarterly payments. [Actual date/population rule](https://www.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/reporting-gsthst-and-qst/filing-frequency/).
 
-Actual IN-203 annual instalment duty uses both current estimated and previous-year net tax at least 3,000 for each tax separately; quarterly instalments are due the last day of the following month. Reconcile actual amount paid rather than deduct an estimate as if settled. Keep tax due, bank processing/authority receipt and accepted submission distinct. [Actual filing/instalment schedule](https://www.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/reporting-gsthst-and-qst/filing-frequency/), [IN-203 instalment population](https://www.revenuquebec.ca/documents/en/publications/in/IN-203-V(2026-03).pdf).
+For QST, bind the current estimated net tax and statutory instalment base separately; the 3,000 test must not use an unannualised short-period prior amount. Under 458.0.2, the prior base uses C × 365 / D with the statutory period population and day count; 458.0.3 deems a base below 3,000 nil. **HOLD duty and amount** until the actual current estimate, preceding-period net tax, covered days and statutory minimum are established. For illustration only, C = 200 and D = 20 annualises to 3,650, not 200; against a current estimate of 4,000 the lesser is 3,650 and one quarter is 912.50. Do not apply this QST statute to GST without its separate federal rule. [QST Act 458.0.2-458.0.3](https://www.legisquebec.gouv.qc.ca/fr/document/lc/T-0.1).
+
+QST instalments must be paid within the statutory month following each fiscal quarter. Act article 1 defines a running month; a permitted quarter ending 15 June gives a simple date of **15 July**, not 31 July. Month-end/calendar-quarter examples do not justify a universal last-calendar-day rule. **HOLD actual due-date advice** for weekend/holiday and impossible-day rollover cases pending their operative rules; the running-month application is an interpretive step using articles 1 and 458.0.1. Reconcile actual amount paid rather than deduct an estimate as if settled. Keep tax due, bank processing/authority receipt and accepted submission distinct. [QST Act 1 and 458.0.1](https://www.legisquebec.gouv.qc.ca/fr/document/lc/T-0.1), [RQ schedule](https://www.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/reporting-gsthst-and-qst/filing-frequency/).
 
 Current ordinary registrants generally file electronically for periods beginning after 2023, with the actual charity exception. Use current MyAccount/authorised financial-institution channel, right account/period and actual required supplementary-return submission. Payments 10,000 or more normally require electronic means with actual exception. A saved draft, successful login or ledger posting does not prove filing or payment. Return receipt and payment processing have different actual dates; account for bank processing. [Actual current instructions](https://www.revenuquebec.ca/en/online-services/forms-and-publications/fpz-2034-g-v/guide-to-detailed-gst/hst-and-qst-calculations-and-the-return-respecting-taxable-real-property-immovables-taxable-carbon-emission-allowances-and-imported-taxable-supplies/), [IN-203 electronic rules](https://www.revenuquebec.ca/documents/en/publications/in/IN-203-V(2026-03).pdf).
 
@@ -205,7 +211,7 @@ expected:
 
 ### Case 4: quick remittance service route is 6.6%, not 3.4%
 
-Assume a fully eligible elected cleaning business on the ordinary service quick route, eligible Quebec QST-inclusive sales 21,995, verified first-year-period credit capacity at least that amount, no other eligible capital ITR/transaction/adjustment. Remittance 21, 995×6.6%=1,451.67; reduction 219.95; net **1,231.72**. The customer's tax is still collected at the ordinary actual supply rate. Do not add operating ITRs or reset the annual cap next quarter. [RQ actual service rate and cumulative example](https://www.revenuquebec.ca/fr/entreprises/taxes/tpstvh-et-tvq/declaration-de-la-tps-et-de-la-tvq/methode-rapide-de-calcul-des-montants-de-la-tps-et-de-la-tvq-a-remettre/taux-applicables/).
+Assume a fully eligible elected cleaning business on the ordinary service quick route, with the election in force from the first day of its fiscal year (or the applicable registration-day branch), eligible Quebec QST-inclusive sales 21,995, verified first-year-period credit capacity at least that amount, no other eligible capital ITR/transaction/adjustment. Remittance 21, 995×6.6%=1,451.67; reduction 219.95; net **1,231.72**. The customer's tax is still collected at the ordinary actual supply rate. Do not add operating ITRs or reset the annual cap next quarter. [RQ actual service rate and cumulative example](https://www.revenuquebec.ca/fr/entreprises/taxes/tpstvh-et-tvq/declaration-de-la-tps-et-de-la-tvq/methode-rapide-de-calcul-des-montants-de-la-tps-et-de-la-tvq-a-remettre/taux-applicables/), [regulation 434R0.13 D(a)](https://www.legisquebec.gouv.qc.ca/fr/document/rc/T-0.1,%20r.%202).
 
 ```oa-check
 name: Quebec quick-method eligible cleaning-service scenario
@@ -220,6 +226,26 @@ expected:
   before_reduction: 1451.67
   permitted_reduction: 219.95
   net_quick_qst: 1231.72
+```
+
+### Short-period instalment diagnostic
+
+This reproduces the bounded diagnostic above, assuming the supplied amounts and day count satisfy the statutory definitions. It does not establish an actual registrant's duty, period or payment date.
+
+```oa-check
+name: QST prior short-period annualisation diagnostic, eligibility assumed
+inputs:
+  current_estimate: 4000
+  prior_net_tax: 200
+  covered_days: 20
+steps:
+  annualised_prior: prior_net_tax * 365 / covered_days
+  lesser_base: min(current_estimate, annualised_prior)
+  quarter: lesser_base / 4
+expected:
+  annualised_prior: 3650
+  lesser_base: 3650
+  quarter: 912.50
 ```
 
 ## When to refuse or refer
@@ -245,6 +271,8 @@ Refer disputed classification/source, materially missing invoice/use/registratio
 
 ## Sources
 
+The 14 November entries below are historical attribution carried from v3.0, not recertified read dates. The inspector reused its completed bounded research and independent 23/25 November checks. IN-203 reader text is a rewritten summary: original PDF bytes, exact-quote authentication and visual review are not established. Selected French Act/regulation consolidations do not clear later amendments or every application.
+
 | Official source actually read and scope | URL | Read on |
 |---|---|---|
 | Read for current ordinary tax rates/base and taxable-category boundary, not every exemption | https://www.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/basic-rules-for-applying-the-gsthst-and-qst/types-of-supplies/taxable-supplies/ |2026-11-14|
@@ -255,8 +283,10 @@ Refer disputed classification/source, materially missing invoice/use/registratio
 | Read for actual quick eligibility/population/exclusions; detailed French rates/40% goods criterion/annual credit and cumulative examples read separately | [official source](https://www.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/reporting-gsthst-and-qst/the-quick-method-of-accounting-for-calculating-gst-and-qst-remittances/who-can-use-the-quick-method/), [official source](https://www.revenuquebec.ca/fr/entreprises/taxes/tpstvh-et-tvq/declaration-de-la-tps-et-de-la-tvq/methode-rapide-de-calcul-des-montants-de-la-tps-et-de-la-tvq-a-remettre/taux-applicables/) |2026-11-14|
 | Read for actual printed-book ISBN/physical/excluded/bundled/electronic criteria, not every book-rebate claim | https://www.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/special-cases-gsthst-and-qst/printed-books/ |2026-11-14|
 | Read for actual ordinary meal RTI method, revenue cap and exception boundary | https://www.revenuquebec.ca/fr/entreprises/taxes/tpstvh-et-tvq/situations-particulieres-liees-a-la-tpstvh-et-a-la-tvq/frais-de-repas-et-de-representation-cti-et-rti/ |2026-11-14|
+| Reused bounded French Act art. 1, 458.0.1-458.0.3 and fiscal-quarter provisions; independent extracted-text read, selected 15 October 2026 consolidation, not a whole-Act or later-amendment clearance | https://www.legisquebec.gouv.qc.ca/fr/document/lc/T-0.1 | Independent 2026-11-23; reused 2026-11-25 |
+| Bounded regulation 434R0.8 goods numerator/period/base, 434R0.13 D(a)-(c) commencement and cumulative annual cap, 434R0.11 with 434R0.15 exception; independent extracted-text reads, selected 1 July 2026 consolidation. The 434R0.5 definition and individual route remain held | https://www.legisquebec.gouv.qc.ca/fr/document/rc/T-0.1,%20r.%202 | Independent 2026-11-23 and 2026-11-25 |
 
-Not yet confirmed: current underlying QST Act consolidation/precise articles (retrieval 403/502); every exceptional/non-resident/platform/financial/property and special-claimant rule; actual service/intangible/export/children-product classification and place; full asset/vehicle/home-office and two-year ITR exception details for each claimant; currency conversion/rounding choice; each bad-debt/return/credit-note timing condition; current prescribed interest and case-specific penalty/relief. FPZ-2034.G-V line 207 says 'for each period' versus detailed quick-rate page/IN-203 annual cumulative credit; controlling law could not be read, so a disputed claim is held and no fresh per-period cap is assumed. Actual bank export schemas remain file-specific. Official guide PDF/HTML web text was read with bounded scopes; all attempted local QST source downloads failed 403, so no offline PDF cache, full Act read or visual PDF review is claimed. No approval/name is added or removed.
+Not yet confirmed: later amendments beyond the selected French Act/regulation consolidations; every exceptional/non-resident/platform/financial/property and special-claimant rule; actual service/intangible/export/children-product classification and place; full asset/vehicle/home-office and two-year ITR exception details for each claimant; currency conversion/rounding choice and original IN-203 example provenance; each bad-debt/return/credit-note timing condition; current prescribed interest and case-specific penalty/relief; complete independently read penalty receipts rather than snippets; actual quick-method definitions/history/new-registrant rate and credit commencement; short-period instalment inputs and actual weekend/holiday/impossible-date deadlines. The annual cap has bounded regulation support, without proving a translation error in FPZ's field wording. Actual bank export schemas remain file-specific. The writer's latest direct regulation requests failed (web 502, direct DNS failure); the independent extracted-text receipt is separately identified. No offline PDF cache, raw-byte quote authentication, full Act read or visual PDF review is claimed. No approval/name is added or removed.
 
 ## Disclaimer
 
