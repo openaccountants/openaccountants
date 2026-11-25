@@ -1,11 +1,12 @@
 ---
 name: canada-transfer-pricing
 description: Use this skill whenever asked about Canada transfer pricing rules, documentation requirements, or CRA transfer pricing compliance. Trigger on phrases like "transfer pricing Canada", "Canadian TP documentation", "CRA transfer pricing", "master file Canada", "local file Canada", "CbCR Canada", "APA Canada", "Section 247", "Form T106", "contemporaneous documentation Canada", or any question about intercompany pricing for Canadian entities.
-version: 1.0
+version: 1.1
 jurisdiction: CA
 tax_year: 2025
-last_updated: 2026-07-13
-source_checked: 2026-10-17
+tax_year_notes: Historical 2025 workpaper with separately identified older and later year-beginning regimes; no single current-year or artificial cross-year period is certified.
+last_updated: 2026-11-25
+source_checked: 2026-11-21
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
@@ -18,7 +19,7 @@ domain: transfer-pricing
 
 # Canada Transfer Pricing
 
-## Canada Transfer Pricing Skill v1.0
+## Canada Transfer Pricing Skill v1.1
 
 ## Rates and thresholds
 
