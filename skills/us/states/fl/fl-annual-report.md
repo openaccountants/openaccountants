@@ -27,7 +27,7 @@ domain: formation
 
 This is a Tier 2 content skill that loads on top of `us-tax-workflow-base`. It covers the Florida Division of Corporations annual report filing requirement for LLCs and corporations registered to do business in Florida. The annual report is NOT a tax return; it is an informational filing that keeps entity status active with the state.
 
-**Tax year coverage.** This skill targets **reporting year 2025** (report due by May 1, 2025, for entities formed or qualified effective or qualified in an earlier calendar year; an entity effective on January 1, 2025 first reports in 2026).
+**Tax year coverage.** This guide targets reporting year 2025: ordinarily due May 1, 2025 for entities whose effective organization/incorporation or qualification year precedes 2025. An entity effective on January 1, 2025 first reports in 2026.
 
 **The reviewer is the customer of this output.** This skill assumes a credentialed reviewer reviews and signs off on the filing. The skill produces working papers and a brief, not the filed report itself.
 
@@ -218,7 +218,7 @@ Before delivering output, verify:
 - [ ] Correct fee amount used for entity type
 - [ ] Apply the May 1 deadline and covered-entity late charge; do not charge Chapter 617 nonprofits $400
 - [ ] Registered agent address is a Florida street address
-- [ ] Required principals' information is true/current; LLC statute requires at least one authorized manager, while corporation fields follow their own statute
+- [ ] Required principals' information is true/current; LLC statute requires at least one person with authority to manage, while corporation fields follow their own statute
 - [ ] FEIN or permitted no-number/applied-for status is recorded; do not claim an actual IRS reconciliation without source evidence
 - [ ] Confirmation number documented after filing
 - [ ] Reviewer brief includes any flags (late filing, address changes, dissolution risk)
@@ -253,4 +253,3 @@ These bounded 2025-law and operational-page reads were completed on 2026-11-22 a
 | [LLC withdrawal](https://www.flsenate.gov/Laws/Statutes/2025/605.0910) | Read in the linked authority (bounded scope): Entire operative 2025 section read in follow-up. Authority cancellation/effectiveness and process-service details read; no current-year report condition found here. Quote: “canceled when the notice becomes effective”. | 2026-11-22 |
 
 Not yet confirmed; non-usable holds: the absolute paper-filing prohibition and its statutory/operational conflict; unconditional withdrawal-year filing; actual registration, FEIN, principals, authorized signer and filing receipt; and complete current-2026-law/operational/special-case application. No actual filing or receipt has been tested. Independent changed-line source review and accountant approval of this changed version remain pending.
-
