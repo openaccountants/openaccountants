@@ -266,7 +266,7 @@ Florida has resisted the trend toward market-based sourcing for over a decade de
 **Non-usable hold:** The standalone 10%/$10 rule below was not established by the read authorities; do not use it to assess a payment penalty.
 
 - **Failure to pay penalty** — 10% of the unpaid tax. Statutory floor of $10 even if the percentage is less.
-- **Interest rate**: floating DOR interest is separate from the fixed annual estimated/tentative tax penalties. DOR lists 11% for both halves of 2026; use the applicable date-specific notice for 2025 balances, not an assumed 9%. [Source](https://floridarevenue.com/taxes/taxesfees/Pages/tax_interest_rates.aspx). [Source](https://www.flsenate.gov/Laws/Statutes/2025/220.807).
+- **Interest rate**: floating DOR interest is separate from the fixed annual estimated/tentative tax penalties. For deficiencies and late payments, TIP 26ADM-02 lists 12% for January 1–December 31, 2025 and 11% for January 1–December 31, 2026; split an interest calculation across the applicable periods rather than using an assumed 9%. These are payment-period rates, not rates selected by the return's tax year. [Source](https://floridarevenue.com/taxes/tips/Documents/TIP_26ADM-02.pdf). [Source](https://www.flsenate.gov/Laws/Statutes/2025/220.807).
 - **Fraud penalty** — 100% penalty.  _(s. 220.803, F.S.)_
 - **Negligence penalty**: 10% of the deficiency, rather than 25%. Fraud is the separate 100%-of-deficiency alternative. [Source](https://www.flsenate.gov/Laws/Statutes/2025/220.803).
 
@@ -317,7 +317,7 @@ Florida offers a modest set of corporate income tax credits, most of which are n
 
 ### 9.4 Florida Tax Credit Scholarship Program (s. 220.1875, F.S.)
 
-- **Tax Credit Scholarship Program**: the initial credit measure is 100% of an eligible contribution to an approved SFO, including the original Step Up For Students example, subject to allocation, timing and ordering. Section 220.1875 requires reduction for the federal tax benefit and section 220.13 requires a state addback. Therefore the final credit is not automatically the gross contribution or a zero balance. The corporate program allows unused-credit carryforward for no more than ten years. Apply the separate federal deduction rules, including the corporate section 162 safe harbor in Rev. Proc. 2019-12; do not promise a cost-free tax redirection. [Source](https://www.flsenate.gov/Laws/Statutes/2025/220.1875). [Source](https://www.flsenate.gov/Laws/Statutes/2025/220.13). [Source](https://floridarevenue.com/taxes/taxesfees/Pages/sfo_taxes.aspx).
+- **Tax Credit Scholarship Program**: the initial credit measure is 100% of an eligible contribution to an approved SFO, including the original Step Up For Students example, subject to allocation, timing and ordering. Section 220.1875 requires reduction for the federal tax benefit and section 220.13 requires a state addback. Therefore the final credit is not automatically the gross contribution or a zero balance. Under section 1002.395(5)(c), an approved credit unused because of insufficient tax liability carries forward for no more than ten years. Apply the separate federal deduction rules, including the corporate section 162 safe harbor in Rev. Proc. 2019-12; do not promise a cost-free tax redirection. [Source](https://www.flsenate.gov/Laws/Statutes/2025/220.1875). [Source](https://www.flsenate.gov/Laws/Statutes/2025/220.13). [Source](https://floridarevenue.com/taxes/taxesfees/Pages/sfo_taxes.aspx). [Carryforward authority](https://www.flsenate.gov/Laws/Statutes/2025/1002.395).
 
 ### 9.5 Other credits (brief list)
 
@@ -329,7 +329,7 @@ Florida offers a modest set of corporate income tax credits, most of which are n
 
 **Non-usable hold:** The full generic ordering algorithm is unverified; the scholarship-specific correction does not establish it.
 
-- **Credit ordering rule** — Credits are applied in the order specified in s. 220.02(8), F.S. Generally, credits without carryforward are taken first, followed by carryforward credits. The scholarship credit has a maximum ten-year carryforward and follows other allowable credits under its own rules; the complete generic ordering algorithm remains held. [Source](https://floridarevenue.com/taxes/taxesfees/Pages/sfo_taxes.aspx).  _(s. 220.02(8), F.S.)_
+- **Credit ordering rule** — Credits are applied in the order specified in s. 220.02(8), F.S. Generally, credits without carryforward are taken first, followed by carryforward credits. An approved scholarship credit unused because of insufficient tax liability has a maximum ten-year carryforward under section 1002.395(5)(c) and follows other allowable credits under its own rules; the complete generic ordering algorithm remains held. [Source](https://floridarevenue.com/taxes/taxesfees/Pages/sfo_taxes.aspx). [Carryforward authority](https://www.flsenate.gov/Laws/Statutes/2025/1002.395).  _(s. 220.02(8), F.S.)_
 
 ## 10. No Franchise Tax / No Separate Privilege Tax
 
@@ -408,7 +408,7 @@ For years beginning in 2020 use 4.458%; for years beginning in 2021 use 3.535%; 
 
 ### 12.10 Filing F-1120 instead of F-1120A
 
-- **F-1120A eligibility criteria**: the official short form permits Florida net income of $45,000 or less and 100% Florida business. Its modifications are limited to NOL and state-income-tax items; federal NOL deduction is added on line 2 and Florida NOL deducted on line 3. The corporation cannot be included in a consolidated return. Tentative/estimated-payment credits are permitted. Apply all official form criteria; extra blanket controlled-group/HOA/AMT exclusions remain unconfirmed. Complete both sides of the return; the official form/instruction package has four pages, not a one-page return. [Source](https://floridarevenue.com/Forms_library/current/f1120a.pdf).
+- **F-1120A eligibility criteria**: the official short form permits Florida net income of $45,000 or less and 100% Florida business. Its modifications are limited to NOL and state-income-tax items; federal NOL deduction is added on line 2 and Florida NOL deducted on line 3. The corporation cannot be included in a consolidated return. No credits other than tentative/estimated-payment credits are permitted, and line 6 tax due must be less than $2,500. Apply all official form criteria; extra blanket controlled-group/HOA/AMT exclusions remain unconfirmed. Complete both sides of the return; the official form/instruction package has four pages, not a one-page return. [Source](https://floridarevenue.com/Forms_library/current/f1120a.pdf).
 
 ### 12.11 Confusing "doing business in Florida" with "incorporated in Florida"
 
@@ -755,7 +755,7 @@ Version 1.1 correction draft, pending independent source review and approval by 
 
 ## Sources
 
-These bounded source reads were completed on 22 November 2026. The maintenance date records the correction, not fresh reads or approval. Tax-year 2025 coverage and the stated application limits are retained.
+The original bounded source reads were completed on 22 November 2026; the follow-up rows below identify only the additional passages read on 25 November. The maintenance date does not establish fresh approval. Tax-year 2025 coverage and the stated application limits are retained.
 
 | Authority | Actual read scope and short source wording | Read on |
 | --- | --- | --- |
@@ -797,6 +797,9 @@ These bounded source reads were completed on 22 November 2026. The maintenance d
 | [TIP21C01-01, redirects/revised21C01-01R](https://floridarevenue.com/taxes/tips/Documents/TIP_21C01-01.pdf) | Read in the linked authority (bounded scope): Actual2021adoption/NOL/bonus passages read; not the claimed2020rate notice. Short exact excerpt: “Adoption of 2021 Internal Revenue Code”. | 2026-11-22 |
 | [TIP22C01-01](https://floridarevenue.com/taxes/tips/Documents/TIP_22C01-01.pdf) | Read in the linked authority (bounded scope): Actual internship-credit title and opening applicability read; not a2021rate notice. Short exact excerpt: “Internship Tax Credit Program”. | 2026-11-22 |
 | [TIP22C01-02](https://floridarevenue.com/taxes/tips/Documents/TIP_22C01-02.pdf) | Read in the linked authority (bounded scope): Actual automatic-refund eligibility/timing read; not the claimed2022rate restoration notice. Short exact excerpt: “2022 Automatic Refund”. | 2026-11-22 |
+| [TIP 26ADM-02](https://floridarevenue.com/taxes/tips/Documents/TIP_26ADM-02.pdf) | Follow-up, pages 1–3: deficiency/late-payment and overpayment tables distinguished; cross-period calculation instructions read. Short wording: “01/01/25 – 12/31/25 12%”. | 2026-11-25 |
+| [2025 section 1002.395(5)(c)](https://www.flsenate.gov/Laws/Statutes/2025/1002.395) | Follow-up, subsection (5)(b)–(g): approved credit, insufficient-liability carryforward and subsequent-year ordering read. Short wording: “for a period not to exceed 10 years”. | 2026-11-25 |
+| [F-1120A R.01/24](https://floridarevenue.com/Forms_library/current/f1120a.pdf) | Follow-up, page 1 eligibility list and line 6 restriction read: “If this amount is $2,500 or greater, you cannot file Form F-1120A.” | 2026-11-25 |
 
 [Enacted P.L. 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) and [2025 Schedule A instructions](https://www.irs.gov/pub/irs-pdf/f1040sa.pdf), read on 2026-11-22 for the 2025 individual SALT limitation only: the completed 2025 federal SALT-limit read is reused for the individual-cap aside only; this does not establish the corporate deduction or scholarship credit.
 
