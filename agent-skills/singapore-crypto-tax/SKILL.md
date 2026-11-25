@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/singapore-crypto-tax"
   jurisdiction: "SG"
   tax_year: "2026"
-  last_updated: "2026-11-14"
+  last_updated: "2026-11-22"
 ---
 
-# Singapore digital-token tax v2.0
+# Singapore digital-token tax v2.1
 
 2026 income normally belongs to YA 2027. Rates labelled from YA 2024 onwards remain applicable; historical filing dates and rebates never become current merely by changing the file date.
 
@@ -22,22 +22,22 @@ metadata:
 | Field | Value |
 | --- | --- |
 | Country | Singapore (Republic of Singapore) |
-| Tax | Income Tax (no capital gains tax) |
+| Tax | Income tax; separately test GST treatment |
 | Currency | SGD (values must be converted to SGD at transaction date) |
 | Tax year | Preceding year basis , income earned in calendar 2026 normally belongs to YA 2027; confirm the actual accounting basis period |
 | Primary authority | IRAS e-Tax Guide: Income Tax Treatment of Digital Tokens (updated 30 January 2026) |
 | GST authority | IRAS e-Tax Guide: GST , Digital Payment Tokens (third edition, 30 January 2026; DPT treatment effective 1 January 2020) |
 | Tax authority | Inland Revenue Authority of Singapore (IRAS) |
 | Filing portal | myTax Portal (mytax.iras.gov.sg) |
-| Filing deadline | YA 2026 historical filing: 18 April 2026 for both; YA 2027 exact filing window not yet confirmed |
+| Individual filing deadline | 18 April 2027 for YA 2027 [IRAS due dates](https://www.iras.gov.sg/due-dates?dueYear=2027) |
 | Corporate tax rate | Flat 17% on chargeable income [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes) |
 | Top personal rate | 24% on income above S$1,000,000, from YA 2024 [IRAS](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates) |
-| Capital gains tax | **None** , Singapore does not impose capital gains tax |
-| Skill version | 2.0 |
+| Capital disposals | Generally outside income tax for individuals; test section 10L for foreign-asset disposal gains received in Singapore by an entity of a relevant group [IRAS](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr10L-&ValidDate=20261122&ViewType=Advance) |
+| Skill version | 2.1 |
 
 ### Key Principle
 
-Singapore has **no capital gains tax**. Gains from disposal of crypto assets held as **long-term investments** are capital in nature and **not taxable**. However, if crypto activities constitute a **trade or business**, profits are taxable as ordinary **income** under the Income Tax Act 1947 (ITA).
+Gains from disposals on capital account are generally outside Singapore income tax. Classify the disposal on its facts. Profits from a trade or business are ordinary income under section 10(1)(a) of the Income Tax Act 1947 (ITA). For an entity of a relevant group, separately test section 10L on gains received in Singapore from foreign-asset disposals on or after 1 January 2024, including the statutory exclusions.
 
 ### Conservative Defaults
 
@@ -48,7 +48,7 @@ Singapore has **no capital gains tax**. Gains from disposal of crypto assets hel
 | Unknown whether trading or investment | Assess against badges of trade; if unclear, treat as potentially taxable (trading) and seek IRAS ruling |
 | Unknown token classification | Obtain token terms, rights and GST characteristics; hold classification |
 | Unknown cost basis | STOP , cannot compute gain without acquisition cost |
-| Unknown residency | STOP , affects Singapore-source income determination |
+| Unknown residency or income source | Check each separately before applying the applicable rates, exemptions and treaty rules |
 | Unknown whether mining is hobby or business | Companies → presumed business; individuals → evaluate frequency and scale |
 
 
@@ -122,8 +122,8 @@ PTE applies only where the company is not claiming SUTE; SUTE requires separate 
 
 | Token Type | Definition | Examples | Tax Treatment on Disposal |
 | --- | --- | --- | --- |
-| **Payment tokens** | Tokens that function or are intended to function as a medium of exchange | Examples include BTC and ETH; classify actual rights. GST DPT is a separate, narrower definition | Capital gain (not taxable) if investment; income if trading business |
-| **Utility tokens** | Tokens that provide access to a current or prospective product/service on a DLT platform | Filecoin (FIL), BAT, service access tokens | Capital gain (not taxable) if investment; income if trading business |
+| **Payment tokens** | Tokens that function or are intended to function as a medium of exchange | Examples include BTC and ETH; classify actual rights. GST DPT is a separate, narrower definition | Apply the capital/revenue test and, for relevant group entities, the section 10L rules |
+| **Utility tokens** | Tokens that provide access to a current or prospective product/service on a DLT platform | Filecoin (FIL), BAT, service access tokens | Apply the capital/revenue test and, for relevant group entities, the section 10L rules |
 | **Security tokens** | Tokens that represent ownership rights (equity, debt, units in a fund) | Tokenised shares, tokenised bonds, fund tokens | Identify interest, dividend or other distribution and any non-resident withholding separately; capital/revenue test for disposal |
 
 IRAS classifies digital tokens into three categories for tax purposes (per the e-Tax Guide, January 2026):
@@ -134,17 +134,16 @@ IRAS classifies digital tokens into three categories for tax purposes (per the e
 
 | Event | Taxable? | Condition |
 | --- | --- | --- |
-| Disposal of crypto investment (capital gain) | **No** | Held as long-term investment; no capital gains tax in Singapore |
+| Disposal of crypto investment (capital gain) | Generally outside income tax | Establish capital treatment on the facts and check section 10L if the seller is an entity of a relevant group |
 | Disposal of crypto trading stock (revenue gain) | **Yes** | Part of a trading business; taxed as income |
 | Receiving crypto as payment for goods/services | **Yes** | Taxable contractual value when income accrues; token-count versus fiat-value contract matters |
 | Mining rewards (company) | **Yes, on disposal** | Mining business disposal profits, not merely successfully mining and holding a token |
 | Mining rewards (individual, habitual) | **Yes** | If habitual and systematic → vocation income |
 | Mining rewards (individual, hobby) | **No** | Prima facie hobby; capital gain on disposal not taxable |
-| Staking / DeFi yields (business) | **Yes** | Business income at FMV when received |
-| Staking / DeFi yields | HOLD | Occasional or passive does not establish capital treatment; see the unresolved receipt analysis below |
-| Airdrop (no service provided) | **No** | Windfall gain; not taxable; subsequent disposal requires separate capital/revenue and cost analysis |
-| Airdrop (in exchange for a service) | **Yes** | Income at FMV when received |
-| Crypto-to-crypto swap (investor) | **No** | Capital transaction; no CGT |
+| Staking or DeFi yields | Depends on the facts | Establish the character, source, entitlement date and SGD value of each reward. Refer unresolved protocol-specific treatment. |
+| Airdrop with nothing expected in return | **No** | A genuine windfall on receipt; later disposal requires separate capital/revenue and cost analysis |
+| Airdrop in exchange for goods or services | **Yes** | Apply the ordinary rules for accrual and valuation of the consideration |
+| Crypto-to-crypto swap on capital account | Generally outside income tax | Establish capital treatment and check section 10L for relevant group entities |
 | Crypto-to-crypto swap (trader) | **Yes** | Revenue transaction; gain/loss is taxable |
 | Transfer between own wallets | **No** | No change in beneficial ownership |
 
@@ -188,7 +187,7 @@ IRAS classifies digital tokens into three categories for tax purposes (per the e
 
 | Scenario | Tax Treatment |
 | --- | --- |
-| Company mining | Business income , taxed at point of **disposal**, not at mining receipt. Company can claim mining expenses (electricity, hardware, etc.) as deductions. |
+| Company mining | A mining business is taxed on profits when it disposes of its mined tokens. Deduct eligible operating costs from business commencement and consider capital allowances for equipment. |
 | Individual mining (habitual, systematic) | Vocation income , profits from sale of mined tokens are taxable |
 | Individual mining (hobby) | Not taxable , gains on sale are capital gains (no CGT) |
 
@@ -217,12 +216,12 @@ Staking rewards, DeFi lending interest, liquidity provision and yield farming re
 | Scenario | Treatment |
 | --- | --- |
 | Purchase of NFT | Acquisition at cost , cost basis for future disposal |
-| Sale of NFT (investor) | Capital gain , not taxable (no CGT) |
+| Sale of NFT on capital account | Generally outside income tax; check section 10L for relevant group entities |
 | Sale of NFT (trader/business) | Taxable business income |
 | Creation and sale of NFT (artist/creator) | Classify the actual services, vocation and transaction; occasional creation does not itself establish tax-free hobby proceeds |
-| NFT → NFT swap (investor) | Capital transaction , not taxable |
+| NFT → NFT swap on capital account | Generally outside income tax; check section 10L for relevant group entities |
 | NFT → NFT swap (trader) | Revenue transaction , taxable |
-| NFT royalties | Income when received; taxable if part of business or vocation |
+| NFT royalties | Determine whether the payment is a royalty for use of IP or another type of income. Singapore-source royalties of an individual are taxable in the year they are due and payable. Check the applicable source and withholding rules. [IRAS royalty guidance](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/what-is-taxable-what-is-not/royalty) |
 | GST on NFT sales | If NFT is not a digital payment token → standard GST rules may apply (9% from 1 January 2024) |
 
 
@@ -237,8 +236,8 @@ Staking rewards, DeFi lending interest, liquidity provision and yield farming re
 | --- | --- |
 | Trading losses | Can offset against other income in the same YA (Section 37 ITA) |
 | Carry-forward of unabsorbed losses | Unabsorbed trade losses: verify the taxpayer-specific carry-forward conditions; corporate shareholding and capital-allowance same-business tests are not universal individual tests |
-| Carry-back | For companies: ordinary one preceding YA, S$100,000 aggregate qualifying current CA/trade losses, substantial-shareholding and same-business conditions. The three-YA enhancement applied only to YAs 2020/2021; individual business relief requires its own official analysis  [IRAS carry-back](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-reliefs/loss-carry-back-relief) |
-| Capital losses | Not deductible , there is no capital gains tax regime to offset against |
+| Carry-back | Elect to carry back up to S$100,000 in eligible current-year unabsorbed capital allowances and trade losses combined to the immediately preceding YA. The same-business test applies to capital allowances. Companies also apply the substantial-shareholding test. The three-YA enhancement applied only to YAs 2020 and 2021. [IRAS company rules](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-reliefs/loss-carry-back-relief) and [individual business rules](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/business-expenses-and-deductions/business-making-losses-and-unabsorbed-capital-allowances) |
+| Capital losses | Generally outside ordinary trade loss relief; test the separate foreign loss rules for an entity within section 10L |
 | Investment losses (individual) | Not deductible , capital in nature |
 
 
@@ -249,7 +248,7 @@ Staking rewards, DeFi lending interest, liquidity provision and yield farming re
 
 | Rule | Description |
 | --- | --- |
-| General anti-avoidance (Section 33 ITA) | IRAS can disregard or vary any arrangement that has the purpose of tax avoidance |
+| General anti-avoidance (section 33 ITA) | The Comptroller must counteract the tax advantage if the statutory purpose or effect test is met. Section 33(7) excludes bona fide commercial arrangements with no main purpose of avoiding or reducing tax. |
 | Transfer pricing (Section 34D ITA) | Arm's length standard applies to related-party crypto transactions |
 | Substance over form | IRAS may recharacterise transactions based on economic substance |
 | Recharacterisation of capital as revenue | If IRAS determines activity is trading despite taxpayer's claim of investment, gains become taxable |
@@ -261,7 +260,7 @@ Staking rewards, DeFi lending interest, liquidity provision and yield farming re
 
 ### Example 1 -- Long-Term Investor (Not Taxable)
 
-**Input:** Singapore tax resident individual. Employed full-time as a software engineer. Bought 2 BTC at S$40,000 each in 2022. Sold 2 BTC at S$75,000 each in 2026. Two transactions, investment facts documented. Used personal savings.
+**Input:** Singapore tax resident individual. Employed full-time as a software engineer. Bought 2 BTC at S$40,000 each on 1 July 2022. Sold 2 BTC at S$75,000 each on 1 July 2026. Two transactions, investment facts documented. Used personal savings.
 
 **Analysis:**
 ```
@@ -270,14 +269,14 @@ Cost basis:         2 × S$40,000 = S$80,000
 Gain:               S$70,000
 
 Badges of trade assessment:
-  Frequency:        Low (1 buy, 1 sell over 2 years)
-  Holding period:   Long (~2 years)
+  Frequency:        Low (1 purchase and 1 sale over 4 years)
+  Holding period:   Long (4 years)
   Motive:           Long-term appreciation
   Financing:        Own savings
   Organisation:     Casual, alongside employment
 
 Classification:     INVESTMENT (capital gain)
-Tax:                NOT TAXABLE , no capital gains tax in Singapore
+Tax:                S$0 on this individual's capital gain
 ```
 
 **Reporting:** For these assumed investment facts the disposal gain is capital; retain the classification evidence and answer any IRAS request. This does not waive the individual’s unrelated return obligation.
@@ -307,10 +306,10 @@ Tax computation:    Chargeable income S$80,000
   Next S$40,000 @ 7%     = S$2,800
   Total tax:              = S$3,350
   No YA 2027 rebate established:       S$0
-  Gross tax before individual reliefs/rebates: S$3,350
+  Gross tax before rebates or credits: S$3,350
 ```
 
-**Reporting:** Declare trade/business income on Form B for YA 2027, using the announced filing window. Here S$80,000 is assumed chargeable income after all allowable adjustments; an actual trader’s earned-income/CPF and other relief facts must be computed separately.
+**Reporting:** Declare trade income in the self-employment section of the YA 2027 return by 18 April 2027. This example assumes S$80,000 of chargeable income after allowable adjustments and reliefs. [IRAS due dates](https://www.iras.gov.sg/due-dates?dueYear=2027)
 
 ### Example 3 -- Company Mining Operation
 
@@ -328,7 +327,7 @@ Corporate tax (17%):
   Total tax:        S$9,775
 ```
 
-**Reporting:** For a 31 December 2026 FYE, the ordinary ECI deadline is within three months unless waived; confirm the YA 2027 corporate return filing timetable. S$9,775 is gross PTE tax, not a promise of final tax: any YA-specific credit/rebate must be verified, not carried from YA 2026.
+**Reporting:** For a 31 December 2026 FYE, file ECI by 31 March 2027 unless waived. File the YA 2027 company return by 30 November 2027. The S$9,775 calculation assumes PTE eligibility and excludes any YA-specific credit or rebate. [IRAS due dates](https://www.iras.gov.sg/due-dates?dueYear=2027)
 
 
 ```oa-check
@@ -396,8 +395,9 @@ IRAS applies the common law "badges of trade" to distinguish trading (taxable) f
 
 | Form | Who Files | Deadline |
 | --- | --- | --- |
-| Form B (individuals with self-employment / business income) | Individuals with crypto trading business income | YA 2026: 18 April 2026 for both; confirm YA 2027 window |
-| Form B1 (individuals with employment income only) | Individuals with crypto employment payment only | YA 2026: 18 April 2026 for both; confirm YA 2027 window |
+| Form B | Self-employed individuals when this form is issued, including people with a crypto trading business | 18 April 2027 |
+| Form B1 | Resident individuals when this form is issued; include applicable employment and other taxable income | 18 April 2027 |
+| Form M | Non-resident individuals when this form is issued | 18 April 2027 |
 | Form C-S / C-S (Lite) / Form C (companies) | Companies with crypto business income | 30 November of the relevant YA; confirm first-account and waiver facts [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/basic-guide-to-corporate-income-tax-for-companies) |
 | ECI (Estimated Chargeable Income) | Companies | Within 3 months of FYE unless waived; ordinary waiver requires revenue ≤S$5m and nil pre-exemption ECI [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/estimated-chargeable-income-%28eci%29-filing) |
 
@@ -409,8 +409,8 @@ IRAS applies the common law "badges of trade" to distinguish trading (taxable) f
 | --- | --- |
 | Exchange of digital payment tokens for fiat (or vice versa) | **Exempt supply** (no GST) |
 | Exchange of digital payment tokens for other digital payment tokens | **Exempt supply** |
-| Use of digital payment tokens to pay for goods/services | GST on the goods/services; **not** on the token itself |
-| ICO (issuance of payment tokens) | **Exempt supply** |
+| Use of qualifying digital payment tokens to pay for other goods/services | Disregard the token for GST. Apply the ordinary GST rules to the underlying goods or services. |
+| ICO that issues qualifying digital payment tokens in exchange for currency or other qualifying digital payment tokens | Exempt supply. Apply the ordinary GST rules to token types or other consideration outside this exemption. |
 | Supply of utility tokens | Depends on underlying supply , may be standard-rated (9%) or exempt  [IRAS GST guide](https://www.iras.gov.sg/docs/default-source/e-tax/e-tax-guide_gst_digital-payment-tokens.pdf) |
 | Mining services to identifiable recipient for consideration | Taxable services; 9% if standard-rated, with actual zero-rating conditions tested  [IRAS GST guide](https://www.iras.gov.sg/docs/default-source/e-tax/e-tax-guide_gst_digital-payment-tokens.pdf) |
 | NFT sale | Not a digital payment token , standard GST rules apply |
@@ -420,7 +420,8 @@ IRAS applies the common law "badges of trade" to distinguish trading (taxable) f
 ### 7.4 No FBAR Equivalent
 
 Do not import the US FBAR form into Singapore. The absence of one similarly named form does not establish that the client has no tax, automatic-exchange or regulatory reporting duties:
-- Businesses holding significant crypto may have reporting obligations under MAS (Monetary Authority of Singapore) regulations
+- Under the Crypto-Asset Reporting Framework, reporting Singaporean crypto-asset service providers register with IRAS and report relevant transactions annually. Check the provider and transaction definitions. [IRAS reporting framework](https://www.iras.gov.sg/taxes/international-tax/crypto-asset-reporting-framework-%28carf%29/carf-overview-and-latest-developments)
+- Check the regulated service, where it is provided and where customers are located for Monetary Authority of Singapore licensing and reporting. [MAS licensing scope](https://www.mas.gov.sg/news/media-releases/2025/mas-clarifies-regulatory-regime-for-digital-token-service-providers)
 - Licensed payment service providers under the Payment Services Act 2019 have AML/CFT reporting requirements
 
 
@@ -452,15 +453,19 @@ Before finalising any Singapore crypto tax computation:
 | Read for headline rate, PTE and SUTE conditions, current YA 2026 rebate and grant; no YA 2027 rebate was established. | https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes | 2026-11-14 |
 | Read for ordinary one-YA carry-back, aggregate ceiling, conditions, historic YA 2020/2021 exception and Form C election. | https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-reliefs/loss-carry-back-relief | 2026-11-14 |
 | Read for current DPT tests, use as consideration, exempt exchange/loan and unchanged underlying supply. | https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/specific-business-sectors/digital-payment-tokens | 2026-11-14 |
-| Read for Form B/B1 role and historical YA 2026 paper deadline, same 18 April date. | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/filing-a-paper-income-tax-return | 2026-11-14 |
-
+| Read for paper Forms B, B1 and M and the historical YA 2026 deadline of 18 April. | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/filing-a-paper-income-tax-return | 2026-11-14 |
 | Read for current 9% standard GST rate and historical rate periods. | https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/basics-of-gst/current-gst-rates | 2026-11-14 |
-
 | Read for ordinary three-month ECI requirement and revenue/nil-ECI waiver, independent of final return. | https://www.iras.gov.sg/taxes/corporate-income-tax/estimated-chargeable-income-%28eci%29-filing | 2026-11-14 |
 | Read for annual 30 November corporate return and first-account/YA allocation, distinct from ECI. | https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/basic-guide-to-corporate-income-tax-for-companies | 2026-11-14 |
+| YA 2027 individual and corporate filing and December-year-end ECI dates. | https://www.iras.gov.sg/due-dates?dueYear=2027 | 2026-11-24 |
+| Section 10L and foreign asset disposal gains received in Singapore. | https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr10L-&ValidDate=20261122&ViewType=Advance | 2026-11-24 |
+| Same-business condition, carry-back limit and qualifying individual businesses. | https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/business-expenses-and-deductions/business-making-losses-and-unabsorbed-capital-allowances | 2026-11-24 |
+| Royalty income, Singapore source and due-and-payable timing. | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/what-is-taxable-what-is-not/royalty | 2026-11-24 |
+| CARF definitions and registration, reporting and exchange obligations. | https://www.iras.gov.sg/taxes/international-tax/crypto-asset-reporting-framework-%28carf%29/carf-overview-and-latest-developments | 2026-11-24 |
+| June 2025 licensing clarification for providers serving offshore and local customers. | https://www.mas.gov.sg/news/media-releases/2025/mas-clarifies-regulatory-regime-for-digital-token-service-providers | 2026-11-24 |
 
-Not yet confirmed: protocol-specific staking, DeFi lending interest, liquidity/yield-farming receipt/source/timing; the old passive/occasional tax-free assertions are not usable guidance. Specific identification and zero-cost airdrop/fork allocations, blanket incidental-cost inclusions and inventory write-down deductions, detailed individual loss relief, current MAS licensing/reporting, YA 2027 individual filing window and individual/corporate rebates and the old broad no-FBAR guarantee require their own official analysis. No final withholding decision is made from a dividend-like label. No statutory text was successfully reopened; the source scopes above refer to authority guidance.
+Not yet confirmed: protocol-specific staking, DeFi lending, liquidity provision and yield-farming character, source and timing. Check the facts and authority before using specific identification or a zero allocation to airdrop or fork tokens, including incidental costs, deducting inventory write-downs or applying license, reporting or withholding rules to a particular client. IRAS publishes the YA 2027 filing due date. Check the relevant filing notice for the portal opening and verify any YA 2027 rebate before applying it.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `singapore-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/singapore-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `singapore-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/singapore-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -1,10 +1,10 @@
 ---
 name: bd-einvoice
 description: "Bangladesh 2026 prescribed VAT invoice evidence and EFD/SDC scope triage; distinguish Mushak documents from income-tax e-Return and retain bank remittance evidence separately."
-version: 1.1
+version: 1.2
 jurisdiction: BD
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 category: international
 depends_on:
   - income-tax-workflow-base
@@ -13,7 +13,7 @@ domain: e-invoicing
 type: filing-howto
 ---
 
-# Bangladesh VAT invoices and fiscal-device scope v1.1
+# Bangladesh VAT invoices and fiscal-device scope v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -36,7 +36,7 @@ Registered/enlisted businesses preparing invoice evidence and small operators ch
 4. Link VAT-6.7 credit and VAT-6.8 debit notes to the original invoice and section 52's contents; incomplete/defective evidence does not support credit under Rule 40(3). VAT-6.4 records contractual manufacturing, with a separate VAT-6.3 for the manufacturing fee; VAT-6.5 covers branch/warehouse transfers. VAT-6.6 is the withholding certificate; VAT-6.10 is purchase/sale information under Rule 42, not that certificate. Refer substantive transfer/VDS liabilities to a specialist, while retaining these correct document jobs (https://bdlaws.minlaw.gov.bd/act-1106/section-42348.html; Rules 40-42 above).
 5. Check the actual current EFD/SDC category/location notification before deciding whether a fiscal device or sales-data controller is required. Keep this device check separate from the confirmed ERP records above. Do not tell a notified in-scope business to skip it, or claim a universal device mandate without the notification.
 6. A non-VAT operator must keep a proper commercial invoice and tax records appropriate to its activity. Check registration independently; an ordinary commercial invoice must not impersonate a VAT invoice or claim a BIN that does not exist. Foreign receipts also need remittance/encashment evidence; a certificate does not replace the applicable invoice.
-7. Income-tax filing uses the NBR e-Return workflow, separate from fiscal invoicing. Current Rule 47, replaced by SRO 125 item 11 effective 1 July 2026, uses VAT-9.1 for registered manufacturers/service providers, VAT-9.1.1 for registered traders and VAT-9.2 for enlisted turnover-tax persons. The current [VAT](bangladesh-vat.md) skill owns periods/deadlines and the later statute/form-period inconsistency. Retain invoices, ERP/device records as applicable, adjustments and filing acknowledgements.
+7. Income-tax filing uses the NBR e-Return workflow, separate from fiscal invoicing. Rule 47(1), replaced by SRO 125 item 11 effective 1 July 2026, prescribes VAT-9.1 for registered manufacturers and service providers, VAT-9.1.1 for registered traders and VAT-9.2 for enlisted turnover-tax persons. Rule 47(2)–(3) still governs submission and signature and verification where paper filing is permitted. The current [VAT](bangladesh-vat.md) skill owns periods/deadlines and the later statute/form-period inconsistency. Retain invoices, ERP/device records as applicable, adjustments and filing acknowledgements.
 
 ## Worked cases
 
@@ -82,8 +82,8 @@ Refer missing BIN/registration duty, unresolved rate/supply, EFD/SDC scope, nons
 | Source and sections actually read | Official URL | Read on |
 |---|---|---|
 | Read for VAT Act section 51 invoice obligation | https://bdlaws.minlaw.gov.bd/act-1106/section-42347.html | 2026-11-14 |
-| Read for VAT Rules 40-42 invoice particulars, registers/ERP, copies and document jobs; old Rule 47 read with its 2026 replacement | https://nbr.gov.bd/uploads/rules/Authentic_English_Text_VAT_Rules_2016.pdf | 2026-11-14 |
-| Read for SRO 125 items 10-11: ERP, electronic/hard-copy/MFS invoice amendments, current return populations and commencement | https://nbr.gov.bd/uploads/sros/VAT_SRO-125.pdf | 2026-11-14 |
+| Read for VAT Rules 40-42 invoice particulars, registers/ERP, copies and document jobs; continuing Rule 47(2)–(3) read with the 2026 substitution of Rule 47(1) | https://nbr.gov.bd/uploads/rules/Authentic_English_Text_VAT_Rules_2016.pdf | 2026-11-24 |
+| Read for SRO 125 items 10–11: ERP, electronic/hard-copy/MFS invoice amendments, Rule 47(1) return populations and commencement | https://nbr.gov.bd/uploads/sros/VAT_SRO-125.pdf | 2026-11-24 |
 | Read for VAT Act section 52 credit/debit notes | https://bdlaws.minlaw.gov.bd/act-1106/section-42348.html | 2026-11-14 |
 | Read for VAT Act section 46 documentary and other input-credit conditions | https://bdlaws.minlaw.gov.bd/act-1106/section-42342.html | 2026-11-14 |
 

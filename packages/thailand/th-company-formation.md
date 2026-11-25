@@ -3,16 +3,16 @@ name: th-company-formation
 description: "Thai private limited company formation for 2026: promoters, subscription and capital calls, DBD Biz Regist, annual accounts, foreign-business capital screens and boundaries for branches, partnerships and work permits."
 jurisdiction: TH
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
 type: filing-howto
 category: formation
-version: 1.0
+version: 1.1
 ---
 
-# Thailand company formation and entity choice v1.0
+# Thailand company formation and entity choice v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -29,8 +29,8 @@ A private company has at least 2 promoters. This is the amended Civil and Commer
 | Promoters | At least 2; each subscribes at least 1 share | 2026 | [DBD one-day formation procedure; CCC §1097 amended by Act 23 §6](https://www.dbd.go.th/storage/manual/e41e04f0-d24b-4a21-a5aa-0b4287305aea.pdf) |
 | Share denomination | At least THB 5 per share | 2026 | [DBD formation procedure (CCC capital/subscription rules)](https://www.dbd.go.th/storage/manual/e41e04f0-d24b-4a21-a5aa-0b4287305aea.pdf) |
 | Initial share payment | At least 25% of each share value called by the directors; full subscription and the statutory meeting precede filing | 2026 | [DBD formation procedure](https://www.dbd.go.th/storage/manual/e41e04f0-d24b-4a21-a5aa-0b4287305aea.pdf) |
-| Registration after statutory meeting | Submit within 3 months after the meeting; do not confuse this with the memorandum lifetime | 2026 | [DBD formation procedure](https://www.dbd.go.th/storage/manual/e41e04f0-d24b-4a21-a5aa-0b4287305aea.pdf) |
-| Memorandum lifetime | Lapses if company registration is not completed within 3 years of memorandum registration | 2026 | [Act 23 §7, replacing CCC §1099 (in words on the page)](https://www.dbd.go.th/data-storage/attachment/010fc4fa38d25ea8b52a5f446.pdf) |
+| Registration after statutory meeting | Complete registration within 3 months of the meeting. Submit early enough to complete processing within that period | 2026 | [Civil and Commercial Code §1112](https://www.dbd.go.th/data-storage/attachment/08ddad103b31082ad6b329e9a9.pdf) |
+| Memorandum lifetime | Lapses if company registration is not completed within 3 years of memorandum registration | 2026 | [Act 23 §7, replacing CCC §1099](https://www.dbd.go.th/en/data-storage/attachment/c100ba1f8a24003110b338e98a.pdf?v=20261103153752) |
 | Foreign-business statutory capital floor | At least THB 2,000,000, subject to the Ministerial Regulation; listed business requiring permission has a floor of THB 3,000,000 for each business, subject to the §14 final-paragraph exception for qualifying revenue from an existing Thai business; not a universal complete funding budget | 2026 | [Foreign Business Act §14 (in words on the page)](https://www.boi.go.th/upload/Foreign%20Business%20Act_5dd766122ff27.pdf) |
 | New-company registration channel | Digital-only new limited-company and partnership registration from 1 July 2026 | 2026 | [DBD notice 356 of 27 August 2026, rendered final paragraph](https://www.dbd.go.th/news/35627082569) |
 | Annual accounts approval | Within 4 months after the statement date for limited/public companies | 2026 | [DBD statutory compliance material, PDF page 44](https://www.dbd.go.th/data-storage/attachment/010fc4fa38d25ea8b52a5f446.pdf) |
@@ -48,8 +48,8 @@ Under [Foreign Business Act §§4 and 8-14](https://www.boi.go.th/upload/Foreign
 
 1. Record the business activity, owners, directors, registered office, proposed names, capital structure and who will sign. Obtain the genuine ownership and funding evidence; a nominal Thai shareholding is not a substitute for the actual legal test.
 2. Reserve the name and prepare the memorandum, with the name, office, objects, capital/share structure and promoters. Arrange subscription of all shares. The DBD one-day procedure permits the preparatory steps to be completed together; it is not a promise that every foreign-business permission will finish the same day.
-3. Hold the statutory meeting, deal with the articles, appointments and establishment matters, appoint the directors and auditor as applicable, and hand the business over to the directors. Directors call for the initial share payments. Verify the actual payments and keep the evidence for the registration review.
-4. Use DBD Biz Regist via the DBD website's registration route. Prepare the required documents, verify the authorised signers' identities through the offered ordinary process, sign the application, pay the portal's actual assessed registration fee, and retain the application, receipt, registrar's result and company certificate. This source check did not create an account or test a signed-in registration. The older one-day leaflet's walk-in/e-Registration channels, quoted fee discounts and service time are historical, superseded for current new-company channels by the rendered 2026 DBD notice.
+3. Hold the statutory meeting, deal with the articles, appointments and establishment matters, appoint the directors and auditor as applicable, and hand the business over to the directors. Directors call for the initial share payments. Verify the actual payments and keep the evidence for the registration review. If registration is incomplete after 3 months from the statutory meeting, §1112 treats the company as unformed and requires a full refund of share subscription money.
+4. Use DBD Biz Regist via the DBD website's registration route. Prepare the required documents, verify the authorised signers' identities through the offered ordinary process, sign the application, pay the portal's actual assessed registration fee, and retain the application, receipt, registrar's result and company certificate. This source check did not create an account or test a signed-in registration. The older leaflet describes historical channels and fees. DBD Biz Regist became the sole channel for new limited-company and partnership registrations on 1 July 2026. From 1 November 2026 it covers all request types for those entities, including amendments, under [the later DBD notice](https://www.dbd.go.th/news/37630092569).
 5. After registration, establish the accounting records, shareholder register, bank mandate, tax and VAT position, employer registration and any separate activity licences. Load the [corporate tax](th-corporate-income-tax.md), [VAT](thailand-vat.md) and [payroll](th-payroll-social.md) methods for those duties. Do not assume company registration automatically completes them.
 
 ## Deadlines and filing
@@ -114,8 +114,11 @@ expected:
 |---|---|---|
 | DBD one-day private-company procedure (Read for the complete rendered single-page infographic: promoters, subscription, meeting, payment, filing sequence and historical channel information) | https://www.dbd.go.th/storage/manual/e41e04f0-d24b-4a21-a5aa-0b4287305aea.pdf | 2026-11-16 |
 | DBD training pack including Gazette facsimile of Act 23 B.E. 2565 (Read for PDF pages 114-116 for commencement and amended CCC §§1097/1099; PDF page 44 for annual company accounts approval/filing) | https://www.dbd.go.th/data-storage/attachment/010fc4fa38d25ea8b52a5f446.pdf | 2026-11-16 |
+| Civil and Commercial Code (read for §1112 on completion of registration within 3 months and repayment if it lapses) | https://www.dbd.go.th/data-storage/attachment/08ddad103b31082ad6b329e9a9.pdf | 2026-11-24 |
+| Civil and Commercial Code Amendment Act No. 23 B.E. 2565, Royal Gazette (read for §§2, 6 and 7 on commencement, promoters and memorandum validity) | https://www.dbd.go.th/en/data-storage/attachment/c100ba1f8a24003110b338e98a.pdf?v=20261103153752 | 2026-11-24 |
+| DBD notice 376 of 30 September 2026 (read for the 1 November expansion to all request types for limited companies and partnerships) | https://www.dbd.go.th/news/37630092569 | 2026-11-24 |
 | DBD notice 356 of 27 August 2026 (Read for whole rendered article, particularly the final new-registration paragraph; ordinary raw response contained no operative article text) | https://www.dbd.go.th/news/35627082569 | 2026-11-16 |
 | Accounting Act B.E. 2543, official DBD translation published by TFAC (Read for §§8-14 for persons, accounting commencement, closure, audited financial statements, filing and records; not the complete Act) | https://tfac.or.th/media/573076803015544832/2026/09/wSPof648jJbpV1Q0MyqkTYEx.pdf | 2026-11-16 |
 | Foreign Business Act B.E. 2542, BOI-hosted DBD translation (Read for §§4 and 8-14 for foreigner definition, lists, treaty/BOI certificates, precedence and capital-floor conditions; ordinary web recovery, not the blocked raw response) | https://www.boi.go.th/upload/Foreign%20Business%20Act_5dd766122ff27.pdf | 2026-11-16 |
 
-Not yet confirmed: the detailed minimum-capital/remittance regulation under FBA §14, work-permit capital thresholds including the former THB 2,000,000/THB 1,000,000 claims, a universal Thai-owned minimum capital or THB 50,000 practice floor, the old 2-4 week timeline, current assessed registration fees, all amendment-registration channel changes after the new-company notice, detailed public-company/partnership/representative-office procedures and sanctions. The old January 2026 mandatory-new-registration date is replaced by the opened DBD July date.
+Not yet confirmed: the detailed minimum-capital/remittance regulation under FBA §14, work-permit capital thresholds including the former THB 2,000,000/THB 1,000,000 claims, a universal Thai-owned minimum capital or THB 50,000 practice floor, the old 2-4 week timeline, current assessed registration fees, detailed public-company/partnership/representative-office procedures and sanctions. The old January 2026 mandatory-new-registration date is replaced by the opened DBD July date.

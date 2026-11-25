@@ -1,10 +1,10 @@
 ---
 name: india-crypto-tax
-description: Use this skill whenever asked about India cryptocurrency or virtual digital asset (VDA) taxation. Trigger on phrases like "crypto tax India", "Bitcoin India tax", "VDA tax", "Section 115BBH", "194S TDS crypto", "crypto TDS India", "virtual digital asset India", "crypto income India", "NFT tax India", "mining tax India", "staking tax India", "WazirX tax", "CoinDCX tax", "crypto loss India", "Schedule VDA", "ITR crypto", "30% crypto tax India", "1% TDS crypto", or any question about the income tax, TDS, or reporting treatment of cryptocurrency, tokens, NFTs, or virtual digital assets under Indian tax law. Covers Finance Act 2022 amendments (Sections 115BBH, 194S, 2(47A)), the no-loss-offset rule, ITR Schedule VDA, and advance tax obligations. ALWAYS read this skill before touching any India crypto work.
-version: 1.1
+description: Use this skill whenever asked about India cryptocurrency or virtual digital asset (VDA) taxation. Trigger on phrases like "crypto tax India", "Bitcoin India tax", "VDA tax", "Section 115BBH", "194S TDS crypto", "crypto TDS India", "virtual digital asset India", "crypto income India", "NFT tax India", "mining tax India", "staking tax India", "WazirX tax", "CoinDCX tax", "crypto loss India", "Schedule VDA", "ITR crypto", "30% crypto tax India", "1% TDS crypto", or any question about the income tax, TDS, or reporting treatment of cryptocurrency, tokens, NFTs, or virtual digital assets under Indian tax law. Covers Income-tax Act, 2025 sections 2(111), 194 and 393, the no-loss-offset rule, return reporting and advance tax for tax year 2026-27. ALWAYS read this skill before touching any India crypto work.
+version: 1.2
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-11-15
+last_updated: 2026-11-22
 depends_on:
   - india-income-tax
 category: crypto
@@ -45,10 +45,10 @@ Current Tax Year 2026-27 primary provisions are confirmed below. Entity provisio
 | (a) | Any information, code, number or token, not being Indian currency or foreign currency, generated through cryptographic means or otherwise, that gives a digital representation of value, exchanged with or without consideration, with the promise or representation of having inherent value, or that functions as a store of value or a unit of account, and can be transferred, stored or traded electronically; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | (b) | A non-fungible token or any other token of similar nature, by whatever name called; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | (c) | Any other digital asset the Central Government notifies; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| (d) | Any crypto-asset that relies on a cryptographically secured distributed ledger or similar technology, whether or not it falls in (a), (b) or (c). This clause is new in the 2025 Act text; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| (d) | Any digital representation of value that relies on a cryptographically secured distributed ledger or similar technology to validate and secure transactions, whether or not it falls in (a), (b) or (c); https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Exclusions | Indian currency and foreign currency are outside clause (a). The Central Government may exclude any digital asset by notification; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
-The definition is in the Act at https://egazette.gov.in/WriteReadData/2025/265620.pdf and the Act text prints "(not being Indian currency or foreign currency)" and "the Central Government may, by notification, exclude any digital asset from this definition". It does not itself name the Digital Rupee: check for an exclusion notification before treating any central bank digital currency as outside the regime.
+The definition is in the Act at https://egazette.gov.in/WriteReadData/2025/265620.pdf and the Act text prints "(not being Indian currency or foreign currency)" and "the Central Government may, by notification, exclude any digital asset from this definition". The Reserve Bank of India confirms that the e₹ is a digital rupee banknote and legal tender. The Income Tax Department treats central bank digital currencies as outside the VDA definition. Check the currency status of any unfamiliar token. [RBI Digital Rupee FAQ, Q18](https://www.rbi.org.in/commonman/Upload/English/FAQs/PDFs/DigitalRupee09012025.pdf) · [Department VDA guidance](https://wmstatic-prd.incometaxindia.gov.in/documents/20117/42998/Taxation-of-Virtual-Digital-Asset-VDA_2026-01-06_06-43-57_cfe04a_en.pdf/153706c8-7b5c-77d4-fc56-624c50ece1b0?download=true&t=1774007412959&version=1.0).
 
 ### Conservative defaults
 
@@ -81,7 +81,7 @@ The definition is in the Act at https://egazette.gov.in/WriteReadData/2025/26562
 7. Test gifts and free receipts against section 92(2)(m) and the relative and other exclusions in section 92(3). https://egazette.gov.in/WriteReadData/2025/265620.pdf
 8. Collect the TDS deducted under section 393(1) Table serial 8(vi) and check it against the exchange statements; credit it under section 390(5). If the client bought VDAs from other people (peer to peer), check whether the client had to deduct TDS, apply rule 218(3)/219(5)30 day month-end Form 141 rule and verify the actual Form 141 Schedule D/individual-HUF caption against payer category before final filing, and whether the section 393(4) serial 12 limits applied. https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf
 9. Check advance tax paid against sections 404 and 408, and review current 424/425 interest if short; ordinary 425(2)/(3)construction remains held in in-advance-tax, so do not finalize that amount from the conditional table below. https://egazette.gov.in/WriteReadData/2025/265620.pdf
-10. File the return in the form rule 164 requires (ITR-2 or ITR-3 for individuals and HUFs, never ITR-1 or ITR-4) by the section 263(1)(c) due date. https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf and https://egazette.gov.in/WriteReadData/2026/271439.pdf
+10. File the return in the form rule 164 requires (ITR-2 or ITR-3 for an individual or HUF with income from a VDA transfer taxed under section 194) by the section 263(1)(c) due date. https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf and https://egazette.gov.in/WriteReadData/2026/271439.pdf
 
 ### Section 2: Classification Rules
 
@@ -217,7 +217,7 @@ Everything else below is a classification question for an accountant. Do not sta
 
 ### Section 6: NFT Treatment
 
-An NFT is a VDA under section 2(111)(b). Clause (i) of the section says "non-fungible token" means "such digital asset as the Central Government may, by notification, specify". Check whether a notification covers the token before relying on clause (b) alone; clause (d) may still catch it if it runs on a distributed ledger.
+Section 2(111)(b) covers specified NFTs. Notification 75/2022 specifies tokens qualifying under the predecessor of clause (a), except where transfer of the NFT transfers legally enforceable ownership of an underlying tangible asset. Check the facts and the remaining limbs of section 2(111) for an unfamiliar token. Notification 74/2022 excludes qualifying gift cards or vouchers, reward or loyalty points and website, platform or app subscriptions. Section 536(2)(j) preserves both notifications to the extent consistent with the corresponding current law. [Notification 74/2022](https://www.incometaxindia.gov.in/documents/20117/6507196/Notification-No-74-2022.pdf/0baaa2d5-9579-e268-725d-3550ffd15506?t=1763194366261) · [Notification 75/2022](https://www.incometaxindia.gov.in/documents/20117/6507196/Notification-No-75-2022.pdf/ca39ed4a-c1b6-3cc9-7ba6-5139429e4096?t=1763194380601).
 
 | Event | Treatment; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | --- | --- |
@@ -237,8 +237,8 @@ Rule 164 covers returns for the tax year starting 1 April 2026. A person with in
 
 | Taxpayer | Form; https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
 | --- | --- |
-| Individual or HUF with VDA income and no business or profession income | ITR-2 (rule 164(4)); https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
-| Individual or HUF with business or profession income | ITR-3 (rule 164(7)); https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
+| Individual or HUF with section 194 transfer income and no business or profession income | ITR-2 (rule 164(4)); https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
+| Individual or HUF with section 194 transfer income and business or profession income | ITR-3 (rule 164(7)); https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
 | Company (other than one filing ITR-7) | ITR-6 (rule 164(9)); https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
 
 Source: https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf
@@ -263,7 +263,7 @@ Section 393(1) Table serial 8(vi) applies to "Any person" paying a resident cons
 
 Points the Act settles:
 
-- The limits are on consideration "during the tax year", and the turnover test looks at "the tax year immediately preceding the tax year in which such virtual digital asset is transferred". Above the limit, tax is deducted on the entire amount (section 393(1)(a)).
+- The limits are on consideration "during the tax year", and the turnover test looks at "the tax year immediately preceding the tax year in which such virtual digital asset is transferred". Above the limit, apply the rate to the full deductible base under section 393(1)(a). For an exchange trade, exclude GST and service charges levied by the deductor. For a trade outside an exchange, exclude GST. These CBDT directions continue under section 536(2)(j) to the extent consistent with the current Act. [CBDT Circular 13/2022, Q4](https://www.incometaxindia.gov.in/documents/20117/6507196/Circular-No-13-2022.pdf/1af47e65-a4cd-7521-4ddf-0bab57d65c4f?t=1762868661365) · [CBDT Circular 14/2022, paragraph 1](https://www.incometaxindia.gov.in/documents/20117/6507196/Circular-14-2022.pdf/1d3c6cca-ed94-a354-a929-6ec93a07e36f?t=1762868664368).
 - Where the price is paid wholly in kind, or in another VDA with no cash, or the cash part is too small to cover the tax, the payer "shall ensure that the tax required to be deducted has been paid, before releasing such consideration" (Note 6 to the section 393(1) Table). In a VDA-for-VDA swap, settle on the facts who is the payer on each leg; Note 6 then applies to that payer.
 - A payer satisfying the specific section 393(4)Table 12 C(a)category has the section 397(1)(c)TANexception, subject to the actual period and transaction wording; this is not a waiver for every VDA buyer. The Finance Act, 2026 substitutes clause (c) with effect from 1 October 2026; the VDA exemption is kept.
 - TDS counts as payment on behalf of the seller under 390(5), but the credit year/proportion and return evidence follow rule 203 assessability controls; it is not automatically all credited in the cash-payment year. Match statement/certificate/PAN; preserve 401 protection where tax actually deducted, without fabricating credit.
@@ -358,8 +358,8 @@ The cited s.194 loss rules give no loss-offset benefit from a VDA loss sale; no 
 
 | Item | Value | Note; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | --- | --- | --- |
-| Source | all figures below | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Rate on income deemed under sections 102 to 106, including an unexplained VDA (section 195(1)) | 60% | "at the rate of 60%"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Source | all figures below | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Rate on income deemed under sections 102 to 106, including an unexplained VDA (section 195(1)(i), as amended from 1 April 2026) | 30% | Finance Act, 2026, sections 1(2)(a) and 55; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 
 | Item | Value | Note; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | --- | --- | --- |
@@ -368,13 +368,15 @@ The cited s.194 loss rules give no loss-offset benefit from a VDA loss sale; no 
 
 #### 9.3 TDS as a tracking tool
 
-TDS under section 393(1) Table serial 8(vi) records each VDA sale against the seller's PAN. Section 509 imposes information duties on reporting entities as prescribed, with prescribed period/form/manner, and the Finance Act, 2026 substituted section 446 to penalise a provider that fails to report or reports wrongly. Retain the reporting-risk warning, but do not assert every provider has already reported before the return: exact prescribed entity/form/deadline applicability and implementation remain held. Finance Act 2026 s.101 substitutes 446; the source does not by itself prove any specific transaction was reported.
+TDS under section 393(1) Table serial 8(vi) records each VDA sale against the seller's PAN. Rules 241 to 244 implement section 509 for covered crypto-asset service providers. Rule 242 sets the Indian nexus and partner-jurisdiction exceptions. Rule 243 applies to relevant calendar years beginning on or after 1 January 2026 and identifies reportable users and controlling persons with reference to rule 241. A covered provider files Form 167 by 31 May of the following calendar year, including a nil statement if due diligence identifies no reportable users or controlling persons. The first ordinary deadline for calendar year 2026 is 31 May 2027. Confirm the provider and transaction facts before assuming a trade was reported. [Rules 241–244 and Form 167](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf).
+
+Section 509(4) gives a provider 10 days to notify and correct an inaccuracy it discovers. Under section 446 as substituted by Finance Act, 2026 section 101, the authority may impose INR 200 per day for late reporting or INR 50,000 for failing to correct inaccurate information as required or failing the prescribed due diligence. [Income-tax Act, 2025, s 509](https://egazette.gov.in/WriteReadData/2025/265620.pdf) · [Finance Act, 2026, s 101](https://egazette.gov.in/WriteReadData/2026/271439.pdf).
 
 #### Complete current filing and payment boundary
 
 The 31 August 2027 category also covers a non-audit firm's partner and spouse where s.10 apportionment applies, even if the individual's own income would otherwise be nonbusiness. Required s.172 report cases, including the prescribed firm-partner/spouse s.10 apportionment cases, take 30 November 2027; the 31 Octobercategory includes a partner of a firm required to be audited and corresponding spouse where 10 applies. Required audit, not only completed audit, controls; review report 63/rule 47 timing separately. Current 428(a)late-return fee 1,000 if income at most 500,000,5,000 otherwise; 428(b)revised-return fee beyond 9 months from tax-year end same income-based amounts, as substituted by Finance Act 2026 s.96. Insufficient self-assessment payment 266(3)goes first fee, then interest, then tax; tax alone is not total cash required. Current ordinary 425(2)/(3)construction remains held, including whether the literal table applies given the words “or, who is liable to pay advance tax under section 404”. A later VDA capital-gain treatment/425(4)relief is a separate unresolved classification, not automatic. [ss.263/266/424-425/428](https://egazette.gov.in/WriteReadData/2025/265620.pdf); [Finance Act 2026 ss.66,67,96](https://egazette.gov.in/WriteReadData/2026/271439.pdf).
 
-A transaction potentially also under platform 8(v)uses VDA 8(vi)priority under 393(1)Note 4. For all deduction calculations apply whole consideration once aggregate strictly EXCEEDS the relevant 12 threshold; equality stays exempt, and deduction timing of earlier amounts when crossing needs factual/statutory review rather than assuming tax only on excess. Missing PAN requires all 3 rates test. Amounts for taxpayer-specific surcharge/cost/valuation/interest held above cannot be finalized merely because arithmetic runs. [393/397](https://egazette.gov.in/WriteReadData/2025/265620.pdf).
+A transaction potentially also under platform 8(v)uses VDA 8(vi)priority under 393(1)Note 4. For all deduction calculations apply the full deductible base described in Section 7.3 once aggregate consideration exceeds the relevant threshold; equality stays exempt, and deduction timing of earlier amounts when crossing needs factual/statutory review rather than assuming tax only on excess. Missing PAN requires all 3 rates test. Amounts for taxpayer-specific surcharge/cost/valuation/interest held above cannot be finalized merely because arithmetic runs. [393/397](https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 
 ## Worked cases
 
@@ -382,7 +384,7 @@ All amounts in these examples are hypothetical and in rupees. Rates are the ones
 
 ### Example 1: simple BTC sale, new regime
 
-Resident individual, new regime. Bought 1 BTC for 2,000,000 in May 2026. Sold it for 5,000,000 in September 2026 on an Indian exchange. Exchange fee on sale: 5,000 (not deductible). Other income: salary taxed at slab rates, total income below the first surcharge threshold.
+Resident individual, new regime. Bought 1 BTC for 2,000,000 in May 2026. Sold it for 5,000,000 in September 2026 on an Indian exchange. The exchange is the deductor and levies a 5,000 service charge against the stated gross proceeds. Assume no other GST or charges. Other income: salary taxed at slab rates, total income below the first surcharge threshold.
 
 ~~~
 Consideration                 5,000,000
@@ -393,8 +395,8 @@ Tax at 30% x 3,000,000          900,000
 Cess at 4% x 900,000             36,000
 Tax on the VDA income           936,000
 
-TDS deducted at 1% x 5,000,000   50,000  (credit against the year's tax)
-The 5,000 fee is not deducted.
+TDS at 1% x (5,000,000 - 5,000)  49,950  (credit against the year's tax)
+The 5,000 fee reduces the TDS base under Circular 13/2022. The VDA gain remains 3,000,000.
 ~~~
 
 The salary is taxed separately at the section 202 slab rates. The rebate under section 156(2) cannot reduce the 900,000.
@@ -414,22 +416,26 @@ Staking reward 25,000           treatment not yet confirmed here from the cited 
 
 ### Example 3: a VDA gift from a friend
 
-A receives 0.5 BTC from a friend (not a relative) with a fair market value of 1,500,000 at receipt. A receives no other gifts in the year. A later sells the BTC for 2,000,000.
+An investor receives 0.5 BTC from a friend with a statutory fair market value of 1,500,000 at receipt, holds it as a capital asset and receives no other gifts in the year. No section 92(3) exception applies. The investor later sells the BTC for 2,000,000. Assume no surcharge.
 
 ~~~
 Gift: aggregate value 1,500,000 is above the section 92(2)(m) threshold
       -> whole 1,500,000 is income from other sources, taxed at slab rates
 
 Later sale: proceeds 2,000,000, section 194 transfer
-      cost of acquisition: not settled for a VDA (see below)
+      deemed cost of acquisition                     1,500,000
+      gain                                             500,000
+      section 194 tax at 30%                           150,000
+      cess at 4%                                         6,000
+      tax on the sale                                  156,000
 ~~~
 
-Section 73 Table serial 17 of the 2025 Act makes the value taxed under section 92(2)(m) the cost of a "capital asset" when "the capital gain arises" on its transfer. A VDA held as an investment is a capital asset (section 2(22)), and section 194 only sets the rate on income from its transfer; but section 194 allows only "cost of acquisition, if any", and the cited passages do not expressly resolve that section 73/194 interaction. Whether the cost on the sale is 1,500,000 or nil is a question for an accountant. Refer before filing. Using nil overstates the gain by 1,500,000; using 1,500,000 without support risks an addition.
+Section 73(1), table serial 17 deems the value taxed under section 92(2)(m) to be the acquisition cost when a capital gain arises on that property. Section 194 permits that cost and sets the transfer tax rate. Confirm the capital-asset classification and the amount actually taken into account under section 92(2)(m). Refer if the receipt or holding falls outside these facts. [Income-tax Act, 2025, ss 73, 92 and 194](https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 
 
 ### Recomputing check 1: sale gain, disallowed sale fee and TDS credit
 
-Hypothetical ordinary-resident individual; supported cost; no surcharge threshold crossed; no special surcharge interpretation is needed because its base is zero. This is the VDA component only: salary and its credits are not silently assumed zero. A 50,000 TDScredit is assumed supported and assessable in this year, not merely shown as a net bank receipt. Outputs derived.
+Hypothetical ordinary-resident individual; supported cost; no surcharge threshold crossed; no special surcharge interpretation is needed because its base is zero. This is the VDA component only: salary and its credits are not silently assumed zero. The 49,950 TDS credit is assumed supported and assessable in this year. The deductor levies the 5,000 service charge. Outputs derived.
 
 ```oa-check
 name: India VDA gain, sale fee and supported credit
@@ -442,7 +448,7 @@ steps:
   tax: gain * 0.30
   cess: tax * 0.04
   total_vda: tax + cess
-  tds: proceeds * 0.01
+  tds: (proceeds - sale_fee) * 0.01
   vda_component_after_credit: total_vda - tds
   wrong_fee_deducted_gain: gain - sale_fee
 expected:
@@ -450,8 +456,8 @@ expected:
   tax: 900000
   cess: 36000
   total_vda: 936000
-  tds: 50000
-  vda_component_after_credit: 886000
+  tds: 49950
+  vda_component_after_credit: 886050
   wrong_fee_deducted_gain: 2995000
 ```
 
@@ -486,7 +492,7 @@ expected:
 
 ### Recomputing check 3: free versus discounted capital-asset property
 
-Hypothetical nonrelative, no other gift or 92(3)exception, established statutory FMV. Free 0.5 BTCworth 1,500,000 gives full 1,500,000 other-source inclusion. A separate below-value acquisition at FMV 1,500,000 paid 1,440,000 gives 60,000 shortfall, above 50,000, so 60,000 included; at 1,450,000 paid the 50,000 equalitydoesnotcross. Do not combine these as one client's actual gifts. Later-sale cost in original Example 3 remains professionally held; this block does not select nil or 1,500,000 cost.
+Hypothetical nonrelative, no other gift or 92(3)exception, established statutory FMV. Free 0.5 BTCworth 1,500,000 gives full 1,500,000 other-source inclusion. A separate below-value acquisition at FMV 1,500,000 paid 1,440,000 gives 60,000 shortfall, above 50,000, so 60,000 included; at 1,450,000 paid the 50,000 equalitydoesnotcross. Do not combine these as one client's actual gifts. The later sale in Example 3 uses the separate deemed acquisition cost under section 73(1), table serial 17.
 
 ```oa-check
 name: India VDA free and cheap property threshold comparison
@@ -495,14 +501,19 @@ inputs:
   paid: 1440000
   boundary_paid: 1450000
   threshold: 50000
+  later_sale_proceeds: 2000000
 steps:
   free_inclusion: fmv
+  later_capital_gain: later_sale_proceeds - free_inclusion
+  later_sale_tax_with_cess: later_capital_gain * 0.30 * 1.04
   shortfall: fmv-paid
   boundary_shortfall: fmv-boundary_paid
   excess_for_test: shortfall-threshold
   boundary_excess: boundary_shortfall-threshold
 expected:
   free_inclusion: 1500000
+  later_capital_gain: 500000
+  later_sale_tax_with_cess: 156000
   shortfall: 60000
   boundary_shortfall: 50000
   excess_for_test: 10000
@@ -514,7 +525,7 @@ expected:
 Refer to an accountant when:
 
 - Income from mining, staking, lending, yield, liquidity pools, a paid airdrop, or an NFT royalty needs a head of income: it is not yet confirmed here from the cited provisions.
-- The cost of a gifted or free VDA on a later sale matters (Example 3), or a fork or airdrop needs a cost.
+- A free or gifted VDA falls outside the facts in Example 3, or a fork or airdrop needs a cost.
 - The client gave a VDA away, or moved VDAs between wallets and the department may see the move as a transfer.
 - The seller is a non-resident, or the client is a non-resident or not ordinarily resident.
 - The client is a company, a firm or a trust, or VDAs are held as stock-in-trade of a business.
@@ -530,7 +541,7 @@ Refuse to:
 - Present any crypto computation as final without an accountant's review.
 
 For the general income-tax computation (slabs, regimes, rebate) see `india-income-tax`. For instalments see `in-advance-tax`.
-- Hold current new-regime VDA surcharge interaction, nonindividual Form 141 Schedule Dcaption, exact acquisition method/cost/valuation, prescribed 509 reporting scope and current 425 construction until confirmed; no blanket tax-free token receipt or automatic zero basis.
+- Hold current new-regime VDA surcharge interaction, nonindividual Form 141 Schedule D applicability, exact acquisition method or valuation and current section 425 construction until confirmed; no blanket tax-free token receipt or automatic zero basis.
 
 ## Filing and payment
 
@@ -545,7 +556,7 @@ Use current ITR 2/ITR 3(or referred company ITR 6)as rule 164 requires, actual V
 - [ ] TDS deducted by exchanges matched and credited; TDS owed on peer-to-peer purchases checked?
 - [ ] Gifts and free receipts tested on the aggregate for the year, with relatives excluded?
 - [ ] Advance tax instalments checked, including for a large sale late in the year?
-- [ ] Return form ITR-2 or ITR-3 (not ITR-1 or ITR-4) and the right due date?
+- [ ] Correct return for the taxpayer and income, and the right due date?
 - [ ] Every unsettled classification (Section 5) referred, not guessed?
 
 ### Prohibitions
@@ -564,11 +575,11 @@ Use current ITR 2/ITR 3(or referred company ITR 6)as rule 164 requires, actual V
 
 | Official source | Read for | Actual read date |
 |---|---|---|
-| https://egazette.gov.in/WriteReadData/2025/265620.pdf | Read for 1/3/536 period; 2(109)/(111)whole and 2(22)capitalasset scope; 194 whole includingserial 4 and 194(2)(n),195 whole; 92(2)(m),(3)-(5)whole; 73(1)Table 17; 104 whole; 178-180 GAAR; 261(b),295 whole,301(e)searchscope; 390(5),393(1)serial 8(vi)and Notes 3-6,393(4)serial 12,397 PAN/TAN,400-401; 403-410 and 423-425 whole; 263/266/428 relevantfee/payment provisions; 509 whole. Exact individual 509 rules/notifications and final utility not inferred | 2026-11-15 |
-| https://egazette.gov.in/WriteReadData/2026/271439.pdf | Read for individual tax/surcharge/cess s.3/First Schedule I-BPara A/F,66-67 return/payment amendments,87 TANfrom 1 October,96 fees,101 crypto-reporting 446 substitution. VDA/new-regime surcharge interaction held, not a claim every corporate table is reviewed | 2026-11-15 |
-| https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf | Read for 164 entireforms/modes; 203 credit,215 certificates,218/219 entirepayment/statementcontrols and Form 141 Schedule Dcaption plus Form 142 caption; 47 auditreport. Form 141 nonindividualcaption applicability held, finalutilitynotclaimed | 2026-11-15 |
+| https://egazette.gov.in/WriteReadData/2025/265620.pdf | Read for 1/3/536 period; 2(109)/(111)whole and 2(22)capitalasset scope; 194 whole includingserial 4 and 194(2)(n),195 whole; 92(2)(m),(3)-(5)whole; 73(1)Table 17; 104 whole; 178-180 GAAR; 261(b),295 whole,301(e)searchscope; 390(5),393(1)serial 8(vi)and Notes 3-6,393(4)serial 12,397 PAN/TAN,400-401; 403-410 and 423-425 whole; 263/266/428 relevantfee/payment provisions; 509 whole. Section 536(2)(j) preserves consistent notifications and circulars. The final return utility remains unverified. | 2026-11-24 |
+| https://egazette.gov.in/WriteReadData/2026/271439.pdf | Read for individual tax/surcharge/cess s.3/First Schedule I-BPara A/F,55 unexplained-income rate, 66–67 return and payment amendments, 87 TAN from 1 October, 96 fees and 101 reporting penalties. VDA surcharge under the new regime remains held. | 2026-11-24 |
+| https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf | Read for 164 entireforms/modes; 203 credit,215 certificates,218/219 entirepayment/statementcontrols and Form 141 Schedule Dcaption plus Form 142 caption; 47 auditreport. Rules 241–244 and Form 167 prescribe provider reporting. Nonindividual Schedule D applicability and the final return utility remain unverified. | 2026-11-24 |
 
-**Not yet confirmed:** current VDA/new-regime surcharge interaction; ordinary 425(2)/(3)construction and VDAcapital-gain/425(4)relief classification; Form 141 nonindividual Schedule Dcaption/actualutility instructions; final TY 2026-27 VDAschedulefields/extensions; prescribed 509 reportingentity/form/period/implementation; bindingmatching/acquisition-costmethod/purchasefee, gifted/free-tokenlaterbasis including 73 interaction; mining/staking/paidairdrop/royalty/De Fi/LP/forkclassificationandvaluation; NFT/exclusionnotifications/CBDCcoverage; gift/wallet-transfer/nonresident/stock-in-trade/crossborder consequences. Older-incomeperiod is out of scope, not silently mapped to currentforms. Underlying held rules/cases are preserved as referral topics.
+**Not yet confirmed:** current VDA/new-regime surcharge interaction; ordinary 425(2)/(3)construction and VDAcapital-gain/425(4)relief classification; Form 141 nonindividual Schedule Dcaption/actualutility instructions; final TY 2026-27 VDAschedulefields/extensions; actual provider reporting; binding matching or purchase-fee method and free receipts outside the section 73 example; mining/staking/paidairdrop/royalty/De Fi/LP/forkclassificationandvaluation; unfamiliar NFT and currency classifications, and gift, wallet-transfer, nonresident, stock-in-trade and cross-border consequences. Older-incomeperiod is out of scope, not silently mapped to currentforms. Underlying held rules/cases are preserved as referral topics.
 
 ## Disclaimer
 

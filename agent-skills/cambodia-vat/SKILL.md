@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cambodia-vat"
   jurisdiction: "KH"
   tax_year: "2026"
-  last_updated: "2026-11-14"
+  last_updated: "2026-11-22"
 ---
 
-# Cambodia VAT v2.1
+# Cambodia VAT v2.2
 
 **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -18,7 +18,7 @@ metadata:
 
 The filing authority is the General Department of Taxation (GDT), Ministry of Economy and Finance.
 
-Build a Cambodian monthly VAT working paper for an ordinary self-assessment taxable person. Load **vat-workflow-base v0.1 or later** first. Produce reconciled registers and a review brief, not a return authorized for filing. QIP, SEZ and non-resident obligations remain specialist referrals. A resident business receiving digital services is distinguished from the non-resident supplier's own registration and collection obligation. The Khmer law prevails.
+Build a Cambodian monthly VAT working paper for an ordinary self-assessment taxable person. Before applying the ordinary rate, check sector measures. Under Prakas 715, qualifying self-assessment EV charging stations suspend customer VAT on charging services through the end of 2028 and cannot credit input VAT paid for those charging operations. Load **vat-workflow-base v0.1 or later** first. Produce reconciled registers and a review brief, not a return authorized for filing. QIP, SEZ and non-resident obligations remain specialist referrals. A resident business receiving digital services is distinguished from the non-resident supplier's own registration and collection obligation. The Khmer law prevails.
 
 | Quick reference | Rate, amount or boundary | Source |
 |---|---|---|
@@ -26,7 +26,7 @@ Build a Cambodian monthly VAT working paper for an ordinary self-assessment taxa
 | Export / qualifying outside-Cambodia service | 0% with actual export/place-of-supply evidence; international passenger/goods transport and related qualifying services require SD49 art 33 conditions | [Law arts 62,65](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); [SD49 arts 27,33](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1adcafd1-44a6-4875-b3e7-349a693b7c9c) |
 | Non-taxable supply | No output VAT; related input generally unrecoverable, subject to the diplomatic-supply exception | [Law arts 63-64,68](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
 | VAT declaration and payment | Monthly, statutory 20th of following month; actual online calendar may differ | [Law art 71](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
-| Current calendar checked | October 2026 returns: manual 20 November 2026, online 25 November 2026; do not extrapolate future extensions | [GDT live calendar](https://www.tax.gov.kh/en/) |
+| October 2026 declaration and payment | Manual by 20 November 2026. The GDT's 19 November notice extended online declaration and payment from 25 to 27 November 2026 | [GDT official notice](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/7219e6f1-3fc4-4f90-811c-ef6f995a735f); [GDT calendar](https://www.tax.gov.kh/en/) |
 | Input claim timing | In the receipt/import month or no later than 60 days after receipt/import, with all eligibility/document conditions | [SD49 art 12](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1adcafd1-44a6-4875-b3e7-349a693b7c9c) |
 | Invoice timing | No later than 7 days after dispatch/performance, or after payment when payment precedes them; earlier issued invoice can fix tax time | [Law art 61](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
 | Records | At least 10 years after completion of the last relevant transaction | [Law art 80](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
@@ -55,13 +55,13 @@ Tax time is when the invoice must be issued or an earlier actual invoice. The 7-
 
 Under [Law arts 68-70,78](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) and [SD49 arts 11-19](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1adcafd1-44a6-4875-b3e7-349a693b7c9c), require actual taxable business use, a proper VAT invoice or customs declaration and tax receipt, timing and no blocked category. Pre-registration goods/capital goods additionally must remain on hand at effective registration, be for taxable use and have been supplied/imported within 60 days before registration; use the prescribed application and payment proof (SD49 art 11). Ordinary claims follow the 60-day receipt/import limit (art 12), not a date guessed from the bank debit.
 
-SD49 art 13 blocks entertainment, amusement/recreation unless the business supplies that activity; passenger automobiles unless the business sells or leases them; and the listed petroleum products unless the business supplies those products. Entertainment includes food, beverages, tobacco, accommodation or hospitality of any kind under art 13(4). A passenger automobile is for passengers only with no more than 10 seats. Listed products include regular/premium gasoline, diesel and lubricating oil. A transport business or documented business dinner is not, by itself, the stated exception. Current special fuel relief is not confirmed here; hold any proposed override pending its operative instrument.
+SD49 art 13 blocks entertainment, amusement/recreation unless the business supplies that activity; passenger automobiles unless the business sells or leases them; and the listed petroleum products unless the business supplies those products. Entertainment includes food, beverages, tobacco, accommodation or hospitality of any kind under art 13(4). A passenger automobile is for passengers only with no more than 10 seats. Listed products include regular/premium gasoline, diesel and lubricating oil. A transport business or documented business dinner is not, by itself, the stated exception. Separate supplier relief applies in 2026. Instruction 003 requires covered importers and distributors to charge 4% VAT on domestic regular gasoline from 20 March 2026. Instruction 006 makes the full VAT on covered domestic diesel and LPG supplies state-borne from 1 April 2026. Use the respective invoice and e-Filing treatment and claim only documented input VAT actually paid where the instruction permits it. Both instructions run until a further government decision. [Instruction 003](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/188e9669-278f-4a8c-9cdb-51946a92d4e8); [Instruction 006](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/5e49a409-a79d-46e5-9838-f495ad18037b).
 
 Attribute taxable and non-taxable use clearly (art 14). Where the art 15 mixed-supply calculation applies, use eligible input multiplied by VAT-exclusive taxable supplies divided by taxable plus non-taxable supplies, excluding the specified non-taxable business-transfer value. Truncate that fraction to 2 decimal places without rounding: below 0.05 gives no credit, above 0.95 gives full credit, and 0.05 through 0.95 uses the fraction. Where applying art 15(1) creates difficulty, art 16 permits direct attribution where possible plus the ratio for residual input; it does not permit exempt-use input credit. Under arts 17-18 recompute the annual residual-credit position from annual totals in the first month of the following calendar year and record the difference as credit or debit then. Art 19 requires the original VAT invoice issued by the taxable supplier, or an import declaration together with the receipt evidencing payment of import VAT. Retain a method schedule for reviewer sign-off.
 
 ### Reverse charge: establish the actual legal supplier
 
-[SD65 arts 2-7](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1a2d9029-2e2c-494f-a078-6547b88cd42d) addresses qualifying digital goods/services/e-commerce supplied from outside Cambodia by a non-resident without a Cambodian PE. A resident taxpayer receiving a B2B supply accounts for reverse-charge VAT; a qualifying non-resident B2C supplier has a different VAT-only registration/collection route. The annex includes downloads, software, hosting, network support, advice, interactive sites, shopping portals, auctions and referrals. A brand or card descriptor does not establish the supplier's residence, PE or B2B status. Input credit is available only under the law's conditions, and SD49 art 40 concerns reverse-charge VAT paid. Reverse-charge output does not establish an equal input credit automatically. Under [SD49 arts 38-40](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1adcafd1-44a6-4875-b3e7-349a693b7c9c), resident B2B reverse-charge tax time is the earliest of digital-goods delivery, digital-service performance, payment becoming due or payment being made (art 39(2)). The non-resident supplier rule is separately the earliest of invoice, delivery/performance or payment received (art 39(1)); do not substitute it for the resident rule. Art 40 permits credit for VAT paid under the art 38 reverse-charge mechanism; apply Law arts 68-70 eligibility conditions. Other imported-service/non-resident questions remain R-KH-3 referrals.
+[SD65 arts 2-7](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1a2d9029-2e2c-494f-a078-6547b88cd42d) addresses qualifying digital goods/services/e-commerce supplied from outside Cambodia by a non-resident without a Cambodian PE. A resident taxpayer receiving a covered B2B supply accounts for reverse-charge VAT. A qualifying non-resident B2C supplier follows a separate VAT-only registration and collection route. Prakas 542 provided 5 years of reverse-charge relief for small self-assessment taxpayers. The GDT's January 2023 instruction dates the relief from 8 September 2021, so it applied in April 2026 and had expired by the 22 November 2026 audit date. Check taxpayer class and tax time for a historical supply. [Prakas 542](https://compendium.fsa.gov.kh/pdf/compendium/ANN/59_ANN_542_08_09_2021.pdf); [GDT Instruction 2520](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/fb69bb89-109b-4b91-9f6c-de5464d987c6). The annex includes downloads, software, hosting, network support, advice, interactive sites, shopping portals, auctions and referrals. A brand or card descriptor does not establish the supplier's residence, PE or B2B status. Input credit is available only under the law's conditions, and SD49 art 40 concerns reverse-charge VAT paid. Reverse-charge output does not establish an equal input credit automatically. Under [SD49 arts 38-40](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1adcafd1-44a6-4875-b3e7-349a693b7c9c), resident B2B reverse-charge tax time is the earliest of digital-goods delivery, digital-service performance, payment becoming due or payment being made (art 39(2)). The non-resident supplier rule is separately the earliest of invoice, delivery/performance or payment received (art 39(1)); do not substitute it for the resident rule. Art 40 permits credit for VAT paid under the art 38 reverse-charge mechanism; apply Law arts 68-70 eligibility conditions. Other imported-service/non-resident questions remain R-KH-3 referrals.
 
 ### Reconcile and prepare the review output
 
@@ -184,7 +184,7 @@ Every identity below is preserved from the old skill. Confirm the actual transac
 | Vehicle/fuel/entertainment | Apply SD49 art 13 and the precise business exception; commercial use alone does not resolve it. |
 | Round-number incoming funds | Obtain evidence of sale, capital or loan; no automatic owner-injection exclusion. |
 | Cash withdrawal / ATM | Hold; obtain cash-use support rather than call it an expense. |
-| Rent | No credit without eligible VAT documentation; the former residential-rent exemption is not confirmed here. |
+| Rent | No credit without eligible VAT documentation; confirm how the lease and invoicing rules apply to the actual property. |
 | Currency / mobile money / statement format | Use actual currency and underlying transaction; Wing, Pi Pay, True Money or Bakong is a payment channel, not a VAT result. ABA/ACLEDA CSV column expectations are illustrative; inspect actual exports. |
 | QIP / SEZ / diplomatic / non-resident / special sector | Refer with documents; the ordinary examples do not establish incentive eligibility. |
 
@@ -199,9 +199,9 @@ Hypothetical transaction amounts in USD are retained from the old April 2026 exa
 | 05.04.2026 | XYZ TRADING CO | +1,100 | Sale 1,000; output 100 | Domestic taxable sale, VAT-inclusive price; art 65 | [Law arts 58-70](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
 | 10.04.2026 | ACLEDA SUPPLIES | -550 | Purchase 500; eligible input 50 | Valid invoice, taxable use, timely claim, no block; arts 68-70 | [Law arts 58-70](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
 | 15.04.2026 | THAI IMPORTS CO | +8,000 | Export 8,000; output 0 | Actual qualifying export with customs/evidence, not name alone; art 65 | [Law arts 58-70](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
-| 18.04.2026 | GOOGLE CLOUD | -200 | Reverse-charge output 20; input 20 only if eligible | Qualifying B2B digital supply; reverse-charge VAT paid and input conditions independently satisfied; SD49 arts 38-40 / SD65 arts 6-7 | [Law arts 58-70](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
+| 18.04.2026 | GOOGLE CLOUD | -200 | Reverse-charge output 20; input 20 only if eligible | Qualifying B2B digital supply to a medium self-assessment taxpayer; reverse-charge VAT paid and input conditions independently satisfied; SD49 arts 38-40 / SD65 arts 6-7 | [Law arts 58-70](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
 | 30.04.2026 | ABA BANK | -15 | No output/input for assumed qualifying primary financial service | Actual fee nature confirmed; art 63(9) | [Law arts 58-70](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
-| 25.04.2026 | EMPLOYEE SOPHEAK | -800 | Wages outside this VAT computation | Actual employment payment, not supplier service | [Law arts 58-70](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
+| 25.04.2026 | EMPLOYEE WAGES | -800 | Wages outside this VAT computation | Actual employment payment, not supplier service | [Law arts 58-70](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) |
 
 ### Domestic sale and eligible purchase
 
@@ -227,7 +227,7 @@ expected:
 
 ### Digital cost with and without taxable-use eligibility
 
-GOOGLE CLOUD 200 creates 20 reverse-charge output under the assumed B2B facts. If that reverse-charge VAT is paid and fully eligible for credit, input 20 leaves 0 net effect. If wholly attributable to non-taxable supplies, input 0 leaves 20 payable. This second result is why the former unconditional Output+Input pattern was unsafe.
+GOOGLE CLOUD 200 creates 20 reverse-charge output where the April 2026 recipient is a medium self-assessment taxpayer and the supply otherwise meets the B2B conditions. If that reverse-charge VAT is paid and fully eligible for credit, input 20 leaves 0 net effect. If wholly attributable to non-taxable supplies, input 0 leaves 20 payable. This second result is why the former unconditional Output+Input pattern was unsafe.
 
 ```oa-check
 name: Digital cost taxable versus non-taxable use
@@ -279,15 +279,21 @@ expected:
 | SD65,8 April 2021, official-host unofficial English translation: all 9 pages read, arts 1-11 and complete digital/e-commerce annex | https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/1a2d9029-2e2c-494f-a078-6547b88cd42d | 2026-11-14 |
 | GDT sub-decree register: SD49 and 65 valid | https://www.tax.gov.kh/en/sub-decree | 2026-11-14 |
 | GDT law register: 2023 Law valid | https://www.tax.gov.kh/en/law | 2026-11-14 |
-| GDT calendar: October 2026 manual 20 November/online 25 November entries only | https://www.tax.gov.kh/en/ | 2026-11-14 |
+| Prakas 542 art 14 on temporary small-taxpayer relief and reverse-charge VAT | https://compendium.fsa.gov.kh/pdf/compendium/ANN/59_ANN_542_08_09_2021.pdf | 2026-11-24 |
+| Instruction 2520, section III, on the five-year start date for small-taxpayer relief | https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/fb69bb89-109b-4b91-9f6c-de5464d987c6 | 2026-11-24 |
+| GDT October 2026 notice: signed extension to 27 November for online declaration and payment | https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/7219e6f1-3fc4-4f90-811c-ef6f995a735f | 2026-11-24 |
+| GDT calendar: October 2026 baseline dates, subject to the signed extension | https://www.tax.gov.kh/en/ | 2026-11-24 |
+| Instruction 003 clauses 1 and 3 on the 4% regular gasoline rate, invoices, input VAT and effective date | https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/188e9669-278f-4a8c-9cdb-51946a92d4e8 | 2026-11-24 |
+| Instruction 006 clauses 1 and 2 on state-borne diesel and LPG VAT, invoicing, input VAT and effective date | https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/5e49a409-a79d-46e5-9838-f495ad18037b | 2026-11-24 |
+| Prakas 715 articles 2 to 4 on EV charging VAT suspension and input credit restriction | https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/911af07e-2109-436a-b09d-73adcd622e2a | 2026-11-24 |
 
 Access provenance: the [same-statute English reference](https://embindpp.gov.in/pdf/menu/Tax-Law-Cambodia-2023.pdf), read 2026-11-14 for arts 57-80, is an unofficial translation hosted by the Embassy of India in Phnom Penh. It is disclosed as a reading aid, not an alternative authority; original Khmer governs. Original-language excerpts and complete old-topic/supplier mapping are retained in the external evidence ledger.
 
-Not yet confirmed: current GDT filing box identifiers, mandatory currency conversion instrument/rates, precise primary-financial-service implementing definitions, current refund application/account procedure, current fuel relief overrides, special used-goods method and continuous-supply details, residential-rent exemption, all QIP/SEZ conditions and non-resident obligations beyond the bounded resident B2B digital computation. These are excluded from usable calculations until their operative instruments are read.
+Not yet confirmed: current GDT filing box identifiers, mandatory currency conversion instrument/rates, precise primary-financial-service implementing definitions, current refund application/account procedure, special used-goods method and continuous-supply details, residential-rent exemption, all QIP/SEZ conditions and non-resident obligations beyond the bounded resident B2B digital computation. These are excluded from usable calculations until their operative instruments are read.
 
 Historical unsupported workflow proposals retained for audit, not instructions: unknown sale 10%, unknown location domestic, unknown SaaS 10%, round-number receipts owner injection, USDamounts as-is and KHRconversion at an assumed NBCrate; brand-only blanket exemption; annual mixed-use adjustment without the actual SD49 method; earliest invoice/payment/delivery timing. The former bank statement “minimum viable” meant reconciliation input, never sufficient evidence to file. v2.0 (April 2026) ten-section structure and v1.1 monolithic history are preserved here; v2.1 corrects the legal rules and makes unresolved boundaries explicit.
 
-Built from the law. Written by Codex. Not reviewed by an accountant.
+Built from the law. Not reviewed by an accountant.
 
 ## Disclaimer
 
@@ -297,4 +303,4 @@ The most up-to-date version is maintained at [openaccountants.com](https://opena
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cambodia-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cambodia-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cambodia-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cambodia-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.

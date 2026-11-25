@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/bd-company-formation"
   jurisdiction: "BD"
   tax_year: "2026"
-  last_updated: "2026-11-14"
+  last_updated: "2026-11-22"
 ---
 
-# Bangladesh company incorporation v0.1
+# Bangladesh company incorporation v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -31,7 +31,7 @@ Ordinary company incorporation through RJSC/OSS. This is distinct from the sole-
 
 | Condition | Requirement | Official source |
 |---|---|---|
-| Ordinary private company, not the separate one-person regime | At least 2 subscribers; private-company definition generally limits members to 50 excluding employees, joint holders count as one | Companies Act sections 5 and 2(1)(t): https://bdlaws.minlaw.gov.bd/act-788/section-32025.html; https://bdlaws.minlaw.gov.bd/act-788/section-32006.html |
+| Ordinary private company, excluding the separate one-person regime | At least 2 subscribers. The articles restrict share transfers, bar public subscription invitations and limit members to 50 excluding employees. Joint holders count as one. | Companies Act sections 5 and 2(1)(ট): https://bdlaws.minlaw.gov.bd/act-788/section-32025.html; https://bdlaws.minlaw.gov.bd/act-788/section-32006.html |
 | Private company other than a public company's subsidiary | At least 2 natural-person directors | Section 90: https://bdlaws.minlaw.gov.bd/act-788/section-32914.html |
 | Public company or its private subsidiary | At least 3 directors; public formation requires at least 7 subscribers | Sections 90 and 5: https://bdlaws.minlaw.gov.bd/act-788/section-32914.html; https://bdlaws.minlaw.gov.bd/act-788/section-32025.html |
 
@@ -85,7 +85,7 @@ Refer one-person/public companies, regulated sectors, foreign branch/liaison/wor
 
 | Source and sections actually read | Official URL | Read on |
 |---|---|---|
-| Read for company definition, private membership exceptions and one-person company definition | https://bdlaws.minlaw.gov.bd/act-788/section-32006.html | 2026-11-14 |
+| Read for section 2(1)(ট), private-company definition and membership exceptions, and the separate one-person company definition | https://bdlaws.minlaw.gov.bd/act-788/section-32006.html | 2026-11-24 |
 | Read for ordinary formation subscribers and limited-liability forms | https://bdlaws.minlaw.gov.bd/act-788/section-32025.html | 2026-11-14 |
 | Read for director counts, public-parent exception and natural-person condition | https://bdlaws.minlaw.gov.bd/act-788/section-32914.html | 2026-11-14 |
 | Read for incorporation, bank/encashment documents, post-incorporation registrations and separate branch process | https://investbangladesh.gov.bd/faq | 2026-11-14 |
@@ -94,4 +94,4 @@ Not yet confirmed: Current RJSC fee assessment, name-clearance expiry, processin
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bd-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bd-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bd-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bd-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.

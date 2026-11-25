@@ -7,14 +7,14 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/au-sole-trader-schedule"
   jurisdiction: "AU"
   tax_year: "2025"
-  last_updated: "2026-11-12"
+  last_updated: "2026-11-22"
 ---
 
 # AU Sole Trader Schedule
 
 ## AU Sole Trader Schedule
 
-## Australia Sole Trader Business Schedule v1.4
+## Australia Sole Trader Business Schedule v1.5
 
 ## What this file is
 
@@ -32,9 +32,9 @@ This file covers the Business and Professional Items (BPI) schedule that sole tr
 
 This skill covers:
 
-- **Forms:** Business and Professional Items Schedule for Individuals (NAT 2816)
+- **Form:** Business and professional items schedule for individuals 2026
 - **Entity types:** Sole proprietors operating a business or profession in their individual capacity
-- All items P1 through P20 on the schedule
+- The applicable items on the issued 2026 schedule, including the P21 trading stock election. [ATO 2026 BPI instructions](https://www.ato.gov.au/forms-and-instructions/business-and-professional-items-schedule-2026-instructions/instructions-to-complete-the-bpi-schedule-2026).
 
 This skill does NOT cover:
 
@@ -64,7 +64,7 @@ This skill does NOT cover:
 
 ## Section 3 -- Rates and thresholds
 
-**Rates and thresholds**  _(ITAA 1997 Div 328; ATO QC 103578)_
+**Rates and thresholds**  _(ITAA 1997 Div 328; [ATO simplified depreciation guidance](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/depreciation-and-capital-expenses-and-allowances/simpler-depreciation-for-small-business))_
 
 | Item | Amount / Rate | Source |
 | --- | --- | --- |
@@ -72,15 +72,15 @@ This skill does NOT cover:
 | Small business entity threshold | Aggregated turnover < $10M | ITAA 1997 s 328-110 |
 | Cents per km rate (motor vehicle) | 88 cents per km (2024-25 and 2025-26); 91 cents (2026-27) | ATO cents per kilometre method |
 | Cents per km cap | 5,000 business km per car per year | ITAA 1997 s 28-25 |
-| Home office fixed rate | 70 cents per hour (2024-25 through 2026-27; 67c applied 2022-23 and 2023-24) | ATO PCG 2023/1 |
+| Home office fixed rate | 70 cents per hour for 2024–25 and 2025–26; 67 cents for 2022–23 and 2023–24. Check the published rate for 2026–27 before use. | [ATO fixed rate method](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses/fixed-rate-method) |
 | Trading stock threshold (change in value) | $5,000: if an eligible small business entity reasonably estimates that the difference between opening and closing stock is $5,000 or less, the taxpayer can elect not to do a stocktake | ITAA 1997 s 328-285 |
 | Prepaid expenses (SBE) | Immediately deductible if the service period is 12 months or less and ends on or before 30 June of the following year | ITAA 1936 ss 82KZL and 82KZM |
 
 - **Instant asset write-off threshold:** For 2025–26, eligible small business entities using simplified depreciation can deduct assets costing less than $20,000 when first used or installed ready for taxable use. The permanent threshold was enacted on 26 August 2026; schedule 2 commences on 1 October 2026 and applies to specified first use or installation from 1 July 2026. [Tax Reform No. 2 Act 2026, schedule 2](https://www.legislation.gov.au/C2026A00071/asmade/text).
 - **Small business entity threshold** -- Aggregated turnover < $10M  _(ITAA 1997 s 328-110)_
-- **Cents per km rate (motor vehicle)** -- 88 cents per km for 2024-25 and 2025-26; 91 cents per km from 2026-27  _(ATO cents per kilometre method)_
+- **Cents per km rate (motor vehicle)** -- 88 cents per km for 2024–25 and 2025–26; 91 cents per km for 2026–27. Check the applicable rate for later years. [ATO cents per kilometre method](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/motor-vehicle-and-car-expenses/expenses-for-a-car-you-own-or-lease/cents-per-kilometre-method).
 - **Cents per km cap** -- 5,000 business km per car per year  _(ITAA 1997 s 28-25)_
-- **Home office fixed rate** -- 70 cents per hour for 2024-25 through 2026-27 (67c applied for 2022-23 and 2023-24)  _(ATO PCG 2023/1)_
+- **Home office fixed rate** -- 70 cents per hour for 2024–25 and 2025–26. Check the ATO's published rate for any other year.
 - **Trading stock threshold (change in value)**: $5,000: if an eligible small business entity reasonably estimates that the difference between opening and closing stock is $5,000 or less, the taxpayer can elect not to do a stocktake  _(ITAA 1997 s 328-285)_
 - **Prepaid expenses (SBE)**: Immediately deductible if the service period is 12 months or less and ends on or before 30 June of the following year  _(ITAA 1936 ss 82KZL and 82KZM)_
 
@@ -88,11 +88,13 @@ This skill does NOT cover:
 
 ### 4.1 Business income (P8)
 
-- **Business income (P8)** -- Step 1. Sum all gross business income received during the year: Sales of goods or services; Government subsidies (e.g., any remaining COVID-era grants assessable); Insurance recoveries; Commissions received. Step 2. Exclude amounts that are capital in nature (these go to the CGT schedule). Step 3. Report at P8 on the schedule.
+- **Business income (P8)** -- Identify amounts derived in the year using the applicable receipts or earnings method. Include assessable sales, commissions, subsidies and insurance recoveries. Check whether a grant is exempt or non-assessable non-exempt, including any eligible COVID-19 support payments. Check specific income provisions for capital receipts, including business subsidies and depreciating-asset balancing adjustments. Apply the CGT rules where relevant and use the applicable return labels, including P1 when required for personal services income. [ATO TR 98/1](https://www.ato.gov.au/law/view/document?PiT=99991231235958&docid=TXR%2FTR981%2FNAT%2FATO%2F00001) · [ITAA 1997, ss 6-5, 15-10 and 20-20](https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_1/document_1.html) · [ATO business income exclusions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/assessable-income/what-income-to-exclude).
 
 ### 4.2 Cost of sales / Cost of goods sold
 
 - **Cost of goods sold**: Step 1. Opening stock + Purchases - Closing stock = Cost of goods sold. Step 2. Trading stock can be valued at cost, market selling value, or replacement value (ITAA 1997 s 70-45). The method can differ item by item. Step 3. If an eligible small business entity reasonably estimates that year-end trading stock differs from opening stock by $5,000 or less (s 328-285), the taxpayer can elect to use the same value as opening stock (no stocktake required).  _(ITAA 1997 s 70-45)_
+
+The P21 notification concerns an elected closing value below the lowest ordinary valuation under section 70-50. Enter Y at P21 label P when the election requires notice. [ATO 2026 P21 instructions](https://www.ato.gov.au/forms-and-instructions/business-and-professional-items-schedule-2026-instructions/instructions-to-complete-the-bpi-schedule-2026/trading-stock-election-p21).
 
 ### 4.3 Allowable deductions
 
@@ -109,11 +111,11 @@ This skill does NOT cover:
 | P8 expenses | Rent | Business premises; assess home occupancy separately |
 | P8 expenses | Other expenses | Classify into specific P8 expense labels where available |
 
-P9 records business loss activity details, not motor expenses. P10 and later items request separate business information, not a sequence of ordinary expense categories. Use the issued year’s form. [ATO 2025 business schedule instructions](https://www.ato.gov.au/api/public/content/5861f7f47efa45d5b76332ef12919ace?v=a0a2f777) establish this P8/P9 distinction. Verify the issued 2026 form before transferring labels.
+P9 records business loss activity details. P10 and later items request separate business information. Use the applicable labels in the [ATO 2026 BPI instructions](https://www.ato.gov.au/forms-and-instructions/business-and-professional-items-schedule-2026-instructions/instructions-to-complete-the-bpi-schedule-2026).
 
 ### 4.4 Motor vehicle expenses
 
-Two methods available for sole traders:
+Two methods are available for eligible cars an individual sole trader holds. Apply the actual business expenses rules for other vehicles.
 
 #### Method 1 -- Cents per kilometre
 
@@ -121,7 +123,7 @@ Two methods available for sole traders:
 
 #### Method 2 -- Logbook
 
-- **Logbook method** -- Maintain a logbook for a continuous 12-week period (valid for 5 years unless circumstances change). Calculate business-use percentage from logbook. Apply that percentage to total car expenses: fuel, insurance, registration, repairs, lease payments, depreciation. Depreciation of the car is capped at the car limit ($69,674 for 2024-25 and 2025-26; $69,883 for 2026-27).  _(ATO car limit determination)_
+- **Logbook method** -- Keep a representative logbook for at least 12 continuous weeks and retain annual odometer and expense records. A representative logbook can generally be used for 5 income years. Estimate business kilometres and divide by total kilometres travelled whilst holding the car in the year. Apply that percentage to eligible car expenses. Where section 40-230 applies, reduce the adjusted first element of the cost of a car designed mainly to carry passengers to the car limit for the year you first held it if the cost exceeds the limit. The limits are $69,674 for 2024–25 and 2025–26 and $69,883 for 2026–27. [ITAA 1997, ss 28-90 to 28-125](https://www.legislation.gov.au/C2004A05138/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html) · [ITAA 1997, s 40-230](https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_2/document_2.html) · [ATO 2026–27 car limits](https://www.ato.gov.au/businesses-and-organisations/small-business-newsroom/car-thresholds-from-1-july).
 
 ### 4.5 Depreciation
 
@@ -233,17 +235,17 @@ expected:
 
 ### 4.6 Home office expenses
 
-#### Fixed rate method (70c per hour from 2024-25) -- PCG 2023/1
+#### Fixed rate method (70 cents per hour for 2025–26) -- PCG 2023/1
 
-- **Fixed rate method** -- Covers energy expenses (electricity, gas), phone, internet, stationery, computer consumables. Must keep a record of actual hours worked from home (e.g., timesheets, diary, roster). Separately claim occupancy expenses (rent, mortgage interest, rates, insurance) only if the home is a place of business (rare for sole traders without a dedicated area). Cannot separately claim expenses already covered by the fixed rate (70c from 2024-25).  _(ATO PCG 2023/1)_
+- **Fixed rate method** -- Covers energy expenses (electricity, gas), phone, internet, stationery and computer consumables. You must incur additional running expenses and keep records of actual hours worked from home and evidence of the covered expenses incurred. The fixed rate covers those expenses for the year. Claim qualifying occupancy expenses separately only when an area of the home is a place of business. [ATO guidance for sole traders working from home](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/deductions/deductions-for-home-based-business-expenses/home-based-business-expenses-sole-trader-or-partnership).
 
 #### Actual cost method
 
-- **Actual cost method** -- Calculate the actual costs of running the home office. Apportion based on floor area of the dedicated work area as a percentage of total home area, and the proportion of the year the area is used for work. Keep receipts and records for every expense claimed.
+- **Actual cost method** -- Work out each additional running expense incurred for business and keep records supporting its business portion. Use the actual usage or another reasonable basis for the particular expense, such as energy use and hours worked or the business share of phone and internet use. For separately deductible occupancy expenses, the usual calculation uses the floor area of the place of business and the period it was used. [ATO guidance for sole traders working from home](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/deductions/deductions-for-home-based-business-expenses/home-based-business-expenses-sole-trader-or-partnership).
 
 ### 4.7 Net business income or loss (P8)
 
-- **Net business income or loss (P8):** Sum the P8 income and deductible expenses using the applicable accounting method and tax adjustments. The established mapping is P8 label Z to supplementary return question 15 label C for non-primary-production net income or loss; confirm those labels against the issued 2026 form. [ATO transfer instructions](https://www.ato.gov.au/api/public/content/0-58fc149a-82af-406a-a4e0-252beb58a86b). If there is a loss, complete P9 and test Division 35: the adjusted-income requirement must be less than $250,000 before relying on the assessable-income, profits, real-property or other-assets tests. Assess statutory exceptions and Commissioner discretion separately. Otherwise defer the loss. [ITAA 1997 s 35-10](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/35-10).
+- **Net business income or loss (P8):** Subtract deductible expenses from the applicable P8 income and apply the tax adjustments. Transfer P8 label Z to supplementary return question 15 label C for non-primary-production net income or loss. If any business activity made a loss, complete P3 and P9 and test Division 35 for that activity. The adjusted-income requirement is less than $250,000 before relying on the assessable-income, profits, real-property or other-assets tests. Assess statutory exceptions and Commissioner discretion separately. Otherwise defer the activity's loss. [ATO 2026 transfer instructions](https://www.ato.gov.au/forms-and-instructions/individual-supplementary-tax-return-2026-instructions/income-questions-13-24-supplementary-tax-return-2026/15-net-income-or-loss-from-business-2026) · [ITAA 1997 s 35-10](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/35-10).
 
 ## Section 5 -- Edge cases and special rules
 
@@ -261,7 +263,7 @@ expected:
 
 ### 5.4 Capital vs revenue
 
-- **Capital vs revenue** -- Expenditure that creates a new asset or provides an enduring benefit is capital and not deductible under s 8-1. It may instead be depreciable or added to the cost base for CGT purposes. Common grey areas: website development, major software, business restructuring costs.  _(ITAA 1997 s 8-1)_
+- **Capital vs revenue** -- Establish the character of the advantage sought and the circumstances of the expenditure, including whether it adds to the business structure or pays for operating it. A new asset or enduring benefit can indicate capital expenditure. Capital expenditure is excluded under s 8-1 and may qualify under other provisions, such as depreciation or a CGT cost base. Consider this distinction for website development, major software and business restructuring. [ATO TR 2016/3](https://www.ato.gov.au/law/view/document?DocID=TXR%2FTR20163%2FNAT%2FATO%2F00001&PiT=99991231235958).
 
 ### 5.5 Hobby vs business
 
@@ -287,7 +289,7 @@ Before delivering output, verify:
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-> Contributed by Ryan Duguid.
+> [Original contributor credit](https://github.com/openaccountants/openaccountants/blob/fc090e8e95bae53674c2df8398b218b0c528a7c3/skills/australia/au-sole-trader-schedule.md).
 
 ## Sources
 
@@ -302,4 +304,4 @@ Read 2026-11-12 for the depreciation correction:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `au-sole-trader-schedule` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/au-sole-trader-schedule. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `au-sole-trader-schedule` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/au-sole-trader-schedule. If neither is available, confirm every figure against the official source pages cited above before relying on it.

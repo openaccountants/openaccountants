@@ -1,13 +1,13 @@
 ---
 name: la-corporate-income-tax
-description: "Lao PDR profit tax, tax year 2026, from the revised Law on Income Tax (Decree 145/PO, 2025): 20% standard rate, domestic minimum top-up to 15% for multinational groups, increased rates for tobacco and alcohol (22%), casinos (30%) and mining (35%), reduced 5%, 7% and 10% rates, and the commencement-date question; old-law lump-sum and withholding figures held for confirmation."
+description: "Lao PDR profit tax, tax year 2026, from the revised Law on Income Tax (88/NA of 2025): 20% standard rate, domestic minimum top-up to 15% for multinational groups, increased rates for tobacco and alcohol (22%), casinos (30%) and mining (35%), reduced 5%, 7% and 10% rates, and current filing and withholding rules."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/la-corporate-income-tax"
   jurisdiction: "LA"
   tax_year: "2026"
-  last_updated: "2026-11-14"
+  last_updated: "2026-11-22"
 ---
 
 # Laos corporate income tax (profit tax)
@@ -16,7 +16,7 @@ metadata:
 
 ## Who this applies to
 
-Enterprises and other legal entities liable to profit tax in Lao PDR. The governing law is the Law on Income Tax (Revised), adopted by National Assembly Resolution No. 164/NA of 25 June 2025 and promulgated by Presidential Decree No. 145/PO of 6 August 2025; it replaces Law No. 67/NA of 18 June 2019. Article 74 names 1 September 2025 as the commencement date and refers to promulgation and publication; the Lao Official Gazette register records publication on 19 June 2026. Which rules govern a period or transaction falling between those dates needs a Lao practitioner. Payroll income tax is in [payroll](la-payroll-social.md).
+Enterprises and other legal entities liable to profit tax in Lao PDR. The revised Income Tax Law No. 88/NA of 25 June 2025 was adopted under National Assembly Resolution No. 164/NA and promulgated by Presidential Decree No. 145/PO of 6 August 2025. Article 74 replaces Law No. 67/NA of 18 June 2019 and names 1 September 2025 subject to promulgation and Gazette publication. The Gazette records publication on 19 June 2026. Articles 107–110 of the Law on Making Legislation govern publication, effectiveness and retroactivity. Confirm the applicable law for earlier facts and periods straddling publication. [Article 74](https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf#page=34) · [Gazette register](https://laoofficialgazette.gov.la/index.php?r=site/listlegistioncp&agencies_id=2&old=0) · [Law on Making Legislation](https://laoofficialgazette.gov.la/index.php?id=2375&r=site%2Fdisplay) Payroll income tax is in [payroll](la-payroll-social.md).
 
 ## Rates, bands and thresholds
 
@@ -27,7 +27,7 @@ Enterprises and other legal entities liable to profit tax in Lao PDR. The govern
 | Tobacco products: producing, importing, selling (art. 16(1.1)) | 22%, of which 2% to the Tobacco Control Fund | 2026 | https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf |
 | Alcoholic beverages: producing, importing, selling (art. 16(1.2)) | 22%, of which 2% to the health promotion fund | 2026 | https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf |
 | Casino business (art. 16(1.3)) | 30% | 2026 | https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf |
-| Mineral exploration and extraction concessions, and mineral exporters (art. 16(1.4)) | 35% | 2026 | https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf |
+| Mineral extraction concessions and mineral exporters (art. 16(1.4)) | 35% | 2026 | https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf |
 | Research and innovation, modern hospitals, medicines and medical equipment, traditional medicine, after the investment-law exemption ends (art. 16(2.1)) | 5% | 2026 | https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf |
 | Innovative, environmentally friendly technology, natural-resource protection and clean energy in production, after the exemption ends (art. 16(2.2)) | 7% | 2026 | https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf |
 | Companies listed on the securities exchange, for 10 years from listing (art. 16(2.3)) | 10% | 2026 | https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf |
@@ -36,13 +36,19 @@ The Law gives each rate in words and digits. After the 10-year listing period th
 
 ## The base
 
-Profit tax falls on annual taxable profit (art. 14, with the art. 17 non-taxable receipts and art. 18 non-deductible expenses). Domestic enterprises are taxed on worldwide income and foreign enterprises on Lao-source income (old-law position, not re-read). The domestic minimum top-up applies to a legal entity in a multinational group where the effective tax actually paid by all its legal entities is below 15% under international rules; the procedures are left to separate regulations, not read here.
+For businesses with compliant accounts, calculate annual taxable profit as taxable receipts less allowed expenses, or adjust book profit using Articles 17 and 18. Apply the domicile, Lao establishment and income-source rules in Articles 7, 8 and 12. Articles 13–14 prescribe a deemed-profit base for specified businesses, including non-domiciled businesses with Lao receipts and no Lao establishment. The 15% domestic minimum top-up uses the multinational group's effective tax under the international rules referred to in Article 15. Separate regulations determine its implementation. [Articles 12–15](https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf#page=7)
 
-Small businesses that do not keep full accounts paid a lump-sum tax on turnover under the old Law No. 67/NA; those figures are on the Not yet confirmed line.
+For small businesses, confirm the applicable accounting, deemed-profit and any separate microenterprise regime before calculating. The 2019 turnover schedule was under the superseded law. [Articles 13–14 and 74](https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf#page=7)
 
 ## Deadlines and filing
 
-Ryan Duguid's reading: the annual profit tax return is due by 20 January of the following year, and financial statements by 31 March after a 31 December year end (Tax Administration Law and Accounting Law; not reopened). The Lao Tax Department publishes notices each year; check the current one.
+| Obligation | Deadline under the revised law | Official URL |
+|---|---|---|
+| Annual profit tax declaration under proper accounting (art. 20) | 31 March of the following year. For an approved non-calendar accounting period, within 3 months after close. | https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf |
+| Annual financial statements and tax reconciliation (art. 21) | 31 March of the following year. Listed companies have until 30 April. For an approved non-calendar accounting period, within 3 months after close. | https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf |
+| Profit tax instalments under proper accounting (art. 22) | By 20 July and 31 December of the tax year, followed by the annual reconciliation. | https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf |
+
+Check the Tax Department's current notices for applicable filing procedures.
 
 ## Penalties and interest
 
@@ -50,11 +56,13 @@ Not read for this guide (Tax Administration Law).
 
 ## Cross-border points
 
-Payments to non-residents: the old law and a secondary summary gave withholding of 10% on dividends, interest, services, rent and performers, 5% on royalties and 2% on share transfers, and a separate final foreign withholding tax on foreign contractors bundling deemed profit (1.4% agriculture, 2% industry, 3% commerce and services, 6% electricity and minerals) with 10% VAT on services. The revised Law's art. 38 sets the same 10%, 5% and 2% rates for individuals by income type, but its regime for legal-entity payees was not read; all of these are on the Not yet confirmed line. The top-up rule interacts with foreign Pillar Two rules; see the separate regulations.
+For the applicable non-domiciled supplier without a Lao establishment, the payer calculates and withholds profit tax using the Article 14 deemed-profit ratio for the activity and the applicable rate in Articles 15–16. For ordinary commerce and services at the standard rate, 15% of gross receipts is deemed profit and 20% of that amount is profit tax. Article 20(2) prescribes declaration within 15 days of paying the supplier. Article 22(3) governs remittance and payer liability. [Articles 12–16 and 20–22](https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf#page=7)
+
+Classify dividends, interest, royalties, rent and share transfers under the applicable income category, domicile rules and treaty. Articles 32–43 and 45–54 distinguish domiciled and non-domiciled income. Check VAT separately in [the VAT guide](laos-vat.md).
 
 ## Two worked examples that recompute
 
-**1. Ordinary enterprise, taxable profit LAK 1,000,000,000.** Profit tax at 20% = LAK 200,000,000 (derived).
+**1. Ordinary enterprise, taxable profit LAK 1,000,000,000 under the revised law.** Profit tax at 20% = LAK 200,000,000 (derived).
 
 ```oa-check
 name: Laos standard profit tax
@@ -66,7 +74,7 @@ expected:
   tax: 200000000
 ```
 
-**2. Beer producer, taxable profit LAK 500,000,000.** Profit tax at 22% = LAK 110,000,000, of which 2% of profit (LAK 10,000,000) goes to the health promotion fund (derived).
+**2. Beer producer, taxable profit LAK 500,000,000 under the revised law.** Profit tax at 22% = LAK 110,000,000, of which 2% of profit (LAK 10,000,000) goes to the health promotion fund (derived).
 
 ```oa-check
 name: Laos alcohol producer profit tax
@@ -92,11 +100,12 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law on Income Tax (Revised), Lao Official Gazette scan, arts 15 and 16 on printed pages 7 and 8 (Read as rendered pages for every rate in the table) | https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf | 2026-11-14 |
-| Lao Official Gazette, Ministry of Finance register (Read by Ryan Duguid for the 19 June 2026 publication record) | https://laoofficialgazette.gov.la/index.php?r=site/listlegistioncp&agencies_id=2&old=0 | 2026-11-11 |
+| Law on Income Tax (Revised) No. 88/NA, Gazette signed text, Articles 12–22, 32–43 and 74 | https://laoofficialgazette.gov.la/kcfinder/upload/files/88-25-6-2025_0001.pdf | 2026-11-24 |
+| Lao Official Gazette, Ministry of Finance register, publication date | https://laoofficialgazette.gov.la/index.php?r=site/listlegistioncp&agencies_id=2&old=0 | 2026-11-24 |
+| Law on Making Legislation (Revised), Articles 107–110 | https://laoofficialgazette.gov.la/index.php?id=2375&r=site%2Fdisplay | 2026-11-24 |
 
-Not yet confirmed: the period between 1 September 2025 (art. 74) and publication on 19 June 2026; the top-up regulations; the lump-sum regime under the revised Law (old Law 67/NA: turnover up to LAK 50 million exempt; LAK 50 million to 400 million at 1% manufacturing and agriculture, 2% commerce, 3% services); withholding on payments to legal entities and non-residents and the foreign contractor regime (figures above, old law and secondary sources); the 20 January return and 31 March financial statement dates; penalties. The old guide's 13% rate for 4 years for listed companies and "education 5%" are not in the revised Law.
+Not yet confirmed: transitional application to periods before or straddling Gazette publication, implementing rules for the domestic minimum top-up, any separate current microenterprise turnover regime, transaction-specific income-tax or treaty withholding, and applicable penalties.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `la-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/la-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `la-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/la-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
