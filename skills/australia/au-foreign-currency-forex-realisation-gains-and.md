@@ -29,24 +29,24 @@ It is not for financial arrangements subject to Division 230: the ATO states tha
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses |
-| Forex realisation event 1 | Disposal of foreign currency or all or part of a right to receive foreign currency | section 775-40 |
+| Forex realisation event 1 | Disposal of foreign currency or all or part of a right to receive foreign currency | [section 775-40](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_9/document_9.html) |
 | Forex realisation event 2 | Ceasing to have a right to receive foreign currency | listed by the ATO as one of the events triggering the Division 775 rules |
 | Forex realisation event 3 | Ceasing to have an obligation to receive foreign currency | listed by the ATO as one of the events triggering the Division 775 rules |
 | Forex realisation event 5 | Ceasing to have a right to pay foreign currency | listed by the ATO as one of the events triggering the Division 775 rules |
 | Forex realisation event 4 | Ceasing to have an obligation to pay foreign currency | listed by the ATO as one of the events triggering the Division 775 rules |
 | Short-term transactions | 12 month rule | the ATO states special rules apply to some short-term transactions where CGT assets and depreciating assets are acquired or disposed of, "unless an election is made that these rules not apply" |
-| Interaction with other provisions | include or deduct the same amount once | subsections 775-15(4) and 775-30(4) apply to overlap to that extent. Section 230-20 governs foreign exchange from Division 230 financial arrangements |
+| Interaction with other provisions | include or deduct the same amount once | subsections 775-15(4) and 775-30(4) apply to overlap to that extent. Section 230-20 governs foreign exchange from Division 230 financial arrangements ([ATO foreign exchange](https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses)) |
 
 **Limited balance election and buffering rule (source: forex-elections)**  _(https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/in-detail/forex-elections)_
 
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/in-detail/forex-elections |
-| Limited balance election (balance election) limit | A$250,000 inclusive | each aggregate across the elected accounts may equal the limit |
+| Limited balance election (balance election) limit | A$250,000 inclusive | each aggregate across the elected accounts may equal the limit ([ATO forex elections](https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/in-detail/forex-elections)) |
 | Measurement of the limit | on an ongoing basis | once a limited balance election is made, meeting the A$250,000 limit is measured on an ongoing basis |
-| Effect of a breach | apply ordinary treatment when the account fails the test | sections 775-255 and 775-260 can change how gains and losses are measured when the test starts or stops being met |
-| Buffering rule — number of periods | first increased-balance period and an eligible second period in an income year | the second is buffered only if the first qualifies for full buffering |
-| Buffering rule — time | up to the first 15 days of an eligible period | a longer eligible period keeps its first 15 days of relief. If the first period of the year directly continues one from the preceding year, apply the 15 days to the combined period |
+| Effect of a breach | apply ordinary treatment when the account fails the test | sections 775-255 and 775-260 can change how gains and losses are measured when the test starts or stops being met ([ATO forex elections](https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/in-detail/forex-elections)) |
+| Buffering rule — number of periods | first increased-balance period and an eligible second period in an income year | the second is buffered only if the first qualifies for full buffering ([ATO forex elections](https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/in-detail/forex-elections)) |
+| Buffering rule — time | up to the first 15 days of an eligible period | a longer eligible period keeps its first 15 days of relief. If the first period of the year directly continues one from the preceding year, apply the 15 days to the combined period ([ATO forex elections](https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/in-detail/forex-elections)) |
 | Buffering rule — size of breach | not more than the equivalent of A$500,000 | during a buffering period the total may exceed A$250,000 only if it stays within A$500,000 |
 | Limited balance test | credit balances and debit balances added separately, without netting | each total must be within the equivalent of A$250,000, translated at the average exchange rate for the third month before the start of the income year |
 
@@ -54,14 +54,14 @@ It is not for financial arrangements subject to Division 230: the ATO states tha
 
 | What | Value | Note |
 | --- | --- | --- |
-| Applicable commencement date | first day of the 2003-04 income year | for a taxpayer whose 2003-04 income year started before 1 July 2003, use the first day of its 2004-05 income year |
-| Rights acquired before the applicable commencement date, including rights arising under qualifying earlier contracts | disregard gains and losses from forex realisation events 1, 2 or 5 where no transitional election was made | check the acquisition of the particular right or part of a right under section 775-165. Review the separate pre-commencement rules for currency, obligations and loan extensions |
+| Applicable commencement date | first day of the 2003-04 income year | for a taxpayer whose 2003-04 income year started before 1 July 2003, use the first day of its 2004-05 income year ([ITAA 1997 Div 775](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_9/document_9.html)) |
+| Rights acquired before the applicable commencement date, including rights arising under qualifying earlier contracts | disregard gains and losses from forex realisation events 1, 2 or 5 where no transitional election was made | check the acquisition of the particular right or part of a right under section 775-165. Review the separate pre-commencement rules for currency, obligations and loan extensions ([ITAA 1997 Div 775](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_9/document_9.html)) |
 
 **Private or domestic gains and personal-use assets**  _([ITAA 1997, subsection 775-15(2)](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_9/document_9.html), [sections 108-20 and 118-10](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html))_
 
 | What | Value | Note |
 | --- | --- | --- |
-| Personal-use CGT asset gain exemption | A$10,000 or less in the first element of the asset's cost base | determine whether the currency or right is a personal-use asset and whether the gain would otherwise be taken into account under the CGT rules. For a private or domestic gain from event 1 or 2 on that currency or right, apply item 1 in subsection 775-15(2). A withdrawal amount or an account balance by itself cannot settle the test |
+| Personal-use CGT asset gain exemption | A$10,000 or less in the first element of the asset's cost base | determine whether the currency or right is a personal-use asset and whether the gain would otherwise be taken into account under the CGT rules. For a private or domestic gain from event 1 or 2 on that currency or right, apply item 1 in subsection 775-15(2) ([s 775-15](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_9/document_9.html); [ss 108-20, 118-10](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)). A withdrawal amount or an account balance by itself cannot settle the test |
 
 ## The method, step by step
 
@@ -109,26 +109,61 @@ For a crypto asset or stablecoin, establish the asset's legal character first an
 - GST treatment of foreign currency or digital currency transactions.
 - Any question needing a reporting label, form name, payment date or lodgment deadline: the pages cited here do not state them.
 
+## Two worked examples that recompute
+
+**Example 1. Forex realisation event 1 on foreign currency disposal.** A business holds USD 50,000 acquired at 0.70 USD/AUD (AUD cost base = 71,428.57) and converts it at 0.64 USD/AUD (AUD proceeds = 78,125.00), realising an assessable forex gain of AUD 6,696.43.
+
+```oa-check
+name: AU forex realisation event 1 gain on converting USD
+inputs:
+  usd_amount: 50000
+  acq_rate_usd_per_aud: 0.70
+  disp_rate_usd_per_aud: 0.64
+steps:
+  - cost_base_aud: round(usd_amount / acq_rate_usd_per_aud, 2)
+  - proceeds_aud: round(usd_amount / disp_rate_usd_per_aud, 2)
+  - forex_gain_aud: proceeds_aud - cost_base_aud
+expected:
+  cost_base_aud: 71428.57
+  proceeds_aud: 78125.00
+  forex_gain_aud: 6696.43
+```
+
+**Example 2. Retranslation choice under s 775-270 (event 8).** Translated opening balance AUD 40,000, deposits AUD 25,000, withdrawals AUD 18,000 and closing balance AUD 50,000 give `50,000 - 40,000 - 25,000 + 18,000 = AUD 3,000` net forex gain.
+
+```oa-check
+name: AU forex event 8 retranslation calculation under s 775-285(9)
+inputs:
+  closing_aud: 50000
+  opening_aud: 40000
+  deposits_aud: 25000
+  withdrawals_aud: 18000
+steps:
+  - forex_result_aud: closing_aud - opening_aud - deposits_aud + withdrawals_aud
+expected:
+  forex_result_aud: 3000
+```
+
 ## Sources
 
-- https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses
-- https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/forex-realisation-events
-- https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/common-forex-transactions
-- https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/in-detail/forex-elections
-- https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/taxation-of-financial-arrangements-tofa/guide-to-the-taxation-of-financial-arrangements-tofa/elective-methods
-- https://www.ato.gov.au/law/view/print?DocID=EV/1011645656132&PiT=99991231235958
-- https://www.ato.gov.au/law/view/print?DocID=EV/1051822836045&PiT=99991231235958
-- https://www.ato.gov.au/law/view/document?docid=TXD%2FTD201425%2FNAT%2FATO%2F00001
-- https://www.ato.gov.au/law/view/pdf?DocId=TXD%2FTD201425A1%2FNAT%2FATO%2F00001&PiT=99991231235958&filename=law%2Fview%2Fpdf%2Fpbr%2Ftd2014-025c1a1.pdf (TD 2014/25 addendum)
-- https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/what-are-crypto-assets
-- https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/your-industry/gst-and-crypto-assets/gst-and-digital-currency
-- https://www.legislation.gov.au/Series/C2004A05138
-- https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_9/document_9.html (Division 775)
-- https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_5/document_5.html (Subdivision 230-D)
-- https://www.legislation.gov.au/C2023A00029/asmade/2023-06-23/text/original/epub/OEBPS/document_1/document_1.html (Schedule 2)
-- https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html (section 195-1)
-- https://www.ato.gov.au/law/view/pdf?DocId=PSR%2FPS20084%2FNAT%2FATO%2F00001&PiT=20250522000001&filename=law%2Fview%2Fpdf%2Fpsr%2Fps2008-004c10.pdf (PS LA 2008/4)
-- https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-15 (section 775-15, forex realisation gains)
-- https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-30 (section 775-30, forex realisation losses)
+- https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses (read 2026-11-22)
+- https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/forex-realisation-events (read 2026-11-22)
+- https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/common-forex-transactions (read 2026-11-22)
+- https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/in-detail/forex-elections (read 2026-11-22)
+- https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/taxation-of-financial-arrangements-tofa/guide-to-the-taxation-of-financial-arrangements-tofa/elective-methods (read 2026-11-22)
+- https://www.ato.gov.au/law/view/print?DocID=EV/1011645656132&PiT=99991231235958 (read 2026-11-22)
+- https://www.ato.gov.au/law/view/print?DocID=EV/1051822836045&PiT=99991231235958 (read 2026-11-22)
+- https://www.ato.gov.au/law/view/document?docid=TXD%2FTD201425%2FNAT%2FATO%2F00001 (read 2026-11-22)
+- https://www.ato.gov.au/law/view/pdf?DocId=TXD%2FTD201425A1%2FNAT%2FATO%2F00001&PiT=99991231235958&filename=law%2Fview%2Fpdf%2Fpbr%2Ftd2014-025c1a1.pdf (TD 2014/25 addendum) (read 2026-11-22)
+- https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/what-are-crypto-assets (read 2026-11-22)
+- https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/your-industry/gst-and-crypto-assets/gst-and-digital-currency (read 2026-11-22)
+- https://www.legislation.gov.au/Series/C2004A05138 (read 2026-11-22)
+- https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_9/document_9.html (Division 775) (read 2026-11-22)
+- https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_5/document_5.html (Subdivision 230-D) (read 2026-11-22)
+- https://www.legislation.gov.au/C2023A00029/asmade/2023-06-23/text/original/epub/OEBPS/document_1/document_1.html (Schedule 2) (read 2026-11-22)
+- https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html (section 195-1) (read 2026-11-22)
+- https://www.ato.gov.au/law/view/pdf?DocId=PSR%2FPS20084%2FNAT%2FATO%2F00001&PiT=20250522000001&filename=law%2Fview%2Fpdf%2Fpsr%2Fps2008-004c10.pdf (PS LA 2008/4) (read 2026-11-22)
+- https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-15 (section 775-15, forex realisation gains) (read 2026-11-22)
+- https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-30 (section 775-30, forex realisation losses) (read 2026-11-22)
 
 Drafted by OpenAccountants. Not yet reviewed or approved by a named accountant.
