@@ -198,7 +198,7 @@ The stated T106 figures below are headline schedules from the form, not a comple
 | Application | To CRA Competent Authority Division |
 | Duration | Usually five years prospective; HOLD a fixed five-prior-year rollback maximum. Open-year/treaty/factual criteria and unilateral exclusion matter. [paragraph 36](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic94-4/international-transfer-pricing-advance-pricing.html); [TPM-11](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/transfer-pricing/11.html) |
 | Fees | None set out in IC 94-4R2; travel costs for CRA officials are borne by the CRA (taxpayer pays its own travel and any independent expert) |
-| Processing time | Dated 2024 cohort: 13 completed cases, mean 40.8 months acceptance-to-completion; index read 21 November 2026 linked this report. Not a service guarantee or prediction. [2024 report](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/competent-authority-services/advance-pricing-arrangements/2024-apa-program-report.html); [index](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/competent-authority-services/advance-pricing-arrangements.html) |
+| Processing time | Dated 2024 cohort: 13 completed bilateral/multilateral cases, mean 40.8 months acceptance-to-completion; index read 21 November 2026 linked this report. Not a service guarantee or prediction. [2024 report](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/competent-authority-services/advance-pricing-arrangements/2024-apa-program-report.html); [index](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/competent-authority-services/advance-pricing-arrangements.html) |
 | Annual compliance report | Required |
 | Key benefit | HOLD unconditional immunity. Protection depends on actual covered transactions, effective/complied-with APA and statutory conditions; not every administrative penalty. [IC94-4R2](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic94-4/international-transfer-pricing-advance-pricing.html); [247](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-247.html) |
 
@@ -305,11 +305,11 @@ The assumed seven-million base exceeds either gate; once the applicable gate is 
 ```oa-check
 name: Historical 2024 APA completion-stage mean reconciliation
 inputs:
-  pre_acceptance_to_acceptance_stage: 18.9
-  acceptance_to_negotiation_stage: 14.3
-  negotiation_to_completion_stage: 7.6
+  due_diligence_months: 18.9
+  negotiation_months: 14.3
+  post_negotiation_months: 7.6
 steps:
-  - reported_combined_mean: pre_acceptance_to_acceptance_stage + acceptance_to_negotiation_stage + negotiation_to_completion_stage
+  - reported_combined_mean: due_diligence_months + negotiation_months + post_negotiation_months
 expected:
   reported_combined_mean: 40.8
 ```
@@ -333,7 +333,7 @@ Completed 21 November 2026 reads are reused after confirming the baseline is unc
 | [TPM-11](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/transfer-pricing/11.html) | Conditional rollback with open-year/treaty/factual criteria; fixed five-year maximum not substantiated, unilateral exclusion retained | 2026-11-21 |
 | [TPM-14](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/transfer-pricing/14-2010-update-oecd-transfer-pricing-guidelines.html) | Most-appropriate method and equal-reliability preferences/natural hierarchy; not universal interchangeability | 2026-11-21 |
 | [CRA APA report index](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/competent-authority-services/advance-pricing-arrangements.html) | At the read date, linked 2024 as latest report; not a promise of current pending-case duration | 2026-11-21 |
-| [CRA 2024 APA report](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/competent-authority-services/advance-pricing-arrangements/2024-apa-program-report.html) | Completed-case table: 13 cases and 40.8-month mean, stage sum 18.9+14.3+7.6; historical cohort, not guaranteed completion | 2026-11-21 |
+| [CRA 2024 APA report](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/competent-authority-services/advance-pricing-arrangements/2024-apa-program-report.html) | Completed-case table: 13 bilateral/multilateral cases, 40.8-month mean; due diligence 18.9, negotiations 14.3, post-negotiations 7.6 months. Bounded 25 November re-read of completion paragraph/table resolves stage labels; historical cohort, not a guarantee | 2026-11-21; bounded follow-up 2026-11-25 |
 | [CRA T4012](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t2-corporation-income-tax-guide-before-you-start.html) | Applicable completed return/balance-payment passages reused; three-month conditions not determined by entity label alone | 2026-11-21 |
 
 **Not yet confirmed:** actual reportable-person/partnership and documentation scope, complete case-specific enhanced contents, subsequent material changes, partnership deadlines, Master/Local File separate-filing position, actual CbCR group/branch/notice/deadline, statutory penalty base/revenue/exclusions/setoffs and every administrative penalty assessment, fixed five-year rollback, unconditional APA immunity, unsupported 5% service markup, current simplification prescription/operational status, loan/guarantee/interest and thin-cap scope, T1134, Pillar Two, current audit-risk assertions, customs/GST relationship and downstream CbCR use. Holds block affected conclusions; six corrected citation/scope groups do not make every tax claim verified.
