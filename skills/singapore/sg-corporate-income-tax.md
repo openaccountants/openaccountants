@@ -3,16 +3,17 @@ name: sg-corporate-income-tax
 description: "Corporate income tax in Singapore for a company, for Year of Assessment 2027 (financial year ending in 2026), with Year of Assessment 2026 figures alongside where a relief is set year by year. Covers the 17% rate, the preceding-year basis, what income is taxed, the foreign-sourced income exemption, the partial tax exemption, the start-up exemption, the YA 2026 corporate income tax rebate and cash grant, deductions, capital allowances, losses, group relief, one-tier dividends, ECI, Form C-S, Form C-S (Lite), Form C, instalments and penalties. Use for: how is my Singapore Pte Ltd taxed, Singapore company tax rate, corporate tax Singapore, start-up tax exemption, partial tax exemption, CIT rebate, ECI filing, Form C-S deadline, tax on company profit Singapore. Out of scope: sole proprietors and partners (sg-income-tax), GST (singapore-gst, sg-gst-return), CPF (sg-cpf-medisave), forming the company (singapore-formation), individual residency (sg-tax-residency), capital gains detail (sg-zero-cgt), transfer pricing (singapore-transfer-pricing)."
 jurisdiction: SG
 tax_year: 2026
-last_updated: 2026-11-20
+tax_year_notes: "YA 2027 baseline for financial years ending in 2026, with YA 2026 figures and relief identified separately. Law checked as at 22 November 2026."
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 category: international
 type: computation
-version: 1.0
+version: 1.1
 ---
 
-# Singapore Corporate Income Tax v1.0
+# Singapore Corporate Income Tax v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -44,8 +45,8 @@ Tax incentives with a concessionary rate, insurers, shipping, property developer
 4. Revenue, accounting profit, and the tax adjustments: private car costs, depreciation, capital items, donations, fixed assets bought.
 5. Unutilised losses, capital allowances or donations brought forward, and any change in shareholders since they arose.
 6. Any foreign income, any of it brought into Singapore, foreign tax paid on it, and any payment to a non-resident (interest, royalties, service or management fees, director's fees).
-7. For the YA 2026 cash grant: did the company make CPF contributions in 2025 for at least one local employee who is not a shareholder-director.
-8. Is the company part of a group with consolidated revenue of EUR 750 million or more.
+7. For the YA 2026 cash grant, check the 2025 CPF records, the employee's citizenship or permanent residence and shareholder-director status, any centralised hiring or secondment and whether the company remained active at disbursement.
+8. For a multinational group, obtain consolidated revenue for the 4 preceding financial years and the periods they cover. Apply the EUR 750 million test in section 8 of the Multinational Enterprise (Minimum Tax) Act 2024.
 
 ## The method, step by step
 
@@ -80,11 +81,11 @@ Foreign income that arises from a trade or business carried on in Singapore is t
 
 | Condition | Rule | Source |
 |---|---|---|
-| Subject to tax | The income was subject to tax of a similar character to income tax in the territory it is received from. For a dividend, the underlying tax paid by the paying company counts | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/companies-receiving-foreign-income) |
-| Headline rate | The highest corporate tax rate of that territory is at least 15% at the time the income is received in Singapore | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/companies-receiving-foreign-income) |
+| Subject to tax | Test the territory's comparable income tax or qualified domestic minimum top-up tax, disregarding excluded top-up tax. For dividends the underlying tax paid by the paying company can count. IRAS can accept incentives for substantive business activities where the company documents the exemption | [ITA section 13(9)(a)](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr13-) and [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/companies-receiving-foreign-income) |
+| Headline rate | The highest corporate tax rate of that territory is at least 15% on receipt in Singapore. Disregard excluded and qualified domestic minimum top-up taxes for this test | [ITA section 13(9)(b)](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr13-) |
 | Benefit | The Comptroller is satisfied the exemption is beneficial to the company | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/companies-receiving-foreign-income) |
 
-Other foreign income (interest, royalties, rent) is taxable when received, with a foreign tax credit under step 8.
+For other foreign income (such as interest, royalties or rent), check for a specific exemption, including under [ITA section 13(12)](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr13-). If the income is taxable on receipt, test foreign tax credit eligibility under step 8.
 
 ### 3. Compute chargeable income [ITA sections 14 and 15](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr14-)
 
@@ -99,10 +100,10 @@ Start from accounting profit and adjust.
 | Private or domestic expenses | Section 15(1)(a) | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/business-expenses) |
 | Capital expenditure, including the cost of incorporating the company and buying fixed assets | Section 15(1)(c). Claim capital allowances instead where they exist | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/business-expenses) |
 | Depreciation and amortisation | Add back. Claim capital allowances instead | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/business-expenses) |
-| Private cars (S-plated) and business cars (Q-plated or RU-plated, registered on or after 1 April 1998) | Section 15(1)(k). No deduction for running costs, even when the car is used for business and even when paid as a reimbursement. Goods and commercial vehicles (vans, lorries, buses) are deductible | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/business-expenses/tax-treatment-of-business-expenses-(m-r)) |
+| Private cars (S-plated) and business cars (Q-plated or RU-plated, registered on or after 1 April 1998) | Disallow ordinary running costs and reimbursements under section 15(1)(k), subject to the statutory exceptions for qualifying vehicles and businesses. Apply ordinary deduction tests to vans, lorries and buses | [ITA section 15(1)(k) and (3)](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr15-) and [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/business-expenses/tax-treatment-of-business-expenses-(m-r)) |
 | Donations | Not a business expense. Approved donations are relieved separately | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/business-expenses) |
 
-Revenue expenses incurred up to 1 year before the deemed date of commencement of business are deductible. Earlier set-up costs are not. Source: [IRAS basic guide](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/basic-guide-to-corporate-income-tax-for-companies).
+Under section 14R, for an eligible business the deemed commencement date is the first day of the accounting year in which it earns its first business receipt. Test qualifying revenue expenditure in that year and in the 12 months before the deemed date. Check separate rules for specified pre-commencement costs such as qualifying research or renovation. [IRAS e-Tax Guide, paragraphs 2.1 and 2.2](https://www.iras.gov.sg/media/docs/default-source/e-tax/etaxguide_income-tax_treatment-of-certain-expenses-incurred-prior-to-the-commencement-of-a-business-activity.pdf).
 
 **Capital allowances** [ITA sections 19 and 19A](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr19A-). Claimed on plant and machinery used in the trade. The company chooses the method per asset:
 
@@ -111,9 +112,9 @@ Revenue expenses incurred up to 1 year before the deemed date of commencement of
 | 1 year, computers and prescribed automation equipment (section 19A(2)) | 100% of cost | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/capital-allowances) |
 | 1 year, low-value assets (section 19A(10A)) | 100% of cost for an asset costing not more than $5,000. Total claim for all low-value assets capped at $30,000 per YA | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/capital-allowances) |
 | 3 years (section 19A(1)) | One third of cost each year, for any qualifying asset | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/capital-allowances) |
-| Working life (section 19) | Initial allowance of 20% of cost, then the other 80% spread evenly over a working life of 6, 12 or 16 years as elected | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/capital-allowances) |
+| Working life (section 19) | Initial allowance of 20% and annual allowance on the remaining 80%. If the initial allowance is not claimed in the year the expenditure is incurred, calculate annual allowance on 100%. For qualifying YA 2023 onward acquisitions, elect 6 or 12 years if the prescribed life is 12 years or less. The 16-year option is available if the prescribed life is 16 years | [ITA section 19](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr19-) and [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/capital-allowances) |
 
-The 2-year write-off applied only to assets acquired in the basis periods for YA 2021, YA 2022 and YA 2024. It is not available for YA 2026 or YA 2027 purchases. No capital allowance is given on private cars (S-plated) or business cars (Q-plated, RU-plated), unless registered and used as private hire cars or for driving instruction. Vans, lorries and motorcycles qualify. A claim can be deferred to a later YA. On sale of an asset, compute a balancing allowance or balancing charge.
+The 2-year write-off applied to assets acquired in the basis periods for YA 2021, YA 2022 and YA 2024. Apply the available 1-year, 3-year or working-life methods to qualifying YA 2026 and YA 2027 purchases. Qualifying private hire or driving instruction cars and foreign-registered cars used exclusively outside Singapore for business can qualify for capital allowances. Vans, lorries and motorcycles used for business can also qualify. The 1-year and 3-year write-offs and working-life annual allowance can be deferred. The historical 2-year write-off and working-life initial allowance have fixed claim timing. Check for a balancing allowance or charge on disposal. [IRAS capital allowances](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/capital-allowances).
 
 **Unutilised losses, capital allowances and donations** [ITA sections 23 and 37](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr37-). Brought-forward losses must be set off first; the company cannot hold them back to make more use of an exemption. A capital allowance claim can be deferred.
 
@@ -123,14 +124,14 @@ The 2-year write-off applied only to assets acquired in the basis periods for YA
 | Capital allowances | Indefinitely | Shareholding test, and the company carries on the same trade or business | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/unutilised-items-(capital-allowances-trade-losses-donations)) |
 | Approved donations | Up to 5 YAs | Shareholding test | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/unutilised-items-(capital-allowances-trade-losses-donations)) |
 
-Shareholding test: the same persons must hold 50% or more of the shares on two dates. For losses and donations the dates are the last day of the year in which the loss was incurred and the first day of the YA in which it is deducted (section 37(12) and (14)). For capital allowances they are the last day of the YA in which the allowance arose and the first day of the YA of deduction (section 23(4)). Look through to the shareholders of the ultimate holding company. If the test fails, the items are lost unless the Minister waives the test because the change was not for a tax benefit (sections 23(5) and 37(16)).
+Shareholding test: the same persons must hold 50% or more of issued shares on both relevant dates. The first date is the last day of the calendar year in which the loss was incurred or the donation made, or the last day of the YA in which the capital allowances arose. The second is the first day of the YA of deduction. Apply the statutory look-through rules. For unutilised losses or capital allowances, apply to IRAS for a waiver if the shareholder change was for bona fide commercial reasons without a tax benefit or advantage. The Minister or an appointed person can grant a waiver under sections 23(5) and 37(16). [IRAS unutilised items](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/unutilised-items-(capital-allowances-trade-losses-donations)).
 
 **Carry-back** [ITA section 37D](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr37D-). Current-year unutilised capital allowances and trade losses can be carried back 1 YA, to the immediately preceding YA. The maximum is $100,000. Capital allowances go first, then losses. The shareholding and same-business tests apply, and the company must claim it. Source: [IRAS, loss carry-back relief](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-reliefs/loss-carry-back-relief).
 
 **Group relief** [ITA section 37B](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr37B-). Current-year unutilised capital allowances, trade losses and donations can be transferred to another group company if both companies:
 
 - are incorporated in Singapore;
-- are in the same group: one beneficially holds at least 75% of the ordinary shares of the other, or a third Singapore-incorporated company holds at least 75% of each. Holdings through a foreign company are ignored;
+- are in the same group under the 75% ordinary-share test, directly or through qualifying Singapore-incorporated companies. Apply the corresponding 75% residual profit and asset entitlement tests and apportion qualifying deductions if the companies met the group test for only part of the basis period;
 - have accounting periods ending on the same day; and
 - elect when they file their returns. The election is irrevocable.
 
@@ -153,9 +154,9 @@ The exemption applies to normal chargeable income, meaning income taxed at 17%. 
 
 - be incorporated in Singapore;
 - be tax resident in Singapore for that YA; and
-- have its total share capital beneficially held directly by no more than 20 shareholders throughout the basis period, where either all are individuals, or at least one is an individual holding at least 10% of the issued ordinary shares.
+- where limited by shares, have its total share capital beneficially held directly by no more than 20 shareholders throughout the basis period, where either all are individuals, or at least one is an individual holding at least 10% of issued ordinary shares throughout the period. For a company limited by guarantee, test whether all members are individuals throughout the period or at least one individual member represents at least 10% of total winding-up contributions throughout the period.
 
-Excluded whatever the shareholding, under [ITA section 43(11)](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr43-), for a company incorporated on or after 26 February 2013: a company that "undertakes property development in the basis period for that year of assessment, whether or not that is the only activity it carries out", and a company whose "only activity in that basis period is the holding of investments". The same applies where the company is a partner of a partnership that does either. IRAS words the two exclusions as companies whose principal activity is investment holding and companies that undertake property development for sale, for investment, or both. Both still get the partial exemption. A foreign company or its branch cannot claim the start-up exemption. A sole proprietorship or partnership converted into a company can claim it if the conditions are met. IRAS audits companies set up to split an existing business's income across shell companies. Source: [IRAS, exemption schemes](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes).
+For a company incorporated on or after 26 February 2013, [ITA section 43(11)](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr43-) excludes a company undertaking property development directly or as a partner, and a company whose sole activity is holding investments. Where a partner's partnership solely holds investments, the partnership limb excludes the company if the company itself has no activity or solely holds investments. The partial exemption is available to these companies on qualifying income. A sole proprietorship or partnership converted into a Singapore company can claim the start-up exemption if the conditions are met. IRAS audits companies set up to split an existing business's income across shell companies. [IRAS exemption schemes](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes).
 
 Tax payable before rebate = (chargeable income less the exempt amount) at 17%, less foreign tax credit and other set-offs.
 
@@ -166,28 +167,28 @@ A rebate is set one year at a time: announced in the Budget, then written into t
 | YA | CIT Rebate | Cash grant | Cap on rebate plus grant | Source |
 |---|---|---|---|---|
 | 2026 | 50% of tax payable | $2,000 | $40,000 | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes); ITA section 92M(1) and (3) |
-| 2027 | None announced as at 20 November 2026; the Act has no section for YA 2027 | None announced | Not applicable | See "Not yet confirmed" under Sources |
+| 2027 | Use the enacted baseline as at 22 November 2026 | Pending any YA 2027 announcement | Pending any YA 2027 announcement | [IRAS rebate table](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes) |
 
 How YA 2026 got to these figures: the Budget 2026 statement (paragraph 18(b)) gave a 40% rebate, a minimum benefit of $1,500 and a cap of $30,000. Budget 2026 Annex H-1, item 1, records the update announced in the 7 April 2026 Ministerial Statement: a 50% rebate, a minimum benefit of $2,000 and a total maximum of $40,000 per company. Both sets are for the same YA 2026; the second replaced the first. The enhanced figures are the law: section 92M, inserted by the Finance (Income Taxes) Act 2026 (Act 23 of 2026, in force 4 November 2026), remits "50% of the tax payable for that year of assessment" less "the cash grant of $2,000", up to "$40,000, less the cash grant of $2,000". IRAS applies the same figures.
 
 Rules for YA 2026:
 
-- The rebate goes to every taxpaying company, resident or not. It is computed on tax payable after set-offs such as foreign tax credit. It does not apply to income subject to a final withholding tax: section 92M(1)(a) leaves out tax levied under section 43(3), (3A), (3B) and (3C).
-- The cash grant goes to an active company that met the local employee condition: it made CPF contributions in calendar year 2025 for at least one Singapore citizen or permanent resident employee, not counting shareholders who are also directors (section 92M(3) and (7): the definition of employee "excludes any individual who is a shareholder and also a director of the company"). No grant is paid to a company that, at the time of payment, is not carrying on a trade or business, is in liquidation, is in receivership over all its property, or has ceased to exist (section 92M(4)). The grant is exempt from tax (section 92M(6)).
+- The rebate is available to resident and non-resident taxpaying companies where the Comptroller is satisfied it is beneficial. Compute it after set-offs such as foreign tax credit and before tax deducted at source. Exclude tax levied under section 43(3), (3A), (3B) and (3C).
+- The tax-exempt cash grant generally requires an active company to have made a compulsory CPF contribution in calendar year 2025 for at least one qualifying Singapore citizen or permanent resident employee, excluding shareholder-directors. Holding investments counts as active. There are separate conditions for a centralised hire or a related-party secondee, including who bore the remuneration and CPF cost. Apply the disbursement exclusions for inactive companies, liquidation, receivership over all property or cessation, subject to Comptroller permission. The Comptroller may also waive the contribution timing requirement where just and equitable. [ITA section 92M(3) to (8)](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr92M-).
 - A company that gets the cash grant: if 50% of tax is $2,000 or less, no rebate is given. If it is more, the rebate is the 50% amount (capped at $40,000) less $2,000 (section 92M(1) and (2)).
 - A company that does not get the cash grant: the rebate is the 50% amount, capped at $40,000.
 - IRAS computes the rebate automatically. Do not deduct it in the ECI or the return.
 - A company that met the condition but did not receive the grant (for example staff hired through a group company) can appeal by myTax Mail by 30 November 2026.
 
-For YA 2027, compute tax with no rebate and tell the client that a rebate, if any, would be announced in Budget 2027.
+For YA 2027, give the tax under the law at the audit cutoff and check the availability of any YA 2027 relief at the time of filing.
 
 ### 6. Dividends and capital gains [ITA section 13(1)(za)](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr13-)
 
-**One-tier system.** The company's tax is final. Section 13(1)(za) exempts "any dividends paid on or after 1 January 2008 by any company resident in Singapore". The shareholder pays no further Singapore income tax on the dividend. The IRAS withholding tax rate table has no line for dividends.
+**One-tier system.** The company's tax is final. Section 13(1)(za) exempts "any dividends paid on or after 1 January 2008 by any company resident in Singapore". Ordinary one-tier dividends are exempt for shareholders. Check separate rules for co-operative distributions. [IRAS dividend treatment](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/what-is-taxable-what-is-not/dividends).
 
 **Capital gains.** There is no general capital gains tax. IRAS: "Capital gains are not taxable", for example gains on the sale of fixed assets. Whether a gain is capital or trading income is a question of fact (the badges of trade). Use [sg-zero-cgt](sg-zero-cgt.md) for that test and for the section 13W equity disposal rule. Source: [IRAS, taxable and non-taxable income](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/taxable-non-taxable-income).
 
-**Gains on foreign assets** [ITA section 10L](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr10L-). An exception to the rule above. A gain from the sale of an asset situated outside Singapore, sold on or after 1 January 2024, is taxed as income when the gain is received in Singapore, if the seller is an entity of a "relevant group". A group is a relevant group if its entities are not all incorporated in one jurisdiction, or any entity has a place of business in more than one jurisdiction. An "excluded entity" with adequate economic substance in Singapore is outside the rule (other than for intellectual property). A Singapore company whose group is all in one jurisdiction, with no place of business elsewhere, is outside the definition of a relevant group as read. If the client is in a cross-border group and sold a foreign asset, refer.
+**Gains on foreign assets** [ITA section 10L](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr10L-). For sales or disposals on or after 1 January 2024, section 10L can charge gains received in Singapore that would otherwise be non-taxable or exempt. It applies to a seller in a relevant group whose entities are established in multiple jurisdictions or have a place of business in more than one jurisdiction. Test the applicable financial institution, incentive and economic substance exclusions. Intellectual property gains have a separate rule, including the qualifying intellectual property nexus test. Refer if the client is in a cross-border group and disposed of a foreign asset.
 
 ### 7. File and pay
 
@@ -198,9 +199,9 @@ For YA 2027, compute tax with no rebate and tell the client that a rebate, if an
 | Deadline | 3 months from the financial year end | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/estimated-chargeable-income-(eci)-filing) |
 | Waiver, both needed | Annual revenue of $5 million or below, and ECI is nil | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/estimated-chargeable-income-(eci)-filing) |
 
-Revenue here is the main income source, not interest or other separate-source income. The waiver is self-assessed; there is nothing to send to IRAS. The waiver does not remove the duty to file the return.
+Use revenue from the company's main activity. Exclude separate-source income outside that activity. For an investment holding company use its investment income. The company self-assesses the ECI waiver and checks its return obligation separately.
 
-**The return.** Every company files Form C-S, Form C-S (Lite) or Form C by 30 November each year, even with no income or a loss. Filing is electronic at mytax.iras.gov.sg.
+**The return.** File the applicable corporate return by 30 November, including for a nil or loss year. A qualifying dormant company can apply for an IRAS filing waiver. File electronically at mytax.iras.gov.sg. [IRAS 2026 filing season](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-filing-season-2026) and [dormant company waiver](https://www.iras.gov.sg/taxes/corporate-income-tax/dormant-companies-or-companies-closing-down/dormant-companies).
 
 | Form | Who can use it | Documents | Source |
 |---|---|---|---|
@@ -210,7 +211,7 @@ Revenue here is the main income source, not interest or other separate-source in
 
 One-tier exempt Singapore dividends and foreign income exempt under section 13(8) do not stop a company using Form C-S. A foreign tax credit claim does: it needs Form C.
 
-**Payment** [ITA section 85](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr85-). Tax is payable within one month after the notice of assessment is served, even if the company objects. An objection must be filed within 2 months from the date of the notice.
+**Payment.** Tax is payable within one month after service of the notice of assessment, even if the company objects, subject to any extension allowed by the Comptroller. For a company the objection period is 2 months from service. [ITA section 85](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr85-) and [section 76](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr76-).
 
 **Instalments.** A Singapore-registered company that pays by GIRO can pay its ECI tax by instalments. The earlier it files, the more instalments:
 
@@ -221,7 +222,7 @@ One-tier exempt Singapore dividends and foreign income exempt under section 13(8
 | 3 months | 6 | same |
 | After 3 months | None | same |
 
-File by the 26th of the month to count for that month. The minimum monthly GIRO deduction is $50.
+File by the 26th for the earlier start to GIRO deductions. IRAS may combine the first 2 deductions for a later filing within the same qualifying month. The minimum monthly GIRO deduction is $50. [IRAS ECI filing](https://www.iras.gov.sg/taxes/corporate-income-tax/estimated-chargeable-income-(eci)-filing).
 
 **Penalties.**
 
@@ -229,34 +230,34 @@ File by the 26th of the month to count for that month. The minimum monthly GIRO 
 |---|---|---|
 | Tax not paid by the due date (section 87) | 5% penalty on the unpaid tax | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/corporate-income-tax-payment/late-payment-or-non-payment-of-corporate-income-tax) |
 | Still unpaid 60 days after the 5% penalty | A further 1% for each completed month, up to 12% of the unpaid tax | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/corporate-income-tax-payment/late-payment-or-non-payment-of-corporate-income-tax) |
-| Return not filed by the due date (section 94A(1)) | IRAS may issue an estimated assessment (pay within 1 month), offer composition of up to $5,000 per offence, or summon the company. On conviction, a fine of up to $5,000 | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/form-c-s-form-c-s-(lite)-form-c-filing/late-filing-or-non-filing-of-Corporate-Income-Tax-Returns-form-c-s-form-c-s-(Lite)-form-c) |
-| Return not filed for 2 years or more (section 94A(3)) | On conviction, a penalty of twice the tax assessed and a fine of up to $5,000 | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/form-c-s-form-c-s-(lite)-form-c-filing/late-filing-or-non-filing-of-Corporate-Income-Tax-Returns-form-c-s-form-c-s-(Lite)-form-c) |
-| Director does not comply with a notice under section 65B(3) (offence under section 65C) | Fine of up to $10,000, or imprisonment of up to 12 months, or both | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/form-c-s-form-c-s-(lite)-form-c-filing/late-filing-or-non-filing-of-Corporate-Income-Tax-Returns-form-c-s-form-c-s-(Lite)-form-c) |
-| Incorrect return without reasonable excuse or through negligence (section 95(2)) | Penalty of double the tax undercharged (IRAS: up to 200%); fine of up to $5,000; imprisonment of up to 3 years. Where there is no negligence, section 95(1) sets a penalty equal to the tax undercharged | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/form-c-s-form-c-s-(lite)-form-c-filing/penalties-for-errors-in-tax-returns) |
-| Wilful intent to evade tax (section 96) | Penalty of treble the tax undercharged; fine of up to $10,000; imprisonment of up to 3 years | [ITA section 96](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr96-) |
-| Serious fraudulent evasion: false books or records, or "any fraud, art or contrivance" (section 96A) | Penalty of 4 times the tax undercharged (IRAS: up to 400%); fine of up to $50,000; imprisonment of up to 5 years | [IRAS](https://www.iras.gov.sg/taxes/corporate-income-tax/form-c-s-form-c-s-(lite)-form-c-filing/penalties-for-errors-in-tax-returns) |
+| Return not filed by the due date | IRAS may assess estimated tax payable within 1 month of service, offer composition of up to $5,000 per offence, or summon the company. A statutory filing failure without reasonable excuse carries a fine of up to $5,000 on conviction, with up to 6 months' imprisonment in default of payment | [ITA sections 85 and 94A](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr85-,pr94A-) and [IRAS late filing](https://www.iras.gov.sg/taxes/corporate-income-tax/form-c-s-form-c-s-(lite)-form-c-filing/late-filing-or-non-filing-of-Corporate-Income-Tax-Returns-form-c-s-form-c-s-(Lite)-form-c) |
+| Filing failure without reasonable excuse for 2 years or more | On conviction, penalty of twice the tax assessed and a fine up to $5,000, with up to 6 months' imprisonment in default of payment | [ITA section 94A(3)](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr94A-) |
+| Director fails without reasonable excuse to comply with a section 65B(3) notice | On conviction, fine up to $10,000, imprisonment up to 12 months or both. A continuing offence can carry a further fine of up to $100 for each day or part of a day after conviction | [ITA section 65C](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr65C-) |
+| Incorrect return or information without reasonable excuse or through negligence, section 95(2) | On conviction, penalty of double the tax undercharge for a tax-only offence, plus a fine up to $5,000, imprisonment up to 3 years or both. Section 95(1) provides a 100% penalty for the specified basic offence | [ITA section 95](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr95-) |
+| Wilful intent to evade tax, section 96 | On conviction for a tax-only offence, penalty of 3 times the undercharge plus a fine up to $10,000, imprisonment up to 3 years or both | [ITA section 96](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr96-) |
+| Serious fraudulent evasion, section 96A | On conviction for a tax-only offence involving conduct such as false records, penalty of 4 times the undercharge plus a fine up to $50,000, imprisonment up to 5 years or both | [ITA section 96A](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr96A-) |
 
 Keep records for at least 5 years from the relevant YA.
 
 ### 8. Cross-border pointers
 
-**Withholding tax on payments to non-residents** [ITA sections 45 and 45A](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr45-). The paying company withholds and files by the 15th of the second month from the date of payment.
+**Withholding tax on payments to non-residents.** The paying company files and pays by the 15th of the second month following the payment month. Determine the actual or deemed payment date using the earliest applicable date under the contract or invoice, crediting and actual payment rules. Check the specific timing rules for a director's fee. [ITA section 45](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr45-) and [IRAS deemed payment guide](https://www.iras.gov.sg/docs/default-source/e-tax/etaxguide_determining-the-date-of-payment-or-deemed-payment-for-the-purpose-of-complying-with-withholding-tax-obligations.pdf).
 
 | Payment to a non-resident | Rate | Source |
 |---|---|---|
 | Interest, commissions and fees in connection with a loan | 15% | [IRAS](https://www.iras.gov.sg/taxes/withholding-tax/basics-of-withholding-tax/types-of-payment-and-withholding-tax-rates) |
-| Royalties for the use of movable property such as intellectual property | 10% | same |
-| Rent for the use of movable property | 15% | same |
-| Technical assistance, service and management fees to a non-resident company | Prevailing corporate income tax rate, which is 17% | [IRAS rates table](https://www.iras.gov.sg/taxes/withholding-tax/basics-of-withholding-tax/types-of-payment-and-withholding-tax-rates) and [IRAS rate page](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes) |
+| Royalties for the use of movable property such as intellectual property | Generally 10%, subject to the separate rules for royalties paid to authors, composers or choreographers and to applicable treaty or exemption | [IRAS rates table](https://www.iras.gov.sg/taxes/withholding-tax/basics-of-withholding-tax/types-of-payment-and-withholding-tax-rates) |
+| Rent for the use of movable property | 15% | [IRAS rates table](https://www.iras.gov.sg/taxes/withholding-tax/basics-of-withholding-tax/types-of-payment-and-withholding-tax-rates) |
+| Covered technical assistance, service and management fees to a non-resident company | 17% of gross fees attributable to work performed in Singapore, subject to treaty relief. Tax withheld can be reconciled against tax on net income | [IRAS payments subject to withholding](https://www.iras.gov.sg/taxes/withholding-tax/payments-to-non-resident-company/payments-that-are-subject-to-withholding-tax) |
 | Remuneration of a non-resident director | 24% | [IRAS](https://www.iras.gov.sg/taxes/withholding-tax/basics-of-withholding-tax/types-of-payment-and-withholding-tax-rates) |
 
-The 15% and 10% rates apply to the gross payment and are a final tax, where the non-resident earns the income through operations outside Singapore. If the operations are carried on in Singapore, the prevailing corporate rate applies to a non-individual. A tax treaty may lower the rate; the return must still be filed. Test first whether the payment is within the withholding rules at all, and get the treaty and a certificate of residence before using a lower rate. Late payment under section 45: a 5% penalty, then 1% per completed month up to 15%.
+The ordinary 15% and 10% reduced rates apply to gross payments and are final where the non-resident derives the income through operations outside Singapore and meets the statutory conditions. For in-Singapore operations check the prevailing corporate rate for a non-individual. Check the separate 24% rate and phased concession for qualifying individual authors, composers and choreographers. Test whether withholding applies and retain the treaty and certificate of residence when claiming treaty relief. Late payment under section 45 carries 5% on the unpaid tax. After 30 days overdue, a further 1% applies per completed month of non-payment, capped at a 15% additional penalty. [ITA section 45(4)](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr45-) and [IRAS rates table](https://www.iras.gov.sg/taxes/withholding-tax/basics-of-withholding-tax/types-of-payment-and-withholding-tax-rates).
 
 **Foreign tax credit.** For foreign income that is taxed in Singapore, a resident company gets a credit equal to the lower of the foreign tax paid and the Singapore tax on the same income (net of expenses). It is given under a treaty (double tax relief) or unilaterally where there is no treaty. A company in a loss position gets no credit. Claim it in Form C. Source: [IRAS, foreign tax credit](https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-reliefs/foreign-tax-credit).
 
 **Transfer pricing.** Related-party transactions must be at arm's length. Use [singapore-transfer-pricing](singapore-transfer-pricing.md).
 
-**Global minimum tax** [Multinational Enterprise (Minimum Tax) Act 2024](https://sso.agc.gov.sg/Act/MEMTA2024). Enacted. For financial years beginning on or after 1 January 2025, Singapore charges a multinational enterprise top-up tax (the income inclusion rule) and a domestic top-up tax, to a minimum rate of 15%. They apply only to a multinational group whose consolidated revenue is EUR 750 million or more in at least 2 of the 4 financial years before the year in question. The undertaxed profits rule has not been implemented. A small or medium company outside such a group is not affected. If the client is in such a group, refer. Source: [IRAS, GloBE rules and DTT](https://www.iras.gov.sg/taxes/pillar-2-top-up-taxes/global-anti-base-erosion-(globe)-rules-and-domestic-top-up-tax-(dtt)).
+**Global minimum tax.** For financial years beginning on or after 1 January 2025, Singapore applies multinational enterprise top-up tax under the income inclusion rule and domestic top-up tax. Test the 15% jurisdictional effective tax rate, exclusions and any safe harbour. A multinational group meets the revenue test when consolidated revenue reaches EUR 750 million for at least 2 of the preceding 4 financial years, with the statutory adjustment for periods other than 12 months. Refer an in-scope group for the full computation. [Multinational Enterprise (Minimum Tax) Act 2024, section 8](https://sso.agc.gov.sg/Act/MEMTA2024?ProvIds=pr8-) and [IRAS GloBE rules and DTT](https://www.iras.gov.sg/taxes/pillar-2-top-up-taxes/global-anti-base-erosion-(globe)-rules-and-domestic-top-up-tax-(dtt)).
 
 ## Boundary and exception table
 
@@ -266,13 +267,13 @@ The 15% and 10% rates apply to the gross payment and are a final tax, where the 
 | All shares held by a company | Start-up exemption fails (no individual holds 10%). Partial exemption applies. |
 | Loss or nil income in a first-3 YA | The YA still counts toward the 3. No exemption is carried forward. |
 | Losses or capital allowances brought forward and shareholders changed | Run the 50% shareholding test on the two dates before deducting anything. |
-| YA 2027 computation | No rebate. Do not reuse the YA 2026 rebate or cash grant. |
+| YA 2027 computation | Use the baseline at the cutoff and check any later YA 2027 relief before filing. |
 | Cash grant company with tax of $4,000 or less for YA 2026 | 50% of the tax is $2,000 or less, so no rebate is given on top of the $2,000 grant (derived from the IRAS rule). |
-| Car costs | S-plated, Q-plated and RU-plated cars: add back running costs and claim no capital allowance. |
-| Foreign dividend, branch profit or service income received | Test the three section 13(9) conditions. If one fails, tax it and claim a foreign tax credit. |
+| Car costs | Check the ordinary disallowance and the statutory exceptions in step 3 before adding back running costs or disallowing capital allowances. |
+| Foreign dividend, branch profit or service income received | Test the 3 section 13(9) conditions. If one fails, check other exemptions or relief and foreign tax credit eligibility. |
 | Payment to a non-resident | Withholding question first. It is separate from the company's own tax. |
 | Concessionary rate, incentive, insurer, shipping, property developer, investment holding company | Refer. The ordinary computation here does not apply as it stands. |
-| Group with EUR 750 million revenue | Top-up tax applies. Refer. |
+| Group with EUR 750 million revenue | Check the multinational group, reference-year and period-length conditions in step 8. Refer an in-scope group for the effective tax rate, exclusions and safe harbour tests. |
 
 ## Worked cases
 
@@ -280,14 +281,14 @@ All amounts are in Singapore dollars and are illustrative inputs. No foreign inc
 
 ### Established small company, YA 2026, with the partial exemption and the rebate
 
-A trading company in its sixth year has chargeable income of $300,000 for YA 2026 (financial year ended 31 December 2025). It paid CPF for two local employees in 2025, so it gets the cash grant.
+A trading company in its sixth year has chargeable income of $300,000 for YA 2026 (financial year ended 31 December 2025). It remained active at disbursement and made compulsory 2025 CPF contributions for 2 local employees who were not shareholder-directors. Assume the remaining grant conditions are met.
 
 1. Partial exemption: 75% of the first $10,000 is $7,500. 50% of the next $190,000 is $95,000. Exempt amount $102,500.
 2. Income taxed at 17%: $300,000 less $102,500 is $197,500. Tax is $33,575.
 3. Rebate: 50% of $33,575 is $16,787.50, under the $40,000 cap. Because the company gets the $2,000 cash grant, the rebate given is $16,787.50 less $2,000, which is $14,787.50.
 4. Tax payable: $33,575 less $14,787.50 is $18,787.50. The $2,000 grant is paid to the company separately, so the total YA 2026 benefit is $16,787.50.
 
-The same income for YA 2027 gives tax of $33,575, because no rebate has been announced for YA 2027.
+With the same income for YA 2027, tax under the enacted baseline at the cutoff is $33,575.
 
 ```oa-check
 name: Established company, chargeable income 300,000, YA 2026 partial exemption and rebate
@@ -324,7 +325,7 @@ Held personally (one individual shareholder, not investment holding or property 
 
 Held 100% by a company: no individual holds 10% of the shares, so the start-up exemption fails and the partial exemption applies. Exempt amount $102,500. Tax is 17% of $97,500, which is $16,575.
 
-The figure that decides it: holding personally saves $3,825 for the year. The saving is the same $3,825 at any chargeable income of $100,000 or more, and it is available for the first 3 YAs only, so at most $11,475 over the 3 years. If the holding structure is worth more than that to the founder for other reasons, the tax cost is known. From the fourth YA both routes give the same tax.
+On these facts the start-up exemption reduces pre-rebate tax by $3,825. The annual difference is $3,825 at chargeable income of at least $100,000 under the current bands. If both scenarios have at least that income in all 3 years and the personally held company satisfies the start-up conditions each year, the total pre-rebate difference is $11,475. From the fourth YA both scenarios use the partial exemption on the same ordinary chargeable income. Check other tax and commercial effects before choosing a structure.
 
 ```oa-check
 name: New company, chargeable income 200,000, YA 2027, start-up exemption against partial exemption
@@ -355,18 +356,18 @@ Refer to a qualified Singapore tax professional, and do not produce a filing fig
 - the facts suggest income was split across new companies to multiply the start-up exemption;
 - shareholders changed and losses, capital allowances or donations are being carried forward, or a waiver of the shareholding test is needed;
 - there is a group relief or carry-back claim, a foreign tax credit, a treaty rate, or a gain on a foreign asset in a cross-border group;
-- the group meets the EUR 750 million threshold for the top-up taxes;
+- the multinational group meets the top-up tax revenue test in step 8;
 - the return is already late, IRAS has issued an estimated assessment, a composition offer or a summons, or an error in a past return needs voluntary disclosure.
 
-Do not apply a rebate to YA 2027. Do not treat cash in the bank as chargeable income. This skill does not authorise filing, payment or an election.
+For YA 2027, apply the baseline computation and verify any later relief before filing. Confirm chargeable income from the tax computation.
 
 ## Sources
 
 | Source | URL | What was read | Read on |
 |---|---|---|---|
-| Income Tax Act 1947, current version (site banner: as at 21 Nov 2026) | https://sso.agc.gov.sg/Act/ITA1947 | Read for Sections 10(1), 10(25), 10L, 13(1)(za), 13(8) to (10), 14(1), 15(1), 19, 19A, 23, 37, 37B, 37D, 43 (including 43(11)), 45, 45A, 63, 65B(3), 65C, 85, 87, 92M, 94, 94A, 95, 96, 96A. The list of sections has no rebate section after 92M. Read in a browser; the site does not answer curl | 2026-11-20 |
-| Multinational Enterprise (Minimum Tax) Act 2024, current version | https://sso.agc.gov.sg/Act/MEMTA2024 | Read for Sections 7, 8, 11, 12. Read in a browser | 2026-11-20 |
-| Finance (Income Taxes) Act 2026 (Act 23 of 2026) | https://sso.agc.gov.sg/Acts-Supp/23-2026/Published | Read for the long title, and for its commencement note on section 92M of the Income Tax Act (4 November 2026). The rest of the Act was not read | 2026-11-20 |
+| Income Tax Act 1947 | https://sso.agc.gov.sg/Act/ITA1947 | Read the cited provisions for income, exemptions, allowances, relief, procedural dates and offences, including sections 62, 76, 92L, 92M, 94A, 95, 96 and 96A | 2026-11-24 |
+| Multinational Enterprise (Minimum Tax) Act 2024 | https://sso.agc.gov.sg/Act/MEMTA2024?ProvIds=pr8- | Section 8 revenue test and commencement | 2026-11-24 |
+| Finance (Income Taxes) Act 2026 (Act 23 of 2026) | https://sso.agc.gov.sg/Acts-Supp/23-2026/Published | Commencement note for 4 November 2026, insertion of section 92M and the targeted changes to ordinary company provisions | 2026-11-24 |
 | Budget 2026 statement, section B, paragraph 18(b) | https://www.singaporebudget.gov.sg/budget-speech/budget-statement/b-advance-our-refreshed-economic-strategy | Read for the 40% YA 2026 rebate as first announced. Read in a browser | 2026-11-20 |
 | Budget 2026 Annex H-1, Tax Changes, item 1 | https://cms.singaporebudget.gov.sg/assets/11d18b8c-091c-4892-af60-0df181798814 | Read for the enhanced YA 2026 rebate and cash grant (7 April 2026 Ministerial Statement) and the local employee condition | 2026-11-20 |
 | IRAS, Corporate Income Tax Rate, Rebates and Tax Exemption Schemes | https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes | Read for rate, rebate, cash grant, both exemption schemes | 2026-11-20 |
@@ -386,9 +387,12 @@ Do not apply a rebate to YA 2027. Do not treat cash in the bank as chargeable in
 | IRAS, Late filing or non-filing of Corporate Income Tax Returns | https://www.iras.gov.sg/taxes/corporate-income-tax/form-c-s-form-c-s-(lite)-form-c-filing/late-filing-or-non-filing-of-Corporate-Income-Tax-Returns-form-c-s-form-c-s-(Lite)-form-c | Read for late filing consequences | 2026-11-20 |
 | IRAS, Late payment or non-payment of Corporate Income Tax | https://www.iras.gov.sg/taxes/corporate-income-tax/corporate-income-tax-payment/late-payment-or-non-payment-of-corporate-income-tax | Read for late payment penalties | 2026-11-20 |
 | IRAS, Penalties for Errors in Tax Returns | https://www.iras.gov.sg/taxes/corporate-income-tax/form-c-s-form-c-s-(lite)-form-c-filing/penalties-for-errors-in-tax-returns | Read for penalty ranges | 2026-11-20 |
-| IRAS, Types of Payment and Withholding Tax Rates; WHT Filing and Payment Due Date | https://www.iras.gov.sg/taxes/withholding-tax/basics-of-withholding-tax/types-of-payment-and-withholding-tax-rates | Read for withholding rates and due date | 2026-11-20 |
+| IRAS, Types of Payment and Withholding Tax Rates | https://www.iras.gov.sg/taxes/withholding-tax/basics-of-withholding-tax/types-of-payment-and-withholding-tax-rates | Read for withholding rates, final tax conditions and phased royalty concession | 2026-11-24 |
+| IRAS, Date of Payment or Deemed Payment | https://www.iras.gov.sg/docs/default-source/e-tax/etaxguide_determining-the-date-of-payment-or-deemed-payment-for-the-purpose-of-complying-withholding-tax-obligations.pdf | Actual or deemed payment dates, filing and payment deadline and late payment penalties | 2026-11-24 |
+| IRAS, Payments Subject to Withholding Tax | https://www.iras.gov.sg/taxes/withholding-tax/payments-to-non-resident-company/payments-that-are-subject-to-withholding-tax | Services attributable to work performed in Singapore and prevailing corporate rate | 2026-11-24 |
+| IRAS, Dormant Companies | https://www.iras.gov.sg/taxes/corporate-income-tax/dormant-companies-or-companies-closing-down/dormant-companies | Filing duty, simplified dormant return and waiver criteria | 2026-11-24 |
 | IRAS, GloBE Rules and Domestic Top-up Tax | https://www.iras.gov.sg/taxes/pillar-2-top-up-taxes/global-anti-base-erosion-(globe)-rules-and-domestic-top-up-tax-(dtt) | Read for who the top-up taxes apply to | 2026-11-20 |
 
-Not yet confirmed: any corporate income tax rebate or cash grant for YA 2027. None is in the Budget 2026 statement, its Annex H-1, the IRAS rebate page or the Income Tax Act (the last rebate section is 92M, for YA 2026) as read on 20 November 2026; the Budget for 2027 has not been delivered.
+Not yet confirmed: a YA 2027 corporate income tax rebate or cash grant. The enacted baseline as at 22 November 2026 uses section 43, and section 92M provides the relief for YA 2026. Check for later YA 2027 relief at filing.
 
-Not yet confirmed: the YA 2027 edition of the return forms, and whether the Finance (Income Taxes) Act 2026 changes anything in this skill beyond section 92M. The sections cited above were read in the current version of the Income Tax Act, which includes that Act, but the amending Act itself was not read in full. The 30 November 2027 due date is the IRAS "30 Nov each year" rule applied to YA 2027.
+Not yet confirmed: the YA 2027 edition of the return forms. The 30 November 2027 date follows the IRAS annual filing rule as at the cutoff. Check the filing season notice and any specific waiver or extension.
