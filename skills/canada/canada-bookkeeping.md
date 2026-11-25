@@ -29,13 +29,14 @@ This is a **2025 bookkeeping and tax-mapping workpaper**, not a completed return
 | Country | Canada |
 | Currency | CAD workpapers only. **HOLD:** an eligible corporation using elected functional-currency reporting needs its own reporting/conversion treatment; this is not a universal CAD prohibition. [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) |
 | Financial year | Establish the actual fiscal period and applicable elections before mapping a return. **HOLD:** the original corporation/sole-proprietor shorthand does not resolve ITA 249.1 or a change of year-end. [ITA 249.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-249.1.html) |
-| Accounting standards | **Unverified — HOLD:** establish the applicable ASPE, ASNPO or IFRS framework. Operative standards and framework-selection conditions were not verified in this audit. |
 | Governing body | Accounting Standards Board (AcSB) of CPA Canada |
 | Tax authority | Canada Revenue Agency (CRA) |
 | Key legislation | Income Tax Act (ITA); Excise Tax Act (GST/HST); Canada Business Corporations Act |
 | GST/HST registration threshold | **HOLD:** do not decide registration solely from the $30,000 headline. The single-quarter and four-consecutive-quarter tests, associates, exclusions and other registration regimes must be resolved. [CRA registration](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
 | Record keeping requirement | 6 years from end of the last tax year to which records relate |
 | GIFI codes | General Index of Financial Information — CRA's standardized code system for T2 filing |
+
+**Framework verification hold:** establish the applicable ASPE, ASNPO or IFRS framework before producing a compliance conclusion. Operative standards and framework-selection conditions were not verified in this audit; they remain blocked and are listed under Sources: Not yet confirmed.
 
 ## Section 2 -- Standard Chart of Accounts
 
