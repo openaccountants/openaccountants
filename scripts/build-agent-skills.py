@@ -54,6 +54,12 @@ KEEP_FILES = {"README.md", "LICENSE.md", "install.sh", "index.json"}
 BAD_DESCRIPTIONS = {"", "---", ">", "|", "null", "none"}
 GLOSS = "tax rules your AI follows"
 
+# These published slugs exceed the Agent Skills name limit. Keep their live IDs.
+AGENT_SKILL_NAMES = {
+    "foreign-currency-forex-realisation-gains-and-losses-under-division-775": "au-forex-realisation-gains-losses-division-775",
+    "leaving-australia-residency-the-cgt-departure-choice-and-what-follows-you": "au-leaving-australia-cgt-departure-choice",
+}
+
 FM_RE = re.compile(r"\A---\r?\n(.*?)\r?\n---\r?\n?", re.S)
 
 
@@ -119,7 +125,8 @@ def yaml_quote(s: str) -> str:
     return json.dumps(s, ensure_ascii=False)
 
 
-def skill_md(slug: str, meta: dict, body: str) -> str:
+def skill_md(name: str, meta: dict, body: str, *, source_slug: str | None = None) -> str:
+    slug = source_slug or name
     if needs_sources(meta):
         raise ValueError(f"Cannot convert held skill {slug}: status: needs_sources")
     desc = derive_description(meta, body, slug)
@@ -132,7 +139,7 @@ def skill_md(slug: str, meta: dict, body: str) -> str:
     reviewed = str(meta.get("reviewed_by") or "").strip()
     lines = [
         "---",
-        f"name: {slug}",
+        f"name: {name}",
         f"description: {yaml_quote(desc)}",
         f"license: {yaml_quote(LICENSE_LINE)}",
         "metadata:",
@@ -207,6 +214,7 @@ def sanitize(text: str) -> str:
 
 def build(plugin_countries: set[str], check_only: bool, hermes_plugin: bool = False) -> int:
     built: dict[str, dict] = {}
+    source_slugs: set[str] = set()
     staged: dict[Path, str] = {}
     reviewed = 0  # tier 1 with a named reviewer: the only accountant-reviewed state
     _skills, _targets, held, errors = publication_catalogue(REPO_ROOT)
@@ -218,14 +226,18 @@ def build(plugin_countries: set[str], check_only: bool, hermes_plugin: bool = Fa
         slug = str(meta.get("name") or src.stem).strip()
         if needs_sources(meta) or slug in held:
             continue
-        if not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,63}", slug):
+        name = AGENT_SKILL_NAMES.get(slug, slug)
+        if not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,63}", name):
             continue
-        if slug in built:
-            continue  # first occurrence wins; duplicates live in retired folders
-        content = sanitize(skill_md(slug, meta, body))
-        staged[OUT_DIR / slug / "SKILL.md"] = content
+        if slug in source_slugs:
+            continue  # first occurrence wins for repeated canonical slugs
+        if name in built:
+            raise ValueError(f"Agent Skills name {name!r} is already in use: {src.relative_to(REPO_ROOT)}")
+        source_slugs.add(slug)
+        content = sanitize(skill_md(name, meta, body, source_slug=slug))
+        staged[OUT_DIR / name / "SKILL.md"] = content
         j = str(meta.get("jurisdiction") or "").strip()
-        built[slug] = {
+        built[name] = {
             "jurisdiction": j,
             "path": str(src.relative_to(REPO_ROOT)),
             "trust_label": str(meta.get("trust_label") or "").strip() or None,
@@ -233,10 +245,10 @@ def build(plugin_countries: set[str], check_only: bool, hermes_plugin: bool = Fa
             "reviewed_by": str(meta.get("reviewed_by") or "").strip() or None,
             "tax_year": meta.get("tax_year"),
         }
-        if str(meta.get("tier")).strip() == "1" and built[slug]["reviewed_by"]:
+        if str(meta.get("tier")).strip() == "1" and built[name]["reviewed_by"]:
             reviewed += 1
         if j.split("-")[0] in plugin_countries:
-            staged[PLUGIN_SKILLS_DIR / slug / "SKILL.md"] = content
+            staged[PLUGIN_SKILLS_DIR / name / "SKILL.md"] = content
 
     index = {
         "generated_by": "scripts/build-agent-skills.py",
