@@ -132,13 +132,13 @@ The credit for a month is allowed only for a month in which the taxpayer paid th
 
 The deduction under s 11F(2) is limited to the least of three amounts:
 
-1. the rand cap in the table below (s 11F(2)(a)). From YoA 2025, where a year of assessment is shorter than 12 months, apply the cap across all years of assessment in the 12 months from 1 March;
-2. 27.5% of the higher of remuneration (as defined in paragraph 1 of the Fourth Schedule) and taxable income including any taxable capital gain (s 11F(2)(b));
-3. taxable income before including any taxable capital gain (s 11F(2)(c)).
+1. the annual rand cap in the table below (s 11F(2)(a));
+2. 27.5% of the higher of remuneration (as defined in paragraph 1 of the Fourth Schedule) and taxable income, each excluding retirement fund lump sum benefits, retirement fund lump sum withdrawal benefits and severance benefits, with taxable income determined before the s 11F and s 18A deductions; a taxable capital gain is included in this taxable income (s 11F(2)(b));
+3. taxable income determined before the s 11F deduction and before the inclusion of any taxable capital gain (s 11F(2)(c)). This third limit is the taxable income itself, not 27.5% of it.
 
-For limits 2 and 3, exclude retirement fund lump sum benefits, retirement fund lump sum withdrawal benefits and severance benefits from each base. Calculate taxable income before deductions under ss 11F, 6quat(1C) and 18A. See [SARS's s 11F guidance](https://www.sars.gov.za/faq/faq-what-are-s11f-annual-allowable-deductions/) and [Act 23 of 2018, s 26](https://www.sars.gov.za/wp-content/uploads/Legal/AmendActs/LAPD-LPrim-AA-2018-03-Taxation-Laws-Amend-Act-23-of-2018-GG-42172.pdf).
+Contributions above the limit carry forward to the next year of assessment and are deemed to be contributed in that year.
 
-Unused contributions carry forward to the next year of assessment. Exclude amounts already deducted or used against a lump sum under the Second Schedule or to exempt annuity income under s 10C.
+From YoA 2025, where a year of assessment is shorter than 12 months, apply the s 11F(2)(a) rand cap across all years of assessment in the 12 months from 1 March. Determine taxable income for limits 2 and 3 before deductions under ss 11F, 6quat(1C) and 18A, and exclude amounts already deducted or used against a lump sum under the Second Schedule or to exempt annuity income under s 10C. See [SARS's s 11F guidance](https://www.sars.gov.za/faq/faq-what-are-s11f-annual-allowable-deductions/) and [Act 23 of 2018, s 26](https://www.sars.gov.za/wp-content/uploads/Legal/AmendActs/LAPD-LPrim-AA-2018-03-Taxation-Laws-Amend-Act-23-of-2018-GG-42172.pdf).
 
 | YoA | Percentage | Annual rand cap | Source |
 | --- | --- | --- | --- |
@@ -177,8 +177,9 @@ The cap applies to qualifying remuneration for services abroad by a South Africa
 The [SARS Guide for Provisional Tax, section 9.1](https://www.sars.gov.za/wp-content/uploads/Ops/Guides/GEN-PT-01-G01-Guide-for-Provisional-Tax-External-Guide.pdf) sets out the two compulsory payments for provisional taxpayers, based on estimated taxable income for the year.
 
 - **Total tax payable (A):** normal tax on the estimated taxable income, less the s 6 primary, secondary and tertiary rebates, less the s 6A medical scheme fees tax credit, less the s 6B additional medical expenses tax credit.
-- **First payment:** half of A (A/2), less employees' tax deducted during the first period and any s 6quat foreign tax credits proved to be payable by the end of that period.
-- **Second payment:** A, less employees' tax deducted during the year, the first provisional tax payment if actually paid and any s 6quat foreign tax credits for the year.
+- **First payment:** half of A (A/2), less the employees' tax deducted from the taxpayer's remuneration during the first period, less foreign tax credits (s 6quat and s 6quin) for the first 6 months. Employees' tax is deducted after halving, not before.
+- **Second payment:** A, less the employees' tax deducted from the taxpayer's remuneration during the year, less the first provisional tax payment (if actually paid), less foreign tax credits for the year.
+- **Foreign tax credit proof:** in practice, confirm s 6quat foreign tax credits proved to be payable by the end of the relevant period (SARS Guide for Provisional Tax, section 9.1).
 - **Due dates for YoA 2027:** first payment by 31 August 2026 (a Monday); second payment by 26 February 2027, the last business day of February 2027 (28 February 2027 is a Sunday). SARS: the first payment is due within six months of the start of the year of assessment, 31 August if it is a business day, or the last business day before; the second no later than the last business day of February (https://www.sars.gov.za/types-of-tax/provisional-tax/).
 
 The underestimation penalty, the basic amount and who is a provisional taxpayer are in `za-provisional-tax`.
