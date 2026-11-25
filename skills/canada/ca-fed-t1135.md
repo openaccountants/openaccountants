@@ -65,7 +65,7 @@ Read this whole section before classifying anything.
 | Contributor | Open Accountants Community |
 | Validated by | Verified by Nathan Wiebe on 2026-06-21 |
 | Validation date | Verified by Nathan Wiebe on 2026-06-21 |
-| Skill version | See frontmatter version; proposed correction |
+| Skill version | 2.1; [version in frontmatter](https://github.com/openaccountants/openaccountants/blob/8e0ca5620ba4c82f50a9c9ed36e4aa5b46e7ea94/skills/canada/ca-fed-t1135.md#L4) |
 | Confidence coverage | Tier 1: threshold testing, Part A / Part B decision, category mapping, common exclusions, form-field capture. Tier 2 (Section 7 catalogue, T2-1 to T2-10): residency timing, beneficial ownership, foreign affiliate exposure, partnership/trust attribution, digital-asset situs, mixed-use real estate, pre-construction deposits, functional currency / amended returns, joint ownership, missed prior-year filings. Tier 3: foreign affiliate filings (T1134), formal voluntary disclosure execution. |
 
 ### Core thresholds (2025 form usage)
