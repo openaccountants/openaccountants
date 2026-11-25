@@ -3,6 +3,7 @@ name: leaving-australia-tax-residency-cgt
 description: Determine when Australian tax residency ends and compare CGT event I1 with its deferral choice. Covers the main-residence exemption, part-year income, overseas study loan reporting, super and returning residents.
 jurisdiction: AU
 tax_year: 2025
+tax_year_notes: "2025-26 Australian income year (1 July 2025 to 30 June 2026)"
 version: 0.1
 last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -212,7 +213,37 @@ sources on 8 September 2026, are the ones that most often change the number.
 
 ---
 
-## Sources (primary, verify current figures)
+## Worked examples
+
+**Example 1. CGT event I1 deemed disposal vs deferral choice on non-TAP shares.** Listed shares held more than 12 months with cost base AUD 40,000 and market value at cessation AUD 100,000 yield a gross I1 gain of AUD 60,000. Recognising the gain on cessation whilst still an Australian resident qualifies for the 50% CGT discount, producing a net capital gain of AUD 30,000 (assuming disposal event before 1 July 2027).
+
+```oa-check
+name: AU leaving Australia CGT event I1 recognised with 50% resident discount
+inputs:
+  market_value_at_cessation: 100000
+  cost_base: 40000
+steps:
+  - gross_gain: market_value_at_cessation - cost_base
+  - net_capital_gain: pct(gross_gain, 50)
+expected:
+  gross_gain: 60000
+  net_capital_gain: 30000
+```
+
+**Example 2. Post-departure disposal of Australian real property (15% FRCGW).** Selling Australian residential land as a foreign resident for AUD 1,200,000 under a contract from 1 January 2025 without a variation requires 15% FRCGW withholding of AUD 180,000 at settlement.
+
+```oa-check
+name: AU leaving Australia post-departure TARP 15% FRCGW withholding
+inputs:
+  sale_price: 1200000
+  frcgw_rate: 15
+steps:
+  - withholding_credit: pct(sale_price, frcgw_rate)
+expected:
+  withholding_credit: 180000
+```
+
+## Sources
 
 ITAA 1997 s.104-160 (CGT event I1) and the TAP definition (s 855-15); ATO guidance on residency
 (TR 2023/1); main-residence exemption denial for foreign residents
@@ -229,10 +260,10 @@ repayments, DASP and SMSF residency, and the Treasury Laws Amendment (Tax Reform
 
 Read 22 November 2026 for the departure rules and destination checks.
 
-- [ITAA 1997 ss 104-160, 104-165, 118-110, 118-145 and 118-192](https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_3/document_3.html), covering I1, the choice and the home rules.
-- [ITAA 1997 Division 855](https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_9/document_9.html), covering taxable Australian property and market-value entry.
-- [ATO overseas study loan obligations](https://www.ato.gov.au/individuals-and-families/study-and-training-support-loans/overseas-repayments) and [tax on non-complying SMSFs](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-regulation-and-compliance/smsf-compliance/our-smsf-non-compliance-actions).
-- [HMRC foreign income and gains relief](https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime), [IRAS employment for a foreign employer](https://www.iras.gov.sg/taxes/individual-income-tax/employees/scenario-based-faqs-for-working-in-Singapore-and-abroad/i-am-working-for-a-foreign-employer) and [UAE Federal Tax Authority rules for natural persons](https://www.tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/basis.of.taxation.natural.person.aspx).
+- [ITAA 1997 ss 104-160, 104-165, 118-110, 118-145 and 118-192](https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_3/document_3.html), covering I1, the choice and the home rules. (read 2026-11-22)
+- [ITAA 1997 Division 855](https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_9/document_9.html), covering taxable Australian property and market-value entry. (read 2026-11-22)
+- [ATO overseas study loan obligations](https://www.ato.gov.au/individuals-and-families/study-and-training-support-loans/overseas-repayments) and [tax on non-complying SMSFs](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-regulation-and-compliance/smsf-compliance/our-smsf-non-compliance-actions). (read 2026-11-22)
+- [HMRC foreign income and gains relief](https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime), [IRAS employment for a foreign employer](https://www.iras.gov.sg/taxes/individual-income-tax/employees/scenario-based-faqs-for-working-in-Singapore-and-abroad/i-am-working-for-a-foreign-employer) and [UAE Federal Tax Authority rules for natural persons](https://www.tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/basis.of.taxation.natural.person.aspx). (read 2026-11-22)
 
 ---
 
