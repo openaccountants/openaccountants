@@ -20,27 +20,28 @@ domain: financial-statements
 
 ## Canada Financial Statements Skill v1.1
 
+This corrects the historical 2025 workpaper. **HOLD (unverified)** means the affected conclusion cannot be used to select a framework, recognize/measure an amount, claim compliance or decide a filing/assurance obligation until the named operative source and case inputs are established. A held accounting-standard statement is a research topic, not current advice. No operative licensed ASPE/IFRS/assurance text was read in this unit.
+
 ## Rates and thresholds
 
 Reviewed against the cited tax authorities by **Nathan Wiebe** on 2026-06-21.
-Items flagged for further clarification are tracked separately and excluded here.
-This block is generated from verified `skill_facts` — edit the facts, not the prose.
+That historical attribution does not approve this proposed correction. Unresolved conditions and accounting-standard claims remain explicitly held below.
 
 ### Financial Statements
 
-- **PAE (publicly accountable)** — IFRS (Part I)  _(CPA Canada Handbook Part I; IAS 1)_
-- **Private enterprise** — ASPE (Part II)  _(CPA Canada Handbook Part II)_
-- **Not-for-profit** — ASNPO (Part III)  _(CPA Canada Handbook Part III)_
-- **Goodwill** — ASPE Section 3064: goodwill is not normally amortised as it has an unlimited useful life. Recent updates allow companies to amortise goodwill over 5 years, or a maximum of 10 years.  _(CPA Canada Handbook — ASPE Section 3064.87 (maximum useful life = 40 years); CPA Canada ASPE Briefing)_
-- **Leases** — ASPE: finance/operating; IFRS: right-of-use (IFRS 16)  _(CPA Canada Handbook ASPE s.3065; IFRS 16)_
-- **Revenue** — ASPE: risks/rewards; IFRS: five-step (IFRS 15)  _(CPA Canada Handbook ASPE s.3400; IFRS 15)_
-- **CBCA** — Unanimous shareholder consent (s.163)  _(Canada Business Corporations Act s.163)_
-- **OBCA (Ontario)** — Unanimous shareholder consent (s.148)  _(Ontario Business Corporations Act s.148)_
-- **CNCA (federal NPO)** — Audit req unless revenue < $50K; review < $250K  _(Canada Not-for-profit Corporations Act s.172–180)_
-- **Charity** — Audit if revenue > $250,000  _(CRA — T3010 guide — canada.ca; ITA s.149.1)_
-- **Audit** — CAS  _(CPA Canada Handbook — CAS)_
-- **Review** — CSRE 2400  _(CPA Canada Handbook — CSRE 2400)_
-- **Compilation (NTR)** — CSRS 4200  _(CPA Canada Handbook — CSRS 4200)_
+- **PAE (publicly accountable)** — HOLD (unverified operative Handbook scope/requirements): IFRS (Part I)  _(CPA Canada Handbook Part I; IAS 1)_
+- **Private enterprise** — HOLD (unverified operative Handbook scope/requirements): ASPE (Part II)  _(CPA Canada Handbook Part II)_
+- **Not-for-profit** — HOLD (unverified operative Handbook scope/requirements): ASNPO (Part III)  _(CPA Canada Handbook Part III)_
+- **Goodwill** — HOLD (unverified operative standard): do not use a current five/ten-year amortization election or the old 3064.87/40-year citation. The original AcSB project describes proposed amendments, planned final issuance in the first half of 2027; its exposure explanation proposes a 1 January 2029 start with early application. Proposed early application does not establish an issued election. The current base-rule and IFRS treatments also remain held pending operative standards. [AcSB project](https://www.frascanada.ca/en/aspe/projects/goodwill-and-acquired-intangibles); [exposure explanation](https://www.frascanada.ca/en/aspe/projects/goodwill-and-acquired-intangibles/in-brief-acsb-ed-relief-from-recognition-acquired-intangible-assets-amortization-goodwill).
+- **Leases** — HOLD (unverified operative Handbook scope/requirements): ASPE: finance/operating; IFRS: right-of-use (IFRS 16)  _(CPA Canada Handbook ASPE s.3065; IFRS 16)_
+- **Revenue** — HOLD (unverified operative Handbook scope/requirements): ASPE: risks/rewards; IFRS: five-step (IFRS 15)  _(CPA Canada Handbook ASPE s.3400; IFRS 15)_
+- **CBCA** — Non-distributing corporation: all shareholders, including non-voting, may resolve not to appoint an auditor until the following annual meeting. No revenue threshold appears in this provision; financial statements remain a separate duty. [CBCA 163](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-163.html).
+- **OBCA (Ontario)** — HOLD (unverified current applicability): indexed section 148 text was read, but direct current-page version/currency was unresolved. Do not certify a present waiver from that receipt. [official Act](https://www.ontario.ca/laws/statute/90b16).
+- **CNCA (federal NPO)** — Use the soliciting/non-soliciting, inclusive-revenue and annual-resolution decision tree in Section 10; no universal below-50,000/below-250,000 shortcut. [Corporations Canada](https://ised-isde.canada.ca/site/corporations-canada/en/not-profit-corporations/financial-statements-and-review).
+- **Charity** — CRA recommends professional audit where income exceeds $250,000; that statement is not a mandatory CRA audit threshold. Corporate law, funders and other actual obligations remain separate. [CRA charity statements](https://www.canada.ca/en/revenue-agency/services/charities-giving/charities/operating-a-registered-charity/financial-statements.html).
+- **Audit** — HOLD (unverified operative Handbook scope/requirements): CAS  _(CPA Canada Handbook — CAS)_
+- **Review** — HOLD (unverified operative Handbook scope/requirements): CSRE 2400  _(CPA Canada Handbook — CSRE 2400)_
+- **Compilation (NTR)** — HOLD (unverified operative Handbook scope/requirements): CSRS 4200  _(CPA Canada Handbook — CSRS 4200)_
 - **T2 corporate return** — 6 months after fiscal year-end  _(ITA s.150(1)(a))_
 - **GIFI** — General Index of Financial Information — CRA standard codes  _(CRA — GIFI — canada.ca)_
 - **Annual return (CBCA)** — Within 60 days of anniversary  _(CBCA s.263; Corporations Canada)_
@@ -53,14 +54,14 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Field | Value |
 | --- | --- |
 | Country | Canada |
-| Currency | CAD |
+| Currency | CAD workpaper convention only; HOLD (unverified) actual reporting currency and any qualifying functional-currency election. [RC4088 scope](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) |
 | Filing authority | Corporations Canada (federal); Provincial corporate registries (provincial) |
 | Primary legislation | Canada Business Corporations Act (CBCA); Provincial acts (OBCA, BCBCA, ABCA, etc.) |
 | Supporting legislation | Income Tax Act (R.S.C. 1985, c.1); CPA Canada Handbook |
-| Accounting standards | IFRS (publicly accountable enterprises); ASPE Part II (private enterprises); ASNPO Part III (not-for-profit) |
-| Financial year | Any fiscal year-end chosen by the corporation |
+| Accounting standards | HOLD (unverified) actual IFRS/ASPE/ASNPO/pension framework scope; Section 2 retains the topics without certifying eligibility |
+| Financial year | HOLD (unverified) actual fiscal period, year-end choice/change and applicable restrictions; not an unrestricted election |
 | CRA filing deadline | 6 months after fiscal year-end (corporate tax return T2) |
-| Annual return | Within 60 days of anniversary of incorporation (CBCA); varies by province |
+| Annual return | CBCA ordinary 60-day anniversary rule covers incorporation, amalgamation or continuance; initial-event year excluded. Provincial rules differ. [registry policy](https://ised-isde.canada.ca/site/corporations-canada/en/business-corporations/policy-annual-filings-canada-business-corporations-act) |
 | Digital filing | CRA My Business Account (T2); Corporations Canada Online Filing |
 
 ## Section 2 -- Reporting Framework
@@ -69,11 +70,11 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 
 | Entity type | Applicable standard | CPA Handbook |
 | --- | --- | --- |
-| Publicly accountable enterprises (PAE) | IFRS as issued by IASB (Canadian-adopted) | Part I |
-| Private enterprises | ASPE (Accounting Standards for Private Enterprises) | Part II |
-| Not-for-profit organizations | ASNPO | Part III |
-| Pension plans | Part IV (specific standards) | Part IV |
-| Private enterprise choosing IFRS | IFRS (permitted but not required) | Part I |
+| Publicly accountable enterprises (PAE) | HOLD (unverified operative standard): IFRS as issued by IASB (Canadian-adopted) | Part I |
+| Private enterprises | HOLD (unverified operative standard): ASPE (Accounting Standards for Private Enterprises) | Part II |
+| Not-for-profit organizations | HOLD (unverified operative standard): ASNPO | Part III |
+| Pension plans | HOLD (unverified operative standard): Part IV (specific standards) | Part IV |
+| Private enterprise choosing IFRS | HOLD (unverified operative standard): IFRS (permitted but not required) | Part I |
 
 ### Key difference: ASPE vs IFRS
 
@@ -81,27 +82,28 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 
 | Area | ASPE | IFRS |
 | --- | --- | --- |
-| Financial instruments | Simplified (cost/amortised cost focus) | Complex (IFRS 9 — ECL, fair value hierarchy) |
-| Leases | Finance/operating distinction | IFRS 16 — right-of-use model |
-| Revenue | Risks/rewards transfer model | IFRS 15 — five-step model |
-| Goodwill | Not normally amortised (unlimited useful life); may amortise over 5 years or max 10 years | Not amortised; annual impairment test |
-| Employee benefits | Simplified pension accounting | IAS 19 — full actuarial measurement |
+| Financial instruments | HOLD (unverified operative standard): Simplified (cost/amortised cost focus) | Complex (IFRS 9 — ECL, fair value hierarchy) |
+| Leases | HOLD (unverified operative standard): Finance/operating distinction | IFRS 16 — right-of-use model |
+| Revenue | HOLD (unverified operative standard): Risks/rewards transfer model | IFRS 15 — five-step model |
+| Goodwill | HOLD (unverified operative standard): Current goodwill rule/election not verified; do not apply proposed 5/10-year relief as an issued standard | Not amortised; annual impairment test |
+| Employee benefits | HOLD (unverified operative standard): Simplified pension accounting | IAS 19 — full actuarial measurement |
+
 
 ## Section 3 -- Size Thresholds
 
-Canada does not have statutory "size thresholds" determining accounting framework in the way EU countries do. Instead:
+HOLD (unverified) the nationwide negative claim about no statutory size thresholds. Framework scope and corporate/securities/funder duties need separate operative authority; one federal provision does not settle the whole country.
 
 **Size Thresholds criteria**
 
 | Criterion | Determining factor |
 | --- | --- |
-| Public accountability | If securities are publicly traded or entity holds assets in fiduciary capacity → must use IFRS |
-| Private enterprise | May choose ASPE or IFRS |
-| Audit requirement | Determined by corporate statute and shareholder agreement (not size per se) |
+| Public accountability | HOLD (unverified) exact PAE definition, framework trigger and exceptions; a securities filing rule does not certify the Handbook population |
+| Private enterprise | HOLD (unverified) framework/election eligibility until operative scope is read |
+| Audit requirement | Bind actual incorporating law, securities/funder/contract requirements and any valid waiver; revenue matters in the CNCA branches below. [CNCA review table](https://ised-isde.canada.ca/site/corporations-canada/en/not-profit-corporations/financial-statements-and-review) |
 
 ### Audit waiver conditions (CBCA s.163)
 
-- **Audit waiver conditions** — Private corporations may waive the audit if: All shareholders consent annually (unanimous resolution); Corporation is not a distributing corporation (publicly traded); Revenue ≤ specified thresholds do NOT apply federally (it's purely consent-based)  _(CBCA s.163)_
+- **Audit waiver conditions** — CBCA section 163 applies to a corporation that is not a distributing corporation. All shareholders, including those not otherwise entitled to vote, resolve not to appoint an auditor; validity runs only to the following annual meeting. This provision has no revenue test and does not waive statements or every independent securities/funder obligation. HOLD actual status and resolution. [CBCA 162](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-162.html); [163](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-163.html).
 
 ### Provincial variations (examples)
 
@@ -109,49 +111,51 @@ Canada does not have statutory "size thresholds" determining accounting framewor
 
 | Jurisdiction | Audit waiver condition |
 | --- | --- |
-| CBCA (federal) | Unanimous shareholder consent (s.163) |
-| OBCA (Ontario) | Unanimous shareholder consent (s.148) |
-| BCBCA (British Columbia) | Shareholder resolution; no exemption for reporting issuers |
-| ABCA (Alberta) | Unanimous shareholder consent |
-| Quebec (QBCA) | Shareholder resolution; restrictions for certain entities |
+| CBCA (federal) | Non-distributing; all shareholders including non-voting; only to following annual meeting. [163](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-163.html) |
+| OBCA (Ontario) | HOLD (unverified present currency): indexed 148 text indicates non-offering corporation/all shareholders written consent for that year, but current version was not reconciled. [Act](https://www.ontario.ca/laws/statute/90b16) |
+| BCBCA (British Columbia) | Section 203 requires all shareholders unanimously, including non-voting, effective for one financial year. Do not claim 203 itself excludes reporting issuers; securities audit duties are separate. [203(2)-(3)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/02057_08) |
+| ABCA (Alberta) | A non-reporting issuer may use a special resolution under 163, effective only until the following annual meeting; unanimity is not the statutory minimum. [official B-9 section 163](https://kings-printer.alberta.ca/documents/Acts/B09.pdf) |
+| Quebec (QBCA) | HOLD (unverified current applicability): official 239 PDF read covers non-reporting issuer/unanimity including non-voting/to next annual meeting, but retrieved consolidation is dated 1 September 2025. [official PDF](https://www.legisquebec.gouv.qc.ca/en/pdf/cs/S-31.1.pdf) |
 
 ## Section 4 -- Required Financial Statements
 
-Under ASPE (Section 1400, 1521) and CBCA/provincial statutes:
+HOLD (unverified) the ASPE/IFRS requirement and comparison cells below pending operative standards. They do not establish compliance. Separately, CBCA 155 requires its statutory statements/comparatives but subsection (2) permits omission of the prior-year statements with an explanation; do not convert that into a universal ASPE rule. [CBCA 155](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-155.html).
 
 **Required Financial Statements**
 
 | Document | ASPE | IFRS |
 | --- | --- | --- |
-| Balance Sheet / Statement of Financial Position | Required | Required |
-| Income Statement / Statement of Comprehensive Income | Required | Required (+ OCI) |
-| Statement of Retained Earnings / Changes in Equity | Required (retained earnings) | Required (full equity) |
-| Statement of Cash Flows | Required | Required |
-| Notes to Financial Statements | Required | Required (full IFRS disclosure) |
-| Comparative information | Encouraged (not mandatory under ASPE) | Mandatory (minimum one prior period) |
+| Balance Sheet / Statement of Financial Position | HOLD (unverified operative standard): Required | Required |
+| Income Statement / Statement of Comprehensive Income | HOLD (unverified operative standard): Required | Required (+ OCI) |
+| Statement of Retained Earnings / Changes in Equity | HOLD (unverified operative standard): Required (retained earnings) | Required (full equity) |
+| Statement of Cash Flows | HOLD (unverified operative standard): Required | Required |
+| Notes to Financial Statements | HOLD (unverified operative standard): Required | Required (full IFRS disclosure) |
+| Comparative information | HOLD (unverified operative standard): Encouraged (not mandatory under ASPE) | Mandatory (minimum one prior period) |
+
 
 ## Section 5 -- Year-End Adjustments Checklist
 
 **Year-End Adjustments Checklist**
 
-| # | Adjustment | Canada-specific notes |
+| # | HOLD (unverified operative standard): Adjustment | Canada-specific notes |
 | --- | --- | --- |
-| 1 | Amortization/depreciation | ASPE 3061; systematic and rational; CCA rates for tax (not accounting) |
-| 2 | Provisions | ASPE 3290; likely, estimable contingencies |
-| 3 | Employee benefits | ASPE 3462; accrued vacation, bonus; pension funding vs expense |
-| 4 | Bad debt allowance | ASPE 3856; incurred loss model (not ECL for ASPE) |
-| 5 | Inventory | ASPE 3031; lower of cost (FIFO/weighted average) and NRV; no LIFO |
-| 6 | Income taxes | ASPE 3465; taxes payable method OR future income taxes method (choice) |
-| 7 | Foreign exchange | ASPE 1651; temporal method; current rate for monetary |
-| 8 | Leases | ASPE 3065; finance/operating classification |
-| 9 | Government assistance | ASPE 3800; cost reduction or income approach |
-| 10 | Goodwill impairment | ASPE 3064; test when events indicate; not normally amortised (unlimited life); may amortise over 5 years or max 10 years |
-| 11 | Related party transactions | ASPE 3840; measured at exchange amount or carrying value |
-| 12 | Scientific Research & Experimental Development (SR&ED) | Capitalise or expense; ITC recognition |
+| 1 | HOLD (unverified operative standard): Amortization/depreciation | ASPE 3061; systematic and rational; CCA rates for tax (not accounting) |
+| 2 | HOLD (unverified operative standard): Provisions | ASPE 3290; likely, estimable contingencies |
+| 3 | HOLD (unverified operative standard): Employee benefits | ASPE 3462; accrued vacation, bonus; pension funding vs expense |
+| 4 | HOLD (unverified operative standard): Bad debt allowance | ASPE 3856; incurred loss model (not ECL for ASPE) |
+| 5 | HOLD (unverified operative standard): Inventory | ASPE 3031; lower of cost (FIFO/weighted average) and NRV; no LIFO |
+| 6 | HOLD (unverified operative standard): Income taxes | ASPE 3465; taxes payable method OR future income taxes method (choice) |
+| 7 | HOLD (unverified operative standard): Foreign exchange | ASPE 1651; temporal method; current rate for monetary |
+| 8 | HOLD (unverified operative standard): Leases | ASPE 3065; finance/operating classification |
+| 9 | HOLD (unverified operative standard): Government assistance | ASPE 3800; cost reduction or income approach |
+| 10 | HOLD (unverified operative standard): Goodwill impairment | ASPE 3064 topic retained; current impairment/amortization requirements unverified; proposed 5/10-year relief is not certified current |
+| 11 | HOLD (unverified operative standard): Related party transactions | ASPE 3840; measured at exchange amount or carrying value |
+| 12 | HOLD (unverified operative standard): Scientific Research & Experimental Development (SR&ED) | Capitalise or expense; ITC recognition |
+
 
 ## Section 6 -- Income Statement Format
 
-ASPE does not prescribe a rigid format. Common Canadian presentation:
+Illustrative layout only, not a verified ASPE format or compliance checklist. HOLD (unverified) actual recognition, measurement, framework, totals and presentation requirements; the operative standard was not read.
 
 ```
 Revenue
@@ -182,7 +186,7 @@ Provision for income taxes (current and future/deferred)
 
 ## Section 7 -- Balance Sheet Format
 
-Common Canadian ASPE presentation:
+Illustrative layout only. HOLD (unverified) actual classification, measurement, framework-specific headings/disclosures and reporting currency; this layout is not an operative standard.
 
 ```
 ASSETS
@@ -245,20 +249,21 @@ Total liabilities and shareholders' equity
 
 **Notes to Financial Statements**
 
-| # | Disclosure | ASPE | IFRS |
+| # | HOLD (unverified operative standard): Disclosure | ASPE | IFRS |
 | --- | --- | --- | --- |
-| 1 | Significant accounting policies | Required (Section 1505) | Required (IAS 1/IAS 8) |
-| 2 | Capital assets / PPE | Required (Section 3061) | Required (IAS 16) |
-| 3 | Financial instruments | Required (Section 3856) | Required (IFRS 7 — extensive) |
-| 4 | Related party transactions | Required (Section 3840) | Required (IAS 24) |
-| 5 | Commitments and contingencies | Required (Section 3290) | Required (IAS 37) |
-| 6 | Income taxes | Required (Section 3465) | Required (IAS 12) |
-| 7 | Revenue | Simplified | Required (IFRS 15 — extensive) |
-| 8 | Leases | Required (Section 3065) | Required (IFRS 16) |
-| 9 | Employee benefits / pensions | If applicable (Section 3462) | Required (IAS 19) |
-| 10 | Subsequent events | Required (Section 3820) | Required (IAS 10) |
-| 11 | Going concern | Required if uncertainty | Required (IAS 1) |
-| 12 | Segment information | Not required | Required (IFRS 8 — listed) |
+| 1 | HOLD (unverified operative standard): Significant accounting policies | Required (Section 1505) | Required (IAS 1/IAS 8) |
+| 2 | HOLD (unverified operative standard): Capital assets / PPE | Required (Section 3061) | Required (IAS 16) |
+| 3 | HOLD (unverified operative standard): Financial instruments | Required (Section 3856) | Required (IFRS 7 — extensive) |
+| 4 | HOLD (unverified operative standard): Related party transactions | Required (Section 3840) | Required (IAS 24) |
+| 5 | HOLD (unverified operative standard): Commitments and contingencies | Required (Section 3290) | Required (IAS 37) |
+| 6 | HOLD (unverified operative standard): Income taxes | Required (Section 3465) | Required (IAS 12) |
+| 7 | HOLD (unverified operative standard): Revenue | Simplified | Required (IFRS 15 — extensive) |
+| 8 | HOLD (unverified operative standard): Leases | Required (Section 3065) | Required (IFRS 16) |
+| 9 | HOLD (unverified operative standard): Employee benefits / pensions | If applicable (Section 3462) | Required (IAS 19) |
+| 10 | HOLD (unverified operative standard): Subsequent events | Required (Section 3820) | Required (IAS 10) |
+| 11 | HOLD (unverified operative standard): Going concern | Required if uncertainty | Required (IAS 1) |
+| 12 | HOLD (unverified operative standard): Segment information | Not required | Required (IFRS 8 — listed) |
+
 
 ## Section 9 -- Filing Requirements
 
@@ -267,16 +272,18 @@ Total liabilities and shareholders' equity
 | Item | Detail |
 | --- | --- |
 | Corporate tax return (T2) | Filed with CRA within 6 months of fiscal year-end |
-| Financial statements attached to T2 | Required — GIFI (General Index of Financial Information) coded |
+| Financial statements / T2 | GIFI normally substitutes for physical statements; required notes/reports and the insurance-company exception remain relevant. HOLD actual submission package; do not demand complete physical statements from every corporation. [RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) |
 | GIFI | Standard classification system for mapping financial statement lines to T2 |
-| Annual return (CBCA) | Within 60 days of anniversary of incorporation |
-| Provincial annual return | Varies (e.g., Ontario: within 6 months of fiscal year-end) |
-| Public companies (securities filings) | File with provincial securities commissions (e.g., OSC, BCSC) — within 90 days of year-end (annual) |
+| Annual return (CBCA) | Ordinary 60 days after incorporation/amalgamation/continuance anniversary; initial-event year excluded. [registry policy](https://ised-isde.canada.ca/site/corporations-canada/en/business-corporations/policy-annual-filings-canada-business-corporations-act) |
+| Provincial annual return | Ontario ordinary six months after taxation year-end; registry return is separate from T2. Bind actual population. [OBR](https://www.ontario.ca/page/ontario-business-registry); [official instructions](https://forms.mgcs.gov.on.ca/dataset/6c1fdc85-c100-493d-93ca-d86ef2c6a260/resource/a1e78643-e06e-403f-9aec-f26c10b26712/download/on00229e.pdf) |
+| NI 51-102 annual financial statements | Non-venture issuer: earlier of 90 days after financial year-end or the foreign filing date; venture issuer: earlier of 120 days or foreign filing. HOLD actual issuer status, scope and exceptions; not every PAE is this population. [4.1-4.2](https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/110_2004) |
 | Filing format | T2 electronically via CRA My Business Account or certified tax software |
-| Late filing penalty — T2 | 5% of unpaid tax + 1% per month (max 12 months) |
-| Failure to file penalty | CRA can assess federal penalty + provincial equivalent |
+| Late filing penalty — T2 | Ordinary 5% of unpaid tax plus 1% per complete month, maximum 12; actual unpaid balance and repeat/demand/nonresident/large-corporation branches remain separate. [T4012](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t2-corporation-income-tax-guide-before-you-start.html) |
+| Failure to file penalty | HOLD (unverified) any additional provincial amount/provision and actual conditions; do not automatically double the federal penalty |
 
 ### Assurance levels for CRA
+
+HOLD (unverified) all operative assurance-standard identifiers, scope and report wording below; the labels retain research topics, including legacy Notice to Reader terminology. An actual engagement requires current operative standards and the applicable law/contract. No universal PAE audit or lender requirement follows from this table.
 
 **Assurance levels for CRA**
 
@@ -292,14 +299,30 @@ Total liabilities and shareholders' equity
 
 | Category | Requirement |
 | --- | --- |
-| Publicly accountable enterprise (PAE) | Mandatory audit (CAS) |
-| CBCA private corporation | Audit required UNLESS unanimous shareholder waiver (s.163) |
-| OBCA private corporation | Audit required UNLESS unanimous shareholder consent (s.148) |
-| Federal not-for-profit (CNCA) | Audit required unless revenue < CAD 50,000 (review permitted < CAD 250,000) |
-| Provincial NPO | Varies by province and revenue thresholds |
-| Registered charity | Audit if revenue > CAD 250,000 (CRA requirement) |
+| Publicly accountable enterprise (PAE) | HOLD (unverified) universal PAE claim and CAS identifier. NI 51-102 4.1 supports its actual reporting-issuer audit population, not every accounting PAE. [NI 51-102](https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/110_2004) |
+| CBCA corporation | Bind non-distributing status and all-shareholder annual waiver under 162-163 as described above; other duties separate. [163](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-163.html) |
+| OBCA corporation | HOLD (unverified current applicability) as stated in the Ontario row above; no present waiver certification |
+| Federal not-for-profit (CNCA) | Use the complete inclusive soliciting/non-soliciting decision tree below; bind actual gross revenues, status and resolutions. [registry table](https://ised-isde.canada.ca/site/corporations-canada/en/not-profit-corporations/financial-statements-and-review) |
+| Provincial NPO | HOLD (unverified) actual provincial law, population and thresholds; federal CNCA is not a provincial rule |
+| Registered charity | CRA recommends professional audit above $250,000 income; it is not a mandatory CRA threshold. Bind independent corporate/funder duties. [CRA statement](https://www.canada.ca/en/revenue-agency/services/charities-giving/charities/operating-a-registered-charity/financial-statements.html) |
+
+### Federal CNCA decision tree
+
+HOLD actual soliciting status, last completed financial year's gross annual revenues, any Director deeming decision and resolutions before selecting a branch. These are public-accountant appointment/engagement rules, not exemptions from financial statements. [179](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-179.html); [182](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-182.html); [188](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-188.html); [189](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-189.html); [Regulations 80/84](https://laws-lois.justice.gc.ca/eng/regulations/SOR-2011-223/FullText.html).
+
+| Actual branch | Ordinary appointment/engagement rule |
+| --- | --- |
+| Soliciting, revenue at most $50,000 | Designated: review if public accountant appointed; members can require audit by ordinary resolution. Appointment may be waived annually by all members entitled to vote. [registry table](https://ised-isde.canada.ca/site/corporations-canada/en/not-profit-corporations/financial-statements-and-review) |
+| Soliciting, over $50,000 through $250,000 inclusive | Audit by default; a special resolution can require review, valid only to following annual meeting. [189](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-189.html) |
+| Soliciting, over $250,000 | Audit under the ordinary branch; no revenue-only review shortcut. [189](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-189.html) |
+| Non-soliciting, revenue at most $1,000,000 | Designated: review if public accountant appointed; members can require audit by ordinary resolution. Appointment may be waived annually by all members entitled to vote. [registry table](https://ised-isde.canada.ca/site/corporations-canada/en/not-profit-corporations/financial-statements-and-review) |
+| Non-soliciting, over $1,000,000 | Audit under the ordinary branch. [189](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-189.html); [prescribed amounts](https://laws-lois.justice.gc.ca/eng/regulations/SOR-2011-223/FullText.html) |
+
+Do not import the CBCA all-shareholders/non-voting rule into CNCA member consent. The statutory member voting population and actual resolution matter. A valid no-public-accountant branch does not certify the compilation standard or remove other legal/funder obligations.
 
 ### Practical guidelines (lender-driven)
+
+HOLD (unverified market policy): the three original loan bands below have no verified nationwide lender population or legal threshold. Obtain the actual lender covenant/engagement requirements; these bands cannot select an assurance level.
 
 **Practical guidelines (lender-driven)**
 
@@ -311,7 +334,89 @@ Total liabilities and shareholders' equity
 
 ### Auditor qualification
 
-- **Auditor qualification** — Licensed CPA (Chartered Professional Accountant) holding a public accounting licence issued by a provincial CPA body. Must meet independence and continuing professional development requirements.
+- **Auditor qualification** — HOLD (unverified) an all-province licensing/CPD statement and actual practitioner eligibility. CBCA 161 and BC 205-206 support their own independence/authorization populations; verify the actual law, authorization, independence and engagement, not a universal title shortcut. [CBCA 161](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-161.html); [BC 205-206](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/02057_08).
+
+## Illustrative arithmetic checks
+
+The original layouts had no numeric case inputs. These synthetic figures exercise only their arithmetic; they are not statutory thresholds, recognition conclusions, verified standards or client records. HOLD actual classification, recognition, measurement, framework and presentation before use.
+
+```oa-check
+name: Illustrative income-statement layout arithmetic only
+inputs:
+  revenue: 100000
+  cost_of_goods_sold: 60000
+  operating_expenses: 20000
+  other_income: 3000
+  other_expense: 1000
+  assumed_tax_expense: 4000
+steps:
+  - gross_profit: revenue - cost_of_goods_sold
+  - income_from_operations: gross_profit - operating_expenses
+  - net_other_income: other_income - other_expense
+  - income_before_tax: income_from_operations + net_other_income
+  - illustrative_net_income: income_before_tax - assumed_tax_expense
+expected:
+  gross_profit: 40000
+  income_from_operations: 20000
+  net_other_income: 2000
+  income_before_tax: 22000
+  illustrative_net_income: 18000
+```
+
+```oa-check
+name: Illustrative balance-sheet layout arithmetic only
+inputs:
+  current_assets: 50000
+  other_assets: 30000
+  current_liabilities: 20000
+  other_liabilities: 30000
+  share_capital: 10000
+  assumed_retained_earnings: 20000
+steps:
+  - total_assets: current_assets + other_assets
+  - total_liabilities: current_liabilities + other_liabilities
+  - total_equity: share_capital + assumed_retained_earnings
+  - liabilities_plus_equity: total_liabilities + total_equity
+  - reconciliation_difference: total_assets - liabilities_plus_equity
+expected:
+  total_assets: 80000
+  total_liabilities: 50000
+  total_equity: 30000
+  liabilities_plus_equity: 80000
+  reconciliation_difference: 0
+```
+
+## Sources
+
+The unchanged baseline reuses completed 21 November reads. No operative licensed accounting/assurance Handbook text was read. The original standard-setter proposal-status evidence is separately identified and does not certify a current accounting standard. Ontario/Quebec currency and transport gaps remain holds, not findings of repeal or dead law.
+
+| Primary source | Completed scope | Read date |
+| --- | --- | --- |
+| [CBCA 162](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-162.html) | Appointment alongside163; actual independent obligations remain | 2026-11-21 |
+| [CBCA 163](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-163.html) | Non-distributing, all shareholders including non-voting, only until following annual meeting; no revenue condition in this section | 2026-11-21 |
+| [CBCA 155](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-155.html) | Statutory statements/comparatives including155(2) explained-prior-year-omission exception; not universal ASPE proof | 2026-11-21 |
+| [CBCA 161](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-161.html) | Operative independence/disqualification conditions for its population | 2026-11-21 |
+| [CNCA 179](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-179.html) | Designated-corporation gross-revenue/status definition | 2026-11-21 |
+| [CNCA 182](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-182.html) | Waiver appointment and all members entitled to vote, annual duration | 2026-11-21 |
+| [CNCA 188](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-188.html) | Designated review by default if accountant appointed; ordinary-resolution audit | 2026-11-21 |
+| [CNCA 189](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-189.html) | Nondesignated audit, soliciting review via special resolution/revenue and annual duration; bounded25Nov reread of complete189 | 2026-11-21; bounded follow-up 2026-11-25 |
+| [CNCA Regulations](https://laws-lois.justice.gc.ca/eng/regulations/SOR-2011-223/FullText.html) | Full-text official80/84 prescribed amounts operatively read; section-specific web URLs had failed | 2026-11-21 |
+| [Corporations Canada NPO table](https://ised-isde.canada.ca/site/corporations-canada/en/not-profit-corporations/financial-statements-and-review) | Soliciting/non-soliciting inclusive branch table; bounded25Nov revenue-table follow-up | 2026-11-21; bounded follow-up 2026-11-25 |
+| [CRA charity statements](https://www.canada.ca/en/revenue-agency/services/charities-giving/charities/operating-a-registered-charity/financial-statements.html) | Over250000 recommendation, not mandatoryCRAaudit; bounded25Nov exactrecommendation read: “recommends” | 2026-11-21; bounded follow-up 2026-11-25 |
+| [Alberta official B-9 PDF](https://kings-printer.alberta.ca/documents/Acts/B09.pdf) | Operative163 read in memory21Nov: non-reporting issuer/special resolution/to nextannualmeeting;25Nov web/urllib retrievalseparatelyfailed403, not a new completedread | 2026-11-21 |
+| [BC BCA](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/02057_08) | 203/205-206 operative21Nov; bounded25Nov203(2)-(3) unanimity/nonvoting/oneFY read, pagecurrent24Nov2026 | 2026-11-21; bounded follow-up 2026-11-25 |
+| [NI 51-102](https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/110_2004) | 4.1 audit/reporting-issuer population,4.2 nonventure90/venture120/earlierforeignfiling; bounded25Nov4.2 read | 2026-11-21; bounded follow-up 2026-11-25 |
+| [Ontario BCA](https://www.ontario.ca/laws/statute/90b16) | Indexed148 text read; directcurrentpageapp-shell/403; versioncurrencyunresolved,HOLD | 2026-11-21 |
+| [Quebec BCA PDF](https://www.legisquebec.gouv.qc.ca/en/pdf/cs/S-31.1.pdf) | 239 operativepassage read throughweb,consolidation1Sep2025,currentapplicabilityHOLD | 2026-11-21 |
+| [CRA T4012](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t2-corporation-income-tax-guide-before-you-start.html) | Six-monthreturndeadline/electronicfiling/ordinaryrepeatpenalties;MyBAexpresslylisted,notpaymentdeadline | 2026-11-21 |
+| [CRA RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Applicablefullintroduction/Appendixread reused;GIFIinsteadphysicalstatements/notesreports/insurerexception/functionalcurrency | 2026-11-21 |
+| [CBCA annual policy](https://ised-isde.canada.ca/site/corporations-canada/en/business-corporations/policy-annual-filings-canada-business-corporations-act) | 60dayanniversaryevent/initialyearrule | 2026-11-21 |
+| [Ontario registry](https://www.ontario.ca/page/ontario-business-registry) | Ordinaryannualreturntax-yearperiod;officialinstructionsbelowalsoread | 2026-11-21 |
+| [Ontario ON00229e](https://forms.mgcs.gov.on.ca/dataset/6c1fdc85-c100-493d-93ca-d86ef2c6a260/resource/a1e78643-e06e-403f-9aec-f26c10b26712/download/on00229e.pdf) | Sixmonthsaftertaxationyear,provincialreturndistinctfromT2 | 2026-11-21 |
+| [AcSB project](https://www.frascanada.ca/en/aspe/projects/goodwill-and-acquired-intangibles) | Originalstandardsetterstatus:proposedamendments,plannedfinalissuancefirsthalf2027;notoperativeHandbook | 2026-11-21 |
+| [AcSB exposure explanation](https://www.frascanada.ca/en/aspe/projects/goodwill-and-acquired-intangibles/in-brief-acsb-ed-relief-from-recognition-acquired-intangible-assets-amortization-goodwill) | Proposed1Jan2029effectivewith earlyapplication;proposaldoesnotproveissuedcurrentelection | 2026-11-21 |
+
+**Not yet confirmed:** every operative ASPE/IFRS/ASNPO/pension/assurance-standard requirement and scope, current goodwill base/election and40-year citation, national framework/size negatives, Ontario/Quebec present applicability, actual fiscal period/currency/functional-currency eligibility, current provincial licensing/CPD and every case's status/resolutions/filing package or independent funder/securities obligations. Original statement/note/checklist topics are retained as non-usable research holds. Loan bands/layouts are illustrative or unsupported policy, not verified standards. Five statutory/CRA contradiction groups are corrected; no complete fact census or whole-skill verification is claimed.
 
 ## Disclaimer
 
