@@ -1,10 +1,10 @@
 ---
 name: us-gaap-asc606-revenue
 description: US GAAP revenue recognition under ASC 606 (Revenue from Contracts with Customers) and the related contract-cost guidance in ASC 340-40. Covers the five-step model — identify the contract, identify performance obligations, determine the transaction price, allocate it, and recognize revenue as or when obligations are satisfied — plus variable consideration and the constraint, significant financing components, principal-versus-agent, licenses, contract modifications, contract assets and liabilities, and the cost-to-obtain and cost-to-fulfill rules. Produces recognition conclusions, journal entries, and a reviewer brief. Issued as the US GAAP edition of the revenue topic; see ifrs15-revenue for the IFRS edition. MUST load alongside financial-reporting-workflow-base.
-version: 0.1
+version: 0.2
 jurisdiction: US
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-11-25
 source_checked: 2026-10-16
 depends_on:
   - financial-reporting-workflow-base
@@ -18,13 +18,15 @@ domain: financial-statements
 
 # US GAAP Asc606 Revenue
 
-## US GAAP Revenue — ASC 606 v0.1
+## US GAAP Revenue — ASC 606 v0.2
+
+> **Correction draft.** Independent changed-line source review and accountant approval are pending. Original approval metadata is retained without certifying these edits. The cited ASUs are primary amendment records; current consolidated Codification access and entity-specific adoption/transition application remain non-usable holds. This is not whole-current-standard clearance.
 
 ## What this file is
 
 **This is a content skill that loads on top of `financial-reporting-workflow-base`.** It supplies the recognition, measurement, presentation, and disclosure rules for revenue from contracts with customers under US GAAP. The base supplies the two-layer output contract, the journal-entry format, and the self-checks.
 
-- **Standard currency** — ASC 606 and ASC 340-40 as effective for all entities (public business entities, certain not-for-profit entities and certain employee benefit plans since annual periods beginning after 15 Dec 2017; all others after 15 Dec 2018, or after 15 Dec 2019 for entities that elected the ASU 2020-05 deferral). No subsequent ASU has displaced the five-step core. Confirm no entity-specific industry guidance (e.g. ASC 924, 942, 944, 980) overrides.  _([ASC 606; ASC 340-40](https://storage.fasb.org/ASU%202020-05.pdf))_
+- **Standard currency** — ASC 606 and ASC 340-40 as effective for all entities (public business entities, certain not-for-profit entities and certain employee benefit plans since annual periods beginning after 15 Dec 2017; all others after 15 Dec 2018, or after 15 Dec 2019 for eligible entities that elected the ASU 2020-05 deferral and had not issued, or made available for issuance, their financial statements as of June 3, 2020 (ASC 606-10-65-1(b))). No subsequent ASU has displaced the five-step core. Confirm no entity-specific industry guidance (e.g. ASC 924, 942, 944, 980) overrides.  _([ASC 606; ASC 340-40](https://storage.fasb.org/ASU%202020-05.pdf))_
 - **Scope exclusions** — ASC 606 applies to contracts with customers except: leases (ASC 842), insurance (ASC 944), financial instruments (ASC 310, 320, 815, 825, 860), guarantees other than product/service warranties (ASC 460), and certain non-monetary exchanges between entities in the same line of business to facilitate sales to customers.  _(ASC 606-10-15-2)_
 
 ## Section 1 — Scope statement
@@ -46,9 +48,9 @@ This skill does NOT cover: lease revenue (`ASC 842`), interest/dividend income (
 
 - **Five criteria for a contract to exist** — A contract exists when **all five** criteria are met: 1. Parties have **approved** the contract and are committed to perform. 2. Each party's **rights** to goods/services are identifiable. 3. **Payment terms** are identifiable. 4. The contract has **commercial substance**. 5. It is **probable** the entity will collect the consideration it is entitled to (a *collectibility* gate). "Probable" under US GAAP = **likely to occur** (a higher threshold than IFRS's "probable").  _(ASC 606-10-25-1 to 25-8)_
 - **Criteria not met — deposit liability** — If the criteria are not met, no revenue; consideration received is a deposit liability until criteria are met or the release events occur (contract terminated and consideration non-refundable; no remaining obligations and substantially all consideration received and non-refundable; or control of the goods/services to which the consideration relates has transferred, the entity has stopped transferring goods/services with no obligation to transfer more, and the consideration is non-refundable).  _([ASC 606-10-25-7](https://storage.fasb.org/ASU%202016-12.pdf))_
-- **Combine contracts** — Combine contracts entered into at/near the same time with the same customer when they are negotiated as a package, consideration in one depends on the other, or the goods/services are a single performance obligation.  _(ASC 606-10-25-9)_
+- **Combine contracts** — Combine contracts entered into at/near the same time with the same customer or related parties of that customer when they are negotiated as a package, consideration in one depends on the other, or the goods/services are a single performance obligation.  _(ASC 606-10-25-9)_
 
-> **⚑ AUDIT FLASH POINT — collectibility gate.** Step 1 collectibility is assessed at the *customer* level on the consideration the entity expects to be entitled to (it may reflect an intention to offer a price concession, which is variable consideration, not a collectibility failure). Misusing Step 1 to defer revenue for a credit-risky customer when the real issue is a concession is a common error.
+> **⚑ AUDIT FLASH POINT — collectibility gate.** Step 1 collectibility starts with the *contract* as the assessment unit; customer creditworthiness is an input. The conditional portfolio practical expedient in 606-10-10-4 does not make every customer the unit. Collectibility is assessed on the consideration the entity expects to be entitled to (it may reflect an intention to offer a price concession, which is variable consideration, not a collectibility failure). Misusing Step 1 to defer revenue for a credit-risky customer when the real issue is a concession is a common error.
 
 ### Step 2 — Identify the performance obligations — `ASC 606-10-25-14` to `25-22`
 
@@ -65,7 +67,7 @@ This skill does NOT cover: lease revenue (`ASC 842`), interest/dividend income (
 - **The constraint** — Include variable consideration only to the extent it is **probable** that a significant reversal will **not** occur when the uncertainty resolves. Factors that increase reversal risk: susceptibility to factors outside the entity's influence, long time to resolution, limited experience, broad range of outcomes.  _(ASC 606-10-32-11 to 32-13)_
 - **Significant financing component** — Adjust for the time value of money when timing gives the customer/entity a significant financing benefit. Practical expedient: ignore if the period between transfer and payment is ≤ 1 year.  _(ASC 606-10-32-15 to 32-20)_
 - **Noncash consideration** — Measure at fair value at contract inception.  _(ASC 606-10-32-21 to 32-24)_
-- **Consideration payable to a customer** — A reduction of transaction price unless it is payment for a distinct good/service received (then account for as a purchase).  _(ASC 606-10-32-25 to 32-27)_
+- **Consideration payable to a customer** — A reduction of transaction price unless it is payment for a distinct good/service received (then account for as a purchase up to fair value). Any payment above fair value reduces transaction price; if fair value cannot reasonably be estimated, reduce transaction price for the full payment (606-10-32-26).  _(ASC 606-10-32-25 to 32-27)_
 
 ### Step 4 — Allocate the transaction price — `ASC 606-10-32-28` to `32-41`
 
@@ -83,7 +85,7 @@ This skill does NOT cover: lease revenue (`ASC 842`), interest/dividend income (
 ## Section 3 — Reference layer: high-frequency special topics
 
 - **Principal vs. agent** — The entity is **principal** if it controls the good/service before transfer (indicators: primary responsibility for fulfillment, inventory risk, discretion in pricing). Principal recognizes **gross**; agent recognizes **net** (the fee/commission). This is the single most common gross-vs-net dispute.  _(ASC 606-10-55-36 to 55-40)_
-- **Licenses of IP** — **Right to access** IP as it exists throughout the license period → **over time**; **right to use** IP as it exists at the point in time the license is granted → **point in time**. Sales/usage-based royalties on licenses of IP: recognize at the **later** of the subsequent sale/usage or satisfaction of the PO (the royalty exception).  _(ASC 606-10-55-54 to 55-65; 55-65)_
+- **Licenses of IP** — **Right to access** IP as it exists throughout the license period → **over time**; **right to use** IP as it exists at the point in time the license is granted → **point in time**. Sales/usage-based royalties on licenses of IP: recognize at the **later** of the subsequent sale/usage or satisfaction (including partial satisfaction) of the performance obligation to which the royalty is allocated (606-10-55-65(b)); do not defer all over-time royalties until final completion.  _(ASC 606-10-55-54 to 55-65; 55-65)_
 - **Warranties** — Assurance-type warranty → `ASC 460` cost accrual, not a PO; service-type warranty → a separate PO.  _(ASC 606-10-55-30 to 55-35)_
 - **Customer options / material rights** — An option that gives a material right (discount the customer would not otherwise get) is a separate PO; allocate consideration to it.  _(ASC 606-10-55-41 to 55-45)_
 - **Contract modifications** — Separate contract if it adds distinct goods/services at SSP; otherwise, if remaining goods are distinct → **prospective** (treat as termination + new contract); if not distinct → **cumulative catch-up**.  _(ASC 606-10-25-10 to 25-13)_
@@ -91,20 +93,20 @@ This skill does NOT cover: lease revenue (`ASC 842`), interest/dividend income (
 ## Section 4 — Reference layer: contract costs — `ASC 340-40`
 
 - **Incremental costs to obtain** — Incremental costs to obtain a contract (e.g. sales commissions) are **capitalized** if expected to be recovered. Practical expedient: expense if the amortization period would be ≤ 1 year.  _(ASC 340-40-25-1; 340-40-25-4)_
-- **Costs to fulfill** — Costs to fulfill a contract are capitalized if they relate directly to a contract, generate/enhance resources used to satisfy POs, and are expected to be recovered, and are not in another standard's scope.  _(ASC 340-40-25-5)_
+- **Costs to fulfill** — Costs to fulfill a contract are capitalized if they relate directly to a contract, generate/enhance resources used to satisfy or continue satisfying future performance obligations, and are expected to be recovered, and are not in another standard's scope. Costs of past/satisfied performance and costs that cannot be distinguished between past and future performance are expensed under 340-40-25-8(c)/(d).  _(ASC 340-40-25-5)_
 - **Amortization** — Amortize on a systematic basis consistent with the transfer of the related goods/services; review for impairment.  _(ASC 340-40-35)_
 
 ## Section 5 — Presentation — `ASC 606-10-45`
 
 - **Contract liability (deferred revenue)** — Consideration received/due before the entity transfers goods/services.  _(ASC 606-10-45)_
 - **Contract asset** — The entity's right to consideration in exchange for goods/services already transferred, when that right is conditional on something other than the passage of time. Once unconditional → **receivable**.  _(ASC 606-10-45)_
-- **Refund liability** — Consideration the entity expects to refund (e.g. expected returns); paired with an **asset for the right to recover returned goods** at former carrying amount less recovery costs.  _(ASC 606-10-45)_
+- **Refund liability**: consideration the entity expects to refund, under 606-10-32-10. A returned-product recovery asset applies to product-return arrangements, not every refund. Measure that asset by former carrying amount less expected recovery costs, including potential decreases in returned-product value (606-10-55-22 to 55-29).
 
 ## Section 6 — Executable layer (Layer B): the procedure
 
 Run these steps on the transaction's facts. Each cites the Layer A rule it executes.
 
-1. **Confirm a contract exists** (Step 1 / §2). If the collectibility gate fails, book consideration received as a deposit liability and stop.
+1. **Confirm a contract exists** (Step 1 / §2). If the criteria fail, hold consideration received as a deposit liability, reassess under 25-6/25-8, and test each applicable 25-7 release event described in the reference layer. Do not stop permanently or ignore non-refundable-consideration release branches.
 2. **List the promises and group into POs** (Step 2 / §2). Document the distinct analysis for each. Identify any series, material rights, warranties.
 3. **Build the transaction price** (Step 3 / §2): fixed + constrained variable consideration; adjust for any significant financing component; measure noncash at fair value; net consideration payable to the customer.
 4. **Determine SSP for each PO and allocate** (Step 4 / §2). Show the allocation table.
@@ -141,7 +143,32 @@ Each month (×24) — amortize cost — driving rule: ASC 340-40-35-1
   (memo: 3,000 / 24 = 125; consistent with revenue pattern)
 ```
 
-> **⚑ AUDIT FLASH POINT — combine vs. separate the setup PO.** If setup were instead judged *distinct*, $6,000 would (after SSP allocation) be recognized at a point in time on go-live, accelerating revenue. The integration/interdependence conclusion must be evidenced.
+> **⚑ AUDIT FLASH POINT — combine vs. separate the setup PO.** If setup were judged *distinct*, separately establish its standalone selling price and allocate consideration under 32-31/32; the quoted $6,000 is not automatically the allocated revenue. Then apply 25-27/25-30 to decide over-time versus point-in-time timing. Distinctness alone does not establish $6,000 at go-live. Evidence the integration/interdependence, SSP and timing conclusions.
+
+```oa-check
+name: Original illustrative subscription and setup allocation
+inputs:
+  subscription: 24000
+  setup: 6000
+  months: 24
+steps:
+  transaction_price: subscription + setup
+  monthly_revenue: transaction_price / months
+expected:
+  transaction_price: 30000
+  monthly_revenue: 1250
+```
+
+```oa-check
+name: Original illustrative contract commission amortization
+inputs:
+  commission: 3000
+  months: 24
+steps:
+  monthly_amortization: commission / months
+expected:
+  monthly_amortization: 125
+```
 
 ## Section 7 — Divergence from IFRS 15
 
@@ -189,3 +216,17 @@ Trigger and produce as relevant:
 ## Section 10 — Disclaimer
 
 Provides computational and interpretive guidance on ASC 606 / ASC 340-40 only. Not an audit and not assurance. Revenue recognition turns heavily on entity-specific facts and significant judgment. Have outputs reviewed and signed by a qualified accountant before they are reflected in financial statements relied upon by third parties.
+
+
+## Sources
+
+Bounded amendment-source reads below were completed on 2026-11-22 and are reused for these paragraph corrections. An ASU is a record of amendments; the current Codification is the authority. No full current-standard or entity-specific application is claimed.
+
+| Authority | Actual read scope and short wording | Read on |
+| --- | --- | --- |
+| [ASU 2014-09 Section A](https://storage.fasb.org/ASU%202014-09_Section%20A.pdf) | Read in zero-based PDF pages 22–30, 33–45, 46–53, 59–64, 149–153, including the cited combination, customer-payment, cost/refund and SSP/timing paragraphs. Amended clauses use the later sources below. “An Accounting Standards Update is not authoritative”. | 2026-11-22 |
+| [ASU 2020-05](https://storage.fasb.org/ASU%202020-05.pdf) | Read in zero-based pages 10–12, historical eligibility and 606-10-65-1(b): “as of June 3, 2020”. | 2026-11-22 |
+| [ASU 2016-12](https://storage.fasb.org/ASU%202016-12.pdf) | Read in operative 25-1/3/5/6/7/8 and zero-based pages 24–25 noncash passages: “substantially all of the consideration”. | 2026-11-22 |
+| [ASU 2016-10](https://storage.fasb.org/ASU%202016-10.pdf) | Read in zero-based pages 13–18 and 23–24: distinctness, shipping, license timing and royalty clause 55-65(b), “satisfied (or partially satisfied)”. | 2026-11-22 |
+
+Not yet confirmed; non-usable holds: complete current consolidated Codification and subsequent-ASU sweep; entity/industry-specific scope and adoption/transition; full functional/symbolic license classification; current IFRS comparison and its detailed divergence assertions; actual contract enforceability, financing significance and commission benefit/amortization life; full disclosure/sector requirements; and all real-client framework/input conclusions. Current Codification access returned no readable text. Later 2025 amendment/early-adoption application has not been completed for an actual entity. The illustrative entries balance but do not establish the legal/accounting assumptions.
