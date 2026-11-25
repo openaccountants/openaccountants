@@ -4,7 +4,7 @@ description: "Dutch personal income tax (inkomstenbelasting) for a resident indi
 version: 2.5
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-11-22
+last_updated: 2026-11-25
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -174,7 +174,7 @@ expected:
 | Wet inkomstenbelasting 2001, version 1 January 2026 (art. 5.2 before the retroactive 2025 change in Stcrt. 2026, 3708) | https://wetten.overheid.nl/BWBR0011353/2026-01-01 | 2026-10-24 |
 | Wet financiering sociale verzekeringen, art. 9-12 | https://wetten.overheid.nl/BWBR0017745/2026-01-01 | 2026-10-24 |
 | Algemene wet inzake rijksbelastingen (art. 4, 9, 13, 15, 30f, 30fa, 30fc, 30hb, 67a, 67c, 67d, 67e) | https://wetten.overheid.nl/BWBR0002320/ | 2026-10-24 |
-| Invorderingswet 1990, art. 63b(1), statutory power for an assessment-payment default penalty | https://wetten.overheid.nl/BWBR0004770/ | 2026-11-22 |
+| Invorderingswet 1990, art. 63b(1), statutory power for an assessment-payment default penalty | https://wetten.overheid.nl/BWBR0004770/2026-10-01 | 2026-11-22 |
 | Belastingdienst, box 1 rates 2026 and 2025, AOW-age month table | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 | 2026-10-31 |
 | Fiscale informatie 2026 ch. 21, tax credits | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen | 2026-10-31 |
 | Fiscale informatie 2025, tax credits | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/heffingskortingen | 2026-10-24 |
