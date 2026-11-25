@@ -63,6 +63,19 @@ class StartupMethodTests(unittest.TestCase):
         plan = server.start("taxes", "XX")
         self.assertEqual(plan["skills_to_load"][0]["slug"], "workflow-base")
 
+    def test_jurisdiction_suggestions_refresh_the_catalogue_once(self):
+        with patch.object(server, "_index", wraps=server._index) as index:
+            suggestions = server.start(jurisdiction="XX")
+
+        self.assertEqual(suggestions["status"], "needs_input")
+        self.assertIn("taxes", {entry["key"] for entry in suggestions["available_intents"]})
+        self.assertEqual(index.call_count, 1)
+
+        self.write("xx-income-tax", "Do not apply", status="needs_sources")
+        plan = server.start("taxes", "XX")
+        self.assertEqual(plan["status"], "uncovered")
+        self.assertEqual(plan["skills_to_load"], [])
+
     def test_method_without_applicable_country_content_is_not_a_ready_plan(self):
         self.method.write_text(document("workflow-base", "General preparation only.").replace(
             "jurisdiction: XX", "jurisdiction: GLOBAL").replace("category: international", "category: foundation"))

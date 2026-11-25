@@ -45,7 +45,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from functools import lru_cache
 from pathlib import Path
-from typing import Any
+from typing import Any, Iterable
 from urllib.parse import urlencode
 
 import yaml
@@ -1134,12 +1134,14 @@ def _normalize_intent(raw: str | None) -> tuple[str | None, list[str]]:
     return None, matches[:3]
 
 
-def _skills_for_intent(jurisdiction: str, intent_key: str) -> list[dict[str, Any]]:
+def _skills_for_intent(
+    jurisdiction: str, intent_key: str, records: Iterable[dict[str, Any]],
+) -> list[dict[str, Any]]:
     """Score and return the jurisdiction's skills that match ``intent_key``."""
     entry = _INTENT_CATALOGUE[intent_key]
     jx = jurisdiction.upper()
     scored: list[tuple[int, dict[str, Any]]] = []
-    for rec in _index().values():
+    for rec in records:
         if rec["jurisdiction"].upper() != jx:
             continue
         if rec["slug"] == "workflow-base":
@@ -1219,7 +1221,8 @@ def _jurisdictions_for_intent(intent_key: str) -> list[str]:
 
 def _intents_for_jurisdiction(jurisdiction: str) -> list[str]:
     """Catalogue keys with at least one matching skill in this jurisdiction."""
-    return [k for k in _INTENT_CATALOGUE if _skills_for_intent(jurisdiction, k)]
+    records = _index().values()
+    return [k for k in _INTENT_CATALOGUE if _skills_for_intent(jurisdiction, k, records)]
 
 
 def _catalogue_entries(keys: list[str] | None = None) -> list[dict[str, str]]:
@@ -1333,7 +1336,7 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
 
     # 5) Both inputs resolved — build the plan.
     assert intent_key and jx
-    skills = _skills_for_intent(jx, intent_key)
+    skills = _skills_for_intent(jx, intent_key, _index().values())
     label = _INTENT_CATALOGUE[intent_key]["label"]
     if not skills or jx in {"GLOBAL", "INTL"}:
         return _start_result({
