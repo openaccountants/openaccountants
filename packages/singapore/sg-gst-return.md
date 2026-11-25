@@ -3,17 +3,17 @@ name: sg-gst-return
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Singapore GST return (GST F5 form) for any client. Trigger on phrases like "prepare GST return", "do the GST", "fill in GST F5", "create the return", "Singapore GST", "IRAS filing", or any request involving Singapore GST filing. Also trigger when classifying transactions for GST purposes from bank statements, invoices, or other source data. This skill covers Singapore only and only standard GST-registered persons filing GST F5. Group registrations, partial exemption with non-de-minimis exempt supplies, Approved 3rd Party Logistics schemes, and Major Exporter Scheme applications are all in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). ALWAYS read this skill before touching any Singapore GST work.
 jurisdiction: SG
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
-version: 1.0
+version: 1.1
 type: filing-howto
 ---
 
-# Singapore GST: registration, GST F5, input tax and reverse charge v1.0 (2026)
+# Singapore GST: registration, GST F5, input tax and reverse charge v1.1 (2026)
 
-Tax year 2026. The rules below are those published by the Inland Revenue Authority of Singapore (IRAS) read in the scoped official pages on 14 November 2026; historical periods and announced future phases remain explicitly dated. All amounts are Singapore dollars. Source: [IRAS GST pages](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/completing-gst-returns).
+Tax year 2026. The rules below are those published by the Inland Revenue Authority of Singapore (IRAS) and the applicable legislation as at 22 November 2026; historical periods and announced future phases remain explicitly dated. All amounts are Singapore dollars. Source: [IRAS GST pages](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/completing-gst-returns).
 
 ## Scope and who this is for
 
@@ -45,7 +45,7 @@ Tax year 2026. The rules below are those published by the Inland Revenue Authori
 4. **List every purchase and import.** For each, check the input tax conditions: tax invoice or import permit in the client's name, business purpose, attributable to taxable supplies, not a disallowed expense, supplier actually GST-registered.
 5. **Take out blocked items** (motor cars, club subscriptions, most staff medical costs and medical or accident insurance, family benefits, betting) from both Box 5 and Box 7.
 6. **Decide whether the client is a reverse charge business.** Only a business not entitled to full input tax credit (because it makes exempt supplies or has non-business receipts) reverse charges imported services and low-value goods. A fully taxable business does not.
-7. **If the client makes exempt supplies, run the de minimis test.** If it is not met, input tax directly attributable to exempt supplies is not claimable and residual input tax must be apportioned; refer if needed.
+7. **If the client makes exempt supplies, run the de minimis test.** If it is not met, check the regulations 33 to 35 exceptions for specified exempt supplies and refer any residual input tax apportionment.
 8. **Fill Boxes 1 to 17** using the box table below. Track output tax and input tax from the invoices; do not recompute them from Box 1 or Box 5.
 9. **Check prior-period errors.** Decide whether each can be adjusted in this return under the IRAS concession or needs a GST F7.
 10. **File on myTax Portal and pay** by one month after the period end. File a nil return if there was no activity.
@@ -70,7 +70,7 @@ Tax year 2026. The rules below are those published by the Inland Revenue Authori
 | --- | --- | --- | --- |
 | Retrospective view | Taxable turnover for the calendar year (1 Jan to 31 Dec) more than $1 million | 1 Jan to 30 Jan of the following year | 1 Mar of the following year  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst) |
 | Prospective view, forecast date before 1 Jul 2025 | Taxable turnover expected to be more than $1 million in the next 12 months | Within 30 days after the date of the forecast | The 31st day after the forecast date  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst) |
-| Prospective view, liability arising on or after 1 Jul 2025 | Same | Within 30 days after the date of the forecast (unchanged) | 2 months from the date of the forecast (two-month grace period to start charging GST)  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst) |
+| Prospective view, liability arising on or after 1 Jul 2025 | Same | Within 30 days after the date of the forecast (unchanged) | The corresponding date in the second following month, or the last day of that month if there is no corresponding date  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst) |
 
 - **Taxable turnover** is standard-rated plus zero-rated supplies made in Singapore in the course of business, including low-value goods sold to non-registered customers in Singapore from 1 Jan 2023. It excludes exempt supplies, including financial services which are international services and thus zero-rated, out-of-scope supplies and sales of capital assets such as machinery, equipment, office buildings and furniture.
 - **Exactly $1 million is not over the line.** Both views use "more than".
@@ -84,7 +84,7 @@ Tax year 2026. The rules below are those published by the Inland Revenue Authori
 
 - A business that is not liable may register voluntarily if it makes taxable supplies, makes only out-of-scope supplies, makes exempt financial services that are also international services, or procures imported services or low-value goods and would not be entitled to full input tax credit if registered. A business with firm intentions to start such transactions may also apply.
 - Voluntarily registered businesses must remain registered for 2 years, and must meet the conditions IRAS imposes before and after registration (IRAS e-Tax Guide "GST: Conditions for GST Voluntary Registration").
-- A voluntary registrant from 1 Apr 2026 falls under the GST InvoiceNow Requirement from the start (see "GST InvoiceNow Requirement").
+- A business applying for voluntary registration on or after 1 Apr 2026 falls under the GST InvoiceNow Requirement from the start (see "GST InvoiceNow Requirement").
 
 ### Filing and payment deadlines ([IRAS: Due dates and requests for extension](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/due-dates-and-requests-for-extension))
 
@@ -143,7 +143,7 @@ Input tax is claimable only when all of these are met:
 1. The business is GST-registered.
 2. The goods or services are supplied to, or imported by, the business.
 3. They are used or will be used for the business.
-4. Local purchases have a valid tax invoice addressed to the business, or a simplified tax invoice, when the claim is made. For purchases over $1,000 the invoice must show the words "tax invoice", the customer's name and the GST amount; for purchases of $1,000 or less it must show the GST amount or say the price includes GST. The supplier must actually be GST-registered.
+4. Local purchases have a valid tax invoice addressed to the business, or a simplified tax invoice, when the claim is made. For purchases over $1,000 including GST, the invoice must show the words "tax invoice", the customer's name and the GST amount; for purchases of $1,000 or less including GST, it must show the GST amount or say the price includes GST. The supplier must actually be GST-registered.
 5. Imports have an import permit showing the business as importer, plus supporting documents.
 6. The input tax is directly attributable to taxable supplies, or to out-of-scope supplies that would be taxable if made in Singapore.
 7. The claim is not disallowed under Regulations 26 and 27 of the GST (General) Regulations.
@@ -159,7 +159,7 @@ Input tax is claimable only when all of these are met:
 | --- | --- | --- |
 | Club subscription fees, including joining and transfer fees, charged by sports and recreation clubs | Disallowed (Regulation 26) | Food/drink business entertainment is tested under the published entertainment conditions. The old blanket club-facility green/buggy/locker-fee claim remains unconfirmed below.  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/conditions-for-claiming-input-tax) |
 | Motor car purchase and running costs (cars registered in the business's or an individual's name, or hired) | Disallowed (Regulation 27) | Vehicles outside the "motor car" definition in Regulation 25(1) (lorries, vans, motorcycles; a motor car is built for not more than seven passengers excluding the driver and weighs not more than 3,000 kg unladen). From 1 Apr 2022, pay-per-trip chauffeured private hire car transport. From 1 Jan 2023, costs of a car used by a third party (for example a customer's parking). Cars used by a connected person only where the costs are recovered and the recovery is not ancillary to another supply. Claim only to extent recovered; the connected recipient remains blocked from claiming its recharged car tax. Specific car-service/fleet businesses have additional exceptions requiring their own evidence.  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/common-scenarios---do-i-claim-gst/Motor-Vehicles-Expenses) |
-| Medical expenses for staff | Disallowed (Regulation 26) | Obligatory under the Work Injury Compensation Act or a collective agreement under the Industrial Relations Act; or (for expenses on or after 1 Oct 2021) treatment linked to health risks of the work and incurred under Singapore written law; or COVID-19 treatment under a government advisory.  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/conditions-for-claiming-input-tax) |
+| Medical expenses for staff | Disallowed (Regulation 26) | Obligatory under the Work Injury Compensation Act or a collective agreement under the Industrial Relations Act; or, for expenses incurred on or after 1 Oct 2021, treatment linked to a health risk or requirement arising from the work or work environment. That work-related treatment must also be required by Singapore written law or be COVID-19 treatment under a written government or public-authority advisory.  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/conditions-for-claiming-input-tax) |
 | Medical and accident insurance premiums for staff | Disallowed | Obligatory under the Work Injury Compensation Act or a collective agreement.  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/conditions-for-claiming-input-tax) |
 | Benefits for family members or relatives of staff (for example school fees of expatriates' children) | Disallowed (Regulation 26) | None published.  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/conditions-for-claiming-input-tax) |
 | Betting, sweepstakes, lotteries, fruit machines or games of chance | Disallowed | None published.  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/conditions-for-claiming-input-tax) |
@@ -168,15 +168,15 @@ Also not claimable: purely private purchases, and household costs of staff worki
 
 ### Exempt supplies and the de minimis rule ([IRAS: Claiming input tax incurred to make exempt supplies](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/claiming-input-tax-incurred-to-make-exempt-supplies))
 
-- Input tax incurred in making exempt supplies is not claimable unless the De Minimis Rule is satisfied.
+- The De Minimis Rule can allow input tax on exempt supplies in full. A separate exception applies to specified exempt supplies under regulations 33 to 35 of the GST (General) Regulations.
 - The rule is satisfied when the value of exempt supplies is less than or equal to both: an average of $40,000 per month, and 5% of the total value of all taxable and exempt supplies in the period. Reverse-charged imports, customer-accounted supplies received and marketplace supplies made for underlying suppliers are left out of taxable supplies for this test.
 - If satisfied, all input tax is claimable except blocked items, but only provisionally: a longer-period adjustment repeats the test.
-- If not satisfied, input tax directly attributable to exempt supplies is not claimable, and residual input tax is apportioned under IRAS's formula. Refer this.
+- If the De Minimis Rule is not satisfied, input tax directly attributable to exempt supplies specified in regulation 33 can still be recovered if the business is outside regulation 34 and passes the separate regulation 35 test. Under that test, other exempt supplies must be no more than 5% of non-specified taxable and exempt supplies. Attribute other input tax directly where possible and apportion residual input tax under IRAS's formula. Refer this.
 
 ### Reverse charge: imported services and low-value goods ([IRAS: Local businesses importing services and low-value goods](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-and-digital-economy/local-businesses))
 
 - **Who:** only a GST-registered business belonging in Singapore that is not entitled to full input tax credit because it makes exempt supplies or receives non-business receipts (an "RC business"). IRAS's examples: banks and financial institutions, investment-holding companies with dividend income, companies with substantial inter-company loan interest, residential or mixed-use developers, and charities providing free or subsidised services.
-- **A business that makes only taxable supplies does not reverse charge** and leaves Box 14 blank. For an overseas supplier that correctly charges no Singapore GST under the applicable regime, there is no reverse-charge entry; do not infer the supplier’s GST treatment merely from its overseas address.
+- **A business that makes only taxable supplies does not reverse charge** and leaves Box 14 blank. A business with restricted recovery must still self-account for covered imports where the supplier correctly charges no Singapore GST. Check the invoice and the business's recovery entitlement.
 - **What:** from 1 Jan 2020, all services procured from overseas suppliers except those specifically excluded; from 1 Jan 2023, low-value goods bought from local or overseas suppliers, marketplaces or redeliverers, registered or not.
 - **How:** account for GST as if you were the supplier: value in Box 1 and Box 14, GST in Box 6; the value in Box 5 and the claimable part of the GST in Box 7 under the normal recovery rules.
 - **Unregistered businesses:** a business that would not get full input tax credit if registered must register when its taxable turnover and/or the total value of its imported services and low-value goods is more than $1 million over 12 months.
@@ -193,7 +193,7 @@ Also not claimable: purely private purchases, and household costs of staff worki
 
 ### GST InvoiceNow Requirement ([IRAS: GST InvoiceNow Requirement](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-invoicenow-requirement))
 
-GST-registered businesses must submit invoice data to IRAS through InvoiceNow (the Peppol-based network) using an InvoiceNow-Ready Solution. IRAS publishes this phased timetable:
+Businesses in scope must submit invoice data to IRAS through InvoiceNow using an InvoiceNow-Ready Solution from their applicable date. IRAS publishes this phased timetable:
 
 | From | Who |
 | --- | --- |
@@ -212,10 +212,10 @@ GST-registered businesses must submit invoice data to IRAS through InvoiceNow (t
 
 ### Deemed supplies and other output tax items ([IRAS: Completing GST return](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/completing-gst-returns))
 
-- Gifts of goods: output tax is due on a gift that costs more than $200 where input tax on it was claimed (including gifts to staff). IRAS's input tax page says the value is the open market value.
-- Business assets put to private use, and free use of business premises by a third party, are deemed supplies in Box 1.
+- Gifts of goods: output tax is due on a gift that costs more than $200 excluding GST where input tax on it was claimed (including gifts to staff). Use the gift's open market value to calculate output tax.
+- Private use of business assets or free use of business premises by a third party can create a deemed supply in Box 1. Check whether input tax was allowed on the asset and whether the use is for a business purpose.
 - Sales of business assets (office furniture, equipment, machinery, commercial property) are standard-rated even though they are not trading stock.
-- On cancellation (GST F8), business assets held on the last day of registration are taxed if their total value exceeds $10,000 and input tax was allowed.
+- On cancellation (GST F8), check whether the total open market value of qualifying business assets held on the last day exceeds $10,000. Include assets on which input tax was claimed or is deemed claimed and qualifying assets acquired through a transfer of a business as a going concern.
 
 ## Boundary and exception table
 
@@ -231,7 +231,7 @@ GST-registered businesses must submit invoice data to IRAS through InvoiceNow (t
 | Club food/drink versus other facility charges | Test actual food/drink under entertainment conditions; membership itself is blocked. Do not claim green/buggy/locker fees from the old blanket statement pending confirmation | [IRAS input tax](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/conditions-for-claiming-input-tax) |
 | Petrol for a van or lorry | Claimable (not a "motor car") | [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/common-scenarios---do-i-claim-gst/Motor-Vehicles-Expenses) |
 | Airport limousine paid per trip | Claimable from 1 Apr 2022 with a valid invoice | [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/conditions-for-claiming-input-tax) |
-| Ordinary purchase over $1,000 without customer name | Obtain a valid reissued invoice before claiming; test the separate food/drink entertainment concession where actually applicable, not for staff meals | [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/conditions-for-claiming-input-tax) |
+| Ordinary purchase over $1,000 including GST without customer name | Obtain a valid reissued invoice before claiming; test the separate food/drink entertainment concession where actually applicable, not for staff meals | [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/conditions-for-claiming-input-tax) |
 | Supplier not paid within 12 months of the payment due date | Repay the input tax claimed (deduct in Box 5 and Box 7) | [IRAS completing returns](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/completing-gst-returns) |
 | Net GST payable under $5 | No payment; not carried forward | [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/completing-gst-returns) |
 | Error only in Box 13 (revenue) | No GST F7 needed | [IRAS GST F7](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/correcting-errors-made-in-gst-return-%28filing-gst-f7%29) |
@@ -251,11 +251,11 @@ A trading company made standard-rated and zero-rated sales of $1,050,000 in cale
 
 ### Case 2: prospective registration after 1 Jul 2025 ([IRAS registration](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst))
 
-On 15 Aug 2026 a consultancy signs a 12-month contract worth $1,200,000.
+On 15 Aug 2026 a consultancy signs a contract for $1,200,000 of taxable supplies to be made in the following 12 months.
 
 - Its taxable turnover is expected to be more than $1 million in the next 12 months, so it is liable under the prospective view on 15 Aug 2026.
 - It must apply within 30 days after that forecast date, that is by 14 Sep 2026.
-- Because the liability arises after 1 Jul 2025, it is registered 2 months from the forecast date and starts charging GST then. Use the effective date IRAS confirms.
+- Because the liability arises after 1 Jul 2025, the ordinary effective date is 15 Oct 2026. Use the effective date IRAS confirms.
 - Keep the signed contract as the supporting document.
 
 ### Case 3: a quarterly GST F5 for Jul to Sep 2026 ([IRAS completing returns](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/completing-gst-returns))
@@ -297,7 +297,7 @@ An investment-holding company that receives dividend income is GST-registered an
 
 ### Case 5: correcting an error ([IRAS GST F7](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/correcting-errors-made-in-gst-return-%28filing-gst-f7%29))
 
-In July 2026 a business finds that its Jan to Mar 2026 return (Box 4 total supplies $500,000) left out a standard-rated sale of $20,000 plus GST $1,800.
+In July 2026, before lodging its Apr to Jun 2026 return, a business finds that its Jan to Mar 2026 return (Box 4 total supplies $500,000) left out a standard-rated sale of $20,000 plus GST $1,800.
 
 - Net GST in error is $1,800, not more than $3,000.
 - The value error in the other boxes is $20,000, not more than 5% of $500,000 ($25,000).
@@ -324,7 +324,7 @@ A business filed its return for the period ending 30 Jun 2025 on time (due 31 Ju
 
 A return stays outstanding for 3 completed months after its due date.
 
-- $200 immediately, plus $200 for each of the 3 completed months: $800 in total, on top of the 5% late payment penalty on any estimated assessment.
+- $200 immediately, plus $200 for each of the 3 completed months: $800 in total, plus any 5% late payment penalty applicable to overdue GST on an estimated assessment.
 - The late submission penalty for one return is capped at $10,000.
 
 
@@ -399,26 +399,26 @@ The penalty month count reproduces the published 2025 case only: the source spec
 
 - In authorised myTax Portal access choose GST → File GST Return/Edit Past Return, select the actual period and F5, reconcile boxes and declarations, then submit and retain the acknowledgement. Check payment/GIRO status and retain settlement evidence. Preparation is not submission. File by one month after the period end and pay by the same date unless an actual approved GIRO/extension arrangement applies. See the 2026 due-date table above.
 - A nil return is needed for a period with no activity. A business that has ceased should apply to cancel its registration.
-- Failing to file on time is an offence. IRAS may issue an estimated Notice of Assessment with a 5% late payment penalty on the estimated tax, impose a late submission penalty, and summon the business or the people running it. The estimate is revised when the actual return is filed; it can only be revised if the return is filed within 5 years of the period end.
+- Failing to file on time is an offence. IRAS may issue an estimated Notice of Assessment and charge a 5% late payment penalty on unpaid estimated GST, impose a late submission penalty, and summon the business or the people running it. The estimate is revised when the actual return is filed; it can only be revised if the return is filed within 5 years of the period end.
 
 ### Correcting errors ([IRAS: Correcting errors (GST F7)](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/correcting-errors-made-in-gst-return-%28filing-gst-f7%29))
 
 - **Administrative concession:** errors may be adjusted in the next GST F5 only if both criteria are met: (a) the net GST amount in error for all affected periods is not more than $3,000 (additional Box 6 output tax less additional Box 7 input tax); and (b) for each affected period, the total error in all boxes other than Boxes 6, 7 and 12 is not more than 5% of that period's Box 4 (or Box 5 if there were no supplies). Errors in Box 12 cannot use the concession. IRAS offers a GST F7 calculator to test this.
-- **Otherwise file a GST F7** on myTax Portal. Under GST → File GST Return/Edit Past Return choose Request for GST F7, enter the actual period, then file within 14 days of requesting (or the auditor’s stated deadline), entering the full revised figures for every box; it supersedes the earlier return. Keep the error description and acknowledgement/payment instructions; non-GIRO payment uses the actual payment slip number, while GIRO follows the notified deduction. Errors across several periods in one year may be consolidated into the F7 for the last period of that year.
+- **Otherwise file a GST F7** on myTax Portal. Under GST → File GST Return/Edit Past Return choose Request for GST F7, enter the actual period, then file within 14 days of requesting (or the auditor’s stated deadline), entering the full revised figures for every box; it supersedes the earlier return. Keep the error description and acknowledgement/payment instructions; non-GIRO payment uses the actual payment slip number, while GIRO follows the notified deduction. Errors across several periods in one year may be consolidated into the F7 for the last period of that year or the last period in that year affected by an error.
 - **Time limits:** errors must be corrected within five years from the end of the accounting period; refund claims for GST overpaid must also be made within five years. Corrections made more than one year after the end of the period may attract penalties.
 - **Voluntary disclosure:** IRAS may reduce penalties for disclosures that meet the Voluntary Disclosure Programme conditions. A GST F7 filed within 1 year from the original filing deadline that meets those conditions carries no late payment penalty on the additional GST.
-- **Incorrect returns:** penalties of up to 200% of the tax undercharged, plus a fine and imprisonment; fraud is dealt with more severely.
+- **Incorrect returns:** on conviction, section 59(1) of the GST Act provides for a penalty equal to the tax undercharged or that would have been undercharged. If the offence is committed without reasonable excuse or through negligence, section 59(2) provides for double that amount and liability to a fine of up to $5,000, imprisonment for up to 3 years, or both. Other provisions govern fraud and relevant missing trader fraud claims. [GST Act, section 59](https://sso.agc.gov.sg/Act/GSTA1993?ProvIds=pr59-)
 
 ### Penalties ([IRAS: Late payment](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-payments-refunds/late-payment-or-non-payment-of-gst); [IRAS: Late filing](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/late-filing-or-non-filing-of-GST-returns-f5-f8))
 
 | Failure | Penalty |
 | --- | --- |
 | Return filed on time, GST not paid by the due date | 5% late payment penalty on the tax declared  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-payments-refunds/late-payment-or-non-payment-of-gst) |
-| Return not filed or filed late | 5% late payment penalty on IRAS's estimated tax, revised to the actual liability once filed  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-payments-refunds/late-payment-or-non-payment-of-gst) |
-| GST F7 filed more than 1 year after the original due date | 5% late payment penalty on the additional tax  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-payments-refunds/late-payment-or-non-payment-of-gst) |
-| Tax still unpaid 60 days after the 5% penalty | Additional 2% for each month the tax remains unpaid, capped at 50% of the unpaid tax  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-payments-refunds/late-payment-or-non-payment-of-gst) |
+| Return not filed or filed late | 5% late payment penalty on overdue estimated GST, revised to the actual liability once assessed  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-payments-refunds/late-payment-or-non-payment-of-gst) |
+| GST F7 declares additional overdue GST | 5% late payment penalty applies when the F7 is filed more than 1 year after the original due date, or when it is filed within that year and the additional GST is unpaid by its due date. IRAS may waive the penalty for a qualifying voluntary disclosure within the year. [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/correcting-errors-made-in-gst-return-%28filing-gst-f7%29) |
+| Tax still unpaid 60 days after the 5% penalty | Additional 2% for each completed month the tax remains unpaid, counted from when the tax became payable and capped at 50% of the unpaid tax  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-payments-refunds/late-payment-or-non-payment-of-gst) |
 | Return not filed by the due date | $200 immediately, then $200 for every completed month it remains outstanding, capped at $10,000 per return  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-payments-refunds/late-payment-or-non-payment-of-gst) |
-| Incorrect return | Up to 200% of the tax undercharged, plus possible fine and imprisonment  [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-payments-refunds/late-payment-or-non-payment-of-gst) |
+| Incorrect return | On conviction, a penalty of 100%, or 200% for an offence without reasonable excuse or through negligence. In the latter case a fine of up to $5,000, imprisonment for up to 3 years, or both may also apply. [GST Act, section 59](https://sso.agc.gov.sg/Act/GSTA1993?ProvIds=pr59-) |
 
 - IRAS can also appoint agents such as banks, tenants or lawyers to recover overdue GST, issue Travel Restriction Orders to sole proprietors or partners, and take legal action.
 - Penalty waivers are requested through the Appeal Penalty Waiver service on myTax Portal. For a late submission penalty IRAS considers an appeal only if all outstanding returns have been filed, all overdue GST has been paid, and returns have been filed on time for the past year.

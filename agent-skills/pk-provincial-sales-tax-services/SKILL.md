@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/pk-provincial-sales-tax-services"
   jurisdiction: "PK"
   tax_year: "2026"
-  last_updated: "2026-11-15"
+  last_updated: "2026-11-22"
 ---
 
-# Pakistan provincial sales tax on services: withholding agents and unregistered providers, 2026 v1.0
+# Pakistan provincial sales tax on services: withholding agents and unregistered providers, 2026 v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -71,7 +71,8 @@ Out of scope here, with the owner skill: the full provincial rate schedules, pla
 | Sindh, other agents | Deposit by the 15th day of the second month after the invoice month, or the payment date, whichever is earlier; return SSTW-03 if not SRB-registered | same, r.3(7)(iii) and 3(8) |
 | Sindh, government accounting offices | Intimation to SRB by the 15th of the following month; DDO return SSTW-03 by the 18th | same, r.3(6) |
 | Khyber Pakhtunkhwa, agents registered with KPRA or FBR | Deposit by the 15th of the month after withholding, or the payment date, whichever is earlier | [KP Withholding Regulation 2024 para 8](https://kpra.gov.pk/wp-content/uploads/2025/01/KP-withholding-regulations-2024.pdf) |
-| Khyber Pakhtunkhwa, other agents | Deposit by the 15th of the month after payment; monthly statement by the 18th, nil statement if no withholding | same, paras 8(3) and 11 |
+| Khyber Pakhtunkhwa, deposit by other agents | Deposit by the 15th of the month after payment | same, para 8(3) |
+| Khyber Pakhtunkhwa, withholding statements | Drawing and Disbursing Officers covered by paragraph 10 file by the 20th of the following month. Paragraph 11 agents file by the 18th of the following month, with a nil statement when needed. KPRA-registered regular taxpayers are outside the paragraph 11 statement rule | same, paras 10(4) and 11 |
 | Punjab, agent not registered as a service provider | Files a monthly Sales Tax Withholding Statement on PRA-Iris, nil if nothing withheld, within the due date in the law and rules | [PRA-Iris FAQ 36, 37, 56](https://e.pra.punjab.gov.pk/templates/PRA_Iris_Sales_Tax_Return_FAQs.pdf) |
 | Punjab, registered provider | Monthly return is mandatory even with no sales (nil return through Annexures C1 and C) | same, FAQ 48 |
 
@@ -165,7 +166,7 @@ expected:
 
 **Sindh:** an agent not registered with SRB signs up on Form SSTW-01, deposits on Form SSTW-04 to head of account B-02384 and files SSTW-03; an SRB-registered agent includes the withheld tax in its own SST-03 return (r.3(2), 3(8)).
 
-**Khyber Pakhtunkhwa:** deposit to head of account B-02386 and file the monthly withholding statement by the 18th, nil if needed (paras 2(1)(ii), 11).
+**Khyber Pakhtunkhwa:** deposit to head of account B-02386. For paragraph 10 agents, the Drawing and Disbursing Officer files the monthly withholding statement by the 20th of the following month. Other agents covered by paragraph 11 file by the 18th of the following month, including nil statements. KPRA-registered regular taxpayers are outside the paragraph 11 statement rule (paras 2(1)(ii), 10(4) and 11).
 
 ## Completion checklist
 
@@ -194,4 +195,4 @@ Not yet confirmed: the Punjab standard rate and schedules for 2026-27 (Punjab Fi
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-15. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pk-provincial-sales-tax-services` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pk-provincial-sales-tax-services. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pk-provincial-sales-tax-services` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pk-provincial-sales-tax-services. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -3,11 +3,11 @@ name: mv-company-formation
 description: "Source-cited draft: company formation & entity choice for Maldives (tax year 2026): rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
 jurisdiction: MV
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
-version: 1.0
+version: 1.1
 type: filing-howto
 ---
 
@@ -36,18 +36,18 @@ Do not incorporate merely to obtain a corporate tax band. Compare ownership, lia
 
 For a private company, the Ministry's explanation of Companies Act sections 43-44 requires articles consistent with the Act, prohibits public sale of registered securities and caps membership at 50. Its articles must cover meetings, board composition, powers, profit distribution, accounts, auditor procedures and winding up. A public-offer proposal therefore needs the public-company framework and its applicable governance/disclosure review rather than a private-company label on the same application. [Ministry articles guidance](https://trade.gov.mv/en/18801/).
 
-The Registrar's English model articles expressly address a company with a single director in article 60. This supports a single-director governance mechanism; it is not proof that every applicant satisfies all statutory director eligibility, residence or capital conditions. The old draft's universal single-shareholder/single-director minima, unrestricted single-share registration and absence of minimum capital are held below pending direct operative confirmation. Do not invent an additional owner or director to fill an unknown requirement.
+[Private Companies Regulation section 5](https://trade.gov.mv/wp-content/uploads/Private-Companies-Regulation-2024-R-99.pdf#page=11) specifies share capital comprising one or more shares, 1 to 50 members and at least one director. Check who can hold the shares and act as director for the actual company, along with any activity-specific capital and foreign-investment conditions. Article 60 of the Registrar's model articles allows a sole director to record and sign their resolutions.
 
-### 2. Reserve the name using the current published process [https://trade.gov.mv/en/17296/](https://trade.gov.mv/en/17296/)
+### 2. Reserve the name using the current published process [https://one.gov.mv/support/guidelines/name-reservation-75](https://trade.gov.mv/en/17296/)
 
-Use the Ministry's company-name service route at [one.gov.mv](https://one.gov.mv). Choose the legal type from the drop-down: PVT LTD for a private company, PLC for a public company, and the different government/local-authority types where applicable. Do not type the type abbreviation into the ordinary name field instead of selecting it.
+Use the Ministry's [Name Reservation service](https://one.gov.mv/submissions/64817587-49c9-f229-3405-800748460408/new). Choose the legal type from the drop-down: PVT LTD for a private company, PLC for a public company, and the different government/local-authority types where applicable. Do not type the type abbreviation into the ordinary name field instead of selecting it.
 
 Check existing companies and other business names, reserved names, prohibited governmental/institutional affiliations, protected brands and other restrictions. A name appearing available to request is not yet an approved reservation: the Ministry requires an operator check. Keep the submitted name, chosen vehicle, application reference, decision, fee receipt and reservation expiry.
 
 | Published name-service rule | Amount or condition | Period | Official source |
 |---|---|---|---|
-| Approved company-name reservation | MVR 100 fee; reservation valid 7 days | Published service guidance read for 2026 preparation | [Companies Act sections 66-76, Ministry reservation guide](https://trade.gov.mv/en/17296/) |
-| Reservation extension | A further 7 days is possible; fee applies | Obtain the actual approved extension and invoice | [Ministry reservation guide](https://trade.gov.mv/en/17296/) |
+| Approved company-name reservation | MVR 100 fee. The regulation provides for 30 days from notification of approval. The current oneGov service says 14 days and displays the expiry. | Calendar the displayed expiry. If it differs from the regulation, ask the Registrar before relying on a later date. | [Private Companies Regulation section 38 and Schedule 1](https://trade.gov.mv/wp-content/uploads/Private-Companies-Regulation-2024-R-99.pdf#page=33) · [oneGov Name Reservation](https://one.gov.mv/support/guidelines/name-reservation-75) |
+| Reservation extension | An approved extension is 7 days, up to 3 extensions, with a MVR 100 fee per extension. | Apply at least 5 days before the statutory reservation expires. If oneGov shows an earlier expiry, obtain the Registrar's timing decision before that date. | [Private Companies Regulation section 39](https://trade.gov.mv/wp-content/uploads/Private-Companies-Regulation-2024-R-99.pdf#page=34) · [Schedule 1](https://trade.gov.mv/wp-content/uploads/Private-Companies-Regulation-2024-R-99.pdf#page=121) |
 | Private-company membership/public offering | Maximum 50 members; no public sale of registered securities | 2026 preparation; retain the constitutional conditions | [Companies Act section 44, Ministry explanation](https://trade.gov.mv/en/18801/) |
 | New private-company registration | MVR 2,000 service fee; other services and conditions separately priced | Government guideline updated 24 August 2026 | [oneGov Company Registration and Changes](https://one.gov.mv/submissions/6481758f-b70d-b567-6719-90074d1037e1/new) |
 | Constitution amendment notification | Within 30 days, with required documents and fee | Actual memorandum/articles amendment | [Companies Act section 50, Ministry explanation](https://trade.gov.mv/en/18801/) |
@@ -86,14 +86,14 @@ Income Tax Regulation section 3(b) removes the separate MIRA 117 submission for 
 
 For staff, confirm employer pension registration, employee enrollment and EWT obligations using the [payroll Guide](mv-payroll-social.md). Banking, statutory registrations and licences depend on the actual activity and owners; obtain current institution-specific requirements without inventing a universal account-opening list.
 
-Set a compliance register for the constitution, members and share changes, directors, resolutions/minutes, financial accounts, auditor decisions, annual general meeting, Registrar annual return, applicable service fees, income-tax return/interims, GST and payroll filings. The model's article 39 requires an AGM in accordance with the Act; it does not supply every current AGM/annual-return deadline. Keep those statutory deadlines and any annual regulatory-service-fee amount as unresolved until the precise operative provisions are read. Do not carry forward the former annual-fee-replacement claim as a verified current payment instruction.
+Set a compliance register for the constitution, members and share changes, directors, resolutions/minutes, financial accounts, auditor decisions, annual general meeting, Registrar annual return, applicable service fees, income-tax return/interims, GST and payroll filings. Under [Private Companies Regulation sections 51–54](https://trade.gov.mv/wp-content/uploads/Private-Companies-Regulation-2024-R-99.pdf#page=42), private companies with more than one member hold an AGM each year. A sole member can sign and deliver the written AGM decisions to the company. Check the operation of the meeting and Registrar filing deadlines for the company. Keep those statutory deadlines and any annual regulatory-service-fee amount as unresolved until the precise operative provisions are read. Do not carry forward the former annual-fee-replacement claim as a verified current payment instruction.
 
 ## Boundary and exception table
 
 | Situation | Next decision |
 |---|---|
 | Proposed public securities sale or membership above private-company cap | Stop the private-company route and review the appropriate vehicle and approval process. |
-| One owner/director or nominal single-share proposal | Verify statutory minimums/eligibility and capital requirements; the model's single-director mechanism alone is insufficient. |
+| One owner, one director or a single share | Confirm member and director eligibility and any capital conditions that apply to the actual activity. |
 | Foreign owner or an existing overseas company | Classify activity/entry conditions and local subsidiary versus foreign re-registration. |
 | Existing company with pre-2024 articles | Check compliance with the new Act and amendments; do not treat the original transitional date as a fresh 2026 deadline. |
 | Bespoke constitution, investor rights or regulated activity | Obtain qualified legal drafting and the necessary licence/approval before final submission. |
@@ -103,7 +103,7 @@ Set a compliance register for the constitution, members and share changes, direc
 
 ### Case 1: reservation versus incorporation budget
 
-For an ordinary new private-company application requiring one approved name reservation, the published reservation fee is MVR 100 and the current registration service fee is MVR 2,000. Those two known fees total MVR 2,100. A MVR 1,000 budget is already short by MVR 1,100, before any other services, licences or professional costs. Do not describe the name reservation alone as incorporation. Complete the application within the reservation or obtain its approved extension. [Ministry name guide](https://trade.gov.mv/en/17296/); [current service guideline](https://one.gov.mv/submissions/6481758f-b70d-b567-6719-90074d1037e1/new).
+For an ordinary new private-company application requiring one approved name reservation, Schedule 1 sets a MVR 100 reservation fee and a MVR 2,000 registration fee. Those two known fees total MVR 2,100. A MVR 1,000 budget is already short by MVR 1,100, before any other services, licences or professional costs. Do not describe the name reservation alone as incorporation. Complete the application within the reservation or obtain its approved extension. [Private Companies Regulation Schedule 1](https://trade.gov.mv/wp-content/uploads/Private-Companies-Regulation-2024-R-99.pdf#page=121) · [oneGov Company Registration and Changes](https://one.gov.mv/submissions/6481758f-b70d-b567-6719-90074d1037e1/new).
 
 ```oa-check
 name: Reservation plus registration budget
@@ -146,7 +146,9 @@ Name reservation uses the published one.gov.mv service. Incorporation uses the n
 |---|---|---|
 | Economic ministry current catalogue: identifies Companies Act, first amendment, private/foreign-company regulations and other vehicle/foreign-investment laws; not a claim to have read their full operative Dhivehi clauses | https://trade.gov.mv/en/laws-and-regulations/ | 2026-11-16 |
 | Official Act ratification notice: forms of company, foreign re-registration and effective date | https://presidency.gov.mv/Press/Article/29505 | 2026-11-16 |
-| Ministry company-name guide: sections 66-76, type selection, restrictions, application, reservation fee/period, display and incorporation distinction | https://trade.gov.mv/en/17296/ | 2026-11-16 |
+| Ministry company-name guide: sections 66–76, type selection, restrictions, display and incorporation distinction | https://trade.gov.mv/en/17296/ | 2026-11-16 |
+| Private Companies Regulation 2024/R-99: private-company limits, reservation and extensions, AGM and fee schedule | https://trade.gov.mv/wp-content/uploads/Private-Companies-Regulation-2024-R-99.pdf | 2026-11-24 |
+| oneGov Name Reservation guideline: current public service period and application expiry | https://one.gov.mv/support/guidelines/name-reservation-75 | 2026-11-24 |
 | Ministry articles guidance: sections 43-53, private-company conditions, model/bespoke constitution and notifications | https://trade.gov.mv/en/18801/ | 2026-11-16 |
 | Registrar's English model articles: private-company conditions, article 39 AGM, board minutes/resolutions and article 60 single-director recording; older notice wording is not treated as overriding later law | https://trade.gov.mv/wp-content/uploads/Model-Articles-of-Association-v1.pdf | 2026-11-16 |
 | Official first-amendment notice: sections 100 and 126, changed meeting/director deadlines and immediate effect | https://presidency.gov.mv/Press/Article/31628 | 2026-11-16 |
@@ -155,6 +157,6 @@ Name reservation uses the published one.gov.mv service. Incorporation uses the n
 | Economic ministry Business Services page: current oneGov service and business-registry routes | https://trade.gov.mv/en/business-services/ | 2026-11-16 |
 | Income Tax Regulation: sections 3-7, registration and Ministry/MIRA interaction | https://www.mira.gov.mv/Legislations/View/Income-Tax-Regulation | 2026-11-16 |
 
-Direct business.egov access failed. The official Dhivehi Companies Act/private-company/foreign-investment PDFs were downloaded, but full operative legal reading is not claimed. The verified English Ministry/model/official notices support the stated limited preparation workflow; they do not resolve every held requirement.
+The public Business Portal has a name-reservation and registry landing page. The oneGov service guideline sets out the public incorporation workflow. Check the current Gazette, the entity's facts and the signed-in form for the remaining requirements.
 
-Not yet confirmed: operative statutory minimum shareholders/directors and eligibility/residence conditions; minimum capital and single-share registration; remaining non-registration/annual regulatory-service-fee schedule, including the old annual-fee replacement claim; authenticated incorporation fields and exact payment-reference generation; current Registrar annual-return/AGM deadlines and any four-board-meetings rule; detailed foreign-investment permission and foreign-company re-registration procedures; current required ownership/control declarations and sector licences. Resolve the affected requirements before submitting a formation or compliance filing.
+Not yet confirmed: full director eligibility and residence conditions; minimum paid-up capital for a particular activity; remaining non-registration/annual regulatory-service-fee schedule, including the old annual-fee replacement claim; authenticated incorporation fields and exact payment-reference generation; current Registrar annual-return/AGM deadlines and any four-board-meetings rule; detailed foreign-investment permission and foreign-company re-registration procedures; current required ownership/control declarations and sector licences. Resolve the affected requirements before submitting a formation or compliance filing.

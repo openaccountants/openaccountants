@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/to-vat-gst"
   jurisdiction: "TO"
   tax_year: "2026"
-  last_updated: "2026-11-16"
+  last_updated: "2026-11-22"
 ---
 
-# Tonga Consumption Tax v0.1
+# Tonga Consumption Tax v0.2
 
 **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -38,7 +38,7 @@ Obtain actual CT/TIN registration and effective date, all business activities/tr
 
 ### Establish classification, registration and the period
 
-Use CT Act ss 2,5-8. The ordinary turnover test counts the value of taxable supplies, not exempt supplies or CT itself, across the person's trading names; associates may be considered. Licensing authorities and imported-service recipients have their own registration branches. Do not substitute the old “exceeds” test for “or more”, or assume the threshold excuses every licensing authority. Voluntary registration is conditional, not automatic merely because turnover is low.
+Use CT Act ss 2,5-8. The ordinary turnover test counts the value of taxable supplies, excluding exempt supplies and CT itself, across the person's trading names. The Minister must have regard to the value of taxable supplies made by an associate when determining whether the person must apply under s 6(1). Licensing authorities and imported-service recipients have their own registration branches. Do not substitute the old “exceeds” test for “or more”, or assume the threshold excuses every licensing authority. Voluntary registration is conditional, not automatic merely because turnover is low.
 
 Get a TIN first if needed; submit the current CT Application for Registration (MORC identifies Form 1/Regulation 10) with the actual compulsory checklist/supporting documents. Retain the decision letter, effective date, first-return date and registration certificate. The published amendment changes certificate display/copies, but its commencement condition is unresolved. Hold that amendment-dependent application and obtain the actual certificate/display direction from the authority; unofficial copies are not proof of registration. A saved application is not proof of registration. Do not charge CT before the actual legal effective date or claim a credit for a supply not taxable at its time.
 
@@ -159,4 +159,4 @@ Not yet confirmed: The published Income Tax Amendment Act 2020 and Consumption T
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `to-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/to-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `to-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/to-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.

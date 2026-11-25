@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/maldives-gst"
   jurisdiction: "MV"
   tax_year: "2026"
-  last_updated: "2026-11-16"
+  last_updated: "2026-11-22"
 ---
 
 # Maldives GST
@@ -32,20 +32,20 @@ Accept statements from BML, MIB, SBI Maldives, HDFC Maldives or another bank; re
 
 ### 1. Identify the applicable period and registration rule [https://www.mira.gov.mv/Legislations/View/8th-amendment-to-the-gsta](https://www.mira.gov.mv/Legislations/View/8th-amendment-to-the-gsta)
 
-The eighth amendment commenced on publication on 31 August 2026, under amendment section 31. Keep transactions and registration events before and after that change separate. The new inbound-tourism charging date is separately specified below.
+The eighth amendment commenced on 31 August 2026. The ninth amendment commenced on 19 November 2026 and withdrew the overseas inbound-tourism GST regime from 1 October 2026, with a refund obligation for previously charged tax. Apply the registration and cancellation dates separately. [Ninth amendment sections 8, 10, 14 and 16](https://www.mira.gov.mv/Files/GetFile/1c2c70cf-4c2c-4fee-a585-ed454689c1e7) · [MIRA circular, 22 November 2026](https://www.mira.gov.mv/Files/GetFile/351826dd-9c00-4a9a-92ce-3c4c42851949).
 
 | Item and conditions | Amount or deadline | Period | Official source |
 |---|---|---|---|
 | General-sector supplies outside Act section 15, unless exempt or zero-rated | 8% | 2026 | [GST Act section 16(c)](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
 | Tourism goods/services within section 15(a), unless exempt or zero-rated | 17%; the former 16% period ended 30 June 2025 | 2026 | [GST Act sections 15(b)(5)-(6)](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
-| Overseas supplier without a relevant fixed establishment: inbound tourism products and related booking/agency services within section 15(a)(6) | 17% from 1 October 2026 | 2026 change | [GST Act section 15(b-1)](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
+| Overseas supplier without a fixed Maldives place of business: inbound tourism products and related booking or agency services formerly within section 15(a)(6) | The special charge was repealed with effect for those supplies from 1 October 2026. Refund any GST charged under the former rule to the person charged. | Ninth amendment in force 19 November 2026 | [Ninth amendment sections 3–4 and 14](https://www.mira.gov.mv/Files/GetFile/1c2c70cf-4c2c-4fee-a585-ed454689c1e7) · [MIRA circular](https://www.mira.gov.mv/Files/GetFile/351826dd-9c00-4a9a-92ce-3c4c42851949) |
 | Qualifying exports, listed essential goods and qualifying going-concern transfer | 0%; satisfy the relevant category's conditions | 2026 | [GST Act section 22; GST Regulation sections 41-42](https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated) |
-| General registration turnover test for a person carrying on taxable activity; from the amendment, through a fixed Maldives place of business | Supplies exceeding MVR 1,000,000 in the relevant preceding period, or expected to exceed it in the following 12 months; apply by the end of the following month after the month-end trigger | Before 31 August: section 51(a)-(i); from that date: section 51(k)-(m) | [GST Act section 51](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
-| Tourism supplies; commercial importers other than State institutions under the amended rule | Registration independent of turnover; tourism entrants within 30 days; new commercial importers register before importing | From 31 August 2026; existing persons subject to transitional registration, existing registrations continue | [GST Act sections 51(j)-(o), 54(b)](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
+| General registration turnover test for a person carrying on taxable activity; from 31 August 2026, through a fixed Maldives place of business | Supplies exceeding MVR 1,000,000 in the relevant preceding period, or expected to exceed it in the following 12 months; apply by the end of the following month after the month-end trigger | Before 31 August: section 51(a)–(i). From 31 August to 31 December 2026: section 51(k)–(m). A new turnover test applies from 1 January 2027. | [GST Act section 51](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) · [Ninth amendment section 8](https://www.mira.gov.mv/Files/GetFile/1c2c70cf-4c2c-4fee-a585-ed454689c1e7#page=4) |
+| Tourism supplies; commercial importers other than State institutions under the August rule | Registration independent of turnover. New tourism suppliers apply within 30 days and new commercial importers apply before importing. | 31 August to 31 December 2026. Existing persons were subject to the transitional rule. Registrations generally continue, except for deregistration under the November offshore repeal. | [GST Act sections 51(j)–(o), 54(b)](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) · [MIRA circular](https://www.mira.gov.mv/Files/GetFile/351826dd-9c00-4a9a-92ce-3c4c42851949) |
 | Registered person's ordinary taxable period | Quarterly below MVR 1,000,000 supplies per month; monthly at or above that monthly amount; monthly election requires approval | 2026; use the assigned period | [GST Act section 24](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
 | Return and payment | 28th of the following month; public holiday moves statutory due date to next working day | Each taxable period | [GST Act sections 28, 31, 61](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
 
-Before the August amendment, section 51 separately required registration of tourism suppliers and importers; do not retrospectively apply the new personal-import exception or registration-before-import rule. Voluntary registration is possible for a qualifying licensed business under section 53. Registration is not permission to select a rate. A person required to register remains liable even if unregistered: section 57.
+Before the August amendment, section 51 separately required registration of tourism suppliers and importers. Assess those events under the earlier law. Voluntary registration is possible for a qualifying licensed business under section 53. A person required to register remains liable even if unregistered under section 57. From 1 January 2027, the turnover registration test rises to MVR 1,500,000 and the ordinary turnover cancellation test becomes less than MVR 750,000 in each of the preceding and forecast 12 months, subject to the other statutory conditions. [Ninth amendment sections 8–10](https://www.mira.gov.mv/Files/GetFile/1c2c70cf-4c2c-4fee-a585-ed454689c1e7#page=4).
 
 ### 2. Determine the supply, time and tax base [https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated)
 
@@ -53,7 +53,7 @@ Match each bank line to the underlying invoice or supply. Under section 17(a), o
 
 For an ordinary GST-inclusive consideration, net value = gross / (1 + rate), and GST = gross - net. For a GST-exclusive value, output GST = net × rate: section 19. Separate actual pass-through taxes under section 36(a); do not treat the whole tourism receipt as room consideration without reconciling its components. Under Regulation section 52(a), a service charge on a supply is taxed at the same rate as that supply; it is not automatically a deductible tax or discount. Reconcile the actual bill and refer complex combined-levy or service-charge distribution disputes rather than silently excluding it.
 
-From the overseas-inbound regime, section 19(e) uses consideration less amounts payable to a registered person in relation to the inbound tourism product; it is not the ordinary full-room-price computation for the overseas supplier. Section 37(f) denies that supplier input-tax set-off. Separate a local hotel's own supply from an overseas agent's supply, identify the contracting parties, and check the amended place-of-supply provisions in sections 5-1 and 5-2. Do not apply an automatic reverse charge to every foreign SaaS bill, or charge tourism GST on every foreign booking-platform debit.
+The ninth amendment also removed the former offshore margin rule in section 19(e), the separate input-tax restriction in section 37(f) and the offshore place-of-supply limb in section 5-2(b)(3). MIRA deregistered covered suppliers and revoked their certificates from 19 November 2026. For the period from 1 October to 19 November the refund to the person charged is the remaining obligation under the special regime. Identify the contracting parties and apply the remaining place-of-supply and charging rules to the underlying supplies, including a local hotel’s own taxable accommodation. [Ninth amendment sections 1–7 and 14](https://www.mira.gov.mv/Files/GetFile/1c2c70cf-4c2c-4fee-a585-ed454689c1e7) · [MIRA circular, 22 November 2026](https://www.mira.gov.mv/Files/GetFile/351826dd-9c00-4a9a-92ce-3c4c42851949).
 
 ### 3. Separate exemption, zero-rating and non-supplies [https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated](https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated)
 
@@ -87,7 +87,7 @@ The following preserves the transaction library. Each result depends on the evid
 | MWSC; MALE WATER | Identify qualifying water/sewerage, ordinarily exempt under section 20(b)/(d), rather than assuming standard-rated utilities. |
 | DHIRAAGU; OOREDOO MALDIVES | Inspect the actual telecom supply, GST invoice and business use; do not classify from the merchant name alone. |
 | GOOGLE; MICROSOFT; META; AWS; ZOOM; SLACK; CANVA | Determine contracting supplier, establishment, place of supply and registration. No blanket foreign-service self-assessment; income-tax withholding is a separate analysis. |
-| BOOKING.COM; EXPEDIA; AGODA | Obtain agency contracts, gross accommodation revenue and commission invoices. Distinguish local hotel revenue from overseas booking/agency supplies and the October change. |
+| BOOKING.COM; EXPEDIA; AGODA | Obtain agency contracts, gross accommodation revenue and commission invoices. Distinguish local hotel revenue from overseas booking or agency supplies and check whether the November repeal requires a refund. |
 | TRIPADVISOR | Identify advertising versus booking/agency services. A tourism customer does not itself turn every marketing invoice into tourism GST. |
 | SALARY; WAGES | Payroll, outside the employment taxable-activity definition. |
 | OWN TRANSFER; INTERNAL | Match both sides, exclude duplicate money movement from sales and purchases. |
@@ -116,11 +116,11 @@ Reconcile gross sales to invoices and platforms, then to bank receipts after dep
 | Trigger | Decision |
 |---|---|
 | Tourism/general mixed operations or exempt rental alongside room supplies | Split legal supplies and input attribution; refer disputed resort/strata/vessel lease treatment. |
-| Overseas booking or agency arrangements | Check the October regime, contracting capacity and actual place of supply; do not reuse the former flat platform-fee rule. |
+| Overseas booking or agency arrangements | Check contracting capacity, actual place of supply and the November repeal and refund rule. |
 | Green Tax and service charge collected with accommodation | Reconcile separately; refer before finalizing the combined tax base or service-charge distribution. |
 | USD and MVR receipts | Keep separate currency totals, then convert to the applicable return/payment currency using the legally permitted exchange source and date. |
 | No sales but still registered | Check nil filing; registration does not lapse merely because the bank is quiet. |
-| Cancellation | From the August change, satisfy both trailing and expected turnover tests and the absence of another registration trigger, or the cessation route; obtain MIRA's effective cancellation date under section 55. |
+| Cancellation | Until 31 December 2026, the ordinary turnover route requires less than MVR 500,000 in each of the trailing and forecast 12 months and no other registration trigger. Check the separate cessation route and obtain MIRA's effective cancellation date under section 55. |
 
 ## Worked cases
 
@@ -194,7 +194,7 @@ expected:
 
 - **R-MV-1: resort lease and TGST complexity.** Resort operations with mixed tourism/general supplies, strata/room leases, vessel arrangements or disputed input allocation require specialist analysis. Preserve the schedules and refer the unresolved legal classification.
 - **R-MV-2: Green Tax and service charge interaction.** Where accommodation receipts combine these amounts with GST, refer the levy base and distribution issues. Do not substitute a bank narrative for the guest bill or service-charge register.
-- No invoices, no confirmed sector or no reliable opening credit: prepare the reconciliation and unresolved list, but stop before presenting a filing-ready liability. Overseas inbound products require the amended-law analysis rather than a generic reverse-charge shortcut.
+- No invoices, no confirmed sector or no reliable opening credit: prepare the reconciliation and unresolved list, but stop before presenting a filing-ready liability. For overseas inbound products, check the repeal and any customer refund separately from the local supplier’s own liability.
 
 ## Filing and payment
 
@@ -202,7 +202,7 @@ Use [MIRAconnect](https://www.mira.gov.mv) and the registered taxable activity/p
 
 The forms label general GST in MVR and tourism GST in USD, rounded to the nearest unit of that currency. Keep transaction calculations at adequate precision and reconcile the rounding adjustment. For other-currency transactions, Regulation section 95(b)-(c) permits a rate within ±2% of the MMA rate at time of supply and requires a consistent source; retain the conversion schedule. Tax-payment currencies are governed by Act section 62.
 
-The published forms also carry plastic-bag-fee fields and a service-charge schedule. Complete them when applicable using their own records; do not count them as ordinary GST or fabricate a return field called import GST. For overseas inbound suppliers, confirm the regime-specific return presentation with MIRA before using the ordinary full-sales example above.
+The published forms also carry plastic-bag-fee fields and a service-charge schedule. Complete them when applicable using their own records; do not count them as ordinary GST or fabricate a return field called import GST. For supplies covered by the November overseas inbound repeal, reconcile refunds to the person charged.
 
 Review the return totals against the signed working paper; submit the authorized declaration, retain the acknowledgement, pay the matching liability with the correct TIN/period/reference, and retain the receipt and account reconciliation. File even where a registered period has no income; [MIRA's filing page](https://www.mira.gov.mv/Pages/View/gsthowto) identifies the nil-return route. Never mark submission complete merely because the draft or payment instruction was saved.
 
@@ -229,17 +229,19 @@ This skill and its outputs are provided for informational and computational purp
 | Source and actual material read | Official URL | Read on |
 |---|---|---|
 | MIRA-hosted English unofficial translation of GST Act 10/2011, consolidated 31 August 2026: sections 2-5, 8, 12-24, 27-29, 31-32, 36-48, 51-63 and definition of inbound tourism product | https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated | 2026-11-16 |
-| Eighth amendment 10/2026: registration changes, inbound-tourism charging date and commencement section 31 | https://www.mira.gov.mv/Legislations/View/8th-amendment-to-the-gsta | 2026-11-16 |
+| Eighth amendment 10/2026: August registration changes, original offshore charging date and commencement section 31 | https://www.mira.gov.mv/Legislations/View/8th-amendment-to-the-gsta | 2026-11-16 |
+| Ninth amendment 19/2026: sections 1–10, 14 and 16, including repeal, refunds and the 2027 registration and cancellation transition | https://www.mira.gov.mv/Files/GetFile/1c2c70cf-4c2c-4fee-a585-ed454689c1e7 | 2026-11-24 |
+| MIRA circular 220-TD/CIR/2026/07: repeal, prior charges and deregistration of affected suppliers | https://www.mira.gov.mv/Files/GetFile/351826dd-9c00-4a9a-92ce-3c4c42851949 | 2026-11-24 |
 | MIRA English unofficial GST Regulation: sections 35-36, 41, 44-49, 52, 84-85 and 95; capital input restrictions and exchange conditions read | https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated | 2026-11-16 |
 | MIRA 205 v25.1, all three pages: general GST computation, taxable activities and service-charge schedule | https://www.mira.gov.mv/Files/GetFile/0799ce24-cec8-4ab1-80ae-9302e7c2dcd6 | 2026-11-16 |
 | MIRA 206 v25.1, all three pages: tourism GST computation, taxable activities and service-charge schedule | https://www.mira.gov.mv/Files/GetFile/ecd5edc5-7180-4c28-a310-0865a45de2cb | 2026-11-16 |
 | MIRA GST filing page: portal, nil returns and return/statement links | https://www.mira.gov.mv/Pages/View/gsthowto | 2026-11-16 |
 | MIRA-hosted English unofficial Tax Administration Act consolidated 31 August 2026: sections 65-67 | https://www.mira.gov.mv/Legislations/View/tax-admin-act-consolidated | 2026-11-16 |
 
-MIRA's native downloads returned access errors; the official English HTML and linked form text were read through the web reader. These are authority-hosted translations, not a claim to have read the Dhivehi originals. The Dhivehi legal text prevails if the translation differs.
+The legislation references include MIRA-hosted English translations and the gazetted Dhivehi ninth amendment. The Dhivehi legal text prevails if a translation differs.
 
-Not yet confirmed: live MIRAconnect screen labels and payment-reference generation; overseas inbound-tourism return-specific fields; exact service-charge/Green Tax treatment for a particular guest bill or lease; any current GST penalty relief or cap beyond the cited general provisions. Obtain the missing official determination before finalizing an affected filing.
+Not yet confirmed: live MIRAconnect screen labels and payment-reference generation; exact service-charge/Green Tax treatment for a particular guest bill or lease; any current GST penalty relief or cap beyond the cited general provisions. Obtain the missing official determination before finalizing an affected filing.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `maldives-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/maldives-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `maldives-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/maldives-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.

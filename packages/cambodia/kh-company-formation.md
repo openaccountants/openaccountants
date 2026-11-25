@@ -12,14 +12,14 @@ jurisdiction: KH
 category: formation
 type: computation
 tax_year: 2026
-last_updated: 2026-11-15
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
-version: 0.1
+version: 0.2
 ---
 
-# Cambodia Company Formation and Entity Choice v0.1
+# Cambodia Company Formation and Entity Choice v0.2
 
 **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -27,7 +27,7 @@ version: 0.1
 
 Prepare an entity-choice, registration-document and compliance working paper for Cambodia in 2026. The Ministry of Commerce (MoC) commercial registration, General Department of Taxation (GDT), Ministry of Economy and Finance tax registration, and labour/NSSF obligations are distinct. The official [registration-services portal](https://registrationservices.gov.kh/) provides the documented process below. The old term CamDX identifies the digital registration context; CamDigiKey is the portal's stated authentication method, not a legal entity form.
 
-Compare the proposed private limited company (PLC), public limited company, sole proprietorship, partnership, foreign-company branch or representative office with the intended activity, liability, ownership, tax and licensing facts. A selected intake form is not a finding that its current legal conditions are met. The [CDC company-law reference](https://cdc.gov.kh/laws-and-regulations/company/) describes the older 2005 framework; the full amended current company law and subsequent MoC requirements have not been recovered. Do not use that older summary to certify capital, shareholder/director limits, residency or foreign ownership in 2026.
+Compare the proposed private limited company (PLC), public limited company, sole proprietorship, partnership, foreign-company branch or representative office with the intended activity, liability, ownership, tax and licensing facts. A selected intake form is not a finding that its current legal conditions are met. The [CDC company-law reference](https://cdc.gov.kh/laws-and-regulations/company/) describes the older 2005 framework. [The 2022 amendment](https://compendium.fsa.gov.kh/pdf/compendium/LAW/2_LAW_003_29_01_2022.pdf) replaces article 144 with share-class and shareholder-rights provisions. For articles that do not specify classes, one class applies and its holders have equal voting, dividend and residual-asset rights. The former article 144 share-count and par-value figures are historical. Do not use that older summary to certify capital, shareholder/director limits, residency or foreign ownership in 2026.
 
 The usable tax calculation here is ordinary patent tax under [Law arts 108-115](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) and [SD47 of 11 March 2024](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/7d6c6b02-ef42-49da-8641-71966bdb30c9). Confirm taxpayer class independently before choosing a row. A turnover threshold within the large-taxpayer row does not itself classify a taxpayer as large.
 
@@ -49,13 +49,13 @@ For an existing business obtain all annual declarations, tax returns, patent cer
 
 ### Resolve entity conditions before filing
 
-Create a comparison sheet for the proposed forms, separating legal personality/liability, foreign parent involvement, proposed commercial activity, land/sector restrictions and tax treatment. Obtain the full amended company law and current MoC entity checklist before finalizing the share structure, minimum capital, officer eligibility, required name/language and constitutional clauses. The old PLC 1-to-30/one-director/no-residency and 100%-foreign claims are explicitly unconfirmed below; a representative-office label must not be used as permission to trade. Refer the legal form decision where these conditions determine it.
+Create a comparison sheet for the proposed forms, separating legal personality/liability, foreign parent involvement, proposed commercial activity, land/sector restrictions and tax treatment. Consult the amended company law and current MoC entity checklist before finalizing the share structure, minimum capital, officer eligibility, required name/language and constitutional clauses. The old PLC 1-to-30/one-director/no-residency and 100%-foreign claims are explicitly unconfirmed below; a representative-office label must not be used as permission to trade. Refer the legal form decision where these conditions determine it.
 
 ### Follow the official portal procedure
 
 The [official portal steps and FAQs](https://registrationservices.gov.kh/), read 15 November 2026, specify: create/use a CamDigiKey account, authenticate to the portal, complete the application, pay online, receive the decision and download the approved licence/certificate/permit. The eligibility FAQ identifies small taxpayers and above as the service population; confirm the actual current classification rather than use its older turnover illustration as current law. Required attachments vary by entity and requested service. A person can register themself; an appointed representative for a form other than a sole proprietorship must be an accredited registration agent under the FAQ. Do not substitute a generic document list for the actual service checklist.
 
-A business already commercially registered can use the supplementary-obligation feature for tax registration, and vice versa. Follow the actual service route. The FAQ permits updates to registered address, articles, activities, annual declaration and bank details. Registration is not a substitute for a specialist sector licence or the separate labour/social-security analysis when hiring. The post-approval FAQ instructs commercial registrants to deposit 2 copies of the company articles with MoC for stamping, with additional copies if needed for bank opening or other uses; check the actual service requirements. Retain each authority's acknowledgment, stamped articles, certificate and outstanding conditions rather than mark the whole process complete at the first approval.
+A business already commercially registered can use the supplementary-obligation feature for tax registration, and vice versa. Follow the actual service route. The FAQ permits updates to registered address, articles, activities, annual declaration and bank details. Check the applicable sector licence and labour or social-security process separately. Under [MoC Notice 1755 of 26 May 2026, point 1](https://newapi-businessregistration.moc.gov.kh/website/files/6a159d19a1a10c647a3d735b), lodge the articles electronically and verify them through verify.gov.kh. Retain each authority's acknowledgment, verified articles, certificate and outstanding conditions.
 
 Distinguish **returned** from **rejected**. A return seeks corrected/missing information or documents; resubmission restarts the review clock and does not require a second payment under the FAQ. A rejection closes that application and a new application/payment is required if reapplying. The portal states an **8-working-day** registration response target when all information and attachments are correct and complete; specialist licences take differing periods. This is a conditional portal target, not a guaranteed completion date or the old 2-to-4-week estimate. Fees vary by entity, service, activities and taxpayer class; obtain the actual quote rather than invent a bundled incorporation fee.
 
@@ -63,30 +63,30 @@ Distinguish **returned** from **rejected**. A return seeks corrected/missing inf
 
 [Law arts 108-110](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e) impose the annual business tax and list exemptions for specified state/diplomatic/international/technical-cooperation bodies, organizations operated exclusively for religious, charitable, scientific, literary or educational purposes with no property or income used for private benefit, and businesses below the self-assessment turnover population. Establish the actual exemption and current classification; do not infer exemption from a non-profit label or an old portal turnover example.
 
-Choose the confirmed [SD47 art 3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/7d6c6b02-ef42-49da-8641-71966bdb30c9) class/rate and full-versus-half first-year rule. Under [Law art 113](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e), separate activities generally need separate patents; ancillary activities can form one activity. Branches/warehouses/factories/workshops for one activity in the same capital/province share the specified patent. Activities in different capital/provinces require patents there; branches/warehouses/factories/workshops for the same activity across provinces follow the class-specific minimum-patent rule. Relocation to another capital/province or changing business activity requires patent tax again. Apply all place/activity branches before summing: one rate is not automatically the entire enterprise bill. Refer uncertain activity aggregation or multi-province minimum-rate treatment.
+Choose the confirmed [SD47 art 3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/7d6c6b02-ef42-49da-8641-71966bdb30c9) class/rate and full-versus-half first-year rule. Under [Law art 113](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e), separate activities generally need separate patents; ancillary activities can form one activity. Branches, warehouses, factories and workshops for one activity in the same capital or province share a patent under [Prakas 193 art 4(3)](https://data.mef.gov.kh/api/v1/public-datasets/pd_6a279852fbb6630007148aa3/file). Activities in different capital/provinces require patents there; branches/warehouses/factories/workshops for the same activity across provinces follow the class-specific minimum-patent rule. Relocation to another capital/province or changing business activity requires patent tax again. Apply all place/activity branches before summing: one rate is not automatically the entire enterprise bill. Refer uncertain activity aggregation or multi-province minimum-rate treatment.
 
-Pay within the annual statutory window and retain/display the valid patent certificate under [Law arts 112-115](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e). The patent certificate does not replace company registration, sector licensing, tax returns or audit compliance. No USD approximation or assumed exchange rate is used in the tax table.
+Pay within the annual statutory window and retain and display the valid patent certificate under [Law arts 112-115](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e). Check the digital-registration route separately. [SD84 art 9](https://registrationservices.gov.kh/media/2020/07/Unofficial-Translation_Subdecree_IT-Platform.pdf) sets a registration-year payment of 50% of the applicable patent tax through the platform. Confirm how the authority applies it to the particular start date before quoting a fee. Check company registration, sector licensing, tax return and audit compliance separately.
 
 ### Build the continuing-compliance calendar
 
 Route monthly salary/VAT/prepayment/withholding and annual TOI to [income tax](kh-income-tax.md), [VAT](cambodia-vat.md) and [corporate tax](kh-corporate-income-tax.md); route hiring to [payroll/social](kh-payroll-social.md). Their statutory monthly 20th and actual electronic calendar must be distinguished. Annual calendar-year TOI has a 3-month-after-year-end baseline, not a permanent extension. [Law arts 29-32,39,53,71](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e). Patent renewal uses its own annual window above.
 
-Keep MoC annual declaration, corporate secretary/beneficial-owner or amended-registration tasks, bank confirmation and statutory audit as separate open items until the current operative requirements, scope and due dates are read. No numeric audit threshold or blanket QIP audit conclusion is supplied here. Deliver the entity facts, actual checklist, fee/payment evidence, certificates, tax-calendar entries and a clearly pending legal-compliance list for professional review.
+Under [SD84 art 9](https://registrationservices.gov.kh/media/2020/07/Unofficial-Translation_Subdecree_IT-Platform.pdf), submit bank account details to GDT within 15 working days of receiving digital tax registration. The article provides for automatic withdrawal if the details are missing. Check MoC annual declaration, company secretary, beneficial ownership, registration amendments and statutory audit separately. Deliver the entity facts, checklist, fee and payment evidence, certificates and tax calendar for professional review.
 
 ## Boundary and exception table
 
 | Issue | Action |
 |---|---|
-| Minimum share capital / share count / value / officer rules | Obtain the actual amended law; do not repeat the historical KHR 4,000,000 as a universal current minimum. |
+| Minimum share capital / share count / value / officer rules | Apply amended article 144 when determining share classes. Check sector-specific capital and current officer rules separately. |
 | Foreign ownership / land / restricted sector | Obtain current legal and licence analysis before confirming the proposed structure. |
 | Name in Khmer/English and registered office/agent | Obtain current entity-specific naming and local-presence provisions; the older CDC summary is not current amendment verification. |
 | Patent class, exemption or multi-province/activity unclear | Hold the affected tax estimate pending actual classification/qualifying evidence and implementing procedure. |
-| Bank confirmation date / MoC annual declaration / audit threshold | Keep the compliance task open; do not use the old approximate date or unspecified size test. |
+| MoC annual declaration / audit threshold | Confirm the filing period, applicable thresholds and any transitional relief. |
 | Portal transition or existing registration | Check the authority's actual current service route; public FAQ instructions do not certify that every applicant uses the same service. |
 
 ## Worked cases
 
-All dates and turnover/classification are hypothetical inputs; both examples assume one ordinary taxable activity in one province, no exemption and no branch/relocation complication. The confirmed class, not the turnover number alone, selects the rate. Sources: [Law arts 108-113](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); [SD47 art 3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/7d6c6b02-ef42-49da-8641-71966bdb30c9).
+All dates and turnover/classification are hypothetical inputs; both examples assume one ordinary taxable activity in one province, no exemption, no digital-registration concession and no branch or relocation. The confirmed class, not the turnover number alone, selects the rate. Sources: [Law arts 108-113](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/816f7e7b-e4be-4d8f-a789-e587b92dbe2e); [SD47 art 3](https://www.tax.gov.kh/u6rhf7ogbi6/gdtstream/7d6c6b02-ef42-49da-8641-71966bdb30c9).
 
 ### Medium taxpayer starts in the first half
 
@@ -139,13 +139,18 @@ Refer a final incorporation/ownership/capital opinion, regulated activity, land 
 | Government registration-services portal, steps and specified registration/payment/licence FAQs | https://registrationservices.gov.kh/ | Actual process, attachments/agent/completion/update/return/reject/target/fee conditions;2026-11-14,recoveredHTML/re-read2026-11-15 |
 | CDC company-law reference, historical 2005 summary | https://cdc.gov.kh/laws-and-regulations/company/ | Entire company reference page read; identifies old content, not a current amended-law certificate;2026-11-14,re-read2026-11-15 |
 
-Access provenance: the corresponding [English Law reference](https://embindpp.gov.in/pdf/menu/Tax-Law-Cambodia-2023.pdf) is an unofficial translation hosted by the Embassy of India in Phnom Penh; patent arts108-115 were fully read 15 November 2026 and original Khmer pages38-39 visually read the same day. The GDT original controls. The attempted 2022 commercial-amendment gazette fetch returned Rejected Request HTML, not a read instrument. Portal HTML/text and original tax PDFs are retained in the evidence folder.
+| SD84, business registration through the IT platform | https://registrationservices.gov.kh/media/2020/07/Unofficial-Translation_Subdecree_IT-Platform.pdf | Arts 6-11, statutory registration steps, patent payment and bank information, 2026-11-22 |
+| MEF Prakas 193, patent tax collection | https://data.mef.gov.kh/api/v1/public-datasets/pd_6a279852fbb6630007148aa3/file | Art 4(3), single patent for activities in the same province, 2026-11-22 |
+| MoC Notice 1755, business registration simplification phase 2 | https://newapi-businessregistration.moc.gov.kh/website/files/6a159d19a1a10c647a3d735b | Point 1, digital filing and verification of articles, 2026-11-22 |
+| 2022 Law amending the Law on Commercial Enterprises | https://compendium.fsa.gov.kh/pdf/compendium/LAW/2_LAW_003_29_01_2022.pdf | Replacement article 144, 2026-11-22 |
 
-Not yet confirmed: the full current amended company law and current capital/shareholder/director/residence/name/office/agent/foreign-ownership/land/sector conditions; complete current MoC annual-declaration and system-transition/secretary/beneficial-owner requirements; bank confirmation due date; actual entity fee quote; current audit thresholds/QIP population and filing requirements; detailed patent classification/collection/multi-place implementation where needed. These applications are excluded from usable legal conclusions here.
+The [English tax-law reference](https://embindpp.gov.in/pdf/menu/Tax-Law-Cambodia-2023.pdf) is an unofficial translation hosted by the Embassy of India in Phnom Penh. Use the original Khmer version for legal interpretation.
 
-Historical old-skill claims retained, not current instructions: PLC 1-to-30 shareholders and at least 1 director with no residence requirement; 100% foreign ownership except land/restricted sectors; KHR4,000,000(about USD1,000) minimum capital and a possibly higher bank/GDT expectation; both Khmer and English name with Khmer prominence; bank confirmation within 15 days of MoC approval; 2-to-4-week incorporation timeline; annual patent approximations USD100/300/750/1,250. Current KHR patent rates above replace the USD approximations, while current shareholder/capital/ownership/name/bank/audit conditions remain held. The annual MoC declaration and audit topics remain explicit open items, not silently removed.
+Not yet confirmed for the specific entity and filing route: officer eligibility, name, registered office, ownership, land and sector restrictions, annual declaration and transitional rules, the fee quote, audit applicability and detailed tax classification.
 
-Built from the law. Written by Codex. Not reviewed by an accountant.
+The CDC's older guide reflects the 2005 law. Use the amendment and current Ministry of Commerce instructions for the relevant registration. Use the KHR amounts set out above for ordinary patent tax.
+
+
 
 ## Disclaimer
 

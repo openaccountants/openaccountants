@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/singapore-formation"
   jurisdiction: "SG"
   tax_year: "2026"
-  last_updated: "2026-11-14"
+  last_updated: "2026-11-22"
 ---
 
-# Singapore company formation v2.0
+# Singapore company formation v2.1
 
 Calendar-2026 formation and ongoing requirements. Incorporation, bank onboarding, tax residence, work permission and permission to conduct a regulated business are distinct outcomes. A submitted form is not an approval.
 
@@ -23,8 +23,8 @@ A founder or accountant registering a Singapore local company through ACRA's Biz
 | Sole proprietorship | No separate personality; owner has unlimited liability | One owner; profits taxed to the owner | [Official source](https://www.acra.gov.sg/register/business/choosing-business-structure/) |
 | Partnership | No separate personality; partners have unlimited liability | Generally 2 to 20 partners, with professional exceptions; tax follows partner type | [Official source](https://www.acra.gov.sg/register/business/choosing-business-structure/) |
 | LLP | Separate legal person; protection does not excuse a partner's own wrongful acts | At least 2 partners, no maximum; locally resident manager required; partner-level tax | [Official source](https://www.acra.gov.sg/register/business/choosing-business-structure/) |
-| Private company | Separate person; shareholder liability limited | At least one shareholder/director; private-company shareholder maximum 50; corporate tax | [Official source](https://www.acra.gov.sg/register/business/choosing-business-structure/) |
-| Public company | Separate person; share-capital and guarantee types differ | No private-company shareholder maximum; public-company requirements need a separate assessment | [Official source](https://www.acra.gov.sg/register/business/choosing-business-structure/) |
+| Private company limited by shares | Separate person; member liability is limited to any amount unpaid on their shares. An unlimited private company is a distinct structure. | At least one member and at least one ordinarily resident director. Section 18 caps counted members at 50. Joint holders count as one, and eligible employee and former-employee members are excluded. Corporate income tax applies. | [ACRA company types](https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/choosing-a-company-type/) · [Companies Act](https://sso.agc.gov.sg/Act/CoA1967?ProvIds=pr4-,pr17-,pr18-,pr27-,pr145-&ValidDate=20261122&ViewType=Advance) |
+| Public company | Share-capital, guarantee and unlimited types have distinct rules. | No private-company 50-member ceiling. A company limited by guarantee has members and no share capital. | [ACRA company types](https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/choosing-a-company-type/) |
 
 Foreign ownership does not remove resident officer/manager, work-pass, sector or licensing conditions. Do not assume all sectors permit every ownership arrangement. Read the current structure requirements for the actual founder.
 
@@ -164,9 +164,12 @@ For tax use the company's authorised Corppass/myTax Portal access and correct UE
 | Read for three-month ECI period, 5m/nil pre-exemption waiver, specific exempt categories and estimated assessment handling. | https://www.iras.gov.sg/taxes/corporate-income-tax/estimated-chargeable-income-%28eci%29-filing | 2026-11-14 |
 | Read for preceding-year basis, first accounts across YAs, 30 November return and separate ECI obligation. | https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/basic-guide-to-corporate-income-tax-for-companies | 2026-11-14 |
 | Read for 17% headline and PTE/SUTE bands, first-three-YA and residence/shareholder/activity conditions. | https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes | 2026-11-14 |
+| Private limited and unlimited company types, shareholder eligibility and public company types. | https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/choosing-a-company-type/ | 2026-11-24 |
+| Sections 4, 17, 18, 27 and 145 for liability, membership counting, name requirements and the resident director. | https://sso.agc.gov.sg/Act/CoA1967?ProvIds=pr4-,pr17-,pr18-,pr27-,pr145-&ValidDate=20261122&ViewType=Advance | 2026-11-24 |
+| First Schedule items 1, 2 and 3 for the statutory name, incorporation and annual return fees. | https://sso.agc.gov.sg/SL/CoA1967-S835-2015?ProvIds=Sc1- | 2026-11-24 |
 
 Not yet confirmed: current individual bank KYC documents/timing, a universal beneficial-owner 25% cut-off, residential zoning and apostille requirements, work-pass decision or a universal 50,000 paid-capital threshold. The old private annual ranges (secretary 300-900; office 200-500; nominee 1,500-4,000; accounting 800-2,500; audit 2,000-8,000), first-year totals (foreign 3,100-8,200; local 1,400-3,700), formation/bank/EP/tax-file timing promises, 60-day/10-dollar name renewal, universal 1-dollar paid-up requirement, blanket corporate-tax-file automation and fixed payroll 14th due date are not usable guidance without their own current official evidence. Exact AGM exemption/dispensation conditions and sector-specific foreign ownership remain case-specific. Historical replacement of Memorandum/Articles in 2014, company-name suffix, public-company subtype, custom rights and legal disputes require their actual statutory text, which was not newly opened here.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `singapore-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/singapore-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `singapore-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/singapore-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
