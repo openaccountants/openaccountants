@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Malta payroll for employed pers
 version: "2.0"
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-25
 depends_on:
   - payroll-workflow-base
 category: payroll
@@ -34,6 +34,7 @@ Built from the law: not yet approved by an accountant.
 4. Date of birth (on or before 31 December 1961, or from 1 January 1962) and age (under 17, 17, 18+).
 5. The **basic** weekly wage or weekly equivalent of the basic monthly salary, before overtime, bonuses, allowances, benefits in kind and commissions.
 6. Overtime: managerial post? Basic weekly wage at or below EUR 375? Opted out of the 15% method? Any fringe benefits, net-pay deals, termination payments, late FS5s or missing forms?
+7. **Other income earlier in the same calendar year.** Did the employee start mid-year? Ask for any previous payer's FS3 (the year-end adjustment needs it). Ask too about income that is not emoluments, such as self-employment, rent or investment income: FSS never sees it (see Mid-year starters below).
 
 ## The method, step by step
 
@@ -50,6 +51,13 @@ Built from the law: not yet approved by an accountant.
 11. **Year end**: FS3 to each payee by 31 January; FS7 with the FS3 originals by 15 February (rules 21, 22).
 
 Order matters: split out qualifying overtime and part-time pay before the Main formula, or they are taxed twice; compute Class 1 on basic pay only, or both sides are overcharged.
+
+### Mid-year starters and income outside FSS
+
+- **FSS only taxes emoluments.** "Emoluments" covers employment income and pensions, and excludes payments received "in the course of his trade, business, profession or vocation" (FSS rule 2). A payee who was self-employed earlier in the year, or has rent or investment income, settles the tax on that income on their own return and provisional tax, not through payroll.
+- **The formula counts the calendar pay period.** In A = (E / C) x N, C is the pay period number in the calendar year, so a payee who starts in November has C = 11 on the first payslip. Only this payer's main emoluments to date are projected, which is usually far below a full year, so the deduction is often nil in the first year.
+- **The Tables reach the same total.** They deduct each period from the table, then make a year-end adjustment in the final pay period on the year's total main emoluments, which "will be complete only if the payee produces the relative Statements of Earnings (FS3's)" from previous payers (Schedule B Part II). For a mid-year starter the Tables may deduct in the early months and give it back in December; the formula and the Tables end the year at the same tax.
+- **Tell the payee in writing** when payroll shows nil or low tax but they had self-employed or other income in the year: the combined income is assessed on their return, and tax may be due then. Name it in the payslip email; do not leave it to the year-end FS3.
 
 ### The cumulative formula (FSS Schedule B)
 
@@ -120,6 +128,8 @@ The 2026 Main Tax Deduction Tables are published by the Commissioner, not in the
 | Payer files an FS4 late, incomplete or wrong | Schedule C additional tax, plus liability for under-deduction not recovered by 31 December | Rule 3(6) |
 | Ten or more full-time payees | Cumulative formula compulsory; fewer may use Tables, not both in a year | Rule 7(4) |
 | More than one employment | One main source; others at 20% | Rules 7(1), 9 |
+| Started mid-year after self-employment or with other non-employment income | FSS deducts on this payer's emoluments only; the other income is taxed on the payee's return; warn the payee in writing | Rule 2 ("emoluments"); Schedule B Parts I and II |
+| Started mid-year after another job | Main emoluments from the previous payer count in the year-end adjustment only if the payee hands over that payer's FS3 | Schedule B Part II |
 | Deduction above 50% of cash pay | Limited to 50% unless consent or ITA art. 71 or ITMA art. 46 | Rule 11(1) |
 | Termination payment | Rule 6 and/or rule 10, no 50% limit | Rule 34 |
 | Employer pays the employee's tax | Gross up: emoluments = net pay + tax | Rule 33 |
@@ -181,6 +191,7 @@ expected:
 - **No FS4.** EUR 2,500 a month: 35% = EUR 875, under the 50% cap (EUR 1,250).
 - **Qualifying overtime.** Basic EUR 360 a week, non-managerial, Jobsplus-registered; 40 overtime hours at EUR 13.50 = EUR 540. Hourly basic EUR 9.00, maxrate cap EUR 18.00: within it. 15% = EUR 81.00 final, reported separately on the FS5 and FS3, kept out of the Main formula.
 - **Second job.** EUR 1,000 in a month as Other Emoluments: 20% = EUR 200, unless a higher or (pensioner, student) lower rate was directed.
+- **Mid-year starter after self-employment (invented).** Single FS4, starts 1 November on EUR 3,000 a month, was self-employed January to October. November: A = 3,000 / 11 x 12 = EUR 3,272.73, under the EUR 12,000 single 0% band, so nil. December: E = EUR 6,000, C = 12, A = EUR 6,000, nil. Payroll deducts nothing for the year, but the self-employed profit and the EUR 6,000 salary are added together on the payee's own return, where tax may be due. The payslip email says so.
 
 ## When to refuse or refer
 
@@ -221,6 +232,7 @@ The FS5 shows payees, gross emoluments split into part-time, qualifying overtime
 | Source | URL | Read on |
 |---|---|---|
 | Read for FSS Rules, S.L. 372.14, rules 3, 4, 6, 7, 7A, 9, 11, 15, 16, 17, 18, 19, 20 to 22, 24, 25, 33, 34, 36, Schedules B and C | https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3 | 2026-11-14 |
+| Read for FSS Rules, S.L. 372.14 (consolidated to L.N. 176 of 2026): rule 2 "emoluments", rule 7(4), Schedule B Part I (C is the calendar pay period) and Part II (year-end adjustment, previous payers' FS3s) | https://legislation.mt/eli/sl/372.14/eng/pdf | 2026-11-25 |
 | Read for L.N. 176 of 2026 (FS4 published on the website) | https://legislation.mt/getpdf/6a6c4e3652fe433f00006353 | 2026-11-14 |
 | Read for Tax on Overtime Rules, S.L. 123.200 (EUR 375, EUR 10,000, maxrate) | https://legislation.mt/getpdf/62026ae5c9c73a144cfb58eb | 2026-11-14 |
 | Read for MTCA Class 1 rates 2026 (categories A to F, employee, employer, maternity) | https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates/2026 | 2026-11-14 |
