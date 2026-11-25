@@ -309,7 +309,7 @@ private health insurance rebate, Medicare levy exemption or HELP debt. All figur
 
 **Substantiated amounts for the year**
 
-| Item | Amount | Treatment |
+| Item | Synthetic cost | Treatment |
 | --- | --- | --- |
 | Tools, work-related journal, work-related phone use | $780 total | Work-related expenses |
 | Union fees for current employment | $620 | Claimable in addition to the standard deduction |
