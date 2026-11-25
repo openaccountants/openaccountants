@@ -7,14 +7,14 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/india-financial-statements"
   jurisdiction: "IN"
   tax_year: "2026"
-  last_updated: "2026-11-14"
+  last_updated: "2026-11-22"
 ---
 
 # India Company Financial Statements: Framework, Formats, Audit and Filing, FY 2026-27
 
 > **General reference only.** This skill is general reference material for AI-assisted workflows. It has not been reviewed for any specific company's facts. Do not rely on it to prepare, sign or file accounts without review by a qualified professional (a chartered accountant or company secretary) in India.
 
-This skill covers the annual financial statements of a company under the Indian Companies Act, 2013: which accounting framework applies (Ind AS or the Accounting Standards), which statements to prepare, the small company and One Person Company relaxations, the statutory audit and the CARO Order of 2020, internal audit, and filing with the Registrar of Companies. Tax year: FY 2026-27. For Indian income tax this means the tax year from 1 April 2026 to 31 March 2027 under the Income-tax Act, 2025, which replaced the Income-tax Act, 1961 from 1 April 2026. For company law, the skill states the rules in force on 14 November 2026; they apply to financial statements for the financial year ending 31 March 2027 unless a rule below says otherwise. The Corporate Laws (Amendment) Bill, 2026 is not law (see "Pending, not law" below).
+This skill covers company financial statements for FY 2026-27 under the Companies Act, 2013 and the Income-tax Act, 2025. It uses the law in force on 22 November 2026. The Corporate Laws (Amendment) Bill, 2026 remained before Parliament at that date.
 
 ## Who this applies to
 
@@ -26,7 +26,7 @@ This skill covers the annual financial statements of a company under the Indian 
 | Primary legislation | Companies Act, 2013, Chapter IX (sections 128 to 138, accounts) and Chapter X (sections 139 to 148, audit) |
 | Supporting legislation | Companies (Accounts) Rules, 2014; Companies (Audit and Auditors) Rules, 2014; Companies (Indian Accounting Standards) Rules, 2015; Companies (Accounting Standards) Rules, 2021; Companies (Auditor's Report) Order, 2020, referred to in this skill as CARO (2020) |
 | Accounting standards | Ind AS (converged with IFRS) or the Accounting Standards (AS), by the Ind AS roadmap tests in the rates table |
-| Financial year | Section 2(41): the period ending on 31 March every year (a company incorporated on or after 1 January may run to 31 March of the following year) |
+| Financial year | Section 2(41): ends on 31 March. The first financial year of a company incorporated from 1 January ends on 31 March of the following calendar year. A qualifying group company may obtain approval for a different year for overseas consolidation. |
 | Statement formats | Schedule III: Division I (AS companies), Division II (Ind AS companies other than NBFCs), Division III (Ind AS NBFCs) |
 | Filing form | e-Form AOC-4, AOC-4 XBRL or AOC-4 NBFC (Ind AS); consolidated statements in AOC-4 CFS (or the XBRL or NBFC version) |
 | Filing deadline | Thirty days after the AGM (section 137(1)); 180 days from the close of the financial year for an OPC |
@@ -34,7 +34,7 @@ This skill covers the annual financial statements of a company under the Indian 
 
 ### Which framework applies
 
-The Companies (Indian Accounting Standards) Rules, 2015 set the Ind AS roadmap. The tests use net worth. Once a company applies Ind AS, voluntarily or because it met a test, it must keep applying Ind AS in all later years even if it no longer meets the test.
+The Companies (Indian Accounting Standards) Rules, 2015 set the Ind AS roadmap. Use audited standalone net worth and apply Ind AS from the year after the first year-end at which a company newly meets the threshold. Once a company applies Ind AS voluntarily or mandatorily, it continues applying Ind AS in subsequent years.
 
 | Entity type | Framework |
 | --- | --- |
@@ -43,7 +43,7 @@ The Companies (Indian Accounting Standards) Rules, 2015 set the Ind AS roadmap. 
 | Holding, subsidiary, joint venture or associate of an Ind AS company | Ind AS |
 | Company listed only on an SME exchange | AS, unless it opts into Ind AS |
 | Any other company, including most small companies and One Person Companies | AS (Companies (Accounting Standards) Rules, 2021), unless it opts into Ind AS |
-| NBFC | A separate NBFC roadmap in the same Rules, from accounting periods beginning on or after 1 April 2018 (first phase) or 1 April 2019 (second phase); check the NBFC net worth tests in the Rules |
+| NBFC | Separate rule 4(1)(iv) roadmap. Phase I from 1 April 2018 covers net worth of at least INR 500 crore. Phase II from 1 April 2019 covers listed or listing NBFCs below INR 500 crore and unlisted NBFCs from INR 250 crore to below INR 500 crore. The specified group entities are also covered. Outside that roadmap, check the applicable rules before using Ind AS. |
 | Banking company, insurance company | Not covered by this skill. Refer (see the refusal list) |
 
 ### One Person Company (section 2(62))
@@ -113,11 +113,11 @@ Section 2(62) defines a One Person Company as "a company which has only one pers
 
 | Item | Rate or period | Condition | Source |
 | --- | --- | --- | --- |
-| Surcharge, domestic company not under s 200 or 201, total income over 1 crore to 10 crore | 7% | Finance Act 2026 First Schedule Part I-B Paragraph F | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| Surcharge, same, total income over 10 crore | 12% | Same | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| Surcharge, domestic company under s 200 or 201 | 10% | Finance Act 2026 s 3(4)(b) Table Sl. No. 9 | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Surcharge, domestic company in the ordinary regime, total income over INR 1 crore to INR 10 crore | 7% | Subject to marginal relief | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Surcharge, same, total income over INR 10 crore | 12% | Subject to marginal relief | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Surcharge, domestic company under s 200 or 201 | 10% ordinarily | A qualifying Schedule V special purpose vehicle under section 57(2) or (3) takes the 25% surcharge | https://egazette.gov.in/WriteReadData/2026/275521.pdf#page=6 |
 | Health and Education Cess | 4% of tax plus surcharge | All companies | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| AGM, every company except an OPC (section 96(1)) | Within 6 months from the close of the financial year; first AGM within 9 months of the close of the first financial year; gap between AGMs not more than 15 months | Registrar may extend for a special reason | https://resource.cdn.icai.org/74735bos60488-m2-cp7.pdf |
+| AGM, every company except an OPC (section 96(1)) | Ordinary AGM within 6 months of year-end, first AGM within 9 months of first year-end, at most 15 months between AGMs | For a special reason the Registrar may extend an AGM other than the first by at most 3 months | https://resource.cdn.icai.org/74735bos60488-m2-cp7.pdf |
 | OPC financial statements filing (section 137(1) proviso) | Within 180 days from the close of the financial year | OPC need not hold an AGM | https://resource.cdn.icai.org/74737bos60488-m2-cp9.pdf |
 
 ## The base
@@ -128,7 +128,7 @@ Section 2(40) lists what "financial statement" includes, as reproduced in ICAI s
 
 1. a balance sheet as at the end of the financial year;
 2. a profit and loss account (or an income and expenditure account for a not-for-profit company);
-3. a cash flow statement; section 2(40) of the Companies Act 2013 and exemption notification G.S.R. 583(E) of 13 June 2017 let some companies omit it, and no allowed page reproduces either as rule text, so check both before omitting it;
+3. a cash flow statement. Section 2(40) permits an OPC, small company or dormant company to omit it. G.S.R. 583(E) also covers a qualifying private start-up company that has no default in its section 92 or 137 filings.
 4. a statement of changes in equity, if applicable (Ind AS companies);
 5. explanatory notes forming part of any of these.
 
@@ -139,7 +139,7 @@ Section 2(40) lists what "financial statement" includes, as reproduced in ICAI s
 | Statement of changes in equity | Ind AS companies | Division II and Division III |
 | Cash flow statement | Every company except those excepted by section 2(40) and G.S.R. 583(E) | See item 3 |
 | Notes | Every company | Accounting policies and the Schedule III disclosures |
-| Board's report (section 134) | Every company | For an OPC or small company, check section 134(3A) and rule 8A on the abridged form |
+| Board's report (section 134) | Every company | An OPC or small company prepares the abridged report from its standalone financial statement under rule 8A. |
 | Auditor's report | Every company | Section 134 attaches it to every financial statement |
 | Consolidated financial statements (section 129(3)) | A company with one or more subsidiaries or associate companies | Prepared for the company and all subsidiaries, associates and joint ventures, laid before the AGM with the standalone statements; Form AOC-1 sets out the salient features of each subsidiary, associate and joint venture (rule 5) |
 
@@ -153,11 +153,11 @@ Excluded from small company status whatever their size (section 2(85) proviso, r
 
 | Relief | Small company | OPC | Where |
 | --- | --- | --- | --- |
-| Cash flow statement | Check section 2(40) and G.S.R. 583(E) | Check section 2(40) and G.S.R. 583(E) | Section 2(40) and exemption notification G.S.R. 583(E) of 13 June 2017  |
+| Cash flow statement | May omit | May omit | Section 2(40) |
 | CARO (2020) does not apply | Yes | Yes | CARO (2020) paragraph 1(2)(iv) (see Penalties and interest: audit) |
-| Auditor rotation under section 139(2) does not apply | Check rule 5 | Check rule 5 | Section 139(2) read with rule 5 (see Penalties and interest: audit) |
-| Auditor's report on internal financial controls not required | Check the exemption notification | Check the exemption notification | Section 143(3)(i) exemption (see Penalties and interest: audit) |
-| Abridged Board's report | Check section 134(3A) and rule 8A | Check section 134(3A) and rule 8A | Section 134(3A) and rule 8A of the Companies (Accounts) Rules, 2014 |
+| Auditor rotation under section 139(2) does not apply | Yes | Yes | Companies (Audit and Auditors) Rules, rule 5 |
+| Auditor's report on internal financial controls not required | Subject to the no-default condition | Subject to the no-default condition | G.S.R. 583(E) |
+| Abridged Board's report | Required | Required | Section 134(3A) and Companies (Accounts) Rules, rule 8A |
 | Annual return in Form MGT-7A instead of MGT-7 | Yes | Yes | Rule 11 of the Companies (Management and Administration) Rules, 2014 (see Deadlines and filing) |
 | Statutory audit | Still required | Still required | Section 134 and section 139 (see Penalties and interest: audit) |
 
@@ -167,10 +167,10 @@ Excluded from small company status whatever their size (section 2(85) proviso, r
 | --- | --- | --- |
 | 1 | Depreciation | Schedule II to the Companies Act prescribes useful lives; component accounting applies under Ind AS 16 |
 | 2 | Provisions and contingencies | Ind AS 37 / AS 29: present obligation, probable outflow, reliable estimate |
-| 3 | Employee benefits | Ind AS 19 / AS 15; gratuity and leave encashment need an actuarial valuation for defined benefit plans |
+| 3 | Employee benefits | Ind AS 19 / AS 15. Classify gratuity and leave benefits and measure each under its applicable rule. Check the AS 15 measurement relief for an eligible smaller enterprise. |
 | 4 | Credit losses on receivables | Ind AS 109 expected credit loss model for Ind AS companies. AS companies do not apply Ind AS 109; follow the company's accounting policy for doubtful debts. AS 4 is not the receivables standard: it covers contingencies and events occurring after the balance sheet date |
-| 5 | Inventory | Ind AS 2 / AS 2: lower of cost and net realisable value; FIFO or weighted average cost |
-| 6 | Deferred tax | Ind AS 12 / AS 22. Measure with the income-tax rates for the year in the rates table; do not use a single blended rate |
+| 5 | Inventory | Ind AS 2 / AS 2: lower of cost and net realisable value. Use specific identification for non-interchangeable or segregated project inventory and FIFO or weighted average for other inventory. |
+| 6 | Deferred tax | Ind AS 12 / AS 22. Use rates enacted or substantively enacted by the reporting date and applicable to the expected reversal. Include applicable surcharge and cess. The table shows the 2026-27 tax-year rates. |
 | 7 | Foreign exchange | Ind AS 21 / AS 11: monetary items at the closing rate |
 | 8 | Leases | Ind AS 116 (right-of-use model); AS 19 (finance and operating leases) |
 | 9 | Revenue | Ind AS 115 (five-step model); AS 9 |
@@ -188,33 +188,7 @@ Section 200 and section 201 are the 2025 Act sections for these options; the sec
 
 ### Statement of profit and loss format
 
-Schedule III has three Divisions: Division I for companies following the Companies (Accounting Standards) Rules, Division II for companies following the Companies (Indian Accounting Standards) Rules, and Division III for NBFCs that apply Ind AS. The outline below follows the line items of Part II. It is an outline, not the Schedule text: no allowed page we read prints Schedule III, so check every caption against the Schedule before you finalise.
-
-~~~
-I.    Revenue from operations
-II.   Other income
-III.  Total income (I + II)
-IV.   Expenses:
-      Cost of materials consumed
-      Purchases of stock-in-trade
-      Changes in inventories of finished goods, work-in-progress and stock-in-trade
-      Employee benefits expense
-      Finance costs
-      Depreciation and amortisation expense
-      Other expenses
-V.    Total expenses
-VI.   Profit before exceptional items and tax (III - V)
-VII.  Exceptional items
-VIII. Profit before tax
-IX.   Tax expense: current tax; deferred tax
-X.    Profit for the period
-XI.   Other comprehensive income (Division II and III only):
-      items that will not be reclassified to profit or loss
-      items that will be reclassified to profit or loss
-XII.  Total comprehensive income (Division II and III only)
-~~~
-
-The captions differ between the Divisions. Check each line in the Schedule for the Division that applies.
+Use Part II of the applicable Schedule III Division. Division I presents exceptional and extraordinary items, tax expense, results of continuing and discontinuing operations and earnings per equity share. Divisions II and III also present other comprehensive income, split by whether items may be reclassified to profit or loss, and total comprehensive income. Use each Division's captions and subtotals, including the separate financial and non-financial presentation for NBFCs where prescribed.
 
 ### Balance sheet format
 
@@ -270,35 +244,35 @@ Division II (Ind AS companies) uses a different order and presents equity separa
 
 ### Filing with the Registrar (section 137)
 
-The financial statements adopted at the AGM are filed with the Registrar under section 137. If they are not adopted at the AGM (or an adjourned AGM), the unadopted statements are filed within the same period and the statements adopted at the adjourned AGM within thirty days of that adjourned AGM. A company with subsidiaries files the consolidated statements too.
+File the adopted statements within 30 days of the AGM. If the AGM does not adopt them, file the unadopted statements provisionally within 30 days and file the adopted statements within 30 days of the adjourned AGM. If no AGM is held, file the signed statements, attachments and reasons within 30 days of the last date on which the AGM should have been held. Include any required consolidated statements.
 
 A One Person Company, which need not hold an AGM, files the financial statements duly adopted by its member within one hundred eighty days from the close of the financial year (section 137(1) proviso, as reproduced in the ICAI chapter on accounts of companies).
 
-Section 137(3) sets a penalty on the company and on the officers responsible when the statements are filed late. No allowed page reproduces the sub-section, so the amounts are not stated here.
-
-Section 135(1) sets net worth, turnover and net profit tests for a CSR committee and a minimum CSR spend. No allowed page reproduces the section, so the tests are not stated here.
+Section 135 applies if, in the immediately preceding financial year, net worth was at least INR 500 crore, turnover was at least INR 1,000 crore or net profit was at least INR 5 crore. The minimum spend is 2% of average qualifying net profits over the preceding 3 financial years, or the available preceding years for a newer company. If required spend is at most INR 50 lakh, the Board performs the CSR committee's functions.
 
 Once a company has started filing in XBRL it must keep filing in XBRL in later years, even if it no longer meets a test in the rates table. An NBFC that applies Ind AS files Form AOC-4 NBFC (Ind AS), and its consolidated statements in AOC-4 CFS NBFC (Ind AS). A company covered by section 135(1) files its CSR report in Form CSR-2 as an addendum to Form AOC-4, AOC-4 XBRL or AOC-4 NBFC (Ind AS) (rule 12(1B) of the Companies (Accounts) Rules, 2014).
 
+From 14 July 2025, include the applicable e-Forms Extract of Board Report and Extract of Auditor's Report with AOC-4 and its variants, including the consolidated extract when required. Also attach the signed authenticated financial statements and required documents in PDF with the XBRL form. Use e-Form AOC-1 for the group statement under rule 5.
+
 **Annual return.** Separately from the financial statements, the annual return under section 92 is filed in Form MGT-7 (MGT-7A for an OPC or small company).
 
-**AGM date (section 96).** Every company except an OPC holds its AGM within six months of the close of the financial year, the first AGM within nine months of the close of the first financial year, with no more than fifteen months between two AGMs (ICAI chapter on Management and Administration). For the financial year ending 31 March 2027 the AGM is due by 30 September 2027, and the financial statements by thirty days after it. Check whether the Registrar granted an extension before counting the filing periods.
+**AGM date (section 96).** For the financial year ending 31 March 2027, an ordinary AGM is generally due by 30 September 2027, subject to the 15-month interval and any permitted extension. For a first financial year ending on that date, the first AGM is due by 31 December 2027. Count the financial statement filing period from the actual AGM or the applicable statutory fallback.
 
-**Additional fee for late filing (section 403).** Section 403(1) lets a document be filed late on payment of an additional fee. The current first proviso sets that fee at not less than one hundred rupees per day (the wording the 2026 Bill proposes to replace; https://egazette.gov.in/WriteReadData/2026/271201.pdf ). The actual additional fee table is in the Companies (Registration Offices and Fees) Rules, 2014, which no allowed page prints. Check the fee on the MCA portal for each form. The section 403 additional fee is separate from the section 137(3) penalty.
+**Additional fee for late filing (section 403).** The prescribed ordinary fee for late section 92 or 137 filings is INR 100 per day in addition to the standard filing fee. Check for any fee relief for the specific filing period. The additional fee and the statutory penalty are separate.
 
 ## Penalties and interest
 
-Section 137(3) penalty and the section 403 additional fee are described under Deadlines and filing; no allowed page prints the amounts except the section 403 first proviso floor of one hundred rupees per day.
+Section 137(3) sets an INR 10,000 company penalty plus INR 100 for each day of continuing default, capped at INR 200,000. The responsible officers or directors face INR 10,000 plus INR 100 per day after the first, capped at INR 50,000. Check the reduced penalty under section 446B for an OPC, small company, recognised start-up or Producer Company.
 
 ### Audit: statutory audit (sections 134 and 139 to 148)
 
-Every company, including a small company and an OPC, has its financial statements audited. Section 134 attaches the auditor's report to every financial statement, and section 139 requires every company to appoint an individual or a firm as auditor at its first AGM, holding office until the conclusion of the sixth AGM after that (ICAI chapter on audit and auditors, https://resource.cdn.icai.org/74738bos60488-m2-cp10.pdf ). The Board appoints the first auditor within thirty days of registration.
+Companies, including an OPC or small company, require a statutory audit. Under section 139(1), the auditor appointed at the first AGM holds office from the close of that meeting to the close of the sixth AGM, counting the appointment meeting as the first. For a non-government company under section 139(6), the Board appoints the first auditor within 30 days of registration. If the Board fails to appoint, the members appoint the auditor within 90 days at an extraordinary general meeting. Government-controlled companies use the separate section 139(5) and (7) routes.
 
 **Pending, not law:** the 2026 Bill would add section 139(12), letting the government exempt prescribed classes of companies from appointing auditors. Until it is enacted and the classes are prescribed, no size-based audit exemption exists.
 
 ### Audit: CARO (2020)
 
-The auditor of a company covered by the Companies (Auditor's Report) Order, 2020 adds the CARO matters (paragraphs 3 and 4) to the section 143 report, for financial years commencing on or after 1 April 2019. CARO does not apply to the report on consolidated financial statements, except its clause (xxi). It applies to every company, including a foreign company, EXCEPT:
+The auditor of a company covered by the Companies (Auditor's Report) Order, 2020 adds the CARO matters in paragraphs 3 and 4 to its section 143 report for financial years commencing on or after 1 April 2021. For consolidated financial statements, apply paragraph 3(xxi). The Order covers companies, including a foreign company within section 2(42), subject to these exclusions:
 
 1. a banking company;
 2. an insurance company;
@@ -310,11 +284,11 @@ Failing one test means CARO applies. A small company stays outside CARO even if 
 
 ### Audit: auditor rotation (section 139(2) and rule 5)
 
-Section 139(2) limits how long one individual or one firm may audit a listed company or a company of a class prescribed by rule 5 of the Companies (Audit and Auditors) Rules, 2014. No allowed page reproduces section 139(2) or rule 5, so this skill does not state the classes, the capital or borrowing tests or the term limits. Read both before advising.
+Section 139(2) allows an individual one 5-year term and a firm two consecutive 5-year terms, followed by a 5-year cooling-off period. The rule applies to listed companies and to unlisted public companies with paid-up capital of at least INR 10 crore, private limited companies with at least INR 50 crore and companies below their relevant capital threshold with qualifying bank or financial institution borrowings or public deposits of at least INR 50 crore. Rule 5 excludes OPCs and small companies.
 
 ### Audit: internal financial controls report (section 143(3)(i))
 
-An exemption notification under the Act relieves some private companies of this report, on turnover, borrowing and no-default conditions. No allowed page reproduces the notification, so this skill does not state the conditions. Read it before relying on the relief.
+G.S.R. 583(E), as corrected, exempts a private company with no section 92 or 137 filing default if it is an OPC or small company, or if both its latest audited turnover is below INR 50 crore and its aggregate borrowings from banks, financial institutions and bodies corporate stay below INR 25 crore throughout the financial year.
 
 ### Audit: internal audit (section 138 and rule 13)
 
@@ -330,17 +304,17 @@ Source: ICAI chapter on accounts of companies, https://resource.cdn.icai.org/747
 
 ## Cross-border points
 
-- A foreign company is within CARO 2020 (see the audit rules above); the CARO exclusions do not take a foreign company out.
+- Test a foreign company against section 2(42), the Chapter X audit obligation and the applicable CARO exclusions.
 - A company listed abroad counts as listed for the Ind AS roadmap.
 - Foreign currency monetary items are translated at the closing rate (Ind AS 21 / AS 11).
-- A foreign holding or subsidiary that applies Ind AS can bring an Indian group company into Ind AS through the group rule; IFRS use abroad alone does not.
+- Under Ind AS rule 4(5) and (6), an overseas group entity may prepare its standalone statements under local requirements. Test the Indian group entity under rule 4(1) for mandatory Ind AS, and use Ind AS for consolidation when applicable.
 - Related-party pricing with foreign group companies: `india-transfer-pricing`.
 
-## Two worked examples that recompute
+## Worked examples
 
 ### Example 1: Is the company a small company for FY 2026-27?
 
-A private company (not a holding or subsidiary, not section 8) has paid-up share capital of 8 crore rupees at 31 March 2027 and turnover of 120 crore rupees in the preceding financial year (2025-26). The capital limit leaves 2 crore of headroom, but turnover is 20 crore over the 100 crore limit. Both limits must be met, so the company is NOT a small company: CARO 2020 applies unless it meets all three private company tests (it does not: revenue is far above ten crore rupees), it files Form MGT-7, not MGT-7A, and, with turnover of 100 crore rupees or more, it files in AOC-4 XBRL.
+An ordinary private trading company has paid-up capital of INR 8 crore and non-negative reserves and surplus at 31 March 2027. Its preceding FY 2025-26 turnover was INR 120 crore. The capital is INR 2 crore below the small company ceiling and the preceding-year turnover is INR 20 crore above its ceiling, so the company is outside the small company class and uses MGT-7. Paid-up capital plus reserves and surplus exceeds the CARO private-company limit of INR 1 crore. Assuming no other exemption applies, CARO applies. The capital is INR 3 crore above the XBRL minimum, so the company uses AOC-4 XBRL.
 
 ```oa-check
 name: Small company test, capital 8 crore, preceding-year turnover 120 crore
@@ -351,19 +325,19 @@ steps:
   - capital_headroom: 100000000 - paid_up
   - turnover_headroom: 1000000000 - turnover
   - weakest_headroom: min(capital_headroom, turnover_headroom)
-  - xbrl_turnover_margin: turnover - 1000000000
+  - xbrl_capital_margin: paid_up - 50000000
 expected:
   capital_headroom: 20000000
   turnover_headroom: -200000000
   weakest_headroom: -200000000
-  xbrl_turnover_margin: 200000000
+  xbrl_capital_margin: 30000000
 ```
 
-A negative weakest headroom means the company fails a limit. An XBRL margin of zero or more means the turnover test for XBRL is met (100 crore "or above").
+A negative weakest headroom fails the small company test. A zero or positive XBRL capital margin meets the INR 5 crore capital test.
 
 ### Example 2: Deferred tax rate, stay in the default regime or opt for section 200
 
-A domestic company with 2024-25 turnover of 350 crore rupees expects total income of 5 crore rupees a year and has a net taxable temporary difference of 10 crore rupees at 31 March 2027. On the default regime it pays 25% (turnover not over 400 crore), plus 7% surcharge (income over 1 crore, not over 10 crore), plus 4% cess: 27.82%, so the deferred tax liability is 2,78,20,000 rupees. If it has opted for section 200 (22%, 10% surcharge, 4% cess: 25.168%), the liability is 2,51,68,000 rupees. The rate the company will pay when the difference reverses decides which to use; the regime choice itself (MAT credit, lost deductions) is in `india-tax-optimization`.
+An ordinary domestic company with FY 2024-25 turnover of INR 350 crore has a net taxable temporary difference of INR 10 crore at 31 March 2027. Assume that the enacted or substantively enacted rates applicable when the difference reverses are the rates illustrated here, with total income including reversals of INR 5 crore a year. Under the default regime, 25% tax, 7% surcharge and 4% cess give 27.82% and an INR 27,820,000 deferred tax liability. With a valid section 200 election and ordinary 10% surcharge, 22% tax and 4% cess give 25.168% and an INR 25,168,000 liability. Use the regime and rates expected to apply when each difference reverses.
 
 ```oa-check
 name: Deferred tax on a 10 crore temporary difference, default regime against section 200
@@ -398,7 +372,7 @@ expected:
 2. Choose the framework with the Companies (Indian Accounting Standards) Rules, 2015 tests (rates table): net worth, listing, group membership, earlier voluntary adoption (https://resource.cdn.icai.org/87811bos-280825-final-ch1.pdf ). This also picks Division I, II or III of Schedule III.
 3. Test small company status under section 2(85) and rule 2(1)(t) as substituted by G.S.R. 880(E): paid-up capital AND preceding-year turnover, and the excluded classes (https://egazette.gov.in/WriteReadData/2025/268124.pdf and https://resource.cdn.icai.org/60117aasb48979-a.pdf ).
 4. List the statements required under section 2(40) and section 129(3): cash flow exemption, statement of changes in equity, consolidated statements and Form AOC-1 (https://resource.cdn.icai.org/74737bos60488-m2-cp9.pdf ).
-5. Post the year-end adjustments in The base, including deferred tax at the rates for tax year 2026-27 under the Finance Act, 2026 and the Income-tax Act, 2025 (https://egazette.gov.in/WriteReadData/2026/271439.pdf and https://egazette.gov.in/WriteReadData/2025/265620.pdf ).
+5. Post the year-end adjustments. Measure deferred tax using enacted or substantively enacted rates for the expected reversal under the applicable accounting standard.
 6. Prepare the statements and notes in the Schedule III format for the Division chosen in step 2 (Divisions described at https://resource.cdn.icai.org/74737bos60488-m2-cp9.pdf ), and check each caption against the Schedule text.
 7. Confirm the audit set-up: auditor appointment and rotation under section 139 and rule 5, CARO 2020 applicability, the internal financial controls report, and internal audit under section 138 and rule 13 (https://resource.cdn.icai.org/74738bos60488-m2-cp10.pdf and https://resource.cdn.icai.org/60117aasb48979-a.pdf and https://resource.cdn.icai.org/74737bos60488-m2-cp9.pdf ).
 8. Board approval and signature under section 134, then the auditor's report, then the Board's report (for an OPC or small company, check section 134(3A) and rule 8A on the abridged form) (https://resource.cdn.icai.org/74737bos60488-m2-cp9.pdf ).
@@ -431,9 +405,27 @@ expected:
 | Read for ICAI study material, Accounts of Companies: sections 2(40), 129, 134, 137 (including the OPC 180-day proviso), 138, XBRL rule 3(1) and rule 12(1B) | https://resource.cdn.icai.org/74737bos60488-m2-cp9.pdf | 2026-11-14 |
 | Read for ICAI study material, Management and Administration: section 92(4) sixty-day annual return period and section 96(1) AGM timing | https://resource.cdn.icai.org/74735bos60488-m2-cp7.pdf | 2026-11-14 |
 | Read for ICAI study material, Audit and Auditors: sections 139 to 148 | https://resource.cdn.icai.org/74738bos60488-m2-cp10.pdf | 2026-11-14 |
+| Companies Act, sections 2, 92, 96, 129, 134-139, 403 and 446B | https://www.indiacode.nic.in/bitstream/123456789/2114/5/A2013-18.pdf?v=20260526072457 | 2026-11-24 |
+| MCA, Schedule III amendments from April 2021 | https://www.mca.gov.in/Ministry/pdf/ScheduleIIIAmendmentNotification_13042021.pdf | 2026-11-24 |
+| ICAI, Schedule III Division I, Appendix A | https://resource.cdn.icai.org/68981clcgc55147-gnd1.pdf | 2026-11-24 |
+| ICAI, Schedule III Division II, Appendix A | https://resource.cdn.icai.org/68982clcgc55147-gnd2.pdf | 2026-11-24 |
+| ICAI, Schedule III Division III, Appendix A | https://resource.cdn.icai.org/68983clcgc55147-gnd3.pdf | 2026-11-24 |
+| Gazette, Ind AS Rules including amended rule 4 and the NBFC roadmap | https://thc.nic.in/Central%20Governmental%20Rules/Companies%20%28Indian%20Accounting%20Standards%29%20Rules%2C2015.pdf | 2026-11-24 |
+| MCA, Companies Accounting Standards Rules 2021 | https://www.mca.gov.in/bin/dms/getdocument?mds=RKk43Bmg99ksfV0bUGr6XA%253D%253D&type=open | 2026-11-24 |
+| India Gazette, Taxation and Other Laws (Amendment) Act 2026, section 6 | https://egazette.gov.in/WriteReadData/2026/275521.pdf#page=6 | 2026-11-24 |
+| India Gazette, CARO second amendment, commencement | https://egazette.gov.in/WriteReadData/2020/223784.pdf#page=2 | 2026-11-24 |
+| Companies Accounts Second Amendment Rules 2025, rules 5 and 12 | https://egazette.gov.in/WriteReadData/2025/263619.pdf | 2026-11-24 |
+| XBRL amendment, signed statements in PDF | https://egazette.gov.in/WriteReadData/2025/263676.pdf | 2026-11-24 |
+| MCA, Companies Registration Offices and Fees Second Amendment Rules 2018 | https://www.mca.gov.in/Ministry/pdf/CompaniesOfficesFeesRules_07052018.pdf | 2026-11-24 |
+| India Code, G.S.R. 583(E) private company exemptions | https://upload.indiacode.nic.in/showfile?actid=AC_CEN_22_29_00008_201318_1517807327856&filename=Exemption+to+Private+Companies+under+section+462+of+CA%2C+2013.pdf&type=notification | 2026-11-24 |
+| India Code, G.S.R. 583(E) corrigendum | https://upload.indiacode.nic.in/showfile?actid=AC_CEN_22_29_00008_201318_1517807327856&filename=Exemption+to+Private+Company%28corrigendum%29.pdf&type=notification | 2026-11-24 |
+| MCA, Audit and Auditors Rules, rule 5 | https://www.mca.gov.in/Ministry/pdf/NCARules_Chapter10.pdf | 2026-11-24 |
+| India Code, 2017 audit rotation threshold amendment | https://upload.indiacode.nic.in/showfile?actid=AC_CEN_22_29_00008_201318_1517807327856&filename=Companies+%28Audit+and+Auditors%29+Second+Amendment+Rules%2C+2017.pdf&type=rule | 2026-11-24 |
+| India Code, abridged Board's report rule 8A | https://upload.indiacode.nic.in/showfile?actid=AC_CEN_22_29_00008_201318_1517807327856&filename=companis+Accounts+Rules_31072018.pdf&type=rule | 2026-11-24 |
+| MCA, Ind AS 12 paragraph 47 | https://www.mca.gov.in/Ministry/pdf/IndAS12_2020_10112020.pdf | 2026-11-24 |
 
-Not yet confirmed: the section 137(3) penalty amounts; the additional fee table in the Companies (Registration Offices and Fees) Rules, 2014; the section 135(1) CSR tests; the cash flow exemption text in section 2(40) and G.S.R. 583(E); the section 139(2) and rule 5 rotation classes and terms; the section 143(3)(i) exemption conditions; the section 134(3A) and rule 8A abridged Board's report; the NBFC Ind AS net worth tests; the Schedule III captions themselves (only described, not read in the Schedule text).
+Not yet confirmed: any future fee relief for FY 2026-27 filings and the rates in force when a future temporary difference reverses. Check the applicable law at the reporting or filing date.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `india-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/india-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `india-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/india-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.

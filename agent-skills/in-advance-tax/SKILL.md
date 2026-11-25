@@ -1,16 +1,16 @@
 ---
 name: in-advance-tax
-description: "Use this skill whenever asked about Indian advance tax for self-employed individuals, freelancers, or professionals. Trigger on phrases like \"advance tax India\", \"advance tax instalments\", \"Section 234B\", \"Section 234C\", \"Challan 280\", \"advance tax due dates\", \"interest on late advance tax\", \"presumptive tax instalment\", \"estimated tax India\", or any question about advance tax obligations under the Income-tax Act 1961. This skill covers the quarterly instalment schedule, presumptive taxation single instalment, threshold, interest for shortfall under s.234B and s.234C, senior citizen exemption, Challan 280 payment procedure, TDS credit interaction, and edge cases. ALWAYS read this skill before touching any advance tax-related work for India."
+description: "Indian advance tax for individuals and the self-employed in tax year 2026-27 under the Income-tax Act, 2025. Covers the advance tax threshold, instalment dates, the presumptive single instalment, senior citizen exemption, TDS and TCS, interest under sections 424 and 425, and e-Pay Tax. Older search terms include sections 234B and 234C and Challan 280."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/in-advance-tax"
   jurisdiction: "IN"
   tax_year: "2026"
-  last_updated: "2026-11-16"
+  last_updated: "2026-11-22"
 ---
 
-# India Advance Tax for Individuals and the Self-Employed v2.1
+# India Advance Tax for Individuals and the Self-Employed v2.2
 
 ## Scope
 
@@ -221,7 +221,7 @@ Legislation: Income-tax Act, 2025, section 425 (https://egazette.gov.in/WriteRea
 - Presumptive taxpayers (section 58(2) Table serial 1 or 3): the June, September and December rows do not apply. Section 425(1) applies to an assessee liable under section 404 "other than the assessee mentioned in sub-section (3)". Sub-section (3) includes the operative phrase "or, who is liable to pay advance tax under section 404". The old version read sub-section (3) as covering only section 58(2) serial 1 or 3 taxpayers, because on the wider reading section 425(1) would apply to no one. This construction is not confirmed here; obtain professional confirmation before using the ordinary-instalment interest illustration for filing. Section 425(3) charges simple interest at the March rate in the table on the shortfall from the tax due on returned income at 15 March.
 - Income that is hard to foresee (section 425(4)): no interest under section 425(1) or (3) on a shortfall caused by underestimating, or failing to estimate, (i) capital gains, (ii) winnings from lotteries, crossword puzzles, races, card games, gambling or betting (section 2(49)(n)), (iii) business or profession income arising for the first time, or (iv) dividend income (not a dividend under section 2(40)(e), section 425(6)). BOTH conditions apply: the shortfall comes from that income AND the person paid the full tax on that income in any of the remaining instalments of advance tax, if any, or by 31 March of the tax year.
 - Sections 424 and 425 are separate. Both can apply to the same person for the same year.
-- Both sections say the assessee "shall be liable to pay" the interest. Neither section contains a power to reduce or waive it. (Section 411(7) allows a reduction or waiver only of interest on unpaid demands under section 411(3).)
+- Both sections say the assessee "shall be liable to pay" the interest. Section 239(3)(a) authorises the CBDT to relax sections 424 and 425 by order for classes of income or cases. Check the applicable order and facts before applying any waiver or reduction. Section 411(7) concerns interest on unpaid demands under section 411(3).
 
 #### 4.5 Presumptive taxpayers (Tier 1)
 
@@ -264,7 +264,7 @@ Source: Income Tax Department e-Pay Tax FAQ (https://www.incometax.gov.in/iec/fo
 #### Online payment steps (Tier 1)
 
 1. Open e-Pay Tax on the e-Filing portal, before login (Quick Links) or after login with the PAN.
-2. Make sure the challan is for the Income-tax Act, 2025, tax year 2026-27, and advance tax. Check the Act, the year and the payment type before paying; an old bank narration or challan label is not enough to identify the year. A payment made under the wrong one cannot be reversed on the portal (FAQ question 8).
+2. Check that the challan selects the Income-tax Act, 2025, tax year 2026-27 and advance tax before paying. Use the payment record to verify the period and payment type.
 3. Choose the mode of payment when generating the challan: net banking or debit card of an authorised bank, payment gateway (net banking, debit card, credit card, UPI), RTGS/NEFT, or Pay at Bank counter. The mode cannot be changed after the CRN is generated.
 4. Generate the challan (CRN). It is valid for 15 days; a CRN for advance tax generated on or after 16 March is valid to 31 March.
 5. Pay. Cash at a bank counter is limited per CRN to the amount in the Section 1 table. A company, and a person to whom section 63 (tax audit) applies, must pay online (rule 333 as stated in the FAQ).
@@ -279,7 +279,7 @@ Source: Income Tax Department e-Pay Tax FAQ (https://www.incometax.gov.in/iec/fo
 | PAN | The taxpayer's own PAN | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/e-pay-tax |
 | Proof | CIN, BSR code and date of payment | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/e-pay-tax |
 
-A payment made under the wrong head or year cannot be refunded or reversed on the portal. The FAQ tells the taxpayer to claim it as a credit in the return for the relevant year or ask the jurisdictional Assessing Officer for refund or adjustment.
+For an eligible unconsumed challan, request correction after PAN login under Services → Challan Correction. The online service covers minor heads 100, 300 and 400 and their corresponding major heads. Request a tax-year or assessment-year correction within 7 days of deposit, or a major or minor head correction within 30 days. Contact the jurisdictional Assessing Officer when the online service is unavailable for the correction. [Challan Correction Request manual](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/challan-correction-request-UM)
 
 ### Section 6: Senior citizen exemption and penalties
 
@@ -335,7 +335,7 @@ Resolution: section 406(2) lets the client increase the remaining instalments. S
 #### EC6: Advance tax paid in full, return filed late (Tier 2)
 
 Situation: the client paid all instalments on time but filed the return after the section 263 due date.
-Resolution: section 424 does not apply (advance tax paid). Section 423 interest (formula in the Section 1 table) applies on the tax on which interest is payable, which section 423(2) defines after deducting "tax paid", including advance tax and TDS. A late filing fee under section 428 may also apply. Flag for the reviewer.
+Resolution: check that advance tax paid by year-end reached 90% of the assessed tax for section 424. Compute section 423 interest, where due, on the relevant tax base in section 423(2) after reducing it by "tax paid" as defined in section 423(4)(d), including advance tax and TDS. Check the late filing fee under section 428.
 
 #### EC7: Non-resident with Indian business income (Tier 2)
 
@@ -516,7 +516,7 @@ expected:
 - Companies, firms, LLPs and trusts: refer for the tax computation.
 - An Assessing Officer's order under section 407, or a notice treating the person as in default under section 409: refer.
 - Net agricultural income in the computation (section 405(2)): refer.
-- A payment made under the wrong head or year: the client must claim it in the return or ask the Assessing Officer; refer if the amounts are material.
+- A payment made under the wrong head or year: check the online correction window and conditions first. Refer unresolved or material cases.
 
 
 ### Disclaimer
@@ -533,6 +533,7 @@ The most up-to-date version of this Guide is maintained on the OpenAccountants s
 | https://egazette.gov.in/WriteReadData/2026/271439.pdf | Read for s.66 substituting s.263(1)(c) and revised-return timing; ss.93-96 amending interest-credit references and late fees; s.40 amendment to s.58(11) | 2026-11-14 |
 | https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf | Read for rules222-223: Form151 demand and Form152 lower estimate; rule75-76 separately read for cross-border referral context | 2026-11-14 |
 | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/e-pay-tax | Read for Q4-15 and Q38: access, CRN, modes, restricted bank-counter use, mistaken payments, validity, receipt and cash limit | 2026-11-14 |
+| https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/challan-correction-request-UM | PAN login, eligible challans and the 7-day and 30-day correction windows | 2026-11-24 |
 
 | Income-tax Act 2025 Gazette, targeted reread | Read for section 408 in full and sections 424-425 in full; existing hypothetical cases retain their assumptions, arithmetic and section 425 construction hold. Labels distinguish assumed inputs and computed results from statutory figures | 2026-11-16; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
@@ -540,4 +541,4 @@ Not yet confirmed: the precise construction of section 425(2)'s June/September t
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `in-advance-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/in-advance-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `in-advance-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/in-advance-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
