@@ -1,11 +1,11 @@
 ---
 name: in-tds-freelance
 description: Use this skill whenever asked about Indian TDS (Tax Deducted at Source) on payments to freelancers, contractors, or professionals. Trigger on phrases like "TDS freelance India", "Section 194J", "Section 194C", "Section 194O", "TDS rate professional services", "Form 26Q", "Form 16A", "TDS certificate", "26AS", "AIS reconciliation", "TDS return India", "lower deduction certificate", "Section 197", "Section 206AA", "PAN not provided TDS", or any question about TDS obligations when paying or receiving freelance/contractor payments in India. Covers Section 194J (professional/technical services), 194C (contractor payments), 194O (e-commerce), TDS return filing (Form 26Q), TDS certificates (Form 16A), Form 26AS/AIS reconciliation, higher rate for missing PAN (Section 206AA), and lower deduction certificates (Section 197). ALWAYS read this skill before touching any India TDS work involving freelancers or contractors.
-version: 1.1
+version: 1.2
 type: computation
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -234,7 +234,7 @@ A "specified person" (Step 1) that provides a resident with a benefit or perquis
 
 ### Step 6: TAN, Deposit and Payment to Government [T1]
 
-- **TAN.** Every person deducting tax applies for a tax deduction and collection account number and quotes it in all challans, statements and certificates (section 397(1)(a) and (b)). Not needed by a person deducting under serial 6(ii) (and the other cases listed in section 397(1)(c)). From 1 October 2026 the Finance Act 2026 substitutes a new section 397(1)(c), which keeps the serial 6(ii) exception "in respect of a transaction" and adds cases for virtual digital assets and property bought from non-residents.
+- **TAN.** A person deducting tax applies for a tax deduction and collection account number if one has yet to be allotted and quotes it in the prescribed records (section 397(1)(a) and (b)). The serial 6(ii) exception applies to the qualifying transaction. From 1 October 2026 the substituted section 397(1)(c) retains that exception and the existing exception for eligible virtual digital asset transactions. It adds a transaction-specific exception for a resident individual or HUF deducting under section 393(2), Table serial 17, on the transfer of immovable property. [Income-tax Act 2025, section 397](https://egazette.gov.in/WriteReadData/2025/265620.pdf) and [Finance Act 2026, section 87](https://egazette.gov.in/WriteReadData/2026/271439.pdf).
 - **Deposit dates** (section 397(3)(a); rule 218 of the Income-tax Rules 2026):
 
 | Deductor | Due date for payment to the Government |
@@ -282,7 +282,7 @@ No penalty for late filing under section 461(1)(a) if the person proves that the
 
 | Item | Detail |
 | --- | --- |
-| Form | Form No. 131 for deductions under section 393(1) other than serial 2(i), 3(i), 6(ii) and 8(vi); Form No. 132 for serial 6(ii); https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
+| Form | Form No. 131 for the serial 6(i), 6(iii), 8(iv) and 8(v) deductions covered here. Form No. 132 for serial 6(ii). The specified-bank deductions under serial 8(iii) use Form No. 130 under rule 215(1), Table serial 1. [Notified rule 215](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf) |
 | Issued by | Deductor to deductee, generated and downloaded from the portal specified by the Director General of Income-tax (Systems); https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
 | Content | Amount of tax deducted, rate, and other prescribed particulars (section 395(4)(a)); https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Due date, Form No. 131 | Within 15 days (in words on the page) from the due date for furnishing the statement under rule 219; https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
@@ -352,7 +352,7 @@ A person who does not deduct, or deducts but does not pay, is an assessee in def
 - Section 393(5) also exempts amounts payable to a qualifying Central-Act corporation exempt on its income and a specified mutual fund, not merely Government/RBI; section 393(9) covers payment for/on behalf of New Pension System Trust. Check the actual statutory identity before claiming the exemption. The serial 6(i)/(iii) personal-purpose exceptions do not automatically excuse a large personal payment covered independently by serial 6(ii). [s.393(4)-(6),(9)](https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 - E-commerce precedence is subject to Note 4: if serial 8(v) and VDA serial 8(vi) both apply, only 8(vi) deduction applies; send VDA to `india-crypto-tax`. Direct buyer payments for facilitated sales still count; advertising/unconnected operator services are excluded from the no-duplicate rule. A website alone does not settle operator/participant classification. [s.393(1),Notes 3-6](https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 - Rule219(1) has an unresolved enumeration gap for RNOR section393(1) deductions: serial2 names RNOR but not393(1), while serial3 excludes the serial2 deductees. Hold the RNOR form pending clarification, preserving the ordinary140 route and specific exceptions. Serial 6(ii) transactions use Form 141 instead of a quarterly form; rule 218(3)/219(5)30 day monthly-end limit and rule 21515 day certificate limit apply. Duplicate-certificate permission in rule 215(3) lists 130/131/133, not 132. [rules 215,218,219](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf).
-- The no-PAN practical rates assume the stated provision/rates-in-force do not exceed the displayed floor; use the higher of all 3, not a universal fixed 20%/5%. PAN validity/inoperative status needs period-specific confirmation. Rule 203 credit follows assessability year and proportionate multi-year allocation, not simply deduction year; other-person declarations alter credit/certificate recipient. Section 401 preserves protection for amounts actually deducted. [ss.397,401](https://egazette.gov.in/WriteReadData/2025/265620.pdf); [rule 203](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf).
+- The no-PAN practical rates assume that the rate in the relevant provision and the rates in force do not exceed the displayed floor. Rule 162(3)(c) applies section 397(2) while a PAN is inoperative for failure to give a required Aadhaar number. Check the PAN's operative status for the transaction and any applicable relief. Rule 203 allocates credit to the year the income is assessable and apportions it if the income is assessable over several years. The declaration procedure applies if the income is assessable in another person's hands. Section 401 protects the payee to the extent of tax actually deducted. [Sections 397 and 401](https://egazette.gov.in/WriteReadData/2025/265620.pdf) and [rules 162 and 203](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf).
 - Interest/default time limits in s.398(5) are subject to s.398(6) importing ss.286(1),(3); do not treat the displayed 6/2 year endpoints as unconditional in extended/excluded-period cases. Section 398(4) charges unpaid deducted tax plus interest on payer assets. Payer-default relief requires all payee-return/inclusion/payment facts and accountant certificate; interest still runs to payee return date. No criminal penalty computation is provided here. [s.398](https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 - Rule 245 uploads information held by the authority within 90 days from the end of the month it is received; the statement is not proof that all underlying income or deductions have been captured. [rule 245](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf).
 
@@ -366,7 +366,7 @@ A person who does not deduct, or deducts but does not pay, is an assessee in def
 #### EC 2: Reimbursement of expenses in the invoice [T2]
 
 **Situation:** A freelancer invoices consulting fees plus a separately billed travel reimbursement.
-**Resolution:** The 2025 Act Table does not exclude reimbursements. Whether a separately billed, receipted reimbursement is outside the fee depends on Board guidance and case law that this Guide could not read on an allowed page. [T2] flag for a Chartered Accountant.
+**Resolution:** For a professional or contract bill that includes a reimbursement, CBDT Circular 715, question 30, includes the reimbursement in the bill amount for withholding. Section 536(2)(j) preserves consistent circulars under the successor provisions. [T2] Verify the underlying invoices and contract before deciding whether a separately billed amount is part of the professional fee, a disbursement on the client's behalf or a benefit under serial 8(iv). [Circular 715](https://wm.incometaxindia.gov.in/w/715-circular-no.-715-dated-8-8-1995) and [section 536](https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 
 #### EC 3: Payee is a partnership firm: which contract rate? [T1]
 
@@ -396,7 +396,7 @@ A person who does not deduct, or deducts but does not pay, is an assessee in def
 #### EC 8: GST shown on the invoice [T2]
 
 **Situation:** The freelancer's invoice shows the fee and GST separately.
-**Resolution:** The 2025 Act Table taxes "any sum by way of fees" and does not mention GST. Whether GST shown separately is left out of the amount on which tax is deducted depends on CBDT guidance that this Guide could not read on an allowed page. Check the current CBDT circular before relying on either treatment. [T2] flag for a Chartered Accountant.
+**Resolution:** Exclude GST on services from the amount subject to TDS when the amount is payable to a resident and the GST component is indicated separately under the terms of the agreement or contract. Check those terms as well as the invoice. CBDT Circular 23/2017, paragraph 4, supplies the exclusion and section 536(2)(j) preserves consistent circulars under the successor provisions. [Circular 23/2017](https://upload.indiacode.nic.in/showfile?actid=AC_UP_88_448_00001_00001_1601884306960&filename=circular_no_1920019.pdf&type=circular) and [section 536](https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 
 #### EC 9: Presumptive-scheme professional with excess TDS [T1]
 
@@ -563,11 +563,13 @@ Use the applicable current-Act form/tab and supported official statement utility
 | Official source | Read for | Actual read date |
 |---|---|---|
 | https://egazette.gov.in/WriteReadData/2025/265620.pdf | Read for s.9(6)-(7); s.393(1)serial 6/8andNotes,393(4)serial 8-12,393(5)-(11),395-398,400-402relevant definitions 10-15/28/30/34/37/47,431-433 and 461: complete operative paragraphs and neighboring exceptions; not wholeAct | 2026-11-14 |
-| https://egazette.gov.in/WriteReadData/2026/271439.pdf | Read for s.1 commencement,84-90,96 and 111: current TDS amendments/certificates/TAN Oct 2026/manpower/fee/prosecution; no unchanged blanket 1961rules projected | 2026-11-14 |
-| https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf | Read for entire rules 203,213,215,218,219,245 including neighboring exclusions/other-person allocation/RNORforms/duplicatecertificates; partial neighboring 214/216 read but not new obligations inferred | 2026-11-14 |
+| https://egazette.gov.in/WriteReadData/2026/271439.pdf | Sections 1, 84 to 90, 96 and 111 on commencement, TDS, certificates, October TAN change, manpower, fees and prosecution | 2026-11-24 |
+| https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf | Rules 162, 203, 213, 215, 218, 219 and 245 on PAN, credit, certificates, payment, statement and annual information | 2026-11-24 |
 | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/tax-payments-faq | Read for Q 3-6 and 14-23: earlier credit/payment event, TDStransition, current 393references/Form 168; not old-year rate guidance | 2026-11-14 |
+| https://wm.incometaxindia.gov.in/w/715-circular-no.-715-dated-8-8-1995 | Question 30 on reimbursements included in the bill amount | 2026-11-24 |
+| https://upload.indiacode.nic.in/showfile?actid=AC_UP_88_448_00001_00001_1601884306960&filename=circular_no_1920019.pdf&type=circular | Paragraph 4 on the separate contractual GST on services component | 2026-11-24 |
 
-**Not yet confirmed:** RNOR section393(1) statement form because rule219 serial2/3 enumerations conflict; aggregation across different 6(iii)fee categories; notified professions beyond the cited s.402(28)list; specific software/SaaS/mixed contracts and ordinary-meaning work classification; GST exclusion/reimbursements and current binding guidance; EC 4earlier-payment deduction/interest timing; benefit valuation and funding; inoperative-PAN consequences; disputed/missing-credit return treatment; actual current portal fields/modes/extensions; application-specific lower/nil-certificate outcomes and prescribed electronic-authority conditions; excluded-period s.398(6) time-limit cases. Preserve these as referrals, not usable unsupported tax rules. Older-Act transactions remain out of scope.
+**Not yet confirmed:** RNOR section 393(1) statement form because rule 219 serial 2 and 3 enumerate different provisions, aggregation across different serial 6(iii) fee categories, notified professions beyond the cited section 402(28) list, software/SaaS and mixed-contract classification, separately billed client disbursements, EC 4 earlier-payment deduction and interest timing, benefit valuation and funding, transaction-specific inoperative-PAN relief, disputed or missing credit claims, filing extensions, application-specific lower or nil certificates and excluded periods under section 398(6). Refer these matters for professional confirmation.
 
 This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
