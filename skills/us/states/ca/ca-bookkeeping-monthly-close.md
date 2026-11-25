@@ -40,7 +40,7 @@ domain: bookkeeping
 ## What this file is
 
 This is the California companion to the universal
-[bookkeeping-workflow-base](../../../foundation/bookkeeping-workflow-base.md).
+[bookkeeping-workflow-base](../../../global/methods/bookkeeping-workflow-base.md).
 It supplies the California chart of accounts, management-reporting layout,
 transaction patterns, agency-control reconciliations, 2026 calendar inputs, and
 tax-return handoff rules that the base requires. The base supplies the
