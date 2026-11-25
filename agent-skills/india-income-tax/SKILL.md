@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/india-income-tax"
   jurisdiction: "IN"
   tax_year: "2026"
-  last_updated: "2026-11-16"
+  last_updated: "2026-11-22"
 ---
 
 # India income tax for resident individuals: salary, freelancers and small businesses (Tax Year 2026-27, with AY 2026-27 returns)
@@ -123,7 +123,7 @@ Current return categories also give 31August 2027 to partner of a firm not requi
 | Old | ₹12,500 | Resident individual; taxable income does not exceed ₹5,00,000; https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1 |
 
 - The rebate is "up to 100% of income tax subject to a maximum limit", so at ₹12,00,000 the new-regime tax of ₹60,000 is fully rebated and tax is nil. With the ₹75,000 standard deduction, a salaried resident with no other income pays nil up to a gross salary of ₹12,75,000.
-- **Marginal relief just above ₹12,00,000 (new regime).** The portal's ITR validation rules for AY 2026-27 refuse the rebate where total income excluding LTCG is "more than Rs.12,70,590" ([ITR-1 validation rules](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT_e-Filing_ITR%201_Validation%20Rules_AY%202026-27.pdf)). Between ₹12,00,000 and that point, tax payable is limited to the income above ₹12,00,000 (see worked case 3).
+- **Marginal relief just above ₹12,00,000 (new regime).** Where pre-rebate income tax exceeds the excess of total income over ₹12,00,000, apply the relief under s.87A, subject to the slab-tax cap, then calculate cess. For income taxed entirely at slab rates, the unrounded break-even is about ₹12,70,588. The ₹12,70,590 amount in the AY 2026-27 [ITR-1 validation rules](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT_e-Filing_ITR%201_Validation%20Rules_AY%202026-27.pdf) is a portal validation figure. [Finance Act 2025, s.20](https://egazette.gov.in/WriteReadData/2025/262125.pdf#page=23).
 - The rebate is for residents only. The current s.156(3) and old 87A proviso inserted by Finance Act 2025 s.20 cap new-regime rebate to slab-rate tax. Specific capital-gain/special-rate computations remain referred; the income threshold alone does not rebate every type of tax. [current Act](https://egazette.gov.in/WriteReadData/2025/265620.pdf); [oldamendment](https://egazette.gov.in/WriteReadData/2025/262125.pdf).
 
 ### Surcharge, cess and marginal relief ([source](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1))
@@ -137,7 +137,7 @@ Current return categories also give 31August 2027 to partner of a firm not requi
 | Above ₹5 crores | 25% | 37%; https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1 |
 
 - Surcharge on income under sections 111A, 112,112A and dividends is capped at 15%, except where taxed under 115 A, 115 AB, 115 AC, 115 ACA or 115 E.
-- Marginal relief: tax plus surcharge cannot exceed the tax on income at the threshold (₹50 lakh, ₹1 crore, ₹2 crores, and under the old regime ₹5 crores) by more than the income above that threshold.
+- Marginal relief: income tax plus surcharge cannot exceed the income tax and any surcharge applicable at the relevant threshold by more than the excess income. Test the ₹50 lakh, ₹1 crore and ₹2 crore thresholds and, for the old regime, ₹5 crore. Calculate cess after the relief.
 - Health and Education Cess of 4% is paid on income tax plus surcharge, in both regimes.
 
 ### Standard deduction and key deductions (AY 2026-27 rules) ([ITR-1 validation rules](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT_e-Filing_ITR%201_Validation%20Rules_AY%202026-27.pdf))
@@ -154,7 +154,7 @@ Old regime only ([Salaried Individuals page, deductions](https://www.incometax.g
 - 80C, 80CCC and 80CCD(1) together: ₹1,50,000. 80CCD(1 B), own NPS: ₹50,000 more.
 - 80D health insurance: ₹25,000 for self, spouse and dependent children (₹50,000 if any of them is a senior citizen), and a separate parent pool with the applicable cap; preventive check-up ₹5,000 is aggregate within these limits, not extra for each pool. Obtain eligible payment and insurance/medical evidence; current-year complete conditions are above.
 - 80TTA savings interest (non-senior): ₹10,000. 80TTB deposit interest (resident senior citizen): ₹50,000.
-- Home-loan interest on a self-occupied house, s.24(b): ₹2,00,000 for a qualifying acquisition/construction loan on or after 1April 1999 and completion within 5 years from end of borrowing financial year; do not omit the completion condition. [Circular 3/2017 para 51](https://www.incometaxindia.gov.in/documents/20117/6507196/Circular03_2017.pdf/a8f0575d-1a05-5bb9-6842-b893a95ac1eb?t=1762868214545). Other older 24 eligibility/certificate conditions must be checked against the applicable statute before claiming. Let-out property loss set off against other heads: ₹2,00,000, balance carried forward up to 8 assessment years.
+- Home-loan interest on self-occupied property, s.24(b): aggregate deduction capped at ₹2,00,000 for qualifying acquisition or construction borrowing from 1 April 1999, completed within 5 years from the end of the borrowing financial year, with a lender's interest certificate. The ordinary aggregate cap is ₹30,000. [Section 24](https://wm.incometaxindia.gov.in/w/section-24-64). Let-out property loss set off against other heads: ₹2,00,000, balance carried forward up to 8 assessment years against house-property income.
 - HRA exemption under old 10(13A)is old-regime only: ITR 1 validation 165 requires new-regime allowance to be 0. [validation 165](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT_e-Filing_ITR%201_Validation%20Rules_AY%202026-27.pdf).
 - New regime keeps: 80CCD(2), 80CCH(2) government contribution only (not own 80CCH(1)); [ITR 2 validation rule 350](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf), and interest on a let-out property (but a house property loss cannot be set off or carried forward).
 
@@ -217,7 +217,7 @@ Old regime only ([Salaried Individuals page, deductions](https://www.incometax.g
 - Report the gross income and claim the TDS as a credit. The older portal says credit is restricted to 26AS, but this operational statement does not authorize charging the same tax again where it was actually deducted: current 401 protection and rule 203 evidence/assessability controls remain relevant. Refer missing credit with deduction proof; never invent a 26ASentry.
 - Download AIS and Form 26AS before filing and match every TDS, TCS and challan. If TDS is missing, the deductor must file a revised TDS return. If a challan is missing, check the challan number and PAN; after filing, use a revised return only if legally available within the applicable 139(5)/263(5)revision window, or the applicable rectification remedy after intimation; 143(1)status alone does not extend a revision deadline.
 - AIS shows more than TDS: SFT information, tax payments, demand and refund, and other information. Give feedback in AIS where a figure is wrong ([AIS FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/ais%20-%20annual%20information%20statement-faqs)). AIS may not hold everything; the client must still report all income.
-- **Tax Year 2026-27:** TDS on salary is under s.392 and other TDS under s.393 (TCS s.394). The earlier credit/payment event controls: March 2026 credit followed by Aprilpayment remains under the 1961Act; an earlier event on/after 1April 2026 uses current provisions. AIS continues to AY 2026-27 and is replaced by Form No. 168 from Tax Year 2026-27.
+- **Tax Year 2026-27:** TDS on salary is under s.392 at payment. For s.393 provisions triggered by the earlier of credit or payment, a March 2026 credit followed by April payment remains under the 1961 Act. If the trigger is on or after 1 April 2026, use the current provisions. TCS is under s.394. AIS continues to AY 2026-27 and is replaced by Form No. 168 from Tax Year 2026-27. [Income-tax Act 2025, s.392](https://egazette.gov.in/WriteReadData/2025/265620.pdf#page=396).
 - A nongovernment ordinary deductor generally deposits by 7 days after month-end, March by 30 April, but government/no-challan, special transaction forms and authorized quarterly payment exceptions require rule 218. Use in-tds-freelance rather than treating this as universal. [rule 218](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf). Interest: 1% per month or part for failure to deduct, 1.5% per month or part for failure to deposit (s.398(3)(a)). TDS rates and thresholds are in the s.393 tables; this skill does not restate them (check the table item before advising).
 
 ### Which ITR form (AY 2026-27) ([Salaried Individuals for AY 2026-27: returns and forms](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1))
@@ -237,11 +237,11 @@ Old regime only ([Salaried Individuals page, deductions](https://www.incometax.g
 
 | Boundary | Inside | Outside |
 | --- | --- | --- |
-| New-regime rebate | Total income does not exceed ₹12,00,000: full rebate up to ₹60,000 | Above: marginal relief; no rebate above ₹1,270,590 (same amount as the PDF's Indian grouping; total income excluding LTCG); https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT_e-Filing_ITR%201_Validation%20Rules_AY%202026-27.pdf |
+| New-regime rebate | Total income does not exceed ₹12,00,000: rebate up to ₹60,000, subject to the slab-tax cap | Above: apply the statutory marginal relief test using total income and the slab-tax cap; https://egazette.gov.in/WriteReadData/2025/262125.pdf#page=23 |
 | Old-regime rebate | Total income does not exceed ₹5,00,000 | Above: no rebate; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | 44AD limit | Turnover up to ₹3 crore if cash receipts are 5% or less of gross receipts | Otherwise ₹2 crores; above the limit, 44AD is not available; https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/itr%204-faqs |
 | 44ADA limit | Receipts up to ₹75 lakh if cash receipts are 5% or less of gross receipts | Otherwise ₹50 lakh; above, compute actual profit (ITR-3); https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/itr%204-faqs |
-| Advance tax | Tax of ₹10,000 or more for the year | Below: no advance tax; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Advance tax | Advance tax payable of ₹10,000 or more after statutory reductions, subject to the resident senior exemption | Below: no advance tax; https://egazette.gov.in/WriteReadData/2025/265620.pdf#page=432 |
 | ITR-1 / ITR-4 | Total income up to ₹50 lakh | Above: ITR-2 or ITR-3; https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/itr%204-faqs |
 | Residence, basic test | 182 days or more | 181 days or fewer (then the 60/365 limb); https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Visiting citizen or PIO | 182 days inclusive, or qualifying 120/365 limb | Below 182 doesnotsettle NRwithoutalternative/deemedtests; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
@@ -252,19 +252,19 @@ Old regime only ([Salaried Individuals page, deductions](https://www.incometax.g
 
 ### AY 2026-27 returns (FY 2025-26), filed in 2026 ([Income Tax Returns FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/%20income%20tax%20returns-faq))
 
-Dated 14 November 2026. These returns are governed entirely by the Income-tax Act, 1961, use the old ITR forms, and select AY 2026-27 on the portal. The slab, rebate, surcharge, deduction and presumptive figures above are the AY 2026-27 figures.
+As at 22 November 2026, these returns use the Income-tax Act, 1961 and the AY 2026-27 forms. Select AY 2026-27 on the portal and use the older-cycle rates above.
 
 | Return | Due date or time limit |
 | --- | --- |
 | Original return, non-audit | "31st July, 2026 or 31st August for non-audit cases, etc." ITR-4: 31August 2026 ([ITR-4 FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/itr%204-faqs)). Finance Act 2026 s.5 nowconfirms full categories: business/profession no required audit 31August; partner of non-audit firm and corresponding spouse where old 5 Aapportionment applies also 31August; other ordinary nonbusiness 31 July; earlier company/required-audit/partner/spouse/TP categories control; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| Tax audit report | 30 September 2026 where the ITR is due 31 October 2026; https://egazette.gov.in/WriteReadData/2026/271439.pdf; https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/%20income%20tax%20returns-faq |
-| Original return, audit case | 31 October 2026; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Tax audit report, serial 2 cases | 21 October 2026 under CBDT Circular 07/2026, extended from 30 September 2026; https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-09/Circular-7-2026.pdf |
+| Original return, serial 2 audit and related cases | 21 November 2026 under CBDT Circular 07/2026, extended from 31 October 2026. For the covered taxpayers, apply the extended date when assessing whether the original return is belated; https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-09/Circular-7-2026.pdf |
 | Transfer pricing case | 30 November 2026 (report by 31 October 2026); https://egazette.gov.in/WriteReadData/2026/271439.pdf; https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/%20income%20tax%20returns-faq |
 | Belated return, s.139(4) | By 31 December 2026, or before assessment is complete if earlier; fee under s.234F; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Revised return, s.139(5) | By the end of 31 March 2027, or before assessment is complete if earlier; old 234-I fee date held for the enacted/portal conflict below; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Updated return (ITR-U), s.139(8 A) | Within the s.139(8 A) time limits, even after 1April 2026; additional tax applies; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 
-- On 14 November 2026 the July/Augustdates have passed, assuming no applicable notified extension. For an ordinary case whose applicable original deadline has passed, belated filing is the ordinary remaining route, subject to special statutory remedies and actual extensions: nonbusinessnewregimeifnotimelyopted, 234Ffeeandpotential 234Ainterest; a continuingvalidbusinessoptionisnotdiscarded. Apply the specific ordinary business/capital-loss timely-return rule; unabsorbed depreciation and house-property exceptions separately.
+- On 22 November 2026, the general July and August deadlines and the extended serial 2 deadline have passed. For a taxpayer whose own deadline has passed, check belated filing, the section 234F fee and any section 234A interest. Check any continuing valid business regime option, the timely-return rules for business or capital losses, and the separate rules for house-property loss and unabsorbed depreciation.
 - Portal validation for AY 2026-27: if the original return was belated, a revised return cannot choose the old regime; and the regime cannot be changed in a revised return filed after the original due date ([ITR-1 validation rules](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT_e-Filing_ITR%201_Validation%20Rules_AY%202026-27.pdf); [ITR-3 validation rules](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/CBDT_e-filing_ITR-3_Validation%20Rules_V1.0_AY%2026-27.pdf)).
 - The ordinary belated/revised window for AY 2025-26 andearlier has expired. Updated-return eligibility/additional tax, notice responses and possible condonation require review; do not promise ITR-Uas the only universal remedy.
 - 234B/234C interest for FY 2025-26 advance tax stays under the 1961Act.
@@ -457,12 +457,12 @@ Sources: [Non Resident FAQs](https://www.incometax.gov.in/iec/foportal/help/all-
 
 ## Filing and payment
 
-- Pay by e-Pay Tax on the portal: net banking, debit card, payment gateway (including credit card and UPI), NEFT/RTGS mandate, or over the counter ([General Questions FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/General%20Questions-faqs)). A generated challan expires 15 days after the CRN is created.
+- Pay by e-Pay Tax on the portal: net banking, debit card, payment gateway (including credit card and UPI), NEFT/RTGS mandate, or over the counter where allowed ([General Questions FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/General%20Questions-faqs)). A generated challan generally expires 15 days after the CRN is created. For advance tax, observe the earlier of that date and the 31 March cut-off. Instalment due dates still apply. [Know your Payment Status FAQ, question 3](https://www.incometax.gov.in/iec/foportal/help/know-payment-status-faq).
 - Choose the Act and year on the challan: AY 2026-27 (1961Act) for FY 2025-26 self-assessment tax; Tax Year 2026-27 (2025 Act) for current advance tax. A wrong year means the credit lands in the wrong year.
 - Self-assessment tax for AY 2026-27 is under s.140 A of the 1961Act: pay it, enter the challan in the return, then file.
 - Older-cycle returns: file on the e-Filing portal; use the applicable permitted route such as Aadhaar OTP, EVC/net banking or digital signature, or send signed ITR-V by speed post to CPC Bengaluru within30days as ITR1FAQ Q7describes for the postal route. E-VerifyFAQ Q2lists the electronic modes; Q16limits DSCto immediate verification rather than Verify Later. [e-VerifyFAQ](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/e-verify). Confirm the applicable permitted mode and current official postal address before sending. Current-year verification is category-dependent under rule 164, not universally paper-permitted. No documents are attached; keep them for any enquiry.
 - Late fee: s.234F for AY 2026-27 (₹1,000 or ₹5,000); s.428 of the 2025 Act from Tax Year 2026-27, same amounts.
-- Keep FY 2025-26 and FY 2026-27 records, TDS and challans separate, and reconcile Form 26AS for each year separately.
+- Keep FY 2025-26 and FY 2026-27 records, TDS and challans separate. Reconcile AY 2026-27 with Form 26AS and use the applicable current statements, including Form 168, for Tax Year 2026-27.
 
 ## Completion checklist
 
@@ -509,12 +509,16 @@ Sources: [Non Resident FAQs](https://www.incometax.gov.in/iec/foportal/help/all-
 | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/e-verify | Read for Q1-16including electronic modes/prevalidated EVC/mobile prerequisites,30day verification/condonation and immediate-only DSC; actual older-Act portal guidance, not a blanket current164mode permission | 2026-11-15 |
 
 | Notified Rules 2026, targeted reread | Read for rule 164(1)-(12), including fifty-lakh wording, and rules 203, 215, 219 and 245 in full: identifiers are separate rule references, not an amount | 2026-11-16; https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
-| ITR 1 AY 2026-27 validation, targeted reread | Read for validation rules 189-192 and neighboring regime-selection controls; rule 191 prints the rebate ceiling with Indian grouping. The amount remains 1270590 rupees and the older filing-cycle scope is unchanged | 2026-11-16; https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT_e-Filing_ITR%201_Validation%20Rules_AY%202026-27.pdf |
+| ITR 1 AY 2026-27 validation, targeted reread | Read for rules 189-192 and adjacent regime-selection controls. Rule 191 contains a ₹12,70,590 portal validation figure. Apply section 87A for the statutory calculation | 2026-11-24; https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT_e-Filing_ITR%201_Validation%20Rules_AY%202026-27.pdf |
 
 | Income-tax Act 2025 Gazette, targeted reread | Read for section 6 in full and section 58 in full, especially the fifteen-lakh visitor limit and the two/three-crore and fifty/seventy-five-lakh presumptive limits printed in words; no exception or eligibility change | 2026-11-16; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+
+| https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-09/Circular-7-2026.pdf | AY 2026-27 extension for section 139(1) Explanation 2, serial 2 returns and associated audit reports | 2026-11-24 |
+| https://wm.incometaxindia.gov.in/w/section-24-64 | Section 24(b), old-cycle home-loan interest caps, qualifying loan and completion dates and lender certificate | 2026-11-24 |
+| https://www.incometax.gov.in/iec/foportal/help/know-payment-status-faq | Question 3, challan validity and advance-tax year-end cut-off | 2026-11-24 |
 
 **Not yet confirmed:** old 234-I assessment-year/portal date conflict and any authoritative correction; current rule 164(6)(l)defective cross-reference, ITR 1(2)(d)/(3)(n)and ITR 4(5)/(6)(o)gain interactions; final TY 2026-27 ITR utility fields and verification screens; actual extensions applicable to a filing; ordinary current 425(2)/(3)construction held in in-advance-tax; case-specific older 24 certificate/other eligibility and Schedule XV investment conditions; exact notified professions beyond 62(4), special-rate tax, audit/lockout/loss exceptions and prior option validity, missing-credit procedure and inoperative PAN consequences. Keep these out of final filing instructions until resolved or professionally reviewed. Older forms/validation and all 6 old cases explicitly remain the 2025-2026 filing cycle. No current rate is inferred solely from an older portal table.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `india-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/india-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `india-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/india-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

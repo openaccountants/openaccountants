@@ -5,15 +5,15 @@ description: >
 jurisdiction: PG
 category: payroll
 tax_year: 2026
-last_updated: 2026-11-16
-version: 1.0
+last_updated: 2026-11-22
+version: 1.1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 type: computation
 ---
 
-# Papua New Guinea payroll and superannuation v1.0
+# Papua New Guinea payroll and superannuation v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -31,14 +31,15 @@ Prepare 2026 PNG salary and wages tax (SWT), employer remittance records and the
 | SWT return and remittance | By 7th of the following month | [s. 158(1)(a)](https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf) |
 | Annual withholding statement | Within 3 months after fiscal-year end | [s. 159](https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf) |
 | Mandatory employer size | At least 15 employees under the current regulator notice; smaller employers may elect to participate | [BPNG employer and employee contribution notice](https://www.bankpng.gov.pg/publications/public-notices/employer-and-employee-superannuation-contributions) |
-| Covered employment duration | Continuous employment for 3 months or more, not an assumed citizenship-only or permanent-staff rule | [BPNG contribution notice](https://www.bankpng.gov.pg/publications/public-notices/employer-and-employee-superannuation-contributions) |
+| Covered employment duration | Continuous employment for 3 months or more, subject to the statutory coverage rules | [BPNG contribution notice](https://www.bankpng.gov.pg/publications/public-notices/employer-and-employee-superannuation-contributions) |
+| Non-citizens | The statutory mandatory employer and employee contributions do not apply. Check any voluntary fund arrangement separately. | [2013 amendment, ss. 2, 6 and 7](https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannuation-General-Provisions-Amendment-Act-2013.pdf#page=3) |
 | Employee contribution | 6% of base salary | [BPNG contribution notice](https://www.bankpng.gov.pg/publications/public-notices/employer-and-employee-superannuation-contributions) |
 | Employer contribution | 8.4% of base salary | [BPNG contribution notice](https://www.bankpng.gov.pg/publications/public-notices/employer-and-employee-superannuation-contributions) |
 | Standard contributions combined | Derived: 14.4% of the same verified base | [BPNG contribution notice](https://www.bankpng.gov.pg/publications/public-notices/employer-and-employee-superannuation-contributions) |
 
 ## Ask the client first
 
-Obtain the employer identity and TIN, payroll periods, gross pay components, cash and non-cash benefits, residence and employment declarations, dependants and supporting income facts, secondary employment, leave, redundancy and superannuation payouts, actual withholding, IRC remittances and account balance. For superannuation obtain headcount across branches, continuous employment, fund approval/membership, base-pay components, any exemption, deduction dates and remittance records. Obtain the employment contract and current wage determination for a minimum-pay check.
+Obtain the employer identity and TIN, payroll periods, gross pay components, cash and non-cash benefits, residence and employment declarations, dependants and supporting income facts, secondary employment, leave, redundancy and superannuation payouts, actual withholding, IRC remittances and account balance. For superannuation obtain headcount across branches, continuous employment, citizenship, fund approval/membership, voluntary participation, base-pay components, deduction dates and remittance records. Obtain the employment contract and current wage determination for a minimum-pay check.
 
 ## The method, step by step
 
@@ -69,15 +70,15 @@ Prepare the prescribed employer withholding return and pay by the statutory date
 
 ### Determine superannuation coverage
 
-The current BPNG notice covers employers meeting its headcount and employees meeting continuous-employment conditions. Do not narrow it to permanent employees, count each branch as a separate employer, or treat every non-citizen as exempt. The older Act permits a Central Bank exemption in specified overseas-fund circumstances; obtain the actual current exemption and membership facts before applying it. [BPNG notice](https://www.bankpng.gov.pg/publications/public-notices/employer-and-employee-superannuation-contributions); [Superannuation Act ss. 10, 76-83](https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannution-General-Provision-Act-2000.pdf).
+Check headcount across the employer's branches and departments and the employee's continuous service. The standard rates apply to covered employment, including covered employment outside permanent roles. Sections 6 and 7 of the 2013 amendment exclude non-citizens from mandatory employer and employee contributions. Section 2 provides for voluntary participation by people outside the mandatory coverage provision. Check the fund and payroll records for any actual voluntary contributions. [BPNG notice](https://www.bankpng.gov.pg/publications/public-notices/employer-and-employee-superannuation-contributions) · [Superannuation Act s. 83](https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannution-General-Provision-Act-2000.pdf) · [2013 amendment, ss. 2, 6 and 7](https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannuation-General-Provisions-Amendment-Act-2013.pdf#page=3)
 
 Use the same verified base salary for the ordinary employee and employer percentages. Employee deductions are not an extra employer contribution. Employer contributions are additional employer cost and not a deduction from the employee's gross taxable pay. For the employer's income-tax deduction, approved-fund contributions actually borne by the employer are subject to the statutory limit; do not deduct contributions to a non-approved fund. [Income Tax Act s. 117](https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf).
 
-The pre-amendment Superannuation Act's definition of pay includes salary, wages and commissions and excludes specified overtime, allowances and bonuses. That conflicts with the old skill's blanket commission exclusion. Later amending texts on the regulator's site could not be read through the access challenge. Therefore do not assume a general commission exclusion, a ceiling, or a universal no-ceiling rule. Use uncontested base salary for an illustrative calculation and hold disputed components pending the actual current law and fund record. [Superannuation Act s. 3, older text](https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannution-General-Provision-Act-2000.pdf).
+Section 3 of the Superannuation Act includes gross salary, wages and commission in pay and excludes specified overtime payments, allowances and bonuses. The 2004 amendment links minimum contributions to pay under sections 76 and 77. Check the character of any disputed pay component against section 3 and the employment and fund records. Confirm any claimed ceiling under the instrument governing the contribution. [Superannuation Act s. 3](https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannution-General-Provision-Act-2000.pdf) · [2004 amendment ss. 2, 8 and 9](https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannuation-General-ProvisionsAmendment-2004.pdf) · [2007 amendment ss. 2, 12 and 13](https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannuation-General-ProvisionsAmendment-2007.pdf).
 
-### Remittance-clock conflict
+### Remit superannuation contributions
 
-BPNG's current notice directs payment within 14 days of month-end. The older available Act distinguishes employer payment after month-end from employee deductions due within 14 days of deduction. The later amending scans could not be opened sufficiently to resolve that clock. Record both deduction and month-end dates, flag the conflict and obtain the applicable current statutory text before declaring any disputed remittance timely. Do not use the notice to extend an earlier statutory employee-deduction date. [BPNG notice](https://www.bankpng.gov.pg/publications/public-notices/employer-and-employee-superannuation-contributions); [older Act s. 78](https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannution-General-Provision-Act-2000.pdf).
+Section 78 gives the employer 14 days after the end of each calendar month to remit its own contribution to the authorised superannuation fund. Remit employee contributions within 14 days of each deduction. Check section 78(3) where the State is the employer and the designated fund is involved. The BPNG notice describes a month-end timetable. Use the statutory deduction date to assess whether the employee remittance is timely. [Superannuation Act s. 78](https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannution-General-Provision-Act-2000.pdf#page=46) · [BPNG notice](https://www.bankpng.gov.pg/publications/public-notices/employer-and-employee-superannuation-contributions).
 
 ### Payouts, levy and minimum wage
 
@@ -148,19 +149,23 @@ expected:
 
 ## When to refuse or refer
 
-Do not finalise payroll with unknown residency, a missing declaration treated as present, unsupported benefit values, unknown gross pay or disputed fund coverage. Refer salary packaging, non-fortnight conversions not documented by IRC, expatriate exemptions, termination payouts, contribution-base disputes and overdue remittances. Hold training-levy and wage-compliance conclusions until the applicable official rule is read.
+Do not finalise payroll with unknown residency, a missing declaration treated as present, unsupported benefit values, unknown gross pay or disputed fund coverage. Refer salary packaging, non-fortnight conversions not documented by IRC, unresolved citizenship or voluntary fund coverage, termination payouts, contribution-base disputes and overdue remittances. Hold training-levy and wage-compliance conclusions until the applicable official rule is read.
 
 ## Sources
 
-Read on 16 November 2026. A scoped read does not certify every provision in a long Act.
+Read dates and scope are listed below.
 
 | Official source and scope read | URL | Read on |
 |---|---|---|
 | Read for Income Tax Act 2025: ss. 13, 19-21, 56, 117-119, 132, 149, 156-160, Sch. 1 and Sch. 6; benefit scope, not every valuation certified | https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf | 2026-11-16 |
 | Read for Certified Income Tax 2026 Budget amendment, s. 4 payout-rate change and s. 3 administration | https://pdis.parliament.gov.pg/uploads/e755f62f-9e85-40b1-bb96-d8a162d32050 | 2026-11-16 |
 | Read for BPNG current employer and employee contribution notice: coverage, standard rates and stated remittance timing, read through official web text | https://www.bankpng.gov.pg/publications/public-notices/employer-and-employee-superannuation-contributions | 2026-11-16 |
-| Read for Superannuation General Provisions Act 2000, older official text: ss. 3, 10, 76-83; later amendments not read | https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannution-General-Provision-Act-2000.pdf | 2026-11-16 |
+| Superannuation General Provisions Act 2000, older official text: ss. 3, 10 and 76-83 | https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannution-General-Provision-Act-2000.pdf | 2026-11-16 |
+| Superannuation (General Provisions) (Amendment) Act 2004, ss. 2, 8 and 9 | https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannuation-General-ProvisionsAmendment-2004.pdf | 2026-11-24 |
+| Superannuation (General Provisions) (Amendment) Act 2007, ss. 2, 12 and 13 | https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannuation-General-ProvisionsAmendment-2007.pdf | 2026-11-24 |
+| Superannuation (General Provisions) (Amendment) Act 2013, ss. 2, 3, 6 and 7 | https://www.bankpng.gov.pg/sites/default/files/2024-09/Superannuation-General-Provisions-Amendment-Act-2013.pdf | 2026-11-23 |
+| Treasury 2019 National Budget, section 9.2.7, records Gazette publication on 24 August 2018 and confirms voluntary non-citizen coverage | https://www.treasury.gov.pg/wp-content/uploads/2023/05/2019-Volume-1.pdf | 2026-11-23 |
 | Read for Superannuation Regulation 2002: contribution-rate provisions, older official text | https://www.bankpng.gov.pg/sites/default/files/2024-09/SuperannuationRegulation2002.pdf | 2026-11-16 |
 | Read for Tax Administration Act 2017: income-tax record, penalty, interest and dispute provisions | https://pdis.parliament.gov.pg/uploads/4b825861-6fb1-41a1-b3a6-01ce3dd7fb5d | 2026-11-16 |
 
-Not yet confirmed: Current amended superannuation pay-component definition and contribution ceiling, resolution of employee-deduction remittance timing, later superannuation amendments blocked by the regulator access challenge, current wage determination, training-levy status, non-fortnight conversion instructions, live return fields, special benefit valuations and current interest input. These are held, not assumed absent.
+Not yet confirmed: Classification of disputed pay components, contribution ceiling, current wage determination, training-levy status, non-fortnight conversion instructions, live return fields, special benefit valuations and current interest input. These are held, not assumed absent.

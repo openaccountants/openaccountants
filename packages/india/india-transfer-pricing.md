@@ -12,11 +12,11 @@ description: >
   tests, methods and the 35th to 65th percentile range, documentation, Form No. 48,
   master file and country-by-country thresholds, the 2026-27 safe harbour table, APAs,
   penalties and fees. Tier 2, not reviewed by an accountant.
-version: "2.0"
+version: "2.1"
 jurisdiction: IN
 tax_year: 2026
 tax_year_notes: "FY 2026-27 (tax year 2026-27 under the Income-tax Act 2025, 1 April 2026 to 31 March 2027)"
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
@@ -50,7 +50,7 @@ This skill covers Indian transfer pricing: which transactions are caught, how th
 
 ### International transactions and specified domestic transactions
 
-Section 161(1) of the 2025 Act says income from an international transaction or a specified domestic transaction is determined "having regard to the arm's length price". Section 161(2) applies the same rule to any allowance for an expense or interest. Section 161(4) switches the section off where the result would reduce the income chargeable or increase the loss computed from the books. So a transfer pricing adjustment can only increase income.
+Section 161(1) of the 2025 Act says income from an international transaction or a specified domestic transaction is determined "having regard to the arm's length price". Section 161(2) applies the same rule to any allowance for an expense or interest. Section 161(4) switches the section off where the result would reduce the income chargeable or increase the loss computed from the books. A primary adjustment can increase total income or reduce a loss (section 170(9)(c)).
 
 An international transaction (section 163(1)) is a transaction between two or more associated enterprises, "one of which is necessarily a non-resident". It includes the purchase, sale, transfer, lease or use of tangible or intangible property and the other items listed in section 163. Section 163(2) also treats a transaction with a person who is not an associated enterprise as an international transaction between associated enterprises if there is a prior agreement about it between that person and the associated enterprise, or its terms are in substance decided between them, and the enterprise or the associated enterprise or both are non-residents, whether or not the other person is a non-resident. A specified domestic transaction (section 164) covers the domestic related-party transactions listed in that section (for example transactions referred to in section 122 and transfers of goods or services referred to in section 140(9)). It applies only where their aggregate in the tax year is more than the amount in the rates table. At or below that amount, the transactions are not specified domestic transactions at all.
 
@@ -66,7 +66,7 @@ An enterprise is an associated enterprise of another if any one of the tests in 
 | `india-gst` | Related-party supplies also raise GST valuation questions; GST is not covered here |
 | `india-income-tax` | Return due dates and fees for individuals; this skill covers the transfer pricing layer only |
 
-No live skill in this library covers Indian corporate income tax. For company rates and the return itself, refer to a professional.
+Use `india-corporate-income-tax` for the company rate and return rules.
 
 ## Rates, bands and thresholds
 
@@ -132,7 +132,7 @@ Every figure for tax year 2026-27, with the official text on the row. Quotes com
 
 | Item | Value | Note | Source |
 | --- | --- | --- | --- |
-| Finance Act 2026, section 3(6): surcharge on tax under section 170(5), for the tax year from 1 April 2026 | 12% | "calculated at the rate of 12% of such tax" | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Finance Act 2026, sections 3(6) and 3(16): surcharge and Health and Education Cess on tax under section 170(5) | 12% surcharge and 4% cess on tax plus surcharge | Combined 20.9664% of the excess money | https://egazette.gov.in/WriteReadData/2026/271439.pdf#page=29 |
 
 ### Return due dates (section 263(1)(c) as substituted)
 
@@ -146,7 +146,7 @@ Every figure for tax year 2026-27, with the official text on the row. Quotes com
 | Item | Value | Note | Source |
 | --- | --- | --- | --- |
 | Section 428(d): fee for failing to furnish the section 172 report (Form No. 48), delay up to one month | INR 50,000 | "₹ 50000 for a delay up to one month for which such failure continues" | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| Section 428(d): fee after the first month | INR 100,000 | "₹ 100000 thereafter" | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Section 428(d): fee for a delay longer than one month | INR 100,000 | "₹ 100000 thereafter" | https://egazette.gov.in/WriteReadData/2026/271439.pdf#page=59 |
 
 | Item | Value | Note | Source |
 | --- | --- | --- | --- |
@@ -199,7 +199,7 @@ Every figure for tax year 2026-27, with the official text on the row. Quotes com
 | Item | Rate | Condition | Source |
 | --- | --- | --- | --- |
 | Domestic company opting for section 200 | 22% | Income-tax Act 2025 s 200(1) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Surcharge, domestic company under section 200 or 201 | 10% | Finance Act 2026 s 3(4)(b) Table Sl. No. 9 | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Surcharge, domestic company under section 200 or 201 | 10% ordinarily, 25% for a Schedule V special purpose vehicle | Finance Act 2026 s 3(4)(b) Table Sl. No. 9, as amended by Act 21 of 2026 s 6 | https://egazette.gov.in/WriteReadData/2026/275521.pdf#page=6 |
 | Health and Education Cess | 4% of tax plus surcharge | Finance Act 2026 | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 
 ## The base
@@ -236,7 +236,7 @@ Section 170(1) requires a secondary adjustment where a primary adjustment to the
 
 - Rule 83(1): repatriate within ninety days from the date in its Table (for example the return due date for a self-made adjustment, or the date of the order where an Assessing Officer's adjustment is accepted).
 - Rule 83(2): imputed interest on money not repatriated is the State Bank of India one-year marginal cost of funds lending rate on 1 April of the tax year plus 325 basis points for a rupee transaction, or the rule 89(3) reference rate on 30 September plus 300 basis points for a foreign currency transaction.
-- Section 170(5): instead, the assessee may pay additional income-tax at the rate in the rates table on the excess money. Section 3(6) of the Finance Act 2026 increases that tax by a surcharge at the rate in the rates table. Once paid, no secondary adjustment or further interest is needed from the date of payment (section 170(8)), and no credit or deduction is allowed for it (section 170(6) and (7)).
+- Section 170(5): instead, the assessee may pay additional income-tax at the rate in the rates table on the excess money. Finance Act 2026 sections 3(6) and 3(16) add the surcharge and cess in the rates table. Once paid, no secondary adjustment or further interest is needed from the date of payment (section 170(8)), and no credit or deduction is allowed for it (section 170(6) and (7)).
 
 ### Transaction documentation under rule 84 (the "local file")
 
@@ -328,7 +328,7 @@ Section 263(1)(c), as substituted by section 66 of the Finance Act 2026, gives d
 | Form No. 59 | Twelve months after the end of the reporting accounting year (section 511(2); rule 124(4) for constituent entities) |
 | Form No. 49 (safe harbour) | On or before the return due date (rules 90(1) and 91(3)) |
 | Form No. 52 (APA annual compliance report) | Within thirty days of the return due date or within ninety days of entering into the agreement, whichever is later (rule 113(3)) |
-| Modified return after an APA | Three months from the end of the month in which the agreement was entered into (section 169(1) as substituted by the Finance Act 2026) |
+| Return or modified return after an APA | Three months from the end of the month in which the agreement was entered into. Applies to the years covered and the income modified under the agreement. The party files and an associated enterprise may file where the provision applies (section 169(1), as substituted). |
 
 ### Advance pricing agreements (APA)
 
@@ -357,7 +357,7 @@ The 2025 Act as enacted had a flat penalty in section 447 for not furnishing the
 - Section 459(4) applies where the entity knew of the inaccuracy when it filed and did not inform the authority, or discovered it later and did not inform the authority and file a correct report within fifteen days, or gave inaccurate information in reply to a section 511(7) notice.
 - Section 439(11)(f) makes "failure to report any international transaction or any transaction deemed to be an international transaction or any specified domestic transaction" a case of misreporting (the higher rate).
 - Section 439(8)(d) excludes from under-reported income an addition made in conformity with the arm's length price set by the Transfer Pricing Officer, where the assessee kept the prescribed documents, declared the international transaction under Chapter X, and disclosed all the material facts. All three conditions must hold.
-- Section 440, as substituted by section 99 of the Finance Act 2026: the assessee may apply to the Assessing Officer, within one month from the end of the month in which the order is received, for waiver of the section 439 penalty and immunity from prosecution under section 478 or 479. ALL of these must hold: the tax and interest demanded are paid within the period in the notice of demand; for misreporting under section 439(11)(a) to (f), additional income-tax at the rate in the rates table is paid in place of the penalty; and no appeal is filed. No waiver is granted if any proceeding has been initiated under Chapter XXII.
+- Section 440, as amended by section 99 of the Finance Act 2026: the assessee may apply to the Assessing Officer in Form No. 161 under rule 231, within one month from the end of the month in which the order is received, for waiver of the section 439 penalty and immunity from prosecution under section 478 or 479. ALL of these must hold: the tax and interest demanded are paid within the period in the notice of demand; for misreporting under section 439(11)(a) to (f), additional income-tax at the rate in the rates table is paid in place of the penalty; and no appeal is filed. The separate 120% rule applies to cases under section 439(11)(g). No waiver is granted if any proceeding has been initiated under Chapter XXII.
 
 ## Cross-border points
 
@@ -380,7 +380,7 @@ The 2025 Act as enacted had a flat penalty in section 447 for not furnishing the
 
 ### Example 1: IT services subsidiary, safe harbour or benchmark
 
-An Indian captive provides software development to its US parent with insignificant risk. Operating expense for tax year 2026-27 is 50 crore rupees (5,00,00,000) and its actual operating margin is 13% (6,50,00,000 of profit, a price of 56,50,00,000). Revenue is well under the two thousand crore rupee ceiling, so serial 1 of the rule 89 table is open. To be inside the safe harbour the margin must be at least 15.5%, so the declared price must rise to give 7,75,00,000 of margin: a primary adjustment of 1,25,00,000 rupees. At the section 200 company rate (22%, 10% surcharge, 4% cess: 25.168%) that costs 31,46,000 rupees of tax. The adjustment is one crore rupees or more, so section 170 also bites: repatriate the 1,25,00,000 within ninety days or pay the section 170(5) additional tax of 18% plus the 12% surcharge, 25,20,000 rupees (whether cess applies to it was not tested). The decision: opting in buys certainty for five years (rule 91) at about 31,46,000 of tax a year at this margin, against a benchmark under rule 81 that might support 13% but brings documentation, a possible Transfer Pricing Officer reference and penalty risk.
+An Indian captive provides software development to its US parent with insignificant risk. Operating expense for tax year 2026-27 is 50 crore rupees (50,00,00,000) and its actual operating margin is 13% (6,50,00,000 of profit, a price of 56,50,00,000). Revenue is well under the two thousand crore rupee ceiling, so serial 1 of the rule 89 table is open. To be inside the safe harbour the margin must be at least 15.5%, so the declared price must rise to give 7,75,00,000 of margin: a primary adjustment of 1,25,00,000 rupees. Assume the company has a valid section 200 election and the ordinary 10% surcharge. The combined 25.168% rate gives 31,46,000 rupees of tax on the adjustment. The adjustment is one crore rupees or more, so section 170 also bites: repatriate the 1,25,00,000 within ninety days of the return due date or pay 26,20,800 rupees under section 170(5), including 18% additional tax, 12% surcharge and 4% cess. The valid IT option lasts five years under rule 91, subject to continued compliance. Recompute any later-year tax using that year’s margin and law. If the company instead benchmarks under rule 81, the dataset must support its 13% margin.
 
 ```oa-check
 name: IT services safe harbour, opex 50 crore, actual margin 13% against 15.5%
@@ -395,17 +395,17 @@ steps:
   - primary_adjustment: required_profit - actual_profit
   - tax_on_adjustment: primary_adjustment * company_rate
   - secondary_trigger: primary_adjustment - 10000000
-  - s170_5_tax: primary_adjustment * 0.18 * 1.12
+  - s170_5_tax: primary_adjustment * 0.18 * 1.12 * 1.04
 expected:
   primary_adjustment: 12500000
   tax_on_adjustment: 3146000
   secondary_trigger: 2500000
-  s170_5_tax: 2520000
+  s170_5_tax: 2620800
 ```
 
 ### Example 2: Unreported loan to a foreign subsidiary, penalty or the section 440 route
 
-A company failed to report an 8 crore rupee loan to its foreign subsidiary in Form No. 48. The Transfer Pricing Officer adds 2 crore rupees of interest income. Tax on that under-reported income at 25.168% is 50,33,600 rupees. Failure to report an international transaction is misreporting (section 439(11)(f)), so the penalty is 200% of that tax: 1,00,67,200 rupees. Separately, section 442(1) can charge 2% of the transaction value for failing to report it: 16,00,000 rupees. Under section 440 as substituted, the company can instead pay the tax and interest demanded and additional income-tax of 100% of the tax on under-reported income (50,33,600 rupees), not appeal, and apply within one month from the end of the month the order is received for waiver of the section 439 penalty and immunity from prosecution. Taking the section 440 route saves 50,33,600 rupees against the full misreporting penalty, at the price of giving up the appeal.
+A company failed to report an 8 crore rupee loan to its foreign subsidiary in Form No. 48. The assessment increases interest income by 2 crore rupees using the Transfer Pricing Officer’s determination. Assume the valid section 200 option, ordinary surcharge and full increase subject to tax under section 439(12). Tax on that under-reported income at 25.168% is 50,33,600 rupees. Failure to report an international transaction is misreporting (section 439(11)(f)), so the penalty is 200% of that tax: 1,00,67,200 rupees. Separately, section 442(1) can charge 2% of the transaction value for failing to report it: 16,00,000 rupees. Under amended section 440, the company can instead pay the tax and interest demanded and additional income-tax of 100% of the tax on under-reported income (50,33,600 rupees), on time, forgo the appeal and apply in Form No. 161 within one month from the end of the month the order is received for waiver of the section 439 penalty and immunity from prosecution. Taking the section 440 route saves 50,33,600 rupees against the full misreporting penalty, at the price of giving up the appeal.
 
 ```oa-check
 name: Misreporting penalty against section 440 additional tax, 2 crore addition
@@ -445,7 +445,7 @@ expected:
 6. Obtain the accountant's report in Form No. 48 and furnish it at least one month before the return due date (section 172, rule 85): https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf
 7. File the return by the section 263(1)(c) date (30 November of the next financial year where section 172 applies): https://egazette.gov.in/WriteReadData/2026/271439.pdf
 8. For a group: file Part A of Form No. 56 in every case, and the full master file if both rule 123(1) tests are met; check the section 511 country-by-country report against the preceding year's consolidated revenue, and file Form No. 58 and, where due, Form No. 59 (rules 123 and 124): https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf
-9. If a primary adjustment of one crore rupees or more arises, repatriate the excess money within ninety days or pay the section 170(5) additional tax (section 170, rule 83): https://egazette.gov.in/WriteReadData/2025/265620.pdf
+9. If section 170 applies to a primary adjustment of one crore rupees or more, repatriate the excess money within ninety days of the date in rule 83 or pay the section 170(5) additional tax (section 170, rule 83): https://egazette.gov.in/WriteReadData/2025/265620.pdf
 10. Keep everything for nine years from the end of the tax year (rules 84(8) and 123(5)) and diary the section 171(2) ten-day response period for any notice: https://egazette.gov.in/WriteReadData/2025/265620.pdf
 
 ### When to refuse or refer
@@ -466,5 +466,8 @@ expected:
 | Read for Finance Act 2026 sections 3(4), 3(6), 66 (section 263 substituted), 96 (section 428), 99 (section 440), 102 (section 447 omitted) and the section 166(7) and 169(1) substitutions | https://egazette.gov.in/WriteReadData/2026/271439.pdf | 2026-11-14 |
 | Read for Income-tax Rules 2026 rules 77 to 124 (methods, range, documentation, Form No. 48, safe harbour, APA, master file, country-by-country report) | https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf | 2026-11-14 |
 | Read for the e-filing portal company page describing the 1961 Act Form 3CEB under section 92E (assessment year 2026-27 and earlier) | https://www.incometax.gov.in/iec/foportal/help/company/return-applicable | 2026-11-14 |
+| Read for Finance Act 2026 s 3(6), (16) and s 96 on secondary-adjustment tax, cess and graded Form 48 fees | https://egazette.gov.in/WriteReadData/2026/271439.pdf#page=29 | 2026-11-24 |
+| Read for Act 21 of 2026 s 6 on the Schedule V special purpose vehicle surcharge | https://egazette.gov.in/WriteReadData/2026/275521.pdf#page=6 | 2026-11-24 |
+| Read for G.S.R. 871(E), amended rule 231 and Form No. 161 | https://egazette.gov.in/WriteReadData/2026/276956.pdf#page=4 | 2026-11-24 |
 
-Not yet confirmed: the tolerance percentage notified under section 165(3) for tax year 2026-27 (the rule only caps it at 3%); whether the 4% Health and Education Cess applies to the section 170(5) additional income-tax; how the section 428(d) fee counts a delay of more than one month (whether 1,00,000 replaces or adds to 50,000); the specified domestic transaction and income attribution safe harbours (rules 94 to 102), not read for this skill.
+Not yet confirmed: the tolerance percentage notified under section 165(3) for tax year 2026-27 (the rule only caps it at 3%); the specified domestic transaction and income attribution safe harbours (rules 94 to 102), not read for this skill.

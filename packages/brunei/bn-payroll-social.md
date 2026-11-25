@@ -1,18 +1,18 @@
 ---
 name: bn-payroll-social
 description: "Brunei payroll and retirement contributions for 2026 under the National Retirement Scheme (Skim Persaraan Kebangsaan, SPK), which replaced the TAP and SCP contribution rates from the July 2023 contribution. Covers who must be registered, the 8.5% employee rate, the employer rate by salary group (BND 57.50 floor, 10.5%, 9.5%, 8.5%), what counts as wages, the 15th-of-next-month payment through e-Amanah, members who deferred joining SPK, and the absence of income tax withholding. Use for questions about Brunei payroll, TAP, SCP, SPK contributions, e-Amanah or employer obligations in Brunei Darussalam."
-version: 1.0
+version: 1.1
 jurisdiction: BN
 category: payroll
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 type: computation
 ---
 
-# Brunei Payroll and SPK Contributions v1.0
+# Brunei Payroll and SPK Contributions v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -21,9 +21,9 @@ type: computation
 Employers in Brunei Darussalam running payroll in calendar year 2026, and their employees.
 
 - **No income tax withholding.** Brunei levies no tax on an individual's employment income, so there is no PAYE (see [bn-income-tax](bn-income-tax.md)).
-- **SPK.** Employees who are citizens or permanent residents of Brunei Darussalam and below age 60 must be registered to Skim Persaraan Kebangsaan (SPK), the National Retirement Scheme run by Tabung Amanah Pekerja (TAP). Registration is mandatory whatever the type of employment: ministers and deputy ministers, ambassadors, high commissioners, consuls, former Government Pension Scheme members, directors, permanent, temporary, part-time and contract employees, employees on probation, apprentices and paid interns.
+- **SPK.** Brunei citizens and permanent residents below age 60 in covered employment must register. This includes eligible directors, permanent, temporary, part-time and contract employees, probationers, apprentices and paid interns. Check the statutory exclusions, including pensionable armed forces, police and prison service members and qualifying locally hired citizens at Brunei missions overseas.
 - **Foreign employees** (not citizens or permanent residents) are outside SPK registration as described by TAP.
-- **Self-employed** citizens and permanent residents below 60 can join SPK as self-employed members (not computed here).
+- **Self-employed** citizens and permanent residents below 60 can register subject to the scheme's employment and registration conditions.
 
 SPK was launched on 15 July 2023 and applies from the July 2023 contribution. The older figures (TAP 5% each side, SCP 3.5% each side with a BND 2,800 wage ceiling, BND 17.50 minimum and BND 98 maximum) no longer apply to SPK members.
 
@@ -38,8 +38,8 @@ SPK was launched on 15 July 2023 and applies from the July 2023 contribution. Th
 | Employer, salary BND 2,800.01 and above | 8.5% | 2026 | same |
 | Contribution cap | None: the former BND 98.00 cap for salaries over BND 2,800 no longer applies | 2026 | https://www.tap.com.bn/faq-employers-contribution |
 | Rounding | Contributions rounded to two decimal places | 2026 | same |
-| Employees aged 50 to 59 who did not join SPK | Stay in TAP at 5% employee and 5% employer until converted to SPK after their age-55 TAP withdrawal | 2026 | same |
-| Employees deferring SPK (mandatory rate) | 8.5% of salary, no minimum or maximum; employer pays the SPK table rate, 5% credited to the TAP account and the rest to the SCP account | 2026 | https://www.tap.com.bn/employers-responsibilities-contribution |
+| Transitional TAP/SCP member | Check the member's 15 July 2023 cohort, election and e-Amanah status. The Silver Generation TAP55 route applied to eligible members already aged 50 to 59 before the launch. Submit a TAP55 withdrawal application before age 56. Conversion occurs after TAP55 withdrawal or automatically at 56 if no application was submitted. | Transition | https://www.tap.com.bn/spk-silver-generation-age-50-59 |
+| Deferred contributions | The TAP schedule shows 5% per side where TAP applies. The SCP Schedule prescribes a 3.5% member share for covered employees aged 50–54 and 8.5% for those aged 55–59, with separate employer bands. Verify the member's scheme classification and contribution allocations in e-Amanah before calculating payroll. Use ordinary SPK amounts after conversion. | Transition | https://www.agc.gov.bn/wp-content/uploads/2026/07/S-14-2024-SUPPLEMENTAL-CONTRIBUTORY-PENSIONS-TRUST-AMENDMENT-NO.-4-ORDER-2024.pdf#page=9 |
 | Payment due date | Complete contribution payment (payment plus contribution payment listing in e-Amanah) by the 15th of the following month | 2026 | https://www.tap.com.bn/employers-responsibilities-complete-contribution-payment |
 | Age limit for registration | Below 60 years old | 2026 | https://www.tap.com.bn/skim-persaraan-kebangsaan |
 
@@ -49,15 +49,15 @@ SPK was launched on 15 July 2023 and applies from the July 2023 contribution. Th
 
 **Not wages for SPK** (TAP list): backdated increment; acting, special, living, overtime, housing, medical, amenities and travelling allowances; payment for supply of food, fuel, light and water; gratuity (baksis); service charge; retrenchment, lay-off or termination benefits; unexpected expenses of the employment; contributions to a pension or provident fund. For anything not listed, TAP asks employers to email enforcement@tap.com.bn.
 
-**Where the money goes.** The employee's 8.5% goes to the SPK Member Account (withdrawable in part before retirement, finally at 60). The employer's contribution goes to the pooled SPK Retirement Account, paid as a lifetime annuity from 60.
+**Where the money goes.** The employee's 8.5% goes to the SPK Member Account (withdrawable in part before retirement, finally at 60). The employer's statutory contribution goes to the SPK Retirement Account. Eligible members can receive a lifetime annuity from age 60 under section 22. Permanent residents who hold foreign citizenship receive SPK Basic under sections 23 and 26, with payments for up to 20 years or until the account is exhausted.
 
 **Voluntary contributions.** Employer and employee may contribute more. Employer voluntary contributions go to the SPK Member Account (to the SCP account for members who deferred SPK).
 
-**Corporate tax.** Employer contributions to approved funds (TAP, SCP, now SPK) are deductible for corporate income tax; see [bn-corporate-income-tax](bn-corporate-income-tax.md).
+**Corporate tax.** Employer contributions to approved funds may be deductible subject to the Collector's conditions in section 11(1)(f) of the Income Tax Act. See [bn-corporate-income-tax](bn-corporate-income-tax.md) for the separate Employee Trust credit rules.
 
 ### Method, each month
 
-1. List each employee; confirm citizenship or permanent residence and age (below 60).
+1. Check each employee's citizenship or permanent residence, age below 60, statutory exclusions and any recorded transitional election.
 2. Take wages as defined above (exclude the listed allowances).
 3. Employee contribution = wages x 8.5%, rounded to 2 decimals; deduct from pay.
 4. Employer contribution from the salary-group table; for wages up to BND 500 it is BND 57.50; for BND 500.01 to 1,500 it is the higher of 10.5% and BND 57.50.
@@ -71,17 +71,17 @@ SPK was launched on 15 July 2023 and applies from the July 2023 contribution. Th
 
 ## Penalties and interest
 
-An employer who does not make a complete contribution payment by the 15th is liable to pay a dividend loss charge and the service charges that result. TAP has prosecuted employers under the TAP law for failing to pay employee contributions (TAP media releases). The amount of the dividend loss charge is not published on the pages read.
+An employer who does not make a complete contribution payment by the statutory deadline can owe a dividend loss charge and a service charge. The service charge ordinarily runs from the 16th of the following month for each day the amount remains unpaid, at the rate and on the basis the Board determines. Failure to pay is an offence under section 31(b). Section 35 provides a fine on conviction of up to BND 3,000, or up to BND 10,000 for a subsequent offence, where no specific penalty is provided.
 
 ## Cross-border points
 
-- Foreign employees are not registered to SPK as described by TAP; there is no Brunei income tax on their pay.
-- Payments of directors' remuneration to non-resident directors carry 10% withholding tax under section 37B of the Income Tax Act; see [bn-corporate-income-tax](bn-corporate-income-tax.md).
+- Workers who are neither Brunei citizens nor permanent residents generally fall outside SPK. Ordinary employment salaries carry no Brunei personal income tax.
+- Payments of directors' remuneration to non-resident directors carry 10% withholding tax under sections 35(2B) and 37B of the Income Tax Act, subject to applicable treaty relief; see [bn-corporate-income-tax](bn-corporate-income-tax.md).
 - Social security agreements with other countries are not covered on the TAP pages read.
 
 ## Two worked examples that recompute
 
-**Example 1. Citizen employee, basic salary BND 1,000 plus housing allowance BND 300.** Housing allowance is not wages. Employee 8.5% of 1,000 = BND 85.00. Salary group BND 500.01 to 1,500: employer 10.5% = BND 105.00 (above the BND 57.50 floor). Total to TAP BND 190.00. Net pay BND 1,215.00.
+**Example 1. Citizen employee, basic salary BND 1,000 plus housing allowance BND 300.** Housing allowance is not wages. Employee 8.5% of 1,000 = BND 85.00. Salary group BND 500.01 to 1,500: employer 10.5% = BND 105.00 (above the BND 57.50 floor). Total to TAP BND 190.00. Net pay BND 1,215.00 before any other deductions.
 
 ```oa-check
 name: Brunei SPK, salary BND 1,000 plus housing allowance
@@ -100,7 +100,7 @@ expected:
   net_pay: 1215.00
 ```
 
-**Example 2. Two employees: part-time citizen on BND 400, and a permanent resident manager on BND 3,000.** Part-timer: employee 8.5% = BND 34.00; employer fixed BND 57.50. Manager: salary above BND 2,800.01, so employer 8.5%; both sides BND 255.00 with no cap (under the old SCP rules the manager's SCP was capped at BND 98). Total payable by the 15th: BND 601.50.
+**Example 2. Two employees: part-time citizen on BND 400, and a permanent resident manager on BND 3,000.** Part-timer: employee 8.5% = BND 34.00; employer fixed BND 57.50. Manager: salary above BND 2,800, so the employer and employee each pay 8.5%, or BND 255.00, with no cap (under the old SCP rules the manager's SCP was capped at BND 98). Total payable by the 15th: BND 601.50.
 
 ```oa-check
 name: Brunei SPK, part-timer BND 400 and manager BND 3,000
@@ -123,7 +123,7 @@ expected:
 
 1. Is each employee a Brunei citizen or permanent resident, and below 60?
 2. What is each employee's basic salary, and which allowances are paid?
-3. For employees aged 50 to 59: did they join SPK or stay in TAP?
+3. Was the employee in the transitional cohort at the July 2023 launch, and what is the employee's current scheme status?
 4. Is the company registered with ROCBN before or after 2009 (e-Amanah registration)?
 5. Are any directors non-resident (withholding on their fees)?
 
@@ -131,6 +131,13 @@ expected:
 
 | Source | What was read | URL | Read on |
 |---|---|---|---|
+| National Retirement Scheme Act, Chapter 273 | Coverage and exceptions, rates, age-60 benefits, fines and late service charge under sections 2, 10–11, 22–26, 31, 35 and 43 and Schedules 1 and 2 | https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-283-2024-ED-NATIONAL-RETIREMENT-SCHEME-ACT.pdf | 2026-11-22 |
+| National Retirement Scheme Rules 2023 | Ordinary contribution due date under rules 16–18 | https://www.agc.gov.bn/wp-content/uploads/2026/07/S-22-2023-NATIONAL-RETIREMENT-SCHEME-RULES-2023.pdf | 2026-11-22 |
+| Employee Trust (Rates of Contributions) Regulations | Employee and employer TAP contribution schedule | https://www.agc.gov.bn//wp-content/uploads/2026/07/RG-1-2026-ED-EMPLOYEE-TRUST-RATES-OF-CO%E2%80%8BNTRIBUTIONS-REGULATIONS.pdf | 2026-11-22 |
+| Supplemental Contributory Pensions Trust Act and 2024 amendment | Age-specific SCP rates for employees covered by that scheme | https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-276-2026-ED-SUPPLEMENTAL-CONTRIBUTORY-PENSIONS-TRUST-ACT.pdf | 2026-11-22 |
+| TAP, Silver Generation and deferred contributions | Cohort, TAP55 application, conversion and account allocation | https://www.tap.com.bn/spk-silver-generation-age-50-59 | 2026-11-22 |
+| TAP, deferred TAP/SCP contribution structure | Member contribution components and age-56 conversion | https://www.tap.com.bn/spk-defer-tap-scp-contribution-structure | 2026-11-22 |
+| TAP, SPK Basic and enhanced benefits | Citizenship and payout distinction | https://www.tap.com.bn/faq-skim-persaraan-kebangsaan | 2026-11-22 |
 | TAP, SPK members' contribution | Read for the 8.5% member rate and the definition of wages | https://www.tap.com.bn/spk-members-contribution | 2026-11-14 |
 | TAP, employers' responsibilities: contribution | Read for the employer salary-group table, worked amounts, no cap, deferring members, wages and non-deductible remunerations, voluntary contributions | https://www.tap.com.bn/employers-responsibilities-contribution | 2026-11-14 |
 | TAP, FAQ employers' contribution | Read for no BND 98 cap, two-decimal rounding, TAP 5% for those aged 50 to 59 not in SPK, July 2023 start, the 15th due date and the dividend loss charge | https://www.tap.com.bn/faq-employers-contribution | 2026-11-14 |
@@ -140,4 +147,4 @@ expected:
 | TAP, employers' responsibilities | Read for automatic registration through ROCBN and employee record duties | https://www.tap.com.bn/employers-responsibilities | 2026-11-14 |
 | Revenue Division, FAQ corporate tax | Read for "no tax is levied on personal income" | https://www.mof.gov.bn/div_revenue_faq_corporatetax/ | 2026-11-14 |
 
-Not yet confirmed: the amount of the dividend loss charge and service charges for late payment (TAP names them, but the pages read give no rate); the National Retirement Scheme Act (Chapter 273) and Rules 2023 text, listed on TAP's Order and Acts page but not opened; whether foreign employees may join voluntarily; social security agreements with other countries.
+Not yet confirmed: the Board's exact dividend loss and service charge rates for a specific late payment, the treatment of foreign employees seeking to make voluntary contributions outside ordinary enrolment, and any social security agreement applying to a particular cross-border employee.

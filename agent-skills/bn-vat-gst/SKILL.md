@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/bn-vat-gst"
   jurisdiction: "BN"
   tax_year: "2026"
-  last_updated: "2026-11-14"
+  last_updated: "2026-11-22"
 ---
 
-# Brunei VAT and GST v1.0
+# Brunei VAT and GST v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -34,32 +34,32 @@ So:
 | VAT, GST or general sales tax | None: not among the Acts the Revenue Division administers (income tax, petroleum income tax, stamp duty) | 2026 | https://www.mof.gov.bn/div_revenue_taxresources_relevantacts/ |
 | Taxes the Revenue Division administers | Income tax, withholding of tax and stamp duty | 2026 | https://www.mof.gov.bn/div_revenue_typesoftaxes_incometax/ |
 | Stamp duty | Ad valorem or fixed duty on instruments in Schedule 1 of the Stamp Act (Chapter 34): transfers of property and shares, leases, bonds, contract notes; Memorandum and Articles and share certificates on incorporation no longer stamped (from 4 May 2017) | 2026 | https://www.mof.gov.bn/div_revenue_typesoftaxes_stampduty/ |
-| Stamp duty adjudication fee | BND 25 per instrument | 2026 | same |
-| Customs advance ruling on tariff classification | Free of charge; about 9 days per item, normally within 30 days | 2026 | https://www.mof.gov.bn/rced_tariff-and-classification/ |
-| Withholding on technical services, management fees and royalties paid to non-residents | 10% (income tax, not VAT; rates owned by bn-corporate-income-tax) | 2026 | https://www.mof.gov.bn/div_revenue_withholdingoftax_whtrate/ |
+| Stamp duty adjudication fee | BND 25 when applying for the Collector's adjudication of duty on an instrument | 2026 | same |
+| Customs advance ruling on tariff classification | Free of charge. Apply before the goods arrive. Customs indicates 9 days per item and normally within 30 days. An applicable trade agreement may set a deadline | 2026 | https://www.mof.gov.bn/rced_tariff-and-classification/ |
+| Withholding on technical services, management fees and royalties paid to non-residents | 10% domestic withholding on covered Brunei-source payments, subject to the payee's local activities, permanent establishment and applicable treaty | 2026 | https://www.mof.gov.bn/div_revenue_withholdingoftax_whtrate/ |
 
 ## The base
 
 Nothing is taxable for VAT or GST. What a business should still check on each transaction:
 
-1. **Imports of goods.** Customs import duty, and excise on specified goods, collected by the Royal Customs and Excise Department on importation under the customs tariff. Rates depend on the tariff classification; get an advance ruling if unsure. Rates are not given here (see Not yet confirmed).
-2. **Imports of services from a non-resident.** No VAT. But if the Brunei payer is a company or permanent establishment and the payment is for technical services, use of knowledge, management, royalties, rent of movable property, loan interest or directors' fees, income tax must be withheld and paid within 14 days ([bn-corporate-income-tax](bn-corporate-income-tax.md)).
-3. **Documents.** Leases, property and share transfers and loan instruments need stamping before signing if executed in Brunei, or within 30 days of first receipt in Brunei if executed abroad.
+1. **Imports of goods.** Customs import duty, and excise on specified goods, collected by the Royal Customs and Excise Department on importation under the customs tariff. Rates depend on the tariff classification; get an advance ruling if unsure. Use the current Brunei Darussalam Tariff and Trade Classification and check any applicable origin preference, later amendment or exemption.
+2. **Imports of services from a non-resident.** Brunei imposes no VAT. Withholding can apply to payments by any person for covered technical or management services, use of knowledge, royalties, rent of movable property, loan interest or directors' remuneration. Check the payment's source and the payee's Brunei trade or permanent establishment. The ordinary remittance period is 14 days ([bn-corporate-income-tax](bn-corporate-income-tax.md)).
+3. **Documents.** Check Schedule 1 for chargeable instruments. Stamp domestic instruments before execution under the general rule in section 34. Section 39 ordinarily allows stamping within 14 days after first execution in Brunei without penalty. For chargeable instruments executed wholly abroad, the ordinary period is 30 days after first receipt in Brunei. Bills of exchange, cheques and promissory notes drawn abroad have a separate rule.
 4. **Bookkeeping.** Record sales and purchases gross; there is no input or output tax to split out. Foreign invoices showing another country's VAT: that VAT is a cost unless recoverable in that country.
 
 ## Deadlines and filing
 
-None for VAT or GST. Related deadlines: withholding tax within 14 days of payment; stamp duty before execution (Brunei) or within 30 days of receipt (abroad); customs declarations on importation.
+There are no Brunei VAT or GST filings. The ordinary withholding deadline is 14 days after payment. Check the stamping rules above for each instrument and submit customs declarations for covered imports.
 
 ## Penalties and interest
 
-None for VAT or GST. An instrument not duly stamped is not admissible as evidence in civil proceedings and attracts a stamp duty penalty; late withholding tax attracts 5% plus 1% a month up to 15% ([bn-corporate-income-tax](bn-corporate-income-tax.md)).
+There are no Brunei VAT or GST penalties. An instrument not duly stamped is generally inadmissible in civil proceedings until duty and any applicable penalty are paid, subject to section 44. If withholding remains unpaid 14 days after the underlying payment, the penalty is 5%. If still unpaid after 30 days, an additional 1% per completed month applies, capped at 15% of the withholding tax ([bn-corporate-income-tax](bn-corporate-income-tax.md)).
 
 ## Cross-border points
 
 - **Exporting to Brunei.** No Brunei VAT to register for or charge, whether goods or digital services. The Brunei customer may bear customs duty on goods.
 - **Brunei business buying from Singapore, Malaysia and so on.** The foreign supplier's own VAT/GST rules decide whether it charges its tax; Brunei has nothing to self-account.
-- **Approved exporters** may be taxed at a flat 1% income tax on approved exports (income tax, not VAT).
+- **Approved exports.** The final income tax under section 8A is 1% of covered gross export proceeds. Check the statutory approval and turnover rules.
 
 ## Two worked examples that recompute
 
@@ -79,7 +79,7 @@ expected:
   revenue: 10000.00
 ```
 
-**Example 2 (decision). A Brunei company pays a Singapore company BND 5,000 for management services: VAT or withholding?** No VAT and no reverse charge. Management fees to a non-resident carry 10% withholding under section 9(5)(c) and 37A: withhold BND 500, pay the non-resident BND 4,500 and pay BND 500 to the Collector within 14 days, unless the Brunei and Singapore agreement reduces it and a certificate of residence is held. The figure that decides is the nature of the payment, not any VAT rule.
+**Example 2 (decision). A Brunei company pays a Singapore company BND 5,000 for management services.** Assume a service fee only and that domestic withholding applies to the Brunei-source payment. There is no VAT or reverse charge. At payment, withhold the domestic 10% (BND 500), pay BND 4,500 to the supplier and remit BND 500 within 14 days. If the supplier is a Singapore treaty resident with no Brunei permanent establishment, Article 7 gives Singapore exclusive taxing rights on the service profits. Final Brunei tax after treaty relief is nil. Claim the BND 500 refund from the Revenue Division with evidence of treaty residence, the payment and the contract.
 
 ```oa-check
 name: Brunei payment for management services to a non-resident
@@ -90,10 +90,12 @@ steps:
   - vat: fee * 0
   - wht: fee * wht_rate
   - paid_to_supplier: fee - wht
+  - final_brunei_tax_with_treaty_relief: fee * 0
 expected:
   vat: 0.00
   wht: 500.00
   paid_to_supplier: 4500.00
+  final_brunei_tax_with_treaty_relief: 0.00
 ```
 
 ## Ask the client first
@@ -114,8 +116,15 @@ expected:
 | Royal Customs and Excise Department, tariff and classification | Read for advance rulings, timing and the nil fee | https://www.mof.gov.bn/rced_tariff-and-classification/ | 2026-11-14 |
 | Revenue Division, withholding tax rates | Read for the 10% management fee rate in Example 2 | https://www.mof.gov.bn/div_revenue_withholdingoftax_whtrate/ | 2026-11-14 |
 
-Not yet confirmed: customs import duty and excise rates by tariff line (the customs tariff was not opened); the stamp duty schedule rates and penalty amounts (the Stamp Act Schedule 1 was not opened); any announcement after 14 November 2026 of a future VAT or GST.
+| Stamp Act, Chapter 34 | Sections 31, 34–39 and 44 on adjudication, deadlines and admissibility, and Schedule 1 | https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-34-2022-ED-STAMP-ACT-ACT.pdf#page=29 | 2026-11-22 |
+| Income Tax Act, Chapter 35 | Section 8A on approved exports, sections 9(5), 35 and 37–37B on withholding | https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-35-2024-ED-INCOME-TAX-ACT.pdf | 2026-11-22 |
+| Brunei–Singapore agreement | Articles 5 and 7 on permanent establishments and business profits | https://www.agc.gov.bn/wp-content/uploads/2026/08/S-96-2006-E.pdf#page=5 | 2026-11-22 |
+| Revenue Division withholding relief | Claim process, certificate of residence and supporting documents | https://www.mof.gov.bn/div_revenue_withholdingoftax_claimofrelief/ | 2026-11-22 |
+| Revenue Division withholding tax ruling | Section 19 on deduction at domestic rates and treaty refund | https://www.mof.gov.bn/wp-content/uploads/2025/10/PR_004-2017_Public_Ruling_on_Witholding_of_Tax.pdf | 2026-11-22 |
+| Royal Customs and Excise Department | Current tariff classification and later notices | https://www.customs.gov.bn/ref-rced/ | 2026-11-22 |
+
+Not yet confirmed: transaction-specific duty rates without the tariff line and origin of the goods or the Schedule 1 entry and execution dates for the instrument.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bn-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bn-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bn-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bn-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.

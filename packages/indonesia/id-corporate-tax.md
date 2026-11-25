@@ -9,15 +9,15 @@ description: >
   sectors, permanent establishments and unverified facilities require separate work.
 jurisdiction: ID
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
-version: "2.0"
+version: "2.1"
 category: international
 type: computation
 ---
-# Indonesia Corporate Income Tax v2.0
+# Indonesia Corporate Income Tax v2.1
 
 ## Scope
 
@@ -29,26 +29,26 @@ type: computation
 
 | Item | Calendar-2026 rule and boundary | Official source |
 |---|---|---|
-| Standard resident-company rate | 22% of taxable income | [Income Tax Law art. 17(1)(b)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Article 31E turnover ceiling | IDR 50,000,000,000; facility relates to income proportionate to the first IDR 4,800,000,000 of gross turnover | [Income Tax Law art. 31E](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Article 31E rate | 50% reduction of the standard rate; computed qualifying rate 11%, remaining ordinary income 22% | [Income Tax Law arts. 17(1)(b),31E](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Listed-company reduction | Three percentage points, computed rate 19%; at least 40% qualifying publicly traded shares held by at least 300 parties, each below 5%, for at least 183 calendar days, with reporting and excluded-holdings conditions | [PP 55/2022 arts. 64-65](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan) |
-| Ordinary loss carryforward | Five consecutive tax years following the loss year; a separate granted facility may alter this, not a blanket pioneer-industry rule | [Income Tax Law art. 6(2)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Master/local-file revenue trigger | Related-party transactions and preceding-year gross turnover over IDR 50,000,000,000 | [PMK 172/2023 art. 16(3)](https://pajak.go.id/index.php/id/peraturan/penerapan-prinsip-kewajaran-dan-kelaziman-usaha-dalam-transaksi-yang-dipengaruhi-hubungan) |
-| Master/local-file transaction trigger | Preceding-year related-party tangible goods over IDR 20,000,000,000 or each services, interest, intangibles or other category over IDR 5,000,000,000; lower-tax-jurisdiction affiliate is a separate trigger | [PMK 172/2023 art. 16(3)](https://pajak.go.id/index.php/id/peraturan/penerapan-prinsip-kewajaran-dan-kelaziman-usaha-dalam-transaksi-yang-dipengaruhi-hubungan) |
-| Domestic ultimate-parent CbCR threshold | Consolidated preceding-year gross turnover at least IDR 11,000,000,000,000, including equality | [PMK 172/2023 art. 16(4)](https://pajak.go.id/index.php/id/peraturan/penerapan-prinsip-kewajaran-dan-kelaziman-usaha-dalam-transaksi-yang-dipengaruhi-hubungan) |
-| Documentation availability | Master/local files within four months; CbCR within twelve months, with statement/summary and annual-return rules separate | [PMK 172/2023 arts. 17-19](https://pajak.go.id/index.php/id/peraturan/penerapan-prinsip-kewajaran-dan-kelaziman-usaha-dalam-transaksi-yang-dipengaruhi-hubungan) |
-| Annual ordinary filing deadline | Four months after book-year end; calendar 2026 ordinarily 30 April 2027, before any applicable specific relief | [KUP art. 3(3)(c)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Annual extension | Notification for up to two months, supported by provisional computation and required settlement; not automatic time to pay | [KUP art. 3(4)-(5)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Late annual corporate filing | IDR 1,000,000, subject to KUP art. 7 exceptions and actual relief | [KUP art. 7](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Late-payment interest | Actual ministerial monthly rate, maximum 24 months, any part-month counted in full; no fixed approximate rate or daily proration | [KUP art. 9(2a)-(2c)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Books/supporting records | Retain ten years in Indonesia | [KUP art. 28(11)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Standard resident-company rate | 22% of taxable income | [Income Tax Law art. 17(1)(b)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Article 31E turnover ceiling | IDR 50,000,000,000; facility relates to income proportionate to the first IDR 4,800,000,000 of gross turnover | [Income Tax Law art. 31E](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Article 31E rate | 50% reduction of the standard rate; computed qualifying rate 11%, remaining ordinary income 22% | [Income Tax Law arts. 17(1)(b),31E](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Listed-company reduction | Three percentage points, computed rate 19%; at least 40% qualifying publicly traded shares held by at least 300 parties, each below 5%, for at least 183 calendar days, with reporting and excluded-holdings conditions | [PP 55/2022 arts. 64-65](https://www.pajak.go.id/id/peraturan/XD3LYwn1km-55-tahun-2022) |
+| Ordinary loss carryforward | Five consecutive tax years following the loss year; a separate granted facility may alter this, not a blanket pioneer-industry rule | [Income Tax Law art. 6(2)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Master/local-file revenue trigger | Related-party transactions and preceding-year gross turnover over IDR 50,000,000,000 | [PMK 172/2023 art. 16(3)](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf) |
+| Master/local-file transaction trigger | Preceding-year related-party tangible goods over IDR 20,000,000,000 or each services, interest, intangibles or other category over IDR 5,000,000,000; lower-tax-jurisdiction affiliate is a separate trigger | [PMK 172/2023 art. 16(3)](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf) |
+| Domestic ultimate-parent CbCR threshold | Consolidated preceding-year gross turnover at least IDR 11,000,000,000,000, including equality | [PMK 172/2023 art. 16(4)](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf) |
+| Documentation availability | Master/local files within four months; CbCR within twelve months, with statement/summary and annual-return rules separate | [PMK 172/2023 arts. 17-19](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf) |
+| Annual ordinary filing deadline | Four months after book-year end; calendar 2026 ordinarily 30 April 2027, before any applicable specific relief | [KUP art. 3(3)(c)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Annual extension | Notification for up to two months, supported by provisional computation and required settlement; not automatic time to pay | [KUP art. 3(4)-(5)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Late annual corporate filing | IDR 1,000,000, subject to KUP art. 7 exceptions and actual relief | [KUP art. 7](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Late-payment interest | Actual ministerial monthly rate, maximum 24 months, any part-month counted in full; no fixed approximate rate or daily proration | [KUP art. 9(2a)-(2c)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Books/supporting records | Retain ten years in Indonesia | [KUP art. 28(11)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
 
 ### Identify the return and the taxpayer
 
-Use the actual accounting period, residence, NPWP, company type, ownership and activity. The default currency is rupiah; a permitted foreign-language/currency method needs its actual permission or applicable notice conditions. A non-calendar year is not automatically prohibited. [KUP art. 28](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
+Use the actual accounting period, residence, NPWP, company type, ownership and activity. The default currency is rupiah; a permitted foreign-language/currency method needs its actual permission or applicable notice conditions. A non-calendar year is not automatically prohibited. [KUP art. 28](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a).
 
-Coretax covers tax year 2025 onward, but current forms and transmission rules must be matched to the applicable period. Historical 1771 names remain search terms, not certified 2026 field numbers. This method covers ordinary resident PT income tax; final turnover tax, payroll, VAT, BUT, regulated finance, extractive contracts, Islamic finance and consolidated/group-return questions use separate methods. [PER-3/PJ/2026](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0).
+Coretax covers tax year 2025 onward, but current forms and transmission rules must be matched to the applicable period. Historical 1771 names remain search terms, not certified 2026 field numbers. This method covers ordinary resident PT income tax; final turnover tax, payroll, VAT, BUT, regulated finance, extractive contracts, Islamic finance and consolidated/group-return questions use separate methods. [PER-3/PJ/2026](https://pajak.go.id/id/peraturan/XD3LOZQlkm-per-3-pj-2026).
 
 Unknown turnover, ownership, expense purpose, related-party status, asset class or final-regime history stays unresolved. Never default an unknown taxpayer to a fabricated revenue band, private-use fact or related-party relationship. Preserve a document request and a labelled comparison instead.
 
@@ -62,7 +62,7 @@ Unknown turnover, ownership, expense purpose, related-party status, asset class 
 
 **Ideal** , Audited statements signed by an Akuntan Publik (KAP), complete fiscal reconciliation, Master/Local File/CbCR if thresholds met, NPWP and KSWP certificates, ratified RUPS minutes.
 
-**HARD STOP if minimum is missing.** Without financial statements and the prior-year return, no corporate computation may be produced.
+**Financial statements are required.** Obtain the prior-year return for an existing taxpayer. For first registration, check the registration record and applicable instalment rules.
 
 ## The method, step by step
 
@@ -78,22 +78,22 @@ Unknown turnover, ownership, expense purpose, related-party status, asset class 
 - **Small-company facility scope** , Companies with annual gross turnover (peredaran bruto) up to IDR 50,000,000,000 receive a 50% reduction of the 22% rate applied to the slice of taxable income proportional to the first IDR 4,800,000,000 of gross turnover. Effective rate on the facility slice: 11%.  _(Pasal 31E UU 36/2008 (unchanged by UU HPP); SE-66/PJ/2010)_
 - **Pasal 31E formula** , Turnover ≤ IDR 4.8B:         PPh Badan = 11% × PKP IDR 4.8B < Turnover ≤ 50B:   Facility slice    = (4.8B / Turnover) × PKP Non-facility slice = PKP − Facility slice PPh Badan          = 11% × Facility + 22% × Non-facility Turnover > IDR 50B:           PPh Badan = 22% × PKP   (no facility)  _(Pasal 31E UU 36/2008 (unchanged by UU HPP); SE-66/PJ/2010)_
 - **Important** , Pasal 31E applies automatically , not a discretionary election. Computed for each fiscal year independently. A company that exits the IDR 50B band loses the facility for that year.  _(Pasal 31E UU 36/2008 (unchanged by UU HPP); SE-66/PJ/2010)_
-- **Interaction with final turnover tax:** Do not stack final turnover tax with Article 31E on the same income. A new ordinary PT is not among the amended ordinary eligible classes; legacy PT/CV/firma and other entities need the exact PP 20/2026 transition, while a single-founder company follows its own eligibility rules. Obtain registration and election history and use `id-pph-final-umkm`. [PP 20/2026 amended arts. 56-59 and art. II](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
+- **Interaction with final turnover tax:** Do not stack final turnover tax with Article 31E on the same income. A new ordinary PT is not among the amended ordinary eligible classes; legacy PT/CV/firma and other entities need the exact PP 20/2026 transition, while a single-founder company follows its own eligibility rules. Obtain registration and election history and use `id-pph-final-umkm`. [PP 20/2026 amended arts. 56-59 and art. II](https://jdih.kemenkeu.go.id/api/download/d057ff82-50e7-4127-b66b-f704a36f071d/2026pp020.pdf).
 
 ### 3.3 Listed-Company Reduction , Pasal 17(2b)
 
-- **Listed-company reduction conditions:** Use PP 55/2022 arts. 64-65, not repealed PP 55/2022 arts. 64-65. All qualifying-trade, holder, ownership-percentage, calendar-day and DJP-reporting conditions must hold; exclude the holdings identified by art. 65, including the specified treasury and related-party holdings. Record evidence rather than presuming every IDX listing qualifies. [PP 55/2022 arts. 64-65](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan).
-- **Interaction with Article 31E:** Not yet confirmed: the exact interaction for a listed company also claiming Article 31E. The old 11%-on-one-slice/19%-on-the-other recipe was not supported by the law read. Do not use that combination; obtain an official ruling or applicable operative provision and have the reviewer resolve the computation. [Income Tax Law arts. 17(2b),31E](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PP 55/2022 arts. 64-65](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan).
-- **Listed status unresolved:** Keep the rate decision open. A clearly labelled ordinary-rate comparison is possible; it is not evidence that the taxpayer is private or has lost an available facility. [PP 55/2022 arts. 64-65](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan).
+- **Listed-company reduction conditions:** Apply [PP 55/2022 arts. 64–65](https://www.pajak.go.id/id/peraturan/XD3LYwn1km-55-tahun-2022), which replaced PP 30/2020 for this reduction. Verify the percentage of issued and fully paid shares traded on the Indonesian exchange, qualifying holders, each ownership limit, the required days in the tax year and DJP reporting. Exclude the prescribed treasury and related-party holdings.
+- **Interaction with Article 31E:** Not yet confirmed: the exact interaction for a listed company also claiming Article 31E. The old 11%-on-one-slice/19%-on-the-other recipe was not supported by the law read. Do not use that combination; obtain an official ruling or applicable operative provision and have the reviewer resolve the computation. [Income Tax Law arts. 17(2b),31E](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a); [PP 55/2022 arts. 64-65](https://www.pajak.go.id/id/peraturan/XD3LYwn1km-55-tahun-2022).
+- **Listed status unresolved:** Keep the rate decision open. A clearly labelled ordinary-rate comparison is possible; it is not evidence that the taxpayer is private or has lost an available facility. [PP 55/2022 arts. 64-65](https://www.pajak.go.id/id/peraturan/XD3LYwn1km-55-tahun-2022).
 
 ### 3.4 Taxable Income (Penghasilan Kena Pajak)
 
 - **PKP formula** , PKP = Penghasilan Bruto − Deductible costs (Pasal 6) − Tax loss carry-forward (Pasal 6(2))  _(Pasal 6(2) UU PPh)_
-- **Loss carry-forward window:** Ordinary losses are carried to the five consecutive following tax years. Keep a year-by-year assessed/returned loss register and prior usage. Extended carryforward requires its own granted facility and conditions; it is not a generic tax-holiday consequence. [Income Tax Law art. 6(2)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PMK 81/2024 art. 408(1)(d)](https://pajak.go.id/en/node/113110).
+- **Loss carry-forward window:** Ordinary losses are carried to the five consecutive following tax years. Keep a year-by-year assessed/returned loss register and prior usage. Extended carryforward requires its own granted facility and conditions; it is not a generic tax-holiday consequence. [Income Tax Law art. 6(2)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a); [PMK 81/2024 art. 408(1)(d)](https://jdih.kemenkeu.go.id/api/download/637047be-3dba-4347-aba1-98fa7fd5ab3f/2024pmkeuangan081.pdf).
 
 ### 3.5 Fiscal Reconciliation (Rekonsiliasi Fiskal)
 
-- **Fiscal reconciliation method** , PPh Badan is computed from the commercial profit per the financial statements, audited only where required, adjusted by: (+) non-deductible expenses under Pasal 9; (+) income previously excluded from book profit but taxable; (−) income subject to final tax (PPh Final, already separately taxed); (−) non-taxable income under Pasal 4(3); (±) timing differences (depreciation, provisions). Reported in SPT 1771 Lampiran I.  _(Pasal 9; Pasal 4(3) UU PPh)_
+- **Fiscal reconciliation method:** Start with commercial profit. Add non-deductible costs and taxable income omitted from commercial profit. Remove final-tax and non-taxable income and adjust timing differences including depreciation and provisions. Use the applicable Coretax fiscal reconciliation annex for the business sector. [Income Tax Law arts. 4, 6 and 9](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a), [DJP corporate return guidance](https://pajak.go.id/id/wajib-pajak/badan/pelaporan/spt-tahunan-pelaporan).
 
 ## Section 4 , Deductible vs Non-Deductible Expenses
 
@@ -105,15 +105,15 @@ Unknown turnover, ownership, expense purpose, related-party status, asset class 
 
 | Category | Reference |
 | --- | --- |
-| Direct/indirect business costs (raw materials, salaries, rent, utilities, interest, royalties, travel, waste) | Pasal 6(1)(a) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Depreciation and amortisation (Pasal 11, 11A) | Pasal 6(1)(b) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Pension contributions to funds authorised by the Minister or OJK, as applicable | Pasal 6(1)(c) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Losses on disposal of business assets | Pasal 6(1)(d) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Forex losses | Pasal 6(1)(e) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Approved domestic R&D | Pasal 6(1)(f) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Scholarship, apprenticeship, training | Pasal 6(1)(g) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Bad debts meeting Pasal 6(1)(h) conditions | Pasal 6(1)(h) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Donations under PP 93/2010 (disaster, R&D, education, sports, social infrastructure) | Pasal 6(1)(i) to (m) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Direct/indirect business costs (raw materials, salaries, rent, utilities, interest, royalties, travel, waste) | Pasal 6(1)(a) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Depreciation and amortisation (Pasal 11, 11A) | Pasal 6(1)(b) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Pension contributions to funds authorised by the Minister or OJK, as applicable | Pasal 6(1)(c) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Losses on disposal of business assets | Pasal 6(1)(d) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Forex losses | Pasal 6(1)(e) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Approved domestic R&D | Pasal 6(1)(f) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Scholarship, apprenticeship, training | Pasal 6(1)(g) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Bad debts meeting Pasal 6(1)(h) conditions | Pasal 6(1)(h) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Donations under PP 93/2010 (disaster, R&D, education, sports, social infrastructure) | Pasal 6(1)(i) to (m) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
 
 ### 4.2 Non-Deductible Expenses , Pasal 9 UU PPh
 
@@ -123,38 +123,39 @@ Unknown turnover, ownership, expense purpose, related-party status, asset class 
 
 | Item | Reference |
 | --- | --- |
-| Profit distributions to shareholders (dividends, share of profit) | Pasal 9(1)(a) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Costs for personal benefit of shareholders / partners / members | Pasal 9(1)(b) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Reserves and provisions, except specific allowances for banks, leasing, insurance, mining reclamation | Pasal 9(1)(c) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Personal life/health/accident insurance premiums (subject to PMK 66/2023 BIK rules) | Pasal 9(1)(d) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Work-related benefits in kind are considered under art. 6(1)(n); former art. 9(1)(e) is deleted. Do not add them back automatically | [Income Tax Law arts. 6,9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Excessive payments to shareholders / related parties (TP arm's-length test) | Pasal 9(1)(f) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Gifts and donations except qualifying Pasal 6(1)(i) to (m) and approved zakat | Pasal 9(1)(g) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Income tax itself (PPh Badan, PPh 25, PPh 29) | Pasal 9(1)(h) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Private living expenses of taxpayer or dependents | Pasal 9(1)(i) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Salary paid to members of a partnership, firm or CV whose capital is not divided into shares is non-deductible; a PT director is not automatically in that category | [Income Tax Law art. 9(1)(j)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Administrative sanctions and criminal fines | Pasal 9(1)(k) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Profit distributions to shareholders (dividends, share of profit) | Pasal 9(1)(a) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Costs for personal benefit of shareholders / partners / members | Pasal 9(1)(b) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Reserves and provisions with the specified exceptions for credit institutions, finance leasing, consumer financing, factoring, insurance, BPJS, LPS and specified mining, forestry or industrial waste restoration costs | [Income Tax Law art. 9(1)(c)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Specified insurance paid by an individual. Apply the statutory exception for premiums paid by the employer and included in the employee's income | [Income Tax Law art. 9(1)(d)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Work-related benefits in kind are considered under art. 6(1)(n); former art. 9(1)(e) is deleted. Do not add them back automatically | [Income Tax Law arts. 6,9](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Excessive payments to shareholders / related parties (TP arm's-length test) | Pasal 9(1)(f) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Gifts and donations except qualifying Pasal 6(1)(i) to (m) and approved zakat | Pasal 9(1)(g) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Income tax itself (PPh Badan, PPh 25, PPh 29) | Pasal 9(1)(h) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Private living expenses of taxpayer or dependents | Pasal 9(1)(i) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Salary paid to members of a partnership, firm or CV whose capital is not divided into shares is non-deductible; a PT director is not automatically in that category | [Income Tax Law art. 9(1)(j)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Administrative sanctions and criminal fines | Pasal 9(1)(k) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Bribes, gratuities and other payments within the anti-corruption or bribery laws, including covered payments to foreign public officials | [PP 20/2026 art. 20A](https://jdih.kemenkeu.go.id/api/download/d057ff82-50e7-4127-b66b-f704a36f071d/2026pp020.pdf) |
 
 ### 4.3 Benefit-in-Kind Rules , PMK 66/2023
 
-- **Benefits in kind:** Work-related benefits may be deductible under the business-purpose test and art. 6(1)(n), while employee taxation and exceptions require the actual benefit and period. The old blanket 1 July start conflated withholding implementation with substantive treatment. Obtain benefit records and route employee withholding to `id-payroll-pph21`. [Income Tax Law arts. 4(1)(a),6(1)(n),9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
+- **Benefits in kind:** Work-related benefits may be deductible under the business-purpose test and art. 6(1)(n), while employee taxation and exceptions require the actual benefit and period. The old blanket 1 July start conflated withholding implementation with substantive treatment. Obtain benefit records and route employee withholding to `id-payroll-pph21`. [Income Tax Law arts. 4(1)(a),6(1)(n),9](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a).
 - **Employee exemptions:** PMK 66 arts. 4-6 distinguish meals for all staff, designated remote areas, required work benefits, government-funded benefits and specific annex categories. Annex A covers religious-holiday gifts received by all employees; other gifts have the IDR 3,000,000 annual employee limit. Sports facilities have their own IDR 1,500,000 annual limit and excluded sports; individual housing has an IDR 2,000,000 monthly employee limit while communal housing is separate. Work equipment must support the job; worship facilities must be exclusively for worship. Apply the actual entry and excess-value rule, not a universal gift exemption. [PMK 66 arts. 4-8 and annex A](https://jdih.kemenkeu.go.id/api/download/dce5daf1-d4e5-4bd1-bc4e-2c086ae33c04/2023pmkeuangan066.pdf).
 - **Benefits boundary:** Document business purpose and employee category separately. An unresolved employee exemption stays unresolved; do not invent a factual conclusion for convenience.
 
 ### 4.4 Depreciation and amortisation
 
-PMK 72/2023 replaced the old PMK 96/2009 group reference. Classify the exact asset using its annex and use date, not a generic claim that every computer, vehicle, furniture item or ship is in a particular group. [PMK 72/2023 arts. 2-7](https://www.pajak.go.id/id/peraturan/penyusutan-harta-berwujud-danatau-amortisasi-harta-tak-berwujud).
+PMK 72/2023 replaced the old PMK 96/2009 group reference. Classify the exact asset using its annex and use date, not a generic claim that every computer, vehicle, furniture item or ship is in a particular group. [PMK 72/2023 arts. 2-7](https://jdih.kemenkeu.go.id/api/download/46cededa-86ae-4cc9-93e5-b6bef8892074/2023pmkeuangan072.pdf).
 
-| Ordinary asset class | Life | Straight line | Declining balance | Official source [Official provision](https://www.pajak.go.id/id/peraturan/penyusutan-harta-berwujud-danatau-amortisasi-harta-tak-berwujud) |
+| Ordinary asset class | Life | Straight line | Declining balance | Official source [Official provision](https://jdih.kemenkeu.go.id/api/download/46cededa-86ae-4cc9-93e5-b6bef8892074/2023pmkeuangan072.pdf) |
 |---|---|---|---|---|
-| Non-building group I | Four years | 25% | 50% | [PMK 72 art. 2](https://www.pajak.go.id/id/peraturan/penyusutan-harta-berwujud-danatau-amortisasi-harta-tak-berwujud) |
-| Non-building group II | Eight years | 12.5% | 25% | [PMK 72 art. 2](https://www.pajak.go.id/id/peraturan/penyusutan-harta-berwujud-danatau-amortisasi-harta-tak-berwujud) |
-| Non-building group III | Sixteen years | 6.25% | 12.5% | [PMK 72 art. 2](https://www.pajak.go.id/id/peraturan/penyusutan-harta-berwujud-danatau-amortisasi-harta-tak-berwujud) |
-| Non-building group IV | Twenty years | 5% | 10% | [PMK 72 art. 2](https://www.pajak.go.id/id/peraturan/penyusutan-harta-berwujud-danatau-amortisasi-harta-tak-berwujud) |
-| Permanent building, ordinary schedule | Twenty years | 5% | Not available | [PMK 72 arts. 2,6](https://www.pajak.go.id/id/peraturan/penyusutan-harta-berwujud-danatau-amortisasi-harta-tak-berwujud) |
-| Non-permanent building | Ten years | 10% | Not available | [PMK 72 art. 2](https://www.pajak.go.id/id/peraturan/penyusutan-harta-berwujud-danatau-amortisasi-harta-tak-berwujud) |
+| Non-building group I | Four years | 25% | 50% | [PMK 72 art. 2](https://jdih.kemenkeu.go.id/api/download/46cededa-86ae-4cc9-93e5-b6bef8892074/2023pmkeuangan072.pdf) |
+| Non-building group II | Eight years | 12.5% | 25% | [PMK 72 art. 2](https://jdih.kemenkeu.go.id/api/download/46cededa-86ae-4cc9-93e5-b6bef8892074/2023pmkeuangan072.pdf) |
+| Non-building group III | Sixteen years | 6.25% | 12.5% | [PMK 72 art. 2](https://jdih.kemenkeu.go.id/api/download/46cededa-86ae-4cc9-93e5-b6bef8892074/2023pmkeuangan072.pdf) |
+| Non-building group IV | Twenty years | 5% | 10% | [PMK 72 art. 2](https://jdih.kemenkeu.go.id/api/download/46cededa-86ae-4cc9-93e5-b6bef8892074/2023pmkeuangan072.pdf) |
+| Permanent building, ordinary schedule | Twenty years | 5% | Not available | [PMK 72 arts. 2,6](https://jdih.kemenkeu.go.id/api/download/46cededa-86ae-4cc9-93e5-b6bef8892074/2023pmkeuangan072.pdf) |
+| Non-permanent building | Ten years | 10% | Not available | [PMK 72 art. 2](https://jdih.kemenkeu.go.id/api/download/46cededa-86ae-4cc9-93e5-b6bef8892074/2023pmkeuangan072.pdf) |
 
-For a permanent building with a longer actual accounting life, art. 6 permits the actual-life method subject to consistency, election/notice and transition conditions. An unlisted non-building asset ordinarily uses group III unless DJP grants the permitted different grouping under art. 4. Start in the expenditure month or the construction-completion month, subject to the specific unused-asset approval rule. Improvements lasting beyond a year are capitalised under art. 7. Land and its renewal/acquisition rights need their own treatment; do not depreciate land simply because it was purchased for business. [PMK 72 arts. 1-7](https://www.pajak.go.id/id/peraturan/penyusutan-harta-berwujud-danatau-amortisasi-harta-tak-berwujud).
+For a permanent building with a longer actual accounting life, art. 6 permits the actual-life method subject to consistency, election/notice and transition conditions. An unlisted non-building asset ordinarily uses group III unless DJP grants the permitted different grouping under art. 4. Start in the expenditure month or the construction-completion month, subject to the specific unused-asset approval rule. Improvements lasting beyond a year are capitalised under art. 7. Land and its renewal/acquisition rights need their own treatment; do not depreciate land simply because it was purchased for business. [PMK 72 arts. 1-7](https://jdih.kemenkeu.go.id/api/download/46cededa-86ae-4cc9-93e5-b6bef8892074/2023pmkeuangan072.pdf).
 
 Intangibles, software, special industries, asset disposals, insurance recoveries, actual-life options and accelerated facility schedules remain part of the fixed-asset review. Not yet confirmed: their asset-specific classification and current amortisation/transition rule beyond the ordinary tangible provisions read here. Do not silently apply the non-building table to every licence or software purchase. The old blanket per-group binding-election assertion is not certified; keep the actual taxpayer's consistent accounting method and permissions.
 
@@ -163,18 +164,18 @@ Intangibles, software, special industries, asset disposals, insurance recoveries
 ### 5.1 Tax Holiday , PMK 130/2020
 
 - **Pioneer industries:** PMK 130 art. 3 lists eighteen categories covering the specified upstream industries, infrastructure and digital data-processing/hosting activities. The actual licensed business and product must match; other industries have a separate scoring route. The list is not an approval for every business called digital. [PMK 130 arts. 3-5](https://pajak.go.id/id/peraturan/pemberian-fasilitas-pengurangan-pajak-penghasilan-badan).
-- **Tax-holiday scale:** Under PMK 130 art. 2, qualifying investment at least IDR 100 billion but below IDR 500 billion receives a 50% reduction for five years, then 25% for two years. Investment at least IDR 500 billion has a 100% reduction for five/seven/ten/fifteen/twenty years according to the stated IDR 500 billion, one trillion, five trillion, fifteen trillion and thirty trillion bands, followed by 50% for two years. The old assertion of full relief from the lowest band was wrong. Obtain the actual grant, utilisation decision and commercial-production date. Not yet confirmed: a fresh 2026 application window and any current global-minimum-tax interaction; do not sell this historic scale as a currently open entitlement. [PMK 130 arts. 2-5,12](https://pajak.go.id/id/peraturan/pemberian-fasilitas-pengurangan-pajak-penghasilan-badan).
+- **Tax-holiday scale:** Under PMK 130 art. 2, qualifying investment at least IDR 100 billion but below IDR 500 billion receives a 50% reduction for five years, then 25% for two years. Investment at least IDR 500 billion has a 100% reduction for five/seven/ten/fifteen/twenty years according to the stated IDR 500 billion, one trillion, five trillion, fifteen trillion and thirty trillion bands, followed by 50% for two years. The old assertion of full relief from the lowest band was wrong. Obtain the actual grant, utilisation decision and commercial-production date. PMK 130 art. 21 as amended by PMK 69/2024 set 31 December 2025 as the deadline for a proposal to reach the Ministry under that instrument. Verify any subsequent opening and the global-minimum-tax interaction separately. [PMK 69/2024](https://www.pajak.go.id/index.php/id/peraturan/perubahan-atas-peraturan-menteri-keuangan-nomor-130pmk0102020-tentang-pemberian-fasilitas). [PMK 130 arts. 2-5,12](https://pajak.go.id/id/peraturan/pemberian-fasilitas-pengurangan-pajak-penghasilan-badan).
 - **Conservative default** , Do not apply until the Decree of the Minister of Finance (KMK) is in hand. Reviewer must verify the KMK and commercial operation date.  _(PMK 130/2020)_
 
 ### 5.2 Tax Allowance , PP 78/2019
 
-- **Scope and benefits:** The PP 78/2019 facility for listed business fields/regions can include a 30% net-income reduction over six years (5% per year), accelerated depreciation, a 10% foreign-shareholder dividend rate or lower treaty rate, and conditional loss extension up to ten years. Each benefit and start date must match its grant, asset schedule and conditions. [PMK 81/2024 arts. 407-418](https://pajak.go.id/en/node/113110).
+- **Scope and benefits:** The PP 78/2019 facility for listed business fields/regions can include a 30% net-income reduction over six years (5% per year), accelerated depreciation, a 10% foreign-shareholder dividend rate or lower treaty rate, and conditional loss extension up to ten years. Each benefit and start date must match its grant, asset schedule and conditions. [PMK 81/2024 arts. 407-418](https://jdih.kemenkeu.go.id/api/download/637047be-3dba-4347-aba1-98fa7fd5ab3f/2024pmkeuangan081.pdf).
 - **Conservative default** , Apply only after the BKPM Decree is issued.  _(PP 78/2019)_
 
 ### 5.3 Super-Deduction R&D , PMK 153/2020
 
-- **R&D deduction:** At most 300% TOTAL, consisting of the ordinary 100% plus at most 200% additional relief. The additional components depend on the specified patent/plant-variety, overseas-registration, commercialisation and Indonesian institutional-cooperation conditions. It is not an additional 300%. Keep costs, approved project, intellectual-property and commercialisation evidence; confirm the current application and utilisation requirements before claiming. [PMK 81/2024 art. 432](https://pajak.go.id/en/node/113110).
-- **Conservative default** , Apply base 100% only. Apply super-deduction only after KMK is issued.  _(PMK 153/2020)_
+- **R&D deduction:** At most 300% TOTAL, consisting of the ordinary 100% plus at most 200% additional relief. The additional components depend on the specified patent/plant-variety, overseas-registration, commercialisation and Indonesian institutional-cooperation conditions. It is not an additional 300%. Keep costs, approved project, intellectual-property and commercialisation evidence; confirm the current application and utilisation requirements before claiming. [PMK 81/2024 art. 432](https://jdih.kemenkeu.go.id/api/download/637047be-3dba-4347-aba1-98fa7fd5ab3f/2024pmkeuangan081.pdf).
+- **Utilisation:** Use the current OSS application and notification procedure and verify the intellectual-property or commercialisation event and supporting evidence before claiming. The extra deduction is capped each year at 40% of taxable income before that deduction. Unused eligible amounts can carry forward under art. 435. [PMK 81/2024 arts. 435–441](https://jdih.kemenkeu.go.id/api/download/637047be-3dba-4347-aba1-98fa7fd5ab3f/2024pmkeuangan081.pdf).
 
 ### 5.4 Super-Deduction Vocational Training , PMK 128/2019
 
@@ -186,7 +187,7 @@ Intangibles, software, special industries, asset disposals, insurance recoveries
 
 ### 5.6 KEK, Free Trade Zones, Bonded Zones
 
-- **Special zones detail** , Special Economic Zones (KEK), Free Trade Zones (Batam, Bintan, Karimun), and Bonded Zones (Kawasan Berikat) carry sector-specific PPh, PPN, PPnBM, and customs facilities under PP 12/2020 and PP 41/2021. Flag to a specialist.  _(PP 12/2020; PP 41/2021)_
+- **Special zones:** Apply the separate rules for [Special Economic Zones under PP 40/2021](https://peraturan.bpk.go.id/Download/154627/PP%20Nomor%2040%20Tahun%202021.pdf), [Free Trade and Free Port Zones under PP 41/2021](https://jdih.kemenkeu.go.id/api/download/e6f5eff3-09fb-4a18-a232-b7079ba5bb4e/41TAHUN2021PP.pdf), and [bonded zones](https://jdih.kemenkeu.go.id/dok/65-pmk-04-2021/summary). Verify the site, activity, permit and relevant tax or customs facility.
 
 ### 5.7 Director Remuneration Reasonableness
 
@@ -194,15 +195,15 @@ Intangibles, software, special industries, asset disposals, insurance recoveries
 
 ### 5.8 Bad Debt Write-Off , Pasal 6(1)(h)
 
-- **Bad debts:** Require commercial P&L recognition, the debtor list furnished to DJP and one of the statutory recovery/settlement/publication/acknowledgement conditions. The recovery-condition exception for the specified small debtors must also be tested, not discarded. Financial institutions may have different rules. The law does not make every uncollected invoice deductible. [Income Tax Law art. 6(1)(h)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
+- **Bad debts:** Require commercial P&L recognition, the debtor list furnished to DJP and one of the statutory recovery/settlement/publication/acknowledgement conditions. The recovery-condition exception for the specified small debtors must also be tested, not discarded. Financial institutions may have different rules. The law does not make every uncollected invoice deductible. [Income Tax Law art. 6(1)(h)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a).
 
 ## Monthly PPh 25 instalments
 
-1. Ordinary prior-year tax less eligible PPh 22/23 and permitted art. 24 foreign credits, divided by the number of months in the relevant year/part year, supplies the base. Do not deduct prior-year PPh 25 again in that formula. Employee PPh 21 is not the resident PT's own credit; PPh 26 paid as a withholding agent is not its credit either. [Income Tax Law art. 25(1)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PMK 81/2024 arts. 226-237](https://pajak.go.id/en/node/113110).
-2. Before the annual return is filed within its filing period, art. 25(2) carries forward the final instalment of the preceding year. Do not impose a universal May-to-April start when the return is filed earlier, late or under extension, amended, or an assessment intervenes. Each special case has its own rule. [Income Tax Law art. 25(2),(4),(6)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
-3. An ordinary newly registered taxpayer covered by PMK 81 art. 237 has nil instalments in its registration year. Banks, listed companies, state-owned enterprises, taxpayers required to prepare periodic statements, certain individual traders, conversions and reorganisations have separate arts. 227-236 rules. Do not impose forecast-profit instalments on every new company or extend the nil rule to those exceptions. [PMK 81 arts. 226-237](https://pajak.go.id/en/node/113110).
-4. Payment is ordinarily by the following month's fifteenth, with applicable holiday relief and validated state receipt. A proposed reduction is not an automatic percentage discount; confirm the current application rule and actual DJP decision. Not yet confirmed: an individual reduction application's permitted basis, evidence and effective period. The old no-proof 25% allowance is not certified. [PMK 81 arts. 94,100](https://pajak.go.id/en/node/113110).
-5. Late payment uses the minister's actual applicable monthly interest, with any part-month counting in full and the statutory cap. Never use a fixed percentage or daily proration as an estimate of the legal charge. [KUP art. 9(2a)-(2c)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
+1. Ordinary prior-year tax less eligible PPh 22/23 and permitted art. 24 foreign credits, divided by the number of months in the relevant year/part year, supplies the base. Do not deduct prior-year PPh 25 again in that formula. Employee PPh 21 is not the resident PT's own credit; PPh 26 paid as a withholding agent is not its credit either. [Income Tax Law art. 25(1)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a); [PMK 81/2024 arts. 226-237](https://jdih.kemenkeu.go.id/api/download/637047be-3dba-4347-aba1-98fa7fd5ab3f/2024pmkeuangan081.pdf).
+2. Before the annual return is filed within its filing period, art. 25(2) carries forward the final instalment of the preceding year. Do not impose a universal May-to-April start when the return is filed earlier, late or under extension, amended, or an assessment intervenes. Each special case has its own rule. [Income Tax Law art. 25(2),(4),(6)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a).
+3. An ordinary newly registered taxpayer covered by PMK 81 art. 237 has nil instalments in its registration year. Banks, listed companies, state-owned enterprises, taxpayers required to prepare periodic statements, certain individual traders, conversions and reorganisations have separate arts. 227-236 rules. Do not impose forecast-profit instalments on every new company or extend the nil rule to those exceptions. [PMK 81 arts. 226-237](https://jdih.kemenkeu.go.id/api/download/637047be-3dba-4347-aba1-98fa7fd5ab3f/2024pmkeuangan081.pdf).
+4. Payment is ordinarily by the following month's fifteenth, with applicable holiday relief and validated state receipt. A proposed reduction is not an automatic percentage discount; confirm the current application rule and actual DJP decision. Not yet confirmed: an individual reduction application's permitted basis, evidence and effective period. The old no-proof 25% allowance is not certified. [PMK 81 arts. 94,100](https://jdih.kemenkeu.go.id/api/download/637047be-3dba-4347-aba1-98fa7fd5ab3f/2024pmkeuangan081.pdf).
+5. Late payment uses the minister's actual applicable monthly interest, with any part-month counting in full and the statutory cap. Never use a fixed percentage or daily proration as an estimate of the legal charge. [KUP art. 9(2a)-(2c)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a).
 
 ## Section 7 , Transfer Pricing
 
@@ -210,41 +211,41 @@ Intangibles, software, special industries, asset disposals, insurance recoveries
 
 ### 7.1 The Arm's-Length Principle , PKKU
 
-- **PKKU definition** , Related-party transactions (hubungan istimewa, Pasal 18(4) UU PPh) must apply Prinsip Kewajaran dan Kelaziman Usaha (PKKU) , the Indonesian arm's-length principle. Five OECD methods (CUP, RPM, CPM, TNMM, Profit Split) plus valuation techniques for intangibles.  _(Pasal 18(4) UU PPh)_
+- **Arm's-length methods:** Choose the most appropriate statutory method under PMK 172/2023 art. 9. The list includes comparable uncontrolled price, resale price, cost plus, profit split, transactional net margin, comparable uncontrolled transaction, tangible or intangible asset valuation, and business valuation. [PMK 172/2023 arts. 8–10](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf).
 
 ### 7.2 Related-Party Definition , Pasal 18(4)
 
-- **Special relationship:** Test at least 25% direct/indirect participation or common participation, direct/indirect control, or blood/marriage relationships in the straight or lateral line **one degree**. The old blood-relative second-degree statement was wrong. PMK 172 also requires the actual influence/control facts and arm's-length analysis. [Income Tax Law art. 18(4)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PMK 172/2023](https://pajak.go.id/index.php/id/peraturan/penerapan-prinsip-kewajaran-dan-kelaziman-usaha-dalam-transaksi-yang-dipengaruhi-hubungan).
+- **Special relationship:** Test at least 25% direct/indirect participation or common participation, direct/indirect control, or blood/marriage relationships in the straight or lateral line **one degree**. The old blood-relative second-degree statement was wrong. PMK 172 also requires the actual influence/control facts and arm's-length analysis. [Income Tax Law art. 18(4)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a); [PMK 172/2023](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf).
 
 ### 7.3 Documentation Thresholds , PMK 172/2023
 
-- **Documentation trigger:** Master/local-file thresholds use the PRECEDING tax year and require related-party transactions; lower-tax affiliate dealings are a separate limb. Apply short-year annualisation and permitted foreign-currency conversion in art. 16. Being below the documentation thresholds does not remove the arm's-length obligation. [PMK 172/2023 art. 16](https://pajak.go.id/index.php/id/peraturan/penerapan-prinsip-kewajaran-dan-kelaziman-usaha-dalam-transaksi-yang-dipengaruhi-hubungan).
+- **Documentation trigger:** Master/local-file thresholds use the PRECEDING tax year and require related-party transactions; lower-tax affiliate dealings are a separate limb. Apply short-year annualisation and permitted foreign-currency conversion in art. 16. Being below the documentation thresholds does not remove the arm's-length obligation. [PMK 172/2023 art. 16](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf).
 
 **Documentation thresholds table**  _(PMK 172/2023)_
 
 | Document | Threshold |
 | --- | --- |
-| **Master File & Local File** | Prior-year gross revenue > IDR 50B; OR related-party tangible-goods transactions > IDR 20B; OR related-party services / interest / royalty / other transactions > IDR 5B per category [Official provision](https://pajak.go.id/index.php/id/peraturan/penerapan-prinsip-kewajaran-dan-kelaziman-usaha-dalam-transaksi-yang-dipengaruhi-hubungan) |
-| **CbCR** | Ultimate parent of a group with consolidated preceding-year revenue at least IDR 11 trillion; equality qualifies [Official provision](https://pajak.go.id/index.php/id/peraturan/penerapan-prinsip-kewajaran-dan-kelaziman-usaha-dalam-transaksi-yang-dipengaruhi-hubungan) |
-| Affiliate in a jurisdiction whose statutory income-tax rate is lower than Indonesia's applicable statutory rate | Documentation required regardless of value [Official provision](https://pajak.go.id/index.php/id/peraturan/penerapan-prinsip-kewajaran-dan-kelaziman-usaha-dalam-transaksi-yang-dipengaruhi-hubungan) |
+| **Master File & Local File** | Prior-year gross revenue > IDR 50B; OR related-party tangible-goods transactions > IDR 20B; OR related-party services / interest / royalty / other transactions > IDR 5B per category [Official provision](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf) |
+| **CbCR** | Ultimate parent of a group with consolidated preceding-year revenue at least IDR 11 trillion; equality qualifies [Official provision](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf) |
+| Affiliate in a jurisdiction whose statutory income-tax rate is lower than Indonesia's applicable statutory rate | Documentation required regardless of value [Official provision](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf) |
 
-### 7.4 PMK 172/2023 Key Updates (effective 2024)
+### 7.4 Applying PMK 172/2023
 
-- **PMK 172/2023 updates** , Clarifies the ex-ante pricing approach (support pricing at transaction time, not retrospectively); details guidance for intangibles, intra-group services (benefit test), financial transactions, and business restructuring; confirms MAP and APA routes; reinforces secondary adjustments where retained cash is treated as a constructive dividend.  _(PMK 172/2023)_
+- **Timing and scope:** PMK 172/2023 came into force on promulgation on 29 December 2023. Apply its period-specific transitional provisions. Analyse pricing at the transaction date, including the prescribed preliminary analysis for services, intangibles, financing and business restructuring. The regulation also covers secondary adjustments, MAP and APA. [PMK 172/2023 arts. 4, 13–15 and 72–75](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf).
 
 ### 7.5 Filing Mechanics
 
-- **Master File / Local File deadline** , Must exist within 4 months after fiscal year-end; submitted on DJP request during examination; summary statement filed with SPT 1771.  _(PMK 172/2023)_
-- **CbCR:** Domestic ultimate parent at the inclusive threshold prepares the report within twelve months. Foreign-parent constituent obligations have the separate art. 16(5)-(6) conditions. Art. 19 distinguishes the master/local summary with the current annual return from CbCR with the following-year return; check current portal delivery and notifications rather than treating both as the same deadline. [PMK 172/2023 arts. 16-19](https://pajak.go.id/index.php/id/peraturan/penerapan-prinsip-kewajaran-dan-kelaziman-usaha-dalam-transaksi-yang-dipengaruhi-hubungan).
-- **TP disclosure** , SPT 1771 Lampiran Khusus 3A / 3A-1 / 3A-2 , discloses related-party transactions and methods used.
-- **Conservative default** , If revenue > IDR 50B or any PMK 172/2023 threshold is crossed, flag TP documentation as mandatory. Treat undocumented related-party transactions as TP adjustment risk.  _(PMK 172/2023)_
+- **Master and local files:** Make them available within four months of year-end and attach their summary to the applicable annual return. Provide the documents within one month of a DJP compliance-monitoring or audit request. [PMK 172/2023 arts. 18–19 and 34](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf).
+- **CbCR:** Domestic ultimate parent at the inclusive threshold prepares the report within twelve months. Foreign-parent constituent obligations have the separate art. 16(5)-(6) conditions. Art. 19 distinguishes the master/local summary with the current annual return from CbCR with the following-year return; check current portal delivery and notifications rather than treating both as the same deadline. [PMK 172/2023 arts. 16-19](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf).
+- **Related-party disclosure:** Use the applicable Coretax related-party annexes and current instructions under PER-11/PJ/2025 as amended by PER-12/PJ/2026. [DJP corporate return guidance](https://pajak.go.id/id/wajib-pajak/badan/pelaporan/spt-tahunan-pelaporan), [PER-12/PJ/2026](https://www.jdih.kemenkeu.go.id/dok/per-12pj2026).
+- **Documentation requirement:** Confirm that the taxpayer conducts related-party transactions and then apply the relevant preceding-year threshold or lower-tax-jurisdiction condition. Test the domestic-parent and foreign-parent reporting rules separately. [PMK 172/2023 art. 16](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf).
 
 ## Worked cases
 
 ### Case 1. Small PT with Article 31E facility
 
 **Facts:** PT Sumber Makmur (resident PT, fiscal year 2026 calendar).
-- Gross turnover (peredaran bruto): **IDR 6,000,000,000**.
+- Article 31E gross turnover (peredaran bruto): **IDR 6,000,000,000**, including the stated final-tax bank interest.
 - Commercial profit before tax: IDR 1,560,000,000.
 - Fiscal adjustments: + IDR 30,000,000 non-deductible entertainment (Pasal 9); + IDR 10,000,000 non-deductible private car; − IDR 100,000,000 bank interest already taxed via PPh Final.
 - Tax credits: PPh 22 IDR 15,000,000; PPh 23 IDR 25,000,000; PPh 25 paid IDR 80,000,000.
@@ -263,24 +264,24 @@ Intangibles, software, special industries, asset disposals, insurance recoveries
 
 ### 8.4 PPh 29 (annual underpayment):
 
-- **PPh 29 calculation** , 198,000,000 − 15,000,000 − 25,000,000 − 80,000,000 = IDR 78,000,000 Pay IDR 78,000,000 before filing SPT 1771, no later than 30 April 2027.
+- **PPh 29 calculation** , 198,000,000 − 15,000,000 − 25,000,000 − 80,000,000 = IDR 78,000,000 Pay IDR 78,000,000 before filing the corporate annual return, no later than 30 April 2027.
 
 ### 8.5 Following-year PPh 25:
 
-- **Following-year monthly instalment illustration:** (198,000,000 - 15,000,000 - 25,000,000) / 12 = 13,166,666.666... before prescribed payment rounding. This is the ordinary 2027 base from the 2026 return, not a second subtraction of the 80,000,000 instalments used in annual settlement. Determine the exact effective period from actual filing/extension history. [Income Tax Law art. 25](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
+- **Following-year monthly instalment illustration:** (198,000,000 - 15,000,000 - 25,000,000) / 12 = 13,166,666.666... before prescribed payment rounding. This is the ordinary 2027 base from the 2026 return, not a second subtraction of the 80,000,000 instalments used in annual settlement. Determine the exact effective period from actual filing/extension history. [Income Tax Law art. 25](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a).
 
 
 
 ### Recomputing Case 1
 
-The original PT's calendar-2026 turnover is 6,000,000,000, commercial profit 1,200,000,000, positive fiscal adjustments 400,000,000 and negative adjustments 100,000,000. No losses, special-sector rate, listed reduction, incentive or final-tax income is assumed. Annual eligible credits are 15,000,000 and 25,000,000; instalments paid are 80,000,000. The facility is proportional to turnover, not the first slice of profit. [Income Tax Law arts. 17,25,31E](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
+Use the same facts as Case 1. Gross turnover under Article 31E is IDR 6,000,000,000. Commercial profit is IDR 1,560,000,000, add-backs total IDR 40,000,000, and the final-tax bank interest removed from commercial profit is IDR 100,000,000. Annual eligible credits are IDR 15,000,000 and IDR 25,000,000, and instalments paid are IDR 80,000,000. [Income Tax Law arts. 17, 25 and 31E](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a).
 
 ```oa-check
 name: Ordinary PT Article 31E and separate annual settlement
 inputs:
   turnover: 6000000000
-  profit: 1200000000
-  addbacks: 400000000
+  profit: 1560000000
+  addbacks: 40000000
   reductions: 100000000
   eligible_turnover: 4800000000
   facility_rate: 0.11
@@ -306,7 +307,7 @@ expected:
 
 ### Case 2. Exact ceiling and ordinary new-company boundary
 
-Assume established ordinary-tax companies, no special income, turnover exactly 50,000,000,000 and taxable income 5,000,000,000. The facility slice is 480,000,000 and tax 1,047,200,000. At turnover 50,000,000,001 the same taxable profit has no Article 31E facility, giving 1,100,000,000. Separately, if an ordinary company is newly registered in 2026 and falls under PMK 81 art. 237, registration-year PPh 25 is nil, even if it forecasts that taxable profit; the annual liability is not erased. [Income Tax Law art. 31E](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PMK 81 art. 237](https://pajak.go.id/en/node/113110).
+Assume established ordinary-tax companies, no special income, turnover exactly 50,000,000,000 and taxable income 5,000,000,000. The facility slice is 480,000,000 and tax 1,047,200,000. At turnover 50,000,000,001 the same taxable profit has no Article 31E facility, giving 1,100,000,000. Separately, if an ordinary company is newly registered in 2026 and falls under PMK 81 art. 237, registration-year PPh 25 is nil, even if it forecasts that taxable profit; the annual liability is not erased. [Income Tax Law art. 31E](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a); [PMK 81 art. 237](https://jdih.kemenkeu.go.id/api/download/637047be-3dba-4347-aba1-98fa7fd5ab3f/2024pmkeuangan081.pdf).
 
 ```oa-check
 name: Inclusive Article 31E turnover ceiling
@@ -357,7 +358,7 @@ Search this method's cited articles and the taxpayer's books, prior return, loss
 
 ### 9.1 Annual corporate return schedule map
 
-Preserve schedules for commercial profit, fiscal adjustments, COGS and expenses, financial statements, eligible credits, final and exempt income, shareholders/directors/commissioners, investments, related-party transactions, depreciation/amortisation and loss carryforward. The old 1771-I to VI and special 1A/1B/2A/3A references are historical navigation aids only; their exact 2026 Coretax counterparts have not been confirmed. Do not place employee PPh 21 or tax withheld from a non-resident supplier in the resident company's own credit schedule. Match the actual official form before producing a filing-ready mapping. [Income Tax Law arts. 6,9,25,28,31E](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PER-3/PJ/2026](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0).
+Preserve schedules for commercial profit, fiscal adjustments, COGS and expenses, financial statements, eligible credits, final and exempt income, shareholders/directors/commissioners, investments, related-party transactions, depreciation/amortisation and loss carryforward. The old 1771-I to VI and special 1A/1B/2A/3A references are historical navigation aids only; their exact 2026 Coretax counterparts have not been confirmed. Do not place employee PPh 21 or tax withheld from a non-resident supplier in the resident company's own credit schedule. Match the actual official form before producing a filing-ready mapping. [Income Tax Law arts. 6,9,25,28,31E](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a); [PER-3/PJ/2026](https://pajak.go.id/id/peraturan/XD3LOZQlkm-per-3-pj-2026).
 
 ### 9.2 Filing Deadlines
 
@@ -365,31 +366,31 @@ Preserve schedules for commercial profit, fiscal adjustments, COGS and expenses,
 
 | Item | Deadline |
 | --- | --- |
-| SPT 1771 (calendar year) | **30 April of the following year** [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| SPT 1771 (non-calendar FY) | Last day of the 4th month after FY-end [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Extension request | Up to 2 months under Pasal 3(4) UU KUP, with provisional payment based on reasonable estimate [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| PPh 29 (annual underpayment) | Before SPT is filed [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Monthly PPh 25 | 15th of the following month [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Corporate annual return (calendar year) | **30 April of the following year** [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Corporate annual return (non-calendar FY) | Last day of the 4th month after FY-end [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Extension request | Up to 2 months under Pasal 3(4) UU KUP, with provisional payment based on reasonable estimate [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| PPh 29 (annual underpayment) | Before SPT is filed [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Monthly PPh 25 | 15th of the following month [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
 
 ### 9.3 Filing Portal , Coretax DJP
 
-- **Coretax:** Use the current DJP channel for tax year 2025 onward. Select the actual tax year, return and submission/correction type; confirm the authorised signer, current attachments, receipt and supported channel. Do not certify old form numbers or portal screens from memory. [PER-3/PJ/2026](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0).
+- **Coretax:** Use the current DJP channel for tax year 2025 onward. Select the actual tax year, return and submission/correction type; confirm the authorised signer, current attachments, receipt and supported channel. Do not certify old form numbers or portal screens from memory. [PER-3/PJ/2026](https://pajak.go.id/id/peraturan/XD3LOZQlkm-per-3-pj-2026).
 
 ### 9.4 Audit and Statute of Limitations
 
-- **Assessment and criminal time limits:** Keep the ordinary assessment, additional assessment and criminal-prosecution limits separate. Not yet confirmed: the exact exceptional time limit and procedural route for the taxpayer's facts. The old suggestion that a five-year assessment period universally becomes ten years for fraud is not certified. Keep the SP2/audit notice and SKPKB, SKPLB, SKPN or SKPKBT documents and route disputes to a specialist. [KUP assessment and criminal provisions, consolidated official text](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
+- **Assessment and criminal time limits:** Keep the ordinary assessment, additional assessment and criminal-prosecution limits separate. Not yet confirmed: the exact exceptional time limit and procedural route for the taxpayer's facts. The old suggestion that a five-year assessment period universally becomes ten years for fraud is not certified. Keep the SP2/audit notice and SKPKB, SKPLB, SKPN or SKPKBT documents and route disputes to a specialist. [KUP assessment and criminal provisions, consolidated official text](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a).
 
 ### 9.5 Common Penalty Headings
 
 **Common penalty headings table**
 
-| Infraction | Sanction [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Infraction | Sanction [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
 | --- | --- |
-| Late filing of SPT 1771 | IDR 1,000,000 administrative fine (Pasal 7 UU KUP) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Late payment of PPh 25 / PPh 29 | Monthly interest per Menkeu rate (actual applicable rate, capped 24 months; part-month counts in full) , Pasal 9(2a) UU KUP [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| SKPKB underpayment | Tax due + monthly interest under UU HPP framework [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Incorrect return, negligence or an assessment | Identify the actual assessment/correction/criminal provision first; no universal percentage is certified [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Tax evasion | Imprisonment 6 months to 6 years + 2× to 4× tax shortfall (Pasal 39 UU KUP) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Late filing of the corporate annual return | IDR 1,000,000 administrative fine (Pasal 7 UU KUP) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Late payment of PPh 25 or PPh 29 | Apply the ministerial monthly interest rate, up to 24 months with any part month counted in full. Art. 9(2a) applies to late monthly instalments and art. 9(2b) to annual underpayment paid after the annual filing deadline. [KUP art. 9(2a)–(2c)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| SKPKB underpayment | Use the assessment ground to determine the sanction. KUP art. 13(2) and parts of art. 13(3) impose interest. Under art. 13(3)(d), specified withheld or collected income tax that was underremitted attracts a 75% increase. [KUP art. 13(2)–(3b)](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Incorrect return, negligence or an assessment | Identify the actual assessment/correction/criminal provision first; no universal percentage is certified [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Tax evasion | Imprisonment 6 months to 6 years + 2× to 4× tax shortfall (Pasal 39 UU KUP) [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
 
 - **Conservative default** , File on time. Pay PPh 29 before filing. Do not advise on late-filing strategies.
 
@@ -399,16 +400,16 @@ Preserve schedules for commercial profit, fiscal adjustments, COGS and expenses,
 
 | Item | Default |
 | --- | --- |
-| Turnover band unknown | Obtain actual turnover; no final rate/facility decision on an unknown band [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Listed-company status unknown | Obtain listing and ownership evidence; show ordinary-rate comparison separately if useful [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Tax holiday / allowance unverified | Apply standard rate; flag pending application [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Related-party status unknown | Obtain ownership, control and family facts; unresolved status is flagged [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| TP documentation unknown | Test all preceding-year and lower-tax-affiliate triggers, not revenue alone [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| BIK treatment unknown | Apply business-purpose test and the actual PMK 66 benefit/exemption entry [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Expense purpose unclear | Request business-purpose evidence; no invented private-use conclusion [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Asset useful life unknown | Classify the asset under PMK 72/2023; unresolved classification stays open [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Bookkeeping currency | IDR (USD requires DJP permission) [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Tax loss carry-forward | Verify 5-year window per loss year [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Turnover band unknown | Obtain actual turnover; no final rate/facility decision on an unknown band [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Listed-company status unknown | Obtain listing and ownership evidence; show ordinary-rate comparison separately if useful [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Tax holiday / allowance unverified | Apply standard rate; flag pending application [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Related-party status unknown | Obtain ownership, control and family facts; unresolved status is flagged [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| TP documentation unknown | Test all preceding-year and lower-tax-affiliate triggers, not revenue alone [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| BIK treatment unknown | Apply business-purpose test and the actual PMK 66 benefit/exemption entry [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Expense purpose unclear | Request business-purpose evidence; no invented private-use conclusion [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Asset useful life unknown | Classify the asset under PMK 72/2023; unresolved classification stays open [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Bookkeeping currency | Use rupiah by default. Verify the applicable notification or permission before using English and US dollars. [KUP art. 28](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a), [PER-8/PJ/2025 arts. 16 and 19–21](https://www.jdih.kemenkeu.go.id/download/c391f62b-eac4-47ec-8cc2-50e4fe748b13/PER-8_PJ_2025.pdf) |
+| Tax loss carry-forward | Verify 5-year window per loss year [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
 
 ## Section 11 , Cross-References
 
@@ -416,29 +417,32 @@ Preserve schedules for commercial profit, fiscal adjustments, COGS and expenses,
 
 | Topic | Skill |
 | --- | --- |
-| Payroll withholding (PPh 21) | `id-payroll-pph21` [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| PPN / VAT / e-Faktur / PKP | `indonesia-vat` [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Foundation principles | `foundation` [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| Intake checklist | `intake` [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
-| PPh Final UMKM 0.5% (alternative regime) | `id-pph-final-umkm` [Official provision](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Payroll withholding (PPh 21) | `id-payroll-pph21` [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| PPN / VAT / e-Faktur / PKP | `indonesia-vat` [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Foundation principles | `foundation` [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| Intake checklist | `intake` [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
+| PPh Final UMKM 0.5% (alternative regime) | `id-pph-final-umkm` [Official provision](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) |
 
 When a topic crosses skills (e.g., a PPh 21 BIK question with PPh Badan deductibility impact), address both , load the relevant cross-skill before answering.
 
 ## Sources
 
-All following readings were made on 14 November 2026. A source date is not a claim that every annex or later amendment was read.
+The dates below identify the passages read. The audit applied legislation and notices available at 22 November 2026.
 
 | Official source | Read for |
 |---|---|
-| [DJP consolidated tax laws through UU 6/2023](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) | KUP arts. 3,7,9,28; Income Tax Law arts. 6,9,14,17,18(4),25,31E and their relevant explanations; deductions, liability, loss, credits and reporting framework Read 2026-11-14. |
-| [PP 55/2022](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan) | Arts. 56-65, including listed-company conditions and the earlier turnover regime Read 2026-11-14. |
-| [PP 20/2026](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0) | Changed final-tax eligibility, owner/household aggregation, utilisation periods and transitions; no automatic new ordinary-PT entitlement Read 2026-11-14. |
-| [PMK 72/2023](https://www.pajak.go.id/id/peraturan/penyusutan-harta-berwujud-danatau-amortisasi-harta-tak-berwujud) | Arts. 1-7 ordinary tangible depreciation, groups, start date, unlisted assets, buildings and improvements Read 2026-11-14. |
+| [DJP consolidated tax laws through UU 6/2023](https://pajak.go.id/media/sdsn-2023-7-1-0-2816268a) | KUP arts. 3,7,9,28; Income Tax Law arts. 6,9,14,17,18(4),25,31E and their relevant explanations; deductions, liability, loss, credits and reporting framework Read 2026-11-14. |
+| [PP 55/2022](https://www.pajak.go.id/id/peraturan/XD3LYwn1km-55-tahun-2022) | Arts. 56-65, including listed-company conditions and the earlier turnover regime Read 2026-11-14. |
+| [PP 20/2026](https://jdih.kemenkeu.go.id/api/download/d057ff82-50e7-4127-b66b-f704a36f071d/2026pp020.pdf) | Changed final-tax eligibility, owner/household aggregation, utilisation periods and transitions; no automatic new ordinary-PT entitlement Read 2026-11-14. |
+| [PMK 72/2023](https://jdih.kemenkeu.go.id/api/download/46cededa-86ae-4cc9-93e5-b6bef8892074/2023pmkeuangan072.pdf) | Arts. 1-7 ordinary tangible depreciation, groups, start date, unlisted assets, buildings and improvements Read 2026-11-14. |
 | [PMK 66/2023](https://jdih.kemenkeu.go.id/api/download/dce5daf1-d4e5-4bd1-bc4e-2c086ae33c04/2023pmkeuangan066.pdf) | Arts. 2-4, transition arts. 23-24 and annex A; deduction start, benefit categories, distinct gift/sport/housing conditions and withholding transition Read 2026-11-14. |
 | [PMK 130/2020](https://pajak.go.id/id/peraturan/pemberian-fasilitas-pengurangan-pajak-penghasilan-badan) | Arts. 2-5,12; investment and reduction bands, pioneer-sector scope and grant/utilisation boundaries. Fresh 2026 application entitlement is not certified Read 2026-11-14. |
-| [PMK 172/2023](https://pajak.go.id/index.php/id/peraturan/penerapan-prinsip-kewajaran-dan-kelaziman-usaha-dalam-transaksi-yang-dipengaruhi-hubungan) | Arts. 16-19, prior-year thresholds, inclusive domestic-parent CbCR threshold, availability and annual reporting; other case-specific method/APA/MAP detail not recertified here Read 2026-11-14. |
-| [PMK 81/2024 operative DJP text](https://pajak.go.id/en/node/113110) | Arts. 94,100,226-237 and 407-418,432: payments, instalments, investment allowance and maximum total R&D deduction. Later amendments and any taxpayer-specific incentive remain part of the separate grant check Read 2026-11-14. |
-| [PER-3/PJ/2026](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) | Current filing/receipt/processing framework, to be matched to the applicable return and supported submission channel Read 2026-11-14. |
+| [PMK 172/2023](https://www.jdih.kemenkeu.go.id/api/download/b0b74668-cf4d-456b-bb23-be5e1aeac2cb/2023pmkeuangan172.pdf) | Arts. 16-19, prior-year thresholds, inclusive domestic-parent CbCR threshold, availability and annual reporting; other case-specific method/APA/MAP detail not recertified here Read 2026-11-14. |
+| [PMK 81/2024 operative DJP text](https://jdih.kemenkeu.go.id/api/download/637047be-3dba-4347-aba1-98fa7fd5ab3f/2024pmkeuangan081.pdf) | Arts. 94,100,226-237 and 407-418,432: payments, instalments, investment allowance and maximum total R&D deduction. Later amendments and any taxpayer-specific incentive remain part of the separate grant check Read 2026-11-14. |
+| [PER-3/PJ/2026](https://pajak.go.id/id/peraturan/XD3LOZQlkm-per-3-pj-2026) | Current filing/receipt/processing framework, to be matched to the applicable return and supported submission channel Read 2026-11-14. |
+| [DJP corporate return guidance](https://pajak.go.id/id/wajib-pajak/badan/pelaporan/spt-tahunan-pelaporan) and [PER-12/PJ/2026](https://www.jdih.kemenkeu.go.id/dok/per-12pj2026) | Current corporate workflow and revised framework. Read 2026-11-24. |
+| [PP 40/2021](https://peraturan.bpk.go.id/Download/154627/PP%20Nomor%2040%20Tahun%202021.pdf), [PP 41/2021](https://jdih.kemenkeu.go.id/api/download/e6f5eff3-09fb-4a18-a232-b7079ba5bb4e/41TAHUN2021PP.pdf) and [bonded-zone rules](https://jdih.kemenkeu.go.id/dok/65-pmk-04-2021/summary) | Distinct zone frameworks and repeal of PP 12/2020. Read 2026-11-24. |
+| [PMK 69/2024](https://www.pajak.go.id/index.php/id/peraturan/perubahan-atas-peraturan-menteri-keuangan-nomor-130pmk0102020-tentang-pemberian-fasilitas) and [PER-8/PJ/2025](https://www.jdih.kemenkeu.go.id/download/c391f62b-eac4-47ec-8cc2-50e4fe748b13/PER-8_PJ_2025.pdf) | Tax holiday proposal deadline and currency administration. Read 2026-11-24. |
 
 Not yet confirmed: listed-company/Article 31E interaction; particular intangible/sector classification and actual-life/accelerated schedules; monthly ministerial interest; exact 2026 annual form fields, payment codes and instalment-reduction procedure; individual incentive eligibility and utilisation; gift/benefit exceptions; exceptional assessment/dispute limits. These are named work items, not permission to supply an old figure.
 

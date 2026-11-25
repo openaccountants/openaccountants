@@ -7,14 +7,14 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/india-payroll"
   jurisdiction: "IN"
   tax_year: "2026"
-  last_updated: "2026-11-14"
+  last_updated: "2026-11-22"
 ---
 
 # India Payroll: Salary TDS, Provident Fund, ESI, Professional Tax, Bonus and Gratuity, FY 2026-27
 
 > **General reference only.** This skill is general reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts. Do not rely on it to file, pay or take a tax position without review by a qualified professional in India. Label every computation as an estimate.
 
-Tax year: FY 2026-27, 1 April 2026 to 31 March 2027, the first tax year under the Income-tax Act 2025, which replaced the Income-tax Act 1961 from 1 April 2026. Salary paid up to 31 March 2026 belongs to the 1961 Act and its forms (section 192, Form 16 under section 203, Form 12BB); this skill does not cover it. The labour rules are those in force on 14 November 2026: the Code on Wages 2019 and the Code on Social Security 2020 came into force on 21 November 2025, the Social Security (Central) Rules 2026 (8 May 2026) and the Employees' Provident Funds Scheme 2026 (29 June 2026) on publication, and S.O. 5109(E) set the provident fund wage ceiling at 25,000 rupees a month from 17 September 2026. Rules, rates and section numbers from the old labour Acts (EPF Scheme 1952, ESI Act 1948, Payment of Bonus Act 1965, Payment of Gratuity Act 1972, Minimum Wages Act 1948) are out of date for current payroll unless this skill says otherwise.
+Tax year: FY 2026-27, 1 April 2026 to 31 March 2027, the first tax year under the Income-tax Act 2025, which replaced the Income-tax Act 1961 from 1 April 2026. Salary paid up to 31 March 2026 belongs to the 1961 Act and its forms (section 192, Form 16 under section 203, Form 12BB); this skill does not cover it. The labour rules are those in force on 22 November 2026: the Code on Wages 2019 and the Code on Social Security 2020 came into force on 21 November 2025, the Social Security (Central) Rules 2026 (8 May 2026) and the Employees' Provident Funds Scheme 2026 (29 June 2026) on publication, and S.O. 5109(E) set the provident fund wage ceiling at 25,000 rupees a month from 17 September 2026. Check the commencement and savings provisions for each payroll period. Some earlier instruments continue or are expressly incorporated, including the ESI daily-wage exemption.
 
 ## Who this applies to
 
@@ -82,16 +82,17 @@ The two government (Press Information Bureau) backgrounders print in digits what
 | Provident fund, employer and employee each | Twelve per cent of wages (ten per cent for a notified class) | EPF Scheme 2026 para 18; full detail in `in-pf-esi-employer` | https://egazette.gov.in/WriteReadData/2026/273957.pdf |
 | Provident fund wage ceiling, Chapter III | 25,000 rupees per month | From 17 September 2026 | https://egazette.gov.in/WriteReadData/2026/276299.pdf |
 | ESI employer / employee | Three and one-fourth per cent / three-fourth per cent of wages | Rule 19, rounded to the next higher rupee | https://egazette.gov.in/WriteReadData/2026/272366.pdf |
-| ESI coverage wage limit | 21,000 rupees per month | Ministry of Labour FAQ of 16 March 2026, "at present" | https://www.labour.gov.in/static/uploads/2026/03/a4ccf4c6d97c4f1f36a6d83f8c64213d.pdf |
+| ESI entry wage ceiling | 21,000 rupees per month, or 25,000 for a qualifying person with disability | From 21 November 2026. Continuing members can remain covered to the end of the contribution period after exceeding the ceiling | https://egazette.gov.in/WriteReadData/2026/278112.pdf#page=2 |
+| ESI employee share exemption | Average daily wages of 176 rupees or less | Employee share only. The employer share ordinarily continues | https://egazette.gov.in/WriteReadData/2026/278111.pdf#page=2 |
 | Wages: excluded pay above this share of all remuneration is added back | One-half | Code on Wages s 2(y); same rule in Code on Social Security s 2(88) | https://egazette.gov.in/WriteReadData/2019/210356.pdf |
 | Overtime | Not less than twice the normal rate of wages | Code on Wages s 14 | https://egazette.gov.in/WriteReadData/2019/210356.pdf |
 | Statutory bonus, minimum | Eight and one-third per cent of wages or 100 rupees, whichever is higher | Code on Wages s 26(1); establishments with twenty or more persons | https://egazette.gov.in/WriteReadData/2019/210356.pdf |
 | Statutory bonus, maximum | Twenty per cent of wages | Out of allocable surplus, s 26(3) | https://egazette.gov.in/WriteReadData/2019/210356.pdf |
 | Gratuity | Fifteen days' wages per completed year (monthly wages / 26 x 15) | Code on Social Security s 53; five years' service unless an exception | https://egazette.gov.in/WriteReadData/2020/222111.pdf |
 | Maternity benefit | Up to twenty-six weeks | Twelve weeks with two or more surviving children; Chapter VI | https://egazette.gov.in/WriteReadData/2020/222111.pdf |
-| Maternity medical bonus (backgrounder) | 3,500 rupees | Where the employer gives no free pre-natal and post-natal care | https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251122702601.pdf |
-| Creche allowance (backgrounder) | Not less than 500 rupees per month per child, up to two children | Where a required creche is not provided | https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251122702601.pdf |
-| Profession tax, constitutional maximum | 2,500 rupees a year | State slabs in `in-professional-tax` | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct.aspx |
+| Chapter VI maternity medical bonus | 3,500 rupees, or the applicable notified amount | Where the employer gives no free pre-natal and post-natal care. The ESI confinement benefit has separate conditions and amount | https://egazette.gov.in/WriteReadData/2020/222111.pdf#page=48 |
+| Crèche allowance | At least 500 rupees per child per month, or the notified amount | Qualifying employee, applicable agreement and unavailable facility. Generally up to 2 children, with an exception for multiple births at the second birth | https://egazette.gov.in/WriteReadData/2026/272366.pdf#page=179 |
+| Profession tax, constitutional maximum | 2,500 rupees a year | Article 276(2). State slabs in `in-professional-tax` | https://www.indiacode.nic.in/bitstream/123456789/19150/1/constitution_of_india.pdf |
 | Profession tax, Telangana salary bands | Nil to 15,000; 150 a month from 15,001 to 20,000; 200 a month above 20,000 | Monthly salary or wages | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTSchedule.aspx |
 
 ## The base
@@ -114,16 +115,16 @@ The new regime in section 202(1) applies to every individual unless the person e
 
 ### Rebate and marginal relief
 
-The section 156(2) rebate is for a resident individual only. Where total income under section 202(1) exceeds twelve lakh rupees, section 156(2)(b) cuts the tax to the amount by which total income exceeds twelve lakh rupees, if the tax would otherwise be higher. A non-resident employee gets neither rebate. Marginal relief on surcharge: income-tax plus surcharge "shall not exceed" the tax and surcharge on the threshold plus the income above it (new regime: Finance Act 2026 section 3(5), Tn = Rn + Sn; old regime: Part I-B Paragraph F Table 2, Wn = Un + Vn).
+The section 156(2) rebate is for a resident individual only. Where total income under section 202(1) exceeds twelve lakh rupees, section 156(2)(b) cuts the tax to the amount by which total income exceeds twelve lakh rupees, if the tax would otherwise be higher. The section 156(3) cap limits the new-regime rebate to tax calculated at the slab rates. Both section 156 rebates require Indian residence. Marginal relief on surcharge: income-tax plus surcharge "shall not exceed" the tax and surcharge on the threshold plus the income above it (new regime: Finance Act 2026 section 3(5), Tn = Rn + Sn; old regime: Part I-B Paragraph F Table 2, Wn = Un + Vn).
 
 ### Wages for the Labour Codes
 
-Under section 2(y) of the Code on Wages, wages include basic pay, dearness allowance and retaining allowance, and exclude listed items (for example bonus, employer provident fund contributions, conveyance allowance, house rent allowance, overtime allowance and commission). If the excluded payments under clauses (a) to (i) exceed "one-half, or such other per cent. as may be notified" of all remuneration, the excess is added back to wages. The Code does not require a minimum basic salary; it adds the excess back, which raises the base for the Codes (the government backgrounder says this increases gratuity and similar benefits). Section 2(88) of the Code on Social Security has the same add-back, so provident fund contributions are on the Code's wages. The Ministry of Labour FAQ of 16 March 2026 confirms the definition applies from 21 November 2025 and that an overtime allowance forms part of the components, with any excess over 50 percent added to wages.
+Under section 2(y) of the Code on Wages, wages include basic pay, dearness allowance and retaining allowance, and exclude listed items (for example non-contractual statutory bonus, employer provident fund contributions, conveyance allowance, house rent allowance, overtime allowance and commission). If the excluded payments under clauses (a) to (i) exceed "one-half, or such other per cent. as may be notified" of all remuneration, the excess is added back to wages. The Code does not require a minimum basic salary; it adds the excess back, which raises the base for the Codes (the government backgrounder says this increases gratuity and similar benefits). Section 2(88) of the Code on Social Security has the same add-back, so provident fund contributions are on the Code's wages. The Ministry of Labour FAQ of 16 March 2026 confirms the definition applies from 21 November 2025 and that an overtime allowance forms part of the components, with any excess over 50 percent added to wages.
 
 ### Provident fund and ESI on the payslip
 
-- Provident fund applies to establishments with twenty or more employees (Code on Social Security, First Schedule). Both shares are twelve per cent of wages up to the 25,000 rupee ceiling (from 17 September 2026), rounded to the nearest rupee; an employee above the ceiling on joining is an excluded employee unless both opt in writing (paragraph 9(4)). The employer pays both shares plus administrative charges within fifteen days of the close of every month and may never deduct its own share from wages (paragraphs 20 and 21). The employer is responsible for employees engaged through a contractor whose establishment is not registered independently (paragraph 20(2) to (4)).
-- ESI applies to establishments with ten or more persons (one in a notified hazardous occupation); contributions start "on and from the date on which any benefits ... are provided by the Corporation" in the area, a date the Central Government notifies (First Schedule, Chapter IV, third proviso), though the government backgrounder of 21 November 2025 says coverage now applies pan-India with no notified-area limit and establishments with fewer than ten employees may opt in. Employee three-fourth per cent, employer three and one-fourth per cent, each rounded up to the next rupee; no employer share for a person with disability for up to three years (rule 19(2)). ESI due dates are in ESIC regulations no allowed page carries: confirm on the ESIC portal.
+- Provident fund applies to establishments with twenty or more employees (Code on Social Security, First Schedule). The scheme ordinarily uses 12% each (10% for a notified class), rounded to the nearest rupee. Apply the ceiling for the month. The Gazette set 15,000 rupees from 29 May 2026, replaced with 25,000 rupees from 17 September 2026; an employee above the ceiling on joining is an excluded employee unless both opt in writing (paragraph 9(4)). The employer pays both shares plus administrative charges within fifteen days of the close of every month and may never deduct its own share from wages (paragraphs 20 and 21). The employer is responsible for employees engaged through a contractor whose establishment is not registered independently (paragraph 20(2) to (4)).
+- ESI ordinarily applies from 10 persons, with a seasonal-factory exception and a one-employee threshold for notified hazardous or life-threatening occupations. Check the date notified for provision of benefits and any notified opt-in coverage. Employee 0.75% and employer 3.25% are rounded up to the next rupee. Apply the employee daily-wage exemption and, where eligible, the separate disability employer-share relief for up to 3 years or the notified period. After a covered employee exceeds the applicable ceiling during a contribution period, contributions continue to its end. [Labour Ministry FAQ 124](https://www.labour.gov.in/static/uploads/2026/11/da640b1558a315e81e22ce5ac12f463f.pdf).
 - Pension split, EDLI, administrative charges and all ESI detail: `in-pf-esi-employer`.
 
 ### Profession tax
@@ -137,7 +138,7 @@ The Code on Wages is in force from 21 November 2025 under S.O. 5322(E) and repea
 | Authority or parameter | Rule |
 | --- | --- |
 | Central Government | Fixes the floor wage "taking into account minimum living standards of a worker"; different floor wages may be fixed for different geographical areas (section 9(1)) |
-| Appropriate Government (Central or State) | Fixes minimum rates of wages, which "shall not be less than the floor wage" (section 9(2)); reviews them at an interval not exceeding five years (section 8(4)) |
+| Appropriate Government (Central or State) | Fixes minimum rates no lower than the floor wage or a higher existing minimum. Ordinarily reviews or revises at an interval of no more than 5 years (sections 8(4) and 9(2)) |
 | Grades of work | Minimum wages take account of skill levels (unskilled, semi-skilled, skilled, highly skilled) and geographical area (government backgrounder of 21 November 2025) |
 | Normal working day and weekly rest | Fixed by the appropriate Government (section 13(1)), "a day of rest in every period of seven days" |
 | Overtime | For an employee whose minimum rate of wages is fixed under the Code, beyond a normal working day, not less than twice the normal rate (section 14) |
@@ -158,15 +159,15 @@ No allowed official page read prints State minimum wage rates or the floor wage 
 | Gratuity | See below | Chapter V, section 53 |
 | Statutory bonus | See below | Code on Wages, Chapter IV |
 
-**Gratuity (Code on Social Security s 53).** Payable by every factory, mine, oilfield, plantation, port and railway company and every shop or establishment with ten or more employees on any day of the preceding twelve months. Qualifying service: not less than five years of continuous service, on termination by superannuation, retirement, resignation, death, disablement, end of a fixed term or a notified event; no five-year condition for death, disablement, expiry of fixed-term employment or a notified event (second proviso). Rate: fifteen days' wages at the rate last drawn for every completed year or part over six months; for a monthly-rated employee, monthly wages last drawn divided by twenty-six, times fifteen; seasonal establishments seven days' wages for each season; fixed-term or deceased employees pro rata. Wages include any one-half add-back. The maximum is the amount notified by the Central Government; no allowed page read prints it, and notifications under the repealed Payment of Gratuity Act continue under section 164(2)(a) to the extent not contrary to the Code. Fixed-term employees: the backgrounder of 21 November 2025 and the Ministry FAQ of 16 March 2026 (reply 14) say they qualify after one year of service under the contract; the Code itself waives the five-year condition when the fixed term expires and pays pro rata. Follow the Code text and ask for advice on a fixed term that ends early. Contract labour: the contractor pays gratuity after five years' continuous service (FAQ reply 16, citing section 53).
+**Gratuity (Code on Social Security s 53).** Payable by every factory, mine, oilfield, plantation, port and railway company and every shop or establishment with ten or more employees on any day of the preceding twelve months. Qualifying service: at least 5 years of continuous service, or 3 years for the specified working journalists, on termination by superannuation, retirement, resignation, death, disablement, end of a fixed term or a notified event; no five-year condition for death, disablement, expiry of fixed-term employment or a notified event (second proviso). Rate: fifteen days' wages at the rate last drawn for every completed year or part over six months; for a monthly-rated employee, monthly wages last drawn divided by twenty-six, times fifteen; seasonal establishments seven days' wages for each season; fixed-term or deceased employees pro rata. Wages include any one-half add-back. Section 53(3) uses the notified ceiling. S.O. 1420(E) set 20 lakh rupees under the earlier Act and section 164(2)(a) saves consistent notifications. Check for a superseding notification and any better contractual entitlement. For fixed-term employment, apply section 53 and Central rule 33, which requires at least 1 year under the contract and specifies the treatment of a subsequent part year. Refer any early exit or disputed interaction with the Code’s pro rata rule. [Ceiling notification](https://egazette.gov.in/WriteReadData/2018/184299.pdf#page=2) · [Central Rules](https://egazette.gov.in/WriteReadData/2026/272366.pdf#page=173). Contract labour: the contractor pays gratuity after five years' continuous service (FAQ reply 16, citing section 53).
 
 Income tax on gratuity: under section 19 of the Income-tax Act 2025, gratuity for Government employees is exempt in full (Table Sl. No. 3); gratuity under the Payment of Gratuity Act 1972 is exempt as restricted to the amount under section 4(2) and (3) of that Act (Sl. No. 5); any other gratuity on retirement, incapacity or termination is exempt up to the least of the gratuity received, the notified amount, and half a month's salary for each completed year on the ten-month average (Sl. No. 6). Sl. No. 5 still names the repealed 1972 Act: refer.
 
-**Statutory bonus (Code on Wages).** Applies to establishments in which twenty or more persons are employed or were employed on any day during an accounting year. Eligible employee: wages not above the monthly amount the appropriate Government notifies, and at least thirty days' work in the accounting year (section 26(1)). Minimum: eight and one-third per cent of wages earned or 100 rupees, whichever is higher, whether or not there is allocable surplus. Where wages exceed the notified amount, bonus is calculated as if the wage were that amount or the minimum wage, whichever is higher (section 26(2)). Maximum: twenty per cent of wages out of allocable surplus (section 26(3)). Paid to the employee's bank account within eight months of the close of the accounting year; extension possible, total not more than two years (section 39(1)). The eligibility wage and calculation ceiling are "determined by notification"; no allowed page read prints them.
+**Statutory bonus (Code on Wages).** Applies to establishments in which twenty or more persons are employed or were employed on any day during an accounting year. Eligible employee: wages not above the monthly amount the appropriate Government notifies, and at least thirty days' work in the accounting year (section 26(1)). Minimum: eight and one-third per cent of wages earned or 100 rupees, whichever is higher, whether or not there is allocable surplus. Where wages exceed the notified amount, bonus is calculated as if the wage were that amount or the minimum wage, whichever is higher (section 26(2)). Maximum: twenty per cent of wages out of allocable surplus (section 26(3)). Paid to the employee's bank account within eight months of the close of the accounting year; extension possible, total not more than two years (section 39(1)). Where the Central Government is the appropriate Government, the eligibility ceiling is ₹21,000 monthly. For an eligible worker’s wages above ₹7,000, calculate using ₹7,000 or the applicable Central minimum wage, whichever is higher. Both notifications take effect from 21 November 2025. For other establishments, check the relevant State instruments. [S.O. 4711(E)](https://egazette.gov.in/WriteReadData/2026/275747.pdf#page=2) · [S.O. 4710(E)](https://egazette.gov.in/WriteReadData/2026/275741.pdf#page=2).
 
 ### Payslip contents and CTC
 
-Wage slips and registers are prescribed under the Labour Codes and their rules and under State Shops and Establishments law; the exact form was not on any allowed page read. The practical content of an Indian payslip (not a statutory form): employer name and establishment codes (EPFO and ESIC numbers); employee name, ID, designation, PAN; pay period; basic salary; dearness allowance and house rent allowance if applicable; special and other allowances; overtime; gross salary; provident fund employee deduction where a member; ESI employee deduction if covered; profession tax if the State levies it; TDS; other deductions (Labour Welfare Fund, advances, loans); net salary payable. Recommended: employer provident fund and ESI shown, leave balance, year-to-date figures.
+Wage slips and registers are prescribed under the Labour Codes and their rules and under State Shops and Establishments law; apply Code on Wages (Central) Rules rule 52 and Form V where the Central Rules govern. Issue the slip on or before payment, electronically or in physical form. Check the applicable State rules elsewhere. [Central Rules](https://egazette.gov.in/WriteReadData/2026/272365.pdf#page=51). The practical content of an Indian payslip (not a statutory form): employer name and establishment codes (EPFO and ESIC numbers); employee name, ID, designation, PAN; pay period; basic salary; dearness allowance and house rent allowance if applicable; special and other allowances; overtime; gross salary; provident fund employee deduction where a member; ESI employee deduction if covered; profession tax if the State levies it; TDS; other deductions (Labour Welfare Fund, advances, loans); net salary payable. Recommended: employer provident fund and ESI shown, leave balance, year-to-date figures.
 
 CTC is a contract term, not a legal one. A typical CTC includes basic salary, DA, HRA, special allowance, employer provident fund, employer ESI where applicable, a gratuity provision and insurance premiums. No official source sets percentage splits. Check every structure against the one-half rule, because allowances above that share count as wages for the Codes.
 
@@ -176,10 +177,10 @@ CTC is a contract term, not a legal one. A typical CTC includes basic salary, DA
 
 | Item | Rule |
 | --- | --- |
-| Deposit of salary TDS, non-Government deductor (rule 218(2)) | Within seven days from the end of the month of deduction; salary credited or paid in March, by 30 April |
+| Deposit of salary TDS, non-Government deductor (rule 218(2)) | Within 7 days of month-end in the ordinary case, or by 30 April where salary is paid in March |
 | Deposit, Government office (rule 218(1)) | Same day without challan; with challan, within seven days from the end of the month |
 | Quarterly deposit in special cases, if the Assessing Officer permits with the prior approval of the Joint Commissioner (rule 218(4)) | 7 July, 7 October, 7 January, 30 April |
-| Quarterly TDS statement for salary (rule 219(1), Table Sl. No. 1) | Form No. 138 |
+| Quarterly TDS statement for ordinary salary (rule 219(1), Table Sl. No. 1) | Form No. 138. Section 392(7) cases use Form No. 144 for the persons in table row 2 or Form No. 140 otherwise |
 | Statement due dates (rule 219(4)) | Quarter to 30 June: 31 July; to 30 September: 31 October; to 31 December: 31 January; to 31 March: 31 May after the tax year |
 | Salary TDS certificate to the employee (rule 215(1)) | Form No. 130, by 15 June of the financial year after the tax year |
 | Employee with more than one employer (rule 215(2)) | Each employer issues Parts A and B of Form No. 130; Part C by each or by the last employer, at the employee's option |
@@ -195,7 +196,7 @@ For tax year 2026-27, Form No. 138 for the quarter to 30 June 2026 was due by 31
 | Wages (monthly-rated) | Monthly | Before the expiry of the seventh day of the following month (Code on Wages s 17) | Paid to employees |
 | Salary TDS deposit | Monthly | Within seven days from the end of the month; March: 30 April (rule 218) | Income Tax Department |
 | Provident fund contributions and charges | Monthly | Within fifteen days of the close of every month (EPF Scheme 2026 para 20) | EPFO |
-| ESI contributions | Monthly | Check the ESIC portal (no allowed page) | ESIC |
+| ESI contributions and Form 2 | Monthly | Pay and file within 15 days of month-end. The return also has a 45-day outer limit after the contribution period. Check the separate permanent closure rule | ESIC, regulations 16 and 18–19 |
 | Professional tax | State-specific | State law | State Government |
 | Form No. 138 | Quarterly | 31 July, 31 October, 31 January, 31 May (rule 219(4)) | Income Tax Department |
 | Form No. 130 | Annual | 15 June after the tax year (rule 215) | To employees |
@@ -210,7 +211,7 @@ For tax year 2026-27, Form No. 138 for the quarter to 30 June 2026 was due by 31
 | Statement not delivered on time, or incorrect | 10,000 to 1,00,000; for a late statement, none if delivered within one month with tax, fee and interest paid | Section 461 |
 | Form No. 130 certificate or perquisite statement not furnished | 500 rupees a day, capped at the tax deductible for the certificate and the s 397(3)(b) statement (s 465(3)); no cap for the perquisite statement | Section 465(2) and (3) |
 | Late provident fund payment | Damages per month on the arrears, not more than the arrears (see `in-pf-esi-employer`) | EPF Scheme 2026 para 23 |
-| Late ESI payment | Check ESIC (no allowed page) | ESIC regulations |
+| Late ESI payment | 12% simple annual interest under the notified rule. ESI damages can apply at 1% of arrears per month of delay, within the statutory cap and after opportunity to be heard | S.O. 2357(E), ESI regulations 21–22 |
 | EPF appeal | Deposit of 25% of the amount determined before appealing (backgrounder; Code s 125 appeal) | Code on Social Security |
 
 ## Cross-border points
@@ -221,7 +222,7 @@ For tax year 2026-27, Form No. 138 for the quarter to 30 June 2026 was due by 31
 
 ## Two worked examples that recompute
 
-All salaries are hypothetical; rates are from the rates table.
+The worked cases use hypothetical salaries with only the stated income and deductions. For the old-regime comparison assume a resident under 60. The level monthly withholding in example 1 assumes 12 equal payments and no adjustment for prior or other deductions.
 
 ### Example 1: Resident employee, new regime, salary of 15,00,000 rupees for the year
 
@@ -250,7 +251,7 @@ expected:
 
 ### Example 2: Salary of 12,85,000 rupees, new regime with marginal relief or old regime with 1,50,000 of Schedule XV claims
 
-New regime: taxable 12,85,000 less 75,000 = 12,10,000. Tax before rebate 20,000 + 40,000 + 15% of 10,000 = 61,500. Section 156(2)(b) cuts it to the excess over twelve lakh rupees, 10,000; with cess 10,400. Old regime (employee opts out under s 202(4)): taxable 12,85,000 less 50,000 standard deduction less 1,50,000 section 123 claims = 10,85,000; tax 1,12,500 plus 30% of 85,000 = 1,38,000; with cess 1,43,520. The new regime is cheaper by 1,33,120, so TDS should run on the new regime. At a salary of 12,75,000 rupees taxable income is exactly twelve lakh rupees and the new regime tax is nil after the section 156(2)(a) rebate.
+New regime: taxable 12,85,000 less 75,000 = 12,10,000. Tax before rebate 20,000 + 40,000 + 15% of 10,000 = 61,500. Section 156(2)(b) cuts it to the excess over twelve lakh rupees, 10,000; with cess 10,400. Old regime (employee opts out under s 202(4)): taxable 12,85,000 less 50,000 standard deduction less 1,50,000 section 123 claims = 10,85,000; tax 1,12,500 plus 30% of 85,000 = 1,38,000; with cess 1,43,520. The new regime is cheaper by 1,33,120. Confirm the employee’s intended payroll regime separately and adjust for prior deductions as appropriate. At a salary of 12,75,000 rupees taxable income is exactly twelve lakh rupees and the new regime tax is nil after the section 156(2)(a) rebate.
 
 ```oa-check
 name: Salary 12,85,000, new regime with s 156(2)(b) relief against old regime with 1,50,000 claims
@@ -287,17 +288,17 @@ A non-resident employee with taxable salary of 11,00,000 rupees on the new regim
 
 1. Fix the facts: State of employment, establishment headcount, each employee's residence, monthly wages and the regime the employee intends to use.
 2. Compute wages for the Labour Codes, applying the one-half add-back.
-3. Provident fund: twelve per cent each on wages up to the 25,000 rupee ceiling (detail in `in-pf-esi-employer`); pay within fifteen days of the close of the month.
-4. ESI: if covered and within the ESI limit, deduct three-fourth per cent and add three and one-fourth per cent.
+3. Provident fund: twelve per cent each on wages up to the ceiling that applies to the payroll month (detail in `in-pf-esi-employer`); pay within fifteen days of the close of the month.
+4. ESI: apply the entry limit and continuation rule. Calculate the separate shares and test the daily-wage exemption and disability relief.
 5. Professional tax: apply the State schedule (`in-professional-tax`).
-6. Income tax: estimate the year's salary, take the standard deduction and other allowed items under section 19, compute tax at the regime's rates plus surcharge and cess, apply the section 156 rebate for residents, and deduct the average rate each month under section 392, using old regime rates only for an employee who opts out.
+6. Income tax: estimate the year's salary, take the standard deduction and other allowed items under section 19, compute income tax at the applicable rates, apply any section 156 rebate, then applicable surcharge and cess. Withhold on payment under section 392 and adjust for earlier deductions in the year where applicable.
 7. Pay monthly-rated wages by the seventh day of the following month, deposit TDS within seven days of the month end (March: 30 April), file Form No. 138 each quarter and issue Form No. 130 by 15 June after the tax year.
 8. Year end: pay statutory bonus within eight months of the close of the accounting year and compute gratuity on exits under section 53.
 
 ### When to refuse or refer
 
 - Salary for periods up to 31 March 2026 (1961 Act, Form 16): refer to the 1961 Act forms and the Income Tax Department.
-- The ESI wage ceiling after 16 March 2026, the gratuity cap, the bonus eligibility wage, the floor wage and State minimum wages: no allowed page prints the current notified amounts. Confirm with ESIC or the notification.
+- Applicable State bonus or minimum-wage amounts and the operative floor wage. Use the jurisdiction, location, role, period and appropriate Government’s notification.
 - The split of the employer's provident fund share, EDLI and the EPFO administrative charge: `in-pf-esi-employer`, then EPFO.
 - Which provident fund rate governs from 21 November 2025: section 16(1)(a) of the Code prints ten per cent with twelve per cent for notified establishments, while paragraph 18(2) of the EPF Scheme 2026 prints twelve per cent with ten per cent for a notified class. This skill uses the Scheme's twelve per cent; refer any dispute.
 - How an employee's regime intention is given to the employer for TDS during the year: the Act ties the opt-out to the return; refer if an employee wants old-regime TDS.
@@ -327,10 +328,22 @@ A non-resident employee with taxable salary of 11,00,000 rupees on the new regim
 | Read for the government backgrounder of 22 November 2025 (50% add-back, 25% appeal deposit, maternity bonus 3,500, creche 500) | https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251122702601.pdf | 2026-11-14 |
 | Read for the Telangana constitutional maximum of Rs 2,500 a year | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct.aspx | 2026-11-14 |
 | Read for the Telangana entry 1 salary bands | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTSchedule.aspx | 2026-11-14 |
-| Income Tax Department, Salaried Individuals for AY 2026-27 (1961 Act forms) | https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1 | Timed out on 2026-11-14, not read |
+| Income Tax Department, Salaried Individuals for AY 2026-27 (1961 Act forms) | https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1 | 2026-11-24 |
+| ESI entry ceilings and commencement | https://egazette.gov.in/WriteReadData/2026/278112.pdf#page=2 | 2026-11-24 |
+| ESI employee exemption incorporating the 1950 rule 52 | https://egazette.gov.in/WriteReadData/2026/278111.pdf#page=2 | 2026-11-24 |
+| 1950 ESI Central Rules rule 52, daily-wage figure | https://www.esic.gov.in/attachments/actfile/ff565588588373dc30795058bc8aefec.pdf | 2026-11-24 |
+| ESI General Regulations 2026, regulations 5, 16 and 18–22 | https://egazette.gov.in/WriteReadData/2026/278125.pdf#page=131 | 2026-11-24 |
+| Social Security Code interest notification | https://egazette.gov.in/WriteReadData/2026/272390.pdf#page=2 | 2026-11-24 |
+| EPF May wage ceiling before the September replacement | https://egazette.gov.in/WriteReadData/2026/273002.pdf#page=2 | 2026-11-24 |
+| Labour Ministry November FAQs, including contribution continuity | https://www.labour.gov.in/static/uploads/2026/11/da640b1558a315e81e22ce5ac12f463f.pdf | 2026-11-24 |
+| Central bonus eligibility and commencement | https://egazette.gov.in/WriteReadData/2026/275747.pdf#page=2 | 2026-11-24 |
+| Central bonus calculation and commencement | https://egazette.gov.in/WriteReadData/2026/275741.pdf#page=2 | 2026-11-24 |
+| Central wage slip rule and Form V | https://egazette.gov.in/WriteReadData/2026/272365.pdf#page=51 | 2026-11-24 |
+| Earlier statutory gratuity ceiling | https://egazette.gov.in/WriteReadData/2018/184299.pdf#page=2 | 2026-11-24 |
+| Constitution article 276(2) | https://www.indiacode.nic.in/bitstream/123456789/19150/1/constitution_of_india.pdf | 2026-11-24 |
 
-Not yet confirmed: the ESI wage ceiling under the Code after 16 March 2026; the gratuity cap under section 53(3); the bonus eligibility wage and calculation ceiling; the floor wage and State minimum wages; ESI payment due dates and return calendar; the statutory wage slip form; how an employee's regime choice is given to the employer for TDS during the year.
+Not yet confirmed: operative location-specific floor, minimum wages and State bonus figures; any superseding gratuity ceiling; the exact effect of the obsolete gratuity tax cross-reference; a current prescribed employee regime-intimation method; specific EPF rate class and wage ceiling before 29 May 2026.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `india-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/india-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `india-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/india-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
