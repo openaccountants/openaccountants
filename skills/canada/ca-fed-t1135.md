@@ -468,7 +468,7 @@ Input: Individual immigrated to Canada and became a Canadian tax resident on 14 
 Expected result:
 - ITA s. 233.7 first-year exception applies for an individual (other than a trust) who first became resident in Canada in the year
 - T1135 NOT required for that first resident year
-- Filing obligation begins for the FOLLOWING tax year
+- Following years require fresh reporting-entity, residency, cost-threshold and exclusion tests; the first-year exemption ending does not by itself create a filing obligation. [ITA 233.3](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-233.3.html); [233.7](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-233.7.html)
 - Reviewer flag: confirm immigration date and that taxpayer is an individual; the s. 233.7 exception does NOT apply to corporations or trusts
 
 ### Test 8 -- Missed prior-year filings
