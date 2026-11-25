@@ -3,16 +3,16 @@ name: ws-payroll-social
 description: "Samoa payroll and social contributions for 2026: source-cited rules, conditions, filing boundaries and recomputing cases. Not yet approved by an accountant."
 jurisdiction: WS
 tax_year: 2026
-last_updated: 2026-11-15
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 type: computation
 category: payroll
-version: 0.1
+version: 0.2
 ---
 
-# Samoa Payroll and Social Contributions v0.1
+# Samoa Payroll and Social Contributions v0.2
 
 > **General reference only.** This skill supports AI-assisted working papers. It is not approval to file, pay or take a tax position for a particular person. Obtain qualified local review of the facts, applicable law and filing instructions.
 
@@ -46,9 +46,9 @@ Compute PAYE using the actual pay-period table, then statutory employee deductio
 
 ## Deadlines and filing
 
-Register for PAYE using IR11; file monthly P4 showing every employee, including those below the taxable threshold. File and pay by the 15th of the following month. Use the correct current form and actual payroll records; the information sheet was printed in 2020 and republished in October 2026. [Employer obligations; printed 21 August 2020, republished October 2026](https://revenue.gov.ws/wp-content/uploads/2026/10/IS02_Salary-and-Wage-Income-Tax-2026.pdf); [section 99](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf).
+Register for PAYE using IR11; file monthly P4 showing every employee, including those below the taxable threshold. Filing and payment are normally due on the 15th of the following month, or the next business day if the 15th falls on a Saturday, Sunday or Samoa public holiday. In 2026 the weekend-adjusted dates are 16 February, 16 March, 17 August and 16 November. Use the correct current form and actual payroll records; the information sheet was printed in 2020 and republished in October 2026. [Employer obligations; printed 21 August 2020, republished October 2026](https://revenue.gov.ws/wp-content/uploads/2026/10/IS02_Salary-and-Wage-Income-Tax-2026.pdf); [section 99](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [Tax Administration Act section 26](https://www.ag.gov.ws/wp-content/uploads/2024/02/Tax-Administration-Act-2012.pdf); [Samoa public holidays calendar](https://mcil.gov.ws/public-holidays-calendar).
 
-SNPF ordinary contributions and schedule are monthly, due no later than the 7th of the next month after wages were paid or became due/payable, unless a written CEO direction changes the method/date. Register the employer and employees first, with incorporation/licence and employee/wage records. ACC is paid separately to ACC; its frequency depends on wage frequency and statutory/Corporation directions, not automatically SNPF’s date. Obtain the actual ACC schedule or notice. [section 19](https://www.npf.ws/_files/ugd/2b7bf6_424e99682c134c08aa7789baf544d3c3.pdf); [section 20](https://www.npf.ws/_files/ugd/2b7bf6_424e99682c134c08aa7789baf544d3c3.pdf); [section 22](https://www.npf.ws/_files/ugd/2b7bf6_424e99682c134c08aa7789baf544d3c3.pdf); [section 52, complete tala and payment determination](https://acc.gov.ws/wp-content/uploads/2026/05/ACC-ACT-Consolidated-2022-1.pdf); [registration and levy payment frequency](https://acc.gov.ws/index.php/faq/).
+SNPF ordinary contributions and schedule are monthly, normally due by the 7th of the next month after wages were paid or became due/payable. A written CEO direction can change the method or date. The ordinary deadline moves to the next working day when the 7th is a Saturday, Sunday or public holiday. In 2026 the weekend-adjusted dates are 9 February, 9 March, 8 June and 9 November. Register the employer and employees first, with incorporation/licence and employee/wage records. ACC is paid separately to ACC; its frequency depends on wage frequency and statutory/Corporation directions, not automatically SNPF’s date. Obtain the actual ACC schedule or notice. [section 19](https://www.npf.ws/_files/ugd/2b7bf6_424e99682c134c08aa7789baf544d3c3.pdf); [section 20](https://www.npf.ws/_files/ugd/2b7bf6_424e99682c134c08aa7789baf544d3c3.pdf); [section 22](https://www.npf.ws/_files/ugd/2b7bf6_424e99682c134c08aa7789baf544d3c3.pdf); [Acts Interpretation Act section 46(7)](https://www.ag.gov.ws/wp-content/uploads/2024/02/Acts-Interpretation-Act-2015.pdf); [section 52, complete tala and payment determination](https://acc.gov.ws/wp-content/uploads/2026/05/ACC-ACT-Consolidated-2022-1.pdf); [registration and levy payment frequency](https://acc.gov.ws/index.php/faq/).
 
 ## Penalties and interest
 
@@ -124,5 +124,8 @@ Read on **2026-11-15** for the stated sections. The Attorney General tax consoli
 | Read for fortnightly whole-tala table, effective 1 January 2018; footnotes, secondary employment | https://revenue.gov.ws/wp-content/uploads/2022/09/Manual-Schedule-Fortnight-1.pdf | 2026-11-15 |
 | Read for Employer obligations; printed 21 August 2020, republished October 2026 | https://revenue.gov.ws/wp-content/uploads/2026/10/IS02_Salary-and-Wage-Income-Tax-2026.pdf | 2026-11-15 |
 | Read for Employees Contribution, current 10% + 10% | https://www.npf.ws/employers-guide | 2026-11-15 |
+| Read for section 26, filing and payment on non-business days | https://www.ag.gov.ws/wp-content/uploads/2024/02/Tax-Administration-Act-2012.pdf | 2026-11-23 |
+| Read for definition of working day and section 46(7) | https://www.ag.gov.ws/wp-content/uploads/2024/02/Acts-Interpretation-Act-2015.pdf | 2026-11-23 |
+| Samoa public holidays calendar, 2026 | https://mcil.gov.ws/public-holidays-calendar | 2026-11-23 |
 
 Not yet confirmed: Client-specific exemptions and noncash valuations; non-fortnightly PAYE conversion/rounding beyond the published table; exact ACC payment notice; separate Medisave/Medinsure operational liability and alternative-fund conditions; a universal SNPF/ACC combined remittance date. Do not present the 11% subtotal as all payroll costs or apply obsolete 7% SNPF or the guide’s stale minimum-wage amount.

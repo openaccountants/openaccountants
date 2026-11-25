@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source AI skills (tax rules your AI follows) for AI agents. 2,555 AI skills across 290 jurisdictions in this repository, 129 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source AI skills (tax rules your AI follows) for AI agents. 2,556 AI skills across 290 jurisdictions in this repository, 129 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -19,23 +19,9 @@ OpenAccountants is a library of Tax skills — tax rules written as plain markdo
 
 Always tell users to have AI-generated output reviewed by a qualified professional before filing.
 
-## Reviewing accountants (sample, refreshed 2026-09-06)
+## Reviewing accountants
 
-These named practitioners have reviewed skills for their jurisdictions. The accountant-reviewed version of their jurisdictions' skills is signed under their name. This list is a hand-curated sample: `index.json` records the reviewer of every accountant-reviewed skill in its `reviewed_by` field (32 distinct reviewer names as at 2026-09-06), and the full accountant network is at https://www.openaccountants.com/network.
-
-- **South Africa (ZA):** Werner Britz CA(SA), 5 skills — [openaccountants.com/network/28a3ec1b-d699-4c5d-bb60-3114eedc59d0](https://www.openaccountants.com/network/28a3ec1b-d699-4c5d-bb60-3114eedc59d0)
-- **Malta (MT):** Michael Cutajar CPA (Malta), 5 skills — [openaccountants.com/network](https://www.openaccountants.com/network)
-- **Brazil (BR):** Ariane Marrocos CRC/SP, 9 skills — [openaccountants.com/network/366f5c0f-1afb-4332-b87b-9b6f912821aa](https://www.openaccountants.com/network/366f5c0f-1afb-4332-b87b-9b6f912821aa)
-- **United Kingdom (GB):** James Power, 15 skills — [openaccountants.com/network/30b2f478-3a97-40c4-b435-0678829b487e](https://www.openaccountants.com/network/30b2f478-3a97-40c4-b435-0678829b487e)
-- **India (IN):** Mayur Deokar CA, 13 skills — [openaccountants.com/network/f4cb8476-a86d-4fd9-b536-9217e82ccf99](https://www.openaccountants.com/network/f4cb8476-a86d-4fd9-b536-9217e82ccf99)
-- **Indonesia (ID):** Rilia Putri CA, 10 skills — [openaccountants.com/network/ec70d43e-18c0-4b4e-b92c-4f8a22e10152](https://www.openaccountants.com/network/ec70d43e-18c0-4b4e-b92c-4f8a22e10152)
-- **Nepal (NP):** Ashish Bista CA, 5 skills — [openaccountants.com/network/78ab67db-8f29-4746-8102-7b52d17309aa](https://www.openaccountants.com/network/78ab67db-8f29-4746-8102-7b52d17309aa)
-- **Portugal (PT):** Mário Vale CA, 9 skills — [openaccountants.com/network/a26a63b7-343c-451b-8266-bb9d28bd7089](https://www.openaccountants.com/network/a26a63b7-343c-451b-8266-bb9d28bd7089)
-- **Saudi Arabia (SA):** Mehran Habib, 9 skills — [openaccountants.com/network/f9dbab51-2b89-451b-98f2-414b48fb4599](https://www.openaccountants.com/network/f9dbab51-2b89-451b-98f2-414b48fb4599)
-- **United States (US/US-IL):** Amir Pelinkovic CPA (Citrin Cooperman), 16 skills — [openaccountants.com/network/752ee18a-3843-434d-8426-457d3fa9706f](https://www.openaccountants.com/network/752ee18a-3843-434d-8426-457d3fa9706f)
-- **United States (US federal):** Christopher Aryee, CPA — US federal form guides in `packages/us-federal/`, including the OBBBA corrections review (2026)
-- **Germany, Australia**: no accountant sign-off yet (checked against the law, or sourced from the law); accountant review in progress.
-- **Canada (CA):** accountant-reviewed skills are now present; see `reviewed_by` in `index.json`.
+Accountants write and approve these skills. Which accountant approved which skill is not listed in this repository: approvals, and the approving accountant's name, appear only through the OpenAccountants plugin (MCP), which runs ahead of this repository. For the current, accountant-approved version, add the plugin: https://www.openaccountants.com/connect
 
 ## Fastest way to use skills (don't read GitHub folder pages)
 
@@ -103,12 +89,10 @@ Trigger phrases: "I'm a freelancer in the US", "Schedule C", "1099 taxes", "self
 ### South Africa income tax → `workflows/south-africa-income-tax.md`
 Trigger: South African taxpayer — personal income tax, provisional tax, or ITR12.
 Trigger phrases: "income tax South Africa", "SARS return", "ITR12", "provisional tax SA".
-Reviewed by: Werner Britz CA(SA).
 
 ### Malta freelancer / self-employed → `workflows/malta-freelancer.md`
 Trigger: Malta-based freelancer, sole trader, or part-time self-employed person.
 Trigger phrases: "self-employed Malta", "freelancer Malta", "FS5 Malta", "SSC Malta", "Malta VAT registration".
-Reviewed by: Michael Cutajar CPA (Malta).
 
 ### Portugal self-employed → `workflows/portugal-self-employed.md`
 Trigger: Portugal-based self-employed person, digital nomad, NHR/IFICI holder, or freelancer.
@@ -141,7 +125,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Skill inventory (2496 distinct MCP names)
+## Skill inventory (2498 distinct MCP names)
 
 Use the first field as the exact get_skill slug. A source path or filename is not an MCP identity.
 
@@ -1171,6 +1155,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - in-return-assembly | IN | tier 2 | reviewed_by -
 - in-tax-residency | IN | tier 2 | reviewed_by -
 - in-tds-freelance | IN | tier 2 | reviewed_by -
+- india-corporate-income-tax | IN | tier 2 | reviewed_by -
 - india-crypto-tax | IN | tier 2 | reviewed_by -
 - india-einvoice | IN | tier 2 | reviewed_by -
 - india-financial-statements | IN | tier 2 | reviewed_by -
@@ -1959,6 +1944,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - sl-tax-overview | SL | tier 2 | reviewed_by -
 - sl-transfer-pricing | SL | tier 2 | reviewed_by -
 - sl-vat-gst | SL | tier 2 | reviewed_by -
+- sg-corporate-income-tax | SG | tier 2 | reviewed_by -
 - sg-cpf-medisave | SG | tier 2 | reviewed_by -
 - sg-gst-return | SG | tier 2 | reviewed_by -
 - sg-income-tax | SG | tier 2 | reviewed_by -

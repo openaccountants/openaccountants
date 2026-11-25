@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/pg-income-tax"
   jurisdiction: "PG"
   tax_year: "2026"
-  last_updated: "2026-11-16"
+  last_updated: "2026-11-22"
 ---
 
-# Papua New Guinea employee and sole-trader income tax v1.0
+# Papua New Guinea employee and sole-trader income tax v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -204,11 +204,11 @@ The printed table overlaps at exactly nine years. Do not silently choose one bra
 
 ### 9. Compute provisional tax, final credits and the return
 
-The old non-salary-income trigger and single September payment rule must not be used for 2026. Under the new provision, ordinary income taxpayers generally pay instalments; an individual reasonably expecting taxable income below the statutory tax-free threshold is excluded. For a calendar-year case, the derived payment dates are the last days of April, July and October. [s. 138](https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf).
+The old non-salary-income trigger and single September payment rule must not be used for 2026. Under the new provision, ordinary income taxpayers generally pay instalments; an individual reasonably expecting taxable income below the statutory tax-free threshold is excluded. For calendar-year 2026, the instalments are due on 30 April, 31 July and 2 November. Section 68 moves a tax filing, payment or other due date that falls on a Saturday, Sunday or PNG public holiday to the next business day. The ordinary date of 31 October 2026 fell on a Saturday. [Income Tax Act s. 138](https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf); [Tax Administration Act s. 68](https://pdis.parliament.gov.pg/uploads/4b825861-6fb1-41a1-b3a6-01ce3dd7fb5d#page=48).
 
 Each ordinary instalment is **(A - B) / 3**. A is the most recent assessed income-tax liability, including self-assessment, reduced by the foreign tax credit allowed for that year and multiplied by the prescribed regulatory uplift factor. B is the portion of A paid by amounts withheld under Part X. Subtract B before dividing by three, not the whole withholding amount from each third. The current uplift factor has not been confirmed from the Regulation; do not assume it equals unity. A new income taxpayer or one whose most recent return showed a net loss instead uses 2% of the instalment-period assessable income not subject to withholding. A lower/nil estimate requires reasonable grounds, approved-form election by the first instalment date or permitted later date, and the appropriate estimate. An underestimation penalty can apply; it is not an unconditional safe harbour. [s. 138](https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf); [TAA s. 98](https://pdis.parliament.gov.pg/uploads/4b825861-6fb1-41a1-b3a6-01ce3dd7fb5d).
 
-Reconcile provisional payments and creditable withholding to actual IRC payments/certificates. Apply non-refundable credits in order, then refundable credits, keeping final withholding outside duplicate annual assessment. Self-assessed tax is payable with the return; otherwise read the due date on the assessment notice. Prepare the current authorised IRC return with the supporting schedules and save its acknowledgement and payment reference. No live 2026 form fields or filing extension have been verified here, so the working paper does not pretend to be a completed submitted return.
+Reconcile provisional payments and creditable withholding to actual IRC payments/certificates. Apply non-refundable credits in order, then refundable credits, keeping final withholding outside duplicate annual assessment. Pay self-assessed tax by the return due date. Filing early leaves that payment deadline in place. A taxpayer-specific filing extension leaves the payment deadline and interest rules in place. For a non-self-assessment, read the due date on the assessment notice. Prepare the current authorised IRC return with the supporting schedules and save its acknowledgement and payment reference. No live 2026 form fields or filing extension have been verified here, so the working paper does not pretend to be a completed submitted return. [Income Tax Act s. 137](https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf#page=97); [Tax Administration Act s. 14](https://pdis.parliament.gov.pg/uploads/4b825861-6fb1-41a1-b3a6-01ce3dd7fb5d#page=18).
 
 ### Working paper retained and corrected
 
@@ -424,14 +424,14 @@ Stop finalisation on any missing input or held legal rule that changes the outco
 
 ## Sources
 
-Read on 16 November 2026. A scoped read does not certify every provision in a long Act.
+Read on the dates below. A scoped read does not certify every provision in a long Act.
 
 | Official source and scope read | URL | Read on |
 |---|---|---|
 | Read for Finance Department FMM 03.7, current fiscal-year designation, whole one-page instruction | https://www.finance.gov.pg/wp-content/uploads/2026/04/FMM-03-07-Financial-Fiscal-Year.pdf | 2026-11-16 |
-| Read for Income Tax Act 2025: ss. 7-14, 18-25, 29-56, 66-71, 117-119, 132-160, 163-165 and schedules; scoped to the rules above, rate tables visually inspected | https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf | 2026-11-16 |
+| Read for Income Tax Act 2025: ss. 7-14, 18-25, 29-56, 66-71, 117-119, 132-160, 163-165 and schedules; scoped to the rules above, rate tables visually inspected | https://www.treasury.gov.pg/wp-content/uploads/2025/10/Certified-Income-Tax-Act-2025.pdf | 2026-11-23 |
 | Read for Certified Income Tax 2026 Budget amendment: commencement, administration cross-references and payout-rate replacement | https://pdis.parliament.gov.pg/uploads/e755f62f-9e85-40b1-bb96-d8a162d32050 | 2026-11-16 |
-| Read for Tax Administration Act 2017: record, amendment, dispute, interest and administrative-penalty provisions, as incorporated for income tax | https://pdis.parliament.gov.pg/uploads/4b825861-6fb1-41a1-b3a6-01ce3dd7fb5d | 2026-11-16 |
+| Read for Tax Administration Act 2017: extension, business-day, record, amendment, dispute, interest and administrative-penalty provisions, as incorporated for income tax | https://pdis.parliament.gov.pg/uploads/4b825861-6fb1-41a1-b3a6-01ce3dd7fb5d | 2026-11-23 |
 | Read for BPNG contribution notice: standard rates and coverage read through official web text; amended component rules not certified | https://www.bankpng.gov.pg/publications/public-notices/employer-and-employee-superannuation-contributions | 2026-11-16 |
 | Read for IRC GST factsheet: standard-rate arithmetic and GST accounting mechanism | https://static.irc.gov.pg/2021/December/5ExWcL-media-GST-Section-65A-Fact-Sheet.pdf | 2026-11-16 |
 
@@ -439,4 +439,4 @@ Not yet confirmed: Current GST registration threshold text needed for small-busi
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pg-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pg-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pg-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pg-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

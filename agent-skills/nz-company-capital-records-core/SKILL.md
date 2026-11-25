@@ -6,21 +6,21 @@ metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/nz-company-capital-records-core"
   jurisdiction: "NZ"
-  last_updated: "2026-11-14"
+  last_updated: "2026-11-22"
 ---
 
-# New Zealand company capital, records and shareholder decisions v0.2
+# New Zealand company capital, records and shareholder decisions v0.3
 ## Scope
 
-**Checked on:** 2026-11-14 (company law, not an income-tax year). Revalidate the address-information transition from 18 November 2026.
+**Law as at 22 November 2026.** The address-information changes apply from 18 November 2026.
 
 Prepare selected working papers for an already selected ordinary domestic company limited by shares. Load workflow-base, company-formation-workflow-base and nz-company-register-core. Retain their confirmation sequence, entity-choice gates, mandatory country slots, required outputs, refusals and qualified-review controls. This guide adds selected capital, records and shareholder-decision rules; it does not complete the formation or financial-reporting topic.
 
 Confirm that the company and transaction fall within the ordinary scope. Listed companies, public offers, financial markets participants, co-operatives, overseas companies, amalgamations, buy-backs, redemptions, distributions, financial assistance, insolvency, restructurings and disputed rights require their own source chain. Options and convertible instruments also require separate work. An ordinary share issue can still trigger class-rights or major-transaction controls. Never classify it as unrestricted merely because the company has few shareholders.
 
-The Companies Act consolidation reviewed is dated 1 July 2025 and the Companies Act 1993 Regulations 1994 consolidation is dated 1 July 2023. Checked on 14 November 2026, the live Act warning list still identifies Deposit Takers Act 2023, Employment Leave Act 2026 and Companies (Address Information) Amendment Act 2025. The selected Deposit Takers and Employment Leave amendment items do not directly amend the capital, record or meeting provisions used here. This is a scoped review, not whole-Act assurance. It does not describe the entire Deposit Takers Act as uncommenced. [Version warnings][V1], [Deposit Takers amendments][V5], [commencement][V3], [Employment Leave amendments][V6], [commencement][V4].
+The Companies Act consolidation reviewed is dated 1 July 2025 and the Companies Act 1993 Regulations 1994 consolidation is dated 1 July 2023. Apply the address-information amendments alongside those texts. The selected Deposit Takers and Employment Leave amendment items do not directly amend the capital, record or meeting rules used here. [Version warnings][V1], [Deposit Takers amendments][V5], [commencement][V3], [Employment Leave amendments][V6], [commencement][V4].
 
-At the check date the Address Information Amendment Act remains labelled 'Not yet in force'. Its section 2 provides a single commencement date by Order in Council, with 18 November 2026 as the backstop. Its section 6 adds alternative-address wording to section 189(1)(f); section 7 inserts conditional replacements for director and shareholder addresses in the section 215 inspection records. The address-information regulations commence on 18 November 2026. Recheck commencement, consolidation and applicable protection before work on or after that date. The rules below describe the checked pre-commencement position; they cannot approve a new alternative-address application or post-transition disclosure. [Address Act, ss2/6/7][V2], [address regulations][V7].
+The Companies (Address Information) Amendment Act 2025 and its implementing regulations commenced on 18 November 2026. The Act changes company records and public inspection and allows an eligible director to apply to use an alternative address. Confirm whether the address protections apply before preparing any disclosure. Application and disclosure decisions require qualified review. [Address Act commencement][V2], [address regulations][V7].
 
 Use redacted summaries and synthetic labels in these working papers. The professional retains personal addresses, identity documents, tax identifiers, bank details, authentication and signing credentials, and performs any authorised submission or payment. Public-inspection duties below do not authorise this workflow to collect or publish private records.
 
@@ -64,7 +64,7 @@ Keep the legal route, authority and each filing clock distinct. The professional
 5. **Prepare and file the director certificate.** Directors voting in favour must sign the section 47 certificate describing the consideration and terms, the required non-cash value and basis where applicable, fairness and the non-cash floor. A copy must be delivered to the Registrar within 10 working days after the certificate is given. Sections 47(3)/(4) separately address later non-cash crediting of already issued shares. Section 47(6) treats the specified arrangements for exchanging property or services for cash as non-cash to that extent; routing funds through cash does not necessarily change the classification. Section 48 has specific exceptions; do not invoke them without verifying every condition. [Section 47][S47], [section 48][S48].
 6. **Obtain any new-liability consent.** Under section 50 an issue increasing a person's liability to the company or imposing a new liability to the company is void without that person's prior written consent, or consent by an agent authorised in writing. A board vote, a capital certificate or another shareholder's signature is not that consent. Retain the distinct authority and consent evidence. [Section 50][S50].
 7. **Enter the issue and deliver the applicable notice.** Record the issue on the company's share register. Section 43 requires prescribed notice within 10 working days of issue for section 41(b), 42 or 107(2) issues. Section 41(a) initial incorporation shares are not in that section 43 list. Do not impose or remove a statutory filing merely by applying simplified agency wording to all issues. The section 43 issue clock, section 44 approval clock and section 47 certificate clock have different triggers. [Sections 43/51][S43], [section 51][S51].
-8. **Reconcile the prescribed document and actual channel.** Regulation 4 prescribes the Schedule 1 forms and particulars. Form 7 covers the section 43 issue notice and section 44 approval notice: company name/number, prior shares, issue date and number, issue total, total shares after issue, and, where applicable, number, terms and date of approval. It includes director/authorised-person signature, date, full legal name and completer details, with additional sheets where needed. Regulation 7 requires legible documents and the specified signature/name requirements. Establish the applicable filing channel and execution rules; no authenticated portal or blanket electronic-signature conclusion is established here. Do not substitute Form 12, a share certificate or the annual return for an event notice. [Regulation 4][R4], [Form 7][F7], [regulation 7][R7].
+8. **Reconcile the prescribed document and actual channel.** Regulation 4 prescribes the Schedule 1 forms and particulars. Form 7 covers the section 43 issue notice and section 44 approval notice: company name/number, prior shares, issue date and number, issue total, total shares after issue, and, where applicable, number, terms and date of approval. It includes director/authorised-person signature, date, full legal name and completer details. Use the prescribed format for additional sheets and put the company name and company number at the top of each continuation page under regulation 4(2). Regulation 7 requires legible documents and the specified signature/name requirements. Establish the applicable filing channel and execution rules; no authenticated portal or blanket electronic-signature conclusion is established here. Do not substitute Form 12, a share certificate or the annual return for an event notice. [Regulation 4][R4], [Form 7][F7], [regulation 7][R7].
 
 Section 47(8) excludes issue on conversion or exercise of an option from section 47, but section 49 separately addresses consideration, board findings, certificates and filing when convertible financial products or options are granted. Do not treat the conversion exclusion as permission to omit the grant-stage requirements. Keep those instruments outside this ordinary issue workflow until separately reviewed. Section 107 also permits specified unanimous written assent routes, with their own conditions and notice requirements; a 75% written resolution is not unanimous assent and is not a blanket waiver of capital rules. [Sections 47/49][S47], [section 49][S49], [section 107][S107].
 
@@ -84,7 +84,7 @@ Section 189 is subject to the separate share-register and accounting-location ru
 
 | Section 189 category | Period or content to establish |
 | --- | --- |
-| Constitution, interests register, current directors' full names and addresses, share register | Required records; do not invent a 7-year deletion date for these categories. Apply the share register's own 10-year history requirements |
+| Constitution, interests register, current directors' full names and addresses including any alternative addresses, share register | Required records. Apply the share register's own 10-year history requirements. [Address Act, section 6][V8] |
 | Shareholder, director and committee meeting minutes/resolutions; director certificates | Last 7 years under section 189, subject to the separate inspection and other applicable requirements |
 | Written communications to all shareholders or all holders of a class, including annual reports | Last 7 years under section 189; section 216 separately requires access to specified communications during the preceding 10 years. The 7-year rule is not authority to destroy records still needed for that duty |
 | Financial/group statements required by the Act or another enactment | Last 7 completed accounting periods |
@@ -96,7 +96,11 @@ Section 190 permits written records or an easily accessible form convertible int
 
 ### Inspection and copies
 
-Before responding, the professional must classify the request, actual entitlement, service date, records and applicable address protection. Keep personal data outside this workflow. Under section 215, a person serving written notice may inspect the incorporation certificate, any constitution, share register, ultimate holding company information, directors' full names/residential addresses and office/service addresses in the prescribed manner. Section 216 gives shareholders and their written authorised representatives additional access on written notice to shareholder minutes/resolutions, specified communications during the preceding 10 years, director certificates and the interests register. Its minutes/resolutions and certificate categories do not repeat section 189's 7-year limit; do not import that limit automatically. Revalidate the address transition described above. [Section 215][S215], [section 216][S216], [Address Act][V2].
+Before responding, the professional must classify the request, actual entitlement, service date, records and applicable address protection. Keep personal data outside this workflow. Under section 215, a person serving written notice may inspect the incorporation certificate, any constitution, share register, ultimate holding company information, directors' full names and residential addresses and office and service addresses, subject to the alternative-address rules. If section 360D applies, section 215(1A) permits the company to use a director's alternative address in the inspection records. If section 360F applies, section 215(1B) permits the company to use the shareholder's alternative address in the share register available for inspection. [Section 215][S215], [Address Act, section 7][V9].
+
+Section 360D requires a director's application and a statutory declaration that publishing their residential address is likely to cause physical or mental harm to the director or someone they live with. Section 360F extends the protection to the director as a shareholder of the same company or to a shareholder of that company who lives with the director and consents in the application. Confirm the applicable protection and any separate reason to withhold an address before responding to a request. [Section 360D][V10], [section 360F][V11], [address regulations][V7].
+
+Section 216 gives shareholders and their written authorised representatives additional access on written notice to shareholder minutes and resolutions, specified communications during the preceding 10 years, director certificates and the interests register. Its minutes, resolutions and certificate categories have no express 7-year limit. [Section 216][S216].
 
 Section 217 requires availability at the records location from 9 am to 5 pm on each working day in the period starting on the third working day after the day of service and ending on the eighth working day after it. For copies or extracts of a document the requester may inspect, section 218 provides 5 working days after a written request, conditional on payment of the company's reasonable copying and administration fee. Establish the actual fee/request facts, calendar and delivery; these are separate from the inspection window. [Sections 217/218][S217], [section 218][S218].
 
@@ -369,7 +373,7 @@ These points restate the limits and holds in the method and cases above; they ad
 - Do not appraise property or future services offered as non-cash consideration; obtain support for the section 47 value.
 - Do not decide a share-ownership dispute from a spreadsheet; record it as unresolved (sections 89 to 91).
 - Do not classify a company as eligible, large, public, subject to section 207E or exempt from statements, audit or annual reports; obtain the separate reporting chain before using a section 207I or 207J opt-out.
-- Hold any alternative-address application or post-transition disclosure until the Companies (Address Information) Amendment Act 2025 has commenced and been revalidated.
+- Refer alternative-address applications and disclosures until the professional confirms the operative protection and actual records.
 - Do not collect personal addresses, identity documents, tax identifiers, bank details or signing credentials; the professional performs any submission or payment.
 - Do not mark a filing, meeting exemption or transaction approved without its actual result and qualified review. No criminal-law defence is assessed here.
 
@@ -388,8 +392,12 @@ Before delivery verify: scope and date; current amendments; complete inherited c
 | [V3] Fresh Deposit Takers commencement | https://www.legislation.govt.nz/act/public/2023/35/en/latest/sections/LMS469452/ | Read for Fresh Deposit Takers commencement (cited as: commencement) | 2026-11-14 |
 | [V6] Employment Leave Act 2026 | https://www.legislation.govt.nz/act/public/2026/48/en/latest/sections/LMS1506038/ | Read for Schedule 2 (cited as: Employment Leave amendments) | 2026-11-14 |
 | [V4] Fresh Employment Leave commencement | https://www.legislation.govt.nz/act/public/2026/48/en/latest/sections/LMS737990/ | Read for Fresh Employment Leave commencement (cited as: commencement) | 2026-11-14 |
-| [V2] Fresh Address Information Amendment Act | https://www.legislation.govt.nz/act/public/2025/67/en/latest/ | Read for Fresh Address Information Amendment Act (cited as: Address Act, ss2/6/7; Address Act) | 2026-11-14 |
-| [V7] Companies Act 1993 (Address Information) Amendment Regulations 2026 address-regulations-2026.txt | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/2026/319/en/latest/ | Read for Companies Act 1993 (Address Information) Amendment Regulations 2026 address-regulations-2026.txt (cited as: address regulations) | 2026-11-14 |
+| [V2] Companies (Address Information) Amendment Act 2025, section 2 | https://www.legislation.govt.nz/act/public/2025/67/en/latest/sections/LMS937464/ | Commencement | 2026-11-23 |
+| [V7] Companies Act 1993 (Address Information) Amendment Regulations 2026 | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/2026/319/en/latest/ | Commencement, application particulars and statutory declaration | 2026-11-23 |
+| [V8] Companies (Address Information) Amendment Act 2025, section 6 | https://www.legislation.govt.nz/act/public/2025/67/en/latest/sections/LMS980471/ | Company records | 2026-11-23 |
+| [V9] Companies (Address Information) Amendment Act 2025, section 7 | https://www.legislation.govt.nz/act/public/2025/67/en/latest/sections/LMS937466/ | Public inspection and alternative addresses | 2026-11-23 |
+| [V10] Companies Act 1993, section 360D, as inserted | https://www.legislation.govt.nz/act/public/2025/67/en/latest/sections/LMS937467/ | Director's safety application | 2026-11-23 |
+| [V11] Companies Act 1993, section 360F, as inserted | https://www.legislation.govt.nz/act/public/2025/67/en/latest/sections/LMS980154/ | Application of protection to a shareholder | 2026-11-23 |
 | [S36] Companies Act s36 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320143/ | Read for Companies Act s36 (cited as: Sections 36/37/38) | 2026-11-14 |
 | [S37] Companies Act s37 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320147/ | Read for Companies Act s37 (cited as: section 37) | 2026-11-14 |
 | [S38] Companies Act s38 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320149/ | Read for Companies Act s38 (cited as: section 38) | 2026-11-14 |
@@ -445,19 +453,23 @@ Before delivery verify: scope and date; current amendments; complete inherited c
 | [S106] Companies Act s106 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320483/ | Read for Companies Act s106 (cited as: section 106) | 2026-11-14 |
 | [S110] Companies Act s110 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320496/ | Read for Companies Act s110 (cited as: section 110) | 2026-11-14 |
 
-Not yet confirmed: legislation.govt.nz refused automated fetches on 2026-11-14 in this conforming pass, so the section pages were not re-opened; the read dates above are the writer's check of 14 November 2026. The Companies (Address Information) Amendment Act 2025 commences by 18 November 2026 at the latest and must be revalidated then. Audit thresholds, the share-issue filing fee and any authenticated portal or electronic-signature rule are not established here. No accountant has reviewed this draft.
+Not yet confirmed here: audit thresholds, a share-issue filing fee and any authenticated portal or electronic-signature rule. No accountant has reviewed this draft.
 
 ### Revision note and link references
 
-Checked 14 November 2026. Selected Act provisions use the 1 July 2025 consolidation, regulations use 1 July 2023 and the scoped amendment/currentness review is described above. Refresh affected provisions for later work, especially the 18 November 2026 address transition. No complete financial-reporting, audit, beneficial-ownership or special-capital regime is claimed.
+Checked against the law as at 22 November 2026, including the address-information changes that took effect on 18 November 2026. The guide covers selected company records, capital and shareholder decisions.
 
 [V1]: https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320614/?active_tab=version "Fresh Companies Act version warnings"
 [V5]: https://www.legislation.govt.nz/act/public/2023/35/en/latest/sections/LMS469579/ "Deposit Takers Act 2023, Schedule 3"
 [V3]: https://www.legislation.govt.nz/act/public/2023/35/en/latest/sections/LMS469452/ "Fresh Deposit Takers commencement"
 [V6]: https://www.legislation.govt.nz/act/public/2026/48/en/latest/sections/LMS1506038/ "Employment Leave Act 2026, Schedule 2"
 [V4]: https://www.legislation.govt.nz/act/public/2026/48/en/latest/sections/LMS737990/ "Fresh Employment Leave commencement"
-[V2]: https://www.legislation.govt.nz/act/public/2025/67/en/latest/ "Fresh Address Information Amendment Act"
-[V7]: https://www.legislation.govt.nz/secondary-legislation/pco-drafted/2026/319/en/latest/ "Companies Act 1993 (Address Information) Amendment Regulations 2026 address-regulations-2026.txt"
+[V2]: https://www.legislation.govt.nz/act/public/2025/67/en/latest/sections/LMS937464/ "Address Information Amendment Act commencement"
+[V7]: https://www.legislation.govt.nz/secondary-legislation/pco-drafted/2026/319/en/latest/ "Companies Act 1993 (Address Information) Amendment Regulations 2026"
+[V8]: https://www.legislation.govt.nz/act/public/2025/67/en/latest/sections/LMS980471/ "Address Information Amendment Act section 6"
+[V9]: https://www.legislation.govt.nz/act/public/2025/67/en/latest/sections/LMS937466/ "Address Information Amendment Act section 7"
+[V10]: https://www.legislation.govt.nz/act/public/2025/67/en/latest/sections/LMS937467/ "Companies Act section 360D as inserted"
+[V11]: https://www.legislation.govt.nz/act/public/2025/67/en/latest/sections/LMS980154/ "Companies Act section 360F as inserted"
 [S36]: https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320143/ "Companies Act s36"
 [S37]: https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320147/ "Companies Act s37"
 [S38]: https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320149/ "Companies Act s38"
@@ -519,4 +531,4 @@ This is a source-cited draft for a qualified New Zealand professional's review. 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nz-company-capital-records-core` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nz-company-capital-records-core. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nz-company-capital-records-core` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nz-company-capital-records-core. If neither is available, confirm every figure against the official source pages cited above before relying on it.
