@@ -42,10 +42,10 @@ domain: income-tax
 | Country | Australia |
 | Income year covered | 2026-27 (1 July 2026 to 30 June 2027) |
 | CGT rate | No separate rate. The net capital gain is included in assessable income and taxed at the entity's rate |
-| Effective rate at the top individual income tax bracket with full Medicare levy | 23.5% for a gain eligible for the 50% discount in 2026-27, calculated as (45% + 2%) × 50% |
-| 50% general discount | Eligible individuals and trusts meeting the 12-month test. See Section 9 for events from 1 July 2027 |
-| Complying superannuation fund discount | 33⅓% |
-| Companies | No general CGT discount. See Section 8 for the transitional foreign renewable energy rule |
+| Effective rate at the top individual income tax bracket with full Medicare levy | 23.5% for a gain eligible for the 50% discount in 2026-27 (derived: (45% + 2%) × 50%; [ATO CGT discount](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cgt-discount)) |
+| 50% general discount | Eligible individuals and trusts meeting the 12-month test. See Section 9 for events from 1 July 2027 ([ATO CGT discount](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cgt-discount)) |
+| Complying superannuation fund discount | 33⅓% (in words: one-third discount; [ATO CGT discount](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cgt-discount)) |
+| Companies | No general CGT discount. See Section 8 for the transitional foreign renewable energy rule ([ATO CGT discount](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cgt-discount)) |
 | Annual tax-free amount | None. Australia has no annual CGT exemption |
 | Primary legislation | ITAA 1997 Parts 3-1 and 3-3 |
 | Tax authority | Australian Taxation Office |
@@ -244,6 +244,43 @@ Net capital gain included in assessable income    6,547.50
 
 **Why the order matters.** Applying the 50% discount before the losses would give ($17,795 x 50%) less $4,700, or $4,197.50, understating the net capital gain by $2,350. The losses must come first.
 
+```oa-check
+name: AU CGT net capital gain on shares after losses and 50% discount
+inputs:
+  proceeds: 46000
+  purchase: 28000
+  buy_brokerage: 95
+  sell_brokerage: 110
+  current_loss: 1500
+  prior_loss: 3200
+steps:
+  - cost_base: purchase + buy_brokerage + sell_brokerage
+  - gross_gain: proceeds - cost_base
+  - after_losses: gross_gain - current_loss - prior_loss
+  - discount: pct(after_losses, 50)
+  - net_capital_gain: after_losses - discount
+expected:
+  cost_base: 28205
+  gross_gain: 17795
+  after_losses: 13095
+  net_capital_gain: 6547.50
+```
+
+```oa-check
+name: AU CGT top individual effective rate vs complying super discount (pre-July 2027)
+inputs:
+  gain_after_losses: 10000
+  top_rate_plus_medicare: 47
+steps:
+  - individual_net_gain: pct(gain_after_losses, 50)
+  - individual_tax: pct(individual_net_gain, top_rate_plus_medicare)
+  - super_net_gain: round(gain_after_losses * (1 - 1 / 3), 2)
+expected:
+  individual_net_gain: 5000
+  individual_tax: 2350
+  super_net_gain: 6666.67
+```
+
 ## Section 11 - Common errors
 
 - Using the settlement date instead of the contract date for a property or share disposal.
@@ -274,13 +311,13 @@ Net capital gain included in assessable income    6,547.50
 ## Section 13 - Sources
 
 - Income Tax Assessment Act 1997, Part 3-1 (CGT events, cost base, exemptions), Part 3-3 (CGT concessions), Division 115 (discount capital gains), Division 152 (small business concessions), Subdivision 118-B (main residence).
-- Treasury Laws Amendment (Tax Reform No. 1) Act 2026, https://www.legislation.gov.au/C2026A00049/latest
-- Income Tax Rates Amendment (Tax Reform No. 1) Act 2026, https://www.legislation.gov.au/C2026A00050/latest
-- ATO, CGT discount, https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/cgt-discount
-- ATO, Main residence exemption for foreign residents, https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/main-residence-exemption-for-foreign-residents
-- ATO, Foreign resident capital gains withholding, https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding
-- ATO, Reforming negative gearing and capital gains tax, https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax
-- ATO, Strengthening the foreign resident CGT regime, https://www.ato.gov.au/about-ato/new-legislation/in-detail/businesses/strengthening-the-foreign-resident-cgt-regime
+- Treasury Laws Amendment (Tax Reform No. 1) Act 2026, https://www.legislation.gov.au/C2026A00049/latest (read 2026-11-22)
+- Income Tax Rates Amendment (Tax Reform No. 1) Act 2026, https://www.legislation.gov.au/C2026A00050/latest (read 2026-11-22)
+- ATO, CGT discount, https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cgt-discount (read 2026-11-22)
+- ATO, Main residence exemption for foreign residents, https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/main-residence-exemption-for-foreign-residents (read 2026-11-22)
+- ATO, Foreign resident capital gains withholding, https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding (read 2026-11-22)
+- ATO, Reforming negative gearing and capital gains tax, https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax (read 2026-11-22)
+- ATO, Strengthening the foreign resident CGT regime, https://www.ato.gov.au/about-ato/new-legislation/in-detail/businesses/strengthening-the-foreign-resident-cgt-regime (read 2026-11-22)
 
 Sources were checked on 22 November 2026.
 
