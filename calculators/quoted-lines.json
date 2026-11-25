@@ -229,12 +229,12 @@
   {
    "slug": "canada-payroll",
    "section": "Federal Basic Personal Amount (BPA) -- 2026",
-   "quote": "Federal Basic Personal Amount (BPA) -- 2026\nIncome Level | BPA (CAD)\nUp to $181,440 | $16,452\n$181,440 -- $258,482 | Claws back to $14,829\nAbove $258,482 | $14,829"
+   "quote": "Federal Basic Personal Amount (BPA) -- 2026\nUp to $181,440 | $16,452\n$181,440 -- $258,482 | ... $14,829\nAbove $258,482 | $14,829"
   },
   {
    "slug": "canada-payroll",
    "section": "Federal Tax Brackets (2026)",
-   "quote": "The lowest bracket rate was reduced from 15% to 14% effective for the 2026 tax year"
+   "quote": "Federal Tax Brackets (2026)\n0 -- 58,523 | 14%"
   },
   {
    "slug": "canada-payroll",
