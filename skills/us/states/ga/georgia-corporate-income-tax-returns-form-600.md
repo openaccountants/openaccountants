@@ -27,7 +27,7 @@ Form 600 is the annual corporate income tax return filed with Georgia's state ta
 
 C-corporations incorporated in Georgia, or foreign (out-of-state) corporations registered or doing business in Georgia.
 Preparers handling a first-year Georgia filing or picking up an existing client.
-Partnerships and LLCs taxed as pass-throughs use their applicable return. Do not categorically exclude a federal S corporation: required nonresident-shareholder Form 600S-CA consents affect Georgia S recognition. Failure of those required consents can require Form 600 and regular corporate tax. Apply the actual 2025 recognition conditions in the [IT611 filing paragraph](https://dor.georgia.gov/document/document/2025-it611-corporate-income-tax-instruction-booklet/download), read 2026-11-22, with the missing exact quotation recovered from the same filing paragraph on 2026-11-25 (printed page 8; this is not a new whole-booklet review).
+Partnerships and LLCs taxed as pass-throughs use their applicable return. Do not categorically exclude a federal S corporation: required nonresident-shareholder Form 600S-CA consents affect Georgia S recognition. The failure described in that filing paragraph negates Georgia S recognition and requires Form 600 and regular corporate tax. Apply the actual 2025 recognition conditions in the [IT611 filing paragraph](https://dor.georgia.gov/document/document/2025-it611-corporate-income-tax-instruction-booklet/download), read 2026-11-22, with the missing exact quotation recovered from the same filing paragraph on 2026-11-25 (printed page 8; this is not a new whole-booklet review).
 
 ## Before you start, ask the client
 
