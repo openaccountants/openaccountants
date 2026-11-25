@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-17T19:42:04+00:00",
+ "generated_at": "2026-11-25T10:28:50+00:00",
  "counts": {
-  "guides": 2555,
-  "loadable_skill_names": 2496,
+  "guides": 2557,
+  "loadable_skill_names": 2498,
   "jurisdictions": 290,
   "accountant_reviewed": 129,
   "held_skill_names": 1
@@ -1195,7 +1195,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-27"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "au-bas-preparation",
@@ -1234,7 +1234,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-27"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "au-coal-lsl-levy",
@@ -1286,7 +1286,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-27"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "au-deceased-estates",
@@ -1312,7 +1312,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-12"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "au-director-penalties",
@@ -1416,7 +1416,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-27"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "au-foreign-income",
@@ -1442,7 +1442,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-11"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "au-freelance-intake",
@@ -1507,7 +1507,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-11-12"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "au-land-tax",
@@ -1584,8 +1584,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-09-27"
+   "tax_year": "2026",
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "au-not-for-profit",
@@ -1650,7 +1650,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-27"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "au-payroll-tax",
@@ -1832,7 +1832,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-11-12"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "au-stamp-duty",
@@ -2001,7 +2001,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-11-15"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "australia-payroll",
@@ -2092,7 +2092,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-09-26"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "references",
@@ -6148,7 +6148,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "cn-fapiao-einvoice",
@@ -8969,7 +8969,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "fj-company-formation",
@@ -8995,7 +8995,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "fj-income-tax",
@@ -9008,7 +9008,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "fj-payroll-social",
@@ -12492,7 +12492,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "gu-payroll",
@@ -12505,7 +12505,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "gt-company-formation",
@@ -13415,7 +13415,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "in-cross-border-india-dual-resident-treaty",
@@ -13441,7 +13441,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "in-pf-esi-employer",
@@ -13454,7 +13454,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "in-professional-tax",
@@ -13480,7 +13480,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "in-tax-residency",
@@ -13507,6 +13507,19 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "india-corporate-income-tax",
+   "mcp_slug": "india-corporate-income-tax",
+   "path": "skills/india/india-corporate-income-tax.md",
+   "name": "india-corporate-income-tax",
+   "jurisdiction": "IN",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-20"
   },
   {
    "slug": "india-crypto-tax",
@@ -19616,7 +19629,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "nz-acc-levies",
@@ -19629,7 +19642,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "nz-capital-gains",
@@ -19642,7 +19655,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "nz-company-capital-records-core",
@@ -19655,7 +19668,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": null,
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "nz-company-dividend-rwt-core",
@@ -19772,7 +19785,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "nz-kiwisaver-esct",
@@ -19798,7 +19811,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "nz-payroll-notices-filing-penalties",
@@ -19824,7 +19837,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "nz-tax-residency",
@@ -19837,7 +19850,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "nz-timing-deductions-when-expense-incurred",
@@ -19850,7 +19863,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "references",
@@ -21306,7 +21319,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "pg-income-tax",
@@ -21319,7 +21332,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "pg-payroll-social",
@@ -21332,7 +21345,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "pg-tax-overview",
@@ -21358,7 +21371,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "paraguay-corporate-income-tax",
@@ -23074,7 +23087,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-15"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "ws-income-tax",
@@ -23100,7 +23113,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-15"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "ws-tax-overview",
@@ -23126,7 +23139,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-15"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "sm-company-formation",
@@ -23896,6 +23909,19 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "sg-corporate-income-tax",
+   "mcp_slug": "sg-corporate-income-tax",
+   "path": "skills/singapore/sg-corporate-income-tax.md",
+   "name": "sg-corporate-income-tax",
+   "jurisdiction": "SG",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-20"
+  },
+  {
    "slug": "sg-cpf-medisave",
    "mcp_slug": "sg-cpf-medisave",
    "path": "skills/singapore/sg-cpf-medisave.md",
@@ -23932,7 +23958,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "sg-tax-residency",
@@ -26714,7 +26740,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "to-payroll-social",
@@ -26727,7 +26753,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "to-tax-overview",
@@ -26753,7 +26779,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-16"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "trinidad-vat",
@@ -32902,7 +32928,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-14"
+   "last_updated": "2026-11-22"
   },
   {
    "slug": "vu-income-tax",

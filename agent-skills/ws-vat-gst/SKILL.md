@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ws-vat-gst"
   jurisdiction: "WS"
   tax_year: "2026"
-  last_updated: "2026-11-15"
+  last_updated: "2026-11-22"
 ---
 
-# Samoa Value Added Goods and Services Tax v0.1
+# Samoa Value Added Goods and Services Tax v0.2
 
 > **General reference only.** This skill supports AI-assisted working papers. It is not approval to file, pay or take a tax position for a particular person. Obtain qualified local review of the facts, applicable law and filing instructions.
 
@@ -38,7 +38,7 @@ For ordinary supplies use statutory price, with the associate undervalue/fair-ma
 
 Input credit is limited to a creditable acquisition for making taxable supplies, in the period input tax is paid and the required documents are held. Keep the tax invoice for domestic purchases, import documents for imports and the appropriate debit/credit note for adjustments. No full credit for private/exempt use. Net tax is output tax plus any legally operative imported-services liability less allowed input credit; an excess credit is subject to the Act’s credit/refund rules, not an assumed immediate cash refund. [section 26](https://www.ag.gov.ws/wp-content/uploads/2024/02/Value-Added-Goods-and-Services-Tax-Act-2015.pdf); [section 30](https://www.ag.gov.ws/wp-content/uploads/2024/02/Value-Added-Goods-and-Services-Tax-Act-2015.pdf).
 
-The imported-services provisions are expressly subject to a Minister-nominated commencement date. The Ministry says certain imported services are taxed and the form has an imported-services field, but a commencement instrument and a complete operational recipient/scope test were not recovered. Preserve the statutory reverse-charge topic without assuming every overseas service invoice is chargeable or creditable; refer it for instrument and transaction checks before adding it to the return. [section 1](https://www.ag.gov.ws/wp-content/uploads/2024/02/Value-Added-Goods-and-Services-Tax-Act-2015.pdf); [section 8](https://www.ag.gov.ws/wp-content/uploads/2024/02/Value-Added-Goods-and-Services-Tax-Act-2015.pdf); [VAGST001, boxes 3-15](https://revenue.gov.ws/wp-content/uploads/2022/09/VAGST-001.pdf).
+The imported-services provisions are expressly subject to a Minister-nominated commencement date. The Ministry says certain imported services are taxed. Box 3 of VAGST001 includes a note about imported services consumed by exempt bodies in the total sales/income field. A commencement instrument and a complete operational recipient/scope test were not recovered. Preserve the statutory reverse-charge topic without assuming every overseas service invoice is chargeable or creditable; refer it for instrument and transaction checks before adding it to the return. [section 1](https://www.ag.gov.ws/wp-content/uploads/2024/02/Value-Added-Goods-and-Services-Tax-Act-2015.pdf); [section 8](https://www.ag.gov.ws/wp-content/uploads/2024/02/Value-Added-Goods-and-Services-Tax-Act-2015.pdf); [VAGST001, box 3](https://revenue.gov.ws/wp-content/uploads/2022/09/VAGST-001.pdf).
 
 Exempt categories include defined financial services, donated goods/services supplied by a non-profit body, passenger bus/taxi services (excluding exclusive hire), departure charge, resident telecom interconnection, domestic ship passenger carriage and qualifying overseas-aid-project supplies, but excluding supplies to or by subcontractors or other suppliers to the head contractor. Financial-service definitions exclude debt collection/factoring and securities custody; do not exempt every finance-related fee. For zero-rated categories beyond exports, apply the full Schedule 3 description, including defined education, hospital medical supplies and water, rather than treating an industry name as an exemption. [Schedule 2, exempt supplies and financial services](https://www.ag.gov.ws/wp-content/uploads/2024/02/Value-Added-Goods-and-Services-Tax-Act-2015.pdf); [Schedule 3 Part 1 clauses 1-3](https://www.ag.gov.ws/wp-content/uploads/2024/02/Value-Added-Goods-and-Services-Tax-Act-2015.pdf).
 
@@ -123,9 +123,10 @@ Read on **2026-11-15** for the stated sections. The Attorney General tax consoli
 | Read for Tax Due Dates and footnote | https://revenue.gov.ws/inland-revenue-services/ | 2026-11-15 |
 | Read for section 31; section 47; section 48; section 49 | https://www.ag.gov.ws/wp-content/uploads/2024/02/Tax-Administration-Act-2012.pdf | 2026-11-15 |
 | Read for VAGST001, boxes 3-15 | https://revenue.gov.ws/wp-content/uploads/2022/09/VAGST-001.pdf | 2026-11-15 |
+| Read for VAGST001 box 3, total sales/income and imported-services note | https://revenue.gov.ws/wp-content/uploads/2022/09/VAGST-001.pdf | 2026-11-23 |
 
 Not yet confirmed: A portable 2026 administrative deadline reconciling 15 working days with the Ministry’s 21st summary; imported-services commencement instrument and operational scope; special adjustments, mixed-use allocation, going-concern and sector-specific zero-rating conditions beyond the express examples; current live filing fields/rounding. Monthly filing is not the ordinary statutory default.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-15. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ws-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ws-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ws-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ws-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
