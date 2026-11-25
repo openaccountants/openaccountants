@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/nz-income-tax-ir3"
   jurisdiction: "NZ"
   tax_year: "2026"
-  last_updated: "2026-11-14"
+  last_updated: "2026-11-22"
 ---
 
-# New Zealand income tax for self-employed individuals (IR3) v2.3
+# New Zealand income tax for self-employed individuals (IR3) v2.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -24,7 +24,7 @@ New Zealand tax-resident natural persons with a 31 March balance date who file a
 
 This file is a Tier 2 reference with review pending. Each statement has 1 of 4 standings:
 
-- **Enacted.** Read in the Act or regulations on legislation.govt.nz.
+- **Enacted.** Set by an Act or by secondary legislation, including determinations published by Inland Revenue as secondary legislation.
 - **Practice.** Published by Inland Revenue or ACC. It shows how the agency applies the rule and is not itself the statute.
 - **Bill.** Before Parliament and not law.
 - **Held.** Not confirmed from a primary source. It is listed on the 'Not yet confirmed' line under Sources.
@@ -67,7 +67,7 @@ A refusal is a full stop. When a trigger applies, output the message verbatim an
 - Never claim vehicle business use above 25% without actual records or a logbook term. A kilometre rate election sets the method; it does not show the business share.
 - Never apply the 50% entertainment limit to a cost outside the rule, and never claim more than 50% of a cost within it.
 - Never deduct provisional tax, income tax or GST payments to Inland Revenue.
-- Never apply the IETC for a month in which a condition in section LC 13 failed, including Working for Families that the person or a partner is both entitled to and receiving (entitlement alone before 30 March 2025) or NZ Super.
+- Count eligible whole months under section LC 13 from 2025-26 and eligible whole days under sections LC 14 and LC 15 for 2024-25. The Working for Families disqualification applies on entitlement alone before 30 March 2025 and on entitlement and receipt from that date, for either the person or their partner.
 - Never add the ACC earners' levy paid on self-employed income to RIT, or use it to test the NZD 5,000 provisional tax threshold.
 - Never confuse the ACC earners' levy, invoiced by ACC and not in RIT, with the ACC work levy, a deductible expense.
 - Never credit the earners' levy withheld with PAYE as income tax. Credit tax deducted after the levy (Box 11E).
@@ -145,7 +145,7 @@ statute: (a * days_in_first_period + b * days_in_second_period) / 365
 IR3G 2025 worksheet: (a * 121 + b * 244) / 365 * eligible_months / 12, with a and b floored or as printed
 ```
 
-The 2 part-year routes give different results, and the prior version's months formula is the worksheet route, not the statutory one. Sections LC 14 and LC 15 say 'credit period days ÷ 365'. Show both figures and leave the choice to the reviewer.
+For 2024-25 part-year eligibility, use whole days in each period under [section LC 14](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/LMS967327/) and [section LC 15](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/LMS967330/). Show the months-based Inland Revenue result only to reconcile the return worksheet. If the result depends on flooring either period at nil, refer that separate question to the reviewer.
 
 The floor is a second open conflict, and it is held. Section LC 13(2) says 'positive amount' and IR3G 2025 says the credit applies to net income between NZD 24,000 and NZD 48,000 before 31 July 2024, which supports flooring each period. Sections LC 14 and LC 15 do not repeat 'positive', and the IR3G 2025 worksheet prints no floor at Boxes D and I. The 2 readings differ for net income above NZD 48,000. Show both figures and leave the choice to the reviewer. For a full year of eligibility, net income of NZD 45,000 gives NZD 476.90 on both readings. Net income of NZD 67,000 gives NZD 260.71 floored and NZD (558.11) on the printed boxes; no text read allows a negative credit.
 
@@ -212,7 +212,7 @@ NZD 139,384 was the 2023-24 maximum. The 2024-25 minimum is Practice, because th
 
 ### Kilometre rates
 
-The method is Enacted (ITA s DE 12) and the Commissioner sets the rates under section DE 12(4). The 2025-26 rates are in the Income Tax (Kilometre Rates for the Business Use of Vehicles for the 2025-26 income year) Instrument 2026, OS 19/04 (KM 2026), and the 2024-25 rates in OS 19/04 (KM 2025). Both are published on Inland Revenue's Tax Technical site, not legislation.govt.nz, so this file labels them Practice. Inland Revenue publishes each year's rates after year end, so 2026-27 rates are held. The rates include depreciation, so a person on this method has no depreciation deduction (OS 19/04a, paragraph 12). Tier 1 applies to the business proportion of the first 14,000 km the vehicle travels in the year, business and private; Tier 2 applies beyond that. A vehicle type outside the table uses the costs method (OS 19/04a, paragraph 11).
+The method is Enacted (ITA s DE 12) and the Commissioner sets the rates under section DE 12(4). The 2025-26 rates are in the Income Tax (Kilometre Rates for the Business Use of Vehicles for the 2025-26 income year) Instrument 2026, OS 19/04 (KM 2026), and the 2024-25 rates in OS 19/04 (KM 2025). Both instruments are secondary legislation and are published on Inland Revenue's Tax Technical site. Inland Revenue publishes each year's rates after year end, so 2026-27 rates are held. The rates include depreciation, so a person on this method has no depreciation deduction (OS 19/04a, paragraph 12). Tier 1 applies to the business proportion of the first 14,000 km the vehicle travels in the year, business and private; Tier 2 applies beyond that. A vehicle type outside the table uses the costs method (OS 19/04a, paragraph 11).
 
 | Vehicle | 2025-26 Tier 1 | 2025-26 Tier 2 | 2024-25 Tier 1 | 2024-25 Tier 2 | Official source |
 | --- | --- | --- | --- | --- | --- |
@@ -227,7 +227,7 @@ The method is Enacted (ITA s DB 18AA) and the Commissioner sets and publishes th
 
 ### Schedular withholding rates
 
-Enacted. ITA Schedule 4 sets the default for each activity. Section RD 10B applies, in order, an elected rate (TAA s 24F(3)) or special rate (TAA s 24G), otherwise Schedule 4; a rate notified by the Commissioner (TAA s 24F(4)) overrides; and 45% applies where the recipient gives no name and tax file number. Inland Revenue's practice is that a chosen rate is at least 10%, or 15% for a non-resident on a temporary work or entry visa.
+Enacted. ITA Schedule 4 sets the default for each activity. Section RD 10B applies, in order, an elected rate (TAA s 24F(3)) or special rate (TAA s 24G), otherwise Schedule 4; a rate notified by the Commissioner (TAA s 24F(4)) overrides; and 45% applies where the recipient gives no name and tax file number. Under [TAA Schedule 5 Part C clause 3](https://www.legislation.govt.nz/act/public/1994/166/en/latest/sections/LMS195590/), the minimum elected rate is 15% for a non-resident or a holder of a temporary entry class visa and 10% for other eligible payees. A non-resident entertainer cannot elect a rate.
 
 | Activity | Rate | Tax year | Official source |
 | --- | --- | --- | --- |
@@ -268,7 +268,7 @@ Tax refunds, provisional tax and GST paid to Inland Revenue are neither income n
 
 For a GST-registered person, output tax is excluded income (ITA s CX 1) and input tax is not deductible (ITA s DB 2), so the IR3 carries GST-exclusive amounts. Only strip GST from an amount after verifying it carried GST at 15%, using the taxable supply information, a supplier invoice or the GST return workings. A zero-rated supply, an exempt supply or a purchase from an unregistered supplier carries no GST to strip. Until verified, the GST treatment of that line is Needs Input. Verified at 15%: GST is amount × 3/23. Verified as not carrying GST: use face value. Test both cases where the line is material.
 
-A person who is not registered reports income at face value and claims costs including GST (Inland Revenue, home business page).
+A person who is not registered generally uses GST-inclusive amounts. [ITA s DB 2(2B)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1513574/) treats an unregistered underlying supplier of listed marketplace services as registered for the expenditure attributable to those services. The supplier can instead choose to include a received flat-rate credit in income under section CH 5B and use GST-inclusive costs in relation to those supplies.
 
 ### Schedular payments
 
@@ -279,7 +279,7 @@ Gross income is the amount before withholding. Take gross and tax from the Summa
 - **Entertainment.** Enacted, ITA subpart DD. Section DD 1(2) limits the deduction to 50% only for the kinds of entertainment in section DD 2 where the person has both a private and a business benefit. Sections DD 4 to DD 8 set further limits on the rule, and section DD 7 takes entertainment outside New Zealand out of the limit. The prior version applied 50% to all restaurant and cafe narrations; that is too wide. A person's own meals are private unless the extra-cost rules for remote locations or unusual hours apply (Inland Revenue, meal page). A business lunch with clients is 50% per Inland Revenue (IR268). Keep a record of the people, the date and the reason. Purely social cost is nil.
 - **Motor vehicles.** Enacted, ITA subpart DE. It apportions a vehicle used partly for business; it does not apply to most companies, to a person whose only income is employment income, or to a vehicle used only to derive income (section DE 1(2)). Section DE 3 gives 2 ways to calculate the proportion of business use: actual records showing the reasons for and the distance of business journeys (section DE 5), and a logbook kept for at least 90 consecutive days that gives a term of up to 3 years, with total distance also recorded (sections DE 6 to DE 8). The method of deduction is a separate choice. A person elects the kilometre rate method in the return for the income year that includes the latest of 1 April 2017, the day they acquire the vehicle and the day they first use it for business (section DE 2B(1)). With no election they are treated as electing the costs method (section DE 2B(2)). Either election cannot be revoked and applies until the end of the income year of disposal (section DE 2B(3)). A kilometre rate election sets the method only: section DE 12(3)(c) still takes the business proportion from sections DE 5 to DE 11, and OS 19/04a says the person must use a logbook or actual records. With no records, no logbook term and no kilometre election, section DE 4 limits the deduction to the lesser of actual business use and 25%. So 25% is a cap, not a deemed share: if actual business use is unknown, the share is Needs Input. A client with a kilometre election and no records or logbook term is also Needs Input and never goes above 25%, because section DE 4(1)(c) takes them out of section DE 4 and the Act gives no figure (see Source conflicts). A person on the kilometre method records the odometer at each balance date and must be able to show when the vehicle passes 14,000 km (OS 19/04a, paragraphs 10 and 21). Travel between home and work is private.
 - **Home office.** Enacted for the square metre method, ITA s DB 18AA, which a person may choose; Operational Statement OS 19/03 is Practice on how it runs. The formula is (a × b) + (c × d). Here a is mortgage interest, rates and rent paid in the year for the buildings and their curtilage, c is the area of the buildings that is separately identifiable and used primarily for the business, b is c ÷ total area of buildings on the premises, and d is the published rate. A person using it claims no other deduction for business use of the premises (section DB 18AA(4)). Otherwise apportion actual costs by time and space. For a farmhouse OS 19/03 points to IS 17/02, which was not read. The prior version's 'only if dedicated workspace' does not match that second route. Depreciation on the home itself is not allowed.
-- **Phone and internet.** Practice. A private landline is 50%, business tolls 100% and a separate business line 100%. Internet use is a fair and reasonable estimate. The prior version's 'commonly 50-80%' is unsupported, so document the actual share.
+- **Phone and internet.** Practice. For a private landline used partly for business, claim 50% of the line rental and 100% of business toll calls. Claim 100% of a separate business line. Internet use is a fair and reasonable estimate. The prior version's 'commonly 50-80%' is unsupported, so document the actual share.
 - **ACC levies.** ITA s EF 3 allocates a levy deduction to the year it is due and payable, and is a timing rule, not a permission. The work levy on a business qualifies through section DA 1, with section EF 3(5)(c) naming the Work Account levy. Section EF 3(5)(d) also names the Earners' Account levy. Practice: IR3B Box 9 tells a person to include 'ACC levy payments for self-employment', amongst deductible expenses, which points to a deduction but does not name the earners' levy. No statute read gives the answer, so whether a self-employed person's earners' levy is deductible is held. Do not state either answer.
 - **Tax-return costs.** ITA s DB 3. **Use of money interest payable.** ITA s DB 3B, allocated to the year paid by section EF 5. **Income tax and civil penalties.** Not deductible (ITA s DB 1).
 - **Depreciation and new assets.** Subpart EE. Investment Boost in subpart DI allows a deduction of 20% of the cost, less listed contributions (section DI 5), for an asset never previously used or available for use in New Zealand, if chosen in the return (section DI 2). Depreciable property must first become available for use on or after 22 May 2025, and for other assets the expenditure must be incurred on or after that date. A dwelling, fixed life intangible property and the petroleum and mining rights listed are excluded (section DI 4(b)).
@@ -333,7 +333,7 @@ No default below names a tax result that depends on an unverified fact.
 | Schedular rate unknown | Needs Input; use the Summary of Income | ITA s RD 10B |
 | ACC levy amount uncertain | Use the ACC invoice. An estimate uses the earners' levy, under SL 2025/18 reg 7 where weekly compensation is purchased, and the classification unit rate from `nz-acc-levies` and is labelled as such; the Working Safer rate stays held | SL 2025/18; SL 2025/17 |
 | Provisional method not stated | Confirm with the client. Inland Revenue treats a person as standard unless they choose otherwise; 105% or 110% is Needs Input | Inland Revenue, standard option; ITA s RC 5 |
-| IETC months unknown | Needs Input; no credit is calculated | ITA s LC 13 |
+| IETC eligibility period unknown | Needs Input. Confirm eligible days for 2024-25 and months for later years | ITA s LC 13 |
 | GST status unknown | Needs Input; the prior 'non-registered, face value' fallback is withdrawn | GST Act s 51 |
 
 ### Reviewer attention thresholds
@@ -499,7 +499,7 @@ SECTION G, REVIEWER FLAGS
 
 ## Deadlines and filing
 
-Dates are for a 31 March balance date. Inland Revenue's practice is that an instalment date on a weekend or public holiday is met by the next working day (IR3G 2026, IR289).
+Dates are for a 31 March balance date. Under [Legislation Act 2019 s 55](https://www.legislation.govt.nz/act/public/2019/58/en/latest/sections/DLM7298318/), if the due date is a non-working day, the filing or payment can be made on the next working day.
 
 | Item | Date | Tax year | Official source |
 | --- | --- | --- | --- |
@@ -511,15 +511,15 @@ Dates are for a 31 March balance date. Inland Revenue's practice is that an inst
 | Return due, tax agent extension | No later than 31 March 2028 | 2026-27 | [TAA s 37(4), (5)(a)](https://www.legislation.govt.nz/act/public/1994/166/en/latest/) |
 | Terminal tax | 7 February after year end: 7 February 2027. That is a Sunday and Monday 8 February 2027 is the observed Waitangi Day holiday, so a payment received on Tuesday 9 February 2027 is on time (derived from [Inland Revenue, When to pay](https://www.ird.govt.nz/managing-my-tax/make-a-payment/when-to-pay) and [Employment NZ, public holiday dates](https://www.employment.govt.nz/leave-and-holidays/public-holidays/public-holidays-and-anniversary-dates)); confirm the date in myIR | 2025-26 | [ITA s RA 13(1), (2)(b), (3)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A column G](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
 | Terminal tax, return linked to a tax agent with an extension | 7 April after that: 7 April 2027 | 2025-26 | [ITA s RA 13(2)(a), (3), (4)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A column H](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
-| Terminal tax, other years | 7 February 2026, or 7 April 2026 if linked | 2024-25 | [ITA s RA 13](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
-| Terminal tax, other years | 7 February 2028, or 7 April 2028 if linked | 2026-27 | [ITA s RA 13](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
+| Terminal tax, other years | 9 February 2026 (7 February falls on Saturday), or 7 April 2026 with the tax agent extension | 2024-25 | [ITA s RA 13](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
+| Terminal tax, other years | 7 February 2028, or 7 April 2028 with the tax agent extension | 2026-27 | [ITA s RA 13](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
 | Provisional tax, 3 instalments | 28 August 2026, 15 January 2027 and 7 May 2027 | 2026-27 | [ITA s RC 9(3)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A columns B, D, F](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
 | Provisional tax, 6-monthly GST | 28 October 2026 and 7 May 2027 | 2026-27 | [ITA s RC 9](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A columns C, F](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
-| Provisional tax, GST ratio method | 6 dates: 28 June, 28 August, 28 October, 15 January, 28 February, 7 May | 2026-27 | [ITA s RC 9](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A columns A to F](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
+| Provisional tax, GST ratio method | 29 June 2026 (28 June falls on Sunday), 28 August 2026, 28 October 2026, 15 January 2027, 1 March 2027 (28 February falls on Sunday) and 7 May 2027 | 2026-27 | [ITA s RC 9](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A columns A to F](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
 
 The agent date is an extension under section 37(4), not an automatic date. A 31 March year is measured from its own end: the prior version's '31 March of second following year' fits only if counted from the start of the year. Section 37(3) and (3B) allow other extensions.
 
-**Filing.** File in myIR ('Returns and transactions', then 'File now' on the Returns tab), or through a tax agent. An individual who is not otherwise required to file must file if they have more than NZD 200 of income that has not been reported to Inland Revenue, and anyone self-employed files; check Inland Revenue's IR3 page for the full list. Inland Revenue says to wait until June to file where a payer has to send it information about payments. Attachments and supports are the IR10 (financial statement summary), IR3B, IR3F, IR3R, IR833 and IR1261 where the return guide calls for them. Inland Revenue issues a notice of assessment. Keep records under TAA s 22.
+**Filing.** File in myIR ('Returns and transactions', then 'File now' on the Returns tab), or through a tax agent. Check Inland Revenue's IR3 page for filing triggers. [TAA s 22K](https://www.legislation.govt.nz/act/public/1994/166/en/latest/sections/LMS191599/) provides a NZD 200 de minimis for income other than reportable income, subject to specific information requirements. Inland Revenue says an individual whose only income is schedular payments does not have to file an IR3. Check any missing reportable income separately under section 22F. Inland Revenue says to wait until June to file where a payer has to send it information about payments. Attachments and supports are the IR10 (financial statement summary), IR3B, IR3F, IR3R, IR833 and IR1261 where the return guide calls for them. Inland Revenue issues a notice of assessment. Keep records under TAA s 22.
 
 ## Penalties and interest
 
@@ -543,16 +543,16 @@ The prior version's 'NZD 50/month up to NZD 300' and '1.5%/month ongoing' are no
 
 Section 183A lets the Commissioner remit a late filing or late payment penalty, and a shortfall penalty only under section 141AA, if an event or circumstance beyond the taxpayer's control caused the failure, it gives a reasonable justification or excuse, and the failure was corrected as soon as practicable (section 183A(1A)). An agent's act or omission, with a narrow exception, and the taxpayer's financial position do not count (section 183A(3)).
 
-Reductions: section 141FB, to 50% if no disqualifying offence or penalty applies. For sections 141A to 141D the disqualifying penalty look-back is 4 years, or 2 years for PAYE, FBT, GST and RWT. For section 141E it runs back to 26 March 2003. Section 141G voluntary disclosure, pre-notification 100% for lack of reasonable care, unacceptable tax position or unacceptable interpretation and 75% otherwise, post-notification 40%; section 141H, 75% for adequate disclosure of a section 141B or 141D position; section 141I, 75% for a temporary shortfall. Section 141J limits the reduction where a voluntary disclosure is made for a temporary shortfall. Section 141JAA caps a reasonable care or unacceptable tax position penalty at NZD 50,000 when disclosed or determined in time, unless section 141K applies.
+Reductions: section 141FB, to 50% if no disqualifying offence or penalty applies. For sections 141A to 141D the disqualifying penalty look-back is 4 years, or 2 years for PAYE, FBT, GST and RWT. For section 141E it runs back to 26 March 2003. Section 141G voluntary disclosure, pre-notification 100% for lack of reasonable care, unacceptable tax position or unacceptable interpretation and 75% otherwise, post-notification 40%; section 141H, 75% for adequate disclosure of a section 141B or 141D position; section 141I, 75% for a temporary shortfall. Section 141J limits the reduction where a voluntary disclosure is made for a temporary shortfall. [Section 141JAA](https://www.legislation.govt.nz/act/public/1994/166/en/latest/sections/DLM356617/) caps a reasonable care or unacceptable tax position penalty at NZD 50,000 if the taxpayer voluntarily discloses the shortfall or the Commissioner determines it by the later of 3 months after the return due date and the lesser of one return period or 6 months after that date. The cap does not apply if section 141K applies.
 
-**Use of money interest.** Enacted in TAA Part 7 (sections 120A to 120L). Interest accrues daily at t × r ÷ 365 under section 120E, and Inland Revenue says it does not compound. Rates are set by the Commissioner under section 120H; no instrument was on legislation.govt.nz, so the rates below are Inland Revenue's published figures.
+**Use of money interest.** Enacted in TAA Part 7 (sections 120A to 120L). Interest accrues daily at t × r ÷ 365 under section 120E, and Inland Revenue says it does not compound. The rates below were set by regulations. [Section 227I](https://www.legislation.govt.nz/act/public/1994/166/en/latest/sections/LMS1590354/) preserves the final rates under the 1998 regulations until the first determination under section 120H applies.
 
 | From | Charged on underpayments | Paid on overpayments | Official source |
 | --- | --- | --- | --- |
-| 16 January 2026 | 8.97% | 2.25% | [Inland Revenue, Interest on overpayments and underpayments](https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments) |
-| 8 May 2025 | 9.89% | 3.27% | [Inland Revenue, Interest on overpayments and underpayments](https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments) |
-| 16 January 2025 | 10.88% | 4.30% | [Inland Revenue, Interest on overpayments and underpayments](https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments) |
-| 29 August 2023 | 10.91% | 4.67% | [Inland Revenue, Interest on overpayments and underpayments](https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments) |
+| 16 January 2026 | 8.97% | 2.25% | [Rate amendment regulations](https://www.legislation.govt.nz/regulation/public/2025/0310/8.0/contents.html) |
+| 8 May 2025 | 9.89% | 3.27% | [Rate amendment regulations](https://www.legislation.govt.nz/regulation/public/2025/0065/latest/LMS1033461.html) |
+| 16 January 2025 | 10.88% | 4.30% | [Rate amendment regulations](https://www.legislation.govt.nz/secondary-legislation/pco-drafted/2024/254/en/latest/) |
+| 29 August 2023 | 10.91% | 4.67% | [Rate amendment regulations](https://www.legislation.govt.nz/regulation/public/2023/0179/9.0/whole.html) |
 
 Interest payable is deductible under ITA s DB 3B in the year paid (section EF 5), and Inland Revenue describes it as deductible for business purposes. Interest paid to the taxpayer is income (section EF 4 allocates it). Exposure by method: sections 120KB to 120KE and `nz-provisional-tax`. Under TAA s 120KE(1) and (2), a person on the standard method, or with no obligation under section RC 3(3), whose RIT is under NZD 60,000 has no interest either way until terminal tax date, unless they estimated, used AIM or a GST ratio in the year or a provisional tax interest avoidance arrangement exists. Under section 120KE(3) and (4), a person who uses the GST ratio for the whole corresponding income year has no interest either way until terminal tax date on provisional tax for the period the ratio is used. Neither subsection turns on payment. Practice: Inland Revenue's ratio page speaks of a person who applies the option correctly and pays the provisional tax calculated, and IR289 says late payment penalties still apply.
 
@@ -598,7 +598,7 @@ expected:
   instalment: 3976
 ```
 
-Decision: 2025-26 RIT is more than NZD 5,000, so section RC 3(3) does not remove a 2026-27 obligation and that RIT sets the standard amount. Whether provisional tax is payable for 2026-27 still turns on that year's RIT (section RC 3(1)(a)). The 105% limb applies because the return was not outstanding under an extension at the instalment date. Had the return still been outstanding at 28 August 2026 under an agent extension, the first instalment would use 110% of 2024-25 RIT, which is a Needs Input.
+Decision: 2025-26 RIT is more than NZD 5,000, so section RC 3(3) does not remove a 2026-27 obligation and that RIT sets the standard amount. Whether provisional tax is payable for 2026-27 still turns on that year's RIT (section RC 3(1)(a)). The 105% limb applies because the preceding year's return was filed by the instalment date. Had the return still been outstanding at 28 August 2026 under an agent extension, the first instalment would use 110% of 2024-25 RIT, which is a Needs Input.
 
 Same client, but entitled to and receiving WFF for 3 months. The condition fails for those months, so the credit falls to 9 months.
 
@@ -703,7 +703,7 @@ expected:
   receipt_zero_rated: 11500
 ```
 
-Decision: the kilometre method gives the larger deduction here, but only if this is the election year for the vehicle under section DE 2B. Otherwise the person is on the costs method. Either election cannot be revoked and holds until the end of the income year of disposal. Under both methods the 60% comes from the logbook term. With no records, no logbook term and no kilometre election, the deduction is the lesser of actual use and 25%, so NZD 3,500 at most. With a kilometre election and no records or logbook term, the share is Needs Input. The receipt is NZD 10,000 only if GST at 15% is verified.
+Decision: the kilometre method gives the larger deduction here. Use it if a valid election under [section DE 2B](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM7271117/) applies. A new election is available only in the vehicle's election year. In a later year, use the method already elected or deemed elected. Either election cannot be revoked and holds until the end of the income year of disposal. Under both methods the 60% comes from the logbook term. With no records, no logbook term and no kilometre election, the deduction is the lesser of actual use and 25%, so NZD 3,500 at most. With a kilometre election and no records or logbook term, the share is Needs Input. The receipt is NZD 10,000 only if GST at 15% is verified.
 
 ### Example 2: mixed salary and self-employed, 2024-25
 
@@ -775,7 +775,7 @@ expected:
   difference_printed: 128.58
 ```
 
-Decision: show all 3 figures. Sections LC 14 and LC 15 use days, and that figure does not depend on the floor because a has no days here. The IR3G 2025 worksheet uses months, and its figure depends on the floor. Do not choose by default.
+Decision: use the statutory NZD 259.29 for this part-year case. All 182 eligible days are in the second period, so the first period floor does not affect the result. Keep the NZD 173.81 and NZD 130.71 worksheet results for reconciliation.
 
 ### Bank line fixtures
 
@@ -784,7 +784,7 @@ Layouts are carried from the prior version and untested. Each treatment assumes 
 | Line | Case | Treatment |
 | --- | --- | --- |
 | `03/01/2025,,PAYMENT FROM ACME LTD,,11500.00,` (ANZ) | IT consultant | NZD 10,000 if registered and GST at 15% is verified; NZD 11,500 if not registered or the supply carried no GST |
-| `10/08/2025,SHELL SELECT QUEENSTOWN,120.00,,` (Westpac) | Photographer, 8,400 of 14,000 km business, logbook term | NZD 72. With no records, no logbook term and no kilometre election: lesser of actual use and 25%, so NZD 30 at most, on a GST-exclusive basis if registered. With a kilometre election and no records or logbook term: Needs Input |
+| `10/08/2025,SHELL SELECT QUEENSTOWN,120.00,,` (Westpac) | Photographer, 8,400 of 14,000 km business, logbook term | If NZD 120 is the deductible cost base before apportionment, 60% is NZD 72 and the 25% cap is NZD 30. If NZD 120 includes GST and the input tax is excluded for income tax, 60% is NZD 62.61 and the 25% cap is NZD 26.09. The cap applies only without records, a logbook term or a kilometre election and still requires support for actual business use. With a kilometre election and no records or logbook term: Needs Input |
 | `15/03/2025,SCHEDULAR PAYMENT BUILDCO LTD,-,4000.00,` (ASB) | Plumber | At a verified 20%: gross NZD 5,000, credit NZD 1,000. At a verified 15%: gross NZD 4,705.88, credit NZD 705.88. Rate unknown: Needs Input |
 | `28/02/2025,TT,STRIPE PAYOUT,CODE,REF,2185.00,` (BNZ) | Marketing consultant | Gross up from the Stripe statement: the prior example's NZD 2,254 and NZD 69 are illustrative, GST-exclusive if registered |
 | `20/05/2025,PAYPAL TRANSFER USD,,,1850.00,` (Kiwibank) | Freelance writer | Income is the NZD amount at the rate rule under Foreign currency, not the bank credit by default |
@@ -802,7 +802,7 @@ Layouts are carried from the prior version and untested. Each treatment assumes 
 ### Completion checks
 
 - [ ] Rate table matches the tax year, and 2024-25 composite rates are used for 2024-25 only?
-- [ ] GST stripped only where verified, for a registered person?
+- [ ] GST treatment verified, including for unregistered suppliers of listed marketplace services?
 - [ ] Schedular payments grossed up from a verified rate?
 - [ ] Vehicle claim above 25% backed by actual records or a logbook term, the election checked against section DE 2B, and any other claim within section DE 4 or marked Needs Input?
 - [ ] Entertainment rule applied by line?
@@ -846,7 +846,7 @@ Layouts are carried from the prior version and untested. Each treatment assumes 
 | Inland Revenue, IR3 page | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3 | 2026-11-05 | Read in part for who files and the June note |
 | Inland Revenue, IR3 in myIR | https://www.ird.govt.nz/myir-help/what-you-can-do/how-to-file-an-ir3-individual-income-tax-return-in-myir | 2026-11-05 | Read in part for the filing steps |
 | Inland Revenue, provisional tax | https://www.ird.govt.nz/income-tax/provisional-tax | 2026-11-05 | Read in part for who pays |
-| Inland Revenue, standard option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/standard-option | 2026-11-05 | Read in part for the default and the 105% wording |
+| Inland Revenue, standard option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/standard-option | 2026-11-05 | Read in part for the default and the "previous year's RIT plus 5%" wording |
 | Inland Revenue, ratio option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/ratio-option | 2026-11-05 | Read in part for the interest statement |
 | Inland Revenue, interest on provisional tax | https://www.ird.govt.nz/income-tax/provisional-tax/interest-on-provisional-tax | 2026-11-05 | Read in part for the NZD 100 wording |
 | Inland Revenue, first year in business | https://www.ird.govt.nz/income-tax/provisional-tax/paying-tax-in-your-first-year-in-business | 2026-11-05 | Read in part for the early payment discount and rates |
@@ -885,7 +885,7 @@ Layouts are carried from the prior version and untested. Each treatment assumes 
 
 ### Source conflicts
 
-- **IETC 2024-25 part year.** ITA ss LC 14 and LC 15 use days ÷ 365. The IR3G 2025 worksheet and the prior version use months ÷ 12. Both are shown.
+- **IETC 2024-25 part year.** ITA ss LC 14 and LC 15 use days ÷ 365. Use the statutory days for the calculation. Use the IR3G 2025 months-based worksheet only to reconcile a difference.
 - **IETC 2024-25 floor.** Section LC 13(2) says 'positive amount'. Sections LC 14 and LC 15 set formulas under the heading 'Amount of credit formula: section LC 13(2)' and do not repeat 'positive'. The IR3G 2025 worksheet prints no floor at Boxes D and I, and the guide's NZD 48,000 wording fits a floor. At NZD 50,000 net income the credit is NZD 347.62 floored and NZD 261.42 on the printed boxes, and Example 2 RIT is NZD 5,160.18 or NZD 5,246.38. Both are shown and this file picks neither.
 - **WFF condition wording.** ITA s LC 13(1)(d) and (e) have needed entitlement and receipt together since 30 March 2025, and Inland Revenue's IETC page says the same. IR3G 2026 still says 'not entitled'. This file follows the Act.
 - **RIT as a credit.** ITA s YA 1 makes RIT the positive amount, if any. IR3G 2026 calls Box 14 'your residual income tax' and lets it be a credit. This file treats RIT as nil and carries the excess separately; the refund is the same. The YA 1 list names no section LS credit, but the worksheet subtracts overpaid PIE tax at Box 11. This file follows the worksheet there, and a reviewer confirms RIT where Box 35C decides the NZD 5,000 threshold.
@@ -908,12 +908,13 @@ Layouts are carried from the prior version and untested. Each treatment assumes 
 - **Known gaps.** Company income tax; non-resident income and NRWT; bright-line gain computation; Working for Families calculations; GST return computation; KiwiSaver employer contribution calculations.
 - **Excluded jurisdictions.** The prior version names no fixed excluded jurisdiction.
 
-Not yet confirmed: the annual taxing Act for 2026-27 (Government Bill 344-1 only, and its commentary was not read); 2026-27 kilometre and square metre rates; the Working Safer levy rate and instrument (NZD 0.08 per NZD 100 in the prior version, not read in a primary source); whether a self-employed person's earners' levy is deductible; whether each 2024-25 IETC period credit is floored at nil, and the 2024-25 part-year route; the amount for a client with a kilometre election and no share evidence; ACC Levy Guidebook 2026-27 (blocked at source); classification unit rates in the guidebook; the training expense rule; the statutory source for the next working day practice; bank formats and narrations, untested.
+Not yet confirmed: the annual taxing Act for 2026-27 (Government Bill 344-1 only, and its commentary was not read); 2026-27 kilometre and square metre rates; the Working Safer levy rate and instrument (NZD 0.08 per NZD 100 in the prior version, not read in a primary source); whether a self-employed person's earners' levy is deductible; whether each 2024-25 IETC period credit is floored at nil; the amount for a client with a kilometre election and no share evidence; ACC Levy Guidebook 2026-27 (blocked at source); classification unit rates in the guidebook; the training expense rule; bank formats and narrations, untested.
 
 ### Version history
 
 | Version | Date | Change |
 | --- | --- | --- |
+| 2.4 | November 2026 | Corrected IR3 filing, 2024-25 part-year IETC, schedular rates, marketplace GST treatment, payment dates, vehicle examples and legal sources for interest and kilometre rates |
 | 2.2 | November 2026 | Converted to the upstream template. Primary-source check. Corrected penalties, the IETC basis, the GST test, the schedular default, entertainment, vehicle cap, home office, rental, filing dates and the PAYE credit. Added refusals, an operational hold, Bill and enactment standing, and evidence files. Repaired after an independent check: vehicle evidence, the residential deduction basis, the IETC floor held, and the instruments read |
 | 2.1 | November 2026 | ACC levy rates and caps by year (2025-26 and 2026-27); ACC earner levy removed from RIT and the computation flow |
 | 2.0 | April 2026 | Full rewrite to v2.0 structure; NZ bank formats (ANZ, BNZ, ASB, Westpac, Kiwibank); transaction pattern library; Windcave/PayNow patterns; worked examples; prohibitions and disclaimer added |
@@ -921,4 +922,4 @@ Not yet confirmed: the annual taxing Act for 2026-27 (Government Bill 344-1 only
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nz-income-tax-ir3` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nz-income-tax-ir3. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nz-income-tax-ir3` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nz-income-tax-ir3. If neither is available, confirm every figure against the official source pages cited above before relying on it.
