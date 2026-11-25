@@ -1,6 +1,6 @@
 # OpenAccountants
 
-> Every skill here is written from the official law and the tax authority's own pages, with each figure linked to its source, and checked before it is published. Accountants write and approve these skills, but approvals, and the accountant's name, appear only through the OpenAccountants plugin (MCP). More than 100 skills are approved by a named, licensed accountant, and this repository runs behind what the plugin serves. For the current, accountant-approved version, add the plugin to your AI: https://www.openaccountants.com/connect
+> Every skill here is written from the official law and the tax authority's own pages, with each figure linked to its source, and checked before it is published. Accountants write and approve these skills, but approvals, and the accountant's name, appear only through the OpenAccountants plugin (MCP). More than 100 skills are approved by a named, licensed accountant, and this repository runs behind what the plugin serves. For the current, accountant-approved version, add the plugin to your AI: https://www.openaccountants.com/connect?utm_source=github&utm_medium=readme
 
 **Tax skills for AI, written from the law and approved by named accountants.** Your AI answers tax questions from memory. Add these skills and it answers from the law: every rate, threshold and deadline links to the official page it came from, and the plugin says which accountant, if any, has approved each skill.
 
@@ -22,9 +22,9 @@
 
 ## Accountants
 
-A skill is **Approved by [name]** only when a licensed accountant read that exact text and approved it ([how approval works](CONTRIBUTING.md#2-approve-a-skill-accountants)). If the text changes, the approval is cleared until they approve again. Who approved which skill is shown on [openaccountants.com](https://www.openaccountants.com) and in the plugin's answers, not in this repository.
+A skill is **Approved by [name]** only when a licensed accountant read that exact text and approved it ([how approval works](CONTRIBUTING.md#2-approve-a-skill-accountants)). If the text changes, the approval is cleared until they approve again. Who approved which skill is shown on [openaccountants.com](https://www.openaccountants.com?utm_source=github&utm_medium=readme) and in the plugin's answers, not in this repository.
 
-**Are you an accountant?** Approve the skills for your country and your name appears next to every AI answer that uses them, in ChatGPT, Claude and Cursor. It takes one click from the [accountant portal](https://www.openaccountants.com/for-accountants), from your own GitHub account. Found something wrong? Correct it in the same place. Each accountant works under their own licence; OpenAccountants does not sell accountancy services.
+**Are you an accountant?** Approve the skills for your country and your name appears next to every AI answer that uses them, in ChatGPT, Claude and Cursor. It takes one click from the [accountant portal](https://www.openaccountants.com/for-accountants?utm_source=github&utm_medium=readme), from your own GitHub account. Found something wrong? Correct it in the same place. Each accountant works under their own licence; OpenAccountants does not sell accountancy services.
 
 ---
 
@@ -55,7 +55,7 @@ Add this address to [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com),
 https://www.openaccountants.com/api/mcp
 ```
 
-Guided setup: **[openaccountants.com/connect](https://www.openaccountants.com/connect)**. Then ask a question your AI would otherwise guess at:
+Guided setup: **[openaccountants.com/connect](https://www.openaccountants.com/connect?utm_source=github&utm_medium=readme)**. Then ask a question your AI would otherwise guess at:
 
 > *"I'm a freelancer in Malta billing €40,000 this year. Do I have to register for VAT?"*
 
@@ -94,7 +94,7 @@ Three ways in, all in **[CONTRIBUTING.md](CONTRIBUTING.md)**:
 - **I can write.** Take a country and write its missing skills from the law.
 - **I found a mistake.** Open an issue with the official source that shows it.
 
-Need an accountant for your own bookkeeping, VAT, payroll or return? [Get in touch](https://www.openaccountants.com/contact) and we will put you in touch with one in your country.
+Need an accountant for your own bookkeeping, VAT, payroll or return? [Get in touch](https://www.openaccountants.com/contact?utm_source=github&utm_medium=readme) and we will put you in touch with one in your country.
 
 ---
 
@@ -109,7 +109,7 @@ Need an accountant for your own bookkeeping, VAT, payroll or return? [Get in tou
 | Python MCP server | [`mcp/`](mcp/) · [PyPI](https://pypi.org/project/openaccountants-mcp/) |
 | Repo layout and sync | [`docs/REPO-LAYOUT.md`](docs/REPO-LAYOUT.md) · [`docs/WEBSITE-SYNC.md`](docs/WEBSITE-SYNC.md) |
 
-API and platform integrations: [openaccountants.com/for-developers](https://www.openaccountants.com/for-developers)
+API and platform integrations: [openaccountants.com/for-developers](https://www.openaccountants.com/for-developers?utm_source=github&utm_medium=readme)
 
 ---
 
