@@ -48,7 +48,7 @@ The historical review attribution above is preserved; it does not certify this p
 - **Max insurable earnings** — $68,900  _(ESDC — EI premium rates — canada.ca (verify 2026))_
 - **Max EE premium** — $1,123.07  _(ESDC — EI premium rates — canada.ca)_
 - **Max ER premium** — $1,572.30  _(ESDC — EI premium rates — canada.ca)_
-- **EI QC employee rate** — Quebec EI rate 1.30% for 2026  _(ESDC — EI premium rates — canada.ca (verify 2026 Quebec rate))_
+- **EI QC employee rate** — Quebec EI rate 1.30% for 2026. [Official source](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032qc-jan/t4032qc-january-general-information.html)
 - **Ontario EHT threshold** — Conditional $1,000,000; **HOLD** for eligibility/group and shared-exemption tests in Section 4. [Official source](https://www.ontario.ca/document/employer-health-tax-eht)
 - **Ontario EHT rate** — 0.98%–1.95%; **HOLD** for the full-payroll rate basis and conditions in Section 4. [Official source](https://www.ontario.ca/document/employer-health-tax-eht)
 - **BC EHT threshold** — Conditional $1,000,000; **HOLD** for the special/group and part-year cases in Section 4. [Official source](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042)
@@ -59,7 +59,7 @@ The historical review attribution above is preserved; it does not certify this p
 - **Alberta** — $15.00/hr  _(Employment Standards Code (AB); Alberta government)_
 - **Federal — after 1 year** — 4% (2 weeks)  _(Canada Labour Code s.184)_
 - **Federal — after 5 years** — 6% (3 weeks); after 10 years, 8% (4 weeks). [Official source](https://www.canada.ca/en/services/jobs/workplace/federal-labour-standards/vacations-holidays.html)
-- **T4 slips to employees** — T4 slips: last day of February following the calendar year. Next business day if it falls on a weekend or CRA-recognized public holiday. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/when-to-file.html)  _(ITA s.153(1); CRA — T4 guide)_
+- **T4 slips to employees** — T4 slips: last day of February following the calendar year. Next business day if it falls on a weekend or CRA-recognized public holiday. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/when-to-file.html); [CRA distribution](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/distribute-slips.html)  _(ITA s.153(1); CRA — T4 guide)_
 - **ROE** — For electronic ROEs, weekly/biweekly/semi-monthly payrolls: within 5 calendar days after the end of the pay period in which the interruption occurs. Monthly/13-cycle payrolls: the earlier of 5 calendar days after pay-period end and 15 calendar days after the first day of interruption. [Official source](https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/reports/roe-guide.html)
 - **Late T4 penalty** — Minimum $100, maximum $7,500 (ITA s.162(7.01)). Graduated by NUMBER of slips, per day up to 100 days: 1-50 slips $10/day (max $1,000); 51-500 $15/day (max $1,500); 501-2,500 $25/day (max $2,500); 2,501-10,000 $50/day (max $5,000); 10,001+ $75/day (max $7,500). CRA small-filer administrative policy: 1-5 slips flat $100; 6-10 slips $5/day (max $500).  _(ITA s.162(7.01))_
 
@@ -104,10 +104,10 @@ Employers withhold both federal and provincial/territorial income tax from each 
 
 **Federal Basic Personal Amount (BPA) -- 2026**
 
-| Income Level | BPA (CAD) |
+| Payroll NI (net income for the year from the employer) | BPA (CAD) |
 | --- | --- |
 | Up to $181,440 | $16,452 |
-| $181,440 -- $258,482 | Phases down to $14,829; based on net income, not simply taxable income. [Official source](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032on-jan/t4032on-january-general-information.html) |
+| $181,440 -- $258,482 | Phases down to $14,829 using payroll NI (A + HD), not simply taxable income. [CRA T4127 BPAF formula](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-122nd-edition-effective-january-1-2026/t4127-jan-payroll-deductions-formulas-computer-programs.html) |
 | Above $258,482 | $14,829 |
 
 ### Provincial/Territorial Tax
@@ -153,7 +153,7 @@ Each province has its own tax brackets applied on top of federal tax. The employ
 
 ### Quebec Differences
 
-For covered Quebec employees, the 2026 combined QPP base/first-additional rate is **6.30%**. QPIP is **0.430% employee / 0.602% employer**, separate from Quebec EI. **HOLD:** this is not a complete Quebec payroll calculation; bind contribution bases, ceilings, second-tier QPP and individual eligibility through the operative Quebec formulas before use. [Revenu Québec 2026 changes](https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/employers-principal-changes-for-2026/)
+For covered Quebec employees, QPP replaces CPP. The 2026 combined QPP base/first-additional rate is **6.30%**. QPIP is **0.430% employee / 0.602% employer**, separate from Quebec EI. **HOLD:** this is not a complete Quebec payroll calculation; bind contribution bases, ceilings, second-tier QPP and individual eligibility through the operative Quebec formulas before use. [Revenu Québec 2026 changes](https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/employers-principal-changes-for-2026/)
 
 ## Section 4 -- Social Security: Employer Contributions
 
@@ -213,7 +213,7 @@ Provincial/territorial requirement. Premiums vary by industry classification and
 | Manitoba | $16.00 before 1 October 2026; $16.40 from that date. [Official source](https://news.gov.mb.ca/news/?archive=&item=73242) |
 | Saskatchewan | $15.70 from 1 October 2026; **HOLD:** this correction does not verify an earlier-2026 amount. [Official source](https://www.saskatchewan.ca/Business/Employment-Standards/payment-of-wages-payroll-administration-benefits-and-time-sheets) |
 
-These are general covered-employee rates with the stated effective dates, not universal rates for every worker category. [National official wage table](https://minwage-salairemin.service.canada.ca/en/general.html?1353fe24_page=3&86c20c73_page=2)
+These rows concern general covered employees for the stated periods. Establish any special worker category before applying a wage minimum.
 
 ### Overtime
 
@@ -254,7 +254,7 @@ There are **10 federal general holidays** under federal coverage. [Official sour
 
 | Jurisdiction | Paid Days | Unpaid Days |
 | --- | --- | --- |
-| Federal | After the initial 30 days, 3 paid medical-leave days accrue; then 1 per completed month, up to 10, subject to carryover and operative conditions. [Official source](https://www.canada.ca/en/services/jobs/workplace/federal-labour-standards/leaves.html) | **HOLD:** this correction does not establish separate unpaid/protected-leave entitlement. [Official source](https://www.canada.ca/en/services/jobs/workplace/federal-labour-standards/leaves.html) |
+| Federal | After the initial 30 days of continuous employment, 3 paid medical-leave days accrue; then 1 at the start of each month following a completed month of employment, up to 10 per year including carried-over days. [Official source](https://www.canada.ca/en/services/jobs/workplace/federal-labour-standards/leaves.html) | Up to 27 weeks of unpaid medical-leave protection for covered federal employees. **HOLD:** apply the actual absence, notice and certificate conditions before finalizing entitlement. [Official source](https://www.canada.ca/en/services/jobs/workplace/federal-labour-standards/leaves.html) |
 | Ontario | No paid sick days under this ESA minimum; greater contractual rights can apply | 3 unpaid days after 2 consecutive weeks of employment, subject to coverage. [Official source](https://www.ontario.ca/document/your-guide-employment-standards-act-0/sick-leave) |
 | British Columbia | 5 paid days after 90 consecutive days, subject to eligibility. [ESA 49.1](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/00_96113_01); [Regulation 45.031](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/396_95) | 3 unpaid days after 90 consecutive days. [Official source](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/00_96113_01) |
 | Quebec | 2 paid days after 3 months, shared annual entitlement subject to conditions | Illness/accident absence protection up to 26 weeks in 12 months, not 24 unpaid days; resolve the shared paid days and coverage. [Official source](https://www.cnesst.gouv.qc.ca/fr/conditions-travail/conges/accidents-maladies/maladie-accident-non-lie-au-travail) |
@@ -267,8 +267,8 @@ There are **10 federal general holidays** under federal coverage. [Official sour
 | Benefit | Duration | EI Rate |
 | --- | --- | --- |
 | Maternity (birth parent only) | 15 weeks | 55% of insurable earnings; 2026 maximum $729/week. [Official source](https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental/benefit-amount.html) |
-| Standard parental | 35 weeks per parent; sharing can add 5 weeks across parents | 55%; 2026 maximum $729/week. [Official source](https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental/benefit-amount.html) |
-| Extended parental | 61 weeks per parent; sharing can add 8 weeks across parents | 33%; 2026 maximum $437/week. [Official source](https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental/benefit-amount.html) |
+| Standard parental | Up to 35 weeks for one parent; 40 total if shared, with no parent over 35 | 55%; 2026 maximum $729/week. [Official source](https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental/benefit-amount.html) |
+| Extended parental | Up to 61 weeks for one parent; 69 total if shared, with no parent over 61 | 33%; 2026 maximum $437/week. [Official source](https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental/benefit-amount.html) |
 
 - **Top-up / waiting period** — Employers are not required to top up EI benefits, though many do contractually. The temporary one-week EI waiting-period waiver applies to claims starting **30 March 2025 through 9 October 2027**, with the stated exception option; do not infer permanent abolition. [Official source](https://www.canada.ca/en/services/benefits/ei/temporary-measures-for-major-economic-conditions.html)
 
@@ -316,7 +316,7 @@ Ontario requires the employer's name and address, the employee's name, and the p
 
 | Task | Deadline |
 | --- | --- |
-| T4 slips to employees | Last day of February; next business day for weekends/recognized public holidays. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/when-to-file.html) |
+| T4 slips to employees | Last day of February; next business day for weekends/recognized public holidays. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/when-to-file.html); [CRA distribution](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/distribute-slips.html) |
 | T4 Summary to CRA | Last day of February |
 | T4A slips (contract/other income) | Last day of February |
 | Quebec: RL-1 slips to employees and Revenu Québec | Ordinary last-day-of-February deadline. **HOLD:** cessation/death exceptions and the specific year-adjusted date are not resolved here. [Official source](https://www.revenuquebec.ca/en/online-services/forms-and-publications/rl-1-g-v/guide-to-filing-the-rl-1-slip-employment-and-other-income/) |
@@ -331,10 +331,10 @@ Ontario requires the employer's name and address, the employee's name, and the p
 
 | Violation | Penalty |
 | --- | --- |
-| Late remittance | 3% for 1--3 days late; 5% for 4--5; 7% for 6--7; 10% for more than 7 days, plus applicable arrears interest. **HOLD:** resolve penalty-base/exceptions and any knowing or gross-repeat conditions before assessing a charge. [Official source](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001/employers-guide-payroll-deductions-remittances.html) |
-| Failure to deduct | **HOLD:** the ordinary 10% headline does not settle contribution/tax recovery treatment, the $500-base exception or knowing/gross-repeat 20% conditions. Do not calculate liability from this shorthand. [Official source](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001/employers-guide-payroll-deductions-remittances.html) |
+| Late remittance | 3% for 1--3 days late; 5% for 4--5; 7% for 6--7; 10% for more than 7 days, plus applicable arrears interest. The ordinary remittance penalty generally applies to the part over $500, but knowing/gross-negligence failures can use the total; knowing/gross-negligence second or later failures in the calendar year can attract 20%. **HOLD:** establish the actual penalty base and failure history before assessing a charge. [Official source](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001/employers-guide-payroll-deductions-remittances.html) |
+| Failure to deduct | **HOLD:** the ordinary 10% headline does not settle contribution/tax recovery treatment or knowing/gross-repeat 20% conditions. The $500 base qualification belongs to failure to remit, not this failure-to-deduct rule. Do not calculate liability from this shorthand. [Official source](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001/employers-guide-payroll-deductions-remittances.html) |
 | Late T4 filing | Min $100, max $7,500; graduated $10-$75/day by slip count up to 100 days (small filers: 1-5 slips flat $100, 6-10 slips $5/day) |
-| Failure to issue ROE | Up to $2,000 fine and/or 6 months imprisonment |
+| Failure to issue ROE | **HOLD:** the old $2,000 / 6-month maximum is not certified by the cited T4001 material; do not assess a charge without the applicable ROE offence provision. [Official source](https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/reports/roe-guide.html); [Official source](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001/employers-guide-payroll-deductions-remittances.html) |
 
 ## Section 9 -- Common Payroll Patterns
 
@@ -447,7 +447,7 @@ This skill and its outputs are provided for informational and computational purp
 
 ## Sources
 
-This correction reuses the completed **21 November 2026** audit reads against the unchanged source file. These are the original bounded read dates, not a claim that every page was read again on 25 November. The original skill had authority names and placeholders but no explicit official URLs; the audit located the official pages below. Restrictions and partial scope remain disclosed.
+This correction reuses the completed **21 November 2026** audit reads against the unchanged source file. The 21 November rows are reused bounded reads; the 25 November rows identify only follow-ups needed to resolve actual independent-review gaps or conflicts, not a new whole-skill read. The original skill had authority names and placeholders but no explicit official URLs; the audit located the official pages below. Restrictions and partial scope remain disclosed.
 
 | Official source | Scope actually read and reused | Date read |
 | --- | --- | --- |
@@ -482,5 +482,13 @@ This correction reuses the completed **21 November 2026** audit reads against th
 | [CRA T4001](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001/employers-guide-payroll-deductions-remittances.html) | Read bounded text: Remittance day ladder, failure-to-deduct conditions and ROE penalty maxima | 2026-11-21 |
 | [Alberta vacation pay](https://www.alberta.ca/vacation-pay) | Read bounded text: Monthly versus non-monthly vacation-pay basis; no universal per-cheque permission | 2026-11-21 |
 | [Ontario severance](https://www.ontario.ca/document/your-guide-employment-standards-act-0/severance-pay) | Read bounded text: Authority-indexed Ontario payroll/closure/partial-year/cap text; individual outcome held | 2026-11-21 |
+| [CRA T4001 bounded follow-up](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001/employers-guide-payroll-deductions-remittances.html) | Read bounded text: Failure-to-deduct versus remittance paragraphs (559–586); the $500 base qualification is remittance-specific; old audit summary corrected | 2026-11-25 |
+| [CRA T4127 BPAF follow-up](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-122nd-edition-effective-january-1-2026/t4127-jan-payroll-deductions-formulas-computer-programs.html) | Read bounded text: Archived January 2026 BPAF formula and NI glossary (224–235,312); not a final personal-return assessment | 2026-11-25 |
+| [CNESST wage follow-up](https://www.cnesst.gouv.qc.ca/en/working-conditions/wage-and-pay/wages) | Read bounded text: Wages heading/current-rate passage (16–22): $16.60 from 1 May 2026; reviewer extraction had stale $14.25 | 2026-11-25 |
+| [Ontario rendered release](https://news.ontario.ca/en/release/1008075/ontario-protecting-workers-by-raising-minimum-wage) | Read bounded text: Browser-rendered 1 October 2026 headline and opening: $17.60 to $17.95; plain fetch was JavaScript-only | 2026-11-25 |
+| [CNESST illness follow-up](https://www.cnesst.gouv.qc.ca/fr/conditions-travail/conges/accidents-maladies/maladie-accident-non-lie-au-travail) | Read bounded text: 26 weeks/12 months and shared two-day annual entitlement after three months (73–96); reviewer fetch failed | 2026-11-25 |
+| [RL-1 guide section 4.2](https://www.revenuquebec.ca/en/online-services/forms-and-publications/rl-1-g-v/guide-to-filing-the-rl-1-slip-employment-and-other-income/) | Read bounded text: Ordinary filing/distribution deadline and exceptional table (259–272); reviewer fetch failed | 2026-11-25 |
+| [Federal medical-leave follow-up](https://www.canada.ca/en/services/jobs/workplace/federal-labour-standards/leaves.html) | Read bounded text: Medical section (504–541): unpaid protection up to 27 weeks; paid initial wait, month-start accrual and carryover | 2026-11-25 |
+| [CRA slip distribution](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/distribute-slips.html) | Read bounded text: When to distribute (44–51): employee/recipient copies due last February; filing adjustments cited separately | 2026-11-25 |
 
-**Not yet confirmed:** complete 2025 payroll (outside this 2026 correction); employee-specific province/coverage and pension elections; actual Quebec contribution bases, second tier and individual formulas; WCB class/year schedules; health-tax group/special/proration cases; detailed holiday-pay totals; province-specific complete payslip fields; quarterly eligibility and CRA status; RL-1 exceptional/year-adjusted deadlines; penalty/recovery exceptions; individual period CPP2, vacation-payment consent and termination/severance outcomes. Saskatchewan pre-1 October 2026 amount and ROE code/paper branches are not certified here. No client payroll, payslip or filing was verified.
+**Not yet confirmed:** complete 2025 payroll (outside this 2026 correction); employee-specific province/coverage and pension elections; actual Quebec contribution bases, second tier and individual formulas; WCB class/year schedules; health-tax group/special/proration cases; detailed holiday-pay totals; province-specific complete payslip fields; quarterly eligibility and CRA status; RL-1 exceptional/year-adjusted deadlines; penalty/recovery exceptions; individual period CPP2, vacation-payment consent and termination/severance outcomes. Saskatchewan pre-1 October 2026 amount and ROE code/paper branches are not certified here. The earlier claimed ROE offence maximum also remains unverified. No client payroll, payslip or filing was verified.
