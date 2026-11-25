@@ -7,12 +7,12 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/au-deductions-offsets"
   jurisdiction: "AU"
   tax_year: "2026"
-  last_updated: "2026-11-12"
+  last_updated: "2026-11-22"
 ---
 
-# Australia Deductions, Offsets and Concessions v0.3
+# Australia Deductions, Offsets and Concessions v0.4
 
-## Australia Deductions, Offsets and Concessions v0.3
+## Australia Deductions, Offsets and Concessions v0.4
 
 > **General reference only.** This skill is general tax and accounting reference material for
 > AI-assisted workflows. It has not been reviewed for any specific person's facts, documents,
@@ -39,9 +39,11 @@ they behave differently, so getting the mechanism right matters more than findin
 | **Tax offset (also called a rebate)** | Tax payable, after tax is calculated | $1 of tax, regardless of marginal rate | Low income tax offset, seniors and pensioners tax offset, foreign income tax offset, private health insurance rebate |
 | **Concession or exemption** | The base itself, or the rules that apply to it | Varies | Small business CGT concessions, the 50% CGT discount, main residence exemption, small business entity concessions |
 
-**Why the distinction matters.** A deduction of $1,000 saves $320 for someone on a 30% marginal
-rate plus the 2% Medicare levy, and $470 for someone on the top rate. An offset of $1,000 saves
-$1,000 for both, but only if there is $1,000 of tax to reduce.
+**Why the distinction matters.** A $1,000 deduction saves $320 at a 30% marginal rate plus the
+full 2% Medicare levy and $470 at a 45% marginal rate plus the same levy. These examples assume
+the whole deduction falls within one tax band and does not affect any other calculation. A
+$1,000 non-refundable offset saves up to $1,000 against the liabilities it can reduce. A
+refundable offset can also pay out any excess.
 
 **Refundable and non-refundable offsets.** Most offsets are non-refundable: they can reduce tax
 payable to zero but do not pay out an unused offset. The treatment of any unused amount depends
@@ -89,8 +91,8 @@ This skill does NOT cover:
 
 ## Section 3 - The order of operations
 
-- **Order of operations** -- Apply the statutory offset priorities, including the rules for any unused amount. 1. Work out assessable income, including net capital gains. 2. Subtract allowable deductions to get taxable income. 3. Apply the rates for the income year to taxable income, giving basic income tax liability. 4. Calculate the Medicare levy and any Medicare levy surcharge separately. 5. Apply offsets to basic income tax liability in the order in section 63-10. For each unused amount, follow its statutory treatment: application to another liability, transfer, carry-forward, refund or loss. See Section 8.2 for the Medicare levy exceptions. 6. Add the remaining income tax and levy liabilities, then subtract any refundable excess offsets. 7. Subtract amounts already paid: PAYG withholding and PAYG instalments.  _([ITAA 1997 (Cth) s 63-10](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/63-10))_
-- **Tax losses** -- A tax loss arises where deductions exceed assessable income. A loss is carried forward, not converted to a refund, and its use is restricted for individuals by the non-commercial loss rules and for companies by the continuity of ownership and business continuity tests.
+- **Order of operations** -- Apply the statutory offset priorities, including the rules for any unused amount. 1. Work out assessable income, including net capital gains. 2. Subtract allowable deductions to get taxable income. 3. Apply the rates for the income year to taxable income, giving basic income tax liability. 4. Calculate the Medicare levy and any Medicare levy surcharge separately. 5. Apply offsets to basic income tax liability in the order in section 63-10. For each unused amount, follow its statutory treatment: application to another liability, transfer, carry-forward, refund or loss. See Section 8.2 for the Medicare levy exceptions. 6. Add the remaining income tax and levy liabilities, then subtract any refundable excess offsets. 7. Apply PAYG withholding credits and the credit for PAYG instalments payable, including instalments still unpaid and adjusted for any instalment credits already claimed. Unpaid instalments remain separate liabilities. _([ITAA 1997 s 63-10](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/63-10), [TAA 1953 Schedule 1 s 45-30](https://www.legislation.gov.au/C1953A00001/2026-05-21/2026-05-21/text/original/epub/OEBPS/document_2/document_2.html))_
+- **Tax losses** -- A tax loss generally arises when deductions other than prior-year tax losses exceed the sum of assessable income and net exempt income. Division 35 can defer individual business losses before this calculation. Company losses carried forward are subject to the applicable ownership and business continuity rules. From 2026-27 qualifying corporate tax entities can choose to carry a current-year loss back to either of the 2 preceding years and claim a refundable offset, subject to Division 160. _([ITAA 1997 s 36-10](https://www.legislation.gov.au/C2004A05138/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html), [Tax Reform No. 2 Act 2026 Schedule 1](https://www.legislation.gov.au/C2026A00071/asmade/text))_
 
 ## Section 4 - Deductions: the decision steps
 
@@ -115,7 +117,7 @@ This skill does NOT cover:
 
 ### Step 5 - Is it incurred in this income year?
 
-- **Timing / incurred** -- "Incurred" is not the same as "paid". Prepayment rules can spread a deduction over the period the benefit covers, with a 12 month exception available to individuals for non-business expenditure and to small business entities. For a specific deduction, use its own timing rule. For example, a qualifying gift of money under Division 30 is generally deducted in the income year the gift is made.
+- **Timing / incurred** -- The timing of the liability can differ from the payment date. An individual incurring non-business expenditure or an eligible business under the $50 million aggregated turnover test can use the 12-month rule if the eligible service period is 12 months or less and ends by the last day of the following income year. For a specific deduction, use its own timing rule. For example, a qualifying gift of money under Division 30 is generally deducted in the income year the gift is made. _([ATO, Deductions for prepaid expenses 2026](https://www.ato.gov.au/law/view/print?DocID=SAV%2FDPE%2F00001))_
 
 ### Step 6 - Is there evidence?
 
@@ -123,38 +125,31 @@ This skill does NOT cover:
 
 ## Section 5 - The standard deduction for work-related expenses, from 2026-27
 
-- **Standard deduction for work-related expenses** -- A standard deduction of up to $1,000 for work-related expenses applies to Australian tax residents who earn income from work. It commences on 1 July 2026 and first applies to the 2026-27 individual tax return. It does not apply to the 2025-26 return. AUD
+From 2026-27, an individual who is an Australian tax resident at any time in the year and derives
+assessable labour income under section 25-130 qualifies. This includes salary, director fees and
+other amounts in section 25-130(4). Business or investment income alone is insufficient. The ATO
+applies the deduction automatically. The starting amount is the smaller of $1,000 and the year's
+assessable labour income. No expense or record is required for the standard deduction itself.
 
-A standard deduction of up to $1,000 for work-related expenses applies to Australian tax residents
-who earn income from work. It commences on 1 July 2026 and first applies to the 2026-27 individual
-tax return. It does not apply to the 2025-26 return.
+Covered expenses actually claimed reduce the standard deduction dollar for dollar, to a minimum
+of zero. Compare those expenses with the taxpayer's starting amount. If they are below it, the
+taxpayer can leave the covered expenses off the return and receive the full standard deduction.
+If they claim them, substantiate the claim and allow for the automatic reduction. Record and
+claim eligible expenses outside this calculation separately. These include union fees, eligible
+trade, business and professional association memberships, deductible income protection, personal
+sickness and accident insurance premiums, investment expenses and eligible gifts.
 
-According to the ATO's summary of the measure:
+For assets first used or installed ready for use from 2026-27, check section 40-425(9) before
+pooling. It bars low-value pooling if the asset was reasonably expected at that time to be used
+mainly to earn assessable labour income. Section 40-291A may allow a fixed 50% reduction to a
+balancing adjustment if the asset was ever used to earn assessable labour income and its effective
+life overlaps a year in which the taxpayer used the standard deduction. The new pooling bar does
+not affect assets already allocated by 2025-26.
 
-- Current arrangements continue for a taxpayer with more than $1,000 of work-related expenses, and
-  for a taxpayer who earns only business or investment income.
-- Some deductions remain claimable in addition to the standard deduction, including expenses that
-  are not work-related such as investment expenses and charitable donations, union and professional
-  association membership fees, and income protection insurance premiums.
-- The measure prevents a double benefit where an expense covered by the standard deduction is
-  salary packaged.
-- Substantiation and capital allowance rules were updated to support the measure.
-
-The measure is law, enacted by the Treasury Laws Amendment (Tax Reform No. 1) Act 2026 and the
-Income Tax Rates Amendment (Tax Reform No. 1) Act 2026.
-[ATO, Standard deduction for work-related expenses](https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/standard-deduction-for-work-related-expenses);
-[Treasury Laws Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00049/latest);
-[Income Tax Rates Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00050/latest)
-
-**Practical effect.** For a work-only taxpayer whose substantiated work-related expenses are under
-$1,000, the standard deduction is the better claim and removes the need to build a schedule of
-small items. For a taxpayer above $1,000, nothing changes and the full substantiation rules
-continue to apply to the actual claim.
-
-**Confirm the detailed operation before applying it.** The mechanics that matter in practice, in
-particular whether the standard deduction is applied automatically or elected, and exactly which
-items sit outside it, must be checked against the ATO's 2026-27 return instructions when they are
-published. This guide states the measure as the ATO summarised it on 26 June 2026.
+The deduction was enacted by Schedule 4 of the Treasury Laws Amendment (Tax Reform No. 1)
+Act 2026. The related employer FBT restrictions start on 1 April 2027. [ATO, Standard deduction
+for work-related expenses](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/standard-deduction-for-work-related-expenses)
+and [Treasury Laws Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00049/asmade/2026-06-26/text/original/pdf).
 
 ## Section 6 - Substantiation
 
@@ -166,12 +161,12 @@ rules for work expenses, car expenses, travel expenses and business travel expen
 | Requirement | Rule |
 | --- | --- |
 | General work expense evidence | Written evidence is required. The document must show the supplier, the amount, the nature of the goods or services, the date of the expense and the date of the document |
-| The $300 total work expense rule | Where total work expense claims for the year are $300 or less, the written evidence rule is relaxed, but the expense must still have been incurred and the claim must still be reasonable. This is not a free $300 |
+| Former $300 work expense rule | For 2025-26 and earlier years, section 900-35 relaxed the written evidence requirement for eligible claims up to $300. The exception was repealed from 2026-27. Substantiate actual amounts under the remaining rules |
 | Car expenses, cents per kilometre method | Up to 5,000 business kilometres per car per year. No written evidence of the kilometres is required, but the basis of the estimate must be able to be shown, for example diary records |
-| Car expenses, logbook method | A logbook covering a continuous period of at least 12 weeks, valid for five years, plus odometer readings and expense records |
+| Car expenses, logbook method | A logbook covering a continuous period of at least 12 weeks in the usual case, plus odometer readings and expense records. The logbook can ordinarily be used for up to five income years. Update it if usage changes materially |
 | Working from home, fixed rate method | A record of the total hours worked from home for the year, plus evidence that the expenses were incurred. The rate was 70 cents per hour for 2024-25 and 2025-26 |
 | Travel with an allowance | Reasonable amounts determined annually by the Commissioner can remove the need to keep receipts, but not the requirement to have incurred the expense |
-| Record retention | Generally five years from the date the return is lodged, and longer where a CGT asset or a carried-forward loss depends on the record |
+| Record retention | Generally five years after lodging for employee work expense records. Business, CGT and carried-forward loss records have their own retention periods |
 
 The cents per kilometre rate and the working from home fixed rate are set per income year. Look up
 the rate for the year being prepared rather than carrying last year's forward.
@@ -187,8 +182,8 @@ the rate for the year being prepared rather than carrying last year's forward.
 | Instant asset write-off | Eligible small business entities choosing simplified depreciation, subject to exclusions and prior claims | Full statutory asset cost, adjusted for GST entitlements before private-use apportionment, must be strictly less than $20,000. Deduct only the taxable-use amount. Temporary threshold covers first taxable use or installation in 2025-26; the permanent threshold applies to specified first use or installation from 1 July 2026. [ITAA 1997 ss 328-175 and 328-180](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html), [ITTPA s 328-180(4)(d)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) and [No. 2 Act schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text) |
 | Small business general pool | Covered assets not individually deductible, including exactly $20,000, and continuing pools | Ordinary deduction: 30% of the opening pool balance plus 15% of taxable-purpose adjustable values for assets first used or installed ready for taxable use during the year, with separate rules for second-element costs. If the statutory amount before ordinary depreciation is positive and less than $20,000, deduct it instead and close the pool at zero. [ITAA 1997 ss 328-185, 328-190, 328-210 and 328-220](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html) and [ITTPA s 328-180(6)(e)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) |
 | Division 43 capital works | Buildings and structural improvements | A fixed annual rate over a fixed period, claimed separately from Division 40 |
-| Division 40-880 | Certain business-related capital expenditure not deductible elsewhere | Spread over five years |
-| Car limit | Cars used for a business or income-producing purpose | Caps both the depreciation base and the GST credit. Look up the limit for the income year |
+| Section 40-880 | Certain business-related capital expenditure not deductible elsewhere | Normally 20% per year over five income years starting in the year incurred. Certain start-up costs can be deducted immediately |
+| Car limit | Cars designed mainly to carry passengers, subject to exceptions | Check both the depreciation cost limit for the year you start to hold the car and the separate GST credit limit if claiming a credit |
 
 **Check eligibility and the first taxable-use year.** For an individual asset deduction, small business entity status and the required simplified-depreciation choice must apply in both the year you started to hold the asset and the first taxable-use year (s 328-180(1)(a) and (ab)). The temporary 2025-26 asset threshold additionally requires you to have first acquired the asset at or after 7.30 pm ACT time on 12 May 2015. The 2026 permanent threshold was enacted on 26 August 2026. Schedule 2 commenced on 1 October 2026 and item 15 applies to specified assets first used or installed ready for use from 1 July 2026; an acquisition date alone does not establish the year or permit a second deduction. The temporary 2025-26 provisions remain relevant to that year. Existing pools continue under section 328-220 after small business entity status or a later simplified-depreciation choice ceases; new assets cannot enter the pool until an eligible choosing year. See `au-individual-return.md` for the detailed cost, use, allocation and pool calculation. [No. 2 Act schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text), [ITAA 1997 ss 328-175 to 328-220](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html) and [ITTPA s 328-180](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html).
 
@@ -244,14 +239,14 @@ expected:
 | Seniors and pensioners tax offset (SAPTO) | No | Requires eligibility for a listed Australian Government pension or allowance, and income tests for the taxpayer and spouse. Unused amounts may be transferable between eligible spouses. Entitlement to at least $1 also raises the Medicare levy low income threshold |
 | Private health insurance rebate | Yes | Income tested, and can be taken as a premium reduction or as an offset in the return |
 | Franking credits on franked dividends | Yes | Included in assessable income first, then offset against tax, with the excess refundable to most resident individuals and complying super funds |
-| Foreign income tax offset | No | Limited to the Australian tax on the doubly taxed income. See `au-foreign-income.md` |
+| Foreign income tax offset | No | Generally limited to the greater of $1,000 and the amount calculated under section 770-75, and cannot exceed qualifying foreign tax paid. See `au-foreign-income.md` |
 | Small business income tax offset | No | For an individual with net small business income from a sole trader business or a share from a small business partnership or trust. Confirm the rate and cap for the income year |
 | Zone and overseas forces offsets | No | Narrow eligibility rules |
 | Beneficiary tax offset | No | For recipients of certain Commonwealth benefits and allowances |
 
 ### 8.2 Unused offsets and other liabilities
 
-- **Unused offsets and other liabilities** -- - An unused non-refundable offset is not paid out as an offset refund. Reducing income tax can still create or increase a refund of PAYG withholding or instalments already paid. - Most offsets do not reduce Medicare levy. However, section 63-10 table items 21 and 22 apply remaining veterans' superannuation (invalidity pension) tax offset and foreign income tax offset to Medicare levy, then Medicare levy (fringe benefits) surcharge. The remaining excess cannot be refunded, transferred or carried forward. See `au-foreign-income.md` for FITO limits. - SAPTO affects the Medicare levy indirectly through the low income threshold; it does not reduce the levy directly. - An offset does not reduce a HELP or other study and training support loan repayment, which is calculated on repayment income, not on tax payable.  _([ITAA 1997 (Cth) s 63-10(1), table items 21 and 22](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/63-10); [ATO, About tax offsets](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/tax-offsets/about-tax-offsets))_
+- **Unused offsets and other liabilities** -- - An unused non-refundable offset is not paid out as an offset refund. Reducing income tax can still create or increase a credit after PAYG withholding and instalment credits are applied. - Most offsets do not reduce Medicare levy. However, section 63-10 table items 21 and 22 apply remaining veterans' superannuation (invalidity pension) tax offset and foreign income tax offset to Medicare levy, then Medicare levy (fringe benefits) surcharge. The remaining excess cannot be refunded, transferred or carried forward. See `au-foreign-income.md` for FITO limits. - SAPTO affects the Medicare levy indirectly through the low income threshold; it does not reduce the levy directly. - An offset does not reduce a HELP or other study and training support loan repayment, which is calculated on repayment income, not on tax payable.  _([ITAA 1997 s 63-10(1), table items 21 and 22](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/63-10), [ATO, About tax offsets](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/tax-offsets/about-tax-offsets))_
 
 ## Section 9 - Concessions
 
@@ -262,7 +257,7 @@ Concessions change the base or the rules rather than reducing tax directly.
 | Concession | Test | Guide |
 | --- | --- | --- |
 | Small business entity concessions | Aggregated turnover thresholds, which differ by concession | `australia-bookkeeping.md`, `au-individual-return.md` |
-| Small business CGT concessions | $6 million maximum net asset value test or small business entity status, plus the active asset test | `au-small-business-cgt.md` |
+| Small business CGT concessions | $6 million maximum net asset value test, CGT small business entity with aggregated turnover below $2 million, or an eligible partnership or passively held asset route. Apply the active asset test and check the other basic and concession-specific conditions | `au-small-business-cgt.md` |
 | CGT discount | 12 months of ownership, and entity and residency tests | `au-capital-gains.md` |
 | Main residence exemption | Dwelling used as the main residence, with partial and absence rules | `au-capital-gains.md`, `au-rental-property.md` |
 | Research and development tax incentive | Registered eligible R&D activities | `au-rd-incentive.md` |
@@ -275,40 +270,43 @@ the aggregated turnover threshold is not the same for every concession.
 
 - **Reimbursement removes the deduction.** An expense the employer pays or reimburses is not
   deductible to the employee. It may instead be a fringe benefit to the employer.
-- **Salary packaging removes it too.** An expense met from pre-tax salary cannot also be deducted.
-  The standard deduction measure includes a specific rule preventing that double benefit.
-- **A GST credit is not a deduction.** Where a GST credit is claimable, the deductible amount is
-  the GST-exclusive cost. Where it is not claimable, for example on an input taxed acquisition or
-  by an unregistered taxpayer, the GST-inclusive amount is the cost.
-- **Non-commercial losses.** An individual's loss from a business activity may be quarantined
-  unless one of the statutory tests is met or the Commissioner exercises the discretion.
+- **Salary packaging.** An expense met by the employer under a salary packaging arrangement is
+  generally excluded from the employee's actual expense deductions. From 1 April 2027 the
+  standard deduction legislation also restricts the employer's FBT treatment of certain packaged
+  work expenses and items. [ATO, Reducing your FBT liability](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/exemptions-concessions-and-other-ways-to-reduce-fbt/reducing-your-fbt-liability).
+- **GST credits reduce deductions.** Reduce the otherwise deductible expense by the input tax
+  credit to which the taxpayer is entitled. Any GST included in the expense for which there is no
+  credit entitlement remains part of the cost.
+- **Non-commercial losses.** An individual's loss from a business activity may be deferred. Check
+  the primary production and professional arts exception, the income requirement and statutory
+  tests, and any applicable exercise of the Commissioner's discretion.
 - **Personal services income.** PSI rules can deny deductions that would otherwise be available,
   particularly for rent, home office occupancy costs and payments to associates. See `au-psi.md`.
-- **Capital allowance and CGT overlap.** Amounts deducted under Division 40 or Division 43 reduce
-  the cost base of the underlying asset, so a deduction now can increase a capital gain later.
+- **Capital allowance and CGT overlap.** Check what Division 43 capital works deductions must be
+  excluded from the property's cost base or reduced cost base, including amounts still claimable.
+  For Division 40 depreciating assets, apply the balancing adjustment rules and check whether
+  CGT event K7 applies to non-taxable use. [ATO, Cost base adjustments for capital works](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cost-base-adjustments-for-capital-works) and [ITAA 1997 ss 104-235 and 118-24](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html).
 - **Deduction timing versus payment.** Superannuation contributions are deductible in the year the
   fund receives them, not the year they are journalised.
 
 ## Section 11 - Worked example
 
-**Facts.** Nadia is an Australian tax resident for the whole of the 2026-27 income year. She is an
-employee with salary of $92,000 and $19,000 of PAYG withheld. She has no spouse, no private health
-insurance obligations in issue, and no HELP debt. All figures are synthetic.
+**Facts.** The employee is an Australian tax resident for the whole of the 2026-27 income year,
+with salary of $92,000 and $19,000 of PAYG withheld. Assume no other income, spouse, dependants,
+private health insurance rebate, Medicare levy exemption or HELP debt. All figures are synthetic.
 
-Her substantiated amounts for the year:
+**Substantiated amounts for the year**
 
-**Nadia's substantiated amounts**
-
-| Item | Amount | Treatment |
+| Item | Synthetic cost | Treatment |
 | --- | --- | --- |
 | Tools, work-related journal, work-related phone use | $780 total | Work-related expenses |
-| Union fees | $620 | Claimable in addition to the standard deduction |
-| Income protection insurance premiums | $540 | Claimable in addition to the standard deduction |
-| Donation to a deductible gift recipient | $200 | Not work-related, claimable in addition |
+| Union fees for current employment | $620 | Claimable in addition to the standard deduction |
+| Income protection insurance premiums covering loss of employment income | $540 | Claimable in addition to the standard deduction |
+| Qualifying monetary gift to a deductible gift recipient | $200 | Claimable in addition to the standard deduction |
 | Interest on a margin loan on income-producing shares | $1,300 | Investment expense, claimable in addition |
 
-**Step 1, choose the work-related expense basis.** Her work-related expenses of $780 are less than
-$1,000, so the standard deduction of $1,000 produces the larger claim.
+**Step 1, work out the standard deduction.** The maximum is $1,000 because salary is $92,000.
+Leave the $780 of covered expenses off the return to receive the full $1,000 automatically.
 
 **Step 2, total deductions.**
 
@@ -349,14 +347,34 @@ Less PAYG withheld                              = 19,000.00
 Refund                                          =    211.20
 ```
 
-**Step 7, compare with claiming actual work-related expenses.** Claiming the actual $780 instead
-of the $1,000 standard deduction would give taxable income of $88,560, tax of $17,088, a Medicare
-levy of $1,771.20 and a refund of $140.80. The standard deduction is worth $70.40 more, being the
-$220 difference in deductions at her 30% marginal rate plus the 2% Medicare levy.
+**Step 7, compare with claiming actual work-related expenses.** If the employee claims the $780,
+the ATO applies a reduced standard deduction of $1,000 less $780, or $220. The 2 amounts add to
+$1,000. Taxable income remains $88,340, tax $17,022, Medicare levy $1,766.80 and the refund $211.20.
 
-**What the example shows.** The value of a deduction is the deduction multiplied by the marginal
-rate and the levy, not the deduction itself. It also shows why the four extra items matter: each
-is outside the standard deduction, so each still reduces tax in full.
+**What the example shows.** The 4 other expenses reduce taxable income by $2,660. At a 30%
+marginal tax rate and the full 2% Medicare levy, they reduce the tax and levy by $851.20.
+
+```oa-check
+name: Claimed labour expenses reduce the automatic standard deduction
+inputs:
+  salary: 92000
+  standard_limit: 1000
+  covered_expenses_claimed: 780
+  other_deductions: 2660
+  payg_withheld: 19000
+steps:
+  - standard_deduction: max(0, min(standard_limit, salary) - covered_expenses_claimed)
+  - taxable_income: salary - standard_deduction - covered_expenses_claimed - other_deductions
+  - income_tax: pct(45000 - 18200, 15) + pct(taxable_income - 45000, 30)
+  - medicare_levy: pct(taxable_income, 2)
+  - refund: payg_withheld - income_tax - medicare_levy
+expected:
+  standard_deduction: 220
+  taxable_income: 88340
+  income_tax: 17022
+  medicare_levy: 1766.80
+  refund: 211.20
+```
 
 ## Section 12 - Common errors
 
@@ -365,8 +383,7 @@ is outside the standard deduction, so each still reduces tax in full.
 - Assuming a non-refundable offset produces a refund where there is no tax to reduce.
 - Applying the 2025-26 rules to a 2026-27 return, or the reverse, now that the standard deduction
   and the 15% second bracket apply from 1 July 2026.
-- Claiming $300 of work expenses with no expense actually incurred. The relaxation is of the
-  written evidence rule, not of the requirement to have spent the money.
+- Applying the former $300 written-evidence exception to actual work expenses claimed for 2026-27.
 - Carrying forward last year's cents per kilometre rate or working from home rate.
 - Claiming a deduction for an expense the employer reimbursed, or that was salary packaged.
 - Claiming the GST-inclusive cost where a GST credit was also claimed.
@@ -399,7 +416,7 @@ is outside the standard deduction, so each still reduces tax in full.
 - Income Tax Rates Amendment (Tax Reform No. 1) Act 2026,
   https://www.legislation.gov.au/C2026A00050/latest
 - ATO, Standard deduction for work-related expenses,
-  https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/standard-deduction-for-work-related-expenses
+  https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/standard-deduction-for-work-related-expenses
 - ATO, Claiming deductions,
   https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/how-to-claim-deductions
 - ATO, About tax offsets,
@@ -415,7 +432,8 @@ is outside the standard deduction, so each still reduces tax in full.
 - ATO, Tax rates: Australian resident,
   https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents
 
-Sources other than the selected capital-allowance update below were checked on 16 September 2026. The working from home fixed rate for 2026-27 had not been published at that earlier read date.
+Sources for the 2026-27 standard deduction, offsets and worked example were checked as at
+22 November 2026. The working from home table gives historical rates through 2025-26.
 
 Selected simplified-depreciation rules read 2026-11-12:
 
@@ -434,8 +452,8 @@ lodging or acting upon them.
 The most up-to-date version of this skill is maintained at
 [openaccountants.com](https://www.openaccountants.com).
 
-> Contributed by Ryan Duguid.
+> [Contributor history](https://github.com/openaccountants/openaccountants/commits/main/skills/australia/au-deductions-offsets.md).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `au-deductions-offsets` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/au-deductions-offsets. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `au-deductions-offsets` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/au-deductions-offsets. If neither is available, confirm every figure against the official source pages cited above before relying on it.

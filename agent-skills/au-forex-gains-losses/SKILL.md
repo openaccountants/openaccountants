@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/au-forex-gains-losses"
   jurisdiction: "AU"
   tax_year: "2026"
-  last_updated: "2026-11-11"
+  last_updated: "2026-11-22"
 ---
 
-# Foreign currency forex realisation gains and losses under Division 775 in Australia v1.4
+# Foreign currency forex realisation gains and losses under Division 775 in Australia v1.5
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -73,11 +73,11 @@ Use a consistent quotation convention. A rate expressed as foreign currency per 
 | --- | --- |
 | 1 | Modified CGT gain or loss attributable to a currency exchange rate effect. Under s 775-40(9), substitute event-time market value if actual capital proceeds differ from that value. Do not universally use actual cash proceeds. |
 | 2 | Amount received compared with the forex cost base of the right at its statutory tax recognition time (ss 775-45 and 775-85). |
-| 3 | Foreign currency received compared with the net costs of assuming the obligation, using the event's tax recognition rule (ss 775-50 and 775-100). |
+| 3 | Amount received in respect of the event, including market value of any non-cash benefit, compared with the net costs of assuming the obligation at the statutory tax recognition time (ss 775-50 and 775-100). |
 | 4 | Amount paid compared with the proceeds of assuming the obligation at its statutory tax recognition time (ss 775-55 and 775-95). |
 | 5 | Amount paid compared with the forex entitlement base of the right, using the event's tax recognition rule (ss 775-60 and 775-90). |
 
-Only the component attributable to a currency exchange rate effect is a forex realisation gain or loss. Check non-arm's-length, constructive receipt/payment and set-off rules where relevant; the simple cases below do not certify those arrangements. For currency acquired through event 2 or 3, s 775-125 replaces the first element of both its CGT cost base and reduced cost base with market value when received; other allowable elements are not replaced. [ss 775-40 to 775-125](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_9/document_9.html), [ATO common transactions](https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/common-forex-transactions).
+The ordinary comparison for events 1 to 5 isolates the currency exchange rate effect. For certain expired, cancelled, released or abandoned options, subsections 775-45(5), 775-50(4), 775-55(4) and 775-60(5) instead use the amount paid or received for the option where the relevant exercise condition is met. Check the non-arm's-length, constructive receipt and payment and set-off rules where relevant. For currency acquired through event 2 or 3, s 775-125 replaces the first element of both its CGT cost base and reduced cost base with market value when received. [ss 775-40 to 775-125](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_9/document_9.html), [ATO common transactions](https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/common-forex-transactions).
 
 ### 4. Trace account rights and obligations
 
@@ -626,10 +626,8 @@ The old edited-private-ruling citation is no longer a general authority for an A
 
 Drafted by OpenAccountants. Not yet reviewed or approved by a named accountant.
 
-> Contributed by Ryan Duguid.
-
 Not yet confirmed: complete historical amendment/application coverage, every actual taxpayer's character and elections, future law after the checked compilation period, return procedures and deployment/consumer results. The executable cases verify conditional arithmetic; they are not independent legal certification.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `au-forex-gains-losses` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/au-forex-gains-losses. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `au-forex-gains-losses` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/au-forex-gains-losses. If neither is available, confirm every figure against the official source pages cited above before relying on it.
