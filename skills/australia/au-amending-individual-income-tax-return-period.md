@@ -72,8 +72,8 @@ Individuals, including sole traders, who need to correct an already-assessed inc
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/time-limits-on-amendments and https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170 |
-| Eligible sole trader request for 2024–25 and later income years | Within 4 years after the day notice was given | In the first 2 years use the ordinary amendment route. Once that period ends, item 3A requires the taxpayer’s approved-form application, small or medium business entity status and an assessment that was subject to the ordinary 2-year period. The business’s aggregated turnover must be less than $50 million, subject to the statutory eligibility tests. The Schedule applies to assessments issued after its commencement at the start of 1 January 2025 for income years starting on or after 1 July 2024. [Amending Act Schedule 3](https://www.legislation.gov.au/C2024A00135/asmade/2024-12-10/text/original/pdf) |
-| Sole traders, 2023–24 and earlier income years | Generally 2 years | Check the ordinary rules and their exclusions for the year under review. |
+| Eligible sole trader request for 2024–25 and later income years | Within 4 years after the day notice was given | In the first 2 years use the ordinary amendment route. Once that period ends, item 3A requires the taxpayer’s approved-form application, small or medium business entity status and an assessment that was subject to the ordinary 2-year period. The business’s aggregated turnover must be less than $50 million, subject to the statutory eligibility tests. The Schedule applies to assessments issued after its commencement at the start of 1 January 2025 for income years starting on or after 1 July 2024. [ITAA 1936 section 170](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html); [Amending Act Schedule 3](https://www.legislation.gov.au/C2024A00135/asmade/2024-12-10/text/original/pdf) |
+| Sole traders, 2023–24 and earlier income years | Generally 2 years | Check the ordinary rules and their exclusions for the year under review. [ATO time limits](https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/time-limits-on-amendments) |
 | Start of the period | The date the ATO gave notice of the assessment | Not the end of the income year and not the lodgement date |
 | Further amendments after an amended assessment | Limited to eligible particulars, direction and period | Use the original notice date for item 3A’s 4-year cap. Subsection 170(3) separately allows certain changes to the same particular within 2 years of the later notice if item 1, 2, 3 or 3A applied to the original assessment, or within 4 years otherwise. Check subsections 170(2)–(4). [ITAA 1936 section 170](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html) |
 
@@ -112,20 +112,54 @@ Individuals, including sole traders, who need to correct an already-assessed inc
 - Significant global entities and entities in an Applicable MNE Group, where the ATO pages describe a different base penalty and a penalty multiplier for IIR/UTPR or DMT statements.
 - Amendments involving transfer pricing, research and development or capital gains tax where the ATO states different amendment-period rules can apply.
 
+## Two worked examples that recompute
+
+**Example 1. Reasonably arguable threshold (MT 2008/2 Example 1).** Tax payable on the return is $50,000, so 1% of tax payable is $500. The threshold is the greater of $10,000 and $500 = $10,000. A $7,000 shortfall is below the $10,000 threshold, so the subsection 284-90(1) reasonably arguable BPA does not apply.
+
+```oa-check
+name: AU reasonably arguable threshold MT 2008/2 Example 1
+inputs:
+  tax_payable: 50000
+  floor_threshold: 10000
+steps:
+  - one_percent_tax: pct(tax_payable, 1)
+  - threshold: max(floor_threshold, one_percent_tax)
+expected:
+  one_percent_tax: 500
+  threshold: 10000
+```
+
+**Example 2. Voluntary disclosure of a $20,000 shortfall.** Base penalty amount at 25% is $5,000. Voluntary disclosure before audit notice reduces the BPA by 80% to $1,000; voluntary disclosure after notification (where it saves significant time or resources) reduces the BPA by 20% to $4,000.
+
+```oa-check
+name: AU shortfall BPA voluntary disclosure reduction (25% BPA)
+inputs:
+  shortfall: 20000
+  bpa_rate: 25
+steps:
+  - bpa: pct(shortfall, bpa_rate)
+  - after_early_disclosure: bpa - pct(bpa, 80)
+  - after_late_disclosure: bpa - pct(bpa, 20)
+expected:
+  bpa: 5000
+  after_early_disclosure: 1000
+  after_late_disclosure: 4000
+```
+
 ## Sources
 
-- https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/time-limits-on-amendments (amendment time limits table)
-- https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/penalties-for-making-false-or-misleading-statements (reasonably arguable penalty, thresholds and voluntary disclosure table)
-- https://www.ato.gov.au/law/view/pdf?DocId=PSR%2FPS20125%2FNAT%2FATO%2F00001&filename=law%2Fview%2Fpdf%2Fpsr%2Fps2012-005c5.pdf&PiT=20191025000001 (PS LA 2012/5 base penalty amounts by behaviour table)
-- https://www.ato.gov.au/law/view/document?docid=MXR%2FMT20082%2FNAT%2FATO%2F00001 (MT 2008/2 base penalty amount and threshold example table)
-- https://www.ato.gov.au/Business/Privately-owned-and-wealthy-groups/What-you-should-know/Tailored-engagement/Assessments-and-amendment-periods/ (four-year business amendment period table)
-- https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return (amendment process entry point, cited in the method)
-- https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/how-to-request-an-amendment-to-your-tax-return (channels, signature and fee rules, cited at step 13)
-- https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170 (section 170 ITAA 1936: amendment periods, item 3A four-year sole trader period, subsections 170(2) to (4))
-- https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html (ITAA 1936 section 170, current compilation; 22 November 2026)
-- https://www.legislation.gov.au/C2024A00135/asmade/2024-12-10/text/original/pdf (section 2 and Schedule 3 commencement, application and amendments; 22 November 2026)
-- https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html (Taxation Administration Act 1953 Schedule 1, sections 284-75, 284-90, 284-225 and 298-10; 22 November 2026)
-- https://www.ato.gov.au/forms-and-instructions/individual-income-tax-return-amendment (paper form NAT 2843; 22 November 2026)
+- https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/time-limits-on-amendments (amendment time limits table) (read 2026-11-22)
+- https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/penalties-for-making-false-or-misleading-statements (reasonably arguable penalty, thresholds and voluntary disclosure table) (read 2026-11-22)
+- https://www.ato.gov.au/law/view/pdf?DocId=PSR%2FPS20125%2FNAT%2FATO%2F00001&filename=law%2Fview%2Fpdf%2Fpsr%2Fps2012-005c5.pdf&PiT=20191025000001 (PS LA 2012/5 base penalty amounts by behaviour table) (read 2026-11-22)
+- https://www.ato.gov.au/law/view/document?docid=MXR%2FMT20082%2FNAT%2FATO%2F00001 (MT 2008/2 base penalty amount and threshold example table) (read 2026-11-22)
+- https://www.ato.gov.au/Business/Privately-owned-and-wealthy-groups/What-you-should-know/Tailored-engagement/Assessments-and-amendment-periods/ (four-year business amendment period table) (read 2026-11-22)
+- https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return (amendment process entry point, cited in the method) (read 2026-11-22)
+- https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/how-to-request-an-amendment-to-your-tax-return (channels, signature and fee rules, cited at step 13) (read 2026-11-22)
+- https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170 (section 170 ITAA 1936: amendment periods, item 3A four-year sole trader period, subsections 170(2) to (4)) (read 2026-11-22)
+- https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html (ITAA 1936 section 170, current compilation; 22 November 2026) (read 2026-11-22)
+- https://www.legislation.gov.au/C2024A00135/asmade/2024-12-10/text/original/pdf (section 2 and Schedule 3 commencement, application and amendments; 22 November 2026) (read 2026-11-22)
+- https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html (Taxation Administration Act 1953 Schedule 1, sections 284-75, 284-90, 284-225 and 298-10; 22 November 2026) (read 2026-11-22)
+- https://www.ato.gov.au/forms-and-instructions/individual-income-tax-return-amendment (paper form NAT 2843; 22 November 2026) (read 2026-11-22)
 
 Drafted by OpenAccountants. Not yet reviewed or approved by a named accountant.
 
