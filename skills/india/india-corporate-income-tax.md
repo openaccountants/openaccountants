@@ -3,16 +3,16 @@ name: india-corporate-income-tax
 description: "Corporate income tax in India for tax year 2026-27 (1 April 2026 to 31 March 2027) under the Income-tax Act, 2025 and the Finance Act, 2026: domestic company rates (25%, 30%), the 22% and 15% optional regimes, foreign company rate, surcharge, cess, minimum alternate tax, depreciation, common disallowances, losses, dividends, advance tax, ITR-6 due dates, tax audit, interest and late fee. Use for questions like 'how is my Indian company's profit taxed', 'Pvt Ltd tax rate India', 'section 115BAA or section 200 22% regime', 'MAT India', 'company advance tax India', 'ITR-6 due date'. Out of scope: individuals and sole proprietors (india-income-tax), GST (india-gst), payroll (india-payroll), company formation (india-formation), transfer pricing detail (india-transfer-pricing), withholding detail (in-tds-freelance), LLP and firm computations."
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-11-20
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 category: international
 type: computation
-version: 1.0
+version: 1.1
 ---
 
-# India Corporate Income Tax v1.0
+# India Corporate Income Tax v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -53,8 +53,8 @@ A company is resident in India in a tax year if it is an Indian company, or if i
 | Domestic company, total turnover or gross receipts in tax year 2024-25 not over INR 400 crore | 25% | Standard regime. Minimum alternate tax applies. | [Finance Act, 2026, Part I-B Paragraph E](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
 | Any other domestic company | 30% | Standard regime. Minimum alternate tax applies. | [Finance Act, 2026, Part I-B Paragraph E](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
 | Domestic company opting under section 200 | 22% | Total income computed without the deductions listed below. Outside minimum alternate tax. Option cannot be withdrawn. | [2025 Act section 200](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
-| New manufacturing domestic company opting under section 201 | 15% | Set up and registered on or after 1 October 2019 and manufacturing commenced on or before 31 March 2024, plus the section 205(2) conditions. Non-manufacturing income and short-term gains on non-depreciable assets 22%; income deemed under section 205(4) 30%. Outside minimum alternate tax. | [2025 Act section 201](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
-| Manufacturing domestic company opting under section 199 | 25% | Set up and registered on or after 1 March 2016, engaged only in manufacture or production and related research or distribution, without the listed deductions. | [2025 Act section 199](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
+| New manufacturing domestic company opting under section 201 | 15% | Set up and registered on or after 1 October 2019, manufacturing commenced on or before 31 March 2024, and the election and other statutory conditions are met. The 22% rate covers income unrelated and not incidental to manufacturing without a separate statutory rate, and short-term gains on non-depreciable assets. Income deemed under section 205(4) uses 30%. Outside minimum alternate tax. | [2025 Act sections 201 and 205](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
+| Manufacturing domestic company opting under section 199 | 25% | Set up and registered on or after 1 March 2016, engaged only in manufacture or production and related research or distribution, and computed without the listed deductions. Elect by the due date of the first required return. The company can subsequently elect section 200. | [2025 Act section 199](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
 | Company other than a domestic company (foreign company) | 35% | On total income other than the old pre-1976 approved royalties and technical fees, which the Paragraph taxes at 50%. Special rates in section 207 apply to dividends, interest, royalties and fees for technical services. | [Finance Act, 2026, Part I-B Paragraph E](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
 
 Income with its own rate (capital gains under sections 196 to 198 and the other special-rate sections of Chapter XIII) is taxed at that rate, not at the rate above. Capital gains are not computed in this skill.
@@ -74,14 +74,17 @@ Surcharge is a percentage of the income tax. The test is total income, not turno
 | Domestic company, standard regime or section 199 | Not over INR 10000000 (1 crore) | None | [Finance Act, 2026, Paragraph F Table 1 Sl. No. 5](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
 | Domestic company, standard regime or section 199 | Over INR 10000000 (1 crore) up to INR 100000000 (10 crore) | 7% | [Finance Act, 2026, Paragraph F Table 1 Sl. No. 5](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
 | Domestic company, standard regime or section 199 | Over INR 100000000 (10 crore) | 12% | [Finance Act, 2026, Paragraph F Table 1 Sl. No. 5](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
-| Domestic company taxed under section 200 or 201 | Any amount | 10% | [Finance Act, 2026, section 3(4)(b) Table Sl. No. 9](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
+| Domestic company taxed under section 200 or 201, other than a Schedule V special purpose vehicle | Any amount | 10% | [Taxation and Other Laws (Amendment) Act, 2026, section 6](https://egazette.gov.in/WriteReadData/2026/275521.pdf#page=6) |
+| Domestic company taxed under section 200 or 201 that is a Schedule V special purpose vehicle | Any amount | 25% | [Taxation and Other Laws (Amendment) Act, 2026, section 6](https://egazette.gov.in/WriteReadData/2026/275521.pdf#page=6) |
 | Foreign company | Not over INR 10000000 (1 crore) | None | [Finance Act, 2026, Paragraph F Table 1 Sl. No. 6](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
 | Foreign company | Over INR 10000000 (1 crore) up to INR 100000000 (10 crore) | 2% | [Finance Act, 2026, Paragraph F Table 1 Sl. No. 6](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
 | Foreign company | Over INR 100000000 (10 crore) | 5% | [Finance Act, 2026, Paragraph F Table 1 Sl. No. 6](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
 
 Health and Education Cess is 4% of the income tax plus surcharge, for every company (Finance Act, 2026 section 3(15)).
 
-Marginal relief. For the 7%/12% and 2%/5% tiers, tax plus surcharge on income just over INR 1 crore or INR 10 crore cannot exceed the tax plus surcharge on the threshold amount plus the income over the threshold (Paragraph F, formula Wn = Un + Vn and Table 2). Apply it before cess whenever total income is slightly above a threshold. The flat 10% surcharge under sections 200 and 201 has no threshold and no marginal relief. Where the company pays minimum alternate tax (step 6), the same relief at the same two thresholds is given by section 3(5) of the Finance Act, 2026 (formula Tn = Rn + Sn).
+The August 2026 amendment applies to tax year 2026-27 and also changes the corresponding advance-tax surcharge. Schedule V note 2 defines the relevant special purpose vehicle as an Indian company in which a business trust holds a controlling interest and any specific shareholding or interest required under its registration law. [Taxation and Other Laws (Amendment) Act, 2026, sections 1 and 6](https://egazette.gov.in/WriteReadData/2026/275521.pdf) · [2025 Act, Schedule V note 2](https://egazette.gov.in/WriteReadData/2025/265620.pdf#page=521).
+
+Marginal relief. For the 7%/12% and 2%/5% tiers, tax plus surcharge on income just over INR 1 crore or INR 10 crore cannot exceed the tax plus surcharge on the threshold amount plus the income over the threshold (Paragraph F, formula Wn = Un + Vn and Table 2). Apply it before cess whenever total income is slightly above a threshold. The flat surcharges under sections 200 and 201 have no threshold and no marginal relief. Where the company pays minimum alternate tax (step 6), the same relief at the same two thresholds is given by section 3(5) of the Finance Act, 2026 (formula Tn = Rn + Sn).
 
 Effective rates. Each figure is computed: rate x (1 + surcharge) x 1.04. The Finance Act does not print them.
 
@@ -89,8 +92,8 @@ Effective rates. Each figure is computed: rate x (1 + surcharge) x 1.04. The Fin
 |---|---|---|---|---|
 | Domestic, 25% | 26.00% (computed: 25 x 1.04) | 27.82% (computed: 25 x 1.07 x 1.04) | 29.12% (computed: 25 x 1.12 x 1.04) | [Finance Act, 2026](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
 | Domestic, 30% | 31.20% (computed: 30 x 1.04) | 33.384% (computed: 30 x 1.07 x 1.04) | 34.944% (computed: 30 x 1.12 x 1.04) | [Finance Act, 2026](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
-| Domestic, section 200, 22% | not applicable | 25.168% at every income level (computed: 22 x 1.10 x 1.04) | same | [Finance Act, 2026](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
-| Domestic, section 201, 15% | not applicable | 17.16% at every income level (computed: 15 x 1.10 x 1.04) | same | [Finance Act, 2026](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
+| Domestic, section 200, 22% | not applicable | 25.168% with 10% surcharge or 28.60% with 25% surcharge | same | [Taxation and Other Laws (Amendment) Act, 2026, section 6](https://egazette.gov.in/WriteReadData/2026/275521.pdf#page=6) |
+| Domestic, section 201, 15% | not applicable | 17.16% with 10% surcharge or 19.50% with 25% surcharge | same | [Taxation and Other Laws (Amendment) Act, 2026, section 6](https://egazette.gov.in/WriteReadData/2026/275521.pdf#page=6) |
 | Foreign, 35% | 36.40% (computed: 35 x 1.04) | 37.128% (computed: 35 x 1.02 x 1.04) | 38.22% (computed: 35 x 1.05 x 1.04) | [Finance Act, 2026](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
 | Minimum alternate tax, domestic, 14% of book profit | 14.56% (computed: 14 x 1.04) | 15.5792% (computed: 14 x 1.07 x 1.04) | 16.3072% (computed: 14 x 1.12 x 1.04) | [Finance Act, 2026](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
 
@@ -100,7 +103,7 @@ Income is classified under five heads: Salaries; Income from house property; Pro
 
 Start from profit before tax in the statement of profit and loss and adjust:
 
-1. Add back the income tax charge and any surcharge or cess on it. Tax on income is not deductible (section 35(a)).
+1. Add back income tax, surcharge or cess only to the extent deducted in arriving at the starting profit. A tax expense shown below profit before tax is already excluded from that starting figure (section 35(a)).
 2. Add back book depreciation and deduct tax depreciation (below).
 3. Add back expenses that are capital, personal, or not wholly and exclusively for the business; expenditure on corporate social responsibility under section 135 of the Companies Act, 2013; and expenditure for a purpose that is an offence or prohibited by law (section 34).
 4. Apply the disallowances in the table below.
@@ -113,10 +116,11 @@ Depreciation. It is allowed on blocks of assets, as a percentage of the written 
 | Block (Appendix I) | Rate on written down value | Official source |
 |---|---|---|
 | Buildings mainly for residential use (not hotels or boarding houses) | 5% | [Income-tax Rules, 2026, Appendix I](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf) |
-| Other buildings (offices, factories) | 10% | same |
+| Other ordinary buildings (offices, factories), excluding the separately listed building categories | 10% | same |
 | Furniture and fittings, including electrical fittings | 10% | same |
 | Machinery and plant, general rate | 15% | same |
-| Motor cars not used in a business of running them on hire | 15% | same |
+| Motor cars outside a hire business, acquired on or after 1 April 1990, excluding the special acquisition and use window below | 15% | same |
+| Motor cars outside a hire business, acquired from 23 August 2019 to 31 March 2020 and put to use before 1 April 2020 | 30% | same |
 | Computers including computer software | 40% | same |
 | Intangible assets: know-how, patents, copyrights, trademarks, licences, franchises and similar rights (goodwill is excluded by section 33) | 25% | same |
 
@@ -124,12 +128,12 @@ Disallowances most small companies meet:
 
 | Item | Rule | Official source |
 |---|---|---|
-| Payment to a resident with no tax deducted at source, or tax deducted but not paid by the section 263(1) due date | 30% of the sum is disallowed. It is allowed in the year the tax is paid. | [2025 Act section 35(b)(i)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
-| Interest, royalty, fees for technical services or other chargeable sum paid outside India or to a non-resident, same failure | The whole sum is disallowed until the tax is paid. | [2025 Act section 35(b)(ii)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
-| Payments to one person in one day over INR 10,000 not made through specified banking or online mode | The expenditure is disallowed. The limit is INR 35,000 for plying, hiring or leasing goods carriages. Prescribed exceptions exist. | [2025 Act section 36(4) to (7)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
-| Excessive or unreasonable payment to a director, a director's relative or a person with a substantial interest (20% of voting power) | The excess part is disallowed. | [2025 Act section 36(2), (3)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
+| Sum payable to a resident where required TDS was omitted, or was deducted but not paid by the section 263(1) due date | 30% of the sum is disallowed. The portion is allowed in the year the tax is paid. For qualifying section 398(2) relief, use the payee's filing date as the deemed date of deduction and payment. | [2025 Act section 35(b)(i)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
+| Interest, royalty, fees for technical services or other chargeable sum payable outside India, or payable in India to a non-resident other than a company or to a foreign company, with the same TDS failure | The whole sum is disallowed until the tax is paid or deemed paid under section 35(b)(ii). | [2025 Act section 35(b)(ii)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
+| Payments to one person in one day over INR 10,000 outside the approved modes | The expenditure is disallowed unless a rule 26 exception applies. The limit is INR 35,000 for plying, hiring or leasing goods carriages. Rule 48 lists other electronic modes. | [2025 Act section 36(4) to (7)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) · [Income-tax Rules, 2026, rules 26 and 48](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf) |
+| Excessive or unreasonable payment to a director, a director's relative or another specified person | The excess part is disallowed. For a company, substantial interest includes beneficial ownership of shares carrying at least 20% of voting power at any time during the year, excluding qualifying fixed-dividend shares. | [2025 Act section 36(2), (3)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
 | Taxes, duties and fees; employer contributions to provident, superannuation, gratuity or welfare funds; leave encashment; bonus or commission to employees; interest to specified financial entities | Deductible only in the year actually paid. If paid after year end but on or before the section 263(1) due date, deductible in the year the liability arose. | [2025 Act section 37(1) to (3)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
-| Amount owed to a micro or small enterprise and paid beyond the time limit in section 15 of the Micro, Small and Medium Enterprises Development Act, 2006 | Deductible only in the year actually paid. The return due date grace does not apply to this item. | [2025 Act section 37(2)(g), (3)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
+| Amount owed to a micro or small enterprise and paid beyond the time limit in section 15 of the Micro, Small and Medium Enterprises Development Act, 2006 | Deductible only in the year actually paid. The return due date grace does not apply. Pay by the date agreed in writing, capped at 45 days from acceptance or deemed acceptance. With no written agreement, pay before the appointed day, which follows expiry of 15 days from acceptance or deemed acceptance. | [2025 Act section 37(2)(g), (3)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) · [MSMED Act sections 2(b) and 15](https://www.indiacode.nic.in/bitstream/123456789/5872/1/a2006-27.pdf) |
 
 For which payments need tax deducted at source and at what rate, use [in-tds-freelance](in-tds-freelance.md).
 
@@ -137,20 +141,20 @@ For which payments need tax deducted at source and at what rate, use [in-tds-fre
 
 | Item | Rule | Official source |
 |---|---|---|
-| Same year | A loss under one head (other than capital gains) is set off against income under another head. A capital loss is set off only against capital gains. A house property loss is set off against other heads only up to INR 200000. | [2025 Act sections 108, 109](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
+| Same year | Apply the set-off exclusions before using a loss against another head. A short-term capital loss can offset any capital gains. A long-term capital loss can offset only long-term capital gains. A house property loss is set off against other heads only up to INR 200000. | [2025 Act sections 108 and 109](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
 | Business loss carried forward | Set off only against business profits, for not more than eight tax years after the year the loss was first computed. | [2025 Act section 112](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
 | Speculation business loss | Set off only against speculation profits, for not more than four tax years. | [2025 Act section 113](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
 | Capital loss carried forward | Eight tax years. A long-term loss is set off only against long-term gains. | [2025 Act section 111](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
 | Unabsorbed depreciation | Added to the depreciation of the next year and so on, with no time limit stated. Brought-forward business loss is set off first. | [2025 Act sections 33(11), 112(3)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
 | Late return | A business, speculation or capital loss is carried forward only if it was determined in a return filed under section 263(1), which means by the due date. | [2025 Act section 121](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
 | Change in shareholding of a closely held company | A loss of an earlier year is not set off unless shares carrying not less than 51% of the voting power are beneficially held, on the last day of the tax year, by the persons who held not less than 51% on the last day of the loss year. An eligible start-up has a separate rule. | [2025 Act section 119(3)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
-| Losses from years under the 1961 Act | Brought-forward losses are set off against income computed under the 2025 Act in the manner of the 1961 Act section they arose under (sections 71B, 72, 73, 73A, 74A). Unabsorbed depreciation under section 32(2) of the 1961 Act is added to the allowance for the tax year beginning 1 April 2026. | [2025 Act section 536(2)(m), (n), (r)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
+| Losses from years under the 1961 Act | Brought-forward losses are set off against income computed under the 2025 Act under the rules of the applicable 1961 Act section. Sections 71B, 72, 73, 73A and 74A appear in the table. Section 74 capital losses keep their remaining 8-year carry-forward period under section 536(2)(n). Unabsorbed depreciation under section 32(2) of the 1961 Act is added to the allowance for the tax year beginning 1 April 2026. | [2025 Act section 536(2)(m), (n), (r)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
 
 ### 6. Test minimum alternate tax [2025 Act section 206(1)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) as amended by [Finance Act, 2026 section 59](https://egazette.gov.in/WriteReadData/2026/271439.pdf)
 
 Skip this step for a domestic company that has opted under section 200 or 201: section 206(1) does not apply to it.
 
-For every other company, compute income tax on total income under the normal rules, and compute minimum alternate tax on book profit. If the normal tax is less than the minimum alternate tax, book profit is deemed to be the total income and the company pays the minimum alternate tax. Surcharge and cess are added on top in the same way.
+For a company within section 206(1), check the exclusions below before comparing normal income tax on total income with minimum alternate tax on book profit. If the normal tax is less than the minimum alternate tax, book profit is deemed to be the total income and the company pays the minimum alternate tax. Apply the applicable surcharge and cess.
 
 | Item | Rule | Official source |
 |---|---|---|
@@ -205,7 +209,7 @@ Every company must file a return for the tax year, whatever its income or loss. 
 |---|---|---|
 | Return, company with no section 172 report | 31 October 2027 | [Finance Act, 2026 section 66, section 263(1)(c) Table Sl. No. 2](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
 | Return, company to which section 172 applies (international or specified domestic transaction) | 30 November 2027 | [Finance Act, 2026 section 66, section 263(1)(c) Table Sl. No. 1](https://egazette.gov.in/WriteReadData/2026/271439.pdf) |
-| Tax audit threshold | Business turnover or gross receipts over one crore rupees in the tax year. Ten crore rupees where cash receipts and cash payments are each not more than 5% of the totals. | [2025 Act section 63(1)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
+| Tax audit threshold | Business turnover or gross receipts over one crore rupees in the tax year. Ten crore rupees where cash receipts and cash payments are each no more than 5% of their respective totals. Treat cheques and drafts that are not account payee as cash. | [2025 Act section 63(1) and (5)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
 | Tax audit report (Form No. 26) | One month before the return due date: 30 September 2027, or 31 October 2027 where section 172 applies. A company already audited under the Companies Act furnishes that audit report with the prescribed particulars. | [2025 Act section 63(4), (5)](https://egazette.gov.in/WriteReadData/2025/265620.pdf); [Income-tax Rules, 2026, rule 47](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf) |
 | Transfer pricing report (Form No. 48) | At least one month before the return due date: 31 October 2027. | [Income-tax Rules, 2026, rule 85](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf) |
 | Belated return | Within nine months from the end of the tax year (31 December 2027) or before assessment is completed, if earlier. | [2025 Act section 263(4)](https://egazette.gov.in/WriteReadData/2025/265620.pdf) |
@@ -220,7 +224,7 @@ A late return also blocks the carry-forward of that year's business and capital 
 
 ### 10. Cross-border pointers [2025 Act sections 5, 6(10), 172, 207](https://egazette.gov.in/WriteReadData/2025/265620.pdf)
 
-A foreign company is taxed only on Indian-source income, at 35% plus surcharge and cess on business income, and at the section 207 rates on specified income: dividends 20%, royalties and fees for technical services 20% (for agreements meeting section 207(2)), each before surcharge and cess. A treaty may give a lower rate. A foreign company whose place of effective management is in India is resident but is still a "foreign company" for the rate unless it is a domestic company under section 2(42). For pricing transactions with associated enterprises and the Form No. 48 report, use [india-transfer-pricing](india-transfer-pricing.md). For deducting tax on payments, use [in-tds-freelance](in-tds-freelance.md). For treaty residence conflicts of individuals, use [in-cross-border-india-dual-resident-treaty](in-cross-border-india-dual-resident-treaty.md).
+Determine a foreign company's residence first. A non-resident company is taxable on income received or deemed received in India, or accruing, arising or deemed to accrue or arise there. An India-resident foreign company is generally taxable on worldwide income under section 5(1). The foreign-company rate classification remains unless the company meets section 2(42). The general foreign-company rate is 35% before surcharge and cess. Section 207 provides separate rates, including 20% for ordinary dividends, 10% for qualifying IFSC dividends and 20% for royalties and technical fees under qualifying agreements. A treaty may affect the charge or rate. For pricing transactions with associated enterprises and the Form No. 48 report, use [india-transfer-pricing](india-transfer-pricing.md). For deducting tax on payments, use [in-tds-freelance](in-tds-freelance.md).
 
 ## Boundary and exception table
 
@@ -244,7 +248,7 @@ All amounts are hypothetical inputs in INR. They are not thresholds.
 
 ### 1. Small domestic company on the 22% option, book profit to tax payable
 
-A private limited trading company opted for the 22% regime under section 115BAA of the 1961 Act in an earlier year, so for tax year 2026-27 it is treated as having opted under section 200 (section 536(2)(f); see step 2). Profit before tax per the statement of profit and loss is 5,910,000. Book depreciation is 420,000. Tax depreciation is 500,000 (plant at 15% on a written down value of 2,000,000 is 300,000; computers at 40% on 500,000 is 200,000). It paid a contractor 400,000 without deducting tax at source, so 30% (120,000) is disallowed. It paid one supplier 50,000 in cash in a day, which is disallowed. Tax deducted at source on its income is 150,000 and it paid advance tax of 1,200,000.
+A private limited trading company is not a Schedule V special purpose vehicle. It opted for the 22% regime under section 115BAA of the 1961 Act in an earlier year, so for tax year 2026-27 it is treated as having opted under section 200 (section 536(2)(f), see step 2). Profit before tax per the statement of profit and loss is 5,910,000. Book depreciation is 420,000. Tax depreciation is 500,000 (plant at 15% on a written down value of 2,000,000 is 300,000 and computers at 40% on 500,000 is 200,000). It paid a resident contractor 400,000 without required withholding and has no deemed-payment relief, so 30% (120,000) is disallowed. It paid one supplier 50,000 in cash in a day and no rule 26 exception applies. Tax deducted at source on its income is 150,000 and it paid advance tax of 1,200,000.
 
 Total income = 5,910,000 + 420,000 - 500,000 + 120,000 + 50,000 = 6,000,000. Tax at 22% = 1,320,000. Surcharge test: total income is under INR 1 crore, but a section 200 company pays the flat 10% surcharge at any income level, so surcharge = 132,000. Cess at 4% of 1,452,000 = 58,080. Total tax = 1,510,080. Minimum alternate tax does not apply. Balance payable with the return = 1,510,080 - 150,000 - 1,200,000 = 160,080, plus any section 424 and 425 interest. Advance tax paid (1,200,000) is under 90% of the assessed tax of 1,360,080 (1,510,080 less tax deducted at source), which is 1,224,072, so section 424 interest runs on the shortfall.
 
@@ -285,13 +289,13 @@ expected:
 
 ### 2. Decision: stay in the standard 25% regime or opt for section 200
 
-A manufacturing company (turnover in tax year 2024-25 under INR 400 crore, never opted) has income of 8,000,000 before additional depreciation, and can claim additional depreciation of 1,000,000 under section 33(8). Book profit for minimum alternate tax is 8,000,000. It has no old minimum alternate tax credit.
+A manufacturing company (turnover in tax year 2024-25 under INR 400 crore, never opted) has income of 8,000,000 before additional depreciation, and can claim additional depreciation of 1,000,000 under section 33(8). Book profit for minimum alternate tax is 8,000,000. It is not a Schedule V special purpose vehicle and has no old minimum alternate tax credit.
 
 Standard regime: total income 7,000,000. Tax at 25% = 1,750,000. Total income is not over INR 1 crore, so no surcharge. Cess 4% = 70,000. Tax = 1,820,000. Minimum alternate tax = 8,000,000 x 14% = 1,120,000, plus cess = 1,164,800, which is lower, so normal tax applies.
 
 Section 200: additional depreciation is given up, so total income is 8,000,000. Tax at 22% = 1,760,000. Surcharge 10% = 176,000. Cess 4% of 1,936,000 = 77,440. Tax = 2,013,440.
 
-The standard regime is cheaper by 193,440 this year. The figure that decides it: with total income not over INR 1 crore, the two regimes cost the same when the deductions given up equal 3.2% of the income before those deductions (1 - 25.168 / 26). Here that is 256,000; the company gives up 1,000,000, so it should stay. Under 256,000 of incentive deductions, section 200 would win. Above INR 1 crore of total income the standard effective rate rises to 27.82% and the break-even moves to about 9.5%. Because the option cannot be withdrawn, test later years too, not only this one.
+The standard regime is cheaper by 193,440 this year. On these rates, with no standard surcharge, no binding minimum alternate tax and no old credit, the regimes cost the same when the deductions given up equal 3.2% of income before those deductions (1 - 25.168 / 26). Here that is 256,000. The company would give up 1,000,000, so the standard regime costs less. Below 256,000 of forgone deductions, section 200 costs less under the same assumptions. The break-even is about 9.5% only if standard-regime taxable income attracts the full 7% surcharge without marginal relief and the other assumptions stay the same. Recompute the actual liabilities for each year before making the permanent election.
 
 ```oa-check
 name: Standard 25 percent regime against the section 200 option
@@ -331,13 +335,14 @@ Refer to a chartered accountant in India: any year under the 1961 Act; a first-t
 | Income Tax Department, Income-tax Act, 1961, section 115BAA (text as on the department's site) | https://wm.incometaxindia.gov.in/w/section-115baa-8 | Heading and 22% rate of the old section, to match it to section 200 | 2026-11-20 |
 | Income Tax Department, Income-tax Act, 1961, section 115BAB (text as on the department's site) | https://wm.incometaxindia.gov.in/w/section-115bab-7 | Heading of the old section, to match it to section 201 | 2026-11-20 |
 | Ministry of Finance, Memorandum explaining the provisions in the Finance Bill, 2026 | https://www.indiabudget.gov.in/doc/memo.pdf | Part G, "Rationalization of Minimum Alternate Tax provisions" only: read to check the meaning of the section 206 changes. It describes the Bill; the Finance Act, 2026 is the authority | 2026-11-20 |
+| Taxation and Other Laws (Amendment) Act, 2026, Gazette of India Extraordinary, 17 August 2026 | https://egazette.gov.in/WriteReadData/2026/275521.pdf | Sections 1 and 6, commencement and final and advance-tax special-purpose-vehicle surcharge | 2026-11-24 |
+| Micro, Small and Medium Enterprises Development Act, 2006 | https://www.indiacode.nic.in/bitstream/123456789/5872/1/a2006-27.pdf | Sections 2(b) and 15, acceptance and buyer payment deadlines | 2026-11-24 |
 
 The 2025 Act was read as enacted, together with the Finance Act, 2026 amendments. No official consolidated text was used. Sections of the 2025 Act cited above that the Finance Act, 2026 amended are 2, 29, 93, 206, 263, 266, 393, 423, 424, 425, 427, 428 and 536. The amendments to sections 2 (clauses (32) and (40)), 29 (clause (1)(e)), 266 (tax credit cross-references) and 393 (interest rows and declarations) do not touch the provisions this skill uses. The other sections cited were checked against the list of sections the Finance Act, 2026 amends and are not on it.
 
-Not yet confirmed: any amendment, CBDT notification or circular issued after 30 March 2026, including any extension of the return or audit due dates for tax year 2026-27. The Income-tax Rules, 2026 have been amended by later notifications since 20 March 2026; those amendments were not read, so every rule number, form number and Appendix I rate here is as notified on 20 March 2026.
+Not yet confirmed: any future extension of the return or audit due dates for tax year 2026-27. The 2026 Gazette amendment on the section 200 and 201 surcharge is included above.
 Not yet confirmed: an official table of corresponding sections of the 1961 Act and the 2025 Act (the Income Tax Department's section navigator could not be opened: HTTP 403). The reading of section 200 as the successor of section 115BAA and section 201 as the successor of section 115BAB rests on the grounds set out in step 2.
 Not yet confirmed: the rate for a company with no turnover in tax year 2024-25 (formed on or after 1 April 2025); Paragraph E does not deal with it expressly.
-Not yet confirmed: the number of days in section 15 of the Micro, Small and Medium Enterprises Development Act, 2006 (that Act was not read; the skill cites the section without the figure).
-Not yet confirmed: the prescribed exceptions to the cash payment rule under section 36(7) and the prescribed manner of computing additional depreciation for section 205(1)(a).
+Not yet confirmed: the prescribed manner of computing additional depreciation for section 205(1)(a) in an individual fact pattern. Check the section 36(7) and rule 26 cash-payment exceptions against the particular transaction.
 Not yet confirmed: which regime most small companies use in practice (no official statistic was read; worked case 1 uses the section 200 option as an example only).
 Not yet confirmed: the full list of book profit adjustments in section 206(1)(c) to (k) is summarised, not reproduced; capital gains rates under sections 196 to 198 are not stated.
