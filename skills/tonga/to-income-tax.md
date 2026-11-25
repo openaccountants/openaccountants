@@ -6,14 +6,14 @@ jurisdiction: TO
 category: international
 type: computation
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
-version: 0.1
+version: 0.2
 ---
 
-# Tonga Individual Income Tax v0.1
+# Tonga Individual Income Tax v0.2
 
 **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -30,7 +30,7 @@ The resident gross-income rule includes worldwide non-exempt income; a non-resid
 | Residence | Home in Tonga at any time, or 183 days aggregate in any 12-month period beginning/ending in the fiscal year, or Tonga government employee posted abroad; part-year arrival/departure rules apply. | [s 4(3)-(5)](https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2007/2007-0010/IncomeTaxAct_3.pdf) |
 | Individual fiscal year | 12 months ending 30 June; identify the actual fiscal period before annual calculation, not a calendar-year assumption. | [s 2 fiscal year](https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2007/2007-0010/IncomeTaxAct_3.pdf) |
 | Monthly PAYE | Employer withholds under prescribed method; Form 7 monthly list/return and remittance within 28 days after month end. No blanket 15th-day rule. | [Forms; ITA ss 76,82; MORC due-date table](https://www.revenue.gov.to/paye) |
-| Employee certificate | Form 4 within 14 days after the employer financial year under Ministry guidance; shows annual gross pay and withheld tax. Annual withholding statement itself uses the statutory 30 June fiscal period. | [Withholding Tax Certificate; ITA s 86(1)](https://www.revenue.gov.to/paye) |
+| Employee certificate | Give Form 4 within 14 days after the 30 June employment fiscal year ends, ordinarily 14 July. If employment ends during the fiscal year, give the certificate for the part-year within 7 days after employment ends. The certificate shows gross pay and tax withheld. | [Income Tax Regulations reg 16(2)–(4)](https://ago.gov.to/cms/images/LEGISLATION/SUBORDINATE/2608/2608-0004/IncomeTaxRegulations_2.pdf#page=17); [Form 4](https://www.revenue.gov.to/sites/default/files/inline-files/form4%20-%20annual%20tax%20witholding_1.pdf) |
 | Annual PAYE reconciliation | Form 8 plus each employee Form 4; within 2 months after 30 June under s 86, ordinarily 31 August; actual extension/next-business-day rules apply. | [s 86; MORC PAYE/Tax Due Dates](https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2007/2007-0010/IncomeTaxAct_3.pdf) |
 | Ordinary individual business return | Form 10; within 4 months after 30 June, ordinarily 31 October, subject to s 69 exemptions, actual notice and valid extension. Ordinary tax payment due with return. | [ss 68-69,72; MORC due-date table](https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2007/2007-0010/IncomeTaxAct_3.pdf) |
 
@@ -146,6 +146,7 @@ Confirm fiscal period, residence/source, exemption evidence, gross taxable pay, 
 | Income Tax Act, Cap.11.05, 2020 consolidation: Read for s 2 definitions, ss 3-14,15-26,37-38,60-63,68-69,72,76-86,89-91 and Third Schedule; full relevant employment/residence/exemption neighbors | https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2007/2007-0010/IncomeTaxAct_3.pdf | 2026-11-15 |
 | Income Tax (Amendment) Act 2020: Read for all published ss 1-14 including conditional commencement, new 20A and procedure amendments; commencement not established | https://ago.gov.to/cms/images/LEGISLATION/AMENDING/2021/2021-0036/IncomeTaxAmendmentAct2020.pdf | 2026-11-15 |
 | MORC PAYE: Read for complete current-rate, monthly return, certificate and annual-reconciliation instructions | https://www.revenue.gov.to/paye | 2026-11-16 |
+| Income Tax Regulations reg 16(2)–(4) and MORC Form 4: Read for the 30 June employment fiscal year, 14-day annual certificate deadline and 7-day cessation deadline | [Regulation](https://ago.gov.to/cms/images/LEGISLATION/SUBORDINATE/2608/2608-0004/IncomeTaxRegulations_2.pdf#page=17), [Form 4](https://www.revenue.gov.to/sites/default/files/inline-files/form4%20-%20annual%20tax%20witholding_1.pdf) | 2026-11-22 |
 | MORC Individual Employee: Read for complete current/old rate distinction, gross base/no deductions, certificate/refund/short-payment instructions | https://www.revenue.gov.to/individual-employee | 2026-11-15 |
 | MORC Non Residents and Visitors: Read for complete individual residence, part-year, source and non-resident obligations | https://www.revenue.gov.to/non-residents-and-visitors | 2026-11-15 |
 | MORC Small Business Tax: Read for complete eligibility, turnover rates, forms, periods and record instructions; exact 50,000 boundary resolved against s 8 | https://www.revenue.gov.to/small-business-tax | 2026-11-15 |
