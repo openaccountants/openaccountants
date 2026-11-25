@@ -5,7 +5,7 @@ version: 2.3
 type: filing-howto
 jurisdiction: CY
 tax_year: 2026
-last_updated: 2026-11-22
+last_updated: 2026-11-25
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -170,7 +170,7 @@ Bank exports from Bank of Cyprus and Hellenic Bank usually use comma delimiters 
 - **VIES recapitulative statement.** Monthly, by the 15th day after the end of each month in which the business supplied goods or services to a person registered in another member state (art. 42Γ(2)). A corrective statement is due within one month of the end of the month it concerns.
 - **Records and invoices.** Keep records as the Tenth Schedule para. 5 and regs 22 and 23 require. A retailer must issue a VAT invoice to a taxable customer who asks for one when the price passes EUR 85 (reg. 14).
 
-Deadline source check (22 November 2026): the [Tax Department notice of 4 May 2026](https://www.gov.cy/mof-tfa/mi-katigoriopoiimeno/prosorini-diakopi-sti-leitoyrgia-toy-taxforall-tfa-kai-paratasi-prothesmion-ypovolis-pliromis-f-p-a-kai-vies/) extends both the return and payment for the quarter ending 31 March 2026 to 20 May 2026. Its operative wording includes “παρατείνονται μέχρι και τις 20/05/2026.” This is a specific extension, separate from the ordinary deadline rule.
+Deadline source check (22 November 2026): the [Tax Department notice of 4 May 2026](https://www.gov.cy/mof-tfa/mi-katigoriopoiimeno/prosorini-diakopi-sti-leitoyrgia-toy-taxforall-tfa-kai-paratasi-prothesmion-ypovolis-pliromis-f-p-a-kai-vies/) extends both the return and payment for the period ending 31 March 2026 to 20 May 2026. Its operative wording includes “παρατείνονται μέχρι και τις 20/05/2026.” This is a specific extension, separate from the ordinary deadline rule.
 
 ## Penalties and interest
 
@@ -179,7 +179,7 @@ Deadline source check (22 November 2026): the [Tax Department notice of 4 May 20
 | Late notification of the obligation to register | EUR 85 for each month the failure lasts | VAT Law art. 45(1) |
 | Return not received by the deadline | EUR 100 per return | VAT Law art. 45(2) |
 | VAT shown on a return not paid by the deadline, or VAT assessed by the Commissioner | Additional tax of 10% of the VAT due | VAT Law art. 45(3) |
-| Interest on VAT subject to additional tax under art. 45(3) | From the date the VAT became due, at 3.50% a year for arrears periods in 2026; use the prescribed rate for each arrears period, not the printed 9% in VAT Law art. 45(4) | VAT Law art. 45(3)–(4): https://www.cylaw.org/nomoi/enop/ind/2000_1_95/section-sced833a56-3884-5b76-c351-cb00b306de64.html; Uniform Public Default Interest Law 167(I)/2006, arts 3–4: https://www.cylaw.org/nomoi/enop/non-ind/2006_1_167/full.html; annual order Κ.Δ.Π. 376/2025: https://www.cylaw.org/KDP/data/2025_1_376.pdf |
+| Interest on VAT subject to additional tax under art. 45(3) | From the date the VAT became due, at 3.50% a year for arrears periods in 2026; use the prescribed rate for each arrears period, not the printed 9% in VAT Law art. 45(4) | VAT Law art. 45(3)–(4): https://www.cylaw.org/nomoi/enop/ind/2000_1_95/section-sced833a56-3884-5b76-c351-cb00b306de64.html; Uniform Public Default Interest Laws 2006 and 2012 (167(I)/2006, as amended by 118(I)/2012), arts 3–5: https://www.cylaw.org/nomoi/enop/non-ind/2006_1_167/full.html; 2012 amendment: https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/100073/CYP100073%20Grk.pdf#page=7; annual order Κ.Δ.Π. 376/2025: https://www.cylaw.org/KDP/data/2025_1_376.pdf |
 | Reverse charge not applied (arts 11 to 11Ε, 12Α) | EUR 200 per tax period, at most EUR 4,000 | VAT Law art. 45(7Β) |
 | VIES statement not received by the deadline | EUR 50 | VAT Law art. 45Β |
 | VIES statement wrong and not corrected in time | EUR 15 | VAT Law art. 45Α(1) |
@@ -308,6 +308,7 @@ expected:
 | Tax Department, exempt transactions | https://www.gov.cy/mof-tax/documents/exairoymenes-synallages/ | 2026-10-02 |
 | Tax Department, General VAT Guide (Information Leaflet 10, November 2001) | https://www.gov.cy/media/sites/167/2026/01/%CE%93%CE%B5%CE%BD%CE%B9%CE%BA%CF%8C%CF%82-%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%A6.%CE%A0.%CE%91.-%CE%95%CE%BD%CE%B7%CE%BC%CE%B5%CF%81%CF%89%CF%84%CE%B9%CE%BA%CF%8C-%CE%88%CE%BD%CF%84%CF%85%CF%80%CE%BF-10.pdf | 2026-10-02 |
 | Uniform Public Default Interest Law 167(I)/2006, arts 1–5, including the substitution rule in art. 3; full operative text read | https://www.cylaw.org/nomoi/enop/non-ind/2006_1_167/full.html | 2026-11-22 |
+| Law 118(I)/2012, arts 1–3: the 2006/2012 collective title, basic-rate definition and art. 4 amendments. Entire two-page amendment visually read in Gazette 4349, 27 July 2012, printed pp. 1421–1422 (PDF pp. 7–8), reproduced by ILO NATLEX; not the whole 118-page Gazette. Short wording: “Ευρωπαϊκής Κεντρικής Τράπεζας”. | https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/100073/CYP100073%20Grk.pdf#page=7 | 2026-11-25 |
 | Κ.Δ.Π. 376/2025: full one-page order read for 3.50% public default interest in 2026, effective 1 January 2026 | https://www.cylaw.org/KDP/data/2025_1_376.pdf | 2026-11-22 |
 | Tax Department notice, 4 May 2026: operative return/payment extension to 20 May 2026; full official notice read | https://www.gov.cy/mof-tfa/mi-katigoriopoiimeno/prosorini-diakopi-sti-leitoyrgia-toy-taxforall-tfa-kai-paratasi-prothesmion-ypovolis-pliromis-f-p-a-kai-vies/ | 2026-11-22 |
 
