@@ -6,14 +6,14 @@ jurisdiction: TO
 category: international
 type: computation
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-22
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
-version: 0.1
+version: 0.2
 ---
 
-# Tonga Consumption Tax v0.1
+# Tonga Consumption Tax v0.2
 
 **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -41,7 +41,7 @@ Obtain actual CT/TIN registration and effective date, all business activities/tr
 
 ### Establish classification, registration and the period
 
-Use CT Act ss 2,5-8. The ordinary turnover test counts the value of taxable supplies, not exempt supplies or CT itself, across the person's trading names; associates may be considered. Licensing authorities and imported-service recipients have their own registration branches. Do not substitute the old “exceeds” test for “or more”, or assume the threshold excuses every licensing authority. Voluntary registration is conditional, not automatic merely because turnover is low.
+Use CT Act ss 2,5-8. The ordinary turnover test counts the value of taxable supplies, excluding exempt supplies and CT itself, across the person's trading names. The Minister must have regard to the value of taxable supplies made by an associate when determining whether the person must apply under s 6(1). Licensing authorities and imported-service recipients have their own registration branches. Do not substitute the old “exceeds” test for “or more”, or assume the threshold excuses every licensing authority. Voluntary registration is conditional, not automatic merely because turnover is low.
 
 Get a TIN first if needed; submit the current CT Application for Registration (MORC identifies Form 1/Regulation 10) with the actual compulsory checklist/supporting documents. Retain the decision letter, effective date, first-return date and registration certificate. The published amendment changes certificate display/copies, but its commencement condition is unresolved. Hold that amendment-dependent application and obtain the actual certificate/display direction from the authority; unofficial copies are not proof of registration. A saved application is not proof of registration. Do not charge CT before the actual legal effective date or claim a credit for a supply not taxable at its time.
 
