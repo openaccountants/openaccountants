@@ -76,15 +76,17 @@ That historical attribution does not approve this proposed correction. Unresolve
 
 ### Key difference: ASPE vs IFRS
 
+HOLD (unverified operative standard) every ASPE and IFRS cell below, including the IFRS column. These are research topics, not current requirements.
+
 **Key difference: ASPE vs IFRS**
 
 | Area | ASPE | IFRS |
 | --- | --- | --- |
-| Financial instruments | HOLD (unverified operative standard): Simplified (cost/amortised cost focus) | Complex (IFRS 9 — ECL, fair value hierarchy) |
-| Leases | HOLD (unverified operative standard): Finance/operating distinction | IFRS 16 — right-of-use model |
-| Revenue | HOLD (unverified operative standard): Risks/rewards transfer model | IFRS 15 — five-step model |
-| Goodwill | HOLD (unverified operative standard): Current goodwill rule/election not verified; do not apply proposed 5/10-year relief as an issued standard | Not amortised; annual impairment test |
-| Employee benefits | HOLD (unverified operative standard): Simplified pension accounting | IAS 19 — full actuarial measurement |
+| Financial instruments | HOLD (unverified operative standard): Simplified (cost/amortised cost focus) | HOLD (unverified operative standard): Complex (IFRS 9 — ECL, fair value hierarchy) |
+| Leases | HOLD (unverified operative standard): Finance/operating distinction | HOLD (unverified operative standard): IFRS 16 — right-of-use model |
+| Revenue | HOLD (unverified operative standard): Risks/rewards transfer model | HOLD (unverified operative standard): IFRS 15 — five-step model |
+| Goodwill | HOLD (unverified operative standard): Current goodwill rule/election not verified; do not apply proposed 5/10-year relief as an issued standard | HOLD (unverified operative standard): Not amortised; annual impairment test |
+| Employee benefits | HOLD (unverified operative standard): Simplified pension accounting | HOLD (unverified operative standard): IAS 19 — full actuarial measurement |
 
 
 ## Section 3 -- Size Thresholds
@@ -123,12 +125,12 @@ HOLD (unverified) the ASPE/IFRS requirement and comparison cells below pending o
 
 | Document | ASPE | IFRS |
 | --- | --- | --- |
-| Balance Sheet / Statement of Financial Position | HOLD (unverified operative standard): Required | Required |
-| Income Statement / Statement of Comprehensive Income | HOLD (unverified operative standard): Required | Required (+ OCI) |
-| Statement of Retained Earnings / Changes in Equity | HOLD (unverified operative standard): Required (retained earnings) | Required (full equity) |
-| Statement of Cash Flows | HOLD (unverified operative standard): Required | Required |
-| Notes to Financial Statements | HOLD (unverified operative standard): Required | Required (full IFRS disclosure) |
-| Comparative information | HOLD (unverified operative standard): Encouraged (not mandatory under ASPE) | Mandatory (minimum one prior period) |
+| Balance Sheet / Statement of Financial Position | HOLD (unverified operative standard): Required | HOLD (unverified operative standard): Required |
+| Income Statement / Statement of Comprehensive Income | HOLD (unverified operative standard): Required | HOLD (unverified operative standard): Required (+ OCI) |
+| Statement of Retained Earnings / Changes in Equity | HOLD (unverified operative standard): Required (retained earnings) | HOLD (unverified operative standard): Required (full equity) |
+| Statement of Cash Flows | HOLD (unverified operative standard): Required | HOLD (unverified operative standard): Required |
+| Notes to Financial Statements | HOLD (unverified operative standard): Required | HOLD (unverified operative standard): Required (full IFRS disclosure) |
+| Comparative information | HOLD (unverified operative standard): Encouraged (not mandatory under ASPE) | HOLD (unverified operative standard): Mandatory (minimum one prior period) |
 
 
 ## Section 5 -- Year-End Adjustments Checklist
@@ -137,18 +139,18 @@ HOLD (unverified) the ASPE/IFRS requirement and comparison cells below pending o
 
 | # | Adjustment | Canada-specific notes |
 | --- | --- | --- |
-| 1 | HOLD (unverified operative standard): Amortization/depreciation | ASPE 3061; systematic and rational; CCA rates for tax (not accounting) |
-| 2 | HOLD (unverified operative standard): Provisions | ASPE 3290; likely, estimable contingencies |
-| 3 | HOLD (unverified operative standard): Employee benefits | ASPE 3462; accrued vacation, bonus; pension funding vs expense |
-| 4 | HOLD (unverified operative standard): Bad debt allowance | ASPE 3856; incurred loss model (not ECL for ASPE) |
-| 5 | HOLD (unverified operative standard): Inventory | ASPE 3031; lower of cost (FIFO/weighted average) and NRV; no LIFO |
-| 6 | HOLD (unverified operative standard): Income taxes | ASPE 3465; taxes payable method OR future income taxes method (choice) |
-| 7 | HOLD (unverified operative standard): Foreign exchange | ASPE 1651; temporal method; current rate for monetary |
-| 8 | HOLD (unverified operative standard): Leases | ASPE 3065; finance/operating classification |
-| 9 | HOLD (unverified operative standard): Government assistance | ASPE 3800; cost reduction or income approach |
-| 10 | HOLD (unverified operative standard): Goodwill impairment | ASPE 3064 topic retained; current impairment/amortization requirements unverified; proposed 5/10-year relief is not certified current |
-| 11 | HOLD (unverified operative standard): Related party transactions | ASPE 3840; measured at exchange amount or carrying value |
-| 12 | HOLD (unverified operative standard): Scientific Research & Experimental Development (SR&ED) | Capitalise or expense; ITC recognition |
+| 1 | Amortization/depreciation | HOLD (unverified operative standard): ASPE 3061; systematic and rational; CCA rates for tax (not accounting) |
+| 2 | Provisions | HOLD (unverified operative standard): ASPE 3290; likely, estimable contingencies |
+| 3 | Employee benefits | HOLD (unverified operative standard): ASPE 3462; accrued vacation, bonus; pension funding vs expense |
+| 4 | Bad debt allowance | HOLD (unverified operative standard): ASPE 3856; incurred loss model (not ECL for ASPE) |
+| 5 | Inventory | HOLD (unverified operative standard): ASPE 3031; lower of cost (FIFO/weighted average) and NRV; no LIFO |
+| 6 | Income taxes | HOLD (unverified operative standard): ASPE 3465; taxes payable method OR future income taxes method (choice) |
+| 7 | Foreign exchange | HOLD (unverified operative standard): ASPE 1651; temporal method; current rate for monetary |
+| 8 | Leases | HOLD (unverified operative standard): ASPE 3065; finance/operating classification |
+| 9 | Government assistance | HOLD (unverified operative standard): ASPE 3800; cost reduction or income approach |
+| 10 | Goodwill impairment | HOLD (unverified operative standard): ASPE 3064 topic retained; current impairment/amortization requirements unverified; proposed 5/10-year relief is not certified current |
+| 11 | Related party transactions | HOLD (unverified operative standard): ASPE 3840; measured at exchange amount or carrying value |
+| 12 | Scientific Research & Experimental Development (SR&ED) | HOLD (unverified operative standard): Capitalise or expense; ITC recognition |
 
 
 ## Section 6 -- Income Statement Format
@@ -249,18 +251,18 @@ Total liabilities and shareholders' equity
 
 | # | Disclosure | ASPE | IFRS |
 | --- | --- | --- | --- |
-| 1 | HOLD (unverified operative standard): Significant accounting policies | Required (Section 1505) | Required (IAS 1/IAS 8) |
-| 2 | HOLD (unverified operative standard): Capital assets / PPE | Required (Section 3061) | Required (IAS 16) |
-| 3 | HOLD (unverified operative standard): Financial instruments | Required (Section 3856) | Required (IFRS 7 — extensive) |
-| 4 | HOLD (unverified operative standard): Related party transactions | Required (Section 3840) | Required (IAS 24) |
-| 5 | HOLD (unverified operative standard): Commitments and contingencies | Required (Section 3290) | Required (IAS 37) |
-| 6 | HOLD (unverified operative standard): Income taxes | Required (Section 3465) | Required (IAS 12) |
-| 7 | HOLD (unverified operative standard): Revenue | Simplified | Required (IFRS 15 — extensive) |
-| 8 | HOLD (unverified operative standard): Leases | Required (Section 3065) | Required (IFRS 16) |
-| 9 | HOLD (unverified operative standard): Employee benefits / pensions | If applicable (Section 3462) | Required (IAS 19) |
-| 10 | HOLD (unverified operative standard): Subsequent events | Required (Section 3820) | Required (IAS 10) |
-| 11 | HOLD (unverified operative standard): Going concern | Required if uncertainty | Required (IAS 1) |
-| 12 | HOLD (unverified operative standard): Segment information | Not required | Required (IFRS 8 — listed) |
+| 1 | Significant accounting policies | HOLD (unverified operative standard): Required (Section 1505) | HOLD (unverified operative standard): Required (IAS 1/IAS 8) |
+| 2 | Capital assets / PPE | HOLD (unverified operative standard): Required (Section 3061) | HOLD (unverified operative standard): Required (IAS 16) |
+| 3 | Financial instruments | HOLD (unverified operative standard): Required (Section 3856) | HOLD (unverified operative standard): Required (IFRS 7 — extensive) |
+| 4 | Related party transactions | HOLD (unverified operative standard): Required (Section 3840) | HOLD (unverified operative standard): Required (IAS 24) |
+| 5 | Commitments and contingencies | HOLD (unverified operative standard): Required (Section 3290) | HOLD (unverified operative standard): Required (IAS 37) |
+| 6 | Income taxes | HOLD (unverified operative standard): Required (Section 3465) | HOLD (unverified operative standard): Required (IAS 12) |
+| 7 | Revenue | HOLD (unverified operative standard): Simplified | HOLD (unverified operative standard): Required (IFRS 15 — extensive) |
+| 8 | Leases | HOLD (unverified operative standard): Required (Section 3065) | HOLD (unverified operative standard): Required (IFRS 16) |
+| 9 | Employee benefits / pensions | HOLD (unverified operative standard): If applicable (Section 3462) | HOLD (unverified operative standard): Required (IAS 19) |
+| 10 | Subsequent events | HOLD (unverified operative standard): Required (Section 3820) | HOLD (unverified operative standard): Required (IAS 10) |
+| 11 | Going concern | HOLD (unverified operative standard): Required if uncertainty | HOLD (unverified operative standard): Required (IAS 1) |
+| 12 | Segment information | HOLD (unverified operative standard): Not required | HOLD (unverified operative standard): Required (IFRS 8 — listed) |
 
 
 ## Section 9 -- Filing Requirements
@@ -390,31 +392,31 @@ The unchanged baseline reuses completed 21 November reads. No operative licensed
 
 | Primary source | Completed scope | Read date |
 | --- | --- | --- |
-| [CBCA 162](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-162.html) | Appointment alongside163; actual independent obligations remain | 2026-11-21 |
-| [CBCA 163](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-163.html) | Non-distributing, all shareholders including non-voting, only until following annual meeting; no revenue condition in this section | 2026-11-21 |
-| [CBCA 155](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-155.html) | Statutory statements/comparatives including155(2) explained-prior-year-omission exception; not universal ASPE proof | 2026-11-21 |
-| [CBCA 161](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-161.html) | Operative independence/disqualification conditions for its population | 2026-11-21 |
-| [CNCA 179](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-179.html) | Designated-corporation gross-revenue/status definition | 2026-11-21 |
-| [CNCA 182](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-182.html) | Waiver appointment and all members entitled to vote, annual duration | 2026-11-21 |
-| [CNCA 188](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-188.html) | Designated review by default if accountant appointed; ordinary-resolution audit | 2026-11-21 |
-| [CNCA 189](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-189.html) | Nondesignated audit, soliciting review via special resolution/revenue and annual duration; bounded25Nov reread of complete189 | 2026-11-21; bounded follow-up 2026-11-25 |
-| [CNCA Regulations](https://laws-lois.justice.gc.ca/eng/regulations/SOR-2011-223/FullText.html) | Full-text official80/84 prescribed amounts operatively read; section-specific web URLs had failed | 2026-11-21 |
-| [Corporations Canada NPO table](https://ised-isde.canada.ca/site/corporations-canada/en/not-profit-corporations/financial-statements-and-review) | Soliciting/non-soliciting inclusive branch table; bounded25Nov revenue-table follow-up | 2026-11-21; bounded follow-up 2026-11-25 |
-| [CRA charity statements](https://www.canada.ca/en/revenue-agency/services/charities-giving/charities/operating-a-registered-charity/financial-statements.html) | Over250000 recommendation, not mandatoryCRAaudit; bounded25Nov exactrecommendation read: “recommends” | 2026-11-21; bounded follow-up 2026-11-25 |
-| [Alberta official B-9 PDF](https://kings-printer.alberta.ca/documents/Acts/B09.pdf) | Operative163 read in memory21Nov: non-reporting issuer/special resolution/to nextannualmeeting;25Nov web/urllib retrievalseparatelyfailed403, not a new completedread | 2026-11-21 |
-| [BC BCA](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/02057_08) | 203/205-206 operative21Nov; bounded25Nov203(2)-(3) unanimity/nonvoting/oneFY read, pagecurrent24Nov2026 | 2026-11-21; bounded follow-up 2026-11-25 |
-| [NI 51-102](https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/110_2004) | 4.1 audit/reporting-issuer population,4.2 nonventure90/venture120/earlierforeignfiling; bounded25Nov4.2 read | 2026-11-21; bounded follow-up 2026-11-25 |
-| [Ontario BCA](https://www.ontario.ca/laws/statute/90b16) | Indexed148 text read; directcurrentpageapp-shell/403; versioncurrencyunresolved,HOLD | 2026-11-21 |
-| [Quebec BCA PDF](https://www.legisquebec.gouv.qc.ca/en/pdf/cs/S-31.1.pdf) | 239 operativepassage read throughweb,consolidation1Sep2025,currentapplicabilityHOLD | 2026-11-21 |
-| [CRA T4012](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t2-corporation-income-tax-guide-before-you-start.html) | Six-monthreturndeadline/electronicfiling/ordinaryrepeatpenalties;MyBAexpresslylisted,notpaymentdeadline | 2026-11-21 |
-| [CRA RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Applicablefullintroduction/Appendixread reused;GIFIinsteadphysicalstatements/notesreports/insurerexception/functionalcurrency | 2026-11-21 |
-| [CBCA annual policy](https://ised-isde.canada.ca/site/corporations-canada/en/business-corporations/policy-annual-filings-canada-business-corporations-act) | 60dayanniversaryevent/initialyearrule | 2026-11-21 |
-| [Ontario registry](https://www.ontario.ca/page/ontario-business-registry) | Ordinaryannualreturntax-yearperiod;officialinstructionsbelowalsoread | 2026-11-21 |
-| [Ontario ON00229e](https://forms.mgcs.gov.on.ca/dataset/6c1fdc85-c100-493d-93ca-d86ef2c6a260/resource/a1e78643-e06e-403f-9aec-f26c10b26712/download/on00229e.pdf) | Sixmonthsaftertaxationyear,provincialreturndistinctfromT2 | 2026-11-21 |
-| [AcSB project](https://www.frascanada.ca/en/aspe/projects/goodwill-and-acquired-intangibles) | Originalstandardsetterstatus:proposedamendments,plannedfinalissuancefirsthalf2027;notoperativeHandbook | 2026-11-21 |
-| [AcSB exposure explanation](https://www.frascanada.ca/en/aspe/projects/goodwill-and-acquired-intangibles/in-brief-acsb-ed-relief-from-recognition-acquired-intangible-assets-amortization-goodwill) | Proposed1Jan2029effectivewith earlyapplication;proposaldoesnotproveissuedcurrentelection | 2026-11-21 |
+| [CBCA 162](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-162.html) | Auditor appointment, read with section 163; other obligations remain separate | 2026-11-21 |
+| [CBCA 163](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-163.html) | Non-distributing corporation; all shareholders including non-voting; valid to the following annual meeting; no revenue condition in this section | 2026-11-21 |
+| [CBCA 155](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-155.html) | Statutory statements and comparatives, including the subsection (2) explained prior-year omission; not proof of an ASPE rule | 2026-11-21 |
+| [CBCA 161](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-161.html) | Operative independence and disqualification conditions for its statutory population | 2026-11-21 |
+| [CNCA 179](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-179.html) | Designated-corporation definition: gross revenues and soliciting status | 2026-11-21 |
+| [CNCA 182](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-182.html) | Appointment waiver by all members entitled to vote; annual duration | 2026-11-21 |
+| [CNCA 188](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-188.html) | Designated-corporation review by default if accountant appointed; audit by ordinary resolution | 2026-11-21 |
+| [CNCA 189](https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-189.html) | Non-designated audit; soliciting review by special resolution and revenue condition, valid to next annual meeting. Bounded follow-up on 25 November | 2026-11-21; bounded follow-up 2026-11-25 |
+| [CNCA Regulations](https://laws-lois.justice.gc.ca/eng/regulations/SOR-2011-223/FullText.html) | Prescribed amounts in sections 80 and 84 read from the official full text | 2026-11-21 |
+| [Corporations Canada NPO table](https://ised-isde.canada.ca/site/corporations-canada/en/not-profit-corporations/financial-statements-and-review) | Soliciting and non-soliciting revenue bands with inclusive boundaries. Bounded follow-up on 25 November | 2026-11-21; bounded follow-up 2026-11-25 |
+| [CRA charity statements](https://www.canada.ca/en/revenue-agency/services/charities-giving/charities/operating-a-registered-charity/financial-statements.html) | Professional audit recommendation where income exceeds $250,000; not a mandatory CRA threshold. Bounded follow-up on 25 November | 2026-11-21; bounded follow-up 2026-11-25 |
+| [Alberta official B-9 PDF](https://kings-printer.alberta.ca/documents/Acts/B09.pdf) | Section 163: non-reporting issuer; special resolution valid to following annual meeting. Bounded 25 November read succeeded after an earlier failed retrieval | 2026-11-21; bounded follow-up 2026-11-25 |
+| [BC BCA](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/02057_08) | Sections 203, 205 and 206; bounded 25 November re-read of 203(2)-(3): all shareholders including non-voting, unanimous resolution, one financial year | 2026-11-21; bounded follow-up 2026-11-25 |
+| [NI 51-102](https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/110_2004) | Section 4.1 reporting-issuer audit population; 4.2 non-venture 90 days, venture 120 days, earlier foreign filing. Bounded follow-up on 25 November | 2026-11-21; bounded follow-up 2026-11-25 |
+| [Ontario BCA](https://www.ontario.ca/laws/statute/90b16) | Indexed section 148 read; present version not confirmed because the current page did not load. HOLD | 2026-11-21 |
+| [Quebec BCA PDF](https://www.legisquebec.gouv.qc.ca/en/pdf/cs/S-31.1.pdf) | Section 239 read from the official PDF consolidated to 1 September 2025; current applicability HOLD | 2026-11-21 |
+| [CRA T4012](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t2-corporation-income-tax-guide-before-you-start.html) | Six-month return deadline, electronic filing, ordinary and repeat penalties; My Business Account expressly listed. Not the payment deadline | 2026-11-21 |
+| [CRA RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html) | Introduction and appendix: GIFI instead of physical statements, notes/reports, insurer exception and functional currency | 2026-11-21 |
+| [CBCA annual policy](https://ised-isde.canada.ca/site/corporations-canada/en/business-corporations/policy-annual-filings-canada-business-corporations-act) | 60 days after incorporation, amalgamation or continuance anniversary; initial event year excluded | 2026-11-21 |
+| [Ontario registry](https://www.ontario.ca/page/ontario-business-registry) | Ordinary annual return period tied to taxation year; official instructions also read | 2026-11-21 |
+| [Ontario ON00229e](https://forms.mgcs.gov.on.ca/dataset/6c1fdc85-c100-493d-93ca-d86ef2c6a260/resource/a1e78643-e06e-403f-9aec-f26c10b26712/download/on00229e.pdf) | Six months after taxation year-end; provincial return separate from T2 | 2026-11-21 |
+| [AcSB project](https://www.frascanada.ca/en/aspe/projects/goodwill-and-acquired-intangibles) | Original standard-setter proposal status and planned final issuance in first half of 2027, including project status and June 2026 decision summary. Bounded follow-up on 25 November; not operative Handbook text | 2026-11-21; bounded follow-up 2026-11-25 |
+| [AcSB exposure explanation](https://www.frascanada.ca/en/aspe/projects/goodwill-and-acquired-intangibles/in-brief-acsb-ed-relief-from-recognition-acquired-intangible-assets-amortization-goodwill) | Proposed 1 January 2029 start with early application; not an issued current election | 2026-11-21 |
 
-**Not yet confirmed:** Quick-reference accounting-standard scope (IFRS/ASPE/ASNPO/pension) and choice of financial year are removed from the usable reference table; HOLD actual framework eligibility and fiscal period/year-end choice or change. Also held: every operative ASPE/IFRS/ASNPO/pension/assurance-standard requirement and scope, current goodwill base/election and40-year citation, national framework/size negatives, Ontario/Quebec present applicability, actual fiscal period/currency/functional-currency eligibility, current provincial licensing/CPD and every case's status/resolutions/filing package or independent funder/securities obligations. Original statement/note/checklist topics are retained as non-usable research holds. Loan bands/layouts are illustrative or unsupported policy, not verified standards. Five statutory/CRA contradiction groups are corrected; no complete fact census or whole-skill verification is claimed.
+**Not yet confirmed:** Quick-reference accounting-standard scope (IFRS/ASPE/ASNPO/pension) and choice of financial year are removed from the usable reference table; HOLD actual framework eligibility and fiscal period/year-end choice or change. Also held: every operative ASPE/IFRS/ASNPO/pension/assurance-standard requirement and scope, current goodwill base/election and 40-year citation, national framework/size negatives, Ontario/Quebec present applicability, actual fiscal period/currency/functional-currency eligibility, current provincial licensing/CPD and every case's status/resolutions/filing package or independent funder/securities obligations. Original statement/note/checklist topics are retained as non-usable research holds. Loan bands/layouts are illustrative or unsupported policy, not verified standards. Five statutory/CRA contradiction groups are corrected; no complete fact census or whole-skill verification is claimed.
 
 ## Disclaimer
 
