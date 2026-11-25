@@ -124,7 +124,7 @@ This is a Tier 2 content skill that loads on top of `us-tax-workflow-base`. It c
 
 ### E-3: Address changes during the year
 
-- **Address changes during the year** — Address changes can be made on the annual report. If an address changes after the annual report is filed, an amended filing (LLC $50; profit/nonprofit corporation $61.25) can update the records before the next annual report cycle.  _(unsure)_
+- **Address changes during the year** — Address changes can be made on the annual report. If an address changes after the annual report is filed, an amended annual report (LLC $50; profit/nonprofit corporation $61.25) can update the records before the next annual report cycle.  _(unsure)_
 
 ### E-4: Foreign LLC withdrawing from Florida
 
