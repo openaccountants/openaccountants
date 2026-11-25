@@ -45,7 +45,7 @@ That historical attribution does not approve this proposed correction. Unresolve
 - **T2 corporate return** — 6 months after fiscal year-end  _(ITA s.150(1)(a))_
 - **GIFI** — General Index of Financial Information — CRA standard codes  _(CRA — GIFI — canada.ca)_
 - **Annual return (CBCA)** — Within 60 days of anniversary  _(CBCA s.263; Corporations Canada)_
-- **Late T2 penalty** — 5% of unpaid tax + 1%/month (max 12)  _(ITA s.162(1))_
+- **Late T2 penalty** — Ordinary 5% of unpaid tax plus 1% per complete month, maximum 12; bind actual balance and applicable penalty branch. [CRA T4012](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t2-corporation-income-tax-guide-before-you-start.html).
 
 ## Section 1 -- Quick Reference
 
@@ -281,11 +281,11 @@ Total liabilities and shareholders' equity
 | Late filing penalty — T2 | Ordinary 5% of unpaid tax plus 1% per complete month, maximum 12; actual unpaid balance and repeat/demand/nonresident/large-corporation branches remain separate. [T4012](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t2-corporation-income-tax-guide-before-you-start.html) |
 | Failure to file penalty | HOLD (unverified) any additional provincial amount/provision and actual conditions; do not automatically double the federal penalty |
 
-### Assurance levels for CRA
+### Assurance engagement topics
 
 HOLD (unverified) all operative assurance-standard identifiers, scope and report wording below; the labels retain research topics, including legacy Notice to Reader terminology. An actual engagement requires current operative standards and the applicable law/contract. No universal PAE audit or lender requirement follows from this table.
 
-**Assurance levels for CRA**
+**Assurance engagement topics**
 
 | Level | Standard | When used |
 | --- | --- | --- |
