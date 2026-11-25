@@ -1,11 +1,11 @@
 ---
 name: sg-cpf-medisave
 description: Use this skill whenever asked about Singapore CPF MediSave contributions for self-employed persons (SEPs). Trigger on phrases like "MediSave contribution", "CPF self-employed", "how much MediSave do I pay", "net trade income CPF", "voluntary CPF contributions", "BHS", "Basic Healthcare Sum", "MediShield Life", or any question about MediSave obligations for a self-employed client in Singapore. This skill covers mandatory MediSave rates by age, contribution caps, voluntary CPF contributions, tax relief, payment deadlines, penalties, and edge cases. ALWAYS read this skill before touching any Singapore CPF/MediSave-related work.
-version: 3.0
+version: 3.1
 jurisdiction: SG
 tax_year: 2026
 tax_year_notes: "Calendar 2026 MediSave work year; paid-year relief from YA 2026 onwards"
-last_updated: 2026-11-14
+last_updated: 2026-11-22
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -13,11 +13,11 @@ domain: payroll
 type: computation
 ---
 
-# Singapore self-employed MediSave contributions v 3.0
+# Singapore self-employed MediSave contributions v3.1
 
 Calendar 2026 work-year contributions. The payment year separately determines the following YA's relief. A 2026 payment for an older notice does not adopt 2026 rates.
 
-## Scope and who this is for
+## Scope
 
 Singapore citizen/PR self-employed persons with qualifying assessed net trade income. Employee payroll CPF and platform-operator computations are separate jobs. Pensioner status is a separate official classification, not simply being over 65.
 
@@ -30,8 +30,8 @@ Read this whole section before computing anything.
 | --- | --- |
 | Country | Singapore |
 | Jurisdiction Code | SG |
-| Primary Legislation | Central Provident Fund Act (Cap. 36)  [Official source](https://www.cpf.gov.sg/member/growing-your-savings/cpf-contributions/saving-as-a-self-employed-person) |
-| Supporting Legislation | Income Tax Act (Cap. 134); MediShield Life Scheme Act 2015  [Official source](https://www.cpf.gov.sg/member/growing-your-savings/cpf-contributions/saving-as-a-self-employed-person) |
+| Primary legislation | [Central Provident Fund Act 1953, section 9A](https://sso.agc.gov.sg/Act/CPFA1953?ProvIds=pr9A-) and [Central Provident Fund (Self-Employed Persons) Regulations 1992](https://sso.agc.gov.sg/SL/CPFA1953-RG25) |
+| Supporting legislation | [Income Tax Act 1947, section 39](https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr39-) and [MediShield Life Scheme Act 2015, section 4](https://sso.agc.gov.sg/Act/MLSA2015?ProvIds=pr4-) |
 | Tax Authority | Central Provident Fund Board (CPFB); Inland Revenue Authority of Singapore (IRAS) |
 | Tax Year | 2026 work year; paid-in-2026 relief considered in YA 2027  [Official source](https://www.cpf.gov.sg/member/growing-your-savings/cpf-contributions/saving-as-a-self-employed-person) |
 | Currency | SGD only |
@@ -40,7 +40,7 @@ Read this whole section before computing anything.
 | Basic Healthcare Sum (BHS) | S$79,000 for members below 65 or turning 65 in 2026; older cohorts retain their fixed BHS  [Official source](https://www.moh.gov.sg/newsroom/cpf-interest-rates-from-1-january-to-31-march-2026-and-basic-healthcare-sum-for-2026/) |
 | Contributor | Open Accountants |
 | Validation Date | Pending |
-| Skill Version | 3.0 |
+| Skill Version | 3.1 |
 | Coverage boundary | Ordinary SEP computation; actual concurrent-work limitation, hardship, refunds and cross-border facts require their own evidence |
 
 
@@ -52,7 +52,7 @@ Read this whole section before computing anything.
 Before computing any MediSave figure, you MUST know:
 
 1. Age as at 1 January of the contribution year -- determines the MediSave contribution rate band
-2. Net Trade Income (NTI) for the year -- assessable income from IRAS Form B
+2. Net Trade Income (NTI) for the year from the IRAS assessment. Check trade income reported on the applicable Form B or B1.
 3. Is the person a Singapore Citizen or Permanent Resident? -- only SC/PR are obligated
 4. Is NTI above S$6,000? -- mandatory MediSave only triggers above this threshold
 5. Is the person also an employee with employer CPF contributions? -- affects CPF Annual Limit headroom
@@ -83,7 +83,7 @@ If NTI is unknown or the CPF Board contribution notice has not been issued, note
 | 45 to below 50 | 5.00% of NTI  [Official source](https://www.cpf.gov.sg/service/sfc/servlet.shepherd/document/download/069IW00000G4S1QYAV) |
 | 50 and above | 5.25% of NTI  [Official source](https://www.cpf.gov.sg/service/sfc/servlet.shepherd/document/download/069IW00000G4S1QYAV) |
 
-- **Graduated band** , NTI between S$12,001 and S$18,000: graduated rate between lower and full rate. Use the exact official formula and CPFB calculator.
+- For the graduated band, use NTI above S$12,000 and up to and including S$18,000. Apply the [First Schedule, item 23](https://sso.agc.gov.sg/SL/CPFA1953-RG25?ProvIds=Sc1-&ViewType=Advance) and apply regulation 14 rounding to the resulting statutory contribution.
 
 ## The method, step by step
 
@@ -102,11 +102,11 @@ If NTI is unknown or the CPF Board contribution notice has not been issued, note
 
 For non-pensioners with NTI above 12,000 through 18,000, contribution by the four age bands is 480+16%×(NTI−12,000);540+18%×(NTI−12,000);600+20%×(NTI−12,000);630+21%×(NTI−12,000). These simplify the exact effective-percentage formulas in Table 1, not a guessed interpolation. Above 18,000 the respective maxima are 7,680/8,640/9,600/10,080. [2026 Table 1](https://www.cpf.gov.sg/service/sfc/servlet.shepherd/document/download/069IW00000G4S1QYAV).
 
-Pensioners use Table 2: the same lower-band age rates, phase-in formulas 480+10%×excess;540+9%×excess;600+8%×excess;630+7.5%×excess, then 6% on NTI above 18,000 capped 5,760 for every age band. Pensioner classification must be established before using this table. [Table 2](https://www.cpf.gov.sg/service/sfc/servlet.shepherd/document/download/069IW00000G4S1QYAV).
+For a confirmed pensioner, CPF Board Table 2 gives the same lower-band age rates. The phase-in formulas are 480 + 10% × excess, 540 + 9% × excess, 600 + 8% × excess and 630 + 7.5% × excess. Above S$18,000 the rate is 6%, capped at S$5,760 for each age band. Confirm the classification with CPF Board and apply the public-officer conditions where relevant. [Table 2](https://www.cpf.gov.sg/service/sfc/servlet.shepherd/document/download/069IW00000G4S1QYAV) and [regulations 2 and 4](https://sso.agc.gov.sg/SL/CPFA1953-RG25?ProvIds=pr2-,pr4-).
 
 ### 4.1 Determine obligation 
 
-- **Legislation** , Primary framework: Central Provident Fund Act and Self-Employed Persons Regulations. The regulations could not be reopened in this pass; no fresh article-by-article reading is claimed.
+- **Legislation.** Apply the Central Provident Fund Act 1953, section 9A, and the Central Provident Fund (Self-Employed Persons) Regulations 1992. Check any approved reduction or statutory exemption before confirming the balance due.
 
 **Obligation condition table**
 
@@ -118,20 +118,21 @@ Pensioners use Table 2: the same lower-band age rates, phase-in formulas 480+10%
 
 - **SEP** , A person who earns trade, business, profession, or vocation income and is not an employee in respect of that income. Includes sole proprietors, freelancers, commission agents, taxi drivers, hawkers, and professionals.
 - **Platform workers exclusion** , Platform workers (from work year 2025): net earnings from platform work are excluded from NTI for MediSave computation and subject to separate CPF rules. Flag if client has platform work income.
+- Reconcile any Contribute As You Earn (CAYE) amounts under [regulation 8A](https://sso.agc.gov.sg/SL/CPFA1953-RG25?ProvIds=pr8A-&ViewType=Advance). Reduce the computed liability by the qualifying estimated contributions payable under section 9B. The section 9A balance is nil if they meet or exceed that liability.
 
 ### 4.2 NTI computation 
 
-- **Net Trade Income formula** , Net Trade Income (NTI) = Gross Trade Income - Allowable Business Expenses - Capital Allowances - Trade Losses  _(Assessable income reported in IRAS Form B)_
-- **NTI source** , Source: assessable income reported in IRAS Form B. NTI is determined by IRAS after assessment. MediSave is computed on assessed NTI, not self-reported estimates.
+- **Net Trade Income formula.** Gross trade income less allowable business expenses, capital allowances and trade losses, as assessed by IRAS.
+- **NTI source.** Use the IRAS assessment and reconcile the trade income reported on [Form B/B1](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/tax-obligations-of-self-employed-persons/filing-responsibilities-of-self-employed-persons-%28including-individual-partners%29). Use estimates until the assessment or CPF Board computation is available.
 
 ### 4.3 Rate application 
 
-- **Rate application rules** , For NTI > S$18,000: apply full rate per age band. For NTI > S$6,000 to S$12,000: apply lower rate per age band. For NTI > S$12,000 to S$18,000: use the official phase-in formula below and CPFB calculator. Do not guess or interpolate a percentage. The contribution is calculated on the full NTI, not just the portion above S$6,000.
+- Apply the lower rate above S$6,000 through S$12,000, the exact phase-in above S$12,000 through S$18,000 or the applicable full rate and cap above S$18,000. Use regulation 14 to disregard any fraction of a dollar in the calculated statutory contribution. Reconcile to the [CPF Board calculator and notice guidance](https://www.cpf.gov.sg/member/growing-your-savings/cpf-contributions/saving-as-a-self-employed-person). [Regulation 14](https://sso.agc.gov.sg/SL/CPFA1953-RG25?ProvIds=pr14-).
 
 ### 4.4 Contribution caps 
 
 - **CPF Annual Limit** , S$37,740 SGD (Limit relevant to voluntary CPF and relief; do not automatically subtract employment CPF to reduce mandatory SEP payable)
-- **Employee interaction with Annual Limit** , If also an employee: MediSave remains payable on qualifying NTI. A limitation application can be made where qualifying employment income excluding Additional Wages plus platform earnings exceeds the official maximum total annual income, S$96,000 from 2026. CPFB assesses it; do not apply an automatic contribution-headroom subtraction.
+- **Concurrent work.** The CPF Board's 2026 eligibility screen compares employment income excluding Additional Wages and platform work income with S$96,000. Regulation 9A provides a written application for an eligible SEP with CPF contributions made on employment wages or platform remuneration. The approved reduction caps the relevant aggregate contributions, excluding contributions on Additional Wages, at the age-specific Third Schedule amount. Obtain the CPF Board decision. [Regulation 9A and Third Schedule](https://sso.agc.gov.sg/SL/CPFA1953-RG25?ProvIds=pr9A-,Sc3-) and [CPF Board eligibility](https://www.cpf.gov.sg/service/article/what-are-the-conditions-for-applying-to-limit-my-medisave-payable-as-a-self-employed-person).
 - **BHS cap** , S$79,000 SGD for members below 65 or turning 65 in 2026; older cohorts keep their own fixed BHS (Caps the MediSave Account balance. Once MA reaches BHS, overflow goes to SA or RA depending on age and retirement conditions, then OA after the applicable retirement sum. The SEP does not get an exemption from contributing -- the contribution is still computed, but overflow is redirected.)
 
 
@@ -147,7 +148,7 @@ Identify the actual voluntary contribution/top-up route and age-based account al
 
 ### 6.3 MediShield Life interaction 
 
-- **MediShield Life interaction rule** , Keep MediShield Life and private Integrated Shield premium statements separate from contribution receipts. Whether a particular policy can use MA and its withdrawal limits require the actual policy and current healthcare guidance, which were not reopened. Do not infer universal MA funding or deductibility from a bank brand.
+- Keep premium statements separate from contribution receipts. The MediShield Life premium is payable from MediSave under section 4(2). For a private Integrated Shield Plan, check the Additional Withdrawal Limit for the private insurance component using the insured person's age and policy. [MediShield Life Scheme Act 2015](https://sso.agc.gov.sg/Act/MLSA2015?ProvIds=pr4-) and [CPF Board withdrawal limits](https://www.cpf.gov.sg/service/article/what-are-additional-withdrawal-limits-awls-for-integrated-shield-plan-ip-premiums).
 
 
 This is the deterministic pre-classifier for bank statement entries related to CPF/MediSave. Match by case-insensitive substring on the counterparty name or transaction description.
@@ -200,7 +201,7 @@ This is the deterministic pre-classifier for bank statement entries related to C
 
 - **EC 2** , Situation: Client works part-time as an employee and also has self-employment income. Resolution: Mandatory MediSave on NTI still applies. Do not automatically cap mandatory payable at the voluntary annual limit. Verify qualifying income, all contribution records and any CPFB limitation outcome.
 
-### EC 3 -- NTI in graduated band (S$12,001 to S$18,000) 
+### EC 3 -- NTI in graduated band (above S$12,000 to S$18,000)
 
 - **EC 3** , Situation: Client's NTI falls in the graduated rate band. Resolution: Use the CPFB Self-Employed MediSave Contribution Calculator. Do not guess or interpolate a percentage.
 
@@ -218,7 +219,7 @@ This is the deterministic pre-classifier for bank statement entries related to C
 
 ### EC 7 -- Foreign-sourced self-employment income 
 
-- **EC 7** , Situation: Client earns self-employment income from overseas sources. Resolution: MediSave is based on NTI as assessed by IRAS. If income is taxable in Singapore and included in Form B, it forms part of NTI. Flag for reviewer.
+- **EC 7.** If the client has overseas self-employment income, check whether it forms part of assessable trade income under regulation 2 and reconcile to the IRAS assessment. Flag cross-border cases for review.
 
 ### EC 8 -- Platform worker with mixed income 
 
@@ -278,7 +279,7 @@ Expected output: Rate = 10.50%. MediSave = S$4,200.00. Below the applicable 2026
 Input: Age 30, NTI = S$6,000.
 Expected output: No mandatory MediSave. Threshold is "more than S$6,000".
 
-### Test 6 -- NTI in Tier B (S$6,001 to S$12,000)
+### Test 6 -- NTI in the lower band (above S$6,000 to S$12,000)
 
 Input: Age 30, NTI = S$10,000.
 Expected output: Rate = 4.00%. MediSave = S$400.00.
@@ -297,14 +298,17 @@ name: Ordinary2026 and official phase-in contribution
 inputs:
   full_nti: 50000
   phase_nti: 15000
+  fractional_phase_nti: 12009
 steps:
   - ordinary: min(full_nti * 0.08, 7680)
   - graduated: 480 + 0.16 * (phase_nti - 12000)
   - effective_percentage: graduated * 100 / phase_nti
+  - fractional_graduated_payable: floor(480 + 0.16 * (fractional_phase_nti - 12000))
 expected:
   ordinary: 4000
   graduated: 960
   effective_percentage: 6.4
+  fractional_graduated_payable: 481
 ```
 
 ```oa-check
@@ -349,9 +353,9 @@ The last output preserves IRAS's YA 2026 example of 4,200 compulsory payment mad
 
 - NEVER compute MediSave without knowing the client's age as at 1 January of the contribution year
 - NEVER use estimated income for final MediSave computation -- MediSave is based on IRAS-assessed NTI
-- NEVER tell a client they owe no MediSave without confirming NTI is S$6,000 or below
-- NEVER guess a graduated percentage in the rate band (S$12,001 to S$18,000) -- use the CPFB calculator
-- NEVER advise that MediSave is optional once NTI exceeds S$6,000 -- it is mandatory
+- Confirm nil contributions for ordinary NTI of S$6,000 or below or under an applicable statutory exemption. For a balance after credits or reduction, obtain the CPF Board's determination.
+- Above S$12,000 through S$18,000, use the official graduated formula and the CPF Board calculator.
+- Above S$6,000 of qualifying NTI, determine the ordinary statutory liability and check any applicable exemption, reduction or credit.
 - NEVER ignore the CPF Annual Limit when computing total CPF contributions
 - NEVER conflate BHS (MediSave Account balance cap) with CPF Annual Limit (contribution cap)
 - NEVER include platform worker income in NTI for MediSave from work year 2025 onward without review
@@ -372,7 +376,7 @@ This skill and its outputs are provided for informational and computational purp
 | Item | Detail |
 | --- | --- |
 | Trigger | CPF Board issues its Notice of CPF Contributions for Self-employed Persons |
-| Deadline | 30 days from issue of the CPF Board contribution notice  [Official source](https://www.cpf.gov.sg/member/growing-your-savings/cpf-contributions/saving-as-a-self-employed-person) |
+| Deadline | 30 days from issue of the CPF Board contribution notice, or the end of any extended period the Board specifies. Payment remains due despite an assessment objection or appeal unless the Board extends the deadline. [Regulations 7A and 16](https://sso.agc.gov.sg/SL/CPFA1953-RG25?ProvIds=pr7A-,pr16-) |
 | Payment methods | PayNow and the Manage your MediSave payable form; use the actual approved GIRO/instalment arrangement |
 | Instalment plan | Request CPFB approval; the approved schedule determines dates, with no universal 12-month promise  [Official source](https://www.cpf.gov.sg/member/growing-your-savings/cpf-contributions/saving-as-a-self-employed-person) |
 
@@ -380,7 +384,7 @@ This skill and its outputs are provided for informational and computational purp
 
 ### 5.2 Penalties for non-contribution 
 
-After repeated reminders CPFB may issue a Letter of Demand and Offer for outstanding contributions and a composition amount, followed by a Notice to Attend Court if unpaid. Its SEP guidance distinguishes first offenders (up to S$5,000 or six months or both) and subsequent offences (up to S$10,000 or 12 months or both). A composition offer is not a court fine. [CPFB SEP enforcement](https://www.cpf.gov.sg/service/article/what-if-self-employed-persons-do-not-respond-to-the-notice-of-cpf-contributions-for-self-employed-persons). Do not import employer payroll interest rules or an unsupported travel restriction into an SEP notice. Exact old interest/travel claims remain under Not yet confirmed.
+After reminders, the CPF Board may offer composition and issue a Notice to Attend Court if the case remains unresolved. On conviction for an applicable offence, the general maxima are S$5,000, 6 months' imprisonment or both. A repeat conviction for the same offence can carry S$10,000, 12 months or both. Section 9(2) provides daily interest on overdue self-employed contributions at the prescribed rate and start date, subject to the Board's remission power. Verify the applicable rate and date before calculating interest. [CPF Act sections 9, 58 and 61](https://sso.agc.gov.sg/Act/CPFA1953?ProvIds=pr9-,pr58-,pr61-) and [CPF Board SEP enforcement](https://www.cpf.gov.sg/service/article/what-if-self-employed-persons-do-not-respond-to-the-notice-of-cpf-contributions-for-self-employed-persons).
 
 
 
@@ -400,11 +404,14 @@ After repeated reminders CPFB may issue a Letter of Demand and Offer for outstan
 | Read for SEP/NTI definition, tax-authority declarations, CPFB notice, 30-day payment, PayNow, GIRO/licence interaction, CAYE and advance contributions. | https://www.cpf.gov.sg/member/growing-your-savings/cpf-contributions/saving-as-a-self-employed-person |2026-11-14 |
 | Read for pre/from-YA 2026 distinction, full compulsory relief at zero NTI, voluntary limits, concurrent employment and examples 1 to 5, actual paid-year timing. | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund-%28cpf%29-relief-for-self-employed-employee-who-is-also-self-employed |2026-11-14 |
 | Read for 2026 amount 79,000, age 65 fixation and older cohort table. | https://www.cpf.gov.sg/service/article/what-is-the-basic-healthcare-sum |2026-11-14 |
+| Read targeted regulations 2, 2A, 3, 4, 7A, 8A, 9A, 13–16, 17AB and 25 and First and Third Schedules for threshold, age, rounding, deadlines, reduced contributions and exemption. | https://sso.agc.gov.sg/SL/CPFA1953-RG25?ProvIds=pr3-,pr7A-,pr8A-,pr9A-,pr14-,pr16-,pr25-,Sc1-,Sc3- | 2026-11-24 |
+| Read sections 9, 9A, 58 and 61 for contributions, late interest authority and general offence penalties. | https://sso.agc.gov.sg/Act/CPFA1953?ProvIds=pr9-,pr9A-,pr58-,pr61- | 2026-11-24 |
+| Read the amended compulsory and voluntary relief in section 39 for YA 2026 onwards. | https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr39- | 2026-11-24 |
+| Read section 4 for premium payment and CPF Board guidance for the private component. | https://sso.agc.gov.sg/Act/MLSA2015?ProvIds=pr4- | 2026-11-24 |
 | Read for continuing contribution liability and SA/RA then OA overflow conditions. | https://www.cpf.gov.sg/service/article/do-i-still-have-to-contribute-to-medisave-as-a-self-employed-person-even-though-my-medisave-balance-has-reached-the-basic-healthcare-sum-bhs |2026-11-14 |
 | Read for maximum qualifying annual income 96,000 from 2026, Additional Wages exclusion, platform timing and CPFB application. | https://www.cpf.gov.sg/service/article/what-are-the-conditions-for-applying-to-limit-my-medisave-payable-as-a-self-employed-person |2026-11-14 |
 | Read for SEP demand/composition/NTA and first/repeat fine/imprisonment maxima. | https://www.cpf.gov.sg/service/article/what-if-self-employed-persons-do-not-respond-to-the-notice-of-cpf-contributions-for-self-employed-persons |2026-11-14 |
 | Read for flexible instalment handling and court as last resort, no promised waiver. | https://www.cpf.gov.sg/service/article/why-does-cpf-board-take-self-employed-persons-to-court-for-not-contributing-to-their-medisave |2026-11-14 |
-
 | Read for 2026 BHS of 79,000 below age65 and fixed turn65 cohort; older cohorts unchanged. | https://www.moh.gov.sg/newsroom/cpf-interest-rates-from-1-january-to-31-march-2026-and-basic-healthcare-sum-for-2026/ | 2026-11-14 |
 
-Not yet confirmed: exact rounding on an individual CPF notice and an approved concurrent-income limitation; current SEP late-interest amount (old 1.5%monthly/18%annual not certified), travel-restriction power and contact number formerly 1800-227-1188; maximum instalment term formerly typically 12 months; AXS/internet banking/service-centre availability for this exact liability; pensioner classification for undocumented facts, detailed voluntary allocation/refund/top-up routes and healthcare premium/withdrawal limits. Self-Employed Persons Regulations access returned 403, so no new statutory article reading is claimed. Ordinary sourced 2026 computations remain usable.
+Not yet confirmed: the applicable prescribed SEP late-interest rate and start date, any travel restriction, a universal maximum instalment term, AXS or other alternative payment channels for this liability, and a client's actual pensioner status, notices, approved reductions, voluntary allocation or refund facts.
