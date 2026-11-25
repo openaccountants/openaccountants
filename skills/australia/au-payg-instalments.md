@@ -28,11 +28,11 @@ domain: payroll
 | Portal | Online services for business, or ATO online services through myGov for sole traders |
 | Currency | AUD only |
 | Entry thresholds | Instalment income of $4,000 or more, tax payable on the latest assessment of $1,000 or more, and notional tax of $500 or more (individuals and trusts) |
-| Exit thresholds | Common automatic exit triggers are notional tax under $500, business and investment income under $4,000 for residents or $1 for non-residents, assessed tax debt under $1,000 after adjustment for instalments and voluntary payments, or a rate of 0.0%. See Section 8 for other triggers |
+| Exit thresholds | Common automatic exit triggers are notional tax under $500, business and investment income under $4,000 for residents or $1 for non-residents, assessed tax debt under $1,000 after adjustment for instalments and voluntary payments, or a rate of 0.0%. See Section 8 for other triggers ([ATO Stopping PAYG instalments](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/stopping-payg-instalments)) |
 | Methods | Instalment rate (T1/T2/T11) or instalment amount (T7) |
 | GDP adjustment factor | 5% for 2026-27 (6% in 2024-25); set each year and applied to the instalment amount method only |
-| Variation threshold | A varied rate below 85% of the benchmark rate or an estimated benchmark tax below 85% of the actual benchmark tax can trigger shortfall GIC |
-| GIC rate | Annualised base rate plus 7 percentage points. Divide by the number of days in the calendar year for the daily rate |
+| Variation threshold | A varied rate below 85% of the benchmark rate or an estimated benchmark tax below 85% of the actual benchmark tax can trigger shortfall GIC ([ATO vary PAYG instalments](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments); [TAA Sch 1 ss 45-230, 45-232](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html)) |
+| GIC rate | Annualised base rate plus 7 percentage points. Divide by the number of days in the calendar year for the daily rate ([TAA s 8AAD](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html); [ATO GIC](https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/interest-we-charge/general-interest-charge)) |
 | Contributor | Open Accountants Community |
 | Validation date | Pending |
 
@@ -137,11 +137,25 @@ Q1 business income = $42,000. Interest income = $800. ATO rate (T2) = 8.50%.
 | T2 (instalment rate) | 8.50% |
 | T11 (instalment payable) | $3,638 |
 
+```oa-check
+name: AU PAYG instalment rate method Q1 calculation
+inputs:
+  business_income: 42000
+  interest_income: 800
+  rate_pct: 8.50
+steps:
+  - instalment_income: business_income + interest_income
+  - instalment_payable: pct(instalment_income, rate_pct)
+expected:
+  instalment_income: 42800
+  instalment_payable: 3638
+```
+
 ### Example 2 -- Instalment amount method
 
 Input: ATO-notified instalment amount (T7) = $3,150 per quarter.
 
-Output: Report T7 = $3,150 on BAS. Pay by BAS due date.
+Output: Report T7 = $3,150/quarter on BAS. Pay by BAS due date.
 
 ### Example 3 -- Variation of instalment rate
 
@@ -203,7 +217,7 @@ Classification: $5,800 activity statement payment. Obtain the BAS and reconcile 
 
 ### 6.2 Late BAS lodgement penalty
 
-- **Late BAS lodgment penalty**. The base penalty is 1 unit for each 28-day period or part, up to 5 units. The unit is $364 from 1 July 2026, giving a base maximum of $1,820. It was $330 from 7 November 2024 to 30 June 2026. Multipliers of 2 or 5 can apply under the medium or large withholder, assessable income or GST turnover tests. Check the registered-agent exception where applicable. [ATO penalty units](https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/penalty-units) · [ATO failure to lodge penalty](https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty)
+- **Late BAS lodgment penalty**. The base penalty is 1 unit for each 28-day period or part, up to 5 units. The penalty unit is $364 a unit from 1 July 2026, giving a base maximum of $1,820. It was $330 from 7 November 2024 to 30 June 2026. Multipliers of 2 or 5 can apply under the medium or large withholder, assessable income or GST turnover tests. Check the registered-agent exception where applicable. [ATO penalty units](https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/penalty-units) · [ATO failure to lodge penalty](https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty)
 
 ### 6.3 Safe harbour
 
@@ -265,6 +279,25 @@ Input: ATO rate 12%. Varied to 8%. Benchmark rate 10%. Instalment income for thi
 
 Expected: The threshold is 85% × 10% = 8.5%. The varied rate of 8% falls below it. The lower of 12% and 10% is 10%, so the discrepancy is 2 percentage points. GIC applies to $10,000 × 2% = $200 before any remission.
 
+```oa-check
+name: AU PAYG instalment variation safe harbour 85% check
+inputs:
+  ato_rate_pct: 12
+  varied_rate_pct: 8
+  benchmark_rate_pct: 10
+  instalment_income: 10000
+steps:
+  - safe_harbour_pct: pct(benchmark_rate_pct, 85)
+  - comparison_rate_pct: min(ato_rate_pct, benchmark_rate_pct)
+  - discrepancy_pct: comparison_rate_pct - varied_rate_pct
+  - gic_base_amount: pct(instalment_income, discrepancy_pct)
+expected:
+  safe_harbour_pct: 8.5
+  comparison_rate_pct: 10
+  discrepancy_pct: 2
+  gic_base_amount: 200
+```
+
 ### Test 5 -- First year
 
 Input: New sole trader with no instalment rate in force and no voluntary registration.
@@ -283,6 +316,14 @@ Expected: $15,000 credit less $12,000 assessed tax gives $3,000 refunded or offs
 - Apply the GDP adjustment to the statutory base-year income figures when checking T7
 - NEVER conflate PAYG instalments (T labels) with PAYG withholding (W labels)
 - NEVER present instalment figures as definitive -- the ATO notification is authoritative
+
+## Sources
+
+- [ATO, Starting PAYG instalments](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/starting-payg-instalments) and [Stopping PAYG instalments](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/stopping-payg-instalments) (read 2026-11-22)
+- [ATO, Calculate your PAYG instalments](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/calculate-your-payg-instalments) and [How to vary your PAYG instalments](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments) (read 2026-11-22)
+- [ATO, 2026-27 GDP adjustment](https://softwaredevelopers.ato.gov.au/GDPupliftfactor) and [2024-25 GDP adjustment](https://softwaredevelopers.ato.gov.au/gdp-adjustment-2024-25-gst-and-payg-instalments) (read 2026-11-22)
+- [TAA 1953 Schedule 1, Division 45](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html) and [s 8AAD GIC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) (read 2026-11-22)
+- [ATO penalty units](https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/penalty-units), [failure to lodge penalty](https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty) and [general interest charge](https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/interest-we-charge/general-interest-charge) (read 2026-11-22)
 
 ## Disclaimer
 
