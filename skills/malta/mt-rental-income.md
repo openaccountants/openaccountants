@@ -73,7 +73,7 @@ Built from the law: not yet approved by an accountant. Working paper only.
 | Ordinary individual statutory return/settlement |30 June 2027 for 2026 income | No 2027-specific online concession assumed; company/other categories need their applicable date | S.L. 372.16 rules 2(c)(ii),5(b): https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2 |
 | Interest on late tax | 0.6% for every month or part of a month, capped at the tax | Tax payable on or after 31 August 2022 | Cap. 372 art. 44(2A): https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b |
 | VAT on licensed tourist accommodation | 7% | Article 10 registered supplier; where the price includes other goods or services, 80% of the price is accommodation and 20% the other supplies | Cap. 406 Eighth Schedule item 1: https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 |
-| Records | At least 9 years after completion of the relevant transactions/acts/operations | Trade/business/profession/vocation records; exception where Companies Act article 26,163(5) or 324(2) has effect | Cap. 372 art. 19(5): https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b |
+| Records | At least 9 years after completion of the relevant transactions/acts/operations | Trade/business/profession/vocation records; exception where Companies Act article 26, 163(5) or 324(2) has effect | Cap. 372 art. 19(5): https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b |
 
 ### What counts as rent
 
