@@ -3,9 +3,9 @@ name: china-references
 description: Use this file to find the official primary sources for mainland China tax work in tax year 2026 and to route a question to the right China skill. It lists the State Taxation Administration, National People's Congress and Ministry of Finance pages the China pack relies on, and two open-source projects that are reference-only (no licence). Built from the law, not reviewed by an accountant.
 jurisdiction: CN
 tax_year: 2026
-tax_year_notes: "Calendar tax year 2026. A routing and references file; it carries no rates."
-last_updated: 2026-11-14
-version: "2.0"
+tax_year_notes: "Calendar tax year 2026. The router notes selected individual income tax figures and links to the full rules."
+last_updated: 2026-11-27
+version: "2.1"
 category: international
 tier: 2
 type: router
@@ -33,7 +33,7 @@ type: router
 - Repository: [cn/individual-income-tax-law](https://github.com/cn/individual-income-tax-law)
 - Licence: no explicit licence
 - Language: Chinese
-- Scope: a copy of the text of 中华人民共和国个人所得税法 (PRC Individual Income Tax Law): the seven-band scale (3% to 45%) and the special deductions.
+- Scope: a copy of the PRC Individual Income Tax Law (中华人民共和国个人所得税法), including the 7-band comprehensive income scale from 3% to 45% and the statutory deduction categories.
 - Use: reference only; validate against the STA copy of the law (see Sources), which is the authority. Cannot incorporate code directly.
 
 #### personal-income-tax-calculator
@@ -42,11 +42,11 @@ type: router
 - Licence: no explicit licence
 - Language: JavaScript, Chinese
 - Scope: a 2019 calculator for the cumulative withholding method with the 专项附加扣除 (special additional deductions).
-- Use: reference only for the cumulative withholding logic. Its deduction amounts predate the 2023 increase (2,000 yuan child and infant, 3,000 yuan elderly care), so do not take figures from it. Cannot incorporate code directly.
+- Use: reference only for the cumulative withholding logic. Its deduction amounts predate the 2023 increase. The current monthly standard is CNY 2,000 per eligible child for either education or care of a child under 3. Parents can allocate the whole deduction to one parent or split it equally. The elderly care deduction is CNY 3,000 a month for an only child. Other claimants share CNY 3,000 with their siblings, capped at CNY 1,500 each. Use `cn-iit` for the full eligibility rules. Cannot incorporate code directly.
 
 ## When to refuse or refer
 
-- A question about Hong Kong, Macao or Taiwan: those are separate tax systems; use the `hong-kong` and `taiwan` packs.
+- A question about Hong Kong, Macao or Taiwan: those are separate tax systems; use the corresponding `hong-kong`, `macau` or `taiwan` pack.
 - A figure that only appears in a third-party copy or a repository: do not use it until it is found on an official page.
 - A question the China pack does not cover: say so and refer to a qualified professional in China.
 
@@ -57,4 +57,4 @@ type: router
 | STA Shanghai policy library, PRC Individual Income Tax Law. Read for the official text and the status line format | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html | 2026-11-14 |
 | Ministry of Finance, State Council 国发〔2023〕13号. Read for the 2023 increase in the child, infant and elderly care deductions | https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202308/t20230831_3905100.htm | 2026-11-14 |
 
-Not yet confirmed: none. This file carries no rates; each China skill lists its own open items.
+Not yet confirmed: see each China skill for its open items.
