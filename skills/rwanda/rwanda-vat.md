@@ -1,17 +1,17 @@
 ---
 name: rwanda-vat
 description: "Rwanda VAT for 2026: 18% and 0%, registration at FRW 20 million or FRW 5 million in three months, quarterly filing at or below FRW 200 million, foreign services, EIS invoices under the September 2026 order, online supplies under the April 2026 order, the end of the industrial exemption and the VAT deferral facility, and how to file in E-Tax."
-version: 2.2
+version: 2.3
 jurisdiction: RW
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 ---
 
-# Rwanda VAT v2.2
+# Rwanda VAT v2.3
 
 Tax year 2026. Law 049/2023 as amended by Law 009/2025.
 
@@ -104,7 +104,7 @@ An invoice not recognised on purchase upload is saved for the next period. Steps
 
 | Fault | Consequence | Source |
 |---|---|---|
-| Late declaration, fixed fine (Law 020/2023 art 81) | FRW 50,000 for a non-commercial person or turnover over FRW 2,000,000 up to FRW 20,000,000; FRW 300,000 for a public institution or non-profit with turnover over FRW 20,000,000; FRW 500,000 for a notified large taxpayer | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf |
+| Late declaration, fixed fine (Law 020/2023 art 81) | FRW 50,000 for a non-commercial person or turnover over FRW 2,000,000 up to FRW 20,000,000; FRW 300,000 for a public institution, a non-profit or a taxpayer with turnover over FRW 20,000,000; FRW 500,000 for a notified large taxpayer | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf |
 | Repeat fault within 2 years | Fine doubled; third time, four times | same |
 | Certified statements not filed when required | FRW 500,000 every month until filed | same |
 | Late declaration and payment (art 82) | 20% of tax up to 30 days, 40% from day 31 to 60, 60% after 60 days | same |
@@ -179,7 +179,7 @@ expected:
 | RRA Commissioner General guidelines, VAT deferral facility, July 2026: read in full, all 6 pages of the scan, for the eligibility rules, the RWF 10,000,000 import VAT minimum and the 1 August 2026 start | https://www.rra.gov.rw/fileadmin/Folder_for_2025/CG__s_Guidelines_For_Implementation_of_VAT-July_2026.pdf | 2026-11-14 |
 | RRA, VAT registration page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/value-added-tax/default-title-1 | 2026-11-14 |
 | RRA, Declare VAT page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/value-added-tax/penalties-and-interest | 2026-11-14 |
-| Law 020/2023 on tax procedures: read for arts 15, 35, 78, 80-88 | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-14 |
+| Law 020/2023 on tax procedures: read for arts 15, 35, 78, 80-88, 104 (Ikinyarwanda text of art 81) | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-26 |
 | RRA Tax Handbook 2025: read for E-Tax steps, real regime, PAYE, VAT declaration chapters | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-14 |
 
 Not yet confirmed: three old file lines not re-read in the law, kept as prompts only: 18% at market value on stock held at cessation; a supply to a special economic zone being zero-rated with a certificate; handwritten non-EBM invoices giving no input credit; the 20,000,000 and 5,000,000 thresholds are from the RRA page; the article of the law was not found in our extract; CG Instructions 001/2023 predate Law 049/2023; RRA Pay PAYE page shows March to May style quarters for PAYE, which differ from the Instructions, so confirm with RRA before relying on either; old return boxes A1-A7, B1-B9, C1-C3 could not be matched to any page read and are removed from the body; the old supplier pattern treatments of REG, WASAC and BK are working defaults; the medical scheme payment date is not a VAT point; Order 003/24 on foreign service authorisation was not read; Order 001/25 list of exempt financial services was only partly extracted.
