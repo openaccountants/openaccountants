@@ -213,15 +213,17 @@ Exact applicable official-source reads completed for the separate FBAR/Form 8938
 
 | Official source and scope used | URL | Read on |
 | --- | --- | --- |
-| FinCEN FBAR instructions: gateway, annual maxima, location, FX, ordinary dates | https://www.fincen.gov/system/files/shared/FBAR%20Line%20Item%20Filing%20Instructions.pdf | 2026-11-26 |
-| IRS Form 8938 continuous-use instructions: gateway, thresholds, interests, US-payer exclusion, filing and penalties | https://www.irs.gov/instructions/i8938 | 2026-11-26 |
-| 31 CFR 1010.350: persons, accounts, title/signature and modified detail | https://www.ecfr.gov/current/title-31/section-1010.350 | 2026-11-26 |
-| 26 CFR 1.6038D-2: joint-abroad threshold and joint ownership | https://www.ecfr.gov/current/title-26/section-1.6038D-2 | 2026-11-26 |
-| 26 CFR 1.6038D-5: valuation and currency conditions | https://www.ecfr.gov/current/title-26/section-1.6038D-5 | 2026-11-26 |
-| IRM 4.26.16: transfer reconciliation, electronic filing, penalty unit/discretion and inflation applicability | https://www.irs.gov/irm/part4/irm_04-026-016 | 2026-11-26 |
-| 31 CFR 1010.420: records and criminal-proceeding exclusion | https://www.ecfr.gov/current/title-31/section-1010.420 | 2026-11-26 |
-| 31 CFR 1010.821: assessment-dated adjusted ceilings | https://www.ecfr.gov/current/title-31/section-1010.821 | 2026-11-26 |
-| 31 USC 5321: statutory ceilings and assessment period | https://uscode.house.gov/us/usc/119-124/t31/s5321/ | 2026-11-26 |
-| 26 USC 6501: information-failure and omitted-income assessment rules | https://uscode.house.gov/us/usc/119-124/t26/s6501/ | 2026-11-26 |
-| FIN-2025-NTC3: 2025/prior-notice-period extension; individual eligibility held | https://www.fincen.gov/system/files/2025-12/FBAR-FBAR-Filing-Requirement-for-Certain-Financial-Professionals.pdf | 2026-11-26 |
-| Circular 230 section 10.37: practitioner written-advice standard | https://www.irs.gov/pub/irs-pdf/pcir230.pdf | 2026-11-26 |
+| FinCEN FBAR instructions, read for gateway, annual maxima, location, FX, ordinary dates | https://www.fincen.gov/system/files/shared/FBAR%20Line%20Item%20Filing%20Instructions.pdf | 2026-11-26 |
+| IRS Form 8938 continuous-use instructions, read for gateway, thresholds, interests, US-payer exclusion, filing and penalties | https://www.irs.gov/instructions/i8938 | 2026-11-26 |
+| 31 CFR 1010.350, read for persons, accounts, title/signature and modified detail | https://www.ecfr.gov/current/title-31/section-1010.350 | 2026-11-26 |
+| 26 CFR 1.6038D-2, read for joint-abroad threshold and joint ownership | https://www.ecfr.gov/current/title-26/section-1.6038D-2 | 2026-11-26 |
+| 26 CFR 1.6038D-5, read for valuation and currency conditions | https://www.ecfr.gov/current/title-26/section-1.6038D-5 | 2026-11-26 |
+| IRM 4.26.16, read for transfer reconciliation, electronic filing, penalty unit/discretion and inflation applicability | https://www.irs.gov/irm/part4/irm_04-026-016 | 2026-11-26 |
+| 31 CFR 1010.420, read for records and criminal-proceeding exclusion | https://www.ecfr.gov/current/title-31/section-1010.420 | 2026-11-26 |
+| 31 CFR 1010.821, read for assessment-dated adjusted ceilings | https://www.ecfr.gov/current/title-31/section-1010.821 | 2026-11-26 |
+| 31 USC 5321, read for statutory ceilings and assessment period | https://uscode.house.gov/us/usc/119-124/t31/s5321/ | 2026-11-26 |
+| 26 USC 6501, read for information-failure and omitted-income assessment rules | https://uscode.house.gov/us/usc/119-124/t26/s6501/ | 2026-11-26 |
+| FIN-2025-NTC3, read for 2025/prior-notice-period extension; individual eligibility held | https://www.fincen.gov/system/files/2025-12/FBAR-FBAR-Filing-Requirement-for-Certain-Financial-Professionals.pdf | 2026-11-26 |
+| Circular 230 section 10.37, read for practitioner written-advice standard | https://www.irs.gov/pub/irs-pdf/pcir230.pdf | 2026-11-26 |
+
+Not yet confirmed: the applications expressly held above, including special status, employer/notice eligibility, pensions, entity/trust look-through, remediation and assessment expiry. No 2026 year-end currency rate or future assessment-year penalty adjustment is assumed. These points are not usable filing conclusions.
