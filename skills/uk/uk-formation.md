@@ -65,10 +65,10 @@ Current schedule checked 26 November 2026, updated 25 September 2026. Blank chan
 | Filing | Online | Software | Paper | Source |
 |---|---|---|---|---|
 | Company incorporation | £100 | £100 | £124 | [fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees) |
-| Company same-day incorporation | — | £156 | — | [fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees) |
+| Company same-day incorporation | Not offered | £156 | Not offered | [fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees) |
 | Company confirmation statement | £50 | £50 | £110 | [fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees) |
-| LLP incorporation | — | £100 | £124 | [fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees) |
-| LLP same-day incorporation | — | £156 | — | [fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees) |
+| LLP incorporation | Not offered | £100 | £124 | [fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees) |
+| LLP same-day incorporation | Not offered | £156 | Not offered | [fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees) |
 
 ### 4. LLP formation
 
@@ -220,3 +220,40 @@ Diary the source-backed registration and first filing dates above. Subsequent ta
 ## Sources
 
 Official sources are linked beside each operative rule and case. Legislation prevails over guidance; sources were read on 26 November 2026, with unchanged tax provisions reused from the completed UK income-tax, National Insurance and Corporation Tax claims reads of that date. The Companies House fee schedule is dated 25 September 2026. Future changes and unresolved specialist conditions are explicitly referred, rather than presented as current instructions.
+
+- https://www.gov.uk/become-sole-trader; read 2026-11-26
+- https://www.gov.uk/set-up-business-partnership/print; read 2026-11-26
+- https://www.gov.uk/limited-company-formation/print; read 2026-11-26
+- https://www.gov.uk/guidance/set-up-and-run-a-limited-liability-partnership-llp; read 2026-11-26
+- https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income; read 2026-11-26
+- https://www.gov.uk/register-for-self-assessment; read 2026-11-26
+- https://www.legislation.gov.uk/ukpga/1970/9/section/7; read 2026-11-26
+- https://www.legislation.gov.uk/ukpga/2006/46/section/155; read 2026-11-26
+- https://www.legislation.gov.uk/ukpga/2006/46/section/9; read 2026-11-26
+- https://www.gov.uk/guidance/people-with-significant-control-pscs; read 2026-11-26
+- https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees; read 2026-11-26
+- https://www.legislation.gov.uk/ukpga/2000/12/section/2; read 2026-11-26
+- https://www.legislation.gov.uk/ukpga/2000/12/section/8; read 2026-11-26
+- https://www.gov.uk/government/news/identity-verification-is-making-the-uks-company-register-more-trustworthy; read 2026-11-26
+- https://www.gov.uk/guidance/verifying-your-identity-for-companies-house; read 2026-11-26
+- https://www.gov.uk/guidance/when-you-need-to-verify-your-identity-for-companies-house; read 2026-11-26
+- https://www.legislation.gov.uk/ukpga/2004/12/section/55; read 2026-11-26
+- https://www.legislation.gov.uk/ukpga/2009/4/section/9; read 2026-11-26
+- https://www.gov.uk/register-employer; read 2026-11-26
+- https://www.gov.uk/vat-registration/when-to-register; read 2026-11-26
+- https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts; read 2026-11-26
+- https://www.gov.uk/guidance/confirmation-statement-guidance; read 2026-11-26
+- https://www.gov.uk/company-tax-returns; read 2026-11-26
+- https://www.gov.uk/pay-corporation-tax; read 2026-11-26
+- https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax; read 2026-11-26
+- https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax; read 2026-11-26
+- https://www.legislation.gov.uk/ukpga/2006/46/section/113; read 2026-11-26
+- https://www.gov.uk/income-tax-rates; read 2026-11-26
+- https://www.gov.uk/self-employed-national-insurance-rates; read 2026-11-26
+- https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027; read 2026-11-26
+- https://www.legislation.gov.uk/uksi/2001/1004/regulation/8; read 2026-11-26
+- https://www.legislation.gov.uk/ukpga/2010/4/section/18A; read 2026-11-26
+- https://www.gov.uk/corporation-tax-rates; read 2026-11-26
+- https://www.gov.uk/tax-on-dividends; read 2026-11-26
+
+Not yet confirmed: the exceptional and specialist points explicitly referred above. Their previous conclusions are non-usable pending partner-accountant advice.
