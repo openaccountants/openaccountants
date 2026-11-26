@@ -287,9 +287,9 @@ Completed SA100 / SA103 / National Insurance proof reads are reused only for ide
 
 | Official source and part read | URL | Read / applicability |
 |---|---|---|
-| TMA 1970 s.59A, full operative section: tests, dates, reductions, amendments, penalties, coding, directions | https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml | 2026-11-26 |
-| TMA 1970 s.59B(1)-(8), balance, credits and notice/payment exceptions | https://www.legislation.gov.uk/ukpga/1970/9/section/59B/data.xml | 2026-11-26 |
-| TMA 1970 s.86(1)-(9), interest and reduction/repayment conditions | https://www.legislation.gov.uk/ukpga/1970/9/section/86/data.xml | 2026-11-26 |
+| Read section 59A of TMA 1970, full operative section: tests, dates, reductions, amendments, penalties, coding, directions | https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml | 2026-11-26 |
+| Read section 59B(1)-(8) of TMA 1970, balance, credits and notice/payment exceptions | https://www.legislation.gov.uk/ukpga/1970/9/section/59B/data.xml | 2026-11-26 |
+| Read section 86(1)-(9) of TMA 1970, interest and reduction/repayment conditions | https://www.legislation.gov.uk/ukpga/1970/9/section/86/data.xml | 2026-11-26 |
 | SI 1996/1654 regs 3/4 original text, read together with amending instruments below | https://www.legislation.gov.uk/uksi/1996/1654/regulation/3/data.xml ; https://www.legislation.gov.uk/uksi/1996/1654/regulation/4/data.xml | 2026-11-26; original text alone is not the current threshold |
 | SI 2008/838 regs 1/2 and SI 1997/2491 regs 1/2, commencement and threshold/proportion amendments | https://www.legislation.gov.uk/uksi/2008/838/made/data.xml ; https://www.legislation.gov.uk/uksi/1997/2491/made/data.xml | 2026-11-26 |
 | HMRC POA guidance, all calculation, first-year, reduction and interest sections | https://www.gov.uk/understand-self-assessment-bill/payments-on-account | SA100-41 completed read 2026-11-26 reused; operative guidance also read here |
@@ -305,3 +305,5 @@ Completed SA100 / SA103 / National Insurance proof reads are reused only for ide
 | MTD penalties: commencement, POA exclusion, payment-plan and regime conditions; detailed charge computations referred | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-11-26 |
 | Marriage Allowance transferor allowance / recipient reduction, no reversed tax effect | https://www.gov.uk/marriage-allowance ; https://www.legislation.gov.uk/ukpga/2007/3/section/55B/data.xml | Completed SA100-55 read 2026-11-26 reused |
 | Original case voluntary Class 2 rates: 2025-26 GBP 3.50, 2026-27 GBP 3.65; eligibility not inferred | https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions | Completed NI23/53 reads 2026-11-26 reused |
+
+Not yet confirmed: no unresolved claim is offered as usable guidance. The specialist matters identified above, actual HMRC interest day counts and any future rate periods require partner-accountant confirmation.
