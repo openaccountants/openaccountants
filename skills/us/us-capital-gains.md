@@ -18,59 +18,88 @@ type: computation
 
 Long-term gain generally receives 0%, 15% or 20% treatment; short-term gain is ordinary income. The rate depends on total taxable income. NIIT is a separate calculation. Special gain categories and exclusions require the conditions below.
 
-## Scope and records
+## Scope
 
 For US citizens and resident aliens filing Form 1040: investment shares, funds, bonds and digital assets, collectibles, home sales and investment real estate. Federal only. Nonresident and dual-status years, estates/trusts, corporations and specialist transactions go to the referral table.
 
+## Ask the client first
+
 Obtain the sale year and filing status, acquisition and sale trade dates, acquisition method (purchase, gift, inheritance or exchange), adjusted basis and supporting Forms 1099-B/1099-DA, reinvested dividends and other adjustments, asset type, ordinary taxable income, MAGI, net investment income and prior capital loss carryovers. For wash sales, inspect all accounts, spouse/control-company purchases and IRA/Roth IRA purchases. For home sales, obtain ownership/use dates, prior excluded sales, depreciation and nonqualified-use history and reasons for an early sale. For exchanges obtain transfer/identification dates, locations and intermediary arrangements; for installment sales obtain the payment schedule, interest, related-party facts and recapture information.
 
-## Compute the gain and holding period
+## The method, step by step
+
+### Compute the gain and holding period
 
 1. Confirm capital-asset treatment. Gain/loss is amount realized minus adjusted basis. Personal-use losses, including a home or car, are not deductible ([Topic 409](https://www.irs.gov/taxtopics/tc409)).
 2. Generally, more than 1 year is long-term; 1 year or less is short-term. Count from the day after acquisition through disposal. For securities traded on an established market use trade dates, not settlement dates ([Pub. 550, Holding Period](https://www.irs.gov/publications/p550)). A gift using the donor's adjusted basis includes the donor's holding period; an FMV-basis gift starts the day after the gift. Inherited property is generally long-term regardless of actual holding, but property from a 2010 decedent whose executor elected Form 8939 needs separate treatment: Check this point with one of our partner accountants.
 3. Apply wash-sale adjustments before netting. Net short-term items together and long-term items together, including carryovers of the same character; then combine the two classes. Net capital gain means net long-term gain exceeding net short-term loss ([Pub. 550, Reporting Capital Gains and Losses](https://www.irs.gov/publications/p550)).
 
-## Rates: use the sale year's table
+### Rates, bands and thresholds
 
 These ceilings measure **total taxable income**, after deductions. They are not gain allowances. For ordinary 0/15/20 gain and qualified dividends, ordinary taxable income fills the bands first; preferential income sits above it. Apply 0% through the zero-rate ceiling, 15% above that through the 15% ceiling, and 20% above the latter.
 
-| Filing status | 2026 zero-rate ceiling | 2026 15% ceiling | Source |
-| --- | --- | --- | --- |
-| Joint / qualifying surviving spouse | USD 98,900 | USD 613,700 | [Rev. Proc. 2025-32 §4.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Married filing separately | USD 49,450 | USD 306,850 | [Rev. Proc. 2025-32 §4.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Head of household | USD 66,200 | USD 579,600 | [Rev. Proc. 2025-32 §4.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Single | USD 49,450 | USD 545,500 | [Rev. Proc. 2025-32 §4.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Item | Amount, 2026 | Source |
+| --- | --- | --- |
+| Long-term gain and qualified dividends: maximum zero rate amount, married filing jointly and surviving spouse | USD 98,900 | [Rev. Proc. 2025-32, section 4.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Maximum 15 percent rate amount, married filing jointly and surviving spouse (20% above) | USD 613,700 | [Rev. Proc. 2025-32, section 4.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Maximum zero rate amount, married filing separately | USD 49,450 | [Rev. Proc. 2025-32, section 4.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Maximum 15 percent rate amount, married filing separately | USD 306,850 | [Rev. Proc. 2025-32, section 4.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Maximum zero rate amount, head of household | USD 66,200 | [Rev. Proc. 2025-32, section 4.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Maximum 15 percent rate amount, head of household | USD 579,600 | [Rev. Proc. 2025-32, section 4.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Maximum zero rate amount, all other individuals (single) | USD 49,450 | [Rev. Proc. 2025-32, section 4.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Maximum 15 percent rate amount, all other individuals (single) | USD 545,500 | [Rev. Proc. 2025-32, section 4.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Rates on adjusted net capital gain | 0%, 15%, 20% | [26 U.S.C. 1(h)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partI-sec1.htm) |
+| Net investment income tax rate | 3.8% | [26 U.S.C. 1411(a)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm) |
+| NIIT threshold, joint return or surviving spouse | USD 250,000 | [26 U.S.C. 1411(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm) |
+| NIIT threshold, married filing separately (half the joint amount) | USD 125,000 | [26 U.S.C. 1411(b)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm) |
+| NIIT threshold, any other case (single, head of household) | USD 200,000 | [26 U.S.C. 1411(b)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm) |
 
-| Filing status | 2025 zero-rate ceiling | 2025 15% ceiling | Source |
-| --- | --- | --- | --- |
-| Joint / qualifying surviving spouse | USD 96,700 | USD 600,050 | [Rev. Proc. 2024-40 §2.03](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf) |
-| Married filing separately | USD 48,350 | USD 300,000 | [Rev. Proc. 2024-40 §2.03](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf) |
-| Head of household | USD 64,750 | USD 566,700 | [Rev. Proc. 2024-40 §2.03](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf) |
-| Single | USD 48,350 | USD 533,400 | [Rev. Proc. 2024-40 §2.03](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf) |
+### 2025 returns (tax year 2025, extended deadline 15 October 2026)
 
-For nonnegative ordinary taxable income O and ordinary preferential gain/qualified dividends G, with ceilings Z and F: 0% slice = max(min(O+G,Z)-O,0); 15% slice = max(min(O+G,F)-max(O,Z),0); 20% slice = max(O+G-max(O,F),0). These slices are an isolated rate calculation. Use the return's Qualified Dividends and Capital Gain Tax Worksheet to compute the tax, including the comparison with regular tax.
+The ordinary extended date has passed. The NIIT thresholds, the 3.8% rate and the USD 3,000 / USD 1,500 loss limit are the same as for 2026.
+
+| Filing status (2025) | 0% up to taxable income of | 15% up to taxable income of | 20% above |
+| --- | --- | --- | --- |
+| Single | USD 48,350 | USD 533,400 | USD 533,400 |
+| Married filing jointly, surviving spouse | USD 96,700 | USD 600,050 | USD 600,050 |
+| Married filing separately | USD 48,350 | USD 300,000 | USD 300,000 |
+| Head of household | USD 64,750 | USD 566,700 | USD 566,700 |
+
+Source for all four 2025 rows: [Rev. Proc. 2024-40 §2.03](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf).
+
+### Step 5: split the long-term gain into rate groups
+
+**0/15/20 group:** all other net capital gain, plus qualified dividends. Special rate groups are described below.
+
+### Step 6: stack the gain on top of ordinary income
+
+Ordinary taxable income fills the brackets first; the preferential gain sits on top.
+
+Use the Qualified Dividends and Capital Gain Tax Worksheet in the Form 1040 instructions.
+
+For nonnegative ordinary taxable income O and ordinary preferential gain/qualified dividends G, with ceilings Z and F: 0% slice = max(min(O+G,Z)-O,0); 15% slice = max(min(O+G,F)-max(O,Z),0); 20% slice = max(O+G-max(O,F),0). These slices are an isolated rate calculation. Use the return's applicable worksheet to compute the tax, including the comparison with regular tax; Form 2555 filers require the Foreign Earned Income Tax Worksheet. For dividend eligibility or investment-interest elections that reduce preferential income: Check this point with one of our partner accountants.
 
 Collectibles and the taxable part of eligible section 1202 gain have a maximum 28% rate; unrecaptured section 1250 gain has a maximum 25% rate. A lower regular-tax computation can apply. Use the Schedule D Tax Worksheet if lines 18 or 19 are positive and lines 15 and 16 are gains, or if Form 4952 line 4g has an amount; otherwise use the qualified-dividend worksheet as directed by the return instructions ([2025 Schedule D instructions](https://www.irs.gov/instructions/i1040sd)). These are **2025 worksheet references**, not approved 2026 line numbers. For category-specific netting, depreciation recapture or QSBS eligibility: Check this point with one of our partner accountants.
 
-## NIIT: separate from capital gains rates
+### Step 8: the net investment income tax
 
-For both 2025 and 2026, NIIT is 3.8% × min(positive net investment income, positive MAGI excess over the filing-status threshold): USD 250,000 joint/qualifying surviving spouse; USD 125,000 married filing separately; USD 200,000 single/head of household. These thresholds are not indexed ([IRS NIIT page](https://www.irs.gov/individuals/net-investment-income-tax); [NIIT Q&A](https://www.irs.gov/newsroom/questions-and-answers-on-the-net-investment-income-tax)).
+On Form 8960: 3.8% of the lesser of (A) net investment income or (B) modified adjusted gross income over the threshold. For both 2025 and 2026, use positive NII and positive MAGI excess; otherwise the tax is zero. Thresholds: USD 250,000 joint/qualifying surviving spouse; USD 125,000 married filing separately; USD 200,000 single/head of household. These thresholds are not indexed ([IRS NIIT page](https://www.irs.gov/individuals/net-investment-income-tax); [NIIT Q&A](https://www.irs.gov/newsroom/questions-and-answers-on-the-net-investment-income-tax)).
 
-NII generally includes interest, dividends, annuities, rents and royalties unless derived in the ordinary course of a business that is neither passive nor trading financial instruments/commodities. It includes income from passive/trading businesses and net disposition gains except property held in a business that is neither passive nor trading. Reduce the included items by properly allocable deductions allowed for income tax. Wages and income subject to self-employment tax are excluded; gain excluded under section 121 is also outside NIIT ([Form 8960 instructions](https://www.irs.gov/instructions/i8960); [IRS NIIT page](https://www.irs.gov/individuals/net-investment-income-tax)). For rental-business classification or nonresident/dual-status treatment: Check this point with one of our partner accountants.
+Net investment income includes capital gains, interest, dividends, annuities, rents and royalties, subject to the business and deduction conditions that follow. It excludes wages, most self-employment income and gain excluded under section 121. Specifically, interest/dividends/annuities/rents/royalties are included unless derived in the ordinary course of a business that is neither passive nor trading financial instruments/commodities. It includes income from passive/trading businesses and net disposition gains except property held in a business that is neither passive nor trading. Reduce the included items by properly allocable deductions allowed for income tax. Wages and income subject to self-employment tax are excluded; gain excluded under section 121 is also outside NIIT ([Form 8960 instructions](https://www.irs.gov/instructions/i8960); [IRS NIIT page](https://www.irs.gov/individuals/net-investment-income-tax)). For rental-business classification or nonresident/dual-status treatment: Check this point with one of our partner accountants.
 
-## Capital losses and carryovers
+### Capital losses and carryovers
 
 For individuals, the annual deduction against other income is the smaller of the net capital loss or USD 3,000 (USD 1,500 married filing separately), in both 2025 and 2026. Unused losses carry forward until used and retain character ([Topic 409](https://www.irs.gov/taxtopics/tc409); [Pub. 550, Capital Losses](https://www.irs.gov/publications/p550)).
 
 Use the Capital Loss Carryover Worksheet for the applicable years. Let D be the allowable deduction and T taxable income **after** that deduction, including a negative amount when deductions exceed income. The amount treated as used is min(D,max(T+D,0)); total carryover is net loss minus that amount. Use short-term losses first, then long-term losses; netting with gains and splitting by character follow the worksheet. Count the allowable deduction even if not claimed or no return was filed ([26 U.S.C. 1212(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partII-sec1212.htm); [Pub. 550 Worksheet 4-1](https://www.irs.gov/publications/p550)). For changed joint/separate filing or a decedent's loss: Check this point with one of our partner accountants.
 
-## Wash sales
+### Wash sales
 
 A stock/securities loss is disallowed when substantially identical stock/securities are bought, acquired in a fully taxable trade, or covered by a contract/option acquired within 30 days before or after the loss sale. Acquisitions for an IRA/Roth IRA and purchases by a spouse or controlled corporation also matter. The ordinary-business dealer exception is outside this Guide ([Pub. 550, Wash Sales](https://www.irs.gov/publications/p550)).
 
 Add the disallowed loss to replacement basis and include the old holding period; **no basis addition** for an IRA/Roth IRA purchase. Where quantities differ, match purchases in purchase order against an equal number of sold shares; only matched shares are affected. Do not rely solely on a broker's reported wash-sale amount. For digital assets, NFT collectible status or whether instruments are substantially identical: Check this point with one of our partner accountants.
 
-## Home sales
+### Home sales
 
 The normal section 121 limit is USD 250,000 where the taxpayer owned and used the property as a main home for periods totalling at least 2 years in the 5 years ending on sale; ownership and use periods can differ. Normally there must be no other sale to which the exclusion applied in the 2 years ending on sale. On a joint return the USD 500,000 limit requires either spouse to meet ownership, both to meet use and neither to be barred by the prior-sale rule; otherwise calculate the sum of each spouse's separate entitlement, treating either spouse's ownership as ownership by both ([26 U.S.C. 121(a), (b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIII-sec121.htm)).
 
@@ -78,7 +107,7 @@ The simple tests are not a complete eligibility decision: screen for a section 1
 
 A sale primarily because of work, health or unforeseen circumstances may qualify for a reduced limit despite failing the normal ownership/use or look-back tests. For the work safe harbor, the new workplace must be at least 50 miles farther from the home than the old workplace; the event must occur during ownership and residence. For an eligible single filer, multiply USD 250,000 by the shortest applicable ownership, residence or time-since-prior-excluded-sale period divided by 24 months (or 730 days), capped at the full limit. Other work safe harbors, health/unforeseen-event eligibility and joint partial limits: Check this point with one of our partner accountants ([Pub. 523, Work-Related Move and Worksheet 1](https://www.irs.gov/publications/p523)).
 
-## Installment sales
+### Installment sales
 
 An installment sale has at least one payment after the sale year. The method generally applies unless elected out by the sale-year return due date including extensions. It does not apply to losses, inventory or stock/securities traded on an established market; depreciation recapture is ordinary income in the sale year. Other exclusions and related-party sales require review before applying the method. Report using Form 6252 for the sale year and each year of the obligation; interest is generally ordinary income, with AFR-based unstated-interest/OID rules if stated interest is inadequate ([Topic 705](https://www.irs.gov/taxtopics/tc705)).
 
@@ -239,13 +268,13 @@ expected:
   tax_2025: 3495
 ```
 
-## Filing and payment
+### Filing and payment
 
 For 2025, report most sales on Form 8949 and summarize on Schedule D. Digital-asset transactions use boxes G–L; other transactions use A–F. Direct reporting on Schedule D line 1a/8a requires basis reported to IRS, no broker adjustment in the relevant adjustment boxes, no Ordinary or QOF box checked, no QOF deferral/termination election and no required basis/type/gain/loss adjustment; collectibles are excluded from this exception ([2025 Schedule D instructions](https://www.irs.gov/instructions/i1040sd)). For 2026 line numbers and box selections, use final 2026 forms/instructions before filing; Check this point with one of our partner accountants.
 
 Report a home sale if not all gain is excluded, if Form 1099-S was received, or if electing not to exclude eligible gain ([Pub. 523, Reporting Gain or Loss](https://www.irs.gov/publications/p523)). File Form 8960 if NIIT is owed. A gain or NIIT can require estimated payments or additional withholding; underpayment can incur an estimated-tax penalty ([IRS NIIT page](https://www.irs.gov/individuals/net-investment-income-tax)). Ordinary timely filing extensions give until October 15 to file, not to pay: pay by the April filing date. Thus the ordinary extended 2025-return date was 15 October 2026, which has passed; special extensions require separate review ([IRS extension guidance](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return)). For the 2026 return's April 2027 deadline, October extension and estimated-tax dates (including the previously discussed 15 January 2027 installment): Check this point with one of our partner accountants.
 
-## Referral boundaries
+## When to refuse or refer
 
 Each row is a hold on the named specialist conclusion, not an entitlement supplied by another Guide.
 
@@ -265,9 +294,11 @@ Each row is a hold on the named specialist conclusion, not an entitlement suppli
 
 Official operative passages read 26 November 2026; unchanged 2025/2026 rate and NIIT proof was reused from the existing return proof after applicability checks. Publication/worksheet references are labelled by year above.
 
-- [Rev. Proc. 2025-32 §§4.01, 4.03: 2026 ordinary and capital-gain bands](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [Rev. Proc. 2024-40 §2.03: 2025 capital-gain bands](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf).
-- [IRS Topic 409: gain, holding period, rates and loss limit](https://www.irs.gov/taxtopics/tc409); [Pub. 550: holding periods, netting, rate groups, carryovers and wash sales](https://www.irs.gov/publications/p550).
-- [26 U.S.C. 121: home-sale exclusions](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIII-sec121.htm); [Pub. 523: eligibility, work moves, Worksheet 1 and reporting](https://www.irs.gov/publications/p523).
-- [26 U.S.C. 1212(b): individual carryovers](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partII-sec1212.htm).
-- [Form 8960 instructions: NII and thresholds](https://www.irs.gov/instructions/i8960); [NIIT page](https://www.irs.gov/individuals/net-investment-income-tax); [NIIT Q&A](https://www.irs.gov/newsroom/questions-and-answers-on-the-net-investment-income-tax).
-- [2025 Schedule D instructions: reporting and worksheet selection](https://www.irs.gov/instructions/i1040sd); [Topic 705: installment overview](https://www.irs.gov/taxtopics/tc705); [Extension guidance](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return).
+- [Rev. Proc. 2025-32 §§4.01, 4.03: 2026 ordinary and capital-gain bands](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [Rev. Proc. 2024-40 §2.03: 2025 capital-gain bands](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf). Read 2026-11-26.
+- [IRS Topic 409: gain, holding period, rates and loss limit](https://www.irs.gov/taxtopics/tc409); [Pub. 550: holding periods, netting, rate groups, carryovers and wash sales](https://www.irs.gov/publications/p550). Read 2026-11-26.
+- [26 U.S.C. 121: home-sale exclusions](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIII-sec121.htm); [Pub. 523: eligibility, work moves, Worksheet 1 and reporting](https://www.irs.gov/publications/p523). Read 2026-11-26.
+- [26 U.S.C. 1212(b): individual carryovers](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partII-sec1212.htm). Read 2026-11-26.
+- [Form 8960 instructions: NII and thresholds](https://www.irs.gov/instructions/i8960); [NIIT page](https://www.irs.gov/individuals/net-investment-income-tax); [NIIT Q&A](https://www.irs.gov/newsroom/questions-and-answers-on-the-net-investment-income-tax). Read 2026-11-26.
+- [2025 Schedule D instructions: reporting and worksheet selection](https://www.irs.gov/instructions/i1040sd); [Topic 705: installment overview](https://www.irs.gov/taxtopics/tc705); [Extension guidance](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return). Read 2026-11-26.
+
+Not yet confirmed: final 2026 form fields and specialist outcomes are held for the stated referral; no draft line number or unconfirmed eligibility outcome is usable for filing.
