@@ -93,15 +93,13 @@ For micro/small/medium legal persons, KVK requires digital XBRL filing; large le
 
 Each referral below is a non-usable hold on that particular determination.
 
-| Point requiring a separate determination | Action |
-|---|---|
-| Ordinary/simplified/cross-border invoice applicability; advances, continuous supplies, non-invoiced supplies and VAT timing exceptions; cash-VAT eligibility; export/exemption/reverse charge and customer VAT-ID requirements | Check this point with one of our partner accountants. |
-| KOR entry/current and prior turnover tests, counted turnover, excluded supplies, incidental returns, revisions, import-scheme/property-letting interaction | Check this point with one of our partner accountants. |
-| Business-purpose/private costs; fines, income/corporate tax, home workspace, clothing and training; gifts, hospitality VAT, zelfstandigenaftrek, startersaftrek, MKB exemption and other deduction restrictions | Check this point with one of our partner accountants. |
-| Business-vehicle additions, electric/older cars, private mileage, commuting and separate VAT private-use calculations | Check this point with one of our partner accountants. |
-| Special depreciation, self-created intangibles, building ownership/WOZ allocation and investment-deduction eligibility, higher-band rounding or partnership allocation | Check this point with one of our partner accountants. |
-| Specific revenue/long-term contracts, inventory methods, consolidation, provisions, deferred tax, instruments and policy changes under Dutch GAAP/RJ/IFRS; commercial depreciation | Check this point with one of our partner accountants. |
-| Entity/sole-trader publication scope; micro/small/medium size eligibility, prior years/group/start-up/excluded entities; tax-basis accounts, notes, management/cash-flow statements, audit/consolidation relief; listed/special-entity filing and technical exceptions | Check this point with one of our partner accountants. |
+- **Ordinary/simplified/cross-border invoice applicability; advances, continuous supplies, non-invoiced supplies and VAT timing exceptions; cash-VAT eligibility; export/exemption/reverse charge and customer VAT-ID requirements:** Check this point with one of our partner accountants.
+- **KOR entry/current and prior turnover tests, counted turnover, excluded supplies, incidental returns, revisions, import-scheme/property-letting interaction:** Check this point with one of our partner accountants.
+- **Business-purpose/private costs; fines, income/corporate tax, home workspace, clothing and training; gifts, hospitality VAT, zelfstandigenaftrek, startersaftrek, MKB exemption and other deduction restrictions:** Check this point with one of our partner accountants.
+- **Business-vehicle additions, electric/older cars, private mileage, commuting and separate VAT private-use calculations:** Check this point with one of our partner accountants.
+- **Special depreciation, self-created intangibles, building ownership/WOZ allocation and investment-deduction eligibility, higher-band rounding or partnership allocation:** Check this point with one of our partner accountants.
+- **Specific revenue/long-term contracts, inventory methods, consolidation, provisions, deferred tax, instruments and policy changes under Dutch GAAP/RJ/IFRS; commercial depreciation:** Check this point with one of our partner accountants.
+- **Entity/sole-trader publication scope; micro/small/medium size eligibility, prior years/group/start-up/excluded entities; tax-basis accounts, notes, management/cash-flow statements, audit/consolidation relief; listed/special-entity filing and technical exceptions:** Check this point with one of our partner accountants.
 
 ## Worked cases
 
