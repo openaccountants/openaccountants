@@ -1,190 +1,159 @@
 ---
 name: netherlands-tax-optimization
 description: Use this skill for lawful tax planning in the Netherlands for 2026, mainly for self-employed people (ZZP, ondernemers) and their households, covering entrepreneur reliefs, business costs, KIA and green investment relief, pension room, losses, a BV against a sole trade, Zvw and box 3. Trigger on reduce tax, tax planning, save tax, deductions I am missing, belasting besparen, minder belasting betalen, aftrekposten or zelfstandigenaftrek. Read it before advising on any Dutch tax planning choice.
-version: 2.0
+version: 2.1
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 category: tax-optimization
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax-optimization
 type: decision
+authored_by: Michael Cutajar and the OpenAccountants team
 ---
 
 # Netherlands tax planning: sole traders, households and business structure
 
 ## Scope
 
-Use this method for tax year 2026 planning and separately labelled 2025 return work. It produces a documented comparison of lawful choices, a cash forecast and actions for review. It does not turn an estimate into a filed return or make an investment, incorporation, pension contribution or insurance purchase for the client. Refresh the official sources before a later-year decision; proposed future measures are not current rules.
+Use this Guide for European Netherlands resident sole-trader planning for 2026. The separately labelled 2025 mileage comparison uses its own rule. Other 2025 returns and later years need a separate calculation. Record the decision date, residence, actual work, age and insurance periods, entity, fiscal-partner periods, reconciled accounts, other income, assessments, losses, credits, provisional payments and personal cash needs before comparing choices. Missing facts are holds, not zeros.
 
 ## Ask the client first
 
-- Which tax year and decision date apply? Is this a resident individual, an IB entrepreneur, other-work earner, partnership member or shareholder/director? Obtain residence, cross-border work and insurance periods, age/AOW status, contracts and the actual working relationship.
-- Obtain reconciled accounts, the asset register, profit before and after tax adjustments, other income, prior assessments and loss decisions, withheld taxes, provisional assessments, payment records and VAT status. Ask for cash needed personally and cash that can remain invested in the business.
-- Obtain actual business hours, other-work hours and entrepreneurial/deduction history; partner work, remuneration, ownership, agreed profit shares and household partnership periods. Registration and a desired deduction do not establish eligibility.
-- Obtain investment quotes and binding-order dates, asset specifications, new/used status, grants, VAT recovery, payment and first-use dates, planned disposals, and any RVO applications/decisions. Do not assume a supplier's “green” label establishes relief.
-- For pension planning obtain prior-year income, pension accrual statements and factor A or the applicable pension-transition information, unused annual room and prior contributions. Obtain existing FOR, cessation plans, product terms and payment dates. For AOV obtain the policy, insured person, payer and benefit form.
-- Obtain mortgage/home-office facts, gift agreements and receipts, relevant care expenses, assets and debts at the reference date, annual actual returns and partner allocation choices. Record missing inputs as holds, not zeros.
+For each choice obtain contracts, actual hours and deduction history; partner work/pay and ownership; asset specifications, binding orders, grants, VAT recovery, payment/use/disposal dates and RVO decisions; pension income/accrual statements, unused room, policies and payment dates; mortgage, gifts, care, assets/debts and actual returns. Reconcile the no-change baseline first. Show taxable profit, each income box, credits, Zvw, VAT, cash outlay, later tax/recapture, fees and liquidity separately. A deduction is not a refund; a lower headline percentage is not a household saving.
+
+Use the current [income-tax](../netherlands/nl-income-tax.md), [entrepreneur-deductions](../netherlands/nl-zzp-deductions.md), [personal-deductions](../netherlands/nl-deductions.md), [return-assembly](../netherlands/nl-return-assembly.md), [freelance-intake](../netherlands/nl-freelance-intake.md), [VAT](../netherlands/nl-vat-return.md) and [company-tax](../netherlands/nl-corporate-tax.md) Guides as separate work steps. Record their retrieved version/year and hold any affected result that has not been source-checked. Those routes do not establish eligibility.
 
 ## The method, step by step
 
-### Rates, bands and thresholds
+### Entrepreneur relief and household work
 
-Ordinary full-year figures before AOW-age adjustments; each row names its condition in the item.
+An entrepreneur trades for their own account and is directly liable for enterprise obligations; an independently practised profession is included. Establish that status from the real arrangement. Employment, other work, passive participation, companies and cross-border classifications need their own determination. [Wet IB, articles 3.4–3.5](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
 
-| Item | 2025 | 2026 | Source |
-| --- | --- | --- | --- |
-| Ordinary Box 1 | 35.82% through €38,441; 37.48% above that through €76,817; 49.50% above | 35.75% through €38,883; 37.56% above that through €78,426; 49.50% above | [Annual bands](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/) |
-| Ordinary self-employment deduction before age/profit limits | €2,470 | €1,200 | [2025](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025), [2026](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026) |
-| Starter supplement, only when conditions met | €2,123 | €2,123 | [Starter conditions](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/ondernemersaftrek/startersaftrek) |
-| MKB exemption after entrepreneur deductions | 12.7% | 12.7% | [MKB](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling) |
-| Maximum rate of relief for specified entrepreneur deductions/MKB | 37.48% | 37.56% | [MKB rate restriction](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling) |
-| Self-paid Zvw rate and annual contribution-income ceiling | 5.26%; €75,864 | 4.85%; €79,409 | [2025](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/inkomensafhankelijke_bijdrage_zorgverzekeringswet), [2026](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet) |
+The ordinary hours criterion is at least 1,225 actual business hours in the calendar year, without part-year prorating, and more time in those enterprises than in employment/other work combined. The majority condition does not apply if the person was not an entrepreneur in at least one of the preceding five years. Keep evidence of actual work; availability alone does not count. Pregnancy interruptions and connected-person partnerships can change the count: **Check this point with one of our partner accountants.** Do not invent a half-year target. [Article 3.6](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml); [hours evidence](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/voorwaarden_urencriterium).
 
-| 2026 total qualifying investment | KIA | Source |
-| --- | --- | --- |
-| At most €2,900 | None | [2026 table](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026) |
-| €2,901–€71,683 | 28% | [2026 table](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026) |
-| €71,684–€132,746 | €20,072 | [2026 table](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026) |
-| €132,747–€398,236 | €20,072 less 7.56% of the excess above €132,746 | [2026 table](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026) |
-| Above €398,236 | None | [2026 table](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026) |
+For an eligible entrepreneur below AOW age at the start of 2026, zelfstandigenaftrek is €1,200, ordinarily limited to profit. The starter increase is €2,123 if the person was not an entrepreneur in at least one of the preceding five years and used zelfstandigenaftrek at most twice in that period; the article 14c company-to-business continuation exclusion must also be absent in the current/prior five years. The qualifying starter's current deduction can exceed profit. A year reduced to nil by the profit limit still counts as a use. AOW, disability-starter and research/development relief: **Check this point with one of our partner accountants.** [Article 3.76](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
 
-| Input | 2025 | 2026 | Source |
-| --- | --- | --- | --- |
-| Corporation tax | 19% through €200,000; 25.8% above | Same | [Company rates](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting) |
-| Box 2 | 24.5% through €67,804; 31% above | 24.5% through €68,843; 31% above | [Box 2](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_2/) |
-| Usual-salary statutory reference | €56,000 | €58,000 | [Salary rule](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/) |
+Unused ordinary zelfstandigenaftrek is fixed by an inspector's decision and can increase that deduction in the next nine calendar years, oldest first, only up to profit remaining after the current deduction; current-year entitlement is required. It is separate from a Box 1 loss. Death, cessation or special utilisation: **Check this point with one of our partner accountants.** [Article 3.76](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
 
-### The steps
+The MKB exemption is 12.7% of aggregate entrepreneurial profit after entrepreneur deductions; it has no hours criterion. It also reduces a loss: an established €10,000 loss at that stage becomes €8,730. Recalculate it after every business deduction. High-income rate restrictions, other income/credits and AOW/partial insurance must be calculated separately; **Check this point with one of our partner accountants.** [Articles 3.2 and 3.79a](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
 
-1. **Fix the baseline and the status of every assumption**
+For the unpaid-partner route, the entrepreneur must meet their own hours criterion. At least 525 but fewer than 875 partner hours gives a cooperation deduction of 1.25% of the qualifying profit. That base excludes expropriation-replacement profit, cessation/death gains and relevant foreign-transfer/final-settlement profit. Other hour bands or remuneration below the pay boundary: **Check this point with one of our partner accountants.** [Article 3.78](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
 
-Classify income and each working relationship first. Income-tax entrepreneur status is separate from VAT status and employment status. Refer unresolved disguised-employment or international cases before counting entrepreneur relief. Use [freelance intake](/skills/nl-freelance-intake) to establish the facts. [Official entrepreneur criteria](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/wanneer_bent_u_ondernemer_voor_de_inkomstenbelasting/).
+For genuine, substantiated partner work paid at a commercially justified amount, remuneration of €5,000 or more can be deducted from profit and is income for the partner. Below €5,000 it is not deductible and the corresponding partner-work benefit is exempt. Do not assume it is an employment wage or combine it with the unpaid route. [Articles 3.16(4) and 3.96(b)](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml); [partner remuneration](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/arbeidsbeloning_aan_fiscale_partner).
 
-Reconcile a no-change baseline using [income tax](/skills/nl-income-tax), [entrepreneur deductions](/skills/nl-zzp-deductions), [personal deductions](/skills/nl-deductions) and [return assembly](/skills/nl-return-assembly). Record the retrieved version and tax year of each dependency. If a dependency has not been checked against current official sources, hold its affected calculation. Each scenario must use the same accounting period and separately show accounting profit, taxable profit, taxable income in each box, credits, Zvw, assessment offsets and cash payments.
+Business profit and wages stay with the earner. For two resident individuals with the same fiscal partner throughout the year, the common income items available for chosen allocation are the own-home balance, Box 2 income before personal deductions, and personal deductions. Keep the combined amount unchanged and recalculate both returns and benefits. Box 3 allocation, part-year partnership/elections, VOF eligibility, ownership/profit shares and incorporation/conversion: **Check this point with one of our partner accountants.** [Article 2.17](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
 
-These are ordinary full-year rates before AOW-age adjustments; do not apply the ordinary table to an AOW or partial-insurance case. Annual credits depend on their statutory income bases and personal circumstances, so there is no universal tax-free business-profit threshold. [Box 1 and AOW tables](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/); [annual tax calculation](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/belastingberekening).
+### Costs, assets and timing
 
-(Figures for this step: see the rates table above.)
+Income-tax annual profit follows consistent sound business practice. A prepayment, delayed invoice or VAT cash method does not by itself establish the profit year. Establish accruals and work in progress before changing the forecast. [Article 3.25](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
 
-2. **Establish relief before attempting to optimize it**
+For substantiated ordinary business journeys in a privately owned or privately rented vehicle, the 2026 deduction is €0.25/km under the published ministerial approval, retroactive to 1 January 2026 and expiring on 1 January 2027. The statute's €0.23 alone omits that approval. The 2025 amount was €0.23/km. Fuel, insurance, tolls and parking add no separate deduction. This is separate from company-car and VAT treatment. [2026 approval, sections 2.2 and 3](https://zoek.officielebekendmakingen.nl/stcrt-2026-18302.html); [authority explanation](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/zakelijk-gebruik-privevervoermiddel).
 
-For the ordinary hours criterion, substantiate at least 1,225 business hours in the calendar year; do not prorate this for a late start. Apply the majority-of-working-time condition and its starter exception, the pregnancy rule and the connected-person partnership exclusions. There is no statutory half-year hours target. Apply starter lookback and prior deduction history from the evidence, including years where profit limitation reduced a deduction to nil. [Hours](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/voorwaarden_urencriterium); [starter](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/ondernemersaftrek/startersaftrek); [Wet IB, article 3.76](https://wetten.overheid.nl/BWBR0011353).
+For an otherwise eligible IB mixed-cost pool, compare disallowing the first €5,700 with electing 80% deduction in the return. The pool covers food/drink/stimulants, representation including receptions/parties/entertainment, congresses/seminars/symposia/excursions/study trips and related travel/stay. There is an exception where the business directly manufactures/trades those goods or supplies those services and they form part of turnover; the statute makes no separate personal withdrawal for the taxpayer for costs within this pool. First cap related private-vehicle costs at the applicable kilometre amount, then apply the limitation; household members are included in that vehicle rule. This is not the company mixed-cost rule. [Article 3.15](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml); [2026 vehicle approval](https://zoek.officielebekendmakingen.nl/stcrt-2026-18302.html).
 
-Ordinary unused self-employment deduction has its own nine-year carryforward and profit limits; use requires entitlement to the ordinary self-employment deduction in the utilization year. Apply those limits and use assessments and oldest amounts first. It is different from a Box 1 loss. When the starter exception applies, the combined current deduction can exceed profit; the MKB exemption also reduces the deductible amount of a loss. Do not add percentage “savings” from each relief independently. [Unused deduction](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/ondernemersaftrek/zelfstandigenaftrek1/verrekenen_niet_gerealiseerde_zelfstandigenaftrek); [self-employment deduction](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/ondernemersaftrek/zelfstandigenaftrek1/); [MKB](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling).
+Own course/congress/study-trip travel and stay has a separate €1,500 restriction, except where the nature of the work necessitates attendance/travel; household members are equated for this rule. Establish the eligible cost pool after this and other exclusions before comparing the alternatives. Home workspace, training/new qualifications, private portions, clothing, mortgage interest, gifts and care deductions: **Check this point with one of our partner accountants.** [Article 3.16(2)(f), (8), (11)](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
 
-For partner work, compare a genuine partnership, qualifying cooperation deduction and actual remuneration using the facts. Cooperation deduction requires the entrepreneur's own hours criterion and at least 525 partner hours with no remuneration or remuneration below €5,000; the deduction percentage depends on hours. Remuneration below that boundary is not a deductible business wage. At or above it, consider the documented remuneration route and the partner's corresponding income. Do not presume an employment relationship. A VOF does not automatically qualify every partner or multiply the KIA table. [Partner remuneration](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/arbeidsbeloning_aan_fiscale_partner); [cooperation deduction, article 3.78](https://wetten.overheid.nl/BWBR0011353); [investment relief and partnerships](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/investeringsaftrek_en_desinvesteringsbijtelling/voorwaarden_investeringsregelingen).
+Ordinary depreciation uses substantiated cost, residual value, useful life and the actual period of use. The annual ceiling is 20% of acquisition/production cost for ordinary other assets and 10% for goodwill; these ceilings do not establish a standard life or zero residual. Recoverable VAT is excluded from depreciable cost; irrecoverable VAT is included. Buildings/land/WOZ transitions and starter arbitrary depreciation: **Check this point with one of our partner accountants.** [Article 3.30](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml); [cost, life and VAT](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/afschrijving/hoe_berekent_u_het_bedrag_van_de_afschrijving).
 
-3. **Separate business expenses, personal deductions and capital expenditure**
+### Investment choices
 
-Keep only substantiated business costs, remove private portions and distinguish current costs from assets. Prepayment or delayed invoicing does not automatically move income-tax profit: follow the consistent, legally acceptable profit-recognition method, accruals and work in progress. VAT invoice/cash rules are a separate question. [Good business practice](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/goed_koopmansgebruik); [business costs](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/zakelijke_kosten/overzicht-mogelijk-aftrekbare-zakelijke-kosten).
+KIA is an additional profit deduction elected in the return. Investment means binding acquisition/improvement obligations or production costs borne by the taxpayer. Use the complete annual qualifying total. [Articles 3.41 and 3.43](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
 
-- **Private vehicle:** business journeys in a vehicle privately owned or privately rented use €0.23/km for 2025 and €0.25/km for 2026. Fuel, insurance, tolls and parking are included; do not deduct them again. This is not the company-car method. [Year-specific rule](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/zakelijk-gebruik-privevervoermiddel-2026).
-- **Meals, representation and similar limited costs:** for an IB entrepreneur compare the annual €5,700 disallowance with the permitted 80% deduction alternative in both years, using the correct cost pool. Personal consumption remains private; special travel/stay limits and necessary-attendance exceptions may apply. Do not use this IB percentage for a BV. [Cost categories](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/zakelijke_kosten/overzicht-mogelijk-aftrekbare-zakelijke-kosten).
-- **Training:** document the business purpose and maintenance of existing professional knowledge; do not assume a new qualification is deductible. **Home office:** use the official tool and establish independence of the space and the applicable income tests; a desk or a separate room alone is insufficient. [Training/costs](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/zakelijke_kosten/overzicht-mogelijk-aftrekbare-zakelijke-kosten); [workspace](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/werkruimte_in_de_woning).
-- **AOV:** qualifying periodically paying disability insurance is a personal income-provision deduction, not a reduction of business profit. Lump-sum policies do not receive that deduction. Check the policy and applicable payer/insured conditions, and do not deduct premiums already accounted for in payroll. [AOV](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/arbeidsongeschiktheidsverzekering-voor-ondernemers); [income provisions](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/uitgaven_voor_inkomensvoorzieningen).
-- **Mortgage, gifts and care:** run the individual conditions and partner rules in [personal deductions](/skills/nl-deductions), including rate limits, gift caps and reimbursement exclusions. A charitable or housing payment does not automatically create an equal cash tax saving. [Annual deduction framework](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/belastingberekening).
+| Total qualifying investment in 2026 | KIA | Source |
+|---|---|---|
+| At most €2,900 | €0 | [2026 schedule](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026) |
+| More than €2,900, at most €71,683 | 28% of the total | [2026 schedule](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026) |
+| More than €71,683, at most €132,746 | €20,072 | [2026 schedule](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026) |
+| More than €132,746, at most €398,236 | €20,072 less 7.56% of the excess over €132,746 | [2026 schedule](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026) |
+| More than €398,236 | €0 | [2026 schedule](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026) |
 
-4. **Compare investments on commercial need and after-tax cash**
+An asset investment below €450 is excluded from KIA; exactly €450 is not excluded by that amount test. Asset grouping, excluded assets/acquisitions, related parties, partnerships and company eligibility must be established separately: **Check this point with one of our partner accountants.** Do not multiply the table merely because there are multiple partners. [Article 3.45](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
 
-Establish the real asset, qualifying cost including irrecoverable VAT, annual aggregate and exclusions. KIA is an extra profit deduction, not a reimbursement of expenditure. An ordinary asset below €450 does not qualify; connected assets and partnership investment require the proper grouping. Qualifying BVs may also obtain KIA. Confirm obligation, payment and first-use timing before assigning the deduction to a year. [KIA](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/investeringsaftrek_en_desinvesteringsbijtelling/kleinschaligheidsinvesteringsaftrek_kia); [general investment conditions](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/investeringsaftrek_en_desinvesteringsbijtelling/voorwaarden_investeringsregelingen); [2026 company relief](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/veranderingen-vennootschapsbelasting-2026).
+If an asset is unused at year end, investment deduction cannot exceed payments then made; the remainder follows later payments, no later than the first-use year. Cessation/final settlement, disposals/deemed disposals and recapture: **Check this point with one of our partner accountants.** Compare purchases only where commercially justified; do not backdate orders or artificially split an asset. [Article 3.44](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
 
-(Figures for this step: see the rates table above.)
+EIA is 40% of established eligible energy investment; it can coexist with KIA when each relief qualifies, but EIA and MIA cannot apply to the same asset. These percentages establish neither asset eligibility nor a cash saving. [Article 3.42](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml); [EIA and combinations](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/investeringsaftrek_en_desinvesteringsbijtelling/energie_investeringsaftrek_eia).
 
-Use the separate [2025 KIA table](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/investeringsaftrek-2025/kleinschaligheidsinvesteringsaftrek-2025) for 2025 obligations. Model a commercially feasible purchase now versus later with each year's complete investment total, payment constraints, deductions, loss use and liquidity. Do not split an economic asset artificially or spend merely to obtain relief. Review disposals and deemed disposals for recapture within the statutory five-year window, its annual threshold and the cap at relief previously obtained. [Disinvestment](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/investeringsaftrek_en_desinvesteringsbijtelling/desinvesteringsbijtelling).
+For purchase-cost EIA notification, apply within three months after the binding order/purchase agreement, using that year's Energielijst and its full code requirements. The invoice/payment/installation date is not the trigger. For self-construction costs, the ordinary deadline is three months after quarter end; first use in that quarter instead starts the three months at first use. Keep the application and decision. [RVO application procedure](https://www.rvo.nl/subsidies-financiering/eia/ondernemers/aanvragen)
 
-For ordinary depreciation substantiate acquisition cost, residual value and useful life; cap annual ordinary depreciation at 20% of acquisition cost, or 10% for goodwill, and prorate actual use. Do not invent a zero residual value or standard asset life. Building land is not depreciable. The building floor is the WOZ value; the limited transition for qualifying own-use buildings first used before 2024 must be checked from original use and depreciation history. Starter arbitrary depreciation requires its own eligibility and residual/building constraints. [Depreciation](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/afschrijving/hoe_berekent_u_het_bedrag_van_de_afschrijving); [buildings](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/afschrijving/afschrijving_bedrijfspand); [starter arbitrary depreciation](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/afschrijving/willekeurige_afschrijving/startende_ondernemer).
+EIA list/cost eligibility, minimums, declarations, grants, state aid and annual/partnership limits need a documented determination before awarding relief. RVO's general conditions page currently prints an annual maximum that differs from article 3.42 and the tax authority's 2026 page; use the statute, and hold any affected application. **Check this point with one of our partner accountants.** MIA/Vamil code eligibility, rates, arbitrary depreciation, residual constraints, deadlines and combinations also require that referral; no award is established here. [RVO conditions](https://www.rvo.nl/subsidies-financiering/eia/ondernemers/voorwaarden); [statutory EIA](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml); [tax authority EIA](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/investeringsaftrek_en_desinvesteringsbijtelling/energie_investeringsaftrek_eia).
 
-5. **Validate green relief before counting it**
+### Pension, insurance, losses and company comparisons
 
-Check the binding-order year's exact RVO list, code description, eligible new asset, minimum eligible amount, permitted costs, certificates, grants, state-aid limits and application deadline. EIA and MIA/Vamil normally require at least €2,500 of eligible investment per the applicable asset/application rules; read the relevant conditions rather than grouping unrelated small items to reach it. [EIA conditions](https://www.rvo.nl/subsidies-financiering/eia/ondernemers/voorwaarden); [MIA/Vamil conditions](https://www.rvo.nl/subsidies-financiering/mia-vamil/ondernemers/voorwaarden).
+For an ordinary pension-supplement lijfrente deduction, establish a qualifying product, self-paid contribution and pension shortfall. Calculate actual annual/reserve room with the official tool and the underlying prior-year income and pension accrual. The 2026 annual room depends on 2025 circumstances. Unused annual room can be used in reserve room in the following ten years; use older room before expiry. A current profit amount alone does not establish room. Product/age/transition eligibility, the full room formula/caps, future benefits, nondeducted premiums, early release and charges: **Check this point with one of our partner accountants.** [Room and payment conditions](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/werk_en_inkomen/lijfrente/aftrekken-lijfrentepremies/)
 
-- EIA gives a 40% deduction on the eligible cost, subject to the code and scheme limits. [EIA](https://www.rvo.nl/subsidies-financiering/eia/ondernemers).
-- MIA is code-dependent: 27%, 36% or 45%. Vamil permits arbitrary depreciation of 75%, with the remainder depreciated normally and the residual-value floor retained. A code may offer only one relief. [Code letters](https://www.rvo.nl/subsidies-financiering/mia-vamil/milieulijst); [Vamil application and depreciation](https://www.rvo.nl/subsidies-financiering/mia-vamil/ondernemers/aanvragen).
-- EIA and MIA cannot both apply to the same investment costs; eligible Vamil may coexist with EIA. Check KIA separately. Grants can reduce eligible cost or prohibit combination entirely. [Combination restrictions](https://www.rvo.nl/subsidies-financiering/mia-vamil/ondernemers/voorwaarden); [company investment rules](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/veranderingen-vennootschapsbelasting-2026).
+Ordinary contributions are deducted in the payment/qualifying settlement year, within established room. An open prior-year return does not move a later payment backwards. FOR/cessation conversion has a separate statutory election for qualifying payments within six months after year end; that is not a general pension deadline. Existing FOR release, conversion and cessation deduction: **Check this point with one of our partner accountants.** [Article 3.130](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
 
-For purchase costs apply within three months after the binding order/agreement, not the invoice, payment or installation. Self-construction costs normally have a quarter-end-based period; first use in that quarter changes the trigger. Save the exact deadline, submission authority, reference and decision. Check income-tax application timing independently of RVO notification. Missing the deadline is a hold/referral, not permission to backdate an order. [EIA procedure](https://www.rvo.nl/subsidies-financiering/eia/ondernemers/aanvragen); [MIA/Vamil procedure](https://www.rvo.nl/subsidies-financiering/mia-vamil/ondernemers/aanvragen).
+For an AOV giving qualifying periodic disability benefits to the taxpayer, premiums borne by the taxpayer are personal income-provision expenditure, not business costs. A lump-sum policy does not receive that premium deduction. Confirm policy/payer/insured facts before allowing it. [Article 3.124(1)(c)](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml); [AOV explanation](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/arbeidsongeschiktheidsverzekering-voor-ondernemers).
 
-6. **Calculate pension room and loss relief correctly**
+An established enterprise loss first reduces other positive Box 1 income that year. A remaining ordinary Box 1 loss goes back three years, earliest first, then forward nine years; it does not offset Box 2/3. The loss determination and available assessments matter. Provisional carryback, conscientious-objector losses, death and company-to-business continuation exceptions: **Check this point with one of our partner accountants.** [Article 3.150](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml); [loss explanation](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/verlies_uit_onderneming).
 
-For ordinary lijfrente planning, use the official calculator with the correct prior-year income and pension accrual, franchise/cap, transition information and historical unused room. The expanded percentage is 30% of the applicable pension base, not 30% of current profit. Unused annual room may enter the following ten years' reserve; use older room before it expires. Keep the calculator result and underlying documents. Do not reuse the former annual-room formula. [Expanded rules](https://www.belastingdienst.nl/wps/wcm/connect/nl/werk-en-inkomen/content/nieuwe-regels-voor-pensioenen-wat-betekent-dat-voor-mij); [room and payment rules](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/werk_en_inkomen/lijfrente/aftrekken-lijfrentepremies/).
+For a BV comparison show justified director salary, insurance/employer costs, company profit/tax, retained or distributed cash, personal tax/credits and compliance/conversion costs. Hold the recommendation until the personal cash needs and ownership facts are established. The ordinary usual-salary rule takes the highest of comparable-job pay, relevant highest employee pay and €58,000 for 2026; an evidenced lower comparable salary can justify a lower amount. The €56,000 reference belongs to 2025, not an automatic 2026 choice. Other salary exceptions and the actual structure: **Check this point with one of our partner accountants.** [Salary rule](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/)
 
-The 2026 annual room uses 2025 circumstances, while a 2025 calculation uses 2024 circumstances. A qualifying ordinary contribution is deducted in the payment year, within combined room across products. The 2026 reserve maximum is €42,753; it does not create room without unused entitlements. Excess paid contributions do not become a later-year deduction merely because future room appears. Record nondeducted premiums for eventual benefit taxation. Check age and product eligibility, future taxable benefits, liquidity, charges and early-release/revision-interest consequences. [2025 income provisions](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/uitgaven_voor_inkomensvoorzieningen); [2026 income provisions](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/uitgaven_voor_inkomensvoorzieningen); [ordinary contributions](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/werk_en_inkomen/lijfrente/aftrekken-lijfrentepremies/).
+### VAT, social insurance and wealth
 
-On cessation, check the separate cessation deduction and prior usage before calculating the residual gain: the lifetime maximum is €3,630 and the deduction cannot exceed qualifying cessation profit. [Cessation deduction](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek).
+Keep VAT invoice/cash timing, input deduction, mixed supplies, private use, corrections and capital-goods revision separate from profit timing. KOR entry/counting/exit/cross-border effects, margin-scheme eligibility/records and pro-rata calculations: **Check this point with one of our partner accountants.** For established KOR-covered supplies, no VAT is charged and input VAT is not deducted. Compare lost input recovery and customer pricing before choosing it; do not assume a universal lock-in or an automatic economic advantage. [KOR consequences](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/wat-betekent-meedoen-met-de-kleineondernemersregeling/)
 
-No new FOR additions are available from 2023. Existing FOR requires its own release calculation; an excess over business equity interacts with the specified cessation/AOW/hours triggers. Do not equate every trigger with release of the entire reserve. Converting a qualifying FOR or cessation amount into lijfrente is a separate conditional route: for a 2026 deduction the qualifying payment must be made before 1 July 2027, with the profit inclusion and applicable limits accounted for. That exception is not the ordinary pension-payment deadline. [FOR](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/fiscale_reserves/oudedagsreserve); [conversion conditions](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/uitgaven_voor_inkomensvoorzieningen).
+For the ordinary fully insured 2026 scenario, self-paid Zvw is 4.85%, subject to a €79,409 annual contribution-income cap and the remaining cap after covered wages/other relevant income. It is a separate assessment from income tax and the insurer premium. For the plain sole-trader examples below, contribution income is taxable enterprise profit after entrepreneur deductions and MKB; personal pension/AOV deductions do not reduce that business base. The statute has separate excluded-income/insurance rules. Partial-year/foreign coverage, military/seafisher exceptions, AOW premium/credit changes, UWV voluntary cover and broodfonds arrangements: **Check this point with one of our partner accountants.** [Zvw article 43](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0018450/2026-01-01_0/xml/BWBR0018450_2026-01-01_0.xml); [2026 rate and aggregation](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet).
 
-An enterprise loss first offsets other positive Box 1 income in the same year. A remaining Box 1 loss is carried back three years, starting with the earliest, then forward nine years. It cannot offset Box 2 or Box 3. Use the official loss decisions and distinguish this from unused self-employment deduction and corporate loss rules. A written provisional carryback request can accompany the loss-year return when its conditions are met; the provisional amount is limited to 80% and the earlier assessment must be final. [Losses](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/verlies_uit_onderneming).
-
-7. **Compare a BV and a genuine partnership on like-for-like facts**
-
-There is no universal incorporation profit threshold. For an actual BV comparison model justified director salary, employer costs and insurance status, company taxable profit, corporation tax, retained cash, eventual distributions, personal Box 1/Box 2 tax and credits, compliance costs, conversion/cessation consequences and the client's cash needs. Deferred shareholder tax is not permanent elimination. Obtain professional structuring review before execution. Use [corporate tax](/skills/nl-corporate-tax) for the company calculation.
-
-(Figures for this step: see the rates table above.)
-
-The salary reference is not a safe-harbour chosen salary: the main rule takes the highest of the comparable-job salary, the relevant highest employee salary and the annual reference, with evidenced exceptions. Personal entrepreneur deductions do not transfer to BV salary, while qualifying corporate investment relief can remain available. A spouse/partner salary, profit share or asset transaction must reflect the actual work and legal arrangement. [Salary](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/); [company investment relief](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/veranderingen-vennootschapsbelasting-2026).
-
-For fiscal partners compare only legally allocable common items and keep the combined total unchanged. Business profit and wages cannot simply be moved to the lower-rate partner. Recalculate both returns, income-dependent credits and relevant benefits instead of selecting the highest marginal rate in isolation. [Partner allocation](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/fiscaal_partnerschap).
-
-8. **Keep VAT, social insurance and wealth planning distinct**
-
-Use the current [Netherlands VAT return method](/skills/nl-vat-return) for invoice/cash timing, input deduction, private use, mixed activities, corrections and capital-goods revision. For second-hand goods, establish margin-scheme eligibility and the required purchase/sales records separately; refer to the current VAT method and official scheme conditions before using a margin calculation. [Margin-scheme conditions](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/bijzondere_regelingen/margeregeling/). KOR eligibility and economic advantage are separate: compare customer pricing and lost input deduction, not only output VAT saved. It is not a universal three-year lock-in. Confirm official registration/withdrawal dates and cross-border obligations before changing invoices. [KOR](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden); [KOR consequences](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/wat-betekent-meedoen-met-de-kleineondernemersregeling).
-
-Compute Zvw on its own contribution-income base and remaining annual cap after other covered income. A private pension/AOV deduction from Box 1 is not automatically a Zvw reduction. The income-tax bill, Zvw assessment and health-insurer premium are different amounts. For partial-year or foreign coverage refer the insurance determination. AOW age does not mean all national-insurance premiums vanish. [2026 Zvw](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet); [AOW rates](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/).
-
-Do not describe a savings circle as WW insurance or assume all former employee rights disappear. UWV voluntary sickness/disability cover has application and prior-insurance conditions; the ordinary transition application period is thirteen weeks, with distinct part-time-employment rules. Voluntary WW is limited to specified situations, not generally available to every sole trader. Refer policy selection and coverage gaps to a qualified adviser. [UWV for self-employed people](https://www.uwv.nl/nl/verzekeren/vrijwillige-verzekering/zzp-verzekering); [insurance types](https://www.uwv.nl/nl/verzekeren/vrijwillige-verzekering/verzekering-zw-wia-wao-ww).
-
-For Box 3 distinguish the reference-date deemed method from the annual actual-return comparison. The ordinary exemption is €57,684 per person for 2025 and €59,357 for 2026; eligible whole-year partners have double those amounts. The Box 3 tax rate is 36%. Actual-return relief has no ordinary tax-free allowance and is not a selective deduction of only losing assets. Check the year-specific method and retain the complete asset/debt and return evidence. Moving assets to a qualifying home or pension product also changes liquidity, costs and legal conditions. Do not promise savings from a future system that has not taken effect. [2025 calculation](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/bezittingen_en_schulden_box_3_); [2026 calculation](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/bezittingen_en_schulden_box_3_); [actual-return framework](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/belastingberekening).
-
-Temporary tax-motivated changes around the reference date can be disregarded. For the 2025 return, the official guidance identifies investment-to-cash transactions crossing the reference date and reversed within three months, and analogous temporary debt; evidence of a non-tax reason matters. Apply the current statutory rule for a later reference date and refer uncertain arrangements. Do not recommend year-end round trips as a saving. [Reference-date arbitrage](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/regels_voor_het_tijdelijk_verplaatsen_van_bezittingen_en_schulden); [Wet IB, article 5.24](https://wetten.overheid.nl/BWBR0011353).
-
-9. **Deliver decisions, dates and a cash forecast**
-
-For each option show: baseline facts, changed facts, qualification evidence, source/year, income-tax effect, Zvw effect, VAT effect, cash outlay, timing of recovery, future tax/recapture, non-tax cost and unresolved holds. A deduction is not a cash refund. Recalculate credits and exemptions after every change; do not use “deduction × top rate” as the whole-client answer.
-
-Use an event-based calendar: monitor actual hours and profit during the year; diary RVO dates from binding commitments; review pension room and payment before year end; retain reference-date wealth evidence; prepare accounts and assessments for the correct return year. Take filing/payment dates from the actual invitation, granted extension, return period and current official calendar. A requested extension is not proof of a granted date. Keep income-tax and VAT deadlines separate and never repeat the old March date for a normal prior-year final-quarter VAT return.
+For Box 3 reference-date assets/debts, the deemed/actual-return comparison, partner allocation, temporary asset/debt shifts, home/pension transfers and future-system proposals: **Check this point with one of our partner accountants.** Hold the saving until the complete year-specific return and anti-arbitrage treatment is established. Do not recommend year-end round trips or infer that a savings circle provides statutory unemployment insurance.
 
 ## Worked cases
 
 ### Case 1: KIA is not a cash saving
 
-Assume a qualifying 2026 investment of €15,000 is the complete annual KIA total, fully paid and in use, with all other eligibility satisfied. KIA is €4,200. This is the additional profit deduction before the MKB interaction and tax/credit calculation, not the refund. Hold the cash-tax answer until the client's complete scenario is calculated. [KIA table](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026).
+A fully paid, in-use, qualifying €15,000 equipment investment is the complete annual 2026 KIA total. KIA is €4,200. For positive profit with unchanged entrepreneur deductions, its effect on taxable enterprise profit after 12.7% MKB is €3,666.60. The former €1,577 saving merely multiplied €4,200 by 37.56%; the exact product is €1,577.52, but that is not a client tax result. Recalculate credits, rates, Zvw and cash costs. This also preserves the original equipment example. [KIA](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026); [MKB article 3.79a](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
 
 ### Case 2: A missed investment deadline
 
-A business accepted a binding equipment order months ago, but the supplier invoiced today. Use the order date for RVO purchase-cost notification. If its application period has expired, exclude unapproved relief from the committed cash forecast and refer; changing the invoice date cannot cure the missed deadline. [EIA application](https://www.rvo.nl/subsidies-financiering/eia/ondernemers/aanvragen).
+A business accepted a binding equipment order months ago; the invoice arrives today. Use the order date for purchase-cost EIA notification. If the period has expired, exclude unapproved relief from committed cash and refer: **Check this point with one of our partner accountants.** Changing the invoice date does not restart the period. [RVO](https://www.rvo.nl/subsidies-financiering/eia/ondernemers/aanvragen)
 
 ### Case 3: Pension payment across years
 
-The client pays an ordinary lijfrente contribution in the following year and wants it deducted from the preceding return because that return is still open. Reject that timing assumption. Calculate eligibility in the payment year. Separately examine the statutory FOR/cessation conversion exception only if those facts actually exist. [Payment rule](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/werk_en_inkomen/lijfrente/aftrekken-lijfrentepremies/).
+An ordinary contribution is paid in the following year while the preceding return remains open. Test eligibility in the payment year. Do not use the FOR/cessation exception without those facts: **Check this point with one of our partner accountants.** [Article 3.130](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
 
 ### Case 4: Business loss with wages
 
-Assume a final taxable enterprise loss of €15,000 after applicable profit adjustments and wage income of €10,000, with no other Box 1 items. The remaining Box 1 loss is €5,000. Apply the three-year carryback and then nine-year carryforward sequence using available assessments, not the BV loss regime. [Official loss example](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/verlies_uit_onderneming).
+Given a final taxable enterprise loss of €15,000 after all applicable adjustments and wages of €10,000, with no other Box 1 items, the residual Box 1 loss is €5,000. Use the ordinary three-back/nine-forward sequence and actual assessments; do not import the company loss regime. [Losses](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/verlies_uit_onderneming)
 
-### Case 5: The Zvw cap is already partly used
+### Case 5: Zvw cap partly used
 
-Assume 2026 covered wages of €40,000 and qualifying freelance contribution income of €50,000 with no other adjustments. The remaining cap is €39,409. The self-paid contribution is 4.85% of that amount, €1,911.34 before the assessment's rounding. Do not charge the percentage on the whole freelance amount. [Official cap example](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet).
+Given ordinary 2026 covered wages of €40,000 and qualifying freelance contribution income of €50,000, with full-year ordinary insurance and no adjustments/exceptions, the remaining cap is €39,409 and self-paid Zvw is €1,911.34 before assessment rounding. [Authority's same-input example](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet)
 
-### Case 6: An attractive BV percentage is incomplete
+### Case 6: An incomplete BV comparison
 
-The client supplies only business profit and asks whether to incorporate. Hold the recommendation until comparable salary, retained/distributed cash, insurance, costs and personal circumstances are supplied. Do not insert an arbitrary salary or compare corporate tax alone with total sole-trader tax. [Salary rule](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/); [company rates](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting); [Box 2](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_2/).
+Business profit alone cannot settle incorporation. The original 2026 case uses €150,000 profit and €56,000 director salary plus dividends. Keep that salary as an unvalidated scenario input: it needs evidence under the €58,000/highest-comparator rule. Before any other employer costs/adjustments the arithmetic residual is €94,000, but that is not a validated corporate tax base. The earlier 44% versus 38% comparison gives €66,000 versus €57,000 and a €9,000 difference arithmetically; none is an established tax bill or saving. **Check this point with one of our partner accountants.** [Salary](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/)
 
 ### Case 7: Mileage without duplicate costs
 
-Assume 1,000 substantiated business kilometres in a privately owned vehicle in 2026. The profit deduction is €250; separately submitted fuel and parking for those journeys add no further profit deduction. The same distance in 2025 would use €0.23/km, not the 2026 rate. [Private vehicle](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/zakelijk-gebruik-privevervoermiddel-2026).
+For 1,000 substantiated ordinary business kilometres in a private vehicle in 2026, outside the limited mixed-cost pool, deduct €250; submitted fuel/parking add nothing. The same distance in 2025 gives €230. [Authority](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/zakelijk-gebruik-privevervoermiddel); [2026 approval](https://zoek.officielebekendmakingen.nl/stcrt-2026-18302.html)
 
-### Case 8: AOV has the wrong ledger location
+### Case 8: AOV ledger location
 
-A qualifying policy pays periodic disability benefits. Remove its premium from business costs and consider the personal income-provision deduction on the documented conditions. If it instead pays a lump sum, do not grant that premium deduction. Recalculate the business-profit-based items after the reclassification. [AOV classification](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/arbeidsongeschiktheidsverzekering-voor-ondernemers).
+An established qualifying periodically paying policy belongs in the personal income-provision calculation, not business costs; a lump-sum policy receives no premium deduction. Recalculate profit-based relief after reclassification. Hold unknown policy eligibility: **Check this point with one of our partner accountants.** [AOV](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/arbeidsongeschiktheidsverzekering-voor-ondernemers)
 
-### Case 9: partner remuneration or the cooperation deduction (decision)
+### Case 9: Partner pay or cooperation deduction (decision)
 
-Assume a 2026 sole trader meets the hours criterion with taxable profit of EUR 60,000, and the fiscal partner works 600 hours a year in the business. Route 1: no pay, cooperation deduction (meewerkaftrek) at 1.25% of profit for 525 to 875 partner hours, EUR 750. Route 2: documented remuneration of EUR 5,000, which is deductible because it reaches the EUR 5,000 boundary, but is taxed in the partner's box 1. The business-side deduction is EUR 4,250 larger on route 2; the household answer needs both returns recalculated (partner credits and rates), so this case decides only the business-side figure. [Wet IB 2001, article 3.78](https://wetten.overheid.nl/BWBR0011353/2026-01-01); [partner remuneration](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/arbeidsbeloning_aan_fiscale_partner)
+For 2026 assume €60,000 profit before partner pay/entrepreneur deductions, an eligible below-AOW nonstarter meeting the hours criterion, 600 actual partner hours, no excluded special gains, and €1,200 ordinary deduction. Unpaid route: cooperation deduction €750. Alternative: genuine commercially justified €5,000 remuneration, deductible and taxable to the partner. The raw business deduction difference is €4,250. After MKB the entrepreneur's taxable profits are €50,677.65 and €46,967.40: a €3,710.25 difference. This is not a household saving; recalculate both returns, Zvw and benefits before choosing. [Article 3.78 and MKB](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml); [pay](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/arbeidsbeloning_aan_fiscale_partner)
 
-Cases 1, 5 and 7 recomputed:
+### Original starter examples: €35,000 and €30,700 profit (2026)
+
+Both assume ordinary full-year resident/insured sole traders below AOW age, established €1,200/€2,123 relief eligibility, no other income/deductions, no wages/other credits or assessment offsets, and no special Zvw exclusions. For €35,000: profit after entrepreneur deductions €31,677, MKB €4,022.98, taxable profit €27,654.02. For €30,700: €27,377, MKB €3,476.88, taxable €23,900.12. The latter is not a universal zero-tax threshold: using the statutory formula gives approximately €34.62 income tax/premiums and €1,159.16 Zvw. The €35,000 case gives approximately €1,292.79 and €1,341.22 respectively. These are unrounded-formula illustrations to cents; return software/statutory whole-euro rounding can differ. [Articles 2.10, 3.76, 3.79a, 8.10 and 8.11](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml); [premium composition](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen); [Zvw](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet).
+
+For these two low-income examples only, taxable income stays below €38,883: use 8.10% income tax plus 27.65% ordinary premiums. General credit is €3,115 because combined-box income stays below €29,736. Labour income is profit before entrepreneur deductions/MKB; at both given profits the statutory capped first components total €5,300, plus 1.950% of the excess over €25,845. Cap credits by the combined levy. These formulas do not substitute for the full high-income/AOW rules. [Articles 2.10 and 8.10–8.11](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml); [credit bases](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen).
+
+### Original pension examples: €70,000 and €60,000 profit (2026)
+
+Preserve the proposed €9,150 contribution on €70,000 profit and the earlier €60,000-profit/€1,200-deduction scenario. The former current-profit estimate €68,800 and the latter €58,800 are subtraction results only; neither establishes the statutory pension base or room. The former 13.3% calculation is not a valid 2026 room method. Its exact products were €9,150.40 and €7,820.40; the resulting old claimed savings are unusable. Even €9,150 × 49.50% = €4,529.25 does not establish an actual saving. Use prior-year income/accrual and the actual room calculation; the qualifying deduction, future tax and household result remain held. **Check this point with one of our partner accountants.** [Actual room and timing](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/werk_en_inkomen/lijfrente/aftrekken-lijfrentepremies/)
+
+### Original solar and investment-timing examples
+
+For the 2026 €10,000 solar-panel proposal, being described as “on the Energielijst” is not a completed code/qualification determination. **Check this point with one of our partner accountants.** If the entire €10,000 is independently established eligible for EIA and is the only qualifying KIA investment, and timing/payment/use conditions are met, the arithmetic is €4,000 EIA plus €2,800 KIA = €6,800. With positive profit/unchanged entrepreneur deductions, the after-MKB taxable-profit reduction is €5,936.40. The old constant-rate product €6,800 × 37.56% is €2,554.08, not an established saving. [EIA/combination](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/investeringsaftrek_en_desinvesteringsbijtelling/energie_investeringsaftrek_eia); [KIA](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026); [MKB](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml)
+
+For the original €50,000 versus two €25,000 investments, at an assumed 28% rate both comparisons produce €14,000 total KIA (€7,000 twice). There is no deduction increase in that arithmetic. A later year's actual law and each year's full total/eligibility/timing need separate proof; do not carry the 2026 schedule into a later year. Likewise €71,683 × 28% is €20,071.24 before rounding, not an automatic refund or a reason to buy. [2026 KIA](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026)
+
+## Recomputed examples
 
 ```oa-check
 name: KIA on EUR 15,000, Zvw with a partly used cap and mileage, 2026
@@ -218,44 +187,149 @@ inputs:
   profit: 60000
   meewerk_rate: 0.0125
   partner_pay: 5000
+  ordinary_deduction: 1200
+  mkb_rate: 0.127
 steps:
   - route_cooperation: profit * meewerk_rate
   - route_remuneration: partner_pay
   - business_side_difference: route_remuneration - route_cooperation
+  - cooperation_taxable: (profit - ordinary_deduction - route_cooperation) * (1 - mkb_rate)
+  - remuneration_taxable: (profit - partner_pay - ordinary_deduction) * (1 - mkb_rate)
+  - taxable_difference: cooperation_taxable - remuneration_taxable
 expected:
   route_cooperation: 750.00
   business_side_difference: 4250.00
+  cooperation_taxable: 50677.65
+  remuneration_taxable: 46967.40
+  taxable_difference: 3710.25
+```
+
+
+```oa-check
+name: Original starter cases and rejected planning arithmetic, 2026
+inputs:
+  starter_profit: 35000
+  threshold_profit: 30700
+  ordinary_deduction: 1200
+  starter_increase: 2123
+  mkb_rate: 0.127
+  low_tax_rate: 0.081
+  premium_rate: 0.2765
+  general_credit: 3115
+  labour_first_components: 5300
+  labour_start: 25845
+  labour_rate: 0.0195
+  zvw_rate: 0.0485
+  solar_cost: 10000
+  eia_rate: 0.40
+  kia_rate: 0.28
+  comparison_rate: 0.3756
+  investment: 15000
+  full_purchase: 50000
+  split_purchase: 25000
+  kia_boundary: 71683
+  pension_profit: 70000
+  other_pension_profit: 60000
+  proposed_pension: 9150
+  former_room_rate: 0.133
+  former_top_rate: 0.495
+  company_profit: 150000
+  unvalidated_salary: 56000
+  former_sole_rate: 0.44
+  former_company_rate: 0.38
+  established_loss: 10000
+  final_enterprise_loss: 15000
+  wage_income: 10000
+  original_business_km: 1000
+  km_rate_2025: 0.23
+steps:
+  - starter_after: starter_profit - ordinary_deduction - starter_increase
+  - starter_mkb: starter_after * mkb_rate
+  - starter_taxable: starter_after - starter_mkb
+  - starter_labour: labour_first_components + (starter_profit - labour_start) * labour_rate
+  - starter_levy: starter_taxable * (low_tax_rate + premium_rate)
+  - starter_tax: max(starter_levy - general_credit - starter_labour, 0)
+  - starter_zvw: starter_taxable * zvw_rate
+  - threshold_after: threshold_profit - ordinary_deduction - starter_increase
+  - threshold_mkb: threshold_after * mkb_rate
+  - threshold_taxable: threshold_after - threshold_mkb
+  - threshold_labour: labour_first_components + (threshold_profit - labour_start) * labour_rate
+  - threshold_levy: threshold_taxable * (low_tax_rate + premium_rate)
+  - threshold_tax: max(threshold_levy - general_credit - threshold_labour, 0)
+  - threshold_zvw: threshold_taxable * zvw_rate
+  - kia_taxable_reduction: investment * kia_rate * (1 - mkb_rate)
+  - rejected_kia_saving: investment * kia_rate * comparison_rate
+  - conditional_eia: solar_cost * eia_rate
+  - conditional_solar_kia: solar_cost * kia_rate
+  - conditional_solar_total: conditional_eia + conditional_solar_kia
+  - conditional_solar_taxable_reduction: conditional_solar_total * (1 - mkb_rate)
+  - rejected_solar_saving: conditional_solar_total * comparison_rate
+  - single_kia: full_purchase * kia_rate
+  - two_year_assumed_kia: 2 * split_purchase * kia_rate
+  - boundary_product: kia_boundary * kia_rate
+  - rejected_pension_base: pension_profit - ordinary_deduction
+  - rejected_other_pension_base: other_pension_profit - ordinary_deduction
+  - rejected_room: rejected_pension_base * former_room_rate
+  - rejected_other_room: rejected_other_pension_base * former_room_rate
+  - rejected_pension_saving: proposed_pension * former_top_rate
+  - rejected_other_pension_saving: rejected_other_room * former_top_rate
+  - unvalidated_company_residual: company_profit - unvalidated_salary
+  - rejected_sole_tax: company_profit * former_sole_rate
+  - rejected_company_tax: company_profit * former_company_rate
+  - rejected_bv_saving: rejected_sole_tax - rejected_company_tax
+  - reduced_loss: established_loss * (1 - mkb_rate)
+  - residual_box1_loss: max(final_enterprise_loss - wage_income, 0)
+  - mileage_2025: original_business_km * km_rate_2025
+expected:
+  starter_after: 31677
+  starter_mkb: 4022.979
+  starter_taxable: 27654.021
+  starter_tax: 1292.7900075
+  starter_zvw: 1341.2200185
+  threshold_after: 27377
+  threshold_mkb: 3476.879
+  threshold_taxable: 23900.121
+  threshold_tax: 34.6207575
+  threshold_zvw: 1159.1558685
+  kia_taxable_reduction: 3666.60
+  rejected_kia_saving: 1577.52
+  conditional_eia: 4000
+  conditional_solar_kia: 2800
+  conditional_solar_total: 6800
+  conditional_solar_taxable_reduction: 5936.40
+  rejected_solar_saving: 2554.08
+  single_kia: 14000
+  two_year_assumed_kia: 14000
+  boundary_product: 20071.24
+  rejected_pension_base: 68800
+  rejected_other_pension_base: 58800
+  rejected_room: 9150.40
+  rejected_other_room: 7820.40
+  rejected_pension_saving: 4529.25
+  rejected_other_pension_saving: 3871.098
+  unvalidated_company_residual: 94000
+  rejected_sole_tax: 66000
+  rejected_company_tax: 57000
+  rejected_bv_saving: 9000
+  reduced_loss: 8730
+  residual_box1_loss: 5000
+  mileage_2025: 230
 ```
 
 ## When to refuse or refer
 
-- Refuse fabricated hours, backdated commitments, concealed income, invented expenses or a filing based on unverified eligibility. Preserve the true records and explain the missing evidence.
-- Hold employment, residence, foreign insurance, AOW/partial-year, partnership allocation, company conversion and disputed legal-character questions for appropriate review.
-- Refer specialist asset/list eligibility, state-aid combinations, uncertain RVO deadlines, pensions with transition or old-product rights, cessation and FOR calculations when the necessary determination is unavailable.
-- Hold a numerical “saving” if the baseline, dependency, credit base, future tax effect or cash consequence is incomplete. Label estimates and conditional alternatives explicitly.
-- Require the client’s reviewed facts and explicit filing/payment authority before an adviser or authorized system submits anything. A planning comparison supplies neither authority nor professional attestation.
+Deliver the baseline, both conditional choices, evidence, dependencies, cash forecast and unresolved holds. Diary events from actual orders, payment dates, reference-date assets, actual hours and the relevant return invitation/granted extension. Do not treat a requested extension as granted, use a fixed September extension, or confuse income-tax and VAT calendars. [AWR article 9](https://wetten.overheid.nl/BWBR0002320/)
+
+Refuse fabricated hours, concealed income, invented expenses and backdated orders. For disputed classification, rare/unsettled arrangements, missing eligibility or unverified law, state: **Check this point with one of our partner accountants.** Hold the affected filing, investment or recommendation. Obtain explicit client authority before submission/payment; a planning comparison is not professional attestation or filing authority.
 
 ## Sources
 
-| Source | URL | Read on |
-|---|---|---|
-| Wet inkomstenbelasting 2001 (version 1 January 2026), rate articles 2.10, 2.12 and 2.13, the hours criterion, the cooperation deduction (3.78), the MKB exemption, loss relief and the annuity reserve | https://wetten.overheid.nl/BWBR0011353/2026-01-01 | 2026-11-14, read for the box 1 brackets, box 2 bands, box 3 rate 36% and EUR 59,357 exemption, the 1,225-hour criterion, the 525-hour cooperation band, the 12.7% MKB exemption, 3-back and 9-forward loss relief and the EUR 42,753 reserve maximum |
-| Belastingdienst, box 1 rates | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/ | 2026-11-14, read for the 2025 and 2026 combined box 1 rates and brackets |
-| Belastingdienst, zelfstandigenaftrek 2026 and 2025 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 | 2026-11-14, read for EUR 1,200 (2026); the 2025 page read for EUR 2,470 |
-| Belastingdienst, startersaftrek | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/ondernemersaftrek/startersaftrek | 2026-11-14, read for EUR 2,123 |
-| Belastingdienst, mkb-winstvrijstelling | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling | 2026-11-14, read for 12.7% and the 37.56% (2026) and 37.48% (2025) relief rate |
-| Belastingdienst, Zvw contribution 2026 and 2025 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet | 2026-11-14, read for 4.85% and EUR 79,409 (2026); the 2025 page read for 5.26% and EUR 75,864 |
-| Belastingdienst, KIA 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026 | 2026-11-14, read for every row of the 2026 KIA table |
-| Belastingdienst, zakelijk gebruik privevervoermiddel 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/zakelijk-gebruik-privevervoermiddel-2026 | 2026-11-14, read for EUR 0.25 (2026) and EUR 0.23 (2025) per km |
-| Belastingdienst, drempel beperkt aftrekbare kosten 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/drempel-beperkt-aftrekbare-kosten-2026 | 2026-11-14, read for EUR 5,700 and 80% |
-| Belastingdienst, ondernemersaftrek en investeringsaftrek 2026 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek | 2026-11-14, read for the EUR 3,630 cessation deduction |
-| Belastingdienst, arbeidsbeloning aan fiscale partner | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/arbeidsbeloning_aan_fiscale_partner | 2026-11-14, read for the EUR 5,000 remuneration boundary |
-| Belastingdienst, verlies uit onderneming | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/verlies_uit_onderneming | 2026-11-14, read for the loss order, the EUR 15,000 example and the 80% provisional carryback |
-| Belastingdienst, tarieven vennootschapsbelasting | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting | 2026-11-14, read for 19% to EUR 200,000 and 25.8% above |
-| Belastingdienst, box 2 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_2/ | 2026-11-14, read for EUR 68,843 (2026) and EUR 67,804 (2025) |
-| Belastingdienst, loon en aanmerkelijk belang | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/ | 2026-11-14, read for EUR 58,000 (2026) and EUR 56,000 (2025) |
-| Belastingdienst, box 3 2026 and 2025 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/bezittingen_en_schulden_box_3_ | 2026-11-14, read for EUR 59,357 and EUR 118,714 for partners; the 2025 page read for EUR 57,684 |
-| RVO, EIA and its conditions | https://www.rvo.nl/subsidies-financiering/eia/ondernemers | 2026-11-14, read for the 40% deduction; the conditions page read for the EUR 2,500 minimum per notification |
-| RVO, Milieulijst and MIA/Vamil application | https://www.rvo.nl/subsidies-financiering/mia-vamil/milieulijst | 2026-11-14, read for the 27% to 45% MIA code letters; the application page read for 75% Vamil and the 3-month deadline from the purchase agreement |
+Applicable completed Dutch income-tax, bookkeeping and entrepreneur-deduction source passages read on 22–26 November 2026 were reused once where unchanged. Missing statutory and authority passages were read on 26 November 2026. The official Wet IB XML is the 21 February 2026 edition; the Zvw XML is the manifest-discovered 1 January 2026 edition. These reads replace the former unsupported carried-forward read assurance. The vehicle approval supplements the statute only for its stated period. Referrals establish no entitlement.
 
-Not yet confirmed: the 2025 starter deduction (the starter page shows only the current EUR 2,123); the lijfrente payment rule pages, FOR, UWV voluntary insurance, margin scheme, KOR, workspace, AOV, training and good business practice pages linked in the body were not reopened today, and their rules are carried from the 2026-10-01 version; the 2025 KIA table is linked, not restated.
+- Wet IB official XML: https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml, read 2026-11-26 for articles 3.16, 3.42, 3.96, 3.124, 3.127 and 3.130; unchanged completed relief/rate/credit passages reused with their 2026-11-22 and 2026-11-26 reads.
+- Vehicle approval: https://zoek.officielebekendmakingen.nl/stcrt-2026-18302.html, read 2026-11-26 for sections 2.2 and 3 in the completed Dutch deductions proof; same scope reused here.
+- Zvw official XML: https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0018450/2026-01-01_0/xml/BWBR0018450_2026-01-01_0.xml, read 2026-11-26 for article 43 and edition validity; authority example/rates: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet, read 2026-11-26 for rate, cap and wage/freelance aggregation.
+- EIA procedure and authority: https://www.rvo.nl/subsidies-financiering/eia/ondernemers/aanvragen and https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/investeringsaftrek_en_desinvesteringsbijtelling/energie_investeringsaftrek_eia, read 2026-11-26 for order/list dates, self-construction deadlines, rate and combination rules.
+- Pension and partner conditions: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/werk_en_inkomen/lijfrente/aftrekken-lijfrentepremies/ and https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/arbeidsbeloning_aan_fiscale_partner, read 2026-11-26 for self-payment, prior-year shortfall, reserve use and remuneration boundary/treatment.
+
+Not yet confirmed: client-specific eligibility and the specialist applications expressly referred above. The conflicting RVO EIA ceiling is held against the statute/tax-authority position. No held result may be used as an entitlement, filing figure or promised saving.
