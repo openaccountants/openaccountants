@@ -1,10 +1,10 @@
 ---
 name: eg-withholding-tax
 description: Use this skill whenever asked about Egyptian withholding tax for tax year 2026, both on payments abroad to non-residents (interest, royalties, services, athletes and artists, dividends) and on payments to Egyptian residents under the deduction at source system of Law 91 art. 59 (commissions, brokerage, purchases, supplies, contracting, services) with quarterly form 41, plus the advance payment alternative. Trigger on phrases like "Egypt WHT", "Egypt withholding tax", "ضريبة الخصم تحت حساب الضريبة", "الخصم والتحصيل", "نموذج 41", "نموذج 11 مستقطعة", "dividends to non-resident Egypt", "royalty WHT Egypt", "technical services fee Egypt", "dividend tax Egypt", or any payment by an Egyptian payer that may need tax withheld. ALWAYS read this skill before touching any Egypt withholding work.
-version: 0.4
+version: 0.5
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-21
+last_updated: 2026-11-26
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -14,103 +14,83 @@ domain: cross-border
 type: computation
 ---
 
-# EG Withholding Tax v0.4
+# Egyptian withholding tax — 2026
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
-
-This skill covers tax withheld by Egyptian payers for tax year 2026: the tax deducted at source on payments to non-residents (الضريبة المستقطعة من المنبع, Law 91 Book Four), dividend tax, and the deduction on account of tax on payments to residents (الخصم تحت حساب الضريبة, Law 91 Book Five) with its advance payment alternative. Reply in the user's language, English or Arabic. All amounts are in EGP. Law 151 of 2026 took effect on 29 July 2026 and replaced the dividend article and the art. 56 loan exemption; rows say which period applies.
+Use this Guide to classify Egyptian withholding before calculating it. Distinguish non-resident withholding, dividend tax and resident deductions on account of income tax. Amounts below are EGP. The figures are domestic rules; establish any treaty or statutory exemption first.
 
 ## Who this applies to
 
-- **Payers abroad** (Law 91 art. 56): sole proprietors, legal persons resident in Egypt, and non-resident bodies with a PE in Egypt, paying amounts to non-residents.
-- **Dividend tax** (art. 56 bis as replaced by Law 151/2026): capital companies and partnerships (civil companies count as partnerships), including companies in special economic zones, distributing to non-resident individuals and to resident or non-resident legal persons. Resident individuals pay dividend tax under art. 46 bis (`eg-income-tax`).
-- **Payers at home** (art. 59, first para. as replaced by Law 53/2014; the list of payers is the 2005 text): ministries, local units, public bodies, public sector and public business companies, capital companies, investment-law companies, partnerships with capital over EGP 50,000, special-law companies, free zone companies and projects, branches of foreign companies, pharmacies and import offices, cooperatives, press, schools, unions, clubs, federations, hospitals, hotels, NGOs, professional offices, foreign representative offices, cinema and theatre businesses, private insurance funds, and any other body named by ministerial decision.
-- **Not withheld from:** a private sector taxpayer with regular records whom the ETA has accepted into the advance payment system (art. 60); a project in the Law 6/2025 turnover regime, which neither suffers nor applies withholding (`eg-sme-tax`).
-- **State entities as payees** (ETA circular 6 of 2024, applying Law 159 of 2023 and PM Decree 242 of 2024): every body bound by art. 59 deducts on account of tax from each amount it pays to a State entity that carries on an economic activity subject to the tax on commercial and industrial profits, under the rules of art. 59 and its regulations (item 1). The bodies in art. 59 item (1) also apply art. 59 bis and Executive Regulations art. 82 bis (item 2). No deduction is made where the State entity shows a certificate that it is exempt from income tax, or not subject to it, after Law 159 took effect, under art. 73, or that it is in the advance payment system under art. 60 (item 3). The State entity keeps its own duties as a payer under arts. 59, 59 bis, 59 bis 1 and 59 bis 2, at the rates in the ministerial decisions (item 4), and keeps separate accounts for each taxable investment or economic activity (item 5). Who counts as a State entity and what stays exempt: State entities are units of the State administrative apparatus (sovereign bodies included), local administration units, national public, service and economic authorities, bodies with special budgets, and entities and companies that any of them owns, or in which any of them holds a share, directly or indirectly, whatever the share, the legal form, the activity or the use made of the money earned (PM Decree 242 of 2024 art. 1). Economic or investment activity means producing goods, selling them, providing services of any kind, or granting exploitation rights, of the kind the private sector normally carries on (Decree 242 art. 3). Still exempt (Law 159 art. 1; Decree 242 art. 2): exemptions under international agreements in force in Egypt, for as long as those texts run; exemptions for military works and tasks, defence and national security; and exemptions for basic public utility services, which a Cabinet decision is to list. The art. 59 rates are on the "Not yet confirmed" line.
-- **Not here:** salary tax and the 10% on a non-original employer's payments (art. 72 bis): `eg-payroll`; the company's own tax: `eg-corporate-tax`; treaty residence and PE questions: `eg-cross-border`.
+- Article 56 covers payments to non-residents by sole proprietors, Egyptian resident legal persons and non-resident bodies with an Egyptian permanent establishment (PE). The withholding obligation includes the specified special-economic-zone companies, establishments and branches and free-zone projects.
+- Article 56 bis covers distributions by capital companies and partnerships, including special-economic-zone companies, to non-resident individuals and resident or non-resident legal persons. Civil companies count as partnerships. Resident individual dividend tax is a separate topic in `eg-income-tax`.
+- For resident deductions, establish that the payer is within Article 59. Its list includes government/public bodies, companies, investment/free-zone businesses, foreign branches, partnerships with capital **over EGP 50,000**, pharmaceutical warehouses, import offices, cooperatives, press and educational institutions, professional offices and the other listed bodies or bodies designated by ministerial decision. Consult the complete Article 59 list before treating an unlisted payer as liable. [Law 91, art. 59](https://www.wipo.int/wipolex/ar/legislation/details/20194).
+- An accepted advance-payment taxpayer with regular records is exempt from the Article 59 deduction system (art. 60). For a project established as subject to Law 6/2025, Article 11 excludes the income-tax deduction-on-account and advance-payment systems; this is **not a blanket exemption from every withholding category**. Establish regime eligibility under `eg-sme-tax` first. [Law 6, art. 11](https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf).
+- State ownership alone does not establish exemption. Law 159/2023 cancels the specified State-entity tax/fee exemptions for economic or investment activity, subject to international agreements, military/defence/national-security and basic-public-utility exceptions. Contracts concluded before commencement keep their prior legal treatment until completely performed. [Law 159, arts. 1–2](https://eta.gov.eg/sites/default/files/2024-12/law_no._159_for_2023.pdf). State-specific application is held below.
 
 ## Rates, bands and thresholds
 
-| Item | Rate or amount | Conditions | Tax year | Official URL |
-|---|---|---|---|---|
-| Interest paid to a non-resident | 20% of the gross, no costs | Law 91 art. 56 item 1 | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
-| Royalties paid to a non-resident | 20% | Art. 56 item 2; not on amounts paid abroad for designs or know-how serving industry, in the cases the minister sets with the industry minister | 2026 | same |
-| Services paid to a non-resident | 20% | Art. 56 item 3; not on a PE's share of head office administrative and supervision costs (cap 7% of PE profit, Executive Regulations art. 74) | 2026 | same |
-| Athletes and artists, non-resident | 20% | Art. 56 item 4, whether paid directly or through any body | 2026 | same |
-| Interest exempt: government borrowing | 0% | Loans and credit facilities obtained by the government, local units and other public legal persons from outside Egypt (art. 56 third para. as replaced by Law 30/2023) | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf |
-| Interest exempt: infrastructure loans | 0% | Loans of at least five years from unrelated persons funding national infrastructure projects named by Prime Minister decision; the company's share at least 25% of its investments; ends when the term of the loans for carrying out the project's main works ends (art. 56 fourth para., Law 151/2026, as corrected by the Gazette erratum of 8 Aug 2026) | From 29 Jul 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf |
-| Dividends to non-resident individuals and to resident or non-resident legal persons | 10%; 5% if the securities are listed on the Egyptian Exchange | Art. 56 bis as replaced by Law 151/2026; no costs; not on bonus shares | 2026 | same |
-| PE profits of a non-resident company | 10% as dividends, deemed distributed 60 days after the PE's year end | Art. 56 bis | 2026 | same |
-| Dividend tax remittance | Within five working days from the start of the month after collection, to the ETA central department for deduction and collection, on the set form | Art. 56 bis | 2026 | same |
-| Non-resident's gain on unlisted Egyptian shares or company interests | Seller computes and pays within 60 days of the transaction | Art. 46 bis 3 as replaced by Law 151/2026; non-resident gains on treasury bills are outside the tax | From 29 Jul 2026 | same |
-| Commission or brokerage to an individual not linked to the profession | 20%, remitted within 15 days of the following month | Art. 57; form 14 (Executive Regulations art. 79) | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
-| Treasury bill interest | 20%, no costs; payer remits the day after deduction | Art. 58 second para. as replaced by Law 30/2023 | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf |
-| Remittance, art. 56 | Within the first 15 days of the month after deduction | Art. 56 last para.; form 11 مستقطعة (Executive Regulations art. 76) | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
-| Deduction on account, payments to residents | A percentage set by the Minister of Finance, not over 5%, of each payment over EGP 300 for commission, brokerage, purchases, supplies, contracting or services to a private sector person; and of dividends of capital companies whatever the amount | Art. 59 first para. as replaced by Law 53/2014; insurance premiums excepted. The ministerial rate table was not read (see "Not yet confirmed") | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.53-2014.pdf |
-| Art. 59 remittance | Quarterly on form 41 خصم وتحصيل, by the end of April, July, October and January | Art. 86 as replaced by Law 53/2014; Executive Regulations art. 82 | 2026 | same |
-| Failure to withhold or remit | Fine of 25% of the amounts not paid; payer also owes the amounts and the delay charge | Art. 135 as replaced by Law 53/2014 (the 25% paragraph); art. 59 last para. | 2026 | same |
-| Settlement of that offence | 12.5% of amounts not withheld, or withheld and not remitted, plus the amounts and the delay charge | Law 206/2020 art. 75 bis 1, added by Law 7/2025 | 2026 | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf |
-| Delay charge | 22.50% a year in 2026 (Central Bank rate 20.50% on 1 Jan 2026 plus 2%) | Law 91 art. 110; part months and pounds dropped | 2026 | https://eta.gov.eg/sites/default/files/2026-03/Dawry.no_.1.of_.2026.pdf |
-| Delay charge ceiling | 100% of the principal | Law 206/2020 art. 45 bis (Law 7/2025) | 2026 | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf |
-| Advance payment alternative | 60% of the last declared tax in three equal instalments; once accepted, no art. 59 deduction | Arts. 60 to 63; ETA Services Guide 8/1 | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
+| Payment or rule | Amount / boundary | Conditions and period | Official source |
+|---|---|---|---|
+| Non-resident interest, royalties and athlete/artist fees | 20% of gross, no costs | Article 56; athlete/artist payment direct or through another body; establish exemptions and treaty position first. The former industry-design/know-how royalty exception is absent from the replacement royalty clause. 2026 | https://www.wipo.int/wipolex/ar/legislation/details/20194 ; https://eta.gov.eg/sites/default/files/2024-03/law_no.101-2012.pdf |
+| Non-resident service fees | 20% of gross, no costs | Article 56; first classify the service, including Regulations arts. 72–73 exclusions/treaty treatment; specialist classification is held below. Qualifying PE head-office costs are treated separately below. 2026 | https://www.wipo.int/wipolex/ar/legislation/details/20194 ; https://www.wipo.int/wipolex/ar/legislation/details/19951 |
+| Qualifying PE share of foreign head-office administrative, control and supervision costs | Outside service-fee category; cap 10% of PE net taxable profit | No royalties, interest, commissions or direct wages within the allocated amount; certified and authenticated head-office auditor certificate required. Article 56(3), Law 101/2012; Regulations art. 74 replaced by Decision 172/2015. 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.101-2012.pdf ; https://eta.gov.eg/sites/default/files/2024-03/law_no.172-2015.pdf |
+| Dividends within Article 56 bis | 10%; 5% for securities listed on the Egyptian Exchange | Gross, no costs; bonus shares excluded. Non-resident individuals and resident/non-resident legal persons; resident-company exclusions held below. Same rates in both periods: 1 Jan–28 Jul under Law 30/2023; from 29 Jul under Law 151/2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf ; https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf |
+| Non-resident legal person's Egyptian PE profits | 10%; deemed distributed **within** 60 days of financial year end | Article 56 bis; determine distribution timing/base for the actual PE, not an automatic distribution exactly on day 60. Both 2026 periods above | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf ; https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf |
+| Commission/brokerage paid to an individual, unconnected with carrying on their profession | 20% without costs | Article 57; sole-proprietor or legal-person payer. 2026 | https://www.wipo.int/wipolex/ar/legislation/details/20194 |
+| Treasury-bill interest | 20% without costs | Article 58(2), also covering specified creditor balances in the Treasury single account. 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf |
+| Article 59 resident deduction on account | Payment **over EGP 300**; ministerial percentage capped at 5% | Commission, brokerage, purchases, supplies, contracting or services to a private-sector person; insurance premiums excepted. Capital-company dividends are included by statute regardless of amount, but apply the separate dividend rules. The ceiling is **not an activity rate to apply**: actual decree classification/rate is held below. 2026 | https://www.wipo.int/wipolex/ar/legislation/details/20194 |
+| Advance-payment alternative | 60% of last declared tax | Use estimated tax for the intended year if no previous return or previous return shows a loss. ETA acceptance and regular records required for relief from Article 59 deduction. 2026 | https://www.wipo.int/wipolex/ar/legislation/details/20194 |
 
 ## The base
 
-**Non-residents (art. 56).**
-1. Is the payee non-resident, and is the amount interest, a royalty, a service fee or an athlete's or artist's fee? Egyptian-source rules are in art. 3 (rents, licence fees and royalties borne by a resident or an Egyptian PE are Egyptian source, art. 3(ي) as replaced by Law 30/2023).
-2. Apply 20% to the gross amount, no costs. If the contract makes the payer bear the tax, gross up: gross = net / 0.8.
-3. Check the exemptions in the table (government loans; infrastructure loans from 29 Jul 2026). Law 30/2023 art. 6 keeps the old exemption for loans and credit facilities of public sector, public business sector and private sector companies where interest on them was paid before Law 30/2023 took effect (16 Jun 2023) (the old art. 56 required loans of at least three years, Executive Regulations art. 75).
-4. Remit by the 15th of the next month on form 11; a non-resident dealing with a free zone project remits on form 12 (Executive Regulations art. 77).
-
-**Dividends (art. 56 bis).** 10% (5% listed) on the distribution, no costs, withheld by the body executing the transaction and remitted within five working days of the next month. Resident companies exclude dividends received from other resident companies from their profits base, and the law also excludes from the dividend tax base "the distributions a company resident in Egypt received from distributions made by another resident company" (Law 151/2026). How far that second exclusion reaches is not settled (see "Not yet confirmed").
-
-**Residents (art. 59).**
-1. Is the payer one of the bodies listed in art. 59, and the payee a private sector person not in the advance payment system or the Law 6/2025 regime?
-2. Is the single payment over EGP 300 and for commission, brokerage, purchases, supplies, contracting or services (or a dividend of a capital company)?
-3. Deduct at the ministerial rate for the activity, keep the records of every transaction and person dealt with and the amount collected (art. 86), and remit quarterly on form 41. The form records registration number, national ID, name, address, tax office, date, nature, gross value, deduction type, net value, rate and tax withheld.
-4. The payee credits the amount against its annual tax (`eg-corporate-tax`, `eg-income-tax`).
-5. During an exemption period of the payee, no deduction or collection applies, except the reporting duties of arts. 59 to 59 bis 2 (art. 73 as replaced by Law 53/2014).
-6. **Reporting duties, not a deduction** (arts. 59 bis to 59 bis 2 as replaced by Law 53/2014): art. 59 item 1 bodies that sell or distribute goods, industrial products or farm crops to private sector persons for trading or manufacturing, and art. 59 items 1 and 2 bodies that let premises they own for trading, manufacturing, services or food and drink, must send the ETA statements of the transactions and amounts or rents collected, by the end of April, July, October and January for the previous three months. The goods, activities and rents covered are set by ministerial decree.
-
-**Advance payments instead of deduction (arts. 60 to 63).** Apply on the form (1 دفعات مقدمة) at least 60 days before the tax period; ETA answers within 60 days and silence is refusal (art. 62; Executive Regulations arts. 83, 84). Acceptance works as a certificate to all payers for that period (art. 84). Pay 60% of the last declared tax, or of an estimate where there is no prior return or the prior period was a loss (art. 61), in three equal instalments by 30 June, 30 September and 31 December (art. 63); the third can be cut or skipped if profit will fall. Instalments earn a yield at the Central Bank rate. ETA moves the taxpayer back to deduction after two consecutive loss periods, a change of legal form, or a difference over 20% between declared and estimated profit (ETA Services Guide 8/1).
+1. Establish payer/payee identity, residence, PE, payment category, date, gross/net contract terms and applicable exemption/treaty position. **Do not apply the service rate before classification.** The regulatory exclusions include transport/freight, shipping, insurance, training, exhibitions/conferences, international-exchange registration, direct advertising/promotion, religious services, accommodation and the specified Tourism Ministry charter-flight incentive payments (Regulations art. 72). Application to mixed services: **Check this point with one of our partner accountants.**
+2. For a taxable Article 56 amount, multiply gross by the rate. If the contract gives a tax-free net amount and the payer bears a 20% withholding, the conditional arithmetic is gross = net / 0.80; tax = gross − net. Confirm contractual and legal classification first.
+3. Use the Article 56 bis dividend rates only within their scope. Resident-company dividend exclusions, costs, pass-through distributions and period allocation: **Check this point with one of our partner accountants.**
+4. Keep resident deductions as a separate tax credit process. The annual income-tax payment is net of tax deducted/collected and advances, with any applicable yield, under Unified Tax Procedures Law art. 32; this is not proof that every non-resident withholding is creditable. [Law 206, art. 32](https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf).
 
 ## Deadlines and filing
 
-| Payment type | Form | Deadline | Source |
+| Category | Form / action | Deadline and scope | Official source |
 |---|---|---|---|
-| Interest, royalties, services, athletes to non-residents | Form 11 مستقطعة | First 15 days of the following month | Law 91 art. 56; Executive Regulations art. 76 |
-| Dividends and deemed PE distributions | ETA form for dividend tax | Five working days from the start of the following month | Art. 56 bis |
-| Commission to unconnected individuals | Form 14 مستقطعة | First 15 days of the following month | Art. 57; Executive Regulations art. 79 |
-| Treasury bill interest | ETA form | Day after deduction | Art. 58 |
-| Art. 59 deductions from residents | Form 41 خصم وتحصيل | End of April, July, October, January for the previous quarter | Art. 86; Executive Regulations art. 82 |
-| Salaries | Payroll forms | `eg-payroll` | Law 206/2020 art. 31(b) |
+| Article 56 | Form 11 مستقطعة; remittance to the withholding collection department of the central international-agreements administration | **First working day following withholding**, including the specified special-zone/free-zone payers. Statute as amended by Law 101/2012 controls; do not use the former following-month deadline or former free-zone Form 12 | https://eta.gov.eg/sites/default/files/2024-03/law_no.101-2012.pdf ; https://eta.gov.eg/sites/default/files/2024-03/law_no.172-2015.pdf |
+| Article 56 bis dividends | Withhold by the body executing the transaction; prescribed dividend form | Within five working days from the beginning of the month following collection; central deduction/collection administration. Same deadline in both 2026 periods | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf ; https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf |
+| Article 57 commission/brokerage | Remit to payer's competent tax office; Form 14 under Regulations art. 79 | First 15 days of the month following payment | https://www.wipo.int/wipolex/ar/legislation/details/20194 ; https://www.wipo.int/wipolex/ar/legislation/details/19951 |
+| Treasury-bill interest | Payer collects and remits to competent tax office | Day following deduction, Article 58(2) | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf |
+| Article 59 ordinary resident deductions, **excluding capital-company dividends** | Form 41 خصم وتحصيل; retain transactions/payee/tax records | End of April, July, October and January; Regulations art. 82 as replaced in 2015 | https://eta.gov.eg/sites/default/files/2024-03/law_no.172-2015.pdf |
+| Elect advance payments | Request before intended period; await ETA decision | At least 60 days before period begins; ETA has 60 days to answer; silence means refusal (art. 62) | https://www.wipo.int/wipolex/ar/legislation/details/20194 |
+| Accepted advance payments | Three equal instalments | By 30 June, 30 September and 31 December (art. 63); after second payment, notify ETA to reduce/omit third if full-year profit will be below prior-year estimated profit. Short periods, forms, yield and cancellation held below | https://www.wipo.int/wipolex/ar/legislation/details/20194 |
 
-**Steps:**
-1. Download the current form templates from the ETA withholding forms page (https://www.eta.gov.eg/ar/content/nmadhj-aqrarat-alkhsm-walthsyl: forms 11 (V3), 14, 41, 42 to 44, 43, 45, 46, 47).
-2. Fill one line per transaction, then upload and pay through the ETA tax system (https://workspace.eta.gov.eg/workspace/dashboard for merged offices) or the channels in Executive Regulations art. 82 (bank transfer, smart card, approved banks or post).
-3. Keep the receipt and give the payee its details so it can credit the tax.
-
-**Treaty relief.** The ETA Services Guide (service 5/1) describes treaty relief on interest, royalties, services and dividends as a refund to the non-resident of the excess over the treaty rate: simplified registration, form 1 ضريبة مستقطعة من المنبع, an original certified residence certificate for each year, a beneficial owner certificate stating the income is not linked to an Egyptian PE, the contracts in Arabic, forms 11 and payment receipts. ETA decides within 45 days of a complete file, otherwise it owes a delay charge at the Central Bank rate plus 2%. Treaty rates themselves are not in this pack: read the treaty on ETA's list (see `eg-cross-border`).
+Use the [ETA withholding forms page](https://www.eta.gov.eg/ar/content/nmadhj-aqrarat-alkhsm-walthsyl) for current templates. Retain transaction details, computation, remittance evidence and the payee certificate. Current upload/office/payment-channel instructions: **Check this point with one of our partner accountants.**
 
 ## Penalties and interest
 
-| Failure | Consequence | Source |
+| Rule | Consequence / boundary | Official source |
 |---|---|---|
-| Not withholding, collecting or remitting on time | Fine 25% of the amounts not paid, plus the amounts and the delay charge; settlement at 12.5% instead | Law 91 arts. 59, 135 (Law 53/2014); Law 206/2020 art. 75 bis 1 (Law 7/2025) |
-| Late payment of tax withheld | Delay charge 22.50% a year in 2026, whole months, capped at 100% of the principal | Law 91 art. 110; ETA circular 1/2026; Law 206/2020 art. 45 bis |
-| Late or missing returns and forms | Fines under Law 206/2020 arts. 69 and 70 (EGP 3,000 to 50,000; EGP 5,000 to 200,000 over 60 days) | Law 206/2020; `eg-corporate-tax` |
-| Managers | The partner, manager or board member in charge is liable for evasion within their knowledge | Law 206/2020 art. 73 |
+| Failure to apply withholding/deduction/collection/remittance within legal deadlines | Article 135 surviving third paragraph: fine of 25% of unpaid amounts. It survives Law 206/2020 issuing art. 4. This does not extinguish principal or delay charge | https://www.wipo.int/wipolex/ar/legislation/details/20194 ; https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf |
+| Settlement of that offence | Minister or delegate **may** settle under art. 75 bis 1 for 12.5% of amounts not withheld/deducted/collected or withheld/deducted/collected but not remitted, **plus principal and delay charge**. Payment alone does not establish settlement approval | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf |
+| Delay on unremitted withholding | Starts day after remittance deadline; statutory rate is relevant preceding 1 January CBE credit/discount rate + 2 percentage points, excluding fractions of a month and pound. Where the applicable reference is 1 Jan 2026: 20.50% + 2% = 22.50% annually. Do not select a rate merely from the income's tax year | https://www.wipo.int/wipolex/ar/legislation/details/20194 ; https://eta.gov.eg/sites/default/files/2026-03/Dawry.no_.1.of_.2026.pdf |
+| Delay-charge ceiling | 100% of the principal tax on which delay/additional tax is due, Law 206 art. 45 bis | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf |
+
+Other return/form offences, repeat offences, evasion and manager liability: **Check this point with one of our partner accountants.**
 
 ## Cross-border points
 
-- The 20% art. 56 rate and the 10% or 5% dividend rate are the domestic rates. Residence certificates, beneficial ownership, PE status and the ETA treaty list are covered in `eg-cross-border`; treaty rates are not in this pack, so read the treaty itself; relief runs through the ETA refund procedure above.
-- A non-resident company's Egyptian PE pays 22.5% on its profit (`eg-corporate-tax`) and 10% on the deemed distribution 60 days after its year end; there is no separate branch remittance tax beyond that.
-- A non-resident selling unlisted Egyptian shares pays its own tax within 60 days; the Egyptian buyer does not withhold under art. 46 bis 3.
-- VAT on imported services is separate: `egypt-vat`.
+Each line is a hold, not a usable tax conclusion:
+
+| Topic | Action |
+|---|---|
+| Treaty country rates, residence/beneficial-owner/PE tests, relief at source versus refund, documents, refund limits and processing time | Check this point with one of our partner accountants. |
+| Government foreign borrowing, legacy company loans before Law 30/2023 and national-infrastructure loan relief under Law 151/2026 and its Gazette erratum; maturity, lender relationship, project designation, investment share and expiry | Check this point with one of our partner accountants. |
+| Rents to non-residents, software/know-how classification, Egyptian-source analysis, mixed services, timing of deduction on payment/credit/invoice | Check this point with one of our partner accountants. |
+| Non-resident listed/unlisted share or company-interest gains, treasury-bill gains, seller payment and buyer obligations | Check this point with one of our partner accountants. |
+| Resident Article 59 activity rates and current threshold application; exempt payees and reporting under arts. 59 bis–59 bis 2, designated goods/activities/rents and quarterly data requirements | Check this point with one of our partner accountants. |
+| State payees/payers: Law 159 scope, PM Decree 242/2024, ETA circular 6/2024, exemption/non-liability or advance-payment certificates, separate activity accounts, indirect ownership, basic-utility list, pre-existing contracts/renewals/increases and special-law/NOSI exemptions | Check this point with one of our partner accountants. |
+| Advance-payment forms/certificates, short/non-calendar periods, yield, return to deduction after losses/legal-form change/estimate differences; record retention and annual reconciliation | Check this point with one of our partner accountants. |
+
+Salary/non-original-employer withholding: `eg-payroll`; company profit tax: `eg-corporate-tax`; imported-service VAT: `egypt-vat`; related cross-border analysis: `eg-cross-border`. These are separate computations, not additional amounts computed here.
 
 ## Two worked examples that recompute
 
-**Case 1. Royalty and dividend to a foreign parent, no treaty claim.** An Egyptian unlisted company pays a royalty of EGP 1,000,000 and a dividend of EGP 5,000,000 to its non-resident parent in March 2026. Royalty: 20% = 200,000, remitted on form 11 by 15 April. Dividend: 10% = 500,000, remitted within five working days of April. The parent receives 800,000 and 4,500,000. If the shares were listed, the dividend tax would be 250,000.
+**Case 1 — royalty and dividend to a foreign parent.** An Egyptian unlisted company pays a **gross royalty of EGP 1,000,000** and a **gross dividend of EGP 5,000,000** to its non-resident parent in **March 2026**, with no treaty claim. Conditional on taxable royalty classification and no applicable exemption: royalty tax = 1,000,000 × 20% = **200,000**, net royalty **800,000**; dividend tax = 5,000,000 × 10% = **500,000**, net dividend **4,500,000**; total net **5,300,000**. The royalty is remitted on Form 11 on the first working day following withholding; the dividend within five working days from the beginning of April. Payment/withholding date and holiday calendar are needed to name an exact due date. If the securities were listed on the Egyptian Exchange, dividend tax would be **250,000**. This March case uses Law 30/2023, not the later Law 151 resident-dividend exclusions.
 
 ```oa-check
 name: Royalty and dividend to non-resident parent 2026
@@ -129,7 +109,7 @@ expected:
   dividend_tax_listed: 250000.00
 ```
 
-**Case 2. Decision: settle a missed remittance or wait for the fine.** A company withheld 200,000 on a service fee to a non-resident in January 2026 and has not remitted it five whole months later. Delay charge at 22.50%: 200,000 x 22.5% x 5/12 = 18,750. Settling under Law 206 art. 75 bis 1 costs 12.5% = 25,000 on top, total 243,750. Left to the art. 135 fine of 25% (50,000), the total is 268,750, and prosecution stays open. Settling saves 25,000.
+**Case 2 — approved settlement versus the statutory fine.** Preserve the original company/service-payment scenario: **EGP 200,000 withheld in January 2026**, unremitted, with **five whole months of chargeable delay** after the statutory deadline, all within 2026. Exact dates are needed to establish that count; no later-year rate is assumed. At the applicable 22.50% annual rate, charge = 200,000 × 22.5% × 5/12 = **18,750**, below the cap. **If the Minister/delegate approves settlement** and no other amounts apply, compensation = 200,000 × 12.5% = **25,000**, total **243,750**. The Article 135 fine comparison is 200,000 × 25% = **50,000**, total **268,750** on the same principal/delay assumptions. Difference **25,000**. This compares amounts; it does not promise settlement, extinguish prosecution automatically or suggest that waiting is permissible.
 
 ```oa-check
 name: Missed remittance, settlement against fine
@@ -150,37 +130,33 @@ expected:
 
 ## Ask the client first
 
-1. Who is paid: resident or non-resident, individual or company, and does the payee have an Egyptian PE?
-2. What is paid: interest, royalty, service, dividend, commission, goods, contracting? Gross amount and payment date?
-3. For dividends: listed or unlisted shares, and is the shareholder a resident company?
-4. Is the payee in the advance payment system or the Law 6/2025 regime?
-5. Does a treaty apply, and does the payee hold a residence certificate and beneficial owner certificate?
-6. Does the contract make the payer bear the tax (gross-up)?
-7. Is the payee a State body or a company the State owns or shares in (Law 159/2023)? If yes, does it carry on an economic activity, and has it shown an income tax exemption or non-liability certificate or advance payment acceptance?
+1. Payer and payee identity, legal form, residence, Egyptian PE and State ownership?
+2. Payment category, gross amount, payment/withholding dates and contract gross-up clause?
+3. Dividend recipient type, securities listing, relevant period and any resident-company exclusion?
+4. Statutory exemption/certificate, accepted advance-payment status or established Law 6/2025 eligibility?
+5. Treaty, residence certificate, beneficial owner and connection to an Egyptian PE?
+6. For an unpaid remittance: exact due/payment dates, principal, prior payments and formal settlement status?
 
-Do not help disguise payments to avoid withholding. Do not present output as a filed form or a professional sign-off.
+Do not present a computation as a filed form or accountant approval.
 
 ## Sources
 
-| Source | URL | Read on |
-|---|---|---|
-| Income Tax Law 91 of 2005, original Gazette text: arts. 47 to 63 (page images read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf | 2026-11-02 |
-| Executive Regulations, MoF decree 991 of 2005: arts. 74 to 84 (page images read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.991-2005.pdf | 2026-11-02 |
-| Law 53 of 2014, art. 1: arts. 59 first para., 59 bis to 59 bis 2, 72, 73, 86, 135, 138 (page images read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.53-2014.pdf | 2026-11-02 |
-| Law 30 of 2023, whole text: arts. 3, 56, 56 bis, 58, 72 bis and transitional art. 6 (text layer read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf | 2026-11-02 |
-| Law 151 of 2026, whole text; Gazette 30 bis (a), 28 Jul 2026 (text layer read) | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf | 2026-11-02 |
-| Law 7 of 2025, whole text: arts. 45 bis, 75 bis, 75 bis 1 of Law 206 | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf | 2026-11-02 |
-| Unified Tax Procedures Law 206 of 2020: arts. 29 to 33, 53, 69 to 75 (page images read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-02 |
-| ETA circular 1 of 2026 (Central Bank rates; page image read) | https://eta.gov.eg/sites/default/files/2026-03/Dawry.no_.1.of_.2026.pdf | 2026-11-02 |
-| ETA Services Guide, 2nd edition: services 5/1 (treaty refund), 8/1 (advance payments), settlement of withholding offences (text layer read) | https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf | 2026-11-02 |
-| ETA withholding forms page and form 41 template (column headings read) | https://www.eta.gov.eg/ar/content/nmadhj-aqrarat-alkhsm-walthsyl | 2026-11-02 |
-| Executive Regulations, MoF decree 991 of 2005: Book 5 on deduction, collection and advance payments (page images, OCR), checked for a rate table: none | https://eta.gov.eg/sites/default/files/2024-03/law_no.991-2005.pdf | 2026-11-21 |
-| ETA income tax laws-and-decisions list, checked for the art. 59 rate decree: not listed | https://eta.gov.eg/ar/content/qwanyn-aldrybt-ly-aldkhl | 2026-11-21 |
-| Gazette erratum to Laws 149, 150 and 151 of 2026, Gazette 32 bis, 8 Aug 2026 (read for the correction to arts. 52 and 56 on infrastructure loans; via the independent review) | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf | 2026-11-02 |
-| Law 159 of 2023 cancelling tax and fee exemptions for State entities in investment and economic activities, Gazette 29 bis, 25 Jul 2023: arts. 1 to 4 (page image read) | https://eta.gov.eg/sites/default/files/2024-12/law_no._159_for_2023.pdf | 2026-11-21 |
-| PM Decree 242 of 2024, executive regulations of Law 159 of 2023, Gazette 5 bis, 4 Feb 2024: arts. 1 to 8 (Gazette page images read). manshurat.org (private legal database; official gazette copy not reachable) | https://manshurat.org/sites/default/files/ldd_5_mkrr_-_mwmn-swr-2.pdf | 2026-11-21 |
-| ETA circular (كتاب دوري) 6 of 2024, art. 59 deduction on account of tax applied to State entities carrying on economic or investment activities under Laws 91/2005 and 159/2023: items 1 to 5 (page images read) | https://eta.gov.eg/sites/default/files/2024-07/%D9%83%D8%AA%D8%A7%D8%A8%20%D8%AF%D9%88%D8%B1%D9%89%20%D8%B1%D9%82%D9%85%206%20%D9%84%D8%B3%D9%86%D9%87%202024.pdf | 2026-11-21 |
+Read/reuse scope is explicit: the existing 2 November primary-source reads and independent review were reused where applicable; the missing operative amendments were read on 26 November. Held topics above make no usable tax assertion.
 
-Not yet confirmed: the art. 59 rate table (MoF decree 537 of 2005 as amended by decrees 301 of 2013 and 380 of 2018, and any later decree); secondary sources give 1% on supplies and contracting, 3% on services and 5% on commissions, but no ETA or Gazette copy was found, so do not apply those figures without the decree. Checked again on 21 November 2026: the ETA income tax laws-and-decisions list and other-laws list hold no deduction-rate decree; the Executive Regulations (Decree 991 of 2005, Gazette page images, Book 5 on deduction, collection and advance payments) set the remittance form (41 خصم وتحصيل) and quarterly dates but no rates; ETA's Form 41 template (xlsx) has a rate column but no rate list; a private legal database lists Decree 301 of 2013 (amending the decree on the activities under the deduction system, in force 27 May 2013) by title only (its download returned a web page, not the decree); a commercial software page names a Decree 405 of 2018 as the rate decree, which is not an official source and was not read. Whether the EGP 300 floor in art. 59 has since been changed. The ministerial decree listing the goods, activities and rents covered by the arts. 59 bis to 59 bis 2 reporting duties (MoF decree 310 of 2013 per secondary sources) was not found; the law text sets reporting, not a collection rate. The reach of the art. 56 bis exclusion of dividends a resident company received from another resident company (whether it frees all resident company to resident company dividends from the 10% or only the part of a distribution funded by such dividends). Whether ETA accepts treaty rates at source with a residence certificate instead of the refund route; refund time limits. Whether rents paid to non-residents fall under art. 56 (the old skill said 20%; art. 56 lists only interest, royalties, services and athletes or artists). The rate at which a non-resident pays on unlisted share gains, and whether non-resident gains on listed shares are covered by the art. 50 item 7 or art. 31 item 7 exemption. The old skill's software classification rule, record retention period, timing at the earlier of payment, credit or invoice, and annual reconciliation with the corporate return had no official source. Treaty rates by country (the old skill's table): not re-read from the treaties, so dropped; no skill in the pack states them yet. Law 159 of 2023: the Cabinet decision listing the basic public utility services that keep their exemptions (Decree 242 art. 2 item 3) was not found; the date of ETA circular 6 of 2024 (the signed copy leaves the day and month blank); whether any later law or ETA instruction narrowed or widened Law 159. Law 159 of 2023 and special-law exemptions: an opinion of the State Council's Fatwa and Legislation department, reported in the press on 7 May 2026, held that the National Organization for Social Insurance keeps its tax exemptions under Social Insurance Law 148 of 2019 and is outside Law 159, on the grounds that its investments serve its social purpose and that a special-law exemption needs an express text to remove it; the opinion's text was not found on an official site, and how far that reasoning reaches other State bodies with exemptions in their own laws is not confirmed.
+| Source and scope | Official URL | Read / applicability checked |
+|---|---|---|
+| Income Tax Law 91, relevant arts. 56–63, 86, 110, 135; WIPO Arabic consolidated text through 2020, with later amendments applied separately | https://www.wipo.int/wipolex/ar/legislation/details/20194 | 2026-11-26 — relevant operative sentences read |
+| Law 101/2012 art. 1 replacements: royalty clause, head-office expenses and next-working-day remittance; Gazette PDF p. 6 | https://eta.gov.eg/sites/default/files/2024-03/law_no.101-2012.pdf | 2026-11-26 — page image read |
+| Decision 172/2015: replacement Regulations arts. 74, 76, 82; Gazette PDF pp. 8–9 | https://eta.gov.eg/sites/default/files/2024-03/law_no.172-2015.pdf | 2026-11-26 — page images read |
+| Regulations 991/2005, WIPO amended Arabic text: arts. 71–79 and 82 service exclusions/forms | https://www.wipo.int/wipolex/ar/legislation/details/19951 | 2026-11-26 — relevant clauses read |
+| Law 30/2023 arts. 56 bis and 58(2), dividend scope/rates/deadline and treasury-bill interest | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf | 2026-11-26 — operative clauses read; prior review reused |
+| Law 151/2026 arts. 56 bis and issuing art. 7, dividends/PE scope, rates, deadline and commencement | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf | 2026-11-26 — operative clauses read; prior review reused |
+| Law 6/2025 art. 11 limited exclusion; eligibility remains subject to its own conditions | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf | 2026-11-26 — completed bookkeeping/SME source row reused; applicability checked |
+| Law 159/2023 arts. 1–2, economic-activity cancellation, exceptions and existing contracts | https://eta.gov.eg/sites/default/files/2024-12/law_no._159_for_2023.pdf | 2026-11-26 — completed corporate/stamp-duty source rows reused; applicability checked |
+| Law 206/2020 issuing art. 4 saves art. 135 third paragraph; art. 32 annual credit/payment rule | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-26 — issuing art. 4 page image read; completed corporate art. 32 row reused |
+| Law 7/2025 arts. 45 bis and 75 bis 1, cap and discretionary settlement | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf | 2026-11-26 — operative text read |
+| ETA circular 1/2026, rate reference and 2026 CBE row | https://eta.gov.eg/sites/default/files/2026-03/Dawry.no_.1.of_.2026.pdf | 2026-11-26 — page image read |
+
+Not yet confirmed: the specialist applications listed under Cross-border points and the other express referrals above. Check this point with one of our partner accountants.
 
 > Originally contributed by Ahmed Hassan; rebuilt against the law by the OpenAccountants team.
