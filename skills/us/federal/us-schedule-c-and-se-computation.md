@@ -147,7 +147,7 @@ steps:
   - net_actual: tentative_profit - min(actual, tentative_profit)
   - se_simplified: net_simplified * 0.9235 * 0.153
   - se_actual: net_actual * 0.9235 * 0.153
-  - se_saving: se_simplified - se_actual
+  - se_saving: round(se_simplified, 2) - round(se_actual, 2)
 expected:
   simplified: 1000.00
   actual: 3069.20
@@ -156,7 +156,7 @@ expected:
   se_saving: 292.36
 ```
 
-The profit cap does not bind in Case 1. Its oa-check compares only the stated inputs; use the Form 8829 ordering above for an actual-expense case where the limit binds.
+The USD 292.36 saving subtracts the displayed cents-rounded SE totals. The profit cap does not bind in Case 1. Its oa-check compares only the stated inputs; use the Form 8829 ordering above for an actual-expense case where the limit binds.
 
 **Case 2, wages plus self-employment, single.** A single filer earns USD 100,000 of W-2 wages (boxes 3 and 5) and has Schedule C net profit of USD 120,000.
 
