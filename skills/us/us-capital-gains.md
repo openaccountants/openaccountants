@@ -91,7 +91,7 @@ Net investment income includes capital gains, interest, dividends, annuities, re
 
 For individuals, the annual deduction against other income is the smaller of the net capital loss or USD 3,000 (USD 1,500 married filing separately), in both 2025 and 2026. Unused losses carry forward until used and retain character ([Topic 409](https://www.irs.gov/taxtopics/tc409); [Pub. 550, Capital Losses](https://www.irs.gov/publications/p550)).
 
-Use the Capital Loss Carryover Worksheet for the applicable years. Let D be the allowable deduction and T taxable income **after** that deduction, including a negative amount when deductions exceed income. The amount treated as used is min(D,max(T+D,0)); total carryover is net loss minus that amount. Use short-term losses first, then long-term losses; netting with gains and splitting by character follow the worksheet. Count the allowable deduction even if not claimed or no return was filed ([26 U.S.C. 1212(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partII-sec1212.htm); [Pub. 550 Worksheet 4-1](https://www.irs.gov/publications/p550)). For changed joint/separate filing or a decedent's loss: Check this point with one of our partner accountants.
+Use the Capital Loss Carryover Worksheet for the applicable years. Let D be the allowable deduction and T taxable income **after** that deduction, including a negative amount when deductions exceed income. Section 1212(b)(2) also adds any deduction allowed under section 151 or in lieu of it: call that amount E. The amount treated as used is min(D,max(T+D+E,0)); total carryover is net loss minus that amount. Do not omit E merely because an older worksheet does not show it; if its applicability is unresolved: Check this point with one of our partner accountants. Use short-term losses first, then long-term losses; netting with gains and splitting by character follow the worksheet. Count the allowable deduction even if not claimed or no return was filed ([26 U.S.C. 1212(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partII-sec1212.htm); [Pub. 550 Worksheet 4-1](https://www.irs.gov/publications/p550)). For changed joint/separate filing or a decedent's loss: Check this point with one of our partner accountants.
 
 ### Wash sales
 
@@ -198,7 +198,7 @@ expected:
 
 ### Case 4: 2026 loss and carryover to 2027
 
-Single; net short-term loss USD 7,000; no long-term items; deduction USD 3,000; taxable income after it would be minus USD 1,000. Amount used = min(3,000,max(-1,000+3,000,0)) = USD 2,000. Short-term carryover to 2027 = USD 5,000, not USD 4,000. Separate original scenario: married filing separately, USD 10,000 loss and ample income gives USD 1,500 deduction and USD 8,500 carryover, retaining character.
+Single; net short-term loss USD 7,000; no long-term items; deduction USD 3,000; taxable income after it would be minus USD 1,000. If there is no section 151 or in-lieu deduction to add back (E = 0), amount used = min(3,000,max(-1,000+3,000,0)) = USD 2,000 and short-term carryover to 2027 = USD 5,000, not USD 4,000. The original facts do not establish E; confirm it before treating this as the final carryover. Separate original scenario: married filing separately, USD 10,000 loss and ample income gives USD 1,500 deduction and USD 8,500 carryover, retaining character.
 
 ```oa-check
 name: Capital loss carryover with negative taxable income (2026)
