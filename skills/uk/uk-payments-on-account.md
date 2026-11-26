@@ -80,6 +80,8 @@ Non-residents, arrivals, departures and UK property/trade cases (historical R-UK
 
 ## Worked examples
 
+Unless a case states otherwise, assume both liability tests are met, the stated tax amounts are correctly classified, payments are allocated as stated, and there are no further tax-at-source/coding adjustments, credits or excluded charges. CGT and loan amounts stated as payable are the remaining annual charges after any earlier collection. These are example assumptions, not findings about a taxpayer.
+
 **Example 1: sole trader with a student loan (simple).** Priya is self-employed. Her 2025-26 return shows income tax and Class 4 of GBP 9,000. GBP 1,000 was deducted at source from a small PAYE job. She paid payments on account for 2025-26 of GBP 3,000 each. Her 2025-26 return also shows a student loan repayment of GBP 1,200 and capital gains tax of GBP 500.
 
 The relevant amount is GBP 9,000 minus GBP 1,000 = GBP 8,000. That is over GBP 1,000. It is 8,000 / 9,000 = 88.9% of the assessed amount, well above one fifth, so both tests point to payments on account. Each 2026-27 payment is half of GBP 8,000 = GBP 4,000.
