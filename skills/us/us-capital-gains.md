@@ -51,7 +51,7 @@ These ceilings measure **total taxable income**, after deductions. They are not 
 | Rates on adjusted net capital gain | 0%, 15%, 20% | [26 U.S.C. 1(h)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partI-sec1.htm) |
 | Net investment income tax rate | 3.8% | [26 U.S.C. 1411(a)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm) |
 | NIIT threshold, joint return or surviving spouse | USD 250,000 | [26 U.S.C. 1411(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm) |
-| NIIT threshold, married filing separately (half the joint amount) | USD 125,000 | [26 U.S.C. 1411(b)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm) |
+| NIIT threshold, married filing separately (half the joint amount) | USD 125,000 | [26 U.S.C. 1411(b)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm); [IRS Form 8960 instructions](https://www.irs.gov/instructions/i8960) |
 | NIIT threshold, any other case (single, head of household) | USD 200,000 | [26 U.S.C. 1411(b)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm) |
 
 ### 2025 returns (tax year 2025, extended deadline 15 October 2026)
