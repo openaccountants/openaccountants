@@ -108,7 +108,7 @@ Other retained specialist topics: AOW transition and age-specific rates/credits,
 
 The four existing 2026 cases keep their original inputs. Calculate only under the stated conditions; otherwise obtain the missing facts or partner advice.
 
-**Example 1. One employer, free space exceeded.** Column-14 fiscal wage EUR 1,250,000, including EUR 60,000 former-employment wage (4.8%, within 10%); customary eligible designated benefits EUR 30,000, excluding separately exempt allowances. With those classifications confirmed, free space EUR 18,030; excess EUR 11,970; levy EUR 9,576, settled by the February 2027 return for monthly filing. [WKR method above](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0002471/2026-10-08_0/xml/BWBR0002471_2026-10-08_0.xml).
+**Example 1. One employer, free space exceeded.** Column-14 fiscal wage EUR 1,250,000, including EUR 60,000 former-employment wage (4.8%, within 10%); customary eligible designated benefits EUR 30,000 (gifts, a staff party and a gym subscription), excluding separately exempt allowances. With those classifications confirmed, free space EUR 18,030; excess EUR 11,970; levy EUR 9,576, settled by the February 2027 return for monthly filing. [WKR method above](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0002471/2026-10-08_0/xml/BWBR0002471_2026-10-08_0.xml).
 
 ```oa-check
 name: WKR final levy, single employer, fiscal wage EUR 1,250,000 (2026)
