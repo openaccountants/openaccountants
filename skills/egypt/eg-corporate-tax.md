@@ -33,7 +33,7 @@ For an ordinary company in Egypt's general profit-tax regime, reconcile accounti
 
 | Item | Rule and conditions | Tax year | Official URL |
 |---|---|---|---|
-| Standard corporate rate | 22.5% of net annual taxable profit; round the tax base down to the nearest EGP 10; specialist entities are referred above | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.96-2015.pdf (art. 49 first paragraph) |
+| Standard corporate rate | 22.5% of net annual taxable profit; round the tax base down to the nearest EGP 10; specialist entities are referred above | 2026 | https://www.wipo.int/wipolex/ar/legislation/details/20194 (art. 49 first paragraph); https://portal.eta.gov.eg/sites/default/files/2024-03/law_no.96-2015.pdf (operative 2015 replacement) |
 | Ordinary thin-capitalisation limit | 3 times average equity under Law 30/2023 art. 5 for tax years 2024-2027. This is a limit on interest deductibility, not permission to deduct every loan cost. Art. 52(1), including the exclusions for banks, insurers and ministerially designated finance companies, must also be applied | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf (issuing art. 5); https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf (art. 52(1), issuing art. 6) |
 | Buildings, installations, fittings, ships and aircraft | 5% per tax period on purchase, construction, development, renewal or rebuilding cost under art. 25(1) | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
 | Purchased intangible assets, including goodwill | 10% per tax period on purchase, development, improvement or renewal cost under art. 25(2) | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
