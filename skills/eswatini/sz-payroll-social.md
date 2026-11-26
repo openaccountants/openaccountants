@@ -5,15 +5,15 @@ jurisdiction: SZ
 category: payroll
 tax_year: 2026
 tax_year_notes: "Year of assessment to 30 June 2026"
-version: 0.3
-last_updated: 2026-11-14
+version: 0.4
+last_updated: 2026-11-26
 type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 ---
 
-# Eswatini Payroll and Social Contributions v0.3
+# Eswatini Payroll and Social Contributions v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -31,10 +31,10 @@ Employers in Eswatini and their employees. PAYE runs on the year 1 July to 30 Ju
 | ENPF other years | E4,000 in 2025 (maximum E400 a month), E4,600 in 2027, E4,900 in 2028, E5,200 in 2029 | 2026 | https://enpf.co.sz/ |
 | ENPF payment | Within 21 days after the end of the month (s 14(3)) | 2026 | http://enpf.co.sz/wp-content/uploads/2021/03/The-SNPF-Order-of-1974-1.pdf |
 | PAYE bands | Annual table in [Income tax](sz-income-tax.md); rebate E683.33 a month | 2026 | https://www.ers.org.sz/IncomeTax/Paye |
-| PAYE return and payment | Within 7 days after month-end (Fourth Schedule para 14(2) as amended). The ERS guide says the 14th; the Act wins | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
+| PAYE return and payment | Within 7 days after month-end: payment under Second Schedule para 2(1), monthly declaration under para 14(2) as replaced by Act 20 of 2023 s 38. The ERS guide says the 14th; the Act wins | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
 | Late PAYE | 20% penalty plus 18% interest a year | 2026 | https://www.ers.org.sz/IncomeTax/Paye |
 | Failure to file the monthly return | E200 a day | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
-| PAYE reconciliation | By 30 September. Late: E30 a day | 2026 | https://www.ers.org.sz/documents/Step-ByStepGuideforNewBusinesses.pdf |
+| PAYE reconciliation | By 30 September per the ERS guide; the Order requires it within 14 days after year-end or such longer time as the Commissioner approves (Second Schedule para 14(3)). Late: E200 a day (para 14(3A) as replaced by Act 20 of 2023 s 38); the ERS guide still shows the old E30 a day | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
 
 ## The base
 
@@ -111,7 +111,8 @@ expected:
 | ENPF, Employers: read in full | https://enpf.co.sz/employers/ | 2026-11-14 |
 | National Provident Fund Order 1974, ss 14 to 17: read for the cited sections | http://enpf.co.sz/wp-content/uploads/2021/03/The-SNPF-Order-of-1974-1.pdf | 2026-11-14 |
 | ERS, PAYE Quick Guide: read in full | https://www.ers.org.sz/IncomeTax/Paye | 2026-11-14 |
-| Income Tax (Amendment) Act 2023 (Act 20 of 2023), scanned: read by OCR on 2026-11-01 for the Third Schedule and cited sections. Reopened 2026-11-14 (38-page scan), not re-read; the rates also stand on the ERS Rates and Thresholds page read today | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf | 2026-11-14 (opened, not re-read) |
+| Income Tax (Amendment) Act 2023 (Act 20 of 2023), scanned: read by OCR on 2026-11-01; s 38 (Second Schedule para 14(2) and (3A)) re-read on 2026-11-26 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf | 2026-11-26 |
+| Income Tax Order 1975, ERS consolidated copy to the 2013 amendments: Second Schedule paras 2 and 14 read | https://www.ers.org.sz/documents/IncomeTaxOrder1975.pdf | 2026-11-26 |
 | ERS, Step-by-Step Guide for New Businesses: read in full | https://www.ers.org.sz/documents/Step-ByStepGuideforNewBusinesses.pdf | 2026-11-14 |
 
 Not yet confirmed: The ENPF percentage wording, employee share order and late-payment charge. Whether the National Pension Fund Bill has been enacted. Graded tax from the old pack: no official source found for its current status or amount. Commencement of the 2023 Act rests on the ERS Presumptive Tax page.
