@@ -279,15 +279,17 @@ expected:
 
 | Source actually read; scope | URL | Read on |
 |---|---|---|
-| Companies Act: arts. 151, 163-164, 167-185, 187, 211, 427; Eleventh Schedule relevant rows | https://legislation.mt/eli/cap/386/eng/pdf | 2026-11-26 |
-| Previous article 185 company and group limits | https://legislation.mt/getpdf/695277d8cc8c701d50c749db | 2026-11-26 |
-| MBR period-start transition instruction | https://www.mbr.mt/post/informative-note-entry-into-force-of-legislation-1 | 2026-11-26 |
-| MBR 2025 calendar-year filing notice | https://www.mbr.mt/post/notice-to-the-public-submission-of-financial-statements-to-the-registrar | 2026-11-26 |
-| GAPSME regs. 3-5 and para. 4.1: scope, size and statements; same-day completed bookkeeping size evidence reused | https://legislation.mt/eli/sl/281.5/eng/pdf | 2026-11-26 |
-| GAAP, comparatives and auditing standards, regs. 3-4 | https://legislation.mt/eli/sl/281.2/eng/pdf | 2026-11-26 |
-| Audit Exemption Rules, all rules | https://legislation.mt/eli/ln/2025/139/eng/pdf | 2026-11-26 |
-| MTCA review-report definition and rule 6 examples | https://mtca.gov.mt/docs/default-source/documents/personal-tax/legal-and-technical/guidelines/audit-exemption-rules---guidelines.pdf?sfvrsn=14aab6d_1 | 2026-11-26 |
-| ITMA art. 19(4)-(5) | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-26 |
-| Auditor definition, art. 2 | https://legislation.mt/eli/cap/281/eng/pdf | 2026-11-26 |
-| S.L. 386.20, marked not yet in force | https://legislation.mt/eli/sl/386.20/eng/pdf | 2026-11-26 |
-| Annual-return fee table, Schedule (i) | https://legislation.mt/eli/sl/386.3/eng/pdf | 2026-11-26 |
+| Read for Companies Act: arts. 151, 163-164, 167-185, 187, 211, 427; Eleventh Schedule relevant rows | https://legislation.mt/eli/cap/386/eng/pdf | 2026-11-26 |
+| Read for previous article 185 company and group limits | https://legislation.mt/getpdf/695277d8cc8c701d50c749db | 2026-11-26 |
+| Read for MBR period-start transition instruction | https://www.mbr.mt/post/informative-note-entry-into-force-of-legislation-1 | 2026-11-26 |
+| Read for MBR 2025 calendar-year filing notice | https://www.mbr.mt/post/notice-to-the-public-submission-of-financial-statements-to-the-registrar | 2026-11-26 |
+| Read for GAPSME regs. 3-5 and para. 4.1: scope, size and statements; same-day completed bookkeeping size evidence reused | https://legislation.mt/eli/sl/281.5/eng/pdf | 2026-11-26 |
+| Read for GAAP, comparatives and auditing standards, regs. 3-4 | https://legislation.mt/eli/sl/281.2/eng/pdf | 2026-11-26 |
+| Read for Audit Exemption Rules, all rules | https://legislation.mt/eli/ln/2025/139/eng/pdf | 2026-11-26 |
+| Read for MTCA review-report definition and rule 6 examples | https://mtca.gov.mt/docs/default-source/documents/personal-tax/legal-and-technical/guidelines/audit-exemption-rules---guidelines.pdf?sfvrsn=14aab6d_1 | 2026-11-26 |
+| Read for ITMA art. 19(4)-(5) | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-26 |
+| Read for auditor definition, art. 2 | https://legislation.mt/eli/cap/281/eng/pdf | 2026-11-26 |
+| Read for S.L. 386.20, marked not yet in force | https://legislation.mt/eli/sl/386.20/eng/pdf | 2026-11-26 |
+| Read for annual-return fee table, Schedule (i) | https://legislation.mt/eli/sl/386.3/eng/pdf | 2026-11-26 |
+
+Not yet confirmed: none in the usable guidance; referred matters above supply no operative conclusion.
