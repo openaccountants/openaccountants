@@ -16,19 +16,19 @@ category: formation
 tax_year: 2026
 tax_year_notes: "Fictional 2026 month references using retained law-at-2025 text; current application unaccepted"
 tier: 2
-last_updated: 2026-11-14
-version: 0.2
+last_updated: 2026-11-26
+version: 0.3
 depends_on:
   - workflow-base
   - company-formation-workflow-base
 type: filing-howto
 ---
 
-# Palau: corporate records and annual report month reference v0.2
+# Palau: corporate records and annual report month reference v0.3
 
 > **General reference only.** This is a source-cited Tier 2 conditional draft. It is not a completed formation engagement, compliance calendar, legal determination, financial statement package or filing instruction. Actual company work remains held until applicable law, facts, complete outputs and qualified review are established.
 
-**Answer first.** A Palau for-profit corporation delivers its annual report to the Registrar in the **month of the anniversary of its registration**, dated within that month, with no report due in the calendar year it was incorporated (Title 12, section 1607(b)). It keeps governance records permanently, accounting records and the last **3** fiscal years' statements, and a share register reflecting the preceding **5** years of transactions (section 1601). Shareholders get annual statements within **120 days** after year-end, and on a written request within **5 business days** of delivery (section 1605). A report the Registrar returns as incomplete is timely if corrected and delivered within **30 days** of the notice (section 1607(c)).
+**Answer first.** A Palau for-profit corporation delivers its annual report to the Registrar in the **month of the anniversary of its registration**, dated within that month, with no report due in the calendar year it was incorporated (Title 12, section 1607(b)). It keeps the listed governance records permanently, appropriate accounting records, its most recent Registrar report and prepared statements for the last **3** fiscal years or its shorter existence. Its share register reflects the preceding **5** years of transactions (section 1601). Make annual statements available to each shareholder within **120 days** after year-end. Send the latest statements within **5 business days** of delivery of a qualifying later written request (section 1605). A report the Registrar returns as incomplete is timely if corrected and delivered within **30 days** after the notice takes effect (section 1607(c)).
 
 **Tax year 2026.** The consolidation read on 14 November 2026 is current as of 31 December 2025, and Ryan's fictional cases are already set in 2026.
 
@@ -70,7 +70,7 @@ L1 sections 103, 105, 107 and 109 and L4 Part III require the prescribed format,
 |---|---|---|
 | Annual report month | Month of the anniversary of the date the corporation was registered; none in the calendar year of incorporation | [L1, section 1607(b)](https://palauregistries.pw/Documentation/PW/12_PNC_Division_1_Corporations_Act.pdf) |
 | Correction of a deficient annual report | Timely if corrected and delivered within thirty (30) days after the effective date of the Registrar's notice | [L1, section 1607(c)](https://palauregistries.pw/Documentation/PW/12_PNC_Division_1_Corporations_Act.pdf) |
-| Annual financial statements to shareholders | Within one hundred and twenty (120) days after the close of each fiscal year; on written request, within five (5) business days of delivery | [L1, section 1605(b)](https://palauregistries.pw/Documentation/PW/12_PNC_Division_1_Corporations_Act.pdf) |
+| Availability and delivery of annual statements | Make available within 120 days after fiscal year-end. Send within 5 business days of delivery of a qualifying later written request. Section 1605(c) applies. | [L1, section 1605(b)–(c)](https://palauregistries.pw/Documentation/PW/12_PNC_Division_1_Corporations_Act.pdf) |
 | Prepared financial statements kept | Last 3 fiscal years (or shorter existence) | [L1, section 1601(b)](https://palauregistries.pw/Documentation/PW/12_PNC_Division_1_Corporations_Act.pdf) |
 | Share register | Transactions during the preceding 5 years | [L1, section 1601(c)](https://palauregistries.pw/Documentation/PW/12_PNC_Division_1_Corporations_Act.pdf) |
 | Annual report fee, Palau for-profit corporation | USD 100.00; late-fee column 200.00 (dated fee cell; actual amount due held) | [L4, CR01 Schedule 1](https://ropfic.org/wp-content/uploads/2026/02/Corporations_Regulation_CR_01_Effective_January_19_2025-crossout.pdf) |
@@ -225,7 +225,7 @@ This document is general reference material and does not constitute tax, legal o
 | Source | Read for | URL | Read on |
 |---|---|---|---|
 | L1: Title 12 Division 1 consolidation (current as of 12/31/2025) | Read for sections 1601, 1605(b) (120 days, 5 business days) and 1607(a)-(c) (anniversary month, 30 days) | https://palauregistries.pw/Documentation/PW/12_PNC_Division_1_Corporations_Act.pdf | 2026-11-14 |
-| L4: Corporations Regulation CR01 with fee annex | Read for Schedule 1 (annual report USD 100.00, late-fee column 200.00) | https://ropfic.org/wp-content/uploads/2026/02/Corporations_Regulation_CR_01_Effective_January_19_2025-crossout.pdf | 2026-10-26 (read by Ryan); returned 404 on 2026-11-14 |
+| L4: Corporations Regulation CR01 with fee annex | Read for Schedule 1 (annual report USD 100.00, late-fee column 200.00) | https://ropfic.org/wp-content/uploads/2026/02/Corporations_Regulation_CR_01_Effective_January_19_2025-crossout.pdf | 2026-11-23 |
 
 ### Ryan's notes on each source (kept)
 
@@ -240,4 +240,4 @@ This document is general reference material and does not constitute tax, legal o
 
 Retain exact source versions and selected provisions with each proposition. An administrative launch date, filename, search result or current website label cannot replace assent, promulgation, commencement or later-law evidence. Original RPPL 11-10 was not obtained; its absence is a source gap, not proof that no such law exists. Signed amendments and the official consolidation support only the bounded reference below.
 
-Not yet confirmed: the CR01 fee annex (the link returned 404 on 2026-11-14; the fee figures rest on Ryan's 26 October 2026 reading); the original RPPL 11-10 and its promulgation; any law after the consolidation date of 31 December 2025; exact day counting, holidays, forms, fees due and filing acceptance.
+The CR01 fee annex was reopened on 23 November 2026 and confirms the quoted fee cells. Confirm the original RPPL 11-10, promulgation and any law after the 31 December 2025 consolidation for actual work. Establish exact day counting, holidays, applicable forms, fees due and filing acceptance for each company.
