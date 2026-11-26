@@ -447,8 +447,8 @@ HSA contributions require eligible HDHP coverage, no disqualifying coverage, no 
 
 - **Medical/dental (2025), lines 1–4** — Only qualifying unreimbursed expenses, generally paid in 2025, above 7.5% of AGI. No duplicate deduction for reimbursed/pre-tax/above-the-line premiums; qualified long-term-care premiums have age limits. Medical driving is 21 cents per mile in 2025. For capital improvements and unusual care/insurance: Check this point with one of our partner accountants. [Schedule A instructions](https://www.irs.gov/instructions/i1040sca).
 - **Taxes paid — Lines 5-7 — SALT cap** — Line 5a: State and local income tax OR general sales tax (election) — sales tax via the IRS optional sales tax tables in Pub 600 / Schedule A instructions, plus actual receipts for big-ticket items. Line 5b: State and local real estate tax (excluding rental property — that goes on Schedule E). Line 5c: State and local personal property tax (e.g., car registration based on value). Line 5d: Sum 5a + 5b + 5c. Line 5e: Lesser of 5d or SALT cap (see §2.7 — $40,000 / $20,000 MFS for 2025, phased down above $500k/$250k MAGI). Line 6: Other eligible taxes (including foreign income taxes not taken as a credit); no occupational-tax blanket deduction. Line 7: Sum 5e + 6
-- **Interest paid — Lines 8-10** — Line 8a: Home mortgage interest from 1098 (qualifying acquisition debt generally capped at $750,000 ($375,000 MFS) after December 15, 2017, or $1,000,000 ($500,000 MFS) for qualifying earlier debt; apply refinance, date and mixed-debt rules — §163(h)(3) as amended by TCJA, made permanent by OBBBA §70108). Line 8b: Mortgage interest not on 1098 (seller-financed; report payee name, address, SSN/EIN). Line 8c: Points not on 1098. Line 8d is reserved for 2025: no mortgage-insurance-premium deduction for 2025. The 2026 treatment is separate in section 0. Line 8e: Sum. Line 9: Investment interest (Form 4952) — limited to net investment income. Line 10: Sum 8e + 9  _([§163(h)(3); OBBBA §70108](https://www.irs.gov/pub/irs-pdf/f1040sa.pdf))_
-- **Home equity interest deductibility** — Home equity interest is deductible only if proceeds used to buy, build, or substantially improve the residence securing the loan (§163(h)(3)(F) post-TCJA). Cash-out for personal use is nondeductible.  _(§163(h)(3)(F))_
+- **Interest paid — Lines 8-10** — Line 8a: Home mortgage interest from 1098 (qualifying acquisition debt generally capped at $750,000 ($375,000 MFS) after December 15, 2017, or $1,000,000 ($500,000 MFS) for qualifying earlier debt; apply refinance, date and mixed-debt rules — §163(h)(3) as amended by TCJA, made permanent by OBBBA §70108). Line 8b: Mortgage interest not on 1098 (seller-financed; report payee name, address, SSN/EIN). Line 8c: Points not on 1098. Line 8d is reserved for 2025: no mortgage-insurance-premium deduction for 2025. The 2026 treatment is separate in section 0. Line 8e: Sum. Line 9: Investment interest, Form 4952. For deductibility/limits: Check this point with one of our partner accountants. Line 10: Sum 8e + 9  _([§163(h)(3); OBBBA §70108](https://www.irs.gov/pub/irs-pdf/f1040sa.pdf))_
+- **Home equity interest** — For loans subject to the proceeds-use restriction, interest qualifies only to the extent used to buy, build or substantially improve the home securing the debt. Qualifying grandfathered debt, mixed loans and refinancing require separate tests: Check this point with one of our partner accountants. [Schedule A instructions](https://www.irs.gov/instructions/i1040sca).
 - **Gifts to charity — Lines 11-14** — Line 11 reports cash gifts; the ordinary cash-to-qualifying-public-charity limit is 60% of AGI. Line 12 reports other-than-cash gifts: ordinary noncash gifts to qualifying public charities can have a 50% limit, long-term capital-gain property generally 30%, and qualifying capital-gain-property gifts to private nonoperating foundations generally 20%; classify recipient/property and apply the relevant elections/special rules. Form 8283 is generally required above $500; appraisal rules above $5,000 have exceptions. Generally obtain/retain the appraisal; attachment generally begins above $500,000, with special-category exceptions. Line 13 reports carryovers: excess charitable contributions generally carry forward for up to 5 years under the applicable percentage/order rules. Line 14 totals the deductible amounts. The 0.5% contribution-base floor starts with tax years after December 31, 2025 under §70425; it does not apply to 2025. Substantiation, quid-pro-quo reductions, property valuation and recipient eligibility must be established; unusual gifts/elections: Check this point with one of our partner accountants. [Publication 526](https://www.irs.gov/publications/p526); [P.L.119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
 - **AUDIT FLASH POINT — Charitable contributions outsized vs AGI** — Above $5,000, establish whether a qualified appraisal is required and was obtained, with the correct Form 8283 section. Do not call every appraisal “attached”: attachment generally begins above $500,000, subject to special rules/exceptions. Vehicle gifts, conservation easements and acknowledgment requirements remain separate checks; refer unresolved specialist cases. [P526](https://www.irs.gov/publications/p526).
 - **Casualty and theft losses — Line 15** — For 2025 personal-use losses, apply the federally declared-disaster restriction and the exception allowing other personal casualty losses to the extent of personal casualty gains. The ordinary $100/event and 10%-of-AGI floors are not universal: qualified disaster losses, as defined in Publication 547, can instead use the $500 reduction without that percentage floor. Establish the disaster/category before calculating Form 4684. The §70109 state-declared-disaster expansion applies to tax years beginning after December 31, 2025. [P547](https://www.irs.gov/publications/p547); [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
@@ -523,105 +523,27 @@ Computed on **Form 8960**, flows to **Schedule 2 Line 12**.
 
 ## 12. Schedule 3 — Credits and payments
 
-### 12.1 Part I — Nonrefundable credits
+### Use the final 2025 supplemental forms
 
-**Part I — Nonrefundable credits**  _(Schedule 3 Part I)_
+For credit/payment field placement, use [final 2025 Schedule 3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) directly. Its line 8 goes to Form 1040 line 20 and line 15 to Form 1040 line 31. CTC/ODC use Schedule 8812 to Form 1040 line 19; refundable adoption goes from Form 8839 to Form 1040 line 30. These routes are also shown in the Form 1040 flow below. A field label is not a finding that a credit applies.
 
-| Line | Credit | Form | Refer-out |
-| --- | --- | --- | --- |
-| 1 | Foreign tax credit | Form 1116; the election to omit that form has separate conditions | `us-foreign-tax-credit-1116` [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 2 | Credit for child & dependent care | Form 2441 | — [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 3 | Education credits | Form 8863 (AOTC, LLC) | `us-education-credits-8863` [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 4 | Retirement savings contributions credit (Saver's Credit) | Form 8880 | — [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 5a | Residential clean energy credit (§25D) | Form 5695 — **OBBBA termination flag, see §2.9** | — [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 5b | Energy efficient home improvement credit (§25C) | Form 5695 — **OBBBA accelerated termination flag** | — [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 6 | Other nonrefundable credits | various | — [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 6a | General business credit | Form 3800 | — [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 6b | Prior-year minimum tax credit | Form 8801 | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
-| 6c | Nonrefundable adoption credit | Form 8839; refundable part goes to Form 1040 line 30 | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
-| 6d | Credit for the elderly or disabled | Schedule R | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
-| 6e | Reserved for future use | — | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
-| 6f | Clean vehicle credit | Form 8936 | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
-| 6g | Mortgage interest credit, including eligible carryforward | Form 8396 | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
-| 6h | District of Columbia first-time homebuyer credit (legacy carryforward) | Form 8859 | [2025 Schedule 3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 6j | Alternative fuel vehicle refueling property credit | Form 8911 | [2025 Schedule 3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 6l | Amount from Form 8978 line 14 | Form 8978 | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
-| 6m | Previously owned clean vehicle credit | Form 8936 | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
-| 7 | Total other nonrefundable credits (lines 6a–6z) | Schedule 3 | —  [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
-| 8 | Total Part I (lines 1–4, 5a, 5b and 7) → Form 1040 line 20 | Schedule 3 | [S3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
+The removed detailed field lists included general-business/minimum-tax/adoption/elderly/energy/vehicle/mortgage/DC/refueling/bond/partnership credits, premium tax credit, extension payments, excess SS/RRTA, fuels, undistributed gains, claim-of-right repayment, elective payments and section965 deferral. Their final official labels remain in the linked form; substantive specialist entitlements: **Check this point with one of our partner accountants.**
 
-The nonrefundable child/other-dependent credit belongs on Form 1040 line 19 via Schedule 8812, not Schedule 3 line 6m. [Final 2025 Form 1040](https://www.irs.gov/pub/irs-pdf/f1040.pdf).
+### Credit worksheets
 
-### 12.2 Part II — Refundable credits and other payments
+For 2025, CTC is up to $2,200 per qualifying child and ACTC up to $1,700, not automatic entitlements. **CTC/ODC:** apply general dependency tests; CTC child under 17 at year end and a qualifying US citizen/national/resident; valid employment SSNs by the return due date including extensions for the child and taxpayer (at least one spouse if joint); the other joint filer needs a timely issued SSN or ITIN. ODC requires its own dependency, citizenship/residency and timely TIN tests. Apply Schedule 8812 MAGI reduction and nonrefundable liability limits. ACTC is not automatically $1,700: apply the earned-income/alternative-family computation and exclusions, including the Form 2555 restriction. [Schedule 8812 instructions](https://www.irs.gov/instructions/i1040s8).
 
-**Part II — Refundable credits and other payments**  _(Schedule 3 Part II)_
+Use the actual year’s official worksheets for optional credits: [Form 1040 EIC steps/tables](https://www.irs.gov/instructions/i1040gi), [Form 2441 dependent care](https://www.irs.gov/instructions/i2441), [Form 8863 education](https://www.irs.gov/instructions/i8863), and [archived 2025 Form 8880 Saver’s Credit](https://www.irs.gov/pub/irs-prior/f8880--2025.pdf). The removed cheat-sheet caps do not determine an entitlement. Obtain the form-specific eligibility facts and use the full worksheet; education computations also route to `us-education-credits-8863`. The separately dated 2026 care percentage is in section 0.
 
-| Line | Item |
-| --- | --- |
-| 9 | Net premium tax credit (Form 8962 — ACA marketplace) [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 10 | Amount paid with extension request (Form 4868) [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 11 | Excess Social Security tax withheld [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 12 | Credit for federal tax on fuels (Form 4136) [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 13 | Refundable credits not elsewhere [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 13a | Form 2439 (regulated investment company undistributed LTCG) [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 13b | Credit for repayment of amounts under claim of right >$3,000 (§1341) [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 13c | Net elective payment election amount from Form 3800 Part III line 6, column (j) [2025 Schedule 3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
-| 13d | Deferred section 965 net tax liability (see instructions) [2025 Schedule 3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
-| 13z | Other refundable [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf) |
-| 14 | Total other payments/refundable credits (13a–13z) [2025 Schedule 3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
-| 15 | Total Part II (9–12 and 14) → Form 1040 line 31 [2025 Schedule 3](https://www.irs.gov/pub/irs-pdf/f1040s3.pdf). |
+Dependent care still requires a qualifying child under 13 or qualifying incapable spouse/dependent, the residence tests, care enabling work/job search, earned-income limits, permitted providers, identifiers and employer-benefit coordination. The MFS living-apart/home-cost exception is specific. [Form 2441 instructions](https://www.irs.gov/instructions/i2441).
 
-### 12.3 Credits cheat sheet
+Adoption, residential-energy qualification/carryforwards and new/used vehicle MAGI/MSRP/sale-price/seller/ownership/transfer issues: **Check this point with one of our partner accountants.** The separately proved statutory termination dates do not establish eligibility.
 
-**Credits cheat sheet**  _(Schedule 3 cheat sheet)_
+## 13. Schedule 2 — Additional taxes, final 2025 form
 
-| Credit | Refundable? | Cap 2025 | Phaseout begins (MFJ) |
-| --- | --- | --- | --- |
-| Child Tax Credit (CTC) | Partially ($1,700 ACTC) | $2,200/child <17 (OBBBA §70104) | $400,000 [2025 authority](https://www.irs.gov/instructions/i1040gi) |
-| Credit for Other Dependents (ODC) | No | $500/dependent | $400,000 [2025 authority](https://www.irs.gov/instructions/i1040gi) |
-| Earned Income Credit (EITC) | Yes | $649 – $8,046 by # kids | varies by household [2025 authority](https://www.irs.gov/instructions/i1040gi) |
-| Child & Dependent Care | No | $3,000 / $6,000 expenses × 20–35% | Rate begins declining above $15,000 AGI; 20% applies above $43,000 (not a phaseout to zero). [2025 Form 2441, line 8](https://www.irs.gov/pub/irs-pdf/f2441.pdf). |
-| AOTC | 40% refundable | $2,500 (100% first $2k + 25% next $2k) | $160k MFJ ($80k other) [2025 authority](https://www.irs.gov/instructions/i1040gi) |
-| LLC | No | $2,000 (20% of $10k) | $160k MFJ ($80k other) [2025 authority](https://www.irs.gov/instructions/i1040gi) |
-| Saver's Credit | No | $1,000 ($2,000 MFJ) | $47,500 MFJ (credit ends above $79,000) [2025 authority](https://www.irs.gov/instructions/i1040gi) |
-| Adoption Credit | Specialist credit | Check this point with one of our partner accountants. | Timing, eligible child/expenses, refundability and carryovers require separate analysis. |
-| Residential Clean Energy (§25D) | Nonrefundable | Check this point with one of our partner accountants. | Qualification/completion and carryforward analysis; no expenditures after 2025. [Act §70506](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| New clean vehicle (§30D) | Specialist credit | Check this point with one of our partner accountants. | MAGI/MSRP or sale-price, vehicle, seller, transfer and ownership tests; no acquisition after September 30, 2025. [2025 instructions](https://www.irs.gov/instructions/i8936) |
-| Previously owned clean vehicle (§25E) | Specialist credit | Check this point with one of our partner accountants. | MAGI/MSRP or sale-price, vehicle, seller, transfer and ownership tests; no acquisition after September 30, 2025. [2025 instructions](https://www.irs.gov/instructions/i8936) |
+Use [final 2025 Schedule 2](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf) directly. AMT from Form6251 goes to line2; Additional Medicare from Form8959 to line11; NIIT from Form8960 to line12. Follow its PartI/PartII totals into Form1040 lines17/23. The three calculations are separately explained above and in the cases.
 
-### Credit eligibility — 2025 only
-
-The caps above are ceilings, not entitlements. **CTC/ODC:** apply general dependency tests; CTC child under 17 at year end and a qualifying US citizen/national/resident; valid employment SSNs by the return due date including extensions for the child and taxpayer (at least one spouse if joint); the other joint filer needs a timely issued SSN or ITIN. ODC requires its own dependency, citizenship/residency and timely TIN tests. Apply Schedule 8812 MAGI reduction and nonrefundable liability limits. ACTC is not automatically $1,700: apply the earned-income/alternative-family computation and exclusions, including the Form 2555 restriction. [Schedule 8812 instructions](https://www.irs.gov/instructions/i1040s8).
-
-**EITC:** apply all Form 1040 steps, including valid SSNs, earned-income and AGI limits for filing status/child count, no Form 2555, residency and investment-income rules. For 2025 the investment-income ceiling is $11,950; use the special worksheet when required. The EITC child tests include relationship, age/student/disability, US residence and joint-return conditions; dependency support tests are not interchangeable with EITC tests. Childless filers generally need age 25–64, US main home more than half the year, and no disqualifying dependent/qualifying-child status. Separated married persons require the particular statutory exception. [2025 Form 1040 EIC steps and tables](https://www.irs.gov/instructions/i1040gi).
-
-**Dependent care:** qualifying child under 13 or qualifying incapable spouse/dependent; generally residence more than half the year. Care must enable work/job search; enforce both earned-income limits, special student/disability deemed-income rules, provider exclusions, required identifiers, eligible payment period and employer-benefit coordination. MFS generally cannot claim unless the specific living-apart/home-cost tests apply. The 2025 rate table above is not the changed 2026 rate table. [Form 2441 instructions](https://www.irs.gov/instructions/i2441).
-
-**Education:** route to `us-education-credits-8863`. AOTC requires the first-four-years/four-credit-years, half-time credential-program and felony-drug-conviction tests; 40% refundability has age/support restrictions. LLC is nonrefundable and has its own expense/institution tests. No MFS; both phase out over $80,000–$90,000 MAGI ($160,000–$180,000 joint), with no double use of expenses or same-student AOTC/LLC. Obtain the required Form 1098-T or substantiate an allowed exception, and coordinate scholarships/other tax-free benefits. [Form 8863 instructions](https://www.irs.gov/instructions/i8863).
-
-**Saver’s Credit:** age 18+, not a student and not claimed as a dependent; qualified contributions/elective deferrals after required distribution offsets, capped at $2,000 per spouse for the credit base. Use the full 2025 Form 8880 status/AGI 50%/20%/10% table and tax-liability limit; $47,500 joint is the end of the 50% band, and no credit above $79,000 joint. [2025 Form 8880](https://www.irs.gov/pub/irs-prior/f8880--2025.pdf).
-
-## 13. Schedule 2 — Additional taxes
-
-**Schedule 2 — Additional taxes**  _([Schedule 2](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf))_
-
-| Line | Item | Form |
-| --- | --- | --- |
-| 1a | Excess advance premium tax credit repayment | Form 8962 [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf) |
-| 2 | AMT | Form 6251 [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf) |
-| 4 | SE tax | Schedule SE — refer out [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf) |
-| 7 | Unreported SS/Medicare from Form 4137 / 8919 | [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf) |
-| 8 | Additional tax on IRAs (early withdrawal, RMD failure) | Form 5329 [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf) |
-| 9 | Household employment taxes | Schedule H [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf) |
-| 10 | Reserved for future use | [S2](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf). |
-| 11 | Additional Medicare Tax | Form 8959 [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf) |
-| 12 | Net Investment Income Tax | Form 8960 [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf) |
-| 13 | Uncollected Social Security/Medicare or RRTA tax on tips or group-term life insurance | [S2](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf). |
-| 14 | Interest on §453(l) deferred installment sale tax | [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf) |
-| 15 | Interest on deferred tax on certain installment sales with sales price over $150,000; apply section 453A separately | [2025 Schedule 2](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf) |
-| 16 | Recapture of low-income housing credit | Form 8611. [S2](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf). |
-| 17a-17z | Other additional taxes | [2025 authority](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf) |
-| 18–21 | Follow final Schedule 2 totals, including Form 4255 amounts; line 21 goes to Form 1040 line 23 | [2025 Schedule 2](https://www.irs.gov/pub/irs-pdf/f1040s2.pdf) |
+Other additional-tax topics remain routed through that form: advance-premium/vehicle repayments, self-employment, unreported/uncollected wage taxes, IRA/tax-favored accounts, household employment, installment interest, housing/other-credit recapture, HSA/MSA, deferred compensation, trusts/foreign-fund interest and other specialist taxes. For their actual liability: **Check this point with one of our partner accountants.**
 
 ## 14. Payments — Form 1040 Lines 25-33
 
@@ -653,7 +575,7 @@ Although primarily a freelancer concern (refer to `us-quarterly-estimated-tax`),
 
 ### 16.1 Statute of limitations — §6511(a)
 
-- **Refund claims** — The general filing limit is the later of three years after filing or two years after payment, but the recoverable amount also has payment-lookback limits. Early/deemed filing/payment and special-period rules matter. For an actual limitation deadline or carryback: Check this point with one of our partner accountants. [Form 1040-X instructions](https://www.irs.gov/instructions/i1040x).
+- **Refund claims** — Filing limitation, payment lookback, early/deemed filing/payment, special periods and any carryback deadline: Check this point with one of our partner accountants.
 
 ### 16.2 When to amend
 
@@ -679,7 +601,7 @@ Although primarily a freelancer concern (refer to `us-quarterly-estimated-tax`),
 
 ### 17.4 E-file mandate
 
-- **E-file mandate** — A specified tax-return preparer generally must e-file when reasonably expecting to file 11 or more covered income-tax returns for individuals, estates or trusts during the calendar year, subject to the written taxpayer paper-filing choice, hardship and other permitted exceptions. [EF](https://www.irs.gov/e-file-providers/frequently-asked-questions-e-file-requirements-for-specified-tax-return-preparers-sometimes-referred-to-as-the-e-file-mandate).
+- **Preparer e-file requirements** — Our workflow uses authorized filing software. Before submission, apply the [IRS preparer e-file requirements and permitted exceptions](https://www.irs.gov/e-file-providers/frequently-asked-questions-e-file-requirements-for-specified-tax-return-preparers-sometimes-referred-to-as-the-e-file-mandate); the old preparer-count summary is omitted here.
 
 ### 17.5 §183 hobby loss
 
@@ -687,29 +609,17 @@ Although primarily a freelancer concern (refer to `us-quarterly-estimated-tax`),
 
 ### 17.6 §469 passive activity losses
 
-- **Rental real estate passive loss allowance** — The ordinary actively participating rental-real-estate allowance is up to $25,000, phased out over $100,000–$150,000 MAGI. MFS taxpayers living apart for the entire year have a maximum $12,500 allowance, phased out over $50,000–$75,000; MFS taxpayers living with their spouse at any time do not qualify for the allowance. Active participation also generally requires at least 10% ownership by value (including the spouse’s interest) throughout the year. Use the special rental MAGI definition, not unadjusted AGI. Suspended losses on disposition, death, gift or installment sale: Check this point with one of our partner accountants. [P925](https://www.irs.gov/publications/p925).
+- **Passive rental losses** — Active/material participation, ownership, special MAGI, filing-status allowance and suspended-loss release on disposition/death/gift/installment sale: Check this point with one of our partner accountants.
 
 ### 17.7 §461(l) excess business loss
 
-- **Excess business losses (2025)** — Form 461 applies the $313,000 threshold ($626,000 joint) after the other loss limitations. This is not a deductible allowance for employee wages. For aggregation, disallowed-loss/NOL treatment and 2026 changes: Check this point with one of our partner accountants. [Rev. Proc.2024-40](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf).
+- **Excess business losses/NOLs** — Aggregation, other loss limitations, annual thresholds and carryover treatment belong with the business return: Check this point with one of our partner accountants.
 
-## 18. Common errors checklist
+## 18. Record checks
 
-1. **SS taxable amount (Line 6b)** computed wrong — failed to use Pub 915 Worksheet 1; over- or understated tax-exempt interest in the formula. (See §4.6 Audit Flash.)
-2. **Wrong tax computation method** — Follow the Qualified Dividends and Capital Gain Tax Worksheet where required; its ordinary-income tax step can itself require the Tax Table. Do not substitute continuous brackets merely because the worksheet is used. [I](https://www.irs.gov/instructions/i1040gi).
-3. **Forgot Schedule B** — Test taxable interest over $1,500 and ordinary dividends over $1,500 separately, plus the other listed triggers and applicable Part III questions. [B](https://www.irs.gov/instructions/i1040sb).
-4. **Excess Social Security tax** from two employers not credited on Schedule 3 Line 11.
-5. **Capital loss carryover** not picked up from prior return (line 6 / Line 14 of Schedule D).
-6. **Dependent claimed by both parents** post-divorce — Form 8332 release of claim or §152(e) custodial parent rule violated.
-7. **Missing Form 8606** when rolled over after-tax 401(k) contributions to IRA, or made nondeductible IRA contributions — destroys basis tracking.
-8. **NIIT** not computed when AGI > $200k/$250k and investment income present.
-9. **Kiddie tax** Form 8615 missed for college student dependents with brokerage 1099-DIV.
-10. **AMT** not run for ISO exercises.
-11. **Standard deduction limitation** — Apply the dependent’s regular standard-deduction limit: for 2025, the greater of $1,350 or earned income + $450, capped at the regular standard deduction for the filing status ($15,750 for Single/MFS in 2025); any age/blindness additions require their separate conditions. [P501](https://www.irs.gov/publications/p501).
-12. **Wrong filing status** — HoH claimed without a qualifying person; QSS claimed in year 3+ after spouse's death.
-13. **Box 12 W-2 code DD** (employer-sponsored health coverage) mistakenly added to income — informational only.
-14. **Scholarship/education-credit coordination** — Do not automatically add back the full scholarship; apply taxable-scholarship and no-double-benefit rules. Check this point with one of our partner accountants.
-15. **Marketplace coverage** — Obtain Form 1095-A and determine Form 8962 reconciliation requirements; receiving a form alone is not the full eligibility analysis. [2025 instructions](https://www.irs.gov/instructions/i1040gi).
+Reconcile information returns, basis/carryovers, dependent claims, prior contributions, payments and the applicable worksheets. W-2 code DD health-coverage reporting is informational and not taxable. [2025 W-2 instructions, Code DD](https://www.irs.gov/pub/irs-prior/iw2w3--2025.pdf).
+
+Taxable scholarship/education-credit coordination: **Check this point with one of our partner accountants.** Obtain Form 1095-A for marketplace coverage and determine the Form 8962 reconciliation requirement. Never automatically add a scholarship amount to income merely to match Form 1098-T. [2025 Form 1040 instructions](https://www.irs.gov/instructions/i1040gi).
 
 ## 19. Worked examples — calendar 2025 only
 
@@ -904,15 +814,15 @@ Use final forms for the specified year. Reconcile the information returns and sc
 
 ### Specialist boundaries retained
 
-Dual-status/nonresident/expatriation, innocent spouse, foreign-account/asset/trust compliance, streamlined procedures, controversy, unusual pensions/rollovers, QSBS/NFT classification, home-sale exceptions, foreign tax-credit elections, adoption, loss dispositions/carrybacks and minimum-tax credits: **Check this point with one of our partner accountants.** This sentence is a referral, not confirmation that a credit or exclusion applies.
+For dual-status/nonresident/expatriation, innocent spouse, foreign accounts/assets/trusts, international exclusions/inclusions and tax-credit elections, streamlined procedures, controversy, QSBS/NFT classification, full QBI calculations, unusual pensions/NUA/lump-sum treatment/rollovers, home-sale exclusions, minimum-tax credits, tip/overtime/vehicle-loan deductions, medical capital improvements, unusual gifts, adoption/energy/vehicle credit eligibility, refund limits/status amendments/carrybacks, hobby/profit motive/COGS, passive rental losses/dispositions, excess-business-loss/NOL computations and scholarship coordination: **Check this point with one of our partner accountants.** This is one referral boundary, not confirmation of a tax benefit. Form-field labels never establish entitlement.
 
-For written advice, apply the reasonable-facts/assumptions and relevant-authority standards of [Circular 230 §10.37](https://www.irs.gov/pub/irs-pdf/pcir230.pdf). The preserved approval metadata records its original approval; it is not a fresh human approval of this edit.
+Written-advice workflow: this guide is a working draft for credentialed review under [Circular230 §10.37](https://www.irs.gov/pub/irs-pdf/pcir230.pdf). This is our review policy; the preserved metadata is not a fresh approval of this edit.
 
 ## Sources
 
-Read on 2026-11-26: the operative sections/table cells listed below, not every page of each publication. Earlier unchanged readings and review receipts were reused for applicability; missing quotations were recovered from official text. Generic forms were checked for their printed year; Form8880 uses the archived2025 URL because the generic file now shows2026. Synthetic cases remain conditional.
+Read on 2026-11-26: the operative sections/table cells listed below, not every page of each publication. Earlier unchanged readings and review receipts were reused for applicability; missing quotations were recovered from official text. Generic forms were checked for their printed year; Form 8880 uses the archived 2025 URL because the generic file now shows2026. Synthetic cases remain conditional.
 
-Not yet confirmed: no unverified proposition is retained as usable guidance. Specialist topics use the explicit partner-accountant referral. Final2026 form mappings are outside this guide.
+Not yet confirmed: no unverified proposition is retained as usable guidance. Specialist topics use the explicit partner-accountant referral. Final 2026 form mappings are outside this guide.
 
 | Source and scope read | Official URL | Read date |
 | --- | --- | --- |
@@ -935,7 +845,7 @@ Not yet confirmed: no unverified proposition is retained as usable guidance. Spe
 | IA: Operative form fields/instruction sections quoted in the claims ledger | [official text](https://www.irs.gov/instructions/i1040sca) | 2026-11-26 |
 | IAMT: Operative form fields/instruction sections quoted in the claims ledger | [official text](https://www.irs.gov/instructions/i6251) | 2026-11-26 |
 | KID: Operative form fields/instruction sections quoted in the claims ledger | [official text](https://www.irs.gov/instructions/i8615) | 2026-11-26 |
-| LAW: Operative sections 70103–70111, 70114, 70120, 70405, 70425 and 70501–70506; limited to claims quoted here | [official text](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) | 2026-11-26 |
+| LAW: Operative sections 70103–70104, 70107–70111, 70114, 70120, 70405, 70425 and 70506; limited to claims quoted here | [official text](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) | 2026-11-26 |
 | MED: Operative form fields/instruction sections quoted in the claims ledger | [official text](https://www.irs.gov/instructions/i8959) | 2026-11-26 |
 | NII: Operative form fields/instruction sections quoted in the claims ledger | [official text](https://www.irs.gov/instructions/i8960) | 2026-11-26 |
 | P501: 2025 marital/household/dependency rules and Tables6–8; senior deduction | [official text](https://www.irs.gov/publications/p501) | 2026-11-26 |
