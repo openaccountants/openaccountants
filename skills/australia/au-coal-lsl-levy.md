@@ -14,15 +14,15 @@ type: computation
 tax_year: 2026
 tax_year_notes: "2026-27"
 tier: 2
-last_updated: 2026-11-11
-version: 0.1
+last_updated: 2026-11-26
+version: 0.2
 license: FSL-1.1-ALv2
 depends_on:
   - workflow-base
   - payroll-workflow-base
 ---
 
-# Australia Coal Mining Long Service Leave Payroll Levy v0.1
+# Australia Coal Mining Long Service Leave Payroll Levy v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -127,7 +127,7 @@ Eligible wages are not superannuation ordinary time earnings and not payroll tax
 
 Levy for each employee = eligible wages x the rate in the key figures table, with the Regulations compilation and read date cited. The rounding convention on the Levy Advice is not stated in the sources read: follow the current form and its guide, and record the convention used.
 
-**Waiver agreements: nil levy.** An eligible employee of a kind prescribed by the Administration Regulations may make a written waiver agreement with the employer for additional remuneration or superannuation contributions in lieu of long service leave (Administration Act s 39B(1)). The prescribed kinds are an employee who is at least 55 years of age with no qualifying service or with at least 8 years of it; a manager, or a senior professional employee engaged in management, of a corporation that employs eligible employees in the industry; an employee whose annual salary (including allowances) is at least $174,700 in 2017, adjusted by the Consumer Price Index for 2017 and each later completed year; and an employee on an undergraduate or work training placement (Administration Regulations 2018 s 7). The CPI-adjusted salary figure for the current year is not computed here (Needs Input). For any period during which a waiver agreement is in effect, the employee is taken not to be an eligible employee for the purposes of ss 4 and 6 of the Payroll Levy Act, so no levy is payable on their eligible wages; the note to s 39BD says returns 'will still need to include information in relation to the employee' (Administration Act s 39BD). Levy is nil only from the agreement's take-effect date, which must be after it is lodged with Coal LSL (s 39B(3)(e)), and only until it ceases: on the Board's refusal, on termination or when the employee stops being a prescribed kind (ss 39B(6), 39BC(5)). The Board is taken to approve an agreement it has not decided within 30 days after lodgment (s 39BC(2)). The agreed payments must be worth at least the levy that would otherwise have been payable (s 39B(2)); computing and paying them is outside this guide (refer: R-AU-CLSL-5).
+**Waiver agreements: nil levy.** An eligible employee of a kind prescribed by the Administration Regulations may make a written waiver agreement with the employer for additional remuneration or superannuation contributions in lieu of long service leave (Administration Act s 39B(1)). The prescribed kinds are an employee who is at least 55 years of age with no qualifying service or with at least 8 years of it; a manager, or a senior professional employee engaged in management, of a corporation that employs eligible employees in the industry; an employee whose annual salary (including allowances) is at least $174,700 in 2017, adjusted by the Consumer Price Index for 2017 and each later completed year; and an employee on an undergraduate or work training placement (Administration Regulations 2018 s 7). The CPI-adjusted salary figure for the current year is not computed here (Needs Input). For any period during which a waiver agreement is in effect, the employee is taken not to be an eligible employee for the purposes of ss 4 and 6 of the Payroll Levy Act, so no levy is payable on their eligible wages; the note to s 39BD says returns 'will still need to include information in relation to the employee' (Administration Act s 39BD). Levy is nil only from the agreement's take-effect date, which must be after it is lodged with Coal LSL (s 39B(3)(e)), and only until it ceases: on the day the parties are notified of the Board's refusal, on termination or when the employee stops being a prescribed kind (ss 39B(6), 39BC(5)). The Board is taken to approve an agreement it has not decided within 30 days after lodgment (s 39BC(2)). The agreed payments must be worth at least the levy that would otherwise have been payable (s 39B(2)); computing and paying them is outside this guide (refer: R-AU-CLSL-5).
 
 ### Step 6: Prepare the Levy Advice workpaper
 
@@ -328,7 +328,7 @@ The reviewer attention threshold is **AUD 0**: every difference between levy com
 
 Not yet confirmed: Not read in this session: *Fair Work Act 2009* ss 13, 14 and 16, *Crimes Act 1914* s 4AA, the Employer Reimbursement Rules, the Levy Advice form and guide, Schedule 6 item 17 to Act No. 43, 2023, and any Ministerial determination under Schedule 1 to the Collection Act.
 
-**Currency and revision.** Version 0.1, currency date 2 November 2026. Change log: v0.1 (2 November 2026) first draft from primary sources read that day; awaiting qualified Australian review.
+**Currency and revision.** Version 0.2 (26 November 2026) corrects the date a refused waiver agreement ceases. Version 0.1 (2 November 2026) was the first draft from primary sources. Awaiting qualified Australian review.
 
 Method adapted by its author from the `coal-lsl-levy` skill in ryanduguid/australian-accounting-skills (commit 3e110da). This guide is licensed under FSL-1.1-ALv2, not the OA Guide License; see LICENSING.md.
 
