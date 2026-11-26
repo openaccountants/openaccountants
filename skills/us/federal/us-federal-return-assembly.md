@@ -1,10 +1,10 @@
 ---
 name: us-federal-return-assembly
-description: Router for assembling a US freelancer's 2026 federal Form 1040 package (sole proprietor or single-member LLC on Schedule C). Sets which skills to load and in what order (bookkeeping, Schedule C and SE tax, retirement, self-employed health insurance, premium tax credit, Schedule 1-A, QBI, tax and credits, estimated tax and Form 2210), why retirement must come before the health insurance limit, the tie-out checks between Schedule C, Schedule SE, Schedules 1, 1-A, 2 and 3, Forms 7206, 8995 and 8962, and the reviewer package. Carries no rates of its own; every figure lives in the skill it routes to. Trigger on "prepare my federal return", "put the 1040 together", "freelancer tax return", "what order do I do the schedules", "return package for review". Federal only.
-version: "1.0"
+description: Assembly order and review controls for a US freelancer's 2026 federal Form 1040 package, with separately dated historical 2025 cases. Routes bookkeeping, Schedule C and SE, retirement, health insurance, premium tax credit, Schedule 1-A, QBI, tax, payments and Form 2210. Preserves holds in dependent Guides and refers unverified current-year form mechanics. Federal only.
+version: "1.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -13,70 +13,66 @@ type: router
 
 # US federal return assembly for a Schedule C freelancer, tax year 2026
 
-> **Source-cited draft.** Built from the 2026 Schedule C, Form 7206, Schedule 1 and Form 1040 as printed for 2025, IRS Publication 560 and IRS Publication 974, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
-
-**Answer first.** Do the return in this order: books, then Schedule C, then Schedule SE, then the retirement deduction, then the self-employed health insurance deduction (its limit needs the retirement figure), then the premium tax credit if there was Marketplace cover, then the rest of Schedule 1 and AGI, then the standard or itemized deduction, Schedule 1-A, the QBI deduction, the tax, Schedule 2 and credits, payments and the estimated tax penalty. Then run the tie-outs below. Every figure comes from the skill named at that step.
+Close the books, establish all income, compute Schedule SE, settle retirement before the health insurance limit, resolve any health insurance/PTC interaction, then finish adjustments, deductions, QBI, tax, credits and payments.
 
 ## Scope and who this is for
 
-For whoever prepares or reviews a 2026 Form 1040 for a US freelancer: a sole proprietor, or a single-member LLC disregarded for federal tax that reports on Schedule C, with or without wages, investment income or a spouse's income. The 2026 return is due 15 April 2027.
+This is an assembly workflow for a sole proprietor or a domestic single-member LLC reporting a business on Schedule C without a corporate election. An LLC's activities may instead require Schedule E or F; entity classification is not decided here. [Schedule C instructions](https://www.irs.gov/instructions/i1040sc).
 
-Out of scope: S corporations, partnerships and multi-member LLCs, rental (Schedule E) and K-1 income, foreign income and accounts, nonresidents and dual-status filers, amended returns and IRS notices (see the refusal list). For a California resident's state return, `ca-540-individual-return`.
+A route is navigation, not clearance to use a dependent Guide's held facts. Carry every source hold, missing input, referral and year restriction into the reviewer note. Stop the affected computation; do not fill gaps with assumed facts. Obtain professional review before filing. The historical base route `us-tax-workflow-base` supplies intake context; it cannot override any hold here.
 
-## Ask the client first
+**Current-year form hold:** Apart from the bounded Form 7206 reading below, this Guide does not certify 2026 form line numbers, box mechanics or filing software. Its earlier Form 1040, Schedules 1, 1-A, 2 and 3, Schedule D, Forms 8995/8995-A, 8962 and 2210 references used 2025 mechanics. Do not copy those into a 2026 filing. Check this point with one of our partner accountants.
 
-- Filing status, and dates of birth of the taxpayer and spouse. Can anyone claim the taxpayer as a dependant?
-- A valid social security number for everyone on the return (needed for the Schedule 1-A deductions); a married person must file jointly to claim them.
-- Every source of self-employment income: more than one Schedule C, or a partnership, changes Form 7206 and QBI.
-- Every Form 1099-NEC, 1099-MISC and 1099-K, to reconcile to the books. Income is reportable whether or not a form arrived.
-- Every Form W-2 with box 12 codes (wage base, employer plan eligibility, tips and overtime boxes).
-- Health cover by month: who was covered, who paid, Marketplace cover with advance premium tax credit (Form 1095-A), and any month anyone was eligible for a subsidized employer plan.
-- The retirement plan type, the date it was set up, and the amounts and dates contributed.
-- 2026 estimated payments (dates and amounts), any 2025 overpayment applied, and the 2025 total tax and AGI.
-- Capital gains, dividends, rental income, K-1s, foreign income or accounts and digital assets.
-- State of residence for 2026, for the state handoff.
+## Intake
+
+Read the existing case record and documents before requesting missing information. Record filing status, birth dates, dependency and identification details; all businesses and entity elections; all W-2s including every box and code; 1099-NEC, 1099-MISC, 1099-K and other receipts; investments, dividends, digital assets, rental/K-1 and foreign items; and state residence. Reconcile income using the books as well as information returns.
+
+For health insurance, obtain monthly coverage, payer and premiums, Form 1095-A/APTC, and eligibility for subsidized employer plans through the taxpayer, spouse, dependents or children under 27. Form 7206 excludes premiums for months of such eligibility, even if coverage was declined. [Form 7206](https://www.irs.gov/pub/irs-pdf/f7206.pdf), line 1; [26 USC 162(l)(2)(B)](https://uscode.house.gov/us/usc/t26/s162/).
+
+Obtain retirement plan type (including SEP, solo 401(k), SIMPLE or IRA), establishment date, contribution amounts and dates; 2026 estimated payment dates/amounts, 2025 overpayment applied, and 2025 tax/AGI. Match payments to account records and flag discrepancies.
 
 ## The method, step by step
 
-| Step | Do this | Skill to load | Lands on (2025 line numbers) |
-| --- | --- | --- | --- |
-| 1 | Close the books: reconcile receipts to deposits and every 1099; exclude transfers, loans and personal items | `us-sole-prop-bookkeeping`, `us-1099-k-and-payment-processors` | Schedule C lines 1 to 27b |
-| 2 | Finish Schedule C, including depreciation and the home office | `us-schedule-c-and-se-computation`, `us-section-179-and-bonus-depreciation` | Schedule C line 31 |
-| 3 | Schedule SE and Form 8959 | `us-schedule-c-and-se-computation` | Schedule 2 line 4; Schedule 1 line 15 |
-| 4 | Retirement deduction: base is net profit less the deductible half of SE tax, not less health insurance | `us-self-employed-retirement` | Schedule 1 line 16 |
-| 5 | Health insurance deduction: limit is net profit less the deductible half less step 4 | `us-self-employed-health-insurance` | Form 7206 line 14; Schedule 1 line 17 |
-| 6 | Marketplace cover only: resolve the premium tax credit and step 5 together (Pub. 974), Form 8962 | `us-premium-tax-credit-8962` | Schedule 2 line 1a or Schedule 3 line 9 |
-| 7 | Rest of Schedule 1 (HSA, IRA, student loan interest), then AGI | `us-federal-income-tax-return-1040` | Form 1040 lines 10, 11a |
-| 8 | Standard or itemized deduction, with the SALT cap | `us-federal-income-tax-return-1040` | line 12e |
-| 9 | Schedule 1-A: tips, overtime, car loan interest, senior deduction | `us-federal-income-tax-return-1040` | line 13b |
-| 10 | QBI deduction on income before QBI = line 11a − 12e − 13b | `us-qbi-deduction` | line 13a |
-| 11 | Capital gains and qualified dividends, if any | `us-capital-gains` | Schedule D; line 7a |
-| 12 | Tax, Schedule 2 Part I, credits (child tax credit, education, foreign tax) | `us-federal-income-tax-return-1040`, `us-child-tax-credit-and-eitc`, `us-education-credits-8863`, `us-foreign-tax-credit-1116` | lines 16 to 24 |
-| 13 | Payments and the estimated tax penalty (Form 2210 only if a Part II box applies); next year's vouchers | `us-quarterly-estimated-tax` | lines 25d, 26, 33, 38 |
-| 14 | Tie-outs below, then the package: return, recomputing working paper, reviewer note of every judgment call | this skill | |
+| Order | Work and route | Required assembly control |
+| --- | --- | --- |
+| 1 | `us-sole-prop-bookkeeping`, `us-1099-k-and-payment-processors` | Reconcile books, banks and information returns; document transfers, loans and personal transactions individually. |
+| 2 | `us-schedule-c-and-se-computation`, `us-section-179-and-bonus-depreciation` | Finish Schedule C, home office (Form 8829) and depreciation (Form 4562); carry all upstream limitations. |
+| 3 | `us-capital-gains`, `us-form-1040-individual-return` | Establish wages, gains, qualified dividends and all other income before finalizing total income, AGI or QBI inputs. |
+| 4 | `us-schedule-c-and-se-computation` | Complete Schedule SE and screen Form 8959; keep each spouse's information distinct. |
+| 5 | `us-self-employed-retirement` | Resolve the plan-specific deductible contribution, not simply the cash paid. |
+| 6 | `us-self-employed-health-insurance` | Apply the same-business limit and monthly eligibility; obtain all missing facts. |
+| 7 | `us-premium-tax-credit-8962` | Coordinate Form 8962 with health insurance; current-year credit eligibility and repayment remain held here. |
+| 8 | `us-form-1040-individual-return` | Finish other Schedule 1 adjustments, including HSA, IRA and student loan interest, then AGI; revisit linked calculations when an input changes. |
+| 9 | `us-form-1040-individual-return` | Resolve standard/itemized deduction, SALT and other limitations, charitable relief, and Schedule 1-A tips/overtime/car-loan/senior items under the correct year's rules. |
+| 10 | `us-qbi-deduction` | Resolve QBI and Form 8995/8995-A using the correct year's law; full QBI computation is held here. |
+| 11 | `us-form-1040-individual-return`, `us-capital-gains` | Select the applicable tax calculation; reconcile Schedule 2 Parts I/II, Form 8959 and Form 8960 where relevant. |
+| 12 | `us-child-tax-credit-and-eitc`, `us-education-credits-8863`, `us-foreign-tax-credit-1116` | Screen credits, Schedule 3 and refundable amounts; foreign-tax matters leave the basic assembly scope. |
+| 13 | `us-quarterly-estimated-tax` | Reconcile withholding, estimated payments, prior-year credit and refunds/balance; separately determine Form 2210 duties and next year's 2027 estimates. |
+| 14 | This Guide | Resolve tie-outs and prepare the reviewer package; unresolved dependencies prevent a filing-ready result. |
 
-**Why step 4 before step 5.** Form 7206 line 9 subtracts the Schedule 1 line 16 retirement deduction for the same business, while the Pub. 560 worksheet for the retirement deduction never subtracts health insurance. Doing them in this order has no loop. The only true loop in the return is step 5 with step 6 (Marketplace cover). Sources: [Form 7206](https://www.irs.gov/pub/irs-pdf/f7206.pdf), [Pub. 560](https://www.irs.gov/pub/irs-pdf/p560.pdf), [Pub. 974](https://www.irs.gov/publications/p974).
+The historical `us-federal-income-tax-return-1040` route is not authority to bypass the year limits or holds in `us-form-1040-individual-return`.
 
-### Tie-out checks before sign-off
+**Retirement before health insurance.** Publication 560's self-employed worksheet starts with net profit less the deductible part of SE tax, then applies the plan computation. SEP contributions and the earnings used to limit them depend on each other; use its reduced contribution rate method. Do not treat net profit less half of SE tax as the final retirement deduction. This worksheet does not subtract health insurance. Its 2025 dollar limits are not 2026 limits. [Publication 560](https://www.irs.gov/publications/p560), Deduction Limit for Self-Employed Individuals and chapter 5 worksheet.
 
-Line numbers are from the 2025 forms; check them against the 2026 forms when issued.
+For Form 7206 (2026), line 9 subtracts deductible SEP/SIMPLE/qualified-plan contributions attributable to the business under which the insurance plan is established. Lines 4–8 allocate the deductible SE-tax portion; multiple businesses require that allocation rather than subtracting the entire deduction from each business. The simple subtraction in the case below applies only to its single-business situation. Line 14 uses the smaller of eligible premiums and the remaining income limit; do not confuse the limit with a deduction. [Form 7206](https://www.irs.gov/pub/irs-pdf/f7206.pdf), lines 4–14.
 
-- Schedule C line 31 = Schedule SE line 2 (one business, no farm or partnership income).
-- Schedule SE line 12 = Schedule 2 line 4, and Schedule SE line 13 = Schedule 1 line 15.
-- Form 7206 line 14 (or the worksheet) = Schedule 1 line 17; Form 7206 line 9 = the line 16 amount for the same business.
-- Schedule 1 line 26 = lines 11 to 23 plus 25 = Form 1040 line 10.
-- Form 1040 line 9 = 1z + 2b + 3b + 4b + 5b + 6b + 7a + 8; line 11a = 9 − 10; line 11b = 11a.
-- Form 8995 line 11 (or 8995-A line 33) = line 11a − 12e − 13b; the QBI deduction = line 13a.
-- Schedule 1-A line 38 = line 13b; line 14 = 12e + 13a + 13b; line 15 = 11b − 14, not below zero.
-- Schedule 2 line 21 = line 23; line 24 = 22 + 23.
-- Line 33 = 25d + 26 + 32; line 26 agrees with the IRS online account payment record.
-- Form 8962: excess advance credit = Schedule 2 line 1a; net credit = Schedule 3 line 9.
-- Only one of line 34 and line 37 is positive, equal to the difference between lines 33 and 24.
-- Every 1099 is traced to a Schedule C line or an explained exclusion.
+**Marketplace interaction.** Publication 974 (2025) explains that health insurance deductions and PTC can affect each other, and identifies additional interactions with IRA/student-loan deductions and other exclusions. The earlier claim that this was the return's only loop is withdrawn. Its 2025 eligibility, repayment caps, worksheets and convergence methods are not certified for 2026 here. For 2026 Marketplace entitlement, excess APTC and linked calculations: Check this point with one of our partner accountants. [Publication 974](https://www.irs.gov/publications/p974), Self-Employed Health Insurance Deduction and PTC.
 
-### Worked case: the order error
+## Tie-out checks before sign-off
 
-A single developer has 2026 net profit of USD 120,000, no wages, and contributes USD 15,000 to a SEP. Deductible half of SE tax: USD 120,000 x 92.35% x 15.3% / 2 = USD 8,477.73 (all under the wage base). The correct Form 7206 limit is USD 120,000 − USD 8,477.73 − USD 15,000 = USD 96,522.27. A preparer who does health insurance before the SEP gets USD 111,522.27, USD 15,000 too high; with premiums between those two amounts the deduction would be overstated.
+These are review tasks, not a certified 2026 line map. The preparer must identify each actual year's form and field before using a tie-out.
+
+- Reconcile Schedule C profit/loss to Schedule SE, accounting for every business, permitted adjustment and limitation; an unexplained difference stops assembly.
+- Reconcile SE tax to Schedule 2 and its deductible portion to Schedule 1; reconcile retirement and Form 7206/worksheet results to Schedule 1 without duplication.
+- Reconcile every Schedule 1 income and adjustment entry to its supporting document and totals; include gains and qualified dividends before computing AGI.
+- Reconcile standard/itemized deductions, Schedule 1-A and Form 8995/8995-A to taxable income, with all applicable limitations. The old QBI shortcut is held.
+- Reconcile tax, credits and Schedule 2/3 totals to Form 1040; separately reconcile Form 8962 credit/repayment and Form 2210 treatment.
+- Reconcile withholding, current-year estimates and prior-year credit to total payments and account records. Trace each information return to the correct income category or a documented exclusion, not automatically to Schedule C.
+- Compare total payments with total tax: equality can produce zero overpayment and zero balance due. Explain any differing amount rather than demanding one positive figure.
+
+## Worked cases
+
+**2026 order-error case (original inputs).** Single developer, net profit USD 120,000, no wages, SEP contribution USD 15,000. The following is conditional working arithmetic for one ordinary Schedule C business, no other SE income/loss, no optional method, with the SEP amount established as deductible and attributable to this business. Those additional facts are not supplied by the original case: if unresolved, stop. Regular SE arithmetic is USD 120,000 × 92.35% × 15.3% = USD 16,955.46; half USD 8,477.73. The correct income limit is USD 96,522.27 versus USD 111,522.27 if retirement is omitted, a USD 15,000 overstatement of the limit. This does not establish eligible premiums, Marketplace treatment or an actual deduction. Sources: [Schedule SE](https://www.irs.gov/pub/irs-pdf/f1040sse.pdf), [SE instructions](https://www.irs.gov/pub/irs-pdf/i1040sse.pdf), [Form 7206](https://www.irs.gov/pub/irs-pdf/f7206.pdf). Figures are cents-based diagnostics, not completed rounded filing fields.
 
 ```oa-check
 name: Retirement before the health insurance limit (2026)
@@ -95,45 +91,99 @@ expected:
   overstatement: 15000
 ```
 
+**Historical Case A, 2025, and Case D order error.** Preserve the earlier single developer aged 40, USD 120,000 profit, no wages/other income/capital gains/Schedule 1-A items, USD 9,600 private non-Marketplace premiums, no employer plan available, and USD 15,000 SEP contribution. Given the original worksheet parameters, its arithmetic is net earnings USD 110,820; Social Security USD 13,741.68 plus Medicare USD 3,213.78 = USD 16,955.46; half USD 8,477.73; proposed SEP ceiling USD 22,304.45; health income limit USD 96,522.27; after subtracting premiums, USD 86,922.27. Subtracting the original USD 15,750 deduction gives USD 71,172.27; its 20% is USD 14,234.45 versus USD 17,384.45 on USD 86,922.27, leaving USD 56,937.82. The old threshold comparison was USD 197,300. These are historical unrounded arithmetic benchmarks, not findings of deduction eligibility or a completed return. Plan terms/timing, insurance qualification, standard deduction eligibility, QBI and whole-dollar return/Tax Table computation still require resolution. Case D's omitted-SEP limit is USD 111,522.27; with USD 9,600 premiums the income limit alone does not restrict that amount. Check this point with one of our partner accountants.
+
+```oa-check
+name: Historical Case A and D arithmetic only (2025)
+inputs:
+  profit: 120000
+  sep: 15000
+  premiums: 9600
+  original_deduction: 15750
+steps:
+  - earnings: profit * 0.9235
+  - ss: earnings * 0.124
+  - medicare: earnings * 0.029
+  - se: ss + medicare
+  - half: se / 2
+  - proposed_sep_ceiling: (profit - half) * 0.20
+  - health_limit: profit - half - sep
+  - after_adjustments: health_limit - premiums
+  - before_qbi: after_adjustments - original_deduction
+  - tentative_qbi: after_adjustments * 0.20
+  - proposed_income_cap: before_qbi * 0.20
+  - residual: before_qbi - proposed_income_cap
+  - omitted_sep_limit: profit - half
+expected:
+  earnings: 110820
+  ss: 13741.68
+  medicare: 3213.78
+  se: 16955.46
+  half: 8477.73
+  proposed_sep_ceiling: 22304.45
+  health_limit: 96522.27
+  after_adjustments: 86922.27
+  before_qbi: 71172.27
+  tentative_qbi: 17384.45
+  proposed_income_cap: 14234.45
+  residual: 56937.82
+  omitted_sep_limit: 111522.27
+```
+
+**Historical Case B, 2025.** Single filer born in 1959, valid SSN, MAGI USD 95,000. If otherwise eligible for the senior deduction, USD 6,000 − 6% × (USD 95,000 − USD 75,000) = USD 4,800. This is separate from the additional standard deduction for age; no eligibility or amount for that separate deduction is inferred. [Public Law 119-21, section 70103](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
+
+```oa-check
+name: Historical senior deduction arithmetic (2025)
+inputs:
+  magi: 95000
+steps:
+  - senior: 6000 - (magi - 75000) * 0.06
+expected:
+  senior: 4800
+```
+
+**Historical Case C, 2026 QBI.** Original facts: freelancer actively runs a business, QBI USD 1,500; alternative USD 999. The original 20% arithmetic is USD 300 or USD 199.80. The old proposed USD 400 minimum and USD 1,000 eligibility test do not establish the full QBI entitlement, material-participation finding or ordinary income limitation. No deduction is approved from these sparse facts. Check this point with one of our partner accountants.
+
+```oa-check
+name: Historical QBI arithmetic only (2026)
+inputs:
+  original_qbi: 1500
+  alternative_qbi: 999
+steps:
+  - ordinary_product: original_qbi * 0.20
+  - alternative_product: alternative_qbi * 0.20
+expected:
+  ordinary_product: 300
+  alternative_product: 199.80
+```
+
 ## When to refuse or refer
 
-- An S corporation, partnership or multi-member LLC; a Schedule C loss with at-risk, passive activity or excess business loss questions.
-- Rental income, K-1s, material capital gains or digital asset disposals beyond simple Schedule D reporting (`us-capital-gains`).
-- Foreign income, Form 2555, FBAR or Form 8938 (`us-fbar-and-fatca-8938`), a nonresident or dual-status filer (`us-form-1040-nr-nonresident-return`).
-- A specified service business above the QBI threshold, aggregation, or the wage and property limits (Form 8995-A schedules).
-- Marketplace cover where the Pub. 974 computation does not converge, or household income is near the edge of eligibility.
-- Tips in an occupation not clearly on the IRS list, overtime not shown on a W-2 or 1099, or tips earned in a possible specified service business.
-- A tie-out that fails and cannot be explained from the documents.
-- Amended returns (`us-amended-return-form-1040-including-capital`), unfiled years, IRS notices or collection.
-- Any figure that cannot be traced to a source document or an official IRS page: flag it, never guess.
+Stop the affected work and retain the route and missing facts in the reviewer note:
+
+- Corporations, partnerships/multi-member LLCs, rental/Schedule E, K-1s, losses with at-risk/passive/excess-business-loss issues: Check this point with one of our partner accountants.
+- Material gains, digital assets or other specialist transactions: `us-capital-gains`. Check this point with one of our partner accountants.
+- Foreign income/credit, Form 2555, FBAR/Form 8938, nonresident or dual-status: `us-foreign-tax-credit-1116`, `us-fbar-and-fatca-8938`, `us-form-1040-nr-nonresident-return`. Check this point with one of our partner accountants.
+- QBI thresholds, minimum, SSTBs, aggregation, cooperative patrons, wage/property limits and Forms 8995/8995-A: Check this point with one of our partner accountants.
+- Schedule 1-A occupation, FLSA overtime, reporting, SSN/joint-return, car-loan and senior eligibility questions: Check this point with one of our partner accountants.
+- Marketplace eligibility, repayment, nonconvergence or other interacting deductions: Check this point with one of our partner accountants.
+- Amended returns, unfiled years, IRS notices or collection: `us-amended-return-form-1040-including-capital`. Check this point with one of our partner accountants.
+- Missing source documents, unresolved tie-outs, unsupported figures, failed upstream checks or an unverified current-year filing mechanism: Check this point with one of our partner accountants.
 
 ## Filing and payment
 
-The 2026 return is due **15 April 2027**; Form 4868 by that date extends filing to 15 October 2027 but not payment. Deadlines, payment routes and penalties are in `us-federal-income-tax-return-1040`; the 2027 estimated tax schedule is in `us-quarterly-estimated-tax`. Hand the state preparer federal AGI, taxable income, the QBI deduction, depreciation detail, and the health insurance and retirement amounts.
+For an ordinary domestic calendar-year 2026 individual return, the general filing date is **15 April 2027**. A timely Form 4868 generally extends filing six months to **15 October 2027**, not the ordinary payment deadline. Overseas/military/disaster relief and other exceptions, late interest/penalties, payment routes and Form 2210 filing exceptions: Check this point with one of our partner accountants. [26 USC 6072(a)](https://uscode.house.gov/us/usc/t26/s6072/), [IRS extension guidance](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return).
 
-## Completion checklist
+For the historical educator, reservist/performing-artist/fee-basis-official, military moving, alimony, savings-withdrawal penalty, Archer MSA, Saver’s Credit and child/dependent-care topics, obtain the actual facts and use the year-specific Form 1040 Guide; occupation alone is no exclusion. Check this point with one of our partner accountants.
 
-- Intake recorded, including health cover by month and SSN status.
-- Schedule C reconciled to the bank and every 1099.
-- Schedule SE, then retirement, then health insurance (then Form 8962 if Marketplace), in that order.
-- Schedule 1-A tested person by person.
-- QBI computed from line 11a − 12e − 13b on the right form.
-- Every tie-out passes or is explained in the reviewer note.
-- Safe harbour tested; Form 2210 only if a Part II box applies.
-- Filing, extension and payment confirmed; 2027 estimates scheduled; state handoff prepared.
-- A credentialed preparer reviews and signs.
+## Reviewer package and completion
+
+Include the dated form package; source documents and classifications; a working paper that recomputes the schedules and distinguishes cents from filed rounding; every hold/judgment and tie-out; payment evidence; and separately dated next-year estimates/vouchers where applicable. Identify the reviewer and record actual form/PDF, structured-data and e-file status; no rendering or submission is promised. Do not label incomplete forms or flat values as an executable return model. Record actual spreadsheet anchors before writing cross-sheet formulas, recalculate with a spreadsheet engine, and compare key outputs to the independent arithmetic; inspecting formula text alone is insufficient.
+
+For California, route to `ca-540-individual-return` with federal AGI, taxable income, QBI, depreciation, health insurance, retirement and payment detail. For any state, also supply HSA, Schedule C profit and Schedule SE detail where relevant. State conformity/add-backs, state subsidies and claims that no state handoff is needed are not decided here. Check this point with one of our partner accountants.
 
 ## Sources
 
-| Source | URL | Read on |
-| --- | --- | --- |
-| Form 7206 (2025). Read for line 9 (retirement deduction subtracted) and line 14 to Schedule 1. | https://www.irs.gov/pub/irs-pdf/f7206.pdf | 2026-11-13 |
-| IRS Publication 560 (2025). Read for the Deduction Worksheet for Self-Employed, which subtracts only the deductible half of SE tax. | https://www.irs.gov/pub/irs-pdf/p560.pdf | 2026-11-13 |
-| IRS Publication 974. Read for the simplified and iterative methods for the premium tax credit with the self-employed health insurance deduction. | https://www.irs.gov/publications/p974 | 2026-11-13 |
-| Schedule 1 (Form 1040) 2025. Read for lines 10 to 26. | https://www.irs.gov/pub/irs-pdf/f1040s1.pdf | 2026-11-13 |
-| Schedule 2 (Form 1040) 2025. Read for lines 1a, 4, 11, 12 and 21. | https://www.irs.gov/pub/irs-pdf/f1040s2.pdf | 2026-11-13 |
-| Schedule 3 (Form 1040) 2025. Read for line 9, the net premium tax credit. | https://www.irs.gov/pub/irs-pdf/f1040s3.pdf | 2026-11-13 |
-| Form 1040 (2025). Read for lines 1z to 38 used in the tie-outs. | https://www.irs.gov/pub/irs-pdf/f1040.pdf | 2026-11-13 |
-| Schedule C (Form 1040) 2026. Read for line 31. | https://www.irs.gov/pub/irs-pdf/f1040sc.pdf | 2026-11-13 |
+Bounded official-source reads on 2026-11-26: [Form 7206 (2026), lines 1 and 4–14](https://www.irs.gov/pub/irs-pdf/f7206.pdf); [26 USC 162(l)](https://uscode.house.gov/us/usc/t26/s162/); [Publication 560 (2025), self-employed deduction worksheet](https://www.irs.gov/publications/p560); [Publication 974 (2025), interaction discussion](https://www.irs.gov/publications/p974). Reused completed operative-source reads dated 2026-11-22/26: [Schedule C instructions](https://www.irs.gov/instructions/i1040sc), [Schedule SE](https://www.irs.gov/pub/irs-pdf/f1040sse.pdf), [Schedule SE instructions](https://www.irs.gov/pub/irs-pdf/i1040sse.pdf), [senior-deduction law](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [filing-date statute](https://uscode.house.gov/us/usc/t26/s6072/) and [extension guidance](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return). These are bounded claim reads, not a claim that whole publications or 2026 form sets were read.
 
-Not yet confirmed: the 2026 Form 1040 and Schedules 1, 1-A, 2 and 3 were not published when read, so every line number above is from the 2025 forms and must be checked against the 2026 forms; Publication 974 was not re-read line by line for 2026.
+Not yet confirmed: 2026 form mechanics beyond the bounded Form 7206 fields, full QBI and Marketplace calculations, and referred specialist outcomes are non-usable holds. Check this point with one of our partner accountants.
