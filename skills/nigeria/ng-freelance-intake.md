@@ -1,10 +1,10 @@
 ---
 name: ng-freelance-intake
 description: ALWAYS USE THIS SKILL when a user asks for help preparing a Nigerian tax return AND mentions freelancing, self-employment, software developer, contractor, sole proprietor, BN business, or private limited company in Nigeria. Trigger on phrases like "prepare my Nigerian tax return", "I'm a freelance developer Lagos", "I have an RC", "I'm self-employed Nigeria", "NTA 2025 small company", "FIRS Tax Pro-Max", "TIN Nigeria", "Lagos LIRS self-assessment", "PITA filing", "CIT 0% small company", "VAT Nigeria registration", or any similar phrasing where the user is a Nigeria-resident self-employed individual, sole proprietor (BN), or small/medium private limited company (RC) founder. This is the REQUIRED entry point for the Nigerian freelance/SME workflow; every downstream skill in the stack (ng-cit, ng-personal-income-tax, ng-paye, ng-pension-nhf-social-contributions, ng-wht, ng-cgt, ng-vat, ng-payroll, ng-formation, ng-return-assembly) depends on this skill running first. Uses ask_user_input_v0-style structured questions. Nigerian residents only (full-year tax residents and foreigners with > 183 days presence). ALWAYS read this skill first when starting a Nigerian freelance/SME tax workflow.
-version: 1.2
+version: 1.3
 jurisdiction: NG
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -94,7 +94,7 @@ Entity?
 
 Parallel routing (independent of regime):
 
-- Pre-2026 only: taxable turnover ≥ N25m trailing-12 → VAT registration mandatory (FA 2019 s.46). From 2026 the NTA has no registration threshold; the NTAA small business relief (no registration, charging or returns for turnover NGN 100m or less, fixed assets NGN 250m or less, not professional services) decides it → route `nigeria-vat`.
+- Pre-2026 only: taxable supplies ≥ N25m in any calendar year → VAT registration/returns mandatory (FA 2019 s.38, substituting VATA s.15(1)). From 2026 the NTA has no registration threshold; the NTAA small business relief (no registration, charging or returns for turnover NGN 100m or less, fixed assets NGN 250m or less, not professional services) decides it → route `nigeria-vat`.
 - Employees on payroll → route `ng-paye` + `ng-pension-nhf-social-contributions` + `ng-payroll`.
 - Pays Nigerian or foreign suppliers / contractors / rent / royalties → route `ng-wht`.
 - Disposed of chargeable assets in the year → route `ng-cgt`.
@@ -137,7 +137,7 @@ All thresholds reflect the rules current as at the period being prepared. Many r
 
 - **From 2026, individual and company**: the NTA s.201 definitions ("resident individual", "Nigerian company"), set out in [ng-non-resident-cross-border](ng-non-resident-cross-border.md). For an individual any one of the six limbs is enough.
 
-- **Pre-2026 individual resident test**: (i) domiciled in Nigeria during the year, OR (ii) present ≥ 183 days in any 12-month period, OR (iii) employed by the Nigerian government or a Nigerian-resident employer.  _(PITA s.2)_
+- **Pre-2026 individual resident test**: PITA s.2 allocates taxing jurisdiction by reference to the First Schedule ('place of residence' / 'principal place of residence' on 1 January) and s.2(1)(b) categories (armed forces/police, Foreign Service, FCT residents and non-residents with Nigerian income); PITA has no general 183-day individual residence test in s.2; it uses 183 days only in specific rules, such as s.10(1)(a)(ii) for employment duties performed in Nigeria for a foreign employer.  _(PITA ss.2, 10(1)(a)(ii), First Schedule)_
 - **Pre-2026 company resident test**: (i) incorporated in Nigeria (Nigerian company), OR (ii) management and control exercised in Nigeria.  _(CITA s.13)_
 - **Non-resident refusal**: Non-residents (without a Nigerian fixed base / significant economic presence under FA 2019 / NTA 2025) → REFUSE here and route to [ng-non-resident-cross-border](ng-non-resident-cross-border.md).  _(FA 2019; NTA 2025 s.17)_
 
@@ -179,33 +179,33 @@ The "small company" definition has shifted twice. Use the rule in force for the 
 
 - **From 2026**: 7.5% (s.147). Basic food, medical, educational and export items are zero rated (s.186), not exempt. The NTA has no registration threshold; the NTAA small business relief applies instead (NTAA ss.22(4), (5), 147; see [nigeria-vat](nigeria-vat.md)). The three lines below are pre-2026 only.
 
-- **VAT registration threshold**: N25m taxable turnover in the trailing-12 months. Below threshold = exempt from VAT registration and from VAT charging obligations, but still no input VAT recovery.  _(FA 2019 s.46)_
+- **VAT registration threshold**: N25m taxable supplies (singularly or cumulatively) in any calendar year. Below threshold: no monthly returns under s.15(1), and the s.15(2) proviso exempts the person from VATA ss.8(2), 13, 29, 34 and 35; no input VAT recovery.  _(FA 2019 s.38, substituting VATA s.15(1))_
 - **VAT standard rate**: 7.5% standard. Exports zero-rated. Basic food, medical and educational items exempt.  _(FA 2019; VATA First Schedule)_
 - **Routing above threshold**: Above threshold or voluntarily registered → route `ng-vat` and ensure FIRS Tax Pro-Max VAT module is active.
 
 ##### 4.6 PAYE / employer gate: PITA s.81; Operation of PAYE Regulations 2002
 
-PITA is repealed from 2026 (NTA s.195). The 10th-of-month date below is pre-2026. From 2026, tax deducted and not remitted by the 21st day of the following month attracts the NTAA s.107 penalty, and the employer files an annual return of emoluments by 31 January (NTAA s.14(1)). PAYE has its own skill, ng-payroll, still on 2025.
+PITA is repealed from 2026 (NTA s.195). Under the Joint Revenue Board 2026 Personal Income Tax Guidelines (paras 6.1 and 12.2), monthly PAYE remittance remains due not later than the 10th day of the following month in 2026; tax deducted at source and not remitted by the 21st day of the following month attracts the NTAA s.107(1) penalty, and the employer files an annual return of emoluments by 31 January (NTAA s.14(1)). See `ng-payroll` (updated for 2026).
 
 - **PAYE withholding and remittance**: Any employees → withhold PAYE monthly and remit to the employee's State Internal Revenue Service by the 10th of the following month. Route `ng-paye` + `ng-payroll`.  _(PITA s.81; Operation of PAYE Regulations 2002)_
 - **Statutory deductions**: pension, NHF, NSITF and ITF (rates, thresholds and deadlines in their home skill; the earlier ITF threshold of 5 staff or N50m turnover is not confirmed there); NHIA where applicable → route `ng-pension-nhf-social-contributions`.  _(PRA 2014; NHF Act 1992; NHIA Act 2022; ITF (Amendment) Act 2011; Employee Compensation Act 2010)_
 
-##### 4.7 Withholding-tax gate: CITA s.78-82; PITA s.69-73; WHT Regulations 1997 (as amended)
+##### 4.7 Withholding-tax gate: CITA s.78-82; PITA s.69-73; Deduction of Tax at Source (Withholding) Regulations 2024
 
-The rates below are pre-2026. For 2026 deduction at source runs under NTAA s.51, with rates in regulations not read for this update; monthly returns follow NTAA s.28, and deducted tax is remitted by the 21st day of the following month (NTAA s.107(1)).
+The Deduction of Tax at Source (Withholding) Regulations 2024 (S.I. No. 34 of 2024, regs 11-12) took effect on 1 January 2025 and revoked all earlier WHT regulations (including the 1997 Regulations). For 2026 deduction at source runs under NTAA s.51 with monthly returns under NTAA s.28 and non-remittance penalties from the 21st day of the following month under NTAA s.107(1).
 
-- **WHT obligation trigger**: WHT obligation arises if the taxpayer (RC always; sole trader where appointed agent) pays the categories listed below.  _(CITA s.78-82; PITA s.69-73; WHT Regulations 1997)_
-- **Contracts / supplies**: 5% (companies) / 5% (individuals)  _(WHT Regulations 1997)_
-- **Professional services / consultancy / management**: 10% / 5%  _(WHT Regulations 1997)_
-- **Rent**: 10% (companies and individuals)  _(WHT Regulations 1997)_
-- **Royalties / interest / dividends**: 10% (5% under several DTTs)  _(WHT Regulations 1997)_
-- **Non-resident payments**: 10% subject to DTT  _(WHT Regulations 1997)_
+- **WHT obligation trigger**: Bodies corporate/unincorporate (other than individuals), MDAs, statutory bodies and enterprises must deduct, subject to the small-company exemption for transactions <= N2m/month where the supplier holds a valid TIN (reg 4(1)-(2)).  _(WHT Regulations 2024, reg 4)_
+- **Supply of goods (non-manufacturer) / unlisted services**: 2% resident (corporate and non-corporate); unlisted services 5% non-resident  _(WHT Regulations 2024, First Schedule)_
+- **Commission, consultancy, technical, management and professional fees**: 5% resident (corporate and non-corporate) / 10% non-resident  _(WHT Regulations 2024, First Schedule)_
+- **Rent, hire or lease**: 10% (corporate and non-corporate, resident and non-resident)  _(WHT Regulations 2024, First Schedule)_
+- **Dividends and interest**: 10% (corporate and non-corporate, subject to ratified DTTs); **Royalties**: 10% corporate / 5% non-corporate  _(WHT Regulations 2024, First Schedule)_
+- **No-TIN doubling**: Twice the schedule rate on non-passive income where the recipient has no TIN (reg 3(c))  _(WHT Regulations 2024, reg 3(c))_
 - **Routing**: Reviewer to confirm the matrix for the relevant period. Route `ng-wht` whenever the taxpayer has paid or received any of the above.  
 
-##### 4.8 CGT gate: CGTA s.2; FA 2021 (digital assets); NTA 2025
+##### 4.8 CGT gate: CGTA s.2; FA 2021 s.2 (shares); FA 2023 s.2 (digital assets); NTA 2025
 
-- **From 2026**: the Capital Gains Tax Act is repealed (NTA s.195). Chargeable gains enter an individual's total income (s.28(2)(a)(v)) and a company's total profits (s.27(1)), at the personal bands or the s.56 rate, not 10%. Nigerian share disposals are outside charge under the s.34(1)(a) conditions.
-- **Pre-2026 CGT rate**: Capital gains on disposal of chargeable assets (land, buildings, shares above the FA 2021 N100m / 100,000-share thresholds, digital assets) → 10% CGT. Route `ng-cgt` if any disposals in the year, in either period.  _(CGTA s.2; FA 2021)_
+- **From 2026**: the Capital Gains Tax Act is repealed (NTA s.195). Chargeable gains enter an individual's total income (s.28(2)(a)(v)) and a company's total profits (s.27(1)), at the personal bands or the s.56 rate, not 10%. Nigerian share disposals are exempt where aggregate proceeds are less than N150m and chargeable gain does not exceed N10m in any 12 consecutive months, or proceeds are reinvested in Nigerian shares in the same year (NTA s.34(1)(a)).
+- **Pre-2026 CGT rate**: Capital gains on disposal of chargeable assets (land, buildings, Nigerian shares with aggregate disposal proceeds of N100m or more in any 12 consecutive months under FA 2021 s.2, and digital assets added by FA 2023 s.2) → 10% CGT. Route `ng-cgt` if any disposals in the year, in either period.  _(CGTA s.2; FA 2021 s.2; FA 2023 s.2)_
 
 ##### 4.9 Filing-channel gate: FIRS Tax Pro-Max; state IRS portals
 
@@ -220,7 +220,7 @@ Use `ask_user_input_v0`. Batch where independent.
 ##### 5.1 Refusal sweep (one batched `ask_user_input_v0` call, 5 single-select questions)
 
 - **Q1 Residency (period being prepared):** Full-year Nigerian resident | Foreigner present ≥ 183 days | Part-year | Non-resident with Nigerian-source income only.
-- **Q2 Entity:** Sole trader (no CAC) | Business Name / BN (CAC Part B) | Private limited company / RC (Ltd) | Partnership | Incorporated Trustee / NGO | Not sure.
+- **Q2 Entity:** Sole trader (no CAC) | Business Name / BN (CAMA 2020 Part E) | Private limited company / RC (Ltd) | Partnership | Incorporated Trustee / NGO | Not sure.
 - **Q3 Period being prepared:** Calendar year 2025 (pre-NTA) | FY ending in 2025 (pre-NTA) | FY wholly from 1 Jan 2026 (NTA 2025) | Multiple periods or a straddle.
 - **Q4 Current-FY turnover (NGN):** ≤ N25m | N25m-N100m | Above N100m | Not sure (infer from docs).
 - **Q5 State of residence (PIT only) / state of operation (RC):** Lagos | FCT (Abuja) | Rivers | Other state: please name | Multiple states.
@@ -495,15 +495,15 @@ Inputs: user documents (bank statements, invoices, WHT credit notes, prior retur
 
 Downstream skills (via ng-return-assembly):
 
-- `ng-personal-income-tax`: PIT progressive 7-24%, CRA, 1% minimum tax (PITA Sixth Schedule).
+- `ng-personal-income-tax`: From 2026 NTA bands of 0% to 25% (NTA s.58, Fourth Schedule); pre-2026 PITA 7-24%, CRA, 1% minimum tax (PITA Sixth Schedule).
 - `ng-cit`: Companies Income Tax: 0% / 30% + 4% Development Levy from 2026 (NTA ss.56, 59); 0% / 20% / 30% pre-2026 (CITA).
 - `ng-paye`: Operation of PAYE Regulations 2002; monthly remittance to state IRS by the 10th.
 - `ng-pension-nhf-social-contributions`: Pension (PRA 2014), NHF, NSITF, ITF (NHIA out of its scope).
 - `ng-non-resident-cross-border`: residence tests, non-residents, permanent establishment, double tax relief (NTA 2025).
 - `ng-payroll`: payslip generation; gross-to-net; employer cost summary.
-- `ng-wht`: Withholding tax matrix (CITA s.78-82; PITA s.69-73; WHT Regulations 1997; NTA 2025 simplifications).
-- `ng-cgt`: Capital Gains Tax 10% (CGTA; FA 2021 digital assets and N100m share threshold).
-- `ng-vat`: VAT 7.5% standard, zero-rate exports, exemptions (VATA + FA 2019 amendments).
+- `ng-wht`: Withholding tax matrix (Deduction of Tax at Source (Withholding) Regulations 2024 effective 1 January 2025; NTAA s.51 from 2026).
+- `ng-cgt`: From 2026 integrated into PIT/CIT with N150m proceeds / N10m gain share exemption (NTA ss.27, 28, 34(1)(a)); pre-2026 10% CGTA (FA 2021 s.2 N100m share proceeds threshold; FA 2023 s.2 digital assets).
+- `ng-vat`: From 2026 VAT 7.5% standard, basic food/medical/educational/exports zero-rated (NTA ss.147, 186) and NTAA small-business relief (NTAA ss.22(4), 147); pre-2026 VATA + FA 2019 (N25m calendar-year threshold).
 - `ng-formation`: Entity choice + CAC / TIN onboarding.
 - `ng-return-assembly`: final orchestrator (returns + working paper + reviewer brief + action list).
 
@@ -514,7 +514,7 @@ Primary statutes and regulations cited (reviewer to verify the exact version in 
 - Personal Income Tax Act (PITA), Cap. P8 LFN 2004, as amended by Finance Acts 2019-2023.
 - Companies Income Tax Act (CITA), Cap. C21 LFN 2004, as amended.
 - Value Added Tax Act (VATA), Cap. V1 LFN 2004, as amended by Finance Acts 2019, 2020, 2021, 2023.
-- Capital Gains Tax Act (CGTA), Cap. C1 LFN 2004, as amended; FA 2021 (digital assets; share-disposal threshold).
+- Capital Gains Tax Act (CGTA), Cap. C1 LFN 2004, as amended; FA 2021 s.2 (N100m share-disposal proceeds threshold); FA 2023 s.2 (digital assets).
 - Finance Act 2019: small company definition (turnover ≤ N25m); VAT rate to 7.5%; VAT registration threshold N25m.
 - Finance Act 2020 / 2021 / 2023: incremental amendments.
 - Nigeria Tax Act 2025 (NTA 2025): consolidated framework commencing 1 January 2026; small company 0% (N100m turnover, N250m fixed assets), any other company 30% (s.56); 4% Development Levy (s.59). Repeals CITA, PITA, VATA and CGTA (s.195).
@@ -525,7 +525,7 @@ Primary statutes and regulations cited (reviewer to verify the exact version in 
 - Industrial Training Fund (Amendment) Act 2011: ITF training contribution (rate in ng-pension-nhf-social-contributions; the earlier trigger of 5 staff or N50m turnover is not confirmed).
 - Employee Compensation Act 2010: NSITF (rate in ng-pension-nhf-social-contributions).
 - Operation of PAYE Regulations 2002.
-- Withholding Tax Regulations 1997 (as amended), pre-2026.
+- Deduction of Tax at Source (Withholding) Regulations 2024 (S.I. No. 34 of 2024), effective 1 January 2025 (revoking the 1997 Regulations).
 - Transfer Pricing Regulations 2018 (out of scope here).
 - Joint Tax Board (JTB) TIN harmonisation circulars (2021 onward).
 - FIRS Tax Pro-Max: mandatory federal filing channel since 2022.
