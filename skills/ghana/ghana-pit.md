@@ -2,11 +2,11 @@
 name: ghana-pit
 description: >
   Use this skill to prepare or review Ghana personal income tax for tax year 2026: employees under PAYE, self-employed people, partners, landlords and investors. It covers residence, the resident bands before and after the Income Tax (Amendment) Act, 2026 (Act 1178) took effect on 1 September 2026, the 25% non-resident rate, personal reliefs, the Modified Taxation Scheme with its GHS 750,000 limit, quarterly instalments, the 30 April return, the ETAX portal and forms DT 103 and DT 104, and interest and penalties. Trigger on "Ghana income tax", "PAYE Ghana", "GRA return", "tax reliefs Ghana", "self-employed Ghana", "Modified Taxation Scheme", "presumptive tax", or any Ghana personal tax request. Employer payroll operation sits in gh-payroll-social; company tax sits in gh-corporate-income-tax.
-version: 1.2
+version: 1.3
 jurisdiction: GH
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 depends_on:
   - workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -15,7 +15,7 @@ domain: income-tax
 type: computation
 ---
 
-# Ghana Personal Income Tax v1.2
+# Ghana Personal Income Tax v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -87,7 +87,7 @@ Reliefs are renewed every year; an employee only gets one with a current relief 
 1. Work out income from each source separately: employment, business, investment ([GRA](https://gra.gov.gh/domestic-tax/personal-income-tax/)).
 2. Employment income includes salary, wages, leave pay, fees, commissions, gratuities, overtime, bonuses, and benefits in cash or in kind. It excludes final withholding payments, reimbursed business expenses, equal-terms medical cover and redundancy pay.
 3. Business income includes service fees, trading stock proceeds, gains on business assets and business gifts. Deduct business expenses, capital allowances and unrelieved losses of the previous five years ([Act 1094 s.3](https://gra.gov.gh/wp-content/uploads/2023/04/INCOME-TAX-AMENDMENT-ACT-2023-ACT-1094.pdf)).
-4. Investment income includes dividends, interest, annuities, rent, royalties, gains on investment assets, investment gifts and lottery winnings. Final withholding payments are left out.
+4. Investment income includes dividends, interest, annuities, rent, royalties, gains on investment assets and investment gifts (winnings from lottery were removed from the investment income calculation in s.6(2)(a) by [Act 1134](https://repository.parliament.gh/handle/123456789/4550) s.1, gazetted 2 April 2025). Final withholding payments are left out.
 5. From employment income deduct SSNIT at 5.5% of basic salary, provident fund up to 16.5% of basic salary, mortgage interest on one home, and worthwhile-cause donations ([GRA PAYE](https://gra.gov.gh/domestic-tax/tax-types/paye/)).
 6. Deduct personal reliefs. Apply the bands to arrive at tax, then credit tax withheld, instalments, and foreign tax credit.
 
@@ -199,6 +199,7 @@ Where facts are unclear, keep these defaults and flag them: unclear allowance, t
 | GRA PAYE page, archived copy of 7 Jun 2026 on web.archive.org (band table for 2024 rates), page read in full | https://web.archive.org/web/20260607073723/https://gra.gov.gh/domestic-tax/tax-types/paye/ | 2026-11-01 |
 | Income Tax Act, 2015 (Act 896), OCR of scan; ss 33, 101, 102, 112, 121, 124, 125 read | https://gra.gov.gh/wp-content/uploads/2020/09/INCOME-TAX-ACT-2015-ACT-896.pdf | 2026-11-01 |
 | Income Tax (Amendment) Act, 2023 (Act 1094), whole act | https://gra.gov.gh/wp-content/uploads/2023/04/INCOME-TAX-AMENDMENT-ACT-2023-ACT-1094.pdf | 2026-11-01 |
+| Income Tax (Amendment) Act, 2025 (Act 1134), whole act (s.1 deletes winnings from lottery from s.6(2)(a) investment income) | https://repository.parliament.gh/handle/123456789/4550 | 2026-11-26 |
 | Revenue Administration Act, 2016 (Act 915); ss 27 to 30, 46, 47, 70 to 73 read | https://gra.gov.gh/wp-content/uploads/2023/01/Revenue-Administration-Act-2016-.pdf | 2026-11-01 |
 | GRA, Personal Income Tax page, page read in full | https://gra.gov.gh/domestic-tax/personal-income-tax/ | 2026-11-01 |
 | GRA, Personal Tax Relief page, page read in full | https://gra.gov.gh/domestic-tax/personal-tax-relief/ | 2026-11-01 |
