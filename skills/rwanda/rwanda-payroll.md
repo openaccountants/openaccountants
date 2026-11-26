@@ -1,17 +1,17 @@
 ---
 name: rwanda-payroll
 description: "Rwanda payroll for 2026: PAYE on gross, RSSB pension at 6% plus 6%, maternity, medical, CBHI, unified declaration in Ishema by the 15th, quarterly PAYE option, penalties, and the 2027 pension step to 14%."
-version: 0.4
+version: 0.5
 jurisdiction: RW
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 ---
 
-# Rwanda Payroll v0.4
+# Rwanda Payroll v0.5
 
 Tax year 2026.
 
@@ -37,7 +37,7 @@ Employers paying staff in cash or in kind (art 57), including foreign employers 
 
 ## The base
 
-PAYE is on gross: salary, allowances, cash reimbursements of private expenses, bonuses and benefits in kind (art 15). The exclusions in art 16 cover the employer's RSSB contribution, not the employee's. RRA's own example taxes salary plus transport plus housing with no deduction (Handbook example 28). Our earlier social contributions skill deducted employee RSSB before PAYE; that was wrong and is corrected. Contributions to a qualified pension fund are excluded up to 10% of employment income or FRW 1,200,000 a year, whichever is lower (Handbook). Terminal payments are taxed.
+PAYE is on gross: salary, allowances, cash reimbursements of private expenses, bonuses and benefits in kind (art 15). The exclusions in art 16 cover the employer's RSSB contribution, not the employee's. RRA's own example taxes salary plus transport plus housing with no deduction (Handbook example 28). Our earlier social contributions skill deducted employee RSSB before PAYE; that was wrong and is corrected. The RRA Tax Handbook 2025 still excludes contributions to a qualified pension fund up to 10% of employment income or FRW 1,200,000 a year; art 16 has no such exclusion, so do not apply it. Terminal payments are taxed.
 
 Order of work: gross, PAYE, pension and maternity, then CBHI on net, then medical if enrolled. Foreigners working in Rwanda are in the RSSB schemes; the annexure has category flags. Exempt employees use category E.
 
@@ -77,7 +77,7 @@ When an input is missing or ambiguous, apply the **conservative** assumption (th
 
 1. Gross monthly salary in RWF, and the **basic-salary** component (medical scheme uses basic).
 2. Transport-allowance amount (see Not yet confirmed on its base).
-3. Pay frequency and whether the worker is a **casual labourer** (30 days or fewer in 12 months, art 2).
+3. Pay frequency and whether the worker is a **casual labourer** (30 days or fewer in 12 months, art 3(16)).
 4. Number of employees on the payroll (drives medical-scheme enrolment).
 5. Tax/fiscal year (2026 vs the 2027 pension step).
 6. Whether the employer is a public institution or private (medical-scheme mandate).
@@ -241,7 +241,7 @@ Steps from https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_202
 
 | Fault | Consequence | Source |
 |---|---|---|
-| Late declaration, fixed fine (Law 020/2023 art 81) | FRW 50,000 for a non-commercial person or turnover over FRW 2,000,000 up to FRW 20,000,000; FRW 300,000 for a public institution or non-profit with turnover over FRW 20,000,000; FRW 500,000 for a notified large taxpayer | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf |
+| Late declaration, fixed fine (Law 020/2023 art 81) | FRW 50,000 for a non-commercial person or turnover over FRW 2,000,000 up to FRW 20,000,000; FRW 300,000 for a public institution, a non-profit or a taxpayer with turnover over FRW 20,000,000; FRW 500,000 for a notified large taxpayer | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf |
 | Repeat fault within 2 years | Fine doubled; third time, four times | same |
 | Certified statements not filed when required | FRW 500,000 every month until filed | same |
 | Late declaration and payment (art 82) | 20% of tax up to 30 days, 40% from day 31 to 60, 60% after 60 days | same |
@@ -306,8 +306,8 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law 027/2022 establishing taxes on income: read for arts 3-5, 8-10, 12-21, 24-33, 36-38, 44-50, 56-69 | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf | 2026-11-14 |
-| Law 020/2023 on tax procedures: read for arts 15, 35, 78, 80-88 | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-14 |
+| Law 027/2022 establishing taxes on income: read for arts 3-5, 8-10, 12-21, 24-33, 36-38, 44-50, 56-69 | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf | 2026-11-26 |
+| Law 020/2023 on tax procedures: read for arts 15, 35, 78, 80-88, 104 (Ikinyarwanda text of art 81) | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-26 |
 | Commissioner General Instructions 001/2023, quarterly PAYE and VAT: read in full | https://www.rra.gov.rw/fileadmin/user_upload/13.1.23_OG_n___Special_of_11.01.2023_Kumenyekanisha_no_kwishyura_umusoro_ku_bihembo_n_umusoro_ku_nyongeragaciro_ku_gihembwe.pdf | 2026-11-14 |
 | Presidential Order 086/01 of 12/12/2024, pension rate: read in full | https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Official_gazettes_2/______2024_Igazeti_ya_Leta/UKUBOZA-December-Decembre/OG_n___Special_of_13.12.2024__Ingano_y_umusanzu_mu_bwiteganyirize_bwa_pansiyo_butegetswe.pdf | 2026-11-14 |
 | RSSB, Imisanzu portal home page: read in full | https://imisanzu.rssb.rw/ | 2026-11-14 |
