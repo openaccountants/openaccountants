@@ -6,15 +6,15 @@ jurisdiction: MU
 category: payroll
 tax_year: 2026
 tax_year_notes: "Income year 1 July 2026 to 30 June 2027 (year of assessment 2027/28)"
-version: 0.3
-last_updated: 2026-11-14
+version: 0.4
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 type: computation
 ---
 
-# Mauritius Payroll and Social Contributions v0.3
+# Mauritius Payroll and Social Contributions v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -46,7 +46,7 @@ Employers of staff in Mauritius, and self-employed people paying social contribu
 | Car benefit, up to Rs 3 million | Rs 12,000, 13,500, 15,000 a month by engine; electric Rs 13,500 | Up to 1,600cc, 1,601 to 2,000cc, above 2,000cc | 2026/27 | https://www.mra.mu/download/PayrollTaxes.pdf |
 | Car benefit, above Rs 3 million | Rs 25,000 to Rs 5m, Rs 35,000 to Rs 8m, Rs 50,000 above | From 1 October 2025 | 2026/27 | same |
 
-No NSF is due for an employee under 18 or past final retirement age of 70, or for a non-citizen employee of an export manufacturer in the first 2 years ([MRA guide](https://www.mra.mu/employers/npf-nsf-contributions)).
+No NSF is due for an employee under 18 or who has reached retirement age of 65 (Training Levy stops at final retirement age of 70), or for a non-citizen employee of an export manufacturer in the first 2 years ([MRA guide](https://www.mra.mu/index.php/employers/npf-nsf-contributions)).
 
 ## The base
 
@@ -135,10 +135,10 @@ expected:
 |---|---|---|
 | Social Contribution and Social Benefits Act 2021: ss.4, 6, 10, First Schedule | https://www.mra.mu/download/SocialContributionAndSocialBenefitsAct2021.pdf | 2026-11-01 |
 | Income Tax Act consolidated: ss.93 to 101A, 122D, s.74 | https://www.mra.mu/download/ITAConsolidated.pdf | 2026-11-01 |
-| NSF Act: definition of basic wage, s.16 | https://www.mra.mu/download/TheNationalSavingsFundAct1995.pdf | 2026-11-01 |
+| NSF Act: s.2 definitions (basic wage, employee, retirement age), s.16, Second Schedule | https://www.mra.mu/download/TheNationalSavingsFundAct1995.pdf | 2026-11-26 |
 | HRD Act: s.18, First Schedule | https://www.mra.mu/download/TheHumanResourceDevelopmentAct2003.pdf | 2026-11-01 |
 | Workers' Rights Act: Part VIII s.94 and surcharge | https://www.mra.mu/download/WorkersRightsAct2019.pdf | 2026-11-01 |
-| MRA NPF/NSF guide page, read for the 1 July 2026 limits | https://www.mra.mu/employers/npf-nsf-contributions | 2026-11-01 |
+| MRA NPF/NSF guide page, read for the 1 July 2026 limits and retirement age rules | https://www.mra.mu/index.php/employers/npf-nsf-contributions | 2026-11-26 |
 | MRA CSG page, read in full | https://www.mra.mu/business/csg | 2026-11-01 |
 | MRA PAYE page, read, out of date on bands | https://www.mra.mu/employers/paye | 2026-11-01 |
 | MRA letter of 6 October 2025, read in full | https://www.mra.mu/download/PayrollTaxes.pdf | 2026-11-01 |
