@@ -221,39 +221,39 @@ Diary the source-backed registration and first filing dates above. Subsequent ta
 
 Official sources are linked beside each operative rule and case. Legislation prevails over guidance; sources were read on 26 November 2026, with unchanged tax provisions reused from the completed UK income-tax, National Insurance and Corporation Tax claims reads of that date. The Companies House fee schedule is dated 25 September 2026. Future changes and unresolved specialist conditions are explicitly referred, rather than presented as current instructions.
 
-- https://www.gov.uk/become-sole-trader; read 2026-11-26
-- https://www.gov.uk/set-up-business-partnership/print; read 2026-11-26
-- https://www.gov.uk/limited-company-formation/print; read 2026-11-26
-- https://www.gov.uk/guidance/set-up-and-run-a-limited-liability-partnership-llp; read 2026-11-26
-- https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income; read 2026-11-26
-- https://www.gov.uk/register-for-self-assessment; read 2026-11-26
-- https://www.legislation.gov.uk/ukpga/1970/9/section/7; read 2026-11-26
-- https://www.legislation.gov.uk/ukpga/2006/46/section/155; read 2026-11-26
-- https://www.legislation.gov.uk/ukpga/2006/46/section/9; read 2026-11-26
-- https://www.gov.uk/guidance/people-with-significant-control-pscs; read 2026-11-26
-- https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees; read 2026-11-26
-- https://www.legislation.gov.uk/ukpga/2000/12/section/2; read 2026-11-26
-- https://www.legislation.gov.uk/ukpga/2000/12/section/8; read 2026-11-26
-- https://www.gov.uk/government/news/identity-verification-is-making-the-uks-company-register-more-trustworthy; read 2026-11-26
-- https://www.gov.uk/guidance/verifying-your-identity-for-companies-house; read 2026-11-26
-- https://www.gov.uk/guidance/when-you-need-to-verify-your-identity-for-companies-house; read 2026-11-26
-- https://www.legislation.gov.uk/ukpga/2004/12/section/55; read 2026-11-26
-- https://www.legislation.gov.uk/ukpga/2009/4/section/9; read 2026-11-26
-- https://www.gov.uk/register-employer; read 2026-11-26
-- https://www.gov.uk/vat-registration/when-to-register; read 2026-11-26
-- https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts; read 2026-11-26
-- https://www.gov.uk/guidance/confirmation-statement-guidance; read 2026-11-26
-- https://www.gov.uk/company-tax-returns; read 2026-11-26
-- https://www.gov.uk/pay-corporation-tax; read 2026-11-26
-- https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax; read 2026-11-26
-- https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax; read 2026-11-26
-- https://www.legislation.gov.uk/ukpga/2006/46/section/113; read 2026-11-26
-- https://www.gov.uk/income-tax-rates; read 2026-11-26
-- https://www.gov.uk/self-employed-national-insurance-rates; read 2026-11-26
-- https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027; read 2026-11-26
-- https://www.legislation.gov.uk/uksi/2001/1004/regulation/8; read 2026-11-26
-- https://www.legislation.gov.uk/ukpga/2010/4/section/18A; read 2026-11-26
-- https://www.gov.uk/corporation-tax-rates; read 2026-11-26
-- https://www.gov.uk/tax-on-dividends; read 2026-11-26
+- [sole trader](https://www.gov.uk/become-sole-trader); read for the linked sole trader rule/case on 2026-11-26
+- [partnership](https://www.gov.uk/set-up-business-partnership/print); read for the linked partnership rule/case on 2026-11-26
+- [company](https://www.gov.uk/limited-company-formation/print); read for the linked company rule/case on 2026-11-26
+- [Companies House's LLP guidance](https://www.gov.uk/guidance/set-up-and-run-a-limited-liability-partnership-llp); read for the linked Companies House's LLP guidance rule/case on 2026-11-26
+- [trading allowance](https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income); read for the linked trading allowance rule/case on 2026-11-26
+- [registration](https://www.gov.uk/register-for-self-assessment); read for the linked registration rule/case on 2026-11-26
+- [TMA 1970 s7](https://www.legislation.gov.uk/ukpga/1970/9/section/7); read for the linked TMA 1970 s7 rule/case on 2026-11-26
+- [CA 2006 s155](https://www.legislation.gov.uk/ukpga/2006/46/section/155); read for the linked CA 2006 s155 rule/case on 2026-11-26
+- [CA 2006 s9](https://www.legislation.gov.uk/ukpga/2006/46/section/9); read for the linked CA 2006 s9 rule/case on 2026-11-26
+- [PSC guidance](https://www.gov.uk/guidance/people-with-significant-control-pscs); read for the linked PSC guidance rule/case on 2026-11-26
+- [Companies House fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees); read for the linked Companies House fees rule/case on 2026-11-26
+- [LLPA 2000 s2](https://www.legislation.gov.uk/ukpga/2000/12/section/2); read for the linked LLPA 2000 s2 rule/case on 2026-11-26
+- [s8](https://www.legislation.gov.uk/ukpga/2000/12/section/8); read for the linked s8 rule/case on 2026-11-26
+- [current update](https://www.gov.uk/government/news/identity-verification-is-making-the-uks-company-register-more-trustworthy); read for the linked current update rule/case on 2026-11-26
+- [verification](https://www.gov.uk/guidance/verifying-your-identity-for-companies-house); read for the linked verification rule/case on 2026-11-26
+- [when to verify](https://www.gov.uk/guidance/when-you-need-to-verify-your-identity-for-companies-house); read for the linked when to verify rule/case on 2026-11-26
+- [FA 2004 s55](https://www.legislation.gov.uk/ukpga/2004/12/section/55); read for the linked FA 2004 s55 rule/case on 2026-11-26
+- [CTA 2009 s9](https://www.legislation.gov.uk/ukpga/2009/4/section/9); read for the linked CTA 2009 s9 rule/case on 2026-11-26
+- [employer registration](https://www.gov.uk/register-employer); read for the linked employer registration rule/case on 2026-11-26
+- [VAT registration](https://www.gov.uk/vat-registration/when-to-register); read for the linked VAT registration rule/case on 2026-11-26
+- [accounts deadlines](https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts); read for the linked accounts deadlines rule/case on 2026-11-26
+- [confirmation statement](https://www.gov.uk/guidance/confirmation-statement-guidance); read for the linked confirmation statement rule/case on 2026-11-26
+- [Company Tax Returns](https://www.gov.uk/company-tax-returns); read for the linked Company Tax Returns rule/case on 2026-11-26
+- [pay Corporation Tax](https://www.gov.uk/pay-corporation-tax); read for the linked pay Corporation Tax rule/case on 2026-11-26
+- [eligibility](https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax); read for the linked eligibility rule/case on 2026-11-26
+- [qualifying income](https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax); read for the linked qualifying income rule/case on 2026-11-26
+- [CA 2006 s113](https://www.legislation.gov.uk/ukpga/2006/46/section/113); read for the linked CA 2006 s113 rule/case on 2026-11-26
+- [Income Tax](https://www.gov.uk/income-tax-rates); read for the linked Income Tax rule/case on 2026-11-26
+- [self-employed NIC](https://www.gov.uk/self-employed-national-insurance-rates); read for the linked self-employed NIC rule/case on 2026-11-26
+- [employer thresholds](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027); read for the linked employer thresholds rule/case on 2026-11-26
+- [director NIC](https://www.legislation.gov.uk/uksi/2001/1004/regulation/8); read for the linked director NIC rule/case on 2026-11-26
+- [small-rate conditions](https://www.legislation.gov.uk/ukpga/2010/4/section/18A); read for the linked small-rate conditions rule/case on 2026-11-26
+- [rates](https://www.gov.uk/corporation-tax-rates); read for the linked rates rule/case on 2026-11-26
+- [dividends](https://www.gov.uk/tax-on-dividends); read for the linked dividends rule/case on 2026-11-26
 
 Not yet confirmed: the exceptional and specialist points explicitly referred above. Their previous conclusions are non-usable pending partner-accountant advice.
