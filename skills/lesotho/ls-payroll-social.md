@@ -5,15 +5,15 @@ jurisdiction: LS
 category: payroll
 tax_year: 2026
 tax_year_notes: "2026-27"
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 type: computation
-version: 0.3
+version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 ---
 
-# Lesotho Payroll and Social Contributions v0.3
+# Lesotho Payroll and Social Contributions v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -32,8 +32,8 @@ Lesotho's tax year runs 1 April to 31 March. This skill covers 2026-27, from 1 A
 | Upper band | 30% | Chargeable income above M77,760 a year | https://www.rsl.org.ls/sites/default/files/2026-09/Guide%20on%20Taxation%20of%20Employment%20Income%2026-27.pdf |
 | Personal tax credit | M12,240 a year (M1,020 a month) | Non-refundable; natural persons | https://www.rsl.org.ls/sites/default/files/2026-09/INCOME%20TAX%20%28AMA%29%20REGULATIONS%20No.24%20of%20%202026.%20%281%29%20%281%29_0.pdf |
 | No tax below | M5,100 a month |  | https://www.rsl.org.ls/sites/default/files/2026-09/Guide%20on%20Taxation%20of%20Employment%20Income%2026-27.pdf |
-| Fringe benefits tax | 40% | Employer pays on the taxable value | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf |
-| Pension deduction cap | 20% of employment income | Contributions above this are a superannuation fringe benefit | https://www.rsl.org.ls/sites/default/files/2024-07/FBT%20Public%20Ruling.pdf |
+| Fringe benefits tax | 40% | Employer pays on the grossed-up fringe benefits taxable amount (taxable value x 1 / (1 - 0.40), ss.116(2), 117), so the tax is two thirds of the taxable value | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf |
+| Pension deduction cap | 20% of employment income | Limit on employer and employee deductions together, employee contributions counted first (s.95(3), (4)). Contributions above it are not deductible; for a tax-exempt employer the excess is an excessive superannuation contributions fringe benefit (s.127) | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf |
 
 ## The base
 
@@ -97,5 +97,6 @@ expected:
 | RSL Guide on Taxation of Employment Income 26-27; read in full | https://www.rsl.org.ls/sites/default/files/2026-09/Guide%20on%20Taxation%20of%20Employment%20Income%2026-27.pdf | 2026-11-01 |
 | Income Tax Act 1993, RSL copy updated to 1 April 2012; read the sections cited; later amendments are not in this copy | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf | 2026-11-01 |
 | RSL FBT Public Ruling; read the rate and example parts | https://www.rsl.org.ls/sites/default/files/2024-07/FBT%20Public%20Ruling.pdf | 2026-11-01 |
+| RSL Tax Guide on Fringe Benefits Tax (file dated November 2023); read in full (gross-up formula and s.127 scope) | https://www.rsl.org.ls/sites/default/files/2024-05/Tax%20Guide%20on%20Fringe%20Benefit%20Tax%20%281%29.pdf | 2026-11-26 |
 
 Not yet confirmed: mandatory social security for private employers, the old-age pension statute, occupational pension rates, the annual reconciliation form name and any wage cap; the older skill's points on these are carried here unverified; rows moved out of the rates table on 2026-11-14: national social security (older skill: no compulsory contributory scheme for private employers) and occupational pension contributions (older figure about 5% each side, from a secondary site).
