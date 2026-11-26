@@ -1,10 +1,10 @@
 ---
 name: thailand-vat
 description: "Thailand VAT for 2026: PP.30 transaction and input-credit working papers, the enacted rate period, registration, invoice blocks, export-use conditions, PP.36 imported services, evidence-led bank patterns and corrected historical cases."
-version: 2.1
+version: 2.2
 jurisdiction: TH
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-26
 depends_on:
   - vat-workflow-base
 category: international
@@ -14,7 +14,7 @@ domain: vat-gst
 type: computation
 ---
 
-# Thailand VAT and monthly working papers v2.1
+# Thailand VAT and monthly working papers v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -31,7 +31,7 @@ type: computation
 | Ordinary combined VAT | 7% including local tax; the enacted reduction fixes the Revenue Code component at 6.3% (in words on the page in Decree 807). Do not treat statutory 10% as the current ordinary combined charge | Through 30 September 2027 | [Decree 807 §§2-3 and reduced component](https://www.rd.go.th/fileadmin/user_upload/kormor/newlaw/dc807.pdf); [RD VAT explanation §4, combined rate](https://www.rd.go.th/english/6043.html); [Revenue Code §80, statutory rate](https://www.rd.go.th/5206.html) |
 | Exports and other statutory zero rating | 0% only for qualifying transactions; service exports require foreign-use/payment evidence, exclude organising outbound tours, and zero-rate only the foreign-used portion for mixed use | 2026 | [Notification 105 clauses 2-3 as amended, under Revenue Code §80/1](https://www.rd.go.th/3288.html) |
 | Registration threshold | Annual turnover exceeding THB 1,800,000 for regular taxable supplies; imports and special regimes have their own scope | 2026 | [RD VAT explanation §§1 and 9](https://www.rd.go.th/english/6043.html) |
-| Registration timing | Register before starting where required or within 30 days after reaching the threshold; do not assume every exempt activity must register | 2026 | [RD VAT explanation §9; Revenue Code §§85-85/1](https://www.rd.go.th/english/6043.html) |
+| Registration timing | Register before starting where required. For a business using the small-business exemption, register within 30 days from the date taxable turnover first exceeds THB 1,800,000 | 2026 | [RD registration table](https://www.rd.go.th/7061.html); [Revenue Code §§85-85/1](https://www.rd.go.th/5208.html) |
 | PP.30 ordinary paper cycle | Monthly, due within the 15th of the following month; branch/consolidated filing follows actual approval | 2026 | [Revenue Code §§83-83/1 (deadline in words on the page)](https://www.rd.go.th/5207.html) |
 | Late-payment surcharge | 1.5% per month or part-month on unpaid tax, excluding penalty; capped at unpaid tax, with the statutory approved-extension exception | 2026 | [Revenue Code §89/1](https://www.rd.go.th/5209.html) |
 | Failure to file | Statutory civil penalty of 2 times the tax due for the month before any lawful remission; separate administrative/criminal rules can also apply | 2026 | [Revenue Code §89(2) (multiplier in words on the page)](https://www.rd.go.th/5209.html) |
@@ -453,6 +453,7 @@ expected:
 | Director-General VAT Notification 105 as amended (Read for all operative clauses 1-4, foreign-use allocation, excluded outbound-tour operation, payment evidence and special export-production cases) | https://www.rd.go.th/3288.html | 2026-11-16 |
 | Current VAT Code §§83-84 (Read for §§83-83/7 and neighboring filing/remittance provisions, including auctioneer scope and electronic/non-electronic imported-service split) | https://www.rd.go.th/5207.html | 2026-11-16 |
 | Current VAT Code §§85-86 (Read for registration and §§86/4, 86/6, 86/14 with neighboring invoice provisions; not an authenticated portal read) | https://www.rd.go.th/5208.html | 2026-11-16 |
+| RD VAT registration table (Read for the 30-days-from-receipts-exceed registration rule and the THB 1.8 million per year threshold) | https://www.rd.go.th/7061.html | 2026-11-26 |
 | Current VAT Code §§87-90 (Read for records, §89 offence categories, remission delegation, §89/1 surcharge and neighboring §90 offence structure; current remission instruments not read) | https://www.rd.go.th/5209.html | 2026-11-16 |
 | Official PP.30 paper form and instructions, URL revision 2017 (Read for both pages, all computation items, branch/additional-return choice, carry-forward restriction and refund/carry-forward instructions; not a claim of a 2026 portal screen) | https://www.rd.go.th/fileadmin/tax_pdf/vat/pp30_300160.pdf | 2026-11-16 |
 | RD filing-service index (Read for PP.30/PP.36 and other regime portal routes; no authenticated submission) | https://www.rd.go.th/rdeservice/63813.html | 2026-11-16 |
