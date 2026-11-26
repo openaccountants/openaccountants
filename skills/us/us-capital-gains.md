@@ -58,12 +58,12 @@ These ceilings measure **total taxable income**, after deductions. They are not 
 
 The ordinary extended date has passed. The NIIT thresholds, the 3.8% rate and the USD 3,000 / USD 1,500 loss limit are the same as for 2026.
 
-| Filing status (2025) | 0% up to taxable income of | 15% up to taxable income of | 20% above |
-| --- | --- | --- | --- |
-| Single | USD 48,350 | USD 533,400 | USD 533,400 |
-| Married filing jointly, surviving spouse | USD 96,700 | USD 600,050 | USD 600,050 |
-| Married filing separately | USD 48,350 | USD 300,000 | USD 300,000 |
-| Head of household | USD 64,750 | USD 566,700 | USD 566,700 |
+| Filing status (2025) | 0% up to taxable income of | 15% up to taxable income of | 20% above | Source |
+| --- | --- | --- | --- | --- |
+| Single | USD 48,350 | USD 533,400 | USD 533,400 | [Rev. Proc. 2024-40 §2.03](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf) |
+| Married filing jointly, surviving spouse | USD 96,700 | USD 600,050 | USD 600,050 | [Rev. Proc. 2024-40 §2.03](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf) |
+| Married filing separately | USD 48,350 | USD 300,000 | USD 300,000 | [Rev. Proc. 2024-40 §2.03](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf) |
+| Head of household | USD 64,750 | USD 566,700 | USD 566,700 | [Rev. Proc. 2024-40 §2.03](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf) |
 
 Source for all four 2025 rows: [Rev. Proc. 2024-40 §2.03](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf).
 
@@ -85,7 +85,7 @@ Collectibles and the taxable part of eligible section 1202 gain have a maximum 2
 
 On Form 8960: 3.8% of the lesser of (A) net investment income or (B) modified adjusted gross income over the threshold. For both 2025 and 2026, use positive NII and positive MAGI excess; otherwise the tax is zero. Thresholds: USD 250,000 joint/qualifying surviving spouse; USD 125,000 married filing separately; USD 200,000 single/head of household. These thresholds are not indexed ([IRS NIIT page](https://www.irs.gov/individuals/net-investment-income-tax); [NIIT Q&A](https://www.irs.gov/newsroom/questions-and-answers-on-the-net-investment-income-tax)).
 
-Net investment income includes capital gains, interest, dividends, annuities, rents and royalties, subject to the business and deduction conditions that follow. It excludes wages, most self-employment income and gain excluded under section 121. Specifically, interest/dividends/annuities/rents/royalties are included unless derived in the ordinary course of a business that is neither passive nor trading financial instruments/commodities. It includes income from passive/trading businesses and net disposition gains except property held in a business that is neither passive nor trading. Reduce the included items by properly allocable deductions allowed for income tax. Wages and income subject to self-employment tax are excluded; gain excluded under section 121 is also outside NIIT ([Form 8960 instructions](https://www.irs.gov/instructions/i8960); [IRS NIIT page](https://www.irs.gov/individuals/net-investment-income-tax)). For rental-business classification or nonresident/dual-status treatment: Check this point with one of our partner accountants.
+Net investment income includes capital gains, interest, dividends, annuities, rents and royalties, subject to the business and deduction conditions that follow. It excludes wages, most self-employment income and gain excluded under section 121. Specifically, interest/dividends/annuities/rents/royalties are included unless derived in the ordinary course of a business that is neither passive nor trading financial instruments/commodities. It includes income from passive/trading businesses and net disposition gains to the extent included in taxable income, except property held in a business that is neither passive nor trading. Reduce the included items by properly allocable deductions allowed for income tax. Wages, income subject to self-employment tax, tax-exempt income and certain qualified retirement-plan distributions are excluded; gain excluded under section 121 is also outside NIIT ([Form 8960 instructions](https://www.irs.gov/instructions/i8960); [IRS NIIT page](https://www.irs.gov/individuals/net-investment-income-tax)). For rental-business or retirement-distribution classification, or nonresident/dual-status treatment: Check this point with one of our partner accountants.
 
 ### Capital losses and carryovers
 
@@ -121,7 +121,7 @@ All original years and numerical inputs are retained. Calculations isolate the s
 
 Single filer; shares bought 15 December 2025; USD 30,000 gain on 1 December 2026; other 2026 taxable income USD 90,000, all ordinary. With no holding-period interruption, sale on or after 16 December 2026 is more than 1 year, still in 2026. Selling now adds USD 15,700 × 22% = USD 3,454 and USD 14,300 × 24% = USD 3,432: USD 6,886. Waiting with the same gain gives USD 30,000 × 15% = USD 4,500: USD 2,386 less regular tax.
 
-If MAGI stays below USD 200,000, NIIT is zero either way; taxable income alone does not establish that. Under that condition, unchanged other facts and the same 15% rate, each dollar of waiting-period price decline reduces net proceeds by 85 cents. Break-even decline over the 15 days: USD 2,386 ÷ 0.85 = USD 2,807.06. This is a tax comparison, not a prediction or recommendation to wait. At USD 20,000 other ordinary taxable income, part of this gain would fall in the 0% band; above USD 545,500, this ordinary preferential gain falls in the 20% band, but test NIIT from actual MAGI/NII. For a put or short-sale hedge: Check this point with one of our partner accountants.
+If MAGI stays below USD 200,000, NIIT is zero either way; taxable income alone does not establish that. Under that condition, unchanged other facts and the same 15% rate, each dollar of waiting-period price decline reduces net proceeds by 85 cents. Break-even decline over the 15 days: USD 2,386 ÷ 0.85 = USD 2,807.06. These are marginal-rate planning amounts. The final tax worksheet uses the Tax Table for ordinary income below USD 100,000, so the planning saving and break-even are not exact filing amounts. For the final return-based sell/wait comparison: Check this point with one of our partner accountants. At USD 20,000 other ordinary taxable income, part of this gain would fall in the 0% band; above USD 545,500, this ordinary preferential gain falls in the 20% band, but test NIIT from actual MAGI/NII. For a put or short-sale hedge: Check this point with one of our partner accountants.
 
 ```oa-check
 name: Sell now short-term or wait for long-term, single 2026
@@ -294,11 +294,11 @@ Each row is a hold on the named specialist conclusion, not an entitlement suppli
 
 Official operative passages read 26 November 2026; unchanged 2025/2026 rate and NIIT proof was reused from the existing return proof after applicability checks. Publication/worksheet references are labelled by year above.
 
-- [Rev. Proc. 2025-32 §§4.01, 4.03: 2026 ordinary and capital-gain bands](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [Rev. Proc. 2024-40 §2.03: 2025 capital-gain bands](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf). Read 2026-11-26.
-- [IRS Topic 409: gain, holding period, rates and loss limit](https://www.irs.gov/taxtopics/tc409); [Pub. 550: holding periods, netting, rate groups, carryovers and wash sales](https://www.irs.gov/publications/p550). Read 2026-11-26.
-- [26 U.S.C. 121: home-sale exclusions](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIII-sec121.htm); [Pub. 523: eligibility, work moves, Worksheet 1 and reporting](https://www.irs.gov/publications/p523). Read 2026-11-26.
-- [26 U.S.C. 1212(b): individual carryovers](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partII-sec1212.htm). Read 2026-11-26.
-- [Form 8960 instructions: NII and thresholds](https://www.irs.gov/instructions/i8960); [NIIT page](https://www.irs.gov/individuals/net-investment-income-tax); [NIIT Q&A](https://www.irs.gov/newsroom/questions-and-answers-on-the-net-investment-income-tax). Read 2026-11-26.
-- [2025 Schedule D instructions: reporting and worksheet selection](https://www.irs.gov/instructions/i1040sd); [Topic 705: installment overview](https://www.irs.gov/taxtopics/tc705); [Extension guidance](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return). Read 2026-11-26.
+- [Rev. Proc. 2025-32 §§4.01, 4.03: 2026 ordinary and capital-gain bands](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [Rev. Proc. 2024-40 §2.03: 2025 capital-gain bands](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf). Read 2026-11-26 for the sections and rules named in this entry.
+- [IRS Topic 409: gain, holding period, rates and loss limit](https://www.irs.gov/taxtopics/tc409); [Pub. 550: holding periods, netting, rate groups, carryovers and wash sales](https://www.irs.gov/publications/p550). Read 2026-11-26 for the sections and rules named in this entry.
+- [26 U.S.C. 121: home-sale exclusions](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIII-sec121.htm); [Pub. 523: eligibility, work moves, Worksheet 1 and reporting](https://www.irs.gov/publications/p523). Read 2026-11-26 for the sections and rules named in this entry.
+- [26 U.S.C. 1212(b): individual carryovers](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partII-sec1212.htm). Read 2026-11-26 for the sections and rules named in this entry.
+- [Form 8960 instructions: NII and thresholds](https://www.irs.gov/instructions/i8960); [NIIT page](https://www.irs.gov/individuals/net-investment-income-tax); [NIIT Q&A](https://www.irs.gov/newsroom/questions-and-answers-on-the-net-investment-income-tax). Read 2026-11-26 for the sections and rules named in this entry.
+- [2025 Schedule D instructions: reporting and worksheet selection](https://www.irs.gov/instructions/i1040sd); [2025 Form 8949 instructions: digital-asset boxes](https://www.irs.gov/instructions/i8949); [Topic 705: installment overview](https://www.irs.gov/taxtopics/tc705); [Extension guidance](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return). Read 2026-11-26 for the sections and rules named in this entry.
 
 Not yet confirmed: final 2026 form fields and specialist outcomes are held for the stated referral; no draft line number or unconfirmed eligibility outcome is usable for filing.
