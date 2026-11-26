@@ -1,11 +1,11 @@
 ---
 name: canada-tax-optimization
-description: Use this skill when advising on LEGAL tax minimization strategies for Canadian taxpayers — individuals, sole proprietors, and small business owners (CCPCs). Trigger on phrases like "reduce my tax Canada", "tax planning", "RRSP vs TFSA", "salary vs dividends", "income splitting", "TOSI", "small business deduction", "LCGE", "capital gains inclusion", "CRA", or any question about structuring affairs to legally minimize Canadian tax. Covers entity selection, registered account optimization, deduction strategies, loss utilization, timing, GST/HST planning, CPP optimization, and red lines. ALWAYS read this skill before giving Canadian tax optimization advice.
-version: 1.1
+description: Use for Canadian individual and owner-manager tax planning, RRSP versus TFSA comparisons, salary versus dividends, and identifying specialist questions that need an accountant.
+version: 1.2
 jurisdiction: CA
 tax_year: 2026
-last_updated: 2026-11-25
-source_checked: 2026-11-21
+last_updated: 2026-11-26
+source_checked: 2026-11-26
 depends_on:
   - bookkeeping-workflow-base
 category: tax-optimization
@@ -18,302 +18,147 @@ domain: tax-optimization
 
 # Canada Tax Optimization
 
-## Canada — Tax Optimization Skill v1.1
-
-This is a 2026 planning workpaper. **HOLD** means that the affected recommendation or saving must not be used until its stated conditions and inputs are resolved. It does not mean zero tax or an automatic disallowance. No universal optimal strategy or personal filing result is certified.
-
-## Rates and thresholds
+This Guide covers Canadian individual and owner-manager planning for 2026. All amounts are CAD. Establish residence, province, income type, tax year, available account room and corporate fiscal period before comparing alternatives. The examples state their assumptions; they do not establish personal filing results or a universally best strategy.
 
 Reviewed against the cited tax authorities by **Nathan Wiebe** on 2026-06-21.
-The historical attribution above is preserved; it does not approve this proposed correction. Unresolved planning and calculation conditions remain non-usable holds.
-
-### Tax Optimization
-
-- **$0–$58,523** — 14%  _(CRA 2026 indexed brackets; Bill C-4 (lowest rate 14% from 2026))_
-- **$58,524–$117,045** — 20.5%  _(CRA 2026 indexed brackets (T4032))_
-- **$117,046–$181,440** — 26%  _([CRA 2026 payroll deductions tables](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032on-jan/t4032on-january-general-information.html))_
-- **$181,441–$258,482** — 29%  _([CRA 2026 payroll deductions tables](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032on-jan/t4032on-january-general-information.html))_
-- **$258,483+** — 33%  _(CRA 2026 payroll deductions tables (T4032))_
-- **Small business rate (federal)** — 9% on first $500,000 active business income  _(ITA s.125; CRA — Corporate income tax rates)_
-- **General corporate rate (federal)** — 15%  _(ITA s.123(1); CRA — Corporate income tax rates)_
-- **Capital gains inclusion** — 50% (66.7% increase was cancelled)  _(PM Carney announcement Mar 21, 2025; Budget 2025; CRA — canada.ca)_
-- **RRSP** — $33,810 (or 18% of prior-year earned income)  _(CRA — RRSP — canada.ca; ITA s.146(1))_ **HOLD:** The ceiling is not a free choice versus 18% or the total accumulated room; apply lesser-of, carryforward and pension adjustments. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/contributions-affect-your-rrsp-prpp-deduction-limit.html)
-- **TFSA** — $7,000 (cumulative $109,000 since 2009)  _(CRA — TFSA — canada.ca; ITA s.207.01)_ **HOLD:** The cumulative annual total assumes eligibility in every relevant year and is not everyone's remaining room. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html)
-- **FHSA** — $8,000/year ($40,000 lifetime)  _(ITA s.146.6; CRA — FHSA — canada.ca)_ **HOLD:** Annual participation depends on carryforward/adjustments; qualifying-withdrawal and deduction conditions remain unresolved. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/contributing-your-fhsa.html)
-- **RESP CESG** — $2,500/year to maximise $500 grant  _(ITA s.146.1; Canada Education Savings Act)_ **HOLD:** The $2,500/$500 figures describe the ordinary basic grant, not an annual RESP ceiling or a universal grant maximum; additional/catch-up entitlement matters. [Official source](https://www.canada.ca/en/services/benefits/education/education-savings/estimating-amounts.html)
-- **Class 1** — 4% — Buildings  _(ITR Schedule II Class 1)_
-- **Class 8** — 20% — Furniture, equipment  _(ITR Schedule II Class 8)_
-- **Class 10** — 30% — Motor vehicles. Passenger-vehicle Class 10.1 cost limit $38,000 + tax for 2025 acquisitions, $39,000 + tax for 2026; Class 10 itself has no per-vehicle cap  _(Dept. of Finance — 2025 Automobile Deduction Limits (Jan 2025); CRA — Classes of depreciable property)_
-- **Class 10.1** — 30% — Passenger vehicles over cost limit  _(ITR Schedule II Class 10.1; CRA — classes of depreciable property)_
-- **Class 12** — 100% — Computer software, tools <$500  _(ITR Schedule II Class 12)_
-- **Class 50** — 55% — Computer hardware  _(ITR Schedule II Class 50)_
-- **Class 54** — 30% declining balance — zero-emission passenger vehicles (cost cap $61,000 + tax), with enhanced first-year deductions under AIIP/RIIP  _(ITR Schedule II Class 54; CRA — classes of depreciable property — canada.ca)_ **HOLD:** The $61,000 ceiling is passenger-specific. First-year relief depends on property/cohort and actual operative conditions. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html)
-- **Child care** — $8,000/child under 7; $5,000/child 7–16; $11,000 for a child eligible for the disability tax credit  _(ITA s.63(3))_ **HOLD:** Apply the actual age-timing, infirmity, earned-income/cost caps and spouse exceptions before using these limits. [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-63.html)
-- **Medical expenses** — Medical expense credit rate for 2025 is 14.5% (NRTC; 14% for 2026). Threshold: amounts over the lesser of 3% of net income or $2,834(threshold for 2025)  _([ITA s.118.2; CRA — Medical expenses — canada.ca; Bill C-4 (14.5% credit rate for 2025)](https://www.canada.ca/en/department-finance/services/publications/report-impact-reducing-lowest-marginal-personal-income-tax-rate-non-refundable-tax-credits.html))_
-- **Moving expenses** — Must move ≥ 40 km closer to new work location  _(ITA s.62)_
-- **LCGE (QSBC shares)** — $1,275,000 (2026; $1,250,000 for 2025)  _([ITA s.110.6(2); Budget 2024; CRA — LCGE — canada.ca](https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html))_
-- **GAAR** — ITA s.245  _(ITA s.245)_
-- **TOSI** — ITA s.120.4 — top rate on split income to family members  _(ITA s.120.4)_
-- **Superficial loss** — You or an affiliated person acquire identical property in the period 30 days before to 30 days after the sale, and still own it at the end of that period: loss denied  _([ITA s.54; ITA s.40(2)(g)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html))_
+The historical attribution is preserved. It does not approve this proposed correction.
 
 ## Section 1 — Quick Reference
 
-**Quick Reference**
+The following federal marginal rates apply to each portion of 2026 taxable income, before credits. Provincial or territorial income tax is additional. [CRA 2026 rates](https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html)
 
-| Field | Value |
-| --- | --- |
-| Country | Canada |
-| Currency | CAD |
-| Tax year | Calendar year (1 January – 31 December) |
-| Primary legislation | Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)) |
-| Anti-avoidance | GAAR (s 245 ITA); TOSI (s 120.4) |
-| Tax authority | Canada Revenue Agency (CRA) |
-| Filing deadline | 30 April (employees); 15 June (self-employed, but tax owing still due 30 April) |
-| Individual top federal rate | 33% (on income >$258,482) |
-| Combined top rate (varies by province) | ~50–54% **HOLD:** The old ~50–54% range is not a verified nationwide range; select actual province, income type and year before a result. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html) |
-| CCPC small business rate (federal) | 9% on first $500,000 active business income |
-| General corporate rate (federal) | 15% |
-| Capital gains inclusion rate | 50% (66.7% increase was cancelled) |
-| GST rate | 5% (HST varies by province: 13%–15%) |
+| 2026 taxable income portion | Federal rate | Official source |
+| --- | --- | --- |
+| Up to $58,523 | 14% | [CRA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html) |
+| Above $58,523 to $117,045 | 20.5% | [CRA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html) |
+| Above $117,045 to $181,440 | 26% | [CRA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html) |
+| Above $181,440 to $258,482 | 29% | [CRA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html) |
+| Above $258,482 | 33% | [CRA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html) |
 
-### Federal Tax Brackets (2026)
-
-**Federal Tax Brackets (2026)**
-
-| Taxable Income (CAD) | Rate |
-| --- | --- |
-| 0 – 58,523 | 14% |
-| 58,524 – 117,045 | 20.5% |
-| 117,045 – 181,440 | 26% |
-| 181,440 – 258,482 | 29% |
-| 258,482+ | 33% |
-
-For 2026 the full-year lowest rate is 14%; the annual 2025 rate was 14.5%, reflecting the midyear change. Do not apply the 2026 table to a 2025 return. [Official source](https://www.canada.ca/en/department-finance/services/publications/report-impact-reducing-lowest-marginal-personal-income-tax-rate-non-refundable-tax-credits.html)
+For combined provincial/personal tax, corporate rates, SBD eligibility and capital-gain classification/inclusion: Check this point with one of our partner accountants.
 
 ## Section 2 — Income Splitting & Structuring
 
-### Sole Proprietor vs CCPC
-
-- **Sole proprietor** — All business income taxed at personal marginal rates. Simple, low compliance cost. Business losses offset personal income. No payroll remittances (except CPP). **HOLD:** The old loss-offset/no-remittance shorthand is not a complete individual filing rule; preserve loss restrictions and distinguish self-employed CPP from payroll remittances. [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html)
-- **Canadian-Controlled Private Corporation (CCPC)** — First $500,000 of active business income taxed at 9% federal (+ provincial, typically 2–4% = ~11–13% combined). Profits retained at corporate rate; extracted via salary or dividends. Integration principle: in theory, combined corporate + personal tax approximates personal tax alone. In practice, small gaps create planning opportunities. **HOLD:** The provincial 2–4% / combined 11–13% ranges are not universal. Bind actual jurisdiction/fiscal period, association, business-limit allocation/reductions and income qualification before a tax result. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html)
-- **When to incorporate** — Generally beneficial when annual business profit consistently exceeds ~$70,000–$80,000 and the owner can leave profits in the corporation. Below that, sole proprietorship is simpler and equally tax-efficient. **HOLD:** The $70,000–$80,000 threshold is an unsupported planning heuristic, not a statutory break-even or guaranteed optimum.
-
-### Salary vs Dividends (CCPC Owner-Manager)
-
-**Salary vs Dividends (CCPC Owner-Manager)**
-
-| Factor | Salary | Dividends |
-| --- | --- | --- |
-| Corporate deduction | Yes | No |
-| CPP contributions | Yes (creates room) | No |
-| RRSP room created | Yes (18% of earned income) | No |
-| Childcare expense room | Yes | No |
-| Personal tax treatment | Marginal rates | Gross-up + dividend tax credit |
-| Payroll admin | Required (T4, remittances) | Minimal (T5) |
-
-- **Optimal mix** — Pay enough salary to maximise RRSP room ($33,810 limit for 2026 → requires ~$187,833 of 2025 earned income; salary paid in 2026 creates room under the 2027 limit of $35,390). If RRSP room is not needed, eligible dividends may produce slightly lower combined tax. Model annually — provincial rates create different break-even points.  _(https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/whats-new.html)_ **HOLD:** No universal salary/dividend optimum follows from the RRSP ceiling. Establish personal room/adjustments, actual corporate period, dividend status, objective and matched cash cost before advice. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/contributions-affect-your-rrsp-prpp-deduction-limit.html)
-
-### TOSI (Tax on Split Income) — s 120.4
-
-- **TOSI** — Covered split income from a related business can be subject to top-rate tax unless an exclusion applies. Direct salary is not TOSI merely because the recipient is a family member or its amount is excessive; deduction reasonableness is a separate issue under [ITA 67](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.html). **HOLD:** determine the actual income category and exclusion conditions. [ITA 120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html); [CRA income categories](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-40424-federal-tax-on-split-income.html)
-- **Excluded business** — Family member works ≥20 hours/week in the business  _(s 120.4)_ **HOLD:** The 20-hour shorthand omits regular involvement, current/five-prior-year and average-hours/operating-period conditions; no automatic exclusion is certified. [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html)
-- **Excluded shares** — Family member aged 25+, owns shares of a corporation (not a professional corporation) where <90% of income is from services, 10%+ of votes and value  _([s 120.4](https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/income-sprinkling/guidance-split-income-rules-adults/excluded-shares.html))_ **HOLD:** Bind direct ownership, measurement year and other-related-business-income conditions; the age/votes/value/service numbers alone do not qualify the recipient. [Official source](https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/income-sprinkling/guidance-split-income-rules-adults/excluded-shares.html)
-- **Reasonable return** — Compensation proportional to labour, capital, risk contributed  _(s 120.4)_ **HOLD:** Age and operative exclusion conditions remain unresolved; proportional compensation alone is not an automatic TOSI exclusion. [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html)
-- **Prescribed rate loans** — Lend funds to spouse at CRA prescribed rate (3% Q1 2026); spouse invests, attributes interest income back to lender, keeps excess returns  _(s 74.5(2))_ **HOLD:** The 3% figure is Q1 2026 only. Section 74.5(2) rate and interest-payment conditions, including the 30-day-after-year-end requirement, must be bound before applying the attribution exception; s120.4 alone is not the loan rule. [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.5.html)
+| Planning question | Action |
+| --- | --- |
+| Sole proprietor versus CCPC; incorporation break-even; association and business-limit reductions | Check this point with one of our partner accountants. |
+| Salary versus dividends; corporate deduction; childcare room; gross-up and dividend credit; T4/T5 and remittances | Check this point with one of our partner accountants. |
+| TOSI: actual income category, excluded business, excluded shares and reasonable return; direct family salary and deduction reasonableness | Check this point with one of our partner accountants. |
+| Prescribed-rate spousal loans and attribution; applicable quarter, interest and payment timing | Check this point with one of our partner accountants. |
 
 ## Section 3 — Deductions Most People Miss
 
-**Deductions Most People Miss**  _(https://www.canada.ca/en/department-finance/services/publications/report-impact-reducing-lowest-marginal-personal-income-tax-rate-non-refundable-tax-credits.html)_
+Collect invoices and evidence for the actual claimant, expense and income source before assessing these topics.
 
-| Deduction | Provision | Notes |
-| --- | --- | --- |
-| Home office expenses | s 8(1)(f), 8(1)(i), 18(12) | Employees: T2200 required. Self-employed: proportion of rent/mortgage interest, utilities, insurance, property tax **HOLD:** Employee/self-employed eligibility and complete operative expense limits were not verified here; do not infer a universal T2200 or deduction result. |
-| Moving expenses | s 62 | Must move ≥40 km closer to new work/business location. Deduct against income at new location |
-| Carrying charges | s 20(1)(c) | Interest on money borrowed to earn investment income. Includes investment counsel fees **HOLD:** Interest tracing and investment-counsel fees use distinct provisions/conditions; s20(1)(c) alone does not prove all fees deductible. |
-| Medical expenses | s 118.2 | Tax credit at 14% federal (2026; 14.5% for 2025) on expenses >3% of net income or $2,834 (lesser, 2025 threshold). Include premiums, dental, prescriptions, travel for treatment **HOLD:** $2,834 and 14.5% are explicitly 2025 figures; the 2026 ceiling is $2,890 with a 14% ordinary credit rate, subject to qualifying expenses/persons and any top-up/limits. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html) |
-| Disability tax credit | s 118.3 | $10,341 federal credit (2026). Transferable to supporting person. Unlocks RDSP eligibility **HOLD:** $10,341 is the 2026 base amount, not that much cash refund; ordinary 14% value is $1,447.74 before limitations/top-up. Qualification and transfer conditions remain unresolved. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html) |
-| Northern residents deduction | s 110.7 | Residency deduction + travel benefits for prescribed zones **HOLD:** Full zone/residency/travel eligibility and limits were not read in this unit. |
-| Capital cost allowance (CCA) on rental property | s 20(1)(a), Sch II | Class 1 (4%), Class 8 (20%). Accelerated Investment Incentive (triple declining balance in year 1) **HOLD:** The universal triple/1.5-times shorthand is not a complete first-year calculation. Bind property, acquisition/available-for-use cohort and rental-loss restrictions before computing. |
-| Apprentice mechanic tools | s 8(1)(s) | Cost exceeding the greater of $1,000 plus the s.118(10) amount (Canada employment amount) and 5% of apprenticeship income (s 8(1)(r)) **HOLD:** Apply the actual paragraph 8(1)(r) formula and interactions; the 2026 Budget publicity does not prove enacted changes. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses.html) |
-| Union/professional dues | s 8(1)(i) | Full deduction **HOLD:** Full operative eligibility and deduction limits were not verified in this unit. |
-| Child care expenses | s 63 | $8,000/child under 7; $5,000/child 7–16; $11,000 if DTC-eligible. Must be claimed by lower-income spouse (exceptions apply) **HOLD:** Apply the actual age-timing, infirmity, earned-income/cost caps and higher-income-spouse exceptions; the listed amounts are not automatic entitlements. [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-63.html) |
+| Topic | Action |
+| --- | --- |
+| Employee or self-employed home office, including T2200 | Check this point with one of our partner accountants. |
+| Moving expenses | Check this point with one of our partner accountants. |
+| Borrowing interest and investment-counsel fees | Check this point with one of our partner accountants. |
+| Medical expenses | Check this point with one of our partner accountants. |
+| Disability credit and transfers | Check this point with one of our partner accountants. |
+| Northern residents | Check this point with one of our partner accountants. |
+| Union and professional dues | Check this point with one of our partner accountants. |
+| Apprentice mechanic tools | Check this point with one of our partner accountants. |
+| Childcare expenses and spouse allocation | Check this point with one of our partner accountants. |
 
 ## Section 4 — Capital Allowances Optimization
 
-### Accelerated Investment Incentive (AII)
+For building, furniture, machinery, vehicle, software, hardware and zero-emission-vehicle CCA classes, passenger cost limits, rental-loss restrictions, accelerated first-year allowances and historical or later immediate expensing: Check this point with one of our partner accountants.
 
-- **AII** — For assets acquired after 20 November 2018 and available for use before 2028: enhanced first-year CCA. Effectively 1.5× the normal CCA rate in Year 1 (eliminates the half-year rule and adds a 50% bonus). Applies to most CCA classes. **HOLD:** Original AIIP phaseout and restored cohorts differ. No universal multiplier applies across the dates in the old shorthand; bind cohort, available-for-use and enacted relief.
-
-### Key CCA Classes
-
-**Key CCA Classes**
-
-| Class | Rate | Assets |
-| --- | --- | --- |
-| 1 | 4% | Buildings acquired after 1987 |
-| 8 | 20% | Furniture, fixtures, equipment, machinery |
-| 10 | 30% | Motor vehicles (passenger vehicle Class 10.1 cost limit $38,000 + tax for 2025 acquisitions, $39,000 + tax for 2026) |
-| 10.1 | 30% | Passenger vehicles over cost limit (separate class per vehicle) |
-| 12 | 100% | Computer software, tools <$500 |
-| 50 | 55% | Computer hardware and systems software |
-| 54 | 30% base declining-balance rate; enhanced first-year computation held | Eligible zero-emission vehicles; the $61,000 plus tax ceiling is passenger-specific, not a cap on every Class 54 asset. **HOLD:** apply actual vehicle/cohort/relief conditions before computing. [CRA classes](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html) |
-
-### Immediate Expensing (CCPCs)
-
-- **Historical immediate expensing** — The old $1.5 million framework **excludes Classes 1–6, 14.1, 17, 47, 49 and 51**. The CCPC cohort generally used acquisitions on/after 19 April 2021 and availability before 1 January 2024; individual/eligible-partnership acquisition starts after 31 December 2021, with availability before 2025. **HOLD:** sharing, proration and actual eligible-property conditions must be established. This does not certify later class-specific relief or turn a 2026 proposal into enacted law. [ITR 1104 definitions](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-1104.html); [historical Finance explanation](https://www.canada.ca/en/department-finance/news/2022/02/expansion-of-the-eligibility-for-tax-support-for-business-investments.html)
+Obtain asset description, acquisition and available-for-use dates, cost, business use and prior claims before a calculation.
 
 ## Section 5 — Loss Utilization
 
-### Non-Capital Losses
-
-- **Non-capital losses** — Carry back 3 years or carry forward 20 years (s 111(1)(a)). Business losses of a sole proprietor offset all personal income in the current year. Corporate losses stay in the corporation.  _(s 111(1)(a))_ **HOLD:** The ordinary three-back/twenty-forward period does not settle restricted categories or loss events. [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html)
-
-### Capital Losses
-
-- **Capital losses** — Net capital losses carry back 3 years or forward indefinitely (s 111(1)(b)). Can only offset capital gains. At death, net capital losses can offset any income in the year of death and prior year.  _(s 111(1)(b))_ **HOLD:** The ordinary capital-gain limitation/periods do not establish death-year/prior-year other-income offsets; amount and prior-exemption constraints remain unresolved. [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html)
-
-### Allowable Business Investment Losses (ABIL)
-
-- **ABIL** — Loss on shares or debt of a small business corporation (s 38(c)). 50% of the loss is an ABIL, deductible against all income (not just capital gains). Excess becomes a non-capital loss.  _(s 38(c))_ **HOLD:** Small-business share/debt status alone does not establish a business investment loss. Qualification, prior exemptions and special carryforward/conversion conditions remain unresolved. [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html)
-
-### Loss Planning
-
-- **Time capital gains and losses** — Time capital gains and losses in the same year to offset
-- **Crystallise unrealised losses** — Crystallise unrealised losses before year-end (beware superficial loss rule: 30-day rule, s 54)  _(s 54)_
-- **Spousal transfer** — A transfer at FMV does not by itself secure a current loss. A spouse is affiliated; acquisition and retained ownership or rights at the end of the statutory period can trigger superficial-loss denial. **HOLD:** apply the full definition, exceptions and any attribution/rollover treatment before recommending a transaction. [ITA 54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html); [ITA 40(2)(g)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html); [ITA 251.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-251.1.html)
+| Topic | Action |
+| --- | --- |
+| Non-capital losses and carryback/carryforward | Check this point with one of our partner accountants. |
+| Capital losses, capital-gain offsets and death-year exceptions | Check this point with one of our partner accountants. |
+| Business investment losses, ABIL and later loss treatment | Check this point with one of our partner accountants. |
+| Loss harvesting, superficial losses, spousal transfers and repurchases | Check this point with one of our partner accountants. |
 
 ## Section 6 — Timing Strategies
 
-**Timing Strategies**  _(https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html)_
+Under accrual accounting, report business income in the fiscal period earned, regardless of receipt. Delaying an invoice alone does not establish a deferral. [CRA accounting methods](https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/business-income-tax-reporting/accounting-your-earnings.html)
 
-| Strategy | Detail |
-| --- | --- |
-| RRSP contribution by March 1 | Contributions made by 1 March deductible in prior tax year. Carry forward deduction if in lower bracket now **HOLD:** The date depends on the deduction year: 2025-income deadline was 2 March 2026; 2026-income deadline is 1 March 2027. This does not certify an individual's available deduction room. [CRA dates](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/important-dates-rrsp-rrif-rdsp.html); [CRA contribution years](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/completing-slips-summaries/financial-slips-summaries/rrsp-contribution-receipt-return/contribution-year.html) |
-| Defer income | Delaying an invoice does not by itself defer accrual-method business income; cash-method eligibility cannot be assumed. **HOLD:** determine the recognition method and actual earning/payment facts. Employee bonus and owner-salary timing need their own receipt/deduction checks. [CRA accounting methods](https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/business-income-tax-reporting/accounting-your-earnings.html) |
-| Accelerate deductions | Prepay deductible expenses before 31 December. Purchase CCA-eligible assets before year-end **HOLD:** Prepaid-period restrictions, actual incurrence and available-for-use/cohort conditions prevent automatic deductions from a December payment or purchase. [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) |
-| Charitable donations | Carry forward donations up to 5 years. Consolidate to one spouse for higher credit rate (29%/33% on amounts >$200) **HOLD:** The 29%/33% rate is not a free choice; full 2026 claim/spouse/income-limit application remains unresolved. The read CRA rate table was dated 2025; ordinary five-year carryforward alone is confirmed. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-34900-donations-gifts/how-much-claim.html) |
-| Capital gains deferral | Hold assets >1 year (no discount, but defer realisation). Use CCPC to shelter passive income until extraction **HOLD:** This is planning policy, not a one-year holding discount or exemption from corporate passive-income taxation. [ITA 38 — inclusion framework only, not approval of the strategy](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-38.html) |
-| LCGE crystallisation | Trigger capital gain on QSBC shares up to $1,275,000 LCGE (2026) while still eligible. Useful before selling active business **HOLD:** Personal remaining exemption, QSBC/residency/CNIL/loss constraints and AMT must be resolved before a transaction or saving. [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.6.html) |
-| Prescribed rate loan before rate increase | Lock in lower CRA prescribed rate before quarterly adjustments **HOLD:** Use the actual quarter and payment/attribution-exception conditions, not just a headline rate. [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.5.html) |
+For prepaid expenses and year-end asset purchases; employee bonuses and owner-salary timing; donation rates, spouse allocation and carryforward; capital-gain realization and corporate passive income; or LCGE crystallization: Check this point with one of our partner accountants.
 
 ## Section 7 — GST/HST Optimization
 
-**GST/HST Optimization**
+For supply rates and place of supply; small-supplier registration and voluntary registration; Quick Method eligibility/election; ITC documents; vehicle ITCs; real-property self-supply and housing rebates; or zero-rated exports: Check this point with one of our partner accountants.
 
-| Topic | Detail |
-| --- | --- |
-| Small supplier exemption | Gross revenue ≤$30,000 in 4 consecutive quarters → no mandatory registration. But voluntary registration allows ITCs **HOLD:** Single-quarter/four-quarter timing, associates, exceptions and registration type must be resolved; $30,000 alone does not decide registration. |
-| Quick method | Simplified GST remittance for businesses ≤$400,000 revenue. Remit a reduced percentage; keep the difference. Often advantageous for service businesses with few inputs **HOLD:** The $400,000 test is not generic revenue eligibility; tax-inclusive/associate/period tests and excluded services apply. |
-| Input Tax Credits (ITCs) | Claim GST/HST on business purchases. Documentation requirements: supplier name/BN, invoice date, total, GST amount **HOLD:** Different consideration tiers require different documentation fields; this short list is not a complete ITC-document test. |
-| ITCs on vehicles | Claim proportional to business use. Maintain logbook **HOLD:** Capital-property/passenger-vehicle rules differ; do not calculate every vehicle ITC by a simple business-use percentage. |
-| Real property | Self-supply rules on real property conversions. New residential property GST/HST rebate ($350,000–$450,000 threshold) **HOLD:** The federal new-housing phaseout/cohort computation and other rebate programs are not resolved by the $350,000–$450,000 range on its own. |
-| Place of supply | GST vs HST depends on province of delivery. Optimise for lower-rate provinces where legitimately possible **HOLD:** Service/address and other place-of-supply rules prevent a universal physical-delivery test or elective lower-province treatment. |
-| Zero-rated exports | Exports are zero-rated (0% GST) but ITCs on inputs still claimable **HOLD:** Apply actual export/recipient/property/service conditions before zero-rating or an ITC conclusion. |
+Obtain supplies, customer location/status, associate turnover, tax-inclusive period totals, purchase documents and intended use before choosing a treatment.
 
 ## Section 8 — CPP/EI & Social Security Optimization
 
 ### CPP Contributions (2026)
 
-- **CPP1** — 5.95% employee + 5.95% employer on pensionable earnings $3,500–$74,600 (max employee contribution $4,230.45)  _(https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html)_
-- **CPP2** — 4% employee + 4% employer on earnings $74,600–$85,000 (second ceiling)  _(https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html)_
-- **Self-employed CPP** — Self-employed pay both halves (11.9% CPP1 + 8% CPP2)
-- **CCPC owner-manager dividends only** — No CPP contributions → no CPP pension accrual. Trade-off: lower current cost vs lower retirement benefit **HOLD:** Dividend payments alone do not establish total pension/benefit eligibility; past contributions, other employment, age and individual facts remain relevant.
+These ordinary annual figures assume full-year CPP participation outside Quebec, no exemption, election or proration, and one employment. They do not determine whether the person must contribute. For age, disability, retirement elections, Quebec or multiple-employment adjustments: Check this point with one of our partner accountants.
+
+- **CPP1** — 5.95% each for employee and employer on pensionable earnings above $3,500 through $74,600; maximum $4,230.45 each. [CRA CPP table](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html)
+- **CPP2** — 4% each on pensionable earnings above $74,600 through $85,000; maximum $416 each. [CRA CPP2 table](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-deductions/second-additional-cpp-contribution-rates-maximums.html)
+- **Self-employed CPP** — Self-employed pay both halves (11.9% CPP1 + 8% CPP2), on the corresponding pensionable net-business-income bands, subject to actual coverage and adjustments. [CPP contributions](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html); [CRA CPP2 table](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-deductions/second-additional-cpp-contribution-rates-maximums.html)
 
 ### EI Premiums
 
-- **Employees** — 1.63% on insurable earnings up to $68,900 (2026)  _(https://www.canada.ca/en/employment-social-development/news/2025/09/canada-employment-insurance-commission-sets-the-2026-employment-insurance-premium-rate.html)_
-- **Self-employed** — Can opt in for special benefits (maternity, sickness)
-- **CCPC dividends** — No EI — but also no EI eligibility **HOLD:** Salary/voting-owner and self-employed special-benefit exceptions prevent a universal no-EI-eligibility conclusion. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/canada-pension-plan-cpp-employment-insurance-ei-rulings/cpp-ei-explained/employees-self-employed-workers-responsibilities-benefits-entitlements.html)
+The ordinary 2026 employee EI rate outside Quebec is 1.63% of insurable earnings, with a $68,900 annual earnings maximum. This does not establish owner-manager insurability. [CRA EI table](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html)
 
-### Optimisation
-
-- **Dividends avoid premiums** — If owner-manager does not need CPP/EI benefits, dividends avoid these premiums (~$6,000+ annual saving) **HOLD:** The $6,000-plus saving is not universal or computed. Sole voting-owner salary is already outside regular EI; age, other work and opt-in conditions matter. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/canada-pension-plan-cpp-employment-insurance-ei-rulings/cpp-ei-explained/employees-self-employed-workers-responsibilities-benefits-entitlements.html)
-- **Building CPP entitlement** — If building CPP entitlement, pay minimum salary to maximise CPP credits **HOLD:** This is planning policy; actual contribution history, coverage, room and objectives are required before recommending salary.
-- **RRSP room balance** — Balance against RRSP room generation (requires earned income)
+For self-employed special-benefit opt-in, sole-shareholder salary insurability, dividends, pension/benefit eligibility or an alleged premium saving/minimum-salary strategy: Check this point with one of our partner accountants.
 
 ## Section 9 — Investment & Retirement
 
-**Investment & Retirement**  _(https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4460/registered-disability-savings-plan.html)_
+### RRSP
 
-| Account | 2026 Limit | Tax Treatment |
-| --- | --- | --- |
-| RRSP | $33,810 (or 18% of prior-year earned income) | Contributions deductible; growth tax-deferred; withdrawals taxed as income **HOLD:** $33,810 is the 2026 new-room ceiling, not a choice between that and 18% or a universal cap on accumulated room; apply lesser-of, carryforward and adjustments. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/contributions-affect-your-rrsp-prpp-deduction-limit.html) |
-| TFSA | $7,000 (cumulative $109,000 since 2009) | No deduction; growth and withdrawals tax-free **HOLD:** $109,000 assumes eligibility for each year's annual room; personal room depends on age, residency and transactions. Tax-free treatment also has operative conditions. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html) |
-| FHSA | $8,000/year ($40,000 lifetime) | Deductible like RRSP + tax-free withdrawal for first home (like TFSA). Best of both worlds **HOLD:** Carryforward/adjustments can alter annual participation capacity; deduction and qualifying-withdrawal eligibility must be established separately. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/contributing-your-fhsa.html) |
-| RESP | $2,500 yields the ordinary $500 basic CESG; this is not an annual RESP contribution ceiling or every grant maximum | Returned contributions are tax-free; educational assistance payments are income of the beneficiary; accumulated income payments have separate subscriber treatment. **HOLD:** establish payment type and grant/withdrawal eligibility before a personal result. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/payments-resp.html); [CESG conditions](https://www.canada.ca/en/services/benefits/education/education-savings/estimating-amounts.html) |
-| RDSP | Up to $200,000 lifetime | Government grants up to $3,500/year plus bonds up to $1,000/year. Must have DTC **HOLD:** DTC alone is not sufficient; age/income/contribution rules apply and unused entitlements can alter annual grants/bonds. The headline maxima are not automatic personal entitlements. [Official source](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4460/registered-disability-savings-plan.html) |
+The annual new-room dollar ceiling is $33,810 for 2026 and $35,390 for 2027. These are not caps on accumulated deduction room. [CRA plan limits](https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html)
 
-### Strategy Framework
+Generally, the deduction-limit calculation starts with unused prior-year deduction room, adds the excess of the lesser of 18% of prior-year earned income and the annual dollar ceiling over the pension adjustment or prescribed connected-person amount, adds a pension adjustment reversal and subtracts net past-service pension adjustment. Use the actual CRA deduction limit and account for contributions already made. Generally, contributions to your own RRSP require available deduction limit and must be made by December 31 of the year you turn 71. [CRA calculation](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/contributions-affect-your-rrsp-prpp-deduction-limit.html)
 
-- **1. FHSA first** — If qualifying first-time buyer — deductible AND tax-free withdrawal
-- **2. Employer RRSP match** — Capture free money before any other investment
-- **3. TFSA** — Fill annually, especially if in a lower bracket now (preserve RRSP room for higher-income years)
-- **4. RRSP** — Maximise in years with high marginal rate, plan to withdraw in lower-rate retirement
-- **5. RESP** — Trigger CESG grant ($500/child/year)
-- **6. Non-registered** — Use Canadian eligible dividends and capital gains (50% inclusion) for tax efficiency
+For contribution eligibility, special transfers, withdrawals, excess-contribution tax or choosing the deduction year: Check this point with one of our partner accountants.
+
+### TFSA
+
+The 2026 annual dollar limit is $7,000. Personal available room depends on age, residence, previous contributions and withdrawals; it is not the sum of every annual limit for everyone. Do not contribute while non-resident. Non-permitted investments can be taxable. [CRA room and investment rules](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html)
+
+TFSA contributions are not deductible; investment income and withdrawals are generally tax-free. This general treatment does not cover account-level business income, prohibited/non-qualified investments, advantages or excess/non-resident contributions. [CRA account treatment](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/what.html); [CRA conditions](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html)
+
+### Other accounts and priorities
+
+| Topic | Action |
+| --- | --- |
+| FHSA participation room, carryforward, deduction and qualifying home withdrawal | Check this point with one of our partner accountants. |
+| RESP contribution/grant planning, additional or catch-up CESG, returned contributions, EAP and AIP payment types | Check this point with one of our partner accountants. |
+| RDSP contributions, eligibility, income/age conditions, grants/bonds and carryforward | Check this point with one of our partner accountants. |
+| Employer matching and the order of FHSA, TFSA, RRSP, RESP and non-registered investing | Check this point with one of our partner accountants. |
 
 ## Section 10 — Red Lines (GAAR & Scrutiny Triggers)
 
-### GAAR (s 245 ITA)
+For GAAR, mandatory disclosure, tax-shelter reporting and penalties: Check this point with one of our partner accountants.
 
-- **GAAR test** — Applies when a transaction (i) results in a tax benefit, (ii) is an avoidance transaction under the current subsection 245(3) main-purpose test, and (iii) is abusive — misuses or frustrates the provisions of the Act. Consequence: the tax benefit may be denied. **HOLD:** apply the full operative test, application dates and any penalty/disclosure conditions before a conclusion. [ITA 245](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-245.html)
+For personal expenses through a corporation, shareholder benefits/loans, automobile benefits and non-arm's-length pricing: Check this point with one of our partner accountants.
 
-### CRA Scrutiny Triggers
+For T1135 or other foreign reporting, property exclusions, filing populations and late-filing penalties: Check this point with one of our partner accountants.
 
-**CRA Scrutiny Triggers**  _(https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/questions-answers-about-form-t1135.html)_
-
-| Trigger | Risk |
-| --- | --- |
-| TOSI-offending dividends to family members | Top-rate tax + interest |
-| Superficial losses (repurchase within 30 days) | Loss denied (s 54) **HOLD:** Apply the full before/after window, end ownership/rights and exceptions; a repurchase alone does not settle every denial. [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) |
-| Excessive salary to family members not working in business | Deduction reasonableness may be challenged under [ITA 67](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.html); direct salary is not on that basis covered split income for TOSI. [ITA 120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html); [CRA categories](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-40424-federal-tax-on-split-income.html) |
-| Personal expenses through corporation | Shareholder benefit (s 15(1)) or deemed dividend (s 15(2)) **HOLD:** Full section 15 characterization was not read here; an income inclusion is not automatically a deemed dividend. |
-| Automobile benefits | Standby charge + operating benefit if personal use not properly reported **HOLD:** Complete operative automobile-benefit application was not verified here. |
-| Non-arm's length transactions at non-FMV | Transfer pricing rules (s 69, s 247) **HOLD:** The actual section 69/247 scope and transaction facts were not verified here; do not apply a generic transfer-pricing conclusion. |
-| Foreign reporting non-compliance | T1135 (specified foreign property with total cost amount of more than $100,000 at any time in the year). Penalties: $2,500/year late filing **HOLD:** $2,500 is an ordinary late-penalty maximum, not a flat annual charge; actual days, minimum and enhanced regimes must be applied. |
-| Underground economy / unreported income | CRA uses third-party data matching **HOLD:** No complete operative applicability or quantified scrutiny probability was verified here. |
-| RRSP over-contribution | 1% per month penalty tax on excess >$2,000 |
-| Aggressive tax shelters | CRA mandatory disclosure rules (s 237.3, 237.4) — expanded 2023 **HOLD:** Full reportable/notifiable/application and penalty conditions remain unresolved. |
-
-### Absolute Prohibitions
-
-- **Personal expenses as business deductions** — NEVER advise claiming personal expenses as business deductions
-- **Hiding income/assets offshore** — NEVER advise hiding income or assets offshore without proper disclosure (T1135, T1134)
-- **Ignoring TOSI** — NEVER advise ignoring TOSI rules when splitting income with family members
-- **Superficial loss repurchase** — NEVER advise repurchasing securities within 30 days to trigger a loss (superficial loss) **HOLD:** This conduct warning is not a substitute for the complete statutory definition, end ownership/rights and exceptions. [Official source](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html)
-- **Backdating documents** — NEVER advise backdating transactions or documentation
+Do not recommend concealed income/assets, fabricated business deductions, ignoring TOSI or artificial loss claims. Escalate unresolved classification before recommending a transaction. These are conduct instructions, not a prediction of audit probability or penalty.
 
 ## Section 11 — Annual Tax Planning Calendar
 
-**Annual Tax Planning Calendar**
+The RRSP contribution deadline for the 2026 tax year is **1 March 2027**, subject to actual contribution eligibility and deduction room. The corresponding deadline for 2025 was **2 March 2026**. Do not treat March 1 or December 31 as a universal RRSP deadline. [CRA 2026 date](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/important-dates-rrsp-rrif-rdsp.html); [CRA contribution periods](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/completing-slips-summaries/financial-slips-summaries/rrsp-contribution-receipt-return/contribution-year.html)
 
-These include planning reminders, not only statutory deadlines. Tax-year 2026 personal filing/payment dates fall in 2027; special cases and holiday adjustments remain separate. June 30 is only a chosen corporate year-end, not a universal requirement.
+Use January for an account-room review, the period before the applicable RRSP deadline for a contribution decision, and autumn for a year-end review. These are planning reminders.
 
-| When | Action |
-| --- | --- |
-| January | New TFSA room available ($7,000). Review prescribed rate for spousal loans. Ensure FHSA contribution on track |
-| February | Planning reminder, not a fixed legal deadline: 2025-income RRSP deadline was 2 March 2026; 2026-income deadline is 1 March 2027. Model RRSP/TFSA using actual room and equal cash costs. [CRA dates](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/important-dates-rrsp-rrif-rdsp.html); [CRA contribution years](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/completing-slips-summaries/financial-slips-summaries/rrsp-contribution-receipt-return/contribution-year.html) |
-| 2 March 2026 / 1 March 2027 | Respective RRSP contribution deadlines for a 2025 / 2026 deduction, subject to actual room/eligibility. [CRA dates](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/important-dates-rrsp-rrif-rdsp.html); [CRA contribution years](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/completing-slips-summaries/financial-slips-summaries/rrsp-contribution-receipt-return/contribution-year.html) |
-| April 30 | Personal tax return filing deadline. Tax balance owing due. CPP/EI self-employed remittance due |
-| June 15 | Filing deadline for self-employed (but tax was due April 30) |
-| June 30 | CCPC fiscal year-end (if elected). Review salary vs dividend mix |
-| September | Model year-end tax position. Review quarterly instalment obligations |
-| October–November | Execute capital gains/loss harvesting. Make charitable donations. Prepay deductible expenses |
-| December 31 | **Critical date.** TFSA contributions. RESP contributions to trigger CESG. SRS/RRSP contributions for current year. Year-end trust distributions. Ensure T5013 / T3 slips timing. Pay salary/bonus before year-end for earned income **HOLD:** RRSP first-60-days rules prevent treating this as a universal RRSP deadline; SRS is undefined. Other account/trust/return/slip dates require their own conditions. [Official source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/important-dates-rrsp-rrif-rdsp.html) |
+For personal filing/payment and instalment deadlines, corporate year-end/filing dates, trust distributions, T3/T5013 slips and other account contribution deadlines: Check this point with one of our partner accountants.
 
 ## Section 12 — Cash Impact Examples
 
 ### Example 1 — CCPC Salary vs Dividend Mix (Ontario, 2026)
 
-**Scenario:** CCPC earns $200,000 active business income. Owner is sole shareholder.
+**Original inputs:** CCPC active business income $200,000; sole shareholder; alternatives of $200,000 gross salary, all dividends, or $100,000 salary plus remaining dividends. No matched-budget comparison or optimal blend is established.
 
-**All salary ($200,000):** For an ordinary full-year non-Quebec CPP contributor reaching both 2026 maxima, employee CPP is **$4,230.45 + $416 = $4,646.45**; employer CPP is the same, so combined CPP is **$9,292.90**. A $200,000 gross salary therefore costs the corporation **$204,646.45** before any other employer costs, exceeding this scenario's $200,000 income budget. The historical $8,300 CPP estimate is not either of those totals. **HOLD:** personal tax, deductible corporate costs, actual CPP eligibility and a matched corporate cash budget are not supplied, so no salary take-home or tax saving is certified. The old personal-tax and take-home estimates are not usable results; compute them only after the missing individual and corporate inputs are established. New 2027 RRSP room is conditionally min($200,000 × 18%, $35,390) = $35,390 before pension adjustments. [CPP contributions](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html); [2026 formulas](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-122nd-edition-effective-january-1-2026/t4127-jan-payroll-deductions-formulas-computer-programs.html); [owner EI treatment](https://www.canada.ca/en/revenue-agency/services/tax/canada-pension-plan-cpp-employment-insurance-ei-rulings/cpp-ei-explained/employees-self-employed-workers-responsibilities-benefits-entitlements.html)
+Assuming the full-year CPP conditions in Section 8, employee CPP is $4,230.45 + $416 = **$4,646.45**, employer CPP is the same, and combined contributions are **$9,292.90**. The corporation's $200,000 salary plus employer CPP costs **$204,646.45** before other employer costs, exceeding the stated $200,000 income budget. This is not a corporate-tax or personal take-home calculation. [CRA CPP](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html); [CRA CPP2](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-deductions/second-additional-cpp-contribution-rates-maximums.html)
 
-**All eligible dividends — HOLD:** the old 12.2%/$24,400 corporate tax, $175,600 residual, $25,200 personal tax, $150,400 net and $12,400 saving are not verified results. Ontario's lower corporate rate changed on 1 July 2026; establish the actual fiscal period and SBD eligibility. Eligible-dividend treatment also requires sufficient GRIP, which is not established merely by SBD-taxed income. Match the corporate cash budgets and actual owner inputs before comparing. Dividends themselves do not create earned-income RRSP room or CPP contributions. [CRA corporate rates](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html); [CRA GRIP](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/eligible-dividends/general-rate-income-pool-grip.html)
+If 2026 earned income is $200,000, the new-room component for 2027 is min($200,000 × 18%, $35,390) = **$35,390**, before pension adjustments and other deduction-limit components. [CRA limit calculation](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/contributions-affect-your-rrsp-prpp-deduction-limit.html); [CRA 2027 ceiling](https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html)
 
-**Proposed blend, not an optimum:** $100,000 salary plus the remainder as dividends is an illustration to test against RRSP room, CPP history, fiscal period, dividend status and equal corporate cash cost. **HOLD:** no objective or optimization calculation establishes it as best.
-
-
+For personal tax/take-home, corporate deductions and fiscal-period tax, eligible versus non-eligible dividends/GRIP, equal corporate cash costs and the proposed $100,000 blend: Check this point with one of our partner accountants.
 
 ```oa-check
 name: 2026 owner salary CPP illustration, ordinary full-year eligibility assumed
@@ -337,13 +182,13 @@ expected:
 
 ### Example 2 — TFSA vs RRSP
 
-**Profile:** 30-year-old earning $60,000 (20.5% federal bracket).
+**Original inputs:** age 30, annual earnings $60,000, contribution $7,000, annual compound return 6% for 30 years, and an assumed flat 14% RRSP withdrawal tax.
 
-**RRSP $7,000:** If the $60,000 is taxable income before this deduction and other effects are held constant, the deduction crosses the $58,523 band: $1,477 × 20.5% + $5,523 × 14% = **$1,076.005**, about **$1,076.01 of federal tax reduction** (round half up to cents), not a guaranteed refund or complete provincial result. At an assumed annual 6% compound return for 30 years, $7,000 × 1.06^30 = **$40,204.44** before withdrawal tax. Under the example's assumed flat 14% withdrawal tax only, net is **$34,575.82**. **HOLD:** actual taxable income, available deduction room, future taxes and the unsupported $8,102 taxable-account comparison need their own inputs. [CRA indexed amounts](https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html)
+If $60,000 is taxable income before an allowable $7,000 RRSP deduction, with other tax effects held constant, the deduction spans two 2026 federal bands: $1,477 × 20.5% + $5,523 × 14% = $1,076.005, or **$1,076.01** rounded half up to cents. This is a federal rate-table reduction before credit/benefit interactions, not a guaranteed refund or provincial result. Actual earnings alone do not establish taxable income or available deduction room. [CRA federal rates](https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html); [CRA deduction limit](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/contributions-affect-your-rrsp-prpp-deduction-limit.html)
 
-**TFSA $7,000:** assuming a permitted contribution/qualifying tax-free account and the same hypothetical growth, future value is **$40,204.44**. The arithmetic difference from the assumed flat-14% RRSP withdrawal is **$5,628.62**, not an established account-selection advantage. **HOLD:** a fair comparison must include equal cash costs and RRSP-refund reinvestment; no actual future return or tax rate is predicted. [CRA TFSA eligibility/room](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html)
+At the assumed growth rate, $7,000 × 1.06^30 = **$40,204.44**. Applying only the assumed flat 14% withdrawal tax produces **$34,575.82**. Assuming a permitted TFSA contribution/investment and ordinary tax-free treatment, the same growth leaves **$40,204.44**. The arithmetic difference is **$5,628.62**. These are hypothetical outputs; they do not predict future rates/returns or prove which account is better. [CRA TFSA treatment](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/what.html); [CRA TFSA conditions](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html)
 
-
+A strategy comparison needs equal initial cash costs, RRSP tax-reduction reinvestment, fees, provincial tax, actual withdrawal taxes and taxable-account assumptions. The old taxable-account advantage cannot be computed from these inputs. Check this point with one of our partner accountants.
 
 ```oa-check
 name: Conditional RRSP deduction, Decimal half-up rounding; flat withdrawal tax assumed
@@ -370,7 +215,11 @@ expected:
 
 ### Example 3 — LCGE on Business Sale
 
-Owner sells qualifying small business corporation shares with a **$1,000,000 gain**. The nominal 2026 lifetime ceiling is **$1,275,000**, but this does not establish the seller's remaining exemption or eligibility. **HOLD:** QSBC status, residency, CNIL/loss limits, prior claims and AMT must be resolved. $1,000,000 × 50% × an assumed flat 33% = **$165,000** is conditional arithmetic only; it is not certified cash saved under progressive federal/provincial tax. [ITA 110.6](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.6.html); [CRA minimum-tax guidance](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/deductions-credits-expenses/line-41700-minimum-tax.html)
+**Original inputs:** sale of shares described as qualifying small business corporation shares; capital gain $1,000,000; assumed 50% inclusion and flat 33% federal tax rate.
+
+The nominal 2026 LCGE ceiling for QSBC shares is **$1,275,000**. This figure alone does not establish the seller's qualifying gain or remaining exemption. [CRA indexed ceiling](https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html)
+
+$1,000,000 × 50% × 33% = **$165,000** is conditional arithmetic using the original assumptions. It is not a verified tax avoided or cash-saving result. For actual share qualification, residence, remaining lifetime room, prior claims, CNIL/loss restrictions, progressive federal/provincial tax and AMT: Check this point with one of our partner accountants.
 
 ```oa-check
 name: LCGE example arithmetic only, actual eligibility and cash saving held
@@ -384,59 +233,28 @@ expected:
   conditional_amount: 165000
 ```
 
-
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-
 ## Sources
 
-This correction reuses the completed **21 November 2026** audit against the unchanged source blob. The 21 November dates identify reused bounded operative reads. Two 25 November RRSP follow-ups resolve actual review-source gaps; they are not a new whole-source review. A confirmed nominal rate does not confirm every planning strategy built around it. Direct-access restrictions, archived editions, displayed historical years and unresolved individual conditions remain explicit.
+Completed bounded reads from the prior examination were reused where the retained claim and its conditions are unchanged. On 26 November the missing exact quotations for the retained rates, plan limits, RRSP formula/dates, TFSA and nominal LCGE ceiling were recovered from the official pages. Shared CPP/EI tables and the accrual rule reuse applicable completed quoted rows from the Canada bookkeeping proof. No unquoted prior hold was promoted to usable advice.
 
-| Official source | Scope of completed read reused | Date read |
+| Official source | Scope read or applicable proof reused | Date read |
 | --- | --- | --- |
-| [Indexed amounts](https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html) | Read bounded text: 2026 federal brackets, credit bases and LCGE; distinguish explicit historical 2025 amounts | 2026-11-21 |
-| [Finance credit-rate report](https://www.canada.ca/en/department-finance/services/publications/report-impact-reducing-lowest-marginal-personal-income-tax-rate-non-refundable-tax-credits.html) | Read bounded text: 2025 annual 14.5% versus 2026 14% ordinary credit/rate context; not every personal credit computation | 2026-11-21 |
-| [registered-plan limit table](https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html) | Read bounded text: 2026/2027 indexed ceilings; nominal limits not personal available room | 2026-11-21 |
-| [RRSP room formula](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/contributions-affect-your-rrsp-prpp-deduction-limit.html) | Read bounded text: Lesser-of new room, prior earned income, carryforward and pension-adjustment conditions | 2026-11-21 |
-| [CRA RRSP dates](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/important-dates-rrsp-rrif-rdsp.html) | Read bounded text: 2026-income contribution deadline of 1 March 2027; not the source for the 2025-income date | 2026-11-21; bounded follow-up 2026-11-25 |
-| [CRA contribution-year table](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/completing-slips-summaries/financial-slips-summaries/rrsp-contribution-receipt-return/contribution-year.html) | Read bounded text: 2025 row ends 2 March 2026. The 2026 deadline is supported by the separate CRA dates page; the independent reader did not reproduce the writer's 2026 contribution-table row | 2026-11-21; bounded follow-up 2026-11-25 |
-| [TFSA annual table](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html) | Read bounded text: Annual room table and cumulative $109,000 arithmetic; age/residency/transactions remain individual | 2026-11-21 |
-| [FHSA actual participation formulas](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/contributing-your-fhsa.html) | Read bounded text: Participation-room/carryforward adjustments, deduction and withdrawal distinctions | 2026-11-21 |
-| [2026 CESG table/catch-up conditions](https://www.canada.ca/en/services/benefits/education/education-savings/estimating-amounts.html) | Read bounded text: Basic/additional/catch-up grant conditions, not a $2,500 annual RESP ceiling | 2026-11-21 |
-| [CRA operative payment rules](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/payments-resp.html) | Read bounded text: Tax-free returned contributions versus beneficiary EAP and subscriber AIP treatment | 2026-11-21 |
-| [RDSP operative contribution/grant/bond/carryforward sections](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4460/registered-disability-savings-plan.html) | Read bounded text: Contribution, ordinary grant/bond and carryforward passages; amounts are not automatic entitlements | 2026-11-21 |
-| [Quarter1 prescribed rate](https://www.canada.ca/en/revenue-agency/services/tax/prescribed-interest-rates/2026-q1.html) | Read bounded text: Q1 2026 loan rate only, not a year-round prescribed rate | 2026-11-21 |
-| [loan exception74.5(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.5.html) | Read bounded text: Rate and interest-payment timing conditions for the spousal-loan exception | 2026-11-21 |
-| [TOSI law](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) | Read bounded text: Covered split-income definitions, excluded business/share and age/return conditions | 2026-11-21 |
-| [excluded-share gross-income/ownership conditions](https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/income-sprinkling/guidance-split-income-rules-adults/excluded-shares.html) | Read bounded text: Direct ownership, measurement year and other-related-business income conditions | 2026-11-21 |
-| [CRA operative income categories](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-40424-federal-tax-on-split-income.html) | Read bounded text: Covered split-income categories; salary treatment rests on ITA 120.4, and deduction reasonableness on ITA 67 | 2026-11-21 |
-| [Childcare 63(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-63.html) | Read bounded text: Qualifying expense limits and age/disability conditions; individual claim remains held | 2026-11-21 |
-| [moving-expense conditions](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-21900-moving-expenses.html) | Read bounded text: 40km shortest-public-route/new ordinary-residence and eligible-income conditions | 2026-11-21 |
-| [CRA apprentice formula](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses.html) | Read bounded text: Operative tool formula and paragraph 8(1)(r) interactions; proposals not treated as enacted | 2026-11-21 |
-| [loss periods 111(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html) | Read bounded text: Ordinary carryback/forward periods; complete death/ABIL/personal application remains held | 2026-11-21 |
-| [prepaid expense18(9)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) | Read bounded text: Prepaid-period restriction; paying in December alone does not decide deduction | 2026-11-21 |
-| [Donation carryforward/rate page](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-34900-donations-gifts/how-much-claim.html) | Read bounded text: Ordinary carryforward and displayed 2025 rates; complete 2026 claim application held | 2026-11-21 |
-| [operative ITR1104(3.1)](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-1104.html) | Read bounded text: Historical immediate-expensing property definitions/exclusions and cohorts; sharing/proration still require inputs | 2026-11-21 |
-| [2022 Finance source](https://www.canada.ca/en/department-finance/news/2022/02/expansion-of-the-eligibility-for-tax-support-for-business-investments.html) | Read bounded text: Historical excluded classes and acquisition/availability framework, not current open-ended relief | 2026-11-21 |
-| [ITA 54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) | Read bounded text: Superficial-loss window, end ownership/rights and exceptions | 2026-11-21 |
-| [40(2)(g)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) | Read bounded text: Loss-denial provision read with the section 54 definition | 2026-11-21 |
-| [251.1(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-251.1.html) | Read bounded text: Spousal affiliation; FMV alone does not secure a current deductible loss | 2026-11-21 |
-| [current245(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-245.html) | Read bounded text: Current main-purpose avoidance-transaction threshold, separately from misuse/abuse | 2026-11-21 |
-| [CRA accounting-source read from unit7](https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/business-income-tax-reporting/accounting-your-earnings.html) | Read bounded text: Accrual/cash recognition and limited cash-method eligibility; unchanged applicable unit7 read reused | 2026-11-21 |
-| [cited CPP source](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) | Read bounded text: Ordinary 2026 contribution bands/maxima reconciled with payroll tables where page label differed | 2026-11-21 |
-| [CRA 2026 formulas](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/payroll-deductions-t4127-payroll-deductions-formulas/t4127-jan-122nd-edition-effective-january-1-2026/t4127-jan-payroll-deductions-formulas-computer-programs.html) | Read bounded text: Archived Jan 2026 payroll formulas and Ontario bracket/credit parameters used for illustrative checks; not final T1 certification | 2026-11-21 |
-| [CRA owner-insurability guidance](https://www.canada.ca/en/revenue-agency/services/tax/canada-pension-plan-cpp-employment-insurance-ei-rulings/cpp-ei-explained/employees-self-employed-workers-responsibilities-benefits-entitlements.html) | Read bounded text: Sole voting-owner/regular EI distinction; no universal dividends premium saving | 2026-11-21 |
-| [Current Ontario corporate-rate evidence](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html) | Read bounded text: Actual provincial rates and 1 July 2026 Ontario change; no universal provincial range | 2026-11-21 |
-| [CRA GRIP rule](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/eligible-dividends/general-rate-income-pool-grip.html) | Read bounded text: Eligible-dividend capacity; SBD-taxed income alone does not demonstrate sufficient GRIP | 2026-11-21 |
-| [Current 110.6](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.6.html) | Read bounded text: Deduction/remaining-room constraints, not automatic exemption or actual cash saved | 2026-11-21 |
-| [CRA minimum-tax guidance](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/deductions-credits-expenses/line-41700-minimum-tax.html) | Read bounded text: AMT applicability; displayed $177,882 was 2025 and not copied as 2026 threshold | 2026-11-21 |
-| [The Guide's own EI release](https://www.canada.ca/en/employment-social-development/news/2025/09/canada-employment-insurance-commission-sets-the-2026-employment-insurance-premium-rate.html) | Read bounded text: 2026 non-Quebec EI rate and insurable-earnings ceiling; individual coverage still needed | 2026-11-21 |
-| [Mega Deduction announcement](https://www.canada.ca/en/department-finance/news/2026/09/government-of-canada-introduces-new-productivity-mega-deduction-to-boost-canadas-advantage-as-the-most-competitive-g7-country-for-new-business-inve.html) | Read bounded text: September 2026 announced proposals; announcement is not proof of enacted relief | 2026-11-21 |
-| [CRA depreciable-property classes](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html) | Read bounded text reused from completed related accounting research: base class rates, vehicle scope and acquisition cohorts; complete enhanced/rental computations remain held | 2026-11-21 |
-| [CRA Quick Method](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4058/quick-method-accounting-gst-hst.html) | Read operative eligibility/associate/period/tax-inclusive and excluded-service sections reused from completed related GST research; not an unqualified revenue-only election | 2026-11-21 |
-| [ITC documentation regulation](https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-45/section-3.html) | Read operative documentary tiers reused from completed GST work; short invoice list is not sufficient for every claim | 2026-11-21 |
-| [ITA 67](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.html) | Complete operative section read: otherwise deductible outlays/expenses are limited to amounts reasonable in the circumstances; no individual salary deduction is certified | 2026-11-25 |
+| [Official rates source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html) | 2026 federal marginal rates and separate provincial tax; bounded read | 2026-11-26 |
+| [Official limits source](https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html) | 2026/2027 RRSP dollar ceilings; bounded table read | 2026-11-26 |
+| [Official rrsp source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/contributions-affect-your-rrsp-prpp-deduction-limit.html) | General deduction-limit components, contribution eligibility and special-transfer distinctions; bounded read | 2026-11-26 |
+| [Official tfsa source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html) | Age/residence, room, non-resident contributions and non-permitted investment sections; bounded read | 2026-11-26 |
+| [Official what source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/what.html) | Ordinary tax treatment and account business-income exception; bounded read | 2026-11-26 |
+| [Official cpp1 source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html) | Applicable 2026 row, reused completed Canada bookkeeping proof N06 | 2026-11-26 |
+| [Official cpp2 source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-deductions/second-additional-cpp-contribution-rates-maximums.html) | Applicable 2026 row and employee/employer meaning, reused completed Canada bookkeeping proof N07 | 2026-11-26 |
+| [Official cpp source](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) | Employee/employer sharing and self-employed net-business-income contributions; bounded read; stray 2025 label in CPP2 paragraph resolved with CRA year-specific table | 2026-11-26 |
+| [Official ei source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html) | Applicable 2026 outside-Quebec row, reused completed Canada bookkeeping proof N08 | 2026-11-26 |
+| [Official accrual source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/business-income-tax-reporting/accounting-your-earnings.html) | Earned-income recognition sentence, reused completed Canada bookkeeping proof B07 | 2026-11-26 |
+| [Official dates source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/important-dates-rrsp-rrif-rdsp.html) | 2026 contribution deadline and own-RRSP age-71 cutoff; bounded read | 2026-11-26 |
+| [Official years source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/completing-slips-summaries/financial-slips-summaries/rrsp-contribution-receipt-return/contribution-year.html) | 2025/2026 contribution-period rows; bounded read | 2026-11-26 |
+| [Official indexed source](https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html) | Nominal 2026 QSBC LCGE ceiling only; bounded table read | 2026-11-26 |
 
-**Not yet confirmed:** unresolved applications remain limited or held; adjacent HOLDs identify the affected advice. In particular: national combined-rate ranges and universal incorporation/optimal-strategy claims; actual personal RRSP/TFSA/FHSA/RESP/RDSP room and eligibility; TOSI/loan operative application; home-office/interest/fees/northern/dues/tool/childcare conditions; medical/disability personal credit and transfer limits; complete enhanced/rental CCA and later enacted-relief availability; death/ABIL/loss outcomes; timing/constructive-receipt and donation applications; actual LCGE/QSBC/CNIL/loss/residency/AMT outcomes; GST registration/Quick Method/documentation/vehicle/real-property/place-of-supply/export computations; CPP/EI personal entitlement and claimed savings; shareholder/automobile/non-arm's-length/foreign-reporting/disclosure liability; and the actual salary/dividend, taxable-account and withdrawal-tax comparisons. Planning-policy sequences and conduct reminders are not statutory verification. The old salary/dividend comparison, taxable-account advantage and LCGE cash saving must not be used as verified outputs. No client return or investment recommendation was verified.
+**Not yet confirmed:** every topic carrying the partner-accountant referral remains outside this Guide’s usable conclusion. In particular, no optimal salary/dividend blend, taxable-account advantage, personal registered-plan entitlement, complete CCA claim, GST election, anti-avoidance conclusion or LCGE cash saving is established. The preserved historical approval has not been renewed for this correction.
