@@ -128,7 +128,7 @@ An EU/EEA national may use paragraph(b) tables if the Commissioner is satisfied 
   - not under a minimum-tax scheme;
   - foreign income **not less than €35,000** (a married couple taxed under article 49 counts both spouses' foreign income), not received, or not fully received, in Malta.
 
-  Their tax is "not less than €5,000" a year. For this comparison use Malta income tax before relief under articles 74–94, excluding article 5A tax and including Malta tax withheld at source. If the individual proves to the Commissioner's satisfaction a lower worldwide-basis liability, that lower amount applies. Foreign capital gains/source/remittance treatment is not proved merely by an offshore account or transferring sale proceeds.
+  Their tax is "not less than €5,000" a year. For this comparison use Malta income tax before relief under articles 76–89, excluding article 5A tax and including Malta tax withheld at source. If the individual proves to the Commissioner's satisfaction a lower worldwide-basis liability, that lower amount applies. Foreign capital gains/source/remittance treatment is not proved merely by an offshore account or transferring sale proceeds.
 
 ## Part-time work final tax ([Income Tax Act art. 90A](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
