@@ -159,14 +159,13 @@ All companies and figures are invented. The executable blocks preserve the origi
 
 ### Example 1: a Malta trading company, profits paid out to a foreign parent
 
-Harbour Trading Ltd is incorporated in Malta, calendar year end, basis year 2026 (YA 2027). Its accounts show profit before tax of EUR 250,000. It booked depreciation of EUR 30,000; tax wear and tear allowances are EUR 24,000. It also booked a general provision for doubtful debts of EUR 5,000, which is not a deduction under art. 14(1)(d). All profit is Malta trading profit, so it goes to the Maltese taxed account.
+Harbour Trading Ltd is incorporated in Malta, calendar year end, basis year 2026 (YA 2027). Its accounts show profit before tax of EUR 250,000. It booked depreciation of EUR 30,000; tax wear and tear allowances are EUR 24,000. It also booked a general provision for doubtful debts of EUR 5,000, which is not a deduction under art. 14(1)(d). Assume the taxable profit is ordinary Malta trading income with no property/final-account allocation; the distributable-profit and dividend-credit reconciliation is held separately below.
 
 Chargeable income is 250,000 + 30,000 - 24,000 + 5,000 = EUR 261,000. Tax at 35% is EUR 91,350.
 
 Its YA 2025 self-assessment (basis year 2024, the last return due before 1 January 2026) showed tax of EUR 80,000, so provisional tax in 2026 is EUR 16,000 on 30 April, EUR 24,000 on 31 August and EUR 40,000 on 21 December. Assuming the benchmark is unchanged, no earlier distribution creates an additional payment and no other special payment rule applies, the balance of EUR 11,350 is due by 30 September 2027. This is the statutory return date; a future electronic filing extension does not extend payment.
 
-Harbour pays all its 2026 profit as a dividend to its sole shareholder, a German company not owned or controlled by anyone ordinarily resident and domiciled in Malta, and registered for refunds. Assume the dividend certificate, actual tax payment, registration, compliance gates and other refund conditions below are satisfied. The shareholder claims six-sevenths of the tax: EUR 78,300. Malta tax left is EUR 13,050, which is 5% of chargeable income. No tax is withheld on the dividend.
-
+Harbour intends to distribute all available 2026 profit to its sole shareholder, a German company not owned or controlled by anyone ordinarily resident and domiciled in Malta, and registered for refunds. **Refund part: arithmetic only, not a usable entitlement calculation.** If the dividend legally carries eligible ACIT of EUR 91,350 and all payment, certificate, registration and compliance conditions are met, six-sevenths is EUR 78,300 and the net is EUR 13,050 (5% of EUR 261,000). Accounting profit is EUR 250,000 while taxable profit is EUR 261,000; those facts alone do not establish that the available dividend carries all EUR 91,350 as ACIT under articles 59 and 42B. **Not yet confirmed:** the distributable amount, tax-account reconciliation, dividend credit/ACIT and actual refund in this example. Check this point with one of our partner accountants. The original executable block below preserves the conditional arithmetic; its refund/net/effective-rate outputs are excluded from usable conclusions until that reconciliation is proved.
 ```oa-check
 name: Malta trading company, basis year 2026, six-sevenths refund
 inputs:
