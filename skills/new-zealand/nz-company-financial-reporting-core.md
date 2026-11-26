@@ -6,8 +6,8 @@ category: financial-statements
 tier: 2
 tax_year: 2026
 tax_year_notes: "Not an income-tax year. Dated by standard and effective_date: Companies Act 1993 Part 11 and Financial Reporting Act 2013 s 45 as amended from 29 September 2025, and XRB A1 2025 Amendments effective 17 July 2026; controls checked on 14 November 2026"
-last_updated: 2026-11-14
-version: 0.2
+last_updated: 2026-11-26
+version: 0.3
 domain: financial-reporting
 standard: "Companies Act 1993 Part 11 subpart 2, Financial Reporting Act 2013 ss 45-47, XRB A1 Application of the Accounting Standards Framework and XRB A2"
 effective_date: 2026-07-17
@@ -18,7 +18,7 @@ depends_on:
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# New Zealand company reporting, audit and annual reports v0.2
+# New Zealand company reporting, audit and annual reports v0.3
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 Written by Ryan Duguid; conformed to the OpenAccountants skill standard on 14 November 2026. **Standard:** Companies Act 1993 Part 11 subpart 2, Financial Reporting Act 2013 ss 45 to 47 (size rule as amended from 29 September 2025, with the former rule saved for periods beginning before that date), XRB A1 and XRB A2. **Effective date of the latest version covered:** 17 July 2026 (XRB A1 2025 Amendments, mandatory for periods beginning on or after 1 January 2027, early adoption permitted). This is not an income-tax year.
@@ -27,7 +27,7 @@ Written by Ryan Duguid; conformed to the OpenAccountants skill standard on 14 No
 
 Prepare selected reporting-readiness working papers for an already selected ordinary domestic company limited by shares. Load [workflow-base](../../foundation/workflow-base.md) and [financial-statements-workflow-base](../../foundation/financial-statements-workflow-base.md). Retain their confirmation sequence, source conditions, refusals, mandatory country slots, outputs and qualified-review controls. This selected core is an incomplete country companion for preparing a set of financial statements.
 
-Confirm that the company is a private sector for-profit entity and establish its actual regime. Companies required to prepare company or group statements under Financial Markets Conduct Act Part 7 subpart 3 or Financial Reporting Act section 55 are outside Companies Act Part 11 subpart 2. Public entities, public benefit entities, overseas companies' New Zealand businesses, listed entities, financial markets participants, climate reporting entities, co-operatives and other special regimes need their own source chain. A domestic subsidiary of an overseas company can remain within this core, but uses the relevant overseas-subsidiary size test. A 'private company' label alone establishes none of these facts. [Companies Act, ss197/198][C197], [FRA, definitions and s45][FRA-CURRENT], [XRB A1, paras2–13][XRB-A1-CURRENT].
+Confirm that the company is a private sector for-profit entity and establish its actual regime. Companies required to prepare company or group statements under Financial Markets Conduct Act Part 7 subpart 3 are outside Companies Act Part 11 subpart 2. Companies Act sections 197 and 208 also refer to former Financial Reporting Act section 55, which was repealed at the close of 1 April 2019. Public entities, public benefit entities, overseas companies' New Zealand businesses, listed entities, financial markets participants, climate reporting entities, co-operatives and other special regimes need their own source chain. A domestic subsidiary of an overseas company can remain within this core, but uses the relevant overseas-subsidiary size test. A 'private company' label alone establishes none of these facts. [Companies Act, ss197/198][C197], [FRA, former s55][FRA55], [FRA, definitions and s45][FRA-CURRENT], [XRB A1, paras2–13][XRB-A1-CURRENT].
 
 The Companies Act consolidation reviewed is dated 1 July 2025. Its live warning list was checked on 14 November 2026 against the retained Deposit Takers, Employment Leave and Address Information amendments. The selected amendment items do not directly amend the reporting provisions used here or the selected subsidiary provisions in sections 5–8. This is a scoped review. Parts of the Deposit Takers Act have commenced; do not describe the whole Act as uncommenced. Revalidate the address-information transition from 18 November 2026 before relying on related company-record or disclosure procedures. [Live warnings][CA-VERSION], [Deposit Takers amendments][B126V5], [commencement][B126V3], [Employment Leave amendments][B126V6], [commencement][B126V4], [Address Act][B126V2], [address regulations][B126V7].
 
@@ -39,7 +39,7 @@ Use redacted summaries and synthetic labels. The professional retains private re
 
 Get these facts before classifying; each one changes the answer.
 
-- Is the company a domestic company limited by shares and a private sector for-profit entity, outside FMC Part 7 subpart 3, FRA s 55 and the other special regimes listed in Scope?
+- Is the company a domestic company limited by shares and a private sector for-profit entity, outside FMC Part 7 subpart 3 and the other special regimes listed in Scope?
 - What are the actual dates of the period under review and of the 2 preceding accounting periods and balance dates (first, short or changed periods included)? Did the period begin before or on or after 29 September 2025?
 - Total assets and revenue, measured on the XRB A2 basis, of the company and its subsidiaries at each of the 2 preceding balance dates and periods; is it a subsidiary of an overseas company?
 - How many holders of voting shares were there at the close of the first day of the period, and who holds them (overseas bodies corporate, their subsidiaries, persons not ordinarily resident)?
@@ -204,7 +204,7 @@ Section 207 itself supplies no separate universal audit deadline. Plan the audit
 
 Confirm that the proposed auditor is qualified **for that kind of entity** under FRA sections 35/36 and is not disqualified. The statutory categories and independence conditions matter; an accounting designation alone is insufficient. Check relevant membership/accreditation, licensing/recognition or registered corporate-audit-firm status and conflicts. FRA section 37 addresses partnership appointment by firm name and prohibits an unqualified partner acting; sections 38/39 address access to records and information/explanations. The professional must confirm the actual auditor and appointment evidence. [FRA, ss34–39][FRA-CURRENT], [s35][FRA35], [s37][FRA37].
 
-Where an enactment requires audit, section 207P governs appointment at the annual meeting in the period and permits directors to appoint the first auditor before the first annual meeting. Automatic reappointment has exceptions and does not apply to the first auditor. Section 207Q gives the Registrar appointment powers after annual-meeting failure or a casual vacancy unfilled for 1 month, and requires company notification within 5 working days after that power becomes exercisable. Section 207R addresses written resignation to the board, shareholder notification as soon as practicable and filling a casual vacancy. Public entities use the Auditor-General route and are outside this core. Full replacement/retirement procedures require further source work; these selected controls are not the entire auditor lifecycle. [Sections207P][C207P], [207Q][C207Q], [207R][C207R], [207T][C207T].
+Where an enactment requires audit, section 207P governs appointment at the annual meeting in the period and permits directors to appoint the first auditor before the first annual meeting. Section 207T excludes a first auditor appointed by the directors under section 207P(4) from automatic reappointment. Other auditors are automatically reappointed at the annual meeting subject to the statutory exceptions. Section 207Q gives the Registrar appointment powers after annual-meeting failure or a casual vacancy unfilled for 1 month, and requires company notification within 5 working days after that power becomes exercisable. Section 207R addresses written resignation to the board, shareholder notification as soon as practicable and filling a casual vacancy. Public entities use the Auditor-General route and are outside this core. Full replacement and retirement procedures require further source work. [Sections207P][C207P], [207Q][C207Q], [207R][C207R], [207T][C207T].
 
 Audit and report must follow applicable auditing/assurance standards; the auditor reports to shareholders. If the auditor's report indicates Companies Act non-compliance, the auditor must send the report and relevant statements to **both** the Registrar and XRB within 7 working days after signing. This is a separate reporting duty, not a general extension to the filing deadline. [Sections207A][C207A], [207B][C207B], [207C][C207C].
 
@@ -216,11 +216,11 @@ For this section, ordinarily resident means domiciled in NZ **or** living in NZ 
 
 Section 207D(2)'s parent exception requires the specified NZ-incorporated/registered parent, GAAP full-group statements covering B, A and all other B subsidiaries completed **and signed within section 202's time**, and a copy of those group statements **and the auditor's report** actually delivered for registration under the Act or lodged under another Act. Do not infer this from section 200/202's preparation exception alone. [Section207D(2)][C207D].
 
-Where section 207E applies, deliver for registration within 5 months after balance date the statements completed under sections 201/202/204, **if any**, and auditor's report, **if any**, with any prescribed fee. Resolve the actual document set and filing mechanics before claiming readiness, especially where a parent preparation exception applies but the parent registration exception is not evidenced. No generic requirement to create an otherwise exempt standalone statement is inferred here. [Section207E][C207E].
+Where section 207E applies, deliver for registration within 5 months after balance date the statements completed under sections 201/202/204, **if any**, and the auditor's report, **if any**. Pay any prescribed registration fee when the statements are registered. Resolve the actual document set and filing mechanics before claiming readiness, especially where a parent preparation exception applies but the parent registration exception is not evidenced. No generic requirement to create an otherwise exempt standalone statement is inferred here. [Section207E][C207E].
 
 ### Annual report to shareholders
 
-Section 208 has its own gate: large company, public entity, company subject to the specified FMC/FRA reporting, 10+ shareholders without a valid relevant section 207I opt-out or fewer than 10 with a relevant section 207K opt-in. The board must prepare the annual report within 5 months after balance date. It is distinct from the Companies Office annual return and from a copy of financial statements alone. [Section208][C208].
+Section 208 has its own gate: large company, public entity, company subject to reporting under Financial Markets Conduct Act Part 7, 10+ shareholders without a valid relevant section 207I opt-out or fewer than 10 with a relevant section 207K opt-in. The board must prepare the annual report within 5 months after balance date. It is distinct from the Companies Office annual return and from a copy of financial statements alone. [Section208][C208], [FRA, former s55][FRA55].
 
 For a **large company**, section 208(4) removes the annual-report preparation duty only where no company/group statements are required under Part 11, FMC Part 7 **or any other enactment**, and holders of at least **95% of voting shares** agree for that period. A parent preparation exception alone, an audit opt-out or 95% of votes cast is insufficient. [Section208(4)][C208].
 
@@ -249,7 +249,7 @@ A shareholder may give/revoke a written document waiver, but purporting to waive
 
 ### Tax statements, records and calendar
 
-If no company/group statements are prepared under the Companies Act or FMC Part 7 but statements are prepared under/for Inland Revenue Acts, a shareholder may request them in writing at any time. Section 207F requires a free copy within **10 working days**, with auditor's report if any. This is not an audit-request power under section 207G. Maintain section 194 accounting records and separately establish tax-statement obligations, which this guide does not compute. [Sections207F][C207F], [207G][C207G], [194][C194], [195][C195].
+If no company/group statements are prepared under the Companies Act or FMC Part 7 but statements are prepared under/for Inland Revenue Acts, a shareholder may request them in writing at any time. Section 207F requires a free copy within **10 working days of receiving the request**, with the auditor's report if any. Maintain section 194 accounting records and separately establish tax-statement obligations. Section 207G sets financial reporting offences. [Sections207F][C207F], [207G][C207G], [194][C194], [195][C195].
 
 | Event | Selected deadline/control | Evidence to retain |
 |---|---|---|
@@ -259,7 +259,7 @@ If no company/group statements are prepared under the Companies Act or FMC Part 
 | Annual-report preparation | Within 5 months after balance date | Written/dated final report and required board signatures |
 | Shareholder report/notice | At least 20 working days before annual meeting, or verified no-meeting route within 20 working days after preparation | Actual event dates, calendar, recipients, dispatch and valid waiver evidence |
 | Notice recipient's copy request | Within 15 working days after receipt | Receipt/request dates; free copy sent as soon as practicable |
-| Tax statements under section 207F | Within 10 working days after written request | Actual request, free copy and delivery evidence |
+| Tax statements under section 207F | Within 10 working days after receiving the written request | Actual request, receipt date, free copy and delivery evidence |
 | Auditor's non-compliance report under section 207C | Within 7 working days after report signing to both bodies | Auditor's report, statements and both delivery records |
 
 The calendar does not replace eligibility, document or authority checks. Apply actual statutory time-calculation rules, holidays and service facts. No deadline is certified from the synthetic offsets below.
@@ -288,7 +288,7 @@ This table gathers the selected figures; apply their full conditions and period 
 | Annual-report waiver/permitted omissions | At least 95% voting shares, with the separate statutory conditions | [Sections208(4)](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321105/), [211(3)](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321118/) |
 | Employee remuneration/benefits disclosure | At least $100,000 per annum, in $10,000 bands, excluding directors from that employee count | [Section211(1)(g)](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321118/) |
 | Shareholder distribution/copy request | 20-working-day dispatch rules; 15-working-day request window; fulfil timely request as soon as practicable | [Sections209](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321107/), [209A](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321111/) |
-| Tax statements on written request | Free within 10 working days, report if any | [Section207F](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041577/) |
+| Tax statements on written request | Free within 10 working days after receiving the request, with the auditor's report if any | [Section207F](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041577/) |
 | XRB A1 June2026 amendment | Effective 17 July 2026; mandatory periods beginning on/after 1 January 2027, qualified early adoption | [XRB2026/55](https://www.xrb.govt.nz/dmsdocument/6091/) |
 
 ## Worked cases
@@ -552,7 +552,7 @@ tolerance: 0
 
 ### Case 15: tax statements and records remain after a reporting opt-out
 
-Assume no Companies Act/FMC statements are prepared, but tax statements are prepared under/for Inland Revenue Acts. A shareholder's written section 207F request requires a free copy within 10 working days, with an auditor's report if any. A reporting opt-out does not eliminate this access duty or section 194 records. A Companies Office annual-return obligation must be checked separately, not marked satisfied by tax-statement delivery.
+Assume no Companies Act/FMC statements are prepared, but tax statements are prepared under/for Inland Revenue Acts. The company must provide a free copy within 10 working days of receiving the shareholder's written section 207F request, with the auditor's report if any. A reporting opt-out does not eliminate this access duty or section 194 records. A Companies Office annual-return obligation must be checked separately, not marked satisfied by tax-statement delivery.
 
 ## When to refuse or refer
 
@@ -598,6 +598,7 @@ The author (Ryan Duguid) checked every source on 14 November 2026. The conformer
 | --- | --- | --- | --- |
 | C197: Companies Act 1993, s 197. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320884/ | Scope, Preparation and parent-group exceptions | 2026-11-14 |
 | FRA-CURRENT: Financial Reporting Act 2013 (consolidation 5 April 2026). Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2013/101/en/latest/ | Scope, Accounting periods, subsidiaries and statutory size, Audit, auditor and report controls | 2026-11-14 |
+| FRA55: Financial Reporting Act 2013, former section 55 | https://www.legislation.govt.nz/act/public/2013/101/en/latest/sections/DLM4632981/ | Repeal of the former reporting provision | 2026-11-23 |
 | XRB-A1-CURRENT: XRB A1, February 2025 compilation. Read for the provision as cited (author's reading) | https://www.xrb.govt.nz/dmsdocument/5470/ | Scope, XRB accounting tier is a separate decision | 2026-11-14 |
 | CA-VERSION: Companies Act 1993, version and warnings tab. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320887/?active_tab=version | Scope | 2026-11-14 |
 | B126V5: Deposit Takers Act 2023, amendments to the Companies Act. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2023/35/en/latest/sections/LMS469579/ | Scope | 2026-11-14 |
@@ -669,6 +670,7 @@ Not yet confirmed: the Companies Act 1993 and Financial Reporting Act 2013 rows 
 
 [C197]: https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320884/
 [FRA-CURRENT]: https://www.legislation.govt.nz/act/public/2013/101/en/latest/
+[FRA55]: https://www.legislation.govt.nz/act/public/2013/101/en/latest/sections/DLM4632981/
 [XRB-A1-CURRENT]: https://www.xrb.govt.nz/dmsdocument/5470/
 [CA-VERSION]: https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320887/?active_tab=version
 [B126V5]: https://www.legislation.govt.nz/act/public/2023/35/en/latest/sections/LMS469579/
