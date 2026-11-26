@@ -50,7 +50,7 @@ Ordinary calendar-year rules, after checking the zero-tax and farming/fishing ex
 | Underpayment rate, October–December 2026 | 7% | [IRS quarterly interest rates](https://www.irs.gov/payments/quarterly-interest-rates) |
 | Historical individual underpayment rates | All four quarters of 2025: 7% | [IRS quarterly interest rates](https://www.irs.gov/payments/quarterly-interest-rates) |
 
-## The base and required annual payment
+## The base
 
 1. Use the **2026 Estimated Tax Worksheet**: expected AGI after adjustments; deductions on lines 2a–2d, including QBI and eligible Schedule 1-A deductions; tax on line 4, AMT and any other line 6 taxes; subtract line 7 credits; add SE tax on line 9 and permitted line 10 taxes; subtract the refundable credits on line 11b to reach line 11c. Qualified dividends, capital gains and foreign earned income require the special tax worksheets. Line 10 has exclusions; do not include every Schedule 2 tax automatically. Household employment taxes are included only if withholding exists or estimates would otherwise be required. Use the line 10 instructions for the complete exclusions. [1040-ES, worksheet and lines 4/10 instructions](https://www.irs.gov/pub/irs-pdf/f1040es.pdf).
 2. **The zero-tax exception: no payments are required if the person was a US citizen or resident alien for all of 2025, the 2025 tax year was 12 months, and they had no tax liability for 2025** (total tax zero or no return required). Merely not filing a return does not establish this exception. [1040-ES, Exception](https://www.irs.gov/pub/irs-pdf/f1040es.pdf).
@@ -95,7 +95,7 @@ The 2025 Form 2210 was the edition read. It lets the IRS compute the penalty in 
 
 The IRS decides waivers for casualty/disaster/unusual circumstances where imposing the addition would be inequitable, or retirement after reaching age 62/disability in 2025 or 2026 with reasonable cause and no wilful neglect. A waiver is not automatic. For the request and documentation: **Check this point with one of our partner accountants.** [26 U.S.C. 6654(e)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm).
 
-## Cross-border points and referrals
+## Cross-border points
 
 | Code/topic | Action |
 | --- | --- |
@@ -117,6 +117,8 @@ IRS, INTERNAL REVENUE SERVICE, IRS DIRECT PAY, EFTPS, ELECTRONIC FED TAX, US TRE
 Confirmed personal federal income-tax payments are not Schedule C deductions. [IRS Pub. 334, Taxes](https://www.irs.gov/publications/p334).
 
 ## Worked cases
+
+## Two worked examples that recompute
 
 Unless a case says otherwise, the supplied “tax” is already figured on the applicable estimated-tax worksheet, the prior return was filed for twelve months and the taxpayer qualifies for the ordinary individual rules. A hypothetical payment scheduled after the read date is an arithmetic scenario, not evidence it occurred.
 
@@ -301,18 +303,20 @@ Obtain the immediately preceding return and transcript where needed (filed statu
 
 Before delivery, check each exception, the year of every input and rate, both available annual bases, timely coverage of each installment, withholding allocation, annualization/recapture where relevant, and any state referral. Never schedule payments, recommend deliberate underpayment or apply a discretionary waiver yourself. Label outputs as estimates until professional review.
 
-**Circular 230 §10.37:** this computational Guide uses the stated facts and assumptions. Consider all relevant facts, resolve missing or conflicting inputs, and obtain qualified professional review before filing or acting; no filing position or penalty protection is promised.
+**[Circular 230 §10.37](https://www.ecfr.gov/current/title-31/subtitle-A/part-10/subpart-B/section-10.37):** this computational Guide uses the stated facts and assumptions. Consider all relevant facts, resolve missing or conflicting inputs, and obtain qualified professional review before filing or acting; no filing position or penalty protection is promised.
 
 ## Sources
 
 | Official source and passages actually read | Read date |
 | --- | --- |
-| [Form 1040-ES (2026)](https://www.irs.gov/pub/irs-pdf/f1040es.pdf): General Rule, exceptions, higher income, withholding, special taxes, line 12b reductions/split, worksheet, dates, farming/fishing, fiscal years, payment methods/postmark and section 1062 boundary | 2026-11-26 |
-| [Pub. 505 (2026)](https://www.irs.gov/publications/p505): Married Taxpayers, annualization, Worksheets 2-9 and 2-12 including catch-up and recapture | 2026-11-26 |
-| [Form 1040-ES (2025)](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf): historical general/zero-tax/farming rules, dates and filing alternatives | 2026-11-26 |
-| [2025 Form 2210](https://www.irs.gov/pub/irs-prior/f2210--2025.pdf) and [instructions](https://www.irs.gov/instructions/i2210): flowchart, boxes, annualization, waiver, disaster, overpayment funding dates, oldest-first payment allocation and day-count worksheet. Final 2026 filing details remain on hold | 2026-11-26 |
-| [IRS quarterly rates](https://www.irs.gov/payments/quarterly-interest-rates): 2025 and 2026 individual underpayment rows. No 2027 rate relied on | 2026-11-26 |
-| [26 U.S.C. 6654](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm): (b)–(i), checked against operative 2026 IRS instructions above | 2026-11-26 |
-| [26 U.S.C. 6621](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap67-subchapC-sec6621.htm): (a)(2) and (b)(2)(B); [6622(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap67-subchapC-sec6622.htm): simple-interest exception | 2026-11-26 |
-| [26 U.S.C. 6072(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm) and [IRS extensions](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return): ordinary filing date and payment boundary | 2026-11-26 |
-| [Pub. 334, Taxes](https://www.irs.gov/publications/p334): no federal income-tax deduction; exact completed quote reused from `us-sole-prop-bookkeeping` proof | 2026-11-26 |
+| Read for: [Form 1040-ES (2026)](https://www.irs.gov/pub/irs-pdf/f1040es.pdf): General Rule, exceptions, higher income, withholding, special taxes, line 12b reductions/split, worksheet, dates, farming/fishing, fiscal years, payment methods/postmark and section 1062 boundary | 2026-11-26 |
+| Read for: [Pub. 505 (2026)](https://www.irs.gov/publications/p505): Married Taxpayers, annualization, Worksheets 2-9 and 2-12 including catch-up and recapture | 2026-11-26 |
+| Read for: [Form 1040-ES (2025)](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf): historical general/zero-tax/farming rules, dates and filing alternatives | 2026-11-26 |
+| Read for: [2025 Form 2210](https://www.irs.gov/pub/irs-prior/f2210--2025.pdf) and [instructions](https://www.irs.gov/instructions/i2210): flowchart, boxes, annualization, waiver, disaster, overpayment funding dates, oldest-first payment allocation and day-count worksheet. Final 2026 filing details remain on hold | 2026-11-26 |
+| Read for: [IRS quarterly rates](https://www.irs.gov/payments/quarterly-interest-rates): 2025 and 2026 individual underpayment rows. No 2027 rate relied on | 2026-11-26 |
+| Read for: [26 U.S.C. 6654](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm): (b)–(i), checked against operative 2026 IRS instructions above | 2026-11-26 |
+| Read for: [26 U.S.C. 6621](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap67-subchapC-sec6621.htm): (a)(2) and (b)(2)(B); [6622(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap67-subchapC-sec6622.htm): simple-interest exception | 2026-11-26 |
+| Read for: [26 U.S.C. 6072(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm) and [IRS extensions](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return): ordinary filing date and payment boundary | 2026-11-26 |
+| Read for: [Pub. 334, Taxes](https://www.irs.gov/publications/p334): no federal income-tax deduction; exact completed quote reused from `us-sole-prop-bookkeeping` proof | 2026-11-26 |
+
+Not yet confirmed: 2027 penalty rates and final 2026 Form 2210 filing details are not proved here. No usable result is given for missing case inputs or the referred special rules; use the explicit holds and partner-accountant referrals above.
