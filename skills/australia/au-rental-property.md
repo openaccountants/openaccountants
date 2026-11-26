@@ -36,7 +36,6 @@ Australia Rental Property -- Income & Deductions Skill v1.9
 | Tax authority | Australian Taxation Office (ATO) |
 | Filing portal | myTax / tax agent lodgement (Online Services for Agents) |
 | Filing deadline | Usually 31 October for self-lodgement, moving to the next business day when 31 October falls on a weekend. Check the applicable year's deadline and any registered-agent schedule. [ATO due dates](https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return) |
-| Skill version | 1.9 |
 
 ### Select the income year before calculating
 
@@ -59,10 +58,10 @@ Section 2.8 covers events in 2026-27; use `au-capital-gains.md` for later events
 | Medicare levy | 2% of taxable income |
 | Medicare levy surcharge (no PHI) | 1%, 1.25% or 1.5% where income for MLS purposes exceeds $105,000 single or $210,000 family in 2026-27 ($101,000 and $202,000 in 2025-26) |
 | CGT discount (eligible resident individuals, 12+ months) | 50% for CGT events before 1 July 2027; residency and other conditions apply. See Section 2.8 and [ITAA 1997, s 115-100](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html) |
-| Div 43 rate (ordinary residential) | Generally 2.5% of eligible construction expenditure from 16 September 1987. Check the historical contract and eligible build-to-rent exceptions. |
-| Div 43 rate (qualifying short-term traveller accommodation) | 4% for eligible capital works begun from 27 February 1992. Apply Section 2.6 for earlier works and the qualifying-use test. |
+| Div 43 rate (ordinary residential) | Generally 2.5% of eligible construction expenditure from 16 September 1987. Check the historical contract and eligible build-to-rent exceptions. [ATO, capital works rates](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/capital-expenses/work-out-your-capital-works-deductions) |
+| Div 43 rate (qualifying short-term traveller accommodation) | 4% for eligible capital works begun from 27 February 1992. Apply Section 2.6 for earlier works and the qualifying-use test. [ATO, capital works rates](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/capital-expenses/work-out-your-capital-works-deductions) |
 | Low-value asset pool threshold | Strictly less than $1,000; low-cost and low-value tests differ. [ITAA 1997, s 40-425](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html) |
-| Immediate deduction threshold (Div 40) | $300 or less for a qualifying non-business asset. Check the main use and the set and identical-asset rules in s 40-80(2). |
+| Immediate deduction threshold (Div 40) | $300 or less for a qualifying non-business asset. Check the main use and the set and identical-asset rules in s 40-80(2). [ATO, Rental properties 2026, rental expenses](https://www.ato.gov.au/forms-and-instructions/rental-properties-2026/rental-expenses) |
 
 ### Individual Marginal Tax Rates (2026-27)
 
@@ -327,11 +326,11 @@ expected:
 
 | Construction Date | Rate | Notes |
 | --- | --- | --- |
-| Before 18 July 1985 | Ordinary residential buildings do not qualify | Eligible short-term traveller buildings could qualify from 22 August 1979 and eligible non-residential buildings from 20 July 1982. Check the applicable rate and remaining period. |
-| 18 July 1985 to 15 September 1987 | 4% | Eligible buildings. Check whether the 25-year deduction period has expired. |
-| From 16 September 1987 | Generally 2.5% | Ordinary residential buildings. Check qualifying earlier contracts and the separate 4% rate for eligible build-to-rent developments. |
-| 16 September 1987 to 26 February 1992 | Generally 2.5% | Qualifying short-term traveller accommodation. Certain pre-16 September 1987 contracts retain 4%. |
-| From 27 February 1992 | 4% for qualifying use | Short-term traveller accommodation meeting the statutory 4% use test, which can require at least 10 qualifying rooms or apartments. |
+| Before 18 July 1985 | Ordinary residential buildings do not qualify | Eligible short-term traveller buildings could qualify from 22 August 1979 and eligible non-residential buildings from 20 July 1982. Check the applicable rate and remaining period. [ATO](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/capital-expenses/work-out-your-capital-works-deductions) |
+| 18 July 1985 to 15 September 1987 | 4% | Eligible buildings. Check whether the 25-year deduction period has expired. [ATO](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/capital-expenses/work-out-your-capital-works-deductions) |
+| From 16 September 1987 | Generally 2.5% | Ordinary residential buildings. Check qualifying earlier contracts and the separate 4% rate for eligible build-to-rent developments. [ATO](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/capital-expenses/work-out-your-capital-works-deductions) |
+| 16 September 1987 to 26 February 1992 | Generally 2.5% | Qualifying short-term traveller accommodation. Certain pre-16 September 1987 contracts retain 4%. [ITAA 1997, s 43-25](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
+| From 27 February 1992 | 4% for qualifying use | Short-term traveller accommodation meeting the statutory 4% use test, which can require at least 10 qualifying rooms or apartments. [ITAA 1997, ss 43-25, 43-145 and 43-152](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
 
 [ATO, capital works rates by start date and building use](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/capital-expenses/work-out-your-capital-works-deductions). [ITAA 1997, ss 43-25, 43-145 and 43-152](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html).
 
