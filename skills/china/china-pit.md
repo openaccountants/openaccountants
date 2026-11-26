@@ -1,11 +1,11 @@
 ---
 name: china-pit
 description: Use this skill whenever asked to prepare, review, or classify transactions for China Personal Income Tax (个人所得税 / IIT) in tax year 2026, the annual comprehensive income settlement (汇算清缴), Chinese tax brackets or the special additional deductions (专项附加扣除). Trigger on phrases like "个人所得税", "IIT China", "综合所得", "汇算清缴", "专项附加扣除", "China income tax", or any PRC personal income tax question. It gives the 2026 comprehensive and business income scales, the 60,000 yuan basic deduction, the special additional deduction amounts and the cumulative withholding and annual settlement method, and routes depth to cn-iit. Built from the law, not reviewed by an accountant.
-version: "2.0"
+version: "2.1"
 jurisdiction: CN
 tax_year: 2026
 tax_year_notes: "Calendar tax year 2026 (1 January to 31 December 2026), settled 1 March to 30 June 2027. The 2025 settlement window (1 March to 30 June 2026, STA notice 2026 No. 1) is closed."
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 depends_on:
   - workflow-base
 category: international
@@ -55,7 +55,7 @@ All figures are for tax year 2026. Conditions sit in the third column.
 | Business income, band 3 | 20% | Over 90,000 to 300,000 yuan | same |
 | Business income, band 4 | 30% | Over 300,000 to 500,000 yuan | same |
 | Business income, band 5 | 35% | Over 500,000 yuan | same |
-| Interest, dividends, rental, property transfer, incidental income | 20% flat | IIT Law art. 3(3) | same |
+| Interest, dividends, rental, property transfer, incidental income | 20% flat | Ordinary rate under IIT Law art. 3(3). Individuals letting housing qualify for 10% under Cai Shui 2008 No. 24. | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203346/content.html |
 | Basic deduction (基本减除费用) | 六万元 (sixty thousand yuan) a year | Resident individual, comprehensive income (art. 6(1)) | same |
 | Labour remuneration, author's remuneration, royalties: income amount | Receipts less 20% | Annual computation; author's remuneration then counted at 百分之七十 (seventy per cent) (art. 6) | same |
 | Property rental expense deduction | 800 yuan, or 20% | 800 yuan if each receipt is 四千元 (four thousand yuan) or less; 20% if more (art. 6(4)) | same |
@@ -63,7 +63,7 @@ All figures are for tax year 2026. Conditions sit in the third column.
 | Residence test | 183 days | A person without domicile is resident if in China 183 days or more in the tax year (art. 1) | same |
 | Children's education (子女教育) | 2,000 yuan a month per child | From 1 January 2023; full-time education from age 3 to doctorate; one parent takes the whole amount or each parent half (split rule from the 2018 Interim Measures, not on this notice) | https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202308/t20230831_3905100.htm |
 | Infant care (3岁以下婴幼儿照护) | 2,000 yuan a month per child | Child under 3; same split options | same |
-| Elderly care (赡养老人) | 3,000 yuan a month | Only child takes all 3,000; siblings share 3,000 with at most 1,500 each | same |
+| Elderly care (赡养老人) | 3,000 yuan a month | From the month a qualifying dependant turns 60. An only child claims 3,000. Siblings share 3,000, capped at 1,500 each | same |
 | Continuing education, degree (学历继续教育) | 400 yuan a month | During the degree course, at most 48 months | https://hainan.chinatax.gov.cn/xxgk_6_1/22110230.html |
 | Continuing education, professional certificate | 3,600 yuan | In the year the certificate is obtained | same |
 | Serious illness medical (大病医疗) | Actual cost above 15,000 yuan, up to 80,000 yuan | Self-paid part within the basic medical insurance list, claimed at the annual settlement | same |
@@ -87,7 +87,7 @@ Business income quick deductions (computed from the Table 2 bands, not printed i
 1. Residence: domicile in China, or days in mainland China in 2026 (183-day test). Non-residents go to `cn-iit`.
 2. Each income type and amount for 2026, by the nine categories, and who paid it (withholding agent or not).
 3. Social insurance and housing fund actually withheld (专项扣除), from the payslips.
-4. Facts for each special additional deduction: children and ages, parents over 60 and siblings, first home loan, rent and city, continuing education, large medical costs, and any split agreed with a spouse or siblings.
+4. Facts for each special additional deduction: children and ages, parents aged 60 or older, qualifying grandparents and siblings, first home loan, rent and city, continuing education, large medical costs, and any split agreed with a spouse or siblings.
 5. Tax prepaid or withheld during 2026, from the IIT APP income record.
 6. Any foreign income, business income, equity incentive or annual bonus (route to `cn-iit`).
 
@@ -100,15 +100,15 @@ Business income quick deductions (computed from the Table 2 bands, not printed i
 5. **Less other deductions:** commercial health insurance (2,400 yuan a year cap), personal pension (12,000 yuan a year cap), and other items the law allows.
 6. **Less charitable donations,** up to 30% of declared taxable income (or in full where the State Council allows).
 7. **Annual taxable income (全年应纳税所得额).**
-8. **Tax** = taxable income times the band rate, less the quick deduction (comprehensive income table).
+8. **Actual tax** = taxable income times the band rate, less the quick deduction and any applicable tax relief (STA Order 57, art. 3).
 9. **Less tax prepaid or withheld** during the year (已预缴税额).
 10. **Tax payable or refund (补税/退税).** Check the settlement exemption before filing.
 
-**Cumulative withholding (累计预扣预缴).** Employers withhold each month on cumulative wages to date, less cumulative basic deduction (5,000 yuan a month), cumulative special and special additional deductions; they apply the comprehensive table to the cumulative amount and subtract tax already withheld in earlier months.
+**Cumulative withholding (累计预扣预缴).** Use the cumulative withholding table for wages at that employer. Deduct cumulative exempt income, the basic deduction (ordinarily 5,000 yuan per month employed at that employer in the year), special and special additional deductions and other lawful deductions. Subtract any cumulative tax relief and tax already withheld. No payroll refund is due if this month's result is negative. Check the special rules for first wage income in the year and qualifying low-wage employees who remain with the same employer.
 
 **Labour remuneration prepayment.** Per payment: deduct 800 yuan (payment of 4,000 yuan or less) or 20% (more); apply the 20%/30%/40% prepayment table. The prepayment is credited at the annual settlement.
 
-**Business income** (individual businesses, sole proprietorship and partnership investors): annual profit less allowable costs, losses and, for an individual without comprehensive income, the 60,000 yuan basic deduction and the special and special additional deductions; apply the 5% to 35% table. Preferential halving for individual businesses and filing detail: `cn-iit`.
+**Business income** (individual businesses, sole proprietorship and partnership investors): annual profit less allowable costs, losses and the permitted deductions. An individual without comprehensive income can claim the 60,000 yuan basic deduction, special and special additional deductions and other lawful deductions against business income. An individual with both comprehensive and business income can claim these deductions against either category once. Apply the 5% to 35% table. Preferential halving for individual businesses and filing detail: `cn-iit`.
 
 ### Nine categories of taxable income
 
@@ -120,7 +120,7 @@ Business income quick deductions (computed from the Table 2 bands, not printed i
 | 4 | 特许权使用费所得 | Royalties | Comprehensive |
 | 5 | 经营所得 | Business income | Separate (5% to 35% bands) |
 | 6 | 利息、股息、红利所得 | Interest, dividends | 20% flat |
-| 7 | 财产租赁所得 | Property rental | 20% flat |
+| 7 | 财产租赁所得 | Property rental | Ordinary rate 20%. Individuals letting housing qualify for the reduced 10% rate. |
 | 8 | 财产转让所得 | Property transfer | 20% flat on gain (proceeds less cost and reasonable expenses) |
 | 9 | 偶然所得 | Incidental income | 20% flat (lottery winnings and the like) |
 
@@ -128,7 +128,7 @@ Business income quick deductions (computed from the Table 2 bands, not printed i
 
 | Situation | Treatment |
 | --- | --- |
-| Income category ambiguous | Classify as the higher-rate category and flag |
+| Income category ambiguous | Apply the statutory category definitions. If the facts still leave the category unclear, flag it and seek a tax authority determination under article 6 of the implementing regulation. |
 | Special additional deduction eligibility unclear | Do not claim; flag for the reviewer |
 | Foreign income of a resident | Include; credit foreign tax up to the PRC tax on it (art. 7); declare 1 March to 30 June of the next year; route to `cn-iit` |
 | Stock options, RSUs | Treat as wages on exercise or vesting under the equity rules; route to `cn-iit` |
@@ -173,7 +173,7 @@ expected:
   refund: 620
 ```
 
-**Case 2: decision, which parent claims the child deduction.** Parent A has taxable income of 200,000 yuan before the child deduction (20% band); parent B has 50,000 yuan (10% band). One child: 24,000 yuan a year. Option 1: A claims 100%. Option 2: each claims 50%. Option 1: A pays 176,000 x 20% less 16,920 = 18,280; B pays 50,000 x 10% less 2,520 = 2,480; total 20,760. Option 2: A pays 188,000 x 20% less 16,920 = 20,680; B pays 38,000 x 10% less 2,520 = 1,280; total 21,960. A claiming 100% saves the household 1,200 yuan (12,000 x the 10-point band gap). The deciding figure is the difference in marginal band; if both are in the same band, the split does not matter.
+**Case 2: decision, which parent claims the child deduction.** Parent A has taxable income of 200,000 yuan before the child deduction (20% band); parent B has 50,000 yuan (10% band). One child: 24,000 yuan a year. Option 1: A claims 100%. Option 2: each claims 50%. Option 1: A pays 176,000 x 20% less 16,920 = 18,280; B pays 50,000 x 10% less 2,520 = 2,480; total 20,760. Option 2: A pays 188,000 x 20% less 16,920 = 20,680; B pays 38,000 x 10% less 2,520 = 1,280; total 21,960. A claiming 100% saves the household 1,200 yuan (12,000 x the 10-point band gap). Compare total household tax after each permitted allocation. A deduction can move taxable income into a lower band even when both parents start in the same band. If both parents get the same rate across the entire deduction under all allocations, the split gives the same total tax.
 
 ```oa-check
 name: CN 2026 child deduction split, higher earner claims all
@@ -211,7 +211,7 @@ expected:
 | Tax due exceeds prepayments | File and pay between 1 March and 30 June 2027 for tax year 2026, unless the settlement exemption applies |
 | Prepayments exceed tax due (退税) | File between 1 March and 30 June 2027 to claim the refund |
 | Settlement exemption | Comprehensive income up to 120,000 yuan with tax to pay, or tax to pay up to 400 yuan: no settlement needed (2024 to 2027), unless a withholding agent failed to withhold |
-| Single employer, withholding correct, no refund wanted | No settlement needed |
+| Legally prepaid tax equals final tax, or a qualifying refund is declined | No settlement needed. Check for omitted income or incorrect withholding before applying this rule. |
 | Foreign income | Declare 1 March to 30 June of the next year |
 | Income with no withholding agent | File by the 15th of the month after receipt |
 | Business income | Prepay within 15 days after each month or quarter; annual return by 31 March of the next year |
@@ -226,7 +226,7 @@ The STA opens an appointment window for early March each year (for the 2025 year
 
 ### Penalties and interest
 
-Late payment: surcharge of 0.05% a day from the due date (Tax Collection Law art. 32). Late filing, false filing and non-payment carry fines under Tax Collection Law arts. 62 to 64 and 68; route detail to `cn-iit`.
+A late payment surcharge of 0.05% a day applies from the day after the applicable payment deadline through the actual payment date (Tax Collection Law art. 32 and implementing rules art. 75). Late filing, false filing and non-payment carry fines under Tax Collection Law arts. 62 to 64 and 68; route detail to `cn-iit`.
 
 ## Completion checklist
 
@@ -252,7 +252,14 @@ Late payment: surcharge of 0.05% a day from the due date (Tax Collection Law art
 | Commercial health insurance notice, STA Guangdong. Read for the 2,400 yuan a year cap | https://guangdong.chinatax.gov.cn/gdsw/zjfg/2017-05/03/content_f7a7387e2ba441a995345e7c0d60e44f.shtml | 2026-11-14 |
 | Personal pension, MOF and STA announcement 2024 No. 21. Read for the 12,000 yuan a year cap | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202412/t474540.html | 2026-11-14 |
 | Tax Collection Administration Law, STA Shanghai. Read for art. 32 surcharge and arts. 62 to 64, 68 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-11-14 |
+| STA Order 57, arts. 3, 6 and 10. Annual computation, settlement and deductions with both income types | https://shanghai.chinatax.gov.cn/bstax/ztzl/yshj/ldjj/202512/t478622.html | 2026-11-27 |
+| IIT implementing regulation, art. 6. Statutory categories and ambiguous income | https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c3963364/content.html | 2026-11-27 |
+| STA Shanghai elderly-care guidance. Eligibility begins at age 60 | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202602/t479540.html | 2026-11-27 |
+| Tax Collection Law implementing rules, art. 75. Start and end of late payment surcharge | https://12366.chinatax.gov.cn/bzds/116/116-5-2.html | 2026-11-27 |
+| Cai Shui 2008 No. 24. Reduced rate for individuals letting housing | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203346/content.html | 2026-11-27 |
+| STA 2020 No. 13. Ordinary withholding variation for first wages in the year | https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194937/content.html | 2026-11-27 |
+| STA explanation of 2020 No. 19. Conditions for the upfront basic deduction in payroll | https://fgk.chinatax.gov.cn/zcfgk/c100015/c5193920/content.html | 2026-11-27 |
 
-Not yet confirmed: the 2026 settlement window dates and appointment schedule (the STA publishes them in early 2027; the law fixes 1 March to 30 June); a specific STA rule on crypto gains (none read; the 20% property transfer position is a conservative default, not a confirmed rule).
+The statutory 2026 settlement window is 1 March to 30 June 2027. The STA appointment schedule for that window and a specific rule on crypto gains remain unconfirmed. Refer cryptocurrency gains for review before computing tax.
 
 *OpenAccountants: open-source accounting skills for AI. This is not tax advice. All outputs must be reviewed by a qualified professional before filing.*
