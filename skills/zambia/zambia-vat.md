@@ -4,15 +4,15 @@ description: "Use this skill to prepare, review or classify transactions for a Z
 jurisdiction: ZM
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
-version: 2.2
+last_updated: 2026-11-26
+version: 2.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 type: situation-rules
 ---
 
-# Zambia VAT Return Skill v2.2
+# Zambia VAT Return Skill v2.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -61,7 +61,7 @@ Any supply not listed in the Exemption or Zero-Rating Orders is standard rated. 
 | CUSTOMS | Check for import VAT | |
 | NAPSA | EXCLUDE | Social security |
 | ZESCO | Domestic 16% | Electricity |
-| LWSC, SWSC | Domestic 16% | Water |
+| LWSC, SWSC | Zero-rated 0% | Mains water and sewerage from 1 January 2026 (SI No. 95 of 2025); sewerage pump-out services 16% |
 | MTN ZM, AIRTEL ZM, ZAMTEL | Domestic 16% | Telecoms; input tax blocked except carrier and hotel resale |
 | GOOGLE, MICROSOFT, AWS | Reverse charge 16% | Non-resident |
 
@@ -135,5 +135,6 @@ Minimum input: a bank statement.
 | ZRA Guide to Filing Tax Returns (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Guide-to-Filing-Tax-Returns.pdf | 2026-11-01 |
 | ZRA leaflet Post-Registration Requirements (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Post-Registration-Requirements.pdf | 2026-11-01 |
 | ZRA Smart Invoice FAQs (2026), scope questions; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/08/Smart-Invoice-FAQs.pdf | 2026-11-01 |
+| ZRA Practice Note No. 1 of 2026, paras 28.3 and 30.2 (SI Nos. 95 and 94 of 2025: mains water and sewerage zero-rated and removed from exemption from 1 January 2026) | https://www.zra.org.zm/download/practice-note-no-1-of-2026/ | 2026-11-26 |
 
-Not yet confirmed: the VAT Act and the Exemption and Zero-Rating Orders themselves were not opened; ZRA leaflets stand in, so old claims that basic foodstuffs, agricultural inputs, medical equipment and domestic electricity are zero rated, and that financial, residential rental, public transport, postal and domestic water supplies are exempt, are unconfirmed; bad debt relief after 12 months; old blocked items club subscriptions and invoices without TPIN; refund after 4 months of excess credits; old box numbers 1 to 20 (replaced, only lines 8 to 11 read here); whether the K800,000 annual and K200,000 quarterly tests apply together; withholding VAT at 100% of VAT with a return credit, and the date of suspension; old filing penalty of 1,000 units; 5% a month late payment charge (the old file figure conflicts with the leaflet).
+Not yet confirmed: the VAT Act and the Exemption and Zero-Rating Orders themselves were not opened; ZRA leaflets stand in, so old claims that basic foodstuffs, agricultural inputs, medical equipment and domestic electricity are zero rated, and that financial, residential rental, public transport and postal supplies are exempt, are unconfirmed (mains water and sewerage left the exemption and became zero-rated on 1 January 2026, SI Nos. 94 and 95 of 2025); bad debt relief after 12 months; old blocked items club subscriptions and invoices without TPIN; refund after 4 months of excess credits; old box numbers 1 to 20 (replaced, only lines 8 to 11 read here); whether the K800,000 annual and K200,000 quarterly tests apply together; withholding VAT at 100% of VAT with a return credit, and the date of suspension; old filing penalty of 1,000 units; 5% a month late payment charge (the old file figure conflicts with the leaflet).
