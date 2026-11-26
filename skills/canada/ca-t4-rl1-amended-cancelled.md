@@ -78,6 +78,8 @@ For an RL-1 originally transmitted in an authorized-software XML file, the RL-1 
 
 The ordinary T4 filing deadline is the last day of February after the calendar year concerned. A Saturday, Sunday or CRA-recognized public holiday moves it to the next business day. Thus the ordinary deadline for 2026 T4s is **1 March 2027**, derived because 28 February is Sunday. Give the employee's copies by the filing deadline; the paper route uses two copies, delivered in person or sent to the last known address. [ITR 205 and 209](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-205.html), [ITR 209](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-209.html), [CRA deadlines](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/when-to-file.html)
 
+For T4 cessation or death deadlines: Check this point with one of our partner accountants.
+
 For an ordinary continuing employer, RL-1 slips, the summary and recipient copies are due by the last day of February following the year covered. The paper employee copy is copy 2. For Quebec weekend/holiday adjustments, cessation, permanently stopping remittances or death: Check this point with one of our partner accountants. [RL-1 guide, 4.2–4.4](https://www.revenuquebec.ca/en/online-services/forms-and-publications/rl-1-g-v/guide-to-filing-the-rl-1-slip-employment-and-other-income/)
 
 For electronic delivery to employees, including consent, secure portals, paper requests and employees on leave or no longer employed: Check this point with one of our partner accountants.
