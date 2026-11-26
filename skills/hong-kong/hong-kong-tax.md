@@ -4,8 +4,8 @@ description: Use this skill whenever asked about Hong Kong taxation, whether VAT
 jurisdiction: HK
 tax_year: 2026
 tax_year_notes: "Year of assessment 2026/27 (1 April 2026 to 31 March 2027), the year containing most of 2026. Filing dates are the 2025/26 cycle published in 2026."
-last_updated: 2026-11-14
-version: "2.0"
+last_updated: 2026-11-27
+version: "2.1"
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -82,9 +82,9 @@ A GST proposal was considered in 2006 (Consultation Paper on Tax Reform) but was
 
 | Tax | Rate | Legislation |
 | --- | --- | --- |
-| Profits Tax (利得稅) | 8.25% on first HKD 2,000,000; 16.5% thereafter (corporations) | IRO s.14, s.14A |
-| Profits Tax (unincorporated) | 7.5% on first HKD 2,000,000; 15% thereafter | IRO s.14, s.14A |
-| Salaries Tax (薪俸稅) | Progressive rates: 2%, 6%, 10%, 14%, 17%; capped at standard rate 15% | IRO s.8, s.12, Schedule 2 |
+| Profits Tax (利得稅) | 8.25% on first HKD 2,000,000; 16.5% thereafter (corporations) | IRO s.14, ss.14AA-14AAC, Schedule 8B |
+| Profits Tax (unincorporated) | 7.5% on first HKD 2,000,000; 15% thereafter | IRO s.14, ss.14AA-14AAC, Schedule 8A |
+| Salaries Tax (薪俸稅) | Progressive rates: 2%, 6%, 10%, 14%, 17%; capped at two-tiered standard rate (15% on first HKD 5,000,000 of net income; 16% above) | IRO s.8, s.12, Schedule 2 |
 | Property Tax (物業稅) | 15% on net assessable value (80% of rental income after statutory deduction) | IRO s.5, s.5B |
 
 #### Territorial Principle [T1]
@@ -108,11 +108,11 @@ Year of assessment 2026/27 unless stated.
 | Elderly residential care deduction | Up to HKD 110,000 | From YA 2026/27 | same |
 | Property tax | 15% of net assessable value | After rates paid by the owner and a 20% statutory allowance | https://www.ird.gov.hk/eng/pdf/2026/BriefGuide20252026.pdf |
 | Stamp duty, Hong Kong stock | 0.1% of the consideration, buyer and seller each | From 17 November 2023 | same |
-| Stamp duty, immovable property | HKD 100 up to HKD 4,000,000; 1.5%, 2.25%, 3%, 3.75%, 4.25% above | From 26 February 2025; marginal relief | same |
+| Stamp duty, immovable property | HKD 100 up to HKD 4,000,000. For residential instruments from 26 February 2026, 6.5% above HKD 109,574,470. Over HKD 100,000,000 through HKD 109,574,470, HKD 4,250,000 plus 30% of the excess over HKD 100,000,000. The residential 4.25% band runs from above HKD 21,739,120 through HKD 100,000,000. Non-residential Scale 3 tops out at 4.25% above HKD 21,739,120. | Consideration or property value, whichever is higher | https://www.ird.gov.hk/eng/faq/avd.htm |
 | Stamp duty on lease rent | 0.25% to 1% of annual rent | By lease term; premium at the property scale (4.25% where premium and rent) | same |
 | Hotel accommodation tax | 3% of accommodation charges | From 1 January 2025 | same |
 | Global minimum tax and HKMTT | 15% | MNE groups with revenue of EUR 750 million or more; fiscal years from 1 January 2025 | https://www.ird.gov.hk/eng/tax/bus_beps.htm |
-| Profits tax returns 2025/26, "D" and "M" codes | 17 August 2026 and 16 November 2026 | Represented taxpayers | https://www.ird.gov.hk/eng/pdf/bel26e.pdf |
+| Profits tax returns 2025/26, "D" and "M" codes | D: 31 August 2026 paper, 2 October 2026 electronic. M: 30 November 2026 paper, 30 December 2026 electronic. | Represented taxpayers | [IRD Code D](https://www.ird.gov.hk/eng/pdf/bel26ea.pdf), [IRD Code M](https://www.ird.gov.hk/eng/pdf/bel26eb.pdf) |
 
 ## The base
 
@@ -129,7 +129,7 @@ Year of assessment 2026/27 unless stated.
 | First HKD 2,000,000 of assessable profits | 8.25% | 7.5% |
 | Remainder | 16.5% | 15% |
 
-- **Anti-fragmentation rule**: Only ONE entity within a group of connected entities may elect for the two-tiered rates in any year of assessment. Connected entities must nominate which entity benefits.  _(IRO s.14A, s.14B)_
+- **Anti-fragmentation rule**: Only ONE entity within a group of connected entities may elect for the two-tiered rates in any year of assessment. Connected entities must nominate which entity benefits.  _(IRO ss.14AA-14AAC, Schedules 8A and 8B)_
 
 #### Assessable Profits Calculation [T1]
 
@@ -147,7 +147,7 @@ Year of assessment 2026/27 unless stated.
 | Depreciation (tax basis) | Yes -- via depreciation allowance schedule | IRO s.37-39 |
 | Interest on borrowings for business | Yes (subject to anti-avoidance rules) | IRO s.16(1)(a), s.16(2) |
 | Repairs and maintenance | Yes | IRO s.16(1)(e) |
-| Research and development | Yes -- 100% or 300% deduction for qualifying R&D | IRO s.16B |
+| Research and development | Yes -- 100% for ordinary R&D; for qualifying domestic R&D, 300% on the first HKD 2,000,000 and 200% on the remainder | IRO s.16B, Schedule 45 |
 | Domestic/private expenses | No | IRO s.17(1)(a) |
 | Capital expenditure (not via allowances) | No | IRO s.17(1)(c) |
 | Tax penalties | No | IRO s.17(1)(e) |
@@ -171,8 +171,8 @@ Year of assessment 2026/27 unless stated.
 | Entity Type | Year of Assessment | Filing Deadline |
 | --- | --- | --- |
 | Accounting date 1 April to 30 November 2025 ("N" code) | 2025/26 | No block extension |
-| Accounting date in December 2025 ("D" code) | 2025/26 | 17 August 2026 (represented) |
-| Accounting date 1 January to 31 March 2026 ("M" code) | 2025/26 | 16 November 2026 (represented); 1 February 2027 for loss cases on request |
+| Accounting date in December 2025 ("D" code) | 2025/26 | 31 August 2026 paper or 2 October 2026 electronic (represented) |
+| Accounting date 1 January to 31 March 2026 ("M" code) | 2025/26 | 30 November 2026 paper or 30 December 2026 electronic (represented); 1 February 2027 for qualifying loss cases on request |
 | Sole proprietors (accounts filed with BIR60) | 2025/26 | 5 October 2026 (represented) |
 
 - **Profits Tax Return forms**: BIR51 (corporations), BIR52 (sole proprietors/partnerships).
@@ -181,7 +181,7 @@ Year of assessment 2026/27 unless stated.
 
 - **Salaries Tax legislation**: Salaries Tax is governed by IRO Part III.  _(IRO Part III (s.8-13))_
 
-#### Progressive Rates (Year of Assessment 2024/25 onwards)
+#### Progressive Rates (Year of Assessment 2018/19 onwards)
 
 **Progressive Rates**
 
@@ -218,12 +218,12 @@ Year of assessment 2026/27 unless stated.
 | --- | --- | --- |
 | Self-education expenses | HKD 100,000 | IRO s.12(1)(e) |
 | Home loan interest | HKD 100,000 per year (max 20 years); up to 120,000 with the additional deduction from 2024/25 | IRO s.26E |
-| Mandatory Provident Fund (MPF) contributions | HKD 18,000 per year | IRO s.12(1)(f) |
+| Mandatory Provident Fund (MPF) contributions | HKD 18,000 per year | IRO s.26G (employees); s.16AA (SEPs) |
 | Approved charitable donations | 35% of assessable income | IRO s.26C |
 | Elderly residential care expenses | HKD 110,000 per year from YA 2026/27 | IRO s.26D |
-| Voluntary health insurance (VHIS) premiums | HKD 8,000 per insured person | IRO s.26P |
-| Qualifying annuity premiums and MPF voluntary contributions | HKD 60,000 combined | IRO s.26N, 26Q |
-| Domestic rent deduction | HKD 100,000 per year; up to 120,000 with the additional deduction from 2024/25 | IRO s.26R |
+| Voluntary health insurance (VHIS) premiums | HKD 8,000 per insured person | IRO s.26K |
+| Qualifying annuity premiums and MPF voluntary contributions | HKD 60,000 combined | IRO s.26O (QDAP), s.26S (TVC), s.26U (cap) |
+| Domestic rent deduction | HKD 100,000 per year; up to 120,000 with the additional deduction from 2024/25 | IRO s.26X |
 
 - **Salaries Tax filing**: BIR60 (Individual Tax Return), issued in early May (4 May 2026 for 2025/26) and normally due within one month; represented cases extended to 4 July 2026, or 5 October 2026 with sole proprietorship accounts. Correction: the old file said "by 2 May".
 
@@ -258,7 +258,7 @@ Year of assessment 2026/27 unless stated.
 | Transaction | Rate | Legislation |
 | --- | --- | --- |
 | Stock transfers | 0.1% of consideration (each side), from 17 November 2023 | Stamp Duty Ordinance Cap. 117 |
-| Sale/purchase of immovable property | HKD 100 up to HKD 4,000,000; then 1.5% to 4.25% (from 26 February 2025) | Cap. 117, Head 1(1) |
+| Sale/purchase of immovable property | See the stamp duty bands in the thresholds summary above. | Cap. 117, First Schedule, head 1 |
 | Special Stamp Duty (SSD), Buyer's Stamp Duty (BSD), New Residential Stamp Duty (NRSD) | Not listed in the IRD brief guide 2025/26, which shows only ad valorem duty; the old file said BSD and NRSD were suspended from 28 February 2024 (status not confirmed here; check before any transaction) | Cap. 117 |
 | Lease agreements | 0.25-1% of annual rent | Cap. 117, Head 1(2) |
 
@@ -289,7 +289,7 @@ Year of assessment 2026/27 unless stated.
 | Dutiable Commodity | Duty Basis |
 | --- | --- |
 | Tobacco | Per stick/weight |
-| Liquor (>30% alcohol) | Per litre of alcohol |
+| Liquor (>30% alcohol) | Ad valorem (% of value): 100% on the first HKD 200 and 10% on the remainder (per bottle if <=1 L, or on value per litre if >1 L) |
 | Hydrocarbon oils (motor fuel) | Per litre |
 | Methyl alcohol | Per litre |
 
@@ -299,7 +299,7 @@ Year of assessment 2026/27 unless stated.
 
 | Charge | Rate | Basis |
 | --- | --- | --- |
-| Government Rates | 5% | Rateable value of property (assessed by Rating and Valuation Department) |
+| Government Rates | 5% (non-domestic and domestic RV <= HKD 550,000); progressive 5% / 8% / 12% for private domestic RV > HKD 550,000 from 1 January 2025 | Rateable value of property (assessed by Rating and Valuation Department) |
 | Government Rent | 3% | Rateable value (for post-1985 leases) |
 
 ## Deadlines and filing
@@ -318,11 +318,11 @@ Late or incorrect returns without reasonable excuse: fine of HKD 10,000 plus tre
 
 #### Transfer Pricing [T2]
 
-- **Transfer Pricing rules**: Hong Kong introduced transfer pricing rules aligned with OECD guidelines: Arm's length principle applies to related-party transactions; Documentation requirements for qualifying entities; Country-by-Country Reporting (CbCR) for large MNEs (consolidated revenue >= HKD 6.8 billion); Advance pricing agreements available. Flag for reviewer: transfer pricing documentation and compliance require specialist analysis.  _(IRO s.50AAB-50AAK (effective YA 2018/19))_
+- **Transfer Pricing rules**: Hong Kong introduced transfer pricing rules aligned with OECD guidelines: Arm's length principle applies to related-party transactions; Documentation requirements for qualifying entities; Country-by-Country Reporting (CbCR) for large MNEs (consolidated revenue >= HKD 6.8 billion); Advance pricing agreements available. Flag for reviewer: transfer pricing documentation and compliance require specialist analysis.  _(IRO Part 8AA ss.50AAC-50AAW (transfer pricing rules and APAs) and Part 9A ss.58B-58O (documentation and CbCR), effective YA 2018/19)_
 
 #### Foreign-Sourced Income Exemption (FSIE) Regime [T2]
 
-- **FSIE regime**: From 2023, Hong Kong implemented a refined FSIE regime for passive income received by MNE entities.  _(IRO s.15H-15JA (effective 1 January 2023))_
+- **FSIE regime**: From 2023, Hong Kong implemented a refined FSIE regime for passive income received by MNE entities.  _(IRO ss.15H-15S (effective 1 January 2023; expanded to all disposal gains from 1 January 2024))_
 
 **FSIE Income Type Treatment**
 
@@ -359,11 +359,11 @@ Late or incorrect returns without reasonable excuse: fine of HKD 10,000 plus tre
 
 #### EC5 -- Two-Tiered Rate Election Among Connected Entities [T1]
 
-- **EC5**: **Situation:** A group of companies in Hong Kong wants to apply the 8.25% rate on first HKD 2 million. **Resolution:** Only ONE entity in the connected group may elect for the two-tiered rate. All other connected entities pay the standard rate (16.5%) on all profits. The group must nominate the electing entity.  _(IRO s.14B.)_
+- **EC5**: **Situation:** A group of companies in Hong Kong wants to apply the 8.25% rate on first HKD 2 million. **Resolution:** Only ONE entity in the connected group may elect for the two-tiered rate. All other connected entities pay the standard rate (16.5%) on all profits. The group must nominate the electing entity.  _(IRO ss.14AA-14AAC, Schedule 8B.)_
 
 #### EC6 -- Salaries Tax vs Profits Tax for Freelancers [T2]
 
-- **EC6**: **Situation:** An individual provides freelance services. Question is whether income is subject to Salaries Tax or Profits Tax. **Resolution:** Depends on the nature of the engagement. Key factors: degree of control, provision of equipment, financial risk, integration into client's business. Employment = Salaries Tax. Self-employment/business = Profits Tax. Flag for reviewer for borderline cases.  _(IRO s.8 (Salaries Tax), s.14 (Profits Tax); Poon Cho-ming v CIR [1980].)_
+- **EC6**: **Situation:** An individual provides freelance services. Question is whether income is subject to Salaries Tax or Profits Tax. **Resolution:** Depends on the nature of the engagement. Key factors: degree of control, provision of equipment, financial risk, integration into client's business. Employment = Salaries Tax. Self-employment/business = Profits Tax. Flag for reviewer for borderline cases.  _(IRO s.8 (Salaries Tax), s.14 (Profits Tax).)_
 
 ## Two worked examples that recompute
 
