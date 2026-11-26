@@ -5,15 +5,15 @@ description: >
 jurisdiction: TZ
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.2
+last_updated: 2026-11-26
+version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
 type: computation
 ---
 
-# Tanzania corporate income tax v0.2
+# Tanzania corporate income tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -59,8 +59,8 @@ Out of scope: individuals (see [Income tax](tanzania-income-tax.md)), mining and
 
 | Item | Figure | Source |
 |---|---|---|
-| Late filing or payment | Per month or part: 2.5% of the unpaid tax, or 15 currency points for a body corporate (TZS 225,000), whichever is higher | [TAA s.89](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf) |
-| Currency point | TZS 15,000 | [TAA First Schedule](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf) |
+| Late filing or payment | Per month or part: 2.5% of the unpaid tax, or 15 currency points for a body corporate (TZS 300,000), whichever is higher | [TAA s.89](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf); [FA 2024 s.97](https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf) |
+| Currency point | TZS 20,000 from 1 July 2024 | [TAA s.4(3), Second Schedule](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf); [FA 2024 s.97](https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf) |
 | Late payment interest | Statutory rate, compounded monthly. The statutory rate is the Bank of Tanzania prevailing discount rate; the 2026 figure is unverified | [TAA s.87(1), s.3](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf) |
 | Under-estimating instalments | Interest where the estimate is below 80% of the correct amount | [TAA s.86(3)](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf) |
 | Failing to keep documents | 10 currency points a month for a body corporate | [TAA s.88(2)](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf) |
