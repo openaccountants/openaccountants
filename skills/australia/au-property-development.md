@@ -15,14 +15,14 @@ type: decision
 tax_year: 2026
 tax_year_notes: "2026-27"
 tier: 2
-last_updated: 2026-11-11
-version: 0.1
+last_updated: 2026-11-26
+version: 0.2
 license: FSL-1.1-ALv2
 depends_on:
   - workflow-base
 ---
 
-# Australia Property Development Income: Revenue or Capital v0.1
+# Australia Property Development Income: Revenue or Capital v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -77,7 +77,7 @@ This guide loads on `workflow-base` and fills its Section 7 slots for the income
 | Trading stock definition | Anything acquired and held for sale or exchange in the ordinary course of a business | ITAA 1997 s 70-10(1) |
 | Multiple purposes | Land can be trading stock when held for more than one purpose; the ATO looks for a 'substantial purpose' of sale at a profit | ATO 'Tax consequences on sales of property' |
 | Change of intention | For property bought as a capital asset, the overall gain is split between a capital gain and ordinary income; only the net profit from the undertaking is ordinary income | ATO 'Tax consequences on sales of property' |
-| Starting to hold land as trading stock | Treated as sold and bought back for cost or market value just before, as elected; election by the time the return for that year is lodged (or as soon as reasonable after realising), or later if the Commissioner allows | ITAA 1997 s 70-30(1)-(2) |
+| Starting to hold land as trading stock | Treated as sold and bought back for cost or market value just before, as elected. Make the election by lodgment of the return for that year. If the deadline was missed because the taxpayer did not realise the land had become trading stock, elect as soon as reasonable after realising it. The Commissioner may allow later in either case | ITAA 1997 s 70-30(1)-(2) |
 | CGT event K4 | Happens if you start holding an asset you already own as trading stock and elect market value under s 70-30(1)(a); the time of the event is when you start; gain if that market value exceeds the cost base, loss if it is less than the reduced cost base; disregarded for pre-CGT assets | ITAA 1997 s 104-220 |
 | No double tax | A capital gain is reduced by an amount otherwise included in assessable income because of the same event | ITAA 1997 s 118-20(1)-(3) |
 | Year-end trading stock | Compare values at the start and end of the year; value each item at cost, market selling value or replacement value | ITAA 1997 ss 70-35, 70-45(1) |
@@ -108,11 +108,11 @@ Record the purpose at acquisition and at every later point where the evidence su
 ### Step 5: Prepare conditional workpapers for each open characterisation
 
 - **Business (c):** a trading stock schedule by lot. Where land already owned starts to be trading stock, record the s 70-30 election options (cost or market value just before), the election deadline and the K4 consequence of a market value election (s 104-220). Value lots on hand at year end under s 70-45 and bring the movement to account under s 70-35. ATO land-sale Example 6 says the CGT discount, small business concessions and main residence exemption do not apply to income from a sale beyond mere realisation, and the ATO page says the main residence exemption does not apply to assets held as trading stock.
-- **Isolated undertaking (b):** a net profit computation by lot (proceeds less apportioned land cost, development and selling costs), following ATO land-sale Example 6. The year in which the profit is derived and recognised is not settled by the sources read here: leave recognition timing as Needs Input (R-AU-PD-6).
+- **Isolated undertaking (b):** a net profit computation by lot. Where the lot was acquired for the undertaking, start with proceeds less the apportioned acquisition, development and selling costs, following ATO land-sale Example 6. Where a capital asset was later committed to the undertaking, identify the evidenced change date and valuation for the reviewer to separate the capital gain and the undertaking's ordinary profit before doing the s 118-20 reconciliation. The year in which the profit is derived and recognised is not settled by the sources read here: leave recognition timing as Needs Input (R-AU-PD-6).
 - **Capital (a):** route the CGT event register, cost base apportionment and any main residence question to `au-capital-gains`, and concessions to `au-small-business-cgt`.
 - **Both a profit and a capital gain:** apply s 118-20 so the same amount is not taxed twice, as the ATO's examples do; work the remaining gain in `au-capital-gains`.
 
-Registration alone does not make an amount GST-exclusive; follow the GST treatment of each supply and acquisition. Assessable income leaves out only the GST payable on a taxable supply (ITAA 1997 s 17-5), so the full price of an input taxed sale stays in. A deduction leaves out only an amount relating to an input tax credit the seller is entitled to (s 27-5), so a cost with no credit stays GST-inclusive. Section 27-5 speaks of deductions: for an undertaking's net profit, apply the same split and flag it for the reviewer. Route the GST question itself to `au-gst-property`.
+Follow the GST treatment of each supply and acquisition. Section 17-5 excludes GST payable on a taxable supply, supply-related increasing adjustments and certain acquisition-related increasing adjustments from assessable income. An input taxed sale carries no GST payable, so include the full sale price where no adjustment applies. Section 27-5 excludes amounts relating to an input tax credit entitlement or a decreasing adjustment from a deductible outgoing. Where neither applies, use the GST-inclusive cost. Reconcile any adjustments separately with the reviewer when calculating net profit. Route the GST question itself to `au-gst-property`.
 
 ### Step 6: Route and record
 
@@ -311,7 +311,7 @@ The reviewer attention threshold is **AUD 0**: every characterisation, s 70-30 e
 
 Not yet confirmed: Named in the sources but not read in this session: TR 97/11 (primary production business), MT 2006/1 (held by `au-gst-property`), TD 97/3 (subdivided land as separate assets) and s 25A ITAA 1936.
 
-**Currency and revision.** Version 0.1, currency date 2 November 2026. Change log: v0.1 (2 November 2026) first draft from primary sources read that day; 6 November 2026 correction: registration alone does not make an amount GST-exclusive (ss 17-5, 27-5); 11 November 2026 correction: the worked cases restated net of GST under ss 17-5 and 27-5, with a 1/11 example under GST Act ss 9-70 and 9-75 and capital proceeds under s 116-20(5); awaiting qualified Australian review.
+**Currency and revision.** Version 0.2, currency date 22 November 2026. Version 0.2 accounts for GST adjustments in the income and deduction calculations and clarifies the trading stock election deadline and the net profit workpaper for a later undertaking. Version 0.1 (2 November 2026) introduced the guide, with GST clarifications on 6 and 11 November 2026.
 
 Method adapted by its author from the `au-property-development-income` skill in ryanduguid/australian-accounting-skills (commit 3e110da). This guide is licensed under FSL-1.1-ALv2, not the OA Guide License; see LICENSING.md.
 
