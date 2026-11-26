@@ -1,181 +1,112 @@
 ---
 name: us-nonresident-cgt
-description: Work out when the United States taxes a nonresident alien individual's 2026 gain on selling property, and how the tax is withheld and reported. Covers FIRPTA (section 897) gain on US real property interests treated as effectively connected income, US real property holding corporations and the listed-stock 5 percent and REIT 10 percent exceptions, the 183-day rule at 30 percent under section 871(a)(2), the trading safe harbour, sourcing by tax home, buyer withholding under section 1445 at 15 percent, 10 percent for a residence buyer at up to USD 1,000,000 and none at up to USD 300,000, Forms 8288, 8288-A and 8288-B, treaty claims on Form 8833, and the Form 1040-NR due dates. Trigger on "FIRPTA", "nonresident selling US property", "15% withholding", "8288-B withholding certificate", "nonresident capital gains", "183-day rule", "USRPI", "W-8BEN broker". For US residents use us-capital-gains. Federal only.
-version: "2.0"
+description: Determine federal tax and FIRPTA withholding on a nonresident individual's 2026 property gains. Covers US real property interests, ECI, the separate capital-gains presence test, residence-buyer withholding, certificates and reporting. Trigger on "FIRPTA", "nonresident capital gains", "183-day rule", "USRPI", "8288-B" or "W-8BEN broker". Use us-tax-residency to establish status first.
+version: "2.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: situation-rules
 ---
 
-# US capital gains of nonresident alien individuals: FIRPTA, the 183-day rule and withholding, tax year 2026
+# US capital gains of nonresident alien individuals: 2026
 
-> **Source-cited draft.** Built from 26 U.S.C. 871, 897, 1411 and 1445 (2024 edition, not amended on these points by Public Law 119-21), IRS Publication 515 (2026), Publication 519 (2025, the latest edition), the 2025 Instructions for Form 1040-NR, the Instructions for Form 8288 and the IRS FIRPTA pages, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
-
-**Answer first.** A nonresident alien's gain on **US real property** (and on stock of a US real property holding corporation) is taxed as effectively connected income at the ordinary graduated and capital gain rates, and the **buyer withholds 15%** of the amount realized (10% if an individual buyer will live there and the price is no more than **USD 1,000,000**; nothing at no more than **USD 300,000**). Withholding is a credit, not the tax: the seller files Form 1040-NR. Gain on **shares and other personal property** is usually not taxed at all, unless the seller was in the US **183 days or more** in the year and has a US tax home (then 30%, or a treaty rate, on net US-source gain), or the gain is effectively connected with a US business.
+A nonresident's US real property gain follows the effectively connected income rules; other investment gains require separate checks of source, business connection and actual days present. Withholding is a payment toward tax, so it can exceed the final liability.
 
 ## Scope and who this is for
 
-In scope: individuals who are nonresident aliens for the whole of 2026 (including treaty tie-breaker nonresidents whose claim is not in doubt, and exempt individuals such as F, J, M or Q students and A or G visa holders) who sell US real property, shares in US companies, other securities or personal property.
+Federal individual gains for a person established to be a nonresident throughout 2026. Do not infer status from an F, J, M, Q, A or G visa: establish eligibility and applicable time limits with `us-tax-residency`. A dual-status year or doubtful treaty tie-breaker goes to R-NRCG-RES. A properly established dual-resident treaty claim requires Form 1040-NR with Form 8833 and computation as a nonresident ([Publication 519](https://www.irs.gov/publications/p519)).
 
-Out of scope, and where it goes:
+Use `us-capital-gains` for citizens/residents; `us-form-1040-nr-nonresident-return` for the complete return; `us-itin-form-w-7` for identification; `us-installment-sale-6252` for installment-sale intake; `us-schedule-e-rental-income` for prior rentals/elections; and `us-expatriation-exit-tax` for former citizens/long-term residents. Specialist routes below are holds, not conclusions supplied by those other Guides.
 
-| Topic | Skill |
-| --- | --- |
-| Whether the person is a resident or nonresident (green card test, substantial presence test, closer connection) | `us-tax-residency` |
-| The Form 1040-NR return as a whole (brackets, deductions, Schedule NEC lines) | `us-form-1040-nr-nonresident-return` |
-| US residents and citizens selling property | `us-capital-gains` |
-| Getting an ITIN, including with Form 8288-B | `us-itin-form-w-7` |
-| Installment sales | `us-installment-sale-6252` |
-| Renting the property before the sale | `us-schedule-e-rental-income` |
-| Former citizens and long-term residents | `us-expatriation-exit-tax` |
-| Foreign corporations, partnerships, trusts and estates as sellers; estate and gift tax; dual-status years; state tax | Refer (see When to refuse or refer) |
+**Circular 230 §10.37:** General written tax information, based on the stated facts and sources. Establish the taxpayer's actual facts and applicable law before using a filing position; do not assume eligibility or assume a position will escape examination.
 
 ## Ask the client first
 
-1. **Status for the whole year of sale:** green card at any time? Days in the US in 2026, 2025 and 2024 (substantial presence)? Any treaty tie-breaker claim (Form 8833)? If any part of the year is resident, stop: see `us-tax-residency`.
-2. **Days physically present in 2026**, and whether any were as an exempt individual (student, teacher, trainee, foreign-government or international-organisation employee). Exempt days still count for the 183-day capital gains rule.
-3. **Tax home:** where is the client's main place of work? On arrival, did they intend to stay more than one year?
-4. **What was sold:** US land or buildings; shares in a US corporation (listed or not, and the highest percentage of the class held in the past five years); REIT or fund shares; a partnership or LLC interest; foreign shares; personal-use items.
-5. **US business presence:** an office, employees or a fixed place of business in the US? Dealing in securities, or only trading for their own account through a broker?
-6. **For real property:** the amount realized (cash, plus fair market value of other property, plus liabilities the buyer assumes or takes subject to); whether the buyer is an individual who plans to live there; co-owners and whether they are US persons; adjusted basis and selling costs; any depreciation taken.
-7. **Taxpayer identification number** (SSN or ITIN)? Has the buyer, closing agent or broker asked for Form W-8BEN or a non-foreign certification?
-8. **Treaty residence** and whether that treaty has a capital gains article.
-9. **Rental history:** was the property rented, and was the election to treat rental income as effectively connected made?
-10. **States:** where is the property, and where did the client live or work in 2026?
+- Obtain status evidence and US travel dates for 2026, 2025 and 2024. Count actual 2026 presence separately from residency-test days; identify exempt-individual eligibility.
+- Establish the tax home from work, living arrangements, intended duration and later changes. Do not assume a foreign or US tax home when evidence is missing.
+- Identify each asset, acquisition/disposal dates, adjusted basis, selling costs, prior depreciation/rental elections, and whether it was personal-use or business property.
+- For company/fund shares, obtain class, market, full ownership history, related/indirect holdings and corporate USRPHC evidence. For entities or partnership/LLC interests, use the referral table.
+- Identify all US business activities, offices, employees and agents; distinguish a securities dealer from own-account investing.
+- For property, obtain total consideration including debt, each seller's contribution/status, the buyer's individual status and detailed residence plans, TINs, contract/closing dates and certificate applications.
+- Obtain treaty residence/eligibility evidence and the actual treaty article, broker documentation, states of property/work/residence and any other income or deductions. Missing facts remain missing; do not choose favourable defaults.
 
 ## The method, step by step
 
 ### Rates, bands and thresholds
 
-| Item | Amount, 2026 | Source |
+| Item and operative conditions | 2026 rate / amount | Official source |
 | --- | --- | --- |
-| Tax on net US-source capital gain of a nonresident present 183 days or more (not ECI) | 30% (or treaty rate) | [26 U.S.C. 871(a)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartA-sec871.htm) |
-| Days of presence that trigger it | 183 or more | [26 U.S.C. 871(a)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartA-sec871.htm) |
-| US real property holding corporation: US real property at least this share of real property and business assets | 50% | [26 U.S.C. 897(c)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartD-sec897.htm) |
-| Look-back for USRPHC status: shorter of the holding period and | 5 years | [26 U.S.C. 897(c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartD-sec897.htm) |
-| Listed stock is a USRPI only for a holder of more than | 5% of the class | [26 U.S.C. 897(c)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartD-sec897.htm) |
-| Listed REIT stock: limit instead | more than 10% | [26 U.S.C. 897(k)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartD-sec897.htm) |
-| Domestically controlled REIT or RIC: foreign persons held less than | 50% in value | [26 U.S.C. 897(h)(4)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartD-sec897.htm) |
-| FIRPTA withholding, general rule, on the amount realized | 15% | [26 U.S.C. 1445(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap3-subchapA-sec1445.htm) |
-| Residence buyer, amount realized not more than this: no withholding | USD 300,000 | [26 U.S.C. 1445(b)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap3-subchapA-sec1445.htm) |
-| Residence buyer, amount realized more than USD 300,000 and not more than this: 10% | USD 1,000,000 | [26 U.S.C. 1445(c)(4)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap3-subchapA-sec1445.htm) |
-| Reduced residence rate | 10% | [26 U.S.C. 1445(c)(4)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap3-subchapA-sec1445.htm) |
-| Buyer files Form 8288 and pays by the | 20th day after the transfer | [Instructions for Form 8288](https://www.irs.gov/pub/irs-pdf/i8288.pdf) |
-| Home sale exclusion on Form 1040-NR (if eligible), maximum | USD 250,000 | [IRS FIRPTA withholding, question 5](https://www.irs.gov/individuals/international-taxpayers/firpta-withholding) |
-| Form 8833 non-disclosure penalty, individuals | USD 1,000 per failure | [Publication 519](https://www.irs.gov/publications/p519) |
+| Non-ECI US-source capital-asset gains within section 871(a)(2), actual presence at least 183 days in the tax year; special section 871(a)(1) gains excluded | 30% of eligible net gain, unless an applicable treaty provides relief | [26 U.S.C. 871(a)(2)](https://uscode.house.gov/us/usc/119-142/t26/s871/) |
+| USRPHC asset test: USRPIs / (USRPIs + foreign real property + other business-use assets), all at fair market value | At least 50%; corporate interests still need the look-back, ownership and exceptions below | [26 U.S.C. 897(c)(2)](https://uscode.house.gov/us/usc/119-142/t26/s897/) |
+| FIRPTA general withholding on foreign seller's amount realized; absent a valid exception/certificate | 15% | [26 U.S.C. 1445(a)](https://uscode.house.gov/us/usc/119-142/t26/s1445/) |
+| Individual residence buyer satisfying the use test below; total property amount realized at most USD 300,000 | No FIRPTA withholding | [26 U.S.C. 1445(b)(5)](https://uscode.house.gov/us/usc/119-142/t26/s1445/) |
+| Same residence conditions; total more than USD 300,000 and at most USD 1,000,000 | 10%; above that ceiling, general rate | [26 U.S.C. 1445(c)(4)](https://uscode.house.gov/us/usc/119-142/t26/s1445/) |
+| Ordinary long-term capital gain of a single filer, including qualifying ECI: taxable-income ceilings for the zero / 15% bands | USD 49,450 / USD 545,500; stack gains above other taxable income | [Rev. Proc. 2025-32 §2.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [capital-gains method](https://www.irs.gov/taxtopics/tc409) |
 
-The FIRPTA dollar limits, rates and the 183-day test are fixed in the statute and not indexed. The 2026 brackets and capital gain rate bands that apply to effectively connected gain are owned by `us-capital-gains` and `us-form-1040-nr-nonresident-return`.
+### 1. Identify US real property interests before applying the presence test
 
-### Step 1: confirm nonresident status for the whole year
+A USRPI includes an interest other than solely as creditor in US or US Virgin Islands real property, including land, buildings, mines, wells and natural deposits. Associated personal property is also within the definition, but equipment/furnishings and separate-disposal exclusions require R-NRCG-ASSOC. A gain/loss from a USRPI is treated as ECI under section 897(a), whether or not the property is a capital asset ([26 U.S.C. 897(a), (c)](https://uscode.house.gov/us/usc/119-142/t26/s897/)).
 
-1. If the client was a US resident for any part of 2026 (green card, substantial presence, first-year choice), stop: a dual-status year follows Publication 519, chapter 6, and this skill covers only the nonresident part. Treaty tie-breaker nonresidents compute tax as nonresidents and file Form 1040-NR with Form 8833. Source: [Publication 519](https://www.irs.gov/publications/p519); `us-tax-residency`.
+A noncreditor interest in a domestic corporation is within the USRPI definition unless the taxpayer establishes that the corporation was never a USRPHC in the shorter of the holding period after June 18, 1980 and the five years ending on disposition, subject to statutory exclusions. Obtain evidence rather than presume that absence of a certificate proves the actual tax outcome ([section 897(c)(1)](https://uscode.house.gov/us/usc/119-142/t26/s897/)).
 
-### Step 2: classify each asset, in this order
+For the class actually **regularly traded on an established securities market**, the listed-stock exception is lost only if ownership exceeded 5% at some time in that same testing period; for REIT stock the threshold is more than 10%. Include constructive ownership under section 897(c)(6)(C), as modified by (k)(1), before deciding the threshold. A listed company does not make every class regularly traded. For actual USRPHC analysis, large/indirect holdings or any other REIT/RIC exception, use R-NRCG-USRPHC ([section 897(c)(3), (6)(C), (k)(1)](https://uscode.house.gov/us/usc/119-142/t26/s897/)).
 
-2. **Is it a US real property interest (USRPI)?** If yes, go to Step 3: a USRPI gain is always treated as effectively connected income (ECI), whether or not the property is a capital asset. Source: [26 U.S.C. 897(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartD-sec897.htm).
-3. **If not, is the gain ECI?** Gain from assets used in or held for a US trade or business is ECI. Trading in stocks or securities for one's own account, through a US broker or agent, is **not** a US trade or business; the safe harbour is lost if the client has a US office or other fixed place of business through which, or by whose direction, the trades are carried out. Gain on selling an interest in a partnership with a US business can be ECI under section 864(c)(8), and the buyer generally withholds 10% of the amount realized under section 1446(f): refer (R-NRCG-PSHIP). Source: [Publication 519](https://www.irs.gov/publications/p519); [Publication 515](https://www.irs.gov/publications/p515).
-4. **If neither, apply the 183-day rule** (Step 5).
+### 2. Check ECI and distinguish the trading safe harbours
 
-### Step 3: what counts as a USRPI
+For US-source capital gains, section 864(c)(2) considers assets used/held for the US business **and** whether business activities were a material factor in realizing the gain. Do not classify a foreign-source sale by asset use alone; refer nonstandard source/business cases. The independent-agent safe harbour and own-account safe harbour are separate:
 
-5. **Real property in the US or the US Virgin Islands:** land, buildings and their structural components, and unsevered natural products (crops, timber, mines, wells). Also personal property associated with the use of the real property (farming or construction equipment, furnishings of lodging facilities), unless it is disposed of more than one year before or after the real property, or sold separately to persons unrelated to the seller or buyer. Source: [26 U.S.C. 897(c)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartD-sec897.htm).
-6. **Any interest (other than as a creditor) in a domestic corporation that is a US real property holding corporation (USRPHC):** its USRPIs are worth **at least 50%** of its USRPIs, its real property outside the US and its other trade or business assets, at any time in the shorter of the seller's holding period and the 5 years ending on the sale. Stock in a domestic corporation is treated as USRPHC stock unless the seller shows it is not.
-7. **Cleansing exception:** an interest in a corporation is not a USRPI if, on the date of disposition, the corporation held no USRPIs, all USRPIs it held in the look-back period were disposed of in fully taxable transactions, and it was not a RIC or REIT in that period. Refer before relying on it. Source: [IRS FIRPTA withholding](https://www.irs.gov/individuals/international-taxpayers/firpta-withholding).
-8. **Not a USRPI:**
-   - Stock of a class **regularly traded on an established securities market**, unless the seller held **more than 5%** of the class at some time in the testing period (**more than 10%** for a REIT).
-   - An interest in a **domestically controlled** REIT or qualifying RIC (foreign persons held less than 50% in value throughout the testing period).
-   - REIT stock held by a **qualified shareholder** under section 897(k).
-   - An interest in a **foreign corporation**, unless it elected to be treated as domestic.
-9. **QIE wash-sale rule:** if the client sells an interest in a domestically controlled REIT or RIC in the 30 days before the ex-dividend date of a distribution that would have been USRPI gain, and acquires a substantially identical interest within the 61-day period, the distribution amount is treated as USRPI gain. It does not apply if the client actually received the distribution, or if the stock is regularly traded and the client held no more than 5% of the class at any time in the 1-year period ending on the distribution date. Source: [26 U.S.C. 897(h)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartD-sec897.htm).
+- Section 864(b)(2)(A)(i) covers securities trading through a resident broker/other independent agent, subject to no US office through/by whose direction those trades occur at any time in the year.
+- Section 864(b)(2)(A)(ii) separately covers a **nondealer's own-account** securities trading, personally, through employees or agents, including discretionary agents. The office limitation in (C) applies to (A)(i), not (A)(ii). This does not exempt other US business activity or turn a USRPI into an exempt asset.
 
-### Step 4: tax on FIRPTA and other ECI gains
+Source: [26 U.S.C. 864(b)(2), (c)(2)](https://uscode.house.gov/us/usc/119-120/t26/s864/), read with [Publication 519, Trading for a nonresident alien's own account](https://www.irs.gov/publications/p519). Partnership/LLC sales go to R-NRCG-PSHIP.
 
-10. ECI and FIRPTA gains are taxed, after allowable deductions, at the same graduated rates and capital gain rates as citizens and residents, using the Form 1040-NR tax computation (with the Qualified Dividends and Capital Gain Tax Worksheet). Nonresident aliens generally **cannot claim the standard deduction**. Source: [Publication 519](https://www.irs.gov/publications/p519); [Instructions for Form 1040-NR](https://www.irs.gov/pub/irs-pdf/i1040nr.pdf).
-11. **Minimum tax:** an alternative minimum tax may apply to net USRPI gain; figure it on Form 6251. Source: [26 U.S.C. 897(a)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartD-sec897.htm).
-12. **USRPI losses** count only if they would be allowed under section 165(c), so a loss on a personal-use home is not deductible. Source: [26 U.S.C. 897(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartD-sec897.htm).
-13. **Depreciation** taken on a rented property is recaptured as unrecaptured section 1250 gain on the sale: take the figures from `us-capital-gains`.
-14. **Home sale exclusion:** a nonresident who sells their own former US home may exclude gain under section 121 if the ownership and use tests are met; the maximum on Form 1040-NR is USD 250,000. Withholding can then exceed the tax: consider a withholding certificate. Source: [IRS FIRPTA withholding, question 5](https://www.irs.gov/individuals/international-taxpayers/firpta-withholding).
-15. **Net investment income tax** does not apply to a nonresident alien; only a dual-status taxpayer may owe it, for the resident part of the year. Source: [26 U.S.C. 1411(e)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm).
+### 3. Source other gains, then apply the separate capital-gains presence rule
 
-### Step 5: the 183-day rule for gains that are neither USRPI nor ECI
+Under section 865(a), (g), ordinary personal-property investment gains generally follow tax-home residence for this sourcing purpose: an NRA with a US tax home is a US resident for that purpose. This is not the income-tax residency test. A foreign tax home generally gives foreign-source gains, but US-office-attributable sales, inventory, depreciable property, intangibles and treaty re-sourcing have special rules; do not apply the generalisation to them. Check this point with one of our partner accountants. ([26 U.S.C. 865](https://uscode.house.gov/us/usc/119-142/t26/s865/))
 
-16. If the client was present in the US **183 days or more** during the tax year, the **net US-source capital gain** is taxed at a flat **30%** (or a lower treaty rate). Below 183 days such gains are exempt. Exactly 183 days is caught. The rule applies even to sales made while the client was outside the US. A client not in a US trade or business, with no earlier tax year established, uses the calendar year. Source: [26 U.S.C. 871(a)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartA-sec871.htm).
-17. **Sourcing:** gain on personal property (including shares) is generally US-source only if the seller has a **tax home in the United States**. With no US tax home the gain is foreign-source and not taxed under this rule. Most students, scholars and foreign-government employees who come intending to stay more than one year have a US tax home from the day they arrive. Source: [IRS, capital gains of nonresident students, scholars and employees of foreign governments](https://www.irs.gov/individuals/international-taxpayers/the-taxation-of-capital-gains-of-nonresident-alien-students-scholars-and-employees-of-foreign-governments).
-18. **Net gain:** US-source capital gains minus US-source capital losses, counting gains and losses only to the extent they would be recognised if effectively connected. Do not take into account a capital loss carryover, capital losses above capital gains, the section 1202 exclusion, or losses on personal-use property. Report on Schedule NEC (Form 1040-NR). Source: [Publication 519](https://www.irs.gov/publications/p519).
+For the remaining non-ECI US-source capital gains, section 871(a)(2) uses **actual presence of 183 days or more in that tax year**, including exempt-individual days. It bears no relation to the weighted substantial-presence residency test. Exactly 183 qualifies; transactions while abroad can still count. Establish tax home from the facts; the IRS describes the general shift on arrival for someone intending to be away from the old home for longer than one year, subject to the actual programme/employment and intentions ([IRS students/scholars guidance](https://www.irs.gov/individuals/international-taxpayers/the-taxation-of-capital-gains-of-nonresident-alien-students-scholars-and-employees-of-foreign-governments)).
 
-### Step 6: treaty relief
+Net eligible US-source gains against eligible US-source losses only to the extent they would be recognized/taken into account as ECI. Exclude personal-use losses, loss carryovers, losses above gains and the section 1202 exclusion. Do not double-count gains taxed under section 871(a)(1) or (b). Below 183 days, the ordinary gains covered by (a)(2) are exempt; that conclusion does not extend to OID, contingent intellectual-property payments or other special (a)(1) gains (R-NRCG-SPECIAL). If not engaged in US business and no tax year was previously established, use a calendar year for this test ([section 871(a)(2)](https://uscode.house.gov/us/usc/119-142/t26/s871/); [Publication 519, Sales or Exchanges of Capital Assets](https://www.irs.gov/publications/p519)).
 
-19. Most treaties exempt gains on personal property; gains on US real property generally stay taxable. Read the actual treaty article, not the OECD model. Any treaty position that overrides or modifies the Code and reduces, or might reduce, tax is disclosed on **Form 8833**, and it is specifically required for a treaty reduction of tax on USRPI gain or loss. Exceptions include treaty-reduced withholding on FDAP income and disclosable items totalling no more than USD 10,000 (Regulations section 301.6114-1(c)). The penalty for not disclosing is USD 1,000 per failure for an individual, waivable for reasonable cause. Source: [Publication 519](https://www.irs.gov/publications/p519).
+### 4. Compute ECI tax separately from withholding
 
-### Step 7: FIRPTA withholding on a sale of US real property
+ECI is taxed after allowable deductions at citizen/resident rates; use the applicable capital-gain computation for qualifying gains. Nonresidents generally cannot claim a standard deduction, but treaty-eligible Indian students/business apprentices have a special rule: do not assume it applies. USRPI losses remain subject to section 165(c), so a personal-use home loss is not deductible. Nonresident aliens are excluded from NIIT under section 1411(e)(1); treaty-resident elections and dual-status cases require separate review. Home exclusions, depreciation/recapture and the FIRPTA minimum-tax calculation are held below ([Publication 519](https://www.irs.gov/publications/p519); [section 897(b)](https://uscode.house.gov/us/usc/119-142/t26/s897/); [section 1411(e)](https://uscode.house.gov/us/usc/119-142/t26/s1411/)).
 
-20. The **buyer** (transferee) is the withholding agent and must find out whether the seller is a foreign person; a buyer that fails to withhold can be liable for the tax. Source: [IRS FIRPTA withholding](https://www.irs.gov/individuals/international-taxpayers/firpta-withholding).
-21. **Amount realized** = cash paid or to be paid (principal only) + fair market value of other property + any liability the buyer assumes or takes subject to. Where US and foreign persons own jointly, the amount realized is allocated by capital contribution (spouses 50% each); the buyer withholds on the amount allocated to the foreign seller or sellers. Foreign co-sellers can ask for the credit to be split as they agree by the 10th day after the transfer; otherwise it is divided evenly.
-22. **Rate:** 15% of the amount realized. If the **buyer is an individual** who (or whose family member) has definite plans to live at the property for at least 50% of the days it is used by any person in each of the first two 12-month periods after the transfer (vacant days not counted), the rate is **10%** where the amount realized is more than USD 300,000 but not more than **USD 1,000,000**, and **nil** where it is not more than **USD 300,000**. Above USD 1,000,000 it is 15% even for a residence buyer. It need not be the buyer's main home. The limits test the **total** amount realized on the property, not each seller's share. Source: [26 U.S.C. 1445](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap3-subchapA-sec1445.htm); [Publication 515](https://www.irs.gov/publications/p515); [IRS, Exceptions from FIRPTA withholding](https://www.irs.gov/individuals/international-taxpayers/exceptions-from-firpta-withholding).
-23. **Other exceptions from withholding:** the seller certifies it is not a foreign person; the interest is in a domestic corporation with a class of stock regularly traded on an established securities market (not for certain dispositions of substantial non-traded interests: refer); a domestic corporation certifies the interest is not a USRPI; the IRS issues a withholding certificate; the seller gives written notice of a nonrecognition or treaty provision, which the buyer files with the IRS by the 20th day after the transfer; the amount realized is zero; or a US government unit acquires the property.
-24. **Reporting and paying over:** the buyer files Form 8288 with Copies A and B of Form 8288-A and pays **by the 20th day after the transfer**. The IRS stamps Copy B and sends it to the seller, but not if the seller's TIN is missing; then the seller attaches substantial evidence of withholding (closing documents) and a statement with the Form 8288 and 8288-A information, including the TIN. A seller with no TIN can apply for an ITIN by attaching Form 8288-B to Form W-7. Source: [Instructions for Form 8288](https://www.irs.gov/pub/irs-pdf/i8288.pdf); [IRS, Reporting and paying tax on US real property interests](https://www.irs.gov/individuals/international-taxpayers/reporting-and-paying-tax-on-us-real-property-interests).
-25. **Withholding certificate (Form 8288-B):** the buyer, its agent or the seller can apply to reduce or eliminate withholding because the withholding would exceed the seller's maximum tax liability, the gain is exempt, the transfer qualifies for nonrecognition, or a security agreement is made. The IRS generally acts within 90 days of a complete application with all parties' TINs. If an application is pending at closing, the buyer still withholds the full amount and pays over the withheld (or lesser approved) amount within 20 days after the IRS mails its decision; this applies only if the application was submitted on or before the transfer date, and a seller who applies must notify the buyer in writing on the day of the transfer or the day before. If the main purpose of applying was delay, interest and penalties run from the 21st day after the transfer. Report the gain in the year of the actual sale, even if the stamped Form 8288-A shows a later date. Source: [IRS, Withholding certificates](https://www.irs.gov/individuals/international-taxpayers/withholding-certificates).
-26. **Withholding is not the tax.** It is a credit on Form 1040-NR (line 25f of the 2025 form, with the stamped Copy B of Form 8288-A). Even where no withholding applies, the seller still reports the gain. Assignment of a purchase contract is also a disposition subject to withholding (FAQ question 4).
+### 5. Withhold using the total transaction and proven residence plans
 
-### Step 8: shares sold through a broker
+The buyer generally is the withholding agent and can be liable for failing to withhold. Amount realized is cash paid/to be paid (principal), fair market value of other property, and liabilities assumed or to which the property is subject. Allocate between co-sellers by capital contribution; spouses count as contributing half each. Withhold on the foreign sellers' allocated amount. Foreign sellers must request an agreed credit allocation by the tenth day after transfer; otherwise divide the credit evenly ([IRS FIRPTA guidance](https://www.irs.gov/individuals/international-taxpayers/firpta-withholding)).
 
-27. A nonresident with fewer than 183 days of presence, no US tax home and no US trade or business owes **no US tax** on selling listed US shares, unless the shares are USRPHC stock and the client held more than 5% of the class, or the class is not regularly traded.
-28. **Form W-8BEN** establishes foreign status with the broker, which can then treat gross proceeds as exempt from Form 1099 reporting and backup withholding. It generally stays in effect until the last day of the third calendar year after signing, unless circumstances change; if the income becomes ECI, use Form W-8ECI. Source: [Publication 515](https://www.irs.gov/publications/p515); [Instructions for Form W-8BEN](https://www.irs.gov/instructions/iw8ben).
-29. **Dividends are not capital gains:** US dividends not effectively connected are generally taxed at 30% or a lower treaty rate, withheld at source (`us-form-1040-nr-nonresident-return`).
+The residence thresholds test the **whole property's amount realized**, not each seller's allocated share. The actual buyer must be an individual with definite plans for the buyer/family to reside there for at least 50% of all days anyone uses it in **each** of the first two 12-month periods after transfer; ignore vacant days. A mere label or signature does not establish those facts. The test does not require a principal home. An investor/company buyer has no residence reduction, although another valid exception/certificate may apply ([Form 8288 instructions, residence rules](https://www.irs.gov/instructions/i8288); [IRS FIRPTA FAQ 6, 17](https://www.irs.gov/individuals/international-taxpayers/firpta-withholding)).
 
-### Step 9: file Form 1040-NR
+An assignment of a right to purchase US real property is also subject to FIRPTA withholding on its amount realized ([IRS FIRPTA FAQ 4](https://www.irs.gov/individuals/international-taxpayers/firpta-withholding)). Other exceptions require the separate review below; absence of withholding does not itself exempt taxable gain.
 
-30. Report 183-day gains on Schedule NEC; report ECI and FIRPTA gains on Schedule D (Form 1040) or Form 4797, attached to Form 1040-NR. A FIRPTA seller must file, because USRPI gain is treated as ECI from a US trade or business; the return settles the actual tax and recovers excess withholding. Source: [Publication 519](https://www.irs.gov/publications/p519).
+### 6. Consider a certificate; document broker status
+
+The buyer, buyer's agent or seller may request a withholding certificate, including where withholding exceeds maximum tax liability or gain is exempt. IRS generally acts within 90 days of receiving a **complete** application including all parties' TINs. A seller applying must notify the buyer in writing on or the day before transfer ([IRS withholding certificates](https://www.irs.gov/individuals/international-taxpayers/withholding-certificates)).
+
+An application filed on/before transfer and still pending **does not remove withholding at closing**. It postpones reporting/payment to the IRS until 20 days after the IRS mails the certificate or denial; pay the amount withheld or approved lesser amount. A delay-purpose application triggers interest/penalties from day 21 after transfer. Report gain in the actual sale year even if certificate processing changes the date on Form 8288-A ([IRS reporting/payment](https://www.irs.gov/individuals/international-taxpayers/reporting-and-paying-tax-on-us-real-property-interests); [FIRPTA FAQ 3](https://www.irs.gov/individuals/international-taxpayers/firpta-withholding)).
+
+Give the broker a properly completed W-8BEN to establish foreign status and claim the applicable reporting/backup-withholding exception. It generally lasts through the last day of the third succeeding calendar year unless circumstances change; some conditions allow indefinite validity. ECI generally requires W-8ECI instead, with the partnership allocation exception in the instructions. W-8BEN is not proof that the gain is tax exempt ([W-8BEN instructions](https://www.irs.gov/instructions/iw8ben)). Non-ECI US dividends are generally subject to 30% or applicable treaty relief, separately from stock-sale gains ([Publication 519, The 30% Tax](https://www.irs.gov/publications/p519)).
 
 ## Boundary and exception table
 
-| Fact pattern | Result |
+| Facts established | Result |
 | --- | --- |
-| Presence exactly 183 days, US tax home, non-ECI gain on shares | Taxed at 30% (or treaty rate): the test is "183 days or more" |
-| 183 days or more, but no US tax home | Gain is foreign-source, so not taxed under the 183-day rule |
-| F-1 student (exempt individual) present 200 days | Still a nonresident, but exempt-individual days count for the 183-day capital gains rule |
-| Held exactly 5% of a listed USRPHC class | Not a USRPI: the exception is lost only above 5% |
-| Listed REIT shares, more than 5% but not more than 10% | Not a USRPI: the REIT limit is more than 10% |
-| Residence buyer, amount realized exactly USD 300,000 | No withholding |
-| Residence buyer, amount realized exactly USD 1,000,000 | 10% withholding |
-| Foreign spouse and US spouse sell their home to a residence buyer for USD 500,000 in total | The USD 300,000 exemption tests the total, so it is not available; withholding is 10% of the foreign spouse's USD 250,000 share = USD 25,000 |
-| Buyer is a company, or an investor who will rent it out | 15%, whatever the price |
-| Seller sells their own former US home | Section 121 may exclude up to USD 250,000; consider a withholding certificate |
-| Assignment of a purchase contract for US property | A disposition: withholding applies |
-| Sale of a partnership interest where the partnership has a US business | Possibly ECI (864(c)(8)); 10% withholding under 1446(f): refer |
-| Loss on a personal-use US home | Not deductible (section 165(c) test) |
-
-### Defaults when a fact is missing
-
-| Missing fact | Default, and flag it |
-| --- | --- |
-| Days present in 2026 | Do not apply the 183-day rule until counted; ask for travel records |
-| Tax home | Assume foreign for a short-stay visitor; assume US for a student or employee who came to stay more than a year |
-| Whether a US company is a USRPHC | Treat its stock as a USRPI until the company certifies otherwise |
-| Buyer's residence plans | 15% withholding unless the buyer signs the residence statement |
-| Seller's TIN | Start the ITIN application now; the stamped Form 8288-A will not issue without it |
-| Treaty article | No treaty exemption until the article is read |
-
-### Red flags to raise with the client
-
-| Flag | Why it matters |
-| --- | --- |
-| Withholding far above the likely tax (small gain, loss, section 121) | Apply for a withholding certificate before closing |
-| No ITIN at closing | The credit cannot be claimed smoothly |
-| Days in the US near 183, or near the substantial presence count | The client may be a resident: `us-tax-residency` |
-| A US office, employees or agent directing trades | The trading safe harbour may be lost |
-| Unlisted US company shares | USRPHC test needed |
-| Property held through an entity | Different withholding rules (section 1445(e)): refer |
+| Actual presence exactly 183 days, ordinary non-ECI US-source gain | The section 871(a)(2) test is met; establish treaty relief separately |
+| Foreign tax home, ordinary investment sale with no special sourcing rule | Foreign-source gain, outside that test |
+| F-1 student present 200 days | Confirm NRA eligibility separately; exempt-individual days still count for gains |
+| Regularly traded class held at exactly 5% throughout the applicable period, including constructive holdings | Listed-stock exception remains; REIT threshold instead exceeds 10% |
+| Residence buyer, total exactly USD 300,000 / USD 1,000,000 | No withholding / 10%, if the actual residence test is met and no different certificate applies |
+| Personal-use US home sold at a loss | No deduction; withholding may still require a certificate |
 
 ## Worked cases
 
-Amounts are invented. The 2026 figure in Case 1 comes from `us-capital-gains` (zero-rate maximum for a single filer, USD 49,450).
+Illustrations retain the original 2026 facts. Apply the conditions above; treaty, AMT, state tax and special assets require separate clearance.
 
-**Case 1, a decision: should the seller apply for a withholding certificate?** A nonresident sells vacant US land (never depreciated, not rented) to an investor for USD 750,000. Adjusted basis is USD 640,000 and selling costs USD 40,000, so the long-term gain is USD 70,000. The buyer will withhold 15% x 750,000 = USD 112,500. On Form 1040-NR, with no standard deduction and no other US income, taxable income is the USD 70,000 gain: 0% on the first USD 49,450 and 15% on USD 20,550 = USD 3,082.50 (before any minimum tax and state tax). Apply for a withholding certificate on Form 8288-B on or before the transfer date, with an ITIN application if needed: it frees about USD 109,417.50 at closing instead of waiting for a refund after filing.
+**Case 1: certificate decision.** Vacant US land, never depreciated/not rented, sold to an investor for USD 750,000; adjusted basis USD 640,000, selling costs USD 40,000. Gain is USD 70,000 and statutory withholding USD 112,500. **If** the original long-term classification is established, the seller qualifies as single, and there is no other taxable income/deduction, ordinary federal capital-gain tax before AMT/state tax is USD 3,082.50: 15% of USD 20,550 above the USD 49,450 zero-rate ceiling. The difference is USD 109,417.50. Without a certificate, claim excess withholding through the return; applying by transfer preserves the pending-application payment deferral, but releases that difference at closing **only if an appropriate certificate is obtained in time**. Do not promise release merely because an application was filed. Check this point with one of our partner accountants. ([Publication 544, Sales and Exchanges](https://www.irs.gov/publications/p544); [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [IRS reporting/payment](https://www.irs.gov/individuals/international-taxpayers/reporting-and-paying-tax-on-us-real-property-interests))
 
 ```oa-check
 name: FIRPTA withholding against the likely tax (2026)
@@ -196,7 +127,7 @@ expected:
   excess_withheld: 109417.50
 ```
 
-**Case 2: residence band, joint sellers, and the 183-day rule.** (a) A nonresident sells a condo to an individual who will live there: cash USD 520,000 plus an assumed mortgage of USD 230,000, so the amount realized is USD 750,000 and withholding is 10% = USD 75,000 (15% = USD 112,500 for an investor buyer). (b) A foreign spouse and a US spouse sell their home to a residence buyer for USD 500,000; the foreign spouse's share is USD 250,000 and withholding is 10% of it = USD 25,000. (c) An F-1 student with a US tax home, present 200 days in 2026, has US-source capital gains of USD 12,000 and losses of USD 2,000: 30% x 10,000 = USD 3,000 on Schedule NEC, unless the treaty exempts it (then Form 8833 unless an exception applies).
+**Case 2: residence band, co-sellers and actual presence.** (a) Condo consideration: USD 520,000 cash plus USD 230,000 assumed mortgage = USD 750,000. An individual buyer satisfying the residence test gives USD 75,000 withholding; an investor gives USD 112,500, absent another valid exception/certificate. (b) Foreign/US spouses sell for USD 500,000 total to a qualifying residence buyer: the foreign spouse's USD 250,000 half gives USD 25,000 withholding, not an exemption based on that half alone. (c) An F-1 student, separately established to remain an NRA with a US tax home, present 200 days in 2026: ordinary non-ECI US-source gains USD 12,000 less eligible current-year US-source losses USD 2,000 give USD 3,000 tax on Schedule NEC, absent treaty relief. Do not presume exempt-individual status from the visa or presume all losses qualify; treaty/disclosure eligibility is R-NRCG-TREATY. ([IRS FIRPTA guidance](https://www.irs.gov/individuals/international-taxpayers/firpta-withholding); [IRS student gains guidance](https://www.irs.gov/individuals/international-taxpayers/the-taxation-of-capital-gains-of-nonresident-alien-students-scholars-and-employees-of-foreign-governments))
 
 ```oa-check
 name: FIRPTA rates and the 183-day rule (2026)
@@ -220,60 +151,82 @@ expected:
   tax_183_day: 3000.00
 ```
 
-**Other quick results.** Listed shares sold by a nonresident with 20 days in the US, no US office or tax home, and well under 5% of the class: no US tax and no return needed for the gain; keep a current W-8BEN. A residence buyer pays exactly USD 300,000: no withholding, but the seller still reports the gain. A residence buyer pays exactly USD 1,000,000: 10% = USD 100,000. An investor buys for USD 280,000: the residence exception does not apply, so 15% = USD 42,000.
+**Other original cases.** Listed shares, 20 days in the US, no US office/tax home, well under 5%: if full-period/constructive ownership and nondealer own-account/no-other-business conditions establish the ordinary non-USRPI, non-ECI outcome, no federal gain tax or gain-only return obligation. Keep W-8BEN current; other income can independently require a return. A qualifying residence buyer at exactly USD 300,000 gives no withholding, but taxable USRPI gain still needs reporting. At exactly USD 1,000,000 the withholding is USD 100,000. An investor at USD 280,000 gives USD 42,000, absent another exception/certificate.
+
+```oa-check
+name: Original withholding boundaries (2026)
+inputs:
+  residence_lower: 300000
+  residence_upper: 1000000
+  investor_price: 280000
+steps:
+  - lower_withholding: residence_lower * 0
+  - upper_withholding: residence_upper * 0.10
+  - investor_withholding: investor_price * 0.15
+expected:
+  lower_withholding: 0
+  upper_withholding: 100000
+  investor_withholding: 42000
+```
 
 ## When to refuse or refer
 
-| Code | Situation | Action |
-| --- | --- | --- |
-| R-NRCG-RES | Residency unclear: substantial presence near the line, closer connection, a doubtful treaty tie-breaker, or a dual-status year | Refer; `us-tax-residency` |
-| R-NRCG-ENTITY | Seller is a corporation, partnership, trust or estate, or the property is held through an entity (section 1445(e)) | Refer |
-| R-NRCG-USRPHC | Unlisted US stock needing a USRPHC test, a large holding of a listed class, or REIT and RIC interests beyond the plain exceptions | Refer |
-| R-NRCG-PSHIP | Sale of a partnership or LLC interest (sections 864(c)(8) and 1446(f)) | Refer |
-| R-NRCG-NONREC | Installment sales, like-kind exchanges, other nonrecognition claims, or a certificate based on a security agreement | Refer |
-| R-NRCG-TREATY | A treaty claim that US real property gain is exempt or reduced | Refer |
-| R-NRCG-EXPAT | Former US citizens or long-term residents; any estate or gift tax question | `us-expatriation-exit-tax`, `us-estate-gift-706-709` |
-| R-NRCG-STATE | Any state tax question | Refer: state rules and state withholding on real property sales are outside this skill |
+Every row below is an explicit hold: **Check this point with one of our partner accountants.** Do not supply a numerical entitlement from these topics until resolved.
+
+| Code | Topic held for that review |
+| --- | --- |
+| R-NRCG-RES | Unclear residence, exempt-individual limits, closer connection, treaty tie-breaker/election or dual-status year; `us-tax-residency` |
+| R-NRCG-ENTITY | Corporate, partnership, trust/estate sellers or property held through entities; section 1445(e) |
+| R-NRCG-USRPHC | Corporate asset valuation/look-through, unlisted or large/constructive holdings; cleansing including predecessor corporations; domestically controlled QIE, REIT/RIC qualified-shareholder/cut-back, foreign-corporation domestic election and QIE wash-sale rules |
+| R-NRCG-ASSOC | Associated personal property, separate sales and timing exceptions |
+| R-NRCG-PSHIP | Partnership/LLC interest sales; sections 864(c)(8), 1446(f), withholding exceptions and PTP rules |
+| R-NRCG-NONREC | Installment sales, exchanges, other nonrecognition, security agreements and specialist certificate categories |
+| R-NRCG-HOME | Section 121 former-home exclusion, eligibility, limits, nonqualified use and depreciation |
+| R-NRCG-RECAPTURE | Depreciated/rented property, capital versus ordinary gain, recapture and unrecaptured section 1250 gain; `us-capital-gains` |
+| R-NRCG-AMT | FIRPTA alternative minimum tax/section 897(a)(2), Form 6251 and final certificate tax estimate |
+| R-NRCG-TREATY | Actual treaty entitlement/articles, USRPI or personal-property relief; Form 8833 disclosure, exceptions and penalties |
+| R-NRCG-WHEX | Nonforeign/corporate certifications, listed-corporation withholding exceptions, nonrecognition/treaty notices, zero consideration and government acquisitions; never equate these with automatic gain exemption |
+| R-NRCG-SPECIAL | Special section 871(a)(1) gains, OID, portfolio-interest exemption, intellectual property, natural-resource gains, nonstandard source/ECI cases |
+| R-NRCG-EXPAT | Former citizens/long-term residents; estate/gift tax; `us-expatriation-exit-tax`, `us-estate-gift-706-709` |
+| R-NRCG-STATE | All state tax/withholding questions |
 
 ## Filing and payment
 
-- **Buyer at closing:** withhold, then file Form 8288 with Copies A and B of Form 8288-A and pay by the **20th day after the transfer**; if a Form 8288-B application was pending on the transfer date, within 20 days after the IRS mails its decision. Source: [Instructions for Form 8288](https://www.irs.gov/pub/irs-pdf/i8288.pdf).
-- **Seller's 2026 Form 1040-NR:** due **15 June 2027** if the client had no wages subject to US withholding, or **15 April 2027** if they had; Form 4868 extends the time to file (to 15 December 2027 or 15 October 2027), not to pay. Attach the stamped Form 8288-A Copy B, Schedule NEC and/or Schedule D or Form 4797, and Form 8833 where required. Source: [Publication 519](https://www.irs.gov/publications/p519).
-- **Estimated tax:** a nonresident expecting 2026 tax not covered by withholding uses Form 1040-ES (NR); see `us-form-1040-nr-nonresident-return`.
-- **Refunds** of tax withheld on Form 8288-A can take up to 6 months.
-- **2025 returns still open:** due 15 June 2026 (no wages) or 15 April 2026 (wages), extended to 15 December 2026 or 15 October 2026. The FIRPTA rates and limits and the 183-day rule were the same for 2025.
+- **Buyer:** file Form 8288 Part I, attach Forms 8288-A Copies A/B for each person withheld from, retain Copy C, and transmit tax by day 20 after transfer. Send to the address in the current instructions. The pending-certificate exception above changes remittance timing, not the closing withholding obligation. Late filing/payment and failure to withhold can create tax, interest and penalties; specific penalty computation requires accountant review ([Form 8288 instructions](https://www.irs.gov/instructions/i8288)).
+- **Seller:** ordinary taxable non-ECI capital gains go on Schedule NEC; ECI capital-asset gains go on Schedule D and/or Form 4797 as appropriate, attached to Form 1040-NR. A taxable FIRPTA disposition requires return/reporting even if withholding was nil. Claim withholding using stamped Form 8288-A Copy B; without a TIN the IRS does not issue that stamped copy. To claim credit without it, attach substantial evidence of withholding and a statement with required 8288/8288-A information including TIN. If eligible for an ITIN, apply with completed Forms W-7/8288-B using the W-7 instructions ([Publication 519](https://www.irs.gov/publications/p519); [IRS reporting/payment](https://www.irs.gov/individuals/international-taxpayers/reporting-and-paying-tax-on-us-real-property-interests)).
+- **Ordinary calendar-year deadlines:** with wages subject to US income-tax withholding, April 15, 2027 for 2026; otherwise June 15, 2027. A timely Form 4868 ordinarily extends filing six months, to October 15 / December 15, 2027 respectively, not payment. These are calendar applications of the continuing fourth/sixth-month rules, not a claim to have read final 2026 return instructions; special relief requires separate review ([Publication 519, Nonresident Aliens: When To File](https://www.irs.gov/publications/p519)).
+- **2025 returns:** ordinary dates were April 15 / June 15, 2026 respectively; timely extensions give October 15 / December 15, 2026. October's date has passed as of this read. Do not apply the 2026 capital-gain ceiling to 2025 ([Publication 519](https://www.irs.gov/publications/p519)).
+- **Estimated tax, final 2026 form fields and refund timing:** Check this point with one of our partner accountants. Preserve the Form 1040-ES (NR) route; do not assume withholding covers liability, promise a refund date, or carry the old 2025 line 25f into a final 2026 filing without checking the issued form.
 
 ## Completion checklist
 
-- [ ] Nonresident status confirmed for the whole year; any treaty tie-breaker documented.
-- [ ] Each asset classified as USRPI, ECI or other, with the USRPHC look-back and the 5% and 10% listed-stock tests where relevant.
-- [ ] Days of presence counted (including exempt-individual days) and tax home established.
-- [ ] Net 183-day gain computed without carryovers, the section 1202 exclusion or personal-use losses.
-- [ ] Amount realized includes assumed liabilities; FIRPTA rate chosen from the buyer's residence facts and the total price.
-- [ ] Withholding certificate considered where withholding exceeds the likely tax.
-- [ ] Form 8288 and 8288-A filed by the buyer within 20 days; seller's TIN or ITIN in place.
-- [ ] W-8BEN current with each broker.
-- [ ] Treaty article read; Form 8833 attached unless an exception applies.
-- [ ] Form 1040-NR filed by the right due date, with the Form 8288-A credit claimed.
-- [ ] State position checked with the state's own revenue department.
+- [ ] Status, actual presence and tax home established separately; source/ECI/USRPI classification documented.
+- [ ] Original transaction inputs reconciled; applicable stock testing period and constructive holdings checked.
+- [ ] Residence conditions and whole-transaction threshold documented; buyer withholding and seller tax computed separately.
+- [ ] Certificate timing, all TINs, reporting deadlines and withholding evidence checked.
+- [ ] Specialist/treaty/state holds resolved by an accountant before using those outcomes.
 
 ## Sources
 
-| Source | URL | Read on |
-| --- | --- | --- |
-| 26 U.S.C. 871 (govinfo). Read for (a)(2): "183 days or more", "a tax of 30 percent of the amount by which his gains ... exceed his losses". | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartA-sec871.htm | 2026-11-13 |
-| 26 U.S.C. 897 (govinfo). Read for (a) ECI treatment, (b) losses, (c)(2) 50% USRPHC test, (c)(3) "more than 5 percent", (h)(4) "less than 50 percent", (h)(5) wash sales and (k) "more than 10 percent" for REITs. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partII-subpartD-sec897.htm | 2026-11-13 |
-| 26 U.S.C. 1445 (govinfo). Read for (a) "15 percent of the amount realized", (b)(5) "does not exceed $300,000", (c)(4) "does not exceed $1,000,000" and "10 percent". | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap3-subchapA-sec1445.htm | 2026-11-13 |
-| 26 U.S.C. 1411 (govinfo). Read for (e) nonresident aliens excluded from the net investment income tax. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm | 2026-11-13 |
-| IRS Publication 515 (2026). Read for the residence rule: no withholding up to $300,000, 10%, 15% above $1,000,000; W-8BEN; section 1446(f). | https://www.irs.gov/publications/p515 | 2026-11-13 |
-| IRS Publication 519 (2025). Read for the 183-day rule, the trading safe harbour, no standard deduction, Schedule NEC, Form 8833 and the $1,000 penalty, and the June 15 due date. | https://www.irs.gov/publications/p519 | 2026-11-13 |
-| Instructions for Form 1040-NR (2025). Read for line 25f, Form 8288-A. | https://www.irs.gov/pub/irs-pdf/i1040nr.pdf | 2026-11-13 |
-| Instructions for Form 8288 (2026 revision). Read for the 20th-day deadline and pending applications. | https://www.irs.gov/pub/irs-pdf/i8288.pdf | 2026-11-13 |
-| IRS, FIRPTA withholding. Read for the amount realized, joint sellers (questions 1 and 17), contract assignments (question 4), section 121 (question 5) and timing (question 3). | https://www.irs.gov/individuals/international-taxpayers/firpta-withholding | 2026-11-13 |
-| IRS, Exceptions from FIRPTA withholding. Read for the residence-use test. | https://www.irs.gov/individuals/international-taxpayers/exceptions-from-firpta-withholding | 2026-11-13 |
-| IRS, Withholding certificates. Read for Form 8288-B grounds and the 90-day processing time. | https://www.irs.gov/individuals/international-taxpayers/withholding-certificates | 2026-11-13 |
-| IRS, Reporting and paying tax on US real property interests. Read for the stamped Copy B and a missing TIN. | https://www.irs.gov/individuals/international-taxpayers/reporting-and-paying-tax-on-us-real-property-interests | 2026-11-13 |
-| IRS, Taxation of capital gains of nonresident alien students, scholars and employees of foreign governments. Read for the US tax home rule. | https://www.irs.gov/individuals/international-taxpayers/the-taxation-of-capital-gains-of-nonresident-alien-students-scholars-and-employees-of-foreign-governments | 2026-11-13 |
-| Instructions for Form W-8BEN. Read for how long the form stays in effect. | https://www.irs.gov/instructions/iw8ben | 2026-11-13 |
+Read dates record the passages actually read, including reused applicable exact quotations from the completed residency/1040/capital-gains proof; no download-status-only evidence is used.
 
-Not yet confirmed: the 2026 Publication 519 and the 2026 Instructions for Form 1040-NR were not published when read, so the line number for the Form 8288-A credit (line 25f on the 2025 form) and the 2026 due-date wording are taken from the 2025 editions; the IRS FIRPTA question numbers (1, 3, 4, 5 and 17) are as the page showed them on the read date and can change.
+| Official source | Passages read / reused | Read on |
+| --- | --- | --- |
+| [26 U.S.C. 871](https://uscode.house.gov/us/usc/119-142/t26/s871/) | Read for: (a)(1), (a)(2), (b): special gains, actual-presence test, netting, ECI; current text through Public Law 119-142 | 2026-11-26 |
+| [26 U.S.C. 864](https://uscode.house.gov/us/usc/119-120/t26/s864/) | Read for: (b)(2)(A), (C), (c)(2): distinct trading limbs and ECI factors; continuing wording also read in Pub. 519 | 2026-11-26 |
+| [26 U.S.C. 865](https://uscode.house.gov/us/usc/119-142/t26/s865/) | Read for: (a)–(g): source rules, tax-home definition and exceptions | 2026-11-26 |
+| [26 U.S.C. 897](https://uscode.house.gov/us/usc/119-142/t26/s897/) | Read for: (a)–(c), (k)(1): ECI, losses, USRPI, stock thresholds and constructive ownership | 2026-11-26 |
+| [26 U.S.C. 1445](https://uscode.house.gov/us/usc/119-142/t26/s1445/) | Read for: (a), (b)(5), (c)(4): general withholding and residence thresholds | 2026-11-26 |
+| [26 U.S.C. 1411](https://uscode.house.gov/us/usc/119-142/t26/s1411/) | Read for: (e)(1): NRA exclusion | 2026-11-26 |
+| [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) | Read for: §2.03, 2026 single capital-gain ceilings; same completed US1040/USCG quotation reused | 2026-11-26 |
+| [IRS capital-gains overview](https://www.irs.gov/taxtopics/tc409) | Read for: Gain/basis, personal-use losses, long-term/short-term and stacking; same completed USCG quotations reused | 2026-11-26 |
+| [Publication 544 (2025)](https://www.irs.gov/publications/p544) | Read for: Sales and Exchanges, Amount realized, Example 1 selling expenses deducted before basis | 2026-11-26 |
+| [Publication 519 (2025)](https://www.irs.gov/publications/p519) | Read for: Trading, ECI, capital gains/netting/reporting, deductions/India exception, dual-resident treaty filing and nonresident deadlines; continuing rules only | 2026-11-26 |
+| [IRS student/scholar capital gains](https://www.irs.gov/individuals/international-taxpayers/the-taxation-of-capital-gains-of-nonresident-alien-students-scholars-and-employees-of-foreign-governments) | Read for: Separate presence test, exempt days, tax home and Schedule NEC | 2026-11-26 |
+| [IRS FIRPTA guidance](https://www.irs.gov/individuals/international-taxpayers/firpta-withholding) | Read for: USRPI/amount realized, liability, FAQs 1, 3, 4, 6 and 17 | 2026-11-26 |
+| [Form 8288 instructions (January 2026)](https://www.irs.gov/instructions/i8288) | Read for: Residence conditions, joint sellers, Part I, forms/copies, deadlines and pending certificates | 2026-11-26 |
+| [IRS reporting/payment](https://www.irs.gov/individuals/international-taxpayers/reporting-and-paying-tax-on-us-real-property-interests) | Read for: Pending certificate, delay penalties, stamped copy/credit evidence and ITIN route | 2026-11-26 |
+| [IRS withholding certificates](https://www.irs.gov/individuals/international-taxpayers/withholding-certificates) | Read for: Applicants, complete application/90 days and seller notification | 2026-11-26 |
+| [W-8BEN instructions](https://www.irs.gov/instructions/iw8ben) | Read for: Broker documentation, validity and ECI/partnership exception | 2026-11-26 |
+
+Not yet confirmed: final 2026 Form 1040-NR field numbers and the specialist outcomes expressly held in the referral table and estimated-tax/refund paragraph. Those outcomes are not usable advice; Check this point with one of our partner accountants.
