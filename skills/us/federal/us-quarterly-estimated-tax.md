@@ -1,10 +1,11 @@
 ---
 name: us-quarterly-estimated-tax
-description: Work out whether a US individual must pay 2026 federal estimated tax on Form 1040-ES, how much is required each quarter, and what the Form 2210 underpayment penalty costs. Covers the USD 1,000 test, the safe harbours in 26 U.S.C. 6654(d) (90% of 2026 tax, or 100% of 2025 tax, 110% where 2025 AGI was over USD 150,000 or USD 75,000 married filing separately), the four 2026 due dates (15 April, 15 June, 15 September 2026, 15 January 2027), the annualized income installment method (Form 2210 Schedule AI, Pub. 505 Worksheet 2-9), withholding treated as paid evenly, the farmer and fisherman rule, waivers and the 2026 underpayment rates. Trigger on "1040-ES", "estimated tax", "quarterly tax", "safe harbor", "underpayment penalty", "Form 2210", "annualized income", "how much should I pay each quarter". Federal only.
-version: "3.1"
+description: Compute US individual federal estimated tax for 2026 using Form 1040-ES, the USD 1,000 test, 90% current-year and 100% or 110% prior-year safe harbours, regular or annualized installments, withholding and Form 2210 penalties. Includes dated 2025 historical cases. Trigger on estimated tax, quarterly tax, safe harbor, 1040-ES, Form 2210 or annualized income. Federal only.
+version: "3.2"
 jurisdiction: US
+category: federal
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -13,157 +14,115 @@ type: computation
 
 # US federal estimated tax for individuals (Form 1040-ES), tax year 2026
 
-> **Source-cited draft.** Built from the 2026 Form 1040-ES, IRS Pub. 505 (2026), the 2025 Form 2210 and its instructions, the IRS quarterly interest rates page and 26 U.S.C. 275, 6621, 6622 and 6654, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
+An individual generally needs estimated payments if expected tax after withholding is at least USD 1,000 and withholding does not cover the required annual payment, subject to the exceptions below. Use the IRS worksheet so refundable credits are counted once. [Form 1040-ES (2026), General Rule and worksheet](https://www.irs.gov/pub/irs-pdf/f1040es.pdf).
 
-**Answer first.** An individual must pay 2026 estimated tax if they expect to owe at least **USD 1,000** after withholding and refundable credits, and their withholding and refundable credits will be less than the smaller of **90%** of the 2026 tax or **100%** of the 2025 tax (**110%** if 2025 AGI was more than **USD 150,000**, or USD 75,000 if married filing separately for 2026). The required annual payment is paid in four equal parts on **15 April 2026, 15 June 2026, 15 September 2026 and 15 January 2027**. The fourth payment is not needed if the 2026 return is filed and paid in full by **1 February 2027**. The penalty is simple interest at the underpayment rate (7%, 6%, 7%, 7% for the four quarters of 2026) on each late or short installment.
+## Who this applies to
 
-## Scope and who this is for
+US citizens and resident aliens computing individual federal estimated tax, including sole proprietors and owners of disregarded single-member LLCs. This Guide computes amounts for professional review; it does not execute payments. Corporations, trusts, estates, nonresident aliens and state payments are routed below.
 
-In scope: one US citizen or resident alien (or a married couple paying jointly) working out 2026 federal estimated income tax on Form 1040-ES: whether payments are required, the required annual payment, the four installments, the annualized income installment method, how withholding counts, and the Form 2210 underpayment penalty for 2026. The tax that estimated payments cover is income tax, self-employment tax, Additional Medicare Tax, net investment income tax and the other Schedule 2 taxes, less nonrefundable and refundable credits ([26 U.S.C. 6654(f)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm)).
+## Rates, bands and thresholds
 
-Out of scope, and where it goes:
+Ordinary calendar-year rules, after checking the zero-tax and farming/fishing exceptions. “Tax” means the worksheet tax after its specified credits, excluding withholding; do not subtract refundable credits twice.
 
-| Topic | Skill |
-| --- | --- |
-| Self-employment tax figures and Schedule SE | `us-schedule-c-and-se-computation` |
-| The 2026 income tax brackets, standard deduction, Additional Medicare Tax and net investment income tax on the return | `us-federal-income-tax-return-1040` |
-| The qualified business income deduction | `us-qbi-deduction` |
-| State estimated tax | `us-state-estimated-tax-safe-harbors-matrix` and the state's income tax skill |
-| Corporate estimated tax (Form 1120-W, section 6655) | `us-form-1120-c-corp` |
-| Penalty abatement requests, notices and collection | `us-irs-collections-and-controversy` |
-| Classifying bank and card transactions | `us-sole-prop-bookkeeping` |
-
-## Ask the client first
-
-1. **The 2025 return:** total tax as figured for line 12b of the 2026 Estimated Tax Worksheet, the AGI on it, whether it covered 12 months, and whether it was a joint return. With no 2025 return or a short 2025 year, only the 90% current-year test is available.
-2. **Filing status for 2026**, and whether the spouses will pay jointly. A change between joint and separate from 2025 to 2026 changes how the 2025 tax is split.
-3. **Expected 2026 income by period:** 1 January to 31 March, to 31 May, to 31 August and to 31 December. Uneven income (a seasonal business, a large gain late in the year) points to the annualized method.
-4. **Withholding for 2026** from every source (W-2 wages, pensions, IRA distributions, backup withholding), and whether it can still be increased with a new Form W-4 or W-4P.
-5. **Payments already made for 2026**, with dates, and any 2025 overpayment applied to 2026.
-6. **Special facts:** at least two-thirds of gross income from farming or fishing in 2025 or 2026; retirement after age 62 or disability in 2025 or 2026; a casualty or disaster; a qualified farmland sale with a section 1062 election.
-
-## The method, step by step
-
-### Rates, bands and thresholds
-
-| Item | Amount, 2026 | Source |
+| Item | Amount or rule | Official source |
 | --- | --- | --- |
-| No penalty if 2026 tax minus withholding is less than | USD 1,000 | [26 U.S.C. 6654(e)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm) |
+| No estimated payments if worksheet tax minus withholding is less than | USD 1,000 | [Form 1040-ES, line 14b](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
 | Current-year safe harbour: share of the 2026 tax | 90% | [26 U.S.C. 6654(d)(1)(B)(i)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm) |
 | Prior-year safe harbour: share of the 2025 tax | 100% | [26 U.S.C. 6654(d)(1)(B)(ii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm) |
 | Prior-year safe harbour where 2025 AGI exceeds the limit below | 110% | [26 U.S.C. 6654(d)(1)(C)(i)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm) |
 | 2025 AGI limit for 100% (110% above it) | USD 150,000 | [26 U.S.C. 6654(d)(1)(C)(i)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm) |
 | 2025 AGI limit, married filing separately for 2026 | USD 75,000 | [26 U.S.C. 6654(d)(1)(C)(ii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm) |
 | Each regular installment | 25% of the required annual payment | [26 U.S.C. 6654(d)(1)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm) |
-| 1st installment due | 15 April 2026 | [Form 1040-ES (2026), Payment Due Dates](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
-| 2nd installment due | 15 June 2026 | [Form 1040-ES (2026), Payment Due Dates](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
-| 3rd installment due | 15 September 2026 | [Form 1040-ES (2026), Payment Due Dates](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
-| 4th installment due | 15 January 2027 | [Form 1040-ES (2026), Payment Due Dates](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
-| 4th installment not needed if the 2026 return is filed and paid in full by | 1 February 2027 | [Form 1040-ES (2026), Payment Due Dates](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
-| Tax year 2025 (prior year) installment due: 1st | April 15, 2025 | [Form 1040-ES (2025), Payment Due Dates](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf) |
-| Tax year 2025 (prior year) installment due: 2nd | June 16, 2025 | [Form 1040-ES (2025), Payment Due Dates](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf) |
-| Tax year 2025 (prior year) installment due: 3rd | September 15, 2025 | [Form 1040-ES (2025), Payment Due Dates](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf) |
-| Tax year 2025 (prior year) installment due: 4th | January 15, 2026 | [Form 1040-ES (2025), Payment Due Dates](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf) |
-| Annualized method, applicable percentages for installments 1 to 4 | 22.5%, 45%, 67.5%, 90% | [26 U.S.C. 6654(d)(2)(C)(ii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm) |
-| Annualized method, periods and annualization amounts | 1 Jan to 31 Mar 2026: 4; to 31 May: 2.4; to 31 Aug: 1.5; to 31 Dec: 1 | [Pub. 505 (2026), Worksheet 2-9](https://www.irs.gov/pub/irs-pdf/p505.pdf) |
-| Annualized method, prorated Social Security limit for the four periods | USD 46,125; 76,875; 123,000; 184,500 | [Pub. 505 (2026), Worksheet 2-9, line 34](https://www.irs.gov/pub/irs-pdf/p505.pdf) |
-| Farmer or fisherman: share of gross income from farming or fishing (2025 or 2026) | at least two-thirds | [26 U.S.C. 6654(i)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm) |
-| Farmer or fisherman: current-year percentage (no 110% rule) | 66 2/3% | [26 U.S.C. 6654(i)(1)(C)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm) |
-| Farmer or fisherman: single installment due, or file and pay in full by | 15 January 2027, or 1 March 2027 | [Form 1040-ES (2026), Farming and fishing](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
-| Underpayment rate, 1 January to 31 March 2026 | 7% | [IRS quarterly interest rates](https://www.irs.gov/payments/quarterly-interest-rates) |
-| Underpayment rate, 1 April to 30 June 2026 | 6% | [IRS quarterly interest rates](https://www.irs.gov/payments/quarterly-interest-rates) |
-| Underpayment rate, 1 July to 30 September 2026 | 7% | [IRS quarterly interest rates](https://www.irs.gov/payments/quarterly-interest-rates) |
-| Underpayment rate, 1 October to 31 December 2026 | 7% | [IRS quarterly interest rates](https://www.irs.gov/payments/quarterly-interest-rates) |
-| Underpayment rate formula | federal short-term rate plus 3 percentage points | [26 U.S.C. 6621(a)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap67-subchapC-sec6621.htm) |
+| 1st installment due | 15 April 2026 | [Form 1040-ES, Payment Due Dates](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
+| 2nd installment due | 15 June 2026 | [Form 1040-ES, Payment Due Dates](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
+| 3rd installment due | 15 September 2026 | [Form 1040-ES, Payment Due Dates](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
+| 4th installment due | 15 January 2027 | [Form 1040-ES, Payment Due Dates](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
+| Fourth payment exception | File the 2026 return and pay the entire balance by 1 February 2027; this does not forgive earlier shortfalls | [Form 1040-ES, Payment Due Dates](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
+| Annualized cumulative percentages | 22.5%, 45%, 67.5%, 90% | [Pub. 505, Worksheet 2-9 line 22](https://www.irs.gov/publications/p505) |
+| Annualized cumulative periods and income factors | January–March: 4; January–May: 2.4; January–August: 1.5; January–December: 1 | [Pub. 505, Worksheet 2-9](https://www.irs.gov/publications/p505) |
+| Annualized prorated Social Security limits | USD 46,125; 76,875; 123,000; 184,500, before actual wages reduce the limit | [Pub. 505, Worksheet 2-9 lines 34–36](https://www.irs.gov/publications/p505) |
+| Farmer/fisher eligibility | At least two-thirds of gross income from farming or fishing in 2025 or 2026 | [26 U.S.C. 6654(i)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm) |
+| Farmer/fisher required payment | Smaller of 66 2/3% of 2026 tax and eligible 100% of 2025 tax; no 110% uplift | [Form 1040-ES, Special Rules](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
+| Farmer/fisher dates | One payment by 15 January 2027, or file and pay all tax by 1 March 2027 | [Form 1040-ES, Farming and fishing](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
+| Underpayment rate, January–March 2026 | 7% | [IRS quarterly interest rates](https://www.irs.gov/payments/quarterly-interest-rates) |
+| Underpayment rate, April–June 2026 | 6% | [IRS quarterly interest rates](https://www.irs.gov/payments/quarterly-interest-rates) |
+| Underpayment rate, July–September 2026 | 7% | [IRS quarterly interest rates](https://www.irs.gov/payments/quarterly-interest-rates) |
+| Underpayment rate, October–December 2026 | 7% | [IRS quarterly interest rates](https://www.irs.gov/payments/quarterly-interest-rates) |
+| Historical individual underpayment rates | All four quarters of 2025: 7% | [IRS quarterly interest rates](https://www.irs.gov/payments/quarterly-interest-rates) |
 
-None of the percentages, the USD 1,000 test or the USD 150,000 and USD 75,000 AGI limits is indexed for inflation; the One Big Beautiful Bill Act (Public Law 119-21) did not amend sections 6621, 6622 or 6654. The underpayment rate is reset each quarter. A due date that falls on a Saturday, Sunday or legal holiday moves to the next business day; none of the four 2026 dates does.
+## The base and required annual payment
 
-### Step 1: is anything required?
+1. Use the **2026 Estimated Tax Worksheet**: expected AGI after adjustments; deductions on lines 2a–2d, including QBI and eligible Schedule 1-A deductions; tax on line 4, AMT and any other line 6 taxes; subtract line 7 credits; add SE tax on line 9 and permitted line 10 taxes; subtract the refundable credits on line 11b to reach line 11c. Qualified dividends, capital gains and foreign earned income require the special tax worksheets. Line 10 has exclusions; do not include every Schedule 2 tax automatically. Household employment taxes are included only if withholding exists or estimates would otherwise be required. Use the line 10 instructions for the complete exclusions. [1040-ES, worksheet and lines 4/10 instructions](https://www.irs.gov/pub/irs-pdf/f1040es.pdf).
+2. **The zero-tax exception: no payments are required if the person was a US citizen or resident alien for all of 2025, the 2025 tax year was 12 months, and they had no tax liability for 2025** (total tax zero or no return required). Merely not filing a return does not establish this exception. [1040-ES, Exception](https://www.irs.gov/pub/irs-pdf/f1040es.pdf).
+3. Line 12a is the current-year amount; line 12b is the applicable prior-year amount. For line 12b, start with 2025 Form 1040 line 24 and make **all** reductions in “Figuring your 2025 tax,” including specified unreported payroll taxes, specified tax-favoured-account taxes, Exception 2 taxes and the listed refundable credits. Do not use the prior balance due or withholding as prior-year tax. [1040-ES, line 12b](https://www.irs.gov/pub/irs-pdf/f1040es.pdf).
+4. Line 12c is the smaller available amount. Line 14a subtracts expected withholding; zero or less means no estimates. Line 14b subtracts withholding from line 11c; less than the threshold means no estimates. Otherwise, where the first payment is due in April, line 15 is one-quarter of line 14a minus the overpayment actually applied to that installment. Credit it once. Timely payments must cover **each** required installment, not just the annual total. [1040-ES, worksheet](https://www.irs.gov/pub/irs-pdf/f1040es.pdf).
 
-1. **Estimate the 2026 total tax** on the 2026 Estimated Tax Worksheet in [Form 1040-ES (2026)](https://www.irs.gov/pub/irs-pdf/f1040es.pdf): expected AGI (line 1, after the deductible half of self-employment tax), less deductions (line 2d), tax from the 2026 Tax Rate Schedules (line 4), alternative minimum tax (line 5), less credits (line 7), plus self-employment tax (line 9) and other taxes such as Additional Medicare Tax and net investment income tax (line 10), less refundable credits (line 11b). Line 11c is the total 2026 estimated tax. The brackets, deductions and other-tax figures come from `us-federal-income-tax-return-1040`; self-employment tax from `us-schedule-c-and-se-computation`.
-2. **The USD 1,000 test** (line 14b): line 11c minus expected withholding (line 13). Under USD 1,000: no estimated payments are required.
-3. **The zero-tax exception:** no payments are required if the person was a US citizen or resident alien for all of 2025, the 2025 tax year was 12 months, and they had no tax liability for 2025 (total tax was zero, or no return was required). Source: [26 U.S.C. 6654(e)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm).
-
-### Step 2: the required annual payment
-
-4. **Current-year amount** (line 12a): 90% of line 11c (66 2/3% for a farmer or fisherman).
-5. **Prior-year amount** (line 12b): 100% of the 2025 tax, or 110% if 2025 AGI was more than USD 150,000 (USD 75,000 if married filing separately for 2026). The 2025 tax is Form 1040 line 24, reduced by the items listed in the 1040-ES line 12b instructions (unreported Social Security and Medicare tax, tax on excess contributions to tax-favoured accounts, the taxes in Exception 2, and refundable credits). If the 2025 year was less than 12 months or no 2025 return was filed, there is no prior-year amount: use line 12a.
-6. **Joint and separate years.** 2025 separate returns and a 2026 joint return: add both spouses' 2025 tax. A 2025 joint return and 2026 separate returns: each spouse's share is the joint tax times (their 2025 tax figured separately over the total of both spouses' separate taxes). Source: [Pub. 505 (2026), chapter 2](https://www.irs.gov/pub/irs-pdf/p505.pdf).
-7. **Required annual payment** (line 12c) = the smaller of line 12a and line 12b. Paying it through withholding and estimated payments on time avoids the penalty even if more tax is due with the return.
-
-### Step 3: the installments
-
-8. **Regular method:** each installment is 25% of line 12c, minus the share of withholding treated as paid by that date (step 10). Line 15 of the worksheet is one-quarter of line 14a (line 12c minus withholding), less any 2025 overpayment applied.
-9. **Annualized income installment method** (for uneven income): for each period, annualize the income to date (times 4, 2.4, 1.5, 1), figure the tax on it, take the applicable percentage (22.5%, 45%, 67.5%, 90%), and subtract the installments already required. The installment is the smaller of that annualized amount and the regular installment plus any saving carried from an earlier installment; a saving taken early is recaptured by raising the next regular installment ([26 U.S.C. 6654(d)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm)). During 2026 use Pub. 505 Worksheet 2-9; at filing, Form 2210 Schedule AI, which must then be used for all four due dates and filed with the return even if no penalty is owed.
-10. **Withholding counts as paid evenly**: one-quarter of the year's withholding is treated as paid on each due date, whatever the actual dates, unless the taxpayer elects actual dates (Form 2210 box D). Wage withholding and other withholding can be treated separately. Source: [26 U.S.C. 6654(g)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm). So a W-4 increase late in the year cures earlier shortfalls; a late estimated payment does not.
-11. **Changing the estimate mid-year:** refigure line 12c, subtract what has been paid, and spread the rest over the remaining due dates (Pub. 505 chapter 2, Amended estimated tax). An earlier installment below one-quarter of the amended amount may still carry a penalty.
-
-### Step 4: the underpayment penalty (Form 2210)
-
-12. **Underpayment per installment** = required installment minus the amount paid by its due date. Payments are credited to unpaid installments in due-date order, so a late payment first cures the oldest shortfall. Source: [26 U.S.C. 6654(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm).
-13. **Period:** from the due date to the date paid, or 15 April 2027 if earlier.
-14. **Penalty** = underpayment times the underpayment rate times days unpaid over 365, for each rate period. It is simple interest: daily compounding does not apply to the section 6654 addition ([26 U.S.C. 6622(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap67-subchapC-sec6622.htm)). The 1 January to 31 March 2027 rate also applies from 1 to 15 April 2027 ([26 U.S.C. 6621(b)(2)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap67-subchapC-sec6621.htm)).
-15. **Who files Form 2210:** if none of boxes A to E applies, the IRS figures the penalty and bills it; box C (annualized method) and box D (actual withholding dates) require the full form; box A or B requests a waiver. The penalty is reported on the "Estimated tax penalty" line of Form 1040. The 2025 form is the current edition; the 2026 form is expected to follow the same structure ([Form 2210 (2025)](https://www.irs.gov/pub/irs-pdf/f2210.pdf)).
-16. **Waivers:** the IRS may waive the penalty for a casualty, disaster or other unusual circumstance where it would be inequitable, or where the taxpayer retired after age 62 or became disabled in 2025 or 2026 and the underpayment was due to reasonable cause and not wilful neglect ([26 U.S.C. 6654(e)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm)). The IRS also waives the part of the penalty attributable to a qualified farmland sale with a section 1062 election (Notice 2026-3, per Form 1040-ES (2026)).
-
-### Recognising estimated payments in bank data
-
-| Bank line | Treatment |
-| --- | --- |
-| IRS, IRS DIRECT PAY, EFTPS, US TREASURY, 1040-ES, EST TAX, dated 10 to 20 April, June, September or January | Federal estimated tax payment for the installment of that month |
-| State tax payees (CA FTB, NYS, state DOR) | Not federal: state estimated tax |
-| IRS PENALTY, IRS INTEREST | Not an estimated payment |
-| IRS refund, 1040 balance due | Flag for the reviewer: a refund or a prior-year balance, not a 2026 installment |
-
-Federal income tax payments, estimated or not, are not deductible on Schedule C or anywhere else ([26 U.S.C. 275(a)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec275.htm)). W-2 withholding appears on pay stubs, not as separate bank debits.
-
-## Boundary and exception table
+### Boundary and exception table
 
 | Situation | Treatment |
 | --- | --- |
-| 2025 AGI exactly USD 150,000 | 100%: the 110% rule applies only where AGI exceeds USD 150,000 |
-| Married filing separately for 2026, 2025 AGI over USD 75,000 | 110% of the 2025 tax |
-| 2025 return not filed, or 2025 a short year | Prior-year safe harbour not available: only 90% of 2026 tax |
-| No tax liability for a full 12-month 2025, citizen or resident all year | No penalty for 2026, whatever the 2026 tax |
-| 2026 tax minus withholding under USD 1,000 | No penalty |
-| Prior-year AGI not known | Use 110% until the 2025 return is in hand |
-| Withholding alone at or above the required annual payment | No estimated payments needed |
-| W-2 job plus self-employment | Increase withholding with Form W-4 (Step 4(c)) to cover both; withholding counts as paid evenly, so a late-year increase still cures early quarters |
-| No income subject to estimated tax until after 31 March 2026 | Use the annualized method; file Form 2210 with Schedule AI with the 2026 return |
-| Income heavily in the last months (seasonal business, December capital gain) | Annualized method lowers the early installments; the shortfall shows as a large fourth installment |
-| Farmer or fisherman (two-thirds of gross income, 2025 or 2026) | One installment of 66 2/3% of 2026 tax or 100% of 2025 tax (no 110%) by 15 January 2027, or file and pay in full by 1 March 2027 |
-| Overpayment on the 2025 return applied to 2026 | Treated as paid on 15 April 2026 (Form 2210 instructions, Table 1) |
-| Payment made after a due date | Credited to the earliest unpaid installment first; it stops that shortfall accruing from the payment date |
-| Spouses who are legally separated, have different tax years, or where one is a nonresident alien (no election) | Cannot pay jointly; each pays on their own estimated income |
-| Registered domestic partners or civil union partners | Cannot pay jointly; each takes credit only for their own payments |
-| Federally declared disaster with postponed deadlines | Use the postponed date the IRS announces for that area |
-| Fiscal-year individual | Installments due the 15th day of the 4th, 6th and 9th months of the fiscal year and the 1st month of the next |
+| 2025 AGI exactly USD 150,000 (or exactly USD 75,000 for MFS) | No high-income uplift; the statute says “exceeds” |
+| 2025 return not filed, or 2025 a short year | Prior-year safe harbour not available: only 90% of 2026 tax under the ordinary rule; check the zero-tax exception first and farmer/fisher rules separately |
+| Prior-year AGI or tax unknown | No usable prior-year safe-harbour result until established; a provisional higher-percentage budget is not proof of eligibility |
+| Income estimate uncertain or withholding plus self-employment | Compute all taxes and withholding explicitly, label estimates and recheck before each due date; no automatic buffer or assumption that wages cover SE tax |
 
-### Defaults when a fact is missing
+Authority: [26 U.S.C. 6654(d)–(e)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm).
 
-| Missing fact | Default |
+### Spouses, withholding and uneven income
+
+- When separate 2025 returns become a joint 2026 return, combine both spouses’ prior-year taxes. When a joint 2025 return becomes separate 2026 returns, apportion the joint tax using each spouse’s hypothetical separate 2025 tax **with the filing status used for 2026**, divided by their combined hypothetical separate taxes. Establish the applicable AGI test as well. [1040-ES, line 12b](https://www.irs.gov/pub/irs-pdf/f1040es.pdf).
+- Joint estimates are unavailable for spouses legally separated under a decree, spouses with different tax years, or a nonresident-alien spouse without an election to resident treatment. Registered domestic/civil-union partners who are not married under state law cannot pay jointly and claim only their own payments. [Pub. 505, Married Taxpayers](https://www.irs.gov/publications/p505).
+- Withholding normally counts one-quarter on each due date, even if increased late in the year. Actual withholding dates can instead be established; wage and other withholding may be treated separately. A sufficient W-4 increase (or W-4P for periodic pensions) can therefore address earlier shortfalls. A late estimated payment stops accrual only when paid. Do not promise relief unless the amounts actually cover the requirements. [26 U.S.C. 6654(g)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm); [1040-ES, Increase Your Withholding](https://www.irs.gov/pub/irs-pdf/f1040es.pdf).
+- For seasonal income, a late capital gain, a mid-year move from wages to SE income, or no estimated-tax income in the first period, use **Pub. 505 Worksheet 2-9** to test annualization. Include period-specific deductions, credits, AMT, SE tax and other applicable taxes. Compute the cumulative percentage of annualized tax, subtract earlier **required installments**, and compare with the regular installment plus unrecovered earlier reductions. Then subtract prior payments and withholding as the worksheet directs. File Form 2210 with Schedule AI for all four periods when using this method, even if no penalty results. [Pub. 505, Annualized Income Installment Method and Worksheet 2-9](https://www.irs.gov/publications/p505); [1040-ES, No income subject to estimated tax during first payment period](https://www.irs.gov/pub/irs-pdf/f1040es.pdf).
+- If the annual estimate changes, use **Pub. 505 Worksheet 2-12**, not equal division of the remaining balance. The next payment catches up to the cumulative percentage for that due date, less previous estimates; the worksheet then allocates the remainder. Earlier shortfalls can still carry a penalty. [Pub. 505, Change in estimated tax and Worksheet 2-12](https://www.irs.gov/publications/p505).
+- An elected prior-year overpayment generally counts from April 15 if the prior-year tax was fully paid before that date. If a later payment generated it, use that later payment date. This matters before using it to cure early installments. [Form 2210 instructions, line 11](https://www.irs.gov/instructions/i2210).
+
+## Deadlines and filing
+
+Ordinary calendar-year 2026 return and balance: **15 April 2027**, subject to applicable relief; an extension extends filing, not payment. [26 U.S.C. 6072(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm); [IRS filing extensions](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return).
+
+Fiscal-year individuals use the fifteenth day of months four, six and nine of the current year and month one of the following year. Weekend/legal-holiday dates move to the next business day. Check the specific IRS disaster announcement for the taxpayer’s eligibility, covered actions and postponed dates. [1040-ES, Fiscal year taxpayers](https://www.irs.gov/pub/irs-pdf/f1040es.pdf); [Form 2210 instructions, Federally declared disaster](https://www.irs.gov/instructions/i2210).
+
+Payment options include IRS Online Account, free bank-account Direct Pay, EFTPS (enrolment required), electronic funds withdrawal with e-filing, and card/digital-wallet providers (fee charged). A mailed check/money order uses the correct-year voucher payable to “United States Treasury.” Use the US postmark date, which can differ from the day deposited. Payments are in USD; digital assets are not accepted. More than four payments are allowed if sufficient amounts are paid by each due date. [1040-ES, How To Pay and Payment Due Dates](https://www.irs.gov/pub/irs-pdf/f1040es.pdf).
+
+## Penalties and interest
+
+For each installment, underpayment is the positive excess of the required amount over timely payments. Credit later payments against the **oldest** unpaid installment. The period ends when that portion is paid or on 15 April 2027, whichever is earlier. [26 U.S.C. 6654(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm).
+
+For each rate period: underpayment × annual rate × days unpaid / 365 for these non-leap-year cases. This is simple interest: section 6622(b) excludes section 6654 additions from daily compounding. The rate is the federal short-term rate plus three percentage points. The January–March rate also governs the first fifteen days of April for this penalty. **No 2027 rate is proved in this Guide: a penalty running into 2027 is on hold until the applicable published rate is read. Never carry forward a rate by assumption.** [26 U.S.C. 6621(a)(2), (b)(2)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap67-subchapC-sec6621.htm); [26 U.S.C. 6622(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap67-subchapC-sec6622.htm); [Form 2210 instructions, penalty worksheet](https://www.irs.gov/instructions/i2210).
+
+The 2025 Form 2210 was the edition read. It lets the IRS compute the penalty in ordinary cases; boxes B (partial waiver), C (annualization) and D (actual withholding dates) require self-computation and attachment, while A (full waiver) and E (different joint/separate filing status with a lower prior-year base) require page one under its flowchart. Use the final **2026** form and instructions when available for a 2026 filing; do not assume unchanged box or line numbers. [2025 Form 2210](https://www.irs.gov/pub/irs-prior/f2210--2025.pdf).
+
+The IRS decides waivers for casualty/disaster/unusual circumstances where imposing the addition would be inequitable, or retirement after reaching age 62/disability in 2025 or 2026 with reasonable cause and no wilful neglect. A waiver is not automatic. For the request and documentation: **Check this point with one of our partner accountants.** [26 U.S.C. 6654(e)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm).
+
+## Cross-border points and referrals
+
+| Code/topic | Action |
 | --- | --- |
-| 2025 AGI | Use 110% of the 2025 tax until the 2025 return is seen |
-| Whether the 2025 return was filed | Use only the 90% current-year amount until filing is confirmed (no prior-year safe harbour without a filed 12-month return) |
-| Which quarter's underpayment rate applies | Use the rate published for that quarter on the IRS page; never extend a rate into an unpublished quarter |
-| W-2 withholding plus self-employment income | Compute both explicitly; never assume the W-2 withholding covers the self-employment tax |
-| Whether the annualized method helps | Start from equal installments and flag the annualized method for the reviewer if income is uneven |
-| Mid-year income uncertain | Annualize the income to date and recheck before each due date; label the result as an estimate |
+| R-US-ET-1: corporations | Use `us-form-1120-c-corp` |
+| R-US-ET-2: trusts and estates | Outside this individual computation. Check this point with one of our partner accountants. |
+| R-US-ET-3: state estimates | Use `us-state-estimated-tax-safe-harbors-matrix` and the state Guide |
+| R-US-ET-4: nonresident aliens | Outside this computation; use Form 1040-ES (NR). Check this point with one of our partner accountants. |
+| R-US-ET-5: waiver requests | Check this point with one of our partner accountants. |
+| R-US-ET-6: section 965, section 1062 farmland election, subpart F annualization | No usable special-rule calculation here. Check this point with one of our partner accountants. |
+| R-US-ET-7: death during the year | No conclusion about remaining installments or estate liability. Check this point with one of our partner accountants. |
+| Premium tax credit reconciliation, AMT calculation, foreign earned income | Use the applicable return/form computation; if facts or treatment are unresolved, check this point with one of our partner accountants. |
 
-### Red flags
+Use `us-schedule-c-and-se-computation` for Schedule C/SE and the deductible half of SE tax; `us-form-1040-individual-return` or the applicable current-year return Guide for underlying income tax, AMT, Additional Medicare Tax and NIIT; `us-qbi-deduction` for QBI; and `us-sole-prop-bookkeeping` for transactions. Do not apply 2025 return amounts to 2026 estimates. Higher investment income may affect estimates through the computed NIIT; this Guide does not compute NIIT from a bank description.
 
-| Sign | Why it matters |
-| --- | --- |
-| A large 2025 balance due on the return | The client probably underpaid 2025 too; check the 110% rule for 2026 |
-| Income up sharply in 2026 | The 90% route is risky; the prior-year route gives certainty |
-| A large gain or bonus late in 2026 | The annualized method may remove penalties on earlier installments |
-| Filing status changes between 2025 and 2026 | The 2025 tax must be combined or split before the 100% or 110% test |
+## Recognising payments in bank data
+
+IRS, INTERNAL REVENUE SERVICE, IRS DIRECT PAY, EFTPS, ELECTRONIC FED TAX, US TREASURY, TREASURY 310, 1040-ES/1040ES and ESTIMATED TAX PAYMENT/EST TAX are **candidates only**. Timing around April/June/September/January 10–20 is a clue. Confirm the tax type, taxpayer, designated year and payment date against the IRS payment record; a payee or date alone is not classification evidence. Separate state payees (STATE TAX, CA FTB, NYS, IL DOR), FICA/Social Security, penalties/interest, refunds and annual 1040 balances. W-2 withholding comes from payroll records, not an assumed separate bank debit.
+
+Confirmed personal federal income-tax payments are not Schedule C deductions. [IRS Pub. 334, Taxes](https://www.irs.gov/publications/p334).
 
 ## Worked cases
 
+Unless a case says otherwise, the supplied “tax” is already figured on the applicable estimated-tax worksheet, the prior return was filed for twelve months and the taxpayer qualifies for the ordinary individual rules. A hypothetical payment scheduled after the read date is an arithmetic scenario, not evidence it occurred.
+
 **Case 1, a decision: pay by the prior-year safe harbour or by the current-year estimate?** A single freelancer had 2025 AGI of USD 180,000 and 2025 tax (as figured for line 12b) of USD 40,000. Business is growing and the 2026 tax is estimated at USD 60,000. There is no withholding.
 
-Prior-year: 2025 AGI is over USD 150,000, so 110% x USD 40,000 = USD 44,000, or USD 11,000 a quarter. Current-year: 90% x USD 60,000 = USD 54,000, or USD 13,500 a quarter. The required annual payment is the smaller, USD 44,000. Paying USD 11,000 on each of the four dates avoids any penalty however high 2026 income turns out, keeps USD 10,000 in the business until April 2027, and leaves USD 16,000 to pay with the return by 15 April 2027 (set that aside). The current-year route is the cheaper one only if the 2026 tax is below USD 48,888.89 (90% of which is USD 44,000), and it carries risk: if the real 2026 tax is higher than estimated, 90% of the real figure is what counts. Recommend the prior-year route when income is rising. When income is falling sharply (for example a 2026 tax of USD 30,000, giving a 90% figure of USD 27,000), the current-year route is cheaper, but recheck the estimate before each due date.
+Prior-year: 2025 AGI is over USD 150,000, so 110% x USD 40,000 = USD 44,000, or USD 11,000 a quarter. Current-year: 90% x USD 60,000 = USD 54,000, or USD 13,500 a quarter. The required annual payment is the smaller, USD 44,000. Paying USD 11,000 on each of the four dates avoids the estimated-tax penalty if the 2025 return is filed for a full 12-month year and the prior-year tax is correctly figured, however high 2026 income turns out, keeps USD 10,000 in the business until April 2027, and leaves USD 16,000 to pay with the return by 15 April 2027 (set that aside). The current-year route is the cheaper one only if the 2026 tax is below USD 48,888.89 (90% of which is USD 44,000), and it carries risk: if the real 2026 tax is higher than estimated, 90% of the real figure is what counts. Recommend the prior-year route when income is rising. When income is falling sharply (for example a 2026 tax of USD 30,000, giving a 90% figure of USD 27,000), the current-year route is cheaper, but recheck the estimate before each due date.
 
 ```oa-check
 name: Prior-year against current-year safe harbour, single, 2026
@@ -219,52 +178,141 @@ expected:
   total_penalty: 238.91
 ```
 
-## When to refuse or refer
 
-| Code | Situation | Action |
+### Historical 2025 cases: original inputs retained
+
+These cases use the 2025 rules and dates, not the 2026 calendar above. [2025 Form 1040-ES](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf).
+
+| 2025 installment | Due date | Source |
 | --- | --- | --- |
-| R-US-ET-1 | Corporation (Form 1120-W, section 6655) | Refer: `us-form-1120-c-corp` |
-| R-US-ET-2 | Trust or estate (Form 1041-ES) | Refuse: different rules on AGI and installments |
-| R-US-ET-3 | State estimated tax | Refer: `us-state-estimated-tax-safe-harbors-matrix` and the state skill |
-| R-US-ET-4 | Nonresident alien (Form 1040-ES (NR), three installments under section 6654(j)) | Refuse: outside this skill |
-| R-US-ET-5 | Penalty waiver request | Compute only; a reviewer decides whether to request it (Form 2210 box A or B) |
-| R-US-ET-6 | Section 965 net tax liability, section 1062 farmland installment election, or subpart F income in the annualized method | Refer: special rules in the Form 2210 instructions and Notice 2026-3 |
-| R-US-ET-7 | The taxpayer died during 2026 | Refer: which installments remain due after death is a reviewer point |
+| 1st | April 15, 2025 | [2025 Form 1040-ES](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf) |
+| 2nd | June 16, 2025 | [2025 Form 1040-ES](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf) |
+| 3rd | September 15, 2025 | [2025 Form 1040-ES](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf) |
+| 4th | January 15, 2026 | [2025 Form 1040-ES](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf) |
 
-Never make or schedule payments for the client, never recommend deliberate underpayment, never promise that a mid-year plan removes every penalty, and label all amounts as estimates until a reviewer confirms them.
+Filing the 2025 return and paying the entire balance by **February 2, 2026** avoids only the fourth installment penalty. An eligible 2025 farmer/fisher instead has the **March 2, 2026** filing-and-full-payment alternative. [2025 Form 1040-ES, Payment Due Dates and Farming and fishing](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf).
 
-## Filing and payment
+**Historical examples 1–4 / tests 1–4 and 6:** single, 2024 AGI USD 95,000, 2024 tax USD 18,000, 2025 expected tax USD 22,000, no withholding: required USD 18,000, quarterly USD 4,500. MFJ, 2024 AGI USD 210,000, tax USD 42,000, 2025 expected USD 55,000, no withholding: required USD 46,200, quarterly USD 11,550. MFJ, 2024 AGI USD 120,000, tax USD 20,000, spouse withholding USD 25,000 and original 2025 expected tax USD 28,000: withholding covers the USD 20,000 prior-year base; no estimates. Single, 2025 expected tax USD 5,200 and part-time withholding USD 4,500: net USD 700, no estimates.
 
-Pay through IRS Online Account, IRS Direct Pay (free, from a bank account), EFTPS (enrolment needed), electronic funds withdrawal when e-filing, or debit or credit card or digital wallet (provider fee). By mail, use the 2026 Form 1040-ES voucher with a check or money order payable to "United States Treasury"; a mailed payment counts as paid on the USPS postmark date, which is the date the item is processed at a facility, not always the day it was posted. Payments must be in US dollars; digital assets are not accepted. More than four payments are allowed as long as each period's total reaches the amount due. Source: [Form 1040-ES (2026)](https://www.irs.gov/pub/irs-pdf/f1040es.pdf).
+```oa-check
+name: Original 2025 safe-harbour and threshold cases
+inputs:
+  single_2024_agi: 95000
+  single_2024_tax: 18000
+  single_2025_tax: 22000
+  single_withholding: 0
+  joint_2024_agi: 210000
+  joint_2024_tax: 42000
+  joint_2025_tax: 55000
+  joint_withholding: 0
+  wages_case_2024_agi: 120000
+  wages_case_2024_tax: 20000
+  wages_case_2025_tax: 28000
+  spouse_withholding: 25000
+  small_2025_tax: 5200
+  part_time_withholding: 4500
+steps:
+  - single_current: single_2025_tax * 0.90
+  - single_required: min(single_2024_tax, single_current)
+  - single_quarter: (single_required - single_withholding) / 4
+  - joint_prior: joint_2024_tax * 1.10
+  - joint_current: joint_2025_tax * 0.90
+  - joint_required: min(joint_prior, joint_current)
+  - joint_quarter: (joint_required - joint_withholding) / 4
+  - wages_required: min(wages_case_2024_tax, wages_case_2025_tax * 0.90)
+  - wages_estimates: max(0, wages_required - spouse_withholding)
+  - small_net: small_2025_tax - part_time_withholding
+expected:
+  single_current: 19800
+  single_required: 18000
+  single_quarter: 4500
+  joint_prior: 46200
+  joint_current: 49500
+  joint_required: 46200
+  joint_quarter: 11550
+  wages_required: 20000
+  wages_estimates: 0
+  small_net: 700
+```
 
-Payments are claimed on the 2026 Form 1040, due **15 April 2027**; an extension extends filing, not payment. Form 2210 (with Schedule AI where used) is attached to that return.
+**Historical example 5, bank classification:** `04/15/2025 ; IRS DIRECT PAY EST TAX ; DEBIT ; -4,500.00 ; USD`. Candidate first 2025 installment of USD 4,500; confirm the designated taxpayer, year and tax type. If confirmed personal federal income tax, exclude from Schedule C deductions. [Pub. 334](https://www.irs.gov/publications/p334).
 
-## Completion checklist
+**Historical test 5, penalty:** required annual USD 20,000 / USD 5,000 each; actual payments USD 3,000, USD 5,000, USD 5,000 and USD 5,000 (total USD 18,000), assumed paid on the four 2025 due dates. Preserve the original 7% rate assumption. If the residual USD 2,000 is paid on 15 April 2026, the total penalty is USD 140. The shortfall moves from April to June to September to January as each later payment first clears the older balance; it is incorrect to say later installments have no shortfall. Actual payment dates or relief change the result. [26 U.S.C. 6654(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm); [IRS rates](https://www.irs.gov/payments/quarterly-interest-rates).
 
-- 2026 total tax includes self-employment tax, Additional Medicare Tax, net investment income tax and other Schedule 2 taxes, less refundable credits.
-- USD 1,000 test and the zero-tax 2025 exception checked.
-- 2025 tax figured per the line 12b instructions, 12-month year and filed return confirmed, 100% or 110% chosen on 2025 AGI (and the MFS limit).
-- Joint and separate changes between 2025 and 2026 handled.
-- Both safe harbours shown, the smaller taken, and the decision explained.
-- Withholding from every source counted as paid evenly unless actual dates help.
-- Annualized method offered where income is uneven, and Schedule AI filed if used.
-- Four 2026 dates given, and the 1 February 2027 option mentioned.
-- Penalty, if any, figured per installment at the 2026 quarterly rates, simple interest.
-- State estimated tax passed to the state skill.
+```oa-check
+name: Original 2025 penalty with oldest-first allocation
+inputs:
+  annual_required: 20000
+  quarterly_required: 5000
+  q1_paid: 3000
+  q2_paid: 5000
+  q3_paid: 5000
+  q4_paid: 5000
+  rate: 0.07
+  days_to_june16: 62
+  days_june16_to_sep15: 91
+  days_sep15_to_jan15: 122
+  days_jan15_to_apr15: 90
+steps:
+  - total_paid: q1_paid + q2_paid + q3_paid + q4_paid
+  - first_shortfall: quarterly_required - q1_paid
+  - june_shortfall: first_shortfall + quarterly_required - q2_paid
+  - september_shortfall: june_shortfall + quarterly_required - q3_paid
+  - january_shortfall: september_shortfall + quarterly_required - q4_paid
+  - penalty: (first_shortfall * days_to_june16 + june_shortfall * days_june16_to_sep15 + september_shortfall * days_sep15_to_jan15 + january_shortfall * days_jan15_to_apr15) * rate / 365
+expected:
+  total_paid: 18000
+  first_shortfall: 2000
+  june_shortfall: 2000
+  september_shortfall: 2000
+  january_shortfall: 2000
+  penalty: 140
+```
+
+**Historical first-year / annualized test:** original 2025 single taxpayer, no prior return, income Q1 USD 5,000, Q2 USD 8,000, Q3 USD 12,000, Q4 USD 75,000, total SE income USD 100,000, expected tax USD 25,000, no withholding. The current-year annual amount is USD 22,500. **No usable zero-payment conclusion follows from “no prior return.”** Establish the full-year citizenship/residence and zero-liability exception. If it does not apply, no prior-year safe harbour is available. The four calendar-quarter income figures also do not identify the March/May/August cumulative bases, deductions or credits needed for annualization. Exact installments are on hold until those inputs are established. This also corrects the shortened historical test “first year, no prior return.” [2025 Form 1040-ES, Exception and General Rule](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf); [Form 2210, Schedule AI instructions](https://www.irs.gov/instructions/i2210).
+
+**Historical farmer test:** at least two-thirds farming income, expected 2025 tax USD 25,000. The current-year component is USD 16,666.67; the eligible prior-year tax could make the required amount lower. Confirm the gross-income eligibility year and prior-year tax. No usable final installment amount until then. If eligible, pay by 15 January 2026 or file and pay the entire tax by 2 March 2026. [2025 Form 1040-ES](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf); [26 U.S.C. 6654(i)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm).
+
+```oa-check
+name: Original 2025 first-year and farmer arithmetic, conditional outputs
+inputs:
+  q1_income: 5000
+  q2_income: 8000
+  q3_income: 12000
+  q4_income: 75000
+  first_year_expected_tax: 25000
+  first_year_withholding: 0
+  farmer_expected_tax: 25000
+steps:
+  - total_se_income: q1_income + q2_income + q3_income + q4_income
+  - current_year_component: first_year_expected_tax * 0.90
+  - farmer_current_component: farmer_expected_tax * 2 / 3
+expected:
+  total_se_income: 100000
+  current_year_component: 22500
+  farmer_current_component: 16666.67
+```
+
+**Historical seasonal edge case:** USD 20,000 earned in Q1–Q3 combined and a USD 180,000 project payment in Q4 (USD 200,000 combined). The original case did not give a tax year, period breakdown, deductions, withholding or prior-year tax. Preserve those unknowns: no usable installment amounts or conclusion that either method is better. Test annualization once the cumulative periods and tax inputs are established; **Check this point with one of our partner accountants.**
+
+## Ask the client first
+
+Obtain the immediately preceding return and transcript where needed (filed status, full-year coverage, correctly adjusted tax, AGI and joint/separate status); current-year filing status; expected income, deductions, credits and withholding for the cumulative periods; dated estimates and overpayment funding; farming/fishing gross income; residency, fiscal-year, disaster, death, retirement/disability and special-election facts. Read available records before asking. Hold any result that depends on an unknown fact.
+
+Before delivery, check each exception, the year of every input and rate, both available annual bases, timely coverage of each installment, withholding allocation, annualization/recapture where relevant, and any state referral. Never schedule payments, recommend deliberate underpayment or apply a discretionary waiver yourself. Label outputs as estimates until professional review.
+
+**Circular 230 §10.37:** this computational Guide uses the stated facts and assumptions. Consider all relevant facts, resolve missing or conflicting inputs, and obtain qualified professional review before filing or acting; no filing position or penalty protection is promised.
 
 ## Sources
 
-| Source | URL | Read on |
-| --- | --- | --- |
-| Form 1040-ES (2026). Read for the General Rule (USD 1,000, 90%, 100%), Higher income taxpayers (USD 150,000, USD 75,000, 110%), Payment Due Dates (15 April, 15 June, 15 September 2026, 15 January 2027, 1 February 2027), farming and fishing (15 January 2027, 1 March 2027), fiscal-year dates, postmark rule, payment methods and the 2026 Estimated Tax Worksheet lines 1 to 15. | https://www.irs.gov/pub/irs-pdf/f1040es.pdf | 2026-11-13 |
-| IRS Pub. 505 (2026). Read for chapter 2: Figure 2-A, married taxpayers and joint payments, the joint and separate split of the 2025 tax, amended estimated tax, and Worksheet 2-9 (annualization amounts 4, 2.4, 1.5, 1; 22.5% to 90%; prorated Social Security limits USD 46,125, 76,875, 123,000, 184,500). | https://www.irs.gov/pub/irs-pdf/p505.pdf | 2026-11-13 |
-| Form 2210 (2025). Read for Part I, Part II boxes A to E and Schedule AI (the current edition; the 2026 form is not yet published). | https://www.irs.gov/pub/irs-pdf/f2210.pdf | 2026-11-13 |
-| Instructions for Form 2210 (2025). Read for Waiver of Penalty, Table 1 (an applied overpayment is treated as paid on 15 April), the penalty worksheet day count, and the rule that Schedule AI used for one due date must be used for all. | https://www.irs.gov/pub/irs-pdf/i2210.pdf | 2026-11-13 |
-| IRS quarterly interest rates page. Read for the 2026 underpayment rates: 7% (1st quarter, IRB 2025-48), 6% (2nd, IRB 2026-8), 7% (3rd, IRB 2026-22), 7% (4th, IRB 2026-36). | https://www.irs.gov/payments/quarterly-interest-rates | 2026-11-13 |
-| 26 U.S.C. 6654 (govinfo). Read for (a) the addition to tax, (b) amount, period and order of crediting, (c) due dates, (d) required annual payment, 110% and USD 75,000, annualized installments, (e) the USD 1,000, no-liability and waiver exceptions, (f) meaning of tax, (g) withholding treated as paid evenly, (h) the January 31 rule, (i) farmers and fishermen, (j) nonresident aliens. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm | 2026-11-13 |
-| 26 U.S.C. 6621 (govinfo). Read for (a)(2) the underpayment rate (federal short-term rate plus 3 points) and (b)(2)(B) the first 15 days of April. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap67-subchapC-sec6621.htm | 2026-11-13 |
-| 26 U.S.C. 6622 (govinfo). Read for (b): no daily compounding for the section 6654 addition. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap67-subchapC-sec6622.htm | 2026-11-13 |
-| 26 U.S.C. 275 (govinfo). Read for (a)(1): no deduction for federal income taxes. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec275.htm | 2026-11-13 |
-| Public Law 119-21 (One Big Beautiful Bill Act). Read to confirm it does not amend sections 6621, 6622 or 6654. | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
-
-Not yet confirmed: the underpayment rate for 1 January to 31 March 2027 (which also applies to 1 to 15 April 2027 for 2026 penalties) was not yet published when read, so no penalty in this skill runs into 2027; the 2026 Form 2210 and its instructions were not yet published, so 2026 Form 2210 line numbers are not quoted; the old rule that installments stop at death was not found on an official page today and is now a referral (R-US-ET-7).
+| Official source and passages actually read | Read date |
+| --- | --- |
+| [Form 1040-ES (2026)](https://www.irs.gov/pub/irs-pdf/f1040es.pdf): General Rule, exceptions, higher income, withholding, special taxes, line 12b reductions/split, worksheet, dates, farming/fishing, fiscal years, payment methods/postmark and section 1062 boundary | 2026-11-26 |
+| [Pub. 505 (2026)](https://www.irs.gov/publications/p505): Married Taxpayers, annualization, Worksheets 2-9 and 2-12 including catch-up and recapture | 2026-11-26 |
+| [Form 1040-ES (2025)](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf): historical general/zero-tax/farming rules, dates and filing alternatives | 2026-11-26 |
+| [2025 Form 2210](https://www.irs.gov/pub/irs-prior/f2210--2025.pdf) and [instructions](https://www.irs.gov/instructions/i2210): flowchart, boxes, annualization, waiver, disaster, overpayment funding dates, oldest-first payment allocation and day-count worksheet. Final 2026 filing details remain on hold | 2026-11-26 |
+| [IRS quarterly rates](https://www.irs.gov/payments/quarterly-interest-rates): 2025 and 2026 individual underpayment rows. No 2027 rate relied on | 2026-11-26 |
+| [26 U.S.C. 6654](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm): (b)–(i), checked against operative 2026 IRS instructions above | 2026-11-26 |
+| [26 U.S.C. 6621](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap67-subchapC-sec6621.htm): (a)(2) and (b)(2)(B); [6622(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap67-subchapC-sec6622.htm): simple-interest exception | 2026-11-26 |
+| [26 U.S.C. 6072(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm) and [IRS extensions](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return): ordinary filing date and payment boundary | 2026-11-26 |
+| [Pub. 334, Taxes](https://www.irs.gov/publications/p334): no federal income-tax deduction; exact completed quote reused from `us-sole-prop-bookkeeping` proof | 2026-11-26 |
