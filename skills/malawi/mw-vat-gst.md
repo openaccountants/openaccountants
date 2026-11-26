@@ -4,16 +4,16 @@ description: "Malawi draft for 2026 ordinary domestic VAT working papers and reg
 jurisdiction: MW
 tax_year: 2026
 tax_year_notes: "Intended 2026 research draft; Act 3/2026 read and relevant effects identified; appointed commencement chain unresolved; live use held."
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.4
+version: 1.5
 tier: 2
 domain: vat-gst
 type: situation-rules
 ---
 
-# Malawi VAT: current domestic computation and digital-supply boundary v1.4
+# Malawi VAT: current domestic computation and digital-supply boundary v1.5
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 
@@ -37,7 +37,7 @@ Exemption and zero rating depend on the current statutory schedules and product 
 
 ## The base
 
-Compute output VAT on the confirmed taxable consideration for the period, then deduct only eligible input. VAT 30(1) requires wholly/exclusively/necessarily business use and a taxable supply, supported by the compliant tax invoice or import entry. Do not claim an input twice or more than twelve months after deduction accrued; distinguish that deduction timing from the shorter amended refund-claim timing. Exempt-supply input is blocked. Business/personal use must be apportioned; mixed taxable/exempt use needs VAT 32 direct attribution and its apportionment rules, rather than automatic full recovery. [VAT 30–32](https://elibrary.rat.gov.mw/server/api/core/bitstreams/90e7cd40-7761-46f6-9b5a-a0e072208879/content). Exports also require evidence showing export-proceeds deposit into a Malawi financial institution under the 2023 amendment; this working paper does not execute an export refund. [Act 18/2023 s 2](https://elibrary.rat.gov.mw/server/api/core/bitstreams/33eae3f0-090c-4dcc-b47a-cfa2ad663851/content).
+Compute output VAT on the confirmed taxable consideration for the period, then deduct only eligible input. VAT 30(1) requires wholly/exclusively/necessarily business use and a taxable supply, supported by the compliant tax invoice or import entry. Do not claim an input twice or more than six months after deduction accrued (VAT 30(4), amended from twelve months to six months by [Act 5/2021 s 3](https://www.mra.mw/admin/storage/downloads/VAT_Act_Amendment_2021.pdf)); keep that six-month input-deduction limit distinct from the separate six-month excess-credit refund-claim window under amended TAA 81(1). Exempt-supply input is blocked. Business/personal use must be apportioned; mixed taxable/exempt use needs VAT 32 direct attribution and its apportionment rules, rather than automatic full recovery. [VAT 30–32](https://elibrary.rat.gov.mw/server/api/core/bitstreams/90e7cd40-7761-46f6-9b5a-a0e072208879/content). Exports also require evidence showing export-proceeds deposit into a Malawi financial institution under the 2023 amendment; this working paper does not execute an export refund. [Act 18/2023 s 2](https://elibrary.rat.gov.mw/server/api/core/bitstreams/33eae3f0-090c-4dcc-b47a-cfa2ad663851/content).
 
 Act 5/2026 replaces 30(3): no deduction for exempt-supply purchases/imports or digital-service transactions by a non-resident digital supplier/intermediary/marketplace operator. The simple domestic cases below exclude those supplies, mixed use, restricted vehicle/entertainment input and refund eligibility. Excess credit/refund follows TAA, with the written computation and evidence required by 81; a positive credit is not proof of a payable cash refund. [Act 5/2026 s 8](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content); [2021 VAT 31 cutover](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content); [TAA 81](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content).
 
@@ -98,6 +98,7 @@ Get the transaction date, tax regime/registration, annual turnover, goods/servic
 | [VAT principal official-library consolidation](https://elibrary.rat.gov.mw/server/api/core/bitstreams/90e7cd40-7761-46f6-9b5a-a0e072208879/content), ss 11,24–32,34; historical 2014 text reconciled only as stated | 2026-11-01 |
 | [Act 37/2025](https://elibrary.rat.gov.mw/server/api/core/bitstreams/b0ea0034-2169-45bd-9afe-c7321fb17337/content), s 2 standard rate | 2026-11-01 |
 | [Gazette 2026 bundle](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content), VAT Act 5 ss 2–11 and TAA Act 6 s 4; printed operative text read | 2026-11-01 |
+| [Act 5/2021](https://www.mra.mw/admin/storage/downloads/VAT_Act_Amendment_2021.pdf), s 3 amending VAT 30(4) input-tax deduction limit from twelve months to six months | 2026-11-26 |
 | [Act 18/2023](https://elibrary.rat.gov.mw/server/api/core/bitstreams/33eae3f0-090c-4dcc-b47a-cfa2ad663851/content), s 2 input/export documentation | 2026-11-01 |
 | [Act 14/2024](https://elibrary.rat.gov.mw/server/api/core/bitstreams/f90f7edf-5012-4ad7-a6f7-bc9866c31195/content), PartI and PartII commencement/invoicing text | 2026-11-01 |
 | [Act 15/2025](https://elibrary.rat.gov.mw/server/api/core/bitstreams/d650225f-a811-49bf-aa40-f4757d8c7225/content), s 2 bread exemption | 2026-11-01 |
