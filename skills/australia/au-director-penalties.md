@@ -16,14 +16,14 @@ type: situation-rules
 tax_year: 2026
 tax_year_notes: "2026-27 (QE days from 1 July 2026; saved law for earlier quarters)"
 tier: 2
-last_updated: 2026-11-11
-version: 0.1
+last_updated: 2026-11-26
+version: 0.2
 depends_on:
   - workflow-base
 license: FSL-1.1-ALv2
 ---
 
-# Australian Director Penalties (Division 269) v0.1
+# Australian Director Penalties (Division 269) v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -65,12 +65,12 @@ Every figure below was read on 2 November 2026 in TAA Schedule 1, compilation 22
 | New director | Liable if still under the obligation 30 days after becoming a director; penalty due at the end of that 30th day | s 269-20(3)-(4) ([TAA 1953, compilation 227, Sch 1 Div 269](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html)) |
 | PAYG withholding and GST lockdown | Where the administration, restructuring or winding up comes after the last day of the 3 months after the due day, remission that way is lost to the extent of amounts not reported by that day | s 269-30(2) items 1, 5 ([TAA 1953, compilation 227, Sch 1 Div 269](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html)) |
 | Estimates of PAYG withholding or GST | Same 3-month test, measured from the underlying due day (GST: the return due day); lockdown to any extent | s 269-30(2) items 2, 6 ([TAA 1953, compilation 227, Sch 1 Div 269](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html)) |
-| New director's 3 months | For a person who became a director during or after the 3 months, they run from the day the person became a director; items 1, 2, 5 and 6 only | s 269-30(3) ([TAA 1953, compilation 227, Sch 1 Div 269](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html)) |
+| New director's 3 months | Where the person became a director during or after the original 3 months, use the 3 months after the day they became a director. Applies to items 1, 2, 5 and 6. | s 269-30(3) ([TAA 1953, compilation 227, Sch 1 Div 269](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html)) |
 | SGC due day, QE day from 1 July 2026 | The earlier of: the first day after the end of the 60-day period starting on the QE day; or the day the charge is payable under s 36(4) of the *Superannuation Guarantee (Administration) Act 1992* (SGAA), which is the day an assessment is made. The first limb applies even if the charge has not yet been assessed | s 269-10(3) (substituted by Payday Super Act Sch 1 item 169); SGAA s 36(4) ([TAA 1953, compilation 227, Sch 1 Div 269](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html)) |
 | SGC lockdown, QE day from 1 July 2026 | Remission by administration, restructuring or winding up after the due day is lost: if a voluntary disclosure statement for the QE day was lodged under SGAA s 33 by the due day, to the extent the charge worked out from it is less than the charge payable; otherwise to any extent | s 269-30(2) item 3 (substituted by Payday Super Act Sch 1 item 171) ([TAA 1953, compilation 227, Sch 1 Div 269](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html)) |
-| Payday Super application | Applies to QE days on or after 1 July 2026; the old law continues for SGC relating to quarters ending before that day | Payday Super Act s 2 (commenced 1 July 2026); Sch 1 items 182, 183 ([Payday Super Act](https://www.legislation.gov.au/C2025A00057/asmade/2025-11-07/text/original/epub/OEBPS/document_1/document_1.html)) |
-| SGC due day, quarter ending before 1 July 2026 | The day the SG statement for the quarter had to be lodged under old SGAA s 33; the ATO states it as one month and 28 days after the quarter ends | s 269-10(3) as at 30 June 2026 (compilation 224); PS LA 2011/18 Table 1 ([TAA 1953, compilation 227, Sch 1 Div 269](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html)) |
-| SGC lockdown, quarter ending before 1 July 2026 | Lost to the extent the SG statement amount fell short, or to any extent if no statement was lodged by the due day | s 269-30(2) item 3 as at 30 June 2026 (compilation 224) ([TAA 1953, compilation 227, Sch 1 Div 269](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html)) |
+| Payday Super application | Applies to QE days on or after 1 July 2026. The old law continues for SGC relating to quarters ending before that day. | Payday Super Act s 2 (commenced 1 July 2026); Sch 1 items 182, 183 ([Payday Super Act](https://www.legislation.gov.au/C2025A00057/asmade/2025-11-06/text/1/pdf)) |
+| SGC due day, quarter ending before 1 July 2026 | The day the SG statement for the quarter had to be lodged under old SGAA s 33. Check the 28th day of the second month after the quarter and any applicable extension. | s 269-10(3) as at 30 June 2026, PS LA 2011/18 Table 1 ([TAA 1953, compilation 224, Sch 1 Div 269](https://www.legislation.gov.au/C1953A00001/2026-06-30/2026-06-30/text/original/epub/OEBPS/document_2/document_2.html)) |
+| SGC lockdown, quarter ending before 1 July 2026 | After the due day, administration, restructuring or winding up cannot remit the penalty to the extent the SG statement amount fell short, or to any extent if no statement was lodged by the due day. | s 269-30(2) item 3 as at 30 June 2026 ([TAA 1953, compilation 224, Sch 1 Div 269](https://www.legislation.gov.au/C1953A00001/2026-06-30/2026-06-30/text/original/epub/OEBPS/document_2/document_2.html)) |
 | Defence information to the Commissioner | Within 60 days starting when the Commissioner gives a garnishee notice for the penalty or notifies in writing that some of it was recovered | s 269-35(4A) ([TAA 1953, compilation 227, Sch 1 Div 269](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html)) |
 | Historical reach | SGC: quarters whose SG statement was due on or after 30 June 2012. GST: tax periods or quarters starting on or after 1 April 2020 | PS LA 2011/18 para 47 ([PS LA 2011/18](https://www.ato.gov.au/law/view/document?docid=PSR/PS201118/NAT/ATO/00001)) |
 
@@ -84,7 +84,7 @@ For PAYG withholding and GST, record whether the amount was notified (under s 16
 
 ### Step 3: Build each director's timeline
 
-The obligation binds the directors 'from time to time' on or after the initial day (s 269-15(1)) and continues until the company complies, an administrator is appointed under Corporations Act s 436A, 436B or 436C, a small business restructuring practitioner is appointed under s 453B, or the company begins to be wound up (s 269-15(2)). A penalty arises at the end of the due day for each person who was under the obligation at or before then, even if they have since resigned (s 269-20(1)-(2) and note). The ATO's page applies this to resigned directors: PAYG withholding where the first withholding event in the reporting period occurred before resignation; GST and SGC where the reporting period ended before resignation; liability survives deregistration (ATO, Director penalties). Its SGC test describes quarters; for a QE day from 1 July 2026 the initial day is the QE day (s 269-10(1) item 5), so test SGC tenure from the QE day. For a new director appointed after a due day, test the 30-day rule in s 269-20(3). Correcting ASIC records is outside this guide; record any discrepancy as an open item.
+The obligation binds the directors 'from time to time' on or after the initial day (s 269-15(1)) and continues until the company complies, an administrator is appointed under Corporations Act s 436A, 436B or 436C, a small business restructuring practitioner is appointed under s 453B, or the company begins to be wound up (s 269-15(2)). If the directors are still under the obligation at the end of the due day, a penalty arises for each person who was under it at or before then, including a former director who was under it before resigning (s 269-20(1)-(2) and note). Use the initial day for each liability. It is the QE day for SGC on or after 1 July 2026 (s 269-10(1) item 5). A director penalty can survive deregistration (ATO, Director penalties). For an appointment after the due day, test the 30-day rule in s 269-20(3). Record discrepancies in ASIC records as open items.
 
 ### Step 4: Register each DPN
 
@@ -111,11 +111,11 @@ The statutory defences (s 269-35):
 - **All reasonable steps:** the director took all reasonable steps to ensure the company complied, an administrator or restructuring practitioner was appointed, or winding up began; or there were no reasonable steps available. Regard is had to when and for how long the person was a director and took part in management (s 269-35(2)-(3)).
 - **Reasonably arguable position (SGC and GST only):** to the extent the penalty resulted from the company applying the SGAA or the GST Act in a reasonably arguable way, with reasonable care (s 269-35(3A)). It does not extend to PAYG withholding.
 
-In court the director must prove the illness or reasonable-steps defence (s 269-35(4)); outside court the Commissioner must be satisfied on information given within the s 269-35(4A) 60 days. Corporations Act s 1318 relief does not apply (s 269-35(5)). The ATO's page summarises case law that reliance on others is no defence and that the defences must cover the whole period from when the obligation arose to the end of the notice period, and describes review under the *Administrative Decisions (Judicial Review) Act 1977* only for a defence lodged within those 60 days (ATO, Director penalties). Prepare a dated evidence list for the director's lawyer; do not assess whether a defence succeeds (refusal R-AU-DPN-2).
+For the proceedings specified in s 269-35(4), the director must prove the illness or reasonable-steps defence. Section 269-35(4A) requires information supporting either of those defences within 60 days of the specified notice for the statutory test to apply. The ATO can also consider information outside that period. Its guidance distinguishes that administrative consideration from review under the *Administrative Decisions (Judicial Review) Act 1977* for a defence lodged within 60 days. Corporations Act s 1318 relief does not apply (s 269-35(5)). The ATO's page summarises case law on reliance on others and the period the defences must cover. Prepare a dated evidence list for the director's lawyer; do not assess whether a defence succeeds (refusal R-AU-DPN-2).
 
 ### Step 7: Reconcile the parallel liabilities
 
-Reconcile payments by the company and by every director against the company balance and each DPN: each payment reduces every other liability then existing by the same amount, and nothing is discharged beyond its amount (s 269-40(2)-(4)). A director who pays has guarantor-style rights of indemnity and contribution against the company and the other directors (s 269-45).
+Reconcile payments and amounts applied against the company balance and each DPN. Section 269-40(2)-(4) links the parallel liabilities, including discharges under s 268-20, and caps discharge at the amount of each liability. Check any reduction or revocation of an estimate under s 268-55 before finalising the linked penalties. A director who pays has guarantor-style rights of indemnity against the company and contribution from qualifying co-directors (s 269-45).
 
 ### Permitted factual defaults
 
@@ -180,7 +180,7 @@ expected:
   remitted_by_administration: 30000
 ```
 
-Had the administrator been appointed on or before the last day of the 3 months after the due day, column 2 of item 5 would not be met and the whole penalty could be remitted under s 269-30(1). No appointment remits the $12,000; only payment discharges it, unless a s 269-35 defence applies. The example assumes the penalty covers the whole $42,000; the due day for an amount added by an amended assessment needs its own check (Needs Input).
+An appointment on or before the last day of the 3 months after the due day would avoid the item 5 lockdown, subject to the s 269-30(1) remission window. The late appointment in this example leaves $12,000 payable on the stated facts. The example assumes that the penalty covers the whole $42,000, that no other timely information increases the reported amount, and that no later adjustment, credit or defence affects the balance. Check the due day for an amount added by an amended assessment separately (Needs Input).
 
 ### Case 3: A Payday Super QE day (2026-27)
 
@@ -213,7 +213,7 @@ The due day is Monday 14 September 2026, and the statement was lodged before it.
 
 ### Case 4: A new director
 
-A person became a director on 2 November 2026; a PAYG withholding amount was due and reported before then, and is unpaid. Unless the company pays, appoints an administrator or restructuring practitioner, or begins to be wound up within 30 days, the new director is liable at the end of the 30th day (s 269-20(3)-(4)). The 3-month reporting test for items 1, 2, 5 and 6 runs from the appointment (s 269-30(3)); there is no equivalent for SGC.
+A person became a director on 2 November 2026. A PAYG withholding amount was due and reported before then and is unpaid. If the new director is still under the obligation 30 days after appointment, the penalty is payable at the end of Wednesday 2 December 2026 (s 269-20(3)-(4)). If the appointment was during or after the original 3 months for items 1, 2, 5 and 6, the substituted period is the 3 months after the appointment day, ending on 2 February 2027 (s 269-30(3)). That reset does not apply to SGC.
 
 ### Case 5: An old-quarter SGC liability
 
@@ -221,7 +221,7 @@ SG for the January to March 2026 quarter was not paid and no SG statement was lo
 
 ### Case 6: An estimate for a liability that may not exist
 
-The ATO estimated unpaid PAYG withholding for a quarter in which the company says it paid no wages. The director's obligation on the estimate stands even if the underlying liability never existed (s 269-15(2A)); an appointment more than 3 months after the underlying due day leaves the penalty locked down to any extent (item 2). Record the estimate separately and refer how to challenge it to the advisers.
+The ATO estimated unpaid PAYG withholding for a quarter in which the company says it paid no wages. The director's obligation on an outstanding estimate can exist even if the underlying liability never existed (s 269-15(2A)). An appointment more than 3 months after the underlying due day, subject to the new-director rule, leaves the penalty locked down to the full applicable extent (item 2). A statutory reduction is taken to have applied from the start. A revoked estimate is taken never to have been made for Division 269 (s 268-55). Record the estimate separately and refer any challenge to the advisers.
 
 ## When to refuse or refer
 
@@ -241,7 +241,7 @@ Stop the affected work where a fact, condition or source in this guide is unreso
 | --- | --- |
 | Any DPN, whatever the amount | The 21-day window cannot be extended by this work |
 | Any director exposure of $10,000 or more | Personal liability needs senior review |
-| Any locked-down amount | Administration, restructuring or winding up cannot remit it; only payment or a s 269-35 defence avoids it |
+| Any locked-down amount | Administration, restructuring or winding up cannot remit it. Check any payments, credits, applicable defence or change to the underlying liability or estimate. |
 | Any estimate | It binds even if the underlying liability is disputed |
 | Any QE day from 1 July 2026 | The Payday Super due day and lockdown test are new |
 | Any defence claimed | The 60-day information period and the court onus apply |
@@ -259,18 +259,18 @@ Stop the affected work where a fact, condition or source in this guide is unreso
 - [ ] Remission options are conditional and no insolvency recommendation is made.
 - [ ] Defence evidence is dated and covers the whole period.
 
-Change log: v0.1 (2 November 2026), first draft from Division 269 of TAA Schedule 1 (compilations 227 and 224), the Payday Super Act as made, PS LA 2011/18 and the ATO director penalties page.
+Change log: v0.2 (26 November 2026), clarified liability, lockdown dates, defences and changes to estimates. v0.1 (2 November 2026), first draft.
 
 ## Sources
 
-All read on 2 November 2026; figures and dates rechecked against the same sources on 11 November 2026.
+Original sources read on 2 November 2026 and rechecked on 11 November 2026. Updated source links were checked on 23 November 2026 for the law as at 22 November.
 
 | Source | URL | Read on |
 | --- | --- | --- |
 | TAA 1953, compilation 227 (C2026C00468, from 1 October 2026), Volume 2: Sch 1 Division 269 (ss 269-1 to 269-55) | https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html | 2 November 2026 |
 | TAA 1953, compilation 224 (C2026C00303, in force 30 June 2026), Volume 2: Sch 1 ss 269-10(3) and 269-30(2) item 3 before Payday Super | https://www.legislation.gov.au/C1953A00001/2026-06-30/2026-06-30/text/original/epub/OEBPS/document_2/document_2.html | 2 November 2026 |
-| *Treasury Laws Amendment (Payday Superannuation) Act 2025* (No. 57, 2025), as made: s 2 and Sch 1 items 164 to 172, 181 to 183 | https://www.legislation.gov.au/C2025A00057/asmade/2025-11-07/text/original/epub/OEBPS/document_1/document_1.html | 2 November 2026 |
-| SGAA, compilation 78 (compilation date 1 July 2026): ss 33, 36 | https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html | 2 November 2026 |
+| *Treasury Laws Amendment (Payday Superannuation) Act 2025* (No. 57, 2025), as made: s 2 and Sch 1 items 164 to 172, 181 to 183 | https://www.legislation.gov.au/C2025A00057/asmade/2025-11-06/text/1/pdf | 23 November 2026 |
+| SGAA, compilation 78 (compilation date 1 July 2026): ss 33, 36 | https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf | 23 November 2026 |
 | *Acts Interpretation Act 1901*, compilation 39 (C2026C00117): s 36 | https://www.legislation.gov.au/C1901A00002/2026-03-28/2026-03-28/text/original/epub/OEBPS/document_1/document_1.html | 2 November 2026 |
 | ATO, Director penalties (QC44005, last updated 16 April 2026) | https://www.ato.gov.au/individuals-and-families/paying-the-ato/if-you-don-t-pay/firmer-action-we-may-take/director-penalty-regime | 2026-11-02 |
 | PS LA 2011/18, Enforcement measures used for the collection and recovery of tax-related liabilities and other amounts (amended 20 May 2026): paras 47, 58 to 61, Table 1, 84 to 88 | https://www.ato.gov.au/law/view/document?docid=PSR/PS201118/NAT/ATO/00001 | 2026-11-02 |
