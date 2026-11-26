@@ -6,15 +6,15 @@ jurisdiction: MU
 category: international
 tax_year: 2026
 tax_year_notes: "Income year 1 July 2026 to 30 June 2027 (year of assessment 2027/28)"
-version: 0.3
-last_updated: 2026-11-14
+version: 0.4
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Mauritius Corporate Income Tax v0.3
+# Mauritius Corporate Income Tax v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -84,7 +84,7 @@ The MRA calendar printed 29 December 2025 for June 2026 year ends, an apparent s
 | Late APS payment | 2.5% | s.50F | same |
 | APS underestimate | 25% of the shortfall above 35% | s.50E | same |
 | Interest | 0.25% per month or part | s.122D(1)(b) | same |
-| QDMT late payment | 2.5% | s.50X(1) after Finance Act 2026 s.7(g), for years from 1 July 2025 | same |
+| QDMT late payment | 2.5% | s.50X(1) after Finance Act 2026 s.7(g), from 13 August 2026 (previously 5%) | same |
 | FSC late payment | 2.5% plus 0.25% per month | VAT Act s.53Q | https://www.mra.mu/download/VATAct.pdf |
 
 ## Cross-border points
@@ -140,8 +140,8 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Act consolidated to Finance Act 2026: ss.18, 44 to 44E, 50A to 50F, 50J, 50L, 50O, 50Q, 50W, 50X, 59, 73, 73A, 77, 111B, 111C, 116, 121, 122, 122D, 161A(76); First and Sixth Schedules; Second Schedule Part II in part | https://www.mra.mu/download/ITAConsolidated.pdf | 2026-11-01 |
-| Finance Act 2026: s.7 and s.28 | https://www.mra.mu/download/FinanceAct2026.pdf | 2026-11-01 |
+| Income Tax Act consolidated to Finance Act 2026: ss.18, 44 to 44E, 50A to 50F, 50J, 50L, 50O, 50Q, 50W, 50X (endnote 427), 59, 73, 73A, 77, 111B, 111C, 116, 121, 122, 122D, 161A(76); First and Sixth Schedules; Second Schedule Part II in part | https://www.mra.mu/download/ITAConsolidated.pdf | 2026-11-26 |
+| Finance Act 2026: s.7 and s.28 | https://www.mra.mu/download/FinanceAct2026.pdf | 2026-11-26 |
 | VAT Act consolidated: ss.53N to 53R | https://www.mra.mu/download/VATAct.pdf | 2026-11-01 |
 | MRA tax calendar July to December 2026, October entries read | https://www.mra.mu/important-dates | 2026-11-01 |
 | MRA e-Services menu read | https://www.mra.mu/index.php/e-services | 2026-11-01 |
