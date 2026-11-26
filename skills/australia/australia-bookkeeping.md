@@ -1,10 +1,10 @@
 ---
 name: australia-bookkeeping
 description: Use this skill whenever asked about Australian bookkeeping for sole traders, partnerships, or small companies. Trigger on phrases like "chart of accounts", "BAS", "GST codes", "bookkeeping", "profit and loss", "balance sheet", "AASB", "simplified disclosures", "Tier 2", "bank reconciliation", "expense categories", "revenue recognition", "depreciation", "instant asset write-off", "small business pool", "ABN", "ATO reporting", "activity statement", "accrual basis", "cash basis", "general ledger", "how do I classify this transaction", "what evidence do I need", "capital or revenue", "private use apportionment", "fix a bookkeeping error", "accounting versus tax treatment", or any question about day-to-day transaction recording, financial statement preparation, or account coding for an Australian business.
-version: 1.5
+version: 1.6
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-11-12
+last_updated: 2026-11-26
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
@@ -24,7 +24,7 @@ domain: bookkeeping
 | Field | Value |
 | --- | --- |
 | Country | Australia (Commonwealth of Australia) |
-| Currency | AUD ($) only |
+| Currency | Examples use AUD. Apply the functional and presentation currency rules separately. |
 | Financial year | 1 July – 30 June (standard); substituted accounting period available for companies |
 | Accounting standards | AASB (full IFRS-based); AASB 1060 Simplified Disclosures (Tier 2); Special Purpose for non-reporting entities |
 | Governing body | Australian Accounting Standards Board (AASB) |
@@ -47,7 +47,7 @@ Australian software (Xero, MYOB, QuickBooks) typically uses 3–4 digit codes. T
 | 1000 | Cash on Hand / Petty Cash | Current asset |
 | 1010 | Business Bank Account | Current asset |
 | 1020 | Savings Account | Current asset |
-| 1030 | Term Deposits (< 12 months) | Current asset |
+| 1030 | Term Deposits (current portion) | Current asset |
 | 1050 | Undeposited Funds | Current asset |
 | 1100 | Accounts Receivable (Trade Debtors) | Current asset |
 | 1110 | Other Debtors | Current asset |
@@ -86,10 +86,10 @@ Australian software (Xero, MYOB, QuickBooks) typically uses 3–4 digit codes. T
 | 2130 | Provision for Long Service Leave | Current liability |
 | 2140 | Provision for Income Tax | Current liability |
 | 2200 | Credit Card | Current liability |
-| 2300 | Short-Term Loan (< 12 months) | Current liability |
-| 2400 | Long-Term Loan (> 12 months) | Non-current liability |
+| 2300 | Short-Term Loan (current portion) | Current liability |
+| 2400 | Long-Term Loan (non-current portion) | Non-current liability |
 | 2410 | Hire Purchase Liability | Non-current liability |
-| 2500 | Director's Loan Account | Non-current liability |
+| 2500 | Director's Loan Payable | Current or non-current liability, depending on repayment rights |
 
 ### Equity (3000–3999)
 
@@ -208,8 +208,8 @@ Australian software (Xero, MYOB, QuickBooks) typically uses 3–4 digit codes. T
 | Criterion | Cash Basis (Sole Traders / Small Business) | Accruals Basis |
 | --- | --- | --- |
 | Eligibility | For income tax, use the method that correctly reflects income under TR 98/1; small-business status alone does not establish a receipts basis | Apply the appropriate income-tax method and separate financial-reporting requirements |
-| Income recognised | When cash received | When earned (invoice raised or goods delivered) |
-| Expenses recognised | When cash paid | When incurred (liability arises) |
+| Income recognised | Generally when income is received under the receipts method | Generally when a recoverable debt arises under the earnings method. Apply separate accounting standards for financial reporting. |
+| Expenses recognised | For income tax, apply the relevant deduction and timing rule. An expense can be incurred before payment. | For accounting, recognise the expense under the applicable standard. Apply separate tax rules to the deduction. |
 | Trading stock | Eligible small business entities can use s 328-285 where the reasonably estimated stock-value change is $5,000 or less | Otherwise apply the required stock adjustments; this is separate from GST cash accounting |
 | Prepaid expenses | Test the 12-month rule and other exceptions under ITAA 1936 ss 82KZL and 82KZM | Apply the relevant tax apportionment and financial-reporting rules separately |
 
@@ -222,35 +222,37 @@ Applies to reporting entities using Tier 1/Tier 2. Five-step model:
 4. Allocate price to obligations
 5. Recognise when obligation satisfied
 
-Small businesses using simplified reporting typically recognise on delivery/completion.
+Tier 2 entities apply the applicable recognition and measurement requirements, including AASB 15 where relevant. Recognise revenue over time when the criteria in paragraph 35 are met. Otherwise recognise it when control transfers at a point in time.
 
 ## Section 4 -- Expense Classification
 
-### ATO Individual Tax Return Categories (Sole Trader — Business Schedule)
+### Individual tax return categories (sole trader, P8)
 
 **ATO Individual Tax Return Categories (Sole Trader — Business Schedule)**
 
 | Item | Category | Nominal Codes |
 | --- | --- | --- |
-| A | All other business income | 4000–4500 |
-| B | Cost of sales | 5000–5200 |
-| C | Contractors and commission | 5040 |
-| D | Superannuation | 6110 |
-| E | Bad debts | 6700 |
-| F | Lease expense (plant/equipment) | 6000 |
-| G | Interest expense — Australia | 6440 |
-| H | Depreciation (excluding SB pool) | 6600–6630 |
-| I | Motor vehicle expenses | 6300–6320 |
-| J | Repairs and maintenance | 6050 |
-| K | All other expenses | 6000–6800 (remainder) |
+| I / J | Other business income, primary production / non-primary production | 4000–4500, after accounting for other applicable income labels |
+| K + L − M | Opening stock plus purchases and other costs less closing stock | 5000–5200 and stock records |
+| F | Contractors and commission | 5040 |
+| G | Employee superannuation | 6110 |
+| I | Bad debts | 6700 |
+| J | Lease expenses, including qualifying plant and equipment leases | Relevant lease expense accounts |
+| Q | Interest expenses within Australia | 6440 |
+| M | Depreciation expenses. Also complete P10 labels A and B when simplified depreciation applies. | ATO depreciation working papers |
+| N | Motor vehicle expenses | 6300–6320 |
+| O | Repairs and maintenance | 6050 |
+| P | All other expenses after mapping separately labelled amounts | Remaining applicable reconciled expense accounts |
+
+Use the applicable year's ATO form. The [2026 Individual tax return](https://iorder.com.au/publication/Download.aspx?ProdID=1371-6.2026&dl=Y) and [2026 BPI schedule instructions](https://www.ato.gov.au/forms-and-instructions/business-and-professional-items-schedule-2026-instructions/instructions-to-complete-the-bpi-schedule-2026) confirm these labels for 2025–26.
 
 ### Non-Deductible Expenses (ATO)
 
 - Entertainment (not subject to FBT election) — non-deductible portion
-- Capital expenditure — must be depreciated or written off via SB pool
+- Capital expenditure. Identify any specific deduction, including Division 40 for eligible depreciating assets and Division 43 for eligible capital works. Some costs are recognised through the asset’s CGT cost base.
 - Private portion of mixed expenses — must be apportioned
 - Fines and penalties — not deductible
-- Clothing (non-compulsory, non-protective) — not deductible
+- Conventional clothing is generally non-deductible. Check protective and occupation-specific clothing and qualifying uniforms, including registered non-compulsory uniforms.
 - Traffic infringements — not deductible
 
 ### GST Classification for BAS
@@ -263,7 +265,7 @@ Small businesses using simplified reporting typically recognise on delivery/comp
 | GST-Free | Food (basic), medical, education, exports | G1 (no 1A) |
 | Input Taxed | Financial supplies, residential rent | G1 (no credit) |
 | BAS Excluded | Wages, drawings, loan principal, private | Not reported |
-| No ABN Withholding | Payments to suppliers without ABN (47% w/h) | Separate |
+| No ABN Withholding | Generally withhold 47% if the supplier has not quoted an ABN and the total payment exceeds $75 excluding GST. Check applicable exceptions. | W4 and W5 |
 
 ## Section 5 -- Asset vs Expense Thresholds
 
@@ -528,8 +530,8 @@ TOTAL EQUITY                                          xxx
 | Simplified depreciation | Instant write-off < $20,000; pool balance at 15%/30% |
 | Simplified trading stock | No stock-take if estimate change ≤ $5,000 |
 | Prepaid expenses | Test the 12-month rule and other exceptions under ITAA 1936 ss 82KZL and 82KZM |
-| Simpler BAS | Report only G1, 1A, 1B (no G2, G3, G10, G11) |
-| Two-year amendment period | ATO can only amend assessments within 2 years (not 4) |
+| Simpler BAS | Generally uses GST turnover below $10 million. GST labels are G1, 1A and 1B. Check the reporting method and other BAS obligations. |
+| Income tax amendment period | 2 years is common for eligible small businesses. Check 4-year categories, fraud or evasion, and eligible taxpayer-initiated amendments within 4 years under s 170. |
 | Cash accounting for GST | Report GST when paid/received, not invoiced |
 | PAYG instalments | Option to pay quarterly amount the ATO calculates |
 
@@ -540,9 +542,9 @@ TOTAL EQUITY                                          xxx
 | Tier | Who | Standards | Required Statements |
 | --- | --- | --- | --- |
 | Tier 1 (Full AASB / IFRS) | Entities with public accountability or another Tier 1 requirement | Full recognition and disclosure | Determine requirements under AASB 1053; size alone does not force Tier 1 |
-| Tier 2 (AASB 1060 Simplified) | Non-publicly accountable entities electing Tier 2 | Full recognition, reduced disclosure | All 5 statements + reduced notes |
+| Tier 2 (AASB 1060 Simplified Disclosures) | Eligible entities under AASB 1053 | Apply the applicable recognition and measurement rules with reduced disclosures | Complete financial statements and notes. AASB 1060 permits a combined statement of income and retained earnings in specified cases. |
 | Special purpose | Assess the entity and reporting obligation | The AASB 2020-2 changes apply from periods beginning on or after 1 July 2021 to specified for-profit entities | Use australia-financial-statements-2 and current AASB/ASIC requirements |
-| No statutory reporting | Sole traders, small partnerships (non-company) | None mandated | Prepare for ATO/tax purposes only |
+| No general Corporations Act company-reporting obligation | Sole traders and ordinary partnerships | Check other statutory or contractual obligations | Prepare records for tax and any other applicable reporting purposes |
 
 ### Large Proprietary Thresholds (must be reporting entity)
 
@@ -554,9 +556,9 @@ TOTAL EQUITY                                          xxx
 
 - Sole traders: business schedule in individual return (myTax or tax agent)
 - Companies: Company Tax Return (form with labels mapped to financial statements)
-- Tax rate: individuals at marginal rates; companies at 25% (base rate entity, turnover < $50m) or 30%
+- Tax rate: individuals at marginal rates; companies generally at 25% if they qualify as base rate entities, including aggregated turnover below $50 million and no more than 80% base rate entity passive income. The ordinary rate otherwise is 30%
 - Franking: company tax paid generates franking credits for shareholder dividends
-- Losses: carried forward indefinitely, subject to continuity of ownership test (companies) or non-commercial loss rules (individuals)
+- Losses: carried forward indefinitely, subject to company loss rules, including continuity of ownership or business continuity, or applicable non-commercial loss rules for individuals
 
 ### BAS / GST Return
 
@@ -570,7 +572,7 @@ TOTAL EQUITY                                          xxx
 | W1 | Total salary/wages and other payments | 6100 |
 | W2 | Amounts withheld from payments (PAYG-W) | 2100 |
 | T1 | PAYG instalment income | 4000–4500 |
-| T2 | PAYG instalment raised | 2140 |
+| T2 | PAYG instalment rate under the instalment income method | ATO notice or most recent varied rate |
 
 ### Superannuation Guarantee
 
@@ -607,7 +609,7 @@ Every transaction needs four decisions, not one. Answer them in this order, beca
 
 | Transaction | Evidence required |
 | --- | --- |
-| Sale | Invoice or point-of-sale record. A tax invoice where GST is charged |
+| Sale | Invoice or point-of-sale record. Provide a tax invoice within 28 days of a request for a taxable sale over $82.50 including GST, subject to the invoicing rules |
 | Purchase where a GST credit is claimed | A valid tax invoice, unless the acquisition is $82.50 including GST or less |
 | Purchase with no GST credit | Sufficient record to show the expense was incurred and its purpose |
 | Asset acquisition | Invoice, plus the date first used or installed ready for use |
@@ -618,7 +620,7 @@ Every transaction needs four decisions, not one. Answer them in this order, beca
 | Adjustment to a sale or purchase | Adjustment note or credit note |
 | Bad debt written off | The board minute or file note recording the write-off and its date |
 
-Records are generally kept for five years from lodgment, and longer where a CGT asset or a carried-forward loss depends on them.
+For most business tax records, keep them for 5 years from the later of preparing or obtaining the record and completing the relevant transaction or act. Check longer retention for CGT assets or carried-forward losses and other statutory exceptions. Companies also generally retain financial records for 7 years after completing the relevant transactions.
 
 ### 11.3 Reconciliation as a control, not a chore
 
@@ -643,13 +645,13 @@ The ledger produces the financial statements. The tax return starts from those s
 | Depreciation | Useful life and residual value under AASB 116 | Effective life under Division 40, the small business pool, or the instant asset write-off |
 | Buildings and structural improvements | Cost or revaluation model under AASB 116, with depreciation and impairment where required under either model | Division 43 capital works at a fixed rate, and the deduction reduces the CGT cost base |
 | Employee leave provisions | Recognised when the obligation arises | Deductible when the leave is paid |
-| Doubtful debts allowance | An impairment estimate | Not deductible. Only a debt actually written off as bad is deductible |
+| Doubtful debts allowance | An impairment estimate | Not deductible. An actual write-off may be deductible if the amount was previously assessable or the debt arose from money lent in the ordinary course of a money-lending business |
 | Entertainment | An expense in the profit and loss | Commonly non-deductible, and may instead be a fringe benefit |
 | Fines and penalties | An expense | Not deductible |
-| General interest charge on a tax debt | An expense | Not deductible where incurred on or after 1 July 2025 |
+| General interest charge on a tax debt | An expense | Not deductible for income years starting on or after 1 July 2025. Apply the start date of the relevant income year for a substituted accounting period. |
 | Revenue | AASB 15 performance obligations | Derived when earned or received, depending on the accounting basis and the taxpayer |
 | Prepayments | An asset, expensed over the period | Prepayment rules can spread the deduction, with a 12-month exception for some taxpayers |
-| Borrowing costs | AASB 123 | Deductible over five years or the term of the loan, whichever is shorter |
+| Borrowing costs | AASB 123 | Qualifying amounts over $100 are generally deductible over the shorter of 5 years and the loan term, with statutory apportionment. Qualifying amounts of $100 or less can be deducted immediately |
 | Unrealised foreign exchange movements | Revalued at reporting date | Taxed on a realisation event under Division 775 |
 | Leases | Right-of-use asset and lease liability under AASB 16 | Depends on whether the arrangement is a lease or a hire purchase for tax |
 
