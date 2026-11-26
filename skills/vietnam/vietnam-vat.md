@@ -12,11 +12,11 @@ description: >
   VND 1,000,000,000 household threshold. This Tier 2 draft supports source
   checking and reviewer questions; it does not authorise a filing, a payment
   or a tax position.
-version: 2.1
+version: 2.2
 jurisdiction: VN
 tax_year: 2026
 tax_year_notes: "VAT periods from 1 July 2025, read at 5 November 2026. VAT has no tax year: the rate and rules follow the tax point of each supply. Supplies before 1 July 2025 fall under Law 13/2008/QH12 and are not classified here. On the texts read, the 8% rate covers 1 July 2025 to 31 December 2026, and no extension was found."
-last_updated: 2026-11-11
+last_updated: 2026-11-26
 depends_on:
   - vat-workflow-base
 category: international
@@ -26,7 +26,7 @@ domain: vat-gst
 type: situation-rules
 ---
 
-# Vietnam VAT v2.1
+# Vietnam VAT v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -117,7 +117,7 @@ Each row applies to a tax point from 1 July 2025 unless it says otherwise. Reven
 | Zero rate | 0% | Exported goods, exported services and the art 9.1(c) list, unless art 9.1(d) excludes them. See Cross-border points. VAT Law art 9.1; Decree 181 arts 17 and 18 | same |
 | Direct method, revenue | 1%, 5%, 3%, 2% | Percentage × revenue on the sales invoice, including surcharges. 1%: distribution and supply of goods. 5%: services, and construction without materials. 3%: production, transport, services tied to goods, and construction with materials. 2%: other business. VAT Law art 12.2(b) and (c); groups in Circular 69/2025/TT-BTC art 5 and Annex I. Who uses it: enterprises and cooperatives with annual revenue under VND 1,000,000,000 that have not opted in; household and individual businesses; foreign parties without a permanent establishment and without full accounts (not art 4.4 suppliers); other organisations outside art 11.2. Art 12.2(a) | same |
 | Direct method, value added | VAT rate × value added | Buying, selling and working gold, silver and gemstones, on separate accounts: selling payment less matching purchase payment. VAT Law art 12.1. Negative value added carries within the year only (Decree 181 art 22) | same |
-| Household threshold | VND 1,000,000,000 | From 1 January 2026, a household or individual business with annual revenue at or under this amount is not subject to VAT (Decree 68 art 3.1, as amended). Over it, it is subject and uses the direct method (art 3.2). VAT Law art 5.25, as rewritten by Law 09/2026/QH16 art 2, leaves the amount to the Government, and Decree 141 art 1.1 sets it. Periods from 1 January 2026 only: VAT Law art 18.2. The level for 1 July to 31 December 2025 is not read | https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/4/141-ndcp.signed.pdf |
+| Household threshold | VND 1,000,000,000 | From 1 January 2026, a household or individual business with annual revenue at or under this amount is not subject to VAT (Decree 68 art 3.1, as amended). Over it, it is subject and uses the direct method (art 3.2). VAT Law art 5.25, as rewritten by Law 09/2026/QH16 art 2, leaves the amount to the Government, and Decree 141 art 1.1 sets it. Periods from 1 January 2026 only: VAT Law art 18.2. The preceding VND 100,000,000 annual threshold continued through 31 December 2025 (Circular 40/2021/TT-BTC art 4.2 and tax authority guidance) | https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/4/141-ndcp.signed.pdf |
 | Deduction method threshold | VND 1,000,000,000 | Businesses, other than households and individuals, with annual revenue from this amount that keep full accounts and invoices use the deduction method. Below it, they may opt in. VAT Law art 11.2. Annual revenue is self-determined from returns, stable for 2 years; new entities annualise (Decree 181 art 21.1). This row is in the Law, not the decree | https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf |
 | Non-cash evidence floor | VND 5,000,000 | Purchases from this amount including VAT need a non-cash payment document for input credit, with the exceptions under Input VAT. Decree 181 art 26 | https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/7/181nd.signed.pdf |
 | Car credit cap | VND 1,600,000,000 | Cars of 9 seats or fewer: input credit only on the part of the price up to this amount excluding VAT, except transport, tourism, hotel and test-drive use. Decree 181 art 24.4 | same |
@@ -130,7 +130,7 @@ Art 9.4: a business selling at several rates, including exempt goods, declares b
 
 **Household and individual businesses from 1 January 2026.** The presumptive method ended: Decree 68 art 17.5 deals with those who paid by thuế khoán up to 2025 and moved to declaration from 1 January 2026, and the tax office does not use 2026 declared revenue to reopen earlier years, unless concealment of revenue is found. Annual revenue includes revenue that others have withheld and paid on the business's behalf (art 8.1(b)).
 
-- At or under the threshold: notify actual revenue by 31 January of the next calendar year. If revenue passes the threshold during the year, declare and pay from the quarter it passes (art 8.1(a), as amended). New businesses: arts 9.1 and 9.2 set notices by 31 July and 31 January by start date.
+- At or under the threshold: notify actual revenue by 31 January of the next calendar year. If revenue passes the threshold during the year, file from the quarter it passes and include taxable VAT revenue from the start of the year through that quarter (art 8.1(a), as amended, and Tax Department guidance). New businesses: arts 9.1 and 9.2 set notices by 31 July and 31 January by start date.
 - Over it: declare under art 10. Where coded or cash register e-invoices are used, the tax system creates a draft return, but the business stays responsible for the return (art 8.1(b)).
 - E-invoices: over VND 1,000,000,000, tax-authority-coded e-invoices or cash register e-invoices with a data link are required, with a business location code for multi-site traders; at or under, they are optional if eligible, except that a household or individual business selling an asset that must register ownership or use right needs one (Decree 254 art 6.1(d)). A new or exceeding business registers within 30 days from the last day of the tax period in which cumulative revenue passes the threshold (Decree 68 art 8.5, replaced by Decree 141 art 1.2).
 - Platforms with ordering and payment functions withhold VAT from households and individuals on their platforms (VAT Law art 4.5; Decree 252 art 43).
@@ -500,11 +500,11 @@ Filing rests on Law 108/2025/QH15, Decree 252/2026/ND-CP and Circular 89/2026/TT
 | Per transaction return | 10th day after the day the tax arises, except that a household or individual business not required to use e-invoices, and an enterprise, economic organisation or other organisation that wants one, declare and pay before the tax authority issues a coded e-invoice for that transaction | Decree 252 art 10.1; Law 108 art 26.3(b); Circular 89 art 19.1(c) |
 | Household or individual business | As above by period, except that monthly returns for January to March 2026 fell due by 20 April 2026; revenue notice by 31 January of the next year | Decree 68 arts 8.1(a), 8.3 and 18.1; Decree 252 art 10.9 |
 | Foreign supplier registered directly | Monthly if regular; per transaction if irregular | Decree 252 art 40.2(a) |
-| Payment | Last day of the filing period for the return | Law 108 art 14.1(a); Decree 68 art 8.3(e) for households |
+| Payment | Generally the filing deadline. Check Decree 245 for a 2026 payment extension if the taxpayer applied and qualifies | Law 108 art 14.1(a), Decree 68 art 8.3(e) and Decree 245 arts 2, 3 and 4 |
 
 The earlier version gave the quarterly date as the 30th, which is wrong for 3 quarters of 4. It also listed an annual settlement on 31 March. Circular 89 art 19 sets monthly, quarterly and per transaction periods and provides no VAT settlement, whilst art 21 provides one for corporate income tax. Decree 252 art 10.5 sets a due date for taxes declared by settlement without naming VAT. No text read provides a VAT settlement, so that row is withdrawn; this is an absence in the texts read, not proof.
 
-A due date falling on a ngày nghỉ (non-working day) under the rules moves to the next working day (Decree 252 art 3.7). The text read does not define the term, so where the date falls on a Saturday file by the previous working day.
+A due date falling on a ngày nghỉ (non-working day) under the rules moves to the next working day (Decree 252 art 3.7). The tax authority's 2026 household calendar confirms Monday 2 November for Q3, when 31 October fell on a Saturday. Check the applicable calendar when another filing date falls on a non-working day.
 
 **Extensions and corrections.** Force majeure can extend filing by up to 30 days, or 60 days for a settlement (Law 108 art 12.4). A supplementary return may be filed within 5 years from the filing deadline of the period in error, in these cases: (a) before a tax authority or other competent body announces an inspection or audit decision; (b) for a return outside the scope or period of that decision; (c) where an investigating body has not asked that the return stay unamended (art 12.5(a) to (c)). If an error found within an inspected scope or period raises tax or cuts relief, a refund, credit or overpayment, the taxpayer may add an explanation file for the tax authority to review (art 12.5(d)). Payment extensions are in art 14.7 and Decree 252 art 25.
 
@@ -739,17 +739,15 @@ A household business supplying services without materials, eligible for the redu
 
 | Case | Third quarter revenue, VND | Cumulative, VND | Result |
 | --- | --- | --- | --- |
-| A | 340,000,000 | 990,000,000 | Not over VND 1,000,000,000. No VAT so far. Notify actual revenue by 31 January 2027, a Sunday, if the year ends at or under the threshold |
-| B | 400,000,000 | 1,050,000,000 | Over the threshold in the third quarter. Declare and pay from that quarter, and move to coded e-invoices within 30 days from the end of the quarter |
+| A | 340,000,000 | 990,000,000 | No VAT triggered by the end of Q3. If annual revenue stays at or under VND 1 billion, notify actual revenue by the statutory 31 January 2027 date, subject to the non-working-day rule |
+| B | 400,000,000 | 1,050,000,000 | File from Q3 and include taxable turnover from Q1 through Q3. Register to use qualifying e-invoices within 30 days from the end of Q3 |
 
-In case B, the percentage is 5%, cut by 20% to 4% on invoices noting the reduction. Tax on third quarter revenue is VND 16,000,000. Without the reduction noted, the same revenue gives VND 20,000,000 until the invoices are corrected under Decree 174 art 1.5.
+In case B, the statutory percentage is 5%. Decree 174 reduces it by 20% to 4% on eligible sales with qualifying invoices. If all VND 1,050,000,000 qualifies, VAT is VND 42,000,000. At 5% on all turnover it is VND 52,500,000. If only Q3 qualifies, the earlier VND 650,000,000 at 5% gives VND 32,500,000 and Q3 at 4% gives VND 16,000,000, for VND 48,500,000. Check which invoices qualify or have been corrected under Decree 174 art 1.5.
 
-Decree 68 art 8.1(a) says to declare 'from the quarter' revenue passes the threshold, and art 3.2 taxes a business with annual revenue over the threshold. It does not say whether earlier quarters' revenue comes in. On the whole year, with the 20% cut, itself unproven on those quarters, tax would be VND 42,000,000. That is a difference of VND 26,000,000 on a single reading: Needs Input, for a reviewer.
-
-The third quarter return would be due on 31 October 2026, a Saturday. File by Friday 30 October unless the reviewer confirms the Decree 252 art 3.7 move to Monday 2 November.
+The Q3 return is due Monday 2 November 2026 under Decree 252 art 3.7 and the tax authority's calendar. Check payment separately if a Decree 245 extension applies.
 
 ```oa-check
-name: VN household threshold by quarter with reduced percentage
+name: VN household VAT at the quarter of threshold crossing
 inputs:
   q1: 300000000
   q2: 350000000
@@ -764,11 +762,10 @@ steps:
   - over_low: min(floor(total_low / (threshold + 1)), 1)
   - over_high: min(floor(total_high / (threshold + 1)), 1)
   - reduced_percentage: percentage * (100 - cut_percent) / 100
-  - tax_low: round(over_low * q3_low * reduced_percentage / 100, 0)
-  - tax_quarter: round(over_high * q3_high * reduced_percentage / 100, 0)
-  - tax_quarter_no_cut: round(over_high * q3_high * percentage / 100, 0)
-  - tax_whole_year: round(over_high * total_high * reduced_percentage / 100, 0)
-  - reading_gap: tax_whole_year - tax_quarter
+  - tax_low: round(over_low * total_low * percentage / 100, 0)
+  - tax_all_reduced: round(over_high * total_high * reduced_percentage / 100, 0)
+  - tax_all_standard: round(over_high * total_high * percentage / 100, 0)
+  - tax_q3_reduced_only: round(over_high * ((q1 + q2) * percentage + q3_high * reduced_percentage) / 100, 0)
 expected:
   total_low: 990000000
   total_high: 1050000000
@@ -776,10 +773,9 @@ expected:
   over_high: 1
   reduced_percentage: 4
   tax_low: 0
-  tax_quarter: 16000000
-  tax_quarter_no_cut: 20000000
-  tax_whole_year: 42000000
-  reading_gap: 26000000
+  tax_all_reduced: 42000000
+  tax_all_standard: 52500000
+  tax_q3_reduced_only: 48500000
 ```
 
 ### Bank line classifications
@@ -837,13 +833,18 @@ Read on means the date read for this conversion. All texts are official and in V
 | Báo Chính phủ question and answer of 28 October 2026 on prepaid services, read in full; Government news, not law | https://baochinhphu.vn/thu-truoc-tien-dich-vu-den-het-2027-tinh-giam-thue-gtgt-the-nao-102261028112800628.htm | 2026-11-05 |
 | Resolution 43/2026/QH16 full text, read for any VAT change; income tax only | https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-43-2026-qh16-ve-giam-thue-thu-nhap-ca-nhan-thue-thu-nhap-doanh-nghiep-119260830184758301.htm | 2026-11-05 |
 | phapluat.gov.vn national legal portal, tried for Resolution 43/2026/QH16 | https://phapluat.gov.vn/legal-documents/187347 | 2026-11-05: not read, 403 to a plain request, not retried |
+| Tax authority explanation of 2025 and 2026 household VAT thresholds and the 2026 taxable revenue base | https://chinhsachonline.chinhphu.vn/sang-tao-noi-dung-so-doanh-thu-bao-nhieu-phai-nop-thue-90014.htm | 2026-11-26 |
+| Tax Department guidance on revenue from the start of the year in the crossing return, applying the former threshold before Decree 141 changed the amount | https://xaydungchinhsach.chinhphu.vn/giai-phap-giup-ho-kinh-doanh-ke-khai-thue-dung-an-tam-tuan-thu-phat-trien-ben-vung-119260312114316524.htm | 2026-11-26 |
+| Tax authority 2026 household and individual filing calendar | https://eaning.daklak.gov.vn/uploads/xa-eaning/tin2026/thang4/copy-of-tb-hkd-nop-hskt-q126.pdf | 2026-11-26 |
+| Decree 245/2026/ND-CP, arts 2 to 4, payment extensions | https://vanban.chinhphu.vn/?classid=1&docid=218598&pageid=27160&typegroupid=4 | 2026-11-26 |
 
-Not yet confirmed: a regional layer or approved non-EU exception for `vat-workflow-base`; the Form 01/GTGT row that carries 8% sales and how Form 04/GTGT shows the 20% cut; the return forms and period rules for tax periods before 1 July 2026; any extension of the 8% rate past 31 December 2026, where no text was found at 5 November 2026 and that absence is not proof, so a later supply rests on art 9.3 alone on the text read; whether 8% applies to a service bought from a foreign supplier under VAT Law art 4.3 or 4.4, and the VAT and corporate income tax components of that charge, noting that Circular 89 art 99.3(b) repealed Circular 103/2014/TT-BTC from 1 July 2026 and Circular 69 art 10 had already repealed its arts 6, 9, 12 and 15; Circular 103/2014/TT-BTC itself for periods before 1 July 2026; Law 13/2008/QH12 for supplies before 1 July 2025; the household revenue level for 1 July to 31 December 2025, as VAT Law art 18.2 starts the art 5.25 level on 1 January 2026; Law 38/2019/QH14, Decrees 126/2020/ND-CP, 123/2020/ND-CP and 70/2025/ND-CP and Circular 78/2021/TT-BTC for filings, invoices and acts before 1 July 2026, including the earlier version's 1 July 2022 e-invoice date; the Criminal Code; whether a Saturday is a ngày nghỉ under Decree 252 art 3.7; whether a household crossing the threshold pays on earlier quarters' revenue; the treatment of exported goods with no customs confirmation; Circular 91/2026/TT-BTC beyond arts 1, 10, 24 and 25; the maximum fine under the law on administrative violations, to which Decree 125 art 7.1(b) now points; whether 1 year or 2 years limits an invoice breach; the scope of Form 01/GTGT line [34a]; whether a value in line [32b] also sits in a rate line; the period and return line for a Decree 181 art 23.2(b) adjustment; the period and return line for a buyer-issued return invoice or a Circular 91 art 10.5(a) invoice; whether VAT Law art 15.9(b) binds a refund claimant that is not a business establishment; the address of the filing portal; the length of the MST; the scope of Decree 181 art 4.13 by product and whether a cloud service is telecoms; the scope of 'financial receipts' in Decree 181 art 14.1(b); and the date the Tổng cục Thuế became the Cục Thuế.
+Not yet confirmed: a regional layer or approved non-EU exception for `vat-workflow-base`; the Form 01/GTGT row that carries 8% sales and how Form 04/GTGT shows the 20% cut; the return forms and period rules for tax periods before 1 July 2026; any extension of the 8% rate past 31 December 2026, where no text was found at 5 November 2026 and that absence is not proof, so a later supply rests on art 9.3 alone on the text read; whether 8% applies to a service bought from a foreign supplier under VAT Law art 4.3 or 4.4, and the VAT and corporate income tax components of that charge, noting that Circular 89 art 99.3(b) repealed Circular 103/2014/TT-BTC from 1 July 2026 and Circular 69 art 10 had already repealed its arts 6, 9, 12 and 15; Circular 103/2014/TT-BTC itself for periods before 1 July 2026; Law 13/2008/QH12 for supplies before 1 July 2025; Law 38/2019/QH14, Decrees 126/2020/ND-CP, 123/2020/ND-CP and 70/2025/ND-CP and Circular 78/2021/TT-BTC for filings, invoices and acts before 1 July 2026, including the earlier version's 1 July 2022 e-invoice date; the Criminal Code; the treatment of exported goods with no customs confirmation; Circular 91/2026/TT-BTC beyond arts 1, 10, 24 and 25; the maximum fine under the law on administrative violations, to which Decree 125 art 7.1(b) now points; whether 1 year or 2 years limits an invoice breach; the scope of Form 01/GTGT line [34a]; whether a value in line [32b] also sits in a rate line; the period and return line for a Decree 181 art 23.2(b) adjustment; the period and return line for a buyer-issued return invoice or a Circular 91 art 10.5(a) invoice; whether VAT Law art 15.9(b) binds a refund claimant that is not a business establishment; the address of the filing portal; the length of the MST; the scope of Decree 181 art 4.13 by product and whether a cloud service is telecoms; the scope of 'financial receipts' in Decree 181 art 14.1(b); and the date the Tổng cục Thuế became the Cục Thuế.
 
 ### Version history
 
 | Version | Date | Change |
 | --- | --- | --- |
+| 2.2 | 2026-11-26 | Corrected the household VAT base and Q3 filing date in the threshold example. Added the preceding threshold and flagged the 2026 payment extension. |
 | 2.1 | 2026-11-05 | Converted to the upstream template with coverage from 1 July 2025. Corrected the filing period, quarterly due date, annual settlement, tax authority, return lines, bank and payment fee treatment, mixed-use ratio, deposit interest, and penalty and e-invoice citations against primary text. Added the non-cash rule, refund and export failure rules, foreign supplier rules from Decree 252, and household rules from Decrees 68 and 141. Replaced conservative defaults with Needs Input, made refusals full stops, added R-VN-6 to R-VN-8 and added an Operational hold. |
 | 2.0 | 31 October 2026 | Legacy: added the temporary 8% rate; rebased on VAT Law 48/2024/QH15 and its decrees; moved the examples to April 2026. |
 | 2.0 | April 2026 | Legacy: full v2.0 rewrite with pattern library, worked examples and foreign contractor note. |
