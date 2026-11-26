@@ -1,10 +1,10 @@
 ---
 name: uk-corporation-tax
-description: "UK corporation tax for companies resident in the UK and for non-resident companies trading in the UK through a permanent establishment. Covers the 25% main rate, the 19% small profits rate and marginal relief between GBP 50,000 and GBP 250,000 (limits shared by associated companies and cut for short periods), financial years running from 1 April, the taxable base, capital allowances, trade losses and the GBP 5m deductions allowance, 75% group relief, the dividend exemption and substantial shareholding exemption, corporate interest restriction, CT600 filing with iXBRL accounts, payment 9 months and 1 day after the period end, quarterly instalments for large and very large companies, and penalties. Financial year 2026. Trigger on: UK corporation tax, CT600, marginal relief, small profits rate, associated companies, quarterly instalment payments, group relief, SSE, corporate interest restriction. Out of scope: R&D relief (gb-tax-relief-under-the-merged-scheme), transfer pricing (uk-transfer-pricing), shareholder dividend tax (uk-dividends), accounts (uk-financial-statements), VAT (uk-vat-return)."
-version: 0.3
+description: "UK corporation tax, financial year 2026: ordinary company profits, small profits rate, marginal relief, associated companies, capital allowances, eligible trade losses, CT600 filing and payment dates, quarterly instalments, penalties and dated interest rates. Preserves two conditional computations. Specialist regimes and complex reliefs require partner-accountant review. Trigger on UK corporation tax, CT600, marginal relief, associated companies or company losses. R&D, transfer pricing, shareholder dividend tax, accounts and VAT have separate Guides."
+version: 0.4
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -14,121 +14,112 @@ type: computation
 
 # UK corporation tax: rates, marginal relief, CT600, losses and payment dates (financial year 2026)
 
-Corporation tax is charged by financial year. A financial year runs from 1 April to 31 March and is named after the calendar year in which it starts, so financial year 2026 runs from 1 April 2026 to 31 March 2027. A company's accounting period that straddles 31 March is split between the two financial years on a time basis when the rates differ. For financial years 2023 to 2027 the rates, limits and fraction are the same, so current periods need no split.
-
-The law is mainly the Corporation Tax Act 2009 (CTA 2009), the Corporation Tax Act 2010 (CTA 2010), the Taxation (International and Other Provisions) Act 2010 (TIOPA 2010), the Taxation of Chargeable Gains Act 1992 (TCGA 1992), Schedule 18 to the Finance Act 1998 (returns and penalties) and the yearly Finance Acts. HMRC's own guidance is on gov.uk and in the HMRC internal manuals.
-
 ## Who this applies to
 
-- **UK resident companies.** A company incorporated in the UK is UK resident for corporation tax ([CTA 2009 s14](https://www.legislation.gov.uk/ukpga/2009/4/section/14)). A company incorporated abroad can also be UK resident if its central management and control is in the UK. A UK resident company is charged on all its profits wherever they arise, subject to an election to exempt the profits of foreign permanent establishments ([CTA 2009 s5(1)](https://www.legislation.gov.uk/ukpga/2009/4/section/5)).
-- **Non-resident companies.** A non-UK resident company is within corporation tax only if it trades in the UK through a permanent establishment, deals in or develops UK land, carries on a UK property business, or has other UK property income ([CTA 2009 s5(2)](https://www.legislation.gov.uk/ukpga/2009/4/section/5)). A permanent establishment is charged on the profits attributable to it ([CTA 2009 s5(3) and s19](https://www.legislation.gov.uk/ukpga/2009/4/section/5)).
-- **Also within corporation tax:** clubs, societies, co-operatives and other unincorporated associations, and the UK property income of non-resident companies.
-- **Out of scope of this skill:** partnerships and LLPs (their members are taxed instead), sole traders, oil and gas ring fence profits (separate rates), banks and insurers' special regimes, REITs, investment trusts and authorised funds (unit trusts and OEICs pay 20%), tonnage tax, and charities' exemptions.
-- **Non-UK resident companies** cannot use the small profits rate or marginal relief, because both require the company to be UK resident in the period. A UK permanent establishment of a foreign company therefore pays the 25% main rate on all its profits ([CTA 2010 s18A(1)(a)](https://www.legislation.gov.uk/ukpga/2010/4/section/18A), [s18B(1)(a)](https://www.legislation.gov.uk/ukpga/2010/4/section/18B); [HMRC marginal relief guidance](https://www.gov.uk/guidance/corporation-tax-marginal-relief)).
-- **Close investment-holding companies** cannot use the small profits rate or marginal relief and pay the main rate on all profits ([CTA 2010 s18A(1)(b)](https://www.legislation.gov.uk/ukpga/2010/4/section/18A), [s18B(1)(b)](https://www.legislation.gov.uk/ukpga/2010/4/section/18B)).
+Use this computation for ordinary UK-resident trading companies. UK incorporation normally establishes residence; foreign-incorporated companies can be resident through central management and control. A treaty can override domestic residence ([CTA 2009 ss14 and 18](https://www.legislation.gov.uk/ukpga/2009/4/section/18), [HMRC INTM120060](https://www.gov.uk/hmrc-internal-manuals/international-manual/intm120060)).
+
+UK residents are charged on worldwide income, subject to statutory exemptions. Non-resident income can fall within corporation tax through a UK permanent establishment, UK land dealing/development, a UK property business or other UK property income. The PE charge concerns attributable profits. Chargeable gains have separate territorial rules; do not treat that income list as exhaustive of corporation tax ([CTA 2009 s5](https://www.legislation.gov.uk/ukpga/2009/4/section/5)). For non-resident gains or treaty positions: Check this point with one of our partner accountants.
+
+The small profits rate and marginal relief require UK residence and absence of close investment-holding-company status. For a non-resident PE, do not infer treaty entitlement or a final rate from domestic law alone: Check this point with one of our partner accountants. See [CTA 2010 s18A](https://www.legislation.gov.uk/ukpga/2010/4/section/18A) and [s18B](https://www.legislation.gov.uk/ukpga/2010/4/section/18B).
+
+For clubs, societies, co-operatives, unincorporated associations, partnerships/LLPs, sole traders, ring-fence oil/gas profits, banks, insurers, REITs, investment trusts, authorised funds, unit trusts/OEICs, tonnage tax and charities: Check this point with one of our partner accountants. Do not apply the ordinary-company examples to these cases.
 
 ## Rates, bands and thresholds
 
-| Item | Rate or amount | Tax year | Source |
+Financial year 2026 runs from 1 April 2026 to 31 March 2027. Apply rates for the company's accounting period; where rates differ across financial years, apportion by days ([HMRC rates](https://www.gov.uk/corporation-tax-rates)).
+
+| Item | Rate or amount | Period and condition | Source |
 |---|---|---|---|
-| Main rate (profits over the upper limit) | 25% | FY2026 (1 Apr 2026 to 31 Mar 2027); same for FY2023 to FY2025 | [Finance Act 2025 s13](https://www.legislation.gov.uk/ukpga/2025/8/section/13); [HMRC rates and allowances](https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax) |
-| Small profits rate (profits at or below the lower limit) | 19% | FY2026 | [Finance Act 2025 s14](https://www.legislation.gov.uk/ukpga/2025/8/section/14) |
-| Lower limit | £50,000 | FY2026 | [CTA 2010 s18D](https://www.legislation.gov.uk/ukpga/2010/4/section/18D) |
-| Upper limit | £250,000 | FY2026 | [CTA 2010 s18D](https://www.legislation.gov.uk/ukpga/2010/4/section/18D) |
-| Standard marginal relief fraction | 3/200 | FY2026 | [Finance Act 2025 s14](https://www.legislation.gov.uk/ukpga/2025/8/section/14) |
-| Main rate, small profits rate and fraction, next year | 25%, 19% and 3/200 (limits unchanged at £50,000 and £250,000) | FY2027 (1 Apr 2027 to 31 Mar 2028) | [Finance Act 2026 s11](https://www.legislation.gov.uk/ukpga/2026/11/section/11); [Finance Act 2026 s12](https://www.legislation.gov.uk/ukpga/2026/11/section/12); [CTA 2010 s18D](https://www.legislation.gov.uk/ukpga/2010/4/section/18D) |
-| Marginal relief formula | F x (U - A) x N / A | all years from FY2023 | [CTA 2010 s18B](https://www.legislation.gov.uk/ukpga/2010/4/section/18B); [HMRC CTM03925](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03925) |
-| Associated companies | both limits divided by (1 + number of associated companies) | FY2026 | [HMRC marginal relief guidance](https://www.gov.uk/guidance/corporation-tax-marginal-relief) |
-| Short accounting period | both limits reduced in proportion | FY2026 | [CTA 2010 s18D](https://www.legislation.gov.uk/ukpga/2010/4/section/18D) |
-| Unit trusts and OEICs | 20% | FY2026 | [HMRC rates and allowances](https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax) |
-| Ring fence profits (oil and gas) | 30% main, 19% small, fraction 11/400 | FY2026 | [HMRC rates and allowances](https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax) |
-| Loss deductions allowance (company not in a group) | £5,000,000 a year, cut for short periods | FY2026 | [CTA 2010 s269ZW](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZW) |
-| Loss deductions allowance (group) | one £5,000,000 shared across the group | FY2026 | [CTA 2010 s269ZR](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZR) |
-| Profits above the deductions allowance that brought-forward losses can cover | 50% | FY2026 | [CTA 2010 s269ZB](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZB); [s269ZD](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZD) |
-| Corporate interest restriction de minimis | £2 million net interest a year for the worldwide group | FY2026 | [TIOPA 2010 s392](https://www.legislation.gov.uk/ukpga/2010/8/section/392) |
-| Corporate interest restriction fixed ratio | 30% of tax-EBITDA (lower of that and the fixed ratio debt cap) | FY2026 | [TIOPA 2010 s397](https://www.legislation.gov.uk/ukpga/2010/8/section/397) |
-| Annual Investment Allowance | £1,000,000 | since 1 Jan 2019 | [gov.uk AIA](https://www.gov.uk/capital-allowances/annual-investment-allowance) |
-| Full expensing (new main rate plant, companies only) | 100% first-year allowance | expenditure from 1 Apr 2023 | [CAA 2001 s45S](https://www.legislation.gov.uk/ukpga/2001/2/section/45S); [HMRC CA23174AA](https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca23174aa) |
-| Special rate plant first-year allowance (companies) | 50% | expenditure from 1 Apr 2023 | [HMRC CA23174AA](https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca23174aa) |
-| New first-year allowance (new main rate plant, includes some leased plant) | 40% | expenditure from 1 Jan 2026 | [Finance Act 2026 s29 (new CAA 2001 s45U)](https://www.legislation.gov.uk/ukpga/2026/11/section/29) |
-| Main pool writing-down allowance | 14% (was 18%); hybrid rate for a period spanning 1 Apr 2026 | periods from 1 Apr 2026 | [Finance Act 2026 s28](https://www.legislation.gov.uk/ukpga/2026/11/section/28) |
-| Large company (quarterly instalments) | profits over £1.5m, shared by associated companies | FY2026 | [HMRC instalments guidance](https://www.gov.uk/guidance/corporation-tax-paying-in-instalments) |
-| Very large company (earlier instalments) | profits over £20m; for periods beginning on or after 1 Apr 2023 divided by (1 + number of associated companies) | periods from 1 Apr 2019 | [SI 2017/1072](https://www.legislation.gov.uk/uksi/2017/1072/made); [HMRC very large company guidance](https://www.gov.uk/guidance/pay-corporation-tax-if-youre-a-very-large-company) |
-| Pillar Two | Multinational top-up tax and domestic top-up tax at a 15% minimum rate for groups with revenue over EUR 750m in two of the four prior periods; in force for periods beginning on or after 31 Dec 2023 (UTPR from 31 Dec 2024) | in force | [HMRC MTT01100](https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt01100); [HMRC MTT01010](https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt01010) |
+| Main rate | 25% | FY2026; reduce only where relief applies | [FA 2025 s13](https://www.legislation.gov.uk/ukpga/2025/8/section/13) |
+| Small profits rate | 19% | FY2026; eligible company's augmented profits at or below adjusted lower limit | [FA 2025 s14](https://www.legislation.gov.uk/ukpga/2025/8/section/14); [CTA 2010 s18A](https://www.legislation.gov.uk/ukpga/2010/4/section/18A) |
+| Lower and upper limits | £50,000 and £250,000 | No associated companies, 12-month accounting period | [CTA 2010 s18D](https://www.legislation.gov.uk/ukpga/2010/4/section/18D) |
+| Marginal relief fraction | 3/200 | FY2026 | [FA 2025 s14](https://www.legislation.gov.uk/ukpga/2025/8/section/14) |
+| FY2027 main rate, small rate and fraction | 25%, 19%, 3/200 | 1 April 2027 to 31 March 2028; same eligibility and statutory limits | [FA 2026 s11](https://www.legislation.gov.uk/ukpga/2026/11/section/11); [s12](https://www.legislation.gov.uk/ukpga/2026/11/section/12); [CTA 2010 s18D](https://www.legislation.gov.uk/ukpga/2010/4/section/18D) |
 
-There is no local or regional tax on company profits in the UK and no minimum tax for ordinary companies outside Pillar Two.
+Divide both limits by one plus the number of associated companies; proportionately reduce them for an accounting period shorter than 12 months. Association includes control by the same person(s), and companies outside the UK. Count association at any time in the period, subject to exclusions for no trade/business in the relevant period or part-period. Attribution of associates' rights requires substantial commercial interdependence; the participators' own rights always count ([CTA 2010 ss18D and 18E](https://www.legislation.gov.uk/ukpga/2010/4/section/18E), [CTM03940](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03940), [CTM03950](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03950)). Three other associated companies give derived limits £12,500 and £62,500. For investment-company exclusions, attribution disputes or changing financial-year limits: Check this point with one of our partner accountants.
 
-**How marginal relief works.** Work out tax on taxable total profits (N) at the 25% main rate. Then deduct marginal relief: 3/200 x (upper limit - augmented profits) x (taxable total profits / augmented profits). Augmented profits (A) are taxable total profits plus exempt distributions received, other than distributions from a 51% subsidiary or a company of which the recipient is a 51% subsidiary ([CTA 2010 s18L](https://www.legislation.gov.uk/ukpga/2010/4/section/18L)). Between the limits the effective marginal rate on each extra pound is 26.5%. If augmented profits are at or below the lower limit, the whole of taxable total profits is taxed at 19%.
+Let N = taxable total profits, A = augmented profits, U = adjusted upper limit and F = the fraction. For an eligible company whose A exceeds the lower limit but does not exceed U, tax = 25% x N minus F x (U - A) x N / A. At or below the lower limit, tax = 19% x N. Above U, tax = 25% x N ([CTA 2010 ss18A and 18B](https://www.legislation.gov.uk/ukpga/2010/4/section/18B), [CTM03925](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03925)).
 
-**Associated companies.** Two companies are associated if one controls the other or both are under the control of the same person or persons. Rights held by a participator's associates (such as relatives) are counted only where there is substantial commercial interdependence between the companies; rights the participators hold themselves always count ([HMRC CTM03950](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03950)). HMRC's example: a company with 3 other associated companies divides the limits by 4, giving a lower limit of £12,500 and an upper limit of £62,500 ([HMRC marginal relief guidance](https://www.gov.uk/guidance/corporation-tax-marginal-relief)).
-
-**Next year.** Finance Act 2026 charges corporation tax for financial year 2027 (1 April 2027 to 31 March 2028) at a 25% main rate ([s11](https://www.legislation.gov.uk/ukpga/2026/11/section/11)), with a 19% standard small profits rate and a 3/200 standard marginal relief fraction ([s12](https://www.legislation.gov.uk/ukpga/2026/11/section/12)). The £50,000 and £250,000 limits are fixed in CTA 2010 s18D and did not change, so an accounting period straddling 31 March 2027 needs no split.
+A is N plus non-excluded exempt distributions of a qualifying kind. It is not every exempt receipt. The exclusions include specified subsidiary/common-parent and quasi-subsidiary distributions, subject to statutory ownership and economic-entitlement tests. For a group/consortium distribution, resolve [ss18L and 18M](https://www.legislation.gov.uk/ukpga/2010/4/section/18L) before calculating A; otherwise: Check this point with one of our partner accountants.
 
 ## The taxable base
 
-Start with the profit before tax in the accounts (UK GAAP or IFRS) and adjust it into taxable total profits.
+Start with accounts profit and reconcile each item to its tax treatment. Capital expenditure and expenses not wholly and exclusively for the trade are generally disallowed, subject to statutory exceptions and identifiable trade proportions. Add back tangible fixed-capital-asset depreciation and ordinary client entertaining unless an exception applies. Do not automatically add back every amortisation or provision ([CTA 2009 s53](https://www.legislation.gov.uk/ukpga/2009/4/section/53), [s54](https://www.legislation.gov.uk/ukpga/2009/4/section/54), [s1298](https://www.legislation.gov.uk/ukpga/2009/4/section/1298), [BIM35030](https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim35030)). Fines/penalties, provisions, loan relationships and intangible assets: Check this point with one of our partner accountants.
 
-1. **Trading profit.** Add back expenses not incurred wholly and exclusively for the trade, depreciation and amortisation of plant (capital allowances replace it), client entertaining, fines and penalties, general provisions, and capital items charged to profit and loss. Deduct income taxed elsewhere in the computation (for example property income or exempt dividends).
-2. **Capital allowances.** Plant and machinery goes through the Annual Investment Allowance (£1m), full expensing (100% on new, unused main rate plant bought by a company), the 50% special rate allowance, the new 40% first-year allowance from 1 January 2026, or the main pool at 14% (from 1 April 2026) and the special rate pool. Disposals of fully expensed assets give a balancing charge.
-3. **Loan relationships and intangibles.** Interest and other finance costs follow the accounts under the loan relationship rules in CTA 2009 Parts 5 and 6. Intangible fixed assets created or acquired from 1 April 2002 follow CTA 2009 Part 8.
-4. **Other income and gains.** Add UK property business profits, non-trading loan relationship credits and chargeable gains. Companies still get indexation allowance on gains, frozen at December 2017 ([HMRC rates and allowances](https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax)).
-5. **Dividends received are mostly exempt.** For a small company, a dividend is exempt if the payer is resident in the UK or a qualifying territory and the other conditions in [CTA 2009 s931B](https://www.legislation.gov.uk/ukpga/2009/4/section/931B) are met. For other companies a dividend is exempt if it falls into an exempt class in [CTA 2009 ss931E to 931Q](https://www.legislation.gov.uk/ukpga/2009/4/part/9A/chapter/3), which include distributions from controlled companies, on non-redeemable ordinary shares and on portfolio holdings of less than 10%. Exempt dividends still count in augmented profits for marginal relief unless they come from a 51% group company.
-6. **Substantial shareholding exemption (SSE).** A gain on selling shares is not a chargeable gain where the investing company held at least 10% of the ordinary share capital for a continuous 12 months beginning not more than six years before the sale, and the company sold is a trading company or the holding company of a trading group ([TCGA 1992 Sch 7AC paras 1, 7, 8 and 19](https://www.legislation.gov.uk/ukpga/1992/12/schedule/7AC)).
-7. **Corporate interest restriction.** A worldwide group whose net interest expense in the UK is £2m a year or less is not restricted. Above that, net interest deductions are capped at the interest capacity, broadly 30% of tax-EBITDA under the fixed ratio method, or the group ratio if elected ([TIOPA 2010 s392](https://www.legislation.gov.uk/ukpga/2010/8/section/392), [s397](https://www.legislation.gov.uk/ukpga/2010/8/section/397)). Groups over the de minimis file an interest restriction return.
-8. **Trade losses.**
-   - **Current year and carry back.** A trade loss can be set against total profits of the same period and, if the claim requires, the previous 12 months ([CTA 2010 s37](https://www.legislation.gov.uk/ukpga/2010/4/section/37)). The claim must be made within two years after the end of the loss-making period.
-   - **Carry forward.** Losses arising from 1 April 2017 that are not used can be carried forward and set against total profits of later periods, on a claim made within two years after the end of the later period, provided the trade continues ([CTA 2010 s45A](https://www.legislation.gov.uk/ukpga/2010/4/section/45A)).
-   - **Restriction for large profits.** Brought-forward losses can cover profits up to the deductions allowance (£5m a year for a single company or group) plus 50% of profits above it ([CTA 2010 s269ZB](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZB) for losses set against trading profits, [s269ZD](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZD) for post-2017 losses set against total profits, [s269ZW](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZW)). A group nominates a company to allocate its single £5m allowance ([s269ZR](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZR)).
-9. **Group relief.** Two companies are in the same group if one is a 75% subsidiary of the other or both are 75% subsidiaries of a third company ([CTA 2010 s152](https://www.legislation.gov.uk/ukpga/2010/4/section/152)). Current-year losses and other amounts can be surrendered between UK-related group members: UK residents and non-residents within corporation tax, such as through a UK permanent establishment ([HMRC CTM80150](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm80150)). Carried-forward losses from 1 April 2017 can also be group relieved, subject to the same deductions allowance.
+| Capital allowance | Headline | Operative conditions | Source |
+|---|---|---|---|
+| Annual Investment Allowance | £1,000,000 | Qualifying plant/machinery; adjust for period length and any shared entitlement. Cars, gifts and previously personally owned items excluded; claim in acquisition period, not final cessation period. For group/control allocation: Check this point with one of our partner accountants. | [HMRC AIA](https://www.gov.uk/capital-allowances/annual-investment-allowance) |
+| Full expensing | 100% | Company within corporation tax; new unused main-rate plant; expenditure from 1 April 2023; CAA ss45T/46 exclusions and disqualifying arrangements resolved. No cars; leasing generally excluded subject to statutory exception. Claim against qualifying cost only once. | [CAA 2001 s45S](https://www.legislation.gov.uk/ukpga/2001/2/section/45S); [s46](https://www.legislation.gov.uk/ukpga/2001/2/section/46); [CA23174AA](https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca23174aa); [CA23174AB](https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca23174ab) |
+
+For the special-rate first-year allowance, the new first-year allowance from January 2026, main/special-pool writing-down allowances (including periods spanning April 2026), and disposal/balancing charges: Check this point with one of our partner accountants. Do not substitute their headline percentages without checking the asset, dates, exclusions and period.
+
+Other income, property profits, non-trading credits, chargeable gains/indexation and removing income taxed elsewhere from trading profits: Check this point with one of our partner accountants.
+
+A dividend exemption is conditional, not established by the percentage holding alone. The small-company exemption requires all [CTA 2009 s931B](https://www.legislation.gov.uk/ukpga/2009/4/section/931B) conditions: payer resident only in the UK or a qualifying territory, no excluded kind of distribution, no foreign deduction and no tax-advantage scheme. For small-company status, qualifying territories or other-company exempt classes: Check this point with one of our partner accountants.
+
+For the substantial shareholding exemption: Check this point with one of our partner accountants.
+
+For corporate interest restriction, including group de minimis, fixed/group ratio, debt cap and return obligations: Check this point with one of our partner accountants.
+
+**Trade losses.** Under [CTA 2010 s37](https://www.legislation.gov.uk/ukpga/2010/4/section/37), an eligible loss claim first relieves the loss period, then (if claimed) the preceding 12 months, latest profits first. The same trade must have been carried on in the earlier period; wholly overseas trades are excluded. Claim within two years of the loss period end, unless HMRC allows longer. Special restrictions must be resolved before use.
+
+[Section 45A](https://www.legislation.gov.uk/ukpga/2010/4/section/45A) allows unused eligible losses of periods beginning on/after 1 April 2017 against later total profits on a claim, normally within two years of the later period end. The same trade must continue; it must not have become small/negligible in the loss period, and all subsection (3) conditions and other restrictions must be met. For pre-2017 losses, cessation, ownership changes or uncertain eligibility: Check this point with one of our partner accountants.
+
+A company outside a deductions-allowance group normally has a £5,000,000 allowance, reduced for short periods; group membership changes availability and allocation ([s269ZW](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZW), [s269ZR](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZR)). For a simple case with only s45A losses, no competing deductions, and profits P after other reliefs, the loss cap is the available allowance plus 50% of relevant profits above it, capped at P. Do not reuse the full allowance across group members or assume association for marginal relief is the same as a deductions-allowance group. The allowance must be correctly specified in the return ([s269ZZ](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZZ)). For allocation, multiple types of carried-forward loss or group relief (including the 75% relationship test): Check this point with one of our partner accountants. See [s269ZD](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZD) and [s269ZFA](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZFA).
 
 ## Deadlines and filing
 
-| Step | Deadline | Source |
-|---|---|---|
-| Tell HMRC the company is within corporation tax | within 3 months after the start of its first accounting period | [Finance Act 2004 s55](https://www.legislation.gov.uk/ukpga/2004/12/section/55) |
-| Pay corporation tax (not large) | 9 months and 1 day after the end of the accounting period | [gov.uk Pay Corporation Tax](https://www.gov.uk/pay-corporation-tax) |
-| Large company (profits over £1.5m, under £20m) | four equal instalments: 6 months 13 days after the start of the period, then every 3 months, the last 3 months 14 days after the period ends (months 7, 10, 13 and 16 of a 12-month period) | [HMRC instalments guidance](https://www.gov.uk/guidance/corporation-tax-paying-in-instalments) |
-| Very large company (profits over £20m, divided among associated companies) | four instalments on the 14th day of months 3, 6, 9 and 12 of the period | [HMRC CTM92805](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm92805); [HMRC very large company guidance](https://www.gov.uk/guidance/pay-corporation-tax-if-youre-a-very-large-company) |
-| File the Company Tax Return (CT600) | 12 months after the end of the accounting period | [gov.uk Company Tax Returns](https://www.gov.uk/company-tax-returns) |
+Notify HMRC within three months of the beginning of the first accounting period and of a later period not immediately following another ([FA 2004 s55](https://www.legislation.gov.uk/ukpga/2004/12/section/55)).
 
-- **Large company exceptions.** No instalments are needed if the total liability is under £10,000. Nor are they needed if profits are no more than £10m and either the company did not exist (or had no accounting period) in the previous 12 months, or for any period ending in the previous 12 months its annual rate of profit was no more than £1.5m or its tax no more than £10,000 ([HMRC instalments guidance](https://www.gov.uk/guidance/corporation-tax-paying-in-instalments)). There is no such first-period grace for very large companies, though the £10,000 liability exception still applies to them ([HMRC very large company guidance](https://www.gov.uk/guidance/pay-corporation-tax-if-youre-a-very-large-company)).
-- **The return.** The return is form CT600; the current version is "Company Tax Return CT600 (2026) Version 3" ([gov.uk CT600](https://www.gov.uk/government/publications/corporation-tax-company-tax-return-ct600-2015-version-3)). It must be filed online, and the accounts and tax computations must be in iXBRL format ([HMRC COM60040](https://www.gov.uk/hmrc-internal-manuals/cotax-manual/com60040)). HMRC's free 'File your accounts and Company Tax Return' service closed on 31 March 2026; from 1 April 2026 returns are filed through commercial software, and a paper CT600 is allowed only with a reasonable excuse or when filing in Welsh ([gov.uk closure guidance](https://www.gov.uk/guidance/closure-of-the-service-to-file-your-company-accounts-and-tax-return)).
-- **Accounting periods.** An accounting period for corporation tax cannot exceed 12 months. A company with a longer period of accounts files two returns: the first 12 months, then the rest.
-- **Companies House** accounts are a separate filing with separate deadlines. See uk-financial-statements.
+| Step | Rule | Source |
+|---|---|---|
+| Ordinary payment, instalments inapplicable | 9 months and 1 day after accounting period end | [HMRC Company Tax Returns](https://www.gov.uk/company-tax-returns) |
+| CT600 filing | Normally 12 months after accounting period end; statutory later dates below | [FA 1998 Sch 18 para 14](https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/14) |
+| Large-company profits threshold | Over £1.5m, up to and including £20m, before adjustments | [SI 1998/3175 reg 3](https://www.legislation.gov.uk/uksi/1998/3175/regulation/3) |
+| Very-large-company profits threshold | Over £20m, before adjustments | [SI 1998/3175 reg 3](https://www.legislation.gov.uk/uksi/1998/3175/regulation/3) |
+| Large instalments, 12-month period | Four equal payments: 6 months and 13 days after first day, then every 3 months; final payment 3 months and 14 days after period end | [HMRC large companies](https://www.gov.uk/guidance/corporation-tax-paying-in-instalments) |
+| Very large instalments, 12-month period | Four equal payments: 2 months and 13 days after first day, then every 3 months | [HMRC very large companies](https://www.gov.uk/guidance/pay-corporation-tax-if-youre-a-very-large-company) |
+
+For instalments, profits mean augmented profits ([reg 2](https://www.legislation.gov.uk/uksi/1998/3175/regulation/2)). For current periods, divide the £1.5m, £10m grace and £20m limits by 1 + N. N is measured at the end of the immediately preceding accounting period, or at commencement if no immediately preceding period. Proportionately reduce those limits and the £10,000 liability test for a period shorter than 12 months. These counting dates differ from the marginal-relief period test ([reg 3(6)-(10)](https://www.legislation.gov.uk/uksi/1998/3175/regulation/3)).
+
+No large/very-large status under reg 3 if total liability does not exceed £10,000, proportionately reduced for short periods. At exactly £10,000, the statutory exception applies, despite HMRC's shorthand "less than". A large-company grace applies only where profits do not exceed the adjusted £10m limit and reg 3(5)'s preceding-12-month test is met: the company lacked existence/an accounting period during some part of that time, or, in respect of every accounting period falling within or ending in it, the company was neither large (ignoring this grace) nor very large. This is not renewed grace after a grace-only year. Very large companies have no corresponding grace. For short-period instalment dates, gains-only periods under reg 3(11), or uncertainty about previous status: Check this point with one of our partner accountants.
+
+The filing date is the latest of: 12 months after the return period end; 12 months after the relevant accounts period end if that accounts period is at most 18 months; 30 months from its beginning if longer; and 3 months after service of the notice to file ([Sch 18 para 14](https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/14)). An accounting period cannot exceed 12 months; longer accounts normally need separate returns ([HMRC accounting periods](https://www.gov.uk/corporation-tax-accounting-period)).
+
+File CT600, required supplementary pages, accounts and computations online, normally with accounts/computations in iXBRL. Exemptions and PDF-account concessions exist; for an exempt/special filer: Check this point with one of our partner accountants. HMRC's free combined filing service closed on 31 March 2026; commercial software is the normal route from 1 April 2026. Paper returns are allowed for reasonable excuse or Welsh filing ([COM60040](https://www.gov.uk/hmrc-internal-manuals/cotax-manual/com60040), [closure guidance](https://www.gov.uk/guidance/closure-of-the-service-to-file-your-company-accounts-and-tax-return)). Companies House accounts are a separate filing: see uk-financial-statements.
 
 ## Penalties and interest
 
-| Failure | Penalty or rate | Source |
+| Failure | Rule | Source |
 |---|---|---|
-| Return late, filing date on or after 1 April 2026 | £200 flat; £400 if more than 3 months late | [FA 1998 Sch 18 para 17(2)](https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/17); [Finance Act 2026 s265](https://www.legislation.gov.uk/ukpga/2026/11/section/265) |
-| Third return in a row late, filing date on or after 1 April 2026 | £1,000 flat; £2,000 if more than 3 months late | [FA 1998 Sch 18 para 17(3)](https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/17); [Finance Act 2026 s265](https://www.legislation.gov.uk/ukpga/2026/11/section/265) |
-| Return late, filing date before 1 April 2026 | £100 flat; £200 if more than 3 months late; third in a row £500 and £1,000 | [Finance Act 2026 s265](https://www.legislation.gov.uk/ukpga/2026/11/section/265) (the amounts it replaced) |
-| Return not filed within 18 months of the period end | extra 10% of unpaid tax; 20% if filed more than 2 years after the period end | [FA 1998 Sch 18 para 18](https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/18) |
-| Inaccurate return | up to 30% (careless), 70% (deliberate) or 100% (deliberate and concealed) of the potential lost revenue for a domestic (category 1) inaccuracy, reduced for disclosure; higher maximums for offshore categories 2 and 3 | [FA 2007 Sch 24 para 4](https://www.legislation.gov.uk/ukpga/2007/11/schedule/24/paragraph/4) |
-| Late payment interest | Bank of England base rate plus 4% (from 6 April 2025); 7.75% from 9 January 2026 | [HMRC interest rates](https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates) |
-| Underpaid quarterly instalments | 6.25% from 29 December 2025 | [HMRC interest rates](https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates) |
-| Repayment interest | base rate minus 1%, minimum 0.5%; 2.75% from 9 January 2026 | [HMRC interest rates](https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates) |
+| Late return, filing date on/after 1 April 2026 | £200 within 3 months after filing date; £400 otherwise (total flat penalty) | [Sch 18 para 17](https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/17); [FA 2026 s265](https://www.legislation.gov.uk/ukpga/2026/11/section/265) |
+| Third successive failure satisfying para 17(3) | £1,000 within 3 months; £2,000 otherwise | [Sch 18 para 17](https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/17) |
+| Filing date before 1 April 2026 | Previous totals £100/£200, third successive failure £500/£1,000 | [FA 2026 s265](https://www.legislation.gov.uk/ukpga/2026/11/section/265) |
+| Tax-related late-return penalty | Failure at 18 months after period end, or later filing date if applicable: 10% of defined unpaid tax if delivered within 2 years after period end, 20% otherwise | [Sch 18 para 18](https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/18) |
+| Normal-due-date late payment interest | 8.00% from 24 November 2026 | [HMRC interest rates](https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates) |
+| Underpaid quarterly instalment interest | 6.50% from 16 November 2026 | [HMRC interest rates](https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates) |
+| CT self-assessment repayment interest | 3.00% from 24 November 2026; distinguish interest on early/overpaid instalments | [HMRC interest rates](https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates) |
 
-The doubled flat penalties apply to returns whose filing date is 1 April 2026 or later, which for a company on the normal 12-month filing date means accounting periods ending on or after 1 April 2025; earlier returns keep £100, £200, £500 and £1,000 ([Finance Act 2026 s265(2)](https://www.legislation.gov.uk/ukpga/2026/11/section/265)). HMRC may now change these amounts by regulations (new para 17(5)). The HMRC interest page was last updated on 23 December 2025, and the Bank of England's Bank Rate has stayed at 3.75% since 18 December 2025 ([Bank of England Bank Rate history](https://www.bankofengland.co.uk/boeapps/database/Bank-Rate.asp)), so the rates above were current when read; they move with Bank Rate, so check on the day you compute. There is no separate fixed late payment penalty for corporation tax; interest runs from the due date. HMRC estimates the tax (a determination) if the return is 6 months late ([gov.uk late filing penalties](https://www.gov.uk/company-tax-returns/penalties-for-late-filing)).
+The third-failure increase requires three consecutive accounting periods continuously within the charge, a required return for each, and flat penalties for the first two, then a third liability. Late-return penalties may be appealed for reasonable excuse. HMRC can issue a determination when the return is six months late ([para 17](https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/17), [HMRC penalties](https://www.gov.uk/company-tax-returns/penalties-for-late-filing)). Interest rates above are dated, not guaranteed for later calculations; apply the official rate history for the actual accrual dates. Inaccuracy penalties, offshore categories, disclosure reductions and disputed penalty/interest calculations: Check this point with one of our partner accountants.
 
 ## Cross-border points
 
-- **Dividends paid.** A UK company does not withhold tax on ordinary dividends it pays, to residents or non-residents. HMRC's manual states that UK dividend income remains non-taxable for most non-UK residents ([HMRC SAIM5120](https://www.gov.uk/hmrc-internal-manuals/savings-and-investment-manual/saim5120)). REIT property income distributions have their own rules and are out of scope.
-- **Interest paid.** A company paying yearly interest arising in the UK must deduct income tax ([ITA 2007 s874](https://www.legislation.gov.uk/ukpga/2007/3/section/874)). For payments in 2026-27 the rate is the basic rate, 20% ([Finance Act 2026 s2](https://www.legislation.gov.uk/ukpga/2026/11/section/2)). From 2027-28 s874(2) refers to the savings basic rate instead ([Finance Act 2026 Sch 1 para 29](https://www.legislation.gov.uk/ukpga/2026/11/schedule/1/paragraph/29)), which is 22% for 2027-28 ([Finance Act 2026 s5](https://www.legislation.gov.uk/ukpga/2026/11/section/5)), so interest paid on or after 6 April 2027 has 22% deducted. Exceptions (payments to UK companies, quoted Eurobonds, and others in ITA 2007 ss875 to 888E) and treaty relief can remove or reduce it.
-- **Royalties paid.** Basic rate income tax (20% in 2026-27; these sections were not moved to the savings rate) is deducted from UK patent royalties ([ITA 2007 s903](https://www.legislation.gov.uk/ukpga/2007/3/section/903)) and from royalties for intellectual property where the owner's usual place of abode is outside the UK ([ITA 2007 s906](https://www.legislation.gov.uk/ukpga/2007/3/section/906)). Treaties can reduce this.
-- **No EU directives.** The UK left the EU, so the Parent-Subsidiary and Interest and Royalties Directives no longer apply. Relief now comes from domestic law and the treaty network.
-- **Controlled foreign companies.** TIOPA 2010 Part 9A can charge a UK company on profits of a foreign company it controls with others, where those profits pass through the CFC charge gateway and no entity-level exemption applies (exempt period, excluded territories, low profits, low profit margin, tax exemption) ([HMRC INTM190000](https://www.gov.uk/hmrc-internal-manuals/international-manual/intm190000)). Check this whenever a UK company owns a low-taxed foreign subsidiary.
-- **Foreign branches.** A UK company can elect to exempt the profits of all its foreign permanent establishments ([CTA 2009 s5(1)](https://www.legislation.gov.uk/ukpga/2009/4/section/5)).
-- **Exit tax.** A company that stops being UK resident is treated as selling and buying back its assets at market value just before it leaves ([TCGA 1992 s185](https://www.legislation.gov.uk/ukpga/1992/12/section/185)). A company moving to a relevant EEA state can apply, within 9 months after the period end, for an exit charge payment plan spreading the tax over six equal annual instalments ([TMA 1970 Sch 3ZB](https://www.legislation.gov.uk/ukpga/1970/9/schedule/3ZB)).
-- **Transfer pricing** between related parties is in uk-transfer-pricing.
+- Ordinary dividends paid, including non-resident recipients and REIT distributions: Check this point with one of our partner accountants.
+- Interest withholding, exemptions/treaty relief and the 2026-27 versus 2027-28 payment date: Check this point with one of our partner accountants.
+- Royalty withholding and treaty relief: Check this point with one of our partner accountants.
+- CFC gateway/exemptions: Check this point with one of our partner accountants.
+- Foreign-PE exemption elections: Check this point with one of our partner accountants.
+- Residence exit charges and payment plans: Check this point with one of our partner accountants.
+- Pillar Two scope, revenue test, minimum tax and UTPR: Check this point with one of our partner accountants.
+- Related-party transfer pricing: see uk-transfer-pricing. R&D: gb-tax-relief-under-the-merged-scheme. Shareholder tax: uk-dividends. Accounts: uk-financial-statements. VAT: uk-vat-return.
 
 ## Worked examples
 
 ### Example 1: a simple trading company
 
-Brightwell Joinery Ltd has no associated companies and no dividend income. Its accounts run for the year 1 April 2026 to 31 March 2027, which falls wholly in financial year 2026. Profit before tax is £180,000. The accounts charge £22,000 of depreciation and £3,000 of client entertaining. In the year it bought a new CNC machine for £30,000, which qualifies for full expensing.
+Brightwell Joinery Ltd has no associated companies and no dividend income. Assume it is UK resident, is not a close investment-holding company, has only this ordinary UK trade and no other income, gains, reliefs or tax charges. The depreciation is of tangible fixed capital assets; the client entertaining is ordinary hospitality with no statutory exception. Its accounts run for the year 1 April 2026 to 31 March 2027, which falls wholly in financial year 2026. Profit before tax is £180,000. The accounts charge £22,000 of depreciation and £3,000 of client entertaining. In the year it bought a new CNC machine for £30,000, which qualifies for full expensing. Assume expenditure was incurred in this period, the machine is unused main-rate plant owned wholly for use in the continuing trade, not for leasing, with no subsidy, connected-party/anti-avoidance restriction, disqualifying arrangements or general exclusion, and a full claim is made ([CAA 2001 s45S](https://www.legislation.gov.uk/ukpga/2001/2/section/45S), [s46](https://www.legislation.gov.uk/ukpga/2001/2/section/46), [s52](https://www.legislation.gov.uk/ukpga/2001/2/section/52)).
 
-Taxable trading profit is 180,000 + 22,000 + 3,000 - 30,000 = £175,000. That is between the £50,000 and £250,000 limits, so marginal relief applies. Tax at the main rate is 175,000 x 25% = £43,750. Marginal relief is 3/200 x (250,000 - 175,000) x 175,000 / 175,000 = £1,125. Corporation tax payable is £42,625. It is not a large company, so the tax is due on 1 January 2028 (9 months and 1 day after 31 March 2027) and the CT600 is due by 31 March 2028.
+Taxable trading profit is 180,000 + 22,000 + 3,000 - 30,000 = £175,000. That is between the £50,000 and £250,000 limits, so marginal relief applies. Tax at the main rate is 175,000 x 25% = £43,750. Marginal relief is 3/200 x (250,000 - 175,000) x 175,000 / 175,000 = £1,125. Corporation tax payable is £42,625. It is not a large company, so the tax is due on 1 January 2028 (9 months and 1 day after 31 March 2027) and, assuming no later statutory filing date under Schedule 18 paragraph 14, the CT600 is due by 31 March 2028. These results apply only with the stated facts; if eligibility or period facts are missing: Check this point with one of our partner accountants.
 
 ```oa-check
 name: Single company, taxable profit GBP 175,000, FY2026, no associated companies
@@ -156,9 +147,9 @@ expected:
 
 ### Example 2: losses brought forward, one associated company and an exempt dividend
 
-Harrow Lane Trading Ltd is controlled by the same individual who controls one other trading company, so it has one associated company. The limits are divided by 2: lower limit £25,000, upper limit £125,000. Its year runs 1 April 2026 to 31 March 2027. Adjusted trading profit is £140,000. It has £60,000 of trade losses brought forward from the year to 31 March 2026. It also received a £10,000 dividend on a 4% holding in an unrelated UK company, which is exempt as a portfolio holding but counts in augmented profits.
+Harrow Lane Trading Ltd is controlled by the same individual who controls one other trading company, so it has one associated company. Assume these are the only associated companies under the statutory tests throughout the relevant period, both trade throughout, and Harrow Lane is UK resident and not a close investment-holding company. The limits are divided by 2: lower limit £25,000, upper limit £125,000. Its year runs 1 April 2026 to 31 March 2027. Adjusted trading profit is £140,000. It has £60,000 of trade losses brought forward from the year to 31 March 2026. It also received a £10,000 dividend on a 4% holding in an unrelated UK company, which counts in augmented profits. Assume Harrow Lane qualifies as a small company for CTA 2009 Part 9A, the payer is resident only in the UK, this is an ordinary dividend, no foreign deduction is allowed and no tax-advantage scheme applies: it is exempt under [s931B](https://www.legislation.gov.uk/ukpga/2009/4/section/931B). The 4% holding alone does not establish the exemption. Assume no other income, gains, deductions or tax charges; the same trade continues, did not become small or negligible, and the loss is unused, eligible under all of s45A, unrestricted by any change of ownership or other rule, and validly claimed within the time limit. Assume it is outside a deductions-allowance group and the full £5m allowance is available and properly specified in the return. If any of these facts is missing: Check this point with one of our partner accountants.
 
-The loss is well under the £5m deductions allowance, so all of it can be used: taxable total profits are 140,000 - 60,000 = £80,000. Augmented profits are 80,000 + 10,000 = £90,000, which is between the reduced limits. Tax at the main rate is 80,000 x 25% = £20,000. Marginal relief is 3/200 x (125,000 - 90,000) x 80,000 / 90,000 = £466.67. Corporation tax payable is £19,533.33. Without the associated company, augmented profits of £90,000 would sit further below the £250,000 upper limit and the relief would be larger; the association costs this company tax.
+On these express assumptions, the full £60,000 loss is usable: taxable total profits are 140,000 - 60,000 = £80,000. Augmented profits are 80,000 + 10,000 = £90,000, which is between the reduced limits. Tax at the main rate is 80,000 x 25% = £20,000. Marginal relief is 3/200 x (125,000 - 90,000) x 80,000 / 90,000 = £466.67. Corporation tax payable is £19,533.33. Without the associated company, augmented profits of £90,000 would sit further below the £250,000 upper limit and the relief would be larger; the association costs this company tax.
 
 ```oa-check
 name: Losses brought forward, one associated company, exempt portfolio dividend, FY2026
@@ -193,72 +184,69 @@ expected:
 
 ## Ask the client first
 
-1. **Associated companies.** Who controls the company, and what other companies do they (and, where there is commercial interdependence, their relatives) control? This sets the limits and the instalment thresholds.
-2. **Accounting period dates.** Does the period run 12 months, is it short, or does the set of accounts run longer than 12 months (two returns)?
-3. **Losses and group.** Are there trade losses brought forward, from before or after 1 April 2017, and is the company in a 75% group that can surrender or claim losses?
-4. **Dividends and share sales.** Did it receive dividends or sell shares in the period, and what percentage holdings were involved (marginal relief, SSE)?
-5. **Size.** Were augmented profits over £1.5m (shared by associated companies) this year or last year? That decides quarterly instalments.
-6. **Foreign links.** Is it UK incorporated, or managed from abroad; does it have foreign branches or subsidiaries, or pay interest or royalties abroad?
+1. Residence, entity/regime and any treaty position or close investment-holding status?
+2. Accounting and accounts dates, notice-to-file service date, business starts/stops?
+3. All associated companies, controllers/associates, activity and timing, this and preceding period?
+4. Accounts-to-tax reconciliation, asset eligibility, dividends, other income/gains and other tax charges?
+5. Origin/unused balance of losses, continuing trade, claims, ownership changes and available deductions allowance/group allocation?
+6. Current/prior augmented profits, liabilities, instalment status and foreign links?
+
+If a required fact is missing, do not output an unconditional tax amount or deadline. Check this point with one of our partner accountants.
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and purpose | URL | Read on |
 |---|---|---|
-| HMRC: rates and allowances, Corporation Tax. Read for the FY2026 main rate, small profits rate and limits. | https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax | 2026-10-22 |
-| gov.uk: Corporation Tax rates. Read for the main and small profits rates. | https://www.gov.uk/corporation-tax-rates | 2026-10-22 |
-| HMRC: Marginal Relief guidance. Read for how marginal relief is worked out. | https://www.gov.uk/guidance/corporation-tax-marginal-relief | 2026-10-22 |
-| HMRC manual CTM03925 (marginal relief formula and example). Read for the marginal relief formula and fraction. | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03925 | 2026-10-22 |
-| HMRC manual CTM03910 (rates, limits, fractions FY2023 to FY2025). Read for the rates, limits and fractions in earlier years. | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03910 | 2026-10-22 |
-| HMRC manual CTM03950 (associated companies). Read for who counts as an associated company. | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03950 | 2026-10-22 |
-| Finance Act 2025 s13 (charge and main rate FY2026) | https://www.legislation.gov.uk/ukpga/2025/8/section/13 | 2026-10-22 |
-| Finance Act 2025 s14 (small profits rate and fraction FY2026) | https://www.legislation.gov.uk/ukpga/2025/8/section/14 | 2026-10-22 |
-| Finance Act 2026 contents. Read for whether the 2026 Act changed the rates. | https://www.legislation.gov.uk/ukpga/2026/11/contents | 2026-10-22 |
-| Finance Act 2026 s11 (charge and main rate FY2027) | https://www.legislation.gov.uk/ukpga/2026/11/section/11 | 2026-10-22 |
-| Finance Act 2026 s12 (small profits rate and fraction FY2027) | https://www.legislation.gov.uk/ukpga/2026/11/section/12 | 2026-10-22 |
-| Finance Act 2026 s2 (basic rate 2026-27) | https://www.legislation.gov.uk/ukpga/2026/11/section/2 | 2026-10-22 |
-| Finance Act 2026 s5 (savings basic rate 22% for 2027-28) | https://www.legislation.gov.uk/ukpga/2026/11/section/5 | 2026-10-22 |
-| Finance Act 2026 Sch 1 para 29 (ITA 2007 s874(2) moved to the savings basic rate) | https://www.legislation.gov.uk/ukpga/2026/11/schedule/1/paragraph/29 | 2026-10-22 |
-| Finance Act 2026 s28 (writing-down allowance 14%) | https://www.legislation.gov.uk/ukpga/2026/11/section/28 | 2026-10-22 |
-| Finance Act 2026 s29 (40% first-year allowance) | https://www.legislation.gov.uk/ukpga/2026/11/section/29 | 2026-10-22 |
-| Finance Act 2026 s265 (late filing penalty commencement) | https://www.legislation.gov.uk/ukpga/2026/11/section/265 | 2026-10-22 |
-| CTA 2009 s5 (territorial scope) | https://www.legislation.gov.uk/ukpga/2009/4/section/5 | 2026-10-22 |
-| CTA 2009 s14 (UK incorporated companies resident) | https://www.legislation.gov.uk/ukpga/2009/4/section/14 | 2026-10-22 |
-| CTA 2009 s931A and s931B (dividend exemption) | https://www.legislation.gov.uk/ukpga/2009/4/section/931B | 2026-10-22 |
-| CTA 2009 Part 9A Chapter 3 (exempt classes) | https://www.legislation.gov.uk/ukpga/2009/4/part/9A/chapter/3 | 2026-10-22 |
-| CTA 2010 s18A (small profits rate: UK resident, not a close investment-holding company) | https://www.legislation.gov.uk/ukpga/2010/4/section/18A | 2026-10-22 |
-| CTA 2010 s18B, s18D, s18L (marginal relief) | https://www.legislation.gov.uk/ukpga/2010/4/section/18B | 2026-10-22 |
-| CTA 2010 s37 (current year and carry back) | https://www.legislation.gov.uk/ukpga/2010/4/section/37 | 2026-10-22 |
-| CTA 2010 s45A (carry forward) | https://www.legislation.gov.uk/ukpga/2010/4/section/45A | 2026-10-22 |
-| CTA 2010 s152 (75% group) | https://www.legislation.gov.uk/ukpga/2010/4/section/152 | 2026-10-22 |
-| CTA 2010 s269ZB, s269ZR, s269ZW (loss restriction, deductions allowance) | https://www.legislation.gov.uk/ukpga/2010/4/section/269ZW | 2026-10-22 |
-| CTA 2010 s269ZD (restriction on deductions from total profits) | https://www.legislation.gov.uk/ukpga/2010/4/section/269ZD | 2026-10-22 |
-| HMRC manual CTM80150 (group relief: who can claim). Read for who can claim group relief. | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm80150 | 2026-10-22 |
-| TIOPA 2010 s392 and s397 (corporate interest restriction) | https://www.legislation.gov.uk/ukpga/2010/8/section/392 | 2026-10-22 |
-| TCGA 1992 Sch 7AC (substantial shareholding exemption). Read for the substantial shareholding exemption conditions. | https://www.legislation.gov.uk/ukpga/1992/12/schedule/7AC | 2026-10-22 |
-| TCGA 1992 s185 (company ceasing to be resident) | https://www.legislation.gov.uk/ukpga/1992/12/section/185 | 2026-10-22 |
-| TMA 1970 Sch 3ZB (exit charge payment plans). Read for exit charge payment plans. | https://www.legislation.gov.uk/ukpga/1970/9/schedule/3ZB | 2026-10-22 |
-| CAA 2001 s45S (full expensing) | https://www.legislation.gov.uk/ukpga/2001/2/section/45S | 2026-10-22 |
-| HMRC manual CA23174AA (full expensing 100%, special rate 50%). Read for full expensing and the special rate allowance. | https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca23174aa | 2026-10-22 |
-| gov.uk: Annual Investment Allowance. Read for the annual investment allowance limit. | https://www.gov.uk/capital-allowances/annual-investment-allowance | 2026-10-22 |
-| Finance Act 2004 s55 (notice of chargeability) | https://www.legislation.gov.uk/ukpga/2004/12/section/55 | 2026-10-22 |
-| gov.uk: Pay Corporation Tax. Read for the normal payment date. | https://www.gov.uk/pay-corporation-tax | 2026-10-22 |
-| HMRC: paying Corporation Tax in instalments. Read for the quarterly instalment rules for large companies. | https://www.gov.uk/guidance/corporation-tax-paying-in-instalments | 2026-10-22 |
-| HMRC manual CTM92805 (very large company instalment dates). Read for the very large company instalment dates. | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm92805 | 2026-10-22 |
-| HMRC: paying Corporation Tax as a very large company. Read for the very large company threshold. | https://www.gov.uk/guidance/pay-corporation-tax-if-youre-a-very-large-company | 2026-10-22 |
-| SI 2017/1072 (very large companies). Read for the very large company rules. | https://www.legislation.gov.uk/uksi/2017/1072/made | 2026-10-22 |
-| gov.uk: Company Tax Returns. Read for the filing deadline. | https://www.gov.uk/company-tax-returns | 2026-10-22 |
-| gov.uk: CT600 (2026) Version 3. Read for the current CT600 version. | https://www.gov.uk/government/publications/corporation-tax-company-tax-return-ct600-2015-version-3 | 2026-10-22 |
-| HMRC manual COM60040 (online filing, iXBRL). Read for online filing and iXBRL. | https://www.gov.uk/hmrc-internal-manuals/cotax-manual/com60040 | 2026-10-22 |
-| gov.uk: closure of HMRC's free CT filing service on 31 March 2026. Read for the closure of the free filing service. | https://www.gov.uk/guidance/closure-of-the-service-to-file-your-company-accounts-and-tax-return | 2026-10-22 |
-| gov.uk: late filing penalties. Read for the late filing penalty amounts. | https://www.gov.uk/company-tax-returns/penalties-for-late-filing | 2026-10-22 |
-| FA 1998 Sch 18 paras 17 and 18 (late filing penalties). Read for the late filing penalty rules. | https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/17 | 2026-10-22 |
-| FA 2007 Sch 24 para 4 (inaccuracy penalties). Read for the inaccuracy penalty ranges. | https://www.legislation.gov.uk/ukpga/2007/11/schedule/24/paragraph/4 | 2026-10-22 |
-| HMRC interest rates for late and early payments. Read for the late payment interest rate. | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-22 |
-| Bank of England: Bank Rate history. Read for the Bank Rate on which interest is set. | https://www.bankofengland.co.uk/boeapps/database/Bank-Rate.asp | 2026-10-22 |
-| ITA 2007 s874, s903, s906 (deduction from interest and royalties) | https://www.legislation.gov.uk/ukpga/2007/3/section/874 | 2026-10-22 |
-| gov.uk: Income Tax rates (basic rate 2026-27). Read for the basic rate used for withholding. | https://www.gov.uk/income-tax-rates | 2026-10-22 |
-| HMRC manual SAIM5120 (dividends received by non-residents). Read for dividends paid to non-residents. | https://www.gov.uk/hmrc-internal-manuals/savings-and-investment-manual/saim5120 | 2026-10-22 |
-| HMRC manual INTM190000 (controlled foreign companies). Read for the CFC rules. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm190000 | 2026-10-22 |
-| HMRC manuals MTT01100 and MTT01010 (Pillar Two). Read for Pillar Two scope and threshold. | https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt01100 | 2026-10-22 |
+| Read for Treaty override of residence. | https://www.legislation.gov.uk/ukpga/2009/4/section/18 | 2026-11-26 |
+| Read for Central management and control residence test. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm120060 | 2026-11-26 |
+| Read for Income territorial scope; separate gains regime. | https://www.legislation.gov.uk/ukpga/2009/4/section/5 | 2026-11-26 |
+| Read for Small-rate eligibility and augmented-profit gateway. | https://www.legislation.gov.uk/ukpga/2010/4/section/18A | 2026-11-26 |
+| Read for Marginal-relief eligibility and formula. | https://www.legislation.gov.uk/ukpga/2010/4/section/18B | 2026-11-26 |
+| Read for Financial-year rate application and day apportionment. | https://www.gov.uk/corporation-tax-rates | 2026-11-26 |
+| Read for FY2026 charge and main rate. | https://www.legislation.gov.uk/ukpga/2025/8/section/13 | 2026-11-26 |
+| Read for FY2026 small rate and fraction. | https://www.legislation.gov.uk/ukpga/2025/8/section/14 | 2026-11-26 |
+| Read for Base limits, association division and short periods. | https://www.legislation.gov.uk/ukpga/2010/4/section/18D | 2026-11-26 |
+| Read for FY2027 main rate. | https://www.legislation.gov.uk/ukpga/2026/11/section/11 | 2026-11-26 |
+| Read for FY2027 small rate and fraction. | https://www.legislation.gov.uk/ukpga/2026/11/section/12 | 2026-11-26 |
+| Read for Control, part-period and inactive-company exclusions. | https://www.legislation.gov.uk/ukpga/2010/4/section/18E | 2026-11-26 |
+| Read for Associated companies including overseas residence. | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03940 | 2026-11-26 |
+| Read for Attribution of associates rights and commercial interdependence. | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03950 | 2026-11-26 |
+| Read for Marginal-relief formula. | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03925 | 2026-11-26 |
+| Read for Augmented-profit qualifying distributions and exclusions. | https://www.legislation.gov.uk/ukpga/2010/4/section/18L | 2026-11-26 |
+| Read for Capital expenditure restriction. | https://www.legislation.gov.uk/ukpga/2009/4/section/53 | 2026-11-26 |
+| Read for Wholly/exclusively and identifiable trade proportion. | https://www.legislation.gov.uk/ukpga/2009/4/section/54 | 2026-11-26 |
+| Read for Entertaining restriction and statutory exceptions. | https://www.legislation.gov.uk/ukpga/2009/4/section/1298 | 2026-11-26 |
+| Read for Accounts starting point and fixed-capital-asset depreciation. | https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim35030 | 2026-11-26 |
+| Read for AIA limit, excluded assets, periods and sharing. | https://www.gov.uk/capital-allowances/annual-investment-allowance | 2026-11-26 |
+| Read for Full-expensing qualifying expenditure. | https://www.legislation.gov.uk/ukpga/2001/2/section/45S | 2026-11-26 |
+| Read for First-year general exclusions and leasing exception. | https://www.legislation.gov.uk/ukpga/2001/2/section/46 | 2026-11-26 |
+| Read for Full expensing versus special-rate allowance. | https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca23174aa | 2026-11-26 |
+| Read for First-year conditions and expenditure dates. | https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca23174ab | 2026-11-26 |
+| Read for Every small-company distribution exemption condition. | https://www.legislation.gov.uk/ukpga/2009/4/section/931B | 2026-11-26 |
+| Read for Current-year/carry-back loss order, trade and claim deadline. | https://www.legislation.gov.uk/ukpga/2010/4/section/37 | 2026-11-26 |
+| Read for Post-2017 loss eligibility, continuity and later-period claim. | https://www.legislation.gov.uk/ukpga/2010/4/section/45A | 2026-11-26 |
+| Read for Non-group deductions allowance and short periods. | https://www.legislation.gov.uk/ukpga/2010/4/section/269ZW | 2026-11-26 |
+| Read for Group-membership effect on allowance. | https://www.legislation.gov.uk/ukpga/2010/4/section/269ZR | 2026-11-26 |
+| Read for Return specification of deductions allowance. | https://www.legislation.gov.uk/ukpga/2010/4/section/269ZZ | 2026-11-26 |
+| Read for Total-profit loss restriction and fifty percent maximum. | https://www.legislation.gov.uk/ukpga/2010/4/section/269ZD | 2026-11-26 |
+| Read for Relevant profits after deductions allowance. | https://www.legislation.gov.uk/ukpga/2010/4/section/269ZFA | 2026-11-26 |
+| Read for First/non-contiguous accounting-period notice. | https://www.legislation.gov.uk/ukpga/2004/12/section/55 | 2026-11-26 |
+| Read for Notice-to-file, normal payment and filing deadlines. | https://www.gov.uk/company-tax-returns | 2026-11-26 |
+| Read for Latest statutory filing date and accounts-period tests. | https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/14 | 2026-11-26 |
+| Read for Instalment thresholds, exact boundaries, reference dates and grace. | https://www.legislation.gov.uk/uksi/1998/3175/regulation/3 | 2026-11-26 |
+| Read for Large-company payment dates and amount. | https://www.gov.uk/guidance/corporation-tax-paying-in-instalments | 2026-11-26 |
+| Read for Very-large payment dates and absence of grace. | https://www.gov.uk/guidance/pay-corporation-tax-if-youre-a-very-large-company | 2026-11-26 |
+| Read for Instalment augmented-profit definition. | https://www.legislation.gov.uk/uksi/1998/3175/regulation/2 | 2026-11-26 |
+| Read for Maximum accounting period and long-accounts returns. | https://www.gov.uk/corporation-tax-accounting-period | 2026-11-26 |
+| Read for Electronic filing, iXBRL and exemptions. | https://www.gov.uk/hmrc-internal-manuals/cotax-manual/com60040 | 2026-11-26 |
+| Read for Closure date, software and paper exceptions. | https://www.gov.uk/guidance/closure-of-the-service-to-file-your-company-accounts-and-tax-return | 2026-11-26 |
+| Read for Flat and third-successive-failure penalties. | https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/17 | 2026-11-26 |
+| Read for Old/new penalties and commencement. | https://www.legislation.gov.uk/ukpga/2026/11/section/265 | 2026-11-26 |
+| Read for Tax-related penalty timing, amounts and unpaid-tax definition. | https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/18 | 2026-11-26 |
+| Read for Dated corporation-tax normal, quarterly and repayment interest. | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-11-26 |
+| Read for Determinations, penalties and reasonable-excuse appeal. | https://www.gov.uk/company-tax-returns/penalties-for-late-filing | 2026-11-26 |
+| Read for First-year ownership, amount and restriction conditions. | https://www.legislation.gov.uk/ukpga/2001/2/section/52 | 2026-11-26 |
+| Read for UK incorporation residence. | https://www.legislation.gov.uk/ukpga/2009/4/section/14 | 2026-11-26 |
+| Read for Subsidiary economic-entitlement and quasi-subsidiary definitions. | https://www.legislation.gov.uk/ukpga/2010/4/section/18M | 2026-11-26 |
 
-Not yet confirmed: whether a tax treaty's non-discrimination article lets a UK permanent establishment of a non-resident company use the small profits rate or marginal relief despite CTA 2010 ss18A and 18B.
+Not yet confirmed: none retained as an operative instruction; the specialist and fact-dependent points above require partner-accountant review.
