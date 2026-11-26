@@ -1,0 +1,145 @@
+# Merge a skill fix with no person involved, but only when it is proven.
+#
+# A PR is merged here only when ALL of these hold; anything else waits for a person:
+#   1. open, not draft, targets main, branch in this repo (never a fork)
+#   2. it changes only skill files (skills/**/*.md), and deletes none
+#   3. no changed skill is accountant-approved, on main or in the PR (those go to the accountant)
+#   4. oa/ledger-empty and oa/changed-lines are green on the PR's latest commit, posted by
+#      the private claims check's account (repository variable PROOF_STATUS_CREATOR)
+#   5. every other check on that commit finished green, and GitHub says it can merge
+# Then it approves, merges that exact commit, and starts "Ingest to platform" (a merge
+# made by this workflow does not fire push events on its own).
+#
+# Needs: Settings > Actions > General > "Allow GitHub Actions to create and approve pull
+# requests" switched on, and the PROOF_STATUS_CREATOR variable set. Fails closed without them.
+
+name: Auto-merge proven skills
+
+on:
+  status:
+  workflow_run:
+    workflows: ["Validate Guides"]
+    types: [completed]
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+  checks: read
+  statuses: read
+
+concurrency:
+  group: auto-merge-proven
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    if: github.event_name != 'status' || startsWith(github.event.context, 'oa/')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      CREATOR: ${{ vars.PROOF_STATUS_CREATOR }}
+    steps:
+      - name: Merge eligible PRs
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess, sys
+
+          REPO, CREATOR = os.environ["REPO"], os.environ.get("CREATOR", "").strip()
+          MARKS = ("oa/ledger-empty", "oa/changed-lines")
+          if not CREATOR:
+              print("PROOF_STATUS_CREATOR is not set: merging nothing."); sys.exit(0)
+
+          def gh(*args, check=True):
+              r = subprocess.run(["gh", *args], capture_output=True, text=True)
+              if check and r.returncode:
+                  raise RuntimeError(r.stderr.strip())
+              return r.stdout
+
+          def api(path):
+              return json.loads(gh("api", "-H", "Accept: application/vnd.github+json", path))
+
+          def pages(path, key=None):
+              out, page = [], 1
+              while True:
+                  sep = "&" if "?" in path else "?"
+                  d = api(f"{path}{sep}per_page=100&page={page}")
+                  items = d[key] if key else d
+                  out += items
+                  if len(items) < 100: return out
+                  page += 1
+
+          def approved(text):
+              if text is None: return False
+              head = text.split("\n---", 2)[0] if text.startswith("---") else ""
+              return bool(re.search(r"^reviewed_by:\s*\S", head, re.M) or re.search(r"^tier:\s*1\b", head, re.M))
+
+          def file_at(path, ref):
+              r = subprocess.run(["gh", "api", "-H", "Accept: application/vnd.github.raw",
+                                  f"repos/{REPO}/contents/{path}?ref={ref}"], capture_output=True, text=True)
+              return r.stdout if r.returncode == 0 else None
+
+          def why_not(pr):
+              n, head = pr["number"], pr["head"]["sha"]
+              if pr["draft"]: return "draft"
+              if pr["base"]["ref"] != "main": return "not into main"
+              if (pr["head"].get("repo") or {}).get("full_name") != REPO: return "from a fork"
+              files = pages(f"repos/{REPO}/pulls/{n}/files")
+              if not files: return "no files"
+              for f in files:
+                  if not re.fullmatch(r"skills/[A-Za-z0-9._/-]+\.md", f["filename"]) or ".." in f["filename"]:
+                      return f"changes a non-skill file: {f['filename']}"
+                  if f["status"] in ("removed", "renamed"): return f"{f['status']} {f['filename']}"
+                  if approved(file_at(f["filename"], "main")) or approved(file_at(f["filename"], head)):
+                      return f"approved skill {f['filename']} (goes to its accountant)"
+              statuses = pages(f"repos/{REPO}/commits/{head}/statuses")
+              for m in MARKS:
+                  latest = next((s for s in statuses if s["context"] == m), None)
+                  if not latest or latest["state"] != "success": return f"{m} not green"
+                  if (latest.get("creator") or {}).get("login") != CREATOR: return f"{m} not posted by the claims check"
+              runs = pages(f"repos/{REPO}/commits/{head}/check-runs", "check_runs")
+              runs = [r for r in runs if r["name"] != "merge"]
+              if not runs: return "no checks ran"
+              for r in runs:
+                  if r["status"] != "completed": return f"check {r['name']} still running"
+                  if r["conclusion"] not in ("success", "skipped", "neutral"): return f"check {r['name']} {r['conclusion']}"
+              others = [s for s in statuses if not s["context"].startswith("oa/")]
+              seen = set()
+              for s in others:
+                  if s["context"] in seen: continue
+                  seen.add(s["context"])
+                  if s["state"] != "success": return f"status {s['context']} {s['state']}"
+              full = api(f"repos/{REPO}/pulls/{n}")
+              if full.get("mergeable") is not True: return "GitHub says it cannot merge yet"
+              if full["head"]["sha"] != head: return "new commit arrived"
+              return None
+
+          merged = []
+          for pr in pages(f"repos/{REPO}/pulls?state=open&base=main"):
+              try:
+                  reason = why_not(pr)
+              except Exception as e:
+                  reason = f"error: {e}"
+              if reason:
+                  print(f"#{pr['number']} waits: {reason}"); continue
+              n, head = pr["number"], pr["head"]["sha"]
+              if os.environ.get("DRY_RUN") == "1":
+                  print(f"#{n} WOULD MERGE ({head[:12]})"); continue
+              before = api(f"repos/{REPO}/branches/main")["commit"]["sha"]
+              gh("pr", "review", str(n), "-R", REPO, "--approve", "-b",
+                 "Proven: claim ledger empty and every changed line checked against official sources (oa/ledger-empty, oa/changed-lines).")
+              r = subprocess.run(["gh", "pr", "merge", str(n), "-R", REPO, "--squash", "--match-head-commit", head],
+                                 capture_output=True, text=True)
+              if r.returncode:
+                  print(f"#{n} merge refused: {r.stderr.strip()}"); continue
+              print(f"#{n} merged ({head[:12]})")
+              merged.append(before)
+          if merged:
+              gh("workflow", "run", "ingest-to-platform.yml", "-R", REPO, "--ref", "main", "-f", f"since_sha={merged[0]}")
+              print("Ingest to platform started from", merged[0][:12])
+          PY
