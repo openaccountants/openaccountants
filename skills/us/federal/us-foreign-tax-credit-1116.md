@@ -13,17 +13,28 @@ type: computation
 
 # US foreign tax credit for individuals (Form 1116), tax year 2026
 
+## Scope and who this is for
+
 > **Source-cited draft.** Federal individual planning for US citizens and resident aliens. The form instructions read for this revision are the **2025** editions. Their line numbers are historical references, not a completed 2026 filing map. Do not use an unconfirmed 2026 field, threshold, country designation or relief assumption to file: Check this point with one of our partner accountants.
 
 A qualifying foreign income tax may reduce US regular income tax, subject to creditability and a separate limit for each income category. Start with the tax legally owed and the income actually subject to US tax; withholding alone does not establish entitlement. [Form 1116 instructions, eligible taxes and line 24](https://www.irs.gov/instructions/i1116) (2025; read 2026-11-26).
 
-## Records and routing
+## Ask the client first
 
 Collect foreign assessments, returns, payment/withholding dates and currencies; Forms 1099-DIV/INT and Schedules K-1/K-3; prior Forms 1116, Schedules B/C, credit-versus-deduction choices and accrual elections; Form 2555 history; share holding dates; and any disputes, refunds, CFC interests or treaty position. Missing records are **unknown**, not zero carryovers, an assumed holding period or an assumed treaty rate. Hold the affected result until resolved.
 
 Related Guides: `us-foreign-earned-income-2555` for exclusion/housing and election history; `us-form-1040-individual-return` for the return and filing/payment/extension dates; `us-amended-return-form-1040-including-capital` for amendments; `us-fbar-and-fatca-8938` for information reporting; `us-citizen-moving-abroad-tax` for relocation; `us-form-1040-nr-nonresident-return` for nonresidents; `us-gilti-fdii-beat` and `us-form-5471-cfc-information` for CFC matters. These are routing pointers, not a finding of eligibility.
 
-## Ordinary individual method
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Amount / boundary | Official source |
+| --- | --- | --- |
+| No-Form-1116 election, non-joint return; all other conditions in step 2 required | Not more than USD 300 | [2025 Form 1116 instructions, election](https://www.irs.gov/instructions/i1116) |
+| No-Form-1116 election, joint return; all other conditions in step 2 required | Not more than USD 600 | [2025 Form 1116 instructions, election](https://www.irs.gov/instructions/i1116) |
+| Ordinary excess foreign tax carryback, subject to category/capacity restrictions in step 6 | 1 year | [2025 Form 1116 instructions, line 10](https://www.irs.gov/instructions/i1116) |
+| Ordinary excess foreign tax carryforward, subject to category/capacity restrictions in step 6 | 10 years | [2025 Form 1116 instructions, line 10](https://www.irs.gov/instructions/i1116) |
 
 ### 1. Establish creditability and choose credit or deduction
 
@@ -163,9 +174,11 @@ Each listed topic is a boundary, not a usable partial computation. The action in
 | Holdings | Preferred stock, risk-of-loss/related-payment positions, property income holding periods and statutory exceptions; deduction treatment of disallowed withholding | Check this point with one of our partner accountants. |
 | Method | Nonfunctional-currency election, unpaid currency amounts, QBU translation, tax contests and credit/deduction exceptions | Check this point with one of our partner accountants. |
 
-## Completion and sources
+## Completion checklist
 
 Confirm records, legal liability, treaty/refund position, holdings, method/currency, income sourcing/category, allocated deductions, exclusion reductions and available carryovers. Resolve specialist and form-year holds before filing; preserve the calculation and source edition used. Do not invent missing facts.
+
+## Sources
 
 | Official source | Operative scope read | Read on |
 | --- | --- | --- |
@@ -176,3 +189,5 @@ Confirm records, legal liability, treaty/refund position, holdings, method/curre
 | [Form 6251 instructions (2025)](https://www.irs.gov/instructions/i6251) | Line 8 election treatment only; other AMT computation referred | 2026-11-26 |
 
 Specialist source locators, not proof of a credit in any particular case: [Notice 2023-55](https://www.irs.gov/pub/irs-drop/n-23-55.pdf), [Notice 2023-80](https://www.irs.gov/pub/irs-drop/n-23-80.pdf), [P.L. 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm). No 2026 relief continuity, country-list or unpublished-form assumption is authorized here.
+
+Not yet confirmed: 2026 form-field mappings, adjustment thresholds, section 901(j) designations/waivers and current Notice relief applicability. These are non-usable holds under R-FTC-9, not filing assumptions. Check this point with one of our partner accountants.
