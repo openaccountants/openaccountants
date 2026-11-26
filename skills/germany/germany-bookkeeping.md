@@ -37,7 +37,7 @@ Read the available records before requesting missing facts: legal form and comme
 
 ### Bookkeeping duties
 
-| Test | 2026 rule and boundary | Official source |
+| Test | 2026 threshold or timing | Official source |
 | --- | --- | --- |
 | Sole-merchant commercial-law release | Only Einzelkaufleute: revenue at most EUR 800,000 **and** annual surplus at most EUR 80,000 on each of two consecutive closing dates. For a new business, both limits at the first closing date suffice. This is not the AO turnover/profit test. | [§ 241a HGB](https://www.gesetze-im-internet.de/hgb/__241a.html) |
 | Tax-law turnover test, individual commercial business | More than EUR 800,000 in the calendar year, using the Gesamtumsatz definition in § 19(2) sentence 1 UStG. Equality does not cross the limit. | [§ 141(1) no. 1 AO](https://www.gesetze-im-internet.de/ao_1977/__141.html) |
@@ -109,7 +109,7 @@ Trade tax and its ancillary charges are not business expenses for tax. Reconcile
 
 These tax options concern depreciable, movable fixed assets capable of independent use. An asset technically coordinated with other fixed assets and usable only with them does not qualify merely because it can be moved to a different combined system. The statutory measurement is acquisition/production cost less contained input VAT, or the specified substitute value; the cases below assume qualifying net amounts. [§ 6(2), (2a) EStG](https://www.gesetze-im-internet.de/estg/__6.html).
 
-| Option / condition | 2026 boundary and treatment | Official source |
+| Option / condition | 2026 threshold and treatment | Official source |
 | --- | --- | --- |
 | Immediate GWG option | Qualifying measured cost at most EUR 800 per asset; full deduction may be elected in the acquisition, production, contribution or business-opening year. | [§ 6(2) EStG](https://www.gesetze-im-internet.de/estg/__6.html) |
 | Special GWG register | Above EUR 250, record the relevant acquisition/production/contribution/opening date and cost/substitute value in a running register, unless already ascertainable from the books. At or below EUR 250 no special GWG register is required. | [§ 6(2) sentences 4–5 EStG](https://www.gesetze-im-internet.de/estg/__6.html) |
@@ -198,17 +198,19 @@ Actual completed provision reads from the existing audit are reused at their doc
 
 | Official source | Provisions used | Read on |
 | --- | --- | --- |
-| https://www.gesetze-im-internet.de/hgb/__238.html | Merchant bookkeeping | 2026-11-26 |
-| https://www.gesetze-im-internet.de/ao_1977/__140.html | Other-law duties for tax | 2026-11-26 |
-| https://www.gesetze-im-internet.de/hgb/__241a.html | Sole-merchant release | 2026-11-26 |
-| https://www.gesetze-im-internet.de/ao_1977/__141.html | Commercial-business thresholds and lifecycle | 2026-11-26 |
-| https://www.gesetze-im-internet.de/estg/__4.html | EÜR, expenses, home-working, separate recording, trade tax | 2026-11-26 |
-| https://www.gesetze-im-internet.de/estdv_1955/__60.html | EÜR dataset and hardship waiver | 2026-11-26 |
-| https://www.gesetze-im-internet.de/ao_1977/__146.html | Entry and correction requirements | 2026-11-26 |
-| https://www.gesetze-im-internet.de/ao_1977/__147.html | Ordinary tax retention | 2026-11-26 |
-| https://www.gesetze-im-internet.de/hgb/__252.html | Accrual and realisation principles | 2026-11-26 |
-| https://www.gesetze-im-internet.de/estg/__6.html | GWG, annual pool and asset cost | 2026-11-26 |
-| https://www.gesetze-im-internet.de/estg/__7.html | General normal-depreciation route in Case 1; amount referred | 2026-11-26 |
+| https://www.gesetze-im-internet.de/hgb/__238.html | Read for § 238(1), merchant bookkeeping | 2026-11-26 |
+| https://www.gesetze-im-internet.de/ao_1977/__140.html | Read for § 140, other-law duties for tax | 2026-11-26 |
+| https://www.gesetze-im-internet.de/hgb/__241a.html | Read for both sentences of § 241a, sole-merchant release | 2026-11-26 |
+| https://www.gesetze-im-internet.de/ao_1977/__141.html | Read for § 141(1)–(3), commercial-business thresholds and lifecycle | 2026-11-26 |
+| https://www.gesetze-im-internet.de/estg/__4.html | Read for § 4(3)–(5), (5b), (7), EÜR, home-working, expense restrictions and recording | 2026-11-26 |
+| https://www.gesetze-im-internet.de/estdv_1955/__60.html | Read for § 60(4), EÜR dataset and hardship waiver | 2026-11-26 |
+| https://www.gesetze-im-internet.de/ao_1977/__146.html | Read for § 146(1), (4), entry and correction requirements | 2026-11-26 |
+| https://www.gesetze-im-internet.de/ao_1977/__147.html | Read for § 147(1), (3)–(4), ordinary tax retention | 2026-11-26 |
+| https://www.gesetze-im-internet.de/hgb/__252.html | Read for § 252(1) nos. 4–5 and (2), accrual and realisation | 2026-11-26 |
+| https://www.gesetze-im-internet.de/estg/__6.html | Read for § 6(1) no. 1, (2), (2a), GWG, pool and asset cost | 2026-11-26 |
+| https://www.gesetze-im-internet.de/estg/__7.html | Read for § 7(1) sentences 1–2, Case 1 normal-depreciation route; amount referred | 2026-11-26 |
+
+Not yet confirmed: client-specific applications identified in the referral paragraphs. No tax outcome for those applications is supplied by this Guide.
 
 ## Disclaimer
 
