@@ -12,11 +12,11 @@ description: >
   regime with the VND 1 billion threshold set by Decree 141/2026, other income,
   non-residents and the 2026 filing deadlines. Tier 2, not reviewed by an
   accountant.
-version: "2.0"
+version: "2.1"
 jurisdiction: VN
 tax_year: 2026
 tax_year_notes: "Calendar tax year 2026. Law 109/2025/QH15 applies to employment and business income of residents from tax period 2026 and to all other income from 1 July 2026."
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -26,7 +26,7 @@ domain: income-tax
 type: computation
 ---
 
-# Vietnam Personal Income Tax (Thuế Thu Nhập Cá Nhân, TNCN) v2.0
+# Vietnam Personal Income Tax (Thuế Thu Nhập Cá Nhân, TNCN) v2.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -112,7 +112,9 @@ Individuals with Vietnam personal income tax obligations for the calendar tax ye
 
 **Dependants (Art. 10(4)).** Minor children; children who have lost civil capacity, are disabled or unable to work; and persons with no income or income below the level the Minister of Finance sets: adult children in university, college or vocational study, a spouse unable to work, parents past working age or unable to work, and other unsupported persons the taxpayer directly supports.
 
-**Business income of residents (Art. 7).** Revenue up to VND 1 billion a year: no PIT (threshold from Decree 141/2026). Above it, tax = (revenue less costs) times 15%, 17% or 20% by revenue band. Where revenue is above the threshold and up to VND 3 billion, the individual may instead choose the revenue method: (revenue above the threshold) times the activity rate. Property rental (not accommodation business) always uses revenue above the threshold times 5%.
+**Business income of residents (Art. 7).** Revenue up to VND 1 billion a year: no PIT (threshold from Decree 141/2026). Above it, calculate PIT before reductions as (revenue less costs) times 15%, 17% or 20% by revenue band. Where revenue is above the threshold and up to VND 3 billion, the individual may instead choose the revenue method: (revenue above the threshold) times the activity rate. Check whether an earlier choice binds the taxpayer. Decree 68/2026 Art. 4(4)(d) generally requires 2 consecutive years under the income method from the first year it applies. Property rental (excluding accommodation business) uses revenue above the threshold times 5% before any reduction.
+
+For 2026 and 2027, reduce business PIT payable by 30% for a resident whose total annual business revenue is VND 10 billion or less. The reduction applies to both calculation methods. Test the threshold against actual revenue from all business activities for the year and adjust any reduction already claimed if cumulative revenue exceeds it. [Decree 398/2026 Art. 2](https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/398_2026_nd-cp_29102026-signed.signed.pdf#page=2).
 
 **Exempt income (Art. 4), main items.** Real estate transfers, inheritances and gifts of real estate between spouses, parents and children (natural, adopted, in-law), grandparents and grandchildren, and siblings; transfer of the taxpayer's only home and residential land in Vietnam; interest on government and local government bonds, bank deposits and life insurance; remittances; night-shift and overtime pay and pay for untaken leave; social insurance pensions and payments from supplementary and voluntary pension funds; state and programme scholarships; insurance and compensation payments; income from approved charities and foreign humanitarian aid; salaries of Vietnamese seafarers on international routes; first transfer of carbon credits and green bond interest; pay for state science and technology tasks; income of investors and founders in innovative start-ups; after-CIT income of a private enterprise owner or single-member LLC owner. Art. 5 adds a five-year exemption for qualifying high-tech and digital technology staff and an exemption for open-ended fund certificates held two years or more.
 
@@ -143,10 +145,10 @@ Individuals with Vietnam personal income tax obligations for the calendar tax ye
 | Employer monthly withholding return | 20th day of the following month | Decree 252/2026, as published by the Government portal |
 | Employer quarterly return (quarterly filers) | Last day of the first month of the next quarter | same |
 | Employer annual finalisation for employees | Last day of the 3rd month after year end (31 March 2027 for 2026) | same |
-| Individual self-filed finalisation of employment income | Last day of the 4th month after year end (30 April 2027 for 2026) | same |
+| Individual self-filed finalisation of employment income | Last day of the 4th month after year end. The 2026 calendar date is 30 April 2027, a public holiday, so the deadline rolls to the next working day | Decree 252/2026 Art. 10(3)(c), Civil Code Art. 148(5) and Labour Code Art. 112(1)(c) |
 | Household and individual business filing | Under Decree 68/2026 as amended by Decree 141/2026 | Decree 141/2026 |
 
-An individual with one employer and no other income may authorise that employer to finalise. An individual self-files when there is income from two or more sources with tax still payable, income not subject to withholding, or foreign income (residents), or to claim deductions the employer did not apply. A first-year resident who is in Vietnam less than 183 days in the calendar year but 183 days in 12 consecutive months files by the last day of the 4th month after the 12-month period ends. Household businesses with revenue above VND 1 billion must use electronic invoices with a tax authority code (Decree 141/2026 Art. 1(2)).
+Under Decree 253/2026 Art. 51, an individual can generally authorise an employer to finalise if there is a contract of at least 3 months and the individual still works there at finalisation. Qualifying other income averaging at most VND 15 million a month during the year and already withheld at 10% does not bar authorisation. Check direct filing where authorisation is unavailable, including when a resident requests the specified health or education deductions. A first-year resident who is in Vietnam for under 183 days in the calendar year but at least 183 days in 12 consecutive months files by the last day of the 4th month after the end of the month in which that 12-month period ends. Household businesses with revenue above VND 1 billion must use tax-authority-coded electronic invoices or electronic invoices from a cash register connected to the tax authority (Decree 141/2026 Art. 1(2)).
 
 ## Penalties and interest
 
@@ -159,7 +161,7 @@ Failure to register a dependant means the deduction is refused, with back tax an
 
 ## Cross-border points
 
-- Non-residents pay flat rates on gross amounts (Art. 20 to 27); no family deductions.
+- Non-residents use the statutory base for each income type (Arts. 20 to 27). It can be gross pay or revenue, a gain net of allowable costs, the transfer price or the amount over the applicable threshold. The family deduction applies to resident employment income.
 - A resident's capital transfer is taxed wherever the transfer happens; a non-resident's transfer of capital in a Vietnamese entity is taxed whether made in Vietnam or abroad (Art. 23(1)).
 - Tax treaties may reduce Vietnam's taxing right; the treaty text decides. Foreign tax credits for residents: escalate.
 - Foreign employees' social insurance: see [vn-payroll-social](vn-payroll-social.md).
@@ -190,7 +192,7 @@ expected:
 
 ### Example 2: designer with a household business, revenue VND 2.5 billion, costs 1.9 billion: which method?
 
-Revenue is above VND 1 billion and not above 3 billion, so she may choose. Income method: (2.5 billion less 1.9 billion) times 15% = 90 million. Revenue method for services: (2.5 billion less 1 billion) times 2% = 30 million. The revenue method costs 60 million less; the decision turns on the cost ratio. The income method wins only where profit times 15% is below (revenue above threshold) times 2%.
+Assume a resident designer earning ordinary service fees, with VND 2.5 billion in total annual business revenue and VND 1.9 billion in deductible costs, is free to choose either method. Before the Decree 398 reduction, the income method gives (VND 2.5 billion − VND 1.9 billion) × 15% = VND 90 million. The revenue method gives (VND 2.5 billion − VND 1 billion) × 2% = VND 30 million. The 30% reduction brings the amounts payable to VND 63 million and VND 21 million respectively. For these facts, the revenue method costs VND 42 million less.
 
 ```oa-check
 name: VN 2026 household business, income method vs revenue method
@@ -198,16 +200,21 @@ inputs:
   revenue: 2500000000
   costs: 1900000000
   threshold: 1000000000
+  reduction: 0.30
 steps:
-  - income_method: (revenue - costs) * 0.15
-  - revenue_method: (revenue - threshold) * 0.02
+  - income_before_reduction: (revenue - costs) * 0.15
+  - revenue_before_reduction: (revenue - threshold) * 0.02
+  - income_method: income_before_reduction * (1 - reduction)
+  - revenue_method: revenue_before_reduction * (1 - reduction)
   - saving: income_method - revenue_method
   - chosen: min(income_method, revenue_method)
 expected:
-  income_method: 90000000
-  revenue_method: 30000000
-  saving: 60000000
-  chosen: 30000000
+  income_before_reduction: 90000000
+  revenue_before_reduction: 30000000
+  income_method: 63000000
+  revenue_method: 21000000
+  saving: 42000000
+  chosen: 21000000
 ```
 
 ## Ask the client first
@@ -219,7 +226,7 @@ expected:
 5. For business income: full-year revenue, costs with invoices, activity type, and the method chosen.
 6. Whether the employer will finalise on the individual's behalf.
 
-Self-check before finalisation: five-band schedule used; 15.5 million and 6.2 million deductions; insurance deducted before the bands; every income source categorised; withholding reconciled to the annual liability; the right deadline (31 March employer, 30 April self-filer).
+Self-check before finalisation: five-band schedule used, 15.5 million and 6.2 million deductions, insurance deducted before the bands, every income source categorised, withholding reconciled to the annual liability and the filing deadline checked against the holiday calendar.
 
 ## Sources
 
@@ -230,5 +237,10 @@ Self-check before finalisation: five-band schedule used; 15.5 million and 6.2 mi
 | Read for Decree 141/2026/ND-CP Art. 1 (1 billion threshold, e-invoices) and Art. 3 (in force 1 January 2026) | https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/14/469455-1778231931_v1_1778720623_signed.pdf | 2026-11-14 |
 | Read for Law 108/2025/QH15 (Tax Administration) Art. 16(2)(a) late payment interest | https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf | 2026-11-14 |
 | Read for the Decree 252/2026 filing deadlines (monthly, quarterly, finalisation 3rd and 4th month) as published on the Government portal | https://xaydungchinhsach.chinhphu.vn/quy-dinh-thoi-han-nop-ho-so-khai-thue-119260703120801722.htm | 2026-11-14 |
+| Read for Decree 68/2026 Art. 4(4)(d), method continuity | https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/3/68-ndcp.signed.pdf#page=4 | 2026-11-26 |
+| Read for Decree 398/2026 Art. 2, business PIT reduction | https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/398_2026_nd-cp_29102026-signed.signed.pdf#page=2 | 2026-11-26 |
+| Read for Decree 253/2026 Art. 51, finalisation and authorisation, as published on the Government portal | https://xaydungchinhsach.chinhphu.vn/quy-dinh-quyet-toan-thue-thu-nhap-ca-nhan-119260703162819669.htm | 2026-11-26 |
+| Read for Civil Code Art. 148(5), holiday deadline rollover | https://datafiles.chinhphu.vn/cpp/files/vbpq/2016/01/91.signed.pdf | 2026-11-26 |
+| Read for Labour Code Art. 112(1)(c), 30 April public holiday | https://congbaocdn.chinhphu.vn/180507251028987904/2026/3/5/468971-1772684381_v1_1772690833_signed.pdf | 2026-11-26 |
 
 Not yet confirmed: the old Law 04/2007/QH12 thresholds and rates for non-employment income received 1 January to 30 June 2026 (prizes, royalties, inheritances, gifts; the old file showed VND 10 million thresholds); the Government cap on voluntary pension and life insurance deductions and the health and education deduction levels (implementing decree not read); the dependant income limit set by the Minister of Finance; late filing and under-declaration fines (administrative penalty decree not read for 2026); the full text of Decree 252/2026 (read through the Government portal summary only); Decree 68/2026 business filing deadlines.
