@@ -1,10 +1,10 @@
 ---
 name: eg-corporate-tax
 description: Use this skill whenever asked about Egyptian corporate income tax for tax year 2026 on resident companies, partnerships, branches and permanent establishments of foreign companies, to compute, review, or explain the tax on legal persons' profits, deductions, thin capitalisation, losses, depreciation, dividends, capital gains, advance payments and the annual return. Trigger on phrases like "Egypt corporate tax", "Egypt CIT", "Egyptian company tax", "22.5% Egypt", "thin cap Egypt", "ضريبة أرباح الأشخاص الاعتبارية", "ضريبة دخل الشركات", "إقرار الشركات", "permanent establishment Egypt", or any request to prepare or check an Egyptian company tax return. ALWAYS read this skill before touching any Egypt corporate tax work.
-version: 0.4
+version: 0.5
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-21
+last_updated: 2026-11-26
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -14,105 +14,79 @@ domain: corporate-tax
 type: computation
 ---
 
-# EG Corporate Tax v0.4
+# EG Corporate Tax v0.5
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-This skill covers the Egyptian tax on the profits of legal persons (الضريبة على أرباح الأشخاص الاعتبارية, Law 91 of 2005, Book Three) for tax year 2026. Reply in the user's language, English or Arabic. All amounts are in EGP. Tax year: the financial year of the company; returns run on the calendar year unless the company's financial year ends on another date. Law 151 of 2026 (Gazette 30 bis (a), 28 July 2026) took effect on 29 July 2026 and changed thin capitalisation, the participation exemption, listed share gains and dividend tax; where it matters the row says which period applies.
+For an ordinary company in Egypt's general profit-tax regime, reconcile accounting profit to taxable profit, round the base down to EGP 10 and apply the standard 22.5% rate. Establish the taxpayer's regime and the exceptions below before computing. All example amounts are EGP; the computation is for the company's 2026 financial year. Reply in the user's language, English or Arabic.
 
 ## Who this applies to
 
-- **Taxed on worldwide profit** (Law 91 art. 47): legal persons resident in Egypt, on all profits made in Egypt or abroad, except the National Service Projects Organisation of the Ministry of Defence.
-- **Taxed on Egyptian PE profit** (art. 47): non-resident legal persons, on profits made through a permanent establishment in Egypt. Art. 4 (as replaced by Law 30/2023) defines a PE (place of management, branch, office, factory, workshop, mine or well, building or installation site over 90 days in any 12 months, services through staff over 90 days, dependent agent); art. 4 bis lists what is not a PE (preparatory or auxiliary activity).
-- **Legal persons** (art. 48): capital companies and partnerships whatever law governs them, and de facto partnerships; cooperatives and their unions; public bodies on taxable activity; banks, companies and foreign establishments with a branch in Egypt; local administration units on taxable activity. Civil companies are treated as partnerships for dividends (art. 56 bis).
-- **Exempt bodies** (art. 50 as replaced by Law 30/2023): ministries and government agencies; NGOs within their purpose; non-profit social, scientific, sports or cultural bodies on non-commercial activity; private insurance funds under Law 54/1975; international organisations exempt by treaty; land reclamation companies and poultry, bee, livestock and fish farming companies for ten years from start. Several investment funds are exempt on conditions (art. 50 items 14 to 18).
-- **State entities on economic or investment activity** (Law 159 of 2023, Gazette 29 bis, 25 July 2023, in force from 26 July 2023 under its art. 4; executive regulations PM Decree 242 of 2024, Gazette 5 bis, 4 February 2024, in force the next day under its art. 8): any exemption from taxes and fees that a law, regulation or decision gave to a State entity no longer applies to the economic or investment activities it carries on; those activities fall under the laws that govern them (Law 159 art. 1). State entities are units of the State administrative apparatus (sovereign bodies included), local administration units, national public, service and economic authorities, bodies with special budgets, and entities and companies that any of them owns, or in which any of them holds a share, directly or indirectly, whatever the share, the legal form, the activity or the use made of the money earned (PM Decree 242 of 2024 art. 1). Economic or investment activity means producing goods, selling them, providing services of any kind, or granting exploitation rights, of the kind the private sector normally carries on (Decree 242 art. 3). Still exempt (Law 159 art. 1; Decree 242 art. 2): exemptions under international agreements in force in Egypt, for as long as those texts run; exemptions for military works and tasks, defence and national security; and exemptions for basic public utility services, which a Cabinet decision is to list. Contracts made before the law took effect keep the old treatment until fully performed (Law 159 art. 2); renewing such a contract, or raising the volume of work beyond the percentage the contract sets, counts as a new contract (Decree 242 art. 6). An entity with both exempt and taxable activities keeps separate accounts for each and pays the tax due (Decree 242 art. 4). So the art. 50 exemption for ministries and government agencies, and any exemption a special law gives a State-owned company, does not reach profits from such activity: compute them under this skill like any other legal person's profits.
-- **Not here:** turnover up to EGP 20 million that opted into Law 6/2025 (`eg-sme-tax`); individuals and sole traders (`eg-income-tax`); withholding on payments the company makes (`eg-withholding-tax`); payroll (`eg-payroll`); VAT (`egypt-vat`); transfer pricing files (`eg-transfer-pricing`); residence, PE and treaty questions for foreign groups (`eg-cross-border`).
+- Resident legal persons are taxable on worldwide profits; non-resident legal persons on profits through an Egyptian permanent establishment (PE): Law 91/2005 art. 47. Capital companies, partnerships and de facto partnerships are legal persons under art. 48. The State-body and specialist cases below must be resolved before using the ordinary-company computation.
+- **State economic activity:** Law 159/2023 art. 1 cancels tax and fee exemptions conferred by laws, regulations or decisions on the specified State entities, including State-owned or State-participated entities and companies, for their economic or investment activities. Those activities are subject to their governing laws. The provision covers administrative-apparatus units, local-administration units, public authorities and bodies with special budgets. It does not make every activity of every State body taxable.
+- Art. 1 preserves international agreements in force in Egypt, exemptions for military works and tasks, defence and national security, and exemptions for basic public utility services. Art. 2 preserves the treatment of contracts concluded before commencement until their performance is complete. Under art. 4, commencement was **26 July 2023**. [Official Law 159/2023, arts. 1-4](https://eta.gov.eg/sites/default/files/2024-12/law_no._159_for_2023.pdf).
+- **State-body application:** direct or indirect interests, the economic-activity definition, mixed activities and separate accounts, renewals or increased contract volumes under Decree 242/2024, the basic-utility list, the National Service Projects Organisation exclusion in art. 47, and special-law exemptions such as social-insurance-body investments: **Check this point with one of our partner accountants.** Obtain the entity's founding law, exemption instrument, activity and contract before concluding its position; a reported opinion is not a blanket exemption.
+- Individuals and sole traders: use `eg-income-tax`. For the elected Law 6/2025 regime, use `eg-sme-tax` to establish eligibility and election. Withholding obligations, payroll, VAT and transfer-pricing documentation are handled in `eg-withholding-tax`, `eg-payroll`, `egypt-vat` and `eg-transfer-pricing`.
+- **Special entities and exemptions:** banks, insurers, designated finance companies, the Suez Canal Authority, petroleum bodies and exploration/production companies; cooperatives, public bodies, non-profit or treaty-exempt bodies, private insurance and investment funds, land reclamation and farming exemptions: **Check this point with one of our partner accountants.** Do not assume the standard rate or ordinary provision treatment applies to them.
 
 ## Rates, bands and thresholds
 
-| Item | Rate or amount | Conditions | Tax year | Official URL |
-|---|---|---|---|---|
-| Standard rate | 22.5% of net annual profit | Law 91 art. 49 first para., as replaced by Law 96/2015. Base rounded down to the nearest EGP 10 | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.96-2015.pdf |
-| Suez Canal Authority, Egyptian General Petroleum Corporation, Central Bank of Egypt | 40% | Art. 49 second para. (2005 text, not replaced by Law 96/2015) | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
-| Oil and gas exploration and production companies | 40.55% | Art. 49 second para. | 2026 | same |
-| Thin capitalisation, statutory ratio | Interest on loans above 2 times average equity is not deductible | Art. 52 item 1 as replaced by Law 30/2023 (from 16 Jun 2023) and re-enacted by Law 151/2026 (from 29 Jul 2026). Not for banks, insurers, or finance companies named by ministerial decision | 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf |
-| Thin capitalisation, 2026 transitional ratio | Interest deductible on loans up to 3 times average equity | Law 30/2023 art. 5: 4:1 for 2023, 3:1 for tax years 2024 to 2027, 2:1 for 2028. Law 151/2026 did not repeal it | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf |
-| Thin capitalisation, national infrastructure projects | 4 times average equity | Projects named by Prime Minister decision; loans from unrelated lenders; the company's share at least 25% of its investments; ends when the term of the loans for carrying out the project's main works ends (art. 52 item 1 second para., Law 151/2026, as corrected by the Gazette erratum of 8 Aug 2026) | From 29 Jul 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf |
-| Dividends received, participation exemption | Exempt | Parent or holding company holds at least 25% of capital or votes for two years, or undertakes to hold for two years; resident and non-resident subsidiaries (art. 50 item 10 as replaced by Law 151/2026). The Law 30/2023 text added 10% of the dividend to the base; the 2026 text does not | From 29 Jul 2026 | same |
-| Dividends from another resident company | Excluded from the company's taxable base, with the related cost | Art. 56 bis as replaced by Law 151/2026 | 2026 | same |
-| Gains on securities listed on the Egyptian Exchange | Exempt; losses not deductible | Art. 50 item 7 as replaced by Law 151/2026. Not exempt where the disposal causes the company's shares to be delisted. Art. 46 bis 5 (10% on listed gains) repealed by Law 151 art. 6 | From 29 Jul 2026 | same |
-| Gains on unlisted securities and company interests | Taxed, made in Egypt or abroad; gain = price less acquisition cost and brokerage | Art. 46 bis 3 and 4 as replaced by Law 151/2026. Non-resident seller computes and pays within 60 days. At a fair value price, add the Central Bank rate for each year held if held at least three years; weighted average cost | From 29 Jul 2026 | same |
-| Dividend tax on distributions | 10%; 5% if the securities are listed in Egypt | Art. 56 bis; no costs deducted; not on bonus shares. Detail and remittance in `eg-withholding-tax` | 2026 | same |
-| PE profits | Deemed distributed 60 days after the PE's year end, so 10% dividend tax applies | Art. 56 bis | 2026 | same |
-| Listing incentive | 15% off the tax due on the return for three years from the offering | Law 151/2026 art. 3: shares offered on the Egyptian Exchange under an FRA-approved prospectus; fair market value at the offering at least EGP 50 billion; at least 20% of shares offered or an offer of at least EGP 10 billion; once in the company's life; not combined with incentives under any other law; the Minister of Finance may extend it for a like period | From 29 Jul 2026 | same |
-| Depreciation, buildings, installations, equipment, ships, aircraft | 5% of cost a year | Art. 25 item 1 | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
-| Depreciation, purchased intangibles including goodwill | 10% of cost a year | Art. 25 item 2 | 2026 | same |
-| Depreciation pools, declining balance | Computers, systems, software, storage 50%; all other business assets 25% | Art. 25 item 3; pool basis per art. 26; a pool basis of EGP 10,000 or less is deducted in full | 2026 | same |
-| Initial allowance | 30% of the cost of new or used production machinery, in the first period of use | Art. 27; regular books needed; depreciation then runs on cost less 30% | 2026 | same |
-| Loss carry-forward | To the fifth following year, no carry-back | Art. 29, applied to companies by art. 51. Exception: a loss on completing a long-term contract is set against that contract's profits taxed in earlier periods and the tax refunded; any excess carries forward under art. 29 (art. 21, 2005 text) | 2026 | same |
-| Donations | Deductible in full to the government, local units and public legal persons; up to 10% of annual net profit to registered Egyptian NGOs and foundations, science institutions and hospitals under government supervision, and Egyptian scientific research bodies | Art. 23 items 7 and 8 (2005 text) | 2026 | same |
-| Other taxes and fees | Deductible, except the income tax itself | Art. 23 item 3 and art. 24 item 3 (2005 text) | 2026 | same |
-| Comprehensive health insurance solidarity contribution | Deductible | Art. 23 item 10 added by Law 151/2026 art. 2 (contribution under Law 2/2018 art. 40 item 9) | From 29 Jul 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf |
-| Head office charges of a PE | Capped at 7% of the PE's net taxable profit | Executive Regulations art. 74; no royalties, interest or commissions inside the cap; head office auditor's certificate | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.991-2005.pdf |
-| Advance payment option | 60% of the last declared tax (or estimate), in three equal instalments | Arts. 61 to 63; replaces withholding under art. 59 (art. 60, which also requires regular records). Annual yield at the Central Bank rate (art. 63 fourth para. as replaced by Law 206/2020 issuing law art. 3; rate in ETA circular 1/2026), worked on the first and second instalments from payment to the period end (ETA Services Guide 8/1) | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
-| Delay charge | Central Bank rate on 1 January before the due date plus 2%: 20.50% + 2% = 22.50% a year for 2026 | Law 91 art. 110; part months and pounds dropped | 2026 | https://eta.gov.eg/sites/default/files/2026-03/Dawry.no_.1.of_.2026.pdf |
-| Delay charge ceiling | Delay charge or additional tax may not exceed 100% of the principal | Law 206/2020 art. 45 bis, added by Law 7/2025 | 2026 | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf |
+| Item | Rule and conditions | Tax year | Official URL |
+|---|---|---|---|
+| Standard corporate rate | 22.5% of net annual taxable profit; round the tax base down to the nearest EGP 10; specialist entities are referred above | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.96-2015.pdf (art. 49 first paragraph) |
+| Ordinary thin-capitalisation limit | 3 times average equity under Law 30/2023 art. 5 for tax years 2024-2027. This is a limit on interest deductibility, not permission to deduct every loan cost. Art. 52(1), including the exclusions for banks, insurers and ministerially designated finance companies, must also be applied | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf (issuing art. 5); https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf (art. 52(1), issuing art. 6) |
+| Buildings, installations, fittings, ships and aircraft | 5% per tax period on purchase, construction, development, renewal or rebuilding cost under art. 25(1) | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
+| Purchased intangible assets, including goodwill | 10% per tax period on purchase, development, improvement or renewal cost under art. 25(2) | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
+| Computers, information systems, software and data-storage equipment | 50% per tax year on the depreciation pool basis, not original cost; arts. 25(3)(a), 26 | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
+| Other depreciable business assets | 25% per tax year on the depreciation pool basis; assets in the separate categories above and non-depreciable assets below are excluded; arts. 25(3)(b), 26 | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
+| Initial production-machinery allowance | 30% of qualifying new or used machinery/equipment cost in the first period of use **on the taxpayer's request**, with regular books and accounts. Reduce the basis before ordinary depreciation. Without a request, use ordinary arts. 25-26 depreciation; art. 27 as replaced by Law 17/2015 art. 6 | 2026 | https://portal.eta.gov.eg/sites/default/files/2026-03/law.no_.17.of_.2015.pdf |
+| Donations to qualifying non-government recipients | Up to 10% of annual net profit: registered Egyptian NGOs/foundations, educational institutions and hospitals under government supervision, and Egyptian scientific-research institutions; art. 23(8) | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
+| Ordinary trading-loss carry-forward | Use against following-year profits, carrying any balance annually through the fifth following year; art. 29. Ownership/activity changes, securities losses and completed long-term contracts need the separate referral below | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf |
+
+Law 151/2026 re-enacted the ordinary art. 52(1) rule but its repeal provision does not repeal Law 30/2023 art. 5. Use that express transitional schedule for an ordinary 2026 computation. **Infrastructure-project exceptions and allocation of disallowed interest between different-rate loans: Check this point with one of our partner accountants.**
 
 ## The base
 
-1. **Start from net profit** under the commercial and industrial rules of Book Two, Part Three (art. 51), unless Book Three says otherwise. Costs must be real, needed for the activity and, from the e-invoice and e-receipt dates, backed by e-invoices or e-receipts (art. 22 item 2 as replaced by Law 30/2023).
-2. **Add back non-deductible items** (art. 52): interest above the thin cap ratio; provisions of any kind, except 80% of loan provisions banks must form under Central Bank rules and insurers' technical provisions; dividends and profit shares and attendance fees paid to shareholders; board members' remuneration; employees' profit share; and the art. 24 items (2005 text): reserves and provisions of any kind; fines, financial penalties and damages imposed for a felony or intentional misdemeanour by the taxpayer or a subordinate; the income tax itself; interest on loans above twice the Central Bank rate at the start of the calendar year in which the period ends; interest paid to natural persons who are not taxable or are exempt. Donations over the art. 23 item 8 cap (10% of annual net profit) are added back.
-3. **Thin capitalisation** (art. 52 item 1 and Executive Regulations arts. 58 and 59). Interest covers anything paid for loans, advances, bonds and any debt finance at fixed or variable return. Equity = paid-up capital plus reserves and carried profits less carried losses, excluding untaxed revaluation reserves; losses come off reserves and retained profit only, never below paid-up capital. Average equity = (opening + closing) / 2; average loans the same, leaving out interest-free loans, loans whose interest is not taxable, and loans with a grace period for paying interest (until that period ends). Ratio for 2026: 3:1 (Law 30/2023 art. 5).
-4. **Bad debts** (art. 28 as replaced by Law 151/2026 for item 4): written off the books, with a report from an accountant on the register of accountants and auditors; regular books; debt linked to the activity; previously taken into income; serious collection steps and no recovery 12 months after due date (payment order, first-instance judgment, or claim in bankruptcy or composition). A debt up to EGP 10,000 needs no steps if total bad debts stay within 1% of debtor balances at year end. Recoveries are income in the year collected.
-5. **Tax depreciation** replaces accounting depreciation: rates in the table, pool basis rules in art. 26. Land, works of art, antiques and jewellery are not depreciated.
-6. **Exclude** exempt income: dividends under the participation exemption or from resident companies, listed share gains (from 29 Jul 2026), listed non-government bond interest (art. 50 item 7). An exemption may not create a loss to carry forward (art. 50 last para.).
-7. **Deduct losses** brought forward within five years (art. 29). Losses lapse (art. 55, Executive Regulations art. 68) only if all three hold: ownership of capital or votes changes by more than 50%, the activity changes, and the shares are not listed (the listing test is for joint-stock companies and partnerships limited by shares); adding a related or complementary activity is not a change. If not all three hold, the losses carry forward provided the three do not all come together within the next three years (Executive Regulations art. 68). A change of form or ownership made to avoid tax is disregarded (art. 69).
-8. **Change of legal form** (art. 53): merger, division, conversion, or a share or asset swap of 50% or more is tax-neutral if assets and liabilities keep their book values; otherwise revaluation gains are taxed (Executive Regulations art. 64).
-9. **Foreign tax credit** (art. 54): foreign tax on foreign profit is credited, with documents, up to the Egyptian tax on that profit; foreign losses never reduce the Egyptian base; each country is computed separately (Executive Regulations art. 67).
-10. **Round down** to EGP 10 and apply the rate. Credit tax withheld under art. 59, advance payments and their yield (Law 206/2020 art. 32).
-11. **Related parties** (art. 30): ETA may reset prices to arm's length; detail in `eg-transfer-pricing`.
-12. **Long-term contracts** (art. 21, 2005 text): profit on each contract running over more than one period is taxed by percentage of completion, measured by actual cost to the period end against total estimated cost, and settled on actual figures in the period the contract ends.
+1. **Reconcile profit.** Art. 51 applies the commercial/industrial profit rules unless Book Three provides a special rule. Begin with accounting profit and identify tax adjustments; keep accounting depreciation separate from tax depreciation.
+2. **Establish cost evidence.** Costs must relate to, and be necessary for, the business (art. 22(1)). Art. 22(2), replaced by Law 30/2023, requires real costs supported by electronic invoices from July 2023 and electronic receipts from January 2025. The Minister may extend either deadline by up to one year and exempt particular costs from electronic evidence; costs not customarily documented are excepted. Do not convert this into an unconditional rule that every unsupported payment is deductible or that every paper document is prohibited. Determine the applicable exception before claiming the cost.
+3. **Add back ordinary-company provisions** under art. 52(2). Distributions of profit/dividends and shareholder attendance fees, board-membership remuneration/allowances and employees' distributed profit shares are also non-deductible (art. 52(3)-(5)). Specialist bank and insurer provisions are referred above.
+4. **Classify penalties and taxes.** Art. 24(2) disallows court-imposed fines, financial penalties and damages for a felony or intentional misdemeanour by the taxpayer or a subordinate. Do not apply a blanket add-back to all contractual compensation: art. 23(9) addresses contractual liability. Egyptian income tax under Law 91 is not deductible (art. 24(3)); business-borne taxes and fees other than that income tax are deductible under art. 23(3), subject to the normal business-cost conditions.
+5. **Test interest separately.** Under art. 24(4), disallow loan interest above twice the Central Bank credit/discount rate at the start of the calendar year in which the tax period ends. Art. 24(5) disallows debt interest paid to natural persons who are not taxable or are exempt. Art. 24(6), added by Law 11/2013, disallows financing/investment costs related to legally exempt income. The thin-cap limit does not override these restrictions, business purpose, exempt interest-income offsets under art. 23(1), or arm's-length pricing of related-party finance (`eg-transfer-pricing`).
+6. **Compute thin capitalisation.** Executive Regulations arts. 58-59 include loans, advances, bonds, bills and other fixed/variable-return debt finance. Equity is paid-up capital plus reserves and retained profits less carried losses; exclude untaxed revaluation reserves. Losses reduce retained profits/reserves, without reducing equity below paid-up capital. Average equity and average loans each equal opening plus closing balances divided by two. Exclude interest-free loans, loans with non-taxable returns and loans with an interest-payment grace period until that period ends. Compare qualifying average loans with the applicable multiple of average equity. The worked example uses one rate; mixed rates are referred.
+7. **Replace book depreciation.** Use the categories above. Under art. 26 and Executive Regulations art. 34, adjust each pool for additions/improvements and disposals/compensation. A negative pool balance is added to taxable profit; a non-negative balance not exceeding EGP 10,000 is deducted in full. Otherwise apply that pool's statutory rate and carry the residual basis forward. Land, art, antiques, jewellery and other inherently non-wasting assets are not depreciated (art. 25(4)). Donated assets credited to reserves: **Check this point with one of our partner accountants.**
+8. **Donations.** Art. 23(7) allows donations to government, local units and other public legal persons without the percentage cap; apply art. 23(8)'s cap only to the qualifying non-government recipients listed above. Add back a claimed deduction above the applicable limit.
+9. **Losses.** Identify ordinary trading losses by originating year before applying the carry-forward. Loss forfeiture on ownership/activity changes, the listing test and look-forward rule, changes of legal form and revaluation/tax deferral: **Check this point with one of our partner accountants.** Do not assume book-value continuity alone makes a reorganisation tax-neutral.
+10. **Long-term manufacturing, fitting-out, construction or related-service contracts spanning tax periods, including percentage-of-completion profit and the completed-contract loss adjustment:** **Check this point with one of our partner accountants.** The ordinary carry-forward row is not a blanket ban on adjusting earlier contract profits.
+11. **Bad debts and recoveries; health-insurance solidarity contributions; entertainment, start-up, R&D or training deductions:** **Check this point with one of our partner accountants.** A book write-off or an unsupported enhanced-deduction percentage is not a tax deduction.
+12. **Dividends received, participation relief, listed/non-government bond income, listed or unlisted securities gains and losses, fair-value acquisition-cost uplifts, dividend/distribution tax and the listing incentive:** **Check this point with one of our partner accountants.** Law 151/2026 commenced on 29 July 2026; do not apply a single assumed exemption to the whole financial year or use a repealed listed-gains rate. Obtain holding, disposal and distribution dates, ownership and listing information.
 
 ## Deadlines and filing
 
-| Step | Rule | Source |
+| Step | Rule | Official source |
 |---|---|---|
-| Annual return | Before 1 May each year, or within four months after the end of the financial year | Law 206/2020 art. 31(c) |
-| Accountant signature | The annual return of capital companies, cooperatives, individuals and partnerships whose turnover exceeds EGP 2 million a year must be signed by an accountant on the register of accountants and auditors | Law 206/2020 art. 31(d) last para. |
-| Completeness | A return without all the form's tables is not a return; a return is due for exempt periods too | Law 206/2020 art. 31(c) |
-| Filing channel and payment | Electronic filing with password and e-signature; tax shown is paid the same day, net of tax withheld, advance payments and their yield | Law 206/2020 art. 32 |
-| Amended return | Within the year after the deadline; within 30 days of the deadline it counts as the original. The right is lost once evasion is discovered or an audit notice is served. Public sector banks and companies: final return within 30 days of the general assembly approving the accounts | Law 206/2020 art. 33 |
-| Cessation | Return within 60 days of stopping; on a transfer of the business, a separate return within 60 days | Law 206/2020 art. 31(d) |
-| Advance payments | Apply at least 60 days before the period on the form; ETA answers in 60 days (silence is refusal). Instalments by 30 June, 30 September and 31 December for a calendar year (the ETA guide: 6, 9 and 12 months from the period start). Renewal can be filed up to the end of the prior period | Law 91 arts. 62, 63; ETA Services Guide 8/1 |
+| Annual company return | Before 1 May each year, or within four months after the financial year end; Law 206/2020 art. 31(c) | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf |
+| Completeness and exemptions | Complete all prescribed tables/data and attachments within the deadline; an incomplete return is not recognised. A return is required for exempt periods too; art. 31(c) | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf |
+| Signatures | Taxpayer/legal representative signs the annual return. An independent preparer also signs or the return is treated as not filed. A registered accountant's signature is required for capital companies, cooperatives, natural persons and partnerships where annual turnover exceeds EGP 2 million; art. 31(d) | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf |
+| Electronic filing | Art. 32 requires the available electronic channel, secret password and legally authorised electronic signature. Obtain the correct office/system and current form before submission | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf |
+| Payment | Pay the return balance on the day of filing after crediting tax withheld/collected, advance payments and any yield due. Excess withholding first settles prior liabilities; otherwise it is refunded unless the taxpayer requests future use in writing; art. 32 | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf |
+| Errors and amendments | An error discovered within the year following the statutory annual deadline requires an amended return. Within 30 days after that deadline, the amendment counts as the original. The right is lost on discovery of evasion or notice of commencement of audit; art. 33 | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf |
+| Cessation/transfer | Complete cessation in Egypt: return within 60 days. Transfer of all or part of the business: separate transfer return within 60 days, with the relevant evidence, and include its data in the annual return; art. 31(d) | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf |
 
-**Steps:**
-1. Log in to the ETA tax system (https://workspace.eta.gov.eg/workspace/dashboard for merged offices).
-2. Prepare the return from audited accounts with all tables completed, signed by the registered accountant.
-3. Submit before 1 May (or four months after a non-December year end), keep the confirmation, and pay the balance the same day through the e-payment channel.
-4. If a mistake is found, file an amended return within the year after the deadline.
+Working sequence: reconcile the accounts, tax adjustments and available credits; establish the filing channel and form for the taxpayer's office; obtain signatures; submit and pay by the applicable statutory dates; retain the submitted return, acknowledgement and payment evidence. Current portal screens, return-box numbers, approval of a non-calendar year and the special final-return procedure for public-sector entities: **Check this point with one of our partner accountants.** This computation does not establish a general company-audit obligation.
+
+**Electing/renewing/cancelling advance payments, the withholding substitution, instalment dates and yield:** **Check this point with one of our partner accountants.** Do not assume the ordinary company must pay equal quarterly instalments.
 
 ## Penalties and interest
 
-| Failure | Consequence | Source |
-|---|---|---|
-| Return and payment late by up to 60 days, or a wrong return showing more tax | Fine EGP 3,000 to 50,000 plus the tax; trebled on repeat | Law 206/2020 art. 69 |
-| No return for over 60 days past the deadline | Fine EGP 5,000 to 200,000; doubled on repeat within three years | Law 206/2020 art. 70 |
-| Breach of record-keeping articles | Fine EGP 20,000 to 100,000; up to EGP 50,000 for not keeping books for the required period | Law 206/2020 art. 71 |
-| Evasion | Prison one to three years and fine EGP 50,000 to 250,000, or either; the partner, manager or board member in charge is liable if the breach was within their knowledge | Law 206/2020 arts. 72, 73 |
-| Late payment | Delay charge 22.50% a year for 2026, capped at 100% of the principal | Law 91 art. 110; ETA circular 1/2026; Law 206/2020 art. 45 bis |
-| Settlement | Before prosecution 100% of the tax due; after, 150% before judgment and 175% after final judgment; crimes with no tax at stake, half to twice the minimum fine | Law 206/2020 art. 75; art. 75 bis (Law 7/2025) |
+**Late filing, late payment, record failures, evasion, manager liability and offence settlement:** **Check this point with one of our partner accountants.** Obtain the actual due date, filing/payment dates, tax period, notices and offence history. This Guide supplies no penalty or interest calculation; the tax year of a profit computation does not itself fix the rate for a later payment default.
 
 ## Cross-border points
 
-- Non-resident companies pay only on PE profit (art. 47); the PE definition is art. 4 and 4 bis. PE profit is deemed distributed 60 days after year end, so 10% dividend tax applies on top of 22.5%.
-- Payments abroad for interest, royalties, services and dividends carry withholding: `eg-withholding-tax`.
-- Foreign tax credit: art. 54, per country, capped at the Egyptian tax.
-- Residence, PE and treaty relief for foreign groups: `eg-cross-border`.
+**Residence and PE status, treaty relief, PE deemed distributions and head-office charges, foreign-tax credits and foreign losses, free-zone/special-economic-zone treatment:** **Check this point with one of our partner accountants.** Use `eg-cross-border` and `eg-withholding-tax` with the actual treaty, country, income, payment and foreign-tax evidence. Do not treat ordinary corporate tax as the only possible charge on a PE.
 
 ## Two worked examples that recompute
 
-**Case 1. Trading company, calendar 2026.** Accounting profit 10,000,000. Add back a general provision of 500,000 and accounting depreciation of 800,000. Tax depreciation: 25% on an other-assets pool of 2,400,000 = 600,000. Taxable 10,700,000; tax 22.5% = 2,407,500. Less 150,000 withheld by customers under art. 59: payable 2,257,500 before 1 May 2027.
+**Case 1. Trading company, calendar 2026.** Keep the original inputs: accounting profit 10,000,000; general provision 500,000; book depreciation 800,000; other-assets pool 2,400,000; customer withholding 150,000. Assume an ordinary resident trading company at the standard rate, a qualifying tax pool after all additions/disposals and any initial allowance, a non-deductible general provision, evidenced available withholding, and no other adjustments, losses or reliefs. Tax depreciation = 2,400,000 x 25% = 600,000. Taxable profit = 10,000,000 + 500,000 + 800,000 - 600,000 = 10,700,000. Tax = 2,407,500; balance = **2,257,500**. Statutory annual deadline: before 1 May 2027. Sources: Law 91 arts. 25-26, 51-52; Law 96/2015 art. 49; Law 206 arts. 31-32, linked above.
 
 ```oa-check
 name: Company profit with provision and depreciation adjustments
@@ -134,59 +108,72 @@ expected:
   payable: 2257500.00
 ```
 
-**Case 2. Decision: fund growth by shareholder loan or by equity.** Average equity 20,000,000; average loans 80,000,000 at 15%, interest 12,000,000. For 2026 the limit is 3 times equity, 60,000,000. Interest on the excess 20,000,000 (3,000,000) is not deductible, costing 675,000 of tax. If the shareholder had put the extra 20,000,000 in as equity, equity would be 40,000,000, the limit 120,000,000, and every pound of the remaining 60,000,000 loan interest deductible. In 2028 the ratio falls to 2:1 and the same loan structure would lose 6,000,000 of interest.
+**Case 2. Decision: shareholder loan or equity.** Original inputs: average equity 20,000,000, average qualifying loans 80,000,000, one interest rate 15%, gross interest 12,000,000. Assume the ordinary 2026 ratio, no specialist exception, all loans included under arts. 58-59, and all other interest-deduction tests satisfied (including taxable lenders, business purpose, rate ceiling and arm's-length terms). The thin-cap limit is 60,000,000. Interest on excess debt is 3,000,000; its tax effect at 22.5% is 675,000 **relative to deducting the entire original interest expense**. Deductible interest is 9,000,000.
+
+If 20,000,000 of the original debt is instead equity for the whole period, average equity is 40,000,000 and loans 60,000,000. The limit becomes 120,000,000; interest falls to 9,000,000, with no thin-cap disallowance. Deductible interest is again 9,000,000: this substitution does **not** automatically save 675,000 of income tax compared with the original structure at equal profit before financing costs. The equity investor's required return and other financing costs are missing, so the figures alone do not settle the financing choice.
+
+Preserving the original future sensitivity: under Law 30/2023 art. 5's enacted **2028** 2:1 schedule, the original 20,000,000 equity/80,000,000 loans would disallow 6,000,000 of interest. This is a projection under the law read on 26 November 2026, not confirmation of future law. Sources: Law 30/2023 issuing art. 5; Executive Regulations arts. 58-59; Law 96/2015 art. 49.
 
 ```oa-check
-name: Thin capitalisation 2026 at 3 to 1
+name: Thin capitalisation and debt to equity decision for 2026
 inputs:
   equity: 20000000
   loans: 80000000
   rate: 0.15
+  substitute: 20000000
 steps:
+  - interest: loans * rate
   - limit: equity * 3
   - disallowed: max(loans - limit, 0) * rate
   - extra_tax: disallowed * 0.225
+  - deductible: interest - disallowed
+  - equity_after: equity + substitute
+  - loans_after: loans - substitute
+  - limit_after: equity_after * 3
+  - interest_after: loans_after * rate
+  - disallowed_after: max(loans_after - limit_after, 0) * rate
+  - deductible_after: interest_after - disallowed_after
+  - tax_deduction_change: (deductible_after - deductible) * 0.225
   - disallowed_2028: max(loans - equity * 2, 0) * rate
 expected:
+  interest: 12000000.00
   limit: 60000000.00
   disallowed: 3000000.00
   extra_tax: 675000.00
+  deductible: 9000000.00
+  equity_after: 40000000.00
+  loans_after: 60000000.00
+  limit_after: 120000000.00
+  interest_after: 9000000.00
+  disallowed_after: 0.00
+  deductible_after: 9000000.00
+  tax_deduction_change: 0.00
   disallowed_2028: 6000000.00
 ```
 
-This assumes one interest rate across all loans; with mixed rates ask how ETA allocates the excess (see "Not yet confirmed").
-
 ## Ask the client first
 
-1. Legal form, residence, and whether this is a branch or PE of a foreign company?
-2. Financial year end, and turnover: up to EGP 20 million and in the Law 6/2025 regime? If yes, use `eg-sme-tax`.
-3. Average equity and average loans for the year, and which lenders are related?
-4. Holdings in other companies: percentage, how long held, listed or not, and any disposals in 2026 (before or after 29 July)?
-5. Losses brought forward by year, and any ownership change over 50% with a change of activity?
-6. Tax withheld by customers, advance payments made, and any foreign tax paid?
-7. Is the company a State entity or owned in any part by one (Law 159/2023), and does it rely on an exemption? If yes: which law grants it, does the activity fall in a kept exemption (treaty, military or defence, basic public utility service), and was the contract made before 26 July 2023?
+Obtain legal form, residence/PE facts, financial-year dates, turnover and regime/election; State ownership/exemption documents and relevant contracts; a profit reconciliation and asset-pool roll-forward; opening/closing equity and debt with lender status, rate and grace periods; holdings, dividends and disposal dates; losses by year and changes of ownership/activity; customer withholding, advances and foreign taxes. For any referred topic, obtain the specialist conclusion before using an exemption, deduction, rate or deadline affected by it.
 
 Do not help hide profit, invent costs or shift profit to related parties off arm's length. Do not present output as a filed return or a professional sign-off.
 
 ## Sources
 
-| Source | URL | Read on |
+| Official text and scope read | URL | Read on |
 |---|---|---|
-| Income Tax Law 91 of 2005, original Gazette text: arts. 21 to 31, 47 to 63 (page images read; 2005 text, used only where no later law replaced it) | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf | 2026-11-02 |
-| Executive Regulations, MoF decree 991 of 2005: arts. 57 to 60, 64 to 69, 74 to 84 (page images read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.991-2005.pdf | 2026-11-02 |
-| Law 96 of 2015, art. 1 (art. 49 first para., 22.5%; art. 56 bis 2015 text; page images read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.96-2015.pdf | 2026-11-02 |
-| Law 53 of 2014, art. 1 (art. 50 items 7 and 10, art. 59 first para., arts. 72, 73, 86, 135; page images read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.53-2014.pdf | 2026-11-02 |
-| Law 30 of 2023, whole text (arts. 4, 4 bis, 22, 46 bis to 46 bis 7, 50, 52, 56, 56 bis, 58, 72 bis; transitional arts. 3 to 10; text layer read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf | 2026-11-02 |
-| Law 151 of 2026, whole text; Gazette 30 bis (a), 28 Jul 2026 (text layer read) | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf | 2026-11-02 |
-| Unified Tax Procedures Law 206 of 2020: arts. 29 to 34, 50 to 56, 63 to 75 (page images read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-02 |
-| Law 7 of 2025, whole text (arts. 45 bis, 75 bis, 75 bis 1 of Law 206) | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf | 2026-11-02 |
-| Law 5 of 2025, arts. 1 to 4 (settlement of past periods; read to check the old skill's citations) | https://eta.gov.eg/sites/default/files/2025-02/law_no.5.of_.2025.pdf | 2026-11-02 |
-| ETA circular 1 of 2026 (Central Bank rates 2021 to 2026; page image read) | https://eta.gov.eg/sites/default/files/2026-03/Dawry.no_.1.of_.2026.pdf | 2026-11-02 |
-| ETA Services Guide, 2nd edition: service 8/1 advance payments (text layer read) | https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf | 2026-11-02 |
-| Gazette erratum to Laws 149, 150 and 151 of 2026, Gazette 32 bis, 8 Aug 2026 (read for the correction to arts. 52 and 56 on infrastructure loans; via the independent review) | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf | 2026-11-02 |
-| Law 159 of 2023 cancelling tax and fee exemptions for State entities in investment and economic activities, Gazette 29 bis, 25 Jul 2023: arts. 1 to 4 (page image read) | https://eta.gov.eg/sites/default/files/2024-12/law_no._159_for_2023.pdf | 2026-11-21 |
-| PM Decree 242 of 2024, executive regulations of Law 159 of 2023, Gazette 5 bis, 4 Feb 2024: arts. 1 to 8 (Gazette page images read). manshurat.org (private legal database; official gazette copy not reachable) | https://manshurat.org/sites/default/files/ldd_5_mkrr_-_mwmn-swr-2.pdf | 2026-11-21 |
+| Law 91/2005, Gazette scans: arts. 22-29, 47-49, 51-54; exact Arabic pages recovered; original text checked against the amendments below, not used as a consolidated 2026 text | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf | 2026-11-26 |
+| Law 96/2015: art. 1 replacing art. 49 first paragraph; Arabic PDF p. 2 | https://portal.eta.gov.eg/sites/default/files/2024-03/law_no.96-2015.pdf | 2026-11-26 |
+| Law 17/2015: issuing arts. 6 and 9, Arabic PDF pp. 27-28; taxpayer-request condition for art. 27 | https://portal.eta.gov.eg/sites/default/files/2026-03/law.no_.17.of_.2015.pdf | 2026-11-26 |
+| Law 11/2013: issuing art. 3 adding art. 24(6), Arabic PDF p. 7; exempt-income financing/investment costs | https://portal.eta.gov.eg/sites/default/files/2024-03/law_no.11-2013.pdf | 2026-11-26 |
+| Law 30/2023: art. 22(2), art. 52(1), issuing art. 5 transitional schedule; operative 2026 application compared with Law 151 | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf | 2026-11-26 |
+| Law 151/2026: whole text, particularly art. 52(1), issuing arts. 6-7; commencement is not assumed to settle all financial-year allocation questions | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf | 2026-11-26 |
+| Law 159/2023: all four articles, Arabic Gazette page; cancellation, exclusions, old contracts and commencement | https://eta.gov.eg/sites/default/files/2024-12/law_no._159_for_2023.pdf | 2026-11-26 |
+| Executive Regulations, Decree 991/2005: arts. 58-59, Arabic PDF pp. 27-28 | https://eta.gov.eg/sites/default/files/2024-03/law_no.991-2005.pdf | 2026-11-26 |
+| WIPO Lex Arabic statutory consolidation through Law 16/2020: arts. 21-29, 47-55; used to identify older amendments and compare unchanged depreciation/cost rules, not for superseded 2026 rates/exemptions | https://www.wipo.int/wipolex/ar/legislation/details/20194 | 2026-11-26 |
+| WIPO Lex Arabic regulations consolidated through Decree 296/2020: art. 34 pool computation, compared with original statutory art. 26 | https://www.wipo.int/wipolex/fr/legislation/details/19951 | 2026-11-26 |
+| Law 206/2020: arts. 31-34, Arabic PDF pp. 17-20; recovered saved ETA scan and prior completed return-assembly reading | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-26 |
+| ETA income-tax legislation register: later amendment list and operative source links | https://portal.eta.gov.eg/ar/content/qwanyn-aldrybt-ly-aldkhl | 2026-11-26 |
 
-Not yet confirmed: whether the Law 151/2026 changes (participation exemption without the 10% add-back, listed gains exemption, repeal of art. 46 bis 5) apply to the whole of tax year 2026 or only from 29 July 2026; Law 151 art. 7 gives only the start date. Whether Law 30/2023 art. 5 (3:1 for 2024 to 2027) is read by ETA as still running after Law 151 replaced art. 52 item 1. How the disallowed interest is allocated where loans carry different rates. Whether arts. 21, 23 (other than item 10), 24 and 25 to 27 were amended after 2005 by a law not read here (only the 2005 text was read, and no amendment was found in Laws 53/2014, 96/2015, 30/2023 or 151/2026). The old skill's 5% donations cap is wrong (art. 23 item 8 says 10%); its blanket fines add-back is narrower in the law (art. 24 item 2: felonies and intentional misdemeanours); its entertainment add-back, start-up costs over five years, R&D 150% and training 100% deductions had no official source and were not found. Whether the 40% and 40.55% rates in art. 49 second para. still stand unchanged (no later replacement was found in the laws read). Whether art. 46 bis 4's three-year fair value uplift applies to companies' gains, since it sits in the individuals' book. The meaning of the art. 56 bis exclusion of resident-company dividends from dividend tax (see `eg-withholding-tax`). Transfer pricing documentation thresholds (old skill: EGP 8 million, CbCR EGP 3 billion) belong to `eg-transfer-pricing`. Free zone and special economic zone regimes (Law 83/2002, Investment Law 72/2017), a non-calendar financial year approval, and the box numbers of the corporate return were not read. Law 159 of 2023: the Cabinet decision listing the basic public utility services that keep their exemptions (Decree 242 art. 2 item 3) was not found; the date of ETA circular 6 of 2024 (the signed copy leaves the day and month blank); whether any later law or ETA instruction narrowed or widened Law 159. How ETA reads the art. 47 exclusion of the National Service Projects Organisation alongside Law 159's carve-out for military works and defence. Law 159 of 2023 and special-law exemptions: an opinion of the State Council's Fatwa and Legislation department, reported in the press on 7 May 2026, held that the National Organization for Social Insurance keeps its tax exemptions under Social Insurance Law 148 of 2019 and is outside Law 159, on the grounds that its investments serve its social purpose and that a special-law exemption needs an express text to remove it; the opinion's text was not found on an official site, and how far that reasoning reaches other State bodies with exemptions in their own laws is not confirmed.
+Not yet confirmed: no unverified rule is usable in the computation. The specifically identified specialist applications above are referrals, not assumed exemptions or deductions. **Check this point with one of our partner accountants.**
 
 > Originally contributed by Ahmed Hassan; rebuilt against the law by the OpenAccountants team.
