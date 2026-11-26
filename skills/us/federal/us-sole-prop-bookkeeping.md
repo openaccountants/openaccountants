@@ -1,10 +1,10 @@
 ---
 name: us-sole-prop-bookkeeping
-description: Classify a US sole proprietor's or single-member LLC's 2026 bank, card and payment processor transactions into the lines of the 2026 Schedule C (Form 1040), from statements alone or with receipts. Holds the bank and processor pattern library (Chase, Wells Fargo, Mercury, Stripe, PayPal, Square, SaaS, travel, fuel, government payments, personal items), the 2026 line map (16a mortgage, 16b vehicle loan, 16c other interest, 27a Form 7205 only, 27b other expenses from Part V), the 50% meals and 0% entertainment rules, section 274(d) substantiation, the 2026 standard mileage rates (72.5 cents to 30 June, 76 cents from 1 July), the de minimis safe harbor, the USD 2,000 Form 1099-NEC threshold for 2026 payments, conservative defaults, ambiguity questions and the working paper layout. Trigger on "categorize my transactions", "Schedule C bookkeeping", "which line does this go on", "is this deductible for my business", "bank statement to Schedule C". Feeds us-schedule-c-and-se-computation. Federal only.
-version: "3.1"
+description: Classify 2026 US sole-proprietor and individual-owned disregarded LLC transactions into Schedule C working papers. Reconcile processor receipts without duplication, separate personal spending, document meals and vehicle costs, and hold unresolved classifications for review. Includes the 2026 line map and two worked cases. Federal only. Trigger on "categorize my transactions", "Schedule C bookkeeping", "bank statement to Schedule C".
+version: "3.2"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-22
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: bookkeeping
@@ -13,81 +13,23 @@ type: situation-rules
 
 # US sole proprietor bookkeeping into Schedule C, tax year 2026
 
-> **Source-cited draft.** Built from the 2026 Schedule C (Form 1040), IRS Notice 2026-10 and the IRS standard mileage rates page, Rev. Proc. 2025-32, Treas. Reg. 1.263(a)-1(f) and Notice 2015-82, Public Law 119-21 and 26 U.S.C. 162, 262, 274, 280F and 6050W, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
+> **Source-cited draft.** Prepare a working paper for review before filing. Sources below support the retained rules; they do not constitute professional attestation.
 
-**Answer first.** Every business deposit and payment is put on one 2026 Schedule C line or excluded. Processor payouts (Stripe, PayPal, Square) are not revenue: line 1 is the gross the customer paid, and the processor fee goes to line 27b with the other Part V expenses. Line 27a is only the energy efficient commercial buildings deduction (Form 7205). Interest is split three ways on the 2026 form: 16a mortgage, 16b vehicle loan (business share), 16c other. Meals with a documented business purpose are 50% (line 24b), entertainment is 0%. Taxes on income, owner draws, personal items and the owner's health insurance and retirement contributions never go on Schedule C. When a fact is missing, the default is the conservative one (exclude, or 0% business use) and the client is asked.
+**Answer first.** Classify supported business transactions, reconcile receipts once, and keep unresolved items out of filing totals. A merchant name suggests a question, not a deduction.
 
 ## Scope and who this is for
 
-In scope: transaction classification for tax year 2026 for one individual's Schedule C business: a sole proprietor, or a single-member LLC disregarded for federal tax, on the cash method unless the client uses accrual.
+Federal bookkeeping for a sole proprietor's trade or business, including an individual-owned single-member LLC that has not elected corporate treatment. Confirm ownership and elections; a DBA or LLC bank label does not establish tax classification. See [IRS LLC guidance](https://www.irs.gov/businesses/small-businesses-self-employed/single-member-limited-liability-companies).
 
-| Field | Detail |
-| --- | --- |
-| Form | Schedule C (Form 1040) 2026, Profit or Loss From Business |
-| Return | 2026 Form 1040, due 15 April 2027 (15 October 2027 on extension) |
-| Currency | USD |
-| Key law | Internal Revenue Code; Public Law 119-21 (4 July 2025) |
-
-Out of scope, and where it goes:
-
-| Topic | Skill |
-| --- | --- |
-| Net profit, home office method and Schedule SE | `us-schedule-c-and-se-computation` |
-| Section 179, bonus depreciation and the vehicle depreciation caps | `us-section-179-and-bonus-depreciation` |
-| Issuing Forms 1099-NEC to contractors | `us-1099-nec-issuance` |
-| Forms 1099-K received from processors and marketplaces | `us-1099-k-and-payment-processors` |
-| Owner's health insurance (Schedule 1) | `us-self-employed-health-insurance` |
-| Owner's retirement contributions (Schedule 1) | `us-self-employed-retirement` |
-| QBI | `us-qbi-deduction` |
-| Payroll returns for employees | `us-form-941-940-payroll` |
-| Hiring the owner's children, accountable plans | `us-hiring-your-children-and-accountable-plans` |
-| Capital assets, crypto | `us-capital-gains` |
-| Whole-return order | `us-federal-return-assembly` |
+Use the client's established accounting method. This workflow produces a cash-transaction working paper; it does not calculate accrual adjustments. For accrual accounts, inventory or a method change: Check this point with one of our partner accountants.
 
 ## Ask the client first
 
-**Minimum:** the full-year 2026 statement (CSV, PDF or pasted) for every account the business uses, 1 January to 31 December 2026. Any US bank works (Chase Business, Wells Fargo Business, Bank of America Business, Capital One Spark, Mercury, Relay, Novo, Bluevine and others). With no statement at all, stop.
+Obtain all 2026 business-used bank and card statements, processor settlement reports, invoices and receipts, Forms 1099, prior Schedule C/Form 4562, and relevant mileage/payroll records. Include supported business purchases made with personal funds. With no transaction records, stop. For an incomplete year, label the working paper with its actual end date.
 
-**Recommended:** every Form 1099-NEC, 1099-MISC and 1099-K received; the 2025 Schedule C and Form 4562 (depreciation, vehicle method, home office method carried forward); receipts for single expenses over USD 75; card statements where business spending runs through a card.
-
-**Ideal:** a contemporaneous mileage log; home office measurements; the invoice register; W-9s from contractors; Forms 1095 for health insurance.
-
-If only statements are available, proceed and put this in the reviewer note: "This working paper was produced from bank statements alone. The reviewer must verify: (a) all 1099 income is captured, (b) prior-year depreciation elections are carried forward, (c) the vehicle method chosen in the first year of use is honoured, and (d) section 274(d) substantiation exists for travel, meals, gifts and listed property."
-
-Infer from the data first; ask only what the data cannot answer:
-
-| Fact | Inference from the data | Question if it cannot be inferred |
-| --- | --- | --- |
-| Entity | A DBA, owner name or "LLC" label does not establish ownership or federal tax classification; confirm members and any corporate election before using Schedule C | "Who owns the business, how many LLC members are there, and has it elected S corporation or C corporation treatment?" |
-| Accounting method | Most sole proprietors use cash | "Do you use the cash or accrual method?" |
-| Principal activity | Counterparty mix and 1099 descriptions | "What does the business do?" (for the business code on line B) |
-| EIN or SSN | Not inferable | "Does the business have an EIN, or do you use your SSN?" |
-| Prior year return | Not inferable | "Can you send the 2025 Schedule C and Form 4562?" |
-| Home office | Residential address and no office rent | "Is part of your home used regularly and only for the business? Square feet of that area and of the home?" |
-| Vehicle | Fuel and repair charges | "Which vehicle, which method (standard mileage or actual), business miles 1 January to 30 June and 1 July to 31 December 2026, and is there a log?" |
-| Employees | Gusto or ADP charges, regular payments to individuals | "Do you have W-2 employees?" |
-| Inventory | Wholesale supplier payments | "Do you sell physical products and keep inventory?" |
-| Health insurance | Premium payments | "Do you pay your own health insurance, and could you join a spouse's employer plan in any month?" |
+Read the available records before asking about business activity, ownership/elections, accounting method, business-use shares, asset acquisition and service dates, vehicle history, employees, inventory or home use. Statements alone do not establish these facts. Request supporting records regardless of amount; do not use USD 75 as a universal receipt exemption.
 
 ## The method, step by step
-
-### Rates, bands and thresholds
-
-| Item | Amount, 2026 | Source |
-| --- | --- | --- |
-| Standard mileage rate, business, 1 January to 30 June 2026 | 72.5 cents a mile | [IRS Notice 2026-10](https://www.irs.gov/pub/irs-drop/n-26-10.pdf) |
-| Standard mileage rate, business, 1 July to 31 December 2026 | 76 cents a mile | [IRS standard mileage rates](https://www.irs.gov/tax-professionals/standard-mileage-rates) |
-| Business meals, deductible share | 50% | [26 U.S.C. 274(n)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec274.htm) |
-| Entertainment, deductible share | 0% | [26 U.S.C. 274(a)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec274.htm) |
-| Business gifts, deductible per recipient per year | USD 25 | [26 U.S.C. 274(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec274.htm) |
-| De minimis safe harbor per item or invoice, no applicable financial statement (raised from the regulation's USD 500) | USD 2,500 | [IRS Notice 2015-82](https://www.irs.gov/pub/irs-drop/n-15-82.pdf) |
-| De minimis safe harbor per item or invoice, with an applicable financial statement | USD 5,000 | [Treas. Reg. 1.263(a)-1(f)(1)(i)(D)](https://www.ecfr.gov/current/title-26/section-1.263(a)-1) |
-| Form 1099-NEC and 1099-MISC base threshold, payments made after 31 December 2025 | USD 2,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Form 1099-K from a payment app or marketplace: both tests | more than USD 20,000 and more than 200 transactions | [Public Law 119-21, section 70432](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Gross receipts test (small business inventory and cash method rules) | USD 32,000,000 average over the prior 3 years | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Heavy vehicle line for the passenger car depreciation caps | over 6,000 pounds gross vehicle weight | [26 U.S.C. 280F(d)(5)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm) |
-
-Section 179, bonus depreciation and the 2026 passenger car depreciation caps are in `us-section-179-and-bonus-depreciation`; the home office rate and cap are in `us-schedule-c-and-se-computation`. There is no 100% restaurant meal deduction in 2026: the temporary rule for 2021 and 2022 has expired and was not renewed.
 
 ### Step 1: the 2026 Schedule C line map
 
@@ -103,291 +45,107 @@ Section 179, bonus depreciation and the 2026 passenger car depreciation caps are
 | 11 | Contract labor |
 | 12 | Depletion |
 | 13 | Depreciation and section 179 (Form 4562) |
-| 14 | Employee benefit programs (employees, not the owner) |
+| 14 | Employee benefit programs (other than on line 19) |
 | 15 | Insurance (other than health) |
 | 16a | Interest: mortgage paid to banks |
 | 16b | Interest: vehicle loan (business share) |
 | 16c | Interest: other |
 | 17 | Legal and professional services |
 | 18 | Office expense |
-| 19 | Pension and profit-sharing plans (employees only) |
+| 19 | Pension and profit-sharing plans |
 | 20a | Rent or lease: vehicles, machinery, equipment |
 | 20b | Rent or lease: other business property |
 | 21 | Repairs and maintenance |
 | 22 | Supplies |
 | 23 | Taxes and licenses |
 | 24a | Travel |
-| 24b | Deductible meals (50% applied) |
+| 24b | Deductible meals |
 | 25 | Utilities |
 | 26 | Wages (less employment credits) |
 | 27a | Energy efficient commercial buildings deduction (attach Form 7205) only |
-| 27b | Other expenses, listed in Part V and totalled on line 48 (bank charges, merchant fees, software, cloud hosting) |
+| 27b | Other expenses, from Part V line 48 |
 | 30 | Business use of home (computed in `us-schedule-c-and-se-computation`) |
 
 Source: [Schedule C (Form 1040) 2026](https://www.irs.gov/pub/irs-pdf/f1040sc.pdf).
 
-### Step 2: read the statement and strip out what is not business
+### Step 2: import and reconcile
 
-- **Chase Business CSV:** columns `Details, Posting Date, Description, Amount, Type, Balance, Check or Slip #`; dates MM/DD/YYYY; debits negative. `ORIG CO NAME:STRIPE TRANSFER` is a Stripe payout; `CHASE CREDIT CRD AUTOPAY` paying a personal card is an owner draw; `GUSTO` or `ADP` is payroll (wages line 26, employer taxes line 23); `ONLINE TRANSFER TO CHK...` is an internal transfer.
-- **Wells Fargo Business CSV:** columns `Date, Amount, *, Check Number, Description`; `PURCHASE AUTHORIZED ON MM/DD [COUNTERPARTY] CARD XXXX` is a card purchase; `BILL PAY` names the payee; `WIRE TYPE:WIRE IN` may be a client payment.
-- **Mercury CSV:** columns `Date, Description, Amount, Status, Bank Description, Running Balance`; dates YYYY-MM-DD; processor payouts are labelled.
-- **Internal transfers** between the owner's accounts: exclude.
-- **Card payments from the business account:** paying a personal card is an owner draw; paying a business card is a debt payment, and the card's individual charges are what get classified.
-- **Duplicates:** a purchase on the card statement and the lump card payment on the bank statement are one expense; classify the card line only.
-- **Owner draws and personal use:** exclude.
-- **Refunds, returns, credits, reversals, chargebacks:** a customer refund goes to line 2; a vendor refund reduces the original expense line.
+Inspect the actual CSV/PDF before selecting columns, dates and debit signs. Do not assume a fixed Chase, Wells Fargo or Mercury schema. Keep the original signed bank amount; normalize amounts used in the summary separately.
 
-### Step 3: apply the pattern library
+Match internal transfers, owner funding and card settlements before classifying income or expenses. Classify underlying card purchases once, including supported business charges on a personal card; do not also deduct the card payment. Record owner withdrawals separately: they are not deductible pay. Bona fide loan proceeds are not income. See [Publication 334](https://www.irs.gov/publications/p334).
 
-Match the counterparty by case-insensitive substring, most specific pattern first. A pattern suggests a category; it does not prove business use. Deduct only the established business share and hold an unknown mixed-use share for clarification. If nothing matches, go to step 4.
+For processor activity, obtain gross receipts and settlement details before finalizing revenue. Reconcile gross sales, fees, refunds, reserves and payout timing; do not deduct fees twice. Report each taxable receipt once, including cash or barter receipts without a Form 1099. Reconcile incorrect, duplicate and nontaxable Form 1099 entries instead of imposing their combined total as a revenue floor. See [IRS Form 1099-K guidance](https://www.irs.gov/businesses/what-to-do-with-form-1099-k).
 
-**Banks**
+### Step 3: classify from evidence
 
-| Pattern | Treatment | Line |
-| --- | --- | --- |
-| CHASE, JPMORGAN CHASE, WELLS FARGO, WFBNA, BANK OF AMERICA, BOA, BOFA | Service charges, wire and overdraft fees: bank charges | 27b |
-| CAPITAL ONE | Fees: bank charges; keep separate from Capital One card purchases | 27b |
-| MERCURY, RELAY, NOVO, BLUEVINE | Fintech bank fees | 27b |
-| INTEREST INCOME, INT EARNED | Usually Schedule B interest, not Schedule C; flag | 6 or exclude |
-| LOAN, BUSINESS LOAN, LINE OF CREDIT | Proceeds are not income and principal is not deductible; interest only | 16c |
+Use counterparty text to find the invoice or ask about purpose. The following are working-paper category suggestions **after** the actual expense, business use, current deductibility and timing are established. Capital assets and prepayments need separate review. See [Publication 334](https://www.irs.gov/publications/p334) and the line map above.
 
-**Payment processors**
-
-| Pattern | Treatment | Line |
-| --- | --- | --- |
-| STRIPE TRANSFER, STRIPE PAYOUT | Exclude the payout; take gross sales from the dashboard to line 1 | none |
-| PAYPAL TRANSFER, PAYPAL INST XFER | Same as Stripe | none |
-| SQUARE, SQ *, SQUAREUP | Same; Square deposits are net of fees | none |
-| VENMO BUSINESS, VENMO CASHOUT | Same; gross is revenue | none |
-| STRIPE FEE, PAYPAL FEE, SQ FEE | Merchant processing fees | 27b |
-
-If only statements are available, processor deposits are net. The working paper says: "Revenue from [processor] is reported net of fees. The reviewer must take gross revenue from the [processor] dashboard and add the fees back to line 1 and to line 27b."
-
-**Software and cloud**
-
-| Pattern | Treatment | Line |
-| --- | --- | --- |
-| AWS, AMAZON WEB SERVICES | Cloud hosting | 27b |
-| GOOGLE WORKSPACE, GOOGLE CLOUD, GOOGLE *GSUITE | Software subscriptions | 27b |
-| MICROSOFT 365, MSFT *OFFICE, AZURE | Software or hosting | 27b |
-| ADOBE, ADOBE *CREATIVE, SLACK, NOTION, GITHUB, JETBRAINS, FIGMA, CANVA, DROPBOX | Software subscriptions | 27b |
-| ZOOM, ZOOM.US | Software (or line 25 if treated as telecom); default software | 27b |
-| MAILCHIMP, CONVERTKIT, CONSTANT CONTACT | Email marketing | 8 |
-| HUBSPOT | Marketing use line 8, general CRM 27b; default 27b | 27b |
-| QUICKBOOKS, INTUIT *QB, XERO, FRESHBOOKS, WAVE | Accounting software | 27b |
-
-**Office and coworking**
-
-| Pattern | Treatment | Line |
-| --- | --- | --- |
-| WEWORK, REGUS, IWG, SPACES, INDUSTRIOUS | Coworking rent | 20b |
-| OFFICE RENT, COMMERCIAL LEASE | Office lease | 20b |
-
-**Communication**
-
-| Pattern | Treatment | Line |
-| --- | --- | --- |
-| VERIZON, VZ WIRELESS, AT&T, ATT, T-MOBILE, TMOBILE, GOOGLE FI | Phone, business share only; a shared personal line goes to step 4 | 25 |
-| COMCAST, XFINITY, SPECTRUM, CHARTER | Internet, business share only | 25 |
-
-**Insurance**
-
-| Pattern | Treatment | Line |
-| --- | --- | --- |
-| STATE FARM, GEICO, PROGRESSIVE, ALLSTATE, USAA (auto) | Personal auto cover: exclude; a business vehicle on actual costs puts the business share on line 9 | 9 or none |
-| HARTFORD, HISCOX, NEXT INSURANCE, THIMBLE, GENERAL LIABILITY, E&O, PROFESSIONAL LIABILITY | Business insurance | 15 |
-| WORKERS COMP | Workers' compensation for employees | 15 |
-| HEALTH INSURANCE, BLUE CROSS, AETNA, UNITED HEALTH, CIGNA, KAISER | Owner's health cover: exclude; Schedule 1 via `us-self-employed-health-insurance` | none |
-
-**Meals**
-
-| Pattern | Treatment | Line |
-| --- | --- | --- |
-| Any named restaurant | 50% if business purpose and attendees are documented | 24b |
-| UBER EATS, DOORDASH, GRUBHUB, POSTMATES | Same substantiation as a restaurant | 24b |
-| STARBUCKS, DUNKIN, coffee shops | 50% only if a client or business contact was present; solo coffee is personal | 24b or none |
-| ENTERTAINMENT, CONCERTS, SPORTS TICKETS | Entertainment: not deductible | none |
-
-Do not treat a fringe-benefit exclusion from employee wages as a 100% business deduction. For amounts paid or incurred after 2025, section 274(o) generally disallows employer-operated eating-facility costs and associated food and beverages, and section 119(a) convenience-of-employer meals, subject to its limited exceptions in sections 274(e)(8) and 274(n)(2)(C). Other qualifying exceptions can allow 100%, such as eligible employee recreation under section 274(e)(4); ordinary eligible meals otherwise remain subject to the 50% limit. See [IRS Publication 15-B (2026)](https://www.irs.gov/publications/p15b) and [current section 274](https://uscode.house.gov/us/usc/t26/s274/), which states "no deduction shall be allowed" for the section 274(o) categories unless an exception applies (correction sources read 22 November 2026).
-
-**Travel**
-
-| Pattern | Treatment | Line |
-| --- | --- | --- |
-| UNITED, DELTA, AMERICAN AIRLINES, SOUTHWEST, JETBLUE, ALASKA AIR, FRONTIER, SPIRIT | Airfare on a trip primarily for business; split off personal days | 24a |
-| MARRIOTT, HILTON, HYATT, IHG, BEST WESTERN, HOLIDAY INN | Business lodging; business days only | 24a |
-| AIRBNB (as a guest) | Business lodging; hosting income is a rental, see refusals | 24a |
-| HERTZ, ENTERPRISE, NATIONAL, AVIS, BUDGET | Rental car while travelling | 24a |
-| UBER, LYFT out of town | Ground transport while travelling; local rides are line 9 or commuting | 24a |
-| AMTRAK | Train fare while travelling | 24a |
-
-**Vehicle**
-
-| Pattern | Treatment | Line |
-| --- | --- | --- |
-| SHELL, CHEVRON, BP, EXXON, MOBIL, SUNOCO, MARATHON, SPEEDWAY, WAWA | Fuel: only with the actual-cost method and a documented business share; included in the mileage rate otherwise | 9 |
-| JIFFY LUBE, VALVOLINE, MIDAS, PEP BOYS, AUTOZONE, O'REILLY, CARWASH | Repairs and parts: same rule as fuel | 9 |
-| PARKING, PARKWHIZ, SPOTHERO | Business parking, deductible on top of the mileage rate; commuting parking is not | 9 |
-| TOLL, EZPASS, SUNPASS, IPASS | Business tolls, deductible on top of the mileage rate; commuting tolls are not | 9 |
-| AUTO LOAN, car finance company | Interest only, business share | 16b |
-
-**Professional services**
-
-| Pattern | Treatment | Line |
-| --- | --- | --- |
-| CPA, ACCOUNTING, TAX PREPARATION, ENROLLED AGENT | Business return and books; personal return prep is not deductible; allocate a combined bill | 17 |
-| ATTORNEY, LAW OFFICE, LEGAL SERVICES, ESQ | Business legal matters only | 17 |
-| BOOKKEEPER, BOOKKEEPING SERVICE | Bookkeeping | 17 |
-| CONSULTANT, CONSULTING | Advice line 17, operational work line 11; default 17 | 17 |
-| LEGALZOOM, INCFILE, NORTHWEST REGISTERED AGENT | Formation and registered agent | 17 |
-
-**Contractors**
-
-| Pattern | Treatment | Line |
-| --- | --- | --- |
-| FIVERR, UPWORK, TOPTAL | Platform contractor payments; the platform reports, so usually no 1099-NEC from the client | 11 |
-| Individuals paid for services | Contract labor; flag for a 1099-NEC if paid USD 2,000 or more in 2026 by non-card, non-platform means | 11 |
-
-Payments by card or through a payment settlement entity are reported on Form 1099-K by the processor and are left off Form 1099-NEC. Zelle, ACH, wire, check, cash and personal Venmo are not; the business issues the 1099-NEC. Details: `us-1099-nec-issuance`. Source: [26 U.S.C. 6050W](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartB-sec6050W.htm).
-
-**Government**
-
-| Pattern | Treatment | Line |
-| --- | --- | --- |
-| IRS, UNITED STATES TREASURY, EFTPS, US TREASURY, USATAXPYMT | Federal income, self-employment and estimated tax: exclude | none |
-| FTB, FRANCHISE TAX BOARD, STATE TAX PAYMENT, STATE ESTIMATED TAX | State income tax: exclude (Schedule A, see `us-federal-income-tax-return-1040` for the cap) | none |
-| EDD, EMPLOYMENT DEVELOPMENT, state unemployment | Employer unemployment tax line 23; employee withholding passed through: exclude | 23 or none |
-| BUSINESS LICENSE, CITY LICENSE, COUNTY LICENSE | Licences and permits | 23 |
-| SECRETARY OF STATE, SOS FILING | LLC annual fee, registration | 23 |
-| SALES TAX REMITTANCE | Exclude if sales tax was kept out of line 1; line 23 if it was included in line 1 | 23 or none |
-
-**Personal (exclude)**
-
-| Pattern | Treatment |
+| Evidence identifies | Proposed category |
 | --- | --- |
-| NETFLIX, HULU, DISNEY+, HBO MAX, PARAMOUNT+ | Personal streaming |
-| SPOTIFY, APPLE MUSIC, PANDORA | Personal music (background music at business premises, documented, could be 27b) |
-| GYM, PLANET FITNESS, EQUINOX, LA FITNESS, ORANGETHEORY | Personal fitness |
-| GROCERY, WHOLE FOODS, TRADER JOE, COSTCO | Personal groceries |
-| TARGET, WALMART | Personal unless the receipt shows business supplies |
-| AMAZON (unspecified) | Step 4, default personal |
-| CLOTHING, NORDSTROM, ZARA, H&M, GAP | Personal unless a uniform or protective gear unsuitable for everyday wear |
-| MORTGAGE, RENT (home) | Personal; any home office goes through line 30 |
-| Home utilities | Personal; any home office goes through line 30 |
-| MEDICAL, PHARMACY, CVS, WALGREENS | Personal medical |
-| CHARITABLE, DONATION, TITHE | Schedule A, not Schedule C (a sponsorship with advertising value can be line 8) |
-| VENMO, ZELLE, CASH APP (personal transfers) | Personal transfers |
-| CHILD CARE, DAYCARE, TUITION | Personal (a dependent care credit may apply) |
+| Bank service or merchant processing fee | Part V, line 27b |
+| Recurring business software, cloud or accounting subscription | Part V, line 27b |
+| Advertising or email marketing service | Line 8 |
+| Office or coworking rent for the current period | Line 20b |
+| Vehicle/equipment lease | Line 20a; vehicle method review first |
+| Business communication costs | Line 25; allocation/phone-line review first |
+| Business insurance | Line 15; identify insured risk and beneficiary |
+| Legal, accounting or professional service | Line 17; identify start-up/capital costs separately |
+| Established nonemployee service | Line 11; worker status and reporting reviewed separately |
+| Office/admin consumables or work supplies | Line 18 or 22 according to use; inventory separately |
+| Payroll-provider debit | Split from payroll reports; do not infer wages, employer taxes or fees from the debit alone |
+| Government payment | Identify the actual tax/form before choosing a line |
 
-### Step 4: rules for clear data
+Separate the business and personal parts of mixed costs. Hold unknown portions without a deduction until supported. This applies to subscriptions, retail purchases, phone/internet, vehicles and insurance; a brand name cannot establish the percentage. Personal living and family expenses generally are not deductible. See [Publication 334](https://www.irs.gov/publications/p334) and [26 U.S.C. 262](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec262.htm).
 
-1. **Revenue (line 1).** All business receipts, cash method unless accrual applies: client payments, cash and barter, tips. Gross up processor deposits. Reconcile Forms 1099-NEC and 1099-K to the books and report each taxable receipt once; their combined total is not a minimum revenue amount. Resolve duplicate, incorrect and nontaxable entries and explain differences. The IRS says "Just because a payment is reported on Form 1099-K doesn't mean it's taxable" ([IRS Form 1099-K guidance](https://www.irs.gov/businesses/what-to-do-with-form-1099-k), correction source read 22 November 2026). Source for the line: [Schedule C (Form 1040) 2026](https://www.irs.gov/pub/irs-pdf/f1040sc.pdf).
-2. **Capital or expense.** First determine whether the cost is currently deductible or must be capitalized under the applicable rules. Exceeding the de minimis ceiling does not by itself require capitalization: [Notice 2015-82](https://www.irs.gov/pub/irs-drop/n-15-82.pdf) says taxpayers may deduct "otherwise deductible repair or maintenance costs, regardless of amount" (correction source read 22 November 2026). For qualifying tangible property at or under the applicable ceiling, confirm the book-expensing policy in place at the start of the year, consistent book treatment and a timely annual election; an AFS requires written procedures. See the [IRS tangible-property guidance](https://www.irs.gov/businesses/small-businesses-self-employed/tangible-property-final-regulations). Capitalized depreciable property goes to Form 4562 (line 13), as appropriate. For bonus depreciation, confirm the legal acquisition and placed-in-service dates, including any written binding contract; an order date alone does not establish a binding contract. Take the rate from `us-section-179-and-bonus-depreciation`; see Public Law 119-21 section 70301(c)(4). Section 179 is income-limited; bonus is not. Record eligible options and unresolved facts for the reviewer.
-3. **Home office.** Regular and exclusive use, and principal place of business or a place to meet clients or a separate structure. No measurements, no deduction. The method and the figures are in `us-schedule-c-and-se-computation`.
-4. **Vehicle (line 9).** Standard mileage: business miles in each half of 2026 times that half's rate, plus business parking and tolls. Actual costs: fuel, repairs, insurance, registration, lease and depreciation times the business-use share, with the passenger car caps. A vehicle used with actual costs and MACRS depreciation in its first business year cannot switch to the standard rate; one that started on the standard rate can switch to actual costs (straight-line depreciation). Section 274(d) requires "adequate records or by sufficient evidence corroborating the taxpayer's own statement" ([current section 274](https://uscode.house.gov/us/usc/t26/s274/), correction source read 22 November 2026). A timely log is recommended, but its absence alone does not establish a nil deduction: assess the available records and corroboration for each required element. Do not estimate unsupported miles; hold an unsubstantiated deduction at zero pending sufficient evidence. See [Publication 463, Recordkeeping](https://www.irs.gov/publications/p463). Commuting is never deductible, except trips from a home office that is the principal place of business.
-5. **Meals (line 24b).** 50%, with the amount, date, place, business purpose and the business relationship of those present. Entertainment 0%.
-6. **Travel (line 24a).** Away from the tax home overnight, primarily for business: fares, lodging, car hire, local transport, tips, laundry, and meals at 50%. Mixed domestic trips: transport in full if primarily business, lodging and meals for business days only. Foreign trips over 7 days with 25% or more personal days need an allocation. Source: [IRS Publication 463](https://www.irs.gov/pub/irs-pdf/p463.pdf).
-7. **Contract labor (line 11).** Payments for services by non-employees; flag the Form 1099-NEC duty at USD 2,000 for 2026 payments.
-8. **Insurance (line 15).** Liability, professional, workers' compensation, business property and cyber cover. Not personal auto, home, health or life.
-9. **Taxes and licenses (line 23).** Business licences, permits, business taxes that are not income taxes, the employer share of FICA and FUTA, property tax on business assets.
-10. **Interest (lines 16a to 16c).** Business mortgage 16a; business share of vehicle loan interest 16b; other business interest 16c. The personal car loan interest deduction on Schedule 1-A is not Schedule C; interest already deducted on Schedule C cannot be claimed there.
-11. **Rent (lines 20a, 20b).** Vehicle and equipment leases 20a; office, coworking and other property 20b.
-12. **Advertising (line 8).** Online ads, print, business cards, website build and hosting, domains, SEO, email marketing, trade show stands, promotional items. Political spending and lobbying are not deductible (section 162(e)); client gifts above USD 25 per recipient per year are not deductible.
-13. **Supplies and office (lines 18, 22).** Office and admin items line 18; materials used in delivering the work line 22.
-14. **Inventory.** With average gross receipts at or under the 2026 gross receipts test amount, the small business rule lets inventory be treated as non-incidental materials and supplies, deducted when used or sold.
-15. **Hobby risk.** A net loss is flagged. The presumption of profit motive is met with profit in 3 of 5 years (section 183(d)).
-16. **Never on Schedule C:** federal and state income tax payments; owner draws; owner's health insurance (Schedule 1) and retirement contributions (Schedule 1); any personal expense (section 262); charitable gifts; commuting; political contributions; government fines and penalties (section 162(f)); everyday clothing; personal loan and card payments. Sources: [26 U.S.C. 162](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm), [26 U.S.C. 262](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec262.htm), [26 U.S.C. 183](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec183.htm).
+### Step 4: meals, vehicles and assets
 
-### Step 5: what to ask when the data is not enough
+**Meals.** Ordinary qualifying business meals are generally limited to 50%. Establish a business purpose, taxpayer/employee presence, and that the meal is not lavish or extravagant; retain the amount, date, place and relevant business relationship. A restaurant descriptor alone is insufficient. Qualifying solo business-travel meals do not require a client companion. For employee meals, entertainment, gifts and other exceptions: Check this point with one of our partner accountants. See [26 U.S.C. 274(k), (n)](https://uscode.house.gov/us/usc/t26/s274/) and [Publication 463](https://www.irs.gov/publications/p463).
 
-| Ambiguity | Why the statement is not enough | Default | Question |
-| --- | --- | --- | --- |
-| Fuel and vehicle charges | Vehicle, method, business share and log are unknown | 0% business use | "Which vehicle, standard mileage or actual costs, business miles in each half of 2026, and do you keep a log?" |
-| Home utilities, insurance, mortgage | Office existence, size and exclusive use are unknown | 0% | "Is there an area used regularly and only for the business? Its square feet, and the home's?" |
-| Restaurants and food delivery | Business purpose and attendees are unknown | Personal | "For each meal: who was there, and what was the business purpose?" |
-| Shared phone or home internet | Business share is unknown | 0% | "Is this a dedicated business line, or shared? If shared, what share is business?" |
-| AMAZON, AMZN, AMZN MKTP | The product is rarely shown | Personal | "Please check the order history and tell me which orders were business items and what they are used for." |
-| ATM and cash withdrawals | Use is unknown | Owner draw | "What was the cash spent on? Any receipts?" |
-| Mixed subscriptions (Adobe, Microsoft, Apple, Google) | Business and personal use mix | Hold unallocated; 0% deduction until the business share is established, regardless of brand | "What share is business, and what records support that allocation?" |
-| Flight and hotel spanning a weekend | Business and personal days are unknown | Exclude the trip | "How many days were business, how many personal, and what was the purpose?" |
+**Evidence.** For travel, gifts and listed property, section 274(d) permits adequate records **or sufficient evidence corroborating the taxpayer's own statement**. A missing contemporaneous log does not automatically deny the deduction; assess the required elements and supporting evidence. Hold unsupported amounts; do not estimate business miles. See [26 U.S.C. 274(d)](https://uscode.house.gov/us/usc/t26/s274/).
+
+**Vehicle methods.** Confirm eligibility before comparing methods. For an owned car, standard mileage must be chosen in its first business-use year. It is unavailable for five or more cars used simultaneously, prior accelerated/MACRS depreciation, section 179 or bonus depreciation; leased-car continuity rules also apply. A later switch from standard mileage to actual costs requires straight-line depreciation over the remaining estimated useful life, subject to limits. See [Publication 463, Standard Mileage Rate](https://www.irs.gov/publications/p463).
+
+| Business miles in 2026 | Rate | Source |
+| --- | --- | --- |
+| 1 January–30 June | 72.5 cents/mile | [IRS mileage-rate table](https://www.irs.gov/tax-professionals/standard-mileage-rates) |
+| 1 July–31 December | 76 cents/mile | [IRS mileage-rate table](https://www.irs.gov/tax-professionals/standard-mileage-rates) |
+
+For an owned car, choose standard mileage in its first business-use year by the return due date including extensions to preserve that option. A later switch to actual costs requires straight-line depreciation over remaining estimated useful life, subject to depreciation limits. Standard mileage is unavailable for five or more cars used simultaneously, prior non-straight-line/MACRS depreciation, section 179 or bonus depreciation, or a leased car with post-1997 actual expenses. A leased car using mileage must continue it throughout the lease period. See [Publication 463, Standard Mileage Rate](https://www.irs.gov/publications/p463).
+
+Under standard mileage, do not add fuel, repairs, insurance, registration, lease payments or depreciation again. Business parking and tolls can be additional; commuting parking/tolls are excluded. Under actual costs, allocate established vehicle costs to business use and obtain the permitted depreciation separately. See [Publication 463](https://www.irs.gov/publications/p463).
+
+**Assets.** A safe-harbor ceiling is not a mandatory capitalization threshold. Identify the property, business share, cost and actual acquisition/service dates; do not invent an earlier acquisition date or a recovery period. For the USD 2,400 no-AFS example, the USD 3,499 MacBook, an asset ordered before 20 January 2025, and a vehicle over 6,000 pounds: Check this point with one of our partner accountants. Supply the records for capitalization, de minimis eligibility/election, section 179, bonus and vehicle-cap review. The [IRS tangible-property guidance](https://www.irs.gov/businesses/small-businesses-self-employed/tangible-property-final-regulations) expressly preserves repair deductions outside the safe harbor.
+
+### Step 4: meals and evidence
+
+Ordinary otherwise-deductible business meals are generally limited to 50%. Establish business purpose; the owner or an employee must be present and the cost must not be lavish or extravagant. Record amount, date, place, purpose and attendees/relationship where relevant. Employer-food and other special exceptions are referred below. See [26 U.S.C. 274(k) and (n)](https://uscode.house.gov/us/usc/t26/s274/).
+
+For section 274(d) travel, gifts and listed property (excluding qualified nonpersonal-use vehicles), adequate records or sufficient evidence corroborating the taxpayer's statement must establish the statutory elements. A contemporaneous log is useful, but its absence alone does not automatically deny a deduction. Hold unsupported amounts without estimating miles. See [26 U.S.C. 274(d)](https://uscode.house.gov/us/usc/t26/s274/).
 
 ### Step 6: the working paper
 
-**Sheet "Transactions":** A date; B counterparty as on the statement; C description; D amount (debits negative); E Schedule C line; F gross amount; G deductible amount (after the 50% meals limit or business-use share); H section 274(d) substantiation (yes, no, not needed); I default applied (Y/N); J question for the client; K reviewer attention reason; L notes.
+Keep transaction date, original counterparty/description, signed bank amount, source reference, proposed line, supported business amount, hold status, evidence, question and reviewer reason. Keep deductions as positive amounts; use negative amounts for same-year reversals of those deductions. Retain separate fields for gross receipts and customer returns.
 
-**Sheet "Schedule C Summary":** one row per line, summing column G by line with `=SUMIFS(Transactions!G:G, Transactions!E:E, "<line>")`, for lines 1, 2, 4, 6, 8 to 15, 16a, 16b, 16c, 17, 18, 19, 20a, 20b, 21 to 23, 24a, 24b, 25, 26, 27a and 27b. Include line 19, "Pension and profit-sharing plans", so eligible employee-plan costs enter the line 28 total ([2026 Schedule C](https://www.irs.gov/pub/irs-pdf/f1040sc.pdf)); the owner's own retirement contributions stay excluded.
+Sum only supported, released amounts by the explicit line tag. Include line 19. Follow the form: line 7 = line 1 − line 2 − line 4 + line 6; line 28 = expenses on lines 8 through 27b; line 29 = line 7 − line 28; line 31 = line 29 − line 30. Obtain the home-office amount separately. See [2026 Schedule C](https://www.irs.gov/pub/irs-pdf/f1040sc.pdf).
 
-**Sheet "Return Form":** line 7 = (line 1 − line 2 − line 4) + line 6; line 28 = lines 8 to 27b; line 29 = line 7 − line 28; line 30 from `us-schedule-c-and-se-computation`; line 31 = line 29 − line 30. A loss is flagged for hobby and at-risk review.
-
-**Sheet "Asset Register":** description, date acquired, date placed in service, cost, recovery period, convention, method, section 179 amount, bonus rate, current-year depreciation, acquisition-date flag, notes.
-
-**Format:** blue for values from the statement, black for formulas, green for cross-sheet references, yellow fill for rows where a default was applied. Recalculate before delivery (for example `soffice --headless --convert-to xlsx --outdir <dir> <file>.xlsx`), reopen, and fix any formula error before presenting it.
-
-## Boundary and exception table
-
-| Situation | Treatment |
-| --- | --- |
-| Processor payout on the statement | Exclude the payout; line 1 is gross, fee line 27b |
-| Software, bank or merchant fees | Line 27b (Part V), never line 27a |
-| Vehicle loan interest | Business share on line 16b (new line on the 2026 form); other interest 16c |
-| Solo coffee while working at home | Personal |
-| Meal while travelling overnight on business | 50%, line 24b |
-| Asset ordered before 20 January 2025, placed in service in 2026 | The old phase-down bonus rate applies; see `us-section-179-and-bonus-depreciation` |
-| Item of USD 2,400 with no applicable financial statement | Can be expensed under the de minimis safe harbor if the book-policy, book-treatment, timely-election and other eligibility conditions are met |
-| Vehicle over 6,000 pounds | Passenger car caps do not apply; section 179 SUV limit does (sibling skill) |
-| Contractor paid USD 1,900 by Zelle in 2026 | Under the USD 2,000 threshold: no 1099-NEC |
-| Contractor paid USD 2,500 by Zelle in 2026 | 1099-NEC due from the business |
-| Contractor paid by card or through a payment platform | Reported on Form 1099-K by the processor; no 1099-NEC |
-| Sales tax included in line 1 | Remittance on line 23 |
-| Health insurance paid from the business account | Exclude from Schedule C; Schedule 1 |
-| Personal card paid from the business account | Owner draw |
-
-### Defaults when a fact is missing
-
-| Missing fact | Default |
-| --- | --- |
-| Business share of vehicle, home office, phone or internet | 0% |
-| Business or personal | Personal |
-| Business purpose of a meal | Personal |
-| Business or personal travel day | Personal |
-| Acquisition date of an asset near 20 January 2025 | The earlier date (lower bonus rate) |
-| Cost basis of an asset | No depreciation |
-| Recovery period | The longest plausible |
-| Employee or contractor | Contractor (line 11) with a classification flag |
-| Payee's entity type | Assume a 1099-NEC is needed |
-| Amazon purchase with no description | Personal |
-| Cash withdrawal | Owner draw |
-| Processor fee: per transaction or subscription | Merchant fee, line 27b |
-
-### Red flags for the reviewer
-
-| Flag | Level |
-| --- | --- |
-| Single transaction of USD 5,000 or more | High |
-| Vehicle business use claimed without a mileage log | High |
-| Meals above 20% of gross receipts | High |
-| Contractor paid USD 2,000 or more in 2026 without a W-9 or 1099 status | Medium |
-| Home office claimed without measurements | Medium |
-| More than 5 defaults applied across the return | Medium |
-| Schedule C net loss (hobby and at-risk questions) | Low |
-| Unreconciled differences between receipts and Forms 1099-NEC/1099-K, including possible duplicate reporting | Medium |
+Keep an asset register with documented cost, acquisition/service dates and unresolved elections. Recalculate the working paper, check signs and reconciliation, and inspect formula errors before delivery. Present unresolved items separately from totals.
 
 ## Worked cases
 
-Six classification lines from a freelance developer's 2026 Chase Business Checking statement:
+These are fictional inputs. Merchant labels are not evidence of tax treatment. All deductions below assume established ordinary business purpose, current deductibility and sufficient records.
 
-| Date | Counterparty | USD | Line | Default? | Question |
-| --- | --- | --- | --- | --- | --- |
-| 01/15/2026 | STRIPE TRANSFER | +4,827.50 | excluded payout | Y | Gross sales and fees from the Stripe dashboard |
-| 02/01/2026 | GITHUB INC | −19.00 | 27b software | N | none |
-| 03/12/2026 | THE CAPITAL GRILLE | −187.42 | 24b at 50%, or personal | Y | Who was present, and the business purpose? |
-| 01/22/2026 | APPLE STORE (MacBook) | −3,499.00 | Asset review; 13/Form 4562 if capitalized, or eligible current expensing | Y | Business share, AFS and expensing policy/election, acquisition and service dates, and eligible section 179 or bonus? |
-| 04/08/2026 | SHELL OIL | −62.18 | 9 at 0%, or excluded | Y | Vehicle, method, business share, log? |
-| 06/15/2026 | IRS USATAXPYMT | −5,000.00 | excluded, personal tax | N | none |
+| Date | Counterparty | USD | Working-paper action |
+| --- | --- | --- | --- |
+| 01/15/2026 | STRIPE TRANSFER | +4,827.50 | Hold revenue reconciliation pending gross sales/fees |
+| 02/01/2026 | GITHUB INC | −19.00 | Line 27b only if confirmed recurring business subscription |
+| 03/12/2026 | THE CAPITAL GRILLE | −187.42 | Hold until meal conditions and evidence are established |
+| 01/22/2026 | APPLE STORE (MacBook) | −3,499.00 | Asset/expensing review; no automatic line 13 deduction |
+| 04/08/2026 | SHELL OIL | −62.18 | Hold pending vehicle, method, use and evidence |
+| 06/15/2026 | IRS USATAXPYMT | −5,000.00 | Identify tax/form first; exclude if confirmed personal federal income tax |
 
-**Case 1: grossing up a Stripe payout, and a client meal.** The Stripe dashboard shows January sales of USD 5,000 and fees of USD 172.50, paid out as USD 4,827.50. The client confirms the Capital Grille dinner was with a prospective client, to discuss a contract.
+**Case 1: processor gross-up and a client meal.** January sales are USD 5,000, processing fees USD 172.50 and the payout USD 4,827.50, with no refunds, sales tax or timing differences. The business owner attended the USD 187.42 dinner with a prospective client to discuss a contract; it was not lavish or extravagant and sufficient records exist. Assume the processing fees are ordinary current business expenses.
 
-Line 1 gets USD 5,000 (not the USD 4,827.50 deposit), and line 27b gets the USD 172.50 fee; profit is unchanged, but line 1 now matches the Form 1099-K. Line 24b gets 50% of USD 187.42 = USD 93.71.
+Line 1 is USD 5,000 and line 27b fees are USD 172.50. Their net equals the USD 4,827.50 payout; this does not guarantee agreement with every Form 1099-K. The ordinary 50% meal deduction is USD 93.71.
 
 ```oa-check
 name: Processor gross-up and meals limit (2026)
@@ -407,9 +165,9 @@ expected:
   line_24b: 93.71
 ```
 
-**Case 2, a decision: standard mileage or actual costs for a car first used in 2026?** The car was driven 18,000 miles in 2026, of which 12,500 were business miles with a log: 6,000 from 1 January to 30 June and 6,500 from 1 July to 31 December. Fuel, insurance, repairs and registration cost USD 6,500, and first-year depreciation (inside the passenger car cap) would be USD 5,000.
+**Case 2: standard mileage or actual costs.** An owned car first used in business in 2026 has 18,000 total miles, 12,500 supported business miles: 6,000 in January–June and 6,500 in July–December. Running costs (fuel, insurance, repairs and registration) are USD 6,500. USD 5,000 is the stipulated depreciation on a wholly business-use basis, within the applicable cap before the example's business-use allocation; it is an input, not a depreciation calculation. Assume this single car is eligible for either method, no section 179/bonus or other disqualifying depreciation has been claimed, and the choice is timely.
 
-Standard: 6,000 x 72.5 cents + 6,500 x 76 cents = USD 4,350 + USD 4,940 = USD 9,290. Actual: (USD 6,500 + USD 5,000) x 12,500 / 18,000 = USD 7,986.11. Standard mileage gives USD 1,303.89 more, and parking and tolls are added under either method. Choosing the standard rate in the first year also keeps the option to move to actual costs later; choosing actual costs with accelerated depreciation now would lock the car out of the standard rate. Recommend standard mileage.
+Standard mileage: 6,000 × USD 0.725 + 6,500 × USD 0.76 = USD 9,290. Actual: (USD 6,500 + USD 5,000) × 12,500 / 18,000 = USD 7,986.11. Standard mileage is USD 1,303.89 higher on these inputs. Add supported business parking/tolls separately under either method without duplication. Standard mileage is preferable on the stated facts; a later change to actual costs has the depreciation restriction stated above.
 
 ```oa-check
 name: Standard mileage against actual costs (2026)
@@ -433,60 +191,50 @@ expected:
 
 ## When to refuse or refer
 
-If one of these triggers, stop and give the message.
+### Step 5: holds and referrals
 
-| Code | Trigger | Message |
-| --- | --- | --- |
-| R-US-PARTNERSHIP | Partners, a partnership agreement, Form 1065, K-1s, an LLC with more than one member | "This covers sole proprietors and single-member LLCs only. A partnership files Form 1065; see `us-form-1065-partnership` or a CPA or EA." |
-| R-US-RENTAL | Rental income, landlord activity, Schedule E, rental properties, Airbnb hosting | "Rental income normally goes on Schedule E, which this skill does not cover. Please use a CPA or EA." |
-| R-US-CRYPTO | Trading, DeFi, NFTs, mining, staking, token swaps | "Digital assets need basis tracking and Form 8949; see `us-capital-gains` or a specialist." |
-| R-US-EMPLOYEES | W-2 employees, payroll, Forms 941 or 940 | "Wages (line 26) and employer taxes (line 23) are classified here, but payroll filings are not; see `us-form-941-940-payroll`." |
-| R-US-SCORP | S corporation election, Form 2553 or 1120-S, officer salary | "An S corporation files Form 1120-S, not Schedule C; see `us-s-corp-election-decision` or `us-form-1120-s-s-corporation-return`." |
-| R-US-CCORP | C corporation, Form 1120, dividends from the owner's corporation | "A C corporation files Form 1120; see `us-form-1120-c-corp`." |
-| R-US-FARMING | Farming, crops, livestock, Schedule F | "Farm income goes on Schedule F. Please use a CPA or EA." |
-| R-US-DEPLETION | Oil and gas royalties, mineral rights, timber | "Depletion under sections 611 to 613 is outside this skill." |
-| R-US-FOREIGN-INCOME | Foreign accounts, FBAR, Form 8938, Form 2555 | "Foreign income and account reporting is outside this skill; see `us-fbar-and-fatca-8938`." |
-| R-US-ESTATE-TRUST | Estate, trust, Form 1041 | "Fiduciary returns are outside this skill. Please use a CPA or attorney." |
+A hold is a working-paper instruction, not a conclusion that an expense is legally personal or permanently disallowed. Record the missing evidence and question beside the transaction. Do not carry held deductions or unresolved income differences into a filing-ready summary.
 
-## Filing and payment
+For each topic below: **Check this point with one of our partner accountants.**
 
-The working paper feeds Schedule C, which is attached to the 2026 Form 1040 due **15 April 2027** (15 October 2027 with Form 4868; an extension does not extend payment). The 2026 Forms 1099-NEC the business must issue are due to contractors and the IRS by 1 February 2027 (31 January falls on a Sunday); see `us-1099-nec-issuance`. Hand the Schedule C summary, the asset register and the reviewer note to `us-schedule-c-and-se-computation`.
+| Topic to resolve | Records to supply |
+| --- | --- |
+| Contractor reporting, including USD 1,900 or USD 2,500 paid by Zelle, card/platform payments, and amounts below reporting thresholds | W-9, payee tax status, service, payment route, annual total, withholding |
+| Home office, including inventory-storage/daycare situations | Use, area, activity and cost records |
+| Travel, mixed domestic/foreign trips, local rides and temporary-worksite/commuting questions | Tax home, itinerary, purpose, days, receipts and work locations |
+| Employee meals, snacks, entertainment and gift exceptions | Recipients, purpose, benefit/payroll treatment and invoices |
+| Phone-line exceptions, life insurance, website/start-up costs and charitable/political spending | Itemized charges, purpose, beneficiary, contract and dates |
+| Inventory methods, hobby/loss limits and government fines/settlements | Prior methods/returns, stock, activity history and legal documents |
+| Sales taxes, income taxes, interest income, owner health/retirement and personal car-loan relief | Actual tax imposed, loan/account and benefit records |
+| Prior-year refunds, recoveries, reversals or chargebacks | Original transaction, tax year and prior treatment |
+| Payroll filings, worker status, partnerships/corporations, rentals, farming, crypto, depletion, foreign accounts and estates/trusts | Entity/activity records and relevant returns; stop the affected work |
 
-## Completion checklist
+Do not infer employee/contractor status or a Form 1099 obligation from a payment descriptor. Route unresolved cases rather than applying a contractor default.
 
-- Every transaction has a line or an exclusion reason.
-- Processor deposits grossed up; receipts reconciled to Forms 1099 without double-counting, with differences explained.
-- Bank, software and merchant fees on line 27b; line 27a used only for Form 7205.
-- Interest split between 16a, 16b and 16c.
-- Meals at 50% with substantiation; entertainment excluded.
-- Mileage split between the two 2026 rates, with a log.
-- Potential capital assets reviewed; eligible current expensing or capitalization documented, with acquisition and service dates.
-- Contractors paid USD 2,000 or more by non-card means flagged for a 1099-NEC.
-- Owner's health insurance, retirement, income taxes and draws excluded.
-- Defaults and questions listed for the client; reviewer note written.
+## Filing and completion
+
+Employee-plan contributions belong on line 19; the sole proprietor’s own retirement contributions are considered separately, outside Schedule C. See [Publication 334, Pension Plans](https://www.irs.gov/publications/p334).
+
+For an ordinary calendar-year domestic individual filer, the regular 2026 Form 1040 filing/payment deadline is 15 April 2027; a timely filing-extension request ordinarily permits filing by 15 October 2027 and does not extend payment. Special overseas, disaster and other relief: Check this point with one of our partner accountants. See [IRS individual filing](https://www.irs.gov/individual-tax-filing) and [filing extensions](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return).
+
+Where a 2026 Form 1099-NEC is required, the ordinary IRS/payee deadline is 1 February 2027: 31 January is Sunday and the instructions move it to the next business day. This does not determine which payments require the form. See [IRS instructions](https://www.irs.gov/instructions/i1099mec).
+
+Deliver the reconciled Schedule C working paper, asset register and holds list for return preparation. Every imported transaction needs a proposed line or exclusion/hold reason; reconcile accounts and Forms 1099, confirm evidence and remove duplicate deductions. Do not call incomplete records filing-ready.
 
 ## Sources
 
-| Source | URL | Read on |
-| --- | --- | --- |
-| Schedule C (Form 1040) 2026. Read for lines 1 to 31, the new 16a, 16b (vehicle loan) and 16c split, line 27a (Form 7205) and Part V to line 48 and 27b. | https://www.irs.gov/pub/irs-pdf/f1040sc.pdf | 2026-11-13 |
-| IRS Notice 2026-10. Read for the 72.5 cents business rate from 1 January 2026 (library quote). | https://www.irs.gov/pub/irs-drop/n-26-10.pdf | 2026-11-13 |
-| IRS standard mileage rates page. Read for the 76 cents business rate from 1 July 2026 (library quote). | https://www.irs.gov/tax-professionals/standard-mileage-rates | 2026-11-13 |
-| Rev. Proc. 2025-32. Read for the $2,000 information return threshold for payments after 31 December 2025 and the $32,000,000 gross receipts test (library quotes). | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
-| Public Law 119-21. Read for section 70432, the Form 1099-K thresholds of more than $20,000 and more than 200 transactions (library quote). | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
-| Treas. Reg. 1.263(a)-1 (eCFR). Read for (f), the de minimis safe harbor: $5,000 with an applicable financial statement, $500 in the regulation text without one. | https://www.ecfr.gov/current/title-26/section-1.263(a)-1 | 2026-11-13 |
-| 26 U.S.C. 274 (govinfo). Read for (a) entertainment, (b) the $25 gift limit, (d) substantiation and (n) the 50% meals limit. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec274.htm | 2026-11-13 |
-| 26 U.S.C. 280F (govinfo). Read for (d)(5)(A), the 6,000 pound line. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm | 2026-11-13 |
-| 26 U.S.C. 6050W (govinfo). Read for payment settlement entities and card transactions reported on Form 1099-K. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartB-sec6050W.htm | 2026-11-13 |
-| 26 U.S.C. 162, 183 and 262 (govinfo). Read for ordinary and necessary expenses, (e) lobbying, (f) fines, the hobby presumption and personal expenses. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm | 2026-11-13 |
-| IRS Notice 2015-82. Read for the increase of the no-AFS de minimis amount from $500 to $2,500. | https://www.irs.gov/pub/irs-drop/n-15-82.pdf | 2026-11-13 |
-| IRS Publication 463 (for 2025 returns, the latest on the site). Read for travel, gifts and car expenses, including foreign trip allocation and the log. | https://www.irs.gov/pub/irs-pdf/p463.pdf | 2026-11-13 |
-| IRS single-member LLC guidance. Read for classification depending on members and corporate elections; a bank label is insufficient. | https://www.irs.gov/businesses/small-businesses-self-employed/single-member-limited-liability-companies | 2026-11-22 |
-| Current 26 U.S.C. 274, including (d), (n), (o) and the Public Law 119-21 exceptions. | https://uscode.house.gov/us/usc/t26/s274/ | 2026-11-22 |
-| IRS Publication 15-B (2026), employer meals: deduction limits differ from the employee wage exclusion. | https://www.irs.gov/publications/p15b | 2026-11-22 |
-| IRS Form 1099-K guidance; gross-payment reconciliation, incorrect and nontaxable entries. | https://www.irs.gov/businesses/what-to-do-with-form-1099-k | 2026-11-22 |
-| IRS tangible-property guidance; de minimis eligibility, book policy, election and expenses outside the safe harbor. | https://www.irs.gov/businesses/small-businesses-self-employed/tangible-property-final-regulations | 2026-11-22 |
-| Public Law 119-21, section 70301(c)(4), written binding contracts and acquisition dates; section 70305, limited employer-meal exceptions. | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-22 |
-| IRS Instructions for Forms 1099-MISC and 1099-NEC, continuous use for 2026; January 31 filing and recipient deadline, moved to the next business day when it falls on a weekend. | https://www.irs.gov/instructions/i1099mec | 2026-11-22 |
+The 2026 form and IRS mileage table establish current form lines and rates. Existing source reads from 22 November 2026 were reused only for the applicable retained rules; exact passages were recovered/read on 26 November 2026. Publication 463's 2025 edition supports structural method and evidence rules, not the 2026 rates. No inaccessible eCFR page is treated as a completed regulation read.
 
-Not yet confirmed: the 2026 Instructions for Schedule C were not published when originally read, so line contents come from the 2026 form itself; Publication 463 read is the latest edition on the site, not a 2026 edition. The Form 1099-NEC date check is resolved: the IRS continuous-use instructions for 2026 state January 31 and the next-business-day rule; January 31, 2027 is Sunday, so the deadline is February 1, 2027.
+- [2026 Schedule C](https://www.irs.gov/pub/irs-pdf/f1040sc.pdf). Read for form lines 1–31 and Part V; read 2026-11-26.
+- [IRS single-member LLC guidance](https://www.irs.gov/businesses/small-businesses-self-employed/single-member-limited-liability-companies). Read for ownership and corporate-election classification; read 2026-11-26.
+- [Publication 334: business expenses and records](https://www.irs.gov/publications/p334). Read for chapter 8 business expense allocation, pensions and federal income tax; read 2026-11-26.
+- [IRS Form 1099-K reconciliation](https://www.irs.gov/businesses/what-to-do-with-form-1099-k). Read for gross payments, fees and nontaxable entries; read 2026-11-26.
+- [26 U.S.C. 262: personal expenses](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec262.htm). Read for section 262(a) personal costs; read 2026-11-26.
+- [Current 26 U.S.C. 274: meals and substantiation](https://uscode.house.gov/us/usc/t26/s274/). Read for sections 274(d), (k) and (n); read 2026-11-26.
+- [Publication 463: vehicle methods, travel and evidence](https://www.irs.gov/publications/p463). Read for chapter 4 method choice/disqualifiers, allocation and parking/tolls; read 2026-11-26.
+- [IRS 2026 mileage rates](https://www.irs.gov/tax-professionals/standard-mileage-rates). Read for the two 2026 business-rate periods; read 2026-11-26.
+- [IRS tangible-property guidance](https://www.irs.gov/businesses/small-businesses-self-employed/tangible-property-final-regulations). Read for repair deductions outside the safe harbor; read 2026-11-26.
+- [IRS individual filing](https://www.irs.gov/individual-tax-filing) and [extensions](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return). Read for regular filing and extension/payment deadlines; read 2026-11-26.
+- [IRS Forms 1099-MISC/NEC instructions](https://www.irs.gov/instructions/i1099mec). Read for filing dates and recipient statements; read 2026-11-26.
+
+Not yet confirmed: none in the retained rules. The listed exceptions and incomplete records are referred or held; this working paper does not resolve those questions.
