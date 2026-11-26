@@ -55,7 +55,6 @@ Other Malta topics are open to contributions and review by other Maltese account
 | [mt-global-residence-programme](mt-global-residence-programme.md), [mt-nomad-residence-permit](mt-nomad-residence-permit.md), [mt-permanent-residence-programme](mt-permanent-residence-programme.md) | The individual residence programmes. |
 | [mt-holding-company-participation-exemption](mt-holding-company-participation-exemption.md), [mt-family-office-setup](mt-family-office-setup.md), [mt-foundations-and-trusts](mt-foundations-and-trusts.md), [mt-inheritance-and-succession](mt-inheritance-and-succession.md) | Structures: holding companies, family offices, foundations and trusts, succession. |
 | [mt-freelance-intake](mt-freelance-intake.md) | Router: personal-tax intake and which skill to load. No figures. |
-| [mt-vat3-quarterly-return-malta](mt-vat3-quarterly-return-malta.md) | Legacy VAT3 lookup name; follows malta-vat-return. |
 
 Retired on 14 November 2026 as duplicates: `how-to-account-for-rental-income-in-malta` (into mt-rental-income), `how-to-submit-capital-gain-taxes-in-malta` (into mt-property-transfer-tax-the-sale-immovable), `mt-return-assembly` (identical to mt-freelance-intake).
 
