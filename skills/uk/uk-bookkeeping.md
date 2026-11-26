@@ -1,11 +1,11 @@
 ---
 name: uk-bookkeeping
 description: Use this skill whenever asked about UK bookkeeping for sole traders, micro-entities, or small companies. Trigger on phrases like "chart of accounts", "nominal codes", "bookkeeping", "profit and loss", "balance sheet", "FRS 105", "FRS 102 Section 1A", "Making Tax Digital", "MTD", "MTD ITSA bookkeeping", "April 2026 quarterly", "VAT threshold £90,000", "bank reconciliation", "double-entry", "expense categories", "revenue recognition", "depreciation", "capital allowances", "micro-entity accounts", "small company accounts", "accrual basis", "cash basis", "general ledger", or any question about day-to-day transaction recording, financial statement preparation, or account coding for a UK business.
-version: "2.0"
+version: "2.1"
 type: situation-rules
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
@@ -16,229 +16,148 @@ domain: bookkeeping
 
 # Bookkeeping and record keeping in the UK for sole traders, partnerships and small companies
 
-Figures are for tax year 2026, which in the UK is 6 April 2026 to 5 April 2027 ("2026 to 2027"). Company figures apply to the company's own financial year, and VAT and company size figures apply from a stated date until replaced. Where a figure changed on 6 April 2026, the figure for the 2025 to 2026 returns being filed now (online deadline 31 January 2027) is shown next to it and labelled.
-
 ## Scope
 
-What records a UK business must keep and for how long, cash basis or traditional accounting, the trading and property allowances, simplified expenses, Making Tax Digital for Income Tax (MTD), the VAT records that sit alongside the books, penalties for poor records, and a working chart of accounts mapped to the self-employment return, the VAT return and the company accounts formats.
-
-- **Covered:** sole traders, partnerships (including the nominated partner), individual landlords for the record-keeping and MTD rules, and private limited companies that are micro or small.
-- **Not covered:** LLPs, groups, charities, public companies, trusts and estates, and the tax computations themselves (see the UK income tax, corporation tax, VAT return and payroll Guides).
+Day-to-day records, accounting method, small-income allowances, simplified expenses, MTD and a working chart of accounts. Tax year 2026 means 6 April 2026 to 5 April 2027; earlier-year examples below keep their stated years. Company records follow the company's own financial year. This Guide covers sole traders, ordinary partnerships, individual landlords' records and private small companies; specialist entities and filing decisions go to the referrals below.
 
 ## Ask the client first
 
-- Sole trader, partnership (any company partner?), LLP or limited company? Private or public?
-- Accounting date: the tax year (5 April), 31 March, or another date?
-- Self-employment and property turnover (before expenses) on the 2024 to 2025 and 2025 to 2026 returns? Any partnership share, salary or dividends (these do not count for MTD)?
-- Has HMRC written about Making Tax Digital for Income Tax? Already signed up, volunteering or exempt?
-- Taxable turnover over the last 12 months and expected in the next 30 days? VAT registered, and on which scheme?
-- Cash basis, or has the client opted for traditional accounting?
-- Flat rates or actual costs for the vehicle, working from home or living at the premises? Capital allowances ever claimed on the vehicle?
-- Small side income or small property income that the trading or property allowance might cover? Any income from a connected company, partnership or employer?
-- Equipment or cars bought: when, new or used, and the car's CO2 emissions?
-- Employees (including directors) or subcontractors under the Construction Industry Scheme?
-- Any records lost or destroyed, a late return, or an open HMRC compliance check?
+- Entity and partners: sole trader, partnership, corporate partner, LLP or company? Any group, public-company or charity status?
+- Accounting date, method and any election to use traditional accounting?
+- Self-employment and property income on the 2024-25 and 2025-26 returns, source by source, ownership share and any part-year activity? Existing MTD obligation, HMRC notice or exemption?
+- VAT registration, taxable turnover, location and actual VAT scheme?
+- Vehicle business miles, prior capital allowances/cost claims; home working hours; people living at business premises?
+- All trading/property income, connected payers, allowance elections and actual costs?
+- Equipment purchase dates, new/used status, car emissions; employees/directors, CIS subcontractors and payroll records?
+- Missing records, late returns, enquiries or penalties?
 
 ## The method, step by step
 
-1. **Identify the entity and its record duties.** Sole traders and partners keep business and personal income records for Self Assessment, and the nominated partner also keeps the partnership's records (https://www.gov.uk/self-employed-records). Companies keep company records and accounting records: https://www.gov.uk/running-a-limited-company/company-and-accounting-records
-2. **Fix the record period.** Use the same accounting dates each year. Accounts not matching the tax year mean profit is allocated between periods; with no accounts, record income and expenses per tax year.
-3. **Choose the method.** Unincorporated businesses use the cash basis unless they opt out or are excluded (boundary table); companies and LLPs use traditional (accruals) accounting.
-4. **Test the allowances** for an individual with small trading or property income before setting up expense bookkeeping for it.
-5. **Test MTD for Income Tax** on the return for the tested year. If in, set up compatible software, digital records and the update calendar.
-6. **Test VAT** on a rolling 12 months and the next 30 days. If registered, keep the VAT account and digital records.
-7. **Set up the chart of accounts** (see Chart of accounts and mappings below), mapped to the SA103F boxes or the company accounts format and to the VAT return boxes.
-8. **Record as you go.** Each record carries amount, date and category; keep the supporting documents; reconcile the bank at least monthly. MTD records must exist before each quarterly update is sent.
-9. **Year end.** Apply flat rates or allowances if chosen, add back disallowable items, work out capital allowances, and for a company test its size and prepare micro-entity or small company accounts.
-10. **Retain.** Diary each year's destruction date from the retention table, extended for late returns, enquiries and long-lived assets.
+1. Identify the entity and collect the records below. Keep evidence of amounts and business purpose.
+2. Confirm the accounting method before coding transactions. Reconcile bank and processor balances monthly as a working control; a bank feed alone is not the books.
+3. Compare any eligible small-income allowance or flat rate with actual costs. Keep the decision and supporting logs.
+4. Establish MTD and VAT obligations, software, digital links and deadlines. Do not treat an exemption application as an approved exemption.
+5. Use the chart as a local coding convention; review tax adjustments, assets, return mappings and accounts with the appropriate accountant before filing.
+6. Record the retention date for each year. Preserve records longer where an enquiry, late return, asset or another applicable duty requires it.
 
-### Rates, bands and thresholds
+### Records and retention
 
-UK figures for 2026-27 (from 6 April 2026) unless a row says otherwise. Every figure below was checked on the linked official page on 14 November 2026.
+**Sole traders and partners:** record sales/income, business expenses, personal income, relevant VAT/PAYE records and any SEISS grants; retain receipts, bank statements, invoices, till rolls and bank slips. Traditional accounting also needs debtors, unpaid commitments, year-end stock/work in progress, bank balances, capital introduced and drawings. The nominated partner also keeps the partnership records. [HMRC records](https://www.gov.uk/self-employed-records), [record contents](https://www.gov.uk/self-employed-records/what-records-to-keep).
 
-#### Record retention
+**Companies:** retain receipts/payments, assets, debts, stock and stocktakings, goods bought/sold and counterparties (retail exception), and supporting documents needed for accounts and tax. Keep shareholder/resolution, debenture, indemnity, share-transaction and secured-loan records. Company banking must be separate from personal banking. [HMRC company records](https://www.gov.uk/running-a-limited-company/company-and-accounting-records).
 
-| Who | Keep records for | Source |
+| Records | Minimum and conditions | Source |
 | --- | --- | --- |
-| Sole traders and partners | At least 5 years after the 31 January submission deadline of the tax year. A 2022 to 2023 return filed online by 31 January 2024 means keeping records until at least the end of January 2029 | https://www.gov.uk/self-employed-records/how-long-to-keep-your-records |
-| Very late return (more than 4 years after the deadline) | 15 months after the return is sent | https://www.gov.uk/self-employed-records/how-long-to-keep-your-records |
-| In law, individuals | In business: to the fifth anniversary of the 31 January after the tax year. Not in business: the first anniversary. Either way, longer until any enquiry is completed or the enquiry window closes | https://www.legislation.gov.uk/ukpga/1970/9/section/12B |
-| Companies, for HMRC | 6 years from the end of the last company financial year they relate to, or longer if a transaction covers more than one accounting period, an asset is expected to last more than 6 years, the return was late, or HMRC has started a compliance check | https://www.gov.uk/running-a-limited-company/company-and-accounting-records |
-| Companies, in law (tax) | To the sixth anniversary of the end of the period, or later until any enquiry is completed or the window closes | https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/21 |
-| Companies Act minimum | Private company 3 years from when the records are made; public company 6 years. The HMRC period is longer for a private company, so it governs | https://www.legislation.gov.uk/ukpga/2006/46/section/388 |
-| VAT-registered businesses | At least 6 years, or 10 years if using the One Stop Shop or having used the Mini One Stop Shop (MOSS). VAT bad debt records: 4 years after the claim, or 10 with MOSS | https://www.gov.uk/charge-reclaim-record-vat/keeping-vat-records |
-| Employers and CIS contractors | PAYE and CIS records 3 years after the end of the tax year, or longer where they also support the business profits | https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch14700 |
+| Individuals in business, including partners and property letting | At least 5 years after the relevant 31 January submission deadline; longer through completion of an enquiry or expiry of its window where applicable. The 2022-23 return filed by 31 January 2024 is kept through at least January 2029 | https://www.gov.uk/self-employed-records/how-long-to-keep-your-records ; https://www.legislation.gov.uk/ukpga/1970/9/section/12B |
+| Company tax records | 6 years from the end of the last financial year they relate to; longer for multi-period transactions, assets expected to last more than 6 years, late returns or compliance checks; statutory enquiry extensions also apply | https://www.gov.uk/running-a-limited-company/company-and-accounting-records ; https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/21 |
+| Private-company accounting records | Companies Act minimum 3 years from making them does not shorten the longer tax duty | https://www.legislation.gov.uk/ukpga/2006/46/section/388 |
+| VAT records | At least 6 years; 10 years for OSS or previous MOSS use | https://www.gov.uk/charge-reclaim-record-vat/keeping-vat-records |
+| PAYE and CIS | 3 years after the relevant tax year; longer if needed for the business-profits return | https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch14700 |
 
-Lost, stolen or destroyed records: a self-employed person gives best figures and tells HMRC on the return whether they are estimated or provisional; a company recreates them as best it can, tells its Corporation Tax office straight away and says so in the return. Records may be kept in any form, subject to HMRC's conditions (section 12B(4)).
+Lost records: replace them where possible. A self-employed person unable to replace them supplies best figures and identifies estimates or provisional figures on the return, supplying actual figures when available. A company unable to replace them recreates them as best it can, tells its Corporation Tax office straight away and records this in the return. [Individuals](https://www.gov.uk/self-employed-records/how-long-to-keep-your-records), [companies](https://www.gov.uk/running-a-limited-company/company-and-accounting-records). For very late returns, non-business records, permitted substitutes/original-document exceptions, or an uncertain destruction date: Check this point with one of our partner accountants.
 
-#### What records to keep
+### Cash basis and tax adjustments
 
-- **Sole traders and partners:** all sales and income, all business expenses, VAT and PAYE records where relevant, personal income records, and any Self-Employment Income Support Scheme grants, backed by receipts, bank statements, sales invoices, till rolls and bank slips. Traditional accounting adds amounts owed and owing, year-end stock and work in progress, year-end bank balances, capital introduced and drawings: https://www.gov.uk/self-employed-records/what-records-to-keep
-- **In law:** all amounts received and spent in the business and what for, and for a trade in goods all sales and purchases of goods: https://www.legislation.gov.uk/ukpga/1970/9/section/12B
-- **Companies:** all money received and spent (including grants), assets, debts owed by and to the company, year-end stock and stocktakings, goods bought and sold and from or to whom (unless retail), and the underlying receipts, petty cash books, invoices, contracts, till rolls, bank statements and correspondence; plus company records (shareholders, resolutions, debentures, indemnities, share transactions, charges). Company and personal banking must be separate: https://www.gov.uk/running-a-limited-company/company-and-accounting-records
-- **Companies Act:** adequate records with day-to-day entries of money received and spent, a record of assets and liabilities, and for goods, year-end stock statements and stocktakings: https://www.legislation.gov.uk/ukpga/2006/46/section/386
+For eligible sole traders and partnerships without corporate partners, cash basis is the standard method: record income when received and expenses when paid. Traditional accounting is the alternative, using invoice/bill dates. Multiple businesses can choose separately. Limited companies, LLPs and partnerships with corporate partners cannot use this cash basis. [Cash basis](https://www.gov.uk/simpler-income-tax-cash-basis), [eligibility](https://www.gov.uk/simpler-income-tax-cash-basis/who-can-use-cash-basis).
 
-#### Cash basis (default from 2024 to 2025)
+Choose a consistent received/paid date, such as card-payment or bank-entry date. Cash basis does not change VAT accounting: records may include or exclude VAT; if inclusive, net VAT payments to HMRC are expenses and net repayments receipts. Test VAT registration using VAT rules. [HMRC BIM72005](https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim72005).
 
-- The standard method for sole traders and partnerships without corporate partners: income when received, expenses when paid. Traditional accounting (by invoice or bill date) is the opt-out, and the return must say it was used: https://www.gov.uk/simpler-income-tax-cash-basis
-- From 2024 to 2025 the GOV.UK list of who cannot use the cash basis sets no turnover limit (https://www.gov.uk/simpler-income-tax-cash-basis/who-can-use-cash-basis). Items may be treated as received or paid on any consistent date, such as the card payment date or the bank statement date: https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim72005
-- With more than one business, the choice is per business: https://www.gov.uk/simpler-income-tax-cash-basis/who-can-use-cash-basis
-- Capital spending is an allowable expense except, among others, buying or selling a business, education or training, non-depreciating assets, assets not for continuing use in the trade, cars, land, non-qualifying intangibles and financial assets. Cars keep capital allowances unless the mileage rate is claimed on that car: https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim72035
-- VAT: the cash basis does not change VAT accounting. Receipts and payments may be recorded including or excluding VAT; if including, net VAT paid is an expense and net repayments a receipt. The VAT registration test uses VAT rules, not cash receipts: https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim72005
+For Lloyd's underwriting, herd basis, averaging, renovation allowance, mineral extraction or research-and-development allowance history; special profit rules for securities, royalties, lease premiums, ministers, betting, intermediaries, managed service companies, waste disposal and cemeteries; method changes, non-tax-year accounts, transition profit spreading or provisional figures: Check this point with one of our partner accountants.
 
-#### Trading and property allowances
+For expense deductibility (private use, entertaining, gifts, fines, provisions and bad debts), capital spending/cash-basis exclusions, book depreciation and capital allowances (AIA, full expensing, special-rate/40% first-year allowances, main/special/small pools, hybrid periods and new/used cars): Check this point with one of our partner accountants. Record the facts; a nominal account or bank description does not establish deductibility.
 
-| Allowance or rule | Amount | Source |
+### Trading and property allowances
+
+Individuals may qualify for a separate £1,000 trading and £1,000 property allowance per tax year. The trading allowance is shared across relevant trades and miscellaneous income, not renewed per activity. Subject to exclusions and elections, gross relevant income no more than £1,000 qualifies for full relief; keep income records and do not ignore a notice to file. Above £1,000, partial relief requires an election, replaces expenses/other allowances and cannot create a loss. [HMRC allowances](https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income), [trading full relief](https://www.legislation.gov.uk/ukpga/2005/5/section/783AE), [partial relief](https://www.legislation.gov.uk/ukpga/2005/5/section/783AH).
+
+Exclude partnership trading income and rent-a-room trades from the trading allowance. Neither allowance is available in a tax year with trade/property income from a company owned/controlled by the individual or a connected person, a partnership in which either is a partner, or the individual's or spouse/civil partner's employer. [HMRC exclusions](https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income), [ITTOIA s.783AA](https://www.legislation.gov.uk/ukpga/2005/5/section/783AA).
+
+For joint property, each owner tests their own gross share. The property allowance replaces expenses across property businesses; it cannot be combined with the residential finance-cost tax reducer or used for Rent a Room income or where room-letting expenses are deducted instead. [HMRC allowances](https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income). For an unusual property/room-letting election or allocation: Check this point with one of our partner accountants.
+
+Gross trading income over £1,000 requires Self Assessment registration. First-time or reactivating filers needing a return must tell HMRC by 5 October after the tax year. Property or other-income reporting thresholds and existing notices: Check this point with one of our partner accountants. [HMRC allowances](https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income), [registration deadline](https://www.gov.uk/self-assessment-tax-returns/deadlines).
+
+### Simplified expenses
+
+Optional for sole traders and partnerships without company partners; not limited companies. Log qualifying business miles, home hours and residents before choosing flat rates. [HMRC simplified expenses](https://www.gov.uk/simpler-income-tax-simplified-expenses).
+
+| Flat rate | Amount and conditions | Source |
 | --- | --- | --- |
-| Trading allowance, per individual per tax year, against gross trading income | £1,000 | https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income |
-| Property allowance, separate, against gross property income; joint owners get one each against their share | £1,000 | same |
-| Gross income at or below the allowance | Full relief, nothing deducted | same |
-| Gross income above it | Deduct the allowance instead of all expenses and other allowances, never below nil (no loss) | same |
-| Gross trading income over £1,000 | Register for Self Assessment by 5 October after the tax year | same |
-| Gross property income over £1,000 up to £2,500 / over £2,500 | Contact HMRC / register for Self Assessment | same |
-| Other (non-trading, non-property) gross income over £1,000 up to £2,500 / over £2,500 | Contact HMRC / register for Self Assessment | same |
-| Two property businesses, property allowance claimed in one | No actual expenses may be claimed in the other | same |
+| Cars/goods vehicles, first 10,000 business miles | 55p per mile in 2026-27; 45p before 6 April 2026 | https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles |
+| Cars/goods vehicles above 10,000 business miles | 25p per mile | https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles |
+| Motorcycles | 24p per business mile | https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles |
+| Home working per month | 25-50 hours: £10; 51-100: £18; 101+: £26; unavailable below 25 hours | https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home |
+| Living at business premises: monthly private-use subtraction | 1 person £350; 2 people £500; 3 or more £650; subtract from total premises expenses and claim the remainder, using actual months of residence | https://www.gov.uk/simpler-income-tax-simplified-expenses/living-at-your-business-premises |
 
-Not available on income from a company or partnership the client or a connected person owns, controls or is a partner in, or from the client's or their spouse's or civil partner's employer. The trading allowance does not apply to partnership trading income. The property allowance cannot be used with the finance cost tax reducer, with Rent a Room income, or where room-letting expenses are deducted instead of using Rent a Room. Records of the income must still be kept.
+Mileage replaces buying/running costs and cannot be used for a vehicle already given capital allowances or deducted as an expense, or a car designed for commercial use such as a black cab or dual-control driving-school car. Once chosen it continues for that vehicle's business use. Allowable other travel and parking may be added. Home flat rates exclude phone/internet: use the actual business proportion separately. [HMRC conditions](https://www.gov.uk/simpler-income-tax-simplified-expenses/print).
 
-#### Simplified expenses (flat rates)
+### Making Tax Digital for Income Tax
 
-Optional for sole traders and partnerships with no company partners; not for limited companies or partnerships involving one. Everything else uses actual costs. Log business miles, hours at home and occupants: https://www.gov.uk/simpler-income-tax-simplified-expenses
+For new entry, subject to actual qualifying income and exemptions:
 
-| Flat rate | 2026 to 2027 | Before 6 April 2026 (2025 to 2026 returns) | Source |
+| Tested qualifying income strictly over | Tested tax year | Start | Source |
 | --- | --- | --- | --- |
-| Cars and goods vehicles, first 10,000 business miles | 55p a mile | 45p a mile | https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles |
-| Cars and goods vehicles, after 10,000 miles | 25p a mile | 25p a mile | same |
-| Motorcycles | 24p a mile | 24p a mile | same |
-| Working from home, 25 to 50 business hours in the month | £10 a month | | https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home |
-| 51 to 100 hours | £18 a month | | same |
-| 101 hours and more | £26 a month | | same |
-| Living at the premises, 1 person: SUBTRACTED from total premises costs | £350 a month | | https://www.gov.uk/simpler-income-tax-simplified-expenses/living-at-your-business-premises |
-| 2 people | £500 a month | | same |
-| 3 or more people | £650 a month | | same |
+| £50,000 | 2024-25 | 6 April 2026 | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax |
+| £30,000 | 2025-26 | 6 April 2027 | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax |
+| £20,000 | 2026-27 | 6 April 2028 | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax |
 
-- Vehicles: not for cars designed for commercial use (for example black cabs or dual-control driving school cars), nor a vehicle that has had capital allowances or been deducted as an expense. Once used for a vehicle, flat rates continue while that vehicle is used in the business. Train fares and parking are claimed on top.
-- Home: only from 25 hours a month; phone and internet are claimed separately at the business share of actual cost.
-- Premises: deduct the rate only for the months each person lives there (guesthouses, bed and breakfasts, small care homes).
+Generally combine gross self-employment and property income; salary, dividends, pensions and an individual partner's profit share are not qualifying activity income. Do not test one trade alone. Part-year annualisation, net-only reported income, transition profits, cessation, amendments, an existing obligation/exit, partnerships and exemption decisions need the actual facts: Check this point with one of our partner accountants. A later below-threshold year does not itself establish an exit. [Qualifying income](https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax), [2026 Regulations, regulations 22-27](https://www.legislation.gov.uk/uksi/2026/336/contents/made).
 
-#### Making Tax Digital for Income Tax
+**Digital records:** use compatible software, retaining original supporting documents/copies. Record amount, date and Self Assessment category; keep separate sole-trade records/updates, with UK properties combined as one UK property business. Create records before the update deadline or before sending an earlier update. For a 5 April accounting date, start on 6 April; for 31 March, start on 1 April and use calendar periods. [HMRC digital records](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/create-digital-records).
 
-Required for a sole trader or landlord registered for Self Assessment with self-employment or property income whose qualifying income is more than the threshold for the tested year: https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax
+**Digital links:** link record-keeping products to software using the records for HMRC submissions. Once a record has been sent in an update, do not move it manually or copy/paste it between products. Check missing details and transactions in bank feeds. [HMRC digital links](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/create-digital-records).
 
-| Qualifying income over | Tested on the return for | Must use MTD from | Source |
-| --- | --- | --- | --- |
-| £50,000 | 2024 to 2025 | 6 April 2026 | https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax |
-| £30,000 | 2025 to 2026 | 6 April 2027 | same |
-| £20,000 | 2026 to 2027 | 6 April 2028 | same |
+**Simpler categories:** a sole-trade source or total UK property turnover below £90,000 can use income/expense categories; UK residential landlords must separately identify restricted finance costs. On reaching £90,000, fully categorise that source from the start of the current year and for the following year before submitting updates. Foreign property and joint-property record concessions: Check this point with one of our partner accountants. [HMRC categories](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/create-digital-records).
 
-- **Qualifying income** is self-employment plus property income before expenses (turnover) on the tested return. Salary, an individual partner's share of partnership profit, dividends and pensions do not count; joint property counts at the client's share; transition profits do not count. A part-year sole trade is annualised by HMRC; property income is annualised by the client: https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax
-- **The test is "over".** Income exactly at the threshold does not bring the client in for that start date.
-- **Partnerships** are not yet required (timeline to follow). No HMRC letter does not remove the duty to check and sign up. After joining, a client below the threshold for 3 tax years in a row may opt out (same page). Exempt clients, for example the digitally excluded, keep filing a normal return.
-- **Digital records:** amount, date and category (Self Assessment categories) for each item; originals still kept. Several products must be digitally linked, and a record sent in an update must not be retyped or copied and pasted between products. Each sole trade has its own records and updates; all UK property is one business: https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/create-digital-records
-- **Simpler categorisation:** a source with turnover less than £90,000 may record only income or expense (residential landlords still flag restricted finance costs); on reaching £90,000, categorise in full from the start of that tax year: https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/create-digital-records
-- **Quarterly updates** are cumulative from the start of the tax year, with no accounting or tax adjustments, and a nil update is still sent. Deadlines are 7 August, 7 November, 7 February and 7 May, for standard periods (6 April to 5 July, 5 October, 5 January, 5 April) or calendar periods (1 April to 30 June, 30 September, 31 December, 31 March; chosen before the first update and fixed for the year). An update may be sent up to 10 days before the period ends if nothing more is expected (https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates). The tax return is still due by 31 January after the tax year.
+**Updates:** send cumulative income/expense summaries for each business, including nil updates. Accounting/tax adjustments are not required before quarterly updates. Standard cumulative periods run from 6 April to 5 July, 5 October, 5 January and 5 April; calendar periods run from 1 April to 30 June, 30 September, 31 December and 31 March. Deadlines respectively: 7 August, 7 November, 7 February and 7 May following. Choose calendar periods before sending the first update; then the choice is fixed for that tax year. An update can be sent up to 10 days early only if no further transactions are expected. [HMRC updates](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates).
 
-#### VAT thresholds and VAT records
+For records when using trading/property allowances or Rent a Room, new income sources, joint-property concessions, signup/catch-up or correcting final updates: Check this point with one of our partner accountants. Do not assume an allowance removes digital duties.
 
-| Item | Figure | Source |
-| --- | --- | --- |
-| Register: taxable turnover in the last 12 months over, or expected over in the next 30 days | £90,000 | https://www.gov.uk/register-for-vat |
-| Deregister (optional): taxable turnover less than | £88,000 | https://www.gov.uk/how-vat-works/vat-thresholds |
-| Flat Rate Scheme: join at or below / leave above | £150,000 / £230,000 | same |
-| Cash Accounting and Annual Accounting: join at or below / leave above | £1.35 million / £1.6 million | same |
-| Standard, reduced and zero rates | 20%, 5%, 0% | https://www.gov.uk/vat-rates |
+### VAT alongside the books
 
-- **Records:** everything bought and sold (including zero-rated, reduced and exempt), copies of all sales invoices issued (even cancelled), all purchase invoices, self-billing agreements, credit and debit notes, goods taken for private use, plus bank statements, cash books and till rolls: https://www.gov.uk/charge-reclaim-record-vat/keeping-vat-records
-- **Digital records under MTD for VAT** (all registered businesses unless exempt): VAT on supplies made and received, time and value of each supply, return adjustments, reverse charge items, schemes used, retail daily takings, Flat Rate Scheme reclaimable items. Software must be digitally linked; no manual transfer or copy and paste (same page).
-- **VAT account:** VAT on sales, VAT on purchases, VAT owed and reclaimable, and for the Flat Rate Scheme the rate and turnover; errors show when found and how corrected. Bad debt relief needs a separate VAT bad debt account (same page).
-- **MTD for VAT exemption** may be accepted where digital tools are not practical (age, disability, location), in insolvency, for a business run entirely by practising members of a religious society whose beliefs are incompatible with electronic records, or where already exempt from filing online: https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat
+For a UK-established business, mandatory registration generally applies when taxable turnover exceeds £90,000 over the last 12 months, or is expected to exceed £90,000 in the next 30 days alone. These tests have different registration dates. Non-established businesses and registration exceptions: Check this point with one of our partner accountants. [VAT registration](https://www.gov.uk/register-for-vat). Standard/reduced/zero rates are 20%/5%/0%; classification must be established for the actual supply. [VAT rates](https://www.gov.uk/vat-rates).
 
-#### Penalties for poor records
+Keep all purchase/sales records, invoices (including cancelled sales invoices), self-billing agreements/supplier details, credit/debit notes, private-use withdrawals and general business records. Keep a VAT account showing VAT on sales and purchases for the return. Unless exempt, keep the required digital VAT records (time, net value, VAT, adjustments, reverse charges and scheme-specific records) and digitally link products. [HMRC VAT records](https://www.gov.uk/charge-reclaim-record-vat/keeping-vat-records).
 
-| Failure | Penalty | Source |
-| --- | --- | --- |
-| Individual or partnership: records for a return not kept or preserved | Up to £3,000 (a maximum, not a fixed charge) | https://www.legislation.gov.uk/ukpga/1970/9/section/12B |
-| Company: records for a Company Tax Return not kept or preserved | Up to £3,000 | https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/23 |
-| VAT: records not preserved as required | £500 | https://www.legislation.gov.uk/ukpga/1994/23/section/69 |
-
-- No records penalty where the missing records were needed only for claims, elections or notices not in the return (section 12B(5A), paragraph 23(2)).
-- A director can be disqualified for not keeping accounting records (https://www.gov.uk/running-a-limited-company/company-and-accounting-records). Failing to keep adequate accounting records is an offence by every officer in default, with a defence of acting honestly where the default was excusable; the maximum on indictment is two years' imprisonment or a fine: https://www.legislation.gov.uk/ukpga/2006/46/section/387
-- Poor records also cause wrong returns (inaccuracy penalties) and late updates and returns (see Filing and payment).
-
-#### Capital allowances
-
-| Allowance | Rate or amount | Who and what | Source |
-| --- | --- | --- | --- |
-| Annual Investment Allowance, yearly limit | £1 million | All businesses; most plant and machinery, not cars | https://www.gov.uk/capital-allowances/annual-investment-allowance |
-| Full expensing / special rate first-year allowance (new plant) | 100% / 50% | Companies only, not cars | https://www.gov.uk/capital-allowances/full-expensing |
-| First-year allowance: spent on or after 1 January 2026, unused, main rate, not a car | 40% | Income tax and corporation tax businesses; general exclusions apply | https://www.gov.uk/capital-allowances/40-first-year-allowance |
-| Main pool writing down allowance | 14% from 1 April 2026 (corporation tax) and 6 April 2026 (income tax); 18% before; hybrid rate for a spanning period | Reducing balance | https://www.gov.uk/work-out-capital-allowances/rates-and-pools |
-| Special rate pool | 6% | Integral features, long-life assets, higher-emission cars | same |
-| Small pools allowance | Balance of £1,000 or less written off | Main or special pool, not single asset pools | https://www.gov.uk/work-out-capital-allowances/work-out-what-you-can-claim |
-| Car bought from April 2021 and before April 2027, new and unused, 0g/km or electric | 100% first-year allowance | "If you buy it before April 2027, you can claim 100% first year allowances on: electric cars and cars with zero CO2 emissions" (https://www.gov.uk/capital-allowances/first-year-allowances) | https://www.gov.uk/capital-allowances/business-cars |
-| Car bought from April 2021: second-hand electric, or new or second-hand with CO2 of 50g/km or less | Main rate: 14% (18% before April 2026) | Main pool | same |
-| Car bought from April 2021, new or second-hand, CO2 over 50g/km | Special rate: 6% | Special rate pool | same |
-
-The 40% conditions are in CA23195A (https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca23195a). Cars never get the Annual Investment Allowance, full expensing or the 40% allowance. Book depreciation is added back for tax.
-
-#### Company size (financial years beginning on or after 6 April 2025)
-
-At least two of three conditions; after the first year a change counts only if it happens in two consecutive financial years.
-
-| Condition, not more than | Micro-entity | Small company | Source |
-| --- | --- | --- | --- |
-| Turnover | £1 million | £15 million | https://www.legislation.gov.uk/ukpga/2006/46/section/384A and https://www.legislation.gov.uk/ukpga/2006/46/section/382 |
-| Balance sheet total | £500,000 | £7.5 million | same |
-| Average employees | 10 | 50 | same |
-
-Public companies and others in section 9.2 of https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts cannot use micro-entity accounts. A micro-entity claims audit exemption as a small company (https://www.legislation.gov.uk/ukpga/2006/46/section/477), subject to the exclusions on that Companies House page. Small companies and micro-entities can file their accounts at Companies House omitting the profit and loss account (same page). On 23 October 2026 Companies House paused the planned requirement for small companies and micro-entities to file a profit and loss account from April 2028, so abridged accounts and "filleting" the profit and loss account stay available after 1 April 2028: "the government will continue to allow companies to file abridged accounts and retain the option for smaller companies to remove, or 'fillet', their profit and loss information from the accounts filed at Companies House after 1 April 2028." From April 2028 every company files its accounts in iXBRL using commercial software, and web and paper filing close for accounts (https://www.gov.uk/government/news/companies-house-update-to-accounts-filing-from-april-2028). Company accounts filing is covered in uk-financial-statements.
+For deregistration, Flat Rate Scheme entry/exit and limited-cost tests, Cash Accounting/Annual Accounting conditions, bad-debt relief records, VAT exemption decisions, return boxes (including Northern Ireland/EU goods), OSS, retail schemes or partial exemption: Check this point with one of our partner accountants. Use **uk-vat-return** for the applicable return workflow; do not infer scheme eligibility or input-tax recovery from a nominal code.
 
 ### Chart of accounts and mappings
 
-Our own working convention, not an official list: HMRC and Companies House prescribe no nominal codes. Map to the client's software.
+These are our working codes, adaptable to the client's software, rather than a prescribed tax classification.
 
-| Range | Accounts |
+| Range | Working accounts |
 | --- | --- |
-| 0010 to 0071 | Fixed assets (property, plant, fittings, vehicles, office and computer equipment) with paired accumulated depreciation |
-| 1001 to 1240 | Stock, debtors, prepayments, bank, building society, petty cash, PayPal and Stripe clearing |
-| 2100 to 2500 | Creditors, accruals, VAT control (2200), VAT input (2201), VAT output (2202), PAYE and NIC, Corporation Tax, loans and hire purchase, director's loan account (2410) |
-| 3000 to 3301 | Share capital, share premium, retained earnings, dividends paid, owner's capital and drawings |
-| 4000 to 4200 | Sales by VAT treatment (standard, reduced, zero, exempt, exports), other income, discounts allowed |
-| 5000 to 5300 | Goods for resale, materials, carriage in, direct labour and subcontractors, stock adjustments |
-| 6000 to 6600 | Premises, insurance, repairs, staff costs (6100 to 6120), advertising, office, software, travel and motor, professional fees, bank charges and interest (6420), bad debts (6430), entertaining (6500, client entertaining not deductible), sundries (6600) |
-| 7000 to 8200 | Interest and rent received, disposals, grants, depreciation (8000 to 8040), Corporation Tax charge |
+| 0010-0071 | Fixed assets and accumulated depreciation |
+| 1001-1240 | Stock, debtors, prepayments, bank, petty cash, PayPal/Stripe clearing |
+| 2100-2500 | Creditors/accruals, VAT control (2200), input VAT (2201), output VAT (2202), PAYE/NIC, Corporation Tax, loans/HP, director's loan (2410) |
+| 3000-3301 | Share capital/premium, retained earnings, dividends, owner's capital/drawings |
+| 4000-4200 | Sales by VAT treatment, other income, discounts |
+| 5000-5300 | Goods/materials, carriage in, direct labour/subcontractors, stock adjustments |
+| 6000-6600 | Premises, staff, advertising, office/software, motor/travel, fees, bank charges/interest, bad debts, entertaining and sundries |
+| 7000-8200 | Interest/rent, disposals/grants, depreciation and tax charge |
 
-**SA103F boxes** from the 2025 to 2026 form, the latest published (https://assets.publishing.service.gov.uk/media/69c2635b13101e9908704b36/SA103F_2026.pdf). MTD updates use the same categories. Box 17 cost of goods (5000 to 5300); 18 CIS subcontractors (5200); 19 staff costs (6100 to 6120); 20 car, van and travel (6300 to 6312); 21 rent, rates, power and insurance (6000 to 6020); 22 repairs (6030); 23 phone, stationery and office (6210 to 6230); 24 advertising and entertainment (6200, 6500); 25 loan interest (6420); 26 bank and card charges (6420); 27 irrecoverable debts, traditional accounting only (6430); 28 professional fees (6400 to 6410); 29 depreciation and disposals (8000 to 8040); 30 other (6600); 31 total. With annual turnover below £90,000 a business may put only total expenses in box 31 (same form).
+Match processor settlements to gross invoices and separately identified fees; investigate transfers, loans, payroll and tax payments before coding. Settle an established liability against its control account; a payment description alone does not establish its accounting or tax treatment.
 
-**VAT return boxes** (https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012): 1 VAT on sales (2202); 2 VAT on EU acquisitions into Northern Ireland; 3 total due; 4 VAT reclaimed (2201); 5 net (2200); 6 sales excluding VAT (4000 to 4004); 7 purchases excluding VAT; 8 and 9 Northern Ireland and EU goods movements only. Reconcile the VAT control account to each return.
-
-**Company accounts formats.** Micro-entity items are those in Section C of Schedule 1 to the 2008 Regulations (https://www.legislation.gov.uk/uksi/2008/409/schedule/1); the micro profit and loss shows turnover, other income, raw materials and consumables, staff costs, depreciation and amounts written off assets, other charges, tax, and profit or loss. Small companies under Section 1A of Financial Reporting Standard 102 usually use the by-function profit and loss and a vertical balance sheet. Financial Reporting Standards 105 (micro-entities) and 102 are issued by the Financial Reporting Council; the Periodic Review 2024 amendments apply to periods beginning on or after 1 January 2026 and change revenue recognition, so work from the current edition. Under Financial Reporting Standard 105 a micro-entity does not recognise deferred tax or internally generated intangibles. These standard-setter points were not re-read on this pass (the FRC site is outside the sources used); check the current edition before relying on them.
-
-**Bank feeds.** HMRC VAT, PAYE and Corporation Tax payments go to the liability accounts, never to expenses; payment processor receipts are matched to invoices with fees booked separately.
+For SA103F/SA105/CT600 categories, allowable/disallowable columns, actual-year box numbers, VAT-return boxes and company-account mappings: Check this point with one of our partner accountants. A published 2025-26 form is not a verified 2026-27 form.
 
 ## Boundary and exception table
 
-| Situation | Rule | Source |
-| --- | --- | --- |
-| Limited company, LLP, or partnership with a corporate partner | No cash basis, no simplified expenses | https://www.gov.uk/simpler-income-tax-cash-basis/who-can-use-cash-basis |
-| Lloyd's underwriter; herd basis election; profit averaging claim; Business Premises Renovation Allowance in the previous 7 years; mineral extraction; research and development allowance ever claimed | No cash basis | same |
-| Securities dealing, mineral royalties, lease premiums, ministers of religion, pool betting duty, intermediaries, managed service companies, waste disposal, cemeteries and crematoria | Cash basis allowed, but the special rules are lost | same |
-| Qualifying income exactly at the MTD threshold | Not over it, so not required from that date | https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax |
-| Partner with only a partnership share | No MTD for that income | https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax |
-| All self-employment and property income ceased before 6 April 2026 | MTD not needed; tell HMRC or it signs the client up from its records | same |
-| Trading or property allowance claimed but the income was above it | Digital records and updates still needed for that income | https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/create-digital-records |
-| Vehicle already given capital allowances | No mileage flat rate | https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles |
-| Private company: Companies Act 3 years vs HMRC 6 years | Keep 6 years (or longer) | https://www.legislation.gov.uk/ukpga/2006/46/section/388 |
+| Situation | Action |
+| --- | --- |
+| LLP, group, public company, charity, trust/estate, corporate partner | Check this point with one of our partner accountants. |
+| Micro/small size qualification, two-year/first-year tests, exclusions or audit/member demand | Check this point with one of our partner accountants. |
+| FRS 105/FRS 102 Section 1A, revenue recognition, depreciation/capitalisation, profit and loss/balance sheet formats or micro-entity simplifications | Check this point with one of our partner accountants. |
+| Companies House abridging/filleting, profit-and-loss publication, April 2028 software/iXBRL changes | Check this point with one of our partner accountants. |
+| Connected-party dealings, R&D, employment status or cross-border tax | Check this point with one of our partner accountants. |
 
 ## Worked cases
 
-**Case 1: sole trader retention.** The 2025 to 2026 return is filed online in January 2027. The submission deadline is 31 January 2027, so records are kept until at least the end of January 2032, longer if HMRC opens an enquiry: https://www.gov.uk/self-employed-records/how-long-to-keep-your-records
+**Case 1: sole trader retention.** The 2025-26 return filed online in January 2027 has the ordinary 31 January 2027 deadline. Five years later is 31 January 2032: keep records through at least the end of that month, longer where the enquiry rule requires. The earlier 2022-23/31 January 2024 example similarly reaches January 2029. [HMRC retention](https://www.gov.uk/self-employed-records/how-long-to-keep-your-records).
 
-**Case 2: company retention.** Year ended 31 March 2026: keep records until at least 31 March 2032, longer for machinery expected to last more than 6 years, a late return or an open compliance check. The Companies Act 3-year minimum for a private company does not shorten this: https://www.gov.uk/running-a-limited-company/company-and-accounting-records
+**Case 2: company retention.** Year ended 31 March 2026: keep records until at least 31 March 2032, longer for machinery expected to last more than 6 years, multi-period transactions, late returns or compliance checks. The private-company 3-year Companies Act minimum does not shorten the tax duty. [HMRC company records](https://www.gov.uk/running-a-limited-company/company-and-accounting-records).
 
-**Case 3: MTD start date.** HMRC's example: £25,000 rental income plus £27,000 self-employment income gives qualifying income of £52,000 (https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax). On the 2025 to 2026 return that is over £30,000, so MTD applies from 6 April 2027; on the 2024 to 2025 return, over £50,000, from 6 April 2026 (https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax). A salary or partnership share on top changes nothing.
+**Case 3: MTD start date.** £25,000 rent plus £27,000 self-employment income totals £52,000. Assume both are full-year qualifying amounts, no exclusions/exemption and no earlier continuing obligation. If reported on the 2025-26 return, this exceeds £30,000 for entry from 6 April 2027; on the 2024-25 return, it exceeds £50,000 for entry from 6 April 2026. Ordinary salary or an individual partner's profit share does not increase that total. Missing earlier-year facts prevent treating 2027 as the earliest start. [HMRC qualifying income](https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax), [entry dates](https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax).
 
-**Case 4: mileage across the rate change.** 11,000 business miles by car. 2026 to 2027: 10,000 at 55p is £5,500 plus 1,000 at 25p is £250, total £5,750 (HMRC's example). 2025 to 2026, at 45p: 10,000 at 45p is £4,500 plus £250, total £4,750: https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles
+**Case 4: mileage across the rate change.** Assume an eligible car, 11,000 qualifying business miles and no previous capital-allowance/cost deduction on that car. In 2026-27: 10,000 × 55p + 1,000 × 25p = £5,750. In 2025-26: 10,000 × 45p + £250 = £4,750. The increase is £1,000. [HMRC mileage](https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles).
 
 ```oa-check
 name: Car mileage flat rate, 11,000 business miles, 2026-27 against 2025-26
@@ -262,11 +181,9 @@ expected:
   increase: 1000.00
 ```
 
-**Case 5: living at the premises.** A couple live all year in their bed and breakfast; premises costs are £15,000. Private use is 12 months at £500, which is £6,000, so £9,000 is claimed: https://www.gov.uk/simpler-income-tax-simplified-expenses/living-at-your-business-premises
+**Case 5: living at the premises.** An eligible couple run and live all year in their bed and breakfast; total premises costs are £15,000. Private use: 12 × £500 = £6,000. Claim £15,000 − £6,000 = £9,000 under the flat-rate method. [HMRC example](https://www.gov.uk/simpler-income-tax-simplified-expenses/living-at-your-business-premises).
 
-**Case 6: trading allowance.** £1,600 gross from casual gardening with £300 of costs. The allowance gives taxable income of £600 (£1,600 less £1,000); actual costs give £1,300, so the allowance wins. Gross trading income is over £1,000, so the client registers for Self Assessment by 5 October after the tax year: https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income
-
-This is the decision case: allowance or actual costs, worked both ways. The lower taxable figure wins; actual costs would win only if they were above £1,000.
+**Case 6: trading allowance versus costs.** Casual gardening gross income £1,600, allowable costs £300. Assume this is the individual's only relevant trading/miscellaneous income, no allowance exclusion and no other allowance competing with the comparison. Electing partial relief gives £1,600 − £1,000 = £600; actual costs give £1,600 − £300 = £1,300. Partial relief lowers taxable income by £700; this is not a £700 tax saving. The allowance does not remove registration: a new/reactivating filer needing a return tells HMRC by 5 October after the tax year. [HMRC allowances](https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income), [deadline](https://www.gov.uk/self-assessment-tax-returns/deadlines).
 
 ```oa-check
 name: Trading allowance or actual costs, gross GBP 1,600, costs GBP 300
@@ -288,79 +205,28 @@ expected:
 
 ## When to refuse or refer
 
-- An LLP, a group, a public company, a charity, or a partnership with a corporate partner.
-- A company near a micro or small size limit, or where an audit is needed or demanded by members.
-- Lost or destroyed records, returns more than a year late, or an open HMRC compliance check.
-- An MTD exemption request, a dispute with HMRC's MTD letter, or any penalty appeal.
-- VAT special cases: Northern Ireland and EU goods, the One Stop Shop, retail schemes, partial exemption, an MTD for VAT exemption.
-- Cash basis exclusions, profit averaging, herd basis, or transition profits still being spread (up to 2027 to 2028: https://www.gov.uk/guidance/changes-to-reporting-income-from-self-employment-and-partnerships).
-- Connected-party transactions, research and development claims, employment status.
-- Never produce filing-ready accounts or returns without a qualified accountant's sign-off.
+Do not produce filing-ready accounts or returns without a qualified accountant's review and sign-off. Lost records, a compliance check, penalty appeal, an uncertain method/election or any specialist situation identified above: Check this point with one of our partner accountants.
 
-### Disclaimer
+### Filing and payment
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants accepts no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a chartered accountant, ACCA member, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Ordinary Self Assessment filing for 2025-26: paper received by 31 October 2026 or online by 31 January 2027. Late-issued notices can change filing dates. The balancing payment is normally due 31 January 2027, subject to credits/payments on account and statutory late-notice conditions. [HMRC deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines), [TMA s.8](https://www.legislation.gov.uk/ukpga/1970/9/section/8), [s.59B](https://www.legislation.gov.uk/ukpga/1970/9/section/59B). For payments on account, actual registration/submission/payment procedures, company tax/accounts deadlines, late-filing/payment penalties, MTD points and grace periods, record-keeping penalties/director offences or PAYE FPS/EPS: Check this point with one of our partner accountants.
 
-## Filing and payment
-
-| Item | Deadline or rule | Source |
-| --- | --- | --- |
-| Self Assessment, 2025 to 2026 | Paper by 31 October 2026; online and payment by 31 January 2027; payments on account also due 31 July. Register by 5 October after the tax year | https://www.gov.uk/self-assessment-tax-returns/deadlines |
-| Late return (not in MTD) | £100; after 3 months £10 a day up to £900; after 6 and 12 months the greater of 5% of the tax due or £300 each time | https://www.gov.uk/self-assessment-tax-returns/penalties |
-| Late payment (not in MTD) | 5% of unpaid tax at 30 days, 6 months and 12 months, plus interest | same |
-| MTD quarterly updates, 2026 to 2027 | No penalties for late updates, but all must be sent before the return; late return points still apply | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax |
-| MTD late submission, from 2027 to 2028 updates | One point per missed deadline; at 4 points £200, and £200 for each further miss | same |
-| MTD late payment, 2026 to 2027 | 3% of tax owed at day 15 and 3% at day 30, then 10% a year from day 31 until paid or for up to 2 years; in the first year no penalty if, within 30 days, the tax is paid in full or HMRC is contacted to set up a payment plan; after the first year the window is 15 days. Late payment penalties do not apply to payments on account | same |
-| MTD late payment, 2027 to 2028 | 4% at day 15 and 4% at day 30, then 10% a year from day 31 until paid or for up to 2 years | same |
-| From April 2027 | The new points and late payment penalties apply to everyone who submits a personal Self Assessment return; a client who becomes exempt from MTD in 2027 to 2028 stays under them and the point threshold falls from 4 to 2 | same |
-| HMRC late payment interest | 7.75% from 9 January 2026; 8.00% from 24 November 2026 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
-| Company Tax Return | 12 months after the accounting period; Corporation Tax usually due 9 months and one day after it | https://www.gov.uk/company-tax-returns |
-| Companies House accounts, private company | 9 months from the accounting reference date; late filing penalty from £150 (not more than 1 month) to £1,500 (more than 6 months) | https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts |
-| Companies House, late two years in a row | The late filing penalty is doubled | https://www.gov.uk/annual-accounts/penalties-for-late-filing |
-| Payroll | Full Payment Submission on or before each payday; an Employer Payment Summary to claim reductions such as statutory pay | https://www.gov.uk/running-payroll/reporting-to-hmrc |
-
-## Completion checklist
-
-- Entity, accounting date and method confirmed; any traditional accounting opt-out noted for the return.
-- Retention date diaried per year (5 years after 31 January for individuals in business, 6 years after the year end for companies, 6 years for VAT, 3 years after the tax year for PAYE and CIS), extended for enquiries, late returns and long-lived assets.
-- Allowance compared with actual costs; Self Assessment registration duty checked.
-- Correct year's mileage rate used; vehicle eligibility, home hours and occupants logged.
-- MTD tested on the right return; software linked; update period chosen; deadlines diaried.
-- VAT threshold tested; VAT account and digital links in place.
-- Bank, VAT control and director's loan accounts reconciled.
-- Capital allowances at the rate for the period, hybrid if the period spans April 2026.
-- Company size tested; accounts format chosen; Companies House and HMRC deadlines diaried.
-- Qualified accountant sign-off before filing.
+Ordinary HMRC late-payment interest was 7.75% from 9 January through 23 November 2026 and is 8.00% from 24 November 2026; split a spanning calculation at rate changes. [HMRC interest table](https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates). Actual interest periods and penalty regimes: Check this point with one of our partner accountants.
 
 ## Sources
 
-| Source | What was read | URL | Read on |
-| --- | --- | --- | --- |
-| GOV.UK, Self-employed records | Read for the records sole traders and partners keep | https://www.gov.uk/self-employed-records/what-records-to-keep | 2026-11-14 |
-| GOV.UK, Self-employed records: how long to keep | Read for at least 5 years after the 31 January deadline and 15 months for very late returns | https://www.gov.uk/self-employed-records/how-long-to-keep-your-records | 2026-11-14 |
-| Taxes Management Act 1970, s.12B | Read for the fifth anniversary rule and the GBP 3,000 maximum penalty | https://www.legislation.gov.uk/ukpga/1970/9/section/12B | 2026-11-14 |
-| Finance Act 1998, Sch 18 paras 21 and 23 | Read for the sixth anniversary rule and the GBP 3,000 company penalty | https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/23 | 2026-11-14 |
-| Companies Act 2006, ss.382, 384A, 386 to 388 | Read for small and micro limits, record content, the offence and the 3 and 6 year minimums | https://www.legislation.gov.uk/ukpga/2006/46/section/388 | 2026-11-14 |
-| GOV.UK, Company and accounting records | Read for company records, 6 years and director disqualification | https://www.gov.uk/running-a-limited-company/company-and-accounting-records | 2026-11-14 |
-| HMRC Compliance Handbook CH14700 | Read for PAYE and CIS records kept 3 years after the tax year | https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch14700 | 2026-11-14 |
-| GOV.UK, Cash basis and who can use it | Read for the default method, the exclusions and the per-business choice | https://www.gov.uk/simpler-income-tax-cash-basis/who-can-use-cash-basis | 2026-11-14 |
-| HMRC Business Income Manual BIM72005 | Read for consistent dates and VAT under the cash basis | https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim72005 | 2026-11-14 |
-| GOV.UK, Tax-free allowances on property and trading income | Read for the GBP 1,000 allowances, the GBP 2,500 line and 5 October registration | https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income | 2026-11-14 |
-| GOV.UK, Simplified expenses (vehicles, home, premises) | Read for 55p, 45p, 25p, 24p, the home and premises flat rates and HMRC's examples | https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles | 2026-11-14 |
-| GOV.UK, Check if you need MTD for Income Tax | Read for the GBP 50,000, 30,000 and 20,000 tests and start dates | https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax | 2026-11-14 |
-| GOV.UK, Work out qualifying income for MTD | Read for what counts, the GBP 52,000 example, 3-year opt out and ceased income | https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax | 2026-11-14 |
-| GOV.UK, MTD digital records and quarterly updates | Read for record content, the GBP 90,000 categorisation line and the update deadlines | https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates | 2026-11-14 |
-| GOV.UK, Penalties for MTD for Income Tax | Read for points, GBP 200, the 3% and 4% late payment rates and the April 2027 change | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-11-14 |
-| GOV.UK, VAT registration and thresholds | Read for GBP 90,000, 88,000 and the scheme join and leave limits | https://www.gov.uk/how-vat-works/vat-thresholds | 2026-11-14 |
-| GOV.UK, Keeping VAT records | Read for 6 and 10 year retention and the VAT account | https://www.gov.uk/charge-reclaim-record-vat/keeping-vat-records | 2026-11-14 |
-| VAT Act 1994, s.69 | Read for the GBP 500 records penalty | https://www.legislation.gov.uk/ukpga/1994/23/section/69 | 2026-11-14 |
-| GOV.UK, Capital allowances pages | Read for AIA GBP 1 million, full expensing, 40% FYA, 14% and 6% rates and car rules | https://www.gov.uk/work-out-capital-allowances/rates-and-pools | 2026-11-14 |
-| GOV.UK, Self Assessment deadlines and penalties | Read for 31 October, 31 January, 31 July and the late filing penalties | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-11-14 |
-| HMRC interest rates for late and early payments | Read for 7.75% from 9 January 2026 and 8.00% from 24 November 2026 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-11-14 |
-| Companies House, Life of a company part 1 | Read for the 9 month deadline and late filing penalties | https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts | 2026-11-14 |
-| Companies House news, 23 October 2026 | Read for the paused profit and loss requirement and iXBRL from April 2028 | https://www.gov.uk/government/news/companies-house-update-to-accounts-filing-from-april-2028 | 2026-11-14 |
-| HMRC SA103F 2025-26 form | Read for boxes 17 to 31 and the GBP 90,000 total-expenses option | https://assets.publishing.service.gov.uk/media/69c2635b13101e9908704b36/SA103F_2026.pdf | 2026-11-14 |
+| Source | What was read or reused | Read on |
+| --- | --- | --- |
+| https://www.gov.uk/self-employed-records ; https://www.gov.uk/self-employed-records/what-records-to-keep ; https://www.gov.uk/self-employed-records/how-long-to-keep-your-records | Contents, nominated partner, retention and lost records | 2026-11-26 |
+| https://www.legislation.gov.uk/ukpga/1970/9/section/12B ; https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/21 ; https://www.legislation.gov.uk/ukpga/2006/46/section/388 | Operative retention rules and extensions | 2026-11-26 |
+| https://www.gov.uk/running-a-limited-company/company-and-accounting-records ; https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch14700 | Company content, separation, retention/loss; PAYE/CIS retention | 2026-11-26 |
+| https://www.gov.uk/simpler-income-tax-cash-basis ; https://www.gov.uk/simpler-income-tax-cash-basis/who-can-use-cash-basis ; https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim72005 | Reused completed SA103 cash-method read; read eligibility, consistent dates and VAT treatment | 2026-11-26 |
+| https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income ; https://www.legislation.gov.uk/ukpga/2005/5/section/783AA ; https://www.legislation.gov.uk/ukpga/2005/5/section/783AE ; https://www.legislation.gov.uk/ukpga/2005/5/section/783AH ; https://www.legislation.gov.uk/ukpga/2005/5/section/783AK | Reused completed SA103 trading proof; read property restrictions and reporting text | 2026-11-26 |
+| https://www.gov.uk/simpler-income-tax-simplified-expenses/print ; https://www.gov.uk/simpler-income-tax-simplified-expenses/living-at-your-business-premises | Reused completed SA103 mileage/home proof; read premises rates and worked case | 2026-11-26 |
+| https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax ; https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax ; https://www.legislation.gov.uk/uksi/2026/336/contents/made | Reused completed SA103 qualifying-income/entry proof; conditions applied to original case | 2026-11-26 |
+| https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/create-digital-records ; https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates | Read digital content/links, categorisation, timing, cumulative periods and deadlines | 2026-11-26 |
+| https://www.gov.uk/register-for-vat ; https://www.gov.uk/vat-rates ; https://www.gov.uk/charge-reclaim-record-vat/keeping-vat-records | Reused completed UK VAT threshold/rate proof; read records, digital links, retention and account | 2026-11-22; records 2026-11-26 |
+| https://www.gov.uk/self-assessment-tax-returns/deadlines ; https://www.legislation.gov.uk/ukpga/1970/9/section/8 ; https://www.legislation.gov.uk/ukpga/1970/9/section/59B | Reused completed SA103 filing/payment proof and late-notice conditions | 2026-11-26 |
+| https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | Reused completed UK VAT/SA103 interest proof; effective-date applicability checked | 2026-11-22; applicability 2026-11-26 |
 
-Every other page is linked in its table row or step above and was opened on 2026-11-14.
-
-Not yet confirmed: the Financial Reporting Standard 102 and 105 points (Periodic Review 2024 amendments from 1 January 2026, no deferred tax for micro-entities), because the FRC site is not an allowed source on this pass; and the SA103F boxes for 2026-27, because only the 2025-26 form is published.
+Not yet confirmed: no unresolved claim is offered as a usable rule. Specialist cases and unproven FRC/company-format statements are explicitly referred above; actual-year forms and any human declaration/sign-off still require the accountant.
