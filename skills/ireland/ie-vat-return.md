@@ -98,7 +98,7 @@ Section 114 imposes simple interest of 0.0274% per day or part-day while payable
 
 Section 115 provides EUR 4,000 fixed penalties for specified registration, invoicing, return, RTD, VIES and records failures; applicable company-secretary penalties are separate. Do not describe every failure as automatically attracting every penalty.
 
-Current incorrect-return penalties are in **s.116A**; s.116 does not apply to post-Finance-Act-2021 acts/omissions/disclosures. Careless-default reductions depend on significance, cooperation, disclosure validity and previous disclosures. Section 116A(9) removes the careless-default penalty where the aggregate specified VAT/income-tax/stamp-duty/CAT/excise liability does not exceed EUR 6,000 and its reduction condition is satisfied. This does not erase the tax or interest. For the full deliberate/careless matrix, incorrect documents/numbers, secretary liabilities, repeat disclosures, innocent errors and interventions: **Check this point with one of our partner accountants.** Never submit a declaration or disclosure without the person's informed authority.
+Current incorrect-return penalties are in **s.116A**; s.116 does not apply to post-Finance-Act-2021 acts/omissions/disclosures. Careless-default reductions depend on significance, cooperation, disclosure validity and previous disclosures. Section 116A(9) removes the careless-default penalty where the aggregate specified VAT, Taxes Consolidation Act liabilities (including income/corporation tax), stamp-duty, CAT and excise liability does not exceed EUR 6,000 and its reduction condition is satisfied. This does not erase the tax or interest. For the full deliberate/careless matrix, incorrect documents/numbers, secretary liabilities, repeat disclosures, innocent errors and interventions: **Check this point with one of our partner accountants.** Never submit a declaration or disclosure without the person's informed authority.
 
 ## Cross-border points
 
@@ -229,7 +229,7 @@ These preserve the original data, including imperfect invoice figures. Apply the
 | Test 11: qualifying restaurant meal EUR 50 net after 1 July 2026 | At the stipulated 9% tax point: EUR 4.50 T1. |
 | Test 12: US import customs value EUR 5,000, duty EUR 200, rate 23% | If valid postponed accounting applies and import VAT is fully deductible: PA1 EUR 5,200; T1/T2 EUR 1,196. Check the actual customs VAT base; other chargeable incidental expenses must not be omitted. |
 | Test 13: cattle, EUR 10,000 plus stated 5.5% / EUR 550 farmer addition | Arithmetic at the original stated rate is EUR 550, but that is not the 2026 4.5% addition (arithmetically EUR 450). Hold for a corrected invoice and scheme/credit eligibility; no automatic EUR 550 T2 claim. **Check this point with one of our partner accountants.** |
-| Test 14: client dinner EUR 200, stated VAT EUR 16.36 at 9% | If client entertainment, input blocked regardless of the supplier's rate; do not validate the invoice rate from the bank description. |
+| Test 14: client dinner EUR 200, stated VAT EUR 16.36 at 9% | If client entertainment, input blocked regardless of the supplier's rate. The original 9%-inclusive arithmetic does not reconcile: EUR 200 × 9/109 = EUR 16.51, not EUR 16.36; obtain the invoice rather than validating the stated rate. |
 
 ## Ask the client first
 
@@ -247,6 +247,7 @@ Official provisions and passages read on 2026-11-26 are listed below. The statut
 |---|---|---|
 | Read for: VATCA ss.6, 9, 12, 16, 34: accountability and transaction scope | https://revisedacts.lawreform.ie/eli/2010/act/31/revised/en/html | 2026-11-26 |
 | Read for: VATCA ss.37, 41, 46: price, two-thirds and rates | https://revisedacts.lawreform.ie/eli/2010/act/31/section/46/revised/en/html | 2026-11-26 |
+| Read for: VATCA s.53: imported-goods VAT base including additional taxes/charges | https://revisedacts.lawreform.ie/eli/2010/act/31/section/53/revised/en/html | 2026-11-26 |
 | Read for: VATCA s.59: deduction conditions and qualifying vehicles | https://revisedacts.lawreform.ie/eli/2010/act/31/section/59/revised/en/html | 2026-11-26 |
 | Read for: VATCA s.60: blocked expenditure and exceptions | https://revisedacts.lawreform.ie/eli/2010/act/31/section/60/revised/en/html | 2026-11-26 |
 | Read for: VATCA s.62: vehicle adjustment formula | https://revisedacts.lawreform.ie/eli/2010/act/31/section/62/revised/en/html | 2026-11-26 |
