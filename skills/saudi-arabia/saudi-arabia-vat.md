@@ -174,7 +174,24 @@ inputs:
   staff_party: 15000
   credit_note: 2000
   rate: 0.15
+  export_services: 25000
+  export_goods: 50000
+  residential_rent: 8000
+  apartment: 1100000
+  customs_base: 100000
+  understatement: 8000
+  correction_limit: 15000
+  laptop_cost: 4000
+  laptop_market: 2500
 steps:
+  - service_export_vat: export_services * 0
+  - goods_export_vat: export_goods * 0
+  - residential_vat: residential_rent * 0
+  - property_vat: apartment * 0
+  - stipulated_customs_vat: customs_base * rate
+  - error_below_limit_by: correction_limit - understatement
+  - held_market_arithmetic: laptop_market * rate
+  - held_cost_arithmetic: laptop_cost * rate
   - sale_vat: sale * rate
   - sale_total: sale + sale_vat
   - equipment_vat: equipment * rate
@@ -187,6 +204,14 @@ steps:
   - credit_vat: credit_note * rate
   - credit_total: credit_note + credit_vat
 expected:
+  service_export_vat: 0
+  goods_export_vat: 0
+  residential_vat: 0
+  property_vat: 0
+  stipulated_customs_vat: 15000
+  error_below_limit_by: 7000
+  held_market_arithmetic: 375
+  held_cost_arithmetic: 600
   sale_vat: 1500
   sale_total: 11500
   equipment_vat: 750
