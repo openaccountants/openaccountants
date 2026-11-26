@@ -4,6 +4,7 @@ description: Use this skill when advising on LEGAL tax minimization strategies f
 version: 1.6
 jurisdiction: AU
 tax_year: 2025
+tax_year_notes: "Figures are for 2025-26; use 2026-27 values only where expressly labelled and relevant to the requested year."
 last_updated: 2026-11-26
 depends_on:
   - bookkeeping-workflow-base
@@ -28,10 +29,10 @@ domain: tax-optimization
 | Anti-avoidance | Part IVA, ITAA 1936 (General Anti-Avoidance Rule) |
 | Tax authority | Australian Taxation Office (ATO) |
 | Filing deadline | 31 October (self-lodgers); agent-lodged extensions vary |
-| Individual top marginal rate | 45% basic income tax above $190,000, generally plus the 2% Medicare levy |
+| Individual top marginal rate | 45% basic income tax above $190,000, generally plus the 2% Medicare levy [ATO, resident tax rates](https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents) |
 | Company rate (base rate entity) | 25% (aggregated turnover < $50m, ≤80% passive income) |
 | Company rate (other) | 30% |
-| CGT discount (individuals) | Generally 50% after the asset was acquired at least 12 months before the CGT event, subject to eligibility |
+| CGT discount (individuals) | Generally 50% after the asset was acquired at least 12 months before the CGT event, subject to eligibility [ATO, CGT discount](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cgt-discount) |
 | GST rate | 10% |
 | Superannuation guarantee | 12% (2025–26) |
 
@@ -205,13 +206,13 @@ For general Division 40 depreciation, use 150% for assets held before 10 May 200
 
 | Strategy | Detail |
 | --- | --- |
-| Determine income derivation by year end | Under the receipts method, consider when payment was received. Under the earnings method, consider when a recoverable debt arose. Check the contract and the appropriate method |
+| Determine income derivation by year end | Under the receipts method, consider when payment was received. Under the earnings method, consider when a recoverable debt arose. Check the contract and the appropriate method [TR 98/1](https://www.ato.gov.au/law/view/document?docid=TXR/TR981/NAT/ATO/00001) |
 | Eligible prepayments before year end | Test the taxpayer, service period, choices and agreement rules below before bringing forward a deduction. Paying before 30 June alone does not qualify |
 | Bring forward asset purchases | Use instant asset write-off before 30 June deadline. Asset must be first used or installed ready for use |
 | Concessional super contribution | Maximise contributions before 30 June — $30,000 cap (2025–26). Carry-forward unused cap available if total super balance <$500,000 |
 | Capital gains harvest | Realise capital losses before 30 June to offset gains. Wash sale rules: ATO will scrutinise buybacks of substantially similar assets |
-| Defer capital gains | For eligible individuals and trusts, the 50% discount generally requires acquisition at least 12 months before the CGT event |
-| Small business CGT concessions | Div 152: 15-year exemption, 50% active asset reduction, retirement exemption ($500k lifetime cap), rollover. Maximum net asset value no more than $6m or aggregated turnover below $2m, subject to the other Division 152 conditions |
+| Defer capital gains | For eligible individuals and trusts, the 50% discount generally requires acquisition at least 12 months before the CGT event [ATO, CGT discount](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cgt-discount) |
+| Small business CGT concessions | Div 152: 15-year exemption, 50% active asset reduction, retirement exemption ($500k lifetime cap), rollover. Maximum net asset value no more than $6m or aggregated turnover below $2m, subject to the other Division 152 conditions [ATO, small business CGT concessions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions) |
 
 The ordinary 12 month rule applies to otherwise deductible non-business expenditure of individuals and to qualifying small or medium business entities that have not chosen section 82KZMD. The eligible service period must be no more than 12 months and end by the last day of the income year following the year the expenditure is incurred. Otherwise, non-excluded expenditure is spread over the eligible service period under section 82KZM. Use the statutory service period, which starts no earlier than incurrence and is capped at 10 years; the payment date alone does not establish it. [ITAA 1936 ss 82KZL, 82KZM and 82KZMA](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html).
 
@@ -248,7 +249,7 @@ For example, assume an individual's otherwise deductible non-business expense in
 | Non-concessional contributions | Cap $120,000/year (or $360,000 under bring-forward rule over 3 years). Not deductible, but earnings taxed at max 15% in super | s 292-85 |
 | Salary sacrifice | Pre-tax super contributions reduce assessable income. Counted towards concessional cap |  |
 | Spouse contribution offset | Contribute to low-income spouse's super for tax offset up to $540 | s 290-230 |
-| Government co-contribution | For 2025–26, eligible personal after-tax contributions attract 50c per dollar, up to $500 at relevant income of $47,488 or less, tapering to zero at $62,488 | Superannuation (Government Co-contribution for Low Income Earners) Act 2003 |
+| Government co-contribution | For 2025–26, eligible personal after-tax contributions attract 50c per dollar, up to $500 at relevant income of $47,488 or less, tapering to zero at $62,488 | Superannuation (Government Co-contribution for Low Income Earners) Act 2003 [ATO, government contributions](https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/government-contributions) |
 | Division 293 tax | Additional 15% contributions tax on individuals with income + concessional contributions >$250,000 | Div 293 |
 
 - **2026-27 concessional cap** — The general concessional cap is $32,500 for 2026-27, up from $30,000 in 2025-26. Count contributions across all funds, including employer and salary sacrifice amounts, and check fund receipt dates and the actual unused amounts before relying on the carry-forward. Before claiming a personal contribution deduction, lodge the notice of intent and obtain the fund's acknowledgement, and weigh contributions tax, Division 293 and preservation against the personal tax saving.  _([ATO, Concessional contributions cap](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/concessional-contributions-cap); [ATO, Personal super contributions](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/how-to-save-more-in-your-super/personal-super-contributions))_
@@ -263,11 +264,11 @@ For example, assume an individual's otherwise deductible non-business expense in
 
 | Strategy | Detail |
 | --- | --- |
-| CGT 50% discount | Eligible individuals and trusts generally apply the 50% discount after capital losses where the asset was acquired at least 12 months before the CGT event |
-| Negative gearing | Apply deductible expenditure and loss rules for the transaction year and ownership structure. For excess residential rental deductions from 2027–28, check the new restrictions and transitional rules below |
+| CGT 50% discount | Eligible individuals and trusts generally apply the 50% discount after capital losses where the asset was acquired at least 12 months before the CGT event [ATO, CGT discount](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cgt-discount) |
+| Negative gearing | Apply deductible expenditure and loss rules for the transaction year and ownership structure. For excess residential rental deductions from 2027–28, check the new restrictions and transitional rules below [Tax Reform No. 1 Act 2026, Schedule 2](https://www.legislation.gov.au/C2026A00049/asmade/text) |
 | Franking credits | Australian company dividends carry franking credits. Excess credits refundable for individuals and super funds |
-| Super in retirement phase | Eligible retirement-phase earnings may be exempt. The general transfer balance cap is $2m in 2025–26 and $2.1m in 2026–27. Personal caps can differ |
-| Transition to retirement (TTR) | A qualifying member can start a TTR income stream at preservation age. Before it enters retirement phase, investment earnings generally remain taxable in the fund at up to 15% |
+| Super in retirement phase | Eligible retirement-phase earnings may be exempt. The general transfer balance cap is $2m in 2025–26 and $2.1m in 2026–27. Personal caps can differ [ATO, transfer balance cap](https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/transfer-balance-cap) |
+| Transition to retirement (TTR) | A qualifying member can start a TTR income stream at preservation age. Before it enters retirement phase, investment earnings generally remain taxable in the fund at up to 15% [ATO, transition to retirement](https://www.ato.gov.au/individuals-and-families/jobs-and-employment-types/working-as-an-employee/leaving-the-workforce/transition-to-retirement) |
 
 - **Model the transaction year** — The Tax Reform No. 1 Act changes CGT from 1 July 2027 and restricts excess residential rental deductions from 2027-28, with transitional rules and exceptions, and the working Australians tax offset also starts in 2027-28. Model capital gains and rental deductions for the actual year of the transaction and keep a dated comparison with assumptions, eligibility evidence, implementation deadlines and whole-year tax and cash effects.  _([Treasury Laws Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00049/asmade/text))_
 
