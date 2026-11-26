@@ -191,7 +191,7 @@ This skill prepares **Form 1040** and its three core schedules (1, 2, 3) plus **
 | MFJ / QSS | $137,000 | $1,252,700 | $1,800,700 [2025 authority](https://www.irs.gov/pub/irs-pdf/f6251.pdf) |
 | MFS | $68,500 | $626,350 | $900,350 [2025 authority](https://www.irs.gov/pub/irs-pdf/f6251.pdf) |
 
-- **AMT rates (2025)** — After the exemption, 26% applies to the first $239,100 ($119,550 MFS) of the ordinary AMT base and 28% above. Preferential capital gains require Form 6251 Part III. The 2025 exemption reduction is 25% of AMTI above its threshold. MFS AMTI above $900,350 has an additional adjustment; apply the instructions. [Form 6251](https://www.irs.gov/pub/irs-pdf/f6251.pdf); [instructions](https://www.irs.gov/instructions/i6251).
+- **AMT rates** — 26% on AMTI up to the 2025 ordinary-base breakpoint, measured **after subtracting the applicable exemption and separating preferential gains**; 28% above. The breakpoint for the ordinary base is $239,100 ($119,550 MFS). Use Form6251 PartIII for preferential gains; do not apply these rates to total AMTI before the exemption. The 2025 exemption reduction is25% of excess AMTI; MFS AMTI above $900,350 has an additional adjustment. [Form6251](https://www.irs.gov/pub/irs-pdf/f6251.pdf); [instructions](https://www.irs.gov/instructions/i6251).
 
 ### 2.5 NIIT (Net Investment Income Tax) — §1411
 
@@ -216,7 +216,7 @@ This skill prepares **Form 1040** and its three core schedules (1, 2, 3) plus **
 | MFJ | $250,000 [2025 authority](https://www.irs.gov/instructions/i8959) |
 | MFS | $125,000 [2025 authority](https://www.irs.gov/instructions/i8959) |
 
-- **Additional Medicare Tax rate** — 0.9% on Medicare wages plus positive self-employment income above the filing-status threshold. RRTA compensation is tested separately. Use Medicare wages (generally W-2 box 5), not box 1. QSS uses $200,000. Reconcile actual withholding on Form 8959. [instructions](https://www.irs.gov/instructions/i8959).
+- **Additional Medicare Tax rate** — 0.9% on wages/SE income over threshold. Here wages means Medicare wages (generally W-2 box5), not box1; combine them with positive SE income, without offsetting a SE loss. RRTA compensation is tested separately. QSS uses $200,000. Reconcile actual withholding on Form8959. [instructions](https://www.irs.gov/instructions/i8959).
 - **Reporting** — Reported on Form 8959, flows to Schedule 2 Line 11. Employer withholds the 0.9% on wages over $200,000 regardless of filing status; the return reconciles.  _(§3101(b)(2) and §1401(b)(2))_
 
 ### 2.7 SALT cap — §164(b)(6) as amended by OBBBA
@@ -236,7 +236,7 @@ This skill prepares **Form 1040** and its three core schedules (1, 2, 3) plus **
 - **QBI** — Employee wages are not QBI. Qualified REIT dividends and qualified PTP income may produce a deduction; do not set line 13a to zero just because there is no Schedule C. For eligibility, wage/property limits, SSTBs, threshold/phase-in calculations and the post-2025 minimum deduction: Check this point with one of our partner accountants. [Form 8995 instructions](https://www.irs.gov/instructions/i8995).
 - **Ordinary brackets** — Use the separately dated 2025 tables below or 2026 tables in section 0. Do not substitute one year for the other.
 - **Standard deduction increase** — increased for 2025 under OBBBA (see §2.1).  _(OBBBA)_
-- **Child/other-dependent credits** — Use Schedule 8812 and the eligibility tests below; a cap does not establish entitlement. [2025 instructions](https://www.irs.gov/instructions/i1040s8).
+- **Child Tax Credit** — $2,200 per qualifying child under 17 (§24(h)), refundable portion $1,700 in 2025, made permanent by OBBBA §70104. Phaseout begins $400k MFJ / $200k other. These are maximum amounts, not automatic entitlements: apply the dependent, residence, SSN/TIN, MAGI and liability/ACTC tests below. [2025 Schedule8812 instructions](https://www.irs.gov/instructions/i1040s8); [Act §70104](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
 - **§25D Residential Clean Energy Credit termination** — **AUDIT FLASH POINT** — P.L.119-21 §70506 terminates the credit for expenditures made after December 31, 2025 (IRC §25D(h)). Apply the operative expenditure/completion rules to the actual installation; the former phase-down does not extend that deadline. A placeholder notice number is not authority. [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
 - **Clean-vehicle termination** — New and previously owned vehicle credits do not apply to vehicles acquired after September 30, 2025. Timely acquisition does not by itself establish eligibility; delivery/placed-in-service and other tests remain. [2025 Form 8936 instructions](https://www.irs.gov/instructions/i8936).
 - **§25E Used Clean Vehicle Credit termination** — P.L.119-21 §70501 terminates §25E for vehicles acquired after September 30, 2025. Establish acquisition and other eligibility conditions separately. [LAW](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
@@ -480,6 +480,10 @@ HSA contributions require eligible HDHP coverage, no disqualifying coverage, no 
 
 ### 9.2 AMT computation flow
 
+For a 2025 ordinary-income overview without Schedule1-A deductions, use the following summary subject to the exact form fields below. Count the standard-deduction add-back only once: step2 is part of the adjustments summarized by step3, not a second add-back. “Regular tax” means the adjusted comparison at Form6251 line10.
+
+- **AMT computation steps** — 1. Start with regular taxable income (Line 15). 2. Add back the standard deduction (if claimed). 3. Add AMT adjustments and preferences (Form 6251 Lines 2a-2t). 4. Subtract the AMT exemption (with phaseout if AMTI > threshold). 5. Apply 26%/28% AMT rates. 6. Subtract AMT foreign tax credit. 7. Compare to regular tax. Apply PartIII instead where preferential gains require it; the fully specified computation below controls all adjustments, including Schedule1-A rebasing and line3. [Final2025 Form6251](https://www.irs.gov/pub/irs-pdf/f6251.pdf).
+
 - **AMT computation (2025)** — Line 1a is Form 1040 line 14 less Schedule 1-A line 37; 1b subtracts that from 11b. Apply every relevant line 2/3 adjustment, including standard deduction or Schedule A taxes at 2a; total at 4. Apply line 5 exemption and MFS adjustment, then 6/7 and Part III where required. Subtract AMT foreign tax credit at 8 to obtain tentative minimum tax at 9. Line 10 is the form’s adjusted regular-tax comparison, not automatically Form 1040 line 16. Positive 9 minus 10 goes at 11 to Schedule 2 line 2. [Form 6251](https://www.irs.gov/pub/irs-pdf/f6251.pdf).
 
 ### 9.3 AMT credit — Form 8801
@@ -567,7 +571,7 @@ Other additional-tax topics remain routed through that form: advance-premium/veh
 
 Although primarily a freelancer concern (refer to `us-quarterly-estimated-tax`), W-2 taxpayers with material non-wage income (RSU vesting, large dividends, IRA conversions to Roth, year-end capital gains) may owe estimates.
 
-- **Estimated-tax installments** — Generally test timely payments against 90% of current-year tax or 100% of prior-year tax; substitute 110% when prior AGI exceeds $150,000 ($75,000 if current filing status MFS). The prior return must cover 12 months. A qualifying US citizen/resident with no prior-year liability for a full year has a separate exception; farmers/fishers, uneven income and waivers need their own tests. A year-end refund does not prove installments were timely. [Form 2210 instructions](https://www.irs.gov/instructions/i2210).
+- **Safe harbors** — 90% of current year tax, OR 100% of prior year tax (110% if prior-year AGI > $150,000 / $75,000 MFS). Apply the Form2210 tax definitions and timely-installment requirements; use $75,000 when the current status is MFS. The prior return must cover12 months. The no-prior-liability citizen/resident exception, farmers/fishers, uneven income and waivers have separate tests. A year-end refund does not prove timely installments. [Form2210 instructions](https://www.irs.gov/instructions/i2210).
 - **Underpayment penalty computation** — Underpayment penalty computed on Form 2210. The "annualized income installment method" can reduce penalty when income is lumpy.  _(Form 2210)_
 - **De minimis exception** — $1,000 USD (no penalty if tax owed after withholding and refundable credits is < $1,000)  _(§6654)_
 
