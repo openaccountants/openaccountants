@@ -1,10 +1,10 @@
 ---
 name: rwanda-income-tax
 description: "Rwanda personal income tax for 2026: PAYE bands, casual labour, micro and small business regimes, real regime, capital gains at 10%, the annual declaration by 31 March and how to file it in E-Tax. Use for employees and self-employed individuals in Rwanda."
-version: 0.3
+version: 0.4
 jurisdiction: RW
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -366,7 +366,7 @@ Steps from the RRA Tax Handbook 2025 (https://www.rra.gov.rw/fileadmin/Folder_fo
 
 | Fault | Consequence | Source |
 |---|---|---|
-| Late declaration, fixed fine (Law 020/2023 art 81) | FRW 50,000 for a non-commercial person or turnover over FRW 2,000,000 up to FRW 20,000,000; FRW 300,000 for a public institution or non-profit with turnover over FRW 20,000,000; FRW 500,000 for a notified large taxpayer | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf |
+| Late declaration, fixed fine (Law 020/2023 art 81) | FRW 50,000 for a non-commercial person or turnover over FRW 2,000,000 up to FRW 20,000,000; FRW 300,000 for a public institution, a non-profit or a taxpayer with turnover over FRW 20,000,000; FRW 500,000 for a notified large taxpayer | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf |
 | Repeat fault within 2 years | Fine doubled; third time, four times | same |
 | Certified statements not filed when required | FRW 500,000 every month until filed | same |
 | Late declaration and payment (art 82) | 20% of tax up to 30 days, 40% from day 31 to 60, 60% after 60 days | same |
@@ -433,7 +433,7 @@ expected:
 | Law 027/2022 establishing taxes on income: read for arts 3-5, 8-10, 12-21, 24-33, 36-38, 44-50, 56-69 | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf | 2026-11-14 |
 | Law 051/2023 amending the income tax law: read in full | https://www.rra.gov.rw/fileadmin/user_upload/Law_amending_Income_Tax_Ok.pdf | 2026-11-14 |
 | Official Gazette Special of 29/05/2025: Law 009/2025 (VAT), Law 014/2025 (income tax): read in full, both laws | https://www.minijust.gov.rw/index.php?eID=dumpFile&f=130496&t=f&token=4b9d4de9658212b7aaeeb5c8a42c823a7b879d7b | 2026-11-14 |
-| Law 020/2023 on tax procedures: read for arts 15, 35, 78, 80-88 | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-14 |
+| Law 020/2023 on tax procedures: read for arts 15, 35, 78, 80-88, 104 (Ikinyarwanda text of art 81) | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-26 |
 | Ministerial Order 003/26/10/TC of 29/04/2026: read for arts 17, 19, 32-33 | https://www.rra.gov.rw/fileadmin/Folder_for_2025/Ministerial_Order_on_Simplified_Accounting_Method_April_2026.pdf | 2026-11-14 |
 | Ministerial Order 009/26/10/TC of 24/09/2026: read in full | https://www.rra.gov.rw/fileadmin/user_upload/Ministerial_orders-Financial_statements.pdf | 2026-11-14 |
 | RRA Tax Handbook 2025: read for E-Tax steps, real regime, PAYE, VAT declaration chapters | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-14 |
