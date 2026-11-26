@@ -37,8 +37,8 @@ Title 9 requires the insight described in article 362. EU-endorsed IFRS is an al
 | Category | Assets at acquisition/manufacturing cost, at most | Net turnover, at most | Average employees, fewer than | Source |
 |---|---:|---:|---:|---|
 | Micro | EUR 450,000 | EUR 900,000 | 10 | [BW2 art. 395a](https://wetten.overheid.nl/BWBR0003045/2026-07-01); [2024 decree art. 1](https://zoek.officielebekendmakingen.nl/stb-2024-52.html) |
-| Small | EUR 7,500,000 | EUR 15,000,000 | 50 | [BW2 art. 396](https://wetten.overheid.nl/BWBR0003045/2026-07-01) |
-| Medium | EUR 25,000,000 | EUR 50,000,000 | 250 | [BW2 art. 397](https://wetten.overheid.nl/BWBR0003045/2026-07-01) |
+| Small | EUR 7,500,000 | EUR 15,000,000 | 50 | [BW2 art. 396, official XML](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0003045/2026-07-01_0/xml/BWBR0003045_2026-07-01_0.xml) |
+| Medium | EUR 25,000,000 | EUR 50,000,000 | 250 | [BW2 art. 397, official XML](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0003045/2026-07-01_0/xml/BWBR0003045_2026-07-01_0.xml) |
 
 Meet at least **two of three** criteria on **two consecutive balance dates**, without subsequently failing the test on two consecutive dates. Money ceilings are inclusive; employee limits are strict. Net turnover excludes discounts and turnover taxes. For the first and second financial years, meeting the relevant requirements at the first year's balance date also qualifies. The increased money ceilings apply to years beginning on or after **1 January 2024**; optional application to years beginning on or after **1 January 2023** is permitted. [BW2 articles 377(6), 395a–398](https://wetten.overheid.nl/BWBR0003045/2026-07-01); [decree articles 1–4](https://zoek.officielebekendmakingen.nl/stb-2024-52.html).
 
@@ -147,6 +147,7 @@ Deliver the period/framework/size memo, reconciled trial balance and adjustments
 | Official source | Read on and scope |
 |---|---|
 | [BW2, effective 1 July 2026](https://wetten.overheid.nl/BWBR0003045/2026-07-01) | 2026-11-26: operative articles 10, 10a, 101, 210, 360–365, 377, 384–386, 393, 394, 395a–398, 403 and 408; statutory rules retained above. |
+| [BW2 official XML, same consolidation](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0003045/2026-07-01_0/xml/BWBR0003045_2026-07-01_0.xml) | 2026-11-26: articles 396–397(1), small/medium thresholds; manifest identifies BWBR0003045, effective 1 July 2026. |
 | [Staatsblad 2024, 52](https://zoek.officielebekendmakingen.nl/stb-2024-52.html) | 2026-11-26: articles 1–4, raised monetary ceilings and reporting-year application. |
 | [RJ edition 2026 introduction](https://www.rjnet.nl/siteassets/ten-geleides/rj-bundel/ten-geleide-bij-editie-2026.pdf) | 2026-11-26: p. 39, edition applicability only; detailed standards are not proven by this introduction. |
 | [AFM definitions](https://www.afm.nl/nl-nl/sector/accountantsorganisaties/begrippen) | 2026-11-26: external-accountant registration, licence requirement and regular/OOB distinction. |
