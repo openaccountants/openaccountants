@@ -2,17 +2,17 @@
 name: au-smsf
 description: >
   Use this skill whenever asked about Australian self-managed superannuation funds -- SMSF accounting, the SMSF annual return (SAR), supervisory levy, fund tax at 15%, exempt current pension income (ECPI), actuarial certificates, non-arm's length income or expenses (NALI/NALE), contribution caps and acceptance rules, minimum pension drawdowns, transfer balance cap and TBAR reporting, SMSF audits, in-house assets, LRBA safe harbour rates, or Division 296. Trigger on phrases like "SMSF", "self-managed super", "SAR", "supervisory levy", "actuarial certificate", "ECPI", "NALI", "TBAR", "minimum pension", "bare trust", or "SMSF audit". ALWAYS read this skill before touching any SMSF work.
-version: 1.0
+version: 1.1
 jurisdiction: AU
 tax_year: 2026
-last_updated: 2026-11-12
+last_updated: 2026-11-26
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 type: situation-rules
 ---
 
-# Australia Self-Managed Super Funds (SMSF) -- Accounting, Tax & Compliance Skill v1.0
+# Australia Self-Managed Super Funds (SMSF) -- Accounting, Tax & Compliance Skill v1.1
 
 ## Scope
 
@@ -72,7 +72,7 @@ type: situation-rules
 - **Corporate trustee** -- Corporate trustee: every member is a director and every director is a member. Single-member fund: sole director, or member + 1 other director.  _(SIS Act s 17A)_
 - **Employee of another member** -- No member may be the employee of another member unless they are relatives.  _(SIS Act s 17A)_
 - **Remuneration** -- Trustees/directors must not be remunerated for trustee duties (arm's-length professional services in another capacity are permitted, s 17B).  _(SIS Act s 17B)_
-- **Disqualified persons** -- Disqualified persons (s 120: undischarged bankrupts, dishonesty convictions, civil penalty orders) can never act -- check the ATO disqualified trustees register at onboarding.  _(SIS Act s 120)_
+- **Disqualified persons** -- A person cannot act while disqualified. Check SIS Act s 120 and the ATO register. Section 126B allows eligible people disqualified by a dishonesty conviction to seek a waiver.  _(SIS Act s 120)_
 - **Minors / lacking capacity** -- Minors and members lacking capacity act through a legal personal representative or parent/guardian (s 17A(3)); an enduring power of attorney can stand in for a member.  _(SIS Act s 17A(3))_
 
 #### 3.2 Individual vs corporate trustee
@@ -96,10 +96,10 @@ For one applicable contravention of SIS Act s 65(1), 67(1) or 84(1), s 166 sets 
 #### 3.3 Registration checklist (new fund)
 
 1. Execute trust deed, appoint trustees, hold initial assets (fund is not legally established until it holds assets).
-2. Each trustee/director signs the **ATO trustee declaration (NAT 71089)** within 21 days of appointment; retain 10 years.
+2. Each trustee/director signs the **ATO trustee declaration (NAT 71089)** within 21 days of appointment. Retain it while the trustee or director remains in office and for at least 10 years.
 3. Register with the ATO within 60 days: **TFN + ABN**, electing regulation under SIS s 19 (irrevocable).
 4. Open a fund bank account in the fund/trustee name (asset separation, SIS Reg 4.09A).
-5. Obtain an **ESA (electronic service address)** -- required for SuperStream employer contributions (critical under payday super) and for ALL rollovers in/out (SuperStream v3).
+5. Obtain an **ESA (electronic service address)** -- required for SuperStream employer contributions and electronic rollovers. In-specie rollovers and certain other rollovers are exceptions to electronic processing. [ATO rollover requirements](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-contributions-and-rollovers/rollovers-for-smsfs).
 6. Prepare the investment strategy (SIS Reg 4.09) BEFORE investing.
 7. First-year fund with no assets: request cancellation or 'return not necessary' -- otherwise the SAR is due.
 
@@ -125,19 +125,19 @@ For no-TFN tax, test assessable contributions under Subdivision 295-C, the contr
 
 #### 4.2 ECPI -- exempt current pension income
 
-- **Segregated method** -- **Segregated method** (ss 295-385): specific assets documented as solely supporting retirement-phase pensions; ALL income (and gains/losses -- disregarded) from those assets is exempt. No actuarial certificate needed for periods of full segregation. A fund 100% in retirement phase at ALL times in the year is deemed segregated for the whole year -- no certificate.  _(ITAA 1997 ss 295-385)_
-- **Proportionate method** -- **Proportionate method** (s 295-390): an actuary certifies the exempt proportion of unsegregated income based on average retirement-phase liabilities. **Actuarial certificate required every year the method is used -- obtain it BEFORE lodging the SAR.** Assessable contributions and NALI are never ECPI. Deductions must be apportioned; expenses of gaining ECPI are non-deductible.  _(ITAA 1997 s 295-390)_
+- **Segregated method** -- **Segregated method** (ss 295-385): specific assets documented as solely supporting retirement-phase pensions; ALL income (and gains/losses -- disregarded) from those assets is exempt. Section 295-385(3) generally requires an actuarial certificate before the return due date. The exception in subsections (4) and (5) applies where the fund's relevant liabilities throughout the income year were for prescribed retirement-phase income streams, including qualifying account-based, allocated and market-linked streams.  _(ITAA 1997 ss 295-385)_
+- **Proportionate method** -- **Proportionate method** (s 295-390): an actuary certifies the exempt proportion of unsegregated income based on average retirement-phase liabilities. **Actuarial certificate required every year the method is used -- obtain it before the date for lodgment and before lodging the SAR.** Assessable contributions and NALI are never ECPI. Deductions must be apportioned; expenses of gaining ECPI are non-deductible.  _(ITAA 1997 s 295-390)_
 - **Disregarded small fund assets** -- **Disregarded small fund assets (s 295-387):** the fund CANNOT use the segregated method (must use proportionate + certificate) when, just before the start of the income year, any member receiving a retirement-phase income stream (from any provider) had a **TSB over $1.6 million**. The $1.6m trigger is a fixed statutory figure -- it has NOT indexed with the transfer balance cap. Exception: a fund 100% in retirement phase at all times in the year escapes the rule (from 2021-22).  _(ITAA 1997 s 295-387)_
 - **Minimum-payment condition** -- **Minimum-payment condition:** ECPI for an account-based pension is only available if the SIS minimum was actually paid for the year (Section 6.1; Example 4).  _(Section 6.1)_
 
 #### 4.3 NALI and NALE -- **AUDIT FLASH POINT**
 
-- **NALI definition** -- Income is NALI (s 295-550, taxed at 45%) where it exceeds an arm's-length amount from a non-arm's-length scheme, where a private company dividend or non-fixed trust distribution is involved, or -- since 1 July 2018 -- where the fund incurred **non-arm's-length expenditure** (NALE: expenses lower than arm's length, including nil).  _(ITAA 1997 s 295-550)_
-- **Specific expense** -- **Specific expense** (tied to a particular asset, e.g. cut-price property maintenance by a related builder): ALL income from that asset is NALI -- including the eventual capital gain.  _(ITAA 1997 s 295-550 (Treasury Laws Amendment (Support for Small Business and Charities and Other Measures) Act 2024))_
+- **NALI definition** -- Income is NALI (s 295-550, taxed at 45%) where it exceeds an arm's-length amount from a non-arm's-length scheme, where a private company dividend is inconsistent with an arm’s-length dealing, or where trust income arises through an entitlement that is not fixed. Separate tests apply to fixed trust entitlements. For small complying funds, non-arm's-length expenditure (NALE), including nil expenditure, can also give rise to NALI from 1 July 2018.  _(ITAA 1997 s 295-550)_
+- **Specific expense** -- **Specific expense.** The expense must have a sufficient connection with the income. An underpriced asset purchase can affect rental income and the eventual capital gain. An underpriced property management or maintenance expense may only affect income in the relevant year. [ATO LCR 2021/2](https://www.ato.gov.au/law/view/document?docid=COG%2FLCR20212%2FNAT%2FATO%2F00001).  _(ITAA 1997 s 295-550 (Treasury Laws Amendment (Support for Small Business and Charities and Other Measures) Act 2024))_
 - **General expense (twice the shortfall)** -- **General expense** (e.g. accounting or admin fees): NALI is capped at **2 x (arm's-length expense − actual expense)** -- the "twice the shortfall" rule for SMSFs and small APRA funds.  _(ITAA 1997 s 295-550 (Treasury Laws Amendment (Support for Small Business and Charities and Other Measures) Act 2024))_
 - **Large APRA funds carve-out** -- Large APRA-regulated funds are carved out of NALE entirely.  _(ITAA 1997 s 295-550)_
-- **NALC overall cap** -- The overall non-arm's-length component cannot exceed the fund's assessable income less deductions, excluding assessable contributions and their deductions.  _(ITAA 1997 s 295-550)_
-- **Trustee-capacity services** -- Trustee-capacity services (unpaid, own equipment, not through a business) are NOT NALE; discounted services through the trustee's firm ARE (LCR 2021/2). PCG 2020/5's transitional relief for general expenses ended 30 June 2023.  _(LCR 2021/2; PCG 2020/5)_
+- **NALC overall cap** -- Apply the overall non-arm's-length component cap to taxable income as adjusted for assessable contributions and their related deductions.  _(ITAA 1997 s 295-545(2A))_
+- **Trustee-capacity services** -- Trustee-capacity services (unpaid, own equipment, not through a business) are NOT NALE; services through the trustee's firm must be tested against the arm’s-length amount. A genuine commercial discount on terms available at arm’s length can meet that test (LCR 2021/2). PCG 2020/5's transitional relief for general expenses ended 30 June 2023.  _(LCR 2021/2; PCG 2020/5)_
 
 ### Section 5 -- Contributions
 
@@ -148,10 +148,10 @@ For no-TFN tax, test assessable contributions under Subdivision 295-C, the contr
 | Member age | Fund may accept |
 | --- | --- |
 | Under 75 | All contribution types -- no work test for acceptance |
-| 75+ (from 28 days after the end of the month of the 75th birthday) | Mandated employer (SG) and downsizer ONLY |
+| From the day after the 28th day following the month of the 75th birthday | Voluntary contributions are generally closed. Mandated employer and downsizer contributions may continue. Check separate rules for government co-contributions, paid parental leave super and other statutory exceptions. |
 | Any age, no TFN quoted | Do not accept member contributions other than PPL superannuation contributions without a TFN. If an inconsistent amount is received, return it within 30 days of becoming aware, unless the TFN is quoted within 30 days of receipt. Assess employer contributions under section 4.1's no-TFN tax rules, including fund status and statutory exceptions. [SIS Regulations 7.04(2) and (4)](https://www.legislation.gov.au/F1996B00580/2026-07-01/2026-07-01/text/1/epub/OEBPS/document_1/document_1.html) and [ITAA 1997 ss 295-605 and 295-610](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_6/document_6.html). |
 
-- **Work test (67-74)** -- **Work test (67-74):** 40 hours in 30 consecutive days -- required only to CLAIM A DEDUCTION for personal contributions (s 290-165), not for acceptance. One-off exemption for recent retirees with TSB < $300,000.  _(ITAA 1997 s 290-165)_
+- **Work test for personal deductions (age 67 to 75).** A qualifying contribution at 75 must be made by the end of the 28th day after the birthday month. The test is 40 hours of gainful employment in 30 consecutive days in the contribution year. The one-time exemption requires a TSB below $300,000 at the prior 30 June, satisfaction of the prior-year work test and no prior use. The work test does not govern fund acceptance.  _(ITAA 1997 s 290-165)_
 - **Downsizer** -- **Downsizer (s 292-102):** age 55+, up to **$300,000 per person** from sale of a home owned 10+ years, contributed within 90 days of settlement with the ATO form; excluded from both caps and acceptance limits; once only; counts to TSB.  _(ITAA 1997 s 292-102)_
 
 **CGT cap:** small business 15-year/retirement exemption proceeds excluded from the NCC cap by election, lifetime limit $1,935,000 (2026-27).
@@ -160,7 +160,7 @@ For no-TFN tax, test assessable contributions under Subdivision 295-C, the contr
 
 - **Rule 8 -- caps and bring-forward** -- **Rule 8 -- caps and bring-forward.** Concessional $32,500 (2025-26: $30,000); carry-forward of up to 5 prior years' unused cap only if TSB < $500,000 at 30 June 2026. Non-concessional $130,000 (4 x concessional). Bring-forward by TSB at 30 June 2026: < $1.84m -> $390,000 over 3 years; $1.84m to < $1.97m -> $260,000 over 2 years; $1.97m to < $2.1m -> $130,000 only; >= $2.1m -> nil. Bring-forward access requires being under 75 at some time in the first year, contributions that trigger the arrangement and no existing arrangement determining that year's cap; check contribution acceptance separately. The bands are derived from the 2026-27 general TBC and annual cap. [ITAA 1997 ss 291-20 and 292-85](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_6/document_6.html), [ATO annual caps](https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/contributions-caps) and [general TBC table 26](https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/transfer-balance-cap).
 
-**Excess flows:** excess concessional -> included in the member's assessable income at marginal rates less a 15% offset; may elect to release up to 85%; unreleased excess counts to the NCC cap (no excess concessional charge since 2021-22). Excess non-concessional -> release + associated earnings taxed at marginal rates, or (if retained) 47% on the excess. The FUND's accounting never changes -- assessable contributions stay taxed at 15% in the fund; the excess consequences land on the member.
+**Excess flows:** excess concessional -> included in the member's assessable income at marginal rates less a 15% offset; may elect to release up to 85%. Reduce the ECC counted towards the NCC cap by the amount released divided by 85%, to a minimum of zero (no excess concessional charge since 2021-22). Excess non-concessional -> release + associated earnings taxed at marginal rates, or (if retained) 47% on the excess. The FUND's accounting never changes -- assessable contributions stay taxed at 15% in the fund; the excess consequences land on the member.
 
 #### 5.3 Member surcharges and Division 296 fund reporting
 
@@ -186,7 +186,7 @@ For no-TFN tax, test assessable contributions under Subdivision 295-C, the contr
 | 90-94 | 11% | [SIS Regulations 1994, Schedule 7 clauses 1 and 3-5](https://www.legislation.gov.au/F1996B00580/2026-07-01/2026-07-01/text/1/epub/OEBPS/document_2/document_2.html) |
 | 95+ | 14% | [SIS Regulations 1994, Schedule 7 clauses 1 and 3-5](https://www.legislation.gov.au/F1996B00580/2026-07-01/2026-07-01/text/1/epub/OEBPS/document_2/document_2.html) |
 
-Use the higher of the pension account balance and the withdrawal benefit payable on full commutation, measured at 1 July or, in the commencement year, on the commencement day. Select the age factor at the same date. No reduced ("COVID-halved") rates are in force in 2026-27. For a mid-year commencement, apply the factor proportionally to the days including and following commencement; no payment is required in that year if commencement is on or after 1 June. Round the resulting amount to the nearest $10, with an exact $5 rounded up. [SIS Regulations 1994, Schedule 7 clauses 1 and 3-5](https://www.legislation.gov.au/F1996B00580/2026-07-01/2026-07-01/text/1/epub/OEBPS/document_2/document_2.html). Payment must LEAVE the fund by 30 June -- journal entries are not payments. Transition-to-retirement income streams (not in retirement phase): 10% maximum applies and the fund earns NO ECPI on them.
+Use the higher of the pension account balance and the withdrawal benefit payable on full commutation, measured at 1 July or, in the commencement year, on the commencement day. Select the age factor at the same date. No reduced ("COVID-halved") rates are in force in 2026-27. For a mid-year commencement, apply the factor proportionally to the days including and following commencement; no payment is required in that year if commencement is on or after 1 June. Round the resulting amount to the nearest $10, with an exact $5 rounded up. [SIS Regulations 1994, Schedule 7 clauses 1 and 3-5](https://www.legislation.gov.au/F1996B00580/2026-07-01/2026-07-01/text/1/epub/OEBPS/document_2/document_2.html). For an electronic transfer, the member's account must be credited by 30 June. A cheque must be received, promptly presented and honoured. A journal entry is insufficient. [ATO pension payment timing](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/paying-smsf-benefits/income-stream-pension-rules-and-payments). Transition-to-retirement income streams (not in retirement phase): 10% maximum applies and the fund earns NO ECPI on them.
 
 **Shortfall consequence:** if the minimum is not met, the pension is taken to have ceased at the start of the income year -- the fund loses ECPI for that pension for the WHOLE year, payments made are treated as lump sums, and a new pension (new documents, new TBC credit, TBAR events) must be commenced to resume. **Catch-up exception** (once only, self-assessed): honest mistake or matters outside trustee control, shortfall <= 1/12 of the annual minimum, caught up as soon as practicable (generally within 28 days of becoming aware) -- then ECPI continues as if paid. Larger or repeat shortfalls need the Commissioner's discretion.
 
@@ -232,7 +232,7 @@ Use the higher of the pension account balance and the withdrawal benefit payable
 | Pattern in the file | Provision | Consequence | Action |
 | --- | --- | --- | --- |
 | EFT to member tagged "loan"/"temporary" | s 65 | 60 units per applicable s 166 contravention and liable trustee ($21,840 at $364/unit); check auditor reporting obligations. [SIS Act s 166](https://www.legislation.gov.au/C2004A04633/2026-08-10/2026-08-10/text/original/epub/OEBPS/document_2/document_2.html) | Repay + interest; escalate; never reclassify as benefit without condition of release |
-| Related-party investments/lease > 5% at 30 June | s 71/s 84 | 60 PU; ATO enforceable undertaking | Written disposal plan before next 30 June end |
+| Related-party investments/lease > 5% at 30 June | ss 82 and 84 | Prepare and carry out the required disposal plan. Contravening the reasonable-steps duty in s 84(1) can attract 60 penalty units. | Implement the plan before the end of the next income year |
 | Borrowing outside LRBA (overdraft, margin loan) | s 67 | 60 PU | Clear immediately; document |
 | TBAR lodged late/never | TBC reporting | Excess TB determinations off stale data; FTL penalties | Lodge all missed events now; reconcile TB account |
 | Proportionate ECPI claimed, no actuarial certificate | s 295-390 | ECPI claim invalid -- amend SAR, tax at 15% | Obtain certificate BEFORE lodgment, always |
@@ -268,7 +268,7 @@ NALI      = 2 x $2,500      = $5,000
 Tax       = 45% x $5,000    = $2,250  (vs $750 at 15% -- a $1,500 penalty effect)
 ```
 
-Cap check: NALC cannot exceed assessable income less deductions excluding contributions -- here $60,000, so not binding. Contrast: if the discount had been a SPECIFIC expense on a rental property, ALL of that property's income AND its eventual capital gain would be NALI at 45%. Unpaid trustee-capacity work with the trustee's own equipment is not NALE (LCR 2021/2).
+Cap check: the fund's taxable income adjusted to exclude assessable contributions and their deductions is $60,000, so the NALC cap does not bind. A specific expense must have a sufficient connection with the income or gain. An annual discount on a rental service can affect rental income without also affecting the eventual gain. Unpaid trustee-capacity work with the trustee's own equipment is not NALE (LCR 2021/2).
 
 ### Example 3 -- Excess concessional contributions flow
 
@@ -282,7 +282,7 @@ Member: assessable at marginal 39% (37% + 2% Medicare)  = $2,925
         net extra personal tax                          = $1,800
 ```
 
-Member may elect to release up to 85% of the excess ($6,375) from the fund; unreleased excess also counts toward the $130,000 NCC cap. Nothing is amended in the fund's SAR.
+The member may elect to release up to 85% of the excess ($6,375). If the fund releases the full $6,375, the NCC amount is $7,500 − ($6,375 ÷ 85%) = $0. Without a release, $7,500 counts towards the $130,000 NCC cap. Nothing is amended in the fund's SAR.
 
 ### Example 4 -- Minimum pension shortfall kills ECPI
 
@@ -363,7 +363,7 @@ expected:
 - **R-AU-SF-2 -- In-specie contribution / off-market transfer valuations** -- *Trigger:* asked to set the value of an asset contributed or transferred in-specie. *Message:* "Contribution value must be market value with qualified valuation evidence; s 66 acquisition rules also apply. Obtain an independent valuation and escalate."
 - **R-AU-SF-3 -- LRBA structuring** -- *Trigger:* asked to establish a bare/holding trust, draft loan terms, or design a related-party LRBA. *Message:* "LRBA establishment is legal and financial advice. I can classify payments on an EXISTING documented LRBA and check the PCG 2016/5 safe harbour only. Escalate."
 - **R-AU-SF-4 -- Related-party acquisitions** -- *Trigger:* proposed purchase from / lease to a member or related party. *Message:* "s 66 prohibits most related-party acquisitions (exceptions: listed securities and business real property at market value, within in-house limits). Transaction design must be escalated before any step is taken."
-- **R-AU-SF-5 -- Early-access schemes** -- *Trigger:* any request to pay benefits without a documented condition of release, or to 'temporarily borrow' fund money. *Message:* "Illegal early access -- taxed at marginal rates plus penalties, trustee disqualification, potential fund non-compliance (45% on assets), and promoter penalties. Refuse and warn; compassionate release runs through the ATO only."
+- **R-AU-SF-5 -- Early-access schemes** -- *Trigger:* any request to pay benefits without a documented condition of release, or to 'temporarily borrow' fund money. *Message:* "Illegal early access -- taxed at marginal rates plus penalties, trustee disqualification, potential fund non-compliance (45% of taxable income, which can include the s 295-325 amount if the fund was complying in the prior year), and promoter penalties. Refuse and warn; compassionate release runs through the ATO only."
 - **R-AU-SF-6 -- Wind-ups** -- *Trigger:* asked to wind up a fund. *Message:* "Wind-up sequencing (benefit payments/rollovers, final audit, final SAR with levy adjustment, deregistration) is judgment work with irreversible steps. Escalate to a qualified practitioner."
 - **R-AU-SF-7 -- Death benefit disputes / BDBNs** -- *Trigger:* death benefit payment directions, binding death benefit nomination validity, or competing claims. *Message:* "Legal advice. Escalate to an estate/superannuation lawyer."
 
@@ -384,7 +384,7 @@ expected:
 | 31 March 2027 | Agent program: funds with total income above $2m in the latest year lodged, excluding large/medium taxpayers; lodge and pay if required. [ATO agent program](https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-by-obligation-type/super-lodgment). |
 | 15 May / 5 June 2027 | Agent program: 15 May applies if not required earlier and not eligible for the 5 June concession. The concession is limited to eligible 15 May funds with a non-taxable/refund latest lodged return and non-taxable/refund current return; it excludes large/medium funds and earlier dates. [ATO agent program](https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-by-obligation-type/super-lodgment). |
 | With the SAR | Supervisory levy $259 in advance. For a continuing new fund add $259, totalling $518. The approved 2026 SAR uses label L for the $259 levy, N for the new-fund adjustment and M for wind-ups; an existing fund with the current-year levy already paid generally owes nil, while a newly registered winding-up fund owes $259. These labels and the 4 cases are verified in [2026 instructions, table 9](https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-annual-return-2026-instructions/instructions-to-complete-your-smsf-annual-return-2026/section-d-income-tax-calculation-statement-item-13). Confirm the 2026-27 form before filing that year’s return. [ATO levy and SAR adjustment rules](https://www.ato.gov.au/api/public/content/0-42064e26-5e71-4fce-8ca5-a244fc3c6d69) and [levy examples](https://www.ato.gov.au/api/public/content/0-7bc41a06-65a9-4e45-a959-165424670af5). |
-| 30 June 2027 | Minimum pensions PAID OUT of the bank; market valuations; in-house asset 5% test; TSB snapshots for caps, DSFA and Div 296 |
+| 30 June 2027 | Minimum pensions paid, with electronic transfers credited to member accounts by this date; market valuations; in-house asset 5% test; TSB snapshots for caps, DSFA and Div 296 |
 
 These are the program's base dates. If a due date falls on a weekend or public holiday, lodge or pay on the next business day; verify the applicable date and any ATO-notified deferral before acting. A fund without assets in its first registered year must request cancellation or RNN treatment under the ATO conditions, rather than lodge a zero-asset return. [ATO SAR, when to lodge and funds without assets](https://www.ato.gov.au/api/public/content/0-42064e26-5e71-4fce-8ca5-a244fc3c6d69).
 
