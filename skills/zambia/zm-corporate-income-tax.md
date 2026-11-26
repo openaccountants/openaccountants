@@ -4,15 +4,15 @@ description: "Corporate income tax for Zambia, charge year 2026: 30% standard ra
 jurisdiction: ZM
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.3
+last_updated: 2026-11-26
+version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Zambia Corporate Income Tax v0.3
+# Zambia Corporate Income Tax v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -30,10 +30,10 @@ Companies with annual turnover above K5,000,000, and regardless of turnover: man
 | Mining, mineral processing | 30% (rate read for 2023; mineral royalty also applies) | 2026 | https://www.zra.org.zm/wp-content/uploads/2023/02/Practice-Notes-2023.pdf |
 | Electronic communication business | 35% | 2026 | same |
 | Farming, agro-processing | 10% | 2026 | same |
-| Non-traditional exports | 10% agro and farming; 15% others | 2026 | same |
-| Fertiliser manufacture (chemical or organic) | 15% | 2026 | same |
-| Copper cathode product manufacture | 15% | 2026 | same |
-| Lapidary and jewellery | 25% | 2026 | same |
+| Non-traditional exports | 10% agro and farming; 20% others | 2026 | https://www.parliament.gov.zm/sites/default/files/documents/acts/Income%20Tax%20%28Amendment%29%20Act%20No.%2022%20of%202024.pdf |
+| Fertiliser manufacture (chemical or organic) | 15% | 2026 | https://www.zra.org.zm/download/practice-note-no-1-of-2026/ |
+| Copper cathode product manufacture | 20% | 2026 | https://www.parliament.gov.zm/sites/default/files/documents/acts/Income%20Tax%20%28Amendment%29%20Act%20No.%2022%20of%202024.pdf |
+| Lapidary and jewellery | 25% | 2026 | https://www.zra.org.zm/download/practice-note-no-1-of-2026/ |
 | Approved PBO on business income | 15% | 2026 | same |
 | Minimum alternative tax (MAT) | 1% of total turnover, credit against income tax, carried at most 5 charge years; not for presumptive or turnover tax payers or railway SPVs in first 12 years | 2026 | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2010%20of%202025%20-%20The%20Income%20Tax%20%28Amendment%29-Act.pdf |
 | Interest cap, railway SPV | Deduction limited to 70% of tax EBITDA; excess carried forward | 2026 | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2017%20of%202025%2C%20The%20Income%20Tax%20%28Amendment%29%28No.%202%29%20Act.pdf |
@@ -42,7 +42,7 @@ Companies with annual turnover above K5,000,000, and regardless of turnover: man
 | WHT interest to non-resident | 20% | 2026 | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2010%20of%202025%20-%20The%20Income%20Tax%20%28Amendment%29-Act.pdf |
 | WHT interest on Treasury Bills and Government bonds | 20% | 2026 | same |
 
-Rates dated 2023 are the latest published table found; Acts 10 and 17 of 2025 did not change them.
+ZRA Practice Note No. 1 of 2026 (Table 19) confirms these sector rates for 2026. Act No. 22 of 2024 raised non-traditional exports other than farming and agro-processing, and copper cathode product manufacture, from 15% to 20% from 1 January 2025; Acts 10 and 17 of 2025 did not change them.
 
 ## The base
 
@@ -111,6 +111,8 @@ expected:
 |---|---|---|
 | Income Tax (Amendment) (No. 2) Act No. 17 of 2025, whole Act; read for the figures cited | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2017%20of%202025%2C%20The%20Income%20Tax%20%28Amendment%29%28No.%202%29%20Act.pdf | 2026-11-01 |
 | Income Tax (Amendment) Act No. 10 of 2025, whole Act; read for the figures cited | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2010%20of%202025%20-%20The%20Income%20Tax%20%28Amendment%29-Act.pdf | 2026-11-01 |
+| Income Tax (Amendment) Act No. 22 of 2024, s.15(a)(i) and (iii) (Charging Schedule para 5(c) and (f): 20%, from 1 January 2025) | https://www.parliament.gov.zm/sites/default/files/documents/acts/Income%20Tax%20%28Amendment%29%20Act%20No.%2022%20of%202024.pdf | 2026-11-26 |
+| ZRA Practice Note No. 1 of 2026, Table 19 (other income tax rates) | https://www.zra.org.zm/download/practice-note-no-1-of-2026/ | 2026-11-26 |
 | ZRA Payment Due Dates page; read for the figures cited | https://www.zra.org.zm/payment-due-dates/ | 2026-11-01 |
 | ZRA Penalties page (penalty unit K0.30: stale against the 2026 leaflets); read for the figures cited | https://www.zra.org.zm/penalties/ | 2026-11-01 |
 | ZRA Guide to Filing Tax Returns (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Guide-to-Filing-Tax-Returns.pdf | 2026-11-01 |
