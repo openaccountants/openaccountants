@@ -9,17 +9,17 @@ description: >
   businesses and very small companies (Decree 141/2026), the end of the
   business licence fee and the mid-2026 social insurance cap. Tier 2, not
   reviewed by an accountant.
-version: "2.0"
+version: "2.1"
 jurisdiction: VN
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: situation-rules
 ---
 
-# Vietnam Tax Overview v2.0
+# Vietnam Tax Overview v2.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -47,51 +47,53 @@ This file gives headline figures only. For a computation, load the owning skill.
 | Item | Figure | Condition | Source |
 | --- | --- | --- | --- |
 | Corporate income tax, standard | 20% | Law 67/2025/QH15 Art. 10(1) | https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/6/45557/57755-1-2025965-96667-2025-qh15.pdf |
-| Corporate income tax, smaller companies | 15% (prior-year revenue to VND 3 billion); 17% (over 3 to 50 billion) | Art. 10(2) and (3) | same |
+| Corporate income tax, smaller companies | 15% (preceding-period revenue up to VND 3 billion); 17% (over VND 3 billion to VND 50 billion inclusive) | Check annualisation, first-period and related-company rules in the CIT skill | same |
 | PIT on employment income of residents | 5% to 35% in five bands | Law 109/2025/QH15 Art. 9 | https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/109signed-17692403594311667615452.pdf |
 | PIT on employment income of non-residents | 20% flat | Art. 21 | same |
 | Personal deduction | VND 15.5 million a month | Art. 10(1)(a) | same |
-| Real estate transfer | 2% of the price | Art. 14; exempt for the only home and within the family (Art. 4(1) and (2)) | same |
-| Household business and individual business threshold | No PIT at annual revenue of VND 1 billion or less | Decree 141/2026 Art. 1, from 1 January 2026 | https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/14/469455-1778231931_v1_1778720623_signed.pdf |
-| Very small company CIT exemption | Revenue of VND 1 billion or less | Decree 141/2026 Art. 2 | same |
+| Real estate transfer | 2% of the statutory transfer value | Arts. 14 and 24. Exemptions apply to specified family transfers and qualifying sole-home sales under Art. 4(1)–(2) | same |
+| Household business and individual business threshold | No business PIT at total annual revenue of VND 1 billion or less | Resident business. Decree 141/2026 Art. 1, from 1 January 2026 | https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/14/469455-1778231931_v1_1778720623_signed.pdf |
+| Very small company CIT exemption | Annual revenue of VND 1 billion or less | Qualifying Vietnamese entities under Decree 141/2026 Art. 2. Check preceding-period, new entity and related-party rules | same |
+| Temporary 2026 and 2027 income tax reduction | 30% of eligible resident business PIT or CIT payable | Actual annual revenue in the year of the claim up to VND 10 billion. Check entity eligibility and split-company exclusions | https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/398_2026_nd-cp_29102026-signed.signed.pdf |
 | Business licence fee | None from 1 January 2026 | Resolution 198/2025/QH15 Art. 10(7) | https://xaydungchinhsach.chinhphu.vn/tu-thang-1-2026-nguoi-nop-thue-khong-phai-nop-le-phi-mon-bai-119260126110926562.htm |
 | Social insurance salary cap | VND 46.8 million a month to 30 June 2026; 50.6 million from 1 July 2026 | 20 times the reference level | https://xaydungchinhsach.chinhphu.vn/tu-1-7-nhieu-khoan-tro-cap-bhxh-thay-doi-the-nao-khi-luong-co-so-tang-119260523163024829.htm |
 | Late payment interest | 0.03% per day | Law 108/2025/QH15 Art. 16(2)(a) | https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf |
 
-VAT rates and the temporary 2% reduction are owned by [vietnam-vat](vietnam-vat.md) and are not restated here.
+For eligible standard-rate supplies, VAT drops from 10% to 8% through 31 December 2026. See [vietnam-vat](vietnam-vat.md) for excluded supplies and the separate direct-method reduction.
 
 ## The base
 
-- **Individuals:** residence by 183 days or a regular home (Law 109/2025 Art. 2); employment income after insurance and family deductions on the five bands; business income above VND 1 billion revenue by the income method or, up to 3 billion, the revenue method.
-- **Companies:** revenue less deductible costs plus other income, less exempt income and losses carried forward up to five years (Law 67/2025 Art. 7 and 16).
-- **Payroll:** contributions on the contract salary within the floor and the 20-times cap.
+- **Individuals:** test at least 183 days in the calendar year or first 12 consecutive months, or an eligible regular home, taking into account foreign tax residence evidence where applicable (Law 109/2025 Art. 2 and Decree 253/2026 Art. 4). Apply the resident employment bands after eligible insurance and family deductions. Resident businesses above VND 1 billion in annual revenue generally use the income method, with a revenue-method option up to VND 3 billion for eligible activities.
+- **Companies:** revenue less deductible costs plus other income, less exempt income and allowable losses carried forward for up to 5 consecutive years from the year after the loss (Law 67/2025 Arts. 7 and 16).
+- **Payroll:** apply each scheme's wage base. The social insurance cap is 20 times the reference level and the unemployment insurance cap is 20 times the applicable regional monthly minimum wage. See [vn-payroll-social](vn-payroll-social.md).
 
 ## Deadlines and filing
 
 | Item | Deadline |
 | --- | --- |
 | Monthly returns (withholding, VAT for monthly filers) | 20th day of the following month |
-| Quarterly returns and CIT provisional payments | Last day of the first month of the next quarter |
+| Quarterly returns | Last day of the first month of the next quarter |
+| CIT provisional payments | Last day of the first month of the next quarter under the July 2026 rules. For periods under the previous law, the ordinary deadline was the 30th of that month |
 | CIT and employer PIT annual finalisation | Last day of the 3rd month after year end |
 | Individual self-filed PIT finalisation | Last day of the 4th month after year end |
 
-Source: Decree 252/2026 as published on the Government portal (see Sources). Filing is online through thuedientu.gdt.gov.vn.
+Check the next-working-day rule and any applicable extension. Employers and companies can file through the Tax Department's eTax portal at https://thuedientu.gdt.gov.vn/.
 
 ## Penalties and interest
 
-Late payment interest is 0.03% per day (Law 108/2025/QH15 Art. 16(2)(a)). Administrative fines for late filing and under-declaration were not read for 2026 (see "Not yet confirmed").
+Late payment interest is 0.03% per day (Law 108/2025/QH15 Art. 16(2)(a)). Late filing penalties depend on the delay and tax due. An incorrect declaration causing a shortfall ordinarily incurs a 20% penalty on the shortfall, subject to the applicable offence and exceptions. See Decree 125/2020 as amended, Arts. 9, 13 and 16.
 
 ## Cross-border points
 
-- Payments abroad for services, interest and royalties are taxed through the foreign contractor regime (VAT plus CIT or PIT withheld by the Vietnamese payer); see [vn-corporate-income-tax](vn-corporate-income-tax.md).
-- Dividends to individuals: 5% PIT; between Vietnamese companies: exempt income for the recipient.
+- Determine VAT and income tax separately for payments to foreign contractors. Under the direct withholding method the Vietnamese payer generally withholds and remits the applicable tax. For example, loan interest can attract CIT without VAT. See [vn-corporate-income-tax](vn-corporate-income-tax.md).
+- Dividends to individuals generally attract 5% PIT. A Vietnamese recipient company generally excludes dividends from domestic investments where the distributing enterprise has accounted for Vietnamese CIT, including where it received a CIT incentive.
 - Non-residents transferring capital in a Vietnamese entity are taxed whether the transfer is made in Vietnam or abroad (Law 109/2025 Art. 23(1)).
 
 ## Two worked examples that recompute
 
 ### Example 1: should a tutor with VND 1.2 billion revenue worry about PIT? Compare 900 million
 
-At 900 million revenue she is under the VND 1 billion threshold: no PIT. At 1.2 billion, using the revenue method for services (2% of revenue above the threshold), PIT is 2% of 200 million = 4 million.
+Assume a Vietnamese tax resident with eligible tutoring services and no other business revenue. At VND 900 million, the tutor owes no business PIT. At VND 1.2 billion using the optional revenue method, PIT before relief is (VND 1.2 billion − VND 1 billion) × 2% = VND 4 million. The 30% reduction for eligible 2026 business income reduces PIT payable to VND 2.8 million.
 
 ```oa-check
 name: VN 2026 household business threshold, two revenue levels
@@ -99,26 +101,29 @@ inputs:
   threshold: 1000000000
   revenue_low: 900000000
   revenue_high: 1200000000
+  relief_rate: 0.30
 steps:
   - tax_low: max(revenue_low - threshold, 0) * 0.02
-  - tax_high: max(revenue_high - threshold, 0) * 0.02
+  - tax_high_before_relief: max(revenue_high - threshold, 0) * 0.02
+  - tax_high: tax_high_before_relief * (1 - relief_rate)
 expected:
   tax_low: 0
-  tax_high: 4000000
+  tax_high_before_relief: 4000000
+  tax_high: 2800000
 ```
 
 ### Example 2: selling a flat for VND 3 billion, second home against only home
 
-A second home: PIT is 2% of the price, 60 million. If it is the seller's only home and residential land in Vietnam, the gain is exempt (Art. 4(2)): no PIT.
+Assume a November 2026 sale to an unrelated buyer for a statutory transfer value of VND 3 billion. For a second home the PIT is VND 3 billion × 2% = VND 60 million. For an existing completed flat that is the seller's only qualifying home in Vietnam, the sale is exempt if the seller has held title for at least 183 days, transfers the entire property and declares the exemption.
 
 ```oa-check
 name: VN 2026 real estate transfer, second home vs only home
 inputs:
   price: 3000000000
-  only_home: 1
+  sole_home_exemption_eligible: 1
 steps:
   - tax_second_home: price * 0.02
-  - tax_only_home: price * 0.02 * (1 - only_home)
+  - tax_only_home: price * 0.02 * (1 - sole_home_exemption_eligible)
 expected:
   tax_second_home: 60000000
   tax_only_home: 0
@@ -144,5 +149,12 @@ expected:
 | Read for the social insurance cap of VND 50.6 million from 1 July 2026 | https://xaydungchinhsach.chinhphu.vn/tu-1-7-nhieu-khoan-tro-cap-bhxh-thay-doi-the-nao-khi-luong-co-so-tang-119260523163024829.htm | 2026-11-14 |
 | Read for Law 108/2025/QH15 Art. 16(2)(a) late payment interest and its 1 July 2026 effective date | https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf | 2026-11-14 |
 | Read for the Decree 252/2026 filing deadlines | https://xaydungchinhsach.chinhphu.vn/quy-dinh-thoi-han-nop-ho-so-khai-thue-119260703120801722.htm | 2026-11-14 |
+| Decree 398/2026 Arts. 2–4, temporary income tax reduction | https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/398_2026_nd-cp_29102026-signed.signed.pdf | 2026-11-26 |
+| Decree 253/2026, sole-home exemption | https://xaydungchinhsach.chinhphu.vn/ca-nhan-chuyen-nhuong-co-duy-nhat-mot-nha-o-quyen-su-dung-dat-o-tai-viet-nam-duoc-mien-thue-thu-nhap-ca-nhan-11926070309365282.htm | 2026-11-26 |
+| Decree 252/2026 Arts. 3 and 24, provisional CIT payment | https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/7/252-ndcp.signed.pdf | 2026-11-26 |
+| Previous Tax Administration Law, Art. 55 | https://congbao.chinhphu.vn/tai-ve-van-ban-so-29-vbhn-vpqh-44473-55499?format=pdf | 2026-11-26 |
+| Decree 125/2020 as amended, consolidated tax penalties | https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-dinh-quy-dinh-xu-phat-vi-pham-hanh-chinh-ve-thue-hoa-don-119260828152453688.htm | 2026-11-26 |
+| Resolution 204/2025, temporary VAT reduction | https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/6/204-qh15.signed.pdf | 2026-11-26 |
+| Employment Law 74/2025 Art. 34(2), unemployment insurance cap | https://congbao.chinhphu.vn/tai-ve-van-ban-so-74-2025-qh15-45562-57700?format=pdf | 2026-11-26 |
 
-Not yet confirmed: administrative fines for late filing and under-declaration in 2026; foreign contractor tax percentages; the VAT figures (owned by vietnam-vat, not re-read here).
+Not yet confirmed: the amount of a case-specific penalty or foreign contractor liability without the transaction or offence facts.
