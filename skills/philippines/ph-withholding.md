@@ -12,10 +12,10 @@ description: >
   reconciling Form 2307. Penalties require taxpayer-size and offence classification;
   nonresident payments, treaties, payroll and specialised transactions need their
   separate rules before a final filing position.
-version: 1.2
+version: 1.3
 jurisdiction: PH
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-26
 depends_on:
   - ph-income-tax
 category: international
@@ -27,7 +27,7 @@ type: computation
 
 # Philippines Withholding Tax
 
-2026 rules checked on 2026-11-16; version 1.2. Not yet approved; computations are estimates until the responsible professional confirms the facts and filing treatment.
+2026 rules checked on 2026-11-22; version 1.3. Not yet approved; computations are estimates until the responsible professional confirms the facts and filing treatment.
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
@@ -112,7 +112,10 @@ These correct the prior WI100/WI010 and WC100/WC010 pairings. The table is for t
 
 The payee reports the corresponding **gross income**, then substantiates the withholding credit. Missing Form 2307 requires recovery/correction and evidence of the actual withholding; do not invent the certificate or claim a duplicate credit. EOPT 58(E) requires both the income declaration and proof of withholding, and permits the stated later-period credit where the corresponding income was reported. The old absolute statement that a missing certificate automatically extinguishes every possible credit is too broad. The applicable ITR attachment/SAWT and electronic submission instructions must also be followed; RMC 20-2026 concerns **2025 income filed in 2026**, not an unissued future filing cycle. [EOPT section 9, NIRC 58(E)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/96948); [BIR RMC 20-2026](https://bir-cdn.bir.gov.ph/BIR/pdf/RMC%2020-2026.pdf).
 
-**Current invoice change:** RR **6-2026** requires applicable CWT to appear as a **separate invoice item**. Existing unused/unissued invoices may be consumed with **“Less: Withholding Tax”** conspicuously stamped; newly printed invoices must reflect that phrase before use. This documents the deduction; it does not replace Form 2307 or change the tax base/rate. [RR 6-2026, sections 2-3](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%206-2026.pdf).
+**Invoice disclosure.** Show applicable CWT separately when the amount is reasonably determinable at issuance. The buyer or payor determines the withholding and gives the seller the available details before the invoice is finalised. Show the full sale, the CWT and the net amount due. Form 2307 still substantiates the credit. [RR 6-2026, sections 2–3](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%206-2026.pdf); [RMC 112-2026, sections I–II](https://bir-cdn.bir.gov.ph/BIR/pdf/RMC%20No.%20112-2026_redacted.pdf).
+
+- For an existing unused manual or loose-leaf invoice issued for a transaction subject to CWT, stamp, print or write the label and amount legibly on the original and duplicate before issuance. An invoice printed under an Authority to Print issued after RR 6-2026 took effect needs a separate line in its approved layout. The permitted labels are **“Less: Withholding Tax”**, **“Less: Creditable Withholding Tax”** and **“Less: CWT”**. Fill the amount only when CWT applies. [RMC 112-2026, section III.A](https://bir-cdn.bir.gov.ph/BIR/pdf/RMC%20No.%20112-2026_redacted.pdf).
+- Mandatory electronic invoicing systems have until **31 December 2026** to add the required functionality unless the BIR prescribes a later date. Existing cash registers, point-of-sale systems and other invoicing systems outside the mandate have until **31 March 2027**, subject to a prescribed earlier date. Until the system is modified, stamp, print or write the label and amount legibly on a printed system-generated invoice before issuance if the transaction is subject to CWT. After the applicable deadline, the CWT field appears on every system-generated invoice and may be blank, ‘N/A’ or ‘0.00’ where CWT does not apply. [RMC 112-2026, section III.B.7](https://bir-cdn.bir.gov.ph/BIR/pdf/RMC%20No.%20112-2026_redacted.pdf); [BIR implementation notice](https://bir-cdn.bir.gov.ph/BIR/pdf/PR122OCT2226.pdf).
 
 ### 5. Remit on the correct monthly, quarterly and annual calendar
 
@@ -234,6 +237,7 @@ expected:
 | [RR 4-2024, ONAR official copy](https://naro.law.upd.edu.ph/storage/01JT27H00Q1JABYK2R53AB4D14.pdf); [BIR digest](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%204-2024%20%28final%29.pdf) | 2026-11-16 | Read for: full official digest and visually read pages 3-4, sections 4-8, especially payable timing and continuing withholding obligation. Complete five-page scan downloaded; other page detail is not claimed read. |
 | [RR 6-2024, ONAR official copy](https://naro.law.upd.edu.ph/storage/01JT28JRH6YRBG857QWTQ0JJFH.pdf); [BIR digest](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%206-2024%20%28final%29.pdf) | 2026-11-16 | Read for: all three pages visually read and entire official digest, micro/small sales boundaries, ordinary/fraud surcharge, interest, information-return fine/cap, prospective application and effectivity. |
 | [RR 6-2026](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%206-2026.pdf) | 2026-11-16 | Read for: both pages visually read, applicable CWT invoice item, stamp/new-print transition and effectivity. The signed circular was reached from the BIR’s official press-release link. |
+| [RMC 112-2026](https://bir-cdn.bir.gov.ph/BIR/pdf/RMC%20No.%20112-2026_redacted.pdf) and [BIR implementation notice](https://bir-cdn.bir.gov.ph/BIR/pdf/PR122OCT2226.pdf) | 2026-11-22 | CWT disclosure, permitted invoice labels, existing and newly printed invoices, and the applicable system deadlines. |
 | [CMEPA, RA 12214](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/99213); [RR 21-2025 official digest](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%2021-2025%20Digest.pdf) | 2026-11-16 | Read for: CMEPA sections 4-7, 13 and 28; individual/corporate passive-income tables and full transition paragraphs in the digest. Full RR 21-2025 was blocked; only the identified digest is claimed. |
 | [RR 14-2023](https://bir-cdn.bir.gov.ph/local/pdf/RR%20No.%2014-2023.pdf) | 2026-11-16 | Read for: both scanned pages visually read, joint-venture supplier payments and distributive-share scope. It is not generic professional-fee authority. |
 | [RMC 20-2026](https://bir-cdn.bir.gov.ph/BIR/pdf/RMC%2020-2026.pdf) | 2026-11-16 | Read for: first page visually read and entire official digest, forms/electronic filing and the 2025-income/2026-filing scope. No future-cycle date inferred. |
