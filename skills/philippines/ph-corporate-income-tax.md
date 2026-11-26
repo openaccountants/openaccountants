@@ -14,17 +14,17 @@ description: >
 jurisdiction: PH
 category: international
 tax_year: 2026
-last_updated: 2026-11-16
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
-version: 1.1
+version: 1.2
 type: computation
 ---
 
 # Philippines Corporate Income Tax
 
-2026 rules checked on 2026-11-16; version 1.1. Not yet approved, pending Philippine CPA review. Amounts are in Philippine pesos (PHP) unless stated otherwise.
+2026 rules as at 22 November 2026. Not yet approved, pending Philippine CPA review. Amounts are in Philippine pesos (PHP) unless stated otherwise.
 
 ## Scope
 
@@ -34,7 +34,7 @@ This method retains the original ordinary-tax, dividend, interest, royalty, bran
 
 ## Ask the client first
 
-- Where is the company incorporated, what Philippine activities does it conduct, and what is its BIR registration and year-end? Establish its commencement year for MCIT.
+- Where is the company incorporated, what Philippine activities does it conduct and what are its BIR registration date and year-end? For domestic MCIT, establish the taxable year containing the BIR registration date.
 - What are the gross sales, returns/discounts, cost of goods or services, other income, allowable deductions, prior losses and tax credits? Obtain the accounts and tax reconciliation.
 - For the smaller-company rate, what are net taxable income and total assets after excluding only the land on which the business's office, plant and equipment are situated?
 - Has an OSD election been made for this taxable year, or do itemised deductions apply? Obtain earlier quarterly returns and the election evidence.
@@ -61,11 +61,11 @@ This method retains the original ordinary-tax, dividend, interest, royalty, bran
 
 Start with the company's gross income within its geographical tax scope, then deduct the legally allowed expenses or the elected OSD. Reconcile accounting profit to taxable income and separate exempt and final-taxed amounts. Taxable income is not automatically bank receipts, accounting profit or total sales. [NIRC sections 31-34](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896); [RA 9504, section 3, NIRC 34(L)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/8724).
 
-Under corporate OSD, first establish gross income correctly; the deduction is taken from that base. Do not add itemised expenses again, and do not change a valid OSD election part way through the taxable year: section 34(L) makes the election irrevocable for that year. OSD does not excuse the corporation from keeping gross-income records or from its applicable financial-statement requirements. [NIRC 34(L)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/8724).
+For corporate OSD, deduct up to 40% of gross income in place of itemised deductions. Elect the method on the first-quarter return. A valid election is irrevocable for the taxable year. Keep gross-income records and meet the applicable financial-statement requirements. [NIRC 34(L)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/8724); [BIR RR 2-2010](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/50806).
 
-For MCIT, use its own statutory gross-income definition: sales net of returns, discounts and allowances, less cost of goods sold; for services, gross receipts less the corresponding adjustments and direct cost of services. That base is not the ordinary net taxable income after all operating deductions. Compare MCIT with ordinary tax only once the age test and regime apply. [NIRC 27(E)(1), (4)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896); [CREATE, section 6](https://elibrary.judiciary.gov.ph/thebookshelf//showdocs/2/93191).
+For MCIT, start with sales net of returns, discounts and allowances, less cost of goods sold. For services, start with gross service revenue less the corresponding adjustments and direct cost of services. Add other gross income subject to ordinary corporate tax, and exclude exempt and final-taxed income. Compare MCIT with ordinary tax once the age test and regime apply. [NIRC 27(E)(1), (4)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896); [BIR RR 12-2007, section 2](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/47521).
 
-The old phrase “from the fourth taxable year of operations” was too early. If operations commenced in **2022** and the company uses calendar taxable years, the fourth following year is **2026**: the following years are 2023, 2024, 2025 and 2026. Do not count the commencement year as the first following year. Excess MCIT over ordinary tax can be carried forward against ordinary income tax for the **3 immediately succeeding taxable years**, subject to its conditions and remaining credits; do not offset it freely against another MCIT liability. Relief for specified labour disputes, force majeure or legitimate business reverses requires the authorised relief process, not a unilateral omission. [NIRC 27(E)(1)-(4)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896); [CREATE section 6](https://elibrary.judiciary.gov.ph/thebookshelf//showdocs/2/93191).
+For a domestic corporation, the commencement year for MCIT is the taxable year in which it registered with the BIR. For a calendar-year company registered in **2022**, the 4 following taxable years are 2023, 2024, 2025 and **2026**, the first MCIT year. Excess MCIT over ordinary tax can be carried forward against ordinary income tax for the **3 immediately succeeding taxable years**, subject to the available ordinary tax and remaining credit. Relief for specified labour disputes, force majeure or legitimate business reverses requires the authorised relief process. [NIRC 27(E)(1)-(4)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/3896); [CREATE section 6](https://elibrary.judiciary.gov.ph/thebookshelf//showdocs/2/93191); [BIR RR 9-98, section 2.27(E)(5)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/43525).
 
 ### 3. Separate passive income and dividends before applying ordinary tax
 
@@ -102,7 +102,7 @@ A return receipt is not proof that tax has been paid or that an attachment was a
 
 ### A. Both smaller-company conditions matter
 
-A domestic corporation commenced in **2024** and has **PHP 4,000,000 taxable income** for calendar **2026**, with **PHP 99,000,000 assets after the permitted land exclusion**. It meets both smaller-company tests, giving **PHP 800,000 ordinary tax**. If the same income instead came with **PHP 101,000,000 relevant assets**, the asset test would fail and ordinary tax would be **PHP 1,000,000**, a **PHP 200,000** difference. The company cannot choose the lower rate by calling itself an MSME. These cases assume no separate incentive and no MCIT age trigger yet. [RR 7-2025, domestic-corporation table](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%207-2025.pdf); [NIRC 27(E) as amended by CREATE](https://elibrary.judiciary.gov.ph/thebookshelf//showdocs/2/93191).
+A domestic corporation registered with the BIR in **2024** and has **PHP 4,000,000 taxable income** for calendar **2026**, with **PHP 99,000,000 assets after the permitted land exclusion**. It meets both smaller-company tests, giving **PHP 800,000 ordinary tax**. At **PHP 101,000,000 relevant assets**, it fails the asset test and ordinary tax rises to **PHP 1,000,000**, a **PHP 200,000** difference. Assume no separate incentive. The first MCIT year is 2028. [RR 7-2025](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%207-2025.pdf); [NIRC 27(E) as amended by CREATE](https://elibrary.judiciary.gov.ph/thebookshelf//showdocs/2/93191); [BIR RR 9-98](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/43525).
 
 ```oa-check
 name: Domestic reduced-rate asset-boundary decision
@@ -130,19 +130,21 @@ expected:
 
 ### B. Low taxable profit does not eliminate MCIT
 
-An ordinary domestic corporation commenced in **2022**, keeps calendar years and has **PHP 150,000,000 relevant assets**, **PHP 8,000,000 statutory MCIT gross income**, and **PHP 400,000 taxable income** in **2026**. It fails the smaller-company asset test. Ordinary tax is **PHP 100,000**, while MCIT is **PHP 160,000**. The liability before payment credits is the higher **PHP 160,000**. The **PHP 60,000 excess MCIT** needs a separate carryforward record for potential ordinary-tax credit in **2027-2029**, subject to the statutory conditions and actual future tax positions. [RR 7-2025](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%207-2025.pdf); [NIRC 27(E), read with CREATE section 6](https://elibrary.judiciary.gov.ph/thebookshelf//showdocs/2/93191).
+An ordinary domestic corporation registered with the BIR in **2022** and keeps calendar years. In **2026** it has **PHP 150,000,000 relevant assets**, **PHP 7,000,000 gross income from its core business** after direct costs, **PHP 1,000,000 other gross income subject to ordinary corporate tax** and **PHP 400,000 ordinary taxable income** after allowable deductions. It fails the smaller-company asset test, so ordinary tax is **PHP 100,000**. MCIT is **PHP 160,000** on total gross income of PHP 8,000,000. The liability before payment credits is the higher **PHP 160,000**. Record the **PHP 60,000 excess MCIT** for potential ordinary-tax credit in **2027-2029**. [RR 7-2025](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%207-2025.pdf); [NIRC 27(E), read with CREATE section 6](https://elibrary.judiciary.gov.ph/thebookshelf//showdocs/2/93191); [BIR RR 12-2007](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/47521).
 
 ```oa-check
 name: MCIT age and higher-of-tax computation
 inputs:
-  commencement_year: 2022
+  bir_registration_year: 2022
   taxable_year: 2026
-  mcit_gross_income: 8000000
+  core_gross_income: 7000000
+  other_ordinary_gross_income: 1000000
   taxable_income: 400000
 steps:
-  first_mcit_year: commencement_year + 4
-  following_year_count: taxable_year - commencement_year
+  first_mcit_year: bir_registration_year + 4
+  following_year_count: taxable_year - bir_registration_year
   ordinary_tax: taxable_income * 0.25
+  mcit_gross_income: core_gross_income + other_ordinary_gross_income
   mcit: mcit_gross_income * 0.02
   tax_before_credits: max(ordinary_tax, mcit)
   excess_mcit: max(0, mcit - ordinary_tax)
@@ -151,6 +153,7 @@ expected:
   first_mcit_year: 2026
   following_year_count: 4
   ordinary_tax: 100000
+  mcit_gross_income: 8000000
   mcit: 160000
   tax_before_credits: 160000
   excess_mcit: 60000
@@ -180,5 +183,9 @@ expected:
 | [EOPT, RA 11976](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/96948) | 2026-11-16 | Section 11, NIRC 77 quarterly/annual deadlines, filing place/channels and payment; current amendment read against the original Code. |
 | [BIR Form 1702Q, January 2018 ENCS](https://bir-cdn.bir.gov.ph/local/pdf/1702Q%202018ENCS%20final2.pdf) | 2026-11-16 | Schedules and third-page instructions visually checked for quarterly filing, OSD, MCIT and certificates. Historical ordinary rates, filing-place restrictions and penalty text are not treated as current law. |
 | [BIR official RMC 20-2026 digest](https://bir-cdn.bir.gov.ph/BIR/pdf/RMC%20No.%2020-2026%20Digest.pdf) | 2026-11-16 | Annual forms, electronic channels, filing/payment evidence and the limited 2025-return/2026-filing scope. It is not a rule setting new 2027 filing dates. |
+| [BIR RR 9-98](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/43525) | 2026-11-24 | Section 2.27(E)(5), first MCIT year based on BIR registration for domestic corporations. |
+| [BIR RR 12-2007](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/47521) | 2026-11-24 | Section 2, other gross income subject to ordinary tax included in the MCIT base. |
+| [BIR RR 2-2010](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/50806) | 2026-11-24 | First-quarter return election for the deduction method. |
+| [BIR RR 21-2025 full regulation](https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20NO.%2021-2025.pdf) | 2026-11-24 | Corporate passive income and withholding tables and sections 9–10, Philippine interest source and the agreed maturity conditions. |
 
 Not yet confirmed: a particular company's incentive certificate, the foreign recipient's treaty/tax-sparing entitlement, a bank instrument's grandfathered status, or the next filing cycle's portal release/extension cannot be established from generic source text. Obtain the transaction documents and the governing instruction before finalising those positions. No old topic is discarded merely because its original commercial citation has been replaced with primary law.
