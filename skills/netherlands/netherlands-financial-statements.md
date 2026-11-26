@@ -1,10 +1,10 @@
 ---
 name: netherlands-financial-statements
 description: Use this skill when preparing, reviewing or filing the annual financial statements (jaarrekening) of a Dutch company under BW2 Title 9, covering framework choice, the size classes, year-end adjustments, notes, audit and group exemptions, signing, adoption and the KVK filing deadlines. Trigger on jaarrekening, KvK filing, deponeren, BW2 Titel 9, Dutch GAAP, RJ richtlijnen, annual accounts Netherlands, audit Netherlands, small BV or micro BV.
-version: 2.0
+version: 2.1
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 depends_on:
   - financial-statements-workflow-base
 category: financial-statements
@@ -18,155 +18,95 @@ type: filing-howto
 
 ## Scope
 
-Tax year: 2026. Financial reporting periods follow the entity’s actual financial year. This method covers ordinary Dutch company annual accounts, their size classification, year-end adjustments, presentation, audit, adoption and KVK filing. Establish the financial year's actual start and end before selecting requirements. Accounts for an earlier year filed in 2026 retain that year's applicable accounting rules; the filing date does not change the reporting year. The civil-code source consulted is the consolidation effective from July 2026. Check the version applicable to an earlier transaction or reporting period. [BW2](https://wetten.overheid.nl/BWBR0003045).
+Tax year: 2026; use the entity's actual reporting period. This method covers ordinary Dutch BV/NV accounts under BW2 Title 9. That title also covers cooperatives and mutual insurers. The financial year is the calendar year unless the articles designate another year. Listed/public-interest entities, financial institutions, special sectors, foundations/associations and foreign entities: Check this point with one of our partner accountants. [BW2 articles 10a and 360](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-Start with a Dutch BV or NV under Title 9. Cooperatives and mutual insurers are also within its scope, but financial institutions, listed/public-interest entities, special sectors, certain foundations/associations, foreign entities and group structures require their own applicability analysis. A sole trader is not automatically required to file company accounts at KVK. The articles determine the financial year; absent another designation it is the calendar year. [BW2 articles 10a and 360](https://wetten.overheid.nl/BWBR0003045) and [KVK filing scope](https://www.kvk.nl/deponeren/jaarrekening-wel-of-niet-deponeren/).
-
-Distinguish three deliverables: the full accounts prepared for the entity, the accounts adopted by its competent body, and the potentially abbreviated public filing. An exemption from publishing the profit-and-loss account does not remove the need to prepare one. [BW2 articles 361 and 395a–397](https://wetten.overheid.nl/BWBR0003045).
+Keep preparation, adoption and public filing separate. The individual accounts comprise a balance sheet, profit-and-loss account and notes; publication relief does not abolish preparation. Earlier-year accounts filed in 2026 need their applicable reporting requirements, not a new reporting year. [BW2 articles 361 and 396(8)](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
 ## Ask the client first
 
-- Obtain the legal name, KVK number, legal form, articles, reporting dates, ownership/group chart and any listed/public-interest status. Request both prior years' signed accounts and size calculations, current trial balance and ledger, reconciled subledgers, bank and tax balances, contracts, asset register, inventory records, employee averages, commitments, financing/covenants, related-party dealings, subsequent events and going-concern forecasts.
-
-- Ask for the chosen accounting framework and applicable RJ/RJk edition, prior policies and changes, consolidation decisions, any exemption documents, audit engagement, preparation extension resolution and reasons, signatories, adoption minutes and filing evidence. Obtain the actual tax reconciliation for current/deferred tax; a corporate tax rate table does not by itself calculate the accounting tax charge. Identify unresolved balances and evidence owners before drafting final statements. [BW2 articles 10, 210, 362–384 and 393–408](https://wetten.overheid.nl/BWBR0003045).
+Obtain the legal form, articles, KVK number, reporting dates, ownership/group chart, public-interest status, prior two years' accounts and size calculations, framework and applicable RJ/RJk edition. Request the trial balance, reconciled ledgers, asset/inventory records, contracts, tax reconciliation, payroll/pension records, financing, commitments, subsequent events and forecasts. Obtain audit/exemption documents, extension resolutions, signatories, adoption minutes and prior filing evidence. Assign an evidence owner to every unresolved balance.
 
 ## The method, step by step
 
-1. Establish the legal entity, reporting period, framework, group perimeter and size category using the evidence below.
-2. Reconcile the trial balance and prepare supported year-end adjustments, full statements and the applicable notes checklist.
-3. Resolve audit requirements and every claimed exemption before treating the accounts as ready for adoption.
-4. Record preparation, signatures and adoption separately, and compute each filing clock from the actual facts.
-5. Assemble the permitted public filing, submit through the current KVK route and confirm acceptance and register visibility.
-6. Retain the full workpaper, resolve corrections and escalate any material uncertainty or missed deadline under the rules below.
+### 1. Select the framework and size
+
+Title 9 requires the insight described in article 362. EU-endorsed IFRS is an alternative only with all applicable endorsed standards applied; an entity using Title 9 for consolidation cannot elect IFRS for its individual accounts alone. Disclose the framework. The medium/large RJ edition 2026 applies to years beginning on or after **1 January 2026**, with earlier application recommended unless the relevant guideline says otherwise. This introduction is not proof of detailed RJ/RJk recognition or disclosure rules. [BW2 article 362(1), (8)–(10)](https://wetten.overheid.nl/BWBR0003045/2026-07-01); [RJ introduction, p. 39](https://www.rjnet.nl/siteassets/ten-geleides/rj-bundel/ten-geleide-bij-editie-2026.pdf).
 
 ### Rates, bands and thresholds
 
-| Item | Figure | Condition | Source |
-|---|---|---|---|
-| Micro: total assets | At most EUR 450,000 | Two of three criteria on two consecutive balance dates; group companies counted unless art. 408 applies (BW2 art. 395a) | https://wetten.overheid.nl/BWBR0003045/2026-07-01 |
-| Micro: net turnover | At most EUR 900,000 | same test | same |
-| Micro: average employees | Fewer than 10 | same test | same |
-| Small: total assets | At most EUR 7,500,000 | Two of three criteria on two consecutive balance dates (BW2 art. 396) | same |
-| Small: net turnover | At most EUR 15,000,000 | same test | same |
-| Small: average employees | Fewer than 50 | same test | same |
-| Medium: total assets | At most EUR 25,000,000 | Two of three criteria (BW2 art. 397) | same |
-| Medium: net turnover | At most EUR 50,000,000 | same test | same |
-| Medium: average employees | Fewer than 250 | same test | same |
-| BV preparation period | 5 months after year-end, extendable by at most 5 months | Shareholders extend for special circumstances (BW2 art. 210) | same |
-| Filing after adoption | Within 8 days of adoption | Unadopted accounts filed without delay if not adopted within 2 months after the preparation period (BW2 art. 394) | same |
-| Absolute filing limit | 12 months after year-end | No days added to this cap (BW2 art. 394) | same |
-| Retention of accounting records | 7 years | BW2 art. 10, subject to longer duties | same |
+| Category | Assets at acquisition/manufacturing cost, at most | Net turnover, at most | Average employees, fewer than | Source |
+|---|---:|---:|---:|---|
+| Micro | EUR 450,000 | EUR 900,000 | 10 | [BW2 art. 395a](https://wetten.overheid.nl/BWBR0003045/2026-07-01); [2024 decree art. 1](https://zoek.officielebekendmakingen.nl/stb-2024-52.html) |
+| Small | EUR 7,500,000 | EUR 15,000,000 | 50 | [BW2 art. 396, official XML](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0003045/2026-07-01_0/xml/BWBR0003045_2026-07-01_0.xml) |
+| Medium | EUR 25,000,000 | EUR 50,000,000 | 250 | [BW2 art. 397, official XML](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0003045/2026-07-01_0/xml/BWBR0003045_2026-07-01_0.xml) |
 
-### Select the framework and entity size
+Meet at least **two of three** criteria on **two consecutive balance dates**, without subsequently failing the test on two consecutive dates. Money ceilings are inclusive; employee limits are strict. Net turnover excludes discounts and turnover taxes. For the first and second financial years, meeting the relevant requirements at the first year's balance date also qualifies. The increased money ceilings apply to years beginning on or after **1 January 2024**; optional application to years beginning on or after **1 January 2023** is permitted. [BW2 articles 377(6), 395a–398](https://wetten.overheid.nl/BWBR0003045/2026-07-01); [decree articles 1–4](https://zoek.officielebekendmakingen.nl/stb-2024-52.html).
 
-#### Framework
+Include the assets, turnover and employees of group companies that would be consolidated; articles 395a–397(2) make an exception where article 408 is validly applied. Establish that exception separately before using standalone figures. Article 398 also excludes specified investment/collective-investment companies and public-interest entities, and excludes participation undertakings from micro relief. Available relief can be overridden by the general meeting no later than **six months after the year's beginning**. Ordinary large-entity treatment follows when the relevant size relief is unavailable; one exceeded criterion alone is not decisive. Group eligibility, the article 408 conditions and excluded-entity applications: Check this point with one of our partner accountants. [BW2 articles 395a–398 and 408](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-Record whether the accounts use Dutch Title 9 with the applicable accepted reporting standards, or EU-endorsed IFRS with the remaining Dutch statutory requirements. The IFRS choice is not unrestricted: an entity preparing consolidated accounts under Title 9 cannot choose IFRS solely for its individual accounts under article 362(8). Record the framework explicitly in the notes. Refer listed-group and special-sector reporting to a competent specialist. [BW2 article 362](https://wetten.overheid.nl/BWBR0003045).
+### 2. Reconcile and prepare the accounts
 
-The RJ edition labelled 2026 applies to years beginning in 2026, subject to its stated early-application rules. Its introduction explains that draft guidance is distinct from final guidance and that later RJ publications can matter. Obtain the applicable complete RJ/RJk requirements before resolving detailed recognition, cash-flow-statement or disclosure questions; this guide does not reproduce the full standards. The 2026 changes include clarification of the initial-recognition exception for deferred taxes. Do not apply a generic tax percentage mechanically to every temporary difference. [RJ 2026 introduction](https://www.rjnet.nl/siteassets/ten-geleides/rj-bundel/ten-geleide-bij-editie-2026.pdf) and [RJ publication process](https://www.rjnet.nl/richtlijnen/).
+Keep the unadjusted trial balance, supported adjustment register and final trial balance reconcilable. Include income and expenses regardless of cash receipt/payment; article 395a(3) permits a specific micro exception for accruals of other operating expenses, with disclosure beneath the balance sheet. Assess going concern and information about balance-date conditions before adoption. [BW2 articles 362(5)–(6), 384(3) and 395a(3)](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-#### Size calculation
+| Area | Retained rule or explicit hold |
+|---|---|
+| Depreciation; development and goodwill | Limited-life fixed assets are depreciated systematically over expected useful life, independently of annual profit. Recognition/componentisation and detailed RJ treatment: Check this point with one of our partner accountants. [BW2 art. 386(1), (4)](https://wetten.overheid.nl/BWBR0003045/2026-07-01) |
+| Inventory and receivables | Article 385(2) permits weighted average, FIFO, LIFO or similar rules for like inventory/securities. It does not prove every particular policy or recoverability estimate. Inventory measurement and bad-debt allowances: Check this point with one of our partner accountants. [BW2 art. 385(2)](https://wetten.overheid.nl/BWBR0003045/2026-07-01) |
+| Provisions, maintenance and anniversary commitments | Recognition, discounting and measurement: Check this point with one of our partner accountants. |
+| Current and deferred tax | Tax reconciliation, applicable rates, recognition exceptions and recovery evidence: Check this point with one of our partner accountants. |
+| Foreign currency and participations | Currency measurement, exchange differences and participation/translation reserves: Check this point with one of our partner accountants. |
+| Leases and financial instruments | Framework-specific recognition, measurement and disclosures: Check this point with one of our partner accountants. |
+| Pension and employee obligations | Framework-specific obligation and valuation: Check this point with one of our partner accountants. |
+| Equity and development reserve | Where development costs are capitalised, explain them and maintain a reserve equal to that capitalised amount. Recognition, other statutory reserves and distributions: Check this point with one of our partner accountants. [BW2 art. 365(2)](https://wetten.overheid.nl/BWBR0003045/2026-07-01) |
 
-For ordinary eligible entities, test at least two of the three criteria below on the relevant balance-sheet dates. Asset and turnover ceilings are **inclusive**; employee ceilings are **strictly below**. Use the statutory definitions and acquisition/manufacturing-cost asset basis. KVK's abbreviated web table uses simplified range symbols; at exact boundaries use the legislation. [BW2 articles 395a–398](https://wetten.overheid.nl/BWBR0003045).
+Presentation: show fixed/current assets and equity, provisions, debts and accruals under article 364, subject to applicable relief. Reconcile assets to equity plus liabilities. Article 377 permits the nature or function P&L analysis and requires the amount and nature of exceptionally large or exceptional-incidence income/expense items; do not copy obsolete extraordinary-result lines. Preserve comparable prior-year amounts as far as possible, explain presentation changes and do not net items that require separate presentation. [BW2 articles 363, 364 and 377](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-| Category | Total assets, at most | Net turnover, at most | Average employees, fewer than |
-| --- | ---: | ---: | ---: |
-| Micro | €450,000 | €900,000 | 10 [Source](https://wetten.overheid.nl/BWBR0003045) |
-| Small | €7,500,000 | €15,000,000 | 50 [Source](https://wetten.overheid.nl/BWBR0003045) |
-| Medium | €25,000,000 | €50,000,000 | 250 [Source](https://wetten.overheid.nl/BWBR0003045) |
+Detailed statutory models, cash-flow-statement requirements/exemptions and the framework-specific notes checklist (policies, asset movements, debt maturity/security, guarantees, related parties, employees, directors' remuneration/advances, auditor fees, financial instruments, tax, reserves and subsequent events): Check this point with one of our partner accountants. No universal yes/no disclosure matrix is supplied here.
 
-Classify as large when the applicable medium exemption is unavailable, rather than treating one exceeded criterion as decisive. Apply the consecutive-year rules: normally two successive balance dates determine entry or loss of a category. For the first and second financial years, article 398 has a specific first-balance-date rule. Include the group companies that would be consolidated, unless the applicable article 408 exception permits otherwise. Do not classify a holding solely from its own standalone balance. Public-interest entities and other excluded categories cannot use these reliefs merely because their numbers are small. Record each test and any shareholder decision overriding available relief. [BW2 articles 395a–398](https://wetten.overheid.nl/BWBR0003045).
+### 3. Settle audit and group relief
 
-### Build and review the full accounts
+Article 393 requires a statutory audit by a qualified auditor unless valid relief applies. Qualifying micro/small entities have the relief in articles 395a(6) and 396(7); medium status alone supplies no audit exemption. Check article 398 exclusions before relying on size relief. A compilation does not replace the required audit. Confirm the audit firm's AFM licence and the external accountant's AFM registration; a regular licence covers non-OOB audits, while OOB audits require an OOB licence. [BW2 articles 393, 395a–398](https://wetten.overheid.nl/BWBR0003045/2026-07-01); [AFM definitions](https://www.afm.nl/nl-nl/sector/accountantsorganisaties/begrippen).
 
-#### Reconcile and adjust
+A parent guarantee alone does not establish article 403 relief: annual written shareholder/member consent must be given after the financial year starts and before adoption. Do not stop ordinary preparation/audit/filing work on incomplete exemption documents. Full article 403 conditions, foreign parents, withdrawals and consolidation under article 408: Check this point with one of our partner accountants. [BW2 article 403(1)(b)](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-Prepare an adjustment register linking every entry to source evidence, the accounting policy and its impact on assets, liabilities, profit, tax and equity. Keep the unadjusted trial balance, journal entries and final trial balance reconcilable. Accrual accounting applies irrespective of payment dates, subject to specific lawful exemptions such as the micro relief; do not silently switch the whole entity to cash accounting. Assess going concern and events after the balance date before signing. [BW2 articles 362, 384 and 395a](https://wetten.overheid.nl/BWBR0003045).
+### 4. Prepare, sign, adopt and calculate the filing clocks
 
-| Area | Operational check |
-| --- | --- |
-| Depreciation and development/goodwill | Reconcile additions, disposals, accumulated depreciation and closing carrying amounts. Use a systematic method matching useful life for limited-life fixed assets; do not vary depreciation to reach a desired profit. Check development recognition and the associated statutory reserve. |
-| Inventory and receivables | Reconcile quantities, costs, ageing and recoverability. Document cost formula and impairment. Dutch statute permits weighted average, FIFO, LIFO or similar rules for like inventory/securities; the old blanket Dutch-GAAP ban on LIFO is incorrect. Confirm that the chosen framework and circumstances permit the actual policy, then apply it consistently. |
-| Accruals, provisions and maintenance | Separate unpaid accrued liabilities from uncertain obligations, asset impairments and qualifying cost-equalisation provisions. Document the obligation, timing, estimate and applicable measurement requirements. Maintenance and anniversary provisions are not automatic percentages or substitutes for impairing an asset. |
-| Current and deferred tax | Reconcile tax charge, current liability, instalments and temporary differences. Apply the selected framework's recognition exceptions, measurement and recovery evidence; obtain the applicable tax rates from the current corporate-tax method. |
-| Foreign currency and participations | Document functional/presentation choices, conversion policies, rates and where exchange differences belong. Assess participation valuation and any required participation or translation reserve. Do not assume every difference belongs in current profit. |
-| Leases and financial instruments | Inventory contracts, ownership/control facts, guarantees and embedded terms. Determine recognition, measurement and disclosure under the actual framework. Do not import an IFRS treatment into Dutch GAAP without checking its permitted basis. |
-| Pension, employee and other long-term obligations | Reconcile payroll/pension records and identify further obligations, including anniversary commitments. Obtain the framework-specific valuation; a contribution invoice alone may not settle all obligations. |
-| Equity and statutory reserves | Reconcile capital, share premium, result allocation and each reserve. Document restrictions attached to capitalised development, participations, translation and revaluation; an accounting profit is not automatically distributable cash. |
+Ordinary unlisted BVs/NVs: the board prepares within **five months after year-end**; the general meeting may extend by **at most five further months for special circumstances**. Retain the resolution and reasons. Directors and supervisory directors sign; state the reason for any missing signature. The general meeting adopts. For a BV whose shareholders are all directors, all directors' and supervisory directors' signatures also constitute adoption if every other meeting-right holder had access and consented to this method, and the articles do not exclude it. That route also discharges directors/supervisory directors; ordinary adoption alone does not. [BW2 articles 101 and 210](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-The statutory basis for these checks is [BW2 articles 365, 368, 373–376 and 384–390](https://wetten.overheid.nl/BWBR0003045). Detailed RJ/RJk estimates and policy choices must be resolved against the actual applicable standard, with specialist input for material uncertainty. [RJ guidance](https://www.rjnet.nl/richtlijnen/).
+- File adopted accounts **within eight days after adoption**, stating the adoption date.
+- If not validly adopted within **two months after the applicable preparation period ends**, file the prepared accounts **without delay**, marked unadopted. File the adopted version when available.
+- File **no later than twelve months after year-end**. The eight-day rule never extends that cap. Earlier adoption/unadopted-filing duties can require earlier action.
 
-#### Presentation and notes
+These ordinary clocks do not resolve listed-entity timetables or a ministerial exemption: Check this point with one of our partner accountants. [BW2 article 394](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-Use the applicable official model and size relief, preserving comparable prior-year figures and explaining material policy or presentation changes. Avoid netting items that require separate presentation. An illustrative mapping is not permission to omit required lines. [BW2 articles 363–377](https://wetten.overheid.nl/BWBR0003045) and [Statutory models](https://wetten.overheid.nl/BWBR0003648).
+### 5. Assemble, submit and check the public filing
 
-| Statement | Map and reconcile |
-| --- | --- |
-| Balance sheet | Fixed assets: intangible, tangible, financial. Current assets: inventories, receivables, securities, cash and relevant accruals. Equity: capital, premium, reserves and unallocated result. Then provisions, debts and relevant accruals, with required maturity/security information. Assets must equal equity plus liabilities. |
-| Profit and loss | Select the permitted nature or function model. Reconcile revenue, inventory/own production where relevant, operating costs, wages/social costs, depreciation/impairment, participation/financial results, interest and tax to final result. Show exceptional-size or exceptional-incidence items through the required disclosure, rather than copying obsolete separate extraordinary-profit lines. |
-| Cash flows | Determine the applicable framework's statement requirement and any specific exemption. Where prepared, reconcile opening/closing cash and distinguish cash flows from noncash adjustments. Do not infer its requirement solely from a generic size checklist. |
+Micro relief limits publication to the restricted balance sheet in article 395a(3)–(4); small relief limits it to the restricted balance sheet and notes in article 396(8), excluding article 380a information. Both still prepare their applicable P&L. Medium public balance/P&L relief is set out in article 397(5); management/other-document office-inspection relief under article 394(4) has separate conditions. Detailed medium/large document packages and office-inspection relief: Check this point with one of our partner accountants. File in Dutch, or, if no Dutch version was prepared, French, German or English. [BW2 articles 361 and 394–397](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-Build a disclosure checklist for the selected framework and size, separating full accounts from filing relief. Cover policies, asset movements, debt maturity/security, contingent and off-balance obligations, related parties, employee averages, directors' remuneration/advances, auditor fees, financial instruments, current/deferred tax, reserves and subsequent events. Record an article or applicable standard for every exemption, including micro balance-sheet information that survives reduced notes. [BW2 articles 368–383, 384 and 395a–397](https://wetten.overheid.nl/BWBR0003045).
+Use KVK's current entity/year filing route and taxonomy. Micro/small/medium entities file digitally in XBRL; large entities also have digital filing from **financial year 2025**. Confirm the route and matching audit documents before submission. Technical exceptions, declarations and corrected filings: Check this point with one of our partner accountants. Keep submitted files, acceptance evidence and a register check showing the financial year. [KVK filing questions](https://www.kvk.nl/hulp-en-contact/deponeren/).
 
-Do not reuse a universal yes/no notes matrix. For example, small-company relief disapplies the statutory related-party disclosure in article 381(3) and auditor-fee disclosure in article 382a; medium relief also disapplies article 382a and narrows related-party requirements. Other applicable framework or sector requirements and the required overall insight still need assessment. [BW2 articles 362, 396 and 397](https://wetten.overheid.nl/BWBR0003045).
-
-### Audit and group exemptions
-
-Ordinary qualifying micro/small entities have statutory audit relief; ordinary medium/large entities require the statutory audit unless a valid other exemption applies. Check the entity's excluded/public-interest status before using size relief. Appoint the auditor early enough for inventory and other evidence. A compilation engagement is not a statutory audit. Verify the accountant's statutory qualification and the audit firm's actual AFM licence; a regular licence covers non-OOB statutory audits, whereas OOB work needs the appropriate OOB licence. The AFM also requires the external accountant to be registered. [BW2 articles 393 and 395a–398](https://wetten.overheid.nl/BWBR0003045) and [AFM definitions and licensing](https://www.afm.nl/nl-nl/sector/accountantsorganisaties/begrippen).
-
-For an article 403 group exemption, obtain and check the complete conditions, including the subsidiary's minimum accounts, **annual written shareholder/member consent after the financial year begins and before adoption**, qualifying consolidation, required languages, the parent's liability declaration and timely filing of the declarations and group documents. Silence is not that written consent. Parent liability alone does not complete the exemption. Article 403 and article 408 are different routes; a consolidation exemption does not automatically eliminate individual-account filing. Refer foreign parents, withdrawals and incomplete documentation for legal/accounting review before relying on relief. [BW2 articles 403 and 408](https://wetten.overheid.nl/BWBR0003045) and [KVK exemption guidance](https://www.kvk.nl/deponeren/jaarrekening-wel-of-niet-deponeren/).
-
-### Prepare, sign, adopt and file on time
-
-For an ordinary unlisted BV, the board prepares accounts within **five months** after year-end. Shareholders may grant an extension of **at most five further months** for special circumstances; retain the actual resolution and reasons. Preparation and adoption are separate. The ordinary NV has a comparable preparation rule, but listed entities have a different nonextendable timetable and must be referred to that regime. [BW2 articles 101 and 210](https://wetten.overheid.nl/BWBR0003045).
-
-All directors and supervisory directors sign, or the accounts state why a signature is missing. Record adoption by the competent body. Where all BV shareholders are also directors, signing may itself constitute adoption if the other meeting-right holders have received access and agreed, and the articles do not exclude that route. Do not automatically add an adoption period in that case. Check the separate discharge consequence. [BW2 article 210](https://wetten.overheid.nl/BWBR0003045).
-
-The filing control has three clocks:
-
-- File adopted accounts **within eight days after adoption**.
-- If accounts have not been validly adopted within **two months after the legally applicable preparation period**, file the prepared, unadopted accounts without delay, clearly marked unadopted. File the adopted version once available.
-- **The absolute filing limit is twelve months after year-end. Do not add eight days to that cap.** An earlier adoption or unadopted-filing obligation can require earlier action.
-
-Use the statute for the exact unadopted deadline; KVK's simplified calendar example must not be treated as an extra grace period after that obligation arises. There is no routine extension of the filing obligation. [BW2 article 394](https://wetten.overheid.nl/BWBR0003045) and [KVK deadline guidance](https://www.kvk.nl/deponeren/uiterste-termijn-deponeren-jaarrekening/).
-
-| Ordinary public filing | Starting point, subject to the exact relief and framework |
-| --- | --- |
-| Micro | Restricted balance sheet with the required balance-sheet information. |
-| Small | Abbreviated balance sheet and required notes; profit-and-loss account is not publicly filed under this relief. |
-| Medium | Permitted abbreviated balance sheet/profit-and-loss presentation, notes, audit report and applicable management/other information. |
-| Large | Full required statements, notes, audit report and applicable management/other information. |
-
-Confirm the article 394(4) office-inspection route if using it for eligible management/other documents; it is conditional and does not remove the audit-report filing requirement. For filed accounts use Dutch, or, if no Dutch version was prepared, French, German or English as article 394 permits. [BW2 articles 394–397](https://wetten.overheid.nl/BWBR0003045) and [KVK documents overview](https://www.kvk.nl/deponeren/waaruit-bestaat-de-jaarrekening/).
-
-Use the current KVK route and taxonomy for the entity, year and file type. Electronic filing extends to large entities for financial year 2025 onward; do not treat it as a rule only for micro/small companies. KVK supports specified XBRL and iXBRL routes for large entities and requires the audit report in the matching format. Exemptions or technical difficulties require the actual KVK process, not an assumed permission to email. Separate declarations have their own submission requirements. [KVK large-entity filing](https://www.kvk.nl/deponeren/jaarrekening-deponeren-bedrijfsklasse-groot/) and [Declarations](https://www.kvk.nl/deponeren/verklaringen-deponeren/).
-
-Validate entity/year, adopted status and date, permitted abbreviation, signatures, audit files and all required fields before submitting. Keep the submitted files, acceptance confirmation and evidence that the year is visible in the register. A sent file alone is not a confirmed completed filing. Correct through the applicable route; a corrected filing does not erase the earlier public document. If the accounts seriously fail to give the required insight, assess the separate immediate shareholder notification and public notice obligations, with the auditor where applicable. [KVK receipt check](https://www.kvk.nl/deponeren/controleer-je-jaarrekening/) and [KVK corrections](https://www.kvk.nl/deponeren/zelf-deponeren-jaarrekening/) and [BW2 article 362(6)](https://wetten.overheid.nl/BWBR0003045).
-
-Late filing can lead to fines/prosecution and director-liability consequences in bankruptcy. Do not say there is no monetary fine or that every delay automatically produces personal liability; article 248 includes the statutory presumption and relevant exceptions/defences. Escalate lateness promptly and preserve the facts. [KVK deadlines](https://www.kvk.nl/deponeren/uiterste-termijn-deponeren-jaarrekening/) and [BW2 article 248](https://wetten.overheid.nl/BWBR0003045).
+Serious deficiencies discovered after adoption require immediate notification to members/shareholders and a notice filed with the Handelsregister; attach an auditor's statement where the accounts were audited under article 393. Detailed correction and late-filing consequences, including fines/prosecution and bankruptcy director liability: Check this point with one of our partner accountants. [BW2 article 362(6)](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
 ## Worked cases
 
-**A: Exact size boundary.** Assume an ordinary unlisted, nongroup BV satisfies the same figures on both relevant dates: assets **€7,500,000**, turnover **€15,000,000**, average employees **50**. Both financial criteria meet the inclusive small ceilings; the employee criterion fails. Two qualifying criteria suffice, so the small relief can apply, subject to the remaining eligibility conditions. [BW2 article 396](https://wetten.overheid.nl/BWBR0003045).
+**A: Exact size boundary.** Ordinary unlisted, nongroup BV; the same figures at both relevant dates: assets **EUR 7,500,000**, turnover **EUR 15,000,000**, average employees **50**. The financial criteria pass (inclusive ceilings); employees fail (strict limit). **Two** qualifying criteria permit small relief, assuming all other eligibility conditions above hold. [BW2 art. 396](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-**B: Do not add days beyond the cap.** A calendar-year BV has a valid full preparation extension and adopts on **31 December 2026** its accounts for the year ended **31 December 2025**. The absolute twelve-month limit requires filing no later than **31 December 2026**; **8 January 2027** is not permitted by adding the adoption period. The general date rule, rather than the reporting standards for the earlier year, is illustrated here. [BW2 article 394](https://wetten.overheid.nl/BWBR0003045).
+**B: Do not add days beyond the cap.** Calendar-year BV, valid full preparation extension; accounts ended **31 December 2025**, adopted **31 December 2026**. File no later than **31 December 2026**, assuming the ordinary regime: **8 January 2027** breaches the twelve-month cap. [BW2 art. 394](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-**C: Signing can start the filing clock.** All shareholders are directors, the required other meeting-right holders agree and the articles do not exclude signing-as-adoption. With valid signatures on **30 October 2026**, adoption occurs then; file within eight days, without granting a further two months. Check the actual calendar and submit early enough. [BW2 articles 210 and 394](https://wetten.overheid.nl/BWBR0003045).
+**C: Signing can start the clock.** All shareholders are directors; other meeting-right holders had access and agree; articles do not exclude signing-as-adoption. All required signatures dated **30 October 2026** constitute adoption. File within **eight days**; do not add two months. Submit early and check calendar adjustments separately. [BW2 arts. 210(5), 394(1)](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-**D: Not adopted in time.** For a calendar-year BV with no preparation extension, the five-month preparation period ends in May. If it remains unadopted after the following two months, file the prepared unadopted accounts without delay; do not wait until December or assume the adoption-based eight-day period supplies extra time. [BW2 article 394(2)](https://wetten.overheid.nl/BWBR0003045).
+**D: Not adopted in time.** Calendar-year BV, no extension: preparation ends in **May**. If unadopted after the following **two months**, file the prepared unadopted accounts without delay; do not wait until December or add an eight-day grace period. [BW2 art. 394(2)](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-**E: Reserve reconciliation.** Assume qualifying capitalised development costs have a closing carrying amount of **€24,000** and the required development reserve before the closing entry is **€18,000**. The reserve must equal the capitalised amount, so the workpaper identifies a **€6,000** increase/reclassification, subject to the actual equity entry and framework. This does not create cash or reduce total equity by itself. [BW2 article 365(2)](https://wetten.overheid.nl/BWBR0003045).
+**E: Reserve reconciliation.** Qualifying capitalised development costs close at **EUR 24,000**; reserve before the closing entry is **EUR 18,000**. On the assumption the reserve rule applies, **EUR 24,000 − EUR 18,000 = EUR 6,000** must be reclassified into that reserve. This equity reclassification creates no cash and leaves total equity unchanged. [BW2 art. 365(2)](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-**F: Parent guarantee is insufficient.** A subsidiary has a parent liability declaration but no annual written shareholder consent. Do not mark article 403 satisfied or stop the ordinary filing/audit assessment. Obtain the missing evidence or apply the ordinary regime; silence is not the statutory consent. [BW2 article 403](https://wetten.overheid.nl/BWBR0003045).
+**F: Parent guarantee is insufficient.** Parent liability declaration, no annual written shareholder consent: article 403(1)(b) is unsatisfied. Continue the ordinary assessment. Full exemption application: Check this point with one of our partner accountants. [BW2 art. 403](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-**G: Inventory policy.** A Dutch-GAAP entity asks whether LIFO is automatically forbidden. Article 385(2) expressly permits it for like items; establish the applicable framework and actual consistent policy rather than applying an IFRS-derived blanket prohibition. [BW2 article 385](https://wetten.overheid.nl/BWBR0003045).
+**G: Inventory policy.** The Dutch-GAAP entity asks whether LIFO is automatically forbidden. Article 385(2) expressly permits LIFO for like inventory/securities. The actual framework-specific policy: Check this point with one of our partner accountants. [BW2 art. 385](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
-**H: Public filing versus preparation.** An eligible small BV does not publish its profit-and-loss account under article 396 relief. It still prepares the full accounts required for its own adoption, including the applicable profit-and-loss account; its public balance sheet and notes must reconcile to them. [BW2 articles 361 and 396](https://wetten.overheid.nl/BWBR0003045).
-
-Cases A and E recomputed (a criterion scores 1 when met, 0 when not):
+**H: Public filing versus preparation.** Eligible small BV: article 396(8) excludes the P&L from its public filing, but article 361 still requires preparation of its applicable P&L. Reconcile the public balance sheet and notes to the full accounts. [BW2 arts. 361, 396](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
 ```oa-check
-name: Exact small-size boundary and development reserve top-up
+name: Exact small-size boundary (case A)
 inputs:
   assets: 7500000
   turnover: 15000000
@@ -174,34 +114,43 @@ inputs:
   assets_cap: 7500000
   turnover_cap: 15000000
   employee_limit: 50
-  capitalised_development: 24000
-  reserve_before: 18000
 steps:
   - assets_met: 1 - min(1, max(0, assets - assets_cap))
   - turnover_met: 1 - min(1, max(0, turnover - turnover_cap))
   - employees_met: min(1, max(0, employee_limit - employees))
   - criteria_met: assets_met + turnover_met + employees_met
-  - reserve_increase: capitalised_development - reserve_before
 expected:
   criteria_met: 2
+```
+
+```oa-check
+name: Development reserve reconciliation (case E)
+inputs:
+  capitalised_development: 24000
+  reserve_before: 18000
+steps:
+  - reserve_increase: capitalised_development - reserve_before
+expected:
   reserve_increase: 6000.00
 ```
 
 ## When to refuse or refer
 
-- Do not present accounts as final when material balances, going concern, the applicable standard, group perimeter, exemptions or required audit evidence remain unresolved.
-- Refer listed/regulated entities, complex consolidations, foreign-parent exemptions, uncertain recognition/disclosure, serious misstatements and threatened deadlines/liability to an appropriately qualified accountant or legal specialist. The guide is a preparation and control method; it is not an audit opinion.
+Do not finalise accounts while material balances, going concern, the applicable standard, group perimeter, exemptions or required audit evidence remain unresolved. Detailed accounting and specialist applications held above are not usable conclusions: Check this point with one of our partner accountants.
 
 ## Completion checklist
 
-Deliver the entity/period/framework and size memo, reconciled adjusted trial balance, supported adjustments, full draft statements, framework-specific notes checklist, audit/exemption assessment, signatures/adoption record, dated filing plan and public filing package with acceptance evidence. List unresolved matters with their financial effect and required evidence. Retain the underlying accounting records under the applicable retention rules; BW2's ordinary records period is **seven years**, subject to other longer obligations. [BW2 article 10](https://wetten.overheid.nl/BWBR0003045).
+Deliver the period/framework/size memo, reconciled trial balance and adjustments, full statements and resolved notes checklist, audit/exemption assessment, signatures/adoption record, filing calendar and public package with acceptance evidence. Retain the accounting books and records **seven years**, subject to any separately applicable longer duty. [BW2 art. 10(3)](https://wetten.overheid.nl/BWBR0003045/2026-07-01).
 
 ## Sources
 
-| Source | URL | Read on |
-|---|---|---|
-| Burgerlijk Wetboek Boek 2 (version in force from 1 July 2026), art. 10, 210, 394, 395a, 396 and 397 | https://wetten.overheid.nl/BWBR0003045/2026-07-01 | 2026-11-14, read for the micro, small and medium criteria, the 5-month preparation period and 5-month extension, the 8-day, 2-month and 12-month filing clocks and the 7-year retention |
-| KVK, uiterste termijn deponeren jaarrekening | https://www.kvk.nl/deponeren/uiterste-termijn-deponeren-jaarrekening/ | 2026-11-14, read for the worked filing calendar and signing-as-adoption by shareholder-directors |
-| KVK, waaruit bestaat de jaarrekening | https://www.kvk.nl/deponeren/waaruit-bestaat-de-jaarrekening/ | 2026-11-14, read for what each size class files |
+| Official source | Read on and scope |
+|---|---|
+| [BW2, effective 1 July 2026](https://wetten.overheid.nl/BWBR0003045/2026-07-01) | 2026-11-26: operative articles 10, 10a, 101, 210, 360–365, 377, 384–386, 393, 394, 395a–398, 403 and 408; statutory rules retained above. |
+| [BW2 official XML, same consolidation](https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0003045/2026-07-01_0/xml/BWBR0003045_2026-07-01_0.xml) | 2026-11-26: articles 396–397(1), small/medium thresholds; manifest identifies BWBR0003045, effective 1 July 2026. |
+| [Staatsblad 2024, 52](https://zoek.officielebekendmakingen.nl/stb-2024-52.html) | 2026-11-26: articles 1–4, raised monetary ceilings and reporting-year application. |
+| [RJ edition 2026 introduction](https://www.rjnet.nl/siteassets/ten-geleides/rj-bundel/ten-geleide-bij-editie-2026.pdf) | 2026-11-26: p. 39, edition applicability only; detailed standards are not proven by this introduction. |
+| [AFM definitions](https://www.afm.nl/nl-nl/sector/accountantsorganisaties/begrippen) | 2026-11-26: external-accountant registration, licence requirement and regular/OOB distinction. |
+| [KVK filing questions](https://www.kvk.nl/hulp-en-contact/deponeren/) | 2026-11-26: digital filing by size, unadopted replacement and register visibility. |
 
-Not yet confirmed: the RJ 2026 edition introduction, the AFM licensing page, the KVK large-entity, declarations, corrections and receipt-check pages and the statutory models decree (BWBR0003648) were not reopened today; their rules are carried from the 2026-09-28 version. The BW2 articles other than those listed in the Sources row (101, 248, 361 to 393, 398, 403, 408) were not re-read line by line today.
+Not yet confirmed for operational use: detailed RJ/RJk recognition, measurement, cash flows and disclosure applications, special entities, complete group-exemption applications, medium/large filing packages, technical exceptions, corrections and liability applications. Each is explicitly held for partner-accountant referral above.
