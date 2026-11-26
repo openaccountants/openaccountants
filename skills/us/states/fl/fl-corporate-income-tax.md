@@ -110,7 +110,7 @@ Five original cases are retained below; each calculation states its limits.
 
 ### 1. SunCode Inc.
 
-SunCode is a Florida C-corporation developing custom software from Tampa: 10 W-2 developers and 1 owner-CEO; all work, R&D, management and support in Florida; customers in 35 states, 12% of revenue from Florida and 88% outside. For 2025, federal Form 1120 line 30 income is $480,000, including $0 federal NOLD; supplied bonus depreciation is $30,000 on servers placed in service in 2025, and supplied prior one-seventh recovery is $5,000. Property is $50,000 Florida/everywhere, payroll $1,200,000 Florida/everywhere, receipts $3,500,000 Florida/everywhere.
+SunCode is a Florida C-corporation developing custom software from Tampa: 10 W-2 developers and 1 owner-CEO; all work, R&D, management and support in Florida; customers in 35 states, 12% of revenue from Florida and 88% outside. For 2025, federal Form 1120 line 30 income is $480,000, including $0 federal NOLD; supplied bonus depreciation is $30,000 on new servers placed in service in 2025, and supplied prior one-seventh recovery is $5,000. Property is $50,000 Florida/everywhere, payroll $1,200,000 Florida/everywhere, receipts $3,500,000 Florida/everywhere.
 
 Conditional on the $30,000 ordinary non-QIP addback, $5,000 recovery, full exemption and all-Florida factors being valid, the current recovery is $30,000 / 7 = $4,285.714286. The base is $480,000 + $30,000 − $5,000 − $4,285.714286 − $50,000 = $450,714.285714; ordinary tax is $24,789.29, or $24,789 whole-dollar. The addition's applicability and complete return adjustments remain undetermined. [Section 220.13(1)(e)](https://www.flsenate.gov/Laws/Statutes/2025/220.13); [F-1120N, pp. 8–10](https://floridarevenue.com/Forms_library/current/f1120n.pdf).
 
@@ -184,7 +184,7 @@ expected:
 
 ### 4. Atlantic Manufacturing Inc.
 
-Florida C-corporation with projected 2025 Florida tax of $40,000 and a proposed $40,000 contribution to Step Up For Students. The simple subtraction is zero, but establishes neither the allowable credit nor final tax after the federal-benefit reduction and state addback. Actual approval, contribution timing, eligibility, federal deduction and resulting balance: **Check this point with one of our partner accountants.** [Section 220.1875](https://www.flsenate.gov/Laws/Statutes/2025/220.1875); [section 220.13(1)(a)11](https://www.flsenate.gov/Laws/Statutes/2025/220.13).
+Florida C-corporation with projected 2025 Florida tax of $40,000 and a stipulated $40,000 contribution to Step Up For Students. The simple subtraction is zero, but establishes neither the allowable credit nor final tax after the federal-benefit reduction and state addback. Actual approval, contribution timing, eligibility, federal deduction and resulting balance: **Check this point with one of our partner accountants.** [Section 220.1875](https://www.flsenate.gov/Laws/Statutes/2025/220.1875); [section 220.13(1)(a)11](https://www.flsenate.gov/Laws/Statutes/2025/220.13).
 
 ```oa-check
 name: Atlantic arithmetic only; credit and balance undetermined
