@@ -59,7 +59,7 @@ Out of scope: individuals (see [Income tax](tanzania-income-tax.md)), mining and
 
 | Item | Figure | Source |
 |---|---|---|
-| Late filing or payment | Per month or part: 2.5% of the unpaid tax, or 15 currency points for a body corporate (TZS 300,000), whichever is higher | [TAA s.89](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf); [FA 2024 s.97](https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf) |
+| Late filing or payment | Per month or part: 2.5% (in words on the page: 'two point five percent') of the unpaid tax, or 15 currency points for a body corporate (TZS 300,000, derived: 15 points at TZS 20,000 a point), whichever is higher | [TAA s.89](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf); [FA 2024 s.97](https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf) |
 | Currency point | TZS 20,000 from 1 July 2024 | [TAA s.4(3), Second Schedule](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf); [FA 2024 s.97](https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf) |
 | Late payment interest | Statutory rate, compounded monthly. The statutory rate is the Bank of Tanzania prevailing discount rate; the 2026 figure is unverified | [TAA s.87(1), s.3](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf) |
 | Under-estimating instalments | Interest where the estimate is below 80% of the correct amount | [TAA s.86(3)](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf) |
