@@ -137,7 +137,7 @@ An EU/EEA national may use paragraph(b) tables if the Commissioner is satisfied 
   - a pension taxable in Malta;
   - full-time education or an apprenticeship.
 
-  Article 90A(9) extends this to a spouse living with a qualifying spouse only without an effective article 49A separate-return election. If entitlement depends on the extension, rule 3(2) excludes income from the specified spouse/adoptive child/ascendants/descendants/their spouses/siblings/their spouses and companies in which the individual or those persons are direct/indirect shareholders.
+  Article 90A(9) extends this to a spouse living with a qualifying spouse. The extension applies only without an effective article 49A separate-return election. If entitlement depends on the extension, rule 3(2) excludes income from the specified spouse/adoptive child/ascendants/descendants/their spouses/siblings/their spouses and companies in which the individual or those persons are direct/indirect shareholders.
 - **Rate:** 10% from year of assessment 2023 (article 90A(11)). Before that it was 15%. The tax is final, and the income is not declared in the return.
 - **Caps** (rule 3(2)): the rate covers self-employed profit (article 4(1)(a)) up to €12,000, and part-time employment income (article 4(1)(b)) up to €10,000. Any **excess** is declared in the return at normal rates.
 - **Conditions for the self-employed** (rule 4). All of these are required:
