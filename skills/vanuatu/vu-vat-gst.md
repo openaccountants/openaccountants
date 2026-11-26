@@ -1,10 +1,10 @@
 ---
 name: vu-vat-gst
 description: "Vanuatu VAT, tax year 2026: 15% standard rate and 0% Schedule 3 supplies, exempt supplies, the VT 4 million registration test and 21-day application, monthly and quarterly periods, returns by the 27th (5 January for November), accounting basis, import VAT base, from the VAT Act [Cap 247] and DCIR."
-version: 1.3
+version: 1.4
 jurisdiction: VU
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -26,30 +26,30 @@ Anyone carrying on a taxable activity in Vanuatu and every importer. VAT is admi
 | Standard rate | 15% (s 11(1)) | 2026 | https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf |
 | Zero rate | 0% on Schedule 3 supplies made in Vanuatu by a registered person (s 11(2)) | 2026 | https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf |
 | Compulsory registration | Taxable supplies in any 12-month period exceed, or are expected to exceed, VT4 million | 2026 | https://vanuatucustoms.gov.vu/taxes-and-licensing/taxes/value-added-tax-vat/introduction.html |
-| Quarterly (Category B) periods, on written application | Taxable supplies less than VT8 million a year | 2026 | https://vanuatucustoms.gov.vu/taxes-and-licensing/taxes/value-added-tax-vat/introduction.html |
+| Quarterly (Category B) periods, on written application | Taxable supplies of VT 8 million or less in the relevant 12 months, subject to ss 15(3) and (4) | 2026 | https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf |
 | Application to register once liable | Within 21 days (s 12(3)) | 2026 | https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf |
 | Interest the Director pays on a late refund | 15% per annum after 15 working days (s 42) | 2026 | https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf |
 
-The Act tests registration at the end of each month over the past twelve months and at the start of each month over the coming twelve (s 12(1)), disregarding exempt supplies and supplies caused only by winding down or replacing capital assets (s 12(2)). For Category B the Act's words are "has not ... exceeded eight million vatu", so exactly VT 8 million still qualifies (s 15(3)); the Minister may change the limit by order.
+The Act tests registration at the end of each month over the past 12 months and at the start of each month over the coming 12 (s 12(1)). Disregard exempt supplies and, where the Director is satisfied, supplies caused solely by cessation, substantial permanent reduction or capital asset replacement (s 12(2)). For Category B, the 12 months end on the last day of a month. Section 15(4) deals with excesses solely due to cessation, substantial permanent reduction or capital asset replacement. The Minister may change the Category B limit by order.
 
 ## The base
 
 - **Domestic supplies.** VAT on the value of the supply (s 10, s 11(1)(a)).
 - **Imports.** VAT on the customs value, plus customs duty, plus excise, plus the cost of transport to Vanuatu and insurance for it (s 11(1)(b)). DCIR's no-excise clearance calculation takes the cost, insurance and freight value once and adds duty before applying 15%.
-- **Zero-rated (Sch 3).** Exports meeting the conditions, goods outside Vanuatu at supply, international transport, services physically performed outside Vanuatu, services to a non-resident outside Vanuatu (para 5: not services directly connected with Vanuatu land or goods, and not services received in Vanuatu by an unregistered person), supplies to approved educational institutions and aid projects, and a going concern sold to a registered person where both agree in writing (para 9). From 22 July 2021 the Tax Administration Act definitions apply to Schedule 3 (VAT Amendment Act No. 13 of 2021).
-- **Exempt (Sch 1).** Financial services, hire of accommodation in a residential dwelling, qualifying leasehold rent, education by an approved institution, donated goods and services sold by a non-profit body, and the sale of a property used for exempt residential rental for at least 5 years. No input credit on exempt supplies.
-- **Input credit.** Only against a valid tax invoice; a registered supplier must issue one within 28 days of a registered customer's request (DCIR guide).
+- **Zero-rated (Sch 3).** Exports meeting the conditions, goods outside Vanuatu at supply, international transport, services physically performed outside Vanuatu, services meeting para 5, eligible direct supplies for approved aid projects and a going concern sold to a registered person where both agree in writing (para 9). For para 5, check the non-resident's business and location, the connection to tangible property in Vanuatu and whether an unregistered person receives performance in Vanuatu. From 22 July 2021 the Tax Administration Act residency definitions apply (VAT Amendment Act No. 13 of 2021).
+- **Exempt (Sch 1).** Financial services, hire of accommodation in a residential dwelling, qualifying leasehold rent, education supplied by an educational institution and donated goods and services supplied by a non-profit body. The property disposal rule covers a dwelling or the reversionary interest in the fee simple estate of leasehold land sold by a registered person in a taxable activity. The person must have used it exclusively for exempt residential or qualifying leasehold rental for at least 5 years before the sale. No input credit for acquisitions used solely for exempt supplies.
+- **Input credit.** Claim only to the extent the goods or services are acquired for making taxable supplies. Hold a tax invoice or debit or credit note at filing for a domestic purchase or adjustment unless none is required. Section 19 specifies separate rules for imports and eligible second-hand goods. A registered supplier providing a taxable supply must issue a required invoice within 28 days of a registered customer's request. Section 21(5) allows an exception for cash consideration of VT 5,000 or less, subject to any higher limit set by order, and where the Director makes the specified determination.
 
 ## Deadlines and filing
 
 - **Periods.** Category A is monthly; Category B is three-monthly on written application (s 15).
-- **Returns and payment.** For a period ending 30 November, by 5 January; for any other period, by the 27th of the following month; a non-working day moves the date to the next working day (ss 16 and 20). A creditor selling a registered debtor's goods files a special return by the 27th (s 16(2)).
+- **Returns and payment.** For a period ending 30 November, by 5 January; for any other period, by the 27th of the following month; a non-working day moves the ordinary due date to the next working day (ss 16 and 20). A creditor selling a registered debtor's goods in satisfaction of debt files a special return by the 27th of the month after the taxable period and remits the VAT. Both parties exclude the sale and VAT from their other returns (s 16(2)).
 - **Extensions.** An individual filing extension under Tax Administration Act s 11 leaves the payment date unchanged; a general extension the Director grants to all taxpayers or a class under s 11(7) also extends payment.
 - **Accounting basis.** Invoice or payments basis, elected in the approved form; with no election, the payments basis applies (s 17).
 
 ## Penalties and interest
 
-DCIR's guide says late payment penalties are assessed; the amounts sit in the Tax Administration Act No. 37 of 2018 and were not read for this guide. The Director pays interest at 15% a year on a refund not made within 15 working days (s 42).
+DCIR's guide says late payment penalties are assessed. The Tax Administration Act No. 37 of 2018 sets out penalties and interest. The Director pays interest at 15% a year from the day after an excess-credit refund required under s 41 is due (s 42). The ordinary refund deadline is 15 working days after receiving the return. Check s 41 for investigation, set-off and outstanding-return provisions.
 
 ## Cross-border points
 
