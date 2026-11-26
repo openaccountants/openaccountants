@@ -1,10 +1,10 @@
 ---
 name: dj-company-formation
 description: "Use for setting up a business in Djibouti for 2026: sole trader, SARL or SA, no minimum capital, the ODPIC one-stop steps, the one-month register rule and first tax registrations."
-version: 2.1
+version: 2.2
 jurisdiction: DJ
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 type: filing-howto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -27,7 +27,7 @@ Founders choosing a form. ODPIC runs the Registre de Commerce et des Societes an
 | Capital contributions duty | 10,000 fixed | Art. 488 B, 2017 law art. 5 | https://www.journalofficiel.dj/texte-juridique/loi-n190-an-17-7eme-l-portant-modification-du-code-general-des-impots/ |
 | Tax start declaration | 12 days | Art. 218 | https://www.ministere-finances.dj/TVA/CGI%20%202010.pdf |
 | CNSS | 48 hours | Employers | https://cnss.dj/affiliation-employeur/ |
-| Patente relief | Classes 5 to 8 exempt 3 years | Art. 100, new payers, 2017 law art. 1, later amended (LF 2022 art. 17) | https://www.journalofficiel.dj/texte-juridique/loi-n190-an-17-7eme-l-portant-modification-du-code-general-des-impots/ |
+| Patente relief | 100%, then 50%, then 25% | First, second and third calendar years of activity, only for individuals under 31, groups made up only of individuals or of public servants retiring voluntarily, and public or private employees made redundant for economic reasons, starting a patente activity on their own account (art. 100 al. 16 as rewritten by LF 2022 art. 17). This replaced the 2017 relief for new payers in classes 5 to 8, already cut to classes 5 and 6 by LFR 2019 art. 7 | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n142-an-21-8eme-l-portant-budget-initial-de-letat-pour-lexercice-2022/ |
 
 ## The base
 
@@ -103,5 +103,7 @@ expected:
 | Code general des impots, edition updated to the 2011 finance law, Ministry of Finance: articles cited read in the PDF text; later changes taken from the finance laws listed here | https://www.ministere-finances.dj/TVA/CGI%20%202010.pdf | 2026-11-14 |
 | CNSS, Affiliation employeur: read in full | https://cnss.dj/affiliation-employeur/ | 2026-11-14 |
 | Loi 190/AN/17/7eme L amending the CGI: articles 1 to 5 read | https://www.journalofficiel.dj/texte-juridique/loi-n190-an-17-7eme-l-portant-modification-du-code-general-des-impots/ | 2026-11-14 |
+| Loi de finances 62/AN/19/8eme L, rectified budget 2019: article 7 read | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n62-an-19-8eme-l-portant-budget-rectificatif-de-letat-pour-lexercice-2019/ | 2026-11-26 |
+| Loi de finances 142/AN/21/8eme L, budget 2022: article 17 read | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n142-an-21-8eme-l-portant-budget-initial-de-letat-pour-lexercice-2022/ | 2026-11-26 |
 
 Not yet confirmed: The CGI on the official site is the 2011 edition. No consolidated 2026 code could be opened (impots.dj, dgi.dj and economie.gouv.dj did not answer), so each rule is the 2011 text plus the finance laws read; the finance laws found in the gazette for 2013 to 2026 were scanned for tax articles, the 2012 law was not, so an amendment made only there or in a law the gazette search missed would not show. The old skill's 3-day timeline, USD 70,000 free-zone capital and 1,000,000 SARL capital came from non-official sites; the capital figure is contradicted by ODPIC and the others were not confirmed. Fees: ODPIC tariff page not read. Guichet-unique.dj did not open.
