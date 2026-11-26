@@ -1,10 +1,10 @@
 ---
 name: uk-income-tax-sa100
-description: "UK Income Tax for individuals who file the SA100 Self Assessment return, tax year 2026-27 (6 April 2026 to 5 April 2027), with 2025-26 figures for returns filed now. Covers the GBP 12,570 Personal Allowance and its taper above GBP 100,000, the frozen bands and the 20%, 40% and 45% rates, the Welsh rates, the six Scottish bands for 2026-27, the starting rate for savings and the Personal Savings Allowance, the dividend allowance and rates, Marriage Allowance, the High Income Child Benefit Charge, who must file, registration by 5 October, the 31 October and 31 January deadlines, penalties and late payment interest. Trigger on: SA100, personal allowance taper, income tax bands 2026-27, Scottish income tax, marriage allowance, child benefit charge, register for self assessment, late tax return penalty. Out of scope: uk-self-employment-sa103, uk-rental-sa105, uk-capital-gains-sa108, uk-national-insurance, uk-statutory-residence-test, uk-dividends, uk-scottish-income-tax, uk-payments-on-account."
-version: 2.4
+description: "UK Income Tax for individuals who file the SA100 Self Assessment return, tax year 2026-27 (6 April 2026 to 5 April 2027), with 2025-26 figures for returns filed now. Covers the GBP 12,570 Personal Allowance and its taper above GBP 100,000, the frozen bands and the 20%, 40% and 45% rates, the Welsh rates, the six Scottish bands for 2026-27, the starting rate for savings and the Personal Savings Allowance, the dividend allowance and rates, Marriage Allowance, the High Income Child Benefit Charge, who must file, Tax-Free Childcare adjusted net income and pension gross-up, registration by 5 October, the 31 October and 31 January deadlines, penalties and late payment interest. Trigger on: SA100, personal allowance taper, income tax bands 2026-27, Scottish income tax, marriage allowance, child benefit charge, register for self assessment, late tax return penalty. Out of scope: uk-self-employment-sa103, uk-rental-sa105, uk-capital-gains-sa108, uk-national-insurance, uk-statutory-residence-test, uk-dividends, uk-scottish-income-tax, uk-payments-on-account."
+version: 2.5
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -16,7 +16,7 @@ type: computation
 
 # UK Income Tax for individuals: the SA100 Self Assessment return (2026-27)
 
-The UK tax year runs from 6 April to 5 April. The year in force is 2026-27 (6 April 2026 to 5 April 2027). The returns being filed now are for 2025-26, due online by 31 January 2027. Where a figure differs between the two years, both are given. Rules already enacted for 2027-28 are flagged so nobody applies them early.
+The UK tax year runs from 6 April to 5 April. The year in force is 2026-27 (6 April 2026 to 5 April 2027). The returns being filed now are for 2025-26, due online by 31 January 2027. Where a figure differs between the two years, both are given. Do not use these computations for 2027-28 without a fresh year-specific check.
 
 This skill sets out the income tax computation and the filing rules. It points to the other UK skills and does not repeat them:
 
@@ -31,16 +31,13 @@ This skill sets out the income tax computation and the filing rules. It points t
 
 ## Who this applies to
 
-- **UK residents** are charged on their income for the tax year. A person who is not resident is outside this skill: use `uk-statutory-residence-test` and `uk-non-resident-sa109`. The Personal Allowance needs the residence conditions in ITA 2007 s.56 ([ITA 2007 s.35](https://www.legislation.gov.uk/ukpga/2007/3/section/35)).
-- **Which rates apply to wages, pensions, self-employment and rent (non-savings income)** depends on where the main home is:
-  - England and Northern Ireland: the UK main rates.
-  - Wales: the Welsh rates. HMRC shows them equal to the England rates for 2026-27. A Welsh taxpayer has a tax code starting with C ([Welsh Income Tax](https://www.gov.uk/welsh-income-tax)).
-  - Scotland: the Scottish rates and six bands. A Scottish taxpayer has a tax code starting with S ([Scottish Income Tax](https://www.gov.uk/scottish-income-tax)).
-- **Savings interest and dividends** are taxed at UK rates wherever the person lives in the UK. GOV.UK: "You'll pay the same tax as the rest of the UK on dividends and savings interest" ([Scottish Income Tax](https://www.gov.uk/scottish-income-tax)).
-- **Main home test.** The main home is usually where the person lives and spends most time. With no clear main home, count days in Scotland (or Wales) against days elsewhere in the UK; where a person is at midnight decides the day. The status applies for the whole tax year ([Scottish Income Tax](https://www.gov.uk/scottish-income-tax)).
-- **Who must send a return.** For the last tax year, a person must send a return if they were a sole trader with income over GBP 1,000 before expenses, a partner in a partnership, had Capital Gains Tax to pay, had to pay the High Income Child Benefit Charge and do not pay it through PAYE, or are an off-payroll worker repaying a student or postgraduate loan. Untaxed income (rent, tips, savings interest, dividends, foreign income) can also need a return ([who must send a tax return](https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return)).
-- **Dividends.** Dividends taxable above the allowances can be reported by tax code change if under GBP 10,000. Dividends over GBP 10,000 need a Self Assessment return ([tax on dividends](https://www.gov.uk/tax-on-dividends)).
-- Anyone HMRC has sent a notice to file must file, whatever their income (TMA 1970 s.8).
+Use for a UK-resident individual after establishing Personal Allowance entitlement. For non-residence, split years, foreign income, trusts, estates or uncertain Scottish/Welsh status: Check this point with one of our partner accountants. Load `uk-statutory-residence-test`, `uk-non-resident-sa109` and, for Scottish status, `uk-scottish-income-tax`.
+
+Scottish and Welsh status affects non-savings income; savings and dividends use UK rates. Scottish PAYE codes start with S, Welsh codes with C. Multiple homes, day-count tests and moves during the year need a status determination, not a rate inferred from today's address ([Scotland](https://www.gov.uk/scottish-income-tax/who-pays); [Wales](https://www.gov.uk/welsh-income-tax)).
+
+For 2025-26, HMRC requires a return for a sole trader earning over GBP 1,000 before reliefs, a business partner, someone with CGT to pay, someone paying the Child Benefit charge outside PAYE, an off-payroll worker repaying a student/postgraduate loan, or anyone asked by HMRC to file. Untaxed rent, tips, interest, dividends and foreign income can also require one ([who must file](https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return)). A notice to file must not be ignored; seek withdrawal from HMRC if no return is needed.
+
+Dividends over GBP 10,000 require Self Assessment. Up to and including GBP 10,000, someone already filing reports dividends on the return; someone not filing who owes dividend tax tells HMRC after 5 April and before 5 October, by requesting a tax-code change or contacting HMRC. Do not assume exactly GBP 10,000 requires a return for this reason alone ([report dividends](https://www.gov.uk/tax-on-dividends/how-to-report-tax-on-dividends)).
 
 ## Rates, bands and thresholds
 
@@ -60,104 +57,108 @@ This skill sets out the income tax computation and the filing rules. It points t
 | Scottish advanced rate (S6M-20844: above GBP 62,430 up to 125,140) | 45% on GBP 75,001 to 125,140 (same in 2025-26) | 2026-27 | https://www.parliament.scot/chamber-and-committees/votes-and-motions/S6M-20844 ; https://www.gov.uk/scottish-income-tax ; https://www.gov.uk/scottish-income-tax/2025-to-2026-tax-year |
 | Scottish top rate (S6M-20844) | 48% over GBP 125,140 (same in 2025-26) | 2026-27 | https://www.parliament.scot/chamber-and-committees/votes-and-motions/S6M-20844 ; https://www.gov.uk/scottish-income-tax ; https://www.gov.uk/scottish-income-tax/2025-to-2026-tax-year |
 | Savings rates (FA 2026 s.3(2)) | 20%, 40%, 45% | 2026-27 (same in 2025-26) | https://www.legislation.gov.uk/ukpga/2026/11/section/3 |
-| Savings rates enacted for 2027-28 (FA 2026 s.5) | 22%, 42%, 47%; not for 2026-27 | 2027-28 | https://www.legislation.gov.uk/ukpga/2026/11/section/5 |
 | Starting rate limit for savings (ITA 2007 s.12(3); FA 2026 s.9) | GBP 5,000 at 0%, frozen 2026-27 to 2030-31 | 2026-27 | https://www.legislation.gov.uk/ukpga/2026/11/section/9 |
-| Starting rate entry point | Other taxable income under GBP 17,570; each GBP 1 over the Personal Allowance cuts the GBP 5,000 by GBP 1 | 2026-27 | https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free |
+| Starting rate entry point | With the standard allowance, other income excluding savings/dividends under GBP 17,570; each GBP 1 over the Personal Allowance cuts the GBP 5,000 by GBP 1 | 2026-27 | https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free |
 | Personal Savings Allowance (ITA 2007 s.12B) | GBP 1,000 basic rate; GBP 500 higher rate; nil additional rate | 2025-26 and 2026-27 | https://www.legislation.gov.uk/ukpga/2007/3/section/12B |
 | Dividend allowance (dividend nil rate band, ITA 2007 s.13A) | GBP 500 | 2025-26 and 2026-27 | https://www.legislation.gov.uk/ukpga/2007/3/section/13A |
 | Dividend ordinary, upper, additional rates (ITA 2007 s.8 as amended by FA 2026 s.4) | 10.75%, 35.75%, 39.35% (2025-26: 8.75%, 33.75%, 39.35%) | 2026-27 | https://www.legislation.gov.uk/ukpga/2026/11/section/4 ; https://www.legislation.gov.uk/ukpga/2007/3/section/8 |
 | Marriage Allowance transferable amount (ITA 2007 s.55B(4)-(5)) | 10% of the Personal Allowance rounded up to GBP 10: GBP 1,260; tax cut up to GBP 252 | 2025-26 and 2026-27 | https://www.gov.uk/marriage-allowance |
 | High Income Child Benefit Charge (ITEPA 2003 s.681C) | 1% of Child Benefit per GBP 200 of adjusted net income over GBP 60,000; 100% at GBP 80,000 (computed: 60,000 + 100 x 200) | 2024-25 onwards | https://www.legislation.gov.uk/ukpga/2003/1/section/681C |
-| Late payment interest | Bank of England base rate plus 4%; 7.75% from 9 January 2026 | Current | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
 
 The resolution limits are amounts of income above the Personal Allowance; with the standard GBP 12,570 allowance they give the bands in the table, which match HMRC's [Scottish Income Tax](https://www.gov.uk/scottish-income-tax) page. The 2025-26 main bands come from GOV.UK's previous tax years page, which states the 2025-26 Personal Allowance was GBP 12,570 and the higher rate started on income over GBP 50,270 ([Income Tax rates: previous tax years](https://www.gov.uk/income-tax-rates/previous-tax-years)).
 
+
+These whole-pound income ranges are a quick reference with the standard allowance. Apply taper and band extensions in the computation. Scottish/Welsh pension relief and allowance allocation: Check this point with one of our partner accountants.
+
 ## The taxable base
 
-**Step 1: total income, split into three kinds.** Non-savings income (employment, pensions, self-employment profit from `uk-self-employment-sa103`, property profit from `uk-rental-sa105`), then savings income (interest), then dividends. ISA interest and dividends are not taxable. HMRC splits joint account interest equally unless told otherwise ([savings interest](https://www.gov.uk/apply-tax-free-interest-on-savings)).
+**Step 1: total income, split into three kinds.** Employment, pensions, trade and property profits are non-savings income; interest is savings income; dividends are separate. Compute profits with `uk-self-employment-sa103` and `uk-rental-sa105`. ISA interest and dividends are not taxable. HMRC splits joint-account interest equally; contact HMRC if a different split is appropriate ([interest](https://www.gov.uk/apply-tax-free-interest-on-savings); [dividends](https://www.gov.uk/tax-on-dividends)).
 
-**Step 2: reliefs deducted from income**, such as trading losses and pension contributions paid gross.
+**Step 2: reliefs deducted from income.** Deduct only reliefs to which the individual is entitled, such as eligible trading losses or pension payments made gross without prior relief. Do not deduct net-pay pension contributions twice. Eligibility, limits, loss ordering and unusual allowance allocation: Check this point with one of our partner accountants.
 
-**Step 3: adjusted net income (ITA 2007 s.58).** Take total taxable income less those reliefs, then also deduct grossed-up Gift Aid and grossed-up relief-at-source pension contributions ([adjusted net income](https://www.gov.uk/guidance/adjusted-net-income)). Adjusted net income drives the Personal Allowance taper and the Child Benefit charge.
+**Step 3: adjusted net income (ITA 2007 s.58).** Take total taxable income less those reliefs, then also deduct grossed-up Gift Aid and grossed-up relief-at-source pension contributions. Add back any relief for trade-union or police-organisation superannuation, life-insurance or funeral-benefit payments deducted in arriving at net income. Include taxable savings and dividends even where a nil rate applies. Foreign income and FIG claims need specialist treatment ([adjusted net income](https://www.gov.uk/guidance/adjusted-net-income); [s.58](https://www.legislation.gov.uk/ukpga/2007/3/section/58)).
 
-**Step 4: the Personal Allowance.** GBP 12,570, reduced by half of the adjusted net income over GBP 100,000. A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3)). The allowance is nil at GBP 125,140 or more. Between GBP 100,000 and GBP 125,140 the effective marginal rate on non-savings income is 60% in England, Wales and NI.
+**Relief-at-source gross-up.** With relief at the basic 20% rate, gross contribution = net payment / 0.8; net payment = gross contribution x 0.8. An eligible GBP 8,000 net payment therefore gives GBP 10,000 gross. Use the gross figure for ANI and band extension, not a second deduction from taxable salary. Net-pay and salary-sacrifice arrangements are different. Pension eligibility, annual/money-purchase/tapered allowances, carry-forward, contribution timing and any pension charge: Check this point with one of our partner accountants ([HMRC pension relief](https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief); [FA 2004 s.192](https://www.legislation.gov.uk/ukpga/2004/12/section/192)). Grossed-up qualifying Gift Aid likewise equals the net donation x 1.25; Gift Aid qualification, sufficient tax and carry-back elections: Check this point with one of our partner accountants.
 
-**Step 5: extend the bands.** Grossed-up relief-at-source pension contributions and Gift Aid extend the basic rate limit (and the higher rate limit) by the gross amount. This is how higher rate relief is given.
+**Step 4: the Personal Allowance.** GBP 12,570, reduced by half of the adjusted net income over GBP 100,000. A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3)). The allowance is nil at GBP 125,140 or more. The general formula is max(0, ceil(12570 - max(0, ANI - 100000) / 2)); round the remaining allowance up, not the reduction ([s.35](https://www.legislation.gov.uk/ukpga/2007/3/section/35)).
 
-**Step 6: tax the income in the statutory order.**
-- Non-savings income first, at the main, Welsh or Scottish rates.
-- Savings next. The starting rate for savings (0% on up to GBP 5,000) applies only to savings that would otherwise fall in the basic rate band, and the GBP 5,000 shrinks by each pound of other income above the Personal Allowance (ITA 2007 s.12). Then the Personal Savings Allowance: GBP 1,000 if no income is higher rate income, GBP 500 if some is but none is additional rate income, nil if any is additional rate income (ITA 2007 s.12B). Interest counts when deciding the band. Above those, savings are taxed at 20%, 40% or 45%.
-- Dividends last. Dividends inside any unused Personal Allowance are tax-free. The next GBP 500 is taxed at the dividend nil rate. The nil rate band still uses up the basic and higher rate bands; it is not a deduction (ITA 2007 s.13A). The rest is taxed at 10.75%, 35.75% or 39.35% for 2026-27. GOV.UK's example: wages GBP 29,570 and dividends GBP 3,000 give 20% on GBP 17,000 of wages, nothing on GBP 500 of dividends and 10.75% on GBP 2,500 ([tax on dividends](https://www.gov.uk/tax-on-dividends)). Dividend planning sits in `uk-dividends`.
+**Step 5: extend the bands.** Grossed-up relief-at-source pension contributions and Gift Aid extend the basic rate limit (and the higher rate limit) by the gross amount. This assumes eligible contributions/donations and any required higher-rate-relief claim. Scottish limits have distinct rules: Check this point with one of our partner accountants ([FA 2004 s.192](https://www.legislation.gov.uk/ukpga/2004/12/section/192); [ITA 2007 s.414](https://www.legislation.gov.uk/ukpga/2007/3/section/414)).
 
-**Step 7: tax reducers.** Marriage Allowance is a reducer for the recipient. The lower earner gives up GBP 1,260 of Personal Allowance and the partner's tax falls by up to GBP 252. Conditions: married or in a civil partnership (not just living together); neither partner, after the transfer, is liable above the basic rate (in Scotland, above the intermediate rate); and neither claims Married Couple's Allowance (ITA 2007 s.55B(2), s.55C(1)). The claim helps the couple only when the transferor's income is below the Personal Allowance, as GOV.UK puts it. Claims can be backdated to 6 April 2022 and renew each year until cancelled. It cannot be combined with Married Couple's Allowance ([Marriage Allowance](https://www.gov.uk/marriage-allowance); [ITA 2007 s.55B](https://www.legislation.gov.uk/ukpga/2007/3/section/55B)).
+**Step 6: tax the income in order.** Non-savings first, savings next, dividends last ([ITA 2007 s.16](https://www.legislation.gov.uk/ukpga/2007/3/section/16)). Relief and allowance allocation must respect the operative year's restrictions; mixed-income optimisation, special highest-slice income and Scottish relief: Check this point with one of our partner accountants.
 
-**Step 8: add charges.** The High Income Child Benefit Charge applies when the person or their partner gets Child Benefit and the person's adjusted net income is over GBP 60,000. The charge is the appropriate percentage of the Child Benefit: (adjusted net income minus GBP 60,000) divided by GBP 200, capped at 100%. The percentage and the pounds both round down to whole numbers. If both partners are over GBP 60,000, the partner with the higher adjusted net income pays. "Partner" includes someone the person lives with as if married ([ITEPA 2003 s.681C](https://www.legislation.gov.uk/ukpga/2003/1/section/681C); [Child Benefit charge](https://www.gov.uk/child-benefit-tax-charge)).
+- Savings may use unused Personal Allowance. The starting rate for savings is 0% on up to GBP 5,000 of savings otherwise charged at basic/default basic rate. Other income above the Personal Allowance reduces that band pound for pound; GBP 17,570 is the cut-off only with the standard GBP 12,570 allowance. Dividends are not that other income. Then apply the Personal Savings Allowance. Its basic/higher/additional classification includes interest and uses the UK-equivalent test for Scottish/Welsh taxpayers, rather than the Scottish marginal rate. Nil-rated interest still occupies tax bands ([savings allowances](https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free); [s.12](https://www.legislation.gov.uk/ukpga/2007/3/section/12); [s.12B](https://www.legislation.gov.uk/ukpga/2007/3/section/12B)).
+- Dividends may use unused Personal Allowance. The dividend nil rate applies to the next GBP 500, using basic-band dividends first, then upper-band and additional-band dividends. This occupies bands; it is not a deduction. Use the year's dividend rates ([s.13A](https://www.legislation.gov.uk/ukpga/2007/3/section/13A)). The GOV.UK 2026-27 example has wages GBP 29,570 and dividends GBP 3,000: GBP 17,000 wages at 20% = GBP 3,400; GBP 500 dividends at nil and GBP 2,500 at 10.75% = GBP 268.75 ([dividends](https://www.gov.uk/tax-on-dividends)).
 
-The 2026-27 position on how the charge is paid: an employee or pensioner can pay it through PAYE, using HMRC's online service, if they need no return for another reason and act on or before 31 January after the tax year. Otherwise the charge goes through Self Assessment. Example from GOV.UK: for 2025-26, after 31 January 2027 the charge must be paid through Self Assessment. Someone who registered for Self Assessment only for the charge can phone HMRC to leave Self Assessment and pay through PAYE. Opting out of Child Benefit payments avoids the charge and keeps National Insurance credits ([Child Benefit charge](https://www.gov.uk/child-benefit-tax-charge)).
+**Step 7: Marriage Allowance.** The transferor gives up GBP 1,260; the recipient gets a tax reduction up to GBP 252. For the ordinary UK-resident route, there must be a valid election by a person entitled to Personal Allowance, married/in a civil partnership with the recipient for all or part of the relevant year and when electing (death cases need separate treatment). Neither can be liable above the permitted basic-rate categories, or above intermediate in Scotland, testing the transferor after reducing their allowance. Test dividend nil-rate income as if that nil rate did not apply: a nil dividend tax bill does not by itself establish eligibility. Neither can claim Married Couple's Allowance. Compare the couple's tax after any extra tax on the transferor ([s.55B](https://www.legislation.gov.uk/ukpga/2007/3/section/55B); [s.55C](https://www.legislation.gov.uk/ukpga/2007/3/section/55C)).
 
-**Step 9: take off tax already paid** (PAYE, tax deducted from interest, payments on account) to reach the balance due.
+Backdating is limited to four years after the relevant tax year; on 26 November 2026 the earliest year is 2022-23 (6 April 2022). A current-year election continues only while conditions remain met and no withdrawal/cessation rule applies; an election made after year-end or after a death applies only to the specified year. Death, non-residence and cancellation timing: Check this point with one of our partner accountants ([s.55D](https://www.legislation.gov.uk/ukpga/2007/3/section/55D); [Marriage Allowance](https://www.gov.uk/marriage-allowance)).
 
-**Losses.** Trading losses and property losses follow their own rules in `uk-self-employment-sa103` and `uk-rental-sa105`. Capital losses stay inside `uk-capital-gains-sa108`.
+**Step 8: High Income Child Benefit Charge.** From 2024-25, including 2025-26 and 2026-27, ANI must exceed GBP 60,000. For each relevant week, the recipient is charged if no partner throughout that week has higher annual ANI; a partner is charged instead if their ANI is higher than the recipient's. Equal ANI leaves the recipient liable. Partner means spouse, civil partner or someone living together as if married/civil partners, excluding permanent separation. Changes during the year, someone else receiving benefit for a child living with the taxpayer, or unclear entitlement: Check this point with one of our partner accountants ([s.681B](https://www.legislation.gov.uk/ukpga/2003/1/section/681B); [HMRC overview](https://www.gov.uk/child-benefit-tax-charge)).
 
-**Not for 2026-27.** From 2027-28 FA 2026 brings in property rates of 22%, 42% and 47% (s.7) and savings rates of 22%, 42% and 47% (s.5). Do not apply them to 2025-26 or 2026-27 ([FA 2026 s.7](https://www.legislation.gov.uk/ukpga/2026/11/section/7)).
+The percentage is min(100, floor((ANI - 60000) / 200)) when liable; round the relevant benefit total and resulting charge down to whole pounds as required by s.681C. At GBP 80,000 ANI the charge reaches 100%. Use benefit for the relevant weeks, not automatically the full family annual award ([s.681C](https://www.legislation.gov.uk/ukpga/2003/1/section/681C)).
+
+PAYE is an option for the current/previous year if no return is required for another reason and registration is on or before 31 January after the relevant year: for 2025-26, 31 January 2027. Otherwise use Self Assessment. A person previously filing only for this charge must contact HMRC to leave Self Assessment and register for PAYE ([PAYE conditions](https://www.gov.uk/child-benefit-tax-charge/pay-tax-charge-paye)). Opting out of benefit payments avoids the charge for those payments while remaining registered preserves NI credits subject to the credit conditions; historic payments still need reconciliation ([HMRC overview](https://www.gov.uk/child-benefit-tax-charge)).
+
+**Tax-Free Childcare is a separate ANI test.** At each declaration/reconfirmation, a UK-resident parent must not expect their own ANI, including foreign income, to exceed GBP 100,000 in the tax year containing that declaration. The same limit applies separately to their partner, not to their combined income. Exactly GBP 100,000 passes this upper-income test; either person over it fails. This is not a taper ([eligibility reg.15](https://www.legislation.gov.uk/uksi/2015/448/regulation/15); [HMRC TFC11050](https://www.gov.uk/hmrc-internal-manuals/tax-free-childcare-technical-manual/tfc11050)).
+
+Meeting that income test alone does not establish entitlement. Establish the child's age/disability and living arrangements, both adults' work and minimum-earnings tests and any exceptions, immigration/NI-number conditions, approved childcare provider, conflicting support (including Universal Credit, vouchers and childcare grants/bursaries), and ongoing reconfirmation. Details must be reconfirmed every three months. For the full eligibility decision, exceptions or cross-border circumstances: Check this point with one of our partner accountants ([all eligibility tests](https://www.gov.uk/tax-free-childcare/check-if-youre-eligible); [reconfirmation](https://www.gov.uk/tax-free-childcare)).
+
+For the reported 2026-27 question, salary GBP 110,000 with no other income/ANI adjustments would require GBP 10,000 gross = GBP 8,000 net of eligible relief-at-source contributions to bring ANI to GBP 100,000. This is conditional arithmetic, not a promise of Childcare eligibility or pension relief. Include benefits, interest, dividends, partner income and other ANI adjustments before deciding; contribution eligibility/timing and the other Childcare gates remain on hold.
+
+**Step 9: take off tax already paid.** Reconcile PAYE, any creditable tax deducted and payments on account to the calculated bill. Keep NIC, CGT, student loans and other charges separate until their own rules have been checked. Losses route to `uk-self-employment-sa103`, `uk-rental-sa105` and `uk-capital-gains-sa108`.
 
 ## Deadlines and filing
 
-| Event | 2025-26 return (filed now) | 2026-27 return |
-|---|---|---|
-| Tell HMRC you need to file (TMA 1970 s.7: 6 months after the tax year) | 5 October 2026 | 5 October 2027 |
-| Paper return (TMA 1970 s.8(1D)(a)) | 11:59pm, 31 October 2026 | 31 October 2027 |
-| Online return, if the balance is to be collected through the tax code | 11:59pm, 30 December 2026 | 30 December 2027 |
-| Online return (TMA 1970 s.8(1D)(b)) | 11:59pm, 31 January 2027 | 31 January 2028 |
-| Balancing payment, and first payment on account for the next year | 31 January 2027 | 31 January 2028 |
-| Second payment on account | 31 July 2027 | 31 July 2028 |
+These are ordinary individual-return deadlines, subject to the late-notice rules below. HMRC must receive the return/payment; unknown final profit does not remove the filing duty ([HMRC deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines)).
 
-Sources: [deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines); [register for Self Assessment](https://www.gov.uk/register-for-self-assessment); [TMA 1970 s.7](https://www.legislation.gov.uk/ukpga/1970/9/section/7); [TMA 1970 s.8](https://www.legislation.gov.uk/ukpga/1970/9/section/8).
+| Event | 2025-26 | 2026-27 | Source |
+|---|---|---|---|
+| Notify liability if required under TMA s.7 | 5 October 2026 | 5 October 2027 | https://www.legislation.gov.uk/ukpga/1970/9/section/7 |
+| Paper return | 31 October 2026 | 31 October 2027 | https://www.legislation.gov.uk/ukpga/1970/9/section/8 |
+| Online return | 31 January 2027 | 31 January 2028 | https://www.legislation.gov.uk/ukpga/1970/9/section/8 |
+| Balance and first next-year payment on account, where due | 31 January 2027 | 31 January 2028 | https://www.gov.uk/understand-self-assessment-bill/payments-on-account |
+| Second next-year payment on account, where due | 31 July 2027 | 31 July 2028 | https://www.gov.uk/understand-self-assessment-bill/payments-on-account |
 
-- **Who must register by 5 October:** someone who needs to file for the previous year and has not sent a return before, or registered before but did not need to send one for 2024-25.
-- **Notice to file sent late.** If HMRC's notice to file is given after 31 October, the return (paper or online) is due 3 months from the notice date; if it is given between 1 August and 31 October, the online deadline stays 31 January and a paper return is due 3 months from the notice (TMA 1970 s.8(1F)-(1G)). HMRC confirms the date by email or letter ([register for Self Assessment](https://www.gov.uk/register-for-self-assessment)).
-- **When the tax is due after a late notice.** If the person registered by 5 October but HMRC's notice came after 31 October, the balance is due 3 months from the notice. If the person registered after 5 October, the tax is still due by 31 January 2027 ([TMA 1970 s.59B(3)-(4)](https://www.legislation.gov.uk/ukpga/1970/9/section/59B); [deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines)).
-- HMRC must receive the return and the money by the deadline. A return is still due if the full-year profit is not yet known.
-- **Payments on account** are each half of last year's Self Assessment bill, unless last year's bill was under GBP 1,000 or more than 80% of the tax was paid at source. Detail and SA303 claims: `uk-payments-on-account`.
-- Online returns are filed through HMRC online services or commercial software. Sole traders and landlords inside Making Tax Digital for Income Tax keep quarterly updates on top; see `uk-self-employment-sa103`.
+For 2025-26, tell HMRC by 5 October 2026 if a return is needed and either no return has been sent before, or registration existed but no 2024-25 return was needed. For later years establish the actual notification duty; do not reuse the 2024-25 reactivation test indefinitely ([HMRC deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines)).
+
+A notice after 31 July but on/before 31 October gives three months for paper filing, while online stays 31 January. A notice after 31 October gives three months for either method. The balance moves to three months after notice only where the required s.7 notification was within six months after year-end and the s.8/8A notice arrived after 31 October; otherwise the ordinary balance date remains ([TMA s.8](https://www.legislation.gov.uk/ukpga/1970/9/section/8); [s.59B](https://www.legislation.gov.uk/ukpga/1970/9/section/59B)).
+
+For tax-code collection, the ordinary online cut-off is 30 December 2026 for 2025-26 (30 December 2027 for 2026-27). Amount limits, sufficient PAYE income and collection capacity must also be established: Check this point with one of our partner accountants ([HMRC deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines)).
+
+Payments on account are normally half the preceding relevant bill each, excluding tax already paid outside Self Assessment. They are not required if that bill is under GBP 1,000 or more than 80% of the tax was paid outside Self Assessment. Exactly 80% is not the exemption. NIC, exclusions and reduction claims need `uk-payments-on-account`; do not treat total SA cash due as the relevant base automatically ([HMRC](https://www.gov.uk/understand-self-assessment-bill/payments-on-account); [TMA s.59A](https://www.legislation.gov.uk/ukpga/1970/9/section/59A)).
+
+Online filing uses HMRC services or commercial software. Year-specific form entries, registration/reactivation, MTD digital records, quarterly updates, exemptions and software routing: Check this point with one of our partner accountants. See `uk-self-employment-sa103` and `uk-bookkeeping`.
 
 ## Penalties and interest
 
-| Failure | Penalty | Source |
+For an ordinary 2025-26 return under the existing annual-return regime:
+
+| Failure | Ordinary penalty, subject to notices/defences and applicable regime | Source |
 |---|---|---|
-| Return late, day 1 | GBP 100 (FA 2009 Sch 55 para 3) | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55/paragraph/3 |
-| Return still late after 3 months | GBP 10 a day for up to 90 days, so up to GBP 900 (Sch 55 para 4) | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55/paragraph/4 |
-| Return still late after 6 months | The greater of 5% of the tax due and GBP 300 (Sch 55 para 5) | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55/paragraph/5 |
-| Return still late after 12 months | A further greater of 5% and GBP 300; higher if information is deliberately withheld (Sch 55 para 6) | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55/paragraph/6 |
-| Tax paid late | 5% of the tax unpaid at 30 days, 6 months and 12 months (FA 2009 Sch 56) | https://www.gov.uk/self-assessment-tax-returns/penalties |
-| Registered after 5 October and tax not paid by 31 January | Failure to notify penalty, based on the tax still unpaid | https://www.gov.uk/self-assessment-tax-returns/penalties |
-| Late payment interest | Base rate plus 4% from 6 April 2025; 7.75% from 9 January 2026 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
-| Repayment interest | Base rate minus 1%, floor 0.5%; 2.75% from 9 January 2026 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
+| Return late | Initial GBP 100, even if no tax due | https://www.gov.uk/self-assessment-tax-returns/penalties |
+| Failure continues after three months | GBP 10/day for up to 90 days, only if HMRC decides and gives notice specifying the start date | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55/paragraph/4 |
+| Failure continues after six months | Greater of 5% of liability that would be shown in the return and GBP 300 | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55/paragraph/5 |
+| Failure continues after twelve months, not deliberate withholding | Further greater of 5% of liability that would be shown and GBP 300 | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55/paragraph/6 |
+| Tax paid late under ordinary regime | 5% at 30 days, six months and twelve months on the relevant unpaid tax | https://www.gov.uk/self-assessment-tax-returns/penalties |
+| Ordinary late-payment interest | 8.00% from 24 November 2026; use actual period-specific rates | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
 
-**Making Tax Digital for Income Tax.** Sole traders and landlords who must use Making Tax Digital from 6 April 2026 (qualifying income over GBP 50,000 in 2024-25) get new penalties from the 2026-27 tax year in place of the late filing and late payment penalties above; interest is unchanged. The 2025-26 return due 31 January 2027 stays on the old penalties ([MTD penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax); [MTD: who and when](https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax)).
+Failure-to-notify penalties, deliberate/concealed withholding, partnership returns, reasonable excuse, special reduction, payment arrangements, appeals and notice/payment deadlines: Check this point with one of our partner accountants. Do not calculate a penalty from elapsed time alone.
 
-| MTD failure, 2026-27 tax year | Penalty | Source |
-|---|---|---|
-| Late tax return | One penalty point per missed deadline; at 4 points, GBP 200, and GBP 200 for each later missed deadline. No points for late quarterly updates in 2026-27 (FA 2021 Sch 24) | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax |
-| Tax paid late | Nothing up to 15 days; 3% of the tax owed at day 15 and 3% at day 30, plus 10% a year from day 31 (FA 2021 Sch 26; SI 2025/589). In the first year of the new penalties, nothing applies if the tax is paid or a payment plan is set up within 30 days. Payments on account are outside this penalty. 2027-28: 4% and 4% | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax |
-
-A penalty is due within 30 days of the notice. An appeal needs a reasonable excuse. Interest moves with the Bank of England base rate, so check the HMRC page on the day you compute it.
+For MTD taxpayers, establish which year and penalty regime applies before using this table. MTD points, quarterly-update treatment, first-year grace, late-payment percentages, payments-on-account exclusions and repayment-interest calculations: Check this point with one of our partner accountants ([MTD penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax)). Current interest is not a rate promised for the future January filing/payment date.
 
 ## Cross-border points
 
-- **Residence decides the scope.** Use `uk-statutory-residence-test` for the test and split years, and `uk-non-resident-sa109` for the SA109 pages. Do not compute a non-resident or a split year with this skill alone.
-- **Personal Allowance for non-residents** depends on the residence conditions in ITA 2007 s.56. Marriage Allowance still works if a partner lives abroad, as long as they get a Personal Allowance ([Marriage Allowance](https://www.gov.uk/marriage-allowance)).
-- **Foreign income and foreign tax credit relief:** `uk-foreign-tax-and-withholding`. The foreign income and gains regime for new arrivals: `uk-non-dom`.
-- **Moving between Scotland, Wales and the rest of the UK.** The new rates are backdated to 6 April of the year of the move. Status follows where the person lived longest in the tax year ([Scottish Income Tax](https://www.gov.uk/scottish-income-tax); [Welsh Income Tax](https://www.gov.uk/welsh-income-tax)).
-- **Leaving the UK:** see `uk-to-uae-relocation-tax` and `uk-to-italy-flat-tax-relocation` for exit planning.
+For non-residents, split years, treaty/foreign-tax-credit relief, foreign income/FIG, Personal Allowance or Marriage Allowance residence conditions, or Scottish/Welsh multi-home/moving status: Check this point with one of our partner accountants. Use `uk-statutory-residence-test`, `uk-non-resident-sa109`, `uk-foreign-tax-and-withholding`, `uk-non-dom` and `uk-scottish-income-tax`. Exit-planning routes remain `uk-to-uae-relocation-tax` and `uk-to-italy-flat-tax-relocation`.
+
+Trust/estate and partnership income, pension charges, Winter Fuel Payment recovery, termination/redundancy pay and non-cash benefits need separate treatment: Check this point with one of our partner accountants. For 2027-28 savings/property rates and allowance order, use a fresh year-specific source read; do not apply later rules to these 2025-26/2026-27 cases.
 
 ## Worked examples
 
 ### Example 1: employee with side business and dividends, England, 2026-27
 
-Sarah lives in England. In 2026-27 she earns a salary of GBP 40,000 (PAYE deducted GBP 5,486), makes a sole trader profit of GBP 20,000 and receives UK dividends of GBP 5,000. Her adjusted net income is GBP 65,000, under GBP 100,000, so she keeps the full GBP 12,570 allowance.
+Assume full Personal Allowance entitlement, no other income, losses, Gift Aid, special charges or prior payments on account. Trade profit is already correctly computed. Sarah lives in England. In 2026-27 she earns a salary of GBP 40,000 (PAYE deducted GBP 5,486), makes a sole trader profit of GBP 20,000 and receives UK dividends of GBP 5,000. Her adjusted net income is GBP 65,000, under GBP 100,000, so she keeps the full GBP 12,570 allowance.
 
-Non-savings income is GBP 60,000. After the allowance, GBP 47,430 is taxable. The first GBP 37,700 is taxed at 20% (GBP 7,540) and the remaining GBP 9,730 at 40% (GBP 3,892). Her dividends sit on top, wholly in the higher rate band. The first GBP 500 is at the dividend nil rate. The other GBP 4,500 is taxed at 35.75%: GBP 1,608.75. Total income tax is GBP 13,040.75. After PAYE, GBP 7,554.75 is due through Self Assessment. In 2025-26 the same dividends would have cost GBP 1,518.75 at 33.75%, so the rise costs her GBP 90. Class 4 National Insurance on the profit is extra: see `uk-national-insurance`.
+Non-savings income is GBP 60,000. After the allowance, GBP 47,430 is taxable. The first GBP 37,700 is taxed at 20% (GBP 7,540) and the remaining GBP 9,730 at 40% (GBP 3,892). Her dividends sit on top, wholly in the higher rate band. The first GBP 500 is at the dividend nil rate. The other GBP 4,500 is taxed at 35.75%: GBP 1,608.75. Total income tax is GBP 13,040.75. After PAYE, GBP 7,554.75 is due through Self Assessment. In 2025-26 the same dividends would have cost GBP 1,518.75 at 33.75%, so the rise costs her GBP 90. The same 2025-26 inputs give total income tax GBP 12,950.75 and GBP 7,464.75 after PAYE. Class 4 National Insurance on the profit is extra: see `uk-national-insurance`.
 
 ```oa-check
 name: GB 2026-27, England, salary 40000, profit 20000, dividends 5000
@@ -189,11 +190,11 @@ expected:
 
 ### Example 2: Personal Allowance taper and the Child Benefit charge, England, 2026-27
 
-Tom lives in England and earns GBP 112,000 of salary in 2026-27. He pays GBP 4,000 into a personal pension under relief at source, so the gross contribution is GBP 5,000. His partner earns less. The family received GBP 1,406 of Child Benefit in the year (take the figure from the award, not an estimate).
+Assume full-year UK residence, an eligible relievable pension payment made in the year, the necessary claim, no other income/adjustments or pension charge, and the same lower-income partner throughout every benefit week. Tom lives in England and earns GBP 112,000 of salary in 2026-27. He pays GBP 4,000 into a personal pension under relief at source, so the gross contribution is GBP 5,000. His partner earns less. The family received GBP 1,406 of Child Benefit in the year (take the figure from the award, not an estimate).
 
 Adjusted net income is GBP 112,000 minus GBP 5,000 = GBP 107,000. That is GBP 7,000 over GBP 100,000, so the allowance falls by GBP 3,500 to GBP 9,070. The gross contribution extends his basic rate band to GBP 42,700. Taxable income is GBP 102,930. GBP 42,700 at 20% is GBP 8,540. The other GBP 60,230 at 40% is GBP 24,092. Income tax is GBP 32,632.
 
-His adjusted net income is GBP 47,000 over GBP 60,000. That gives 235%, capped at 100%, so the Child Benefit charge is the full GBP 1,406. Total is GBP 34,038 before PAYE. A further gross pension contribution of GBP 7,000 would bring adjusted net income to GBP 100,000 and restore the full allowance; the charge would stay at 100% while adjusted net income is GBP 80,000 or more.
+His adjusted net income is GBP 47,000 over GBP 60,000. That gives 235%, capped at 100%, so the Child Benefit charge is the full GBP 1,406. Total is GBP 34,038 before PAYE. Subject to relief eligibility and timing, a further gross pension contribution of GBP 7,000 would bring adjusted net income to GBP 100,000 and restore the full allowance; the charge would stay at 100% while adjusted net income is GBP 80,000 or more.
 
 ```oa-check
 name: GB 2026-27, England, PA taper with relief-at-source pension and HICBC
@@ -204,7 +205,7 @@ inputs:
 steps:
   - pension_gross: pension_net / 0.8
   - ani: salary - pension_gross
-  - pa: max(0, 12570 - ceil(max(0, ani - 100000) / 2))
+  - pa: max(0, ceil(12570 - max(0, ani - 100000) / 2))
   - brb: 37700 + pension_gross
   - taxable: salary - pa
   - basic: min(taxable, brb) * 0.20
@@ -224,6 +225,19 @@ expected:
   total: 34038
 ```
 
+### Earlier worked cases retained with their original inputs
+
+These compact cases retain the earlier Guide's numbers and years. Assume ordinary full-allowance eligibility and no unstated adjustments; where facts are missing the outcome remains conditional.
+
+- **Case A, England, 2026-27 and 2025-26:** salary GBP 35,000, PAYE GBP 4,486, no other income. GBP 35,000 - GBP 12,570 = GBP 22,430; x 20% = GBP 4,486; balance zero. This alone does not cancel a notice to file.
+- **Case B:** the original GBP 40,000 salary, GBP 5,486 PAYE, GBP 20,000 profit and GBP 5,000 dividends are Example 1, including both 2025-26 and 2026-27 results.
+- **Case C, 2026-27:** non-savings income GBP 115,000, eligible pension net GBP 8,000 = gross GBP 10,000. ANI GBP 105,000; taper GBP 2,500; allowance GBP 10,070; basic band GBP 47,700; higher-rate entry GBP 57,770. Without that payment, allowance GBP 5,070.
+- **Case D, 2026-27:** ANI GBP 70,000, partner lower throughout, relevant benefit GBP 1,800: GBP 10,000 / GBP 200 = 50%; charge GBP 900. At ANI GBP 67,600 the percentage is 38%.
+- **Case E, ordinary eligible Marriage Allowance couple:** income GBP 11,500 and GBP 20,000. Before transfer, tax on GBP 7,430 = GBP 1,486. Transfer GBP 1,260: allowance GBP 11,310 for transferor, taxable GBP 190, tax GBP 38; recipient's tax GBP 1,486 - GBP 252 = GBP 1,234 (equivalent to 20% of GBP 6,170). Combined GBP 1,272, equivalent taxable GBP 6,360; saving GBP 214.
+- **Case F, 2026-27:** wages GBP 16,000 and interest GBP 200: wages above allowance GBP 3,430; remaining starting band GBP 1,570, so interest tax nil. Separately, a taxpayer eligible for the GBP 1,000 PSA with GBP 1,300 interest taxed wholly within basic band pays GBP 300 x 20% = GBP 60. Do not use a 2027-28 rate here.
+- **Case G, 2025-26 first-time filer:** stipulated relevant income-tax bill GBP 13,000 and PAYE GBP 5,000; no exclusions, other credits or previous payments. Balance GBP 8,000; each 2026-27 payment on account GBP 4,000. GBP 12,000 due 31 January 2027, GBP 4,000 on 31 July 2027; any 2026-27 balance normally 31 January 2028.
+- **Case H, 2025-26 return:** filing on 20 August 2027, GBP 4,000 liability already paid 31 January 2027. Assume the ordinary 31 January filing deadline, a valid HMRC daily-penalty notice covering all 90 days and no defence/reduction. GBP 100 + GBP 900 + max(GBP 200, GBP 300) = GBP 1,300. Paying the tax on time does not remove the tax-based filing penalty. If those notice/defence facts are unknown: Check this point with one of our partner accountants.
+
 ## Ask the client first
 
 - Which tax year: the 2025-26 return being filed now, or 2026-27? The dividend rates differ.
@@ -231,51 +245,53 @@ expected:
 - Have you filed a return before, and did you file for 2024-25? This decides the 5 October registration duty.
 - All income by kind: P60 and P11D, self-employment and rental income before expenses, interest outside ISAs, dividends outside ISAs, pensions, foreign income.
 - Pension contributions (relief at source or net pay) and Gift Aid. They change adjusted net income, the taper and the Child Benefit charge.
-- Married or in a civil partnership, and both partners' incomes? Does anyone in the household get Child Benefit, and how much?
+- Married or in a civil partnership, and both partners' incomes? Child Benefit entitlement and payment weeks, relationship changes and each partner's ANI? For Tax-Free Childcare, expected current-year ANI for each adult plus the child, work/earnings, status and other-support facts?
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and purpose | URL | Read on |
 |---|---|---|
-| Finance Act 2026 (c. 11) s.2, main rates 2026-27 | https://www.legislation.gov.uk/ukpga/2026/11/section/2 | 2026-10-24 |
-| Finance Act 2026 s.3, default and savings rates 2026-27 | https://www.legislation.gov.uk/ukpga/2026/11/section/3 | 2026-10-24 |
-| Finance Act 2026 s.4, dividend ordinary and upper rates | https://www.legislation.gov.uk/ukpga/2026/11/section/4 | 2026-10-24 |
-| Finance Act 2026 s.5, savings rates 2027-28 | https://www.legislation.gov.uk/ukpga/2026/11/section/5 | 2026-10-24 |
-| Finance Act 2026 s.7, property rates 2027-28 | https://www.legislation.gov.uk/ukpga/2026/11/section/7 | 2026-10-24 |
-| Finance Act 2026 s.9, starting rate limit for savings | https://www.legislation.gov.uk/ukpga/2026/11/section/9 | 2026-10-24 |
-| Finance Act 2026 s.10, basic rate limit and Personal Allowance freeze | https://www.legislation.gov.uk/ukpga/2026/11/section/10 | 2026-10-24 |
-| Income Tax Act 2007 s.10, basic and higher rate limits | https://www.legislation.gov.uk/ukpga/2007/3/section/10 | 2026-10-24 |
-| Income Tax Act 2007 s.12, starting rate for savings | https://www.legislation.gov.uk/ukpga/2007/3/section/12 | 2026-10-24 |
-| Income Tax Act 2007 s.12A and s.12B, savings nil rate and savings allowance | https://www.legislation.gov.uk/ukpga/2007/3/section/12B | 2026-10-24 |
-| Income Tax Act 2007 s.13A, dividend nil rate | https://www.legislation.gov.uk/ukpga/2007/3/section/13A | 2026-10-24 |
-| Income Tax Act 2007 s.35, Personal Allowance and taper | https://www.legislation.gov.uk/ukpga/2007/3/section/35 | 2026-10-24 |
-| Income Tax Act 2007 s.55B and s.55C, Marriage Allowance | https://www.legislation.gov.uk/ukpga/2007/3/section/55B | 2026-10-24 |
-| ITEPA 2003 s.681C, High Income Child Benefit Charge | https://www.legislation.gov.uk/ukpga/2003/1/section/681C | 2026-10-24 |
-| Taxes Management Act 1970 s.7, notice of liability | https://www.legislation.gov.uk/ukpga/1970/9/section/7 | 2026-10-24 |
-| Taxes Management Act 1970 s.8, return filing dates | https://www.legislation.gov.uk/ukpga/1970/9/section/8 | 2026-10-24 |
-| Taxes Management Act 1970 s.59B, payment dates | https://www.legislation.gov.uk/ukpga/1970/9/section/59B | 2026-10-24 |
-| Scottish Parliament, Scottish Rate Resolution 2026-27 (S6M-20844), agreed 19 February 2026, 93 for, 29 against | https://www.parliament.scot/chamber-and-committees/votes-and-motions/S6M-20844 | 2026-10-24 |
-| Senedd, Welsh rate resolution 2026-27 (NDM9117), 10p in each band. Read for the 2026-27 Welsh rates. | https://record.senedd.wales/Motion/9117 | 2026-10-24 |
-| Senedd Record of Proceedings, 27 January 2026, item 5: motion agreed, 26 for, 13 against, 13 abstentions. Read for the vote on the Welsh rate resolution. | https://record.senedd.wales/Plenary/15728 | 2026-10-24 |
-| Finance Act 2021 Sch 24 and Sch 26, points-based and late payment penalties. Read for the points-based and late payment penalty rules. | https://www.legislation.gov.uk/ukpga/2021/26/schedule/26 | 2026-10-24 |
-| SI 2025/589, Schedule 26 penalty percentages. Read for the late payment penalty percentages. | https://www.legislation.gov.uk/uksi/2025/589/made | 2026-10-24 |
-| Finance Act 2009 Sch 55 paras 3 to 6, late filing penalties. Read for the late filing penalty amounts. | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55 | 2026-10-24 |
-| Finance Act 2009 Sch 56 para 3, late payment penalties. Read for the late payment penalties. | https://www.legislation.gov.uk/ukpga/2009/10/schedule/56/paragraph/3 | 2026-10-24 |
-| GOV.UK, Income Tax rates and Personal Allowances. Read for the 2026-27 rates, bands and Personal Allowance. | https://www.gov.uk/income-tax-rates | 2026-10-24 |
-| GOV.UK, Income Tax rates: previous tax years (2025-26). Read for the 2025-26 rates and bands. | https://www.gov.uk/income-tax-rates/previous-tax-years | 2026-10-24 |
-| GOV.UK, Scottish Income Tax (2026-27 and 2025-26 bands). Read for the Scottish bands. | https://www.gov.uk/scottish-income-tax | 2026-10-24 |
-| Scottish Government, Scottish Income Tax rates and bands 2026 to 2027. Read for the 2026-27 Scottish rates and bands. | https://www.gov.scot/publications/scottish-income-tax-rates-and-bands/pages/2026-to-2027/ | 2026-10-24 |
-| GOV.UK, Welsh Income Tax (2026-27). Read for the Welsh rates. | https://www.gov.uk/welsh-income-tax | 2026-10-24 |
-| Welsh Government, written statement on Draft Budget 2026-27 Welsh taxes (10p in each band). Read for the Welsh rate in each band. | https://www.gov.wales/written-statement-draft-budget-2026-27-welsh-taxes | 2026-10-24 |
-| GOV.UK, tax on savings interest. Read for the Personal Savings Allowance and starting rate for savings. | https://www.gov.uk/apply-tax-free-interest-on-savings | 2026-10-24 |
-| GOV.UK, tax on dividends. Read for the dividend allowance and dividend rates. | https://www.gov.uk/tax-on-dividends | 2026-10-24 |
-| GOV.UK, Marriage Allowance. Read for the Marriage Allowance amount. | https://www.gov.uk/marriage-allowance | 2026-10-24 |
-| GOV.UK, High Income Child Benefit Charge. Read for the High Income Child Benefit Charge thresholds. | https://www.gov.uk/child-benefit-tax-charge | 2026-10-24 |
-| GOV.UK, adjusted net income. Read for how adjusted net income is worked out. | https://www.gov.uk/guidance/adjusted-net-income | 2026-10-24 |
-| GOV.UK, Self Assessment: who must send a return, deadlines, penalties. Read for who must file and the deadlines. | https://www.gov.uk/self-assessment-tax-returns | 2026-10-24 |
-| GOV.UK, register for Self Assessment. Read for the registration deadline. | https://www.gov.uk/register-for-self-assessment | 2026-10-24 |
-| GOV.UK, find out if and when you need to use Making Tax Digital for Income Tax. Read for the Making Tax Digital income thresholds and start dates. | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax | 2026-10-24 |
-| GOV.UK, penalties for Making Tax Digital for Income Tax. Read for the Making Tax Digital penalty points. | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-10-24 |
-| HMRC, interest rates for late and early payments. Read for the late payment interest rate. | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
+| FA 2026 ss.2-4: current main, savings and dividend rates | https://www.legislation.gov.uk/ukpga/2026/11/section/4 | 2026-11-26 |
+| FA 2026 s.9: starting savings band freeze | https://www.legislation.gov.uk/ukpga/2026/11/section/9 | 2026-11-26 |
+| FA 2026 s.10: allowance/basic-limit freeze | https://www.legislation.gov.uk/ukpga/2026/11/section/10 | 2026-11-26 |
+| ITA 2007 s.10: limits | https://www.legislation.gov.uk/ukpga/2007/3/section/10 | 2026-11-26 |
+| ITA 2007 ss.12,12A,12B: savings nil rates/allowance | https://www.legislation.gov.uk/ukpga/2007/3/section/12B | 2026-11-26 |
+| ITA 2007 s.13A: dividend nil rate | https://www.legislation.gov.uk/ukpga/2007/3/section/13A | 2026-11-26 |
+| ITA 2007 s.16: income order | https://www.legislation.gov.uk/ukpga/2007/3/section/16 | 2026-11-26 |
+| ITA 2007 s.35: allowance and rounding | https://www.legislation.gov.uk/ukpga/2007/3/section/35 | 2026-11-26 |
+| ITA 2007 ss.55B-55D: Marriage Allowance | https://www.legislation.gov.uk/ukpga/2007/3/section/55D | 2026-11-26 |
+| ITA 2007 s.58: ANI | https://www.legislation.gov.uk/ukpga/2007/3/section/58 | 2026-11-26 |
+| FA 2004 s.192 and ITA s.414: band extension | https://www.legislation.gov.uk/ukpga/2004/12/section/192 | 2026-11-26 |
+| HMRC ANI method and Gift Aid gross-up | https://www.gov.uk/guidance/adjusted-net-income | 2026-11-26 |
+| HMRC current income tax rates | https://www.gov.uk/income-tax-rates | 2026-11-26 |
+| HMRC previous-year bands | https://www.gov.uk/income-tax-rates/previous-tax-years | 2026-11-26 |
+| Scottish Rate Resolution 2026-27; exact limits checked | https://www.parliament.scot/chamber-and-committees/votes-and-motions/S6M-20844 | 2026-11-26 |
+| Welsh 2026-27 resolution; completed independent vote review reused | https://record.senedd.wales/Motion/9117 | 2026-11-26 |
+| HMRC Scottish current and previous-year bands | https://www.gov.uk/scottish-income-tax | 2026-11-26 |
+| HMRC Scottish 2025-26 bands | https://www.gov.uk/scottish-income-tax/2025-to-2026-tax-year | 2026-11-26 |
+| HMRC Welsh rates/status | https://www.gov.uk/welsh-income-tax | 2026-11-26 |
+| HMRC interest treatment | https://www.gov.uk/apply-tax-free-interest-on-savings | 2026-11-26 |
+| HMRC savings allowances | https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free | 2026-11-26 |
+| HMRC dividend rates and example | https://www.gov.uk/tax-on-dividends | 2026-11-26 |
+| HMRC dividend reporting | https://www.gov.uk/tax-on-dividends/how-to-report-tax-on-dividends | 2026-11-26 |
+| HMRC Marriage Allowance | https://www.gov.uk/marriage-allowance | 2026-11-26 |
+| ITEPA 2003 ss.681B-681C: benefit liability and rounding | https://www.legislation.gov.uk/ukpga/2003/1/section/681C | 2026-11-26 |
+| HMRC Child Benefit and PAYE conditions | https://www.gov.uk/child-benefit-tax-charge/pay-tax-charge-paye | 2026-11-26 |
+| HMRC Child Benefit overview/opt-out | https://www.gov.uk/child-benefit-tax-charge | 2026-11-26 |
+| Childcare Eligibility reg.15: upper income test | https://www.legislation.gov.uk/uksi/2015/448/regulation/15 | 2026-11-26 |
+| HMRC TFC11050: declaration-year ANI | https://www.gov.uk/hmrc-internal-manuals/tax-free-childcare-technical-manual/tfc11050 | 2026-11-26 |
+| HMRC Childcare eligibility tests | https://www.gov.uk/tax-free-childcare/check-if-youre-eligible | 2026-11-26 |
+| HMRC Childcare reconfirmation | https://www.gov.uk/tax-free-childcare | 2026-11-26 |
+| HMRC pension relief and gross-up conditions | https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief | 2026-11-26 |
+| HMRC return requirement | https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return | 2026-11-26 |
+| HMRC filing deadlines | https://www.gov.uk/self-assessment-tax-returns/deadlines | 2026-11-26 |
+| TMA s.7: notification; completed SA103 read reused | https://www.legislation.gov.uk/ukpga/1970/9/section/7 | 2026-11-26 |
+| TMA s.8: ordinary/late-notice filing; completed SA103 read reused | https://www.legislation.gov.uk/ukpga/1970/9/section/8 | 2026-11-26 |
+| TMA s.59B: balance/late notice; completed SA103 read reused | https://www.legislation.gov.uk/ukpga/1970/9/section/59B | 2026-11-26 |
+| TMA s.59A: payments on account | https://www.legislation.gov.uk/ukpga/1970/9/section/59A | 2026-11-26 |
+| HMRC payments on account | https://www.gov.uk/understand-self-assessment-bill/payments-on-account | 2026-11-26 |
+| HMRC ordinary penalties | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-11-26 |
+| FA 2009 Sch.55 paras.4-6: notices/liability base | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55/paragraph/4 | 2026-11-26 |
+| HMRC interest: completed UKVAT/SA103 exact announced sentence reused; effective-date applicability confirmed 26 November | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-11-22 |
 
-Not yet confirmed: the Personal Savings Allowance amounts for 2027-28 are not published. The Welsh Government's own Welsh rates page (gov.wales/welsh-rates-income-tax) still describes 2023-24 and was not used.
+Not yet confirmed: none within the conditional computations above. Referred specialist outcomes are not usable determinations.
