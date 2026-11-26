@@ -196,7 +196,6 @@ An AF1 is MTCA's prescribed further return; under rule 6(2), one filed after the
 | Read Cap.372 arts42,44(1)–(2D),48(1)–(2D),48(8) | https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b | 2026-11-26 |
 | Read for MTCA Tax Return Cycle (30 June settlement, 31 July online, refund by 31 December, 0.6%) | https://mtca.gov.mt/personal-tax/individual/tax-return-cycle | 2026-11-26 |
 | Read for MTCA Manual on the Taxation of Rental Income (PT on rent declared in the return; 30 April, 31 August, 21 December) | https://mtca.gov.mt/docs/default-source/documents/manual-on-taxation-of-rental-incomee26fd6c3-a420-4cb8-b7c4-0b7e1137b7de.pdf | 2026-11-26 |
-
 | Read S.L.372.16 rules2,5,6 (ordinary individual statutory settlement/refund dates) | https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2 | 2026-11-26 |
 | Read Cap.123 article31D(2)–(4), final-rent separation from ordinary individual chargeable income | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c | 2026-11-26 |
 
