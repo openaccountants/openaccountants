@@ -1,10 +1,10 @@
 ---
 name: uk-payments-on-account
-description: "UK Self Assessment payments on account for tax year 2026-27 (6 April 2026 to 5 April 2027), set from the 2025-26 return. Covers who must pay them (the GBP 1,000 threshold and the test that more than 80% was collected at source), the 31 January and 31 July due dates, the balancing payment on 31 January after the year, what is in the base (income tax and Class 4 NIC) and what is not (capital gains tax, student loans, voluntary Class 2), reducing payments with SA303 and the interest when the reduction was too big, coding out, Making Tax Digital for Income Tax, late payment interest at Bank Rate plus 4% and late payment penalties. Trigger: 'payments on account', 'POA', 'SA303', 'reduce payments on account', 'July payment', 'balancing payment', '80% rule'. Out of scope: computing the tax itself (uk-income-tax-sa100, uk-self-employment-sa103, uk-scottish-income-tax), NIC rates (uk-national-insurance), capital gains (uk-capital-gains-sa108), non-residents (uk-non-resident-sa109)."
-version: 3.5
+description: "UK Self Assessment payments on account for tax year 2026-27 (6 April 2026 to 5 April 2027), set from the 2025-26 return. Covers who must pay them (the GBP 1,000 threshold and the test that more than 80% was collected at source), the 31 January and 31 July due dates, the ordinary balancing payment on 31 January after the year, what is in the base (income tax and Class 4 NIC) and what is not (capital gains tax, student loans, voluntary Class 2), reducing payments with SA303 and the interest when the reduction was too big, coding out, Making Tax Digital for Income Tax, dated ordinary late-payment interest and referrals for specialist penalty rules. Trigger: 'payments on account', 'POA', 'SA303', 'reduce payments on account', 'July payment', 'balancing payment', '80% rule'. Out of scope: computing the tax itself (uk-income-tax-sa100, uk-self-employment-sa103, uk-scottish-income-tax), NIC rates (uk-national-insurance), capital gains (uk-capital-gains-sa108), non-residents (uk-non-resident-sa109)."
+version: 3.6
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -16,91 +16,71 @@ type: situation-rules
 
 # UK payments on account (2026-27)
 
-## UK payments on account: Self Assessment skill v3.5
+> **Source-cited draft.** No accountant has approved this version. Obtain professional review before filing or acting on it.
 
-> **Source-cited draft.** Built from the Taxes Management Act 1970 (TMA 1970) ss. 59A, 59B and 86, the Income Tax (Payments on Account) Regulations 1996 (SI 1996/1654) as amended in 1997 and 2008, Finance Act 2009 Schedule 56 and HMRC pages on GOV.UK, all read on 2026-10-24 or 2026-10-26. No accountant has reviewed it. Do not file from it without review by a qualified UK professional.
-
-Payments on account are two advance payments towards this year's Self Assessment bill, each half of last year's bill. This skill works out whether they are due, how much, and what happens when they are too high, too low or late. The tax itself is computed in `uk-income-tax-sa100` (with `uk-self-employment-sa103` for trading profit and `uk-national-insurance` for Class 4). Their dates match this skill.
+Payments on account are normally two advances towards the next Self Assessment bill, based on the preceding year's relevant amount. For 2026-27 they use the 2025-26 assessment. First obtain the SA302/return, HMRC statement, payment history, coding notices and any reduction claim; do not infer tax deductions or allocations from bank descriptions. Tax computation: `uk-income-tax-sa100`, `uk-self-employment-sa103` and `uk-national-insurance`.
 
 ## Who this applies to
 
-- **Anyone assessed under Self Assessment.** TMA 1970 s. 59A(1) applies to "any person" who, for the year before, was assessed to income tax under s. 9 (the self-assessment) in an amount that exceeds the tax deducted at source. The rule has no residence test.
-- **The excess is the "relevant amount".** It is last year's assessed income tax (and Class 4 NIC) minus tax deducted at source. Tax deducted at source means PAYE and other tax deducted or treated as paid for the year, plus amounts to be coded out in later years, less amounts coded in from earlier years (s. 59A(8)).
-- **Two tests take a person out.** No payments on account are due if:
-  - the relevant amount is under GBP 1,000 (s. 59A(1)(c); SI 1996/1654 reg 3, raised from GBP 500 to GBP 1,000 by SI 2008/838 from 2009-10), or
-  - the relevant amount is less than one fifth of the assessed amount (s. 59A(1)(d); reg 4, "one to five" since SI 1997/2491). Put another way: more than 80% of last year's tax was collected at source.
-- **First year in Self Assessment.** With no assessment for the year before, s. 59A does not apply. The whole bill is paid as one balancing payment, and the first payment on account for the next year falls on the same 31 January.
-- **HMRC can switch it off.** An officer can direct, before 31 January after the year, that s. 59A does not apply to a person for that year (s. 59A(9)).
-- **Out of scope here:** partnerships (each partner's own return carries their share; the partnership pays nothing), trustees (s. 59A also applies to them, but trust returns are not covered by this skill), and companies (corporation tax has its own instalment rules, see `uk-corporation-tax`).
+- TMA 1970 s.59A applies to a person with a preceding-year income-tax self-assessment exceeding tax deducted at source, subject to both tests below. Residence alone is not an exemption. [s.59A](https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml).
+- With no preceding-year assessment establishing liability to payments on account, the first bill can instead be payable in full with the next year's first advance on the same January date. A missing or unfiled return does not itself establish exemption. [HMRC](https://www.gov.uk/understand-self-assessment-bill/payments-on-account).
+- An HMRC officer can direct before 31 January following the tax year that s.59A does not apply for that year, with consequential adjustments. Do not assume such a direction exists. [s.59A(9)](https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml).
+- Partnerships and partner-level profit allocation (historical R-UK-POA-1), trusts (R-UK-POA-3), companies, tax-equalisation arrangements and contested assessments: **Check this point with one of our partner accountants.** Corporation tax route: `uk-corporation-tax`.
 
 ## Rates, bands and thresholds
 
-| Item | Rate or amount | Year | Source |
+| Item | Rate or amount | Period / condition | Official source |
 |---|---|---|---|
-| Threshold: relevant amount at or above which payments on account are due | GBP 1,000 | 2009-10 onwards, so 2026-27 | https://www.legislation.gov.uk/uksi/2008/838/made |
-| At-source test: relevant amount must be at least this share of the assessed amount | 1 to 5 (20%); so more than 80% at source means no payments | 2026-27 | https://www.legislation.gov.uk/uksi/1996/1654/regulation/4 ; https://www.legislation.gov.uk/uksi/1997/2491/made |
-| Each payment on account | 50% of the relevant amount | 2026-27 | https://www.legislation.gov.uk/ukpga/1970/9/section/59A |
-| First payment on account for 2026-27 | 31 January 2027 | 2026-27 | https://www.legislation.gov.uk/ukpga/1970/9/section/59A |
-| Second payment on account for 2026-27 | 31 July 2027 | 2026-27 | https://www.legislation.gov.uk/ukpga/1970/9/section/59A |
-| Balancing payment for 2026-27 | 31 January 2028 | 2026-27 | https://www.legislation.gov.uk/ukpga/1970/9/section/59B |
-| Late payment interest | Bank of England base rate plus 4% (plus 2.5% on or before 5 April 2025) | from 6 April 2025 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
-| Late payment interest rate in force | 7.75% from 9 January 2026 (Bank Rate 3.75%, held on 17 September 2026) | 2026-27 | same HMRC page; https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate |
-| Repayment interest rate in force | 2.75% from 9 January 2026 (base rate minus 1%, floor 0.5%) | 2026-27 | same HMRC page |
-| Late payment penalty, not in MTD | 5% of unpaid tax at 30 days, 6 months and 12 months (balancing payment only) | 2026-27 | https://www.gov.uk/self-assessment-tax-returns/penalties ; https://www.legislation.gov.uk/ukpga/2009/10/schedule/56 |
-| Late payment penalty, in MTD for Income Tax | 2026-27: 3% at day 15, 3% more at day 30, then 10% a year from day 31; first year: no penalty if paid or a plan agreed within 30 days. 2027-28: 4% and 4%, then 10% a year | 2026-27, 2027-28 | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax |
-| Coding out limit | Balance under GBP 3,000, online return by 30 December | 2026-27 | https://www.gov.uk/pay-self-assessment-tax-bill/through-your-tax-code |
-| MTD for Income Tax start | From 6 April 2026 if 2024-25 qualifying income over GBP 50,000; 6 April 2027 if 2025-26 over GBP 30,000; 6 April 2028 if 2026-27 over GBP 20,000 | 2026-27 onwards | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax |
+| Threshold: relevant amount at or above which payments on account are due | GBP 1,000 | Both tests must be met; exactly GBP 1,000 is not exempt | https://www.gov.uk/understand-self-assessment-bill/payments-on-account ; https://www.legislation.gov.uk/uksi/2008/838/made/data.xml |
+| At-source test: relevant amount must be at least this share of the assessed amount | 1 to 5 (20%); so more than 80% at source means no payments | Exactly 80% collected at source is not exempt under this test; 20% is computed from the statutory ratio | https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml ; https://www.legislation.gov.uk/uksi/1997/2491/made/data.xml ; https://www.gov.uk/understand-self-assessment-bill/payments-on-account |
+| Each payment on account | 50% of the relevant amount | Before a valid reduction or other statutory adjustment; any odd penny goes on the second payment | https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml ; https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam1100 |
+| First / second payments for 2026-27 | 31 January 2027 / 31 July 2027 | Ordinary s.59A dates | https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml |
+| Balancing payment for 2026-27 | 31 January 2028 | Ordinary deadline; late-notice exception below | https://www.legislation.gov.uk/ukpga/1970/9/section/59B/data.xml |
+| Ordinary late-payment interest | 8.00% from 24 November 2026; previously 7.75% from 9 January to 23 November 2026 | Actual period-specific rates, including future changes, must be used | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
+| Ordinary late-payment interest basis | Bank Rate plus 4% from 6 April 2025; plus 2.5% on or before 5 April 2025 | Use HMRC's effective dates, not the date of a Bank Rate announcement | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
 
 ## The taxable base
 
-- **What goes in.** The relevant amount is last year's income tax and Class 4 NIC assessed through Self Assessment, minus tax deducted at source (s. 59A(1), (8)). GOV.UK confirms Class 4 is included: payments on account are "payments towards your next tax bill (including Class 4 National Insurance if you're self-employed)".
-- **What stays out.** Capital gains tax and student loan (and postgraduate loan) repayments are paid with the balancing payment, not on account (GOV.UK payments on account page). Voluntary Class 2 NIC is collected with the balancing payment and "will not be included in Payments on Account" (HMRC manual SAM121665). Capital gains tax is also left out when s. 86 works out interest after a claim (s. 86(6)(b)).
-- **Reliefs that change the tax itself** change the base. A Marriage Allowance transfer lowers the transferor's tax and raises the recipient's; each person's payments on account follow their own net figure. Gift Aid and pension relief work the same way through the computed tax.
-- **Coding out.** Where a balance under GBP 3,000 is collected through next year's PAYE code, that amount counts as tax deducted at source for the year it relates to (s. 59A(8)(b)). It does not form part of the relevant amount, so it can take the person under GBP 1,000 or over the 80% line. A part payment to get under GBP 3,000 does not qualify.
-- **Formula.**
-  - relevant amount = assessed income tax and Class 4 for last year minus tax deducted at source
-  - each payment on account = 50% of the relevant amount
-  - balancing payment = this year's assessed income tax and Class 4, minus tax at source, minus both payments on account, plus capital gains tax, student loan and any voluntary Class 2.
-- **If last year's figure changes.** If last year's return is filed or amended after a payment date, each payment is reset to 50% of the new relevant amount and treated as always having been that (s. 59A(4A)). A discovery assessment for last year adds 50% of the extra tax to each payment (s. 59A(4B)). Adjustments are made by repayment or further payment (s. 59A(5)).
-- **Too much paid.** If both payments on account exceed this year's bill, the difference is repaid with repayment interest, or set against the next amount due (s. 59B(4); HMRC interest page).
+- Start from the preceding year's income-tax and Class 4 liability after tax reliefs, with the statutory tax-at-source adjustments. Do not subtract payments on account already made when setting the next year's advances. HMRC's SAM1100 excludes CGT, tax deducted at source, underpayments transferred to the PAYE system, SA student/postgraduate loan repayments and Class 2. [SAM1100](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam1100).
+- relevant amount = assessed income tax and Class 4 for last year minus tax deducted at source
+- each payment on account = 50% of the relevant amount
+- Tax at source under s.59A(8) includes tax deducted/treated as deducted or paid for that year and amounts for that year to be coded out later, less amounts deducted in that year for previous years. A bank credit or PAYE salary amount does not prove any tax was deducted. [s.59A(8)](https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml).
+- **Excluded charges.** Voluntary Class 2 NIC is collected with the balancing payment and "will not be included in Payments on Account" (HMRC manual SAM121665). This refers to voluntary contributions actually elected and collected through SA, not an automatic charge for every week. Any remaining CGT and SA student/postgraduate loan charge belong in the annual reconciliation, with credit for amounts already paid or collected. [SAM121665](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam121665); [SAM1100](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam1100).
+- **Reliefs.** Use each person's correctly computed assessment. Marriage Allowance transfers part of the transferor's allowance and gives the eligible recipient a tax reduction; the old claim that it reduces the transferor's tax and increases the recipient's was reversed. Gift Aid, pension relief, eligibility and any recomputation: **Check this point with one of our partner accountants.** [Marriage Allowance](https://www.gov.uk/marriage-allowance).
+- **Coding out.** The ordinary facility requires a bill below GBP 3,000, existing PAYE taxation and a paper return by 31 October or online return by 30 December. It cannot be obtained by part-paying a bill of GBP 3,000 or more. It is unavailable if PAYE income is insufficient, tax would exceed 50% of PAYE income, or tax would more than double; it can also be declined on the return. Class 2 in this Guide cannot be collected this way. Use the actual coding decision in the s.59A(8) calculation. [HMRC coding conditions](https://www.gov.uk/pay-self-assessment-tax-bill/through-your-tax-code).
+- **Balance / credit.** Reconcile the current-year assessment and excluded charges against statutory tax-at-source credits, payments already made and actual HMRC allocations. A negative balance is a potential repayment/credit, not a promise of immediate cash or interest. Under SA, repayments are requested; overpayments otherwise remain on the record until claimed or reallocated. Tax due within the next 45 days may absorb the refund. [s.59B(1)-(2)](https://www.legislation.gov.uk/ukpga/1970/9/section/59B/data.xml); [SAM111010](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam111010); [refunds](https://www.gov.uk/self-assessment-tax-returns/claiming-a-tax-refund).
+- **Allocation.** Match bank debits to HMRC's statement. HMRC normally allocates to overdue charges or those due within 45 days, earliest statutory due date first, then earliest tax year, then creation date. The 45-day parameter can vary. Do not split or designate a January debit as a particular advance without checking the allocation. [DMBM210160](https://www.gov.uk/hmrc-internal-manuals/debt-management-and-banking/dmbm210160).
 
 ## Deadlines and filing
 
-| Event | 2025-26 bill | 2026-27 bill |
-|---|---|---|
-| First payment on account | 31 January 2026 | 31 January 2027 |
-| Second payment on account | 31 July 2026 | 31 July 2027 |
-| Return due online | 31 January 2027 | 31 January 2028 |
-| Balancing payment (with the first payment on account for the next year) | 31 January 2027 | 31 January 2028 |
+The ordinary first/second advance dates are 31 January and 31 July: 2024-25 uses 31 January/31 July 2025; 2025-26 uses 31 January/31 July 2026; 2026-27 uses 31 January/31 July 2027. Ordinary balances are due 31 January 2026, 2027 and 2028 respectively. Thus January can combine the preceding year's balance and the current year's first advance. Ordinary online annual returns for 2025-26 and 2026-27 are due 31 January 2027 and 31 January 2028 respectively. [s.59A](https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml); [s.59B](https://www.legislation.gov.uk/ukpga/1970/9/section/59B/data.xml); [return deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines).
 
-Sources: TMA 1970 ss. 59A(2) and 59B(4); [payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account).
-
-- **31 January carries two payments.** The balancing payment for last year and the first payment on account for this year fall on the same day. A single large HMRC debit around 31 January is usually both. Split it before booking it.
-- **Late notice to file.** If HMRC gave notice to file after 31 October and the person registered by 5 October, the balancing payment is due 3 months after the notice (s. 59B(3)). The payments on account dates do not move.
-- **Weekends and holidays.** Interest runs from the due date even if it is not a business day (s. 86(3)). Payments not made by Faster Payments or card should reach HMRC by the last working day before.
-- **Reducing payments: SA303.** If this year's bill will be lower, the person can claim, before 31 January after the year, that the payments be cut to 50% of a stated lower amount, or to nil (s. 59A(3), (4)). The claim states the grounds. It is made online ("Reduce payments on account" in the HMRC online account) or on form SA303 by post. HMRC repays or adjusts amounts already paid (s. 59A(5)).
-- **A wrong claim costs interest.** If the bill turns out higher, interest runs from the original dates as if each payment had been the lower of (a) the reduced payment plus half the balancing payment and (b) the payment that was due before the claim (s. 86(4)-(5)). A fraudulent or negligent claim also carries a penalty up to the shortfall it caused (s. 59A(6)).
-- **Making Tax Digital for Income Tax.** From 6 April 2026 sole traders and landlords with 2024-25 qualifying income over GBP 50,000 send quarterly updates through software (thresholds in the table above). The quarterly updates report figures; they do not collect tax. For a standard tax year the update deadlines are 7 August (6 April to 5 July), 7 November (to 5 October), 7 February (to 5 January) and 7 May after the year (to 5 April) ([send quarterly updates](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates)). For 2026-27 that is 7 August 2026, 7 November 2026, 7 February 2027 and 7 May 2027. None of these dates is a payment date. Payments on account stay on 31 January and 31 July, the base stays last year's bill, the year still ends with a return due 31 January, and SA303 claims still work.
-- **Paying.** HMRC online account, bank transfer, card, Direct Debit, or a budget payment plan ahead of the date. Anyone who cannot pay should contact HMRC about a Time to Pay arrangement; interest still runs ([pay your Self Assessment bill](https://www.gov.uk/pay-self-assessment-tax-bill)). Inside MTD for Income Tax, if a payment plan is agreed and the payments are made, late payment penalties are paused from the date the person contacted HMRC; a penalty can still be charged if no plan is agreed or the plan is not kept ([MTD penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax)).
+- **Late notice.** If the s.7 notice was given within six months of the year-end but HMRC's s.8/8A notice was given after the following 31 October, s.59B(3) gives three months from that notice for the balance. This does not reschedule s.59A advances. Other unusual notices, amendments, discovery demands, payment dates or enquiries delaying repayments: **Check this point with one of our partner accountants.** [s.59B(3)-(6)](https://www.legislation.gov.uk/ukpga/1970/9/section/59B/data.xml).
+- **Weekends / holidays.** The statutory interest date does not move merely because it is a non-business day. HMRC says payment should arrive by the preceding working day unless using Faster Payments or a debit/credit card. Allow the time required for the selected payment method. [s.86(3)](https://www.legislation.gov.uk/ukpga/1970/9/section/86/data.xml); [payment methods](https://www.gov.uk/pay-self-assessment-tax-bill).
+- **SA303 reduction.** A claim before 31 January following the tax year must state grounds for believing that the year's assessed tax less statutory tax-at-source amounts will be lower. Under s.59A(4) each payment becomes half the stated lower relevant amount; under (3) it can be nil where the stated conditions hold. Lower earnings alone, cessation or departure does not establish a lower net liability, and inability to pay is not a valid reason. Apply through the online account's “Reduce payments on account” facility or send SA303. Simply paying less is not a claim. [s.59A(3)-(5)](https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml); [SAM1040](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam1040); [HMRC](https://www.gov.uk/understand-self-assessment-bill/payments-on-account).
+- **Prior assessment changed.** Under s.59A(4A), a late assessment/amendment resets the affected payment to half the revised relevant amount, subject to reductions and (4B). A discovery assessment under s.29 adds half its tax to each payment under (4B), subject to reductions and subsequent variation. Under (5), repayment/further-payment adjustments give effect to these changes. Check the statement; do not presume processing is complete. [s.59A(4A)-(5)](https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml).
+- **Already paid one instalment?** The statutory reduction applies to each payment, with consequential credit/refund adjustments. Do not replace the second liability with “estimated annual tax minus the first cash payment” without reconciling both revised charges and the allocation. [s.59A(4)-(5)](https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml).
+- **MTD for Income Tax.** Quarterly updates are summaries, not tax returns or new tax payment dates. For standard 2026-27 periods the cumulative endpoints are 5 July / 5 October 2026 and 5 January / 5 April 2027, with deadlines 7 August / 7 November 2026 and 7 February / 7 May 2027. Payments on account retain their statutory January/July cycle. An already established 2025-26 July advance is not replaced by starting MTD on 6 April 2026. [quarterly updates](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates); [s.59A](https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml).
+- **MTD scope and software (R-UK-POA-4).** The published qualifying-income phases are over GBP 50,000 in 2024-25 → 6 April 2026; over GBP 30,000 in 2025-26 → 6 April 2027; over GBP 20,000 in 2026-27 → 6 April 2028, for relevant sole traders/landlords, subject to exemptions. Individual qualifying-income, exemption, registration, compatible-software and annual-return procedures: **Check this point with one of our partner accountants.** [HMRC scope](https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax).
+- **Unable to pay?** Contact HMRC about Time to Pay; do not treat this as a reduction in liability. Budget payments before a deadline and bank transfer, card or Direct Debit routes are described by HMRC. A plan's eligibility, interest, penalty consequences and any disputed allocation: **Check this point with one of our partner accountants.** [paying](https://www.gov.uk/pay-self-assessment-tax-bill).
 
 ## Penalties and interest
 
-- **Interest on payments on account.** A late payment on account carries interest from its due date until paid (s. 86(1)(a), (2)). The rate is set under Finance Act 1989 s. 178: base rate plus 4% from 6 April 2025, 7.75% from 9 January 2026. It is simple interest, worked daily. The same rules apply inside Making Tax Digital for Income Tax: HMRC's MTD penalties page says "There are no changes to how late payment interest works" ([MTD penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax)).
-- **Interest after a claim to reduce.** See SA303 above (s. 86(4)-(6)). When the year ends in a repayment, interest on a payment on account is remitted except to the extent the payment due was more than half the final figure (s. 86(7)-(8)).
-- **No penalty on a late payment on account.** Late payment penalties under FA 2009 Sch. 56 attach to the balancing payment under s. 59B(3) or (4) (Sch. 56 table, item 1), not to payments under s. 59A. HMRC's MTD penalty guidance says the same for the new regime: "Late payment penalties do not apply to any payments on account."
-- **Late balancing payment, not in MTD.** 5% of the tax unpaid at 30 days, again at 6 months and again at 12 months, plus interest ([SA penalties](https://www.gov.uk/self-assessment-tax-returns/penalties)).
-- **Late balancing payment, in MTD for Income Tax.** For 2026-27: nothing up to day 15; 3% of the tax owed at day 15 if paid between day 16 and day 30; a further 3% of the tax owed at day 30 if paid later, plus 10% a year charged daily from day 31 for up to 2 years. In the first year in the new regime there is no penalty if the tax is paid, or a payment plan agreed, within 30 days. For 2027-28 the two charges are 4% each ([MTD penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax)).
-- **Late filing** is a separate penalty regime (GBP 100 and upwards, or points under MTD). See `uk-income-tax-sa100`.
-- **Interest and penalties are not deductible** against profits.
+Late payments on account carry interest from the statutory date until payment, including where the due date is a non-business day. For actual charges use the ordinary income-tax rate for each period, not corporation-tax instalment rates or a forecast Bank Rate. The dated rates above apply to ordinary income-tax late-payment interest. [s.86(1)-(3)](https://www.legislation.gov.uk/ukpga/1970/9/section/86/data.xml); [HMRC rates](https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates).
+
+- **After a reduction.** For s.86(4)-(6), interest treats each advance as the lower of (a) the reduced advance plus half the qualifying income-tax balancing amount, and (b) the unreduced advance. This assumes both reduced advances were paid; CGT and other payments on account are excluded from the specified balancing amount. Do not use the total SA cash balance including loans/CGT as that statutory amount. [s.86(4)-(6)](https://www.legislation.gov.uk/ukpga/1970/9/section/86/data.xml).
+- **Late-payment penalties do not apply to payments on account.** This does not protect an incorrect reduction claim: a fraudulent or negligent incorrect statement under s.59A(3)/(4) can attract a penalty up to the difference between the correct advance and that actually paid. [HMRC penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax); [s.59A(6)](https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml).
+- **Ordinary balancing-payment penalties.** Under the current Self Assessment regime, HMRC states 5% of relevant unpaid tax at 30 days, six months and twelve months, plus interest. Determine the applicable tax year's regime, any plan and defences before calculating a penalty. [HMRC](https://www.gov.uk/self-assessment-tax-returns/penalties).
+- **MTD penalties / late filing.** These are separate from POA interest. Joining MTD on 6 April 2026 does not move the 2025-26 return into the new penalties: HMRC states the new regime starts with the 2026-27 return deadline of 31 January 2028. Detailed late-payment percentages, first-year grace, volunteers, later-year changes, points, appeals and payment-plan effects: **Check this point with one of our partner accountants.** [HMRC MTD penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax).
+- **Repayment interest / remission / deductions.** Repayment interest requires a qualifying overpayment and qualifying dates; it is not automatic on all excess advances. Whether s.86(7)-(9) remits interest in a repayment case, and the deductibility of any interest or penalty: **Check this point with one of our partner accountants.** [SAM111010](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam111010); [s.86](https://www.legislation.gov.uk/ukpga/1970/9/section/86/data.xml).
 
 ## Cross-border points
 
-- **Non-residents and arrivals.** s. 59A has no residence condition. A non-resident who files a Self Assessment return (UK rent, UK trade) makes payments on account on the same tests. Tax deducted at source on UK income counts towards the 80% line. Residence rules are in `uk-statutory-residence-test`; the non-resident return in `uk-non-resident-sa109`.
-- **Leaving the UK.** If UK income stops after departure, this year's bill is usually lower than last year's. A claim under s. 59A(3) or (4) cuts the payments. Without one, HMRC repays the excess after the return, which can be a year later.
-- **Foreign tax.** Foreign tax credit relief reduces the UK tax assessed, so it reduces the base for next year's payments. Foreign tax is not UK "tax deducted at source" for the 80% test. See `uk-foreign-tax-and-withholding`.
-- **Capital gains on a move.** Gains (including UK land disposals by non-residents) stay out of payments on account.
+Non-residents, arrivals, departures and UK property/trade cases (historical R-UK-POA-2) still require the s.59A liability tests; residence alone does not answer them. Do not assume a departure stops UK income or reduces UK tax. Foreign tax credit relief, foreign tax's place in the assessed/at-source amounts, source deductions and any disposal-payment credits: **Check this point with one of our partner accountants.** Routes: `uk-statutory-residence-test`, `uk-non-resident-sa109`, `uk-foreign-tax-and-withholding`, `uk-capital-gains-sa108`. [s.59A](https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml).
 
 ## Worked examples
+
+Unless a case states otherwise, assume both liability tests are met, the stated tax amounts are correctly classified, payments are allocated as stated, and there are no further tax-at-source/coding adjustments, credits or excluded charges. CGT and loan amounts stated as payable are the remaining annual charges after any earlier collection. These are example assumptions, not findings about a taxpayer.
 
 **Example 1: sole trader with a student loan (simple).** Priya is self-employed. Her 2025-26 return shows income tax and Class 4 of GBP 9,000. GBP 1,000 was deducted at source from a small PAYE job. She paid payments on account for 2025-26 of GBP 3,000 each. Her 2025-26 return also shows a student loan repayment of GBP 1,200 and capital gains tax of GBP 500.
 
@@ -134,7 +114,7 @@ expected:
 
 **Example 2: a reduction that went too far (edge case).** Tom's 2025-26 relevant amount was GBP 10,000, so his 2026-27 payments on account were GBP 5,000 each. Expecting a quiet year, he claimed in December 2026 to cut them to GBP 1,500 each (a stated amount of GBP 3,000). He paid GBP 1,500 on 31 January 2027 and GBP 1,500 on 31 July 2027. His 2026-27 return shows a relevant amount of GBP 6,000.
 
-His balancing payment due 31 January 2028 is GBP 6,000 minus GBP 3,000 = GBP 3,000. Under s. 86(5), interest is worked out as if each payment on account had been the lower of GBP 1,500 plus half of GBP 3,000 (GBP 3,000) and the original GBP 5,000. That is GBP 3,000, so each payment was GBP 1,500 short. Interest at 7.75% runs on GBP 1,500 from 31 January 2027 to 31 January 2028 (365 days), GBP 116.25, and on GBP 1,500 from 31 July 2027 to 31 January 2028 (184 days), GBP 58.60. Total GBP 174.85, assuming the rate stays at 7.75% and he pays the balance on 31 January 2028. No penalty applies to the shortfall on the payments on account.
+Assume no excluded charges, further credits, amended liabilities or other allocation changes. His balancing payment due 31 January 2028 is GBP 6,000 minus GBP 3,000 = GBP 3,000. Under s. 86(5), interest is worked out as if each payment on account had been the lower of GBP 1,500 plus half of GBP 3,000 (GBP 3,000) and the original GBP 5,000. That is GBP 3,000, so each payment was GBP 1,500 short. For comparison with the original example only, stipulate a constant **hypothetical** annual rate of 7.75%, a 365-day divisor and the original 365/184 charged-day assumptions. This gives GBP 116.25 and GBP 58.60, total GBP 174.85. These are arithmetic assumptions, **not the rates or a certified HMRC charge for 2027-28**: the current rate is already 8% from 24 November 2026, and future rate periods/day counts must be checked. No late-payment penalty applies to the POAs, but any fraudulent/negligent reduction penalty is a separate question. **Check this point with one of our partner accountants.**
 
 ```oa-check
 name: Interest after an SA303 claim that was too low (TMA 1970 s. 86(5)), 2026-27
@@ -164,7 +144,7 @@ expected:
 **Example 3: the two tests (threshold cases).** All figures are for the 2025-26 return, setting 2026-27 payments.
 - Relevant amount GBP 850 (or GBP 980): under GBP 1,000, so no payments on account. The whole amount is paid with the balancing payment on 31 January 2027 (s. 59A(1)(c); reg 3).
 - Assessed GBP 20,000, GBP 17,000 deducted at source, relevant amount GBP 3,000: 85% was collected at source, so no payments on account even though GBP 3,000 is over GBP 1,000 (s. 59A(1)(d); reg 4).
-- An employee with a side trade: assessed GBP 18,000, GBP 14,000 through PAYE. Only 77.8% at source, so payments on account apply: relevant amount GBP 4,000, each payment GBP 2,000.
+- An employee with a side trade: assessed GBP 18,000, GBP 14,000 through PAYE (the earlier EC3 also specified GBP 50,000 employment income and GBP 15,000 self-employment income; treat the assessed/deducted amounts as stipulated, not as a tax computation from those earnings). Only 77.8% at source, so payments on account apply: relevant amount GBP 4,000, each payment GBP 2,000.
 
 ```oa-check
 name: The 80% at-source test, 2025-26 figures setting 2026-27 payments
@@ -185,7 +165,7 @@ expected:
   each_poa_b: 2000.00
 ```
 
-**Example 4: excluded items taken out (edge case).** A 2025-26 return shows income tax and Class 4 of GBP 4,000, capital gains tax of GBP 3,000, voluntary Class 2 for 52 weeks at the 2025-26 rate of GBP 3.50 a week (GBP 182; the rate is GBP 3.65 from 2026-27 under SI 2026/231) and a student loan repayment of GBP 1,200. The total paid with the return is GBP 8,382, but the base is GBP 4,000 only. Each 2026-27 payment on account is GBP 2,000, due 31 January 2027 and 31 July 2027. If the total had been used, each payment would wrongly be GBP 4,191. A student loan alone can also push a bill over GBP 1,000 when the income tax part is under it; then no payments on account are due.
+**Example 4: excluded items taken out (edge case).** A 2025-26 return shows income tax and Class 4 of GBP 4,000, capital gains tax of GBP 3,000, an eligible voluntary Class 2 election for 52 weeks at the 2025-26 rate of GBP 3.50 a week (GBP 182; the rate is GBP 3.65 from 2026-27 in the HMRC rates table) and a student loan repayment of GBP 1,200. Assume no tax at source, previous payments, disposal-payment credits or other adjustments. The annual total before payments on account is GBP 8,382, but the base is GBP 4,000 only. Each 2026-27 payment on account is GBP 2,000, due 31 January 2027 and 31 July 2027. If the total had been used, each payment would wrongly be GBP 4,191. A student loan alone can also push a bill over GBP 1,000 when the income tax part is under it; then no payments on account are due.
 
 ```oa-check
 name: Base with capital gains tax, voluntary Class 2 and student loan removed, 2026-27 payments
@@ -205,7 +185,7 @@ expected:
   each_poa: 2000.00
 ```
 
-**Example 5: a late payment on account (interest only).** A first payment on account of GBP 3,000 due 31 January 2026 is paid on 15 April 2026, 74 days late. The rate in force is 7.75% (Bank Rate 3.75% plus 4%). Interest is GBP 3,000 x 7.75% x 74 / 365 = GBP 47.14. No penalty applies to a late payment on account.
+**Example 5: a late payment on account (interest illustration).** A first payment on account of GBP 3,000 due 31 January 2026 is paid on 15 April 2026, 74 days late. The ordinary rate for that historical period was 7.75% (Bank Rate 3.75% plus 4%). Using the original stipulated 74 days and 365-day divisor, the simple-interest illustration is GBP 3,000 x 7.75% x 74 / 365 = GBP 47.14 (the historical GBP 47.12 was an arithmetic error). This is not a certified account charge or a rate for a different period. No late-payment penalty applies to a late payment on account. Actual HMRC day counts, rounding and allocations: **Check this point with one of our partner accountants.**
 
 ```oa-check
 name: Late payment interest on a payment on account paid 74 days late at 7.75%
@@ -219,11 +199,11 @@ expected:
   interest: 47.14
 ```
 
-**Example 6: three years in cash (full cycle).** A contractor with no PAYE income had a 2023-24 bill under GBP 1,000, so no payments on account for 2024-25. The 2024-25 relevant amount is GBP 12,000.
+**Example 6: three years in cash (full cycle).** A contractor with no PAYE income, CGT, loan charges or Class 2 adjustments had a 2023-24 bill under GBP 1,000, so no payments on account for 2024-25. The 2024-25 relevant amount is GBP 12,000.
 - 31 January 2026: 2024-25 balancing payment GBP 12,000 plus first 2025-26 payment GBP 6,000 = GBP 18,000. 31 July 2026: GBP 6,000.
 - If 2025-26 comes to GBP 12,000: balancing payment nil; 31 January 2027 cash GBP 6,000 (first 2026-27 payment); 31 July 2027 GBP 6,000.
 - If 2025-26 comes to GBP 14,000: balancing payment GBP 2,000 plus first 2026-27 payment GBP 7,000 = GBP 9,000 on 31 January 2027; GBP 7,000 on 31 July 2027.
-- If 2025-26 comes to GBP 8,000: GBP 4,000 overpaid. The first 2026-27 payment is GBP 4,000. If HMRC sets the overpayment against it, nothing is paid on 31 January 2027 (s. 59B(4)).
+- If 2025-26 comes to GBP 8,000: GBP 4,000 overpaid. The first 2026-27 payment is GBP 4,000. If the credit remains available and HMRC sets it against that advance, nothing is paid on 31 January 2027; otherwise reconcile the statement and refund position.
 - Inside MTD for Income Tax from 6 April 2026 the quarterly updates add no payment dates; the same cash dates apply.
 
 ```oa-check
@@ -245,36 +225,87 @@ expected:
   jan_2027_cash_low: 0.00
 ```
 
+
+**Historical inputs and identifiers retained.** These are stipulated tax figures, not computations of tax from earnings. Apply both tests and assume no other credits, charges, reductions or conflicting allocations unless stated. The statutory rules and HMRC sources above govern these cases.
+
+- **Old Example 1 / Test 1:** relevant amount GBP 6,000 with no at-source exemption gives GBP 3,000 each; the original dated advances were 31 January and 31 July 2025 (2024-25), not 2026-27.
+- **Old computation rows:** GBP 5,000 → GBP 2,500 each; GBP 12,000 → GBP 6,000 each; if the year's relevant amount matches, balance nil. GBP 800, GBP 850 (old Example 2 / Test 2) or GBP 980 (EC4) falls below the threshold; the corresponding amount remains in the ordinary annual balance.
+- **Old Test 6:** GBP 4,000 + GBP 4,000 paid against GBP 6,500 relevant liability gives GBP 1,500 credit, subject to repayment/offset processing.
+- **EC2:** a claim to nil followed by GBP 8,000 actual relevant liability gives GBP 8,000 balancing liability. The interest base per advance is the lower of GBP 4,000 and the original unreduced advance; that original advance is missing, so GBP 4,000 cannot be asserted unconditionally. **Check this point with one of our partner accountants.**
+- **EC5 / EC9:** September cessation or a prior-year amendment requires a current liability forecast and the revised assessment/statement; neither automatically proves reduction eligibility or the cash refund date. **Check this point with one of our partner accountants.**
+- **EC6:** original total GBP 20,000 including GBP 12,000 CGT gives GBP 8,000 relevant amount and GBP 4,000 each only if the other amounts are correctly classified and the at-source test is met. Ask HMRC to correct wrongly established charges; paying a lower amount alone does not amend them.
+- **EC7:** GBP 600 relevant tax plus GBP 900 student loan gives GBP 1,500 total but no advance: the relevant tax is below GBP 1,000.
+- **EC8:** a Saturday 31 January does not shift to Monday 2 February for interest. Use the payment-method/preceding-working-day rule above.
+- **EC10:** the historical GBP 1,260 Marriage Allowance transfer is not a separate POA exclusion; use the correctly computed assessments, with the transferor/recipient roles corrected above. Eligibility and actual tax effects: **Check this point with one of our partner accountants.**
+- **Old Example 4 / Test 4:** retain the original stipulated Class 2 GBP 179.40, alongside GBP 4,000 income tax/Class 4, GBP 3,000 CGT and GBP 1,200 loan: total GBP 8,379.40, relevant amount GBP 4,000, each advance GBP 2,000 if both tests apply. GBP 179.40 is not asserted as 52 weeks at the later rate; the dated 2025-26 version in Example 4 uses GBP 182.
+- **Old Test 7:** the separate historical inputs Bank Rate 5.25% + 2.5%, GBP 3,000 and 74 days give a hypothetical 7.75% annual rate and GBP 47.14 using 365 days. No year was provided: do not apply that base-rate add-on to the dated 2026 case. **Check this point with one of our partner accountants.**
+- **Old Test 8 / Example 7 B1:** retain GBP 12,000 relevant amounts for 2024-25, 2025-26 **and 2026-27**. With GBP 6,000 advances each year and no reductions or other adjustments, the 2026-27 balance is nil and 31 January 2028 cash is GBP 6,000 for the first 2027-28 advance.
+- **Old Test 9 / EC11:** stipulated MTD entry on 6 April 2026 and preceding relevant amount GBP 10,000 gives GBP 5,000 on 31 January and 31 July 2027 if the at-source test is met. Quarterly updates do not settle those advances; ordinary 2026-27 annual reconciliation remains due 31 January 2028.
+
+```oa-check
+name: Historical retained arithmetic including old Test 6 and EC6 EC7
+inputs:
+  old_standard: 6000
+  old_row: 5000
+  paid_first: 4000
+  paid_second: 4000
+  actual_test6: 6500
+  ec6_total: 20000
+  ec6_cgt: 12000
+  ec7_tax: 600
+  ec7_loan: 900
+  legacy_class2: 179.40
+  income_tax_class4: 4000
+  cgt: 3000
+  loan: 1200
+  mtd_relevant: 10000
+steps:
+  - standard_each: old_standard / 2
+  - row_each: old_row / 2
+  - credit_test6: paid_first + paid_second - actual_test6
+  - ec6_relevant: ec6_total - ec6_cgt
+  - ec6_each: ec6_relevant / 2
+  - ec7_total: ec7_tax + ec7_loan
+  - legacy_total: income_tax_class4 + cgt + legacy_class2 + loan
+  - mtd_each: mtd_relevant / 2
+expected:
+  standard_each: 3000
+  row_each: 2500
+  credit_test6: 1500
+  ec6_relevant: 8000
+  ec6_each: 4000
+  ec7_total: 1500
+  legacy_total: 8379.40
+  mtd_each: 5000
+```
+
 ## Ask the client first
 
-1. What was last year's Self Assessment bill, and how much of the tax was collected at source (PAYE, coding out, tax on interest)? This sets both tests.
-2. Was last year's figure inflated by capital gains tax, student loan or voluntary Class 2? These come out of the base.
-3. Will this year's income be lower than last year's, and why? This decides whether a reduction claim is worth the interest risk.
-4. Has last year's return been filed, amended or reopened by HMRC since the payments were set?
-5. Are they inside Making Tax Digital for Income Tax for 2026-27? This decides which late payment penalty regime applies to the balancing payment.
-6. Are they leaving or arriving in the UK this year, or is this their first Self Assessment year?
+Read the existing records before asking: obtain the preceding assessment and statutory tax-at-source/coding breakdown; separate excluded charges and already paid amounts; obtain reduction claims and reasons, amended/discovery assessments, current-year forecasts and actual allocations. Confirm the tax year, notice dates, first-year/residence or departure issues and whether MTD applies to that year's return. Missing facts, disputed charges, unusual remissions or specialist cases: **Check this point with one of our partner accountants.**
 
 ## Sources
 
-| Source | URL | Read on |
-|---|---|---|
-| Taxes Management Act 1970 s. 59A (payments on account) | https://www.legislation.gov.uk/ukpga/1970/9/section/59A | 2026-10-26 |
-| Taxes Management Act 1970 s. 59B (balancing payment) | https://www.legislation.gov.uk/ukpga/1970/9/section/59B | 2026-10-24 |
-| Taxes Management Act 1970 s. 86 (interest) | https://www.legislation.gov.uk/ukpga/1970/9/section/86 | 2026-10-26 |
-| Income Tax (Payments on Account) Regulations 1996, reg 3 | https://www.legislation.gov.uk/uksi/1996/1654/regulation/3 | 2026-10-26 |
-| Income Tax (Payments on Account) Regulations 1996, reg 4 | https://www.legislation.gov.uk/uksi/1996/1654/regulation/4 | 2026-10-26 |
-| Income Tax (Payments on Account) (Amendment) Regulations 1997 (four to five) | https://www.legislation.gov.uk/uksi/1997/2491/made | 2026-10-26 |
-| Income Tax (Payments on Account) (Amendment) Regulations 2008 (GBP 500 to GBP 1,000) | https://www.legislation.gov.uk/uksi/2008/838/made | 2026-10-26 |
-| Finance Act 2009 Sch. 56 (late payment penalties) | https://www.legislation.gov.uk/ukpga/2009/10/schedule/56 | 2026-10-24 |
-| GOV.UK, Understand your Self Assessment bill: payments on account | https://www.gov.uk/understand-self-assessment-bill/payments-on-account | 2026-10-26 |
-| HMRC Self Assessment Manual SAM121665 (Class 2 not in payments on account) | https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam121665 | 2026-10-26 |
-| GOV.UK, Pay your Self Assessment bill through your tax code | https://www.gov.uk/pay-self-assessment-tax-bill/through-your-tax-code | 2026-10-26 |
-| HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
-| Bank of England, Bank Rate | https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate | 2026-10-24 |
-| GOV.UK, Self Assessment penalties | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-10-24 |
-| GOV.UK, Penalties for Making Tax Digital for Income Tax | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-10-26 |
-| GOV.UK, Send quarterly updates (MTD for Income Tax) | https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates | 2026-10-27 |
-| Social Security (Contributions) (Rates, Limits and Thresholds Amendments ...) Regulations 2026, SI 2026/231 (Class 2 GBP 3.50 to GBP 3.65) | https://www.legislation.gov.uk/uksi/2026/231/made | 2026-10-24 |
-| GOV.UK, Find out if and when you need to use Making Tax Digital for Income Tax | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax | 2026-10-24 |
+Completed SA100 / SA103 / National Insurance proof reads are reused only for identical operative claims. The following lists the exact parts read or reused; a successful link request alone is not a source read.
 
-Not yet confirmed: the Bank Rate after the 5 November 2026 decision; the online payment plan limit for Self Assessment debts (not stated here); and the treatment of foreign tax credit relief in the s. 59A assessed amount (stated from the structure of s. 59A(1), not from an HMRC page). Carried from v3.2: the bank statement pattern library (now the 31 January note under Deadlines) and the refusal list (now the out of scope lines under Who this applies to).
+| Official source and part read | URL | Read / applicability |
+|---|---|---|
+| Read section 59A of TMA 1970, full operative section: tests, dates, reductions, amendments, penalties, coding, directions | https://www.legislation.gov.uk/ukpga/1970/9/section/59A/data.xml | 2026-11-26 |
+| Read section 59B(1)-(8) of TMA 1970, balance, credits and notice/payment exceptions | https://www.legislation.gov.uk/ukpga/1970/9/section/59B/data.xml | 2026-11-26 |
+| Read section 86(1)-(9) of TMA 1970, interest and reduction/repayment conditions | https://www.legislation.gov.uk/ukpga/1970/9/section/86/data.xml | 2026-11-26 |
+| Read part: SI 1996/1654 regs 3/4 original text, read together with amending instruments below | https://www.legislation.gov.uk/uksi/1996/1654/regulation/3/data.xml ; https://www.legislation.gov.uk/uksi/1996/1654/regulation/4/data.xml | 2026-11-26; original text alone is not the current threshold |
+| Read part: SI 2008/838 regs 1/2 and SI 1997/2491 regs 1/2, commencement and threshold/proportion amendments | https://www.legislation.gov.uk/uksi/2008/838/made/data.xml ; https://www.legislation.gov.uk/uksi/1997/2491/made/data.xml | 2026-11-26 |
+| Read part: HMRC POA guidance, all calculation, first-year, reduction and interest sections | https://www.gov.uk/understand-self-assessment-bill/payments-on-account | SA100-41 completed read 2026-11-26 reused; operative guidance also read here |
+| Read part: SAM1100 calculation exclusions, automatic setup and odd penny; SAM1040 validity/reasons and incorrect claims | https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam1100 ; https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam1040 | 2026-11-26 |
+| Read part: SAM121665 current opening notice and accounting, election/payment and coding sections; no obsolete mandatory-Class-2 rule used | https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam121665 | 2026-11-26 |
+| Read part: PAYE coding: eligibility, exclusions and opt-out | https://www.gov.uk/pay-self-assessment-tax-bill/through-your-tax-code | 2026-11-26 |
+| Read part: Payment overview: payment methods, lead times and weekend rule | https://www.gov.uk/pay-self-assessment-tax-bill | 2026-11-26 |
+| Read part: Refunds: claim/45-day offset; SAM111010 qualifying repayment interest and dates; DMBM210160 allocation order and parameter | https://www.gov.uk/self-assessment-tax-returns/claiming-a-tax-refund ; https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam111010 ; https://www.gov.uk/hmrc-internal-manuals/debt-management-and-banking/dmbm210160 | 2026-11-26 |
+| Read part: HMRC ordinary income-tax interest basis/current and historical rates, not corporation-tax instalment categories | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | Completed UKS131 / NI42 / SA100-47 read 2026-11-22 reused for 8% update; operative periods confirmed 2026-11-26; repayment dependency read 2026-11-26 |
+| Read part: Ordinary annual deadlines and current SA late-payment penalties | https://www.gov.uk/self-assessment-tax-returns/deadlines ; https://www.gov.uk/self-assessment-tax-returns/penalties | Completed SA100-38/46 and NI53 reads 2026-11-26 reused |
+| Read part: MTD scope: relevant sources, phased thresholds and exemption route | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax | 2026-11-26 |
+| Read part: MTD quarterly summaries, cumulative standard periods and deadlines | https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates | 2026-11-26 |
+| Read part: MTD penalties: commencement, POA exclusion, payment-plan and regime conditions; detailed charge computations referred | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-11-26 |
+| Read part: Marriage Allowance transferor allowance / recipient reduction, no reversed tax effect | https://www.gov.uk/marriage-allowance ; https://www.legislation.gov.uk/ukpga/2007/3/section/55B/data.xml | Completed SA100-55 read 2026-11-26 reused |
+| Read part: Original case voluntary Class 2 rates: 2025-26 GBP 3.50, 2026-27 GBP 3.65; eligibility not inferred | https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions | Completed NI23/53 reads 2026-11-26 reused |
+
+Not yet confirmed: no unresolved claim is offered as usable guidance. The specialist matters identified above, actual HMRC interest day counts and any future rate periods require partner-accountant confirmation.
