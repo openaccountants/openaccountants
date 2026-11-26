@@ -13,11 +13,12 @@ tier: 1
 reviewed_by: Michael Cutajar
 reviewed_on: 2026-11-15
 domain: income-tax
+type: computation
 ---
 
 # Malta personal income tax: rates, residence, final taxes, provisional tax and filing
 
-## Scope ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+## Scope
 
 This skill covers Malta income tax for **individuals**: employees, the self-employed, part-time workers, landlords and people selling Maltese property. Malta taxes a calendar **basis year**, and the tax is charged for the following **year of assessment**.
 
@@ -165,12 +166,12 @@ The tax is ordinarily charged on the **transfer value**, with the special twelve
 
 | Transfer (made on or after 1 January 2015) | Rate | Provision |
 | --- | --- | --- |
-| Ordinary post 2015 rule, subject to other 5A(5) rates and historical project/SDA promise-notice provisos | 8% of transfer value | 5A(5)(a), proviso |
-| Property acquired before 1 January 2004 (no promise of sale notified before 17 November 2014) | 10% of transfer value | 5A(5)(f) |
-| Not part of a project, sold within five years of acquisition, subject to related-owner/development-work conditions below | 5% of transfer value | 5A(5)(e) |
-| An individual (or two co-owners) declared in the deed of acquisition that it was bought as their sole ordinary residence; the transfer is within three years of acquisition; and at the transfer they own no other residential property (declared to the notary) | 2% of transfer value | 5A(5)(g) |
-| Inherited after 24 November 1992 (except the judicial-auction limb below), or qualifying donation older than 5 years |12% of positive transfer-value excess over statutory acquisition value; election-out and donation/project exceptions require analysis | 5A(5)(b) |
-| Inherited before 25 November 1992, or inherited on/after then and transferred by judicial auction |7% of transfer value | 5A(5)(c) |
+| Ordinary post 2015 rule, subject to other 5A(5) rates and historical project/SDA promise-notice provisos | 8% of transfer value | 5A(5)(a), proviso  [Income Tax Act](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c) |
+| Property acquired before 1 January 2004 (no promise of sale notified before 17 November 2014) | 10% of transfer value | 5A(5)(f)  [Income Tax Act](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c) |
+| Not part of a project, sold within five years of acquisition, subject to related-owner/development-work conditions below | 5% of transfer value | 5A(5)(e)  [Income Tax Act](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c) |
+| An individual (or two co-owners) declared in the deed of acquisition that it was bought as their sole ordinary residence; the transfer is within three years of acquisition; and at the transfer they own no other residential property (declared to the notary) | 2% of transfer value | 5A(5)(g)  [Income Tax Act](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c) |
+| Inherited after 24 November 1992 (except the judicial-auction limb below), or qualifying donation older than 5 years |12% of positive transfer-value excess over statutory acquisition value; election-out and donation/project exceptions require analysis | 5A(5)(b)  [Income Tax Act](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c) |
+| Inherited before 25 November 1992, or inherited on/after then and transferred by judicial auction |7% of transfer value | 5A(5)(c)  [Income Tax Act](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c) |
 
 The 5% rate is lost in two cases. The first is where a related person owned the property as part of a project in the previous five years. The second is where works needing a development permit were done in those five years, subject to the acquisition-deed sole-ordinary-residence intention exception, and the exclusion of works permitted by an order without an application. Test the transferor and related persons, not just works by the current owner; acquisition-history deeming rules also apply. Special donation/old-project/SDA/election-out cases: Check this point with one of our partner accountants.
 
@@ -261,7 +262,7 @@ Self-occupied persons pay Class 2 contributions under the Social Security Act, C
 | Own home sold 13 months after moving out |Ordinary 12-month vacating condition not met; no automatic 8%/5%/10% selection. Check this point with one of our partner accountants |
 | Provisional tax paid on 1 May | Late: 0.6% additional tax for that month |
 
-## Worked cases ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+## Worked cases
 
 The amounts in these cases are invented. The rates come from the sources linked in the sections above.
 
@@ -402,19 +403,21 @@ Whole-Guide read 26 November 2026; completed same-day research reused only where
 
 | Source and passage actually read | URL | Read on |
 |---|---|---|
-| Cap 123 arts 2,4/13 residence,14/26 deductions,49–50 elections,56 all 2026 tables/minimum,90A; completed rental/property operative reads reused after applicability checks | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c|2026-11-26|
-| Act III 2026 arts 13(2)(b)/19: YA 2027 commencement and tables, including parent-one-child 10270 subtraction |https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430|2026-11-26|
-| Act IX 2025 arts 10(2)(a),15–16: YA 2026 tables and FSS endangered-tax exclusion |https://legislation.mt/getpdf/6811d803cf7b7f36a4f360f5|2026-11-26|
-| MTCA 2026 amended table including conflicting 10275 parent deduction; law 10270 retained, discrepancy disclosed |https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5|2026-11-26|
-| Cap 372 arts 12/12A/13,31(2A),42/44 and 19 records; completed same-day payment/source reads reused |https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b|2026-11-26|
-| Provisional Tax Rules whole 8 pages, completed#2550 research applied |https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4|2026-11-26|
-| Statutory Dates Rules 2,4–5, completed personal-tax research applied |https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2|2026-11-26|
-| MTCA actual YA 2026 individual filing/payment extension operative body |https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline|2026-11-26|
-| Part-Time Work Rules 2–10 whole; MTCA FAQ confirms caps/excess/TA22 service, not substitutes for statutory conditions |https://legislation.mt/eli/sl/123.39/eng/pdf;https://mtca.gov.mt/personal-tax/individual/faqs/faqs1|2026-11-26|
-| Rental deduction rule 3; rental rebate rules 3–10; completed#2559 MTCA manual confirms current 4(1)(e)application |https://legislation.mt/eli/sl/123.26/eng/pdf;https://legislation.mt/eli/sl/123.201/eng/pdf;https://mtca.gov.mt/docs/default-source/documents/manual-on-taxation-of-rental-incomee26fd6c3-a420-4cb8-b7c4-0b7e1137b7de.pdf|2026-11-26|
-| Wear and Tear Rules whole 3 pages and Deductions Rules whole 6 pages, completed planning/bookkeeping reads applied |https://legislation.mt/eli/sl/123.1/eng/pdf;https://legislation.mt/getpdf/66f65d8f3b56613c3cae68d9|2026-11-26|
-| FSS Rules 6–7,11,21–22,Schedule B year-end data and method conditions; annual statement periods actual read |https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3|2026-11-26|
-| LN 20/2026 rules 1(2),12 transition; no automatic legacy-benefit cancellation claim |https://legislation.mt/eli/ln/2026/20/eng/pdf|2026-11-26|
-| Cap 318 completed#2545 liability/category/concurrent-work read applied; actual amounts routed to SSC Guide |https://legislation.mt/eli/cap/318/eng/pdf|2026-11-26|
+| Read Cap 123 arts 2,4/13 residence,14/26 deductions,49–50 elections,56 all 2026 tables/minimum,90A; completed rental/property operative reads reused after applicability checks | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c|2026-11-26|
+| Read Act III 2026 arts 13(2)(b)/19: YA 2027 commencement and tables, including parent-one-child 10270 subtraction |https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430|2026-11-26|
+| Read Act IX 2025 arts 10(2)(a),15–16: YA 2026 tables and FSS endangered-tax exclusion |https://legislation.mt/getpdf/6811d803cf7b7f36a4f360f5|2026-11-26|
+| Read MTCA 2026 amended table including conflicting 10275 parent deduction; law 10270 retained, discrepancy disclosed |https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5|2026-11-26|
+| Read Cap 372 arts 12/12A/13,31(2A),42/44 and 19 records; completed same-day payment/source reads reused |https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b|2026-11-26|
+| Read Provisional Tax Rules whole 8 pages, completed same-day research applied |https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4|2026-11-26|
+| Read Statutory Dates Rules 2,4–5, completed personal-tax research applied |https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2|2026-11-26|
+| Read MTCA actual YA 2026 individual filing/payment extension operative body |https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline|2026-11-26|
+| Read Part-Time Work Rules2–10whole | https://legislation.mt/eli/sl/123.39/eng/pdf |2026-11-26|
+| Read MTCA part-time FAQ operative body: caps, excess and spouse amounts; not a substitute for statutory eligibility |https://mtca.gov.mt/personal-tax/individual/faqs/faqs1|2026-11-26|
+| Read rental deduction rule3 and rental rebate rules3–10, completed same-day rental research applicability confirmed |https://legislation.mt/eli/sl/123.26/eng/pdf ; https://legislation.mt/eli/sl/123.201/eng/pdf|2026-11-26|
+| Read MTCA rental manual relevant tax content, confirming current4(1)(e)deduction application; completed same-day research applied |https://mtca.gov.mt/docs/default-source/documents/manual-on-taxation-of-rental-incomee26fd6c3-a420-4cb8-b7c4-0b7e1137b7de.pdf|2026-11-26|
+| Read Wear and Tear Rules whole 3 pages and Deductions Rules whole 6 pages, completed planning/bookkeeping reads applied |https://legislation.mt/eli/sl/123.1/eng/pdf;https://legislation.mt/getpdf/66f65d8f3b56613c3cae68d9|2026-11-26|
+| Read FSS Rules 6–7,11,21–22,Schedule B year-end data and method conditions; annual statement periods actual read |https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3|2026-11-26|
+| Read LN 20/2026 rules 1(2),12 transition; no automatic legacy-benefit cancellation claim |https://legislation.mt/eli/ln/2026/20/eng/pdf|2026-11-26|
+| Read Cap 318 completed same-day liability/category/concurrent-work read applied; actual amounts routed to SSC Guide |https://legislation.mt/eli/cap/318/eng/pdf|2026-11-26|
 
 Not yet confirmed: Class 2 deductibility, entertainment cases, specific historical sole-custody claims, source/residence disputes, specialist rental/property/election/allowance/assessment facts and future 2027 extensions are non-usable referrals above. Check this point with one of our partner accountants.
