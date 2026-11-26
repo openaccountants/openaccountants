@@ -6,8 +6,8 @@ category: international
 tier: 2
 tax_year: 2026
 tax_year_notes: "2026-27 imputation year (1 April 2026 to 31 March 2027) for the rates and rules; form mapping is IR4J 2026 for the 2025-2026 filing cycle (1 April 2025 to 31 March 2026), because IRD has not published a 2027 IR4J"
-last_updated: 2026-11-14
-version: 0.3
+last_updated: 2026-11-26
+version: 0.4
 domain: tax
 type: computation
 depends_on:
@@ -18,7 +18,7 @@ depends_on:
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# New Zealand company ICA and IR4J v0.3
+# New Zealand company ICA and IR4J v0.4
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 Written by Ryan Duguid; conformed to the OpenAccountants skill standard on 14 November 2026.
@@ -49,7 +49,7 @@ The selected Income Tax Act consolidation is dated **4 September 2026** and Tax 
 
 **Years covered.**
 
-- **2025-26 (IR4J 2026):** 1 April 2025 to 31 March 2026. A debit closing balance is further income tax payable by 20 June 2026, and imputation penalty tax of 10% of the debit closing balance is also payable by that date ([IR4JG 2026][IR4JG2026], questions 9 and 10).
+- **2025-26 (IR4J 2026):** 1 April 2025 to 31 March 2026. An ordinary closing debit gives rise to further income tax (FIT), subject to the statutory exclusions and reductions. Imputation penalty tax (IPT) is 10% of the qualifying FIT or imputation additional tax. For a year-end debit the statutory payment date for FIT and IPT is 20 June 2026, subject to the payment timing rules below. [Income Tax Act s OB 65][OB65], [s OB 67][OB67], [Tax Administration Act s 140B](https://www.legislation.govt.nz/act/public/1994/166/en/latest/sections/DLM356183/), [s 142E](https://www.legislation.govt.nz/act/public/1994/166/en/latest/sections/DLM356676/).
 - **2026-27:** 1 April 2026 to 31 March 2027. The same rules give further income tax and imputation penalty tax by 20 June 2027 (derived; 20 June 2027 is a Sunday, so the next business day applies). No 2027 IR4J or guide is published; do not map a 2026-27 result to IR4J 2026 boxes.
 
 
@@ -57,7 +57,7 @@ The selected Income Tax Act consolidation is dated **4 September 2026** and Tax 
 
 Get these facts before reconciling; each one changes the result.
 
-- Is the company a New Zealand resident company that must keep an ICA? IRD lists bodies that do not file imputation returns: non-resident companies, LTCs, trustee companies (but not group investment funds with Category A income), companies whose constitution prohibits distributions, fully exempt companies, local authorities, Crown research institutes, non-active companies, Maori authorities and multi-rate PIEs ([IR4JG 2026][IR4JG2026], p 4).
+- Is the company a New Zealand resident company that must keep an ICA? IRD lists bodies that do not file imputation returns: non-resident companies, LTCs, trustee companies (but not group investment funds with Category A income), companies whose constitution prohibits distributions, fully exempt companies, local authorities, Crown research institutes, non-active companies, Maori authorities and multi-rate PIEs ([IR4JG 2026][IR4JG2026], p 3).
 - Which ICA year: 2025-26 (IR4J 2026) or 2026-27? What was the signed closing balance on the last filed return?
 - Every credit and debit event in the year, with its legal date: tax paid, refunds, RWT, dividends paid with imputation credits attached, transfers.
 - The shareholders and their voting (and, where needed, market-value) interests for the whole period of each credit lot.
@@ -193,17 +193,17 @@ This is a 2-page form readback, not an implemented filing specification. Zero-si
 
 | Item | Value and condition | Source |
 | --- | --- | --- |
-| Ordinary continuity | At least 66% aggregate minimum voting interests throughout the credit period, plus at least 66% minimum market-value interests where required (OA 8, YC 2, YC 3); the 66% test does not apply to qualifying companies except in the year they cease to qualify | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518664/ ; https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4jg/ir4jg.pdf?modified=20260331224857 |
+| Ordinary continuity | At least 66% aggregate minimum voting interests throughout the credit period, plus at least 66% minimum market-value interests where required (OA 8, YC 2, YC 3). For a qualifying company that ceases to qualify under HA 11(1), make the HA 18 adjustment and apply continuity requirements from the day its qualifying status ends. | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518664/ ; https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1517176/ |
 | Annual ICA return deadline | TAA s 69 generally links it to the last date permitted under TAA s 37 for the income return; IRD now takes the imputation return on the IR4 company return. Establish the actual extension and route | https://www.legislation.govt.nz/act/public/1994/166/en/latest/ ; https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/imputation-for-companies/how-imputation-credits-work/file-an-annual-imputation-return-ir4j |
-| Australian (trans-Tasman) ICA company, 2026 IR4J | Due 31 July 2026; a $250 penalty may be charged where the return is not completed on time; only fields 1 to 10A are completed | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4jg/ir4jg.pdf?modified=20260331224857 |
+| Australian (trans-Tasman) ICA company, 2026 IR4J | 31 July 2026 applies where the company has no income return filing requirement for the tax year. The ordinary s 69(2)(b) deadline applies otherwise. Complete fields 1 to 10A for the trans-Tasman IR4J. The $250 late filing penalty under s 139A depends on the statutory notices, including a warning at least 30 days before imposition. | https://www.legislation.govt.nz/act/public/1994/166/en/latest/sections/DLM351858/ ; https://www.legislation.govt.nz/act/public/1994/166/en/latest/sections/DLM356114/ ; https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4jg/ir4jg.pdf?modified=20260331224857 |
 | Consolidated-member exception | TAA s 69(3): membership and nil individual ICA at all times during the year; nil closing alone is insufficient | https://www.legislation.govt.nz/act/public/1994/166/en/latest/ |
 | Voluntary interim return | TAA s 70(3): period begins on the tax-year first day and ends no more than 7 days before furnishing | same |
 | Cessation return | TAA s 70(2): within 2 calendar months after the last day of ICA status, for the statutory stub period | same |
 | Specified retrospective pooling adjustment | TAA s 70(2B): revised return within 2 calendar months of the refund or transfer if its balance trigger is met | same |
 | Year-end further income tax (FIT), 2025-26 | Debit closing balance paid by 20 June 2026, subject to the OB 65 exclusion and other applicable provisions (20 June 2026 is a Saturday: next business day, derived) | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4jg/ir4jg.pdf?modified=20260331224857 ; https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518870/ |
 | Year-end FIT, 2026-27 | 20 June 2027 (derived: same rule one year on; a Sunday, so the next business day) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518870/ |
-| Imputation penalty tax (IPT) | 10% of the debit closing balance (qualifying FIT or additional tax under TAA s 140B), payable by the same date; TAA s 142E supplies payment treatment | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4jg/ir4jg.pdf?modified=20260331224857 ; https://www.legislation.govt.nz/act/public/1994/166/en/latest/ |
-| Late payment penalties on unpaid FIT and IPT | 1% the day after the due date, a further 4% if tax (including penalties) is unpaid 7 days after; interest and late payment penalties are not charged on $100 or less | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4jg/ir4jg.pdf?modified=20260331224857 |
+| Imputation penalty tax (IPT) | 10% of qualifying FIT or imputation additional tax under TAA s 140B. For the ordinary year-end debit, apply the 20 June payment date under TAA s 142E, subject to payment timing rules. | https://www.legislation.govt.nz/act/public/1994/166/en/latest/sections/DLM356183/ ; https://www.legislation.govt.nz/act/public/1994/166/en/latest/sections/DLM356676/ |
+| Initial late payment penalties on unpaid FIT and IPT | Check the s 139B(1) eligibility, including prior payment history and notices. If liable, 1% is added on the day after the default date and 4% on the amount to pay at the end of the sixth day after the first penalty, subject to statutory exceptions. Late payment penalties and Part 7 interest do not apply on an amount of tax outstanding after the due date of $100 or less. | https://www.legislation.govt.nz/act/public/1994/166/en/latest/sections/DLM356138/ ; https://www.legislation.govt.nz/act/public/1994/166/en/latest/sections/DLM358771/ |
 | Record retention | TAA s 22(2)(k): at least 7 years after the relevant year end, with a possible notified extension of up to 3 further years | https://www.legislation.govt.nz/act/public/1994/166/en/latest/ |
 
 ## Worked cases
