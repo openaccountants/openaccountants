@@ -15,14 +15,14 @@ type: situation-rules
 tax_year: 2026
 tax_year_notes: "2026-27"
 tier: 2
-last_updated: 2026-11-11
-version: 0.1
+last_updated: 2026-11-26
+version: 0.2
 license: FSL-1.1-ALv2
 depends_on:
   - workflow-base
 ---
 
-# Australian Managed Funds and AMITs: Member Taxation v0.1
+# Australian Managed Funds and AMITs: Member Taxation v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -47,7 +47,7 @@ This guide turns an AMIT member annual (AMMA) statement into member-level workpa
 - The return labels for the year: `au-individual-return`.
 - Trustee-side AMIT work, foreign resident members and withholding, units held as revenue assets and franking credit entitlement opinions (refusals below).
 
-**Period coverage.** Law as at 2 November 2026: ITAA 1997 compilation 268 (in force from 1 October 2026). The Federal Register lists a later compilation from 1 December 2026 that was not yet published when read; recheck before relying on this guide after that date. The figures apply to the 2026-27 income year (1 July 2026 to 30 June 2027).
+**Period coverage.** Law as at 22 November 2026: ITAA 1997 compilation 268 (in force from 1 October 2026). The figures apply to the 2026-27 income year (1 July 2026 to 30 June 2027).
 
 ## Ask the client first
 
@@ -83,11 +83,11 @@ Every figure below was read on 2 November 2026 in ITAA 1997 compilation 268 unle
 
 ### Step 1: Confirm the regime for the year
 
-Apply this guide only where the fund gives an AMMA statement for the income year. The statement replaces the standard distribution statement other investment trusts give (ATO, Attributing amounts to members). An ETF or managed fund name, or a distribution receipt, does not prove AMIT status. If there is no AMMA statement, stop and route to `au-trust-distributions`; never apply the AMIT cost base rules by analogy.
+Confirm the fund's AMIT status for the income year from its AMMA statement or the trustee. An ETF or managed fund name, or a distribution receipt, does not establish AMIT status. If the statement is missing, ask the trustee for it or for confirmation that no statement is required because all determined member components and all interests' AMIT cost base net amounts are nil (s 276-455(3)). Return Needs Input if the fund's status or required figures remain unclear. Use `au-trust-distributions` for a fund confirmed to be outside the AMIT regime.
 
 ### Step 2: Control the statement versions
 
-List each AMMA statement with its date. Use the latest statement for the year and record the superseded figures, so each component is used once. A replacement received after lodgment goes to `au-amending-individual-income-tax-return-period`.
+List each statement with its date. Use the latest valid AMMA statement for the year and record the superseded figures, so each component is used once. The statement must be given within 4 years of year-end to qualify (s 276-460(3)). Refer any discrepancy that may require a member choice under s 276-205. Review a replacement received after lodgment through `au-amending-individual-income-tax-return-period`.
 
 ### Step 3: Schedule every component by character
 
@@ -111,9 +111,9 @@ For each parcel:
 
 1. Start from the opening cost base and reduced cost base.
 2. Take the cost base net amount for the year from the AMMA statement, which states the trustee's estimate (s 276-460(2)(b)). Allocate it to parcels on the per-unit basis the statement uses.
-3. Reconcile the statement's amount to the statutory parts where the statement shows them. The reduction amount is money and the market value of property the member started to have a right to receive in the year, plus tax offsets attributed under s 276-80 (s 104-107D(1)). The increase amount is attributed assessable and non-assessable non-exempt amounts (disregarding the AMIT's net capital gain), plus capital-gain components taken into account under s 276-80 (s 104-107E). The net amount is the difference (s 104-107C).
+3. Reconcile the statement's amount to the statutory parts where the statement shows them. The reduction includes money and the market value of property the member first had an indefeasible right, or a right reasonably likely to survive, to receive during the year, plus tax offsets under s 276-80. Include amounts reasonably attributable to the unit and exclude proceeds from A1, C2, E1, E2, E6 or E7 where the event sets the timing of the adjustment (s 104-107D). The increase includes assessable and non-assessable non-exempt amounts reasonably attributable to the unit, including amounts outside s 276-80 after any s 276-100 reduction. Disregard the AMIT's net capital gain in that part and add the determined capital-gain components taken into account under s 276-80 (s 104-107E). The net amount is the difference (s 104-107C).
 4. Apply an excess as a decrease and a shortfall as an increase, to both the cost base and the reduced cost base (s 104-107B).
-5. If the excess is larger than the cost base, reduce both to nil and record a CGT event E10 gain (s 104-107A). Do not stop at nil without recording the gain.
+5. If the excess is larger than the cost base, reduce both to nil and record the CGT event E10 gain. Check whether the gain is disregarded because the unit was acquired before 20 September 1985 (s 104-107A).
 6. For units sold during the year, the adjustment applies just before the sale (s 104-107B(4)(b)); include it in the disposal workings for `au-capital-gains`.
 
 ### Permitted factual defaults
@@ -182,7 +182,7 @@ expected:
   discounted_gain: 125
 ```
 
-The cost base and reduced cost base fall to nil and the member makes a $250 capital gain from CGT event E10, at the time of the reduction, just before the end of the 2026-27 income year (ss 104-107A(2)-(3), 104-107B(2)(a), (4)(a)). The units were held for more than 12 months and E10 is not excluded from the discount, so the individual's discount for an event before 1 July 2027 gives $125 (ss 115-25, 115-100(aa)). Next year's decreases start from nil and produce further E10 gains (s 104-107A(1)(b)(ii)).
+The cost base and reduced cost base fall to nil and the member makes a $250 capital gain from CGT event E10, at the time of the reduction, just before the end of the 2026-27 income year (ss 104-107A(2)-(3), 104-107B(2)(a), (4)(a)). The units were held for more than 12 months and E10 is eligible for the discount on these facts, so the individual's discount for an event before 1 July 2027 gives $125 (ss 115-25, 115-100(aa)). Carry the nil cost base forward. Recalculate each later year's net amount and compare it with the relevant cost base to test for a further E10 gain.
 
 ### Case 3: Discount capital gain gross-up and the member's losses (2026-27)
 
@@ -211,7 +211,7 @@ expected:
   net_capital_gain: 225
 ```
 
-The $300 component is treated as $600 (s 276-85(4)). Losses go first against the gain that does not qualify for the discount, the ordering `au-capital-gains` sets out, and only then is the individual's discount applied. Skipping the gross-up would leave $150 of discount gain after losses and a $75 net capital gain, understating it by $150.
+The $300 component is treated as $600 (s 276-85(4)). For 2026-27 the member can choose which gains to reduce first under s 102-5. This case uses $100 of losses against the gain ineligible for the discount and $150 against the discount gain, then applies the individual's discount to the remaining $450. Skipping the gross-up would leave $150 of discount gain after losses and a $75 net capital gain, understating it by $150.
 
 ### Case 4: Attribution above cash: a cost base increase
 
@@ -235,14 +235,14 @@ Stop the affected calculation where a fact, condition or source in this guide is
 | R-AU-AMIT-2 | A foreign resident member, or MIT or non-resident withholding on the member's distributions | 'Foreign resident members are taxed through withholding rules this guide does not apply. I have recorded the statement components; refer to a qualified reviewer and au-foreign-income.' |
 | R-AU-AMIT-3 | Units held as trading stock or revenue assets (s 104-107G) | 'Revenue-account holdings adjust the cost of the units under separate rules. Refer the treatment to a qualified reviewer.' |
 | R-AU-AMIT-4 | A question whether the member is entitled to franking credits (holding period, qualified person or a Commissioner determination under s 276-90) | 'Franking credit entitlement is outside this guide. I have recorded the credits as attributed; a qualified reviewer must confirm entitlement.' |
-| R-AU-AMIT-5 | No AMMA statement, or a fund whose AMIT status for the year is unclear | 'Without an AMMA statement I cannot apply the AMIT rules. Provide the fund's statement for the year or route to au-trust-distributions.' |
+| R-AU-AMIT-5 | Missing required AMMA statement, or a fund whose AMIT status for the year is unclear | 'Provide the fund statement or trustee confirmation of the fund status and whether a statement is required for the year.' |
 | R-AU-AMIT-6 | A disposal, deemed sale or cost base question for a CGT event on or after 1 July 2027 | 'The CGT rules change for events from 1 July 2027 and a Bill would change them again for AMITs. Route to au-capital-gains Section 9.' |
 
 **Reviewer attention thresholds.** These are this guide's review settings, not statutory figures. Flag for reviewer attention regardless of confidence:
 
 | Trigger | Why |
 | --- | --- |
-| Any CGT event E10 gain | The cost base is exhausted and every later decrease is a gain |
+| Any CGT event E10 gain | The cost base is exhausted. Test each later year's net amount against the relevant cost base. |
 | A cost base decrease above 10% of a parcel's opening cost base in one year | Large returns of capital need the statement and registry checked |
 | A cash-to-attribution difference above $5,000 for one fund | The bridge must explain it before lodgment |
 | Any replacement statement received after lodgment | An amendment may be required |
@@ -250,7 +250,7 @@ Stop the affected calculation where a fact, condition or source in this guide is
 
 ## Completion checklist
 
-- [ ] Each fund's AMIT status for the year rests on an AMMA statement; non-AMIT funds were routed.
+- [ ] Each fund's AMIT status for the year is confirmed, and any nil-statement exception is documented.
 - [ ] The latest statement version was used and superseded figures were recorded once.
 - [ ] Every component was scheduled by character and mapped to the year's return labels through `au-individual-return`.
 - [ ] Discount capital gain components (the trustee's discounted amounts, not any grossed-up line) were doubled before the member's own losses and discount.
@@ -260,6 +260,7 @@ Stop the affected calculation where a fact, condition or source in this guide is
 - [ ] Every figure used matches the key figures table and its source.
 
 Change log: v0.1 (2 November 2026), first draft from Division 276 and ss 104-107A to 104-107G of ITAA 1997 compilation 268.
+v0.2 (26 November 2026), clarify statement eligibility, annual cost base adjustments and capital loss allocation.
 
 ## Sources
 
@@ -268,10 +269,12 @@ All read on 2 November 2026; figures and dates rechecked against the same source
 | Source | URL | Read on |
 | --- | --- | --- |
 | ITAA 1997, compilation 268 (from 1 October 2026), Volume 3: ss 104-107A to 104-107G (AMIT cost base adjustments and CGT event E10), 115-25, 115-100 | https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html | 2 November 2026 |
-| ITAA 1997, compilation 268, Volume 6: ss 276-10, 276-80, 276-85, 276-455, 276-460 | https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_6/document_6.html | 2 November 2026 |
+| ITAA 1997, compilation 268, Volume 6: ss 276-10, 276-80, 276-85, 276-100, 276-205, 276-455, 276-460 | https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/pdf/6 | 22 November 2026 |
+| ITAA 1997, April 2026 compilation, s 102-5: method statement applying to 2026-27 | https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_3/document_3.html | 22 November 2026 |
+| Treasury Laws Amendment (Tax Reform No. 1) Act 2026, Schedule 1 item 82: start of the replacement s 102-5 method | https://www.legislation.gov.au/C2026A00049/asmade/2026-06-26/text/original/epub/OEBPS/document_1/document_1.html | 22 November 2026 |
 | ATO, Attributing amounts to members (QC82269, last updated 23 July 2025): character retained, attribution can differ from cash, AMMA statement replaces the standard distribution statement, 3-month deadline | https://www.ato.gov.au/businesses-and-organisations/trusts/specific-rules-for-some-trusts/managed-investment-trusts/managed-investment-trusts-overview/attribution-managed-investment-trusts/attribution-method-for-managed-investment-trusts/attributing-amounts-to-members | 2026-11-02 |
 
-Not yet confirmed: the 2026-27 return labels for AMIT components; the member-level treatment of each tax offset type; and any amendment in the ITAA 1997 compilation from 1 December 2026. No accountant has reviewed this draft.
+Not yet confirmed: the 2026-27 return labels for AMIT components and the member-level treatment of each tax offset type. No accountant has reviewed this draft.
 
 Method adapted by its author from the `au-managed-fund-amit` skill in ryanduguid/australian-accounting-skills (commit 3e110da). This guide is licensed under FSL-1.1-ALv2, not the OA Guide License; see LICENSING.md.
 
