@@ -1,10 +1,10 @@
 ---
 name: algeria-income-tax
 description: "Use this skill whenever asked about Algeria personal income tax (IRG - Impôt sur le Revenu Global) for employees and self-employed individuals. Trigger on phrases like 'how much IRG do I pay', 'barème IRG', 'Algeria income tax', 'IFU', 'impôt forfaitaire unique', 'G50', 'G12', 'G12 bis', 'CNAS', 'CASNOS', 'auto-entrepreneur Algérie', 'DZD tax', 'salaire net', 'self-employed tax Algeria', 'déclaration revenu global', or any question about filing or computing income tax for an Algerian employee, sole trader, or micro-operator. Also trigger when preparing or reviewing an IRG payroll computation, an IFU turnover declaration, social contribution (CNAS/CASNOS) calculations, or advising on filing deadlines. This skill covers the IRG progressive scale, schedular/investment rates, the IFU micro regime, CNAS/CASNOS social contributions, the SNMG minimum wage, filing forms and deadlines, and penalties. ALWAYS read this skill before touching any Algerian income tax work."
-version: 0.3
+version: 0.4
 jurisdiction: DZ
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 type: computation
 depends_on:
   - income-tax-workflow-base
@@ -14,7 +14,7 @@ tier: 2
 domain: income-tax
 ---
 
-# Algeria Income Tax (IRG): Employee and Self-Employed v0.3
+# Algeria Income Tax (IRG): Employee and Self-Employed v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -45,7 +45,7 @@ Residents and non-residents earning salary, business, professional, rental or in
 | Occasional teaching, research, invigilation | 10% final | Vacataire work on top of a main job | 2026 | same |
 | Other occasional intellectual work | 15% final | CIDTA art. 104 | 2026 | same |
 | Isolation and residence allowance | Exempt up to 70% of basic salary | Special residence and isolation conditions | 2026 | same |
-| Meals as benefit in kind | Not below 400 DA a meal | Food and lodging in promoted zones stay out of the base | 2026 | same |
+| Meals as benefit in kind | 400 DA a meal in the absence of justification | CIDTA art. 71 as amended by LF 2022 art. 21; food and lodging in promoted zones stay out of the base | 2026 | https://www.joradp.dz/FTP/jo-francais/2021/F2021100.pdf |
 | SNMG minimum wage | 24,000 DA a month, 138.46 DA an hour | 40 hours a week, 173.33 hours a month; Decree 26-01 | 2026 | https://www.joradp.dz/FTP/JO-FRANCAIS/2026/F2026001.pdf |
 
 **Other income and regimes**
