@@ -482,6 +482,8 @@ expected:
 | 外籍个人股息，财政部 税务总局公告 2026 年第 27 号 | https://shanxi.chinatax.gov.cn/son/detail/jc-11405-545-1824111 | 2026-11-27 |
 | 香港安排、住房公积金及行业分类 | https://www.ird.gov.hk/chs/tax/dta_china.htm · https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202305/t20230511_3101518.html · https://tjj.gz.gov.cn/stats_newtjyw/zjtj/tjbz/content/post_8540752.html | 2026-11-27 |
 
+Not yet confirmed: 金税四期的量化预警阈值（如银行流水与收入差异 10%、增值税与企业所得税收入差异 10%），公开的征管改革文件未规定官方触发标准，仅可作内部复核提示；金税四期具体执法规则的推行时间表与预警算法；境外控股架构（香港或 BVI 控股、VIE、ODI 备案）的选择，须按实际股权、业务、准入限制与登记事实个案判断。
+
 **免责声明**
 
 本技能及其输出仅供信息和计算用途，不构成税务、法律或财务建议。OpenAccountants 及其贡献者对因使用本技能产生的任何错误、遗漏或后果不承担责任。所有输出在向中国税务机关（电子税务局）申报或据以行动之前，必须由具备资质的中国税务师（CTA）或注册会计师（CPA）复核签字。
