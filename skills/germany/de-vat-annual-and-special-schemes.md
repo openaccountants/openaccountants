@@ -100,6 +100,22 @@ Monthly filers with the extension pay a special prepayment of one eleventh of th
 
 On the initial application, calculate, declare and pay it at that application deadline. During an existing extension, calculate, declare and pay each year's amount by the statutory deadline for the year's first advance return: 10 February 2026 for a continuing monthly extension from January 2026 (§ 48(1)–(2)). It is credited in the last advance period for which the extension applies, which need not be December (§ 48(4)).
 
+## Penalties and interest
+
+For ordinary annual returns, § 152(1) AO permits a filing surcharge but requires the office to refrain when an excusable delay is credibly shown; representative/agent fault is attributed to the filer. Under § 152(2), a surcharge is mandatory after 14 months (for 2026, after 29 February 2028), or after the date in a valid § 149(4) early call. The mandatory rule does not apply where a § 109 extension is granted, tax is nil/negative, or assessed tax does not exceed assessed prepayments and creditable deductions (§ 152(3)); discretionary treatment may still apply.
+
+For a calendar-year return, each started month costs 0.25% of assessed tax less assessed prepayments and creditable deductions, at least EUR 25; round the final surcharge down to whole euros and cap it at EUR 25,000 (§ 152(5), (10)). If a first request arrives after the legal deadline and the filer could previously assume no return was due, months start only after the request's deadline (§ 152(5) sentence 3). Monthly/quarterly advance returns and annual special-prepayment declarations do not use this formula; duration, frequency and tax amount govern (§ 152(8)). Short-period surcharge calculations: Check this point with one of our partner accountants.
+
+For ordinary overdue declared/assessed tax, § 240 AO charges 1% per started late month on arrears rounded down to a multiple of EUR 50. No late-payment surcharge is levied for lateness up to three days, except payment under § 224(2) no. 1 (cash/payment instruments delivered to the authority); this does not extend the due date. Do not apply this ordinary rule unchanged to special-scheme payments.
+
+Assessment-difference interest, its start/end, rounding and refund limits; administrative fines for payments/invoices/record retention and their mental-state conditions; criminal exposure: Check this point with one of our partner accountants.
+
+### E-invoice transition
+
+Domestic businesses must be able to receive e-invoices from 1 January 2025; an email inbox suffices (BMF FAQ). For 2026 supplies the transition permits paper until 31 December 2026, or a non-structured electronic invoice such as PDF with recipient consent. For 2027 supplies that relief lasts until 31 December 2027 if the issuer's preceding-year total turnover is at most EUR 800,000; qualifying EDI is a separate 2027 electronic-format route requiring recipient consent (§ 27(38)). These are transitional permissions, not a determination of the underlying invoice duty or validity. Detailed formats, exclusions and archiving: Check this point with one of our partner accountants.
+
+## Cross-border points
+
 ### Union OSS (§ 18j)
 
 The following filing rules apply only after eligibility and valid participation have been established. Goods/consumer-service classification, place of supply, the distance-sales/TBE turnover test and election, multiple establishments, excluded goods, platforms, VAT groups, margin schemes (§§ 25, 25a), farmers (§ 24), non-Union OSS (§ 18i) and import IOSS (§ 18k): Check this point with one of our partner accountants. No eligibility or foreign rate is inferred here.
@@ -114,20 +130,6 @@ For the normal advance registration route, notify the BZSt before the quarter fr
 For Q4 2026 the deadline is Sunday 31 January 2027. Friday 29 January 2027 is an earlier operational target to allow timely payment receipt, not a substitute legal deadline. The ordinary annual-return weekend adjustment must not be copied into OSS. Under § 18j(7), for the stated BZSt identification procedure the selectively incorporated AO provisions do not include § 108; the Commission expressly confirms no weekend/holiday shift.
 
 Corrections within three years after the original return's filing deadline are reported in a later OSS return identifying the corrected tax period (§ 18j(4) sentence 5). Repeated failure to meet return/payment or relevant record duties causes exclusion under § 18j(6); do not treat one delay as automatically establishing repetition. Sales actually taxable in another state and declared there through OSS are outside German output VAT; the scheme does not absorb unrelated domestic transactions.
-
-## Penalties and interest
-
-For ordinary annual returns, § 152(1) AO permits a filing surcharge but requires the office to refrain when an excusable delay is credibly shown; representative/agent fault is attributed to the filer. Under § 152(2), a surcharge is mandatory after 14 months (for 2026, after 29 February 2028), or after the date in a valid § 149(4) early call. The mandatory rule does not apply where a § 109 extension is granted, tax is nil/negative, or assessed tax does not exceed assessed prepayments and creditable deductions (§ 152(3)); discretionary treatment may still apply.
-
-For a calendar-year return, each started month costs 0.25% of assessed tax less assessed prepayments and creditable deductions, at least EUR 25; round the final surcharge down to whole euros and cap it at EUR 25,000 (§ 152(5), (10)). If a first request arrives after the legal deadline and the filer could previously assume no return was due, months start only after the request's deadline (§ 152(5) sentence 3). Monthly/quarterly advance returns and annual special-prepayment declarations do not use this formula; duration, frequency and tax amount govern (§ 152(8)). Short-period surcharge calculations: Check this point with one of our partner accountants.
-
-For ordinary overdue declared/assessed tax, § 240 AO charges 1% per started late month on arrears rounded down to a multiple of EUR 50. No late-payment surcharge is levied for lateness up to three days, except payment under § 224(2) no. 1 (cash/payment instruments delivered to the authority); this does not extend the due date. Do not apply this ordinary rule unchanged to special-scheme payments.
-
-Assessment-difference interest, its start/end, rounding and refund limits; administrative fines for payments/invoices/record retention and their mental-state conditions; criminal exposure: Check this point with one of our partner accountants.
-
-### E-invoice transition
-
-Domestic businesses must be able to receive e-invoices from 1 January 2025; an email inbox suffices (BMF FAQ). For 2026 supplies the transition permits paper until 31 December 2026, or a non-structured electronic invoice such as PDF with recipient consent. For 2027 supplies that relief lasts until 31 December 2027 if the issuer's preceding-year total turnover is at most EUR 800,000; qualifying EDI is a separate 2027 electronic-format route requiring recipient consent (§ 27(38)). These are transitional permissions, not a determination of the underlying invoice duty or validity. Detailed formats, exclusions and archiving: Check this point with one of our partner accountants.
 
 ## Worked examples
 
