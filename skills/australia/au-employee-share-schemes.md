@@ -15,14 +15,14 @@ type: situation-rules
 tax_year: 2026
 tax_year_notes: "2026-27"
 tier: 2
-last_updated: 2026-11-12
-version: 0.1
+last_updated: 2026-11-26
+version: 0.2
 license: FSL-1.1-ALv2
 depends_on:
   - workflow-base
 ---
 
-# Australian Employee Share Schemes (Division 83A) v0.1
+# Australian Employee Share Schemes (Division 83A) v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -95,7 +95,7 @@ Every figure below was read on 2 November 2026 in the source named, with the ful
 | CGT discount holding test | The asset must have been acquired at least 12 months before the CGT event | ITAA 1997 s 115-25(1) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/115-25)) |
 | CGT discount for an individual | 50% for a discount capital gain from a CGT event before 1 July 2027 where ss 115-105 and 115-110 do not apply; later events and other entities: `au-capital-gains` | ITAA 1997 s 115-100(aa) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/115-100)) |
 
-The rate of TFN withholding tax (ESS) is set by the *Income Tax (TFN Withholding Tax (ESS)) Act 2009*, which this guide has not read. Do not state a rate; return Needs Input if the employee's credit for it matters.
+Section 4 of the [Income Tax (TFN Withholding Tax (ESS)) Act 2009](https://www.legislation.gov.au/C2009A00132/2014-06-25/2014-06-25/text/original/pdf) sets the rate at the maximum individual income tax rate plus 2 percentage points, which is 47% in 2026-27. Work out whether there is a liability under TAA Schedule 1 s 14-155, disregarding the start-up and $1,000 reductions as required by s 14-155(2). Verify the amount paid before including a credit.
 
 ### Step 1: Build one event history per grant
 
@@ -117,7 +117,7 @@ Each condition is tested at the time the statute names (usually acquisition). Ev
 
 ### Step 4: Compute the inclusion
 
-- **Upfront:** the discount, which is market value less the consideration paid, is assessable in the year of acquisition (s 83A-25(1)), less any s 83A-35 reduction. Market value means the amount in the regulations where they specify one (s 83A-315).
+- **Upfront:** the discount, which is market value less the consideration paid, is assessable in the year of acquisition (s 83A-25(1)), less any applicable reduction. For relevant unlisted rights, [the valuation regulations](https://www.legislation.gov.au/F2021L00206/2026-06-27/2026-06-27/text/original/epub/OEBPS/document_1/document_1.html) allow the individual to choose market value or the prescribed method. Check whether the chosen value applies under s 83A-315.
 - **Deferred:** at the deferred taxing point, include the market value of the interest at that time less its cost base (s 83A-110(1)).
 - **Foreign employment:** the part of either amount that relates to employment outside Australia is treated as foreign source (ss 83A-25(2), 83A-110(2)). Stop and route under R-AU-ESS-1.
 
@@ -138,11 +138,11 @@ Each condition is tested at the time the statute names (usually acquisition). Ev
 
 ### Step 7: Forfeiture
 
-If an amount was included under Division 83A and the employee later forfeits the interest (or a right lapses or is forfeited unexercised), Division 83A is taken never to have applied, unless the loss resulted from the employee's own choice (other than choosing to cease employment, or letting a right lapse or be cancelled) or from a scheme condition that protects against a fall in market value (s 83A-310). The remedy is an amendment of the earlier assessment: route to `au-amending-individual-income-tax-return-period`.
+If an amount was included under Division 83A and the employee later forfeits the interest (or a right lapses or is forfeited unexercised), Division 83A is taken never to have applied, unless the loss resulted from the employee's own choice (other than choosing to cease employment, or letting a right lapse or be cancelled) or from a scheme condition that protects against a fall in market value (s 83A-310). Prepare an amendment for the original income year. ITAA 1936 s 170(10AA) item 26 permits amendment at any time to give effect to s 83A-310. Assess any lapse or forfeiture separately for CGT using the applicable exemption, actual proceeds and reduced cost base.
 
 ### Step 8: Check the provider's reporting
 
-The provider must give the employee and the Commissioner a statement for each year in which it provides upfront or deferred interests, or in which a deferred taxing point occurs (TAA Sch 1 s 392-5(1)). Reconcile each statement figure to the event register. If the provider did not know of a disposal within 30 days by the statement date, it reports as though the 30-day rule did not apply (s 392-5(6)-(7)); the employee's return still follows s 83A-115(3) or s 83A-120(3), so expect and document that difference. If no TFN or ABN was quoted, check whether TFN withholding tax (ESS) was paid (s 14-155) and route the credit to the return.
+The provider must give the employee and the Commissioner a statement for each year in which it provides upfront or deferred interests, or in which a deferred taxing point occurs (TAA Sch 1 s 392-5(1)). Reconcile each statement figure to the event register. For reporting and TFN withholding tax (ESS), the provider disregards the 30-day rule if it does not know the disposal time at the earlier of giving the employee statement and the statutory deadline for giving it (14 July or any later date allowed by the Commissioner). Use the financial year of the deferred taxing point before the 30-day rule is applied (s 392-5(6)-(7)). The employee's return still uses the applicable 30-day rule. If the employee quoted neither a TFN nor an eligible ABN by year end, check the provider liability under s 14-155 and use evidence of payment for the credit under s 14-170.
 
 ### Permitted factual defaults
 
@@ -234,7 +234,7 @@ expected:
   total_assessed_if_held: 12800
 ```
 
-The provider may report Branch A as a $12,000 taxing point at 15 March 2027 if it did not know of the sale by the statement date (TAA Sch 1 s 392-5(6)). Document the $500 difference in the statement bridge instead of adopting the statement.
+The provider reports Branch A at $12,000 on 15 March 2027 if it did not know the disposal time by the earlier of giving the employee statement and 14 July 2027 (or any later date allowed by the Commissioner). Document the $500 difference in the statement bridge. The employee's ESS inclusion remains $12,500.
 
 ### Case 3: Start-up shares and a later sale (acquired 2025-26, sold 2026-27)
 
@@ -273,11 +273,11 @@ Shares acquired in 2023 under a real-risk-of-forfeiture scheme stay restricted u
 
 ### Case 5: Forfeiture after an upfront inclusion
 
-An employee who held 12% of the company's voting power (so s 83A-45(6) failed and neither deferral nor a concession was available) included a $3,000 discount in 2025-26 on rights. In 2026-27 the rights lapse unexercised because a performance hurdle was not met. The loss was not the employee's choice and the hurdle does not protect against a fall in market value, so Division 83A is taken never to have applied to the rights (s 83A-310(1)). Prepare an amendment request for 2025-26 through `au-amending-individual-income-tax-return-period`; do not claim a deduction or capital loss in 2026-27 for the forfeited rights.
+An employee who held 12% of the company's voting power immediately after acquisition failed s 83A-45(6), so neither deferral nor a concession was available. They included a $3,000 discount in 2025-26 on rights. In 2026-27 the rights lapse unexercised because a performance hurdle was not met. The loss was not the employee's choice and the hurdle does not protect against a fall in market value. Section 83A-310(1) reverses the $3,000 inclusion in 2025-26. Prepare the amendment using ITAA 1936 s 170(10AA) item 26. The lapse does not create a $3,000 deduction or capital loss in 2026-27. The facts give no reduced cost base or proceeds to compute a separate CGT result under s 104-25.
 
 ### Case 6: Foreign service period
 
-An employee granted rights while working in Singapore, who moved to Australia before the deferred taxing point, has an inclusion partly from employment outside Australia (s 83A-110(2)). Stop at R-AU-ESS-1: record the service days in each country and route the apportionment, foreign tax and residence questions to `au-foreign-income` and `au-tax-residency`.
+An employee granted rights while working in Singapore moved to Australia before the deferred taxing point. The common domestic assumptions do not apply to this case. Under s 83A-110(2), the inclusion is foreign-sourced to the extent it relates to the employment outside Australia. Stop at R-AU-ESS-1. Record the service days in each country and refer the apportionment, foreign tax and residence questions to `au-foreign-income` and `au-tax-residency`.
 
 ## When to refuse or refer
 
@@ -316,11 +316,11 @@ Common errors: treating cessation of employment as a taxing point for a deferred
 - [ ] Differences from the ESS statement are explained in the bridge.
 - [ ] Every figure used matches the key figures table and its source.
 
-Change log: v0.1 (2 November 2026), first draft from Division 83A of ITAA 1997 compilation 268 and Divisions 14-C and 392 of TAA Schedule 1, compilation 227.
+Change log: v0.2 (26 November 2026), corrected the provider's 30-day rule cutoff, added the forfeiture amendment power and verified the withholding rate. v0.1 (2 November 2026), first draft.
 
 ## Sources
 
-All read on 2 November 2026; figures and dates rechecked against the same sources on 11 November 2026.
+Original sources read on 2 November 2026 and rechecked on 11 November 2026. Additional sources checked on 23 November 2026 for the law as at 22 November.
 
 | Source | URL | Read on |
 | --- | --- | --- |
@@ -328,6 +328,9 @@ All read on 2 November 2026; figures and dates rechecked against the same source
 | ITAA 1997, compilation 268, Volume 4: s 130-80 | https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_4/document_4.html | 2 November 2026 |
 | TAA 1953, compilation 227 (from 1 October 2026), Volume 1: Sch 1 s 14-155 | https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2 November 2026 |
 | TAA 1953, compilation 227, Volume 3: Sch 1 ss 392-5, 392-10 | https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html | 2 November 2026 |
+| ITAA 1936, s 170(10AA) item 26, ESS forfeiture amendments | https://www.legislation.gov.au/C1936A00027/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_3/document_3.html | 23 November 2026 |
+| Income Tax (TFN Withholding Tax (ESS)) Act 2009, ss 3–5 | https://www.legislation.gov.au/C2009A00132/2014-06-25/2014-06-25/text/original/pdf | 23 November 2026 |
+| Income Tax Assessment (1997 Act) Regulations 2021, s 83A-315.01 | https://www.legislation.gov.au/F2021L00206/2026-06-27/2026-06-27/text/original/epub/OEBPS/document_1/document_1.html | 23 November 2026 |
 | ATO legal database, ITAA 1997 s 83A-115, with history notes on Act No. 8 of 2022 | https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-115 | 2026-11-02 |
 | ATO legal database, ITAA 1997 s 83A-120, with history notes on Act No. 8 of 2022 and repealed s 83A-120(5) | https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-120 | 2026-11-02 |
 | ATO legal database, ITAA 1997 s 83A-35 (cross-check of the compilation text; ss 83A-30, 83A-33, 83A-45 and 83A-105 were cross-checked on the same database) | https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-35 | 2026-11-02 |
@@ -336,7 +339,7 @@ All read on 2 November 2026; figures and dates rechecked against the same source
 | ATO, Concessional schemes (QC47641, last updated 21 December 2015): scheme types and the 30-day rule. Superseded on cessation of employment | https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/employee-share-schemes/employees/types-of-ess/concessional-schemes-concessional-tax-treatment-can-apply | 2026-11-02 |
 | ATO, ESS and capital gains tax (QC47654, last updated 21 December 2015): cost base and acquisition-date resets, start-up examples | https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/employee-share-schemes/employees/ess-and-your-tax/ess-and-capital-gains-tax | 2026-11-02 |
 
-Not yet confirmed: the rate of TFN withholding tax (ESS); the 2026-27 return labels for ESS amounts; the s 83A-315 valuation regulations; the Subdivision 130-B and Division 134 rules for exercised rights beyond the points stated here; and any amendment in the ITAA 1997 compilation from 1 December 2026. No accountant has reviewed this draft.
+Not yet confirmed: the 2026-27 return labels for ESS amounts, the Subdivision 130-B and Division 134 rules for exercised rights beyond the points stated here, and any amendment in the ITAA 1997 compilation from 1 December 2026. No accountant has reviewed this draft.
 
 Method adapted by its author from the `au-employee-share-schemes` skill in ryanduguid/australian-accounting-skills (commit 3e110da). This guide is licensed under FSL-1.1-ALv2, not the OA Guide License; see LICENSING.md.
 
