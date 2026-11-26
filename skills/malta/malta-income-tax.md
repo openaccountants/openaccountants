@@ -401,23 +401,23 @@ Late-return additional tax can be remitted for a reasonable excuse. Insufficient
 
 Whole-Guide read 26 November 2026; completed same-day research reused only where the operative rule and applicability are unchanged. Source copies are tracked separately; no completeness assertion here.
 
-| Source and passage actually read | URL | Read on |
+| Source and passage actually read | URL | Read for on |
 |---|---|---|
-| Read Cap 123 arts 2,4/13 residence,14/26 deductions,49–50 elections,56 all 2026 tables/minimum,90A; completed rental/property operative reads reused after applicability checks | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c|2026-11-26|
-| Read Act III 2026 arts 13(2)(b)/19: YA 2027 commencement and tables, including parent-one-child 10270 subtraction |https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430|2026-11-26|
-| Read Act IX 2025 arts 10(2)(a),15–16: YA 2026 tables and FSS endangered-tax exclusion |https://legislation.mt/getpdf/6811d803cf7b7f36a4f360f5|2026-11-26|
-| Read MTCA 2026 amended table including conflicting 10275 parent deduction; law 10270 retained, discrepancy disclosed |https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5|2026-11-26|
-| Read Cap 372 arts 12/12A/13,31(2A),42/44 and 19 records; completed same-day payment/source reads reused |https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b|2026-11-26|
-| Read Provisional Tax Rules whole 8 pages, completed same-day research applied |https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4|2026-11-26|
-| Read Statutory Dates Rules 2,4–5, completed personal-tax research applied |https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2|2026-11-26|
-| Read MTCA actual YA 2026 individual filing/payment extension operative body |https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline|2026-11-26|
-| Read Part-Time Work Rules2–10whole | https://legislation.mt/eli/sl/123.39/eng/pdf |2026-11-26|
-| Read MTCA part-time FAQ operative body: caps, excess and spouse amounts; not a substitute for statutory eligibility |https://mtca.gov.mt/personal-tax/individual/faqs/faqs1|2026-11-26|
-| Read rental deduction rule3 and rental rebate rules3–10, completed same-day rental research applicability confirmed |https://legislation.mt/eli/sl/123.26/eng/pdf ; https://legislation.mt/eli/sl/123.201/eng/pdf|2026-11-26|
-| Read MTCA rental manual relevant tax content, confirming current4(1)(e)deduction application; completed same-day research applied |https://mtca.gov.mt/docs/default-source/documents/manual-on-taxation-of-rental-incomee26fd6c3-a420-4cb8-b7c4-0b7e1137b7de.pdf|2026-11-26|
-| Read Wear and Tear Rules whole 3 pages and Deductions Rules whole 6 pages, completed planning/bookkeeping reads applied |https://legislation.mt/eli/sl/123.1/eng/pdf;https://legislation.mt/getpdf/66f65d8f3b56613c3cae68d9|2026-11-26|
-| Read FSS Rules 6–7,11,21–22,Schedule B year-end data and method conditions; annual statement periods actual read |https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3|2026-11-26|
-| Read LN 20/2026 rules 1(2),12 transition; no automatic legacy-benefit cancellation claim |https://legislation.mt/eli/ln/2026/20/eng/pdf|2026-11-26|
-| Read Cap 318 completed same-day liability/category/concurrent-work read applied; actual amounts routed to SSC Guide |https://legislation.mt/eli/cap/318/eng/pdf|2026-11-26|
+| Read for Cap 123 arts 2,4/13 residence,14/26 deductions,49–50 elections,56 all 2026 tables/minimum,90A; completed rental/property operative reads reused after applicability checks | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c|2026-11-26|
+| Read for Act III 2026 arts 13(2)(b)/19: YA 2027 commencement and tables, including parent-one-child 10270 subtraction |https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430|2026-11-26|
+| Read for Act IX 2025 arts 10(2)(a),15–16: YA 2026 tables and FSS endangered-tax exclusion |https://legislation.mt/getpdf/6811d803cf7b7f36a4f360f5|2026-11-26|
+| Read for MTCA 2026 amended table including conflicting 10275 parent deduction; law 10270 retained, discrepancy disclosed |https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5|2026-11-26|
+| Read for Cap 372 arts 12/12A/13,31(2A),42/44 and 19 records; completed same-day payment/source reads reused |https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b|2026-11-26|
+| Read for Provisional Tax Rules whole 8 pages, completed same-day research applied |https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4|2026-11-26|
+| Read for Statutory Dates Rules 2,4–5, completed personal-tax research applied |https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2|2026-11-26|
+| Read for MTCA actual YA 2026 individual filing/payment extension operative body |https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline|2026-11-26|
+| Read for Part-Time Work Rules2–10whole | https://legislation.mt/eli/sl/123.39/eng/pdf |2026-11-26|
+| Read for MTCA part-time FAQ operative body: caps, excess and spouse amounts; not a substitute for statutory eligibility |https://mtca.gov.mt/personal-tax/individual/faqs/faqs1|2026-11-26|
+| Read for rental deduction rule3 and rental rebate rules3–10, completed same-day rental research applicability confirmed |https://legislation.mt/eli/sl/123.26/eng/pdf ; https://legislation.mt/eli/sl/123.201/eng/pdf|2026-11-26|
+| Read for MTCA rental manual relevant tax content, confirming current4(1)(e)deduction application; completed same-day research applied |https://mtca.gov.mt/docs/default-source/documents/manual-on-taxation-of-rental-incomee26fd6c3-a420-4cb8-b7c4-0b7e1137b7de.pdf|2026-11-26|
+| Read for Wear and Tear Rules whole 3 pages and Deductions Rules whole 6 pages, completed planning/bookkeeping reads applied |https://legislation.mt/eli/sl/123.1/eng/pdf;https://legislation.mt/getpdf/66f65d8f3b56613c3cae68d9|2026-11-26|
+| Read for FSS Rules 6–7,11,21–22,Schedule B year-end data and method conditions; annual statement periods actual read |https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3|2026-11-26|
+| Read for LN 20/2026 rules 1(2),12 transition; no automatic legacy-benefit cancellation claim |https://legislation.mt/eli/ln/2026/20/eng/pdf|2026-11-26|
+| Read for Cap 318 completed same-day liability/category/concurrent-work read applied; actual amounts routed to SSC Guide |https://legislation.mt/eli/cap/318/eng/pdf|2026-11-26|
 
 Not yet confirmed: Class 2 deductibility, entertainment cases, specific historical sole-custody claims, source/residence disputes, specialist rental/property/election/allowance/assessment facts and future 2027 extensions are non-usable referrals above. Check this point with one of our partner accountants.
