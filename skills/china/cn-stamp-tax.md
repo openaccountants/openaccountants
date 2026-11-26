@@ -1,11 +1,11 @@
 ---
 name: cn-stamp-tax
-description: 使用本技能处理一切与中国印花税相关的问题。触发短语包括“中国印花税”、“印花税法 2022”、“合同印花税”、“证券交易印花税”、“权证许可证印花税”、“产权转移书据印花税”、“营业账簿印花税”、“印花税申报”、“印花税税目税率表”、“按次申报印花税”、“按期申报印花税”、“涉外合同印花税”、“借款合同印花税”、“技术合同印花税”、“租赁合同印花税”。亦在英文短语出现时触发：“China stamp tax”、“China stamp duty”、“China stamp tax law 2022”、“PRC stamp duty”。涵盖范围包括《中华人民共和国印花税法》（2022年7月1日施行）下的13类合同税率、5项产权转移书据、营业账簿、证券交易印花税、计税依据、申报周期（按次/按期）、电子税务局申报流程、计算实例及小微企业优惠政策。在处理任何中国印花税工作之前，务必先阅读本技能。
+description: 使用本技能处理一切与中国印花税相关的问题。触发短语包括“中国印花税”、“印花税法 2022”、“合同印花税”、“证券交易印花税”、“权证许可证印花税”、“产权转移书据印花税”、“营业账簿印花税”、“印花税申报”、“印花税税目税率表”、“按次申报印花税”、“按期申报印花税”、“涉外合同印花税”、“借款合同印花税”、“技术合同印花税”、“租赁合同印花税”。亦在英文短语出现时触发：“China stamp tax”、“China stamp duty”、“China stamp tax law 2022”、“PRC stamp duty”。涵盖范围包括《中华人民共和国印花税法》（2022年7月1日施行）下的11类合同税率、4项产权转移书据、营业账簿、证券交易印花税、计税依据、申报周期（按次/按期）、电子税务局申报流程、计算实例及小微企业优惠政策。在处理任何中国印花税工作之前，务必先阅读本技能。
 jurisdiction: CN
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.2
+version: 1.3
 category: international
 tier: 2
 domain: income-tax
@@ -87,7 +87,7 @@ Tianjin Tax Bureau answers confirm individual lines, for example the account-boo
 7. **Apply the rate.** Tax = base x rate (Law Art. 8). There is no minimum amount and no rounding rule in the law.
 8. **Apply reliefs.** Statutory exemptions (Law Art. 12), then special exemptions, then the small-business halving, which can be stacked on top of other reliefs (MOF/STA announcement 2023 No. 12 Art. 4). Claims are self-assessed. Keep the supporting papers on file (STA announcement 2022 No. 14 Art. 1(5)).
 9. **Fix the tax point and period.** Tax arises on the day the document is signed or the trade completes (Law Art. 15). Put it in the quarter, year or single filing that the local bureau has set.
-10. **File and pay** through the e-tax bureau on the stamp tax source detail form within the combined property-and-behaviour tax return, within fifteen days of the period end or of the tax point.
+10. **File and pay.** For taxable documents, use the stamp tax source detail form in the combined property-and-behaviour tax return. The ordinary deadline is fifteen days after the period ends or after the tax point for a per-occurrence filing. For securities transactions, the clearing body pays over tax and bank interest within five days after each week ends (Law Art. 16).
 
 ### What counts as a taxable document ([MOF/STA announcement 2022 No. 22](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463167.html); [STA (89) Guoshuidizi No. 34 on technology contracts](https://fgk.chinatax.gov.cn/zcfgk/c100012/c5193073/content.html))
 
@@ -106,7 +106,7 @@ Tianjin Tax Bureau answers confirm individual lines, for example the account-boo
 
 **Loans outside the loan item.** Only loans from banks and other licensed financial institutions are in the table. Loans between non-financial companies, from shareholders, or between individuals are not taxed.
 
-**Technology contracts.** Technology consulting covers analysis, evaluation and forecasting on technical or economic projects. Ordinary legal, regulatory, accounting and audit consulting is **not** technology consulting and is not taxed. Technology services exclude routine processing, repair, advertising, printing, surveying, testing, and survey or design work. Survey and design fall under construction project contracts. Vocational training and general education contracts are not technology training (STA (89) Guoshuidizi No. 34, shown as fully in force in the STA library). For a technology development contract, only the remuneration is taxed, not the research and development funds. But where the contract sets the remuneration as a proportion of the research funds, that proportion of the remuneration is taxed.
+**Technology contracts.** Technology consulting covers analysis, evaluation and forecasting on technical or economic projects. Ordinary legal, regulatory, accounting and audit consulting is **not** technology consulting and is not taxed. Technology services exclude routine processing, repair, advertising, printing, surveying, testing, and survey or design work. Survey and design fall under construction project contracts. Vocational training and general education contracts are not technology training (STA (89) Guoshuidizi No. 34, shown as fully in force in the STA library). For a technology development contract, only the remuneration is taxed, not the research and development funds. If the contract defines remuneration as a share of the research and development funds, apply the stamp tax rate to that remuneration.
 
 ### Tax base: the rules that decide most disputes ([Stamp Tax Law Art. 5-11](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202106/t458595.html); [MOF/STA announcement 2022 No. 22 Art. 3](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463167.html); [Shanghai Tax Bureau stamp tax Q&A, 2023](https://shanghai.chinatax.gov.cn/zcfw/rdwd/202303/t466552.html); [Tianjin Tax Bureau VAT Q&A, 2026](https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050012/20260413100927171.shtml); [STA announcement 2022 No. 14](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463170.html))
 
@@ -147,10 +147,10 @@ Tianjin Tax Bureau answers confirm individual lines, for example the account-boo
 The State Council may add reductions or exemptions for housing, restructuring, bankruptcy and small and micro businesses (Law Art. 12). When an exemption applies to a document, every party that signs it may use it, unless the rule names a specific taxpayer (MOF/STA announcement 2022 No. 22 Art. 4(1)).
 
 **Housing, kept in force by MOF/STA announcement 2022 No. 23:**
-- Lease contracts for housing signed by an individual as landlord or tenant are exempt ([Caishui 2008 No. 24 Art. 2(2)](https://guangdong.chinatax.gov.cn/gdsw/grsdsgg_hmqsc_bzms_grzf/2021-08/31/content_30f96f132c0240c6b486a09f97d40dce.shtml)).
+- Lease contracts for housing signed by an individual as landlord or tenant are exempt ([Caishui 2008 No. 24 Art. 2(2)](https://www.mof.gov.cn/gp/xxgkml/szs/200806/t20080624_2497130.htm)).
 - Individuals selling or buying housing are temporarily exempt ([Caishui 2008 No. 137 Art. 2](https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203534/content.html)). The text covers individuals and housing only. It does not extend to shops or offices. If a company is the other party, confirm its position with the local bureau.
 
-**Small-business halving** ([MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html)): from 1 January 2023 to 31 December 2027, small-scale VAT taxpayers, small low-profit enterprises and individual businesses pay half the stamp tax, excluding securities stamp tax. There is no cap on the amount. It stacks with other stamp tax reliefs. The small low-profit enterprise test is in Art. 5 of that announcement: the enterprise must be in an industry the state does not restrict or prohibit and meet all three size conditions, measured on annual quarterly averages, and confirmed by the annual corporate income tax settlement. See **cn-corporate-tax**. A newly set up general VAT taxpayer can apply the halving before its first settlement if it meets the headcount and asset limits at the end of the month before filing.
+**Small-business halving** ([MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html)): from 1 January 2023 to 31 December 2027, small-scale VAT taxpayers, small low-profit enterprises and individual businesses pay half the stamp tax, excluding securities stamp tax. There is no cap on the amount. It stacks with other stamp tax reliefs. The small low-profit enterprise test is in Art. 5 of that announcement: the enterprise must be in an industry the state does not restrict or prohibit and have annual taxable income of no more than CNY 3 million, no more than 300 workers (including dispatched workers) and no more than CNY 50 million in total assets. Use annual quarterly averages for workers and assets. The annual corporate income tax settlement confirms eligibility. Before its first settlement, a newly established general VAT taxpayer in an eligible industry can apply the halving if its workers and assets meet those limits at the end of the month before filing. For a per-occurrence filing in the month of establishment, use those figures at establishment ([STA guidance](https://www.chinatax.gov.cn/chinatax/n810356/n3010387/c5215113/content.html)).
 
 **Loans to small and micro enterprises** ([MOF/STA announcement 2023 No. 13](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202308/t468161.html)): loan contracts between financial institutions and small or micro enterprises (as defined in the 2011 SME classification rules) are exempt until 31 December 2027. The small-loan size limit in that announcement applies to the VAT exemption on interest, not to this stamp tax exemption.
 
@@ -206,7 +206,7 @@ Other targeted exemptions (for example social security funds, commodity reserves
 
 - The document does not clearly fit one item in the rate table and the choice changes the rate, for example a technology service contract that is really processing or repair work. Refer, with the contract, to the local bureau or a Chinese tax adviser.
 - The client wants to rely on a targeted exemption that is not listed above. Get the announcement and check its end date and conditions first.
-- An individual sells shares in a private company and wants the small-business halving. The Shanghai bureau said yes in December 2022 under the earlier relief (Caishui 2019 No. 13). This skill found no later official statement under MOF/STA announcement 2023 No. 12, so check with the local bureau before claiming it.
+- An individual transferring unlisted shares qualifies for the 50% reduction as a small-scale VAT taxpayer under [VAT Implementing Regulations Art. 7](https://gss.mof.gov.cn/gszhs/falvlagui/202603/t20260313_3985253.htm) and [MOF/STA announcement 2023 No. 12 Art. 2](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html). The [Qingdao Tax Bureau’s 2026 filing guidance](https://qingdao.chinatax.gov.cn/ssfg2019/cjwt/cjwtqt/202601/t20260130_102160.html) covers the individual’s return. Check the other signatory’s eligibility separately.
 - A restructuring relief depends on the tests under "Restructuring" above: the three permitted conversion forms, with continuing investors holding more than three quarters and the successor taking over rights and obligations; a merger with continuing investors; a division into companies with the same investors; or a State Council-approved debt-for-equity project. Refer for a full review of the deal.
 - A trade on a venue whose status as a State Council-approved national securities venue is unclear. Confirm with the broker or clearing body whether securities stamp tax was withheld.
 - The contract amount will not be known for a long time, or the parties dispute it. Report the signing now, and get advice on when the amount counts as settled.
@@ -250,14 +250,14 @@ Other targeted exemptions (for example social security funds, commodity reserves
 
 ### Returns for tax year 2025 being filed or corrected now ([Stamp Tax Law Art. 16](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202106/t458595.html); [MOF/STA announcement 2022 No. 22 Art. 3](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463167.html))
 
-The rates and rules for 2025 were the same as for 2026. The small-business halving and the securities halving both applied throughout 2025. Account-book tax for 2025 on an annual period was due within fifteen days after 31 December 2025, and the fourth-quarter 2025 contract return was due within fifteen days after the same date (check the local tax calendar for the exact day). If a 2025 document was missed, file it now for the period in which it was signed, pay the tax, and expect the daily late-payment surcharge. If a 2025 contract was later amended to a lower amount, claim the refund or offset for the decrease.
+The rates and rules for 2025 were the same as for 2026. The small-business halving and the securities halving both applied throughout 2025. The ordinary deadline for 2025 annual account-book tax was fifteen days after 31 December 2025, subject to holiday adjustments and the local calendar. The [2026 filing calendar](https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/swzsgl/202512/t478680.html) extended the fourth-quarter 2025 contract filing and payment deadline to 20 January 2026. If a 2025 document was missed, file it now for the period in which it was signed, pay the tax, and expect the daily late-payment surcharge. If a 2025 contract was later amended to a lower amount, claim the refund or offset for the decrease.
 
 ## Penalties and interest
 
 **Late payment and penalties** (Tax Collection Administration Law):
 - late payment: a surcharge of five per ten thousand of the unpaid tax for each day late (Art. 32);
-- late filing: an order to correct and a fine of up to two thousand yuan, or two thousand to ten thousand yuan in serious cases (Art. 62);
-- evasion (false or missing declarations to underpay): the tax, the surcharge, and a fine of half to five times the tax underpaid; crimes are prosecuted (Art. 63).
+- late filing: an order to correct and a possible fine of up to two thousand yuan. Serious cases carry a fine of two thousand to ten thousand yuan (Art. 62);
+- evasion: Art. 63 covers conduct such as a false return or refusal to file after a tax authority notice, where tax goes unpaid or underpaid. The bureau recovers the tax and surcharge and imposes a fine of half to five times the tax underpaid. Criminal liability applies where the conduct constitutes a crime. Art. 64(2) separately covers non-filing that leads to non-payment or underpayment.
 
 ## Cross-border points
 
@@ -267,11 +267,11 @@ Cross-border transaction, export/non-resident and source rules are preserved in 
 
 ### Worked cases ([Stamp Tax Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202106/t458595.html); [rate table](https://guangdong.chinatax.gov.cn/gdsw/zssw_nsrwkt_sphg_zbsp/2022-07/08/b5cbcdef663d476bbcb821cb6ab21a8c/files/5e07417a94ab464895b4c817b3e75c5c.pdf); [MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html); [MOF/STA announcement 2023 No. 39](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202308/t468451.html); [Shanghai filing periods](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463184.html))
 
-All amounts are in yuan and relate to tax year 2026. The filing dates assume a Shanghai taxpayer. Other provinces set their own periods.
+Amounts are in yuan unless specified. Cases use the 2026 rules unless a different year is stated. The Shanghai filing periods apply to the Shanghai cases. Other provinces set their own periods.
 
-**Case 1: technology development contract.** A Shanghai software company, not a small business, signs a development contract on 10 March 2026. The remuneration is 1,000,000, and VAT is stated as a separate amount. Tax = 1,000,000 × 3 ÷ 10,000 = 300. If the contract instead showed a VAT-inclusive price of 1,060,000 and only a VAT rate, tax = 1,060,000 × 3 ÷ 10,000 = 318. The first quarter return is due within fifteen days after 31 March 2026.
+**Case 1: technology development contract.** A Shanghai software company, not a small business, signs a development contract on 10 March 2026. The remuneration is 1,000,000, and VAT is stated as a separate amount. Tax = 1,000,000 × 3 ÷ 10,000 = 300. If the contract instead showed a VAT-inclusive price of 1,060,000 and only a VAT rate, tax = 1,060,000 × 3 ÷ 10,000 = 318. The first-quarter return and payment are due on [20 April 2026](https://shanghai.chinatax.gov.cn/tax/xhtax/tzgg/tzl/202604/t480008.html).
 
-**Case 2: office lease.** Two companies sign a 12-month lease at 10,000 a month, so the rent is 120,000. Each party pays 120,000 × 1 ÷ 1,000 = 120. If the tenant is a small low-profit enterprise, it pays half: 60. The landlord still pays 120.
+**Case 2: office lease.** Two companies sign a 12-month lease at 10,000 a month, so the rent is 120,000. Each party pays 120,000 × 1 ÷ 1,000 = 120. If the tenant is a small low-profit enterprise, it pays half: 60. The landlord pays 120 if it does not qualify for relief.
 
 **Case 3: account books.** A company is set up in January 2026 with paid-in capital of 1,000,000 and capital reserve of 500,000. Base = 1,500,000. Tax = 1,500,000 × 2.5 ÷ 10,000 = 375, filed in Shanghai with the annual return within fifteen days after 31 December 2026. If the company is a small low-profit enterprise, it pays half: 187.5. In 2027 it adds 1,000,000 of capital. Tax on the increase only = 1,000,000 × 2.5 ÷ 10,000 = 250 before any halving.
 
@@ -279,7 +279,7 @@ All amounts are in yuan and relate to tax year 2026. The filing dates assume a S
 
 **Case 5: listed shares.** An investor sells A-shares for 1,000,000 on 3 June 2026. Statutory tax = 1,000,000 × 1 ÷ 1,000 = 1,000. Charged at half since 28 August 2023, so 500 is withheld by the clearing body. The buyer pays nothing. The investor files nothing.
 
-**Case 6: contract signed abroad.** A Hangzhou importer and a Japanese supplier with no agent in China sign an equipment sale contract in Tokyo for 200,000 US dollars. The equipment is used in Hangzhou. The buyer is in China, so the contract is taxable, and **both** signatories are taxpayers. At an assumed central parity of 7.1 on the signing day, the base is 1,420,000. Each party pays 1,420,000 × 3 ÷ 10,000 = 426. The importer files through its normal return. The supplier must file itself, because it has no agent in China. In Shanghai a foreign party files per occurrence, or may choose annual filing. Use the real central parity rate for the signing day.
+**Case 6: contract signed abroad.** A Hangzhou importer and a Japanese supplier with no agent in China sign an equipment sale contract in Tokyo for 200,000 US dollars. The equipment is used in Hangzhou. The buyer is in China, so the contract is taxable, and **both** signatories are taxpayers. At an assumed central parity of 7.1 on the signing day, the base is 1,420,000. Each party pays 1,420,000 × 3 ÷ 10,000 = 426. The importer files through its normal return. The supplier must file itself, because it has no agent in China. The supplier can file with the competent bureau in Hangzhou at the Chinese signatory’s location. Check the supplier’s filing cycle and due date with the Zhejiang tax bureau. Use the actual central parity rate for the signing day.
 
 **Case 7: mixed freight and warehousing.** A logistics contract has freight of 200,000 and warehousing fees of 50,000. Shown separately: 200,000 × 3 ÷ 10,000 = 60, plus 50,000 × 1 ÷ 1,000 = 50, total 110. Not shown separately: 250,000 × 1 ÷ 1,000 = 250.
 
@@ -356,7 +356,7 @@ expected:
 | Shanghai Tax Bureau securities Q&A, 2023. Read for Securities trading stamp tax | https://shanghai.chinatax.gov.cn/zcfw/rdwd/202309/t468612.html | 2026-11-14 |
 | MOF/STA announcement 2022 No. 23. Read for Exemptions and reliefs | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463168.html | 2026-11-14 |
 | its Annex 1. Read for Exemptions and reliefs | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/P020220630368115809685.pdf | 2026-11-14 |
-| Caishui 2008 No. 24 Art. 2(2). Read for Exemptions and reliefs | https://guangdong.chinatax.gov.cn/gdsw/grsdsgg_hmqsc_bzms_grzf/2021-08/31/content_30f96f132c0240c6b486a09f97d40dce.shtml | 2026-11-14 |
+| Caishui 2008 No. 24 Art. 2(2). Read for Exemptions and reliefs | https://www.mof.gov.cn/gp/xxgkml/szs/200806/t20080624_2497130.htm | 2026-11-14 |
 | Caishui 2008 No. 137 Art. 2. Read for Exemptions and reliefs | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203534/content.html | 2026-11-14 |
 | Shanghai Tax Bureau share-transfer Q&A, 2022. Read for Boundary and exception table | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202212/t465345.html | 2026-11-14 |
 | Shanghai Tax Bureau announcement 2022 No. 3. Read for Filing and payment, Worked cases | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463184.html | 2026-11-14 |
