@@ -2,19 +2,19 @@
 name: bw-payroll-social
 description: >
   Botswana payroll for 2026-27: PAYE tables from 1 July 2026, 27.5% monthly top band, benefits, allowances, remittance in 14 days, annual return, no state social security. Use for Botswana payroll.
-version: 1.1
+version: 1.2
 jurisdiction: BW
 category: international
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 type: computation
 ---
 
-# Botswana Payroll and Social Contributions v1.1
+# Botswana Payroll and Social Contributions v1.2
 
 > **General reference only.** This skill is general tax reference material. It has not been reviewed for any specific person's facts. Check figures against the official sources named here.
 
@@ -58,7 +58,7 @@ No state social security or national pension contribution appears in the 2026 ta
 
 ## Penalties and interest
 
-Interest is 1.5% a month or part month, simple (TAA s 41(2), Regs reg 21). Late filing of an income tax return: the greater of P100 a day (cap P20,000) or 10% of unpaid tax a month; the fixed amount never exceeds the tax on the return (TAA s 101). VAT return: the greater of P50 a day (cap P5,000) or 10% a month. Other documents: P50 a day, cap P5,000. Late payment: the greater of P50 a day or 10% a month (TAA s 102), but reg 33 of SI 90 waives this penalty for 12 months from commencement, which runs to 30 June 2027; interest still runs. False statement made deliberately or recklessly: 75% of the shortfall; any other false or misleading statement: 20%. Add 10 points on a second application and 25 on a third or later; half off on voluntary disclosure before discovery or audit (TAA s 103). Failure to e-file or e-pay where required: P20 manual fee (reg 30). Failure to register: 100% of the tax for the period, or P10,000 a month if none is due (TAA s 98).
+Interest is 1.5% a month or part month, simple (TAA s 41(2), Regs reg 21). Late filing of an income tax return: the greater of P100 a day (cap P20,000) or 10% of unpaid tax a month; the fixed amount never exceeds the tax on the return (TAA s 101). VAT return: the greater of P50 a day (cap P5,000) or 10% a month. Other documents: P50 a day, cap P5,000. Late payment generally: the greater of P50 a day or 10% a month, the fixed amount capped at the tax payable (TAA s 102). Section 102 is subject to s 107, which covers PAYE: an employer who fails to withhold, or withholds but does not remit by the due date, pays the greater of P500 for each day of default or 10% of the withholding tax payable for the period of default, capped at the tax payable and borne personally (TAA s 107(1)(a), (b), (2)(a), (4), (5)); failing to deliver a certificate of tax withheld by the due date costs P100 a day (s 107(1)(c), (2)(b)). Reg 33 of SI 90 removes only the late payment penalty, which TAA s 2 defines as a penalty under s 102, for 12 months from commencement, to 30 June 2027; s 107 penalties and interest still apply. False statement made deliberately or recklessly: 75% of the shortfall; any other false or misleading statement: 20%. Add 10 points on a second application and 25 on a third or later; half off on voluntary disclosure before discovery or audit (TAA s 103). Failure to e-file or e-pay where required: P20 manual fee (reg 30). Failure to register: 100% of the tax for the period, or P10,000 a month if none is due (TAA s 98). An employer who does not apply for registration within 21 days after the end of the month in which it became an employer, or does not notify cessation within 14 days, pays P1,000 a month or part month (SI 92 reg 44(1), (4), (8)).
 
 Late payment interest on withholding tax is the employer's own cost (TAA s 41(3)).
 
@@ -110,8 +110,8 @@ expected:
 | Source | Link | Read |
 |---|---|---|
 | BURS Tax Table and Guidance Notes, effective 1 July 2026: notes, Examples 4, 5, 14, housing table, allowances | https://www.burs.org.bw/images/Tax%20Table_2026.pdf | 2026-11-01 |
-| Income Tax Act, 2026 (No. 13 of 2026), read: ss 7, 8, 17, 28, 34 to 37, 53, 96, 117, 119, 123 to 144, Schedules 1 to 3; Regulations SI 92 and Commencement Order SI 93 in the same file | https://www.burs.org.bw/index.php/tax/tax-laws-2026?download=954:income-tax-act-amendment-2026 | 2026-11-01 |
-| Tax Administration Act, 2026 (No. 14 of 2026), read: ss 14, 18, 27, 41, 98, 101 to 103; Regulations SI 90 regs 3, 4, 21, 28, 30, 33, 34 in the same file | https://www.burs.org.bw/index.php/tax/tax-laws-2026?download=955:tax-administration-act-2026 | 2026-11-01 |
+| Income Tax Act, 2026 (No. 13 of 2026), read: ss 7, 8, 17, 28, 34 to 37, 53, 96, 117, 119, 123 to 144, Schedules 1 to 3; Regulations SI 92 (including reg 44) and Commencement Order SI 93 in the same file | https://www.burs.org.bw/index.php/tax/tax-laws-2026?download=954:income-tax-act-amendment-2026 | 2026-11-26 |
+| Tax Administration Act, 2026 (No. 14 of 2026), read: ss 2, 14, 18, 27, 41, 98, 101 to 103, 107; Regulations SI 90 regs 3, 4, 21, 28, 30, 33, 34 in the same file | https://www.burs.org.bw/index.php/tax/tax-laws-2026?download=955:tax-administration-act-2026 | 2026-11-26 |
 | BURS Returns page, form names only (page predates the 2026 Acts) | https://www.burs.org.bw/index.php/tax/returns | 2026-11-01 |
 
 Not yet confirmed: Vocational Training Levy of 0.2% of turnover up to BWP 2 billion and 0.05% above (old file, no official page opened; the BURS and HRDC pages read do not show it); ITW8 date of 31 March from the old file (the Act ties certificates to s 138); Retirement Funds Act detail on occupational funds; whether social security law has changed outside tax law.
