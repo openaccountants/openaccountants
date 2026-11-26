@@ -13,6 +13,7 @@ tier: 2
 domain: income-tax
 type: situation-rules
 ---
+
 # Netherlands tax objections and appeals (bezwaar and beroep), 2026
 
 ## Who this applies to
@@ -33,7 +34,6 @@ Read the complete notice and remedy instructions, delivery evidence, return, pay
 | Apparently late objection | Examine notification and excusable delay; consider ex officio reduction separately. |
 | Mass objection, including box 3; Wtl decision | Special designation, participation and timing rules require a separate assessment. **Check this point with one of our partner accountants.** |
 | Toeslagen, WOZ/local taxes, customs, criminal tax cases or a service complaint | Outside this Guide. A service complaint is not the objection/appeal route. **Check this point with one of our partner accountants.** |
-
 
 ## Rates, bands and thresholds
 
@@ -72,7 +72,6 @@ For each disputed item record the inspector's treatment, the requested correctio
 
 **Special procedures.** Mass-objection designation, the designated legal question, timely participation, separate individual issues, hearing/clock suspension, collective decisions, implementation and further remedies need case-specific treatment. Wtl timing also differs from the ordinary objection. **Check this point with one of our partner accountants.**
 
-
 ### Adaptable Dutch letter
 
 ```text
@@ -102,7 +101,7 @@ Complete placeholders using the records. This is an objection template; a court 
 
 **Starting event.** The ordinary objection period starts the day after the assessment/objectionable decision's printed date, **unless that date precedes legally effective notification** (AWR art. 22j(a), Awb art. 6:8). For return payments, withholding or remittance, use the day after that event (AWR art. 22j(b)). Establish the actual event and retain proof; do not guess a disputed notification date.
 
-**Receipt and calendar.** File so the authority receives it before expiry. The postal exception above is not another week to post. Preserve posting or portal evidence. Under the Algemene termijnenwet, a statutory endpoint on Saturday, Sunday or a recognised/equivalent holiday moves to the next non-excluded day. Check the actual calendar and any designated equivalent days.
+**Receipt and calendar.** File so the authority receives it before expiry. The postal exception above is not another week to post. Preserve posting or portal evidence. Under the Algemene termijnenwet, for the six-week procedural periods covered here, an endpoint on Saturday, Sunday or a recognised/equivalent holiday moves to the next non-excluded day. Check the actual calendar and any designated equivalent days.
 
 **Late filing.** Awb art. 6:11 prevents inadmissibility for delay where the filer cannot reasonably be considered at fault. Record what prevented filing and when it ended, and obtain urgent advice; neither acceptance nor inadmissibility is automatic. **Check this point with one of our partner accountants.**
 
@@ -120,7 +119,6 @@ Complete placeholders using the records. This is an objection template; a court 
 
 **Court fees.** Establish the tariff category in the table and pay by the registry's deadline. Awb art. 8:41(6) preserves excusable-default and established inability-to-pay exceptions; seek advice promptly instead of assuming non-payment always ends the case. If the appeal is withdrawn because the authority grants full/partial relief, it reimburses the fee (art. 8:41(7)). Related decisions/multiple filers have special single-fee rules (art. 8:41(3)); **Check this point with one of our partner accountants.**
 
-
 ## Penalties and interest
 
 **Payment during objection.** Identify the disputed amount and explicitly request postponement. The authority's ordinary assessment-objection guidance grants postponement for that part until the objection decision; pay the undisputed part on time. Check the collection response. Invorderingswet art. 25(1) permits conditional postponement and suspends enforced collection while granted; merely drafting a request proves no grant. For a reduction request or court appeal, request postponement separately; do not assume the objection-stage grant continues. A reduction-request grant covers only the requested reduction and ends with that decision. For appeal, send the request with the appeal copy to Postbus 100, 6400 AC Heerlen; for bpm/transfer tax, Postbus 2584, 6401 DB Heerlen.
@@ -133,7 +131,6 @@ Complete placeholders using the records. This is an objection template; a court 
 
 **Dwangsom.** The daily bands in the table run for at most 42 days; the Algemene termijnenwet does not extend that 42-day cap. No statutory payment is due if the default notice is unreasonably late, the applicant lacks interested-party status, or the application/objection is manifestly inadmissible or unfounded (Awb art. 4:17(5)). The authority determines entitlement and amount by decision within 2 weeks after the last compensable day (art. 4:18; applies through art. 7:14). Do not confuse this payment owed by the authority with a tax fine owed by the taxpayer.
 
-
 ## Cross-border points
 
 The same national-tax start/receipt rules apply abroad; retain notification evidence and allow for postal transit. Use European login only where the particular filing route permits it. For a national-tax court appeal by someone abroad, the authority identifies **Rechtbank Zeeland-West-Brabant, Postbus 3332, 4800 DH Breda**; the Midden-Nederland/Utrecht address on its page is for toeslagen, outside this Guide. Resolve any conflicting remedy instructions with a partner accountant before choosing the court.
@@ -142,10 +139,9 @@ Withholding objections/refund allocation follow AWR arts. 26a and 25b; a separat
 
 For tax refunded because it was levied contrary to EU law, Invorderingswet art. 28c provides interest on request where its conditions apply. The request period ends **6 weeks after the date of the inspector's refund decision**, rather than an assumed receipt date. Avoid overlapping interest periods under art. 28c(2). **Check this point with one of our partner accountants.**
 
-
 ## Worked examples
 
-**Example 1: partial income-tax objection, rejected.** Preserve the original inputs: a EUR 20,000 assessment dated **1 March 2026**, a stated six-week payment term, EUR 12,000 disputed and EUR 8,000 paid on time. Establish the legally applicable due date from the notice and calendar; these facts alone are not a filing-date recommendation. Assume ordinary postponement was granted, no costs, a constant 4.3% rate and **150 chargeable days** under the authority's convention ending before receipt of the late payment. Interest: 150 × 4.3 × 12,000 / 36,000 = **EUR 215**, above EUR 49. The taxpayer's original EUR 12,000 late remittance is allocated first to EUR 215 interest, leaving EUR 11,785 for principal and EUR 215 principal outstanding. Reconcile and settle that balance, including any further interest. Paying principal on time would avoid this interest; a successful objection would **not automatically** earn refund interest.
+**Example 1: partial income-tax objection, rejected.** A EUR 20,000 assessment dated **1 March 2026**, a stated six-week payment term, EUR 12,000 disputed and EUR 8,000 paid on time. Establish the legally applicable due date from the notice and calendar; these facts alone are not a filing-date recommendation. Assume ordinary postponement was granted, no costs, a constant 4.3% rate and **150 chargeable days** under the authority's convention ending before receipt of the late payment. Interest: 150 × 4.3 × 12,000 / 36,000 = **EUR 215**, above EUR 49. The taxpayer's EUR 12,000 late remittance is allocated first to EUR 215 interest, leaving EUR 11,785 for principal and EUR 215 principal outstanding. Reconcile and settle that balance, including any further interest. Paying principal on time would avoid this interest; a successful objection would **not automatically** earn refund interest.
 
 ```oa-check
 name: Partial objection, postponed EUR 12,000 paid 150 days late (2026)
@@ -169,7 +165,7 @@ expected:
   principal_remaining: 215.00
 ```
 
-**Example 2: late VAT objection decision.** Preserve the assessment date **2 February 2026**, timely objection, ordinary 6-week objection period, 6-week decision period and 6-week extension. Their **nominal** total is 18 weeks; establish notification, calendar, extension and any suspension before calculating an actual default date. Assume a valid notice was received after that adjusted deadline, the two-week wait has fully expired, the taxpayer is eligible, no exclusion applies and **20 compensable days** accrue through the decision. The first 14 days give EUR 322; the next 6 give EUR 210; total **EUR 532**. For 42 days, the computed cap is **EUR 1,442**. These assumptions do not authorise a notice based only on the printed date.
+**Example 2: late VAT objection decision.** A VAT top-up assessment is dated **2 February 2026**. Assume timely objection, an ordinary 6-week objection period, 6-week decision period and 6-week extension. Their **nominal** total is 18 weeks; establish notification, calendar, extension and any suspension before calculating an actual default date. Assume a valid notice was received after that adjusted deadline, the two-week wait has fully expired, the taxpayer is eligible, no exclusion applies and **20 compensable days** accrue through the decision. The first 14 days give EUR 322; the next 6 give EUR 210; total **EUR 532**. For 42 days, the computed cap is **EUR 1,442**. These assumptions do not authorise a notice based only on the printed date.
 
 ```oa-check
 name: Late objection decision, dwangsom for 20 days (2026)
@@ -194,7 +190,6 @@ expected:
   cap: 1442.00
 ```
 
-
 ## Ask the client first
 
 Read the existing case records before requesting anything missing:
@@ -211,24 +206,24 @@ Do not invent missing facts, assert automatic lateness or wait for perfect groun
 
 | Source and bounded passages read | URL | Read on |
 |---|---|---|
-| Awb: arts. 4:17–4:18; 6:5–6:12, 6:16; 7:3–7:4, 7:10, 7:14–7:15; 8:41 and annex 3; current operative edition | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0005537/2026-11-10_0/xml/BWBR0005537_2026-11-10_0.xml | 2026-11-26, listed provisions and neighbouring conditions |
-| AWR: arts. 22j, 24a–26a, 26c; remedy scope, special procedures, notification and standing | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0002320/2026-10-01_0/xml/BWBR0002320_2026-10-01_0.xml | 2026-11-26, listed provisions |
-| Wet IB: arts. 9.5–9.6, revision and reduction/refusal conditions | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml | 2026-11-26, arts. 9.5–9.6 |
-| Invorderingswet: arts. 7, 25(1)–(2), 28–28c, payment allocation/postponement/refund conditions | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0004770/2026-10-01_0/xml/BWBR0004770_2026-10-01_0.xml | 2026-11-26, listed provisions |
-| Algemene termijnenwet: arts. 1–3, calendar and equivalent days | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0002448/2010-10-10_0/xml/BWBR0002448_2010-10-10_0.xml | 2026-11-26, arts. 1–3 |
-| Besluit proceskosten bestuursrecht: art. 2, annex A5/B2/C | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0006358/2026-01-01_0/xml/BWBR0006358_2026-01-01_0.xml | 2026-11-26, tariff, weights and adjustments |
-| Uitvoeringsregeling IB: art. 45aa, substantive reduction exclusions | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0012031/2026-01-17_0/xml/BWBR0012031_2026-01-17_0.xml | 2026-11-26, art. 45aa |
-| Belastingdienst: filing requirements, channels and supporting copies | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/eisen-bezwaar | 2026-11-26, filing sections |
-| Belastingdienst: specific VAT routes/status/payment/cash scheme | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/bezwaar-omzetbelasting | 2026-11-26, route and portal sections |
-| Belastingdienst: representation, paper/portal/software authority | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/iemand-anders-bezwaar-laten-maken | 2026-11-26, authorisation sections |
-| Belastingdienst: acknowledgement and ordinary/late response times | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/wanneer-bericht-over-bezwaar | 2026-11-26, acknowledgement/decision/extension sections |
-| Belastingdienst: default-notice form, address and court step | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/belastingdienst-is-te-laat-met-beslissen | 2026-11-26, steps 1–2 and appeal; Wtl conflict not used |
-| Belastingdienst: cost conditions and provisional amendment | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/kostenvergoeding-bij-bezwaar | 2026-11-26, eligibility and provisional sections |
-| Belastingdienst: hearing/report/telephone procedure | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/hoorprocedure-bij-bezwaar | 2026-11-26, hearing/report/file sections |
-| Belastingdienst: reduction windows/response/postponement | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/te-laat-voor-bezwaar-wat-nu | 2026-11-26, relevant sections; unusual entitlement referred |
-| Belastingdienst: ordinary objection postponement | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/bezwaar-en-uitstel-van-betaling | 2026-11-26, payment sections; refund simplification corrected to Invorderingswet art. 28b |
-| Belastingdienst: collection-interest period, rates, formula, allocation and refund conditions | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente | 2026-11-26, listed sections |
-| Belastingdienst: appeal scope, postponement addresses and national-tax court abroad | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/in-beroep-tegen-uitspraak-op-bezwaar | 2026-11-26, appeal/postponement/tax-court sections |
-| Rechtspraak: ordinary tax appeal, digital channel, named court, representative/organisation requirements | https://www.rechtspraak.nl/onderwerpen/belastingen/procedure | 2026-11-26, filing and representation sections |
+| Awb: arts. 4:17–4:18; 6:5–6:12, 6:16; 7:3–7:4, 7:10, 7:14–7:15; 8:41 and annex 3; current operative edition | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0005537/2026-11-10_0/xml/BWBR0005537_2026-11-10_0.xml | 2026-11-26, read in listed provisions and neighbouring conditions |
+| AWR: arts. 22j, 24a–26a, 26c; remedy scope, special procedures, notification and standing | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0002320/2026-10-01_0/xml/BWBR0002320_2026-10-01_0.xml | 2026-11-26, read in listed provisions |
+| Wet IB: arts. 9.5–9.6, revision and reduction/refusal conditions | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml | 2026-11-26, read in arts. 9.5–9.6 |
+| Invorderingswet: arts. 7, 25(1)–(2), 28–28c, payment allocation/postponement/refund conditions | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0004770/2026-10-01_0/xml/BWBR0004770_2026-10-01_0.xml | 2026-11-26, read in listed provisions |
+| Algemene termijnenwet: arts. 1–4, calendar and equivalent days | https://wetten.overheid.nl/BWBR0002448/2010-10-10 | 2026-11-26, read in arts. 1–4, bounded display read |
+| Besluit proceskosten bestuursrecht: art. 2, annex A5/B2/C | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0006358/2026-01-01_0/xml/BWBR0006358_2026-01-01_0.xml | 2026-11-26, read in tariff, weights and adjustments |
+| Uitvoeringsregeling IB: art. 45aa, substantive reduction exclusions | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0012031/2026-01-17_0/xml/BWBR0012031_2026-01-17_0.xml | 2026-11-26, read in art. 45aa |
+| Belastingdienst: filing requirements, channels and supporting copies | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/eisen-bezwaar | 2026-11-26, read in filing sections |
+| Belastingdienst: specific VAT routes/status/payment/cash scheme | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/bezwaar-omzetbelasting | 2026-11-26, read in route and portal sections |
+| Belastingdienst: representation, paper/portal/software authority | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/iemand-anders-bezwaar-laten-maken | 2026-11-26, read in authorisation sections |
+| Belastingdienst: acknowledgement and ordinary/late response times | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/wanneer-bericht-over-bezwaar | 2026-11-26, read in acknowledgement/decision/extension sections |
+| Belastingdienst: default-notice form, address and court step | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/belastingdienst-is-te-laat-met-beslissen | 2026-11-26, read in steps 1–2 and appeal; Wtl conflict not used |
+| Belastingdienst: cost conditions and provisional amendment | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/kostenvergoeding-bij-bezwaar | 2026-11-26, read in eligibility and provisional sections |
+| Belastingdienst: hearing/report/telephone procedure | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/hoorprocedure-bij-bezwaar | 2026-11-26, read in hearing/report/file sections |
+| Belastingdienst: reduction windows/response/postponement | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/te-laat-voor-bezwaar-wat-nu | 2026-11-26, read in relevant sections; unusual entitlement referred |
+| Belastingdienst: ordinary objection postponement | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/bezwaar-en-uitstel-van-betaling | 2026-11-26, read in payment sections; refund simplification corrected to Invorderingswet art. 28b |
+| Belastingdienst: collection-interest period, rates, formula, allocation and refund conditions | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente | 2026-11-26, read in listed sections |
+| Belastingdienst: appeal scope, postponement addresses and national-tax court abroad | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/in-beroep-tegen-uitspraak-op-bezwaar | 2026-11-26, read in appeal/postponement/tax-court sections |
+| Rechtspraak: ordinary tax appeal, digital channel, named court, representative/organisation requirements | https://www.rechtspraak.nl/onderwerpen/belastingen/procedure | 2026-11-26, read in filing and representation sections |
 
 Not yet confirmed: no unresolved proposition is offered as a usable rule. Mass-objection/Wtl application, unusual reduction or interest entitlement, disputed notification, penalty mitigation and later remedies are referred above. Apply the relevant law to the actual documents before filing.
