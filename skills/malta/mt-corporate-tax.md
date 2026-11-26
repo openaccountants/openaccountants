@@ -100,6 +100,8 @@ A claim is due within four years from eligibility (48(5)); the Commissioner must
 
 ## Losses, group relief and fiscal units
 
+Article 51(1) disregards artificial, fictitious or unimplemented tax-reducing schemes; 51(2) counters sole/main-purpose tax/refund advantages and non-genuine Directive arrangements. Article 51(4) can deny current and carried losses and unused wear-and-tear/initial allowances where income follows a scheme/shareholding change, unless the required proof shows it was not solely/mainly to exploit those losses/allowances to avoid tax. Check ownership changes and commercial evidence before using a carry-forward.
+
 **Own trading losses - art. 14(1)(g).** Only a trade/business/profession/vocation loss whose profit would have been assessable qualifies; calculate it excluding wear-and-tear and initial allowances under (f)/(j). Set against the basis-year income/gains then carry unused losses through subsequent years in succession, with no stated time limit or carry-back in this provision. Exclude foreign losses whose retained-abroad profits would not have been taxable, final-account activities, and set-off against final-account income. Another person's loss is unavailable outside group relief; a bona fide merger/division requires the Commissioner's permission and conditions for transferred losses/allowances.
 
 **Group loss relief - arts. 16–22.** Both companies must be Malta resident and not tax resident elsewhere. One must directly/indirectly own **more than 50%** of the other's ordinary share capital **and votes**, and be beneficially entitled to more than 50% of distributable ordinary-shareholder profits and winding-up assets; or both must be such subsidiaries of a Malta-resident parent. The label “51% subsidiary” is not an exact 51% cutoff.
@@ -198,7 +200,7 @@ expected:
 
 ### Example 2: losses brought forward and group relief, and the 15% election compared
 
-Gozo Logistics Ltd has chargeable income of EUR 300,000 for basis year 2026, all for its Maltese taxed account, before losses. It has its own unrelieved trading losses brought forward of EUR 80,000. Its sister company, Gozo Fleet Ltd, made a 2026 trading loss of EUR 60,000 that would have gone to its Maltese taxed account. A Malta parent owns 100% of both; both are resident only in Malta, were in the group all year, and have 31 December year ends. Fleet consents in the required form and Gozo Logistics claims the whole loss by 30 September 2027, before the later statutory limit of 31 December 2027. Assume the losses satisfy article 14(1)(g), there is no double relief or article 19 arrangement, and both companies have matching tax currency (otherwise apply article 18(1)(a) conversion).
+Gozo Logistics Ltd has chargeable income of EUR 300,000 for basis year 2026, all for its Maltese taxed account, before losses. It has its own unrelieved trading losses brought forward of EUR 80,000. Its sister company, Gozo Fleet Ltd, made a 2026 trading loss of EUR 60,000 that would have gone to its Maltese taxed account. A Malta parent owns 100% of both; both are resident only in Malta, were in the group all year, and have 31 December year ends. Fleet consents in the required form and Gozo Logistics claims the whole loss by 30 September 2027, before the later statutory limit of 31 December 2027. Assume the losses satisfy article 14(1)(g), there is no double relief or article 19 arrangement and article 51 does not deny the losses, and both companies have matching tax currency (otherwise apply article 18(1)(a) conversion).
 
 Chargeable income is 300,000 - 80,000 - 60,000 = EUR 160,000. Tax at 35% is EUR 56,000. If the profits are paid out and six-sevenths is claimed, Malta tax left is EUR 8,000.
 
@@ -237,7 +239,7 @@ Obtain ownership/residence/domicile and refund registration, each income source 
 
 | Official provision / guidance | URL | Read on | Scope |
 |---|---|---|---|
-| Cap. 123 | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-26 | Read for art.2 company/residence/accounts/passive-interest definitions; arts.10–11,12(1)(c) and12(1)(u)(1) relevant clauses,14(1)(b)–(m),16–22B,43(6)(a)/(b)/(d),56(6)/(12),59–68 and Schedule items1–9,12–13; only relevant provisions, not whole Act. |
+| Cap. 123 | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-26 | Read for art.2 company/residence/accounts/passive-interest definitions; arts.10–11,12(1)(c) and12(1)(u)(1) relevant clauses,14(1)(b)–(m),16–22B,43(6)(a)/(b)/(d),51(1)–(2)/(4),56(6)/(12),59–68 and Schedule items1–9,12–13; only relevant provisions, not whole Act. |
 | Cap. 372 | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-26 | Read for arts.10(1)–(5),19(4) reused same-day financial-statements proof;42(9),42B,44(2A),48(1)–(7),(9)–(10); historical transitional refunds not usable instructions. |
 | Final tax without imputation | https://legislation.mt/eli/sl/123.217/eng/pdf | 2026-11-26 | Read for all regulations1–3. |
 | Fiscal units | https://legislation.mt/eli/sl/123.189/eng/pdf | 2026-11-26 | Read for rules1–3,4(1)–(2),6–13; specific entry/exit operations referred. |
