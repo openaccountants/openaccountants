@@ -26,7 +26,7 @@ Read the complete notice and remedy instructions, delivery evidence, return, pay
 
 | Situation | Action / exception |
 |---|---|
-| Assessment, additional/top-up assessment or objectionable decision | Object, identifying each contested item. One letter can cover several assessments, with separate deadlines; an objectionable decision printed on a national-tax assessment is treated as part of it (AWR art. 24a). |
+| Assessment, additional/top-up assessment or objectionable decision (including a loss determination where the tax law provides that remedy) | Object, identifying each contested item. One letter can cover several assessments, with separate deadlines; an objectionable decision printed on a national-tax assessment is treated as part of it (AWR art. 24a). |
 | Payment/remittance on a return, or withholding | The payment/withholding event is itself challengeable; do not wait for an assessment (AWR art. 26(2)). |
 | Provisional income tax assessment | Request revision, rather than objecting directly. Refusal is objectionable under Wet IB art. 9.5, but its special objection-end and decision rules apply. **Check this point with one of our partner accountants.** |
 | VAT entrepreneur-status notification alone | The authority directs a challenge through VAT paid on the return, or the refund decision following a negative return; do not object to status alone. |
@@ -58,7 +58,7 @@ Read the complete notice and remedy instructions, delivery evidence, return, pay
 
 ## The taxable base
 
-For each disputed item record the inspector's treatment, the requested correction, relevant facts, the law for the actual tax year, evidence and the amount. A signed objection must give the name/address, date, description of the decision and grounds (Awb art. 6:5).
+For each disputed item (for example a deduction, included income, box classification, tax credit or estimated assessment), record the inspector's treatment, the requested correction, relevant facts, the law for the actual tax year, evidence and the amount. A signed objection must give the name/address, date, description of the decision and grounds (Awb art. 6:5).
 
 **Protective objection.** If grounds are unfinished, identify the decision, sign and file on time, requesting time to supply grounds. Awb art. 6:6 requires an opportunity to cure before inadmissibility for a formal defect. Meet the actual supplementation deadline; there is no promised standard extra period. The decision clock is suspended during the statutory cure period.
 
@@ -200,7 +200,7 @@ Read the existing case records before requesting anything missing:
 - Existing objections, reduction requests, hearing invitations, cure/extension notices, default notices and submission/receipt evidence.
 - Fine/publication decision, representation authority, foreign address and any mass/special-procedure designation.
 
-Do not invent missing facts, assert automatic lateness or wait for perfect grounds while an established deadline expires. For uncertain eligibility, dates, penalty grounds, special procedures or complex legal interpretation: **Check this point with one of our partner accountants.** Reconcile assessment, payments, refunds, interest and costs before closing; record every remaining remedy and deadline.
+Do not invent missing facts, assert automatic lateness or wait for perfect grounds while an established deadline expires. For uncertain eligibility, dates, penalty grounds, special procedures or complex legal interpretation (including fiscal-unity/group issues): **Check this point with one of our partner accountants.** Reconcile assessment, payments, refunds, interest and costs before closing; record every remaining remedy and deadline.
 
 ## Sources
 
