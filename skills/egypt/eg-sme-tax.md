@@ -1,10 +1,10 @@
 ---
 name: eg-sme-tax
 description: Use this skill whenever asked about Egypt's simplified or SME tax regime for small self-employed people, freelancers, professionals, sole proprietors, and small companies. Trigger on phrases like "Egypt simplified tax", "SME tax Egypt", "small business tax Egypt", "Law 6 of 2025 Egypt", "turnover tax Egypt", "freelancer simplified Egypt", "النظام الضريبي المبسط", "ضريبة على رقم الأعمال", "قانون 6 لسنة 2025", "حوافز المشروعات الصغيرة". Covers both the SME framework under Law No. 152 of 2020 (MSME Development Law) and the NEW integrated simplified tax regime under Law No. 6 of 2025 for businesses and professionals with annual turnover up to EGP 20 million. AI replies in the user's language (English or Arabic).
-version: 1.3
+version: 1.2
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-21
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -14,7 +14,7 @@ domain: income-tax
 type: situation-rules
 ---
 
-# EG Sme Tax v1.3
+# EG Sme Tax v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -39,7 +39,7 @@ This skill covers Egypt's turnover tax regime under Law 6 of 2025 for tax year 2
 | 3,000,000 to under 10,000,000 | 1% | art. 10(4) | 2026 | same |
 | 10,000,000 to 20,000,000 | 1.5% | art. 10(5). The ETA Services Guide prints 25,000,000 here; the statute says 20,000,000 and governs | 2026 | same |
 | Tolerance | Over 20,000,000 by no more than 20%, once in the five years: stays in at 1.5% | Over 24,000,000, or a second breach: out from the following year | 2026 | same |
-| Lock-in | Five years from the day after the request | art. 5; exit on form 11/1 طلبات after that (MoF Decision 420 of 2025 art. 1: https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.420.of_.2025.pdf) | 2026 | same |
+| Lock-in | Five years from the day after the request | art. 5; exit on form 11/1 طلبات after that | 2026 | same |
 | Audit | Returns examined only after five years from the request | Income tax and VAT; art. 12 | 2026 | same |
 
 Past periods, firms up to EGP 10 million (Law 151/2026 art. 4, as corrected): open tax for periods from **1 January 2023** (the Gazette said 2022; the notice of 8 Aug 2026 corrected it) to the last period before March 2025 is assessed as below, never below the tax in the return. The taxpayer may choose Law 91 instead.
@@ -167,13 +167,6 @@ Remember the **5-year lock-in (§2)**: a taxpayer who expects to scale past EGP 
 6. Press موافق, enter your name and the legal representative's, and press send. ETA states the filing is instant, with no fee.
 7. The five years start the next day. Errors are fixed by a signed record at the tax office.
 
-**Minister of Finance Decision 420 of 2025** (Al-Waqa'i al-Misriyya (الوقائع المصرية) no. 237 cont. (d), 23 October 2025; in force the day after publication, art. 4) is the ministerial decision under Law 6:
-- **Joining** (art. 1, first para.): the request to benefit from Law 6 is made on form 10/1 طلبات, on the ETA website.
-- **Leaving** (art. 1, second para.): the request to withdraw is made on form 11/1 طلبات, on the ETA website, only after at least five years starting the day after the joining request.
-- **Annual return** (art. 2): the annual tax return for the commercial, industrial or professional activity is made on form 20 إقرارات.
-- **Simplified records** (art. 3, applying Law 6 art. 13): records: fixed-asset register (سجل الأصول الثابتة) and raw-materials stock register (سجل مخزون الخامات); books: daily sales book, daily purchases book and tax summary book (دفتر يومية المبيعات / دفتر يومية المشتريات / دفتر ملخص الضريبة); documents: the e-invoice or e-receipt, as the case requires. They may be kept on paper or electronically. `eg-bookkeeping` covers how to keep them.
-- The decision prints no box layout for form 20 and names no activity excepted from the 90% rule in art. 4.
-
 **Annual:** file form 20 on the same system. The older Form 111 guide applies to Law 152/2020 returns: https://eta.gov.eg/sites/default/files/2021-01/SMALL-PROJECTS_0.pdf. Its boxes were not read for form 20.
 
 ## Penalties and interest
@@ -239,7 +232,5 @@ If turnover is over the limit, the client is outside, or the client wants out in
 | Law 151 of 2026, art. 4 (page images read) | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf | 2026-11-01 |
 | Correction notice (page image read) | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf | 2026-11-01 |
 | ETA Form 111 guide | https://eta.gov.eg/sites/default/files/2021-01/SMALL-PROJECTS_0.pdf | 2026-11-01 |
-| Minister of Finance Decision 420 of 2025, arts. 1 to 4 (Gazette page images read) | https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.420.of_.2025.pdf | 2026-11-21 |
-| ETA income tax laws and decisions list, checked for other decisions under Law 6 | https://eta.gov.eg/ar/content/qwanyn-aldrybt-ly-aldkhl | 2026-11-21 |
 
-Not yet confirmed: the box layout of form 20 إقرارات (Decision 420 of 2025 names the form but does not print it; the ETA small projects forms page read on 21 November 2026 still carries only the Law 152 forms). Any decision excepting an activity from the 90% rule in art. 4, and any 2026 decision changing the regime: none is on the ETA income tax list read on 21 November 2026, where Decision 420 of 2025 is the only decision under Law 6. The MSME size bands in Law 152/2020 and any later update. The direct move for Law 152 enterprises rests on the Services Guide, not the statute. Whether regulated sectors, free zones or special economic zones are barred: Law 6 art. 4 does not list them, and the old skill's list had no official source. Whether a company's or a natural person's status changes any rate: the text draws no distinction. How the five-year audit date treats enterprises moved without a request.
+Not yet confirmed: ministerial decisions under Law 6/2025 (form 20 text and boxes, simplified records, any activities excepted from the 90% rule, and any 2026 change to the regime). The MSME size bands in Law 152/2020 and any later update. The direct move for Law 152 enterprises rests on the Services Guide, not the statute. Whether regulated sectors, free zones or special economic zones are barred: Law 6 art. 4 does not list them, and the old skill's list had no official source. Whether a company's or a natural person's status changes any rate: the text draws no distinction. How the five-year audit date treats enterprises moved without a request.
