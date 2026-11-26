@@ -1,10 +1,10 @@
 ---
 name: cross-border-tax-router
-description: "Entry point for the OpenAccountants cross-border and international personal tax skills, tax year 2026. Load it first when a person's facts touch more than one country, for example a US citizen living abroad, a dual resident, someone moving countries, a non-dom, an expatriating citizen, a foreign trust or foreign company owner, or how is this taxed in country A and country B. The router computes nothing. It builds the person's residence, citizenship and domicile map, names the country skills and topic skills the facts engage (foreign earned income exclusion, foreign tax credit, FBAR and FATCA, CFC and net CFC tested income, foreign trusts, exit tax), gates out what the library does not cover, fixes the order of events (ending residence before or after a sale changes the tax), and hands off to cross-border-tax-workflow-base and the topic skills."
+description: "Entry point for cross-border personal tax questions, tax year 2026: US citizens abroad, dual residence, moves, non-dom enquiries, expatriation, foreign companies and trusts. Collect the country, citizenship, residence, domicile and event map; select country, corridor and topic Guides; identify gaps and a proposed sequence; hand off to cross-border-tax-workflow-base. This router computes no tax and determines no residence, treaty entitlement, reporting obligation or filing position."
 version: "1.0"
 jurisdiction: GLOBAL
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 category: international
 type: router
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -12,93 +12,68 @@ tier: 2
 domain: cross-border
 ---
 
-# Cross-border tax router: which skills to load when a case touches more than one country v1.0
+# Cross-border tax router: which Guides to load when a case touches more than one country v1.0
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Scope and who this is for
 
-Tax year 2026. This skill carries no rates, thresholds or amounts. Those live in the country skills it routes to, and each country skill proves its own figures against its own tax authority. This skill is the entry point for any personal tax question whose facts touch more than one country. It builds the person's map (citizenship, residence and domicile in each country), names the country and topic skills the facts engage, fixes the order in which the events must be tested, and hands off to `cross-border-tax-workflow-base`. It computes no tax.
+Tax year 2026. Use this router for personal tax facts touching more than one country. It collects facts and selects Guides; it does not settle citizenship, residence, domicile, source, entity characterisation, tax liability, return lines or reporting duties. Country and topic Guides need their own applicable-year sources and conditions checked. Listing a destination here does not prove its contents or guarantee complete coverage.
 
-Before any topic skill runs, three things must be settled: who the person is to each tax system (citizenship, residence, domicile), which countries' rules engage, and in what order the events happen. This skill settles all three, then loads `cross-border-tax-workflow-base` and the right country and topic skills.
+Preserve the person's case, including every country, date, amount and event. For example, a **US citizen living in Australia who wants to sell shares** needs both countries kept in the plan. Route the US questions to the US Guides and the Australian questions to `au-tax-residency-2` and the relevant Australian Guide. Do not supply Australian rules from this router.
 
-The person never needs to see this skill. They describe a situation in plain words, such as being a US citizen living in Australia who wants to sell shares, and the assistant uses this skill to decide what to load.
+The output is an unreviewed working paper, not advice, an engagement or a filed return. Hand it to a licensed accountant in each relevant jurisdiction before action.
 
-The router computes nothing: no tax, no characterisation, no return lines. If you find yourself computing a liability here, you have skipped the hand-off.
+## Ask for missing facts
 
-Why a router exists. Within one country the rules fit together. Across borders the same income can be taxed by two systems, a treaty can reallocate the taxing right, and the order of events (when residence ends, when an asset is sold, when a person gives up citizenship) can change which country taxes at all. A single-country answer to a two-country question is incomplete by construction.
+Read the existing case materials first. Collect together:
 
-Everything the loaded skills produce is a working paper until a licensed accountant in the relevant country reviews and signs it off. This skill is not tax, legal or financial advice, is not an engagement, and does not produce a filed return. Cross-border outcomes turn on entity and treaty facts and significant judgement, and the order of events often changes the result. The work must end by handing that working paper to that accountant.
-
-## Ask the client first
-
-- Which citizenships do you hold, with or without a passport, and do you hold, or have you ever held, a US green card?
-- Which countries were you living in during the tax year, on which dates did you arrive and leave, and where do you have a home available to you?
-- Are you moving, or planning to move, and when exactly will each move happen?
-- What is the income, sale, gift or other event, and on what date will it happen?
-- Do you own or benefit from any foreign company, trust, partnership, pension or investment fund?
-- Have you already filed returns, or claimed treaty relief, in any of these countries for this year?
+- All citizenships, whether or not a passport is held; current and former US green-card status and dates. Record green-card status separately from citizenship.
+- Countries lived in during the year, arrival/departure dates, homes available, family and economic ties, and proposed moves.
+- Each income item, sale, gift or other event, its country connections and exact date; preserve the original amounts and years.
+- Foreign companies, trusts, partnerships, pensions and investment funds owned or benefited from.
+- Returns already filed, treaty claims, elections and taxes already paid or withheld in each country.
 
 ## The method, step by step
 
-1. **Build the map for every country in play.** For each country record citizenship, tax residence under that country's own domestic test, and domicile where the country still uses it. Residence is decided country by country, each under its own law, and a person can be resident in two countries at once. The US test for non-citizens is the green card test or the substantial presence test for the calendar year ([IRS: determining an individual's tax residency status](https://www.irs.gov/individuals/international-taxpayers/determining-an-individuals-tax-residency-status)); route the detail to `us-tax-residency`. The UK decides residence one tax year at a time under the statutory residence test ([HMRC RDR3](https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3)); route the detail to `uk-statutory-residence-test`.
-2. **Mark every taxing basis.** A US citizen or resident alien is taxed on worldwide income wherever they live ([IRS: US citizens and resident aliens abroad](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad)). So for a US citizen the US taxing right is always on, and a finding that the person is not resident in the US changes only the relief, never the right. Income can also be taxed both by the country of residence and by the country it comes from: HMRC says a UK resident "may be taxed on your foreign income by the UK and by the country where your income is from" ([GOV.UK: if you're taxed twice](https://www.gov.uk/tax-foreign-income/taxed-twice)). A domicile test still matters in some countries (see the table in Step 0); the UK replaced its remittance basis with the 4-year foreign income and gains (FIG) regime on 6 April 2025, which is only available to a qualifying resident ([GOV.UK: 4-year foreign income and gains regime](https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime)).
-3. **If two countries both treat the person as resident, flag the treaty tie-breaker.** A treaty tie-breaker decides a single treaty residence. In the UK and US convention the order is a permanent home; if there is a permanent home in both States, the centre of vital interests; if that cannot be determined, or there is no permanent home in either State, habitual abode; then nationality; then mutual agreement ([UK and US double taxation convention, Article 4](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force)). Other treaties use their own text, so read the named treaty. `oecd-model-treaty-defaults` carries the model tie-breaker cascade (Article 4(2) of the OECD Model). `cross-border-tax-workflow-base` carries the tie-breaker step for the UK and US convention (Article 4(4)) and the treaty-bridge convention, including the check of the US saving clause. The tie-breaker does not take a US citizen out of US tax. The UK and US convention keeps each State's right to tax "by reason of citizenship ... its citizens, as if this Convention had not come into effect" (Article 1(4), subject to the exceptions in Article 1(5)) ([UK and US double taxation convention](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force)). A dual-resident taxpayer who claims treaty benefits "must file a return using Form 1040-NR with Form 8833 attached, and compute your tax as a nonresident alien", and "For purposes other than figuring your tax, you will be treated as a U.S. resident" ([IRS Publication 519](https://www.irs.gov/publications/p519)).
-4. **Pick the skills the facts engage** from the tables in Step 1: one residence or country skill per country in the map, plus the topic skills the facts trigger, including reporting the person did not ask about.
-5. **Run the scope gate** in Step 2. Say plainly which part no skill covers.
-6. **Fix the order of events** with Step 3 before anything is computed, and tell the person the order and why.
-7. **Hand off** as in Step 4: load `cross-border-tax-workflow-base` first, then the topic skills, then the country skills in the order fixed in Step 3.
+### Step 0: Build the map; leave unresolved facts unresolved
 
-### Step 0: Build the residency, citizenship and domicile map
+For every country, record citizenship, possible domestic tax residence and dates, domicile or newcomer-regime questions, source-country connections, and the events being planned. Request the applicable domestic test from that country's Guide. Do not assume that residence, citizenship or source alone establishes every taxing right.
 
-**Basis a country may tax on**
-
-| Basis a country may tax on | Typical trigger | Where to route |
-| --- | --- | --- |
-| Citizenship (worldwide, wherever the person lives) | Being a citizen of that country (a passport is not the test) | The United States: `us-citizen-moving-abroad-tax`, `us-foreign-earned-income-2555`, `us-foreign-tax-credit-1116` |
-| Tax residence (worldwide while resident) | Days present, a home, ties, centre of interests, each under that country's own test | `us-tax-residency`, `uk-statutory-residence-test`, `ca-tax-residency`, `in-tax-residency`, `sg-tax-residency`, `za-tax-residency`, `nz-tax-residency`, `au-tax-residency-2`, `ae-tax-residency` |
-| Domicile or a special regime for newcomers | Domicile, or a time-limited regime for new arrivals | `mt-non-dom`, `ie-non-dom`, `cy-non-dom`; for the UK from 6 April 2025, `uk-non-dom` |
-| Source (that country's income only) | Income arising there, property there, a business presence there | The country skill for the source country; `us-nonresident-cgt`; `permanent-establishment-risk` |
-
-Capture, in one structured block:
-
-~~~
-Cross-border map: for each country in play, record
-  1. Citizenship(s) held, including any US green card (citizenship taxation and exit-tax tests)
-  2. Tax residence(s) now, and any change of residence in play, with dates (each country's residence test)
-  3. Domicile, where a country in the map still uses it (non-dom and newcomer regimes)
-  4. The income, asset or event in question, and WHEN each happens (sequencing)
-  5. Any foreign companies, trusts, partnerships, pensions or funds owned or benefited from (anti-deferral and reporting skills)
-If one of these is missing, assume the position that gives the broader taxing right
-and triggers the reporting obligation (cross-border-tax-workflow-base, conservative default),
-and say so.
-~~~
-
-Do not go past Step 0 until citizenship, current residence in each country, and the event in question are known. Those three decide which skills load.
-
-### Step 1: Identify the corridors and topics the facts engage
-
-**Signal in the facts and the topic skill to load**
-
-| Signal in the facts | Topic skill |
+| Question to investigate | Where to route; no tax result is stated here |
 | --- | --- |
-| US citizen or green card holder living or working abroad; foreign salary; foreign taxes paid | `us-foreign-earned-income-2555` (exclusion) and `us-foreign-tax-credit-1116` (credit); the choice between them is made in those two skills |
-| US person with foreign bank, brokerage or pension accounts | `us-fbar-fatca-reporting`, `us-fbar-and-fatca-8938` |
-| US person owning a large stake in a foreign company; a foreign company with US owners | `us-gilti-fdii-beat` (subpart F and net CFC tested income), `us-form-5471-cfc-information` (Form 5471) |
-| US person who is a grantor, owner or beneficiary of a foreign trust; gifts or inheritances from non-US persons | `us-foreign-trust-reporting` |
-| US citizen or long-term green card holder giving up US status | `us-expatriation-exit-tax` |
-| Non-citizen who may be a US resident, or who arrives or leaves the US mid-year | `us-tax-residency` |
+| US citizenship and worldwide-income questions | `us-citizen-moving-abroad-tax`, `us-foreign-earned-income-2555`, `us-foreign-tax-credit-1116` |
+| Domestic residence, including green-card, substantial-presence, first-year-election or UK statutory-residence-test questions | `us-tax-residency`, `uk-statutory-residence-test`, `ca-tax-residency`, `in-tax-residency`, `sg-tax-residency`, `za-tax-residency`, `nz-tax-residency`, `au-tax-residency-2`, `ae-tax-residency` |
+| Domicile, non-dom or newcomer questions | `mt-non-dom`, `ie-non-dom`, `cy-non-dom`, `uk-non-dom` |
+| Income, assets, property or business connections to a source country | The relevant country Guide; `us-nonresident-cgt`; `permanent-establishment-risk` |
+
+**US boundary.** US citizens and resident aliens generally come within US worldwide-income taxation; do not assume that living abroad settles US liability. Determine applicable Code and treaty exceptions, relief and filing requirements in the US Guides and operative sources. Do not replace this with “the US right is always on” or “residence changes only relief.” [IRS, citizens and resident aliens abroad](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad).
+
+**UK non-dom boundary.** The 4-year foreign income and gains (FIG) regime replaced the remittance basis on **6 April 2025**. That date is a routing warning, not a finding that the person qualifies: send eligibility, remaining years, qualifying income/gains, claims and lost allowances to `uk-non-dom`. [HMRC, FIG regime](https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime).
+
+If any material fact is missing, label the affected tax or filing conclusion **undetermined; do not use**. Ask for the missing evidence and list the issue for review. A conservative scenario may be shown separately with explicit assumptions; it is not a legal conclusion or an instruction to file an unnecessary return. Apply this boundary when using the conservative-default discussion in `cross-border-tax-workflow-base` too. Do not compute until the necessary citizenship/status, residence evidence and event facts are established.
+
+### Step 1: Select topics and corridors
+
+These are search signals, not findings of liability, entitlement or a filing duty. Retrieve the current destination; check its scope, year and operative sources before applying it. All Australian, Indian, Singaporean, Chinese, South African and New Zealand references here are routes only.
+
+| Signal in the facts | Topic Guides to retrieve |
+| --- | --- |
+| US citizen or green-card holder abroad; foreign salary or foreign taxes | `us-foreign-earned-income-2555`, `us-foreign-tax-credit-1116`; assess eligibility and interaction there |
+| Foreign bank, brokerage or pension accounts and a possible US connection | `us-fbar-fatca-reporting`, `us-fbar-and-fatca-8938` |
+| Foreign company with US owners or a US person's foreign-company interest | `us-gilti-fdii-beat` for subpart F / net CFC tested income enquiries; `us-form-5471-cfc-information` for Form 5471 enquiries |
+| Foreign trust grantor, owner or beneficiary; gifts or inheritances from non-US persons | `us-foreign-trust-reporting` |
+| US citizen or long-term green-card holder considering giving up status | `us-expatriation-exit-tax` |
+| Possible US residence, or arrival/departure mid-year | `us-tax-residency` |
 | Non-US person selling US assets | `us-nonresident-cgt` |
-| A position that relies on a tax treaty (residence tie-breaker, reduced withholding, relief article) | `oecd-model-treaty-defaults` for the model wording; the named treaty itself for the actual article; `withholding-tax-matrix` for withholding |
-| Someone leaving a country that may charge tax on departure | `us-expatriation-exit-tax`, `leaving-australia-tax-residency-cgt`, `leaving-france-exit-tax`, `leaving-south-africa-tax-emigration`, `ca-tax-residency`, `norway-to-switzerland-wealth-tax-exit`, `germany-to-switzerland-cross-border-tax` |
-| A non-dom or newcomer regime | `uk-non-dom`, `mt-non-dom`, `ie-non-dom`, `cy-non-dom`, `moving-to-malta-tax-residence` |
-| A worker whose social security could fall in more than one EU, EEA, Swiss or UK system | `eu-social-security-coordination`, `cross-border-payroll-coordination` |
-| Accounts reported between tax authorities | `fatca-crs-automatic-exchange` |
-| A family holding company abroad that the home country might tax under a CFC rule | `cfc-and-substance-rules-compared` |
+| Treaty residence, reduced withholding or double-tax relief | `oecd-model-treaty-defaults` as a model-text reference only; `withholding-tax-matrix`; the actual treaty and protocols, followed by the treaty gate below |
+| Departure-tax question | `us-expatriation-exit-tax`, `leaving-australia-tax-residency-cgt`, `leaving-france-exit-tax`, `leaving-south-africa-tax-emigration`, `ca-tax-residency`, `norway-to-switzerland-wealth-tax-exit`, `germany-to-switzerland-cross-border-tax` |
+| Non-dom or newcomer question | `uk-non-dom`, `mt-non-dom`, `ie-non-dom`, `cy-non-dom`, `moving-to-malta-tax-residence` |
+| Worker connected to multiple EU, EEA, Swiss or UK social-security systems | `eu-social-security-coordination`, `cross-border-payroll-coordination` |
+| Exchange of account information between authorities | `fatca-crs-automatic-exchange` |
+| Foreign family holding company / possible CFC issue | `cfc-and-substance-rules-compared` |
 
-**Corridor skills already written for a whole move**
-
-| Move | Corridor skill |
+| Move or corridor from the original case | Corridor Guide to retrieve |
 | --- | --- |
 | US citizen moving abroad | `us-citizen-moving-abroad-tax` |
 | UK to the UAE | `uk-to-uae-relocation-tax` |
@@ -109,106 +84,61 @@ Do not go past Step 0 until citizenship, current residence in each country, and 
 | Leaving Australia | `leaving-australia-tax-residency-cgt` |
 | Moving between US states | `us-multi-state-residency-and-allocation` |
 
-Then load the country skills for each country in the map through the normal single-country flow. The router's job is to bind the topic skills to the country skills in the right order.
+Also retrieve a relevant country Guide for every country in the map. Do not silently discard an uncovered country or present the covered country's answer as the whole answer.
 
-If the facts match a topic, route to it (Step 4). If a needed country or corridor is missing, go to Step 2.
+### Step 2: Scope and treaty gates
 
-### Step 2: Scope gate, what the library does not cover yet
+Check the current catalog rather than asserting that a topic has no dedicated Guide. Use this referral for any unresolved or specialist application: **Check this point with one of our partner accountants.** Identify the affected topic, country and missing evidence alongside that sentence.
 
-The library covers the US citizen and US resident side in depth, the residence tests of the countries listed in Step 0, the non-dom and newcomer regimes listed there, and the corridor skills in Step 1. Many situations still sit partly outside it. Route the covered part to the closest skill, and name the part that needs a local accountant.
-
-**If the person actually needs... and what to say**
-
-| If the person actually needs... | What to say |
+| Question needing a gate | Action |
 | --- | --- |
-| The other country's own treatment of the same event, where no skill for that country covers it | Load that country's skill if it exists. If not, name it as an open item for a local accountant. Never borrow another country's rule. |
-| A specific article of a named treaty, read in full | `oecd-model-treaty-defaults` gives the model wording only. Actual treaties differ from the model and from each other. Flag the named article for human review. |
-| US state residency or sourcing | `us-multi-state-residency-and-allocation` and the relevant state skill. Flag it if a state is in play. |
-| Foreign mutual funds or ETFs held by a US person (PFIC) | No dedicated skill yet. `us-fbar-and-fatca-8938` touches the regime. Flag it for a specialist. |
-| Social security outside the EU, EEA, Swiss and UK coordination rules, or a foreign pension's character | Not covered beyond `eu-social-security-coordination`. Flag it. |
-| Estate, gift or inheritance tax across borders | `inheritance-estate-gift-matrix` is a starting point only. Situs and treaty rules differ sharply from income tax. Flag it. |
-| A non-US anti-deferral regime (an EU or UK controlled foreign company rule) | `cfc-and-substance-rules-compared` states the Malta, Ireland, Cyprus, Netherlands, Luxembourg and UK rules; `eu-directives-cross-border` describes the EU directive layer. Applying a national rule to a client needs a local accountant. |
+| Another country's treatment, or a missing/insufficient country or corridor Guide | Keep the country's issue in the plan; use the partner-accountant referral above for the unresolved treatment. Never borrow another country's rule. |
+| Actual treaty residence, a reduced rate, relief or a named treaty article | Retrieve and read the operative treaty, protocols and effective dates. Check person/tax coverage, domestic-law interaction, residence definition, any tie-breaker and saving-clause exceptions. Use the partner-accountant referral above for the application. Never adopt a model result as the actual treaty result. |
+| US state residence or sourcing | Retrieve `us-multi-state-residency-and-allocation` and the relevant state Guide; refer the unresolved application. |
+| Foreign mutual funds or ETFs held by a US person / PFIC | Search current Guides; retain `us-fbar-and-fatca-8938` as a reporting pointer. Use the partner-accountant referral above for PFIC classification and treatment. |
+| Social security beyond the EU, EEA, Swiss and UK routes; foreign pension character | Search applicable country/coordination Guides. Use the partner-accountant referral above for the unresolved issue. |
+| Cross-border estate, gift or inheritance | Retrieve `inheritance-estate-gift-matrix` as a starting point; use the partner-accountant referral above for the actual application. |
+| Non-US anti-deferral / EU or UK CFC question | Retrieve `cfc-and-substance-rules-compared` and `eu-directives-cross-border`; retain Malta, Ireland, Cyprus, Netherlands, Luxembourg and UK as country questions to investigate. Use the partner-accountant referral above for the national application. |
 
-Out-of-scope message template:
+**UK–US treaty example retained as a reading route.** In the [UK–US convention](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force), request review of Article 4(1)–(2) before the individual tie-breaker in Article 4(4). Preserve the questions of permanent home, centre of vital interests, habitual abode, nationality and competent-authority mutual agreement for that review; this router does not decide their outcome. Read Article 1(4) together with **all** Article 1(5) saving-clause exceptions. Do not import the OECD Model Article 4(2) into an actual treaty. For the person's treaty position: **Check this point with one of our partner accountants.**
 
-> Tell the person that the [covered part] can be worked using [skill], but [the other country's treatment / the named treaty article / PFIC / estate tax] is not covered and turns on facts that should not be guessed across a border. Flag that part to a local accountant rather than improvising, and ask whether to handle the covered part and mark the rest as open items for sign-off.
+For a dual-resident non-citizen's US income-tax computation, other-purpose resident status, Form 1040-NR and Form 8833 questions, retrieve `us-tax-residency` and check the applicable provisions. For the actual filing position: **Check this point with one of our partner accountants.** No universal dual-resident filing rule is supplied here.
 
-Never invent another country's treatment or a treaty outcome. The conservative default in `cross-border-tax-workflow-base` governs missing facts inside a covered topic. It is not permission to invent an uncovered country's rule.
+Tell the person which part can be researched from retrieved Guides, which part remains undetermined, and which specialist must clear it. Do not turn a coverage gap into an assumed tax result.
 
-### Step 3: Sequence, the order of events changes the tax
+### Step 3: Propose a sequence for review
 
-When two or more steps apply, test them in the order the events occur and the taxing rights attach. Later steps depend on earlier ones.
+Keep the actual chronology. The order below is a research dependency list, not a finding that a tax is imposed or relief is available. Review the relevant country and treaty rules before recommending an event date.
 
-**Combined fact pattern, order, and why**
+| Combined fact pattern retained | Questions to resolve before computation or action |
+| --- | --- |
+| Changing residence and selling an asset | Establish potential residence-change and sale dates for each country, then investigate sale and departure treatment, source-country issues and any relief. Keep Canada's deemed-disposition / departure-tax question in `ca-tax-residency` and the UK's temporary-non-residence / return question in `uk-statutory-residence-test`. For their application: **Check this point with one of our partner accountants.** |
+| US citizen and anything else | Include the US topic review alongside every other relevant country. Test applicable exceptions and relief; never promise that a credit, exclusion or treaty removes all double tax. |
+| Green-card holder considering treaty residence elsewhere | Retrieve `us-tax-residency` and `us-expatriation-exit-tax` together before an election or filing. Preserve long-term-resident status, section 7701(b)(6), section 877A, treaty-benefit waiver, IRS notification, and Forms 8833 and 8854 as questions to check, not established requirements or a finding of exit tax. For the application: **Check this point with one of our partner accountants.** |
+| Foreign trust distribution or sale | Ask `us-foreign-trust-reporting` to investigate grantor/non-grantor status, ownership, the sale/distribution and reporting before determining who is taxed. |
+| Expatriation followed by a sale | Retrieve `us-expatriation-exit-tax`; ask for the applicable section 877 / 877A, long-term-resident and covered-expatriate analysis before recommending the sale sequence. For the application: **Check this point with one of our partner accountants.** |
+| Foreign-company income followed by a distribution | Retrieve `us-gilti-fdii-beat` and `us-form-5471-cfc-information`; investigate any prior inclusion and later distribution together, without assuming a particular inclusion or automatic relief from double counting. |
 
-| Combined fact pattern | Order | Why |
-| --- | --- | --- |
-| Changing tax residence and selling an asset | Fix the date residence ends in each country first, then test the sale under each country's rule as of that date | Whether a country can tax a gain often turns on residence at the moment of sale. Some countries also treat a departing resident as having sold certain property on departure: Canada says a person leaving is "considered to have sold certain types of property (even if you have not sold them) at their fair market value", which "is called a deemed disposition and you may have to report a capital gain (also known as departure tax)" ([CRA: leaving Canada](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/leaving-canada-emigrants.html)). The UK can tax certain income and gains on return after a period of temporary non-residence ([HMRC RDR3](https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3)). |
-| US citizen and anything else | Apply the US topic skill to every item, then use the credit, exclusion or treaty to relieve double tax | Citizenship taxation means a non-US residence finding never removes the US right; it changes only the relief. |
-| A green card holder who becomes treaty resident elsewhere | Test the treaty tie-breaker and the expatriation rules together, before the return is filed | If a treaty tie-breaker treats the person as a non-resident alien, this "can trigger section 877A expatriation tax" in certain instances ([IRS Publication 519](https://www.irs.gov/publications/p519)). The IRS says a long-term resident (section 7701(b)(6)) stops being a lawful permanent resident for this purpose if the individual "commences to be treated as a resident of a foreign country under the provisions of a tax treaty", "does not waive the benefits of the treaty" and "notifies the IRS of such treatment on Forms 8833 and 8854" ([IRS: expatriation tax](https://www.irs.gov/individuals/international-taxpayers/expatriation-tax)). A green card holder who is not a long-term resident is outside this rule. Route to `us-tax-residency` and `us-expatriation-exit-tax`. |
-| Foreign trust distribution or sale | Characterise the trust (grantor or non-grantor) first, then the distribution | Who is taxed on the trust's income depends on that first answer. Route to `us-foreign-trust-reporting`. |
-| Expatriation in play | Run the covered expatriate and exit tax test before planning any later sale | The expatriation rules in sections 877 and 877A apply to US citizens who renounce and to long-term residents who end their US resident status; whether exit tax is due turns on further tests ([IRS: expatriation tax](https://www.irs.gov/individuals/international-taxpayers/expatriation-tax)). Route to `us-expatriation-exit-tax`. |
-| Controlled foreign company income plus a later distribution | The shareholder's inclusion first, then the distribution | Avoids counting the same income twice. Route to `us-gilti-fdii-beat`, with Form 5471 in `us-form-5471-cfc-information`. |
+Explain the proposed order using the person's actual dates: residence/status questions, the country A and country B event questions, then any available relief and reporting. State which dependency remains undetermined; do not imply that residence at sale is the sole taxing test.
 
-State the order to the person before anything is computed:
+### Step 4: Handoff and self-check
 
-> Tell the person that the order matters: fix [the date your residence ends] first, because [whether the gain is taxed depends on residence at the sale], then apply [country A] and [country B] to the sale as of that date, then [the relief].
-
-### Step 4: Handoff
-
-1. Load `cross-border-tax-workflow-base`. It is the shared method: the residence map, the treaty bridge, the conservative default, the flash points and the hand-off to a licensed accountant.
-2. Load the topic skills identified in Step 1.
-3. Load the country skills for each country in the map, applied in the order fixed in Step 3.
-
-Then tell the person, in one line, what you loaded and what you will produce:
-
-> Tell the person that the cross-border workflow, [topic skills] and the [country] skills have been loaded. Produce an ordered plan: the steps in order, each country's treatment at each step, how double tax is relieved, the forms each step triggers, and the open points for a licensed accountant in the lead country. Ask for any missing facts first.
-
-Hand control to the structured intake in `cross-border-tax-workflow-base`. Do not start computing inside the router.
-
-### Router self-checks
-
-Before handing off, confirm:
-
-- [ ] Citizenship, residence and (where used) domicile captured for every country in play
-- [ ] Every taxing basis identified: citizenship for the US, residence, domicile or newcomer regime, source
-- [ ] A possible dual residence flagged for the treaty tie-breaker
-- [ ] Every topic the facts touch identified, including reporting the person did not ask about
-- [ ] Every uncovered part (another country's rule, a named treaty article, PFIC, estate tax) named, not improvised
-- [ ] The order of events fixed and stated to the person before any computation
-- [ ] `cross-border-tax-workflow-base` loaded alongside the topic skills, never a topic skill alone
-- [ ] Every skill named in the plan is one the catalog returns
-
+1. Load `cross-border-tax-workflow-base`, subject to this router's missing-facts and treaty boundaries.
+2. Load the selected topic, corridor and country Guides; confirm each exists in the current catalog.
+3. Produce an ordered working-paper plan showing the country map, evidence, event dates, rules still to establish, potential relief and forms to check, and every issue for the reviewing accountants. Say only what was actually retrieved.
+4. Check that every original country, example, amount, year and topic remains accounted for; citizenship and green-card status are separate; unresolved residence/source/domicile questions remain visible; no uncovered treatment is invented; and no calculation has started inside the router.
 ## When to refuse or refer
 
-- Refuse to give a single-country answer to a question whose facts touch two countries. Route it instead.
-- Refer to a licensed accountant in the relevant country any part that no skill covers, including the domestic rule of a country with no skill.
-- Refer any position that depends on a specific article of a named treaty, after reading that article.
-- Refer before the person acts on anything that cannot be undone: a sale, a distribution, giving up residence, giving up citizenship or a green card, or filing.
-- Refer any foreign fund held by a US person, and any cross-border estate, gift or inheritance question.
-- Refuse to state another country's rate, threshold or rule from memory. Load the country skill or flag the gap.
-
-### Prohibitions
-
-- Never compute or characterise tax inside the router. Route and hand off.
-- Never load a topic skill without also loading `cross-border-tax-workflow-base`.
-- Never answer a multi-country question one country at a time as if the others did not exist.
-- Never assume a non-US residence finding removes the US citizenship taxing right. It changes only the relief.
-- Never invent another country's domestic rule or a treaty outcome. Name it and flag it for a local accountant.
-- Never plan a sale before fixing the date residence ends and, where relevant, the expatriation test.
+Refer unresolved applications through Step 2. Hand off before any sale, distribution, residence/status change, citizenship or green-card surrender, election or filing. Do not take those actions through this router.
 
 ## Sources
 
-| Source | URL | Read on |
-| --- | --- | --- |
-| IRS, determining an individual's tax residency status. Read for the green card and substantial presence tests and dual-status years. | https://www.irs.gov/individuals/international-taxpayers/determining-an-individuals-tax-residency-status | 2026-11-14 |
-| IRS, US citizens and resident aliens abroad. Read for worldwide taxation of citizens and resident aliens. | https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad | 2026-11-14 |
-| IRS Publication 519, US tax guide for aliens. Read for the tiebreaker rule, Form 1040-NR with Form 8833, treatment as a US resident for other purposes, and the section 877A note. | https://www.irs.gov/publications/p519 | 2026-11-14 |
-| IRS, expatriation tax. Read for sections 877 and 877A, long-term residents and the treaty-resident rule (Forms 8833 and 8854). | https://www.irs.gov/individuals/international-taxpayers/expatriation-tax | 2026-11-14 |
-| UK and US double taxation convention, as amended by the 2002 protocol. Read for art. 1(4) and (5) (saving clause) and art. 4(4) (tie-breaker). | https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force | 2026-11-14 |
-| HMRC RDR3, statutory residence test guidance. Read for the tax-year basis and part 7, temporary non-residence. | https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3 | 2026-11-14 |
-| GOV.UK, check if you can claim the 4-year foreign income and gains regime. Read for the replacement of the remittance basis on 6 April 2025. | https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime | 2026-11-14 |
-| GOV.UK, if you're taxed twice. Read for taxation by both the UK and the source country. | https://www.gov.uk/tax-foreign-income/taxed-twice | 2026-11-14 |
-| CRA, leaving Canada (emigrants). Read for the deemed disposition and departure tax, opened through a rendering service because the site timed out on a direct request. | https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/leaving-canada-emigrants.html | 2026-11-14 |
+These reads support only the limited boundary statements or named reading routes above, not approval of the linked Guides or an individual outcome.
 
-Not yet confirmed: this router states no figure of its own. The full text of any named treaty other than the UK and US convention is not read here and must be read before a treaty position is taken; the PFIC rules for foreign funds held by a US person have no skill yet; cross-border estate, gift and inheritance outcomes are not covered.
+| Source and scope actually read | URL | Read on |
+| --- | --- | --- |
+| IRS citizens and resident aliens abroad: opening worldwide-income statement; relevant-return relief caveat | https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad | 2026-11-26 |
+| HMRC FIG guidance: replacement date; eligibility, claims and allowance sections checked to keep the route from implying entitlement | https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime | 2026-11-26 |
+| UK–US convention: Article 4(1)–(4) and Article 1(4)–(5), reading route only | https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force | 2026-11-26 |
+
+Not yet confirmed: this router establishes no individual residence, treaty entitlement, tax, relief or filing outcome. Unresolved applications remain referred or marked undetermined; do not use.
