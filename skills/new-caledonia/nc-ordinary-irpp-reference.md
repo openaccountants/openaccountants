@@ -15,21 +15,21 @@ jurisdiction: NC
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-11-14
-version: 0.2
+last_updated: 2026-11-26
+version: 0.3
 depends_on:
   - workflow-base
   - income-tax-workflow-base
 type: computation
 ---
 
-# New Caledonia: ordinary one-part IRPP reference v0.2
+# New Caledonia: ordinary one-part IRPP reference v0.3
 
 > **General reference only.** This source-cited Tier 2 conditional draft illustrates a selected ordinary raw income tax component. It does not complete an income tax engagement, final assessment, withholding or payment. Guide presence, source preparation and component checks do not establish comprehensive jurisdiction acceptance.
 
-**Answer first.** New Caledonian personal income tax (IRPP) is worked out on net taxable income rounded **down to the lower thousand francs** (article 132), divided by the household's parts, with a progressive scale per part: nothing on the first **1.000.000 F**, then **4%**, **12%**, **25%** and **40%** (article 136 I). For one part (N = 1) the raw tax on the floored income B is 4% of B between 1.000.000 and 1.800.000 F, 12% between 1.800.000 and 3.000.000 F, 25% between 3.000.000 and 4.500.000 F and 40% above. Reductions such as the redistributive relief (article 136 II) come afterwards and are not computed here. Amounts are in francs Pacifique (XPF).
+**Answer first.** Round net taxable income down to the lower thousand francs and divide by the household's parts (article 132). For one part, the first 1,000,000 XPF attracts no raw income tax. Apply the article 136 I(1) rates to successive slices of the floored income. Tax the slice above 1,000,000 through 1,800,000 XPF at 4%, above 1,800,000 through 3,000,000 XPF at 12%, above 3,000,000 through 4,500,000 XPF at 25% and above 4,500,000 XPF at 40%. Add the tax on each slice. Article 136 II reductions, including the redistributive reduction, are separate calculations.
 
-**Tax year 2026.** The code read on 14 November 2026 (Juridoc, updated 14 January 2026, citing an arrêté of 18 March 2026) gives this scale, last amended in 2017. It applies to 2025 income declared in 2026 and, unless the 2026 budget laws change it, to 2026 income declared in 2027. Ryan's cases are labelled "selected 2025"; the scale and floor give the same results for 2026.
+**2026 filing cycle.** The cases illustrate 2025 income declared in 2026. The 2017 amendments to article 136 added the quotient cap and amended reductions. Establish the operative scale and floor for 2026 income declared in 2027 before reusing these cases. See Sources for the compilation's date discrepancy.
 
 ## Scope and who this is for
 
@@ -59,8 +59,8 @@ All amounts are francs Pacifique, as identified by the DSF calculation page. No 
 |---|---|---|
 | Rounding of taxable income | Rounded to the lower thousand francs before division by parts | [L1, article 132](https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf) |
 | Scale per part | Nil to 1.000.000 F; 4% to 1.800.000 F; 12% to 3.000.000 F; 25% to 4.500.000 F; 40% above (band table below) | [L1, article 136 I(1)](https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf) |
-| Cap on the quotient familial benefit | 300 000 francs per half-part, or half of that per quarter-part | [L1, article 136 I(2)](https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf) |
-| Redistributive reduction, gross global income limit (not computed here) | 6 100 000 francs for the first part (single, widowed, divorced); 12 200 000 francs for the first two parts (joint) | [L1, article 136 II(1)](https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf) |
+| Cap on the quotient familial benefit | 300,000 XPF per additional half-part and 150,000 XPF per additional quarter-part. The baseline is one part for single, divorced, widowed or separately assessed taxpayers under article Lp. 52 III and two parts for married or civil-partnered taxpayers assessed jointly. | [L1, article 136 I(2)](https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf) |
+| Redistributive reduction, gross global income limit for taxpayers domiciled in New Caledonia under article 48 | 6,100,000 XPF inclusive for the first part (single, widowed, divorced) and 12,200,000 XPF inclusive for the first two parts (joint assessment). Add 1,525,000 XPF for each further half-part or 762,500 XPF for each further quarter-part. This example set stops at raw tax. | [L1, article 136 II(1)](https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf) |
 | Currency | Francs Pacifique; the DSF simulator covers 2025, 2024 and 2023 | [L3, DSF calculation page](https://dsf.gouv.nc/particuliers-impots-et-taxes/impot-sur-le-revenu/calculer-mon-impot-sur-le-revenu) |
 
 ### Intake and component mechanics
@@ -91,7 +91,7 @@ Two of Ryan's boundary checks, as CI recomputes them (one part, XPF).
 **Case 1 (NCIR09), net taxable income 1,234,567.89.** Floored to B = 1,234,000. Only the 4% band is reached: 234,000 at 4% = 9,360 raw tax.
 
 ```oa-check
-name: New Caledonia IRPP, one part, income 1234567.89 F (2026 scale)
+name: New Caledonia IRPP, one part, income 1234567.89 F (2025 income)
 inputs:
   income: 1234567.89
 steps:
@@ -109,7 +109,7 @@ expected:
 **Case 2 (NCIR21), a decision: marginal bands or the top rate on everything?** Income 4,501,000. The four widths are 800,000, 1,200,000, 1,500,000 and 1,000, charged 32,000 + 144,000 + 375,000 + 400 = 551,400. Applying 40% to all of B would wrongly give 1,800,400.
 
 ```oa-check
-name: New Caledonia IRPP, one part, income 4501000 F (2026 scale)
+name: New Caledonia IRPP, one part, income 4501000 F (2025 income)
 inputs:
   income: 4501000
 steps:
@@ -234,6 +234,7 @@ This document is general reference material and does not constitute tax, legal o
 | L1: Juridoc, Code des impôts de la Nouvelle-Calédonie (update of 14/01/2026) | Read for article 132 (lower-thousand floor), article 136 I(1) (scale), 136 I(2) (quotient cap) and 136 II(1) (redistributive limits) | https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf | 2026-11-14 |
 | L2: DSF, notice for the 2025 income declaration | Read for additional parts, hosted-child abatement and quotient limits (2025 context); downloaded, not re-read in full | https://dsf.gouv.nc/sites/default/files/documents/Notice%20d%C3%A9claration%20de%20revenus%20normale%202025.pdf | 2026-10-29 (read by Ryan); downloaded 2026-11-14 |
 | L3: DSF, calculating income tax | Read for the currency (francs Pacifique), the reference to article 136 I and the 2025, 2024 and 2023 simulators | https://dsf.gouv.nc/particuliers-impots-et-taxes/impot-sur-le-revenu/calculer-mon-impot-sur-le-revenu | 2026-11-14 |
+| L4: Loi du pays n° 2017-1, articles 21 and 22, JONC pp 1610–1611 | Article 21 inserts article 136 I(2) and numbers the existing scale I(1). Article 22 amends reductions. | https://juridoc.gouv.nc/JuriDoc/JdJ201.nsf/JoncP/2017-01610/%24File/2017-1610.pdf?openElement= and https://juridoc.gouv.nc/JuriDoc/JdJ201.nsf/JoncP/2017-01611/%24File/2017-1611.pdf?openElement= | 2026-11-23 |
 
 ### Ryan's notes on each source (kept)
 
