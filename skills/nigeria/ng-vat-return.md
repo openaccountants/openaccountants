@@ -63,15 +63,14 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | --- | --- |
 | Country | Nigeria (Federal Republic of Nigeria) |
 | Tax | Value Added Tax (VAT) at 7.5% |
-| Currency | Currency of transaction (NTAA 2025 s. 39) |
-| Primary legislation | Nigeria Tax Act 2025 (ss. 143-157, 185-188) and Nigeria Tax Administration Act 2025 (ss. 3, 22-23, 31, 39, 56, 65, 100-107, 127, 147) |
-| Supporting legislation | Preserved compatible subsidiary regulations (NTA 2025 s. 198) |
-| Tax authority | Nigeria Revenue Service (NRS) |
-| Filing portal | NRS official service entry (nrs.gov.ng) |
+| Currency | Currency of transaction ([NTAA 2025 s. 39](https://nass.gov.ng/documents/download/11250)) |
+| Primary legislation | [Nigeria Tax Act 2025](https://nass.gov.ng/documents/download/11249) (ss. 143-157, 185-188) and [Nigeria Tax Administration Act 2025](https://nass.gov.ng/documents/download/11250) (ss. 3, 22-23, 31, 39, 56, 65, 100-107, 127, 147) |
+| Supporting legislation | Preserved compatible subsidiary regulations ([NTA 2025 s. 198(b)](https://nass.gov.ng/documents/download/11249)) |
+| Tax authority | Nigeria Revenue Service (NRS) ([NTAA 2025 s. 3](https://nass.gov.ng/documents/download/11250)) |
+| Filing portal | NRS official service entry ([nrs.gov.ng](https://www.nrs.gov.ng/)) |
 | Filing frequency | Monthly |
-| Filing deadline | 21st of the following month (14th for withheld, collected or self-accounted VAT under NTA s. 154(4)) |
+| Filing deadline | 21st of the following month under [NTAA 2025 s. 22(1)](https://nass.gov.ng/documents/download/11250) (14th for withheld, collected or self-accounted VAT under [NTA 2025 s. 154(4)](https://nass.gov.ng/documents/download/11249)) |
 | Contributor | Open Accountants Community |
-| Skill version | 2.1 |
 
 ### Rate Table
 
@@ -80,8 +79,8 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Rate | Application |
 | --- | --- |
 | 7.5% | Standard rate on all taxable supplies (effective 1 February 2020) |
-| 0% | Basic food items, medical and pharmaceutical products, medical services and equipment, educational books and tuition, specified agricultural inputs and livestock, GENCO/TCN electricity, exported goods excluding oil and gas, exported services and exported incorporeal property (NTA 2025 s. 186) |
-| Exempt | Oil and gas exports, crude oil and feed gas, humanitarian donor project goods (pay and refund), baby products, locally made sanitary products, military hardware, shared passenger road transport, agricultural equipment, EPZ/FTZ approved supplies, diplomatic supplies, educational plays, land or building (including interest), money/stakes/securities (including interest), government licences and assistive devices (NTA 2025 s. 185(1)) |
+| 0% | Basic food items, medical and pharmaceutical products, medical services and equipment, educational books and tuition, specified agricultural inputs and livestock, GENCO/TCN electricity, exported goods excluding oil and gas, exported services and exported incorporeal property (NTA 2025 s. 186) ([NTA 2025 s. 186](https://nass.gov.ng/documents/download/11249)) |
+| Exempt | Oil and gas exports, crude oil and feed gas, humanitarian donor project goods (pay and refund), baby products, locally made sanitary products, military hardware, shared passenger road transport, agricultural equipment, EPZ/FTZ approved supplies, diplomatic supplies, educational plays, land or building (including interest), money/stakes/securities (including interest), government licences and assistive devices (NTA 2025 s. 185(1)) ([NTA 2025 s. 185(1)](https://nass.gov.ng/documents/download/11249)) |
 
 ### Key Thresholds
 
@@ -89,7 +88,7 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 
 | Item | Amount |
 | --- | --- |
-| Small-business VAT exemption | Gross annual turnover NGN 100,000,000 or less and total fixed assets NGN 250,000,000 or less, excluding professional services and petroleum operations (NTAA 2025 ss. 22(4)-(5), (9), 147) |
+| Small-business VAT exemption | Gross annual turnover NGN 100,000,000 or less and total fixed assets NGN 250,000,000 or less, excluding professional services and petroleum operations (NTAA 2025 ss. 22(4)-(5), (9), 147) ([NTAA 2025 ss. 22(4)-(5), (9) and 147](https://nass.gov.ng/documents/download/11250)) |
 | Filing frequency | Monthly for all registered persons |
 | Nil returns | Required even with no transactions |
 
@@ -174,6 +173,19 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 **Reasoning:**
 Output VAT: 5,000,000 x 7.5% = NGN 375,000. Input VAT: NGN 150,000 (with valid VAT invoices). VAT payable: 375,000 - 150,000 = NGN 225,000.
 
+```oa-check
+name: Standard monthly return, taxable supplies NGN 5,000,000
+inputs:
+  taxable_supplies: 5000000
+  input_vat: 150000
+steps:
+  - output_vat: taxable_supplies * 0.075
+  - vat_payable: output_vat - input_vat
+expected:
+  output_vat: 375000
+  vat_payable: 225000
+```
+
 **Classification:** VAT payable NGN 225,000.
 
 ### Example 2 -- Exporter in Refund Position
@@ -191,6 +203,23 @@ Output VAT: NGN 0 (zero-rated). Input VAT: NGN 300,000. Excess input: carry forw
 
 **Reasoning:**
 Taxable ratio: 3,000,000 / 5,000,000 = 60%. Claimable input: 200,000 x 60% = NGN 120,000. Output VAT: 3,000,000 x 7.5% = NGN 225,000. VAT payable: 225,000 - 120,000 = NGN 105,000.
+
+```oa-check
+name: Mixed taxable and exempt supplies, input VAT apportioned
+inputs:
+  taxable_supplies: 3000000
+  exempt_supplies: 2000000
+  input_vat: 200000
+steps:
+  - taxable_ratio: taxable_supplies / (taxable_supplies + exempt_supplies)
+  - claimable_input: input_vat * taxable_ratio
+  - output_vat: taxable_supplies * 0.075
+  - vat_payable: output_vat - claimable_input
+expected:
+  claimable_input: 120000
+  output_vat: 225000
+  vat_payable: 105000
+```
 
 **Classification:** VAT payable NGN 105,000. Flag for reviewer on apportionment.
 
@@ -406,6 +435,16 @@ ONBOARDING QUESTIONS -- NIGERIA VAT
 - NEVER claim input VAT on purchases used for exempt supplies
 - NEVER ignore self-accounting obligations on imported services from non-residents
 - NEVER present calculations as definitive -- always label as estimated and direct client to ICAN/ANAN member
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Nigeria Tax Act 2025 (Act No. 7 of 2025), National Assembly copy; read for ss. 144, 147, 150, 152(1), 154(4), 185(1), 186, 195(j) and 198(b) | https://nass.gov.ng/documents/download/11249 | 2026-11-27 |
+| Nigeria Tax Administration Act 2025 (Act No. 5 of 2025), National Assembly copy; read for ss. 3, 22(1), (4), (5) and (9), 31(5), 39, 56(2) and (3), 65(1), 100(1), 101, 104, 105, 107 and 147 | https://nass.gov.ng/documents/download/11250 | 2026-11-27 |
+| Nigeria Revenue Service home page; read for the service's name and the filing entry point | https://www.nrs.gov.ng/ | 2026-11-27 |
+
+Not yet confirmed: section numbers against the gazetted copy of each Act (2 printed copies of the Nigeria Tax Act differ); facts bullets that cite 'NIGERIAN TAX ACT 2025' without a section; the transaction pattern library rows, which were not re-read against the Acts in this revision.
 
 ## Disclaimer
 
