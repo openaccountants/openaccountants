@@ -85,7 +85,7 @@ Business outgoings must pass article 14(1) (“wholly and exclusively incurred i
 | Bad debts | Deductible when proved to the Commissioner to have become bad in the year; a general provision is not sufficient; later recoveries of previously allowed amounts are taxable receipts | Cap. 123 art. 14(1)(d) |
 | Scientific research | Qualifying basic/applied research or development for the use/benefit of the trade must be proved to the Commissioner. Capital spending is spread equally over expenditure year and five subsequent years except qualifying plant/machinery/premises allowances; no double deduction under (f)/(j) | Cap. 123 art. 14(1)(h) |
 | Research, development and innovation at 175% | In the Act (article 14(1)(ha), Act III of 2026), marked applicable from year of assessment 2027, but it only starts on a date the Minister sets by Gazette notice, with rules to define the activities. Current commencement, eligible activities and interaction with ordinary research/allowances: Check this point with one of our partner accountants. No 175% deduction is supplied for use here. | Cap. 123 art. 14(1)(ha) |
-| Fees for a private home for the elderly or disabled, or a respite centre | Lower of the amount paid and EUR 4,500, from year of assessment 2027 (basis year 2026). The home must report the payment and claimant details to MTCA. The cap is the aggregate for each resident, not a separate cap for each family member paying. | Cap. 123 art. 14D |
+| Fees for a private home for the elderly or disabled, or a respite centre | Individual paying for self or family: lower of the amount paid and EUR 4,500, from year of assessment 2027 (basis year 2026). The home must report the payment and claimant details to MTCA. The cap is the aggregate for each resident, not a separate cap for each family member paying. | Cap. 123 art. 14D |
 | Car cost cap | For a car costing more than EUR 14,000, wear and tear is computed as if it cost EUR 14,000. The rule also affects initial allowances and balancing adjustments. Lease payments use EUR 14,000/listed price, with specific no-deduction, short-use and replacement rules. It excludes unsuitable private vehicles and vehicles mainly for public hire/carriage or ordinary-course driving instruction. Leasing or excluded vehicles: Check this point with one of our partner accountants. | S.L. 123.07 rule 3 |
 
 Entertainment: record the actual business purpose and private element. No blanket deduction or prohibition follows from the label. Check this point with one of our partner accountants.
@@ -137,7 +137,7 @@ Losses must come from genuine commercial activity. A manufactured loss is open t
 | --- | --- | --- |
 | Asset purchase before year end | Possible full-year wear and tear only under rule 7 acquisition/use conditions above | S.L. 123.01 rule 7(a) |
 | Provisional tax reduction | Submit the prescribed reduction statement by the relevant instalment date, using the official required liability estimate; later estimates cannot undo earlier defaults. Underestimation can carry additional tax; see `mt-estimated-tax` | S.L. 372.18 rule 10 |
-| Pay provisional tax on time | Ordinary instalments 20%/30%/50% by 30 April/31 August/21 December 2026, rounded to nearest euro; increased benchmarks require cumulative catch-up and late-return revisions can affect earlier instalments. Late rule14 charge is 0.6% per month/part for current periods, with caps/90%-reduction/appropriation conditions; see `mt-estimated-tax` | S.L. 372.18 rules 3–7, 10–14 |
+| Pay provisional tax on time | Ordinary instalments 20%/30%/50% by 30 April/31 August/21 December 2026, rounded to nearest euro; increased benchmarks require cumulative catch-up and late-return revisions can affect earlier instalments. Late rule 14 charge is 0.6% per month/part for current periods, with caps/90%-reduction/appropriation conditions; see `mt-estimated-tax` | S.L. 372.18 rules 3–7, 10–14 |
 | Part-time cap | Keep part-time records clean so profit up to EUR 12,000 stays at 10% | S.L. 123.39 rule 3(2) |
 | Pension contributions before 31 December | For personal/employee credits, qualifying payments must be made in the relevant year; unused credit is not carried forward. Employer occupational credits have different rules | Cap. 123 art. 57(3) |
 
@@ -146,18 +146,18 @@ Detail on provisional tax: `mt-estimated-tax`.
 ### VAT Choice
 | Strategy | Detail | Source |
 | --- | --- | --- |
-| Article 11 small enterprise | For an eligible Malta-established person: preceding-year domestic turnover not above EUR 35,000 at entry, and current-year qualification ceases when threshold exceeded. Turnover definition, related-person aggregation for non-individuals, article10 waiting/exception rules, registration effective dates and residual article12 obligations also apply. Qualifying domestic supplies exempt without credit. Compare actual customers/costs; see `malta-vat-return` | VAT Act, Cap. 406, art. 11 |
+| Article 11 small enterprise | For an eligible Malta-established person: preceding-year domestic turnover not above EUR 35,000 at entry, and current-year qualification ceases when threshold exceeded. Turnover definition, related-person aggregation for non-individuals, article 10 waiting/exception rules, registration effective dates and residual article 12 obligations also apply. Qualifying domestic supplies exempt without credit. Compare actual customers/costs; see `malta-vat-return` | VAT Act, Cap. 406, art. 11 |
 | Article 10 registration | Taxable underlying supplies use their applicable rate (ordinary 18%); exemptions, place-of-supply and reverse charges may change treatment. Input recovery requires entitlement, valid evidence/use and no blocking provision; customers' recovery also requires their entitlement. See `malta-vat-return` | Cap. 406 art. 10 |
 | Capital goods | Long-term tangible fixed assets used as working tools/economic means qualify; small equipment/tools/office furniture below EUR 1,160 price or open-market value and packaging excluded. Repairs/maintenance/spares and renting/granting use excluded from capital-goods input tax. Reference periods of 5 years / 20 years for immovable rights; starts from the relevant deduction tax-period month, delayed until first-use tax period if unused. Actual use/disposal/cessation adjustment: Check this point with one of our partner accountants | S.L. 406.12 |
 
 Registration rules, deadlines and the EUR 100,000 Union threshold are in `malta-vat-return`.
 
 ### Social Security
-Class 2 liability is governed by the Social Security Act, Cap.318, including age/status, self-occupied/self-employed definitions and exemptions/certificates. Net earnings and relevant prior-year basis differ by category; use the completed `malta-ssc` Guide for the 2026 bands and weekly amounts.
+Class 2 liability is governed by the Social Security Act, Cap. 318, including age/status, self-occupied/self-employed definitions and exemptions/certificates. Net earnings and relevant prior-year basis differ by category; use the completed `malta-ssc` Guide for the 2026 bands and weekly amounts.
 
 Planning points:
 
-- Concurrent employed/self-occupied work requires the actual Class1/Class 2 statutory test and any article14 request/approval; do not automatically impose both. See `malta-ssc`.
+- Concurrent employed/self-occupied work requires the actual Class 1/Class 2 statutory test and any article 14 request/approval; do not automatically impose both. See `malta-ssc`.
 - Ordinary bands include floors/ceilings, but low-income certificates, part-time elections and special categories alter the result. Check the actual category and conditions in `malta-ssc`.
 
 ### Investment and Retirement
@@ -168,7 +168,7 @@ Planning points:
 | Pension income exemption, age 61 and over | Basis year 2026: 100% of pension income under art. 4(1)(d), up to EUR 37,104. Basis year 2025: 80%, up to EUR 13,309 | Pensions (Tax Exemption) Rules, S.L. 123.204 rule 3 (L.N. 53 of 2026) |
 | Pensioner rebate | From year of assessment 2027, a pensioner using the exemption and taxed at the married rates in art. 56(1)(a)(i) (the married table without qualifying children) gets a rebate of (chargeable income less 15,000) × 15%, capped at EUR 540. No refund and no carry-forward. | S.L. 123.204 rule 4 |
 
-Article 57 permits prescribed amounts; the current S.L.123.163 rule8 resolves the former15%/EUR 150 versus25%/EUR 750 hold. Personal scheme: approved registration/withdrawal structure and normal benefit commencement61–70 (permanent disability/death exceptions); retain the required licence-holder certificate and reporting. An unresolved personal/occupational scheme, funding/status requirement, special-employment-scheme beneficiary or withdrawal treatment: Check this point with one of our partner accountants.
+Article 57 permits prescribed amounts; the current S.L.123.163 rule8 resolves the former 15%/EUR 150 versus 25%/EUR 750 hold. Personal scheme: approved registration/withdrawal structure and normal benefit commencement at 61–70 (permanent disability/death exceptions); retain the required licence-holder certificate and reporting. An unresolved personal/occupational scheme, funding/status requirement, special-employment-scheme beneficiary or withdrawal treatment: Check this point with one of our partner accountants.
 
 Malta Enterprise runs grant and tax-credit schemes for small businesses (for example Micro Invest). Their rates and caps change by call and are not in the Income Tax Act. No current scheme award/rate is asserted here. Check this point with one of our partner accountants.
 
@@ -202,10 +202,10 @@ Sources: S.L. 372.16; S.L. 372.18; Cap. 372 art. 42(4); S.L. 372.14 rule 21; MTC
 | Married joint table, no qualifying child, art. 56(1) | 0% to EUR 15,000; 15% minus EUR 2,250 to EUR 23,000; 25% minus EUR 4,550 to EUR 60,000; 35% minus EUR 10,550 above | YA 2027 | same |
 | Part-time final tax, art. 90A(11) | 10 cents per euro from YA 2023 (in place of 15 cents) | Current | same |
 | Part-time cap, S.L. 123.39 rule 3(2) | EUR 12,000 of part-time trade or profession income (art. 4(1)(a)); EUR 10,000 of part-time employment income (art. 4(1)(b)); the excess goes in the return at normal rates | Current | https://legislation.mt/eli/sl/123.39/eng/pdf |
-| Company rate, art. 56(6) | 35% | YA 2027 | https://legislation.mt/eli/cap/123/eng/pdf |
+| Company ordinary rate, art. 56(6) | 35%, subject to applicable special/elective regime | YA 2027 | https://legislation.mt/eli/cap/123/eng/pdf |
 | Elderly or disabled home fees, art. 14D | lower of the amount paid and EUR 4,500 | From YA 2027 | same |
 | R&D deduction, art. 14(1)(ha) | 175%, only from a date the Minister sets by Gazette notice | Marked YA 2027 | same |
-| Personal retirement scheme credit, art. 57(1) | 25% up to EUR 750 under current S.L. 123.163 rule 8, subject to qualification and57tax-credit limits | Current | same |
+| Personal retirement scheme credit, art. 57(1) | 25% up to EUR 750 under current S.L. 123.163 rule 8, subject to qualification and article 57 tax-credit limits | Current | https://legislation.mt/eli/sl/123.163/eng/pdf |
 | Late individual return, Schedule Table A | EUR 10 within 6 months, rising to EUR 500 after 60 months | Current | same |
 | Omission from a return, Schedule | 1.5% a month of the endangered tax | Current | same |
 | Car cost cap, S.L. 123.07 rule 3 | wear and tear on a car costing over EUR 14,000 computed as if it cost EUR 14,000 | Current | https://legislation.mt/eli/sl/123.7/eng/pdf |
@@ -213,7 +213,7 @@ Sources: S.L. 372.16; S.L. 372.18; Cap. 372 art. 42(4); S.L. 372.14 rule 21; MTC
 | Pension income exemption, S.L. 123.204 rule 3 | 100% up to EUR 37,104 (basis year 2026); 80% up to EUR 13,309 (basis year 2025) | YA 2027 / YA 2026 | https://legislation.mt/eli/sl/123.204/eng/pdf |
 | Pensioner rebate, S.L. 123.204 rule 4 | (chargeable income less 15,000) x 15%, capped at EUR 540 | From YA 2027 | same |
 | Provisional tax, S.L. 372.18 rule 4 | Twenty per cent by 30 April, a further thirty per cent by 31 August, a further fifty per cent by 21 December of the basis year (the rule writes the percentages in words) | Each basis year | https://legislation.mt/eli/sl/372.18/eng/pdf |
-| Interest on late tax, Cap. 372 art. 44(2A) | 0.6% a month or part, capped at the tax | Current | https://legislation.mt/eli/cap/372/eng/pdf |
+| Interest on late tax, Cap. 372 art. 44(2A) | 0.6% a month or part, capped at the tax, for tax due on/after31August2022; article44(2B) exceptions require review (specified FSS direction/additional tax/mutual-agreement procedure) | Current | https://legislation.mt/eli/cap/372/eng/pdf |
 | Small enterprise VAT exemption, Cap. 406 art. 11 | domestic annual turnover not above the "domestic threshold" of EUR 35,000, subject to entry/current turnover, aggregation/registration and other eligibility conditions above | Current | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 |
 | Capital goods for VAT, S.L. 406.12 | Capital-goods definition/exclusions above; EUR 1,160 is specific small-equipment exclusion. Reference periods 5/20 years with actual deduction/first-use starting rules | Current | https://legislation.mt/eli/sl/406.12/eng/pdf |
 
