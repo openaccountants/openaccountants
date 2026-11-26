@@ -2,19 +2,19 @@
 name: na-income-tax
 description: >
   Namibia personal income tax for individuals, year of assessment ending 28 February 2027: seven bands, the N$150,000 retirement cap, provisional tax, returns on ITAS and penalties. Figures come from Namibian law and official pages opened on 2026-11-01. Items that could not be opened are named as not yet confirmed. Not reviewed by a licensed accountant.
-version: 0.3
+version: 0.4
 jurisdiction: NA
 category: international
 tax_year: 2026
 tax_year_notes: "Individuals: year of assessment 1 March 2026 to 28 February 2027. Companies: financial year."
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Namibia Personal Income Tax v0.3
+# Namibia Personal Income Tax v0.4
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. Do not rely on it to file, pay or take a position without review by a qualified professional in Namibia.
 
@@ -22,7 +22,7 @@ Year of assessment: 1 March 2026 to 28 February 2027. The annotated Income Tax A
 
 ## Who this applies to
 
-Individuals, deceased estates and trusts ([NamRA](https://www.namra.org.na/tax-types/page/income-tax/)). Namibia taxes income from a source within or deemed within Namibia (s.15, [Act](https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf)), and the bands apply whether or not the person is resident. An employee with salary above N$100,000 a year registers and gives proof to the employer ([NamRA](https://www.namra.org.na/individual-tax/page/i-earn-a-monthly-salary/)). Anyone with over N$50,000 a year of non-remuneration taxable income, farmers, and directors of private companies and members of close corporations register as provisional taxpayers ([NamRA](https://www.namra.org.na/individual-tax/page/i-am-a-provisional-taxpayer/)).
+Individuals, deceased estates and trusts ([NamRA](https://www.namra.org.na/tax-types/page/income-tax/)). Namibia taxes income from a source within or deemed within Namibia (s.15, [Act](https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf)), and the bands apply whether or not the person is resident. An employee with salary above N$100,000 a year registers and gives proof to the employer ([NamRA](https://www.namra.org.na/individual-tax/page/i-earn-a-monthly-salary/)). Any person other than a company who derives income that is not remuneration is a provisional taxpayer, as is a director of a private company (Schedule 2 para 1); such a person is exempt from provisional tax only by satisfying the Minister that taxable income other than remuneration will not exceed N$5,000 for the period (para 18(a)). NamRA's provisional page asks anyone with over N$50,000 a year of such income, farmers, and directors of private companies and members of close corporations to register ([NamRA](https://www.namra.org.na/individual-tax/page/i-am-a-provisional-taxpayer/)).
 
 ## Rates, bands and thresholds
 
@@ -109,7 +109,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Act 24 of 1981, annotated to Act 4 of 2024: read for Schedule 4, ss.6, 15, 16, 17, 21, 21A, 56, 66, 79, 80, Schedule 2 Part III on 2026-11-01 | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf | 2026-11-01; tried again 2026-11-14, lac.org.na refused the script (406) |
+| Income Tax Act 24 of 1981, annotated to Act 4 of 2024: read for Schedule 4, ss.6, 15, 16, 17, 21, 21A, 56, 66, 79, 80, Schedule 2 paras 1 and 18(a) and Part III | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf | 2026-11-26 |
 | NamRA salary page: read in full | https://www.namra.org.na/individual-tax/page/i-earn-a-monthly-salary/ | 2026-11-14 |
 | NamRA provisional page: read in full | https://www.namra.org.na/individual-tax/page/i-am-a-provisional-taxpayer/ | 2026-11-14 |
 | NamRA income tax page: read in full | https://www.namra.org.na/tax-types/page/income-tax/ | 2026-11-14 |
