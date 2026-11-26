@@ -3,7 +3,7 @@ name: saudi-arabia-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Saudi Arabia VAT return for any client. Trigger on phrases like "prepare VAT return", "Saudi VAT", "ZATCA return", "KSA VAT", "fill in VAT return", "Fatoorah", "e-invoicing Saudi", or any request involving Saudi Arabia VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers KSA only and only standard VAT-registered persons. VAT groups, profit margin schemes, partial exemption with significant exempt supplies, oil & gas sector special rules, and designated zone goods movement classifications are all in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). ALWAYS read this skill before touching any KSA VAT work.
 version: 2.1
 jurisdiction: SA
-tax_year: 2025
+tax_year: 2026
 last_updated: 2026-11-26
 source_checked: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -13,16 +13,16 @@ tier: 1
 domain: vat-gst
 type: filing-howto
 category: VAT
-tax_year_notes: "Original 2025 edition retained; original April 2026 examples keep their dates. Amended rules are conditional on commencement; earlier 2025 application is held for confirmation."
+tax_year_notes: "Current 2026 edition; original April 2026 cases retain their dates and undated historic cases remain undated. Historical amendment commencement requires separate confirmation."
 ---
 
 # Saudi Arabia VAT
 
 ## Scope
 
-Prepare a single Saudi VAT-registered person's return using this Guide and `vat-workflow-base` v0.1 or later. This is the original **2025 edition**, with the original April **2026** examples preserved as dated illustrations, not relabelled as 2025 transactions. A bank statement supports reconciliation; it does not establish the supply date, rate or right to deduct.
+Prepare a single Saudi VAT-registered person's return using this Guide and `vat-workflow-base` v0.1 or later. This is the **2026 edition**, with the original April **2026** examples preserved on their actual dates. Undated historical cases remain undated. A bank statement supports reconciliation; it does not establish the supply date, rate or right to deduct.
 
-Use the Arabic regulations where the English translation differs. The linked English consolidation is dated November 2021; the Arabic tenth edition includes the April 2025 amendments. The amended rules below must not be applied retrospectively to earlier transactions without confirming commencement. For a 2025 transaction whose result depends on amendment commencement: **Check this point with one of our partner accountants.**
+Use the Arabic regulations where the English translation differs. The linked English consolidation is dated November 2021; the Arabic tenth edition includes the April 2025 amendments. ZATCA’s [current Arabic regulations page](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Pages/VATImplementingRegulations.aspx), updated in September 2026, links to that tenth edition. Use its retained operative provisions for 2026; do not apply amended wording retrospectively to earlier transactions without confirming commencement. For a 2025 transaction whose result depends on amendment commencement: **Check this point with one of our partner accountants.**
 
 Quick reference: standard-rated Saudi supplies bear **15%**; zero-rating and exemption require the conditions below. Use the taxpayer's actual registered period and the portal's field labels. Do not create a return from guessed supplier residence, an assumed rate or a bank-name match. [ZATCA rate explanation](https://zatca.gov.sa/en/RulesRegulations/VAT/Pages/About-Vat.aspx), [Arabic regulations](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Implmenting%20Regulations%20of%20the%20VAT%20Law.pdf).
 
@@ -233,6 +233,7 @@ Release a filing-ready working paper only after each hold affecting the return i
 
 | Source and read scope | Date read |
 |---|---|
+| [Current Arabic regulations page](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Pages/VATImplementingRegulations.aspx): operative-document link and September 2026 update context. | 2026-11-26 |
 | [Arabic VAT Implementing Regulations, tenth edition, April 2025](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Implmenting%20Regulations%20of%20the%20VAT%20Law.pdf): cover/amendment list; Articles 3–9, 29–30, 32–36, 38–39, 47, 49–51, 54, 58–63, 74(1), 79(6). Amended Arabic wording controls the conflicts with the older translation. | 2026-11-26 |
 | [English VAT Implementing Regulations, eighth edition, November 2021](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Implmenting%20Regulations%20of%20the%20VAT%20Law_EN.pdf): Articles 29–40, 43–44, 47, 49–52, 58–63; used only where applicable and not superseded. | 2026-11-26 |
 | [ZATCA About VAT](https://zatca.gov.sa/en/RulesRegulations/VAT/Pages/About-Vat.aspx): rate change and VAT Law Article 2 explanation. | 2026-11-26 |
