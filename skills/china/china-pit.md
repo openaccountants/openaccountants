@@ -260,6 +260,6 @@ A late payment surcharge of 0.05% a day applies from the day after the applicabl
 | STA 2020 No. 13. Ordinary withholding variation for first wages in the year | https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194937/content.html | 2026-11-27 |
 | STA explanation of 2020 No. 19. Conditions for the upfront basic deduction in payroll | https://fgk.chinatax.gov.cn/zcfgk/c100015/c5193920/content.html | 2026-11-27 |
 
-The statutory 2026 settlement window is 1 March to 30 June 2027. The STA appointment schedule for that window and a specific rule on crypto gains remain unconfirmed. Refer cryptocurrency gains for review before computing tax.
+Not yet confirmed: the STA appointment schedule for the 2026 settlement window (the statute fixes 1 March to 30 June 2027; no annual notice for it was published in the records checked) and a specific STA rule on crypto gains (the 2008 STA reply on virtual currency gives no general rule). Refer cryptocurrency gains for review before computing tax.
 
 *OpenAccountants: open-source accounting skills for AI. This is not tax advice. All outputs must be reviewed by a qualified professional before filing.*
