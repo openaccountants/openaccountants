@@ -1,259 +1,126 @@
 ---
 name: de-freelance-intake
-description: ALWAYS USE THIS SKILL when a user asks for help preparing their German tax returns AND mentions freelancing (Freiberufler), self-employment (Selbstständigkeit), trade business (Gewerbetreibender), contracting, or sole proprietorship (Einzelunternehmer). Trigger on phrases like "help me do my German taxes", "prepare my EStE", "I'm self-employed in Germany", "I'm a Freiberufler", "do my Steuererklärung", "prepare my USt and ESt", or any similar phrasing where the user is a Germany-resident self-employed individual needing tax return preparation. This is the REQUIRED entry point for the Germany self-employed tax workflow -- every other skill in the stack (germany-vat-return, de-einkommensteuer-freelancer, de-social-contributions, de-trade-tax, de-estimated-tax, de-return-assembly) depends on this skill running first to produce a structured intake package. Uses upload-first workflow -- the user dumps all their documents and the skill infers as much as possible before asking questions. Uses ask_user_input_v0 for structured questions instead of one-at-a-time prose. Built for speed. Germany full-year residents only; self-employed individuals and sole proprietors.
-version: 0.3
+description: "Intake for German full-year-resident freelancers and sole traders, tax year 2026: collect documents, test classification, registration, VAT and profit method, record unresolved points and hand off to de-return-assembly. Includes dated 2025 cases without rolling their inputs forward."
+version: 0.4
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: router
 ---
 
-# German freelancer and sole trader tax intake (Freiberufler and Gewerbetreibende)
+# German freelancer and sole trader tax intake
 
 ## Scope
 
-This is the intake and triage skill for a self-employed individual who lives in Germany: a Freiberufler (§ 18 EStG) or a Gewerbetreibender (§ 15 EStG) running a sole business. It tells an assistant which questions to ask, which documents to collect, which answers change the route, and which specialist skill takes over. It computes no tax.
+Collect and reconcile the evidence for one full-year German-resident sole proprietor, then hand it to the relevant Guides and `de-return-assembly`. This is an intake, not filing clearance. The working year is 2026; keep 2025 documents and examples in their own year. A person with a German home or habitual abode is subject to unlimited income tax liability ([EStG § 1(1)](https://www.gesetze-im-internet.de/estg/__1.html)); full-year residence is this workflow's scope limit, not the definition of every resident taxpayer.
 
-- **Primary year:** calendar year 2026, the tax year in force on 25 September 2026. The returns for 2025 are being filed now; see "Filing and payment".
-- **Covered:** full-year residents (a home or habitual abode in Germany, § 1(1) EStG: "Wohnsitz oder ihren gewöhnlichen Aufenthalt"), sole proprietors, cash-basis profit (EÜR), up to a small team.
-- **Not covered:** non-residents and part-year residents, partnerships as the business itself, GmbH and UG, balance-sheet filers, farming and forestry, payroll. See "When to refuse or refer".
-- **Who decides.** The tax office decides the classification and facts like a home office being the centre of all work. Record, test and flag; do not settle.
-- **Review.** A Steuerberater should review the work before anything is filed.
-
-### Where each question goes next
-
-| Topic | Specialist Skill |
-| --- | --- |
-| Income tax return, Anlage EÜR, Anlage S or G, deductions | `de-einkommensteuer-freelancer` |
-| VAT advance returns, annual VAT return, Kleinunternehmer, reverse charge | `germany-vat-return` |
-| Books or EÜR, record keeping, GoBD, e-invoices, tills | `germany-bookkeeping` |
-| Trade tax computation and return | `de-trade-tax` |
-| Income tax prepayments | `de-estimated-tax` |
-| Health, care and pension contributions, KSK | `de-social-contributions` |
-| Shares, funds, interest (Anlage KAP) | `de-capital-gains` |
-| Crypto assets | `de-crypto-tax` |
-| Rental income | `de-rental-income` |
-| Putting the returns together | `de-return-assembly` |
+Stop the sole-business workflow for non-residents, part-year residents, a partnership as the business, a GmbH/UG, farming/forestry, balance-sheet filers or more than five employees. Five employees is a workflow limit. Payroll at any size goes to `de-payroll`. Keep a separable own business in scope where a partnership interest or other income also needs specialist work. Obtain Steuerberater review before filing.
 
 ## Ask the client first
 
-Ask in batches of two or three. Skip anything the documents already answer.
+Read the documents first. Ask only the missing questions, in short related batches; use an available structured-question tool, otherwise one numbered list. Do not infer a settled tax status from a bank description, invoice note or the client's job title.
 
-- **Year and residency.** Which tax year are we preparing? Did you live in Germany (a home or your habitual abode) for all of it?
-- **What you do.** Describe the work, the training it rests on, and who pays you. Do you also sell goods, earn commissions, broker deals or resell bought-in work?
-- **Registration.** When did you start? Did you register a trade (Gewerbeanmeldung) with the municipality, or only report to the tax office? Did you send the tax office the registration questionnaire (Fragebogen zur steuerlichen Erfassung), and do you have a tax number?
-- **Structure.** Do you work alone, or share profits with a partner (GbR or other partnership)? Is there a GmbH or UG? Are you entered in the commercial register (Handelsregister)?
-- **Staff.** Do you employ anyone? How many, and are they subject to social insurance or on a Minijob?
-- **VAT.** What was your total turnover in 2025, and what is it so far in 2026? Do your invoices show VAT, or do they carry the small-business note? Have you ever waived the Kleinunternehmer rule? How much VAT did you pay for 2025, and do you file monthly or quarterly? Do you have a one-month extension (Dauerfristverlängerung)?
-- **Profit method.** Do you file an EÜR or a balance sheet? Has the tax office ever sent a notice telling you to keep books?
-- **Prepayments.** Have you received an income tax prepayment notice (Vorauszahlungsbescheid)? What did your last assessment (Steuerbescheid) show?
-- **Social insurance.** Is your work teaching or coaching, nursing or child care, midwifery, art or publishing, or a craft entered in the Handwerksrolle? Do you work, on a lasting basis, essentially for one client? Are you in statutory or private health insurance? Are you insured through the Künstlersozialkasse?
-- **Other income.** Salary, rent, investments, crypto, a share in a partnership, foreign income?
-- **Church tax.** Do you belong to a religious community that levies church tax? Which federal state do you live in, and in which municipality is the business run?
+- Year, residence dates, legal structure, marital status, children, state, home/business addresses, tax number and VAT ID; employees and any partnership interest.
+- Actual activities, qualifications, staff supervision, customers, sales of goods, commissions, brokerage and bought-in work resold; start/move/closure dates and trade registration.
+- Prior/current-year turnover, including foreign and exempt sales and fixed-asset sales separately; VAT waiver, invoice treatment, filed periods and extension notices.
+- EÜR or accounts, voluntary books, any bookkeeping notice or whole-business takeover; prior assessments, prepayments and actual payments.
+- Home-working days/room/months/area, rent/utilities, telephone/internet business share; cars, acquisition details, list price, logbook, business/private kilometres, commuting days and one-way distance.
+- Teaching/coaching, nursing/child care, midwifery, art/publishing or registered crafts; one main customer, employees/Minijobs, pension/KSK notices, GKV/PKV and insurer's annual statement including sick-pay position.
+- Employment, rent, investments, crypto, foreign income and church membership/changes. Preserve unknowns as unknowns.
 
 ## The method, step by step
 
-1. **Fix the year and test residency.** Full-year residents only ([§ 1 EStG](https://www.gesetze-im-internet.de/estg/__1.html)). Anyone else is referred.
-2. **Screen out what this skill cannot handle** (partnership as the business, corporation, balance sheet, more than five employees). Stop there; see "When to refuse or refer".
-3. **Classify the work: Freiberufler or Gewerbe.** Compare what the client does with the list in [§ 18(1) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__18.html) and the definition of a trade in [§ 15(2) EStG](https://www.gesetze-im-internet.de/estg/__15.html). See "Freiberufler or Gewerbe" below.
-4. **Check the registration of a new business**: reports and questionnaire within one month ([§ 138 AO](https://www.gesetze-im-internet.de/ao_1977/__138.html)); see below.
-5. **Settle the VAT status before reading any invoice**, because it decides whether every amount is recorded net or gross. Test both Kleinunternehmer limits of [§ 19 UStG](https://www.gesetze-im-internet.de/ustg_1980/__19.html). For a client in the normal scheme, set the return period from last year's VAT under [§ 18 UStG](https://www.gesetze-im-internet.de/ustg_1980/__18.html). Then hand VAT to `germany-vat-return`.
-6. **Confirm the profit method.** EÜR under [§ 4(3) EStG](https://www.gesetze-im-internet.de/estg/__4.html) unless there is a duty to keep books. A Gewerbetreibender can be brought into bookkeeping by a tax office notice under [§ 141 AO](https://www.gesetze-im-internet.de/ao_1977/__141.html). Details go to `germany-bookkeeping`.
-7. **Collect the documents** (list below) and read what they already answer.
-8. **Record the prepayments** from the Vorauszahlungsbescheid against the four due dates in [§ 37(1) EStG](https://www.gesetze-im-internet.de/estg/__37.html). Route the schedule to `de-estimated-tax`.
-9. **Screen social insurance.** Test the pension duty list of [§ 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__2.html) and, for artists and publicists, the [KSVG](https://www.gesetze-im-internet.de/ksvg/__1.html). Do not advise on contributions: refer to `de-social-contributions` and the pension or KSK authority.
-10. **Route other income** (`de-capital-gains`, `de-crypto-tax`, `de-rental-income`), confirm the picture in one summary, list open points as flags, hand over, and diarise the deadlines in "Filing and payment".
+1. Confirm the year and scope. Collect the available documents together: full-year bank statements, sales/purchase invoices, assessments and prepayment notices, filed VAT returns/extension letters, prior EÜR and asset schedule, insurer statements, tax-office correspondence, registration/questionnaire, pension/KSK notices and asset receipts. If records are partial, start with them and list the gaps. For missing records, search the bank, email, ELSTER, insurer portal, saved files and previous adviser.
+2. Reconcile bank receipts with invoices, distinguishing candidate sales, transfers and other movements. Extract customer/supplier location and service, net/VAT/gross amounts, dates, assets, rent, software, memberships, insurance, telephone/internet, vehicle costs and restricted-expense candidates. Bank descriptions and VAT shown are evidence to test, not proof of deductibility or VAT status. Preserve original invoice totals until treatment is established.
+3. Compare the work with the classification rules below. Record the client's description separately from the conclusion; escalate unsettled classification and mixed activities. Do not make the facts fit a preferred route.
+4. Check registration, turnover/waiver, return rhythm, EÜR eligibility and notices below. Read any authority instruction before applying the ordinary rule. Send VAT to `germany-vat-return`, records to `germany-bookkeeping` and classification/deductions to `de-einkommensteuer-freelancer`; add `de-trade-tax` for the commercial route.
+5. Reconcile assessed prepayments to bank payments, by tax and year. Send planning to `de-estimated-tax`; insurance to `de-social-contributions`; other income to `de-employee-income-tax`, `de-rental-income`, `de-capital-gains` or `de-crypto-tax` as appropriate.
+6. Show one compact summary with document sources, discrepancies, missing facts and referrals. Obtain corrections, then pass the structured package to `de-return-assembly`: taxpayer/structure/year, documents, receipts, expenses/assets, VAT, insurance, prepayments, prior assessments/AfA, home office, private use, municipality/trade-tax status and `open_flags`. Keep classifications `unsettled` and unknown amounts/rates/booleans `null`; zero means an evidenced zero. Supply a filing calendar and reviewer brief; any working paper must retain formulas and source references. Do not claim a return is ready while a material flag remains.
 
-### Documents to collect
+### Classification
 
-- Business bank statements for the whole year.
-- Sales invoices issued and purchase invoices or receipts.
-- The last income tax assessment (Steuerbescheid) and any prepayment notice (Vorauszahlungsbescheid).
-- VAT advance returns filed for the year, and any letter on the return period or a Dauerfristverlängerung.
-- Last year's Anlage EÜR and the asset schedule (Anlage AVEÜR).
-- Health and care insurance annual statement (Beitragsbescheinigung).
-- For a new business: the trade registration, the tax office's letter with the tax number, and a copy of the registration questionnaire.
-- Any notice from the pension insurance (Deutsche Rentenversicherung) or the Künstlersozialkasse.
-- Any tax office letter, including a notice to keep books.
-- Receipts for equipment, vehicles and other assets bought in the year.
+[EStG § 18(1) no. 1](https://www.gesetze-im-internet.de/estg/__18.html) covers self-employed scientific, artistic, literary, teaching or educational activities and the named or similar professions. The list includes Ärzte, Zahnärzte, Tierärzte, Rechtsanwälte, Notare, Patentanwälte, Vermessungsingenieure, Ingenieure, Architekten, Handelschemiker, Wirtschaftsprüfer, Steuerberater, beratende Volks- und Betriebswirte, vereidigte Buchprüfer, Steuerbevollmächtigte, Heilpraktiker, Dentisten, Krankengymnasten, Journalisten, Bildberichterstatter, Dolmetscher, Übersetzer and Lotsen. Qualified assistance is compatible with this rule if the professional acts with their own expertise, leadership and personal responsibility; temporary representation does not itself defeat it. Software/IT work, design, marketing and a generic “consultant” label do not establish a classification. Other self-employed categories under § 18 require their own assessment.
 
-### Freiberufler or Gewerbe (§ 18 vs § 15 EStG)
+[EStG § 15(2)](https://www.gesetze-im-internet.de/estg/__15.html) defines a trade as an independent, sustained activity undertaken for profit and participation in general economic life, excluding farming/forestry, a liberal profession and other self-employed work. A tax saving is not that profit; profit can be an ancillary purpose. For uncertain similar professions, staff arrangements, mixed activities, possible retrospective reclassification or a binding ruling: **Check this point with one of our partner accountants.** Collect prior Anlage S/G, assessments and registrations; do not promise that previous treatment is final.
 
-This is the first fork of every German intake.
+### Registration
 
-- **The § 18 list.** Freelance work is self-employed scientific, artistic, literary, teaching or educational work ("wissenschaftliche, künstlerische, schriftstellerische, unterrichtende oder erzieherische Tätigkeit"), plus the self-employed work of the professions the statute names: Ärzte, Zahnärzte, Tierärzte, Rechtsanwälte, Notare, Patentanwälte, Vermessungsingenieure, Ingenieure, Architekten, Handelschemiker, Wirtschaftsprüfer, Steuerberater, beratende Volks- und Betriebswirte, vereidigte Buchprüfer, Steuerbevollmächtigte, Heilpraktiker, Dentisten, Krankengymnasten, Journalisten, Bildberichterstatter, Dolmetscher, Übersetzer, Lotsen "und ähnlicher Berufe" ([§ 18(1) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__18.html)).
-- **What is not on the list.** Software developers, IT consultants, web designers, marketing agencies and "consultants" in general are not named. Such a client is a Freiberufler only if the work is one of the five activity types or a profession similar to a named one. Do not tell the client either way: flag it.
-- **The trade definition.** A self-employed, lasting activity with the aim of profit that takes part in general commerce is a Gewerbebetrieb unless it is farming, a liberal profession or other self-employed work ([§ 15(2) EStG](https://www.gesetze-im-internet.de/estg/__15.html)). The 2026 EÜR instructions say the same for line 8 of the form: freelance income exists only "wenn die Voraussetzungen des § 18" EStG are met ([BMF, Anlage EÜR 2026](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2)).
-- **Staff.** A Freiberufler may use trained staff only while leading the work and taking personal responsibility for it on the strength of their own expertise ("leitend und eigenverantwortlich", § 18(1) no. 1 sentence 3 EStG). Flag any client with staff doing the core work.
-- **Mixed activities.** Ask about every side line: sales of goods, commissions, brokerage, resold print or other bought-in work. Where the freelance and commercial parts can be separated, keep separate records and report them separately (Anlage S and Anlage G). Where they cannot, the classification of the whole is at risk. Flag it for the Steuerberater.
-- **Who decides.** The tax office. A first treatment as Freiberufler can be reversed later, typically after an audit, with trade tax for past years. A binding ruling (verbindliche Auskunft) can settle a real doubt.
+For ordinary starts, [AO § 138(1), (1b), (4)](https://www.gesetze-im-internet.de/ao_1977/__138.html) requires a commercial-business notification to the municipality, which informs the tax office; where real-tax assessment has not been transferred to municipalities the specified tax office takes its place. Freelance starts are notified directly to the competent tax office. Moving/closing is also covered. The AO notifications and start-up tax information are due within one month of the event. Further start-up details use the prescribed electronic dataset; the office may permit the prescribed paper form on hardship application. Check any applicable official exception. This tax-notification period does not settle separate trade-registration/licensing duties: **Check this point with one of our partner accountants.**
 
-**What follows from the answer**
+[ELSTER's start-up page](https://www.elster.de/elsterweb/infoseite/unternehmensgruendung) identifies the Fragebogen zur steuerlichen Erfassung. Use the questionnaire appropriate to the individual business, send it electronically to the Finanzamt and retain the receipt; the office sends the tax number after checking it. Compare actual start, submission, anticipated turnover/profit and VAT election. Flag an omitted or late submission for prompt correction.
 
-| | Freiberufler | Gewerbetreibender |
-| --- | --- | --- |
-| Start reported to | the tax office ([§ 138(1) AO](https://www.gesetze-im-internet.de/ao_1977/__138.html)) | the municipality, which informs the tax office |
-| Trade tax | none | every Gewerbebetrieb run in Germany ([§ 2(1) GewStG](https://www.gesetze-im-internet.de/gewstg/__2.html)); allowance for sole traders |
-| IHK membership | no, unless entered in the Handelsregister | yes, if assessed to trade tax and running a business establishment in the chamber's district ([§ 2 IHKG](https://www.gesetze-im-internet.de/ihkg/__2.html)) |
-| Size-based bookkeeping duty ([§ 141 AO](https://www.gesetze-im-internet.de/ao_1977/__141.html)) | never | only after a tax office notice |
-| Routed to | `de-einkommensteuer-freelancer` | `de-einkommensteuer-freelancer` and `de-trade-tax` |
+### VAT triage
 
-- **IHK fees.** Members are those "sofern sie zur Gewerbesteuer veranlagt sind" (§ 2(1) IHKG). [§ 3(3) IHKG](https://www.gesetze-im-internet.de/ihkg/__3.html) frees unregistered sole traders from fees while their trade income or profit is not more than EUR 5,200.
-- **Trade tax in detail.** The trade income of a sole trader is reduced by an allowance of EUR 24,500 per year ([§ 11(1) GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html): "Freibetrag in Höhe von 24 500 Euro"). It is an allowance, not a cliff: only trade income above it is taxed. The trade income is rounded down to full EUR 100 before the allowance. The rate base (Steuermesszahl) is 3.5% ("beträgt 3,5 Prozent") and the municipality's multiplier (Hebesatz) decides the tax. Income tax is then reduced by up to four times the trade tax base amount ([§ 35 EStG](https://www.gesetze-im-internet.de/estg/__35.html): "das Vierfache"), within a ceiling set in § 35 and never above the trade tax actually payable ("auf die tatsächlich zu zahlende Gewerbesteuer beschränkt"). A trade tax return, filed electronically ([§ 14a GewStG](https://www.gesetze-im-internet.de/gewstg/__14a.html)), is due only if the year's trade income exceeded EUR 24,500 ([§ 25(1) no. 1 GewStDV](https://www.gesetze-im-internet.de/gewstdv_1955/__25.html): "den Betrag von 24 500 Euro überstiegen hat") or the tax office asks (§ 149(1) AO). Route every computation to `de-trade-tax`.
+For an entrepreneur established in Germany, [UStG § 19(1)](https://www.gesetze-im-internet.de/ustg_1980/__19.html) exempts the covered supplies if statutory Gesamtumsatz did not exceed EUR 25,000 in the prior year and does not exceed EUR 100,000 in the current year, provided no effective waiver applies. Equality is inside each limit. Intra-EU supplies of new vehicles are excluded from this exemption (§ 19(6)); overseas establishment or EU-wide small-business treatment needs a separate review.
 
-### Registration of a new business
+Gesamtumsatz is receipts-based turnover under § 19(2), not all bank credits: subtract the exempt supplies specified there and omit fixed-asset sales. Establish the place of each foreign supply before deciding whether it belongs in the German test. **Check this point with one of our partner accountants.**
 
-- **Report the start within one month.** Opening a trade is reported to the municipality on the official form, and the municipality informs the tax office. Starting freelance work is reported to the tax office directly ([§ 138(1) AO](https://www.gesetze-im-internet.de/ao_1977/__138.html)). The same applies to moving or closing the business.
-- **The registration questionnaire.** Anyone who must report a start must also give the tax office further details relevant to tax, "nach amtlich vorgeschriebenem Datensatz über die amtlich bestimmte Schnittstelle", so electronically; paper only on application for hardship (§ 138(1b) AO). In practice this is the Fragebogen zur steuerlichen Erfassung sent through ELSTER. The deadline is the same month: "innerhalb eines Monats nach dem meldepflichtigen Ereignis" (§ 138(4) AO).
-- **What to check.** Was the questionnaire sent, and on time? What did the client choose there for VAT (Kleinunternehmer or not) and for expected turnover and profit? If it was never sent, the client should send it now; flag the delay.
+The [2026 EÜR instructions, line 12](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2) apply EUR 25,000 in the start-up year. The receipt crossing the applicable current-year limit is already under normal VAT rules; earlier exempt receipts remain exempt. Normal rules can themselves include other exemptions: do not automatically add VAT to every later sale. Previously taxable supplies received after a switch into the small-business scheme remain subject to their earlier treatment. Escalate the transition before issuing or correcting invoices.
 
-### VAT status and return period
+Under [§ 19(3)](https://www.gesetze-im-internet.de/ustg_1980/__19.html), an irrevocable waiver declaration can be made by the last day of February of the second calendar year after the tax year; it operates from that tax year's start and binds for at least five calendar years. Revocation takes effect only from the start of a subsequent calendar year after that binding period. Ask for the actual election history.
 
-- **Kleinunternehmer (§ 19 UStG).** VAT is not charged if total turnover (Gesamtumsatz) did not exceed EUR 25,000 in the previous calendar year ("25 000 Euro nicht überschritten hat") and does not exceed EUR 100,000 in the current year ("100 000 Euro nicht überschreitet") ([§ 19(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__19.html)). Both tests must be met. A turnover exactly at a limit is still inside.
-- **Start-up year.** For a business that starts during the year, the current-year limit is EUR 25,000 ([2026 EÜR instructions](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2), line 12: "darf der Gesamtumsatz im laufenden Kj. 25.000 € nicht überschreiten").
-- **Crossing a limit in the year.** The sale that takes current-year turnover over the limit is already taxed: the EÜR instructions say the receipt "mit dem Sie die jeweilige Grenze im laufenden Kj. überschreiten, unterliegt der Regelbesteuerung". Earlier sales stay exempt. Route to `germany-vat-return` at once.
-- **Waiver.** A Kleinunternehmer may opt into normal VAT by an irrevocable declaration up to the last day of February of the second year after the tax year; it binds for at least five calendar years (§ 19(3) UStG). Ask whether the client ever waived.
-- **Invoices.** A Kleinunternehmer must not show VAT on an invoice. VAT shown without entitlement is owed anyway ([§ 14c UStG](https://www.gesetze-im-internet.de/ustg_1980/__14c.html)). An invoice without VAT does not by itself prove Kleinunternehmer status: check the turnover. Reading § 19(2) with § 1(1) no. 1 UStG, services supplied abroad are left out of the turnover test; confirm with `germany-vat-return`.
-- **Returns for a Kleinunternehmer.** As a rule no advance returns and no annual VAT return, but the tax office can still ask for one, and a Kleinunternehmer who owes VAT as the recipient of a service from abroad (reverse charge) or on EU acquisitions must file for those periods (§ 19(1) sentence 2 with § 18(4a) UStG). Route to `germany-vat-return`.
-- **Normal scheme: the return period** ([§ 18 UStG](https://www.gesetze-im-internet.de/ustg_1980/__18.html)). The default period is the calendar quarter. It is the month if the VAT for the previous calendar year was more than EUR 9,000 ("mehr als 9 000 Euro"). The tax office may release a business from advance returns if last year's VAT was not more than EUR 2,000; the annual return is still due. The test is last year's VAT, not turnover.
-- **New businesses, tax periods 2021 to 2026.** A business started in the current year uses the expected VAT for that year for the test above; a business that ran only part of the previous year scales that year's VAT up to a full year (§ 18(2) UStG). This relief is written for 2021 to 2026 only; for 2027 check whether it has been extended, because the basic rule is monthly returns in the year of start and the year after.
-- **Deadlines.** Advance returns and payment are due by the tenth day after the period ends ("bis zum 10. Tag nach Ablauf"). A Dauerfristverlängerung adds one month; a monthly filer pays a special prepayment of one eleventh of last year's prepayments ([§§ 46 and 47 UStDV](https://www.gesetze-im-internet.de/ustdv_1980/__47.html)).
+Small-business exemption ordinarily disapplies the advance and annual return duties in § 18(1)–(4), but an authority request and [§ 18(4a)](https://www.gesetze-im-internet.de/ustg_1980/__18.html) remain: actual VAT liability on EU acquisitions, recipient-liable supplies or triangular transactions can require both annual and affected-period returns. Buying a foreign service alone proves none of those conditions. Invoice requirements, VAT wrongly shown, input deductions, foreign services/goods, ZM, OSS and special schemes: **Check this point with one of our partner accountants.**
 
-### Profit method: EÜR for Freiberufler
+For ordinary normal-scheme advance returns, [UStG § 18(2)](https://www.gesetze-im-internet.de/ustg_1980/__18.html) sets quarters by default, months where prior-year VAT exceeds EUR 9,000, and discretionary tax-office release from advance filing/payment where it is at most EUR 2,000. This tests VAT, not turnover. A prior-year refund surplus above EUR 9,000 permits a year-binding monthly election by submitting January's return by 10 February (§ 18(2a)). Check the election and office notices.
 
-- **EÜR.** Anyone not obliged by law to keep books, and not keeping them by choice, may work out profit as receipts less expenses ([§ 4(3) EStG](https://www.gesetze-im-internet.de/estg/__4.html): "nicht auf Grund gesetzlicher Vorschriften verpflichtet sind, Bücher zu führen"). A Freiberufler not entered as a merchant can use the EÜR at any size. The Anlage EÜR goes to the tax office electronically ([§ 60(4) EStDV](https://www.gesetze-im-internet.de/estdv_1955/__60.html)).
-- **Gewerbetreibende: § 141 AO.** The tax-law duty to keep books can start for a commercial business with total turnover above EUR 800,000 in the calendar year, or trade profit above EUR 80,000 in the business year ([§ 141(1) AO](https://www.gesetze-im-internet.de/ao_1977/__141.html)). Either test is enough. The duty does not start by itself: it begins with the business year after the tax office's notice (§ 141(2) AO). Freiberufler are not named in § 141.
-- **Merchants.** A merchant entered in the Handelsregister, or one who files a balance sheet for any reason, is outside this skill: refer, and use `germany-bookkeeping` for the § 238 and § 241a HGB tests.
+For ordinary starts in 2021–2026, use expected current-year VAT or annualise actual prior-year VAT if the business operated for only part of that year (§ 18(2)); do not carry this temporary rule into 2027 without checking the then-applicable law. Shelf/shell entities and other special cases: **Check this point with one of our partner accountants.**
 
-### Income tax prepayments
+Returns and payment are ordinarily due on the tenth day after each period ([§ 18(1)](https://www.gesetze-im-internet.de/ustg_1980/__18.html)); prescribed electronic submission, with a discretionary hardship-paper exception. An approved Dauerfristverlängerung extends filing and payment by one month ([UStDV § 46](https://www.gesetze-im-internet.de/ustdv_1980/__46.html)); it is refused/revoked if the tax claim appears endangered. Monthly filers must pay a special prepayment of one eleventh of prior-year prepayments; annualise a partial prior year using whole started months, or use expected payments for a current-year start ([§ 47](https://www.gesetze-im-internet.de/ustdv_1980/__47.html)). Application, annual declaration and crediting details: **Check this point with one of our partner accountants.**
 
-Prepayments are due on 10 March, 10 June, 10 September and 10 December ([§ 37(1) EStG](https://www.gesetze-im-internet.de/estg/__37.html)). They are set by notice, usually from the last assessment, and only if they come to at least EUR 400 a year and at least EUR 100 per due date (§ 37(5) EStG). A client with no notice has not missed a payment. The tax office may adjust them until the end of the fifteenth month after the tax year (§ 37(3) EStG). Route to `de-estimated-tax`.
+### Profit method and trade tax
 
-### Social insurance: screen and refer
+[EStG § 4(3)](https://www.gesetze-im-internet.de/estg/__4.html) allows receipts less expenses only where there is no statutory duty to keep books and regular accounts and the taxpayer does not voluntarily keep them. Asset, depreciation and other EÜR-specific rules still need checking. Submit EÜR by prescribed electronic dataset; the office may permit a prescribed paper calculation on hardship application ([EStDV § 60(4)](https://www.gesetze-im-internet.de/estdv_1955/__60.html)).
 
-- **Pension duty for some self-employed people.** [§ 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__2.html) makes these self-employed people compulsorily insured in the statutory pension scheme, among others: teachers and educators, and carers in sick, maternity, infant or child care, in each case if they regularly employ no insured employee; midwives; artists and publicists under the KSVG; craftspeople entered in the Handwerksrolle; and anyone who regularly employs no insured employee and works "auf Dauer und im Wesentlichen nur für einen Auftraggeber". A Minijob employee does not count as an employee for these tests. If a duty may apply and no pension contributions appear on the bank statement, flag it and refer to `de-social-contributions` and the Deutsche Rentenversicherung.
-- **Artists and publicists: the Künstlersozialkasse.** Self-employed artists and publicists are insured in pension, health and care insurance through the KSK if they work in the field for a living and not just temporarily, and employ no more than one employee in that work, with trainees and Minijobs not counted ([§ 1 KSVG](https://www.gesetze-im-internet.de/ksvg/__1.html)). Ask whether the client is registered with the KSK; if not and the test may be met, refer.
-- **Health insurance.** Ask whether the client is in statutory (GKV) or private (PKV) health insurance and collect the annual statement. How much of it counts as basic cover for the income tax deduction ([§ 10(1) no. 3 EStG](https://www.gesetze-im-internet.de/estg/__10.html)) is worked out in `de-einkommensteuer-freelancer`; take the figure from the insurer's statement, never estimate it.
+Check merchant duties under [HGB § 238](https://www.gesetze-im-internet.de/hgb/__238.html), which also count for tax under [AO § 140](https://www.gesetze-im-internet.de/ao_1977/__140.html). Commercial-register entry alone does not settle the result: [HGB § 241a](https://www.gesetze-im-internet.de/hgb/__241a.html) releases sole merchants with no more than EUR 800,000 sales AND EUR 80,000 annual surplus at two consecutive closing dates; for a new business the first closing date suffices.
 
-## Figures for 2026
+For a commercial business, [AO § 141](https://www.gesetze-im-internet.de/ao_1977/__141.html) can impose books/accounts if the authority finds statutory Gesamtumsatz above EUR 800,000 in the calendar year OR commercial profit above EUR 80,000 in the business year. The ordinary commencement is the business year after notification. A whole-business successor can inherit the duty without a new commencement notice. Do not infer eligibility for EÜR merely from absence of a notice: check other legal duties and voluntary accounts. Freiberufler are not within § 141's size test. Send balance-sheet work to `germany-bookkeeping` and a partner accountant.
 
-Limits that decide a route, for tax year 2026; unless a note says otherwise they were the same for 2025.
+For an ordinary individual commercial business, [GewStG § 11](https://www.gesetze-im-internet.de/gewstg/__11.html) rounds trade income down to full EUR 100, deducts the EUR 24,500 allowance up to that rounded income and applies the 3.5% base rate. The municipality's multiplier and any special-rate relief must be established before computing tax. The classification, IHK membership/fees, trade-tax liability, § 35 income-tax credit and its income/actual-tax ceilings need review: **Check this point with one of our partner accountants.**
 
-**Route-deciding limits**
+For the individual commercial route, [GewStDV § 25(1)](https://www.gesetze-im-internet.de/gewstdv_1955/__25.html) requires a trade return when trade income exceeds EUR 24,500, when prior-period carried-forward losses were separately determined, or when the office specifically requests one. Do not treat the allowance as a universal no-return exemption. Filing format and specialist exceptions: **Check this point with one of our partner accountants.**
 
-| What | Value | Source and wording |
-| --- | --- | --- |
-| Kleinunternehmer: previous-year total turnover, not exceeded | EUR 25,000 | [§ 19(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__19.html): "25 000 Euro nicht überschritten hat" |
-| Kleinunternehmer: current-year total turnover, not exceeded | EUR 100,000 | § 19(1) UStG: "100 000 Euro nicht überschreitet", https://www.gesetze-im-internet.de/ustg_1980/__19.html |
-| Kleinunternehmer in the start-up year: current-year limit | EUR 25,000 | EÜR instructions 2026, line 12, https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
-| Monthly VAT returns if last year's VAT was more than | EUR 9,000 | § 18(2) UStG: "mehr als 9 000 Euro", https://www.gesetze-im-internet.de/ustg_1980/__18.html |
-| Release from advance returns possible if last year's VAT was not more than | EUR 2,000 | § 18(2) UStG: "nicht mehr als 2 000 Euro", https://www.gesetze-im-internet.de/ustg_1980/__18.html |
-| Trade tax allowance, sole traders and partnerships, per year | EUR 24,500 | § 11(1) GewStG: "24 500 Euro", https://www.gesetze-im-internet.de/gewstg/__11.html |
-| Trade tax rate base (Steuermesszahl) | 3.5% | § 11(2) GewStG: "3,5 Prozent", https://www.gesetze-im-internet.de/gewstg/__11.html |
-| IHK fee exemption for unregistered sole traders, trade income or profit not more than | EUR 5,200 | § 3(3) IHKG: "5 200 Euro nicht übersteigt", https://www.gesetze-im-internet.de/ihkg/__3.html |
-| Bookkeeping duty possible (after notice), total turnover above | EUR 800,000 | § 141(1) no. 1 AO: "800 000 Euro im Kalenderjahr", https://www.gesetze-im-internet.de/ao_1977/__141.html |
-| Bookkeeping duty possible (after notice), trade profit above | EUR 80,000 | § 141(1) no. 4 AO: "80 000 Euro im Wirtschaftsjahr", https://www.gesetze-im-internet.de/ao_1977/__141.html |
-| Income tax prepayments set only if at least, per year | EUR 400 | § 37(5) EStG: "mindestens 400 Euro im Kalenderjahr", https://www.gesetze-im-internet.de/estg/__37.html |
-| and at least, per due date | EUR 100 | § 37(5) EStG: "mindestens 100 Euro", https://www.gesetze-im-internet.de/estg/__37.html |
+### Filing calendar and prepayments
 
-**Figures you will meet while sorting the documents** (the rules and the computation sit in `de-einkommensteuer-freelancer`)
+First establish which annual returns the client must file; profit alone is not proof that every person must file. Income-tax filing duty, electronic-return exceptions and exact Anlage S/G/Vorsorgeaufwand/form-line selection: **Check this point with one of our partner accountants.**
 
-| What | Value | Source and wording |
-| --- | --- | --- |
-| Low-value asset: may be expensed at once if the net cost is not more than | EUR 800 | [§ 6(2) EStG](https://www.gesetze-im-internet.de/estg/__6.html): "800 Euro nicht übersteigen" |
-| Optional pool (Sammelposten), per asset: more than / not more than | EUR 250 / EUR 1,000 | § 6(2a) EStG: "250 Euro, aber nicht 1 000 Euro übersteigen", https://www.gesetze-im-internet.de/estg/__6.html |
-| Gifts to non-employees: deductible only if the total per recipient per year is not more than | EUR 50 | § 4(5) no. 1 EStG: "insgesamt 50 Euro nicht übersteigen", https://www.gesetze-im-internet.de/estg/__4.html |
-| Business entertainment: share deductible | 70% | § 4(5) no. 2 EStG: "70 Prozent der Aufwendungen", https://www.gesetze-im-internet.de/estg/__4.html |
-| Home office room that is the centre of all work: yearly flat amount | EUR 1,260 | § 4(5) no. 6b EStG: "1 260 Euro (Jahrespauschale)", https://www.gesetze-im-internet.de/estg/__4.html |
-| Home office day rate, no separate room needed | EUR 6 | § 4(5) no. 6c EStG: "6 Euro (Tagespauschale)", https://www.gesetze-im-internet.de/estg/__4.html |
-| Cap on the day rates per year | EUR 1,260 | § 4(5) no. 6c EStG: "höchstens 1 260 Euro", https://www.gesetze-im-internet.de/estg/__4.html |
-| Business car: list-price method only if business use is more than | 50% | § 6(1) no. 4 EStG: "mehr als 50 Prozent betrieblich genutzt", https://www.gesetze-im-internet.de/estg/__6.html |
-| List-price method: private use per month | 1% | § 6(1) no. 4 EStG: "1 Prozent des inländischen Listenpreises", https://www.gesetze-im-internet.de/estg/__6.html |
-| Commuting to own first premises, per km of one-way distance, from the first km | EUR 0.38 | § 9(1) sentence 3 no. 4 EStG: "0,38 Euro", https://www.gesetze-im-internet.de/estg/__9.html |
-| Commuting cap per year, where no own or provided car is used | EUR 4,500 | § 9(1) sentence 3 no. 4 EStG: "4 500 Euro im Kalenderjahr", https://www.gesetze-im-internet.de/estg/__9.html |
+For required calendar-year annual returns, the ordinary deadline is seven months after year end ([AO § 149(2)](https://www.gesetze-im-internet.de/ao_1977/__149.html)). Covered adviser-prepared returns have the last day of February of the second following year, subject to an earlier authority request (§ 149(3)–(4)); this is not a general extension for a voluntary employee return. Check individual requests/extensions and shorter VAT tax periods before using these dates. Pandemic extensions covered 2020–2024, not 2025/2026 ([EGAO Art. 97 § 36](https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html)).
 
-- **2025 versus 2026 commuting.** From 1 January 2026 the EUR 0.38 rate applies from the first kilometre. For 2025 returns it applied only from the 21st kilometre ([BMF, what changes in 2026](https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/das-aendert-sich-2026.html)).
-- **Computers and software.** The Finance Ministry accepts a useful life of one year ("Nutzungsdauer von einem Jahr") for computer hardware and software, so the cost can be deducted in the year of purchase; the item is still listed in Anlage AVEÜR (2026 EÜR instructions).
-- **Church tax.** Read the rate from the client's last assessment, unless the client moved state or joined or left a church since then. It is set by the religious communities and differs by federal state; do not assume it.
+- **2025:** own required annual return ordinarily due 31 July 2026; covered adviser return due 1 March 2027 because 28 February is Sunday.
+- **2026:** own required annual return due 2 August 2027 because 31 July is Saturday; covered adviser return due 29 February 2028.
 
-## Boundaries and exceptions
+A Saturday, Sunday or statutory-holiday deadline moves to the next working day ([AO § 108(3)](https://www.gesetze-im-internet.de/ao_1977/__108.html)). Recalculate the actual date for the relevant locality.
 
-| Situation | Treatment | Source |
-| --- | --- | --- |
-| 2025 turnover exactly EUR 25,000, 2026 turnover not over EUR 100,000 | Still a Kleinunternehmer: the limits must not be exceeded | [§ 19 UStG](https://www.gesetze-im-internet.de/ustg_1980/__19.html) |
-| 2026 turnover crosses EUR 100,000 in October | The crossing sale and every later sale carry VAT; earlier sales stay exempt | 2026 EÜR instructions, line 12 |
-| 2025 VAT exactly EUR 9,000 | Quarterly returns in 2026: monthly needs more than the limit | [§ 18(2) UStG](https://www.gesetze-im-internet.de/ustg_1980/__18.html) |
-| Kleinunternehmer buys a service from a business abroad | Owes the VAT as recipient and files for that period | § 18(4a) UStG |
-| Work not named in § 18, no trade registered | Record as stated, flag: the tax office decides and trade tax may follow for past years | [§ 18 EStG](https://www.gesetze-im-internet.de/estg/__18.html), [§ 15(2) EStG](https://www.gesetze-im-internet.de/estg/__15.html) |
-| Trade income not more than EUR 24,500 | No trade tax after the allowance; no trade tax return unless the tax office asks | [§ 11 GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html), [§ 25 GewStDV](https://www.gesetze-im-internet.de/gewstdv_1955/__25.html) |
-| Gewerbe with profit above EUR 80,000 but no tax office notice | No § 141 AO duty yet; it starts with the business year after a notice | [§ 141(2) AO](https://www.gesetze-im-internet.de/ao_1977/__141.html) |
-| Artist employs two people in the artistic work (not trainees or Minijobs) | Outside the KSK test | [§ 1 KSVG](https://www.gesetze-im-internet.de/ksvg/__1.html) |
-| Self-employed with one main client and only a Minijob helper | Minijob does not count as an employee: the one-client pension test may be met | [§ 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__2.html) |
+Ordinary income-tax prepayments are due 10 March, 10 June, 10 September and 10 December, set by Vorauszahlungsbescheid, generally using the previous assessment after withholding credits ([EStG § 37(1), (3)](https://www.gesetze-im-internet.de/estg/__37.html)). Initial amounts require at least EUR 400 per calendar year AND EUR 100 per due date (§ 37(5)). Reconcile notices and payments rather than infer a missing obligation from a bank statement. Adjustments, additional-payment dates and late-filing/payment sanctions: **Check this point with one of our partner accountants.**
 
 ## Worked cases
 
-1. **The software developer** ([§ 11 GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html)). Lena writes software for three agencies, has no trade registration and calls herself Freiberuflerin. Software development is not on the § 18 list, so record "Freiberufler, as stated; not named in § 18(1) no. 1 EStG" and flag it. Explain the stakes without deciding: if the tax office treats the work as a Gewerbe, trade tax and IHK membership follow. With trade income of EUR 30,000, the Gewerbe route would give EUR 30,000 less EUR 24,500 = EUR 5,500, times 3.5% = a trade tax base amount of EUR 192.50; the income tax credit could be up to four times that, EUR 770, but never more than the trade tax actually payable. Route to `de-trade-tax` and `de-einkommensteuer-freelancer`.
-2. **The translator near the VAT limit** ([§ 19 UStG](https://www.gesetze-im-internet.de/ustg_1980/__19.html)). Tom, an Übersetzer (named in § 18), had total turnover of EUR 25,000 in 2025 and expects EUR 60,000 in 2026. He did not exceed EUR 25,000 in 2025 and will not exceed EUR 100,000 in 2026, so he remains a Kleinunternehmer in 2026, with no VAT on invoices. His 2026 turnover is above EUR 25,000, so for 2027 he moves to normal VAT from 1 January 2027. Route to `germany-vat-return` to plan the switch.
-3. **The new coach.** Aylin starts freelance business coaching on 15 October 2026. She reports the start to the tax office and sends the questionnaire within one month; 15 November 2026 is a Sunday, so the deadline moves to Monday 16 November 2026 ([§ 108(3) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html)). As a start-up she stays a Kleinunternehmer only while 2026 turnover does not exceed EUR 25,000. Coaching may fall under the teachers' pension duty in § 2 SGB VI if she employs no insured staff: flag and refer to `de-social-contributions`.
-4. **The quarterly filer** ([§ 18 UStG](https://www.gesetze-im-internet.de/ustg_1980/__18.html)). Max, a Gewerbetreibender in the normal VAT scheme, paid EUR 9,000 of VAT for 2025. That is not more than EUR 9,000, so his 2026 periods are quarters. The third quarter return is due on 10 October 2026, a Saturday, so it moves to Monday 12 October 2026. With a Dauerfristverlängerung it would be due one month later. Route to `germany-vat-return`.
-5. **The late 2025 return.** Sara prepares her own 2025 returns and has not filed. They were due on 31 July 2026. She should file now. If the 2025 income tax return is still not filed 14 months after the year end (end of February 2027), a late-filing surcharge must be set, unless an exception applies such as tax fixed at zero or not above the prepayments ([§ 152(2) and (3) AO](https://www.gesetze-im-internet.de/ao_1977/__152.html)).
-## When to refuse or refer
+These preserve the original years and inputs. Added conditions are assumptions for illustration, not newly discovered client facts.
 
-Stop, say why, and name the adviser needed.
+1. **Lena, software developer for three agencies.** No trade registration; she calls herself Freiberuflerin. Keep classification unsettled. If an ordinary individual trade-tax computation applies to trade income EUR 30,000, rounded income is EUR 30,000; less EUR 24,500 gives EUR 5,500; at 3.5% the base amount is EUR 192.50 ([§ 11](https://www.gesetze-im-internet.de/gewstg/__11.html)). The old EUR 770 figure is only 4 × EUR 192.50, not an established income-tax credit. Classification, IHK consequences, actual trade tax and the credit: **Check this point with one of our partner accountants.**
+2. **Tom, translator.** Statutory Gesamtumsatz EUR 25,000 in 2025; EUR 60,000 expected in 2026. If German-established, with no effective waiver and only supplies eligible for § 19(1), the 2025 equality does not exclude exemption in 2026; actual 2026 receipts must remain within EUR 100,000. If actual 2026 statutory turnover is EUR 60,000, § 19(1) is unavailable from 1 January 2027 because prior-year turnover then exceeds EUR 25,000 ([§ 19](https://www.gesetze-im-internet.de/ustg_1980/__19.html)). A forecast is not actual turnover; normal VAT does not make every activity taxable. Route the switch for review.
+3. **Aylin, business coaching started 15 October 2026.** Do not assume freelance classification or teaching-pension eligibility. The ordinary one-month AO notification/questionnaire deadline falls on Sunday 15 November, moving to Monday 16 November 2026 ([AO §§ 138](https://www.gesetze-im-internet.de/ao_1977/__138.html), [108](https://www.gesetze-im-internet.de/ao_1977/__108.html)). If the domestic small-business scheme otherwise applies, the start-up limit is EUR 25,000 actual 2026 turnover; apply the crossing rule above. Trade-registration timing, classification and social insurance: **Check this point with one of our partner accountants.**
+4. **Max, normal-scheme commercial business.** Original 2025 VAT EUR 9,000. Assume this is the relevant full-year tax, with no monthly refund election or special instruction: it does not exceed the threshold, so 2026 periods are quarterly. Q3's 10 October 2026 is Saturday: due Monday 12 October. With an effective one-month extension, the underlying 10 October deadline becomes 10 November 2026, not 12 November ([§ 18](https://www.gesetze-im-internet.de/ustg_1980/__18.html), [UStDV § 46](https://www.gesetze-im-internet.de/ustdv_1980/__46.html), [AO § 108](https://www.gesetze-im-internet.de/ao_1977/__108.html)). Amounts paid alone do not prove assessed VAT.
+5. **Sara, unfiled own 2025 annual returns.** If she was required to file and has no extension, the ordinary deadline was 31 July 2026. Arrange filing promptly. The old automatic-surcharge checkpoint was 14 months after year end, February 2027; it did not mean 14 months after the filing deadline. Its actual application, weekend/extension effects, exceptions and amount: **Check this point with one of our partner accountants.**
+6. **Original 2025 intake illustration, Max Mustermann.** Keep these as historical inputs, not established tax findings: single, Berlin, described as software developer/Freiberufler; VAT ID DE123456789; net receipts EUR 85,000 split TechCorp GmbH EUR 48,000, StartupAG EUR 25,000, smaller clients EUR 12,000; separately described EU income EUR 8,000 and VAT EUR 16,150 at 19%. Costs: rent EUR 6,000, software EUR 2,400, liability insurance EUR 600, prior adviser EUR 1,200, telephone/internet EUR 960, fuel EUR 3,600, maintenance EUR 800, MacBook Pro EUR 2,200 net in April 2025, input VAT EUR 2,300. TK/GKV EUR 8,400, formerly split EUR 7,200 plus EUR 1,200; care EUR 1,800; no pension payment detected. ESt prepayments EUR 2,500 × 4 = EUR 10,000; recorded SolZ EUR 0, church status unclear. The 2024 assessment supplied ESt EUR 12,000, profit EUR 42,000 and continuing AfA EUR 733. January–November 2025 VAT returns were said to be filed, December outstanding; an extension/one-eleventh prepayment was said to exist. Old estimated profit: EUR 68,000. The later placeholder illustration described a translator instead; do not overwrite the earlier activity. Arithmetic: 48,000 + 25,000 + 12,000 = 85,000; 85,000 × 19% = 16,150; 7,200 + 1,200 = 8,400. The eight listed costs total EUR 17,760, so 85,000 − 17,760 = EUR 67,240 before resolving mixed use, assets, VAT, insurance or other adjustments; EUR 68,000 is not reconciled. The EUR 8,000 EU amount may overlap the receipts; establish that first. Classification, invoice/input VAT, three-year versus one-year computer treatment, insurance deduction, SolZ and final profit: **Check this point with one of our partner accountants.** No return result follows from this template.
+7. **Original 2026 home-working calculation.** If 150 days qualify under [EStG § 4(5) no. 6c](https://www.gesetze-im-internet.de/estg/__4.html), EUR 6/day capped at EUR 1,260 gives EUR 900. Qualification ordinarily requires mainly working at home and no visit to an outside first workplace that day; the permanent-no-other-workplace exception also allows away/first-workplace days. There is one allowance across activities, with no overlap with the specified second-household accommodation or room deduction. Check actual days and overlapping claims.
+8. **Original 2026 commuting calculation.** Preserve 20 km one way, 220 days, EUR 0.38 and EUR 4,500: min(20 × 220 × 0.38, 4,500) = EUR 1,672. This is the arithmetic checkpoint only. Whether these are qualifying journeys to business premises, which distance/cap applies, public-transport alternatives, private/business car treatment and the different 2025 rate: **Check this point with one of our partner accountants.** Do not use the checkpoint as a deduction.
 
-- **Part-year residents and non-residents.** Different rules on limited tax liability. Refer to a Steuerberater who handles non-resident returns.
-- **Partnership as the business** (GbR, PartG, OHG, KG). It files a separate declaration of profit shares. A client who is a partner alongside their own sole business stays in scope with a flag: the share arrives in a separate determination notice.
-- **GmbH, UG or other corporation.** Corporate tax and trade tax rules differ. Refer.
-- **Balance-sheet filers**, including merchants in the Handelsregister and a Gewerbetreibender whose § 141 AO duty has already started. A notice received during the year being prepared takes effect only from the next business year, so that year stays in scope with a flag.
-- **More than five employees.** This is this skill's own scope line, not a legal threshold. Payroll at any size goes to `de-payroll`.
-- **An unsettled classification that matters**: work not named in § 18, freelance and commercial work that cannot be separated, or staff doing work the client does not lead. Record, flag, and tell the client the tax office decides and that a Steuerberater or binding ruling can settle it.
-- **VAT beyond the basics**: a Kleinunternehmer crossing a limit mid-year, reverse-charge purchases, goods sold across borders, distance sales and the one-stop shop. Route to `germany-vat-return`.
-- **Social insurance.** Any possible pension duty, KSK membership or health insurance question: refer to `de-social-contributions` and to the Deutsche Rentenversicherung or the Künstlersozialkasse.
-- **Business run in another tax office's district.** The business profit is then determined separately ([§ 180(1) no. 2 b AO](https://www.gesetze-im-internet.de/ao_1977/__180.html)). Flag it.
-- **Electric or plug-in hybrid business cars, disputed car use, and whether a home office is the centre of all work** where the client also works elsewhere. Record and flag for `de-einkommensteuer-freelancer`.
-- **Farming and forestry.** Refer.
-
-## Filing and payment
-
-**Returns for tax year 2026** (the income tax return duty is set out in [§ 56 EStDV](https://www.gesetze-im-internet.de/estdv_1955/__56.html); in practice a self-employed client with a profit files every year)
-
-| Return | Who | Deadline |
-| --- | --- | --- |
-| Income tax return with Anlage EÜR and Anlage S or G | every client in scope | 31 July 2027, a Saturday, so Monday 2 August 2027; with a Steuerberater, 29 February 2028 |
-| Annual VAT return | normal-scheme clients, and Kleinunternehmer only where § 18(4a) UStG applies or the office asks | same as above |
-| Trade tax return | Gewerbetreibende with trade income over EUR 24,500, or if asked ([§ 25 GewStDV](https://www.gesetze-im-internet.de/gewstdv_1955/__25.html)) | same as above |
-| VAT advance returns | normal scheme | tenth day after each month or quarter, plus one month with a Dauerfristverlängerung |
-| Income tax prepayments | where a notice sets them | 10 March, 10 June, 10 September, 10 December |
-
-- **The rule.** Annual returns are due seven months after the end of the calendar year ("sieben Monate nach Ablauf des Kalenderjahres", [§ 149(2) AO](https://www.gesetze-im-internet.de/ao_1977/__149.html)). Where a tax adviser prepares them, the deadline is the last day of February of the second following year (§ 149(3) AO), but the office can call a return in earlier (§ 149(4) AO). A deadline falling on a Saturday, Sunday or public holiday moves to the next working day ([§ 108(3) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html)).
-- **Returns for 2025, being filed now.** Self-prepared: due 31 July 2026, now past. With a Steuerberater: last day of February 2027; 28 February 2027 is a Sunday, so Monday 1 March 2027. The longer deadlines of the pandemic years ([Art. 97 § 36 EGAO](https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html)) covered tax periods 2020 to 2024 only; do not apply them to 2025.
-- **Electronic filing.** The Anlage EÜR, the VAT returns and the trade tax return go electronically in the official format ([§ 60(4) EStDV](https://www.gesetze-im-internet.de/estdv_1955/__60.html), [§ 18 UStG](https://www.gesetze-im-internet.de/ustg_1980/__18.html), [§ 14a GewStG](https://www.gesetze-im-internet.de/gewstg/__14a.html)). Paper only on application for hardship.
-- **Late filing.** A surcharge can be set for a late return. For a calendar-year return it is 0.25% of the assessed tax less prepayments and withheld tax for each started month of delay, at least EUR 25 for each started month, and at most EUR 25,000. It must be set if the return is more than 14 months late, subject to exceptions such as tax fixed at zero or not above the prepayments ([§ 152 AO](https://www.gesetze-im-internet.de/ao_1977/__152.html)).
-
-## Completion checklist
-
-- [ ] Tax year fixed; full-year residency confirmed.
-- [ ] Out-of-scope structures screened out (partnership, corporation, balance sheet, more than five employees).
-- [ ] Classification recorded as stated, tested against § 18 and § 15 EStG, and flagged where the work is not named or activities are mixed.
-- [ ] Consequences noted: trade tax, IHK membership, Anlage S or G.
-- [ ] For a new business: start reported and questionnaire sent within one month, or delay flagged.
-- [ ] VAT status settled: both Kleinunternehmer limits tested (start-up limit where relevant), waiver asked, return period set from last year's VAT, Dauerfristverlängerung noted.
-- [ ] Profit method confirmed: EÜR, and for a Gewerbe any § 141 AO notice.
-- [ ] Prepayments read from the notice.
-- [ ] Pension duty and KSK screened; referrals made where a duty may apply.
-- [ ] Health insurance statement collected.
-- [ ] Other income routed: `de-capital-gains`, `de-crypto-tax`, `de-rental-income`.
-- [ ] Summary confirmed with the client; open flags listed.
-- [ ] Handed to `de-einkommensteuer-freelancer`, `germany-vat-return`, `germany-bookkeeping` and, for a Gewerbe, `de-trade-tax`.
-- [ ] 2025 and 2026 deadlines diarised; late 2025 returns flagged.
-- [ ] Steuerberater review before filing.
-
-<!-- openaccountants-cta-block -->
-
----
+```oa-check
+name: DE ordinary trade-tax base, original Lena input
+inputs:
+  trade_income: 30000
+steps:
+  - rounded: floor(trade_income / 100) * 100
+  - excess: max(rounded - 24500, 0)
+  - base: excess * 0.035
+  - historical_fourfold: base * 4
+expected:
+  base: 192.50
+  historical_fourfold: 770.00
+```
 
 ```oa-check
 name: DE 2026, home office day rate under the yearly cap
@@ -276,19 +143,83 @@ expected:
   amount: 1672.00
 ```
 
+```oa-check
+name: Historical 2025 intake, reconciliation only
+inputs:
+  receipts: 85000
+steps:
+  - client_total: 48000 + 25000 + 12000
+  - historical_vat: receipts * 0.19
+  - listed_costs: 6000 + 2400 + 600 + 1200 + 960 + 3600 + 800 + 2200
+  - unreconciled_checkpoint: receipts - listed_costs
+  - prepayments: 2500 * 4
+  - insurance_total: 7200 + 1200
+expected:
+  client_total: 85000
+  historical_vat: 16150
+  listed_costs: 17760
+  unreconciled_checkpoint: 67240
+  prepayments: 10000
+  insurance_total: 8400
+```
+
+## When to refuse or refer
+
+Each row is a hold on the tax outcome: **Check this point with one of our partner accountants.** Retain the question, evidence and destination in `open_flags`; loading a companion Guide does not release the hold.
+
+| Topic needing a decision | Destination |
+|---|---|
+| Part-year/non-resident facts, partnership returns/interests and taint rules, corporations, farming/forestry or profit determination in another tax-office district | Appropriately qualified Steuerberater; `de-partners-and-part-year`, `de-non-resident-tax`, `de-corporate-tax` |
+| Unsettled professional/commercial classification, mixed work, staff responsibility, binding ruling and prior-year reassessment | `de-einkommensteuer-freelancer`, `de-trade-tax` |
+| IHK membership/fee exemptions, actual trade tax and § 35 credit | `de-trade-tax` |
+| Low-value assets, register requirements and Kleinunternehmer cost measurement | `germany-bookkeeping` |
+| Pool election, eligible assets, year-wide consistency and release period | `germany-bookkeeping` |
+| Computer/peripheral/software useful life and continuing AfA; investment deductions/special depreciation | `germany-bookkeeping`, `de-einkommensteuer-freelancer` |
+| Gifts: recipient/year limits, net/gross measurement and separate records | `de-einkommensteuer-freelancer` |
+| Entertainment: reasonable business cost, participants/purpose/receipt and separate records | `de-einkommensteuer-freelancer` |
+| Home-office room: centre of all work, actual costs versus annual allowance, part-year months and separate records | `de-einkommensteuer-freelancer` |
+| Cars: business/private split, logbook/list-price/cost method, electric/hybrid relief, commuting versus business mileage | `de-einkommensteuer-freelancer` |
+| Pension duty: teachers/coaches, carers, midwives, crafts and lasting one-client work; insured staff/Minijob treatment and exceptions | `de-social-contributions`; Deutsche Rentenversicherung |
+| KSK: artist/publicist status, earnings, duration, staffing, trainees/Minijobs and statutory exclusions | `de-social-contributions`; Künstlersozialkasse |
+| Health/care: GKV/PKV, basic cover, Zusatzbeitrag, sick pay, annual certified deductible amounts | `de-social-contributions`, `de-einkommensteuer-freelancer` |
+| VAT invoices/tax wrongly shown, input tax, exemptions/rates, foreign supplies/purchases, ZM, EU acquisitions, OSS and transitions | `germany-vat-return` |
+| Bookkeeping/record retention, GoBD, e-invoice issue/receipt/format/transition and tills | `germany-bookkeeping`, `germany-einvoice` |
+| Church-tax membership/state/rate/base/rounding, salary, rent, investments, crypto and foreign income | Relevant income Guide and Steuerberater |
+| Filing-duty exceptions, form placement, extra prepayments/adjustments, late-filing surcharge/formula/cap, interest and late-payment consequences | `de-return-assembly`, `de-estimated-tax`; Steuerberater |
+
+## Completion checklist
+
+Confirm the year and scope; reconcile source documents; keep classification/VAT/profit method evidenced or explicitly unsettled; reconcile notices/payments; obtain missing facts once; keep every specialist hold visible; confirm the corrected summary; hand the package, calendar and reviewer brief to `de-return-assembly`. A referral is not a client fact or professional approval.
+
+<!-- openaccountants-cta-block -->
+
 ## Sources
 
-| Source | URL | Read on |
-|---|---|---|
-| BMF letter of 1 September 2026: Anlage EÜR 2026 and instructions | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-10-31 |
-| AO § 141 | https://www.gesetze-im-internet.de/ao_1977/__141.html | 2026-10-31 |
-| EStG § 37 | https://www.gesetze-im-internet.de/estg/__37.html | 2026-10-31 |
-| EStG § 4 | https://www.gesetze-im-internet.de/estg/__4.html | 2026-10-31 |
-| EStG § 6 | https://www.gesetze-im-internet.de/estg/__6.html | 2026-10-31 |
-| EStG § 9 | https://www.gesetze-im-internet.de/estg/__9.html | 2026-10-31 |
-| GewStG § 11 | https://www.gesetze-im-internet.de/gewstg/__11.html | 2026-10-31 |
-| IHKG § 3 | https://www.gesetze-im-internet.de/ihkg/__3.html | 2026-10-31 |
-| UStG § 18 | https://www.gesetze-im-internet.de/ustg_1980/__18.html | 2026-10-31 |
-| UStG § 19 | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-10-31 |
+Read dates refer to the provisions or instruction passages identified here, not a read of an entire code. Applicable exact 26 November reads from the completed German bookkeeping, VAT and employee proofs are reused for unchanged operative rules; business applicability of EÜR and the home-day provision is confirmed directly by EStG § 4. No employee commuting entitlement is imported into the business example.
 
-Not yet confirmed: none.
+| Source and scope read | URL | Read on |
+|---|---|---|
+| EStG § 1(1): residence; completed German employee proof, same natural-person rule | https://www.gesetze-im-internet.de/estg/__1.html | 2026-11-26 |
+| EStG § 18(1): professional activities and qualified staff | https://www.gesetze-im-internet.de/estg/__18.html | 2026-11-26 |
+| EStG § 15(2): trade definition and profit purpose | https://www.gesetze-im-internet.de/estg/__15.html | 2026-11-26 |
+| AO § 138(1), (1b), (1c), (4): tax notices/information, exception power and period | https://www.gesetze-im-internet.de/ao_1977/__138.html | 2026-11-26 |
+| ELSTER: business questionnaire, submission and tax number | https://www.elster.de/elsterweb/infoseite/unternehmensgruendung | 2026-11-26 |
+| UStG § 19(1)–(6): domestic exemption, turnover, waiver and excluded new vehicles | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-11-26 |
+| BMF EÜR 2026 instructions, line 12: start-up, crossing and transition receipts; saved official text | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-11-26 |
+| UStG § 18(1)–(4a): periods, deadlines and small-business exception; ordinary period/extension reads reused | https://www.gesetze-im-internet.de/ustg_1980/__18.html | 2026-11-26 |
+| UStDV § 46: extension, tax-claim safeguard | https://www.gesetze-im-internet.de/ustdv_1980/__46.html | 2026-11-26 |
+| UStDV § 47: monthly special prepayment and partial/new years | https://www.gesetze-im-internet.de/ustdv_1980/__47.html | 2026-11-26 |
+| EStG § 4(3), (5) no. 6c: EÜR and home-day conditions; German bookkeeping proof reused | https://www.gesetze-im-internet.de/estg/__4.html | 2026-11-26 |
+| EStDV § 60(4): electronic EÜR/hardship; German bookkeeping proof reused | https://www.gesetze-im-internet.de/estdv_1955/__60.html | 2026-11-26 |
+| HGB § 238: merchant books; German bookkeeping proof reused | https://www.gesetze-im-internet.de/hgb/__238.html | 2026-11-26 |
+| AO § 140: non-tax-law duties; German bookkeeping proof reused | https://www.gesetze-im-internet.de/ao_1977/__140.html | 2026-11-26 |
+| HGB § 241a: sole-merchant release; German bookkeeping proof reused | https://www.gesetze-im-internet.de/hgb/__241a.html | 2026-11-26 |
+| AO § 141: size tests, notice and successor; German bookkeeping proof reused | https://www.gesetze-im-internet.de/ao_1977/__141.html | 2026-11-26 |
+| GewStG § 11: ordinary rounding, allowance, base rate and special-rate boundary | https://www.gesetze-im-internet.de/gewstg/__11.html | 2026-11-26 |
+| GewStDV § 25(1): trade return including loss carryforward/request | https://www.gesetze-im-internet.de/gewstdv_1955/__25.html | 2026-11-26 |
+| AO § 149(1)–(4): annual/adviser deadlines and requests; German employee proof reused | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-11-26 |
+| EGAO Art. 97 § 36 opening: pandemic years only; German employee proof reused | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-11-26 |
+| AO § 108(3): weekends/holidays; German VAT proof reused | https://www.gesetze-im-internet.de/ao_1977/__108.html | 2026-11-26 |
+| EStG § 37(1), (3), (5): ordinary prepayments and initial minimums | https://www.gesetze-im-internet.de/estg/__37.html | 2026-11-26 |
+
+Not yet confirmed: no usable unverified tax outcome retained; the listed specialist points remain explicit partner-accountant holds.
