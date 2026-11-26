@@ -16,6 +16,8 @@ type: filing-howto
 
 > **General reference only.** This skill is tax reference material for AI-assisted work. It has not been reviewed for any specific business's facts. Do not rely on it to file, pay or take a position without a qualified professional checking it.
 
+## Scope
+
 Use this ordinary-return method only after standard taxation and the actual transaction facts are established. It is not a filing method for every business. Keep the original transaction period: the worked cases below remain in 2026 and use the stated 2025 comparatives.
 
 ## The method, step by step
@@ -71,7 +73,7 @@ Line 37 sums tax in lines 13–18 and 25–32. Deduct lines 38–44 to reach lin
 
 For tax self-assessed or assessed and unpaid by the due date, the surcharge is **1% per started month**, on overdue tax rounded down to the next multiple of **EUR 50**. It does not start before assessment/self-assessment. No surcharge is collected for lateness up to **3 days**, except cash/cheque payments under § 224(2) no. 1 AO. Bank transfers count when credited to the authority. [AO § 240](https://www.gesetze-im-internet.de/ao_1977/__240.html), [§ 224(2)](https://www.gesetze-im-internet.de/ao_1977/__224.html).
 
-## Worked examples
+## Worked cases
 
 ### Example 1: An IT consultant's monthly return, with a late payment
 
@@ -195,7 +197,7 @@ expected:
   german_vat_austrian_consultancy: 0
 ```
 
-## Specialist topics and missing facts
+## When to refuse or refer
 
 The following topics remain in scope as handoffs. No tax outcome is supplied for them here.
 
@@ -222,6 +224,8 @@ The following topics remain in scope as handoffs. No tax outcome is supplied for
 
 Use names and descriptions only to find documents: banks/payment processors and interest/loan/insurance charges; tax office/customs/IHK/HWK/broadcasting; utilities/telecoms; transport; food/supermarkets; rent; EU/non-EU software/advertising; professional services; payroll/social security; own-account movements, capital, loans and cash withdrawals. For mixed billing brands, Amazon purchases, restaurant payments, cars/home office or round-number transfers, obtain the invoice, purpose and actual parties. Keep signed amounts and reconcile both sides of internal transfers. No merchant dictionary or default replaces that evidence.
 
+## Ask the client first
+
 Before handoff, record standard versus § 19 status, 2025/current-2026 turnover, activity/legal form/establishments, staff, exempt supplies, Soll/Ist status, periodicity/extension/prepayment, foreign suppliers' billing entities, customers' business/VAT-ID evidence, restaurant package splits, solar facts and goods proof. Ask only for facts absent from the records. For bank-only inputs, missing invoices or material inconsistencies, keep the affected return on hold.
 
 Companions: [annual return and special schemes](de-vat-annual-and-special-schemes.md), [e-invoicing](germany-einvoice.md), [income tax](germany-income-tax.md), [freelancer income tax](de-einkommensteuer-freelancer.md); `vat-workflow-base` for the working-paper workflow and `eu-vat-directive` for EU context. These links do not establish eligibility or current legal proof by themselves.
@@ -229,3 +233,5 @@ Companions: [annual return and special schemes](de-vat-annual-and-special-scheme
 ## Sources
 
 Read on 26 November 2026: the cited operative sections of UStG §§ 12, 13b, 15, 18, 3a, 18a and 18b; UStDV §§ 46–48; AO §§ 108, 224 and 240; BMF restaurant letter of 22 December 2025; and the 2026 USt 1 A, USt 1 E and USt 5 E forms/instructions of 29 December 2025. Principal source texts: [UStG § 18](https://www.gesetze-im-internet.de/ustg_1980/__18.html), [UStG § 12](https://www.gesetze-im-internet.de/ustg_1980/__12.html), [2026 BMF forms and instructions](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-vordruckmuster-USt-voranmeldung-2026.pdf?__blob=publicationFile&v=2). Further links are beside the rules above. Existing official captures were reused only for these same German rules and 2026 forms; specialist referrals make no retained tax determination.
+
+Not yet confirmed: fractional-euro base entry and the missing-fact/specialist applications identified above. They are expressly referred and supply no usable tax outcome here.
