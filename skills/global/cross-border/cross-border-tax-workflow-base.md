@@ -1,10 +1,10 @@
 ---
 name: cross-border-tax-workflow-base
-description: "Shared workflow base for cross-border and international personal tax skills, tax year 2026. Holds the residency-map intake, the sequenced-plan output contract (a cross-border answer is an ordered set of steps, not separate country answers), the conservative default for cross-border cases, the AUDIT FLASH POINT marker, the double-tax relief and treaty-bridge convention, and the mandatory hand-off to a licensed accountant. It carries no country rates or topic rules of its own and is loaded alongside a topic skill (for example us-foreign-earned-income-2555, us-foreign-tax-credit-1116 or us-foreign-trust-reporting) and the relevant country skills, after cross-border-tax-router has fixed what to load."
-version: "1.0"
+description: "2026 cross-border personal-tax working-paper method: residency-map intake, ordered plan, source trace, double-tax relief bridge, information-return checklist, unresolved-facts holds and accountant hand-off. Load with cross-border-tax-router and the relevant topic and country Guides; this method does not determine country residence, treaty entitlement or filing obligations. Includes a conditional UK foreign-tax-credit arithmetic example."
+version: "1.1"
 jurisdiction: GLOBAL
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 category: international
 type: cross-country-method
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -12,141 +12,108 @@ tier: 2
 domain: cross-border
 ---
 
-# Cross-border tax workflow: the shared method for any case that touches more than one country v1.0
+# Cross-border tax workflow: the shared method for any case that touches more than one country v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Scope and who this is for
 
-Tax year 2026. This skill carries no rates, thresholds or amounts, and its method does not change with a tax year. It is the shared method every cross-border case follows: the residence of each person in each country, the source of each item of income, the treaty tie-breaker where two countries both claim a person as resident, relief by credit or by exemption, and the forms that claim the relief and report the facts. The country and topic skills hold the rules and figures. `cross-border-tax-router` decides which of them to load; this skill decides how they are put together.
+Tax year 2026. Produce an ordered working paper for cross-border personal tax, with a cited rule behind each proposed step and visible holds wherever facts or law remain unresolved. `cross-border-tax-router` selects the topic and country Guides; this base explains how to join them. Check each destination's scope, year and official sources before using it. A link alone does not establish that the destination settles the case.
 
-It carries no country rule and no topic rule of its own. Those live in the topic skills (for example `us-foreign-earned-income-2555`, `us-foreign-tax-credit-1116`, `us-fbar-fatca-reporting`, `us-gilti-fdii-beat`, `us-form-5471-cfc-information`, `us-foreign-trust-reporting`, `us-expatriation-exit-tax`) and in each country's own skills (for example `us-tax-residency`, `uk-statutory-residence-test`, `uk-non-dom`, `mt-non-dom`, `ie-non-dom`, `cy-non-dom`, `ca-tax-residency`, `leaving-australia-tax-residency-cgt`).
+Keep all relevant subjects: domestic residence, citizenship and green-card history, domicile where relevant, source of income and gains, treaty residence, relief by credit/exemption/exclusion, information returns and the order of events. Topic routes include `us-foreign-earned-income-2555`, `us-foreign-tax-credit-1116`, `us-fbar-fatca-reporting`, `us-gilti-fdii-beat`, `us-form-5471-cfc-information`, `us-foreign-trust-reporting` and `us-expatriation-exit-tax`. Country routes include `us-tax-residency`, `uk-statutory-residence-test`, `uk-non-dom`, `mt-non-dom`, `ie-non-dom`, `cy-non-dom` and `ca-tax-residency`. Preserve `leaving-australia-tax-residency-cgt` as an Australian routing destination only; this base supplies no Australian rule or figure.
 
-A topic skill needs this method, and this method computes nothing without the topic and country skills. Load all three, in the order `cross-border-tax-router` fixed. Each country and topic skill states its own tax year.
-
-The output is a working paper for a licensed accountant, never a filed return. Cross-border information returns carry heavy penalties, and many cross-border events cannot be undone once done. The work ends by handing the working paper to a licensed accountant in the lead country before the person acts.
+The output remains an unreviewed working paper until the specific plan receives professional review. Do not file, elect, sell, distribute or change a person's status from this workflow. No country rate is set here; the UK case below demonstrates arithmetic under explicit assumptions, rather than determining the person's UK liability.
 
 ## Ask the client first
 
-- In which countries were you resident, under each country's own rules, during the year, and on which dates did that change?
-- Do you have a home available to you in more than one country, and where are your family and main economic ties?
-- Which passports do you hold, and do you hold or have you ever held a US green card?
-- Which income, gains or assets arise in which country, and has any country already withheld or charged tax on them?
-- Do you hold foreign bank, brokerage or pension accounts, or interests in foreign companies, trusts or funds?
-- Have you already claimed treaty relief or filed a certificate of residence in any country for this year?
+Read the available case record and documents before asking. Collect missing facts together:
+
+- Residence claimed in each country, domestic-test evidence, dates of changes and each country's tax-year period.
+- Homes available, family and economic ties, travel dates and day-count records.
+- All citizenships and current or former US green-card status, separately from residence.
+- Each income item, gain, asset, source-country connection and transaction date; tax withheld, assessed, paid or refundable.
+- Foreign bank, brokerage and pension accounts; companies, trusts, partnerships and funds, with ownership and beneficiary details.
+- Prior returns, treaty claims, residence certificates, elections and deadlines already approaching.
+
+Record evidence and uncertainty alongside each answer. Do not treat a passport, a residence certificate or the client's residence description as the completed legal analysis.
 
 ## The method, step by step
 
-1. **Residence of each person, in each country, under that country's own law.** Run each country's domestic test separately. The US treats a non-citizen as resident if they meet the green card test or the substantial presence test for the calendar year, and a person can be both non-resident and resident in the same year, which needs a dual-status return ([IRS: determining an individual's tax residency status](https://www.irs.gov/individuals/international-taxpayers/determining-an-individuals-tax-residency-status)). The UK looks at each tax year separately under the statutory residence test ([HMRC RDR3](https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3)). Record citizenship too: a US citizen or resident alien is taxed on worldwide income wherever they live ([IRS: US citizens and resident aliens abroad](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad)). Route the tests themselves to the country skills.
-2. **Treaty tie-breaker, where two countries both treat the person as resident.** For the US, the residence tests do not override a treaty's definition of residence, so a dual-resident taxpayer can still claim treaty benefits if the treaty contains a tie-breaker rule. A person the tie-breaker treats as resident of the other country is "treated as a nonresident alien in figuring your U.S. income tax", but "For purposes other than figuring your tax, you will be treated as a U.S. resident" ([IRS Publication 519](https://www.irs.gov/publications/p519)). In the UK and US convention the tests run in order: permanent home; if there is a permanent home in both States, the centre of vital interests; if that cannot be determined, or there is no permanent home in either State, habitual abode; then nationality; then mutual agreement between the competent authorities ([UK and US double taxation convention, Article 4](https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force)). Stop at the first test that gives one answer. Read the named treaty for every other pair of countries, since wording differs.
-3. **Source of each item of income or gain.** For each item, record which country it arises in and whether that country taxes non-residents on it. A UK resident "may be taxed on your foreign income by the UK and by the country where your income is from" ([GOV.UK: if you're taxed twice](https://www.gov.uk/tax-foreign-income/taxed-twice)). For a UK resident's capital gain, GOV.UK says the person usually pays tax in the country of residence and is exempt in the country where the gain is made, with no claim usually needed. For a gain on an asset that cannot be taken out of the country, such as land or a house, or that the person is using for business in that country, the person will need to pay tax in both countries and get relief from the UK (same page). The country skill holds each source rule.
-4. **Who has the primary right, and how the other country gives relief.** For each item taxed by more than one country, name the mechanism. By credit: the US lets a person subject to US tax on foreign-taxed income take either a credit or an itemized deduction for qualifying foreign income taxes ([IRS: foreign tax credit](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit)); route to `us-foreign-tax-credit-1116`. By exclusion or exemption: "If you elect to exclude either foreign earned income or foreign housing costs, you cannot take a foreign tax credit for taxes on income you exclude", and "If you do take the credit, one or both of the elections may be considered revoked" (same IRS page); route the exclusion to `us-foreign-earned-income-2555` and the credit to `us-foreign-tax-credit-1116`, and make the choice between them with both loaded. By treaty: the UK and US convention requires the US to allow its residents and citizens a credit for UK income tax, subject to the limitations of US law (Article 24 of the convention linked in step 2). In the UK, Foreign Tax Credit Relief is usually claimed on the tax return, and the relief can be less than the foreign tax paid. Foreign Tax Credit Relief cannot be claimed where the double taxation agreement requires the tax to be claimed back from the source country. Without an agreement, relief is usually still given unless the foreign tax does not correspond to UK Income Tax or Capital Gains Tax ([GOV.UK: if you're taxed twice](https://www.gov.uk/tax-foreign-income/taxed-twice)).
-5. **Check the saving clause before any treaty benefit for a US citizen or resident.** Most US treaties contain a saving clause that preserves the right of the United States to tax its citizens and residents "as if the tax treaty had not come into effect", although "many tax treaties have exceptions to the saving clause" ([IRS Publication 519](https://www.irs.gov/publications/p519)). In the UK and US convention this is Article 1, paragraph 4, with the exceptions in paragraph 5 (convention linked in step 2).
-6. **The forms that claim relief and report the facts, in each country.** A relief not claimed on the right form is not relief. A dual-resident taxpayer who claims treaty benefits files Form 1040-NR with Form 8833 attached and computes tax as a non-resident alien ([IRS Publication 519](https://www.irs.gov/publications/p519)). Americans abroad get the exclusion and the credit only by filing a US return, and US taxpayers with foreign financial accounts over the reporting threshold must report them on FinCEN Form 114 even when the accounts produce no taxable income ([IRS: US citizens and resident aliens abroad](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad)). For a UK resident, where income is exempt from foreign tax but taxed in the UK, or where the treaty requires it, relief must be applied for in the source country, with HMRC confirming residence ([GOV.UK: if you're taxed twice](https://www.gov.uk/tax-foreign-income/taxed-twice)). List every information return the facts trigger, not only the income forms; the thresholds and deadlines are in the topic skills.
-7. **Order the steps and say why.** Test residence changes before sales, characterise entities before distributions, and test expatriation before later sales (see Layer B below). A treaty tie-breaker that treats a green card holder as a non-resident alien "can trigger section 877A expatriation tax" in certain instances ([IRS Publication 519](https://www.irs.gov/publications/p519)), so test both together. A country may treat a departing resident as having sold certain types of property at their fair market value on departure, even if they were not sold: Canada calls this a deemed disposition ([CRA: leaving Canada](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/leaving-canada-emigrants.html)).
-8. **Hand off** the working paper as in "Review status and the mandatory hand-off" below.
+1. **Build the residence map.** Examine each country's domestic residence question separately using its country Guide and official source. For the US, route green-card, substantial-presence, first-year election and dual-status questions to `us-tax-residency`; for the UK, use `uk-statutory-residence-test` for the relevant period. Record citizenship separately: US citizens and resident aliens are generally subject to US tax on worldwide income under the Internal Revenue Code, including when abroad ([IRS, opening worldwide-income statement](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad)). This does not decide exceptions, treaty status, taxable amounts or filing duties.
+2. **Identify the actual treaty question.** Where both countries may claim residence, obtain the operative treaty, protocols, scope, effective dates and residence definition before considering a tie-breaker. For the UK–US convention, use Article 4 as the reading route, including its definition/scope provisions before any permanent-home, centre-of-vital-interests, habitual-abode, nationality or competent-authority question. Do not apply that hierarchy to another treaty by analogy. The residence outcome, US income-tax versus other-purpose status, and Forms 1040-NR/8833 application need case-specific review: **Check this point with one of our partner accountants.**
+3. **Map each income or gain.** Record its character, owner, dates, location and source connections; then investigate each country's domestic and treaty treatment. For UK foreign income/gains, keep separate questions for ordinary investments, immovable property and business assets; do not infer an exemption or dual liability simply from the asset's location. Obtain the country rule and any relevant treaty article. If that treatment is unresolved, mark it **undetermined — do not use** and **Check this point with one of our partner accountants.**
+4. **Build the relief bridge.** Investigate credit, deduction, exemption, exclusion, re-sourcing and source-country refunds without promising that all double tax disappears. Use `us-foreign-tax-credit-1116` alongside `us-foreign-earned-income-2555` when comparing US credit and exclusion. The IRS states that a foreign tax credit cannot be taken for taxes on income excluded under the foreign-earned-income or foreign-housing elections; claiming that credit may cause one or both elections to be considered revoked ([IRS, foreign tax credit](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit)). Other eligibility, credit limitations and elections come from those Guides and their sources. For the UK, Foreign Tax Credit Relief is usually claimed through the tax return; the agreement may limit it or require a source-country refund instead ([GOV.UK, if you're taxed twice](https://www.gov.uk/tax-foreign-income/taxed-twice)). Check entitlement and foreign-tax minimisation before applying the worked-case arithmetic.
+5. **Read the saving clause and exceptions.** For a proposed US treaty benefit, identify the relevant treaty's saving clause, its scope and every potentially applicable exception. For the UK–US convention, Articles 1(4)–(5) are the reading route and Article 24 is the relief/re-sourcing research route. These references do not establish entitlement or eliminate citizenship taxation. The actual benefit and its interaction with residence and citizenship are referred: **Check this point with one of our partner accountants.**
+6. **Build the forms checklist.** For each country, research both income-tax and information returns, claims, elections, residence certifications, disclosure exceptions, deadlines and signatures. Do not assume every relief requires a separate form or that a form alone earns relief. For a possible US dual-resident treaty position, investigate Forms 1040-NR/8833 through `us-tax-residency`. For foreign accounts, investigate FinCEN Form 114 and Form 8938 through `us-fbar-fatca-reporting`, including accounts with no taxable income. For trusts use `us-foreign-trust-reporting` for Forms 3520/3520-A; for companies use `us-form-5471-cfc-information`. Preserve foreign-partnership/Form 8865 and foreign-fund/PFIC/Form 8621 questions from the workflow's original reporting checklist; these are research prompts, not findings that filing is required. For unresolved partnership/fund filing and late or missed returns: **Check this point with one of our partner accountants.**
+7. **Order the events and dependencies.** Analyse proposed residence changes before assessing a sale, entity/trust character before a distribution, and possible expatriation before a later sale. Keep the Canadian departure/deemed-disposition question in `ca-tax-residency`, and a green-card treaty position together with `us-expatriation-exit-tax`: research long-term-resident status and section 877A rather than inferring no exposure from a residence tie-breaker. Record actual event dates and possible intervening filings. For departure-tax or expatriation application: **Check this point with one of our partner accountants.** Do not recommend changing the order until both countries' consequences are established.
+8. **Hand off the paper.** Send the situation map, evidence trace, ordered plan, computations and unresolved items to the engaged accountant for review before action. Follow the hand-off policy below; do not claim an engagement or completed review from a tool call or Guide label.
 
 ### The sequenced-plan output contract
 
-A cross-border answer is not a stack of single-country answers. It is an ordered plan. Every cross-border topic skill produces both layers below.
+Produce both layers for every topic engaged:
 
-**Layer A: Reference layer (the rules).** For each country and topic engaged, a faithful, cited statement of the rule (statute, form or treaty article), set out as decision steps an assistant can reason over. Layer A answers "What does each system require, and where is it written?" Every rule cites its source, for example section 911, section 877A, Form 3520, or the treaty article.
+**Layer A: Reference layer.** State the applicable rule with the official statute, form instructions or treaty article, its conditions, effective period and exact source passage. Sections 911 and 877A and Form 3520 are examples of identifiers to locate, not universal rules. Where a source or operative condition is missing, keep the question visible and withhold the legal conclusion.
 
-**Layer B: Executable layer (the sequenced plan).** A step-by-step procedure that takes the person's facts and the order of events fixed by `cross-border-tax-router`, and produces an ordered list of steps. Each step states:
-
-1. What happens (the event, and when).
-2. Which country taxes it, and on what basis (citizenship, residence, domicile or source), citing the Layer A rule.
-3. How double tax is relieved at that step (credit, exemption or exclusion, treaty relief article, re-sourcing, tie-breaker), citing the article or section.
-4. Which forms the step triggers in each country, with the deadlines from the topic skills.
-5. Why the step sits where it does, and what breaks if it moves.
-
-Rule: every Layer B step references the Layer A rule it carries out. No position without a cited source, and no treaty benefit asserted without the article and the form that claims it.
+**Layer B: Sequenced plan.** Each step records the event and date; which country may tax it and on what proven basis; any established relief and residual tax; the applicable forms and deadlines; and why this step depends on earlier steps. Link every conclusion to Layer A. Distinguish a confirmed requirement from a question still being researched. A pending dependency blocks the affected recommendation while allowing independent steps to continue.
 
 ### The double-tax relief and treaty-bridge convention
 
-The most valuable part of a cross-border answer is the bridge: how the systems' taxing rights are reconciled so the same income is not taxed twice without relief. For every item that more than one country taxes, state:
+For each item potentially taxed by more than one country, record:
 
-- Which country has the primary taxing right and which gives relief.
-- The mechanism: foreign tax credit, exemption or exclusion, a treaty relief article, treaty re-sourcing of income (in the UK and US convention, Article 24 for a United States citizen who is a resident of the United Kingdom), a residence tie-breaker, or a reduced treaty withholding rate.
-- The form that actually claims it (for example Form 1116 or Form 8833 in the US, and the exclusion form set out in `us-foreign-earned-income-2555`; the Self Assessment return in the UK).
-- The double tax the mechanism leaves in place. In the UK, relief can be smaller than the foreign tax paid, where a smaller amount is set by the double taxation agreement or the income would have been taxed at a lower rate in the UK ([GOV.UK: if you're taxed twice](https://www.gov.uk/tax-foreign-income/taxed-twice)). A US person cannot take a credit for tax on income they chose to exclude ([IRS: foreign tax credit](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit)).
+- Each country's claimed taxing basis and any established treaty allocation; do not force every case into one exclusive primary right.
+- Relief considered and its eligibility, limits, timing and evidence: credit, deduction, exemption/exclusion, reduced withholding, re-sourcing or residence question.
+- The actual return entry, separate claim or disclosure if required, with the official procedure; research Form 1116, Form 2555, Form 8833 and UK Self Assessment only where relevant.
+- Foreign tax withheld versus finally payable, available source-country refunds, relief used and residual exposure. Keep state-tax treatment as a separate question; do not assume a treaty binds a US state.
 
-The saving clause caveat. Most US treaties let the US tax its citizens and residents as if the treaty had not come into effect, although many treaties have exceptions ([IRS Publication 519](https://www.irs.gov/publications/p519)). Never assert a treaty benefit for a US citizen or resident without checking the saving clause and its exceptions first.
+A UK claim cannot simply credit all withholding. TIOPA 2010 section 33 limits credit to what would remain after reasonable steps to minimise foreign tax under domestic law and the treaty; section 36 limits income-tax credit by reference to the income from the particular source ([section 33](https://www.legislation.gov.uk/ukpga/2010/8/section/33), [section 36](https://www.legislation.gov.uk/ukpga/2010/8/section/36)). Use the applicable computation rather than treating gross withholding as automatically creditable. Without a treaty, investigate unilateral relief instead of assuming relief is impossible or guaranteed.
 
 ### AUDIT FLASH POINT convention
 
-Mark every position that a tax authority (the IRS, HMRC, the ATO and others) commonly challenges with a bold marker:
+Use **AUDIT FLASH POINT** for a material contested judgement identified from the facts and evidence. Explain the judgement, the contrary view, the supporting evidence and any disclosure under consideration. The marker is a review flag, not evidence that an authority commonly challenges every listed subject or that a disclosure removes risk.
 
-> **AUDIT FLASH POINT:** [the judgement at issue, why it is contested, the evidence behind the position taken, and the form or disclosure that supports it.]
-
-These are the positions a reviewing accountant must personally own. List every flash point the case triggers in the reviewer brief. Never bury one.
-
-Typical cross-border flash points: the date residence ended and the day-count evidence; treaty residence tie-breakers; grantor or non-grantor trust characterisation; the choice between exclusion and credit and the tests behind the exclusion; covered expatriate status and exit tax valuations; foreign funds held by a US person; reasonable-cause positions for late information returns; and any position that rests on facts in another country the preparer cannot check.
+Review prompts include residence cessation/day counts; treaty residence; grantor/non-grantor trust character; exclusion versus credit and exclusion eligibility; covered-expatriate status/valuations; foreign funds; reasonable cause for late returns; and facts the preparer cannot verify in another country. Actual unresolved treatment remains referred. Include each material flag in the reviewer brief.
 
 ### Conservative-default principle (cross-border edition)
 
-When facts are incomplete and a position could go either way across a border, take the position that is harder to challenge and leaves a reporting trail, say that you have done so, and name the fact that would change the answer. When unsure:
+The default is an explicit hold. If a missing fact changes tax, relief, characterisation or filing, label that issue **undetermined — do not use**, identify the missing evidence and its dependent steps, and preserve the applicable deadline for urgent review. Do not assume broader taxing rights, a higher-tax characterisation or a filing obligation. Do not file a return merely as a precaution without establishing its requirements.
 
-- Assume the broader taxing right applies (for example that US citizenship or residence taxation reaches the item).
-- Assume the reporting obligation is triggered and the information return is filed, rather than assuming an exemption. An unnecessary information return costs little; a missed one can carry penalties.
-- Assume the higher-tax characterisation of an entity or instrument until a fact shows otherwise.
-
-Never pick the favourable treatment silently. Aggressive positions (for example a treaty benefit for a US citizen or resident that is not among the exceptions to the saving clause, or a decision not to file) need an explicit, documented instruction and a licensed accountant's sign-off. They are never the default.
+A hypothetical scenario may help explain a dependency if its assumptions and non-usable status are explicit. It must not become the person's recommended position. Favourable treatment, adverse treatment, a treaty election and non-filing all need their legal conditions established; an instruction or signature cannot replace those conditions.
 
 ### Structured intake (the residency map)
 
-If facts needed for Layer B are missing, ask for them in one structured block before computing. Never piecemeal, never by guessing. The map in `cross-border-tax-router` Step 0 is the intake; restate any gaps here, grouped by the decision they unlock:
+Restate only unresolved facts after searching the available record. Group them by the decision they unlock:
 
 ~~~
-To put this in order, these facts are still needed:
-  1. [Fact], used in [step / rule]
-  2. [Fact], used in [step / rule]
-  ...
-If [fact] is not available, the plan assumes [the broader taxing right / that the reporting
-obligation applies] (conservative default) and flags it for your accountant.
+Facts still needed for this working paper:
+  1. [Fact/evidence], used in [step / rule]
+  2. [Fact/evidence], used in [step / rule]
+If [fact] is unavailable, [affected issue] remains undetermined — do not use.
+[Independent step] can continue; [dependent recommendation] is held.
 ~~~
 
-### Universal self-checks
+### Universal self-checks and output specification
 
-Before delivering output, check (each topic skill adds its own checks):
+Deliver the following in order, and check the evidence behind each part:
 
-- [ ] Both layers produced, with a cited rule for every step
-- [ ] Residence tested in each country under its own law, and a tie-breaker run where two countries claim the person
-- [ ] Source recorded for every item of income or gain
-- [ ] The answer is an ordered plan, not separate country answers
-- [ ] The order of events stated and justified (what breaks if a step moves)
-- [ ] For every item taxed by more than one country, the relief mechanism and the form that claims it stated
-- [ ] Saving clause checked before any treaty benefit for a US citizen or resident
-- [ ] Every information return the facts trigger listed, not only the income forms. For a US person, take the forms and their tests from the topic skills: FinCEN Form 114 and Form 8938 from `us-fbar-fatca-reporting`, Forms 3520 and 3520-A from `us-foreign-trust-reporting`, and Form 5471 from `us-form-5471-cfc-information`. Interests in foreign partnerships and foreign funds have no topic skill here, so flag them as open items for the licensed accountant.
-- [ ] Every figure traced to a country or topic skill and its official source; none stated from memory
-- [ ] Every triggered AUDIT FLASH POINT listed in the reviewer brief
-- [ ] Conservative default applied and flagged wherever facts were missing
-- [ ] Any uncovered country rule, named treaty article, foreign fund or estate item flagged as an open item, not improvised
-- [ ] The output labelled as an unreviewed working paper, and the hand-off done
-
-### Output specification
-
-Deliver, in this order:
-
-1. Situation map: citizenship, residence in each country, domicile where relevant, and the event, in one block.
-2. The sequenced plan: the ordered Layer B steps (event, who taxes, relief, forms, why it sits there).
-3. Reference trace: the rule, form or treaty article behind each step.
-4. Double-tax bridge summary: per item, the primary right, the relief mechanism, the claiming form, and what is left over.
-5. Information-return checklist: every information return triggered, with the deadlines and penalties taken from the topic skills.
-6. Reviewer brief: the judgements taken, every AUDIT FLASH POINT, the conservative defaults applied, and the open items the licensed accountant must clear.
-7. Hand-off, as below.
+1. **Situation map:** citizenship/green-card history, residence question in each country, relevant domicile, dates and events; facts separated from conclusions.
+2. **Sequenced plan:** both layers, cited dependencies and justified order; source and character considered for each income/gain, without independent country answers that contradict one another.
+3. **Reference trace:** applicable-year rule/form/article, exact official source passage and conditions behind every conclusion and figure.
+4. **Double-tax bridge:** per item, established taxing rights, relief mechanism, claim procedure and residual; treaty/saving-clause application held if unresolved.
+5. **Information-return checklist:** every relevant form investigated, with confirmed tests/deadlines/penalties traced to topic sources; unresolved foreign partnership/fund duties visible.
+6. **Reviewer brief:** judgements, every AUDIT FLASH POINT, holds, evidence gaps and uncovered-country/treaty/estate questions. No missing-fact assumption presented as fact.
+7. **Hand-off:** label the output an unreviewed working paper and obtain the relevant professional review before action.
 
 ### Review status and the mandatory hand-off
 
-Every cross-border output is an unreviewed working paper. It is drafted from statutes, forms and treaties, and no licensed accountant has signed the specific plan. Never present it as reviewed by an accountant.
+This workflow itself supplies no professional approval of a person's plan. Preserve any genuine review of a specific paper and its scope accurately. Choose the lead accountant by the case's established exposure and the countries involved, documenting the choice rather than assuming citizenship or residence determines it alone. Give that accountant the full situation map and sequenced plan, with review in other relevant countries where needed.
 
-The work must end by handing the working paper to a person. Before the person takes any step that cannot be undone (selling, distributing, giving up residence, giving up citizenship or a green card, filing), tell them plainly: this is a working paper, not advice to act on yet; a licensed accountant in the lead country should review it, and that accountant signs off and, if engaged, files. The lead country is the one with the primary taxing right or the largest exposure: usually where the person is or will be resident, or the US where citizenship taxation dominates. Give the accountant the situation map and the full sequenced plan.
-
-These skills give computational and interpretive guidance on cross-border personal tax. They are not tax or legal advice, not an engagement, and not a filed return. Cross-border outcomes turn on entity, residence and treaty facts and significant judgement, and the order of events often changes the result. Have every output reviewed and signed by a qualified, licensed accountant in each relevant country before acting on it. Penalties on cross-border information returns can be severe; when in doubt, file and ask.
+Tell the person plainly: this is a working paper pending review, not an engagement or filed return. Review is required before selling, distributing, giving up residence, citizenship or a green card, making an election or filing from this plan. Do not assert that an accountant has signed or will file unless that engagement and review actually exist. If an authorised review tool is available, its receipt is a request record, not completed review. Missing facts require prompt escalation, not automatic filing.
 
 ## Worked cases
 
-Hypothetical facts, not a real client. A UK resident receives a dividend from a company in another country, which withheld GBP 1,500 of tax at source. The UK skill for this person (not this skill) puts the UK tax on that same dividend at GBP 1,000. The bridge, step 4 and the relief convention above: the UK has the residence right and gives relief by Foreign Tax Credit Relief on the Self Assessment return; the relief cannot exceed the UK tax on the same income, because GOV.UK says relief is less where "the income would have been taxed at a lower rate in the UK" ([GOV.UK: if you're taxed twice](https://www.gov.uk/tax-foreign-income/taxed-twice)). The amount left over is not relieved in the UK; whether the source country will refund it under the treaty is a question for the named treaty and its claim form, flagged for the accountant. If the treaty instead requires the tax to be claimed back from the source country, Foreign Tax Credit Relief is not available at all and the case changes.
+Hypothetical 2026 facts, not a real client. A UK-resident individual receives a foreign-company dividend with GBP 1,500 withheld. Preserve the supplied GBP 1,000 UK tax on that same dividend as an input from the UK computation, not a rate calculated here. Assume the dividend remains taxable in the UK (no exemption/FIG claim), all GBP 1,500 is qualifying foreign tax after reasonable minimisation and treaty limits, the UK credit limit for that source is GBP 1,000, and no other limit reduces the claim. Credit is conditional on entitlement under the applicable arrangements: [TIOPA section 18](https://www.legislation.gov.uk/ukpga/2010/8/section/18). The minimisation and source-income limits are [sections 33](https://www.legislation.gov.uk/ukpga/2010/8/section/33) and [36](https://www.legislation.gov.uk/ukpga/2010/8/section/36); [HMRC INTM161210](https://www.gov.uk/hmrc-internal-manuals/international-manual/intm161210) states the general lesser-of limit.
+
+Under those assumptions, min(1,500, 1,000) = GBP 1,000 credit, leaving GBP 500 foreign tax unrelieved by this UK credit and GBP 0 UK tax still due on the item. GOV.UK says the claim is usually made on the tax return, and it is unavailable where the agreement requires a source-country refund instead ([GOV.UK](https://www.gov.uk/tax-foreign-income/taxed-twice)). The GBP 500 is not a promised refund or a final statement about another relief. For actual dividend eligibility, reduced treaty withholding or a source-country reclaim: **Check this point with one of our partner accountants.** If the assumed foreign tax or UK limit changes, recompute before using the result.
 
 ```oa-check
 name: UK Foreign Tax Credit Relief capped at the UK tax on the same income (hypothetical amounts)
@@ -163,28 +130,24 @@ expected:
   uk_tax_still_due_on_item: 0
 ```
 
-For a US citizen in the same position, the same bridge runs in `us-foreign-tax-credit-1116`, after the saving clause check in step 5; if the income were foreign earned income the person had elected to exclude in `us-foreign-earned-income-2555`, no credit would be allowed for tax on the excluded income.
+For a US citizen in the original corresponding scenario, retain the dividend/credit question in `us-foreign-tax-credit-1116` with the actual treaty and saving-clause review. The foreign-earned-income alternative remains a separate scenario routed to `us-foreign-earned-income-2555`; it does not characterise this dividend as earned income. The no-credit-on-excluded-income boundary in step 4 still applies. Do not transfer the UK calculation or its figures to US tax.
 
 ## When to refuse or refer
 
-- Refuse to assert a treaty benefit without the article, the saving clause check for a US person, and the form that claims it.
-- Refuse to state a rate, threshold or deadline from memory. Take it from the country or topic skill, or flag it.
-- Refer any position that depends on the full text of a named treaty article, or on a mutual agreement between tax authorities.
-- Refer before the person takes any step that cannot be undone.
-- Refer foreign funds held by a US person, cross-border estate, gift or inheritance questions, and any country with no skill.
-- Refer late or missed information returns before anything is filed.
+Refuse a usable tax, treaty, filing or event-order conclusion without its operative conditions and evidence. Refuse figures from memory or assumptions that trigger filing. Keep the precise missing issue visible; do not improvise another country's rule.
+
+For actual treaty application/competent-authority agreement; foreign partnerships/funds/PFICs; cross-border estate, gift or inheritance; uncovered-country treatment; departure/expatriation; and late or missed information-return positions: **Check this point with one of our partner accountants.** Preserve the question and documents in the paper and seek review before the affected action.
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and exact scope read | URL | Read on |
 | --- | --- | --- |
-| IRS, determining an individual's tax residency status. Read for the green card and substantial presence tests and dual-status years. | https://www.irs.gov/individuals/international-taxpayers/determining-an-individuals-tax-residency-status | 2026-11-14 |
-| IRS, US citizens and resident aliens abroad. Read for worldwide taxation and the FinCEN Form 114 reporting duty. | https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad | 2026-11-14 |
-| IRS, foreign tax credit. Read for credit or itemized deduction, no credit on excluded income, and revocation of the exclusion elections. | https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit | 2026-11-14 |
-| IRS Publication 519, US tax guide for aliens. Read for the tiebreaker rule, Form 1040-NR with Form 8833, the saving clause and the section 877A note. | https://www.irs.gov/publications/p519 | 2026-11-14 |
-| UK and US double taxation convention, as amended by the 2002 protocol. Read for art. 1(4) and (5), art. 4(4) and art. 24. | https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force | 2026-11-14 |
-| HMRC RDR3, statutory residence test guidance. Read for the tax-year basis of the test. | https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3 | 2026-11-14 |
-| GOV.UK, if you're taxed twice. Read for relief in the source country, Foreign Tax Credit Relief and its limits, and capital gains. | https://www.gov.uk/tax-foreign-income/taxed-twice | 2026-11-14 |
-| CRA, leaving Canada (emigrants). Read for the deemed disposition on departure, opened through a rendering service because the site timed out on a direct request. | https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/leaving-canada-emigrants.html | 2026-11-14 |
+| IRS worldwide-income opening statement; completed router read reused for the same limited boundary, not residence/treaty/form entitlement. | https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad | 2026-11-26 |
+| IRS foreign-tax-credit page: exclusion interaction and revocation paragraph; eligibility and reduced-treaty-tax caveats read for context. | https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit | 2026-11-26 |
+| TIOPA section 18: entitlement, reduction and arrangements conditions, subsections (1)–(6). | https://www.legislation.gov.uk/ukpga/2010/8/section/18 | 2026-11-26 |
+| TIOPA section 33: all reasonable minimisation steps and objective standard, subsections (1)–(3). | https://www.legislation.gov.uk/ukpga/2010/8/section/33 | 2026-11-26 |
+| TIOPA section 36: source-income limit, ordering and calculation conditions, subsections (1)–(7); formula also read in official XML. | https://www.legislation.gov.uk/ukpga/2010/8/section/36 | 2026-11-26 |
+| HMRC INTM161210: general lesser-of/overall limits; following dividend pointer checked as company guidance, not imported into this individual's case. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm161210 | 2026-11-26 |
+| GOV.UK: claim procedure, agreement limits/source-country reclaim, unilateral-relief caveat and foreign-gains context. | https://www.gov.uk/tax-foreign-income/taxed-twice | 2026-11-26 |
 
-Not yet confirmed: this skill states no rate or threshold of its own; the worked case uses hypothetical amounts, and the UK tax on the item must come from the UK skill. Treaty text other than the UK and US convention is not read here.
+Not yet confirmed: no person's residence, treaty benefit, foreign-source treatment, exclusion, departure/exit-tax exposure, information-return obligation or relief entitlement is determined here. Named-treaty application, partnership/fund/PFIC, estate/gift/inheritance, uncovered-country and late-return positions remain explicit referrals. Australian content is routing only. The conditional UK example does not establish a client's tax or source-country refund; the US alternative requires its own computation.
