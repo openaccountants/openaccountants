@@ -2,18 +2,18 @@
 name: gh-corporate-income-tax
 description: >
   Use this skill to compute or review Ghana corporate income tax for tax year 2026. It covers resident and non-resident companies, the 25% general rate, sector rates for hotels, non-traditional exports, farming and leasing loans, manufacturing by location, free zones, mining and petroleum, the 5% rate for concession holders, capital allowances, five-year loss carry-forward, thin capitalisation, minimum chargeable income of 5% of turnover, the Growth and Sustainability Levy, withholding credits, quarterly instalments, forms DT 101 and DT 102 on ETAX, and penalties. Trigger on "Ghana company tax", "CIT Ghana", "corporate income tax GRA", "capital allowance Ghana", "provisional tax Ghana", "minimum chargeable income". Individuals are in ghana-pit; cross-border withholding is in gh-cross-border.
-version: 0.5
+version: 0.6
 jurisdiction: GH
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Ghana Corporate Income Tax v0.5
+# Ghana Corporate Income Tax v0.6
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -42,7 +42,8 @@ Companies incorporated in Ghana or elsewhere, and bodies taxed like them: societ
 | Minimum chargeable income | 5% of turnover | Losses declared for previous five years; not first five years of operations; not farming | 2026 | https://gra.gov.gh/wp-content/uploads/2024/05/Practice-Note-on-the-Application-of-Minimum-Chargeabe-Income-under-the-Income-Tax-Act-2015-Act-896.pdf |
 | Thin capitalisation | 3 to 1 debt to equity | Non-financial resident entity 50% or more held by exempt persons, such as non-residents; interest and exchange loss on the excess debt are not deductible (s.33) | 2026 | https://gra.gov.gh/wp-content/uploads/2020/09/INCOME-TAX-ACT-2015-ACT-896.pdf |
 | Growth and Sustainability Levy, Category A | 5% of profit before tax | Banks, insurers, telecoms, breweries, oil marketing and others listed | 2026 | https://www.mofep.gov.gh/sites/default/files/reports/revenue/2025%20Annual%20Tax%20Revenue%20Performance%20Report.pdf |
-| GSL, mining and upstream oil and gas | 3% of gross production | Rate raised by the 2025 amendment; gold changed later, see Sources | 2026 | same |
+| GSL, Category B (gold mining companies) | 3% of gross production | Raised from 1% by Act 1131 s.3; any 2026 gold change unconfirmed, see Sources | 2026 | https://repository.parliament.gh/handle/123456789/4553 |
+| GSL, Category BA (other mining and upstream oil and gas) | 1% of gross production | Category inserted by Act 1131 s.3 at 1%; 'other mining companies' mine minerals other than gold (Act 1095 s.12 as amended) | 2026 | https://repository.parliament.gh/handle/123456789/4553 |
 | GSL, Category C | 2.5% of profit before tax | All other entities (Act 1095 Schedule). Due even in a tax holiday (Act 1095 s.2) | 2026 | https://gra.gov.gh/wp-content/uploads/2023/04/GROWTH-AND-SUSTAINABILITY-LEVY-ACT-2023-ACT-1095.pdf ; https://gra.gov.gh/growth-and-sustainability-levy/ |
 
 Concession periods in the GRA table: agro processing and cocoa by-products 5 years, tree crops 10, cash crops and livestock 5, cattle 10, waste processing 7, low-cost housing. The rate during a holiday is the 5% above, then 25%.
@@ -166,6 +167,7 @@ expected:
 | Ministry of Finance, 2025 Annual Tax Revenue Performance Report; GSL passages and Appendix Table 9 read | https://www.mofep.gov.gh/sites/default/files/reports/revenue/2025%20Annual%20Tax%20Revenue%20Performance%20Report.pdf | 2026-11-01 |
 | GRA, Growth and Sustainability Levy page: read for the Category A, B and C rates (5%, 1%, 2.5%) | https://gra.gov.gh/growth-and-sustainability-levy/ | 2026-11-14 |
 | Growth and Sustainability Levy Act, 2023 (Act 1095), whole act | https://gra.gov.gh/wp-content/uploads/2023/04/GROWTH-AND-SUSTAINABILITY-LEVY-ACT-2023-ACT-1095.pdf | 2026-11-01 |
+| Growth and Sustainability Levy (Amendment) Act, 2025 (Act 1131), whole act (sunset to 2028; Category B gold 3%, Category BA other mining and upstream oil and gas 1%) | https://repository.parliament.gh/handle/123456789/4553 | 2026-11-26 |
 | GRA, Tax Exemptions for Businesses page: read for the manufacturing location rates (18.75, 12.50) and the concession table | https://gra.gov.gh/domestic-tax/tax-types/tax-exemptions-for-businesses/ | 2026-11-14 |
 | Income Tax Act, 2015 (Act 896), OCR: First Schedule para 3(6) (p 117) read for the manufacturing formula | https://gra.gov.gh/wp-content/uploads/2020/09/INCOME-TAX-ACT-2015-ACT-896.pdf | 2026-11-14 |
 | Revenue Administration Act, 2016 (Act 915): s.30 read for the filing extension | https://gra.gov.gh/wp-content/uploads/2023/01/Revenue-Administration-Act-2016-.pdf | 2026-11-14 |
@@ -177,4 +179,4 @@ expected:
 | GRA, ITAS FAQs, page read in full | https://gra.gov.gh/itas-faqs/ | 2026-11-01 |
 | Transfer Pricing Regulations, 2020 (L.I. 2412); regs 11, 12, 13, 16 read | https://gra.gov.gh/wp-content/uploads/2023/12/Transfer-Pricing-Regulations-2020-LI-24121-_231207_142107.pdf | 2026-11-01 |
 
-Not yet confirmed: (1) The GRA CIT page says businesses pay 1% during holidays; Act 1094 sets 5%, and the Act is followed. (2) Text of the GSL amendment Act 1131 and of a 2026 GSL amendment for gold was not opened; the Finance Ministry report confirms the 3% rate and the sunset to 2028, but the current gold rate is not confirmed. The Category A and C rates are from Act 1095 as enacted; the amendment was not read to confirm they are unchanged. Example figures here leave GSL out. (3) Act 896 is the 2015 scan; later amendments other than Act 1094 and the Act 1178 notice were not read, including Acts 1066 and 1071. (4) Financial Sector Recovery Levy status for 2026. (5) DT 101 screen layout on ETAX. (6) The regional-capital manufacturing rate was 18.5% in the old version, taken from the GRA CIT page; the Act's formula and GRA's exemptions page give 18.75%, now used. Whether para 3(6) was amended after Act 1094 was not checked.
+Not yet confirmed: (1) The GRA CIT page says businesses pay 1% during holidays; Act 1094 sets 5%, and the Act is followed. (2) Act 1131 confirms the sunset to 2028, leaves Category A (5%) and Category C (2.5%) unchanged, sets Category B (gold mining) at 3% and inserts Category BA (other mining and upstream oil and gas) at 1%. The Parliament of Ghana repository listed no later GSL amendment when searched on 2026-11-26, but any 2026 change to the gold rate is not confirmed. Example figures here leave GSL out. (3) Act 896 is the 2015 scan; later amendments other than Act 1094 and the Act 1178 notice were not read, including Acts 1066 and 1071. (4) Financial Sector Recovery Levy status for 2026. (5) DT 101 screen layout on ETAX. (6) The regional-capital manufacturing rate was 18.5% in the old version, taken from the GRA CIT page; the Act's formula and GRA's exemptions page give 18.75%, now used. Whether para 3(6) was amended after Act 1094 was not checked.
