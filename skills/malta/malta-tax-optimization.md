@@ -206,8 +206,8 @@ Sources: S.L. 372.16; S.L. 372.18; Cap. 372 art. 42(4); S.L. 372.14 rule 21; MTC
 | Elderly or disabled home fees, art. 14D | lower of the amount paid and EUR 4,500 | From YA 2027 | same |
 | R&D deduction, art. 14(1)(ha) | 175%, only from a date the Minister sets by Gazette notice | Marked YA 2027 | same |
 | Personal retirement scheme credit, art. 57(1) | 25% up to EUR 750 under current S.L. 123.163 rule 8, subject to qualification and article 57 tax-credit limits | Current | https://legislation.mt/eli/sl/123.163/eng/pdf |
-| Late individual return, Schedule Table A | EUR 10 within 6 months, rising to EUR 500 after 60 months | Current | same |
-| Omission from a return, Schedule | 1.5% a month of the endangered tax | Current | same |
+| Late individual return, Schedule Table A | EUR 10 within 6 months, rising to EUR 500 after 60 months | Current | https://legislation.mt/eli/cap/123/eng/pdf |
+| Omission from a return, Schedule | 1.5% a month of the endangered tax | Current | https://legislation.mt/eli/cap/123/eng/pdf |
 | Car cost cap, S.L. 123.07 rule 3 | wear and tear on a car costing over EUR 14,000 computed as if it cost EUR 14,000 | Current | https://legislation.mt/eli/sl/123.7/eng/pdf |
 | Wear and tear minimum years, S.L. 123.01 Schedule | computers 4, motor vehicles 5, catering 6, furniture 10, electrical and plumbing 15 | Current | https://legislation.mt/eli/sl/123.1/eng/pdf |
 | Pension income exemption, S.L. 123.204 rule 3 | 100% up to EUR 37,104 (basis year 2026); 80% up to EUR 13,309 (basis year 2025) | YA 2027 / YA 2026 | https://legislation.mt/eli/sl/123.204/eng/pdf |
