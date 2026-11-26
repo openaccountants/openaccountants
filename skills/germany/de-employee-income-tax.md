@@ -1,10 +1,10 @@
 ---
 name: de-employee-income-tax
-description: "Use this skill for the annual German income tax return of an employee resident in Germany (Einkommensteuererklärung with Anlage N), tax year 2026, filed in 2027. Covers when an employee must file (§ 46 EStG: tax classes III/V or IV with factor, side income or wage replacement benefits over EUR 410, several employers) and when filing is voluntary (four years), the 2026 tariff, Arbeitnehmer-Pauschbetrag, Werbungskosten (commuting allowance at EUR 0.38 from the first km, home office day allowance, work equipment, training, union dues), Vorsorgeaufwendungen, Kinderfreibetrag against Kindergeld, Ehegattensplitting, single parent relief, household services (§ 35a), extraordinary burdens, solidarity surcharge, church tax, deadlines, late-filing surcharge and interest. Trigger on: Steuererklärung Arbeitnehmer, Anlage N, Werbungskosten, Pendlerpauschale, Homeoffice-Pauschale, Lohnsteuer Erstattung, tax refund Germany employee, Steuerklasse III V Pflichtveranlagung, Splittingtarif. Out of scope: payroll withholding (de-payroll), self-employed income (germany-income-tax), capital income (de-capital-gains), rent (de-rental-income), non-resident individuals (de-non-resident-tax)."
-version: 0.7
+description: "German resident employee income tax return for 2026 (Anlage N), filed in 2027: mandatory and voluntary assessment, tariff and splitting, employment expenses, statutory insurance deductions, child comparison, solidarity surcharge, deadlines and payment. Retains the original single and married cases as arithmetic audits with explicit holds for missing eligibility and payroll evidence. Refers specialist deductions, church tax and cross-border outcomes to a partner accountant. Trigger on Steuererklärung Arbeitnehmer, Anlage N, Werbungskosten, Pendlerpauschale, Homeoffice-Pauschale, Lohnsteuer Erstattung and Steuerklasse III/V. Payroll, freelance, investment, rental and non-resident computations use the related Guides."
+version: 0.8
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -14,147 +14,115 @@ type: computation
 
 # Germany: income tax return for employees, tax year 2026 (Anlage N)
 
-This skill works out the annual income tax of an employee who lives in Germany, from gross pay to the refund or extra payment against the wage tax (Lohnsteuer) the employer withheld. It is for the 2026 return, filed in 2027.
-
-See also, and do not repeat here:
-
-- **de-payroll**: how the employer withholds Lohnsteuer, tax classes, the Vorsorgepauschale in payroll, social insurance rates and ceilings.
-- **germany-income-tax** and **de-einkommensteuer-freelancer**: self-employed and trade income (Anlage S, G, EÜR).
-- **de-capital-gains**: investment income and the flat tax (Anlage KAP).
-- **de-rental-income**: letting income (Anlage V).
-- **de-social-contributions**: social insurance for the self-employed.
-- **leaving-germany-exit-tax** and **germany-to-switzerland-cross-border-tax**: departures and the Swiss corridor.
+Use the annual taxable income and the 2026 tariff below, then reconcile the assessed tax with the wage tax actually withheld. Do not infer deductible insurance or a final refund from annual gross pay alone.
 
 ## Who this applies to
 
-- **In scope.** A person with a residence or habitual abode in Germany is fully liable to income tax on worldwide income (§ 1(1) EStG). This skill covers such a person whose income is mainly employment income (§ 19 EStG), with or without a spouse, with or without children.
-- **Married couples and registered partners.** They may choose joint assessment (Zusammenveranlagung) if both are fully liable, not permanently separated, and met both conditions at some point in the year (§ 26(1) EStG). If neither chooses, joint assessment applies (§ 26(3) EStG).
-- **Out of scope.** Non-residents with German wages (limited liability, § 1(4) EStG, or the § 1(3) election): use de-non-resident-tax. Self-employed, trade, capital and rental income go to the sibling skills listed above, then the results come back into this return.
+An employee resident or habitually resident in Germany is subject to unlimited income tax liability (§ 1(1) EStG). Employment receipts include salary, wages and employment benefits (§ 19(1) EStG). This Guide covers the resident employee's 2026 return, filed in 2027.
 
-### When an employee must file (§ 46(2) EStG)
+Spouses may choose joint assessment if both meet § 26(1)'s unlimited-liability condition and are not permanently separated, with these conditions present at the start of or arising during the year. Either spouse choosing individual assessment prevents joint assessment; without a valid election, joint assessment applies. The spouse rules also apply to registered civil partners (§§ 2(8), 26 EStG). Under joint assessment the spouses' separately determined income is combined (§ 26b).
 
-Where wage tax was withheld, the tax office assesses only in the listed cases. The common ones:
+Use `de-payroll` for withholding, `germany-income-tax` and `de-einkommensteuer-freelancer` for freelance/trade income, `de-capital-gains` for investments, `de-rental-income` for rent and `de-social-contributions` for self-employed social insurance. Non-residents use `de-non-resident-tax`; departures, part-year residence and Swiss commuters use `leaving-germany-exit-tax`, `de-partners-and-part-year` and `germany-to-switzerland-cross-border-tax`, within their own source limits.
 
-| Case | Rule |
+### When an employee must file
+
+For income including wages from which tax was deducted, these are common assessment triggers under [§ 46(2) EStG](https://www.gesetze-im-internet.de/estg/__46.html), not an exhaustive list. An individual tax-office demand also creates a filing duty ([§ 149(1) AO](https://www.gesetze-im-internet.de/ao_1977/__149.html)).
+
+| Case | Condition |
 |---|---|
-| Side income | Income not subject to wage tax (for example rent or self-employment) over EUR 410 in total (no. 1) |
-| Wage replacement benefits | Benefits under the progression rule (for example short-time work pay, parental allowance, unemployment benefit) over EUR 410 (no. 1) |
-| Several employers at once | Wages from more than one employer at the same time, unless combined for wage tax (no. 2) |
-| Health insurance refund | Refund of health and care insurance contributions over EUR 410, where wages exceed the basic allowance plus lump sums (no. 3, in this form from 1 January 2026 under § 52(36) EStG) |
-| Married, both employed, class V, VI or IV with factor | Spouses assessed jointly, both had wages and one was taxed in class V or VI, or class IV with a factor (no. 3a) |
-| Allowance on the wage tax card | A Freibetrag was entered in the wage tax data and wages exceed the basic allowance plus lump sums (no. 4) |
-| One-time payments | Wage tax on a bonus computed without wages from earlier jobs in the year (code S) (no. 5a) |
-| Marriage ended and remarried | In the same year (no. 6) |
+| Side income or progression income | Positive taxable income not subject to wage withholding, reduced by the attributable § 13(3) and § 24a amounts, exceeds EUR 410; separately, a positive total of progression income and benefits exceeds EUR 410 (no. 1). This is income, not gross turnover. |
+| Concurrent employers | Wages from several employers at the same time, except wages combined under § 38(3a) sentence 7 for withholding (no. 2). |
+| Health/care refund | Refund of § 10(1) no. 3 contributions exceeds EUR 410 and annual wages exceed basic allowance + employee lump sum + special-expense lump sum. For spouses satisfying § 26(1), use double the basic allowance and special-expense lump sum, but one employee lump sum (no. 3; applies from 2026 under § 52(36)). |
+| Both spouses earned wages | Spouses within §§ 26, 26b; one had class V or VI, or class IV with a factor, for all or part of the year (no. 3a). Class III alone does not settle the duty. |
+| Entered wage-tax allowance | Only a Freibetrag under § 39a(1) sentence 1 nos. 1–3, 5 or 6; the same wage thresholds as the refund row apply (no. 4). |
+| Bonus code S | Earlier employment wages were left out of the bonus withholding computation (no. 5a). |
+| Marriage ended and remarriage | The marriage ended by death, divorce or annulment in the year and either former spouse remarried that year (no. 6). |
 
-If no statutory mandatory-assessment case applies under § 46(2) EStG, filing is voluntary: an application for assessment, made by filing a return (§ 46(2) no. 8 EStG). The usual reason is a refund.
+Only after excluding all applicable mandatory cases and a tax-office demand use voluntary assessment, requested by filing the return (§ 46(2) no. 8).
 
 ## Rates, bands and thresholds
 
-All amounts are for tax year 2026.
+The tariff applies to **taxable income**, not gross salary. Select the zone first. Special tariffs and progression cases require the referral below.
 
-| Item | Amount | Source |
+| Item | 2026 rule | Official source |
 |---|---|---|
-| Basic allowance (Grundfreibetrag), zone 1 | EUR 0 to 12,348: no tax | https://www.gesetze-im-internet.de/estg/__32a.html |
-| Zone 2 | EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (taxable income − 12,348) / 10,000 | Same |
-| Zone 3 | EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (taxable income − 17,799) / 10,000 | Same |
-| Zone 4 (42%) | EUR 69,879 to 277,825: 0.42 × x − 11,135.63 | Same |
-| Zone 5 (45%) | From EUR 277,826: 0.45 × x − 19,470.38 | Same |
-| Rounding | Taxable income and tax both rounded down to whole euros | Same, § 32a(1) sentences 1 and 6 |
-| Splitting for joint assessment | Twice the tax on half the joint taxable income | § 32a(5) EStG; https://www.gesetze-im-internet.de/estg/__32a.html |
-| Employee lump sum (Arbeitnehmer-Pauschbetrag) | EUR 1,230 unless higher costs are shown; union dues are deducted on top | https://www.gesetze-im-internet.de/estg/__9a.html |
-| Commuting allowance (Entfernungspauschale) | EUR 0.38 per full km of one-way distance, from the first km, per day the first place of work is visited; cap EUR 4,500 a year unless an own or provided car is used | https://www.gesetze-im-internet.de/estg/__9.html (§ 9(1) sentence 3 no. 4); this text applies from 2026 under § 52(1) EStG |
-| Home office day allowance (Tagespauschale) | EUR 6 per day worked mainly at home without visiting the first place of work; max EUR 1,260 a year | https://www.gesetze-im-internet.de/estg/__4.html (§ 4(5) sentence 1 no. 6c), applied to employees by § 9(5) EStG |
-| Home office room (Arbeitszimmer), only if it is the centre of all work | Actual cost or EUR 1,260 a year flat | § 4(5) sentence 1 no. 6b EStG; https://www.gesetze-im-internet.de/estg/__4.html |
-| Work equipment written off at once | Cost up to EUR 800 net of VAT per item | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(2)), applied by § 9(1) sentence 3 no. 7 EStG |
-| Second home for work (doppelte Haushaltsführung), rent | Up to EUR 1,000 a month in Germany | § 9(1) sentence 3 no. 5 EStG; https://www.gesetze-im-internet.de/estg/__9.html |
-| First vocational training or study (no prior qualification, not within employment) | Special expense up to EUR 6,000 a year | https://www.gesetze-im-internet.de/estg/__10.html (§ 10(1) no. 7) |
-| Pension contributions, cap | Up to the maximum contribution to the miners' pension scheme: EUR 124,800 × 24.7% = EUR 30,826 (rounded up); doubled for joint assessment. The tax-free employer share is then subtracted | § 10(3) EStG; ceiling: SVBezGrV 2026 § 4(1) no. 2, https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html; rate: https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html |
-| Other insurance (health, care, unemployment, liability, etc.), cap | EUR 1,900 for employees (employer pays towards health cover); EUR 2,800 otherwise; summed for spouses. Basic health and care cover is deductible in full even above the cap | § 10(4) EStG; https://www.gesetze-im-internet.de/estg/__10.html |
-| Statutory health contribution with sick-pay entitlement | Reduce by 4% before deducting | § 10(1) no. 3(a) sentence 4 EStG; https://www.gesetze-im-internet.de/estg/__10.html |
-| Special expenses lump sum | EUR 36 (EUR 72 joint) | https://www.gesetze-im-internet.de/estg/__10c.html |
-| Donations | Up to 20% of total income | https://www.gesetze-im-internet.de/estg/__10b.html |
-| Child allowances (Freibeträge für Kinder) | EUR 3,414 plus EUR 1,464 per parent (EUR 4,878); EUR 9,756 per child for joint assessment | https://www.gesetze-im-internet.de/estg/__32.html (§ 32(6)); BMF monthly report Feb 2026 |
-| Kindergeld | EUR 259 per child per month (EUR 3,108 a year) | https://www.gesetze-im-internet.de/estg/__66.html |
-| Single parent relief (Entlastungsbetrag) | EUR 4,260 for one child, plus EUR 240 per further child; one twelfth less per month not met | https://www.gesetze-im-internet.de/estg/__24b.html |
-| Household jobs: minijob in the household | Tax credit 20% of cost, max EUR 510 | https://www.gesetze-im-internet.de/estg/__35a.html |
-| Household services and care | Tax credit 20% of cost, max EUR 4,000 | Same, § 35a(2) |
-| Craftsmen's work at home | Tax credit 20% of labour cost, max EUR 1,200; invoice and bank transfer needed | Same, § 35a(3) and (5) |
-| Extraordinary burdens: reasonable own share | Total income up to 15,340 / 15,341 to 51,130 / over 51,130: no children, basic tariff 5 / 6 / 7%; no children, splitting 4 / 5 / 6%; one or two children 2 / 3 / 4%; three or more 1 / 1 / 2% | https://www.gesetze-im-internet.de/estg/__33.html (§ 33(3)) |
-| Maintenance of a dependant | Up to EUR 12,348 a year (the basic allowance), less the dependant's own income over EUR 624 | https://www.gesetze-im-internet.de/estg/__33a.html |
-| Disability lump sum | EUR 384 (degree 20) up to EUR 2,840 (degree 100); EUR 7,400 if helpless or blind | https://www.gesetze-im-internet.de/estg/__33b.html |
-| Solidarity surcharge | 5.5% of the base. Base: the income tax recomputed with the child allowances of § 32(6) EStG in every case, even where Kindergeld was kept instead (§ 3(2) SolzG). Nothing is due while the base, less any flat-rate tax on capital income under § 32d(3) and (4) EStG, is at most EUR 20,350, or EUR 40,700 where the splitting tariff applies (§ 32a(5) and (6) EStG, which includes the widow's year). Above that, the surcharge is at most 11.9% of the amount by which that reduced base exceeds the limit. The flat-rate § 32d(3)/(4) tax always carries the full 5.5%. Fractions of a cent are dropped. The 2026 limits apply from assessment year 2026 (§ 6(27) SolzG); 2025 used EUR 19,950 / 39,900 | https://www.gesetze-im-internet.de/solzg_1995/__3.html , https://www.gesetze-im-internet.de/solzg_1995/__4.html , https://www.gesetze-im-internet.de/solzg_1995/__6.html |
-| Church tax | 8% or 9% of income tax (computed with child allowances), by state. Base: the income tax recomputed with the child allowances in every case (§ 51a(2) sentence 1 EStG), with taxable income increased by the amounts tax-free under § 3 no. 40 and reduced by the amounts not deductible under § 3c(2) (partial-income method; sentence 2), and ignoring the § 35 trade tax credit (sentence 3). The rate is set by each church's resolution, not by federal law (Bavaria: Art. 8 BayKirchStG, up to 10%); which states use 8% and which 9% is not confirmed here. Not covered: couples where only one spouse belongs or the spouses belong to different churches (tax split by income ratio, or the special Kirchgeld), the cap on church tax (Kappung) and state rounding. | § 51a EStG https://www.gesetze-im-internet.de/estg/__51a.html; BMF booklet "Steuern von A bis Z" ("je nach Bundesland 8 oder 9 Prozent") |
+| Basic allowance, zone 1 | EUR 0–12,348: tax EUR 0 | https://www.gesetze-im-internet.de/estg/__32a.html § 32a(1) |
+| Zone 2 | EUR 12,349–17,799: (914.51 × y + 1,400) × y; y is one ten-thousandth of x − 12,348 | https://www.gesetze-im-internet.de/estg/__32a.html |
+| Zone 3 | EUR 17,800–69,878: (173.10 × z + 2,397) × z + 1,034.87; z is one ten-thousandth of x − 17,799 | https://www.gesetze-im-internet.de/estg/__32a.html |
+| Zone 4 | EUR 69,879–277,825: 0.42 × x − 11,135.63 | https://www.gesetze-im-internet.de/estg/__32a.html |
+| Zone 5 | From EUR 277,826: 0.45 × x − 19,470.38 | https://www.gesetze-im-internet.de/estg/__32a.html |
+| Rounding | x is taxable income rounded down to whole euros; round the resulting tax down to whole euros | https://www.gesetze-im-internet.de/estg/__32a.html § 32a(1) |
+| Joint splitting | Twice the § 32a(1) tax on half the joint taxable income, with that paragraph's rounding | https://www.gesetze-im-internet.de/estg/__32a.html § 32a(5) |
+| Employee lump sum | EUR 1,230 if higher employment expenses are not proved; limited to receipts. Qualifying union dues are additional to the lump sum, but do not deduct them twice when using actual expenses | https://www.gesetze-im-internet.de/estg/__9a.html |
+| Commuting | EUR 0.38 per full one-way km for each day attending the first workplace; EUR 4,500 annual cap unless an own/provided car is used. No flight routes or tax-free collective transport. Shortest road route, or an obviously more convenient route used regularly; eligible excess annual public-transport cost may replace the allowance. For employer benefits, multiple homes or disability-related special travel rules: Check this point with one of our partner accountants. | https://www.gesetze-im-internet.de/estg/__9.html § 9(1) no. 4 and (2) |
+| Home working day | EUR 6, maximum EUR 1,260 per year across all work, when work is predominantly at home and no first workplace is visited. If permanently no other workplace is available, the day allowance may also apply on external/office days. No deduction insofar as accommodation costs can be deducted under § 4(5) no. 6a/§ 9(1) no. 5 or a room deduction is taken under no. 6b | https://www.gesetze-im-internet.de/estg/__4.html § 4(5) no. 6c; employee bridge https://www.gesetze-im-internet.de/estg/__9.html § 9(5) |
+| Work equipment | Immediate deduction election for qualifying depreciable movable equipment capable of independent use, with cost excluding VAT not exceeding EUR 800 per item (the deductible cost includes VAT under R 9.12); otherwise establish the applicable depreciation treatment, rather than automatically expensing it | https://www.gesetze-im-internet.de/estg/__6.html § 6(2) sentences 1–3; employee bridge https://www.gesetze-im-internet.de/estg/__9.html § 9(1) nos. 6–7; https://ao.bundesfinanzministerium.de/lsth/2026/A-Einkommensteuergesetz/II-Einkommen-2-24b/4-Ueberschuss-d-Einnahmen-ueber-die-Werbungsk-8-9a/Paragraf-9/r-9-12.html R 9.12 |
+| Statutory pension deduction | Add the tax-free employer share, apply the cap, then subtract that share. General cap (computed): ceil(EUR 124,800 × 24.7%) = EUR 30,826, doubled jointly; § 10(3) sentence 3 requires reductions for the specified pension-exempt/other pension-entitlement groups. Do not assume every employee has the unreduced cap | https://www.gesetze-im-internet.de/estg/__10.html § 10(1) no. 2 and (3); https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html; https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html |
+| Basic health and compulsory care | Deduct qualifying actual contributions; statutory health contributions giving sick-pay entitlement are reduced by 4%. Account for refunds and tax-free subsidies; foreign-tax-free-income and provider conditions are in § 10(2) | https://www.gesetze-im-internet.de/estg/__10.html § 10(1) no. 3, (2), (4b) |
+| Other insurance cap | EUR 2,800, reduced to EUR 1,900 for the groups in § 10(4) sentence 2, including employer-subsidised health cover; spouses add their individual caps. If deductible basic health/care exceeds the cap, deduct that basic cover and no additional no. 3a insurance | https://www.gesetze-im-internet.de/estg/__10.html § 10(4) |
+| Special-expense lump sum | EUR 36, EUR 72 jointly, if no higher expenses in the categories listed in § 10c are proved; insurance deductions are separate | https://www.gesetze-im-internet.de/estg/__10c.html |
+| Child allowances | EUR 3,414 + EUR 1,464 per eligible child per parent; doubled to a derived EUR 9,756 jointly only where the child has the required relationship to both spouses. Reduce by 1/12 per ineligible month; residence reductions, transfers and identification requirements also apply | https://www.gesetze-im-internet.de/estg/__32.html § 32(6) |
+| Kindergeld | EUR 259 per eligible month; EUR 3,108 (computed: 259 × 12) only for twelve eligible months | https://www.gesetze-im-internet.de/estg/__66.html |
+| Solidarity surcharge | Recompute income tax with eligible child allowances in every § 32 case, without the Kindergeld add-back (§ 3(2) deviates from § 2(6) EStG). For 2026, no surcharge on the non-§ 32d(3)/(4) base up to EUR 20,350, or EUR 40,700 under § 32a(5)/(6). Above it take the lesser of 5.5% of that base and 11.9% of its excess over the limit; § 32d(3)/(4) tax separately bears 5.5%. Drop fractions of a cent | https://www.gesetze-im-internet.de/solzg_1995/__3.html §§ 3(2)–(3); https://www.gesetze-im-internet.de/solzg_1995/__4.html |
 
 ## The taxable base
 
-Work down this ladder. Each spouse computes their own employment income; the rest is joint under joint assessment (§ 26b EStG).
-
-1. **Gross wages** from the wage tax certificate (Lohnsteuerbescheinigung), line 3. Tax-free items stay out.
-2. **Less Werbungskosten**, or the EUR 1,230 lump sum if higher. Common items:
-   - **Commuting:** full km of the shortest road distance × EUR 0.38 × days at the first place of work. Public transport costs above the allowance count instead (§ 9(2) EStG). Tax-free employer travel benefits reduce it.
-   - **Home office:** EUR 6 for each day worked mainly at home where the employee did not go to the first place of work. A day is either a commuting day or a home office day, not both, unless no other workplace is available at all (§ 4(5) no. 6c sentence 2 EStG).
-   - **Work equipment:** laptop, tools, typical work clothing; items over EUR 800 net are depreciated over their useful life.
-   - **Training** for the current or a future job, after a first qualification (§ 9(6) EStG).
-   - **Union dues:** from 2026 deducted in addition to the lump sum (§ 9a sentence 3 EStG).
-   - Business travel, removal for work, second household, job application costs, account fees for salary.
-   = **Income from employment.**
-3. **Add other income** (from the sibling skills) to get the sum of income (Summe der Einkünfte). Less the single parent relief where it applies (§ 24b(1) EStG deducts it from the sum of income) = **total income (Gesamtbetrag der Einkünfte)**.
-4. **Less special expenses (Sonderausgaben):**
-   - Pension contributions: employee plus employer share to the statutory scheme, up to the cap, minus the tax-free employer share. In practice: the employee share.
-   - Basic health and care insurance (employee share; statutory health reduced by 4% where sick pay is covered). Unemployment, disability and liability insurance count only while the EUR 1,900 cap is not already used by basic health and care (§ 10(4) sentence 4 EStG). For most employees it is.
-   - Church tax paid, donations, first training up to EUR 6,000, childcare (§ 10(1) no. 5 EStG), or the EUR 36 lump sum.
-5. **Less extraordinary burdens** above the reasonable own share, maintenance payments, disability lump sums.
-   = **Income (Einkommen).**
-6. **Child allowances or Kindergeld (§ 31 EStG).** The tax office compares. If the tax saving from the allowances is greater than the year's Kindergeld, it deducts the allowances and adds the Kindergeld to the tax. Otherwise Kindergeld stands and no allowance is deducted. The allowances are always used for the solidarity surcharge and church tax base (§ 3(2) SolzG, § 51a(2) EStG).
-   = **Taxable income (zu versteuerndes Einkommen)**, rounded down to euros.
-7. **Tariff tax** (basic or splitting). Wage replacement benefits and treaty-exempt foreign pay raise the rate but are not taxed themselves (§ 32b EStG).
-8. **Less tax credits:** § 35a household services and craftsmen.
-9. **Plus solidarity surcharge and church tax.**
-10. **Less wage tax, surcharge and church tax withheld** (certificate lines 4 to 7). The difference is the refund or extra payment.
-
-**Losses.** A loss from another income type (for example rental) reduces employment income in the same year. A remaining loss can be carried back, subject to the statutory cap, first to the immediately preceding year and any remainder to the second preceding year or forward without time limit under § 10d EStG; that mechanism is not set out here.
+1. Reconcile gross taxable employment receipts to the actual wage certificates. Determine each spouse's employment expenses or lump sum separately, then combine income for a valid joint assessment (§§ 9, 9a, 26b).
+2. Include other assessed income only after the relevant Guide has established it. The sum of income less the applicable § 2(3) reliefs is total income; less special expenses and extraordinary burdens is income (§ 2(2)–(4)). Use actual deductible insurance amounts supported by the certificates and insurer data, not assumed percentages of annual salary.
+3. Apply child allowances only after establishing § 32 eligibility. The tax office compares the allowance route with the Kindergeld **entitlement**, not simply the cash received. If allowances are needed for the statutory tax exemption, add the corresponding entitlement to the tariff tax; § 31 excludes months covered by its § 70(1) sentence 2 non-payment exception. Otherwise the Kindergeld route stands (§ 31).
+4. Apply the appropriate tariff to taxable income, then applicable credits, the correct surcharge and church-tax calculations, and finally credit the attributable withholding and prepayments (§§ 2(5)–(6), 36). A referred item below is a hold on the completed return, not permission to treat that item as zero.
 
 ## Deadlines and filing
 
-| Step | Rule |
+| Step | Rule and source |
 |---|---|
-| Form | Main form (Hauptvordruck) with Anlage N per employed spouse, Anlage Vorsorgeaufwand, Anlage Kind per child, Anlage Haushaltsnahe Aufwendungen, Anlage Sonderausgaben, Anlage Außergewöhnliche Belastungen, Anlage N-AUS for foreign pay. Form names from the ELSTER 2025 guide; the 2026 forms are not yet published |
-| Channel | ELSTER (Mein ELSTER or third-party software). Electronic filing is compulsory only where there is farming, trade or self-employed income and the case is not one of § 46(2) no. 2 to 8 EStG; otherwise paper is allowed (§ 25(4) EStG) |
-| Mandatory filers, own return | By 31 July 2027 (seven months after year end, § 149(2) AO). 31 July 2027 is a Saturday, so the deadline moves to Monday 2 August 2027 (§ 108(3) AO) |
-| Mandatory filers, prepared by a tax adviser | By the last day of February of the second following year (§ 149(3) AO): 29 February 2028. Unlike 2020 to 2024, no special extension applies to 2026 (Art. 97 § 36 EGAO covers only up to 2024). The tax office can call for an earlier return (§ 149(4) AO) |
-| Voluntary filers | Four-year assessment period (§ 169(2) no. 2 AO), starting at the end of 2026 because there is no duty to file (§ 170(1) AO): the 2026 return must reach the tax office by 31 December 2030. The ELSTER 2025 guide states the same rule for 2025 (31 December 2029) and says it cannot be extended |
-| Payment | An extra payment is due one month after the notice (§ 36(4) EStG). The tax office may also set quarterly prepayments for later years |
+| Form and channel | Form topics retained: Hauptvordruck, Anlage N for each employed spouse, Vorsorgeaufwand, Kind, Haushaltsnahe Aufwendungen, Sonderausgaben, Außergewöhnliche Belastungen and N-AUS. Use Mein ELSTER or appropriate software only after establishing the correct 2026 form/field mapping; 2025 guidance does not prove it. For this mapping: Check this point with one of our partner accountants. https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025 |
+| Electronic filing | Required by § 25(4) where agricultural, trade or self-employed income is earned and the assessment is not a § 46(2) nos. 2–8 case; hardship waiver on application. This provision does not compel an ordinary wages-only filer to file electronically. https://www.gesetze-im-internet.de/estg/__25.html |
+| Mandatory, own return | General seven-month deadline: 31 July 2027 is Saturday, moving it to Monday 2 August 2027. An individual demand/extension must be checked. https://www.gesetze-im-internet.de/ao_1977/__149.html § 149(1)–(2); https://www.gesetze-im-internet.de/ao_1977/__108.html § 108(3) |
+| Mandatory, authorised adviser | Normally 29 February 2028 under § 149(3), subject to an earlier § 149(4) demand. This extension excludes § 46(2) no. 8 voluntary returns. Pandemic extensions cover earlier periods, not 2026. https://www.gesetze-im-internet.de/ao_1977/__149.html; https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html |
+| Voluntary | Ordinary four-year assessment period, starting at the end of 2026: submit by 31 December 2030, provided there is no mandatory duty. https://www.gesetze-im-internet.de/ao_1977/__169.html § 169(2) no. 2; https://www.gesetze-im-internet.de/ao_1977/__170.html § 170(1) |
+| Reconciliation/payment | Credit applicable withholding and paid prepayments. An assessed balance is generally payable within one month after notification; already-due unpaid prepayments are immediately payable. A refund is paid after notification. https://www.gesetze-im-internet.de/estg/__36.html §§ 36(2)–(4) |
 
 ## Penalties and interest
 
-- **Late-filing surcharge (§ 152 AO).** Only for mandatory filers. The tax office may set it after a late return. It must set it if the return is not in within 14 months after year end (for 2026: by 29 February 2028) unless an extension was granted, the tax is nil, or the tax does not exceed the wage tax withheld and prepayments (§ 152(2) and (3) AO). Amount: 0.25% per month or part month of the tax less withheld tax and prepayments, at least EUR 25 per month, at most EUR 25,000 (§ 152(5) and (10) AO). An employee due a refund is not hit by the mandatory surcharge.
-- **Interest on the balance (§ 233a AO).** Runs from 15 months after year end, so from 1 April 2028 for 2026, until the notice takes effect. 0.15% per full month, 1.8% a year (§ 238(1a) AO), on the balance rounded down to EUR 50. Refunds earn the same interest, at the earliest from the day the tax was paid.
-- **Late payment (§ 240 AO).** 1% per started month on the overdue amount rounded down to EUR 50.
+- **Late filing:** discretionary surcharge under § 152(1), with excuse protection; ordinarily mandatory after 14 months (29 February 2028 for 2026), or an earlier § 149(4) demand deadline. Extensions, nil/negative tax and tax not exceeding prepayments plus creditable withholding exclude the automatic rule, but do not abolish discretion. For an annual return: 0.25% per started late month of assessed tax less those credits, minimum EUR 25 monthly, rounded down to euros, maximum EUR 25,000. The special first-demand rule in § 152(5) sentence 3 can shorten the chargeable period. [AO § 152(1)–(5), (10)](https://www.gesetze-im-internet.de/ao_1977/__152.html).
+- **Assessment interest:** ordinary 2026 employee balances run from 1 April 2028, fifteen months after year-end, until assessment takes effect. Under §§ 233a/238 it is 0.15% per full month (1.8% annually), on the prescribed difference rounded down to EUR 50; refund interest is limited to the refundable amount and starts no earlier than payment, with separate periods for multiple payments. Retrospective events/loss carrybacks have a different start under § 233a(2a): refer these. [AO § 233a(1)–(3)](https://www.gesetze-im-internet.de/ao_1977/__233a.html), [§ 238](https://www.gesetze-im-internet.de/ao_1977/__238.html).
+- **Late payment:** 1% per started month on assessed/declared overdue tax rounded down to EUR 50. No surcharge for delay up to three days, except payments within § 224(2) no. 1; no surcharge on ancillary tax charges. [AO § 240(1)–(3)](https://www.gesetze-im-internet.de/ao_1977/__240.html).
 
 ## Cross-border points
 
-- **Foreign pay of a resident.** Pay exempt in Germany under a tax treaty is still declared (Anlage N-AUS) and raises the rate on the rest (§ 32b EStG). Foreign tax credits under § 34c EStG are not covered here.
-- **Moving in or out in 2026.** Use `de-partners-and-part-year` for the residence-period base, German-source income of the other period and progression computation under § 2(7) and § 32b EStG, within that Guide's stated conditions and source limits. For shares and departure rules see leaving-germany-exit-tax.
-- **Spouse living abroad.** An EU/EEA national may get joint assessment with a spouse resident in the EU/EEA under § 1a EStG; filing is then mandatory (§ 46(2) no. 7 EStG). Not covered further.
-- **Non-residents with German pay** (§ 1(3) election, § 46(2) no. 9 EStG): use de-non-resident-tax. For Swiss cross-border commuters, use `germany-to-switzerland-cross-border-tax`: its commuter-status tests and German assessment method are supplied, with the stated home-office, working-day denominator, implementing-text and currency-conversion reservations.
+These topics remain within the intake. The abbreviated old rules do not establish an outcome; do not calculate them from the former headline rate/cap alone.
+
+| Topic | Final action |
+|---|---|
+| Home-office room and annual room allowance | Check this point with one of our partner accountants. |
+| Second household, business travel, work-related moving, applications and salary-account costs | Check this point with one of our partner accountants. |
+| First education and later vocational training | Check this point with one of our partner accountants. |
+| Donations, deductible church tax paid and childcare | Check this point with one of our partner accountants. |
+| Single-parent relief and household/adult eligibility | Check this point with one of our partner accountants. |
+| Household minijob, household/care services and craftsmen credits | Check this point with one of our partner accountants. |
+| Extraordinary burdens and the progressive reasonable-own-share calculation | Check this point with one of our partner accountants. |
+| Dependant maintenance | Check this point with one of our partner accountants. |
+| Disability and related lump sums | Check this point with one of our partner accountants. |
+| Loss offset, carryback/forward and retrospective-event interest | Check this point with one of our partner accountants. |
+| Church membership/state rates, child-adjusted base, partial-income method, trade-tax-credit adjustment, mixed-faith couples, special Kirchgeld, caps and rounding | Check this point with one of our partner accountants. |
+| Foreign pay, wage replacement benefits/progression, foreign tax credit, part-year residence, spouse abroad and Swiss commuter treatment | Check this point with one of our partner accountants. |
+| Later-year quarterly prepayments | Check this point with one of our partner accountants. |
 
 ## Worked examples
 
-### Example 1: single employee, EUR 55,000, commuter with home office days
+Both original 2026 cases are retained below. **These are audits of the former numerical model, not filing results.** Recomputing arithmetic cannot supply missing legal or factual eligibility. Do not use the historical checkpoint deductions or the final balances as deductible amounts/refunds until supported by the actual records.
 
-Lena is 30, single, no children, not a church member, works in Hesse, statutory health insurance with a fund additional rate of 2.9%. Gross 2026 pay EUR 55,000, all under the health ceiling of EUR 69,750. She went to the office on 120 days (30 km one way) and worked from home on 100 days. Work equipment EUR 250. Her wage tax certificate shows Lohnsteuer withheld of EUR 8,060 and no solidarity surcharge. (Invented case; EUR 8,060 is what the 2026 payroll formula in de-payroll gives for class I with these facts.)
+### Example 1: original single-employee case, on hold
 
-- Commuting: 120 × 30 × 0.38 = EUR 1,368. Home office: 100 × 6 = EUR 600. Equipment EUR 250. Werbungskosten EUR 2,218, above the EUR 1,230 lump sum.
-- Employment income: 55,000 − 2,218 = EUR 52,782.
-- Pension: employee share 9.3% = EUR 5,115 (total contributions 10,230, under the EUR 30,826 cap, minus the employer's 5,115).
-- Health: (7.3% + 1.45%) × 55,000 = 4,812.50, less 4% = EUR 4,620. Care, childless over 23: 2.4% = EUR 1,320. Basic health and care EUR 5,940 already exceed the EUR 1,900 cap, so unemployment insurance adds nothing.
-- Special expenses lump sum EUR 36.
-- Taxable income: 52,782 − 11,055 − 36 = EUR 41,691, zone 3.
-- Tax: z = 2.3892; (173.10 × 2.3892 + 2,397) × 2.3892 + 1,034.87 = 7,749.88, rounded down EUR 7,749. Below EUR 20,350, so no solidarity surcharge.
-- Refund: 8,060 − 7,749 = EUR 311. She is not obliged to file (no § 46(2) case) and can claim it until 31 December 2030.
+Lena, 30, single, no children, no church membership, Hesse; 2026 gross pay EUR 55,000; statutory health cover with an assumed fund additional rate of 2.9%; 120 office days, 30 km one way, 100 days working from home; equipment EUR 250; stipulated certificate wage tax EUR 8,060, no solidarity withholding. The EUR 8,060 is retained as the original input, not as a verified output of a payroll formula.
+
+The old expense model recomputes to 120 × 30 × 0.38 + 100 × 6 + 250 = EUR 2,218. It requires the actual first-workplace/route/employer-benefit facts, qualifying home days and deductible equipment use. The record does not establish them. The former insurance model was EUR 5,115 pension + EUR 4,620 health + EUR 1,320 care = EUR 11,055; annual gross and the assumed fund rate do not establish those actual deductible contributions.
+
+Auditing that former model only: 55,000 − 2,218 = 52,782; 52,782 − 11,055 − 36 = 41,691. At this checkpoint, z = 2.3892 and raw tariff tax is EUR 7,749.885086384, floored to EUR 7,749. The arithmetic difference from EUR 8,060 is EUR 311, with a zero surcharge at this checkpoint base. **The EUR 311 refund conclusion is withdrawn pending evidence.** For the missing expense/insurance conditions and final return: Check this point with one of our partner accountants.
 
 ```oa-check
-name: DE employee 2026, single, EUR 55,000, 30 km commute, 100 home office days
+name: Original DE single 2026 arithmetic audit only, outcome on hold
 inputs:
   gross: 55000
   office_days: 120
@@ -175,30 +143,27 @@ steps:
   - z: (taxable - 17799) / 10000
   - tax: floor((173.10 * z + 2397) * z + 1034.87)
   - soli: 0
-  - refund: lohnsteuer_withheld - tax - soli
+  - historical_balance: lohnsteuer_withheld - tax - soli
 expected:
   werbungskosten: 2218
   vorsorge: 11055
   taxable: 41691
   tax: 7749
-  refund: 311
+  historical_balance: 311
 ```
 
-### Example 2: married couple, classes III and V, one child, splitting
+### Example 2: original married case, on hold
 
-Jonas earns EUR 72,000 (class III, 15 km on 200 days, so commuting is EUR 1,140 and the EUR 1,230 lump sum is higher). Mia earns EUR 18,000 (class V) and pays EUR 200 union dues; she has no other job costs. One child, Kindergeld EUR 3,108 for the year. Both in statutory health insurance at a 2.9% additional rate, both work outside Saxony (so care is 1.8% each), no church. Because one spouse was in class V, they must file (§ 46(2) no. 3a EStG). Wage tax withheld on both certificates together: EUR 9,414 (stipulated fictional certificate amounts: EUR 7,564 for Jonas and EUR 1,850 for Mia). These are inputs to the annual reconciliation, not a claim that the stated 2026 PAP assumptions generate those withholding amounts.
+Jonas earns EUR 72,000, class III, 15 km on 200 days. Mia earns EUR 18,000, class V, pays EUR 200 union dues and has no other job costs. The original record says one child and EUR 3,108 annual Kindergeld; both have statutory health cover at an assumed 2.9% additional rate, work outside Saxony and have no church membership. Stipulated fictional withholding inputs remain EUR 7,564 and EUR 1,850, total EUR 9,414, not computed payroll outputs.
 
-- Jonas: 72,000 − 1,230 = EUR 70,770. Mia: 18,000 − 1,230 − 200 = EUR 16,570 (union dues on top of the lump sum, new for 2026). Total EUR 87,340.
-- Pension, employee shares: 6,696 + 1,674 = EUR 8,370.
-- Health: Jonas on the ceiling, 69,750 × 8.75% × 0.96 = 5,859; Mia 18,000 × 8.75% × 0.96 = 1,512. Care with a child, 1.8%: 1,255.50 and 324. Basic cover EUR 8,950.50 is above the joint cap of EUR 3,800, so it counts in full and unemployment insurance drops out.
-- Taxable income before child allowances: 87,340 − 17,320.50 − 72 = 69,947.50, rounded down EUR 69,947.
-- Splitting: tax on 34,973 = 5,662, doubled EUR 11,324.
-- With child allowances (EUR 9,756): taxable EUR 60,191, splitting tax 2 × 4,243 = EUR 8,486. Saving EUR 2,838 is less than Kindergeld of EUR 3,108, so Kindergeld stands and the income tax is EUR 11,324.
-- Surcharge base is EUR 8,486 (with allowances), below EUR 40,700: no surcharge.
-- Extra payment: 11,324 − 9,414 = EUR 1,910, due one month after the notice. Classes III and V often withhold too little, which is why this couple must file.
+Expense arithmetic: commuting 200 × 15 × 0.38 = EUR 1,140; the EUR 1,230 lump sum is higher for Jonas. Mia's lump sum plus qualifying union dues gives 18,000 − 1,230 − 200 = EUR 16,570; Jonas has EUR 70,770; total EUR 87,340.
+
+The old contribution model recomputes pension EUR 6,696 + 1,674 = 8,370; health EUR 5,859 + 1,512 = 7,371; care EUR 1,255.50 + 324 = 1,579.50, using the old EUR 69,750 ceiling input. Total EUR 17,320.50. **These are not established employee deductions.** Mia's annual EUR 18,000 does not establish regular monthly remuneration, employment duration or transition-range treatment. [SGB IV § 20(2)–(2a)](https://www.gesetze-im-internet.de/sgb_4/__20.html) provides a transition range up to regular monthly EUR 2,000 and a separate employee-contribution basis, with an occupational-training exception. Do not invent a monthly pay pattern. The child's age, eligible months, residence and relationship to both spouses are also unstated.
+
+The old model's checkpoint is 87,340 − 17,320.50 − 72 = EUR 69,947.50, floored to 69,947. Splitting gives 2 × tax(34,973) = EUR 11,324. Applying the old full-child-allowance input EUR 9,756 gives taxable 60,191 and 2 × tax(30,095) = EUR 8,486. The arithmetic saving is EUR 2,838, below the EUR 3,108 input; the allowance route plus that input is EUR 11,594 versus EUR 11,324. The child-adjusted checkpoint surcharge is zero. 11,324 − 9,414 = EUR 1,910. **The EUR 1,910 extra-payment conclusion is withdrawn.** For verified contributions, child eligibility, joint-assessment conditions and the final return: Check this point with one of our partner accountants.
 
 ```oa-check
-name: DE married couple 2026, splitting, one child, Kindergeld check
+name: Original DE married 2026 arithmetic audit only, outcome on hold
 inputs:
   gross_a: 72000
   gross_b: 18000
@@ -222,64 +187,60 @@ steps:
   - zk: (half_kfb - 17799) / 10000
   - tax_kfb: 2 * floor((173.10 * zk + 2397) * zk + 1034.87)
   - allowance_saving: tax_split - tax_kfb
-  - income_tax: min(tax_split, tax_kfb + kindergeld_year)
-  - extra_payment: income_tax - withheld
+  - historical_tax: min(tax_split, tax_kfb + kindergeld_year)
+  - historical_balance: historical_tax - withheld
 expected:
   vorsorge: 17320.50
   taxable: 69947
   tax_split: 11324
   tax_kfb: 8486
   allowance_saving: 2838
-  income_tax: 11324
-  extra_payment: 1910
+  historical_tax: 11324
+  historical_balance: 1910
 ```
-
-`income_tax` takes the lower of the two routes: with allowances the tax is 8,486 plus the Kindergeld added back, 3,108, which is 11,594; without them it is 11,324, so the allowance route is not used. Both examples use only zone 3 of the tariff because the taxable amounts fall in it; a different case must pick its zone first.
 
 ## Ask the client first
 
-1. Tax class in 2026, and for a couple, both wage tax certificates. A class III/V or IV-with-factor couple must file.
-2. Any income without wage tax (rent, freelance, foreign pay) or wage replacement benefits (parental allowance, short-time work pay). Over EUR 410 makes filing mandatory and brings in other forms.
-3. Office days and home office days, and the one-way road distance. These decide the Werbungskosten and whether they beat EUR 1,230.
-4. Health insurance: statutory or private, the fund's additional rate, and any refunds received.
-5. Children: dates of birth, Kindergeld received, whether they live in the household, and for a single parent whether another adult lives there.
-6. Church membership and state of residence (8% or 9%).
+Obtain the actual 2026 wage/insurance records and refunds, tax-office demands, both spouses' assessment choices and tax classes, other income/benefits, verified workplace/route/day records, work-equipment use, child eligibility/entitlement records, church membership and state. For any referred item obtain the relevant records before completing the return. Annual salary and a tax class do not establish the remaining facts.
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and passages actually read | Official URL | Read on |
 |---|---|---|
-| EStG § 4 (home office allowances) | https://www.gesetze-im-internet.de/estg/__4.html | 2026-10-23 |
-| EStG § 6 (low-value assets, EUR 800) | https://www.gesetze-im-internet.de/estg/__6.html | 2026-10-23 |
-| EStG § 9 (Werbungskosten, commuting EUR 0.38) | https://www.gesetze-im-internet.de/estg/__9.html | 2026-10-23 |
-| EStG § 9a (lump sum EUR 1,230, union dues) | https://www.gesetze-im-internet.de/estg/__9a.html | 2026-10-23 |
-| EStG § 10 (special expenses, caps) | https://www.gesetze-im-internet.de/estg/__10.html | 2026-10-23 |
-| EStG § 10b (donations) | https://www.gesetze-im-internet.de/estg/__10b.html | 2026-10-23 |
-| EStG § 10c (lump sum EUR 36) | https://www.gesetze-im-internet.de/estg/__10c.html | 2026-10-23 |
-| EStG § 24b (single parent relief) | https://www.gesetze-im-internet.de/estg/__24b.html | 2026-10-23 |
-| EStG §§ 26, 26b (joint assessment) | https://www.gesetze-im-internet.de/estg/__26.html | 2026-10-23 |
-| EStG § 31 (Kindergeld comparison) | https://www.gesetze-im-internet.de/estg/__31.html | 2026-10-23 |
-| EStG § 32 (child allowances) | https://www.gesetze-im-internet.de/estg/__32.html | 2026-10-23 |
-| EStG § 32a (2026 tariff, splitting) | https://www.gesetze-im-internet.de/estg/__32a.html | 2026-10-23 |
-| EStG §§ 33, 33a, 33b (extraordinary burdens) | https://www.gesetze-im-internet.de/estg/__33.html | 2026-10-23 |
-| EStG § 35a (household services) | https://www.gesetze-im-internet.de/estg/__35a.html | 2026-10-23 |
-| EStG § 36 (payment of balance) | https://www.gesetze-im-internet.de/estg/__36.html | 2026-10-23 |
-| EStG § 46 (when employees are assessed) | https://www.gesetze-im-internet.de/estg/__46.html | 2026-10-23 |
-| EStG § 51a (church tax base) | https://www.gesetze-im-internet.de/estg/__51a.html | 2026-10-23 |
-| EStG § 52 (this version applies from 2026) | https://www.gesetze-im-internet.de/estg/__52.html | 2026-10-23 |
-| EStG § 66 (Kindergeld EUR 259) | https://www.gesetze-im-internet.de/estg/__66.html | 2026-10-23 |
-| SolzG §§ 3, 4 | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-10-23 |
-| AO §§ 108, 149, 152, 169, 170, 233a, 238, 240 | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-10-23 |
-| EGAO Art. 97 § 36 (extensions end with 2024) | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-23 |
-| SVBezGrV 2026 § 4 (miners' pension ceiling EUR 124,800) | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html | 2026-10-23 |
-| SVBezGrV 2026 § 2(2) (health and care ceiling EUR 69,750) | https://www.gesetze-im-internet.de/svbezgrv_2026/__2.html | 2026-10-23 |
-| SGB V §§ 241, 243 (health 14.6%, reduced 14.0%) | https://www.gesetze-im-internet.de/sgb_5/__241.html | 2026-10-23 |
-| PBAV 2025 § 1 (care 3.6%) and SGB XI §§ 55(3), 58 (childless surcharge borne by the employee) | https://www.gesetze-im-internet.de/pbav_2025/__1.html | 2026-10-23 |
-| EStG § 25(4) (when electronic filing is compulsory) | https://www.gesetze-im-internet.de/estg/__25.html | 2026-10-23 |
-| EStG § 39b(2) (wage tax formula, Vorsorgepauschale) | https://www.gesetze-im-internet.de/estg/__39b.html | 2026-10-23 |
-| RVBeitrSBek 2026 (pension rates 18.6% and 24.7%) | https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html | 2026-10-23 |
-| BMF monthly report Feb 2026, main tax changes 2026 | https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-5-wichtigste-steuerliche-aenderungen-2026.html | 2026-10-23 |
-| BMF booklet "Steuern von A bis Z" (church tax 8 or 9%) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf | 2026-10-23 |
-| ELSTER, guide to the 2025 income tax return (forms, filing duty, voluntary deadline) | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025 | 2026-10-23 |
+| EStG § 1(1), residence | https://www.gesetze-im-internet.de/estg/__1.html | 2026-11-26 |
+| EStG § 19(1), employment receipts | https://www.gesetze-im-internet.de/estg/__19.html | 2026-11-26 |
+| EStG § 2(2)–(8), base and partners | https://www.gesetze-im-internet.de/estg/__2.html | 2026-11-26 |
+| EStG § 26, election/conditions/default | https://www.gesetze-im-internet.de/estg/__26.html | 2026-11-26 |
+| EStG § 26b, combined income | https://www.gesetze-im-internet.de/estg/__26b.html | 2026-11-26 |
+| EStG § 46(2), assessment cases | https://www.gesetze-im-internet.de/estg/__46.html | 2026-11-26 |
+| EStG § 52(1), (36), 2026 application | https://www.gesetze-im-internet.de/estg/__52.html | 2026-11-26 |
+| EStG § 32a(1), (5), complete tariff and rounding | https://www.gesetze-im-internet.de/estg/__32a.html | 2026-11-26 |
+| EStG § 9a, lump sum/union/receipt limit | https://www.gesetze-im-internet.de/estg/__9a.html | 2026-11-26 |
+| EStG § 9(1) nos. 4, 6–7, (2), (4)–(6), expenses and bridges | https://www.gesetze-im-internet.de/estg/__9.html | 2026-11-26 |
+| EStG § 4(5) nos. 6b–6c, home-work exclusions | https://www.gesetze-im-internet.de/estg/__4.html | 2026-11-26 |
+| EStG § 6(2) sentences 1–3, low-value assets | https://www.gesetze-im-internet.de/estg/__6.html | 2026-11-26 |
+| LStH 2026 R 9.12, employee equipment cost/VAT | https://ao.bundesfinanzministerium.de/lsth/2026/A-Einkommensteuergesetz/II-Einkommen-2-24b/4-Ueberschuss-d-Einnahmen-ueber-die-Werbungsk-8-9a/Paragraf-9/r-9-12.html | 2026-11-26 |
+| EStG § 10(1) nos. 2–3, (2)–(4), (4b), insurance deduction | https://www.gesetze-im-internet.de/estg/__10.html | 2026-11-26 |
+| SVBezGrV 2026 § 4(1), pension ceilings | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html | 2026-11-26 |
+| RVBeitrSBek 2026, pension contribution rates | https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html | 2026-11-26 |
+| EStG § 10c, scope of lump sum | https://www.gesetze-im-internet.de/estg/__10c.html | 2026-11-26 |
+| EStG § 32, child conditions and allowances | https://www.gesetze-im-internet.de/estg/__32.html | 2026-11-26 |
+| EStG § 66, monthly amount and eligible months | https://www.gesetze-im-internet.de/estg/__66.html | 2026-11-26 |
+| EStG § 31, entitlement comparison and exception | https://www.gesetze-im-internet.de/estg/__31.html | 2026-11-26 |
+| SolzG § 3(2)–(3), assessment base and limits | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-11-26 |
+| SolzG § 4, rate, mitigation, rounding | https://www.gesetze-im-internet.de/solzg_1995/__4.html | 2026-11-26 |
+| EStG § 25(3)–(4), return/channel | https://www.gesetze-im-internet.de/estg/__25.html | 2026-11-26 |
+| ELSTER 2025 form selection; reused exact completed read, not 2026 form proof | https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025 | 2026-10-29 |
+| AO § 149(1)–(4), duty/deadlines | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-11-26 |
+| AO § 108(3), weekend rule; reused exact completed read | https://www.gesetze-im-internet.de/ao_1977/__108.html | 2026-10-29 |
+| EGAO Art. 97 § 36, transitional periods | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-11-26 |
+| AO § 169(2) no. 2, ordinary assessment period | https://www.gesetze-im-internet.de/ao_1977/__169.html | 2026-11-26 |
+| AO § 170(1)–(2), start of assessment period | https://www.gesetze-im-internet.de/ao_1977/__170.html | 2026-11-26 |
+| EStG § 36(2)–(4), credit/payment/refund | https://www.gesetze-im-internet.de/estg/__36.html | 2026-11-26 |
+| AO § 152(1)–(5), (10), late filing | https://www.gesetze-im-internet.de/ao_1977/__152.html | 2026-11-26 |
+| AO § 233a(1)–(3), assessment interest | https://www.gesetze-im-internet.de/ao_1977/__233a.html | 2026-11-26 |
+| AO § 238(1)–(2), interest rate/full months/base rounding | https://www.gesetze-im-internet.de/ao_1977/__238.html | 2026-11-26 |
+| AO § 240(1)–(3), late-payment charge/grace | https://www.gesetze-im-internet.de/ao_1977/__240.html | 2026-11-26 |
+| SGB IV § 20(2)–(2a), transition range/employee basis/training exception | https://www.gesetze-im-internet.de/sgb_4/__20.html | 2026-11-26 |
 
-Not yet confirmed: the 2026 form set and line numbers (ELSTER has not published the 2026 guide; the form names above are from 2025); which states charge 8% and which 9% church tax (state law, not on a federal page); the health additional rate of 2.9% in the examples is an assumed fund rate (each fund sets its own).
+Not yet confirmed: 2026 form/field mapping; each named referral outcome; both examples' actual deductible contributions, expense eligibility and complete family/assessment facts. These are explicit holds requiring a partner accountant, not usable estimates. The 2.9% fund rate and wage-withholding amounts remain original fictional inputs, not statutory general rates or verified payroll calculations.
