@@ -1,133 +1,98 @@
 ---
 name: ca-cpp-qpp-not-withheld
-description: "What an employer does when CPP contributions or EI premiums (and, for Quebec employees, QPP contributions) were not withheld or were under-withheld, for tax year 2026 and earlier years: the CRA pensionable and insurable earnings review (PIER) and its 30-day reply window; paying or disputing a PIER; the employer's liability for both the employee's and the employer's shares (Canada Pension Plan s. 21(2), Employment Insurance Act s. 82(4)); recovering the employee's share only from later pay within 12 months, one missed amount per pay (CPP s. 21(4), EI Act s. 82(6)); interest and failure-to-remit penalties; the Quebec QPP liability (QPP Act ss. 59, 60, 63; Tax Administration Act s. 59.2). Trigger on: PIER, PIER report, CPP not deducted, EI under-deducted, recover CPP from employee, QPP not withheld, CPP deficiency. Out of scope: computing CPP, EI or QPP (canada-payroll, qc-employer-contributions), self-employed CPP (ca-fed-cpp-ei), slip mechanics (ca-t4-rl1-amended-cancelled)."
+description: "Correct missed or insufficient employee CPP, EI and Quebec QPP deductions; determine the employer cash shortfall, the limits on recovery from later pay, and how to answer a CRA PIER. Includes Quebec recovery and RL-1 reporting, original 2025 and 2026 worked cases, and referrals for disputed liability, penalties and specialist cases."
 jurisdiction: CA
 tax_year: 2026
-last_updated: 2026-11-21
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 category: payroll
 type: computation
-version: 1.0
+version: 1.1
 ---
 
-# Canada: CPP, EI and QPP not withheld, and the PIER v1.0
+# Canada: CPP, EI and QPP not withheld, and the PIER
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Scope
 
-An employer failed to deduct, or deducted too little, Canada Pension Plan (CPP) contributions or Employment Insurance (EI) premiums from an employee's pay, and either found it itself or received a pensionable and insurable earnings review (PIER) from the Canada Revenue Agency (CRA). For employees in Quebec the same question arises for Quebec Pension Plan (QPP) contributions, which Revenu Quebec collects. This skill covers who pays, how much of it can be taken back from the employee and when, how to answer a PIER, and the interest and penalties the statutes set. It applies to 2026 payroll and to corrections of earlier years.
-
-It does not compute the contribution or premium itself: the 2026 rates, maximums and exemptions are in [canada-payroll](canada-payroll.md) (federal) and [qc-employer-contributions](quebec/qc-employer-contributions.md) (Quebec). Over-deductions, which are refunded through Form PD24, and slip amendments belong to `ca-t4-rl1-amended-cancelled`. Self-employed CPP is [ca-fed-cpp-ei](ca-fed-cpp-ei.md).
+Use this Guide when an employer discovers missed or insufficient employee Canada Pension Plan (CPP), Employment Insurance (EI) or Quebec Pension Plan (QPP) deductions, or receives a CRA pensionable and insurable earnings review (PIER). It addresses correction and recovery, rather than calculating the original payroll deduction. Keep the actual payroll year, pay dates and that year's forms: the first case concerns 2025 and the second concerns 2026.
 
 ## Ask the client first
 
-1. Which contributions are short: CPP, EI, QPP, or more than one; for which employees, which pay dates and which calendar year?
-2. Was the employee employed in Quebec (QPP and Revenu Quebec) or elsewhere in Canada (CPP and the CRA)? Did anyone work in both?
-3. Has the T4 (and RL-1) for that year been filed? Has the CRA sent a PIER report, and what is its reply date?
-4. Is the employee still on the payroll, and how many pays remain within 12 months of each pay that was short?
-5. Does the employer agree with the CRA's figures, for example on exempt employment, age, a CPP election, or province of employment?
-6. Was any of the amount actually deducted from pay but not remitted? That is a different and more serious failure.
+Collect the payroll records, contribution type, employees, pay dates, original deduction amounts, amounts actually remitted, T4/RL-1 slips, and any PIER or assessment with its reply date. Identify any remaining remuneration payments and the date of each missed deduction.
+
+Review province of employment from the reporting and employer-establishment facts rather than the employee's home address. Remote, foreign or mixed-province cases need the referral below. [CRA province-of-employment guidance](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/set-up-new-employee/determine-province-employment.html)
+
+Confirm pensionable/insurable employment, age, elections and exemptions before accepting a shortfall. The examples assume that the given shortfalls are correctly established; they do not establish these missing eligibility facts.
 
 ## The method, step by step
 
-### Step 1: who owes what [Canada Pension Plan ss. 9(1), 21(1)-(2)](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html); [Employment Insurance Act ss. 68, 82(1), 82(4), 84](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-82.html)
+### 1. Establish the employer's liability
 
-| Rule | What the law says | Official source |
+After confirming that deductions were required and that no written-ruling exception applies, an employer that under-deducted CPP or EI is responsible for remitting the unpaid balance of both employee and employer shares, even if it cannot recover the employee share. Do not add a share already remitted. [CRA corrections](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-corrections.html); [CPP s. 21(2)](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html); [EI Act s. 82(4)](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-82.html)
+
+| Employer contribution | Amount for the ordinary case | Official source |
 |---|---|---|
-| CPP: employer that fails to deduct and remit | "liable to pay to Her Majesty the whole amount that should have been deducted and remitted from the time it should have been deducted" (CPP s. 21(2)) | [CPP s. 21](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html) |
-| CPP: employer's own contribution | Owed in respect of each employee in pensionable employment (CPP s. 9(1)); remitted with the employee's share (s. 21(1)) | [CPP s. 9](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-9.html) |
-| EI: employer that fails to deduct and remit | Liable for "the whole amount that should have been deducted and remitted" (EI Act s. 82(4)) | [EI Act s. 82](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-82.html) |
-| EI: employer's premium | 1.4 times the employee premiums the employer is required to deduct (EI Act s. 68) | [EI Act s. 68](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-68.html) |
-| EI: employer's premium cannot be passed on | Not recoverable from the insured person by withholding or otherwise (EI Act s. 84) | [EI Act s. 84](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-84.html) |
-| Ruling defence | No liability, interest or penalty where a written CRA ruling said no deduction was needed, the ruling was not based on materially incorrect information, and a later decision says the deduction was due (CPP s. 21(3); EI Act s. 82(5)); the employer still owes its own share, without interest or penalty | [CPP s. 21](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html) |
+| CPP | Same amount as the employee's required CPP contribution | [CRA](https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/respond-notices.html) |
+| EI | 1.4 times the employee's required premium, unless a reduced employer rate is approved | [CRA](https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/respond-notices.html) |
 
-The CRA states the practical result: if you under-deducted, "you are responsible for remitting the balance due for both the employer's and employee's shares" ([CRA, Make corrections before filing](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-corrections.html)). The CRA may assess the employer for amounts payable (CPP s. 22(1); EI Act s. 85(1)). For a corporation, directors at the time of the failure are jointly and severally liable (CPP s. 21.1(1)).
+The employer's own EI premium cannot be recovered from the employee by withholding or otherwise, despite any contract to the contrary. [EI Act s. 84](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-84.html)
 
-### Step 2: recover the employee's share, within the limits [CPP s. 21(4)](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html); [EI Act s. 82(6)](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-82.html)
+### 2. Recover missed CPP or EI only within the payroll limits
 
-| Limit | Rule | Official source |
+For CPP, recovery may be deducted from a subsequent remuneration payment made within 12 months after the payment from which the deduction was missed. On each subsequent pay, in addition to the normal deduction, recover no more than one previously missed amount. EI has the same limits. Track each missed payment separately; discovery of the error does not restart the clock. [CPP s. 21(4)](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html); [EI Act s. 82(6)](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-82.html)
+
+The recovered amount must not exceed the contribution or premium that should have been deducted from the original payment. Do not adjust the employee's income-tax deduction to cover the shortfall. A prior-year CPP or EI amount recovered in the current year is not reported on the current year's T4. [CRA corrections](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-corrections.html)
+
+Leaving employment does not by itself prove that no subsequent remuneration is payable. If no later remuneration payment is available within the applicable period, there is no recovery through this payroll route. Other recovery rights and the tax treatment of an amount the employer absorbs are referred below.
+
+### 3. Answer a PIER
+
+The CRA compares CPP and EI required from the pensionable and insurable earnings reported on T4 slips with the reported contributions and premiums. The PIER package lists affected employees and the amounts used, a summary balance and a remittance voucher. Check those earnings and deductions against the payroll records, exemptions, age, elections and province facts before agreeing. [CRA PIER](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/earnings-review.html)
+
+| Timeline | CRA process | Official source |
 |---|---|---|
-| Only from later pay | The amount may be deducted "from any subsequent payment of remuneration made to the employee within 12 months after the making of the payment from which the amount was required to be deducted" (CPP s. 21(4)); EI Act s. 82(6) has the same 12-month rule | [CPP s. 21](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html) |
-| One missed amount per pay | On top of the normal deduction, no more than one previously missed amount may be taken from a single pay (CPP s. 21(4); EI Act s. 82(6)) | [EI Act s. 82](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-82.html) |
-| CRA conditions | The recovered amount can equal but not exceed what should have been deducted from each payment; nothing outstanding for more than 12 months; income tax deductions cannot be adjusted to cover the shortfall | [CRA, Make corrections before filing](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-corrections.html) |
-| Reporting a prior-year recovery | A prior-year shortfall recovered in the current year is not reported on the current year's T4 | [RC4120, CPP and EI underdeductions](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4120/employers-guide-filing-t4-slip-summary.html) |
+| Day 1 | Initial package requests a reply within 30 calendar days | [CRA](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/earnings-review.html) |
+| Day 45 | Assessment issued if neither a reply nor full payment is made; follow the reply date on the PIER | [CRA](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/earnings-review.html) |
+| Day 65 | CRA issues amended T4 slips to the employer | [CRA](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/earnings-review.html) |
 
-Inference (this skill's reading of CPP s. 21(4) and EI Act s. 82(6), not a CRA statement): what cannot be recovered inside these limits stays a cost of the employer, because neither Act gives another payroll route. Any private claim against the employee is outside this skill.
+- **Agree and pay:** no reply is required if you agree with the CRA's calculation and will pay the exact PIER amount by its deadline.
+- **Disagree:** return the PIER with corrected information and an explanation through My Business Account or Represent a Client, by mail to the PIER return address, or by fax to the relevant National Verification and Collection Centre.
+- **Amended T4s:** do not submit amended T4 slips because of the PIER. If amendments are required, the CRA prepares two copies and sends them to you: keep one and give the other to the employee.
+- **Several payroll accounts:** the CRA compares all T4 information returns under the business number and contacts the employer if it finds CPP or EI deficiencies.
 
-### Step 3: the PIER [CRA, Pensionable and insurable earnings review (PIER)](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/earnings-review.html)
+Source for these response instructions: [CRA PIER](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/earnings-review.html).
 
-Each year the CRA compares the CPP and EI required on the pensionable and insurable earnings reported on the T4 slips with the CPP and EI reported. Differences are printed on a PIER listing, sent with a PIER summary showing any balance due and a remittance voucher. The PIER arrives in My Business Account or Represent a Client (where it stays available for the last 5 years) and by mail.
+### 4. Interest and penalties
 
-| Day | What happens | Official source |
-|---|---|---|
-| Day 1 | PIER package sent; reply requested within 30 calendar days | [CRA PIER page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/earnings-review.html) |
-| Day 45 | Notice of assessment if there is no reply and no payment in full; it includes applicable penalties or interest | [CRA PIER page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/earnings-review.html) |
-| Day 65 | The CRA issues the amended T4s to the employer | [CRA PIER page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/earnings-review.html) |
+Unremitted CPP and EI amounts bear interest at the prescribed rate from the remittance due date until remittance. [CPP s. 21(6)](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html); [EI Act s. 82(8)](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-82.html)
 
-How to answer:
+A PIER assessment includes applicable penalties or interest, or both. This Guide does not calculate them or treat the late-remittance table as the penalty for every failure to deduct. For the applicable penalty, relief request or dispute of an assessment: Check this point with one of our partner accountants. [CRA PIER](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/earnings-review.html)
 
-1. Check each listed employee: pensionable and insurable earnings in boxes 26 and 24, age, exempt employment, province of employment (a Quebec employee pays QPP, not CPP), and any period the employee was not in pensionable or insurable employment. RC4120 notes that correct amounts in boxes 24 and 26 reduce unnecessary PIERs, "especially if the employee worked both inside and outside of Quebec".
-2. Agree: pay the exact amount on the PIER by the deadline. No reply is needed. In My Business Account the PIER overview has a "Proceed to pay" option (not in Represent a Client).
-3. Disagree with some or all of it: return the PIER with the corrected information and an explanation, through My Business Account or Represent a Client, by mail to the return address on the PIER, or by fax to the National Verification and Collections Centre. In My Business Account, "Proceed to pay" also lets you "Pay any remaining deficiencies after you have provided a response".
-4. Do not send amended T4 slips because of a PIER. The CRA prepares two copies of each amended T4: one for the employer's records, one for the employee (RC4120 and the CRA PIER page).
-5. Several payroll accounts: the CRA compares all T4 returns under the business number and contacts the employer only if it finds a deficiency.
+### 5. Quebec QPP correction
 
-### Step 4: interest and penalties [CPP s. 21(6)-(7)](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html); [EI Act s. 82(8)-(9)](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-82.html)
+If employee QPP contributions were insufficient, remit the missing employee amounts to Revenu Québec together with the employer contributions. [Revenu Québec, insufficient contributions](https://www.revenuquebec.ca/fr/entreprises/retenues-a-la-source-et-cotisations-de-lemployeur/calcul-des-retenues-et-des-cotisations/cotisations-au-rrq/total-des-cotisations-au-regime-de-rentes-du-quebec-payees-dans-lannee/)
 
-| Item | Rate or rule | Official source |
-|---|---|---|
-| Interest | Prescribed rate, from the day the amount should have been remitted to the day it is remitted (CPP s. 21(6); EI Act s. 82(8)) | [CPP s. 21](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html) |
-| Received on time but not in the required manner | 3% of the amount | [CPP s. 21(7)(a)(i)](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html) |
-| Received 1 to 3 days late | 3% | [CPP s. 21(7)(a)(ii)(A)](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html) |
-| 4 to 5 days late | 5% | [CPP s. 21(7)(a)(ii)(B)](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html) |
-| 6 to 7 days late | 7% | [CPP s. 21(7)(a)(ii)(C)](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html) |
-| Not remitted by the 7th day after it was due | 10% | [CPP s. 21(7)(a)(iii)](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html) |
-| Second failure in the year, knowingly or with gross negligence | 20% | [CPP s. 21(7)(b)](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html) |
-| EI premiums | The same 3%, 5%, 7%, 10% and 20% structure | [EI Act s. 82(9)](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-82.html) |
+After paying the employee contributions from the employer's funds, recovery can be made from pensionable salary or wages paid in the 12 months following the date the deduction should have been made. Recover the equivalent of only one missed contribution on each payment, alongside the normal contribution. [Revenu Québec](https://www.revenuquebec.ca/fr/entreprises/retenues-a-la-source-et-cotisations-de-lemployeur/calcul-des-retenues-et-des-cotisations/cotisations-au-rrq/total-des-cotisations-au-regime-de-rentes-du-quebec-payees-dans-lannee/)
 
-These are failure-to-remit penalties: CPP s. 21(7) and EI Act s. 82(9) apply to "an amount that the employer is required to remit". The PIER page says only that the notice of assessment "will include applicable penalties or interest, or both". Which penalty, if any, the CRA applies to a PIER deficiency, and at which rate, is not confirmed from a CRA publication (see Not yet confirmed): do not quote a penalty figure for a PIER deficiency. Relief from penalties and interest is a taxpayer relief request (Form RC4288).
+If the employee does not reimburse the employer, the amount becomes a taxable benefit reported in boxes A and L of the employee's RL-1. If a prior-year missed amount is recovered this year, do not put the recovered contribution on this year's RL-1: amend the RL-1 for the previous year instead. Detailed benefit calculations and any RLZ-1.S correction are referred below. [Revenu Québec](https://www.revenuquebec.ca/fr/entreprises/retenues-a-la-source-et-cotisations-de-lemployeur/calcul-des-retenues-et-des-cotisations/cotisations-au-rrq/total-des-cotisations-au-regime-de-rentes-du-quebec-payees-dans-lannee/)
 
-### Step 5: the employee's pension record [CPP s. 15(1.1)](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-15.html)
-
-If the employer did not deduct and the employee notified the Minister of the failure before June 30 of the following year, the amount that should have been deducted is counted toward the employee's contributions for the year (CPP s. 15(1.1) for the base contribution, with parallel rules for the first and second additional contributions). When the employer later pays an amount it failed to deduct, CPP s. 21(3.1) deems that notice given in the ruling case. Tell the employee; do not compute the employee's CPP record here.
-
-### Step 6: Quebec employees and QPP [Act respecting the Quebec Pension Plan ss. 34, 52, 57, 59, 60, 63](https://www.legisquebec.gouv.qc.ca/en/document/cs/R-9); [Tax Administration Act ss. 59.2, 61](https://www.legisquebec.gouv.qc.ca/en/document/cs/A-6.002)
-
-| Rule | What the law says | Official source |
-|---|---|---|
-| Duty to deduct | "An employer shall deduct from the remuneration paid to his employee for pensionable employment such amount as is prescribed on account of the employee's contributions." (QPP Act s. 59) | [QPP Act](https://www.legisquebec.gouv.qc.ca/en/document/cs/R-9) |
-| Failure to deduct | "An employer who fails to deduct a prescribed amount from the remuneration of an employee is liable to pay such amount to the Minister." (s. 60) | [QPP Act](https://www.legisquebec.gouv.qc.ca/en/document/cs/R-9) |
-| Employer's own contribution | Equal to the contributions each employee must make (s. 52); paid to the Minister with the amounts required to be deducted, on the dates in Taxation Act s. 1015 (s. 63) | [QPP Act](https://www.legisquebec.gouv.qc.ca/en/document/cs/R-9) |
-| Employee's record | An amount the employer pays on account of the employee's contribution that it failed to deduct is deemed deducted for that year (s. 57) | [QPP Act](https://www.legisquebec.gouv.qc.ca/en/document/cs/R-9) |
-| Collection | The Minister of Revenue collects the contributions and remits them to Retraite Quebec with the interest and penalties (s. 34) | [QPP Act](https://www.legisquebec.gouv.qc.ca/en/document/cs/R-9) |
-| Penalty for failure to deduct | "a penalty of 15% of that amount", for an amount a person was required to deduct, withhold or collect under a fiscal law (TAA s. 59.2). Title III of the QPP Act (contributions, including ss. 59 and 60) "is a fiscal law within the meaning of the Tax Administration Act" (QPP Act s. 73) | [TAA](https://www.legisquebec.gouv.qc.ca/en/document/cs/A-6.002); [QPP Act s. 73](https://www.legisquebec.gouv.qc.ca/en/document/cs/R-9) |
-| Interest | A debt owed to the State under a fiscal law bears interest at the regulated rate (TAA s. 28) | [TAA](https://www.legisquebec.gouv.qc.ca/en/document/cs/A-6.002) |
-| Offence | Contravening QPP Act ss. 59 and 63 is an offence: a fine of $800 to $10,000, or the fine and up to six months' imprisonment, on top of any penalty (TAA s. 61) | [TAA](https://www.legisquebec.gouv.qc.ca/en/document/cs/A-6.002) |
-
-The QPP Act text read for this skill contains no rule like CPP s. 21(4) allowing the employer to take the missed amount from later pay. Whether Revenu Quebec allows recovery from the employee, how a QPP correction is reported (RL-1 and RLZ-1.S), and how Revenu Quebec reviews QPP the way the PIER reviews CPP are set out in its employer guide TP-1015.G-V, which this skill could not read (see Not yet confirmed). Precaution (this skill's advice, not a rule found in the law): until that guide is read, treat the full QPP shortfall as the employer's cost and do not deduct it from later pay.
-
-## Boundary and exception table
-
-| Situation | Action |
-|---|---|
-| Amounts were deducted from pay but not remitted | Not a "not withheld" case: the employer is deemed to hold the deducted amount in trust for Her Majesty (CPP s. 23(3)); refer at once |
-| Employee worked in and outside Quebec in the year | Check that CPP and QPP each sit on the right slip before answering a PIER |
-| Employee was exempt (age, election, excluded employment) | Dispute the PIER line with the evidence; do not pay it |
-| Employee left before the shortfall was found | No later pay, so no recovery; the employer bears the employee's share |
-| Corporation cannot pay | Directors' liability (CPP s. 21.1); refer |
-| Over-deduction rather than under-deduction | Form PD24 and `ca-t4-rl1-amended-cancelled` |
-| Worker status disputed (employee or contractor) | Ruling under CPP s. 26.1 or EI Act s. 90; refer |
+Quebec has its own review process. The **2026** RL-1 summary guide, RLZ-1.S.G (2026-10), §3.2 says Revenu Québec makes a summary examination of the RL-1 slips and summary. If contributions are insufficient, it may send an assessment with revised amounts or forms to complete and return, including LMU-141 or LMU-141.1 for employee and employer QPP contributions. Follow the actual notice; do not apply the CRA PIER timetable to it. The same guide identifies TP-1015.G as the employer guide for calculating and periodically paying source deductions and employer contributions. [Revenu Québec, §3.1–3.2](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/rlz-1-s-g/guide-du-sommaire-1-sommaire-des-retenues-et-des-cotisations-de-lemployeur/)
 
 ## Worked cases
 
-Amounts are hypothetical inputs taken as given on a PIER or the payroll records; the 2026 rates themselves are in [canada-payroll](canada-payroll.md).
+The shortfalls are hypothetical inputs from an agreed PIER or verified payroll records, not deductions calculated from gross wages here. Assume pensionable/insurable employment, no ruling exception, matching CPP employer amounts, no employer amounts already remitted, and the ordinary EI employer multiplier where relevant. Confirm these facts for a real case.
+
+“Employer cost” in the check blocks means **cash funded by the employer after the illustrated payroll recoveries**, before penalties, interest, any further recovery, benefit-related charges or income-tax treatment. It is not a final accounting expense or tax deduction.
 
 ### PIER shows CPP and EI shortfalls for one employee who has left
 
-A 2025 PIER shows the employee's CPP was short by $400 and EI by $120. The employer agrees. It owes the employee's shares plus its own: CPP employer share equal to the employee's ($400) and EI employer premium at 1.4 times ($168). The employee left in December 2025, so nothing can be recovered from later pay. Paying the exact PIER amount by the deadline needs no reply (CRA PIER page). If it is not paid, a notice of assessment follows with any penalties and interest the CRA applies; this skill does not estimate them.
+A 2025 PIER shows employee CPP short by $400 and EI short by $120; the employer agrees. The employee left in December 2025. For this illustration, assume no further remuneration is payable and no employee reimbursement is received: recoverable pays are zero. Employer CPP is $400; standard employer EI is $120 × 1.4 = $168. Total unpaid contributions and premiums are $400 + $400 + $120 + $168 = **$1,088**, all funded by the employer under those assumptions. The reduced-EI-rate and other recovery cases are outside the illustration.
+
+Paying the exact PIER amount by its deadline requires no reply. Penalties and interest are outside the $1,088. [CPP/EI matching](https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/respond-notices.html); [recovery limits](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html); [PIER](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/earnings-review.html)
 
 ```oa-check
 name: PIER deficiency, employee and employer shares, no recovery possible
@@ -149,9 +114,9 @@ expected:
 
 ### Shortfall found in time: recover from later pay, or absorb it
 
-A current employee was paid every two weeks. On four pays in October and November 2026 the employer deducted no CPP; each should have carried $100. The employer finds the error in December 2026. All four pays are within the last 12 months, so each later pay may carry the normal deduction plus one missed $100. Over the next four pays the employer recovers $400; the employer also remits its own $400, so the total remitted for the shortfall is $800 and the net cost to the employer is its own $400.
+A current employee is paid every two weeks. Four pays in October and November 2026 each missed a required $100 CPP deduction. The employer discovers the error in December 2026. Assume each of the next four remuneration payments occurs within 12 months of the respective missed payment and supports the normal deduction plus one missed $100. Recover $400 across those four pays; remit the employee $400 and employer $400 shortfalls, for **$800** total. The employer funds **$400** after recovery.
 
-The decision the employer faces is timing. Each missed amount must be recovered within 12 months of the pay it was missed on. If the employee is about to leave and only two pays remain, only $200 can be recovered, and the employer bears the other $200 on top of its own share.
+If the employee is about to leave and only two such pays remain, assume no other subsequent remuneration or reimbursement: recover **$200**, leaving **$600** funded by the employer. Apply the time limit to each missed payment separately; do not delay the employer's remittance while waiting to recover. [CPP liability and recovery, s. 21](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html); [matching](https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/respond-notices.html)
 
 ```oa-check
 name: Recovery from later pay within the 12-month and one-per-pay limits
@@ -178,18 +143,31 @@ expected:
 
 ## When to refuse or refer
 
-Refer to a qualified Canadian payroll professional when amounts were deducted but not remitted, when the shortfall is large or covers several years, when worker status, exempt employment or province of employment is disputed, when directors' liability or insolvency is in view, and for any Quebec QPP correction until Revenu Quebec's guide TP-1015.G-V has been read. Do not compute 2026 contributions here and do not advise deducting a shortfall from pay outside the 12-month, one-per-pay rule. This skill does not file a PIER reply or make a payment.
+For each situation below: **Check this point with one of our partner accountants.**
+
+- A written CRA ruling that no deduction was required was later reversed; worker status, exemptions, age, elections or province of employment are disputed.
+- Money was deducted but not remitted; the employer is insolvent; directors' liability or prosecution is in issue.
+- The employee's pension contribution record, deemed contributions or notification deadlines need correction.
+- Recovery outside the permitted payroll route, an employer-absorbed employee contribution, a taxable-benefit calculation, or the final accounting/tax cost needs determining.
+- Over-deductions, PD24 refunds, slip corrections outside a PIER, or a Quebec RLZ-1.S amendment are needed.
+- An approved reduced EI employer rate or an unusual payment-timing case affects the employer share.
+- The applicable federal or Quebec penalty, Quebec interest, an offence, penalty/interest relief (including RC4288), or a formal objection/appeal needs determining.
+- Original CPP/EI/QPP deduction calculations, self-employed CPP, or a large or multi-year shortfall needs resolving.
+
+This Guide does not file a reply, amend a slip or make a payment.
 
 ## Sources
 
-| Source | URL | Read for; read on |
+| Official source | Read scope | Date read |
 |---|---|---|
-| CRA, Pensionable and insurable earnings review (PIER) (page dated 2025-09-09) | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/earnings-review.html | What a PIER is, contents, 30-day reply, day 45 and day 65, response channels, payment, amended T4s, multiple accounts; read 2026-11-21 in a browser (the site refuses scripted downloads) |
-| CRA, Make corrections before filing | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-corrections.html | Under-deducted CPP and EI: both shares, recovery conditions, 12 months; read 2026-11-21 in a browser |
-| CRA, RC4120 Employers' Guide, Filing the T4 Slip and Summary, Rev. 25 (2025 slips; 2026 edition not yet published) | https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4120/employers-guide-filing-t4-slip-summary.html | PIER section, CPP and EI underdeductions, do not amend for PIER; read 2026-11-21 in a browser |
-| Canada Pension Plan, ss. 9(1), 15(1.1), 21, 21.1, 22(1), 23(1), 23(3) (current to 2026-10-29) | https://laws-lois.justice.gc.ca/eng/acts/C-8/FullText.html | Liability, recovery, interest, penalties, assessment, directors, employee record; read 2026-11-21 |
-| Employment Insurance Act, ss. 68, 82, 84, 85(1) (current to 2026-10-29) | https://laws-lois.justice.gc.ca/eng/acts/E-5.6/FullText.html | Employer premium, liability, recovery, interest, penalties, assessment; read 2026-11-21 |
-| Act respecting the Quebec Pension Plan (R-9), ss. 34, 52, 57, 59, 60, 63, 73 (updated to 15 October 2026) | https://www.legisquebec.gouv.qc.ca/en/document/cs/R-9 | Employer duty and liability for QPP; Title III is a fiscal law; read 2026-11-21 |
-| Tax Administration Act (A-6.002), ss. 28, 59.2, 61 | https://www.legisquebec.gouv.qc.ca/en/document/cs/A-6.002 | Interest, 15% failure-to-deduct penalty, offence; read 2026-11-21 |
+| [CPP, s. 21](https://laws-lois.justice.gc.ca/eng/acts/C-8/section-21.html) | Read for subsections (2), (4), (6): liability, later-pay recovery and interest; other liability exceptions are referred | 2026-11-26 |
+| [EI Act, s. 82](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-82.html) | Read for subsections (4), (6), (8): liability, later-pay recovery and interest | 2026-11-26 |
+| [EI Act, s. 84](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-84.html) | Read for employer premium not recoverable | 2026-11-26 |
+| [CRA, Respond to notices](https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/respond-notices.html) | Read for CPP matching and ordinary EI multiplier with reduced-rate exception | 2026-11-26 |
+| [CRA, Make corrections before filing](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-corrections.html) | Read for both shares; employee recovery conditions; prior-year recoveries | 2026-11-26 |
+| [CRA, PIER](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/earnings-review.html) | Read for comparison, package, response, timetable, amendments and multiple accounts | 2026-11-26 |
+| [Revenu Québec, Total QPP contributions paid in the year](https://www.revenuquebec.ca/fr/entreprises/retenues-a-la-source-et-cotisations-de-lemployeur/calcul-des-retenues-et-des-cotisations/cotisations-au-rrq/total-des-cotisations-au-regime-de-rentes-du-quebec-payees-dans-lannee/) | Read for French text, “Cotisations insuffisantes”: liability, recovery and RL-1 reporting | 2026-11-26 |
+| [Revenu Québec, RLZ-1.S.G (2026-10)](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/rlz-1-s-g/guide-du-sommaire-1-sommaire-des-retenues-et-des-cotisations-de-lemployeur/) | Read for 2026 guide, introduction and §§3.1–3.2: guide identity and summary review | 2026-11-26 |
+| [CRA, province of employment](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/set-up-new-employee/determine-province-employment.html) | Read for reporting and establishment facts; prior completed read reused from the Quebec employer-contribution proof | 2026-11-23; applicability checked 2026-11-26 |
 
-Not yet confirmed: Revenu Quebec's employer guide TP-1015.G-V and any form TP-1015.G could not be read (revenuquebec.ca returned a bot-protection page and the archive copy was refused on 2026-11-21), so this skill does not say what TP-1015.G is, whether Revenu Quebec lets an employer recover unwithheld QPP from later pay, how a QPP shortfall is corrected on the RL-1 and RLZ-1.S, or whether Revenu Quebec runs a QPP review like the PIER. TAA s. 59.2 reaches unwithheld QPP by statute (QPP Act s. 73); how Revenu Quebec applies it in practice was not confirmed from a Revenu Quebec publication. Which penalty, if any, the CRA assesses on a PIER deficiency (beyond "applicable penalties or interest") was not found in a CRA publication, and whether CPP s. 21(7) and EI Act s. 82(9) reach an amount that was never deducted was not confirmed; the CRA page on payroll penalties returned no readable text (rechecked 2026-11-21).
+Not yet confirmed: no operative rule is supplied here for the specialist matters listed under “When to refuse or refer”. Check this point with one of our partner accountants.
