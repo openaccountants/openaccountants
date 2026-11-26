@@ -15,14 +15,14 @@ type: filing-howto
 tax_year: 2026
 tax_year_notes: "2026-27"
 tier: 2
-last_updated: 2026-11-11
-version: 0.1
+last_updated: 2026-11-26
+version: 0.2
 license: FSL-1.1-ALv2
 depends_on:
   - workflow-base
 ---
 
-# Australian Private Ruling Applications v0.1
+# Australian Private Ruling Applications v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -40,11 +40,11 @@ This guide prepares a draft private ruling application for a registered agent to
 - The substantive tax answer to each question: the topic guide (for example `au-capital-gains`, `au-div7a` or `au-trust-distributions`).
 - Public rulings, oral rulings, and GST, other indirect tax and excise rulings, which have their own rules (refusals below).
 
-**Period coverage.** Law as at 2 November 2026: TAA compilation 227 (in force from 1 October 2026). The Federal Register lists later TAA compilations from 1 July 2027 that were not yet published when read; recheck before relying on this guide after that date.
+**Period coverage.** Law as at 2 November 2026: TAA compilation 227 (in force from 1 October 2026). The Federal Register lists a future amendment commencing on 1 July 2027. It sunsets a historical PAYG instalment rule in Schedule 1 section 45-405. Check the current compilation before applying this guide to later facts. [Federal Register versions and future amendments](https://www.legislation.gov.au/C1953A00001/latest/versions)
 
 ## Ask the client first
 
-1. The arrangement, step by step, with each date, amount and party, and whether it has begun. A signed contract means the scheme has begun (s 357-80).
+1. The arrangement, step by step, with each date, amount and party, and whether it has begun. A scheme is taken to have begun once a contract requiring that scheme has been entered into (s 357-80).
 2. The documents that evidence it: contracts, deeds, loan agreements, valuations, minutes and financial statements.
 3. Every related entity, its relationship to the applicant and its role, and which of them the ruling should cover.
 4. The income years or other periods to be covered, and whether an assessment already exists for any of them.
@@ -60,8 +60,8 @@ Every figure below was read on 2 November 2026 in TAA Schedule 1, compilation 22
 
 | Item | Value | Source |
 | --- | --- | --- |
-| Delay notice | The applicant may give written notice requiring the ruling if, at the end of 60 days after the application was made, the Commissioner has neither made the ruling nor declined to make it | s 359-50(1) ([TAA 1953, compilation 227, Sch 1 Divs 357 and 359](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
-| Extensions of the 60 days | Extended by the days from a request for further information to its receipt, from notice of proposed assumptions to the applicant's response, from notice of third-party information to the applicant's response, and from notice of a valuation referral to notice that the valuer has finished, where the request or notice is given during the 60 day period; overlapping periods count once | s 359-50(2) ([TAA 1953, compilation 227, Sch 1 Divs 357 and 359](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
+| Delay notice | The applicant may give written notice requiring the ruling if, at the end of 60 days after the application was made, the Commissioner has neither made the ruling nor told the applicant that the Commissioner has declined to make it | s 359-50(1) ([TAA 1953, compilation 227, Sch 1 Divs 357 and 359](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
+| Extensions of the 60 days | An extension applies if the Commissioner requests further information, tells the applicant about proposed assumptions or third-party information, or refers a valuation to a valuer during the 60-day period. Count the days from the request to receipt, from each assumptions or third-party notice to receipt of the response, or from notice of the valuation referral to notice that the valuer has finished. Include both endpoints and count overlapping days once | s 359-50(2) ([TAA 1953, compilation 227, Sch 1 Divs 357 and 359](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)); [Acts Interpretation Act 1901 s 36(1), items 2 and 4](https://www.legislation.gov.au/C1901A00002/2026-03-28/2026-03-28/text/original/epub/OEBPS/document_1/document_1.html) |
 | Objection for delay | If the ruling is not made within 30 days of the notice and has not been declined, the applicant may object under Part IVC, lodging a draft private ruling with the objection | s 359-50(3)-(4) ([TAA 1953, compilation 227, Sch 1 Divs 357 and 359](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
 | Default period of a ruling | No start time: applies from when made. No end time (other than an indirect tax or excise ruling): ceases at the end of the income year or other accounting period in which it started to apply | s 359-25(3)-(4) ([TAA 1953, compilation 227, Sch 1 Divs 357 and 359](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
 | Objection against a ruling | Available if dissatisfied, but not once there is an assessment for the income year or other period the ruling relates to, not once withholding tax or mining withholding tax the ruling relates to has become due and payable, and not for an excise ruling once the Commissioner has made a reviewable decision about the duty on those goods | s 359-60(1), (3) ([TAA 1953, compilation 227, Sch 1 Divs 357 and 359](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
@@ -73,7 +73,7 @@ Every figure below was read on 2 November 2026 in TAA Schedule 1, compilation 22
 2. The scheme must be real. If it is a proposal, its facts must still be reasonably certain; the ATO does not rule on hypothetical situations (ATO, Applying for a private ruling).
 3. Record any ground on which the Commissioner may decline: prejudice to or undue restriction of the administration of a taxation law; a matter already being, or already, considered for the applicant (for example in an audit); certain Pillar Two (Australian IIR/UTPR or DMT tax) questions; how a power would be exercised where the Commissioner has decided or decides whether to exercise it (s 359-35(2)-(3)); further information not given within a reasonable time (s 357-105(2)); and a ruling whose correctness would depend on assumptions about a future event or other matter (s 357-110(1)).
 4. If an assessment already exists for a period, the applicant cannot later object against a ruling for that period (s 359-60(3)(a)). The same bar applies once withholding tax or mining withholding tax the ruling relates to has become due and payable (s 359-60(3)(b)), and to an excise ruling once the Commissioner has made a reviewable decision about the duty on those goods (s 359-60(3)(c)). Consider an amendment or objection instead and route it.
-5. Disclose every earlier ruling on the matter. If a later private ruling is inconsistent with an earlier private ruling, the earlier one is taken not to have been made only if the Commissioner was told about it when the later ruling was applied for; otherwise the later one is taken not to have been made (s 357-75(1) item 2).
+5. Disclose every earlier ruling on the matter. Where both private rulings apply to the applicant, to the extent of any inconsistency the earlier one is taken not to have been made if the applicant disclosed it when applying for the later ruling. Otherwise the later ruling is taken not to have been made to that extent (s 357-75(1) item 2).
 
 ### Step 2: Describe the scheme from the documents
 
@@ -107,13 +107,13 @@ For each question give the proposed answer, a short statement of the decision an
 
 ### Step 8: After lodgment (information for the reviewer)
 
-The applicant may withdraw the application at any time before the ruling is made (s 359-10(3)). The Commissioner must request any further information needed (s 357-105(1)), must tell the applicant about proposed assumptions and third-party information and give a reasonable opportunity to respond (ss 357-110(2), 357-120), and must give written reasons for declining (s 359-35(4)). Track the 60-day period and its extensions (Cases 1 and 2). On an objection against a ruling, the Commissioner may consider new information; if it shows a materially different scheme, the applicant is asked to apply again and the objection is taken not to have been made (s 359-65). An objection against a ruling also limits later objection grounds against an assessment on the same matter to grounds that neither were nor could have been raised against the ruling (TAA s 14ZVA). Route the objection itself to `au-objections`.
+The applicant may withdraw the application at any time before the ruling is made (s 359-10(3)). The Commissioner must request any further information needed (s 357-105(1)) and give written reasons for declining (s 359-35(4)). Before ruling on proposed assumptions or relying on third-party information, the Commissioner must tell the applicant and give a reasonable opportunity to respond (ss 357-110(2), 357-120). Track the 60-day period and its extensions (Cases 1 and 2). On an objection against a ruling, the Commissioner may consider new information; if it shows a materially different scheme, the applicant is asked to apply again and the objection is taken not to have been made (s 359-65). An objection against a ruling also limits later objection grounds against an assessment on the same matter to grounds that neither were nor could have been raised against the ruling (TAA s 14ZVA). Route the objection itself to `au-objections`.
 
 ### Permitted factual defaults
 
 | Missing fact | Default | Disclose |
 | --- | --- | --- |
-| How to count the days in an extension period | Count both the first and last days, which gives the later notice date | A notice given on the earlier count could be premature |
+| Missing receipt or notification date for an extension | Obtain evidence of the date before calculating | Both statutory endpoints count under s 359-50(2) and Acts Interpretation Act 1901 s 36(1) |
 | A document fact whose relevance is unclear | Include it in the scheme description | Omitting a material fact can stop the ruling applying |
 
 No default is permitted for the scheme's facts, the periods, the existence of an assessment or an earlier ruling. Return Needs Input for each.
@@ -152,7 +152,7 @@ expected:
   earliest_objection_day: 122
 ```
 
-On the guide's conservative count, the 60 days end on day 90 (30 May 2027), so a s 359-50(1) notice given on 31 May 2027 (day 91) or later is safe. If the notice is given on day 91 and no ruling is made or declined within the following 30 days (to day 121), the applicant may object from 1 July 2027 (day 122), lodging a draft ruling with the objection (s 359-50(3)-(4)). The reviewer confirms the day count before any notice is given.
+The statutory extension includes both endpoints. The extended period ends on day 90 (30 May 2027). If the Commissioner has neither ruled nor told the applicant that the ruling was declined, the applicant can give a notice from 31 May 2027 (day 91). If the notice is given on day 91 and no ruling is made or declined by the end of the following 30 days (30 June 2027, day 121), the applicant may object from 1 July 2027 (day 122) and must lodge a draft ruling with the objection (s 359-50(3)-(4)). The reviewer confirms the date the notice was given.
 
 ### Case 2: Overlapping extensions count once
 
@@ -233,7 +233,7 @@ Stop the affected work where a fact, condition or source in this guide is unreso
 - [ ] The 60-day timeline uses the s 359-50(2) extensions with overlaps counted once.
 - [ ] Objection questions were routed to `au-objections`.
 
-Change log: v0.1 (2 November 2026), first draft from Divisions 357 and 359 of TAA Schedule 1 and TAA s 14ZVA, compilation 227.
+Change log: v0.2 (26 November 2026) corrects the delay notice, valuation extension and contract triggers. v0.1 (2 November 2026) was the first draft.
 
 ## Sources
 
@@ -246,7 +246,7 @@ All read on 2 November 2026; figures and dates rechecked against the same source
 | ATO, Applying for a private ruling (last updated 8 October 2026): form or letter, all relevant information, no hypothetical rulings, substantial difference, online channels, lodge separately, returns still due | https://www.ato.gov.au/about-ato/ato-advice-and-guidance/ato-advice-products-rulings/early-engagement-for-advice/applying-for-a-private-ruling | 2026-11-02 |
 | ATO, How to complete the private ruling application form (QC100187, last updated 1 August 2025): Sections A to F, yes-or-no questions, facts, assumptions, reasoning, declaration | https://www.ato.gov.au/about-ato/ato-advice-and-guidance/ato-advice-products-rulings/early-engagement-for-advice/applying-for-a-private-ruling/reference-guide-for-private-rulings/how-to-complete-the-private-ruling-application-form | 2026-11-02 |
 
-Not yet confirmed: PS LA 2008/3 and the ATO's service standards for private rulings were not read for this draft; the objection lodgment period for a private ruling is left to `au-objections`. No accountant has reviewed this draft.
+The [ATO service commitment](https://www.ato.gov.au/about-ato/commitments-and-reporting/service-commitments/commitments-to-service/current-year-performance) measures finalisation within 28 calendar days of receiving all necessary information. The statutory delay and objection rules above apply separately. Route the objection lodgment period to `au-objections`.
 
 Method adapted by its author from the `au-private-ruling-application` skill in ryanduguid/australian-accounting-skills (commit 3e110da). This guide is licensed under FSL-1.1-ALv2, not the OA Guide License; see LICENSING.md.
 
