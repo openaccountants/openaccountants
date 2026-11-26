@@ -34,15 +34,15 @@ All figures in this table are for 2026 and the scope above. Apply the fixed stat
 
 | Item | Rate or amount | Official source |
 |---|---|---|
-| Box 1 income tax | 8.10% to EUR 38,883; above EUR 38,883 to EUR 78,426: EUR 3,149 + 37.56% of the excess above EUR 38,883; above EUR 78,426: EUR 18,001 + 49.50% of the excess above EUR 78,426 | Wet IB art. 2.10(1), https://wetten.overheid.nl/BWBR0011353/2026-02-21 |
+| Box 1 income tax | 8.10% to EUR 38,883; above EUR 38,883 to EUR 78,426: EUR 3,149 + 37.56% of the excess above EUR 38,883; above EUR 78,426: EUR 18,001 + 49.50% of the excess above EUR 78,426 | Wet IB art. 2.10(1), https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml |
 | National insurance, separate from income tax | AOW 17.90%, Anw 0.10%, Wlz 9.65%: total 27.65% of premium income, capped at EUR 38,883. Maximum EUR 10,751.15 before credits, computed. First-band headline total 35.75% = 8.10% + 27.65% | Wfsv arts. 8, 10-12, https://wetten.overheid.nl/BWBR0017745/2026-01-01 ; https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen |
-| General credit, before the overall levy cap | EUR 3,115 less 6.398% of verzamelinkomen above EUR 29,736, floored at nil | Wet IB art. 8.10, https://wetten.overheid.nl/BWBR0011353/2026-02-21 |
-| Labour credit, before the overall levy cap | Use the statutory cumulative formula below; maximum EUR 5,685, then a 6.51% reduction above EUR 45,592 | Wet IB art. 8.11, https://wetten.overheid.nl/BWBR0011353/2026-02-21 |
-| Box 2 income tax | 24.5% to EUR 68,843; above it EUR 16,866 + 31% of the excess above EUR 68,843 | Wet IB art. 2.12, https://wetten.overheid.nl/BWBR0011353/2026-02-21 |
-| Box 3 income tax | 36% of taxable box 3 income | Wet IB art. 2.13, https://wetten.overheid.nl/BWBR0011353/2026-02-21 |
-| Box 3 deemed return percentages | Bank 1.28% and debts 2.70% are provisional for the 2026 voorlopige aanslag; other assets 6.00% is fixed. Recompute with final bank/debt rates when set after year-end | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 ; Wet IB art. 10.6ter, https://wetten.overheid.nl/BWBR0011353/2026-02-21 |
-| Box 3 allowance | EUR 59,357 per person; EUR 118,714 for whole-year fiscal partners | Wet IB arts. 5.5, 5.2(5), https://wetten.overheid.nl/BWBR0011353/2026-02-21 ; https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 |
-| Box 3 debt threshold | EUR 3,800 per person; EUR 7,600 for whole-year fiscal partners | Wet IB art. 5.3(3)(f), https://wetten.overheid.nl/BWBR0011353/2026-02-21 |
+| General credit, before the overall levy cap | EUR 3,115 less 6.398% of verzamelinkomen above EUR 29,736, floored at nil | Wet IB art. 8.10, https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml |
+| Labour credit, before the overall levy cap | Use the statutory cumulative formula below; maximum EUR 5,685, then a 6.51% reduction above EUR 45,592 | Wet IB art. 8.11, https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml |
+| Box 2 income tax | 24.5% to EUR 68,843; above it EUR 16,866 + 31% of the excess above EUR 68,843 | Wet IB art. 2.12, https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml |
+| Box 3 income tax | 36% of taxable box 3 income | Wet IB art. 2.13, https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml |
+| Box 3 deemed return percentages | Bank 1.28% and debts 2.70% are provisional for the 2026 voorlopige aanslag; other assets 6.00% is fixed. Recompute with final bank/debt rates when set after year-end | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 ; Wet IB art. 10.6ter, https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml |
+| Box 3 allowance | EUR 59,357 per person; EUR 118,714 for whole-year fiscal partners | Wet IB arts. 5.5, 5.2(5), https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml ; https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 |
+| Box 3 debt threshold | EUR 3,800 per person; EUR 7,600 for whole-year fiscal partners | Wet IB art. 5.3(3)(f), https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml |
 
 ## The taxable base
 
@@ -87,7 +87,7 @@ Combined credits reduce the combined income tax and national insurance, not inco
 | Belastingrente percentage | 5% annually from 1 January 2026. This is an interest-period rate, not a guarantee of the rate accruing in 2027 on a 2026 return | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente |
 | Late filing | For a living taxpayer: after the reminder and formal aanmaning, missing the demand's deadline can give a EUR 469 default penalty; repeated failures can reach EUR 6,709. No penalty where there is no fault whatsoever | https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/wat-gebeurt-er-als-ik-geen-aangifte-doe-of-te-laat-of-onvolledig ; https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete |
 | Under-declaration standards | Ordinary tax: 25% for gross negligence, 50% for intent. The corresponding box 3 standards are 75% and 150%. Circumstances may increase or decrease them; the statutory maxima are 100% of the ordinary statutory penalty base and 300% for the box 3 portion. Intentional failure or an incorrect/incomplete return falls under art. 67d; intent or gross negligence causing underassessment falls under art. 67e. The statutory penalty base can disregard losses and carried personal deductions | AWR arts. 67d-67e, https://wetten.overheid.nl/BWBR0002320/ ; https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete |
-| Assessment-payment default: statutory power | Invorderingswet 1990 art. 63b(1) permits a penalty up to EUR 6,709 where an assessment is unpaid, partly paid or paid outside the term(s) on the assessment. It is incorrect to say that there is no statutory power | https://wetten.overheid.nl/BWBR0004770/2026-10-01 |
+| Assessment-payment default: statutory power | Invorderingswet 1990 art. 63b(1) permits a penalty up to EUR 6,709 where an assessment is unpaid, partly paid or paid outside the term(s) on the assessment. It is incorrect to say that there is no statutory power | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0004770/2026-10-01_0/xml/BWBR0004770_2026-10-01_0.xml |
 
 For an actual interest calculation, distinguish provisional, final and additional assessments, conformity to the return/request, interest caps, refunds and conserving assessments. Check this point with one of our partner accountants.
 
@@ -162,10 +162,10 @@ Sources support the retained rules for the stated year and eligibility. Speciali
 
 | Source | URL | Read on |
 |---|---|---|
-| Wet inkomstenbelasting 2001, applicable 2026 edition; arts. 2.3, 2.10, 2.12-2.13, 2.17-2.18, 3.76, 3.79a, 5.2-5.5, 5.25, 6.2, 8.1, 8.8, 8.10-8.11, 9.2, 10.6ter | https://wetten.overheid.nl/BWBR0011353/2026-02-21 | 2026-11-22; additional passages 2026-11-26 |
+| Wet inkomstenbelasting 2001, applicable 2026 edition; arts. 2.3, 2.10, 2.12-2.13, 2.17-2.18, 3.76, 3.79a, 5.2-5.5, 5.25, 6.2, 8.1, 8.8, 8.10-8.11, 9.2, 10.6ter | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0011353/2026-02-21_0/xml/BWBR0011353_2026-02-21_0.xml | 2026-11-22; additional passages and matching official XML 2026-11-26 |
 | Wet financiering sociale verzekeringen, arts. 8, 10-12 | https://wetten.overheid.nl/BWBR0017745/2026-01-01 | 2026-11-22 |
 | Algemene wet inzake rijksbelastingen, arts. 4, 9, 13, 15, 67d-67e | https://wetten.overheid.nl/BWBR0002320/ | 2026-11-22 |
-| Invorderingswet 1990, art. 63b | https://wetten.overheid.nl/BWBR0004770/2026-10-01 | 2026-11-22 |
+| Invorderingswet 1990, art. 63b | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0004770/2026-10-01_0/xml/BWBR0004770_2026-10-01_0.xml | 2026-11-22; matching official XML 2026-11-26 |
 | Fiscale informatie 2026, ch. 21: credit and contribution components; labour-income definition | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen | 2026-11-22 |
 | Box 3 preliminary calculation 2026 | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 | 2026-11-26 |
 | Provisional assessments | https://www.belastingdienst.nl/wps/wcm/connect/nl/voorlopige-aanslag/content/hoge-belastingaanslag-voorlopige-aanslag | 2026-11-22 |
