@@ -20,6 +20,10 @@ type: filing-howto
 
 Use this ordinary-return method only after standard taxation and the actual transaction facts are established. It is not a filing method for every business. Keep the original transaction period: the worked cases below remain in 2026 and use the stated 2025 comparatives.
 
+## Ask the client first
+
+Before handoff, record standard versus § 19 status, 2025/current-2026 turnover, activity/legal form/establishments, staff, exempt supplies, Soll/Ist status, periodicity/extension/prepayment, foreign suppliers' billing entities, customers' business/VAT-ID evidence, restaurant package splits, solar facts and goods proof. Ask only for facts absent from the records. For bank-only inputs, missing invoices or material inconsistencies, keep the affected return on hold.
+
 ## The method, step by step
 
 1. Read the business records first: actual filing period, prior returns, standard/small-business status, activity, establishments, invoices and extension/prepayment evidence. Obtain the full-period bank statement, sales and purchase registers, prior UStVA and BWA/EÜR where available. Reconcile gaps before asking for missing facts.
@@ -223,10 +227,6 @@ The following topics remain in scope as handoffs. No tax outcome is supplied for
 ## Bank review and companion guides
 
 Use names and descriptions only to find documents: banks/payment processors and interest/loan/insurance charges; tax office/customs/IHK/HWK/broadcasting; utilities/telecoms; transport; food/supermarkets; rent; EU/non-EU software/advertising; professional services; payroll/social security; own-account movements, capital, loans and cash withdrawals. For mixed billing brands, Amazon purchases, restaurant payments, cars/home office or round-number transfers, obtain the invoice, purpose and actual parties. Keep signed amounts and reconcile both sides of internal transfers. No merchant dictionary or default replaces that evidence.
-
-## Ask the client first
-
-Before handoff, record standard versus § 19 status, 2025/current-2026 turnover, activity/legal form/establishments, staff, exempt supplies, Soll/Ist status, periodicity/extension/prepayment, foreign suppliers' billing entities, customers' business/VAT-ID evidence, restaurant package splits, solar facts and goods proof. Ask only for facts absent from the records. For bank-only inputs, missing invoices or material inconsistencies, keep the affected return on hold.
 
 Companions: [annual return and special schemes](de-vat-annual-and-special-schemes.md), [e-invoicing](germany-einvoice.md), [income tax](germany-income-tax.md), [freelancer income tax](de-einkommensteuer-freelancer.md); `vat-workflow-base` for the working-paper workflow and `eu-vat-directive` for EU context. These links do not establish eligibility or current legal proof by themselves.
 
