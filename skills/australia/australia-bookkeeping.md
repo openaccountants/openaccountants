@@ -4,6 +4,7 @@ description: Use this skill whenever asked about Australian bookkeeping for sole
 version: 1.6
 jurisdiction: AU
 tax_year: 2025
+tax_year_notes: "Figures are for 2025-26; use 2026-27 values only where expressly labelled and relevant to the requested year."
 last_updated: 2026-11-26
 depends_on:
   - bookkeeping-workflow-base
@@ -24,7 +25,7 @@ domain: bookkeeping
 | Field | Value |
 | --- | --- |
 | Country | Australia (Commonwealth of Australia) |
-| Currency | Examples use AUD. Apply the functional and presentation currency rules separately. |
+| Currency | Examples use AUD. Apply the functional and presentation currency rules separately. [ITAA 1997, s 960-50 and Subdivision 960-D](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/960-50) |
 | Financial year | 1 July – 30 June (standard); substituted accounting period available for companies |
 | Accounting standards | AASB (full IFRS-based); AASB 1060 Simplified Disclosures (Tier 2); Special Purpose for non-reporting entities |
 | Governing body | Australian Accounting Standards Board (AASB) |
