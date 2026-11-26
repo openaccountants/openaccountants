@@ -173,3 +173,5 @@ expected:
 | IRAS CRS self-certification | https://www.iras.gov.sg/taxes/international-tax/common-reporting-standard-%28crs%29/basic-information-for-account-holders-of-financial-institutions | 2026-11-27 |
 | IRAS CRS list of reportable jurisdictions | https://www.iras.gov.sg/docs/default-source/uploadedfiles/pdf/list-of-reportable-jurisidictions.pdf | 2026-11-27 |
 | MAS family-office fund tax incentives | https://www.mas.gov.sg/schemes-and-initiatives/fund-tax-incentive-scheme-for-family-offices | 2026-11-27 |
+
+Not yet confirmed: whether a formal exit tax clearance certificate is issued and when hukou must be cancelled (the IIT Law requires clearance before departure but does not settle every documentation route); any dated official STA assessment campaign based on CRS data; a complete statement of Singapore wealth taxes beyond the estate duty repeal, property tax and stamp duty; and any tightening of the 13O and 13U family-office conditions against a dated baseline.
