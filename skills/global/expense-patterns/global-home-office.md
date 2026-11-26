@@ -1,217 +1,156 @@
 ---
 name: global-home-office
-description: Home office expense patterns and deduction rules across the top 10 jurisdictions for freelancers and self-employed individuals. Covers simplified and actual methods, rates, requirements, ceilings, and common mistakes.
-version: 1.0
+description: Home office methods for US sole proprietors, UK sole traders and Canadian employees and self-employed people, with country routing for other jurisdictions.
+version: 1.2
 jurisdiction: GLOBAL
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 category: bookkeeping
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax
 type: cross-country-method
-checked_on: 2026-11-14
+checked_on: 2026-11-26
 ---
 
-# Home office and working from home deductions v1.0
+# Home office and working from home deductions v1.2
 
-This skill gives a shared method for claiming home office costs and works it through for the United States, the United Kingdom and Canada. Rules are checked on 2026-11-14 for 2026. The latest IRS Publication 587 edition is the 2025 publication, with its edition-specific forms and figures identified below. For any other country, it routes to that country's own Guide and does not state that country's rates. Written by the OpenAccountants team. Use the supplied facts and source-linked rules below; hold any missing eligibility evidence before computing.
-
-## What this skill covers
-
-- Who can claim: the employee versus the self-employed person, which is the first fork in all three worked countries.
-- The use tests: exclusive use, regular use, principal place of business, and the meeting-clients alternative.
-- The two kinds of method: a simplified or flat-rate amount, and an actual-cost method that apportions real household costs.
-- Apportionment: by floor area, by rooms, and by hours where a space is shared.
-- What never counts, and the income limits that stop a home office claim creating a loss.
-
-It does not cover capital gains on the sale of a home with a business part, renting your home to your own company, or vehicle costs. For renting your home to your own US business for up to 14 days, see `us-augusta-rule-home-rental-to-your-business`.
+Written by the OpenAccountants team. This Guide compares home-office methods for the United States, United Kingdom and Canada for 2026, including the UK tax year 2026–27. Other countries are navigation only. Eligibility must be established before calculating a deduction. The US structural rules use Publication 587 (2025); final 2026 forms and line numbers are on hold below.
 
 ## The method, step by step
 
-1. **Decide employee or self-employed.** In all three worked countries the employee rules are narrower than the self-employed rules, and in the US an employee has no federal deduction at all (see the US section, [Public Law 119-21 section 70110](https://www.govinfo.gov/content/pkg/PLAW-119publ21/pdf/PLAW-119publ21.pdf)).
-2. **Test the space.** Ask whether a specific area is used only for the work (exclusive use), whether it is used on a regular basis, and whether it is the principal place of business or a place where clients are met. The US tests are in [IRS Publication 587](https://www.irs.gov/publications/p587). Canada's self-employed tests are on the [CRA business-use-of-home page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/business-use-home-expenses.html). The UK self-employed rules ask for a reasonable split rather than an exclusive-use test ([GOV.UK, expenses if you're self-employed](https://www.gov.uk/expenses-if-youre-self-employed)).
-3. **List the method options for that country and that taxpayer.** A simplified amount (US per square foot, UK per month by hours) or actual costs apportioned. Canada has no flat-rate option for 2023 and later years ([CRA, what the changes are](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/what-changes.html)).
-4. **Apportion actual costs.** Workspace area divided by total home area, or business rooms divided by total rooms. Where the space is shared with private life, also apply the share of time it is used for work (Canada prints this hours step on its [employee work space page](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/work-space-use.html) and its [self-employed page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/business-use-home-expenses.html)).
-5. **Apply the income limit.** In Canada, business-use-of-home costs cannot create/increase a business loss. In the US, the limitation applies to otherwise nondeductible home expenses after the specified deductions; independently deductible mortgage interest/taxes have their own rules, so do not cap every cost indiscriminately; the otherwise nondeductible home-cost excess carries forward under the actual-cost method, subject to its ordering and future-year limits ([IRS Publication 587](https://www.irs.gov/publications/p587); [CRA business-use-of-home page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/business-use-home-expenses.html)).
-6. **Strip out what never counts.** Private use, amounts the employer reimburses, mortgage capital, and anything already claimed elsewhere on the return.
-7. **Report on the right form.** US: Form 8829 or the Simplified Method Worksheet with Schedule C ([IRS Publication 587](https://www.irs.gov/publications/p587)). UK: the self-employment pages of the Self Assessment return. Canada: Form T2125 Part 7 for the self-employed ([CRA business-use-of-home page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/business-use-home-expenses.html)), Form T777 with a signed Form T2200 for employees ([CRA detailed method eligibility](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/who-claim/detailed-method.html)).
-8. **Keep the evidence.** A floor plan with areas, the bills, an hours log where a method depends on hours, and any employer form.
+1. Identify the country, tax period and whether the income is employment or self-employment. Apply only the matching section below.
+2. Establish qualifying use, dates, area and hours. Record missing facts explicitly; an example's assumptions do not establish a real person's eligibility.
+3. Compare the available methods using documented costs. Apply only the allocation the chosen method requires: the UK household flat rate uses hours, without a room or area allocation.
+4. Apply that country's cost exclusions and income limit. Keep the same cost out of duplicate claims.
+5. Deliver the eligibility decision, bills, allocation, method comparison and proposed form amounts for review. Keep a floor plan, hours records and employer evidence where relevant. For read-only books, supply proposed postings or an import for human approval; do not submit a return from this workpaper.
 
 ## United States
 
-### Who can claim
+### Common sole-proprietor case
 
-Employees cannot deduct a home office on their federal return. The IRS page states that "taxpayers can no longer claim a deduction for use of a home office as an employee, as miscellaneous itemized deductions for employee business expenses were eliminated for tax years beginning after 2017, even if the simplified method is used" ([IRS simplified option page](https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction)). The old suspension ran for 2018 through 2025. Public Law 119-21 of 4 July 2025 substituted "beginning after 2017" for "2018 through 2025" in the heading of § 67(h) and struck out ", and before January 1, 2026" from its text, for taxable years beginning after 31 December 2025, so it now reads: "no miscellaneous itemized deduction shall be allowed for any taxable year beginning after December 31, 2017" ([Public Law 119-21 section 70110](https://www.govinfo.gov/content/pkg/PLAW-119publ21/pdf/PLAW-119publ21.pdf)). The suspension therefore continues for 2026 with no end date. This skill does not cover state returns, some of which may differ.
+An ordinary employee cannot claim home-office expenses as miscellaneous itemized deductions on the federal return in 2026: [26 USC 67(h)](https://uscode.house.gov/us/usc/t26/s67/) bars these deductions for years beginning after 2017. Statutory employees and other special employee classifications are referred below; this is not a statement that every W-2 recipient has the same treatment.
 
-The deduction is open to a self-employed person (Schedule C) whose space meets one of the use tests. Per [IRS Publication 587](https://www.irs.gov/publications/p587), you must use part of your home:
-- exclusively and regularly as your principal place of business, including qualifying administration/management where no other fixed location hosts substantial such activity; or
-- exclusively and regularly as a place where you meet or deal with patients, clients or customers in the normal course of business; or
-- for a separate structure not attached to the home, in connection with the business; or
-- on a regular basis for certain storage of inventory or product samples; or
-- for rental use; or
-- as a daycare facility.
-
-Exclusive use means "a specific area of your home only for your trade or business". The only exceptions to exclusive use are qualifying storage of inventory/product samples (wholesale/retail business, the home is the only fixed business location, regular use and separately identifiable suitable storage) and qualifying daycare (including the relevant licensing/approval or application/exemption conditions) ([IRS Publication 587](https://www.irs.gov/publications/p587)). A dining table also used for meals fails the test.
+For the principal-place-of-business route, a sole proprietor must use a specific area **exclusively and regularly** for the trade or business. A dining table also used for meals fails this route. Principal-place status considers the importance of activities and time spent at each location; it includes an office used exclusively and regularly for administration or management where there is no other fixed location at which the taxpayer conducts substantial such activities. Other qualifying-use routes are referred below. [Publication 587, Qualifying for a Deduction](https://www.irs.gov/publications/p587); [26 USC 280A(c)(1)](https://uscode.house.gov/us/usc/t26/s280A/).
 
 ### Simplified method
 
-| Item | Value | Condition and official source |
+| Item | Value | Conditions and official source |
 | --- | --- | --- |
-| Rate per square foot of home used for business | USD 5 | "Standard deduction of $5 per square foot of home used for business (maximum 300 square feet)"  https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction |
+| Standard rate and area cap | USD 5 per square foot; maximum 300 square feet | For qualifying business use. Full-year unchanged area: multiply the rate by qualifying area capped at 300, then apply the income limit. https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction |
 
-- The area cap is 300 square feet. The rate in the table above times the allowable area gives the deduction, before the income limit.
-- Under the simplified method there is "No home depreciation deduction or later recapture of depreciation for the years the simplified option is used", and eligible home-related itemized deductions (mortgage interest, real estate taxes) stay on Schedule A, subject to that schedule's own limits ([IRS simplified option page](https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction)).
-- The choice is made each tax year on a timely filed, original return, and "An election for a tax year, once made, is irrevocable". Switching between methods from one year to the next does not need the Commissioner's consent ([IRS Publication 587](https://www.irs.gov/publications/p587)).
-- A carryover of disallowed actual expenses from an earlier year cannot be deducted in a year the simplified method is used. It keeps carrying over to the next year that actual expenses are used ([IRS Publication 587](https://www.irs.gov/publications/p587)).
-- If the home was moved during the year, the simplified method can be used for only one home; any other home uses actual expenses ([IRS Publication 587](https://www.irs.gov/publications/p587)).
-- The simplified deduction is limited to the gross income from the qualified business use of the home, reduced by business deductions unrelated to the use of the home ([IRS Publication 587](https://www.irs.gov/publications/p587)). The IRS comparison table says the amount in excess of this limit may not be carried over under the simplified option ([IRS simplified option page](https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction)).
+For part-year use or changed area, use average monthly allowable square footage: add the allowable area for each month and divide by 12, cap each month at 300 square feet, and use zero for a month with fewer than 15 days of qualifying use. [Publication 587, Part-year use or area changes](https://www.irs.gov/publications/p587).
 
-### Regular (actual expense) method
+The deduction cannot exceed gross income from qualifying home use less business expenses unrelated to use of the home; if those unrelated deductions exhaust that income, the home-office deduction is zero. The simplified excess cannot carry forward. [Publication 587, Gross income limitation](https://www.irs.gov/publications/p587).
 
-- The business percentage of the home (usually area used for business over total area) is applied to actual costs: mortgage interest, real estate taxes, rent, utilities, insurance, repairs and depreciation ([IRS Publication 587](https://www.irs.gov/publications/p587)).
-- Schedule C filers "figure your deduction limit and carryover on Form 8829" ([IRS Publication 587](https://www.irs.gov/publications/p587)).
-- Deduction limit: if gross income from the business use of the home is less than total business expenses, the otherwise nondeductible expenses (insurance, utilities, depreciation of the home, with depreciation taken last) are limited. The excess carries over to the next year ([IRS Publication 587](https://www.irs.gov/publications/p587)).
-- Depreciation claimed on the business part of the home can be taxed when the home is sold. Refer that question to `us-capital-gains`.
-- Publication 587 (2025) is the latest edition the IRS prints. Publication 587 explains the section 280A business-use tests. The full current section 280A statute could not be reopened today, so no claim of a fresh direct statutory read is made.
+There is no home depreciation deduction or later recapture **for simplified-method years**; this does not erase depreciation from earlier actual-method years. Otherwise allowable home-related itemized deductions remain on Schedule A, subject to their own limits. [IRS comparison](https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction).
 
-For the full Schedule C computation, see `us-schedule-c-and-se-computation`.
+Choose the method each year on a timely filed original return; the election is irrevocable for that year. [Publication 587, Electing the Simplified Method](https://www.irs.gov/publications/p587).
+
+### Actual costs
+
+For a qualifying sole-proprietor office, distinguish direct business-only expenses, indirect whole-home expenses and unrelated private costs. Subject to the deduction limit, direct expenses such as a repair only to the office are deductible in full; indirect insurance, utilities and general repairs use the business percentage; unrelated private-area expenses are excluded. Use a reasonable area allocation; a room-count allocation requires rooms all about equal in size. Costs are restricted to the period of qualifying business use. [Publication 587, Actual Expenses and Business Percentage](https://www.irs.gov/publications/p587).
+
+Potential actual-method categories include rent, mortgage interest, real estate taxes, utilities, insurance, repairs and depreciation; their own deductibility and capital-versus-repair rules still apply. The limit for otherwise nondeductible costs is home-use gross income less (a) the business share of independently deductible expenses and (b) business deductions unrelated to home use; do not subtract the deduction for half of self-employment tax in (b). Home depreciation is taken last. Excess actual home expenses carry to the next actual-method year, subject to that year's limit. [Publication 587, Deduction Limit](https://www.irs.gov/publications/p587).
+
+Schedule C filers calculate the actual deduction, limit and carryover on Form 8829; the simplified route uses the Schedule C Simplified Method Worksheet. See `us-schedule-c-and-se-computation` for the wider return. These are form routes, not confirmation of final 2026 line numbers. [Publication 587, Where To Deduct](https://www.irs.gov/publications/p587).
 
 ## United Kingdom
 
-### Self-employed: simplified flat rate
+### Self-employed: simplified household running costs
 
-| Item | Value | Condition and official source |
+The option is for sole traders and partnerships comprising only individuals, not limited companies or partnerships with a company partner. Do not claim expenses as well as the trading allowance. [HMRC eligibility](https://www.gov.uk/simpler-income-tax-simplified-expenses/overview); [HMRC business expenses](https://www.gov.uk/expenses-if-youre-self-employed).
+
+| Monthly core-business hours at home | Flat rate | Conditions and official source |
 | --- | --- | --- |
-| 25 to 50 hours of business use in the month | GBP 10 | HMRC monthly band, 25-50 hours. https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home |
-| 51 to 100 hours in the month | GBP 18 | HMRC monthly band, 51-100 hours. https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home |
-| 101 hours or more in the month | GBP 26 | HMRC monthly band, at least 101 hours. https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home |
+| 25–50 | GBP 10 | Hours spent wholly and exclusively on core business activities. Exactly 25 qualifies under ITTOIA 2005 s94H(4). https://www.legislation.gov.uk/ukpga/2005/5/section/94H |
+| 51–100 | GBP 18 | Same qualifying-hours test. https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home |
+| 101 or more | GBP 26 | Same qualifying-hours test. https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home |
 
-- Select the monthly amount from that month's business-use hours. Fewer than 25 hours in a month do not qualify for the flat rate ([GOV.UK simplified expenses, working from home](https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home)).
-- Telephone and internet are outside the household flat rate. Work out and claim their actual business share separately (same page).
-- This flat-rate method does not require calculating a business/private room allocation (same page).
+Core activities include providing goods/services, keeping business records and marketing. Use the applicable band for each month; below 25 hours gives no flat-rate deduction. No private/business room or area allocation applies to this household flat rate. [HMRC BIM75010](https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim75010); [HMRC working from home](https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home). Multiple homes or partners sharing a home are referred below rather than calculated independently with duplicated hours.
+
+Telephone and internet are outside this flat rate: separately claim their evidenced actual business share. The household running-cost flat rate must not also be claimed as actual running costs. It does not prohibit a separate deduction for fixed costs such as Council Tax, insurance or mortgage interest where an identifiable business proportion can be attributed; claim no cost twice. [HMRC working from home](https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home); [BIM75010](https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim75010).
 
 ### Self-employed: actual costs
 
-For a self-employed person working at home, HMRC lists heating, electricity, Council Tax, mortgage interest or rent, internet and telephone as possible shared costs. Allocate reasonably using the business rooms, working time and actual circumstances ([GOV.UK, expenses if you're self-employed](https://www.gov.uk/expenses-if-youre-self-employed)). Mortgage principal is not interest. For household running costs, choose actual allocation or the flat rate without claiming both.
+Instead of the running-cost flat rate, use a reasonable business/private division of actual costs according to the circumstances, such as rooms and time. Potential categories are heating, electricity, Council Tax, mortgage interest or rent, internet and telephone. A mixed-use room is not automatically disqualified under the US exclusive-use test. [HMRC business expenses](https://www.gov.uk/expenses-if-youre-self-employed).
 
-For the wider self-employed return, see `uk-freelance-intake`.
+Include the business-use-of-home amount in the self-employment expense pages of Self Assessment. The 2026 SA103F notes identify business proportion or simplified expenses; this is not a claim that final 2026–27 box numbers have been checked. [SA103F Notes 2026](https://assets.publishing.service.gov.uk/media/69c26565cfa346b9d4704b35/SA103F_Notes_2026.pdf).
 
-### Employees: relief claimed by the employee
+### Employees
 
-| Item | Value | Condition and official source |
-| --- | --- | --- |
-| Weekly amount an employee could claim relief on, earlier years | GBP 6 | Earlier-year flat amount or evidenced actual additional costs, subject to employee eligibility. https://www.gov.uk/tax-relief-for-employees/working-at-home |
+The employee's **own** homeworking tax-relief claim is unavailable from the tax year 6 April 2026 to 5 April 2027. Earlier-year claims are referred below. [HMRC employee relief](https://www.gov.uk/tax-relief-for-employees/working-at-home).
 
-- The employee's own homeworking relief ends from the tax year 6 April 2026 to 5 April 2027. Eligible claims for the previous four tax years remain possible ([GOV.UK, working from home relief](https://www.gov.uk/tax-relief-for-employees/working-at-home)).
-- Earlier-year relief required homeworking rather than a personal choice, including hybrid arrangements chosen by the employee or occasional office-capacity constraints. Shared private/business costs such as rent or broadband were excluded (same page).
-
-### Employees: payments from the employer
-
-| Item | Value | Condition and official source |
-| --- | --- | --- |
-| Weekly limit, 2020 to 2021 onwards | GBP 6 | Separate employer payment exemption, subject to the conditions below. https://www.gov.uk/expenses-and-benefits-homeworking/homeworking-expenses-and-benefits-that-are-exempt-from-tax |
-| Monthly limit for employees paid monthly, 2020 to 2021 onwards | GBP 26 | Monthly payroll equivalent of the weekly employer exemption. https://www.gov.uk/expenses-and-benefits-homeworking/homeworking-expenses-and-benefits-that-are-exempt-from-tax |
-
-- This is a separate rule from the employee's own claim above. An employer that covers additional household expenses does not report or pay tax if both apply: the employee is working at home as agreed with the employer and regularly works from home under those arrangements, AND the amount is not more than the employee's additional household expenses or not more than the weekly limit in the table above ([GOV.UK homeworking expenses exempt from tax](https://www.gov.uk/expenses-and-benefits-homeworking/homeworking-expenses-and-benefits-that-are-exempt-from-tax)). This page does not say the employer exemption ended in April 2026.
-- Reimbursed broadband is exempt only if all apply: a connection was not already available, the employee needs it to work from home, and it is mainly used for business (same page).
+The separate employer-payment exemption requires regular homeworking under arrangements agreed with the employer. Payments must not exceed additional household expenses, or must stay within GBP 6 weekly (GBP 26 monthly for monthly-paid employees), from 2020–21 onwards. Do not confuse this employer route with the ended employee-own claim. Broadband reimbursement has separate conditions and is referred below. [HMRC employer homeworking exemption](https://www.gov.uk/expenses-and-benefits-homeworking/homeworking-expenses-and-benefits-that-are-exempt-from-tax).
 
 ## Canada
 
-### The temporary flat rate has ended
-
-| Item | Value | Condition and official source |
-| --- | --- | --- |
-| Temporary flat rate per day, 2020, 2021 and 2022 only | CAD 2 | Historical daily method restricted to these three years. https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/who-claim.html |
-
-Eligible Canadian employees must use the detailed method for 2023 and later tax years. The temporary daily flat rate is unavailable for 2026 ([CRA, what the changes are](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/what-changes.html)).
-
 ### Employees: detailed method
 
-| Item | Value | Condition and official source |
-| --- | --- | --- |
-| Share of time worked from the home work space | 50% | More than 50% for at least four consecutive weeks, or the exclusive-use/in-person-meeting alternative below. https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/who-claim/detailed-method.html |
+The temporary flat-rate method is unavailable for 2023 and later tax years, including 2026. Use the detailed method if eligible. [CRA changes](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/what-changes.html).
 
-An employee must meet all of these ([CRA detailed method eligibility](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/who-claim/detailed-method.html)):
-- the employer required the employee to work from home (a written or verbal agreement is enough, and a voluntary formal telework arrangement counts as required); AND
-- the employee was required to pay the work space expenses; AND
-- either more than the share in the table above of the time worked from the home work space for at least 4 consecutive weeks, OR the space is used only to earn employment income and used regularly and continually for in-person meetings with clients, customers or others; AND
-- the expenses are used directly in the work; AND
-- the employee has a completed and signed Form T2200 from the employer.
+For 2026, all the following are required under the [CRA eligibility criteria](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/who-claim/detailed-method.html):
 
-Amounts the employer reimbursed or will reimburse cannot be claimed (same page).
+- The employer required homeworking (written or verbal agreement; a voluntary formal telework arrangement counts) and required the employee to pay workspace expenses.
+- Either more than 50% of working time was spent in the home workspace for at least four consecutive weeks in the year, **or** the workspace is used only to earn employment income and regularly and continually for in-person work meetings with clients, customers or others.
+- Expenses are used directly in the work, and the employee holds a completed, employer-signed T2200. Exclude expenses reimbursed or to be reimbursed.
 
-Apportionment for employees: workspace area divided by home area. For a common (shared) area, multiply also by hours worked in the space over the 168 hours in a week; a designated room used only for work is not reduced for hours ([CRA, determine your work space use](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/work-space-use.html)).
+Use reasonable workspace area divided by the home's total **finished** area. A shared space also requires work hours divided by the 168 weekly hours; a designated work-only room needs no time reduction. Each worker calculates their own employment share; changed workspaces or a move require separate calculations for each space and period. [CRA workspace allocation](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/work-space-use.html).
 
-For employees, do not use the self-employed cost list below. Eligible actual costs can include the employment share of electricity, heat, water, internet access, minor maintenance and rent; commissioned employees have additional specified categories. Neither salaried nor commissioned employees can claim mortgage interest/principal, home internet connection fees, furniture or capital home improvements through this workspace claim. Expenses are limited to the relevant employment income after other employment expenses; an unused amount can carry forward against the same employer's income, subject to the same no-loss limit. Keep reimbursements and a spouse's overlapping claim out. [CRA employee expenses and limits](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/expenses-can-claim.html).
+Eligible employees may claim the supported employment portion of electricity, heat, water, home internet access, maintenance/minor repairs and rent. A homeowner cannot deduct an imputed rental value. Internet plan cost must be reasonable; connection fees and the modem/router lease portion are excluded. For maintenance, a reasonable workspace-only repair can be claimed in full, a whole-home repair only at the workspace share, and a repair to an unrelated private area not at all. Mortgage interest, mortgage principal, furniture and capital improvements are excluded. A spouse's overlapping expense cannot be claimed twice. Special commission-employee categories are referred below. [CRA costs and footnotes](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/expenses-can-claim.html).
 
-### Self-employed: business-use-of-home expenses
+Only expenses paid for qualifying homeworking periods enter the claim. Workspace costs cannot exceed related employment income remaining after other employment expenses or create/increase an employment loss. Unused expenses can carry forward against income from the same employer, still without creating/increasing a loss. [CRA limitations](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/expenses-can-claim.html).
 
-Per the [CRA business-use-of-home page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/business-use-home-expenses.html):
-- The workspace must be the principal place of business, OR be used only to earn business income AND used on a regular and ongoing basis to meet clients, customers or patients.
-- Deductible: part of heating, home insurance, electricity, cleaning materials, property taxes, mortgage interest and capital cost allowance (CCA). Use a reasonable basis such as workspace area over total area. For a space also used for personal living, multiply by the business hours in the day over 24 hours. Reduce the claim if the business runs only part of the week or year.
-- The claim "cannot be more than your net income from the business before you deduct these expenses". The amount not deducted carries forward to the next fiscal period, under the same rules.
-- Claiming CCA on the home brings in the capital gain and recapture rules when the home is sold.
-- The calculation goes on Form T2125, Part 7. For the full T2125 workflow, see `ca-fed-t2125`.
+Complete T777 to calculate employment expenses; keep the employer's T2200 with records rather than routinely attaching it. [CRA employment expenses, forms and home-office sections](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4044/employment-expenses.html).
+
+### Self-employed: business-use-of-home costs
+
+The workspace must be the principal place of business, **or** used only to earn business income and regularly and on an ongoing basis to meet clients, customers or patients. Eligible costs can include the business part of heating, insurance, electricity, cleaning, property taxes and mortgage interest; a renter may claim the business part of rent. [CRA business-use-of-home](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/business-use-home-expenses.html).
+
+Use a reasonable allocation such as workspace area over total home area. For space shared with personal living, multiply by business hours per day divided by 24; reduce for part-week or part-year business. [CRA allocation](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/business-use-home-expenses.html).
+
+Home costs cannot exceed net business income before those costs or create/increase a business loss. Unused expenses carry to the next fiscal period subject to the same rules and continuing eligibility. Complete T2125 Part 7; the amount claimed on line 9945 must not have been claimed elsewhere on T2125. Home CCA and sale consequences are referred below. [CRA limits and form route](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/business-use-home-expenses.html).
 
 ## Other countries: use the country Guide
 
-This skill does not state rates for other countries. Use the country Guide:
+These are navigation pointers, with no tax-law assertion or assurance of the destination's home-office coverage. This Guide gives no Australian figures.
 
 | Country | Guide |
 | --- | --- |
-| Germany (Tagespauschale, Arbeitszimmer) | `germany-tax-optimization` |
-| Australia (fixed rate or actual cost) | `au-sole-trader-schedule` |
+| Germany | `germany-tax-optimization` |
+| Australia | `au-sole-trader-schedule` |
 | Malta | `malta-income-tax` |
 | France | `fr-personal-income-tax` |
-| Spain (suministros, IRPF deductions) | `es-irpf-deductions` |
+| Spain | `es-irpf-deductions` |
 | India | `india-income-tax` |
-| Netherlands (werkruimte) | `nl-zzp-deductions` |
+| Netherlands | `nl-zzp-deductions` |
 | Switzerland | `ch-federal-income-tax` |
 
-If no country Guide covers home office costs, say so and refer the client to a local accountant.
-
-## What never counts
-
-- A space used for private life as well, under the US exclusive-use test (except storage and daycare as above).
-- An ordinary unreimbursed US employee home-office claim on the federal return for 2026; the specified statutory employee exceptions above require their own method.
-- A UK employee's own claim for working from home, for the tax year 6 April 2026 to 5 April 2027.
-- The Canadian temporary flat rate, for 2023 and later years.
-- Mortgage capital repayments. Interest is a potentially eligible actual-method cost for the relevant self-employed person; this does not make employee mortgage interest deductible or override country limits.
-- Any cost the employer reimbursed (Canada says so expressly).
-- The same cost claimed twice: once as home office and once as a separate business expense.
-
-## Common mistakes
-
-1. Claiming the US simplified rate for an employee. It is not available to employees, whichever method is chosen.
-2. Using the UK GBP 6 a week employee relief for 2026 to 2027. It has ended for that year; earlier years may still be claimed.
-3. Applying the Canadian temporary flat rate after 2022.
-4. Leaving out the hours step for a shared space in Canada, or the area step in any country.
-5. Ignoring Canada's no-loss limit or the US ordering/income limit for otherwise nondeductible home costs. Mortgage interest/taxes that are independently deductible require their separate rules.
-6. Forgetting phone and internet are outside the UK flat rate and can be claimed at their business share.
+If the destination does not cover the question, do not infer a rule from its title. Check this point with one of our partner accountants.
 
 ## Ask the client first
 
-- Are you an employee, self-employed, or both, and in which country do you file?
-- Is the space used only for work, or also for private life, and what are its area and the home's total area?
-- Is it your principal place of business, or do you meet clients there regularly in person?
-- How many hours a month (UK) or a week (Canada) do you work in it?
-- For employees: did your employer require you to work from home, do you have a signed Form T2200 (Canada), and does your employer reimburse any costs?
-- Does the business have enough net income to absorb the claim, and is there a carryover from an earlier year?
+- Country, tax period, employment/self-employment and entity or partnership type; UK trading-allowance use.
+- Qualifying-use evidence, other business locations, dates, area and private sharing.
+- Monthly core-business hours (UK), weekly shared-space hours (Canadian employee), and other workers or businesses.
+- Actual bills, required employer arrangements, T2200 where relevant and reimbursements.
+- Available income after the relevant deductions, previous carryovers and a proposed home sale.
 
 ## When to refuse or refer
 
-- Any country other than the US, UK or Canada: route to the country Guide above and do not quote rates from this skill.
-- US state returns, or a sale of a home on which home office depreciation or CCA was claimed: refer to an accountant.
-- A UK room used exclusively for business where the client asks about Capital Gains Tax on the sale: refer.
-- Mixed employee and self-employed use of the same space, or more than one business in the home: refer, as the apportionment is fact-specific.
-- Australia: route to `au-sole-trader-schedule` only. This skill gives no Australian figures.
+Do not calculate these cases from the common rules above:
+
+- US statutory/special employees; alternative client-meeting or separate-structure eligibility; inventory/product-sample storage, daycare, rental use (including rental to one's own business and the `us-augusta-rule-home-rental-to-your-business` route); multiple homes, multiple businesses or earlier actual-cost carryovers when considering simplified treatment. Check this point with one of our partner accountants.
+- UK earlier-year employee-own claims, employer broadband reimbursement, multiple homes or partnership home-hour aggregation. Check this point with one of our partner accountants.
+- Canadian commission-employee additional categories and commission-income limits; home CCA computation. Check this point with one of our partner accountants.
+- US state returns, a home sale (including US depreciation, Canadian CCA or a UK business-only room), capital-cost classification, renting to one's own company, mixed employment/self-employment or multiple-business use. Check this point with one of our partner accountants.
+- Other-country tax treatment: route only as above. Australia stays route-only to `au-sole-trader-schedule`. Check this point with one of our partner accountants.
 
 ## Worked cases
 
 ### US simplified method with an income limit
 
-Assume an eligible full-year sole proprietor, exclusive regular qualifying office of 350 square feet, a USD 5 rate and 300-square-foot cap from the linked IRS simplified-option source, and only USD 900 of home-use income after unrelated business deductions. The potential 1,500 is limited to 900; the 600 simplified excess is not carried forward. Eligibility is assumed only for this calculation, not inferred from the area.
+Assume an eligible full-year sole proprietor, an exclusive regular qualifying office of 350 square feet, and USD 900 of home-use income after unrelated business deductions. The [IRS USD 5 rate and 300-square-foot cap](https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction) give USD 1,500 potential; the income limit reduces this to USD 900 and the USD 600 simplified excess does not carry forward. For a real claim, confirm principal-place eligibility and full-year unchanged use; square footage alone proves neither.
 
 ```oa-check
 name: US simplified home office, capped area and income
@@ -234,7 +173,7 @@ expected:
 
 ### UK hours and separate business phone cost
 
-An eligible sole trader has ten 40-hour months and two 60-hour months, plus an evidenced GBP 120 business share of telephone/internet. The published monthly flat rates give 136 household costs, with the separate business phone/internet amount giving 256 total on these facts. Do not add actual household utility costs again.
+Assume an eligible sole trader, ten 40-core-business-hour months, two 60-core-business-hour months and an evidenced GBP 120 business share of phone/internet. The [HMRC bands](https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home) give 10 × 10 + 2 × 18 = GBP 136 household costs; adding GBP 120 gives GBP 256. Confirm qualifying hours, business share and that the trading allowance is not being used; do not add actual running costs again. No extra fixed costs have been supplied or invented.
 
 ```oa-check
 name: UK monthly homeworking bands and separate phone
@@ -254,7 +193,7 @@ expected:
 
 ### Canada shared workspace, no premature rounding
 
-Assume an eligible employee has signed T2200, required unreimbursed costs ofCAD1,200 for the qualifying period, a shared area 12% of the finished home and 40 work hours of 168 weekly hours. Carry full precision through the area/time allocation and round the final cost: CAD 34.29. The CRA's printed illustration rounds its intermediate percentage to 2.8% and displays 33.60; that is an illustration of rounding, not a statutory flat deduction. Retain the actual allocation and documented rounding policy. Multiple workers must each allocate their own space/time; moves or changed workspaces require separate period calculations.
+Assume an eligible salaried employee holds a signed T2200 and incurred CAD 1,200 of required, unreimbursed **rent, electricity, heat and water** for the qualifying period. The shared area is 12% of finished home area, used 40 of 168 weekly hours for work. Under the [CRA allocation](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/work-space-use.html), full-precision arithmetic gives 1,200 × 0.12 × 40 / 168 = CAD 34.29, rounded only at the end. The CRA illustration truncates its intermediate percentage to 2.8% and shows CAD 33.60; this Guide does not assert a statutory rounding rule. The real claim also needs the employer requirement, qualifying more-than-50%/four-week period (or the exclusive-meetings alternative), own share of costs and sufficient related employment income after other expenses. CAD 34.29 is the allocated amount before that income limit, not an unconditional deduction.
 
 ```oa-check
 name: Canada employee shared area, exact hours allocation
@@ -271,28 +210,33 @@ expected:
   deductible: 34.29
 ```
 
-Deliver the eligibility decision, bills and supported allocation, method comparison, limitation/carryforward and proposed form amounts. Keep mortgage principal/private/reimbursed/duplicate amounts out. For read-only books, provide proposed postings or an import for human approval. Do not submit the return from this workpaper.
-
 ## Existing review requirement
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 ## Sources
 
-| Official source | Read on | Read scope |
-|---|---|---|
-| https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction | 2026-11-14 | Read for current eligibility, USD 5/300-square-foot simplified option, income limit, no excess carryover, ScheduleA limits and annual method election. |
-| https://www.irs.gov/publications/p587 | 2026-11-14 | Read for Publication 587(2025) qualifying uses/exceptions, principal place, actual-cost allocation and ordering, simplified choice, carryovers and multiple homes. This is the 2025 edition, not a published2026 form. |
-| https://www.govinfo.gov/content/pkg/PLAW-119publ21/pdf/PLAW-119publ21.pdf | 2026-11-14 | Read for enacted section 70110 and effective date; permanent section 67 restriction and educator provision, effective after 31 December2025. |
-| https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home | 2026-11-14 | Read for monthly hours25-50/51-100/101+, rates10/18/26, minimum25hours and separate business phone/internet. |
-| https://www.gov.uk/expenses-if-youre-self-employed | 2026-11-14 | Read for reasonable actual household-cost allocation, mortgage interest/rent and business/private split. |
-| https://www.gov.uk/tax-relief-for-employees/working-at-home | 2026-11-14 | Read for explicit employee-own-claim termination for 6 April2026-5April2027 and earlier-year conditions. |
-| https://www.gov.uk/expenses-and-benefits-homeworking/homeworking-expenses-and-benefits-that-are-exempt-from-tax | 2026-11-14 | Read for separate regular agreed homeworking/additional-cost reimbursement, GBP 6weekly/26monthly and broadband conditions. |
-| https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/what-changes.html | 2026-11-14 | Read for detailed-method requirement from 2023 and end of temporary employee flat rate. |
-| https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/who-claim.html | 2026-11-14 | Read for temporary flat-rate historical2020-2022-only scope and current detailed-method route. |
-| https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/who-claim/detailed-method.html | 2026-11-14 | Read for all current eligibility conditions and neighbouring2025 worked arrangements, employer requirement/telework, more-than 50%/4weeks or exclusive in-person alternative, reimbursement exclusion and signed T2200. |
-| https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/work-space-use.html | 2026-11-14 | Read for finished home area, designated/shared areas,40/168hours, multiple workers, workspace changes and moves; intermediate rounding in the printed example. |
-| https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/business-use-home-expenses.html | 2026-11-14 | Read for principal-place/meeting tests, eligible costs, area/time, part-period reduction, CCA sale consequences, no-loss/carryforward and T2125 Part 7/line 9945. |
-| https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/expenses-can-claim.html | 2026-11-14 | Read for employee eligible/excluded home costs, commissioned employee distinction, reimbursement, employment-income limitation and same-employer carryforward. |
+Completed operative source reads from 22 November 2026 are reused after checking their scope against the retained rules. Changed Canadian eligibility/allocation passages were read on 26 November; saved Canadian cost footnotes and limits were recovered from the completed 22 November read. No source date is inferred from a successful download.
 
-Not yet confirmed: IRS2026 Publication 587/Form 8829 and final2026 return line updates were not published/read in the sources used here; use the identified2025 edition for the structural method and verify the 2026 form before filing. The full current US section 280A text could not be reopened, so Cornell/private databases were removed as citations. No home-office rates for countries beyond the three worked countries are supplied.
+| Official source | Read on | Scope used |
+| --- | --- | --- |
+| https://uscode.house.gov/us/usc/t26/s67/ | 2026-11-22 | Current §67(h), with PL119-21 §70110 effective-date reading: ordinary miscellaneous-itemized employee expenses remain barred in 2026. |
+| https://uscode.house.gov/us/usc/t26/s280A/ | 2026-11-22 | §280A(b), (c)(1)–(6), principal-place definition and income limit; completed statutory read reused. |
+| https://www.irs.gov/publications/p587 | 2026-11-22; 2026-11-26 | Publication 587 (2025), qualifying use, direct/indirect costs, area, actual/simplified limits, election and part-year rules. Exact Schedule C worksheet routing words recovered from the saved text on 26 November. No final 2026 form review. |
+| https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction | 2026-11-22 | USD 5/300 square feet, simplified income/no-carryover rule, depreciation and itemized deduction comparison. |
+| https://www.gov.uk/simpler-income-tax-simplified-expenses/overview | 2026-11-22 | Sole-trader/individual-partnership scope and Self Assessment route. |
+| https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home | 2026-11-26 | Monthly bands and telephone/internet wording reused from the completed UK SA103 proof read. |
+| https://www.legislation.gov.uk/ukpga/2005/5/section/94H | 2026-11-22 | Completed independent read of s94H(4), exactly 25 hours qualifies; resolves BIM75010's inconsistent “exceed 25” prose. |
+| https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim75010 | 2026-11-22 | Core activities, optional method and identifiable fixed costs beside running-cost flat rate. |
+| https://www.gov.uk/expenses-if-youre-self-employed | 2026-11-22 | Trading-allowance exclusion, actual home costs and reasonable business/private division. |
+| https://www.gov.uk/tax-relief-for-employees/working-at-home | 2026-11-22 | Explicit employee-own-relief termination from 6 April 2026. Earlier-year calculations referred. |
+| https://www.gov.uk/expenses-and-benefits-homeworking/homeworking-expenses-and-benefits-that-are-exempt-from-tax | 2026-11-22 | Regular agreed arrangements, additional household expenses and employer GBP 6/26 exemption; broadband referred. |
+| https://assets.publishing.service.gov.uk/media/69c26565cfa346b9d4704b35/SA103F_Notes_2026.pdf | 2026-11-22 | Box 21 business-use-of-home expense description for tax year ended 5 April 2026; general form route only. |
+| https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/what-changes.html | 2026-11-22 | End of temporary flat rate from 2023. |
+| https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/who-claim/detailed-method.html | 2026-11-26 | All current detailed-method eligibility conditions, telework, reimbursement and T2200. Historical COVID rules not applied to 2026. |
+| https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/work-space-use.html | 2026-11-26 | Finished area, shared/designated room, 40/168 example, multiple workers and moves. |
+| https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/expenses-can-claim.html | 2026-11-26 | Cost categories reread; completed 22 November read of footnotes 2–5, spouse overlap and limitations reused. Commission calculations referred. |
+| https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/business-use-home-expenses.html | 2026-11-26 | Qualifying uses, cost categories, area/time, loss cap/carryforward and T2125 route. |
+| https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4044/employment-expenses.html | 2026-11-22 | Employment Expenses 2025, T777/T2200 and home-office form route only. |
+
+Not yet confirmed: final 2026 IRS Publication 587/Form 8829, return lines and final 2026–27 UK form layout are not established by the identified earlier editions. Do not file from them. Check this point with one of our partner accountants. Rare and other-country cases remain explicit referrals above, not usable tax conclusions.
