@@ -2,10 +2,10 @@
 name: nz-employer-payroll
 description: >
   Use this skill for ordinary New Zealand employer payroll paid from 1 April 2026 to 31 March 2027: PAYE on salary and wages (tax codes M, ME, secondary codes, ND, NSW, CAE, EDW, STC tailored codes), the employee ACC earners' levy inside PAYE, extra pay and bonuses, pay on termination and ordinary student-loan deductions. Trigger on NZ payroll, PAYE, IR330, tax code, extra pay, bonus, student loan deduction, tailored tax code. Recovery, child-support, court and arrears notices, payday filing, corrections and penalties are in nz-payroll-notices-filing-penalties. KiwiSaver and ESCT are in nz-kiwisaver-esct; employee share schemes in nz-employee-share-schemes.
-version: 1.0
+version: 1.1
 jurisdiction: NZ
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -137,7 +137,7 @@ These methods do not establish the worker's final annual ACC liability across em
 
 For the 2026-27 period, the specification's annual repayment threshold is **$24,128**, with these primary-job period thresholds: weekly **$464**, fortnightly **$928**, every 4 weeks **$1,856** and monthly **$2,010.66**. Use the stated monthly amount rather than rounding it to $2,010.67. [S2, sections 2.2 and 5.4](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf?modified=20260401012317)
 
-For **M SL or ME SL**, drop gross period pay's cents, subtract the applicable period threshold and deduct **12% of a positive excess**, truncating the result to cents. The deduction is zero where there is no excess. For an ordinary **secondary SL code**, drop period cents and deduct **12% of that whole-dollar pay**, truncating to cents; there is **no second ordinary repayment threshold**. A valid special-deduction-rate certificate substitutes its specified percentage in the relevant algorithm. Keep the student-loan result separate from PAYE, and do not reduce taxable pay by it. [S2, sections 5.4 and 5.6](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf?modified=20260401012317)
+For **M SL or ME SL**, section 37 requires **12 cents for each complete dollar of primary employment earnings above the period threshold**. Subtract the threshold from the actual earnings, then count the complete dollars of positive excess. There is no deduction if the excess is less than a dollar. Section 5.4 of the payroll specification instead drops gross pay cents first, then multiplies the excess above its displayed threshold by 12%. This can give a different result near the fractional monthly threshold, as case 4 shows. Confirm how Inland Revenue expects the difference handled before implementing the calculation in payroll software. For an ordinary **secondary SL code**, deduct **12 cents per complete dollar** with no ordinary threshold. Apply any valid special deduction rate certificate as directed. Keep the loan separate from PAYE. [Student Loan Scheme Act s 37](https://www.legislation.govt.nz/act/public/2011/62/en/latest/sections/DLM3180105/), [S2, sections 5.4 and 5.6](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf?modified=20260401012317)
 
 Check the actual SL declaration and any repayment exemption, special rate or extra-deduction notice before using these ordinary rules. An unused primary-job threshold does not automatically transfer to a second job; apply for the appropriate special rate. Inland Revenue's [salary/wage student-loan page](https://www.ird.govt.nz/repaying-my-student-loan-when-i-earn-salary-or-wages) explains that distinction but labels its annual threshold as the **2026 tax year**; the dated 2026-27 specification supplies this guide's period-specific figures. Exemptions, recovery deductions and irregular or special payments need their own checks.
 
@@ -155,7 +155,7 @@ Annual or special bonuses, cashed-up leave, back pay and redundancy/retiring pay
 
 For a **non-termination** extra payment under an ordinary primary or secondary code:
 
-1. Total regular PAYE income payments in the 4 weeks ending on the payment date, including that date but excluding all extra pays. Annualise by 13 for weekly, fortnightly or four-weekly payments and by 12 for monthly payments. An off-cycle extra payment still uses a window ending on its actual payment date. No regular payment in that window means a zero historical amount, not an assumed annual salary. Where only one prior pay period exists, use its pay amount annualised for its frequency. [S2, section 5.11](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf?modified=20260401012317), [S22](https://www.ird.govt.nz/calculate-lump-sum-paye)
+1. Total regular PAYE income payments in the 4 weeks ending on the actual payment date, including that date and excluding all extra pays. Multiply that total by 13 for weekly, fortnightly or four-weekly payroll, or by 12 for monthly payroll. If only one ordinary payment falls in the window, it is the entire total to multiply. If no regular payment falls in the window, use zero. [Income Tax Act RD 17](https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1519976/), [S2, section 5.11](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf?modified=20260401012317), [S22](https://www.ird.govt.nz/calculate-lump-sum-paye)
 2. For a secondary code, add the low threshold below to that annualised amount. Add zero for a primary code. Call this combined amount **B**. Add the extra pay **E** to B and truncate that grossed-up total to whole dollars **G** solely to select the tax band. Retain cents in E and B for the deduction and levy calculations. [S2, sections 5.11.1-5.11.2](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf?modified=20260401012317)
 3. Select the income-tax rate below, or the employee's valid election for a higher permitted rate. Multiply the **whole extra payment**, with its cents, by that single rate. This is withholding on the extra pay, not a progressive allocation of the extra pay amongst annual bands. Do not truncate that tax component before adding the levy. [S2, section 5.11](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf?modified=20260401012317), [S22](https://www.ird.govt.nz/calculate-lump-sum-paye)
 
@@ -189,7 +189,7 @@ Add the secondary low threshold where applicable, then the extra payment, and us
 
 ### Student loans, regular bonuses and reporting
 
-For primary M SL/ME SL extra pay, combine regular and extra taxable pay for the pay period, truncate that combined pay to whole dollars, subtract the period repayment threshold once and apply 12% to any positive excess, or the valid certificate rate. Truncate the loan deduction to cents. Do not give a second threshold if wages have already used it. When the extra pay is separate and total period pay cannot be established, apply the appropriate loan rate to the entire extra pay. Secondary SL extra pay has no ordinary threshold: truncate the relevant pay to whole dollars, apply 12% or the certificate rate and truncate to cents. Tailored codes follow the certificate's threshold instruction. Keep PAYE and loan deductions separate. [S2, sections 5.11-5.12](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf?modified=20260401012317), [S23](https://www.ird.govt.nz/employing-staff/payday-filing/non-standard-filing-of-employment-information/lump-sum-payments)
+For standard primary M SL/ME SL extra pay, combine regular and extra taxable earnings for the period and subtract the period repayment threshold once. Section 37 applies 12 cents per complete dollar of excess. For software calculations, sections 5.11 and 5.12 of the payroll specification direct a whole-dollar truncation before subtracting the threshold, with the same potential difference described in case 4. When total period pay is unavailable for a separate lump sum, the specification directs applying the appropriate loan rate to the entire lump sum. Secondary SL extra pay has no ordinary threshold. Follow any valid certificate and keep PAYE and loan deductions separate. [Student Loan Scheme Act s 37](https://www.legislation.govt.nz/act/public/2011/62/en/latest/sections/DLM3180105/), [S2, sections 5.11-5.12](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf?modified=20260401012317), [S23](https://www.ird.govt.nz/employing-staff/payday-filing/non-standard-filing-of-employment-information/lump-sum-payments)
 
 Regular incentive/production bonuses paid with normal wages are included in normal period pay. For a monthly bonus covering several pay periods, calculate monthly PAYE on that month's wages with and without the bonus and deduct the difference. For a bonus covering several months, divide it by those months, calculate the difference between monthly PAYE with and without that monthly share, then multiply the difference by the number of months. Apply the corresponding loan method for an SL code. This is the regular-bonus method, not an annual/special lump-sum rate selection. [S2, section 5.13](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf?modified=20260401012317)
 
@@ -265,20 +265,21 @@ expected:
   period_paye: 257.14
 ```
 
-**Case 4: primary monthly SL near the threshold.** Ordinary M SL monthly gross pay of $2,011.99 becomes $2,011 for the loan calculation. Subtracting the **$2,010.66** threshold leaves $0.34; 12% truncated to cents is **$0.04**. There is no exemption or special-rate notice in this example. [S2, section 5.4](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf?modified=20260401012317)
+**Case 4: primary monthly SL near the threshold.** Assume ordinary M SL monthly gross pay of $2,011.99, with no exemption or special-rate notice. Subtract the statutory monthly threshold of $24,128 ÷ 12 to get $1.3233… of excess. One complete dollar gives a **$0.12** statutory deduction. Section 5.4 of the payroll specification instead calculates $0.04 by using whole-dollar gross pay of $2,011 and its $2,010.66 displayed threshold. Confirm the treatment with Inland Revenue for payroll implementation. [Student Loan Scheme Act s 37](https://www.legislation.govt.nz/act/public/2011/62/en/latest/sections/DLM3180105/), [threshold regulations reg 3](https://www.legislation.govt.nz/secondary-legislation/pco-drafted/2023/295/en/latest/sections/LMS926313/), [S2, section 5.4](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf?modified=20260401012317)
 
 ```oa-check
 name: nz-2026-primary-sl-monthly-threshold
 tolerance: 0
 inputs:
   period_pay: 2011.99
-  threshold: 2010.66
+  annual_threshold: 24128
+  pays: 12
 steps:
-  loan_pay: floor(period_pay)
-  loan_deduction: floor(pct(max(loan_pay - threshold, 0), 12) * 100) / 100
+  complete_dollar_excess: floor(max(period_pay - annual_threshold / pays, 0))
+  loan_deduction: complete_dollar_excess * 0.12
 expected:
-  loan_pay: 2011
-  loan_deduction: 0.04
+  complete_dollar_excess: 1
+  loan_deduction: 0.12
 ```
 
 **Case 5: primary weekly SL with no positive excess.** Ordinary M SL weekly pay of $464.99 becomes $464, matching the threshold, so the loan deduction is **$0.00**. [S2, section 5.4](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf?modified=20260401012317)
