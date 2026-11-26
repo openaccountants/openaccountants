@@ -1,11 +1,11 @@
 ---
 name: mp-federal-payroll-taxes
 description: How the federal payroll taxes apply in Northern Mariana Islands in 2026. Covers why social security (OASDI), Medicare and Additional Medicare Tax reach Northern Mariana Islands wages, who pays them, how they are reported (Form 941 to the IRS, Form W-2CM to the SSA and the CNMI Division of Revenue and Taxation (Finance.gov.mp)), whether FUTA applies, the government-service and immigration exceptions that differ by territory, and the mistakes to refuse. Rates and the 2026 wage base are in us-form-941-940-payroll. Trigger on "Northern Mariana Islands FICA", "Northern Mariana Islands social security tax", "Northern Mariana Islands Medicare tax", "Northern Mariana Islands Additional Medicare", "Northern Mariana Islands FUTA".
-version: "1.0"
+version: "1.1"
 jurisdiction: MP
 category: payroll
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
@@ -18,7 +18,7 @@ depends_on:
 
 > **Source-cited draft.** Folded from Ryan Duguid's Northern Mariana Islands reference files (mp-oasdi-annual-wage-base-reference, mp-medicare-ordinary-share-reference, mp-additional-medicare-annual-reference and mp-additional-medicare-employer-payment-reference); brought to the 2026 standard by Claude. Built from IRC sections 3101, 3102, 3111 and 3121, IRS Publication 15 (2026) and the Covenant (48 USC 1801). No accountant has reviewed it.
 
-**Answer first.** Federal social security and Medicare (FICA) apply to wages for services in Northern Mariana Islands exactly as in the 50 states: the employer withholds the employee share, pays its own matching share, and reports both on **Form 941** to the IRS. The 2026 rates, the OASDI wage base and the Additional Medicare threshold are in `us-form-941-940-payroll` and are not restated here. What is specific to Northern Mariana Islands: not named in IRC 3121(e). Covenant s601(c) reads Code references to Guam as also referring to the Northern Mariana Islands (unless distinctly expressed otherwise or manifestly incompatible); federal income tax is **not** withheld (the territorial income tax is); FUTA **does not apply**; wages are reported on **Form W-2CM**.
+**Answer first.** For ordinary covered wages in the Northern Mariana Islands, the employer withholds employee Social Security and Medicare, pays its matching shares and generally files **Form 941** with the IRS. Withhold Additional Medicare Tax on covered wages above the employer withholding threshold. See `us-form-941-940-payroll` for the 2026 figures. Covenant sections 601(c) and 606(b) apply the federal social security rules through Guam. Withhold applicable territorial income tax and check separately for employees subject to US income tax withholding. FUTA does not apply to CNMI employment. Report CNMI wages on **Form W-2CM**. Use **Form W-2** for wages subject to US income tax withholding.
 
 ## Scope
 
@@ -51,18 +51,18 @@ Out of scope, and where it goes:
 | Social security and Medicare (FICA) | Apply to wages for services in Northern Mariana Islands as in the 50 states; rates, OASDI wage base and Additional Medicare threshold for 2026 are in `us-form-941-940-payroll` | [IRS Publication 15 (2026)](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
 | Federal income tax withholding | Does not apply to Northern Mariana Islands employers unless the employee is subject to US income tax withholding; the territorial income tax is withheld instead | same |
 | FUTA (federal unemployment tax) | Does not apply to employers in Northern Mariana Islands | [IRS Publication 15 (2026), section 14](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
-| Wage statement | Form W-2CM, with Form W-3SS (instructions from the CNMI tax department); Copy A to the SSA, Copy 1 to the CNMI Division of Revenue and Taxation (Finance.gov.mp) | [IRS Publication 15 (2026), Certain Information Returns](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Wage statement | For 2026 CNMI wages, submit W-2CM Copy A to the SSA with W-3SS where applicable and furnish copies to employees by 1 February 2027. File Copy 1 with OS-3710 at the CNMI Division of Revenue and Taxation by 1 March 2027. | [CNMI 2026 W-2CM and OS-3710 instructions, p 1](https://finance.gov.mp/division-forms/revenue-taxation/instructions/iw2cm--2026.pdf) |
 | Government service | CNMI government service needs its own 3121(b)(7) branch through the Covenant and the retirement-system facts; do not borrow Guam's or American Samoa's treatment. Medicare for government service follows 3121(u) separately. | [IRC section 3121(b)(7) and (u)](https://uscode.house.gov/us/usc/119-124/t26/s3121/) |
 | Residents of the Philippines working in the CNMI | Social security and Medicare must be withheld unless the worker holds H-2 status and meets 3121(b)(18) as read through the Covenant, or another section 15 exception applies; CW status is not H-2 | [IRS Publication 15 (2026), Residents of the Philippines working in the CNMI](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
-| Federal employers in the CNMI | Withhold CNMI income tax (not federal income tax) under the 5 U.S.C. 5517 agreement of December 2006 | same |
+| Federal employers in the CNMI | Under the December 2006 agreement, covered agencies withhold CNMI income tax for civilian employees subject to that tax whose regular place of federal employment is in the CNMI. Apply the separate legal-residence and duty-status rules for armed forces members. | [IRS 5517 agreements guidance](https://www.irs.gov/individuals/international-taxpayers/special-withholding-rules-for-us-federal-agency-employers-with-employees-in-cnmi-or-puerto-rico) |
 
 ### Steps
 
 1. Confirm the service is in Northern Mariana Islands and the worker is an employee of this employer.
 2. Test the special-service branches first (government service, immigration exceptions, family, student and the rest of 3121(b)); hold anything not resolved.
 3. For ordinary covered wages, apply the 2026 FICA rates and the OASDI wage base from `us-form-941-940-payroll`: aggregate each employee's pay with this employer for the calendar year, apply the OASDI base once, apply Medicare to all wages, and withhold Additional Medicare only on wages over the threshold from the payment that crosses it.
-4. Report on Form 941 (quarterly) and deposit under the schedules in `us-form-941-940-payroll`; no Form 940 is due for Northern Mariana Islands wages.
-5. After the year, give each employee Form W-2CM, file Copy A with the SSA and Copy 1 with the CNMI Division of Revenue and Taxation (Finance.gov.mp).
+4. Report ordinary covered wages on Form 941 each quarter. Check for IRS notice to file annual Form 944, seasonal filing rules and the separate Form 943 rules for agricultural wages. Use the deposit schedules in `us-form-941-940-payroll`. No Form 940 is due for CNMI employment.
+5. For 2026 CNMI wages, use the wage-statement forms, agencies and dates above. Check the separate reporting instructions for wages subject to US income tax withholding.
 
 ## Boundary and exception table
 
@@ -140,7 +140,7 @@ Refer territorial income tax withholding to the Northern Mariana Islands pack an
 
 ## Filing and payment
 
-Form 941 each quarter to the IRS, deposits through EFTPS under the schedules in `us-form-941-940-payroll`; Form W-2CM to employees and Copy A to the SSA (SSA.gov/employer) by the due date in the General Instructions for Forms W-2 and W-3, Copy 1 with the transmittal to the CNMI Division of Revenue and Taxation (Finance.gov.mp).
+Follow the applicable federal return and deposit schedule. Make required federal deposits by electronic funds transfer through an IRS-supported channel. Follow the separate federal and CNMI wage statement instructions for filing and furnishing the relevant copies.
 
 ## Completion checklist
 
@@ -161,5 +161,9 @@ Form 941 each quarter to the IRS, deposits through EFTPS under the schedules in 
 | 48 USC 1801, Covenant (reproduced). Read for ss601(c), 606(b), 1003 and Proclamations 4534 and 5564. | https://uscode.house.gov/us/usc/119-124/t48/s1801/ | 2026-10-25 |
 | Public Law 98-213 (97 Stat. 1459), s9. Read for the amended s606(b) start date (1 January of the following calendar year). | https://www.govinfo.gov/content/pkg/STATUTE-97/pdf/STATUTE-97-Pg1459.pdf | 2026-10-25 |
 | IRS Announcement 2012-43, 2012-51 I.R.B. Read for the 3121(b)(18) H-2 exception in the CNMI and the pre-2015 relief. | https://www.irs.gov/irb/2012-51_IRB | 2026-10-25 |
+| IRS Instructions for Form 941. Read for the ordinary quarterly rule, the IRS-notified Form 944 exception and the separate agricultural return. | https://www.irs.gov/instructions/i941 | 2026-11-23 |
+| IRS General Instructions for Forms W-2 and W-3 (2026). Read for US income tax withholding, filing with the SSA and the CNMI Copy 1 procedure. | https://www.irs.gov/instructions/iw2w3 | 2026-11-23 |
+| CNMI supplemental instructions for 2026 W-2CM and OS-3710. Read p 1 for the two filing routes and deadlines. | https://finance.gov.mp/division-forms/revenue-taxation/instructions/iw2cm--2026.pdf | 2026-11-23 |
+| IRS guidance on the 5 USC 5517 agreements. Read for covered agencies, regular civilian place of employment and the armed forces residence and status rules. | https://www.irs.gov/individuals/international-taxpayers/special-withholding-rules-for-us-federal-agency-employers-with-employees-in-cnmi-or-puerto-rico | 2026-11-23 |
 
-Not yet confirmed: amendments after Public Law 119-124; Northern Mariana Islands government retirement-system coverage; any Northern Mariana Islands new hire registry or employer contribution of its own; whether the CNMI Division of Revenue and Taxation (Finance.gov.mp) sets its own Copy 1 deadline.
+Not yet confirmed: amendments after Public Law 119-124, Northern Mariana Islands government retirement-system coverage and any Northern Mariana Islands new hire registry or separate local employer contribution.
