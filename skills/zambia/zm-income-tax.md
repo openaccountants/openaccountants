@@ -4,15 +4,15 @@ description: "Use this skill for Zambia personal income tax in 2026: PAYE bands 
 jurisdiction: ZM
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.3
+last_updated: 2026-11-26
+version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Zambia Income Tax v0.3
+# Zambia Income Tax v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -133,7 +133,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
 | NAPSA, PENSION CONTRIBUTION | Statutory deduction (payroll) | Old file 5% / 5%, unverified; not a trading expense for the individual |
-| NHIMA, HEALTH INSURANCE | Statutory deduction (payroll) | Old file 0.5% / 0.5%, unverified |
+| NHIMA, HEALTH INSURANCE | Statutory deduction (payroll) | 1% employee + 1% employer of basic salary (NHIMA) |
 | VAT PAYMENT, ZRA VAT | EXCLUDE | VAT liability payment, not expense |
 | PROVISIONAL TAX, ZRA PROVISIONAL | Credit against liability | Not an expense |
 
@@ -175,7 +175,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 
 #### 5.4 NHIMA (health insurance)
 
-- **NHIMA contribution rule** : Unverified for 2026 (see payroll skill). Old file: 1% total = 0.5% employee + 0.5% employer, on gross earnings (basic plus all allowances/overtime/bonuses). Compulsory for all workers including casual, temporary, and contract. Monthly returns due by the 10th.
+- **NHIMA contribution rule** : 2% total = 1% employee + 1% employer, on basic salary; returns and contributions by the 10th of the following month (NHIMA brochure 2025; NHIMA FAQs Q27 and Q29). Self-employed: 1% of declared income.
 
 #### 5.5 Self-Employed Regimes
 
@@ -267,10 +267,10 @@ PART A: EMPLOYEE (PAYE), MONTHLY
   A1. Gross monthly earnings (basic + allowances)   ___________
   A2. PAYE (apply monthly bands)                     ___________
   A3. NAPSA employee (rate unverified, see payroll)  ___________
-  A4. NHIMA employee (rate unverified, see payroll)  ___________
+  A4. NHIMA employee (1% of basic salary)            ___________
   A5. NET PAY (A1 - A2 - A3 - A4)                    ___________
   Memo: NAPSA employer (rate unverified)             ___________
-  Memo: NHIMA employer (rate unverified)             ___________
+  Memo: NHIMA employer (1% of basic salary)          ___________
 
 PART B: SOLE TRADER, TURNOVER TAX
   B1. Annual turnover (excl. interest/dividends/
@@ -293,7 +293,7 @@ REVIEWER FLAGS:
   [ ] Turnover-tax vs income-tax regime confirmed?
   [ ] Turnover below K5,000,000 ceiling confirmed?
   [ ] NAPSA ceiling applied correctly?
-  [ ] NHIMA 0.5%/0.5% split confirmed (RESEARCH GAP)?
+  [ ] NHIMA 1% + 1% applied to basic salary, not gross?
   [ ] Home office / vehicle / phone business % confirmed?
   [ ] Entertainment and personal expenses excluded?
   [ ] VAT registration status confirmed (> K800,000)?
@@ -467,7 +467,7 @@ ONBOARDING QUESTIONS: ZAMBIA INCOME TAX
 - NEVER treat NAPSA or NHIMA as a trading expense of the individual
 - NEVER allow entertainment, personal, or fine/penalty expenses as deductions
 - NEVER allow income tax / PAYE itself as a deduction
-- NEVER assume the 2025 NAPSA ceiling, NHIMA split, or minimum wage carries into 2026 without confirmation
+- NEVER assume the 2025 NAPSA ceiling or minimum wage carries into 2026 without confirmation
 - NEVER treat a unconfirmed figure as confirmed : flag it for the reviewer
 - NEVER present tax calculations as definitive: always label as estimated and pending professional review
 
@@ -481,7 +481,7 @@ ONBOARDING QUESTIONS: ZAMBIA INCOME TAX
 | Filing deadline / provisional tax | unconfirmed |
 | Turnover / rental / presumptive tax / VAT | unconfirmed |
 | NAPSA ceiling / rate / NAE | unconfirmed |
-| NHIMA rate | unconfirmed |
+| NHIMA rate | NHIMA brochure 2025 (https://www.nhima.co.zm/wp-content/uploads/2025/09/All-you-need-to-know-Brochure-2025.pdf); NHIMA FAQs (https://www.nhima.co.zm/elementor-1783/) |
 | Penalties / due dates | ZRA penalties (zra.org.zm/penalties); ZRA payment due dates (zra.org.zm/payment-due-dates) |
 | Minimum wage | Ministry of Labour & Social Security (mlss.gov.zm); SI No. 3 of 2025 |
 
@@ -541,7 +541,7 @@ Input: Sole trader, annual turnover K200,000 (no excluded income), under K5m cei
 Expected: Turnover tax on ZRA's example method = (200,000 − 30,000) × 5% = K170,000 × 5% = K8,500/year. If ZRA's note on total turnover governs, K10,000 (see Not yet confirmed).
 
 Input: Gross annual rent K500,000.
-Expected: Rental income tax at 4% (band K30,000-800,000) = K500,000 × 4% = K20,000. [Charging Schedule para 5(e) does not say whether bands are marginal or flat: reviewer to confirm.]
+Expected: Rental income tax on graduated bands (ZRA Rental Income Tax leaflet 2026) = K30,000 × 0% + K470,000 × 4% = K18,800.
 
 Input: K850 client dinner claimed as expense (income-tax trader).
 Expected: Remove : not deductible.
@@ -560,5 +560,7 @@ Expected: Remove : not deductible.
 | ZRA leaflet Introduction to Income Tax (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Introduction-to-Income-Tax.pdf | 2026-11-01 |
 | ZRA leaflet Rental Income Tax (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Rental-Income-Tax.pdf | 2026-11-01 |
 | ZRA Advance Income Tax on remittances leaflet (2026), first page; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/08/Refunds-of-Advance-Income-Tax-on-Remittance.pdf | 2026-11-01 |
+| NHIMA 'All you need to know' brochure (2025), Contributions: 1% of basic salary from the employer and 1% from the employee, remitted by the 10th of the following month | https://www.nhima.co.zm/wp-content/uploads/2025/09/All-you-need-to-know-Brochure-2025.pdf | 2026-11-26 |
+| NHIMA FAQs, Q27 and Q29 | https://www.nhima.co.zm/elementor-1783/ | 2026-11-26 |
 
-Not yet confirmed: NAPSA and NHIMA (payroll skill), including the old 2025 figures of ceiling K34,164, national average earnings K8,541 and NHIMA 1%; whether turnover tax above K30,000 falls on total turnover or on the excess (ZRA example taxes the excess, its note says total); table cells marked unconfirmed carried from the old file; minimum wage orders; old source labels removed where they named commercial firms.
+Not yet confirmed: NAPSA (payroll skill), including the old 2025 figures of ceiling K34,164 and national average earnings K8,541; whether turnover tax above K30,000 falls on total turnover or on the excess (ZRA example taxes the excess, its note says total); table cells marked unconfirmed carried from the old file; minimum wage orders; old source labels removed where they named commercial firms.
