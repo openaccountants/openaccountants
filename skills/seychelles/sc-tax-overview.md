@@ -4,15 +4,15 @@ description: "Seychelles tax overview for tax year 2026: authority, currency, ta
 jurisdiction: SC
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.3
+last_updated: 2026-11-26
+version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: situation-rules
 ---
 
-# Seychelles Tax Overview v0.3
+# Seychelles Tax Overview v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -29,11 +29,11 @@ Anyone with a business, employment, property or tourism activity in Seychelles. 
 | VAT | See sc-vat-gst | 2026 | https://src.gov.sc/seychelles-tax-system/ |
 | Pension Fund | See sc-payroll-social | 2026 | https://pensionfund.sc/mandatory-contribution/ |
 | Immovable Property Tax, non-Seychellois, residential | 0.50% of market value, by 31 December | 2026 | https://src.gov.sc/seychelles-tax-system/ |
-| Immovable property: failure to apply to register | SCR 50,000 commercial, industrial, multi-purpose and villas; SCR 10,000 others | 2026 | same |
-| Tourism Environmental Sustainability Levy, per person per night | Medium 24 to 50 rooms SCR 75; large 51 rooms on SCR 100; yachts and island resorts SCR 100 | 2026 | same |
+| Immovable property: failure to apply to register | SCR 50,000 commercial, industrial, multi-purpose and villas; SCR 10,000 others | 2026 | https://src.gov.sc/seychelles-tax-system/ https://archive.gazettes.africa/archive/sc/2021/sc-government-gazette-dated-2021-06-28-no-48.pdf (Official Gazette No. 48 of 28 June 2021, Notice 458 of 2021) |
+| Tourism Environmental Sustainability Levy, per person per night | Medium 25 to 50 rooms SCR 75; large 51 rooms on SCR 100; yachts and island resorts SCR 100 | 2026 | https://src.gov.sc/wp-content/uploads/2025/12/SI-90-2025-Environment-Protection-Tourism-Environmental-Sustainability-Levy-Amendment-Regulations-2025-1.pdf |
 | Small establishments, 1 to 24 rooms | Levy no longer applies from 1 Jan 2026 (S.I. 90 of 2025). Earlier rate SCR 25 | 2026 | same |
 
-Commercial and industrial property, and a residence owned by a taxpayer married to a Seychellois, pay no Immovable Property Tax. A first-time residential owner can apply for one year's exemption. The levy excludes citizens, residents, airline and yacht crew and children of 12 or under.
+Commercial and industrial property, and a residence owned by a taxpayer married to a Seychellois, pay no Immovable Property Tax. A first-time residential owner can apply for one year's exemption. The levy excludes citizens, residents, airline and yacht crew and children of 12 or under. S.I. 52 of 2023 reg 3 and S.I. 90 of 2025 define medium as 25 to 50 rooms; the SRC Tax System page's '24- 50rooms' conflicts with them, and the regulations govern.
 
 ## The base
 
@@ -95,5 +95,7 @@ expected:
 | Read for the figures cited: Seychelles Pension Fund, Mandatory Contribution page | https://pensionfund.sc/mandatory-contribution/ | 2026-11-01 |
 | Read for the figures cited: Revenue Law (Amendment) Act 2023 (Act 27 of 2023), ss 3, 4, 7 | https://src.gov.sc/wp-content/uploads/2024/12/Act-27-2023-Revenue-Law-Amendment-Act-2023.pdf | 2026-11-01 |
 | Read for the figures cited: SRC Agreements page, treaty lists | https://src.gov.sc/agreements/ | 2026-11-01 |
+| Read for the figures cited: S.I. 52 of 2023, reg 3 and Schedule I | https://src.gov.sc/wp-content/uploads/2023/08/SI-52-2023-Environment-Protection-Tourism-Environmental-Sustainabilit.pdf | 2026-11-26 |
+| Read for the figures cited: S.I. 90 of 2025, whole instrument | https://src.gov.sc/wp-content/uploads/2025/12/SI-90-2025-Environment-Protection-Tourism-Environmental-Sustainability-Levy-Amendment-Regulations-2025-1.pdf | 2026-11-26 |
 
-Not yet confirmed: room band overlap at 24 rooms on the SRC page, which puts 24 in both small and medium; capital gains and inheritance taxes, not covered by pages read.
+Not yet confirmed: capital gains and inheritance taxes, not covered by pages read.
