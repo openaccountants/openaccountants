@@ -70,10 +70,10 @@ On the Guidelines split this guide follows, the NTA bands apply only to income e
 | Chargeable income (NGN) | Rate | Tax at top of band | Source |
 | --- | --- | --- | --- |
 | First 800,000 | 0% | 0 | NTA Fourth Schedule, Gazette No. 117 of 26 June 2025: https://nass.gov.ng/documents/download/11249 |
-| Next 2,200,000 (to 3,000,000) | 15% | 330,000 | same |
-| Next 9,000,000 (to 12,000,000) | 18% | 1,950,000 | same |
-| Next 13,000,000 (to 25,000,000) | 21% | 4,680,000 | same |
-| Next 25,000,000 (to 50,000,000) | 23% | 10,430,000 | same |
+| Next 2,200,000 (to 3,000,000) | 15% | 330,000 (computed) | same |
+| Next 9,000,000 (to 12,000,000) | 18% | 1,950,000 (computed) | same |
+| Next 13,000,000 (to 25,000,000) | 21% | 4,680,000 (computed) | same |
+| Next 25,000,000 (to 50,000,000) | 23% | 10,430,000 (computed) | same |
 | Above 50,000,000 | 25% | | same |
 
 Section 58 applies the Fourth Schedule to an individual 'other than an individual earning the Minimum Wage in line with the Minimum Wage Act'. NTA s 162(1)(t) separately exempts income from an employment where the person earns gross income of national minimum wage or less from that employment.
@@ -82,12 +82,12 @@ Section 58 applies the Fourth Schedule to an individual 'other than an individua
 
 | Chargeable income (NGN) | Rate | Tax at top of band | Source |
 | --- | --- | --- | --- |
-| First 300,000 | 7% | 21,000 | PITA Sixth Schedule para (3), read in the FIRS-hosted text (archived copy, annotated to the Finance Act 2020): https://web.archive.org/web/20250514045957/https://old.firs.gov.ng/wp-content/uploads/2021/07/Personal-Income-Tax-Act.pdf |
-| Next 300,000 (to 600,000) | 11% | 54,000 | same |
-| Next 500,000 (to 1,100,000) | 15% | 129,000 | same |
-| Next 500,000 (to 1,600,000) | 19% | 224,000 | same |
-| Next 1,600,000 (to 3,200,000) | 21% | 560,000 | same |
-| Above 3,200,000 | 24% | | same |
+| First 300,000 | 7% | 21,000 (computed) | PITA Sixth Schedule para (3), read in the FIRS-hosted text (archived copy, annotated to the Finance Act 2020): https://web.archive.org/web/20250514045957/https://old.firs.gov.ng/wp-content/uploads/2021/07/Personal-Income-Tax-Act.pdf |
+| Next 300,000 (to 600,000) | 11% | 54,000 (computed) | same |
+| Next 500,000 (to 1,100,000) | 15% | 129,000 (computed) | same |
+| Next 500,000 (to 1,600,000) | 19% | 224,000 (computed) | same |
+| Next 1,600,000 (to 3,200,000) | 21% | 560,000 (computed) | same |
+| Above 3,200,000 (computed: sum of the bands above; the text prints it as "N3, 200,000") | 24% | | same |
 
 ### Reliefs and floors, income earned in 2025
 
