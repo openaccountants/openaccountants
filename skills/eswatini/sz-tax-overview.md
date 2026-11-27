@@ -5,15 +5,15 @@ jurisdiction: SZ
 category: international
 tax_year: 2026
 tax_year_notes: "Year of assessment to 30 June 2026"
-version: 0.3
-last_updated: 2026-11-14
+version: 0.4
+last_updated: 2026-11-26
 type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Eswatini Tax Overview v0.3
+# Eswatini Tax Overview v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -38,7 +38,7 @@ Tax is on income from a source within or deemed within Eswatini. Legislated year
 
 ## Deadlines and filing
 
-Latest published: companies 31 October 2025; individuals 31 October or 30 November 2025 by segment. All through TaxEase. PAYE by the 7th, withholding by the 15th. VAT: see [VAT](sz-vat-gst.md).
+Year ended 30 June 2026 (ERS notice): non-individual entities, businesses and presumptive taxpayers 31 October 2026; individuals in the listed segments 30 November 2026. All through TaxEase. PAYE by the 7th, withholding by the 15th. VAT: see [VAT](sz-vat-gst.md).
 
 ## Penalties and interest
 
@@ -46,20 +46,20 @@ Late return 20% of tax; late payment interest 18% a year.
 
 ## Cross-border points
 
-Non-resident withholding is mostly 15%, interest 10%. See [Corporate income tax](sz-corporate-income-tax.md).
+Non-resident withholding is 15%, including dividends, interest and branch profits tax since 1 July 2024, subject to treaty relief. See [Corporate income tax](sz-corporate-income-tax.md).
 
 ## Two worked examples that recompute
 
-Dividend of E100,000 to a qualifying South African company holding under 25%: 12.5% under s 21, below the 15% treaty cap. At 25% or more the treaty gives 10%.
+Dividend of E100,000 to a South African company holding under 25%: 15% under s 21(2), as Act 20 of 2023 s 10 deleted the 12.5% proviso from 1 July 2024; the treaty also allows 15%. At 25% or more the treaty gives 10%.
 
 ```oa-check
 name: Dividend withholding
 inputs:
   dividend: 100000
 steps:
-  - tax: dividend * 0.125
+  - tax: dividend * 0.15
 expected:
-  tax: 12500
+  tax: 15000
 ```
 
 Decision: sole trader or company on profit E300,000, all paid out. Sole trader E72,300; company plus 10% resident dividend E97,500. The sole trader pays less on this profit.
@@ -90,11 +90,13 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax (Amendment) Act 2023 (Act 20 of 2023), scanned: read by OCR on 2026-11-01 for the Third Schedule and cited sections. Reopened 2026-11-14 (38-page scan), not re-read; the rates also stand on the ERS Rates and Thresholds page read today | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf | 2026-11-14 (opened, not re-read) |
+| Income Tax (Amendment) Act 2023 (Act 20 of 2023), scanned: read by OCR on 2026-11-01 for the Third Schedule and cited sections; ss 10, 11 and 14 (amending ss 21, 27 and 32E) re-read on 2026-11-26 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf | 2026-11-26 |
+| ERS, Income Tax Order Changes 2024: read in full for the 1 July 2024 effective date and the 15% rates under ss 21, 27 and 32E | https://ers.org.sz/whatsnew-file/1726738466004-Income_Tax_Order_Changes__2024.pdf | 2026-11-26 |
 | ERS, Public Notice, returns for tax year end 2025 (scan): read in full for the filing deadlines and the 25% and 1.75% rates | https://www.ers.org.sz/whatsnew-file/1753959572719-FULL_PAGE___Income_Tax_Returns_Notice_2025.pdf | 2026-11-14 |
+| ERS, Public Notice, annual income tax return submission and payment for tax year end 2026: read in full for the deadlines, return thresholds and the 25% and 1.75% rates | https://ers.org.sz/whatsnew-file/1791462650754-1784270658474_Notice_for_Filing_Income_tax_Returns_Public_Notice_Final_Aligned.pdf | 2026-11-26 |
 | Legal Notice 112 of 2018, VAT rate (scan): read in full, both pages, for the 15% rate from 1 August 2018 | https://www.ers.org.sz/documents/VATRateAmendmentRegulation2018.pdf | 2026-11-14 |
 | ERS, VAT Registration: read in full | https://www.ers.org.sz/Registration | 2026-11-14 |
 | ERS, Presumptive Tax: read in full | https://www.ers.org.sz/IncomeTax/PresumptiveTax | 2026-11-14 |
 | ENPF home page, public notice reproducing Legal Notice 5 of 2025: read in full | https://enpf.co.sz/ | 2026-11-14 |
 
-Not yet confirmed: The commencement notice for the 2023 Act was not opened; 1 July 2024 rests on the ERS Presumptive Tax page. The ERS notice for returns for the year ended 30 June 2026 was not found, so 2025 dates are given as the latest published. The lilangeni and rand peg: the Central Bank source was not opened.
+Not yet confirmed: The commencement notice for the 2023 Act was not opened; 1 July 2024 rests on the ERS Presumptive Tax page. The lilangeni and rand peg: the Central Bank source was not opened.
