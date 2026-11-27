@@ -199,7 +199,7 @@ Primary provisions and the neighbouring conditions identified above were read on
 | TDM sections 1–1.3: capital crypto versus trade | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf | 2026-11-27 |
 | Exemptions, spouse exceptions and personal exemption headings | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx | 2026-11-27 |
 | s.602(1)–(7): consideration test, marginal cap and limits | https://www.irishstatutebook.ie/eli/1997/act/39/section/602/enacted/en/html | 2026-11-27 |
-| Schedule 5: euro rows for ss.601,602,1084 | https://www.irishstatutebook.ie/eli/2001/act/7/schedule/5/enacted/en/html | 2026-11-27 |
+| Schedule 5: euro rows for sections 601 / 602 / 1084 | https://www.irishstatutebook.ie/eli/2001/act/7/schedule/5/enacted/en/html | 2026-11-27 |
 | s.603(1)–(4): wasting chattels and business use | https://www.irishstatutebook.ie/eli/1997/act/39/section/603/enacted/en/html | 2026-11-27 |
 | s.1028(5)–(7): spouse basis carryover | https://www.irishstatutebook.ie/eli/1997/act/39/section/1028/enacted/en/html | 2026-11-27 |
 | s.573(2)–(5): death basis and losses | https://www.irishstatutebook.ie/eli/1997/act/39/section/573/enacted/en/html | 2026-11-27 |
