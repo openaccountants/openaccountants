@@ -15,11 +15,11 @@ description: >
   is the canonical guide and calls this file deprecated; differences are
   flagged here. This Tier 2 draft supports source checking and reviewer
   questions; it does not authorise filing, payment or a tax position.
-version: 2.3
+version: 2.4
 jurisdiction: NG
 tax_year: 2026
 tax_year_notes: "Income earned in 2026 under the Nigeria Tax Act 2025, reported for the 2027 year of assessment, and, separately, income earned in 2025 under the repealed Personal Income Tax Act, reported for the 2026 year of assessment. Paragraph 10.1.1 of the General Transition Guidelines gives 2025 income to the repealed law. The 2 regimes are shown side by side and never blended."
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -27,7 +27,7 @@ domain: income-tax
 type: computation
 ---
 
-# NG Income Tax v2.3
+# NG Income Tax v2.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -70,10 +70,10 @@ On the Guidelines split this guide follows, the NTA bands apply only to income e
 | Chargeable income (NGN) | Rate | Tax at top of band | Source |
 | --- | --- | --- | --- |
 | First 800,000 | 0% | 0 | NTA Fourth Schedule, Gazette No. 117 of 26 June 2025: https://nass.gov.ng/documents/download/11249 |
-| Next 2,200,000 (to 3,000,000) | 15% | 330,000 | same |
-| Next 9,000,000 (to 12,000,000) | 18% | 1,950,000 | same |
-| Next 13,000,000 (to 25,000,000) | 21% | 4,680,000 | same |
-| Next 25,000,000 (to 50,000,000) | 23% | 10,430,000 | same |
+| Next 2,200,000 (to 3,000,000) | 15% | 330,000 (computed) | same |
+| Next 9,000,000 (to 12,000,000) | 18% | 1,950,000 (computed) | same |
+| Next 13,000,000 (to 25,000,000) | 21% | 4,680,000 (computed) | same |
+| Next 25,000,000 (to 50,000,000) | 23% | 10,430,000 (computed) | same |
 | Above 50,000,000 | 25% | | same |
 
 Section 58 applies the Fourth Schedule to an individual 'other than an individual earning the Minimum Wage in line with the Minimum Wage Act'. NTA s 162(1)(t) separately exempts income from an employment where the person earns gross income of national minimum wage or less from that employment.
@@ -82,12 +82,12 @@ Section 58 applies the Fourth Schedule to an individual 'other than an individua
 
 | Chargeable income (NGN) | Rate | Tax at top of band | Source |
 | --- | --- | --- | --- |
-| First 300,000 | 7% | 21,000 | PITA Sixth Schedule para (3), read in the FIRS-hosted text (archived copy, annotated to the Finance Act 2020): https://web.archive.org/web/20250514045957/https://old.firs.gov.ng/wp-content/uploads/2021/07/Personal-Income-Tax-Act.pdf |
-| Next 300,000 (to 600,000) | 11% | 54,000 | same |
-| Next 500,000 (to 1,100,000) | 15% | 129,000 | same |
-| Next 500,000 (to 1,600,000) | 19% | 224,000 | same |
-| Next 1,600,000 (to 3,200,000) | 21% | 560,000 | same |
-| Above 3,200,000 | 24% | | same |
+| First 300,000 | 7% | 21,000 (computed) | PITA Sixth Schedule para (3), read in the FIRS-hosted text (archived copy, annotated to the Finance Act 2020): https://web.archive.org/web/20250514045957/https://old.firs.gov.ng/wp-content/uploads/2021/07/Personal-Income-Tax-Act.pdf |
+| Next 300,000 (to 600,000) | 11% | 54,000 (computed) | same |
+| Next 500,000 (to 1,100,000) | 15% | 129,000 (computed) | same |
+| Next 500,000 (to 1,600,000) | 19% | 224,000 (computed) | same |
+| Next 1,600,000 (to 3,200,000) | 21% | 560,000 (computed) | same |
+| Above 3,200,000 (computed: sum of the bands above; the text prints it as "N3, 200,000") | 24% | | same |
 
 ### Reliefs and floors, income earned in 2025
 
@@ -237,7 +237,7 @@ Tax deducted is an advance or final tax of the supplier, not a further tax (reg 
 
 ### Pension, housing fund and health contributions
 
-Pension Reform Act 2014 (Act No. 4, gazetted 2 July 2014) s 4(1) sets minimums for employees: 10% by the employer and 8% by the employee of monthly emoluments, which s 120 defines as total emoluments under the contract of employment, not less than basic salary, housing allowance and transport allowance. Self-employed persons are entitled to participate under Commission guidelines (s 2(3)) and to make voluntary contributions (s 4(7)), so no 8% minimum was read for them. Later amendment of that Act was not checked. National Housing Fund Act s 4(1) sets 2.5% of basic monthly salary for a worker earning NGN 3,000 or more a year, and s 10 says all self-employed persons 'shall deduct' that amount from monthly income and remit within one month. So the LFN 2004 text does not call it voluntary for the self-employed; whether later law changed this was not checked. The National Health Insurance Authority Act was not read; the tax texts still say National Health Insurance Scheme.
+Pension Reform Act 2014 (Act No. 4, gazetted 2 July 2014) s 4(1) sets minimums for employees: 10% by the employer and 8% by the employee of monthly emoluments, which s 120 defines as total emoluments under the contract of employment, not less than basic salary, housing allowance and transport allowance. Self-employed persons are entitled to participate under Commission guidelines (s 2(3)) and to make voluntary contributions (s 4(7)), so no 8% minimum was read for them. Later amendment of that Act was not checked. Business Facilitation (Miscellaneous Provisions) Act 2022 Schedule Part XI paras 44-46 (effective 8 February 2023) substituted National Housing Fund Act s 4 and amended s 9(1), replacing the old NGN 3,000/year basic-salary threshold with the national minimum wage and shifting the base to 2.5% of monthly income: public-sector employees earning the national minimum wage and above 'shall contribute 2.5% of his monthly income', private-sector employees at that threshold 'may contribute 2.5% of his monthly income' (optional), and self-employed persons earning the equivalent of the national minimum wage and above 'shall contribute 2.5% of his monthly income' (remitted within one month under s 10). The National Health Insurance Authority Act was not read; the tax texts still say National Health Insurance Scheme.
 
 ### Bank narration library
 
@@ -796,13 +796,14 @@ Read on means the date read for this conversion. Limits follow each source. The 
 | Deduction of Tax at Source (Withholding) Regulations 2024, S.I. No. 34 of 2024, Gazette No. 168 of 2 October 2024, read in part: regs 1 to 13 and First Schedule page B763 (page image checked), page B764 not checked | https://archive.gazettes.africa/archive/ng/2024/ng-government-gazette-dated-2024-10-02-no-168.pdf | 2026-11-05 |
 | Pension Reform Act 2014, Act No. 4, Official Gazette No. 64 of 2 July 2014, NGF Digital Repository scan, read in part by page image: ss 2 to 4, 120; later amendments not checked | https://ngfrepository.org.ng:8443/bitstream/123456789/968/1/PENSION%20REFORM%20ACT%202014%20-%20GAZETTED%20COPY.pdf | 2026-11-05 |
 | Pension Reform Act 2014, PenCom copy, read for comparison only: ss 2 to 4 (page images; the text layer is garbled, and the title page says 'A Bill' with commencement blank) | https://www.pencom.gov.ng/wp-content/uploads/2018/01/PRA_2014.pdf | 2026-11-05 |
-| National Housing Fund Act Cap N45 LFN 2004, read in part: ss 4, 10; an unofficial host, and later amendments not checked | https://placng.org/lawsofnigeria/laws/N45.pdf | 2026-11-05 |
+| National Housing Fund Act Cap N45 LFN 2004, read in part: ss 4, 10; an unofficial host | https://placng.org/lawsofnigeria/laws/N45.pdf | 2026-11-05 |
+| Business Facilitation (Miscellaneous Provisions) Act 2022, Schedule Part XI paras 44-46 (National Housing Fund Act ss 4 and 9(1)) | https://nipc.gov.ng/assets/resources/business-facilitation-miscellaneous-provisions-act-2022/business-facilitation-misc-provisions-act-2022.pdf | 2026-11-26 |
 | National Minimum Wage (Amendment) Bill 2024, read in full; a Bill, not the Act | https://placng.org/i/wp-content/uploads/2024/07/National-Minimum-Wage-Amendment-Bill-2024.pdf | 2026-11-05 |
 | FCT Internal Revenue Service home page, read for its filing line and portal links | https://fctirs.gov.ng/ | 2026-11-05 |
 | FCT Internal Revenue Service public notice extending individual returns, read in full | https://fctirs.gov.ng/fct-irs-extends-deadline-for-filing-of-individual-tax-returns-by-one-month/ | 2026-11-05 |
 | Lagos Internal Revenue Service home page, read for its portal link; no filing notice shown | https://lirs.gov.ng/ | 2026-11-05 |
 
-Not yet confirmed: the final gazetted text of the Nigeria Tax Act 2025 (2 printed copies differ and press reports a December 2025 direction to gazette again); the official source, date and legal force of the General Transition Guidelines, on which the split between the 2 regimes rests; the printed NTAA commencement entry against the 1 January 2026 date in the Guidelines; how an individual's accounting year crossing 31 December 2025 is split; the minimum tax base under s 37 against the Sixth Schedule; the due date for returns on income of 2026; whether 2025 tax was payable with the return; the Lagos extension of the 2026 return date (press gives 14 and then 21 April 2026; no LIRS notice read); a minimum NGN 500,000 FCT-IRS late-filing penalty reported in the press and found in no text read; which authority collects from FCT residents for 2025 income (PITA text against FCT-IRS practice); which penalties apply to a late 2025 income return; whether the 2024 Withholding Regulations continue for 2026 payments; the enacted National Minimum Wage amount and Act; how the minimum wage carve-outs reach a self-employed person; any PITA change in the Finance Act 2023, which was not obtained; later amendment of the National Housing Fund Act; the National Health Insurance Authority Act; later amendment of the Pension Reform Act; whether a computer is plant for the Fifth Schedule; deductibility of stamp duty and the electronic transfer levy; capital or revenue treatment of CAC fees; a record retention period for 2025; whether rent relief reaches rent that is also a business expense or is not on a home; the Rev360 rollout (law-firm notes say it replaced TaxPro Max from 30 April 2026, with non-residents staying on TaxPro Max); whether Nigerian-performed services are 'earned from abroad'; which foreign income is chargeable solely by being brought in for PITA s 20(2); the business share of a mixed expense under NTA s 20(1); the exchange rate rule for foreign receipts; non-resident status under PITA; form names and portal fields; whether a sole proprietor's business is an 'enterprise' under reg 4(1)(e) of the Withholding Regulations; which year's payments count as eligible deductions against income of 2026; the words 'relief allowance' in the Fourth Schedule preamble; and the bank export formats.
+Not yet confirmed: the final gazetted text of the Nigeria Tax Act 2025 (2 printed copies differ and press reports a December 2025 direction to gazette again); the official source, date and legal force of the General Transition Guidelines, on which the split between the 2 regimes rests; the printed NTAA commencement entry against the 1 January 2026 date in the Guidelines; how an individual's accounting year crossing 31 December 2025 is split; the minimum tax base under s 37 against the Sixth Schedule; the due date for returns on income of 2026; whether 2025 tax was payable with the return; the Lagos extension of the 2026 return date (press gives 14 and then 21 April 2026; no LIRS notice read); a minimum NGN 500,000 FCT-IRS late-filing penalty reported in the press and found in no text read; which authority collects from FCT residents for 2025 income (PITA text against FCT-IRS practice); which penalties apply to a late 2025 income return; whether the 2024 Withholding Regulations continue for 2026 payments; the enacted National Minimum Wage amount and Act; how the minimum wage carve-outs reach a self-employed person; any PITA change in the Finance Act 2023, which was not obtained; the National Health Insurance Authority Act; later amendment of the Pension Reform Act; whether a computer is plant for the Fifth Schedule; deductibility of stamp duty and the electronic transfer levy; capital or revenue treatment of CAC fees; a record retention period for 2025; whether rent relief reaches rent that is also a business expense or is not on a home; the Rev360 rollout (law-firm notes say it replaced TaxPro Max from 30 April 2026, with non-residents staying on TaxPro Max); whether Nigerian-performed services are 'earned from abroad'; which foreign income is chargeable solely by being brought in for PITA s 20(2); the business share of a mixed expense under NTA s 20(1); the exchange rate rule for foreign receipts; non-resident status under PITA; form names and portal fields; whether a sole proprietor's business is an 'enterprise' under reg 4(1)(e) of the Withholding Regulations; which year's payments count as eligible deductions against income of 2026; the words 'relief allowance' in the Fourth Schedule preamble; and the bank export formats.
 
 ### Version history
 
