@@ -33,7 +33,7 @@ Missing eligibility, premiums, months, policy type, business attribution or cred
 
 ### Rates, bands and thresholds
 
-| Item and condition | 2026 | Source |
+| Item and condition | Amount, 2026 | Source |
 | --- | --- | --- |
 | Eligible paid premiums, before the earned-income cap | 100% | [162(l)(1)–(2)](https://uscode.house.gov/us/usc/t26/s162/) |
 | Nondependent child must be below this age at year end | 27 | [162(l)(1)(D)](https://uscode.house.gov/us/usc/t26/s162/) |
@@ -117,7 +117,7 @@ expected:
   cut_by_limit: 823.89
 ```
 
-### Historical 2025 cases — keep these inputs in 2025
+### Historical 2025 cases, keep these inputs in 2025
 
 These retain the earlier examples and tests. Except the explicit holds, results assume a qualifying established plan, no employer bar beyond stated months, no PTC/APTC, no Form 2555, no other SE business/wages and no retirement deduction. Missing original eligibility facts must be confirmed before using a result. Stated Medicare premiums are hypothetical actual payments, not a standard rate for 2026. For historical LTC only, [Rev. Proc. 2024-40 §2.28](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf) gives 480 / 900 / 1,800 / 4,810 / 6,020 across the same five age bands.
 
@@ -161,20 +161,20 @@ Confirm actual plan establishment, payments, covered people and employer eligibi
 
 | Source and portion actually read | URL | Read on |
 | --- | --- | --- |
-| Current 26 U.S.C. 162(l)(1)–(5), covered people, earned income, monthly bar, separate LTC treatment and deduction coordination | https://uscode.house.gov/us/usc/t26/s162/ | 2026-11-27 |
-| 401(c)(1)–(2), self-employment and earned-income dependencies | https://uscode.house.gov/us/usc/t26/s401/ | 2026-11-27 |
-| 213(a), (d)(1), (6), (10), medical care, own covered-person test, LTC cap and indexing | https://uscode.house.gov/us/usc/t26/s213/ | 2026-11-27 |
-| Rev. Proc. 2025-32 §4.27, five 2026 LTC limits | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-27 |
-| 2026 draft 7206, cover warning and lines 1–14; provisional locators only | https://www.irs.gov/pub/irs-dft/f7206--dft.pdf | 2026-11-27 |
-| 2026 draft Schedule 1, cover warning and adjustments lines 15–17 | https://www.irs.gov/pub/irs-dft/f1040s1--dft.pdf | 2026-11-27 |
-| Final 2025 Form 7206, lines 1–14 and footnotes; historical cases | https://www.irs.gov/pub/irs-prior/f7206--2025.pdf | 2026-11-27 |
-| Form 7206 instructions (2025), purpose, business establishment, Medicare, required form, multiple plans, other coverage and Schedule A/SE effects | https://www.irs.gov/instructions/i7206 | 2026-11-27 |
-| Rev. Proc. 2024-40 §2.28, historical 2025 LTC caps only | https://www.irs.gov/pub/irs-drop/rp-24-40.pdf | 2026-11-27 |
-| 2025 Schedule SE, lines 2–13; regular-SE arithmetic for historical examples; unchanged factors reused for current low-profit cases | https://www.irs.gov/pub/irs-prior/f1040sse--2025.pdf | 2026-11-27 |
-| Pub. 974 (2025), self-employed deduction/PTC, simplified/iterative methods and part-year examples; no 2026 credit parameters certified | https://www.irs.gov/pub/irs-pdf/p974.pdf | 2026-11-27 |
-| Pub. 502 (2025), insurance premiums, employer exclusions, self-employed persons and nondependent-child Schedule A restriction | https://www.irs.gov/pub/irs-pdf/p502.pdf | 2026-11-27 |
-| 1402(a), aggregation of business income/loss and regular-SE dependency | https://uscode.house.gov/us/usc/t26/s1402/ | 2026-11-27 |
-| 6072(a) calendar-year ordinary return deadline | https://uscode.house.gov/us/usc/t26/s6072/ | 2026-11-27 |
-| Form 4868 instructions, six-month extension and payment warning | https://www.irs.gov/pub/irs-pdf/f4868.pdf | 2026-11-27 |
+| Read for Current 26 U.S.C. 162(l)(1)–(5), covered people, earned income, monthly bar, separate LTC treatment and deduction coordination | https://uscode.house.gov/us/usc/t26/s162/ | 2026-11-27 |
+| Read for 401(c)(1)–(2), self-employment and earned-income dependencies | https://uscode.house.gov/us/usc/t26/s401/ | 2026-11-27 |
+| Read for 213(a), (d)(1), (6), (10), medical care, own covered-person test, LTC cap and indexing | https://uscode.house.gov/us/usc/t26/s213/ | 2026-11-27 |
+| Read for Rev. Proc. 2025-32 §4.27, five 2026 LTC limits | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-27 |
+| Read for 2026 draft 7206, cover warning and lines 1–14; provisional locators only | https://www.irs.gov/pub/irs-dft/f7206--dft.pdf | 2026-11-27 |
+| Read for 2026 draft Schedule 1, cover warning and adjustments lines 15–17 | https://www.irs.gov/pub/irs-dft/f1040s1--dft.pdf | 2026-11-27 |
+| Read for Final 2025 Form 7206, lines 1–14 and footnotes; historical cases | https://www.irs.gov/pub/irs-prior/f7206--2025.pdf | 2026-11-27 |
+| Read for Form 7206 instructions (2025), purpose, business establishment, Medicare, required form, multiple plans, other coverage and Schedule A/SE effects | https://www.irs.gov/instructions/i7206 | 2026-11-27 |
+| Read for Rev. Proc. 2024-40 §2.28, historical 2025 LTC caps only | https://www.irs.gov/pub/irs-drop/rp-24-40.pdf | 2026-11-27 |
+| Read for 2025 Schedule SE, lines 2–13; regular-SE arithmetic for historical examples; unchanged factors reused for current low-profit cases | https://www.irs.gov/pub/irs-prior/f1040sse--2025.pdf | 2026-11-27 |
+| Read for Pub. 974 (2025), self-employed deduction/PTC, simplified/iterative methods and part-year examples; no 2026 credit parameters certified | https://www.irs.gov/pub/irs-pdf/p974.pdf | 2026-11-27 |
+| Read for Pub. 502 (2025), insurance premiums, employer exclusions, self-employed persons and nondependent-child Schedule A restriction | https://www.irs.gov/pub/irs-pdf/p502.pdf | 2026-11-27 |
+| Read for 1402(a), aggregation of business income/loss and regular-SE dependency | https://uscode.house.gov/us/usc/t26/s1402/ | 2026-11-27 |
+| Read for 6072(a) calendar-year ordinary return deadline | https://uscode.house.gov/us/usc/t26/s6072/ | 2026-11-27 |
+| Read for Form 4868 instructions, six-month extension and payment warning | https://www.irs.gov/pub/irs-pdf/f4868.pdf | 2026-11-27 |
 
 Not yet confirmed: final 2026 Form 7206/Schedule 1 locators, 2026 Marketplace credit parameters and all expressly held specialist outcomes. No usable final result for a held issue: Check this point with one of our partner accountants.
