@@ -70,9 +70,7 @@ For bankruptcy, absence abroad, military/combat-zone service, spouse claims, For
 
 All amounts below include tax, penalties and interest. Individuals may apply online for a long-term plan at USD 50,000 or less with all required returns filed; for a short-term plan, the balance must be less than USD 100,000 and payable in 180 days or less. These are application conditions, not guaranteed approval. Sole proprietors apply as individuals. Otherwise contact the IRS or submit Form 9465 with financial information as required. [IRS payment plans](https://www.irs.gov/payments/payment-plans-installment-agreements)
 
-#### Rates, bands and thresholds
-
-| Plan setup | Online fee | Phone, mail or in-person fee | Source |
+| Plan setup | Amount, online | Amount, phone, mail or in person | Source |
 | --- | --- | --- | --- |
 | Short-term | USD 0 | USD 0 | [IRS payment plans](https://www.irs.gov/payments/payment-plans-installment-agreements) |
 | Long-term direct debit | USD 29 | USD 107 | [IRS payment plans](https://www.irs.gov/payments/payment-plans-installment-agreements) |
