@@ -5,15 +5,15 @@ jurisdiction: SZ
 category: international
 tax_year: 2026
 tax_year_notes: "Year of assessment to 30 June 2026"
-version: 0.3
-last_updated: 2026-11-14
+version: 0.4
+last_updated: 2026-11-26
 type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Eswatini Personal Income Tax v0.3
+# Eswatini Personal Income Tax v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -44,7 +44,7 @@ Tax is on income from a source within or deemed within Eswatini. Non-residents u
 
 ## Deadlines and filing
 
-Self-assessment applies to all taxpayers; pay on or before the return due date. For the year ended 30 June 2025 the notice set 31 October 2025 for presumptive taxpayers and 30 November 2025 for individuals with employment income above E3 million, with employment and other income, and high net worth individuals. A single-employer employee taxed on the Final Deduction System with gross employment income under E3 million does not file. Directors, clergy, partners, professionals, and people with several employers or with bank interest do file. A dividend already taxed by final withholding does not by itself require a return (notice para 2(d)), though para 1.1(l) lists interest or dividends from funds invested with banks, building societies and investment houses.
+Self-assessment applies to all taxpayers; pay on or before the return due date. For the year ended 30 June 2026 the ERS notice sets 31 October 2026 for non-individual entities, VAT and non-VAT registered businesses and presumptive taxpayers, and 30 November 2026 for individuals with employment income above E1,000,000, with employment and other income, or with movable or immovable assets worth more than E3 million. A single-employer employee taxed on the Final Deduction System does not file unless gross employment income is E1,000,000 or more (notice paras 1.1(l), 2(a)). Directors, clergy, partners, professionals, and people with several employers or with bank interest do file. A dividend already taxed by final withholding does not by itself require a return (notice para 2(d)), though para 1.1(k) lists interest or dividends from funds invested with banks, building societies and investment houses.
 
 ### How to file
 1. Register for a TIN using the ERS form at a Service Centre; registration takes 4 working days.
@@ -97,7 +97,7 @@ expected:
 ## Ask the client first
 
 1. Is the income from an Eswatini source, and are you ordinarily resident?
-2. Is employment your only income, from one employer, and under E3 million?
+2. Is employment your only income, from one employer, and under E1,000,000? Are your movable and immovable assets worth E3 million or less?
 3. What is your age on 30 June?
 4. Do you trade, and is turnover below E500,000? Is the work professional?
 5. Do you hold bank interest, dividends or rental income?
@@ -110,9 +110,10 @@ expected:
 | ERS, Rates and Thresholds: read in full | https://www.ers.org.sz/IncomeTax/RatesandThres | 2026-11-14 |
 | ERS, Presumptive Tax: read in full | https://www.ers.org.sz/IncomeTax/PresumptiveTax | 2026-11-14 |
 | ERS, Public Notice, returns for tax year end 2025 (scan): read in full for the filing deadlines and the 25% and 1.75% rates | https://www.ers.org.sz/whatsnew-file/1753959572719-FULL_PAGE___Income_Tax_Returns_Notice_2025.pdf | 2026-11-14 |
+| ERS, Public Notice, annual income tax return submission and payment for tax year end 2026: read in full for the deadlines, return thresholds and the 25% and 1.75% rates | https://ers.org.sz/whatsnew-file/1791462650754-1784270658474_Notice_for_Filing_Income_tax_Returns_Public_Notice_Final_Aligned.pdf | 2026-11-26 |
 | ERS, Income Tax Returns: read in full | https://www.ers.org.sz/IncomeTax/IncomeTaxReturn | 2026-11-14 |
 | ERS, Self Assessment: read in full | https://www.ers.org.sz/IncomeTax/SelfAssessment | 2026-11-14 |
 | ERS, Step-by-Step Guide for New Businesses: read in full | https://www.ers.org.sz/documents/Step-ByStepGuideforNewBusinesses.pdf | 2026-11-14 |
 | Income Tax Order 1975, ERS consolidated copy to the 2013 amendments: read for the cited sections | https://www.ers.org.sz/documents/IncomeTaxOrder1975.pdf | 2026-11-14 |
 
-Not yet confirmed: The commencement notice for the 2023 Act was not opened; 1 July 2024 rests on the ERS Presumptive Tax page. The ERS notice for returns for the year ended 30 June 2026 was not found, so 2025 dates are given as the latest published. The ERS Income Tax Returns page still gives E1.2 million; the 2025 notice says E3 million and the notice is used here. The guide gives E2 million for TIN registration, unresolved. The old pack's residence day-count test has no source: the Order uses "ordinarily resident" and no day count was found. The Third Schedule text names the year ended 30 June 2023 and no later schedule was found. The exempt lump sum under s 14(1)(l)(iii) was not extracted.
+Not yet confirmed: The commencement notice for the 2023 Act was not opened; 1 July 2024 rests on the ERS Presumptive Tax page. The ERS Income Tax Returns page still gives E1.2 million and the 2025 notice gave E3 million; the 2026 notice gives E1,000,000 and is used here. The guide gives E2 million for TIN registration, unresolved. The old pack's residence day-count test has no source: the Order uses "ordinarily resident" and no day count was found. The Third Schedule text names the year ended 30 June 2023 and no later schedule was found. The exempt lump sum under s 14(1)(l)(iii) was not extracted.
