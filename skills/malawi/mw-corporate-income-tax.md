@@ -4,16 +4,16 @@ description: "Malawi draft for 2026 ordinary non-mining company income-tax and m
 jurisdiction: MW
 tax_year: 2026
 tax_year_notes: "Intended 2026 research draft; Act 3/2026 read and relevant effects identified; appointed commencement chain unresolved; live use held."
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.5
+version: 1.6
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Malawi ordinary company tax and minimum alternative tax v1.5
+# Malawi ordinary company tax and minimum alternative tax v1.6
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 
@@ -45,7 +45,7 @@ Compute ordinary tax, adding the marginal excess charge. For a company meeting b
 
 ## Deadlines and filing
 
-Prepare the income-tax reconciliation, MAT turnover bridge, assessment-year age evidence, credit-year register and provisional receipts. Taxation 84A requires provisional payments within thirty days after each quarter; aggregate instalments must meet at least 90% actual liability, with separate seasonal-income rules. [Taxation 84A](https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content). Obtain the current annual filing deadline and prescribed return before submission: the old consolidated section 84(1) stating 180 days was deleted by the 2021 administrative cutover and is not cited as current law. TAA 40 requires the prescribed form/manner, signed by the authorized manager with completeness/accuracy declaration. Electronic filing recognition uses the document registration number under 38(3); keep it and payment proof. [2021 cutover Schedule](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content); [TAA 38–40](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content). Portal boxes and annual due-date authority remain partial.
+Prepare the income-tax reconciliation, MAT turnover bridge, assessment-year age evidence, credit-year register and provisional receipts. Taxation 84A(1), as replaced by Act 28/2018 s 12 (effective 1 July 2018), requires an initial estimate return not later than 25 days from the beginning of the first quarter and quarterly provisional payments within 25 days after the end of each quarter; aggregate instalments must meet at least 90% actual liability, with separate seasonal-income rules. [Act 28/2018 s 12](https://www.mra.mw/admin/storage/downloads/Taxation_Act_Amendment_2018.pdf); [Taxation 84A](https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content). Obtain the current annual filing deadline and prescribed return before submission: the old consolidated section 84(1) stating 180 days was deleted by the 2021 administrative cutover and is not cited as current law. TAA 40 requires the prescribed form/manner, signed by the authorized manager with completeness/accuracy declaration. Electronic filing recognition uses the document registration number under 38(3); keep it and payment proof. [2021 cutover Schedule](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content); [TAA 38–40](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content). Portal boxes and annual due-date authority remain partial.
 
 ## Penalties and interest
 
@@ -104,6 +104,7 @@ Get activity/special approvals, incorporation and Malawi-source facts, exact ass
 
 | Official source and portions actually read | Read on |
 |---|---|
+| [Act 28/2018](https://www.mra.mw/admin/storage/downloads/Taxation_Act_Amendment_2018.pdf), s 12 replacement of Taxation 84A(1) (25-day quarterly provisional tax deadline, effective 1 July 2018) | 2026-11-26 |
 | [Act 17/2023](https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content), ss 3,4,11 | 2026-11-01 |
 | [Act 12/2024](https://elibrary.rat.gov.mw/server/api/core/bitstreams/73f74c7c-868f-4521-9046-17cc5c13ced2/content), s 7 rate amendment, visually/OCR read printed p 3 | 2026-11-01 |
 | [Act 14/2025](https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content), ss 2–3 | 2026-11-01 |
@@ -111,7 +112,7 @@ Get activity/special approvals, incorporation and Malawi-source facts, exact ass
 | [Act 3/2026](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf), all six pages screened; ss 4 and 12 applied here, with principal section 45 context | 2026-11-01 |
 | [Taxation principal official-library copy](https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content), ss 2,11,84A; this consolidation is old and is not used for current rates/annual filing | 2026-11-01 |
 | [TAA 2021](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content), ss 38–40,86–87 | 2026-11-01 |
-| [2021 cutover Act 15](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content), Taxation Schedule entries 84,102,106 | 2026-11-01 |
+| [2021 cutover Act 15](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content), Taxation Schedule entries 84, 102 and 106 | 2026-11-01 |
 | [MRA updated notice](https://www.mra.mw/admin/storage/download_files/1767952247_NEW%20TAX%20MEASURES...pdf), income-tax/MAT rates and date compared with earlier notice | 2026-11-01 |
 
 **Not yet confirmed:** appointed commencement notices for TAA/cutover and full period allocation; annual filing/balance-payment deadline under current authority; authenticated return fields; exact commencement/straddling-period allocation at the December 2025 amendment; full capital allowances, losses, indexed gains and specialist sectors; new listed-share final withholding and its exemptions under Act 3/2026 s 13 must be reconciled before any listed-share disposal computation; dividend 10%, bank interest finality/rate, royalty resident/non-resident split and mining 10% claims from the old file. Do not apply those old withholding figures pending their own source checks.
