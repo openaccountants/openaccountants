@@ -79,15 +79,15 @@ This skill does NOT cover:
 | Cents per km rate (motor vehicle) | 88 cents per km (2024-25 and 2025-26); 91 cents (2026-27) | ATO cents per kilometre method |
 | Cents per km cap | 5,000 business km per car per year | ITAA 1997 s 28-25 |
 | Home office fixed rate | 70 cents per hour for 2024–25 and 2025–26; 67 cents for 2022–23 and 2023–24. Check the published rate for 2026–27 before use. | [ATO fixed rate method](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses/fixed-rate-method) |
-| Trading stock threshold (change in value) | A qualifying business with aggregated turnover below $50 million can elect to skip a stocktake if its reasonable estimate of the opening-to-closing difference is $5,000 or less. | [ATO simplified trading stock rules](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/accounting-for-trading-stock/simplified-trading-stock-rules) |
-| Prepaid expenses | Eligible businesses with aggregated turnover below $50 million can apply the 12-month rule to otherwise deductible prepayments. The eligible service period must be 12 months or less and end by the last day of the next income year. | [ATO deductions for prepaid expenses 2026](https://www.ato.gov.au/law/view/document?docid=SAV%2FDPE) |
+| Trading stock threshold (change in value) | Apply the $5,000 opening-to-closing difference test to small business entities and entities that meet the small business test with the $50 million threshold substituted under subsection 328-285(2). | [ITAA 1997 s 328-285](https://www.legislation.gov.au/C2004A05138/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_7/document_7.html) |
+| Prepaid expenses | For the 12-month rule, eligible businesses include entities that meet the small business test with the $50 million threshold substituted under subsection 82KZM(1A). Check the service period and exclusions in section 5.3. | [ITAA 1936 s 82KZM](https://www.legislation.gov.au/C1936A00027/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
 
 - **Instant asset write-off threshold:** For 2025–26, eligible small business entities using simplified depreciation can deduct assets costing less than $20,000 when first used or installed ready for taxable use. The permanent threshold was enacted on 26 August 2026; schedule 2 commences on 1 October 2026 and applies to specified first use or installation from 1 July 2026. [Tax Reform No. 2 Act 2026, schedule 2](https://www.legislation.gov.au/C2026A00071/asmade/text).
 - **Small business entity threshold** -- Aggregated turnover < $10M  _(ITAA 1997 s 328-110)_
 - **Cents per km rate (motor vehicle)** -- 88 cents per km for 2024–25 and 2025–26; 91 cents per km for 2026–27. Check the applicable rate for later years. [ATO cents per kilometre method](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/motor-vehicle-and-car-expenses/expenses-for-a-car-you-own-or-lease/cents-per-kilometre-method).
 - **Cents per km cap** -- 5,000 business km per car per year  _(ITAA 1997 s 28-25)_
 - **Home office fixed rate** -- 70 cents per hour for 2024–25 and 2025–26. Check the ATO's published rate for any other year.
-- **Trading stock threshold (change in value):** Apply the same $5,000 test to eligible businesses with aggregated turnover below $50 million.
+- **Trading stock threshold (change in value):** The $50 million substitution is specific to [ITAA 1997 subsection 328-285(2)](https://www.legislation.gov.au/C2004A05138/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_7/document_7.html). Work out the reasonable stock estimate in section 4.2.
 - **Prepaid expenses:** Apply the 12-month rule and check the exclusions in section 5.3.
 
 ## Section 4 -- Computation rules
@@ -98,7 +98,7 @@ This skill does NOT cover:
 
 ### 4.2 Cost of sales / Cost of goods sold
 
-- **Cost of goods sold**: Step 1. Opening stock + Purchases - Closing stock = Cost of goods sold. Step 2. Trading stock can be valued at cost, market selling value, or replacement value (ITAA 1997 s 70-45). The method can differ item by item. Step 3. If a qualifying business with aggregated turnover below $50 million reasonably estimates that year-end trading stock differs from opening stock by $5,000 or less (s 328-285), the taxpayer can elect to use the same value as opening stock (no stocktake required).  _(ITAA 1997 s 70-45)_ [ATO simplified trading stock rules](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/accounting-for-trading-stock/simplified-trading-stock-rules).
+- **Cost of goods sold:** Opening stock plus purchases less closing stock. Choose cost, market selling value or replacement value item by item under section 70-45. If eligible under [ITAA 1997 subsections 328-285(1) and (2)](https://www.legislation.gov.au/C2004A05138/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_7/document_7.html) and the opening-to-closing difference is reasonably estimated at $5,000 or less, you can elect to carry forward the opening value and skip the stocktake.
 
 The P21 notification concerns an elected closing value below the lowest ordinary valuation under section 70-50. Enter Y at P21 label P when the election requires notice. [ATO 2026 P21 instructions](https://www.ato.gov.au/forms-and-instructions/business-and-professional-items-schedule-2026-instructions/instructions-to-complete-the-bpi-schedule-2026/trading-stock-election-p21).
 
@@ -265,7 +265,7 @@ expected:
 
 ### 5.3 Prepaid expenses (SBE)
 
-- **Prepaid expenses:** The 12-month rule applies to eligible otherwise deductible expenses for qualifying businesses with aggregated turnover below $50 million. The eligible service period must be 12 months or less and end by 30 June of the following income year for a 30 June balancer. Prepayments under tax shelter arrangements are subject to separate rules. A qualifying 12-month policy incurred and paid in May 2026 and covering May 2026 through April 2027 meets the timing tests for a deduction in 2025-26. [ATO deductions for prepaid expenses 2026](https://www.ato.gov.au/law/view/document?docid=SAV%2FDPE).
+- **Prepaid expenses:** Apply the 12-month rule to otherwise deductible costs if the taxpayer is a small business entity or meets the small business test with the $50 million threshold substituted under [ITAA 1936 subsection 82KZM(1A)](https://www.legislation.gov.au/C1936A00027/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html), and has not chosen to spread the expenditure under section 82KZMD. The eligible service period must be 12 months or less and end by 30 June of the following income year for a 30 June balancer. Prepayments under tax shelter arrangements are subject to separate rules. A qualifying 12-month policy incurred and paid in May 2026 and covering May 2026 through April 2027 meets the timing tests for a deduction in 2025-26.
 
 ### 5.4 Capital vs revenue
 
