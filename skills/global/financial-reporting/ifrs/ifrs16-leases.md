@@ -1,9 +1,9 @@
 ---
 name: ifrs16-leases
-description: "IFRS 16 lease identification, recognition exemptions, measurement, modifications, lessor and sale-and-leaseback working papers, with a 2024 amendment basis and explicit source-access boundaries. Load financial-reporting-workflow-base."
-version: 0.4
+description: "IFRS 16 lease identification, exemptions, lessee measurement, remeasurement, modifications, sale-and-leaseback, subleases and lessor working papers. Includes recomputing examples and explicit holds for unproven comparisons. Load financial-reporting-workflow-base."
+version: 0.5
 jurisdiction: GLOBAL
-last_updated: 2026-11-16
+last_updated: 2026-11-27
 depends_on:
   - financial-reporting-workflow-base
 category: financial-statements
@@ -13,222 +13,116 @@ domain: financial-reporting
 type: computation
 standard: "IFRS 16 Leases"
 effective_date: 2024-01-01
-source_checked: 2026-11-16
+source_checked: 2026-11-27
 ---
 
-# IFRS 16 leases v0.4
+# IFRS 16 leases v0.5
 
-**Coverage is partial:** individually identified supporting-source and current US comparison gaps below remain outside usable instructions.
-
-**General reference only.** Produces working papers and a reviewer brief, not an audit, assurance opinion or signed financial statements. Tier 2; not approved by an accountant.
+**General reference only.** Produces working papers and a reviewer brief, not an audit, assurance opinion or signed financial statements. Load `financial-reporting-workflow-base` for the output contract and journal format. Obtain professional review before reliance.
 
 ## Scope
 
-**Standard and effective-date basis:** IFRS 16 Leases; effective-date key **2024-01-01** for Lease Liability in a Sale and Leaseback. C1D applies that amendment to annual periods beginning on or after 1 January 2024, with earlier application permitted and disclosed. Its C20E retrospective scope is stated below; this date does not assert initial adoption of the whole Standard or future IFRS 18 amendments. [IFRS 16.C1D/C20E](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html).
+Use for IFRS lessees, lessors and intermediate lessors. The operative version includes **Lease Liability in a Sale and Leaseback**, effective for annual periods beginning on or after **1 January 2024**; earlier application is permitted and disclosed. Apply that amendment retrospectively under IAS 8 to sale-and-leaseback transactions entered into after initial application of IFRS 16, not just transactions from 2024. IFRS 16 initially applied from annual periods beginning **1 January 2019**; early application required IFRS 15 at or before initial application and disclosure. C21 replaced IAS 17, IFRIC 4, SIC-15 and SIC-27. Local endorsement and entity-specific adoption require confirmation. [IFRS 16.C1, C1D, C20E, C21](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_C1).
 
+Exclude mineral/oil/gas exploration or use leases; IAS 41 biological assets held by a lessee; IFRIC 12 service concessions; IFRS 15 intellectual-property licences granted by a lessor; and lessee IAS 38 licensing rights such as films, manuscripts, patents and copyrights. For other intangible-asset leases, lessee application is optional. [IFRS 16.3–4](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_3).
 
-**This is a content skill that loads on top of `financial-reporting-workflow-base`.** It supplies the recognition, measurement, presentation, and disclosure rules for leases under IFRS. The base supplies the two-layer output contract, the journal-entry format, and the self-checks.
-
-- **Scope**  -  IFRS 16 applies to all leases except: leases to explore for or use minerals/oil/gas, leases of biological assets within IAS 41 held by a lessee, service concession arrangements (IFRIC 12), licences of intellectual property granted by a lessor (IFRS 15), and rights held under licensing agreements for items such as films, patents, and copyrights (IAS 38).  _(IFRS 16.3)_
-
-
-This skill covers:
-
-- Identifying a lease  -  an identified asset the customer controls the use of (`IFRS 16.9`–`.11`, `B9`–`B33`).
-- The **lessee single model**: one accounting treatment for every lease (other than exemptions), normally front-loaded for a level-payment cost-model lease.
-- The **2 recognition exemptions**: short-term leases and low-value-asset leases (`IFRS 16.5`–`.8`).
-- Initial and subsequent measurement of the lease liability and right-of-use (ROU) asset (`IFRS 16.22`–`.38`).
-- The discount rate, variable lease payments, reassessment, remeasurement, and modifications.
-- Sale-and-leaseback (`IFRS 16.98`–`.103`) and sublease classification (`IFRS 16.B58`).
-- The **lessor model** retained from IAS 17: finance vs. operating (`IFRS 16.61`–`.97`).
-
-This skill does NOT cover: lessor revenue subject to `IFRS 15`, impairment of ROU assets (`IAS 36`, cross-referenced). It defers the US GAAP treatment to `us-gaap-asc842-leases`.
-
-
-**Version basis for 2026 work.** IFRS 16 initially applies to annual periods beginning on or after 1 January 2019; early application requires IFRS 15 at or before initial application and disclosure (C1). It replaced IAS 17, IFRIC 4, SIC-15 and SIC-27 (C21). The sale-and-leaseback amendment applies from annual periods beginning on or after 1 January 2024; IFRS 18 consequential amendments are excluded until adopted. The 2026 issued HTML also contains future-effective text; do not assume its publication year is its effective date. The operative core was personally read in the official copy retrieved on 14 November 2026. Official retrieval succeeded again on 16 November 2026 and the core was reconciled with that body; selected supporting clauses were personally read on 16 November. The source table distinguishes those reads from retrieval alone.
+**Version gate:** the 2026 issued text contains amendments that apply only when IFRS 18 is applied. Do not apply its amended paragraph 49 or amended IAS 7 interest rules merely because the source says 2026. [IFRS 16.C1E](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_C1E); [IAS 7.64](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ias7.html#IAS07_64).
 
 ## Ask the client first
 
-- Reporting-period start/end, IFRS 18 early adoption, lessee/lessor/intermediate-lessor role and complete contract.
-- Identified asset, substitution rights, decision rights, non-lease services and component election.
-- Commencement, enforceable term, options, incentives, guarantees, payment schedule and index/floating-rate clauses.
-- Evidenced implicit rate or incremental borrowing rate, direct costs, prepayments, restoration obligation and depreciation basis.
-- Short-term/low-value elections, subleasing plans, modifications, sale-and-leaseback terms and opening balances.
+Obtain the reporting period, applicable endorsed framework and IFRS 18 adoption facts; entity role; complete contracts and amendments; asset/substitution/decision rights; non-lease services; enforceable period and options; commencement date; payment timing, incentives, index/rate clauses and guarantees; evidenced discount rate; prepayments/direct costs; restoration obligations; useful life and depreciation method; exemption elections; sublease plans; opening balances and sale-and-leaseback terms. Missing evidence prevents a final conclusion.
 
 ## The method, step by step
 
-### Section 2  -  Reference layer (Layer A): identifying a lease and the single model
+### 1. Identify and separate the lease
 
-### Step 0  -  Is there a lease?  -  `IFRS 16.9`–`.11`, `B9`–`B33`
+At contract inception test whether consideration buys control of an identified asset for a period. Throughout that period the customer must obtain substantially all economic benefits from use and direct its use. Explicit or implicit specification can identify the asset. Reassess lease identification only when contract terms change. [IFRS 16.9–11, B9, B13](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_9).
 
-- **Lease identification test**  -  A contract is, or contains, a lease if it conveys the right to control the use of an identified asset for a period in exchange for consideration. Control requires both: 1) The right to obtain substantially all of the economic benefits from use of the identified asset (B21–B23); and 2) The right to direct the use of the asset (B24–B30). An asset is identified when explicitly or implicitly specified and the supplier has no substantive substitution right (B13–B19). If the supplier both benefits economically from substituting and has the practical ability to substitute throughout the period of use, there is no identified asset  -  it is a service contract.  _(IFRS 16.9–.11, B9–B33)_
+A supplier substitution right defeats identification only when the supplier both can practically substitute and benefits economically from doing so throughout the period of use. A repair/maintenance or technical-upgrade right alone does not defeat identification. If the customer cannot readily assess substantiveness, presume the right is not substantive. A capacity portion must be physically distinct or represent substantially all capacity. [IFRS 16.B14–B20](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_B14).
 
-### Step 1  -  Determine the lease term  -  `IFRS 16.18`–`.21`
+The customer directs how and for what purpose the asset is used. If those decisions are predetermined, the customer must either control operation throughout use without the supplier changing its instructions, or have designed the asset so as to predetermine its use. Protective rights alone do not remove control. [IFRS 16.B24, B30](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_B24).
 
-- **Lease term determination**  -  Lease term = non-cancellable period + periods covered by an extension option the lessee is reasonably certain to exercise + periods covered by a termination option the lessee is reasonably certain not to exercise.  _(IFRS 16.18–.21)_
+Separate lease components from non-lease components and allocate lessee consideration using relative standalone prices; estimate unavailable standalone prices using observable information as far as possible. Separate lease components require benefit alone/with readily available resources and no high dependency/interrelation with other leased assets. Charges transferring no good/service are not separate components. A lessee may instead elect, by underlying-asset class, to combine each lease component with associated non-lease components. That election excludes embedded derivatives meeting IFRS 9.4.3.3. For a non-financial-asset host, that paragraph requires all three: risks not closely related, standalone derivative definition satisfied, and no whole-hybrid fair-value-through-profit-or-loss measurement. Detailed derivative valuation is held below. Lessors allocate under IFRS 15.73–90, not the lessee election. [IFRS 16.12–17, B32–B33](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_12); [IFRS 9.4.3.3](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs9.html#IFRS09_4.3.3).
 
-⚑ AUDIT FLASH POINT  -  reasonably-certain option assessment. Renewal/termination judgement sizes both the ROU asset and the lease liability. "Reasonably certain" is a high threshold based on economic incentive (significant leasehold improvements, below-market rate, criticality of the asset). Document the economic-incentive and enforceable-term analysis; the lessee has no operating-lease classification alternative.
+### 2. Determine term and exemptions
 
-### Step 2  -  The lessee SINGLE model  -  `IFRS 16.22`
+Determine the enforceable period first: enforceability ends when both parties can terminate without the other's permission with no more than an insignificant penalty; consider broader economics, not just termination payments. A lessee-only termination right is an option for the lessee to assess; a lessor-only right does not shorten the non-cancellable period. Lease term includes the non-cancellable period, reasonably-certain extension options and periods under termination options reasonably certain not to be exercised. Consider all economic incentives, including significant improvements, replacement costs and contractual pricing. If an option combined with other features guarantees substantially the same minimum/fixed cash return regardless of exercise, assume reasonably-certain extension/non-termination (B38). Reassess options on a significant event/change within the lessee's control affecting reasonable certainty; revise term when the non-cancellable period changes. [IFRS 16.18–21, B34–B41](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_18).
 
-- **Lessee single model**  -  At the commencement date, a lessee recognizes a right-of-use asset and a lease liability for every lease, except those to which a recognition exemption is applied (§3). There is no finance-versus-operating classification for lessees  -  IFRS 16 abolished it. The cost-model lessee normally recognises depreciation and interest separately; the expense profile depends on the cash-flow and asset-measurement facts.  _(IFRS 16.22)_
+**AUDIT FLASH POINT** — document enforceability and option judgements before computing present value.
 
-### Step 3  -  The expense is normally front-loaded for a level-payment cost-model lease  -  `IFRS 16.31`, `.36`–`.38`
+- **Short-term election:** term **12 months or less at commencement**, with **no purchase option**; elect by underlying-asset class. A modification or term change makes an exempt short-term lease a new lease for this assessment. [IFRS 16.5–8, Appendix A](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_5).
+- **Low-value election:** elect lease by lease; assess absolute value **when new**, irrespective of lessee size or materiality. The asset must be usable alone/with readily available resources and not highly dependent on/interrelated with other assets. Cars typically fail; tablets, small office furniture and telephones can qualify. A head lease subleased or expected to be subleased cannot qualify. Bundling does not replace the per-asset conditions. The operative paragraphs supply no monetary threshold; the historical monetary suggestion is held below. [IFRS 16.8, B3–B8](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_B3).
+- If elected, expense payments straight-line over the term, or on another systematic basis when more representative of the benefit pattern; stop the lessee ROU/liability computation. [IFRS 16.6](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_6).
 
-- **Front-loaded expense mechanics**  -  The ROU asset is depreciated (typically straight-line) over the shorter of the lease term and the asset's useful life  -  over the useful life if ownership transfers or a purchase option is reasonably certain (16.32). The lease liability accretes interest at the discount rate; each payment splits into interest and principal (16.36–.38). With a positive discount rate, level payments in arrears, straight-line depreciation and no remeasurement, interest usually declines, so combined expense is front-loaded. Zero-rate, increasing-payment, fair-value/revaluation and capitalised-cost cases do not support an always-front-loaded claim. Under a conventional EBITDA definition, separately expensed depreciation and interest are excluded; their exact financial-statement line items and any covenant EBITDA definition require separate assessment.  _(IFRS 16.31, .36–.38)_
+### 3. Measure the lessee liability and ROU asset
 
-### Section 3  -  Reference layer: exemptions, measurement, and special topics
+At commencement recognise a right-of-use (ROU) asset and lease liability for a recognised lease; there is no lessee finance/operating classification. Liability equals present value of payments unpaid at commencement. Use the implicit rate if readily determinable, otherwise the lessee's incremental borrowing rate: similar term/security, funds for an asset of similar value to the ROU asset, and similar economic environment. [IFRS 16.22, .26, Appendix A](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_26).
 
-### The 2 recognition exemptions  -  `IFRS 16.5`–`.8`
+Include fixed and in-substance fixed payments less incentives receivable; index/rate-linked payments using the commencement index/rate; expected residual-guarantee payments; purchase price if exercise is reasonably certain; and termination penalties when the term reflects termination. Assess B42 before excluding variable payments: unavoidable payments include variability that resolves, the only realistic payment set, or the discounted lowest realistic set when at least one must be paid. [IFRS 16.27–28, B42](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_27).
 
-- **Recognition exemptions**  -  A lessee may elect not to apply the single model to: 1) Short-term leases  -  a lease with a term of 12 months or less at commencement, with no purchase option (16.5(a), definition in Appendix A). Elected by class of underlying asset. 2) Leases of low-value assets  -  assets that, when new, are of low value (16.5(b), B3–B8). The operative Standard gives no monetary cap. Assess the value when new and the conditions in B3-B8; tablets, small office furniture and telephones are examples. The legacy monetary BC100 assertion is reserved below because that Basis text was not read. Elected on a lease-by-lease basis. The assessment is on absolute value when new, regardless of materiality to the lessee. For exempt leases, recognize the payments as an expense on a straight-line basis (or another systematic basis) over the term (16.6).  _(IFRS 16.5–.8)_
+ROU cost = initial liability + payments at/before commencement minus incentives received + initial direct costs + qualifying restoration/dismantling estimate. Initial direct costs are incremental costs that would not have arisen without obtaining the lease. Avoid counting the same incentive twice. Recognise restoration cost when the obligation arises, which can be later than commencement; production-inventory costs follow IAS 2. [IFRS 16.23–25, Appendix A](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_24).
 
-⚑ AUDIT FLASH POINT  -  low-value exemption uses an absolute, not entity-relative, test. The current ASC exemption comparison is retained below for source recovery. The operative low-value assessment is per underlying asset, not per portfolio  -  bundling many low-value assets into one lease does not itself disqualify the items, but assess each underlying asset's value when new subject to B5's usable-alone/readily-available-resource and dependency conditions stated below. Document the policy and the per-asset basis.
+Restoration obligations are recognised/measured under IAS 37. A provision needs a present legal/constructive obligation from a past event, probable outflow and reliable estimate; future operating expenditure alone is insufficient. Use the period-end best estimate, discounting when time value is material at a pre-tax rate reflecting time value and liability-specific risks not already included in cash flows. Future events enter only with sufficient objective evidence. [IAS 37.14, .17–19, .36, .45–48](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ias37.html#IAS37_14).
 
-### Initial measurement  -  `IFRS 16.24`–`.28`
+**AUDIT FLASH POINT** — a restoration clause does not automatically create a day-one provision for every lease.
 
-- **Lease liability initial measurement**  -  Lease liability = present value of the lease payments not yet paid, discounted at the interest rate implicit in the lease if readily determinable; otherwise the lessee's incremental borrowing rate.  _(IFRS 16.26–.27)_
-- **Lease payments included**  -  Lease payments included (16.27): fixed payments, including in-substance fixed payments under B42 (less incentives receivable), variable payments that depend on an index or rate (measured initially using the index/rate at commencement), amounts expected under residual value guarantees, the exercise price of a reasonably-certain purchase option, and termination penalties if the term reflects termination.  _(IFRS 16.27)_
-- **ROU asset initial measurement**  -  ROU asset (16.24) = lease liability + lease payments made at/before commencement (prepaid) + initial direct costs − lease incentives received + an estimate of dismantling/removal/restoration costs the lessee is obligated to incur (recognized as a provision under IAS 37).  _(IFRS 16.24)_
+### 4. Subsequent measurement and modifications
 
-⚑ AUDIT FLASH POINT  -  restoration costs are baked into the ROU asset. IFRS 16.24(d) brings the day-one dismantling/restoration provision into the ROU asset (mirrored by an IAS 37 provision). Omitting it understates both the asset and the provision and distorts depreciation. The ASC 410/842 comparison remains reserved below.
+Under the cost model carry the ROU asset at cost less accumulated depreciation/impairment, adjusted for liability remeasurement. Apply IAS 16 depreciation: useful life of the underlying asset if ownership transfers or ROU cost reflects exercise of a purchase option; otherwise the earlier of ROU useful life and lease-term end. Straight-line is an example assumption, not compulsory for every lease. IAS 36 determines impairment. [IFRS 16.29–33](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_29); [IAS 16.60–62](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ias16.html#IAS16_60).
 
-For restoration provisions, IAS 37.14 requires a present legal/constructive obligation from a past event, a probable outflow and a reliable estimate. Future operating expenditure alone is not an obligation (.17-.26). Measure the best estimate at period end; discount when time value is material using a pre-tax rate reflecting liability risks not already included in cash flows, without double-counting (.36-.52). IFRS 16.24-.25 determines whether the cost enters the ROU asset or, for production inventory, IAS 2. This is not an automatic day-1 provision for every lease.
+If the lessee applies IAS 40's fair-value model to investment property, apply it to ROU assets meeting the investment-property definition. If IAS 16 revaluation is used for a PPE class, the lessee may elect that model for all ROU assets relating to that class. Detailed eligibility/valuation is held below. [IFRS 16.34–35](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_34).
 
-### Subsequent measurement  -  `IFRS 16.29`–`.46`
+Increase liability for interest at a constant periodic rate, reduce it for payments, and remeasure as required. Interest and variable payments excluded from liability enter profit or loss when triggered, unless included in another asset under another Standard. Positive-rate, level-payment, straight-line cost-model leases without remeasurement normally produce declining combined depreciation/interest expense; **not every lease is front-loaded**. Do not promise an EBITDA result without the applicable reporting/covenant definition. [IFRS 16.36–38](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_36).
 
-- **Subsequent measurement rules**  -  ROU asset carried at cost less accumulated depreciation and impairment (cost model), or revaluation/fair-value models where the related IFRS (IAS 16, IAS 40) is applied to that asset class. Lease liability remeasured for reassessments and modifications (below).  _(IFRS 16.29–.46)_
+Remeasure for:
+- term or purchase-option reassessment: revised payments and revised implicit rate if determinable, otherwise current incremental borrowing rate (.40–41);
+- changed expected residual guarantee or index/rate-linked contractual payments: revised payments and unchanged discount rate, except floating-interest-rate changes use a revised rate (.42–43). Remeasure an index reset **when the contractual cash-flow adjustment takes effect**, not every index publication.
 
-### Variable lease payments  -  `IFRS 16.27(b)`, `.42`
+Ordinary remeasurement adjusts the ROU asset; if it reaches zero, a further liability reduction goes to profit or loss. [IFRS 16.39–43](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_39).
 
-- **Variable lease payments treatment**  -  Payments depending on an index or rate are included in the liability at the index/rate at commencement; when the resulting contractual payment change takes effect, the liability is remeasured using revised payments (16.42(b)), with the adjustment against the ROU asset. Variable payments based on usage or performance (e.g. % of sales) are excluded and expensed as incurred (16.38(b)).  _(IFRS 16.27(b), .42)_
+A modification is a separate lease only if it adds rights to one or more underlying assets and consideration is commensurate with the standalone price of the added scope, appropriately adjusted for contract circumstances. Otherwise, at its effective date reallocate consideration, redetermine term and discount revised payments using revised implicit rate/IBR. Scope decreases reduce the ROU asset for partial/full termination and recognise the related gain/loss; other modifications adjust the ROU asset. [IFRS 16.44–46](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_44).
 
-⚑ AUDIT FLASH POINT  -  index-linked payment changes. Under IFRS 16 the resulting change in contractual cash flows triggers remeasurement when the payment adjustment takes effect; the current ASC treatment remains reserved below. Do not assume identical CPI-linked-rent mechanics for a dual-reporter.
+For qualifying benchmark-reform modifications, apply the .42 expedient only where the change is a direct consequence of reform and economically equivalent to the preceding basis. Additional simultaneous modifications bring all changes into the applicable modification requirements. C20C–D require retrospective application subject to their no-hindsight/prior-period-restatement relief and opening-equity adjustment. IFRS 9 reform qualification and detailed transition execution are held below. [IFRS 16.104–106, C20C–D](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_104).
 
-### Reassessment and remeasurement  -  `IFRS 16.39`–`.43`
+### 5. Sale and leaseback, subleases and lessors
 
-- **Reassessment and remeasurement triggers**  -  Remeasure the liability (adjusting the ROU asset; once the ROU asset is reduced to nil, further reductions go to P&L) when: the lease term or purchase-option assessment changes (use a revised discount rate); the amount expected under a residual value guarantee changes; or future payments change due to an index/rate (use an unchanged discount rate for residual-guarantee and index-only changes; a floating-interest-rate change requires a revised discount rate under .43).  _(IFRS 16.39–.43)_
+Apply IFRS 15's performance-obligation satisfaction requirements to decide whether the transfer is a sale; obtain the separate control/repurchase assessment. If a sale, seller-lessee ROU equals the proportion of previous carrying amount relating to retained use; recognise gain/loss only for rights transferred. Buyer-lessor accounts for the purchase under applicable Standards and the lease under lessor requirements. Below-market terms are prepaid lease payments; above-market terms are additional financing. Measure that adjustment using the more readily determinable of consideration-versus-asset fair-value difference and contractual-versus-market lease-payment PV difference. [IFRS 16.98–102](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_99).
 
-### Modifications  -  `IFRS 16.44`–`.46`
+After commencement apply .29–35 to the leaseback ROU and .36–46 to its liability, determining payments/revised payments so no gain/loss on retained use is recognised; partial/full-termination gains/losses remain possible. This includes variable-payment leasebacks; do not mechanically apply the ordinary usage-payment exclusion to eliminate their liability. If transfer is not a sale, seller retains the asset and records an IFRS 9 liability equal to proceeds; buyer records an IFRS 9 financial asset and no transferred asset. Detailed IFRS 9 execution is held below. [IFRS 16.100, .102A–103](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_102A).
 
-- **Modification treatment**  -  A modification that increases scope by adding a right of use at a price commensurate with its standalone price → separate lease (16.44). Otherwise, remeasure the liability using a revised discount rate at the effective date. A modification that decreases scope reduces the ROU asset and recognizes a gain or loss on the partial termination in P&L (16.46); other modifications adjust the ROU asset only.  _(IFRS 16.44–.46)_
+An intermediate lessor classifies a sublease by reference to the head-lease ROU asset, not the underlying asset, except that a short-term head lease expensed under .6 makes the sublease operating. Otherwise apply the full risks-and-rewards assessment; a single term/value indicator is not conclusive. [IFRS 16.B58, .62–65](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_B58).
 
-### Interest-rate benchmark reform modification exception
+A lessor classifies at inception as finance if substantially all ownership risks/rewards transfer, otherwise operating. Ownership/purchase options, major-part term, substantially-all PV, specialised nature and other .63–64 indicators are assessed together; no universal numeric bright line is supplied. Reassess classification only for modification, not changes in estimates/circumstances. A finance lessor presents a receivable at net investment, using the implicit rate; an intermediate lessor unable to determine the sublease implicit rate may use the head rate adjusted for sublease direct costs. A lessor's operating-lease asset remains presented by its nature; recognise income straight-line or another more representative systematic benefit-diminution basis. [IFRS 16.61–69, .81–88](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_61).
 
-For lessee modifications changing the basis of future payments because of qualifying interest-rate benchmark reform, .104–.105 require the .42 expedient only if the change is both a direct consequence of reform and economically equivalent to the immediately previous basis. Qualifying reform uses the IFRS 9 definition/references in .104, so obtain that separate assessment rather than assuming every interest change qualifies. If additional modifications occur at the same time, .106 requires applying the applicable IFRS 16 modification requirements to all simultaneous changes, including the reform change. Read the C20C–C20D transition if first applying those amendments; no blanket prospective-only rule follows. _(IFRS 16.104–.106, C20C–C20D)_
+### 6. Presentation, disclosures and reviewer brief
 
-### Sale-and-leaseback  -  `IFRS 16.98`–`.103`
+Present ROU assets/liabilities separately or identify their balance-sheet lines in the notes; non-separate ROU presentation uses the line for corresponding owned assets. ROU investment property is presented as investment property. Present lease interest separately from ROU depreciation. Principal cash payments are financing; exempt short-term/low-value and excluded variable cash payments are operating. Interest follows the applicable version of IAS 7; pre-IFRS-18 classification remains held below. [IFRS 16.47–50](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_47).
 
-- **Sale-and-leaseback treatment**  -  First apply IFRS 15 to determine whether the transfer is a sale (does control pass to the buyer-lessor?). If it is a sale, the seller-lessee measures the ROU asset arising from the leaseback at the proportion of the previous carrying amount of the asset that relates to the right of use it retains, and recognizes a gain or loss only on the rights transferred to the buyer-lessor (16.100). Off-market terms are adjusted (16.101). If the transfer is not a sale, the seller-lessee continues to recognize the asset and accounts for the proceeds as a financial liability under IFRS 9 (16.103).  _(IFRS 16.98–.103)_
+For entities applying IFRS 18, IAS 7.34A generally makes interest paid financing. Entities investing in assets or financing customers as a main business use .34B–D's P&L-linked classification and single-category requirements; if P&L interest spans categories, apply the specified policy choice among associated activities. Do not use this for a non-adopter. [IAS 7.31–34D, .64](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ias7.html#IAS07_34A).
 
-⚑ AUDIT FLASH POINT  -  proportional gain, not full gain. IFRS 16 recognizes a gain only on the rights transferred to the buyer-lessor, retaining the rest in the ROU asset. Recover the current ASC sale-and-leaseback text separately before quantifying a dual-reporting reconciliation.
+The lessee disclosure checklist includes depreciation by asset class, interest, exempt short-term/low-value expense, excluded variable expense, sublease income, cash outflow, additions, sale-and-leaseback gains/losses and closing ROU by class. Short-term expense may omit leases of one month or less; do not double-count short-term low-value expense in both exemption lines. Include capitalised costs within the .53 amounts and use a table unless another format is more appropriate. Add short-term commitments if .55's portfolio condition applies, exemption-election disclosure, nature, relevant unrecognised cash-flow exposure, restrictions/covenants and sale-and-leaseback information. Provide lease-liability maturities separately from other financial liabilities, applying IFRS 7.39/B11. For investment-property ROU assets apply IAS 40 disclosures instead of .53(a), (f), (h), (j); revalued ROU assets require IAS 16.77 disclosures (.56–57); detailed execution is held below. [IFRS 16.51–60](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_53).
 
-### Sublease classification  -  `IFRS 16.B58`
+For lessors include finance-lease selling profit/loss, finance income and excluded variable income; operating income with non-index/rate variable income separately; nature and retained-risk management; significant net-investment movements; and receivable maturities annually for the first five years plus remaining total. Reconcile finance-lease undiscounted receipts to net investment, identifying unearned finance income and discounted unguaranteed residual. Operating-asset disclosures also follow .95–96's applicable Standards. [IFRS 16.89–97](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_89).
 
-- **Sublease classification rule**  -  When a lessee subleases an asset (intermediate lessor), the sublease is classified by reference to the ROU asset arising from the head lease  -  not the underlying asset. If the head lease is short-term and expensed under .6, classify the sublease as operating. Otherwise apply the finance/operating risks-and-rewards tests to the ROU asset; a single term/value indicator does not override the full test.  _(IFRS 16.B58)_
-
-The 2024 sale-and-leaseback liability amendment is applied retrospectively, in accordance with IAS 8, to sale-and-leaseback transactions entered into after the date of initial application (C20E). Obtain the IAS 8 transition working paper before executing retrospective presentation; the amendment is not limited to new transactions from 2024. _(IFRS 16.C1D, C20E)_
-
-### Lessor model (retained dual model)  -  `IFRS 16.61`–`.97`
-
-- **Lessor dual model**  -  IFRS 16 kept the IAS 17 lessor model: a lessor classifies each lease as finance or operating (16.61). Finance lease  -  transfers substantially all the risks and rewards incidental to ownership (16.62, indicators in 16.63–.64: ownership transfer, bargain purchase option, term covering major part of economic life, PV of payments ≥ substantially all of fair value, specialized asset). Derecognize the asset; recognize a net investment in the lease (16.67–.68). Operating lease  -  otherwise; keep the asset and recognize lease income on a straight-line basis or another systematic basis if it better represents the pattern in which benefit from use of the underlying asset diminishes (16.81).  _(IFRS 16.61–.97)_
-
-### Section 4  -  Executable layer (Layer B): the procedure
-
-First identify the entity's role. Lessees apply steps 1–8; a lessor routes to the lessor model and IFRS 15 component allocation in .17 instead of booking a lessee ROU/liability. An intermediate lessor applies both relevant roles and B58. Each step cites the rule it executes.
-
-1. **Confirm a lease exists** (Step 0 / §2): identified asset + control. If no lease is identified, account for the service under the applicable Standard and stop the lease computation. _(IFRS 16.9–.11, B9–B33)_
-2. **Determine the lease term** (Step 1 / §2): include reasonably-certain renewals/terminations. _(IFRS 16.18–.21, B34–B41)_
-3. **Check the exemptions** (§3, `16.5`–`.8`): short-term (≤ 12 mo, no purchase option) or low-value (conditions B3-B8). If elected, expense on a straight-line basis or another systematic basis that better represents the pattern of benefit, and stop the lessee balance-sheet computation (.6).
-4. **Determine the discount rate** (§3): implicit rate, else IBR. _(IFRS 16.26)_
-5. **Measure the lease liability** = PV of lease payments (`16.26`). Show the PV math in a memo line.
-6. **Measure the ROU asset** = liability + prepaid + initial direct costs − incentives + restoration estimate (`16.24`).
-7. **Book day-1 recognition**, then **subsequent-period** entries (base §3 format): depreciation of ROU + interest on liability  -  **normally front-loaded on the stated level-payment, positive-rate assumptions**. _(IFRS 16.22–.38)_
-8. **Handle variable payments, reassessment, modifications, subleases** as triggered (§3). _(IFRS 16.39–.46, B58)_
-9. **If the entity is the lessor**, classify finance vs. operating (`16.61`).
-10. **Classify balances and cash flows**, produce the **disclosure checklist** (§6) and **reviewer brief** with every flash point. _(IFRS 16.47–.50, .51–.60)_
-
-### Section 6  -  Disclosure checklist  -  `IFRS 16.51`–`.60`
-
-**Disclosure checklist**  _(IFRS 16.51–.60)_
-
-- [ ] Depreciation charge for ROU assets by class of underlying asset (`53(a)`)
-- [ ] Interest expense on lease liabilities (`53(b)`)
-- [ ] Expense relating to short-term leases and to low-value-asset leases (the exemptions) (`53(c)`, `53(d)`)
-- [ ] Expense relating to variable lease payments not in the liability (`53(e)`)
-- [ ] Income from subleasing ROU assets; gains/losses on sale-and-leaseback (`53(f)`, `53(i)`)
-- [ ] Total cash outflow for leases (`53(g)`)
-- [ ] Additions to ROU assets; carrying amount of ROU assets by class (`53(h)`, `53(j)`)
-- [ ] **Maturity analysis** of lease liabilities (`58`, applying `IFRS 7` liquidity-risk requirements)
-- [ ] Significant judgements and the nature of leasing activities (`51`, `59`)
-- [ ] Lessor disclosures: finance-lease net investment and selling profit; operating-lease income; risk management (`89`–`97`)
-
-### Section 7  -  Topic self-checks (in addition to base §7)
-
-- [ ] Lease vs. service determined (identified asset + control of use); cited `16.9`–`.11`, `B9`–`B33`
-- [ ] Lease term includes only reasonably-certain renewals/terminations _(IFRS 16.18–.21, B34–B41)_
-- [ ] Exemptions considered: short-term (≤ 12 mo, no purchase option) **and** low-value (absolute value when new, per asset) _(IFRS 16.5–.8, B3–B8, Appendix A)_
-- [ ] **Single model** applied  -  no finance/operating split attempted for the lessee _(IFRS 16.22)_
-- [ ] Discount rate: implicit, else IBR  -  stated _(IFRS 16.26)_
-- [ ] Lease liability = PV of payments; PV math shown in a memo line _(IFRS 16.26–.28)_
-- [ ] ROU = liability + prepaid + IDC − incentives + restoration estimate (IAS 37 recognition and measurement separately assessed)
-- [ ] Subsequent: depreciation of ROU + interest on liability  -  normally front-loaded on the stated level-payment, positive-rate assumptions _(IFRS 16.29–.38)_
-- [ ] Index/rate payments **remeasured** on change (contrast ASC 842); usage-based excluded
-- [ ] Reassessment/modification triggers checked (revised vs. unchanged discount rate applied correctly) _(IFRS 16.39–.46)_
-- [ ] Sale-leaseback uses proportional-gain mechanic; sublease classified by reference to the ROU asset _(IFRS 16.98–.103, B58)_
-- [ ] Lessor classification (finance / operating) where the entity is the lessor _(IFRS 16.61–.66)_
-- [ ] Divergence from ASC 842 checked for dual-reporters (especially the single vs. dual model)
-
-
-### Additional conditions read in the primary text
-
-If substitution cannot readily be assessed, presume it is not substantive (B19); a repair/maintenance substitution right alone does not defeat an identified asset (B18). A non-physically-distinct capacity portion qualifies only if it is substantially all of the asset capacity (B20). Where relevant use decisions are predetermined, apply the customer-operation or customer-design alternatives (B24(b)); protective supplier rights alone do not remove control (B30). Determine enforceability before options: the lease ceases to be enforceable when both parties can terminate without permission with no more than an insignificant penalty (B34-B35). Reassess reasonably-certain options for a significant event/change within the lessee's control affecting that conclusion (.20-.21). For intangible leases outside the specified .3(e) licensing exclusion, .4 permits but does not require lessee application.
-
-Low-value relief requires the asset to be usable alone or with readily available resources and not highly dependent on/interrelated with other assets. A head lease that is subleased or expected to be subleased fails low-value relief (B5-B7). A short-term lease containing any purchase option fails the IFRS definition; that differs from the US reasonably-certain-purchase test. For a lessee, separate components and allocate relative standalone prices unless the asset-class non-separation election is taken (.12–.16); that election excludes embedded derivatives meeting IFRS 9.4.3.3: separation requires all 3 conditions (risks not closely related, a stand-alone derivative definition met, and no whole-hybrid fair-value-through-profit-or-loss measurement). Document that assessment where relevant. For a lessor, allocate consideration under IFRS 15.73–.90 as .17 requires, with that separate source analysis. Restoration costs enter the ROU asset when the obligation arises; costs incurred producing inventories follow IAS 2 rather than being added automatically to the ROU asset (.24-.25). Costs otherwise capitalised into another asset do not necessarily appear immediately in profit or loss (.38). B42 includes in-substance fixed payments that are unavoidable despite variable form, including resolved variability, the only realistic payment set, or the discounted lowest amount where at least one of several realistic sets must be paid; assess these before excluding variable payments.
-
-For a qualifying sale and leaseback, apply .102A after commencement: determine payments/revised payments so that subsequent accounting does not recognise gain on the retained right of use; partial/full-termination gains under .46(a) remain possible. This September 2022 amendment applies from annual periods beginning 1 January 2024 (C1D). The .49 change linked to IFRS 18 is excluded until that Standard is applied (C1E).
+Return source-document inputs, role/term/election conclusions, PV schedule, balanced journals, movement reconciliation, disclosures and explicit holds to the reviewer. Check components and restoration before booking; check index/floating-rate distinction, modifications, leaseback and sublease rules before subsequent entries.
 
 ## Worked cases
 
-All monetary amounts, rates and transaction dates below are illustrative supplied facts, not legal thresholds or prescribed yields. Keep the original whole-dollar journal displays separate from the cent-precision check.
+All case values are hypothetical supplied inputs, not prescribed yields or thresholds. No case year has been substituted.
 
-### Worked example (illustrative)
+### Original equipment case
 
-Same facts as the US GAAP edition: a lessee leases equipment for 5 years, paying $50,000 annually in arrears, implicit rate not determinable, incremental borrowing rate 6%. No initial direct costs, prepayments, incentives, or restoration obligation. Assume the cost model with straight-line depreciation, no ownership transfer, no purchase option reasonably certain to be exercised, and an asset useful life of at least 5 years; these facts support depreciation over the 5-year lease term. PV of an ordinary annuity, 5 periods @ 6% = 4.2124.
+Equipment lease: **5 years**, **USD 50,000 annually in arrears**, implicit rate not determinable, **6% IBR**, no direct costs, prepaid payments, incentives or restoration. Assume straight-line cost-model depreciation, no ownership transfer/purchase-option exercise, and ROU useful life at least the term. [IFRS 16.22–32, .36–38](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_26).
 
-> Lease liability = 50,000 × 4.2123637856 = $210,618.19, displayed as $210,618 (rounded). ROU asset = $210,618.
-
-For this recognised IFRS 16 lessee case the single-model interest and amortisation pattern applies. The comparison with the stated US finance-lease illustration is conditional on its separate classification, amortisation and version assumptions; it is not a universal cross-framework equivalence.
-
-#### Day 1  -  recognition  -  `IFRS 16.22`, `.24`, `.26`
+PV factor = 4.2123637856; liability/ROU = USD 210,618.19. Year-one interest = 12,637.09; principal = 37,362.91; closing liability = 173,255.28; depreciation = 42,123.64; closing ROU = 168,494.55; expense = 54,760.73. Use cents consistently:
 
 ```
-Day 1  -  recognize ROU asset and lease liability  -  driving rule: IFRS 16.22 / .24 / .26
-  Dr  Right-of-use asset                     210,618
-      Cr  Lease liability                         210,618
-  (memo: PV = 50,000 × unrounded annuity factor 4.2123637856 @ 6%, 5 yrs; no IDC/prepaid/incentive/restoration; debits = credits ✓)
+Commencement: Dr ROU 210,618.19 / Cr lease liability 210,618.19
+Year 1 payment: Dr interest 12,637.09 + Dr liability 37,362.91 / Cr cash 50,000.00
+Year 1 depreciation: Dr depreciation 42,123.64 / Cr accumulated depreciation 42,123.64
 ```
 
-#### Year 1  -  single model (front-loaded)  -  `IFRS 16.31`, `.36`–`.38`
-
-Interest = 6% × 210,618 = 12,637. Payment 50,000 → principal reduction = 50,000 − 12,637 = 37,363. Depreciation (straight-line) = 210,618 ÷ 5 = 42,124.
-
-```
-End of Yr 1  -  accrue interest and pay  -  driving rule: IFRS 16.36-38 (effective interest)
-  Dr  Interest expense (finance cost)         12,637
-  Dr  Lease liability                         37,363
-      Cr  Cash                                     50,000
-  (memo: interest 6% × 210,618 = 12,637; principal plug 37,363; liability → 173,255; debits 50,000 = credits 50,000 ✓)
-
-End of Yr 1  -  depreciate ROU asset  -  driving rule: IFRS 16.31 (straight-line)
-  Dr  Depreciation expense                    42,124
-      Cr  Right-of-use asset (accum. depn.)       42,124
-  (memo: 210,618 / 5 = 42,124; ROU → 168,494; debits = credits ✓)
-```
-
-Year-1 total P&L = 12,637 + 42,124 = 54,761  -  front-loaded and declining thereafter as interest falls. Under a conventional EBITDA definition, depreciation and interest are excluded; confirm the reporting/covenant definition. The current ASC operating-lease comparison is reserved below. For the cash-flow statement, .50(a) places the $37,363 rounded principal within financing. The interest portion requires IAS 7 under .50(b). The recovered 2026-issued IAS 7.34A-.34D changes are conditional on IFRS 18 adoption (.64): .34A generally classifies interest paid as financing, with the specified main-business exceptions and single-category requirements in .34B-.34D. The pre-IFRS-18 IAS 7 policy route remains individually source-limited below; do not apply future wording automatically. Exempt-lease and excluded variable payments follow .50(c) operating classification.
-
-⚑ AUDIT FLASH POINT  -  dual-reporting handoff. Reconcile the same contractual cash flows after recovering the current ASC classification and expense rules. The archived operating-versus-finance comparison is not a current-ASC conclusion.
+The historical whole-dollar illustration used 210,618; 12,637; 37,363; 173,255; depreciation 42,124; closing ROU 168,494; expense 54,761. Its closing ROU subtracts rounded depreciation from rounded opening cost; the cent schedule rounds closing ROU to 168,495. Do not mix those rounding conventions. Principal cash is financing; interest classification follows the adoption gate/hold above.
 
 ```oa-check
 name: Existing 5-year equipment lease, full-precision discounting
@@ -251,7 +145,9 @@ expected:
   total_finance_cost: 54760.73
 ```
 
-For an index-linked lease, suppose after the first payment 4 annual payments of $50,000 remain. A contractual index reset now takes effect and raises each to $52,000. The unchanged discount rate is the documented 6%; this is an index reset, not a floating-interest-rate reset. Remeasure the remaining liability from $173,255.28 to $180,185.49 and increase the ROU asset by $6,930.21, assuming it remains recognised (IFRS 16.39, .42(b)-43). The inputs are illustrative, not a prescribed interest or inflation rate.
+### Existing index-reset case
+
+After the first payment, **4 annual payments of USD 50,000** remain. A contractual index adjustment now takes effect, increasing each to **USD 52,000**. Retain **6%** because this is an index reset, not a floating-interest-rate reset. Remaining liability changes from **173,255.28** to **180,185.49**, increasing ROU by **6,930.21**, assuming the ROU remains recognised. [IFRS 16.39, .42–43](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html#IFRS16_42).
 
 ```oa-check
 name: Index reset takes effect, unchanged discount rate
@@ -272,50 +168,41 @@ expected:
 
 ## When to refuse or refer
 
-Refuse a final recognition, classification, valuation or disclosure conclusion when required contracts, applicable reporting period, adoption facts or supporting standards are missing. Refer significant valuations, enforceability, control, impairment and complex settlement terms to a qualified reporting specialist. Return the facts, paragraph-by-paragraph reasoning, balanced journals, reconciliation and open items to the reviewer. Do not issue audit or assurance language. Any topic reserved below remains outside usable instructions until its operative primary source is recovered.
+The following holds are **non-usable conclusions**, not alternative rules. Preserve supplied facts; do not compute a final outcome from an unproven premise.
 
+- Historical approximately **USD 5,000 when new** suggestion attributed to BC100: no usable monetary threshold. The cited Basis page remains subscription-limited. Check this point with one of our partner accountants.
+- Pre-IFRS-18 interest-paid cash-flow classification: earlier official IAS 7 text was not recovered; do not infer the old policy from the 2026 issued amendments. Check this point with one of our partner accountants.
+- Detailed IAS 36 impairment/CGU valuation, IAS 16 revaluation/IAS 40 eligibility and valuation, and their additional disclosures; IFRS 7 maturity-analysis execution beyond the IFRS 16 routing instruction: no final valuation/disclosure-completeness conclusion here. Check this point with one of our partner accountants.
+- IFRS 15 sale/control/repurchase qualification and lessor allocation; IFRS 9 derivative valuation, reform qualification and financial-asset/liability execution; IAS 8 transition working papers and local endorsement/adoption: separate operative analyses required before executing these outcomes. Check this point with one of our partner accountants.
+- EBITDA/covenant metrics depend on the actual definition; no universal increase is asserted. Check this point with one of our partner accountants.
 
-### Original professional disclaimer
+### Original US GAAP comparison topics retained as individual holds
 
-Provides computational and interpretive guidance on IFRS 16 only. Not an audit and not assurance. Lease measurement turns heavily on entity-specific facts and significant judgement (lease term, discount rate, low-value and exemption elections, restoration estimates). Have outputs reviewed and signed by a qualified accountant before they are reflected in financial statements relied upon by third parties.
+The current authoritative ASC text has not been read for these comparisons; `us-gaap-asc842-leases` is the separate US edition, not proof of them. Each original comparison remains unavailable until independently established.
+
+| Original comparison topic | Non-usable conclusion and referral |
+|---|---|
+| Lessee model and original example | No current US finance/operating classification, expense or EBITDA conclusion; original USD 50,000 operating expense versus IFRS USD 54,761 rounded illustration is not a usable US result. Check this point with one of our partner accountants. |
+| Low-value exemption | No universal current-US no-equivalent assertion. Check this point with one of our partner accountants. |
+| Short-term exemption | No claim that election, term or purchase-option tests are identical. Check this point with one of our partner accountants. |
+| Indexed rents | No blanket US no-remeasurement conclusion. Check this point with one of our partner accountants. |
+| Restoration costs | No current ASC 410/842 measurement or cost-location conclusion. Check this point with one of our partner accountants. |
+| Sale and leaseback | No current-US full-gain, sale-qualification or off-market adjustment conclusion. Check this point with one of our partner accountants. |
+| Subleases | No current-US underlying-asset classification conclusion. Check this point with one of our partner accountants. |
+| Discount rate | No current-US risk-free-election eligibility or priority conclusion. Check this point with one of our partner accountants. |
+| Lessor model | No current-US sales-type/direct-financing/operating alignment conclusion. Check this point with one of our partner accountants. |
+| Cash flows | No current-US operating/finance payment-classification conclusion. Check this point with one of our partner accountants. |
+
+Provides computational and interpretive guidance on IFRS 16 only. Not an audit and not assurance. Lease measurement turns heavily on entity-specific facts and significant judgement. Have outputs reviewed and signed by a qualified accountant before they enter financial statements relied upon by third parties.
 
 ## Sources
 
-| Source | Official URL | Actual read scope and date |
+| Official source | Actual operative read scope | Date read |
 |---|---|---|
-| IFRS 16 Leases | [IFRS 16 Leases](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html) | Read for .1-.46B, .47-.106 (including .102A and the benchmark-reform exception .104-.106), B3-B42, B58, Appendix A short-term definition, C1-C1E, C20C-C20E in the official 2026-issued copy retrieved 2026-11-14, personally read 2026-11-15; official body retrieved again and reconciled 2026-11-16; existing read scope retained |
-| IAS 36 impairment handoff | [IAS 36](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ias36.html) | Retrieved 2026-11-16 and read for .9-.10, .18-.22, .30-.57, .74-.105, .110-.125, .130/.133-.135 and Appendix C; no complete ROU valuation executed here. |
-| IAS 7 issued-copy cash flows | [IAS 7](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ias7.html) | Read for .31-.34D on 2026-11-16 and .64; IFRS 18 adoption gate. Earlier required/2024 paths redirected to premium, so pre-adoption route remains reserved. |
-| IAS 37 restoration provisions | [IAS 37](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ias37.html) | Personally read for .14-.26 on 2026-11-16 and .36-.52, recognition, measurement, discounting and qualifications. |
-| IFRS 9 embedded-derivative gate | [IFRS 9](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs9.html) | Personally read for .4.3.1-.7 on 2026-11-16 and neighboring liability classification .4.2.1-.2; no full derivative pricing or hedge module. |
-| Low-value Basis attempt | [IFRS 16 Basis](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16-bc.html) | Attempted 2026-11-16: redirected to premium landing, not BC100; not read. |
-| Current US comparison | [Authoritative ASC](https://asc.fasb.org/) | Attempted again 2026-11-16; official ASC web pages returned 0 readable lines. Current operative Codification not read; historical recovery limits remain in external evidence. |
+| [IFRS 16 Leases](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16.html) | .3–46, .47–69, .81–106; Appendix A relevant definitions; B3–B42, B58; C1/C1D–E, C20C–E/C21; read clauses and neighbouring conditions, not just retrieval | 2026-11-27 |
+| [IAS 37](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ias37.html) | .14–26, .36–48: obligation, probability, estimate, discounting and future events | 2026-11-27 |
+| [IFRS 9](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs9.html) | .4.3.1–7: embedded-derivative gate only; no full valuation | 2026-11-27 |
+| [IAS 16](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ias16.html) | .60–62: depreciation method; no complete revaluation module | 2026-11-27 |
+| [IAS 7](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ias7.html) | .31–34D and .64: IFRS 18 adoption-dependent interest cash flows | 2026-11-27 |
 
-Not yet confirmed: the pre-IFRS-18 IAS 7 interest-paid route, low-value BC100 figure and individual current US comparisons below; jurisdiction-specific endorsement and entity-specific early adoption; all individually retained source-limited items below. These boundaries are not accountant approval.
-
-#### Not yet confirmed: low-value monetary suggestion
-
-The old approximately **USD 5,000 when new** assertion attributed to BC100 remains unconfirmed. The official 2026 Basis URL redirected to the premium landing page on 16 November 2026; that is not the paragraph. The amount is not a statutory cap or an operative exemption threshold. Apply the actually read .5-.8/B3-B8 conditions, not this old figure.
-
-#### Not yet confirmed: individual current ASC 842 comparisons
-
-Current ASC web recovery returned 0 readable operative lines on 16 November. Each comparison below requires the actual current ASC rule and its conditions before use:
-
-| Original topic | Specific reserved US-dependent comparison |
-| --- | --- |
-| Lessee model and example | Current operating/finance classification, single operating lease expense, EBITDA effects and the old conditional USD 50,000 operating expense versus IFRS USD 54,761 illustration; no US classification is assumed from identical cash flows. |
-| Low-value assets | Whether a US exemption applies; do not infer a universal no-equivalent conclusion. |
-| Short-term leases | Current ASC 12-month election, asset-class basis and purchase-option test; do not assume the IFRS definition is identical. |
-| Indexed rents | Current ASC remeasurement triggers and excluded variable-payment treatment versus IFRS .42-.43. |
-| Restoration | ASC 410/842 asset-retirement-obligation recognition and where the cost is recorded. |
-| Sale and leaseback | Current sale qualification, gain recognition and off-market adjustments versus IFRS proportional retained-right mechanics. |
-| Subleases | Current ASC classification reference asset and applicable exceptions versus IFRS B58. |
-| Discount rate | Current eligibility/conditions for the US risk-free-rate election and implicit-rate priority. |
-| Lessor model | Current sales-type/direct-financing/operating classification and degree of alignment. |
-| Cash flows | Current US operating/finance lease-payment classification. |
-
-#### Not yet confirmed: pre-IFRS-18 interest cash flows and detailed impairment execution
-
-IAS 7 issued-copy .31-.34D/64 was read on 16 November: its IFRS 18-dependent wording does not prove the earlier policy choice. The required-edition and 2024 official paths redirected to the premium landing page, not operative earlier text. The earlier interest-paid policy alternatives of operating or financing classification are individually unconfirmed here. Recover the actual pre-IFRS-18 interest-paid route before classifying that portion for an entity that has not adopted IFRS 18. The principal and exempt/excluded-variable classifications in IFRS 16.50 remain separately supported.
-
-IAS 36 has now been recovered and its general impairment/CGU/goodwill clauses read for the combination Guide. This lease Guide still refers the detailed ROU-specific recoverable-amount, CGU allocation and presentation working paper; it does not execute a complete impairment valuation. IFRS 9 full derivative/hedging execution and IAS 40/IAS 16 alternative-measurement eligibility likewise require their separate analyses.
+Not yet confirmed: no unproven conclusion is usable. The specific monetary, earlier-IAS-7, current-US, valuation, supporting-standard execution, local-adoption and EBITDA points are closed by the explicit non-usable referrals above. [Basis access attempt](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs16-bc.html) and [earlier IAS 7 attempt](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2024/issued/ias7.html) reached the subscription landing page on 2026-11-27; neither is a completed paragraph read. The [ASC source](https://asc.fasb.org/) remains the previously documented unread source, not a new successful read.
