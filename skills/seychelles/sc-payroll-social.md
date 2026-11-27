@@ -4,15 +4,15 @@ description: "Seychelles payroll for tax year 2026: Seychelles Pension Fund cont
 jurisdiction: SC
 category: payroll
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.3
+last_updated: 2026-11-26
+version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 type: computation
 ---
 
-# Seychelles Payroll and Social Contributions v0.3
+# Seychelles Payroll and Social Contributions v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -47,7 +47,7 @@ SPF: by the 21st of the following month ([SPF](https://pensionfund.sc/mandatory-
 
 Steps under [S.I. 19 of 2024](https://src.gov.sc/wp-content/uploads/2025/05/SI-19-2024-Income-and-Non-Monetary-Benefits-Tax-Payroll-Regulations-2024.pdf) and the [Payroll Guide](https://src.gov.sc/wp-content/uploads/2025/01/Payroll-Guide-2024-updated.pdf):
 
-1. Pick the form: Payroll Withholding Statement; Simplified statement for fewer than 10 employees paying no exempt emoluments other than 13th month pay and overtime, plus non-monetary benefits; Domestic Worker statement; 13th Month statement.
+1. Pick the form: Payroll Withholding Statement; Simplified statement for fewer than 10 employees when the employer pays no non-monetary benefits and no exempt emoluments other than 13th month pay or overtime allowance, otherwise the Payroll Withholding Statement (S.I. 19 of 2024 reg 4(b), (c)); Domestic Worker statement; 13th Month statement.
 2. Header: employer name, NIN for a sole trader, business registration number, year, month.
 3. Section 1 employee details including 11-digit NIN or GOP, SPF number, TIN, dates, citizenship, rate. Section 2 emoluments. Section 3 tax. Section 4 non-monetary benefits. Section 5 total to remit.
 4. Submit in XML to pit@src.gov.sc with TIN, month and year in the message, until the portal takes it. Employers with fewer than 10 employees or one domestic worker can file in person.
@@ -110,7 +110,7 @@ expected:
 | Read for the figures cited: Seychelles Pension Fund, Mandatory Contribution page | https://pensionfund.sc/mandatory-contribution/ | 2026-11-01 |
 | Read for the figures cited: Seychelles Pension Fund, Increase in mandatory contribution rate (2017 notice) | https://pensionfund.sc/increase-in-mandatory-contribution-rate/ | 2026-11-01 |
 | Read for the figures cited: SRC Income and Non-Monetary Benefits Tax page, whole page | https://src.gov.sc/income-and-non-monetary-benefits-tax/ | 2026-11-01 |
-| Read for the figures cited: S.I. 19 of 2024, regs 1 to 3 | https://src.gov.sc/wp-content/uploads/2025/05/SI-19-2024-Income-and-Non-Monetary-Benefits-Tax-Payroll-Regulations-2024.pdf | 2026-11-01 |
+| Read for the figures cited: S.I. 19 of 2024, regs 1 to 7 | https://src.gov.sc/wp-content/uploads/2025/05/SI-19-2024-Income-and-Non-Monetary-Benefits-Tax-Payroll-Regulations-2024.pdf | 2026-11-26 |
 | Read for the figures cited: SRC Payroll Guide v3 January 2025, read by OCR | https://src.gov.sc/wp-content/uploads/2025/01/Payroll-Guide-2024-updated.pdf | 2026-11-01 |
 | Read for the figures cited: Revenue Law (Amendment) Act 2023 (Act 27 of 2023), ss 3, 4, 7 | https://src.gov.sc/wp-content/uploads/2024/12/Act-27-2023-Revenue-Law-Amendment-Act-2023.pdf | 2026-11-01 |
 | Read for the figures cited: SRC Tax System page, whole page read | https://src.gov.sc/seychelles-tax-system/ | 2026-11-01 |
