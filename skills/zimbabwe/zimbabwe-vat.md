@@ -2,11 +2,11 @@
 name: zimbabwe-vat
 description: >
   Zimbabwe VAT return work, tax year 2026: the 15.5% standard rate from 1 January 2026, registration at USD 25,000, VAT categories, returns on the 10th and payment on the 15th, fiscal tax invoices through FDMS, imported services paid in USD, digital services withholding tax, and 10% export taxes on some minerals. Use for classifying transactions, preparing a VAT return, or questions such as what is the VAT rate in Zimbabwe, do I need to register for VAT with ZIMRA, or can I claim input tax on this invoice.
-version: 2.2
+version: 2.3
 jurisdiction: ZW
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -32,6 +32,8 @@ Traders whose taxable supplies exceed or are expected to exceed USD 25,000 or Zi
 | Refund held in credit | under USD 60 | 2026 | Until cumulative refunds reach USD 60 | https://www.zimra.co.zw/domestic-taxes/vat/mechanics-of-vat |
 | Export tax on lithium ore or concentrate | 10% | 2026 | Lithium sulphate 0%; Act s.39 | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf |
 | Export tax on chrome, antimony | 10% | 2026 | Paid in USD; Act s.42 | same |
+| Digital services withholding, foreign supplier not VAT registered | 15.5% of the payment | 2026 | Withheld by the intermediary on a foreign payment; paid in USD; Public Notice 5 of 2026 paras 5 and 14 | https://www.zimra.co.zw/public-notices?download=4438:public-notice-05-of-2026-digital-services-tax-vat |
+| Digital services withholding, foreign supplier VAT registered | tax fraction of 3/23, as the notice prints it | 2026 | 3/23 matches a 15% rate; the 15.5% fraction would be 31/231; Public Notice 5 of 2026 para 5 | same |
 
 ## The base
 
@@ -61,7 +63,7 @@ Section 39 interest now also covers tax under s.13 (Act s.47). Non-payment of di
 
 ## Cross-border points
 
-The buyer self-accounts for VAT on imported services that are not electronic, and from 2026 pays it in USD (Act s.43). For electronic services, banks and mobile money operators withhold at the rates above; if payment goes through a foreign platform, the non-resident supplier accounts in full and credits any tax withheld. The withholding return is filed by hand at a ZIMRA office until configured. Physical goods stay under import VAT.
+The buyer self-accounts for VAT on imported services that are not electronic, and from 2026 pays it in USD (Act s.43). For electronic services, banks, mobile money operators and other intermediaries withhold at the rates above; if payment goes through a foreign platform, the non-resident supplier accounts in full and credits any tax withheld. The intermediary files the Return for the Remittance of Withholding Tax on Digital Services in TaRMS, now configured there (Public Notice 50 of 2026), and pays in USD. Physical goods stay under import VAT.
 
 ## Two worked examples that recompute
 
@@ -112,7 +114,8 @@ expected:
 | ZIMRA Public Notices 5, 7, 11, 49, 50, 58, 61 of 2026: each PDF read on 2026-11-01; the list page reopened 2026-11-14 and read for notices 49 and 50 (still listed) | https://www.zimra.co.zw/public-notices | 2026-11-14 (list page only) |
 | ZIMRA VAT Registration page: read for the thresholds and how to register | https://www.zimra.co.zw/domestic-taxes/vat/vat-registration | 2026-11-14 |
 | ZIMRA Mechanics of VAT page: read for the rates, obligations and input tax | https://www.zimra.co.zw/domestic-taxes/vat/mechanics-of-vat | 2026-11-14 |
-| ZIMRA Public Notice 5 of 2026: read for sections 1 to 8 on 2026-11-01; the list page reopened 2026-11-14 | https://www.zimra.co.zw/public-notices | 2026-11-14 (list page only) |
+| ZIMRA Public Notice 5 of 2026, Digital Services Tax (VAT): whole notice, paras 1 to 15 | https://www.zimra.co.zw/public-notices?download=4438:public-notice-05-of-2026-digital-services-tax-vat | 2026-11-26 |
+| ZIMRA Public Notice 50 of 2026, New 2026 Legislation Changes Deployed in TaRMS: whole notice | https://www.zimra.co.zw/public-notices?download=4539:public-notice-50-of-2026-new-2026-legislation-changes-deployed-in-tarms | 2026-11-26 |
 | ZIMRA VAT 7 form, older issue with RTGS wording: read in full on 2026-11-01; the downloads page reopened 2026-11-14 | https://www.zimra.co.zw/downloads/category/9-domestic-taxes | 2026-11-14 (downloads page only) |
 
-Not yet confirmed: digital services withholding (rows moved out of the rates table on 2026-11-14: 15.5% where the foreign supplier is not VAT registered, and a 3/23 tax fraction for a registered supplier, said to come from Public Notice 5 of 2026; the notice is not on the ZIMRA public notices page read today, and a 3/23 fraction matches a 15% rate, not 15.5%, so both need the notice text); the exemption list in the VAT regulations (earlier version: financial, medical, education, residential rental, public transport, postal, water, and as zero-rated: maize meal, bread, milk, sugar, cooking oil, salt, fruit and vegetables, farming inputs, medical supplies, fuel, domestic electricity); blocked input under s.16 (earlier version: vehicles under 9 seats, entertainment, club subscriptions, personal use); gifts over USD 25 as deemed supply; late filing USD 30 a day and late payment 10%; criminal penalty for non-fiscalisation; Category D period; USD to ZiG conversion rule; the 3/23 fraction, which predates 15.5%; SI 81 of 2025 text; the current TaRMS field numbers.
+Not yet confirmed: whether ZIMRA will replace the 3/23 fraction in Public Notice 5 of 2026, which matches a 15% rate, not 15.5%; intermediary due dates (Public Notice 5 of 2026 para 11 gives the return by the 10th and payment by the 15th of the following month, whilst the VAT Act Second Schedule para 2(1), inserted by Finance Act 7 of 2025 s.49, requires payment within thirty days of the date of payment); the exemption list in the VAT regulations (earlier version: financial, medical, education, residential rental, public transport, postal, water, and as zero-rated: maize meal, bread, milk, sugar, cooking oil, salt, fruit and vegetables, farming inputs, medical supplies, fuel, domestic electricity); blocked input under s.16 (earlier version: vehicles under 9 seats, entertainment, club subscriptions, personal use); gifts over USD 25 as deemed supply; late filing USD 30 a day and late payment 10%; criminal penalty for non-fiscalisation; Category D period; USD to ZiG conversion rule; SI 81 of 2025 text; the current TaRMS field numbers.
