@@ -225,6 +225,6 @@ expected:
 | SolzG §§ 3, 4: flat-tax surcharge | https://www.gesetze-im-internet.de/solzg_1995/__4.html | 2026-11-27 |
 | AO § 240 and SGB IV § 24: reused surcharge proof | https://www.gesetze-im-internet.de/ao_1977/__240.html | 2026-11-27 |
 
-**Remaining case holds.** Church tax on flat tax, administrative car exceptions beyond the stated ordinary rules, travel-allowance reductions and staff-event valuation disputes are not resolved by this Guide. Check this point with one of our partner accountants.
+Not yet confirmed: the following are explicit non-usable case holds. Church tax on flat tax, administrative car exceptions beyond the stated ordinary rules, travel-allowance reductions and staff-event valuation disputes are not resolved by this Guide. Check this point with one of our partner accountants.
 
 > Contributed by OpenAccountants.
