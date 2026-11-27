@@ -231,7 +231,7 @@ Use the higher of the pension account balance and the withdrawal benefit payable
 
 | Pattern in the file | Provision | Consequence | Action |
 | --- | --- | --- | --- |
-| EFT to member tagged "loan"/"temporary" | s 65 | 60 units per applicable s 166 contravention and liable trustee ($21,840 at $364/unit); check auditor reporting obligations. [SIS Act s 166](https://www.legislation.gov.au/C2004A04633/2026-08-10/2026-08-10/text/original/epub/OEBPS/document_2/document_2.html) | Repay + interest; escalate; never reclassify as benefit without condition of release |
+| EFT to member tagged "loan"/"temporary" | s 65 | 60 units per applicable s 166 contravention and liable trustee ($21,840, computed: 60 x $364/unit); check auditor reporting obligations. [SIS Act s 166](https://www.legislation.gov.au/C2004A04633/2026-08-10/2026-08-10/text/original/epub/OEBPS/document_2/document_2.html); [Crimes (Amount of a Penalty Unit) Instrument 2026](https://www.legislation.gov.au/F2026N00424/asmade/2026-06-16/text/original/pdf) | Repay + interest; escalate; never reclassify as benefit without condition of release |
 | Related-party investments/lease > 5% at 30 June | ss 82 and 84 | Prepare and carry out the required disposal plan. Contravening the reasonable-steps duty in s 84(1) can attract 60 penalty units. | Implement the plan before the end of the next income year |
 | Borrowing outside LRBA (overdraft, margin loan) | s 67 | 60 PU | Clear immediately; document |
 | TBAR lodged late/never | TBC reporting | Excess TB determinations off stale data; FTL penalties | Lodge all missed events now; reconcile TB account |
