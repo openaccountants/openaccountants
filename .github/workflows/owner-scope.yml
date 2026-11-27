@@ -27,7 +27,8 @@ concurrency:
 
 env:
   SCOPED_OWNER_SHA256: 413d03f39cd906d6d6f0b90a341751445d1057d58efb09f71854bad0100ee413
-  ALLOWED: '^(skills/australia/|packages/australia/|agent-skills/[^/]*australia[^/]*/|calculators/au-[^/]+/)'
+  # Asia-Pacific and sub-Saharan Africa (Michael, 14 Nov 2026 split; widened 27 Nov 2026).
+  ALLOWED: '^((skills|packages)/(australia|new-zealand|american-samoa|cook-islands|fiji|french-polynesia|guam|kiribati|marshall-islands|micronesia|nauru|new-caledonia|niue|norfolk-island|northern-mariana-islands|palau|papua-new-guinea|pitcairn|samoa|solomon-islands|tonga|tuvalu|vanuatu|wallis-and-futuna|christmas-island|cocos-keeling-islands|heard-island-and-mcdonald-islands|united-states-minor-outlying-islands|china|hong-kong|macau|japan|south-korea|taiwan|mongolia|brunei|cambodia|indonesia|laos|malaysia|myanmar|philippines|singapore|thailand|timor-leste|vietnam|bangladesh|bhutan|india|maldives|nepal|pakistan|sri-lanka|british-indian-ocean-territory|kazakhstan|kyrgyzstan|tajikistan|turkmenistan|uzbekistan|angola|benin|botswana|burkina-faso|burundi|cameroon|cape-verde|chad|comoros|djibouti|equatorial-guinea|eritrea|eswatini|ethiopia|gabon|gambia|ghana|guinea|ivory-coast|kenya|lesotho|liberia|madagascar|malawi|mali|mauritania|mauritius|mayotte|mozambique|namibia|niger|nigeria|republic-of-congo|reunion|rwanda|saint-helena|sao-tome-and-principe|senegal|seychelles|sierra-leone|south-africa|tanzania|togo|uganda|zambia|zimbabwe)/|agent-skills/[^/]*australia[^/]*/|calculators/au-[^/]+/)'
   APPROVER: michaelcutajar1995
 
 jobs:
