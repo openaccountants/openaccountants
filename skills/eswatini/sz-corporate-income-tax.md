@@ -5,15 +5,15 @@ jurisdiction: SZ
 category: international
 tax_year: 2026
 tax_year_notes: "Year of assessment to 30 June 2026"
-version: 0.3
-last_updated: 2026-11-14
+version: 0.4
+last_updated: 2026-11-26
 type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Eswatini Corporate Income Tax v0.3
+# Eswatini Corporate Income Tax v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -30,14 +30,14 @@ Companies with income from a source within or deemed within Eswatini, branches o
 | Presumptive tax, turnover above E50,000 and below E500,000 | 1.75% of total turnover | 2026 | https://www.ers.org.sz/IncomeTax/PresumptiveTax |
 | Development enterprise, new business in a qualifying project | 10% company rate for 10 years, not renewable, by agreement with the Minister and Cabinet approval. Sectors: manufacturing of an industrial, scientific or educational nature, mining or beneficiation, energy and power generation, assembly or agro-industry, tourism (s 69(2), Seventh Schedule) | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
 | Interest deduction cap | Net interest above 30% of tax EBITDA denied, for group companies other than banks and insurers. Carry forward 3 years (s 65sep) | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
-| Non-resident shareholders tax | 15%; 12.5% for a company registered in Botswana, Lesotho, Namibia or South Africa that is not a subsidiary or branch of a company from elsewhere (s 21) | 2026 | https://www.ers.org.sz/documents/IncomeTaxOrder1975.pdf |
+| Non-resident shareholders tax | 15% of the dividend (s 21(2)). The 12.5% proviso for Botswana, Lesotho, Namibia and South Africa companies was deleted by Act 20 of 2023 s 10, from 1 July 2024 (ERS) | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
 | South Africa treaty dividends | 10% for a company holding at least 25%; otherwise 15% (art. 10) | 2026 | https://www.ers.org.sz/documents/SouthAfrica.pdf |
-| Non-resident interest | 10% . The ERS rates page shows 15% for outside SACU; ERS Withholding page and the Order say 10% | 2026 | https://www.ers.org.sz/IncomeTax/Withholding |
+| Non-resident interest | 15% (s 27, raised from 10% by Act 20 of 2023 s 11, from 1 July 2024 (ERS)); the ERS Withholding page still shows 10%. The South Africa treaty limits it to 10% for a South African resident beneficial owner (art. 11) | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
 | Royalties and management fees to non-residents | 15% of gross, final | 2026 | https://www.ers.org.sz/IncomeTax/Withholding |
 | Non-resident contractors, construction | 15%, excluding direct cost of materials | 2026 | https://www.ers.org.sz/IncomeTax/Withholding |
 | Non-resident service payments | 15% of gross on Eswatini-source service contracts | 2026 | https://www.ers.org.sz/IncomeTax/Withholding |
 | Entertainers and sportspersons | 15% of gross | 2026 | https://www.ers.org.sz/IncomeTax/Withholding |
-| Branch profits tax | 15%; 12.5% for a qualifying neighbouring-country company (s 32E) | 2026 | https://www.ers.org.sz/documents/IncomeTaxOrder1975.pdf |
+| Branch profits tax | 15% of deemed repatriated income (s 32E). The 12.5% neighbouring-country proviso was deleted by Act 20 of 2023 s 14, from 1 July 2024 (ERS). The South Africa treaty Protocol treats the tax as non-discriminatory only up to 10% of repatriated income | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
 | Resident interest and dividends paid | 10% | 2026 | https://www.ers.org.sz/IncomeTax/Withholding |
 | Rent paid to a non-company lessor by a non-natural person | 10% | 2026 | https://www.ers.org.sz/IncomeTax/Withholding |
 | Trust distributions to vested beneficiaries | 33% | 2026 | https://www.ers.org.sz/IncomeTax/Withholding |
@@ -48,7 +48,7 @@ Source basis, regardless of residence. The 2023 Act added Division X (gains on b
 
 ## Deadlines and filing
 
-For the year ended 30 June 2025 all non-individual entities filed and paid by 31 October 2025. Approved other year-ends: within 4 months after year-end. Draft financial statements were accepted, with signed audited ones to follow. Withholding is due by the 15th of the following month.
+For the year ended 30 June 2026 all non-individual entities file and pay by 31 October 2026 (ERS notice for tax year end 2026). Approved other year-ends: within 4 months after year-end. Draft financial statements are accepted, with signed audited ones to follow. Withholding is due by the 15th of the following month.
 
 Provisional tax: first payment within 6 months of the start of the year, second by year-end, third by the return date. Presumptive taxpayers: 25%, 50%, 75% and 100% cumulative by 30 September, 31 December, 31 March and 30 June.
 
@@ -110,14 +110,16 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | ERS, Public Notice, returns for tax year end 2025 (scan): read in full for the filing deadlines and the 25% and 1.75% rates | https://www.ers.org.sz/whatsnew-file/1753959572719-FULL_PAGE___Income_Tax_Returns_Notice_2025.pdf | 2026-11-14 |
-| Income Tax (Amendment) Act 2023 (Act 20 of 2023), scanned: read by OCR on 2026-11-01 for the Third Schedule and cited sections. Reopened 2026-11-14 (38-page scan), not re-read; the rates also stand on the ERS Rates and Thresholds page read today | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf | 2026-11-14 (opened, not re-read) |
+| ERS, Public Notice, annual income tax return submission and payment for tax year end 2026: read in full for the deadlines, return thresholds and the 25% and 1.75% rates | https://ers.org.sz/whatsnew-file/1791462650754-1784270658474_Notice_for_Filing_Income_tax_Returns_Public_Notice_Final_Aligned.pdf | 2026-11-26 |
+| Income Tax (Amendment) Act 2023 (Act 20 of 2023), scanned: read by OCR on 2026-11-01 for the Third Schedule and cited sections; ss 10, 11 and 14 (amending ss 21, 27 and 32E) re-read on 2026-11-26 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf | 2026-11-26 |
+| ERS, Income Tax Order Changes 2024: read in full for the 1 July 2024 effective date and the 15% rates under ss 21, 27 and 32E | https://ers.org.sz/whatsnew-file/1726738466004-Income_Tax_Order_Changes__2024.pdf | 2026-11-26 |
 | ERS, Rates and Thresholds: read in full | https://www.ers.org.sz/IncomeTax/RatesandThres | 2026-11-14 |
 | ERS, Withholding Taxes: read in full | https://www.ers.org.sz/IncomeTax/Withholding | 2026-11-14 |
 | ERS, Presumptive Tax: read in full | https://www.ers.org.sz/IncomeTax/PresumptiveTax | 2026-11-14 |
 | Income Tax Order 1975, ERS consolidated copy to the 2013 amendments: read for the cited sections | https://www.ers.org.sz/documents/IncomeTaxOrder1975.pdf | 2026-11-14 |
-| Eswatini and South Africa tax treaty, art. 10: read for the cited sections | https://www.ers.org.sz/documents/SouthAfrica.pdf | 2026-11-14 |
+| Eswatini and South Africa tax treaty, arts 10 and 11 and the Protocol on art. 23: read for the cited sections | https://www.ers.org.sz/documents/SouthAfrica.pdf | 2026-11-26 |
 | ERS, Self Assessment: read in full | https://www.ers.org.sz/IncomeTax/SelfAssessment | 2026-11-14 |
 | ERS, Step-by-Step Guide for New Businesses: read in full | https://www.ers.org.sz/documents/Step-ByStepGuideforNewBusinesses.pdf | 2026-11-14 |
 | ERS, Income Tax Returns: read in full | https://www.ers.org.sz/IncomeTax/IncomeTaxReturn | 2026-11-14 |
 
-Not yet confirmed: The commencement notice for the 2023 Act was not opened; 1 July 2024 rests on the ERS Presumptive Tax page. The ERS notice for returns for the year ended 30 June 2026 was not found, so 2025 dates are given as the latest published. The old pack's 5% royalty refund under a treaty and the four-year audit practice: no official source found. The old 120-day rule appears in the ERS guide, but the 2025 notice gives 4 months and 31 October. The old pack's routine 60-day filing extension: no official source found. The transfer pricing threshold, regulations and the intangibles cap percentage were not found.
+Not yet confirmed: The commencement notice for the 2023 Act was not opened; 1 July 2024 rests on the ERS Presumptive Tax page. The old pack's 5% royalty refund under a treaty and the four-year audit practice: no official source found. The old 120-day rule appears in the ERS guide, but the 2025 and 2026 notices give 4 months and 31 October. The old pack's routine 60-day filing extension: no official source found. The transfer pricing threshold, regulations and the intangibles cap percentage were not found.
