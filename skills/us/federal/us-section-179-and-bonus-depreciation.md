@@ -1,208 +1,104 @@
 ---
 name: us-section-179-and-bonus-depreciation
-description: Section 179 expensing and bonus depreciation (section 168(k)) for US business owners for tax year 2026. Covers the section 179 limit of USD 2,560,000, the phase-out above USD 4,090,000 and the business income limit, 100 percent bonus depreciation for property acquired after 19 January 2025 under the One Big Beautiful Bill Act and the binding-contract acquisition rule, the 20 percent rate for older contracts, heavy SUVs over 6,000 pounds and the USD 32,000 SUV cap, passenger car caps from Rev. Proc. 2026-15, listed property business use and recapture, standard mileage against actual expenses, section 1245 recapture and Form 4562. Also the 2025 figures for returns still on extension. Federal only.
-version: "2.0"
+description: Federal section 179 and section 168(k) bonus depreciation for US business owners in 2026, with 2025 comparisons. Covers expensing limits, acquisition and service dates, eligible property, business vehicles, mileage choices, recapture, Form 4562 and eight worked examples.
+version: "2.1"
 jurisdiction: US
+category: tax
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax-optimization
 type: decision
 ---
 
-# Section 179 expensing and bonus depreciation in 2026, including business vehicles
+# Section 179 and bonus depreciation in 2026, including business vehicles
 
-> **Source-cited draft.** Built from Rev. Proc. 2025-32, Public Law 119-21, Notice 2026-11, Rev. Proc. 2026-15, Notice 2026-10, the Instructions for Form 4562 and Publication 946, and 26 U.S.C. 168, 179, 280F and 1245 on govinfo, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
+> **Built from the law. Not yet approved.** Federal income tax only. The rules below distinguish 2026 taxable years from 2025 comparisons and calendar-year vehicle placements. Sources and operative passages checked on 27 November 2026; unchanged federal baseline passages reuse the completed same-day source read. The 2024 Code must be read with Public Law 119-21, not used for superseded dollar amounts or dates.
 
-**Answer first.** For taxable years beginning in 2026, a business can expense up to **USD 2,560,000** of section 179 property, reduced dollar for dollar once section 179 property placed in service in the year exceeds **USD 4,090,000**, and never more than its business taxable income (the excess carries forward). Bonus depreciation is **100 percent** for qualified property acquired after 19 January 2025, has no income limit and applies automatically unless the owner elects out for a whole class. Property acquired under a contract signed before 20 January 2025 and placed in service in 2026 gets only **20 percent**. A heavy SUV is capped at **USD 32,000** for section 179 but not for bonus; a passenger car (6,000 pounds or less) is capped at **USD 20,300** in year 1 with bonus.
+**Answer first.** For taxable years beginning in 2026, section 179 permits up to **USD 2,560,000**, reduced dollar for dollar for qualifying cost above **USD 4,090,000**, and subject to active-business taxable income. Qualified property acquired **and placed in service after 19 January 2025** generally receives **100 percent** bonus depreciation unless the taxpayer elects out for its class. These are different choices: section 179 is elected by item and amount; bonus is the default on eligible remaining basis. Vehicle caps and the eligibility tests below still apply. ([Rev. Proc. 2025-32 §4.24](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [Public Law 119-21 §70301](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm); [§179](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm); [§168(k)(7)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm))
 
 ## Scope and who this is for
 
-United States federal income tax only, for a business owner deciding what to buy and when, and for their adviser. It covers the section 179 election, the section 168(k) special depreciation allowance ("bonus depreciation"), regular MACRS as the fallback, business vehicles, recapture, and Form 4562. Worked examples use hypothetical amounts and are labelled as such.
-
-| Topic | Skill |
-| --- | --- |
-| Cost segregation of buildings, look-back studies and Form 3115 | `us-federal-cost-segregation` |
-| Rental property and the passive activity rules | `us-real-estate-professional-and-short-term-rentals` |
-| State conformity to bonus and section 179 | `us-state-bonus-depreciation-conformity-matrix` |
-| Schedule C lines where the deduction lands | `us-schedule-c-and-se-computation` |
-| C corporation return | `us-form-1120-c-corp` |
-| Partnership and S corporation returns | `us-form-1065-partnership`, `us-form-1120-s-s-corporation-return` |
-| Like-kind exchanges of real property | `us-section-1031-like-kind-exchange` |
+United States federal section 179/168(k) decisions for business owners and their advisers. This Guide retains the 2026 main year and explicit 2025 comparisons; it does not resolve the named special-case HOLDs.
 
 ## Ask the client first
 
-- When was each asset contracted for, delivered and placed in service? Was any contract signed before 20 January 2025?
-- New or used? If used, who sold it (a relative, a related company, a business the owner controls) and did the business or a predecessor hold a depreciable interest in it before, for example as owner or through improvements it depreciated?
-- For a vehicle: the gross vehicle weight rating, the business-use percentage this year and expected in later years, and whether an owner, a relative or an employee drives it personally.
-- What is the business taxable income this year before depreciation, and what is expected in the next few years? Is a loss likely?
-- What is the entity: sole proprietor, partnership, S corporation, C corporation, trust or estate? Are spouses filing separately? Is the business in a controlled group?
-- Which state or states tax the business, and is a sale of the asset planned in the next few years?
+Collect the entity and tax year; every asset's invoice, adjusted basis, seller relationship, contract and cancellation/contingency terms; acquisition and ready-for-use dates; prior ownership or depreciable interests; business-use records; vehicle classification and both relevant weight measures; taxable income after other depreciation; other asset purchases, elections and carryovers; state exposure and intended disposal. Preserve invoice, payment, installation, mileage and depreciation records. Never invent a missing date, income, eligibility or vehicle weight, and never back-date records. Missing inputs mean **HOLD**, not automatic bonus or an assumed car classification.
 
 ## The method, step by step
 
+1. Establish the tax year, acquisition date, placed-in-service date, asset class and adjusted business basis. Placed in service means ready and available for its specific use, not merely ordered or paid for ([Publication 946, chapter 1](https://www.irs.gov/publications/p946)).
+2. Test section 179 and bonus separately using the conditions below. A classification HOLD blocks a filing conclusion for that asset.
+3. Compute section 179 first, bonus on the remaining eligible basis after allocable deductions and credits, then ordinary MACRS on the remaining basis. Do not expense the same cost twice ([Publication 946, chapters 2–4](https://www.irs.gov/publications/p946)).
+4. Compare immediate deductions, loss usability, later income and disposal plans. A higher future marginal rate may favour deferral; this is a projection, not a universal recommendation. State computation is separate: `us-state-bonus-depreciation-conformity-matrix`.
+
 ### Rates, bands and thresholds
 
-| Item | Amount, 2026 | Source |
+| Item and operative period | Amount | Official source |
 | --- | --- | --- |
-| Section 179 maximum, taxable years beginning in 2026 | USD 2,560,000 | [Rev. Proc. 2025-32, section 4.24](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Section 179 phase-out threshold, 2026 | USD 4,090,000 | [Rev. Proc. 2025-32, section 4.24](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Section 179 cap on a sport utility vehicle, 2026 | USD 32,000 | [Rev. Proc. 2025-32, section 4.24](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Section 179 maximum, taxable years beginning in 2025 | USD 2,500,000 | [Rev. Proc. 2025-32, section 3.02](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Section 179 phase-out threshold, 2025 | USD 4,000,000 | [Rev. Proc. 2025-32, section 3.02](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Bonus rate, qualified property | 100 percent | [Public Law 119-21, section 70301](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Bonus at 100 percent: property acquired after | January 19, 2025 | [Public Law 119-21, section 70301](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Optional reduced rate, first taxable year ending after 19 January 2025 only | 40 percent | [Public Law 119-21, section 70301](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Bonus rate, acquired after 27 September 2017 and before 20 January 2025, placed in service in 2026 | 20 percent | [Rev. Proc. 2026-15, section 2.03](https://www.irs.gov/pub/irs-drop/rp-26-15.pdf) |
-| Bonus rate, acquired before 20 January 2025, placed in service in 2025 | 40 percent | [Notice 2026-11, section 2.01](https://www.irs.gov/pub/irs-drop/n-26-11.pdf) |
-| Passenger automobile cap, year 1, bonus applies | USD 20,300 | [Rev. Proc. 2026-15, Table 1](https://www.irs.gov/pub/irs-drop/rp-26-15.pdf) |
-| Passenger automobile cap, year 1, no bonus | USD 12,300 | [Rev. Proc. 2026-15, Table 2](https://www.irs.gov/pub/irs-drop/rp-26-15.pdf) |
-| Passenger automobile cap, year 2 | USD 19,800 | [Rev. Proc. 2026-15, Tables 1 and 2](https://www.irs.gov/pub/irs-drop/rp-26-15.pdf) |
-| Passenger automobile cap, year 3 | USD 11,900 | [Rev. Proc. 2026-15, Tables 1 and 2](https://www.irs.gov/pub/irs-drop/rp-26-15.pdf) |
-| Passenger automobile cap, each later year | USD 7,160 | [Rev. Proc. 2026-15, Tables 1 and 2](https://www.irs.gov/pub/irs-drop/rp-26-15.pdf) |
-| Business standard mileage rate, 1 January to 30 June 2026 | 72.5 cents per mile | [Notice 2026-10](https://www.irs.gov/pub/irs-drop/n-26-10.pdf) |
-| Business standard mileage rate, 1 July to 31 December 2026 | 76 cents per mile | [IRS standard mileage rates](https://www.irs.gov/tax-professionals/standard-mileage-rates) |
-| Depreciation part of the business mileage rate, 2026 | 35 cents | [Notice 2026-10](https://www.irs.gov/pub/irs-drop/n-26-10.pdf) |
-| Passenger automobile weight line (unloaded, or gross for a truck or van) | 6,000 pounds | [26 U.S.C. 280F(d)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm) |
-| SUV definition, upper gross vehicle weight | 14,000 pounds | [26 U.S.C. 179(b)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm) |
-| Listed property business use needed for section 179 and bonus | more than 50 percent | [26 U.S.C. 280F(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm) |
-| Non-binding contract: acquired once paid or incurred more than | 10 percent of total cost | [Notice 2026-11, section 2.03(2)](https://www.irs.gov/pub/irs-drop/n-26-11.pdf) |
+| Section 179, taxable years beginning in 2026: maximum / qualifying-cost phase-out threshold / SUV cost cap | USD 2,560,000 / USD 4,090,000 / USD 32,000 | [Rev. Proc. 2025-32 §4.24](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Section 179, taxable years beginning in 2025: maximum / qualifying-cost phase-out threshold | USD 2,500,000 / USD 4,000,000 | [Rev. Proc. 2025-32 §3.02](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Bonus, qualified property acquired and placed in service after 19 January 2025 | 100 percent | [Public Law 119-21 §70301](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Ordinary qualified property acquired after 27 September 2017 but before 20 January 2025, placed in service in 2025 / 2026 | 40 percent / 20 percent; special long-production/aircraft rules require separate qualification | [Former §168(k)(6)(A)–(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm) |
+| Transition election, first taxable year ending after 19 January 2025 only | 40 percent instead of 100 percent; 60 percent for qualifying long-production property/certain aircraft | [Public Law 119-21 §70301(b)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Passenger automobile placed in service in calendar 2026: first-year combined deduction ceiling, bonus applies / no bonus | USD 20,300 / USD 12,300, before personal-use reduction | [Rev. Proc. 2026-15 Tables 1–2](https://www.irs.gov/pub/irs-drop/rp-26-15.pdf) |
+| Same 2026 automobile cohort: second / third / each succeeding year's ceiling | USD 19,800 / USD 11,900 / USD 7,160, before personal-use reduction | [Rev. Proc. 2026-15 Tables 1–2](https://www.irs.gov/pub/irs-drop/rp-26-15.pdf) |
+| Business standard mileage, January–June / July–December 2026 | 72.5 / 76 cents per business mile | [Notice 2026-10 §3](https://www.irs.gov/pub/irs-drop/n-26-10.pdf); [Announcement 2026-11](https://www.irs.gov/irb/2026-29_irb) |
+| Depreciation component of business standard mileage, 2026 | 35 cents per business mile, reducing basis; unchanged by the July announcement | [Notice 2026-10 §4](https://www.irs.gov/pub/irs-drop/n-26-10.pdf); [Announcement 2026-11, “All other provisions”](https://www.irs.gov/irb/2026-29_irb) |
 
-The section 179 amounts are indexed each year; the bonus rate for property acquired after 19 January 2025 is not scheduled to change. The 2026 Instructions for Form 4562 and Publication 946 were not yet published when read; the 2025 editions are cited.
+### Section 179 eligibility and limits
 
-### The order of work
+- **Cost and income limits.** Reduce the annual ceiling, not below zero, by qualifying cost above the threshold. The 2026 ceiling is therefore zero at USD 6,650,000 of qualifying cost (derived). Apply the active-business taxable-income limit after that reduction. Income-limited elected cost carries forward, subject to future dollar and income limits; cost denied by the investment phase-out is not that carryforward. The limits apply to the taxpayer across businesses ([§179(b)(2)–(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm); [Form 4562 instructions, lines 11–12](https://www.irs.gov/instructions/i4562)).
+- **Income computation.** For an individual, include wages, salaries, tips and other employee compensation, without subtracting unreimbursed employee business expenses; combine spouses' amounts on a joint return. Compute without section 179, the one-half self-employment-tax deduction or an NOL deduction. Mere passive investment is not active conduct. Other depreciation and interdependent income limits must already be reconciled before treating a figure as available section 179 income ([Form 4562 instructions, line 11](https://www.irs.gov/instructions/i4562)).
+- **Property and purchase.** Qualifying tangible MACRS property or qualifying off-the-shelf software must be section 1245 property, or elected qualified real property, and purchased for active trade/business use. Test the section 179(d)(2) related-party rules, including its specific family definition, controlled-group transfers, carryover basis and inherited basis; test section 50(b)'s exclusions except paragraph (2). Business/nonbusiness mixed property must be used more than 50 percent for business in the service year; only business cost is eligible ([§179(d)(1)–(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm); [Publication 946, chapter 2](https://www.irs.gov/publications/p946)).
+- **Real property.** By election, section 179 includes qualified improvement property (QIP) and later-installed roofs, HVAC, fire/alarm and security improvements to nonresidential real property. QIP must be an improvement **made by the taxpayer to the interior**, placed in service after the building was first placed in service; enlargement, elevators/escalators and structural framework are excluded. QIP is 15-year GDS property and can receive bonus if otherwise eligible; required ADS blocks bonus. An ordinary nonresidential roof that is not QIP remains 39-year GDS property if not expensed; do not infer eligibility under section 168(n) ([§179(e)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm); [§168(c), (e)(3)(E)(vii), (e)(6), (k)(2)(D)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm)).
+- **Land and lodging.** Land and ordinary land improvements such as pools, paved parking, docks and fences are not section 179 property. Do not assume every land improvement is eligible 15-year bonus property: classification and the other bonus tests must be established. The former blanket exclusion for apartment contents is withdrawn: section 179(d)(1) expressly excepts section 50(b)(2), the lodging provision, from its imported exclusions. Rental trade/business status and noncorporate-lessor tests still matter. **HOLD** on an actual rental/lodging or land-improvement classification: Check this point with one of our partner accountants. ([§179(d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm); [Publication 946, chapter 2, land improvements](https://www.irs.gov/publications/p946))
+- **Taxpayer restrictions.** Estates and trusts cannot use section 179. Spouses filing separately share one dollar/phase-out limit, with half allocated to each unless they elect otherwise. Partnerships/S corporations apply the limits at entity and owner levels; controlled groups share a limit. Actual allocations are **HOLD**: Check this point with one of our partner accountants. ([§179(b)(4), (d)(4), (6)–(8)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm))
+- **Noncorporate lessors.** Section 179(d)(5) permits a person who is not a corporation and leases the property to claim only if the lessor manufactured/produced it, or the lease including renewals is less than 50 percent of class life **and** section 162 deductions other than rent/reimbursements in the first 12 months after transfer to the lessee exceed 15 percent of rental income. Do not classify an S corporation as noncorporate merely because it passes income through ([§179(d)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)).
+- **Trade-in and elections.** Exclude basis determined by reference to other property; “only cash paid” is not a general cost rule for a taxable trade-in. Actual exchange/disposal basis is **HOLD**: Check this point with one of our partner accountants. Specify each elected item and amount on the year's return. A revocation, once made, is irrevocable; amendment/revocation procedures require case-specific checking ([§179(c), (d)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)).
 
-1. Fix the two dates for each asset: the date it was acquired (for a written binding contract, the contract date rules below) and the date it was placed in service. The bonus depreciation rate turns on the acquisition date; both deductions are claimed for the year the asset is placed in service. See [OBBBA section 70301(c), Public Law 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) and [26 U.S.C. 179(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm).
-2. Classify the asset. Section 179 needs section 1245 property (tangible personal property and similar), qualifying off-the-shelf software, or, by election, qualified real property, bought for use in the active conduct of a trade or business ([26 U.S.C. 179(d)(1) and (e)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)). Bonus depreciation needs qualified property, mainly property with a MACRS recovery period of 20 years or less ([26 U.S.C. 168(k)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm)).
-3. For a vehicle or other listed property, establish the business use percentage for the year and, for a vehicle, its weight rating. Business use must be more than 50 percent for bonus depreciation or section 179 to be available ([26 U.S.C. 280F(b) and (d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm)).
-4. Apply the deductions in the order the form uses: section 179 first, then the special depreciation allowance on the remaining basis, then regular MACRS on what is left ([Instructions for Form 4562](https://www.irs.gov/pub/irs-pdf/i4562.pdf), Line 11 and Part II).
-5. Decide how much to take now. Section 179 is chosen item by item and amount by amount. Bonus depreciation applies automatically unless the taxpayer elects out for a whole class of property for the year ([26 U.S.C. 168(k)(7)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm)). See "Choosing less depreciation now" below.
-6. Report on Form 4562 with the return for the year the asset is placed in service, make any election out by statement with the timely filed return, and keep the records listed below ([Instructions for Form 4562](https://www.irs.gov/pub/irs-pdf/i4562.pdf)).
-7. On a later sale, or if business use of listed property falls to 50 percent or less, compute recapture ([26 U.S.C. 1245](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partIV-sec1245.htm); [26 U.S.C. 280F(b)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm)).
+### Bonus eligibility, acquisition and election
 
-### Section 179: limits and rules
+- Eligible categories include MACRS property with a recovery period of 20 years or less, qualifying section 167(f) software and water utility property. Original use must begin with the taxpayer or the used-property acquisition tests must be met. Required ADS, same-year placement/disposal or acquisition-year personal conversion, and section 168(k)(9)'s utility/floor-plan-financing exceptions must be checked before allowing bonus. **HOLD** on those special business classifications: Check this point with one of our partner accountants. ([§168(k)(2), (9)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm); [Form 4562 instructions, Part II exceptions](https://www.irs.gov/instructions/i4562))
+- **Used property.** Apply section 179(d)(2) purchase restrictions and (d)(3) cost restrictions. Prior use means a depreciable interest of the taxpayer **or predecessor**, whether depreciation was claimed or not, during the five prior calendar years and the current year before service (limited to the periods they existed). Merely leasing without such an interest does not itself fail the test; exclude basis attributable to the lessee's own improvements. Reacquisitions, predecessors and partial interests need individual testing ([Reg. 1.168(k)-2(b)(3)(iii)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol3/pdf/CFR-2025-title26-vol3-sec1-168k-2.pdf); [Notice 2026-11 §§3.02–3.03](https://www.irs.gov/pub/irs-drop/n-26-11.pdf)).
+- **Written binding contract.** Apply the later of entry, state-law enforceability, end of penalty-free cancellation periods, and satisfaction of relevant contingencies within a party's/predecessor's control. A condition outside their control need not prevent binding status. A contract must generally be enforceable against the taxpayer or predecessor and not limit damages to a specified amount. A damages cap of **at least 5 percent** of total price is not treated as limiting damages; with multiple caps consider the highest. Options and letters of intent are not binding contracts. Do not equate every signature date with acquisition ([Reg. 1.168(k)-2(b)(5)(ii)–(iii)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol3/pdf/CFR-2025-title26-vol3-sec1-168k-2.pdf); [Notice 2026-11 §3.03](https://www.irs.gov/pub/irs-drop/n-26-11.pdf)).
+- **Nonbinding contract.** Generally acquired when more than **10 percent** of cost is paid/incurred, excluding land and preliminary activities. Self-construction, including qualifying third-party construction under a preconstruction binding contract, follows separate significant-physical-work/component rules; a payment safe harbor also exists. **HOLD** on self-construction and component acquisition dates: Check this point with one of our partner accountants. ([Notice 2026-11 §§2.03(2), 3.03, 3.05](https://www.irs.gov/pub/irs-drop/n-26-11.pdf))
+- **Choose by class.** Elect out by statement with the timely return, including extensions, identifying the class; it covers every qualified asset in that class placed in service that year. The property owner makes the election (partnership/S corporation, or the common parent for each consolidated member). Revocation needs IRS consent. Late-election, amended-return and accounting-method relief are **HOLD**: Check this point with one of our partner accountants. ([§168(k)(7)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm); [Form 4562 instructions, Election out](https://www.irs.gov/instructions/i4562))
+- **Losses and 2025.** Bonus has no section 179 active-income ceiling and can create a loss. Owner basis, at-risk, passive, excess-business-loss/NOL and QBI consequences are **HOLD**; an arithmetic loss is not permission to deduct it against wages. Check this point with one of our partner accountants. For a calendar-year taxpayer, the special 40/60-percent transition election relates to 2025, not 2026. The 2025 rates above remain 2025 rates; the former wording “returns still on extension” is not current deadline advice ([Public Law 119-21 §70301](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm); [Notice 2026-11 §4.03](https://www.irs.gov/pub/irs-drop/n-26-11.pdf)).
 
+### Business vehicles, mileage and recapture
 
-The base amounts in the statute were raised by OBBBA section 70306 for property placed in service in taxable years beginning after 31 December 2024; the 2026 figures in the rates table are the inflation-adjusted amounts for taxable years beginning in 2026 (Rev. Proc. 2025-32, section 4.24); for taxable years beginning in 2025 the limits are USD 2,500,000 and USD 4,000,000 (Rev. Proc. 2025-32, section 3.02), which replace the lower 2025 amounts in Rev. Proc. 2024-40. The govinfo 2024 edition of section 179 linked below predates the Act, so use it for the structure of the rules and the rates table for the amounts ([OBBBA section 70306](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)).
+A passenger automobile is generally a road-designed four-wheeled vehicle at or below **6,000 pounds unloaded gross vehicle weight**; a truck or van uses **gross vehicle weight** instead. Do not substitute the manufacturer's gross rating for the unloaded-weight test. Ambulances/hearses used in business, transport-for-hire vehicles and regulatory truck/van exclusions require classification ([§280F(d)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm)).
 
-- **Phase-out is dollar for dollar, not a cliff.** The limit is "reduced (but not below zero)" by the excess cost over the threshold in the rates table. Part of the limit survives until the excess equals the whole limit ([26 U.S.C. 179(b)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)).
-- **Business income limit.** The section 179 deduction, after the dollar limit and phase-out, cannot exceed the taxpayer's taxable income from the active conduct of any trade or business for the year, computed without the section 179 deduction. For an individual, that income includes wages, salaries, tips and other compensation earned as an employee, not reduced by unreimbursed employee expenses, and spouses filing jointly combine their totals ([Instructions for Form 4562](https://www.irs.gov/pub/irs-pdf/i4562.pdf), Line 11). The excess is not lost: it carries forward to later years and is allowed when there is room under both the dollar limit and the income limit ([26 U.S.C. 179(b)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)). A mere passive investor does not actively conduct a trade or business ([Instructions for Form 4562](https://www.irs.gov/pub/irs-pdf/i4562.pdf), Line 11).
-- **Placed-in-service year.** The deduction is allowed for the taxable year the property is placed in service, not the year it is paid for or ordered ([26 U.S.C. 179(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)).
-- **The election.** It is made on the return for the year, and it names each item and the part of its cost to expense. A taxpayer may revoke it for any property, and the revocation cannot then be undone ([26 U.S.C. 179(c)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)).
-- **Qualifying property.** Tangible property to which section 168 applies, or off-the-shelf computer software, that is section 1245 property or (at the taxpayer's election) qualified real property, and is acquired by purchase for use in the active conduct of a trade or business. "Purchase" excludes property bought from certain related persons or within a controlled group, and property whose basis carries over from the seller or comes from a decedent ([26 U.S.C. 179(d)(1) to (3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)). When qualifying property is bought with cash plus a trade-in, only the cash paid counts as cost for section 179 ([26 U.S.C. 179(d)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)).
-- **Qualified real property.** Qualified improvement property (an improvement to the interior of a nonresidential building placed in service after the building was first placed in service, other than an enlargement, an elevator or escalator, or the internal structural framework), and these improvements to nonresidential real property placed in service after the property was first placed in service: roofs; heating, ventilation and air-conditioning property; fire protection and alarm systems; security systems ([26 U.S.C. 179(e)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm); [26 U.S.C. 168(e)(6)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm)).
-- **Who cannot use it, or uses it differently.** Estates and trusts cannot use section 179. A noncorporate lessor can use it only in the limited cases in section 179(d)(5). For a partnership or S corporation the limits apply at the entity level and again for each partner or shareholder. Spouses filing separately are one taxpayer for the dollar limit and phase-out ([26 U.S.C. 179(b)(4) and (d)(4), (5), (8)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)).
-- **Real property limits** (moved here from `us-federal-cost-segregation`): land and land improvements (paved parking areas, fences, swimming pools, docks) are not section 179 property; use bonus depreciation for 15-year land improvements instead. Property used only to produce income, such as rental property where renting is not a trade or business, does not qualify. Property used mainly to furnish lodging does not qualify, except as allowed by section 50(b)(2) (for example hotels), so section 179 generally does not reach the contents of an apartment building ([Publication 946](https://www.irs.gov/pub/irs-pdf/p946.pdf), chapter 2).
-- **Noncorporate lessors** (moved here from `us-federal-cost-segregation`): an individual, partnership or S corporation that leases property to others can take section 179 on it only for property it manufactures, or property it buys where the lease term (including renewal options) is less than 50 percent of the class life and, for the first 12 months, its business deductions on the property (other than rents and reimbursed amounts) are more than 15 percent of the rental income. Corporations are not subject to this rule ([26 U.S.C. 179(d)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm); [Publication 946](https://www.irs.gov/pub/irs-pdf/p946.pdf), chapter 2).
-- **Recapture of section 179 on real property:** section 179 taken on qualified real property is recaptured as section 1245 ordinary income on a sale. A building study is in `us-federal-cost-segregation`.
+An SUV for section 179 is a passenger-carrying four-wheeled vehicle outside the passenger-auto cap and rated no more than **14,000 pounds gross vehicle weight**. The definition excludes more-than-nine seats behind the driver, qualifying six-foot cargo beds not readily accessible from the passenger compartment, and the specified fully enclosed cab/load vehicles without rear seats or a body protruding more than 30 inches ahead of the windshield. The **USD 32,000** 2026 SUV cap restricts section 179, not bonus; eligible business basis and other restrictions still apply. A weight over 6,000 alone does not establish every condition ([§179(b)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm); [Rev. Proc. 2025-32 §4.24](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf)).
 
-### Bonus depreciation (section 168(k)) after the One Big Beautiful Bill Act
+For a passenger car the annual cap covers section 179, bonus and ordinary depreciation together. Reduce the cap for personal use. No-bonus Table 2 applies if business use does not exceed 50 percent, the class election was made, a used acquisition fails, or the car was acquired before 28 September 2017. A cap is a ceiling, not an automatic deduction. Unrecovered basis after the recovery period remains subject to the succeeding-year cap and continued depreciability. **HOLD** on applying Rev. Proc. 2019-13's alternative safe harbor to years 2–6 of the original car example: Check this point with one of our partner accountants. ([§280F(a), (d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm); [Rev. Proc. 2026-15 §2.03](https://www.irs.gov/pub/irs-drop/rp-26-15.pdf); [Rev. Proc. 2019-13 §§3–4](https://www.irs.gov/pub/irs-drop/rp-19-13.pdf))
 
+Ordinary cars and transportation property are listed property, with statutory/regulatory exceptions; do not say every vehicle is listed property. For listed property, **more than 50 percent qualified business use** is required for section 179/bonus. At or below that boundary, ADS applies for that and later years. If predominantly business-used property later fails, include prior excess allowable depreciation (including section 179/bonus) over the ADS counterfactual in income. Do not include the current year's depreciation in that prior-year excess. Section 179 also has recapture on loss of predominant business use; actual recapture and basis adjustments are **HOLD**: Check this point with one of our partner accountants. ([§280F(b), (d)(1), (4)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm); [§168(k)(2)(D), (F)(ii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm); [§179(d)(10)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm))
 
-- **Who and when.** The 100 percent allowance in the rates table applies to qualified property acquired after 19 January 2025. The Act removed the old placed-in-service deadline and the year-by-year phase-down for that property, so there is no scheduled reduction for property acquired after that date ([Notice 2026-11, sections 3.06 and 3.07](https://www.irs.gov/pub/irs-drop/n-26-11.pdf)). The reduced-rate election in the rates table is only for the first taxable year ending after 19 January 2025; for a calendar-year taxpayer that was 2025, so it is not available for 2026.
-- **Property acquired before 20 January 2025 but placed in service in 2026 keeps the old phase-down.** The rate for that property is in the rates table.
-- **What "acquired" means.** The Act's rule in the rates table, read with Notice 2026-11 section 3.03, applies the existing regulation rules with the 2025 dates. For property acquired under a written binding contract, the acquisition date is the latest of: the date the contract was entered into, the date it is enforceable under state law, the date all cancellation periods end, and the date all contingency conditions are satisfied. A written binding contract is one enforceable under state law that does not limit damages to a specified amount (for example a liquidated damages clause). Property bought under a non-binding contract is acquired when the taxpayer has paid or incurred more than 10 percent of the total cost, excluding land and preliminary activities. Self-constructed property, including property a contractor builds under a binding contract made before work starts, is acquired when physical work of a significant nature begins ([Notice 2026-11, section 2.03(2)](https://www.irs.gov/pub/irs-drop/n-26-11.pdf)).
-- **Qualified property.** Mainly property with a recovery period of 20 years or less, certain software and water utility property ([26 U.S.C. 168(k)(2)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm)). Qualified improvement property is 15-year property, so it qualifies ([26 U.S.C. 168(e)(3)(E)(vii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm)). Nonresidential real property itself (a building, a roof, building systems that are not qualified improvement property) is depreciated over 39 years and does not qualify. Property that must use the alternative depreciation system does not qualify, including listed property used 50 percent or less for business ([26 U.S.C. 168(k)(2)(D)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm); [Instructions for Form 4562](https://www.irs.gov/pub/irs-pdf/i4562.pdf), Part II exceptions).
-- **Used property qualifies, with conditions.** Either the original use begins with the taxpayer, or the taxpayer did not use the property at any time before acquiring it AND the purchase meets the related-party, controlled-group and no-carryover-basis rules of section 179(d)(2) and (3) ([26 U.S.C. 168(k)(2)(A)(ii) and (E)(i)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm)). The taxpayer is treated as having used the property before only if it, or a predecessor, had a depreciable interest in it in the five calendar years before the year it is placed in service, or earlier in that year, whether or not depreciation was claimed. A lessee that only leased the property, with no depreciable interest in it, has not used it; basis attributable to the lessee's own improvements to that property does not qualify ([Reg. 1.168(k)-2(b)(3)(iii)(B)(1), govinfo CFR 2025](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol3/pdf/CFR-2025-title26-vol3-sec1-168k-2.pdf)).
-- **Election out, by class.** A taxpayer may elect out for any class of property for a taxable year. The election covers ALL qualified property in that class placed in service that year, not single items, and can be revoked only with IRS consent ([26 U.S.C. 168(k)(7)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm)). It is made by statement attached to the timely filed return (including extensions), and each owner makes it separately: the partnership, the S corporation, or each member of a consolidated group ([Instructions for Form 4562](https://www.irs.gov/pub/irs-pdf/i4562.pdf), Part II "Election out").
-- **No income limit.** Section 168(k) has no limit tied to business taxable income, unlike section 179(b)(3). Bonus depreciation can therefore create or increase a loss, and the loss then meets the owner-level loss limits. For individuals and other noncorporate taxpayers the excess business loss limit in section 461(l) was made permanent by OBBBA section 70601 ([Public Law 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)). This Guide does not compute those limits: refer.
-- **2025 placements (returns still on extension).** Property acquired after 19 January 2025 gets 100 percent. Property acquired before 20 January 2025 and placed in service in 2025 got 40 percent (60 percent for longer production property and certain aircraft) ([Notice 2026-11, section 2.01](https://www.irs.gov/pub/irs-drop/n-26-11.pdf)). The section 168(k)(10) election to take 40 percent (60 percent) instead of 100 percent is for property acquired after 19 January 2025 and placed in service in the first taxable year ending after 19 January 2025, made by statement with the timely filed return, including extensions ([Notice 2026-11, section 4.03](https://www.irs.gov/pub/irs-drop/n-26-11.pdf)).
+Qualified business use excludes leasing to a 5-percent owner/related person and compensatory use by them. Compensatory use by others requires income inclusion and withholding where required. Employee-owned listed property additionally needs employer convenience and a condition of employment. Owner/related-person, nonpersonal-use and transport-for-hire classification is **HOLD**: Check this point with one of our partner accountants. No listed-property deduction without adequate substantiation ([§280F(d)(3), (6)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm); [Publication 946, chapter 5](https://www.irs.gov/publications/p946)).
 
-### Business vehicles
+**Mileage or actual expenses.** For an owned car, choose standard mileage in its first business-use year to preserve that option; later switching to actual expenses before full depreciation requires straight line over remaining estimated useful life, subject to caps. For a leased car, choosing mileage commits the entire lease period. Mileage is unavailable after section 179, bonus, MACRS or other non-straight-line depreciation, and for five or more cars used simultaneously. Do not add actual car operating expenses or depreciation to the mileage deduction. Keep the mileage record and reduce basis by the depreciation component above. These are business-owner rules; do not infer an employee deduction ([Publication 463, chapter 4](https://www.irs.gov/publications/p463); [Notice 2026-10](https://www.irs.gov/pub/irs-drop/n-26-10.pdf); [Announcement 2026-11](https://www.irs.gov/irb/2026-29_irb); [Rev. Proc. 2019-46 §4.04](https://www.irs.gov/pub/irs-drop/rp-19-46.pdf)).
 
-#### Which rules apply: the 6,000-pound line
-
-A "passenger automobile" for the depreciation caps is a 4-wheeled vehicle made mainly for public roads and rated at 6,000 pounds unloaded gross vehicle weight or less; for a truck or van the test uses gross vehicle weight. Ambulances, hearses, vehicles used directly in a business of transporting people or property for hire and, under regulations, certain trucks and vans are excluded ([26 U.S.C. 280F(d)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm)). For a truck or van the test is gross vehicle weight, the rating on the manufacturer's label. For any other vehicle the test is unloaded gross vehicle weight, which is not the label's gross rating. Whether a sport utility vehicle is a truck or van for this test is set by regulations this Guide does not cover; if the two measures fall on different sides of 6,000 pounds, refer.
-
-- **At or under the line:** the annual caps in the rates table limit depreciation, section 179 and bonus combined ([26 U.S.C. 280F(a) and (d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm)).
-- **Over the line:** the caps do not apply. A sport utility vehicle (a 4-wheeled passenger vehicle not subject to section 280F and rated at not more than 14,000 pounds gross vehicle weight) is limited for section 179 only, to the SUV figure in the rates table. The SUV definition excludes a vehicle seating more than 9 persons behind the driver's seat, one with an open cargo area at least 6 feet long not readily reachable from the passenger compartment (or designed as an open area but enclosed by a cap), and certain cab-forward vans ([26 U.S.C. 179(b)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)). The SUV cap does not limit bonus depreciation.
-- **Either way the vehicle is listed property** ("any other property used as a means of transportation"), so the more-than-50-percent business use rule below applies ([26 U.S.C. 280F(d)(4)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm)).
-
-
-- Table 2 applies (no bonus) if the car was used 50 percent or less for business in 2026, the taxpayer elected out for the class that includes passenger automobiles, a used car failed the acquisition rules, or the car was acquired before 28 September 2017 ([Rev. Proc. 2026-15, section 2.03](https://www.irs.gov/pub/irs-drop/rp-26-15.pdf)).
-- The cap is applied first, and then reduced for personal use: a car used 80 percent for business gets 80 percent of the cap ([26 U.S.C. 280F(a)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm)). Basis not recovered in the recovery period is deducted after it, at no more than the later-year cap each year ([26 U.S.C. 280F(a)(1)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm)).
-
-#### More than 50 percent business use, and recapture
-
-- If listed property is not used more than 50 percent in a qualified business use in a year, depreciation for that year and later years uses the alternative depreciation system ([26 U.S.C. 280F(b)(1) and (3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm)). That takes it out of bonus depreciation ([26 U.S.C. 168(k)(2)(D)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm)), and section 280F(d)(1) applies the same limit to a section 179 deduction.
-- If business use was more than 50 percent in the year placed in service and falls to 50 percent or less in a later year, the "excess depreciation" (what was claimed, including section 179 and bonus, minus what the alternative depreciation system would have allowed) is included in income in that later year ([26 U.S.C. 280F(b)(2) and (d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm); [26 U.S.C. 168(k)(2)(F)(ii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm)). Section 179 has its own recapture when any section 179 property stops being used predominantly in a trade or business ([26 U.S.C. 179(d)(10)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)). The recapture is reported as ordinary income in Part IV of Form 4797 and added to basis ([Publication 946](https://www.irs.gov/pub/irs-pdf/p946.pdf), chapter 2, "When Must You Recapture the Deduction?").
-- **Owners and related persons.** Qualified business use does NOT include leasing the vehicle to a 5-percent owner or related person, or letting a 5-percent owner or related person use it as compensation for services. It also excludes use by any other person as compensation unless the value is included in that person's income (with withholding where required) ([26 U.S.C. 280F(d)(6)(C)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm)). An owner-employee's personal use of a company vehicle can sink the 50 percent test.
-- No depreciation or section 179 deduction is allowed for listed property unless business use is proved with adequate records or sufficient evidence ([Publication 946](https://www.irs.gov/pub/irs-pdf/p946.pdf), chapter 5, "What Records Must Be Kept?").
-
-#### Standard mileage rate or actual expenses
-
-
-
-- Two business rates apply in 2026. Split business miles by the date driven and apply the rate for each period from the rates table.
-- For a car the taxpayer owns, the standard mileage rate must be chosen in the first year the car is available for business use; later the taxpayer can switch between methods, but a switch to actual expenses uses straight-line depreciation. For a leased car, the standard rate must be used for the whole lease if it is used at all ([Publication 463](https://www.irs.gov/pub/irs-pdf/p463.pdf), chapter 4).
-- The standard mileage rate cannot be used for a car on which the taxpayer claimed section 179, the special depreciation allowance, MACRS, or any depreciation method other than straight line, or if the taxpayer uses five or more cars for business at the same time ([Publication 463](https://www.irs.gov/pub/irs-pdf/p463.pdf), chapter 4). So the choice in year 1 is real: a large first-year deduction closes the mileage route for that car.
-- Under the standard rate, the depreciation part per mile in the rates table reduces the car's basis.
-
-### Choosing less depreciation now
-
-The law lets the owner take less than the maximum. Reasons to do so, each from the rules above:
-
-- **The section 179 income limit.** Section 179 beyond business taxable income only carries forward. Bonus depreciation has no income limit but can create a loss that other rules then limit. Expensing more than the year can absorb may only move the deduction into a carryforward or a limited loss.
-- **A higher tax rate later.** A deduction saves tax at the rate of the year it is taken. If the owner expects higher taxable income in later years, spreading cost through regular MACRS may save more in total. This is a projection the adviser makes; it is not a rule.
-- **Recapture risk.** A vehicle whose business use may fall to 50 percent or less, or an asset likely to be sold soon, brings the deduction back as ordinary income (see "Recapture on sale" below).
-- **States.** A state may not follow federal bonus depreciation or the federal section 179 limit, which can leave a state difference to track for years. See `us-state-bonus-depreciation-conformity-matrix`.
-
-The tools: elect section 179 for exactly the amount wanted, item by item ([26 U.S.C. 179(c)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)); elect out of bonus for a whole class ([26 U.S.C. 168(k)(7)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm)). Bonus depreciation is the default: an owner who wants regular MACRS on an asset that qualifies must elect out for its class, and that election covers every asset in the class placed in service that year.
-
-### Recapture on sale (section 1245)
-
-When section 1245 property is sold, the gain up to the depreciation taken is ordinary income: the lower of the recomputed basis and the amount realized, minus the adjusted basis. Section 179 deductions count as depreciation for this purpose ([26 U.S.C. 1245(a)(1) and (2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partIV-sec1245.htm)). Expensing an asset in year 1 does not remove the tax; on a sale it turns later gain into ordinary income. Like-kind exchanges and other exceptions are outside this Guide.
-
+**Sale.** For an ordinary taxable sale of section 1245 property, ordinary recapture is the positive excess of the lower of recomputed basis or amount realized over adjusted basis. Recomputed basis restores depreciation/amortization allowed or allowable; section 179 counts. Section 179 on qualified real property can also bring section 1245 treatment, but actual building allocation, exceptions, gifts, deaths and exchanges are **HOLD**: Check this point with one of our partner accountants. ([§1245(a)(1)–(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partIV-sec1245.htm))
 
 ## Boundary and exception table
 
-| Situation | Treatment |
+| Situation | Action |
 | --- | --- |
-| Section 179 property placed in service above USD 4,090,000 | Section 179 limit falls dollar for dollar; at USD 6,650,000 or more it is zero. Bonus still applies |
-| Business taxable income below the section 179 election | Excess carries forward; bonus instead can create a loss that meets owner-level limits |
-| Contract signed before 20 January 2025, placed in service 2026 | 20 percent bonus, not 100 percent; section 179 unaffected |
-| Non-binding contract | Acquired when more than 10 percent of the cost is paid or incurred |
-| Used property bought from a related person or controlled group member | No section 179 and no bonus |
-| Used property the taxpayer only leased before | Can qualify; its own leasehold improvements basis does not |
-| Trade-in plus cash | Only the cash counts as section 179 cost |
-| Roof, HVAC, fire protection, security on nonresidential building | Section 179 by election (qualified real property); no bonus, 39-year |
-| Qualified improvement property | Section 179 by election and bonus (15-year) |
-| Land improvements | No section 179; bonus as 15-year property |
-| Lodging property (apartment contents) | No section 179 unless section 50(b)(2) allows; bonus may apply |
-| Passenger car at or under 6,000 pounds | Annual caps, reduced for personal use |
-| SUV over 6,000 pounds, up to 14,000 | No car caps; section 179 capped at USD 32,000; bonus uncapped |
-| Listed property at 50 percent business use or less | Alternative depreciation system, no bonus, no section 179; later drop triggers recapture |
-| Vehicle used by a 5-percent owner or related person as compensation | Not qualified business use |
-| Section 179 or bonus claimed on a car | Standard mileage rate closed for that car |
-| Estate or trust | No section 179 |
-| Spouses filing separately | One taxpayer for the dollar limit and phase-out |
-
-### Defaults when a fact is missing
-
-| Missing fact | Default, and flag it |
-| --- | --- |
-| Contract date | Treat as acquired on the placed-in-service date only if there is no contract; otherwise ask, because a pre-20 January 2025 contract cuts bonus to 20 percent |
-| Business-use log for a vehicle | No section 179 or bonus until records exist |
-| Gross vehicle weight rating | Treat as a passenger automobile (caps apply) until the label is seen |
-| Business taxable income | Do not elect section 179 above a confirmed figure; rely on bonus |
-| New or used | Ask who sold it; do not assume original use |
-| State | Ask; flag that the state may not follow federal bonus |
-
-### Red flags to raise with the client
-
-| Flag | Why it matters |
-| --- | --- |
-| Large year-end purchases not yet delivered | Deduction is for the placed-in-service year, not the payment year |
-| Contract dated in early January 2025 | Bonus may be 20 percent, not 100 percent |
-| Vehicle business use near 50 percent | Recapture if it falls below in a later year |
-| Asset likely sold within a few years | Section 1245 recapture as ordinary income |
-| Bonus creates a large loss | Basis, at-risk, passive and excess business loss limits: refer |
-| Seller is a relative or related company | Section 179 and bonus both fail |
+| Missing acquisition/service date, basis, income or vehicle records | HOLD the affected deduction; establish facts rather than assuming eligibility |
+| Section 179 denied by income versus investment phase-out | Track income-limited carryover separately; do not carry investment-limit disallowance as section 179 |
+| Early-2025 contract | Determine its binding/acquisition date; the signature alone does not select a bonus rate |
+| Large year-end order | Confirm ready and available for business use, not payment alone |
+| Near-boundary vehicle use or intended disposal | Model recapture and retained basis before choosing a large first-year deduction |
+| Loss, rental, special property or owner-level limits | Apply the explicit HOLDs below; do not turn an illustrative deduction into a filing conclusion |
 
 ## Worked cases
 
-**Case 1, a decision: section 179, bonus, or a mix, with a business income limit (hypothetical).** New machinery costing USD 300,000, acquired after 19 January 2025 and placed in service in 2026. Business taxable income before any section 179 deduction is USD 120,000. Option A, section 179 on the full cost: USD 120,000 allowed in 2026, USD 180,000 carried forward. Option B, no section 179, bonus on the full cost: USD 300,000 deducted, leaving a USD 180,000 business loss that meets the owner-level loss limits. Option C, section 179 of USD 120,000 and an election out of bonus for the machinery class: USD 180,000 depreciated under regular MACRS from 2026. If the owner does not elect out, bonus applies automatically to the remaining USD 180,000 and the result is the same as Option B. Recommend C when the owner expects higher income later and cannot use a loss now; B when the loss can be used (for example against other active income, after the limits are checked).
+All amounts are hypothetical. The original eight examples remain; former Cases 1–2 duplicated Examples 1–3 and are consolidated here. Assume eligible business property and correctly established adjusted basis, no other phase-out purchases/credits/carryovers unless stated, and an ordinary full-length tax year. Asset classifications, conventions and owner loss usability are not inferred from price alone.
+
+**Example 1 - choose section 179, bonus or a mix (original Case 1).** New machinery costs USD 300,000, acquired after 19 January 2025 and placed in service in 2026. Stipulate USD 120,000 of section 179 income after other depreciation and required adjustments. A: elect the full USD 300,000 under section 179; USD 120,000 allowed and USD 180,000 income-limited carryover. B: elect no section 179; eligible bonus is USD 300,000, producing an arithmetic USD 180,000 loss before owner limits. C: elect USD 120,000 section 179 and elect out of bonus for the class; USD 180,000 remains for ordinary MACRS. Without that class election the USD 180,000 remainder receives bonus, giving the same total deduction as B under the stipulations. Choose C only after a projection supports deferral; choose B only after loss usability is established. **HOLD** on actual loss offsets or interdependent income-limit computation: Check this point with one of our partner accountants. ([§179(b)(3), (c)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm); [§168(k)(7)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm))
 
 ```oa-check
 name: Section 179 against bonus with a business income limit (2026)
@@ -224,7 +120,7 @@ expected:
   option_c_macrs_basis: 180000
 ```
 
-**Case 2, the phase-out and a passenger car (hypothetical).** A corporation places USD 4,200,000 of section 179 property in service in 2026 (moved here from `us-federal-cost-segregation`, its old Case 4). The excess over USD 4,090,000 is USD 110,000, so the section 179 limit is USD 2,560,000 minus USD 110,000 = USD 2,450,000, still subject to the business income limit. The rest of the cost can still take bonus if it is qualified property. Separately, a USD 50,000 car acquired after 19 January 2025 and placed in service in 2026, used 80 percent for business, gets year 1 depreciation of USD 20,300 times 80 percent = USD 16,240.
+**Example 2 - phase-out (original Case 2 / former cost-segregation Case 4).** A corporation places USD 4,200,000 qualifying section 179 cost in service in 2026. Excess = USD 110,000; reduced ceiling = USD 2,450,000 before income limits. The remainder is tested separately for bonus. **Example 3 - passenger car (also original Case 2).** The separate USD 50,000 car is acquired after 19 January 2025 and placed in service in 2026, used 80 percent for qualified business use all year. With 100-percent bonus eligibility and no section 179 election, business basis is USD 40,000, exceeding the proportionate first-year ceiling: USD 20,300 × 80 percent = USD 16,240. Later-year safe-harbor treatment remains the explicit HOLD above; no automatic year-2 deduction is asserted. ([Rev. Proc. 2025-32 §4.24](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [Rev. Proc. 2026-15 Table 1](https://www.irs.gov/pub/irs-drop/rp-26-15.pdf); [§280F(a)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm))
 
 ```oa-check
 name: Section 179 phase-out and passenger car cap (2026)
@@ -244,137 +140,76 @@ expected:
   car_year1: 16240
 ```
 
-### Other examples kept from the old file
+**Example 4 - heavy SUV.** USD 80,000 cost, over 6,000 pounds gross vehicle weight, acquired after 19 January 2025, service in 2026, 100-percent business use. Also stipulate that it meets the SUV definition, is not a capped passenger automobile and qualifies for bonus. Default eligible bonus = USD 80,000. If the class election out is made, section 179 is at most USD 32,000, subject to income/overall limits; USD 48,000 remains for MACRS. Later failure of the qualified-business-use test requires recapture testing. ([§179(b)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm); [Rev. Proc. 2025-32 §4.24](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [§280F(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm))
 
+**Example 5 - SUV sale.** The Example 4 SUV was fully deducted in 2026: recomputed basis USD 80,000, adjusted basis zero. Ordinary taxable sale in a later year for USD 45,000, no selling costs or intervening adjustments: section 1245 ordinary income = min(USD 80,000, USD 45,000) − zero = USD 45,000 ([§1245(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partIV-sec1245.htm)).
 
-#### Example 1: the business income limit
+**Example 6 - mileage change.** Original 2026 inputs preserved: 5,000 business miles January–June × USD 0.725 = USD 3,625; 7,000 July–December × USD 0.76 = USD 5,320; total USD 8,945 if eligible for standard mileage. Depreciation basis reduction = 12,000 × USD 0.35 = USD 4,200. Announcement 2026-11 changes the driving rate while leaving other Notice 2026-10 provisions in effect ([Notice 2026-10 §§3–4](https://www.irs.gov/pub/irs-drop/n-26-10.pdf); [Announcement 2026-11](https://www.irs.gov/irb/2026-29_irb)).
 
-|---|---|---|
-| Step | Amount | Note |
-| New machinery bought and placed in service in 2026, acquired after 19 January 2025 (hypothetical) | USD 300,000 | section 179 property and qualified property |
-| Business taxable income before any section 179 deduction (hypothetical) | USD 120,000 | section 179(b)(3)(C) |
-| Option A: elect section 179 for the full cost; deduction allowed in 2026 | USD 120,000 | limited to business taxable income |
-| Option A: carried forward to later years | USD 180,000 | USD 300,000 minus USD 120,000, section 179(b)(3)(B) |
-| Option B: no section 179 election, bonus depreciation on the full cost | USD 300,000 | section 168(k)(1), no income limit |
-| Option B: resulting business loss before other limits | USD 180,000 | refer: owner-level loss limits apply |
-| Option C: section 179 for the amount of business income, and elect out of bonus for the machinery's class | USD 120,000 | the remaining USD 180,000 is depreciated under regular MACRS from 2026 |
+```oa-check
+name: Original SUV sale and split-year mileage examples
+inputs:
+  suv_cost: 80000
+  suv_s179_cap: 32000
+  sale: 45000
+  adjusted_basis: 0
+  miles_first: 5000
+  miles_second: 7000
+  rate_first: 0.725
+  rate_second: 0.76
+  depreciation_rate: 0.35
+steps:
+  - suv_macrs_basis: suv_cost - suv_s179_cap
+  - sale_recapture: max(min(suv_cost, sale) - adjusted_basis, 0)
+  - first_period: miles_first * rate_first
+  - second_period: miles_second * rate_second
+  - mileage_total: first_period + second_period
+  - basis_reduction: (miles_first + miles_second) * depreciation_rate
+expected:
+  suv_macrs_basis: 48000
+  sale_recapture: 45000
+  first_period: 3625
+  second_period: 5320
+  mileage_total: 8945
+  basis_reduction: 4200
+```
 
-In Option C, if the owner does NOT elect out, bonus depreciation applies automatically to the remaining USD 180,000 and the result is the same as Option B.
+**Example 7 - early binding contract, no amount.** Binding contract entered and enforceable on 10 January 2025, no cancellation or contingency clause; delivery/service March 2026. For ordinary qualifying equipment, excluding self-construction, long-production property and aircraft, the acquisition is before 20 January 2025: 20-percent bonus rather than 100 percent. Section 179 separately uses the 2026 service-year limits. ([Notice 2026-11 §§2.03, 3.03](https://www.irs.gov/pub/irs-drop/n-26-11.pdf); [Former §168(k)(6)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm))
 
-#### Example 2: the phase-out
-
-|---|---|---|
-| Step | Amount | Note |
-| Section 179 property placed in service in the 2026 taxable year (hypothetical) | USD 4,200,000 | total cost |
-| Amount above the threshold | USD 110,000 | USD 4,200,000 minus USD 4,090,000 |
-| Section 179 limit after phase-out | USD 2,450,000 | USD 2,560,000 minus USD 110,000 |
-
-The rest of the cost is still eligible for bonus depreciation if it is qualified property, because the phase-out limits section 179 only.
-
-#### Example 3: a passenger car (6,000 pounds or less)
-
-|---|---|---|
-| Step | Amount | Note |
-| Car cost, acquired after 19 January 2025 and placed in service in 2026, used 80 percent for business all year (hypothetical) | USD 50,000 | passenger automobile, bonus applies |
-| Year 1 cap with bonus (Table 1) | USD 20,300 | applied before the personal-use reduction |
-| Year 1 deduction: cap times business use | USD 16,240 | USD 20,300 times 80 divided by 100 |
-
-After a 100 percent allowance limited by the year 1 cap, the rest of the business-use basis is unrecovered basis. Under the statute it is deducted only after the recovery period, at the later-year cap each year. Rev. Proc. 2019-13 gives a safe harbor, adopted on the return for the year after the placed-in-service year, that instead spreads the remaining basis over years 2 to 6 using the optional depreciation table, each year capped ([Rev. Proc. 2019-13, section 4](https://www.irs.gov/pub/irs-drop/rp-19-13.pdf)). It does not apply if any section 179 was elected on the car.
-
-A larger section 179 election on this car changes nothing: section 179 and bonus together cannot exceed the cap ([26 U.S.C. 280F(d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm)).
-
-#### Example 4: a heavy SUV (over 6,000 pounds gross vehicle weight)
-
-|---|---|---|
-| Step | Amount | Note |
-| SUV cost, rated over 6,000 pounds, acquired after 19 January 2025, placed in service in 2026, used 100 percent for business (hypothetical) | USD 80,000 | not a passenger automobile, so no 280F(a) cap; still listed property |
-| Default: bonus depreciation, year 1 | USD 80,000 | section 168(k)(1) |
-| If the owner elected out of bonus for the vehicle's class: maximum section 179 | USD 32,000 | SUV cap, section 179(b)(5) |
-| Left for regular MACRS in that case | USD 48,000 | USD 80,000 minus USD 32,000 |
-
-If business use later falls to 50 percent or less, the excess over the alternative depreciation system amount is recaptured that year (section 280F(b)(2)).
-
-#### Example 5: recapture on sale
-
-|---|---|---|
-| Step | Amount | Note |
-| Recomputed basis: the SUV in Example 4, fully deducted in 2026, adjusted basis zero (hypothetical) | USD 80,000 | section 179 and bonus are added back, section 1245(a)(2) |
-| Sale price in a later year (hypothetical) | USD 45,000 | amount realized |
-| Ordinary income under section 1245 | USD 45,000 | lower of USD 80,000 and USD 45,000, minus adjusted basis of zero |
-
-#### Example 6: mileage across the rate change
-
-|---|---|---|
-| Step | Amount | Note |
-| 5,000 business miles from 1 January to 30 June 2026 at 72.5 cents (hypothetical miles) | USD 3,625 | 5,000 times 72.5 cents |
-| 7,000 business miles from 1 July to 31 December 2026 at 76 cents (hypothetical miles) | USD 5,320 | 7,000 times 76 cents |
-| Standard mileage deduction for 2026 | USD 8,945 | sum of the two periods |
-
-#### Example 7: a contract signed too early (no amounts)
-
-A business signed a written binding contract on 10 January 2025 for equipment with no contingency or cancellation clause, took delivery and placed it in service in March 2026. It was acquired before 20 January 2025, so the 2026 bonus rate is the 20 percent in the rates table, not 100 percent ([Notice 2026-11, sections 2.03(2) and 3.03](https://www.irs.gov/pub/irs-drop/n-26-11.pdf); [Rev. Proc. 2026-15](https://www.irs.gov/pub/irs-drop/rp-26-15.pdf)). Section 179 is unaffected: it looks at the placed-in-service year.
-
-#### Example 8: a new roof on an office building (no amounts)
-
-A roof on nonresidential real property placed in service after the building was first placed in service is qualified real property, so section 179 can apply if the owner elects to treat it so ([26 U.S.C. 179(d)(1)(B)(ii) and (e)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)). A roof is not an interior improvement, so it is not qualified improvement property; it stays 39-year nonresidential real property and gets no bonus depreciation ([26 U.S.C. 168(e)(6) and (k)(2)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm)). For a whole building, see `us-federal-cost-segregation`.
-
-
-## When to refuse or refer
-
-- Estates and trusts: section 179 does not apply ([26 U.S.C. 179(d)(4)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)). Refer.
-- Partnerships and S corporations where the section 179 limit must be tested at both levels, controlled groups sharing one limit, and noncorporate lessors: refer to the accountant preparing the entity return ([26 U.S.C. 179(d)(5) to (8)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm)).
-- A year where depreciation creates or increases a loss: the owner-level loss limits (basis, at-risk, passive activity, excess business loss) are outside this Guide. Refer.
-- Rental real estate and short-term rentals: see `us-real-estate-professional-and-short-term-rentals`. Buildings and cost segregation studies: see `us-federal-cost-segregation`.
-- Vehicles provided to 5-percent owners or related persons, leased vehicles (the lease inclusion rules), and qualified nonpersonal use vehicles: refer.
-- Property with long production periods, aircraft, self-constructed property, qualified production property under section 168(n), and specified plants: the special rules are outside this Guide. Refer.
-- Refuse to claim bonus depreciation or section 179 on a vehicle with no business-use record, or to back-date a contract or placed-in-service date.
+**Example 8 - office roof, no amount.** Roof improvement to nonresidential property placed in service after the building's first service date: section 179 can apply by election if the general conditions and limits are met. An ordinary roof outside the building interior is not QIP; the unexpensed roof follows 39-year GDS and does not receive section 168(k) bonus merely because roofs qualify for section 179. Section 168(n), ADS, repair-versus-improvement and building-study classification remain **HOLD**: Check this point with one of our partner accountants. ([§179(e)(2)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm); [§168(c), (e)(6), (k)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm))
 
 ## Filing and payment
 
-### Form 4562 and the records to keep
+Form 4562 accompanies the return when required, including new-service-year depreciation, section 179/carryovers and listed-property depreciation. The **2025** instructions show Part I section 179, Part II bonus for nonlisted property, Part III MACRS and Part V listed property, including its bonus on line 25. They are not verified 2026 final form/line instructions; that mapping is **HOLD** until the final applicable form is checked. Keep asset basis, elections, carryovers and depreciation history for disposal/recapture ([Form 4562 instructions, Who Must File and Parts I–V](https://www.irs.gov/instructions/i4562)).
 
-File Form 4562 for a year in which the taxpayer claims depreciation for property placed in service that year, a section 179 deduction (including a carryover), or depreciation on any vehicle or other listed property whatever year it was placed in service ([Instructions for Form 4562](https://www.irs.gov/pub/irs-pdf/i4562.pdf), "Who Must File"). Part I is the section 179 election, Part II the special depreciation allowance, Part III regular MACRS, and Part V listed property. The instructions cited are the 2025 edition, the edition irs.gov served on 3 October 2026.
+For ordinary calendar-year domestic 2026 returns, statutory unextended dates are 15 April 2027 for individual/Form 1040 and C corporation/Form 1120, and 15 March 2027 for partnerships/Form 1065 and S corporations/Form 1120-S ([§6072(a)–(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm)). Fiscal years, nonresidents, special entities, extensions, disaster relief and actual filing/payment obligations require separate checking. The historical 15 October 2026 extension date for certain 2025 individual/C corporation returns is not a current open deadline or evidence that a particular return was extended. **HOLD** on such deadline/relief entitlement: Check this point with one of our partner accountants.
 
-Keep, for each asset, as permanent records ([Instructions for Form 4562](https://www.irs.gov/pub/irs-pdf/i4562.pdf), "Recordkeeping"):
+## When to refuse or refer
 
-- Invoice and proof of payment; the contract, with its signing date and any contingency or cancellation clauses (the acquisition date).
-- Evidence of the placed-in-service date: delivery, installation and first business use.
-- For used property: who sold it, and whether the taxpayer or a predecessor had a depreciable interest in it in the five prior calendar years or earlier in the year it is placed in service (a plain lease is not one).
-- For vehicles: the gross vehicle weight rating from the manufacturer's label, and a business-use log with dates, miles and purpose, for every year of the recovery period.
-- The section 179 election detail (items and amounts), any carryforward, and any election-out statement.
-- The depreciation basis, method and history needed later for recapture.
+Every **HOLD** is non-usable for the affected filing outcome; no deduction or zero-tax result is supplied by that referral. Check this point with one of our partner accountants.
 
-Form 4562 goes with the 2026 return for the year the asset is placed in service: for a calendar-year individual, Form 1040 due 15 April 2027; for a calendar-year C corporation, Form 1120 due 15 April 2027; partnerships and S corporations, 15 March 2027. The bonus election out and the section 179 election are made on that timely filed return (including extensions). A 2025 return still on extension (to 15 October 2026 for individuals and C corporations) uses the 2025 limits in the rates table.
+- Special-property eligibility/elections: long-production property and aircraft (including the historical 60-percent 2025 / 40-percent 2026 schedule), self-construction/component elections, specified plants, productions and section 168(n) qualified production property. No blanket building-bonus conclusion.
+- Loss limitations, QBI/NOL effects, noncorporate/rental classification, ownership allocations, controlled groups, section 179 real-property recapture, unusual disposals, late elections and actual 2026 form mapping.
+- Vehicle lease inclusions, nonpersonal-use exceptions, weight/classification mismatches, owner compensation and detailed recapture or safe-harbor accounting. The former assertion of Form 4797 Part IV and basis additions is an implementation HOLD, not an approved form instruction.
+- Refuse unsupported business-use or acquisition/service records and any requested backdating.
 
-## Completion checklist
+Related jobs retain their original destinations: cost segregation, look-back studies and Form 3115 → `us-federal-cost-segregation`; rentals/passive activity → `us-real-estate-professional-and-short-term-rentals`; state conformity → `us-state-bonus-depreciation-conformity-matrix`; Schedule C → `us-schedule-c-and-se-computation`; entity returns → `us-form-1120-c-corp`, `us-form-1065-partnership`, `us-form-1120-s-s-corporation-return`; real-property exchanges → `us-section-1031-like-kind-exchange`. These routes do not establish eligibility.
 
-- Acquisition date and placed-in-service date recorded for every asset, with the contract.
-- Bonus rate matched to the acquisition date (100 percent, 20 percent, or the 2025 rates).
-- Section 179 limited by the dollar limit, the phase-out and business taxable income; carryforward recorded.
-- Election out made by class only where wanted, by statement on the timely return.
-- Vehicle weight, business use above 50 percent, and the cap table applied; mileage route checked before taking section 179 or bonus on a car.
-- Used property tested for related-party and prior-use rules.
-- Recapture risk explained for vehicles and assets likely sold.
-- State conformity checked separately.
+**Circular 230 §10.37.** General decision support based on the stated facts and cited federal sources. Obtain professional review of the actual facts, elections and applicable return before filing.
 
 ## Sources
 
-| Source | URL | Read on |
-| --- | --- | --- |
-| Rev. Proc. 2025-32. Read for section 4.24 (USD 2,560,000, USD 4,090,000, USD 32,000) and section 3.02 (2025 USD 2,500,000 and USD 4,000,000). | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
-| Public Law 119-21, sections 70301, 70306 and 70601. Read for 100 percent bonus, acquisition after January 19, 2025, the 40 percent election and the section 179 amendment. | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
-| Notice 2026-11. Read for sections 2.01 (40 percent for 2025), 2.03(2) (acquisition rules, 10 percent), 3.03, 3.06, 3.07 and 4.03. | https://www.irs.gov/pub/irs-drop/n-26-11.pdf | 2026-11-13 |
-| Rev. Proc. 2026-15. Read for Tables 1 and 2 and the 20 percent rate for 2026. | https://www.irs.gov/pub/irs-drop/rp-26-15.pdf | 2026-11-13 |
-| Notice 2026-10. Read for 72.5 cents and the 35 cents depreciation part. | https://www.irs.gov/pub/irs-drop/n-26-10.pdf | 2026-11-13 |
-| IRS standard mileage rates page. Read for 76 cents from 1 July 2026. | https://www.irs.gov/tax-professionals/standard-mileage-rates | 2026-11-13 |
-| Rev. Proc. 2019-13. Read for the section 280F(a) safe harbor. | https://www.irs.gov/pub/irs-drop/rp-19-13.pdf | 2026-10-03 |
-| Reg. 1.168(k)-2 (govinfo CFR 2025). Read for (b)(3)(iii)(B)(1), prior use. | https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol3/pdf/CFR-2025-title26-vol3-sec1-168k-2.pdf | 2026-11-13 |
-| 26 U.S.C. 179 (govinfo, 2024 edition). Read for (b) to (e) structure; amounts from Rev. Proc. 2025-32. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm | 2026-11-13 |
-| 26 U.S.C. 168 (govinfo, 2024 edition). Read for (e), (k)(2), (k)(7). | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm | 2026-11-13 |
-| 26 U.S.C. 280F (govinfo). Read for (a), (b), (d)(1), (d)(4) to (6). | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm | 2026-11-13 |
-| 26 U.S.C. 1245 (govinfo). Read for (a)(1) and (2). | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partIV-sec1245.htm | 2026-11-13 |
-| Instructions for Form 4562 (2025). Read for Line 11, Part II, election out, Who Must File, Recordkeeping. | https://www.irs.gov/pub/irs-pdf/i4562.pdf | 2026-11-13 |
-| Publication 946 (2025). Read for chapters 2 and 5 (lodging, lessors, recapture, records). | https://www.irs.gov/pub/irs-pdf/p946.pdf | 2026-10-03 |
-| Publication 463 (2025). Read for chapter 4, standard mileage rules. | https://www.irs.gov/pub/irs-pdf/p463.pdf | 2026-10-03 |
+| Official source and passages used | Read on |
+| --- | --- |
+| [Rev. Proc. 2025-32 §§3.02, 4.24](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [Public Law 119-21 §§70301, 70306](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm): unchanged federal amounts/effective-date passages reused after applicability check against the completed federal baseline | 2026-11-27 |
+| [§179(b)–(e)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec179.htm): conditions/definitions, not superseded base amounts | 2026-11-27 |
+| [§168(c), (e), (k)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm): classification, exceptions, election and former acquisition-cohort rates; read with the Act | 2026-11-27 |
+| [Notice 2026-11 §§2.03, 3–4](https://www.irs.gov/pub/irs-drop/n-26-11.pdf); [Reg. 1.168(k)-2(b)(3), (b)(5)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol3/pdf/CFR-2025-title26-vol3-sec1-168k-2.pdf): acquisition and used-property conditions | 2026-11-27 |
+| [§280F(a)–(d)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280F.htm); [Rev. Proc. 2026-15 §§2–4, Tables 1–2](https://www.irs.gov/pub/irs-drop/rp-26-15.pdf): vehicles, cap cohort and business use | 2026-11-27 |
+| [Notice 2026-10 §§3–4](https://www.irs.gov/pub/irs-drop/n-26-10.pdf); [Announcement 2026-11](https://www.irs.gov/irb/2026-29_irb); [IRS mileage table](https://www.irs.gov/tax-professionals/standard-mileage-rates): split-year rate reconciled to modifying announcement; depreciation component unchanged | 2026-11-27 |
+| [§1245(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partIV-sec1245.htm): taxable-sale recapture; [Rev. Proc. 2019-13 §§3–4](https://www.irs.gov/pub/irs-drop/rp-19-13.pdf): safe-harbor scope read, application held | 2026-11-27 |
+| [2025 Form 4562 instructions](https://www.irs.gov/instructions/i4562), line 11, exceptions, election out and form sections; [Publication 946](https://www.irs.gov/publications/p946), chapters 1–3 and listed property; [Publication 463](https://www.irs.gov/publications/p463), chapter 4: guidance subordinated to operative law | 2026-11-27 |
+| [Rev. Proc. 2019-46 §4.04](https://www.irs.gov/pub/irs-drop/rp-19-46.pdf): mileage depreciation basis rule, read for that operative paragraph | 2026-11-27 |
+| [§6072(a)–(c)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm): general filing-date rules and nonresident boundary | 2026-11-27 |
 
-Not yet confirmed: the 2026 Instructions for Form 4562 and the 2026 Publication 946 were not published when read; Form 4562 line references come from the 2025 editions. The govinfo US Code is the 2024 edition and predates Public Law 119-21, so section 179 dollar amounts and the section 168(k) dates are taken from Rev. Proc. 2025-32, the Public Law and Notice 2026-11, not from that text.
+Not yet confirmed: actual client facts and the special-case filing outcomes expressly held above, including the final 2026 Form 4562 mapping. These HOLDs are non-usable; no unconfirmed deduction or deadline entitlement is supplied. Check this point with one of our partner accountants.
