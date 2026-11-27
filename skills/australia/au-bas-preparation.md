@@ -195,7 +195,7 @@ Classify every transaction first, using `australia-gst.md`. Then map.
 
 ### 5.1 Simpler BAS
 
-Simpler BAS is normally the default below $10 million GST turnover; confirm the recorded reporting method. Below that threshold, aggregated turnover over $10 million or a main input-taxed activity can allow a choice of Simpler or full reporting. GST instalments are a separate method. [ATO reporting methods](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/goods-and-services-tax-gst/gst-reporting-methods).
+Simpler BAS is normally the default below $10 million GST turnover; confirm the recorded reporting method. Below that threshold, aggregated turnover over $10 million or a main input-taxed activity can allow a choice of Simpler or full reporting. GST instalments are a separate method. If turnover reaches $10 million, contact the ATO to update its records; the move to full reporting is from the start of the next financial year. If turnover falls below $10 million, contact the ATO: it may move the entity to Simpler BAS from the next tax period, or to eligible elected instalments under their own start-date rules. Do not change the current issued statement merely from a software turnover total. [ATO reporting methods](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/goods-and-services-tax-gst/gst-reporting-methods).
 
 | Label | What goes in it | Official source |
 | --- | --- | --- |
