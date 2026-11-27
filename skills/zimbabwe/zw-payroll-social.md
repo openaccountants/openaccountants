@@ -2,11 +2,11 @@
 name: zw-payroll-social
 description: >
   Zimbabwe payroll and social contributions, tax year 2026: PAYE in USD and ZWG, 3% AIDS levy, NSSA pension 4.5% each on a USD 700 ceiling, workers compensation by industry, ZIMDEF, the monthly PAYE return due on the 5th and payment on the 10th, and the long return in TaRMS. Use for questions such as Zimbabwe payroll, ZIMRA PAYE, P2 return, NSSA contributions, P4 form or what does an employee cost in Zimbabwe. Individual returns are in zw-income-tax.
-version: 1.1
+version: 1.2
 jurisdiction: ZW
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 type: computation
 source_checked: 2026-11-01
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -52,11 +52,11 @@ These sections come from the earlier version. Where a figure conflicts with the 
 
 ## zimbabwe-payroll
 
-### Zimbabwe Payroll Skill v1.1
+### Zimbabwe Payroll Skill v1.2
 
 > **Verification status:** Tier 2. `verified_by: pending`  -  this skill has NOT yet been signed off by a registered Zimbabwean tax accountant or ZIMRA-registered tax agent. Every output must be labelled as an estimate and routed to a qualified professional.
 
-> **CRITICAL  -  Zimbabwe runs a dual-currency payroll system.** Remuneration paid in **USD (foreign currency)** and remuneration paid in **ZiG / ZWG (Zimbabwe Gold, the local currency since April 2024)** are taxed using **two separate PAYE tax tables**. PAYE is remitted to ZIMRA **in the currency in which the income was earned**. You MUST establish the pay currency (or the currency split) before computing anything. The legacy ZWL/RTGS tables are obsolete and must never be used.
+> **CRITICAL  -  Zimbabwe runs a dual-currency payroll system.** Remuneration paid in **USD (foreign currency)** and remuneration paid in **ZiG / ZWG (Zimbabwe Gold, the local currency since April 2024)** are taxed using **two separate PAYE tax tables**; a salary with both components is taxed on the USD tables as a whole and the tax apportioned (ZIMRA PAYE page). PAYE is remitted to ZIMRA **in the currency in which the income was earned**. You MUST establish the pay currency (or the currency split) before computing anything. The legacy ZWL/RTGS tables are obsolete and must never be used.
 
 ### Section 1  -  Quick Reference
 
@@ -222,7 +222,7 @@ Low-risk sectors (offices, retail) attract lower rates; high-risk sectors (minin
 | Example  -  Agriculture grade A1 | USD 80/month (eff. 1 June 2025) | Agriculture NEC CBA **[RESEARCH GAP  -  reviewer to confirm current grade rates]** |
 | Example  -  Agriculture grade C2 | USD 159/month (eff. 1 June 2025) | Agriculture NEC CBA **[RESEARCH GAP  -  reviewer to confirm current grade rates]** |
 
-> **Currency-split rule:** workers are generally paid **65% in USD** and the remainder in ZiG. This split determines which PAYE table applies to each portion of pay. **[RESEARCH GAP  -  the 65/35 split is a market norm, not a uniform statutory rule; reviewer to confirm the contractual / NEC split for the specific employer.]**
+> **Currency-split rule:** workers are generally paid **65% in USD** and the remainder in ZiG. For PAYE, a salary with both components is taxed on the USD tables as a whole and the tax due is apportioned between the currencies (ZIMRA PAYE page). **[RESEARCH GAP  -  the 65/35 split is a market norm, not a uniform statutory rule; reviewer to confirm the contractual / NEC split for the specific employer.]**
 
 ### Section 6  -  Conservative Defaults
 
@@ -336,13 +336,13 @@ Apply these classifications **in order**; first match wins. Currency tags (USD /
 #### Example 5  -  Split pay (65% USD / 35% ZiG)
 
 - Total gross: **USD 1,000-equivalent**, split 65% USD / 35% ZiG. ZIMRA: "for salaries with both ZWG and USD components use the USD tax tables and apportion the tax due accordingly." Compute PAYE once on the total on the USD table, then apportion the tax between the USD and ZiG portions and remit each portion in its own currency. Do not apply each currency's table to its own portion.
-- **USD portion:** USD 650. Employee NSSA 4.5% × 650 = USD 29.25. Taxable 650 − 29.25 = 620.75 (300.01–1,000 → 25%, deduct 35). PAYE = 620.75 × 0.25 − 35 = 155.19 − 35 = **USD 120.19** (155.1875 → 120.19). AIDS Levy = 120.19 × 0.03 = **USD 3.61** (3.6057 → 3.61).
-- **ZiG portion:** assume ZWG-equivalent of the remaining 35%. Compute on the ZWG monthly table per Section 2c. **[RESEARCH GAP  -  requires the USD/ZiG exchange rate for the period; reviewer to supply.]**
+- **Whole salary on the USD table:** employee NSSA 4.5% × 700 (ceiling) = USD 31.50. Taxable 1,000 − 31.50 = 968.50 (300.01–1,000 → 25%, deduct 35). PAYE = 968.50 × 0.25 − 35 = 242.125 − 35 = **USD 207.13** (207.125). AIDS Levy = 207.125 × 0.03 = **USD 6.21** (6.21375). Total **USD 213.34**. **[RESEARCH GAP  -  S.I. 169 of 2021 treats USD and local-currency earnings separately for NSSA; if the ceiling applies per currency, NSSA and PAYE change.]**
+- **Apportion 65% / 35%:** USD share PAYE 207.125 × 0.65 = **USD 134.63** and AIDS Levy 6.21375 × 0.65 = **USD 4.04**, total **USD 138.67**. ZiG share is the remainder: PAYE 207.13 − 134.63 = **USD 72.50** and AIDS Levy 6.21 − 4.04 = **USD 2.17**, total **USD 74.67**, converted to ZWG at the official rate for the pay period. **[RESEARCH GAP  -  requires the USD/ZiG exchange rate for the period; reviewer to supply.]**
 - Remit USD PAYE in USD and ZiG PAYE in ZiG. Do **not** net the two currencies.
 
 ### Section 10  -  Tier 1 Rules (deterministic  -  always apply)
 
-- **Tier 1 Rules**  -  1. Establish **pay currency** first; select the matching PAYE table (USD = Section 2a/2b; ZiG = Section 2c/2d). Never mix. 2. Deduct the **employee NSSA (POBS) 4.5%** (capped) before applying the PAYE table. 3. Compute PAYE as `income × rate − deduct` from the correct frequency table. 4. Apply **AIDS Levy = PAYE × 3%** after PAYE, never on gross income. 5. Total employee tax withheld = PAYE + AIDS Levy. 6. Employer pays POBS 4.5%, APWCS (industry-rated), and ZIMDEF 1% **separately**  -  never deducted from the employee. 7. Remit PAYE + AIDS Levy to ZIMRA via **Form P2** by the **10th of the following month**, in the currency earned. 8. Remit NSSA by the 10th; remit ZIMDEF within 30 days of month-end. 9. Never use legacy ZWL/RTGS tables. 10. Label every output as an estimate pending professional sign-off.
+- **Tier 1 Rules**  -  1. Establish **pay currency** first; select the matching PAYE table (USD = Section 2a/2b; ZiG = Section 2c/2d); for split pay use the USD table on the whole salary and apportion the tax. 2. Deduct the **employee NSSA (POBS) 4.5%** (capped) before applying the PAYE table. 3. Compute PAYE as `income × rate − deduct` from the correct frequency table. 4. Apply **AIDS Levy = PAYE × 3%** after PAYE, never on gross income. 5. Total employee tax withheld = PAYE + AIDS Levy. 6. Employer pays POBS 4.5%, APWCS (industry-rated), and ZIMDEF 1% **separately**  -  never deducted from the employee. 7. Remit PAYE + AIDS Levy to ZIMRA via **Form P2** by the **10th of the following month**, in the currency earned. 8. Remit NSSA by the 10th; remit ZIMDEF within 30 days of month-end. 9. Never use legacy ZWL/RTGS tables. 10. Label every output as an estimate pending professional sign-off.
 
 ### Section 11  -  Tier 2 Catalogue (reviewer judgement required)
 
@@ -354,7 +354,7 @@ Apply these classifications **in order**; first match wins. Currency tags (USD /
 | ZiG-equivalent NSSA ceiling | Not confirmed in research data |
 | Employer APWCS IC-code rate | No authoritative full schedule; assessment-specific |
 | Taxability of specific allowances / benefits in kind | Depends on ZIMRA treatment of each item |
-| Split-pay PAYE mechanics across two currencies | Threshold application uncertain; confirm with ZIMRA |
+| Split-pay NSSA base across two currencies | S.I. 169 of 2021 says USD and local-currency earnings are treated separately; confirm how the USD 700 ceiling applies |
 | Applicable NEC sector minimum wage | ~22 sectors, each with its own gazetted SI |
 | USD/ZiG exchange rate for split or conversion | Period-specific; reviewer to supply |
 | Late-PAYE penalty quantum | Applied per ZIMRA assessment (see Section 14) |
@@ -414,7 +414,7 @@ Apply these classifications **in order**; first match wins. Currency tags (USD /
 | Obligation | Form / channel | Deadline | Source |
 | --- | --- | --- | --- |
 | Monthly PAYE + AIDS Levy | Form **P2** via TaRMS portal | return 5th, payment **10th of following month** | ZIMRA, PAYE Explained |
-| NSSA (POBS + APWCS) | NSSA channels | return 5th, payment **10th of following month** | NSSA Contributions |
+| NSSA (POBS + APWCS) | NSSA channels | return and payment **10th of following month** | S.I. 169 of 2021 s.6(a), amending s.7(1) of S.I. 393 of 1993; NSSA Contributions |
 | ZIMDEF levy | ZIMDEF | **within 30 days after month-end** | ZIMDEF FAQs |
 | Employer registration | ZIMRA (BP number) before operating PAYE | Before first payroll | ZIMRA **[RESEARCH GAP  -  exact registration-page figures not retrievable]** |
 
@@ -563,5 +563,7 @@ expected:
 | ZIMRA Public Notices 5, 7, 11, 49, 50, 58, 61 of 2026 (list page; each PDF opened) | https://www.zimra.co.zw/public-notices | 2026-11-01 |
 | ZIMRA Tax Tables page and 2025 PDFs, monthly and annual tables | https://www.zimra.co.zw/domestic-taxes/tax-tables | 2026-11-01 |
 | NSSA Contributions page, whole page, in a browser | https://www.nssa.org.zw/contributions/ | 2026-11-01 |
+| ZIMRA Pay As You Earn (PAYE) page: "NB for salaries with both ZWG and USD components use the USD tax tables and apportion the tax due accordingly" | https://www.zimra.co.zw/domestic-taxes/individual/pay-as-you-earn-paye | 2026-11-26 |
+| S.I. 169 of 2021 (Veritas copy of the Government Printer text): s.6(a) moves the s.7(1) date of S.I. 393 of 1993 from the '16th day' to the '10th day'; s.8(b) adds s.11(7), USD and local-currency earnings 'treated separately' for contributions | https://www.veritaszim.net/sites/veritas_d/files/SI%202021-169%20National%20Social%20Security%20Authority%20%28Pensions%20and%20Other%20Benefits%20Scheme%29%20%28Rates%20of%20Benefits%29%20%28Amendment%29%20Notice%2C%202021%20%28No.%2028%29.pdf | 2026-11-26 |
 
 Not yet confirmed: any 2026 PAYE table; current quarter NSSA ceiling and its ZWG equivalent; full IC rates; ZIMDEF rate and deadline; SI 186 of 2024 and NEC wages, including the 65% USD split; late PAYE penalty; order of NSSA and PAYE; rows moved out of the rates table on 2026-11-14: ZIMDEF levy 1% of wage bill (earlier version) and national minimum wage USD 150 a month (SI 186 of 2024 not opened).
