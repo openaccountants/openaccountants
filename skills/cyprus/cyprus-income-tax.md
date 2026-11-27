@@ -1,11 +1,11 @@
 ---
 name: cyprus-income-tax
-description: "Cyprus personal income tax for tax year 2026 (Income Tax Law 118(I)/2002 as amended by Law 244(I)/2025 from 1 January 2026; Assessment and Collection of Taxes Law 4/1978 as amended by Law 243(I)/2025). Covers resident employees, the self-employed, landlords and pensioners: the new EUR 22,000 tax-free band and the 20/25/30/35% bands, exempt dividends and interest, the 20%, 25% and 50% exemptions for people starting work in Cyprus, the one-fifth cap on contributions, the new child, housing-loan or rent and green deductions with their family income caps, 8% rates on crypto and share options, the 5% foreign pension option, SDC on dividends and interest as it stands from 2026, filing duty, the 31 July and 31 January deadlines, provisional tax, penalties and interest. Trigger on: Cyprus income tax 2026, TD1, tax-free EUR 22,000, Cyprus child deduction, provisional tax Cyprus, 50% exemption Cyprus. Out of scope: cy-non-dom, cy-cross-border, cyprus-payroll, cyprus-social-contributions, cy-corporate-tax, cyprus-vat-return."
-version: 0.4
+description: "Compute Cyprus individual income tax for 2026: residence, progressive bands, contribution caps, family deductions, special income, filing and provisional tax. Includes explicit holds for unproven eligibility and historical cases; use before preparing or reviewing a TD1 return."
+version: 0.5
 type: computation
 jurisdiction: CY
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -16,160 +16,123 @@ domain: income-tax
 
 # Cyprus personal income tax (tax year 2026)
 
-Cyprus taxes individuals on the calendar year. The 2026 tax reform applies from tax year 2026: Law 244(I)/2025 amends the Income Tax Law (ITL), Law 243(I)/2025 amends the Assessment and Collection of Taxes Law (ACL) and Law 245(I)/2025 amends the Special Defence Contribution (SDC) Law. All three were published on 31 December 2025 and took effect on 1 January 2026. Article numbers below are to the Greek consolidated texts on CyLaw (ITL consolidated up to Law 67(I)/2026). CyLaw is not the official gazette. For tax year 2025 and earlier, use the 2025 rules, not this skill.
+Use this Guide to compute an individual's ordinary 2026 income tax and the deductions below. Confirm the tax year, residence, income categories, contribution certificates, family composition and total family income first. Do not use a held outcome to file, elect or determine eligibility.
 
-Sibling skills: residence detail, non-residents and withholding are in `cy-cross-border`; domicile and SDC planning in `cy-non-dom`; PAYE in `cyprus-payroll`; Social Insurance and GHS (GESY) rates in `cyprus-social-contributions`; companies in `cy-corporate-tax`; VAT in `cyprus-vat-return`.
+The reform applies from 1 January 2026. Law 244(I)/2025 commencement is section 23 after the Gazette correction; the delayed securities provision starts in 2031. The 25% returning-resident exemption was enacted separately by Law 17(I)/2026 with effect from 1 January 2025. [Laws 243–245/2025, printed pp.1260–1316](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf); [Gazette correction](https://www.mof.gov.cy/mof/gpo/gazette.nsf/203DBFC78C778160C2258DAB0020F89D/%24file/5075%2027%202%202026%20PARARTIMA%201o%20MEROS%20I.pdf); [Law 17/2026](https://www.mof.gov.cy/mof/tax/taxdep.nsf/All/AFF8B2E8B2A07820C2258DB60033F251/%24file/5076%206%203%202026%20PARARTIMA%201o%20MEROS%20I.pdf?OpenElement=).
 
 ## Who this applies to
 
-- **Residents are taxed on worldwide income** (ITL art. 5(1)). Non-residents are taxed only on Cyprus-source income (ITL art. 5(2)); see `cy-cross-border`.
-- **183-day rule.** A person is resident if they stay in Cyprus for periods that add up to more than 183 days in the tax year (ITL art. 2, "κάτοικος της Δημοκρατίας" (α)(i)).
-- **60-day rule.** A person who does not meet the 183-day rule is resident if all of these hold in the same year: they did not stay in any other single state for more than 183 days in total; they stayed in Cyprus at least 60 days; they carried on a business in Cyprus, were employed in Cyprus, or held an office in a Cyprus tax resident person at any time in the year, and that activity did not end during the year; and they kept a permanent home in Cyprus, owned or rented (ITL art. 2 (α)(ii)). The consolidated text no longer requires that the person is not tax resident in another state. Day counting: the day of departure is a day outside Cyprus, the day of arrival a day in Cyprus. Full residence detail is in `cy-cross-border`; how the 60-day rule interacts with domicile and SDC is in `cy-non-dom`.
-- **Who must file from tax year 2026** (ACL art. 5(1)(α)): a resident with any gross income under ITL art. 5(1), and every resident who on 31 December has completed age 25 but not age 71, even with no income. A non-resident files if they have Cyprus-source gross income (ACL art. 5(1)(β)). The old rule that excused people with gross income below the tax-free band applies only to tax years up to 2024 (ACL art. 5(1), second proviso). The Council of Ministers may exempt categories by decree (third proviso).
-- **Spouses are taxed separately.** Each person files their own return; the family income test for the new personal deductions joins the two (ITL art. 14B).
-- **Out of scope here:** companies (`cy-corporate-tax`), Capital Gains Tax on Cyprus immovable property (Capital Gains Tax Law 52/1980), employer PAYE mechanics (`cyprus-payroll`).
+- Individuals: employees, sole traders, landlords and pensioners. Residents' worldwide income and non-residents' Cyprus-source income require different computations. This Guide's ordinary examples assume resident status and an established ordinary taxable-income base. [Tax Department, return scope](https://www.gov.cy/mof-tax/en/documents/forologiki-dilosi-eisodimatos-atomoy/).
+- **183-day test:** more than 183 days in Cyprus in the tax year. Exactly 183 is insufficient under that test. **60-day alternative:** no stay exceeding 183 days in any other single state; at least 60 days in Cyprus; business, employment or office in a Cyprus tax-resident person during the year, without its termination during that year; and a permanent owned or rented home in Cyprus. Another country's tax residence is no longer an additional exclusion. Arrival counts inside, departure outside; arriving and departing on the same day counts inside, departing and returning on the same day outside. [ITL art.2, replaced by Law 244 s.2](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf).
+- **Filing from 2026:** a resident with gross income within ITL art.5(1), whatever their age; also every resident aged 25 to 70 inclusive on 31 December, even without income. A non-resident with art.5(2) gross income files. A zero-rate tax result is not a filing exemption. The Council of Ministers can exempt categories by decree. [ACL art.5(1), replaced by Law 243 s.4](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf).
+- Companies, partnerships, Cyprus property-disposal capital gains, dual-residence/treaty allocation, withholding and payroll are separate jobs. Use `cy-corporate-tax`, `cy-cross-border`, `cyprus-payroll`, `cyprus-social-contributions`, `cy-non-dom` and `cyprus-vat-return` as relevant; a link to another Guide does not release a hold here. Check this point with one of our partner accountants.
 
 ## Rates, bands and thresholds
 
-| Item | Rate or amount | Year | Source |
+Apply each percentage only to the slice of chargeable income in its band; do not round chargeable income to whole euros to choose a band.
+
+| 2026 chargeable-income slice | Rate | Cumulative tax at top | Official source |
 |---|---|---|---|
-| 0% band, chargeable income up to | EUR 22,000 | 2026 | ITL art. 25 and Second Schedule para. 1(γ), https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html |
-| 20% band | EUR 22,001 to 32,000 | 2026 | [ITL Second Schedule para. 1(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| 25% band | EUR 32,001 to 42,000 | 2026 | [ITL Second Schedule para. 1(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| 30% band | EUR 42,001 to 72,000 | 2026 | [ITL Second Schedule para. 1(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| 35% band | over EUR 72,000 | 2026 | [ITL Second Schedule para. 1(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Tax at the top of the 20%, 25% and 30% bands (cumulative) | EUR 2,000 / 4,500 / 13,500 | 2026 | Computed from the bands; the Tax Department return page prints the same figures, https://www.gov.cy/mof-tax/en/documents/forologiki-dilosi-eisodimatos-atomoy/ |
-| 0% band before the reform (2008 to 2025, not for 2026) | EUR 19,500 | 2025 | [ITL Second Schedule para. 1(β)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Interest income of individuals | Exempt from income tax | 2026 | [ITL art. 8(19)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Dividend income | Exempt from income tax | 2026 | [ITL art. 8(20)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Gains on disposal of titles (shares, bonds and similar) | Exempt from income tax | 2026 | [ITL art. 8(22)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| First-employment exemption, art. 8(21A) | 20% of pay, max EUR 8,550 a year | 2026 | [ITL art. 8(21A)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Returning-resident exemption, art. 8(21B) | 25% of Cyprus pay or business profit, max EUR 25,000 a year; pay or profit must exceed EUR 30,000 | 2026 | [ITL art. 8(21B)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| High-earner exemption, art. 8(23A) | 50% of Cyprus pay, where pay exceeds EUR 55,000 | 2026 | [ITL art. 8(23A)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Cap on art. 14 contributions and premiums | 1/5 of taxable income before art. 14 and 14B deductions | 2026 | [ITL art. 14(2)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Life or disability premium | Up to 7% of the sum insured | 2026 | [ITL art. 14(1)(α) proviso (i)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Approved pension fund or pension plan contributions | Up to 10% of non-exempt art. 5 income | 2026 | [ITL art. 14(1)(γ) proviso](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Approved medical scheme premiums | Up to 2% of non-exempt art. 5 income | 2026 | [ITL art. 14(1)(δ) proviso](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Home insurance against natural disasters | Up to EUR 500 | 2026 | [ITL art. 9(1)(ζ)(ββ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Donations to approved cultural bodies | Up to EUR 50,000; cannot create a loss carried forward | 2026 | [ITL art. 9(1)(ν)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Child deduction, per parent | EUR 1,000 first child, EUR 1,250 second, EUR 1,500 third and each further; doubled for single-parent families | 2026 | [ITL art. 14B(1)(α)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Housing-loan interest or rent on the main home | Up to EUR 2,000 per spouse, partner or single person | 2026 | [ITL art. 14B(1)(β)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Green deduction (home energy upgrade, renewables, batteries, electric vehicle) | Up to EUR 1,000 per spouse, partner or single person; excess carried 4 years | 2026 | [ITL art. 14B(1)(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Family income cap for art. 14B: no children, or up to 2 children | EUR 100,000 | 2026 | [ITL art. 14B(1)(α) and (β)(i)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Family income cap: 3 or 4 children | EUR 150,000 | 2026 | [ITL art. 14B(1)(β)(ii)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Family income cap: 5 or more children | EUR 200,000 | 2026 | [ITL art. 14B(1)(β)(iii)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Income cap for a single person | EUR 40,000 | 2026 | [ITL art. 14B(1)(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Let buildings: flat deduction from gross rent | 20% | 2026 | [ITL art. 9(2)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Business entertainment allowed | Up to 1% of gross receipts, max EUR 30,000 | 2026 | [ITL art. 11(12)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Foreign pension (services abroad), optional rate | 5% on the amount over EUR 5,000 | 2026 | [ITL art. 20](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Crypto-asset disposal gains | 8% | 2026 | [ITL art. 20E(1)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Approved employee share option or share award plans | 8%, up to twice the year's pay from that employer and EUR 1,000,000 per rolling 10 years | 2026 | [ITL art. 20D(1) and (2)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| AIF carried interest and UCITS performance fees (optional) | 8%, minimum tax EUR 10,000 a year | 2026 | [ITL arts. 20B(4), (7) and 20C(4), (7)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| Energy-efficiency capital spending 2023 to 2030: building fabric / efficiency systems, renewables and batteries / electric vehicles | 7% / 20% / 33 1/3% a year | 2026 | [ITL art. 10(2), third proviso (α) to (γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
-| SDC on dividends, resident and domiciled individual, profits of 2026 onward | 5% | 2026 | SDC Law art. 3(1)(α), https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html |
-| SDC on dividends from a Cyprus-resident company paid out of profits of 2025 or earlier, received within six years from 1 January 2026 | 17% | 2026 | [SDC Law art. 3(1)(α) proviso (ii)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html)|
-| SDC on interest, resident and domiciled individual | 17% (3% on government savings certificates and development bonds and listed bonds) | 2026 | [SDC Law art. 3B(α)(i) and (β)(i)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html)|
-| SDC interest refund: total income not over | EUR 12,000 (refund of SDC above 3%) | 2026 | [SDC Law art. 3B(α)(i), second proviso](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html)|
-| Deemed domicile for SDC | Resident 17 of the last 20 years | 2026 | [SDC Law art. 2(3) proviso (i)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html)|
-| Accounts: business turnover up to which none are required | EUR 120,000 | 2026 | ACL art. 30(1) proviso (ii)(αα), https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html |
-| Reviewed (not audited) accounts allowed | Turnover over EUR 120,000 and up to EUR 200,000, and total assets up to EUR 500,000, for at least two consecutive years | 2026 | [ACL art. 30(1) proviso (ii)(ββ)](https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html)|
-| Late filing charge, individual | EUR 150 | 2026 | [ACL art. 50A(α)](https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html)|
-| Charge for not complying with a written notice, individual | EUR 300 | 2026 | [ACL art. 50A(β) to (δ)](https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html)|
-| Late payment charge | 5%, plus another 5% if still unpaid 2 months after the due date | 2026 | [ACL art. 50A(ε)](https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html)|
-| Provisional tax underestimate charge | 1/10 of the gap between final tax and provisional tax, when provisional chargeable income is below 3/4 of the final figure | 2026 | [ACL art. 26(1)](https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html)|
-| Default interest rate | 3.50% a year from 1 January 2026 | 2026 | ACL art. 39(1); Public Default Interest Rate for 2026 Order, K.D.P. 376/2025, para. 2, https://www.cylaw.org/KDP/data/2025_1_376.pdf |
-| Ex gratia retirement or termination payments, early-retirement scheme benefits and non-contractual termination pay over EUR 200,000 | 20%, taxed alone | 2026 | ITL art. 20ΣΤ with art. 5(1)(β)(iv) to (vi), https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html |
+| Up to EUR 22,000 | 0% | EUR 0 (computed) | [ITL Second Schedule 1(γ), Law 244 s.22 as renumbered](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Above EUR 22,000 to EUR 32,000 | 20% | EUR 2,000 (computed) | [ITL Second Schedule 1(γ)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Above EUR 32,000 to EUR 42,000 | 25% | EUR 4,500 (computed) | [ITL Second Schedule 1(γ)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Above EUR 42,000 to EUR 72,000 | 30% | EUR 13,500 (computed) | [ITL Second Schedule 1(γ)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Above EUR 72,000 | 35% | EUR 13,500 plus 35% of excess (computed) | [ITL Second Schedule 1(γ)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
 
-Above EUR 72,000, tax is EUR 13,500 plus 35% of the excess.
+The cumulative amounts are arithmetic. For a positive chargeable base `x`, ordinary tax is `0.20*max(0,min(x,32000)-22000) + 0.25*max(0,min(x,42000)-32000) + 0.30*max(0,min(x,72000)-42000) + 0.35*max(0,x-72000)`.
 
-## The taxable base
+| Relief or separate item | 2026 figure and operative limits | Official source |
+|---|---|---|
+| Contributions/premiums, art.14 | Combined maximum 1/5 of taxable income **before** art.14 and art.14B deductions; individual limits below also apply | [Law 244 s.9, replacement art.14(2)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Life/disability insurance | Own-life or permanent/temporary, total/partial disability qualifying policy under Cyprus or comparable EU law; maximum 7% of insured death/disability amount, excluding additional bonuses | [Art.14(1)(α)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Approved pension/provident funds and pension/annuity plans | Aggregate 10% of non-exempt art.5 income; business income uses profit in this limit; fund/plan must meet art.14 approval and Cyprus/EU conditions | [Art.14(1)(γ)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Approved medical insurance plans | Aggregate 2% of non-exempt art.5 income; business income uses profit; qualifying Cyprus/comparable EU policy and Commissioner approval required | [Art.14(1)(δ)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Home disaster insurance | Up to EUR 500 for qualifying home insurance under Cyprus/comparable EU law; outside art.14, before measuring its 1/5 base | [Art.9(1)(ζ)(ββ)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf); [Tax Department FAQ 42–46](https://www.gov.cy/media/sites/29/2026/01/FAQs_last.pdf) |
+| Approved cultural donations | Up to EUR 50,000; institution approved by Minister of Culture under Council conditions; loss attributable to the donation cannot be carried forward | [Art.9(1)(ν)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Child deduction | Per eligible parent: EUR 1,000 first dependent child, EUR 1,250 second, EUR 1,500 third and each further; single-parent/full-custody doubling subject to the definitions below | [Art.14B(1)(α)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Main-home loan interest/rent | One combined actual-spend cap EUR 2,000 per spouse/civil partner or qualifying single person, subject to art.14B conditions below | [Art.14B(1)(β)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Green expenditure | Actual qualifying capital expenditure, up to EUR 1,000 per spouse/civil partner or qualifying single person; excess carries to next 4 years, subject to cap each year | [Art.14B(1)(γ)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Family income ceiling | No children/up to 2: EUR 100,000; 3–4: EUR 150,000; 5+: EUR 200,000; qualifying single person EUR 40,000. Exactly at ceiling qualifies; above it none of art.14B applies | [Art.14B(1)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Returning-resident exemption | 25%, maximum EUR 25,000 of Cyprus employment pay/business profit, only after every art.8(21B) condition below is met | [Law 17/2026 s.2](https://www.mof.gov.cy/mof/tax/taxdep.nsf/All/AFF8B2E8B2A07820C2258DB60033F251/%24file/5076%206%203%202026%20PARARTIMA%201o%20MEROS%20I.pdf?OpenElement=) |
+| Individual interest | Exempt from income tax; SDC/GHS are separate | [Art.8(19), replaced by Law 244 s.4](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Foreign-services pension | Annual choice: ordinary bands or 5% on pension exceeding EUR 5,000; compare both without adding separately taxed pension to the ordinary deduction base | [Art.20, amended by Law 244 s.12](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf); [Ministry of Finance pension explanation](https://www.gov.cy/mof/en/documents/tax-incentives/) |
+| Crypto disposal gains | 8% under art.20E, subject to the definition, loss restriction and mining exclusion below | [Law 244 s.13, art.20E](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Approved employee/director share plans | 8% within twice that employer's qualifying pay in vesting-expiry year and EUR 1,000,000 per rolling decade; full conditions below | [Art.20D](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf); [Law 67/2026 s.3](https://www.mof.gov.cy/mof/gpo/gazette.nsf/21F7154E05045B76C2258DD900389972/%24file/5086%2014%204%202026%20PARARTIMA%201o%20MEROS%20I.pdf) |
 
-**Order of the computation.** Gross income under ITL art. 5, less exempt income (art. 8), less business expenses and allowances (arts. 9 to 11), less losses (art. 13), less the art. 14 contributions within the one-fifth cap, less the art. 14B personal deductions, gives chargeable income. Apply the bands. Income taxed at a special rate (arts. 20, 20B to 20E) is taxed on its own and not added to other income.
+## The base
 
-**Employment.** All pay and benefits for an office or employment are taxable, including allowances, joining inducements, ex gratia payments on leaving and non-contractual termination pay (ITL art. 5(1)(β)). Ex gratia retirement or termination payments, early-retirement scheme benefits and non-contractual termination pay (art. 5(1)(β)(iv) to (vi)) that exceed EUR 200,000 are taxed at 20% under art. 20ΣΤ and not added to other income; refer these. A loan or cash facility from a company to a director or individual shareholder (or their spouse or a relative to the second degree) is a deemed monthly benefit of 9% a year on the balance (ITL art. 5(1)(ζ)).
+### Computation and evidence
 
-**Business profit.** Expenses are deductible only if incurred wholly and exclusively to earn the income (ITL art. 9(1)). Not deductible (ITL art. 11): household or private spending, including home to work travel; tax itself; capital withdrawn or capital spending; improvements; amounts recoverable from insurance; private motor vehicle expenses (art. 11(13)); interest on the cost of a private motor vehicle, or of any other asset not used in the business, for 7 years from its purchase (art. 11(15)); and business entertainment above 1% of gross receipts or EUR 30,000 (art. 11(12)). A private motor vehicle is not plant or machinery for capital allowances (ITL art. 10(1), proviso). Capital spending is relieved through wear-and-tear allowances (ITL art. 10); capital spending in 2023 to 2030 gets 7% a year for a building's insulation and window replacement, 20% for efficiency systems, renewables and storage batteries, and 33 1/3% for electric vehicles (art. 10(2), third proviso). Pay on which Social Insurance and other fund contributions are not paid in the year they fall due is not deductible until they are paid within the time the law allows, and rent paid in breach of ACL art. 48A is not deductible (ITL art. 9).
+Work in this order: establish ordinary income and allowable business/rental costs; apply an evidenced employment exemption if eligible; deduct qualifying art.9 items; measure the art.14 income base and individual contribution caps; deduct the allowed combined art.14 amount; deduct eligible art.14B amounts; apply the bands; compute separate income items independently; reconcile evidenced PAYE and provisional payments. Do not estimate the profit from net platform payouts alone or give a final return from a bank description. The ordinary-base inputs in the examples are stipulated; an unresolved income/expense classification blocks a real calculation.
 
-**Rent.** Rent is taxed at the bands. Deduct 20% of gross rent from buildings, then wear and tear and interest (ITL art. 9(2)). From 2026 there is no SDC on rent (the SDC Law no longer charges it). From 1 July 2026 rent for property in Cyprus may be paid only by bank transfer, card or another recognised electronic means, and the landlord may not accept any other method (ACL art. 48A, in force 1 July 2026 under Law 243(I)/2025 s. 35(β)). Tax on rent is paid through provisional tax (see Deadlines). The Tax Department's FAQs (question 53) say a tenant that is a company still withholds GHS from the rent; rates are in `cyprus-social-contributions`.
+**Business/rental base hold.** Current official base text for ITL arts.5, 8(20)/(22), 9(1)/(2), 10, 11 and 13 was not substantively recovered in this pass. The old automatic bank-pattern deductions, the 20% building-rent deduction, vehicle/home-office/phone allocation, bad debts, wear-and-tear rates (including the former 7%/20%/33⅓% energy figures), entertainment 1%/EUR 30,000, securities/dividend exemptions, and ordinary/foreign/business-transfer loss outcomes are **not usable here** until their retained conditions and amendment applicability are proven. Do not apply a percentage or assert deductibility from these historical statements. Check this point with one of our partner accountants.
 
-**Dividends, interest and securities gains.** None is taxed at the bands (ITL art. 8(19), (20), (22)). A resident who is also domiciled in Cyprus pays SDC on dividends and interest (SDC Law arts. 2, 3, 3B):
-- Dividends out of profits of 2026 onward: 5%.
-- Dividends from a Cyprus-resident company out of profits up to tax year 2025, received within six years from 1 January 2026: 17%. The rate follows the year of the profits, not the year the dividend is paid.
-- A disguised dividend distribution from a Cyprus-resident company to a shareholder (for example company assets used privately) carries 10% SDC (SDC Law art. 3A); refer these.
-- Interest: 17%, or 3% on Cyprus or EU government savings certificates and development bonds and on listed bonds. A person whose total income, interest included, is not over EUR 12,000 can reclaim SDC withheld on interest above 3%.
-- A resident who is not domiciled pays no SDC. Deemed domicile after 17 of the last 20 years of residence; the rules are in `cy-non-dom`.
-- GHS also applies to this income; see `cyprus-social-contributions`.
-- From 1 January 2031, a gain on redeeming a unit or share in an open- or closed-ended collective investment scheme set up as a company, less any Capital Gains Tax paid on that redemption, is a dividend (ITL art. 8(20), last proviso, in force from 1 January 2031 under Law 224(I)/2025). Not relevant to 2026, but it changes the treatment of such redemptions from that date.
+This hold does not turn every credit into income or every debit into an expense. Reconcile invoices, gross platform sales and commissions, refunds, own-account transfers, loan principal and interest, capital purchases, grants, VAT and tax payments separately. Keep an unresolved schedule; do not silently use zero as a final tax-law answer.
 
-**Exemptions for people starting work in Cyprus.** The law stops them stacking; check the exclusion lines.
-- **Art. 8(21A), 20%.** 20% of pay from the first employment in Cyprus, capped at EUR 8,550 a year, for a person who for the 3 consecutive years before starting worked outside Cyprus for a non-resident employer. First employment must start after the publication of the Income Tax (Amendment) (No. 6) Law of 2022 and up to 2027. Granted for 7 tax years starting the year after the year employment began. No minimum pay. "First employment" has the art. 8(23A) meaning.
-- **Art. 8(21B), 25% (new; starts from 1 January 2025 to 2030).** 25% of pay from any employment in Cyprus or of profit from a business in Cyprus, capped at EUR 25,000 a year. Conditions: not resident in the 7 tax years before the start year; resident in some year before those 7; pay or profit over EUR 30,000 in the first 12 months; and either a recognised university degree plus at least 36 of the previous 84 months in full-time work abroad for a non-resident employer, or 84 months of such work. Given in the start year and the next 6 years, in each year only if the person is resident (except the start year) and Cyprus pay or profit exceeds EUR 30,000 that year. Once in a lifetime. If 8(21B) is given, 8(21A) is not.
-- **Art. 8(23A), 50%.** 50% of pay from employment in Cyprus for a person not resident for at least 15 consecutive years before their first employment in Cyprus, where that first employment starts from 1 January 2022. "First employment" means starting paid work in Cyprus, for a resident or non-resident employer, for the first time after 15 consecutive tax years with no paid work in Cyprus. Given for 17 tax years from the start year, in any year where Cyprus pay exceeds EUR 55,000; in the start year, if pay in the first 12 months exceeds EUR 55,000. Once in a lifetime. If 8(23A) is given, 8(21), 8(21A), 8(21B) and 8(23) are not. Transitional rules cover people whose first employment began in 2016 to 2021; refer those.
-- **Old art. 8(21) and 8(23).** Still in the law for employments that began before the Income Tax (Amendment) (No. 6) Law of 2022 came into force. Apply only to those older cases.
-  - Old 8(21): 20% of pay from any employment in Cyprus, or EUR 8,550 if less, for a person who was resident outside Cyprus before the employment began, for employment that began from 2012 up to that commencement date. It runs from 1 January of the year after the employment began, for at most 5 years (ITL art. 8(21)).
-  - Old 8(23): 50% of pay from any employment in Cyprus for a person resident outside Cyprus before it began, given for 10 years from the year employment began, in any year where that pay exceeds EUR 100,000 (pay may dip below EUR 100,000 in a year if it exceeded it when employment began and the Commissioner accepts the dip is not an arrangement). Not given to a person resident in Cyprus in any 3 of the 5 tax years before the start year, or in the year before the start year; this bar applies to employment that began on or after the Income Tax (Amendment) (No. 2) Law of 2015 came into force (proviso (v)). Where 8(23) applies, 8(21) does not (ITL art. 8(23), provisos (i) to (v)).
-- **Art. 8(23A) under its pre-2023 wording.** A person who was entitled to the 8(23A) 50% exemption before the publication of the Income Tax (Amendment) Law of 2023 keeps it, provided the conditions of 8(23A) as they stood before that law are met (ITL art. 8(23A), last proviso). Refer these cases for the old conditions.
+### Contributions and insurance
 
-**Subscriptions.** Subscriptions to trade unions and professional bodies are deducted before the one-fifth cap is measured (Tax Department form TD59 2026, Part B line 1).
+Art.14 permits paid Social Insurance/Widows and Orphans Fund or comparable EU social-insurance contributions; qualifying approved pension/provident contributions and pension/annuity premiums; qualifying approved medical insurance; and GHS or comparable foreign-law contributions. Keep certificates and apply the table's individual limits before the combined 1/5 cap. Legacy qualifying spouse-life policies predating the Act are a separate eligibility hold. [Replacement art.14(1)–(4)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf).
 
-**Contributions and premiums (art. 14).** Deductible: Social Insurance and similar EU fund contributions; approved pension and provident fund contributions and approved pension plan premiums (together up to 10% of non-exempt art. 5 income); approved medical scheme premiums (up to 2%); GHS contributions; life or disability premiums (each up to 7% of the sum insured). The total cannot exceed one fifth of taxable income before the art. 14 and art. 14B deductions (art. 14(2)). Surrendering a life policy within 3 years adds back 30% of the premiums relieved; in years 4 to 6, 20% (art. 14(1)(α)(iii)).
+Full surrender of a life policy within 3 years adds back 30% of premiums previously relieved; surrender in years 4–6 adds back 20%. A **partial** surrender has a different rule: add 50% of the amount above the gross surrender value at 31 December of the fourth preceding year; that comparison value is zero where the policy had not then run for 4 years and is reduced by the excess of partial surrenders over premiums during the 3 preceding years. Obtain the insurer's certificate before computing either. [Art.14(1)(α)(ii)–(iii), (4)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf).
 
-**New personal deductions (art. 14B), residents only.** Given only if family income is not over the cap for the number of children on 31 December (EUR 100,000 for none, one or two; EUR 150,000 for three or four; EUR 200,000 for five or more; EUR 40,000 for a single person living alone). It is a cliff: one euro over and every art. 14B deduction is lost. They sit outside the one-fifth cap.
-- Children: EUR 1,000, 1,250, then 1,500 for each further dependent child, to each parent; doubled for a single-parent family or where one parent has full custody. Students up to age 24 count as dependent children.
-- Housing: up to EUR 2,000 for interest on a serviced loan to buy or build the main home in Cyprus, or for rent on the main home in Cyprus. One cap covers both. For the loan, the home must belong to at least one of the couple (or the single person) and the loan must be in their name. A restructured loan counts as serviced if instalments are paid without fail. Public grants reduce the amount. Rent paid in breach of ACL art. 48A gets no deduction.
-- Green: up to EUR 1,000 for capital spending on the main home's energy efficiency, energy systems, renewables or storage batteries, or on an electric vehicle registered with the Road Transport Department. Unused spending carries forward 4 years. Grants reduce it; the two partners together cannot deduct more than the spending.
-- Conditions (art. 14B(2)): both returns (or the single person's) filed by the ACL art. 5 deadline, and both partners consent to share their tax data. "Family income" takes the meaning in the Child Benefit Law (art. 14B(3)(α)). The Tax Department's FAQs (questions 14 and 15) say it counts the gross income of all family members from every source in Cyprus or abroad, including a partner with whom the taxpayer has children, and leaves out students' own work income, child benefit, student grants and disability benefits.
+### Family deductions
 
-**Losses (ITL art. 13).** A loss not set off against other income of the year is carried forward. For a person required to keep audited accounts, a loss cannot be used more than 7 years after the end of the loss year (art. 13(1), first proviso). Foreign business losses are set off against other income of the year, the rest carried forward (art. 13(9)). No loss is allowed for a year whose accounts are filed more than 6 years late (art. 13(3)). A sole trader who turns the business into a company can pass the accumulated losses to it (art. 13(10)). Crypto losses offset only crypto gains of the same year and are never carried forward (art. 20E(2)).
+Art.14B is resident-only and sits outside the 1/5 cap without reducing the income on which that cap is measured. Check family income before granting **any** child, housing or green amount. The number of children for the ceiling is different from the number of **dependent** children eligible for a deduction. Use the statutory Child Benefit Law definitions incorporated by art.14B(3), including the express extension to student children up to age 24; do not infer qualification from age alone. For family composition, shared custody, the age-24 boundary or a claimant who shares a home, no eligibility conclusion is usable without resolving those definitions. The January FAQ's single-person and student-age shorthand differs from the literal Act; the Act controls. Check this point with one of our partner accountants. [Art.14B](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf); [FAQs 13–27](https://www.gov.cy/media/sites/29/2026/01/FAQs_last.pdf).
 
-**Special rates (taxed alone).**
-- Crypto-asset disposals (sale, gift, swap, use as payment): 8% (art. 20E). Crypto from mining is outside 20E and taxed at the bands (art. 20E(4)).
-- Approved share option or award plans: 8% on the benefit up to twice the year's pay from that employer and EUR 1,000,000 per rolling ten years; the excess is taxed at the bands (art. 20D).
-- Foreign pension for services abroad: 5% above EUR 5,000, or the bands, chosen each year (art. 20).
-- AIF carried interest and UCITS performance fees: 8% with EUR 10,000 minimum tax, chosen year by year; a person who chooses it loses the art. 8(21), (21A), (21B), (23) and (23A) exemptions (arts. 20B and 20C, para. (7)).
+Family-income evidence must cover all members and all sources, Cyprus and foreign. The Department's FAQ includes a cohabitant with common children and excludes full-time pupils'/students' employment income, child benefit, student grant/welfare/scholarships, and specified disability/chronic-illness assistance. For business income or a disputed family composition, confirm the statutory Child Benefit Law income calculation rather than equating tax chargeable income or bank credits to family income. [FAQ 14–16](https://www.gov.cy/media/sites/29/2026/01/FAQs_last.pdf).
+
+For an established qualifying family, apply the table's per-parent child amounts to dependent children at 31 December. Doubling requires the statutory single-parent or full-custody condition. Both spouses'/civil partners' returns, or the single person's return, must be on time under ACL art.5; the spouses/partners must consent to mutual disclosure of their tax data. A late return by either loses the deductions. [Art.14B(1)(α), (2)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf).
+
+**Housing:** Cyprus main home; actual qualifying serviced-loan interest or rent, one shared cap per claimant across both categories. For loan interest, at least one spouse/civil partner (or the single person) must own the home and hold the loan. A restructured loan counts when instalments are paid without fail. Deduct related public assistance from the spend. Rent paid contrary to ACL art.48A is not deductible: from 1 July 2026 payment/receipt must use bank transfer, debit/credit card or recognised electronic means. The Act's ownership-proviso wording spans both limbs, while the FAQ applies ownership to interest; **renter eligibility under that proviso remains a non-usable hold**, not a requirement that a tenant own the rented home. Check this point with one of our partner accountants. [Art.14B(1)(β)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf); [Gazette loan-definition correction](https://www.mof.gov.cy/mof/gpo/gazette.nsf/203DBFC78C778160C2258DAB0020F89D/%24file/5075%2027%202%202026%20PARARTIMA%201o%20MEROS%20I.pdf); [FAQ 28–33](https://www.gov.cy/media/sites/29/2026/01/FAQs_last.pdf).
+
+**Green:** Cyprus main-home energy-efficiency works, energy/renewable systems or storage batteries, or an electric vehicle registered with Road Transport. For works/systems, the home must belong to at least one spouse/civil partner or the single claimant. Reduce spend by related public assistance; both partners' total deductions cannot exceed actual spend; carry excess only within the table's time/cap. Art.14B incorporates the definitions in art.10(2)'s third proviso: unsupported technical asset eligibility remains held. Check this point with one of our partner accountants. [Art.14B(1)(γ)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf).
+
+### Employment exemptions and special income
+
+**Art.8(21B), returning residents:** 25% of Cyprus pay/business profit capped at EUR 25,000. Start in 2025–2030; pay/profit exceeds EUR 30,000 in the first 12 months; no Cyprus residence in the preceding 7 tax years, but residence in an earlier year; and either a university degree recognised as equivalent by KY.S.A.T.S. plus at least 36 months' full-time foreign work for a non-resident employer within the 84 months before the **month** of starting, or 84 months of that full-time foreign work before that month. It runs in the start year and next 6 tax years, only where that year's Cyprus pay/profit exceeds EUR 30,000. Residence required except in the start year. Once per lifetime. No art.8(21A) exemption in a year granted this relief; art.8(23A) relief excludes it, as do the special carried-interest/performance-fee elections. [Law 17/2026 ss.2–5](https://www.mof.gov.cy/mof/tax/taxdep.nsf/All/AFF8B2E8B2A07820C2258DB60033F251/%24file/5076%206%203%202026%20PARARTIMA%201o%20MEROS%20I.pdf?OpenElement=).
+
+**First-employment/legacy hold:** the former 20%/EUR 8,550 and 50%/EUR 55,000 descriptions, 3-/15-year histories, 5-/7-/10-/17-year periods, EUR 100,000 legacy threshold, 2016–2021 transition, pre-2023 wording, first-employment cessation and residence conditions are not usable eligibility instructions here. Current official base/transition texts were not recovered; no relief or stacking is inferred. Gather the full employment/residence history and original approval evidence. Check this point with one of our partner accountants.
+
+**Crypto:** disposal includes sale, gift, crypto-to-crypto exchange and payment. Only assets within Regulation (EU) 2023/1114 art.3(1)(5) are within this rule. Losses offset only same-year crypto-disposal gains: no carry-forward or group transfer. Disposal of mined crypto is outside art.20E; gains outside the provision follow the ordinary charging/band rules, requiring a proven base. [Art.20E(1)–(5)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf).
+
+**Share options/awards:** Cyprus-resident employee or company director, per-person plan approved by the Commissioner; not connected with the company under art.33. Minimum 3-year vesting beginning no earlier than approval, no transfer before vesting, employer/parent ordinary-equivalent shares except voting rights, and exercise/acquisition price at least 50% of approval-date value. The 8% amount is separate, with the table's annual-pay/rolling-decade limits; excess is ordinary income. For pre-2026 vesting plans, Law 67 permits approval where minimum 3-year vesting had not expired by 30 June 2026 and the employer submitted by that date. Connection/valuation or transitional approval uncertainty blocks the special rate. Check this point with one of our partner accountants. [Art.20D](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf); [Law 67/2026 s.3](https://www.mof.gov.cy/mof/gpo/gazette.nsf/21F7154E05045B76C2258DD900389972/%24file/5086%2014%204%202026%20PARARTIMA%201o%20MEROS%20I.pdf).
+
+**AIF carried interest/UCITS performance fees and employment termination gratuities:** the former 8%/EUR 10,000 minimum and art.20ΣΤ 20%/EUR 200,000 outcomes remain explicit non-usable holds pending complete eligibility/base proof. Do not apply a rate from the label alone. Check this point with one of our partner accountants.
 
 ## Deadlines and filing
 
-| What | When | Source |
+| 2026 job | Statutory date/condition | Official source |
 |---|---|---|
-| Provisional tax computation for 2026 | By 31 July 2026; can be revised up to 31 December 2026 | ACL art. 24 |
-| Provisional tax payments | Two equal instalments, 31 July and 31 December 2026 | ACL art. 38(1)(γ) |
-| Income other than pay that starts after 30 June | One computation and one payment by 31 December of that year | ACL art. 24, third proviso; art. 38(1)(γ) proviso |
-| Return and self-assessment payment, no audited or reviewed accounts required | 31 July 2027 | ACL art. 5(1A); art. 38(1), 2026 proviso (i) |
-| Return and self-assessment payment, audited or reviewed accounts required | 31 January 2028 | ACL art. 5(1A) first proviso; art. 38(1), 2026 proviso (ii) |
-| Return for tax year 2025 (extended; not the 2026 date) | 31 October 2026 | Tax Department return page |
-| Records | Keep 6 years from the later of the filing deadline and the actual filing date | ACL arts. 5(7)(α) and 30(2) |
+| Ordinary individual return and balancing tax, no audited/reviewed-accounts obligation | 31 July 2027 | [ACL arts.5(1A), 38(1), Law 243 ss.4/21](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Return and balancing tax where audited/reviewed accounts legally required | 31 January 2028 | [Same provisions](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
+| Rental-income provisional income tax | Two instalments, 31 July and 31 December of the tax year | [Tax Department FAQ 52](https://www.gov.cy/media/sites/29/2026/01/FAQs_last.pdf) |
+| Rent GHS not withheld by tenant | Self-assessment, 31 July and 31 December; legal-person tenant still withholds GHS | [FAQ 53–54](https://www.gov.cy/media/sites/29/2026/01/FAQs_last.pdf) |
+| Supporting records | 6 years from the later of the return/revised-return deadline or actual filing; final-year audit extends this until completion or 1 year after its start, whichever occurs first | [ACL art.5(7)(α), Law 243 s.4](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf) |
 
-- Provisional tax is declared on temporary declaration code 0200 through the Tax portal by the end of July (Tax Department form TD59 2026 notes).
-- Provisional tax applies to anyone with income other than employment income (ACL art. 24); employees with only PAYE pay have their tax withheld (see `cyprus-payroll`). If no computation is filed, the provisional figure counts as nil for the underestimate charge (ACL art. 26(1), second proviso), and the Tax Department may assess provisional tax on the last assessed year (art. 25).
-- From tax year 2026 returns are filed only through the Tax For All (TFA) system (Tax Department return page). The Council of Ministers may set a later deadline by decree (ACL art. 5(1A), second proviso). If the Tax Department extends the deadline by public notice, filing and paying within the extension carries no late charge (ACL art. 50A(α) and (ε) provisos).
-- Accounts (ACL art. 30(1)): a self-employed person whose turnover and other business-type gross income is not over EUR 120,000 need not prepare accounts. Over EUR 120,000 but not over EUR 200,000, with total assets not over EUR 500,000, for at least two consecutive years, accounts may be reviewed rather than audited. Otherwise they are audited. A person not in business needs no accounts.
-- Employees claim the new deductions through their employer on form TD59 (Τ.Φ.59) and again in the return (Tax Department FAQs, question 11).
+From 2026 the Tax Department specifies Tax For All for the return. Do not infer the future return's live screens or line numbers before they are available. Employees give the final deductible amounts by category on TD59 to their employer for PAYE, and reconcile the annual return to their certificates. Save acknowledgement, payment reference and supporting computation. [Return page](https://www.gov.cy/mof-tax/en/documents/forologiki-dilosi-eisodimatos-atomoy/); [FAQ 11](https://www.gov.cy/media/sites/29/2026/01/FAQs_last.pdf).
+
+The Council can extend the return deadline by decree. An announced Commissioner extension protects against late-filing charge and late-payment charge/interest where the return is filed within the notice's extended time and tax due is paid on submission. Check the actual notice for the relevant category/year. [ACL arts.5(1A), 39(8), 50A, amended Law 243](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf).
+
+**Accounts and non-rental provisional-tax procedure hold:** the old EUR 70,000/120,000 accounts shortcut omits the retained art.30 income scope and recordkeeping obligations. The EUR 200,000 turnover/EUR 500,000 assets/two-consecutive-year review condition cannot be certified from the amending substitution alone. The general art.24 estimate/revision dates, post-30-June start rule, code 0200, art.25 deemed assessment and missing-estimate treatment also require their complete current base/procedure. Do not assert that turnover alone means no books or audit. Check this point with one of our partner accountants.
 
 ## Penalties and interest
 
-- **Late filing** (ACL art. 50A(α)): EUR 150 for an individual. Failing to comply with a written notice giving at least 60 days: EUR 300 (art. 50A(β) to (δ)).
-- **Late payment** (ACL art. 50A(ε)): 5% of the tax due, plus another 5% if still unpaid 2 months after the due date.
-- **Interest** (ACL art. 39(1)): at the public default interest rate, which the Tax Department states is 3.5% a year from 1 January 2026. For 2026 tax it runs from 1 August 2027 (31 July filers) or 1 February 2028 (31 January filers).
-- **Provisional tax too low** (ACL art. 26(1)): if provisional chargeable income is below three quarters of the final figure, the person pays an extra one tenth of the difference between the final tax and the provisional tax. Overpaid provisional tax is refunded (art. 26(2)).
-- **Loss of reliefs:** a late return by either partner loses the art. 14B deductions (ITL art. 14B(2)(α)).
-- **Assessment window:** the Tax Department can assess within 6 years from the later of the filing of the return and of any revised return (ACL art. 23(1)); 12 years for fraud or wilful default (art. 23(2)).
-- **Business closure:** the Tax Department can suspend a business and seal its premises for up to 10 days if the person fails, on or after 1 January 2027, to file at least two tax returns (or twelve monthly withholding returns or three VAT returns); fails to pay tax due where the total owed, charges included, exceeds EUR 20,000; does not issue proper invoices or receipts; or obstructs an audit. Three registered-mail notices must come first (ACL art. 32A(1) and (2)). Refer any client facing enforcement.
-- **SDC:** late payment of SDC carries 5%, and another 5% if still unpaid 2 months after the due date (SDC Law art. 7B(ε)); see `cy-non-dom`.
+- Late return: EUR 150 for an individual, subject to the public-extension protection above. [Law 243 s.31, ACL art.50A(α)](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf).
+- The single public default rate is **3.50% during 2026**. This is not a promise that the same annual rate will apply when 2026 tax becomes late in 2027/2028. For 2026-year tax the statutory interest starts 1 August 2027 for July filers or 1 February 2028 for January filers, subject to the qualifying-extension protection. [Tax Department current rate](https://www.gov.cy/mof-tax/en/documents/default-interest-monetary-charges-administrative-fines-additional-tax/default-interest-monetary-charges-administrative-fines-additional-tax-general-information/); [Law 243 s.22, ACL art.39](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf).
+- Provisional understatement: the Department's computation notes compare provisional **income**, not provisional tax, with 75% of final taxable income. If below that, the additional tax is 10% of the difference between final tax and provisional tax paid or due. Foreign-tax cases require the proper adjustment; do not infer the trigger solely from two tax payments. [Tax Department computation note 6; unchanged trigger used for arithmetic only here](https://taxisnet.mof.gov.cy/static/help/epr1/taxNotes_2022ch_en.html). Complete current statutory/procedural confirmation for a real charge remains held. Check this point with one of our partner accountants.
+- Written-notice noncompliance, late-payment 5% plus further 5%, SDC penalties, assessment-window 6/12-year exceptions and business suspension/sealing are **non-usable enforcement holds** here; the old amounts/durations do not settle a real notice's scope, service, challenge rights or dates. Check this point with one of our partner accountants.
 
 ## Cross-border points
 
-- A non-resident is taxed only on Cyprus-source income and files only if they have it (ITL art. 5(2); ACL art. 5(1)(β)). Withholding on payments to non-residents is in `cy-cross-border`.
-- Foreign tax on foreign income is credited under a treaty or unilaterally (ITL arts. 34 to 36); see `cy-cross-border`.
-- Pensions for services abroad: choose 5% over EUR 5,000 or the bands each year (ITL art. 20).
-- Arrivals: check the 20%, 25% and 50% exemptions above and the 60-day rule. Domicile and the 17-of-20-years deemed domicile test decide SDC; see `cy-non-dom`.
-- Social security for people working in more than one EU state follows Regulation 883/2004; see `cyprus-social-contributions` and `cy-cross-border`.
+Non-resident/dual-resident source allocation, treaty and unilateral foreign-tax credits, EU social-security coordination and foreign-pension treaty restrictions need their own current source proof. Do not infer a zero GHS/SDC result from an income-tax exemption. For SDC, the historical 5%/17% dividend transition, 17%/3% interest/refund, EUR 12,000 total-income limit and 17-of-20 domicile test are **not usable here** without the retained statutory residence/domicile definitions, exceptions and payment history. Never default a person to domiciled for a final computation. Check this point with one of our partner accountants.
 
-## Worked examples
+SDC on rental income was abolished from 1 January 2026; income tax and GHS remain separate. [Tax Department FAQ 51–54](https://www.gov.cy/media/sites/29/2026/01/FAQs_last.pdf). Keep the pension's annual ordinary-versus-special comparison separate from any treaty question.
+
+## Two worked examples that recompute
 
 ### Example 1: employee with one child, salary EUR 50,000
 
-Maria is resident and domiciled in Cyprus and has worked for a Cyprus employer for years, so no first-employment exemption applies. Her 2026 salary is EUR 50,000. Social Insurance and GHS deducted from her pay total EUR 5,725 (rates in `cyprus-social-contributions`). She has one child. Family income is EUR 80,000, under the EUR 100,000 cap for one or two children, and both partners file on time and consent.
+Maria is resident and domiciled in Cyprus and has worked for a Cyprus employer for years, so no first-employment exemption applies. Her 2026 salary is EUR 50,000. Social Insurance and GHS deducted from her pay total EUR 5,725 (stipulated paid qualifying amounts, not a rate computation). She has one child stipulated to qualify under art.14B; her family composition and child status have been established. Family income is EUR 80,000, under the EUR 100,000 cap for one or two children, and both partners file on time and consent.
 
 The one-fifth cap is EUR 10,000 (EUR 50,000 / 5), so all EUR 5,725 of contributions are deductible. Her child deduction is EUR 1,000. Chargeable income is EUR 43,275. Tax is EUR 4,500 to the top of the 25% band plus 30% of EUR 1,275, so EUR 4,882.50. Her PAYE is credited against this, and her return is due by 31 July 2027.
 
@@ -193,11 +156,11 @@ expected:
 
 ### Example 2: self-employed, one-fifth cap binds, family income over the cap, provisional tax too low
 
-Andreas is a resident self-employed consultant. His 2026 turnover is EUR 110,000 (not over EUR 120,000, so no accounts are required and his return is due 31 July 2027) and his profit is EUR 90,000. He paid EUR 16,000 of Social Insurance and GHS and EUR 3,000 of life premiums (within 7% of the sum insured). He has two children and a housing loan with EUR 2,500 of interest. His spouse earns EUR 15,000, so family income is EUR 105,000.
+Andreas is a resident self-employed consultant. His 2026 turnover is EUR 110,000; for this example his legally determined filing category is stipulated to be the 31 July 2027 category, rather than inferred from turnover alone and his profit is EUR 90,000. He paid EUR 16,000 of Social Insurance and GHS and EUR 3,000 of life premiums (within 7% of the sum insured). He has two children and a housing loan with EUR 2,500 of interest. His spouse earns EUR 15,000. The original family-income input of EUR 105,000 is retained as an established case input; do not derive statutory family income solely by adding tax profit and spouse pay. Both children are stipulated to qualify.
 
-Contributions and premiums total EUR 19,000, but the one-fifth cap is EUR 18,000, so EUR 18,000 is deducted. Family income is over the EUR 100,000 cap for two children, so he gets no child or housing deduction (EUR 1,000 + 1,250 + 2,000 = 4,250 lost), and neither does his spouse. Chargeable income is EUR 72,000 and tax is EUR 13,500. Had the family been within the cap, chargeable income would be EUR 67,750 and tax EUR 12,225: the cliff costs him EUR 1,275.
+Contributions and premiums total EUR 19,000, but the one-fifth cap is EUR 18,000, so EUR 18,000 is deducted. Family income is over the EUR 100,000 cap for two children, so he gets no child or housing deduction (EUR 1,000 + 1,250 + 2,000 = 4,250 lost), and neither does his spouse. Chargeable income is EUR 72,000 and tax is EUR 13,500. In a counterfactual that also establishes all child and loan-interest eligibility conditions, had the family been within the cap, chargeable income would be EUR 67,750 and tax EUR 12,225: the cliff costs him EUR 1,275.
 
-In July 2026 he declared provisional chargeable income of EUR 50,000 (provisional tax EUR 6,900, paid in two instalments). That is below three quarters of EUR 72,000 (EUR 54,000), so he owes an extra one tenth of (13,500 - 6,900), which is EUR 660, on top of the EUR 6,600 balance due by 31 July 2027.
+In July 2026 he declared provisional chargeable income of EUR 50,000 (provisional tax EUR 6,900, paid in two instalments). That is below three quarters of EUR 72,000 (EUR 54,000), so the original illustrative additional-tax arithmetic is one tenth of (13,500 - 6,900), which is EUR 660, alongside the EUR 6,600 tax balance. The EUR 660 is not a usable assessment of a real charge while the statutory/procedural hold above remains. Check this point with one of our partner accountants.
 
 ```oa-check
 name: Andreas, self-employed, profit EUR 90,000, cap binds, family income over EUR 100,000, provisional tax charge
@@ -239,28 +202,160 @@ expected:
   balance_due: 6600
 ```
 
+### Preserved bank cases and historical tests
+
+The following original inputs stay in their original years. They are evidence-reconciliation cases, not automatic tax determinations. A bank description establishes neither VAT status nor deductibility. Every held conclusion below means: **Check this point with one of our partner accountants.**
+
+| Original bank input | Evidence task; disposition |
+|---|---|
+| `15/03/2025 ; BANK OF CYPRUS EMBASMA ; ANDREOU TRADING LTD ; PLIROMI INV-2025-003 ; +1,190.00 ; EUR` | Client/invoice/VAT reconciliation. Original illustrative EUR 1,190 / 1.19 = EUR 1,000 net and EUR 190 VAT is arithmetic only; applicable supply/rate and PIT treatment held. |
+| `01/04/2025 ; HELLENIC BANK DD ; ADOBE SYSTEMS IRELAND ; CREATIVE CLOUD APR ; -29.99 ; EUR` | ADOBE EUR 29.99: obtain invoice, business purpose and revenue/capital treatment; deduction held. |
+| `22/04/2025 ; BANK OF CYPRUS KARTA ; OPSO RESTAURANT ; CLIENT DINNER ; -85.00 ; EUR` | OPSO EUR 85 client dinner: obtain purpose/attendees/private split; neither blanket disallowance nor an allowance is usable from the description. |
+| `10/01/2025 ; BANK OF CYPRUS DD ; SOCIAL INSURANCE SERVICES ; Q4 2024 CONTRIBUTION ; -2,490.00 ; EUR` | EUR 2,490 Q4 2024 contribution paid 2025: separate period, contribution type, payer and certificate; deduction year/category held. |
+| `05/02/2025 ; EUROBANK CYPRUS EMBASMA ; UK PENSION PROVIDER ; MONTHLY PENSION x12 = 18,000/yr ; +1,500.00 ; EUR` | UK pension EUR 1,500 monthly / EUR 18,000 annually in 2025: original special arithmetic (18,000−3,420)×5% = EUR 729; historical eligibility/treaty held. |
+| `15/03/2026 ; BANK OF CYPRUS EMBASMA ; ANDREOU TRADING LTD ; PLIROMI INV-2026-003 ; +1,190.00 ; EUR` | 2026 client payment: same EUR 1,190 / EUR 1,000 / EUR 190 reconciliation inputs; VAT/PIT outcome held pending invoice/supply evidence. |
+| `01/04/2026 ; HELLENIC BANK DD ; ADOBE SYSTEMS IRELAND ; CREATIVE CLOUD APR ; -29.99 ; EUR` | 2026 ADOBE EUR 29.99: same invoice/business-purpose hold. |
+| `22/04/2026 ; BANK OF CYPRUS KARTA ; OPSO RESTAURANT ; CLIENT DINNER ; -85.00 ; EUR` | 2026 OPSO EUR 85: same private/business-entertainment hold. |
+| `10/01/2026 ; BANK OF CYPRUS DD ; SOCIAL INSURANCE SERVICES ; Q4 CONTRIBUTION ; -2,490.00 ; EUR` | 2026 Q4 contribution EUR 2,490: payment type/certificate/period must be established. |
+| `05/02/2026 ; EUROBANK CYPRUS EMBASMA ; UK PENSION PROVIDER ; MONTHLY PENSION ; +1,500.00 ; EUR` | 2026 UK pension EUR 1,500 monthly / EUR 18,000 annually: if art.20 foreign-services election applies, special tax = EUR 650; ordinary tax on this pension alone is EUR 0; compare before electing; treaty/GHS held. |
+
+- Original 2025 Example 5 and Tests 1–3: chargeable EUR 30,000 / 45,000 / 70,000; using the original historical 19,500 / 28,000 / 36,300 / 60,000 boundaries gives EUR 2,200 / 6,385 / 14,385. The EUR 45,000 case is not replaced by a 2026 case. These are preserved arithmetic comparisons, not 2025 filing instructions; official historical base/application is held. Check this point with one of our partner accountants.
+- Original Test 4 and later Example 5/Test A: 2026 chargeable EUR 50,000 → EUR 6,900, from the sourced 2026 bands. Test B: EUR 22,000 → zero; EUR 22,001 → EUR 0.20.
+- Original Test 5: 2025 employee earning at least EUR 66,612; original stipulated 8.8% SI and 2.65% GHS, EUR 66,612 / EUR 180,000 ceilings. EUR 66,612×8.8% = EUR 5,861.86 and 8.8%+2.65% = 11.45% are arithmetic. The percentages apply to different bases; no total contribution or current ceiling is inferred. All SI/GHS eligibility/rate/base/occupational-category outcomes held. Check this point with one of our partner accountants.
+- Original Test 6/Test C: resident, non-domiciled, dividends EUR 20,000. The old combined “tax EUR 0” outcome is not usable: PIT, SDC and GHS require separate proof. Check this point with one of our partner accountants.
+- Original Test 7 and Example 6: annual foreign pension EUR 18,000, special election; retain 2025 EUR 729 arithmetic above. For the distinct 2026 case, (18,000−5,000)×5% = EUR 650; bands on the pension alone give zero. Do not replace the original year.
+- Original Test 8: final tax EUR 10,000 and provisional tax EUR 6,000. These tax amounts alone cannot decide the 75% **income** trigger. If its legal trigger is established, illustrative difference EUR 4,000×10% = EUR 400; actual charge remains held. Check this point with one of our partner accountants.
+- Later Test E: if all art.8(21B) conditions are established, the relief is min(25% of qualifying pay/profit, EUR 25,000), with the EUR 30,000 strict threshold and permitted years checked first. No invented pay figure substitutes for this original case.
+- Later Test F: established two-child family income EUR 100,001 loses all art.14B deductions; at EUR 100,000 the ceiling itself does not disqualify, but all other conditions still apply.
+- Later Test G: 2026 resident domiciled landlord; preserve the rental topic. No SDC on rent; income tax/GHS still apply. The 20% buildings allowance and rental base are held until their retained law is proven; no illustrative rent amount is invented. Check this point with one of our partner accountants.
+
+```oa-check
+name: Preserved 2025 arithmetic inputs only, no historical filing clearance
+inputs:
+  income_1: 30000
+  income_2: 45000
+  income_3: 70000
+  pension: 18000
+  ceiling: 66612
+  final_tax: 10000
+  temporary_tax: 6000
+steps:
+  - old_tax_1: max(0,min(income_1,28000)-19500)*0.20 + max(0,min(income_1,36300)-28000)*0.25 + max(0,min(income_1,60000)-36300)*0.30 + max(0,income_1-60000)*0.35
+  - old_tax_2: max(0,min(income_2,28000)-19500)*0.20 + max(0,min(income_2,36300)-28000)*0.25 + max(0,min(income_2,60000)-36300)*0.30 + max(0,income_2-60000)*0.35
+  - old_tax_3: max(0,min(income_3,28000)-19500)*0.20 + max(0,min(income_3,36300)-28000)*0.25 + max(0,min(income_3,60000)-36300)*0.30 + max(0,income_3-60000)*0.35
+  - old_pension: (pension-3420)*0.05
+  - old_si: round(ceiling*0.088,2)
+  - conditional_charge: (final_tax-temporary_tax)*0.10
+expected:
+  old_tax_1: 2200
+  old_tax_2: 6385
+  old_tax_3: 14385
+  old_pension: 729
+  old_si: 5861.86
+  conditional_charge: 400
+```
+
+```oa-check
+name: 2026 preserved rate and pension comparisons
+inputs:
+  chargeable: 50000
+  pension: 18000
+  threshold: 22000
+steps:
+  - tax: max(0,min(chargeable,32000)-22000)*0.20 + max(0,min(chargeable,42000)-32000)*0.25 + max(0,min(chargeable,72000)-42000)*0.30 + max(0,chargeable-72000)*0.35
+  - tax_at_zero_boundary: max(0,threshold-22000)*0.20
+  - tax_next_euro: max(0,threshold+1-22000)*0.20
+  - pension_special: max(0,pension-5000)*0.05
+  - pension_ordinary: max(0,min(pension,32000)-22000)*0.20
+expected:
+  tax: 6900
+  tax_at_zero_boundary: 0
+  tax_next_euro: 0.20
+  pension_special: 650
+  pension_ordinary: 0
+```
+
+### Bank patterns: original matrix retained on hold
+
+**Every row in this historical matrix is non-usable for tax treatment.** It preserves the original candidate, conclusion and caveat for review; it is not an instruction to apply that conclusion. Missing current retained ITL arts.5/8/9/10/11/13 proof prevents automatic deductions/exclusions. The documented art.14 computation above governs evidenced qualifying contributions. For each unresolved row: **Check this point with one of our partner accountants.**
+
+| Original pattern | Original candidate | Original treatment (HELD) | Original caveat (HELD) |
+|---|---|---|---|
+| Client name + TRANSFER, DEPOSIT, EMBASMA, PAYMENT | Self-employment income | Business income | If VAT-registered, extract net (excl. 19% VAT) |
+| FEES, PROFESSIONAL FEES, CONSULTANCY, AMOIVI | Self-employment income | Business income | Professional fees -- typical for self-employed |
+| STRIPE PAYOUT, STRIPE TRANSFER | Self-employment income | Business income | Platform payout -- match to underlying invoices |
+| PAYPAL PAYOUT, PAYPAL TRANSFER | Self-employment income | Business income | Platform payout -- verify against invoices |
+| WISE PAYOUT, REVOLUT PAYOUT | Self-employment income | Business income | Check if business or personal |
+| UPWORK, FIVERR, TOPTAL | Self-employment income | Business income | Freelance platform -- net of commission |
+| MISTHOS, SALARY, PAYROLL, EMPLOYER [name] | Employment income (PAYE) | Employment income | NOT self-employment -- emoluments under PAYE |
+| ENOIKIO, RENT RECEIVED | Rental income | Rental income | Subject to PIT (+ SDC if domiciled) -- see 5.3 |
+| TOKOS, INTEREST RECEIVED | Investment income | EXEMPT from PIT | Taxed under SDC if domiciled, otherwise nil |
+| MERISMA, DIVIDEND | Investment income | EXEMPT from PIT | Taxed under SDC if domiciled, otherwise nil |
+| TAX REFUND, EPISTROFI FOROU | EXCLUDE | Not income | Tax refund from prior year |
+| GOVERNMENT GRANT, EPIDOMA | Check nature | Capital grants EXCLUDE; revenue grants = income | Confirm grant nature |
+| OFFICE RENT, ENOIKIO GRAFEIOU | Office rent | Deductible | Dedicated business premises |
+| PROFESSIONAL INDEMNITY, PI INSURANCE | Professional insurance | Deductible | None recorded |
+| ACCOUNTANT, AUDITOR, BOOKKEEP, LOGISTIS | Accountancy/audit fees | Deductible | None recorded |
+| LAWYER, LEGAL, DIKIGOROS (business) | Legal fees | Deductible | Must be business-related |
+| STATIONERY, OFFICE SUPPLIES | Office supplies | Deductible | None recorded |
+| MARKETING, GOOGLE ADS, META ADS, FACEBOOK ADS | Marketing/advertising | Deductible | None recorded |
+| TRAINING, CPD, COURSE, SEMINAR, CONFERENCE | Training/CPD | Deductible | Must relate to current business |
+| PROFESSIONAL BODY, ICPAC SUBSCRIPTION | Professional subscriptions | Deductible | None recorded |
+| BANK CHARGE, MAINTENANCE FEE, SPEXODA | Bank charges | Deductible | Business account only |
+| STRIPE FEE, PAYPAL FEE, TRANSACTION FEE | Payment processing fees | Deductible | None recorded |
+| DOMAIN, HOSTING, CLOUDFLARE, AWS | IT infrastructure | Deductible | If capital, use capital allowances |
+| GOOGLE WORKSPACE, MICROSOFT 365, OFFICE 365 | Software subscription | Deductible | Recurring subscription = operating expense |
+| ADOBE, CANVA, FIGMA, NOTION, SLACK, ZOOM | Software subscription | Deductible | None recorded |
+| ANTHROPIC, OPENAI, GITHUB, ATLASSIAN, DROPBOX | Software subscription | Deductible | None recorded |
+| SOFTWARE LICENCE (perpetual, high value) | Capital item | Capital allowance | Capitalise per wear-and-tear schedule |
+| EAC, AHK, ELECTRICITY, ILEKTRISMOS | Electricity | T2 if home office | 100% if dedicated office; proportional if home |
+| WATER BOARD, YDREFSI | Water | T2 if home office | Proportional if home |
+| CYTA, PRIMETEL, EPIC, CABLENET | Telecoms/broadband | T2 | Business use portion only; default 0% if mixed |
+| RYANAIR, WIZZ AIR, AEGEAN, CYPRUS AIRWAYS, EASYJET | Flights | Deductible if business travel | Must be wholly business purpose |
+| HOTEL, BOOKING.COM, AIRBNB | Accommodation | Deductible if business travel | None recorded |
+| BOLT, TAXI, UBER | Local transport | Deductible if business purpose | None recorded |
+| FUEL, PETROLINA, EKO, PETROL | Vehicle fuel | T2 -- business % only | Requires mileage log |
+| PARKING | Parking | T2 -- business % only | None recorded |
+| RESTAURANT, DINNER, LUNCH, ENTERTAINMENT, CLIENT MEAL | Entertainment | NOT deductible | Private/non-business |
+| PERSONAL, GROCERIES, SUPERMARKET, ALPHAMEGA, LIDL | Personal expenses | NOT deductible | Private living costs |
+| FINE, PENALTY, PROSTIMO, PARKING FINE | Fines/penalties | NOT deductible | Public policy |
+| INCOME TAX, FOROS, TAX PAYMENT | Tax payments | NOT deductible | Income tax cannot reduce income |
+| DRAWINGS, PERSONAL WITHDRAWAL, ATM (personal) | Drawings | NOT deductible | Not an expense |
+| LAPTOP, COMPUTER, MACBOOK, DESKTOP | Computer hardware | See 5.4 [RESEARCH GAP -- reviewer to confirm exact wear-and-tear rate] | Capital allowance, not expense |
+| PRINTER, SCANNER, COPIER | Office equipment | See 5.4 [RESEARCH GAP -- reviewer to confirm] | Capital allowance |
+| FURNITURE, DESK, CHAIR | Furniture/fittings | See 5.4 [RESEARCH GAP -- reviewer to confirm] | Capital allowance |
+| VEHICLE, CAR (business) | Motor vehicle | See 5.4 [RESEARCH GAP -- reviewer to confirm] | Business % only |
+| INTERNAL TRANSFER, OWN ACCOUNT, BETWEEN ACCOUNTS | EXCLUDE | Own-account transfer | None recorded |
+| LOAN REPAYMENT, PERSONAL LOAN | EXCLUDE | Loan principal movement | None recorded |
+| SOCIAL INSURANCE, KOINONIKES ASFALISEIS | Deduction (within 1/5 cap) | Deductible against chargeable income, NOT a business expense | None recorded |
+| GHS, GESY, GENIKO SYSTIMA YGEIAS | Deduction (within 1/5 cap) | Deductible against chargeable income | None recorded |
+| VAT PAYMENT, FPA | EXCLUDE | VAT liability payment, not expense | None recorded |
+| PROVISIONAL TAX, TEMPORARY TAX, PROSORINI FORO | Credit against final liability | Not an expense | None recorded |
+
+Bank-format assertions are held: Bank of Cyprus, Hellenic Bank, Eurobank Cyprus, Astrobank/Alpha Bank Cyprus, Revolut Business and Wise Business; obtain the actual statement rather than assuming PDF/CSV columns, date format or EUR conversion. Retain date, original text, debit/credit, currency, counterparty, invoice and exchange-rate evidence. Greek/transliterated search vocabulary: METAFORA/EMBASMA (transfer), AMESI CHREOSI/DD (direct debit), PAGIA ENTOLI/SO (standing order), KARTA/CARD, KATATHESI/DEPOSIT, SPEXODA/CHARGES, TOKOS/INTERESSI, MISTHOS, ENOIKIO and FPA. These are search aids, not proof of tax character.
+
 ## Ask the client first
 
-- How many days were you in Cyprus in 2026 and in any other single country, and did you have a Cyprus job, business or directorship and a Cyprus home through 31 December? (Residence: 183-day or 60-day rule.)
-- Where is your domicile of origin, and in how many of the last 20 years were you Cyprus resident? (SDC on dividends and interest; `cy-non-dom`.)
-- When did you start work or business in Cyprus, where did you live and work in the 15 years before, and what is your annual pay or profit? (Which of the 20%, 25% or 50% exemptions applies.)
-- What was the gross income of every family member for 2026, from all countries, how many dependent children do you have on 31 December, and will your partner consent in their return? (Art. 14B caps.)
-- What was your business turnover and total assets, and what provisional tax did you declare? (Accounts, the 31 July or 31 January deadline, the underestimate charge.)
-- Did you have rent, dividends (out of which year's profits), interest, crypto disposals, share options or a foreign pension? (Special rates and SDC.)
+Read the existing file and correspondence before requesting missing facts. Minimum evidence: full-year bank records and invoices; tax year; residence/day log; employment/business status; age at 31 December; income by category; PAYE/provisional-payment and contribution certificates. Obtain asset register, losses, VAT records and exemption history where relevant.
+
+Ask for every family member's income, full family/child/custody facts, housing ownership/loan/rent receipts and payment method, green assets/grants, filing/consent status. For SDC collect domicile of origin and residence history without assuming status. For reliefs collect employment start and cessation dates, prior residence/work, employer residence, recognised-degree evidence and annual pay/profit. For special income collect contracts, approvals, vesting, connection, disposals, loss records, pension origin and treaty facts.
+
+The working paper keeps: gross business receipts and evidenced costs; independently established ordinary profit; employment/rent/pension/other income; separate exempt/held categories; art.9 deductions; each art.14 cap and the combined cap; art.14B eligibility and amounts; chargeable income; ordinary/separate tax; evidenced credits and unresolved reconciliation. Keep SDC/GHS separate. If onboarding is incomplete, prepare an evidence schedule only and mark held outputs **not usable**. Do not file or claim a relief on default assumptions.
+
+Historical minimum wage and employer-fund figures, all contribution ceilings and occupational-category calculations remain outside this computation pending their own current official-source proof. Check this point with one of our partner accountants.
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and exact scope read | URL | Read on |
 |---|---|---|
-| Income Tax Law 118(I)/2002, consolidated to Law 67(I)/2026 (CyLaw): arts. 2, 5, 8, 9, 10, 11, 13, 14, 14B, 20, 20B to 20ΣΤ, 25, 34 to 36, Second Schedule | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html | 2026-10-24 |
-| Income Tax (Amendment) (No. 4) Law 244(I)/2025, s. 25 commencement 1 January 2026 | https://www.cylaw.org/nomoi/arith/2025_1_244.pdf | 2026-10-24 |
-| Special Defence Contribution Law 117(I)/2002, consolidated (CyLaw): arts. 2, 3, 3A, 3B, 7B | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html | 2026-10-24 |
-| SDC (Amendment) (No. 4) Law 245(I)/2025, s. 10 commencement 1 January 2026 | https://www.cylaw.org/nomoi/arith/2025_1_245.pdf | 2026-10-24 |
-| Assessment and Collection of Taxes Law 4/1978, consolidated (CyLaw): arts. 5, 23 to 26, 30, 32A, 38, 39, 48A, 50A | https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html | 2026-10-24 |
-| ACL (Amendment) (No. 2) Law 243(I)/2025, s. 35 commencement (1 January 2026; art. 48A from 1 July 2026) | https://www.cylaw.org/nomoi/arith/2025_1_243.pdf | 2026-10-24 |
-| Tax Department, Individual Income Tax Return page (TFA from 2026, 2025 deadline 31 October 2026, band table) | https://www.gov.cy/mof-tax/en/documents/forologiki-dilosi-eisodimatos-atomoy/ | 2026-10-24 |
-| Tax Department, FAQs on the 2026 reform for individuals (11 May 2026): 2026 return due 31 July 2027, family income, TD59, GHS on rent | https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf | 2026-10-24 |
-| Public Default Interest Rate for 2026 Order, K.D.P. 376/2025 (3.50% from 1 January 2026) | https://www.cylaw.org/KDP/data/2025_1_376.pdf | 2026-10-24 |
-| Tax Department, presentation on the ACL amendments (default interest 3.5% from 1 January 2026) | https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%9D%CF%8C%CE%BC%CE%BF%CE%B9-%CE%A0%CE%92%CE%95-%CE%95%CE%B9%CF%83%CF%80%CF%81%CE%AC%CE%BE%CE%B5%CF%89%CF%82-%CE%A7%CE%B1%CF%81%CF%84%CE%BF%CF%83%CE%AE%CE%BC%CF%89%CE%BD.pdf | 2026-10-24 |
+| Gazette 5070: Law 243 ss.4,17,18,21,22,29,31,35; Law 244 ss.2,4,5,7,9,10,12,13,22/23 as renumbered; retained old base provisions not established merely by substitutions. SDC amendment read for dependency assessment, not domicile clearance | https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf | 2026-11-27 |
+| Gazette 5075 correction: Law 244 section renumbering and serviced-loan definition correction; the printed reference to art.14B(3)(a) does not change the nature of the correction | https://www.mof.gov.cy/mof/gpo/gazette.nsf/203DBFC78C778160C2258DAB0020F89D/%24file/5075%2027%202%202026%20PARARTIMA%201o%20MEROS%20I.pdf | 2026-11-27 |
+| Law 17/2026 ss.2–5: complete new art.8(21B), non-stacking changes and commencement | https://www.mof.gov.cy/mof/tax/taxdep.nsf/All/AFF8B2E8B2A07820C2258DB60033F251/%24file/5076%206%203%202026%20PARARTIMA%201o%20MEROS%20I.pdf?OpenElement= | 2026-11-27 |
+| Gazette 5086: Law 66 s.2 and Law 67 ss.2–4, checking effects on this Guide; art.20D transition amended by Law 67 | https://www.mof.gov.cy/mof/gpo/gazette.nsf/21F7154E05045B76C2258DD900389972/%24file/5086%2014%204%202026%20PARARTIMA%201o%20MEROS%20I.pdf | 2026-11-27 |
+| Tax Department January FAQ: questions 1–33, 42–55. Used for explanation/rent obligations; conflicts or incorporated definitions are held rather than inferred. Not a claim to read the inaccessible May revision | https://www.gov.cy/media/sites/29/2026/01/FAQs_last.pdf | 2026-11-27 |
+| Individual return page: indexed Tax Department text on residence/income filing scope, 2026/2008–2025 bands and TFA. Direct reader returned 403; no future TFA screens certified | https://www.gov.cy/mof-tax/en/documents/forologiki-dilosi-eisodimatos-atomoy/ | 2026-11-27 (indexed text only) |
+| Ministry pension explanation, read for annual choice and threshold: indexed official statement of annual choice and EUR 5,000 threshold; direct reader returned 403; treaty outcome not established | https://www.gov.cy/mof/en/documents/tax-incentives/ | 2026-11-27 (indexed text only) |
+| Tax Department 2022 computation notes 2, 15–19: historical arithmetic and income-based temporary-tax trigger; not current-year procedural clearance | https://taxisnet.mof.gov.cy/static/help/epr1/taxNotes_2022ch_en.html | 2026-11-27 |
+| Tax Department current default-rate explanation, read for current annual rate: indexed official 3.50% from 1 January 2026; not a 2027/2028 rate | https://www.gov.cy/mof-tax/en/documents/default-interest-monetary-charges-administrative-fines-additional-tax/default-interest-monetary-charges-administrative-fines-additional-tax-general-information/ | 2026-11-27 (indexed text only) |
 
-Not yet confirmed: the general wear-and-tear rates by asset class (set by the notification under art. 52A of the repealed Income Tax Law 58/1961, kept in force by ITL art. 47; no official copy found on CyLaw or the Tax Department site, and secondary tables are not cited); the publication date of the Income Tax (Amendment) (No. 6) Law of 2022 that opens art. 8(21A) (the Tax Department table read for v0.1 gave 26 July 2022); the transitional art. 8(23A) rules for 2016 to 2021 starters; the pre-2023 art. 8(23A) conditions (v0.1 gave, from the Tax Department table: for employment started 1 January 2022 to 29 June 2023, non-residence for at least 10 years and the exemption ending when the first employment ends; not printed in the consolidated text); whether art. 8(21A) also ends when the first employment ends and whether 8(21) and 8(21A) are given whether or not the person becomes resident (v0.1, Tax Department explanatory table, not in the consolidated text); the pre-2026 figures of EUR 70,000 (accounts threshold) and EUR 3,420 (foreign pension threshold) from v0.1 (Tax Department presentations, not re-read; not needed for 2026); how the art. 14B(1)(β) ownership proviso applies to the rent limb; whether the art. 20ΣΤ 20% rate applies to the whole payment or only to the part over EUR 200,000; the self-employed GHS rate, Social Insurance categories, the 2.65% GHS on pay and the 2026 insurable earnings ceiling from v0.1 (now only in `cyprus-social-contributions`, not re-read here); the landlord's GHS self-assessment on rent with no withholding (v0.1, FAQs question 54, not re-read); the bad-debt conditions, home-office, phone and vehicle apportionment working rules, VAT interaction table, bank-statement classification patterns, Cyprus bank formats and the working-paper template from v0.1 (practice notes, not law, not carried).
+Not yet confirmed: **non-usable holds only**, each carrying the partner-accountant referral above: current retained income/expense/rent/loss/exemption base and transition identity; pension treaty/application; technical green eligibility; family-definition/student boundary/cohabitation and rent-ownership conflicts; spouse legacy policies; tax-account registration and live TFA/provisional-payment procedure; accounts scope; real temporary-tax charges/foreign credits; SDC domicile/interest/dividend/penalty outcomes; GHS/SI/employer funds/ceilings/occupational minima and minimum wage; asset allowances; AIF/UCITS and termination payments; enforcement/assessment exceptions; original 2025 tax/contribution outcomes and bank-format assertions. CyLaw is a reproduction, not the Gazette: direct and browser access were blocked, and its URL alone was not treated as a read. The Tax Department base PDF was identified in the browser but its retained operative provisions were not extracted/read; it does not close these holds. The core bands, replacement art.14/art.14B, residence and filing/payment dates above are supported by the actual enacted replacement/new clauses read in the Gazette. This local draft has no independent-check or publication clearance.
