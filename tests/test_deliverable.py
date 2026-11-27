@@ -95,18 +95,22 @@ class DescriptionTest(unittest.TestCase):
 
 
 class SizeTest(unittest.TestCase):
-    def test_a_130_kb_skill_fails_with_size_limit_and_what_to_do(self):
+    def test_a_skill_over_128_kib_fails_with_size_limit_and_what_to_do(self):
         rel = f"{IFRS_DIR}/ifrs18-presentation.md"
-        found = problems({rel: SKILL}, sizes={rel: 130_577})
+        found = problems({rel: SKILL}, sizes={rel: 131_073})
         self.assertEqual(len(found), 1)
-        self.assertIn("130,577 bytes", found[0])
-        self.assertIn("112,640 bytes", found[0])
+        self.assertIn("131,073 bytes", found[0])
+        self.assertIn("131,072 bytes", found[0])
         self.assertIn("Split it into a base skill and a child skill that depends on it", found[0])
 
     def test_the_limit_itself_passes(self):
         rel = f"{IFRS_DIR}/ifrs18-presentation.md"
         self.assertEqual(problems({rel: SKILL}, sizes={rel: vg.PLATFORM_MAX_SKILL_BYTES}), [])
         self.assertEqual(len(problems({rel: SKILL}, sizes={rel: vg.PLATFORM_MAX_SKILL_BYTES + 1})), 1)
+
+    def test_the_south_africa_source_size_is_deliverable(self):
+        rel = "skills/south-africa/za-vat-return.md"
+        self.assertEqual(problems({rel: SKILL}, sizes={rel: 127_975}), [])
 
     def test_a_large_readme_is_not_a_skill(self):
         self.assertEqual(problems({"skills/malta/README.md": "x"}, sizes={"skills/malta/README.md": 500_000}), [])
