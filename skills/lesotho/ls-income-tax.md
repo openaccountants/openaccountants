@@ -5,15 +5,15 @@ jurisdiction: LS
 category: international
 tax_year: 2026
 tax_year_notes: "2026-27"
-last_updated: 2026-11-14
-version: 0.3
+last_updated: 2026-11-26
+version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Lesotho Personal Income Tax v0.3
+# Lesotho Personal Income Tax v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -35,7 +35,7 @@ Lesotho's tax year runs 1 April to 31 March. This skill covers 2026-27, from 1 A
 | Non-resident rate | 25% | Standard rate, s.12(1). If the person lives permanently abroad but works or trades full-time in Lesotho, the 20% and 30% bands apply to that income, s.12(2) | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf |
 | Trustees, minors, electing non-residents | 40% | Fourth Schedule item 1 | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf |
 | Commercial farming | 10% | Fourth Schedule item 2 | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf |
-| Fringe benefits tax | 40% | Paid by the employer on the taxable value | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf |
+| Fringe benefits tax | 40% | Paid by the employer on the grossed-up fringe benefits taxable amount (taxable value x 1 / (1 - 0.40), ss.116(2), 117), so the tax is two thirds of the taxable value | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf |
 | Interest paid to resident individuals | 10%, final | First M500 exempt | https://www.rsl.org.ls/sites/default/files/2026-09/Withholding%20Tax%20Public%20Ruling_2.pdf |
 
 ## The base
@@ -105,5 +105,6 @@ expected:
 | RSL Tax Guide on Provisional Tax; read in full | https://www.rsl.org.ls/sites/default/files/2024-05/Tax%20Guide%20on%20Provisional%20Tax%20%281%29.pdf | 2026-11-01 |
 | RSL Corporate Income Tax Guide; read in full | https://www.rsl.org.ls/sites/default/files/2024-07/Corporate%20Income%20Tax%20Guide.pdf | 2026-11-01 |
 | RSL Filing of Tax Returns page; read in full | https://www.rsl.org.ls/filing-tax-returns | 2026-11-01 |
+| RSL Tax Guide on Fringe Benefits Tax (file dated November 2023); read in full (gross-up formula ss.116(2), 117) | https://www.rsl.org.ls/sites/default/files/2024-05/Tax%20Guide%20on%20Fringe%20Benefit%20Tax%20%281%29.pdf | 2026-11-26 |
 
 Not yet confirmed: amendments to the Income Tax Act after 1 April 2012 other than those restated by RSL guides and LN 24 of 2026; the current specified rate under s.192; the 22% rate rests on an undated RSL guide; the Income Tax Amendments and Tax Administration Bill announced for 2026-27 in the budget speech have not been traced as enacted.
