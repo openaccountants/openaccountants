@@ -132,9 +132,11 @@ Source: [ITAA 1936](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-1
 
 ### Rule 2 -- Loans and the lodgment-day escape
 
-- **Loans and the lodgment-day escape** — A loan is a deemed dividend unless, before the LODGMENT DAY (earlier of the return's due date and actual lodgment -- s 109D(6)): it is fully repaid, or a complying s 109N agreement is in place. Loan is defined widely: advances, provision of credit or any other form of financial accommodation (s 109D(3)).  _(s 109D(6); s 109N; s 109D(3))_
+- **Loans and the lodgment-day escape** — For the ordinary resident-company dates used here, a loan is a deemed dividend unless, before the LODGMENT DAY (earlier of the return's due date and actual lodgment -- s 109D(6)): it is fully repaid, or a complying s 109N agreement is in place. Loan is defined widely: advances, provision of credit or any other form of financial accommodation (s 109D(3)).  _(s 109D(6); s 109N; s 109D(3))_
 
 Source: [ITAA 1936](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html), read 2026-11-27.
+
+For a nonresident company, the special s 109BC foreign accounting-period/lodgment rules require the actual foreign-tax facts; this Guide does not supply those dates. Check this point with one of our partner accountants.
 
 ### Rule 3 -- Complying loan criteria (s 109N)
 
@@ -166,7 +168,7 @@ Round that difference UP if fractional: s 109E(6), not s 109E(7).
 
 ### Rule 6 -- Payments and asset use (ss 109C, 109CA)
 
-- **Payments and asset use** — Payment = amounts paid/credited/transferred to, on behalf of, or for the benefit of the entity; property transfers valued at arm's length less consideration. A loan is not a payment. Use of a company asset (including under lease/licence) is a payment at first permitted use, or first right to use when the provider cannot use it or provide it to another entity; continuing use/right is a separate payment at the start of each later income year of the entity; value = arm's-length amount for the use less consideration given. Carve-outs: minor use (< $300 notional value, s 58P criteria), otherwise-deductible use, certain dwellings, and NIL where an arm's-length licence fee is paid.  _(ss 109C, 109CA; s 58P)_
+- **Payments and asset use** — Payment = amounts paid/credited/transferred to, on behalf of, or for the benefit of the entity; property transfers valued at arm's length less consideration. A loan is not a payment. Use of a company asset (including under lease/licence) is a payment at first permitted use, or first right to use when the provider cannot use it or provide it to another entity; continuing use/right is a separate payment at the start of each later income year of the entity; value = arm's-length amount for the use less consideration given. Carve-outs: minor use (< $300 notional value AND all s 58P criteria), a once-only deduction that would be allowable for the provision expenditure ignoring ITAA 1997 Divisions 28 and 900, qualifying dwellings, and NIL where consideration equals or exceeds the arm’s-length provision value. Fact-specific dwelling eligibility is held. Check this point with one of our partner accountants.  _(ss 109C, 109CA; s 58P)_
 
 Source: [ITAA 1936](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html), read 2026-11-27.
 
