@@ -3,15 +3,15 @@ name: exit-taxes-when-a-family-moves
 description: "Compares exit taxes when a wealthy family leaves Germany (section 6 AStG), France (article 167 bis), the Netherlands (conserverende aanslag), Norway, Spain (article 95 bis), Italy, Canada (departure tax) and the UK (temporary non-residence): triggers, which shares and assets are caught, holding thresholds, deferral and instalments, forgiveness on return and the departure forms, with a planning checklist. Links to us-expatriation-exit-tax and leaving-australia-tax-residency-cgt for the US and Australia."
 jurisdiction: general
 tax_year: 2026
-last_updated: 2026-11-16
-version: 1.0
+last_updated: 2026-11-27
+version: 1.1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
 type: cross-country-method
 ---
 
-# Exit taxes when a wealthy family changes country (2026, v1.0)
+# Exit taxes when a wealthy family changes country (2026, v1.1)
 
 Figures are for tax year 2026. This Guide compares what happens to unrealised gains when an individual stops being tax resident in Germany, France, the Netherlands, Norway, Spain, Italy, Canada, Australia, the United States or the United Kingdom. It covers the trigger, what is taxed, the holding or value threshold, the deferral or instalment options, when the tax falls away on a return, and the return or form that reports it. Each country section uses the wording of that country's tax authority or statute page, linked in the section. Amounts in the worked example are hypothetical and labelled as such. Use the exact event date and source version. A 2026 form for 2025 departures is not a final filing manual for 2026 departures. Dated limitations and unresolved execution points appear below; they are not permissions to assume an exemption.
 
@@ -112,7 +112,7 @@ Acceleration and relief. Sale, redemption, repayment or cancellation can end sus
 
 Historic periods remain important: 2014–2018 departures have the 15-year latent-gain retention period; the historical 8-year period belongs to the 2011–2013 regime, not every departure before 2014. The ETS1 notice covers 3 March 2011–2012; ETS2 covers 2013. Relief still needs the appropriate evidence and follow-up, including the separately dated extension of social-levy relief. [ETS3 notice pp1–4/§430](https://www.impots.gouv.fr/sites/default/files/formulaires/2074-ets3/2026/2074-ets3_5526.pdf); [ETS1 notice p1](https://www.impots.gouv.fr/sites/default/files/formulaires/2074-ets1/2026/2074-ets1_5522.pdf); [ETS2 notice p1](https://www.impots.gouv.fr/sites/default/files/formulaires/2074-ets2/2026/2074-ets2_5524.pdf).
 
-Forms and timing. IX normally requires the initial declaration in the year AFTER departure, within the income-return deadline. The 2026 notice for 2025 transfers uses paper 2074-ETD with 2042/2042 C; an express suspension request instead requires an initial ETD at least 90 days BEFORE departure and a second filing the next year. Follow-up since 2014 uses ETS3: latent-gains-only cases after 2018 are generally event-based; deferred gains/receivables and mixed cases retain annual reporting, with ETSL available in specified no-event cases. Subsequent changes of tax domicile must be notified within 2 months; the move may itself end automatic suspension. Do not invent a calendar deadline or a final 2027 form for a 2026 departure. [CGI IX–X](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048806379); [ETD notice V–IX, pp7–9](https://www.impots.gouv.fr/sites/default/files/formulaires/2074-etd/2026/2074-etd_5518.pdf); [ETS3 notice I–III](https://www.impots.gouv.fr/sites/default/files/formulaires/2074-ets3/2026/2074-ets3_5526.pdf). The authority’s 2026 simulator labels 8TN for tax on gains in payment suspension; that confirms the old code only for its stated 2025-income version, not universal 2026-departure filing instructions. [Actual simulator field](https://simulateur-ir-ifi.impots.gouv.fr/calcul_impot/2026/complet/). For depth use `leaving-france-exit-tax`.
+Forms and timing. IX normally requires the initial declaration in the year AFTER departure, within the income-return deadline. The 2026 notice for 2025 transfers uses paper 2074-ETD with 2042/2042 C; an express suspension request instead requires an initial ETD at least 90 days BEFORE departure and a second filing the next year. The deadline comes from [annex III, article 41 tervicies A](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038950368/): “au plus tard quatre-vingt-dix jours avant”. This controls over the inconsistent “dans les quatre-vingt-dix jours précédant” wording on notice p5. Follow-up since 2014 uses ETS3: latent-gains-only cases after 2018 are generally event-based; deferred gains/receivables and mixed cases retain annual reporting, with ETSL available in specified no-event cases. Subsequent changes of tax domicile must be notified within 2 months; the move may itself end automatic suspension. Do not invent a calendar deadline or a final 2027 form for a 2026 departure. [CGI IX–X](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048806379); [ETD notice V–IX, pp7–9](https://www.impots.gouv.fr/sites/default/files/formulaires/2074-etd/2026/2074-etd_5518.pdf); [ETS3 notice I–III](https://www.impots.gouv.fr/sites/default/files/formulaires/2074-ets3/2026/2074-ets3_5526.pdf). The authority’s 2026 simulator labels 8TN for tax on gains in payment suspension; that confirms the old code only for its stated 2025-income version, not universal 2026-departure filing instructions. [Actual simulator field](https://simulateur-ir-ifi.impots.gouv.fr/calcul_impot/2026/complet/). For depth use `leaving-france-exit-tax`.
 
 ## Netherlands: the conserverende aanslag
 
@@ -234,14 +234,17 @@ Hypothetical facts, for illustration only: one founder, single, no fiscal partne
 
 Only countries whose allowed pages print a rate that applies to the gain are computed. Germany (no full German income-tax calculation established here), Norway and Canada (gain in NOK or CAD, no exchange rate on an allowed page), Italy, Australia, the United States and the United Kingdom are not computed.
 
-| Item | Hypothetical value | Working | Source |
+**Case input:** the unrealised gain is an assumed EUR 10,000,000. This is a hypothetical input, rather than an amount supplied by an official source.
+
+The outputs below are computed from that input. The last column identifies the official rule used in the arithmetic; its source does not publish this founder’s computed output. All operative conditions and exceptions remain in the country sections above.
+
+| Calculation | Computed output | Working | Official rule used |
 | --- | --- | --- | --- |
-| Unrealised gain (hypothetical) | EUR 10,000,000 | Assumption | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
-| France: income tax part at the flat rate | EUR 1,280,000 | Gain times 12.8% | https://www.impots.gouv.fr/sites/default/files/formulaires/2074-etd/2026/2074-etd_5518.pdf |
-| France: social levies part | EUR 1,860,000 | Gain times 18.6% | https://www.impots.gouv.fr/particulier/questions/jai-realise-une-plus-value-mobiliere-comment-est-elle-imposee |
-| France: total at the overall flat rate | EUR 3,140,000 | Gain times 31.4% | https://www.impots.gouv.fr/particulier/questions/jai-realise-une-plus-value-mobiliere-comment-est-elle-imposee |
-| Netherlands: statutory-table illustration before final assessment rounding | EUR 3,095,524.67 | Printed EUR 16,866 + (EUR 10,000,000 - EUR 68,843) times 31%; no final legal rounding assumed | https://wetten.overheid.nl/BWBR0011353 |
-| Spain: savings scale on the gain | EUR 2,981,880 | Common-regime Spain only. EUR 71,880 plus the gain above EUR 300,000 times 30% | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| France: income tax part at the flat rate | EUR 1,280,000 (computed) | Gain times 12.8% | Rule: [12.8% ordinary income-tax component](https://www.impots.gouv.fr/sites/default/files/formulaires/2074-etd/2026/2074-etd_5518.pdf) |
+| France: social levies part | EUR 1,860,000 (computed) | Gain times 18.6% | Rule: [18.6% ordinary social-levy component](https://www.impots.gouv.fr/particulier/questions/jai-realise-une-plus-value-mobiliere-comment-est-elle-imposee) |
+| France: total at the overall flat rate | EUR 3,140,000 (computed) | Gain times 31.4% | Rule: [31.4% ordinary total rate](https://www.impots.gouv.fr/particulier/questions/jai-realise-une-plus-value-mobiliere-comment-est-elle-imposee) |
+| Netherlands: statutory-table illustration before final assessment rounding | EUR 3,095,524.67 (computed) | Printed EUR 16,866 + (EUR 10,000,000 - EUR 68,843) times 31%; no final legal rounding assumed | Rule: [article 2.12 printed box 2 table](https://wetten.overheid.nl/BWBR0011353) |
+| Spain: savings scale on the gain | EUR 2,981,880 (computed) | Common-regime Spain only. EUR 71,880 plus the gain above EUR 300,000 times 30% | Rule: [articles 66(1) and 76 resident state and regional savings scales](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764) |
 
 The earlier arithmetic multiplied EUR 68,843 by 24.5%, giving EUR 16,866.535 and an unrounded total EUR 3,095,525.205 (then displayed EUR 3,095,525). That multiplication is arithmetically sound but does not use the printed statutory base of EUR 16,866. The corrected illustration is EUR 0.535 lower before final legal rounding. [Wet IB 2.12](https://wetten.overheid.nl/BWBR0011353).
 
@@ -318,12 +321,17 @@ expected:
 
 ## Not yet confirmed
 
-- Final 2027 French departure forms for a 2026 departure were not established. The 2026-vintage forms described above concern 2025 events; 8TN is confirmed only within that version. Recover the applicable filing version before execution.
-- The exact delegated Dutch collection-interest period and final assessment rounding are not calculated here. Current statutory interest exceptions and the printed table base replace the original unconditional interest-free statement and reconstructed base.
-- A universal Italian private-portfolio exit charge, automatic relief on return, and complete 2027 recast execution are not established. The current commercial-business scope and traced future article are usable only within their stated boundaries.
-- A universal UK “5 years plus 1 day” safe harbour based solely on the original 4 May travel-date pair is not established. Apply the statutory residence-period endpoints, split years and complete facts.
+These are non-usable execution points, rather than assumptions for a filing.
+
+- Final 2027 French departure forms for a 2026 departure were not established. The 2026-vintage forms described above concern 2025 events; 8TN is confirmed only within that version. Recover the applicable filing version before execution. Check this point with one of our partner accountants.
+- Final Canadian forms for a 2026 departure have not been established here; the cited CRA filing instructions expressly concern the 2025 return. Check this point with one of our partner accountants.
+- The exact delegated Dutch collection-interest period and final assessment rounding are not calculated here. Current statutory interest exceptions and the printed table base replace the original unconditional interest-free statement and reconstructed base. Check this point with one of our partner accountants.
+- A universal Italian private-portfolio exit charge, automatic relief on return, and complete 2027 recast execution are not established. The current commercial-business scope and traced future article are usable only within their stated boundaries. Check this point with one of our partner accountants.
+- A universal UK “5 years plus 1 day” safe harbour based solely on the original 4 May travel-date pair is not established. Apply the statutory residence-period endpoints, split years and complete facts. Check this point with one of our partner accountants.
 
 ## Source versions and read scope
+
+The completed 16 November source reads and independent review are reused for unchanged content; the country matrix, original cases and their years remain. Annex III article 41 tervicies A was additionally read on 27 November 2026 to resolve the notice’s conflicting deadline wording. The unresolved execution points above remain held.
 
 Primary operative provisions and their relevant neighbouring conditions were personally read on 2026-11-16. Current German codes include AStG 6/21, EStG17 and InvStG19/49/57. France uses current CGI167bis (version effective 2024-01-01); notice pages are individually dated above. The Netherlands uses official Wet IB 2001 current from 2026-02-21, UBIB current from 2026-01-01 and Invorderingswet current from 2026-10-01. Norway uses current Tax Act10-70/14-25 and FSFIN10-70 implementing paragraphs, with the expressly historical transitions. Spain uses the current BOE consolidation displayed updated 2026-11-11, articles4/8/66/76/95bis and neighbours. Italy uses current166 at 2026-11-16 plus the original2026 recast and explicitly incomplete later376 overlay. Canada’s current128.1 is paired with a CRA guide expressly for2025 returns. Australia uses the current ITAA1997 compilation (2026-10-01) I1/TAP/temporary-resident provisions. US current877/877A and Rev.Proc.2025-32 apply within the expatriation referral; a move abroad alone is different. UK current FA2013 Schedule45 Part4 and TCGA1M/1N are paired with dated RDR3 guidance; former10A/10AA are repealed. Saved evidence distinguishes full operative scopes from partially read form manuals; download does not imply reading.
 
@@ -346,6 +354,7 @@ These original discovery links are retained as an inventory. Their actual curren
 
 | Source and actual scope personally read | Official URL | Read on |
 | --- | --- | --- |
+| France: annex III article 41 tervicies A, whole operative provision: requested suspension form, 90-day advance deadline, representative details. | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038950368/ | 2026-11-27 |
 | Germany: section 6 AStG(1)–(5)/21(3), EStG17(1)–(7), InvStG19(3)/49(5)/57(10), with operative neighbours; EStG3No40,3c(2),32a2026tariff. Not the whole German code. | https://www.gesetze-im-internet.de/astg/__6.html ; https://www.gesetze-im-internet.de/astg/__21.html ; https://www.gesetze-im-internet.de/estg/__17.html ; https://www.gesetze-im-internet.de/invstg_2018/__19.html ; https://www.gesetze-im-internet.de/invstg_2018/__49.html ; https://www.gesetze-im-internet.de/invstg_2018/__57.html ; https://www.gesetze-im-internet.de/estg/__3.html ; https://www.gesetze-im-internet.de/estg/__3c.html ; https://www.gesetze-im-internet.de/estg/__32a.html | 2026-11-16 |
 | France: article 167 bis CGII–X, effective2024-01-01; whole operative categories, exceptions and reporting. Current FAQ capital-gain/PFU paragraphs and dated update. | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048806379 ; https://www.impots.gouv.fr/particulier/questions/jai-realise-une-plus-value-mobiliere-comment-est-elle-imposee | 2026-11-16 |
 | France: ETDnotice2026for2025departures, actualPDFpp1–9, with pp4/7visually checked; not all18pages. ETS3first4pages and§430/PDF26; ETS1pp1–2/p3opening; ETS2firstpage/45lines only. Simulator2026for2025income intro/8TNfield and neighbours. Original brochure remains historical discovery, not a newly read operative basis. | https://www.impots.gouv.fr/sites/default/files/formulaires/2074-etd/2026/2074-etd_5518.pdf ; https://www.impots.gouv.fr/sites/default/files/formulaires/2074-ets3/2026/2074-ets3_5526.pdf ; https://www.impots.gouv.fr/sites/default/files/formulaires/2074-ets1/2026/2074-ets1_5522.pdf ; https://www.impots.gouv.fr/sites/default/files/formulaires/2074-ets2/2026/2074-ets2_5524.pdf ; https://simulateur-ir-ifi.impots.gouv.fr/calcul_impot/2026/complet/ | 2026-11-16 |
