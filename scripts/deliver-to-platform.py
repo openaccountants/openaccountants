@@ -209,9 +209,14 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
 
 
 def post(url: str, body: dict, secret: str) -> dict:
-    request = urllib.request.Request(url, data=json.dumps(body).encode(), method="POST",
-                                     headers={"Content-Type": "application/json",
-                                              "Authorization": f"Bearer {secret}"})
+    headers = {"Content-Type": "application/json", "Authorization": f"Bearer {secret}"}
+    # This run's own GitHub token, so the platform's proof lookups never hit the
+    # 60-an-hour anonymous limit or depend on a person's token (27 Nov 2026).
+    # Sent only to the platform, never to a redirect (NoRedirect below).
+    run_token = os.environ.get("PLATFORM_GITHUB_RUN_TOKEN", "").strip()
+    if run_token and url.startswith("https://www.openaccountants.com/"):
+        headers["X-GitHub-Run-Token"] = run_token
+    request = urllib.request.Request(url, data=json.dumps(body).encode(), method="POST", headers=headers)
     with urllib.request.build_opener(NoRedirect()).open(request, timeout=300) as response:
         result = json.load(response)
     if not isinstance(result, dict):
