@@ -2,11 +2,11 @@
 name: zw-income-tax
 description: >
   Zimbabwe income tax for individuals and the self-employed, tax year 2026: PAYE bands in USD and ZWG, the 3% AIDS levy, the flat 25% on trade and investment income, quarterly payment dates, the ITF12C return, the move of professionals and larger transporters to self-assessment, presumptive rental income tax and the 50:50 currency rule. Use for questions such as how much PAYE do I pay, ZIMRA tax table, QPD dates, freelancer tax in Zimbabwe, or rental income tax in Zimbabwe. Companies are in zw-corporate-income-tax and employer payroll in zw-payroll-social.
-version: 1.2
+version: 1.3
 jurisdiction: ZW
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -57,7 +57,7 @@ These sections come from the earlier version. Where a figure conflicts with the 
 
 ## zimbabwe-income-tax
 
-### Zimbabwe Income Tax -- Individual & Self-Employed Skill v1.2
+### Zimbabwe Income Tax -- Individual & Self-Employed Skill v1.3
 
 > **Tier 2.** Figures are drawn from ZIMRA Jan-Dec 2025 PAYE tax tables, ZIMRA corporate/individual rate pages, NSSA contribution schedules, and reputable secondary sources . Every figure carries an inline citation or an explicit `[RESEARCH GAP -- reviewer to confirm]` marker. This skill has NOT yet been signed off by a registered Zimbabwean tax practitioner.
 
@@ -83,7 +83,7 @@ These sections come from the earlier version. Where a figure conflicts with the 
 
 #### How the dual-currency system works
 
-Zimbabwe taxes income in the currency it is earned. An employee paid in USD is taxed on the **USD PAYE table**; an employee paid in ZiG/ZWG is taxed on the **ZWG PAYE table**. An employee paid in both currencies has each stream taxed under its own table. The **3% AIDS Levy** is then added to the income tax computed (it is a levy ON the tax, not on income). Source: ZIMRA Jan-Dec 2025 PAYE tax tables.
+Zimbabwe taxes income in the currency it is earned. An employee paid only in USD is taxed on the **USD PAYE table**; an employee paid only in ZiG/ZWG is taxed on the **ZWG PAYE table**. For a salary with both ZWG and USD components, ZIMRA says to use the **USD tax tables** on the whole salary and apportion the tax due between the currencies; each share is paid in its own currency (Finance Act s.4A(1)(a)). The **3% AIDS Levy** is then added to the income tax computed (it is a levy ON the tax, not on income). Sources: ZIMRA Jan-Dec 2025 PAYE tax tables; ZIMRA PAYE page.
 
 > **ZWG instability note.** The ZiG (introduced April 2024, replacing ZWL) is subject to devaluation, and ZIMRA may revise ZWG bands mid-year by public notice. The USD bands are the more stable reference. Always confirm the current ZWG table against the latest ZIMRA publication before computing in ZiG.
 
@@ -379,7 +379,7 @@ Taxable portion = USD 0.00. Any bonus ABOVE USD 700 is added to taxable earnings
 
 #### 5.1 Selecting the correct PAYE table
 
-- **Selecting the correct PAYE table**  -  Use the table matching the currency of pay and the pay period (monthly/annual/fortnightly/weekly/daily). USD earnings → USD table; ZWG earnings → ZWG table. Mixed-currency earners have each stream taxed under its own table. Never convert one currency to the other to "combine" income.  _(Income Tax Act [Chapter 23:06]; ZIMRA 2025 PAYE tables)_
+- **Selecting the correct PAYE table**  -  Use the table matching the currency of pay and the pay period (monthly/annual/fortnightly/weekly/daily). USD earnings → USD table; ZWG earnings → ZWG table. A salary with both ZWG and USD components → USD table on the whole salary, then apportion the tax due between the currencies; never tax each stream on its own table, which applies the 0% band twice.  _(Income Tax Act [Chapter 23:06]; ZIMRA 2025 PAYE tables; ZIMRA PAYE page)_
 
 #### 5.2 The "deduct" method
 
@@ -414,7 +414,7 @@ Taxable portion = USD 0.00. Any bonus ABOVE USD 700 is added to taxable earnings
 
 #### 5.8 Presumptive tax (informal sector -- non-professionals)
 
-- **Presumptive tax details**  -  Targets informal businesses with turnover generally below USD 60,000/year. Examples cited: restaurant/bottle-store operators USD 300/quarter; cottage-industry operators USD 300/quarter. Cross-border traders: presumptive tax = 10% of the Value for Duty Purposes (VDP) of commercial goods imported. A 2026 budget proposal referenced a 5%-of-turnover "other trades" rate -- not confirmed as enacted for 2025 `[RESEARCH GAP -- reviewer to confirm]`.  _(ZIMRA presumptive-tax notices; figures from research summaries -- `[RESEARCH GAP -- reviewer to confirm the full current schedule against the latest ZIMRA presumptive-tax public notice]`)_
+- **Presumptive tax details**  -  Targets informal businesses with turnover generally below USD 60,000/year. Statutory rates in Finance Act s.22C(1), which Finance Act 7 of 2025 s.7 left in force for these classes: restaurant or bottle-store operators **US$35 a month** (para (l)); cottage-industry operators **US$100 a month** (para (m)); informal cross-border traders **20% of the Value for Duty Purposes (VDP)** of commercial goods imported (para (k)). Tax is paid in local currency at the official selling rate on the day of payment (s.22C(2)). A 2026 budget proposal referenced a 5%-of-turnover "other trades" rate; Finance Act 7 of 2025 s.7 does not add it `[RESEARCH GAP -- reviewer to confirm no later instrument adds it]`.  _(Finance Act [Chapter 23:04] s.22C, ZIMRA consolidation updated to 1 Dec 2024; Finance Act 7 of 2025 s.7)_
 
 #### 5.9 The wholly-and-exclusively test (deductions)
 
@@ -770,5 +770,6 @@ expected:
 | Income Tax Act [Chapter 23:06], ZIMRA consolidation updated to 1 Dec 2024. Read for the Third Schedule para 4(o): a bonus or performance-related award is exempt to the extent that the bonuses in the year of assessment do not exceed "US$700 or the local currency equivalent thereof at the time of payment"; substituted by the Finance Act 2024 gazetted 28 Oct 2024 | https://www.zimra.co.zw/legislation/17-acts?download=4233:income-tax-act-updated-to-1st-dec-2024 | 2026-11-14 |
 | Finance Act [Chapter 23:04], ZIMRA consolidation updated to 1 Dec 2024. Read for ss.10, 11 and 13 and the Schedule to Chapter I Part I: "Credit for taxpayers over 55 years of age $ 900", "Blind persons credit $ 900", "Mentally or physically disabled persons credit $ 900" (amounts in US$), and s.5(2)(d) (credits not above the tax chargeable) | https://www.zimra.co.zw/legislation/17-acts?download=4235:finance-act-updated-to-1st-dec-2024 | 2026-11-14 |
 | ZIMRA PAYE Explained page. Read for its Performance Award paragraph, which still says USD 400 from 1 January 2024 (older than the Finance Act 2024 text above, so not followed) | https://www.zimra.co.zw/domestic-taxes/individual/paye-explained | 2026-11-14 |
+| ZIMRA Pay As You Earn (PAYE) page: "NB for salaries with both ZWG and USD components use the USD tax tables and apportion the tax due accordingly" | https://www.zimra.co.zw/domestic-taxes/individual/pay-as-you-earn-paye | 2026-11-26 |
 
 Not yet confirmed: payment days of QPDs 1 to 3; any 2026 ZIMRA PAYE table; income tax late filing and late payment penalties, including the 100% figure in the earlier version; the text of SI 81 of 2025 (dates come from ZIMRA notices citing it); ZWG conversion rules; NSSA POBS insurable earnings ceiling (USD 700 a month in the earlier version): nssa.org.zw blocks scripted access and no official copy of the statutory instrument was opened (S.I. 99 of 2024, amending s.11(2) of S.I. 393 of 1993, is the place to check); Example 6 and its test case use it only as an assumed figure.
