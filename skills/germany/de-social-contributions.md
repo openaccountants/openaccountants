@@ -292,7 +292,7 @@ Registration windows: pension registration follows the group-specific § 190a SG
 | Other insurance (unemployment, accident, supplementary health) | Within one yearly cap shared with health and care, so nothing if basic health and care already exceed it | EUR 2,800 |
 | The same cap where health costs are partly paid without own expense, or tax-free payments under § 3 no. 9, 14, 57 or 62 EStG are made (no. 57 is the KSK's share, so KSK members) | | EUR 1,900 |
 
-For the owner's own accident insurance, professional-fund/Rürup contract eligibility and mixed tax/subsidy situations, no individual deduction outcome is supplied. Check this point with one of our partner accountants.
+For the owner's own accident insurance, professional-fund/Rürup contract eligibility and mixed tax/subsidy situations, no individual deduction outcome is supplied. For historical 2025 pension figures, the unreduced statutory cap is derived as EUR 118,800 × 24.7% = EUR 29,343.60, rounded up to EUR 29,344 single / EUR 58,688 for joint spouses; the statutory reductions and the actual qualifying contribution still apply. Check this point with one of our partner accountants.
 
 **Bank debits.**
 
@@ -384,13 +384,13 @@ These are comparisons with earlier versions, not additional proof of a person's 
 **Eight original 2025 tests.** These retain their original amounts and year. Full-month GKV tests assume no other assessable income, no special base, effective child evidence and the stated fund rate, not an inferred rate from the bank.
 
 1. Income EUR 3,500/month, no sick pay, fund rate 2.5%, childless age 35: health EUR 577.50 + care EUR 147.00 = EUR 724.50/month; twelve identical months give EUR 8,694.00. Actual annual deduction still uses the certificates.
-2. Minimum base EUR 1,248.33, fund rate 2.5%, one child, age 30, no sick pay: health EUR 205.97 + care EUR 44.94 = EUR 250.91.
-3. Income EUR 9,000/month, sick pay, fund rate 2.5%, two qualifying children under 25: capped base EUR 5,512.50; health EUR 942.64 + care EUR 184.67 = EUR 1,127.31.
+2. Original income EUR 800/month, one child, age 30, no sick pay, fund rate 2.5%: minimum base EUR 1,248.33; health EUR 205.97 + care EUR 44.94 = EUR 250.91/month; twelve identical months give EUR 3,010.92.
+3. Consultant age 45, income EUR 9,000/month, sick pay, fund rate 2.5%, two qualifying children under 25: capped base EUR 5,512.50; health EUR 942.64 + care EUR 184.67 = EUR 1,127.31/month; twelve identical months give EUR 13,527.72.
 4. Admitted KSK member, income EUR 30,000/year, childless age 28: with a separately assumed sick-pay claim and 2.5% fund rate, health share EUR 213.75 + pension EUR 232.50 + care EUR 60.00 = EUR 506.25. The old EUR 105.00 full-care charge and EUR 551.25 total were wrong; without the added health premises no total is usable. Check this point with one of our partner accountants.
-5. Craftsperson five years in, income EUR 4,500/month: EUR 837.00 pension is conditional on compulsory coverage, no exemption and the insurer accepting EUR 4,500 as the adjusted contribution base. Raw profit alone does not establish that base; the standard contribution is a different route. Check this point with one of our partner accountants.
-6. Full-time employee plus EUR 8,000 annual freelance income: no separate contribution on that profit only for the compulsorily GKV-insured main-job case without pension/Versorgungsbezüge described above. Main occupation and the actual insurance status remain to be established. Check this point with one of our partner accountants.
-7. Paid health EUR 10,500 + care EUR 2,400 + pension EUR 5,580: arithmetic sum EUR 18,480.00. This is not a cleared deduction: basic-cover eligibility, sick-pay reduction, subsidies, refunds and applicable pension cap must first be established. Check this point with one of our partner accountants.
-8. Agency paid freelancers EUR 15,000 in 2025: at the proven 2025 rate of 5.0%, arithmetic is EUR 750. Liability still requires payments for qualifying artistic/publicist work under the 2025 rules; the original word “freelancers” alone does not establish it. Check this point with one of our partner accountants.
+5. Master electrician registered in the Handwerksrolle, five years in, income EUR 4,500/month: EUR 837.00 pension is conditional on compulsory coverage, no exemption and the insurer accepting EUR 4,500 as the adjusted contribution base. Twelve identical EUR 837.00 payments total EUR 10,044.00. Raw profit alone does not establish that base; the standard contribution is a different route. Check this point with one of our partner accountants.
+6. Full-time employee, EUR 55,000 annual salary with employer contributions, plus EUR 8,000 annual freelance income: no separate contribution on that profit only for the compulsorily GKV-insured main-job case without pension/Versorgungsbezüge described above. Main occupation and the actual insurance status remain to be established. Check this point with one of our partner accountants.
+7. Single self-employed filer paid basic GKV EUR 10,500 + care EUR 2,400 + voluntary pension EUR 5,580 in 2025: arithmetic sum EUR 18,480.00. This is not a cleared deduction: basic-cover eligibility, sick-pay reduction, subsidies, refunds and applicable pension cap must first be established. Check this point with one of our partner accountants.
+8. Marketing agency paid freelance designers and copywriters EUR 15,000 in 2025: at the proven 2025 rate of 5.0%, arithmetic is EUR 750. Liability still requires payments for qualifying artistic/publicist work under the 2025 rules; retain the designers/copywriters facts and establish that these were qualifying fees, not every payment to any freelancer. Reporting is by 31 March 2026 under § 27 KSVG. Check this point with one of our partner accountants.
 
 **Original six 2025 bank lines (amounts and dates unchanged):**
 
@@ -404,6 +404,8 @@ These are comparisons with earlier versions, not additional proof of a person's 
 ```
 
 The two TK amounts match test 1 arithmetically but do not establish cover, fund rate, contribution month, due date or tax deduction. The KSK debit EUR 551.25 cannot be reconstructed from the stipulated test 4; obtain its notice. The BG EUR 85.00 is not evidence of a typical charge or a personal deduction. The pension EUR 500.00 needs a certificate; the old EUR 100.07 minimum was not a proven 2025 minimum. The Finanzamt line is a tax-payment candidate, not social insurance. Check this point with one of our partner accountants.
+
+Historical specialist inputs also remain non-usable: more than 5/6 of income from one client and no staff is not a standalone employment-status or pension decision; 216 compulsory months/18 years does not prove that a craft exemption clock starts with Handwerksrolle entry; an architect doing artistic work needs the KSK/Versorgungswerk overlap decided; the former office-accident EUR 5–15 monthly range is not a tariff. Check this point with one of our partner accountants.
 
 The later six 2026 pattern examples also remain identification candidates only: TK KV and PV on 15 April for March; KSK on 7 April for March; VBG on 15 May for 2025; voluntary pension on 27 February; Finanzamt on 10 March for Q1. Each originally used `-[amount]`, not a numeric contribution. No timing or amount is cleared from those patterns. Check this point with one of our partner accountants.
 
