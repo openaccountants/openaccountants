@@ -245,7 +245,7 @@ expected:
 
 - **EC1:** Employment pensionable earnings **$50,000**, CPP already withheld; self-employed profit unspecified. Use Schedule 8 Parts 3/5; no payable can be computed without the remaining inputs.
 - **EC2:** Age **72** throughout 2025: no CPP contributory months (including CPP2). Under-18 and age-transition/election cases need the applicable months, not the full-year shortcut.
-- **EC3:** Net income **$210,000**: BPA **$15,452.46**, ordinary BPA credit **$2,240.61**. Compute before rounding; the old $15,453/$2,241 figures were premature rounding.
+- **EC3:** Net income **$210,000**: BPA **$15,452.47**, ordinary BPA credit **$2,240.61**. Compute before rounding; the old $15,453/$2,241 figures were premature rounding.
 - **EC4:** Business loss **−$15,000**, employment **$60,000**: assuming a genuine deductible business loss and no limitation, income subtotal **$45,000 before other deductions/adjustments**; no positive self-employed CPP base. Do not call that subtotal final net income without employee CPP and other deductions. Loss characterization, restricted losses and historical 3-year/20-year carryback/carryforward statement: Check this point with one of our partner accountants.
 - **EC5:** No instalments, prior-year tax owing **$12,000**, current balance **$15,000**. These descriptions alone do not establish statutory net tax owing or CPP/EI instalment bases. Hold the old “four $3,000 payments plus interest” conclusion; reminders, dates and rates are missing. Check this point with one of our partner accountants.
 - **EC6:** New EI opt-in followed by an immediate sickness claim: the 12-month agreement condition is not met. Other benefit/termination/refund outcomes are not decided. Check this point with one of our partner accountants.
@@ -268,7 +268,7 @@ steps:
   cpp: base + first + second
   deduction: base / 2 + first + second
 expected:
-  bpa: 15452.46
+  bpa: 15452.47
   bpa_credit: 2240.61
   second: 536
   cpp: 8604.20
