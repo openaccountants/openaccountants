@@ -34,10 +34,10 @@ Residents entitled to the full tax-free threshold. Medicare levy is separate.
 | Taxable income | 2025-26 rate | 2026-27 rate | Source |
 | --- | --- | --- | --- |
 | $0 -- $18,200 | 0% | 0% | [Income Tax Rates Act 1986, s 3 and Schedule 7 Part I clause 1](https://www.legislation.gov.au/C2004A03348/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
-| Over $18,200 to $45,000 | 16% | **15%** | [Income Tax Rates Act 1986, s 3 and Schedule 7 Part I clause 1](https://www.legislation.gov.au/C2004A03348/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
-| Over $45,000 to $135,000 | 30% | 30% | [Income Tax Rates Act 1986, s 3 and Schedule 7 Part I clause 1](https://www.legislation.gov.au/C2004A03348/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
-| Over $135,000 to $190,000 | 37% | 37% | [Income Tax Rates Act 1986, s 3 and Schedule 7 Part I clause 1](https://www.legislation.gov.au/C2004A03348/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
-| Over $190,000 | 45% | 45% | [Income Tax Rates Act 1986, s 3 and Schedule 7 Part I clause 1](https://www.legislation.gov.au/C2004A03348/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
+| $18,201 -- $45,000 | 16% | **15%** | [Income Tax Rates Act 1986, s 3 and Schedule 7 Part I clause 1](https://www.legislation.gov.au/C2004A03348/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html). Band start derived: the Act says "exceeds" the previous band top |
+| $45,001 -- $135,000 | 30% | 30% | [Income Tax Rates Act 1986, s 3 and Schedule 7 Part I clause 1](https://www.legislation.gov.au/C2004A03348/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html). Band start derived: the Act says "exceeds" the previous band top |
+| $135,001 -- $190,000 | 37% | 37% | [Income Tax Rates Act 1986, s 3 and Schedule 7 Part I clause 1](https://www.legislation.gov.au/C2004A03348/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html). Band start derived: the Act says "exceeds" the previous band top |
+| $190,001+ | 45% | 45% | [Income Tax Rates Act 1986, s 3 and Schedule 7 Part I clause 1](https://www.legislation.gov.au/C2004A03348/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html). Band start derived: the Act says "exceeds" the previous band top |
 
 - **Tax on full bands and rate change** -- Tax on full bands: 2025-26 -- $4,288 at $45,000, $31,288 at $135,000, $51,638 at $190,000. 2026-27 -- $4,020 / $31,020 / $51,370. The 15% rate falls to **14% from 1 July 2027**.  _(ATO QC 73320; Treasury Laws Amendment (More Cost of Living Relief) Act 2025)_
 - **Non-residents** -- **Non-residents:** no tax-free threshold; 30% from $0 to $135,000 (2026-27), then resident bands. No Medicare levy.  _(ATO QC 73320)_
