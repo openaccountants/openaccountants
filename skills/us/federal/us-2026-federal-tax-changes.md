@@ -1,270 +1,132 @@
 ---
 name: us-2026-federal-tax-changes
-description: What changed in US federal tax for tax year 2026 under the One Big Beautiful Bill Act (Public Law 119-21) and the 2026 inflation adjustments (Rev. Proc. 2025-32, Notice 2025-67, Pub. 15-B), sorted by who is affected - no tax on tips and overtime, the $6,000 senior deduction, car loan interest, the $40,400 SALT cap and its phase-down above $505,000, the $2,200 child tax credit, Trump accounts, the dependent care credit, bonus depreciation at 100 percent, section 174A research expensing, QBI, the $2,000 Form 1099 threshold, QSBS, Opportunity Zones 2.0, the charitable floor and non-itemizer deduction, the 2/37 itemized limit, the $15,000,000 estate exclusion, with a 2026 planning checklist. Trigger on "2026 tax changes", "One Big Beautiful Bill", "OBBBA", "what's new for 2026", "new tax law". Federal only.
-version: "3.0"
+description: "US federal tax changes for tax year 2026 under Public Law 119-21: individual deductions, family benefits, business expensing, QBI, information reporting, SALT, charity, estate and energy changes, with two recomputing planning cases. Federal only; specialist boundaries are explicit. Trigger on 2026 tax changes, One Big Beautiful Bill, OBBBA, or new tax law."
+version: "3.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: situation-rules
 ---
 
+
 # What changed in US federal tax for 2026
 
-> **Source-cited draft.** Built from Public Law 119-21 (the One Big Beautiful Bill Act, approved 4 July 2025), Rev. Proc. 2025-32, Notice 2025-67, Rev. Proc. 2025-19, IRS Pub. 15-B (2026), Notice 2026-10, the IRS standard mileage rates page and 26 U.S.C. 63, 163 and 1400Z-2, read on 2026-11-13. Every figure that also sits in the OpenAccountants federal figures library is stated exactly as the library holds it. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
+**Answer first.** Public Law 119-21 extends several federal provisions and introduces temporary deductions and new limits. Use the 2026 amounts and conditions below; removal of a sunset does not freeze indexed dollar amounts. This is a federal changes checklist, not a complete return computation.
 
-**Answer first.** For 2026 the 2018 to 2025 rate structure, standard deduction, AMT exemption, QBI deduction, estate exclusion and child tax credit are permanent. New or changed for 2026: the standard deduction is **USD 32,200** joint, **USD 16,100** single, **USD 24,150** head of household; the SALT cap is **USD 40,400**, cut by 30 percent of MAGI above **USD 505,000** but never below USD 10,000; a senior aged 65 or over gets an extra **USD 6,000** (2025 to 2028); tips (up to **USD 25,000**) and the overtime premium (up to **USD 12,500**, **USD 25,000** joint) are deductible for 2025 to 2028; car loan interest up to **USD 10,000**; the child tax credit is **USD 2,200** (**USD 1,700** refundable); itemizers lose the first **0.5 percent** of the contribution base on charity and non-itemizers may deduct **USD 1,000** (**USD 2,000** joint) of cash gifts; top-bracket itemized deductions are cut by **2/37**; the AMT exemption phases out at 50 percent; bonus depreciation is **100 percent**; the Form 1099-NEC and 1099-MISC threshold is **USD 2,000**; the estate and gift exclusion is **USD 15,000,000**.
+## Scope
 
-## Scope and who this is for
-
-In scope: anyone preparing or planning a 2026 federal return (individuals, employees, seniors, families, business owners and the self-employed, real estate investors, founders and investors, givers and estates, high earners in high-tax states) who needs one list of what is different and what to do about it. Many of the new deductions are temporary: each rule names its years.
-
-This skill gives one paragraph per change and links to the skill that owns the method:
-
-| Topic | Owning skill |
-| --- | --- |
-| Tips, overtime, senior and car loan deductions in full | `us-new-deductions-tips-overtime-senior-car-loan` |
-| Child tax credit and earned income credit | `us-child-tax-credit-and-eitc` |
-| 529 plans and Trump accounts | `us-529-and-trump-accounts` |
-| Education credits (new SSN rule for 2026) | `us-education-credits-8863` |
-| Charitable giving after the Act | `us-charitable-giving-strategies` |
-| QBI | `us-qbi-deduction` |
-| Section 174A research expensing | `us-r-and-d-section-174-and-41` |
-| Section 179 and bonus depreciation | `us-section-179-and-bonus-depreciation` |
-| Form 1099-NEC and 1099-K | `us-1099-nec-issuance`, `us-1099-k-and-payment-processors` |
-| QSBS | `us-section-1202-qsbs` |
-| Opportunity Zones | `us-opportunity-zones` |
-| Estate and gift | `us-estate-gift-706-709` |
-| Retirement plans | `us-secure-2-and-retirement-updates`, `us-self-employed-retirement` |
-| State conformity and pass-through entity tax | `us-state-bonus-depreciation-conformity-matrix`, `us-pte-state-matrix` |
-
-State tax is out of scope: states decide for themselves whether to follow these rules.
+For individuals, employees, seniors, families, business owners, rental owners, founders, investors and estates planning a 2026 federal return. “Permanent” below means the Act removed a scheduled sunset; it does not promise that Congress cannot change the law. State conformity is a separate question. Circular 230 disclosure: this is an educational planning reference. Apply the actual facts before relying on any outcome; no missing eligibility fact is assumed.
 
 ## Ask the client first
 
-1. **Married, and filing jointly for 2026?** Several new deductions need a joint return.
-2. **Expected 2026 MAGI,** and how near it is to the thresholds below.
-3. **Did you or your spouse turn 65 by 31 December 2026?**
-4. **Do you receive tips or overtime,** and does your employer report them separately?
-5. **Did you buy a new vehicle on a loan after 31 December 2024,** and where was it assembled?
-6. **Do you own a business, rental property or founder shares,** and when were the assets or shares acquired?
+Establish residence and filing status, both spouses' ages, dependency status, estimated income and exclusions, valid SSNs, and whether the taxpayer itemizes. Obtain employer tip/overtime statements; loan, VIN and assembly records; business asset contracts and in-service dates; research expenditure years; share acquisition/issue dates; and Opportunity Zone investment dates. Identify all roles that apply. Do not assume joint filing, use last year's AGI as current MAGI, or assign an undocumented acquisition date.
 
 ## The method, step by step
 
-### Rates, bands and thresholds
+### Everyone: indexed amounts
 
-| Item | Amount, 2026 | Source |
+The Act removes the rate-structure, standard-deduction and increased-AMT-exemption sunsets ([Act §§70101–70102, 70107](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)). The following amounts apply in 2026, not forever.
+
+| Item | 2026 amount and operative boundary | Official source |
 | --- | --- | --- |
-| Standard deduction, married filing jointly and surviving spouses | USD 32,200 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Standard deduction, head of household | USD 24,150 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Standard deduction, single and married filing separately | USD 16,100 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Additional standard deduction, aged 65 or blind, married | USD 1,650 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Additional standard deduction, aged 65 or blind, unmarried | USD 2,050 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Top rate (seven rates made permanent) | 37% | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| 37% band starts, married filing jointly | USD 768,700 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| 37% band starts, single and head of household | USD 640,600 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| 37% band starts, married filing separately | USD 384,350 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| AMT exemption, married filing jointly | USD 140,200 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| AMT exemption, unmarried | USD 90,100 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| AMT exemption phase-out starts, joint (fully phased out at USD 1,280,400) | USD 1,000,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| AMT exemption phase-out starts, unmarried (fully phased out at USD 680,200) | USD 500,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| AMT exemption phase-out rate, from 2026 | 50 percent | [Public Law 119-21, section 70107](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Tips deduction cap, per return, 2025 to 2028 | USD 25,000 | [Public Law 119-21, section 70201](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Tips and overtime: phase-out starts, MAGI, other than joint | USD 150,000 | [Public Law 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Tips and overtime: phase-out starts, MAGI, joint | USD 300,000 | [Public Law 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Tips and overtime: reduction per USD 1,000 of MAGI over the threshold | USD 100 | [Public Law 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Overtime deduction cap, per return | USD 12,500 | [Public Law 119-21, section 70202](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Overtime deduction cap, joint return | USD 25,000 | [Public Law 119-21, section 70202](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Tips and overtime: no deduction for any taxable year beginning after | December 31, 2028 | [Public Law 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Car loan interest cap per year, 2025 to 2028 | USD 10,000 | [Public Law 119-21, section 70203](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Car loan: phase-out starts, MAGI (USD 200,000 joint) | USD 100,000 | [Public Law 119-21, section 70203](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Car loan: reduction per USD 1,000 (or part) of MAGI over the threshold | USD 200 | [Public Law 119-21, section 70203](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Senior deduction per qualified individual, 2025 to 2028 | USD 6,000 | [Public Law 119-21, section 70103](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Senior deduction phase-out rate | 6 percent | [Public Law 119-21, section 70103](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Senior deduction phase-out starts, MAGI (USD 150,000 joint) | USD 75,000 | [Public Law 119-21, section 70103](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Dependent care assistance exclusion (USD 3,750 married filing separately) | USD 7,500 | [IRS Pub. 15-B (2026)](https://www.irs.gov/pub/irs-pdf/p15b.pdf) |
-| Educational assistance exclusion (includes student loan payments) | USD 5,250 | [IRS Pub. 15-B (2026)](https://www.irs.gov/pub/irs-pdf/p15b.pdf) |
-| Health FSA salary-reduction limit | USD 3,400 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Qualified transportation fringe, monthly (transit, and separately parking) | USD 340 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| 401(k), 403(b) and TSP elective deferral limit | USD 24,500 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
-| Catch-up, age 50 or over | USD 8,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
-| Catch-up for those who attain age 60, 61, 62 or 63 in 2026 | USD 11,250 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
-| Roth catch-up wage threshold (2025 FICA wages), used for 2026 catch-ups | USD 150,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
-| IRA contribution limit | USD 7,500 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
-| IRA catch-up, age 50 | USD 1,100 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
-| HSA limit, self-only HDHP coverage | USD 4,400 | [Rev. Proc. 2025-19](https://www.irs.gov/pub/irs-drop/rp-25-19.pdf) |
-| HSA limit, family HDHP coverage | USD 8,750 | [Rev. Proc. 2025-19](https://www.irs.gov/pub/irs-drop/rp-25-19.pdf) |
-| Child tax credit, maximum per qualifying child | USD 2,200 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Child tax credit, refundable part per child | USD 1,700 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Adoption credit, maximum (and the special needs amount) | USD 17,670 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Adoption credit, refundable part | USD 5,120 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Adoption credit phase-out starts, modified AGI | USD 265,080 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Trump account: yearly cap on ordinary contributions before the year the child turns 18 | USD 5,000 | [Public Law 119-21, section 70204](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Trump account: employer contribution excluded from the employee's income | USD 2,500 | [Public Law 119-21, section 70204](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Trump account pilot payment per eligible child born 2025 to 2028 (section 6434) | USD 1,000 | [Public Law 119-21, section 70204](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Dependent care credit: starting percentage | 50 percent | [Public Law 119-21, section 70405](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Dependent care credit: first reduction, 1 point per USD 2,000 of AGI above | USD 15,000 | [Public Law 119-21, section 70405](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Dependent care credit: floor after the first reduction | 35 percent | [Public Law 119-21, section 70405](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Dependent care credit: second reduction, 1 point per USD 2,000 (USD 4,000 joint) of AGI above (USD 150,000 joint) | USD 75,000 | [Public Law 119-21, section 70405](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Dependent care credit: floor after the second reduction | 20 percent | [Public Law 119-21, section 70405](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| 529 elementary and secondary school costs, yearly limit per beneficiary | USD 20,000 | [Public Law 119-21, section 70413(b)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Kiddie tax: amount that reduces net unearned income | USD 1,350 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Earned income credit, maximum with three or more children | USD 8,231 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Earned income credit, investment income limit | USD 12,200 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Bonus depreciation rate, property acquired after 19 January 2025 | 100 percent | [Public Law 119-21, section 70301](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Bonus depreciation: property acquired after (binding-contract date) | January 19, 2025 | [Public Law 119-21, section 70301](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Transition election, first taxable year ending after 19 January 2025 (60 percent for longer production period property and certain aircraft) | 40 percent | [Public Law 119-21, section 70301](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Section 174A: shortest amortisation period if the taxpayer elects to capitalise | 60 months | [Public Law 119-21, section 70302](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Section 179 limit | USD 2,560,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Section 179 phase-out starts (cost of property placed in service) | USD 4,090,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Section 179 cap on a sport utility vehicle | USD 32,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| QBI threshold, married filing jointly (phase-in ends USD 553,500) | USD 403,500 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| QBI threshold, all other returns (phase-in ends USD 276,750) | USD 201,750 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| QBI phase-in range from 2026, other than joint (USD 150,000 joint) | USD 75,000 | [Public Law 119-21, section 70105](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| QBI minimum deduction | USD 400 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Active QBI needed for the minimum deduction | USD 1,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Cash method and other small business gross receipts test (section 448(c)) | USD 32,000,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Form 1099-NEC and 1099-MISC base threshold, payments after 31 December 2025 | USD 2,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Form 1099-K: payments must exceed (and more than 200 transactions) | USD 20,000 | [Public Law 119-21, section 70432](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Form 1099-K: number of transactions must exceed | 200 | [Public Law 119-21, section 70432](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Excess business loss threshold, other than joint | USD 256,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Excess business loss threshold, joint | USD 512,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Business mileage rate, 1 January to 30 June 2026 | 72.5 cents | [Notice 2026-10](https://www.irs.gov/pub/irs-drop/n-26-10.pdf) |
-| Business mileage rate, 1 July to 31 December 2026 | 76 cents | [IRS standard mileage rates](https://www.irs.gov/tax-professionals/standard-mileage-rates) |
-| Charitable mileage rate, all of 2026 | 14 cents | [Notice 2026-10](https://www.irs.gov/pub/irs-drop/n-26-10.pdf) |
-| QSBS per-issuer cap, stock acquired after 4 July 2025 | USD 15,000,000 | [Public Law 119-21, section 70431](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| QSBS per-issuer cap, stock acquired on or before 4 July 2025 | USD 10,000,000 | [Public Law 119-21, section 70431](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| QSBS exclusion, new stock held 3 years / 4 years / 5 years or more | 50% / 75% / 100% | [Public Law 119-21, section 70431](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| QSBS gross assets limit, stock issued after enactment | USD 75,000,000 | [Public Law 119-21, section 70431](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| OZ 2.0: applies to amounts invested after | December 31, 2026 | [Public Law 119-21, section 70421](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| OZ 2.0: basis increase after 5 years (30 percent for a qualified rural opportunity fund) | 10 percent | [Public Law 119-21, section 70421](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| OZ 2.0: first decennial determination date for new zones | July 1, 2026 | [Public Law 119-21, section 70421](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Non-itemizer charitable deduction, from 2026 (USD 2,000 joint) | USD 1,000 | [Public Law 119-21, section 70424](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Floor for individuals who itemize, from 2026 | 0.5 percent | [Public Law 119-21, section 70425](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Cash gifts to public charities, limit (permanent) | 60 percent | [Public Law 119-21, section 70425](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Corporate charitable floor, from 2026 | 1 percent | [Public Law 119-21, section 70426](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Corporate charitable ceiling, from 2026 | 10 percent | [Public Law 119-21, section 70426](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Itemized deduction reduction for the 37% bracket, from 2026 | 2/37 | [Public Law 119-21, section 70111](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Estate and gift basic exclusion amount, 2026 | USD 15,000,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Annual gift exclusion, per donee | USD 19,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| SALT cap, taxable years beginning in 2026 (half for married filing separately) | USD 40,400 | [Public Law 119-21, section 70120](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| SALT cap, taxable years beginning in 2025 | USD 40,000 | [Public Law 119-21, section 70120](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| SALT cap, 2027 to 2029: share of the prior year's cap | 101 percent | [Public Law 119-21, section 70120](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| SALT cap from 2030 | USD 10,000 | [Public Law 119-21, section 70120](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| SALT phase-down rate on MAGI over the threshold | 30 percent | [Public Law 119-21, section 70120](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| SALT phase-down threshold, MAGI, 2026 (half for married filing separately) | USD 505,000 | [Public Law 119-21, section 70120](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| SALT floor: the phase-down cannot take the cap below | USD 10,000 | [Public Law 119-21, section 70120](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Remittance transfer excise tax, transfers after 31 December 2025 | 1 percent | [Public Law 119-21, section 70604](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Wagering losses deductible, from 2026 (up to wagering gains) | 90 percent | [Public Law 119-21, section 70114](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| Foreign earned income exclusion | USD 132,900 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Basic standard deduction | Joint/surviving spouse USD 32,200; head of household USD 24,150; single or separate USD 16,100. Dependency limits apply; no standard deduction for a nonresident alien, a change-of-accounting-period short return, or a separate filer whose spouse itemizes. | [Rev. Proc. 2025-32 §4.14](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf), [§63(c)](https://uscode.house.gov/us/usc/t26/s63/) |
+| Additional standard deduction for age or blindness | USD 1,650 per qualifying age/blindness amount; USD 2,050 for an unmarried person who is not a surviving spouse. Separate from the senior deduction. | [Rev. Proc. 2025-32 §4.14(3)](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf), [§63(f)](https://uscode.house.gov/us/usc/t26/s63/) |
+| Top ordinary rate | 37% on taxable income above USD 768,700 joint/surviving spouse; USD 640,600 single/head of household; USD 384,350 separate. These are top-band edges, not a complete tax table. | [Rev. Proc. 2025-32 §4.01](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| AMT exemption and phase-out | Joint/surviving spouse USD 140,200, phase-out USD 1,000,000–1,280,400; unmarried other than surviving spouse USD 90,100, phase-out USD 500,000–680,200. The exemption reduces by 50% of AMTI above its start, not by 50% of ordinary AGI. Separate-return AMT needs its own computation. | [Rev. Proc. 2025-32 §4.10](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf), [Act §70107](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 
-### Steps
+### Employees and seniors: temporary deductions
 
-1. **Fix the filing status,** each spouse's age at 31 December 2026, and whether a married couple will file jointly. Several new deductions apply to a married person only on a joint return.
-2. **Estimate 2026 MAGI.** The tips, overtime, car loan, senior and SALT rules each reduce the deduction as MAGI rises, each with its own threshold. For these five rules MAGI is AGI increased by any amount excluded under section 911, 931 or 933.
-3. **Read the section for each role the person holds** (an employee who also owns rental property reads both), and confirm 2026 falls inside each rule's years.
-4. **Take every indexed amount from the table above;** never carry a 2025 figure into 2026.
-5. **Collect the paperwork the new rules demand:** a Social Security number on the return for the tips, overtime, senior, child credit and education credit rules; the vehicle identification number for car loan interest; tip and overtime amounts on the statements the employer or payer furnishes.
-6. **Where an owning skill covers the topic,** use its method and stop at its edge.
+For the tips, overtime, car-interest and senior phase-outs, MAGI means AGI plus exclusions under §§911, 931 and 933. Each deduction below can apply whether or not the individual itemizes ([§63(a), (b), (d)](https://uscode.house.gov/us/usc/t26/s63/)). The 2025–2028 periods below mean taxable years beginning after 31 December 2024 and before 1 January 2029.
+
+| Change | Rule and conditions | Official source |
+| --- | --- | --- |
+| Qualified tips, 2025–2028 | Maximum USD 25,000 per return, including joint returns. Reduce the otherwise eligible capped amount, not below zero, by USD 100 per USD 1,000 of MAGI above USD 150,000 (USD 300,000 joint), using applicable IRS computation instructions for fractional increments. Cash/charged/shared tips must be voluntary, payer-determined and unnegotiated, in an eligible traditionally tipped occupation; obtain the prescribed payer statement or Form 4137 reporting. The statute excludes specified-service businesses, including an employee's employer; occupation classification and administrative transition relief are held below. For self-employed tips the deduction also cannot exceed that business's income after its other deductions. A qualifying SSN is required; a married taxpayer must file jointly. | [Act §70201, new §224](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Qualified overtime, 2025–2028 | Deduct only the FLSA §7-required premium above the regular rate, excluding qualified tips, reported on the prescribed statement. Maximum USD 12,500 (USD 25,000 joint); reduce by USD 100 per USD 1,000 of MAGI above USD 150,000 (USD 300,000 joint), not below zero, using applicable IRS computation instructions for fractional increments. Qualifying SSN required; married taxpayers must file jointly. Voluntary extra pay alone is insufficient. | [Act §70202, new §225](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Personal car-loan interest, 2025–2028 | Maximum USD 10,000, reduced not below zero by USD 200 per USD 1,000 **or part** of MAGI above USD 100,000 (USD 200,000 joint). Loan incurred after 2024 to purchase a personal-use vehicle, secured by its first lien; original use starts with the taxpayer, final assembly in the US, gross vehicle weight rating below 14,000 pounds. The qualifying road vehicle must meet §163(h)(4)(D), including vehicle type/Clean Air Act tests. VIN required on return. Exclude leases, fleet-sale loans, non-personal commercial vehicles, salvage/scrap/parts vehicles and related-party debt. Refinancing qualifies only within the refinanced balance and with the required first lien. | [Act §70203](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Senior deduction, 2025–2028 | Each qualifying individual aged at least 65 by year-end has a USD 6,000 amount, reduced not below zero by 6% of MAGI over USD 75,000 (USD 150,000 joint). On a joint return reduce **each** eligible spouse's USD 6,000 amount by that formula. Each eligible person's qualifying SSN must be on the return; married taxpayers must file jointly. This is additional to any age-based standard deduction for which the taxpayer qualifies. | [Act §70103, §151(d)(5)(C)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [§63](https://uscode.house.gov/us/usc/t26/s63/) |
+
+Use `us-new-deductions-tips-overtime-senior-car-loan` for the full method. Missing SSN, occupation, FLSA, personal-use or assembly facts are a hold, not a presumption of entitlement.
+
+### Workplace benefits and retirement
+
+| Item | 2026 boundary | Official source |
+| --- | --- | --- |
+| Dependent care assistance | Qualifying employer programme exclusion up to USD 7,500 (USD 3,750 separate), also capped by the smaller of employee/spouse earned income, with statutory student/incapacity rules and programme nondiscrimination requirements. Coordinate with the care credit; this is not an automatic cash deduction. | [Act §70404](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [Pub. 15-B, Dependent Care Assistance](https://www.irs.gov/pub/irs-pdf/p15b.pdf) |
+| Educational assistance | Qualifying employer programme benefits, including eligible employee student-loan principal/interest, share the USD 5,250 annual exclusion; the student-loan provision no longer sunsets after 2025. Programme, substantiation and nondiscrimination conditions remain. | [Act §70412](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [Pub. 15-B, Educational Assistance](https://www.irs.gov/pub/irs-pdf/p15b.pdf) |
+| Health FSA | USD 3,400 limit on voluntary employee salary reductions, not all employer-provided benefits. | [Rev. Proc. 2025-32 §4.15](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Transportation | USD 340 monthly aggregate for commuter highway vehicle/transit passes, and a separate USD 340 monthly for qualified parking. | [Rev. Proc. 2025-32 §4.16](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Employer-plan elective deferrals | USD 24,500 base limit for ordinary 401(k), 403(b) and TSP deferrals; actual plan and compensation limits still apply. This is not a SIMPLE/starter-plan limit. | [Notice 2025-67, §402(g)](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Employer-plan catch-up | If the plan permits and participant meets catch-up conditions: USD 8,000 at age 50+; USD 11,250 **instead** if attaining age 60, 61, 62 or 63 in 2026. These are not SEP/SIMPLE amounts. | [Notice 2025-67, §414(v)](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Mandatory Roth catch-up | For 2026, preceding-year FICA wages **from the employer sponsoring the plan** above USD 150,000 trigger Roth treatment of catch-up contributions to the applicable plan, excluding SEP/SIMPLE. Do not use household AGI or self-employment profit as this wage test. | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf), [§414(v)(7)](https://uscode.house.gov/us/usc/t26/s414/) |
+| IRA | Combined traditional/Roth base contribution limit USD 7,500, with USD 1,100 catch-up if age 50+; compensation, eligibility and deduction/Roth income limits still apply. Contribution capacity is not deductibility. | [Notice 2025-67, §219](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+
+Retirement method: `us-secure-2-and-retirement-updates`, `us-self-employed-retirement`. HSA eligibility and proration are held below.
 
 ## Boundary and exception table
 
-### Everyone: rates, standard deduction and AMT
-
-The rate brackets that applied from 2018 to 2025 no longer expire: section 70101 removes the end date for taxable years beginning after 31 December 2025, so 2026 uses the same structure with indexed band edges. The standard deduction and the AMT exemption are permanent at the 2026 amounts. From 2026 the AMT exemption phases out twice as fast (section 70107 substitutes "50 percent" for "25 percent"). What to do: re-run withholding or estimated payments on the 2026 bands; anyone with AMT income near the phase-out start should model AMT again (see `us-equity-compensation-restricted-stock-units-and` for ISO exercises).
-
-### Employees
-
-- **No tax on tips (2025 to 2028).** For taxable years beginning after 31 December 2024 and not after 31 December 2028. Qualified tips are cash tips (paid in cash or charged, and an employee's share under a tip-sharing arrangement) received in an occupation that customarily and regularly received tips on or before 31 December 2024, as listed by the Treasury; paid voluntarily, not negotiated, set by the payer. Tips in a specified service trade or business do not qualify (for an employee, the employer's business is tested). They must be on a statement furnished to the worker (for example Form W-2) or reported on Form 4137. The return carries the worker's SSN; a married worker must file jointly. The USD 25,000 cap is per return (the Act prints no separate joint cap), reduced by USD 100 per USD 1,000 of MAGI over USD 150,000 (USD 300,000 joint). Allowed whether or not the taxpayer itemizes (new section 63(b)(5)). A self-employed worker deducts tips only up to the net income of the business that earned them. What to do: record tips by source, check the employer reports them, file jointly if married.
-- **No tax on overtime (2025 to 2028).** Only overtime that section 7 of the Fair Labor Standards Act requires, and only the premium above the regular rate, not the whole overtime wage. Voluntary overtime beyond section 7 does not qualify, and qualified tips are excluded. It must be on a statement furnished to the worker (a new Form W-2 line under section 6051(a)(19), or the section 6041 statement). SSN on the return; married workers file jointly. Cap USD 12,500 (USD 25,000 joint), reduced by USD 100 per USD 1,000 of MAGI over the same thresholds as tips. Allowed whether or not the taxpayer itemizes (new section 63(b)(6)). What to do: track the premium separately each pay period and ask the employer how it will report it.
-- **Car loan interest (2025 to 2028).** Interest on a loan incurred after 31 December 2024 to buy a new passenger vehicle for personal use, secured by a first lien. The vehicle's original use starts with the taxpayer; a car, minivan, van, sport utility vehicle, pickup or motorcycle under 14,000 pounds gross vehicle weight rating; final assembly in the United States. Leases, fleet sales, commercial vehicles not used personally, salvage titles and vehicles bought for scrap or parts are excluded; a loan from a person related under section 267(b) or 707(b)(1) does not count; a refinancing counts only up to the balance refinanced. The VIN must be on the return. Cap USD 10,000, reduced by USD 200 per USD 1,000 (or part) of MAGI over USD 100,000 (USD 200,000 joint). Allowed whether or not the taxpayer itemizes (new section 63(b)(7)). What to do: confirm final assembly in the United States and a purchase loan, keep the lender's interest statement.
-- **Workplace benefits and retirement.** The dependent care assistance exclusion rises to USD 7,500 (section 70404). Employer student loan payments stay inside the USD 5,250 educational assistance exclusion for payments after 31 December 2025 (section 70412). Retirement limits rose under Notice 2025-67; a person whose 2025 FICA wages from the employer exceeded USD 150,000 must make 2026 catch-ups to an employer plan (other than a SEP or SIMPLE) as Roth contributions (section 414(v)(7)(A)). What to do: raise deferrals to the 2026 limits and ask payroll whether the Roth catch-up rule applies.
-
-### Seniors
-
-**Senior deduction (2025 to 2028).** A taxpayer aged 65 or over by the end of the year gets USD 6,000 for taxable years beginning after 31 December 2024 and before 1 January 2029. On a joint return each spouse aged 65 or over is a separate qualified individual. Each qualified individual's SSN must be on the return, and a married taxpayer must file jointly. It is allowed whether or not the taxpayer itemizes, because section 63 subtracts the section 151 deductions in both cases ([26 U.S.C. 63](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partI-sec63.htm)). It is reduced, not lost at once, by 6 percent of MAGI over USD 75,000 (USD 150,000 joint). It is separate from, and not the same amount as, the USD 1,650 or USD 2,050 additional standard deduction for age. What to do: test MAGI before extra IRA distributions or late-year gains; file jointly if married.
-
 ### Families
 
-- **Child tax credit (permanent).** USD 2,200 per child, USD 1,700 refundable (section 70104, taxable years beginning after 31 December 2024). No credit unless the return carries the child's SSN and the taxpayer's (one spouse on a joint return), issued before the due date to a citizen or under section 205(c)(2)(B)(i)(I) of the Social Security Act. The maximum is indexed after 2025, rounded down to the next lowest multiple of USD 100.
-- **Adoption credit.** Maximum USD 17,670, of which USD 5,120 is refundable from taxable years beginning after 31 December 2024 (section 70402); phase-out starts at USD 265,080.
-- **Trump accounts (new from 2026).** A traditional IRA (not a Roth) for a child under 18 (section 70204). No contribution may be accepted before "the date that is 12 months after the date of the enactment of this section", that is 4 July 2026. Ordinary contributions are capped at USD 5,000 a year before the year the child turns 18; an employer contribution for an employee or dependent is excluded up to USD 2,500 (new section 128). Under the pilot program a taxpayer may elect for a qualifying child born after 31 December 2024 and before 1 January 2029 who is a US citizen, and the Treasury pays USD 1,000 into the account; the election needs the child's SSN. See `us-529-and-trump-accounts`.
-- **Child and dependent care credit (from 2026).** The credit percentage starts at 50 percent, falls by 1 point for each USD 2,000 (or fraction) of AGI above USD 15,000 but not below 35 percent, then falls by 1 point for each USD 2,000 (USD 4,000 joint) above USD 75,000 (USD 150,000 joint) but not below 20 percent (section 70405).
-- **529 plans.** For distributions after 4 July 2025, more elementary and secondary costs qualify (tuition, curriculum and curricular materials, books and instructional materials, online materials, some tutoring), and the yearly limit doubles to USD 20,000 for taxable years beginning after 31 December 2025 (section 70413).
-- **Education credits.** From 2026 the claimant (one spouse on a joint return) and any dependent student need a valid SSN (section 70606); see `us-education-credits-8863`.
-- What to do: SSNs for every child before filing; open a Trump account and make the pilot election for a child born from 2025; use the higher 529 limit; claim the higher dependent care percentage if AGI is low.
+| Change | 2026 rule or boundary | Official source |
+| --- | --- | --- |
+| Child tax credit | **Conditional 2026 maximums only, subject to every eligibility, phase-out and refundable-credit limit in this row:** Child tax credit (permanent). USD 2,200 per child, USD 1,700 refundable (section 70104, taxable years beginning after 31 December 2024). **The refundable portion can be zero; these figures are ceilings.** The sunset is removed; indexed dollar amounts can change in later years. Child must meet §152(c) dependency tests and be under 17; qualifying child SSN and claimant SSN (at least one spouse joint) must satisfy §24(h)(7), including issuance by the return due date. Phase-out is USD 50 per USD 1,000 or fraction of MAGI above USD 400,000 joint / USD 200,000 otherwise. Refundable credit has earned-income/other §24(d) limits and is unavailable with a §911 election; use `us-child-tax-credit-and-eitc`. | [Act §70104](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [Rev. Proc. 2025-32 §4.05](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf), [§24](https://uscode.house.gov/us/usc/t26/s24/) |
+| Trump accounts | Non-Roth accounts under new §530A; eligible beneficiary under 18 at year-end with the required timely SSN and establishment election. No contributions before 4 July 2026. Ordinary contributions before the year of age 18 share a USD 5,000 annual limit, including employer contributions; statutory exempt contributions are outside it. Employer exclusion up to USD 2,500 per employee under a qualifying written programme. A separate USD 1,000 pilot election requires a qualifying US-citizen child born 2025–2028, timely child SSN and no prior pilot election by anyone. Establishment/contributions do not create an ordinary IRA deduction; investments and pre-18 withdrawals are restricted. Use `us-529-and-trump-accounts` before acting. | [Act §70204, §§530A, 128, 6434](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Child/dependent care credit | From 2026 the percentage starts at 50%, reduced by 1 point per USD 2,000 or fraction of AGI over USD 15,000, not below 35%; further reduce by 1 point per USD 2,000 (USD 4,000 joint) or fraction over USD 75,000 (USD 150,000 joint), not below 20%. Apply to eligible work-related care costs, not all household spending: expense cap USD 3,000 for one qualifying individual / USD 6,000 for two or more, reduced by employer assistance excluded under §129; earned-income limits, provider/individual identification and joint-filing rules apply. Separated-parent, student/incapacity and provider exceptions require the full §21 method. Check this point with one of our partner accountants. | [Act §70405](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [§21](https://uscode.house.gov/us/usc/t26/s21/) |
+| 529 school expenses | Expanded elementary/secondary categories for distributions after 4 July 2025; 2026 cap USD 20,000 per beneficiary across programmes for the year, not per account. Categories include tuition, curriculum, books/instructional and online materials, qualifying outside-home tutoring/classes, specified examination/dual-enrolment fees and licensed/accredited disability therapies. Tutoring requires an unrelated licensed teacher, eligible-institution teaching experience or subject expertise. Coordinate all distributions using `us-529-and-trump-accounts`; state treatment is separate. | [Act §70413](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [§529(e)(3)](https://uscode.house.gov/us/usc/t26/s529/) |
 
 ### Business owners and the self-employed
 
-- **Bonus depreciation at 100 percent.** No phase-down for property acquired after 19 January 2025 (section 70301); property is not acquired after the date a written binding contract was signed, so a contract signed on or before 19 January 2025 keeps the old rules. For the first taxable year ending after 19 January 2025 a taxpayer could elect 40 percent (60 percent for longer production period property and certain aircraft). Property acquired in 2026 gets 100 percent. States differ (`us-state-bonus-depreciation-conformity-matrix`); building studies in `us-federal-cost-segregation`.
-- **Qualified production property (construction beginning 2025 to 2028).** An elective 100 percent first-year allowance for the part of nonresidential real property used as an integral part of a qualified production activity in the United States (section 70307): "the manufacturing, production, or refining of a qualified product" (tangible personal property, with a substantial transformation; production covers only agricultural and chemical production). Construction must begin after 19 January 2025 and before 1 January 2029; original use must start with the taxpayer, unless the property is acquired in that window, no one used it in a qualified production activity from 1 January 2021 to 12 May 2025, the taxpayer never used it before, and the purchase meets the section 179(d) acquisition tests (section 168(n)(2)(B)); it must be placed in service before 1 January 2031. Property a lessor leases to someone else does not count for the lessor.
-- **Section 179.** Limit USD 2,560,000, phase-out from USD 4,090,000, sport utility vehicle cap USD 32,000 (see `us-section-179-and-bonus-depreciation`).
-- **Domestic research (section 174A, from 2025).** Deduct domestic research or experimental expenditure in the year paid or incurred, for taxable years beginning after 31 December 2024, or elect to capitalise and amortise over not less than 60 months (section 70302). Domestic amounts capitalised in taxable years beginning after 31 December 2021 and before 1 January 2025 may be deducted in full in the first taxable year beginning after 31 December 2024, or spread over that year and the next. A small business meeting the section 448(c) test for its first taxable year beginning after 31 December 2024 may elect to apply the rule back to taxable years beginning after 31 December 2021 by amended returns, "not later than the date that is 1 year after the date of the enactment of this Act" (by 4 July 2026). See `us-r-and-d-section-174-and-41`.
-- **Business interest (from 2025).** Section 70303 removes the words limiting section 163(j)(8)(A)(v) to years before 2022, so "any deduction allowable for depreciation, amortization, or depletion" is again added back in adjusted taxable income ([26 U.S.C. 163](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec163.htm)). A business with debt and large depreciation may deduct more interest.
-- **QBI (permanent; changes from 2026).** Section 199A no longer expires (section 70105). From 2026 the phase-in range widens to USD 75,000 (USD 150,000 joint), and a USD 400 minimum deduction applies to a taxpayer with at least USD 1,000 of QBI from active trades or businesses (material participation under section 469(h)). See `us-qbi-deduction`.
-- **Information returns.** For payments after 31 December 2025, Form 1099-NEC or 1099-MISC is needed only from USD 2,000 a payee (section 70433; `us-1099-nec-issuance`). A payment platform files Form 1099-K only if a payee's payments exceed USD 20,000 AND transactions exceed 200 (section 70432); the change is treated as included in the 2021 law, so the lower threshold never applied (`us-1099-k-and-payment-processors`).
-- **Excess business loss.** Losses above USD 256,000 (USD 512,000 joint) are not deductible in 2026; the limit is permanent for taxable years beginning after 31 December 2026 (section 70601).
-- **Energy incentives ending.** The section 179D deduction does not apply to property whose construction begins after 30 June 2026 (section 70507); the section 45L new energy efficient home credit end date moves to 30 June 2026 (section 70508).
-- **Mileage.** Two business rates: 72.5 cents to 30 June and 76 cents from 1 July 2026; split every mile by date.
-- What to do: date every business mile, time asset purchases with 100 percent bonus in mind, decide on section 174A before filing, reset the payables system to the USD 2,000 threshold for 2026 payments.
+| Change | Rule and conditions | Official source |
+| --- | --- | --- |
+| Bonus depreciation | 100% for **qualified** §168(k) property acquired after 19 January 2025 and placed in service; not every 2026 purchase or an entire building. A written binding contract entered on/before that date can keep the old acquisition rules. The first taxable year ending after that date has an elective 40% transition rate (60% for specified long-production-period property/aircraft). Apply asset eligibility and elections in `us-section-179-and-bonus-depreciation`. | [Act §70301](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Section 179 | Election for eligible purchased business property placed in service: USD 2,560,000 cap, reduced dollar for dollar by qualifying property cost above USD 4,090,000; SUV cost cap USD 32,000 where §179(b)(5) applies. Active-business taxable-income limit, business use, related-party and entity/owner aggregation rules remain; the cap alone is not the deduction. | [Rev. Proc. 2025-32 §4.24](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf), [§179](https://uscode.house.gov/us/usc/t26/s179/) |
+| Domestic research | For taxable years beginning after 2024, §174A allows domestic trade/business research expenditure as an expense; excludes foreign research, land/property acquisitions or improvements and mineral exploration under its definitions. An eligible capitalisation election permits at least 60 months' amortisation **starting when benefits are first realised**, with the return-due-date election deadline and continuing-method rules. Coordinate the research credit under §280C; use `us-r-and-d-section-174-and-41`. | [Act §70302, §174A(a)–(d)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Previously capitalised domestic research | For amounts paid/incurred in taxable years beginning in 2022–2024 and charged to capital: the election accelerates **remaining unamortised amounts**, not the original expenditure again, into the first taxable year beginning after 2024 or ratably over that year and the next. Method-change requirements apply. The separate small-business retroactive election is held below. | [Act §70302(f)(2)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Business interest | From taxable years beginning after 2024, depreciation, amortisation and depletion deductions are again disregarded in computing §163(j) adjusted taxable income. This is an ATI change, not an automatic full interest deduction; other limits, exceptions and 2026 adjustments remain. | [Act §70303](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [§163(j)(8)](https://uscode.house.gov/us/usc/t26/s163/) |
+| QBI | §199A no longer sunsets. For 2026 the wage/property and specified-service phase-in range is USD 150,000 joint and USD 75,000 otherwise. Threshold → upper edge: joint USD 403,500 → 553,500; **separate USD 201,775 → 276,775**; other USD 201,750 → 276,750. Test taxable income under §199A, not business receipts or MAGI. | [Act §70105](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [Rev. Proc. 2025-32 §4.26](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Active-QBI minimum | From 2026 the deduction is at least USD 400 if aggregate QBI from active qualified businesses is at least USD 1,000; active means material participation under §469(h). Not a universal minimum for passive income; use `us-qbi-deduction`. | [Act §70105(b)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Small-business gross receipts | §448(c)'s 2026 inflation-adjusted threshold is USD 32,000,000 **average annual receipts for the preceding three taxable years**, with aggregation, predecessor and short-year rules. It does not override the tax-shelter prohibition on the cash method or grant every small-business exception automatically. | [Rev. Proc. 2025-32 §4.30](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf), [§448](https://uscode.house.gov/us/usc/t26/s448/) |
+| Forms 1099-NEC/MISC | For 2026 payments, the base §§6041(a)/6041A service-payment threshold becomes USD 2,000 per payee per calendar year. **Not a universal exemption below USD 2,000:** actual backup withholding requires reporting regardless of the amount, and other payment categories need separate classification; distinguish payment-card/third-party settlement reporting. Use `us-1099-nec-issuance` for classification and deadlines. | [Act §70433](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [IRS instructions](https://www.irs.gov/instructions/i1099mec) |
+| Form 1099-K | The restored **third-party network** de minimis exception requires both gross payments over USD 20,000 **and** over 200 transactions. It is not the payment-card threshold and does not determine whether receipts are taxable. The Act makes restoration effective as if included in the 2021 amendment; use `us-1099-k-and-payment-processors`. | [Act §70432](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [§6050W](https://uscode.house.gov/us/usc/t26/s6050W/) |
+| Excess business loss | For noncorporate taxpayers, the 2026 §461(l) threshold is USD 256,000 (USD 512,000 joint), on aggregate business deductions against business income/gains, subject to statutory exclusions; employee wages do not offset it. Apply after passive-loss limits. Disallowed excess becomes an NOL subject to subsequent-year rules. The Act removes the sunset effective for years beginning after 2026. | [Rev. Proc. 2025-32 §4.31](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf), [§461(l)](https://uscode.house.gov/us/usc/t26/s461/), [Act §70601](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Business/charity mileage | Eligible business standard-method miles: 72.5 cents/mile for 1 January–30 June 2026; 76 cents/mile for 1 July–31 December. Split dated logs. Charity service miles: 14 cents/mile throughout 2026. The business rate does not create an ordinary employee travel deduction. | [Notice 2026-10 §3](https://www.irs.gov/pub/irs-drop/n-26-10.pdf), [IRS mileage period table](https://www.irs.gov/tax-professionals/standard-mileage-rates) |
+| Commercial-building energy deduction | §179D unavailable for property whose construction begins after 30 June 2026; an in-service date alone does not settle the cutoff. | [Act §70507](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| New energy-efficient home credit | §45L cutoff concerns qualified homes **acquired after 30 June 2026**, not merely construction beginning or ending then. | [Act §70508](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [§45L(h)](https://uscode.house.gov/us/usc/t26/s45L/) |
 
-### Real estate investors
+### Real estate, founders and investors
 
-Bonus depreciation at 100 percent applies to qualifying property acquired after 19 January 2025; which parts of a building qualify is in `us-federal-cost-segregation`. Residential rental buildings are not qualified production property (it covers only nonresidential real property in a qualified production activity, and a lessor cannot use it for property leased to others). The business interest add-back may help owners with debt whose rental activity is subject to section 163(j). Passive loss rules did not change: `us-real-estate-professional-and-short-term-rentals`. Exchanges under section 1031: `us-federal-section-1031-like-kind-exchange`. What to do: consider a cost segregation study for a building acquired after 19 January 2025, and check the state add-back.
+For building components and bonus eligibility load `us-federal-cost-segregation`; for passive loss/real-estate-professional or short-term-rental analysis load `us-real-estate-professional-and-short-term-rentals`; for exchanges load `us-federal-section-1031-like-kind-exchange`. State add-backs and entity elections use `us-state-bonus-depreciation-conformity-matrix` and `us-pte-state-matrix`. These routes supply no eligibility conclusion by themselves.
 
-### Founders and investors
+**Opportunity Zones.** Pre-2027 investments remain under the old deferral regime: inclusion occurs in the taxable year containing the earlier sale/exchange or 31 December 2026, not automatically on every investor's 2026 return if an earlier inclusion already happened ([legacy §1400Z-2(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapZ-sec1400Z-2.htm)). For investments after 31 December 2026, the new regime instead uses a five-year deferral; the five-year basis increase is 10% (30% for a qualified rural opportunity fund), with fund/zone qualification conditions. The ten-year election uses sale FMV if sold before 30 years, otherwise FMV at 30 years; new-zone decennial determination starts 1 July 2026. These future rules are not 2026-investment relief ([Act §70421(a), (c)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)). Use `us-opportunity-zones` before a transaction.
 
-- **QSBS (stock acquired after 4 July 2025).** Tiered exclusion of 50% after 3 years, 75% after 4 and 100% after 5; per-issuer cap USD 15,000,000 (USD 10,000,000 for stock acquired on or before that date); gross assets limit USD 75,000,000 (section 70431). See `us-section-1202-qsbs`.
-- **Opportunity Zones 2.0 (investments from 2027).** The new rules apply to amounts invested after 31 December 2026 (section 70421): a basis increase of 10 percent of the deferred gain after 5 years (30 percent for a qualified rural opportunity fund); held 10 years and sold before 30 years, the investor may elect basis equal to fair market value at sale; new zones follow a decennial determination date of 1 July 2026. An investment made before 2027 stays under the old rules, and its deferred gain is included in the taxable year that includes the earlier of the sale or exchange and 31 December 2026, so for most investors it lands on the **2026 return** ([26 U.S.C. 1400Z-2](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapZ-sec1400Z-2.htm)). See `us-opportunity-zones`.
-- What to do: record the acquisition date of every founder or angel share (4 July 2025 splits the rules); do not assume a 2026 fund investment gets the 2027 rules.
+### Givers, estates and high earners
 
-### Givers and estates
+| Change | Rule and conditions | Official source |
+| --- | --- | --- |
+| Non-itemizer charity | From 2026 up to USD 1,000 (USD 2,000 joint) of qualifying cash gifts to §170(b)(1)(A) organisations, excluding supporting organisations and donor-advised funds. Ordinary substantiation remains; not an itemized-deduction/AGI double deduction. | [Act §§70424–70425](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [§170(p)](https://uscode.house.gov/us/usc/t26/s170/) |
+| Itemizer charity floor | From 2026 only otherwise eligible aggregate contributions above 0.5% of contribution base are deductible. Ordering and carryforward rules matter; floor-disallowed amounts are not automatically carried forward. Contribution base is AGI computed without any NOL carryback, not taxable income. | [Act §70425(a)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [§170(b)(1)(H)](https://uscode.house.gov/us/usc/t26/s170/) |
+| Cash-gift percentage limit | The 60%-of-contribution-base cash limit for §170(b)(1)(A) organisations no longer expires. Coordinate other categories and the new floor; it is not a 60% tax credit. Use `us-charitable-giving-strategies`. | [Act §70425(b)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Estate/gift basic exclusion | USD 15,000,000 for 2026 deaths/gifts, indexed thereafter. This is the basic exclusion, not a promise of estate-tax exemption for every estate or a new amount for each gift. Apply residence/citizenship, prior taxable gifts and any portability rules in `us-estate-gift-706-709`. | [Act §70106](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), [Rev. Proc. 2025-32 §2.14](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Annual gift exclusion | 2026 first USD 19,000 per donee, excluding future-interest gifts; not a substitute for lifetime gift reporting analysis. | [Rev. Proc. 2025-32 §4.42](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| SALT cap | 2026 applicable limitation USD 40,400, reduced by 30% of MAGI over USD 505,000, not below USD 10,000. **For separate returns, apply the statutory half-cap rule**, including the floor: computed maximum USD 20,200, threshold USD 252,500 and ultimate floor USD 5,000. The separate-return formula is one-half of max(40,400 − 30% × max(MAGI − 252,500, 0), 10,000), rather than subtracting the full phase-down from a pre-halved cap. MAGI adds §§911/931/933 exclusions. For other than separate returns, 2025 cap/threshold USD 40,000/500,000; 2027–2029 each increases to 101% of the prior year's respective amount; from 2030 cap USD 10,000. The separate half-cap rule continues. | [Act §70120, §164(b)(6)–(7)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Itemized-deduction reduction | From 2026 reduce otherwise allowable itemized deductions by 2/37 of the lesser of those deductions and taxable income **before this reduction, plus those deductions**, above the taxpayer's 37% bracket start. Apply after all other itemized limits. It is not an across-the-board 2/37 reduction for every taxpayer. | [Act §70111, §68](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 
-- **Charity (from 2026).** A non-itemizer may deduct up to USD 1,000 (USD 2,000 joint) of cash gifts to a section 170(b)(1)(A) organization, not to a supporting organization or a donor-advised fund (section 70424). An itemizer deducts gifts only above 0.5 percent of the contribution base (section 70425). The 60 percent cash limit no longer expires. A corporation deducts gifts only above 1 percent of taxable income and up to 10 percent (section 70426). Method: `us-charitable-giving-strategies`.
-- **Estate and gift (from 2026).** For deaths and gifts after 31 December 2025 the basic exclusion is USD 15,000,000, indexed after that (section 70106); the annual gift exclusion is USD 19,000 per donee. See `us-estate-gift-706-709`.
-- What to do: an itemizer should bunch gifts to clear the floor; a non-itemizer keeps receipts for cash gifts; review estate plans against USD 15,000,000.
+### Other changes
 
-### High earners in high-tax states
-
-- **SALT cap (2025 to 2029, then USD 10,000 again).** USD 40,000 for 2025 and USD 40,400 for 2026 (section 70120); 101 percent of the prior year's cap for 2027 to 2029; USD 10,000 from 2030. Married filing separately gets half the cap and half the threshold. The cap is reduced by 30 percent of MAGI above USD 505,000 (2026) but never below USD 10,000: a reduction of the excess, so between the threshold and the floor each extra dollar of MAGI cuts the cap by 30 cents.
-- **Itemized deduction limit for the 37% bracket (from 2026).** Itemized deductions are reduced by 2/37 of the lesser of the itemized deductions and taxable income (plus itemized deductions) above the start of the 37% bracket (section 70111), after all other limits; in effect each deducted dollar is worth at most 35 cents.
-- **Pass-through entity tax:** `us-pte-state-matrix`.
-- What to do: check which side of USD 505,000 MAGI will fall, consider timing income and state tax payments, consider a state pass-through entity tax election, and model the 2/37 limit before relying on a large itemized deduction.
-
-### Other changes in 2026
-
-- **Remittance transfers:** from transfers after 31 December 2025 the sender pays a 1 percent excise tax, collected by the provider (section 70604); not when the funds come from an account at a covered financial institution or a US-issued debit or credit card.
-- **Gambling losses:** for taxable years beginning after 31 December 2025 the deduction is 90 percent of wagering losses, and only up to wagering gains (section 70114).
-- **Mortgage interest:** the post-2017 limits no longer expire, and from taxable years beginning after 31 December 2025 mortgage insurance premiums are again treated as interest (section 70108).
-- **Miscellaneous itemized deductions** stay disallowed after 2025, except educator expenses (section 70110).
-- **Clean vehicle credit:** none for a vehicle acquired after 30 September 2025 (section 70502).
-- **Home energy credits:** the energy efficient home improvement credit ends for property placed in service after 31 December 2025 (section 70505), and the residential clean energy credit for expenditures after 31 December 2025 (section 70506).
-
-### Defaults when a fact is missing
-
-| Missing fact | Default, and flag it |
-| --- | --- |
-| Filing status of a married client | Assume joint; flag the deductions lost on separate returns |
-| MAGI | Compute every phase-out at the client's last known AGI and flag that it moves |
-| Whether a worker's overtime is FLSA overtime | Treat as not qualifying until the employer statement shows it |
-| Vehicle assembly location | Treat car loan interest as not deductible until the VIN is checked |
-| Share acquisition dates | Treat as on or before 4 July 2025 (old QSBS rules) until documented |
-
-### Red flags to raise
-
-| Flag | Why it matters |
-| --- | --- |
-| A married couple filing separately | Loses tips, overtime, senior and education deductions and credits |
-| MAGI between USD 505,000 and USD 605,000 with high state taxes | SALT cap shrinking by 30 cents a dollar |
-| Pre-2027 Opportunity Zone investment | Deferred gain lands on the 2026 return |
-| A 2026 figure copied from a 2025 return | Every indexed amount changed |
-| Worker without an SSN valid for work | Tips, overtime, senior, child and education rules all need one |
+| Change | Operative date and boundary | Official source |
+| --- | --- | --- |
+| Remittance transfer tax | 1% on covered transfers after 2025 **funded with cash, money order, cashier's cheque or similar physical instrument**; sender pays, provider collects. Covered financial-institution account funding and US-issued debit/credit cards are exempt. Not every overseas transfer is taxable. | [Act §70604, §4475](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Wagering losses | From 2026 deduction is limited to the lesser of 90% of wagering losses and wagering gains. Statutory “losses” include otherwise deductible wagering-transaction expenses. | [Act §70114](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Miscellaneous itemized deductions | The disallowance continues after 2025; the new statutory educator-expense category is excepted. Do not infer that all employee costs qualify. Educator eligibility and expense classification: Check this point with one of our partner accountants. | [Act §70110](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Clean vehicle credit | §30D unavailable for vehicles acquired after 30 September 2025; keep acquisition and in-service dates separate. | [Act §70502](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Home improvement credit | §25C unavailable for property placed in service after 31 December 2025. | [Act §70505](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Residential clean energy | §25D unavailable for expenditures made after 31 December 2025; payment alone does not settle statutory expenditure timing. | [Act §70506](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 
 ## Worked cases
 
-**Case 1, the senior deduction in the phase-out.** A single taxpayer aged 70 has 2026 MAGI of USD 95,000. The USD 6,000 senior deduction is reduced by 6 percent of the USD 20,000 above USD 75,000, USD 1,200, leaving USD 4,800, on top of the USD 16,100 standard deduction and the USD 2,050 additional standard deduction for age. At MAGI of USD 175,000 the reduction is USD 6,000 and nothing is left.
+**Case 1, the senior deduction in the phase-out.** Assume a qualifying SSN on the return. A single taxpayer aged 70 has 2026 MAGI of USD 95,000. The USD 6,000 senior deduction is reduced by 6 percent of the USD 20,000 above USD 75,000, USD 1,200, leaving USD 4,800, assuming eligibility for the standard deduction, no dependency restriction and no other adjustments, alongside the USD 16,100 standard deduction and the USD 2,050 additional standard deduction for age. At MAGI of USD 175,000 the reduction is USD 6,000 and nothing is left.
 
 ```oa-check
 name: Senior deduction phase-out, single (2026)
@@ -273,15 +135,15 @@ inputs:
   higher_magi: 175000
 steps:
   - senior: max(6000 - 0.06 * max(magi - 75000, 0), 0)
-  - standard_total: 16100 + 2050 + senior
+  - deductions_total: 16100 + 2050 + senior
   - senior_at_higher: max(6000 - 0.06 * max(higher_magi - 75000, 0), 0)
 expected:
   senior: 4800
-  standard_total: 22950
+  deductions_total: 22950
   senior_at_higher: 0
 ```
 
-**Case 2, a decision: the SALT cap near the phase-down.** A married couple filing jointly in a high-tax state pays USD 45,000 of state income and property tax and expects 2026 MAGI of USD 600,000. The USD 40,400 cap is reduced by 30 percent of the USD 95,000 above USD 505,000, USD 28,500, to USD 11,900 (above the USD 10,000 floor), so USD 11,900 is deductible. If a bonus of USD 80,000 can be deferred to 2027, MAGI is USD 520,000, the cap is USD 40,400 minus 30 percent of USD 15,000 = USD 35,900, and USD 24,000 more SALT is deducted in 2026. Recommend testing the deferral (and a state pass-through entity tax election, outside the cap) before year end.
+**Case 2, a decision: the SALT cap near the phase-down.** A married couple filing jointly in a high-tax state pays USD 45,000 of state income and property tax and expects 2026 MAGI of USD 600,000. The USD 40,400 cap is reduced by 30 percent of the USD 95,000 above USD 505,000, USD 28,500, to USD 11,900 (above the USD 10,000 floor), so the SALT amount after this cap is USD 11,900, assuming all USD 45,000 is otherwise deductible and the couple itemizes. This is before the separate itemized-deduction limitation described above. If a bonus of USD 80,000 can be deferred to 2027, MAGI is USD 520,000, the cap is USD 40,400 minus 30 percent of USD 15,000 = USD 35,900, and USD 24,000 more SALT is deducted in 2026. These are conditional arithmetic comparisons, not permission to defer a bonus: constructive receipt, 2027 tax and any state pass-through entity election require separate advice. Check this point with one of our partner accountants.
 
 ```oa-check
 name: SALT cap phase-down, joint (2026)
@@ -305,43 +167,57 @@ expected:
 
 ## When to refuse or refer
 
-| Code | Situation | Action |
-| --- | --- | --- |
-| R-26-SALT | A request for the SALT cap for 2027, 2028 or 2029 as a dollar figure | Refuse; the Act prints only the 101 percent rule and no page read prints the yearly amounts |
-| R-26-STATE | State tax questions | Refer; states choose whether to follow these changes |
-| R-26-174A | The section 174A retroactive election and amended returns for 2022 to 2024 | Refer to an accountant with `us-r-and-d-section-174-and-41` |
-| R-26-PLAN | QSBS, estate and gift planning, pass-through entity tax elections | The owning skills and an accountant |
-| R-26-TIPLIST | Whether a specific occupation is on the Treasury list of tipped occupations | Refer; the Act leaves the list to the Treasury |
-| R-26-SSN | A taxpayer without an SSN valid for work | Refer; the tips, overtime, senior, child and education rules require one |
+Each entry below is a **non-usable hold** on the specialist outcome, not authority to claim or deny relief. Keep the underlying facts and load the named method where given.
+
+| Held point | Action |
+| --- | --- |
+| HSA eligibility, Medicare/other coverage, partial-year proration and catch-ups; former self-only/family rate-only cells are not an eligibility conclusion | Check this point with one of our partner accountants. |
+| Adoption credit eligibility, qualified/special-needs adoption, timing, refundability and phase-out; old maximum/refundable/phase-out-start cells alone did not settle entitlement | Check this point with one of our partner accountants. |
+| Education credits' 2026 SSN changes, joint spouse/student status and other eligibility: `us-education-credits-8863` | Check this point with one of our partner accountants. |
+| Kiddie-tax reduction and parent-election eligibility; a standalone indexed amount does not settle either | Check this point with one of our partner accountants. |
+| EITC child/income/SSN/residence eligibility, phase-outs and investment-income test: `us-child-tax-credit-and-eitc` | Check this point with one of our partner accountants. |
+| Qualified production property, including construction/acquisition window, original-use exception, substantial transformation, excluded areas, leased use and recapture | Check this point with one of our partner accountants. |
+| Section 174A retroactive small-business election/amended returns for 2022–2024, tax-shelter exclusion, deadlines and procedure: `us-r-and-d-section-174-and-41` | Check this point with one of our partner accountants. |
+| QSBS, including old/new acquisition dates, holding period, original issue, active business, gross assets, per-issuer dollar/ten-times-basis alternatives and prior exclusions: `us-section-1202-qsbs` | Check this point with one of our partner accountants. |
+| Corporate charity floor/ceiling, special contribution classes and carryforwards: `us-charitable-giving-strategies` | Check this point with one of our partner accountants. |
+| Mortgage-interest limits and revived mortgage-insurance treatment, including income phase-out and debt/insurance dates | Check this point with one of our partner accountants. |
+| Tipped-occupation/SSTB administrative relief; missing qualifying SSNs; state conformity/entity elections; tax-year-specific final return lines, filing/payment exceptions and foreign-earned-income eligibility | Check this point with one of our partner accountants. |
 
 ## Filing and payment
 
-These changes land on the 2026 Form 1040 and its schedules, due **15 April 2027** (15 October 2027 on extension, filing only). The tips, overtime, car loan and senior deductions are taken whether or not the taxpayer itemizes; check the final 2026 Form 1040 and its schedules for the lines. 2026 estimated tax instalments fall on 15 April, 15 June and 15 September 2026 and 15 January 2027 (`us-quarterly-estimated-tax`). Business information returns for 2026 payments use the USD 2,000 threshold and are due in early 2027.
+Use `us-federal-return-assembly` / `us-tax-workflow-base` for return preparation and filing dates; `us-quarterly-estimated-tax` for instalments and safe harbours; and the information-return methods for payer deadlines. This change list supplies no line number or automatic extension/payment conclusion. Do not label every new deduction “education” or require joint filing for car interest merely because other temporary deductions require it.
 
 ## Completion checklist
 
-- Filing status and ages fixed; joint return used where a deduction needs one.
-- MAGI estimated and tested against each phase-out (tips, overtime, car loan, senior, SALT, dependent care, education).
-- Every indexed figure taken from the 2026 table; no 2025 figure carried forward.
-- SSNs, VIN and employer statements collected.
-- Business purchases, mileage split, section 174A choice and the 1099 threshold set for 2026.
-- Pre-2027 Opportunity Zone gain included on the 2026 return.
-- Charity bunching or the non-itemizer deduction chosen; 2/37 limit modelled for top-bracket clients.
-- State conformity referred.
+- Resolve filing status, residence, dependency, itemizing and ages before computing.
+- Compute the applicable income measure; AGI, MAGI, AMTI, taxable income and employer FICA wages are different tests.
+- Verify SSNs and each income/asset/loan/share/investment date with documents.
+- Recompute temporary deductions and SALT with the correct status; separately model AMT and the itemized reduction.
+- Use dated mileage logs; distinguish expenditure, acquisition, construction and in-service cutoffs.
+- Keep every referred outcome on hold until its full method and facts are resolved.
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and passages actually read | Official URL | Read on |
 | --- | --- | --- |
-| Public Law 119-21 (One Big Beautiful Bill Act). Read for sections 70101 to 70120, 70201 to 70204, 70301 to 70307, 70402 to 70433, 70502 to 70508, 70601, 70604 and 70606, including every amount and date marked with this source above. | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
-| Rev. Proc. 2025-32 (2026 inflation adjustments). Read for the standard deductions, brackets, AMT, child and adoption credits, EITC, kiddie tax, section 179, QBI, section 448(c), FSA, transit, excess business loss, FEIE, estate and gift amounts and the USD 2,000 1099 threshold. | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
-| Notice 2025-67 (2026 retirement limits). Read for USD 24,500, USD 8,000, USD 11,250, USD 150,000, USD 7,500 and USD 1,100. | https://www.irs.gov/pub/irs-drop/n-25-67.pdf | 2026-11-13 |
-| Rev. Proc. 2025-19 (2026 HSA limits). Read for USD 4,400 and USD 8,750. | https://www.irs.gov/pub/irs-drop/rp-25-19.pdf | 2026-11-13 |
-| IRS Pub. 15-B (2026). Read for the USD 7,500 dependent care and USD 5,250 educational assistance exclusions. | https://www.irs.gov/pub/irs-pdf/p15b.pdf | 2026-11-13 |
-| Notice 2026-10. Read for 72.5 cents business and 14 cents charitable. | https://www.irs.gov/pub/irs-drop/n-26-10.pdf | 2026-11-13 |
-| IRS standard mileage rates page. Read for 76 cents from 1 July 2026. | https://www.irs.gov/tax-professionals/standard-mileage-rates | 2026-11-13 |
-| 26 U.S.C. 63 (govinfo). Read for the section 151 deductions in both itemizing and non-itemizing cases. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partI-sec63.htm | 2026-11-13 |
-| 26 U.S.C. 163 (govinfo). Read for (j)(8)(A)(v), the depreciation add-back. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec163.htm | 2026-11-13 |
-| 26 U.S.C. 1400Z-2 (govinfo). Read for inclusion of deferred gain by 31 December 2026. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapZ-sec1400Z-2.htm | 2026-11-13 |
+| Public Law 119-21: §§70101–70108, 70110–70111, 70114, 70120, 70201–70204; §§70301–70303, 70307; §§70402, 70404–70405, 70412–70413, 70421(a)–(c), 70424–70426, 70431–70433; §§70502, 70505–70508, 70601, 70604, 70606. Specialist outcomes named above remain held despite reading the amendment. | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-27 |
+| Rev. Proc. 2025-32: §2.14; §§4.01–4.06, 4.10, 4.14–4.16, 4.24, 4.26, 4.30–4.31, 4.39, 4.42; indexed amounts alone do not clear the held topics. | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-27 |
+| Notice 2025-67: employer deferral, age catch-up, Roth-wage and IRA limits; applicable existing retirement proof reused for unchanged statutory dependencies. | https://www.irs.gov/pub/irs-drop/n-25-67.pdf | 2026-11-27 |
+| Pub. 15-B (2026): dependent-care and educational-assistance caps, earned-income, programme and substantiation passages. | https://www.irs.gov/pub/irs-pdf/p15b.pdf | 2026-11-27 |
+| Notice 2026-10 §3: business/charity rates and employee-deduction boundary; current IRS table supplies the later business period. | https://www.irs.gov/pub/irs-drop/n-26-10.pdf | 2026-11-27 |
+| IRS standard mileage rates: both dated 2026 business rows and charity rates. | https://www.irs.gov/tax-professionals/standard-mileage-rates | 2026-11-27 |
+| Current §63(a)–(f): non-itemizers, standard-deduction restrictions and aged/blind amounts. | https://uscode.house.gov/us/usc/t26/s63/ | 2026-11-27 |
+| Current §24(b)–(h): qualifying child, phase-out, SSNs, refundable restrictions. | https://uscode.house.gov/us/usc/t26/s24/ | 2026-11-27 |
+| Current §21(a)–(e): credit percentage, work-related expenses, limits and exceptions. | https://uscode.house.gov/us/usc/t26/s21/ | 2026-11-27 |
+| Current §179(a)–(e): election, caps, eligibility and aggregation. | https://uscode.house.gov/us/usc/t26/s179/ | 2026-11-27 |
+| Current §448(a)–(c): cash-method exclusion, receipts/aggregation and short years. | https://uscode.house.gov/us/usc/t26/s448/ | 2026-11-27 |
+| Current §163(j)(8): depreciation/amortisation/depletion in ATI. | https://uscode.house.gov/us/usc/t26/s163/ | 2026-11-27 |
+| Current §6050W(a), (e): payment-card versus third-party-network scope. | https://uscode.house.gov/us/usc/t26/s6050W/ | 2026-11-27 |
+| Current §461(l): aggregate excess business loss, employee exclusion, NOL and passive-loss ordering. | https://uscode.house.gov/us/usc/t26/s461/ | 2026-11-27 |
+| Current §529(e)(3): annual beneficiary aggregation for school distributions. | https://uscode.house.gov/us/usc/t26/s529/ | 2026-11-27 |
+| Current §45L(h): qualified-home acquisition cutoff. | https://uscode.house.gov/us/usc/t26/s45L/ | 2026-11-27 |
+| IRS 1099-MISC/NEC instructions: payment-method and actual-backup-withholding exceptions; applicable existing NEC proof reused. | https://www.irs.gov/instructions/i1099mec | 2026-11-27 |
+| Current §170(b)(1)(H), (p), (f)(8): contribution base, non-itemizer gifts and substantiation; Act §70425 controls new floor. | https://uscode.house.gov/us/usc/t26/s170/ | 2026-11-27 |
+| Legacy §1400Z-2(b), as preserved for pre-2027 investment by Act §70421(c)(5): inclusion deadline. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapZ-sec1400Z-2.htm | 2026-11-27 |
 
-Not yet confirmed: the final 2026 Form 1040, its schedules and instructions were not yet published when read, so no line numbers are given for the new deductions; whether the senior deduction phase-out on a joint return applies to each spouse's USD 6,000 separately or to the total is not settled on the pages read, so the worked case uses a single filer.
+Not yet confirmed: the specialist outcomes explicitly held above, including final 2026 return-line allocation. No held outcome may be used as filing advice.
