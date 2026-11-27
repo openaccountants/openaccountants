@@ -29,7 +29,7 @@ Anyone with a business, employment, property or tourism activity in Seychelles. 
 | VAT | See sc-vat-gst | 2026 | https://src.gov.sc/seychelles-tax-system/ |
 | Pension Fund | See sc-payroll-social | 2026 | https://pensionfund.sc/mandatory-contribution/ |
 | Immovable Property Tax, non-Seychellois, residential | 0.50% of market value, by 31 December | 2026 | https://src.gov.sc/seychelles-tax-system/ |
-| Immovable property: failure to apply to register | SCR 50,000 commercial, industrial, multi-purpose and villas; SCR 10,000 others | 2026 | same |
+| Immovable property: failure to apply to register | SCR 50,000 commercial, industrial, multi-purpose and villas; SCR 10,000 others | 2026 | https://src.gov.sc/seychelles-tax-system/ https://archive.gazettes.africa/archive/sc/2021/sc-government-gazette-dated-2021-06-28-no-48.pdf (Official Gazette No. 48 of 28 June 2021, Notice 458 of 2021) |
 | Tourism Environmental Sustainability Levy, per person per night | Medium 25 to 50 rooms SCR 75; large 51 rooms on SCR 100; yachts and island resorts SCR 100 | 2026 | https://src.gov.sc/wp-content/uploads/2025/12/SI-90-2025-Environment-Protection-Tourism-Environmental-Sustainability-Levy-Amendment-Regulations-2025-1.pdf |
 | Small establishments, 1 to 24 rooms | Levy no longer applies from 1 Jan 2026 (S.I. 90 of 2025). Earlier rate SCR 25 | 2026 | same |
 
