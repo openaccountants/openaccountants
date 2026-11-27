@@ -74,7 +74,7 @@ Current schedule checked 26 November 2026, updated 25 September 2026. Blank chan
 
 In Great Britain, two or more persons associated for carrying on a lawful business with a view to profit subscribe to the incorporation document. Have at least two designated members; if otherwise none or only one, every member is designated ([LLPA 2000 s2](https://www.legislation.gov.uk/ukpga/2000/12/section/2); [s8](https://www.legislation.gov.uk/ukpga/2000/12/section/8)).
 
-Choose an LLP name, appropriate office and email, and an agreement covering profits, decisions and joining/leaving. Register using software or paper. Designated members handle business Self Assessment registration, records, annual accounts, confirmation statements and reporting changes. Individual members also register separately for Self Assessment; corporate-member tax is referred, not treated as an individual return ([LLP guidance](https://www.gov.uk/guidance/set-up-and-run-a-limited-liability-partnership-llp)). LLP member identity obligations are covered next.
+Choose an LLP name ending Limited Liability Partnership/LLP (or the Welsh equivalents for Wales), appropriate office and email, and an agreement covering profits, decisions and joining/leaving. Register using software or paper. Designated members handle business Self Assessment registration, records, annual accounts, confirmation statements and reporting changes. Individual members also register separately for Self Assessment; corporate-member tax is referred, not treated as an individual return ([LLP guidance](https://www.gov.uk/guidance/set-up-and-run-a-limited-liability-partnership-llp)). LLP member identity obligations are covered next.
 
 ### 5. Companies House identity verification
 
@@ -205,7 +205,7 @@ Refuse assistance with fraud, money laundering, concealing owners, using another
 
 ## Filing and payment
 
-Diary the source-backed registration and first filing dates above. Subsequent tax returns, payroll submissions, VAT returns/schemes and payments require the relevant Guide and the actual period. Penalties, strike-off, verification enforcement and late-notification remedies: Check this point with one of our partner accountants.
+Diary the source-backed registration and first filing dates above. Subsequent tax returns, payroll submissions, VAT returns/schemes and payments require the relevant Guide and the actual period. Ongoing lawful-purpose confirmation, penalties, strike-off, verification enforcement and late-notification remedies: Check this point with one of our partner accountants.
 
 ## Completion checklist
 
