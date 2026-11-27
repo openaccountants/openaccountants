@@ -5,15 +5,15 @@ description: >
 jurisdiction: TZ
 category: transfer-pricing
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.2
+last_updated: 2026-11-26
+version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
 type: situation-rules
 ---
 
-# Tanzania transfer pricing v0.2
+# Tanzania transfer pricing v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -27,7 +27,7 @@ Any arrangement between associates must be priced as if at arm's length (ITA s.3
 |---|---|---|---|---|
 | File documentation with the return | Total transactions with associates of TZS 10,000,000,000 or more | For that year of income | 2026 | [reg 7(3)(a)](https://www.tra.go.tz/images/uploads/regulations/TAX_ADMINISTRATION_%28TRANSFER_PRICING%29_REGULATION%2C_2018.pdf) |
 | Below the threshold | Prepare before the return date; produce within 30 days of request | All other persons with controlled transactions | 2026 | [reg 7(3)(b)](https://www.tra.go.tz/images/uploads/regulations/TAX_ADMINISTRATION_%28TRANSFER_PRICING%29_REGULATION%2C_2018.pdf) |
-| Documentation penalty | Not less than 3,500 currency points (TZS 52,500,000) | Breach of reg 7 | 2026 | [reg 7(4)](https://www.tra.go.tz/images/uploads/regulations/TAX_ADMINISTRATION_%28TRANSFER_PRICING%29_REGULATION%2C_2018.pdf); [TAA First Sch](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf) |
+| Documentation penalty | Not less than 3,500 currency points (TZS 70,000,000, derived: 3,500 points at TZS 20,000 a point) | Breach of reg 7 | 2026 | [reg 7(4)](https://www.tra.go.tz/images/uploads/regulations/TAX_ADMINISTRATION_%28TRANSFER_PRICING%29_REGULATION%2C_2018.pdf); [TAA Second Sch](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf); [FA 2024 s.97](https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf) |
 | Pricing penalty | Greater of 30% of the adjustment or 100% of the tax shortfall | Controlled transaction not at arm's length, from 1 July 2026 | 2026 | [FA 2026 s.77](https://www.tra.go.tz/images/uploads/acts/THE_FINANCE_ACT%2C_2026.pdf) |
 | Five or more comparables | Between the 35th percentile and the point the gazette prints as "sixty of percentile" | More than four data points. The upper figure is ambiguous in the printed text: unverified, see Sources | 2026 | [reg 6(6)](https://www.tra.go.tz/images/uploads/regulations/TAX_ADMINISTRATION_%28TRANSFER_PRICING%29_REGULATION%2C_2018.pdf) |
 | Four or fewer comparables | Average of the data | | 2026 | [reg 6(6)](https://www.tra.go.tz/images/uploads/regulations/TAX_ADMINISTRATION_%28TRANSFER_PRICING%29_REGULATION%2C_2018.pdf) |
@@ -84,7 +84,7 @@ expected:
   penalty: 120000000
 ```
 
-**Example 2: file now, or wait for the request?** A company has TZS 12,000,000,000 of associate transactions, so it must file with the return. Losses absorb most of a TZS 400,000,000 adjustment, leaving a shortfall of TZS 45,000,000. The penalty is still TZS 120,000,000, which is why a loss-making group should not treat TP as a low risk. If the file is also missing, the reg 7(4) minimum adds at least TZS 52,500,000.
+**Example 2: file now, or wait for the request?** A company has TZS 12,000,000,000 of associate transactions, so it must file with the return. Losses absorb most of a TZS 400,000,000 adjustment, leaving a shortfall of TZS 45,000,000. The penalty is still TZS 120,000,000, which is why a loss-making group should not treat TP as a low risk. If the file is also missing, the reg 7(4) minimum adds at least TZS 70,000,000.
 
 ```oa-check
 name: TP penalty, loss company with missing file
@@ -94,11 +94,11 @@ inputs:
   points: 3500
 steps:
   - penalty: max(adjustment * 0.30, shortfall)
-  - doc_min: points * 15000
+  - doc_min: points * 20000
   - total: penalty + doc_min
 expected:
   penalty: 120000000
-  total: 172500000
+  total: 190000000
 ```
 
 ## Ask the client first
@@ -119,6 +119,7 @@ All read on 2026-11-01. The Regulations are a scanned gazette copy read page by 
 | Tax Administration (Transfer Pricing) Regulations 2018, GN 166 | https://www.tra.go.tz/images/uploads/regulations/TAX_ADMINISTRATION_%28TRANSFER_PRICING%29_REGULATION%2C_2018.pdf | 2026-11-01, page |
 | Income Tax Act Cap. 332 R.E. 2023 | https://www.tra.go.tz/images/uploads/acts/The_Income_Tax_Act.pdf | 2026-11-01, ss.3, 6, 11, 12, 19, 33, 56, 86, 89, 92, 93, 98, 105 to 117, First Sch |
 | Tax Administration Act Cap. 438 R.E. 2023 | https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf | 2026-11-01, ss.86 to 90, First Sch |
+| Finance Act 2024, No. 6, s.97 (TAA Second Schedule: currency point TZS 20,000 from 1 July 2024) | https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf | 2026-11-26 |
 | Finance Act 2026, No. 2, s.77 | https://www.tra.go.tz/images/uploads/acts/THE_FINANCE_ACT%2C_2026.pdf | 2026-11-01, Parts IX, XXI, XXVI |
 | TRA Transfer Pricing Guidelines | https://www.tra.go.tz/images/uploads/regulations/Transfer_Pricing_Guideline.pdf | 2026-11-01, whole guideline headings |
 
