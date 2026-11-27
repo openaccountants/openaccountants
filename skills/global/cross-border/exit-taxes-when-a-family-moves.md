@@ -234,14 +234,17 @@ Hypothetical facts, for illustration only: one founder, single, no fiscal partne
 
 Only countries whose allowed pages print a rate that applies to the gain are computed. Germany (no full German income-tax calculation established here), Norway and Canada (gain in NOK or CAD, no exchange rate on an allowed page), Italy, Australia, the United States and the United Kingdom are not computed.
 
-| Item | Hypothetical value | Working | Source |
+**Case input:** the unrealised gain is an assumed EUR 10,000,000. This is a hypothetical input, rather than an amount supplied by an official source.
+
+The outputs below are computed from that input. The last column identifies the official rule used in the arithmetic; its source does not publish this founder’s computed output. All operative conditions and exceptions remain in the country sections above.
+
+| Calculation | Computed output | Working | Official rule used |
 | --- | --- | --- | --- |
-| Unrealised gain (hypothetical) | EUR 10,000,000 | Assumption | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
-| France: income tax part at the flat rate | EUR 1,280,000 | Gain times 12.8% | https://www.impots.gouv.fr/sites/default/files/formulaires/2074-etd/2026/2074-etd_5518.pdf |
-| France: social levies part | EUR 1,860,000 | Gain times 18.6% | https://www.impots.gouv.fr/particulier/questions/jai-realise-une-plus-value-mobiliere-comment-est-elle-imposee |
-| France: total at the overall flat rate | EUR 3,140,000 | Gain times 31.4% | https://www.impots.gouv.fr/particulier/questions/jai-realise-une-plus-value-mobiliere-comment-est-elle-imposee |
-| Netherlands: statutory-table illustration before final assessment rounding | EUR 3,095,524.67 | Printed EUR 16,866 + (EUR 10,000,000 - EUR 68,843) times 31%; no final legal rounding assumed | https://wetten.overheid.nl/BWBR0011353 |
-| Spain: savings scale on the gain | EUR 2,981,880 | Common-regime Spain only. EUR 71,880 plus the gain above EUR 300,000 times 30% | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| France: income tax part at the flat rate | EUR 1,280,000 (computed) | Gain times 12.8% | Rule: [12.8% ordinary income-tax component](https://www.impots.gouv.fr/sites/default/files/formulaires/2074-etd/2026/2074-etd_5518.pdf) |
+| France: social levies part | EUR 1,860,000 (computed) | Gain times 18.6% | Rule: [18.6% ordinary social-levy component](https://www.impots.gouv.fr/particulier/questions/jai-realise-une-plus-value-mobiliere-comment-est-elle-imposee) |
+| France: total at the overall flat rate | EUR 3,140,000 (computed) | Gain times 31.4% | Rule: [31.4% ordinary total rate](https://www.impots.gouv.fr/particulier/questions/jai-realise-une-plus-value-mobiliere-comment-est-elle-imposee) |
+| Netherlands: statutory-table illustration before final assessment rounding | EUR 3,095,524.67 (computed) | Printed EUR 16,866 + (EUR 10,000,000 - EUR 68,843) times 31%; no final legal rounding assumed | Rule: [article 2.12 printed box 2 table](https://wetten.overheid.nl/BWBR0011353) |
+| Spain: savings scale on the gain | EUR 2,981,880 (computed) | Common-regime Spain only. EUR 71,880 plus the gain above EUR 300,000 times 30% | Rule: [articles 66(1) and 76 resident state and regional savings scales](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764) |
 
 The earlier arithmetic multiplied EUR 68,843 by 24.5%, giving EUR 16,866.535 and an unrounded total EUR 3,095,525.205 (then displayed EUR 3,095,525). That multiplication is arithmetically sound but does not use the printed statutory base of EUR 16,866. The corrected illustration is EUR 0.535 lower before final legal rounding. [Wet IB 2.12](https://wetten.overheid.nl/BWBR0011353).
 
