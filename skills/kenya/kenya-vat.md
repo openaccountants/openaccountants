@@ -1,10 +1,10 @@
 ---
 name: kenya-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Kenya VAT return (VAT-3), classify transactions for Kenyan VAT purposes, or advise on VAT registration and filing in Kenya. Trigger on phrases like "Kenya VAT", "KRA VAT", "VAT-3 Kenya", "input tax Kenya", "output tax Kenya", "Kenya Revenue Authority VAT", or any Kenya VAT request. Also covers the former ke-vat-return slug. ALWAYS read this skill before touching any Kenya VAT work.
-version: 3.1
+version: 3.2
 jurisdiction: KE
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 type: situation-rules
 depends_on:
   - vat-workflow-base
@@ -15,13 +15,13 @@ domain: vat-gst
 ---
 
 
-# Kenya VAT v3.1
+# Kenya VAT v3.2
 
 > **General reference only.** This document does not constitute tax, legal, or
 > financial advice. Verify figures against the cited primary sources or with a
 > licensed professional before relying on them.
 
-This skill also replaces the former `ke-vat-return` slug. The law is the VAT Act (Cap. 476, formerly No. 35 of 2013) as at 1 July 2025, amended by the Finance Act 2026 (No. 19 of 2026), most of which took effect on 1 July 2026. A 2026 period straddles that date: use the old rule before it and the new rule after it.
+This skill also replaces the former `ke-vat-return` slug. The law is the VAT Act (Cap. 476, formerly No. 35 of 2013) as consolidated to 1 July 2026, including the Finance Act 2026 (No. 19 of 2026, most of which took effect on 1 July 2026), together with the 2026 temporary 8% petroleum VAT enactments (Act No. 10 of 2026, LN 128 of 2026 and Tax Laws (Amendment) Act, 2026, Act No. 33 of 2026). A 2026 period straddles that date: use the old rule before it and the new rule after it.
 
 ## Who this applies to
 
@@ -34,7 +34,8 @@ This skill also replaces the former `ke-vat-return` slug. The law is the VAT Act
 
 | Item | Amount | Conditions | Tax year | Official URL |
 | --- | --- | --- | --- | --- |
-| Standard rate | 16% | Every taxable supply, import and imported taxable service not zero-rated (s. 5(2)(b)) | 2026 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
+| Standard rate | 16% | Every taxable supply, import and imported taxable service not zero-rated or within the temporary 8% petroleum rate (s. 5(2)(b), (2A)) | 2026 | https://www.kra.go.ke/images/publications/Value-Added-Tax-Act-2026.pdf |
+| Temporary reduced rate (listed petroleum products) | 8% | Motor Spirit (gasoline) premium (2710.12.20), Illuminating Kerosene (2710.19.22) and Gas Oil (2710.19.31): 8% under s. 5(2A)–(2B) for 90 days from 15 April 2026 (Act No. 10 of 2026, which set 8% where LN 69 of 2026 had set 13% for 15 April to 14 July 2026); 15 July to 14 October 2026 by order under s. 6(1) (LN 128 of 2026); and for 90 days from 14 October 2026, extendable by Gazette notice for a further 90 days (Tax Laws (Amendment) Act, 2026, Act No. 33 of 2026, s. 2) | 2026 | https://new.kenyalaw.org/akn/ke/act/2026/33 |
 | Zero rate | 0% | Second Schedule Part A, in the course of a registered person's business, not hotel, restaurant or entertainment services | 2026 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
 | Registration threshold | KES 5,000,000 | Any 12 months, s. 34(1) | 2026 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
 | Withholding VAT | 2% of taxable value | Appointed agents, TPA s. 42A(1). Not on zero-rated supplies, on registered manufacturers with investment of at least KES 2 billion at 31 December 2024, or on official aid-funded projects (s. 42A(1) proviso, (3)). Replaces the 6% in the earlier skill | 2026 | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2025-07-01 |
@@ -44,7 +45,7 @@ This skill also replaces the former `ke-vat-return` slug. The law is the VAT Act
 
 Zero-rated (Second Schedule Part A, paragraph): exported goods (1), exported taxable services (23), supplies to EPZ businesses (2) and SEZ enterprises (12), ship stores (3), international air passengers (5), services to international carriers (6), goods in transit services (10), ordinary bread (13A), listed milk and cream (15), Kenyan-origin goods carried abroad (20), LPG (27). Finance Act 2026 s. 33 deleted paragraphs 11 and 35 and narrowed paragraphs 31 and 32 by tariff heading.
 
-Exempt (First Schedule): financial services, insurance (excluding consultancy, actuaries, assessors), education, medical, veterinary, dental, ambulance and nursing services, agricultural services, burial, passenger transport except international air and hired or chartered conveyances, land and residential letting, postal stamps (Part II paras 1 to 8, 29). Goods include listed medicaments and fertilizers of Chapter 31 (Part I para 151). The earlier skill called medicines, fertilizers and ambulances zero-rated: the Act makes them exempt, so no refund of input tax. Added from 1 July 2026: dialyzers, scrap metal, pharmaceutical inputs on recommendation, BEV stoves, credit and sale of repossessed collateral (Part I paras 158 to 161, 166). Electricity and water do not appear in the schedules, so they stand at 16%.
+Exempt (First Schedule): financial services, insurance (excluding consultancy, actuaries, assessors), education, medical, veterinary, dental, ambulance and nursing services, agricultural services, burial, passenger transport except international air and hired or chartered conveyances, land and residential letting, postal stamps (Part II paras 1 to 8, 29). Goods include listed medicaments and fertilizers of Chapter 31 (Part I para 151). The earlier skill called medicines, fertilizers and ambulances zero-rated: the Act makes them exempt, so no refund of input tax. Added from 1 July 2026: dialyzers, scrap metal, pharmaceutical inputs on recommendation, BEV stoves, credit and sale of repossessed collateral (Part I paras 158 to 161, 166). Natural water (excluding bottled water) supplied by National Government, County Government, any political sub-division thereof or a person approved by the Cabinet Secretary responsible for water development, for domestic or industrial use, is exempt (First Schedule Part I para 95; sewerage services by those bodies are exempt under Part II para 23). Bottled water and electricity do not appear in the schedules, so they stand at 16%.
 
 ## The base
 
@@ -93,7 +94,7 @@ Exempt (First Schedule): financial services, insurance (excluding consultancy, a
 | Pattern | Treatment | Rate | Notes |
 | --- | --- | --- | --- |
 | KENYA POWER, KPLC | Input 16% | 16% | Electricity: taxable |
-| NAIROBI CITY WATER, NCWSC | Input 16% | 16% | Water: taxable |
+| NAIROBI CITY WATER, NCWSC | EXEMPT | None | Natural water (not bottled) from a national or county government, a political sub-division or a supplier approved by the water Cabinet Secretary is exempt (First Schedule Part I para 95); sewerage services by the same bodies are exempt (Part II para 23). If an invoice charges VAT, check the supplier's status |
 | SAFARICOM (data/voice) | Input 16% | 16% | Telecom: taxable |
 | AIRTEL KENYA | Input 16% | 16% | Mobile: taxable |
 | TELKOM KENYA, TELKOM | Input 16% | 16% | Telecom: taxable |
@@ -306,12 +307,16 @@ Never claim input tax without the document, never zero-rate without evidence, ne
 | VAT Act, Cap. 476, legislation as at 1 July 2026 (Legal Notice 128 of 2026), KRA copy: read for ss. 2, 10, 17, 31, 34, 44 and the Schedule paragraphs cited, by passage in extracted text, not cover to cover | https://www.kra.go.ke/images/publications/Value-Added-Tax-Act-2026.pdf | 2026-11-14 |
 | VAT Act, Cap. 476, version of 1 July 2025 (cited in the tables above): read for keyword passages on 2026-10-31; check against the KRA copy | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 | 2026-10-31; tried again 2026-11-14, the page would not render (202) |
 | Finance Act 2026, No. 19 of 2026: read for ss. 25 to 33 and 48 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf | 2026-11-14 |
+| Value Added Tax (Amendment) Act, 2026, Act No. 10 of 2026 (s. 2: temporary 8% petroleum VAT from 15 April 2026) | https://new.kenyalaw.org/akn/ke/act/2026/10 | 2026-11-26 |
+| Value Added Tax (Amendment of Rate of Tax) Order, 2026, LN 128 of 2026 (8% petroleum VAT, 15 July to 14 October 2026) | https://new.kenyalaw.org/akn/ke/act/ln/2026/128 | 2026-11-26 |
+| Value Added Tax (Amendment of Rate of Tax) Order, 2026, LN 69 of 2026 (13% petroleum VAT, 15 April to 14 July 2026) | https://new.kenyalaw.org/akn/ke/act/ln/2026/69 | 2026-11-26 |
+| Tax Laws (Amendment) Act, 2026, Act No. 33 of 2026 (s. 2: substituted VAT Act s. 5(2A)-(2B), 8% petroleum VAT for 90 days from 14 October 2026) | https://new.kenyalaw.org/akn/ke/act/2026/33 | 2026-11-26 |
 | Tax Procedures Act, Cap. 469B, legislation as at 1 September 2026, KRA copy: read for ss. 38, 42A, 83, 83A, 84, by passage in extracted text, not cover to cover | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf | 2026-11-14 |
 | Tax Procedures Act, Cap. 469B, version of 1 July 2025 (cited in the tables above): read for keyword passages on 2026-10-31; check against the KRA copy | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2025-07-01 | 2026-10-31; tried again 2026-11-14, the page would not render (202) |
 | KRA VAT page: read for the 16% standard rate and the KES 5,000,000 registration threshold | https://www.kra.go.ke/individual/filing-paying/types-of-taxes/value-added-tax | 2026-11-14 |
 | KRA, Finance Act 2026 summary: read for the VAT changes | https://www.kra.go.ke/popular-links/finance-act-2026-what-it-means-for-you | 2026-11-14 |
 
-Not yet confirmed: the earlier skill's 100% withholding on foreign entities; s. 17(6) apportionment wording; iTax return box numbers (the earlier skill's Sections A to I are dropped from the body until read); ETR and eTIMS rules (earlier skill cited s. 27, not read), and whether a non-eTIMS invoice bars input tax; the rate on maize flour and textbooks (earlier skill: 0%, not found in the Second Schedule passages read); ride-hailing treatment under para 7; any 2026 petroleum rate change; effective dates that differ from 1 July 2026 for individual VAT items; supplier statuses in the pattern tables, which are unaudited; the Finance Act 2026 s. 86 TPA replacement on electronic tax systems.
+Not yet confirmed: the earlier skill's 100% withholding on foreign entities; s. 17(6) apportionment wording; iTax return box numbers (the earlier skill's Sections A to I are dropped from the body until read); ETR and eTIMS rules (earlier skill cited s. 27, not read), and whether a non-eTIMS invoice bars input tax; the rate on maize flour and textbooks (earlier skill: 0%, not found in the Second Schedule passages read); ride-hailing treatment under para 7; effective dates that differ from 1 July 2026 for individual VAT items; supplier statuses in the pattern tables, which are unaudited; the Finance Act 2026 s. 86 TPA replacement on electronic tax systems.
 
 ## Disclaimer
 
