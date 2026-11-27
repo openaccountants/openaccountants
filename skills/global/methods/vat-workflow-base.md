@@ -1,11 +1,11 @@
 ---
 name: vat-workflow-base
 description: "Shared 2026 VAT/GST return method: reconcile invoices, settlements and tax points, classify from actual law/evidence, preserve unresolved facts, build linked source/return allocations and recalculated workpapers, review every row and all fourteen checks, and deliver the workbook and reviewer brief. Bounded official UK/EU examples do not supply worldwide rates, boxes, supplier outcomes or filing approval."
-version: 0.2.1
+version: 0.2.2
 jurisdiction: GLOBAL
 tax_year: 2026
 type: cross-country-method
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -13,7 +13,7 @@ domain: vat-gst
 
 # VAT Workflow Base
 
-## VAT Workflow Base Skill v0.2.1
+## VAT Workflow Base Skill v0.2.2
 
 ## Scope
 
@@ -23,7 +23,7 @@ domain: vat-gst
 
 **Companions:** obtain the actual country law/method and the regional/directive instrument where applicable. A non-EU system does not need an invented EU regional layer. Load actual available slugs and versions, effective dates and approval labels, then read their evidence; source presence is not proof of live publication. Missing governing law or material facts holds a final return, while an explicitly incomplete source inventory and diagnostic workpaper can proceed.
 
-**This file is the contract.** When a country skill or a regional skill says it conforms to v0.2.1 of this base, what they mean is: they fill the country slots specified in Section 7, they produce outputs in the format specified in Section 3, their classifications can be validated by the self-checks in Section 5, and they participate in the workflow in Section 1.
+**This file is the contract.** When a country skill or a regional skill says it conforms to v0.2.2 of this base, what they mean is: they fill the country slots specified in Section 7, they produce outputs in the format specified in Section 3, their classifications can be validated by the self-checks in Section 5, and they participate in the workflow in Section 1.
 
 ## The method, step by step
 
@@ -46,7 +46,7 @@ Execute these nine steps in order. Do not skip. Do not reorder. Do not start cla
 
 0. **Infer a profile as a hypothesis:** retain all nine signal families: entity type; location; tax IDs; period/frequency; business activity; employees; premises/property; cross-border activity; maturity/seasonality, plus description-level classification clues. Search the actual entity record, contracts, registration, prior return and invoices first. Drawings, wages, bank/IBAN country, supplier branding or a tax-reference fragment are leads, not proof of legal form, tax residence, business use or registration. Preserve the original category cues: Consulting/Beratung, Logo Design, Workshop, Renovierung Büro, Bewirtung/Geschäftsessen, Mobilfunk Rechnung Büro and shipped-to descriptions. They can identify a plausible goods/service/expense enquiry but cannot alone prove B2B status, place of supply, deduction entitlement or a return code. A UK/US consulting receipt does not automatically establish German Kz 45; a marketplace logo purchase does not itself prove business use or actual supplier VAT. [Commission place-of-taxation factors](https://taxation-customs.ec.europa.eu/taxation/vat/vat-directive/place-taxation_en). Record the supported profile, competing explanations and exact evidence still needed.
 
-### Step 4 , Confirm the inferred profile (one round trip)
+### Step 4 , Confirm missing material profile facts
 
 0. **Confirm only missing material profile facts:** give a concise evidence-based profile and ask focused corrections for entity/registration, period/scheme, activity or other material uncertainty. Use existing confirmations and records before a follow-up. Record answers and effective dates. Silence or 'don't know' does not prove a fact, nor does confirming a general profile confirm every supplier/customer/tax condition. Continue supported lines while holding the affected final result; avoid repeating a full onboarding questionnaire already answered.
 
@@ -108,19 +108,17 @@ If the user supplies a correction/new evidence, preserve the change log and reru
 
 ## Section 2 , Two-tier rule and conservative defaults
 
-- **Two-tier classification rule:** Tier 1 means the actual governing rule and all material transaction facts/evidence are established; retain the source/rule/calculation trail without unnecessary narration or questions. Tier 2 means a missing fact or unsettled legal/source condition. State it, research official sources where possible, retain supported alternatives and ask only for genuinely missing user facts. Do not force a final default on a row merely because the user does not know. A presentation decision to group a question is not a tax determination.
+- **Two-tier classification rule:** These are transaction evidence statuses, separate from the Guide's accountant-approval metadata. Tier 1 means the actual governing rule and all material transaction facts/evidence are established; retain the source/rule/calculation trail without unnecessary narration or questions. Tier 2 means a missing fact or unsettled legal/source condition. State it, research official sources where possible, retain supported alternatives and ask only for genuinely missing user facts. Do not force a final default on a row merely because the user does not know. A presentation decision to group a question is not a tax determination.
 - **Former default families, now evidence enquiries:** retain unknown sale rate; purchase VAT/evidence; counterparty country; B2B/B2C status; business-use proportion; blocked input; and in/out-of-scope treatment. Do not automatically choose standard rate, domestic, B2C, zero recovery or in-scope because it appears to cost more. Determine actual country law, recognition, evidence and relief/correction options; a voluntary overpayment may be irrecoverable or distort another obligation. [HMRC business-use/evidence rules as one country example](https://www.gov.uk/charge-reclaim-record-vat/reclaim-vat-business-expenses).
 - **Question threshold:** the former EUR 50 floor may be retained only as an explicitly adopted internal optional-presentation setting, never a legal materiality rule or permission to omit a required condition. Missing rate/eligibility facts or tax/filing risks remain visible even when current cash impact is small, zero or unknown. No-effect filtering requires the entire legal/return/related-duty outcome to be unchanged.
 
 ## Section 3 , Output specification
 
-Three outputs per VAT return. All three are mandatory. Never produce one without the others.
+For a completed return-preparation delivery, provide the workbook, reviewer brief and closing message together. If evidence or file/calculation capabilities are missing, deliver only supported work with an explicit incomplete status and the missing tasks; do not claim a workbook exists or a return is ready.
 
 ### Output 1 , Excel working paper
 
-**Sheet "Transactions" column structure**  _(Black)_
-
-**Sheet "Transactions" column structure**  _(Black)_
+**Sheet "Transactions" column structure**
 
 | Column | Content | Color convention |
 | --- | --- | --- |
@@ -139,11 +137,11 @@ Three outputs per VAT return. All three are mandatory. Never produce one without
 
 The country skill provides a sheet structure template. The base requires the following minimum: Sheet "Transactions" and its source-reconciliation/allocation links preserve every source line and the actual split/combined transactions, with the columns above. Preserve every original source row in a reconciliation log and link it to each actual transaction/allocation. Split mixed rates/invoices and several settlements with stable IDs; do not require raw bank-row count to equal return-allocation count. Excluded source lines retain original amounts and a reason, with no unintended return allocation; do not replace a box identifier with numeric zero. Tier 2 rows retain Y in J and a question/evidence reference in K, including genuinely unresolved items. [HMRC record and invoice audit trail](https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021).
 
-Sheet "Box Summary": one row per actual return box, with formula totals from a linked Return Allocations table where one transaction legitimately affects several boxes. Preserve transaction/box/base/tax/recovery/sign IDs and prevent duplicate allocations, rather than forcing a single H value to represent a reverse charge. The country skill provides the list of valid box codes for that country. Formulas, not hardcoded values. Use the xlsx skill's color conventions: black text for formula cells.
+Sheet "Box Summary": one row per actual return box, with formula totals from a linked Return Allocations table where one transaction legitimately affects several boxes. Preserve transaction/box/base/tax/recovery/sign IDs and prevent duplicate allocations, rather than forcing a single H value to represent a reverse charge. The country skill provides the list of valid box codes for that country. Formulas, not hardcoded values. Use this method's color conventions: black text for within-sheet formulas.
 
-Sheet "Return Form" , the final figures and readiness status, structured to match the country's actual return form layout. Cross-sheet references to the Box Summary sheet, in green text per xlsx convention. The bottom-line payable/refundable figure is a single labelled cell.
+Sheet "Return Form" , the final figures and readiness status, structured to match the country's actual return form layout. Cross-sheet references to the Box Summary sheet, in green text under this method. The bottom-line payable/refundable figure is a single labelled cell.
 
-Color conventions (from the xlsx skill): Blue text: hardcoded inputs from the bank statement. Black text: formulas. Green text: cross-sheet references. Yellow background: cells requiring reviewer attention (any row where a default was applied).
+Internal presentation conventions: blue text for supported hardcoded source inputs; black for within-sheet formulas; green for cross-sheet references; yellow background for provisional/unresolved rows requiring review. These colours and the A-L layout are workflow choices, not statutory return requirements.
 
 After building the workbook, use the actual available calculation engine to recompute and inspect formulas/cached values, errors, source links and key independent totals. Record its output; do not claim the historical recalc.py or a success JSON ran if unavailable. Fix/recalculate errors before a final workbook, with legal/evidence readiness separately stated.
 
@@ -236,7 +234,7 @@ Retain the mobile-line business-use scenario: the actual invoices and country ru
 
 ## Section 5 , Self-check before output
 
-Run these fourteen checks against your draft output before sending the chat response. If any fails, fix the output and re-run. Do not deliver a return that fails any check. These checks combine arithmetic/allocation integrity with documented evidence and actual country-rule conditions; they do not substitute for a separate qualified review. They are necessary but not sufficient. They are the cheapest reliability gain in the workflow and they must all pass.
+Run these fourteen checks against your draft output before sending the chat response. If any fails, fix the output and re-run. Do not deliver a return that fails any check. These checks combine arithmetic/allocation integrity with documented evidence and actual country-rule conditions; they do not substitute for a separate qualified review. They are necessary but not sufficient. All applicable checks must pass before a return-ready delivery. An incomplete diagnostic workpaper may be shared with failed/unresolved checks and their exact correction tasks visible.
 
 ### Structural integrity checks (always run first)
 
@@ -342,7 +340,7 @@ Every country skill loaded alongside this workflow base MUST provide the followi
 
 ### One reverse-charge service legitimately appears in multiple boxes
 
-Assume a UK VAT-registered recipient receives a qualifying B2B service of GBP 1,000 from a non-UK supplier, with no relevant place-of-supply/exemption exception. Assume the actual service is standard-rated and actual supported input recovery is one half. Output self-assessment is GBP 200, allowable input is GBP 100 and net liability from this transaction is GBP 100. Under the cited UK mechanism, boxes one/four contain the respective tax amounts and boxes six/seven the GBP 1,000 service value: multiple linked entries are legitimate, not double-counting. The supported recovery fraction is a case fact, not a worldwide partial-exemption method. [HMRC section 5.2 to 5.4](https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a), [UK standard rate](https://www.gov.uk/vat-rates).
+Assume a UK VAT-registered recipient belonging in the UK receives a B2B general-rule service of GBP 1,000 from a supplier belonging outside the UK. The established place of supply is the UK, with no exemption, special place rule or use-and-enjoyment exception. Assume the actual service is standard-rated and actual supported input recovery is one half. Output self-assessment is GBP 200, allowable input is GBP 100 and net liability from this transaction is GBP 100. Under the cited UK mechanism, boxes one/four contain the respective tax amounts and boxes six/seven the GBP 1,000 service value: multiple linked entries are legitimate, not double-counting. The supported recovery fraction is a case fact, not a worldwide partial-exemption method. [HMRC section 5.2 to 5.4](https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a), [UK standard rate](https://www.gov.uk/vat-rates).
 
 ```oa-check
 name: Reverse charge multiple return fields and partial recovery are legitimate
@@ -388,59 +386,37 @@ expected:
   overstated_vat_if_rate_applied_to_gross: 8
 ```
 
+### Historical case inputs: retained, with tax outcomes held
+
+These earlier examples remain evidence tasks. The old German codes, rate assumptions and recovery amounts below are not current filing instructions. No country-year conclusion follows without the actual law, invoices, status and scheme.
+
+- **German Q1 hypothetical, French-customer goods shipment:** EUR 15,000, originally paired with a supposed five-condition checklist, Kz 41/81, a 19% alternative and EUR 2,394.96 additional VAT (rounded EUR 2,395). The amount equals `15000 * 0.19 / 1.19` only if EUR 15,000 is a VAT-inclusive price at an independently established 19%; if it is a net price the arithmetic is EUR 2,850. Neither basis, exemption eligibility, liability nor current return code is established by the old example. Keep the original Q1 context; do not assign a new tax year to cure it. Check this point with one of our partner accountants.
+- **Three mobile lines:** EUR 269.70, historical full-recovery estimate approximately EUR 43, 100% business, declared mixed use (the former 25%/50%/75% choices), personal/occasional use and unknown. The estimate is `269.70 * 0.19 / 1.19 = 43.061344...` solely as conditional arithmetic at the old assumed 19%, not proof of VAT charged or deductible. Obtain actual invoices and the supported precise business-use fraction; a mileage log alone does not establish phone use. No default 0% or full recovery is adopted. Check this point with one of our partner accountants.
+- **Four Aral fuel lines, January-March:** EUR 196.90 remains the line-identification example. No VAT amount, fuel method or recovery entitlement has been established. Check this point with one of our partner accountants.
+- **Capital asset and attention failures:** retain EUR 1,899 asset cost, the EUR 15,000 goods line, and earlier erroneous EUR 35 input VAT on chamber dues and EUR 62 on an international flight. The EUR 35/62 are reported error amounts, not lawful tax; neither gross invoice nor entitlement is supplied. Preserve IHK/chamber, Lufthansa/international-flight and Amazon-LU/marketplace cases, alongside AWS branch billing, as invoice/issuer/place/rate/recovery enquiries. Check this point with one of our partner accountants.
+
+Historical integrity fixtures are workflow controls: 73 source rows must all reconcile even if allocations have a different count; 9 flagged rows and only 8 brief disclosures reveal one missing disclosure; 112 formula cells without evaluated results do not establish a computed workbook. The old EUR 100 reverse-charge output/EUR 0 input illustration requires a documented lawful recovery restriction or correction, not an automatic input-tax claim. These counts are examples, not measured performance promises or tax rules.
+
 ## When to refuse or refer
 
-Hold a final return when governing law/rates/boxes, actual registration/scheme, material invoice/evidence, customer/supply status, period/FX or required calculation remains unresolved. Do not fabricate VAT from supplier branding, bank gross amounts or an unanswered question. Preserve supported work and exact gap/referral tasks, especially partial exemption, capital-goods adjustments, property/option-to-tax, complex cross-border/chain/import or prior-period correction cases. A preparer self-review does not confer accountant approval; retain actual professional review/filing/sign-off evidence separately. No live filing or posting is performed by creating these files.
+Hold a final return when governing law/rates/boxes, actual registration/scheme, material invoice/evidence, customer/supply status, period/FX or required calculation remains unresolved. Do not fabricate VAT from supplier branding, bank gross amounts or an unanswered question. Preserve supported work and exact gap/referral tasks, especially partial exemption, capital-goods adjustments, property/option-to-tax, complex cross-border/chain/import or prior-period correction cases. A preparer self-review does not confer accountant approval; retain actual professional review/filing/sign-off evidence separately. No live filing or posting is performed by creating these files. For the unresolved specialist outcomes: Check this point with one of our partner accountants.
 
 ## Section 8 , Reference material
 
-### Validation status
+### Version and retained design history
 
-This file is v0.2.1 of `vat-workflow-base`, updated as a shared 2026 method. Its original architecture dates to April 2026. It was extracted from `eu-vat-base` v0.3 by separating the workflow content (which is jurisdiction-agnostic and lives here) from the EU directive content (which is jurisdiction-specific to the EU and now lives in `eu-vat-directive`). That historical extraction claim described the earlier version; v0.2.1 makes substantive corrections recorded above, not merely a structural refactor.
+v0.2.2 (27 November 2026) retains the 2026 method, all fourteen checks, fourteen mandatory and two optional country slots, the six row-review questions, workpaper/brief templates and both UK calculations. It restores historical case inputs as non-usable holds, distinguishes evidence statuses from professional approval and removes conflicting draft-delivery/UI/count instructions.
 
-### Origin
+The April architecture separated workflow from `eu-vat-base` v0.3 into this base and the EU legal companion. Its eight-step description became nine principal steps plus Step 6.5 questions and Step 7.5 row review. The earlier v0.1 title and v0.2.0 metadata were inconsistent; neither determines current tax law.
 
-This file inherits its content from `eu-vat-base` v0.3 Sections 1, 2, 3, 4, 5, 7, and 8. The country slot contract in Section 7 of this file is the same 14 mandatory + 2 optional slots specified in the v0.3 base. The 14 self-checks in Section 5 of this file are the same 14 self-checks added to the v0.3 base. The current Section 1 retains nine principal steps plus the factual-question and row-review substeps; the historical eight-step description is superseded.
+- **v0.1:** workflow/region/country separation, output structure and sixteen slots.
+- **v0.1.1:** description clues, disclosure versus questions, EUR 50 presentation floor and full-no-effect filtering. Description clues now prompt evidence enquiries; the floor cannot suppress a legally necessary fact.
+- **v0.1.2:** write/recalculate/verify sequence after an earlier workbook had 112 formulas without computed caches. Runtime paths, tool names and success JSONs are historical examples; actual calculation evidence is required.
+- **v0.1.3:** review every row, six questions and extra scrutiny of the ten largest source amounts after chamber-dues, flight and marketplace errors. This is preparer self-review, not independent professional approval or a demonstrated accuracy guarantee. Actual source research remains necessary for unsettled law.
+- **v0.2.0:** factual questions before finalising affected entries; preserve sequencing of one-to-three, four-to-six and seven-to-ten questions where supported. Claude-only UI, an absolute ten-question refusal and build-only-once rules are superseded. Correct errors and incorporate new evidence whenever found.
+- **v0.2.1 (14 November 2026):** established invoice/settlement/tax-point reconciliation, multiple linked return allocations, evidence over supplier patterns and no invented greater-tax defaults; preserved review/delivery controls.
 
-The only deletions from the v0.3 base content are: references to EU-specific concepts (which moved to `eu-vat-directive`), the 12 EU-wide refusals (which moved to `eu-vat-directive`), and EU-specific source citations.
-
-### Known gaps
-
-1. The 14 self-checks are deterministic but not exhaustive. They catch errors of execution and integrity, not errors of conceptual understanding. They are the foundation of the eval loop, not its only component.
-2. The cautious confirmation step (Step 4 of the workflow) costs one round trip. If MVP testing shows users dropping off at this step, consider an opt-out for clearly unambiguous profiles.
-3. The structured question form's 10-question maximum is a heuristic, not a measured optimum.
-4. The Excel template structure has not yet been validated against real practitioner feedback for legibility.
-5. The supplier pattern library minimum (25 entries) is a starting threshold and may need to be raised once we see how it performs across countries.
-
-### Historical change log, superseded where inconsistent with v0.2.1
-
-The following entries record earlier designs. They are not operative instructions to invent tax, require a specific app/tool, refuse every non-Claude runtime, ignore actual invoices or enforce one-box-per-transaction. The current method above controls.
-
-- **v0.2.1 (14 November 2026):** Corrects actual evidence/tax points, allocation multiplicity, supplier-name inference and unsafe defaults; supports real runtime capabilities while preserving all review/delivery controls, fourteen checks and sixteen country slots.
-
-- **v0.2.0 (April 2026):** Major architectural restructure , questions now happen BEFORE the workbook is built, not after. This is a workflow reorder, not a patch. The previous v0.1.x sequence was Step 6 (classify) → Step 7 (build workbook with conservative defaults) → chat response containing free-text question form → user answers nowhere because the workflow ends. This produced a workbook that was structurally already obsolete by the time the user finished reading the questions, plus a free-text form that users were likely to skim or skip because it required typing in chat. The v0.2.0 sequence is Step 6 (classify) → Step 6.5 (ask questions via `ask_user_input_v0` tool, tappable buttons) → Step 7 (build workbook ONCE with the user's answers already incorporated) → Step 7.5 (line-by-line review) → Step 8 (structural self-check) → Step 9 (present files + brief delivery message). The changes: Step 6.5 is new and is the entire question-form mechanism, restructured around the tappable tool; Step 7 produces only two artefacts (workbook and brief), not three (the chat response moves to Step 9); Step 9 is new and handles file presentation plus the closing message; Section 4 is rewritten end-to-end to describe the tool format, the filtering rules, and the tool sequencing rather than the free-text form template; Output 3 in Section 3 is updated to drop the question form reference. The targeting is `claude.ai` and the official Claude apps only; the skill halts if `ask_user_input_v0` is unavailable rather than falling back to the v0.1.x free-text form. The architectural justification: the v0.1.x ordering produced double work (build workbook with defaults, then either throw it away when the user answers or leave the user holding a stale file) AND high user friction (typed answers in chat are skippable in a way tappable buttons are not). The v0.2.0 ordering builds once, asks via UI, and the user gets the final workbook directly. No previous patch in v0.1.x is invalidated , Step 3's nine inference categories, Step 7's recalc gate, Step 7.5's line-by-line review pass, Section 4's filtering rules (cash floor, no-effect rule, description-answered rule), and the 14 self-checks all carry over unchanged. What changed is *when* the question form runs and *how* it presents itself to the user.
-- **v0.1.3 (April 2026):** Added Step 7.5 , line-by-line review pass , between Step 7 (build outputs) and Step 8 (structural self-check). Step 7.5 is a same-conversation, same-model, in-workflow review pass that walks every row of the Transactions sheet with adversarial intent and applies six explicit checks per row (would the invoice carry VAT, did the description carry information, does the Kz match the supplier pattern library, is cross-border treatment correct, was the conservative default applied and disclosed, and for top-10 cash impact rows, does the treatment match the relevant worked example). Step 7.5 must produce an empty failure list before Step 8 can begin. This patch is the response to the diagnosis that the IHK and Lufthansa errors in earlier reruns were *attention failures* not *knowledge failures* , the model knew the rules, it just didn't apply them to the specific medium-cash-impact rows because attention was on the high-cash-impact rows. Step 7.5 forces equal attention on every row regardless of cash impact, which is what catches that error class. Step 7.5 explicitly does NOT call external tools and does NOT verify against primary sources , those are future enhancements outside v0.1.3 scope. The honest scope of Step 7.5 is attention failures only; knowledge failures (where the model lacks the relevant fact entirely) require a different mechanism that isn't in this patch. This patch replaces the previously planned separate `vat-audit-base` skill, which was dropped because (a) Claude as auditor has the same training-data blind spots as Claude as classifier, so a separate auditor catches knowledge failures no better than an in-workflow review pass would, and (b) the separate auditor pattern encouraged checklist-writing which led directly to the eval contamination problem identified in the v0.1 auditor draft.
-- **v0.1.2 (April 2026):** Step 7 hardened against the recalc-skip failure mode. The first rerun of v0.1.1 produced a structurally correct .xlsx file with 112 live formulas but skipped the recalc.py step, leaving the cached values empty. The file worked when opened in Excel (which auto-recalculates) but failed Check 3 of the self-check suite (which depends on cached values being present) and was technically "uncomputed" until a human opened it. This patch rewrites Step 7 as three explicit sub-steps (7.1.a write, 7.1.b recalc, 7.1.c verify) with each one a hard gate before the next. The recalc command is now part of the build sequence rather than a follow-up note. Step 7 is not complete until all three sub-steps have executed and recalc reports `total_errors: 0`. Also added a runtime check at 7.1.a: if `bash_tool` or `create_file` is unavailable, the model stops with a clear message rather than degrading to a markdown-only output. No structural changes to the workflow architecture, the question form rules, the conservative defaults principle, or the country slot contract.
-- **v0.1.1 (April 2026):** Three targeted patches in response to first rerun feedback. (1) Section 1 Step 3 added a ninth inference category , "description-level classification signals" , making it explicit that words like "Consulting", "Logo Design", "Bewirtung", "shipped to [country]" in the transaction description are themselves classification signals and that the model should classify silently rather than asking when the description carries the answer. (2) Section 2's two-tier rule was rewritten to distinguish disclosure-in-the-brief (mandatory for every Tier 2 default) from question-on-the-form (conditional on cash impact and on whether the user genuinely has information the data does not contain). (3) Section 4 added two new rules to the question form: a minimum cash-impact floor (questions below the country skill's threshold, defaulting to €50, must not appear on the form) and an explicit prohibition on questions whose outcome does not affect the return. The first rerun produced a 10-question form where 3-5 questions failed at least one of these rules; the patches close those loopholes. No structural changes to the workflow, output specification, country slot contract, or self-checks.
-- **v0.1 (April 2026):** Initial draft as part of the three-tier architecture split. Extracted from `eu-vat-base` v0.3. No substantive changes from v0.3 , this is a structural refactor that separates workflow architecture from regional legal content.
-
-### Architecture recap, updated for v0.2.1
-
-1. Workflow at top of file: yes (Section 1, before metadata).
-2. Imperatives not descriptions: yes.
-3. Output specification mandates Excel + markdown + chat: yes (Section 3).
-4. Structured question form is a literal template: yes (Section 4).
-5. Self-check before output: yes (Section 5, fourteen checks).
-6. No worldwide country-rule claim: bounded actual UK/EU illustrations and sources are labelled; specific rates/boxes/eligibility still need the actual country/year evidence.
-7. Country slots tightened: yes (Section 7, 14 mandatory + 2 optional).
-8. Inferred-profile-first ordering: yes (Step 3 before Step 4 confirmation, no onboarding questionnaire upfront).
-9. Loading model explicit: yes (Section 6).
-10. Refusal handling delegated to companion skills: yes (this file contains no refusal catalogue , refusals are owned by the regional and country layers).
-11. Reference material at bottom: yes (Section 8).
-
-## End of VAT Workflow Base Skill v0.2.1
-
-A final return needs actual current country law/method and a regional instrument where applicable. Preserve the source/version/approval and missing-evidence log; no app, supplier pattern or generic file hierarchy substitutes for those facts. Useful incomplete evidence preparation can continue without claiming readiness.
+The historical EUR 50 floor, ten-question review trigger, supplier-library targets of 25 entries/over 30 in dense ecosystems and six hypothetical worked examples are internal presentation/coverage controls. They cannot make an unsupported tax treatment usable or prevent supported evidence preparation. Country-process law takes precedence over this workflow. Template legibility and runtime capabilities must be checked in the actual engagement; no claim of completed practitioner testing is made.
 
 ## Disclaimer
 
@@ -450,14 +426,14 @@ This skill and its outputs are provided for informational and computational purp
 
 | Source and what was actually read | Official URL | Read on |
 |---|---|---|
-| HMRC records. Read for required invoices/credit notes/business/digital records, digital-link and VAT-account sections plus tax-point/period discussion; no general payment-date rule adopted | https://www.gov.uk/charge-reclaim-record-vat/keeping-vat-records | 2026-11-14 |
-| HMRC reclaim business expenses. Read for opening business/personal-use evidence and partial-exemption distinctions; specialist vehicle/fuel/capital limits not certified here | https://www.gov.uk/charge-reclaim-record-vat/reclaim-vat-business-expenses | 2026-11-14 |
-| HMRC Notice 741A. Read for section 5.1 to 5.5 actual reverse-charge scope, multiple return fields, partial recovery and exempt-service distinction; not the whole services manual | https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-14 |
-| HMRC Notice 700/21. Read for opening record classes, invoice primary-evidence and special margin/reverse-charge invoice distinctions; not every detailed invoice/retention exception | https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021 | 2026-11-14 |
-| HMRC MTD Notice. Read for section 3.2.1 electronic-account digital links and accepted transfer methods versus manual copy/paste; not every scheme exemption | https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat | 2026-11-14 |
-| Commission deductions guide. Read for opening deduction/partial recovery/chargeability and selected invoice/import/acquisition/reverse-charge evidence distinctions; national detailed exceptions still required | https://taxation-customs.ec.europa.eu/archives/taxable-persons/deductions_en | 2026-11-14 |
-| Commission VAT returns. Read for opening taxpayer/transaction scope, reverse-charge customers and import/special-return distinctions; no country deadline supplied as a universal rule | https://taxation-customs.ec.europa.eu/taxation/vat/vat-directive/vat-returns_en | 2026-11-14 |
-| Commission place of taxation. Read for goods/services general factors and material property/transport/event/digital exceptions; no automatic VAT result from client country or invoice description | https://taxation-customs.ec.europa.eu/taxation/vat/vat-directive/place-taxation_en | 2026-11-14 |
-| HMRC VAT rates. Read for current standard/reduced/zero examples; only the standard-rated UK worked-case assumption is used | https://www.gov.uk/vat-rates | 2026-11-14 |
+| HMRC records. Read required invoice/credit-note/business/digital records, digital-link and tax-point sections; no general payment-date rule adopted | https://www.gov.uk/charge-reclaim-record-vat/keeping-vat-records | 2026-11-27 |
+| HMRC reclaim business expenses. Read for opening business/personal-use evidence and partial-exemption distinctions; specialist vehicle/fuel/capital limits not certified here | https://www.gov.uk/charge-reclaim-record-vat/reclaim-vat-business-expenses | 2026-11-27 |
+| HMRC Notice 741A. Read sections 4.1 to 4.3 and 5.1 to 5.6 for actual reverse-charge scope, multiple return fields, partial recovery and exempt-service distinction; not the whole services manual | https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-27 |
+| HMRC Notice 700/21. Read sections 2.1 to 2.3, 3.1 to 3.2 and 10 to 11 for records, invoice primary evidence and electronic-account link boundaries; detailed invoice/retention exceptions remain country tasks | https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021 | 2026-11-27 |
+| HMRC MTD Notice. Read sections 3.2 to 3.3 for electronic-account links, accepted transfers, outside-software calculations and source-data entry distinctions; exemptions not certified here | https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat | 2026-11-27 |
+| Commission deductions guide. Read deduction/partial recovery, chargeability, evidence/procedures and adjustment sections; national methods/exceptions still required | https://taxation-customs.ec.europa.eu/archives/taxable-persons/deductions_en | 2026-11-27 |
+| Commission VAT returns. Read taxpayer/transaction scope, Article 250 return contents and reverse-charge customer sections; no universal deadline or form supplied | https://taxation-customs.ec.europa.eu/taxation/vat/vat-directive/vat-returns_en | 2026-11-27 |
+| Commission place of taxation. Read for goods/services general factors and material property/transport/event/digital exceptions; no automatic VAT result from client country or invoice description | https://taxation-customs.ec.europa.eu/taxation/vat/vat-directive/place-taxation_en | 2026-11-27 |
+| HMRC VAT rates. Read the current standard rate and supply-dependent rate distinction; only established standard-rated UK supplies use 20% in the worked cases | https://www.gov.uk/vat-rates | 2026-11-27 |
 
-Not yet confirmed: every actual country's 2026 rates, registered person/scheme, tax point, consideration, input deduction/blocking/partial-exemption/capital-goods and evidence exceptions, return boxes/rounding/FX/adjustments, digital-link/filing and related-return obligations; current German Kz mappings, applicable intra-Community goods exemption/reporting conditions and actual billing/VAT treatment of every named supplier/category; actual source invoices and business-use proportions for any real case; each runtime's actual file/calculation/question/attachment capabilities. Historical EUR 50 and ten-question/library/example-count settings are internal presentation/coverage controls, not tax law. Old supplier-pattern certainties, greater-tax defaults, universal exemption categories, Claude-only UI commands and one-box-per-bank-row requirements are not usable current instructions.
+Not yet confirmed: country-specific 2026 rates beyond the bounded UK standard-rate illustrations, registered person/scheme, tax point, consideration, input deduction/blocking/partial-exemption/capital-goods and evidence exceptions, return boxes/rounding/FX/adjustments, digital-link/filing and related-return obligations; current German Kz mappings, applicable intra-Community goods exemption/reporting conditions and actual billing/VAT treatment of every named supplier/category; actual source invoices and business-use proportions for any real case; each runtime's actual file/calculation/question/attachment capabilities. Historical EUR 50 and ten-question/library/example-count settings are internal presentation/coverage controls, not tax law. Old supplier-pattern certainties, greater-tax defaults, universal exemption categories, Claude-only UI commands and one-box-per-bank-row requirements are not usable current instructions.
