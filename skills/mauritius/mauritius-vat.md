@@ -6,15 +6,15 @@ jurisdiction: MU
 category: international
 tax_year: 2026
 tax_year_notes: "Income year 1 July 2026 to 30 June 2027 (year of assessment 2027/28)"
-version: 2.2
-last_updated: 2026-11-14
+version: 2.3
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 type: situation-rules
 ---
 
-# Mauritius VAT v2.2
+# Mauritius VAT v2.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -42,7 +42,7 @@ A client with a Global Business Licence gets specific treatment: escalate rather
 | E-invoicing | Fiscal invoices above Rs 100 million from 15 May 2024 (LTD), 1 August 2025 (MSTD) | Above Rs 80 million by 30 June 2026; above Rs 40 million by 1 September 2026 | 2026 | https://www.mra.mu/index.php/e-invoicing |
 | Insurance premium tax | 5% on general insurance premiums | Policies from 1 January 2027 (s.53T); general insurers only | 2027 | https://www.mra.mu/download/VATAct.pdf |
 
-Zero-rated, per the Fifth Schedule: exports under Customs control; rice, wheat flour, bread, edible oils, milk, sugar, unprocessed produce, poultry, meat, fish, tea, honey, spices, salt, fertiliser, animal feed, printed and electronic books; transport of people and goods by sea or air to or from Mauritius; duty-free shop sales; supplies to a freeport licensee for freeport activity; services to a non-resident outside Mauritius not consumed in Mauritius; CEB electricity and CWA water; photovoltaic systems; medical, hospital and dental services; public transport by public service vehicle and light rail; cooking gas up to 12 kg for domestic use; postal services (from 1 October 2026).
+Zero-rated, per the Fifth Schedule: exports under Customs control; rice, wheat flour, bread, edible oils, milk, sugar, unprocessed produce, poultry, meat, fish, tea, honey, spices, salt, fertiliser, animal feed, printed and electronic books; transport of people and goods by sea or air to or from Mauritius; duty-free shop sales; supplies to a freeport licensee for freeport activity; services to a non-resident outside Mauritius not consumed in Mauritius; CEB electricity and CWA water; photovoltaic systems; medical, hospital and dental services; public transport by public service vehicle and light rail; cooking gas up to 12 kg for domestic use; postal services (from 13 August 2026).
 
 Exempt, per the First Schedule: educational services and approved training; most banking and other listed financial services; sale of immovable property for residential purposes, and for other purposes unless sold by a VAT-registered developer to a VAT-registered person; renting of accommodation in a building used mainly as a family residence, for a continuous term over 90 days (item 46); the grant or surrender of an interest in land or a licence to occupy land, subject to item 48 (item 47); burial and cremation; journals and periodicals; the other listed items. Management company services to global business clients became exempt from 1 October 2026 (item 97).
 
@@ -85,7 +85,7 @@ Filing a VAT 3:
 7. Monthly filers also submit a list of taxable supplies, other than retail, with invoice number and value (s.22(1C)).
 8. Pay electronically at submission, then keep the confirmation.
 
-Due dates: 20 days after the period; one month where both return and payment are electronic ([VAT FAQs](https://www.mra.mu/download/VATFAQs.pdf), [calendar](https://www.mra.mu/important-dates)). A nil return is still due (s.22(3)). A date on a weekend or public holiday moves to the next working day. Foreign digital suppliers file within 20 days and also list supplies to Mauritius persons (s.22(4), (1E)); from 1 October 2026 they no longer appoint a tax representative (s.14A). Registration: the simplified online form on mra.mu, or via CBRIS at business registration; a certificate follows.
+Due dates: 20 days after the period; one month where both return and payment are electronic ([VAT FAQs](https://www.mra.mu/download/VATFAQs.pdf), [calendar](https://www.mra.mu/important-dates)). A nil return is still due (s.22(3)). A date on a weekend or public holiday moves to the next working day. Foreign digital suppliers file within 20 days and also list supplies to Mauritius persons (s.22(4), (1E)); from 13 August 2026 they no longer appoint a tax representative (s.14A). Registration: the simplified online form on mra.mu, or via CBRIS at business registration; a certificate follows.
 
 Hotels and tourist residences receiving over 50% in listed foreign currency file and pay 50% of the tax in that currency from 1 October 2026 (s.12(1A)).
 
@@ -154,8 +154,8 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| VAT Act consolidated to Finance Act 2026, sections read: ss.2, 5, 9A, 10 to 15B, 20A to 20E, 21, 22, 26 to 27A, 53T; First, Second, Fourth, Fifth, Sixth, Tenth and Fourteenth Schedules, in part | https://www.mra.mu/download/VATAct.pdf | 2026-11-01 |
-| Finance Act 2026, read in sections 25 and 28 | https://www.mra.mu/download/FinanceAct2026.pdf | 2026-11-01 |
+| VAT Act consolidated to Finance Act 2026, sections read: ss.2, 5, 9A, 10 to 15B, 20A to 20E, 21, 22, 26 to 27A, 53T; First, Second, Fourth, Fifth, Sixth, Tenth and Fourteenth Schedules and endnotes 96 to 98 and 530 | https://www.mra.mu/download/VATAct.pdf | 2026-11-26 |
+| Finance Act 2026, read in sections 25 and 28 | https://www.mra.mu/download/FinanceAct2026.pdf | 2026-11-26 |
 | VAT Regulations 1998, read in the visitor and return sections | https://www.mra.mu/download/VATReg.pdf | 2026-11-01 |
 | Form VAT 3, read in full | https://www.mra.mu/download/VAT3FormNew.pdf | 2026-11-01 |
 | VAT FAQs, September 2025, read in full | https://www.mra.mu/download/VATFAQs.pdf | 2026-11-01 |
