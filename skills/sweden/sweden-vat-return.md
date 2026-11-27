@@ -546,7 +546,7 @@ expected:
 
 `22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice SE-2026-018 IT consultancy March ; +35,000.00 ; SEK`
 
-If the buyer gave a valid German VAT number: ruta 39 SEK 35,000, no Swedish VAT, and a line in the periodisk sammanställning. Check the number on VIES. If there is no number but other evidence shows a taxable person buying for its business: ruta 39 SEK 35,000, no Swedish VAT and no listing. If status is unproved, this is Needs Input, not 25%: the buyer then counts as non-taxable, and the place rule for that service decides whether Swedish VAT applies. All 3 cases are given to the reviewer. Buyer status, business use and the receiving establishment must be evidenced; a company name alone is insufficient.
+The bank receipt date does not establish the reporting period: inspect the invoice and the accounting method. March consultancy paid22April can belong to an earlier period; never duplicate an invoice already reported. If the buyer gave a valid German VAT number: ruta39 SEK35,000 in the proper period, no Swedish VAT, and a line in the periodisk sammanställning if taxable in Germany. Check the number on VIES. If there is no number but other evidence shows a taxable person buying for its business: ruta 39 SEK 35,000, no Swedish VAT and no listing. If status is unproved, this is Needs Input, not 25%: the buyer then counts as non-taxable, and the place rule for that service decides whether Swedish VAT applies. All 3 cases are given to the reviewer. Buyer status, business use and the receiving establishment must be evidenced; a company name alone is insufficient.
 
 ```oa-check
 name: EU service sale
@@ -778,27 +778,29 @@ Read27 November2026 for the operative passages used here; future-effective text 
 
 | Source | URL | Read on |
 |---|---|---|
-| ML2023:200, operative cited chapters; current consolidation includes2026:1918 and future text | https://data.riksdagen.se/dokument/sfs-2023-200.text | 2026-11-27 |
-| SFL2011:1244, cited registration/filing/penalty/refund/interest/reconsideration chapters | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-11-27 |
-| SFF2011:1261,22kap.1–2 §§, whole SEK and discarded öre | https://data.riksdagen.se/dokument/sfs-2011-1261.text | 2026-11-27 |
-| IL1999:1229,16kap.2 § and67kap.11a § only | https://data.riksdagen.se/dokument/sfs-1999-1229.text | 2026-11-27 |
-| Statutory time calculation1930:173,2 § | https://data.riksdagen.se/dokument/sfs-1930-173.text | 2026-11-27 |
-| SFS2026:707, enacted registration/refund provisions and1July commencement | https://svenskforfattningssamling.se/sites/default/files/sfs/2026-05/SFS2026-707.pdf | 2026-11-27 |
-| SFS2026:1025, repossession amendment effective20November | https://svenskforfattningssamling.se/sites/default/files/sfs/2026-06/SFS2026-1025.pdf | 2026-11-27 |
-| SFS2026:110, enacted surcharge provision and1April commencement | https://svenskforfattningssamling.se/sites/default/files/sfs/2026-02/SFS2026-110.pdf | 2026-11-27 |
-| Skatteverket, Fylla i momsdeklarationen | https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html | 2026-11-27 |
-| Skatteverket, Lämna momsdeklaration via fil | https://www.skatteverket.se/foretag/moms/deklareramoms/lamnamomsdeklarationviafilietjansten.4.2fb39afe18dabf1e4d223cc.html | 2026-11-27 |
-| Skatteverket, Deklarera moms | https://www.skatteverket.se/foretag/moms/deklareramoms.4.7459477810df5bccdd480006935.html | 2026-11-27 |
-| Skatteverket, När ska jag deklarera moms | https://www.skatteverket.se/foretag/moms/deklareramoms/narskajagdeklareramoms.4.6d02084411db6e252fe80008988.html | 2026-11-27 |
-| Skatteverket, Momssatser | https://www.skatteverket.se/foretagochorganisationer/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html | 2026-11-27 |
-| Skatteverket, Avdrag för moms vid representation | https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/avdragformomsvidrepresentation.4.15532c7b1442f256baec84b.html | 2026-11-27 |
-| Skatteverket, Köpa varor eller tjänster till företaget | https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/kopavarorellertjanstertillforetaget.4.7459477810df5bccdd480005156.html | 2026-11-27 |
-| Skatteverket, Bilar och moms | https://www.skatteverket.se/foretag/moms/sarskildamomsregler/bilarochmoms.4.58d555751259e4d6616800010628.html | 2026-11-27 |
-| Skatteverket, Omvänd betalningsskyldighet inom byggsektorn | https://www.skatteverket.se/foretag/moms/sarskildamomsregler/byggverksamhet/omvandbetalningsskyldighetinombyggsektorn.4.47eb30f51122b1aaad28000545.html | 2026-11-27 |
-| Skatteverket, I vissa fall behöver du inte registrera | https://www.skatteverket.se/foretag/moms/momsregistrering/ivissafallbehoverduinteregistreradittforetagformoms.4.3152d9ac158968eb8fd1efe.html | 2026-11-27 |
-| Skatteverket, Betala och få tillbaka moms | https://www.skatteverket.se/foretag/moms/betalaochfatillbakamoms.4.58d555751259e4d66168000354.html | 2026-11-27 |
-| Skatteverket, Rätta en momsdeklaration | https://www.skatteverket.se/foretag/moms/deklareramoms/rattaenmomsdeklaration.4.3684199413c956649b552c4.html | 2026-11-27 |
-| Skatteverket, Periodisk sammanställning | https://www.skatteverket.se/foretag/moms/deklareramoms/periodisksammanstallningforvarorochtjanster.4.58d555751259e4d661680001093.html | 2026-11-27 |
-| Skatteverket, Deklarera och betala moms i OSS | https://www.skatteverket.se/foretag/moms/deklareramoms/ansokomattredovisadistansforsaljningionestopshoposs/deklareraochbetalamomsionestopshop.4.40cab8f8197edf03e644dee.html | 2026-11-27 |
-| Skatteverket, Sälja tjänster till andra EU-länder | https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/forsaljningtillandraeulander/saljatjanstertillandraeulander.4.76a43be412206334b89800010696.html | 2026-11-27 |
-| Skatteverket, Ränta på skattekontot | https://www.skatteverket.se/privat/skatter/skattekontobetalaochfatillbaka/rantapaskattekontot.4.18e1b10334ebe8bc80002582.html | 2026-11-27 |
+| ML2023:200, operative cited chapters; current consolidation includes2026:1918 and future text; read in part for the specific operative sections cited above | https://data.riksdagen.se/dokument/sfs-2023-200.text | 2026-11-27 |
+| SFL2011:1244, cited registration/filing/penalty/refund/interest/reconsideration chapters; read in part for the specific operative sections cited above | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-11-27 |
+| SFF2011:1261,22kap.1–2 §§, whole SEK and discarded öre; read in part for the specific operative sections cited above | https://data.riksdagen.se/dokument/sfs-2011-1261.text | 2026-11-27 |
+| IL1999:1229,16kap.2 § and67kap.11a § only; read in part for the specific operative sections cited above | https://data.riksdagen.se/dokument/sfs-1999-1229.text | 2026-11-27 |
+| Statutory time calculation1930:173,2 §; read in part for the specific operative sections cited above | https://data.riksdagen.se/dokument/sfs-1930-173.text | 2026-11-27 |
+| SFS2026:707, enacted registration/refund provisions and1July commencement; read in part for the enacted provision and commencement sentence | https://svenskforfattningssamling.se/sites/default/files/sfs/2026-05/SFS2026-707.pdf | 2026-11-27 |
+| SFS2026:1025, repossession amendment effective20November; read in part for the enacted provision and commencement sentence | https://svenskforfattningssamling.se/sites/default/files/sfs/2026-06/SFS2026-1025.pdf | 2026-11-27 |
+| SFS2026:110, enacted surcharge provision and1April commencement; read in part for the enacted provision and commencement sentence | https://svenskforfattningssamling.se/sites/default/files/sfs/2026-02/SFS2026-110.pdf | 2026-11-27 |
+| Skatteverket, Fylla i momsdeklarationen; read in part for the ruta05–62 definitions | https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html | 2026-11-27 |
+| Skatteverket, Lämna momsdeklaration via fil; read in part for the XML integers, representation authority and sign/receipt boundary | https://www.skatteverket.se/foretag/moms/deklareramoms/lamnamomsdeklarationviafilietjansten.4.2fb39afe18dabf1e4d223cc.html | 2026-11-27 |
+| Skatteverket, Deklarera moms; read in part for the operative procedure or conditions stated in this Guide | https://www.skatteverket.se/foretag/moms/deklareramoms.4.7459477810df5bccdd480006935.html | 2026-11-27 |
+| Skatteverket, När ska jag deklarera moms; read in part for the periods, annual dates and extension interest | https://www.skatteverket.se/foretag/moms/deklareramoms/narskajagdeklareramoms.4.6d02084411db6e252fe80008988.html | 2026-11-27 |
+| Skatteverket, Momssatser; read in part for the food/restaurant/vouchers/hotel/transport conditions | https://www.skatteverket.se/foretagochorganisationer/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html | 2026-11-27 |
+| Skatteverket, Avdrag för moms vid representation; read in part for the meal cap, proportion and flat alternative | https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/avdragformomsvidrepresentation.4.15532c7b1442f256baec84b.html | 2026-11-27 |
+| Skatteverket, Köpa varor eller tjänster till företaget; read in part for the operative procedure or conditions stated in this Guide | https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/kopavarorellertjanstertillforetaget.4.7459477810df5bccdd480005156.html | 2026-11-27 |
+| Skatteverket, Bilar och moms; read in part for the purchase/hire, body definitions and private-use conditions | https://www.skatteverket.se/foretag/moms/sarskildamomsregler/bilarochmoms.4.58d555751259e4d6616800010628.html | 2026-11-27 |
+| Skatteverket, Omvänd betalningsskyldighet inom byggsektorn; read in part for the operative procedure or conditions stated in this Guide | https://www.skatteverket.se/foretag/moms/sarskildamomsregler/byggverksamhet/omvandbetalningsskyldighetinombyggsektorn.4.47eb30f51122b1aaad28000545.html | 2026-11-27 |
+| Skatteverket, I vissa fall behöver du inte registrera; read in part for the operative procedure or conditions stated in this Guide | https://www.skatteverket.se/foretag/moms/momsregistrering/ivissafallbehoverduinteregistreradittforetagformoms.4.3152d9ac158968eb8fd1efe.html | 2026-11-27 |
+| Skatteverket, Betala och få tillbaka moms; read in part for the operative procedure or conditions stated in this Guide | https://www.skatteverket.se/foretag/moms/betalaochfatillbakamoms.4.58d555751259e4d66168000354.html | 2026-11-27 |
+| Skatteverket, Rätta en momsdeklaration; read in part for the operative procedure or conditions stated in this Guide | https://www.skatteverket.se/foretag/moms/deklareramoms/rattaenmomsdeklaration.4.3684199413c956649b552c4.html | 2026-11-27 |
+| Skatteverket, Periodisk sammanställning; read in part for the operative procedure or conditions stated in this Guide | https://www.skatteverket.se/foretag/moms/deklareramoms/periodisksammanstallningforvarorochtjanster.4.58d555751259e4d661680001093.html | 2026-11-27 |
+| Skatteverket, Deklarera och betala moms i OSS; read in part for the operative procedure or conditions stated in this Guide | https://www.skatteverket.se/foretag/moms/deklareramoms/ansokomattredovisadistansforsaljningionestopshoposs/deklareraochbetalamomsionestopshop.4.40cab8f8197edf03e644dee.html | 2026-11-27 |
+| Skatteverket, Sälja tjänster till andra EU-länder; read in part for the operative procedure or conditions stated in this Guide | https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/forsaljningtillandraeulander/saljatjanstertillandraeulander.4.76a43be412206334b89800010696.html | 2026-11-27 |
+| Skatteverket, Ränta på skattekontot; read in part for the base/cost/income rates and applicable dates | https://www.skatteverket.se/privat/skatter/skattekontobetalaochfatillbaka/rantapaskattekontot.4.18e1b10334ebe8bc80002582.html | 2026-11-27 |
+
+Not yet confirmed: only the specific non-usable outcomes listed under Refusals and boundaries, supplier questions and the preserved historical tests. No unconfirmed outcome is available for filing or computation; each has the partner-accountant referral.
