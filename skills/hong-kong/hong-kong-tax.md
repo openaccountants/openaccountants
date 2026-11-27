@@ -109,7 +109,7 @@ Year of assessment 2026/27 unless stated.
 | Property tax | 15% of net assessable value | After rates paid by the owner and a 20% statutory allowance | https://www.ird.gov.hk/eng/pdf/2026/BriefGuide20252026.pdf |
 | Stamp duty, Hong Kong stock | 0.1% of the consideration, buyer and seller each | From 17 November 2023 | same |
 | Stamp duty, immovable property | HKD 100 up to HKD 4,000,000. For residential instruments from 26 February 2026, 6.5% above HKD 109,574,470. Over HKD 100,000,000 through HKD 109,574,470, HKD 4,250,000 plus 30% of the excess over HKD 100,000,000. The residential 4.25% band runs from above HKD 21,739,120 through HKD 100,000,000. Non-residential Scale 3 tops out at 4.25% above HKD 21,739,120. | Consideration or property value, whichever is higher | https://www.ird.gov.hk/eng/faq/avd.htm |
-| Stamp duty on lease rent | 0.25% to 1% of annual rent | By lease term; premium at the property scale (4.25% where premium and rent) | same |
+| Stamp duty on lease rent | 0.25% of the total rent (term up to 1 year) to 1% of the average yearly rent (term over 3 years) | By lease term; premium at the property scale (4.25% where premium and rent) | https://www.ird.gov.hk/eng/faq/avd.htm https://www.gov.hk/en/residents/taxes/stamp/stamp_duty_rates.htm |
 | Hotel accommodation tax | 3% of accommodation charges | From 1 January 2025 | same |
 | Global minimum tax and HKMTT | 15% | MNE groups with revenue of EUR 750 million or more; fiscal years from 1 January 2025 | https://www.ird.gov.hk/eng/tax/bus_beps.htm |
 | Profits tax returns 2025/26, "D" and "M" codes | D: 31 August 2026 paper, 2 October 2026 electronic. M: 30 November 2026 paper, 30 December 2026 electronic. | Represented taxpayers | [IRD Code D](https://www.ird.gov.hk/eng/pdf/bel26ea.pdf), [IRD Code M](https://www.ird.gov.hk/eng/pdf/bel26eb.pdf) |
@@ -260,7 +260,7 @@ Year of assessment 2026/27 unless stated.
 | Stock transfers | 0.1% of consideration (each side), from 17 November 2023 | Stamp Duty Ordinance Cap. 117 |
 | Sale/purchase of immovable property | See the stamp duty bands in the thresholds summary above. | Cap. 117, First Schedule, head 1 |
 | Special Stamp Duty (SSD), Buyer's Stamp Duty (BSD), New Residential Stamp Duty (NRSD) | Not listed in the IRD brief guide 2025/26, which shows only ad valorem duty; the old file said BSD and NRSD were suspended from 28 February 2024 (status not confirmed here; check before any transaction) | Cap. 117 |
-| Lease agreements | 0.25-1% of annual rent | Cap. 117, Head 1(2) |
+| Lease agreements | 0.25% of total rent (up to 1 year) to 1% of average yearly rent (over 3 years) | Cap. 117, Head 1(2) |
 
 **Note:** the demand-side property duties (SSD, BSD, NRSD) are not in the IRD 2025/26 brief guide; verify their status on the IRD stamp duty pages for any transaction.
 
