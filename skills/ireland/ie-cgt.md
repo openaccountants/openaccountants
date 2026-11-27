@@ -181,7 +181,7 @@ expected:
 - **Shares, 12 May 2025:** Mr Ó Briain's earlier case uses the same 5,000 shares, 3,000 bought June 2018 for EUR 18,000 and 2,000 February 2021 for EUR 22,000, EUR 75,000 net proceeds, no other disposals or losses. Assuming no four-week acquisitions, gain EUR 35,000, taxable EUR 33,730, 33% tax **EUR 11,130.90** (original whole-euro display EUR 11,131). Pay 15 December 2025; return 31 October 2026. It does not become a 2026 disposal merely because this Guide is updated.
 - **Founder, 1 October 2025:** Ms de Paor, age 47, company founded in 2018, 100% ordinary shares, full-time director, EUR 1,400,000 proceeds, EUR 10,000 cost, no prior qualifying gains. On the stated qualifying-business assumptions, gain EUR 1,390,000; the **2025** ceiling is EUR 1,000,000, not EUR 1.5 million. EUR 100,000 at 10%, plus (390,000 − 1,270) × 33% = EUR 128,280.90; total **EUR 228,280.90** (original rounded EUR 228,281). Company asset composition was not established: the historical reference to Nigerian or other non-land assets does not prove s.980 is inapplicable. Clearance remains a non-usable hold pending actual assets. Check this point with one of our partner accountants.
 - **Founder, 1 October 2026:** preserve the prior case's original date and EUR 2,010,000 proceeds/EUR 10,000 cost, 2018 foundation, entire ordinary holding, full-time director, no subsidiaries, unconnected buyer/no retained connection and no prior qualifying disposals. Gain EUR 2,000,000; EUR 1,500,000 at 10% plus EUR 498,730 at 33% = **EUR 314,580.90**. This is a separate historical case from the current 2 November disposal above; establish land-rich status for s.980.
-- **Galway home, 30 November 2025 — conditional arithmetic only:** Ms Ní Mhurchú bought January 2008 for EUR 280,000 plus EUR 5,000 costs; occupied through December 2018 (132 months), let January 2019–December 2023 (60 months) while working/renting in Dublin; returned January 2024–November 2025 (23 months); sold for EUR 490,000 less EUR 10,000 costs. Original total 215 months, occupation 155, proposed work absence 48, proposed qualifying 203, residual 12. The final 12 months are already within actual occupation and cannot offset earlier letting again. Gain EUR 195,000. **Only if** s.604(5)'s work-prevention and no-other-eligible-residence tests are proved, unrounded arithmetic gives taxable EUR 9,613.72093 and 33% tax EUR 3,172.53 (original rounded displays: chargeable EUR 10,884, taxable EUR 9,614, tax EUR 3,173). The facts do not establish that work prevented residence; those candidate figures are **not usable as a filing conclusion**. Check this point with one of our partner accountants.
+- **Galway home, 30 November 2025: conditional arithmetic only:** Ms Ní Mhurchú bought January 2008 for EUR 280,000 plus EUR 5,000 costs; occupied through December 2018 (132 months), let January 2019–December 2023 (60 months) while working/renting in Dublin; returned January 2024–November 2025 (23 months); sold for EUR 490,000 less EUR 10,000 costs. Original total 215 months, occupation 155, proposed work absence 48, proposed qualifying 203, residual 12. The final 12 months are already within actual occupation and cannot offset earlier letting again. Gain EUR 195,000. **Only if** s.604(5)'s work-prevention and no-other-eligible-residence tests are proved, unrounded arithmetic gives taxable EUR 9,613.72093 and 33% tax EUR 3,172.53 (original rounded displays: chargeable EUR 10,884, taxable EUR 9,614, tax EUR 3,173). The facts do not establish that work prevented residence; those candidate figures are **not usable as a filing conclusion**. Check this point with one of our partner accountants.
 
 ## Ask the client first
 
@@ -193,62 +193,62 @@ Primary provisions and the neighbouring conditions identified above were read on
 
 | Source / portion read | Official URL | Read on |
 |---|---|---|
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/29/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/542/enacted/en/html | 2026-11-27 |
-| Relevant CGT topic and conditions cited above | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-do-you-pay-cgt-on.aspx | 2026-11-27 |
-| Relevant CGT topic and conditions cited above | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf | 2026-11-27 |
-| Relevant CGT topic and conditions cited above | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/602/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2001/act/7/schedule/5/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/603/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/1028/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/573/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2013/act/8/section/43/enacted/en/html | 2026-11-27 |
-| Relevant CGT topic and conditions cited above | https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-10-06/debate/mul@/main.xml | 2026-11-27 |
-| Relevant CGT topic and conditions cited above | https://www.revenue.ie/ros-content/ROS-Info-section-text-en.aspx | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/601/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2016/act/18/section/26/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/2025/en/act/pub/0018/sec0051.html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2023/act/39/section/49/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2023/act/39/section/50/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2008/act/3/section/55/enacted/en/html | 2026-11-27 |
-| Relevant CGT topic and conditions cited above | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-03-01.pdf | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/980/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1927/act/7/section/2/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2010/act/5/section/160/enacted/en/html | 2026-11-27 |
+| s.29(1)–(7): residence and territorial scope | https://www.irishstatutebook.ie/eli/1997/act/39/section/29/enacted/en/html | 2026-11-27 |
+| s.542(1)–(2): contract and condition timing | https://www.irishstatutebook.ie/eli/1997/act/39/section/542/enacted/en/html | 2026-11-27 |
+| Assets, joint ownership and compensation headings | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-do-you-pay-cgt-on.aspx | 2026-11-27 |
+| TDM sections 1–1.3: capital crypto versus trade | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf | 2026-11-27 |
+| Exemptions, spouse exceptions and personal exemption headings | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx | 2026-11-27 |
+| s.602(1)–(7): consideration test, marginal cap and limits | https://www.irishstatutebook.ie/eli/1997/act/39/section/602/enacted/en/html | 2026-11-27 |
+| Schedule 5: euro rows for ss.601,602,1084 | https://www.irishstatutebook.ie/eli/2001/act/7/schedule/5/enacted/en/html | 2026-11-27 |
+| s.603(1)–(4): wasting chattels and business use | https://www.irishstatutebook.ie/eli/1997/act/39/section/603/enacted/en/html | 2026-11-27 |
+| s.1028(5)–(7): spouse basis carryover | https://www.irishstatutebook.ie/eli/1997/act/39/section/1028/enacted/en/html | 2026-11-27 |
+| s.573(2)–(5): death basis and losses | https://www.irishstatutebook.ie/eli/1997/act/39/section/573/enacted/en/html | 2026-11-27 |
+| s.43: 33% standard/development rate and start date | https://www.irishstatutebook.ie/eli/2013/act/8/section/43/enacted/en/html | 2026-11-27 |
+| Financial Resolution No.3: motion, effective date and statutory declaration | https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-10-06/debate/mul@/main.xml | 2026-11-27 |
+| CGT notice: new rate, earlier disposals and unchanged development land | https://www.revenue.ie/ros-content/ROS-Info-section-text-en.aspx | 2026-11-27 |
+| s.601(1)–(5): exemption and rate ordering | https://www.irishstatutebook.ie/eli/1997/act/39/section/601/enacted/en/html | 2026-11-27 |
+| s.26: ER 10% from 2017 | https://www.irishstatutebook.ie/eli/2016/act/18/section/26/enacted/en/html | 2026-11-27 |
+| s.51: ER annual/lifetime gain aggregation from 2026 | https://www.irishstatutebook.ie/2025/en/act/pub/0018/sec0051.html | 2026-11-27 |
+| s.49: post-2024 Retirement Relief age bands | https://www.irishstatutebook.ie/eli/2023/act/39/section/49/enacted/en/html | 2026-11-27 |
+| s.50: child relief and transition aggregation | https://www.irishstatutebook.ie/eli/2023/act/39/section/50/enacted/en/html | 2026-11-27 |
+| s.55: site value and simultaneous parents | https://www.irishstatutebook.ie/eli/2008/act/3/section/55/enacted/en/html | 2026-11-27 |
+| TDM sections 1.1–1.8: scope, deductions and clearance | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-03-01.pdf | 2026-11-27 |
+| s.980(2)–(11): specified assets, deduction and clearance | https://www.irishstatutebook.ie/eli/1997/act/39/section/980/enacted/en/html | 2026-11-27 |
+| s.2: statutory effect of financial resolutions | https://www.irishstatutebook.ie/eli/1927/act/7/section/2/enacted/en/html | 2026-11-27 |
+| s.160: CGT within provisional tax definition | https://www.irishstatutebook.ie/eli/2010/act/5/section/160/enacted/en/html | 2026-11-27 |
 | Bill status, act field and dated stages | https://api.oireachtas.ie/v1/legislation?bill_year=2026&bill_no=98&limit=1 | 2026-11-27 |
 | CGT clause, section 41 | https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_b/b98b26d.pdf | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1974/act/27/section/85/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1991/act/32/section/2/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1992/act/9/section/250/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/552/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/554/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/546/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/547/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/549/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/556/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2003/act/3/section/65/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/580/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/581/enacted/en/html | 2026-11-27 |
-| Relevant CGT topic and conditions cited above | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/if-you-make-a-loss.aspx | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/604/enacted/en/html | 2026-11-27 |
-| Relevant CGT topic and conditions cited above | https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/principal-private-residence-ppr-relief.aspx | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2015/act/52/section/35/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2020/act/26/section/24/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2023/act/39/section/48/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2017/act/41/section/30/enacted/en/html | 2026-11-27 |
-| Relevant CGT topic and conditions cited above | https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/598/enacted/en/html | 2026-11-27 |
-| Relevant CGT topic and conditions cited above | https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2024/act/43/section/55/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2001/act/7/section/93/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2007/act/11/section/53/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2018/act/30/section/30/enacted/en/html | 2026-11-27 |
-| Relevant CGT topic and conditions cited above | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx | 2026-11-27 |
-| Relevant CGT topic and conditions cited above | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2003/act/3/section/71/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2005/act/5/section/145/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/2009/act/12/section/29/enacted/en/html | 2026-11-27 |
-| Operative section and conditions cited above | https://www.irishstatutebook.ie/eli/1997/act/39/section/1084/enacted/en/html | 2026-11-27 |
+| s.85: cessation events and four-month rule | https://www.irishstatutebook.ie/eli/1974/act/27/section/85/enacted/en/html | 2026-11-27 |
+| s.2: Second Stage/recess deadline and dissolution | https://www.irishstatutebook.ie/eli/1991/act/32/section/2/enacted/en/html | 2026-11-27 |
+| s.250: revised dissolution exclusion | https://www.irishstatutebook.ie/eli/1992/act/9/section/250/enacted/en/html | 2026-11-27 |
+| s.552(1)–(5): costs and exclusions | https://www.irishstatutebook.ie/eli/1997/act/39/section/552/enacted/en/html | 2026-11-27 |
+| s.554(1)–(2): income deduction overlap | https://www.irishstatutebook.ie/eli/1997/act/39/section/554/enacted/en/html | 2026-11-27 |
+| s.546(1)–(6): loss scope and rate order | https://www.irishstatutebook.ie/eli/1997/act/39/section/546/enacted/en/html | 2026-11-27 |
+| s.547(1)–(4): non-arm’s-length values | https://www.irishstatutebook.ie/eli/1997/act/39/section/547/enacted/en/html | 2026-11-27 |
+| s.549(1)–(9): connected persons and restricted losses | https://www.irishstatutebook.ie/eli/1997/act/39/section/549/enacted/en/html | 2026-11-27 |
+| s.556(2)–(4): indexation and rebasing safeguards | https://www.irishstatutebook.ie/eli/1997/act/39/section/556/enacted/en/html | 2026-11-27 |
+| s.65: frozen statutory multiplier table | https://www.irishstatutebook.ie/eli/2003/act/3/section/65/enacted/en/html | 2026-11-27 |
+| s.580(1)–(6): FIFO and its scope | https://www.irishstatutebook.ie/eli/1997/act/39/section/580/enacted/en/html | 2026-11-27 |
+| s.581(1)–(5): four-week matching and restricted losses | https://www.irishstatutebook.ie/eli/1997/act/39/section/581/enacted/en/html | 2026-11-27 |
+| Loss restrictions, carryforward, spouse and death headings | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/if-you-make-a-loss.aspx | 2026-11-27 |
+| s.604(2)–(14): residence, periods and exclusions | https://www.irishstatutebook.ie/eli/1997/act/39/section/604/enacted/en/html | 2026-11-27 |
+| PPR occupation, absence and restriction headings | https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/principal-private-residence-ppr-relief.aspx | 2026-11-27 |
+| s.35: original ER definitions/qualifying assets | https://www.irishstatutebook.ie/eli/2015/act/52/section/35/enacted/en/html | 2026-11-27 |
+| s.24: current shareholding-period test | https://www.irishstatutebook.ie/eli/2020/act/26/section/24/enacted/en/html | 2026-11-27 |
+| s.48: ER holding-company definition | https://www.irishstatutebook.ie/eli/2023/act/39/section/48/enacted/en/html | 2026-11-27 |
+| s.30: connected-company restrictions/exceptions | https://www.irishstatutebook.ie/eli/2017/act/41/section/30/enacted/en/html | 2026-11-27 |
+| ER limits, qualifying tests and exclusions headings | https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx | 2026-11-27 |
+| s.598(1)–(7): eligibility, shares and aggregation | https://www.irishstatutebook.ie/eli/1997/act/39/section/598/enacted/en/html | 2026-11-27 |
+| Retirement thresholds, family, deferral and marginal-relief headings | https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx | 2026-11-27 |
+| s.55: twelve-year deferral and commercial reasons | https://www.irishstatutebook.ie/eli/2024/act/43/section/55/enacted/en/html | 2026-11-27 |
+| s.93: site relief, repeat claims and clawback | https://www.irishstatutebook.ie/eli/2001/act/7/section/93/enacted/en/html | 2026-11-27 |
+| s.53: garden area excludes construction site | https://www.irishstatutebook.ie/eli/2007/act/11/section/53/enacted/en/html | 2026-11-27 |
+| s.30: child’s spouse/civil partner inclusion | https://www.irishstatutebook.ie/eli/2018/act/30/section/30/enacted/en/html | 2026-11-27 |
+| Payment, return, registration and return-content headings | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx | 2026-11-27 |
+| 2026 ROS extension announcement: eligible return/payment years | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-11-27 |
+| s.71: replacement clearance eligibility | https://www.irishstatutebook.ie/eli/2003/act/3/section/71/enacted/en/html | 2026-11-27 |
+| s.145: CGT interest scope and delay | https://www.irishstatutebook.ie/eli/2005/act/5/section/145/enacted/en/html | 2026-11-27 |
+| s.29: interest table, 0.0219% | https://www.irishstatutebook.ie/eli/2009/act/12/section/29/enacted/en/html | 2026-11-27 |
+| s.1084(1)–(5): scope, surcharge, deductions and exceptions | https://www.irishstatutebook.ie/eli/1997/act/39/section/1084/enacted/en/html | 2026-11-27 |
 
 Not yet confirmed: specialist holds above and the conditional 2025 Galway absence claim are not usable conclusions. Future enactment/lapse after the read date, the applicable 2027 ROS extension, and record-specific destruction dates are not assumed. Check this point with one of our partner accountants.
