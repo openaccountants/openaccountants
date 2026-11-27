@@ -76,7 +76,6 @@ The levy thresholds apply from 2025-26 onward under [Act 58/2026 Sch 5 item 14](
 | Low-income threshold (family) | $47,238, or $61,623 if entitled to SAPTO, plus $4,338 for each qualifying dependant. Section 8 requires its spouse/dependant or notional-offset entitlement; a non-married claimant also needs family tax benefit payable for the dependant for at least part of the year. Family income includes the spouse’s taxable income where married at year end. Actual family reduction/spouse allocation: Check this point with one of our partner accountants. | [Medicare Levy Act 1986 s 8](https://www.legislation.gov.au/C2004A03351/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
 | SAPTO single | $44,268 / $55,335 for eligible SAPTO individuals | [Medicare Levy Act 1986 ss 3 and 7](https://www.legislation.gov.au/C2004A03351/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
 | MLS base tier | Single $101,000 / family $202,000 (then 1% / 1.25% / 1.5%) | [Commonwealth Ombudsman](https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm) |
-| PHI rebate eligibility and premium-period rates | Check this point with one of our partner accountants. | No rate supplied for use |
 
 - **2026-27 Medicare levy.** The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013. The SAPTO single thresholds are $44,268 and $55,335. Use the family row above for its separate entitlement and SAPTO rules. The standard levy rate is 2%. Within the individual phase-in range, cap the levy at 10% of taxable income above the applicable threshold before applying the family or prescribed-person adjustments. Prescribed-person and section 9A arrears adjustments: Check this point with one of our partner accountants.  _([Medicare Levy Act 1986, ss 3 and 6–9A](https://www.legislation.gov.au/C2004A03351/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html))_
 
@@ -89,6 +88,8 @@ The levy thresholds apply from 2025-26 onward under [Act 58/2026 Sch 5 item 14](
 
 Use income for surcharge purposes to select the tier. Add $1,500 to the family limits for each eligible dependent child after the first. Check hospital cover and exemptions for the relevant days.  _([Commonwealth Ombudsman, 2026-27 table](https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm))_
 
+**PHI rebate eligibility and premium-period rates.** Check this point with one of our partner accountants.
+
 ### Superannuation
 
 
@@ -98,15 +99,19 @@ Use income for surcharge purposes to select the tier. Add $1,500 to the family l
 | Payment deadline | Generally quarterly, received within 28 days after quarter end; the special failed-fund contribution route is referred | **Payday super from 1 Jul 2026: ordinarily received within 7 business days after the qualifying earnings day, with allocation information.** Section 18C(2) allows longer periods for specified first contributions, out-of-cycle payments and exceptional circumstances; allocate only eligible contributions | [SGAA 1992 s 23 (2025-26)](https://www.legislation.gov.au/C2004A04402/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html) and [ss 6, 18A and 18C (2026-27)](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
 | Concessional cap (general) | $30,000 | **$32,500**. Eligible unused amounts from the prior 5 years can increase the available cap if prior-30-June TSB is < $500,000 | [ATO contributions caps, table 1.1 and carry-forward conditions](https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/contributions-caps) |
 | Non-concessional cap (general) | $120,000 | **$130,000**; nil if prior-30-June TSB is at least the applicable general TBC | [ATO contributions caps, table 4 and note 1](https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/contributions-caps) |
-| NCC bring-forward arrangements and contribution acceptance | — | Check this point with one of our partner accountants. | No figure supplied for use |
 | General transfer balance cap | $2.0m | **$2.1m**; personal caps can differ with prior use and proportional indexation | [ATO TBC, table 26](https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/transfer-balance-cap) and [personal cap space](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/withdrawing-and-using-your-super/retirement-withdrawal-lump-sum-or-income-stream/transfer-balance-account) |
-| Lifetime CGT contribution cap and qualifying contributions | — | Check this point with one of our partner accountants. | No figure supplied for use |
-| Division 293 income/contribution test | — | Check this point with one of our partner accountants. | No figure supplied for use |
-| Div 296 | — | First-year balance example below only; full liability and earnings computation: Check this point with one of our partner accountants. | [ITAA 1997 ss 296-30, 296-260 and transitional s 296-1](https://www.legislation.gov.au/C2026A00008/asmade/2026-03-13/text/original/epub/OEBPS/document_1/document_1.html) |
-| Downsizer contribution conditions | — | Check this point with one of our partner accountants. | No figure supplied for use |
+| Div 296 | Not applicable | First-year balance example below only; full liability and earnings computation: Check this point with one of our partner accountants. | [ITAA 1997 ss 296-30, 296-260 and transitional s 296-1](https://www.legislation.gov.au/C2026A00008/asmade/2026-03-13/text/original/epub/OEBPS/document_1/document_1.html) |
 | SG maximum contribution base (per employer) | $62,500/quarter | **$270,830/year of qualifying earnings**; apply the crossing-payment adjustment | [ATO SG, tables 23-24](https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/super-guarantee) and [SGAA 1992 s 10A(5)-(6)](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
 
 The special 2025-26 failed-fund SG contribution extension: Check this point with one of our partner accountants.
+
+**NCC bring-forward arrangements and contribution acceptance.** Check this point with one of our partner accountants.
+
+**Lifetime CGT contribution cap and qualifying contributions.** Check this point with one of our partner accountants.
+
+**Division 293 income/contribution test.** Check this point with one of our partner accountants.
+
+**Downsizer contribution conditions.** Check this point with one of our partner accountants.
 
 ### Companies
 
@@ -115,11 +120,14 @@ The special 2025-26 failed-fund SG contribution extension: Check this point with
 | --- | --- | --- |
 | BRE rate | 25% where aggregated turnover is less than $50m and base rate entity passive income (BREPI) is no more than 80% of assessable income | [Rates Act ss 23(2)(a), 23AA and 23AB](https://www.legislation.gov.au/C2004A03348/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
 | Standard rate | 30% for companies that are not base rate entities, subject to special company rules | [Rates Act ss 23(2)(b), 23(3)-(5) and 23A](https://www.legislation.gov.au/C2004A03348/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
-| Company franking and imputation rate | Check this point with one of our partner accountants. | No rule supplied for use |
-| Corporate loss carry-back | Check this point with one of our partner accountants. | No rule supplied for use |
 | Div 7A benchmark | 8.77% for the year ending 30 June 2027; 8.37% for the year ending 30 June 2026. A substituted accounting period uses the relevant RBA rate last published before that period starts | [ATO benchmark table](https://www.ato.gov.au/tax-rates-and-codes/division-7a-benchmark-interest-rate) |
 | PAYG GDP uplift | 5% for 2026-27; 4% for 2025-26. Substituted income years starting January-March 2026 retain 4%; starts from 1 April 2026 use 5%. This uplift is for quarterly instalment amounts, not the instalment-rate method | [ATO developer 2026-27 statement and SAP rule](https://softwaredevelopers.ato.gov.au/GDPupliftfactor) |
-| Small/medium-business amendment windows | Check this point with one of our partner accountants. | No rule supplied for use |
+
+**Company franking and imputation rate.** Check this point with one of our partner accountants.
+
+**Corporate loss carry-back.** Check this point with one of our partner accountants.
+
+**Small/medium-business amendment windows.** Check this point with one of our partner accountants.
 
 ### FBT (year ending 31 March 2027)
 
@@ -128,10 +136,14 @@ The special 2025-26 failed-fund SG contribution extension: Check this point with
 | --- | --- | --- |
 | Rate | 47% | [ATO FBT rates, table 1](https://www.ato.gov.au/tax-rates-and-codes/fringe-benefits-tax-rates-and-thresholds) |
 | Type 1 / Type 2 gross-up | 2.0802 where the benefit provider is entitled to a GST credit / 1.8868 without that entitlement | [ATO FBT rates, tables 2-3](https://www.ato.gov.au/tax-rates-and-codes/fringe-benefits-tax-rates-and-thresholds) |
-| Reportable fringe benefits and exempt EV reporting | Check this point with one of our partner accountants. | No figure supplied for use |
-| EV/PHEV exemption and transitional commitments | Check this point with one of our partner accountants. | No figure supplied for use |
-| EV/PHEV home-charging method and records | Check this point with one of our partner accountants. | No figure supplied for use |
-| FBT record-keeping relief and base-year conditions | Check this point with one of our partner accountants. | No figure supplied for use |
+
+**Reportable fringe benefits and exempt EV reporting.** Check this point with one of our partner accountants.
+
+**EV/PHEV exemption and transitional commitments.** Check this point with one of our partner accountants.
+
+**EV/PHEV home-charging method and records.** Check this point with one of our partner accountants.
+
+**FBT record-keeping relief and base-year conditions.** Check this point with one of our partner accountants.
 
 ### CGT
 
@@ -139,10 +151,14 @@ The special 2025-26 failed-fund SG contribution extension: Check this point with
 | Item | Value | Source |
 | --- | --- | --- |
 | Discount | Generally 50% for eligible individual/trust discount gains from events before 1 July 2027; one-third for complying superannuation entities; ordinary companies have no discount. Generally requires an asset acquired at least 12 months before the CGT event, an unindexed cost base and no statutory exclusion. Foreign/temporary-resident and affordable-housing cases: Check this point with one of our partner accountants. | [ITAA 1997 ss 115-10 to 115-25 and 115-100 to 115-125](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html) |
-| CGT reform from 1 July 2027, deemed sales, indexation and minimum tax | Check this point with one of our partner accountants. | No rule supplied for use |
-| Foreign-resident capital gains withholding, clearance and variations | Check this point with one of our partner accountants. | No rule supplied for use |
-| Division 152 gateways and active-asset/share-interest conditions | Check this point with one of our partner accountants. | No rule supplied for use |
-| Small-business CGT retirement exemption and contribution/payment conditions | Check this point with one of our partner accountants. | No rule supplied for use |
+
+**CGT reform from 1 July 2027, deemed sales, indexation and minimum tax.** Check this point with one of our partner accountants.
+
+**Foreign-resident capital gains withholding, clearance and variations.** Check this point with one of our partner accountants.
+
+**Division 152 gateways and active-asset/share-interest conditions.** Check this point with one of our partner accountants.
+
+**Small-business CGT retirement exemption and contribution/payment conditions.** Check this point with one of our partner accountants.
 
 ### GST and indirect
 
@@ -150,9 +166,10 @@ The special 2025-26 failed-fund SG contribution extension: Check this point with
 | Item | Value | Source |
 | --- | --- | --- |
 | Rate / registration | 10% on taxable supplies. Generally an enterprise must register at $75,000 GST turnover ($150,000 for non-profit bodies): projected turnover meets the threshold, or current turnover meets it unless the Commissioner is satisfied projected turnover is below it. Taxi travel, including ride-sourcing, requires registration regardless of turnover | [GST Act ss 9-70, 23-5 and 23-15](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html) and [GST Act s 188-10](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html), [Regulations ss 23-15.01 and 23-15.02](https://www.legislation.gov.au/F2019L00417/2025-11-01/2025-11-01/text/original/epub/OEBPS/document_1/document_1.html) and [ATO ride-sourcing scope](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst) |
-| Instant asset write-off / enacted asset relief | Check this point with one of our partner accountants. | No deduction entitlement supplied for use |
 | Penalty unit | $330 (7 Nov 2024 -- 30 Jun 2026); **$364 from 1 Jul 2026**. Check the offence or contravention date and the applicable penalty provision | [2024 amendment, s 2 and Schedule 3](https://www.legislation.gov.au/C2024A00093/asmade/2024-10-24/text/original/epub/OEBPS/document_1/document_1.html) and [Crimes (Amount of a Penalty Unit) Instrument 2026, ss 2 and 5](https://www.legislation.gov.au/F2026N00424/asmade/2026-06-16/text/original/pdf) |
 | GIC | GIC and SIC are non-deductible for assessments for income years starting on or after 1 July 2025. Determine when the charge is incurred and apply substituted-accounting-period rules | [Tax Incentives and Integrity Act 2025, Schedule 2 items 1-4](https://www.legislation.gov.au/C2025A00029/asmade/2025-03-27/text/original/epub/OEBPS/document_1/document_1.html) |
+
+**Instant asset write-off / enacted asset relief.** Check this point with one of our partner accountants.
 
 ### Employers
 
