@@ -1,10 +1,10 @@
 ---
 name: de-non-resident-tax
-description: "Use this skill when a person or company that does not live in Germany has German income, or when a German resident needs credit for foreign tax. Tax year 2026. Covers unlimited vs limited liability (§ 1 EStG, §§ 8, 9 AO), the § 1(3) option (90% or EUR 12,348 test), § 1a EU/EEA splitting, German-source income under § 49 EStG, how a non-resident is assessed (§ 50: Grundfreibetrag added back, no splitting), wage tax for non-resident employees, § 50a withholding (15%, 30% on supervisory board fees), § 50c exemption and refund at the BZSt, Kapitalertragsteuer on dividends, and the § 34c and § 32d(5) foreign tax credits. Trigger on: beschränkte Steuerpflicht, non-resident Germany, § 1 Abs. 3 EStG, § 50a, Abzugsteuer, Kapitalertragsteuer Erstattung, Anrechnung ausländischer Steuer. Out of scope: rental computation (de-rental-income), resident employees (de-employee-income-tax), payroll mechanics (de-payroll), corporate tax (de-corporate-tax), exit tax (leaving-germany-exit-tax), Swiss commuters (germany-to-switzerland-cross-border-tax)."
-version: 0.5
+description: "Germany, tax year 2026: non-residents with German income; residence and limited liability; the § 1(3) application and § 1a spouse route; § 49 source tests; assessment versus final withholding; § 50a deductions and treaty relief; residents' foreign tax credits under §§ 32d(5) and 34c. Trigger on beschränkte Steuerpflicht, Abzugsteuer, non-resident Germany, foreign dividends and Anrechnung ausländischer Steuer. Use de-rental-income for rental computation, de-payroll for payroll, de-corporate-tax for companies, leaving-germany-exit-tax for departure and germany-to-switzerland-cross-border-tax for Swiss commuters. The explicit holds below supply no filing outcome."
+version: 0.6
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,198 +12,146 @@ domain: cross-border
 type: situation-rules
 ---
 
-# Germany: non-residents with German income, and foreign tax credits, tax year 2026
+# Germany: non-resident income and foreign tax credits, 2026
 
-This skill decides whether a person is taxed in Germany on worldwide income or only on German income, then works out how the German income is taxed: by assessment, by wage tax, or by a flat withholding. It also covers the reverse case: a German resident with foreign income who wants credit for the foreign tax.
-
-See also, and do not repeat here:
-
-- **de-employee-income-tax**: the 2026 tariff, Werbungskosten and special expenses for a resident employee. The tariff formula there is the one used below.
-- **de-rental-income**: how to compute the rental result (AfA, Werbungskosten, Anlage V). A non-resident landlord computes it the same way.
-- **de-capital-gains**: the flat tax on investment income, the Sparer-Pauschbetrag and the loss pots.
-- **de-payroll**: running wage tax for an employee, including tax class I.
-- **de-corporate-tax**: corporate tax at 15%, also for the German permanent establishment of a foreign company.
-- **leaving-germany-exit-tax**: shareholders who move out, and extended limited liability after a move to a low-tax country (§ 2 AStG).
-- **germany-to-switzerland-cross-border-tax**: Swiss commuters and moves to Switzerland.
-- **de-treaty-withholding-rates**: treaty withholding rates by country, § 43b, § 50g and § 50d(3).
+First establish residence, the German source of each income item, the applicable treaty and whether withholding settles the tax. This Guide covers both non-residents with German income and German residents claiming foreign tax credit. Its examples retain their original 2026 inputs.
 
 ## Who this applies to
 
-**Unlimited liability (§ 1(1) EStG).** A person with a residence (Wohnsitz) or habitual abode (gewöhnlicher Aufenthalt) in Germany is taxed on worldwide income.
-
-- **Residence (§ 8 AO):** a home the person keeps and uses, in circumstances showing they will keep and use it. A flat kept available in Germany is enough, even if the person spends most of the year abroad.
-- **Habitual abode (§ 9 AO):** staying in a way that shows the stay is not just temporary. A continuous stay of more than six months always counts, from the first day; short breaks are ignored. The six-month rule does not apply to a purely private stay (visit, holiday, cure) of up to one year (§ 9 sentence 3 AO).
-- **German state employees abroad (§ 1(2) EStG):** German nationals paid from a German public purse, taxed abroad only like non-residents, stay fully liable.
-
-**Limited liability (§ 1(4) EStG).** A person with neither residence nor habitual abode in Germany is taxed only on German-source income listed in § 49 EStG.
-
-**The § 1(3) option.** A non-resident can apply to be treated as fully liable for their German income if, in the calendar year, either:
-
-- at least 90% of their total income is subject to German income tax, or
-- the income not subject to German tax is no more than the Grundfreibetrag, EUR 12,348 for 2026. The amount is cut to ¾, ½ or ¼ for residents of lower-cost countries (BMF country groups; Austria and most of Western Europe are in group 1, full amount).
-
-German income that a tax treaty limits to a reduced rate (for example dividends) counts as not subject to German tax for the test (§ 1(3) sentence 3). The foreign income must be shown by a certificate from the foreign tax authority (§ 1(3) sentence 5). § 50a withholding still applies (§ 1(3) sentence 6).
-
-**§ 1a EStG, EU/EEA nationals.** An EU or EEA national who is fully liable under § 1(1) or treated so under § 1(3) can have a spouse who lives in another EU/EEA state treated as fully liable, so the couple gets joint assessment and splitting. For the § 1(3) test the income of both spouses counts and the Grundfreibetrag is doubled to EUR 24,696 (§ 1a(1) no. 2). A non-EU/EEA national under § 1(3) gets the Grundfreibetrag but not splitting.
-
-**Companies.** A company with neither its seat nor its place of management in Germany has limited corporate tax liability on its German income (§ 2 no. 1 KStG). Income settled by withholding is final unless it belongs to a German business (§ 32(1) KStG). A German permanent establishment is assessed at the 15% corporate rate (§ 23 KStG; see de-corporate-tax).
+- **Residence:** domestic residence or habitual abode establishes unlimited income-tax liability (§ 1(1) EStG). A residence is a dwelling held in circumstances showing it will be retained and used (§ 8 AO); merely counting days does not decide this. Habitual abode means more than temporary presence. A continuous stay exceeding six months counts from its start, ignoring short interruptions; the automatic six-month rule excludes exclusively private visits, holidays, cures or similar stays lasting no more than one year (§ 9 AO).
+- **Limited liability:** absent domestic residence/abode, German-source income under § 49 is taxable, subject to § 1(2), § 1(3) and § 1a (§ 1(4)). German public-service cases abroad and their household members: no eligibility conclusion is supplied here. Check this point with one of our partner accountants.
+- **§ 1(3) application:** a non-resident individual with § 49 income can apply for full-liability treatment of that income if at least **90%** of calendar-year income is subject to German income tax, or income outside German income tax does not exceed the **EUR 12,348** 2026 basic allowance, reduced where appropriate for residence-state conditions. German income treaty-taxable only at a limited rate counts as outside German tax for this test. Exclude foreign-untaxed income to the extent comparable German income would be exempt (§ 1(3) sentences 1–4). Obtain the foreign tax authority's certificate of income outside German tax; § 50a withholding still applies (sentences 5–6). These are income amounts under German tax rules, not gross receipts.
+- **Country reduction:** do not use the former asserted group fractions or Austria/group-1 classification to establish eligibility; this Guide does not establish the applicable country list. Check this point with one of our partner accountants. The 90% alternative remains available without relying on that amount test.
+- **Spouses:** for EU/EEA nationals fully liable under § 1(1) or treated so under § 1(3), a spouse without German residence/abode, resident in another EU/EEA state and not permanently separated, may apply for full-liability treatment for § 26(1). For the § 1(3) test use both spouses' income and twice the basic allowance, **EUR 24,696** for 2026; still test the country reduction. Joint assessment and splitting require the remaining § 26 conditions and election (§ 1a(1) no. 2). Do not infer that every non-EU/EEA national is barred under every special provision or treaty; other spouse/public-service/Swiss routes are held. Check this point with one of our partner accountants.
+- **Companies:** no German seat or management gives limited corporate liability on German income (§ 2 no. 1 KStG). The 2026 corporate rate is **15% of taxable income** (§ 23), before any other applicable taxes. Withholding finality under § 32(1) no. 2 excludes income arising in a domestic commercial or agricultural/forestry business; § 32(2) also supplies mixed-year, qualifying application and other exceptions. Use **de-corporate-tax** for the computation; no corporate final-liability conclusion is supplied here. Check this point with one of our partner accountants.
 
 ## Rates, bands and thresholds
 
-| Item | Rate or amount | Year | Source |
-|---|---|---|---|
-| Grundfreibetrag (basic allowance) | EUR 12,348 | 2026 | https://www.gesetze-im-internet.de/estg/__32a.html |
-| 2026 tariff, zone 3 (taxable EUR 17,800 to 69,878) | (173.10 × z + 2,397) × z + 1,034.87, z = (taxable − 17,799) / 10,000; full tariff in de-employee-income-tax | 2026 | Same |
-| Non-resident assessment | Tariff applied to taxable income plus EUR 12,348; for German employment income the add-back is only the part of EUR 12,348 above that income (net of allowed deductions) | 2026 | https://www.gesetze-im-internet.de/estg/__50.html (§ 50(1) sentence 2) |
-| § 1(3) test | German-taxed income at least 90% of total, or non-German income at most EUR 12,348 (scaled by country group) | 2026 | https://www.gesetze-im-internet.de/estg/__1.html |
-| § 1a test for a couple | Both spouses' income; non-German income at most EUR 24,696 | 2026 | https://www.gesetze-im-internet.de/estg/__1a.html |
-| Country groups (Ländergruppen) | Group 1 full amount, group 2 ¾, group 3 ½, group 4 ¼ | From 2025, until replaced | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-12-02-beruecks-auslaendischer-verhaeltnisse.pdf |
-| § 50a withholding: artists, athletes, entertainers, royalties | 15% of gross receipts | 2026 | https://www.gesetze-im-internet.de/estg/__50a.html (§ 50a(2)) |
-| § 50a withholding: supervisory board fees | 30% of gross receipts | 2026 | Same |
-| § 50a, net basis for eligible EU/EEA creditors | Only § 50a(1) nos. 1, 2 and 4, not royalties under no. 3: 30% for individuals, 15% for eligible companies, on net receipts after proven directly related costs | 2026 | Same, § 50a(3) |
-| § 50a small performances | No withholding if receipts per performance are no more than EUR 250 | 2026 | Same, § 50a(2) sentence 3 |
-| § 50a ordered by the tax office | 25% of gross (15% for companies) | 2026 | Same, § 50a(7) |
-| Solidarity surcharge on § 50a and Kapitalertragsteuer | 5.5% of the tax withheld | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html (§ 3(1) nos. 5, 6) and __4.html |
-| Kapitalertragsteuer on dividends | 25% plus 5.5% surcharge (26.375% in total) | 2026 | https://www.gesetze-im-internet.de/estg/__43a.html; BZSt page in Sources |
-| Refund for a foreign company with limited corporate tax liability | Two fifths of the Kapitalertragsteuer withheld; further treaty or directive claims are not affected | 2026 | https://www.gesetze-im-internet.de/estg/__44a.html (§ 44a(9)) |
-| § 50c exemption for small royalties | Payer need not withhold where a treaty bars German tax and royalties from that payer in the year stay at or below EUR 10,000 | 2026 | https://www.gesetze-im-internet.de/estg/__50c.html (§ 50c(2) no. 2) |
-| § 50c refund deadline | Four years from the end of the year of receipt; not before one year after the tax was paid, nor before any longer treaty period | 2026 | Same, § 50c(3) sentence 2 |
-| Flat tax on a resident's capital income | 25%, less foreign tax capped at 25% of each item and at the German tax on it | 2026 | https://www.gesetze-im-internet.de/estg/__32d.html (§ 32d(1), (5)) |
-| Solidarity surcharge threshold, assessment | None while income tax is at most EUR 20,350 (EUR 40,700 joint); always 5.5% on § 32d(3) and (4) tax | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html |
+| Item | 2026 rule | Official source |
+|---|---|---|
+| § 1(3) application | 90% alternative or EUR 12,348 amount test, subject to conditions above | https://www.gesetze-im-internet.de/estg/__1.html; https://www.gesetze-im-internet.de/estg/__32a.html |
+| § 1a couple amount test | EUR 24,696, derived as twice EUR 12,348; conditions above | https://www.gesetze-im-internet.de/estg/__1a.html; https://www.gesetze-im-internet.de/estg/__32a.html |
+| Tariff used in rental example | For rounded taxable income EUR 17,800–69,878: (173.10 × z + 2,397) × z + 1,034.87; z is one ten-thousandth of rounded income above EUR 17,799; round tax down to whole euros | https://www.gesetze-im-internet.de/estg/__32a.html |
+| § 50a gross withholding | 15%; supervisory monitoring fees under subsection (1) no. 4: 30%; travel rule below | https://www.gesetze-im-internet.de/estg/__50a.html |
+| § 50a small performance | No withholding for subsection (1) no. 1 only, if receipts per performance do not exceed EUR 250 | https://www.gesetze-im-internet.de/estg/__50a.html |
+| § 50a net withholding | 30% individual / 15% eligible entity; only subsection (1) nos. 1, 2 and 4 and the eligibility/evidence gates below | https://www.gesetze-im-internet.de/estg/__50a.html |
+| Ordinary dividend withholding | 25% plus solidarity surcharge of 5.5% of withheld tax: derived total 26.375%, before relief and excluding church tax | https://www.gesetze-im-internet.de/estg/__43a.html; https://www.gesetze-im-internet.de/solzg_1995/__3.html; https://www.gesetze-im-internet.de/solzg_1995/__4.html |
+| § 50c small-royalty exception | Cumulative same-payer payments no more than EUR 10,000 in the calendar year, only where a treaty excludes German tax | https://www.gesetze-im-internet.de/estg/__50c.html |
 
 ## The taxable base
 
-### Step 1: is the income German-source? (§ 49 EStG)
+### 1. German-source income: domestic law first, treaty second
 
-The common cases:
+This is a screening matrix, not a replacement for all of § 49. A German payer alone does not establish every source category.
 
-| Income | German-source when | § 49(1) |
+| Income | Domestic source test / exception | Official source |
 |---|---|---|
-| Business profits | There is a permanent establishment or a permanent representative in Germany | no. 2(a) |
-| Artists, athletes, entertainers | The performance takes place or is exploited in Germany, whoever receives the money | no. 2(d), 3, 9 |
-| Sale of shares in a company | The conditions of § 17 apply and the company has its seat or management in Germany; or the property-company branch applies: at some time in the 365 days before disposal, more than 50% of the share value rested directly or indirectly on German immovable property and the shares were attributable to the seller at that time. For that percentage, use the active business assets at the book values that would have applied at that time, rather than market values. The separate statutory restructuring branch and treaty override must also be tested where relevant. | no. 2(e)(aa)–(cc) |
-| Self-employed work | Performed or exploited in Germany, or a fixed base in Germany | no. 3 |
-| Employment | Work done in Germany; or pay from a German public purse; or pay as managing director (Geschäftsführer), Prokurist or board member of a company managed in Germany | no. 4(a), (b), (c) |
-| Dividends | The paying company has its seat or management in Germany | no. 5(a) |
-| Rent | Domestic location, domestic registration or exploitation in a German permanent establishment or other facility, within the property/right categories in no. 6. For other rights whose only domestic link is registration in a German public book or register, no. 6 excludes the income if the rental is between parties not related under § 1(2) AStG, or applicable treaty provisions, taking account of the Act's treaty-application rules, oppose taxation. An actual domestic location or exploitation link must be tested separately. | no. 6 |
-| Sale of German land | Privately held: inside the ten-year period of § 23 EStG (no. 8). Held in a business, or by a foreign company: always, with no time limit (no. 2(f)) | no. 8, no. 2(f) |
-| German pensions | Paid by a German statutory pension fund, insurer or pension scheme | no. 7 |
+| Business | German permanent establishment or permanent representative under no. 2(a) | https://www.gesetze-im-internet.de/estg/__49.html |
+| Self-employed work | Performed or exploited in Germany, now or previously, or a German fixed facility/PE under no. 3 | https://www.gesetze-im-internet.de/estg/__49.html |
+| Performances | Domestic performance or exploitation under no. 2(d), with employment/self-employment priority; § 50a distinguishes performance from exploitation | https://www.gesetze-im-internet.de/estg/__49.html; https://www.gesetze-im-internet.de/estg/__50a.html |
+| Employment | Domestic exercise or exploitation under no. 4(a); German-managed company's managing director, Prokurist or board remuneration under no. 4(c). Public-purse pay, treaty-assigned foreign work, severance, aviation and release-from-work branches require their own conditions; no outcome supplied. Check this point with one of our partner accountants. | https://www.gesetze-im-internet.de/estg/__49.html |
+| Dividends | § 20(1) no. 1 income where the debtor has German residence, management or seat, subject to no. 5(a)'s further branches | https://www.gesetze-im-internet.de/estg/__49.html |
+| Rent | German-situated immovable property; other property/rights must meet no. 6's domestic location, registration or exploitation test and its category priority | https://www.gesetze-im-internet.de/estg/__49.html |
+| Shares | No. 2(e) requires § 17 conditions, and a German seat/management, its restructuring branch, or its property-company branch. For the latter, more than 50% of share value must derive directly/indirectly from German immovable property at some time in the preceding 365 days, with the shares attributable to the seller then. Determine the proportion using active business assets at the book values then applicable. Restructuring and the full § 17/treaty computation are held. Check this point with one of our partner accountants. | https://www.gesetze-im-internet.de/estg/__49.html |
+| Registered rights | In both no. 2(f) and no. 6, where registration is the sole domestic link for other rights, exclude income if the relevant transaction is between non-related parties under § 1(2) AStG **or** the applicable treaty, including its statutory application rules, opposes taxation. This does not remove an actual domestic location/exploitation link or exempt German land | https://www.gesetze-im-internet.de/estg/__49.html |
+| German land sale | Private property: no. 8 and § 23's period of **no more than ten years**, including its own-home exemption; business/comparable foreign corporate property follows no. 2(f), without that private holding-period exemption. No gain computation supplied; use **de-capital-gains** and **de-rental-income** | https://www.gesetze-im-internet.de/estg/__49.html; https://www.gesetze-im-internet.de/estg/__23.html |
+| Pensions | No. 7 includes specified German statutory/professional/insurance/other payers and certain foreign-payer benefits backed by previously deducted contributions; no. 10 separately covers § 22 no. 5 benefits. No blanket exemption for foreign payers or pension computation supplied. Check this point with one of our partner accountants. | https://www.gesetze-im-internet.de/estg/__49.html |
 
-For business rental or disposal of other rights under § 49(1) no. 2(f), apply its corresponding registry-only exception: where registration is the sole domestic source link, income is excluded if the parties are not related under § 1(2) AStG, or the applicable treaty, with the Act's treaty-application rules, opposes taxation. This does not exempt German land or override a different domestic source link. A property-company separator: German real-estate active book assets of EUR 40 and other active book assets of EUR 60 fail the strict more-than-50% test even if the property's market value is EUR 90. Book assets of EUR 60 and EUR 40 pass that percentage test only if the seller-attribution and relevant-time conditions also hold; the separate § 17 and treaty tests still apply.
+**Property-company separators, preserved:** German real-estate active book assets **EUR 40**, other active book assets **EUR 60** give 40%, failing the strict majority even if property market value is **EUR 90**. Book assets **EUR 60 / EUR 40** give 60%, passing only this percentage gate; the dated attribution, § 17 and treaty tests still apply.
 
-Ordinary interest from a German bank account or a listed bond is not on the list (§ 49(1) no. 5(c) covers only loans secured on German land and certain profit-participation rights, and no. 5(d) only over-the-counter coupon payments), so a non-resident is not taxed on it.
+**Interest:** do not use the former blanket exemption for German bank accounts/listed bonds. No. 5(c) contains secured-claim, ship, bond and participation-right distinctions, and no. 5(d) separate coupon/security-payment rules; a business connection can change classification. For anything beyond an ordinary unsecured private bank deposit with no other German source link, no source/tax conclusion is supplied. Check this point with one of our partner accountants.
 
-### Step 2: is the tax settled by withholding? (§ 50(2) EStG)
+### 2. Assessment versus final withholding
 
-For a person remaining subject to limited liability, income subject to wage tax, Kapitalertragsteuer or § 50a withholding is generally settled by that withholding. Test all the exceptions in § 50(2) sentence 2 before treating it as final:
+For individuals remaining under limited liability, wage tax, capital withholding and § 50a generally settle the income tax (§ 50(2) sentence 1). Before using that result test every sentence-2 exception:
 
-- income of a German business (permanent establishment);
-- German employment income under § 49(1) no. 4 where a § 39a(4) allowance was entered and annual pay exceeds the Grundfreibetrag plus the employee and special-expense lump sums (no. 4(a)); an application under § 46(2) no. 8 (no. 4(b)); or the § 46(2) nos. 2, 5 and 5a cases (no. 4(c));
-- employment applications connected with extraordinary income under § 34(1) and (2) nos. 2 and 4 (no. 4(d)), or an application for a foreign-tax credit under § 50d(7) sentence 2 (no. 4(e)); these have their own gates, rather than no. 4(b)'s nationality/residence restriction;
-- income under § 50a(1) nos. 1, 2 and 4 on application (no. 5; assessed by the BZSt);
-- a later finding that the conditions for full liability under § 1(2), § 1(3) or § 1a were not met (no. 2), or the mixed-year case under § 2(7) sentence 3 (no. 3);
-- the specified life-insurance capital income under § 49(1) no. 5 sentence 1(a), to which § 20(1) no. 6 sentence 2 applies, on application (no. 6).
+- domestic business income (no. 1); retrospectively failed § 1(2), § 1(3) or § 1a status (no. 2); and a mixed-liability year under § 2(7) sentence 3 (no. 3);
+- employment under § 49(1) no. 4: § 39a(4) allowance plus annual wages above basic allowance + employee allowance + special-expense allowance (4(a)); application under § 46(2) no. 8 (4(b)); § 46(2) nos. 2, 5, 5a (4(c)); application associated with § 34(1)/(2) nos. 2, 4 extraordinary income (4(d)); or § 50d(7) sentence-2 credit application (4(e));
+- § 50a(1) nos. 1, 2, 4 on application (no. 5; BZSt assessment), and the specified no. 5(a) capital income within § 20(1) no. 6 sentence 2 on application (no. 6; debtor's income-tax office, first payer if several).
 
-The EU/EEA nationality and residence restriction in § 50(2) sentence 7 applies to no. 4(b) and no. 5. Sentence 8 additionally extends no. 4(b) to the specified EU/EEA nationals resident in Switzerland and Swiss nationals resident in the EU or Switzerland. It is not a general restriction on no. 4(d), no. 4(e) or no. 6. For no. 4 employment cases use the competent employer's Betriebsstättenfinanzamt under sentences 3–6; for no. 6 use the debtor's income-tax office under sentence 10. The referred special-tariff, insurance and credit computations are not supplied by this assessment-gate list. A person actually qualifying for full liability under § 1(3) or § 1a follows that full-liability route instead.
+Only **4(b) and 5** have sentence 7's EU/EEA nationality **and** EU/EEA residence gate. Sentence 8 extends **4(b)** to the specified EU/EEA nationals resident in Switzerland and Swiss nationals resident in the EU or Switzerland. It does not impose those nationality/residence gates on 4(d), 4(e) or 6. Employment cases use the competent Betriebsstättenfinanzamt under sentences 3–6. This list establishes routes, not special-tariff, insurance or foreign-credit amounts. For those computations: Check this point with one of our partner accountants. Income not settled by withholding follows assessment; an actual § 1(3)/§ 1a qualifying person follows that route instead.
 
-Income with no withholding, such as rent, a German business or a sale of German land, is always assessed.
+### 3. Limited-liability assessment
 
-### Step 3: the assessment of a non-resident (§ 50(1) EStG)
+Deduct business expenses/Werbungskosten only to the extent economically connected with German income (§ 50(1) sentence 1). The personal deductions and reliefs listed in sentence 4, including § 10c, child allowances, extraordinary burdens and § 35a/§ 35c, are excluded; ordinary spouse splitting is unavailable. The professional-pension exception under § 50(1a) has mandatory-admission, nationality/residence, direct-connection, allocation and foreign-deduction limits; no entitlement or amount supplied here. Check this point with one of our partner accountants.
 
-1. **Income.** Compute each type as for a resident. Business expenses and Werbungskosten count only if they relate to the German income.
-2. **No personal deductions.** Special expenses, the EUR 36 lump sum, single-parent relief, child allowances, extraordinary burdens and § 35a credits do not apply (§ 50(1) sentence 4). There is no splitting. Exception under § 50(1a): mandatory contributions to a professional pension institution can qualify where membership arises from the admission required for the German professional practice. It covers EU/EEA nationals resident in the EU/EEA or Switzerland, and Swiss nationals resident in the EU or Switzerland. Contributions must directly relate to German income under § 49(1) no. 2 or 3 from that admitted practice; the deduction follows German qualifying income divided by the total positive German and foreign income from that practice. It is excluded to the extent already deducted in the residence state or exceeding the German qualifying income.
-3. **Employees are the exception.** For employment income under § 49(1) no. 4, pension and health insurance contributions and the EUR 36 lump sum are allowed, for the period of the German employment and up to that employment income (§ 50(1) sentence 5). The employee lump sum (EUR 1,230, § 9a) is a Werbungskosten lump sum and applies anyway; it and the EUR 36 are cut pro rata for part-year work (§ 50(1) sentence 6).
-4. **Grundfreibetrag added back.** Apply the tariff to taxable income plus EUR 12,348. For employment income, add only the part of EUR 12,348 above the employment income less allowed deductions. In effect a non-resident employee keeps the allowance on wages; a landlord or business owner does not.
-5. **Solidarity surcharge.** Establish the assessment base under § 3 SolzG; it is not automatically the unadjusted income-tax amount. For an ordinary single assessment with no § 32d(3) or (4) tax component, it is zero when that base is at most EUR 20,350. Above that threshold, take the smaller of 5.5% of the base and 11.9% of the excess over EUR 20,350, dropping fractions of a cent (§§ 3(3), 4 SolzG). A stipulated base of EUR 20,400 gives min(EUR 1,122, EUR 5.95) = EUR 5.95. The separate § 32d(3)/(4) component and the withholding branches retain their own 5.5% treatment and do not receive this ordinary threshold/cap.
+For § 49(1) no. 4 employment, § 50(1) sentence 5 permits the specified § 10(1) no. 2(a)/no. 3 and § 10(3), plus § 10c, only for the German-employment period and up to that employment income. Annual/monthly § 9a no. 1 and § 10c lump sums reduce proportionately for partial periods (sentence 6). Use **de-employee-income-tax** for qualifying deductions; no unrestricted pension/health deduction is implied.
 
-### Step 4: the § 1(3) assessment instead
+For the tariff, increase taxable income by the **EUR 12,348** basic allowance. For employment under no. 4, add only the positive excess of that allowance over the employment income less sentence-5 deductions (§ 50(1) sentence 2). Special progression/AStG rate cases follow sentence 3; no amount is supplied here. Check this point with one of our partner accountants.
 
-The person is taxed as a resident on their German income: Grundfreibetrag, special expenses, the EUR 36 lump sum and the resident deductions apply. Income that is not subject to German tax is left out of the base but raises the rate (progression, § 32b(1) no. 5 EStG): the tax rate is found on taxable income plus that foreign income, then applied to taxable income alone. Splitting needs § 1a. Foreign capital income is a special case: § 2(5b) EStG keeps capital income under § 32d(1) out of "income" wherever the law refers to it, and whether foreign interest or dividends of a § 1(3) applicant count in the 90% test and in the progression is not settled here (see Not yet confirmed).
+**Solidarity surcharge:** establish the § 3 SolzG assessment base, including the statutory child-allowance recalculation where applicable. Excluding the separate § 32d(3)/(4) component, the ordinary threshold is **EUR 20,350**, or **EUR 40,700** for § 32a(5)/(6) cases. Above it use the smaller of **5.5%** of that base and **11.9%** of its excess over the threshold, dropping fractions of a cent (§ 4). A stipulated ordinary single base of **EUR 20,400** gives min(1,122; 5.95) = **EUR 5.95**. § 32d(3)/(4) tax and capital/§ 50a withholding have their separate **5.5%** treatment without this ordinary threshold/cap.
 
-### Wage tax for non-resident employees
+### 4. § 1(3), employment administration and mixed years
 
-- Non-resident employees are in tax class I (§ 38b(1) no. 1(b) EStG), unless treated as fully liable under § 1(3) or § 1a.
-- The employer's Betriebsstättenfinanzamt (the tax office for the place of business), not a residence office, sets and changes their wage tax data and issues the tax ID (§ 39(2) sentence 2 and § 39(3) EStG).
-- A § 1(3) or § 1a employee with wage tax data set this way must file (§ 46(2) no. 7(b) EStG). An employee who wants § 1(3) treatment only in the assessment applies with a return (§ 46(2) no. 9), at the employer's Betriebsstättenfinanzamt.
+With § 1(3), assess German income with the applicable resident deductions rather than the limited-liability add-back. The § 10c allowance is **EUR 36** absent higher qualifying expenses. Foreign income within § 32b(1) no. 5 changes the rate, not the German taxable base; calculate under subsection (2). The no. 3 foreign-rent exception does not extend to no. 5. Foreign capital income and its interaction with § 2(5b), treaty or extraordinary-income exceptions and the final progression-rounding method are held; no eligibility or filing amount is supplied for those branches. Check this point with one of our partner accountants.
 
-### § 50a withholding (artists, athletes, royalties, supervisory boards)
+Remaining limited-liability employees generally use class I under § 38b(1) no. 1(b), subject to multiple-employment class VI; use **de-payroll** for payroll. The Betriebsstättenfinanzamt forms/changes the relevant non-resident/§ 1(3) wage data (§ 39(2)); apply there for an initial identification number (§ 39(3)), rather than treating it as the body that allocates every number. § 46(2) no. 7(b) requires assessment where wage data was formed for the specified § 1(3)/§ 1a population; no. 9 covers an assessment application combined with a § 1(3) application, with employer-office jurisdiction.
 
-- The German payer withholds when the payment is made: 15% of gross, 30% for supervisory board fees, plus 5.5% surcharge on the tax. Travel and hotel costs the payer refunds count as receipts only above actual cost and the per diem lump sums.
-- For § 50a(1) nos. 1, 2 and 4 only, the payer may deduct directly related costs proved in a form the BZSt can check or paid by the payer, then withhold 30% for an EU/EEA national resident in the EU/EEA, or 15% for a company meeting § 32(4) KStG. This net route does not apply to royalties under § 50a(1) no. 3 (§ 50a(3)).
-- The payer files the withholding return with the BZSt by the 10th of the month after each calendar quarter and pays it over (§ 50a(5)). It must file even when nothing is withheld. The payer is liable for tax not withheld; the creditor can also be pursued.
-- On request the payer issues a certificate of the tax withheld (§ 50a(5) sentence 7). The creditor needs it for a refund.
+For a mixed residence year, § 2(7) brings German income of the limited-liability period into the full-liability assessment; § 32b(1) no. 2 governs relevant foreign income of that year. No unconditional progression amount is supplied. Check this point with one of our partner accountants. Departure with shares, extended limited liability and Swiss commuter cases remain routed to **leaving-germany-exit-tax** and **germany-to-switzerland-cross-border-tax**.
 
-### Treaty relief: exemption and refund (§ 50c EStG)
+### 5. § 50a withholding and § 50c relief
 
-- The payer withholds in full even when a treaty limits German tax, unless the creditor holds an exemption certificate (Freistellungsbescheinigung) from the BZSt (§ 50c(1), (2)). For dividends, a treaty exemption certificate is given only to a company holding at least 10% of a German company.
-- Small royalties: where a treaty bars German tax and the year's royalties from that payer stay at or below EUR 10,000, the payer need not withhold (§ 50c(2) no. 2), but must still file the withholding return.
-- Refund: the creditor applies to the BZSt, electronically, within four years from the end of the year of receipt, with a residence certificate from their own tax authority and the payer's tax certificate (§ 50c(3), (5)). The BZSt warns that refunds can take more than 20 months.
-- Companies: § 50d(3) denies relief to the stated extent where both conditions hold: participating or constitutionally benefited persons would not have the entitlement if they earned the income directly, and the income source has no substantial connection with the entity's economic activity. Merely receiving or passing on the income, or activity through a business operation not adequately equipped for its purpose, is not economic activity for this test. The denial does not apply to the extent the entity proves that obtaining a tax advantage was not one of the main purposes of its interposition, or where its main class of shares is substantially and regularly traded on a recognised exchange. § 42 AO remains applicable. Lack of other economic activity alone does not displace an established statutory rebuttal; neither rebuttal nor listing creates an entitlement without the other relief conditions.
+§ 50a(1) covers domestic performances (excluding employment already under the specified wage withholding), domestic exploitation, specified rights/know-how and professional-sports engagement rights, and supervisory monitoring fees. The payer withholds when the creditor receives payment. Gross rates are in the table. Reimbursed/assumed travel and accommodation enter receipts only above actual cost; meal payments only above the statutory travel allowances (§ 50a(2)). Solidarity surcharge is 5.5% of the withholding tax.
 
-### Kapitalertragsteuer on dividends to non-residents
+The net route applies only to § 50a(1) nos. 1, 2 and 4: directly connected expenses must be proved in a form BZSt can verify or borne by the payer. Individuals must be EU/EEA nationals resident in the EU/EEA (30% net tax). Entities must meet § 32(4) KStG's EU/EEA legal-formation, society, seat and management conditions (15% net tax). Royalties under no. 3 cannot use this route (§ 50a(3)). The EUR 250 performance exception does not cover royalties, supervisory fees or exploitation under no. 2.
 
-The German company withholds 25% plus 5.5% surcharge, 26.375% in all, whoever the shareholder is. For a non-resident shareholder without a German business, that settles the German tax. The excess over the treaty rate is reclaimed from the BZSt under § 50c(3). Example: a treaty limit of 15% gives a refund of 26.375% − 15% = 11.375% of the gross dividend. For a capital-income creditor that is a corporation subject to limited liability within § 2 no. 1 KStG, § 44a(9) provides a refund of two fifths of the Kapitalertragsteuer actually withheld and remitted. This incorporates the application/procedure in § 50c(3) and (5) and the anti-abuse test and exceptions in § 50d(3); it is not an unconditional refund for every foreign company. Further statutory or treaty relief claims remain separate. The treaty rate itself depends on the treaty; see de-treaty-withholding-rates for the rates by country.
+A tax office may order withholding to secure tax on otherwise non-withheld income: normally **25% gross**, **15%** for entities, adjustable to expected tax. File/pay to that office on its ordered timetable; § 50(2) finality does not apply (§ 50a(7)).
 
-### Foreign tax credit for residents (§ 34c and § 32d(5) EStG)
+Ordinary § 50a returns/payment go to BZSt by the **10th of the month after each quarter**, with § 108(3) weekend/holiday adjustment. Returns remain required under the specified small-performance, second-stage and § 50c exemptions. The payer is liable for withholding/remittance; the creditor may be pursued for defective withholding. Give the statutory tax certificate on request (§ 50a(5)). Second-stage withholding relief itself is held. Check this point with one of our partner accountants.
 
-Which rule applies depends on the income:
+A treaty or §§ 43b/50g entitlement does not alone stop withholding (§ 50c(1)). A BZSt exemption certificate permits relief to its extent; it is limited to at most five years, starts no earlier than receipt of the application, and remains conditional. For treaty capital-withholding certificates the creditor must be a corporation subject to residence-state income/profit tax without exemption, directly holding at least **10%** of the nominal capital of the specified fully taxable German corporation (§ 50c(2)). The small-royalty exception uses cumulative same-payer receipts including the present payment up to **EUR 10,000**, and requires that a treaty bars German tax. Filing remains required; do not simply omit withholding for a royalty treaty that merely reduces the rate.
 
-- **Capital income under the flat tax (§ 32d(1)), such as foreign dividends and interest of a private investor.** § 34c does not apply (§ 34c(1) sentence 1, second half). The foreign tax is credited under § 32d(5): at most 25% of each item, and at most the German tax on the capital income. The flat tax is then (e − 4q) / 4 without church tax, where e is the capital income after the Sparer-Pauschbetrag and q the creditable foreign tax (§ 32d(1) sentence 4). Income that had no German Kapitalertragsteuer, for example through a foreign broker, is declared in the return (§ 32d(3)).
-- **Other foreign income taxed at the tariff (for example foreign rent, foreign business income).** § 34c(1) applies where no treaty exists; where a treaty provides for a credit, § 34c(6) applies the same method. Capital income assessed under the § 32d(6) Günstigerprüfung instead keeps the § 32d(5) credit, capped at the additional tariff tax on that capital income (§ 32d(6) sentence 2). For income within § 34c, the foreign tax is credited up to the German tax on that income:
+Refunds under § 50c(3) require a timely BZSt application and tax that was withheld/remitted or paid under the stated liability/recovery notices, and cannot be credited under § 36(2) no. 2. The four-year period starts at the end of the receipt year and ends no earlier than one year after tax payment or the treaty deadline. Supply the capital certificate/data or § 50a certificate as applicable; transmit through the official interface with residence confirmation from the foreign tax authority. A hardship waiver permits the prescribed paper form (§ 50c(5)). No processing-time promise is supplied.
 
-  credit cap = German tariff tax × foreign income from that country / taxable income (sentence 2: the average rate on the whole taxable income, applied to the foreign income).
+**Entity anti-abuse:** § 50d(3) denies treaty relief to the stated extent where **both** owner/beneficiary direct-entitlement and source-to-economic-activity tests fail. Mere receipt/pass-through or inadequately equipped operations do not establish economic activity. Denial does not apply to the extent the entity proves no main interposition purpose was obtaining a tax advantage, or its main share class is substantially and regularly traded on a recognised exchange; § 42 AO remains applicable. Neither exception creates a relief entitlement by itself.
 
-  Foreign tax above the cap is lost. Only tax that was set, paid and reduced by any refund due abroad counts. Instead of the credit the taxpayer can deduct the foreign tax from the income (§ 34c(2)).
-- **Income a treaty exempts in Germany** (often foreign employment income or foreign rent): no credit, but it raises the rate under § 32b(1) no. 3. Exception: rent from property in another EU/EEA state, and profits of an EU/EEA permanent establishment that fails the active-business test of § 2a(2), do not raise the rate (§ 32b(1) sentence 2).
+**Dividend relief:** normal withholding is the table's 26.375% before relief. § 44a(9) provides a **two-fifths** refund of capital withholding actually withheld/remitted for the specified § 2 no. 1 KStG corporate creditor, subject to § 50c(3)/(5) and § 50d(3), leaving further statutory/treaty rights intact. The former example comparing **26.375%** with a hypothetical **15%** treaty rate has a mathematical difference of **11.375 percentage points**, but supplies **no usable refund claim or surcharge outcome** without the treaty's tax coverage and entitlement. Country rates and directive relief: use **de-treaty-withholding-rates**; Check this point with one of our partner accountants.
 
-What counts as foreign income is set out in § 34d EStG.
+### 6. Foreign tax credits for German residents
+
+For qualifying private capital income under § 32d(1), § 32d(5), not § 34c, governs the credit: assessed and paid foreign tax, reduced by any foreign refund entitlement; at most **25% of each taxable foreign income item**, and subject to subsection (5) sentence 3's German-tax ceiling; in the simple all-foreign-income example below that ceiling is EUR 2,250. Treaty credits, including deemed-paid tax, follow subsection (5) sentence 2. Without church tax, income tax is **(e − 4q) / 4**, with e the § 20 income and q the eligible credit. Income not subjected to German capital withholding must be declared under § 32d(3); a foreign broker alone does not prove that fact. Business capital, substantial interests, elections and other § 32d(2)/§ 20(8) exclusions need **de-capital-gains**, not automatic flat taxation.
+
+Under a successful § 32d(6) Günstigerprüfung, the § 32d(5) credit is capped at the **additional tariff tax** on capital income. The election covers all capital income for that year, both spouses' income on joint assessment, and must lower income tax including surcharge taxes.
+
+For other eligible foreign income, first establish the source under § 34d and the treaty. Without a treaty, § 34c(1) requires a tax corresponding to German income tax, assessed/paid in the source state and reduced by refund rights. Its cap is the applicable average German rate on the whole taxable income, applied to the eligible foreign income from that state. Exclude capital income within § 32d(1)/(3)–(6) and income not taxed there; use German-law net income. A treaty credit follows § 34c(6)'s conditions and treaty limits. On application, § 34c(2) permits deduction instead of credit for tax on non-exempt foreign income. Do not describe every uncredited excess as irretrievably lost without testing deduction and the treaty.
+
+Preserved cap illustration: taxable income **EUR 60,000**, including **EUR 10,000** eligible foreign rent, and relevant German tariff tax **T** gives **T × 10,000 / 60,000 = T/6**, only after those eligibility conditions. Treaty-exempt income is not automatically creditable; progression under § 32b(1) no. 3 has subsection (1) sentence-2 exceptions, including qualifying non-third-country immovable rent and specified PE profits. Specific treaty exemptions, switch-over, proof-of-foreign-tax and EU/EEA/third-country outcomes are held. Check this point with one of our partner accountants.
 
 ## Deadlines and filing
 
-| Step | Rule |
-|---|---|
-| Who files | A non-resident with German income not settled by withholding (rent, a German business, sale of German land), or who applies for an assessment (§ 1(3), refunds of wage tax, § 50a net assessment). Return under § 25(3) EStG |
-| Competent tax office | For a non-resident: the office where the German assets are, or the most valuable part; failing that, where the activity is mainly carried on (§ 19(2) AO). Employees under § 1(3) or § 50(2) no. 4: the employer's Betriebsstättenfinanzamt (§ 46(2) nos. 7, 9; § 50(2) sentences 3 to 6 EStG). § 50a net assessments: the BZSt (§ 50(2) sentence 9) |
-| Pensions from Germany | A non-resident whose only German income is pensions under § 49(1) nos. 7 and 10: Finanzamt Neubrandenburg, also where such a person applies under § 1(3) (§ 19(6) AO; § 1 EStZustV) |
-| Own return, 2026 | 31 July 2027, a Saturday, so Monday 2 August 2027 (§ 149(2), § 108(3) AO) |
-| With a tax adviser, 2026 | 29 February 2028 (§ 149(3) AO) |
-| § 50a withholding return (payer) | By the 10th of the month after each calendar quarter, to the BZSt (§ 50a(5)) |
-| § 50c refund | Four years from the end of the year the payment was received (§ 50c(3)) |
-| Electronic filing | Compulsory where there is business or self-employed income (§ 25(4) EStG) |
+An assessed taxpayer files under § 25, subject to withholding finality and application routes above. Ordinary mandatory **2026 calendar-year** returns are due **2 August 2027** (31 July is Saturday); qualifying adviser-prepared returns **29 February 2028**. Earlier demands, extensions and local holidays can change the result (§§ 149, 108 AO). These dates do not decide voluntary applications or § 50c refunds. Electronic filing under § 25(4) covers income under § 2(1) nos. 1–3 unless a § 46(2) nos. 2–8 case applies; hardship relief is available on application.
+
+Without a domestic residence-office basis, § 19(2) AO generally uses German assets/the most valuable part, then where activity is mainly exercised/exploited; the departure-year no-German-income rule and the special employment/BZSt routes above take priority where applicable. For non-residents assessable **only** on § 49(1) nos. 7/10 income, Finanzamt Neubrandenburg is competent, also for the corresponding § 1(3) application (§ 1 EStZustV). Do not infer that every person receiving any German pension files there.
 
 ## Penalties and interest
 
-- **Late filing surcharge (§ 152 AO).** 0.25% per started month of the tax less prepayments and withholding, at least EUR 25 per month, at most EUR 25,000. It is compulsory if the return is not filed within 14 months after the end of the year (for 2026: by 29 February 2028), unless an extension was granted, the tax is nil or negative, or the tax does not exceed prepayments and withholding (§ 152(2), (3) AO).
-- **Interest (§ 233a, § 238 AO).** 0.15% per full month (1.8% a year) on the balance, from 15 months after year end: from 1 April 2028 for 2026.
-- **Late payment (§ 240 AO).** 1% per started month on the overdue tax rounded down to EUR 50.
-- **§ 50a payer.** The payer is liable for tax it did not withhold or pay over (§ 50a(5) sentence 5). The creditor can also be pursued.
+- **Annual late filing (§ 152 AO):** generally discretionary before the automatic trigger, with an excusable-delay rule. The ordinary trigger is non-filing within **14 months** after year-end or by a qualifying earlier demand; extensions and zero/negative-tax or prepayment/withholding-covered assessments exclude the automatic rule, not every discretionary surcharge. For an ordinary annual return the amount is **0.25%** of assessed tax less prepayments/creditable withholding per started month, at least **EUR 25**, rounded down to whole euros, maximum **EUR 25,000**. A first demand received after the deadline, where the person could assume no return was required, changes the counted months (§ 152(5)). Agricultural/special-period returns and withholding-return penalties are held. Check this point with one of our partner accountants.
+- **Assessment interest (§§ 233a, 238):** ordinary 2026 annual-tax balances run from **1 April 2028**, 15 months after year-end, until the assessment takes effect; **0.15% per full month / 1.8% annually**, with the interest base rounded down to a multiple of **EUR 50**. The difference base uses creditable withholding and prepayments determined before interest starts; refund interest is limited by the refund and payment date. This is not the rule for withholding/advance assessments; agriculture, retrospective events and loss carrybacks have special starts and are held. Check this point with one of our partner accountants.
+- **Late payment (§ 240 AO):** **1% per started month** on assessed/declared overdue tax rounded down to a multiple of **EUR 50**, excluding ancillary tax charges. The three-day grace excludes § 224(2) no. 1 payment methods. No grace assumption for other payment facts is supplied.
 
 ## Cross-border points
 
-- **Treaties override.** A treaty can take away Germany's right to tax (for example employment income under the 183-day rule) or cap it (dividends, royalties). Withholding still happens first; relief is by exemption certificate or refund (§ 50c).
-- **Moving in or out during the year.** A person who is fully liable for part of the year is assessed once; foreign income of the non-resident months raises the rate (§ 2(7), § 32b(1) no. 2 EStG). Not set out further here.
-- **Leaving with shares.** See leaving-germany-exit-tax, including extended limited liability under § 2 AStG after a move to a low-tax country.
-- **VAT.** A non-resident letting German property or performing in Germany may also have German VAT duties. Not covered here; see germany-vat-return.
-- **Church tax.** Not dealt with here; it is set by state law.
+Apply the actual treaty before finalising source taxation, relief or credit; this Guide supplies no generic **183-day** exemption. VAT from German property/performances, church tax under state law, departure/extended limited liability, special professional pensions and foreign investment income in § 1(3) are explicit non-usable holds or routes above. Check this point with one of our partner accountants.
 
 ## Worked examples
 
-### Example 1: Austrian resident with a German rental flat
+### Example 1: Austrian rental case, 2026
 
-Anna lives in Vienna and has no home in Germany. Her German flat produces a rental result of EUR 24,000 for 2026, computed as in de-rental-income. Her only other income is a rental result of EUR 2,000 from a garage she lets in Vienna. (Invented case.)
+Anna lives in Vienna, with no German home/abode, **EUR 24,000** German flat rental result and **EUR 2,000** Vienna garage rental result, computed under German rules. Assume ordinary full-year private rental, no other income, no higher qualifying personal expenses and no treaty removal of German rental taxation. Invented facts; use **de-rental-income** for the rental result.
 
-**Limited liability (default).** No personal deductions, no EUR 36 lump sum. Taxable income EUR 24,000. The tariff is applied to 24,000 + 12,348 = 36,348. z = (36,348 − 17,799) / 10,000 = 1.8549. Tax = (173.10 × 1.8549 + 2,397) × 1.8549 + 1,034.87 = 6,076.65, rounded down EUR 6,076. Below EUR 20,350, so no surcharge.
+Under limited liability, the EUR 36 allowance is unavailable. Add back EUR 12,348: tariff base **EUR 36,348**, z = 1.8549; unrounded formula **EUR 6,076.642509131**, tax **EUR 6,076**, no ordinary solidarity surcharge on that base.
 
-**§ 1(3) option.** German income is 24,000 / 26,000 = 92.3% of her total, and the Austrian income is under EUR 12,348 (Austria is in country group 1), so both tests pass. She needs a certificate from the Austrian tax office for the EUR 2,000. Taxable income 24,000 − 36 = EUR 23,964. The Austrian rent is not subject to German tax, so it raises the rate (§ 32b(1) no. 5; the EU/EEA rent exception in § 32b(1) sentence 2 covers only no. 3): tax on 23,964 + 2,000 = 25,964 is EUR 3,107, a rate of 11.9666%. Tax = 23,964 × 11.9666% = EUR 2,867. The option saves EUR 3,209.
+The income share **24,000 / 26,000 = 92.3077%** passes the 90% gate without relying on Austria's country-group classification; obtain the foreign-income certificate. For § 1(3), illustrative taxable income is **24,000 − 36 = EUR 23,964**. Foreign rent enters no. 5 progression: **EUR 25,964** gives tariff tax **EUR 3,107**. The original unrounded-rate arithmetic gives **11.9665691%**, whole-euro illustrative result **EUR 2,867**, difference **EUR 3,209**. These last option-tax/saving figures are **not a usable assessment or election recommendation**: the final progression-rounding method is held. Check this point with one of our partner accountants.
 
-The tax office rounds the progression rate; the example keeps it unrounded, which can move the result by one euro. If Anna also had large Austrian income (say a salary of EUR 40,000), she would fail both tests and stay on the limited-liability figure.
+The original alternative **additional Austrian salary EUR 40,000** makes total income EUR 66,000, German share 36.3636% and outside income EUR 42,000, failing both eligibility alternatives even before any reduction. No exact alternative tax calculation is supplied.
 
 ```oa-check
-name: DE non-resident landlord 2026, limited liability vs § 1(3) option
+name: DE non-resident landlord 2026; option arithmetic only, final rounding held
 inputs:
   rent_result: 24000
   foreign_rent: 2000
   grundfreibetrag: 12348
+  additional_salary: 40000
 steps:
   - base_limited: rent_result + grundfreibetrag
   - z1: (base_limited - 17799) / 10000
@@ -214,103 +162,115 @@ steps:
   - z2: (prog_base - 17799) / 10000
   - tax_prog_base: floor((173.10 * z2 + 2397) * z2 + 1034.87)
   - rate: tax_prog_base / prog_base
-  - tax_option: floor(taxable_opt * rate)
-  - saving: tax_limited - tax_option
+  - illustrative_option: floor(taxable_opt * rate)
+  - illustrative_difference: tax_limited - illustrative_option
+  - alternative_total: rent_result + foreign_rent + additional_salary
+  - alternative_share: rent_result / alternative_total
+  - alternative_outside: foreign_rent + additional_salary
 expected:
   base_limited: 36348
   tax_limited: 6076
-  german_share: 0.9231
+  german_share: 0.923077
   tax_prog_base: 3107
-  tax_option: 2867
-  saving: 3209
-tolerance: 0.01
+  illustrative_option: 2867
+  illustrative_difference: 3209
+  alternative_total: 66000
+  alternative_share: 0.363636
+  alternative_outside: 42000
+tolerance: 0.00001
 ```
 
-### Example 2: German resident with foreign dividends taxed 15% abroad
+### Example 2: foreign dividends, 2026
 
-Jan lives in Munich. In 2026 he receives EUR 10,000 of dividends from a foreign company through a foreign broker. The source country withheld 15% (EUR 1,500), its treaty rate. He has no other capital income and is not a church member. (Invented case.)
+Jan lives in Munich, receives **EUR 10,000** foreign dividends through a foreign broker, has no other capital income and no church membership. Stipulate ordinary § 32d(1) private dividends, no German withholding, no loss offsets, full unused **EUR 1,000** § 20(9) allowance, and eligible final source tax of **15% / EUR 1,500**, with no refund entitlement; the hypothetical treaty rate is an input, not a country-rate claim.
 
-**Which regime.** These are private capital income under § 32d(1) EStG, so § 34c does not apply (§ 34c(1) sentence 1, second half, and § 34c(6) sentence 2). The credit is under § 32d(5). Because no German bank withheld, he declares the dividends in the return (§ 32d(3)).
+Income e = EUR 9,000; German tax before credit EUR 2,250. The original per-item ceiling is 25% of the EUR 10,000 dividend, **EUR 2,500**. The binding remaining German tax ceiling after the allowance is **EUR 2,250**; the allowance does not change the foreign payment itself (BMF investment-income guidance, paragraphs 120, 122 and 201–202). Eligible q = EUR 1,500; (9,000 − 4 × 1,500)/4 = **EUR 750**, surcharge **EUR 41.25**, total **EUR 791.25**; the ordinary surcharge threshold does not shield § 32d(3) tax.
 
-- Capital income after the Sparer-Pauschbetrag of EUR 1,000 (see de-capital-gains): e = EUR 9,000.
-- German tax before credit: 25% × 9,000 = EUR 2,250.
-- Cap 1: 25% of the dividend, EUR 2,500. Cap 2: the German tax on the capital income, EUR 2,250. The EUR 1,500 paid is under both, so q = EUR 1,500 is credited in full.
-- Flat tax: (9,000 − 4 × 1,500) / 4 = EUR 750.
-- Solidarity surcharge: 5.5% × 750 = EUR 41.25. The EUR 20,350 threshold does not apply to § 32d(3) tax.
-- Total German tax on the dividends: EUR 791.25.
-
-If he had chosen the tariff under § 32d(6), § 32d(5) still governs the credit, applied to the additional tariff tax on the capital income. The foreign tax must first be reduced by any source-country refund entitlement. If 30% (EUR 3,000) were withheld but the same treaty limits source tax to 15%, only EUR 1,500 is creditable in this case and EUR 1,500 is reclaimed from the source country; the German tax cap does not turn treaty-refundable tax into a German credit. In a separate no-refund-entitlement case with EUR 3,000 of eligible foreign tax, the German cap would limit credit to EUR 2,250 and EUR 750 would remain uncredited.
+If **30% / EUR 3,000** was withheld but the stipulated treaty limits it to 15%, deduct the **EUR 1,500** refund right first, leaving **EUR 1,500** eligible credit. In the distinct original no-refund-entitlement variant, stipulated eligible foreign tax **EUR 3,000** meets the **EUR 2,250** German ceiling, leaving **EUR 750** uncredited under § 32d(5). No foreign refund procedure or alternative tariff liability is supplied.
 
 ```oa-check
-name: DE resident, EUR 10,000 foreign dividends, 15% foreign tax, § 32d(5) credit
+name: DE foreign dividends 2026; credit and refund-entitlement variants
 inputs:
   dividends: 10000
   foreign_rate: 0.15
   sparer_pauschbetrag: 1000
+  alternative_rate: 0.30
 steps:
   - foreign_tax: dividends * foreign_rate
   - e: dividends - sparer_pauschbetrag
   - german_tax_before: e * 0.25
-  - q: min(foreign_tax, dividends * 0.25, german_tax_before)
+  - item_cap: dividends * 0.25
+  - q: min(foreign_tax, item_cap, german_tax_before)
   - flat_tax: (e - 4 * q) / 4
   - soli: flat_tax * 0.055
   - total: flat_tax + soli
+  - alternative_withheld: dividends * alternative_rate
+  - treaty_refund: alternative_withheld - foreign_tax
+  - eligible_after_refund: alternative_withheld - treaty_refund
+  - no_refund_credit: min(alternative_withheld, item_cap, german_tax_before)
+  - no_refund_uncredited: alternative_withheld - no_refund_credit
 expected:
   foreign_tax: 1500
   german_tax_before: 2250
+  item_cap: 2500
   q: 1500
   flat_tax: 750
   soli: 41.25
   total: 791.25
+  alternative_withheld: 3000
+  treaty_refund: 1500
+  eligible_after_refund: 1500
+  no_refund_credit: 2250
+  no_refund_uncredited: 750
 ```
-
-For comparison, the § 34c cap for income taxed at the tariff is German tariff tax × foreign income / taxable income. With taxable income of EUR 60,000 including EUR 10,000 of foreign rent, tariff tax T, the cap is T × 10,000 / 60,000.
 
 ## Ask the client first
 
-1. Where do you live, and do you keep any home in Germany you can use? Did you stay in Germany more than six months in a row? This decides full or limited liability.
-2. What German income do you have (wages for work done in Germany, rent, a business, director or board fees, performances, royalties, dividends), and was tax withheld from it?
-3. What is your total income from all countries for 2026? This decides the § 1(3) test.
-4. Your nationality, and where your spouse lives. EU/EEA nationals may get splitting under § 1a.
-5. Which country taxes you as a resident, and do you have its residence certificate? Treaty refunds and the § 1(3) option need one.
-6. For a resident with foreign income: what type of income, which country, how much tax was paid, and was any of it refundable there?
-7. For the relevant non-resident branch: any later failed full-liability status, mixed residence year, extraordinary employment income or special credit/insurance application; any registry-only right and related-party/treaty facts; for a property-company share, dated active-asset book values and seller attribution during the 365-day window; for entity relief, its statutory population, owners/beneficiaries, source-to-activity connection and actual rebuttal or listed-share evidence.
+Obtain German and foreign homes/stay dates; nationality and spouse residence/separation status; each country's income computed under German rules; German work, property and payer details; withholding certificates; foreign assessments, payments and refund rights; and the applicable treaty/residence certificate. For shares obtain seller attribution and dated active-asset book values; for registered rights obtain related-party and actual exploitation facts; for entity relief obtain owners, activity, business premises and rebuttal/listing evidence. Establish any mixed residence year or failed earlier full-liability status before using withholding finality.
 
 ## Sources
 
-| Source | URL | Read on |
+| Operative source | URL | Read / applicability checked |
 |---|---|---|
-| EStG § 1 (liability, § 1(3) option) | https://www.gesetze-im-internet.de/estg/__1.html | 2026-10-23 |
-| EStG § 2 (§ 2(5b) capital income) | https://www.gesetze-im-internet.de/estg/__2.html | 2026-10-23 |
-| EStG § 1a (EU/EEA spouses) | https://www.gesetze-im-internet.de/estg/__1a.html | 2026-10-23 |
-| EStG § 25 (return, electronic filing) | https://www.gesetze-im-internet.de/estg/__25.html | 2026-10-23 |
-| EStG § 32a (2026 tariff, EUR 12,348) | https://www.gesetze-im-internet.de/estg/__32a.html | 2026-10-23 |
-| EStG § 32b (progression) | https://www.gesetze-im-internet.de/estg/__32b.html | 2026-10-23 |
-| EStG § 32d (flat tax, foreign tax credit) | https://www.gesetze-im-internet.de/estg/__32d.html | 2026-10-23 |
-| EStG § 34c (foreign tax credit) | https://www.gesetze-im-internet.de/estg/__34c.html | 2026-10-23 |
-| EStG § 34d (foreign income) | https://www.gesetze-im-internet.de/estg/__34d.html | 2026-10-23 |
-| EStG § 38b (tax class I) | https://www.gesetze-im-internet.de/estg/__38b.html | 2026-10-23 |
-| EStG § 39 (wage tax data for non-residents) | https://www.gesetze-im-internet.de/estg/__39.html | 2026-10-23 |
-| EStG § 43a (Kapitalertragsteuer 25%) | https://www.gesetze-im-internet.de/estg/__43a.html | 2026-10-23 |
-| EStG § 44a (two-fifths refund) | https://www.gesetze-im-internet.de/estg/__44a.html | 2026-10-23 |
-| EStG § 46 (employee assessments) | https://www.gesetze-im-internet.de/estg/__46.html | 2026-10-23 |
-| EStG § 49 (German-source income) | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-23 |
-| EStG § 50 (assessment of non-residents) | https://www.gesetze-im-internet.de/estg/__50.html | 2026-10-23 |
-| EStG § 50a (withholding) | https://www.gesetze-im-internet.de/estg/__50a.html | 2026-10-23 |
-| EStG § 50c (exemption and refund) | https://www.gesetze-im-internet.de/estg/__50c.html | 2026-10-23 |
-| EStG § 50d (treaty shopping) | https://www.gesetze-im-internet.de/estg/__50d.html | 2026-10-23 |
-| AO §§ 8, 9 (residence, habitual abode) | https://www.gesetze-im-internet.de/ao_1977/__8.html | 2026-10-23 |
-| AO § 19 (competent tax office) | https://www.gesetze-im-internet.de/ao_1977/__19.html | 2026-10-23 |
-| EStZustV § 1 (Finanzamt Neubrandenburg for non-resident pensioners) | https://www.gesetze-im-internet.de/estzustv/__1.html | 2026-10-23 |
-| AO §§ 108, 149, 152, 233a, 238, 240 | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-10-23 |
-| KStG § 2 (limited corporate liability) | https://www.gesetze-im-internet.de/kstg_1977/__2.html | 2026-10-23 |
-| KStG § 23 (15% to 2027) | https://www.gesetze-im-internet.de/kstg_1977/__23.html | 2026-10-23 |
-| KStG § 32 (withholding final) | https://www.gesetze-im-internet.de/kstg_1977/__32.html | 2026-10-23 |
-| SolzG §§ 3, 4 | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-10-23 |
-| BMF letter of 2 December 2025, country groups from 2025 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-12-02-beruecks-auslaendischer-verhaeltnisse.pdf | 2026-10-23 |
-| BZSt, Kapitalertragsteuerentlastung (26.375%, processing time) | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/kapitalertragsteuerentlastung_node.html | 2026-10-23 |
-| BZSt, Abzugsteuern nach § 50a EStG | https://www.bzst.de/DE/Unternehmen/Abzugsteuern/abzugsteuern_node.html | 2026-10-23 |
-| SolzG §§ 3(1)–(3), 4, assessment base, threshold and sliding cap; actual selected operative reads | https://www.gesetze-im-internet.de/solzg_1995/__4.html | 2026-10-29 |
-| EStG §§ 49(1) nos. 2(e), 2(f), 6; 50(2); 44a(9); 50d(3), selected source/assessment/refund conditions actually read | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-29 |
+| ESTG § 1 | https://www.gesetze-im-internet.de/estg/__1.html | 2026-11-27 |
+| ESTG § 1a | https://www.gesetze-im-internet.de/estg/__1a.html | 2026-11-27 |
+| AO_1977 § 8 | https://www.gesetze-im-internet.de/ao_1977/__8.html | 2026-11-27 |
+| AO_1977 § 9 | https://www.gesetze-im-internet.de/ao_1977/__9.html | 2026-11-27 |
+| KSTG_1977 § 2 | https://www.gesetze-im-internet.de/kstg_1977/__2.html | 2026-11-27 |
+| KSTG_1977 § 23 | https://www.gesetze-im-internet.de/kstg_1977/__23.html | 2026-11-27 |
+| KSTG_1977 § 32 | https://www.gesetze-im-internet.de/kstg_1977/__32.html | 2026-11-27 |
+| ESTG § 32a | https://www.gesetze-im-internet.de/estg/__32a.html | 2026-11-27 |
+| ESTG § 49 | https://www.gesetze-im-internet.de/estg/__49.html | 2026-11-27 |
+| ESTG § 23 | https://www.gesetze-im-internet.de/estg/__23.html | 2026-11-27 |
+| ESTG § 50 | https://www.gesetze-im-internet.de/estg/__50.html | 2026-11-27 |
+| ESTG § 10c | https://www.gesetze-im-internet.de/estg/__10c.html | 2026-11-27 |
+| ESTG § 32b | https://www.gesetze-im-internet.de/estg/__32b.html | 2026-11-27 |
+| ESTG § 2 | https://www.gesetze-im-internet.de/estg/__2.html | 2026-11-27 |
+| ESTG § 38b | https://www.gesetze-im-internet.de/estg/__38b.html | 2026-11-27 |
+| ESTG § 39 | https://www.gesetze-im-internet.de/estg/__39.html | 2026-11-27 |
+| ESTG § 46 | https://www.gesetze-im-internet.de/estg/__46.html | 2026-11-27 |
+| ESTG § 50a | https://www.gesetze-im-internet.de/estg/__50a.html | 2026-11-27 |
+| ESTG § 50c | https://www.gesetze-im-internet.de/estg/__50c.html | 2026-11-27 |
+| ESTG § 50d | https://www.gesetze-im-internet.de/estg/__50d.html | 2026-11-27 |
+| ESTG § 44a | https://www.gesetze-im-internet.de/estg/__44a.html | 2026-11-27 |
+| ESTG § 43a | https://www.gesetze-im-internet.de/estg/__43a.html | 2026-11-27 |
+| SOLZG_1995 § 3 | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-11-27 |
+| SOLZG_1995 § 4 | https://www.gesetze-im-internet.de/solzg_1995/__4.html | 2026-11-27 |
+| ESTG § 32d | https://www.gesetze-im-internet.de/estg/__32d.html | 2026-11-27 |
+| ESTG § 34c | https://www.gesetze-im-internet.de/estg/__34c.html | 2026-11-27 |
+| ESTG § 34d | https://www.gesetze-im-internet.de/estg/__34d.html | 2026-11-27 |
+| ESTG § 25 | https://www.gesetze-im-internet.de/estg/__25.html | 2026-11-27 |
+| AO_1977 § 19 | https://www.gesetze-im-internet.de/ao_1977/__19.html | 2026-11-27 |
+| ESTZUSTV § 1 | https://www.gesetze-im-internet.de/estzustv/__1.html | 2026-11-27 |
+| AO_1977 § 149 | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-11-27 |
+| AO_1977 § 108 | https://www.gesetze-im-internet.de/ao_1977/__108.html | 2026-11-27 |
+| AO_1977 § 152 | https://www.gesetze-im-internet.de/ao_1977/__152.html | 2026-11-27 |
+| AO_1977 § 233a | https://www.gesetze-im-internet.de/ao_1977/__233a.html | 2026-11-27 |
+| AO_1977 § 238 | https://www.gesetze-im-internet.de/ao_1977/__238.html | 2026-11-27 |
+| AO_1977 § 240 | https://www.gesetze-im-internet.de/ao_1977/__240.html | 2026-11-27 |
+| ESTG § 20 | https://www.gesetze-im-internet.de/estg/__20.html | 2026-11-27 |
+| ESTG § 52 | https://www.gesetze-im-internet.de/estg/__52.html | 2026-11-27 |
+| BMF investment-income guidance, allowance/credit interaction paragraphs 120, 122, 201–202; checked against current §§ 20/32d | https://esth.bundesfinanzministerium.de/esth/2025/B-Anhaenge/Anhang-19/II/inhalt.html | 2026-11-27 |
+| EStG § 26, spouse assessment conditions and election; reused DEE-04 proof | https://www.gesetze-im-internet.de/estg/__26.html | 2026-11-26; applicability 2026-11-27 |
 
-Not yet confirmed: whether the BMF has issued a country-group list for 2026 (the 2 December 2025 letter applies from 2025 and no later one was found); how the tax office rounds the progression rate; whether foreign capital income of a § 1(3) applicant counts in the 90% test and in the progression, given § 2(5b) EStG; whether the § 50c(3) refund of dividend tax down to the treaty rate includes the solidarity surcharge (the example assumes it does); church tax for non-residents (state law).
+Not yet confirmed: no unconfirmed outcome is supplied as usable. The explicit non-usable holds and partner-accountant referrals above identify every unresolved branch.
