@@ -4,15 +4,15 @@ description: "Seychelles business tax for tax year 2026 for companies, sole trad
 jurisdiction: SC
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
-version: 0.3
+last_updated: 2026-11-26
+version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: computation
 ---
 
-# Seychelles Corporate Income Tax (Business Tax) v0.3
+# Seychelles Corporate Income Tax (Business Tax) v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -48,7 +48,7 @@ The SRC page still shows 15% on Treasury Bills and 5% on bearer bonds. S.I. 107 
 
 ## The base
 
-Taxable income is assessable income less allowable deductions, except amounts exempt under the Second Schedule. The return reports income and expenses on a cash basis ([SRC](https://src.gov.sc/seychelles-tax-system/)). Presumptive taxpayers declare turnover only. Tax deducted at source is credited against the year's business tax, with any excess refunded; assessable income is taken gross of it.
+Taxable income is assessable income less allowable deductions, except amounts exempt under the Second Schedule. A company or other entity must account on an accrual basis; an individual, partnership or trust may use cash or accrual, and the Revenue Commissioner may specify a basis for a class of business (Business Tax Act 2009 s 27(2), (3)). A small business liable to presumptive tax uses cash basis (Tenth Schedule item 4). The SRC Tax System page's 'cash basis' wording does not override s 27. Presumptive taxpayers declare turnover only. Tax deducted at source is credited against the year's business tax, with any excess refunded; assessable income is taken gross of it.
 
 ## Deadlines and filing
 
@@ -124,6 +124,8 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
+| Read for the figures cited: Business Tax Act 2009 (Act 28 of 2009), s 2 'entity' and s 27 | https://src.gov.sc/wp-content/uploads/2023/04/Business-Tax-Act-2009-1.pdf | 2026-11-26 |
+| Read for the figures cited: S.I. 66 of 2012, Tenth Schedule item 4 | https://src.gov.sc/wp-content/uploads/2022/12/SI-66-of-2012-Business-Tax-Amendment-of-Schedules-Regulations-2012.pdf | 2026-11-26 |
 | Read for the figures cited: S.I. 108 of 2021, reg 2, First Schedule item 1 | https://src.gov.sc/wp-content/uploads/2022/12/SI-108-of-2021-Business-Tax-Amendment-of-Schedules-Regulations-2021.pdf | 2026-11-01 |
 | Read for the figures cited: SRC normal business tax rates sheet, effective 1 Jan 2022 | https://src.gov.sc/wp-content/uploads/2023/02/rates.pdf | 2026-11-01 |
 | Read for the figures cited: S.I. 102 of 2024, whole instrument | https://src.gov.sc/wp-content/uploads/2026/02/SI-102-2024-Business-Tax-Amendment-of-Seventh-Schedule-Regulations-2024.pdf | 2026-11-01 |
