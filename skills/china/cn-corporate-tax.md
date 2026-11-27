@@ -42,7 +42,7 @@ Out of scope: Hong Kong, Macao and Taiwan; individual income tax; VAT and surcha
 | R&D super-deduction | Extra 100% of actual R&D cost, or 200% amortisation where an intangible asset is created, from 2023-01-01 with no end date | [MOF/STA announcement 2023 No. 7](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html) |
 | IC and machine-tool enterprises | Extra 120%, or 220% amortisation, from 2023-01-01 to 2027-12-31 | [MOF/STA announcement 2023 No. 44](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html) |
 | Western region | 15% for encouraged-industry enterprises from 2021-01-01 to 2030-12-31 | [MOF/STA/NDRC 2020 No. 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html) |
-| Hainan Free Trade Port | 15% for encouraged-industry enterprises with substantive operations. The current extension runs from 2025-01-01 to 2027-12-31 | [Cai Shui 2025 No. 3](https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=103253) |
+| Hainan Free Trade Port | 15% for encouraged-industry enterprises with substantive operations. The current extension runs from 2025-01-01 to 2027-12-31 | [Cai Shui 2025 No. 3](https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=103253); [Caishui 2020 No. 31](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202009/t455145.html) |
 | Advertising cap | New announcement from 2026-01-01 to 2027-12-31: 30% cap for cosmetics manufacturing or sales, pharmaceutical manufacturing and beverage manufacturing (excluding alcohol); related enterprises with a cost-sharing agreement may shift deductible amounts between them; tobacco advertising is never deductible | [MOF/STA announcement 2025 No. 16](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html) |
 | Prepayment return | Revised A-type monthly or quarterly prepayment return, used from 2025-10-01 | [STA announcement 2025 No. 17; Shanghai Tax Bureau Q&A](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202507/t477034.html) |
 
@@ -58,7 +58,7 @@ Out of scope: Hong Kong, Macao and Taiwan; individual income tax; VAT and surcha
 | Small low-profit enterprise | Effectively 5% on all its taxable income (computed: 25% of income taxed at 20%) | All three size tests met, and not in a restricted or prohibited industry | [MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html) |
 | High and new technology enterprise (HNTE) | 15% | Valid certificate for the year | [Law Art. 28 ("减按15％的税率征收企业所得税")](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) |
 | Western region encouraged industry | 15% | 2021-2030; main business on the catalogue provides 60% or more of revenue | [MOF/STA/NDRC 2020 No. 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html) |
-| Hainan Free Trade Port encouraged industry | 15% | 2025-2027 extension; substantive operation in Hainan | [Cai Shui 2025 No. 3](https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=103253) |
+| Hainan Free Trade Port encouraged industry | 15% | 2025-2027 extension; substantive operation in Hainan | [Cai Shui 2025 No. 3](https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=103253); [Caishui 2020 No. 31](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202009/t455145.html) |
 
 Rate formula: tax payable = taxable income × applicable rate − reliefs − credits (Law Art. 22).
 
