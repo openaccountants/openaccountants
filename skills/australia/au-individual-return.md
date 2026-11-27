@@ -695,4 +695,6 @@ Read 2026-11-12 for the depreciation correction:
 
 - [Higher Education Support Act 2003, ss 154-1, 154-5, 154-10, 154-15, 154-20, 154-25 and 154-32](https://www.legislation.gov.au/C2004A01234/2026-10-17/2026-10-17/text/original/epub/OEBPS/document_1/document_1.html) and [2026-27 indexation notice](https://www.legislation.gov.au/C2026G00249/asmade/2026-04-21/text/original/pdf) -- selected HELP liability, income, thresholds and caps read 2026-11-12.
 
-Not yet confirmed: the meaning of an unidentified bank entry. Use the underlying documents to classify it. If the treatment remains uncertain, say ‘Check this point with one of our partner accountants.’
+Not yet confirmed: how to classify a bank entry without its underlying documents.
+
+Check this point with one of our partner accountants.
