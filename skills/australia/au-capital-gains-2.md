@@ -2,6 +2,8 @@
 name: au-capital-gains-2
 description: "Australian resident investment CGT before 1 July 2027: identify events, calculate cost bases and losses, and test discounts and small business concessions."
 jurisdiction: AU
+tax_year: 2026
+tax_year_notes: "Procedural reference checked in 2026 for ordinary Australian resident investment disposals before 1 July 2027; historical eligibility dates retained. Illustrations use June 2023 acquisitions and June 2026 disposals. The amended Division 102/152 assessment method for the income year including 1 July 2027 and later years, and deemed-sale transitions, require the later rules."
 last_updated: 2026-11-27
 version: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
