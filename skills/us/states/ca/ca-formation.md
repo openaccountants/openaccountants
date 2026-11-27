@@ -1,10 +1,10 @@
 ---
 name: ca-formation
-description: Form a California LLC or corporation, or register an out-of-state entity in California, for 2026. Covers Secretary of State fees (LLC articles USD 70, corporation articles USD 100, Statement of Information USD 20, plus USD 5 for corporations), the Statement of Information cycle and its USD 250 penalty, the R&TC section 23101 doing-business tests that force a foreign entity to register, the corporate 8.84% rate, 1.5% S corporation rate and USD 800 minimum franchise tax with the first-year corporate exemption, the USD 2,000 penalty on unregistered entities, the 15-day rule and federal BOI after the 2026 FinCEN final rule. LLC annual tax and fee figures live in ca-llc-fee-and-tax. Trigger on "form an LLC in California", "LLC-1", "Statement of Information", "register a Delaware LLC in California", "doing business in California".
-version: "2.0"
+description: Form a California LLC or share corporation, or register an out-of-state entity, for 2026. Separates Secretary of State intrastate-business registration from Franchise Tax Board doing-business tax nexus. Covers formation fees, Statements of Information, LLC annual tax and fee, corporate minimum tax and first-year relief, short years, penalties and BOI. Preserves historical 2025 cases separately. Trigger on "form an LLC in California", "LLC-1", "register a Delaware LLC", and "doing business in California".
+version: "2.1"
 jurisdiction: US-CA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
@@ -13,192 +13,111 @@ type: situation-rules
 
 # California entity formation: LLCs, corporations and out-of-state registration (2026)
 
-> **Source-cited draft.** Built from Gov. Code sections 12186 and 12190, R&TC sections 17941, 17942, 17946, 19025, 19135, 23101, 23114, 23151, 23153 and 23802, the Corporations Code sections named on each row, the FTB LLC and doing-business pages and the FinCEN BOI page. Fee sections and R&TC 17941 and 17942 were read on 2026-11-13; other sections are dated on their row. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before acting.
-
-**Answer first.** A California LLC costs **USD 70** to form (Articles of Organization) and **USD 20** for each Statement of Information, due within 90 days and then every two years. A corporation with shares costs **USD 100** to form and **USD 25** a year for its Statement of Information (USD 20 plus a USD 5 disclosure fee). Every LLC also pays the **USD 800** annual tax from its first year, and the LLC fee once California total income reaches USD 250,000 (figures and dates in `ca-llc-fee-and-tax`). A corporation pays 8.84% of net income (S corporation 1.5%) with an USD 800 minimum, but no minimum tax in its first taxable year. An entity formed in another state must register here once it does business in California under R&TC 23101, which includes being managed from California.
+**Answer first.** Budget USD 70 for LLC articles and USD 20 for its initial Statement of Information; share-corporation articles cost USD 100 and its statement costs USD 25 ([Gov. Code §§12190, 12186; Corp. Code §1502(i)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12190.), [corporation fees](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12186.), [disclosure fee](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=1502.)). Add the applicable tax below. **Tax nexus under R&TC §23101 does not itself decide SOS registration:** foreign-entity registration uses the separate intrastate-business rules ([Corp. Code §17708.03(e)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17708.03.)).
 
 ## Scope and who this is for
 
-This skill covers the California state layer of forming a business entity, or registering an out-of-state entity, for **tax year 2026**. It is for founders, freelancers and small-business owners who either form a California LLC or corporation, or run an entity formed in another state that has California customers, staff, property or management.
-
-It covers:
-
-- Secretary of State (SOS) filings: formation, registration of a foreign entity, and the Statement of Information.
-- The Franchise Tax Board (FTB) annual LLC tax, the LLC fee, and the corporate minimum franchise tax.
-- The "doing business in California" test.
-- The federal beneficial ownership (BOI) position.
-
-It does not cover the federal entity classification choice, California personal income tax returns, payroll (EDD), or sales tax (CDTFA). Those need their own analysis.
-
-Research date: 25 September 2026. The statutes are cited from the official California Legislative Information site. The FTB publishes the yearly indexed "doing business" amounts separately; at the research date only the 2025 amounts had been posted (see "Thresholds and figures").
+California LLCs, ordinary nonfinancial share corporations and foreign entities with California activity, for 2026. Historical 2025 examples remain labelled 2025. “Foreign” at the California SOS includes another US state; foreign-country BOI is a separate question. This Guide supplies a formation roadmap, fee budget and separate registration/tax analyses. Federal classification/elections, personal returns, payroll and sales-tax compliance require their own analysis.
 
 ## Ask the client first
 
-- What entity type is it: LLC (single- or multi-member) or corporation? Which state or country was it formed in, and on what date?
-- For a California entity, what is the exact SOS filing date? For a foreign entity, what is the date it was registered with the California SOS, if it has registered?
-- Where is the business managed from? Where do the owners and staff live and work?
-- What are the entity's total sales, property and payroll? How much of each is in California, measured under the California assignment rules?
-- How is it classified federally: disregarded, partnership, C corporation or S corporation? Who owns a disregarded LLC: an individual, or an S corporation or partnership?
-- Has it filed every Statement of Information and FTB return, and paid every annual tax, LLC fee and estimate on time? Has the SOS or FTB sent any notice or demand?
-- Will it render professional services that need a California licence (for example law, medicine or accountancy)?
-- Is it formed under the law of a foreign country? This matters for BOI.
+Record entity type and tax classification; home jurisdiction; SOS filing/qualification and first California business dates; owner's taxable year; management, staff and property locations; California and worldwide sales/property/compensation; sourcing facts; pass-through interests; professional licences; prior returns/payments/notices; and any foreign-country formation. Read existing records before asking for missing facts.
 
 ## The method, step by step
 
-1. **Choose the entity and the state.** If the business will be run from California, a California entity avoids a second state's filings. An entity formed elsewhere and doing business in California must still register here (step 4).
-2. **Check professional-services limits.** A California or foreign LLC may not render "professional services" as defined in Corp. Code §13401 and §13401.3 in California ([Corp. Code §17701.04(e)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17701.04.)). A licensed professional generally needs a professional corporation, so refer that case.
-3. **File the formation document with the SOS.**
-   - LLC: Articles of Organization.
-   - Corporation with shares: Articles of Incorporation.
-4. **Test "doing business" for an out-of-state entity**, using the tests below. If the test is met, file the foreign registration with the SOS: an application for registration for an LLC, or a statement and designation for a corporation.
-5. **Diary the Statement of Information.**
-   - It is due within 90 days of the original filing or registration.
-   - After that it is due every two years for an LLC and every year for a corporation. It must be filed inside a six-month window.
-6. **Diary the FTB payments.**
-   - LLC: annual tax, estimated LLC fee, and return.
-   - Corporation: estimated tax, and return.
-   - Apply the first-year rules and the 15-day rule before you quote any figure.
-7. **Record the BOI position.** Domestic entities are now exempt. A foreign-country entity registered in a US state may still have to report.
+### 1. Form or register with the SOS
 
-### Rates, bands and thresholds
+Use [bizfile Online](https://bizfileonline.sos.ca.gov/); the [SOS filing page](https://www.sos.ca.gov/business-programs/business-entities/statements) explains online filings and the User Access needed for Statements of Information from 1 August 2026. Save the accepted document, file number, effective date and payment receipt.
 
-| Item | Amount, 2026 | Source |
-| --- | --- | --- |
-| LLC Articles of Organization | USD 70 | [Gov. Code 12190(b)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12190.) |
-| Foreign LLC application for registration | USD 70 | [Gov. Code 12190(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12190.) |
-| LLC name reservation | USD 10 | [Gov. Code 12190(a)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12190.) |
-| LLC Statement of Information | USD 20 | [Gov. Code 12190(k)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12190.) |
-| Articles of Incorporation, corporation with shares | USD 100 | [Gov. Code 12186(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12186.) |
-| Foreign corporation statement and designation | USD 100 | [Gov. Code 12186(f)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12186.) |
-| Corporation Statement of Information, domestic or foreign | USD 20 plus a USD 5 disclosure fee | [Gov. Code 12186(g), (h)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12186.); [Corp. Code 1502(i)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=1502.) |
-| Statement of Information penalty, not filed within 60 days of the SOS delinquency notice | USD 250 | [Corp. Code 17713.07(b)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17713.07.) |
-| C corporation franchise tax rate | 8.84% of net income | [R&TC 23151(f)(2)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23151.) |
-| S corporation rate | 1.5% of net income | [R&TC 23802](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23802.) |
-| Minimum franchise tax (corporations), also the LLC annual tax | USD 800 | [R&TC 23153(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23153.) |
-| Corporate estimated tax instalments, months 4, 6, 9 and 12 | 30%, 40%, 0%, 30% | [R&TC 19025](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19025.) |
-| Penalty on an unregistered, suspended or forfeited entity doing business, after 60 days from notice and demand | USD 2,000 per taxable year | [R&TC 19135](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19135.) |
-| Willful intrastate business by an unqualified foreign corporation (court penalty) | USD 20 per day | [Corp. Code 2203](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=2203.) |
-| Doing-business sales amount (2025 figure, 2025-2026 filing cycle) | USD 757,070 | [FTB: Doing business in California](https://www.ftb.ca.gov/file/business/doing-business-in-california.html) |
-| Doing-business property and payroll amounts (2025 figure, 2025-2026 filing cycle) | USD 75,707 each | [FTB: Doing business in California](https://www.ftb.ca.gov/file/business/doing-business-in-california.html) |
-| Doing-business share of total sales, property or payroll | 25% | [R&TC 23101](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.) |
+- **California LLC:** file articles with purpose, compliant name, principal street/mailing addresses, process agent and management structure. It forms when the SOS files the articles ([Corp. Code §17702.01](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17702.01.)). Maintain a California process agent: a resident individual or a corporation complying with §1505 ([§17701.13](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17701.13.)). Use the SOS form's naming instructions; the name needs LLC wording and must be distinguishable ([§17701.08](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17701.08.)).
+- **California share corporation:** articles identify its name, permitted purpose, process agent, principal street/mailing addresses and authorized shares/classes ([Corp. Code §202](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=202.)). Do not invent a standard share count.
+- **Foreign LLC:** assess repeated and successive California business other than interstate/foreign commerce, including §17708.03's exclusions (for example interstate commerce, independent-contractor selling and orders accepted outside California). These registration exclusions do not decide taxation ([§17708.03](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17708.03.)). Apply using the entity/alternate name, home jurisdiction, addresses and California process agent; attach an official existence/status/good-standing certificate issued within the past six months ([§17708.02](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17708.02.)).
+- **Foreign corporation:** qualify before transacting intrastate business; §191 defines the test and exclusions. File the statement/designation with the information and good-standing evidence required by §2105 ([§191](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=191.), [§2105](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=2105.)).
+- **Professional services and operating agreements:** do not choose a professional entity or prescribe agreement terms here. Check this point with one of our partner accountants. The same hold covers agent-service recommendations and costs; do not infer that every licensed occupation has the same permitted entity form.
 
-### Thresholds and figures (tax year 2026)
+## Rates, bands and thresholds
 
-#### SOS filing fees
+| Filing | USD | Official authority |
+|---|---|---|
+| LLC articles; foreign LLC registration | 70 each | [Gov. Code §12190(b),(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12190.) |
+| Optional LLC name reservation | 10 | [Gov. Code §12190(a)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12190.) |
+| LLC Statement of Information; changes to a statement | 20; changes no fee | [Gov. Code §12190(k),(l)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12190.) |
+| Share-corporation articles; ordinary foreign corporation qualification (excluding §12186(e) entities) | 100 each | [Gov. Code §12186(c),(f)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12186.) |
+| Domestic/foreign ordinary corporation Statement of Information | 20 + 5 disclosure fee = 25 (computed) | [Gov. Code §12186(g),(h)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12186.), [Corp. Code §1502(i)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=1502.), [§2117(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=2117.) |
 
-The fees are in the rates table above. The SOS may also charge separate fees for preclearance and expedited handling ([Gov. Code §12182](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12182.)). Check the current SOS service options before you quote one.
+Processing times, preclearance and expedited services are not quoted here. Check this point with one of our partner accountants.
 
-#### LLC annual tax and LLC fee
+### 2. Diary Statements of Information
 
-These have one home, `ca-llc-fee-and-tax`: the USD 800 annual tax and when it is due (first year counted from the SOS filing date), the absence of any first-year relief for LLCs formed in 2024 to 2026, the USD 400 first-year rate for first taxable years beginning in 2027 to 2029 (SB 180), the deployed-owner exemption, the fee bands on California total income (gross income plus cost of goods sold) and the 10% estimate penalty. For a formation quote, take the figures from there.
+| Entity | Initial and recurring filing | Authority |
+|---|---|---|
+| Domestic/registered foreign LLC | Within 90 days of articles/registration; every two years thereafter. Window: original filing month and five preceding months | [Corp. Code §17702.09(a),(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17702.09.) |
+| Domestic ordinary corporation | Within 90 days of articles; annually thereafter, original filing month and five preceding months | [Corp. Code §1502(a),(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=1502.) |
+| Qualified foreign ordinary corporation | Within 90 days of statement/designation; annually thereafter in the corresponding six-month window | [Corp. Code §2117(a),(f)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=2117.) |
 
-#### Corporations, C and S ([R&TC §23151](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23151.), [§19025](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19025.))
+For an LLC, supply agent/addresses, managers and CEO if appointed, or members if no manager, business activity and the applicable wage-judgment declaration. Follow §17702.09(a)(8)'s distinctions for manager/member management and members who are agents. A no-change statement is available when nothing changed; changing the process agent/address requires a complete current statement ([§17702.09](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17702.09.)).
 
-- **Tax rate.** A C corporation pays **8.84%** of net income, but not less than the minimum franchise tax of **$800** ([R&TC §23151(f)(2)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23151.); [R&TC §23153(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23153.)).
-- **S corporations.** An S corporation pays **1.5%** instead of 8.84%, and is still subject to the minimum franchise tax ([R&TC §23802(b)-(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23802.)).
-- **First-year exemption (still in force).**
-  - A corporation that incorporates or qualifies in California on or after 1 January 2000 is not subject to the **minimum** franchise tax for its first taxable year ([R&TC §23153(f)(1)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23153.)).
-  - This does not cover LLCs, limited partnerships, LLPs, qualified subchapter S subsidiaries, or a corporation that reorganises only to avoid the minimum tax ([R&TC §23153(f)(2)-(3)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23153.)).
-  - Tax measured by net income is still owed in the first year.
-- **Estimated tax** ([R&TC §19025](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19025.)).
-  - If the estimated tax does not exceed the minimum tax, all of it is due by the 15th day of the 4th month.
-  - If it does exceed the minimum tax, and the requirement is met before the 4th month, pay it in installments on the 15th day of the 4th, 6th, 9th and 12th months: **30%**, **40%**, **0%** and **30%**. The first installment must be at least the minimum tax.
-  - Later-arising requirements use the other rows of §19025.
+### 3. Test FTB tax nexus separately
 
-#### "Doing business in California" ([R&TC §23101](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.))
+Under [R&TC §23101](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.), test active transactions for gain/profit and California organization/commercial domicile, as well as each quantitative prong:
 
-An entity is doing business in California for a taxable year if **any** of these tests is met ([R&TC §23101](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.)):
+| Prong | Test | Authority |
+|---|---|---|
+| Sales | California sales exceed the lesser of the year's indexed dollar amount or 25% of total sales; includes agent/independent-contractor sales | [§23101(b)(2),(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.) |
+| Real/tangible property | California property exceeds the lesser of the indexed amount or 25% of total property; use §§25129-25131 valuation/location rules | [§23101(b)(3),(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.) |
+| Compensation | California compensation exceeds the lesser of the indexed amount or 25% of total compensation; use §25133 assignment | [§23101(b)(4),(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.) |
+| Pass-through interests | Include pro rata/distributive sales, property and payroll of partnerships and S corporations | [§23101(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.) |
+| Historical 2025 indexed amounts only | Sales USD 757,070; property USD 75,707; payroll USD 75,707 | [FTB doing-business table, 2025 row](https://www.ftb.ca.gov/file/business/doing-business-in-california.html) |
 
-- **(a) Active conduct.** It actively engages in any transaction for financial or pecuniary gain or profit in California.
-- **(b)(1) Organised or commercially domiciled** in California.
-- **(b)(2) Sales.** California sales **exceed** the lesser of the indexed sales amount or **25%** of total sales. Sales include sales by an agent or independent contractor. They are assigned under §25135 and §25136, so services and intangibles are assigned by market.
-- **(b)(3) Property.** California real and tangible personal property exceeds the lesser of the indexed property amount or **25%** of total property.
-- **(b)(4) Payroll.** California compensation exceeds the lesser of the indexed payroll amount or **25%** of total compensation.
-- **Pass-through shares count.** The taxpayer's share of the sales, property and payroll of a partnership or S corporation is included ([§23101(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.)).
+Use §§25135/25136 and their regulations for sales assignment. Customer headquarters alone does not establish where a service's benefit is received. Goods may also be assigned back to California under §25135(a)(2); intangibles turn on use, with a separate marketable-securities rule ([§25135](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=25135.), [§25136](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=25136.)).
 
-**The dollar amounts.**
+**2026 dollar-prong hold:** the FTB table read on 27 November lists years only through 2025. Do not substitute 2025 amounts or the statutory base for an unverified 2026 indexed amount. Where the missing amount could alter the result, give no nexus clearance. Check this point with one of our partner accountants. A supported 25% exceedance is sufficient because the lesser threshold cannot exceed that 25% value; failure to exceed 25% alone does not prove absence of nexus.
 
-- The statute sets base amounts of **$500,000** for sales, **$50,000** for property and **$50,000** for payroll. The FTB must revise them every year for inflation (§23101(c)), so the base amounts are **not** the current thresholds.
-- The FTB's [Doing business in California](https://www.ftb.ca.gov/file/business/doing-business-in-california.html) page publishes the indexed amounts. For **2025** they are **$757,070** (sales), **$75,707** (property) and **$75,707** (payroll).
-- At the research date (page last updated 7 November 2025), the FTB had not yet posted **2026** amounts. Do not treat the 2025 row or the statutory base as the 2026 figure.
-- Where a 2026 answer turns on the dollar prong, open that FTB page and use the 2026 row once it is posted. Until then, say the 2026 amount is unpublished and show the 2025 figure labelled as 2025.
-- Where the 25% prong gives a figure below the statutory base amount, the answer does not depend on the indexed amount, because the indexed amount is the base revised for inflation.
+### 4. Budget the tax after classification
 
-### Statement of Information ([Corp. Code §17702.09](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17702.09.))
+**LLC taxed as a partnership or disregarded entity:** §17941 covers doing business, California organization or SOS registration, subject to its exemptions; an LLC taxed as a corporation is outside this annual-tax definition. The normal annual tax is USD 800. Registration can create liability even without business ([§17941(a)-(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.), [§23153(d)(1)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23153.)). Cancellation/short-form cancellation and deployed-owner relief require separate eligibility review. Check this point with one of our partner accountants.
 
-- **LLCs (domestic and registered foreign).**
-  - File within 90 days after the articles or registration are filed. After that, file every two years during the "applicable filing period" ([Corp. Code §17702.09(a)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17702.09.)).
-  - That period is the calendar month of the original filing or registration plus the five months before it ([§17702.09(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17702.09.)).
-  - The statement lists the managers, or the members if there is no manager, plus the chief executive officer, agent, addresses and type of business. It also says whether any manager or member has an outstanding final Labor Code wage judgment.
-  - If nothing has changed, a no-change statement may be filed. A change of agent or of the agent's address requires a new full statement.
-- **Corporations (domestic and foreign).**
-  - File within 90 days, then **every year** during the month of the original filing plus the five months before it ([Corp. Code §1502(a), (d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=1502.); [Corp. Code §2117](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=2117.)).
-  - The SOS publishes the window by month on its [Statements of Information page](https://www.sos.ca.gov/business-programs/business-entities/statements).
-- **Penalty.**
-  - A late statement does not trigger an automatic penalty at day 91.
-  - First, the SOS sends a delinquency notice. If the statement is still not filed within **60 days** of that notice, a **$250** penalty applies.
-  - For an LLC, see [Corp. Code §17713.07(b)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17713.07.).
-  - For a corporation, the SOS certifies it to the FTB, and the FTB assesses the penalty under [R&TC §19141](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19141.) ([Corp. Code §2204](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=2204.)).
-  - The SOS may waive the penalty for reasonable cause or unusual circumstances.
+| LLC period/item | Rule | Authority |
+|---|---|---|
+| Organization/registration 2021-2023 | First taxable-year waiver under §17941(g)(1), subject to its operative budget condition; do not extend to new 2024-2026 formations | [§17941(g)(1)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.) |
+| First taxable year beginning 2027-2029 | USD 400 under §17941(g)(2), for an LLC required to file under §18633.5; not a 2026 reduction | [§17941(g)(2)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.) |
+| LLC fee base | California-attributable gross income plus cost of goods sold; exclude qualifying lower-tier LLC amounts already subject to this fee; assign under §§25135/25136 as modified by §17942(b)(1)(B) | [§17942(b)(1)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.) |
+| California total income below USD 250,000; 250,000 to below 500,000; 500,000 to below 1 million; 1 million to below 5 million; 5 million or more | Fee: 0; 900; 2,500; 6,000; 11,790 respectively, additional to annual tax | [§17942(a)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.) |
+| Fee estimate | Pay by day 15 of month 6 of the current year. Underpayment penalty 10% of actual fee less timely estimate; no penalty if timely estimate is at least prior-year fee | [§17942(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.) |
 
-### Foreign entities: registration and the cost of not registering ([R&TC §19135](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19135.))
+Common-control fee aggregation is a separate anti-avoidance question. Check this point with one of our partner accountants. See also `ca-llc-fee-and-tax` for the detailed LLC job; this Guide's quoted rules control its examples.
 
-- **Foreign LLC application.**
-  - Give the entity's name. If that name does not comply with California rules, give an alternate name.
-  - Give the home jurisdiction, the addresses, and a California agent for service of process.
-  - Attach a certificate of good standing, or a record of similar effect, issued within the **past six months** ([Corp. Code §17708.02](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17708.02.)).
-  - Registering creates the §17941 annual tax liability.
-- **Unregistered foreign LLC.**
-  - It cannot **maintain** (bring) an action in California until it registers, but it **can defend** one.
-  - Its members and managers are not personally liable merely because it did not register ([Corp. Code §17708.07](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17708.07.)).
-- **Unqualified foreign corporation.**
-  - A court may impose a penalty of **$20** per day of **willful** unauthorized intrastate business. The amount is set by the court.
-  - To maintain an action on intrastate business, the corporation must first qualify, pay a **$250** penalty to the SOS, and pay the back franchise taxes ([Corp. Code §2203](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=2203.)).
-- **FTB penalty.**
-  - The FTB imposes **$2,000** per taxable year on an entity that is doing business in California and has not filed a required return **within 60 days** after an FTB notice and demand, unless it shows reasonable cause.
-  - It applies to a foreign corporation or LLC that has not qualified or whose rights are forfeited, and to a suspended domestic corporation or LLC.
-  - It is in addition to other penalties ([R&TC §19135](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19135.)).
-- **Suspension and forfeiture.** Unpaid tax, penalties or interest can lead to suspension of a domestic entity's powers, or forfeiture of a foreign entity's right to exercise them in California, within the periods set in [R&TC §23301](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23301.).
-- **Delaware or Wyoming does not avoid California.** An LLC or corporation formed elsewhere but managed from California is commercially domiciled here, so it is doing business under §23101(b)(1). It owes the California annual tax, fee or franchise tax, and the Statement of Information, on top of its home-state costs.
+**Ordinary nonfinancial corporations:** the C rate is 8.84% of California taxable net income, subject to the USD 800 minimum; the S rate is 1.5%, subject to that minimum, not 1.5% **plus** USD 800 ([§23151(f)(2)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23151.), [§23802(b),(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23802.), [§23153(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23153.)). Banks/financial corporations and other special entities are outside this rate statement.
 
-### Federal BOI reporting (Corporate Transparency Act)
+A corporation incorporating or qualifying in California on/after 1 January 2000 has a first-taxable-year **minimum-tax** exemption; net-income tax still applies. This waiver does not cover §17941 LLCs, LPs, LLPs, charitable organizations, regulated investment companies, REITs, REMICs or QSubs, to the extent applicable, or a corporation reorganizing solely to avoid minimum tax (§23153(f)(2),(3)). Do not grant the waiver anew to an entity already doing business before qualification without reviewing its first taxable year ([§23153(a),(f)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23153.)). Special-entity eligibility: Check this point with one of our partner accountants.
 
-- **Final rule.** On 11 August 2026 FinCEN issued a final rule. It made permanent the exemptions first introduced by the interim final rule published on 26 March 2025, and it took effect on 14 August 2026.
-- **US entities are exempt.** Companies created in the United States, including California LLCs and corporations, are exempt and do not file BOI reports.
-- **Foreign-country entities may still report.** An entity formed under the law of a **foreign country** and registered to do business in a US state is still a "reporting company" unless an exemption applies. It does not report US persons as beneficial owners.
-- **Deadline for foreign reporting companies.** A foreign reporting company registered on or after 26 March 2025 has 30 calendar days to file its initial report after receiving notice that its registration is effective.
-- Source: [FinCEN BOI page](https://www.fincen.gov/boi).
+### 5. Penalties and BOI
+
+- **LLC statement:** USD 250 if still unfiled 60 days after SOS delinquency notice; the notice explains relief for reasonable cause or unusual circumstances ([Corp. Code §17713.07(b)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17713.07.)). It is not automatic on day 91.
+- **Corporate statement:** domestic-corporation certification/assessment follows the notice and 60-day procedure, with dissolution/conversion/merger and suspended-entity exclusions and SOS waiver/decertification provisions ([§2204](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=2204.)); the FTB-assessed amount is USD 250 ([R&TC §19141](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19141.)). Foreign-corporation penalty procedure: Check this point with one of our partner accountants.
+- **Unregistered foreign LLC:** cannot maintain an action while unregistered, but may defend. Members/managers are not personally liable solely for nonregistration ([§17708.07(a)-(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17708.07.)).
+- **Unqualified foreign corporation:** court-determined penalty of USD 20 per day of willful unauthorized intrastate business. Maintaining an action upon that business commenced before compliance requires qualification, USD 250 plus filing fees, and filing receipts with the court proving payment of required business/property taxes ([§2203](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=2203.)).
+- **FTB nonfiling:** USD 2,000 per taxable year if a foreign corporation/LLC unqualified or forfeited, or domestic corporation/LLC suspended, is doing business and fails to file a required return within 60 days after FTB notice/demand; exception is reasonable cause **and not willful neglect**; additional to other penalties ([R&TC §19135](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19135.)).
+- **BOI:** US-created entities are exempt, including an entity formed in Delaware or Wyoming and registered in California; this is an exemption, not merely a litigation stay ([FinCEN, final-rule notice](https://www.fincen.gov/boi), [31 CFR §1010.380(c)(2)(xxiv)](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-C/section-1010.380)). For foreign-country entities, exemptions, beneficial owners/company applicants, reporting deadlines and previously filed reports: Check this point with one of our partner accountants. Do not apply the domestic exemption to them.
 
 ## Boundary and exception table
 
-| Situation | Rule | Result |
+| Situation | Outcome | Authority |
 |---|---|---|
-| LLC formed or registered 1 Jan 2021 to 31 Dec 2023 | §17941(g)(1) | First taxable year exempt from the annual tax |
-| LLC formed or registered in 2024, 2025 or 2026 | No waiver applies | $800 for the first taxable year |
-| LLC whose first taxable year begins in 2027, 2028 or 2029 | §17941(g)(2), SB 180 | $400 for the first taxable year; $800 after that |
-| LLC with a taxable year of **15 days or less** in which it did **no business** in California | [R&TC §17946](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17946.) | Not subject to the annual tax or fee for that short year. For a calendar year, that means filed on 17 December or later. A 16 December filing gives a 16-day year and does not qualify. |
-| Corporation with a taxable year of 15 days or less and no business in California | [R&TC §23114](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23114.) | No tax for the short year. That period is **not** counted as the "first taxable year" for the §23153(f)(1) exemption, so the next year gets the exemption. |
-| Corporation incorporated or qualified on or after 1 Jan 2000 | §23153(f)(1) | No minimum franchise tax in its first taxable year; income-measured tax still applies |
-| California sales above 25% of total sales but below the indexed dollar amount | §23101(b)(2): lesser of the two | Doing business |
-| California sales at exactly the lesser amount | "exceed" | Not met on sales; check the other tests |
-| Out-of-state seller whose only in-state activity is soliciting orders for tangible goods | Public Law 86-272 protects against **net-income** taxes only | It may still be doing business and owe the annual tax, the fee and returns. Refer to a specialist. |
-
-**Unsettled point: the 15-day rule and the 2027 $400 rule.**
-
-- For corporations, §23114(b) says the short period is not a "taxable year" for the first-year exemption.
-- §17946 for LLCs has no equivalent sentence.
-- So if an LLC is filed on or after 17 December 2026 and does no business until 2027, the statutes do not say whether 2027 is its "first taxable year" for the $400 rate.
-- Until the FTB publishes guidance, plan on $800 for 2027 and treat $400 as possible upside. Check the FTB's LLC guidance or ask the FTB.
+| LLC year of 15 days or less, no California business | No Chapter 10.6 tax or fee for that year | [R&TC §17946](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17946.) |
+| Corporation year of 15 days or less, no California business | No Chapter 2 tax; period does not consume the §23153(f)(1) first-year minimum exemption | [R&TC §23114](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23114.) |
+| Exactly the lesser sales/property/payroll threshold | Quantitative prong uses “exceed”; still test active conduct, domicile and other prongs | [§23101](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.) |
+| No 2026 indexed amount, or disputed short-year activity | No clearance or tax budget based on an assumed threshold/activity exemption. Check this point with one of our partner accountants. | Hold |
+| 2026 exempt LLC stub followed by 2027 | Whether the USD 400 first-year rule applies is not determined here. Check this point with one of our partner accountants. | Hold |
+| Public Law 86-272; unitary/combined reporting; suspension/revivor; back years/voluntary disclosure | No immunity, waiver or look-back conclusion here. Check this point with one of our partner accountants. | Hold |
 
 ## Worked cases
 
-### Case 1: California single-member LLC formed in 2026 (ordinary)
+Each case retains its own original facts and year. Dollar sums below exclude owner/federal taxes and optional service costs. A registration hold does not stop a source-supported FTB tax obligation.
 
-- **Facts.** A disregarded LLC owned by an individual. Articles filed 10 March 2026. Expected 2026 California total income of $180,000.
-- **SOS.** Articles fee $70. Statement of Information due within 90 days, fee $20.
-- **FTB.** Annual tax of $800 for 2026, with no first-year waiver. Articles were filed 10 March 2026, so the first payment (form 3522) is due by **15 June 2026**: the 15th day of the 4th month from the SOS filing date ([FTB LLC page](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html)). From 2027 it is due by 15 April, the owner's calendar year. No LLC fee, because $180,000 is below $250,000.
-- **2026 total state cost:** $70 + $20 + $800 = $890.
-- **Return.** Form 568 is due the 15th day of the 4th month after the owner's year-end ([R&TC §18633.5(i)(3)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18633.5.)).
+### Case 1: California SMLLC formed 10 March 2026
+
+Individual owner, disregarded, calendar year; California total income USD 180,000. Articles USD 70, statement USD 20 and annual tax USD 800 total **USD 890**. Fee is zero, being USD 70,000 below the first band. The first annual payment is due **15 June 2026** under the FTB's formation-date rule; subsequent calendar years use 15 April. Form 568 follows the individual owner's year, as below ([FTB LLC page](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html), [§17942](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.)).
 
 ```oa-check
 name: CA SMLLC formed 10 March 2026, first-year state cost
@@ -215,119 +134,110 @@ expected:
   below_fee_band_by: 70000
 ```
 
-### Case 2: Year-end formation (boundary)
+### Case 2: 17 versus 16 December 2026
 
-- **17 December 2026.** An LLC filed on 17 December 2026 that does nothing until January has a 15-day 2026 year with no business, so it owes nothing for 2026 (§17946).
-- **16 December 2026.** Filed one day earlier, its 2026 year is 16 days long and it owes $800 for 2026.
-- **Any business in the short year.** Opening trading, signing, invoicing or other business in the short period also removes the relief.
-- **2027 rate.** Whether 2027 then attracts $400 or $800 is the unsettled point above.
+With a calendar year ending 31 December, 17 December gives 15 inclusive days; 16 December gives 16. With no California business, the former qualifies under §17946; the latter does not and normally owes USD 800. Do not substitute “no revenue” for the statutory no-business test or assert that a bank-account opening always defeats it. The subsequent 2027 USD 400/USD 800 decision remains a non-usable hold. Check this point with one of our partner accountants. ([§17946](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17946.), [§17941](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.))
 
-### Case 3: Texas LLC with California clients (exclusion)
+### Case 3: Texas LLC, 2026 sales USD 1,000,000 / California USD 200,000 or USD 260,000
 
-- **Facts.** No California presence, property or payroll. Total sales of $1,000,000, of which $200,000 is assigned to California.
-- **Sales test.** 25% of total sales is $250,000. The sales prong needs California sales above the lesser of $250,000 and the indexed amount. The indexed amount is the $500,000 base revised for inflation, so the lesser figure is $250,000.
-- **Result.** $200,000 does not exceed $250,000, so §23101(b)(2) is not met. With no other contact, the LLC is not doing business on these facts, and it need not register.
-- **If sales rise.** Had California sales been $260,000, they would exceed $250,000 and the LLC would be doing business, even though that is far below the dollar prong.
-
-**The decision.** Register now or wait? At USD 200,000 of California sales the Texas LLC is under the lesser figure and need not register; at USD 260,000 it must. Registering early is not free: it starts the USD 800 annual tax and the USD 20 Statement of Information at once, whatever the sales. Recommend tracking California sales each quarter against 25% of total sales and registering in the year they first exceed it.
+Original facts: no California presence/property/payroll. 25% is USD 250,000. At USD 260,000 the sales prong is met regardless of the missing indexed amount; at USD 200,000 the 25% comparison alone cannot prove the prong fails. The former automatic “need not register / must register” decision is withdrawn: SOS registration is a separate test, and absence of tax nexus at USD 200,000 is not cleared here. Check this point with one of our partner accountants. ([§23101](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.))
 
 ```oa-check
-name: CA doing-business sales test, Texas LLC (25% prong below the base amount)
+name: CA Texas sales comparison only, no nexus clearance from an unverified indexed amount
 inputs:
   total_sales: 1000000
   ca_sales: 200000
   ca_sales_higher: 260000
 steps:
   - pct_prong: total_sales * 0.25
-  - lesser: min(pct_prong, 500000)
-  - margin_now: ca_sales - lesser
-  - margin_higher: ca_sales_higher - lesser
+  - margin_now: ca_sales - pct_prong
+  - margin_higher: ca_sales_higher - pct_prong
 expected:
   pct_prong: 250000
-  lesser: 250000
   margin_now: -50000
   margin_higher: 10000
 ```
 
-### Case 4: Wyoming LLC with one California employee
+### Case 4: Wyoming LLC, 2026 compensation USD 400,000 / California USD 120,000
 
-- **Facts.** Total compensation $400,000. A remote California employee is paid $120,000.
-- **Payroll test.** 25% of total compensation is $100,000. $120,000 exceeds $100,000, so §23101(b)(4) is met whatever the indexed payroll amount.
-- **Result.** The LLC must register (fee $70), file the Statement of Information (fee $20), and pay the $800 annual tax. It then tests the LLC fee against its California-assigned total income.
+25% is USD 100,000; USD 120,000 exceeds the lesser threshold whatever the index. The tax nexus result follows from §23101(b)(4). For a partnership/disregarded LLC, normally USD 800 annual tax plus any fee on California total income; SOS registration requires its own intrastate-business assessment. If registering, the USD 70 + USD 20 filings apply. ([§23101](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.), [§17941](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.))
 
-### Case 5: Delaware C corporation incorporated in 2026, run from San Francisco and qualified in 2026
+### Case 5: Delaware C corporation, first California qualification/business in 2026
 
-- **Facts.** Incorporated in Delaware in 2026. It began business in California only on qualifying in California, so its first taxable year starts in 2026: the minimum tax runs from the earlier of incorporation, qualification or commencing to do business in California (§23153(a)).
-- **Status.** It is commercially domiciled in California. Qualification fee $100; annual Statement of Information $20 plus $5.
-- **First year.** Its first taxable year is exempt from the $800 minimum tax (§23153(f)(1)). It still owes 8.84% of California net income: on $300,000, that is $26,520.
-- **Estimates.** Because the estimate exceeds the minimum tax, it is paid 30%, 40%, 0% and 30% (§19025).
-- **Return.** Form 100 is due the 15th day of the 4th month after year-end ([R&TC §18601](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18601.)). An S corporation files by the 15th day of the 3rd month.
+Run from San Francisco; incorporated in Delaware in 2026 and qualified in California before beginning California operations. Assume an ordinary nonfinancial corporation, no prior California business, no avoidance reorganization and USD 300,000 California taxable net income. Qualification USD 100, statement USD 25; income tax **USD 26,520**, with first-year minimum exemption. If §19025(b)'s requirement is met before month 4, estimates are USD 7,956 / 10,608 / 0 / 7,956. Form 100 deadline follows below. ([§23153](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23153.), [§23151](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23151.), [§19025](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19025.))
 
-### Case 6: LLC fee estimate penalty
+### Case 6: 2026 fee estimate with 2025 fee USD 900
 
-- **Facts.** 2025 fee $900. The LLC pays $900 by 15 June 2026. Its 2026 California total income turns out to be $600,000, so the 2026 fee is $2,500.
-- **Result.** It pays the $1,600 balance with the return, with no 10% penalty, because it paid at least the prior-year fee on time.
-- **Had it paid nothing by 15 June,** the penalty would be 10% of $2,500 = $250.
+Calendar-year LLC timely pays USD 900 by 15 June 2026; 2026 California total income USD 600,000 makes the fee USD 2,500. Balance **USD 1,600** by the original return due date; no estimate penalty because the timely amount equals the previous year's fee. Had it paid nothing timely, 10% of USD 2,500 is **USD 250**. ([§17942(a),(c),(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.))
+
+### Historical cases preserved, not substituted for 2026 inputs
+
+| Original case and inputs | Supported arithmetic / restricted outcome |
+|---|---|
+| 2025 Texas developer in Austin: total sales USD 625,000; originally labelled California sales USD 190,000 from three California-headquartered clients | 25% = 156,250; 190,000 exceeds min(757,070,156,250) by 33,750 **if** 190,000 is properly assigned California sales. Headquarters alone does not prove that assignment. Registration and Form 540NR outcome not cleared. Check this point with one of our partner accountants. |
+| 2025 Wyoming LLC: sales USD 1,400,000, California USD 40,000; total compensation USD 400,000, San Diego employee USD 95,000; property assumed zero | 25% compensation = 100,000; min(75,707,100,000) = 75,707; 95,000 exceeds it by 19,293. Payroll tax nexus established if compensation is assigned as stated. 40,000/1,400,000 = 2.857142857%; no automatic fee/apportionment, registration, worker-relocation or contractor-conversion advice. Check this point with one of our partner accountants. |
+| 2025 Oakland ceramics SMLLC: formed/launched 15 January; sales USD 320,000 = California 180,000 + other states 140,000; COGS 40% = 128,000; net income about 90,000 | 180,000/320,000 = 56.25%. The statement that domicile makes worldwide receipts California fee income is withdrawn. Source/throwback and other-state taxability must be checked before a USD 180,000 fee base or zero-fee conclusion. Check this point with one of our partner accountants. |
+| Pasadena duplex: gross rents USD 48,000; net rental income about USD 8,000 | If the LLC's complete California total income is 48,000, it is below the fee band. USD 800 plus half of the biennial USD 20 statement = USD 810 normalized annual recurring state charges, excluding formation/services and relief; 810/8,000 = 10.125%. This does not establish the best entity or liability protection. Historical 17 December 2025/no-business stub uses §17946; no “12 months free protection” conclusion. Check this point with one of our partner accountants. |
+| 2025 San Francisco SaaS startup: two founders, VC requirement for Delaware C corporation, co-working then leased office, W-2 employees from day one; DE formation 10 March, EIN 11 March, CA qualification 12 March | Preserve dates as case inputs, not advice to operate before qualification. Initial CA statement is due 90 days after 12 March, **10 June 2025**; recurring March window ends 31 March. The former 8 June date and equal USD 200 quarterly minimum estimates are withdrawn. Separate DE/federal fees and tax budget are held below. |
+
+For the historic Texas/Wyoming tax comparisons use the [FTB 2025 row](https://www.ftb.ca.gov/file/business/doing-business-in-california.html) and [§23101](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.); service/rental/retail assignment uses [§25135](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=25135.), [§25136](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=25136.) and [§17942](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.). The startup calendar follows [§2117](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=2117.).
 
 ## When to refuse or refer
 
-- **Professional services** by an LLC: refer to counsel. A professional corporation is usually needed.
-- **Voluntary disclosure or back years.** An out-of-state entity that has been doing business unregistered for past years needs a specialist to handle voluntary disclosure, back returns, penalties and revivor. This skill does not set the look-back or waiver terms.
-- **Public Law 86-272**, unitary or combined reporting, and apportionment beyond the single-year tests above.
-- **Federal classification elections**, S corporation eligibility, and personal nonresident returns.
-- **BOI for a foreign-country entity:** confirm the exemptions on FinCEN's site before filing.
+The following original topics and numeric inputs remain **non-usable holds**, not current law, estimates or recommendations. **Check this point with one of our partner accountants.**
+
+- Federal entity choice, S elections, reasonable salary, SE/QBI, dividends/QSBS and owner returns: the historical developer's USD 200,000 profit and 1.5% = USD 3,000 arithmetic do not establish savings or a break-even; prior USD 80,000-120,000 break-even, 15.3% savings, USD 600-1,500 payroll and USD 1,500-3,000 return costs are not usable.
+- Historic DE startup budget: USD 89 incorporation, USD 50 certificate, USD 175 + 50 = 225 / USD 400 franchise methods, 1 March 2026 deadline, USD 100 agent, USD 200-600 combined agents, USD 1,250-1,800 annual budget and federal 21%; none is verified here. Historic DE LLC USD 300, agents USD 50-300 / USD 100-300, USD 1,400 versus USD 900 cost comparisons and Wyoming USD 60 report cost likewise are held.
+- Historic processing “1-5 days”, USD 350 24-hour / USD 750 same-day, 60-day name reservation, 1-10 million shares, agent age/hours and operating-agreement page counts (5-10 / 30-60): no operative recommendation from these numbers. Naming/agent filing requirements are above; professional permissions, operating-agreement form, fiduciary duties and cross-state riders need review.
+- Rental liability/insurance versus LLC choice: prior USD 300-600 premiums, USD 1-2 million coverage and three-property break-even are not usable; rental Schedule E/C conclusions are not made here.
+- Nonprofit formation/statement cycle; series LLC treatment (do not assume one master-series tax); California BOI/state ownership disclosure; foreign-country BOI (including the former unconditional 30-day instruction); EIN/Form 8832 mechanics; special-entity exemptions; and entity cessation are held.
+- Public Law 86-272, combined/single-sales-factor apportionment, late-payment interest/penalties, suspension/revivor, voluntary disclosure and limitation periods: no prior “5% per month”, six-year look-back or automatic waiver/eligibility advice. Payroll/EDD and worker classification; sales tax, permits, other-state nexus and former 7.25% / 9%-10.5% / USD 100,000-or-200-transactions summaries are outside usable guidance.
+- Smaller historic nexus illustrations remain inputs only: California employee USD 72,000 later USD 80,000; Wyoming corporation California sales USD 750,000 later USD 760,000 of USD 3 million; service portfolio USD 50,000 / USD 750,000 later USD 760,000; California freelancer receipts USD 260,000; year-end filings 14/15 December; and the 1 January 2025 formation calendars. Do not reuse their former automatic registration, immunity or deadline outcomes; apply the sourced rules above with complete year-specific facts.
 
 ## Filing and payment
 
-| Step | When | Where |
+| Item | Ordinary deadline/payment | Official authority |
 |---|---|---|
-| Articles or foreign registration | Before starting business, or when the §23101 tests are first met | SOS (bizfileOnline) |
-| First Statement of Information | Within 90 days of the filing or registration | SOS |
-| LLC annual tax (form 3522) | First year: 15th day of the 4th month from the SOS filing date. Later years: 15th day of the 4th month of the taxable year | FTB |
-| LLC fee estimate (form 3536, Estimated Fee for LLCs) | 15th day of the 6th month of the taxable year | FTB |
-| Form 568 (partnership-classified LLC, or disregarded LLC owned by an S corporation or partnership) | 15th day of the 3rd month after year-end | FTB |
-| Form 568 (disregarded LLC owned by an individual or C corporation) | 15th day of the 4th month after the owner's year-end | FTB |
-| Corporation estimates | Months 4, 6, 9 and 12 (§19025) | FTB |
-| Form 100 / 100S | 15th day of the 4th month / 3rd month after year-end | FTB |
-| Later Statements of Information | Every 2 years (LLC) or every year (corporation), within the six-month window | SOS |
+| LLC annual tax | First newly formed year: day 15 of month 4 from SOS filing; subsequent years: day 15 of month 4 of taxable year; FTB 3522 or Web Pay. Disregarded LLC uses owner's taxable year. Earlier unregistered business/start-date complications are referred. | [FTB LLC page](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html), [§17941(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.), [§18633.5(i)(4)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18633.5.) |
+| LLC estimate / fee balance | FTB 3536 by day 15 of month 6; balance by original return due date | [§17942(c),(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.), [FTB LLC page](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html) |
+| Form 568 | Partnership LLC: day 15 of month 3 after close. Disregarded LLC: day 15 of month 4 after owner's year; month 3 if owner is S corporation, partnership or partnership-classified LLC | [§18633.5(a),(i)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18633.5.), [FTB due dates](https://www.ftb.ca.gov/file/when-to-file/due-dates-business.html) |
+| Ordinary corporation estimates | If estimate does not exceed minimum: all by day 15 of month 4. If greater and requirement met before month 4: 30%, 40%, 0%, 30% on day 15 of months 4, 6, 9, 12; first payment at least applicable minimum and §23800.5 tax. Later-start/QSub schedules require the other §19025 rows. FTB 100-ES | [§19025](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19025.), [FTB due dates](https://www.ftb.ca.gov/file/when-to-file/due-dates-business.html) |
+| Forms 100 / 100S | Ordinary C: day 15 of month 4 after close; S: day 15 of month 3. Short-period/cooperative exceptions are not cleared by these ordinary dates | [§18601(a)-(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18601.), [FTB due dates](https://www.ftb.ca.gov/file/when-to-file/due-dates-business.html) |
 
-**Extensions.** The FTB may extend the time to file, but not the time to pay. The maximum extension is seven months for Part 11 corporation returns and for partnership-classified LLC returns ([R&TC §18604](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18604.); [R&TC §18567](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18567.)). Confirm the FTB's current automatic extended date.
-
-### 2025 returns, extended returns due in autumn 2026 ([FTB doing business page](https://www.ftb.ca.gov/file/business/doing-business-in-california.html))
-
-The 2025 rules were the same as 2026 on every point in this skill except these:
-
-- The indexed "doing business" amounts: for 2025 use $757,070 / $75,707 / $75,707 from the FTB page.
-- The BOI rule: domestic companies were already exempt under the March 2025 interim rule.
-
-An LLC formed in 2024 or 2025 had no first-year waiver. Tax or fee paid with an extended 2025 return is late: interest and late-payment penalties run from the original due date.
+A filing extension is not a payment extension. Statutory maximum: seven months for Part 11 returns and partnership returns under §§18633/18633.5; do not substitute that maximum for the extension actually available to the entity ([§18604](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18604.), [§18567](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18567.)). Late/extended 2025 returns retain their original 2025 liability; no blanket “2025 and 2026 identical” assertion. Relief and unusual due dates: Check this point with one of our partner accountants.
 
 ## Completion checklist
 
-- [ ] Entity type, home jurisdiction and exact SOS filing or registration date recorded
-- [ ] Professional-services limit checked
-- [ ] All §23101 tests run, each against the lesser of its 25% prong and the FTB-indexed amount for the year, plus the active-conduct and domicile tests
-- [ ] First-year position stated. LLC: none for 2024-2026, $400 for first years beginning 2027-2029. Corporation: minimum tax exempt in year one.
-- [ ] 15-day rule tested for formations in the last 15 days of the year
-- [ ] LLC fee band from California total income (gross income plus COGS, excluding amounts received from a lower-tier LLC that are already subject to the fee), with the estimate compared to the prior-year fee
-- [ ] Statement of Information: 90-day date and recurring six-month window diarised
-- [ ] Return form and due date matched to classification and owner
-- [ ] BOI: domestic entity exempt; foreign-country entity checked
-- [ ] Unsettled points (the 2027 first-year rate after a 15-day stub; the 2026 indexed amounts) flagged to the client
+Record separate SOS registration and FTB nexus conclusions; classification; year-specific figures; every exemption condition; formation and recurring statement dates; accepted filing/payment receipts; return form and original due date; and each non-usable hold. Produce the calendar and fee budget only from supported inputs. Do not replace held outcomes with remembered figures.
+
+**US tax-use disclosure:** this Guide does not determine a taxpayer's federal tax position. Obtain the relevant facts and applicable federal authority before giving federal written advice; do not use a federal tax assumption from an historical case.
 
 ## Sources
 
-| Source | URL | Read on |
-| --- | --- | --- |
-| Gov. Code section 12190 (read through Firecrawl). Read for LLC fees: (a) USD 10, (b) USD 70, (c) USD 70, (k) USD 20. | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12190. | 2026-11-13 |
-| Gov. Code section 12186 (read through Firecrawl). Read for corporation fees: (c) USD 100, (f) USD 100, (g) and (h) USD 20. | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12186. | 2026-11-13 |
-| R&TC section 17941 (read through Firecrawl). Read for the annual tax, (g)(1) and (g)(2) USD 400 from 2027. | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941. | 2026-11-13 |
-| R&TC section 17942 (read through Firecrawl). Read for the fee bands and base. | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942. | 2026-11-13 |
-| FTB: Limited liability company page. Read for the first-year due date from the SOS filing date. | https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html | 2026-11-13 |
-| FTB: Doing business in California. Read for the 2025 amounts and that no 2026 row is posted. | https://www.ftb.ca.gov/file/business/doing-business-in-california.html | 2026-11-13 |
-| R&TC sections 23101, 23114, 23151, 23153, 23802, 19025, 19135, 19141, 23301, 17946, 18601, 18604, 18567, 18633.5. Read on the earlier pass; not reopened today. | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101. | 2026-09-25 |
-| Corporations Code sections 1502, 2117, 2203, 2204, 13401, 17701.04, 17702.09, 17708.02, 17708.07, 17713.07. Read on the earlier pass; not reopened today. | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17702.09. | 2026-09-25 |
-| SOS: Statements of Information (filing windows by month). Read on the earlier pass. | https://www.sos.ca.gov/business-programs/business-entities/statements | 2026-09-25 |
-| FinCEN: Beneficial ownership information (domestic exemption, foreign reporting companies). Read on the earlier pass. | https://www.fincen.gov/boi | 2026-09-25 |
+Read on 27 November 2026. Leginfo direct web fetches returned 403; the operative sections below were opened and read in an ordinary browser, including adjacent conditions within each section. Dates mean content read, not HTTP success.
 
-Not yet confirmed: the 2026 doing-business amounts (FTB has posted only 2025, so the 2025 figures are shown and labelled 2025-2026 filing cycle); SOS preclearance and expedite fees (Gov. Code 12182, not quoted); the R&TC and Corporations Code sections not reopened today; whether a 15-day exempt LLC year just before 2027 makes 2027 the first taxable year for the USD 400 rate.
+| Official source; portions read | URL | Read on |
+|---|---|---|
+| Gov. Code §12190: LLC articles, registration, reservation, statements/change fees | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12190. | 2026-11-27 |
+| Gov. Code §12186: share articles, foreign qualification exclusions, statements | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12186. | 2026-11-27 |
+| Corp. Code §§17702.01, 17701.08, 17701.13: LLC formation/name/agent; each section read | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17702.01. | 2026-11-27 |
+| Corp. Code §202: corporation articles, purpose/agent/address/shares | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=202. | 2026-11-27 |
+| Corp. Code §§17708.02, 17708.03, 191, 2105: foreign registration tests, exclusions, evidence; each read | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17708.03. | 2026-11-27 |
+| Corp. Code §§17702.09, 1502, 2117: timing, contents, no-change and disclosure fees; each read | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17702.09. | 2026-11-27 |
+| Corp. Code §§17713.07, 2204, 17708.07, 2203: notice, penalty and litigation conditions; each read | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=17713.07. | 2026-11-27 |
+| R&TC §23101: every nexus prong, annual revision, pass-throughs and assignment cross-references | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101. | 2026-11-27 |
+| R&TC §§25135, 25136: goods/throwback and service/property assignment; both read | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=25135. | 2026-11-27 |
+| R&TC §17941: annual-tax scope, corporate exclusion, relief and 2027 amendment | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941. | 2026-11-27 |
+| R&TC §17942: every band, base/exclusion, assignment, common control, payment/penalty | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942. | 2026-11-27 |
+| R&TC §§23151, 23153, 23802: ordinary rates, minimum, first year/excluded entities; each read | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23153. | 2026-11-27 |
+| R&TC §§17946, 23114: no-business/15-day tests and corporate taxable-year provision; both read | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17946. | 2026-11-27 |
+| R&TC §§19025, 18601, 18633.5, 18604, 18567: estimate schedules, returns/owner year, extension limits; each read | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19025. | 2026-11-27 |
+| R&TC §§19135, 19141: penalty triggers and amounts; both read | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19135. | 2026-11-27 |
+| FTB doing-business page: 2025 table/absence of 2026 row; no newer indexed figure inferred | https://www.ftb.ca.gov/file/business/doing-business-in-california.html | 2026-11-27 |
+| FTB LLC page: first/subsequent annual-tax deadlines, forms and payment channels | https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html | 2026-11-27 |
+| FTB business due dates: LLC classifications and Forms 568/100/100S/100-ES | https://www.ftb.ca.gov/file/when-to-file/due-dates-business.html | 2026-11-27 |
+| SOS Statements: online portal, User Access and filing windows | https://www.sos.ca.gov/business-programs/business-entities/statements | 2026-11-27 |
+| FinCEN BOI: final-rule alert and domestic exemption | https://www.fincen.gov/boi | 2026-11-27 |
+| 31 CFR §1010.380: domestic exemption, reporting-company definition and US-person relief | https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-C/section-1010.380 | 2026-11-27 |
+
+Not yet confirmed: the 2026 indexed dollar amounts; SOS registration for incomplete foreign-entity facts; 2027 first-year treatment after an exempt LLC stub; and the expressly non-usable historical/professional/special-case holds above. Check this point with one of our partner accountants.
