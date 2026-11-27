@@ -1,10 +1,10 @@
 ---
 name: mexico-iva
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Mexico IVA (Impuesto al Valor Agregado) return or classify transactions for Mexican VAT purposes. Trigger on phrases like "prepare IVA return", "Mexican VAT", "declaracion de IVA", "CFDI classification", "SAT filing", or any request involving Mexico value-added tax. Also trigger when classifying transactions from CFDI XML files, bank statements, or invoices for Mexican IVA purposes. This skill contains the complete Mexico IVA classification rules, CFDI 4.0 requirements, rate determination (16%/0%/exempt), border zone treatment, withholding rules, deductibility rules, and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any Mexico IVA-related work.
-version: 2.2
+description: Prepare, review and classify Mexican IVA transactions for 2026 from bank statements, CFDI XMLs and import/foreign receipts. Covers rates, border stimulus, cash timing, credit, withholding, monthly returns, original cases and specialist refusal boundaries.
+version: 2.3
 jurisdiction: MX
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 type: situation-rules
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -16,663 +16,382 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Who this applies to
 
-Self-employed personas fisicas and personas morales filing the monthly Mexican IVA declaration through the SAT Declaraciones y Pagos portal. Covers classifying bank-statement and CFDI transactions at 16%, the 0% rate or exempt, plus IVA withholding and crediting rules. IMMEX/maquiladora operations, consolidated groups and payroll sit outside this skill (see the refusal catalogue).
-
+For Mexican personas físicas and personas morales preparing the ordinary monthly IVA working paper for **2026**, then mapping to SAT Declaraciones y Pagos. Establish actual supplies, settlement, credit and withholding from documents; a bank statement alone establishes neither rate nor credit. Read Required inputs and the specialist refusal boundaries.
 
 ## Rates, bands and thresholds
 
-Country: Mexico (Estados Unidos Mexicanos). Authority: Servicio de Administración Tributaria (SAT). Currency: MXN. Return: the monthly IVA declaration, filed in the Declaraciones y Pagos service on the SAT portal (https://www.sat.gob.mx). E-invoicing: CFDI 4.0 for every transaction. Primary legislation: Ley del Impuesto al Valor Agregado (LIVA), its Reglamento (RLIVA), Código Fiscal de la Federación (CFF) and Resolución Miscelánea Fiscal 2026 (RMF 2026). Tax year 2026.
-
-| Item | Figure (2026) | Conditions | Source |
-| --- | --- | --- | --- |
-| Standard rate | 16% | All taxable acts and activities unless zero-rated or exempt (LIVA Art. 1: "la tasa del 16%") | [LIVA Art. 1 (SAT)](https://wwwmatnp.sat.gob.mx/articulo/19848/articulo-1) |
-| Zero rate (tasa 0%) | 0% | Activities listed in LIVA Art. 2-A (unprocessed basic food, patent medicines, agricultural inputs, listed exports); input IVA is creditable; food prepared for consumption on the premises is taxed at 16%; processed pet food is outside the 0% list (Art. 2-A fr. I b) numeral 6) | [LIVA Art. 2-A (SAT)](https://wwwmatnp.sat.gob.mx/articulo/06071/articulo-2-a) |
-| Exempt (exento) | No IVA, no credit | LIVA Arts. 9, 15, 20 and 25 (see 5.4) | same |
-| Northern border region stimulus | Credit of 50% of the IVA, an effective 8% | Only taxpayers with the aviso filed and all decree conditions met; CFDI shows "IVA Crédito aplicado del 50%" (RMF 2026 rule 11.9.3); decree extended to 31 December 2026 | [DOF 31-12-2025 extension decree](https://dof.gob.mx/nota_detalle.php?codigo=5777697&fecha=31/12/2025); [RMF 2026 rule 11.9.3](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf) |
-| Retention by personas morales on fees and rent from personas físicas | Two thirds of the IVA transferred and effectively paid | RLIVA Art. 3 fr. I | [RLIVA Art. 3 fr. I, DOF 04-12-2006](https://dof.gob.mx/nota_detalle.php?codigo=4939297&fecha=04/12/2006) |
-| Monthly payment deadline | Day 17 of the following month | Monthly declaration (LIVA Art. 5-D) | [LIVA Art. 5-D (SAT)](https://wwwmatnp.sat.gob.mx/articulo/73134/articulo-5-d) |
-| Automobile investment cap carried into IVA credit | MXN 175,000 | LISR Art. 36 fr. II; LIVA Art. 5 fr. I ties credit to ISR deductibility | [LISR Art. 36 fr. II, DOF 18-11-2015](https://dof.gob.mx/nota_detalle.php?codigo=5415878&fecha=18/11/2015) |
-
-**Read this whole section before classifying anything.**
-
-- **CFDI 4.0 requirements** -- Every sale, purchase, and payment must be documented by a valid CFDI 4.0 containing: RFC of issuer and recipient, regimen fiscal of issuer, uso del CFDI code, forma de pago, metodo de pago (PUE or PPD), lugar de expedicion (ZIP), IVA trasladado and/or retenido shown separately, UUID assigned by PAC, and SAT digital seal. Input IVA is NOT creditable without a valid, non-cancelled CFDI showing the client's correct RFC.
-- **Cash basis rule** -- Mexico IVA operates on a cash basis (flujo de efectivo) for most taxpayers. IVA is owed when payment is received, not when invoiced. IVA is creditable when payment is made, not when the CFDI is received. For PPD invoices, crediting requires the Complemento de Pago (REP) to be issued.
+| Item | 2026 rule and conditions | Official source |
+|---|---|---|
+| Ordinary taxable acts | 16%, on the value excluding IVA; establish Mexican territorial scope first | [LIVA 1, 10, 16, 21](https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf) |
+| Listed zero-rated acts | 0%; eligible inputs remain subject to the credit conditions | [LIVA 2-A](https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf) |
+| Exempt acts | No output IVA; directly attributable inputs are not creditable | [LIVA 5 V, 9, 15, 20, 25](https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf) |
+| Border stimulus | Derived effective 8% = 16% × (1 − 50%); only eligible operations and taxpayers, not a general regional rate | [North XI–XIII](https://sidof.segob.gob.mx/notas/docFuente/5547485); [South X–XII](https://sidof.segob.gob.mx/notas/docFuente/5609182) |
+| Border duration | Through 31 December 2026 for both decrees | [DOF extension, Articles One–Two](https://dof.gob.mx/nota_detalle.php?codigo=5777697&fecha=31/12/2025) |
+| Ordinary personal-service/commission/rental withholding | Two thirds of IVA actually paid by a persona moral to a persona física, for the listed operations | [RLIVA 3 I](https://www.ordenjuridico.gob.mx/Documentos/Federal/pdf/wo88442.pdf) |
+| Goods road freight withholding | 4% of consideration effectively paid by a persona moral, supplier may be individual or company | [RLIVA 3 II](https://www.ordenjuridico.gob.mx/Documentos/Federal/pdf/wo88442.pdf); [LIVA 1-A II c](https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf) |
+| Automobile investment deduction limits | MXN 175,000 ordinary; MXN 250,000 rechargeable electric, qualifying hybrid or hydrogen; IVA follows deductible proportion | [LISR 36 II; LIVA 5 I](https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf) |
+| Ordinary monthly payment | Day 17 of following month; ascertain any applicable calendar/decree extension before setting the actual date | [LIVA 5-D](https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf) |
 
 ## The taxable base
 
-**Return concepts (generic descriptions)**
+**Classify the act, not the bank label.** LIVA 1 covers sales of goods, independent services, temporary use and imports. Goods territory follows Article 10; ordinary resident services carried out wholly or partly in Mexico follow Article 16; use of tangible goods follows Article 21. A foreign customer alone does not establish an export. Subordinated employment and ISR-assimilated remuneration are outside independent services (Article 14). Reconcile documented own-account transfers, loan principal, capital contributions, dividends, tax payments and personal drawings separately; do not infer them from a round amount, a government name or an ATM withdrawal. An advance for a taxable supply is not an excluded loan. [LIVA 1, 1-B, 14, 16, 18, 21][liva].
 
-The A/B/C/D codes below are internal worksheet labels used by this skill, not official SAT casillas. The official Declaraciones y Pagos form uses named fields; map by concept.
+**Cash settlement.** Ordinary sales/services/rent are recognised when effectively collected, including advances, payment in kind and other extinction of the obligation. Cheques normally count when cashed, or transferred other than for collection. Credit entitlement requires effective payment in the relevant month as well as the other conditions. PUE is not proof that payment happened on the invoice date. The special interest accrual rule in Article 18-A is outside this ordinary workflow. [LIVA 1-B, 5 III, 11, 17, 22][liva].
 
-| Line | Meaning |
-| --- | --- |
-| A1 | Total value of activities at 16% |
-| A2 | IVA charged at 16% (A1 x 0.16) |
-| A3 | Total value of activities at 8% (border zone) |
-| A4 | IVA charged at 8% (A3 x 0.08) |
-| A5 | Total value of zero-rated activities |
-| A6 | IVA at 0% (always zero) |
-| A7 | Total value of exempt activities |
-| A8 | Total value of all activities (A1+A3+A5+A7) |
-| A9 | Total IVA causado (output IVA: A2+A4) |
-| B1 | Input IVA at 16% (IVA acreditable) |
-| B2 | Input IVA at 8% (border zone) |
-| B3 | IVA on imports (from pedimento) |
-| B4 | Total input IVA before proportion |
-| B5 | Proportion factor (factor de acreditamiento) |
-| B6 | Creditable IVA (B4 x B5, or B4 if 100% taxable) |
-| C1 | IVA withheld by clients (IVA retenido por clientes) |
-| C2 | IVA withheld from suppliers |
-| D1 | IVA payable before credits (A9 - B6) |
-| D2 | Less IVA withheld by clients (D1 - C1) |
-| D3 | Less saldo a favor from prior periods |
-| D4 | Amount payable (cantidad a cargo) or D5: saldo a favor |
+### Zero-rated and exempt classification
 
-**Conservative defaults -- Mexico-specific** (practice guidance set by this skill, not statutory rules)
+- **Food and medicines:** Article 2-A I a covers non-industrialised animals/vegetables, excluding rubber and household pets. I b covers patent medicines and human/animal food, not just unprocessed or prescription items. Its exclusions include non-milk beverages (including juice), specified drink concentrates, caviar/smoked salmon/elvers, flavourings/microencapsulates/additives, chewing gum and processed household-pet food. Prepared food is ordinarily standard-rated, including takeaway/home delivery and premises with no eating facilities. Plain non-carbonated, non-compound water excludes containers below ten litres. Domestic-use water supply is zero-rated under II h, not municipal-name exempt. [LIVA 2-A][liva]; [RLIVA 6–7][rliva].
+- **Agriculture:** zero rate only for the listed complete machinery/equipment in I e, fertilisers/pesticides/herbicides/fungicides destined for agriculture/livestock in I f, and hydroponic greenhouses/integrated equipment/irrigation in I g. III covers temporary use of the I e/g machinery, not farmland. II a covers the enumerated services directly to farmers/livestock producers for agricultural purposes; II b–h includes maize/wheat milling, milk pasteurisation, hydroponic-greenhouse services, cotton ginning, livestock/poultry slaughter, reinsurance and domestic water. Agricultural insurance is tested under the exemption, not assumed zero-rated. [LIVA 2-A][liva].
+- **Publications/menstrual goods:** publications edited by the taxpayer qualify under I i; other sales of books/newspapers/magazines are exempt under Article 9 III. I j covers pads, tampons and cups for menstrual management; LIF 2026 Article 25 XIII also covers menstrual underwear and discs, reusable/disposable. [LIVA 2-A, 9][liva]; [LIF 25 XIII][lif].
+- **Land/housing/used goods:** land and the residential part of construction are exempt, excluding hotels. Used movable goods are exempt except those sold by businesses. Residential rent requires actual housing use; the furnished/hotel/lodging exclusion applies. Allocate genuine mixed residential/commercial use. Commercial construction/rent generally follows the ordinary rate; do not tax the land portion. [LIVA 9 I–IV, 20 II][liva].
+- **Services:** education requires the public-provider, authorisation/RVOE or preschool conditions of Article 15 IV. Urban/suburban/metropolitan public land passenger transport is exempt; private-vehicle rides booked through digital intermediary platforms are excluded from that exemption. Medical services requiring a medical title qualify when supplied by individuals alone, through civil societies, or authorised private assistance/beneficence institutions under XIV; public decentralised medical/hospital/radiology/laboratory services follow XV. A commercial hospital or veterinary label alone is insufficient. [LIVA 15 IV–V, XIV–XV][liva].
+- **Insurance/finance:** test the policy against Article 15 IX: agricultural risks; qualifying housing-credit default and financial guarantees used for housing finance; life insurance/pensions and agent commissions on those policies. Test interest against the actual financing/provider/borrower/use conditions in X, including the restrictions for individuals and the credit-card exclusion. Ordinary account fees, card annuities and payment-processing commissions have no blanket exemption. [LIVA 15 IX–X, 18-A][liva].
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 16% |
-| Unknown IVA status of a purchase | Not creditable |
-| Unknown counterparty location | Domestic Mexico |
-| Unknown B2B vs B2C status | B2C (no withholding) |
-| Unknown business-use proportion (vehicle, phone, home office) | 0% recovery |
-| Unknown whether CFDI exists | Not creditable (no CFDI = no credit) |
-| Unknown border zone eligibility | Standard 16% (do not apply 8% without verification) |
-| Unknown whether transaction is in scope | In scope at 16% |
-| Unknown whether expense is strictly indispensable | Not creditable |
-| Unknown IVA withholding obligation | No withholding (flag for reviewer) |
+### Border stimulus: north and south
 
-**Red flag thresholds** (practice guidance set by this skill, not statutory thresholds)
+Verify the actual establishment/local premises and municipality under each decree, actual delivery/performance in the region, timely IVA aviso under RMF 11.9.2 / procedure 3/DEC-5, and all exclusions. North Article I includes its 2022 municipality amendment; do not use the old incomplete list or postcode ranges as eligibility evidence. [2022 decree][north2022]. Under procedure 3/DEC-5, file within the month following RFC registration or the branch/establishment opening notice in the region; for resumption or obligation updates, by day 17 of the following month. Keep the notice receipt. [Anexo 2, 3/DEC-5][annex2]. The old general eighteen-month and payroll tests must not be applied as IVA prerequisites: Article VII's eighteen-month test concerns the ISR benefit; IVA has its separate XI–XIII north / X–XII south conditions. Both decrees remain effective through the end of 2026. [North][north]; [2020 amendment][northAmend]; [South][south]; [extension][expiry].
 
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction size | MXN 50,000 |
-| HIGH tax-delta on a single conservative default | MXN 5,000 |
-| MEDIUM counterparty concentration | >40% of output OR input |
-| MEDIUM conservative-default count | >4 across the return |
-| LOW absolute net IVA position | MXN 100,000 |
+Do not apply the stimulus to real-estate sales, intangible sales/temporary use or the respective digital-content/service exclusions. Check CFF 69/69-B/69-B Bis listings, shareholders and affected transactions; limited correction/penalty-remission exceptions under RMF 11.9.12–13 and 20–21 require their own evidence, not a clean-RFC assumption. Transport must start and finish inside the region without outside stops. Imports are not covered by the domestic stimulus. South also excludes individuals electing LIVA 18-M. For uncertain eligibility/remediation, hold that transaction: Check this point with one of our partner accountants. [North XIII as amended][northAmend]; [North original exclusions][north]; [South XII][south]; [RMF 11.9][rmf].
 
+Once 72 hours have passed after the aviso, use the CFDI option “IVA Crédito aplicado del 50%” and the permitted product/service catalogue entry. Generic 01010101 is excluded except qualifying public-in-general operations; excluded catalogue items cannot use the benefit. Retention uses the rate after the stimulus. Buyer input is the IVA actually transferred and qualifying for credit. [RMF 11.9.3][rmf].
 
-Each rule states the legal source and the return line mapping. Apply silently if the data is unambiguous.
+### CFDI and input credit
 
-### 5.1 Standard rate 16% (LIVA Article 1)
+Use the actual valid CFDI 4.0 XML, not just a bank description or PDF. Check issuer/recipient RFC and registered identity, recipient fiscal postcode/regime/use, issuer regime, place/date, currency/exchange rate where required, actual payment method/form, transaction details, separately stated IVA, fiscal UUID and seals. Confirm current SAT status and material transaction evidence; a stamp does not prove a real supply. Income, credit-note, goods-transfer, payment and payroll types are I/E/T/P/N; do not demand every ordinary payment field on a P or T document. CFF 29-A IX requires real existing transactions. [CFF 29, 29-A][cff]; [Anexo 20][technical].
 
-- **Standard rate rule** -- Default rate for all taxable activities in Mexico unless zero-rated or exempt. Sales at 16%: Line A1 (net), A2 (IVA). Purchases at 16%: Line B1 (input IVA, if creditable).  _(LIVA Article 1)_
+For ordinary fully paid invoices use PUE and the actual form; for deferred/instalment invoices use PPD/99 (99 means payment form not yet defined). REP links actual payment to the original UUID; one per payment or monthly grouping for the same recipient is permitted. It is due by the fifth **natural** day of the following month, not five business days after each payment. Resolve a missing/late REP before treating the working paper as filing-ready; do not move the actual tax point to the REP issuance month or assume an unpaid PUE is paid. Correction/cancellation must preserve the real transaction and payment dates; see the existing mx-cfdi Guide for the current deadline and acceptance matrix. [SAT CFDI][satcfdi]; [RMF 2.7.1.32][rmf]; [LIVA 5 III][liva].
 
-### 5.2 Border zone rate 8% (Decreto region fronteriza)
+Apply all LIVA 5 conditions: indispensable business expenditure deductible for ISR; separate IVA on the qualifying fiscal receipt; actual payment; import pedimento in the taxpayer's name with IVA paid. Partially deductible costs allow only the corresponding IVA proportion. Personal/representation expenses and costs exclusively for exempt/non-object activities do not create recoverable IVA. Foreign digital receipts have the specific exception below. Gifts and employee benefits need their actual deductibility analysis; no generic gift threshold establishes a credit. [LIVA 4–5][liva].
 
-- **Border zone rate rule** -- Available ONLY when all conditions are met: tax domicile in qualifying border municipality, supply occurs physically in the zone, 18-month establishment requirement, aviso filed with SAT, not on EFOS blacklist. If ANY condition is unverified, apply 16%. The decree grants a credit of 50% of the IVA (CFDI value "IVA Crédito aplicado del 50%", RMF 2026 rule 11.9.3), an effective 8%. Sales at 8%: internal lines A3 (net), A4 (IVA). Purchases at 8%: internal line B2.  _(Decreto de Estimulos Fiscales Region Fronteriza Norte, DOF 31-12-2018, extended to 31 December 2026 by the decree of DOF 31-12-2025)_
+**Attribution before proportion.** Non-investment inputs exclusively for taxable/zero-rated activities qualify in full, subject to all other credit conditions; those exclusively for exempt/non-object activities do not. Common inputs use eligible taxable/zero-rated activity value divided by total relevant activity value for that month, including Article 4-A non-object activity. Apply Article 5-C exclusions and its financial-sector exception; ordinary imports, qualifying fixed-asset disposals, dividends (subject to its predominantly-dividend exception), specified securities/currency transactions, interest/FX and the other listed excluded values do not simply go into an all-bank-receipts denominator. Investments, changes of use, preoperating costs and an existing Article 5-B election have different adjustment rules. Do not replace them with a universal annual true-up: Check this point with one of our partner accountants. [LIVA 5 V, 5-A–C][liva].
 
-### 5.3 Zero-rated activities 0% (Article 2-A LIVA)
+**Withheld input IVA:** the portion retained by the buyer must first be remitted; it is creditable in the monthly declaration following the declaration in which it was remitted. Track it separately from the non-retained portion and do not credit it in the purchase month. [LIVA 5 IV][liva].
 
-- **Zero-rated activities rule** -- Basic foodstuffs (unprocessed), prescription medicines, agricultural inputs/services, exports of goods (with pedimento), exports of services (used/enjoyed abroad), books/newspapers, feminine hygiene products. Zero-rate allows FULL crediting of input IVA. Pet food is NOT zero-rated: processed food for dogs, cats and small pets is excluded from the 0% rate and pays 16% (LIVA Art. 2-A Fr. I b) numeral 6). Sales at 0%: internal line A5.  _(Article 2-A LIVA)_
+**Restaurants:** representation expenses and bars do not qualify. An otherwise indispensable ordinary restaurant meal is not automatically representation: LISR 28 XX disallows 91.5%, leaving a derived 8.5% deductible portion, with the specified card/authorised-wallet payment condition. Qualifying travel meals have a separate rule and limits; hold those specific limits pending case review. [LISR 28 IV, V, XX; LIVA 5 I][lisr].
 
-### 5.4 Exempt activities (Articles 9, 15, 20, 25 LIVA)
-
-- **Exempt activities rule** -- Sale of land (Art. 9 Fr. I) and of constructions destined or used for housing (Art. 9 Fr. II); used movable goods except those sold by businesses (Art. 9 Fr. IV); residential rental (Art. 20 Fr. II); and the services listed in Art. 15, including accredited education (Fr. IV), urban/suburban public land transport (Fr. V), agro-weather, housing-credit, financial-guarantee and life insurance plus agent commissions on those (Fr. IX), and services deriving from interest in authorized financing operations (Fr. X). Import exemptions sit in Art. 25. Professional medical services that require a medical degree and are provided by individuals (personas físicas), alone or through civil societies, are exempt (Art. 15 Fr. XIV); medical, hospital, radiology and laboratory services of public decentralised bodies are exempt under Fr. XV. Exempt = no IVA charged AND no input IVA credit on attributable costs.  _(Articles 9, 15, 20, 25 LIVA)_
-
-### 5.5 CFDI requirements for input IVA crediting
-
-- **CFDI requirements for crediting** -- Input IVA is creditable ONLY if: (1) valid CFDI 4.0 with UUID exists, (2) CFDI is in "Vigente" status (not cancelled), (3) client's RFC is shown correctly as receptor, (4) IVA is separately stated (trasladado), (5) payment has been made (cash basis), (6) for PPD invoices, REP (Complemento de Pago) has been issued. Missing any element = zero credit.
-
-### 5.6 IVA withholding (retencion, Article 1-A LIVA)
-
-- **IVA withholding rule** -- Personas morales that receive independent personal services or commission services from, or temporarily use goods of, personas fisicas must retain the IVA trasladado (LIVA Art. 1o.-A Fr. II a)); the retention is two thirds of the IVA effectively paid (RLIVA Art. 3 Fr. I). The former 6% subcontracting retention is repealed (LIVA Art. 1o.-A Fr. IV, derogada DOF 23-04-2021) -- do not apply it. Digital platforms operating as intermediaries retain 50% of the IVA charged to personas fisicas (LIVA Art. 18-J Fr. II a)); Mexican-resident digital intermediation platforms carry the same duties (Art. 1o.-A BIS). Withheld IVA is reported on the withheld-by-clients line and is creditable against IVA payable.  _(LIVA Art. 1o.-A; RLIVA Art. 3 Fr. I; LIVA Art. 18-J)_
-
-### 5.7 Imported services
-
-- **Imported services rule** -- Services received from non-residents without Mexican CFDI: IVA on import at 16% applies. Self-assessed by the Mexican taxpayer. Reported on Line B3. Creditable if service is strictly indispensable.
-
-### 5.8 Proportional crediting (factor de acreditamiento, Art. 5 Fr. V)
-
-- **Factor de acreditamiento formula** -- When the taxpayer performs BOTH taxable AND exempt activities: Factor = (value of taxable activities) / (total value of all activities). Apply factor to input IVA on shared/common expenses. Direct attribution first: costs directly for taxable = 100% credit; costs directly for exempt = 0% credit.  _(Art. 5 Fr. V)_
-
-### 5.9 Blocked / non-creditable input IVA
-
-- **Blocked / non-creditable input IVA rule** -- LIVA Art. 5 Fr. I limits credit to gastos estrictamente indispensables, defined as expenses deductible for ISR, so non-deductible expenses carry non-creditable IVA. Entertainment (gastos de representacion, non-deductible under LISR Art. 28 Fr. IV). Personal expenses. Expenses without valid CFDI. IVA not separately stated on the CFDI (LIVA Art. 5 Fr. II). Expenses related exclusively to exempt activities.
-
-### 5.10 Vehicle rules (LISR Art. 36 Fr. II cross-reference)
-
-- **Vehicle cap rules** -- Automobile investments are deductible only up to MXN 175,000 (LISR Art. 36 Fr. II, DOF 18-11-2015); a higher cap applies to automobiles propelled by rechargeable electric batteries and to hybrids (amount on the Not yet confirmed line). Because LIVA Art. 5 Fr. I ties IVA credit to ISR deductibility, input IVA on the vehicle follows the same cap. The cap does not apply to taxpayers whose activity is granting temporary use of automobiles, provided the vehicles are used exclusively for that activity.  _(LISR Art. 36 Fr. II; LIVA Art. 5 Fr. I)_
-
-### 5.11 Cash basis timing
-
-- **Cash basis timing rule** -- IVA causado (output): report in the month payment is received. IVA acreditable (input): credit in the month payment is made. For PPD invoices: credit only when REP is issued. For PUE invoices: credit in the month of the CFDI date (payment made at invoice time).
-
-### 5.12 Saldo a favor (favorable balance)
-
-- **Saldo a favor rule** -- When input IVA exceeds output IVA: the balance can be carried forward (acreditamiento) or refunded (solicitud de devolucion via FED portal). Refund requests trigger SAT review and may require additional documentation.
+**Vehicles/fuel:** ordinary automobile investment credit follows the deductible fraction, capped by the amounts in the rate table; the higher limit has the stated propulsion conditions. The exclusive automobile-rental business exception is subject also to LISR 36 III's related-party restriction. Do not infer unlimited credit for taxis, cargo vehicles or motorcycles without establishing the legal vehicle classification and use: Check this point with one of our partner accountants. Automobile operating costs also follow the deductible-investment proportion under LISR 28 II. Fuel needs the prescribed non-cash payment even at or below MXN 2,000 and the supplier's current permit information on the receipt, as well as business use and IVA documentation. [LISR 27 III, 28 II, 36 II–III; LIVA 5 I][lisr].
 
 ## Deadlines and filing
 
-- IVA is declared monthly through Declaraciones y Pagos; for personas morales under the general regime the monthly declaration and payment are due on the 17th day of the month following the taxed month (SAT obligations page, Read on 2026-10-28).
-- Timing is cash basis (LIVA Art. 4o. and 5o.): output IVA arises when consideration is effectively received; input IVA is creditable when consideration is effectively paid. CFDI "P" (paid) requires a "P" in the payment complement (REP); "PPD" requires the REP.
-- IVA retained by clients is reported on the withheld-by-clients line of the taxpayer's monthly declaration; the retenedor pays it over with its own declaration (LIVA Art. 1o.-A, final paragraphs).
-- Monthly saldo a favor carries forward, or a devolucion may be requested (LIVA Art. 6o.).
+Ordinary IVA is calculated for each calendar month and paid through SAT Declaraciones y Pagos by the statutory date in the rate table. Monthly is not universal: LIVA 5-F/33 and special regimes need separate handling. Do not infer the period from the first/last bank entry; confirm complete monthly coverage and obligations. Any RFC-based extension or unusual holiday/portal deadline must be established for the actual taxpayer/date; otherwise use the statutory due date in the draft. [LIVA 5-D–F, 33][liva].
+
+DIOT is separate from the payment return. RMF 4.5.1 allows the supplier information during the following month for individuals and companies, subject to applicable relief. Reconcile supplier RFC/foreign identification, transaction kind, paid bases/rates, creditable and non-creditable IVA and withholdings; follow the actual SAT form, not the old fifteen-percent field. RESICO individuals and companies within RMF 3.13.17 are relieved; RMF 2.8.1.17 also relieves the specified individual business/professional/platform/rental chapters where prior-year total income did not exceed MXN 4,000,000, or qualifying new starters estimate no more than that. Do not infer relief from merely using a software tool. [RMF 4.5.1, 3.13.17, 2.8.1.17][rmf].
+
+A current saldo a favor may be credited against own IVA in following months until exhausted, or requested as a refund of the full balance; an amount requested for refund cannot also be carried forward. Do not use prior favourable balances to pay supplier-retention liabilities. Distinguish unused old balance from a newly generated current-period balance. [LIVA 6, 1-A][liva].
+
+Refunds/discounts/returned advances require documented restitution of IVA identifying the original invoice. The seller reduces the taxable values in the following declaration(s) as Article 7 allows; the buyer reduces credit in the month of the specified event, and pays any excess over available credit. A credit note's issue/receipt alone is not proof of restitution. If retention was already remitted, Article 7 instead requires complementary declarations to reverse the operation. [LIVA 7][liva].
 
 ## Penalties and interest
 
-Late or incorrect declarations attract CFF accesorios (updates and surcharges) on unpaid amounts, and fines for filing failures; errors are corrected by filing a complementary declaration. Specific CFF amounts are not reproduced here because the archived CFF text was not profiled for this skill.
+Late/incorrect payment, filing, withholding, false CFDIs and blocked seals require case-specific correction and accessory calculations. The former approximate monthly surcharge and penalty ranges are not usable for 2026. No automatic penalty-free cure is promised. For the precise amounts, limitation/refund deadline, CFF 49 Bis/69-B procedure, response period or criminal consequences: Check this point with one of our partner accountants. [CFF][cff].
 
 ## Cross-border points
 
-- Imports of goods or services by Mexican businesses: IVA at 16% is paid at import or self-assessed; credit follows LIVA Art. 5o. (pedimento or D-1 in the importer's name).
-- Foreign digital intermediation platforms: registration and 50% IVA retention duties under LIVA Arts. 18-B through 18-M, retention per Art. 18-J; Mexican-resident digital platforms carry the same duties (Art. 1o.-A BIS).
-- Exports of goods and services are taxed at the 0% rate in the terms of LIVA Art. 2o.-A and Art. 29; keep the pedimento (goods) or proof the service is effectively used or enjoyed abroad (services).
-- Temporary imports and IMMEX are out of scope (refusal R-MX-1).
+Persona moral payments to individuals for independent personal services, commissions and temporary use of goods attract two-thirds IVA withholding; not every purchase from an individual is such a service. Goods road-freight withholding is in the rate table. LIVA 1-A also covers credit institutions acquiring assets by adjudication/payment in kind; companies acquiring scrap for industrial inputs/resale; and persons acquiring or temporarily using tangible goods supplied by non-residents without a Mexican permanent establishment. Those unreduced categories retain the IVA transferred, subject to the import-only taxpayer exception. This is not a universal withholding on foreign services. The former subcontracting 6% rule is repealed; specialised-service documentation under LIVA 5 II must still be checked. Do not revive it to match an old example. [LIVA 1-A, 5 II][liva]; [RLIVA 3][rliva].
 
-## Section 2 -- Required inputs and refusal catalogue
+Retain when effectively paying and remit separately, ordinarily by the following month's day 17. Input credit, prior favourable balances and other reductions cannot offset the retained tax remittance. A seller reduces its own IVA by tax withheld from it under the applicable rules; this differs from the buyer's later credit timing. [LIVA 1, 1-A, 5 IV][liva].
 
-### Required inputs
+**Platforms in 2026:** where an intermediary collects both price and IVA on behalf of the supplier, LIVA 18-J II a requires retention of half the collected IVA for individuals furnishing RFC, all of it without RFC. Mexican-resident intermediaries have corresponding duties under 1-A BIS. LIF 2026 Article 25 IX extends the Article 18-J retention to companies and requires all collected IVA retained for foreign suppliers without a Mexican establishment selling goods in Mexico, and for proceeds deposited in foreign bank/deposit accounts. The airline non-retention facility in RMF 9.1.24 has its own treaty/IATA and RFC/foreign-ID conditions; hold that specific outcome for review. [First RMF modification][mod1]. Platforms remit by day 17 of the following month and provide the retention CFDI within the following month's first five days, under 18-J II b–c. Reconcile gross sale, platform commission, IVA, each retention and net bank settlement separately. The rider buying transport does not itself retain half of the fare's IVA merely because a platform is involved. A definitive platform-payment election has different credit consequences and is outside this ordinary return: Check this point with one of our partner accountants. [LIVA 1-A BIS, 18-J–M][liva]; [LIF 25 IX][lif].
 
-**Minimum viable** -- bank statement (estado de cuenta) for the month in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any Mexican bank: BBVA Bancomer, Banorte, Santander Mexico, Citibanamex, HSBC Mexico, Scotiabank Mexico, Banco Azteca, or any other. CFDI XMLs are strongly preferred for input IVA crediting.
+**Foreign digital subscriptions:** Chapter III Bis covers only the enumerated paid, fundamentally automated digital services in Article 18-B: listed digital content (with electronic books/newspapers/magazines excluded from I), intermediation, online clubs/dating, and distance teaching/tests/exercises. Determine Mexican recipient location using Article 18-C, the actual supplier and SAT registration; SaaS/cloud storage or advertising is not automatically one category. A qualifying registered foreign provider charges ordinary IVA and its Article 18-D V receipt can support credit under 18-F without a Mexican CFDI, provided separate tax, required receipt particulars and other credit conditions are met. There is no blanket B2B self-withholding on these purchases. If the provider is not on the Article 18-D list, 18-I directs the recipient to the appropriate import rule. [LIVA 16, 18-B–F, 18-I][liva].
 
-**Recommended** -- CFDI XML files for all sales and purchases (or at minimum the monthly CFDI listing from SAT portal), prior month's declaracion showing saldo a favor carried forward, the client's RFC and constancia de situacion fiscal.
+**Other imports:** goods import IVA follows the customs transaction and pedimento; the Article 27 base includes customs value plus import duty and other import contributions/charges, not IVA itself. Check Article 25 exemptions and temporary-import exceptions; do not assume all imports are taxable or all temporary imports exempt. Ordinary foreign services used in Mexico fall under 24 V (excluding international transport), become taxable when effectively paid under 26 IV and use the relevant Article 27/18 base. RLIVA 50 permits qualifying intangible/service import credit in the same monthly declaration. Record **both import IVA payable and eligible import IVA credit**; posting input B3 alone omits the liability. [LIVA 24–28][liva]; [RLIVA 48–50][rliva].
 
-**Ideal** -- complete CFDI download from SAT portal (both emitidos and recibidos), estado de cuenta from all business bank accounts, prior month return filed, constancia de situacion fiscal showing regimen and obligations.
+**Exports:** definite goods export needs completed customs formalities. Services must satisfy the applicable Article 29 export category and foreign-use requirements, not simply be billed in USD or to a foreign name. For IT development/integration/maintenance under IV i: infrastructure, human and material resources entirely in Mexico; provider device/ISP IPs in Mexico and recipient device/ISP IPs abroad; foreign customer's tax ID on the receipt; electronic payment from a foreign financial account to the provider's Mexican credit-institution account; no VPN provision and no application to goods situated in Mexico. Keep the accounting evidence required by RMF 4.6.6, including the foreign tax ID in the CFDI Leyendas Fiscales complement with “TIN del residente en el extranjero:”. Other qualifying service categories require their own conditions under Article 29/RLIVA 58–61. [LIVA 29][liva]; [RLIVA 57–61][rliva]; [RMF 4.6][rmf].
 
-**Refusal policy if minimum is missing -- SOFT WARN.** If no bank statement and no CFDIs are available at all, hard stop. If bank statement only without CFDIs, proceed but record in the reviewer brief: "This IVA return was produced from bank statement alone. The reviewer must verify that all input IVA claims are supported by valid CFDI 4.0 documents and that the cash basis timing rule has been applied correctly."
+### Supplier pattern library
 
-### Mexico-specific refusal catalogue
+Route documents by these original patterns, then apply the operative rules. Names do not establish issuer, SAT status, item, rate, business use or credit.
 
-- **R-MX-1 -- Maquiladora / IMMEX operations** -- Trigger: client operates under the IMMEX program or has maquiladora status. Message: "IMMEX/maquiladora operations have special IVA certification, virtual import/export, and temporary import rules that are outside this skill's scope. Escalate to a Contador Publico with IMMEX experience."
-- **R-MX-2 -- Consolidated group filing** -- Trigger: client is part of a grupo empresarial filing consolidated returns. Message: "Consolidated group IVA structures are outside this skill's scope. Escalate to a licensed tax practitioner."
-- **R-MX-3 -- Transfer pricing IVA implications** -- Trigger: intercompany transactions with related parties where pricing affects IVA base. Message: "Transfer pricing adjustments affecting the IVA base require specialist analysis. Escalate."
-- **R-MX-4 -- EFOS/EDOS blacklist** -- Trigger: client's RFC or a major supplier's RFC appears on SAT's Article 69-B blacklist (Empresas Facturadoras de Operaciones Simuladas). Message: "One or more RFCs involved in these transactions may be on the EFOS/EDOS blacklist. All CFDIs from blacklisted suppliers are presumed false and non-creditable. Escalate to a Contador Publico immediately."
-- **R-MX-5 -- Income tax return instead of IVA** -- Trigger: user asks about annual income tax return (declaracion anual ISR), not the monthly IVA. Message: "This skill only handles the monthly IVA return. For Mexico income tax (ISR), use the appropriate income tax skill."
-- **R-MX-6 -- Payroll (nomina) processing** -- Trigger: user asks about CFDI de nomina, IMSS, INFONAVIT, or payroll obligations. Message: "Payroll is outside the scope of the IVA return. Use a payroll-specific skill."
+| Original pattern group | Documentary treatment |
+|---|---|
+| BBVA/BANCOMER, BANORTE/BANCO MERCANTIL DEL NORTE, SANTANDER, CITIBANAMEX/BANAMEX, HSBC, SCOTIABANK, BANCO AZTECA, BANREGIO/BANBAJIO/BANCO DEL BAJIO; INTERESES/INTERES/RDTO; COMISION BANCARIA/ANUALIDAD TARJETA | Separate loan principal, interest and ordinary account/card charges. Test the actual financing exemption; do not exclude all fees. |
+| SAT/SERVICIO DE ADMINISTRACION TRIBUTARIA, DECLARACION/PAGO DE IMPUESTOS, IMSS/SEGURO SOCIAL, INFONAVIT, AFORE/PENSIONES, GOBIERNO/SECRETARIA/AYUNTAMIENTO, MUNICIPIO/PREDIAL/TENENCIA, TRAMITE/LICENCIA GOBIERNO | Match actual tax/contribution/right payment. Government commercial supplies are not automatically outside IVA. |
+| CFE/COMISION FEDERAL DE ELECTRICIDAD, TELMEX/TELEFONOS DE MEXICO, TELCEL/AT&T MEXICO/MOVISTAR, IZZI/TOTALPLAY/MEGACABLE, GAS NATURAL/NATURGY/GAS LP | Ordinary taxable route; verify actual item, agricultural electricity exception and business attribution. |
+| AGUA/SAPAS/SIAPA/SACMEX | Distinguish zero-rated domestic water service from other supplies and charges. |
+| PEMEX/GASOLINERA/ESTACION DE SERVICIO, GASOLINA/DIESEL/COMBUSTIBLE; CASETA/PEAJE/CAPUFE | Verify fuel or toll receipt, business use and the applicable credit conditions; do not invent a simplified-document exemption. |
+| GNP/GRUPO NACIONAL PROVINCIAL, AXA/MAPFRE, METLIFE/SEGUROS MONTERREY, QUALITAS/HDI, SEGUROS/POLIZA/PRIMA | Read the policy; only the actual exempt categories qualify. |
+| WALMART/WALMEX/BODEGA AURRERA, COSTCO, AMAZON MX, MERCADO LIBRE, OFFICE DEPOT/STAPLES, HOME DEPOT, LIVERPOOL/PALACIO DE HIERRO, SORIANA/CHEDRAUI/LA COMER | Split mixed-rate items; verify issuer and business purpose. |
+| UBER/DIDI/BEAT/CABIFY; ADO/PRIMERA PLUS/ETN; METROBUS/METRO/TRANSPORTE PUBLICO | Distinguish private platform rides, intercity transport and qualifying urban public transport; separate rider's credit from platform's seller withholding. |
+| VOLARIS/AEROMEXICO/VIVA AEROBUS | Domestic flights follow ordinary treatment. International passenger flights are not wholly zero-rated: Article 16 treats a quarter as Mexican service, and Article 29 VI zero-rates the qualifying foreign portion supplied by Mexican residents. Reconcile actual ticket components. |
+| GOOGLE/GGLE (Ads/Workspace/Cloud), MICROSOFT/MSFT (365/Azure), ADOBE, META/FACEBOOK/FCBK, AMAZON WEB SERVICES/AWS, ZOOM, SLACK/ATLASSIAN/NOTION, SPOTIFY/NETFLIX/APPLE | Establish Mexican issuer, registered foreign digital provider or other import; apply the corresponding rules. |
+| STRIPE, PAYPAL, MERCADOPAGO, CONEKTA/OPENPAY/SR PAGO, CLIP/IZETTLE | Separate principal, service fees, financing and refunds; no blanket fee exemption. |
+| NOTARIO/NOTARIA/FE PUBLICA, CONTADOR/CONTABILIDAD/DESPACHO CONTABLE, ABOGADO/BUFETE/DESPACHO JURIDICO, CONSULTORIA/ASESORIA | Verify actual service, deductibility, entity and withholding. |
+| NOMINA/SUELDO/SALARIO, PTU/REPARTO DE UTILIDADES, AGUINALDO/VACACIONES, SAR/AFORE; TRASPASO/TRANSFERENCIA PROPIA/MOVIMIENTO ENTRE CUENTAS; RETIRO/CAJERO/ATM; DIVIDENDO/PRESTAMO PERSONAL/DISPOSICION | Reconcile underlying payment and evidence; no tax classification based only on the pattern. Cash withdrawal itself does not prove personal expenditure. |
 
-## Section 3 -- Supplier pattern library (the lookup table)
-
-This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment directly. Do not second-guess. If none match, fall through to Tier 1 rules in Section 5.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty name as it appears in the bank statement or CFDI. If multiple patterns match, use the most specific.
-
-### 3.1 Mexican banks (fees exempt -- exclude)
-
-**Mexican banks table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| BBVA BANCOMER, BBVA MEXICO | EXCLUDE for bank charges/fees/comisiones (flag general account fees) | Art. 15 Fr. X exempts services deriving from interest, including commissions of credit institutions in authorized financing operations; general account fees are not squarely covered -- verify CFDI treatment |
-| BANORTE, BANCO MERCANTIL DEL NORTE | EXCLUDE for bank charges/fees | Same |
-| SANTANDER MX, SANTANDER MEXICO, BANCO SANTANDER | EXCLUDE for bank charges/fees | Same |
-| CITIBANAMEX, BANAMEX | EXCLUDE for bank charges/fees | Same |
-| HSBC MEXICO | EXCLUDE for bank charges/fees | Same |
-| SCOTIABANK MEXICO | EXCLUDE for bank charges/fees | Same |
-| BANCO AZTECA | EXCLUDE for bank charges/fees | Same |
-| BANREGIO, BANBAJIO, BANCO DEL BAJIO | EXCLUDE for bank charges/fees | Same |
-| INTERESES, INTERES, RDTO | EXCLUDE | Interest income/expense, exempt |
-| CREDITO, PRESTAMO, LOAN | EXCLUDE | Loan principal movement, out of scope |
-| COMISION BANCARIA, ANUALIDAD TARJETA | EXCLUDE for commissions tied to interest-bearing financing; flag the rest | Art. 15 Fr. X covers commissions of credit institutions in financing operations; card annuities -- verify CFDI treatment |
-
-### 3.2 Mexican government, regulators, and statutory bodies (exclude entirely)
-
-**Government bodies table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SAT, SERVICIO DE ADMINISTRACION TRIBUTARIA | EXCLUDE | Tax payment, not a supply |
-| DECLARACION, PAGO DE IMPUESTOS | EXCLUDE | Tax payment |
-| IMSS, SEGURO SOCIAL | EXCLUDE | Social security contribution, not IVA |
-| INFONAVIT | EXCLUDE | Housing fund contribution, not IVA |
-| AFORE, PENSIONES | EXCLUDE | Pension fund, out of scope |
-| GOBIERNO, SECRETARIA, AYUNTAMIENTO | EXCLUDE | Government fees, sovereign acts |
-| MUNICIPIO, PREDIAL, TENENCIA | EXCLUDE | Property/vehicle tax, not a supply |
-| TRAMITE, LICENCIA GOBIERNO | EXCLUDE | Government licence, sovereign act |
-
-### 3.3 Mexican utilities
-
-**Utilities table**
-
-| Pattern | Treatment | Line | Notes |
-| --- | --- | --- | --- |
-| CFE, COMISION FEDERAL DE ELECTRICIDAD | Domestic 16% | B1 (input) | Electricity -- deductible overhead, CFDI issued |
-| TELMEX, TELEFONOS DE MEXICO | Domestic 16% | B1 (input) | Telecoms -- deductible overhead |
-| TELCEL, AT&T MEXICO, MOVISTAR | Domestic 16% | B1 (input) | Mobile telecoms -- confirm business use |
-| IZZI, TOTALPLAY, MEGACABLE | Domestic 16% | B1 (input) | Internet/cable -- deductible if business |
-| AGUA, SAPAS, SIAPA, SACMEX | EXCLUDE or exempt |  | Water -- many municipal water services are exempt |
-| GAS NATURAL, NATURGY, GAS LP | Domestic 16% | B1 (input) | Gas supply, standard rated |
-
-### 3.4 Fuel and petroleum (Pemex and others)
-
-**Fuel and petroleum table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PEMEX, GASOLINERA, ESTACION DE SERVICIO | Domestic 16% | Fuel -- creditable if business vehicle with valid CFDI. Vehicle cap rules apply (MXN 175,000 / MXN 250,000 for electric). Flag if personal vehicle. |
-| GASOLINA, DIESEL, COMBUSTIBLE | Domestic 16% | Same treatment as above |
-| CASETA, PEAJE, CAPUFE | Domestic 16% | Toll roads -- creditable with CFDI. Some tolls issue simplified CFDI. |
-
-### 3.5 Insurance (exempt -- exclude)
-
-**Insurance table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GNP, GRUPO NACIONAL PROVINCIAL | EXCLUDE for qualifying policies (flag others) | Art. 15 Fr. IX exempts only agro-weather insurance, housing-credit insurance, financial-guarantee insurance, life insurance, and agent commissions on those; other premiums need review |
-| AXA SEGUROS, MAPFRE MEXICO | EXCLUDE | Same |
-| METLIFE, SEGUROS MONTERREY | EXCLUDE | Same |
-| QUALITAS, HDI SEGUROS | EXCLUDE | Same |
-| SEGUROS, POLIZA, PRIMA DE SEGURO | EXCLUDE for Art. 15 Fr. IX categories; flag the rest | Only agro-weather, housing-credit, financial-guarantee and life insurance are exempt |
-
-### 3.6 Major Mexican retailers and e-commerce
-
-**Retailers table**
-
-| Pattern | Treatment | Line | Notes |
-| --- | --- | --- | --- |
-| WALMART MEXICO, WALMEX, BODEGA AURRERA | Domestic 16% | B1 (input) | General merchandise -- creditable if business expense with valid CFDI. Food items may be 0% on CFDI. |
-| COSTCO MEXICO | Domestic 16% | B1 (input) | Same. Check CFDI for mixed rates. |
-| AMAZON MX, AMAZON MEXICO | Domestic 16% | B1 (input) | Check billing entity -- Amazon Mexico S. de R.L. de C.V. issues Mexican CFDI at 16%. |
-| MERCADO LIBRE, MERCADOPAGO | Domestic 16% | B1 (input) | Mexican entity. Transaction fees may be exempt financial service -- check CFDI. |
-| OFFICE DEPOT, STAPLES MEXICO | Domestic 16% | B1 (input) | Office supplies, standard rated |
-| HOME DEPOT MEXICO | Domestic 16% | B1 (input) | Construction/maintenance supplies |
-| LIVERPOOL, PALACIO DE HIERRO | Domestic 16% | B1 (input) | Department store -- confirm business purpose |
-| SORIANA, CHEDRAUI, LA COMER | Domestic 16% | B1 (input) | Supermarket -- food items may appear at 0% on CFDI |
-
-### 3.7 Transport and ride-hailing
-
-**Transport table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| UBER MX, UBER MEXICO, UBER TRIP | Domestic 16% with withholding | Uber Mexico issues CFDI. The platform withholds 50% of the IVA charged to persona fisica drivers (LIVA Art. 18-J Fr. II a); Mexican-resident digital intermediation platforms carry the same duties (Art. 1o.-A BIS). For the rider: input IVA creditable with CFDI. |
-| DIDI, DIDI MEXICO | Domestic 16% with withholding | Same as Uber |
-| BEAT, CABIFY MEXICO | Domestic 16% | Same treatment |
-| VOLARIS, AEROMEXICO, VIVA AEROBUS | Domestic 16% or 0% (international) | Domestic flights at 16%. International flights: check if 0% (export of service). |
-| ADO, PRIMERA PLUS, ETN | Domestic 16% | Intercity bus -- standard rated (urban public transport is exempt) |
-| METROBUS, METRO, TRANSPORTE PUBLICO | EXCLUDE or exempt | Urban/suburban public transport exempt (Art. 15 Fr. V) |
-
-### 3.8 SaaS and digital services -- foreign suppliers
-
-**SaaS table**
-
-| Pattern | Billing entity | Treatment | Notes |
-| --- | --- | --- | --- |
-| GOOGLE (Ads, Workspace, Cloud) | Google Mexico S. de R.L. de C.V. or Google LLC | If Mexican CFDI: domestic 16%. If no CFDI: imported service, IVA on import applies. | Check CFDI. Google registered in Mexico issues CFDI. |
-| MICROSOFT (365, Azure) | Microsoft Mexico or Microsoft Corp | Same -- check billing entity on CFDI |  |
-| ADOBE | Adobe Systems Mexico or Adobe Inc (US) | Same |  |
-| META, FACEBOOK ADS | Meta Platforms Mexico or Meta (US/IE) | If Mexican entity with CFDI: 16%. If foreign: imported digital service. |  |
-| AMAZON WEB SERVICES, AWS | Amazon Web Services Mexico or AWS Inc | Check CFDI entity |  |
-| ZOOM | Zoom Video Communications | If no Mexican entity: imported service |  |
-| SLACK, ATLASSIAN, NOTION | Various (US entities) | Imported service -- no CFDI. IVA self-assessed on import. |  |
-| SPOTIFY, NETFLIX, APPLE | Mexican-registered for B2C digital services | These platforms now collect and remit IVA in Mexico for B2C digital services under Art. 18-B to 18-M LIVA. B2B: check if CFDI issued. |  |
-
-### 3.9 Payment processors
-
-**Payment processors table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STRIPE (transaction fees) | EXCLUDE (exempt) or imported service | If billed from US entity without CFDI: imported financial service. Transaction fees may be exempt. |
-| PAYPAL (transaction fees) | EXCLUDE (exempt) | PayPal Mexico issues CFDI for certain services. Transaction commissions are financial services (exempt). |
-| MERCADOPAGO (transaction fees) | EXCLUDE (exempt) | Payment processing commission -- exempt financial service |
-| CONEKTA, OPENPAY, SR PAGO | Domestic 16% | Mexican payment processors -- check CFDI for service fees vs. transaction fees |
-| CLIP, IZETTLE | Domestic 16% | POS terminal services |
-
-### 3.10 Professional services (Mexico)
-
-**Professional services table**
-
-| Pattern | Treatment | Line | Notes |
-| --- | --- | --- | --- |
-| NOTARIO, NOTARIA, FE PUBLICA | Domestic 16% | B1 (input) | Notarial services, standard rated |
-| CONTADOR, CONTABILIDAD, DESPACHO CONTABLE | Domestic 16% | B1 (input) | Accounting/bookkeeping, always deductible |
-| ABOGADO, BUFETE, DESPACHO JURIDICO | Domestic 16% | B1 (input) | Legal services, deductible if business matter |
-| CONSULTORIA, ASESORIA | Domestic 16% | B1 (input) | Consulting, standard rated |
-
-### 3.11 Payroll and social security (exclude entirely)
-
-**Payroll table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| NOMINA, SUELDO, SALARIO | EXCLUDE | Wages -- outside IVA scope |
-| IMSS, SEGURO SOCIAL | EXCLUDE | Social security contribution |
-| INFONAVIT | EXCLUDE | Housing fund |
-| PTU, REPARTO DE UTILIDADES | EXCLUDE | Profit sharing, out of scope |
-| AGUINALDO, VACACIONES | EXCLUDE | Year-end bonus, vacation pay -- out of scope |
-| SAR, AFORE | EXCLUDE | Retirement contributions |
-
-### 3.12 Internal transfers and exclusions
-
-**Internal transfers table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TRASPASO, TRANSFERENCIA PROPIA | EXCLUDE | Internal account movement |
-| RETIRO, CAJERO, ATM | Ask | Cash withdrawal -- ask what cash was spent on |
-| DIVIDENDO | EXCLUDE | Dividend, out of scope |
-| PRESTAMO PERSONAL, DISPOSICION | EXCLUDE | Loan drawdown, out of scope |
+Legal classification sources for this matrix: [LIVA 1–3, 5, 14–16, 18, 18-B–J, 24–29][liva].
 
 ## Worked examples
 
-These are six fully worked classifications drawn from a hypothetical bank statement of a Mexico-based self-employed software consultant (persona fisica, Actividades Empresariales y Profesionales regime). They illustrate the trickiest cases.
+Amounts are MXN unless stated. Original inputs are retained; results are conditional on documentary proof. [LIVA 1, 1-A, 5, 24–29][liva]; [RLIVA 3, 50][rliva]; [LISR 28, 36, 106][lisr].
 
-### Worked example 1: Standard domestic sale with CFDI
+### Example 1 -- Standard domestic sale with CFDI
 
-**Input line:**
-`05.04.2026 ; EMPRESA TECH SA DE CV ; CREDIT ; Factura FE-2026-041 Consultoria abril ; MXN 116,000.00`
-
-**Reasoning:**
-Client issued CFDI tipo I (ingreso) for MXN 100,000 + IVA MXN 16,000. Payment received in April. Cash basis: IVA causado in April. Activities at 16% = MXN 100,000. Output IVA = MXN 16,000.
+Original input: 05.04.2026; EMPRESA TECH SA DE CV; CREDIT; Factura FE-2026-041 Consultoria abril; MXN 116,000.00. Original invoice base 100,000 and IVA 16,000 give gross 116,000. If the individual consultant's supply is an independent personal professional service to this company, IVA retention is 10,666.67 and ordinary Article 106 ISR retention is 10,000; expected cash is 95,333.33. Difference: 20,666.67. Reconcile contract/CFDI/retention records before accepting settlement; retain full base/output IVA for an actually settled invoice.
 
 ```oa-check
-name: Standard 16% sale (Example 1)
+name: Original Example 1 invoice and professional-service cash reconciliation
 inputs:
   net: 100000
+  observed: 116000
 steps:
   - iva: net * 0.16
   - gross: net + iva
+  - retained_iva: round(iva * 2 / 3, 2)
+  - retained_isr: net * 0.10
+  - expected_cash: gross - retained_iva - retained_isr
+  - difference: round(observed - expected_cash, 2)
 expected:
-  iva: 16000.00
-  gross: 116000.00
+  iva: 16000
+  gross: 116000
+  retained_iva: 10666.67
+  retained_isr: 10000
+  expected_cash: 95333.33
+  difference: 20666.67
 ```
 
-**Example 1 output table**  _(--)_
+### Example 2 -- Corporate client withholds IVA
 
-| Date | Counterparty | Gross | Net | IVA | Rate | Line | Default? | Question? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 05.04.2026 | EMPRESA TECH SA DE CV | +116,000 | +100,000 | +16,000 | 16% | A1/A2 | N | -- |
-
-### Worked example 2: IVA withholding by client (persona moral paying persona fisica)
-
-**Input line:**
-`10.04.2026 ; CORPORATIVO DELTA SA DE CV ; CREDIT ; Pago factura consultoria ; MXN 105,333.33`
-
-**Reasoning:**
-Client invoiced MXN 100,000 + IVA MXN 16,000 = MXN 116,000. The corporate client (persona moral) withheld 2/3 of the IVA (MXN 10,666.67): LIVA Art. 1o.-A Fr. II a) obliges the retention on independent personal services from personas fisicas, and RLIVA Art. 3 Fr. I sets it at dos terceras partes. It also withheld 10% ISR (MXN 10,000, LISR Art. 106). Net deposit = MXN 116,000 - MXN 10,666.67 = MXN 105,333.33 (ISR withheld is separate). Report full IVA causado MXN 16,000 on the 16% output line and IVA retenido MXN 10,666.67 on the withheld-by-clients line.
+Original input: 10.04.2026; CORPORATIVO DELTA SA DE CV; CREDIT; Pago factura consultoria; MXN 105,333.33. Preserve the original fee 100,000 and gross 116,000. Both retentions matter: IVA 10,666.67 and ordinary professional-service ISR 10,000 leave cash 95,333.33, not 105,333.33. Difference: 10,000. Hold the invoice match; preserve the observed deposit and fee. On established settlement report full output IVA and actual IVA withheld; ISR is not an IVA credit.
 
 ```oa-check
-name: Persona moral withholds 2/3 IVA (Example 2)
+name: Original Example 2 includes both IVA and ISR withheld
 inputs:
   fee: 100000
+  bank: 105333.33
 steps:
   - iva: fee * 0.16
   - retenido: round(iva * 2 / 3, 2)
-  - isr: round(fee * 0.10, 2)
-  - net: fee + iva - retenido
+  - isr: fee * 0.10
+  - net_cash: fee + iva - retenido - isr
+  - difference: round(bank - net_cash, 2)
 expected:
-  iva: 16000.00
+  iva: 16000
   retenido: 10666.67
-  isr: 10000.00
-  net: 105333.33
+  isr: 10000
+  net_cash: 95333.33
+  difference: 10000
 ```
 
-**Example 2 output table**  _(Verify CFDI shows retencion)_
+### Example 3 -- Foreign digital service
 
-| Date | Counterparty | Gross | Net | IVA causado | IVA retenido | Rate | Lines | Default? | Question? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | CORPORATIVO DELTA SA DE CV | +105,333.33 | +100,000 | +16,000 | -10,666.67 | 16% | A1/A2/C1 | N | Verify CFDI shows retencion |
-
-### Worked example 3: Imported digital service (no Mexican CFDI)
-
-**Input line:**
-`15.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 15.00 ; MXN 270.00`
-
-**Reasoning:**
-Notion Labs Inc is a US entity. No Mexican CFDI issued. This is an importation of services under Art. 24 LIVA. The Mexican taxpayer must self-assess IVA at 16% on the value. IVA on import = MXN 270 x 0.16 = MXN 43.20. This import IVA is creditable on the imports line if the service is strictly indispensable for the business.
+Original input: 15.04.2026; NOTION LABS INC; DEBIT; Monthly subscription; USD 15.00; MXN 270.00. The implied rate 18 is not verified fiscal FX; supplier registration/category remain unestablished. If 270 is the confirmed pre-IVA Article 24/27 import base, output import IVA is 43.20 and fully eligible same-month import credit is 43.20: net zero, with **both sides** recorded. If the actual Chapter III Bis provider charged IVA and supplied a qualifying receipt, apply 18-F instead and do not self-assess again. Until those facts are established, the entry has no usable final IVA classification: Check this point with one of our partner accountants.
 
 ```oa-check
-name: Self-assessed IVA on imported service (Example 3)
+name: Original Example 3 conditional import has liability and credit
 inputs:
+  usd: 15
   mxn_value: 270
 steps:
-  - iva_import: mxn_value * 0.16
+  - implied_fx: mxn_value / usd
+  - iva_import: round(mxn_value * 0.16, 2)
+  - eligible_credit: iva_import
+  - net_iva: iva_import - eligible_credit
 expected:
+  implied_fx: 18
   iva_import: 43.20
+  eligible_credit: 43.20
+  net_iva: 0
 ```
 
-**Example 3 output table**  _(Verify service is business use)_
+### Example 4 -- Client restaurant meal
 
-| Date | Counterparty | Gross | Net | IVA import | Rate | Line | Default? | Question? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | NOTION LABS INC | -270.00 | -270.00 | 43.20 | 16% | B3 (import) | N | Verify service is business use |
-
-### Worked example 4: Entertainment, non-creditable
-
-**Input line:**
-`18.04.2026 ; RESTAURANTE LA HACIENDA ; DEBIT ; Comida con cliente ; MXN 2,500.00`
-
-**Reasoning:**
-Restaurant meal with a client. Gastos de representacion are non-deductible for ISR under LISR Art. 28 Fr. IV. LIVA Art. 5 Fr. I makes input IVA creditable only for gastos estrictamente indispensables, defined as expenses deductible for ISR, so IVA on non-deductible entertainment is not creditable. Default: block IVA credit.
-
-**Example 4 output table**  _("Entertainment: IVA not creditable")_
-
-| Date | Counterparty | Gross | Net | IVA | Rate | Line | Default? | Question? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | RESTAURANTE LA HACIENDA | -2,500.00 | -2,155.17 | 0 | -- | -- | Y | "Entertainment: IVA not creditable" |
-
-### Worked example 5: Zero-rated sale (export of services)
-
-**Input line:**
-`22.04.2026 ; ACME CORP (US) ; CREDIT ; Invoice MX-2026-012 Software development ; USD 5,000.00 ; MXN 90,000.00`
-
-**Reasoning:**
-Software development services exported to US client. Service effectively used/enjoyed abroad. Zero-rated under Art. 2-A Fr. IV / Art. 29 LIVA. Line A5 = MXN 90,000. IVA = 0%. Input IVA on related expenses remains fully creditable (advantage of 0% over exempt).
-
-**Example 5 output table**  _(Verify service used/enjoyed abroad)_
-
-| Date | Counterparty | Gross | Net | IVA | Rate | Line | Default? | Question? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | ACME CORP (US) | +90,000 | +90,000 | 0 | 0% | A5 | Y | Verify service used/enjoyed abroad |
-
-### Worked example 6: Vehicle fuel with CFDI, cap consideration
-
-**Input line:**
-`28.04.2026 ; GASOLINERA PEMEX EST 1234 ; DEBIT ; Carga gasolina ; MXN 1,200.00`
-
-**Reasoning:**
-Fuel purchase at Pemex station. If business vehicle and valid CFDI exists: IVA creditable. IVA = MXN 1,200 / 1.16 x 0.16 = MXN 165.52 (net MXN 1,034.48). However, vehicle cap rules apply: if the vehicle purchase price exceeded MXN 175,000, only proportional IVA on running costs is creditable. Default: block unless vehicle and CFDI confirmed.
+Original input: 18.04.2026; RESTAURANTE LA HACIENDA; DEBIT; Comida con cliente; MXN 2,500.00. Assuming the receipt is entirely ordinary IVA-inclusive restaurant consideration, base is 2,155.17 and IVA is 344.83. An indispensable ordinary restaurant meal satisfying the specified electronic payment/documentation conditions permits the derived 8.5% portion, 29.31; representation/bar treatment permits zero. The description alone establishes neither. Draft credit stays zero until the actual meal/business/payment facts are documented; do not call every business lunch non-deductible representation.
 
 ```oa-check
-name: IVA inside MXN 1,200 gross fuel purchase (Example 6)
+name: Original Example 4 conditional ordinary restaurant credit
+inputs:
+  gross: 2500
+steps:
+  - base: round(gross / 1.16, 2)
+  - iva: round(gross - base, 2)
+  - credit: round(iva * 0.085, 2)
+expected:
+  base: 2155.17
+  iva: 344.83
+  credit: 29.31
+```
+
+### Example 5 -- Software service for foreign customer
+
+Original input: 22.04.2026; ACME CORP (US); CREDIT; Invoice MX-2026-012 Software development; USD 5,000.00; MXN 90,000.00. Preserve both currencies; the implied rate is 18, not established fiscal FX. If this is qualifying IT development exported under Article 29 IV i and every infrastructure/IP/tax-ID/payment/no-VPN/Mexican-goods condition above is documented, the 90,000 confirmed MXN base is zero-rated, output IVA zero; qualifying attributable inputs retain credit eligibility. Foreign client and overseas benefit alone do not close the conditions. Otherwise hold the zero-rating outcome: Check this point with one of our partner accountants.
+
+```oa-check
+name: Original Example 5 conditional qualifying software export
+inputs:
+  usd: 5000
+  mxn_base: 90000
+steps:
+  - implied_fx: mxn_base / usd
+  - output_iva: mxn_base * 0
+expected:
+  implied_fx: 18
+  output_iva: 0
+```
+
+### Example 6 -- Fuel and vehicle proportion
+
+Original input: 28.04.2026; GASOLINERA PEMEX EST 1234; DEBIT; Carga gasolina; MXN 1,200.00. Base 1,034.48/IVA 165.52 is a mathematical extraction **only if** gross contains solely consideration plus ordinary IVA. Fuel receipts may contain non-IVA-base components: use actual receipt IVA. Credit remains zero in the draft until business use, vehicle classification/value, prescribed non-cash payment (even below 2,000), current permit and valid receipt are established. Apply the deductible vehicle proportion to operating costs; neither automatic full credit nor an invented vehicle price is allowed.
+
+```oa-check
+name: Original Example 6 gross-only mathematical illustration
 inputs:
   gross: 1200
 steps:
-  - iva: round(gross / 1.16 * 0.16, 2)
-  - net: round(gross - gross / 1.16 * 0.16, 2)
+  - net: round(gross / 1.16, 2)
+  - iva: round(gross - net, 2)
 expected:
-  iva: 165.52
   net: 1034.48
+  iva: 165.52
 ```
 
-**Example 6 output table**  _("Vehicle: confirm business use and CFDI")_
+### Original historical tests -- same inputs, corrected conditions
 
-| Date | Counterparty | Gross | Net | IVA | Rate | Line | Default? | Question? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | GASOLINERA PEMEX EST 1234 | -1,200.00 | -1,034.48 | 0 | -- | -- | Y | "Vehicle: confirm business use and CFDI" |
+These 2026 cases assume genuine settled transactions, valid documents and exclusively taxable business use unless stated otherwise; internal line codes follow below.
 
+| Original case | Preserved inputs and usable result |
+|---|---|
+| T1 | Company consulting sale 100,000 net: A1 100,000, A2 16,000. Do not import individual-service retentions into a company supplier. |
+| T2 | Company supplies purchase 5,000 net + 800 IVA, valid CFDI, bank transfer: 800 eligible input; DIOT only if not relieved. |
+| T3 | Agricultural company sells unprocessed vegetables 200,000: A5 200,000, A6 zero; eligible related inputs may be credited. |
+| T4 | Individual residential rent 12,000/month: exempt only if actual housing conditions and furnished/hotel exclusion are satisfied; directly attributable input credit zero. |
+| T5 | Company pays individual accountant 50,000 + 8,000 IVA: retained IVA 5,333.33, ordinary professional-service ISR 5,000, net cash 47,666.67. Non-retained IVA 2,666.67 may qualify now; retained 5,333.33 only in the declaration after remittance. The former 52,666.67 cash figure omitted ISR. |
+| T6 | Chinese computer import, customs value 300,000, pedimento IVA paid 48,000: retain both input figures; 48,000 credit only if valid. It reconciles to 16% of 300,000 only assuming no extra customs-base additions; otherwise the pedimento/base needs correction. |
+| T7 | Verified-eligible Tijuana goods sale 80,000 net: border output 6,400; eligibility and CFDI restrictions must actually be met. |
+| T8 | Ordinary business sedan 350,000 + 56,000 IVA: deductible proportion 175,000/350,000 = half; eligible credit 28,000, blocked 28,000. |
+| T9 | SAT-registered foreign Netflix corporate subscription 15,000/month: no blanket buyer withholding. If 15,000 is the pre-IVA price of a qualifying Chapter III Bis supply, provider IVA 2,400 and gross 17,400; if IVA-inclusive, base 12,931.03/IVA 2,068.97. Verify business indispensability and receipt before any credit. |
+| T10 | Unpaid PPD 100,000 + 16,000 IVA/no REP: current credit zero. Later payment/receipt evidence must be reconciled; REP date does not replace statutory payment timing. |
+| T11 | Supplier credit note 10,000 + 1,600 IVA/original UUID: reduce credit 1,600 on the actual Article 7 event; confirm restitution. If retention was remitted use the complementary-return rule. |
+| T12 | Monthly taxable sales 800,000, exempt 200,000 and common input IVA 32,000: assuming these are all relevant values, no Article 5-C exclusion and no alternative election, factor 0.80, credit 25,600, blocked 6,400. No universal annual adjustment. |
 
-## Section 6 -- Tier 2 catalogue (compressed)
-
-### 6.1 Border zone rate eligibility
-
-- **Border zone rate eligibility** -- Pattern: client claims 8% rate. Why insufficient: requires verification of all six conditions (domicile, physical supply, 18-month establishment, aviso filed, not on EFOS, payroll requirements). Default: 16%. Question: "Have you filed the aviso with SAT and do you meet all conditions for the border zone stimulus?"
-
-### 6.2 Restaurants and entertainment
-
-- **Restaurants and entertainment** -- Pattern: restaurant, bar, entertainment venue. Why insufficient: gastos de representacion are non-deductible under LISR Art. 28 Fr. IV, and LIVA Art. 5 Fr. I makes only ISR-deductible expenses creditable, so the IVA is generally non-creditable. Default: block IVA credit. Question: "Was this a business meal or entertainment? (Note: entertainment IVA is generally not creditable.)"
-
-### 6.3 Mixed activities -- proportional crediting
-
-- **Mixed activities proportional crediting** -- Pattern: client has both taxable and exempt revenue. Why insufficient: requires annual factor calculation and direct attribution analysis. Default: apply factor based on available period data; flag for year-end adjustment. Question: "What proportion of your revenue is from taxable vs exempt activities?"
-
-### 6.4 Vehicle business use
-
-- **Vehicle business use** -- Pattern: fuel, car maintenance, vehicle lease. Why insufficient: business vs personal use and vehicle value unknown. Default: 0% recovery (practice default set by this skill, not a statutory rule). Question: "Is this a business vehicle? What was the purchase price? Is there a valid CFDI?"
-
-### 6.5 IVA withholding classification
-
-- **IVA withholding classification** -- Pattern: payment to persona fisica for services. Why insufficient: need to confirm the counterparty is persona fisica and the service type. Default: no withholding (flag for reviewer). Question: "Is the service provider a persona fisica or persona moral? What service is being provided?"
-
-### 6.6 Export of services -- place of enjoyment
-
-- **Export of services place of enjoyment** -- Pattern: service income from foreign client. Why insufficient: zero-rating requires that the service is "effectively used or enjoyed abroad" (Art. 29 Fr. IV LIVA) -- strict interpretation by SAT. Default: 16% (conservative). Question: "Where is this service effectively used or enjoyed? Can you document that the benefit occurs outside Mexico?"  _(Art. 29 Fr. IV LIVA)_
-
-### 6.7 Round-number incoming transfers
-
-- **Round-number incoming transfers** -- Pattern: large round credit from owner-named or personal counterparty. Default: exclude as owner injection. Question: "Is this a customer payment, your own money, or a loan?"
-
-### 6.8 Ambiguous SaaS billing entity
-
-- **Ambiguous SaaS billing entity** -- Pattern: Google, Microsoft, Adobe, Meta where the billing entity is unclear. Default: assume no CFDI exists, treat as imported service with IVA self-assessment at 16%. Question: "Does the provider issue a Mexican CFDI? What entity name and RFC appear on the invoice?"
-
-### 6.9 Cash withdrawals
-
-- **Cash withdrawals** -- Pattern: ATM, retiro efectivo, cajero. Default: exclude as personal drawing. Question: "What was the cash used for?"
-
-### 6.10 PPD invoices without REP
-
-- **PPD invoices without REP** -- Pattern: purchase where CFDI shows MetodoPago = PPD but no REP has been received. Default: IVA NOT creditable until REP is issued. Question: "Has the supplier issued a Complemento de Pago (REP) for this payment?"
-
-## Section 7 -- Excel working paper template (Mexico-specific)
-
-### Sheet "Transactions"
-
-Columns: A (Date), B (Counterparty/RFC), C (CFDI UUID), D (Gross MXN), E (Net MXN), F (IVA trasladado), G (IVA retenido), H (Rate), I (Line code), J (Default Y/N), K (Question), L (Notes).
-
-Column C (UUID) is critical in Mexico -- it links every transaction to its CFDI. If UUID is blank, input IVA is not creditable.
-
-### Sheet "Return Summary"
-
-A/B/C/D codes below are internal worksheet labels, not official SAT casillas.
-
-**Return Summary template**
-
-```
-Output IVA:
-| A1 | Activities at 16% (net) | =SUMIFS(Transactions!E:E, Transactions!I:I, "A1") |
-| A2 | IVA at 16% | =A1*0.16 |
-| A3 | Activities at 8% (net) | =SUMIFS(Transactions!E:E, Transactions!I:I, "A3") |
-| A4 | IVA at 8% | =A3*0.08 |
-| A5 | Zero-rated activities | =SUMIFS(Transactions!E:E, Transactions!I:I, "A5") |
-| A7 | Exempt activities | =SUMIFS(Transactions!E:E, Transactions!I:I, "A7") |
-| A8 | Total activities | =A1+A3+A5+A7 |
-| A9 | Total IVA causado | =A2+A4 |
-
-Input IVA:
-| B1 | Input IVA 16% | =SUMIFS(Transactions!F:F, Transactions!I:I, "B1") |
-| B2 | Input IVA 8% | =SUMIFS(Transactions!F:F, Transactions!I:I, "B2") |
-| B3 | IVA on imports | =SUMIFS(Transactions!F:F, Transactions!I:I, "B3") |
-| B4 | Total input IVA | =B1+B2+B3 |
-| B6 | Creditable IVA | =B4*B5 or =B4 |
-
-Withholdings:
-| C1 | IVA withheld by clients | =SUMIFS(Transactions!G:G, Transactions!I:I, "C1") |
-
-Final:
-| D1 | IVA payable before credits | =A9-B6 |
-| D2 | Less IVA withheld | =D1-C1 |
-| D3 | Less saldo a favor prior | [manual entry] |
-| D4 | Amount payable | =MAX(D2-D3, 0) |
-| D5 | Saldo a favor | =MAX(-(D2-D3), 0) |
+```oa-check
+name: Historical T5 T7 T8 T9 T12 exact reconciliation
+inputs:
+  professional_fee: 50000
+  border_base: 80000
+  car_base: 350000
+  car_iva: 56000
+  car_cap: 175000
+  netflix: 15000
+  taxable: 800000
+  exempt: 200000
+  common_iva: 32000
+steps:
+  - fee_iva: professional_fee * 0.16
+  - fee_retention: round(fee_iva * 2 / 3, 2)
+  - fee_isr: professional_fee * 0.10
+  - fee_cash: professional_fee + fee_iva - fee_retention - fee_isr
+  - fee_current_credit: round(fee_iva - fee_retention, 2)
+  - border_iva: border_base * 0.08
+  - car_credit: car_iva * car_cap / car_base
+  - car_blocked: car_iva - car_credit
+  - netflix_exclusive_iva: netflix * 0.16
+  - netflix_exclusive_gross: netflix + netflix_exclusive_iva
+  - netflix_inclusive_base: round(netflix / 1.16, 2)
+  - netflix_inclusive_iva: round(netflix - netflix_inclusive_base, 2)
+  - factor: taxable / (taxable + exempt)
+  - common_credit: common_iva * factor
+  - common_blocked: common_iva - common_credit
+expected:
+  fee_iva: 8000
+  fee_retention: 5333.33
+  fee_isr: 5000
+  fee_cash: 47666.67
+  fee_current_credit: 2666.67
+  border_iva: 6400
+  car_credit: 28000
+  car_blocked: 28000
+  netflix_exclusive_iva: 2400
+  netflix_exclusive_gross: 17400
+  netflix_inclusive_base: 12931.03
+  netflix_inclusive_iva: 2068.97
+  factor: 0.8
+  common_credit: 25600
+  common_blocked: 6400
 ```
 
-### Color and formatting conventions
+## Working paper and required inputs
 
-Blue for hardcoded values from bank statement/CFDI data. Black for formulas. Green for cross-sheet references. Yellow background for any row where Default = "Y". Red background for any row where UUID is blank and IVA credit was attempted.
+**Inputs before classification:** legal name/RFC, actual entity/regime, complete monthly statements; issued/received XMLs and SAT status; REP/payment evidence; foreign receipts/pedimentos; contracts/business purpose; mixed/exempt/non-object activity; prior returns/balances/refund requests; retentions; exports/border evidence. RFC length/regime code does not establish eligibility. Search records first. With neither statements nor documents, stop; statement-only work remains an **unfileable draft** with unsupported credits and classifications held.
 
-## Section 8 -- Mexican bank statement reading guide (estado de cuenta)
+**Uncertainty policy:** remove automatic assumptions of domestic/B2C/no withholding, excluded owner injection/personal ATM use or standard-rate treatment of unidentified transactions. Hold the affected classification and credit pending evidence. For an established ordinary taxable domestic sale without proven stimulus, use the ordinary rate; this does not settle an unidentified transaction. Preserve the original internal review triggers as workflow policy only: transaction 50,000; tax delta 5,000; counterparty concentration above 40%; more than four unresolved defaults; absolute net IVA 100,000. They are not legal thresholds or permission to file unresolved entries.
 
-**Estado de cuenta format conventions.** Mexican banks (BBVA Bancomer, Banorte, Santander, Citibanamex) typically export statements in PDF with DD/MM/YYYY or DD-MMM-YYYY date formats. CSV exports use comma or pipe delimiters. Common columns: Fecha, Descripcion/Concepto, Cargo (debit), Abono (credit), Saldo. Some banks include Referencia (reference number) and Movimiento (transaction type: SPEI, transferencia, cargo automatico, domiciliacion).
+**Transaction sheet:** Date, Counterparty/RFC, CFDI UUID or permitted foreign/customs document ID, Gross MXN, Net MXN, output/input/import IVA separately, IVA retained by customer, IVA retained from supplier, rate/category, internal line code, evidence/default flag, missing facts and notes. Match DD/MM/YYYY or DD-MMM-YYYY dates and Cargo/Abono/Saldo to actual statements; resolve comma/pipe delimiters, SPEI references/CLABE, domiciliaciones, card abbreviations and cash use before classification. Do not mix supplier invoices with net platform/customer settlement or double-count own-bank transfers. Use blue source inputs, black formulas, green cross-sheet references, yellow unresolved rows and red attempted unsupported credit as internal formatting conventions.
 
-**SPEI transfers.** Most business payments in Mexico use SPEI (Sistema de Pagos Electronicos Interbancarios). The description often includes the beneficiary name, CLABE (18-digit interbank account number), and a reference. Match the beneficiary name against Section 3.
+Foreign-currency tax conversion uses the actual acquisition rate, or absent acquisition the Banxico DOF rate published on the day before tax accrual; absent that publication use the latest prior rate. Invoice TipoCambio, payment-date data and tax conversion are distinct. Preserve original currency, value, date and rounding reconciliation. Calculate with fractions of a peso; final tax-payment rounding follows CFF 20 (up to fifty cents down, fifty-one to ninety-nine up). [CFF 20][cff].
 
-**Domiciliaciones.** Recurring direct debits (domiciliaciones) appear with the service provider name: CFE, TELMEX, insurance companies. These are pre-authorized charges.
+**Return Summary:** A/B/C/D are internal workbook labels, never official SAT casillas. Use positive tax-control amounts and a separate debit/credit sign; an entry can have multiple tags, so do not SUMIFS one exclusive line-code cell to collect both sale base and withholding.
 
-**Card charges.** Credit/debit card charges appear with merchant names, often abbreviated. AMZN = Amazon, UBER = Uber, GGLE = Google, MSFT = Microsoft, FCBK = Facebook/Meta. Map abbreviations to full names before matching Section 3.
+- A1/A2 = ordinary taxable base/output; A3/A4 = qualifying border base/output; A5/A6 = zero-rated base/zero output; A7 = exempt base. A8 = A1+A3+A5+A7, a classified domestic-activity subtotal, **not** automatically the credit-factor denominator. A9 = A2+A4.
+- B1/B2 = qualifying domestic input at the actual invoiced ordinary/border rate; B3 = qualifying import IVA credit. B4 is the input candidate total. Keep direct taxable, direct exempt/non-object, common and capital inputs separate; B5 applies only to the relevant common pool; B6 = eligible directly attributable credit + common-pool credit + separately eligible investment/import/previously retained credit, without duplicates.
+- Add a separate import-IVA liability control to A9 when computing own tax. C1 = IVA actually withheld by customers; C2 = supplier IVA retained, remitted separately with its own later-credit tracking. D1 = own output/import liability minus B6; D2 = D1−C1. If D2 is positive, D3 may use only available old own-IVA balance, up to D2. D4 = remaining payable; D5 = newly generated balance only where D2 is negative. Carry unused old balance separately; do not turn it into a new refund claim. [LIVA 1, 5, 5-D, 6][liva].
 
-**Internal transfers and exclusions.** Transfers between the client's own accounts (BBVA to BBVA, or to another bank). Labelled "traspaso", "transferencia propia", "movimiento entre cuentas". Always exclude.
+### Refusal boundaries and historical edge cases
 
-**Owner draws (retiros personales).** Self-employed individuals (persona fisica) withdrawing cash or transferring to personal accounts. Labelled "retiro", "disposicion", "transferencia a cuenta personal". Exclude as personal drawings.
-
-**IVA withholding entries.** When a persona moral client pays the freelancer, the bank statement shows the net amount after IVA and ISR withholdings. The gross invoice amount, IVA causado, and IVA retenido must be reconstructed from the CFDI, not the bank statement amount. This is a critical reconciliation step.
-
-**Foreign currency transactions.** Convert to MXN at the exchange rate published by Banco de Mexico (tipo de cambio FIX) for the transaction date. The CFDI must show the exchange rate used (TipoCambio field).
-
-**Cryptic descriptions.** SPEI transfers with only a CLABE or reference number. Ask the client. Do not classify unidentified transactions.
-
-**Refunds and credit notes.** Identified by "devolucion", "nota de credito", "bonificacion", "cancelacion". Book as a negative in the same line as the original transaction. The supplier must issue a CFDI tipo E (egreso) for the credit note.
+- **R-MX-1:** IMMEX/maquiladora, virtual/temporary imports, certification/guarantees; **R-MX-2:** proposed consolidated/group filing; **R-MX-3:** transfer-pricing adjustments to the IVA base. Do not classify these as ordinary transactions: Check this point with one of our partner accountants.
+- **R-MX-4:** CFF 69-B/false-CFDI listing or materiality concern. Hold the affected documents and distinguish preliminary presumption, final finding and actual remedial evidence; do not claim all documents of every listed party are conclusively false. Procedural deadlines and case response: Check this point with one of our partner accountants.
+- **R-MX-5:** annual ISR return; **R-MX-6:** payroll, nómina CFDIs, IMSS/INFONAVIT processing. Route to the corresponding existing work; do not prepare these through the IVA working paper.
+- **EC1–EC10:** client lunch, business platform ride, foreign programmer/designer, incorrect-recipient RFC, supplier credit note, fuel, taxable construction advance, shop/apartment mixed rent, employee/independent-service boundary and commercial real estate remain covered by the operative rules above. Incorrect RFC requires a valid correction; no unsupported credit. Foreign freelancer is an import analysis, not automatic all-IVA withholding. Mixed-use allocation needs factual evidence; employment/contractor uncertainty is a hold: Check this point with one of our partner accountants.
+- **EC11:** crypto payment/trading remains a specialist hold; **EC12:** donated goods require the Article 8 business/non-deductible-donation exception; **EC13:** parent/subsidiary management service remains subject to actual service/base/credit rules, with price adjustments under R-MX-3; **EC14:** goods return follows Article 7, not a credit-note-date shortcut. For the unestablished crypto/donation outcome: Check this point with one of our partner accountants.
+- **Historic special categories, held pending transaction-specific proof:** gold/jewellery/bullion (old “10K” shortcut is unusable); shares/credit instruments/currency; artist/copyright and public-entertainment exemptions; international maritime service; furnished housing; diplomatic/charity/art imports and temporary-to-definitive imports; cargo/taxi/motorcycle/lease classification; gifts/employee benefits; preoperating and capital adjustments. No generic exemption, no-cap or full-credit outcome is offered: Check this point with one of our partner accountants.
+- **Historic procedures/figures, archival only and not usable outcomes:** CFF authenticity/49 Bis five-business-day response, seal suspension/publication/criminal consequences; platform ISR table (2.5%/20%), online information access from 1 April 2026, platform-specific receipt implementation; five-year refund limit; DIOT platform/54-field/40,000-record and 1 August 2025 change claims; old penalties 1,810–22,400 and 17,020–97,330, approximately 1.47% monthly surcharge, full-unwithheld-amount and 55–75% credit-penalty shortcuts; RESICO 3,500,000 eligibility shortcut. Do not apply any of these from this Guide: Check this point with one of our partner accountants.
 
 ## Ask the client first
 
-For each question, the inference rule comes first. Only ask if inference fails.
-
-### 9.1 RFC and regimen fiscal
-
-- **RFC and regimen fiscal** -- Inference rule: RFC sometimes appears in SPEI transfer descriptions. 12 characters = persona moral, 13 = persona fisica. Fallback question: "What is your RFC and regimen fiscal (e.g. 601, 612, 626)?"
-
-### 9.2 Tax regime type
-
-- **Tax regime type** -- Inference rule: RESICO clients (626) have annual revenue below MXN 3,500,000 for personas fisicas. Fallback question: "Are you under Regimen General (601), Actividades Empresariales y Profesionales (612), or RESICO (626)?"
-
-### 9.3 Filing period
-
-- **Filing period** -- Inference rule: first and last transaction dates on the bank statement. Monthly filing is universal. Fallback question: "Which month does this cover?"
-
-### 9.4 Industry and sector
-
-- **Industry and sector** -- Inference rule: counterparty mix, CFDI descripciones, actividad economica. Fallback question: "In one sentence, what does the business do?"
-
-### 9.5 Border zone status
-
-- **Border zone status** -- Inference rule: ZIP codes (codigo postal) in the 21000-22900 range suggest Baja California; 32000-32700 suggest Ciudad Juarez; 88000-88999 suggest Nuevo Laredo/Tamaulipas border. Fallback question: "Is your tax domicile in the northern or southern border zone? Have you filed the aviso for the 8% rate?"
-
-### 9.6 Exempt activities
-
-- **Exempt activities inference** -- Inference rule: presence of residential rental income, medical service income, educational income. Fallback question: "Do you perform any exempt activities (residential rental, medical, education, insurance)?"
-
-### 9.7 Export activities
-
-- **Export activities** -- Inference rule: foreign currency credits, foreign-named counterparties on income side. Fallback question: "Do you export goods or services? To which countries?"
-
-### 9.8 Saldo a favor carried forward
-
-- **Saldo a favor carried forward** -- Inference rule: not inferable from a single period statement. Always ask. Question: "Do you have a saldo a favor from the prior month?"
-
-### 9.9 IVA withholding status
-
-- **IVA withholding status** -- Inference rule: if client is persona fisica receiving payments from personas morales, withholding is likely. Fallback question: "Do your clients withhold IVA from your payments?"
-
-### 9.10 CFDI availability
-
-- **CFDI availability** -- Inference rule: if client provides CFDI XMLs, this is answered. Fallback question: "Can you provide your CFDI XMLs (emitidos and recibidos) from the SAT portal for this month?"
+Use the Required inputs checklist; ask only for facts absent from the records. Keep each mismatch visible in the reviewer brief: transaction, missing evidence, conditional options/calculation and hold. This is not professional approval of the Guide.
 
 ## Sources
 
+Read on **2026-11-27**; unchanged proven CFDI quotes reused for the same claims and conditions. Specialist holds supply no usable outcome.
 
-| Source | URL | Read on |
-| --- | --- | --- |
-| SAT article portal, LIVA Art. 1, read for the 16% rate | https://wwwmatnp.sat.gob.mx/articulo/19848/articulo-1 | 2026-11-14 |
-| SAT article portal, LIVA Art. 2-A, read for the 0% list, the 16% on food prepared on the premises and the effects of the 0% rate | https://wwwmatnp.sat.gob.mx/articulo/06071/articulo-2-a | 2026-11-14 |
-| SAT article portal, LIVA Art. 15, read for the exempt services list including Fr. IV (education) and Fr. XIV (medical services by individuals) | https://wwwmatnp.sat.gob.mx/articulo/67548/articulo-15 | 2026-11-14 |
-| SAT article portal, LIVA Art. 5-D, read for monthly payment by day 17 | https://wwwmatnp.sat.gob.mx/articulo/73134/articulo-5-d | 2026-11-14 |
-| DOF 31-12-2025, decree extending the northern and southern border stimulus decrees, read for the new validity to 31 December 2026 | https://dof.gob.mx/nota_detalle.php?codigo=5777697&fecha=31/12/2025 | 2026-11-14 |
-| SAT, RMF 2026 (DOF 28-12-2025), read for chapter 11.9 and rule 11.9.3 (CFDI "IVA Crédito aplicado del 50%") | https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf | 2026-11-14 |
-| DOF 04-12-2006, Reglamento de la Ley del IVA, read for Art. 3 fr. I (two thirds retention) | https://dof.gob.mx/nota_detalle.php?codigo=4939297&fecha=04/12/2006 | 2026-11-14 |
-| DOF 18-11-2015, LISR reform decree, read for Art. 36 fr. II (MXN 175,000 automobile cap) | https://dof.gob.mx/nota_detalle.php?codigo=5415878&fecha=18/11/2015 | 2026-11-14 |
-| Ley del Impuesto al Valor Agregado, texto vigente (ultima reforma DOF 12-11-2021), Arts. 1o., 1o.-A, 1o.-A BIS, 2o.-A, 4o., 5o., 9o., 15, 18-B, 18-J, 20, 25 | https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf | 2026-11-02 |
-| Reglamento de la Ley del IVA (ultima reforma DOF 25-09-2014), Art. 3 | https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA_250914.pdf | 2026-11-01 |
-| Ley del Impuesto sobre la Renta, texto vigente (ultima reforma DOF 01-04-2024), Arts. 28 Fr. IV, 36 Fr. II, 106 | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-28 |
-| SAT, Estímulo Fiscal Region Fronteriza Norte 8% IVA (guide to the Decreto DOF 31-12-2018) | https://www.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461173770379&ssbinary=true | 2026-10-28 |
-| SAT, personas morales regimen general: declaraciones o pagos mensuales (dia 17) | http://omawww.sat.gob.mx/informacion_fiscal/obligaciones_fiscales/personas_morales/regimen_general/Paginas/declaraciones_mensuales.aspx | 2026-10-28 |
+| Source and scope read | Official URL | Read on |
+|---|---|---|
+| LIVA: taxable acts/territory/settlement; zero/exempt; input credit, proportion, retention, balances; digital services; imports/exports | https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf | 2026-11-27 |
+| RLIVA: retention, agricultural/medicine definitions, service imports and foreign-use conditions | https://www.ordenjuridico.gob.mx/Documentos/Federal/pdf/wo88442.pdf | 2026-11-27 |
+| LISR: business documentation/fuel; representation/restaurants, automobile costs/caps; professional-service ISR used only in examples | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-11-27 |
+| LIF 2026: Article 25 IX platform IVA, XIII menstrual products, commencement | https://www.diputados.gob.mx/LeyesBiblio/pdf/LIF_2026.pdf | 2026-11-27 |
+| CFF current official copy: Article 20 FX/rounding; 29/29-A invoicing/materiality. Specialist procedure/penalty amounts not offered | https://dgesui.ses.sep.gob.mx/sites/default/files/2026-05/CFF.pdf | 2026-11-27 |
+| North decree: IVA XI–XIII, separate ISR VII; original Article I geographical rule | https://sidof.segob.gob.mx/notas/docFuente/5547485 | 2026-11-27 |
+| North amendment: intangible-use exclusion/transport and separate ISR notice provisions | https://dof.gob.mx/nota_detalle.php?codigo=5609181&fecha=30/12/2020 | 2026-11-27 |
+| South decree: III and X–XII; region and IVA exclusions | https://sidof.segob.gob.mx/notas/docFuente/5609182 | 2026-11-27 |
+| Border extension: Articles One–Two and commencement | https://dof.gob.mx/nota_detalle.php?codigo=5777697&fecha=31/12/2025 | 2026-11-27 |
+| RMF 2026: 11.9 border, 4.5.1 DIOT, 3.13.17/2.8.1.17 relief, 4.6.6 IT evidence; unchanged 2.7.1.32 payment quotes reused from proven mx-cfdi | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf | 2026-11-27 |
+| SAT CFDI and Anexo 20 4.0: common field/payment definitions, unchanged proven mx-cfdi quotes reused for the same scope | https://wwwmat.sat.gob.mx/consultas/35025/formato-de-factura-electronica-%28anexo-20%29; https://dof.gob.mx/2022/SHCP/SHCP_130122.pdf | 2026-11-27 |
 
-Also referenced without full archival: CFF Arts. 29, 29-A, 32, 69-B (CFDI and EFOS/EDOS blacklist); CFDI 4.0 technical catalogues; Declaraciones y Pagos system instructions.
+Not yet confirmed: The specialist outcomes explicitly held above are not usable guidance. No open ordinary-return claim is offered for filing. Check this point with one of our partner accountants.
 
-### Known gaps
+The first through fourth published RMF modifications and the 26 November advance were checked for applicability; the ordinary rules cited remain operative. The first modification updates border rule 11.9.13 and adds the specific airline facility; do not apply their exceptions without the required evidence.
 
-1. The supplier pattern library covers the most common Mexican and international counterparties but does not cover every regional business.
-2. ICMS-ST equivalent mechanisms (retencion to specific industries) require more granular treatment.
-3. The worked examples are drawn from a hypothetical software consultant. Sector-specific examples (manufacturing, retail, agricultural) should be added in v2.1.
-4. Border zone municipality lists may be updated by decree -- verify annually.
-5. The MXN 175,000 vehicle cap (DOF 18-11-2015) applies in 2026; the electric and hybrid cap is on the Not yet confirmed line.
-6. Digital platform withholding rules (Art. 18-B to 18-M) are evolving and may change.
+| Additional operative source read | Official URL | Read on |
+|---|---|---|
+| north2022 -- municipality/notice or amending-clause applicability, as relevant | https://sidof.segob.gob.mx/notas/docFuente/5669251 | 2026-11-27 |
+| annex2 -- municipality/notice or amending-clause applicability, as relevant | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-2-RMF-2026_DOF-28122025.pdf | 2026-11-27 |
+| mod1 -- municipality/notice or amending-clause applicability, as relevant | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/1aRM_RMF2026.pdf | 2026-11-27 |
+| mod2 -- municipality/notice or amending-clause applicability, as relevant | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/2aRM_RMF2026_01102026.pdf | 2026-11-27 |
+| mod3 -- municipality/notice or amending-clause applicability, as relevant | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/3aRM_RMF2026_DOF_02102026.pdf | 2026-11-27 |
+| mod4 -- municipality/notice or amending-clause applicability, as relevant | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/4aRM_RMF2026_DOF-30102026.pdf | 2026-11-27 |
+| advance5 -- municipality/notice or amending-clause applicability, as relevant | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anticipadas/5aRM_RMF2026_Cuartaversion_anticipada_26112026.pdf | 2026-11-27 |
 
-Not yet confirmed: the higher LISR Art. 36 fr. II automobile cap for electric and hybrid vehicles (the old MXN 250,000, not read in a 2026 text today); the 50% IVA retention by digital intermediation platforms under LIVA Art. 18-J (not read today); no-cap treatment of cargo and taxi vehicles under LISR Art. 36 Fr. II (not present in the archived texto vigente); official SAT Declaraciones y Pagos field names for the IVA return (the A/B/C/D codes in this skill are internal worksheet labels).
+[north2022]: https://sidof.segob.gob.mx/notas/docFuente/5669251
+[annex2]: https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-2-RMF-2026_DOF-28122025.pdf
+[mod1]: https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/1aRM_RMF2026.pdf
+[mod2]: https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/2aRM_RMF2026_01102026.pdf
+[mod3]: https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/3aRM_RMF2026_DOF_02102026.pdf
+[mod4]: https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/4aRM_RMF2026_DOF-30102026.pdf
+[advance5]: https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anticipadas/5aRM_RMF2026_Cuartaversion_anticipada_26112026.pdf
 
+[liva]: https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf
+[lisr]: https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf
+[rliva]: https://www.ordenjuridico.gob.mx/Documentos/Federal/pdf/wo88442.pdf
+[rmf]: https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf
+[cff]: https://dgesui.ses.sep.gob.mx/sites/default/files/2026-05/CFF.pdf
+[north]: https://sidof.segob.gob.mx/notas/docFuente/5547485
+[northAmend]: https://dof.gob.mx/nota_detalle.php?codigo=5609181&fecha=30/12/2020
+[south]: https://sidof.segob.gob.mx/notas/docFuente/5609182
+[expiry]: https://dof.gob.mx/nota_detalle.php?codigo=5777697&fecha=31/12/2025
+[lif]: https://www.diputados.gob.mx/LeyesBiblio/pdf/LIF_2026.pdf
+[technical]: https://dof.gob.mx/2022/SHCP/SHCP_130122.pdf
+[satcfdi]: https://wwwmat.sat.gob.mx/consultas/35025/formato-de-factura-electronica-%28anexo-20%29
 
 ## Disclaimer
 
