@@ -2,6 +2,8 @@
 name: amending-an-individual-income-tax-return-in-australia
 description: "Amend an Australian individual income tax assessment: establish the time limit, reconcile corrections, lodge the request and check interest and penalties."
 jurisdiction: AU
+tax_year: 2026
+tax_year_notes: "Current 2026 procedural reference for amending the affected income year, not a replacement assessment year. Retains the original 2023–24 and earlier ordinary two-year sole-trader scope and 2024–25 and later item 3A request scope, for assessments issued after 1 January 2025 for income years starting on or after 1 July 2024. Apply the affected income year's rates and eligibility; no original year or case is re-dated."
 last_updated: 2026-11-27
 type: filing-howto
 version: 1.1
