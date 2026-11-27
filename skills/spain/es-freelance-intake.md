@@ -155,7 +155,7 @@ Q10: "Do you invoice everything to one single client, or are you registered as a
 - **Q8 = Mixed.** Flag for the reviewer: a prorrata or a separate sector of activity may apply. That is `es-vat-return` work, not intake work.
 - **Q8 = Not sure.** Read it off the last Modelo 303 or off the Modelo 036. Do not assume the general regime for a shop.
 - **Q9 = Employees.** Flag: the client is a withholder and files Modelo 111, which art. 108.1 of the Reglamento del IRPF generally sets as quarterly in the first twenty calendar days of April, July, October and January (monthly cases follow art. 71.3.1.º and 2.º Reglamento del IVA); the downstream Guide must apply the actual filing calendar, and Modelo 190 annually, and is an employer with the Seguridad Social. Payroll is `spain-payroll`; the withholding return itself is `es-modelo-111`.
-- **Q9 = Rent for business premises.** Flag: withholding on the rent, declared on Modelo 115, unless one of the exceptions applies. Ask for the rent paid to each landlord separately over the year, because the amount exception is tested landlord by landlord. The rate and the exceptions are in the two rent tables in Section 6.
+- **Q9 = Rent for business premises.** Flag: withholding on the rent, declared on Modelo 115, unless one of the exceptions applies; collect the annual Modelo 180 summary too. Ask for the rent paid to each landlord separately over the year, because the amount exception is tested landlord by landlord. The rate and the exceptions are in the two rent tables in Section 6.
 - **Q9 = Pays other professionals.** Flag: payments subject to professional withholding under arts. 75, 76 and 95 go to Modelo 111; check the payer, payee and payment rather than treating every supplier invoice alike.
 - **Q10 = One client or TRADE.** Flag for `es-income-tax`. Art. 32.2 Ley 35/2006 gives a reduction of net income to a self-employed person whose supplies all go to one single unrelated client, or who is an economically dependent self-employed worker under Ley 20/2007, and who meets the other conditions of that article. In simplificada that reduction and the hard-to-justify deduction cannot both be taken (art. 32.2.2.º.a of the Law and art. 30, rule 2.ª, of the Reglamento). Intake records the facts; the choice belongs to `es-income-tax`.
 
@@ -178,7 +178,7 @@ Once the refusal sweep passes, immediately ask for the document dump. Single mes
 > - RETA recibos (monthly Social Security receipts), and the resolution granting any reduced starting contribution
 > - The prior year Modelo 100 (annual IRPF return) or its borrador
 > - Modelo 390 (annual VAT summary) from the prior year
-> - Modelo 111, 115, 190, 349 or 347 if you file any of them
+> - Modelo 111, 115, 180, 190, 349 or 347 if you file any of them
 > - Any Agencia Tributaria or Seguridad Social notification or correspondence
 > - Capital asset purchase receipts: computers, equipment, vehicles
 > - Home-related documents if you claim a despacho en casa: mortgage interest or rent, IBI, community fees, utility bills
@@ -579,7 +579,8 @@ The downstream skill `es-return-assembly` consumes a JSON structure. It is inter
     "employees": false,
     "modelo_111_filed": [],
     "modelo_115_filed": [],
-    "modelo_190_filed": false
+    "modelo_190_filed": false,
+    "modelo_180_filed": false
   },
   "pagos_fraccionados": {
     "modelo_130_filed": [],
