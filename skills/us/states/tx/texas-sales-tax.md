@@ -186,7 +186,6 @@ Circular 230 §10.37: apply the law to the actual facts, consider relevant assum
 | 2026 due-date chart: Read for sales/use and sales-tax prepayment rows | https://comptroller.texas.gov/taxes/file-pay/due-dates.php | 2026-11-27 |
 | Prepayment FAQ: Read for estimate/payment conditions and February example | https://comptroller.texas.gov/taxes/sales/faq/report-pay.php | 2026-11-27 |
 | Interest page: Read for annual-rate table, accrual and original computation; penalties: late-return/payment treatment | https://comptroller.texas.gov/taxes/file-pay/interest.php ; https://comptroller.texas.gov/taxes/file-pay/penalties.php | 2026-11-27 |
-
 | Forms 01-339 and 01-922. Read for certificate numbers/supplier retention and return Items 1–4, 9 and 11; PDF text extracted in memory | https://comptroller.texas.gov/forms/01-339.pdf ; https://comptroller.texas.gov/forms/01-922.pdf | 2026-11-27 |
 
 Not yet confirmed: the explicitly non-usable holds above, including exact-threshold commencement, marketplace reporting/permit conflicts, ancillary/mixed-service classification, detailed product/exemption/contract outcomes, exports, credits/refunds and payment procedures. The legacy statute hostname returned a navigation page; the readable legislature resource above replaces it. The official Rule 3.330 direct fetch did not expose the rule text; its mixed-service case remains held. No 2027 chart or current city-address rate lookup is claimed as read.
