@@ -41,9 +41,11 @@ Read the existing record before asking for missing facts. Obtain:
 
 ### Rates, bands and thresholds
 
+The Part IV gift rules below apply to US recipients other than section 501(c) organizations exempt under section 501(a) ([§6039F(a)](https://uscode.house.gov/us/usc/t26/s6039F/)).
+
 | Item | Amount and conditions | Source |
 | --- | --- | --- |
-| Part IV, nonresident alien/foreign estate gifts or bequests | For US recipients other than section 501(c) organizations exempt under section 501(a): more than USD 100,000 per year; aggregate donors known or reasonably known to be related, including nominees/intermediaries. Once exceeded, identify each gift over USD 5,000. | [Form 3520 instructions, line 54](https://www.irs.gov/instructions/i3520) |
+| Part IV, nonresident alien/foreign estate gifts or bequests | More than USD 100,000 per year; aggregate donors known or reasonably known to be related, including nominees/intermediaries. Once exceeded, identify each gift over USD 5,000. | [Form 3520 instructions, line 54](https://www.irs.gov/instructions/i3520) |
 | Part IV, purported gifts from foreign corporations/partnerships | Aggregate all such entities and foreign persons known or reasonably known to be related to them; more than USD 20,573 for taxable years beginning in 2026. Identify each gift and donor. | [IRS gifts page](https://www.irs.gov/businesses/gifts-from-foreign-person); [Rev. Proc. 2025-32 §4.47](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 | Historical 2025 corporate/partnership gift threshold | More than USD 20,116 for taxable years beginning in 2025; same aggregation rule. | [Rev. Proc. 2024-40 §2.48](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf); [IRS gifts page](https://www.irs.gov/businesses/gifts-from-foreign-person) |
 | Initial transfer/distribution reporting penalty | Generally greater of USD 10,000 or 35% of gross property transferred/distribution received for a late, incomplete or incorrect required return; reasonable cause exception below. | [§6677(a),(c)](https://uscode.house.gov/us/usc/t26/s6677/) |
