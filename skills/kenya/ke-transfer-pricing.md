@@ -1,10 +1,10 @@
 ---
 name: ke-transfer-pricing
-description: "Kenyan transfer pricing for the 2026 year of income under section 18(3) and (5) of the Income Tax Act (Cap. 470), the Income Tax (Transfer Pricing) Rules 2006, and the multinational reporting rules in sections 18C to 18F. Covers related persons, the arm's length rule for residents and permanent establishments, covered transactions, the five methods, documentation the Commissioner can demand, the 30% corporate rate on adjustments, master file and local file within six months of year end, country-by-country reporting for groups with at least KShs 95 billion turnover within twelve months, the year-end notification, and penalties and interest after an adjustment. Trigger on: Kenya transfer pricing, section 18(3) Kenya, arm's length Kenya, Kenya master file local file, Kenya CbCR, KRA TP adjustment, head office fees Kenya PE. Out of scope: thin capitalisation and interest limits, withholding tax, advance pricing agreements, VAT on imported services."
-version: 0.2
+description: "Kenyan transfer pricing for the 2026 year of income under section 18(3) and (5) of the Income Tax Act (Cap. 470), the Income Tax (Transfer Pricing) Rules, 2026 (LN 186 of 2026), and the multinational reporting rules in sections 18C to 18F. Covers related persons, the arm's length rule for residents and permanent establishments, covered transactions, the five methods, documentation the Commissioner can demand, the 30% corporate rate on adjustments, master file and local file within six months of year end, country-by-country reporting for groups with at least KShs 95 billion turnover within twelve months, the year-end notification, and penalties and interest after an adjustment. Trigger on: Kenya transfer pricing, section 18(3) Kenya, arm's length Kenya, Kenya master file local file, Kenya CbCR, KRA TP adjustment, head office fees Kenya PE. Out of scope: thin capitalisation and interest limits, withholding tax, advance pricing agreements, VAT on imported services."
+version: 0.3
 jurisdiction: KE
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 category: transfer-pricing
 tier: 2
 domain: transfer-pricing
@@ -13,16 +13,14 @@ type: situation-rules
 
 # Kenyan transfer pricing: arm's length rule, documentation, master file, local file and CbCR (2026)
 
-The arm's length rule is in section 18(3) of the Income Tax Act (Cap. 470) ("ITA"). The Income Tax (Transfer Pricing) Rules 2006 (LN 67 of 2006) set out how to apply it. Since 2022, sections 18C to 18F add multinational group reporting: the year-end notification, the country-by-country (CbC) report, the master file and the local file. The Kenya Revenue Authority (KRA) administers them. Penalties and interest come from the Tax Procedures Act 2015 ("TPA"). This skill reads the ITA as consolidated to 1 July 2026, which includes the Finance Act 2026 (Act No. 19 of 2026, which amended s18D), and the TPA as consolidated to 1 September 2026. The year of income is the calendar year, or the company's accounting year.
+The arm's length rule is in section 18(3) of the Income Tax Act (Cap. 470) ("ITA"). The Income Tax (Transfer Pricing) Rules, 2026 (LN 186 of 2026, made on 12 August 2026 and dated 18 September 2026 on Kenya Law) set out how to apply it; r12 revokes the earlier Income Tax (Transfer Pricing) Rules (LN 67 of 2006). Since 2022, sections 18C to 18F add multinational group reporting: the year-end notification, the country-by-country (CbC) report, the master file and the local file. The Kenya Revenue Authority (KRA) administers them. Penalties and interest come from the Tax Procedures Act 2015 ("TPA"). This skill reads the ITA as consolidated to 1 July 2026, which includes the Finance Act 2026 (Act No. 19 of 2026, which amended s18D), and the TPA as consolidated to 1 September 2026. The year of income is the calendar year, or the company's accounting year.
 
 ## Who this applies to
 
 - **Resident persons dealing with related non-residents.** Section 18(3) applies where a non-resident person does business with a related resident person, or with its own Kenyan permanent establishment (PE). If that business gives the resident person or PE no profit, or less than the ordinary profit it would have made without the relationship, its profit is deemed to be the arm's length amount.
-- **Related person (ITA s2).** Two persons are related if either takes part, directly or indirectly, in the management, control or capital of the other's business. With more than two persons, they are related through (a) any other person who takes part, directly or indirectly, in the management, control or capital of the business of both; or (b) an individual who takes part in the management, control or capital of the business of both, is associated with both by marriage, consanguinity or affinity, and in whose business both take part. The Rules' definition of "related enterprises" (r2) covers the first two tests (one in the other, or a third person in both) but has no family limb.
-- **Scope of the Rules (r5).**
-  - Transactions between related enterprises of a multinational where one is in Kenya and taxed there and the other is abroad.
-  - Dealings between a Kenyan PE and its head office or related branches. The PE is treated as a separate enterprise.
-- **Covered transactions (r6):** sales and purchases of goods; sale, purchase or lease of tangible assets; transfer, purchase or use of intangibles; services; lending and borrowing; and any other transaction affecting profit or loss.
+- **Related person (ITA s2).** Two persons are related if either takes part, directly or indirectly, in the management, control or capital of the other's business. With more than two persons, they are related through (a) any other person who takes part, directly or indirectly, in the management, control or capital of the business of both; or (b) an individual who takes part in the management, control or capital of the business of both, is associated with both by marriage, consanguinity or affinity, and in whose business both take part. The 2026 Rules (r2) replace "related enterprises" with "connected person", defined as related persons referred to in, or meeting any of the conditions outlined in, sections 2, 18, 18A, 18B, 18C, 18D, 18E and 18F of the Act, which brings in the s2 family limb.
+- **Scope of the Rules (r4).** The 2026 Rules apply to transactions contemplated by sections 18, 18A, 18B, 18C, 18D, 18E and 18F of the Act, covering cross-border related-party dealings, Kenyan PE dealings, preferential tax regime dealings (s18A) and MNE reporting.
+- **Covered transactions (r5):** purchase, sale, transfer or use of tangible property; purchase, sale, transfer or use of intangible property; provision of services; financing transactions (including long-term or short-term borrowing, lending or guarantees, marketable securities, advance or deferred payments, receivables and other business debts); insurance and reinsurance transactions; business restructuring or reorganisation; cost distribution arrangements; transactions involving derivatives; and any other transaction affecting profit or loss.
 - **Multinational enterprise (MNE) groups:**
   - the s18C notification applies to an MNE group or constituent entity resident in Kenya, other than an excluded MNE group (consolidated revenue below the KShs 95 billion s18D(1B) amount, s18F);
   - the CbC report applies to a Kenyan-resident ultimate parent entity or, in the s18D(1A) cases, a Kenyan-resident constituent entity, of a group at or above KShs 95 billion (s18D(1)–(1B));
@@ -54,7 +52,7 @@ Not covered here, refer to a specialist: interest limitation and thin capitalisa
 - without deducting interest, royalties, or management or professional fees paid, or said to be paid, by the PE to the non-resident. "Non-resident" here includes the head office and its other offices;
 - ignoring foreign exchange gains or losses on internal balances between the PE and the non-resident.
 
-**Methods (r7–r8).** The taxpayer chooses the method (r4) from these:
+**Methods (r6–r7).** The taxpayer chooses the most appropriate method (r6(1), r7(2)) from these:
 
 - comparable uncontrolled price (CUP);
 - resale price;
@@ -63,15 +61,15 @@ Not covered here, refer to a specialist: interest limitation and thin capitalisa
 - transactional net margin method (TNMM);
 - another method the Commissioner prescribes where none of these works.
 
-The taxpayer must apply the method most appropriate for its enterprise, having regard to the nature of the transaction or class of transaction, or the class of related persons or the functions they perform (r8(2)). The Commissioner may issue guidelines on applying the methods (r8(3)).
+The taxpayer must apply the method most appropriate for its enterprise, having regard to the nature of the transaction or class of transaction, or the class of related persons or the functions they perform (r7(2)). For commodity exports or imports where a publicly quoted price exists, r6(1) proviso and r6(2) require using the average publicly quoted price 15 days before and 15 days after the shipping date (unless arm's length adjustments are evidenced, or an agreed price with a non-related person is higher for exports or lower for imports).
 
-**Documentation on request (r9–r10).** A taxpayer who claims arm's length pricing must:
+**Documentation on request (r8–r9).** A taxpayer who avers arm's length pricing must (r9):
 
 - have a transfer pricing policy;
 - determine the arm's length price under the Rules;
 - produce documentation when the Commissioner asks.
 
-The Commissioner may ask for: the method chosen and why; how it was applied, with the calculations and adjustment factors; the global organisation structure; details of the transaction; the assumptions, strategies and policies used; and other background. Records must be in English, or translated, and prepared when the transfer price is set (r9(3)).
+Under r8(2)-(4), the Commissioner may require: the method chosen and reasons; calculations and price adjustment factors; global organisation structure; transaction details; assumptions, strategies and policies; transaction-level disclosures under r8(3) (parties, values, currencies, contracts, intra-group payments and receipts by tax jurisdiction, functional and comparability analyses with search and rejection criteria, tested party, location-specific factors, multi-year analysis, foreign APAs and third-party commodity sale agreements and invoices); and financial schedules under r8(4) (audited financial statements, foreign tested-party financial statements, segmented reports with allocation keys and reconciliations to annual accounts). Records must be in English, or translated, at the time the transfer price is arrived at (r8(6)).
 
 **Master file and local file (s18D(3), (6), (7)).** An ultimate parent entity or constituent entity of an MNE group must file both with the Commissioner, in the manner the Commissioner specifies, within 6 months of the group's year end. Unlike the s18D(1B) KShs 95 billion test for the CbC report, s18D(3) states no turnover threshold for these files. Check any exclusion before concluding a small group is out.
 
@@ -106,13 +104,13 @@ The Commissioner may ask for: the method chosen and why; how it was applied, wit
 | Notify the Commissioner whether the Kenyan entity is the ultimate or surrogate parent, or who is (groups at or above KShs 95 billion) | by the last day of the group's reporting financial year | ITA s18C, s18F |
 | Master file and local file | within 6 months after the group's year end | ITA s18D(4) |
 | CbC report (groups at or above KShs 95 billion) | within 12 months after the group's year end | ITA s18D(2) |
-| TP documentation under the Rules | prepared when the price is set; produced on request | TP Rules r9(3), r10 |
+| TP documentation under the Rules | prepared when the price is set; produced on request | TP Rules 2026 r8(6), r9 |
 | Tax on any adjustment | assessed with interest from the original due date | TPA ss38, 83A |
 
 ## Penalties and interest
 
 - **Failing to comply with s18C or s18D** (notification, CbC report, master file, local file) is an offence, with penalties under the TPA (ITA s18E). The specific TPA provision applied was not confirmed for this version. The general penalty for failing to submit a document other than a return is KShs 1 000 a day, capped at KShs 50 000 (TPA s83(2)). Whether KRA applies that to these filings is not confirmed.
-- **Fraud, failure to furnish returns and underpayment.** The Act's provisions on these apply to transfer pricing (TP Rules r11).
+- **Fraud, failure to furnish returns and underpayment.** The Tax Procedures Act provisions on these apply to transfer pricing (TP Rules 2026 r10), and unpaid tax is deemed additional tax for TPA s38 (r11).
 - **Tax from an adjustment, paid late:**
   - a 5% late payment penalty (TPA s83A);
   - interest at 1% a month, simple (TPA s38);
@@ -208,13 +206,13 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Income Tax Act, Cap. 470, Kenya Law consolidated version of 1 July 2026 (s2 "related person", "resident"; s16(2)(j) and s18A, scope only; s18(3), (5); ss18C, 18D, 18E, 18F; Third Schedule Head B para 2(a)(ix), (b)(viii)) | https://new.kenyalaw.org/akn/ke/act/1973/16/eng@2026-07-01 | 2026-10-29 |
-| Income Tax (read for Transfer Pricing) Rules 2006, LN 67 of 2006, Kenya Law version of 31 December 2022 (r1–r12) | https://new.kenyalaw.org/akn/ke/act/ln/2006/67/eng@2022-12-31 | 2026-10-29 |
+| Income Tax (Transfer Pricing) Rules, 2026, LN 186 of 2026, Kenya Law version of 18 September 2026 (r1–r12; r12 revokes the earlier Rules) | https://new.kenyalaw.org/akn/ke/act/ln/2026/186 | 2026-11-26 |
 | Tax Procedures Act 2015, Kenya Law version of 1 September 2026 (ss38, 83, 83A, 84) | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2026-09-01 | 2026-10-29 |
 
 Not yet confirmed:
+- The commencement date of LN 186 of 2026 (the notice states none), and so whether dealings earlier in the 2026 year of income fall under the 2006 Rules.
 - Which TPA penalty KRA applies to s18C/18D failures under s18E.
 - Whether s18D(3) master and local file filing has a turnover threshold or other exclusion set by the Commissioner's specification (no threshold appears in the section itself).
-- Any KRA transfer pricing guidelines issued under r8(3).
 - Interest limitation under s16(2)(j).
 - Treaty mutual agreement relief.
 - Whether a Kenyan permanent establishment of a non-resident company counts as a constituent entity "resident in Kenya" for the s18C notification and the s18D(1A) CbC filing.
