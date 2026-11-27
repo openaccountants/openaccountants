@@ -2,19 +2,19 @@
 name: bw-vat-gst
 description: >
   Botswana VAT for 2026-27 under the Value Added Tax Act, 2026: 14% rate, P1,000,000 threshold, P500,000 remote supplier threshold, reverse charge for large unregistered persons, zero-rated food, the medical suspension, categories, returns in 28 days. Use for Botswana VAT.
-version: 1.1
+version: 1.2
 jurisdiction: BW
 category: international
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 type: situation-rules
 ---
 
-# Botswana VAT v1.1
+# Botswana VAT v1.2
 
 > **General reference only.** This skill is general tax reference material. It has not been reviewed for any specific person's facts. Check figures against the official sources named here.
 
@@ -41,7 +41,7 @@ The 15% rate proposed earlier was not enacted: the Act says 14%. The BURS VAT pa
 
 ## The base
 
-Zero-rated foods, in natural state and unmixed ([BURS notice](https://www.burs.org.bw/images/Zero-Rated%20FoodStuff-%20Under%20Vat%20Act%20of%202026.pdf)): sorghum or maize meal (not cooked), millet grain and meal, wheat grain, maize cobs, sugar, brown bread, fresh potatoes, tomatoes, onions, cabbage, rape, beetroots, carrots and spinach, fresh oranges, apples and bananas (not dried, canned or bottled), rice, samp, bread flour, cooking oil. Everything else is 14%. Exports of goods and services are zero-rated with documentary proof (Sch 1, s 8(2)).
+Zero-rated domestic supplies (Sch 1 Pt III para 1): a taxable activity transferred as a going concern between registered persons, on the para 1(a) conditions, including notice to BURS within 28 days; these foods in natural state and unmixed: sorghum or maize meal (not served as a meal or as cooked or prepared food), millet grain and meal, wheat grain, maize cobs, sugar; brown bread, fresh vegetables (potatoes, tomatoes, onions, cabbage, rape, beetroots, carrots and spinach; not dehydrated, dried, canned or bottled), fresh oranges, apples and bananas (not dehydrated, dried, canned or bottled), rice, samp, bread flour, cooking oil, liquid petroleum gas, infant formula, baby diapers, sanitary pads or tampons, pesticides, fertilizers, and the first 5,000 litres of water a month supplied by Water Utilities Corporation to a residential dwelling; 21 listed farm implements, including ploughs, harrows, seeders, harvesters, tractors and trailers; leaded and unleaded petrol, diesel oil and illuminating paraffin (fuel levy goods); condoms; and prescription medicines for humans in Schedules 1A, 1B, 1C and 2 of the Medicines and Related Substances Act. The items are fixed by Customs Tariff heading; the vegetable and fruit names follow the [BURS notice of 9 July 2026](https://www.burs.org.bw/images/Zero-Rated%20FoodStuff-%20Under%20Vat%20Act%20of%202026.pdf), which lists the foods only and omits infant formula. Other taxable supplies are 14%. Exports of goods and services are zero-rated with documentary proof (Sch 1 Pts I and II, s 8(2)).
 
 Exempt (Sch 2): financial services not charged by fee; precious metals; services of public medical facilities; donated goods by non-profit bodies; education; public transport; home owners' associations; nominal supplies by Government or non-profit bodies; lease of residential premises for 45 days or more; Deposit Insurance Scheme services.
 
@@ -115,10 +115,10 @@ expected:
 
 | Source | Link | Read |
 |---|---|---|
-| Value Added Tax Act, 2026 (No. 15 of 2026), read: ss 7 to 9, 12 to 14, 28, 54, 57, 65, 66, Schedules 1, 2, 5; Regulations SI 94 and Order SI 95 in the same file | https://www.burs.org.bw/index.php/tax/tax-laws-2026?download=958:value-added-tax-act-2026 | 2026-11-01 |
+| Value Added Tax Act, 2026 (No. 15 of 2026), read: ss 7 to 9, 12 to 14, 28, 54, 57, 65, 66, Schedules 1 (Part III item by item), 2, 5; Regulations SI 94 and Order SI 95 in the same file | https://www.burs.org.bw/index.php/tax/tax-laws-2026?download=958:value-added-tax-act-2026 | 2026-11-26 |
 | Tax Administration Act, 2026 (No. 14 of 2026), read: ss 14, 18, 27, 41, 98, 101 to 103; Regulations SI 90 regs 3, 4, 21, 28, 30, 33, 34 in the same file | https://www.burs.org.bw/index.php/tax/tax-laws-2026?download=955:tax-administration-act-2026 | 2026-11-01 |
 | BURS notice 9 July 2026, zero-rated foodstuffs, whole notice | https://www.burs.org.bw/images/Zero-Rated%20FoodStuff-%20Under%20Vat%20Act%20of%202026.pdf | 2026-11-01 |
 | BURS notice 30 July 2026, VAT on medical services, whole notice | https://www.burs.org.bw/images/Value%20Added%20Tax%20on%20Medical%20Services%20Suspension.pdf | 2026-11-01 |
 | BURS Returns page, form names only (page predates the 2026 Acts) | https://www.burs.org.bw/index.php/tax/returns | 2026-11-01 |
 
-Not yet confirmed: the box layout of VAT 002.1 and the current VAT registration form number (no official page opened gives them); how long the medical suspension lasts and whether it is backed by gazette; whether the notice list of foods matches Sch 1 Pt III word for word (notice used); agricultural inputs from the old zero-rated line (Sch 1 Pt III not read item by item); the old file said foreign remote suppliers register from September 2025, now replaced by the Act.
+Not yet confirmed: the box layout of VAT 002.1 and the current VAT registration form number (no official page opened gives them); how long the medical suspension lasts and whether it is backed by gazette; the old file said foreign remote suppliers register from September 2025, now replaced by the Act.
