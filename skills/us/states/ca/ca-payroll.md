@@ -1,567 +1,150 @@
 ---
 name: ca-payroll
-description: California employer payroll for 2026, administered by EDD. Covers PIT withholding under the 2026 Method A and Method B schedules and the DE 4, flat supplemental rates of 10.23% (bonuses, stock options) and 6.6%, SDI at 1.3% on all wages with no cap, UI at 3.4% for new employers and 1.5% to 6.2% under Schedule F+ on the first USD 7,000, ETT at 0.1% on the same base, DE 9 and DE 9C quarterly returns and delinquency dates, DE 88 deposits, DE 1 registration, DE 34 new hires, DE 542 contractors, the ABC test, final pay and the waiting time penalty, tips and the USD 16.90 minimum wage. Trigger on "California payroll", "EDD", "DE 9", "DE 9C", "California SDI", "California SUI", "ETT", "DE 4", "California withholding".
-version: "3.0"
+description: California US-CA employer payroll for 2026. Compute PIT, SDI, UI and ETT; report DE 9, DE 9C, DE 34 and DE 542; determine deposits and final pay. Includes dated withholding schedules, worker classification, tips, wage statements, original worked cases and explicit holds for specialist issues.
+version: "3.1"
 jurisdiction: US-CA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 type: computation
 ---
 
-# California payroll for employers: PIT withholding, SDI, UI, ETT, filings and final pay
+# California payroll for employers, 2026
 
-Figures are for tax year 2026. This skill covers the four California payroll taxes an employer handles through the Employment Development Department (EDD): California Personal Income Tax (PIT) withholding, State Disability Insurance (SDI), Unemployment Insurance (UI) and the Employment Training Tax (ETT). It also covers the quarterly and annual filings, deposits, new hire and contractor reports, and the final pay rules enforced by the Labor Commissioner. Every rate below comes from an EDD or Department of Industrial Relations page. California income tax brackets for the annual return are set by the Franchise Tax Board; confirm them on ftb.ca.gov, because this skill does not reproduce them.
+For an ordinary California commercial employer, withhold PIT under the **2026** EDD schedules and SDI at **1.3% of subject wages without an annual cap**; pay UI and, where applicable, ETT on each employee's first **USD 7,000** of calendar-year wages. Read the employer's DE 2088 before choosing its UI/ETT rates. [DE 44, printed p.8](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=16)
 
-> **Source-cited draft.** Built from the EDD rates page, the 2026 California Employer's Guide (DE 44), the 2026 Method B schedules, EDD information sheets and FAQs and Labor Commissioner FAQs, read on 2026-11-13 (earlier-pass pages dated on their row). No accountant has reviewed it. All outputs must be reviewed by a qualified payroll or tax professional before filing.
+## Scope
 
-**Answer first.** For 2026 a California employer withholds **SDI at 1.3% of all wages** (no ceiling) and PIT under the 2026 EDD schedules (10.23% flat on a bonus paid separately), and pays **UI** on the first **USD 7,000** of each employee's wages (**3.4%** for a new employer, 1.5% to 6.2% once experience rated) plus **ETT at 0.1%** on the same USD 7,000. PIT and SDI are deposited on the federal deposit rhythm; the DE 9 and DE 9C are filed each quarter, delinquent after 30 April, 31 July, 2 November 2026 and 1 February 2027.
+This Guide covers ordinary, tax-rated commercial employers and California-covered employees for 2026. Load `us-tax-workflow-base`. A payroll or tax professional must review the calculation, classification and filings before use. The historical cases below keep their original years; they are not 2026 instructions.
 
-## Scope and who this is for
-
-This skill covers California employer payroll for 2026:
-
-- PIT withholding from wages, using the 2026 EDD withholding schedules (Method A and Method B) and the flat rates for supplemental wages.
-- SDI, withheld from the employee. Paid Family Leave (PFL) is part of SDI, not a separate deduction.
-- UI, paid by the employer on the first part of each employee's wages, at a rate set each year.
-- ETT, paid by the employer on the same wage base as UI, by employers with a positive UI reserve account balance and employers subject to section 977(c) of the California Unemployment Insurance Code.
-- The Quarterly Contribution Return and Report of Wages (DE 9) and its continuation (DE 9C), payroll tax deposits (DE 88), the e-file and e-pay mandate, and the Notice of Contribution Rates (DE 2088).
-- The Employee's Withholding Allowance Certificate (DE 4).
-- New hire reporting (DE 34) and independent contractor reporting (DE 542).
-- Worker classification under the ABC test, as EDD applies it.
-- Final pay timing and the waiting time penalty, vacation payout, tips and the minimum wage, from the Labor Commissioner's pages.
-
-**Out of scope (refuse or refer out):**
-
-- Federal employment tax filing (Forms 941, 940, 943, 944, W-2 and W-3). Use `us-form-941-940-payroll`, which a named accountant maintains, or refer to a payroll professional.
-- Other states' payroll rules, and an employee who works partly in another state. Use `us-state-payroll-matrix` for the state-by-state map; refer multistate apportionment to a payroll professional.
-- Public-sector and governmental employer payroll.
-- Agricultural employers and household employers (EDD publishes a separate household employer guide).
-- Garnishment and child-support withholding beyond noting that the obligation exists.
-- ERISA retirement plan administration and the CalSavers program (see section 9).
-- Visa, totalization-agreement and other cross-border payroll cases.
-- Stock option and restricted stock planning, section 83(b) elections and section 409A deferred compensation. Use `us-equity-compensation-restricted-stock-units-and` for the federal side.
-- San Francisco, Los Angeles and other city business taxes (see section 14).
-
-**Prerequisites:** Load this skill with `us-tax-workflow-base`. A credentialed reviewer (Enrolled Agent, CPA or attorney) or an experienced California payroll practitioner reviews every output before it reaches the employer or EDD.
+Federal returns, other states and cross-border payroll, governmental/reimbursable employers, agriculture, households, cannabis licensing, garnishments, retirement plans, equity planning and city taxes require the handoffs under **When to refuse or refer**.
 
 ## Ask the client first
 
-- Is the business a new employer with EDD, and what UI and ETT rates does its latest DE 2088 show?
-- Which federal deposit schedule is it on (next-day, semi-weekly, monthly, quarterly or annual)? This sets the California PIT and SDI deposit dates.
-- Does every employee have a signed DE 4 on file, and is anyone paid supplemental wages separately from regular pay?
-- Has the payroll system ever applied an SDI wage cap since 1 January 2024?
-- Does anyone work for the business as an independent contractor, and has each been tested under the ABC test and reported on the DE 542?
-- Does anyone work outside California, or live outside California while working here?
+Obtain the current DE 2088 and EDD account details; federal deposit schedule; pay dates and year-to-date subject/taxable wages; each employee's DE 4 or eligible pre-2020 W-4; regular and supplemental pay; tip statements; HSA and other benefit codes; California work and residence locations; contractor contracts and federal reporting position; and any termination, vacation/PTO policy or collective bargaining agreement. Ask whether SDI is under the state plan or an approved Voluntary Plan, and whether corrections or EDD notices are outstanding. Do not infer a classification, exemption, allowance or tax rate from missing facts.
 
 ## The method, step by step
 
-1. A commercial employer registers with EDD on the DE 1 within 15 calendar days after paying more than the registration amount in the DE 44 table in section 2 in wages during any calendar quarter (other employers: DE 44 page 6). All returns and deposits then go through e-Services for Business under the e-file and e-pay mandate. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-2. Get a signed Form W-4 and DE 4 from each new employee; with no valid DE 4, withhold as single with zero allowances. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-3. Report each new hire on the DE 34 within 20 calendar days of the start-of-work date, and each contractor on the DE 542 within 20 calendar days of reaching the threshold. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-4. Classify each worker under the ABC test, or the Borello test where an exception applies. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-5. Set up pay codes: check each payment type (HSA contributions, tips, lodging, fringe benefits) against DE 231TP. [DE 231TP](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de231tp.pdf)
-6. Each payday, withhold PIT under the 2026 Method A or Method B schedules for the payroll period, or the flat supplemental rate for a separately paid bonus. [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)
-7. Withhold SDI at the 2026 rate on all wages, with no ceiling. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-8. Compute UI and ETT at the rates on the employer's DE 2088, on each employee's wages up to the per-employee limit for the calendar year. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-9. Deposit PIT and SDI on the DE 88 under the schedule in section 8. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-10. File the DE 9 and DE 9C each quarter by the delinquency date, and pay UI and ETT. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-11. After year end, reconcile the DE 9C totals to Form W-2 Boxes 14, 16 and 17, and the DE 9 to Form 940. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-12. On termination, pay final wages on the Labor Code timetable. [DIR paydays FAQ](https://www.dir.ca.gov/dlse/FAQ_Paydays.htm)
-13. Each December, read the new DE 2088 and protest within 60 days of its issued date if it is wrong. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-
 ### Rates, bands and thresholds
 
-| Item | Amount, 2026 | Source |
+The general rates page now leads with **2027**. Use its historical information and the dated 2026 documents for 2026 wages.
+
+| Item and condition | 2026 value | Official source |
 | --- | --- | --- |
-| SDI withholding rate (employee; includes Paid Family Leave) | 1.3% | [EDD: Rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding) |
-| SDI taxable wage limit | None (all wages, since 1 January 2024) | [EDD: Rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding) |
-| UI rate, new employer, for two to three years | 3.4% | [EDD: Rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding) |
-| UI rate range, Schedule F+ | 1.5% to 6.2% | [EDD: Rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding) |
-| UI taxable wage limit, per employee per calendar year | USD 7,000 | [EDD: Rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding) |
-| ETT rate | 0.1% | [EDD: Rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding) |
-| ETT taxable wage limit, per employee per calendar year | USD 7,000 | [EDD: Rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding) |
-| Maximum UI per employee at the highest rate | USD 434 | [DE 44 (2026)](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf) |
-| Maximum ETT per employee | USD 7 | [DE 44 (2026)](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf) |
-| Flat PIT rate, bonuses and stock options paid separately | 10.23% | [DE 44 (2026)](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf) |
-| Flat PIT rate, other supplemental wages paid separately | 6.6% | [DE 44 (2026)](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf) |
-| PIT deposit: accumulated less than this, deposit quarterly | USD 350 | [DE 44 (2026)](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf) |
-| PIT deposit: USD 350 to this amount, 15th of the following month (next-day and semi-weekly federal depositors) | USD 400 | [DE 44 (2026)](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf) |
-| Late payroll tax payment penalty | 15% plus interest | [DE 44 (2026)](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf) |
-| Commercial employer registers (DE 1) within 15 days after paying in a quarter more than | USD 100 | [DE 44 (2026)](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf) |
-| DE 542 contractor report threshold | USD 600 | [DE 44 (2026)](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf) |
-| Method B monthly, single: low income exemption | USD 1,575 | [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf) |
-| Method B monthly, single: standard deduction | USD 476 | [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf) |
-| Method B monthly: exemption allowance credit, 1 allowance | USD 14.03 | [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf) |
-| State minimum wage from 1 January 2026 | USD 16.90 an hour | [DIR: Minimum wage FAQ](https://www.dir.ca.gov/dlse/faq_minimumwage.htm) |
-| FUTA credit reduction for California, 2025 tax year (2026 not yet set) | 1.2% (USD 84 per employee) | [EDD: Federal Unemployment Tax Act](https://edd.ca.gov/en/payroll_taxes/federal-unemployment-tax-act) |
+| State-plan SDI, employee withholding on all SDI-subject wages; no cap from 2024 | 1.3% | [DE 44 p.8](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=16); [DE 3395](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de3395.pdf) |
+| New employer UI, ordinarily for two to three years; successor and penalty-rate cases require separate review | 3.4% | [DE 44 p.77](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=85); [UIC 982](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=982.&lawCode=UIC) |
+| Ordinary experience-rated UI range; use the assigned DE 2088 rate | 1.5%–6.2% | [DE 44 p.8](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=16) |
+| UI wage base, each employee, each calendar year | USD 7,000 | [UIC 930](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=930.&lawCode=UIC); [DE 3395](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de3395.pdf) |
+| ETT, employer contribution on UI taxable wages; new employers included. Negative reserve on computation date is exempt unless assigned the maximum rate under UIC 977(c); special/reimbursable employer exclusions also apply | 0.1% on first USD 7,000 | [UIC 976.6](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=976.6&lawCode=UIC); [UIC 976.8](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=976.8&lawCode=UIC); [DE 44 p.8](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=16) |
+| Annual employer maxima at the ordinary highest UI rate / ETT rate | USD 434 / USD 7 | [DE 44 p.8](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=16); [EDD FUTA page](https://edd.ca.gov/en/payroll_taxes/federal-unemployment-tax-act) |
+| Separate supplemental payment: bonus or stock option that constitutes wages / other supplemental wages | 10.23% / 6.6%, without allowances under the flat option | [R&TC 18663(b)–(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=18663.&lawCode=RTC); [DE 44 p.18](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=26) |
+| Method B monthly single: low-income exemption / standard deduction / credit for one regular allowance | USD 1,575 / USD 476 / USD 14.03 | [2026 Method B Tables 1, 3, 4](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf#page=5) |
+| State minimum wage from 1 January 2026; higher industry/local rules and statutory exemptions must be checked | USD 16.90/hour | [DIR minimum wage FAQ](https://www.dir.ca.gov/dlse/faq_minimumwage.htm) |
+| FUTA credit reduction for California wages paid in 2026, federal Form 940; additional cost assumes full USD 7,000 FUTA wage base | 1.5 percentage points; up to USD 105 per employee | [EDD FUTA, 2026](https://edd.ca.gov/en/payroll_taxes/federal-unemployment-tax-act) |
 
-**Looking ahead to 2027.** EDD has already posted 2027 rates: SDI 1.4%, UI Schedule F+ (1.5% to 6.2%), ETT 0.1%, wage limits USD 7,000 ([EDD: Rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)). Do not use them for 2026 wages.
+UI and ETT are employer-paid; SDI and PIT are withheld from employees. PFL is part of SDI, not a separate deduction. Use **subject wages for each tax**, rather than treating gross cash pay or W-2 Box 16 as automatically the base for every tax. [DE 44 pp.8, 70](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=16)
 
-### 2. The Four California Employer Payroll Taxes (Quick Map)
+### Register and classify
 
-EDD's DE 44 (California Employer's Guide 2026) sets out who pays each tax and on which wages. Rates for 2026 come from EDD's rates page in the first table below.
+1. An ordinary commercial employer registers through [e-Services for Business](https://edd.ca.gov/eServices) or the Commercial Employer Account Registration and Update Form (DE 1) within **15 days** of paying **more than USD 100** of wages in a calendar quarter. Check an acquired business separately. [UIC 675](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=675.&lawCode=UIC), [1086](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1086.&lawCode=UIC); [DE 44 p.6](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=14).
+2. **AUDIT FLASH POINT: worker classification.** Where the ABC test applies, the hiring entity must establish all three conditions: freedom from control under contract and in fact; work outside its usual business; and an independently established business of the same nature. Express statutory exceptions remain effective; some use the Borello test instead. Do not apply ABC mechanically to an excepted occupation or relationship. California provides no federal safe-harbor relief. Refer a doubtful exception, corporate-officer case or dispute before treating the person as a contractor. [Labor Code 2775](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2775.&lawCode=LAB); [DE 44 p.7](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=15).
+3. Obtain signed federal W-4 and state DE 4 certificates for new hires and withholding changes. Without a properly completed DE 4, use single with zero allowances. An unchanged W-4 submitted before 2020 can continue to govern California withholding; the post-2020 W-4 cannot supply California allowances. [EDD withholding certificates](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding).
 
-| Item | Value | Note (verbatim from the page) |
+### Calculate each payday
+
+Use the [2026 Method A and Method B schedules](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf). Method A is limited to wages or salaries **less than USD 1 million** and is not the computer method; Method B works manually or by computer. Select the actual payroll period, filing status and regular/additional allowances. For married employees with employed spouses, EDD recommends single status for both spouses' withholding or an additional flat amount to avoid underwithholding (Method B p.1).
+
+For Method B: (1) compare gross wages with the low-income exemption; if at or below it, no PIT; (2) subtract the Table 2 estimated-deduction amount for additional allowances; (3) subtract the Table 3 standard deduction; (4) apply the correct period/status rate table; (5) subtract the Table 4 credit for **regular** allowances. Additional estimated-deduction allowances do not also earn that credit. Use the complete official tables for other pay periods, marital statuses and bands. [2026 Method B pp.1–6](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf#page=2).
+
+Supplemental wages include bonuses, overtime, commissions, sales awards, vacation and severance. **Paid at the same time as regular wages:** combine and use the regular-period schedules. **Paid separately:** choose aggregate withholding (tax on combined current regular and supplemental wages, less tax already withheld on regular wages) or the category's flat rate without allowances. The stock-option rate applies only to options constituting wages; do not classify every equity payment as an option. [UIC 13043(c)–(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=13043.&lawCode=UIC); [DE 44 p.18](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=26).
+
+**AUDIT FLASH POINT: large bonuses.** A withholding rate is not the employee's final annual tax rate. Do not promise the flat or aggregate method eliminates a balance due. Review the DE 4 and, for the personal return and estimated payments, load `ca-540-individual-return` and `ca-estimated-tax-540es`. Estimated payments do not replace the employer's mandatory wage withholding. [DE 44 p.18](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=26).
+
+Check the actual pay code in [DE 231TP](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de231tp.pdf):
+
+- HSA contributions as defined in IRC 106(d), both within and outside an IRC 125 cafeteria plan, are subject to UI/ETT, SDI and PIT withholding and reportable as California PIT wages (p.7). California excludes the federal HSA exclusions: [R&TC 17131.4](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17131.4&lawCode=RTC) and [17131.5](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17131.5&lawCode=RTC).
+- Cash tips received in employment and included in the employee's written statement are subject/reportable for all four taxes when **USD 20 or more in a month**. Noncash tips are not. Employer-controlled/banquet amounts treated as regular wages are subject without waiting for employee reporting; refer service-charge or tip-pooling disputes. These are different categories (p.15). [UIC 927](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=927.&lawCode=UIC).
+
+**AUDIT FLASH POINT: an old SDI cap.** For state-plan SDI-subject wages, the history is 2024 **1.1%**, 2025 **1.2%**, 2026 **1.3%**, all uncapped. The 2023 rate was **0.9%**, capped at **USD 153,164**. Compare the payroll register's SDI-subject wages with withholding at the correct year's rate; investigate every discrepancy rather than inventing a tolerance or equating PIT and SDI wages. [DE 3395](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de3395.pdf); [UIC 985(b)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=985.&lawCode=UIC).
+
+### Report new hires and contractors
+
+**DE 34:** report California new hires and rehires after at least **60 consecutive days** of separation, ordinarily within **20 calendar days of first work for wages**. Acquisition hires count. A returning worker is not automatically a new hire after every absence: DE 44 p.56 specifies a return requiring new W-4/DE 4 certificates or the separation test. Include employer identifiers/contact information and employee name, SSN, address and actual start-of-work date. UIC 1088.5(d)(2) provides two monthly transmissions **12–16 days apart** for electronic/magnetic reporting; apply that cadence when filing electronically. Multistate single-state reporting elections require a separate check. [UIC 1088.5](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1088.5&lawCode=UIC); [DE 44 p.56](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=64).
+
+**DE 542:** first establish UIC 1088.8(a)'s federal-return condition: a California-connected service-recipient **makes or is required to make** a return under IRC 6041A(a) for service compensation. The service-provider is an **individual**, not an employee for California purposes. Within that scope, report within **20 days of the earlier** of payments aggregating **USD 600 in a year** or contract(s) providing for **USD 600 in a year**. Do not treat every corporate vendor or every USD 600 payment as automatically reportable; assess the federal filing condition separately with `us-1099-nec-issuance`. The California statutory amount does not itself determine whether a 2026 federal return is required. [UIC 1088.8(a)–(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1088.8&lawCode=UIC).
+
+File through e-Services (or the permitted DE 542 mail/fax route). Supply the provider's individual name, **SSN rather than FEIN**, address, contract start, amount and expiration/ongoing status; and the recipient's name, address, phone and applicable identifying numbers. The report is additional to federal information reporting. Absent good cause, failure to report can attract **USD 24**, or **USD 490** for conspiracy to omit or falsify the report. [DE 44 p.58](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=66); [UIC 1088.8(c), (e)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1088.8&lawCode=UIC).
+
+### Quarterly returns, deposits and corrections
+
+File **both DE 9 and DE 9C each quarter**, including no-wage quarters while the account is active. DE 9 reconciles taxes and deposits; DE 9C gives employee-level subject wages, PIT wages and PIT withholding. It does **not** report an individual employee's SDI withholding amount. Pay a DE 9 balance separately; an electronic payment needs no physical DE 88 coupon. Use e-Services to select the correct quarter, submit each return and payment, and retain the confirmation. [UIC 1088, 13021(a)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=13021.&lawCode=UIC); [EDD required filings](https://edd.ca.gov/en/payroll_taxes/required_filings_and_due_dates/); [DE 44 pp.64–65](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=72).
+
+| 2026 wage quarter | Return/payment due | Last timely return date; quarterly EFT initiation date | Quarterly EFT settlement by | Official source |
+| --- | --- | --- | --- | --- |
+| Q1, January–March | 1 April 2026 | 30 April 2026 | 1 May 2026 | [DE 44 pp.61, 64–65](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=69) |
+| Q2, April–June | 1 July 2026 | 31 July 2026 | 3 August 2026 | [DE 44 pp.61, 64–65](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=69) |
+| Q3, July–September | 1 October 2026 | 2 November 2026 | 3 November 2026 | [DE 44 pp.61, 64–65](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=69) |
+| Q4, October–December | 1 January 2027 | 1 February 2027 | 2 February 2027 | [DE 44 pp.61, 64–65](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=69) |
+
+UI/ETT are quarterly, although earlier payments are allowed. PIT/SDI follow the federal schedule **and accumulated PIT**, not SDI amounts or the federal schedule alone. [UIC 1110](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1110.&lawCode=UIC), [13021](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=13021.&lawCode=UIC).
+
+| Federal schedule | Accumulated California PIT | PIT and SDI deposit deadline | Official source |
+| --- | --- | --- | --- |
+| Any | Less than USD 350 | Quarterly dates above | [EDD deposit table](https://edd.ca.gov/en/payroll_taxes/timely_payroll_tax_deposits/) |
+| Next-day or semiweekly | USD 350–400 inclusive | 15th of following month | [EDD deposit table](https://edd.ca.gov/en/payroll_taxes/timely_payroll_tax_deposits/) |
+| Next-day | More than USD 400 | Next business day | [EDD deposit table](https://edd.ca.gov/en/payroll_taxes/timely_payroll_tax_deposits/) |
+| Semiweekly | More than USD 400; Wednesday–Friday payday | Following Wednesday | [EDD deposit table](https://edd.ca.gov/en/payroll_taxes/timely_payroll_tax_deposits/) |
+| Semiweekly | More than USD 400; Saturday–Tuesday payday | Following Friday | [EDD deposit table](https://edd.ca.gov/en/payroll_taxes/timely_payroll_tax_deposits/) |
+| Monthly, quarterly or annual | USD 350 or more | 15th of following month | [EDD deposit table](https://edd.ca.gov/en/payroll_taxes/timely_payroll_tax_deposits/) |
+
+Accumulate PIT across payrolls; UIC 13021(h) also catches the USD 350 threshold **cumulatively for two or more months**. A monthly deadline on a weekend/legal holiday moves to the next business day. Semiweekly depositors have three business days after the end of the semiweekly period, with an additional business day when one is a legal holiday. [DE 44 p.60](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=68).
+
+**Payment timing matters.** Quarterly ACH debit must be completed before **3 p.m. Pacific** by the initiation date in the table and settle by the listed settlement date; ACH credit follows the bank's processing requirements. Do not apply a blanket “three business days after every payday” rule. UIC 13021(d)(2) generally deems EFT complete on initiation only if settlement is by the following business day; (d)(3) gives the specific three-business-day settlement rule for one-day-rule payments. Preserve the payment confirmation and verify settlement. [UIC 13021(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=13021.&lawCode=UIC); [DE 44 p.61](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=69).
+
+The e-file/e-pay mandate applies unless EDD approves a waiver. Request **DE 1245W** for lack of automation, severe economic hardship, federal exemption or other good cause; it is not retroactive. Without applicable relief, paper DE 9 costs **USD 50 per return**, DE 9C **USD 20 per wage item**, and DE 88 **15% of the amount due**. Late payments ordinarily incur **15% plus interest**; contribution penalties under UIC 1112 have a good-cause condition. UIC 13021(f) also provides relief for a nonwillful payment of at least **95%** under (c)/(d) when the remainder is paid with the next payment. Do not replace EDD interest with an FTB rate or infer the current rate; follow EDD's [interest page](https://edd.ca.gov/en/payroll_taxes/interest_rate). Unpaid balances may lead to a DE 2176 and public tax lien. Failure to remit withholding can also carry criminal consequences; check that issue with a partner accountant and counsel. [DE 44 pp.52, 61](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=60); [UIC 1112](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1112.&lawCode=UIC).
+
+Reconcile annual DE 9C PIT wages/withholding to **W-2 Boxes 16/17**; reconcile payroll-register SDI withholding to **W-2 Box 14**, not to a nonexistent employee SDI field on DE 9C. Box 1 and Box 16 can differ. EDD/IRS compare Form 940 with DE 9 **C (subject wages)** and **D2 (UI taxable wages)**. Q4 DE 9 is a quarterly return; the separate California annual reconciliation return is no longer required for 2012 onward. [DE 44 pp.70, 78](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=78); [UIC 13021(j)(2)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=13021.&lawCode=UIC).
+
+Correct filed DE 9/DE 9C information in e-Services or with **DE 9ADJ**, not a DE 9X. Correct a wrongly issued W-2 using W-2c instructions. Do not recover SDI/PIT from employees or refund previously reported PIT indiscriminately: the DE 44 p.63 adjustment table distinguishes timing, written permission and whether the original W-2 was correct. Check the specific adjustment with one of our partner accountants. [DE 44 pp.63, 67, 70](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=71).
+
+Use the DE 2088 issued for the relevant year. A protest of a protestable item is generally due within **60 days of issue**; EDD may grant up to **60 additional days for good cause requested before the deadline**. SDI/ETT statutory rates are not protestable. Refer rate disputes, successor reserve transfers, penalty rates under UIC 977(c) and voluntary UI contributions rather than assuming a new-employer rate or an unconditional March deadline. [DE 44 pp.77–78](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=85); [DE 231Z p.2](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de231z.pdf#page=2).
+
+### Wage statements, tips and final pay
+
+For the ordinary commercial employers in scope, Labor Code **226(a)** requires an accurate written wage statement semimonthly or at each payment: gross pay; hours (subject to statutory exceptions); piece units/rates where relevant; deductions; net pay; pay-period dates; employee name and last four SSN digits or non-SSN ID; employer legal name/address; and applicable hourly rates with hours at each. Deductions on written employee orders may be aggregated. Additional temporary-service/farm-labor items and the hours exceptions must be checked in the statute. Refer wage-statement penalties and PAGA; a missing item does not automatically prove every penalty condition. [Labor Code 226(a), (e), (j)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=226.&lawCode=LAB).
+
+Tips belong to employees; no employer tip credit against wages is allowed. Pay credit-card tips in full without deducting processing costs, no later than the next regular payday after authorization. [Labor Code 351](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=351.&lawCode=LAB). Apply the higher applicable state, industry or local minimum wage; refer exempt-worker or disputed service-charge/tip-pool cases.
+
+| Ordinary final-pay situation | Rule and conditions | Official source |
 | --- | --- | --- |
-| Source | all figures below | https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding |
-| UI rate for a new employer, for two to three years | 3.4% | "New employers are assigned a 3.4 percent UI rate for two to three years." ([source](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)) |
-| UI rate range in 2026 (Schedule F+) | 1.5% to 6.2% | "The UI rate schedule for 2026 is Schedule F+. This is Schedule F, plus a 15 percent emergency surcharge, rounded to the nearest tenth. Schedule F+ provides for UI contribution rates from 1.5 percent to 6.2 percent." ([source](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)) |
-| UI taxable wage limit, per employee, per calendar year | USD 7,000 | "The taxable wage limit is $7,000 per employee, per calendar year." ([source](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)) |
-| ETT rate for 2026 | 0.1% | "The ETT rate for 2026 is 0.1 percent." ([source](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)) |
-| ETT taxable wage limit, per employee, per calendar year | USD 7,000 | "The ETT taxable wage limit is $7,000 per employee, per calendar year." ([source](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)) |
-| SDI withholding rate for 2026 | 1.3% | "The SDI withholding rate for 2026 is 1.3 percent." ([source](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)) |
-| SDI taxable wage limit | none | "Effective January 1, 2024, all wages are subject to SDI contributions." ([source](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)) |
+| Discharge | Earned, unpaid wages immediately; industry/statutory exceptions must be checked before using this default | [Labor Code 201](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=201.&lawCode=LAB) |
+| Quit, no written fixed-period contract | At quitting if at least 72 hours' notice; otherwise within 72 hours. If the employee without that notice requests mailing and supplies an address, mailing date is payment date | [Labor Code 202](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=202.&lawCode=LAB) |
+| Earned unused vacation | Where policy/contract provides paid vacation, vested balance at final rate, subject to a collective bargaining agreement; no forfeiture of vested vacation | [Labor Code 227.3](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=227.3&lawCode=LAB) |
+| Final direct deposit | Employee voluntarily authorizes the account; deposit must still comply with termination/quit payment deadlines | [Labor Code 213(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=213.&lawCode=LAB) |
 
-| Tax | Who pays | Wages taxed |
-| --- | --- | --- |
-| PIT withholding | Employee (employer withholds) | No limit; withheld under the employee's DE 4 and the EDD schedules |
-| SDI (includes PFL) | Employee (employer withholds) | No limit |
-| UI | Employer | First part of each employee's wages each calendar year, up to the UI limit in the table above |
-| ETT | Employer with a positive UI reserve balance, or subject to section 977(c) | Same limit as UI |
+**AUDIT FLASH POINT: waiting time.** For a willful failure within Labor Code 203, penalty wages run at the daily wage rate from the due date until payment or commencement of a court action, **at most 30 calendar days**. Avoiding or refusing a fully tendered payment excludes that period. A genuine good-faith wage dispute can prevent the penalty; a DLSE complaint does not itself stop accrual. Earned vacation is wages; business expense reimbursement is not wages for this penalty. Daily-rate calculations and disputes need counsel. The original numerical illustration of **USD 1,000/day**, **USD 50 unpaid**, up to **USD 30,000** is arithmetic only if all penalty conditions hold; the penalty is not capped at the USD 50 debt. [Labor Code 203](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=203.&lawCode=LAB); [DIR waiting-time FAQ](https://www.dir.ca.gov/dlse/FAQ_WaitingTimePenalty.htm).
 
-The maximum per employee, per calendar year, printed in DE 44:
-
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf |
-| Maximum UI per employee, at the highest UI rate | USD 434 | "Maximum Tax $434 per employee," (the UI maximum, worked at the highest UI rate on the wage limit) ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)) |
-| Maximum ETT per employee | USD 7 | "($7,000 x .001)" (the ETT maximum, worked at the wage limit) ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)) |
-| SDI rate as printed in DE 44 | 1.3% | "1.3 percent (.013)" (SDI column of the State Payroll Taxes table; the PDF columns interleave) ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)) |
-| Flat PIT rate on bonuses and stock options paid separately | 10.23% | "Bonuses and stock options 10.23 percent (.1023)" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)) |
-| Flat PIT rate on other supplemental wages paid separately | 6.6% | "severance, and 6.6 percent (.066) vacation pay" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)) |
-| PIT accumulated below this amount: quarterly deposit | USD 350 | "Less than $350 Any payday Quarterly" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)) |
-| PIT from USD 350 to this amount (federal next-day or semi-weekly depositor): monthly deposit | USD 400 | "$350 to $400 Any payday 15th of the following month" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)) |
-| Penalty on late payroll tax payments | 15% | "A penalty of 15 percent plus interest will be charged on late payroll tax payments." ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)) |
-| Paper DE 9 (or other tax return) penalty | USD 50 | "Tax Return: $50 per return" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)) |
-| Paper DE 9C penalty | USD 20 | "Wage Report: $20 per wage item" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)) |
-| Fine on conviction for failing to withhold and send payroll taxes | USD 1,000 | "the person or employer can be fined up to $1,000 or sentenced to jail for up to one year" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)) |
-| DE 542 reporting threshold for a contractor | USD 600 | "within 20 calendar days of either paying an independent contractor $600 or more for services performed or entering into a contract for $600 or more, whichever is earlier" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)) |
-| Wages paid in a calendar quarter above which a commercial employer registers (DE 1) within 15 calendar days | USD 100 | "Within 15 calendar days after paying more than $100" (DE 1 row of 2026 Forms and Due Dates; the PDF columns interleave) ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)) |
-| Paper payroll tax deposit (DE 88) penalty | 15% | "Payroll Tax Deposit: 15% of amount due" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)) |
-
-Federal taxes run alongside these. Federal income tax withholding, social security, Medicare, Form 941 and Form 940 belong to `us-form-941-940-payroll`. This skill states no federal rates.
-
-What employers get wrong most often:
-
-- SDI has no wage ceiling. Since 1 January 2024 every dollar of wages is subject to SDI, so a payroll system that still stops SDI at an old cap under-withholds from high earners (section 4.3).
-- The SDI rate changes every year. It is the 2026 rate in the first table, not last year's rate.
-- UI and ETT stop at the wage limit, per employee, per calendar year. A new calendar year starts the count again.
-- ETT is not paid by every employer. It applies to employers with a positive UI reserve account balance and employers subject to section 977(c). The DE 2088 shows the employer's rate.
-- A bonus paid with regular wages must be added to the regular wages and withheld under the schedules. The flat bonus rate applies only to a payment made separately.
-
-### 3. California PIT Withholding
-
-#### 3.1 Authority and Method
-
-- **Two methods.** EDD publishes two methods for PIT withholding: Method A (Wage Bracket Table Method) and Method B (Exact Calculation Method). EDD limits Method A to wages or salaries under one million dollars, so use Method B above that. Both are on EDD's rates page and in DE 44. [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)
-- **The Method B steps.** Step 1: if gross wages are at or below the low income exemption amount, withhold nothing. Step 2: subtract the estimated deduction amount for any additional allowances claimed on a DE 4. Step 3: subtract the standard deduction. Step 4: apply the tax rate table for the payroll period and marital status. Step 5: subtract the exemption allowance credit for the regular allowances claimed. [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)
-- **Married employees with working spouses.** EDD recommends using the single filing status, or an additional flat amount of withholding, to avoid under-withholding. [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)
-
-#### 3.2 2026 California Withholding Schedules (Method B)
-
-The figures below are EDD's 2026 withholding schedule amounts, not the Franchise Tax Board's income tax brackets. Do not use them to compute an employee's annual tax. For the annual return, confirm the brackets on ftb.ca.gov.
-
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf |
-| Low income exemption, monthly, single | USD 1,575 | Table 1, Monthly row: "Monthly $1,575 $1,575 $3,149 $3,149" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Low income exemption, monthly, married with 2 or more allowances or head of household | USD 3,149 | Table 1, same row ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Standard deduction, monthly, single | USD 476 | Table 3, Monthly row: "Monthly $476 $476 $951 $951" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Standard deduction, monthly, married with 2 or more allowances or head of household | USD 951 | Table 3, same row ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Exemption allowance credit, monthly, 1 allowance | USD 14.03 | Table 4, row for 1 allowance, Monthly column: "$14.03" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Monthly single (Table 20): taxable income not over USD 924 | 1.100% | "$924 1.100%" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Over USD 924, not over USD 2,188 | 2.200% of the excess over USD 924, plus USD 10.16 | "$924 $2,188 2.200% $924 $10.16" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Over USD 2,188, not over USD 3,454 | 4.400% of the excess over USD 2,188, plus USD 37.97 | "$2,188 $3,454 4.400% $2,188 $37.97" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Over USD 3,454, not over USD 4,796 | 6.600% of the excess over USD 3,454, plus USD 93.67 | "$3,454 $4,796 6.600% $3,454 $93.67" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Over USD 4,796, not over USD 6,060 | 8.800% of the excess over USD 4,796, plus USD 182.24 | "$4,796 $6,060 8.800% $4,796 $182.24" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Over USD 6,060, not over USD 30,956 | 10.230% of the excess over USD 6,060, plus USD 293.47 | "$6,060 $30,956 10.230% $6,060 $293.47" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Over USD 30,956, not over USD 37,148 | 11.330% of the excess over USD 30,956, plus USD 2,840.33 | "$30,956 $37,148 11.330% $30,956 $2,840.33" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Over USD 37,148, not over USD 61,912 | 12.430% of the excess over USD 37,148, plus USD 3,541.88 | "$37,148 $61,912 12.430% $37,148 $3,541.88" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Over USD 61,912, not over USD 83,334 | 13.530% of the excess over USD 61,912, plus USD 6,620.05 | "$61,912 $83,334 13.530% $61,912 $6,620.05" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Over USD 83,334 | 14.630% of the excess over USD 83,334, plus USD 9,518.45 | "14.630% $83,334 $9,518.45" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-| Annual single (Table 5): top band, taxable income over USD 1,000,000 | 14.630% | "N/A 14.630% $1,000,000" (the PDF prints two tables side by side) ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)) |
-
-Other payroll periods (weekly, biweekly, semi-monthly, quarterly, annual, daily) and the married and head of household tables are in the same PDF. Use the table for the actual payroll period.
-
-#### 3.3 Form DE 4: Employee's Withholding Allowance Certificate
-
-- **Both forms are needed.** A new hire, and an existing employee who changes withholding, must complete and sign both the federal Form W-4 and the DE 4. Since 2020 the federal W-4 has no allowances, so it cannot drive California withholding. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-- **No DE 4 on file.** If an employee does not give the employer a properly completed DE 4, the employer must withhold "as if the employee were single and claiming zero withholding allowances". The live version of this skill said to fall back to the federal W-4; that is wrong for anyone hired or changing withholding since 2020. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-- **Old W-4s.** An employee who gave a Form W-4 before 2020 and has no change does not have to submit a new form; keep using the earlier form. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-- **Copies to the Franchise Tax Board.** Any rule on sending a DE 4 with many allowances to the Franchise Tax Board is a Franchise Tax Board rule; confirm it on ftb.ca.gov.
-
-#### 3.4 Supplemental Wage Withholding (flat rates in the DE 44 table)
-
-- **What counts.** Supplemental wages include, but are not limited to, bonuses, overtime pay, sales awards, commissions, stock options, vacation pay, and dismissal or severance pay. The stock option rate applies only to stock options that are wages subject to PIT withholding. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **Paid at the same time as regular wages.** The employer is "required to treat the sum of the payments as regular wages" and withholds under the schedules for the regular payroll period. The flat rates are not available. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **Paid separately.** The employer may choose either option. Option 1: compute withholding on the supplemental payment plus the current regular wages under the schedules, then subtract the PIT already withheld from the regular wages. Option 2: withhold a flat rate "without allowing for any withholding allowances": the bonus and stock option rate, or the other supplemental wages rate (DE 44: "such as overtime pay, commissions, sales awards, severance, and vacation pay"), both in the DE 44 table in section 2. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **Stock options.** Whether an option is wages subject to PIT withholding depends on the type of option; EDD's Information Sheet DE 231SK explains statutory and nonstatutory options. [DE 231SK](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de231sk.pdf)
-
-#### 3.5 AUDIT FLASH POINT: Under-withholding on Large Bonuses and Equity
-
-The flat bonus rate is a withholding rate, not the employee's tax. EDD's own annual Method B table withholds at its top band rate on taxable income over USD 1,000,000 (table in section 3.2), which is well above the flat bonus rate. A high earner paid a large bonus or equity income at the flat rate can therefore end the year owing California tax on the annual return.
-
-**Red flags during payroll review:**
-- Large bonuses or equity income paid separately and withheld only at the flat bonus rate.
-- Executives whose annual wages reach the top band of the annual Method B table.
-
-**Mitigation:**
-- The employee asks for additional withholding on the DE 4 (DE 44 describes additional PIT withholding requests).
-- The employer uses Option 1 (aggregate method) for a separately paid bonus instead of the flat rate.
-- The employee makes California estimated payments; see `ca-estimated-tax-540es`. DE 44 warns that quarterly estimates paid by an employee to the Franchise Tax Board instead of proper withholding "may result in an assessment to the employer". [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-#### 3.6 Wages Subject to California Withholding
-
-- **Box 16 usually matches Box 1, but not always.** DE 44 says the California PIT wages on Form W-2 Box 16 are generally the same as federal Box 1 wages, but may differ because of federal and California differences in the definition of employee and of wages. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **HSA contributions.** EDD's Types of Payments table treats contributions to a Health Savings Account (HSA) as "Subject" to UI and ETT, SDI and PIT withholding, and "Reportable" as PIT wages, whether or not they are made under a section 125 cafeteria plan. California payroll that excludes HSA contributions the way federal payroll does understates California wages. The information sheet is revision 1 of June 2016; it is the current version on EDD's forms page. [DE 231TP](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de231tp.pdf)
-- **Other differences.** For any other payment type (fringe benefits, lodging, life insurance, tuition programs), look up the row in DE 231TP before setting up the pay code. The live version of this skill stated a rule for registered domestic partner health benefits; no allowed page confirms it, so it is removed.
-
-### 4. State Disability Insurance (SDI)
-
-#### 4.1 SDI: No Wage Ceiling Since 2024
-
-- **No cap.** "Effective January 1, 2024, Senate Bill 951 removed the taxable wage limit and maximum withholdings for each employee subject to State Disability Insurance (SDI) contributions." This continues in 2026: the 2026 rate in the first table in section 2 applies to all wages. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **Who pays.** SDI is withheld from the employee. The employer does not pay it from its own funds. It is reported with PIT on the DE 9 and DE 9C. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **Form W-2.** Enter "The abbreviation CASDI or SDI withheld" in Box 14 (Other). An employer with an approved Voluntary Plan enters VPDI and the amount withheld instead. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **The rate changes yearly.** EDD's history table shows the recent SDI rates and the last wage cap:
-
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de3395.pdf |
-| SDI rate 2025 (no wage limit) | 1.2% | "2025 7,000 None1 3.4 6.2 0.1 1.2" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de3395.pdf)) |
-| SDI rate 2024 (no wage limit) | 1.1% | "2024 7,000 None1 3.4 6.2 0.1 1.1" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de3395.pdf)) |
-| SDI rate 2023 | 0.9% | "2023 7,000 153,164 3.4 6.2 0.1 0.9" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de3395.pdf)) |
-| SDI taxable wage limit 2023 (the last year with a cap) | USD 153,164 | same row ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de3395.pdf)) |
-
-#### 4.2 PFL: Part of SDI
-
-- **One deduction.** "Paid Family Leave (PFL) is a component of the SDI program." There is no separate PFL withholding. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **Benefits.** PFL and disability benefit amounts are claim-side rules administered by EDD and are not covered here. The live version of this skill stated a weekly benefit maximum and replacement percentages for 2025; those are removed because no 2026 page was read for them.
-
-#### 4.3 AUDIT FLASH POINT: SDI Cap Still Switched On in Payroll Software
-
-Payroll systems that were not reconfigured when the cap was removed keep stopping SDI at an old cap. The usual result:
-
-- High earners are under-withheld for SDI.
-- The DE 9 and DE 9C understate SDI withheld.
-- Form W-2 Box 14 shows less SDI than the year's rate times California SDI wages.
-
-**Reconciliation procedure:**
-1. For each year from 2024, take each employee's SDI wages and SDI withheld.
-2. Expected SDI equals SDI wages times that year's rate (2024 and 2025 in the history table above, 2026 in section 2). This is arithmetic only, per year, per employee.
-3. Investigate any shortfall.
-4. Correct prior quarters with the DE 9ADJ (Quarterly Contribution and Wage Adjustment Form) or through e-Services for Business, and issue corrected Forms W-2 (W-2c). DE 44 explains when and how to correct a DE 9 and DE 9C. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-5. Recovering the shortfall from the employee is an employment law question; refer it to employment counsel.
-
-#### 4.4 Voluntary Plan Alternative
-
-- **Voluntary Plan (VP).** An employer may apply to EDD for approval of a Voluntary Plan that pays DI and PFL benefits in place of SDI. A VP "must provide all the benefits of SDI, at least one benefit that is better than SDI, and it cannot cost employees more than SDI". The employer must post a security deposit with EDD. Once approved, the employer stops sending SDI withholdings to EDD for the covered employees. The live version of this skill said a VP needs a majority employee vote; DE 44 does not say so, and that statement is removed. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-### 5. Unemployment Insurance (UI)
-
-#### 5.1 Mechanics
-
-- **Employer only.** UI is paid by the employer; nothing is withheld from the employee. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **New employer.** A new employer pays the new employer rate in the first table in section 2 for two to three years. Which it is depends on when the employer meets the criteria in section 982(b) of the California Unemployment Insurance Code. After that the rate is experience rated within the Schedule F+ range. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-- **Buying a business.** A buyer of an established business may keep the previous owner's UI rate, or apply for a transfer of the reserve account on the DE 4453. [DE 231Z](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de231z.pdf)
-- **SUTA dumping.** An employer subject to section 977(c) pays the highest rate provided by law plus an additional 2 percent; refer these cases out. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-- **How experience rating works.** EDD's Information Sheet DE 231Z explains reserve account balances and the rate schedules. [DE 231Z](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de231z.pdf)
-
-**Notice of Contribution Rates (DE 2088).** Each December EDD mails the DE 2088 with the employer's rates for the coming year. DE 44 says the employer "may protest any item on the DE 2088 except Employment Training Tax, which is specifically set by law", within 60 days of the issued date on the notice. EDD's rates page says "except SDI and ETT, which are specifically set by law", and DE 231Z says "except the ETT and SDI rates". [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding) Do not treat the SDI rate as protestable. An extension of up to 60 days may be granted for good cause if it is requested before the protest deadline. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-#### 5.2 FUTA Credit Reduction Interaction
-
-California has an outstanding federal loan, so California employers lose part of the federal unemployment (FUTA) credit. EDD's page prints the position for wages paid in 2025:
-
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://edd.ca.gov/en/payroll_taxes/federal-unemployment-tax-act |
-| Normal federal credit toward the regular federal rate | 5.4% toward 6.0% | "federal law provides employers with a 5.4 percent tax credit toward the 6.0 percent regular tax" ([source](https://edd.ca.gov/en/payroll_taxes/federal-unemployment-tax-act)) |
-| Credit reduction for the 2025 tax year | 1.2% | "this credit will be reduced by 1.2 percent to a 4.2 percent credit for the 2025 tax year" ([source](https://edd.ca.gov/en/payroll_taxes/federal-unemployment-tax-act)) |
-| Credit left for the 2025 tax year | 4.2% | same sentence ([source](https://edd.ca.gov/en/payroll_taxes/federal-unemployment-tax-act)) |
-| Extra federal cost per employee for 2025 | USD 84 | "California employers will pay an extra $84 per employee for the 2025 tax year" ([source](https://edd.ca.gov/en/payroll_taxes/federal-unemployment-tax-act)) |
-
-The 2026 reduction is fixed by the federal government after the year ends; EDD's page only says the credit is expected to be reduced "by an additional 0.3 percent each year" until the loan is repaid. Do not state a 2026 figure until the IRS publishes it. Form 940 is in `us-form-941-940-payroll`. EDD and the IRS also compare Form 940 with DE 9 lines C and D2 each year; an out-of-balance condition can produce an assessment. [EDD FUTA page](https://edd.ca.gov/en/payroll_taxes/federal-unemployment-tax-act)
-
-#### 5.3 Voluntary UI Contribution
-
-The live version of this skill described a voluntary contribution to buy down the UI rate, with a March deadline. No page read for this rewrite states the deadline or the conditions, so the rule is not repeated here. Ask EDD or check DE 231Z before advising on it. [DE 231Z](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de231z.pdf)
-
-### 6. Employment Training Tax (ETT)
-
-- **Rate and base.** ETT is charged at the 2026 ETT rate in the first table in section 2, on the same per-employee wage limit as UI. The DE 44 maximum per employee is in the second table. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **Who pays.** ETT is set by statute and applies to UI taxable wages of employers with positive UI reserve account balances and of employers subject to section 977(c) of the California Unemployment Insurance Code (DE 44, State Payroll Taxes table). An employer with a negative reserve balance that is not subject to section 977(c) does not pay it. The DE 2088 shows whether ETT applies. DE 44 states: "All tax-rated employers, including new employers, are subject to the ETT." It also states: "Employers do not pay the ETT while their accounts have a negative reserve balance, but they must pay a higher rate of Unemployment Insurance (UI) tax." The DE 2088 shows the ETT rate assigned. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **Reporting.** ETT is reported on the DE 9 with UI, SDI and PIT. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-### 7. Quarterly and Annual Filings
-
-#### 7.1 Form DE 9: Quarterly Contribution Return and Report of Wages
-
-- **DE 9 contents.** The DE 9 "reconciles tax and withholding amounts with deposits for the quarter". It carries Total Subject Wages on line C and UI Taxable Wages on line D2, the lines EDD and the IRS compare with Form 940. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-#### 7.2 Form DE 9C: Quarterly Contribution Return and Report of Wages (Continuation)
-
-- **DE 9C contents.** The DE 9C "reports total subject wages and Personal Income Tax (PIT) wages paid and PIT withheld for each employee for the quarter". [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-#### 7.3 Due Dates
-
-The DE 9 and DE 9C have a due date and a later delinquency date. A return is late only if it is not filed by the delinquency date. For 2026:
-
-| Quarter | Due | Delinquent if not filed by |
-| --- | --- | --- |
-| 1st (January, February, March) | April 1, 2026 | April 30, 2026 |
-| 2nd (April, May, June) | July 1, 2026 | July 31, 2026 |
-| 3rd (July, August, September) | October 1, 2026 | November 2, 2026 |
-| 4th (October, November, December) | January 1, 2027 | February 1, 2027 |
-
-Source: [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf), table "Report Quarter Due Delinquent if Not Filed By". The live version of this skill gave the third quarter as October 31 and the fourth quarter as January 31; for 2026 those dates fall on weekends, and EDD prints November 2, 2026 and February 1, 2027.
-
-- **Weekend and holiday rule.** "If the Delinquent if Not Filed By date falls on a Saturday, Sunday, or legal holiday, the Delinquent if Not Filed By date is extended to the next business day." [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-#### 7.4 Filing Method
-
-- **E-file and e-pay mandate.** "All employers are required to electronically submit their employment tax returns, wage reports, and payroll tax deposits to EDD." A paper DE 9 and a paper DE 9C each carry a penalty (amounts in the DE 44 table in section 2), and a paper deposit carries its own penalty (row in the DE 44 table in section 2). An employer may request a waiver for lack of automation, severe economic hardship, a current federal exemption or another good cause; waivers cannot be filed retroactively. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-#### 7.5 Q4 DE 9 and the Annual Reconciliation
-
-- **Reconcile to Form W-2.** The year's DE 9C totals for each employee must agree with Form W-2 Box 16 (California PIT wages), Box 17 (California PIT withheld) and Box 14 (SDI withheld). EDD also compares DE 9 lines C and D2 with the federal Form 940 (section 5.2). [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **Late reports.** If returns are filed late or payments are not made on time, EDD sends a Statement of Account (DE 2176), and an unpaid balance can lead to a state tax lien that becomes public record. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-### 8. Deposit Cadence: DE 88 and e-Services
-
-SDI and PIT deposits follow the employer's federal deposit schedule and the amount of PIT accumulated. UI and ETT are not deposited on this schedule; they are paid quarterly. The thresholds are in the DE 44 table in section 2.
-
-| Federal deposit schedule | PIT accumulated | California PIT and SDI deposit due |
-| --- | --- | --- |
-| Next-day | Less than the quarterly threshold (USD 350) | Quarterly |
-| Next-day | USD 350 to USD 400 | 15th of the following month |
-| Next-day | More than USD 400 | Next business day |
-| Semi-weekly | Less than USD 350 | Quarterly |
-| Semi-weekly | USD 350 to USD 400 | 15th of the following month |
-| Semi-weekly | More than USD 400 (payday Wednesday, Thursday or Friday) | Following Wednesday |
-| Semi-weekly | More than USD 400 (payday Saturday, Sunday, Monday or Tuesday) | Following Friday |
-| Monthly | Less than USD 350 | Quarterly |
-| Monthly | USD 350 or more | 15th of the following month |
-| Quarterly or annually | Less than USD 350 | Quarterly |
-| Quarterly or annually | USD 350 or more | 15th of the following month |
-
-Source: [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf), table "California Deposit Requirements". The live version of this skill used a higher quarterly threshold that EDD does not print; the DE 44 thresholds are USD 350 and USD 400.
-
-- **Notes to the table.** If a due date falls on a Saturday, Sunday or legal holiday it moves to the next business day. Electronic deposits must settle in the state's bank account on or before the third business day after the payroll date. An employer not on any federal schedule still deposits SDI and PIT quarterly or more often under this table. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **UI and ETT.** These are paid by quarter; for 2026 a quarter's UI and ETT payment is delinquent if not paid by April 30, July 31, November 2 (2026) and February 1 (2027). [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-#### 8.1 Penalties for Late Deposits
-
-- **Late payment.** A penalty of 15% plus interest is charged on late payroll tax payments (rate in the DE 44 table in section 2). The interest rate is reset every six months. For electronic payments, timeliness is judged by the settlement date. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **Failure to withhold and send.** Failing to withhold payroll taxes and send them to EDD, "even by mistake, can result in a misdemeanor charge", with a fine and jail term on conviction (fine in the DE 44 table in section 2). [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **Removed.** The live version of this skill cited Revenue and Taxation Code percentage penalties for negligence and fraud and a Franchise Tax Board interest range. Those are not on any EDD page read for this rewrite; confirm any Franchise Tax Board penalty on ftb.ca.gov.
-
-### 9. CalSavers
-
-#### 9.1 Statutory Authority
-
-CalSavers is the state retirement savings program for employers that do not offer a retirement plan. Its official pages (on treasurer.ca.gov) refused our reader with a 403 response for this rewrite, so this skill states no CalSavers deadline, employee threshold, contribution rate or penalty.
-
-#### 9.2 Mandate: Employee Threshold
-
-Not covered (see 9.1). The live version of this skill stated an employee threshold, a deadline and phase dates; they are removed until an official page can be read.
-
-#### 9.3 Employer Obligations
-
-Not covered (see 9.1). Confirm registration, exemption and payroll deduction duties with the CalSavers program directly.
-
-#### 9.4 AUDIT FLASH POINT: CalSavers Mandate Enforcement
-
-Not covered (see 9.1). The live version of this skill stated penalties per employee; they are removed. Ask the employer whether it offers a qualified retirement plan, and if not, refer the CalSavers question.
-
-### 10. Worker Classification (ABC Test)
-
-#### 10.1 Statutory Authority
-
-- **Who is an employee.** An employee includes any worker who is an employee under the ABC test or the Borello test, and any worker whose services are specifically covered by law, such as a corporate officer. Day labor, part-time help, casual labor, temporary help and probationary work are not excluded from employment. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-#### 10.2 The ABC Test
-
-- **All three, or an employee.** A person providing labor or services for pay is an employee, not an independent contractor, unless the hiring entity shows that ALL THREE are satisfied: (A) the person is free from the control and direction of the hiring entity in performing the work, both under the contract and in fact; (B) the person performs work that is outside the usual course of the hiring entity's business; (C) the person is customarily engaged in an independently established trade, occupation or business of the same nature as the work performed. If any one fails, the worker is an employee. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-#### 10.3 Statutory Exemptions
-
-- **Borello instead of ABC.** In specific situations the Borello multi-factor test is used instead of the ABC test. EDD points to Information Sheet DE 231 and the state Employment Status Portal for the exceptions. The live version of this skill listed occupations and a business-to-business test with a count of criteria; no page read for this rewrite prints that list, so it is removed. Test each exception against DE 231 before relying on it. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-#### 10.4 AUDIT FLASH POINT: Misclassification
-
-- **Exposure.** An employer that classified employees as independent contractors "could be liable for back taxes, penalties, and interest". [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **No federal safe harbor.** "California does not provide relief under the Safe Harbor provisions of the Internal Revenue Code." A worker treated as a contractor under federal section 530 relief can still be an employee for California payroll. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- **Wage-and-hour claims.** Unpaid wage, overtime, wage statement and Private Attorneys General Act claims follow a misclassification. The live version of this skill stated penalty amounts and limitation periods for them; those are removed. Refer to employment counsel.
-- **Protocol.** Document the ABC analysis in writing before engaging a contractor. If any prong is doubtful, treat the worker as an employee.
-
-### 11. DE 542: Independent Contractor Reporting
-
-- **Reporting duty.** A business that pays an independent contractor must report the contractor to EDD on the Report of Independent Contractor(s) (DE 542) within 20 calendar days of paying the contractor the threshold amount or more, or entering into a contract for that amount or more, whichever is earlier. The threshold is in the DE 44 table in section 2. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-#### 11.1 Mechanics
-
-- **How.** File online through e-Services for Business. DE 44 sends employers to page 58 of the guide and to the DE 542 for the data required. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-#### 11.2 Purpose
-
-- **Purpose and penalties.** The information helps locate parents who are delinquent in child support. It is not a tax return.
-
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de542faq.pdf |
-| Penalty for each failure to report on time | USD 24 | "The EDD may assess a penalty of $24 for each failure to comply within the required time frames." ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de542faq.pdf)) |
-| Penalty where the failure results from conspiracy between the business and the contractor | USD 490 | "a penalty of $490 may be assessed for the failure to report IC information if the failure is the result of conspiracy" ([source](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de542faq.pdf)) |
-
-#### 11.3 Interaction with Federal 1099-NEC
-
-- **Separate reports.** The DE 542 is a California report and does not replace federal Form 1099-NEC. The 2026 DE 44 still prints the DE 542 threshold in section 2, whatever the federal threshold is. For the federal form, use `us-1099-nec-issuance`. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-#### 11.4 New Hire Reporting (DE 34)
-
-- **Who and when.** Report every newly hired employee on the Report of New Employee(s) (DE 34) within 20 calendar days of the employee's start-of-work date. This includes employees rehired after a separation of at least 60 consecutive days and employees returning from a furlough, separation, leave of absence without pay or termination. Employees kept on after buying a business count as new hires. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- For other states' new hire rules, use `us-state-new-hire-reporting-matrix`.
-
-### 12. Wage Statement Requirements: Labor Code Section 226
-
-- **Every payday.** Under Labor Code Section 226(a), semimonthly or every time wages are paid, whether by check, in cash or otherwise, the employee must receive a detachable part of the check or a separate writing showing the required information. Only the last four digits of the social security number, or an employee identification number other than a social security number, may be shown. [DIR paydays FAQ](https://www.dir.ca.gov/dlse/FAQ_Paydays.htm)
-- **Overtime corrections.** Overtime hours recorded as a correction on the next regular pay period's statement, with the dates of the pay period being corrected, comply with Section 226(a) on total hours worked. [DIR paydays FAQ](https://www.dir.ca.gov/dlse/FAQ_Paydays.htm)
-
-#### 12.1 Section 226(e) Penalties
-
-The live version of this skill stated per-pay-period penalty amounts and an aggregate cap under Section 226(e), and Private Attorneys General Act amounts. The statute site (leginfo.legislature.ca.gov) did not answer for this rewrite and no Labor Commissioner page read prints those amounts, so they are removed. Refer wage statement penalty questions to employment counsel.
-
-### 13. Final Pay
-
-#### 13.1 Timing of Final Wages
-
-- **Discharge or layoff.** An employee who is discharged must be paid all wages, including accrued vacation, immediately at the time of termination (Labor Code Sections 201 and 227.3). [DIR paydays FAQ](https://www.dir.ca.gov/dlse/FAQ_Paydays.htm)
-- **Quit with at least 72 hours' notice.** An employee without a written contract for a definite period who gives at least 72 hours' prior notice and quits on the day given must be paid all wages, including accrued vacation, at the time of quitting (Section 202). [DIR paydays FAQ](https://www.dir.ca.gov/dlse/FAQ_Paydays.htm)
-- **Quit without 72 hours' notice.** The same employee who quits without 72 hours' prior notice must be paid all wages, including accrued vacation, within 72 hours of quitting. The employee may ask for the final payment to be mailed. [DIR paydays FAQ](https://www.dir.ca.gov/dlse/FAQ_Paydays.htm)
-- **Special industries.** Seasonal layoffs in curing, canning or drying perishable fruit, fish or vegetables (72 hours), motion picture production, for an employee whose unusual or uncertain terms of employment require special computation (next regular payday), oil drilling (24 hours, excluding weekends and holidays) and some hiring-hall venue workers under a collective bargaining agreement have their own deadlines. [DIR paydays FAQ](https://www.dir.ca.gov/dlse/FAQ_Paydays.htm)
-- **Direct deposit.** Final wages may be paid by direct deposit only if the employee has voluntarily authorized it and the employer complies with Labor Code Section 213(d). [DIR paydays FAQ](https://www.dir.ca.gov/dlse/FAQ_Paydays.htm)
-
-#### 13.2 PTO and Vacation Payout
-
-- **Vacation is wages.** Vacation pay accrues as it is earned and cannot be forfeited, even on termination, whatever the reason (Suastez v. Plastic Dress Up). An employer may place a reasonable cap that stops further accrual (Boothby v. Atlas Mechanical). Unless a collective bargaining agreement provides otherwise, all earned and unused vacation is paid at termination at the employee's final rate of pay (Labor Code Section 227.3). [DIR vacation FAQ](https://www.dir.ca.gov/dlse/FAQ_Vacation.htm)
-- **Sick leave.** The live version of this skill stated a rule on paying out sick leave and combined PTO banks; no page read for this rewrite covers it, so it is removed. Check the Labor Commissioner's paid sick leave FAQ before advising.
-
-#### 13.3 AUDIT FLASH POINT: Waiting Time Penalty Under Section 203
-
-- **When it applies.** The penalty applies when an employer willfully fails to pay any wages due under Sections 201, 201.5, 202 or 202.5 to an employee who quits or is discharged. Willful does not require intent or blame; it means the employer knows what it is doing. A good faith dispute that any wages are due prevents the penalty. [DIR waiting time FAQ](https://www.dir.ca.gov/dlse/FAQ_WaitingTimePenalty.htm)
-- **How much.** The penalty is the employee's daily rate of pay times the number of days the wages are unpaid, up to a maximum of 30 days. The 30 days are calendar days, including weekends and holidays. [DIR waiting time FAQ](https://www.dir.ca.gov/dlse/FAQ_WaitingTimePenalty.htm)
-- **What counts as wages.** Unpaid accrued vacation counts. Business expense reimbursements are not wages, so paying them late does not trigger the waiting time penalty. The live version of this skill told employers to include expense reimbursements to avoid the penalty; that is wrong for Section 203, though reimbursements are still owed. [DIR waiting time FAQ](https://www.dir.ca.gov/dlse/FAQ_WaitingTimePenalty.htm)
-- **Removed.** The live version of this skill said the penalty is reported on Form 1099-MISC and stated a limitation period; no page read for this rewrite supports either, so both are removed.
-- **Mitigation.** Prepare the final check, including accrued vacation, before the termination meeting.
-
-#### 13.4 Tips and the Minimum Wage
-
-- **No tip credit.** It is illegal for employers to make deductions from gratuities, or to use gratuities "as direct or indirect credits against an employee's wages". Tipped employees receive at least the full minimum wage plus their tips. Tips belong to the employee. A tip paid by credit card must reach the employee no later than the next regular payday after the patron authorized the payment (Labor Code Section 351). [DIR tips FAQ](https://www.dir.ca.gov/dlse/FAQ_TipsAndGratuities.htm)
-- **Tips as wages for payroll tax.** Cash tips the employee receives while working and includes in a written statement to the employer are subject to UI and ETT, SDI and PIT withholding, and reportable as PIT wages, if they total USD 20 or more in a month. Noncash tips are not subject. [DE 231TP](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de231tp.pdf)
-
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://www.dir.ca.gov/dlse/faq_minimumwage.htm |
-| State minimum wage from January 1, 2026, all employers | USD 16.90 per hour | "Effective January 1, 2026, the minimum wage is $16.90 per hour for all employers, not otherwise covered by a higher minimum wage specific to an industry or a locality." ([source](https://www.dir.ca.gov/dlse/faq_minimumwage.htm)) |
-
-A higher minimum wage applies to fast food and health care workers and in many cities. Check the local ordinance for the work location.
-
-### 14. Other Employer Obligations
-
-#### 14.1 Workers' Compensation: Mandatory
-
-- **Required by law.** "If you have any employees, you are required by law to have workers' compensation insurance. Failure to do so is a crime and may result in penalties and closure of your business." [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-- The live version of this skill stated criminal and per-employee penalty amounts and class code premium rates; they are removed because no page read for this rewrite prints them. Refer premium questions to the insurer and the Division of Workers' Compensation.
-
-#### 14.2 Local Taxes: San Francisco
-
-San Francisco business taxes are administered by the city, outside EDD. No allowed host covers them, so this skill states no rates or thresholds. Refer to the San Francisco Office of the Treasurer and Tax Collector.
-
-#### 14.3 Local Taxes: Los Angeles
-
-The Los Angeles City business tax is administered by the city's Office of Finance. No allowed host covers it, so this skill states no rates or exemptions. Refer out.
-
-#### 14.4 Other Local Payroll Surcharges
-
-Some cities (for example San Jose, Oakland, Berkeley, San Diego) levy business taxes or license taxes. Confirm the employer's city and read the city ordinance; this skill does not cover them.
+Workers' compensation must be secured through authorized insurance or approved self-insurance; do not say every employer must buy an insurance policy regardless of its self-insurance approval. Check coverage for the actual employees/work location. Premium/class-code estimates and coverage disputes: check this point with one of our partner accountants and the insurer. [Labor Code 3700](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3700.&lawCode=LAB).
 
 ## Boundary and exception table
 
-| Situation | Treatment |
+| Situation | Action |
 | --- | --- |
-| Bonus paid in the same check as regular wages | Add it to the regular wages and withhold under the schedules; the flat 10.23% or 6.6% is not available |
-| Bonus paid separately | Choose Option 1 (aggregate) or Option 2 (flat rate) |
-| Employee's wages pass USD 7,000 in the year | No more UI or ETT on that employee for the rest of the calendar year; SDI continues on every dollar |
-| No DE 4 on file | Withhold as single with zero allowances, not from the federal W-4 |
-| Negative UI reserve balance, not subject to section 977(c) | No ETT, but a higher UI rate |
-| Cash tips of USD 20 or more a month in a written statement | Subject to UI, ETT, SDI and PIT withholding; noncash tips are not |
-| HSA contributions | Subject to all four California payroll taxes, unlike federal |
-| Worker fails any ABC prong | Employee for California payroll, even with federal section 530 relief |
-| DE 9 delinquency date on a weekend or holiday | Moves to the next business day |
-
-### Defaults when a fact is missing
-
-| Ambiguity | Conservative default |
-| --- | --- |
-| Contractor or employee under the ABC test | Employee unless all three prongs clearly pass |
-| No DE 4 on file | Withhold as single with zero allowances |
-| SDI cap question | No cap since 2024 |
-| Bonus paid with regular wages | Aggregate with regular wages; the flat rate is not available |
-| Bonus paid separately | Option 1 (aggregate) for high earners; Option 2 flat rate only where under-withholding is not a concern |
-| Whether ETT applies | New employers are subject to ETT (DE 44); read the DE 2088 for the rate |
-| DE 9 date | File by the due date; the delinquency date is the last timely day |
-| Final pay on discharge | Pay all wages and accrued vacation at the termination meeting |
-| Disputed tips | Use the employee's written tip statement |
-| CalSavers, city taxes, wage statement penalties | Refer out (not covered) |
-
-When facts are ambiguous, apply the conservative default and disclose it.
-
-### Cross-guide coordination
-
-- `us-form-941-940-payroll`: federal Forms 941 and 940, federal income tax withholding, social security and Medicare deposits (a named accountant maintains it; this skill links to it and stops).
-- `us-state-payroll-matrix`: other states' payroll taxes (link only).
-- `us-state-new-hire-reporting-matrix`: new hire reporting in other states.
-- `ca-540-individual-return`: the employee's California return, where Form W-2 Box 17 withholding is claimed.
-- `ca-estimated-tax-540es`: employees under-withheld on supplemental wages (section 3.5).
-- `us-s-corp-election-decision`: owners modelling salary through an S corporation need the California employer cost (UI, ETT) and employee SDI.
-- `ca-llc-fee-and-tax`: LLC owners who are not employees are not on this payroll.
-- `us-1099-nec-issuance`: the federal contractor form that sits beside the DE 542.
-- `us-equity-compensation-restricted-stock-units-and`: federal equity compensation.
-- `us-ca-return-assembly`: the California return package for sole proprietors.
+| Missing input, disputed contractor status, doubtful exemption or wage base | Hold the calculation; obtain facts or refer. Do not substitute an unsupported “conservative” legal answer |
+| Separate bonus versus bonus with salary | Apply the two distinct rules above; classification of the payment comes before the rate |
+| UI/ETT annual base exhausted | Stop those contributions on subsequent wages; state-plan SDI continues on all SDI-subject wages |
+| Approved Voluntary Plan or special employer | Hold the ordinary state-plan calculation; check with one of our partner accountants |
+| Different year | Use that year's source; historical inputs below are not relabelled 2026 |
 
 ## Worked cases
 
-All three examples are hypothetical. The people and amounts are invented; the rates are the 2026 rates in the tables above. Arithmetic is shown so it can be checked.
+All people and businesses in these cases are hypothetical. No case is a taxpayer declaration. Round computed withholding to cents. The federal side is outside the California-only net amounts.
 
-### Worked Example: Monthly Salaried Employee, Gross to Net
+### Ana: monthly salary, January 2026
 
-**Facts (hypothetical):** Ana is single, claims 1 allowance on her DE 4 and no estimated deduction allowances, and is paid monthly. Her gross pay for January 2026 is USD 6,000.00. Her employer is a new employer and its DE 2088 shows ETT applies. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-
-California PIT withholding, Method B, monthly, single:
-
-1. Gross USD 6,000.00 is more than the low income exemption of USD 1,575, so PIT is withheld. [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)
-2. No estimated deduction allowances, so nothing is subtracted at step 2. [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)
-3. Taxable income: USD 6,000.00 minus the standard deduction USD 476 = USD 5,524.00. [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)
-4. Taxable income of USD 5,524.00 is over USD 4,796 and not over USD 6,060: 8.800% of (USD 5,524.00 minus USD 4,796) plus USD 182.24 = USD 246.30. [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)
-5. Minus the exemption allowance credit for 1 allowance, USD 14.03: PIT withheld = USD 232.27. [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)
-
-Other deductions from Ana's pay:
-
-6. SDI: USD 6,000.00 times 1.3% = USD 78.00. No ceiling applies. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-7. Federal social security, Medicare and federal income tax withholding: compute them under `us-form-941-940-payroll`.
-8. Pay after California deductions only: USD 6,000.00 minus USD 232.27 and USD 78.00 = USD 5,689.73. [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)
-
-Employer cost on top of gross pay (California only):
-
-9. UI in January: USD 6,000.00 times 3.4% = USD 204.00. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-10. ETT in January: USD 6,000.00 times 0.1% = USD 6.00. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-11. In February only USD 1,000.00 of UI wage base is left (USD 7,000 minus USD 6,000.00), so UI is USD 34.00 and ETT is USD 1.00. From March, no UI or ETT is due on Ana's wages for the rest of 2026. Her year's UI is USD 238.00 and ETT USD 7.00, which matches the ETT maximum in DE 44. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-
-Filing: PIT and SDI go on the DE 88 under the deposit schedule in section 8; UI and ETT are paid by quarter; all four are reported on the first quarter DE 9 and DE 9C, delinquent if not filed by April 30, 2026. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
+Preserved inputs: single, **one regular DE 4 allowance**, no additional deduction allowances, monthly **USD 6,000**; new employer with ETT applicable. Method B gives taxable wages **6,000 − 476 = 5,524**; Table 20 band **over 4,796 through 6,060** gives **182.24 + (5,524 − 4,796) × 8.8% = 246.30**, less **14.03** = **PIT 232.27**. SDI **78.00**; pay after California deductions **5,689.73**. January employer UI **204.00**, ETT **6.00**; February remaining base **1,000**, UI **34.00**, ETT **1.00**; no more UI/ETT for Ana that year after the base is used. Annual UI **238**, ETT **7**. [2026 Method B Tables 1, 3, 4, 20](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf); [DE 44 p.8](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=16).
 
 ```oa-check
 name: CA payroll 2026, monthly single employee, Method B and employer UI and ETT
@@ -591,31 +174,33 @@ expected:
   ett_year: 7.00
 ```
 
-### Worked Example: Tipped Server, First Quarter
+### Ben: tipped server, Q1 2026
 
-**Facts (hypothetical):** Ben is a server in a city with no local minimum wage above the state rate. He works 480 hours in the first quarter of 2026 at the state minimum wage of USD 16.90 per hour. He reports USD 9,000.00 of cash tips in written monthly statements, more than USD 20 in each month. The employer is a new employer and its DE 2088 shows ETT applies. [DIR minimum wage FAQ](https://www.dir.ca.gov/dlse/faq_minimumwage.htm)
+Preserved inputs: **480 hours**, **USD 16.90/hour**, **USD 9,000 cash tips** in written monthly statements, each month over **USD 20**; no higher local/industry minimum applies; new employer with ETT applicable. Direct wages **8,112**, subject wages **17,112**, SDI **222.46**, UI **238**, ETT **7**. Do not invent PIT or full net pay without the payroll dates/period and DE 4. Ben's direct wages already exceed the UI base; the old assertion that this case proves tips alone make him reach the cap is incorrect. [DIR minimum wage](https://www.dir.ca.gov/dlse/faq_minimumwage.htm); [DE 231TP p.15](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de231tp.pdf#page=15); [DE 44 p.8](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=16).
 
-1. Hourly pay: 480 hours times USD 16.90 = USD 8,112.00. No tip credit may be taken. [DIR minimum wage FAQ](https://www.dir.ca.gov/dlse/faq_minimumwage.htm)
-2. Reported cash tips of USD 9,000.00 are subject to UI, ETT, SDI and PIT withholding. Subject wages: USD 8,112.00 plus USD 9,000.00 = USD 17,112.00. [DE 231TP](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de231tp.pdf)
-3. SDI: USD 17,112.00 times 1.3% = USD 222.46. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-4. UI: only the first USD 7,000 of the year's wages is taxed, so UI is USD 7,000 times 3.4% = USD 238.00, all in the first quarter. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-5. ETT: USD 7,000 times 0.1% = USD 7.00. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-6. PIT: withhold under the schedules for Ben's actual payroll period and DE 4. The employer can only withhold from wages it controls; tips reported in cash increase the wages on which PIT is figured. [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf)
+```oa-check
+name: CA payroll 2026, tipped server
+inputs:
+  hours: 480
+  hourly: 16.90
+  tips: 9000
+steps:
+  - direct: hours * hourly
+  - wages: direct + tips
+  - sdi: round(wages * 0.013, 2)
+  - ui: min(wages, 7000) * 0.034
+  - ett: min(wages, 7000) * 0.001
+expected:
+  direct: 8112
+  wages: 17112
+  sdi: 222.46
+  ui: 238
+  ett: 7
+```
 
-Payroll software that leaves reported tips out of the UI base understates UI for employees whose hourly pay alone would not reach the limit in the quarter.
+### Ana: separate March 2026 bonus
 
-### Worked Example: Bonus Paid Separately
-
-**Facts (hypothetical):** Ana (example 15.1) receives a USD 10,000.00 bonus in a separate payment in March 2026, not with her regular wages. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-1. Option 2, flat rate: PIT = USD 10,000.00 times 10.23% = USD 1,023.00, without allowing for withholding allowances. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-2. SDI: USD 10,000.00 times 1.3% = USD 130.00. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-3. UI and ETT: none, because Ana's 2026 wages already passed the UI and ETT wage limit in February. [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding)
-4. If the same bonus were paid in the same check as her March salary, the flat rate could not be used: the employer adds it to the regular wages and withholds under the monthly schedule. [DE 44](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf)
-
-For restricted stock units and other equity paid through payroll, the federal side is in `us-equity-compensation-restricted-stock-units-and`; the California treatment of options is in DE 231SK.
-
-**The decision: flat rate or aggregate?** Option 1 (aggregate) treats the month as USD 16,000 of wages: taxable USD 15,524 falls in the band over USD 6,060 (10.23% of the excess plus USD 293.47), less the USD 14.03 credit, gives USD 1,247.61; minus the USD 232.27 already withheld on salary leaves USD 1,015.34 on the bonus. Option 2 withholds USD 1,023.00. The two are close for Ana; Option 1 matters for high earners whose annual rate is above 10.23%, where it withholds more and avoids a balance due on the return.
+Preserved inputs: same monthly **USD 6,000** salary and allowances; separate **USD 10,000** March bonus, UI/ETT base already exhausted in February. Flat PIT **1,023**, SDI **130**, UI/ETT **zero**. Aggregate alternative: combined taxable wages **15,524**, Table 20 band **over 6,060 through 30,956**; PIT on the combined amount **1,247.61**, less salary PIT **232.27**, leaves bonus PIT **1,015.34**. Flat exceeds aggregate here by **7.66**. Neither method guarantees the employee's final tax. If bonus and salary are paid together, use aggregate withholding. [DE 44 p.18](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf#page=26); [2026 Method B Table 20](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf#page=9).
 
 ```oa-check
 name: CA payroll 2026, separate bonus, flat rate against aggregate method
@@ -642,59 +227,65 @@ expected:
   sdi_bonus: 130.00
 ```
 
+### Original 2025 inputs retained on a non-usable hold
+
+**Do not use these historical cases to calculate, file, claim an exemption or quote a liability.** Their earlier PIT estimates, net/remittance totals, federal/equity assumptions, CalSavers conclusions and insurance estimates are withdrawn. Check each point with one of our partner accountants. The original facts remain available for a proper year-specific calculation. The original CalSavers exposure illustrations for **5 and 50 employees** are also on hold; do not use the withdrawn penalty amounts:
+
+- **Acme Consulting LLC**, Mountain View, single-member LLC with no S election: five W-2 employees from **1 January 2025**; annual salaries/filing status/DE 4 allowances: **Ada (CEO) 250,000 / MFJ / 2; Ben (Senior Dev) 180,000 / single / 1; Carol (Dev) 120,000 / HOH / 2; Dan (Designer) 90,000 / single / 1; Eve (Office Mgr) 60,000 / MFJ / 3**. Corresponding stipulated Q1 wages **62,500; 45,000; 30,000; 22,500; 15,000**. No bonuses/equity; founder-only Solo 401(k), no employee retirement plan; federal monthly deposit schedule assumed from prior-year aggregate below **50,000**. These are historical case assumptions, not findings that such a plan or schedule was lawful. Hold CalSavers, owner-plan eligibility and insurance/class-code costing.
+- **Bella's Bistro LLC**, Sacramento, Q1 **2025**: ten W-2 staff (**4 servers, 2 cooks, 1 dishwasher, 2 bartenders, 1 salaried manager**). **Sarah**, single with **one allowance**, works **480 hours at USD 16.50**, reports **USD 5,000 cash tips** and receives **USD 4,000 credit-card tips**; direct pay **7,920**, combined amount **16,920**. The original automatic **20% service charge for parties of six or more**, tip-pool and exempt-manager assumptions need separate review. No historical PIT approximation or penalty is usable.
+- **Crescent Robotics Inc.**, Delaware C corporation registered in California with sole headquarters in San Francisco: **Frank USD 250,000 annual salary**, **8 engineers at USD 200,000–400,000**, all receiving RSU grants vesting quarterly; Q1 **2025** Frank cliff-vest **USD 400,000 FMV** from a **2021 grant**, engineers' vests **USD 2,800,000**, aggregate base salaries **USD 625,000**; original projection assumes **four** Frank vests of that amount and a **401(k) with company match**. Hold RSU tax timing/category, federal deductions, annual personal-tax exposure, CalSavers exemption/attestation and wage-statement treatment; do not apply a stock-option rate to every RSU.
+
+The earlier inline SDI illustration is preserved separately: **USD 5 million of stipulated SDI-subject 2025 wages × 1.2% = USD 60,000**; the 2023 maximum comparison is **153,164 × 0.9% = 1,378.48**. This is a comparison of different years, not a claim that the employee's facts were identical or an employer expense. [DE 3395](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de3395.pdf).
+
 ## When to refuse or refer
 
-- Multistate employees, reciprocal coverage elections and nonresident withholding: refer to a payroll professional; see `us-state-payroll-matrix`.
-- Federal payroll returns and federal income tax withholding: `us-form-941-940-payroll`.
-- Misclassification disputes, Private Attorneys General Act claims, wage statement penalties and waiting time claims already filed: refer to employment counsel.
-- CalSavers questions: refer (no official page could be read for this skill).
-- City business taxes (San Francisco, Los Angeles and others): refer to the city or a local practitioner.
-- Voluntary Plan applications, reserve account transfers and section 977(c) cases: refer to EDD or a payroll specialist.
-- Annual California income tax brackets and Franchise Tax Board penalties: confirm on ftb.ca.gov; this skill does not state them.
+Each hold below means **do not use an earlier rate, deadline, exclusion or legal conclusion**. Check this point with one of our partner accountants; obtain employment counsel for a legal dispute.
+
+- CalSavers: mandate, employer/employee thresholds, phase dates, eligibility/exemptions, contribution/escalation rates, census/remittance duties and enforcement. The historical Acme/Crescent cases do not establish compliance.
+- Voluntary SDI/PFL plans (approval, employee consent, benefits, contributions, security), elective coverage, PFL benefit amounts and recovery of an employee withholding shortfall.
+- Successor reserve transfers, SUTA dumping/UIC 977(c), voluntary UI contribution eligibility/deadlines and contested DE 2088 items.
+- ABC/Borello exceptions, business-to-business/professional/freelancer cases, disputed employee status, wage-statement or PAGA damages, limitation periods, workers' compensation penalties/premiums, and wage/commission/bonus disputes.
+- Special final-pay industries, including seasonal perishable foods, film, oil drilling and hiring-hall arrangements; vacation accrual caps, sick leave/combined PTO, and penalty tax reporting.
+- San Francisco, Los Angeles and other local business/payroll taxes, city thresholds, exemptions and filing dates; use the actual work location for local wage questions.
+- Multistate/nonresident/cross-border payroll and reciprocal elections (`us-state-payroll-matrix`); other-state new hires (`us-state-new-hire-reporting-matrix`); federal payroll and returns (`us-form-941-940-payroll`); federal contractor reporting (`us-1099-nec-issuance`).
+- Public/reimbursable, agricultural, household or cannabis-specific employment, garnishments/child support, retirement/ERISA, visas/totalization, equity/83(b)/409A (`us-equity-compensation-restricted-stock-units-and`), and FTB DE 4 copy/exemption requirements or personal-return penalties. Use `us-s-corp-election-decision`, `ca-llc-fee-and-tax` and `us-ca-return-assembly` for their separate owner/entity/return jobs; a route is not a determination that an owner is or is not an employee.
 
 ## Filing and payment
 
-For 2026: register on the DE 1 within 15 days of paying more than USD 100 in a quarter; file everything through e-Services for Business (e-file and e-pay mandate). PIT and SDI are deposited on the DE 88 on the employer's deposit schedule (section 8). UI and ETT are paid by quarter. The DE 9 and DE 9C are delinquent if not filed by **30 April 2026**, **31 July 2026**, **2 November 2026** and **1 February 2027**. New hires go on the DE 34 and contractors on the DE 542 within 20 days. Source: [DE 44 (2026)](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf).
+Use the reporting/deposit tables above and keep filing separate from payment. Do not wait for quarterly filing when PIT/SDI deposits are due more often. For 2026 FUTA, EDD now states a **1.5 percentage-point reduction** of the normal **5.4% credit against 6.0%**, leaving **3.9% credit**; the incremental cost is **USD 105** on a full **USD 7,000** FUTA base. This replaces the old “2026 not set until after year end” text. Complete Form 940 and the federal credit computation in the federal payroll Guide; California UI taxable wages are not a substitute for checking the federal base/exclusions. [EDD FUTA 2026](https://edd.ca.gov/en/payroll_taxes/federal-unemployment-tax-act).
 
 ## Completion checklist
 
-- [ ] UI and ETT rates taken from the employer's current DE 2088 (new employer 3.4% UI).
-- [ ] SDI at 1.3% on all wages, with no cap configured in the payroll system.
-- [ ] UI and ETT stopped at USD 7,000 per employee, restarting each 1 January.
-- [ ] Every employee has a signed DE 4; supplemental wages withheld under the right option.
-- [ ] Tips, HSA contributions and other pay codes checked against DE 231TP.
-- [ ] DE 34 and DE 542 filed within 20 days; contractors tested under the ABC test.
-- [ ] DE 9 and DE 9C filed by the delinquency date; DE 9C totals reconciled to W-2 Boxes 14, 16 and 17 and DE 9 to Form 940.
-- [ ] Final pay timed under the Labor Code; accrued vacation included.
+- [ ] Verify employer category, state-plan/VP coverage, DE 2088 rates and the correct year's source.
+- [ ] Recompute subject wages for each tax, PIT method/allowances, SDI and remaining UI/ETT bases.
+- [ ] Apply contractor/new-hire scope and reporting deadlines; hold unresolved classification cases.
+- [ ] Submit both quarterly reports, required deposits and separate balances; retain confirmations and verify EFT settlement.
+- [ ] Reconcile DE 9/DE 9C, payroll registers, W-2 and Form 940; use the actual correction instructions.
+- [ ] Review wage statements, local/industry wage requirements, termination and vacation facts; escalate held topics.
 
-### Reviewer responsibility
-
-This skill is a content reference for credentialed payroll and tax professionals. It is NOT tax advice to the taxpayer. Under Treasury Department Circular 230 §10.33 and §10.37, any written advice based on this skill's output must be reviewed by a credentialed reviewer (Enrolled Agent, CPA, or attorney), or for purely state-payroll matters an experienced payroll practitioner with California-specific competence, before delivery to the client or filing with EDD, the Franchise Tax Board, or any other authority.
-
-Misapplication risk is high in three areas:
-
-1. **ABC test classification.** When in doubt, treat the worker as an employee.
-2. **SDI with no wage ceiling.** Payroll configuration drift continues to produce errors in prior-period reviews.
-3. **Supplemental wages.** The flat rate applies only to separate payments and does not match the employee's tax.
-
-A taxpayer or employer relying on this skill without credentialed review proceeds at their own risk.
+**Reviewer responsibility.** This is a professional reference. For written advice on federal tax matters, apply the facts-and-law requirements in [Circular 230 §10.37](https://www.irs.gov/pub/irs-pdf/pcir230.pdf#page=26); it does not replace the reviewer's judgment or an engagement. This Guide's workflow requires competent payroll/tax review before advice or filing. Do not describe that internal review requirement as a separate federal licensing rule for every California payroll calculation.
 
 ## Sources
 
-| Source | URL | Read on |
+Read on **2026-11-27**. Page numbers below are printed page numbers unless marked PDF page. Official PDFs were read in memory; a successful download alone was not treated as a read. Legislature pages were read in the ordinary browser after direct-reader failures.
+
+| Official source | Portions actually read | Read date |
 | --- | --- | --- |
-| EDD: Contribution rates, withholding schedules, and meals and lodging values. Read for 2026 UI 3.4% new employer, Schedule F+ 1.5% to 6.2%, USD 7,000, ETT 0.1%, SDI 1.3%, no SDI limit, and the 2027 rates (SDI 1.4%). | https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding | 2026-11-13 |
-| EDD: California Employer's Guide 2026 (DE 44). Read for the State Payroll Taxes table (USD 434, USD 7, 1.3%), flat supplemental rates 10.23% and 6.6%, deposit thresholds USD 350 and USD 400, the 2026 DE 9 due and delinquency dates, DE 1 USD 100, DE 542 USD 600 and the 15% penalty. | https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf | 2026-11-13 |
-| EDD: 2026 Method B withholding schedules. Read for monthly Tables 1, 3, 4 (USD 1,575, USD 476, USD 14.03) and the monthly single rate table (USD 924 to USD 83,334 bands). | https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf | 2026-11-13 |
-| EDD: DE 542 FAQ. Read for the USD 24 and USD 490 penalties. | https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de542faq.pdf | 2026-11-13 |
-| EDD: Federal Unemployment Tax Act. Read for the 2025 credit reduction of 1.2% (USD 84 per employee) and the expected 0.3% a year. | https://edd.ca.gov/en/payroll_taxes/federal-unemployment-tax-act | 2026-11-13 |
-| DIR Labor Commissioner: Minimum wage FAQ. Read for USD 16.90 from 1 January 2026. | https://www.dir.ca.gov/dlse/faq_minimumwage.htm | 2026-11-13 |
-| EDD: DE 3395 (rate and wage limit history). Read on the earlier pass. | https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de3395.pdf | 2026-10-03 |
-| EDD: Information sheets DE 231TP (types of payments), DE 231SK (stock options), DE 231Z (experience rating). Read on the earlier pass. | https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de231tp.pdf | 2026-10-03 |
-| DIR Labor Commissioner: Paydays, waiting time penalty, vacation, and tips FAQs. Read on the earlier pass. | https://www.dir.ca.gov/dlse/FAQ_Paydays.htm | 2026-10-03 |
+| [2026 California Employer's Guide, DE 44 Rev.52 (4-26)](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44.pdf) | Read for pp.6–8 employer/classification/taxes; p.18 supplemental wages; pp.52–53 e-filing; pp.56,58 reporting; pp.60–65 deposits/returns; p.67 corrections; pp.70–71 W-2; pp.77–78 rates/protests | 2026-11-27 |
+| [2026 Method B](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf) | Read for pp.1–6 instructions/allowances; p.7 annual bands; p.9 monthly Table 20 and neighbouring headings | 2026-11-27 |
+| [DE 3395 Rev.69 (1-26)](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de3395.pdf) | Read for 2023–2026 UI/SDI/ETT rows and no-cap footnote | 2026-11-27 |
+| [DE 231TP](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de231tp.pdf) | Read for pp.7,15–16 HSA, tip categories, related footnotes | 2026-11-27 |
+| [DE 231Z](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de231z.pdf#page=2) | Read for p.2 DE 2088 notification, non-protestable statutory rates and ETT exclusions | 2026-11-27 |
+| [EDD rates and withholding](https://edd.ca.gov/en/Payroll_Taxes/Rates_and_Withholding) | Read for Year headings, DE 2088, W-4/DE 4 and pre-2020 exception | 2026-11-27 |
+| [EDD required filings](https://edd.ca.gov/en/payroll_taxes/required_filings_and_due_dates/) | Read for DE 9, DE 9C, DE 88, no-wage quarters and submission requirements | 2026-11-27 |
+| [EDD deposit requirements](https://edd.ca.gov/en/payroll_taxes/timely_payroll_tax_deposits/) | Read for Complete 2026 deposit table | 2026-11-27 |
+| [EDD 2026 calendar](https://edd.ca.gov/en/payroll_taxes/Due_Dates_Calendar/) | Read for Quarterly dates and weekend/holiday rule | 2026-11-27 |
+| [EDD FUTA](https://edd.ca.gov/en/payroll_taxes/federal-unemployment-tax-act) | Read for Wages paid in 2026, credit reduction and Form 940 reconciliation | 2026-11-27 |
+| [DIR minimum wage](https://www.dir.ca.gov/dlse/faq_minimumwage.htm) | Read for 2026 USD 16.90, higher industry/local rates and exemptions | 2026-11-27 |
+| [DIR waiting-time FAQ](https://www.dir.ca.gov/dlse/FAQ_WaitingTimePenalty.htm) | Read for Willfulness/good faith, daily rate, calendar-day cap, stopping accrual, expenses/vacation | 2026-11-27 |
+| [California Unemployment Insurance Code](https://leginfo.legislature.ca.gov/faces/codes.xhtml) | Read for Sections 675, 926–927, 930, 976, 976.6, 976.8, 982, 984–985, 1086, 1088, 1088.5, 1088.8, 1110, 1112, 13021, 13043; exact section links accompany the rules | 2026-11-27 |
+| [California Revenue and Taxation Code](https://leginfo.legislature.ca.gov/faces/codes.xhtml) | Read for Sections 17131.4, 17131.5, 18663, operative HSA/supplemental rules | 2026-11-27 |
+| [IRS Circular 230](https://www.irs.gov/pub/irs-pdf/pcir230.pdf#page=26) | Read for Section 10.37, federal written advice; internal payroll-review policy distinguished | 2026-11-27 |
+| [California Labor Code](https://leginfo.legislature.ca.gov/faces/codes.xhtml) | Read for Sections 201–203, 213, 226, 227.3, 351, 1182.12(c), 2775, 3700; exact section links accompany the rules | 2026-11-27 |
 
-Provenance:
-
-Rates, wage limits, schedules, due dates and penalties above are taken from the EDD and Labor Commissioner pages listed in Sources, read on 3 October 2026. The 2026 DE 44 is revision 52. The Franchise Tax Board site (ftb.ca.gov) and the statute site (leginfo.legislature.ca.gov) could not be read for this rewrite; nothing here relies on them, and any figure only they print is labelled "confirm on ftb.ca.gov" or removed.
-
-Not yet confirmed: the FUTA credit reduction for 2026 (set by the federal government after the year ends); CalSavers thresholds and deadlines (official pages refused our reader); Labor Code 226(e) and PAGA penalty amounts; voluntary UI contribution deadlines; city business taxes.
+**Not yet confirmed for usable guidance:** all topics explicitly held under When to refuse or refer, including the three historical 2025 cases' withdrawn conclusions. Annual personal-income-tax brackets are not payroll withholding tables; do not resurrect the earlier annual-return bracket table or 2027 payroll figures for 2026.
