@@ -1,11 +1,11 @@
 ---
 name: china-to-singapore-relocation-tax
-description: "Use this skill for a Chinese citizen or long-term China resident moving to Singapore in tax year 2026. China taxes by domicile (household registration, family, economic interests), not by days abroad, so a mover who keeps hukou, family and business in China stays worldwide-taxable; CRS data now reaches Chinese bureaus. It covers the domicile test, what China keeps taxing after a real exit (dividends 20% domestic, 10% under the China-Singapore treaty for individuals; property and equity gains; indirect transfers under Bulletin 7), the USD 50,000 a year foreign exchange quota, and the Singapore side (resident rates to 24%, overseas income generally not taxed, 60% ABSD for foreigners). Built from the law, not reviewed by an accountant."
-version: "2.0"
+description: "Use this skill for a Chinese citizen or long-term China resident moving to Singapore in 2026. Covers domestic and treaty residence, CRS reporting, Chinese dividends (20% domestic, 10% treaty cap for eligible individuals), China-source property and equity gains, the USD 50,000 annual simplified currency-conversion allowance, and Singapore income tax and property stamp duty. Built from the law, not reviewed by an accountant."
+version: "2.1"
 jurisdiction: CN
 tax_year: 2026
 tax_year_notes: "China calendar tax year 2026; Singapore Year of Assessment 2027 (income of calendar 2026). Singapore rates are those IRAS shows as current."
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tier: 2
@@ -13,15 +13,13 @@ domain: cross-border
 type: situation-rules
 ---
 
-# China to Singapore: domicile, the CRS reckoning, and a clean landing
+# China to Singapore: tax residence, investments and reporting
 
 > **General reference only.** Built from the law, not reviewed by an accountant. Do not file, pay or take a tax position on it without review by qualified professionals in China and Singapore.
 
 ## Who this applies to
 
-**Why this corridor needs a guide.** China is a leading origin country for relocating wealthy individuals, and Singapore is a common destination for founders and families who want proximity, schooling and a hard-currency financial system. The corridor's tax content is asymmetric: **Singapore's side is simple; China's side is the opposite of what most movers assume.** The popular belief ("I live in Singapore now, so China can't tax me") confuses *residence* with **domicile**, and the gap between what Chinese law says and what was historically enforced is closing: tax bureaus can now use **CRS data** on offshore accounts. This guide is about leaving properly, not just leaving.
-
-**Who it's for.** Chinese-tax-connected individuals (citizens and long-term residents) moving to Singapore in 2026, and their advisers on both ends. Enforcement practice in China varies by bureau and is evolving: the legal architecture below is stable, but treat enforcement descriptions as a direction of travel, not a guarantee either way.
+**Who it's for.** Chinese-tax-connected individuals (citizens and long-term residents) moving to Singapore in 2026, and their advisers. A move can change domestic and treaty residence on different dates. Keep records of the facts that determine each and check the rules for each source of income.
 
 Not covered here: inbound foreigners moving to China (`cn-iit`, `cn-cross-border`), Hong Kong (`hong-kong` pack), the full Chinese computation (`cn-iit`) and company-level withholding (`cn-withholding`).
 
@@ -30,97 +28,86 @@ Not covered here: inbound foreigners moving to China (`cn-iit`, `cn-cross-border
 | Item | Figure | Conditions | Source |
 | --- | --- | --- | --- |
 | China residence by days | 183 days | A person without domicile in China is resident if present 183 days or more in the tax year (IIT Law art. 1) | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html |
-| China IIT on dividends, interest, property transfer gains, rental | 20% | Flat rate (IIT Law art. 3(3)); applies to residents and, on China-source income, non-residents | same |
+| China IIT on dividends, interest, property transfer gains, rental | 20% | Ordinary statutory rate under IIT Law art. 3(3). Reduced rates, exemptions and treaties can apply. Qualifying individual housing rent has a 10% rate | same |
 | China foreign tax credit | Up to the PRC tax on the foreign income | Resident individuals (IIT Law art. 7) | same |
-| Six-year rule (inbound only) | Six consecutive years of 183 days with no single absence over 30 days | Only for individuals without domicile; the count starts from 2019 (MOF and STA announcement 2019 No. 34) | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201904/t444837.html |
-| China-Singapore treaty, dividends to a company holding 25% or more | 5% cap | Beneficial owner is a company (not a partnership) directly holding at least 25% of the capital (art. 10(2)(1)) | https://guangdong.chinatax.gov.cn/gdsw/gzsw_zcq_zczy_tysc/2021-09/16/2421a19f85e74408a85aa43f2bb50609/files/ca9c3ec21241453290b3ab48b235b4a4.pdf |
-| China-Singapore treaty, dividends in other cases (individuals) | 10% cap | Beneficial owner resident in Singapore (art. 10(2)(2)) | same |
-| China-Singapore treaty, interest | 10% cap | Other cases (art. 11) | same |
-| Individual foreign exchange quota | 等值 5 万美元 (fifty thousand US dollars) a person a year | Annual total for individual sale and purchase of foreign exchange; above it, documented current-account or approved capital routes (SAFE implementing rules art. 2) | https://www.safe.gov.cn/neimenggu/file/file/20170728/b94fb1d6db30472584863040ecb838f3.pdf |
-| Singapore tax residence | 183 days | Foreigner who stayed or worked in Singapore at least 183 days in the previous calendar year, or 3 consecutive years, or employment straddling 2 years totalling 183 days | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates |
+| Six-year rule for individuals without Chinese domicile | 183 days in the current year and in each of the previous six years, with no single absence over 30 days during those six years | Count years from 2019. If a previous year falls short or has an absence over 30 days, qualifying foreign-source income paid abroad can be exempt, subject to filing | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5202334/content.html |
+| China-Singapore treaty, dividends to a company holding 25% or more | 5% cap | Eligible beneficial owner is a company (excluding partnerships) directly holding at least 25% of the capital (art. 10(2)(a)) | https://guangdong.chinatax.gov.cn/gdsw/gzsw_zcq_zczy_tysc/2021-09/16/2421a19f85e74408a85aa43f2bb50609/files/ca9c3ec21241453290b3ab48b235b4a4.pdf |
+| China-Singapore treaty, dividends in other cases (individuals) | 10% cap | Eligible beneficial owner is a Singapore treaty resident (art. 10(2)(b)) | same |
+| China-Singapore treaty, interest | 10% cap | Residual category for qualifying beneficial owners, subject to art. 11 exceptions | same |
+| Simplified foreign exchange allowance | USD 50,000 equivalent per person per year | Separate allowances for individual FX settlement and domestic individuals' FX purchases. Documented current-account transactions can proceed outside the allowance. Capital transfers follow separate rules | https://www.safe.gov.cn/tianjin/2026/0706/3085.html (writes it as 5万美元) https://www.safe.gov.cn/en/2017/1129/1365.html |
+| Singapore tax residence | 183 days | Foreigner who stayed or worked in Singapore at least 183 days in the previous calendar year, or stayed or worked continuously for 3 consecutive years. A separate concession covers continuous employment straddling 2 calendar years with at least 183 days of qualifying stay. Directors, public entertainers and professionals are excluded from the 2-year concession | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates |
 | Singapore resident rate on the first S$1,000,000 | S$199,150 | Gross tax on the first S$1,000,000 of chargeable income | same |
 | Singapore resident top rate | 24% | Chargeable income above S$1,000,000 | same |
-| Singapore non-resident employment income | 15% flat or resident rates, whichever is higher | Non-resident individual | same |
-| Singapore overseas income of individuals | Generally not taxable | Overseas income received in Singapore by an individual, including deposits into a Singapore account | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/what-is-taxable-what-is-not/income-received-from-overseas |
-| Singapore ABSD, foreigner buying any residential property | 60% | Of the price or market value, whichever is higher | https://www.iras.gov.sg/taxes/stamp-duty/for-property/buying-or-acquiring-property/additional-buyer's-stamp-duty-(absd) |
+| Singapore non-resident employment income | 15% flat or resident rates, whichever is higher | Taxable employment income. Non-resident short-term employment of 60 days or less can be exempt, subject to exceptions | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/working-out-my-tax-residency |
+| Singapore overseas income of individuals | Generally not taxable | Overseas income received by an individual, subject to exceptions such as income through a Singapore partnership or overseas duties incidental to Singapore employment | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/what-is-taxable-what-is-not/income-received-from-overseas |
+| Singapore ABSD, foreigner buying any residential property | 60% | Of the price or market value, whichever is higher, subject to applicable remissions | https://www.iras.gov.sg/taxes/stamp-duty/for-property/buying-or-acquiring-property/additional-buyer's-stamp-duty-(absd) |
 
 ## The base
 
-### Part 1: the Chinese side, domicile is the whole question
+### Part 1: Chinese domestic residence, treaty residence and CRS
 
-China's IIT law taxes two classes of people on **worldwide income** (IIT Law art. 1):
-1. individuals **domiciled** in China, and
-2. non-domiciled individuals who reside in China **183 days or more** in a year (with the six-year concession for foreigners, an *inbound* rule irrelevant here).
+China's IIT Law art. 1 generally taxes residents on worldwide income. A person is resident if domiciled in China or, without domicile, present for at least **183 days** in the tax year. The six-year exemption for eligible foreign-source income applies to people without Chinese domicile who meet its conditions.
 
-**Domicile is not an address.** Under the Implementing Regulations art. 2, a person is domiciled if they **habitually reside** in China by reason of **household registration (hukou), family, or economic interests**. For a Chinese citizen this means: keeping your hukou, a spouse or dependants in China, the operating business in Shenzhen, the apartments in Shanghai; any dense combination keeps you *domiciled*, and therefore **worldwide-taxable, regardless of how many days you spend in Singapore**.
+**Domicile.** IIT Implementing Regulations art. 2 asks whether the individual habitually resides in China by reason of household registration (hukou), family or economic interests. Those facts inform the test on departure and return. If the individual cancels their Chinese hukou on emigrating, settle Chinese tax before cancelling it (IIT Law art. 13).
 
-Consequences worth stating plainly:
-- Moving your body is not an exit. A founder who relocates to Singapore while the family, the hukou and the main company stay in China has, on the letter of the law, changed nothing about their Chinese tax position.
-- **There is no formal "tax de-registration certificate" for citizens leaving**, and hukou cancellation is generally tied to acquiring foreign citizenship or permanent residence abroad and is administratively serious. A genuine exit is a *pattern of severed facts* (family relocated, habitual residence abroad, economic centre shifted) built and documented over time.
-- **The treaty helps at the margin, not at the core.** The China-Singapore treaty tie-breaker (art. 4: permanent home, then centre of vital interests, then habitual abode, then nationality) can allocate residence to Singapore for a dual resident; but a Chinese national whose vital interests genuinely moved is exactly the person who has done the severing work anyway; the treaty does not rescue a paper move.
+**Treaty residence.** For a dual resident, art. 4 first looks for a permanent home. With a home in both countries, it considers the centre of vital interests. If that test is inconclusive or there is no permanent home in either country, the next tests are habitual abode, nationality and finally agreement between the authorities. Treaty residence can limit China's taxing rights even if the person remains resident under China's domestic rules.
 
-**The CRS reckoning.** Singapore banks and brokers report accounts of Chinese tax residents to China under CRS. Chinese bureaus have used this data to assess residents' **offshore investment income and gains (20%)**, with late payment surcharges for back years. Two corridor implications: (a) offshore accounts opened while still Chinese-resident are visible history, not a hiding place; (b) the account's self-certified tax residency must be *changed* to Singapore once the move is real, and must be *true* when changed, because a false self-certification compounds the problem in both countries.
+**CRS.** Singapore financial institutions report eligible accounts to IRAS for exchange with reportable jurisdictions, including China. Give each institution every jurisdiction where you are currently tax resident and update the information when it changes. Determine whether any offshore income needs to be reported in China under the rules for that income.
 
-### Part 2: what China keeps taxing after a real exit
+### Part 2: Chinese-source income after the move
 
-Even for a genuinely non-domiciled, non-resident former mover, Chinese-source items stay Chinese:
+- **Chinese company dividends** use the ordinary domestic rate of 20%. The treaty caps China's tax at **10%** of gross dividends for an eligible individual beneficial owner resident in Singapore. A separate 5% cap applies to qualifying corporate holders with at least 25% direct ownership. Check effective connection and treaty entitlement before claiming either cap.
+- **Chinese real estate** can be taxed in China under treaty art. 13(1). The ordinary 20% rate is on the taxable gain after basis and reasonable expenses. Check the relief for long-held sole family homes. Qualifying individual housing rent is taxed at 10%.
+- **Equity disposals** can attract the domestic 20% individual rate on the taxable gain. For a Singapore treaty resident, art. 13(4) permits taxation in China on shares deriving more than 50% of their value from Chinese immovable property. Subject to that rule, art. 13(5) permits China to tax gains on shares or other equity in a Chinese resident entity if the seller held at least 25%, directly or indirectly, at any time in the preceding 12 months. Art. 13(6) reserves other gains covered by that paragraph to the seller's treaty residence.
+- **Indirect disposals** by non-resident enterprises can be recharacterised under STA Bulletin 2015 No. 7 when the statutory conditions are met. Analyse an individual's offshore company sale under the IIT Law, including the anti-avoidance rule in art. 8 where relevant, and the treaty.
+- **Employment exercised in China** is generally China-source regardless of where paid. Art. 15(2) can reserve taxation to Singapore if presence in China does not exceed 183 days in any 12 months, the employer is non-resident in China and no Chinese permanent establishment or fixed base bears the pay.
 
-- **Chinese company dividends**: 20% IIT domestically, capped at **10%** under the Singapore treaty for an individual beneficial owner resident in Singapore. The 5% cap is for a Singapore company holding at least 25%. Correction: the old file said the domestic withholding on individuals was 10%; the domestic rate is 20% and the 10% is the treaty cap.
-- **Selling the Chinese apartments**: 20% on the gain (with local practice on deductions and the exemptions for long-held family homes; detail in `cn-iit`); rental income taxed at source.
-- **Selling the Chinese company**: equity transfers of PRC companies are PRC-taxable for non-residents (individuals 20% on the gain; enterprise withholding in `cn-withholding`), and **indirect** transfers (selling the offshore holding company that owns the PRC company) are reachable under **STA Bulletin 2015 No. 7** if the arrangement lacks a reasonable business purpose. Restructure with advice, not with a diagram from the internet.
-- **Employment income for China work-days**: sourced to China regardless of where paid.
+**Currency transfers.** The USD 50,000 annual simplified conversion allowance is available for individual FX settlement and separately for domestic individuals' purchases. Banks may process bona fide current-account purchases with supporting documents outside the allowance. Capital transactions have their own rules. A qualifying emigrant transferring personal property applies to the SAFE office for their former hukou location. Use licensed channels. Illegal currency trading and unlicensed remittance can carry penalties depending on the conduct and jurisdiction.
 
-**Getting the money out is its own project.** The individual foreign exchange quota (**USD 50,000 per person per year**) and SAFE rules make large transfers a multi-year, documentation-heavy exercise through lawful channels (property-sale repatriation with tax clearance, dividend routes, ODI structures for businesses). Plan liquidity **years** ahead of the move; never touch informal exchange channels: they convert a tax problem into a criminal one in both jurisdictions at once.
+### Part 3: Singapore tax and residency
 
-### Part 3: the Singapore side (short)
-
-- **Residence**: 183 days in the previous calendar year (or the other IRAS tests in the rates table) makes a foreigner resident; progressive rates to **24%** above S$1,000,000 of chargeable income.
-- **Capital gains**: Singapore does not tax capital gains as such; portfolio gains, crypto disposals and the exit from a startup are generally outside tax unless you are trading as a business (not confirmed on an IRAS page in this pass; see Sources).
-- **Overseas income for individuals**: overseas income received in Singapore by an individual is generally not taxable (IRAS). Corporate rules differ: the s10L foreign-gains rules target entities, not individuals.
-- **No estate duty and no wealth tax** in Singapore (abolition date not confirmed in this pass); property taxes and ABSD on residential purchases do that work instead. Budget **ABSD for foreigners at 60%** on residential property; permanent residents and citizens pay far less; many movers rent first for this reason alone.
-- **Employment Pass, ONE Pass, PR** are the immigration gates; the family-office regimes (13O/13U) still work but with tightened minimums and hiring conditions: a structure decision, not a default. Their current figures are not restated here.
-- CPF applies to citizens and PRs only; there is no Singapore tax trap waiting in the corridor. The whole game is the Chinese side.
+- The Singapore resident rate reaches **24%** on chargeable income above S$1,000,000. Apply the tax-residency rules for the year in the rates table.
+- Gains on personal investment disposals are generally outside income tax. Trading or other income-generating disposals can be taxable. Check the facts of securities, crypto and founder exits.
+- Overseas income received by individuals is generally exempt, subject to the exceptions in the rates table. The s10L rules for foreign asset gains apply to entities in relevant groups.
+- Estate duty was removed for deaths on and after 15 February 2008. The general foreign-buyer ABSD rate on Singapore residential property is **60%**, subject to applicable remissions. Citizen and permanent resident rates depend on the number of properties and the purchaser's status.
+- The Employment Pass, ONE Pass and permanent residence are possible immigration routes. Family-office incentives under sections 13O and 13U have separate eligibility conditions.
+- Ordinary mandatory CPF contributions apply to employed Singapore citizens and permanent residents.
 
 ## Deadlines and filing
 
-**Sequenced checklist**
+**Before the move**
 
-**Two-plus years before**
-1. Map the domicile facts: hukou, family location, main business, property. Decide what genuinely moves and when: this list *is* the exit plan.
-2. Start lawful liquidity planning against the USD 50,000 a person a year quota and SAFE routes; sequence any property sales with tax clearance and repatriation paperwork.
-3. Structure review of the operating business: direct versus offshore holding, Bulletin 7 exposure, dividend policy while still resident (dividends now are 20%; after a real exit, 20% capped at 10% by the treaty).
+1. Map the domicile facts, including hukou, family location, business and habitual residence.
+2. Plan the currency transfer against the transaction type, required documents and any approval.
+3. Check who will sell any shares, the treaty capital gains rules and when dividend relief can apply.
 
-**The move years**
-4. Relocate the family and habitual residence; document leases, schools, days.
-5. Establish Singapore residence (183 days), get the IRAS tax residence status, and update **every** financial institution's CRS self-certification to Singapore, truthfully.
-6. File Chinese returns correctly during the transition years (China-source items; worldwide while still domiciled or resident). For a resident, foreign income is declared 1 March to 30 June of the next year (IIT Law art. 13); for 2026 income, by 30 June 2027. Respond to any CRS-driven bureau letters with advisers, never with silence.
+**During the move**
 
-**After**
-7. Keep China work-days low and logged; treaty-source employment income properly.
-8. Before any liquidity event in the PRC company, re-check Bulletin 7 and the withholding position. Before returning (some do), remember the six-year clock is for foreigners: a returning citizen is simply domiciled again.
+4. Keep evidence of homes, family location and days. Assess domestic and treaty residence separately.
+5. Update financial institutions' CRS self-certifications with all applicable jurisdictions.
+6. File Chinese returns for the applicable Chinese and foreign income. Under IIT Law art. 13, residents file qualifying foreign income from 1 March to 30 June of the following year. For 2026, the deadline is **30 June 2027**. If cancelling hukou on emigrating, settle Chinese tax before cancellation.
+
+**After the move**
+
+7. Record Chinese work days, the employer's residence and who bears the cost for treaty purposes.
+8. Before a disposal or return, reassess the treaty, Chinese tax residence and any applicable corporate or individual anti-avoidance provisions.
 
 ## Penalties and interest
 
-China: unpaid tax carries a late payment surcharge of 0.05% a day from the due date (Tax Collection Law art. 32), so back-year offshore income assessed through CRS carries years of surcharge; concealment and false filing carry fines of 50% to 5 times the tax under art. 63, and possible criminal referral (art. 77). Singapore penalties are not covered here.
+China charges a late payment surcharge of **0.05% per day** from the day after the payment deadline through the day of payment (Tax Collection Administration Law art. 32 and Implementing Regulations art. 75). Tax evasion under art. 63 can attract a fine of **50% to five times** the unpaid or underpaid tax. Art. 77 requires referral if a crime is suspected.
 
 ## Cross-border points
 
-### The trap list
-
-| Trap | Why it bites |
+| Check | Why it matters |
 | --- | --- |
-| "I'm in Singapore 300 days a year, so I'm out" | Domicile, not day-count, drives worldwide liability for Chinese citizens; hukou, family and business in China keep you fully taxable. |
-| Offshore account opened while Chinese-resident, never declared | CRS has delivered it to your bureau already; assessments charge the 20% with surcharge. Regularise with advice, don't wait. |
-| Changing the bank's tax-residency box before the move is real | A false self-certification is its own offence and unravels treaty claims later. |
-| Selling the offshore HoldCo that owns the PRC OpCo "tax-free" | Bulletin 7 taxes indirect transfers without a reasonable business purpose; buyers withhold or the seller wears the assessment. |
-| Underground money changers to beat the USD 50,000 quota | Converts a planning problem into criminal exposure in both countries simultaneously. |
-| Buying the Singapore condo on arrival | 60% ABSD for foreigners; rent until PR (or restructure the housing plan entirely). |
-| Assuming Singapore taxes nothing ever | Singapore employment and local business income is taxed up to 24%; territorial is not a tax-free life. |
-| Treating the treaty tie-breaker as an escape hatch | It only helps a dual resident whose vital interests genuinely moved, that is someone who already did the hard part. |
+| Chinese residence after a move | The answer depends on habitual residence and, where the person has no Chinese domicile, the statutory day count. |
+| Reporting offshore accounts and income | Financial institutions and individual taxpayers have separate reporting obligations. Correct inaccurate declarations and apply the tax rules for each income category. |
+| Sale of a holding company | Identify the seller and apply the relevant domestic law and treaty provisions. |
+| Buying a Singapore home | The ordinary foreign-buyer ABSD rate is 60%. Check all purchasers' status and any applicable remissions. |
 
 ## Two worked examples that recompute
 
-**Example 1: Singapore tax on a mover's first full year.** A mover becomes Singapore resident and has chargeable income of S$1,200,000 (salary from a Singapore employer). Tax: S$199,150 on the first S$1,000,000, plus 24% of S$200,000 = S$48,000; total S$247,150.
+**Example 1: Singapore tax on a mover's first full year.** A mover becomes Singapore resident and has chargeable income of S$1,200,000 (salary from a Singapore employer). Tax: S$199,150 on the first S$1,000,000, plus 24% of S$200,000 = S$48,000; gross YA 2027 tax S$247,150 before any applicable rebate.
 
 ```oa-check
 name: SG resident tax on S$1.2m chargeable income
@@ -135,10 +122,10 @@ expected:
   tax: 247150
 ```
 
-**Example 2: decision, take the dividend before or after a real exit.** A founder's Chinese operating company will pay a 2,000,000 yuan dividend. Option A, paid while the founder is still domiciled in China: 20% IIT = 400,000 yuan (and the founder may still owe Chinese tax on Singapore income too). Option B, paid after a genuine exit, with treaty residence in Singapore and a treaty claim filed: China withholds at most 10% = 200,000 yuan; Singapore does not tax the overseas dividend received by an individual. Waiting for a real exit saves 200,000 yuan. The deciding facts are whether the exit is real (domicile facts) and whether the treaty claim is filed; a paper move gets Option A's result plus penalties.
+**Example 2: dividend before or after qualifying for treaty relief.** A founder directly holds ordinary shares in a Chinese operating company, which pays a CNY 2,000,000 dividend. Before qualifying for Singapore treaty relief, ordinary Chinese IIT at 20% is CNY 400,000. Once the founder qualifies as a Singapore treaty resident and an eligible beneficial owner and claims relief, the 10% treaty cap limits Chinese tax to CNY 200,000. Assume the qualifying overseas dividend is received directly as an individual and exempt in Singapore. At the treaty cap, the difference is CNY 200,000. Treaty eligibility and the actual receipt determine the result.
 
 ```oa-check
-name: CN dividend before or after exit, 20% domestic vs 10% treaty cap
+name: CN dividend at the 20% domestic rate or 10% treaty cap
 inputs:
   dividend: 2000000
 steps:
@@ -164,17 +151,27 @@ expected:
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| PRC IIT Law, STA Shanghai policy library. Read for arts. 1, 3, 7 and 13 (residence, 20% rate, foreign credit, foreign income filing) | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html | 2026-11-14 |
-| IIT Implementing Regulations, STA Shanghai. Read for art. 2, domicile as habitual residence by reason of hukou, family or economic interests | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443213.html | 2026-11-14 |
-| MOF and STA announcement 2019 No. 34, STA Shanghai. Read for the six-year rule and its 2019 start | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201904/t444837.html | 2026-11-14 |
-| China-Singapore tax treaty (2007), STA Guangdong PDF. Read for art. 4 tie-breaker, art. 10 dividend caps 5% and 10%, art. 11 interest 10% | https://guangdong.chinatax.gov.cn/gdsw/gzsw_zcq_zczy_tysc/2021-09/16/2421a19f85e74408a85aa43f2bb50609/files/ca9c3ec21241453290b3ab48b235b4a4.pdf | 2026-11-14 |
-| STA Bulletin 2015 No. 7 on indirect transfers, STA Shanghai. Read for the reasonable business purpose test | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201502/t412657.html | 2026-11-14 |
-| Tax Collection Administration Law, STA Shanghai. Read for arts. 32, 63 and 77 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-11-14 |
-| SAFE implementing rules for individual foreign exchange (PDF on safe.gov.cn). Read for art. 2, the annual total of 等值 5 万美元 a person | https://www.safe.gov.cn/neimenggu/file/file/20170728/b94fb1d6db30472584863040ecb838f3.pdf | 2026-11-14 |
-| IRAS, individual income tax rates. Read for the residence tests, the S$199,150 on the first S$1,000,000, the 24% top rate and the non-resident 15% rule | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates | 2026-11-14 |
-| IRAS, income received from overseas. Read for overseas income of individuals generally not taxable | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/what-is-taxable-what-is-not/income-received-from-overseas | 2026-11-14 |
-| IRAS, ABSD. Read for the 60% rate for foreigners | https://www.iras.gov.sg/taxes/stamp-duty/for-property/buying-or-acquiring-property/additional-buyer's-stamp-duty-(absd) | 2026-11-14 |
+| China IIT Law, arts. 1, 3, 6, 7, 8 and 13 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html | 2026-11-27 |
+| China IIT Implementing Regulations, arts. 2–4 and 20–22 | https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c3963364/content.html | 2026-11-27 |
+| STA explanation of domicile and habitual residence | https://www.chinatax.gov.cn/n810356/n3255681/c4251584/content.html | 2026-11-27 |
+| MOF and STA Announcement 2019 No. 34, six-year rule | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5202334/content.html | 2026-11-27 |
+| China-Singapore tax treaty as modified by the MLI, arts. 4, 10, 11, 13 and 15 | https://www.iras.gov.sg/media/docs/default-source/dtas/singapore-china-dta-%28ratified%29%28mli%29%281-sep-2022%29.pdf | 2026-11-27 |
+| STA treaty relief procedure | https://www.chinatax.gov.cn/n810356/n3255681/c5220459/content.html | 2026-11-27 |
+| STA Bulletin 2015 No. 7, indirect disposals by non-resident enterprises | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201502/t412657.html | 2026-11-27 |
+| China Tax Collection Administration Law, arts. 32, 63 and 77 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-11-27 |
+| Implementing Regulations, art. 75, surcharge period | https://fgk.chinatax.gov.cn/zcfgk/c100010/c5195082/content.html | 2026-11-27 |
+| Cai Shui 2008 No. 24, individual housing rental | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203346/content.html | 2026-11-27 |
+| SAFE 2020 current-account rules, arts. 55–56, FX conversion allowance | https://www.safe.gov.cn/tianjin/2026/0706/3085.html | 2026-11-27 |
+| SAFE emigrant property transfer | https://www.safe.gov.cn/tianjin/2026/0319/3018.html | 2026-11-27 |
+| IRAS individual income tax rates | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates | 2026-11-27 |
+| IRAS tax residence and short-term employment exemption | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/working-out-my-tax-residency | 2026-11-27 |
+| IRAS income received from overseas | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/what-is-taxable-what-is-not/income-received-from-overseas | 2026-11-27 |
+| IRAS gains on disposals | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/what-is-taxable-what-is-not/gains-from-sale-of-property-shares-and-financial-instruments | 2026-11-27 |
+| IRAS s10L guidance, foreign asset gains | https://www.iras.gov.sg/docs/default-source/e-tax/tax-treatment-of-gains-or-losses-from-the-sale-of-foreign-assets.pdf | 2026-11-27 |
+| IRAS estate duty | https://www.iras.gov.sg/taxes/other-taxes/estate-duty/estate-duty/ | 2026-11-27 |
+| IRAS additional buyer's stamp duty | https://www.iras.gov.sg/taxes/stamp-duty/for-property/buying-or-acquiring-property/additional-buyer's-stamp-duty-(absd) | 2026-11-27 |
+| IRAS CRS self-certification | https://www.iras.gov.sg/taxes/international-tax/common-reporting-standard-%28crs%29/basic-information-for-account-holders-of-financial-institutions | 2026-11-27 |
+| IRAS CRS list of reportable jurisdictions | https://www.iras.gov.sg/docs/default-source/uploadedfiles/pdf/list-of-reportable-jurisidictions.pdf | 2026-11-27 |
+| MAS family-office fund tax incentives | https://www.mas.gov.sg/schemes-and-initiatives/fund-tax-incentive-scheme-for-family-offices | 2026-11-27 |
 
-Not yet confirmed: Singapore's treatment of capital gains and the estate duty abolition date (the IRAS pages tried returned only the site shell); the 13O/13U family office minimums; any official STA statement of the size or dates of CRS-based assessment campaigns (the old file said "2024 to 2025"; no official page read).
-
-*Built for the OpenAccountants migration desk. The origin country's claim doesn't end at the border, it ends where your facts end: household registration, family, the operating business. Move the facts, paper the timeline, respect the currency rules, and Singapore's side is the easiest landing in this collection.*
+Not yet confirmed: whether a formal exit tax clearance certificate is issued and when hukou must be cancelled (the IIT Law requires clearance before departure but does not settle every documentation route); any dated official STA assessment campaign based on CRS data; a complete statement of Singapore wealth taxes beyond the estate duty repeal, property tax and stamp duty; and any tightening of the 13O and 13U family-office conditions against a dated baseline.
