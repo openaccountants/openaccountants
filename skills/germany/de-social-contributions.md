@@ -292,7 +292,7 @@ Registration windows: pension registration follows the group-specific § 190a SG
 | Other insurance (unemployment, accident, supplementary health) | Within one yearly cap shared with health and care, so nothing if basic health and care already exceed it | EUR 2,800 |
 | The same cap where health costs are partly paid without own expense, or tax-free payments under § 3 no. 9, 14, 57 or 62 EStG are made (no. 57 is the KSK's share, so KSK members) | | EUR 1,900 |
 
-For the owner's own accident insurance, professional-fund/Rürup contract eligibility and mixed tax/subsidy situations, no individual deduction outcome is supplied. For historical 2025 pension figures, the unreduced statutory cap is derived as EUR 118,800 × 24.7% = EUR 29,343.60, rounded up to EUR 29,344 single / EUR 58,688 for joint spouses; the statutory reductions and the actual qualifying contribution still apply. Check this point with one of our partner accountants.
+For the owner's own accident insurance, professional-fund/Rürup contract eligibility and mixed tax/subsidy situations, no individual deduction outcome is supplied. For historical 2025 pension figures, the unreduced statutory cap is derived as [EUR 118,800](https://www.gesetze-im-internet.de/svbezgrv_2025/__4.html) × [24.7%](https://www.gesetze-im-internet.de/rvbeitrsbek_2025/----.html) = EUR 29,343.60, rounded up to EUR 29,344 single / EUR 58,688 for joint spouses; the statutory reductions and the actual qualifying contribution still apply. Check this point with one of our partner accountants.
 
 **Bank debits.**
 
@@ -465,4 +465,4 @@ Retained earlier read dates below record the original research. Operative condit
 | svbezgrv_2026 § 2 | https://www.gesetze-im-internet.de/svbezgrv_2026/__2.html | 2026-10-31 |
 | svbezgrv_2026 § 4 | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html | 2026-10-31 |
 
-Not yet confirmed for an individual taxpayer — explicit non-usable holds: The fund's actual additional rate and voluntary-member payment terms, the agency's unemployment payment notice, a lower income-based pension contribution during the start phase, the owner's accident deduction, private-system entry/return and professional-fund exemptions, and 2027 implementation require individual evidence. Do not use an average, bank debit or this Guide to clear them. Check this point with one of our partner accountants.
+Not yet confirmed for an individual taxpayer; explicit non-usable holds: The fund's actual additional rate and voluntary-member payment terms, the agency's unemployment payment notice, a lower income-based pension contribution during the start phase, the owner's accident deduction, private-system entry/return and professional-fund exemptions, and 2027 implementation require individual evidence. Do not use an average, bank debit or this Guide to clear them. Check this point with one of our partner accountants.
