@@ -305,3 +305,5 @@ Reused operative reads are dated 26 November; newly read provisions are dated 27
 | Required-return dates AO §§ 149/108; pandemic transition EGAO Art. 97 § 36 | https://www.gesetze-im-internet.de/ao_1977/__149.html ; https://www.gesetze-im-internet.de/ao_1977/__108.html ; https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-11-26 |
 | Prepayments § 37(1)/(3)/(5); credit/payment § 36(2)/(4) | https://www.gesetze-im-internet.de/estg/__37.html ; https://www.gesetze-im-internet.de/estg/__36.html | 2026-11-26 |
 | Annual late return AO § 152(1)–(3)/(5)/(10); late payment § 240 | https://www.gesetze-im-internet.de/ao_1977/__152.html ; https://www.gesetze-im-internet.de/ao_1977/__240.html | 2026-11-26 |
+
+Not yet confirmed: the actual outcomes for the explicitly referred cases above. They are non-usable holds, not rates or conclusions to apply to a return. Check this point with one of our partner accountants.
