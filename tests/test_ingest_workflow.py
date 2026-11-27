@@ -143,7 +143,7 @@ raise SystemExit(module.main(sys.argv[2:]))
         self.assertEqual(doc["permissions"], {"contents": "read"})
         self.assertEqual(list(doc["jobs"]), ["ring"])
         job = doc["jobs"]["ring"]
-        self.assertEqual(job["permissions"], {"contents": "read", "issues": "write"})
+        self.assertEqual(job["permissions"], {"contents": "read", "issues": "write", "pull-requests": "read", "statuses": "read"})
         self.assertEqual(job["environment"], "production")
         self.assertEqual(job["if"], "github.ref == 'refs/heads/main'")
         self.assertEqual(job["steps"][0]["with"]["fetch-depth"], 0)
