@@ -136,7 +136,33 @@ expected:
 
 **Case 3: dual citizen at birth.** US-born to French parents, stipulated US/French citizen at birth; US residence in 9 of the 15 tax years ending with 2026; still French citizen and taxed as resident in France at expatriation; net worth USD 3,000,000; five compliant years certified. Not covered under the exception. With 11 US-resident years, or taxed as resident in Switzerland instead of France, the exception fails and the net-worth test makes them covered. **One missing year of FBARs alone does not negate the Title 26 certification**; investigate and remedy the separate reporting failure. [26 USC 877A(g)(1)(B)](https://uscode.house.gov/us/usc/t26/s877a/); [26 USC 877(a)(2)(C)](https://uscode.house.gov/us/usc/t26/s877/); [IRS relief FAQ 18](https://www.irs.gov/individuals/international-taxpayers/relief-procedures-for-certain-former-citizens).
 
-**Case 4: LTR count in 2026.** Card issued in 2017, held throughout 2018–2025, I-407 in May 2026, no treaty position: the eight full years already establish LTR status (2017–2026 count as ten tax years including partial years). With a card issued in **March 2019** and I-407 in **May 2026**, the six full years 2020–2025 plus partial 2019 and 2026 make **eight**; LTR status does not need referral merely because the endpoint years are partial. Variant retaining the 2017 card but a 2022 treaty-resident position without waiver: 2022 is excluded; the arithmetic of seven full years plus the endpoints is not sufficient to establish a May 2026 expatriation. If the treaty/notice conditions ended LPR status in 2022, there were only six possible LPR tax years 2017–2022 before the treaty-year exclusion; later status/reacquisition is unknown. Check this point with one of our partner accountants. [26 USC 877(e)(2)](https://uscode.house.gov/us/usc/t26/s877/); [IRM 20.1.9.11.1](https://www.irs.gov/irm/part20/irm_20-001-009); [26 USC 7701(b)(6)](https://uscode.house.gov/us/usc/t26/s7701/).
+**Case 4: LTR count in 2026.** Card issued in 2017, held throughout 2018–2025, I-407 in May 2026, no treaty position: the eight full years already establish LTR status (2017–2026 count as ten tax years including partial years). With a card issued in **March 2019** and I-407 in **May 2026**, the six full years 2020–2025 plus partial 2019 and 2026 make **eight**; LTR status does not need referral merely because the endpoint years are partial. Variant retaining the 2017 card but a 2022 treaty-resident position without waiver: distinguish two factual alternatives. **If LPR status continued through May 2026 and only 2022 is excluded**, count partial 2017 + 2018–2021 (four full years) + 2023–2025 (three full years) + partial 2026 = **nine counted years**, so the person is an LTR at the May 2026 I-407 termination; covered status must then be tested separately. **If treaty foreign residence, no waiver and the required IRS notice ended LPR status in 2022**, the six possible years 2017–2022 less excluded 2022 leave **five counted years**, so the person was not an LTR at that termination. The facts do not establish which alternative applies or any later LPR status/reacquisition. Do not give an unconditional May 2026 expatriation or covered-status conclusion. Check this point with one of our partner accountants. [26 USC 877(e)(2)](https://uscode.house.gov/us/usc/t26/s877/); [IRM 20.1.9.11.1](https://www.irs.gov/irm/part20/irm_20-001-009); [26 USC 7701(b)(6)](https://uscode.house.gov/us/usc/t26/s7701/).
+
+```oa-check
+name: Case 4 conditional treaty-year counts
+inputs:
+  original_issue_year: 2017
+  full_start_year: 2018
+  full_end_year: 2025
+  treaty_year: 2022
+  i407_year: 2026
+  variant_issue_year: 2019
+steps:
+  - original_full_years: full_end_year - full_start_year + 1
+  - full_years_excluding_treaty: original_full_years - 1
+  - continuing_lpr_count: i407_year - original_issue_year + 1 - 1
+  - years_through_treaty_termination: treaty_year - original_issue_year + 1
+  - treaty_termination_count: years_through_treaty_termination - 1
+  - march_2019_to_may_2026_count: i407_year - variant_issue_year + 1
+expected:
+  original_full_years: 8
+  full_years_excluding_treaty: 7
+  continuing_lpr_count: 9
+  years_through_treaty_termination: 6
+  treaty_termination_count: 5
+  march_2019_to_may_2026_count: 8
+```
+
 
 **Case 5: low wealth, missing returns.** A citizen abroad renounces in 2026, net worth USD 400,000, average tax far below USD 211,000; two of five returns and FBARs unfiled, three returns filed as a citizen. Failure to certify the missing required **tax returns** makes them covered unless compliance is established in time for valid certification. An IRA distribution consequence requires an actual specified account; none was valued in these facts. Future section 2801 exposure depends on covered transfers and recipient/exclusion rules. The three citizen returns prevent use of the no-filing-history relief procedure. Resolve the tax returns and the separate FBAR problem; do not promise that any late filing cures covered status. Check this point with one of our partner accountants. [Form 8854 instructions, certification](https://www.irs.gov/instructions/i8854); [IRS relief FAQs 2–3, 18](https://www.irs.gov/individuals/international-taxpayers/relief-procedures-for-certain-former-citizens).
 
