@@ -1,10 +1,10 @@
 ---
 name: de-social-contributions
-description: "German social insurance contributions for 2026, written for the self-employed and voluntary members. Covers voluntary statutory health insurance (minimum base EUR 1,318.33, ceiling EUR 5,812.50 a month, 14.0% or 14.6% plus the fund's additional rate, average 2.9%), long-term care at 3.6% with the childless surcharge and child reductions, compulsory pension insurance for the self-employed groups in § 2 SGB VI (teachers, carers, midwives, craftspeople, one-client workers) with the 18.6% rate, standard, start-phase and income-based bases, exemptions, voluntary pension contributions, the Künstlersozialkasse and the 4.9% artists' levy, accident and unemployment insurance on application, the status procedure, due dates, late surcharges and the income tax deduction, plus a short employee summary. Trigger on: Krankenkasse freiwillig, Mindestbeitrag, KSK, Künstlersozialabgabe, Rentenversicherungspflicht Selbständige, Pflegeversicherung Kinderlosenzuschlag, Statusfeststellung. Out of scope: the payroll run (de-payroll), benefits in kind and managing directors (de-payroll-benefits), income tax (de-einkommensteuer-freelancer)."
-version: 2.5
+description: "German social insurance for self-employed people and voluntary members in 2026, with a separate 2025 reference. Covers statutory health and care, compulsory and voluntary pension insurance, KSK members and the artists' levy, accident and unemployment insurance, status determination, payment dates, bank classification and income-tax deductions. Payroll is in de-payroll; benefits and managing directors in de-payroll-benefits. Trigger on Krankenkasse freiwillig, KSK, Pflegeversicherung, Rentenversicherungspflicht Selbständige and Statusfeststellung."
+version: 2.6
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 depends_on:
   - social-contributions-workflow-base
 category: international
@@ -16,9 +16,9 @@ type: computation
 
 # Social insurance contributions in Germany 2026: the self-employed, voluntary members and a short employee summary
 
-> **General reference only.** This skill is general reference material for AI-assisted work. The health fund's, pension insurer's or KSK's notice sets the amount owed. A Steuerberater or social insurance adviser should confirm a real case.
+> **General reference only.** This Guide is general reference material for AI-assisted work. The health fund's, pension insurer's or KSK's notice sets the amount owed. A Steuerberater or social insurance adviser should confirm a real case.
 
-**Sibling skills.** The monthly payroll run for employees (withholding, reports, Minijob flat rates, the Midijob band, employer levies, due dates): [de-payroll](de-payroll.md). Benefits in kind, employer pensions and managing directors: [de-payroll-benefits](de-payroll-benefits.md). Income tax of the self-employed: [de-einkommensteuer-freelancer](de-einkommensteuer-freelancer.md).
+**Related Guides.** The monthly payroll run for employees (withholding, reports, Minijob flat rates, the Midijob band, employer levies, due dates): [de-payroll](de-payroll.md). Benefits in kind, employer pensions and managing directors: [de-payroll-benefits](de-payroll-benefits.md). Income tax of the self-employed: [de-einkommensteuer-freelancer](de-einkommensteuer-freelancer.md).
 
 ## Who this applies to
 
@@ -31,37 +31,37 @@ German social insurance for calendar year 2026: health and long-term care (charg
 **The method, step by step.**
 
 1. **Settle the status.** Work under instructions and inside the client's organisation points to employment ([§ 7(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__7.html)). If unclear, use the status procedure below.
-2. **Employees:** insured by law in all four branches. Test the JAEG (health and care only) and the Minijob limit, then hand the payroll to `de-payroll`.
-3. **Self-employed health:** a main-occupation self-employed person is not compulsorily insured as an employee (§ 5(5) SGB V) and must hold statutory voluntary or private cover ([§ 193(3) VVG](https://www.gesetze-im-internet.de/vvg_2008/__193.html)). Give the fund the latest tax notice, or at the start the expected income.
+2. **Employees:** test each branch's compulsory-insurance rules, JAEG, marginal work and other exemptions before using ordinary employee shares; payroll belongs in `de-payroll`.
+3. **Self-employed health:** a main-occupation self-employed person is not compulsorily insured as an employee (§ 5(5) SGB V); settle lawful health cover before calculating. Statutory entry and private-policy duties have conditions and exceptions, described below. Give the fund the latest tax notice, or at the start the expected income.
 4. **Health amount:** all income, lifted to the minimum base and cut at the ceiling, times the reduced rate (general rate if sick pay was elected) plus the fund's own additional rate. Care on the same base at the rate for the member's children and age.
 5. **Pension:** test the § 2 SGB VI list. If a group applies and the work is more than marginal, check registration under § 190a SGB VI and choose the contribution; check the exemptions. Otherwise decide on voluntary contributions or insurance on application.
 6. **Artists and publicists:** test the KSVG conditions, register with the KSK, report next year's expected income by 1 December.
 7. **Accident and unemployment:** notify the accident insurer within one week of starting; decide on unemployment insurance on application within three months.
 8. **Artists' levy:** if the business pays self-employed artists or publicists, test the levy duty and report the fees by 31 March of the next year.
 9. **Pay and check.** The fund's or insurer's notice is the amount. Never rebuild a year's total from rates: add up the debits and check them against the notices.
-10. **Income tax:** deduct the contributions within the caps of [§ 10 EStG](https://www.gesetze-im-internet.de/estg/__10.html). They are private, not business expenses.
+10. **Income tax:** distinguish personal health/care/pension from business accident insurance and the artists' levy; apply [§ 10 EStG](https://www.gesetze-im-internet.de/estg/__10.html) only to qualifying personal contributions after subsidies and refunds.
 
 Pension registration follows the group-specific route and clock in § 190a SGB VI, described below. Unemployment insurance on application has a three-month work-start window, and the status procedure a one-month window for the stated protection. For ordinary self-employed pension exemptions under § 6(4) SGB VI, the three-month period runs from when the exemption conditions are met.
 
 ### Employees: a short summary
 
-Employees working for pay are insured by law in health ([§ 5(1) no. 1 SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html)), care ([§ 20(1) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__20.html)), pension ([§ 1 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__1.html)) and unemployment ([§ 25(1) SGB III](https://www.gesetze-im-internet.de/sgb_3/__25.html)). They are also covered by accident insurance, which the employer pays alone ([§ 150(1) SGB VII](https://www.gesetze-im-internet.de/sgb_7/__150.html)). The employer pays the total to the employee's health fund ([§ 28h SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28h.html)).
+For an ordinary employee, subject to marginal-work and branch-specific exemptions, compulsory coverage is in health ([§ 5(1) no. 1 SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html)), care ([§ 20(1) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__20.html)), pension ([§ 1 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__1.html)) and unemployment ([§ 25(1) SGB III](https://www.gesetze-im-internet.de/sgb_3/__25.html)). They are also covered by accident insurance, which the employer pays alone ([§ 150(1) SGB VII](https://www.gesetze-im-internet.de/sgb_7/__150.html)). The employer pays the combined health/care/pension/unemployment contribution to the employee's health fund ([§ 28h SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28h.html)).
 
 | Branch | Employee | Employer | Rule |
 | --- | --- | --- | --- |
-| Pension | 9.3% | 9.3% | Half each ([§ 168(1) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__168.html)) |
-| Unemployment | 1.3% | 1.3% | Half each ([§ 346(1) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html)) |
-| Health | 7.3% + half the fund's rate | 7.3% + half the fund's rate | Half each ([§ 249(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__249.html)) |
-| Care, parent | 1.8%, less 0.25 points per child from the second to the fifth under 25 | 1.8% | Half each ([§ 58(1) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html)); for how the reductions split, see `de-payroll` |
-| Care, childless, 23 or older | 2.4% | 1.8% | The employee bears the surcharge alone ([§ 58(1) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html)) |
+| Pension | 9.3% | 9.3% | Derived: 18.6% / 2; [rate](https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html), half each ([§ 168(1) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__168.html)) |
+| Unemployment | 1.3% | 1.3% | Derived: 2.6% / 2; [rate](https://www.gesetze-im-internet.de/sgb_3/__341.html), half each ([§ 346(1) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html)) |
+| Health | 7.3% + half the fund's rate | 7.3% + half the fund's rate | Derived: 14.6% / 2; [rate](https://www.gesetze-im-internet.de/sgb_5/__241.html), half each ([§ 249(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__249.html)) |
+| Care, parent | 1.8%, less 0.25 points per child from the second to the fifth under 25 | 1.8% | Derived from [3.6%](https://www.gesetze-im-internet.de/pbav_2025/__1.html) and [child adjustments](https://www.gesetze-im-internet.de/sgb_11/__55.html); half each ([§ 58(1) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html)); for how the reductions split, see `de-payroll` |
+| Care, childless, 23 or older | 2.4% | 1.8% | Derived from [3.6%](https://www.gesetze-im-internet.de/pbav_2025/__1.html) / 2 plus [0.6 point](https://www.gesetze-im-internet.de/sgb_11/__55.html); the employee bears the surcharge alone ([§ 58(1) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html)) |
 
-- **Saxony:** the employee bears one more point of care alone ([§ 58(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html)); use the shares in `de-payroll`.
+- **Saxony:** the employee bears 1 percentage point alone and shares the remaining base contribution equally with the employer (base shares 2.3% employee and 1.3% employer) ([§ 58(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html)); use the shares in `de-payroll`.
 - **Ceilings:** pension and unemployment stop at EUR 8,450 a month; health and care at EUR 5,812.50.
-- **The JAEG (health and care only):** an employee whose regular yearly pay exceeds EUR 77,400 is free of compulsory health insurance ([§ 6(1) no. 1 SGB V](https://www.gesetze-im-internet.de/sgb_5/__6.html)). For someone already insured, cover ends at the end of the year the limit is exceeded, but only if the pay also exceeds next year's limit (§ 6(4)). The special JAEG of EUR 69,750 applies only to those privately insured on 31 December 2002 for that reason. Such an employee may stay voluntarily or go private; either way the employer pays a subsidy ([§ 257 SGB V](https://www.gesetze-im-internet.de/sgb_5/__257.html)).
-- **Minijob and transition band:** pay up to EUR 603 a month is a Minijob ([§ 8(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). Above that, up to EUR 2,000 a month, the employee's share is reduced ([§ 20(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html)). Both are in `de-payroll`.
-- **Job plus business:** if self-employment is the main occupation, the job does not bring compulsory health insurance (§ 5(5) SGB V), but pension and unemployment insurance of the job continue. If the job is the main occupation, the employee is insured through it and the freelance income carries no health or care contribution: the contribution is on pay. The exception is an employee who also draws a statutory pension or a pension-like payment (Versorgungsbezüge): then the freelance income counts too, if it and any pension-like payments together exceed 1/20 of the monthly reference amount (EUR 197.75 in 2026) ([§ 226(1) no. 4 and (2) SGB V](https://www.gesetze-im-internet.de/sgb_5/__226.html)). Employing someone above the Minijob level raises the presumption that self-employment is the main occupation; the fund decides case by case.
+- **The JAEG (health and care only):** an employee whose regular yearly pay exceeds EUR 77,400 is free of compulsory health insurance ([§ 6(1) no. 1 SGB V](https://www.gesetze-im-internet.de/sgb_5/__6.html)). For someone already insured, cover ends at the end of the year the limit is exceeded, but only if the pay also exceeds next year's limit (§ 6(4)). The special JAEG of EUR 69,750 applies only to those privately insured on 31 December 2002 for that reason. Voluntary statutory membership must be available; private cover and its employer subsidy have the conditions of [§ 257 SGB V](https://www.gesetze-im-internet.de/sgb_5/__257.html), including qualifying cover and insurer requirements. Do not infer a private-subsidy entitlement from pay alone. Check this point with one of our partner accountants.
+- **Minijob and transition band:** regularly earned pay up to EUR 603 a month meets the earnings-limit test for a Minijob; check aggregation and permitted unforeseeable overruns in `de-payroll` ([§ 8(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). Above that, up to EUR 2,000 a month, the employee's share is reduced ([§ 20(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html)). Both are in `de-payroll`.
+- **Job plus business:** if self-employment is the main occupation, the job does not bring compulsory health insurance (§ 5(5) SGB V), ordinary compulsory pension and unemployment insurance of a non-exempt job continue. If the job is the main occupation and the employee is compulsorily insured in GKV through it, freelance income alone does not create a separate health/care base. The exception is an employee who also draws a statutory pension or a pension-like payment (Versorgungsbezüge): then the freelance income counts too, if it and any pension-like payments together exceed 1/20 of the monthly reference amount (EUR 197.75 in 2026) ([§ 226(1) no. 4 and (2) SGB V](https://www.gesetze-im-internet.de/sgb_5/__226.html)). Employing someone above the Minijob level raises the presumption that self-employment is the main occupation; the fund decides case by case.
 
-**Case: employee above the JAEG.** Hired 1 January 2026 at EUR 7,000 a month (EUR 84,000 a year), childless, age 40. Pay exceeds EUR 77,400, so the employee is free of compulsory health insurance and may stay as a voluntary member or go private, with the employer's subsidy. Pension and unemployment continue at 9.3% and 1.3% on the full EUR 7,000: EUR 651.00 and EUR 91.00 from the employee. Payroll steps: `de-payroll`.
+**Case: employee above the JAEG (ordinary pension/unemployment-insured employee).** Hired 1 January 2026 at EUR 7,000 a month (EUR 84,000 a year), childless, age 40. Assume this is the first domestic job, no other compulsory-health basis applies, and voluntary entry is available under § 9(1) no. 3 SGB V. Pay exceeds EUR 77,400, so the employee is free of compulsory employee health insurance. A voluntary member exempt only because of the JAEG receives the § 257(1) subsidy; private subsidy is subject to the separate conditions above. Pension and unemployment continue at 9.3% and 1.3% on the full EUR 7,000: EUR 651.00 and EUR 91.00 from the employee. Payroll steps: `de-payroll`.
 
 ### Status determination (Statusfeststellung)
 
@@ -81,17 +81,17 @@ All figures are for 2026 unless the row says otherwise. Amounts marked "check" u
 
 | What | 2026 | Source |
 | --- | --- | --- |
-| Health, general rate (members with a sick pay claim) | 14.6% | [§ 241 SGB V](https://www.gesetze-im-internet.de/sgb_5/__241.html) |
+| Health, general rate (ordinary members with a sick pay claim) | 14.6% | [§ 241 SGB V](https://www.gesetze-im-internet.de/sgb_5/__241.html) |
 | Health, reduced rate (no sick pay claim: the normal self-employed case) | 14.0% | [§ 243 SGB V](https://www.gesetze-im-internet.de/sgb_5/__243.html) |
 | Health, fund's additional rate | set by each fund | [§ 242(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__242.html) |
 | Health, average additional rate (planning value only) | 2.9% (check) | [Federal Health Ministry, Beiträge](https://www.bundesgesundheitsministerium.de/beitraege) |
-| Care, base rate | 3.6% | [§ 1 PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html) |
+| Care, ordinary base rate (no § 28(2) half-rate entitlement) | 3.6% | [§ 1 PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html) |
 | Care, childless surcharge from the month after turning 23; reduction per child from the second to the fifth, while under 25 | 0.6 points; 0.25 points | [§ 55(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html) |
 | Pension, general scheme; miners' scheme (tax cap only) | 18.6%; 24.7% | [RVBeitrSBek 2026](https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html) |
 | Unemployment | 2.6% | [§ 341(2) SGB III](https://www.gesetze-im-internet.de/sgb_3/__341.html) |
 | Artists' levy on fees paid in 2026 | 4.9% | [§ 1 KSAbg2026V](https://www.gesetze-im-internet.de/ksabg2026v/BJNR0DC0A0025.html) |
 
-**Full care rate of a member who pays alone, by children** (derived from [PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html) and [§ 55(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html)): no children, 23 or older 4.2%; one child (any age) or all children 25 or older 3.6%; two under 25 3.35%; three 3.1%; four 2.85%; five or more 2.6%. A parent never pays the surcharge, even when the children are grown. Members born before 1 January 1940 are also exempt from it. For self-payers, the care fund must have proof of parenthood and children under 25, unless those facts are already known. Evidence received through the automatic procedure counts from the birth month or comparable qualifying event. Evidence outside that procedure counts from that event if supplied within six months, otherwise from the month after it is supplied ([§ 55(3a) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html)).
+**Full care rate of a member who pays alone, by children** (derived from [PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html) and [§ 55(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html)): no children, 23 or older 4.2%; one child (any age) or all children 25 or older 3.6%; two under 25 3.35%; three 3.1%; four 2.85%; five or more 2.6%. Qualifying parents do not pay the surcharge when the children are grown. Apply the adoption and stepchild exclusions in § 55(4); do not treat every legal or informal parental relationship as sufficient. Members born before 1 January 1940, military/civil service members and the specified SGB II benefit recipients are also exempt from it. Reductions apply through the month a qualifying child turns or would have turned 25, subject to the statute's exclusion of children already 25. For self-payers, the care fund must have proof of parenthood and children under 25, unless those facts are already known. Evidence received through the automatic procedure counts from the birth month or comparable qualifying event. Evidence outside that procedure counts from that event if supplied within six months, otherwise from the month after it is supplied ([§ 55(3a) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html)).
 
 **Reference values and ceilings** ([SVBezGrV 2026](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3))
 
@@ -108,15 +108,15 @@ All figures are for 2026 unless the row says otherwise. Amounts marked "check" u
 | What | 2026 | Working | Source |
 | --- | --- | --- | --- |
 | Minijob limit, per month | EUR 603 | EUR 13.90 minimum wage x 130 / 3 = EUR 602.33, rounded up ([§ 8(1a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html), [MiLoV5](https://www.gesetze-im-internet.de/milov5/__1.html)) |  |
-| Voluntary member's minimum base, per month | EUR 1,318.33 | 1/90 of EUR 3,955 per day x 30 = EUR 3,955 / 3 ([§ 240(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html)) |  |
-| KSK member's minimum health base, per month | EUR 659.17 | 1/180 per day x 30 = EUR 3,955 / 6 ([§ 234(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__234.html)) |  |
-| Health, lowest and highest, 14.0% + 2.9% = 16.9% | EUR 222.80 and EUR 982.31 (check) | EUR 1,318.33 and EUR 5,812.50 x 16.9% | https://www.bundesgesundheitsministerium.de/beitraege |
-| Health with sick pay, 14.6% + 2.9% = 17.5% | EUR 230.71 and EUR 1,017.19 (check) | Same bases x 17.5% | same |
-| Care at 3.6%, lowest and highest (a notice can differ by a cent) | EUR 47.46 and EUR 209.25 | Same bases x 3.6% ([§ 57(4) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__57.html)) | same |
-| Pension, lowest and highest monthly contribution | EUR 112.16 and EUR 1,571.70 | EUR 603 and EUR 8,450 x 18.6% ([§ 165](https://www.gesetze-im-internet.de/sgb_6/__165.html), [§ 167 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__167.html)) |  |
-| Pension, standard and half standard (self-employed) | EUR 735.63 and EUR 367.82 | EUR 3,955 and EUR 3,955 / 2 x 18.6% | https://www.gesetze-im-internet.de/svbezgrv_2026/__1.html |
-| Unemployment on application, full and start phase | EUR 102.83 and EUR 51.42 | EUR 3,955 and EUR 3,955 / 2 x 2.6% ([§ 345b SGB III](https://www.gesetze-im-internet.de/sgb_3/__345b.html)) |  |
-| Tax cap for pension contributions, single (doubled for spouses assessed jointly) | EUR 30,826 | EUR 124,800 x 24.7% = EUR 30,825.60, rounded up to a full euro ([§ 10(3) EStG](https://www.gesetze-im-internet.de/estg/__10.html)) |  |
+| Voluntary member's minimum base, per month | EUR 1,318.33 | Derived from [2026 reference](https://www.gesetze-im-internet.de/svbezgrv_2026/__1.html): 1/90 of EUR 3,955 per day x 30 = EUR 3,955 / 3 ([§ 240(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html)) |  |
+| KSK member's minimum health base, per month | EUR 659.17 | Derived from [2026 reference](https://www.gesetze-im-internet.de/svbezgrv_2026/__1.html): 1/180 per day x 30 = EUR 3,955 / 6 ([§ 234(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__234.html)) |  |
+| Health, lowest and highest, derived 14.0% + 2.9% = 16.9% | EUR 222.80 and EUR 982.31 (check) | EUR 1,318.33 and EUR 5,812.50 x 16.9% | https://www.bundesgesundheitsministerium.de/beitraege |
+| Health with sick pay, derived 14.6% + 2.9% = 17.5% | EUR 230.71 and EUR 1,017.19 (check) | Same bases x 17.5% | same |
+| Care at 3.6%, derived lowest and highest (a notice can differ by a cent) | EUR 47.46 and EUR 209.25 | Same bases x [3.6%](https://www.gesetze-im-internet.de/pbav_2025/__1.html) ([§ 57(4) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__57.html)) | same |
+| Pension, derived lowest and highest monthly contribution | EUR 112.16 and EUR 1,571.70 | [EUR 603](https://www.gesetze-im-internet.de/sgb_4/__8.html) and [EUR 8,450](https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html) x [18.6%](https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html) ([§ 165](https://www.gesetze-im-internet.de/sgb_6/__165.html), [§ 167 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__167.html)) |  |
+| Pension, derived standard and half standard (self-employed) | EUR 735.63 and EUR 367.82 | EUR 3,955 and EUR 3,955 / 2 x [18.6%](https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html), [base](https://www.gesetze-im-internet.de/sgb_6/__165.html) | https://www.gesetze-im-internet.de/svbezgrv_2026/__1.html |
+| Unemployment on application, derived full and start phase | EUR 102.83 and EUR 51.42 | [EUR 3,955](https://www.gesetze-im-internet.de/svbezgrv_2026/__1.html) and EUR 3,955 / 2 x [2.6%](https://www.gesetze-im-internet.de/sgb_3/__341.html) ([§ 345b SGB III](https://www.gesetze-im-internet.de/sgb_3/__345b.html)) |  |
+| Derived tax cap for pension contributions, single (doubled for spouses assessed jointly) | EUR 30,826 | [EUR 124,800](https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html) x [24.7%](https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html) = EUR 30,825.60, rounded up to a full euro ([§ 10(3) EStG](https://www.gesetze-im-internet.de/estg/__10.html)) |  |
 
 **KSK thresholds**
 
@@ -133,16 +133,16 @@ Used now for the final health assessment of 2025 when the 2025 tax notice arrive
 | What | 2025 value | Source |
 | --- | --- | --- |
 | Reference amount, per month | EUR 3,745 | [§ 1 SVBezGrV 2025](https://www.gesetze-im-internet.de/svbezgrv_2025/__1.html) |
-| Health and care minimum base of a voluntary member, per month (EUR 3,745 / 3) | EUR 1,248.33 | [§ 240(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html) |
+| Derived health and care minimum base of a voluntary member, per month (EUR 3,745 / 3) | EUR 1,248.33 | [2025 reference](https://www.gesetze-im-internet.de/svbezgrv_2025/__1.html), [§ 240(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html) |
 | General JAEG, per year | EUR 73,800 | [§ 2 SVBezGrV 2025](https://www.gesetze-im-internet.de/svbezgrv_2025/__2.html) |
 | Health and care ceiling, per year and per month | EUR 66,150 and EUR 5,512.50 | [§ 2(2) SVBezGrV 2025](https://www.gesetze-im-internet.de/svbezgrv_2025/__2.html) |
 | Pension ceiling, general scheme, per year and per month | EUR 96,600 and EUR 8,050 | [§ 4 SVBezGrV 2025](https://www.gesetze-im-internet.de/svbezgrv_2025/__4.html) |
 | Average additional health rate for 2025 (2.9% less the 0.4-point rise) | 2.5% | [Finance ministry monthly report](https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-3-sollbericht-2026.html) |
 
 - The care base rate of 3.6% applied throughout 2025 as well ([§ 1 PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html)).
-- The levy rate for 2025 fees: the Künstlersozialabgabe-Verordnung 2024 (BGBl. 2023 I Nr. 240) sets the rate only "im Jahr 2024" (5.0%), and it expired at the end of 2025 ([§ 2 KSAbg2026V](https://www.gesetze-im-internet.de/ksabg2026v/BJNR0DC0A0025.html)). The ordinance that sets the 2025 rate was not found on an official page for this skill: take the 2025 rate from the KSK's notice.
+- The 2025 artists' levy rate is 5.0%, set by [§ 1 KSAbg2025V](https://www.gesetze-im-internet.de/ksabg2025v/__1.html). Apply the 2025 levy-duty rules, not the 2026 EUR 1,000 test. The former EUR 700 small-fee boundary is not implemented here. Check this point with one of our partner accountants.
 
-**Already enacted for 2027.** The health and care ceiling will be the special JAEG plus EUR 3,600 ([§ 223(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__223.html)). The 2027 amounts come in the next ordinance, expected in late 2026 (check).
+**Already enacted for 2027.** Section 223(4) sets the health ceiling as the special JAEG plus EUR 3,600 ([§ 223(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__223.html)). This is not proof of the care ceiling under § 55(2) SGB XI. No 2027 amount or implementation method is supplied here. Check this point with one of our partner accountants.
 
 ## The taxable base
 
@@ -151,26 +151,25 @@ Used now for the final health assessment of 2025 when the 2025 tax notice arrive
 **Who is in which system.**
 
 - A main-occupation self-employed person is not compulsorily insured as an employee ([§ 5(5) SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html)); KSK members are the exception.
-- When compulsory or family insurance ends, cover continues as voluntary membership from the next day, unless the member leaves within two weeks of the fund's notice and proves other cover ([§ 188(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__188.html)).
-- A person outside the statutory system can join only in the cases in [§ 9 SGB V](https://www.gesetze-im-internet.de/sgb_5/__9.html). The main case is after leaving compulsory insurance with 24 months of cover in the last five years, or 12 months without a break just before, notified to the fund within three months.
-- A person who becomes compulsorily insured after turning 55 stays insurance-free if there was no statutory cover in the five years before and at least half of that time was insurance-free, exempt or main-occupation self-employed ([§ 6(3a) SGB V](https://www.gesetze-im-internet.de/sgb_5/__6.html)).
-- Residents within [§ 193(3) VVG](https://www.gesetze-im-internet.de/vvg_2008/__193.html) must maintain a private policy with an insurer authorised to operate in Germany, covering at least outpatient and inpatient treatment. The combined absolute and percentage deductibles for those treatments must be capped at EUR 5,000 per insured person and calendar year; for Beihilfe entitlement the cap follows the proportion not covered by Beihilfe. Apply the express statutory exceptions: statutory-insured or compulsorily insured persons; free medical care, Beihilfe or comparable entitlements within their scope; Asylum Seekers Benefits Act entitlement; and the specified ongoing SGB XII chapters 3, 4 and 7 or SGB IX part 2 benefit recipients whose benefit receipt began before 1 January 2009, including interruptions shorter than one month. This is not a private-policy duty for every resident outside GKV. A voluntary statutory member is compulsorily insured in social care insurance ([§ 20(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__20.html)).
+- When compulsory or family insurance ends, cover continues as voluntary membership from the next day, unless the member leaves within two weeks of the fund's notice and proves other cover ([§ 188(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__188.html)). This continuation is subject to the paragraph's family-insurance/§ 19(2) exceptions, inability to establish residence after exhaustive inquiries, and separate seasonal-worker entry rule. For those exceptions: Check this point with one of our partner accountants.
+- Entry from outside GKV under [§ 9 SGB V](https://www.gesetze-im-internet.de/sgb_5/__9.html), return after age 55 under [§ 6(3a), (3b)](https://www.gesetze-im-internet.de/sgb_5/__6.html), and the private-policy duty and exceptions under [§ 193(3) VVG](https://www.gesetze-im-internet.de/vvg_2008/__193.html) require an individual coverage decision. The former 24-month/five-year or continuous 12-month history, three-month entry window and EUR 5,000 deductible reference are not a standalone eligibility method. Check this point with one of our partner accountants.
+- Voluntary GKV members are compulsorily insured in social care insurance ([§ 20(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__20.html)).
 
 **What a voluntary member pays** ([§ 240 SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html)).
 
-- **Base:** the member's whole economic capacity, not only profit: capital and letting income count too. The base is at least EUR 1,318.33 a month and at most the ceiling of EUR 5,812.50 ([§ 223(3) SGB V](https://www.gesetze-im-internet.de/sgb_5/__223.html)). If the spouse is not in a statutory fund, the spouse's income can count, less set amounts for children (§ 240(5)).
-- **Rate:** 14.0% plus the fund's additional rate. It is 14.6% plus that rate only if the member has declared to the fund that the membership shall include sick pay ([§ 44(2) SGB V](https://www.gesetze-im-internet.de/sgb_5/__44.html)).
+- **Base:** the member's whole economic capacity, not only profit: capital and letting income count too, subject to statutory exclusions (including the EUR 300 social-security part of the start-up grant and qualifying passed-on care allowance under § 240(2)). The base is at least EUR 1,318.33 a month and at most the ceiling of EUR 5,812.50 ([§ 223(3) SGB V](https://www.gesetze-im-internet.de/sgb_5/__223.html)). If the spouse is not in a statutory fund, the spouse's income can count, less the applicable child deductions and exclusions in § 240(5). A spouse-income allocation is not computed here. Check this point with one of our partner accountants.
+- **Rate:** 14.0% plus the fund's additional rate. It is 14.6% plus that rate only if the member has declared to the fund that the membership shall include sick pay ([§ 44(2) SGB V](https://www.gesetze-im-internet.de/sgb_5/__44.html)). An election received during existing incapacity only takes effect after that incapacity ends; binding periods and optional tariffs need a separate decision. Check this point with one of our partner accountants.
 - **Who pays:** the member pays all of the health contribution ([§ 250(2) SGB V](https://www.gesetze-im-internet.de/sgb_5/__250.html)). The member also pays all of the care contribution, on the same base ([§ 57(4)](https://www.gesetze-im-internet.de/sgb_11/__57.html), [§ 59(4) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__59.html)).
 
-**Provisional and final assessment** (§ 240(1) and (4a) SGB V).
+**Provisional and final assessment** (§ 240(1) and (4a) SGB V). The provisional/final procedure in paragraph 4a does not apply when the latest tax notice or the member's declaration already puts the base at the ceiling. This section otherwise assumes the ordinary active self-employed member, without pension/student/benefit or suspended-cover special bases.
 
 - **Provisional:** set from the latest income tax notice, from the month after it was issued. At the start of self-employment, set from the proven expected income.
 - **Final:** set from the year's actual income once that year's tax notice is presented. Overpayments are refunded; shortfalls are charged.
-- **No proof within three years:** if actual income is not proven within three years after the year ends, when the fund asks, the year is set finally on the ceiling. This is held off for twelve months where the member shows that no tax notice has been issued yet. Within twelve months of an assessment on the ceiling, the member can have it redone by presenting the tax notice.
-- **Proof requested and not given:** the fund charges on the ceiling for as long as proof is missing. A new assessment can be applied for within twelve months. Where there are sufficient signs that income does not exceed the minimum base, the fund must reassess on its own initiative.
+- **No proof within three years:** if actual income is not proven within three years after the year ends, when the fund asks, the year is set finally on the ceiling. This is held off for twelve months where the member shows that no tax notice has been issued yet. A ceiling assessment already made must be withdrawn on the specified proof that no notice yet exists. Within twelve months after notification of the final ceiling assessment, the member can apply for reassessment and present the tax notice.
+- **Proof requested and not given:** the fund charges on the ceiling for as long as proof is missing. A new assessment can be applied for within twelve months after the fund notifies its assessment, supplying the actual-income proof. Where there are sufficient signs that income does not exceed the minimum base, the fund must reassess on its own initiative.
 - **Letting income and time limits:** letting income is handled the same way. The time limit on the fund's claim does not run until the tax notice is presented.
 
-**Case: high income, sick pay, two children.** Profit EUR 90,000, sick pay elected, two children under 25, the fund's additional rate assumed 2.5%. The base is capped at EUR 5,812.50. Health EUR 5,812.50 x 17.1% = EUR 993.94; care EUR 5,812.50 x 3.35% = EUR 194.72 a month.
+**Case: high income, sick pay, two children (ordinary voluntary membership and no other income).** Profit EUR 90,000, sick pay elected, two children under 25, the fund's additional rate assumed 2.5%. The base is capped at EUR 5,812.50. Health EUR 5,812.50 x 17.1% = EUR 993.94; care EUR 5,812.50 x 3.35% = EUR 194.72 a month.
 
 ### Pension insurance of the self-employed
 
@@ -183,12 +182,12 @@ Used now for the final health assessment of 2025 when the 2025 tax notice arrive
 5. Artists and publicists under the KSVG (through the KSK).
 6. Home-based traders.
 7. Coastal skippers and fishers who are part of the crew (or fish without a vessel) and regularly employ no more than four employees subject to insurance.
-8. Craftspeople in the Handwerksrolle who themselves meet the conditions for entry.
+8. Craftspeople in the Handwerksrolle who personally meet the entry conditions, excluding ancillary/secondary businesses under §§ 2–3 Handwerksordnung and continuations under § 4; for a registered partnership, test each partner's personal qualification.
 9. People who regularly employ no employee subject to insurance and work permanently and essentially for one client. For partners, the partnership's clients count, and the partnership's employees count as their employees.
 
 For groups 1, 2, 7 and 9, apprentices count as employees and Minijobbers do not.
 
-- **Marginal work is free.** Self-employed work whose income is regularly not above the Minijob limit is insurance-free in that work ([§ 5(2) no. 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__5.html), [§ 8(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). The limit in force on 1 January (EUR 603 a month in 2026) holds all year. So a teacher with no insured staff is insured once teaching income is more than EUR 603 a month. The same test applies to every group, not only teachers.
+- **Marginal work is free.** Self-employed work whose income is regularly not above the Minijob limit is insurance-free in that work ([§ 5(2) no. 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__5.html), [§ 8(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). The limit in force on 1 January (EUR 603 a month in 2026) holds all year. So a teacher with no insured staff is insured once teaching income is more than EUR 603 a month. Check aggregation under § 5(2) SGB VI/§ 8 SGB IV. An income drop due to partial incapacity is not cleared by this summary: Check this point with one of our partner accountants.
 - **Register** within three months of starting for groups 1, 2, 3 and 9. For craftspeople, § 190a(1) instead requires notice of the personally met Handwerksrolle-qualification conditions and the specified move from an ancillary to a main trade within three months after the relevant facts arise; no notice is required where those facts are already entered in the Handwerksrolle ([§ 190a SGB VI](https://www.gesetze-im-internet.de/sgb_6/__190a.html)).
 - **Who pays:** the self-employed person alone. Home-based traders share half and half with the traders they work for. For KSK members the KSK pays and collects half from the member ([§ 169 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__169.html)).
 - **When due:** at the latest on the third-last bank working day of the month the work is done ([§ 23(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23.html)).
@@ -199,34 +198,34 @@ For groups 1, 2, 7 and 9, apprentices count as employees and Minijobbers do not.
 - **Proven income:** if lower or higher income is proven, that income is used, but at least twelve times the Minijob limit a year. That gives the lowest contribution of EUR 112.16 a month; the pension ceiling is the top. The proof is the profit from the insured work in the latest tax notice. It is uprated by the change in average pay and grossed up to a full year if earned in part of the year.
 - **New tax notice:** it must reach the insurer within two calendar months of issue. It applies from the month after it is presented, and at the latest from the third month after issue.
 - **Current income:** on application, current income is used if it is expected to be at least 30% below the tax-notice income ([§ 165(1a) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__165.html)).
-- **Start phase:** until the end of the third calendar year after the year of starting, the statute sets the base at half the reference amount (EUR 367.82 a month), or the full amount on application. Ask the insurer whether a lower proven income can be used in this phase (check).
+- **Start phase:** until the end of the third calendar year after the year of starting, the statute sets the base at half the reference amount (EUR 367.82 a month), or the full amount on application. The separate lower-income route in the start phase is not established by this Guide. Check this point with one of our partner accountants.
 
 **Exemptions on application** ([§ 6 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__6.html)).
 
 - **Craftspeople:** after at least 18 years of compulsory contributions.
 - **Group 9 (one client):** for three years after first taking up such work, and again for a second such activity. Also a person first liable under group 9 after turning 58, following earlier self-employment. Renaming a business, or keeping its purpose, is not a new start.
-- **Chamber professions:** members of a professional pension fund with compulsory chamber membership, applying through the fund.
+- **Chamber professions:** exemption under § 6(1) no. 1 has additional historical chamber, contribution and benefit conditions; membership alone is insufficient. Apply through the professional fund. Check this point with one of our partner accountants.
 - **Timing:** an ordinary self-employed pension exemption applied for within three months after its conditions are met works from that day; a later application works from the day the application arrives (§ 6(4) SGB VI).
 
 **No duty: voluntary or on application.**
 
-- **Voluntary contributions:** anyone not compulsorily insured, from age 16, may pay any amount from EUR 112.16 to EUR 1,571.70 a month ([§ 7](https://www.gesetze-im-internet.de/sgb_6/__7.html), [§ 161(2) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__161.html)). Payments for a year count only if made by 31 March of the next year ([§ 197(2)](https://www.gesetze-im-internet.de/sgb_6/__197.html)). Not allowed once a full old-age pension has been granted and the month of reaching the standard retirement age has passed.
-- **Compulsory insurance on application:** a self-employed person may apply within five years of starting, or of the end of compulsory insurance from that work ([§ 4(2) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__4.html)). Cover starts when the conditions are first met if applied for within three months, otherwise the day after the application arrives. It ends only when its conditions end; the law names no right to cancel it. Tell the client before applying.
+- **Voluntary contributions:** anyone not compulsorily insured, from age 16, may pay any amount from EUR 112.16 to EUR 1,571.70 a month ([§ 7](https://www.gesetze-im-internet.de/sgb_6/__7.html), [§ 161(2) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__161.html)). The ordinary payment cut-off for a year is 31 March of the next year ([§ 197(2)](https://www.gesetze-im-internet.de/sgb_6/__197.html)). Under § 197(3), special hardship and a no-fault payment obstacle allow a late-payment application within three months after the obstacle ends, then payment within the insurer's reasonable period. Voluntary insurance is not allowed once a full old-age pension has been granted and the month of reaching the standard retirement age has passed.
+- **Compulsory insurance on application:** a person engaged in self-employment that is not merely temporary may apply within five years of starting, or of the end of compulsory insurance from that work ([§ 4(2) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__4.html)). Cover starts when the conditions are first met if applied for within three months, otherwise the day after the application arrives. It ends only when its conditions end; the law names no right to cancel it. Tell the client before applying.
 
 ### Artists and publicists: the Künstlersozialkasse
 
-**Who is insured** ([§ 1 KSVG](https://www.gesetze-im-internet.de/ksvg/__1.html)). A self-employed artist or publicist is insured in pension, health and care when both conditions are met:
+**Who is insured** ([§ 1 KSVG](https://www.gesetze-im-internet.de/ksvg/__1.html)). A self-employed artist or publicist is insured in pension, health and care under § 1 when these conditions are met, subject to the income rule below and branch-specific exclusions/exemptions under §§ 4–7 KSVG (do not infer admission from the job title alone):
 
 - the work is done for a living and not just for a short time;
 - the person employs no more than one employee in that work (apprentices and Minijobbers do not count).
 
-The KSK decides whether work is artistic or publicist.
+The KSK decides admission. Separate employment, other pensions and branch-specific exclusions/exemptions are not cleared by the two § 1 conditions. Check this point with one of our partner accountants.
 
 (The income thresholds are in the rates table above.)
 
-- **When the income limit bites:** it is lowered pro rata for part-year work and does not apply in the first three years after the work was first taken up. Cover also stays in place so long as income falls to the limit or below no more than twice in six calendar years.
+- **When the income limit bites:** it is lowered pro rata for part-year work and does not apply in the first three years after the work was first taken up. The beginner period is extended by periods without compulsory insurance under the KSVG or with insurance freedom under § 5(1) no. 8 KSVG. Lower the income limit proportionately also for sick-pay or parental-benefit periods. Cover also stays in place so long as income falls to the limit or below no more than twice in six calendar years; shortfalls in 2020–2022 do not count ([§ 3 KSVG](https://www.gesetze-im-internet.de/ksvg/__3.html)).
 
-**Member's shares.** The member pays half of each contribution to the KSK.
+**Member's shares.** Pension and health are shared; care has the adjustments below.
 
 - **Pension:** half ([§ 15 KSVG](https://www.gesetze-im-internet.de/ksvg/__15.html)).
 - **Health:** half at the general rate plus half the fund's additional rate. Without a sick pay claim the reduced rate is used ([§ 16(1) KSVG](https://www.gesetze-im-internet.de/ksvg/__16.html)).
@@ -237,14 +236,14 @@ The KSK decides whether work is artistic or publicist.
 
 **The artists' levy (Künstlersozialabgabe)** ([§ 24 KSVG](https://www.gesetze-im-internet.de/ksvg/__24.html)).
 
-- **Typical users** always owe it: publishers, theatres, orchestras, broadcasters, galleries, advertising or PR for third parties, training schools for artistic work and similar.
+- **Typical users:** test the precise § 24(1) list, including publishers, broadcasters, galleries, advertising or PR for third parties and artistic training schools. Theatres (excluding cinemas), orchestras/choirs and performance agencies have the statutory predominant-purpose conditions. The paragraph 2 small-fee limit does not apply to paragraph 1 users.
 - **Other businesses** owe it when they commission self-employed artists or publicists for their own advertising or PR, or to use their work in the business to earn income. This applies only if the fees for orders placed in the calendar year exceed EUR 1,000 in total. Once the limit is passed, the whole amount is levied.
 - **Exceptions (use-in-business case only):** fees at events when no more than three such events are held in a year, and music clubs for their regular choir leaders or conductors.
-- **Base and rate:** all fees paid in the year to self-employed artists or publicists, insured or not, net of VAT shown separately. Payments to collecting societies and tax-free expense allowances are left out ([§ 25 KSVG](https://www.gesetze-im-internet.de/ksvg/__25.html)). The rate is 4.9% for 2026. The levy is a cost of the business, never deducted from the artist.
-- **Report:** the year's total goes to the KSK by 31 March of the next year; otherwise the KSK estimates ([§ 27 KSVG](https://www.gesetze-im-internet.de/ksvg/__27.html)).
+- **Base and rate:** all fees paid in the year to self-employed artists or publicists, insured or not, net of VAT shown separately. Payments for the specified rights to collecting societies, tax-free expense allowances and the tax-free income under § 3 nos. 26 and 26a EStG are left out ([§ 25 KSVG](https://www.gesetze-im-internet.de/ksvg/__25.html)). The rate is 4.9% for 2026. Record the levy as a business cost. Recovery from an artist or unusual third-party, commission and foreign-intermediary arrangements are not determined here. Check this point with one of our partner accountants.
+- **Report:** the year's total goes to the KSK by 31 March of the next year; if it remains missing, late, incorrect or incomplete after a request, the KSK or the requesting pension insurer estimates ([§ 27 KSVG](https://www.gesetze-im-internet.de/ksvg/__27.html)).
 - **Prepayments:** due within ten days after each month. With full prior-year duty, each is the current rate on one twelfth of last year's qualifying fees; if duty existed for only part of that year, divide those fees by the number of begun calendar months in which duty existed. Until 1 March, use the amount due for the preceding December. The first prepayment duty begins ten days after the end of the month up to which the levy first had to be accounted for. None is due if the monthly amount would not exceed EUR 40 ([§ 27(3), (4) KSVG](https://www.gesetze-im-internet.de/ksvg/__27.html)). The KSK can reduce prepayments on application if this year's fees will be much lower. For stipulated duty from July through December 2025 and EUR 12,000 qualifying fees, six begun duty months give the 2026 monthly reference EUR 12,000 / 6 × 4.9% = EUR 98, rather than EUR 49 under a full-year denominator; the preceding-December rule still applies until 1 March. A mid-July start still counts July.
 
-**Case: KSK member.** Graphic designer, expected 2026 income reported as EUR 30,000 (EUR 2,500 a month), childless, age 28, sick pay claim, additional rate assumed 2.9%. Pension share EUR 2,500 x 18.6% / 2 = EUR 232.50; health share EUR 2,500 x 17.5% / 2 = EUR 218.75; care share EUR 2,500 x 3.6% / 2 plus the whole surcharge EUR 2,500 x 0.6% = EUR 60.00. Total EUR 511.25 to the KSK, due on the 5th of the next month.
+**Case: KSK member (admission and effective childless status established).** Graphic designer, expected 2026 income reported as EUR 30,000 (EUR 2,500 a month), childless, age 28, sick pay claim, additional rate assumed 2.9%. Pension share EUR 2,500 x 18.6% / 2 = EUR 232.50; health share EUR 2,500 x 17.5% / 2 = EUR 218.75; care share EUR 2,500 x 3.6% / 2 plus the whole surcharge EUR 2,500 x 0.6% = EUR 60.00. Total EUR 511.25 to the KSK, due on the 5th of the next month.
 
 **Case: the artists' levy.** An advertising agency (a typical user under § 24(1) KSVG) paid EUR 20,000 net of VAT in 2026 to freelance designers: levy EUR 980.00, reported by 31 March 2027. A bakery that paid EUR 800 in 2026 for a logo for its own advertising, and nothing else, owes no levy for 2026.
 
@@ -252,9 +251,9 @@ The KSK decides whether work is artistic or publicist.
 
 **Accident insurance.**
 
-- **Notify:** tell the competent accident insurer within one week of starting; a trade registration within that week counts. Changes to the type of business are reported within four weeks ([§ 192 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__192.html)).
-- **Owner's cover:** most owners are not insured by law but can apply in writing or electronically. Cover starts the day after the application arrives and lapses if a contribution is unpaid two months after it falls due ([§ 6 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__6.html)). Insured by law, with no application: among others self-employed people in the health service or welfare work (for example midwives, physiotherapists, carers) and home-based traders ([§ 2(1) no. 6 and 9 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__2.html)). They owe the contribution themselves (§ 150(1)). Some insurers also cover entrepreneurs through their own statute ([§ 3 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__3.html)): ask the insurer for the trade.
-- **Payment:** the entrepreneur pays for staff and, if insured, for the owner ([§ 150(1)](https://www.gesetze-im-internet.de/sgb_7/__150.html)). Contributions are assessed after the year ends ([§ 152 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__152.html)) and are due on the 15th of the month after the notice ([§ 23(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23.html)). During the year the insurer may charge advance payments up to the expected yearly requirement ([§ 164(1) SGB VII](https://www.gesetze-im-internet.de/sgb_7/__164.html)). Each insurer sets its own rates; this skill gives none.
+- **Notify:** tell the competent accident insurer within one week of starting; a trade registration within that week counts. Changes relevant to jurisdiction, risk classes or contribution calculation are reported within four weeks ([§ 192 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__192.html)).
+- **Owner's cover:** determine first whether compulsory coverage follows § 2 or the insurer's statute under § 3. Eligible entrepreneurs can otherwise apply in writing or electronically under § 6; householders and the specified non-commercial fishing, agricultural and guest fishing/hunting categories are excluded. Voluntary § 6 cover starts the day after the application arrives and lapses if a contribution or advance is unpaid within two months after it falls due; a new application remains ineffective until the arrears are paid ([§ 6 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__6.html)). Insured by law, with no application: among others self-employed people in the health service or welfare work (for example midwives, physiotherapists, carers) and home-based traders ([§ 2(1) no. 6 and 9 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__2.html)). They owe the contribution themselves (§ 150(1)). Some insurers also cover entrepreneurs through their own statute ([§ 3 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__3.html)): ask the insurer for the trade.
+- **Payment:** the entrepreneur pays for staff and, if insured, for the owner ([§ 150(1)](https://www.gesetze-im-internet.de/sgb_7/__150.html)). Contributions are assessed after the year ends ([§ 152 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__152.html)) and are due on the 15th of the month after the notice ([§ 23(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23.html)). During the year the insurer may charge advance payments up to the expected yearly requirement ([§ 164(1) SGB VII](https://www.gesetze-im-internet.de/sgb_7/__164.html)). Each insurer sets its own rates; this Guide gives none.
 
 **Unemployment insurance on application** ([§ 28a SGB III](https://www.gesetze-im-internet.de/sgb_3/__28a.html)).
 
@@ -267,18 +266,7 @@ The KSK decides whether work is artistic or publicist.
 - **Suspension:** later compulsory insurance under §§ 25 or 26 or insurance-free status under § 27 suspends this insurance; a § 27(2) minor job does not. Paragraph 4 does not list § 28 in this suspension clause; the separate end-of-cover rules remain.
 - **Base:** the monthly reference amount, halved until the end of the calendar year after the year of starting ([§ 345b SGB III](https://www.gesetze-im-internet.de/sgb_3/__345b.html)). At 2.6% that is EUR 102.83, or EUR 51.42 a month.
 - **Payment:** the insured pays alone, to the employment agency; due date as in the agency's notice (check). The § 24 SGB IV late surcharge does not apply ([§ 349a SGB III](https://www.gesetze-im-internet.de/sgb_3/__349a.html)).
-- **End of cover:** after more than three months' arrears (at the end of the last day paid for); by notice, first possible after five years, three months to the end of a month; or when the conditions end.
-
-### Boundaries and exceptions
-
-| Situation | Rule | Source |
-| --- | --- | --- |
-| Employed with a side business | Health follows the job unless self-employment is the main occupation. If the job is the main occupation, the freelance income carries no health or care contribution, unless the employee also draws a statutory pension or a pension-like payment; then it counts too, if it and any pension-like payments together exceed 1/20 of the monthly reference amount (EUR 197.75 in 2026) ([§ 226(1) no. 4 and (2) SGB V](https://www.gesetze-im-internet.de/sgb_5/__226.html)). Employing someone above the Minijob level raises that presumption | [§ 5(5) SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html) |
-| Teacher or carer with one employee above the Minijob level | Not compulsorily insured under § 2 no. 1 or 2 (a Minijobber does not count; an apprentice does) | [§ 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__2.html) |
-| Self-employed income at or below the Minijob limit | Pension insurance-free in that work | [§ 5(2) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__5.html) |
-| Artist employing two employees above the Minijob level | Not insured under the KSVG | [§ 1 KSVG](https://www.gesetze-im-internet.de/ksvg/__1.html) |
-| Business with own-advertising fees of EUR 1,000 or less in the year | No levy; the limit does not help a typical user under § 24(1) | [§ 24(2) KSVG](https://www.gesetze-im-internet.de/ksvg/__24.html) |
-| Late statutory contributions | 1% for each month started, on arrears rounded down to EUR 50; not charged separately under EUR 150. Not for unemployment insurance on application | [§ 24(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__24.html), [§ 349a SGB III](https://www.gesetze-im-internet.de/sgb_3/__349a.html) |
+- **End of cover:** after more than three months' arrears (at the end of the last day paid for); by notice, first possible after five years, three months to the end of a month; on the last day the activity conditions hold; on the specified wage-replacement benefits; or in § 28 insurance-free cases.
 
 ## Deadlines and filing
 
@@ -288,23 +276,23 @@ Registration windows: pension registration follows the group-specific § 190a SG
 
 | Contribution | Due | Source |
 | --- | --- | --- |
-| Voluntary health and care member | Under the fund's statute and the funds' association's rules; ordinarily by the 15th of the month after the contribution month (check the notice) | [§ 23(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23.html) |
+| Voluntary health and care member | Under the fund's statute and the funds' association's rules; no individual due date is determined here. Check this point with one of our partner accountants. | [§ 23(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23.html) |
 | Compulsory pension, self-employed | Third-last bank working day of the month the work is done | [§ 23(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23.html) |
-| Voluntary pension | Counts for a year only if paid by 31 March of the next year | [§ 197(2) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__197.html) |
+| Voluntary pension | Ordinary cut-off 31 March of the next year; hardship exception under § 197(3) above | [§ 197(2) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__197.html) |
 | KSK member's shares | 5th of the next month | [§ 15 KSVG](https://www.gesetze-im-internet.de/ksvg/__15.html) |
 | Accident insurance | 15th of the month after the notice | [§ 23(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23.html) |
 | Artists' levy | Prepayments within ten days after each month; report by 31 March | [§ 27 KSVG](https://www.gesetze-im-internet.de/ksvg/__27.html) |
 
-**Income tax deduction** ([§ 10 EStG](https://www.gesetze-im-internet.de/estg/__10.html)). The owner's own contributions are private, not business expenses. They are claimed in the income tax return (filed through ELSTER).
+**Income tax deduction** ([§ 10 EStG](https://www.gesetze-im-internet.de/estg/__10.html)). Personal health/care/pension and unemployment contributions are tested as special expenses, rather than booked as business costs. Section 10 only applies where the payment is neither a business expense nor an employment expense. Use contributions after refunds and tax-free subsidies, qualifying insurer/recipient and § 10(2) conditions; cross-border tax-exempt-income cases require separate review. Business accident cover is not automatically personal insurance.
 
 | Contribution | Treatment | Value |
 | --- | --- | --- |
-| Pension (statutory, KSK share, voluntary, professional funds, certain annuities) | Up to the yearly cap ([§ 10(3) EStG](https://www.gesetze-im-internet.de/estg/__10.html)) | EUR 30,826 single, doubled for spouses assessed jointly |
+| Pension (statutory, KSK share, voluntary, professional funds, certain annuities) | Up to the yearly cap ([§ 10(3) EStG](https://www.gesetze-im-internet.de/estg/__10.html)) | Derived EUR 30,826 single, doubled for spouses assessed jointly; statutory reductions, including certain employer-financed pension entitlements, still apply |
 | Basic health cover and statutory care | No cap; a statutory contribution that can give sick pay is first cut by | 4% |
 | Other insurance (unemployment, accident, supplementary health) | Within one yearly cap shared with health and care, so nothing if basic health and care already exceed it | EUR 2,800 |
 | The same cap where health costs are partly paid without own expense, or tax-free payments under § 3 no. 9, 14, 57 or 62 EStG are made (no. 57 is the KSK's share, so KSK members) | | EUR 1,900 |
 
-Whether the owner's own accident contribution can be a business expense instead is not settled by the statute pages read here: flag it for review.
+For the owner's own accident insurance, professional-fund/Rürup contract eligibility and mixed tax/subsidy situations, no individual deduction outcome is supplied. Check this point with one of our partner accountants.
 
 **Bank debits.**
 
@@ -314,30 +302,30 @@ Whether the owner's own accident contribution can be a business expense instead 
 | Private insurer | Private premium; only basic cover is deductible without a cap |
 | Künstlersozialkasse | Member's shares (private) or the business's levy prepayment (business cost): ask which |
 | Deutsche Rentenversicherung | Private; pension deduction |
-| Accident insurer (Berufsgenossenschaft) | Staff part: business cost. Owner's part: flag for review |
+| Accident insurer (Berufsgenossenschaft) | Staff part: business cost. Owner's part: Check this point with one of our partner accountants. |
 | Bundesagentur für Arbeit | Unemployment insurance on application: private, other insurance cap |
 | Finanzamt | Tax, not social insurance |
 
 ## Penalties and interest
 
 - **Late statutory contributions:** a late-payment surcharge of 1% for each month or part month started, on the arrears rounded down to the nearest EUR 50; not charged separately if under EUR 150 ([§ 24(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__24.html)). It does not apply to unemployment insurance on application ([§ 349a SGB III](https://www.gesetze-im-internet.de/sgb_3/__349a.html)). For a retrospective contribution notice, § 24(2) excludes the surcharge to the extent the debtor credibly shows lack of knowledge of the payment duty without fault.
-- **Missing income proof (voluntary health member):** the fund charges on the ceiling (EUR 5,812.50 a month) for as long as proof is missing, and finally on the ceiling if actual income is not proven within three years ([§ 240(1) and (4a) SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html)).
+- **Missing income proof (voluntary health member):** subject to the requests, reassessment rights, tax-notice delay protection and existing-ceiling exception stated above, the fund charges on the ceiling (EUR 5,812.50 a month) while proof is missing, with a final ceiling assessment after the three-year period ([§ 240(1) and (4a) SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html)).
 - **KSK arrears:** the two-month arrears/reminder and two-week remaining-balance tests require a warning in the reminder and a suspension decision. Suspension begins three days after receipt of that decision; payment of all arrears and intervening health/care shares ends it, and the KSK can end it early on an instalment agreement ([§ 16(2) KSVG](https://www.gesetze-im-internet.de/ksvg/__16.html), applied correspondingly by § 16a(2)).
-- **Owner's accident cover** lapses if a contribution is unpaid two months after it falls due ([§ 6 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__6.html)). Unemployment insurance on application ends after more than three months' arrears ([§ 28a SGB III](https://www.gesetze-im-internet.de/sgb_3/__28a.html)).
+- **Voluntary § 6 owner's accident cover** lapses if a contribution or advance is unpaid within two months after it falls due ([§ 6 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__6.html)). Unemployment insurance on application ends after more than three months' arrears ([§ 28a SGB III](https://www.gesetze-im-internet.de/sgb_3/__28a.html)).
 - **Employment found later:** back-to-start contributions apply where neither the individual one-month nor qualifying group-opinion protection above applies; retrospective late-payment surcharges are separately subject to credible no-fault lack of knowledge under § 24(2) SGB IV ([§ 7a SGB IV](https://www.gesetze-im-internet.de/sgb_4/__7a.html)).
 
 ## Cross-border points
 
 - **Territory:** German insurance duty follows work in Germany, and the rules that need no work follow residence ([§ 3 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__3.html)).
 - **Posting out and in:** a self-employed person who goes abroad for a period limited in advance stays in German insurance (Ausstrahlung); one coming in for such a period from abroad does not enter it (Einstrahlung) ([§ 4(2)](https://www.gesetze-im-internet.de/sgb_4/__4.html), [§ 5(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__5.html)).
-- **Treaties and EU law come first:** intergovernmental and supranational rules override these provisions ([§ 6 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__6.html)). For work in more than one EU or EEA state, or a stay with an A1 certificate from another state, refer: this skill does not carry those rules.
+- **Treaties and EU law come first:** intergovernmental and supranational rules override these provisions ([§ 6 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__6.html)). For work in more than one EU or EEA state, or a stay with an A1 certificate from another state, refer: this Guide does not carry those rules.
 - **People insured abroad** and cross-border commuters: refer.
 
 ## Worked examples
 
-Each example uses 2026 figures from the rates table. The fund's additional rate is assumed at the 2.9% average; a real case uses the fund's own rate and its notice.
+Each current example uses 2026 figures from the rates table. Health examples assume a full contribution month, no other assessable income or spouse allocation, no special-status base, and parenthood evidence already effective where relevant. KSK examples assume admitted membership in all three branches. The fund's additional rate in the two oa-check blocks is assumed at the 2.9% average; a real case uses the fund's own rate and its notice.
 
-**Example 1: self-employed consultant, middle income.** Profit EUR 48,000 in the latest tax notice (EUR 4,000 a month), voluntary member, no sick pay, childless, age 35, no single client. The base of EUR 4,000 lies between the minimum base and the ceiling. Health EUR 4,000 x (14.0% + 2.9%) = EUR 676.00. Care EUR 4,000 x 4.2% (childless) = EUR 168.00. Total EUR 844.00 a month. Not on the § 2 SGB VI list, so no pension duty; voluntary contributions are possible.
+**Example 1: self-employed consultant, middle income.** Profit EUR 48,000 in the latest tax notice (EUR 4,000 a month), voluntary member, no sick pay, childless, age 35, no single client, and no other § 2 listed occupation. The base of EUR 4,000 lies between the minimum base and the ceiling. Health EUR 4,000 x (14.0% + 2.9%) = EUR 676.00. Care EUR 4,000 x 4.2% (childless) = EUR 168.00. Total EUR 844.00 a month. Not on the § 2 SGB VI list, so no pension duty; voluntary contributions are possible.
 
 ```oa-check
 name: DE 2026 voluntary member, profit 48,000, childless, no sick pay
@@ -359,7 +347,7 @@ expected:
   total: 844.00
 ```
 
-**Example 2: yoga teacher in the first year, low income, one child.** Starts teaching on 1 March 2026, profit about EUR 1,000 a month, no insured staff, one child aged 10, voluntary health member without sick pay. Health: the base is lifted to the minimum of EUR 1,318.33, so health EUR 222.80 (check) and care at 3.6% EUR 47.46. Pension: a teacher with no insured staff is on the § 2 SGB VI list and EUR 1,000 is above the EUR 603 Minijob limit, so the work is not marginal. Register within three months: the nominal end of May is Sunday 31 May 2026, so the ordinary deadline is Monday 1 June 2026 under [§ 26(3) SGB X](https://www.gesetze-im-internet.de/sgb_10/__26.html). This assumes no authority notice expressly fixing the day under that provision or authority-set appointment under § 26(5). In the start phase (to the end of 2029) the base is half the reference amount: EUR 1,977.50 x 18.6% = EUR 367.82 a month, or EUR 735.63 on application. Total EUR 638.08 a month on EUR 1,000 of profit, which is why the minimum bases matter.
+**Example 2: yoga teacher in the first year, low income, one child.** Starts teaching on 1 March 2026, profit about EUR 1,000 a month, no insured staff, one child aged 10, voluntary health member without sick pay; assume no pension exemption applies. Health: the base is lifted to the minimum of EUR 1,318.33, so health EUR 222.80 (check) and care at 3.6% EUR 47.46. Pension: a teacher with no insured staff is on the § 2 SGB VI list and EUR 1,000 is above the EUR 603 Minijob limit, so the work is not marginal. Register within three months: the nominal end of May is Sunday 31 May 2026, so the ordinary deadline is Monday 1 June 2026 under [§ 26(3) SGB X](https://www.gesetze-im-internet.de/sgb_10/__26.html). This assumes no authority notice expressly fixing the day under that provision or authority-set appointment under § 26(5). In the start phase (to the end of 2029) the base is half the reference amount: EUR 1,977.50 x 18.6% = EUR 367.82 a month, or EUR 735.63 on application. Using the half-standard pension option (the lower-income start-phase question remains held), total EUR 638.08 a month on EUR 1,000 of profit, which is why the minimum bases matter.
 
 ```oa-check
 name: DE 2026 yoga teacher start phase, profit 1,000 a month, one child
@@ -386,6 +374,39 @@ expected:
   total: 638.08
 ```
 
+### Historical inputs retained separately
+
+These are comparisons with earlier versions, not additional proof of a person's status. Apply the conditions above and the year stated; never turn a bank narration into a contribution notice.
+
+- **Earlier 2026 low-income case:** EUR 9,600 a year / EUR 800 a month, one child aged 10, voluntary GKV without sick pay, assumed fund rate 2.9%. With no other income or special base, health EUR 222.80 + care EUR 47.46 = EUR 270.26. This is distinct from the EUR 1,000 yoga case.
+- **Earlier 2026 yoga case:** start 1 March 2026, EUR 2,000 monthly profit, no insured staff. Keep the pension start-phase EUR 367.82 (or full-standard EUR 735.63 on application), through the end of 2029. Health/care were not fully specified by those original facts: if separately stipulated to be ordinary voluntary GKV without sick pay, rate 2.9% and one qualifying child, health EUR 338.00 + care EUR 72.00 + half-standard pension EUR 367.82 = EUR 777.82. Without those stipulations no combined charge is usable. Check this point with one of our partner accountants.
+
+**Eight original 2025 tests.** These retain their original amounts and year. Full-month GKV tests assume no other assessable income, no special base, effective child evidence and the stated fund rate, not an inferred rate from the bank.
+
+1. Income EUR 3,500/month, no sick pay, fund rate 2.5%, childless age 35: health EUR 577.50 + care EUR 147.00 = EUR 724.50/month; twelve identical months give EUR 8,694.00. Actual annual deduction still uses the certificates.
+2. Minimum base EUR 1,248.33, fund rate 2.5%, one child, age 30, no sick pay: health EUR 205.97 + care EUR 44.94 = EUR 250.91.
+3. Income EUR 9,000/month, sick pay, fund rate 2.5%, two qualifying children under 25: capped base EUR 5,512.50; health EUR 942.64 + care EUR 184.67 = EUR 1,127.31.
+4. Admitted KSK member, income EUR 30,000/year, childless age 28: with a separately assumed sick-pay claim and 2.5% fund rate, health share EUR 213.75 + pension EUR 232.50 + care EUR 60.00 = EUR 506.25. The old EUR 105.00 full-care charge and EUR 551.25 total were wrong; without the added health premises no total is usable. Check this point with one of our partner accountants.
+5. Craftsperson five years in, income EUR 4,500/month: EUR 837.00 pension is conditional on compulsory coverage, no exemption and the insurer accepting EUR 4,500 as the adjusted contribution base. Raw profit alone does not establish that base; the standard contribution is a different route. Check this point with one of our partner accountants.
+6. Full-time employee plus EUR 8,000 annual freelance income: no separate contribution on that profit only for the compulsorily GKV-insured main-job case without pension/Versorgungsbezüge described above. Main occupation and the actual insurance status remain to be established. Check this point with one of our partner accountants.
+7. Paid health EUR 10,500 + care EUR 2,400 + pension EUR 5,580: arithmetic sum EUR 18,480.00. This is not a cleared deduction: basic-cover eligibility, sick-pay reduction, subsidies, refunds and applicable pension cap must first be established. Check this point with one of our partner accountants.
+8. Agency paid freelancers EUR 15,000 in 2025: at the proven 2025 rate of 5.0%, arithmetic is EUR 750. Liability still requires payments for qualifying artistic/publicist work under the 2025 rules; the original word “freelancers” alone does not establish it. Check this point with one of our partner accountants.
+
+**Original six 2025 bank lines (amounts and dates unchanged):**
+
+```text
+15.04.2025 ; TECHNIKER KRANKENKASSE ; LASTSCHRIFT ; BEITRAG APRIL 2025 ; -577.50 ; EUR
+15.04.2025 ; TECHNIKER KRANKENKASSE ; LASTSCHRIFT ; PV BEITRAG ; -147.00 ; EUR
+15.03.2025 ; KUENSTLERSOZIALKASSE ; LASTSCHRIFT ; BEITRAG MAERZ ; -551.25 ; EUR
+30.04.2025 ; VBG VERWALTUNGS-BG ; UEBERWEISUNG ; BEITRAG 2024 ; -85.00 ; EUR
+28.02.2025 ; DEUTSCHE RENTENVERSICHERUNG BUND ; UEBERWEISUNG ; FREIWILLIGER BEITRAG FEB ; -500.00 ; EUR
+10.03.2025 ; FINANZAMT MUENCHEN ; LASTSCHRIFT ; EST VORAUSZAHLUNG Q1 ; -3,200.00 ; EUR
+```
+
+The two TK amounts match test 1 arithmetically but do not establish cover, fund rate, contribution month, due date or tax deduction. The KSK debit EUR 551.25 cannot be reconstructed from the stipulated test 4; obtain its notice. The BG EUR 85.00 is not evidence of a typical charge or a personal deduction. The pension EUR 500.00 needs a certificate; the old EUR 100.07 minimum was not a proven 2025 minimum. The Finanzamt line is a tax-payment candidate, not social insurance. Check this point with one of our partner accountants.
+
+The later six 2026 pattern examples also remain identification candidates only: TK KV and PV on 15 April for March; KSK on 7 April for March; VBG on 15 May for 2025; voluntary pension on 27 February; Finanzamt on 10 March for Q1. Each originally used `-[amount]`, not a numeric contribution. No timing or amount is cleared from those patterns. Check this point with one of our partner accountants.
+
 ## Ask the client first
 
 - Employed, self-employed, or both? If both, which is the main occupation, and do you employ anyone above the Minijob level?
@@ -400,11 +421,13 @@ expected:
 
 **When to refuse or refer**
 
+The following are non-usable holds for an individual outcome. Check this point with one of our partner accountants.
+
 - Private health and care premiums, and any advice to move between private and statutory cover: the law makes the way back narrow (§ 6(3a), § 9 SGB V). Refer.
-- Whether a contract is employment (status procedure) or whether the client works "essentially for one client": refer at once; the exposure is contributions back to the start of the work.
+- Whether a contract is employment (status procedure) or whether the client works "essentially for one client": refer at once; apply the individual/group-opinion protections above before determining any backdated liability.
 - Whether self-employment is the main occupation: the health fund decides case by case.
 - Whether work is artistic or publicist: the KSK decides.
-- A given fund's additional rate: take it from the fund. This skill carries only the average, marked "check".
+- A given fund's additional rate: take it from the fund. This Guide carries only the average, marked "check".
 - Accident insurance amounts: each insurer sets its own rates.
 - Professional pension funds (Versorgungswerke) and their exemption procedure.
 - Cross-border work, A1 certificates, and people insured abroad.
@@ -413,20 +436,9 @@ expected:
 - Payroll (withholding, reports, Minijob flat rates, transition band, employer levies): `de-payroll`.
 - The income tax computation: `de-einkommensteuer-freelancer`.
 
-**Completion checklist**
-
-- [ ] Status settled: employee, self-employed, or both; status procedure considered for one-client or client-integrated work.
-- [ ] Health system known (statutory compulsory, statutory voluntary, private); sick pay election known.
-- [ ] Base for a voluntary member from the latest tax notice, between EUR 1,318.33 and EUR 5,812.50 a month; the fund's own additional rate used, not the average.
-- [ ] Care rate set by age and children under 25; proof of children given to the care fund.
-- [ ] § 2 SGB VI list tested; three-month registration and exemption windows checked; start phase applied.
-- [ ] KSK: conditions, income limit, 1 December estimate, half shares; levy duty for businesses that pay artists.
-- [ ] Accident insurer notified within one week; owner's cover decided.
-- [ ] Unemployment insurance on application decided within three months of starting.
-- [ ] Each amount checked against the fund's or insurer's notice; no year total rebuilt from rates.
-- [ ] Tax deduction entered with the § 10 EStG caps; figures marked "check" confirmed.
-
 ## Sources
+
+Retained earlier read dates below record the original research. Operative conditions were read or applicable completed quotes reused on 27 November 2026; a source listing alone does not clear any specific hold.
 
 | Source | URL | Read on |
 |---|---|---|
@@ -437,16 +449,18 @@ expected:
 | SGB XI (§§ 20, 55, 57-59) | https://www.gesetze-im-internet.de/sgb_11/ | 2026-10-24 |
 | SGB III (§§ 25, 28a, 341, 345b, 346, 349a) | https://www.gesetze-im-internet.de/sgb_3/ | 2026-10-24 |
 | Künstlersozialversicherungsgesetz (§§ 1, 3, 11, 12, 15, 16, 16a, 24, 25, 27) | https://www.gesetze-im-internet.de/ksvg/ | 2026-10-26 |
-| Künstlersozialabgabe-Verordnung 2024 (BGBl. 2023 I Nr. 240) | https://www.recht.bund.de/bgbl/1/2023/240/regelungstext.pdf | 2026-10-26 |
 | Künstlersozialabgabe-Verordnung 2026 | https://www.gesetze-im-internet.de/ksabg2026v/BJNR0DC0A0025.html | 2026-10-26 |
 | Sozialversicherungs-Rechengrößenverordnung 2026 | https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3 | 2026-10-24 |
 | Beitragssatzbekanntmachung Rentenversicherung 2026 | https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html | 2026-10-24 |
 | Pflegeversicherungs-Beitragssatzanpassungsverordnung 2025 | https://www.gesetze-im-internet.de/pbav_2025/__1.html | 2026-10-24 |
 | Federal Health Ministry, Beiträge (2026 average additional rate 2.9%) | https://www.bundesgesundheitsministerium.de/beitraege | 2026-10-24 |
 | Mindestlohnverordnung (MiLoV5) | https://www.gesetze-im-internet.de/milov5/__1.html | 2026-10-24 |
-| VVG § 193; EStG § 10 | https://www.gesetze-im-internet.de/vvg_2008/__193.html | 2026-10-24 |
+| VVG § 193 (entry duty retained as an individual hold) | https://www.gesetze-im-internet.de/vvg_2008/__193.html | 2026-11-27 |
+| EStG §§ 3, 4, 10, 12 | https://www.gesetze-im-internet.de/estg/__10.html | 2026-11-27 |
+| 2025 artists’ levy | https://www.gesetze-im-internet.de/ksabg2025v/__1.html | 2026-11-27 |
+| 2025 pension rates | https://www.gesetze-im-internet.de/rvbeitrsbek_2025/----.html | 2026-11-27 |
 | svbezgrv_2026 § 1 | https://www.gesetze-im-internet.de/svbezgrv_2026/__1.html | 2026-10-31 |
 | svbezgrv_2026 § 2 | https://www.gesetze-im-internet.de/svbezgrv_2026/__2.html | 2026-10-31 |
 | svbezgrv_2026 § 4 | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html | 2026-10-31 |
 
-Not yet confirmed: the 2025 artists' levy rate (the ordinance setting it was not found; take it from the KSK notice); the due date of a voluntary health member's contribution (fund statute; ordinarily the 15th of the next month); the due date of unemployment insurance on application (agency notice); whether a lower proven income can be used in the pension start phase; whether the owner's own accident contribution is a business expense; the 2027 ceilings (next ordinance, expected late 2026); accident insurance rates (set by each insurer); each fund's own additional rate.
+**Specific holds.** The fund's actual additional rate and voluntary-member payment terms, the agency's unemployment payment notice, a lower income-based pension contribution during the start phase, the owner's accident deduction, private-system entry/return and professional-fund exemptions, and 2027 implementation require individual evidence. Do not use an average, bank debit or this Guide to clear them. Check this point with one of our partner accountants.
