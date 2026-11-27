@@ -71,6 +71,20 @@ Apply all LIVA 5 conditions: indispensable business expenditure deductible for I
 
 **Vehicles/fuel:** ordinary automobile investment credit follows the deductible fraction, capped by the amounts in the rate table; the higher limit has the stated propulsion conditions. The exclusive automobile-rental business exception is subject also to LISR 36 III's related-party restriction. Do not infer unlimited credit for taxis, cargo vehicles or motorcycles without establishing the legal vehicle classification and use: Check this point with one of our partner accountants. Automobile operating costs also follow the deductible-investment proportion under LISR 28 II. Fuel needs the prescribed non-cash payment even at or below MXN 2,000 and the supplier's current permit information on the receipt, as well as business use and IVA documentation. [LISR 27 III, 28 II, 36 II–III; LIVA 5 I][lisr].
 
+## Deadlines and filing
+
+Ordinary IVA is calculated for each calendar month and paid through SAT Declaraciones y Pagos by the statutory date in the rate table. Monthly is not universal: LIVA 5-F/33 and special regimes need separate handling. Do not infer the period from the first/last bank entry; confirm complete monthly coverage and obligations. Any RFC-based extension or unusual holiday/portal deadline must be established for the actual taxpayer/date; otherwise use the statutory due date in the draft. [LIVA 5-D–F, 33][liva].
+
+DIOT is separate from the payment return. RMF 4.5.1 allows the supplier information during the following month for individuals and companies, subject to applicable relief. Reconcile supplier RFC/foreign identification, transaction kind, paid bases/rates, creditable and non-creditable IVA and withholdings; follow the actual SAT form, not the old fifteen-percent field. RESICO individuals and companies within RMF 3.13.17 are relieved; RMF 2.8.1.17 also relieves the specified individual business/professional/platform/rental chapters where prior-year total income did not exceed MXN 4,000,000, or qualifying new starters estimate no more than that. Do not infer relief from merely using a software tool. [RMF 4.5.1, 3.13.17, 2.8.1.17][rmf].
+
+A current saldo a favor may be credited against own IVA in following months until exhausted, or requested as a refund of the full balance; an amount requested for refund cannot also be carried forward. Do not use prior favourable balances to pay supplier-retention liabilities. Distinguish unused old balance from a newly generated current-period balance. [LIVA 6, 1-A][liva].
+
+Refunds/discounts/returned advances require documented restitution of IVA identifying the original invoice. The seller reduces the taxable values in the following declaration(s) as Article 7 allows; the buyer reduces credit in the month of the specified event, and pays any excess over available credit. A credit note's issue/receipt alone is not proof of restitution. If retention was already remitted, Article 7 instead requires complementary declarations to reverse the operation. [LIVA 7][liva].
+
+## Penalties and interest
+
+Late/incorrect payment, filing, withholding, false CFDIs and blocked seals require case-specific correction and accessory calculations. The former approximate monthly surcharge and penalty ranges are not usable for 2026. No automatic penalty-free cure is promised. For the precise amounts, limitation/refund deadline, CFF 49 Bis/69-B procedure, response period or criminal consequences: Check this point with one of our partner accountants. [CFF][cff].
+
 ## Cross-border points
 
 Persona moral payments to individuals for independent personal services, commissions and temporary use of goods attract two-thirds IVA withholding; not every purchase from an individual is such a service. Goods road-freight withholding is in the rate table. LIVA 1-A also covers credit institutions acquiring assets by adjudication/payment in kind; companies acquiring scrap for industrial inputs/resale; and persons acquiring or temporarily using tangible goods supplied by non-residents without a Mexican permanent establishment. Those unreduced categories retain the IVA transferred, subject to the import-only taxpayer exception. This is not a universal withholding on foreign services. The former subcontracting 6% rule is repealed; specialised-service documentation under LIVA 5 II must still be checked. Do not revive it to match an old example. [LIVA 1-A, 5 II][liva]; [RLIVA 3][rliva].
@@ -106,20 +120,6 @@ Route documents by these original patterns, then apply the operative rules. Name
 | NOMINA/SUELDO/SALARIO, PTU/REPARTO DE UTILIDADES, AGUINALDO/VACACIONES, SAR/AFORE; TRASPASO/TRANSFERENCIA PROPIA/MOVIMIENTO ENTRE CUENTAS; RETIRO/CAJERO/ATM; DIVIDENDO/PRESTAMO PERSONAL/DISPOSICION | Reconcile underlying payment and evidence; no tax classification based only on the pattern. Cash withdrawal itself does not prove personal expenditure. |
 
 Legal classification sources for this matrix: [LIVA 1–3, 5, 14–16, 18, 18-B–J, 24–29][liva].
-
-## Deadlines and filing
-
-Ordinary IVA is calculated for each calendar month and paid through SAT Declaraciones y Pagos by the statutory date in the rate table. Monthly is not universal: LIVA 5-F/33 and special regimes need separate handling. Do not infer the period from the first/last bank entry; confirm complete monthly coverage and obligations. Any RFC-based extension or unusual holiday/portal deadline must be established for the actual taxpayer/date; otherwise use the statutory due date in the draft. [LIVA 5-D–F, 33][liva].
-
-DIOT is separate from the payment return. RMF 4.5.1 allows the supplier information during the following month for individuals and companies, subject to applicable relief. Reconcile supplier RFC/foreign identification, transaction kind, paid bases/rates, creditable and non-creditable IVA and withholdings; follow the actual SAT form, not the old fifteen-percent field. RESICO individuals and companies within RMF 3.13.17 are relieved; RMF 2.8.1.17 also relieves the specified individual business/professional/platform/rental chapters where prior-year total income did not exceed MXN 4,000,000, or qualifying new starters estimate no more than that. Do not infer relief from merely using a software tool. [RMF 4.5.1, 3.13.17, 2.8.1.17][rmf].
-
-A current saldo a favor may be credited against own IVA in following months until exhausted, or requested as a refund of the full balance; an amount requested for refund cannot also be carried forward. Do not use prior favourable balances to pay supplier-retention liabilities. Distinguish unused old balance from a newly generated current-period balance. [LIVA 6, 1-A][liva].
-
-Refunds/discounts/returned advances require documented restitution of IVA identifying the original invoice. The seller reduces the taxable values in the following declaration(s) as Article 7 allows; the buyer reduces credit in the month of the specified event, and pays any excess over available credit. A credit note's issue/receipt alone is not proof of restitution. If retention was already remitted, Article 7 instead requires complementary declarations to reverse the operation. [LIVA 7][liva].
-
-## Penalties and interest
-
-Late/incorrect payment, filing, withholding, false CFDIs and blocked seals require case-specific correction and accessory calculations. The former approximate monthly surcharge and penalty ranges are not usable for 2026. No automatic penalty-free cure is promised. For the precise amounts, limitation/refund deadline, CFF 49 Bis/69-B procedure, response period or criminal consequences: Check this point with one of our partner accountants. [CFF][cff].
 
 ## Worked examples
 
@@ -342,7 +342,7 @@ Use the Required inputs checklist; ask only for facts absent from the records. K
 
 ## Sources
 
-Each listed passage was read or its unchanged, already-proven quote reused on **2026-11-27**. URLs alone were not treated as reads. The operative rules control over older Guide versions; all cases retain their original inputs. Specialist holds above supply no usable tax outcome.
+Read on **2026-11-27**; unchanged proven CFDI quotes reused for the same claims and conditions. Specialist holds supply no usable outcome.
 
 | Source and scope read | Official URL | Read on |
 |---|---|---|
