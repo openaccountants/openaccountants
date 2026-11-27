@@ -28,6 +28,10 @@ Historical attribution, retained without renewing approval:
 Reviewed against the cited tax authorities by **Nathan Wiebe** on 2026-06-21.
 Contributor: Open Accountants Community.
 
+| Historical attribution field | Original record |
+| --- | --- |
+| Validated by | Verified by Nathan Wiebe on 2026-06-21 |
+
 ## Ask the client first
 
 Obtain legal identity and SIN for filing, date of birth, marital status, December 31 province/territory, business permanent establishments, all T-slips and other income, T2125 net business/professional/commission income, RRSP receipts and actual deduction limit, other deduction/credit evidence, withholding, instalments, prior assessments, CPP/QPP deductions and elections, disability/retirement periods and EI agreement dates. Do not invent missing amounts: an illustrative zero deduction must be labelled as an assumption. An unknown province, RRSP entitlement, CPP status or EI agreement blocks the affected final computation.
