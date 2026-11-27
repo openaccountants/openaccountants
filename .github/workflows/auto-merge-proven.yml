@@ -18,7 +18,7 @@ name: Auto-merge proven skills
 on:
   status:
   workflow_run:
-    workflows: ["Validate Guides"]
+    workflows: ["Validate Guides", "Sync Integrity"]
     types: [completed]
   schedule:
     - cron: "*/30 * * * *"
