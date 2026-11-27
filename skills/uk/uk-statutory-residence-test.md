@@ -38,6 +38,13 @@ Third UK test: sufficient UK hours over a 365-day period, no significant break, 
 
 Death in the year: the fourth UK test, fourth and fifth overseas tests and modified ties tables require separate conditions (paras 10, 15, 16, 20). Check this point with one of our partner accountants.
 
+| UK days | Table A: resident in any preceding three years | Table B: resident in none | Source |
+|---|---|---|---|
+| 16–45 | At least 4 ties | Second overseas test applies | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| 46–90 | At least 3 ties | All 4 ties | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| 91–120 | At least 2 ties | At least 3 ties | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| More than 120 | At least 1 tie | At least 2 ties | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+
 ## The base
 
 A UK midnight counts as a day, subject to transit and exceptional circumstances. A day without a UK midnight does not count unless deemed ([Sch 45 para 22](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/paragraph/22)).
@@ -88,13 +95,6 @@ Country tie, prior residents only: the UK has the greatest midnight count, inclu
 
 Only use these after all automatic tests fail; death cases are referred above.
 
-| UK days | Table A: resident in any preceding three years | Table B: resident in none | Source |
-|---|---|---|---|
-| 16–45 | At least 4 ties | Second overseas test applies | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
-| 46–90 | At least 3 ties | All 4 ties | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
-| 91–120 | At least 2 ties | At least 3 ties | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
-| More than 120 | At least 1 tie | At least 2 ties | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
-
 ## Split-year treatment
 
 First establish UK residence for the year. Split-year treatment requires a statutory case and changes only the relevant charging provisions; UK income can remain taxable during the overseas part. Test every potentially applicable case ([Sch 45 para 43](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/paragraph/43)).
@@ -121,12 +121,6 @@ Round the reduction, not the resulting threshold: first decimal 5 or more rounds
 
 Priority: Case 1 over 2 over 3. For arrivals, Case 6 prevails unless Case 5 has an earlier split-year date; absent 6, the same applies to Case 7. Otherwise earliest date among 4, 5 and 8 wins; cases sharing that earliest date share priority. The split-year date is the final overseas day, not the first UK day ([Sch 45 para 55](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/paragraph/55)).
 
-## Cross-border points
-
-Temporary non-residence and the tax charged on return: Check this point with one of our partner accountants.
-
-Dual residence, treaty tie-breakers, personal representatives and trustees: Check this point with one of our partner accountants.
-
 ## Deadlines and filing
 
 SA109 reporting, notification, filing and payment deadlines: Check this point with one of our partner accountants.
@@ -134,6 +128,12 @@ SA109 reporting, notification, filing and payment deadlines: Check this point wi
 ## Penalties and interest
 
 Late-filing, late-payment, inaccuracy and Making Tax Digital penalties and current interest: Check this point with one of our partner accountants.
+
+## Cross-border points
+
+Temporary non-residence and the tax charged on return: Check this point with one of our partner accountants.
+
+Dual residence, treaty tie-breakers, personal representatives and trustees: Check this point with one of our partner accountants.
 
 Four-year FIG eligibility, age conditions, pre-2013 residence and claims: Check this point with one of our partner accountants.
 
