@@ -508,7 +508,7 @@ Before lodging, confirm:
 
 ## Sources
 
-Read/reuse scope on 27 November 2026: the operative GST Act attribution, credit evidence/time limits, adjustments, return and electronic-lodgment provisions; RCTI ss 6–9; correcting-errors ss 4, 6–8; substantive ATO label, method, adjustment, evidence and revision sections. Unchanged completed GST cycle, deadline and PAYG reads and exact quotes are reused from the companion Guide's proof of 27 November, with applicability checked. Direct ATO access blocks and the register's direct-fetch challenge page were not counted as law reads; substantive official indexed text was read. The historical 16 September 2026 source stamp and 21 October 2026 draft check are provenance only, not a current source read.
+Read/reuse scope on 27 November 2026: the operative GST Act attribution, credit evidence/time limits, adjustments, return and electronic-lodgment provisions; RCTI ss 6–9; correcting-errors ss 4, 6–8; substantive ATO label, method, adjustment, evidence and revision sections. Unchanged completed GST cycle, deadline and PAYG reads and exact quotes are reused from the companion Guide's proof of 27 November, with applicability checked. Direct ATO access blocks and the unusable direct-fetch statutory extraction were not counted as law reads; substantive official indexed text was read. The historical 16 September 2026 source stamp and 21 October 2026 draft check are provenance only, not a current source read.
 
 | Source | Provisions or content used | Read / applicable completed read reused |
 | --- | --- | --- |
