@@ -1,12 +1,13 @@
 ---
 name: ae-income-tax
-description: "Source-cited draft: personal income tax for United Arab Emirates (tax year 2026): rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
-version: 2.0
+description: "UAE individual income for 2026: wages and investment exclusions, natural-person Corporate Tax, registration, filing and domestic tax residence with certificate applications."
+version: 2.1
 jurisdiction: AE
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+category: international
 domain: income-tax
 type: situation-rules
 ---
@@ -17,15 +18,15 @@ type: situation-rules
 
 Sources for this section: [Corporate Tax Law, consolidated](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf).
 
-This skill answers three questions about individuals (natural persons) for tax year 2026, the calendar year that a natural person's Corporate Tax period follows:
+This Guide answers three questions about individuals (natural persons) for tax year 2026, the calendar year that a natural person's Corporate Tax period follows:
 
-1. **Is this person's income taxed in the UAE at all?** There is no federal personal income tax. Wages are not taxed, whatever the amount. Personal investment income and real estate investment income are not taxed either, provided they are not conducted through a licence and do not need one.
-2. **Has this person's business activity brought them into Corporate Tax?** A natural person is a Taxable Person only when total turnover from business in the UAE is more than AED 1,000,000 in a calendar year. If so, the 0% and 9% Corporate Tax rates apply to their business taxable income, with registration, a return and possibly Small Business Relief.
+1. **Is this person's income taxed in the UAE at all?** There is no federal personal income tax ([UAE government FAQ](https://u.ae/en/Help/FAQs/finance-and-investment)). Wages are outside Corporate Tax whatever the amount. Personal investment income also requires a personal account, no licence used or required, and no commercial business under the Commercial Transactions Law; UAE real estate investment income requires no licence used or required.
+2. **Has this person's business activity brought them into Corporate Tax?** A natural person’s UAE business is subject to Corporate Tax when its combined turnover exceeds AED 1,000,000 in a calendar year. Non-resident state-sourced income without UAE business or a permanent establishment follows the withholding rule below. If so, the 0% and 9% Corporate Tax rates apply to their business taxable income, with registration, a return and possibly Small Business Relief.
 3. **Is this person a UAE tax resident, and can they get a tax residency certificate?** This uses a separate test under Cabinet Decision No. 85 of 2022 and matters mainly for double tax agreements and for proving residence to another country.
 
 It is written for anyone answering an individual's question: an employee, a freelancer or sole establishment owner, a property investor, a newcomer or leaver, or a non-resident with UAE income.
 
-**Companion Skills.** Company Corporate Tax (free zones, deductions, losses, transfer pricing, top-up tax) is in the **ae-corporate-tax** skill. VAT registration, VAT on supplies and VAT return preparation are in the **uae-vat** skill. This skill only points to those rules. It does not repeat them.
+**Companion Guides.** Company Corporate Tax (free zones, deductions, losses, transfer pricing, top-up tax) is in the **ae-corporate-tax** Guide. VAT registration, VAT on supplies and VAT return preparation are in the **uae-vat** Guide. This Guide only points to those rules. It does not repeat them.
 
 **Not covered:** Emirate-level fees and charges, customs duty, excise tax, social security and pension contributions, and the tax a person may still owe to another country (for example, because of citizenship or because they have not broken residence there). For those, refer.
 
@@ -39,12 +40,12 @@ Sources for this section: [CTGTNP1: Taxation of natural persons](https://tax.gov
 | Director fees | Generally none | The FTA says director fees generally are not a business activity |
 | Dividends, interest (including UAE bank interest), and gains on shares or other investments held for the person's own account | None | Not conducted through a licence, not needing one, and not a commercial business under the Commercial Transactions Law |
 | Rent from UAE property, and gains on selling UAE property | None | Not conducted through a licence and not needing one |
-| Selling personal belongings, such as a personal car | None | Not a business activity |
+| Selling a personal car on personal account | Outside Corporate Tax | Not a commercial dealing business and no licence used or required; CTGTNP1 Example 12 |
 | Lottery or game-show winnings | Generally none | The FTA says these are not typically a business; judged case by case |
 | Freelance, consultancy, trading, sole establishment or other business income from activity in the UAE | Corporate Tax, but only if total business turnover is more than AED 1,000,000 in the calendar year | Turnover from all the person's businesses is added together |
 | Foreign income related to the UAE business, such as overseas sales of a UAE sole establishment | Included with the business, as above | Foreign income unrelated to a UAE business is not taxed |
 | UAE-source income of a non-resident with no UAE business or permanent establishment | Withholding tax at 0% | The rate can change only by Cabinet decision |
-| Buying goods and services | VAT, as for anyone | See the uae-vat skill |
+| Buying goods and services | VAT, as for anyone | See the uae-vat Guide |
 
 Two points people often get wrong:
 
@@ -54,11 +55,11 @@ Two points people often get wrong:
 ## Ask the client first
 
 - **What does the person actually earn?** List every source for the calendar year: employment, director fees, freelance or consultancy fees, sole establishment sales, partnership share, rent, dividends, interest, investment gains, and any foreign income. ([Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf))
-- **Is any activity done through a licence, or does it need one?** Ask for trade, professional or freelance licences. A licence (or an activity that needs one) turns investment or property income into business income.
+- **Is any activity done through a licence, or does it need one?** Ask for trade, professional or freelance licences. Check whether each investment or property activity uses or requires a licence; the exclusion also fails for personal investments that are a commercial business. A licence for an unrelated activity does not by itself decide this income’s treatment.
 - **Is the person an employee, or self-employed?** Ask for the employment contract. Fees paid to a self-employed person, even by a single client, are business income.
 - **What was total business turnover in each calendar year from 2024 onwards?** Turnover means gross income, not profit, and it is combined across all the person's businesses.
 - **Is the person already registered for Corporate Tax?** Ask for the TRN, the registration date and any penalty notices.
-- **Revenue in every earlier tax period.** This is needed for Small Business Relief. One period over AED 3,000,000 ends eligibility for good. ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf))
+- **Revenue in every earlier tax period.** This is needed for Small Business Relief. Revenue above AED 3,000,000 in a relevant or previous tax period prevents relief in a later period; also check resident status, the MNE constituent-company exclusion and artificial separation. ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf))
 - **Days in the UAE** in the relevant 12 consecutive months, counting part-days, and the entry and exit report if the count is close. ([Ministerial Decision No. 27 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2027%20of%202023%20-%20for%20publishing.pdf))
 - **Nationality and residence status:** UAE national, GCC national, holder of a valid UAE residence visa, or visitor.
 - **Home and ties:** a tenancy contract or title deed for a home continuously available to them, where family lives, and where the main job or business is.
@@ -67,12 +68,12 @@ Two points people often get wrong:
 
 ## The method, step by step
 
-1. **Sort every income source into one of four boxes:** wage, personal investment income, real estate investment income, or business. The first three are outside Corporate Tax whatever their size, but only while no licence is used or needed and, for investments, the activity is not a commercial business. If in doubt about the licence, the person decides that on their own facts, and it should be documented. ([Cabinet Decision No. 49 of 2023, Articles 1 and 2](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf); [CTGRNP1](https://tax.gov.ae/Datafolder/Files/Guides/CT/CT%20Registration%20of%20Natural%20Persons%20-%2029%2012%202023.pdf))
+1. **Sort every income source into one of four boxes:** wage, personal investment income, real estate investment income, or business. Wages are outside Corporate Tax without a licence condition. Personal investments require personal-account activity, no licence used or required, and no commercial business. UAE real estate investments require no licence used or required. If licensing or employment status is unresolved, do not assume exclusion: Check this point with one of our partner accountants. ([Cabinet Decision No. 49 of 2023, Articles 1 and 2](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf); [CTGRNP1](https://tax.gov.ae/Datafolder/Files/Guides/CT/CT%20Registration%20of%20Natural%20Persons%20-%2029%2012%202023.pdf))
 2. **Add up business turnover for the calendar year.** Use gross income from all the person's businesses in the UAE, including a share of a fiscally transparent unincorporated partnership and foreign income that relates to the UAE business. Leave out wages, personal investment income and real estate investment income. Measure it on the accruals basis, or on the cash basis if the person uses cash accounting. ([CTGRNP1, section 3.3](https://tax.gov.ae/Datafolder/Files/Guides/CT/CT%20Registration%20of%20Natural%20Persons%20-%2029%2012%202023.pdf))
 3. **Apply the threshold.** Turnover of AED 1,000,000 or less: the person is not subject to Corporate Tax for that year and does not need to register, unless already registered (see step 7). Turnover of more than AED 1,000,000: the person is a Taxable Person for that calendar year. ([Cabinet Decision No. 49 of 2023, Article 2](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf))
 4. **If over the threshold, register** for Corporate Tax on EmaraTax by 31 March of the following year (resident), or within 3 months of meeting the conditions (non-resident). One TRN covers all of a person's businesses. ([FTA Decision No. 3 of 2024, Article 5](https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf); [Natural Person bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Natural%20Person-English.pdf))
-5. **Check Small Business Relief.** If revenue is AED 3,000,000 or less in this calendar year and in every earlier tax period, the person may elect relief in the return and is treated as having no taxable income. The election is made each year; it is not automatic. The detailed consequences are in the ae-corporate-tax skill. ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf); [Ministerial Decision No. 131 of 2026](https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf))
-6. **Otherwise compute the tax.** Start from the accounting profit of all taxable businesses combined, make the Corporate Tax Law adjustments (the ae-corporate-tax skill covers deductions, interest limits and connected-person payments), then apply 0% up to AED 375,000 of taxable income and 9% above that. File one return for all businesses and pay within 9 months of 31 December. ([Cabinet Decision No. 116 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf); [Corporate Tax Law, Articles 48 and 53](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf))
+5. **Check Small Business Relief.** A Resident Person with revenue of AED 3,000,000 or less in this and every previous tax period may elect relief in that period’s return, subject to all conditions. A constituent company of an MNE group as defined in Cabinet Decision 44 of 2020 and a Qualifying Free Zone Person cannot elect. Artificial separation to claim relief is subject to the anti-abuse rule. The relief treats the person as deriving no taxable income; registration and filing continue. Periods must commence on or after 1 June 2023 and end on or before 31 December 2029 under the amendment. Uncertain MNE classification: Check this point with one of our partner accountants. Detailed consequences are in the ae-corporate-tax Guide. ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf); [Ministerial Decision No. 131 of 2026](https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf))
+6. **Otherwise compute the tax.** Start from the accounting profit of all taxable businesses combined, make the Corporate Tax Law adjustments (the ae-corporate-tax Guide covers deductions, interest limits and connected-person payments), then apply 0% up to AED 375,000 of taxable income and 9% above that. File one return for all businesses and pay within 9 months of 31 December, unless the FTA directs another date. Personal drawings are not deductible; do not equate accounting profit with taxable income without the adjustments. ([Cabinet Decision No. 116 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf); [Corporate Tax Law, Articles 48 and 53](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf))
 7. **In later years, stay registered while any business continues.** A registered person whose turnover falls to AED 1,000,000 or less keeps the TRN and files a nil return. Deregister within 3 months of stopping all business activity. ([Natural Person bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Natural%20Person-English.pdf))
 8. **Separately, test tax residency** if the person needs to prove residence or rely on a treaty. Apply the three tests in Cabinet Decision No. 85 of 2022 below. If the person meets any one of them, they are resident for that 12-month period and can apply for a tax residency certificate. If a treaty applies, its own residence rules decide residence for treaty purposes. ([Cabinet Decision No. 85 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%2085%20of%202022%20-%20For%20publishing.pdf))
 
@@ -84,14 +85,14 @@ None of these figures changed between 2025 and 2026.
 
 | Item | Figure | Detail | Source |
 | --- | --- | --- | --- |
-| Personal income tax on wages | None | No federal law taxes employment income | https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf |
+| Personal income tax on wages | None | Separate from Corporate Tax on business income; no personal income-tax bands, deductions or credits to calculate | https://u.ae/en/Help/FAQs/finance-and-investment |
 | Corporate Tax entry test for a natural person | Turnover of **more than** AED 1,000,000 in a Gregorian calendar year | Exactly AED 1,000,000 is not over the threshold | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf |
 | Corporate Tax rate on taxable income up to AED 375,000 | 0% | The band applies once per Taxable Person, not per business | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf |
 | Corporate Tax rate on taxable income above AED 375,000 | 9% | Applies to all business taxable income over the band | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf ; https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf |
-| Withholding tax on UAE-source income of a non-resident | 0% | Corporate Tax Law, Article 45 | same |
-| Small Business Relief revenue limit | AED 3,000,000 or less in the current and every earlier tax period | For tax periods ending on or before 31 December 2029 | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf |
-| Cash-basis accounting allowed | Turnover not over AED 3 million | Otherwise the accruals basis. Financial statements generally follow IFRS | https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Natural%20Person-English.pdf |
-| IFRS for SMEs allowed | Turnover not over AED 50 million | Audited financial statements required above AED 50 million | same |
+| Withholding tax on non-resident UAE-source income not attributable to a permanent establishment | 0% currently | Corporate Tax Law, Article 45; business/PE income instead follows the applicable Corporate Tax rules | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf |
+| Small Business Relief revenue limit | AED 3,000,000 or less in this and every previous tax period | Resident Person; exclusions and election above; periods starting on/after 1 June 2023 and ending on/before 31 December 2029 | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf ; https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf |
+| Cash-basis accounting | Revenue not exceeding AED 3,000,000 | Otherwise accruals, unless an exceptional-circumstances application is approved by the FTA; MD 114 Articles 1–2 | https://tax.gov.ae/datafolder/Files/Legislation/05-06-2023/5/Ministerial%20Decision%20No.%20114%20of%202023%20-%20for%20publishing.pdf |
+| IFRS for SMEs allowed | Revenue not exceeding AED 50,000,000 | Otherwise IFRS; audited statements required above AED 50,000,000 for this non-group natural person in periods starting on/after 1 January 2025; MD 114 Article 4 and MD 84 | https://tax.gov.ae/datafolder/Files/Legislation/05-06-2023/5/Ministerial%20Decision%20No.%20114%20of%202023%20-%20for%20publishing.pdf ; https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-84-of-2025.pdf |
 | Record keeping | 7 years after the end of the tax period | | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf |
 | Tax period | Calendar year, 1 January to 31 December | The first possible period was 2024 | https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Natural%20Person-English.pdf |
 
@@ -131,27 +132,27 @@ Counting rules:
 | Review and electronic certificate, natural person not registered with the FTA | AED 1,000 | same |
 | Printed copy, each | AED 250 | same |
 
-## Boundaries and exceptions
+## Boundary and exception table
 
 Sources for this section: [Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf); [CTGTNP1](https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf); [CTGRNP1](https://tax.gov.ae/Datafolder/Files/Guides/CT/CT%20Registration%20of%20Natural%20Persons%20-%2029%2012%202023.pdf).
 
 | Situation | Treatment |
 | --- | --- |
-| Rent from several UAE flats of AED 1,200,000 a year, no licence needed | Real estate investment income. Not taxed and not counted towards the AED 1,000,000 test |
+| Rent from several UAE flats of AED 1,200,000 a year, no licence used or required | Real estate investment income. Not taxed and not counted towards the AED 1,000,000 test |
 | Property activity done through a licence, or one that needs a licence (for example, a licensed real estate business) | Business income. Counts towards turnover |
 | Share trading for the person's own account, no licence, not a commercial business | Personal investment income. Not taxed |
 | Trading or dealing that is a commercial business under the Commercial Transactions Law, or done under a licence | Business income |
-| Shareholder in a UAE company who does not run a business separately | Dividends are personal investment income. No registration |
+| Shareholder receiving dividends, with no separate business | No registration if the dividends meet the personal-investment definition above; ownership alone does not waive its conditions |
 | Employee who also runs a side business | The wage is ignored; only the side business turnover is tested |
 | Several businesses (sole establishment, freelance work, a partnership share) | Turnover is combined. One TRN and one return for all of them |
 | Freelancer with a single foreign client | Not a wage unless there is employment. Business income if the work is done from the UAE |
 | Employee of a foreign company visiting the UAE for a few days | Not conducting business on their own account. Not a Resident Person for Corporate Tax |
 | Non-resident with UAE-source income and no business in the UAE | Withholding tax at 0% ([Corporate Tax Law, Article 45](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf)) |
 | Non-resident with a permanent establishment in the UAE and no treaty | Treated as a Resident Person for Corporate Tax; with a treaty, may instead be a Non-Resident taxed on the permanent establishment |
-| Turnover over AED 1,000,000 but revenue AED 3,000,000 or less in every period | Must register. May elect Small Business Relief and pay nothing |
+| Turnover over AED 1,000,000 but revenue AED 3,000,000 or less in every period | Must register. Relief requires resident status, a valid-period election and all eligibility conditions above |
 | Registered person whose turnover drops to AED 1,000,000 or less | Stays registered and files a nil return until all business stops |
-| Tourist-visa visitor with 100 days in hotels | 90-day test fails (no Residence Permit, no permanent home, no job or business). Not resident unless present for 183 days or with a centre of life in the UAE |
-| Person who owns a UAE flat but lives mainly abroad and spends 30 days a year in the UAE | Usual residence is abroad. Not resident under any test |
+| Non-GCC tourist-visa visitor with 100 days in hotels | The visa is not a Residence Permit. The 90-day route fails; the separate usual-residence AND centre-of-interests route must also be checked before concluding non-residence |
+| Person owning a UAE flat, living mainly abroad, with 30 UAE days in the relevant 12 months | Neither day-count route is met; ownership alone proves neither usual residence nor centre of interests. If settled routine is abroad, the combined usual-residence/interests test fails |
 
 ## Worked cases
 
@@ -159,27 +160,27 @@ Sources for this section: [CTGTNP1](https://tax.gov.ae/Datafolder/Files/Guides/C
 
 Amounts below are illustrations, not official figures, unless the case says it follows an FTA example.
 
-**Case 1: employee with rent and dividends (2026).** Salary AED 480,000 from a Dubai employer, rent of AED 1,500,000 from two flats bought as investments (no licence needed), and dividends from UAE listed shares. None of this is business income. Nothing is taxed, the AED 1,000,000 test is not reached because none of it counts as turnover, and no Corporate Tax registration is needed. This follows the FTA's registration examples.
+**Case 1: employee with rent and dividends (2026).** Salary AED 480,000 from a Dubai employer, rent of AED 1,500,000 from two flats bought as investments (no licence used or required), and dividends from UAE listed shares held on personal account, with no licence used or required and no commercial investment business. None of this is business income. No Corporate Tax is due on these sources, the AED 1,000,000 test is not reached because none of it counts as turnover, and no Corporate Tax registration is needed. This applies the exclusions above.
 
-**Case 2: freelance consultant (2026).** Resident freelancer; consultancy turnover AED 1,200,000 in 2026 from clients in the UAE and abroad; profit after deductible costs AED 900,000; revenue never above AED 3,000,000 in any period.
+**Case 2: freelance consultant (2026).** Resident freelancer; consultancy turnover AED 1,200,000 in 2026 from clients in the UAE and abroad; profit after deductible costs AED 900,000; revenue never above AED 3,000,000 in any period. Assume no further tax adjustments, the first threshold breach is in 2026, and no MNE exclusion or artificial separation.
 - Turnover is more than AED 1,000,000, so she is a Taxable Person for 2026. She must register by 31 March 2027, and the 2026 return and any tax are due by 30 September 2027.
 - If she elects Small Business Relief in the 2026 return, she is treated as having no taxable income, so no tax is due.
 - Without the election: (900,000 - 375,000) x 9% = AED 47,250.
 
 **Case 3: wage plus two businesses (follows FTA Example 17).** In one calendar year Miss P earns a wage of AED 200,000 for three months, freelance design turnover of AED 1,600,000 (expenses AED 400,000), and sole establishment phone sales of AED 1,200,000 in the UAE plus AED 800,000 overseas (expenses AED 1,400,000).
 - Turnover: 1,600,000 + 1,200,000 + 800,000 = AED 3,600,000. The wage is left out; the overseas sales count because they relate to the UAE business.
-- Revenue is over AED 3,000,000, so Small Business Relief is not available that year or ever again.
+- Revenue is over AED 3,000,000, so Small Business Relief is unavailable for that period and subsequent periods under the current/previous-period test.
 - Taxable income (no adjustments assumed): 3,600,000 - 1,800,000 = AED 1,800,000.
 - Tax: (1,800,000 - 375,000) x 9% = AED 128,250.
 
 **Case 4: just under the threshold (2026).** A sole establishment has turnover of AED 950,000 in 2026 and has never registered. It is not over AED 1,000,000, so there is no Corporate Tax and no registration for 2026. If the same person had registered because 2025 turnover was over the threshold, they stay registered and file a nil return for 2026 by 30 September 2027.
 
 **Case 5: residence visa holder with 120 days (certificate for 2026).** A non-GCC national with a valid UAE residence visa rents a furnished flat in Abu Dhabi under a yearly lease, but works abroad and spends 120 days in the UAE in the calendar year.
-- The 183-day test fails. The 90-day test passes: 90 days or more, a valid Residence Permit, and a Permanent Place of Residence. She is a UAE tax resident for the period.
+- The 183-day test fails. The 90-day test passes: 90 days or more, a valid Residence Permit, and a Permanent Place of Residence. This establishes domestic UAE tax residence for the relevant 12-month period.
 - She has no Corporate Tax TRN, so the certificate costs 50 + 1,000 = AED 1,050, or 1,050 + 250 = AED 1,300 with one printed copy.
-- The other country may also treat her as resident. The treaty tie-breaker then decides, and she should ask for a treaty certificate.
+- The other country may also treat her as resident. An applicable treaty’s own residence provisions and any tie-breaker must be checked before claiming treaty benefits. Check this point with one of our partner accountants.
 
-**Case 6: long-stay tourist (follows FTA Example 14).** Sulaiman, a non-GCC national, spends 100 days of 2024 in the UAE on tourist visas, in hotels, with no job or business there. He is not resident: he has no Residence Permit, no permanent home and no employment or business, and he is under 183 days.
+**Case 6: long-stay tourist (follows TPGTR1 Example 14).** Sulaiman, a non-GCC national, spends 100 days of 2024 in the UAE on tourist visas, in hotels, with no job or business there. The day-count routes fail: he has no Residence Permit and is under 183 days. With his usual residence and centre of interests outside the UAE, as in TPGTR1 Example 14, he is not domestically resident. Those ties must be confirmed; tourist status alone does not decide the separate usual-residence/interests route.
 
 ```oa-check
 name: Freelance consultant, Case 2 (2026)
@@ -215,19 +216,19 @@ expected:
 ## When to refuse or refer
 
 - **Anyone asking what "income tax rate" applies to their UAE salary:** answer that there is none. Do not invent a rate. If they ask about tax elsewhere (their home country, or a country they work in), refer them to that country's rules or adviser. ([Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf))
-- **Whether an activity needs a licence** (property portfolios, frequent share or crypto trading, short-term letting): this is a question of fact and of Emirate licensing rules. Refer to the licensing authority or a UAE tax agent before treating the income as outside Corporate Tax. ([CTGTNP1](https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf))
-- **Employment or self-employment unclear**, for example a single long-term contractor: refer. The label on the contract does not decide it.
-- **Treaty residence, dual residence or leaving the UAE mid-year:** the domestic tests do not resolve a conflict with another country. Refer to a tax adviser who knows both countries. ([Cabinet Decision No. 85 of 2022, Article 6](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%2085%20of%202022%20-%20For%20publishing.pdf))
-- **Exceptional-circumstances claims** to discount days: the FTA decides. Refer, and keep the evidence.
-- **A natural person over the threshold** who needs a full Corporate Tax computation (deductions, connected-person payments, losses, interest): use the ae-corporate-tax skill or a registered UAE tax agent.
-- **Missed registration or late returns** with penalties already imposed, or any FTA audit: refer to a registered UAE tax agent.
+- **Whether an activity needs a licence** (property portfolios, frequent share or crypto trading, short-term letting): do not assume an exclusion before resolving the licensing facts. Check this point with one of our partner accountants. ([CTGTNP1](https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf))
+- **Employment or self-employment unclear**, for example a single long-term contractor: Check this point with one of our partner accountants.
+- **Treaty residence, dual residence or leaving the UAE mid-year:** the domestic tests do not resolve a conflict with another country. Check this point with one of our partner accountants. ([Cabinet Decision No. 85 of 2022, Article 6](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%2085%20of%202022%20-%20For%20publishing.pdf))
+- **Exceptional-circumstances claims** to discount days: the FTA decides; keep the evidence. Check this point with one of our partner accountants.
+- **A natural person over the threshold** who needs a full Corporate Tax computation (deductions, connected-person payments, losses, interest): use the ae-corporate-tax Guide or a registered UAE tax agent.
+- **Missed registration or late returns** with penalties already imposed, an FTA audit, an uncertain MNE group, or a full deduction/loss/interest computation outside the companion Guide: Check this point with one of our partner accountants.
 - **Refuse** to help structure a business into several parts to stay under AED 1,000,000 or AED 3,000,000. Where a business is artificially separated, combined revenue is over AED 3,000,000 and Small Business Relief is elected, the FTA treats it as an arrangement to obtain a tax advantage under the general anti-abuse rule in Article 50 of the Corporate Tax Law. ([Ministerial Decision No. 73 of 2023, Article 6](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf))
 
 ## Filing and payment
 
 Sources for this section: [FTA Decision No. 3 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf); [Natural Person bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Natural%20Person-English.pdf); [Corporate Tax Law, Articles 48 and 53](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf).
 
-There is no personal income tax return in the UAE. An individual files only if they are a Taxable Person for Corporate Tax.
+There is no personal income tax return in the UAE. Corporate Tax filing applies to taxable businesses and continues for an existing registrant below the turnover threshold, as above. VAT and other filings are separate. The dates below assume the ordinary statutory timetable; the FTA can direct a different filing or payment date.
 
 | Step | Deadline for a 2026 calendar year |
 | --- | --- |
@@ -237,13 +238,13 @@ There is no personal income tax return in the UAE. An individual files only if t
 | Pay the Corporate Tax for 2026 | 30 September 2027 |
 | Deregister after all business stops | Within 3 months of stopping |
 
-Registering for VAT does not register a person for Corporate Tax, and the VAT turnover rules are separate (see the uae-vat skill).
+Registering for VAT does not register a person for Corporate Tax, and the VAT turnover rules are separate (see the uae-vat Guide).
 
-### Returns being filed now: calendar year 2025 ([Natural Person bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Natural%20Person-English.pdf); [CTP006](https://tax.gov.ae/Datafolder/Files/Pdf/2025/CTP006-Waiver-of-Late-Registration-Administrative-Penalty-02-07-2025.pdf))
+### Historical filing timetable: calendar year 2025 ([Natural Person bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Natural%20Person-English.pdf); [CTP006](https://tax.gov.ae/Datafolder/Files/Pdf/2025/CTP006-Waiver-of-Late-Registration-Administrative-Penalty-02-07-2025.pdf))
 
-- A natural person whose 2025 business turnover was more than AED 1,000,000 had to register by 31 March 2026. The 2025 return and payment are due by **30 September 2026**.
+- A natural person whose 2025 business turnover was more than AED 1,000,000 had to register by 31 March 2026. The 2025 return and payment were due by **30 September 2026**.
 - The 2025 figures are the same as for 2026: the AED 1,000,000 turnover test, the 0% band up to AED 375,000 and 9% above it, and the AED 3,000,000 Small Business Relief limit.
-- Anyone who registered late for a first tax period of 2025 could have the late registration penalty waived by filing the return within 7 months of the period end, which was 31 July 2026. That window has closed; filing by 30 September 2026 still avoids late filing penalties.
+- Anyone who registered late for a first tax period of 2025 could have the late registration penalty waived by filing the return within 7 months of the period end, which was 31 July 2026. That seven-month window and the ordinary 30 September 2026 filing deadline have passed as at 27 November 2026. For a first period ending 31 December 2026, the seven-month waiver deadline is 31 July 2027; the ordinary return/payment deadline remains 30 September 2027.
 
 ### Penalties ([Cabinet Decision No. 75 of 2023 and amendments](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf); [CTP006](https://tax.gov.ae/Datafolder/Files/Pdf/2025/CTP006-Waiver-of-Late-Registration-Administrative-Penalty-02-07-2025.pdf))
 
@@ -251,42 +252,44 @@ Registering for VAT does not register a person for Corporate Tax, and the VAT tu
 | --- | --- | --- |
 | Late registration | AED 10,000. Waived if the first return is filed within 7 months of the end of the first tax period (first period only) | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf |
 | Late return | AED 500 for each month or part month in the first 12 months, then AED 1,000 for each month or part month | same |
-| Late payment | 14% a year, charged monthly on the unpaid tax | same |
+| Late payment | Monthly penalty at 14% per annum for each month or part, on unsettled payable tax from the day after the payment due date and on the same date monthly thereafter | same |
 | Failure to keep records | AED 10,000, or AED 20,000 for a repeat within 24 months | same |
 
 ## Completion checklist
 
 Sources for this section: [Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf); [Cabinet Decision No. 85 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%2085%20of%202022%20-%20For%20publishing.pdf).
 
-- [ ] Every income source is sorted as wage, personal investment, real estate investment or business, and the licence question is answered and documented for each.
+- [ ] Every income source is sorted as wage, personal investment, real estate investment or business, and investment/property licensing and commercial-business conditions are documented; a licence condition is not imposed on wages.
 - [ ] Business turnover is totalled for each calendar year from 2024, across all businesses, including related foreign income.
 - [ ] The threshold is applied as "more than AED 1,000,000", with the registration deadline of 31 March of the following year noted.
-- [ ] Revenue history is checked against AED 3,000,000 for Small Business Relief, and the election is made in each return where wanted.
-- [ ] Without relief, the tax is computed at 0% up to AED 375,000 and 9% above, with the Corporate Tax Law adjustments from the ae-corporate-tax skill.
+- [ ] Revenue history is checked against AED 3,000,000 for Small Business Relief, and resident status, MNE exclusion, eligible period and each return’s election are checked.
+- [ ] Without relief, the tax is computed at 0% up to AED 375,000 and 9% above, with the Corporate Tax Law adjustments from the ae-corporate-tax Guide.
 - [ ] The return and payment are diarised for 30 September after the year end. A registered person below the threshold still files a nil return.
 - [ ] If residence matters, the right residence test is identified (centre of life, 183 days or 90 days with conditions), days are counted with part-days included, and the certificate type and period are chosen.
 - [ ] Other-country tax exposure is flagged for referral. The UAE answer does not settle it.
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and scope read | URL | Read on |
 | --- | --- | --- |
-| Corporate Tax Law, consolidated January 2026: read for Art. 3 (9%), Art. 45 (0% withholding), Art. 53, Art. 56 (7 years records) | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf | 2026-11-14 |
-| Cabinet Decision No. 49 of 2023: read for Art. 2 (natural person Taxable Person above AED 1,000,000 turnover) and the excluded income | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf | 2026-11-14 |
-| FTA guide CTGTNP1, taxation of natural persons: read for wages, personal investment and real estate investment exclusions and cash basis | https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf | 2026-11-14 |
-| FTA Natural Person bulletin: read for the AED 1 million test, cash basis up to AED 3 million, IFRS for SMEs up to AED 50 million, calendar year period | https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Natural%20Person-English.pdf | 2026-11-14 |
-| Cabinet Decision No. 116 of 2022: read for Art. 3 (AED 375,000 band) | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf | 2026-11-14 |
-| FTA guide CTGRNP1, registration of natural persons: read for registration and nil return points | https://tax.gov.ae/Datafolder/Files/Guides/CT/CT%20Registration%20of%20Natural%20Persons%20-%2029%2012%202023.pdf | 2026-11-14 |
-| Ministerial Decision No. 73 of 2023: read for Art. 2 (AED 3,000,000 revenue limit) | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf | 2026-11-14 |
-| Ministerial Decision No. 27 of 2023: read for the residency definitions (Permanent Place of Residence, employment, exceptional circumstances) | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2027%20of%202023%20-%20for%20publishing.pdf | 2026-11-14 |
-| FTA Decision No. 3 of 2024: read for the registration timelines (3 months, 6 months, 31 March for natural persons) | https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf | 2026-11-14 |
-| Corporate Tax Law, consolidated January 2026: read for Art. 3 (9%), Art. 45 (0% withholding), Art. 53, Art. 56 (7 years records) | https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf | 2026-11-14 |
-| Cabinet Decision No. 85 of 2022: read for Art. 4 (centre of life, 183 days, 90 days tests) | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%2085%20of%202022%20-%20For%20publishing.pdf | 2026-11-14 |
-| Ministerial Decision No. 84 of 2025: read for the AED 50,000,000 audited financial statements test | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-84-of-2025.pdf | 2026-11-14 |
-| FTA guide TPGTR1, Tax Resident and TRC: read for certificate types, evidence and the 10 business day response | https://tax.gov.ae/Datafolder/Files/Guides/VAT/VAT%20Guides/Tax-Resident-and-TRC--18-10-2024.pdf | 2026-11-14 |
-| Cabinet Decision No. 65 of 2020 and amendments (FTA fees), December 2025: read for items 6 to 10 (AED 50, 500, 1,750, 1,000, 250) | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2065%20of%202020%20on%20FTA%20Services%20Fees%20and%20its%20amendments%20-%20for%20publishing%20%2003%2012%202025.docx.pdf | 2026-11-14 |
-| Ministerial Decision No. 247 of 2023: read for the treaty tax residency certificate rules | https://mof.gov.ae/wp-content/uploads/2023/10/Ministerial-Decision-No247-of-2023-on-the-Issuance-of-Tax-Residency-Certificate-for-the-Purposes-of-International-Agreements.pdf | 2026-11-14 |
-| FTA public clarification CTP006 (July 2025): read for the late registration penalty waiver conditions | https://tax.gov.ae/Datafolder/Files/Pdf/2025/CTP006-Waiver-of-Late-Registration-Administrative-Penalty-02-07-2025.pdf | 2026-11-14 |
-| Cabinet Decision No. 75 of 2023 and amendments (Corporate Tax penalties): read for the late registration (AED 10,000) and other penalty amounts | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf | 2026-11-14 |
+| UAE government FAQ: no individual income tax and no personal income-tax return | https://u.ae/en/Help/FAQs/finance-and-investment | 2026-11-27; read the individual-income-tax and filing answers |
+| Corporate Tax Law: Articles 3, 11–12, 20–21, 33, 45, 48, 53 and 56 | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf | 2026-11-26; exact applicable quotes reused from committed ae-corporate-tax ledger |
+| Cabinet Decision 49/2023: Article 1 definitions and Article 2 threshold/exclusions | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf | 2026-11-26; exact applicable quotes reused from committed ae-corporate-tax ledger |
+| CTGTNP1: sections 3.6–3.9, director fees, personal car and Example 17 | https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf | 2026-11-27; read classification conditions and original worked inputs |
+| Natural Person bulletin: calendar year, one TRN/return, nil return and deregistration | https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Natural%20Person-English.pdf | 2026-11-27; read sections 2–10 |
+| Cabinet Decision 116/2022: combined ordinary band and rates | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf | 2026-11-26; exact applicable quotes reused from committed ae-corporate-tax ledger |
+| CTGRNP1: sections 3.2–3.3, residence, combined turnover and foreign/partnership income | https://tax.gov.ae/Datafolder/Files/Guides/CT/CT%20Registration%20of%20Natural%20Persons%20-%2029%2012%202023.pdf | 2026-11-27; read operative scope and aggregation passages |
+| Ministerial Decision 73/2023: Articles 2–3 and 6 eligibility and anti-abuse | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf | 2026-11-26; exact applicable quotes reused from committed ae-corporate-tax ledger |
+| Ministerial Decision 131/2026: amended relief sunset | https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf | 2026-11-26; exact amendment quote reused from committed ae-corporate-tax ledger |
+| Ministerial Decision 114/2023: Articles 1–2 and 4 accounting basis/standards | https://tax.gov.ae/datafolder/Files/Legislation/05-06-2023/5/Ministerial%20Decision%20No.%20114%20of%202023%20-%20for%20publishing.pdf | 2026-11-27; read operative decision |
+| FTA Decision 3/2024: Article 5 resident/non-resident registration deadlines | https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf | 2026-11-27; read both natural-person rows |
+| Cabinet Decision 85/2022: Articles 1 and 4–6 residence and treaty precedence | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%2085%20of%202022%20-%20For%20publishing.pdf | 2026-11-27; read operative tests and definitions |
+| Ministerial Decision 27/2023: Articles 2–6 residence criteria and counting | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2027%20of%202023%20-%20for%20publishing.pdf | 2026-11-27; read all operative articles |
+| Ministerial Decision 84/2025: audited accounts and commencement | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-84-of-2025.pdf | 2026-11-26; exact applicable quotes reused from committed ae-corporate-tax ledger |
+| TPGTR1: sections 5.2 and 7, Example 14 and certificate procedures/evidence | https://tax.gov.ae/Datafolder/Files/Guides/VAT/VAT%20Guides/Tax-Resident-and-TRC--18-10-2024.pdf | 2026-11-27; read domestic tests and certificate sections |
+| Cabinet Decision 65/2020 amended fees: Article 2 and appendix items 6–10 | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2065%20of%202020%20on%20FTA%20Services%20Fees%20and%20its%20amendments%20-%20for%20publishing%20%2003%2012%202025.docx.pdf | 2026-11-27; read operative fees, including 2026 amendment commencement |
+| Ministerial Decision 247/2023: treaty certificates | https://mof.gov.ae/wp-content/uploads/2023/10/Ministerial-Decision-No247-of-2023-on-the-Issuance-of-Tax-Residency-Certificate-for-the-Purposes-of-International-Agreements.pdf | See TPGTR1 section 7.4 read 2026-11-27; no separate direct read claimed |
+| CTP006: first-period seven-month late-registration waiver | https://tax.gov.ae/Datafolder/Files/Pdf/2025/CTP006-Waiver-of-Late-Registration-Administrative-Penalty-02-07-2025.pdf | 2026-11-26; exact applicable quotes reused from committed ae-corporate-tax ledger |
+| Cabinet Decision 75/2023 amended: penalties items 1, 7–8 and 14 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf | 2026-11-26 reused registration/return/payment quotes; 2026-11-27 read record-keeping item1 |
 
-Not yet confirmed: the Small Business Relief end date (31 December 2029) rests on Ministerial Decision No. 131 of 2026, whose English text was read; the Arabic original was not compared. The exceptional-circumstances day rule and the Permanent Place of Residence wording come from Ministerial Decision No. 27 of 2023 and were not reread word for word today.
+Not yet confirmed: no unverified rule is usable. Licensing/commercial-investment characterisation, uncertain employment, treaty outcomes, exceptional-day relief, MNE classification and individual audit/penalty disputes require the partner-accountant referral above. Official English legislation PDFs identify themselves as unofficial translations; the exact source wording is recorded in the private claims ledger.
