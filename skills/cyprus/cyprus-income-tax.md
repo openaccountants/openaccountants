@@ -1,7 +1,7 @@
 ---
 name: cyprus-income-tax
 description: "Compute Cyprus individual income tax for 2026: residence, progressive bands, contribution caps, family deductions, special income, filing and provisional tax. Includes explicit holds for unproven eligibility and historical cases; use before preparing or reviewing a TD1 return."
-version: 0.5
+version: 0.6
 type: computation
 jurisdiction: CY
 tax_year: 2026
@@ -65,9 +65,37 @@ The cumulative amounts are arithmetic. For a positive chargeable base `x`, ordin
 
 Work in this order: establish ordinary income and allowable business/rental costs; apply an evidenced employment exemption if eligible; deduct qualifying art.9 items; measure the art.14 income base and individual contribution caps; deduct the allowed combined art.14 amount; deduct eligible art.14B amounts; apply the bands; compute separate income items independently; reconcile evidenced PAYE and provisional payments. Do not estimate the profit from net platform payouts alone or give a final return from a bank description. The ordinary-base inputs in the examples are stipulated; an unresolved income/expense classification blocks a real calculation.
 
-**Business/rental base hold.** Current official base text for ITL arts.5, 8(20)/(22), 9(1)/(2), 10, 11 and 13 was not substantively recovered in this pass. The old automatic bank-pattern deductions, the 20% building-rent deduction, vehicle/home-office/phone allocation, bad debts, wear-and-tear rates (including the former 7%/20%/33⅓% energy figures), entertainment 1%/EUR 30,000, securities/dividend exemptions, and ordinary/foreign/business-transfer loss outcomes are **not usable here** until their retained conditions and amendment applicability are proven. Do not apply a percentage or assert deductibility from these historical statements. Check this point with one of our partner accountants.
+### Business income and expenses
 
-This hold does not turn every credit into income or every debit into an expense. Reconcile invoices, gross platform sales and commissions, refunds, own-account transfers, loan principal and interest, capital purchases, grants, VAT and tax payments separately. Keep an unresolved schedule; do not silently use zero as a final tax-law answer.
+Residents include business profits and property rents from Cyprus and abroad under art.5(1)(α)/(ε). Reconcile invoices and gross platform sales, commissions and refunds; a platform's net settlement alone does not establish profit. Identify own-account transfers and loan principal through both sides of the reconciliation rather than treating every bank credit as sales. [ITL art.5, government base copy, PDF p.24](https://www.gov.cy/media/sites/167/2026/01/IT118I-2002.pdf).
+
+Art.9(1) permits expenses incurred **wholly and exclusively to acquire the income**, subject to art.9(2) and the overriding art.11 exclusions. Evidence the service, recipient, business purpose, period and whether it is revenue or capital. This test supports ordinary business premises, professional insurance, accountancy, revenue legal work, supplies, advertising, current-business training, subscriptions, processing charges and recurring business software; their merchant labels alone do not establish the test. Separate an evidenced business component of a mixed phone/internet or utility bill; do not apply an invented default percentage. Home living costs and travel between home and work are excluded. An owner's notional rent to themself is excluded; do not invent a home-office rent deduction. Genuine business travel and third-party transport require evidence of the trip's business purpose. [Arts.9(1),11(1)–(9), PDF pp.36–37,73–74](https://www.gov.cy/media/sites/167/2026/01/IT118I-2002.pdf).
+
+Repairs to income-producing premises/equipment can qualify under art.9(1)(α); improvements, alterations and additions are not ordinary expense deductions under art.11(7). Owner remuneration/interest on own capital, personal stock withdrawals, capital withdrawn/employed, recoverable insured/indemnified amounts, income tax itself and voluntary outlays outside art.14 are excluded under art.11(3)–(11). A loan payment must be split between principal and interest; business interest still needs its income-producing purpose and any specific restriction checked. [Same provisions](https://www.gov.cy/media/sites/167/2026/01/IT118I-2002.pdf).
+
+**Bad debts:** art.9(1)(γ) requires the Commissioner to be satisfied that a business debt became irrecoverable in the tax year and was actually written off by a final entry in that same year. A specific doubtful-debt provision needs the Commissioner's satisfaction that the debt became or will ultimately become uncollectible. A later recovery of a previously deducted/write-off debt is business receipts in the recovery year. A general reserve, old invoice or failed payment alone does not establish these conditions. [PDF pp.36–37](https://www.gov.cy/media/sites/167/2026/01/IT118I-2002.pdf).
+
+**Business entertainment:** private meals are excluded under art.11(1)/(5). Evidenced business entertainment/hospitality is subject to an aggregate annual allowance of the lower of 1% of business gross receipts and EUR 30,000; apply that ceiling to the qualifying annual total, not separately to every receipt. The EUR 30,000 ceiling applies from 2026; it was EUR 10,000 before this amendment. The original 2025 client-dinner case retains its original year and private-case stipulation. [Art.11(12), PDF p.74](https://www.gov.cy/media/sites/167/2026/01/IT118I-2002.pdf); [Law 244 s.7(α), 2026 cap](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf).
+
+### Rental income
+
+For an **individual's rent from buildings**, art.9(2) deducts 20% of gross rent before the art.10 wear-and-tear allowance and the interest expense. Do not apply the buildings allowance to bare land or add the same ordinary actual costs again as if the statutory deduction did not exist. Establish that the property is a building and evidence the separate qualifying capital allowance/interest. Art.9(3) includes letting property within business for this article. SDC on rent is abolished for 2026; GHS is a separate computation. [Art.9(2)–(3), PDF p.44](https://www.gov.cy/media/sites/167/2026/01/IT118I-2002.pdf); [Tax Department FAQ 51–54](https://www.gov.cy/media/sites/29/2026/01/FAQs_last.pdf).
+
+### Capital assets and vehicles
+
+Art.10 provides wear-and-tear relief for owned plant, machinery and buildings used in the business (and its specified employment/research cases). It is not an immediate deduction of the purchase price. Private motor vehicles are expressly outside plant/machinery for this provision. Keep cost, ownership, acquisition/use dates, business use and disposal records; repairs and improvements are distinct. [Art.10(1)–(2), PDF pp.62–64](https://www.gov.cy/media/sites/167/2026/01/IT118I-2002.pdf).
+
+The saved notice under art.47 identifies computers and operating software at 20% annual wear and tear; the older separate application-software table distinguishes cost above/below CYP 1,000, so a perpetual licence is not automatically assigned the hardware rate. Current invoices must distinguish hardware, operating software, application licences and recurring services. Do not resurrect an old currency threshold as a new euro threshold. [KDP 340/1989 §8, printed pp.1151–1153](https://www.gov.cy/media/sites/167/2026/01/%CE%9A%CE%94%CE%A0-340_89.pdf); [art.47 savings, PDF p.138](https://www.gov.cy/media/sites/167/2026/01/IT118I-2002.pdf). The full current rate/threshold chain for printers, furniture and application-software purchases has not been established; those specific amounts remain a **writer-source blocker**, not a completed eligibility referral.
+
+Art.11(15) disallows interest attributable to buying a private motor vehicle even if used in business, and to another asset not used in business, until seven years after purchase. Do not treat a mileage log as overriding a statutory exclusion. The government's art.11(13) line is visibly truncated in its PDF p.74; a complete official sentence for private-car running expenses has not been recovered. Fuel, parking and car running-cost outcomes therefore remain a **writer-source blocker**. A separate statutory vehicle-allowance rate is not inferred from a bank label. Check this point with one of our partner accountants. [Arts.10(1),11(15)](https://www.gov.cy/media/sites/167/2026/01/IT118I-2002.pdf).
+
+The historical accelerated business-energy/electric-vehicle figures (7%, 20%, 33⅓%, and the former 2023–2026 window extended in the reform to 2030) remain recorded for eligibility research only; they are not usable rates without the full technical asset/use conditions. Check this point with one of our partner accountants.
+
+### Dividends, securities and losses
+
+An individual's dividend income is exempt from income tax under art.8(20). Art.8(22) exempts gains from disposing of **titles**, defined in art.2 as shares, debentures, bonds, founders' and other securities of legally constituted companies/other legal persons, and rights over them. In 2026 the express rule that redemption of an open- or closed-ended collective-investment share/unit is disposal of a title remains: its deletion is delayed until 2031. Establish the instrument and transaction; do not extend “titles” to any trading product or crypto. SDC, GHS and Cyprus-property capital gains remain separate questions; an income-tax exemption does not mean total tax is zero. [Arts.2,8(20)/(22), PDF pp.20,31–32](https://www.gov.cy/media/sites/167/2026/01/IT118I-2002.pdf); [Law 244 ss.4,23](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf).
+
+Art.13(1) permits a tax loss which would have been taxable profit to offset other same-year income, with the unabsorbed amount carried forward under that article. For persons legally required to keep records and prepare independently audited accounts and submit returns, its first proviso limits carry-forward to seven years from the end of the loss year (five before the 2026 amendment); do not infer that every individual has that audit obligation. Art.13(3) denies a loss where the relevant accounts were submitted more than six years after their due date. Foreign-business losses can offset other income, with the remainder carried forward subject to the Act under art.13(9); business includes letting property. Art.13(10) permits accumulated owner/partnership losses to transfer on converting the business to a company. Obtain the original computation, loss year, prior utilisation and submission history before using an amount. Company/group anti-avoidance and other special restrictions are not displaced, and crypto losses follow their separate ring-fence below. [Art.13(1),(3),(9),(10), PDF pp.83–88](https://www.gov.cy/media/sites/167/2026/01/IT118I-2002.pdf); [Law 244 s.8](https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf).
 
 ### Contributions and insurance
 
@@ -208,26 +236,26 @@ The following original inputs stay in their original years. They are evidence-re
 
 | Original bank input | Evidence task; disposition |
 |---|---|
-| `15/03/2025 ; BANK OF CYPRUS EMBASMA ; ANDREOU TRADING LTD ; PLIROMI INV-2025-003 ; +1,190.00 ; EUR` | Client/invoice/VAT reconciliation. Original illustrative EUR 1,190 / 1.19 = EUR 1,000 net and EUR 190 VAT is arithmetic only; applicable supply/rate and PIT treatment held. |
-| `01/04/2025 ; HELLENIC BANK DD ; ADOBE SYSTEMS IRELAND ; CREATIVE CLOUD APR ; -29.99 ; EUR` | ADOBE EUR 29.99: obtain invoice, business purpose and revenue/capital treatment; deduction held. |
-| `22/04/2025 ; BANK OF CYPRUS KARTA ; OPSO RESTAURANT ; CLIENT DINNER ; -85.00 ; EUR` | OPSO EUR 85 client dinner: obtain purpose/attendees/private split; neither blanket disallowance nor an allowance is usable from the description. |
+| `15/03/2025 ; BANK OF CYPRUS EMBASMA ; ANDREOU TRADING LTD ; PLIROMI INV-2025-003 ; +1,190.00 ; EUR` | Client/invoice/VAT reconciliation. On an expressly stipulated invoiced business supply carrying 19% VAT, EUR 1,190 / 1.19 = EUR 1,000 business sales and EUR 190 output VAT. Reconcile debtor/invoice/VAT ledger; the bank label alone supplies none of those facts. |
+| `01/04/2025 ; HELLENIC BANK DD ; ADOBE SYSTEMS IRELAND ; CREATIVE CLOUD APR ; -29.99 ; EUR` | On the original recurring-subscription, wholly business-use assumptions, EUR 29.99 is an art.9(1) revenue expense; retain invoice and exclude private/capital amounts. |
+| `22/04/2025 ; BANK OF CYPRUS KARTA ; OPSO RESTAURANT ; CLIENT DINNER ; -85.00 ; EUR` | Original example is expressly “Entertainment (Private)”: EUR 85 is excluded under art.11(1)/(5). An evidenced business-hospitality alternative uses the 2025 aggregate 1%/EUR 10,000 ceiling; annual totals were not supplied to compute an allowance. |
 | `10/01/2025 ; BANK OF CYPRUS DD ; SOCIAL INSURANCE SERVICES ; Q4 2024 CONTRIBUTION ; -2,490.00 ; EUR` | EUR 2,490 Q4 2024 contribution paid 2025: separate period, contribution type, payer and certificate; deduction year/category held. |
 | `05/02/2025 ; EUROBANK CYPRUS EMBASMA ; UK PENSION PROVIDER ; MONTHLY PENSION x12 = 18,000/yr ; +1,500.00 ; EUR` | UK pension EUR 1,500 monthly / EUR 18,000 annually in 2025: original special arithmetic (18,000−3,420)×5% = EUR 729; historical eligibility/treaty held. |
-| `15/03/2026 ; BANK OF CYPRUS EMBASMA ; ANDREOU TRADING LTD ; PLIROMI INV-2026-003 ; +1,190.00 ; EUR` | 2026 client payment: same EUR 1,190 / EUR 1,000 / EUR 190 reconciliation inputs; VAT/PIT outcome held pending invoice/supply evidence. |
-| `01/04/2026 ; HELLENIC BANK DD ; ADOBE SYSTEMS IRELAND ; CREATIVE CLOUD APR ; -29.99 ; EUR` | 2026 ADOBE EUR 29.99: same invoice/business-purpose hold. |
-| `22/04/2026 ; BANK OF CYPRUS KARTA ; OPSO RESTAURANT ; CLIENT DINNER ; -85.00 ; EUR` | 2026 OPSO EUR 85: same private/business-entertainment hold. |
-| `10/01/2026 ; BANK OF CYPRUS DD ; SOCIAL INSURANCE SERVICES ; Q4 CONTRIBUTION ; -2,490.00 ; EUR` | 2026 Q4 contribution EUR 2,490: payment type/certificate/period must be established. |
+| `15/03/2026 ; BANK OF CYPRUS EMBASMA ; ANDREOU TRADING LTD ; PLIROMI INV-2026-003 ; +1,190.00 ; EUR` | 2026 client payment: same EUR 1,190 / EUR 1,000 / EUR 190 split on an expressly stipulated invoiced business supply carrying 19% VAT; EUR 1,000 enters sales, EUR 190 output VAT; actual supply evidence required. |
+| `01/04/2026 ; HELLENIC BANK DD ; ADOBE SYSTEMS IRELAND ; CREATIVE CLOUD APR ; -29.99 ; EUR` | 2026 ADOBE EUR 29.99: recurring wholly business-use subscription is an art.9(1) expense; invoice and private/capital exclusions as above. |
+| `22/04/2026 ; BANK OF CYPRUS KARTA ; OPSO RESTAURANT ; CLIENT DINNER ; -85.00 ; EUR` | 2026 OPSO EUR 85: original private stipulation gives zero deduction; evidenced business hospitality instead uses the annual lower-of-1%-of-gross-receipts/EUR30,000 ceiling; missing annual totals prevent an exact allowance. |
+| `10/01/2026 ; BANK OF CYPRUS DD ; SOCIAL INSURANCE SERVICES ; Q4 CONTRIBUTION ; -2,490.00 ; EUR` | 2026 Q4 contribution EUR 2,490: if certified as a paid qualifying individual contribution, include in art.14 pool within the 1/5 cap; no second business-expense deduction or inferred rate. |
 | `05/02/2026 ; EUROBANK CYPRUS EMBASMA ; UK PENSION PROVIDER ; MONTHLY PENSION ; +1,500.00 ; EUR` | 2026 UK pension EUR 1,500 monthly / EUR 18,000 annually: if art.20 foreign-services election applies, special tax = EUR 650; ordinary tax on this pension alone is EUR 0; compare before electing; treaty/GHS held. |
 
 - Original 2025 Example 5 and Tests 1–3: chargeable EUR 30,000 / 45,000 / 70,000; using the original historical 19,500 / 28,000 / 36,300 / 60,000 boundaries gives EUR 2,200 / 6,385 / 14,385. The EUR 45,000 case is not replaced by a 2026 case. These are preserved arithmetic comparisons, not 2025 filing instructions; official historical base/application is held. Check this point with one of our partner accountants.
 - Original Test 4 and later Example 5/Test A: 2026 chargeable EUR 50,000 → EUR 6,900, from the sourced 2026 bands. Test B: EUR 22,000 → zero; EUR 22,001 → EUR 0.20.
 - Original Test 5: 2025 employee earning at least EUR 66,612; original stipulated 8.8% SI and 2.65% GHS, EUR 66,612 / EUR 180,000 ceilings. EUR 66,612×8.8% = EUR 5,861.86 and 8.8%+2.65% = 11.45% are arithmetic. The percentages apply to different bases; no total contribution or current ceiling is inferred. All SI/GHS eligibility/rate/base/occupational-category outcomes held. Check this point with one of our partner accountants.
-- Original Test 6/Test C: resident, non-domiciled, dividends EUR 20,000. The old combined “tax EUR 0” outcome is not usable: PIT, SDC and GHS require separate proof. Check this point with one of our partner accountants.
+- Original Test 6/Test C: resident, non-domiciled, dividends EUR 20,000. Income tax on EUR 20,000 dividends is zero under art.8(20). The old combined “tax EUR 0” outcome remains unusable: SDC and GHS need separate proof. Check this point with one of our partner accountants.
 - Original Test 7 and Example 6: annual foreign pension EUR 18,000, special election; retain 2025 EUR 729 arithmetic above. For the distinct 2026 case, (18,000−5,000)×5% = EUR 650; bands on the pension alone give zero. Do not replace the original year.
 - Original Test 8: final tax EUR 10,000 and provisional tax EUR 6,000. These tax amounts alone cannot decide the 75% **income** trigger. If its legal trigger is established, illustrative difference EUR 4,000×10% = EUR 400; actual charge remains held. Check this point with one of our partner accountants.
 - Later Test E: if all art.8(21B) conditions are established, the relief is min(25% of qualifying pay/profit, EUR 25,000), with the EUR 30,000 strict threshold and permitted years checked first. No invented pay figure substitutes for this original case.
 - Later Test F: established two-child family income EUR 100,001 loses all art.14B deductions; at EUR 100,000 the ceiling itself does not disqualify, but all other conditions still apply.
-- Later Test G: 2026 resident domiciled landlord; preserve the rental topic. No SDC on rent; income tax/GHS still apply. The 20% buildings allowance and rental base are held until their retained law is proven; no illustrative rent amount is invented. Check this point with one of our partner accountants.
+- Later Test G: 2026 resident domiciled landlord; preserve the rental topic. No SDC on rent; income tax/GHS still apply. Apply art.9(2): gross building rent less 20%, then eligible wear-and-tear and interest; no illustrative rent amount is invented. Establish actual property, costs and separate GHS.
 
 ```oa-check
 name: Preserved 2025 arithmetic inputs only, no historical filing clearance
@@ -275,62 +303,62 @@ expected:
   pension_ordinary: 0
 ```
 
-### Bank patterns: original matrix retained on hold
+### Bank patterns: conditional current treatment
 
-**Every row in this historical matrix is non-usable for tax treatment.** It preserves the original candidate, conclusion and caveat for review; it is not an instruction to apply that conclusion. Missing current retained ITL arts.5/8/9/10/11/13 proof prevents automatic deductions/exclusions. The documented art.14 computation above governs evidenced qualifying contributions. For each unresolved row: **Check this point with one of our partner accountants.**
+All 50 original patterns remain. The ordinary law above governs an evidenced transaction; the pattern is only an intake aid. A missing invoice is an evidence request, not a whole-topic legal hold. The few source blockers are identified in their rows. Original conclusions remain available in the preserved Git history.
 
-| Original pattern | Original candidate | Original treatment (HELD) | Original caveat (HELD) |
+| Original pattern | Candidate category | Current treatment | Conditions / authority |
 |---|---|---|---|
-| Client name + TRANSFER, DEPOSIT, EMBASMA, PAYMENT | Self-employment income | Business income | If VAT-registered, extract net (excl. 19% VAT) |
-| FEES, PROFESSIONAL FEES, CONSULTANCY, AMOIVI | Self-employment income | Business income | Professional fees -- typical for self-employed |
-| STRIPE PAYOUT, STRIPE TRANSFER | Self-employment income | Business income | Platform payout -- match to underlying invoices |
-| PAYPAL PAYOUT, PAYPAL TRANSFER | Self-employment income | Business income | Platform payout -- verify against invoices |
-| WISE PAYOUT, REVOLUT PAYOUT | Self-employment income | Business income | Check if business or personal |
-| UPWORK, FIVERR, TOPTAL | Self-employment income | Business income | Freelance platform -- net of commission |
-| MISTHOS, SALARY, PAYROLL, EMPLOYER [name] | Employment income (PAYE) | Employment income | NOT self-employment -- emoluments under PAYE |
-| ENOIKIO, RENT RECEIVED | Rental income | Rental income | Subject to PIT (+ SDC if domiciled) -- see 5.3 |
-| TOKOS, INTEREST RECEIVED | Investment income | EXEMPT from PIT | Taxed under SDC if domiciled, otherwise nil |
-| MERISMA, DIVIDEND | Investment income | EXEMPT from PIT | Taxed under SDC if domiciled, otherwise nil |
-| TAX REFUND, EPISTROFI FOROU | EXCLUDE | Not income | Tax refund from prior year |
-| GOVERNMENT GRANT, EPIDOMA | Check nature | Capital grants EXCLUDE; revenue grants = income | Confirm grant nature |
-| OFFICE RENT, ENOIKIO GRAFEIOU | Office rent | Deductible | Dedicated business premises |
-| PROFESSIONAL INDEMNITY, PI INSURANCE | Professional insurance | Deductible | None recorded |
-| ACCOUNTANT, AUDITOR, BOOKKEEP, LOGISTIS | Accountancy/audit fees | Deductible | None recorded |
-| LAWYER, LEGAL, DIKIGOROS (business) | Legal fees | Deductible | Must be business-related |
-| STATIONERY, OFFICE SUPPLIES | Office supplies | Deductible | None recorded |
-| MARKETING, GOOGLE ADS, META ADS, FACEBOOK ADS | Marketing/advertising | Deductible | None recorded |
-| TRAINING, CPD, COURSE, SEMINAR, CONFERENCE | Training/CPD | Deductible | Must relate to current business |
-| PROFESSIONAL BODY, ICPAC SUBSCRIPTION | Professional subscriptions | Deductible | None recorded |
-| BANK CHARGE, MAINTENANCE FEE, SPEXODA | Bank charges | Deductible | Business account only |
-| STRIPE FEE, PAYPAL FEE, TRANSACTION FEE | Payment processing fees | Deductible | None recorded |
-| DOMAIN, HOSTING, CLOUDFLARE, AWS | IT infrastructure | Deductible | If capital, use capital allowances |
-| GOOGLE WORKSPACE, MICROSOFT 365, OFFICE 365 | Software subscription | Deductible | Recurring subscription = operating expense |
-| ADOBE, CANVA, FIGMA, NOTION, SLACK, ZOOM | Software subscription | Deductible | None recorded |
-| ANTHROPIC, OPENAI, GITHUB, ATLASSIAN, DROPBOX | Software subscription | Deductible | None recorded |
-| SOFTWARE LICENCE (perpetual, high value) | Capital item | Capital allowance | Capitalise per wear-and-tear schedule |
-| EAC, AHK, ELECTRICITY, ILEKTRISMOS | Electricity | T2 if home office | 100% if dedicated office; proportional if home |
-| WATER BOARD, YDREFSI | Water | T2 if home office | Proportional if home |
-| CYTA, PRIMETEL, EPIC, CABLENET | Telecoms/broadband | T2 | Business use portion only; default 0% if mixed |
-| RYANAIR, WIZZ AIR, AEGEAN, CYPRUS AIRWAYS, EASYJET | Flights | Deductible if business travel | Must be wholly business purpose |
-| HOTEL, BOOKING.COM, AIRBNB | Accommodation | Deductible if business travel | None recorded |
-| BOLT, TAXI, UBER | Local transport | Deductible if business purpose | None recorded |
-| FUEL, PETROLINA, EKO, PETROL | Vehicle fuel | T2 -- business % only | Requires mileage log |
-| PARKING | Parking | T2 -- business % only | None recorded |
-| RESTAURANT, DINNER, LUNCH, ENTERTAINMENT, CLIENT MEAL | Entertainment | NOT deductible | Private/non-business |
-| PERSONAL, GROCERIES, SUPERMARKET, ALPHAMEGA, LIDL | Personal expenses | NOT deductible | Private living costs |
-| FINE, PENALTY, PROSTIMO, PARKING FINE | Fines/penalties | NOT deductible | Public policy |
-| INCOME TAX, FOROS, TAX PAYMENT | Tax payments | NOT deductible | Income tax cannot reduce income |
-| DRAWINGS, PERSONAL WITHDRAWAL, ATM (personal) | Drawings | NOT deductible | Not an expense |
-| LAPTOP, COMPUTER, MACBOOK, DESKTOP | Computer hardware | See 5.4 [RESEARCH GAP -- reviewer to confirm exact wear-and-tear rate] | Capital allowance, not expense |
-| PRINTER, SCANNER, COPIER | Office equipment | See 5.4 [RESEARCH GAP -- reviewer to confirm] | Capital allowance |
-| FURNITURE, DESK, CHAIR | Furniture/fittings | See 5.4 [RESEARCH GAP -- reviewer to confirm] | Capital allowance |
-| VEHICLE, CAR (business) | Motor vehicle | See 5.4 [RESEARCH GAP -- reviewer to confirm] | Business % only |
-| INTERNAL TRANSFER, OWN ACCOUNT, BETWEEN ACCOUNTS | EXCLUDE | Own-account transfer | None recorded |
-| LOAN REPAYMENT, PERSONAL LOAN | EXCLUDE | Loan principal movement | None recorded |
-| SOCIAL INSURANCE, KOINONIKES ASFALISEIS | Deduction (within 1/5 cap) | Deductible against chargeable income, NOT a business expense | None recorded |
-| GHS, GESY, GENIKO SYSTIMA YGEIAS | Deduction (within 1/5 cap) | Deductible against chargeable income | None recorded |
-| VAT PAYMENT, FPA | EXCLUDE | VAT liability payment, not expense | None recorded |
-| PROVISIONAL TAX, TEMPORARY TAX, PROSORINI FORO | Credit against final liability | Not an expense | None recorded |
+| Client name + TRANSFER, DEPOSIT, EMBASMA, PAYMENT | Self-employment income | Business sales once matched to invoice | Art.5(1)(α); split output VAT only where supply, registration and rate are evidenced; 19% is not inferred from registration. |
+| FEES, PROFESSIONAL FEES, CONSULTANCY, AMOIVI | Self-employment income | Business professional revenue | Art.5(1)(α); match invoice/accruals, not merely receipt text. |
+| STRIPE PAYOUT, STRIPE TRANSFER | Self-employment income | Reconcile gross sales, fees and settlement | Art.5/9: settlement is not automatically gross sales. |
+| PAYPAL PAYOUT, PAYPAL TRANSFER | Self-employment income | Reconcile gross sales, fees and settlement | Art.5/9: identify commissions/refunds without double counting. |
+| WISE PAYOUT, REVOLUT PAYOUT | Self-employment income | Classify underlying transaction | Own transfer and business payment must be distinguished using both records. |
+| UPWORK, FIVERR, TOPTAL | Self-employment income | Business revenue and separately evidenced platform fee | Arts.5/9; reconcile gross invoice and commission, not just net payout. |
+| MISTHOS, SALARY, PAYROLL, EMPLOYER [name] | Employment income (PAYE) | Employment category, reconcile gross pay/PAYE | Use employer certificate and current art.5(1)(β); bank net pay is not the gross taxable amount. |
+| ENOIKIO, RENT RECEIVED | Rental income | Building rent: gross less 20%, then qualifying wear/interest | Art.9(2); establish building, income and separate GHS; no rental SDC in 2026. |
+| TOKOS, INTEREST RECEIVED | Investment income | Interest outcome held separately | Identify interest category and SDC/GHS conditions; no “otherwise nil” total-tax inference. Check this point with one of our partner accountants. |
+| MERISMA, DIVIDEND | Investment income | Individual dividend exempt from PIT | Art.8(20); identify actual dividend; SDC/GHS still separate. |
+| TAX REFUND, EPISTROFI FOROU | EXCLUDE | Reconcile the tax receivable and refund | Art.11(10): income-tax payment is not a deduction; a refund of it is not trading sales. Other refundable amounts need their original treatment. |
+| GOVERNMENT GRANT, EPIDOMA | Check nature | Specific grant terms required; no blanket capital exclusion | Grant nature/conditions and any specific charge/exemption are a source gap. Check this point with one of our partner accountants. |
+| OFFICE RENT, ENOIKIO GRAFEIOU | Office rent | Revenue expense if wholly and exclusively income-producing | Art.9(1), subject to art.11; invoice, business purpose and revenue/capital distinction required; private portion excluded. |
+| PROFESSIONAL INDEMNITY, PI INSURANCE | Professional insurance | Revenue expense if wholly and exclusively income-producing | Art.9(1), subject to art.11; invoice, business purpose and revenue/capital distinction required; private portion excluded. |
+| ACCOUNTANT, AUDITOR, BOOKKEEP, LOGISTIS | Accountancy/audit fees | Revenue expense if wholly and exclusively income-producing | Art.9(1), subject to art.11; invoice, business purpose and revenue/capital distinction required; private portion excluded. |
+| LAWYER, LEGAL, DIKIGOROS (business) | Legal fees | Revenue expense if wholly and exclusively income-producing | Art.9(1), subject to art.11; invoice, business purpose and revenue/capital distinction required; private portion excluded. |
+| STATIONERY, OFFICE SUPPLIES | Office supplies | Revenue expense if wholly and exclusively income-producing | Art.9(1), subject to art.11; invoice, business purpose and revenue/capital distinction required; private portion excluded. |
+| MARKETING, GOOGLE ADS, META ADS, FACEBOOK ADS | Marketing/advertising | Revenue expense if wholly and exclusively income-producing | Art.9(1), subject to art.11; invoice, business purpose and revenue/capital distinction required; private portion excluded. |
+| TRAINING, CPD, COURSE, SEMINAR, CONFERENCE | Training/CPD | Revenue expense if wholly and exclusively income-producing | Art.9(1), subject to art.11; invoice, business purpose and revenue/capital distinction required; private portion excluded. |
+| PROFESSIONAL BODY, ICPAC SUBSCRIPTION | Professional subscriptions | Revenue expense if wholly and exclusively income-producing | Art.9(1), subject to art.11; invoice, business purpose and revenue/capital distinction required; private portion excluded. |
+| BANK CHARGE, MAINTENANCE FEE, SPEXODA | Bank charges | Revenue expense if wholly and exclusively income-producing | Art.9(1), subject to art.11; invoice, business purpose and revenue/capital distinction required; private portion excluded. |
+| STRIPE FEE, PAYPAL FEE, TRANSACTION FEE | Payment processing fees | Revenue expense if wholly and exclusively income-producing | Art.9(1), subject to art.11; invoice, business purpose and revenue/capital distinction required; private portion excluded. |
+| DOMAIN, HOSTING, CLOUDFLARE, AWS | IT infrastructure | Revenue expense if wholly and exclusively income-producing | Art.9(1), subject to art.11; invoice, business purpose and revenue/capital distinction required; private portion excluded. |
+| GOOGLE WORKSPACE, MICROSOFT 365, OFFICE 365 | Software subscription | Revenue expense if wholly and exclusively income-producing | Art.9(1), subject to art.11; invoice, business purpose and revenue/capital distinction required; private portion excluded. |
+| ADOBE, CANVA, FIGMA, NOTION, SLACK, ZOOM | Software subscription | Revenue expense if wholly and exclusively income-producing | Art.9(1), subject to art.11; invoice, business purpose and revenue/capital distinction required; private portion excluded. |
+| ANTHROPIC, OPENAI, GITHUB, ATLASSIAN, DROPBOX | Software subscription | Revenue expense if wholly and exclusively income-producing | Art.9(1), subject to art.11; invoice, business purpose and revenue/capital distinction required; private portion excluded. |
+| SOFTWARE LICENCE (perpetual, high value) | Capital item | Capital classification; rate/threshold unresolved | Art.11(6)/(7) excludes immediate capital spend; application/operating software distinctions in KDP340 §8. Writer-source blocker for exact current licence allowance. |
+| EAC, AHK, ELECTRICITY, ILEKTRISMOS | Electricity | Evidenced business utility component only | Arts.9(1),11(1)/(5); dedicated premises and supported business allocation; no default home-office percentage. |
+| WATER BOARD, YDREFSI | Water | Evidenced business utility component only | Arts.9(1),11(1)/(5); personal living portion excluded. |
+| CYTA, PRIMETEL, EPIC, CABLENET | Telecoms/broadband | Evidenced business telecom component only | Arts.9(1),11(1)/(5); no automatic 0% or assumed percentage for a mixed bill. |
+| RYANAIR, WIZZ AIR, AEGEAN, CYPRUS AIRWAYS, EASYJET | Flights | Business travel cost if income-producing | Arts.9(1),11(1)/(5); itinerary/purpose and private split; ordinary commuting excluded. |
+| HOTEL, BOOKING.COM, AIRBNB | Accommodation | Business travel accommodation if income-producing | Arts.9(1),11(1)/(5); dates, business purpose and personal nights. |
+| BOLT, TAXI, UBER | Local transport | Business third-party transport if income-producing | Arts.9(1),11(1)/(5); trip purpose, private split; commuting excluded. |
+| FUEL, PETROLINA, EKO, PETROL | Vehicle fuel | Private-car expense treatment unresolved | Art.11(13) complete sentence unreadable in official PDF; writer-source blocker, not mileage percentage. Check this point with one of our partner accountants. |
+| PARKING | Parking | Private-car parking treatment unresolved | Writer-source blocker: resolve art.11(13) and actual transport context. Check this point with one of our partner accountants. |
+| RESTAURANT, DINNER, LUNCH, ENTERTAINMENT, CLIENT MEAL | Entertainment | Private meal excluded; business hospitality capped | Arts.11(1)/(5)/(12); annual qualifying total limited to lower of 1% gross business receipts and EUR30,000 in 2026. |
+| PERSONAL, GROCERIES, SUPERMARKET, ALPHAMEGA, LIDL | Personal expenses | Private living expenses excluded | Arts.11(1)/(5); merchant also sells business goods, so use the actual invoice. |
+| FINE, PENALTY, PROSTIMO, PARKING FINE | Fines/penalties | Specific legal character/source unresolved | Blanket “public policy” rule not recovered from official authority; statutory fines versus contractual compensation need separate proof. Writer-source blocker. Check this point with one of our partner accountants. |
+| INCOME TAX, FOROS, TAX PAYMENT | Tax payments | Income tax itself excluded | Art.11(10); other taxes must be identified individually. |
+| DRAWINGS, PERSONAL WITHDRAWAL, ATM (personal) | Drawings | Capital/private movement, no expense deduction | Art.11(1)/(6); reconcile owner account and evidence ATM purpose. |
+| LAPTOP, COMPUTER, MACBOOK, DESKTOP | Computer hardware | Owned business computer: wear-and-tear route | Art.10; KDP340 §8 computer/operating-software category 20%; private use/asset record and relevant acquisition conditions required. |
+| PRINTER, SCANNER, COPIER | Office equipment | Capital route; exact allowance unresolved | Arts.10,11(6)/(7); current asset-rate chain remains a writer-source blocker, not an immediate expense. |
+| FURNITURE, DESK, CHAIR | Furniture/fittings | Capital route; exact allowance unresolved | Arts.10,11(6)/(7); current asset-rate chain remains a writer-source blocker. |
+| VEHICLE, CAR (business) | Motor vehicle | Private car excluded from plant/machinery; do not assume business % | Art.10(1); art.11(15) purchase-interest exclusion for seven years; running-cost clause blocker above. |
+| INTERNAL TRANSFER, OWN ACCOUNT, BETWEEN ACCOUNTS | EXCLUDE | Balance-sheet reconciliation, not sales/cost | Match both bank entries and owner/entity; an unexplained transfer is unresolved evidence, not automatically excluded. |
+| LOAN REPAYMENT, PERSONAL LOAN | EXCLUDE | Separate principal from interest | Principal reduces loan balance; interest needs art.9 purpose and art.11 restrictions; personal loan cost excluded. |
+| SOCIAL INSURANCE, KOINONIKES ASFALISEIS | Deduction (within 1/5 cap) | Qualifying paid individual contribution: art.14 pool | Certificate/type/payer required; individual and combined 1/5 caps; no double business expense. |
+| GHS, GESY, GENIKO SYSTIMA YGEIAS | Deduction (within 1/5 cap) | Qualifying paid individual contribution: art.14 pool | Certificate/type/payer required; combined 1/5 cap; no double business expense. |
+| VAT PAYMENT, FPA | EXCLUDE | Reconcile VAT liability | Output-tax liability settlement is not a business expense; unrecoverable input VAT needs the underlying cost/asset treatment, not blanket exclusion. |
+| PROVISIONAL TAX, TEMPORARY TAX, PROSORINI FORO | Credit against final liability | Credit/reconcile evidenced provisional payment | Art.11(10): no expense deduction; current payment procedure remains held. |
 
 Bank-format assertions are held: Bank of Cyprus, Hellenic Bank, Eurobank Cyprus, Astrobank/Alpha Bank Cyprus, Revolut Business and Wise Business; obtain the actual statement rather than assuming PDF/CSV columns, date format or EUR conversion. Retain date, original text, debit/credit, currency, counterparty, invoice and exchange-rate evidence. Greek/transliterated search vocabulary: METAFORA/EMBASMA (transfer), AMESI CHREOSI/DD (direct debit), PAGIA ENTOLI/SO (standing order), KARTA/CARD, KATATHESI/DEPOSIT, SPEXODA/CHARGES, TOKOS/INTERESSI, MISTHOS, ENOIKIO and FPA. These are search aids, not proof of tax character.
 
@@ -348,7 +376,9 @@ Historical minimum wage and employer-fund figures, all contribution ceilings and
 
 | Source and exact scope read | URL | Read on |
 |---|---|---|
-| Gazette 5070: Law 243 ss.4,17,18,21,22,29,31,35; Law 244 ss.2,4,5,7,9,10,12,13,22/23 as renumbered; retained old base provisions not established merely by substitutions. SDC amendment read for dependency assessment, not domicile clearance | https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf | 2026-11-27 |
+| Government base copy through Law219/2025: actual visual reads of arts.2 titles;5(1)(α)/(ε);8 opening,(20),(22);9(1),(1)(α)/(γ),(2)/(3);10(1)/(2);11(1)–(12),(14)/(15);13(1),(3),(9)/(10);47 savings. Article11(13) visibly truncated, not certified | https://www.gov.cy/media/sites/167/2026/01/IT118I-2002.pdf | 2026-11-27 |
+| KDP340/1989 §8, printed1151–1153: annual table heading, computers/operating software and separate application-software table; exact rate chains for other assets not inferred. KDP88/1999 inspected: ship categories only | https://www.gov.cy/media/sites/167/2026/01/%CE%9A%CE%94%CE%A0-340_89.pdf | 2026-11-27 |
+| Gazette 5070: Law 243 ss.4,17,18,21,22,29,31,35; Law 244 ss.2,4,5,7,9,10,12,13,22/23 as renumbered; ordinary-base amendments ss.3–8 read for retained-rule applicability; no blanket current identity inferred from this older base copy. SDC amendment read for dependency assessment, not domicile clearance | https://www.mof.gov.cy/mof/gpo/gazette.nsf/540837D7F45A1D53C2258D710034BB74/%24file/5070%2031%2012%202025%20PARART%CE%97MA%201o%20MEROS%20I.pdf | 2026-11-27 |
 | Gazette 5075 correction: Law 244 section renumbering and serviced-loan definition correction; the printed reference to art.14B(3)(a) does not change the nature of the correction | https://www.mof.gov.cy/mof/gpo/gazette.nsf/203DBFC78C778160C2258DAB0020F89D/%24file/5075%2027%202%202026%20PARARTIMA%201o%20MEROS%20I.pdf | 2026-11-27 |
 | Law 17/2026 ss.2–5: complete new art.8(21B), non-stacking changes and commencement | https://www.mof.gov.cy/mof/tax/taxdep.nsf/All/AFF8B2E8B2A07820C2258DB60033F251/%24file/5076%206%203%202026%20PARARTIMA%201o%20MEROS%20I.pdf?OpenElement= | 2026-11-27 |
 | Gazette 5086: Law 66 s.2 and Law 67 ss.2–4, checking effects on this Guide; art.20D transition amended by Law 67 | https://www.mof.gov.cy/mof/gpo/gazette.nsf/21F7154E05045B76C2258DD900389972/%24file/5086%2014%204%202026%20PARARTIMA%201o%20MEROS%20I.pdf | 2026-11-27 |
@@ -358,4 +388,6 @@ Historical minimum wage and employer-fund figures, all contribution ceilings and
 | Tax Department 2022 computation notes 2, 15–19: historical arithmetic and income-based temporary-tax trigger; not current-year procedural clearance | https://taxisnet.mof.gov.cy/static/help/epr1/taxNotes_2022ch_en.html | 2026-11-27 |
 | Tax Department current default-rate explanation, read for current annual rate: indexed official 3.50% from 1 January 2026; not a 2027/2028 rate | https://www.gov.cy/mof-tax/en/documents/default-interest-monetary-charges-administrative-fines-additional-tax/default-interest-monetary-charges-administrative-fines-additional-tax-general-information/ | 2026-11-27 (indexed text only) |
 
-Not yet confirmed: **non-usable holds only**, each carrying the partner-accountant referral above: current retained income/expense/rent/loss/exemption base and transition identity; pension treaty/application; technical green eligibility; family-definition/student boundary/cohabitation and rent-ownership conflicts; spouse legacy policies; tax-account registration and live TFA/provisional-payment procedure; accounts scope; real temporary-tax charges/foreign credits; SDC domicile/interest/dividend/penalty outcomes; GHS/SI/employer funds/ceilings/occupational minima and minimum wage; asset allowances; AIF/UCITS and termination payments; enforcement/assessment exceptions; original 2025 tax/contribution outcomes and bank-format assertions. CyLaw is a reproduction, not the Gazette: direct and browser access were blocked, and its URL alone was not treated as a read. The Tax Department base PDF was identified in the browser but its retained operative provisions were not extracted/read; it does not close these holds. The core bands, replacement art.14/art.14B, residence and filing/payment dates above are supported by the actual enacted replacement/new clauses read in the Gazette. This local draft has no independent-check or publication clearance.
+Not yet confirmed: **writer-source blockers still open:** (1) complete art.11(13) private-car expense clause: government base PDF p.74 renders only its tail; direct/browser CyLaw routes did not provide a readable official replacement; (2) complete current printer/furniture/application-software allowance and threshold chain under art.10/art.47/KDP340 §8: that notice was read, but it does not by itself establish all later category changes; (3) the original blanket fine/penalty deduction ban: no operative official sentence recovered, and statutory fines cannot be conflated with contractual compensation. These are remaining proof work, not completed accountant referrals. No held amount is usable. Check this point with one of our partner accountants.
+
+Other specific non-usable holds retain the partner-accountant referral above: legacy employment exemption transitions; pension treaty/application; technical green eligibility; family-definition/student/cohabitation and rent-ownership conflicts; spouse legacy policies; live TFA/provisional-payment procedure and accounts scope; actual temporary-tax charges/foreign credits; SDC domicile/interest/dividend/penalty outcomes; GHS/SI/employer funds/ceilings/occupational minima; AIF/UCITS and termination payments; enforcement exceptions; original 2025 contribution/filing outcomes and bank-format assertions. The government index identifies the base copy through219/2025 and amendments244/2025,17/2026,66/2026,67/2026. The actual reads and amendment comparison support the retained ordinary rules above; they do not certify every page of the older compilation. This local draft has no independent-check or publication clearance.
