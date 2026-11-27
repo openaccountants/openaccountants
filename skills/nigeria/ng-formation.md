@@ -1,10 +1,10 @@
 ---
 name: ng-formation
 description: "Use this skill whenever asked about forming, incorporating, or registering a business in Nigeria. Trigger on phrases like \"form company Nigeria\", \"incorporate Nigeria\", \"CAC registration\", \"BN vs LTD Nigeria\", \"PVT LTD Nigeria\", \"register business Nigeria\", \"Business Name Nigeria\", \"Private Limited Nigeria\", \"Plc Nigeria\", \"LLP Nigeria\", \"Incorporated Trustee\", \"NGO Nigeria\", \"FIRS TIN\", \"CAMA 2020\", or any question about choosing or registering a Nigerian entity. Covers entity comparison (BN, Ltd / RC, LLP, Plc, Incorporated Trustee), CAC online portal registration steps, FIRS TIN and state IRS registration, sector-specific licensing (NDPR, SEC, CBN, NCC, NAFDAC), minimum capital and shareholder/director requirements, the SME-friendly thresholds introduced by the Nigeria Tax Act 2025 (NTA 2025), and tax treatment by entity type. Out of scope: immigration / expatriate quota / CERPAC sponsorship, bank account opening procedures (high-level only), full corporate governance and shareholders' agreement drafting, deep sector-specific regulatory licensing beyond signposting, and listing on the NGX. ALWAYS read this skill before advising on Nigerian entity formation."
-version: 1.2
+version: 1.3
 jurisdiction: NG
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
@@ -132,7 +132,7 @@ The formation text follows, with its tax statements corrected to the NTA where t
 
 ##### Key features
 
-- **BN key features**: - Sole proprietor (1 owner) or general partnership (2-20 partners; partnerships above 20 must incorporate as a company unless they are a professional partnership permitted by enabling law). - Proprietor / partners must be at least 18 (or 16 if a director of a company; CAMA s.20: but for BN the practical floor is 18). - All proprietors / partners must be resident in Nigeria in practice, because the business has no separate personality and tax filing is via the resident's personal tax records with the state IRS. - No notarial deed; no audited accounts. - Registered name format: as approved; suffixes like "Enterprises", "Ventures", "Global Services" are common. Cannot use "Limited", "Ltd", "Plc", "LLP", or "Incorporated".  _(CAMA s.20)_
+- **BN key features**: - Sole proprietor (1 owner) or general partnership (2-20 partners; partnerships above 20 must incorporate as a company unless they are a professional partnership permitted by enabling law). - Proprietor / partners must be at least 18 (under CAMA 2020 s.283(a) directors must also be at least 18; CAMA s.20(2) applies only to memorandum subscribers where 2 other qualified subscribers sign). - All proprietors / partners must be resident in Nigeria in practice, because the business has no separate personality and tax filing is via the resident's personal tax records with the state IRS. - No notarial deed; no audited accounts. - Registered name format: as approved; suffixes like "Enterprises", "Ventures", "Global Services" are common. Cannot use "Limited", "Ltd", "Plc", "LLP", or "Incorporated".  _(CAMA s.20)_
 
 ##### Formation steps
 
@@ -140,7 +140,7 @@ The formation text follows, with its tax statements corrected to the NTA where t
 
 ##### Tax
 
-- **BN tax treatment**: - Profits taxed in the hands of the proprietor (or partners pro rata) under the NTA personal bands from 2026 (the Personal Income Tax Act applies to 2025 and earlier) administered by the state IRS of the proprietor's residence. - 2026 PIT bands (NTA Fourth Schedule): 0% on first ₦800,000; 15% on next ₦2,200,000; 18%, 21%, 23%, 25% on subsequent bands; top rate 25% above ₦50,000,000 (NTA Fourth Schedule). - VAT from 2026: a "small business" under the NTAA (turnover ₦100,000,000 or less and fixed assets not over ₦250,000,000, and not providing professional services) does not register, charge VAT or file returns unless it opts out of the relief (NTAA ss.22(4), (5), 147); see [nigeria-vat](nigeria-vat.md). Pre-2026 the registration threshold was ₦25,000,000 under Finance Act 2019. - Withholding tax (WHT) at 5% / 10% applies on services received from the BN.  _(Personal Income Tax Act (PITA); Finance Act 2019; NTA 2025)_
+- **BN tax treatment**: - Profits taxed in the hands of the proprietor (or partners pro rata) under the NTA personal bands from 2026 (the Personal Income Tax Act applies to 2025 and earlier) administered by the state IRS of the proprietor's residence. - 2026 PIT bands (NTA Fourth Schedule): 0% on first ₦800,000; 15% on next ₦2,200,000; 18%, 21%, 23%, 25% on subsequent bands; top rate 25% above ₦50,000,000 (NTA Fourth Schedule). - VAT from 2026: a "small business" under the NTAA (turnover ₦100,000,000 or less and fixed assets not over ₦250,000,000, and not providing professional services) does not register, charge VAT or file returns unless it opts out of the relief (NTAA ss.22(4), (5), 147); see [nigeria-vat](nigeria-vat.md). Pre-2026 the registration threshold was ₦25,000,000 under Finance Act 2019. - Withholding tax (WHT) under the Deduction of Tax at Source (Withholding) Regulations 2024 (S.I. No. 34 of 2024, First Schedule, effective 1 January 2025) applies to resident non-corporate recipients at 2% for general services and 5% for commission, consultancy, technical, management and professional fees (10% applies to rent, dividends and interest).  _(Deduction of Tax at Source (Withholding) Regulations 2024; Personal Income Tax Act (PITA); Finance Act 2019; NTA 2025)_
 
 ##### When to use
 
@@ -160,11 +160,11 @@ The formation text follows, with its tax statements corrected to the NTA where t
 
 ##### Founders, members, and directors
 
-- **Ltd founders, members, directors**: - Minimum 1 member and 1 director (CAMA 2020 introduced single-member / single-director private companies: a key change from pre-2020 law which required 2). - Maximum 50 members (excluding employees and former employees who hold shares). - Director must be 18 or older (or 16 with parental consent under CAMA s.20(2)). - Foreign directors permitted; if they will work in Nigeria they need expatriate quota and CERPAC (out of scope: see R-NG-F3). - Company Secretary not mandatory for small companies under CAMA 2020 s.330(1) (a key 2020 reform; required for medium and large companies and all Plcs).  _(CAMA 2020 s.20(2), s.330(1))_
+- **Ltd founders, members, directors**: - Minimum 1 member and 1 director (CAMA 2020 introduced single-member / single-director private companies: a key change from pre-2020 law which required 2). - Maximum 50 members (excluding employees and former employees who hold shares). - Director must be 18 or older (CAMA 2020 s.283(a) disqualifies any person under 18 from directorship, with no age-16 or parental-consent exception; CAMA s.20(2) applies only to memorandum subscribers where 2 other qualified subscribers sign). - Foreign directors permitted; if they will work in Nigeria they need expatriate quota and CERPAC (out of scope: see R-NG-F3). - Company Secretary not mandatory for small companies under CAMA 2020 s.330(1) (a key 2020 reform; required for medium and large companies and all Plcs).  _(CAMA 2020 s.283(a), s.20(2), s.330(1))_
 
 ##### Capital
 
-- **Ltd capital requirements**: - Minimum issued share capital: ₦100,000 for a private company under CAMA 2020 (replacing the old "authorised share capital" concept: CAMA 2020 abolished authorised share capital in favour of issued share capital under s.27). - All issued shares must be paid up to at least 25% at incorporation in practice (CAC requires evidence of share allotment). - Companies with any foreign shareholder must have a minimum issued share capital of ₦100,000,000 to qualify for an NIPC Business Permit and expatriate quota. - Sectoral minimums override (e.g., commercial bank ₦500B post-2024 CBN recapitalisation; insurance ₦10B-₦20B per class; microfinance bank tiered ₦200M-₦5B).  _(CAMA 2020 s.27)_
+- **Ltd capital requirements**: - Minimum issued share capital: ₦100,000 for a private company under CAMA 2020 (replacing the old "authorised share capital" concept: CAMA 2020 abolished authorised share capital in favour of issued share capital under s.27). - CAMA 2020 sets no paid-up minimum at incorporation; the 25% paid-up condition in s.128(1)(a) applies when an allotment increases issued share capital. - Companies with any foreign shareholder must have a minimum issued share capital of ₦100,000,000 to qualify for an NIPC Business Permit and expatriate quota. - Sectoral minimums override (e.g., commercial bank ₦500B post-2024 CBN recapitalisation; insurance ₦10B-₦20B per class; microfinance bank tiered ₦200M-₦5B).  _(CAMA 2020 ss.27, 124, 128)_
 
 ##### Governance
 
@@ -198,7 +198,7 @@ The formation text follows, with its tax statements corrected to the NTA where t
 
 ##### Founders and partners
 
-- **LLP founders and partners**: - Minimum 2 partners; no statutory maximum. - At least 2 Designated Partners; at least one Designated Partner must be resident in Nigeria (CAMA s.747). - Partners can be individuals or bodies corporate (Nigerian or foreign).  _(CAMA s.747)_
+- **LLP founders and partners**: - Minimum 2 partners; no statutory maximum. - At least 2 Designated Partners who are individuals; at least one Designated Partner must be resident in Nigeria (CAMA s.749(1)). - Partners can be individuals or bodies corporate (Nigerian or foreign) (CAMA s.747).  _(CAMA ss.747, 749(1))_
 
 ##### Capital
 
@@ -206,7 +206,7 @@ The formation text follows, with its tax statements corrected to the NTA where t
 
 ##### Formation steps
 
-- **LLP formation steps**: 1. Reserve the LLP name on the CAC portal (name must end with "Limited Liability Partnership" or "LLP"). 2. File Form LLP 01 (incorporation document) and the LLP Agreement (or rely on the default rules in the Second Schedule of CAMA 2020 if no agreement is filed). 3. Provide details of partners and Designated Partners with IDs. 4. Pay CAC filing fee. 5. Certificate of Registration issued; TIN issued automatically.  _(CAMA 2020 Second Schedule)_
+- **LLP formation steps**: 1. Reserve the LLP name on the CAC portal (name must end with "Limited Liability Partnership" or "LLP"). 2. File Form LLP 01 (incorporation document) and the LLP Agreement (or rely on the default rules in the Fifteenth Schedule of CAMA 2020 under s.762(4) if no agreement is filed). 3. Provide details of partners and Designated Partners with IDs. 4. Pay CAC filing fee. 5. Certificate of Registration issued; TIN issued automatically.  _(CAMA 2020 s.762(4), Fifteenth Schedule)_
 
 ##### Tax
 
@@ -229,11 +229,11 @@ The formation text follows, with its tax statements corrected to the NTA where t
 
 ##### Founders, members, and directors
 
-- **Plc founders, members, directors**: - Minimum 2 members; no statutory maximum. - Minimum 3 directors under CAMA s.271 for public companies. - At least one independent director for listed Plcs (per NGX Listing Rules and SEC Code of Corporate Governance). - Company secretary mandatory.  _(CAMA s.271; NGX Listing Rules; SEC Code of Corporate Governance)_
+- **Plc founders, members, directors**: - Minimum 2 members; no statutory maximum. - Minimum 2 directors under CAMA s.271(1) (for every company that is not a small company). - Every public company must have at least one-third of its total directors as independent directors under CAMA s.275(1) as amended by the Business Facilitation (Miscellaneous Provisions) Act 2022 Schedule Part I para 14(a). - Company secretary mandatory.  _(CAMA ss.271(1), 275(1) as amended by Business Facilitation Act 2022; NGX Listing Rules; SEC Code of Corporate Governance)_
 
 ##### Capital
 
-- **Plc capital**: - Minimum issued share capital: ₦2,000,000 under CAMA 2020. - At least 25% paid up at incorporation. - Listed Plcs face higher capital and free-float requirements under NGX rules.  _(CAMA 2020)_
+- **Plc capital**: - Minimum issued share capital: ₦2,000,000 under CAMA 2020 s.27(2)(a). - CAMA 2020 sets no paid-up minimum at incorporation; allotted shares must be paid up to at least one-quarter of nominal value when a private company re-registers as public (s.57(1)(b)), and 25% of share capital must be paid up when an allotment increases issued share capital (s.128(1)(a)). - Listed Plcs face higher capital and free-float requirements under NGX rules.  _(CAMA 2020 ss.27, 57, 128)_
 
 ##### Formation steps
 
@@ -264,7 +264,7 @@ The formation text follows, with its tax statements corrected to the NTA where t
 
 ##### Formation steps
 
-- **IT formation steps**: 1. Reserve the proposed name: must begin with "Incorporated Trustees of …". 2. Hold a general meeting of the association and pass resolutions appointing Trustees. 3. Newspaper publication: publish the application in at least one national daily newspaper and one local newspaper of the area of operation, giving the public 28 days to object (CAMA s.825). 4. After the objection period, file the application with CAC including: Constitution of the association; Minutes of the appointment meeting; Trustees' details and IDs; Two copies of the trustees' impression / signatures; Newspaper cuttings as proof of publication; Common seal impression. 5. CAC reviews; if approved, issues the Certificate of Incorporation as Incorporated Trustees. 6. TIN issued by FIRS.  _(CAMA s.825)_
+- **IT formation steps**: 1. Reserve the proposed name: must begin with "Incorporated Trustees of …". 2. Hold a general meeting of the association and pass resolutions appointing Trustees. 3. File the application with CAC including: Constitution of the association; Minutes of the appointment meeting; Trustees' details and IDs; Two copies of the trustees' impression / signatures; Common seal impression. 4. Newspaper publication: once satisfied that ss.825-827 are complied with, the Commission causes the application to be published in two daily newspapers circulating in the area (at least one national newspaper); objections must reach it within 28 days of the last publication (CAMA s.828(1)-(3)). 5. CAC considers any objections; if approved, issues the Certificate of Incorporation as Incorporated Trustees. 6. TIN issued by FIRS.  _(CAMA ss.825, 828)_
 
 ##### Tax
 
@@ -311,7 +311,7 @@ CAC registration is necessary but not sufficient for regulated activities. Commo
 
 | Sector | Regulator | Typical licence | Status |
 | --- | --- | --- | --- |
-| Commercial / merchant / non-interest banking | CBN (Central Bank of Nigeria) | Banking licence; minimum capital ₦200B-₦500B (post-2024 recapitalisation) | unverified, earlier text not re-read |
+| Commercial / merchant / non-interest banking | CBN (Central Bank of Nigeria) | Banking licence; minimum capital ₦10B-₦500B (post-2024 recapitalisation: Commercial International ₦500B, National ₦200B, Regional ₦50B; Merchant National ₦50B; Non-interest National ₦20B, Regional ₦10B) | https://www.cbn.gov.ng/Out/2024/CCD/Recapitalization_MARCH_2024.pdf |
 | Microfinance banks | CBN | Tier 1-4 MFB licence; capital ₦200M-₦5B | unverified, earlier text not re-read |
 | Payment service providers, switching, mobile money, PSB | CBN | PSP / PSSP / MMO / PSB licence; capital ₦100M-₦5B | unverified, earlier text not re-read |
 | Fintech / virtual asset service providers | SEC (capital markets aspect) and CBN (payments aspect) | SEC VASP registration; CBN no-objection where applicable | unverified, earlier text not re-read |
@@ -416,7 +416,7 @@ Q7: Micro turnover; single Nigerian-resident founder; accept unlimited liability
 - VAT: as above, not confirmed.
 - Development levy exempt.
 - Chioma can pay herself a director's salary subject to PAYE through LIRS; remaining retained profit accumulates in the company.
-- Annual return to CAC; statement of accounts (audit not mandatory for small companies under CAMA s.402(3) provided the company meets the small-company criteria).
+- Annual return to CAC; statement of accounts (audit not mandatory for small companies under CAMA s.402(1)(b) provided the company meets the s.394 small-company criteria).
 - **Indicative total federal CIT: ₦0** (PAYE on salary still applies).
 
 ##### Recommendation
@@ -444,7 +444,7 @@ Q7: Micro turnover; single Nigerian-resident founder; accept unlimited liability
 - **Employee Compensation Act 2010**: NSITF.
 - **National Housing Fund Act**: NHF deduction; rate in ng-pension-nhf-social-contributions.
 - **Deduction of Tax at Source (Withholding) Regulations 2024**: updated WHT regime effective 1 January 2025.
-- **CBN Banking Sector Recapitalisation Programme 2024-2026**: minimum capital ₦200B-₦500B.
+- **CBN Banking Sector Recapitalisation Programme 2024-2026**: minimum capital ₦10B-₦500B across tiers (Commercial: International ₦500B, National ₦200B, Regional ₦50B; Merchant National ₦50B; Non-interest: National ₦20B, Regional ₦10B).
 - Portals: pre.cac.gov.ng (CAC), taxpromax.firs.gov.ng (FIRS / NRS), nipc.gov.ng (NIPC), sec.gov.ng (SEC), ndpc.gov.ng (NDPC).
 
 Where a specific monetary threshold or sectoral capital floor is uncertain at the time of advice, mark as TBC and verify against the current NTA 2025 schedule, the latest CBN / SEC / NAICOM / NCC circular, and any Finance Act amendment in force before relying on it.
