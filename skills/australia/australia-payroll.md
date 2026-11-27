@@ -11,15 +11,13 @@ description: >
   "activity statement", "annual leave", "long service leave",
   "minimum wage Australia", or any question about running payroll in Australia.
   ALWAYS read this skill before processing any Australian payroll work.
-version: 2.5
+version: 2.6
 jurisdiction: AU
 tax_year: 2026
-last_updated: 2026-10-12
+last_updated: 2026-11-21
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Ryan Duguid"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: payroll
 ---
 
@@ -106,16 +104,51 @@ There is no employee-paid social insurance premium equivalent to NIC (UK) or soc
 | Item | Detail |
 | --- | --- |
 | Payment deadline (earnings paid from 1 Jul 2026) | Received by the employee's fund within **7 business days of each payday** (clearing house receipt does not count) |
-| New employee / new fund | 20 business days for the first contribution |
+| Start, restart or fund change | 20 business days after the QE day for the first eligible contribution in the circumstances in [SGAA s 18C(2) item 1](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf) (read 21 November 2026) |
 
-- **Deadline exceptions** — new employee / new fund -- 20 business days for the first contribution; out-of-cycle payments (bonuses) ride with the next regular payday's deadline; ATO exceptional-circumstances determinations -- 20 business days.
+- **Deadline exceptions**. See Rule 3 in [au-super-guarantee](au-super-guarantee.md) for extensions. An out-of-cycle payment of a specified kind uses the next standard payday's usual deadline only if the employer actually makes a regular qualifying earnings payment on the next scheduled day. Confirm the payment before applying this rule. [SGAA s 18C(2) item 2](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf) and [Out-of-Cycle Qualifying Earnings Determination 2026 s 5](https://www.legislation.gov.au/F2026L00784/asmade/text), read 21 November 2026.
+- **Earnings base**. Confirm qualifying earnings from the payroll components before calculating SG. See Rule 1 in [au-super-guarantee](au-super-guarantee.md) for the section 10A rules and disputed salary loading treatment.
 - **Legacy** — quarterly due dates (28 Oct/28 Jan/28 Apr/28 Jul) apply only to earnings paid up to 30 June 2026; the final quarterly deadline was 28 July 2026. The ATO Small Business Super Clearing House closed permanently on 1 July 2026 -- small employers now use payroll-software super payments or commercial clearing houses.
 - **Final scheduled SG rate** — 12% is the final scheduled SG rate (reached 1 July 2025). No further increases are scheduled.
 
+
+An eligible employee below the annual cap is paid $2,800, including $300 separately identified as overtime beyond ordinary hours. There are no commissions, sacrificed earnings or other qualifying amounts. SG is $300 on confirmed qualifying earnings of $2,500.
+
+```oa-check
+name: Confirmed overtime excluded from the qualifying earnings base
+inputs:
+  gross_pay: 2800
+  identified_overtime: 300
+steps:
+  - earnings: gross_pay - identified_overtime
+  - super: pct(earnings, 12)
+expected:
+  earnings: 2500
+  super: 300
+```
+
+An eligible employee below the annual cap earns $2,000 for ordinary hours, including $250 of commission already in that amount. A separate $100 commission for work outside ordinary hours is also qualifying earnings. Count both commissions once. SG is $252 on $2,100.
+
+```oa-check
+name: Count commission already in ordinary time earnings once
+inputs:
+  other_ordinary_earnings: 1750
+  commission_within_ordinary_hours: 250
+  commission_outside_ordinary_hours: 100
+steps:
+  - earnings: other_ordinary_earnings + commission_within_ordinary_hours + commission_outside_ordinary_hours
+  - super: pct(earnings, 12)
+expected:
+  earnings: 2100
+  super: 252
+```
+
 ### Superannuation Guarantee Charge (SGC) -- redesigned from 1 July 2026
 
-- **SGC redesign components** — For earnings paid from 1 July 2026, SGC is **ATO-assessed per payday** (no SGC statement is lodged; the ATO matches STP data against fund reporting). Components: - The final SG shortfall (12% of qualifying earnings unpaid) - Notional earnings (GIC-rate interest, compounding daily from the day after the deadline) - An administrative uplift (starts at 60% of shortfall + notional earnings; reduced for clean history and voluntary disclosure, to 0% if disclosed within 30 days with a clean 2-year record) - Choice loading (25%, capped at $1,200 per notice period) where choice-of-fund rules were breached  _(PCG 2026/1)_
-- **SGC deductibility and penalties** — The redesigned SGC **is tax-deductible** (GIC on late SGC and the late payment penalty are not). Old-regime SGC for quarters before 1 July 2026 remains non-deductible. Unpaid SGC 28 days after assessment triggers a Notice to Pay, then a 25% or 50% late payment penalty. First-year ATO approach: PCG 2026/1.  _(PCG 2026/1)_
+- **Redesigned SGC** is assessed by the ATO for QE days from 1 July 2026. It includes the final SG shortfall, notional earnings, administrative uplift and any choice loading. The final shortfall generally starts with 12% of qualifying earnings up to the applicable annual cap, less eligible contributions applied under the statutory timing rules. Notional earnings compound daily at the GIC rate on the base shortfall over the days covered by s 19A. Choice loading is 25% of the eligible contributions to which the loading applies, subject to the $1,200 limit for each employee across the applicable choice-of-fund notice period. [SGAA ss 16B, 19A, 19B, 20A and 20C](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf)
+- **Administrative uplift** starts at 60% of the combined total of the employer's individual final SG shortfalls and individual notional earnings for that qualifying earnings (QE) day. Reduce it by 20 percentage points if the employer has neither a qualifying Commissioner-initiated assessment nor a qualifying estimate made in the 24-month period ending on that QE day. The positive assessment must still be in force on the QE day. An assessment qualifies if the ATO initiated it or made it in response to a purported disclosure that failed s 33. Disregard an estimate revoked or reduced to nil by the QE day. For QE days from 1 July 2026 to 30 June 2028, the lookback starts on 1 July 2026. A voluntary disclosure in the approved form must be lodged before the assessment day for that employer and QE day. It reduces the rate by 40, 35, 30 or 15 percentage points for lodgment on days 1–30, 31–60, 61–120 or after day 120, respectively, counting the QE day as day 1. Both reductions can apply, down to a 0% rate. For example, an approved statement lodged on day 30 before the assessment day leaves 20% if a qualifying estimate prevents the 20-point reduction. [SGAA ss 19B and 33](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf) · [SGAR regs 13B–13D](https://www.legislation.gov.au/F2018L01289/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html)
+- **Late payment of assessed SGC.** Payment is due on the day of assessment. If charge remains unpaid 28 days after it became payable, the ATO must issue a notice if the specified amount includes some of that unpaid charge and exceeds $30 or any higher prescribed amount. No prior notice can have been given in the 50 days before that trigger day and none of the specified amount can have appeared in a previous notice. The notice specifies a start date and its payment period ends 28 days after that date. The penalty applies to the amount specified in the notice that remains unpaid at the end of that period. It is normally 25%, or 50% if the employer became liable for a positive penalty on an earlier notice in the 24 months ending on the day after the current notice payment period ends. The rate is 0% if an s 18C(4) determination covers the employer at any point from the day the relevant charge became payable to the end of the notice payment period. A reduction of the underlying charge can reduce or cancel the notice before the payment period ends. The ATO must amend a penalty assessment if the underlying liability is reduced or ceases, or if an applicable determination reduces the penalty to nil. [SGAA ss 36 and 59A–59E](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf)
+- **Deductibility.** The redesigned SGC is tax-deductible when paid. General interest charge on late SGC, the late payment penalty and old-regime SGC for quarters before 1 July 2026 remain non-deductible. See PCG 2026/1 for the ATO's first-year compliance approach.
 
 ### Workers' Compensation Insurance
 
@@ -359,3 +392,10 @@ This skill and its outputs are provided for informational and computational purp
 > Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
+
+## Sources
+
+- [Superannuation Guarantee (Administration) Act 1992](https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf), read 2026-11-21. S 10A sets the earnings base and the rule against double counting. S 18C sets the contribution windows.
+- [Out-of-Cycle Qualifying Earnings Determination 2026](https://www.legislation.gov.au/F2026L00784/asmade/text), read 2026-11-21. S 5 requires the next regular payment to occur on the next scheduled day.
+
+Final ATO guidance on disputed salary loading is not yet confirmed. See Rule 1 in [au-super-guarantee](au-super-guarantee.md).
