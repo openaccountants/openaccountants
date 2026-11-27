@@ -49,7 +49,7 @@ The ordinary registered-business matrix below remains usable. For each following
 - R-SE-6: travel-agent or second-hand/art margin computation; the return still identifies ruta 07.
 - R-SE-7: income-tax/ROT/RUT entitlement rather than the VAT base; use the income-tax Guide.
 
-Other narrow holds: a cinema admission rate; a claimed exempt medical-aid category beyond the proved prescription-medicine rule; the historical SEK 500 staff-gift VAT cap; the historical SEK 33 representation shortcut for 6% takeaway food; disputed cross-transition credits without the original invoice/tax-point evidence. These specific outcomes are non-usable here. **Check this point with one of our partner accountants.**
+Other narrow holds: a cinema admission rate; a claimed exempt medical-aid category beyond the proved prescription-medicine rule; the historical SEK 500 staff-gift VAT cap; disputed cross-transition credits without the original invoice/tax-point evidence. These specific outcomes are non-usable here. **Check this point with one of our partner accountants.**
 
 ### Working limits
 
@@ -92,7 +92,7 @@ The legacy SEK 2,000 review level stays only as a red flag setting. ML sets no s
 | Listed electronics | Buyer pays on mobile phones (apparatus made or adapted for use in an authorised network on specified frequencies, whether or not it has other uses), integrated circuits not built into end products, consoles, tablets and laptops where both parties are taxable persons who are or must be registered here, the base for these goods in an invoice is together above SEK 100,000, and the buyer's registration duty is not merely a consequence of the purchase | Enacted, in force | ML 16 kap. 16 §, https://data.riksdagen.se/dokument/sfs-2023-200.text |
 | Capital goods | Input tax of at least SEK 50,000 (machines, inventory and the like) or at least SEK 100,000 (property). The test is input tax, not cost. | Enacted, in force | ML 15 kap. 4 §, https://data.riksdagen.se/dokument/sfs-2023-200.text |
 | Representation, statutory cap | Tax on at most SEK 300 per person and occasion, excluding VAT | Enacted, in force | ML 13 kap. 25 §, https://data.riksdagen.se/dokument/sfs-2023-200.text |
-| Representation, administered amounts | SEK 36 (12%); SEK 46 flat with the conditions below; SEK 180 peripheral costs; SEK 300 gifts | Skatteverket practice. SEK 18 is arithmetic (6% of 300), not a published figure. | https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/avdragformomsvidrepresentation.4.15532c7b1442f256baec84b.html |
+| Representation, administered amounts | SEK 36 (12%); SEK 46 flat for food at 12%, or SEK 33 for food at 6%, with all conditions below; SEK 180 peripheral costs; SEK 300 gifts | Skatteverket practice. SEK 18 is arithmetic (6% of 300), not a published figure. | https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/avdragformomsvidrepresentation.4.15532c7b1442f256baec84b.html |
 | Hired cars | Half of the VAT on hire, where use in deductible activity is more than trivial. Skatteverket reads this as more than 100 mil a year, prorated. | 50% enacted; 100 mil is Skatteverket practice | ML 13 kap. 22 §; https://www.skatteverket.se/foretag/moms/sarskildamomsregler/bilarochmoms.4.58d555751259e4d6616800010628.html |
 | Mixed use, 95% rule | Full deduction if the purchase is more than 95% for deductible transactions, or if the tax is at most SEK 1,000 and deductible consideration is more than 95% | Enacted, in force | ML 13 kap. 30 §, https://data.riksdagen.se/dokument/sfs-2023-200.text |
 | Late filing fees | SEK 625; SEK 1,250 after a föreläggande; periodisk sammanställning SEK 1,250 | Enacted, in force | SFL 48 kap. 1, 5 and 6 §§, https://data.riksdagen.se/dokument/sfs-2011-1244.text |
@@ -167,7 +167,7 @@ Deduct input VAT for the taxable business (ML 13 kap. 6 §), in ruta 48, subject
 
 - Food and non-alcoholic drink at 12%: up to SEK 36 per person. At 6%: up to SEK 18 by arithmetic.
 - Food and alcohol above SEK 300: split the capped base by actual net cost, apply the food rate to the food share and 25% to the alcohol share.
-- Or the flat amount: SEK 46 per person if cost is above SEK 300 net per person and VAT is at least SEK 46 per person; the unproved SEK 33 shortcut for 6% food is held above; use the supported proportionate cap instead.
+- Alternatively, where the representation includes both food and alcoholic drink: SEK 46 per person and occasion if the food is taxed at 12%, cost exceeds SEK 300 excluding VAT per person and occasion, and charged VAT is at least SEK 46 per person and occasion. Where the food is taxed at 6%, the flat alternative is SEK 33 per person and occasion, only if cost exceeds SEK 300 excluding VAT per person and occasion and charged VAT is at least SEK 33 per person and occasion. The food-goods rate change applies from 1 April 2026; qualifying restaurant meals remain at 12%. The proportional method remains available.
 - Staff party: food cap SEK 300. Peripheral costs, theatre and green fees: SEK 180 net per person. Representation gifts: SEK 300 net per person.
 - Record attendees and purpose. The SEK 60 simple refreshment amount is income tax, not VAT.
 
