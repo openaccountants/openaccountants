@@ -1,12 +1,12 @@
 ---
 name: ls-transfer-pricing
 description: "Lesotho transfer pricing for the 2026-27 year of assessment (1 April 2026 to 31 March 2027) under section 113 of the Income Tax Act 1993 as amended. Covers who is an associate (the directions or wishes test in section 3), the Commissioner General's power to distribute, apportion or allocate gross income, deductions and credits between associates, the commensurate-with-income rule for intangibles, recharacterisation of source and of revenue or capital, market value on non-arm's length disposals (s.61), disguised distributions taxed as dividends (s.88), the four-year window for amended assessments, records and additional tax, and Article 9 of the South Africa treaty. Lesotho has no transfer pricing regulations, documentation rule or advance pricing agreement in the law read. Trigger on: Lesotho transfer pricing, related party Lesotho, associates section 113, RSL TP adjustment, management fees to parent Lesotho, arm's length Lesotho. Out of scope: treaty mutual agreement procedure in depth, mining agreements."
-version: 0.2
+version: 0.3
 jurisdiction: LS
 category: transfer-pricing
 tax_year: 2026
 tax_year_notes: "2026-27"
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 depends_on:
   - ls-corporate-income-tax
 tier: 2
@@ -14,7 +14,7 @@ domain: transfer-pricing
 type: situation-rules
 ---
 
-# Lesotho transfer pricing: associates, section 113 adjustments and related rules (2026-27) v0.2
+# Lesotho transfer pricing: associates, section 113 adjustments and related rules (2026-27) v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -29,7 +29,7 @@ The text used is RSL's consolidated copy of the Act "Updated up to 1 April 2012"
 - **Branches.** A Lesotho branch of a non-resident company is treated as a separate person which is a resident company (s.6(2)). Its dealings with head office are therefore dealings between separate persons, and fall under s.113 where the head office is also a taxpayer (for example, it receives Lesotho-source income) and the two are associates. Branch profits tax is in ls-cross-border.
 - **Companies and members (s.88).** A loan, payment for property or services, disposal of an asset, provision of services or release of a liability by a company to or in favour of a member, or an associate of a member, that in substance is a distribution is treated as a dividend paid to the member.
 
-Not covered here: thin capitalisation (no rule found in the Act read), treaty mutual agreement procedure in depth, and mining or Lesotho Highlands Water Project arrangements (Protocol V, s.112A).
+Not covered here in depth: thin capitalisation (s.36(2) allows the Commissioner General to disallow interest paid on debt exceeding a 3 to 1 debt-to-equity ratio for a resident company not principally engaged in a money-lending business), treaty mutual agreement procedure in depth, and mining or Lesotho Highlands Water Project arrangements (Protocol V, s.112A).
 
 ## Rates, bands and thresholds
 
@@ -166,7 +166,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Act 1993, RSL copy updated to 1 April 2012 (read for s.3 definitions of associate, standard rate and year of assessment, s.6, s.10, s.49, s.61, s.88, s.106, s.107, s.113, s.114, s.128, s.130, s.135, s.137, s.141, s.143, s.165, s.169, ss.192 to 199 and the Third Schedule) | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf | 2026-11-02 |
+| Income Tax Act 1993, RSL copy updated to 1 April 2012 (read for s.3 definitions of associate, standard rate and year of assessment, s.6, s.10, s.36(2), s.49, s.61, s.88, s.106, s.107, s.113, s.114, s.128, s.130, s.135, s.137, s.141, s.143, s.165, s.169, ss.192 to 199 and the Third Schedule) | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf | 2026-11-26 |
 | RSL Corporate Income Tax Guide, file dated May 2017 (read for section 1.4, additional tax at 22% per twelve months, superseded by the newer guide below) | https://www.rsl.org.ls/sites/default/files/2024-07/Corporate%20Income%20Tax%20Guide.pdf | 2026-11-02 |
 | RSL Tax Guide on Provisional Tax, file dated November 2023 (read in full; question 8: additional tax at 3% compounded monthly) | https://www.rsl.org.ls/sites/default/files/2024-05/Tax%20Guide%20on%20Provisional%20Tax%20%281%29.pdf | 2026-11-02 |
 | RSL internal guide on technical fees under Article 13 of the Lesotho and South Africa DTA (read in full: 7.5% from 27 June 2016, scope of managerial, technical and consultancy services) | https://www.rsl.org.ls/sites/default/files/2024-07/Guideline%20on%20Technical%20Services.pdf | 2026-11-02 |
@@ -181,4 +181,4 @@ Not yet confirmed:
 - Revenue Appeals Tribunal decisions on s.113 (for example X v Lesotho Revenue Authority, RAT 01/2017/18, [2022] LSRAT 1, and RAT/05/2019/20, [2022] LSRAT 5): LesLII's search index describes them as applying arm's length and OECD guidance under s.113, but the judgments could not be opened (bot check), so nothing from them is relied on.
 - The currently published specified rate under s.192. RSL guides disagree: 3% a month compounded (Provisional Tax guide, November 2023, stated for instalments) against 22% per twelve months (Corporate Income Tax Guide, May 2017). The skill uses the newer figure; no rate notice was found.
 - The date the renegotiated Lesotho and South Africa agreement entered into force (the text leaves it to notifications; RSL's guideline gives 27 June 2016 for the 7.5% rate).
-- Whether a thin capitalisation or interest limitation rule exists in any later amendment.
+- Whether any post-2012 amendment modified the 3 to 1 debt-to-equity thin capitalisation rule in s.36(2) or added a broader interest limitation rule.
