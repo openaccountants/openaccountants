@@ -14,13 +14,15 @@ type: situation-rules
 
 # UK statutory residence test, 2026/27
 
+## Who this applies to
+
 The SRT determines individuals’ residence for income tax and capital gains tax, and for inheritance tax and corporation tax insofar as individuals’ residence is relevant. It concerns the UK as a whole, not residence in its constituent countries ([Sch 45 para 1](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/paragraph/1)).
 
 Check automatic overseas tests first, then automatic UK tests, then sufficient ties. Residence requires an automatic UK test with no automatic overseas test, or sufficient ties when neither automatic set is met. Otherwise the individual is non-resident ([Sch 45 para 5](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/paragraph/5)).
 
 The result is for the whole tax year; split-year treatment only relaxes this through particular charging rules. Test each year separately and obtain the residence history ([Sch 45 para 2](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/paragraph/2)).
 
-## Automatic tests
+## Rates, bands and thresholds
 
 First overseas test: UK resident in at least one of the three preceding tax years, fewer than 16 UK days, and does not die in the year ([Sch 45 para 12](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/paragraph/12)).
 
@@ -36,7 +38,7 @@ Third UK test: sufficient UK hours over a 365-day period, no significant break, 
 
 Death in the year: the fourth UK test, fourth and fifth overseas tests and modified ties tables require separate conditions (paras 10, 15, 16, 20). Check this point with one of our partner accountants.
 
-## Days, homes and work
+## The base
 
 A UK midnight counts as a day, subject to transit and exceptional circumstances. A day without a UK midnight does not count unless deemed ([Sch 45 para 22](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/paragraph/22)).
 
@@ -86,9 +88,12 @@ Country tie, prior residents only: the UK has the greatest midnight count, inclu
 
 Only use these after all automatic tests fail; death cases are referred above.
 
-Table A, resident in at least one of the preceding three years: 16–45 UK days needs at least 4 ties; 46–90 needs at least 3; 91–120 needs at least 2; more than 120 needs at least 1 ([Sch 45 para 18](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/paragraph/18)).
-
-Table B, resident in none of those years: 46–90 UK days needs all 4 ties; 91–120 needs at least 3; more than 120 needs at least 2 ([Sch 45 para 19](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/paragraph/19)).
+| UK days | Table A: resident in any preceding three years | Table B: resident in none | Source |
+|---|---|---|---|
+| 16–45 | At least 4 ties | Second overseas test applies | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| 46–90 | At least 3 ties | All 4 ties | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| 91–120 | At least 2 ties | At least 3 ties | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| More than 120 | At least 1 tie | At least 2 ties | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
 
 ## Split-year treatment
 
@@ -116,13 +121,17 @@ Round the reduction, not the resulting threshold: first decimal 5 or more rounds
 
 Priority: Case 1 over 2 over 3. For arrivals, Case 6 prevails unless Case 5 has an earlier split-year date; absent 6, the same applies to Case 7. Otherwise earliest date among 4, 5 and 8 wins; cases sharing that earliest date share priority. The split-year date is the final overseas day, not the first UK day ([Sch 45 para 55](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/paragraph/55)).
 
-## Related questions and referrals
+## Cross-border points
 
 Temporary non-residence and the tax charged on return: Check this point with one of our partner accountants.
 
 Dual residence, treaty tie-breakers, personal representatives and trustees: Check this point with one of our partner accountants.
 
+## Deadlines and filing
+
 SA109 reporting, notification, filing and payment deadlines: Check this point with one of our partner accountants.
+
+## Penalties and interest
 
 Late-filing, late-payment, inaccuracy and Making Tax Digital penalties and current interest: Check this point with one of our partner accountants.
 
@@ -244,3 +253,5 @@ Obtain the full residence history; midnight and daytime travel log; work hours b
 | Finance Act 2013 Schedule 45, paras 1–56 and 110–115: tests, ties, counting, split years and residence periods | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 | 2026-11-27 |
 | HMRC RDR3: order of tests, tables and split-year overview | https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3 | 2026-11-27 |
 | Interpretation Act 1978 Schedule 1: calendar month | https://www.legislation.gov.uk/ukpga/1978/30/schedule/1 | 2026-11-27 |
+
+Not yet confirmed: none within the retained usable SRT rules; the explicit partner-accountant referrals above supply no filing conclusion.
