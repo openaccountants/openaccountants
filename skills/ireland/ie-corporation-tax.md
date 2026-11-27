@@ -1,10 +1,10 @@
 ---
 name: ie-corporation-tax
-description: "Irish corporation tax for tax year 2026 (accounting periods ending in 2026) for an Irish-resident company. Covers the 12.5% trading rate (section 21 TCA 1997), the 25% rate on passive income and excepted trades (section 21A), company gains grossed up at the 31% CGT rate for disposals from 7 October 2026 (33% before that date and on development land), the Pillar Two 15% minimum tax (Part 4A, scope only), close-company surcharges, preliminary tax, losses and group relief, start-up relief, the R&D credit (30%, or 35% for periods ending 31 December 2026 or later), the Knowledge Development Box (10% effective rate), interest limitation, and CT1 filing on ROS. Trigger on: Ireland corporation tax, CT1, 12.5% rate, preliminary CT, R&D credit Ireland, KDB, close company surcharge, Pillar Two Ireland. Out of scope: non-resident companies and Irish branches under section 25 (ie-foreign-tax-and-withholding), company exit tax (ie-cross-border), transfer pricing (ie-transfer-pricing), individuals (ie-income-tax-form11), VAT (ie-vat-return)."
-version: 1.4
+description: "Irish corporation tax for accounting periods ending in 2026: trading and passive income, company gains, ordinary plant allowances, trading losses, close-company investment surcharge, preliminary tax and CT1 filing on ROS. Includes conditional R&D instalment computations, a Pillar Two scope screen and explicit specialist holds. Preserves dated 2025 cases without changing their year. Trigger on Ireland corporation tax, CT1, preliminary CT, close-company surcharge and R&D credit Ireland."
+version: 1.5
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,166 +12,108 @@ domain: income-tax
 type: situation-rules
 ---
 
-# Irish corporation tax (CT1): 2026 rates, preliminary tax, losses, reliefs and filing
-
-The law is the Taxes Consolidation Act 1997 (TCA), as amended each year by a Finance Act. Revenue's guidance is on [revenue.ie](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/index.aspx) and in its Tax and Duty Manuals (TDMs). Figures are for tax year 2026: accounting periods ending in 2026, for a calendar-year company the 12 months to 31 December 2026. The 2025 CT1, due by 23 September 2026 for a calendar-year company, is covered under "Deadlines and filing".
+# Irish corporation tax (CT1): 2026
 
 ## Who this applies to
 
-- **Irish-resident companies** that file a Form CT1: trading companies, investment and holding companies, and owner-managed close companies.
-- **Non-resident companies with an Irish branch or agency.** They pay corporation tax at the same rates on the branch's trading income, on income from property or rights the branch uses or holds, and on gains on branch assets (section 25(2)). Profits are attributed to the branch under the Authorised OECD Approach for periods commencing on or after 1 January 2022 (section 25A). A non-resident company's Irish rental income is in corporation tax from 1 January 2022 (section 25(2A)). The rules for these companies, including Irish income with no branch and tax deducted at source, are in [ie-foreign-tax-and-withholding](ie-foreign-tax-and-withholding.md). Use this skill for the rates, reliefs and CT1 mechanics that apply to the branch once its profit is known.
-- **Groups in Pillar Two scope** (consolidated revenue of EUR 750m or more in two of the four preceding fiscal years). This skill screens for scope only.
+Prepare the CT1 of a company whose Irish residence and ordinary trading status are established. Confirm the accounting period, income categories, ownership, earlier CT1s, losses and payments before computing. Do not infer a trade from incorporation or a bank description. The main period is 2026; dated 2025 examples retain their original year.
 
-Not covered here, refer to a specialist: Section 110 securitisation companies; banks and insurers; REITs and IREFs; funds and ICAVs; tonnage tax; petroleum and mineral profits; the Pillar Two top-up computation; anti-hybrid rules and the outbound payments measures; foreign currency (section 402) computations; loss-buying (section 401); arrangements that may fall within the general anti-avoidance rule (section 811C) or mandatory disclosure; Revenue audits and qualifying disclosures; loans and benefits to participators; and any case where residence or a permanent establishment is in doubt. Do not apply 12.5% until the facts support a trade.
-
-Related skills: residence and the company exit tax are in [ie-cross-border](ie-cross-border.md); transfer pricing in [ie-transfer-pricing](ie-transfer-pricing.md); individuals in [ie-income-tax-form11](ie-income-tax-form11.md); employer PRSI in [ie-payroll](ie-payroll.md).
+Collect signed accounts, trial balance, fixed-asset and allowance schedules, evidence for deductions, group structure, R&D records, dividend resolutions and preliminary-tax receipts. Missing facts mean a provisional working, not a filing-ready result. Residence, non-resident branches and Irish rental income of non-resident companies require [ie-foreign-tax-and-withholding](ie-foreign-tax-and-withholding.md); uncertain residence or branch attribution remains a hold. Check this point with one of our partner accountants.
 
 ## Rates, bands and thresholds
 
-| Item | Rate or amount | Year | Source |
-|---|---|---|---|
-| Trading income (Cases I and II) | 12.5% | 2026 | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx |
-| Non-trading income (rent, interest, other passive income) and excepted trades | 25% | 2026 | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx |
-| CGT rate used to gross up company gains, disposals on or after 7 October 2026 | 31% (Financial Resolution No. 3 of 6 October 2026, statutory effect under the Provisional Collection of Taxes Act 1927) | 2026 | https://www.revenue.ie/en/companies-and-charities/capital-gains-for-companies/index.aspx |
-| CGT rate used to gross up company gains, disposals up to 6 October 2026 | 33% (section 28(3)) | 2026 | https://www.revenue.ie/en/companies-and-charities/capital-gains-for-companies/index.aspx |
-| Development land gains (outside CT profits, taxed under CGT rules) | 33% (section 649A) | 2026 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-22/22-02-03.pdf |
-| Pillar Two minimum effective rate | 15%; groups with consolidated revenue of EUR 750m or more in two of the four preceding fiscal years | 2026 | https://www.revenue.ie/en/companies-and-charities/pillar-two/what-is/index.aspx |
-| Small company for preliminary tax | Previous period's CT not above EUR 200,000 | 2026 | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/preliminary-ct.aspx |
-| Close-company surcharge on undistributed estate and investment income (section 440) | 20%, after a 7.5% reduction for trading companies; none if the excess is EUR 2,000 or less | 2026 | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/close-companies/surcharge.aspx |
-| Service-company surcharge (section 441) | 15% on half of undistributed trading income, plus 20% on undistributed estate and investment income | 2026 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-13/13-02-06.pdf |
-| R&D corporation tax credit (sections 766C and 766D) | 30% for periods commencing on or after 1 January 2024; 35% where the specified return date is on or after 23 September 2027 (in general, periods ending 31 December 2026 or later) | 2026 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-29/29-02-03.pdf |
-| R&D credit, first instalment | Greater of EUR 75,000 (EUR 87,500 at the 35% rate), or the credit if lower, and 50% of the credit | 2026 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-29/29-02-03.pdf |
-| Knowledge Development Box (Part 29, Chapter 5) | Deduction of 20% of qualifying profits, an effective rate of 10%, from 1 October 2023 | 2026 | https://www.revenue.ie/en/companies-and-charities/reliefs-and-exemptions/knowledge-development-box-kdb/index.aspx |
-| Plant and machinery wear and tear | 12.5% a year over eight years | 2026 | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/capital-allowances-and-deductions.aspx |
-| Industrial buildings | 4% a year over 25 years | 2026 | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/capital-allowances-and-deductions.aspx |
-| Interest limitation de minimis | Exceeding borrowing costs of EUR 3,000,000 for a 12-month period | 2026 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-35d/35D-01-01.pdf |
-| Start-up relief (section 486C) | Full relief where total CT is EUR 40,000 or less; marginal relief above EUR 40,000 and below EUR 60,000; capped at qualifying PRSI (EUR 5,000 per employee, EUR 1,000 per director's Class S, EUR 40,000 overall) | 2026 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-15/15-03-03.pdf |
-| iXBRL exclusion | All three: assets under EUR 4.4 million, turnover under EUR 8.8 million, 50 or fewer employees | 2026 | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/submitting-financial-statements/who-submit.aspx |
-| Late payment interest | 0.0219% a day | 2026 | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx |
-| Late filing surcharge (section 1084) | 5% up to EUR 12,695 within two months; 10% up to EUR 63,485 after | 2026 | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx |
+| Item and operative condition | 2026 treatment | Official source |
+|---|---|---|
+| Ordinary trading income, after confirming classification and excluding special regimes | 12.5%; TCA section 21 as amended by Finance Act 1999 section 71 | https://www.irishstatutebook.ie/eli/1999/act/2/section/71/enacted/en/html ; https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx |
+| Ordinary non-trading rental/investment income and excepted-trade income | 25%; TCA section 21A; foreign-dividend exceptions and land classification require separate examination | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx |
+| Ordinary company gains other than development land, with no exemption or special rate | CGT rate 33% before 7 October 2026; provisional 31% from that date; adjust gain so CT at 12.5% gives the CGT liability | https://www.revenue.ie/en/companies-and-charities/capital-gains-for-companies/index.aspx ; https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-10-06/debate/mul@/main.xml |
+| Ordinary plant acquired in 2026, owned and wholly used for the trade, in use at period end | 12.5% of qualifying cost annually, subject to short-period adjustment and the total-cost cap; cars and special allowances excluded | https://www.irishstatutebook.ie/eli/2003/act/3/section/23/enacted/en/html ; https://www.irishstatutebook.ie/eli/1997/act/39/section/284/enacted/en/html |
+| Small-company preliminary-tax limit | EUR 200,000 for a full year; use corresponding prior-period CT and reduce the relevant limit for a short current period | https://www.irishstatutebook.ie/eli/2012/act/9/schedule/4/enacted/en/html |
+| Ordinary section 766C R&D expenditure credit, eligibility already established | 30% for periods commencing from 1 January 2024; 35% where the specified return date is on or after 23 September 2027 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-29/29-02-03.pdf ; https://www.irishstatutebook.ie/eli/2025/act/18/section/35/enacted/en/html |
 
-No change has been made to the 12.5% or 25% rates for 2025 or 2026. If a rate changes inside an accounting period, profits are apportioned on a time basis. An accounting period cannot be longer than 12 months, so a longer set of accounts is split into two CT periods ([Revenue: basis of charge](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx)).
+The accounting period cannot exceed 12 months. Split longer accounts into CT periods; time-apportion profits if a rate changes within a period ([Revenue](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx)).
 
-**The 31% CGT rate is in force, but provisionally.** Financial Resolution No. 3, carried by the Dáil on 6 October 2026, substitutes 31% for 33% in section 28(3) for disposals made on or after 7 October 2026, with statutory effect under the Provisional Collection of Taxes Act 1927. Section 36 of the Finance (No. 2) Bill 2026 (Bill 98 of 2026, published 19 October 2026, not yet enacted) makes the same change. The 1927 Act covers capital gains tax (section 1, definition of "tax", as substituted by section 160 of the Finance Act 2010). Under section 4 the resolution lapses if the Bill's provisions are rejected, if the Bill is not read a second time in time, or if no Act containing the change comes into operation within four months of 7 October 2026, so a gain computed at 31% must be revisited if that happens. Revenue's company gains page already uses 31%. Development land is taxed at 33% under section 649A, which the resolution does not touch.
+**Provisional CGT rate.** The 6 October resolution substitutes 31% for 33% for disposals from 7 October 2026 and expressly has statutory effect. The [Bill status](https://www.oireachtas.ie/en/bills/bill/2026/98/) records Dáil completion on 25 November, not enactment; the [passed Dáil text, clause 41](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_b/b98b26d.pdf) retains the change. Under [1927 Act section 4](https://www.irishstatutebook.ie/eli/1927/act/7/section/4/enacted/en/html), provisional effect can end on rejection, dissolution, enactment or expiry of four months, with a Second Stage timing condition. Recheck the operative position before filing a post-change gain; do not assume this dated confirmation proves a future filing position. [Finance Act 2010 section 160](https://www.irishstatutebook.ie/eli/2010/act/5/section/160/enacted/en/html) brings CGT within that Act.
 
 ## The taxable base
 
-**Start from the accounts profit.** Add back depreciation, business entertainment, capital expenditure, CT itself, fines and penalties, and interest on late tax. Deduct capital allowances instead of depreciation. Expenses are deductible only if they are revenue in nature and incurred wholly and exclusively for the trade. Pre-trading expenses of the three years before trading starts are deductible. A donation to an approved charity of at least EUR 250 in a 12-month period reduces CT.
+Reconcile accounts profit to taxable profit; keep trading income, passive income and gains separate. Section 81 disallows private, capital and non-trade expenditure: a revenue expense must be wholly and exclusively for the trade. Add back accounting depreciation and claim only an evidenced tax allowance. For ordinary qualifying plant costing EUR 25,000, a full year's 12.5% allowance is EUR 3,125; do not exceed unrecovered cost. [Section 81](https://www.irishstatutebook.ie/eli/1997/act/39/section/81/enacted/en/html); [section 284](https://www.irishstatutebook.ie/eli/1997/act/39/section/284/enacted/en/html).
 
-**Split the profits.** Trading income is taxed at 12.5%. Rent, deposit interest and other passive income, and income of an excepted trade (for example dealing in or developing land), are taxed at 25%, even inside a trading company. When the split is unclear, gather the facts first (TDM Part 02-02-06 on classifying activities as trading).
+For an ordinary non-development-land chargeable gain, calculate the CGT liability, then divide by 12.5% to obtain the adjusted gain for the CT1 capital-gains section. Development-land gains stay outside CT profits and are reported in the CT1 Capital Gains (Development Land) section under CGT payment/filing rules. Do not apply the ordinary rate or capital-loss rules to a development-land transaction without a separate check. Check this point with one of our partner accountants. [Revenue: company gains](https://www.revenue.ie/en/companies-and-charities/capital-gains-for-companies/index.aspx).
 
-**Chargeable gains.** A company's gains on assets other than development land go into CT profits, grossed up so that CT at 12.5% equals CGT at the CGT rate ([Revenue: capital gains for companies](https://www.revenue.ie/en/companies-and-charities/capital-gains-for-companies/index.aspx)):
+**Ordinary trading losses.** A section 396A claim offsets a relevant trading loss against eligible income of the same period and, if claimed and the trade was carried on then, the preceding period of corresponding length; relieve the later period first and apportion a period that overlaps the carryback window. Section 396B value relief is available only for the excess over amounts that could have been relieved under a timely section 396A claim. It reduces relevant CT by the loss multiplied by the section 21 rate, subject to available relevant CT; it does not reduce section 239/241 liabilities or close-company surcharges. Both claims have a two-year deadline from the loss-period end. Carry unused losses forward against the same continuing trade under section 396(1), without using a loss twice. Foreign-dividend extensions, excepted trades, leasing restrictions, terminal losses, ownership changes and group/consortium relief are specialist holds. Check this point with one of our partner accountants. [Finance Act 2001 section 90](https://www.irishstatutebook.ie/eli/2001/act/7/section/90/enacted/en/html), [2006 Schedule 2, paragraph 1(h)](https://www.irishstatutebook.ie/eli/2006/act/6/schedule/2/enacted/en/html), [2012 Schedule 1, paragraphs 14–15](https://www.irishstatutebook.ie/eli/2012/act/9/schedule/1/enacted/en/html), [2003 section 59](https://www.irishstatutebook.ie/eli/2003/act/3/section/59/enacted/en/html), [section 396](https://www.irishstatutebook.ie/eli/1997/act/39/section/396/enacted/en/html).
 
-1. Work out the CGT on the gain at the rate for the disposal date: 31% from 7 October 2026, 33% before.
-2. Divide that tax by 12.5%. The result is the adjusted gain, reported in the capital gains section of the CT1.
+**Close-company estate/investment surcharge.** First establish close-company and trading-company status; uncertain participator/control status is a hold. For an ordinary trading close company, section 434 determines estate/investment income after the relevant CT and a 7.5% trading-company reduction. Deduct the distributions attributable to the period; dividends must be declared for that period and paid/payable in the period or within 18 months after it. Apply section 440's 20% charge to the excess, with these conditions:
 
-A gain of EUR 150,000 on a disposal from 7 October 2026 gives tax of EUR 46,500 and an adjusted gain of EUR 372,000. The same gain on 6 October 2026 gives EUR 49,500 and EUR 396,000, the figures in Revenue's own example of a disposal in October 2025 at 33%. Development land gains stay outside CT profits: they are reported in the Capital Gains (Development Land) section of the CT1 and follow CGT pay and file dates. A loss on development land can be set against gains on all other assets; a loss on other assets only against gains on non-development land assets (same Revenue page). Disposals of shares in trading subsidiaries may be exempt under section 626B; check the conditions in TDM Part 20-01-14.
+- The exemption limit is EUR 2,000 for a full year without associated companies. Reduce it for a short period and divide by one plus the relevant associated-company count; apply section 440(3)–(4), not just a year-end company count.
+- Above that limit, surcharge cannot exceed 80% of the amount by which the excess exceeds the adjusted limit. Apply the section 440(2) accumulated-income limitation too.
+- Collection is in the earliest period ending on or after 12 months after the original period end; if there is no such period, collection falls in the original period. It is not invariably the immediately following short period.
 
-**Capital allowances.**
+[Section 434](https://www.irishstatutebook.ie/eli/1997/act/39/section/434/enacted/en/html), [Finance Act 2001 section 91](https://www.irishstatutebook.ie/eli/2001/act/7/section/91/enacted/en/html), [section 440](https://www.irishstatutebook.ie/eli/1997/act/39/section/440/enacted/en/html), [Finance Act 2013 section 33](https://www.irishstatutebook.ie/eli/2013/act/8/section/33/enacted/en/html). Service-company surcharge, inter-close-company elections, exempt dividends, legal distribution restrictions and participator loans/benefits require a separate computation. Check this point with one of our partner accountants.
 
-| Asset | Allowance |
+**R&D mechanics, not an eligibility determination.** Confirm qualifying activities, attributable expenditure and the period before using the rate table. Do not assume that software, staff, agency work, subcontracting, third-level research, grants or expenditure deductible abroad qualifies. These eligibility and allocation questions, and section 766D building claims with a different instalment rule, are holds. Check this point with one of our partner accountants.
+
+For the original example of a period ending 30 November 2026 and commencing on or after 1 January 2024, the specified return date falls in August 2027, so the rate remains 30%.
+
+For an established section 766C claim, the first instalment is the greater of half the credit and the lower of the credit and the applicable first-instalment limit: EUR 75,000 for periods commencing from 1 January 2025 until the later rule applies; EUR 87,500 where the specified return date is on or after 23 September 2027. The second instalment is three fifths of the balance; the third is the remainder. Elect for each instalment to be paid or treated as an overpayment for offset. An elected first instalment actually offset against that period's CT reduces CT for preliminary-tax purposes for that period and the next. Do not automatically subtract the whole credit from the tax charge. Specify the instalments on the relevant CT1s; non-standard succeeding periods need the statutory timing check. Claim within 12 months of the expenditure-period end; notify Revenue at least 90 days before the claim unless the company claimed under section 766C or 766 in any of the three immediately preceding periods. [Finance Act 2022 section 27](https://www.irishstatutebook.ie/eli/2022/act/44/section/27/enacted/en/html), [2023 section 34](https://www.irishstatutebook.ie/eli/2023/act/39/section/34/enacted/en/html), [2024 section 41](https://www.irishstatutebook.ie/eli/2024/act/43/section/41/enacted/en/html), [2025 section 35](https://www.irishstatutebook.ie/eli/2025/act/18/section/35/enacted/en/html).
+
+### Boundary and exception table
+
+Each hold below is non-usable for deciding tax or filing until resolved. Check this point with one of our partner accountants.
+
+| Original topic | Retained destination and boundary |
 |---|---|
-| Plant and machinery | 12.5% a year over eight years, if in use at the end of the period |
-| Most industrial buildings | 4% a year over 25 years |
-| Energy-efficient equipment, gas and electric vehicles, refuelling equipment, an employee creche or gym (equipment) | 100% in the first year of use |
-| Building used as an employee creche or gym | 15% a year over seven years |
-| Specified intangible assets (section 291A) | Amortisation charged in the accounts, or an election for 7% a year over 15 years and 2% in the final year |
-
-Allowances are cut for a short period or part non-trade use. Revenue's example: a machine costing EUR 25,000 gives EUR 3,125 a year. Intangible allowances (with related interest) cannot exceed 80% of the relevant trade's income for expenditure from 11 October 2017; Finance Act 2025 extends the ring-fence and the cap to balancing allowances on events from 8 October 2025. Cars are restricted by cost and CO2 emissions: check TDM Part 11-00-01 before claiming.
-
-**Losses** ([Revenue: trading losses](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/trading-losses.aspx)):
-
-1. **Same and preceding period (section 396A).** Set a 12.5% trading loss euro for euro against trading income of the same period, then of the immediately preceding period of the same length. This offset is against trading income only, not rent, interest or gains. The preceding period counts only if the company carried on the trade in it; where periods differ in length, profits are apportioned ([Notes for guidance, TCA Part 12](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part12.pdf)).
-2. **Value basis (section 396B).** Any loss left reduces the CT on non-trading income and gains of the same or preceding period, at 12.5% of the loss: a EUR 100,000 loss saves EUR 12,500.
-3. **Carry forward (section 396(1)).** Unused losses carry forward without time limit against the first profits of the same trade.
-4. **Excepted trades (section 396(2))** set losses against total profits of the same and preceding period.
-5. **Terminal loss (section 397).** A loss in the last 12 months of a discontinued trade that cannot be relieved otherwise carries back against income of the same trade in the three preceding years, later periods first (Notes for guidance, Part 12).
-6. **Change of ownership (section 401).** Losses carried forward are lost where, within three years, there is both a change in ownership and a major change in the nature or conduct of the trade, or where ownership changes when the trade has become small or negligible (Notes for guidance, Part 12). Refer any such case.
-
-**Group relief** ([Revenue: group relief](https://www.revenue.ie/en/companies-and-charities/reliefs-and-exemptions/group-relief/index.aspx)). Companies are grouped where one is a 75% subsidiary of the other, or both are 75% subsidiaries of a third, measured on ordinary share capital, distributable profits and assets on a winding up. Current-year trading losses, excess charges, excess management expenses and Case V excess capital allowances can be surrendered. The claimant uses them against its trading income, on a value basis against its CT, or against total profits of an excepted trade. Relief is time-apportioned where accounting periods do not match or a company joins or leaves the group, and is restricted if either company files late. The claim is made within two years of the end of the surrendering company's period, with its written consent. Consortium relief (section 412) is separate: refer it.
-
-**Interest limitation (Part 35D).** Exceeding borrowing costs are limited to 30% of tax-adjusted EBITDA, but only where they exceed EUR 3,000,000 for a 12-month period (reduced for a shorter period, applied once per interest group). A company wholly owned by one individual is not a standalone entity, so for most owner-managed companies the de minimis is the test ([TDM Part 35D-01-01](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-35d/35D-01-01.pdf)). Other points from the same manual:
-- The rule applies to accounting periods commencing on or after 1 January 2022.
-- A standalone entity is outside the rule: an Irish-resident company that is not in a worldwide group, has no associated enterprises and has no permanent establishment outside Ireland.
-- A group ratio or an equity ratio election (not both) can be made on the CT1 by the return date. Legacy debt, agreed before 17 June 2016, is excluded. Refer these.
-- A disallowed amount carries forward as "deemed borrowing cost" to later periods with spare capacity.
-
-**Start-up relief (section 486C).** For a company incorporated on or after 14 October 2008 that set up and began a qualifying trade between 1 January 2009 and 31 December 2026, for five years from the start of trading ([Revenue](https://www.revenue.ie/en/starting-a-business/initiatives-startup-businesses-smes/tax-relief-for-new-startup-companies/can-you-claim-for-tax-relief-for-your-start-up-company.aspx)). Excluded: trades taken over from another person, land development, petroleum and minerals, section 441 service company activities, certain primary production, and an associated company's trade. Relief covers only CT on the qualifying trade and its gains, is full where total CT is EUR 40,000 or less, marginal between EUR 40,000 and EUR 60,000 (CT on the trade reduced to the greater of 3 x (T - 40,000) x ((A + B) / T) and the CT less qualifying PRSI), and never exceeds the qualifying PRSI. Revenue's example: CT of EUR 25,000 and qualifying PRSI of EUR 10,500 (employer PRSI EUR 9,000, plus directors' Class S of EUR 500 and EUR 1,200, the second capped at EUR 1,000) gives relief of EUR 10,500, leaving CT of EUR 14,500 on the qualifying trade. Unused relief from the first five years (trades started on or after 1 January 2018) can be carried forward; in a later year it cannot exceed the PRSI paid in that year ([Revenue: how the relief is calculated](https://www.revenue.ie/en/starting-a-business/initiatives-startup-businesses-smes/tax-relief-for-new-startup-companies/how-is-the-relief-calculated.aspx)). Claim it on the CT1.
-
-**R&D corporation tax credit** ([TDM Part 29-02-03](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-29/29-02-03.pdf)). The credit is 30% of qualifying expenditure for periods commencing on or after 1 January 2024, and 35% for periods whose specified return date is on or after 23 September 2027 (Finance Act 2025, sections 766C(1) and 766D(1)). In general the 35% rate applies to periods ending 31 December 2026 or later; a period ending 30 November 2026 has an August 2027 return date and stays at 30%. It is not set against the period's CT: it is paid in three instalments, the first as in the table, the second three fifths of the balance, the third the rest. Each instalment is offset or repaid, at the company's election. The first instalment is specified on the CT1 for the period in which the expenditure was incurred, the second on the CT1 for the next period, the third on the one after. Example: EUR 400,000 spent in calendar 2026 gives EUR 140,000; first instalment EUR 87,500, second EUR 31,500, third EUR 21,000. The same spend in calendar 2025 at 30% gives EUR 120,000; first instalment EUR 75,000 (greater than 50%, EUR 60,000), second EUR 27,000, third EUR 18,000. The R&D must be systematic, investigative or experimental work in science or technology, carried out in Ireland, the EEA or the UK, that seeks scientific or technological advancement and involves resolving scientific or technological uncertainty. Subcontracted work and agency staff count as outsourcing and are subject to limits. The claim is due within 12 months of the period end (31 December 2027 for calendar 2026). A company claiming for the first time, or that has not claimed in its previous three periods, must notify Revenue at least 90 days before claiming.
-
-**Knowledge Development Box** ([Revenue: KDB](https://www.revenue.ie/en/companies-and-charities/reliefs-and-exemptions/knowledge-development-box-kdb/index.aspx)). From 1 October 2023 a qualifying company deducts 20% of qualifying profits, an effective rate of 10%. The 50% deduction (6.25% effective) applied only up to 30 September 2023: never use 6.25% for 2026. Qualifying assets are computer programs, patented inventions and, for small companies, certified patentable IP. The KDB applies to periods commencing before 1 January 2027 (section 769Q). The nexus fraction and tracking of R&D spend make every claim technical: refer it.
-
-**Close-company surcharges** ([Revenue: surcharge](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/close-companies/surcharge.aspx)). A close company is controlled by five or fewer participators or by its directors. Under section 440, take estate and investment income less the CT on it, deduct 7.5% for a trading company, deduct distributions made within 18 months of the period end, and if the excess is above EUR 2,000 charge 20% on it. Irish dividends received count: Revenue's example is a non-trading close company with EUR 50,000 of Irish dividends with nothing paid out, giving a surcharge of EUR 10,000. Where one close company pays a distribution to another, both can jointly elect to disregard it for the surcharge; each includes the election on its CT1. The surcharge is collected with the next period's CT and reported on that CT1; leaving it out makes the return incorrect. Service companies under section 441 pay 15% on half of undistributed trading income as well; refer marginal cases.
-
-**Pillar Two (Part 4A TCA)** ([Revenue: Pillar Two](https://www.revenue.ie/en/companies-and-charities/pillar-two/what-is/index.aspx)). In-scope groups pay at least 15% in each jurisdiction. Ireland's domestic top-up tax (a qualified domestic top-up tax) and the IIR apply for fiscal years commencing on or after 31 December 2023; the UTPR from fiscal years commencing on or after 31 December 2024. Revenue states Ireland's domestic top-up tax has transitional qualified status with the OECD. The OECD Side-by-Side package of 5 January 2026 changes some rules and is acknowledged by the European Commission (Notice C/2026/253). Screen for scope and refer the computation. Example: consolidated revenue of EUR 700m (2022), EUR 760m (2023), EUR 720m (2024) and EUR 800m (2025) reaches EUR 750m in two of the four preceding years, so the group is in scope for 2026.
-
-**Foreign dividends: participation exemption** ([Revenue](https://www.revenue.ie/en/companies-and-charities/reliefs-and-exemptions/exemption-foreign-distributions/index.aspx)). For distributions from 1 January 2025, an Irish company holding at least 5% for a continuous 12 months can elect to exempt dividends from foreign subsidiaries resident in an EU or EEA state or treaty country (three-year look-back for 2026 distributions, five years for 2025). From 2026 a non-treaty country that charges withholding tax on cross-border distributions also counts, where that tax is paid on the full distribution and not refunded. The subsidiary must not be on the EU list of non-cooperative jurisdictions and must not be generally exempt from tax. The distribution must be income chargeable under Case III (not trading income) and must not be deductible abroad. The election is claimed on the CT1 through ROS and covers every relevant distribution for the period, not dividend by dividend.
+| Trading classification; general expense categories | Require evidence under section 81. Specific entertainment, doubtful-debt provisions, pensions, director pay, fines, CT/interest deductions, travel/RCT, pre-trading expenditure and charitable donations: hold the specific deduction or relief. |
+| Capital allowances beyond ordinary plant | Cars/CO2/cost caps; buildings; accelerated energy-efficient, gas/electric, refuelling, creche/gym allowances; intangible amortisation/elections, interest and balancing-allowance caps; part-use and disposal adjustments: hold. |
+| Losses and groups | Terminal loss, ownership/trade change, excepted/foreign trades, leasing, management expenses, charges, Case V allowances, group/consortium membership, cross-border final losses, time apportionment and consent: hold these outcomes. |
+| Interest limitation and anti-hybrids | Hold the de minimis, EBITDA, standalone/individual ownership, interest-group allocation, group/equity ratios, legacy debt and carryforward computations; do not infer exemption from ownership or gross interest alone. |
+| Start-up relief | Hold qualification, trade/incorporation dates, exclusions, full/marginal bands, employer/Class S PRSI caps and carryforward. A new company or a low balance after R&D does not establish relief. |
+| KDB | Hold asset eligibility, effective rate, nexus/uplift, tracking, election and expiry. No old effective rate is usable for 2026. |
+| Special regimes | Section 110/PPN/property restrictions, banks/IFSC, life assurance, REIT/IREF, funds/ICAV, tonnage, petroleum/mining and Islamic finance: hold. |
+| Structuring and compliance | Functional currency, transfer pricing/SME documentation, CbCR, debt push-down, IP/residence migration, GAAR/PPT, mandatory/protective disclosure, audits, interventions and penalties for incorrect returns: hold. |
+| Legislation proposed for later periods | The former preliminary-tax limit/top-up, start-up extension, KDB extension and R&D instalment proposals are not usable rules here. Confirm enactment, final text and commencement for the period concerned. |
 
 ## Deadlines and filing
 
-**Mandatory e-filing.** Every company pays and files through ROS: preliminary tax by its due date, then a CT1 and Form 46G (Company) and the balance of tax by the return date ([Revenue: payment and filing](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx)).
+Use ROS to file the CT1 and applicable Form 46G (Company), pay preliminary CT and pay the balance. For an ordinary company not winding up, section 959A gives nine months after period end, capped at the 23rd of that month where both return and required payments meet the electronic conditions. A period ending 31 December 2026 is due 23 September 2027; the calendar 2025 CT1 was due 23 September 2026. A period ending 5 December is due 5 September, not automatically the 23rd. Winding-up deadlines and non-electronic cases require a separate check. [Finance Act 2012 Schedule 4, section 959A](https://www.irishstatutebook.ie/eli/2012/act/9/schedule/4/enacted/en/html); [payment and filing](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx).
 
-**The return date** ([TDM Part 47-06-08](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-47/47-06-08.pdf)). Nine months after the period ends, by the 21st of that month, or the 23rd when filed and paid on ROS: 23 September 2027 for a 31 December 2026 year end. A period ending before the 21st of a month is due on the same day of the ninth month (a period ending 5 December is due 5 September).
+**Preliminary CT for 2026.** Use the statutory corresponding CT calculation: prior-period CT × days in the current period ÷ days in the prior period. The small-company test is corresponding prior CT not exceeding the relevant limit, EUR 200,000 reduced proportionately for a short current period. Exclude the late-filing surcharge and section 239 income tax for classification; include section 440/441 close-company surcharges. A payment calculation also needs section 239/241 liabilities where relevant. [Section 959AM, Schedule 4](https://www.irishstatutebook.ie/eli/2012/act/9/schedule/4/enacted/en/html); [TDM 41A-07-02, sections 3–4](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-41a/41A-07-02.pdf).
 
-**Preliminary tax, 2026 periods** ([Revenue](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/when-is-preliminary-ct-due.aspx)):
-
-| Company | Amount | Due (calendar 2026 period) |
+| Situation | Required amount and ROS timing for an ordinary period | Source |
 |---|---|---|
-| Small (previous period's CT not above EUR 200,000, excluding surcharges and section 239 income tax; annualise a short period) | At least the lower of 100% of the previous period's CT and 90% of this period's CT | 31 days before the period ends, by the 23rd: 23 November 2026 |
-| Large, period longer than seven months | Instalment 1: 50% of previous CT or 45% of current CT | 23rd of the sixth month: 23 June 2026 |
-| | Instalment 2: brings the total to 90% of current CT | 23rd of the eleventh month: 23 November 2026 |
-| Large, period of less than seven months | 90% in one instalment | See TDM Part 41A-07-02 |
-| New company, first period, CT less than EUR 200,000 (excluding surcharge, including section 239 income tax) | None | Whole CT with the CT1 |
-| New company, first period, CT of EUR 200,000 or more | As a large company, but only the 45% of current CT test applies to instalment 1 (no previous period) ([Notes for guidance, TCA Part 41A](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part41a.pdf)) | As above |
+| Small company | At least the lower of 90% of current tax and corresponding prior CT plus corresponding prior section 239/241 income tax. Normally due 31 days before period end, subject to the statutory day-21/day-23 electronic adjustment; 23 November for a calendar 2026 period. | https://www.irishstatutebook.ie/eli/2012/act/9/schedule/4/enacted/en/html |
+| Large company with two-instalment period | First: lower of 45% current tax and 50% corresponding prior tax; first-period entrant uses 45% current tax. Due within six months from start, with the statutory electronic adjustment. Final instalment brings total to 90% current tax, due 31 days before end with that adjustment. Calendar 2026 dates: 23 June and 23 November. | https://www.irishstatutebook.ie/eli/2012/act/9/schedule/4/enacted/en/html |
+| Short large-company period | Section 959AM(2) switches to one instalment if the final instalment would fall on/before the first. Pay at least 90% under section 959AR. Do not use “exactly seven months” as a universal boundary. A period shorter than one month and one day uses the period-end rule in section 959AR(1)(b). | https://www.irishstatutebook.ie/eli/2012/act/9/schedule/4/enacted/en/html |
+| First period on entering the CT charge | Section 959AN(4): preliminary CT is nil if tax does not exceed the relevant limit, including equality; the short-period limit still applies. The tax definition includes section 239 income tax, excluding the late-filing surcharge. Pay the final balance by the return date. | https://www.irishstatutebook.ie/eli/2012/act/9/schedule/4/enacted/en/html ; https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-41a/41A-07-02.pdf |
 
-Example, large company: CT for 2025 of EUR 900,000, expected 2026 CT of EUR 1,200,000. First instalment by 23 June 2026: EUR 450,000 (50% of 2025). Second by 23 November 2026: EUR 630,000, bringing the total to EUR 1,080,000 (90% of 2026). Balance EUR 120,000 with the CT1. Groups can apply to Revenue's Debt Management Task Force for notional allocation of preliminary tax.
+The day-23 electronic adjustment is conditional: use the statutory date rule, not “always the earlier of day 23 and 31 days before year end” for an unusual month-end. Underpayment can accelerate the final liability's due date. Gains/financial-asset exceptions, leap-year comparisons, first-period mismatches and notional group allocations require a separate computation. Check this point with one of our partner accountants.
 
-**iXBRL.** Financial statements are filed in iXBRL with the CT1 unless the company meets all three small tests in the rates table; Large Corporates Division and High Wealth and Financial Services Division cases and Section 110 companies always file iXBRL ([Revenue](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/submitting-financial-statements/who-submit.aspx)). A company filing iXBRL skips the CT1 "Extracts from Accounts" panel but must still tag the mandatory items ([Revenue: iXBRL](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/submitting-financial-statements/index.aspx)).
-
-**Pillar Two** ([Revenue: key dates](https://www.revenue.ie/en/companies-and-charities/pillar-two/dates/index.aspx)). Register on ROS within 12 months after the end of the first fiscal year in scope (entities with a first year ending in 2024 had until 28 February 2026). File the Top-up Tax Information Return within 15 months of each fiscal year end, 18 months for the first year. The first TIR and pay and file deadline was 30 June 2026; for a group first in scope for calendar 2025, the first TIR is due 30 June 2027.
-
-**The 2025 CT1.** For a 31 December 2025 year end the CT1 was due by 23 September 2026. Filed within two months of the return date: 5% surcharge and a 25% relief restriction. Later: 10% and 50%. The R&D rate for 2025 is 30% and the claim is due by 31 December 2026. 2025 is the first year directors' Class S PRSI counts for start-up relief.
-
-**Proposals in the Finance (No. 2) Bill 2026, not yet law** ([Bill 98 of 2026, as initiated](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf)):
-- small company limit for preliminary tax raised from EUR 200,000 to EUR 350,000, and a top-up within four months of the period end where at least 80% was paid, for periods commencing on or after 1 January 2027 (section 74);
-- start-up relief extended to trades begun by 31 December 2030 (section 30);
-- KDB extended to periods commencing before 1 January 2032 (section 32);
-- R&D first instalment at the 35% rate raised from EUR 87,500 to EUR 105,000 for return dates on or after 23 September 2028 (section 25).
-Apply none of these until the Act is passed.
-
-**Checklist before filing:** period of 12 months or less; trading, passive and gains split; add-backs and capital allowances; losses in statutory order and group relief consents; interest limitation de minimis; start-up relief within the CT bands and PRSI cap; R&D rate, instalment and notification; the previous period's close-company surcharge included; Pillar Two scope; preliminary tax tested; iXBRL tested.
+**iXBRL.** Large Corporates Division, High Wealth and Financial Services Division and section 110 cases require iXBRL. For ordinary other CT filers, the small exclusion requires all three: total assets without liabilities deducted below EUR 4.4 million, turnover below EUR 8.8 million and average employees 50 or fewer. Other exceptions and the required tags/submission timing need the applicable iXBRL manual. Do not assume every company files iXBRL or that two tests suffice. [Revenue: who must submit](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/submitting-financial-statements/who-submit.aspx).
 
 ## Penalties and interest
 
-- **Late payment interest:** 0.0219% a day on tax paid late or short, including a preliminary tax shortfall measured against the final liability. It cannot be appealed or reduced.
-- **Late filing surcharge (section 1084):** 5% of the tax, up to EUR 12,695, if the CT1 is filed within two months of the due date; 10%, up to EUR 63,485, after that. It applies even if the tax was paid on time, and the surcharge carries interest. A careless or deliberate incorrect return is treated as late unless corrected before the due date ([TDM Part 47-06-08](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-47/47-06-08.pdf)).
-- **Restriction of reliefs (section 1085):** a late CT1 cuts excess capital allowances, loss relief under sections 396(2), 396A(3), 396B(2) and 399(2), and group relief: by 25% (maximum EUR 31,740) if less than two months late, by 50% (maximum EUR 158,715) if two months or more ([TDM Part 47-06-04](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-47/47-06-04.pdf)).
-- **Example:** CT of EUR 150,000 for 2025, CT1 due 23 September 2026. Filed 20 October 2026: surcharge EUR 7,500. Filed 15 December 2026: surcharge EUR 15,000.
-- **Time limit (section 959AA):** with full and true disclosure, Revenue cannot assess more than four years after the end of the chargeable period. No limit for fraud, neglect or no return.
+Late or insufficient payment carries daily interest of 0.0219%, computed on the underpaid amount and days late; a preliminary-tax failure can change which liability is overdue. [Revenue payment and filing](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx).
+
+A late return has a section 1084 surcharge: 5% capped at EUR 12,695 if delivered before expiry of two months from the specified return date; otherwise 10% capped at EUR 63,485. It can apply despite timely payment. Section 1085 separately restricts excess capital allowances, the specified loss-relief claims and group claims/surrenders: ordinarily 25% with maximum EUR 31,740 for a return before expiry of two months, otherwise 50% with maximum EUR 158,715. The group-claim restriction is measured against reduced profits, not simply a percentage of tax. Do not infer that R&D credits are one of these listed relief restrictions. [Sections 1084](https://www.irishstatutebook.ie/eli/1997/act/39/section/1084/enacted/en/html) and [1085](https://www.irishstatutebook.ie/eli/1997/act/39/section/1085/enacted/en/html); [TDM 47-06-08](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-47/47-06-08.pdf) and [47-06-04](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-47/47-06-04.pdf).
+
+**Exact-boundary hold:** the original case of a calendar 2025 CT1 filed on 23 November 2026 must not be answered as “5% surcharge but 50% relief restriction” from inconsistent summary wording. Both statutory provisions use “before the expiry of 2 months”; resolve the exact expiry/application before a final filing calculation. Check this point with one of our partner accountants. Incorrect/incomplete returns, penalties versus surcharge, interest on surcharge, assessments and the enquiry time limit are separate holds; no blanket four-year protection is offered. Check this point with one of our partner accountants.
 
 ## Cross-border points
 
-- **Non-resident company with an Irish branch:** taxed at 12.5% on branch trading profits and 25% on non-trading branch income, with profits attributed under section 25A. Charge, credit for tax deducted at source (section 25(3)) and assessment through a representative (sections 1034 and 1035) are in [ie-foreign-tax-and-withholding](ie-foreign-tax-and-withholding.md). Branch-to-head-office dealings follow [ie-transfer-pricing](ie-transfer-pricing.md).
-- **Group relief across borders:** Irish branches of foreign companies can be group members; an Irish parent can claim, in limited cases, the final losses of a 75% subsidiary resident in an EU or EEA treaty state.
-- **Foreign tax on company income:** credit relief under Schedule 24, unilateral relief and pooling are in [ie-foreign-tax-and-withholding](ie-foreign-tax-and-withholding.md). The participation exemption above is an alternative for qualifying foreign dividends.
-- **Withholding on payments out** (dividends 25%, interest and royalties 20%) and treaty rates: [ie-foreign-tax-and-withholding](ie-foreign-tax-and-withholding.md).
-- **Company migration and exit tax:** [ie-cross-border](ie-cross-border.md).
-- **Pillar Two:** the domestic top-up tax collects Irish top-up first; foreign IIR or UTPR may otherwise apply to Irish entities.
+**Pillar Two scope screen.** Section 111C tests consolidated revenue including excluded entities against EUR 750 million for at least two of four preceding fiscal years; adjust the revenue threshold pro rata for fiscal years other than 12 months. Passing that screen does not establish that every entity is taxable: excluded-entity rules, elections, mergers and section 111AL matter. Hold entity classification, the 15% minimum/top-up computation, IIR/UTPR/domestic tax, safe harbours, Side-by-Side changes, registration and TIR/GIR/payment deadlines. Check this point with one of our partner accountants. [Finance (No. 2) Act 2023 section 94, sections 111A/111C](https://www.irishstatutebook.ie/eli/2023/act/39/section/94/enacted/en/html).
+
+Foreign dividends and participation exemption (including the original 2025 versus 2026 look-back distinction), foreign-tax credits/pooling, withholding, branch attribution, foreign rental income and final foreign losses are held for [ie-foreign-tax-and-withholding](ie-foreign-tax-and-withholding.md). Transfer pricing and associated-party/SME documentation route to [ie-transfer-pricing](ie-transfer-pricing.md). Migration, residence and exit tax route to [ie-cross-border](ie-cross-border.md). A companion link is not proof of an outcome. Check this point with one of our partner accountants.
 
 ## Worked examples
 
-### Example 1: small close trading company with rent, calendar 2026
+### 1. Hill Ltd: calendar 2026
 
-Hill Ltd is a close trading company. In 2026 it has trading profit of EUR 400,000 and net rental profit of EUR 40,000. Its CT for 2025 was EUR 48,000. It pays dividends of EUR 20,000 within 18 months of 31 December 2026.
+Original inputs: trading profit EUR 400,000; net rent EUR 40,000; 2025 CT EUR 48,000; dividends EUR 20,000 within 18 months. Assume full-year periods, established ordinary trading close-company status, no associates, no other adjustments/credits/section 239 tax, dividends attributable to this period, sufficient accumulated income, and a calendar 2027 following period.
 
-- CT for 2026: EUR 400,000 at 12.5% is EUR 50,000; EUR 40,000 at 25% is EUR 10,000. Total EUR 60,000.
-- It is a small company: 2025 CT of EUR 48,000 is not above EUR 200,000. By 23 November 2026 it pays at least the lower of EUR 48,000 (100% of 2025) and EUR 54,000 (90% of 2026), so EUR 48,000.
-- The balance of EUR 12,000 is due with the CT1 by 23 September 2027.
-- Surcharge: rent EUR 40,000 less CT EUR 10,000 is EUR 30,000. Less the 7.5% trading company reduction gives EUR 27,750. Less dividends of EUR 20,000 leaves EUR 7,750, above EUR 2,000, so the surcharge is 20% of EUR 7,750, EUR 1,550, collected with the 2027 CT.
+Trading CT EUR 50,000 plus rental CT EUR 10,000 gives EUR 60,000. Preliminary CT is min(EUR 48,000, EUR 54,000) = EUR 48,000 by 23 November 2026; balance EUR 12,000 by 23 September 2027. Distributable rent is EUR 30,000 × 92.5% = EUR 27,750; after dividends excess is EUR 7,750. Ordinary surcharge EUR 1,550 is below marginal cap EUR 4,600, and is collected with calendar 2027 CT. Dependencies: rate table, sections 434/440 and preliminary-tax rules above.
 
 ```oa-check
-name: Hill Ltd, trading EUR 400,000 and rent EUR 40,000, calendar 2026
+name: Hill Ltd calendar 2026
 inputs:
   trading: 400000
   rent: 40000
@@ -183,30 +125,28 @@ steps:
   - ct_total: ct_trading + ct_rent
   - prelim_minimum: min(prior_ct, ct_total * 0.90)
   - balance_with_ct1: ct_total - prelim_minimum
-  - distributable: (rent - ct_rent) * (1 - 0.075)
+  - distributable: (rent - ct_rent) * 0.925
   - excess: distributable - dividends
-  - surcharge: excess * 0.20
+  - marginal_cap: max(0, excess - 2000) * 0.8
+  - surcharge: min(excess * 0.20, marginal_cap)
 expected:
-  ct_total: 60000.00
-  prelim_minimum: 48000.00
-  balance_with_ct1: 12000.00
-  distributable: 27750.00
-  excess: 7750.00
-  surcharge: 1550.00
+  ct_total: 60000
+  prelim_minimum: 48000
+  balance_with_ct1: 12000
+  distributable: 27750
+  excess: 7750
+  marginal_cap: 4600
+  surcharge: 1550
 ```
 
-### Example 2: gain after 7 October 2026, sheltered by a trading loss
+### 2. Atlas Ltd: gain on 15 November 2026
 
-Atlas Ltd has a calendar 2026 period. It has a trading loss of EUR 100,000 and no other trading income in 2026 or 2025. On 15 November 2026 it sells a building (not development land) at a chargeable gain of EUR 150,000.
+Original inputs: calendar 2026, trading loss EUR 100,000, no trading income in 2025/2026, ordinary non-development-land building gain EUR 150,000. Assume no eligible foreign-dividend income, no earlier relief/group surrender, no other adjustments, a valid timely section 396B claim and the provisional rate still operative.
 
-- The disposal is on or after 7 October 2026, so the CGT rate is 31%: tax EUR 46,500.
-- Adjusted gain for the CT1: EUR 46,500 divided by 12.5% is EUR 372,000. CT at 12.5% on that is EUR 46,500.
-- The loss has no trading income to absorb it this year or last, so it is used on a value basis: EUR 100,000 at 12.5% is EUR 12,500.
-- CT payable: EUR 46,500 less EUR 12,500 is EUR 34,000.
-- The edge case: had Atlas sold on 6 October 2026, the rate would be 33%: tax EUR 49,500, adjusted gain EUR 396,000, CT payable EUR 37,000. One day changes the bill by EUR 3,000. If the Finance (No. 2) Bill 2026 does not carry the 31% rate into law, recompute at 33%.
+At 31%, tax on the gain is EUR 46,500; adjusted gain EUR 372,000. Value relief is EUR 12,500, leaving CT EUR 34,000. The original comparison disposal date, 6 October 2026, gives 33%, tax EUR 49,500, adjusted gain EUR 396,000 and CT EUR 37,000; difference EUR 3,000. The rate-status recheck above is required; these are conditional computations, not evidence of a later enactment.
 
 ```oa-check
-name: Atlas Ltd, gain EUR 150,000 on 15 November 2026 with trading loss EUR 100,000
+name: Atlas Ltd original 2026 disposal dates
 inputs:
   gain: 150000
   loss: 100000
@@ -224,62 +164,50 @@ steps:
   - ct_payable_old: cgt_old - value_relief
   - difference: ct_payable_old - ct_payable_new
 expected:
-  cgt_new: 46500.00
-  adjusted_gain_new: 372000.00
-  ct_on_gain_new: 46500.00
-  value_relief: 12500.00
-  ct_payable_new: 34000.00
-  adjusted_gain_old: 396000.00
-  ct_payable_old: 37000.00
-  difference: 3000.00
+  cgt_new: 46500
+  adjusted_gain_new: 372000
+  ct_on_gain_new: 46500
+  value_relief: 12500
+  ct_payable_new: 34000
+  adjusted_gain_old: 396000
+  ct_payable_old: 37000
+  difference: 3000
 ```
+
+### Other original cases and their destinations
+
+- **Coast Ltd, calendar 2026:** prior CT EUR 900,000, current CT EUR 1,200,000, full-year periods/no adjustments. First instalment min(EUR 450,000, EUR 540,000) = EUR 450,000 by 23 June; second EUR 630,000 by 23 November reaches EUR 1,080,000; balance EUR 120,000 by 23 September 2027.
+- **Lab Ltd:** assumed confirmed section 766C qualifying expenditure EUR 400,000 in each calendar year. 2026 at 35% gives EUR 140,000, instalments EUR 87,500 / EUR 31,500 / EUR 21,000; 2025 at 30% gives EUR 120,000, instalments EUR 75,000 / EUR 27,000 / EUR 18,000. Claims by 31 December 2027 and 31 December 2026 respectively, subject to notification; eligibility remains the hold above.
+- **Brook Ltd, calendar 2025:** CT EUR 150,000, due 23 September 2026. Assuming that is the surcharge base, filing 20 October 2026 gives surcharge EUR 7,500; filing 15 December gives EUR 15,000. Any section 1085 restriction needs the actual relief/profit figures. The exact 23 November case remains held above.
+- **Historical loss/gain case:** loss EUR 100,000, gain EUR 100,000, stated tax on the gain EUR 33,000. If that supplied gain-tax input and section 396B eligibility are confirmed for its original period, relief EUR 12,500 leaves EUR 20,500. Do not treat the supplied EUR 33,000 as the rate for a November 2026 gain.
+- **2026 Pillar Two screen:** original consolidated revenues EUR 700m (2022), EUR 760m (2023), EUR 720m (2024), EUR 800m (2025), assuming full-year figures; two years reach EUR 750m. Entity exclusions and all tax/filing outcomes remain held. Check this point with one of our partner accountants.
+- **Start-up PRSI case, calendar 2025:** preserve CT EUR 25,000, employer PRSI EUR 9,000, directors' Class S EUR 500 and EUR 1,200. The former EUR 10,500 relief / EUR 14,500 balance is non-usable until qualifying trade, PRSI allocation/caps and section 486C eligibility are confirmed. Check this point with one of our partner accountants.
+- **TechCo Ltd, 1 January–31 December 2025:** preserve accounts trading profit EUR 500,000, depreciation EUR 20,000, plant allowances supplied EUR 25,000, R&D expenditure EUR 100,000, no passive income and prior CT EUR 0/first trade year. Conditional arithmetic gives taxable profit EUR 495,000 and CT before credits/relief EUR 61,875. Hold the former automatic zero-tax/start-up outcome, R&D election, allowance entitlement, preliminary-tax and iXBRL conclusions; the original ROS date is 23 September 2026. Check this point with one of our partner accountants.
+- **GlobalCo Ireland Ltd, calendar 2025:** preserve US ownership, EUR 1.2bn consolidated revenue in each of 2023/2024, trading profit EUR 40m, the ambiguously described “foreign branch dividend” EUR 3m, 80 employees, payroll EUR 8m and assets EUR 15m. Preserve the original assumed foreign withholding EUR 450,000 (15%) as an unverified input. Hold income classification/exemption/credit, covered taxes, GloBE income, substance exclusion and the former top-up result; none is a usable tax computation. Check this point with one of our partner accountants.
+- **PropTradeCo Ltd, FY 2025:** preserve trading profit EUR 200,000, net rent EUR 80,000, close-company status and no rent distribution by the 18-month mark. Conditional ordinary CT is EUR 45,000. If it is a trading company with no associates/other adjustments and no accumulated-income cap restriction, estate/investment income after CT and reduction is EUR 55,500, giving EUR 11,100 surcharge (below marginal cap), not the old EUR 12,000. Without those facts, hold the surcharge. Check this point with one of our partner accountants.
+- **Other original illustrations:** a EUR 150,000 ordinary gain gives adjusted gain EUR 372,000 at 31% or EUR 396,000 at 33%, as in Atlas; ordinary EUR 25,000 plant gives EUR 3,125 as above. A non-trading close company's original EUR 50,000 Irish-dividend case remains held for dividend classification/exclusions and distributions; do not infer EUR 10,000 surcharge solely from the receipt. Check this point with one of our partner accountants.
 
 ## Ask the client first
 
-1. The accounting period dates, and whether the company is Irish resident or a non-resident trading through an Irish branch.
-2. What the income is: trading, rent, interest, dividends, or an excepted trade; and any assets sold, with the disposal dates (before or from 7 October 2026) and whether any is development land.
-3. The CT for the previous period and its length, and the preliminary tax already paid.
-4. Who owns it: a close company or service company, 75% group links, and whether group revenue reaches EUR 750m.
-5. Losses brought forward or from group companies, R&D or patent income, and net interest expense.
-6. Whether any CT1 or payment is late, and whether the accounts meet the three iXBRL tests.
+Confirm period dates and residence; each income/gain category and disposal date; original accounts and adjustments; prior CT and period length; preliminary payments; ownership, associates, service-company and group links; dividends and accumulated income; losses and earlier claims; R&D evidence and notification; interest/IP/foreign flows; filing delays; iXBRL tests and any winding up. Use the existing records before asking for missing facts. No merchant, industry, company-size or “conservative” default establishes an exemption.
 
 ## Sources
 
-| Source | URL | Read on |
+| Official authority and passage actually read | URL | Read date |
 |---|---|---|
-| Revenue, basis of charge (12.5% and 25%) | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx | 2026-10-23 |
-| Revenue, capital gains for companies (31% gross-up) | https://www.revenue.ie/en/companies-and-charities/capital-gains-for-companies/index.aspx | 2026-10-23 |
-| Dáil Éireann, 6 October 2026, Financial Resolution No. 3: Capital Gains Tax (carried 95 to 64) | https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-10-06/debate/mul@/main.xml | 2026-10-23 |
-| Finance (No. 2) Bill 2026 (Bill 98 of 2026), as initiated, sections 25, 30, 32, 36, 72, 74 | https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf | 2026-10-23 |
-| Oireachtas, Finance (No. 2) Bill 2026 status | https://www.oireachtas.ie/en/bills/bill/2026/98/ | 2026-10-23 |
-| Provisional Collection of Taxes Act 1927, section 4 | https://www.irishstatutebook.ie/eli/1927/act/7/section/4/enacted/en/html | 2026-10-23 |
-| Finance Act 2010, section 160 (capital gains tax within the 1927 Act) | https://www.irishstatutebook.ie/2010/en/act/pub/0005/sec0160.html | 2026-10-23 |
-| TDM Part 22-02-03, development land rate of charge | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-22/22-02-03.pdf | 2026-10-23 |
-| TDM Part 29-02-03, R&D corporation tax credit (updated April 2026) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-29/29-02-03.pdf | 2026-10-23 |
-| Revenue, Knowledge Development Box | https://www.revenue.ie/en/companies-and-charities/reliefs-and-exemptions/knowledge-development-box-kdb/index.aspx | 2026-10-23 |
-| Revenue, what is Pillar Two | https://www.revenue.ie/en/companies-and-charities/pillar-two/what-is/index.aspx | 2026-10-23 |
-| Revenue, UTPR top-up tax (fiscal years commencing on or after 31 December 2024) | https://www.revenue.ie/en/companies-and-charities/pillar-two/what-is/uptr-top-up-tax.aspx | 2026-10-23 |
-| Revenue, domestic top-up tax | https://www.revenue.ie/en/companies-and-charities/pillar-two/what-is/domestic-top-up-tax.aspx | 2026-10-23 |
-| Revenue, Pillar Two key dates | https://www.revenue.ie/en/companies-and-charities/pillar-two/dates/index.aspx | 2026-10-23 |
-| Revenue, preliminary CT | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/preliminary-ct.aspx | 2026-10-23 |
-| Revenue, when is preliminary CT due | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/when-is-preliminary-ct-due.aspx | 2026-10-23 |
-| Revenue, CT payment and filing | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx | 2026-10-23 |
-| TDM Part 47-06-08, late filing surcharge (updated July 2025) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-47/47-06-08.pdf | 2026-10-23 |
-| TDM Part 47-06-04, restriction of reliefs | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-47/47-06-04.pdf | 2026-10-23 |
-| Revenue, close company surcharge | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/close-companies/surcharge.aspx | 2026-10-23 |
-| TDM Part 13-02-06, service company surcharge | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-13/13-02-06.pdf | 2026-10-23 |
-| Revenue, capital allowances and deductions | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/capital-allowances-and-deductions.aspx | 2026-10-23 |
-| Revenue, trading losses | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/trading-losses.aspx | 2026-10-23 |
-| Revenue, group relief | https://www.revenue.ie/en/companies-and-charities/reliefs-and-exemptions/group-relief/index.aspx | 2026-10-23 |
-| TDM Part 35D-01-01, interest limitation (updated December 2025) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-35d/35D-01-01.pdf | 2026-10-23 |
-| Revenue, start-up relief: can you claim | https://www.revenue.ie/en/starting-a-business/initiatives-startup-businesses-smes/tax-relief-for-new-startup-companies/can-you-claim-for-tax-relief-for-your-start-up-company.aspx | 2026-10-23 |
-| Revenue, start-up relief: how it is calculated | https://www.revenue.ie/en/starting-a-business/initiatives-startup-businesses-smes/tax-relief-for-new-startup-companies/how-is-the-relief-calculated.aspx | 2026-10-23 |
-| TDM Part 15-03-03, start-up relief | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-15/15-03-03.pdf | 2026-10-23 |
-| Revenue, who must submit iXBRL | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/submitting-financial-statements/who-submit.aspx | 2026-10-23 |
-| Revenue, participation exemption for foreign distributions | https://www.revenue.ie/en/companies-and-charities/reliefs-and-exemptions/exemption-foreign-distributions/index.aspx | 2026-10-23 |
-| Revenue, Notes for Guidance TCA 1997, Part 2 (sections 25, 25A) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part02.pdf | 2026-10-23 |
-| Revenue, Notes for Guidance TCA 1997, Part 12 (sections 396, 396A, 397, 401) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part12.pdf | 2026-10-27 |
-| Revenue, iXBRL financial statements | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/submitting-financial-statements/index.aspx | 2026-10-27 |
-| Taxes Consolidation Act 1997 | https://www.irishstatutebook.ie/eli/1997/act/39/enacted/en/html | 2026-10-23 |
+| Finance Act 1999 section 71, section 21 rate; Revenue basis/period rules | https://www.irishstatutebook.ie/eli/1999/act/2/section/71/enacted/en/html ; https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx | 2026-11-27 |
+| Finance Act 2000 section 75, section 21A higher rate and land exclusions | https://www.irishstatutebook.ie/eli/2000/act/3/section/75/enacted/en/html | 2026-11-27 |
+| Company gains, gross-up/reporting; Dáil resolution 3 operative paragraphs | https://www.revenue.ie/en/companies-and-charities/capital-gains-for-companies/index.aspx ; https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-10-06/debate/mul@/main.xml | 2026-11-27 |
+| Bill status and passed Dáil clause 41, not an Act | https://www.oireachtas.ie/en/bills/bill/2026/98/ ; https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_b/b98b26d.pdf | 2026-11-27 |
+| Provisional Collection Act section 4; 2010 section 160 definition | https://www.irishstatutebook.ie/eli/1927/act/7/section/4/enacted/en/html ; https://www.irishstatutebook.ie/eli/2010/act/5/section/160/enacted/en/html | 2026-11-27 |
+| TCA sections 81, 284; Finance Act 2003 section 23 operative plant rate; Revenue ordinary plant example | https://www.irishstatutebook.ie/eli/1997/act/39/section/81/enacted/en/html ; https://www.irishstatutebook.ie/eli/1997/act/39/section/284/enacted/en/html ; https://www.irishstatutebook.ie/eli/2003/act/3/section/23/enacted/en/html ; https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/capital-allowances-and-deductions.aspx | 2026-11-27 |
+| Loss law: section 396; 2001 section 90; 2002 section 54; 2003 section 59; 2006 Schedule 2 paragraph 1(h); 2012 Schedule 1 paragraphs 14–15 | https://www.irishstatutebook.ie/eli/1997/act/39/section/396/enacted/en/html ; https://www.irishstatutebook.ie/eli/2001/act/7/section/90/enacted/en/html ; https://www.irishstatutebook.ie/eli/2002/act/5/section/54/enacted/en/html ; https://www.irishstatutebook.ie/eli/2003/act/3/section/59/enacted/en/html ; https://www.irishstatutebook.ie/eli/2006/act/6/schedule/2/enacted/en/html ; https://www.irishstatutebook.ie/eli/2012/act/9/schedule/1/enacted/en/html | 2026-11-27 |
+| Sections 434/440, 2001 section 91 and 2013 section 33: distributions, reduction, cap and collection | https://www.irishstatutebook.ie/eli/1997/act/39/section/434/enacted/en/html ; https://www.irishstatutebook.ie/eli/1997/act/39/section/440/enacted/en/html ; https://www.irishstatutebook.ie/eli/2001/act/7/section/91/enacted/en/html ; https://www.irishstatutebook.ie/eli/2013/act/8/section/33/enacted/en/html | 2026-11-27 |
+| R&D section 766C: 2022 section 27; 2023 section 34 notification/rate; 2024 section 41; 2025 section 35 commencement/elections | https://www.irishstatutebook.ie/eli/2022/act/44/section/27/enacted/en/html ; https://www.irishstatutebook.ie/eli/2023/act/39/section/34/enacted/en/html ; https://www.irishstatutebook.ie/eli/2024/act/43/section/41/enacted/en/html ; https://www.irishstatutebook.ie/eli/2025/act/18/section/35/enacted/en/html | 2026-11-27 |
+| TDM 29-02-03, sections 2–2.3: rates, instalments and offset, eligibility warning | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-29/29-02-03.pdf | 2026-11-27 |
+| Schedule 4: sections 959A, 959AM–AN, 959AR–AT; TDM 41A-07-02 sections 2–5 | https://www.irishstatutebook.ie/eli/2012/act/9/schedule/4/enacted/en/html ; https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-41a/41A-07-02.pdf | 2026-11-27 |
+| Revenue ROS CT1/46G, interest and iXBRL exclusion/other-exception warning | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx ; https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/submitting-financial-statements/who-submit.aspx | 2026-11-27 |
+| Sections 1084/1085: timing language; manuals' euro caps/restrictions and incomplete-return conditions | https://www.irishstatutebook.ie/eli/1997/act/39/section/1084/enacted/en/html ; https://www.irishstatutebook.ie/eli/1997/act/39/section/1085/enacted/en/html ; https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-47/47-06-08.pdf ; https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-47/47-06-04.pdf | 2026-11-27 |
+| Finance (No. 2) Act 2023 section 94: section 111A threshold and 111C screen/exclusions | https://www.irishstatutebook.ie/eli/2023/act/39/section/94/enacted/en/html | 2026-11-27 |
 
-Not yet confirmed: whether the Finance (No. 2) Bill 2026 enacts the 31% CGT rate as in Financial Resolution No. 3 (if it does not, gains on disposals from 7 October 2026 go back to 33%); the other Bill proposals listed under "Deadlines and filing"; the preliminary tax due date for a large company with a period of less than seven months (Revenue's page gives none; see TDM Part 41A-07-02); the current car cost limit for capital allowances (TDM Part 11-00-01 not re-read); the earlier version's R&D condition that the spending must not be deductible abroad (not found in TDM Part 29-02-03 as read on 27 October 2026); the earlier version's point that a 2025 CT1 filed on exactly 23 November 2026 gets the 5% surcharge but the 50% relief restriction (section 1084 was not read in full; TDM Part 47-06-04 gives only "less than two months" and "two months or more").
+Not yet confirmed: all explicitly named specialist and exact-boundary holds above are non-usable tax outcomes. Check this point with one of our partner accountants. This includes future provisional-rate status; no hold is a permission to guess or file.
