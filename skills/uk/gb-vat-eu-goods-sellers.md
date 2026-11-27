@@ -1,12 +1,14 @@
 ---
 name: gb-vat-eu-goods-sellers
 description: "UK VAT workflow for EU sellers not established in the UK who ship goods to customers in Great Britain in 2026. Covers the GBP 135 consignment test, direct sales against qualifying online marketplaces, goods already in UK stock and the deemed zero-rated supply, business customers with a UK VAT number and the reverse charge, registration with no threshold for a non-established seller and the zero-rated exemption, import VAT and its evidence, the 20% standard rate, returns and the 6 year record rule. Northern Ireland, services and excise goods are out of scope."
-version: "2.0"
+version: "2.1"
 type: situation-rules
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+authored_by: Michael Cutajar and the OpenAccountants team
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 domain: vat-gst
 ---
@@ -17,9 +19,9 @@ domain: vat-gst
 
 If your business sells goods from the EU to customers in Great Britain, who accounts for UK VAT depends on where the goods are when sold, who buys them and whether a marketplace handles the sale. The table below helps you identify your route before you set prices, configure checkout or prepare your VAT return. [HMRC direct sales](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk), [HMRC marketplace sales](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces).
 
-For tax year 2026, this skill covers calendar-year sales by EU businesses not established in the UK to customers in England, Scotland and Wales. Northern Ireland, services, excise goods, gifts and special import arrangements need separate guidance. Your dispatch country's export treatment also needs its own assessment. A UK VAT number or warehouse address alone does not establish where your business is based for VAT. [HMRC scope](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk)
+For tax year 2026, this Guide covers calendar-year sales by EU businesses not established in the UK to customers in England, Scotland and Wales. Northern Ireland, services, excise goods, gifts and special import arrangements need separate guidance. Your dispatch country's export treatment also needs its own assessment. A UK VAT number or warehouse address alone does not establish where your business is based for VAT. [HMRC scope](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk)
 
-Sources read again on 14 November 2026. Check again if the rules or your sales arrangements change.
+This is a calendar-year transaction scope, not an income-tax assessment year. Reassess when the rules or fulfilment arrangements change.
 
 ## Ask the client first
 
@@ -28,6 +30,8 @@ Identify the sales you want to assess:
 - Are the goods outside the UK or already in a UK warehouse when sold?
 - Are you selling directly or through a marketplace that accounts for VAT?
 - Is the buyer a consumer or a business supplying a valid UK VAT number, and is delivery to Great Britain?
+
+Keep one flow sheet per channel and stock location: seller identity and establishments; goods ownership at sale/import; dispatch and delivery territory; UK VAT status and customer number; warehouse and parcel records; order/payment/dispatch dates; original invoice, discounts, currency, transport/insurance/taxes; refunds/replacements; channel agreement and tax reports; Incoterms, carrier instructions, declarant, importer and recovery evidence. Mark missing facts unknown.
 
 Different channels and stock locations can produce different answers for the same business. Work through each below; the supporting records you need are explained with the relevant decision.
 - Does the seller have any establishment in the UK (an office, staff, a fixed place of business)? A UK VAT number or warehouse address alone does not establish it.
@@ -41,7 +45,7 @@ Check the delivery address on the order. Northern Ireland follows different rule
 
 2. Decide whether the channel is a qualifying online marketplace
 
-Do not treat a payment processor or a hosted web shop as automatically responsible for VAT. HMRC's marketplace test requires involvement in supply terms, payment authorisation/facilitation and ordering or delivery. Payment processing alone, advertising/listing alone, or simple redirection alone is excluded. Check your marketplace agreement and tax reports: they should show whether the platform takes responsibility for the sale under these rules. [HMRC marketplace definition](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces)
+Do not treat a payment processor or a hosted web shop as automatically responsible for VAT. The platform must allow third-party offers and sale contracts. All three operator conditions must be met: involvement in supply terms, payment authorisation/facilitation and ordering or delivery. Payment processing alone, advertising/listing alone, or simple redirection alone is excluded. Check your marketplace agreement and tax reports: they should show whether the platform takes responsibility for the sale under these rules. [VATA section 95A](https://www.legislation.gov.uk/ukpga/1994/23/section/95A), [HMRC marketplace definition](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces)
 
 3. Locate the goods at sale and choose the route
 
@@ -49,7 +53,7 @@ Use your order and warehouse records to establish where the goods were when sold
 
 The route table is under Boundary and exception table below.
 
-Sources: [direct sales](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk), [marketplace sales](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces).
+Sources: [VATA section 5A](https://www.legislation.gov.uk/ukpga/1994/23/section/5A), [section 7AA](https://www.legislation.gov.uk/ukpga/1994/23/section/7AA), [Schedule 8 Group 21](https://www.legislation.gov.uk/ukpga/1994/23/schedule/8), [direct sales](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk), [marketplace sales](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces).
 
 4. Calculate the consignment threshold correctly
 
@@ -59,9 +63,15 @@ Use the order invoice and parcel records to calculate the value of everything se
 
 5. Establish registration and recovery separately
 
-Do not apply the ordinary domestic £90,000 threshold to a non-established seller's taxable UK supplies. An exemption from registration for a non-established taxable person requires all its taxable supplies to be zero-rated and an application to HMRC; record the decision rather than assuming an exemption. For the direct imported-goods model, HMRC states that sellers do not have to register if they only sell goods outside the UK at the point of sale to UK VAT-registered businesses. Confirm the complete sales population meets that exclusion; domestic UK stock or consumer sales need separate analysis. [HMRC B2B-only exclusion](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk) [HMRC registration rules](https://www.gov.uk/register-for-vat)
+A seller with no UK business or fixed establishment must register when it makes taxable UK business supplies or reasonably expects them in the next 30 days; there is no monetary threshold. The ordinary UK-established £90,000 threshold does not apply. Once liability arises from actual supplies, notify HMRC within 30 days and registration runs from that liability date; for the prospective test, notify by the end of that 30-day period and registration runs from its beginning. [VATA Schedule 1A paragraphs 1, 5 and 6](https://www.legislation.gov.uk/ukpga/1994/23/schedule/1A)
 
-A seller making only deemed zero-rated supplies through a marketplace may register or apply for exemption. The overseas seller remains liable for import VAT/customs when it imports stock; marketplace collection on the eventual retail sale does not settle that import. Before importing, agree who will be the importer with your carrier or customs agent. Check the delivery terms, goods ownership and customs declaration. To recover import VAT, you must meet the normal conditions and hold the appropriate import-VAT evidence; a marketplace statement or carrier payment alone is insufficient. [HMRC marketplace stock rules](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces), [HMRC input-tax and import evidence rules](https://www.gov.uk/guidance/vat-guide-notice-700)
+For direct imported low-value B2B sales meeting section 7AA, the customer is treated as making the taxable supply; if all the seller's UK supplies are reverse charged, the seller is neither entitled nor liable to register on those supplies. Do not extend this to seller-imported consignments above £135: section 7(6) can make the seller's onward supply a UK supply. If the seller only makes qualifying overseas low-value sales through a marketplace, its deemed supply to that marketplace is outside the UK under section 7(5A). Test the whole sales population. [VATA sections 7 and 7AA](https://www.legislation.gov.uk/ukpga/1994/23/section/7), [reverse-charge law](https://www.legislation.gov.uk/ukpga/1994/23/section/7AA), [HMRC NETP rules](https://www.gov.uk/hmrc-internal-manuals/vat-registration-manual/vatreg37200)
+
+Where all taxable supplies are, or would be, zero-rated, exemption requires the seller's request and HMRC's agreement; it is not automatic. Notify a material change in the nature of supplies within 30 days of the change, or, if no particular day can be identified, within 30 days of the quarter end. [Schedule 1A paragraph 13](https://www.legislation.gov.uk/ukpga/1994/23/schedule/1A/paragraph/13)
+
+A seller making only deemed zero-rated supplies through a marketplace may register or apply for exemption. The overseas seller remains liable for import VAT/customs when it imports stock; marketplace collection on the eventual retail sale does not settle that import. Before importing, agree who will be the importer with your carrier or customs agent. Check the delivery terms, goods ownership and customs declaration. To recover import VAT, be registered, have the right to dispose of the goods (usually as owner), use them for deductible business activities and hold official evidence: the C79 for paid import VAT or the postponed import VAT statement for postponed VAT accounting (PVA). Apply normal deduction restrictions; marketplace statements and carrier payments alone do not establish entitlement. [HMRC import evidence, Notice 700 section 19.5.7](https://www.gov.uk/guidance/vat-guide-notice-700), [HMRC PVA conditions](https://www.gov.uk/guidance/check-when-you-can-account-for-import-vat-on-your-vat-return)
+
+PVA is an option for eligible UK VAT-registered importers, not a new tax exemption or automatic full deduction. Include the VAT number on the declaration. A seller without a UK establishment needs a customs representative: instruct them in writing before declaration to select PVA and enter the seller as consignee. Reconcile the monthly statement to import entries. Postal imports above £135 through Royal Mail Group (including Parcelforce when not acting as an express operator) cannot use PVA; its commercial non-postal services can if requested. For special procedures or merchandise in baggage, do not use this ordinary PVA conclusion. Check this point with one of our partner accountants. [HMRC PVA](https://www.gov.uk/guidance/check-when-you-can-account-for-import-vat-on-your-vat-return)
 
 6. Determine the rate, post and reconcile
 
@@ -69,7 +79,7 @@ Classify the product before selecting the rate. The standard rate is 20%, but re
 
 Keep sales where you account for VAT separate from marketplace-accounted sales, deemed supplies, qualifying B2B reverse-charge sales and ordinary imports. This makes the return easier to reconcile. Compare gross orders with tax reports, refunds, fees, payments and stock movements: a platform's net payout is not your taxable sales total.
 
-Assign the correct return period using the applicable tax-point rules. Prepare a return mapping only after the transaction classification is complete; use the UK VAT-return Skill and current return instructions for actual boxes and deadlines. Retain the decision, source version and evidence beside the transaction. For direct overseas sales, HMRC requires full VAT records for six years. [HMRC tax points and accounting](https://www.gov.uk/guidance/vat-guide-notice-700), [direct-sale record retention](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk)
+Assign the correct return period using the applicable tax-point rules. Prepare a return mapping only after the transaction classification is complete; use the UK VAT-return Guide and current return instructions for actual boxes and deadlines. Retain the decision, source version and evidence beside the transaction. For direct overseas sales, HMRC requires full VAT records for six years. [HMRC tax points and accounting](https://www.gov.uk/guidance/vat-guide-notice-700), [direct-sale record retention](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk)
 
 
 ### Rates, bands and thresholds
@@ -77,9 +87,9 @@ Assign the correct return period using the applicable tax-point rules. Prepare a
 | Figure | Applicability | Official source |
 |---|---|---|
 | £135 | Consignment intrinsic-value limit (inclusive) for the low-value goods rules; applies to the total consignment, not each item | https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk |
-| Must register regardless of taxable turnover | A business based outside the UK that supplies goods or services to the UK; the £90,000 threshold is for UK-established businesses only | https://www.gov.uk/register-for-vat |
-| £90,000 | Ordinary domestic registration threshold, not a relief for a non-established seller | same |
-| Exemption from registration | A non-established taxable person may ask HMRC for it only if all its taxable supplies are zero-rated | same |
+| No NETP monetary threshold | Taxable UK business supplies made or expected in the next 30 days; assess reverse-charge/outside-UK routes and HMRC-agreed zero-rated exemption first | https://www.legislation.gov.uk/ukpga/1994/23/schedule/1A |
+| £90,000 | Ordinary domestic registration threshold, not a relief for a non-established seller | https://www.gov.uk/register-for-vat |
+| Exemption from registration | A non-established taxable person may ask HMRC for it only if all its taxable supplies are zero-rated | https://www.legislation.gov.uk/ukpga/1994/23/schedule/1A/paragraph/13 |
 | 20% | Standard VAT rate; first classify the product | https://www.gov.uk/vat-rates |
 | 5% | Reduced rate for some goods and services; check the product guidance before using it | same |
 | 6 years | Full VAT records (including VAT invoices) kept from the date any goods are sold, direct overseas sales | https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk |
@@ -93,13 +103,13 @@ Which route the facts point to (step 3).
 |---|---|
 | Goods outside the UK; direct consumer sale; consignment intrinsic value no more than £135 | Seller accounts for supply VAT at sale and must address UK VAT registration. |
 | Same goods/value, but sold through a qualifying marketplace to a consumer | Marketplace accounts for the VAT under the overseas-goods rules. Obtain its tax evidence. |
-| Goods outside the UK; qualifying low-value sale to a customer that supplies its UK VAT number | Check the number and the B2B conditions; the Great Britain customer accounts under the reverse charge. |
+| Goods outside the UK; qualifying low-value sale to a UK VAT-registered business, direct or via marketplace | Verify the UK number; the Great Britain customer accounts under section 7AA reverse charge. An EU VAT number alone does not qualify. |
 | Goods outside the UK; consignment exceeds £135 | Ordinary import VAT/customs route. Establish the importer and onward supply treatment before assigning liability or recovery. |
 | Goods already in Great Britain; overseas seller sells directly | Seller registration and domestic supply VAT apply regardless of consignment value, subject to the separately assessed zero-rated-registration exemption. |
 | Goods already in Great Britain; qualifying marketplace consumer sale by a seller not established in the UK | Marketplace accounts for the customer sale; the seller makes a deemed zero-rated supply to it. Import obligations remain a separate question. |
-| Goods already in Great Britain; marketplace customer supplies its UK VAT number | Seller accounts for the sale and must address registration. Do not apply the imported-low-value B2B reverse charge to UK stock. |
+| Goods already in Great Britain; UK VAT-registered marketplace customer | Seller accounts only where the customer gives the marketplace its UK VAT number and the marketplace gives the seller that number and supply details within 7 days beginning with the tax-point day (or longer if HMRC allows). Otherwise the deemed marketplace route applies. Do not apply imported-low-value reverse charge to UK stock. |
 
-Sources: [direct sales](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk), [marketplace sales](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces).
+Sources: [VATA section 5A](https://www.legislation.gov.uk/ukpga/1994/23/section/5A), [section 7AA](https://www.legislation.gov.uk/ukpga/1994/23/section/7AA), [Schedule 8 Group 21](https://www.legislation.gov.uk/ukpga/1994/23/schedule/8), [direct sales](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk), [marketplace sales](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces).
 
 ## Worked cases
 
@@ -147,11 +157,11 @@ expected:
   single_item_headroom: 65.00
 ```
 
-A positive excess means the ordinary import route; a positive headroom means the low-value route is open.
+A positive excess means the ordinary import route. Zero or positive headroom satisfies the value boundary only; all other eligibility conditions still apply. Do not split one order artificially to avoid the limit.
 
 ### Similar customer, different stock location
 
-A UK VAT-registered customer supplies a valid UK VAT number. If its qualifying low-value parcel is outside the UK at sale, test the imported-goods B2B reverse charge. If the same seller's goods are already in Great Britain and the sale is through a marketplace, the seller accounts for UK VAT instead. Preserve stock-location evidence: the two outcomes cannot be selected by looking only at the customer. [HMRC direct B2B rules](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk), [UK-stock marketplace B2B rules](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces)
+A UK VAT-registered customer supplies a valid UK VAT number. If its qualifying low-value parcel is outside the UK at sale, test the imported-goods B2B reverse charge. If the same seller's goods are already in Great Britain and the sale is through a marketplace, the seller accounts for UK VAT instead only when the marketplace passes the UK number and supply details to it within the statutory seven-day period (or permitted extension). Without that, the marketplace deemed-supply route applies. Preserve stock-location evidence: the two outcomes cannot be selected by looking only at the customer. [HMRC direct B2B rules](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk), [UK-stock marketplace B2B rules](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces)
 
 ### Payment processor only
 
@@ -163,18 +173,18 @@ The original supplier charged UK VAT and subsequently refunds it when the goods 
 
 ## When to refuse or refer
 
-If any of the points below is unresolved, have a VAT adviser confirm the treatment before filing or changing your checkout:
+Do not use an unresolved outcome below to file or configure checkout. Check this point with one of our partner accountants.
 
 - Your business's UK establishment status, the marketplace's role, the importer, the consignment value or the product's VAT rate is unclear. These facts determine liability, registration and recovery.
 - You have Northern Ireland movements, excise goods, mixed or bundled supplies, special customs procedures, gifts or earlier returns to correct.
 - You intend to rely on a registration exclusion but cannot show that all relevant sales qualify.
 
-Keep the conclusion with the records supporting it. Where the sale crosses two tax systems, confirm both the UK treatment and the dispatch country's export treatment.
+Record the VAT-accountable party, registration decision, product rate, import/recovery evidence, ledger/return route, missing documents and responsible reviewer on the flow sheet. Keep the conclusion with the records supporting it. Where the sale crosses two tax systems, confirm both the UK treatment and the dispatch country's export treatment.
 
 ## Filing and payment
 
-- **Register** through HMRC's online service as soon as a route above makes the seller liable; a non-established seller has no registration threshold. [HMRC registration](https://www.gov.uk/register-for-vat)
-- **Returns** follow the ordinary UK rules: use the uk-vat-return skill for the boxes and the return instructions. The online return and payment are usually due one calendar month and 7 days after the end of the period. [VAT Return deadlines](https://www.gov.uk/vat-returns/deadlines)
+- **Register** under the liability dates and notification periods in step 5; a non-established seller has no monetary threshold. [HMRC registration](https://www.gov.uk/register-for-vat)
+- **Returns** follow the ordinary UK rules: use the uk-vat-return Guide for the boxes and the return instructions. The online return and payment are usually due one calendar month and 7 days after the end of the period. [VAT Return deadlines](https://www.gov.uk/vat-returns/deadlines)
 - **Records:** keep full VAT records, including VAT invoices, for 6 years from the date any goods are sold.
 
 ## Completion checklist
@@ -192,12 +202,15 @@ Keep the conclusion with the records supporting it. Where the sale crosses two t
 
 | Source | What was read | URL | Read on |
 | --- | --- | --- | --- |
-| HMRC, VAT and overseas goods sold directly to customers in the UK | Read for the £135 consignment test, valuation, the B2B reverse charge, the B2B-only registration exclusion and the 6 year record rule | https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk | 2026-11-14 |
-| HMRC, VAT and overseas goods sold using online marketplaces | Read for the marketplace definition and exclusions, deemed zero-rated supplies and UK stock | https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces | 2026-11-14 |
-| HMRC, VAT and overseas goods sent to the UK and returned | Read for adjusting the return for refunded VAT and replacements | https://www.gov.uk/guidance/vat-and-overseas-goods-sent-to-the-uk-and-returned-to-the-seller | 2026-11-14 |
-| GOV.UK, Register for VAT | Read for registration regardless of turnover for businesses based outside the UK, the £90,000 threshold and the zero-rated exemption | https://www.gov.uk/register-for-vat | 2026-11-14 |
-| GOV.UK, VAT rates | Read for the 20% standard rate and the 5% reduced rate | https://www.gov.uk/vat-rates | 2026-11-14 |
-| HMRC, VAT Notice 700 the VAT guide | Read for consideration and value of supply, tax points and input tax evidence | https://www.gov.uk/guidance/vat-guide-notice-700 | 2026-11-14 |
-| GOV.UK, VAT Return deadlines | Read for one calendar month and 7 days | https://www.gov.uk/vat-returns/deadlines | 2026-11-14 |
+| HMRC, VAT and overseas goods sold directly to customers in the UK | Read for the £135 consignment test, valuation, the B2B reverse charge and the 6 year record rule; registration exclusion qualified by the legislation below | https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk | 2026-11-27 |
+| HMRC, VAT and overseas goods sold using online marketplaces | Read for the marketplace definition and exclusions, deemed zero-rated supplies and UK stock | https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces | 2026-11-27 |
+| HMRC, VAT and overseas goods sent to the UK and returned | Read for adjusting the return for refunded VAT and replacements | https://www.gov.uk/guidance/vat-and-overseas-goods-sent-to-the-uk-and-returned-to-the-seller | 2026-11-27 |
+| GOV.UK, Register for VAT | Read for registration regardless of turnover for businesses based outside the UK, the £90,000 threshold and the zero-rated exemption | https://www.gov.uk/register-for-vat | 2026-11-27 |
+| GOV.UK, VAT rates | Read for the 20% standard rate and the 5% reduced rate | https://www.gov.uk/vat-rates | 2026-11-27 |
+| HMRC, VAT Notice 700 the VAT guide | Read for consideration and value of supply, tax points and input tax evidence | https://www.gov.uk/guidance/vat-guide-notice-700 | 2026-11-27 |
+| GOV.UK, VAT Return deadlines | Read for one calendar month and 7 days | https://www.gov.uk/vat-returns/deadlines | 2026-11-27 |
 
-Not yet confirmed: none for the figures above. The dispatch country's export treatment is outside this skill and is not checked here.
+| VATA 1994 sections 5A, 7, 7AA and 95A; Schedule 1A; Schedule 8 Group 21 | Operative marketplace, imported consignment, registration and zero-rating conditions | https://www.legislation.gov.uk/ukpga/1994/23 | 2026-11-27 |
+| HMRC, postponed import VAT accounting | VAT registration, right to dispose, declaration and representative instructions, official statements and postal exclusion | https://www.gov.uk/guidance/check-when-you-can-account-for-import-vat-on-your-vat-return | 2026-11-27 |
+
+Not yet confirmed: product classification, special arrangements and unresolved case facts remain non-usable until the specific referrals above are resolved. The dispatch country's export treatment is outside this Guide and is not checked here.
