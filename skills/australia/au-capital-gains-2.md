@@ -71,7 +71,7 @@ Partnership/passively held assets have separate s 152-10 pathways; shares/trust 
 
 Illustrations in AUD for ordinary resident individuals, disposal contracts in June 2026, acquisitions in June 2023, no other adjustments, concessions or residency changes.
 
-**A — losses before discount.** Proceeds 100,000; acquisition cost 60,000; eligible incidental costs 2,000; current-year capital losses 8,000; available earlier net losses 10,000. Gain = 38,000; after losses = 20,000; 50% discount leaves 10,000 assessable net capital gain. [Sections 104-10, 110-25, 115-100](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html); [pre-2027 s 102-5](https://www.legislation.gov.au/C2004A05138/2026-06-27/2026-06-27/text/original/pdf/3).
+**A: losses before discount.** Proceeds 100,000; acquisition cost 60,000; eligible incidental costs 2,000; current-year capital losses 8,000; available earlier net losses 10,000. Gain = 38,000; after losses = 20,000; 50% discount leaves 10,000 assessable net capital gain. [Sections 104-10, 110-25, 115-100](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html); [pre-2027 s 102-5](https://www.legislation.gov.au/C2004A05138/2026-06-27/2026-06-27/text/original/pdf/3).
 
 ```oa-check
 name: A - June 2026 losses before discount
@@ -91,7 +91,7 @@ expected:
   net_capital_gain: 10000
 ```
 
-**B — reduced cost base.** Proceeds 45,000; acquisition cost 50,000; eligible incidental costs 2,000; otherwise eligible non-deductible ownership costs 3,000. Ordinary cost base = 55,000, reduced cost base = 52,000, capital loss = 7,000. Ownership costs cannot inflate the capital loss to 10,000. No balancing adjustment, deduction entitlement, recoupment or GST credit affects these stipulated amounts. [Sections 104-10(4), 110-25, 110-55](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html).
+**B: reduced cost base.** Proceeds 45,000; acquisition cost 50,000; eligible incidental costs 2,000; otherwise eligible non-deductible ownership costs 3,000. Ordinary cost base = 55,000, reduced cost base = 52,000, capital loss = 7,000. Ownership costs cannot inflate the capital loss to 10,000. No balancing adjustment, deduction entitlement, recoupment or GST credit affects these stipulated amounts. [Sections 104-10(4), 110-25, 110-55](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html).
 
 ```oa-check
 name: B - June 2026 reduced cost base
@@ -122,11 +122,11 @@ Retain a separate eligibility record for each concession, event dates, proceeds,
 
 | Official source | Passages read | Date read |
 |---|---|---|
-| [ITAA 1997, Volume 3, October 2026](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html) | ss 102-10/15, 104-10, 108-10/17/30 and Subdiv 108-D; ss 110-25–110-55; cited Division 114–116 passages; ss 118-20 and 118-110–118-190. Only cited passages and dependencies, not the entire volume. | 27 November 2026 |
-| [ITAA 1997, June 2026, Volume 3](https://www.legislation.gov.au/C2004A05138/2026-06-27/2026-06-27/text/original/pdf/3) | s 102-5 method before the amendments' later application; pp 141–143. | 27 November 2026 |
-| [ITAA 1997, Volume 4](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_4/document_4.html) | Division 152 overview; ss 152-10, 152-15/20, 152-35–152-45. The pre-2027 application limit below controls. | 27 November 2026 |
-| [ITAA 1997, Volume 7](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html) | ss 328-110/115 business and aggregated-turnover tests used by s 152-10. | 27 November 2026 |
-| [Treasury Laws Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00049/asmade/2026-06-26/text/1/epub/OEBPS/document_1/document_1.html) | Commencement; Schedule 1 existing-holding transitions and item 82 application. Commencement does not override later assessment application. | 27 November 2026 |
-| [ATO discount](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cgt-discount), [indexation](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/indexing-the-cost-base), [capital/revenue property classification](https://www.ato.gov.au/businesses-and-organisations/assets-and-property/property/tax-consequences-on-sales-of-property) | Relevant substantive indexed official articles read after direct ATO access returned 403; law controls where wording differs. | 27 November 2026 |
+| [ITAA 1997, Volume 3, October 2026](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html) | ss 102-10/15, 104-10, 108-10/17/30 and Subdiv 108-D; ss 110-25–110-55; cited Division 114–116 passages; ss 118-20 and 118-110–118-190. Only cited passages and dependencies, not the entire volume. | 2026-11-27 |
+| [ITAA 1997, June 2026, Volume 3](https://www.legislation.gov.au/C2004A05138/2026-06-27/2026-06-27/text/original/pdf/3) | s 102-5 method before the amendments' later application; pp 141–143. | 2026-11-27 |
+| [ITAA 1997, Volume 4](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_4/document_4.html) | Division 152 overview; ss 152-10, 152-15/20, 152-35–152-45. The pre-2027 application limit below controls. | 2026-11-27 |
+| [ITAA 1997, Volume 7](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html) | ss 328-110/115 business and aggregated-turnover tests used by s 152-10. | 2026-11-27 |
+| [Treasury Laws Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00049/asmade/2026-06-26/text/1/epub/OEBPS/document_1/document_1.html) | Commencement; Schedule 1 existing-holding transitions and item 82 application. Commencement does not override later assessment application. | 2026-11-27 |
+| [ATO discount](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cgt-discount), [indexation](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/indexing-the-cost-base), [capital/revenue property classification](https://www.ato.gov.au/businesses-and-organisations/assets-and-property/property/tax-consequences-on-sales-of-property) | Relevant substantive indexed official articles read after direct ATO access returned 403; law controls where wording differs. | 2026-11-27 |
 
 Not yet confirmed: no usable outcome for the expressly held trust gross-up/credit, unresolved historical cost-base adjustment or event/residency/later-period cases. Check this point with one of our partner accountants.
