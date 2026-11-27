@@ -772,6 +772,13 @@ All figures below are original hypothetical inputs, not official amounts. Swedis
 
 The historical electric/hybrid-car benefit and F-skatt/direct-tax topics do not establish income-tax amounts here. The ordinary VAT car rules above still apply to an electric passenger car. Property transition, group and margin outcomes remain the precise R-SE holds above. Intrastat is a separate statistical filing: the original table labelled2025 used dispatchesSEK4,500,000/arrivalsSEK9,000,000 and a10th deadline; none is a usable2026 threshold/deadline here. Check this point with one of our partner accountants. EU hotel, US SaaS, construction, car hire, representation, EU goods, Norway, credits, property rent, ROT/RUT, agriculture, electric cars, groups, margin schemes, imports and OSS all retain the destinations stated above.
 
+
+Original edge caseEC5 is distinct from test8: dinner SEK3,000 plus stated VAT750, gross3,750; attendee count was not supplied. Retain all three inputs. The blanket VAT block is withdrawn, but that inconsistent dinner rate and the missing persons/split make a filing deduction non-usable: Check this point with one of our partner accountants.
+
+Original edge caseEC13: an electric passenger car on hire with50% hire-VAT recovery does not thereby have only50% recovery on every running cost. Qualifying business running/charging costs follow ML13kap.23 § above. The employee-home charging-station installation and income-tax benefit outcome are non-usable here: Check this point with one of our partner accountants.
+
+Original edge caseEC18 retains the foreign-EU-seller/EUR10,000 input. The threshold is combined qualifying cross-border TBE and distance-goods sales in the current and preceding calendar year, for a seller established only in one Member State with goods dispatched from that state. From the whole threshold-crossing supply, destination taxation applies; eligible taxable distance goods to Swedish consumers may be reported through UnionOSS in the identification state or through Swedish registration. A genuine Swedish business acquisition is tested separately under the acquisition rules, rather than treated as a consumer sale. The threshold is not per destination country (VAT Directive59c/369a–b).
+
 ## Sources
 
 Read27 November2026 for the operative passages used here; future-effective text is kept separate from2026 rules. Skatteverket guidance is administrative practice; the Acts control. Hypothetical case values are inputs/computed results, not authority figures.
@@ -804,5 +811,7 @@ Read27 November2026 for the operative passages used here; future-effective text 
 | Skatteverket, Ränta på skattekontot; read in part for the base/cost/income rates and applicable dates | https://www.skatteverket.se/privat/skatter/skattekontobetalaochfatillbaka/rantapaskattekontot.4.18e1b10334ebe8bc80002582.html | 2026-11-27 |
 
 | Skatteverket, import; read in part for taxing authority, private-use exception, customs period and import base/boxes | https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/inkopfranlanderutanforeu/kopavarorfranlanderutanforeuimport.4.361dc8c15312eff6fd37208.html | 2026-11-27 |
+
+| EU VAT Directive59c/369a–b; exact operative passages reused from completed eu-oss-digital proof after checking same2026 conditions, read in part for the original inbound distance-sales case | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 | 2026-11-27 |
 
 Not yet confirmed: only the specific non-usable outcomes listed under Refusals and boundaries, supplier questions and the preserved historical tests. No unconfirmed outcome is available for filing or computation; each has the partner-accountant referral.
