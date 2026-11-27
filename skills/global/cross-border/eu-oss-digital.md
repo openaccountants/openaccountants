@@ -3,17 +3,17 @@ name: eu-oss-digital
 description: Use this skill whenever a business sells digital services (electronically supplied services) B2C to consumers in other EU member states and needs to determine the correct VAT treatment. Trigger on phrases like "OSS", "One-Stop-Shop", "MOSS", "Mini One-Stop-Shop", "digital services VAT", "electronically supplied services", "B2C cross-border EU", "EU VAT on digital", "EUR 10,000 threshold", "destination country VAT rate", "non-Union OSS", or any request involving the VAT treatment of digital services sold to EU consumers. This skill contains the complete OSS rules, the EUR 10,000 threshold, destination VAT rate table, filing requirements, consumer location evidence rules, and the Union vs non-Union OSS distinction. ALWAYS read this skill before advising on any B2C digital services VAT question.
 jurisdiction: GLOBAL
 tax_year: 2026
-last_updated: 2026-11-14
-source_checked: 2026-11-14
+last_updated: 2026-11-27
+source_checked: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 category: cross-border
 type: situation-rules
-version: 1.1
+version: 1.2
 ---
 
-# EU OSS Digital v1.1
+# EU OSS Digital v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -52,8 +52,6 @@ Sources: [Directive Articles 44-45, 54, 58-59c, 284 and OSS provisions](https://
 
 ### ESS -- YES (qualifies) [T1]
 
-**ESS -- YES (qualifies) [T1]**
-
 | Category | Examples |
 | --- | --- |
 | Software and apps | Downloads of software, apps, games, updates, add-ons, SaaS |
@@ -65,8 +63,6 @@ Sources: [Directive Articles 44-45, 54, 58-59c, 284 and OSS provisions](https://
 | Online gaming | MMO subscriptions, in-game purchases and automated online gambling; ESS classification does not settle any gambling exemption or rate |
 
 ### ESS -- NO (does NOT qualify) [T1]
-
-**ESS -- NO (does NOT qualify) [T1]**
 
 | Category | Why Not ESS |
 | --- | --- |
@@ -102,7 +98,7 @@ Since 2025, an eligible EU-established small enterprise can use the separate cro
 | Feature | Union OSS | Non-Union OSS | Official source |
 |---|---|---|---|
 | Seller and services | Seller with EU business/fixed establishment; services to non-taxable customers taxable in a member state where the seller has neither. Goods have additional eligible routes under Article 369b, including a non-EU goods seller | Seller with neither EU business nor fixed establishment; all eligible B2C services taxable in the EU, not ESS alone. An EU VAT registration without an establishment does not itself disqualify it | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 (Articles 358a-359, 369a-369b); https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/register-oss_en |
-| Member State of Identification (MSI) | Business-establishment state; if business outside EU, a qualifying EU fixed-establishment state. Multiple EU fixed establishments need the Article 369a selection conditions | Any chosen EU member state; identification is for this special scheme, not general-purpose domestic registration | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 (Articles 358a, 362, 369a, 369d); https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/register-oss_en |
+| Member State of Identification (MSI) | Business-establishment state; if business outside EU, a qualifying EU fixed-establishment state. With multiple EU fixed establishments, choose 1: Article 369a binds that choice for the calendar year concerned and the 2 following calendar years; review an actual establishment change under the registration rules | Any chosen EU member state; identification is for this special scheme, not general-purpose domestic registration | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 (Articles 358a, 362, 369a, 369d); https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/register-oss_en |
 | Covered supplies | All supplies covered by the selected scheme; no selective taxable destination countries. Services taxable in a state where seller is established stay on the relevant domestic return | All services covered by this scheme supplied within the EU; choose no selective taxable countries | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 (Articles 359, 369b); https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en |
 | Filing and payment | Quarterly electronic return to MSI, single payment referencing the return | Quarterly electronic return to chosen MSI, single payment referencing return | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 (Articles 364, 367, 369f, 369i) |
 | Due date | End of month following the quarter for return and payment | Same quarterly rule | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 (Articles 364, 367, 369f, 369i) |
@@ -115,7 +111,7 @@ Non-EU sellers (including the original US, UK, Australian and Indian examples) w
 
 ### Step 4: Destination rates [T1]
 
-The following is the official EU standard-rate reference for all 27 member states read on 14 November 2026. It is not a complete digital-product classification table. Use the specific destination and regional rate for the actual service: software, automated SaaS, streaming and cloud ordinarily fall within the standard category, but do not infer every digital service is taxable at this rate. The old blank reduced-rate cells did not establish that no reduction exists.
+The following is the official EU standard-rate reference for all 27 member states read on 27 November 2026. It is not a complete digital-product classification table. Use the specific destination and regional rate for the actual service: software, automated SaaS, streaming and cloud ordinarily fall within the standard category, but do not infer every digital service is taxable at this rate.
 
 | Country | Code | Standard rate | Scope and qualification | Official source |
 |---|---|---|---|---|
@@ -126,8 +122,8 @@ The following is the official EU standard-rate reference for all 27 member state
 | Cyprus | CY | 19% | Product-specific reduced/exempt treatment not exhaustively researched; use the national overlay | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
 | Czech Republic | CZ | 21% | Product-specific reduced/exempt treatment not exhaustively researched; use the national overlay | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
 | Denmark | DK | 25% | Product-specific reduced/exempt treatment not exhaustively researched; use the national overlay | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
-| Estonia | EE | 24% | 24% from 1 July 2025; previously 22%; https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
-| Finland | FI | 25.5% | 25.5% from 1 September 2024, formerly 24%; https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/rates-of-vat/ | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
+| Estonia | EE | 24% | Product classification and any exemption must be established before using the standard rate | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
+| Finland | FI | 25.5% | Product classification and any exemption must be established before using the standard rate | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
 | France | FR | 20% | See qualified publication row below; standard rate is not the publication rate | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
 | Germany | DE | 19% | See qualified publication row below; standard rate is not the publication rate | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
 | Greece | GR | 24% | Product-specific reduced/exempt treatment not exhaustively researched; use the national overlay | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
@@ -137,7 +133,7 @@ The following is the official EU standard-rate reference for all 27 member state
 | Latvia | LV | 21% | Product-specific reduced/exempt treatment not exhaustively researched; use the national overlay | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
 | Lithuania | LT | 21% | Product-specific reduced/exempt treatment not exhaustively researched; use the national overlay | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
 | Luxembourg | LU | 17% | See qualified publication row below; standard rate is not the publication rate; lowest listed standard rate | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
-| Malta | MT | 18% | Product-specific reduced/exempt treatment not exhaustively researched; use the national overlay; old claim that 18% is the lowest general ESS standard rate is wrong (Luxembourg 17%) | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
+| Malta | MT | 18% | Product-specific reduced/exempt treatment not exhaustively researched; use the national overlay | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
 | Netherlands | NL | 21% | Product-specific reduced/exempt treatment not exhaustively researched; use the national overlay | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
 | Poland | PL | 23% | Product-specific reduced/exempt treatment not exhaustively researched; use the national overlay | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
 | Portugal | PT | 23% | See qualified publication row below; standard rate is not the publication rate | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
@@ -147,21 +143,21 @@ The following is the official EU standard-rate reference for all 27 member state
 | Spain | ES | 21% | See qualified publication row below; standard rate is not the publication rate | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
 | Sweden | SE | 25% | See qualified publication row below; standard rate is not the publication rate | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
 
-The listed standard rates range from 17% in Luxembourg to 27% in Hungary (comparison derived from the official table). The old Malta “lowest” statement is corrected. Regional rates and product-specific relief need the national overlay; this standard table excludes special territories.
+The listed standard rates range from 17% in Luxembourg to 27% in Hungary (comparison derived from the official table). Regional rates and product-specific relief need the national overlay; this standard table excludes special territories.
 
 | Publication destination | Qualified rate and conditions | Official legal/authority source |
 |---|---|---|
-| France | Metropolitan qualifying electronic book 5.5%, subject to fiscal book definition; qualifying digital press 2.1%, not the old 5.5% press rate. Press must have the required direct link with current news; pornographic or violence-inciting publications are excluded from that rate. Book/press classification and regional treatment differ | https://bofip.impots.gouv.fr/bofip/1437-PGP.html/identifiant=BOI-TVA-LIQ-30-10-40-20260729 ; https://entreprendre.service-public.gouv.fr/vosdroits/F37781 |
+| France | Metropolitan qualifying electronic book 5.5%, subject to fiscal book definition; qualifying digital press 2.1%, not the old 5.5% press rate. CGI 298 septies requires a digitised version of a qualifying publication or a legally recognised online press service; a news link alone is insufficient. The summary also excludes pornographic or violence-inciting publications; actual press eligibility must be established before applying that rate. Book/press classification and regional treatment differ | https://bofip.impots.gouv.fr/bofip/1437-PGP.html/identifiant=BOI-TVA-LIQ-30-10-40-20260729 ; https://entreprendre.service-public.gouv.fr/vosdroits/F37781 ; https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006179663/2026-04-28/ |
 | Germany | 7% (in words on the page) for qualifying electronic publications under UStG12(2)(14); printed-product comparability/statutory category, youth-protection restrictions and exclusions for predominantly advertising, video or audible music apply; not every digital download | https://www.gesetze-im-internet.de/ustg_1980/__12.html |
-| Ireland | 0% (in words on the page) qualifying e-books/audiobooks from 1 January 2024 and e-newspapers from 1 January 2023; qualifying e-periodicals use second reduced 9%. Predominantly advertising, video or audible music excluded; newspaper/book definitions matter | https://www.revenue.ie/en/vat/vat-on-services/electronic-services/electronic-publications/index.aspx ; https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-vat-rates.aspx |
+| Ireland | 0% (in words on the page) qualifying e-books/audiobooks from 1 January 2024 and e-newspapers from 1 January 2023; qualifying e-periodicals use second reduced 9%. Predominantly advertising, video or audible music excluded; newspaper/book definitions matter; see Revenue electronic-publication manual for the exclusions | https://www.revenue.ie/en/vat/vat-on-services/electronic-services/electronic-publications/index.aspx ; https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-vat-rates.aspx ; https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part03-taxable-transactions-goods-ica-services/Services/electronic-publications.pdf |
 | Italy | 4% qualifying digital editorial products (numeral on page). ISBN/ISSN is necessary but insufficient: product must have the distinctive characteristics of a book or other listed editorial product. DPR 633/1972, Table A, Part II, item 18 excludes pornographic newspapers/periodicals and catalogues other than book-information catalogues; circular 20/E of 2016, pp. 40-41 supplies the digital conditions | https://www.finanze.gov.it/export/sites/finanze/.galleries/Documenti/Varie/circolare-20E-del-18-maggio-2016.pdf  ; https://def.giustiziatributaria.gov.it/DocTribFrontend/executePrintArticolo.do?codiceOrdinamento=0010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000&id=%7B435D34E0-465D-4918-8ED2-52E6C45D6226%7D&idAttoNormativo=%7B75A4827C-3766-4ECC-9C45-00C8D6CDC552%7D |
-| Luxembourg | 3% (in words on the page) under Articles 39-40 and Annex B, item 5 for qualifying electronic publications; excludes predominantly advertising, video/music and listed prohibited/pornographic publications | https://pfi.public.lu/dam-assets/pdf/legislation/tva/loi/loi-tva-2026-01-01.pdf |
+| Luxembourg | 3% (in words on the page) under Articles 39-40 and Annex B, item 5 for qualifying electronic publications; excludes predominantly advertising, video/music and predominantly pornographic publications | https://pfi.public.lu/dam-assets/pdf/legislation/tva/loi/loi-tva-2026-01-01.pdf |
 | Portugal | Mainland 6% under CIVA 18(1)(a), Lista I, item 2.1, qualifying electronic books and listed periodicals; exclude predominantly video/music, obscene/pornographic and other listed exclusions; autonomous regions need separate rates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx ; https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/c-iva-listas.aspx |
 | Romania | 11% for qualifying physical/electronic books, newspapers and magazines under amended Article 291(2)(g), excluding predominantly video, music or advertising | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf |
 | Spain | 4% under Article 91.Dos.1.2 for qualifying electronic books/newspapers/magazines; exclude wholly/mainly advertising and wholly/predominantly video/audible music. The statutory advertising test and bundled ancillary-item conditions must be checked | https://boe.es/buscar/act.php?id=BOE-A-1992-28740&p=20261007&tn=1 |
 | Sweden | 6% for qualifying comparable electronic books/publications; predominantly advertising does not qualify. Product must be comparable to the listed printed publications; classification before rate | https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatserochundantagfranmoms.4.58d555751259e4d66168000409.html |
 
-These are the explicit publication categories in the old skill, with their conditions restored and press corrected. They are not an exhaustive reduced-rate list for every destination. Do not interpret the other standard-rate rows as a denial of publication relief.
+These publication rows require the stated national qualification. They are not an exhaustive reduced-rate list for every destination. Do not interpret the other standard-rate rows as a denial of publication relief.
 
 ### Step 5: Determine the consumer's location [T2]
 
@@ -201,23 +197,23 @@ The dates are calendar applications of the end-of-following-month rule, not a na
 6. Corrections for current OSS periods go in a subsequent return's correction section, by consumption state, original period and VAT adjustment, within 3 years of the original due date (in words on the page). Earlier MOSS periods through Q2 of 2021 have the old amendment procedure. After the 3-year OSS window use the consumption state's direct assessment/amendment rules; cessation/exclusion/final-return corrections also have the direct-state rules in Regulation 61a. A negative balance for one consumption state cannot offset another state's VAT.
 7. Reconcile the return and payment, track any destination refunds separately, retain records and respond electronically to audit requests. Interest/penalties are assessed under consumption state law and paid there; this skill does not invent a common EU penalty scale.
 
-**Nil returns and exclusion:** missing 3 returns alone is not the complete legal test. Regulation 58b includes reminders for 3 immediately preceding return periods and failure to submit each within 10 days of its reminder. Persistent nonpayment has its own reminder/full-payment conditions and less-than-EUR 100 remaining-per-period exception; failure to provide records after request and subsequent reminder is another ground. Persistent noncompliance exclusion generally bars all special schemes for 2 years after the exclusion return period (in words on the page), subject to the intermediary-related exception for IOSS. Do not infer a safe harbour from these examples; review the actual notice and grounds. Direct destination obligations continue after exclusion.
+**Nil returns and exclusion:** missing 3 returns alone is not the complete legal test. Regulation 58b includes reminders for 3 immediately preceding return periods and failure to submit each within 10 days of its reminder. Persistent nonpayment requires reminders for the 3 immediately preceding periods and failure to pay the full VAT for each within 10 days of its reminder, except where less than EUR 100 remains unpaid for each period. The records ground requires failure to make records electronically available after a request and 1 month after a subsequent MSI reminder. Persistent noncompliance exclusion generally bars all special schemes for 2 years after the exclusion return period (in words on the page), subject to the intermediary-related exception for IOSS. Do not infer a safe harbour from these examples; review the actual notice and grounds. Direct destination obligations continue after exclusion.
 
 Sources: [Commission return/payment guidance](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/declare-and-pay-oss_en); [registration](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/register-oss_en); [Directive 364-369k](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Regulation 57d,58-63c](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
 
 ### Step 7: Non-Union MSI choice [T1]
 
-The original candidate examples Ireland, Netherlands, Luxembourg and Estonia remain possible MSI choices under the any-member-state non-Union rule. They are not an official ranking or an exemption. The destination rate governs eligible taxable services, so choosing Luxembourg does not substitute its 17% standard rate for another state's rate. Choose the actual administrative portal/contact relationship and obtain valid special-scheme registration. The old descriptions “helpful,” “efficient,” “simple” and tech/e-Residency claims are retained under Not yet confirmed, not treated as tax law or evidence of portal quality. [Directive 358a](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Commission registration](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/register-oss_en).
+Ireland, Netherlands, Luxembourg and Estonia are possible non-Union MSI choices under the any-member-state non-Union rule. They are not an official ranking or an exemption. The destination rate governs eligible taxable services, so choosing Luxembourg does not substitute its 17% standard rate for another state's rate. Choose the actual administrative portal/contact relationship and obtain valid special-scheme registration. No official popularity or portal-quality ranking is asserted. [Directive 358a](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Commission registration](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/register-oss_en).
 
 ## Boundary and exception table
 
 ### EC1: Mixed digital content and physical goods [T2]
 
-For the original e-book plus printed-workbook bundle, determine from the whole transaction whether there are independent supplies, principal/ancillary elements, or objectively inseparable elements forming a single economic supply. Do not split artificially or decide only from separate prices. A genuinely ancillary digital item can follow the printed goods' treatment; the relevant distance-sale goods route may itself use Union OSS. Independent supplies need separate treatment. A digital service predominating in a single supply needs its own classification. Refer unresolved facts. [Official C41/04 judgment, paragraphs 17-30](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A62004CJ0041).
+The original e-book plus printed-workbook package needs a contract-specific single/multiple-supply assessment. Its composite classification, principal/ancillary outcome, goods/ESS route and rate are not established by this Guide. Do not file or invoice from the former generic bundle conclusion. Check this point with one of our partner accountants.
 
 ### EC2: Live-streamed course and recording [T2]
 
-The original course has a live instructor answering questions and a later recording. A separately supplied automated recording can be ESS; human-led teaching is not ESS. A bundle requires the single/multiple-supply assessment, including principal/ancillary or inseparability. For the live educational activity, test Article 54(1)'s virtual-consumer-location rule even though it is not ESS, plus the actual education exemption. Not every live consultation is such an activity. [Regulation 7 / Annex I](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1); [Directive 54/58](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
+The original course has a live instructor answering questions and a later recording. A separately supplied automated recording can be ESS; human-led teaching is not ESS. The classification and rate of the combined live-course/recording bundle are not established here. Check this point with one of our partner accountants. For the live educational activity, test Article 54(1)'s virtual-consumer-location rule even though it is not ESS, plus the actual education exemption. Not every live consultation is such an activity. [Regulation 7 / Annex I](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1); [Directive 54/58](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
 ### EC3: Marketplace/platform deemed supplier [T3]
 
@@ -253,7 +249,7 @@ For the original Italian seller's qualifying French metropolitan e-book supply t
 
 ### Test 5: Live professional consultation
 
-For the original Maltese consultant's 1-hour live interactive Zoom professional consultation to a German private consumer, net EUR 200, no automation: not ESS. Assume ordinary professional advice, no Article 54 educational activity or other exception/exemption. Article 45 places it in Malta; taxable 18% gives derived EUR 36 VAT and EUR 236 gross on the Malta domestic return. Do not apply this conclusion to a live virtual educational event merely because it is not ESS.
+For the original Maltese consultant's 1-hour live interactive Zoom professional consultation to a German private consumer, net EUR 200, no automation: not ESS. Assume ordinary professional advice, no Article 54 educational activity or other exception/exemption. Article 45 places it in Malta; taxable 18% gives derived EUR 36 VAT and EUR 236 gross on the Malta domestic return. If the original EUR 200 fee was VAT-inclusive instead, derived VAT is EUR 30.51 and net EUR 169.49. Do not apply this conclusion to a live virtual educational event merely because it is not ESS.
 
 ```oa-check
 name: German seller crosses the common threshold with a French sale
@@ -303,7 +299,7 @@ Rate sources: Germany 19% https://www.gesetze-im-internet.de/ustg_1980/__12.html
 - Never classify significant human-led services as automated ESS; separately test virtual-activity place and exemptions.
 - Never discard required location evidence before the 10-year OSS retention period.
 
-Refer unresolved establishment, status, evidence conflict, mixed supply, platform participation, reduced-rate qualification, exemption, late registration/correction or exclusion. Withhold an invoice/filing conclusion until the relevant facts and national portal requirements are established. Sources: https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 ; https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1.
+Unresolved establishment, status, evidence conflict, mixed supply, platform participation, reduced-rate qualification, exemption, late registration/correction or exclusion has no usable invoice/filing outcome here. Check this point with one of our partner accountants. Withhold an invoice/filing conclusion until the relevant facts and national portal requirements are established. Sources: https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 ; https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1.
 
 ## Filing and payment
 
@@ -322,31 +318,30 @@ If you would like a licensed accountant to review your VAT position, visit [open
 
 | Source and actual scope read | Official URL | Read on |
 |---|---|---|
-| EU VAT Directive, Read for Articles 44-45, 54, 58-59c, 284 and neighbors, 358-369k: place, threshold, SME relief, OSS eligibility, returns, refunds and records | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 | 2026-11-14 |
-| EU Implementing Regulation, Read for Article 7 and Annex I, 9a, 11, 18-25, 57d-63c: ESS, platforms, status, location and scheme procedure | https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 | 2026-11-14 |
-| Commission OSS, Read for optional coverage, threshold, all covered supplies and scheme boundaries | https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en | 2026-11-14 |
-| Commission registration, Read for EU/non-EU eligibility, MSI choice, commencement and national portal route | https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/register-oss_en | 2026-11-14 |
-| Commission returns/payment, Read for deadlines, no extension, corrections, currency, negative balances and payment reference | https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/declare-and-pay-oss_en | 2026-11-14 |
-| Commission records/audit, Read for the 10-year record requirement and electronic availability | https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/record-keeping-and-audits-oss_en | 2026-11-14 |
-| Commission SME, Read for EU establishment, Union EUR 100,000 threshold, national limits, EX prior confirmation and OSS coexistence | https://sme-vat-rules.ec.europa.eu/sme-scheme/cross-border-sme-scheme_en | 2026-11-14 |
-| EU Your Europe, Read for all 27 standard-rate rows and regional/category warnings | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm | 2026-11-14 |
-| Germany UStG, Read for section 12(1) standard rate and 12(2)(14) publication conditions | https://www.gesetze-im-internet.de/ustg_1980/__12.html | 2026-11-14 |
-| France BOFiP, Read for book definition, electronic books and mixed supplies; July 2026 text states immediate application during public consultation | https://bofip.impots.gouv.fr/bofip/1437-PGP.html/identifiant=BOI-TVA-LIQ-30-10-40-20260729 | 2026-11-14 |
-| France Service Public, Read for books, qualifying press, exclusions and regional distinctions | https://entreprendre.service-public.gouv.fr/vosdroits/F37781 | 2026-11-14 |
-| Ireland Revenue, Read for electronic publication categories, zero-rate commencement dates and exclusions | https://www.revenue.ie/en/vat/vat-on-services/electronic-services/electronic-publications/index.aspx | 2026-11-14 |
-| Ireland Revenue, Read for current 2026 standard, reduced and second reduced rates | https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-vat-rates.aspx | 2026-11-14 |
-| Italy 20/E of 2016, Read for printed pp. 40-41: digital editorial products and ISBN/ISSN necessary but insufficient; real PDF recovered by ordinary direct fetch | https://www.finanze.gov.it/export/sites/finanze/.galleries/Documenti/Varie/circolare-20E-del-18-maggio-2016.pdf | 2026-11-14 |
-| Italy current DPR 633/1972 Table A, Read for Part II rate header and item 18 publication categories/exclusions, with the source’s 2025-amendment note | https://def.giustiziatributaria.gov.it/DocTribFrontend/executePrintArticolo.do?codiceOrdinamento=0010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000&id=%7B435D34E0-465D-4918-8ED2-52E6C45D6226%7D&idAttoNormativo=%7B75A4827C-3766-4ECC-9C45-00C8D6CDC552%7D | 2026-11-14 |
-| Italy 2026 consolidated VAT law, Read for Articles 169(1)(oo), 170 and 171, printed pp. 135-140: continuity and commencement in 2027, used only to confirm the recast does not displace the old provisions in 2026 | https://www.gazzettaufficiale.it/eli/gu/2026/01/30/24/so/4/sg/pdf | 2026-11-14 |
-| Luxembourg coordinated law 2026, Read for Articles 39-40 and Annex B, item 5: electronic publication conditions | https://pfi.public.lu/dam-assets/pdf/legislation/tva/loi/loi-tva-2026-01-01.pdf | 2026-11-14 |
-| Portugal CIVA, Read for Article 18: mainland reduced rate and regional distinction | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx | 2026-11-14 |
-| Portugal CIVA, Read for Lista I, item 2.1: electronic publications and neighboring exclusions | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/c-iva-listas.aspx | 2026-11-14 |
-| Romania law 141/2025, Read for Article II, point 42, amending Article 291: rates and electronic publication conditions | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf | 2026-11-14 |
-| Spain current law, Read for Article 91.Dos.1.2: rate, e-books, exclusions and ancillary items | https://boe.es/buscar/act.php?id=BOE-A-1992-28740&p=20261007&tn=1 | 2026-11-14 |
-| Sweden tax authority, Read for books, comparable electronic publications and advertising exclusion | https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatserochundantagfranmoms.4.58d555751259e4d66168000409.html | 2026-11-14 |
-| Estonia tax authority, Read for the July 2025 change from 22% to 24% and neighboring transition examples | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax | 2026-11-14 |
-| Finland tax authority, Read for current standard rate and September 2024 change | https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/rates-of-vat/ | 2026-11-14 |
-| C-41/04 official judgment, Read for paragraphs 17-30: single/multiple supply and separate-price relevance; official parsed PDF text | https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A62004CJ0041 | 2026-11-14 |
-| Malta Cap. 406, Read for Article 19: standard rate and neighboring special-rate scope | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 | 2026-11-14 |
+| EU VAT Directive, Read for Articles 44-45, 54, 58-59c, 284 and neighbors, 358-369k: place, threshold, SME relief, OSS eligibility, returns, refunds and records | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 | 2026-11-27 |
+| EU Implementing Regulation, Read for Article 7 and Annex I, 9a, 11, 18-25, 57d-63c: ESS, platforms, status, location and scheme procedure | https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 | 2026-11-27 |
+| Commission OSS, Read for optional coverage, threshold, all covered supplies and scheme boundaries | https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en | 2026-11-27 |
+| Commission registration, Read for EU/non-EU eligibility, MSI choice, commencement and national portal route | https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/register-oss_en | 2026-11-27 |
+| Commission returns/payment, Read for deadlines, no extension, corrections, currency, negative balances and payment reference | https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/declare-and-pay-oss_en | 2026-11-27 |
+| Commission records/audit, Read for the 10-year record requirement and electronic availability | https://vat-one-stop-shop.ec.europa.eu/one-stop-shop/record-keeping-and-audits-oss_en | 2026-11-27 |
+| Commission SME, Read for EU establishment, Union EUR 100,000 threshold, national limits, EX prior confirmation and OSS coexistence | https://sme-vat-rules.ec.europa.eu/sme-scheme/cross-border-sme-scheme_en | 2026-11-27 |
+| EU Your Europe, Read for all 27 standard-rate rows and regional/category warnings | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm | 2026-11-27 |
+| Germany UStG, Read for section 12(1) standard rate and 12(2)(14) publication conditions | https://www.gesetze-im-internet.de/ustg_1980/__12.html | 2026-11-27 |
+| France BOFiP, Read for fiscal book definition and qualifying electronic-book conditions | https://bofip.impots.gouv.fr/bofip/1437-PGP.html/identifiant=BOI-TVA-LIQ-30-10-40-20260729 | 2026-11-27 |
+| France Service Public, Read for books, qualifying press, exclusions and regional distinctions | https://entreprendre.service-public.gouv.fr/vosdroits/F37781 | 2026-11-27 |
+| Ireland Revenue, Read for electronic publication categories, zero-rate commencement dates and exclusions | https://www.revenue.ie/en/vat/vat-on-services/electronic-services/electronic-publications/index.aspx | 2026-11-27 |
+| Ireland Revenue, Read for current 2026 standard, reduced and second reduced rates | https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-vat-rates.aspx | 2026-11-27 |
+| Italy 20/E of 2016, Read for printed pp. 40-41: digital editorial products and ISBN/ISSN necessary but insufficient; real PDF recovered by ordinary direct fetch | https://www.finanze.gov.it/export/sites/finanze/.galleries/Documenti/Varie/circolare-20E-del-18-maggio-2016.pdf | 2026-11-27 |
+| Italy current DPR 633/1972 Table A, Read for Part II rate header and item 18 publication categories/exclusions, with the source’s 2025-amendment note | https://def.giustiziatributaria.gov.it/DocTribFrontend/executePrintArticolo.do?codiceOrdinamento=0010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000&id=%7B435D34E0-465D-4918-8ED2-52E6C45D6226%7D&idAttoNormativo=%7B75A4827C-3766-4ECC-9C45-00C8D6CDC552%7D | 2026-11-27 |
+| Italy 2026 consolidated VAT law, Read for Articles 170-171: repeal and recast apply in 2027, so the 2026 reference remains DPR 633/1972 | https://www.gazzettaufficiale.it/eli/gu/2026/01/30/24/so/4/sg/pdf | 2026-11-27 |
+| Luxembourg coordinated law 2026, Read for Articles 39-40 and Annex B, item 5: electronic publication conditions | https://pfi.public.lu/dam-assets/pdf/legislation/tva/loi/loi-tva-2026-01-01.pdf | 2026-11-27 |
+| Portugal CIVA, Read for Article 18: mainland reduced rate and regional distinction | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx | 2026-11-27 |
+| Portugal CIVA, Read for Lista I, item 2.1: electronic publications and neighboring exclusions | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/c-iva-listas.aspx | 2026-11-27 |
+| Romania law 141/2025, Read for Article II, point 42, amending Article 291: rates and electronic publication conditions | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf | 2026-11-27 |
+| Spain current law, Read for Article 91.Dos.1.2: rate, e-books, exclusions and ancillary items | https://boe.es/buscar/act.php?id=BOE-A-1992-28740&p=20261007&tn=1 | 2026-11-27 |
+| Sweden tax authority, Read for books, comparable electronic publications and advertising exclusion | https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatserochundantagfranmoms.4.58d555751259e4d66168000409.html | 2026-11-27 |
+| Malta Cap. 406, Read for Article 19: standard rate and neighboring special-rate scope | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 | 2026-11-27 |
+| France CGI 298 septies, digital publication eligibility; operative version ends 1 January 2027 | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006179663/2026-04-28/ | 2026-11-27 |
+| Ireland Revenue electronic-publication manual, zero/second-reduced categories and exclusions | https://www.revenue.ie/en/tax-professionals/tdm/value-added-tax/part03-taxable-transactions-goods-ica-services/Services/electronic-publications.pdf | 2026-11-27 |
 
-Not yet confirmed: exhaustive reduced/exempt digital-product treatment for destinations not explicitly researched above; national education/gambling/SME and use-and-enjoyment overlays for each actual case; selected MSI portal screen/field labels, credentials and local remedies; old popularity/portal-quality claims for Ireland (English-speaking/tech ecosystem/helpful Revenue), Netherlands (English-friendly/efficient/Amsterdam tech hub), Estonia (digital-first/e-Residency/simple registration) and any official ranking. Those unsupported marketing claims are retained here, not relied on for MSI choice. The old Malta-lowest and France-press 5.5% claims are corrected, not pending alternatives.
+Not yet confirmed: national product relief outside the expressly sourced publication rows, actual-case education/gambling/SME and use-and-enjoyment overlays, unresolved mixed supplies/platform contracts/evidence and local late remedies. These outcomes are non-usable until established for the actual facts. Check this point with one of our partner accountants. No official popularity or portal-quality ranking is asserted.
