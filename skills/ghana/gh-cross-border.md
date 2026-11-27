@@ -51,7 +51,7 @@ Residents paying non-residents, non-residents earning from Ghana, and residents 
 | Goods | 3% | Above GHS 2,000 a year | 2026 | same |
 | Works | 5% | Above GHS 2,000 a year | 2026 | same |
 | Unprocessed precious minerals | 3% | Since 2 April 2025 means unprocessed rough diamonds and other minerals prescribed by Regulations; unprocessed gold is excluded (Act 896 s.85(5) as substituted by Act 1134 s.2) | 2026 | https://repository.parliament.gh/handle/123456789/4550 |
-| Petroleum subcontractors | 7.5% | Final | 2026 | same |
+| Petroleum subcontractors | 7.5% | Final | 2026 | https://gra.gov.gh/domestic-tax/tax-types/withholding-tax/ https://repository.parliament.gh/handle/123456789/4550 |
 | Royalty, natural resource payments | 15% | | 2026 | same |
 | Asset or liability realisation | 3% of consideration | Resident payer not an individual (s.116A) | 2026 | https://gra.gov.gh/wp-content/uploads/2023/04/INCOME-TAX-AMENDMENT-ACT-2023-ACT-1094.pdf |
 
