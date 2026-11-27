@@ -4,8 +4,8 @@ description: "Use this skill when asked about VAT, GST or sales tax in Hong Kong
 jurisdiction: HK
 tax_year: 2026
 tax_year_notes: "Calendar 2026 and year of assessment 2026/27. Hong Kong has no VAT in any year; the indirect charges shown are those in force on 14 November 2026 per the IRD brief guide 2025/26."
-version: "2.0"
-last_updated: 2026-11-14
+version: "2.1"
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tier: 2
@@ -31,7 +31,7 @@ Mainland China VAT is a separate system: use `cn-vat`. Profits tax: `hk-corporat
 | Hotel accommodation tax (HAT) | 3% of accommodation charges | Hotels and guesthouses; resumed from 1 January 2025 (0% from 1 July 2008 to 31 December 2024) | same |
 | Stamp duty on Hong Kong stock | 0.1% of the consideration, paid by each of buyer and seller | Contract notes, from 17 November 2023 | same |
 | Stamp duty on immovable property, up to HKD 4,000,000 | HKD 100 | From 26 February 2025; on the higher of price and market value | same |
-| Stamp duty on immovable property, top band | 4.25% | Price above HKD 20,000,000; intermediate bands 1.5% to 3.75% with marginal relief | same |
+| Stamp duty on immovable property, top bands | HKD 100 up to HKD 4,000,000. For residential instruments from 26 February 2026, 6.5% above HKD 109,574,470. Over HKD 100,000,000 through HKD 109,574,470, HKD 4,250,000 plus 30% of the excess over HKD 100,000,000. The residential 4.25% band runs from above HKD 21,739,120 through HKD 100,000,000. Non-residential Scale 3 tops out at 4.25% above HKD 21,739,120. | The relevant band uses the higher of consideration and property value | https://www.ird.gov.hk/eng/faq/avd.htm |
 
 ## The base
 
