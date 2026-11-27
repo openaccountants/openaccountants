@@ -82,7 +82,7 @@ For ordinary full RETA coverage with the same base for every line, the **derived
 | 3, administrative/workshop heads | 1,435.20/month | 5,101.20/month | [2026 art. 3](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3) |
 | 4–7 | 1,424.40/month | 5,101.20/month | [2026 art. 3](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3) |
 | 8–11, daily-paid categories | 47.48/day | 170.04/day | [2026 art. 3](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3) |
-| Accident/occupational base | Ordinary full-month floor 1,424.50 (= 1,221 × 7/6); ceiling 5,101.20/month | Art. 2 sets SMI plus one-sixth, subject to an absolute minimum of 1,424.40. Apply applicable daily/partial-period rules | [2026 art. 2](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a2); [2026 SMI art. 1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815#a1) |
+| Accident/occupational base | Ordinary full-month floor computed as 1,424.50 (= 1,221 × 7/6); ceiling 5,101.20/month | Art. 2 sets SMI plus one-sixth, subject to an absolute minimum of 1,424.40. Apply applicable daily/partial-period rules | [2026 art. 2](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a2); [2026 SMI art. 1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815#a1) |
 
 | Contribution | Employer | Employee | Year and source |
 |---|---:|---:|---|
@@ -266,9 +266,9 @@ For a right arising in 2026, calculate the ordinary monthly bounds from **600 ×
 
 | Dependent children | Ordinary monthly floor | Ordinary monthly cap | Year / official source |
 |---|---:|---:|---|
-| None | 560.00 (80%) | 1,225.00 (175%) | 2026; [LGSS art.339.4](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a339) |
-| One | 749.00 (107%) | 1,400.00 (200%) | 2026; [LGSS art.339.4](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a339) |
-| Two or more | 749.00 (107%) | 1,575.00 (225%) | 2026; [LGSS art.339.4](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a339) |
+| None | 560.00 (computed: 700 × 80%) | 1,225.00 (computed: 700 × 175%) | 2026; [LGSS art.339.4](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a339) |
+| One | 749.00 (computed: 700 × 107%) | 1,400.00 (computed: 700 × 200%) | 2026; [LGSS art.339.4](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a339) |
+| Two or more | 749.00 (computed: 700 × 107%) | 1,575.00 (computed: 700 × 225%) | 2026; [LGSS art.339.4](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a339) |
 
 Apply `min(cap, max(floor, 70% × average base))`. If the claimant belongs to a category legally choosing a minimum contribution base below the ordinary RETA minimum, omit the floor under [RD 1541/2011 art. 13.2(d)](https://www.boe.es/buscar/act.php?id=BOE-A-2011-17173#a13); retain the cap. [Social Security's current calculation guidance](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/10538/2277?changeLanguage=es) confirms this exception. The specified partial cessations in art. 331.1.a(4)/(5) and temporary partial force majeure instead pay **50% of average base with neither floor nor cap**. Part-time employee hours do not create a separate proportional cessation-benefit cap.
 
@@ -521,7 +521,7 @@ expected:
 | [LGSS arts.331/338–339/342](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a339), [RD1541/2011 art.13](https://www.boe.es/buscar/act.php?id=BOE-A-2011-17173#a13) | Cessation rate, monthly bounds, child/low-base exceptions, partial cases and pluriactivity | 2026-10-27 |
 | [LPGE31/2022 DA90](https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128#da-90), [SEPE2026 figures](https://sepe.es/HomeSepe/prestaciones-desempleo/Cuantias-anuales.html), [official2026 IPREM table](https://vivienda.castillalamancha.es/iprem) | Monthly600 IPREM and continued2026 indicator, distinct from annual conventions | 2026-10-27 |
 | [Social Security cessation calculation](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/10538/2277?changeLanguage=es) | Current operational bounds, lawful lower-minimum-base exception and SMI comparator excluding proportional extra pay | 2026-10-27 |
-|[AEATcurrent2026legal/default-interestconfirmation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/guia-principales-novedades/otras-cuestiones-interes.html) |2026legal3.25%anddefault4.0625%;LGSS31.3selects the SocialSecurityformula andexistingtrigger/accrualrules remain separate |2026-10-27 |
+| [AEAT 2026 legal/default interest confirmation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/guia-principales-novedades/otras-cuestiones-interes.html) | 2026 legal rate 3.25% and default rate 4.0625%; [LGSS art. 31.3](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a31) selects the Social Security formula. Trigger/accrual rules remain separate. | 2026-10-27 |
 | [TGSS current system guide, Prórroga Tarifa Plana](https://www.seg-social.es/wps/portal/wss/internet/HerramientasWeb/9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24/44b5f09d-6c25-4dcd-8210-c21700c67096?changeLanguage=es), [current LETA art. 38 ter](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a3-5), [RD 2064 arts. 44/46](https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579#a44) | Published equality/above-SMI extension assessment, separate calendar years and exact remaining regularisation-text boundary | 2026-10-27 |
 
 **Not yet confirmed — non-usable holds:** the general new-2026 starting-fee monetary bridge and MEI reconciliation; a final legal/assessment outcome at exactly SMI in an extension; individual deferral/undue-payment applications under LGSS art. 23; sea, self-employed agriculture, artist/training and disability-specific calculations beyond the stated starting-period gates; non-EU coordination, A1/telework exceptions, and case-specific ERTE exemptions or individual benefit awards. Check this point with one of our partner accountants. The supplied ordinary RETA, employee, household and agricultural-employee methods remain usable within their stated conditions.
