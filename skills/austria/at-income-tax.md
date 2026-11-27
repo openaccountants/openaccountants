@@ -39,8 +39,8 @@ Apply each rate only to the slice in that band. These are 2026 amounts, not the 
 | Over EUR 21,992 to EUR 36,458 | 30% | 2026 | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33&FassungVom=2026-11-27 |
 | Over EUR 36,458 to EUR 70,365 | 40% | 2026 | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33&FassungVom=2026-11-27 |
 | Over EUR 70,365 to EUR 104,859 | 48% | 2026 | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33&FassungVom=2026-11-27 |
-| Over EUR 104,859 to EUR 1,000,000 | 50% | 2026 | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33&FassungVom=2026-11-27 |
-| Over EUR 1,000,000 | 55%, through 2029 | 2026 | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33&FassungVom=2026-11-27 |
+| Over EUR 104,859 to EUR 1,000,000 | 50% | 2026 | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33&FassungVom=2026-11-27; https://www.bmf.gv.at/themen/steuern/arbeitnehmerveranlagung/steuertarif-steuerabsetzbetraege/steuertarif-steuerabsetzbetraege.html |
+| Over EUR 1,000,000 | 55%, through 2029 | 2026 | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33&FassungVom=2026-11-27; https://www.bmf.gv.at/themen/steuern/arbeitnehmerveranlagung/steuertarif-steuerabsetzbetraege/steuertarif-steuerabsetzbetraege.html |
 
 For the historical 2025 cases below, the band limits are EUR 13,308 / 21,617 / 35,836 / 69,166 / 103,072 / 1,000,000 with the same marginal rates. [EStG § 33, 2025 text](https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33&FassungVom=2025-06-30); § 124b Z 466. Do not reuse the 2026 table for 2025 or 2027.
 
