@@ -88,11 +88,11 @@ Interest on unpaid sales/use tax follows **5739.132** and the certified annual r
 | Goods, electronics, furniture, office equipment, pet food/supplies, ordinary clothing | Presumed taxable unless an exemption applies. Clothing holiday exception below | [R.C. 5739.01(B)(1), (WW)](https://codes.ohio.gov/ohio-revised-code/section-5739.01); [5739.02(C)](https://codes.ohio.gov/ohio-revised-code/section-5739.02) |
 | Prewritten software | Taxable whether personal/business use or delivered on media/electronically; reasonable separately stated customer-specific modification is excluded from prewritten software | [R.C. 5739.01(WW), (BBB)](https://codes.ohio.gov/ohio-revised-code/section-5739.01) |
 | Hosted CRM, data processing, computer/information services | Taxable when within statutory definitions, for business use, and true object is the computer/information service. Personal/professional work with incidental computing is excluded; do not assume all SaaS or subscriptions are identical. Affiliated-group exception applies to qualifying transactions | [R.C. 5739.01(B)(3)(e), (Y)](https://codes.ohio.gov/ohio-revised-code/section-5739.01) |
-| Digital movie/music/book, including less-than-permanent access | Specified digital products are sales; separate cable/video-provider and other statutory exemptions can apply. Provider qualification disputes are held | [R.C. 5739.01(B)(12), (OOO)](https://codes.ohio.gov/ohio-revised-code/section-5739.01); [5739.02(B)(53)-(54)](https://codes.ohio.gov/ohio-revised-code/section-5739.02) |
+| Digital movie/music/book, including less-than-permanent access | Specified digital products are sales; satellite broadcasting is separately listed as taxable. Separate cable/video-provider and other statutory exemptions can apply. Provider qualification disputes are held | [R.C. 5739.01(B)(3)(n), (B)(12), (OOO)](https://codes.ohio.gov/ohio-revised-code/section-5739.01); [5739.02(B)(53)-(54)](https://codes.ohio.gov/ohio-revised-code/section-5739.02) |
 | Accounting, legal, consulting and other professional/personal services | Inconsequential goods without separate charge do not turn these into taxable sales. Separately sold taxable goods/services remain taxable. Employment/staffing and placement services ceased being taxable as such from October 2021 | [R.C. 5739.01(B), (Y)(2)](https://codes.ohio.gov/ohio-revised-code/section-5739.01); [ODT repeal alert](https://tax.ohio.gov/professional/ohtaxalert/taxalertsarchive/salesuse) |
 | Landscaping/lawn care; mechanized snow removal | Each service has its own **less than $5,000 calendar-year sales** exclusion; exactly $5,000 is outside that exclusion. Transition invoices and retrospective liabilities are held below | [R.C. 5739.01(DD), (B)(3)(r)](https://codes.ohio.gov/ohio-revised-code/section-5739.01) |
 | Janitorial/building cleaning | Same less-than-$5,000 calendar-year exclusion. Necessary sanitation for the specified federal meat-inspection establishments is excluded. ODT says collection continues once the threshold is reached; do not use that sentence to override the statute's annual wording | [R.C. 5739.01(II)](https://codes.ohio.gov/ohio-revised-code/section-5739.01); [ST 2002-04](https://tax.ohio.gov/business/ohio-business-taxes/sales-and-use/information-releases/st2002-04-updated04.2025) |
-| Repair/installation; pest control; fitness/sports-club memberships | Listed taxable services. Repair/installation exemptions depend on the underlying property; installation into a public-utility system has a separate exclusion | [R.C. 5739.01(B)(3)(a)-(b), (k)-(m)](https://codes.ohio.gov/ohio-revised-code/section-5739.01) |
+| Repair/installation; pest control; fitness/sports-club memberships | Listed taxable services. Repair/installation exemptions depend on the underlying property; installation into a public-utility system has a separate exclusion. Service-input property permanently transferred as an integral part of the service can qualify under 5739.02(B)(42)(m) | [R.C. 5739.01(B)(3)(a)-(b), (k)-(m)](https://codes.ohio.gov/ohio-revised-code/section-5739.01) |
 | Personal care | Listed skin care, nails, hair removal, tattoos, piercings, tanning and massage are included; hair cutting/coloring/styling and services by/on order of the listed licensed practitioners are excluded | [R.C. 5739.01(B)(3)(o)](https://codes.ohio.gov/ohio-revised-code/section-5739.01) |
 | Car wash; laundry/dry cleaning; storage; towing/security; lodging; in-state passenger transport | Listed services with category-specific definitions and exemptions. Self-service laundry differs from a merely automated car wash. Apply the relevant subsection, not a universal coin-operated exemption; uncertain category cases are held | [R.C. 5739.01(B)(2)-(3), (B)(9), (M)-(N), (BB)](https://codes.ohio.gov/ohio-revised-code/section-5739.01); [5739.02(B)(43)](https://codes.ohio.gov/ohio-revised-code/section-5739.02) |
 | Human food off premises | Exempt, including ordinary candy, chewing gum, breath mints and chocolate-covered pretzels; flour is not Ohio's dividing test. Alcohol, dietary supplements, soft drinks and tobacco are excluded from food. Catering follows the food/premises distinction; restaurant food is not universally exempt | [R.C. 5739.02(B)(2)](https://codes.ohio.gov/ohio-revised-code/section-5739.02); [5739.01(CCC)](https://codes.ohio.gov/ohio-revised-code/section-5739.01) |
@@ -100,7 +100,7 @@ Interest on unpaid sales/use tax follows **5739.132** and the certified annual r
 | Human prescription-only drugs; medical equipment | Prescription-only human drugs exempt; ordinary OTC drugs generally taxable absent another exemption. Prescribed human prosthetic/mobility equipment and durable medical equipment for home use have specific conditions | [R.C. 5739.02(B)(18)-(19)](https://codes.ohio.gov/ohio-revised-code/section-5739.02) |
 | Feminine hygiene products | Exempt for the statutory products; grooming/hygiene products are not included in that definition | [R.C. 5739.02(B)(48)](https://codes.ohio.gov/ohio-revised-code/section-5739.02); [5739.01(RR)](https://codes.ohio.gov/ohio-revised-code/section-5739.01) |
 | Manufacturing/resale | Exemption depends on actual statutory use, not possession of STEC B alone. Qualifying production machinery primarily used to manufacture goods for sale is covered; office/administrative equipment and other exclusions remain taxable | [R.C. 5739.02(B)(42)(g)](https://codes.ohio.gov/ohio-revised-code/section-5739.02); [5739.011(B)-(D)](https://codes.ohio.gov/ohio-revised-code/section-5739.011); [5739.01(E)](https://codes.ohio.gov/ohio-revised-code/section-5739.01) |
-| Exempt entities | Ohio/political subdivisions, reciprocal states and qualifying charitable/church buyers have statutory exemptions. Obtain evidence of the actual buyer and qualifying use; a nonprofit label alone is insufficient | [R.C. 5739.02(B)(1), (12)](https://codes.ohio.gov/ohio-revised-code/section-5739.02) |
+| Exempt entities | United States, Ohio/political subdivisions, reciprocal states and qualifying charitable/church buyers have statutory exemptions. Obtain evidence of the actual buyer and qualifying use; a nonprofit label alone is insufficient | [R.C. 5739.02(B)(1), (10), (12)](https://codes.ohio.gov/ohio-revised-code/section-5739.02) |
 
 **2026 holiday:** **7–9 August**, qualifying general-use clothing **$75 or less per item**; listed school supplies and instructional material **$20 or less per item**. Business purchases and excluded categories do not qualify; items above the limit are taxable in full. There was no expanded $500 holiday in 2026. Apply discounts, separate pricing and order/payment timing under the Department's holiday instructions. Do not reuse these limits for 2025. [R.C. 5739.02(B)(55)](https://codes.ohio.gov/ohio-revised-code/section-5739.02); [5739.41](https://codes.ohio.gov/ohio-revised-code/section-5739.41); [ODT 2026 instructions](https://tax.ohio.gov/business/sales-and-use-tax/sales-tax-holiday).
 
@@ -177,6 +177,8 @@ These are **non-usable holds**, not alternative tax conclusions:
 | Interstate delivery with uncertain receipt, temporary-use valuation, special medical/manufacturing equipment or reciprocal/exempt-entity status | Check this point with one of our partner accountants. |
 | 2025 holiday claims and unsupported past local rates | Keep the transaction's original year and inputs. Check this point with one of our partner accountants. |
 
+For exemption-document format/signature or required-data-element disputes, do not infer protection from a form name alone. Check this point with one of our partner accountants.
+
 For refund/amended-return questions use the Department's current procedure; do not treat UST-1-X, ST AR or an old limitation-period statement as permission to adjust a different period. Check this point with one of our partner accountants.
 
 Keep a working paper linking sales, exemptions, sourced jurisdictions/rates, tax due, discount eligibility/cap, payments/accelerated credits and separate use-tax purchases to the filed return. Treat bank descriptions as leads only: reconcile ODT payments to liabilities, marketplace settlements to collection reports, and processor payouts to gross receipts/fees; do not classify BWC from narration as sales tax.
@@ -189,31 +191,31 @@ Read on **2026-11-27**, limited to the operative provisions described. Where Dep
 
 | Source and material read | URL | Read on |
 | --- | --- | --- |
-| Sales definitions: B, E, H, Y, DD, II, RR, WW, BBB, CCC, OOO; business-use, services, food, software and price | https://codes.ohio.gov/ohio-revised-code/section-5739.01 | 2026-11-27 |
-| Sales levy A; exemptions B(1),(2),(12),(18),(19),(42),(43),(48),(53)-(55); presumption C | https://codes.ohio.gov/ohio-revised-code/section-5739.02 | 2026-11-27 |
-| Manufacturing: production equipment, exclusions and primary use B-D | https://codes.ohio.gov/ohio-revised-code/section-5739.011 | 2026-11-27 |
-| Certificates B(1)-(6), including exceptions and cure | https://codes.ohio.gov/ohio-revised-code/section-5739.03 | 2026-11-27 |
-| Sourcing B-D and special-rule context | https://codes.ohio.gov/ohio-revised-code/section-5739.033 | 2026-11-27 |
-| Monthly returns, electronic filing, discount/CSP, late charges, aggregation A-G, authenticated operative text | https://codes.ohio.gov/assets/laws/revised-code/authenticated/57/5739/5739.12/9-30-2025/5739.12-9-30-2025.pdf | 2026-11-27 |
-| Accelerated threshold, timing, release, payments and shortfall A-D | https://codes.ohio.gov/ohio-revised-code/section-5739.122 | 2026-11-27 |
-| Unpaid-tax interest A, read through official chapter rendering | https://codes.ohio.gov/ohio-revised-code/chapter-5739 | 2026-11-27 |
-| Assessment penalty categories A | https://codes.ohio.gov/ohio-revised-code/section-5739.133 | 2026-11-27 |
-| Fixed/transient licensing A-D | https://codes.ohio.gov/ohio-revised-code/section-5739.17 | 2026-11-27 |
-| Holiday designation and conditional expanded holiday | https://codes.ohio.gov/ohio-revised-code/section-5739.41 | 2026-11-27 |
-| Use definitions E, G, I, Q, T; nexus and marketplace rules | https://codes.ohio.gov/ohio-revised-code/section-5741.01 | 2026-11-27 |
-| Use liability, exemptions and foreign-tax credit A-C | https://codes.ohio.gov/ohio-revised-code/section-5741.02 | 2026-11-27 |
-| Marketplace receipt hierarchy B | https://codes.ohio.gov/ohio-revised-code/section-5741.05 | 2026-11-27 |
-| Remote registration and exceptions A-B | https://codes.ohio.gov/ohio-revised-code/section-5741.17 | 2026-11-27 |
-| County/transit combined rates, Q4 2026 | https://tax.ohio.gov/business/sales-and-use-tax/rate-tables/by-county-q4-2026 | 2026-11-27 |
-| Application fees, registration and Warren change | https://tax.ohio.gov/business/sales-and-use-tax/sales-and-use-tax | 2026-11-27 |
-| Nexus, registration systems and marketplace timing/accounts | https://tax.ohio.gov/business/sales-and-use-tax | 2026-11-27 |
-| Less-frequent filing eligibility and due dates | https://tax.ohio.gov/business/ohio-business-taxes/sales-and-use/license/ | 2026-11-27 |
-| Certificate form uses and limitations | https://tax.ohio.gov/business/sales-and-use-tax/exemption-certificates | 2026-11-27 |
-| Statutory janitorial exclusion versus continuation summary | https://tax.ohio.gov/business/ohio-business-taxes/sales-and-use/information-releases/st2002-04-updated04.2025 | 2026-11-27 |
-| Discount cap applicability and consolidated examples | https://tax.ohio.gov/business/ohio-business-taxes/sales-and-use/information-releases/st2025-02_vendor_timely_filing_discount_dec_2025 | 2026-11-27 |
-| Holiday dates, qualifying categories/limits, business exclusion and UST-1 lines | https://tax.ohio.gov/business/sales-and-use-tax/sales-tax-holiday | 2026-11-27 |
-| 2025/2026/2027 rates and daily formula | https://tax.ohio.gov/researcher/interest-rates | 2026-11-27 |
-| Business consumer use-tax account route | https://tax.ohio.gov/business/sales-and-use-tax/taxability | 2026-11-27 |
-| Employment-service repeal alert entry dated 30 August 2021 | https://tax.ohio.gov/professional/ohtaxalert/taxalertsarchive/salesuse | 2026-11-27 |
+| Read for Sales definitions: B, E, H, Y, DD, II, RR, WW, BBB, CCC, OOO; business-use, services, food, software and price | https://codes.ohio.gov/ohio-revised-code/section-5739.01 | 2026-11-27 |
+| Read for Sales levy A; exemptions B(1),(2),(12),(18),(19),(42),(43),(48),(53)-(55); presumption C | https://codes.ohio.gov/ohio-revised-code/section-5739.02 | 2026-11-27 |
+| Read for Manufacturing: production equipment, exclusions and primary use B-D | https://codes.ohio.gov/ohio-revised-code/section-5739.011 | 2026-11-27 |
+| Read for Certificates B(1)-(6), including exceptions and cure | https://codes.ohio.gov/ohio-revised-code/section-5739.03 | 2026-11-27 |
+| Read for Sourcing B-D and special-rule context | https://codes.ohio.gov/ohio-revised-code/section-5739.033 | 2026-11-27 |
+| Read for Monthly returns, electronic filing, discount/CSP, late charges, aggregation A-G, authenticated operative text | https://codes.ohio.gov/assets/laws/revised-code/authenticated/57/5739/5739.12/9-30-2025/5739.12-9-30-2025.pdf | 2026-11-27 |
+| Read for Accelerated threshold, timing, release, payments and shortfall A-D | https://codes.ohio.gov/ohio-revised-code/section-5739.122 | 2026-11-27 |
+| Read for Unpaid-tax interest A, read through official chapter rendering | https://codes.ohio.gov/ohio-revised-code/chapter-5739 | 2026-11-27 |
+| Read for Assessment penalty categories A | https://codes.ohio.gov/ohio-revised-code/section-5739.133 | 2026-11-27 |
+| Read for Fixed/transient licensing A-D | https://codes.ohio.gov/ohio-revised-code/section-5739.17 | 2026-11-27 |
+| Read for Holiday designation and conditional expanded holiday | https://codes.ohio.gov/ohio-revised-code/section-5739.41 | 2026-11-27 |
+| Read for Use definitions E, G, I, Q, T; nexus and marketplace rules | https://codes.ohio.gov/ohio-revised-code/section-5741.01 | 2026-11-27 |
+| Read for Use liability, exemptions and foreign-tax credit A-C | https://codes.ohio.gov/ohio-revised-code/section-5741.02 | 2026-11-27 |
+| Read for Marketplace receipt hierarchy B | https://codes.ohio.gov/ohio-revised-code/section-5741.05 | 2026-11-27 |
+| Read for Remote registration and exceptions A-B | https://codes.ohio.gov/ohio-revised-code/section-5741.17 | 2026-11-27 |
+| Read for County/transit combined rates, Q4 2026 | https://tax.ohio.gov/business/sales-and-use-tax/rate-tables/by-county-q4-2026 | 2026-11-27 |
+| Read for Application fees, registration and Warren change | https://tax.ohio.gov/business/sales-and-use-tax/sales-and-use-tax | 2026-11-27 |
+| Read for Nexus, registration systems and marketplace timing/accounts | https://tax.ohio.gov/business/sales-and-use-tax | 2026-11-27 |
+| Read for Less-frequent filing eligibility and due dates | https://tax.ohio.gov/business/ohio-business-taxes/sales-and-use/license/ | 2026-11-27 |
+| Read for Certificate form uses and limitations | https://tax.ohio.gov/business/sales-and-use-tax/exemption-certificates | 2026-11-27 |
+| Read for Statutory janitorial exclusion versus continuation summary | https://tax.ohio.gov/business/ohio-business-taxes/sales-and-use/information-releases/st2002-04-updated04.2025 | 2026-11-27 |
+| Read for Discount cap applicability and consolidated examples | https://tax.ohio.gov/business/ohio-business-taxes/sales-and-use/information-releases/st2025-02_vendor_timely_filing_discount_dec_2025 | 2026-11-27 |
+| Read for Holiday dates, qualifying categories/limits, business exclusion and UST-1 lines | https://tax.ohio.gov/business/sales-and-use-tax/sales-tax-holiday | 2026-11-27 |
+| Read for 2025/2026/2027 rates and daily formula | https://tax.ohio.gov/researcher/interest-rates | 2026-11-27 |
+| Read for Business consumer use-tax account route | https://tax.ohio.gov/business/sales-and-use-tax/taxability | 2026-11-27 |
+| Read for Employment-service repeal alert entry dated 30 August 2021 | https://tax.ohio.gov/professional/ohtaxalert/taxalertsarchive/salesuse | 2026-11-27 |
 
 Not yet confirmed: only the specifically identified non-usable holds; no held conclusion is authorized for computation or filing. The historical 3%/8.75% ceiling summary is omitted because an actual address/date rate determines the charge, not a theoretical maximum.
