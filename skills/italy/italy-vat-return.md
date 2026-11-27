@@ -74,10 +74,10 @@ Keep the invoice/register reference, tax point, net base, output tax, deductible
 
 | Cost | Treatment |
 |---|---|
-| Road motor vehicle | The limited class is motor vehicles other than Tabella B(f), excluding agricultural/forestry tractors, normally transporting persons/goods, authorised mass no more than 3,500 kg and no more than eight passenger seats besides the driver. If not exclusively business, deduction is 40%. The limit does not apply where the vehicle is the business's own trading activity or for commercial agents/representatives. Outside that limit, ordinary deduction conditions still apply; a van name or an IT-consultant occupation proves neither use nor entitlement |
+| Road motor vehicle | The EU authorization remains effective for 2026 under Decision 2007/441/EC as extended by Decision (EU) 2025/2529. The limited class is motor vehicles other than Tabella B(f), excluding agricultural/forestry tractors, normally transporting persons/goods, authorised mass no more than 3,500 kg and no more than eight passenger seats besides the driver. If not exclusively business, deduction is 40%. The limit does not apply where the vehicle is the business's own trading activity or for commercial agents/representatives. Outside that limit, ordinary deduction conditions still apply; a van name or an IT-consultant occupation proves neither use nor entitlement |
 | Lease/hire, custody, repairs, tolls and vehicle fuel | Follow the vehicle's deductible share. Retain the required card or other approved traceable-payment proof for fuel; a bank description alone is insufficient |
 | Passenger transport | Blocked unless it forms the business's own activity |
-| Purchased food/drink | Blocked except own business activity or the specified school/business canteen and workplace-vending cases. Restaurant/accommodation services are distinct; business purpose, invoice and the representation restriction still matter |
+| Purchased food/drink | Blocked except own business activity or the specified school/business canteen and workplace-vending cases. Restaurant/accommodation services are distinct; business purpose, an invoice naming the deduction claimant and the representation restriction still matter. For employee beneficiaries, retain their details in the invoice or attached note (AdE circulars 53/E of 2008 and 6/E of 2009) |
 | Representation | Blocked, except the unit-cost goods exception above; documenting a client dinner does not create a percentage recovery |
 | Residential-property VAT, luxury/aircraft/boat exceptions | Do not apply a generic builders/full-recovery shortcut. Non-usable hold: Check this point with one of our partner accountants |
 
@@ -121,7 +121,7 @@ Invoices for ordinary domestic supplies use SdI under D.Lgs. 127/2015 art. 1(3);
 |---|---|---|
 | Late/short payment | 25% of unpaid tax; halved for payment within 90 days; within 15 days the halved amount is reduced to one fifteenth per day | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-11-27 |
 | Ravvedimento for uncomplicated voluntary payment correction | Pay tax, reduced penalty and legal interest. For missed payment within 30 days: one tenth of minimum; correction within 90 days: one ninth; by the violation-year return deadline: one eighth; later: one seventh, before the special audit/draft-assessment stages. Notices of liquidation/assessment and statutory automated-control payment notices bar this ordinary route | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-11-27 |
-| Legal interest | 1.60% yearly from 1 January 2026, accruing day by day; split a correction spanning rate years | https://www.gazzettaufficiale.it/eli/id/2025/12/13/25A06705/sg |
+| Legal interest | 1.60% yearly from 1 January 2026, accruing day by day; split a correction spanning rate years | https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticoloDefault/originario?atto.codiceRedazionale=25A06705&atto.dataPubblicazioneGazzetta=2025-12-13&atto.tipoProvvedimento=DECRETO |
 | LIPE omitted/incomplete/wrong | EUR 500–2,000, halved for filing/correction within 15 days | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-11-27 |
 | Esterometro omitted/wrong | EUR 2 per invoice, monthly maximum EUR 400; halved with monthly maximum EUR 200 if sent/corrected within 15 days; applies to operations from July 2022 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-11-27 |
 
@@ -365,6 +365,9 @@ Official sources below were read on 27 November 2026; article references concern
 | Legal interest: D.M. 10 December 2025, operative article | https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticoloDefault/originario?atto.codiceRedazionale=25A06705&atto.dataPubblicazioneGazzetta=2025-12-13&atto.tipoProvvedimento=DECRETO | 2026-11-27 |
 | TD17/TD18 and foreign supplier exceptions: AdE compilation guide v1.10 | https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_compilazione-fe-esterometro-v1-10_aprile_2025 | 2026-11-27 |
 | 2027 LIPE continuity: attached D.Lgs. 141/2026 arts. 51 and 368 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-08-05;141:1~art51!vig=2027-01-01 | 2026-11-27 |
+| Motor-vehicle derogation through 2028: Decision (EU) 2025/2529 amending 2007/441/EC | https://eur-lex.europa.eu/eli/dec_impl/2025/2529/oj/ita/pdf | 2026-11-27 |
+| Restaurant/accommodation deduction: AdE circular 53/E of 2008 | https://def.finanze.it/DocTribFrontend/getPrassiDetail.do?id=%7BD1D18AAB-C63D-4548-A23D-819C63A46F58%7D | 2026-11-27 |
+| Employee-beneficiary invoice identification: AdE circular 6/E of 2009 | https://def.finanze.it/DocTribFrontend/getPrassiDetail.do?id=%7B0E99AE4F-3000-4A93-8BBB-49B6D428B5AB%7D | 2026-11-27 |
 | Split-payment EU extension: Decision 2026/1728 art. 1 | https://eur-lex.europa.eu/eli/dec_impl/2026/1728 | 2026-11-27 |
 | Split supplier settlement: D.M. 23 January 2015 art. 2 | https://www.gazzettaufficiale.it/eli/id/2015/02/03/15A00690/sg | 2026-11-27 |
 | IVA consolidation from 2027: D.Lgs. 10/2026, attached text art. 171 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-01-19;10:1~art171!vig=2027-01-01 | 2026-11-27 |
