@@ -4,7 +4,7 @@ description: Compute 2026 SEP, solo 401(k), SIMPLE IRA and personal IRA contribu
 version: "1.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -14,6 +14,10 @@ type: computation
 # US self-employed retirement contributions, tax year 2026
 
 For a sole proprietor with one business and no common-law employees, compute the deductible SE-tax share first, then the plan contribution. A SEP has employer contributions; a solo 401(k) can also have elective deferrals. Plan terms, earned income and deadlines constrain both. A personal IRA has a separate contribution limit and income tests.
+
+## Scope
+
+Federal contribution/deduction calculations for one Schedule C business and its owner, with no employees. Employee plans, partnerships, S corporations and specialist distribution/conversion questions follow the referrals below.
 
 ## Ask the client first
 
@@ -80,7 +84,7 @@ These are ordinary calendar-year dates; disaster or other special postponements 
 | First SIMPLE adoption | Effective between 1 January and 1 October if no prior SIMPLE; a new employer formed after 1 October acts as soon as administratively feasible. Replacement of a previous SIMPLE is effective only on 1 January | [Pub. 560, SIMPLE set-up deadline](https://www.irs.gov/publications/p560) |
 | SIMPLE salary reduction versus employer contribution | For a self-employed individual, salary reduction within 30 days after year end (30 January 2027 for 2026); matching/nonelective amounts by the return due date including extensions. Do not apply the solo-401(k) deposit deadline to SIMPLE deferrals | [Pub. 560, Time limits for contributing funds](https://www.irs.gov/publications/p560); [IRS SIMPLE FAQs, depositing contributions](https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-simple-ira-plans) |
 | Personal traditional/Roth IRA contribution | Ordinary unextended return deadline, 15 April 2027; filing extension does not extend it | [Pub. 590-A](https://www.irs.gov/publications/p590a) |
-| One-participant annual return | Apply the combined-assets test across the employer's one-participant plans: exemption at 250,000 or less, except the final plan year. File Form 5500-EZ when required; seventh-month deadline moves to the next business day, so a calendar-2026 plan is ordinarily due **2 August 2027**, not Saturday 31 July | [Form 5500-EZ instructions, Who Does Not Have To File / When To File](https://www.irs.gov/pub/irs-pdf/i5500ez.pdf) |
+| One-participant annual return | Apply the combined-assets test across the employer's one-participant plans: exemption at 250,000 or less, except the final plan year. File Form 5500-EZ when required; seventh-month deadline moves to the next business day, so the computed ordinary deadline for a calendar-2026 plan is **2 August 2027**, not Saturday 31 July | [Form 5500-EZ instructions, Who Does Not Have To File / When To File](https://www.irs.gov/pub/irs-pdf/i5500ez.pdf) |
 
 A SEP does not require an annual Form 5500-EZ. Compare administration, actual plan terms and deposit dates when choosing a plan, not just the maximum deduction. For an under-50 owner with the full basic deferral available and a 25% employer rate, the solo plan reaches 72,000 at N = 237,500; the SEP reaches 72,000 at N = 360,000. The full 24,500 difference is possible from N = 40,833.333… to 237,500; below that, worksheet compensation constraints matter. These are computed comparisons, not universal plan recommendations. [Pub. 560, worksheet and SEP reporting](https://www.irs.gov/publications/p560); [2026 limits](https://www.irs.gov/pub/irs-drop/n-25-67.pdf).
 
@@ -218,15 +222,15 @@ This is general federal computational information. Apply reasonable factual and 
 
 ## Sources
 
-Read 2026-11-26 except the unchanged Schedule C/SE and SE-deduction dependency quotes reused from completed reads on 2026-11-22. Current-year operative limits are distinguished from the expressly historical cases.
+Read 2026-11-26 to 2026-11-27 as recorded below, except the unchanged Schedule C/SE and SE-deduction dependency quotes reused from completed reads on 2026-11-22. Current-year operative limits are distinguished from the expressly historical cases.
 
-- [IRS Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf): 2026 plan/IRA limits and income ranges.
-- [IRS Publication 560 (2025 edition)](https://www.irs.gov/publications/p560): single-business earnings, SIMPLE base, contributions, elections, deadlines, reduced rate and deduction worksheet.
-- [26 U.S.C. 401(b)(2), (c)(2)](https://uscode.house.gov/us/usc/t26/s401/), [408(p)](https://uscode.house.gov/us/usc/t26/s408/) and [414(v)](https://uscode.house.gov/us/usc/t26/s414/): late adoption/first-year deferrals, SIMPLE and catch-up conditions. Statute controls over the publication's unqualified year-end plan-adoption sentence.
-- [IRS Publication 590-A (2025 edition, including 2026 updates)](https://www.irs.gov/publications/p590a): IRA compensation, coverage, MAGI, spousal limits, filing and contribution dates.
-- [IRS one-participant 401(k) plans](https://www.irs.gov/retirement-plans/one-participant-401k-plans): owner contributions and shared deferrals.
-- [Schedule 1](https://www.irs.gov/pub/irs-pdf/f1040s1.pdf), [Form 7206](https://www.irs.gov/pub/irs-pdf/f7206.pdf) and [IRS QBI guidance](https://www.irs.gov/newsroom/qualified-business-income-deduction): deduction mapping and attribution.
-- [Form 5500-EZ instructions](https://www.irs.gov/pub/irs-pdf/i5500ez.pdf): combined assets, final-year filing and weekend rule; these instructions' “does not exceed” exemption controls this Guide over the overview page's abbreviated threshold.
-- [Notice 2024-80](https://www.irs.gov/pub/irs-drop/n-24-80.pdf) and [2025 Schedule SE](https://www.irs.gov/pub/irs-prior/f1040sse--2025.pdf): historical 2025 cases; [current Schedule SE](https://www.irs.gov/pub/irs-pdf/f1040sse.pdf) and [26 U.S.C. 164(f)](https://uscode.house.gov/us/usc/t26/s164/) for the unchanged SE-tax computation dependency.
+- [IRS Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf): 2026 plan/IRA limits and income ranges. Read 2026-11-26 (remaining eligibility and deadline clauses checked 2026-11-27).
+- [IRS Publication 560 (2025 edition)](https://www.irs.gov/publications/p560): single-business earnings, SIMPLE base, contributions, elections, deadlines, reduced rate and deduction worksheet. Read 2026-11-26 (remaining eligibility and deadline clauses checked 2026-11-27).
+- [26 U.S.C. 401(b)(2), (c)(2)](https://uscode.house.gov/us/usc/t26/s401/), [408(p)](https://uscode.house.gov/us/usc/t26/s408/) and [414(v)](https://uscode.house.gov/us/usc/t26/s414/): late adoption/first-year deferrals, SIMPLE and catch-up conditions. Statute controls over the publication's unqualified year-end plan-adoption sentence. Read 2026-11-26 (remaining eligibility and deadline clauses checked 2026-11-27).
+- [IRS Publication 590-A (2025 edition, including 2026 updates)](https://www.irs.gov/publications/p590a): IRA compensation, coverage, MAGI, spousal limits, filing and contribution dates. Read 2026-11-26 (remaining eligibility and deadline clauses checked 2026-11-27).
+- [IRS one-participant 401(k) plans](https://www.irs.gov/retirement-plans/one-participant-401k-plans): owner contributions and shared deferrals. Read 2026-11-26 (remaining eligibility and deadline clauses checked 2026-11-27).
+- [Schedule 1](https://www.irs.gov/pub/irs-pdf/f1040s1.pdf), [Form 7206](https://www.irs.gov/pub/irs-pdf/f7206.pdf) and [IRS QBI guidance](https://www.irs.gov/newsroom/qualified-business-income-deduction): deduction mapping and attribution. Read 2026-11-26 (remaining eligibility and deadline clauses checked 2026-11-27).
+- [Form 5500-EZ instructions](https://www.irs.gov/pub/irs-pdf/i5500ez.pdf): combined assets, final-year filing and weekend rule; these instructions' “does not exceed” exemption controls this Guide over the overview page's abbreviated threshold. Read 2026-11-26 (remaining eligibility and deadline clauses checked 2026-11-27).
+- [Notice 2024-80](https://www.irs.gov/pub/irs-drop/n-24-80.pdf) and [2025 Schedule SE](https://www.irs.gov/pub/irs-prior/f1040sse--2025.pdf): historical 2025 cases; [current Schedule SE](https://www.irs.gov/pub/irs-pdf/f1040sse.pdf) and [26 U.S.C. 164(f)](https://uscode.house.gov/us/usc/t26/s164/) for the unchanged SE-tax computation dependency. Read 2026-11-26 (remaining eligibility and deadline clauses checked 2026-11-27).
 
 Not yet confirmed: final 2026 worksheet/form box numbering and individual eligibility in the illustrative cases. Do not file from assumed facts or historical form positions; referred topics have no usable tax conclusion here.
