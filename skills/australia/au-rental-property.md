@@ -1,10 +1,10 @@
 ---
 name: au-rental-property
 description: Use this skill whenever asked about Australian rental property income and deductions. Trigger on phrases like "rental income Australia", "negative gearing", "rental deductions", "investment property tax", "Division 40", "Division 43", "capital works deduction", "depreciation schedule", "rental property CGT", "rental withholding", "body corporate fees", "strata levy deduction", "repairs vs improvements", "TR 97/23", "GST on property", "land tax on an investment property", "stamp duty on a rental", or any question about completing the rental property schedule in an Australian individual tax return. This skill covers rental income reporting, deductible expenses, depreciation (Div 40 plant and Div 43 building), negative gearing including the enacted 1 July 2027 limit, CGT on disposal, foreign resident withholding, the GST decision path, the state and territory taxes that attach to property, and common transaction classifications. ALWAYS read this skill before touching any Australian rental property work.
-version: "1.8"
+version: "1.9"
 jurisdiction: AU
 tax_year: 2026
-last_updated: 2026-11-12
+last_updated: 2026-11-26
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -17,9 +17,9 @@ domain: income-tax
 
 ## AU Rental Property
 
-## Australia Rental Property -- Income & Deductions Skill v1.8
+## Australia Rental Property -- Income & Deductions Skill v1.9
 
-Australia Rental Property -- Income & Deductions Skill v1.8
+Australia Rental Property -- Income & Deductions Skill v1.9
 
 ## Section 1 -- Quick Reference
 
@@ -35,8 +35,7 @@ Australia Rental Property -- Income & Deductions Skill v1.8
 | Supporting legislation | ITAA 1936; TR 97/23 (repairs vs improvements); TR 2026/1 (rental income and deductions for individuals not in business); PCG 2026/2 (apportionment); PCG 2026/3 (holiday homes and section 26-50); [ATO, Rental properties guide 2026](https://www.ato.gov.au/forms-and-instructions/rental-properties-2026) |
 | Tax authority | Australian Taxation Office (ATO) |
 | Filing portal | myTax / tax agent lodgement (Online Services for Agents) |
-| Filing deadline | 31 October (self-lodgement); agent-managed deadlines vary |
-| Skill version | 1.8 |
+| Filing deadline | Usually 31 October for self-lodgement, moving to the next business day when 31 October falls on a weekend. Check the applicable year's deadline and any registered-agent schedule. [ATO due dates](https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return) |
 
 ### Select the income year before calculating
 
@@ -59,10 +58,10 @@ Section 2.8 covers events in 2026-27; use `au-capital-gains.md` for later events
 | Medicare levy | 2% of taxable income |
 | Medicare levy surcharge (no PHI) | 1%, 1.25% or 1.5% where income for MLS purposes exceeds $105,000 single or $210,000 family in 2026-27 ($101,000 and $202,000 in 2025-26) |
 | CGT discount (eligible resident individuals, 12+ months) | 50% for CGT events before 1 July 2027; residency and other conditions apply. See Section 2.8 and [ITAA 1997, s 115-100](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html) |
-| Div 43 rate (post-Sep 1987 residential) | 2.5% of construction cost |
-| Div 43 rate (post-Feb 1992 short-term traveller) | 4% |
+| Div 43 rate (ordinary residential) | Generally 2.5% of eligible construction expenditure from 16 September 1987. Check the historical contract and eligible build-to-rent exceptions. [ATO, capital works rates](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/capital-expenses/work-out-your-capital-works-deductions) |
+| Div 43 rate (qualifying short-term traveller accommodation) | 4% for eligible capital works begun from 27 February 1992. Apply Section 2.6 for earlier works and the qualifying-use test. [ATO, capital works rates](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/capital-expenses/work-out-your-capital-works-deductions) |
 | Low-value asset pool threshold | Strictly less than $1,000; low-cost and low-value tests differ. [ITAA 1997, s 40-425](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html) |
-| Immediate deduction threshold (Div 40) | $300 |
+| Immediate deduction threshold (Div 40) | $300 or less for a qualifying non-business asset. Check the main use and the set and identical-asset rules in s 40-80(2). [ATO, Rental properties 2026, rental expenses](https://www.ato.gov.au/forms-and-instructions/rental-properties-2026/rental-expenses) |
 
 ### Individual Marginal Tax Rates (2026-27)
 
@@ -327,10 +326,13 @@ expected:
 
 | Construction Date | Rate | Notes |
 | --- | --- | --- |
-| Before 18 July 1985 | 0% | No deduction available |
-| 18 Jul 1985 -- 15 Sep 1987 | 4% | Residential/non-residential |
-| After 15 Sep 1987 (residential) | 2.5% | 40-year write-off |
-| After 15 Sep 1987 (short-term traveller) | 4% | Certain accommodation |
+| Before 18 July 1985 | Ordinary residential buildings do not qualify | Eligible short-term traveller buildings could qualify from 22 August 1979 and eligible non-residential buildings from 20 July 1982. Check the applicable rate and remaining period. [ATO](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/capital-expenses/work-out-your-capital-works-deductions) |
+| 18 July 1985 to 15 September 1987 | 4% | Eligible buildings. Check whether the 25-year deduction period has expired. [ATO](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/capital-expenses/work-out-your-capital-works-deductions) |
+| From 16 September 1987 | Generally 2.5% | Ordinary residential buildings. Check qualifying earlier contracts and the separate 4% rate for eligible build-to-rent developments. [ATO](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/capital-expenses/work-out-your-capital-works-deductions) |
+| 16 September 1987 to 26 February 1992 | Generally 2.5% | Qualifying short-term traveller accommodation. Certain pre-16 September 1987 contracts retain 4%. [ITAA 1997, s 43-25](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
+| From 27 February 1992 | 4% for qualifying use | Short-term traveller accommodation meeting the statutory 4% use test, which can require at least 10 qualifying rooms or apartments. [ITAA 1997, ss 43-25, 43-145 and 43-152](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
+
+[ATO, capital works rates by start date and building use](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/capital-expenses/work-out-your-capital-works-deductions). [ITAA 1997, ss 43-25, 43-145 and 43-152](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html).
 
 - **Base** -- Original construction cost (obtain from quantity surveyor report or builder records). NOT the purchase price of the property.
 - **Successor owner and annual base** -- A sale does not restart the capital works period. Calculate the new owner's deduction from the eligible original construction-expenditure pool attributable to their area, using the applicable rate, qualifying days and use adjustments. The statutory undeducted construction expenditure is a cap, not the base to multiply by 2.5%. It can reflect statutory reductions even where a previous owner claimed no deduction. Check construction dates, completion, qualifying use and any conditional 4% rate rather than assuming 2.5% universally. [ITAA 1997, ss 43-15, 43-115, 43-210, 43-215 and 43-230 to 43-240](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html) and [ATO, changes in building ownership](https://www.ato.gov.au/forms-and-instructions/rental-properties-2026/rental-expenses#Changesinbuildingownership).
@@ -453,7 +455,7 @@ FRCGW concerns a property disposal. Do not apply its sale-price rate to ordinary
 
 | Rule | Detail |
 | --- | --- |
-| Property-sale FRCGW | For contracts signed from 1 January 2025, the general rate is 15% of market value, with no property value threshold. In an arm's length sale, market value is usually the sale price. For contracts from 1 July 2017 to 31 December 2024, the rate was 12.5% where the value was $750,000 or more. Apply certificates, variations and other applicable exclusions. [ATO, FRCGW overview](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-resident-capital-gains-withholding-overview) |
+| Property-sale FRCGW | For contracts entered into from 1 January 2025, the general rate is 15% of the first element of the purchaser's CGT cost base just after acquisition, subject to statutory adjustments. This is generally the price for an arm's-length sale and may be market value where the substitution rule applies. There is no real-property value threshold. For contracts from 1 July 2017 to 31 December 2024, the rate was 12.5% for real property with market value of $750,000 or more. Apply certificates, variations and other exclusions. [TAA 1953, Schedule 1 s 14-200](https://www.legislation.gov.au/C1953A00001/2025-08-03/2025-08-03/text/original/epub/OEBPS/document_1/document_1.html). [TAA 1953, Schedule 1 ss 14-200 and 14-215, compilation of 11 December 2024 (earlier rate and threshold)](https://www.legislation.gov.au/C1953A00001/2024-12-11/2024-12-11/text/original/epub/OEBPS/document_1/document_1.html). [ATO, FRCGW overview](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-resident-capital-gains-withholding-overview) |
 | Purchaser's obligation | Where FRCGW applies, the purchaser withholds and pays the ATO at or before settlement. The withholding is a credit towards the vendor's tax assessment, not the final CGT liability. [ATO, FRCGW overview](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-resident-capital-gains-withholding-overview) and [variations](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-residents-capital-gains-withholding-variations) |
 | Clearance certificate | An Australian resident vendor generally supplies a valid ATO certificate to the purchaser at or before settlement to avoid FRCGW. Foreign residents cannot use a resident clearance certificate. Check specific legislative-instrument exceptions and apply early. [ATO, clearance certificates](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/australian-residents-and-clearance-certificates) |
 | Variation | A foreign resident vendor may apply for a reduced rate where the standard withholding is too high relative to estimated Australian tax on the disposal. Obtain and give the variation notice to the purchaser at or before settlement. [ATO, variations](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-residents-capital-gains-withholding-variations) |
@@ -468,7 +470,7 @@ FRCGW concerns a property disposal. Do not apply its sale-price rate to ordinary
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| REAL ESTATE AGENT [name], RENT COLLECTION | Assessable rental income | Net of agent commission (report gross; deduct commission separately) |
+| REAL ESTATE AGENT [name], RENT COLLECTION | Assessable rental income | Report gross rent. Claim eligible agent commission separately. |
 | TENANT [name], RENT PAYMENT, BOND TRANSFER | Assessable rental income | Bond held in trust is NOT income until forfeited |
 | [INSURER] CLAIM PAYOUT, LOSS OF RENT | Assessable | Insurance for lost rent |
 | AIRBNB PAYOUT, STAYZ PAYOUT | Assessable | Short-term rental income |
@@ -477,17 +479,19 @@ FRCGW concerns a property disposal. Do not apply its sale-price rate to ordinary
 
 **Expense Patterns (Debits) -- Immediate Deductions**
 
+Apply the income-producing-use, apportionment and specific denial rules in Sections 2 and 6 to each expense. A bank description alone does not establish a deduction. [ATO, claiming rental expenses](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/how-to-claim-rental-expenses).
+
 | Pattern | Category | Treatment |
 | --- | --- | --- |
-| [COUNCIL NAME] RATES, COUNCIL RATES | Council rates | Fully deductible |
-| WATER CORP, SA WATER, SYDNEY WATER | Water rates | Fully deductible |
-| BODY CORPORATE, STRATA LEVY, OWNERS CORP | Body corporate fees | Fully deductible (admin + sinking fund) |
-| [STATE] LAND TAX, REVENUE NSW, SRO VIC | Land tax | Fully deductible |
-| [AGENT NAME] MANAGEMENT FEE, LETTING FEE | Property management | Fully deductible |
-| [INSURER] LANDLORD INSURANCE, BUILDING INS | Insurance | Fully deductible |
+| [COUNCIL NAME] RATES, COUNCIL RATES | Council rates | Deduct the eligible rental-use portion |
+| WATER CORP, SA WATER, SYDNEY WATER | Water rates | Deduct the eligible rental-use portion |
+| BODY CORPORATE, STRATA LEVY, OWNERS CORP | Body corporate fees | Regular administration and general maintenance levies may qualify immediately. Apply Section 2.3 to a levy that funds a specific capital improvement. |
+| [STATE] LAND TAX, REVENUE NSW, SRO VIC | Land tax | Deduct the eligible rental-use portion |
+| [AGENT NAME] MANAGEMENT FEE, LETTING FEE | Property management | Deduct the eligible fee for rental activity |
+| [INSURER] LANDLORD INSURANCE, BUILDING INS | Insurance | Deduct the eligible rental-use portion |
 | PLUMBER, ELECTRICIAN, [TRADESPERSON] REPAIR | Repair (if restoring) | Deductible if repair per TR 97/23 |
 | BUNNINGS, HARDWARE (minor repair materials) | Repair materials | Deductible if repair nature |
-| PEST CONTROL, TERMITE INSPECTION | Pest control | Fully deductible |
+| PEST CONTROL, TERMITE INSPECTION | Pest control | Deduct the eligible rental-use portion |
 
 ### 3.3 Expense Patterns (Debits) -- Capital (Depreciate)
 
@@ -495,10 +499,10 @@ FRCGW concerns a property disposal. Do not apply its sale-price rate to ordinary
 
 | Pattern | Category | Treatment |
 | --- | --- | --- |
-| KITCHEN RENOVATION, BATHROOM RENO | Capital improvement | Add to cost base; Div 43 if structural |
-| NEW HOT WATER SYSTEM (replacement-upgrade) | Div 40 asset | Depreciate over 12 years |
-| NEW AIR CONDITIONER (split system install) | Div 40 asset | Depreciate over 10 years |
-| NEW CARPET (full replacement, better quality) | Capital improvement | Div 40 for first owner; cost base for subsequent |
+| KITCHEN RENOVATION, BATHROOM RENO | Capital improvement | Test eligible structural costs under Div 43 and apply the CGT cost base adjustment for claimed or claimable deductions. Classify separate plant under Div 40. |
+| NEW HOT WATER SYSTEM (replacement-upgrade) | Div 40 asset | Check the applicable effective life. Under the determination in Section 2.5, gas or electric is 12 years and solar is 15 years, excluding piping. |
+| NEW AIR CONDITIONER (split system install) | Div 40 asset | The determination in Section 2.5 specifies 10 years for mini split systems up to 20 kW, excluding ducting, pipes and vents. Check the asset type and applicable effective life. |
+| NEW CARPET (full replacement, better quality) | Div 40 asset | Test eligibility under Section 2.5. A separate balancing adjustment or CGT event K7 can apply to the asset on disposal where the relevant conditions are met. [ITAA 1997, s 104-235](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html). |
 
 ### 3.4 Loan / Interest Patterns
 
@@ -550,9 +554,9 @@ FRCGW concerns a property disposal. Do not apply its sale-price rate to ordinary
 | Item | Detail |
 | --- | --- |
 | Form | Matching-year Individual Tax Return Rent section and required rental schedule. **Not yet confirmed:** final 2026-27 labels/fields; verify before using Item 21 |
-| Reporting | Per-property basis (complete separate schedule for each property) |
+| Reporting | Keep each property's figures separately. For practitioner lodgement of individual returns requiring rental details, use the Multi-property rental schedule (RNTLPRPTY). In myTax, enter each property in Rent. For paper returns, use the matching-year instructions for totals and any items reported separately, such as low-value pool deductions. [ATO practitioner schedules](https://www.ato.gov.au/api/public/content/0-d765f2ce-a4f8-4851-85ff-299f2aa0ac28). [ATO 2026 paper instructions](https://www.ato.gov.au/forms-and-instructions/tax-return-for-individuals-2026-supplementary-section/income-questions-13-24-supplementary-tax-return-2026/21-rent-2026). |
 | Joint ownership | Each co-owner reports their share (typically 50/50 for joint tenants) |
-| Records retention | 5 years from date of lodgement (longer if CGT applies -- keep until 5 years after disposal) |
+| Records retention | ATO rental return instructions require income and expense records for 5 years from 31 October or actual lodgement if later. Keep CGT records for 5 years after it becomes certain no further relevant CGT event can happen. Check any longer period for depreciating assets, disputes, use of carried-forward losses or an amendment. [ATO rental records](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/records-for-rental-properties-and-holiday-homes). [ITAA 1997, s 121-25](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html). |
 | Quantity surveyor report | Recommended for all post-1985 properties to substantiate Div 43 and Div 40 claims |
 
 ## Section 6 -- Edge Cases
@@ -653,12 +657,12 @@ calculating anything, because the answer to one changes the inputs to another.
 
 | Event | Income tax | GST | CGT | State or territory |
 | --- | --- | --- | --- | --- |
-| Buying a residential investment property | Borrowing costs, and holding costs once available for rent | Generally input taxed on an existing residential premises, so no credit on the purchase. New residential premises may be taxable and may trigger GST at settlement | Establishes the cost base | Transfer duty, and possibly foreign purchaser surcharge duty |
+| Buying a residential investment property | Test borrowing and holding costs for the rental-income nexus, including before rent begins, and apply Section 2 restrictions | Generally input taxed on existing residential premises, with no credit on the purchase. New residential premises may be taxable and may trigger GST at settlement | Establishes the cost base | Transfer duty, and possibly foreign purchaser surcharge duty |
 | Holding and renting it out | Rental income assessable, deductions under Section 2, Div 40 and Div 43 | Residential rent is input taxed, so no GST on rent and no credits on expenses | Apply the Div 43 cost base adjustment for deductions claimed or still deductible, subject to the exceptions in Section 2.8 | Land tax, and possibly a foreign owner or vacancy surcharge |
-| Renovating | Repair deductible, improvement capital | Credits depend on whether the premises remain input taxed | Capital work enters the cost base or Div 43 | Nil, unless it changes the land tax position |
-| Short-stay or holiday letting | Apportionment for private use and periods not genuinely available | Commercial residential premises can be taxable rather than input taxed. Test this, do not assume | Main residence exemption can be lost or reduced | Some jurisdictions apply short-stay levies |
+| Renovating | Test repairs and capital improvements under Section 2.4 | Credits depend on whether the premises remain input taxed | Test Div 43 and adjust the cost base for deductible capital works | Check whether it changes the land tax position |
+| Short-stay or holiday letting | Apply the holiday-home denial in Section 6.3 before apportioning otherwise eligible expenses | Commercial residential premises can be taxable rather than input taxed. Test this, do not assume | Main residence exemption can be lost or reduced | Some jurisdictions apply short-stay levies |
 | Buying or holding a commercial property | Rent assessable, deductions available | Generally taxable, so GST on rent and credits on expenses, subject to registration. A going concern or margin scheme may apply on sale | Cost base as normal | Transfer duty and land tax |
-| Selling | Balancing adjustments on Div 40 assets | See `au-gst-property.md`. GST at settlement can require the purchaser to withhold | The CGT calculation. See `au-capital-gains.md` | Duty is payable by the purchaser, not the vendor |
+| Selling | Balancing adjustments on Div 40 assets | See `au-gst-property.md`. GST at settlement can require the purchaser to withhold | The CGT calculation. See `au-capital-gains.md` | Check the liable parties under the relevant duty legislation. For example, Queensland's ordinary rule applies to the parties to the transaction. [Duties Act 2001 (Qld), s 17](https://www.legislation.qld.gov.au/view/whole/pdf/inforce/2025-03-03/act-2001-071/lh) |
 | Selling as a foreign resident | Rental income to the date of sale | As above | Apply the residency-history discount rules, including eligible pre-8 May 2012 market-value treatment; main residence relief generally requires the foreign-resident life events test. See Section 2.8 | As above |
 
 ### 8.2 The GST decision path
@@ -680,10 +684,10 @@ question from this file alone.
 
 ### 8.3 State and territory taxes are not federal, and are not uniform
 
-Land tax, transfer duty, foreign purchaser and foreign owner surcharges, and vacancy or short-stay
-levies are imposed by each state and territory under its own Act. Thresholds, rates, exemptions,
-aggregation rules, trust surcharges and the definition of a principal place of residence all
-differ. A rule from one jurisdiction must never be applied to another.
+Where a state or territory imposes land tax, transfer duty, a foreign purchaser or foreign owner
+surcharge, or a vacancy or short-stay levy, apply its legislation. The Northern Territory has no
+land tax. Thresholds, rates, exemptions, aggregation rules, trust surcharges and the definition
+of a principal place of residence differ by jurisdiction. [Commonwealth Grants Commission, land tax assessment](https://www.cgc.gov.au/sites/default/files/2026-03/2025R_Commissions%20Assessment%20Methodology_Consolidated%20%28Updated%202026%29.pdf).
 
 Establish the jurisdiction first, then read that jurisdiction's own guidance:
 
