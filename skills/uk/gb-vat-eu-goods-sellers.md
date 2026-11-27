@@ -7,8 +7,6 @@ jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-authored_by: Michael Cutajar and the OpenAccountants team
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 domain: vat-gst
 ---
