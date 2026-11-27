@@ -1,10 +1,10 @@
 ---
 name: us-self-employed-health-insurance
-description: Compute the 2026 US self-employed health insurance deduction under 26 U.S.C. 162(l) for a sole proprietor or single-member LLC owner, on Form 7206 or the Schedule 1 worksheet. Covers medical, dental, vision, Medicare and COBRA premiums, qualified long-term care premiums capped by age ($500, $930, $1,860, $4,960, $6,200 for 2026 under Rev. Proc. 2025-32), the earned income limit (net profit less the deductible half of self-employment tax and the retirement plan deduction), the month-by-month bar for any month the person could join a subsidized employer plan, children under 27, and the interaction with the premium tax credit. Trigger on "self-employed health insurance", "Form 7206", "Schedule 1 line 17", "deduct my health premiums", "Medicare premiums self-employed", "long-term care premium limit". Load after us-schedule-c-and-se-computation. Federal only.
-version: "1.0"
+description: Compute the 2026 federal self-employed health insurance deduction for a Schedule C sole proprietor or disregarded single-member LLC. Covers the business earned-income limit, monthly subsidized-employer-plan bar, family coverage, Medicare, qualified long-term care age caps, Form 7206 and Schedule 1. Marketplace credit coordination and specialist cases have explicit holds. Includes historical 2025 examples separately. Load after us-schedule-c-and-se-computation.
+version: "1.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -13,132 +13,67 @@ type: computation
 
 # US self-employed health insurance deduction, tax year 2026
 
-> **Source-cited draft.** Built from 26 U.S.C. 162(l), 213 and 36B, Rev. Proc. 2025-32, Form 7206 and Schedule 1 (Form 1040) as printed for 2025, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
-
-**Answer first.** A self-employed person deducts health insurance premiums for themselves, their spouse, their dependants and any child under 27 at the end of 2026, as an adjustment to income (Schedule 1, line 17 on the 2025 form), not on Schedule C. The deduction cannot exceed the earned income from the business under which the plan is established: net profit, less the deductible half of self-employment tax, less the SEP, SIMPLE or qualified plan deduction for that business. No deduction is allowed for any month the person was **eligible** for a subsidized employer plan (their own, their spouse's, or a dependant's or under-27 child's employer), whether or not they enrolled. Long-term care premiums count only up to the 2026 age limit. The deduction does not reduce self-employment tax.
+**Answer first.** Deduct eligible premiums paid for medical insurance established under the business, up to that business's earned-income limit, as an adjustment to income. Test subsidized employer-plan eligibility month by month, even if coverage was declined. Apply the separate long-term care test and age cap. The deduction does not reduce self-employment tax. [26 U.S.C. 162(l)](https://uscode.house.gov/us/usc/t26/s162/).
 
 ## Scope and who this is for
 
-In scope: the 162(l) deduction of one individual for tax year 2026 who has net profit from a Schedule C business (sole proprietor or single-member LLC disregarded for federal tax). The result goes to Schedule 1 and reduces adjusted gross income.
+One Schedule C sole proprietor or owner of a disregarded single-member LLC, using the regular Schedule SE method. Personal services must be a material income-producing factor under [section 401(c)(2)](https://uscode.house.gov/us/usc/t26/s401/). Federal tax year 2026; the historical cases below remain 2025. Partners, more-than-2% S corporation shareholders, farming, optional SE methods and clergy are outside this computation: Check this point with one of our partner accountants.
 
-Out of scope, and where it goes:
+Use `us-sole-prop-bookkeeping` for transaction classification, `us-schedule-c-and-se-computation` for profit and the deductible half of SE tax, and `us-self-employed-retirement` for the business retirement deduction. Pass the result to `us-qbi-deduction`, `us-quarterly-estimated-tax` and `us-federal-return-assembly`; `us-ca-return-assembly` receives the federal result only. State mandates and credits remain outside scope.
 
-| Topic | Skill |
-| --- | --- |
-| Classifying the bank and card transactions | `us-sole-prop-bookkeeping` |
-| Schedule C net profit and Schedule SE (the deductible half) | `us-schedule-c-and-se-computation` |
-| The SEP, SIMPLE or solo 401(k) deduction that reduces the limit | `us-self-employed-retirement` |
-| Form 8962, the premium tax credit and its repayment | `us-premium-tax-credit-8962` |
-| QBI, which this deduction reduces | `us-qbi-deduction` |
-| Putting the return together in the right order | `us-federal-return-assembly` |
-| Partners and S corporation shareholders who own more than 2% | refer (see the refusal table) |
+**Form status.** The [2026 Form 7206](https://www.irs.gov/pub/irs-dft/f7206--dft.pdf) and [2026 Schedule 1](https://www.irs.gov/pub/irs-dft/f1040s1--dft.pdf) read here are drafts, not forms for filing. The line locators below match those drafts and the final 2025 editions. Use the final 2026 forms before filing; no final 2026 box is certified here.
 
 ## Ask the client first
 
-1. **Coverage by month for 2026:** who was covered (self, spouse, dependants, children under 27 at 31 December 2026), the premium paid for each month, and the insurer statements or Form 1095-A, 1095-B or 1095-C.
-2. **Employer plan eligibility by month:** for each month, could the person join a subsidized health plan through their own job, their spouse's job, or the job of a dependant or under-27 child? Eligible counts even if declined. Ask separately about plans that include long-term care cover.
-3. **Marketplace coverage:** was the plan bought on HealthCare.gov or a state exchange, and was advance premium tax credit paid?
-4. **Long-term care:** is the policy a qualified long-term care insurance contract, what was paid, and the age of each insured person at 31 December 2026.
-5. **Medicare:** Part B, Part D, Medigap and Medicare Advantage premiums, and any voluntary Part A premium. The Social Security benefit statement (SSA-1099) shows Part B and Part D amounts withheld.
-6. **The business:** which business the plan is established under (if more than one Schedule C), and the SEP, SIMPLE or solo 401(k) deduction for that business.
-7. **Other filings:** any Form 2555 (foreign earned income), and whether the spouse is also self-employed.
+Get the monthly premium statements, payment evidence, insured persons and year-end ages; actual employer eligibility dates, including waiting periods, through the taxpayer, spouse, dependants and under-27 children; and whether each employer plan includes long-term care. Obtain the policyholder and business-establishment evidence, all businesses' profits/losses, the actual deductible half of SE tax, the attributable retirement deduction and any Form 2555. For Marketplace coverage obtain Form 1095-A and the credit/reconciliation computation. For Medicare use actual SSA-1099 and insurer statements; for long-term care obtain the insurer's qualification evidence and each insured person's age.
+
+Missing eligibility, premiums, months, policy type, business attribution or credit information means **no usable final deduction until resolved**. Do not assume employer cover exists, select the highest- or lowest-profit business, insert standard Medicare premiums, or default to a deduction without coordinating a possible credit.
 
 ## The method, step by step
 
 ### Rates, bands and thresholds
 
-| Item | Amount, 2026 | Source |
+| Item and condition | Amount, 2026 | Source |
 | --- | --- | --- |
-| Share of eligible premiums deductible | 100%, up to the earned income limit | [26 U.S.C. 162(l)(1) and (2)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm) |
-| Child covered whatever their dependency status, if not yet this age at year end | 27 | [26 U.S.C. 162(l)(1)(D)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm) |
-| Eligible long-term care premium, age 40 or less at year end | USD 500 | [Rev. Proc. 2025-32, section 4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Eligible long-term care premium, age 41 to 50 | USD 930 | [Rev. Proc. 2025-32, section 4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Eligible long-term care premium, age 51 to 60 | USD 1,860 | [Rev. Proc. 2025-32, section 4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Eligible long-term care premium, age 61 to 70 | USD 4,960 | [Rev. Proc. 2025-32, section 4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Eligible long-term care premium, over 70 | USD 6,200 | [Rev. Proc. 2025-32, section 4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Medical expense floor on Schedule A, for premiums the limit cuts off | 7.5% of adjusted gross income | [26 U.S.C. 213(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVII-sec213.htm) |
+| Eligible paid premiums, before the earned-income cap | 100% | [162(l)(1)–(2)](https://uscode.house.gov/us/usc/t26/s162/) |
+| Nondependent child must be below this age at year end | 27 | [162(l)(1)(D)](https://uscode.house.gov/us/usc/t26/s162/) |
+| Qualified LTC, attained age 40 or less at year end, per person | USD 500 | [Rev. Proc. 2025-32 §4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Qualified LTC, age 41–50 | USD 930 | [Rev. Proc. 2025-32 §4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Qualified LTC, age 51–60 | USD 1,860 | [Rev. Proc. 2025-32 §4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Qualified LTC, age 61–70 | USD 4,960 | [Rev. Proc. 2025-32 §4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Qualified LTC, age over 70 | USD 6,200 | [Rev. Proc. 2025-32 §4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Schedule A qualifying unreimbursed medical expenses, if itemizing | Only excess over 7.5% of AGI | [213(a)](https://uscode.house.gov/us/usc/t26/s213/) |
 
-The long-term care limits are per insured person, by that person's age at the end of 2026. The 2026 Medicare premium amounts are not restated here: use the amounts on the person's own statements.
+1. **Establish the plan.** A Schedule C policy may be in the business's or individual's name. Identify the actual business under which it is established. Use a separate Form 7206 for each business with its own plan; the same person's LTC cap is shared across forms. [Form 7206 instructions](https://www.irs.gov/instructions/i7206).
+2. **Remove barred months.** Any eligibility during a month for a subsidized health plan maintained by an employer of the taxpayer, spouse, dependant or under-27 child bars that month's deduction, whether enrolled or not. A waiting period ends when eligibility actually starts. Apply separately to plans including qualified LTC coverage and plans without it; an unsubsidized plan alone does not trigger the statutory bar. [162(l)(2)(B)](https://uscode.house.gov/us/usc/t26/s162/); [instructions, Other coverage](https://www.irs.gov/instructions/i7206).
+3. **Eligible premiums (lines 1–3).** Include amounts actually paid for medical, dental and vision cover for self, spouse, dependants and a child under 27 at year end even if not dependent. Add qualified LTC premiums only up to the smaller of actual eligible payments and the per-person age cap. Do not double-count a payment or include excluded retired-public-safety-officer distributions. Medicare premiums voluntarily paid for insurance in the individual's name similar to qualifying private insurance can count; there is nothing to deduct for premium-free coverage. [162(l)(1), (2)(C)](https://uscode.house.gov/us/usc/t26/s162/); [7206 instructions](https://www.irs.gov/instructions/i7206).
+4. **Marketplace hold.** Marketplace coverage, APTC, a possible premium tax credit or part-year credit/deduction coordination requires `us-premium-tax-credit-8962`. The deduction and credit affect each other; their combined benefit cannot cover more than the premiums. The 2025 Pub. 974 supplies simplified and iterative methods, not the final 2026 credit rules. Do not use the old deduction-only default, a marginal-rate cutoff or a homemade iteration. Until the 2026 credit position and method are resolved, no usable final deduction for this case: Check this point with one of our partner accountants. [Pub. 974, Self-Employed Health Insurance Deduction and PTC](https://www.irs.gov/pub/irs-pdf/p974.pdf).
+5. **Earned-income limit (lines 4–13).** For the ordinary Schedule C case, start with that business's net profit (line 4). Line 5 totals profits of profitable businesses and the specified other allocable earned income, **excluding net losses**. Line 6 is line 4 divided by line 5; line 7 allocates the actual deductible half of SE tax using that proportion. SE tax itself is computed upstream using the applicable profit/loss aggregation; do not ignore a loss in that upstream calculation. Subtract line 7 and the allowable SEP, SIMPLE or qualified-plan deduction attributable to this same business (line 9). Subtract any Form 2555 line 45 amount attributable to the business (line 12). A zero/negative available limit gives no deduction in this ordinary case; optional-method cases are held above. [401(c)(2)](https://uscode.house.gov/us/usc/t26/s401/); [2026 draft Form 7206 lines 4–13](https://www.irs.gov/pub/irs-dft/f7206--dft.pdf).
+6. **Deduct the smaller** of eligible premiums (line 3) and the available earned-income limit (line 13); line 14 flows to Schedule 1 line 17. This is the owner's adjustment to income, not a Schedule C expense. It does not reduce Schedule SE earnings. Compute any attributable QBI adjustment in `us-qbi-deduction`, rather than assuming every deduction automatically reduces every business's QBI. [162(l)(2)–(4)](https://uscode.house.gov/us/usc/t26/s162/); [2025 Form 7206](https://www.irs.gov/pub/irs-prior/f7206--2025.pdf).
+7. **Unused premiums.** There is no section 162(l) carryforward of premiums disallowed for this year. Otherwise qualifying, uncompensated medical premiums not deducted here may enter Schedule A if itemizing, subject to section 213's own covered-person test and 7.5% AGI floor. The under-27 rule does **not** automatically extend to Schedule A. LTC premiums above the age cap are excluded there too. Never deduct the same premium here and on Schedule A. [162(l)(1)–(3)](https://uscode.house.gov/us/usc/t26/s162/); [213(a), (d)(1), (10)](https://uscode.house.gov/us/usc/t26/s213/); [Pub. 502, Child under age 27](https://www.irs.gov/pub/irs-pdf/p502.pdf).
 
-### Step 1: list the eligible premiums by month (Form 7206 lines 1 to 3)
-
-1. Take each month of 2026. Drop any month in which the person was eligible to participate in a subsidized plan of any employer of the person, their spouse, a dependant or an under-27 child. The test is eligibility, not enrolment. It is run separately for plans with long-term care cover and plans without it, so eligibility for an employer medical plan does not bar long-term care premiums, and the reverse. Source: [26 U.S.C. 162(l)(2)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm).
-2. For the remaining months, add the premiums for medical, dental and vision cover for the person, spouse, dependants and under-27 children (line 1). Marketplace and off-exchange policies, short-term health policies, Medicare Part B, Part D (including any income-related surcharge), Medigap, Medicare Advantage and voluntary Part A premiums count. COBRA premiums the person pays count.
-3. For a qualified long-term care contract, add the smaller of the premium paid and the 2026 age limit, per insured person (line 2). Source: [26 U.S.C. 162(l)(2)(C)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm) and [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf).
-4. With Marketplace cover and the premium tax credit, only the premium the person bears counts, and the credit and this deduction depend on each other (a lower AGI raises the credit, which lowers the premium borne). Resolve them together by the Pub. 974 simplified or iterative method in `us-premium-tax-credit-8962`. A dollar of premium is never both deducted and credited.
-5. Line 3 = line 1 + line 2.
-
-### Step 2: the earned income limit (Form 7206 lines 4 to 13)
-
-6. Line 4: net profit (Schedule C line 31) from the business under which the plan is established.
-7. Lines 5 to 7: with more than one business, the deductible half of self-employment tax (Schedule 1, line 15) is shared in proportion to net profits; with one business, line 7 is the whole deductible half.
-8. Line 9: the SEP, SIMPLE or qualified plan deduction (Schedule 1, line 16) for that business. Compute it first in `us-self-employed-retirement`. The health insurance deduction is not subtracted in that computation, so there is no loop.
-9. Line 10 = line 4 − line 7 − line 9. Line 12 takes out any Form 2555 exclusion attributable to that income. Line 13 is the limit. Source: [Form 7206](https://www.irs.gov/pub/irs-pdf/f7206.pdf).
-
-### Step 3: the deduction
-
-10. Line 14 = the smaller of line 3 and line 13. Enter it on Schedule 1 (line 17 on the 2025 form). Source: [Schedule 1 (Form 1040)](https://www.irs.gov/pub/irs-pdf/f1040s1.pdf).
-11. Premiums over the limit are not carried forward. They can be medical expenses on Schedule A if the person itemizes, subject to the 7.5% floor. Premiums allowed under 162(l) are not counted again on Schedule A. Source: [26 U.S.C. 162(l)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm).
-12. The deduction does not reduce net earnings from self-employment: Schedule SE still starts from full net profit. Source: [26 U.S.C. 162(l)(4)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm).
-13. Pass the deduction to `us-qbi-deduction`: it is attributable to the business and reduces qualified business income. It also lowers the income used for the estimated tax in `us-quarterly-estimated-tax`.
-
-### Form 7206 or the worksheet
-
-The Schedule 1 worksheet in the Form 1040 instructions can be used for a simple case. Form 7206 is required if the person had more than one source of income subject to self-employment tax, files Form 2555, or uses amounts paid for qualified long-term care insurance. Source: [Form 7206](https://www.irs.gov/pub/irs-pdf/f7206.pdf).
+Generally the Form 1040-instructions worksheet suffices, but Form 7206 is required for more than one source of SE-tax income, Form 2555, or qualified LTC premiums. [Form 7206 instructions, How to figure the deduction](https://www.irs.gov/instructions/i7206).
 
 ## Boundary and exception table
 
 | Situation | Treatment |
 | --- | --- |
-| Eligible for spouse's subsidized employer plan, declined it | No deduction for those months |
-| Employer plan where the employer pays nothing (unsubsidized) | Does not bar the deduction |
-| Employer medical plan available, long-term care bought privately | The bar is applied separately: the long-term care premium can still count |
-| Spouse's new job, coverage available after a waiting period | The bar starts with the first month coverage is available, not the hire date |
-| Child turns 27 on or before 31 December 2026 | Not covered by the under-27 rule for 2026; counts only if a dependant |
-| Child is 26 at 31 December 2026 and files their own return | Covered for all of 2026 |
-| Net profit is zero or a loss | No deduction; premiums may go to Schedule A |
-| Premiums paid from the business bank account | Still Schedule 1, never Schedule C |
-| Premiums for employees (not the owner) | Schedule C line 14, a different deduction |
-| Policy in the spouse's name | Can count if it covers the self-employed person and the plan is established under the business |
-| Both spouses self-employed, one family policy | Each deducts against their own business; split the premium by the cost of each spouse's cover, or equally if it cannot be separated |
-| Part-year self-employment | Only months of self-employment with cover; the limit uses actual earned income, not annualized |
-| Premium tax credit for some months, deduction for others | Pub. 974 method for the credit months; flag for review |
-| Disability, life, or fixed-amount hospital indemnity policies | Not medical insurance: no deduction |
-| Workers' compensation cover | A Schedule C line 15 business expense, not this deduction |
-| Premiums already paid with pre-tax employer money | Already excluded from income: no deduction |
-
-### Defaults when a fact is missing
-
-| Missing fact | Default, and flag it |
-| --- | --- |
-| Whether any employer plan was available that month | Treat the month as barred; ask |
-| Whether the spouse's employer offers cover | Treat as offered; ask |
-| Premium amounts | Zero until a statement or Form 1095 is seen |
-| Whether a policy is medical or another type | Not medical until the statement shows it |
-| Long-term care premium above the age limit | Cap at the limit |
-| Premium tax credit position unclear | Deduction only; flag the Form 8962 interaction |
-| Advance premium tax credit received, amount unknown | Stop until Form 1095-A is seen |
-| Months of cover unclear | Count only documented months |
-| More than one Schedule C, plan not clearly under one | Use the business under which the policy was set up; if none is shown, the lower-profit business (smaller limit), and flag it |
-| Medicare premium amounts | Take them from the SSA-1099 or plan statements; do not assume a standard amount |
-
-### Red flags for the reviewer
-
-| Flag | Why it matters |
-| --- | --- |
-| Deduction above USD 20,000 | Check every premium statement |
-| Deduction cut by the earned income limit | Schedule A may help; record the cut |
-| Marketplace cover with advance credit | Form 8962 reconciliation; the two amounts depend on each other |
-| Employer plan available for some months | Month-by-month working paper needed |
-| Long-term care premiums claimed | Age limit applied, and the policy is a qualified contract |
-| Medicare premiums claimed | Amounts match SSA-1099 and plan statements, including any surcharge |
-| A covered child aged 26 or 27 | Age at 31 December 2026 checked |
+| Spouse's subsidized plan declined, or eligibility begins partway through a month | Entire eligible month barred; waiting months before actual eligibility are not automatically barred |
+| Child turns 27 by year end | No under-27 entitlement; dependency must be established separately |
+| Child is 26 at year end and files their own return | Under-27 rule still applies, subject to all the other conditions |
+| Income-replacement disability or life cover, or guaranteed weekly hospitalization payments | Do not treat these as medical premiums; [Pub. 502, Insurance Premiums You Can't Include](https://www.irs.gov/pub/irs-pdf/p502.pdf) |
+| Premiums already paid with excluded employer money or reimbursed tax-free | No second deduction; [Pub. 502, Employer-Sponsored Health Insurance Plan](https://www.irs.gov/pub/irs-pdf/p502.pdf) |
+| Spouse-named policy; both spouses self-employed with family coverage | Do not use an automatic equal or cost allocation, or assume business establishment. No usable result for this issue: Check this point with one of our partner accountants. |
+| COBRA continuation eligibility/premiums, short-term or mixed medical/indemnity policies | No blanket eligibility conclusion; confirm policy terms and subsidy/business conditions. Check this point with one of our partner accountants. |
+| Part-year business, premiums before/after trading, or a partial month | Do not annualize profits or infer qualifying months from a generic rule. No usable case conclusion here: Check this point with one of our partner accountants. |
+| Specific Medicare Part A/B/C/D, Medigap, IRMAA or SSA-1099 allocation uncertainty | Use actual statements and the general voluntary-premium rule; no standard amount or automatic surcharge entitlement. Check this point with one of our partner accountants. |
+| Employee health insurance or workers' compensation premiums | Separate business-expense issue for `us-sole-prop-bookkeeping`; no owner-premium deduction under this method. Check this point with one of our partner accountants. |
 
 ## Worked cases
 
-**Case 1: long-term care cap and the earned income limit.** A single designer aged 55 has 2026 Schedule C net profit of USD 30,000, no wages and no employer plan in any month. She pays USD 9,600 of medical premiums and USD 3,000 for a qualified long-term care policy, and makes a USD 4,000 SEP contribution.
+All amounts are USD. The two current cases assume an established business plan, no Marketplace credit, no Form 2555, no other SE businesses, regular SE computation and no Social Security wages. Retirement amounts are allowable deductions already established upstream. The illustrative half-SE formula is profit × 0.9235 × 0.153 ÷ 2 for these below-wage-base inputs; use the actual Schedule SE result in a return. [Schedule SE](https://www.irs.gov/pub/irs-prior/f1040sse--2025.pdf); unchanged computation dependency in `us-schedule-c-and-se-computation`.
 
-The deductible half of self-employment tax is USD 30,000 x 92.35% x 15.3% / 2 = USD 2,119.43. Line 3: USD 9,600 + the smaller of USD 3,000 and the age 51 to 60 limit of USD 1,860 = USD 11,460. Line 13: USD 30,000 − USD 2,119.43 − USD 4,000 = USD 23,880.57. The deduction is USD 11,460. The other USD 1,140 of long-term care premium is not deductible here; it may be a Schedule A medical expense.
+**Case 1 (2026).** Single designer, age 55, profit 30,000; no wages/employer plan; medical 9,600, qualified LTC 3,000 and allowable SEP 4,000. Half SE = 2,119.43; premiums = 9,600 + 1,860 = 11,460; limit = 30,000 − 2,119.43 − 4,000 = 23,880.57; deduction = 11,460. Excess LTC 1,140 is not a Schedule A medical premium either.
 
 ```oa-check
 name: Long-term care cap and earned income limit (2026)
@@ -160,9 +95,7 @@ expected:
   deduction: 11460
 ```
 
-**Case 2: employer plan from September, and the limit bites.** A married sole proprietor has 2026 net profit of USD 6,000 and no retirement plan. His individual policy costs USD 800 a month all year. His spouse's subsidized employer plan became available to him on 1 September 2026, and he kept his own policy.
-
-January to August are eligible months: 8 x USD 800 = USD 6,400. September to December are barred. The deductible half of self-employment tax is USD 6,000 x 92.35% x 15.3% / 2 = USD 423.89, so the limit is USD 5,576.11. The deduction is USD 5,576.11. USD 823.89 of the eligible premiums, and all USD 3,200 for the barred months, may be Schedule A medical expenses if the couple itemizes.
+**Case 2 (2026).** Married sole proprietor, profit 6,000, no retirement deduction, own policy 800/month all year. Spouse's subsidized coverage becomes available 1 September. Eight eligible months give 6,400; half SE = 423.89, limit and deduction = 5,576.11. Remaining eligible premiums 823.89 plus barred-month premiums 3,200 are only potential Schedule A expenses, subject to that deduction's separate conditions.
 
 ```oa-check
 name: Month-by-month bar and earned income limit (2026)
@@ -184,43 +117,64 @@ expected:
   cut_by_limit: 823.89
 ```
 
+### Historical 2025 cases, keep these inputs in 2025
+
+These retain the earlier examples and tests. Except the explicit holds, results assume a qualifying established plan, no employer bar beyond stated months, no PTC/APTC, no Form 2555, no other SE business/wages and no retirement deduction. Missing original eligibility facts must be confirmed before using a result. Stated Medicare premiums are hypothetical actual payments, not a standard rate for 2026. For historical LTC only, [Rev. Proc. 2024-40 §2.28](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf) gives 480 / 900 / 1,800 / 4,810 / 6,020 across the same five age bands.
+
+- **Example 1:** Maria Hernandez, single, 34, freelance UX designer; profit 62,644, off-exchange 700/month = 8,400, no employer plan/PTC. Half SE 4,425.66, limit 58,218.34; deduction 8,400.
+- **Example 2:** Alex Rivera, single, 28, freelance graphic designer; profit 12,000, Marketplace 450/month = 5,400, no PTC claimed. Conditional no-credit arithmetic: half SE 847.77, limit 11,152.23, deduction 5,400. Original alternative profit 4,000: half SE 282.59, limit/deduction 3,717.41, unused premiums 1,682.59, not 1,400. These are **non-usable filing conclusions** until credit eligibility/reconciliation is resolved: Check this point with one of our partner accountants.
+- **Example 3:** Sarah Kim, MFJ, 45, freelance financial adviser; spouse's job starts 1 July 2025, family coverage effective 1 August; own premium 900/month. January–July = 7 × 900 = 6,300; August–December = 4,500 barred. Profit/retirement facts were not supplied: **6,300 is a premium subtotal, not a proven deduction**. Check this point with one of our partner accountants.
+- **Example 4:** Robert Garcia, single, 68, freelance consultant; profit 95,000; Part B 185/month, Medigap Plan F 220/month, Part D 35/month; no employer plan. Conditional qualifying voluntary premiums = 2,220 + 2,640 + 420 = 5,280; half SE 6,711.54, limit 88,288.46; deduction 5,280.
+- **Example 5:** Lisa Park, MFJ, 61; profit 180,000; medical 12,000, LTC paid 6,000. Historical eligible LTC 4,810; deduction 16,810, correcting 16,770. Half SE 12,716.60, limit 167,283.41 (unrounded half SE 12,716.595). Excess LTC 1,190 is not deductible on Schedule A either.
+- **Test 1:** profit 80,000, 600/month = 7,200, no employer plan/PTC: half SE 5,651.82, limit 74,348.18, deduction 7,200.
+- **Test 2:** profit 5,000, 500/month = 6,000, no employer plan: half SE 353.24, limit/deduction 4,646.76, unused premiums 1,353.24, correcting the old 5,000 deduction.
+- **Test 3:** profit 60,000, 800/month, spouse's subsidized plan eligible July–December: six months = 4,800; half SE 4,238.87, limit 55,761.14, deduction 4,800 (compute the limit before rounding intermediate cents).
+- **Test 4:** profit 50,000; Part B 185/month, Medigap 150/month, Part D 40/month; no employer plan: conditional qualifying voluntary premiums 12 × 375 = 4,500; half SE 3,532.39, limit 46,467.61, deduction 4,500.
+- **Test 5:** profit 100,000, medical 10,000, LTC paid 5,000, age 55, no employer plan: eligible LTC 1,800, deduction 11,800, correcting 11,790; half SE 7,064.78, limit 92,935.23. Excess LTC 3,200 is outside Schedule A too.
+- **Test 6:** profit zero, 500/month = 6,000: ordinary-method deduction zero; optional-method cases remain referred. Schedule A needs its separate eligibility tests.
+- **Test 7:** profit 120,000, family cover self/spouse/25-year-old child, 1,800/month = 21,600, no employer plan: half SE 8,477.73, limit 111,522.27, deduction 21,600.
+
 ## When to refuse or refer
 
-| Code | Situation | Action |
-| --- | --- | --- |
-| R-SEHI-PTC | The client wants Form 8962 computed, or the credit and the deduction do not converge | Use `us-premium-tax-credit-8962`; refer if it does not settle |
-| R-SEHI-HSA | Health savings account contributions | A separate deduction (Form 8889, Schedule 1 line 13 on the 2025 form), outside this skill |
-| R-SEHI-SCHA | Premiums cut off by the limit, client itemizes | Schedule A medical expenses are outside this skill |
-| R-SEHI-COBRA | COBRA election periods and qualifying events | Employment law, not tax: refer to the plan administrator |
-| R-SEHI-LTCQ | Whether a long-term care policy is a qualified contract under section 7702B | Rely on the insurer's statement; refer a doubtful policy |
-| R-SEHI-SCORP | S corporation shareholder owning more than 2%, or a partner | Different reporting (wages or guaranteed payments): refer |
+These boundaries preserve the original catalogue; each is a non-usable hold for the specialist outcome, not a substitute for the core computation above.
 
-Never put the owner's premiums on Schedule C. Never allow a month in which the person was eligible for a subsidized employer plan. Never let the premium tax credit and the deduction cover the same dollar of premium. Never carry an excess forward. Never skip Form 7206 when it is required.
+| Code | Boundary and action |
+| --- | --- |
+| R-SEHI-PTC | Full Form 8962, credit eligibility, repayment, nonconvergence and part-year credits: `us-premium-tax-credit-8962`. Check this point with one of our partner accountants. |
+| R-SEHI-HSA | HSA/HDHP qualification, contribution limits and last-month rule; no inherited 2025 amounts may be used for 2026. Check this point with one of our partner accountants. |
+| R-SEHI-SCHA (historical R-SEHI-SCHEDULE-A) | Actual Schedule A calculation and covered-person eligibility. Check this point with one of our partner accountants. |
+| R-SEHI-COBRA (historical R-SEHI-COBRA-ADMIN) | COBRA elections, qualifying events, administration and policy-specific deduction eligibility. Check this point with one of our partner accountants. |
+| R-SEHI-LTCQ (historical R-SEHI-LTC-QUALIFIED) | Whether the actual contract meets section 7702B; an insurer label is not a legal determination. Check this point with one of our partner accountants. |
+| R-SEHI-SCORP | Partners, more-than-2% S corporation shareholders and their reporting. Check this point with one of our partner accountants. |
 
 ## Filing and payment
 
-The deduction is claimed on the 2026 Form 1040, Schedule 1, with Form 7206 attached when it is required. The return is due **15 April 2027**; Form 4868 extends filing to 15 October 2027, not payment. Form 8962 goes with the return whenever advance premium tax credit was paid. Keep the monthly working paper, insurer statements and Forms 1095 with the file.
+For a domestic calendar-year individual without special relief, the 2026 return is ordinarily due 15 April 2027; a properly completed, timely Form 4868 with the required tax estimate gives six additional months to 15 October 2027 for filing, not payment. [6072(a)](https://uscode.house.gov/us/usc/t26/s6072/); [Form 4868 instructions](https://www.irs.gov/pub/irs-pdf/f4868.pdf). Overseas, disaster or other special deadlines are held: Check this point with one of our partner accountants. Keep the monthly eligibility working paper and premium/payment evidence with the return file. Use the final 2026 forms and resolve the Marketplace hold before filing.
 
 ## Completion checklist
 
-- Every month of 2026 tested for employer plan eligibility, separately for long-term care cover.
-- Children's ages at 31 December 2026 checked against 27.
-- Long-term care premiums capped per person at the 2026 age limit.
-- Retirement deduction computed first and entered on Form 7206 line 9.
-- Deduction is the smaller of line 3 and line 13; any excess noted for Schedule A.
-- Nothing for the owner's premiums on Schedule C, and Schedule SE uses full net profit.
-- Marketplace cover passed to the Form 8962 skill.
-- Amount passed to the QBI and estimated tax computations.
+Confirm actual plan establishment, payments, covered people and employer eligibility for every month; separately test LTC and apply the per-person cap; establish the actual SE-tax and retirement deductions before the earned-income limit; resolve any credit; distinguish unused medical premiums from ineligible LTC excess; pass the allowable adjustment to return assembly and QBI. The historical USD 20,000 attention trigger was an internal review convention, not a statutory threshold; premium evidence is required regardless of size.
+
+**Circular 230 §10.37:** This is computational guidance on the stated facts. Obtain the missing facts and qualified professional review before filing; no conclusion here assumes an audit will not occur.
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and portion actually read | URL | Read on |
 | --- | --- | --- |
-| 26 U.S.C. 162 (govinfo). Read for subsection (l): (1) who is covered and the under-27 child, (2)(A) earned income limit, (2)(B) the monthly bar applied separately to long-term care plans, (2)(C) long-term care premiums, (3) no double count on Schedule A, (4) no effect on self-employment tax. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm | 2026-11-13 |
-| 26 U.S.C. 213 (govinfo). Read for (a) the 7.5% floor and (d)(10) eligible long-term care premiums. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVII-sec213.htm | 2026-11-13 |
-| Rev. Proc. 2025-32. Read for section 4.27, the 2026 eligible long-term care premium limits ($500, $930, $1,860, $4,960, $6,200). | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
-| Form 7206 (2025). Read for lines 1 to 14 and when the form is required. | https://www.irs.gov/pub/irs-pdf/f7206.pdf | 2026-11-13 |
-| Schedule 1 (Form 1040) 2025. Read for lines 13, 15, 16 and 17. | https://www.irs.gov/pub/irs-pdf/f1040s1.pdf | 2026-11-13 |
-| 26 U.S.C. 36B (govinfo). Read for the premium tax credit that interacts with this deduction. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartC-sec36B.htm | 2026-11-13 |
+| Read for Current 26 U.S.C. 162(l)(1)–(5), covered people, earned income, monthly bar, separate LTC treatment and deduction coordination | https://uscode.house.gov/us/usc/t26/s162/ | 2026-11-27 |
+| Read for 401(c)(1)–(2), self-employment and earned-income dependencies | https://uscode.house.gov/us/usc/t26/s401/ | 2026-11-27 |
+| Read for 213(a), (d)(1), (6), (10), medical care, own covered-person test, LTC cap and indexing | https://uscode.house.gov/us/usc/t26/s213/ | 2026-11-27 |
+| Read for Rev. Proc. 2025-32 §4.27, five 2026 LTC limits | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-27 |
+| Read for 2026 draft 7206, cover warning and lines 1–14; provisional locators only | https://www.irs.gov/pub/irs-dft/f7206--dft.pdf | 2026-11-27 |
+| Read for 2026 draft Schedule 1, cover warning and adjustments lines 15–17 | https://www.irs.gov/pub/irs-dft/f1040s1--dft.pdf | 2026-11-27 |
+| Read for Final 2025 Form 7206, lines 1–14 and footnotes; historical cases | https://www.irs.gov/pub/irs-prior/f7206--2025.pdf | 2026-11-27 |
+| Read for Form 7206 instructions (2025), purpose, business establishment, Medicare, required form, multiple plans, other coverage and Schedule A/SE effects | https://www.irs.gov/instructions/i7206 | 2026-11-27 |
+| Read for Rev. Proc. 2024-40 §2.28, historical 2025 LTC caps only | https://www.irs.gov/pub/irs-drop/rp-24-40.pdf | 2026-11-27 |
+| Read for 2025 Schedule SE, lines 2–13; regular-SE arithmetic for historical examples; unchanged factors reused for current low-profit cases | https://www.irs.gov/pub/irs-prior/f1040sse--2025.pdf | 2026-11-27 |
+| Read for Pub. 974 (2025), self-employed deduction/PTC, simplified/iterative methods and part-year examples; no 2026 credit parameters certified | https://www.irs.gov/pub/irs-pdf/p974.pdf | 2026-11-27 |
+| Read for Pub. 502 (2025), insurance premiums, employer exclusions, self-employed persons and nondependent-child Schedule A restriction | https://www.irs.gov/pub/irs-pdf/p502.pdf | 2026-11-27 |
+| Read for 1402(a), aggregation of business income/loss and regular-SE dependency | https://uscode.house.gov/us/usc/t26/s1402/ | 2026-11-27 |
+| Read for 6072(a) calendar-year ordinary return deadline | https://uscode.house.gov/us/usc/t26/s6072/ | 2026-11-27 |
+| Read for Form 4868 instructions, six-month extension and payment warning | https://www.irs.gov/pub/irs-pdf/f4868.pdf | 2026-11-27 |
 
-Not yet confirmed: the 2026 Form 7206 and 2026 Schedule 1 were not published when read, so line numbers are from the 2025 editions; the 2026 Medicare Part B standard premium was not read, so no amount is stated; the premium tax credit rules for 2026 are left to `us-premium-tax-credit-8962`.
+Not yet confirmed: final 2026 Form 7206/Schedule 1 locators, 2026 Marketplace credit parameters and all expressly held specialist outcomes. No usable final result for a held issue: Check this point with one of our partner accountants.
