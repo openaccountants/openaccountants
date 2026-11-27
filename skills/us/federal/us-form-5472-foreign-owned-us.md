@@ -1,217 +1,100 @@
 ---
 name: us-form-5472-foreign-owned-us
-description: Decide whether a US corporation that is 25% foreign-owned, a foreign corporation with a US trade or business, or a US single-member LLC wholly owned by one foreign person (a foreign-owned US disregarded entity) must file Form 5472 for tax year 2026, and what goes on it. Covers who is a 25% foreign shareholder and a related party (section 318 attribution with the 10% substitution), reportable transactions by Part IV line, Part V contributions and distributions for disregarded entities, the pro forma Form 1120, the dedicated fax and Ogden mailing address, Form 7004 extensions, the EIN on Form SS-4, the USD 25,000 penalty per related party per year under 26 U.S.C. 6038A(d) and its continuation penalty, reasonable cause, the small corporation and de minimis record-keeping exceptions, and the open assessment period under 6501(c)(8). Uses Form 5472 (Rev. December 2023) with its Instructions (Rev. December 2024). Trigger on "Form 5472", "foreign-owned LLC", "pro forma 1120", "foreign-owned U.S. DE", "6038A", "non-resident LLC owner", "Stripe Atlas LLC filing". Federal only.
-version: "2.1"
+description: Determine Form 5472 filing for foreign-owned US corporations, foreign corporations doing US business and foreign-owned US disregarded entities for tax year 2026. Covers ownership, related-party transactions, pro forma Form 1120, filing and extension, EIN, records and penalties; retains dated 2025 cases with explicit holds for unresolved residency, treaty and dividend questions. Trigger on Form 5472, foreign-owned LLC, pro forma 1120, 6038A or foreign-owned U.S. DE.
+version: "2.2"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
 type: situation-rules
 ---
 
-# US Form 5472 for foreign-owned US corporations and foreign-owned single-member LLCs, tax year 2026
+# US Form 5472 for foreign-owned US corporations and single-member LLCs, tax year 2026
 
-> **Source-cited draft.** Built from Form 5472 (Rev. December 2023), the Instructions for Form 5472 (Rev. December 2024), the Instructions for Forms 1120 and 1120-F (2025), 7004 (Rev. December 2025) and SS-4 (Rev. December 2025), 26 U.S.C. 267, 318, 6038A, 6038C and 6501, Treas. Reg. 1.6038A-1 to 1.6038A-5 and 301.7701-2(c)(2)(vi) on eCFR, IRM 20.1.9 and the IRS delinquent international information return page, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
-
-**Answer first.** A US LLC with one owner who is a foreign person, and which has not elected to be taxed as a corporation, is treated as a corporation for Form 5472 purposes only. For 2026 it must file Form 5472 attached to a pro forma Form 1120 in any year it has a reportable transaction with its owner or another related party, and money the owner puts in or takes out (contributions and distributions) counts. Customer sales do not. There is no minimum amount. It cannot be filed electronically: fax to 855-887-7737 or mail to the IRS in Ogden, by the Form 1120 due date (15 April 2027 for calendar year 2026, or 15 October 2027 with Form 7004). A US corporation must file when one foreign person owns at least 25% of its vote or value at any time in the year and there is a reportable transaction. The penalty for not filing, or filing a substantially incomplete form, is **USD 25,000** for each related party for each year, plus USD 25,000 for each 30 days the failure continues more than 90 days after an IRS notice.
+A foreign-owned US disregarded entity (DE) files Form 5472 with a pro forma Form 1120 for a year with a reportable related-party transaction, including owner contributions and distributions; unrelated customer receipts alone do not trigger it. A missing or substantially incomplete return can attract USD 25,000 per related party per year. [Filing and penalty rules](https://www.irs.gov/instructions/i5472).
 
 ## Scope and who this is for
 
-In scope, for tax years beginning in 2026:
-
-- A domestic corporation that is 25% foreign-owned at any time during the year (26 U.S.C. 6038A).
-- A foreign corporation engaged in a trade or business within the United States (26 U.S.C. 6038C), which attaches Form 5472 to Form 1120-F.
-- A foreign-owned US disregarded entity (DE): a domestic entity disregarded for income tax and wholly owned, directly or through other disregarded entities or grantor trusts, by one foreign person. It is treated as a domestic corporation for section 6038A only (Treas. Reg. 1.6038A-1(c)(1), 301.7701-2(c)(2)(vi)), for tax years beginning on or after 1 January 2017 and ending on or after 13 December 2017.
-- Who is a 25% foreign shareholder and who is a related party; which transactions are reportable and on which line; the pro forma Form 1120; deadlines, extension and filing channel; the EIN; records and the authorization of agent; the penalty and relief.
-
-Out of scope, and where it goes:
-
-| Topic | Where it goes |
-| --- | --- |
-| The full Form 1120 income tax computation for a real (not pro forma) corporation | `us-form-1120-c-corp`, `us-1120-corporation-return-schedule-ordinary-business` |
-| Form 7004 mechanics and payment with the extension | `us-corporate-extension-form-7004-and-the` |
-| US persons owning foreign corporations (Form 5471) | `us-form-5471-cfc-information` |
-| BEAT under section 59A (Form 5472 Part IX, Form 8991) and the section 250 deduction (Part VII line 41) | `us-gilti-fdii-beat` |
-| Partnerships, including an LLC with two or more members | `us-form-1065-partnership` |
-| Foreign bank and asset reporting by individuals | `us-fbar-and-fatca-8938` |
-| Withholding on payments to foreign persons (Forms 1042, 1042-S, W-8BEN-E) and treaty rates | Refer: no skill in this library yet |
-| Section 482 transfer pricing studies and Treas. Reg. 1.6662-6 documentation | Refer to a transfer pricing specialist |
-| Whether the foreign owner itself has US effectively connected income, Form 1120-F or 1040-NR | Refer: separate analysis |
-| Check-the-box elections (Form 8832) | Refer: separate analysis |
+Federal reporting for a domestic corporation that is 25% foreign-owned, a foreign corporation engaged in US business, or a domestic DE wholly owned by one foreign person. This is an information-return analysis, not an income-tax, withholding or treaty computation. Use alongside `us-tax-workflow-base`. The 2025 cases below remain dated 2025. [26 USC 6038A](https://uscode.house.gov/us/usc/t26/s6038A/), [6038C](https://uscode.house.gov/us/usc/t26/s6038C/), [Regulation 1.6038A-1(c)](https://www.ecfr.gov/current/title-26/section-1.6038A-1).
 
 ## Ask the client first
 
-1. **What is the entity, and has it ever elected corporate tax treatment?** State of formation, date formed, number of members, any Form 8832 or Form 2553 filed. One member and no election means a DE.
-2. **Who owns it, directly and through other entities, at any time in 2026?** For each owner: name, country of citizenship or organization, country of tax residence, whether a US citizen or resident, any SSN, ITIN, EIN and foreign tax ID. Include spouses, children, grandchildren and parents of individual owners, and owners of corporate owners.
-3. **Every movement of money or property between the entity and each owner or related party in 2026**: capital put in, money taken out, loans each way with opening and closing balances, interest, fees for services each way, rent, royalties, sales and purchases of goods, and entity expenses the owner paid personally (or the entity paid for the owner).
-4. **The tax year.** A DE uses its owner's tax year for US filing purposes or, if the owner has none, the calendar year.
-5. **Does the entity have an EIN?** If not, it needs one before filing.
-6. **Filing history.** Has Form 5472 been filed for every year since formation? Any IRS notice (for example a CP 215) received?
-7. **For a corporation:** US gross receipts and US gross income for 2026 (these decide the record-keeping exceptions), and whether it is in a consolidated group.
+- Obtain formation documents, elections (including Forms 8832/2553), owner history throughout the year, ownership chains and family relationships. Do not infer tax classification from the word LLC or foreign-person status from nationality, overseas residence or absence of a green card alone.
+- Establish citizenship, US tax residence and any section 6013(g)/(h) election for individual owners; obtain the identifiers and residence/organization details requested on the form. Resolve US residence using `us-tax-residency` before applying this Guide.
+- Reconcile every owner/related-party contribution, distribution, personally paid entity expense, loan, interest, fee, royalty and property/service transfer, including free or discounted transfers. Obtain opening/closing loan balances and the exchange-rate schedule.
+- Confirm tax year, EIN, related reporting corporations, gross receipts/income, prior filings, valid extensions and IRS contact/notices. Preserve bank statements, agreements and filing evidence.
 
 ## The method, step by step
 
+### 1. Reporting corporation and related parties
+
+A domestic corporation meets the ownership test if **one foreign person owns at least 25% of vote or value at any time in the year**. A foreign corporation engaged in US trade or business is separately within section 6038C; there is no 25% ownership prerequisite for that category. [Sections 6038A(a), (c) and 6038C(a)](https://uscode.house.gov/us/usc/t26/s6038A/); [6038C](https://uscode.house.gov/us/usc/t26/s6038C/).
+
+A domestic entity otherwise disregarded, with one foreign person as direct or indirect sole owner, is treated as a separate domestic corporation for section 6038A. Indirect sole ownership here runs entirely through other DEs or grantor trusts, domestic or foreign. Its year follows the owner's US income-tax or information-return year if the owner has such a filing obligation; otherwise it uses the calendar year. [Regulation 301.7701-2(c)(2)(vi)](https://www.ecfr.gov/current/title-26/section-301.7701-2).
+
+An individual foreign person is neither a US citizen nor a US resident and has no section 6013(g)/(h) election in effect. Regulation 1.6038A-1(f) also covers qualifying possession citizens, non-US-organized entities, foreign estates/trusts and commercial foreign-government activity; a foreign government is outside the special records/agent rules. [Definition](https://www.ecfr.gov/current/title-26/section-1.6038A-1).
+
+Apply section 318 attribution with **10% substituted for 50% in section 318(a)(2)(C)** and the prohibition on section 318(a)(3)(A)–(C) attributing foreign-owned stock to a US person. Section 267(c) applies to the extent it attributes to persons whom section 318 does not reach. Also do not apply section 318(a)(3)(C)/Regulation 1.318-1(b) to make a US corporation a reporting corporation if it would not otherwise be 25% foreign-owned. Family attribution includes a spouse other than one legally separated under a decree of divorce/separate maintenance, children (including adopted children), grandchildren and parents. Corporate-to-owner attribution is proportionate, not automatic ownership of the whole block. [6038A(c)(5)](https://uscode.house.gov/us/usc/t26/s6038A/), [318(a)](https://uscode.house.gov/us/usc/t26/s318/), [Regulation 1.6038A-1(e)](https://www.ecfr.gov/current/title-26/section-1.6038A-1).
+
+A related party is a direct/indirect 25% foreign shareholder, anyone related under section 267(b) or 707(b)(1) to the corporation or such shareholder, or anyone related to the corporation under section 482. A corporation filing a consolidated federal income-tax return with the reporting corporation is excluded. A foreign related party must also meet the foreign-person definition. [Regulation 1.6038A-1(d), (g)](https://www.ecfr.gov/current/title-26/section-1.6038A-1).
+
+File one Form 5472 for **each foreign or US related party with a reportable transaction**. Without any Part IV/VI transaction, and for DEs any Part V transaction, no Form 5472 is required. The information can be required even when it affects no tax due. Treaty/no-PE, shipping, FSC, Form 5471/Schedule M, foreign-to-foreign exceptions and consolidated filings go to the referral table; do not assume an exception. [Regulation 1.6038A-2(a), (e)](https://www.ecfr.gov/current/title-26/section-1.6038A-2).
+
+### 2. Report the transactions
+
+The following is the mapping on **Form 5472 (Rev. December 2023)**; use the form and its instructions together. Part IV is for monetary transactions with a foreign related party. Part III still identifies a US related party, but do not complete Parts IV/VI for that party. [Form](https://www.irs.gov/pub/irs-pdf/f5472.pdf), [instructions](https://www.irs.gov/instructions/i5472).
+
+| Type | Received / borrowed | Paid / loaned | Source |
+| --- | --- | --- | --- |
+| Inventory; other tangible property | 9; 10 | 23; 24 | [Form 5472 p2](https://www.irs.gov/pub/irs-pdf/f5472.pdf) |
+| Rents; royalties other than intangible-property rights | 13a; 13b | 27a; 27b | [Form 5472 p2](https://www.irs.gov/pub/irs-pdf/f5472.pdf) |
+| Intangible-property rights, including patent licences | 14 | 28 | [Form 5472 p2](https://www.irs.gov/pub/irs-pdf/f5472.pdf) |
+| Technical/managerial/engineering/construction/scientific or like services; commissions | 15; 16 | 29; 30 | [Form 5472 p2](https://www.irs.gov/pub/irs-pdf/f5472.pdf) |
+| Loans: beginning balance; ending balance or monthly average | 17a; 17b | 31a; 31b | [Form and loan instructions](https://www.irs.gov/instructions/i5472) |
+| Interest; insurance/reinsurance premiums; loan guarantee fees | 18; 19; 20 | 32; 33; 34 | [Form 5472 p2](https://www.irs.gov/pub/irs-pdf/f5472.pdf) |
+| Other amounts, only to extent taken into account in taxable income | 21 | 35 | [Instructions](https://www.irs.gov/instructions/i5472) |
+| Totals of the received and paid columns | 22 | 36 | [Form 5472 p2](https://www.irs.gov/pub/irs-pdf/f5472.pdf) |
+
+For loans, use either beginning/ending outstanding balances or the monthly average, entering only line 17b/31b for the latter. For interest paid, line 32 includes only the amount allowed under section 163(j) where that limitation applies. Platform contribution and cost-sharing transactions (lines 11/25 and 12/26) need specialist completion, including the no-netting rule and the line-12 condition that the corporation itself incurred intangible development costs. Check this point with one of our partner accountants. [Instructions](https://www.irs.gov/instructions/i5472).
+
+**Part V, DE only:** check the box and attach a description of other Regulation 1.482-1(i)(7) transactions not already entered in Part IV, including formation/dissolution/acquisition/disposition, contributions and distributions. Capture owner-paid entity fees as contributions when paid on its behalf without repayment obligation. There is no filing floor: even the earlier examples of a USD 1 contribution, USD 50 reimbursement, or USD 40 transaction must be tested, not discarded as small. Unrelated customer/supplier flows are not related-party transactions. [Regulation 1.6038A-2(a), (b)(3)(xi), Example 1](https://www.ecfr.gov/current/title-26/section-1.6038A-2).
+
+**Part VI:** for nonmonetary or less-than-full consideration, attach the property/rights/obligations and services transferred each way and a reasonable FMV estimate, if possible, or another reasonable value indicator. Use accrued amounts if on accrual, US dollars and an exchange-rate schedule; statements are in English. Partnership-attributed transactions go to the referral table. [Regulation 1.6038A-2(b)(4), (10), (c)](https://www.ecfr.gov/current/title-26/section-1.6038A-2).
+
 ### Rates, bands and thresholds
 
-| Item | Amount, 2026 | Source |
+| Rule | Amount or boundary | Source |
 | --- | --- | --- |
-| Foreign ownership that makes a corporation a reporting corporation (vote or value, one foreign person, at any time in the year) | 25% | [26 U.S.C. 6038A(c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038A.htm) |
-| Attribution from a corporation to its shareholder: threshold substituted for 50% in section 318(a)(2)(C) | 10% | [26 U.S.C. 6038A(c)(5)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038A.htm) |
-| Penalty for failure to furnish information or keep records, per taxable year | USD 25,000 | [26 U.S.C. 6038A(d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038A.htm) |
-| Penalty imposed once a year for each related party (unless the failure continues after notice) | USD 25,000 per related party | [Treas. Reg. 1.6038A-4(a)(3)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol15/xml/CFR-2025-title26-vol15-sec1-6038A-4.xml) (CFR 2025 edition; eCFR blocks automated reads) |
-| Continuation penalty: starts when the failure continues this long after the IRS mails notice | 90 days | [26 U.S.C. 6038A(d)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038A.htm) |
-| Continuation penalty amount, for each 30-day period or part of one, no cap | USD 25,000 | [26 U.S.C. 6038A(d)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038A.htm) |
-| Amount that may be reported as "$50,000 or less" instead of the exact figure | USD 50,000 | [Treas. Reg. 1.6038A-2(b)(9)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol15/xml/CFR-2025-title26-vol15-sec1-6038A-2.xml) (CFR 2025 edition; eCFR blocks automated reads) |
-| Reasonable estimate band, where actual amounts cannot be determined | 75% to 125% of the actual amount | [Treas. Reg. 1.6038A-2(b)(8)(i)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol15/xml/CFR-2025-title26-vol15-sec1-6038A-2.xml) (CFR 2025 edition; eCFR blocks automated reads) |
-| Small corporation exception from the 1.6038A-3 records and 1.6038A-5 agent rules (not for DEs; filing still required) | US gross receipts under USD 10,000,000 | [Treas. Reg. 1.6038A-1(h)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol15/xml/CFR-2025-title26-vol15-sec1-6038A-1.xml) (CFR 2025 edition; eCFR blocks automated reads) |
-| De minimis safe harbor from the same rules (not for DEs; filing still required): aggregate gross payments to and from foreign related parties | Not more than USD 5,000,000 and less than 10% of US gross income | [Treas. Reg. 1.6038A-1(i)(1)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol15/xml/CFR-2025-title26-vol15-sec1-6038A-1.xml) (CFR 2025 edition; eCFR blocks automated reads) |
-| Reasonable cause applied liberally for a small corporation with no knowledge of the rules and limited US presence | Gross receipts USD 20,000,000 or less | [Treas. Reg. 1.6038A-4(b)(2)(ii)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol15/xml/CFR-2025-title26-vol15-sec1-6038A-4.xml) (CFR 2025 edition; eCFR blocks automated reads) |
-| Assessment period for the whole return stays open until this long after the information is furnished | 3 years | [26 U.S.C. 6501(c)(8)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap66-subchapA-sec6501.htm) |
-| Time to give the IRS the signed authorization of agent after it asks | 30 days | [Treas. Reg. 1.6038A-5(b)(1)](https://www.ecfr.gov/current/title-26/section-1.6038A-5) |
-| Form 1120 due date (the pro forma return of a DE uses the same date) | 15th day of the 4th month after the tax year ends | [Instructions for Form 1120 (2025), When To File](https://www.irs.gov/pub/irs-pdf/i1120.pdf) |
-| Form 1120-F due date, foreign corporation with no US office or place of business | 15th day of the 6th month after the tax year ends | [Instructions for Form 1120-F (2025), When To File](https://www.irs.gov/pub/irs-pdf/i1120f.pdf) |
-| Automatic extension with Form 7004 (tax years beginning in 2026, including years ending 30 June) | 6 months | [Instructions for Form 7004 (Rev. December 2025)](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
-| DE filing fax (300 DPI or higher) | 855-887-7737 | [Instructions for Form 5472 (Rev. December 2024), When and Where To File](https://www.irs.gov/pub/irs-pdf/i5472.pdf) |
-| International EIN telephone line (not toll-free), 6:00 a.m. to 11:00 p.m. Eastern, Monday to Friday | 267-941-1099 | [Instructions for Form SS-4 (Rev. December 2025)](https://www.irs.gov/pub/irs-pdf/iss4.pdf) |
-| EIN fax from outside the United States | 304-707-9471 | [Instructions for Form SS-4 (Rev. December 2025)](https://www.irs.gov/pub/irs-pdf/iss4.pdf) |
+| Reporting small amounts rather than omitting them: transaction or series total | USD 50,000 or less | [Regulation 1.6038A-2(b)(9)](https://www.ecfr.gov/current/title-26/section-1.6038A-2) |
+| Reasonable estimate safe band if actual amounts are not determinable | 75%–125% of actual | [Regulation 1.6038A-2(b)(8)](https://www.ecfr.gov/current/title-26/section-1.6038A-2) |
+| Small-corporation exception to special records/agent rules, excluding DEs | US gross receipts strictly under USD 10,000,000, aggregating related reporting corporations | [Regulation 1.6038A-1(h)](https://www.ecfr.gov/current/title-26/section-1.6038A-1) |
+| Alternative records/agent safe harbor, excluding DEs | Gross payments not more than USD 5,000,000 AND strictly less than 10% of US gross income | [Regulation 1.6038A-1(i)](https://www.ecfr.gov/current/title-26/section-1.6038A-1) |
 
-None of these amounts is indexed for inflation. The USD 25,000 figures were set by Pub. L. 115-97, section 14401(b)(2), which replaced USD 10,000. Public Law 119-21 (July 2025) did not amend section 6038A or 6038C.
+The small-amount entry applies to the **total of a transaction or series**, not to each payment split out. Estimates outside the band are not automatically acceptable: Regulation 1.6038A-2(b)(8)(ii) requires an affirmative facts-and-circumstances statement under penalties of perjury and IRS determination. Check this point with one of our partner accountants.
 
-### Step 1: is there a reporting corporation?
+For the records safe harbor, add gross payments in and out, including nonmonetary/discounted transactions; never net them. Aggregate the payments and relevant gross income of related reporting corporations. The small-corporation receipts test also aggregates related reporting corporations. Neither exception removes Form 5472 filing or section 6001 records. [Regulation 1.6038A-1(h)–(j)](https://www.ecfr.gov/current/title-26/section-1.6038A-1).
 
-1. **Foreign-owned US DE.** The entity is domestic, is disregarded under Treas. Reg. 301.7701-3, and one foreign person has direct or indirect sole ownership (indirect sole ownership means through other disregarded entities or grantor trusts, domestic or foreign). If so, it is a reporting corporation for section 6038A, whatever its income. Source: [Treas. Reg. 301.7701-2(c)(2)(vi)](https://www.ecfr.gov/current/title-26/section-301.7701-2), [1.6038A-1(c)(1)](https://www.ecfr.gov/current/title-26/section-1.6038A-1).
-2. **Domestic corporation (including an LLC that elected corporate treatment).** It is a reporting corporation if at any time during the year it has at least one direct or indirect 25% foreign shareholder: one foreign person owning at least 25% of total voting power or total value. Facts and circumstances count: arrangements that shift formal voting power away from a foreign person are looked through. Source: [26 U.S.C. 6038A(c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038A.htm), [Treas. Reg. 1.6038A-1(c)(2), (c)(3)](https://www.ecfr.gov/current/title-26/section-1.6038A-1).
-3. **Foreign corporation.** It is a reporting corporation if engaged in a US trade or business at any time during the year, unless a treaty gives it no US permanent establishment and it timely files Form 8833, or all its gross income is exempt under section 883 and it complies with sections 883 and 887. Source: [26 U.S.C. 6038C(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038C.htm), [Treas. Reg. 1.6038A-1(c)(1), (c)(5)](https://www.ecfr.gov/current/title-26/section-1.6038A-1).
+### 3. Complete and file the return
 
-**Who is a foreign person.** An individual who is not a US citizen or resident (but not one with a section 6013(g) or (h) joint-return election in effect); a citizen of a US possession who is not otherwise a US citizen or resident; a partnership, company or corporation not created or organized in the United States; a foreign estate or trust; a foreign government to the extent of commercial activity. Source: [Treas. Reg. 1.6038A-1(f)](https://www.ecfr.gov/current/title-26/section-1.6038A-1).
+Part I: line 1f totals Part IV lines 22/36 plus Part VI FMV and DE Part V amounts; leave 1f blank for a US related party. Line 1g counts the forms; line 1h totals all their 1f amounts. Use the correct asset source: Form 1120 item D for domestic corporations, Form 1120-F Schedule L line 17(d) for foreign corporations. Check initial-filing line 1j, 50%-ownership line 2 with modified attribution, and DE line 3 as applicable. [Instructions, Part I](https://www.irs.gov/instructions/i5472).
 
-**Counting ownership.** Apply section 318 with two changes: 10% replaces 50% in section 318(a)(2)(C) (attribution from a corporation to its shareholders), and section 318(a)(3)(A), (B) and (C) are not applied to treat a US person as owning stock owned by a foreign person. Section 267(c) attribution also applies where section 318 would not attribute. Under section 318(a)(1) an individual owns the stock of a spouse (not legally separated), children, grandchildren and parents. Source: [26 U.S.C. 6038A(c)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038A.htm), [Treas. Reg. 1.6038A-1(e)(1)](https://www.ecfr.gov/current/title-26/section-1.6038A-1), [26 U.S.C. 318(a)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapC-partI-subpartC-sec318.htm).
+Part II applies only to 25% foreign-owned US corporations/DEs: enter the largest two **direct** and largest two **ultimate indirect** 25% foreign shareholders, with more on an attached sheet and an attribution explanation. A holder below 25% directly does not become a direct 25% shareholder just because family attribution takes its holding above that threshold. A DE reports its foreign owner; a foreign DE direct owner is reported as such. Use US ID if any, otherwise the required reference ID, consistently year to year; reference IDs are alphanumeric, no spaces/special characters, maximum 50 characters and never reassigned to another person. For DE owners enter FTIN if any, otherwise “None”/“N/A”. Identifier changes/mergers need the instructions' correlation procedure. [Instructions, Part II](https://www.irs.gov/instructions/i5472).
 
-### Step 2: who are the related parties?
+All filers complete Part III, even if the party already appears in Part II, and Part VII with its **line-specific conditions**. In particular, do not complete lines 43a/43b for foreign corporations or foreign-owned US DEs; they are for domestic corporations within the instructions' conditions. Imported goods/customs value, hybrid interest/royalties, section 250, loan safe-haven rates and covered debt require the applicable instructions, not blanket “No” answers. For substantive calculations use the referral table. [Instructions, Parts III/VII](https://www.irs.gov/instructions/i5472).
 
-A related party is (Treas. Reg. [1.6038A-1(d)](https://www.ecfr.gov/current/title-26/section-1.6038A-1)):
-
-- any direct or indirect 25% foreign shareholder;
-- any person related under section 267(b) or 707(b)(1) to the reporting corporation or to a 25% foreign shareholder (for example, an individual and a corporation more than 50% in value of whose stock that individual owns, [26 U.S.C. 267(b)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec267.htm));
-- any other person related to the reporting corporation under section 482.
-
-A corporation filing a consolidated return with the reporting corporation is not a related party. A foreign related party is a related party who is a foreign person (1.6038A-1(g)). For a DE, the foreign owner is reported in Part II as the 25% foreign shareholder.
-
-### Step 3: which transactions are reportable?
-
-A reportable transaction is any Part IV type paid or received for money alone, any Part V transaction (DEs only), and any Part VI transaction. The information must be furnished even if it does not affect any tax. Source: [Treas. Reg. 1.6038A-2(a)](https://www.ecfr.gov/current/title-26/section-1.6038A-2), [Instructions for Form 5472, Definitions](https://www.irs.gov/pub/irs-pdf/i5472.pdf).
-
-| Transaction type (Form 5472, Rev. 12-2023) | Line, received from the foreign related party | Line, paid to the foreign related party |
-| --- | --- | --- |
-| Sales and purchases of inventory | 9 | 23 |
-| Sales and purchases of other tangible property | 10 | 24 |
-| Platform contribution transaction payments | 11 | 25 |
-| Cost sharing transaction payments | 12 | 26 |
-| Rents (other than for intangible property rights) | 13a | 27a |
-| Royalties (other than for intangible property rights) | 13b | 27b |
-| Sales, purchases, leases, licences of intangible property rights (patents, trademarks, secret formulas) | 14 | 28 |
-| Technical, managerial, engineering, construction, scientific or like services | 15 | 29 |
-| Commissions | 16 | 30 |
-| Loans: amounts borrowed (17) and amounts loaned (31), beginning and ending balance, or monthly average on line b only | 17a, 17b | 31a, 31b |
-| Interest (interest paid: only the amount allowed under section 163(j) this year) | 18 | 32 |
-| Insurance or reinsurance premiums | 19 | 33 |
-| Loan guarantee fees | 20 | 34 |
-| Other amounts, to the extent they enter taxable income | 21 | 35 |
-| Totals | 22 | 36 |
-
-- **Part V (foreign-owned US DE only):** check the box and attach a statement describing any other transaction under Treas. Reg. 1.482-1(i)(7) not already in Part IV, such as amounts paid or received on formation, dissolution, acquisition and disposition, including contributions to and distributions from the entity. Source: [Instructions for Form 5472, Part V](https://www.irs.gov/pub/irs-pdf/i5472.pdf); [Treas. Reg. 1.6038A-2(b)(3)(xi)](https://www.ecfr.gov/current/title-26/section-1.6038A-2). The regulation's Example 1 (1.6038A-2(b)(11)) treats each of a foreign owner's formation contribution, later contribution, a payment to the owner and a liquidating distribution as a reportable transaction.
-- **Part VI:** transactions where any consideration was not money, or less than full consideration was paid or received. Attach a schedule describing the property, rights, obligations and services each way, with a reasonable estimate of fair market value.
-- **Transactions with a US related party** are not itemized in Parts IV, V and VI, but the related party is still identified in Part III.
-- **Not reportable:** transactions with unrelated customers and suppliers, even when they are the entity's only income.
-- **Measure:** accrual-method filers use accrued amounts; all amounts in US dollars with a schedule of the exchange rates used; transactions with related parties of a partnership the reporting corporation owns 25% or more of are reported at the corporation's share.
-- **No threshold.** There is no amount below which a transaction stops being reportable. The USD 50,000 rule only lets a small amount be written as "$50,000 or less".
-
-### Step 4: exceptions from filing
-
-A reporting corporation need not file Form 5472 if (Instructions for Form 5472, Who Must File; Treas. Reg. 1.6038A-2(e)):
-
-1. It had no Part IV or Part VI reportable transactions and, for a DE, no Part V transactions either.
-2. A US person controlling the foreign related corporation files Form 5471 with Schedule M showing all the reportable transactions with the reporting corporation (not available to DEs).
-3. The related corporation is a foreign sales corporation that files Form 1120-FSC (not available to DEs).
-4. It is a foreign corporation with no US permanent establishment under a treaty that timely files Form 8833.
-5. It is a foreign corporation whose gross income is all exempt under section 883 and that complies with sections 883 and 887.
-6. Neither the reporting corporation nor the related party is a US person and the transactions will never produce US-source or effectively connected income, or deductions allocable to it (not available to DEs, which count as US persons for this test).
-
-### Step 5: complete the forms
-
-One Form 5472 for each related party (foreign or US) with which the reporting corporation had a reportable transaction. On each:
-
-- **Part I:** the reporting corporation. Line 1c total assets (Form 1120, item D). Line 1f: total of lines 22 and 36 plus the fair market value of Part VI transactions, plus Part V amounts for a DE; leave blank for a US related party. Line 1g: number of Forms 5472 filed. Line 1h: total of line 1f on all Forms 5472. Line 1j: first year filing. Line 2: tick if any foreign person owned at least 50% by vote or value at any time. Line 3: tick for a DE.
-- **Part II** (25% foreign-owned US corporations and DEs only): the two largest direct 25% foreign shareholders and the two largest ultimate indirect 25% foreign shareholders (more on an attached sheet), with an attached explanation of attribution for indirect owners. Identifying numbers: SSN, ITIN or EIN if any; otherwise a reference ID number (alphanumeric, no spaces or special characters, up to 50 characters, used consistently every year). A DE must also enter each foreign owner's foreign taxpayer identification number (FTIN), or "None" or "N/A".
-- **Part III:** the related party, completed by every filer even when the related party is already in Part II.
-- **Parts IV, V, VI:** as in Step 3. Tick the estimates box if estimates are used.
-- **Part VII:** every filer answers lines 37 to 43 (imports and customs value, cost sharing, section 267A disallowed interest or royalties, the section 250 deduction on line 41, loans inside or outside the 100% to 130% of AFR safe-haven range, covered debt instruments). Part VIII for each cost sharing arrangement; Part IX for BEAT (see `us-gilti-fdii-beat`).
-
-**The pro forma Form 1120 (DEs only).** Write "Foreign-owned U.S. DE" across the top. Complete only the name and address and items B (EIN) and E (initial return, final return, name change, address change) on page 1. Leave income, deductions and tax blank, sign, and attach Form 5472. Do not use the Form 1120 mailing addresses. Source: [Instructions for Form 5472, When and Where To File](https://www.irs.gov/pub/irs-pdf/i5472.pdf).
-
-### Step 6: EIN, records and the authorization of agent
-
-- **EIN.** A DE needs its own EIN to file. File Form SS-4: on line 9a tick Other and write "Foreign-owned U.S. disregarded entity-Form 5472"; on line 10 tick Other and enter "Foreign-owned U.S. disregarded entity filing Form 5472". The responsible party on lines 7a and 7b must be an individual; enter "foreign" or N/A on line 7b if that person has no SSN or ITIN and cannot get one. The online application is not available where there is no US legal residence, principal place of business or office: apply by telephone (international applicants only), fax or mail. Source: [Instructions for Form SS-4 (Rev. December 2025)](https://www.irs.gov/pub/irs-pdf/iss4.pdf), [IRS EIN page](https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number).
-- **Records.** Keep the permanent books required by section 6001, sufficient to establish the correct treatment of related-party transactions. Keep them as long as they may be relevant, and never less than the assessment period for the year the transaction affects. Under 6501(c)(8) that period does not close until 3 years after the Form 5472 information is furnished. Failing to keep records carries the same USD 25,000 penalty. Source: [Treas. Reg. 1.6038A-3(a)(1), (g)](https://www.ecfr.gov/current/title-26/section-1.6038A-3).
-- **Authorization of agent.** When the IRS asks, the foreign related party must sign an authorization naming the reporting corporation as its limited agent for sections 7602, 7603 and 7604, and the corporation must accept it, within 30 days of the request, using the wording in Treas. Reg. 1.6038A-5(b). Without it, or if a summons is not substantially complied with, the IRS may set the related-party deductions and cost of property from its own information (section 6038A(e)(3)). Practice tip: have the owner sign it at engagement so it is ready.
-- **Exceptions to the records and agent rules (not for DEs):** US gross receipts under USD 10,000,000 (1.6038A-1(h)), or aggregate gross related-party payments not more than USD 5,000,000 and under 10% of US gross income, with payments in and out added together, never netted (1.6038A-1(i)). Neither exception removes the duty to file Form 5472 or the general section 6001 records duty.
-
-### Step 7: penalty exposure and relief
-
-- **Base penalty:** USD 25,000 for each year of failure to file when due and in the manner prescribed, or to keep records. A substantially incomplete Form 5472 counts as not filed. It is imposed once a year for each related party. Members of a consolidated group are jointly and severally liable. Source: [26 U.S.C. 6038A(d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038A.htm), [Treas. Reg. 1.6038A-4(a)](https://www.ecfr.gov/current/title-26/section-1.6038A-4).
-- **Continuation penalty:** USD 25,000 for each 30-day period (or part) that the failure continues after the 90 days following the IRS notice, for each related party. Where reasonable cause existed, the 90 days start no earlier than the last day it existed (6038A(d)(3)).
-- **Reasonable cause:** an affirmative written statement of all the facts, signed under penalties of perjury, filed with the IRS service center where Form 5472 is filed. Good faith and an honest, reasonable misunderstanding of fact or law can qualify. Applied liberally for a corporation with gross receipts of USD 20,000,000 or less that did not know of the rules, has limited US presence and complies promptly. Source: [Treas. Reg. 1.6038A-4(b)](https://www.ecfr.gov/current/title-26/section-1.6038A-4).
-- **First-time abatement** does not apply to event-based filings such as Form 5472. If the Form 5472 penalty was assessed automatically because it was attached to a late Form 1120, and the Form 1120 failure-to-file penalty is abated under first-time abatement (or would have been eligible), the Form 5472 penalty may be abated too, provided there were no similar penalties and no late Form 1120 in the three prior periods. Source: [IRM 20.1.9.5.5](https://www.irs.gov/irm/part20/irm_20-001-009).
-- **Delinquent returns:** a filer not under civil examination or criminal investigation and not yet contacted by the IRS files the missing returns through normal procedures and may attach a reasonable cause statement to each. The IRS warns that penalties may be assessed without considering the statement, and the taxpayer may have to answer later correspondence. Source: [IRS, Delinquent International Information Return Submission Procedures](https://www.irs.gov/individuals/international-taxpayers/delinquent-international-information-return-submission-procedures). The Streamlined Filing Compliance Procedures are for individuals and do not cover this.
-- **Assessment period:** while a required Form 5472 is missing, the assessment period for any tax on the related return stays open until 3 years after the information is furnished; if the failure was due to reasonable cause, only the related items stay open (6501(c)(8)(B)).
-- **Criminal penalties** under sections 7203, 7206 and 7207 may apply to failing to submit information or to false or fraudulent information.
-
-## Boundary and exception table
-
-| Situation | Treatment |
-| --- | --- |
-| Foreign-owned single-member LLC, no election, owner put money in or took money out in 2026 | File: pro forma Form 1120 plus Form 5472, Part V statement |
-| Same LLC, a year with no money or property moving between owner (or other related party) and LLC at all | No Form 5472 required for that year (exception 1). Check carefully: the owner paying the LLC's state fee or registered agent personally is a contribution |
-| Same LLC, the only outside flows are with unrelated customers | Customer flows are not reportable; filing is still required if any owner flow exists |
-| LLC owned by two foreign persons | Not a DE: a partnership by default. The DE rules do not apply; see `us-form-1065-partnership` and refer |
-| LLC owned by a foreign person through a foreign disregarded entity | Still a foreign-owned US DE (indirect sole ownership); report the foreign DE as the direct owner in Part II |
-| Owner is a US citizen or green card holder living abroad | Not a foreign person; not a foreign-owned US DE |
-| Owner is a non-resident with a section 6013(g) or (h) joint election in effect | Not a foreign person for section 6038A |
-| Foreign individual owns 15% and spouse owns 12% | Each is treated as owning 27% under section 318(a)(1): both are 25% foreign shareholders |
-| Foreign individual owns 60% of a foreign company that owns 30% of the US corporation | The individual is attributed 18% (the 10% threshold is met, so attribution applies): not a 25% shareholder through that chain. The company is a direct 25% shareholder; the individual is a related party under 267(b)(2) |
-| Foreign ownership reached 25% for one day in the year | Reporting corporation for the year ("at any time") |
-| Transaction of USD 40 | Reportable; may be entered as "$50,000 or less" |
-| Corporation with US gross receipts under USD 10,000,000 | Still files Form 5472; exempt only from the 1.6038A-3 records and 1.6038A-5 agent rules |
-| Dividends paid by a regular corporation to a 25% foreign shareholder | No Part IV line; line 35 takes other amounts only to the extent they enter taxable income, and Part V is for DEs only. On that reading a dividend alone is not a reportable transaction. Reviewer to confirm before relying on it |
-| Loan from owner to corporation | Part IV line 17 (balances or monthly average); interest paid on line 32 |
-| Owner provides services or property free | Part VI schedule with estimated fair market value |
-| Consolidated group | May file a consolidated Form 5472 with the schedule of members; each member is a separate reporting corporation with its own USD 25,000 penalty, jointly and severally liable |
-
-### Red flags: common errors
-
-| What the client or a prior preparer says | Why it is wrong |
-| --- | --- |
-| "The LLC is disregarded, so nothing is filed" | A foreign-owned US DE is a corporation for section 6038A and files a pro forma Form 1120 with Form 5472 in any year with a reportable transaction |
-| "I'll file Form 5472 on its own" | It is always an attachment to Form 1120, 1120-F or the pro forma 1120 |
-| "Only transactions over USD 50,000 count" | No threshold; USD 50,000 only allows the "$50,000 or less" entry |
-| "The LLC was inactive" | Formation money, fees the owner paid for it and any withdrawal are Part V transactions |
-| "Family members don't matter" | Section 318(a)(1) attributes spouse, children, grandchildren and parents' stock |
-| "We'll e-file the pro forma return" | A DE cannot file Form 5472 electronically: fax or mail to the DE address |
-| "No SSN or ITIN, so no EIN" | SS-4 line 7b takes "foreign" or N/A; apply by telephone, fax or mail |
-| "We'll ask for first-time abatement" | Not available for Form 5472 on its own (IRM 20.1.9.5.5); argue reasonable cause |
-| "Attach it to the owner's Form 1040 or 1040-NR" | The reporting corporation files it, never the individual owner |
-| "Report lower amounts to avoid attention" | Amounts must be the actual figures or estimates within 75% to 125%; a substantially incomplete form is treated as not filed |
-| "The penalty is USD 25,000 per company" | It is USD 25,000 per related party per year (1.6038A-4(a)(3)) |
+For a DE, write **“Foreign-owned U.S. DE”** on the pro forma Form 1120, complete its name/address and page-one items B and E, sign and attach Form 5472. The pro forma form reports no income/deduction/tax calculation; it does not settle the owner's own income-tax or withholding obligations. [DE instructions](https://www.irs.gov/instructions/i5472).
 
 ## Worked cases
 
-**Case 1, a decision: does a foreign owner's LLC need to file for 2026, and what is reportable?** Lucía is a Spanish resident with no US citizenship or green card. In February 2026 she forms a Wyoming LLC, its only member, with no election. She transfers USD 3,000 to its bank account in February and pays the LLC's USD 300 registered agent fee from her own card in March. During 2026 the LLC is paid USD 48,000 by unrelated customers through a payment processor, and it transfers USD 30,000 to Lucía's personal account in December. She has never filed anything.
+### Case 1 - original 2026 LLC inputs
 
-Decision: the LLC is a foreign-owned US DE (domestic, disregarded, one foreign owner), so it is a reporting corporation. It had three reportable transactions with Lucía, all Part V items (two contributions, one distribution), so exception 1 does not apply: it must file a pro forma Form 1120 with one Form 5472 (one related party), marked "Foreign-owned U.S. DE", by 15 April 2027 (or 15 October 2027 with a Form 7004 faxed or mailed to the DE address by 15 April 2027). The USD 48,000 of customer receipts is not reported on Form 5472. Line 1f, which includes Part V amounts for a DE, is USD 3,000 + USD 300 + USD 30,000 = USD 33,300; each item may be described as "$50,000 or less", but exact figures are clearer. The other way: had no money or property moved between Lucía and the LLC in a year (she did not fund it, nobody paid its fees for it, nothing was withdrawn), that year would need no Form 5472.
+Lucía is a Spanish resident, no US citizenship or green card; she forms a Wyoming LLC as sole member, no election, in February 2026. She contributes USD 3,000 in February, pays its USD 300 registered-agent fee personally in March, receives USD 30,000 in December; unrelated payment-processor customer receipts are USD 48,000. She has never filed.
 
-Penalty exposure if she finds out only after three such years (2026, 2027, 2028) with nothing filed: USD 25,000 x 1 related party x 3 years = USD 75,000. If the IRS then mails a notice for one year and the failure continues 150 days past the 90-day period, that year adds 5 periods (150 / 30) x USD 25,000 = USD 125,000. Reasonable cause, with a statement under penalties of perjury, is the route to relief; first-time abatement is not available on its own.
+**Conditional conclusion:** the original facts do not establish US tax nonresidence (including substantial presence), absence of a section 6013 election, or the owner's US filing tax year. Do not use a final filing conclusion until established. Check this point with one of our partner accountants. If she qualifies as a foreign person, the LLC uses the calendar year, and the fee is a contribution rather than a repayable advance, one Form 5472 reports three Part V owner transactions with line 1f USD 33,300, attached to pro forma 1120. The unrelated USD 48,000 is excluded. Use exact amounts; do not apply “USD 50,000 or less” separately to split a series. A year with no reportable transaction requires no Form 5472. [DE rule and Example 1](https://www.ecfr.gov/current/title-26/section-1.6038A-2), [filing instructions](https://www.irs.gov/instructions/i5472).
+
+Assuming the same filing duty in each of 2026, 2027 and 2028 and no relief, three unfiled years expose USD 75,000 base penalty. A failure for one party/year continuing **150 days beyond** the notice's initial 90-day period adds five periods, USD 125,000. These are conditional statutory amounts, not an assessed liability or a promise about future law. [Penalty rule](https://uscode.house.gov/us/usc/t26/s6038A/).
 
 ```oa-check
 name: Foreign-owned single-member LLC, 2026, is a Form 5472 needed and what is the exposure
@@ -239,13 +122,15 @@ expected:
   continuation_penalty: 125000
 ```
 
-**Case 2, an edge case: attribution, two related parties, and the record-keeping exceptions.** A Delaware C corporation (calendar year 2026) is owned: Hans, a German individual, 15%; his wife Petra, German, 12%; Sakura KK, a Japanese company, 30%; US founders 43%. Kaito, a Japanese individual, owns 60% of Sakura KK. In 2026 the corporation receives USD 150,000 from Sakura KK for engineering services, pays Sakura KK USD 420,000 to licence its patents, and pays Hans USD 80,000 for consulting. Nothing passes between the corporation and Petra or Kaito. US gross receipts and US gross income are both USD 6,000,000.
+### Case 2 - original 2026 corporation inputs
 
-Ownership: Hans is treated as owning 15% + 12% = 27% (spouse attribution), and so is Petra: both are 25% foreign shareholders. Sakura KK owns 30% directly. Kaito is attributed 60% x 30% = 18% (the 10% threshold is met, so attribution applies), under 25%; he is a related party through 267(b)(2) but has no transactions. No foreign person reaches 50%, so line 2 is not ticked. The corporation is a reporting corporation.
+Delaware calendar-year C corporation: Hans, German, 15%; wife Petra, German, 12%; Sakura KK, Japanese company, 30%; US founders 43%. Kaito, Japanese individual, owns 60% of Sakura KK. Services received from Sakura KK USD 150,000; patent licence paid USD 420,000; Hans consulting paid USD 80,000. Nothing passes to/from Petra or Kaito. US gross receipts and gross income each USD 6,000,000.
 
-Forms: two Forms 5472, one for Sakura KK and one for Hans (none for Petra or Kaito, who had no transactions). Sakura KK form: line 15 USD 150,000 (line 22 total USD 150,000), line 28 USD 420,000 (line 36 total USD 420,000), line 1f USD 570,000. Hans form: line 29 USD 80,000, line 1f USD 80,000. Line 1h on both: USD 650,000. Part II lists Sakura KK (30%) then Hans (27%) as direct 25% foreign shareholders; Petra, also a 25% foreign shareholder by attribution, goes on an attached sheet.
+Subject to confirming foreign-person status, vote/value percentages, no legally separated spouse, no other attribution and no filing exception: Hans and Petra each constructively own 27%; Kaito's proportionate holding is 18%; Sakura KK directly owns 30%. Kaito is related to Sakura KK under section 267(b)(2), but has no transactions. No person in the stated chain reaches 50%. [Ownership rules](https://uscode.house.gov/us/usc/t26/s318/), [267(b)(2)](https://uscode.house.gov/us/usc/t26/s267/), [Regulation 1.6038A-1](https://www.ecfr.gov/current/title-26/section-1.6038A-1).
 
-Exceptions: the de minimis safe harbor fails, because USD 650,000 is not under 10% of US gross income (USD 600,000). But US gross receipts of USD 6,000,000 are under USD 10,000,000, so the small corporation exception relieves the corporation of the 1.6038A-3 records and 1.6038A-5 agent rules. It must still file both forms. Exposure if neither is filed: 2 related parties x USD 25,000 = USD 50,000 for 2026. The patent licence fee also needs a section 482 pricing basis; refer the study out.
+Two forms: Sakura KK line 15/22 USD 150,000, line 28/36 USD 420,000, 1f USD 570,000; Hans line 29/36 and 1f USD 80,000. Line 1h is USD 650,000 on both. Part II shows Sakura KK as the direct 25% holder; Hans/Petra are indirect holders by attribution, with the required explanation, not direct 25% holders. No separate form solely for Petra/Kaito with no reportable transactions. [Form instructions](https://www.irs.gov/instructions/i5472).
+
+USD 650,000 exceeds 10% of USD 6,000,000 (USD 600,000), so the de minimis safe harbor fails. The small-corporation records/agent exemption works **only if the aggregate receipts of all related reporting corporations remain under USD 10,000,000**; USD 6,000,000 for this corporation alone does not establish that. Filing remains required. Missing the two forms exposes USD 50,000 base penalty before relief. Patent pricing remains a hold: Check this point with one of our partner accountants. [Regulation 1.6038A-1(h)/(i)](https://www.ecfr.gov/current/title-26/section-1.6038A-1), [penalty](https://www.ecfr.gov/current/title-26/section-1.6038A-4).
 
 ```oa-check
 name: 25% foreign-owned C corporation, attribution and record-keeping exceptions (2026)
@@ -282,68 +167,103 @@ expected:
   exposure_2026: 50000
 ```
 
+### Retained 2025 cases and earlier boundary examples
+
+- **Aisha / Frostbite LLC:** UK resident/national; Delaware SMLLC formed 1 March 2025, no election; Mercury/Stripe, GBP 8,000 contribution stated as USD 10,200, USD 14,500 unrelated US-customer receipts, USD 9,000 draws, no other related transactions. If foreign-person status/calendar year are established, Part V contribution/draws total USD 19,200; customer receipts are excluded. Complete Part III as well as II and the applicable Part VII questions. Ordinary calendar-2025 deadline was 15 April 2026, extended to 15 October 2026 only with a valid timely extension; both dates have passed. Original scenario's USD 0 customer-revenue variant still tests owner transactions; its unspecified USD X contribution/USD Y draws are not invented. Original three-unfiled-year scenario gives USD 75,000 base exposure only if all three years required filing. The currency equivalence is an original case input, not a verified exchange rate. UK LLC characterization, personal trading-income treatment, US residency/ECI, actual prior years and relief are **non-usable holds**. Check this point with one of our partner accountants. [Part V/filing](https://www.irs.gov/instructions/i5472), [deadline](https://uscode.house.gov/us/usc/t26/s6072/).
+- **GreenMobil USA Inc. / GreenMobil GmbH:** Delaware calendar-year C corporation, EIN 88-1234567, 100% German-parent ownership; 2025 cost-plus 8% R&D contract, USD 4,200,000 service receipts, USD 620,000 patent royalties paid, no loans/other transactions. Conditional on stated foreign ownership and no exception, one Form 5472: line 15/22 USD 4,200,000; line 28/36 USD 620,000; 1f USD 4,820,000 with real Form 1120. Ordinary calendar-2025 filing dates as above. The earlier unquantified R&D scenario maps services to 15 and any interest received to 18. The 8% contract is preserved, **not certified arm's length**; neither a German treaty rate (including the old film/TV claim) nor “below USD 500 million, so no BEAT” is usable without the separate tests. Withholding, pricing documentation and BEAT are holds. Check this point with one of our partner accountants. [Form](https://www.irs.gov/pub/irs-pdf/f5472.pdf), [instructions](https://www.irs.gov/instructions/i5472).
+- **Renata / TechCo Inc.:** Brazilian individual 30%, US founders 70%; 2025 total dividends USD 200,000, Renata's USD 60,000 share, no other transactions. The prior USD 18,000 withholding/USD 42,000 net is **arithmetic only**, not a usable withholding result. Dividend-only Form 5472 treatment, all prior “US–Brazil treaty” assertions, rates and resulting filing conclusion are expressly withdrawn pending specialist determination; Part V is DE-only. The original unquantified quarterly-dividend scenario is held the same way. Check this point with one of our partner accountants.
+- **Earlier ownership boundaries:** a French national's 30% direct Delaware holding meets the ownership percentage only after foreign-person status is established. UK Holdings Ltd's 100% Cayman Sub Ltd holding, with Cayman owning 40% of a Delaware LLC taxed as a corporation, attributes 40% to UK Holdings. A 10% holding in UK Holdings does **not** automatically confer 25% ownership of Delaware; compute the proportionate chain and test other related-party rules. The earlier French-founder loan/management-fee example uses one form per related party with reportable transactions; the French founder plus UK passive investor variant does not establish DE status or two reporting duties without classification/relatedness/transactions. Check this point with one of our partner accountants. [Attribution](https://uscode.house.gov/us/usc/t26/s318/), [modified rules](https://www.ecfr.gov/current/title-26/section-1.6038A-1).
+
+```oa-check
+name: Preserved 2025 case arithmetic, not residency or treaty determinations
+inputs:
+  aisha_gbp: 8000
+  aisha_usd_stated: 10200
+  aisha_customer_receipts: 14500
+  aisha_draws: 9000
+  three_unfiled_years: 3
+  penalty: 25000
+  rd_receipts: 4200000
+  rd_royalties: 620000
+  rd_contract_markup: 0.08
+  techco_dividends: 200000
+  renata_share: 0.30
+  old_withholding_assumption: 0.30
+  uk_cayman_share: 1
+  cayman_delaware_share: 0.40
+steps:
+  - aisha_part_v_total: aisha_usd_stated + aisha_draws
+  - conditional_base_exposure: three_unfiled_years * penalty
+  - greenmobil_line_1f: rd_receipts + rd_royalties
+  - renata_gross: techco_dividends * renata_share
+  - held_old_withholding_arithmetic: renata_gross * old_withholding_assumption
+  - held_old_net_arithmetic: renata_gross - held_old_withholding_arithmetic
+  - uk_attributed_percent: uk_cayman_share * cayman_delaware_share * 100
+expected:
+  aisha_part_v_total: 19200
+  conditional_base_exposure: 75000
+  greenmobil_line_1f: 4820000
+  renata_gross: 60000
+  held_old_withholding_arithmetic: 18000
+  held_old_net_arithmetic: 42000
+  uk_attributed_percent: 40
+```
+
 ## When to refuse or refer
 
-| Code | Situation | Action |
-| --- | --- | --- |
-| R-5472-MULTI | US LLC with two or more members, or ownership changed so the LLC had more than one member during the year | Refer: partnership classification and Form 1065 (`us-form-1065-partnership`); do not prepare a DE pro forma return on assumption |
-| R-5472-ECI | The foreign owner (individual or company) may have US effectively connected income through the LLC | Refer: Form 1040-NR or 1120-F analysis is outside this skill; Form 5472 is still due |
-| R-5472-WHT | Payments to the foreign related party of US-source dividends, interest, royalties or service fees | Refer: withholding, Forms 1042 and 1042-S, treaty rates; Form 5472 does not discharge withholding |
-| R-5472-TP | Material related-party pricing (royalties, cost-plus services, intercompany loans outside the safe-haven range) | Refer: section 482 study and Treas. Reg. 1.6662-6 documentation |
-| R-5472-BEAT | The corporation may be an applicable taxpayer for section 59A | Route to `us-gilti-fdii-beat` for Part IX and Form 8991 |
-| R-5472-CSA | Cost sharing arrangement or platform contribution transactions | Refer: Part VIII and Treas. Reg. 1.482-7 |
-| R-5472-NOTICE | IRS notice (for example CP 215) already received, or the entity is under examination | Refer to a practitioner for the penalty response; the delinquent-return route on the IRS page is only for taxpayers not yet contacted |
-| R-5472-ELECT | Client asks whether to elect corporate treatment (Form 8832) to change the filing | Refer: check-the-box analysis |
+Every held topic below is **non-usable for a filing or calculation** until resolved. Check this point with one of our partner accountants.
+
+| Situation | Destination / hold |
+| --- | --- |
+| Multiple LLC members, ownership changes, Forms 8832/2553, foreign DE/grantor-trust chains | Classification hold; `us-form-1065-partnership` where applicable; do not assume a DE |
+| Corporation filing computation or extension payment | `us-form-1120-c-corp`, `us-1120-corporation-return-schedule-ordinary-business`, `us-corporate-extension-form-7004-and-the` |
+| Foreign owner's ECI, 1040-NR/1120-F, residence, UK LLC treatment, treaty/PE, inbound withholding or Forms 1042/1042-S/W-8BEN-E | Separate taxpayer/treaty/withholding determination; preserve original inputs, no rate/default conclusion |
+| Dividend-only regular corporation, nonmonetary dividends, corporate capital flows | Form 5472 reportability hold, not an asserted exemption or filing duty |
+| Form 5471/Schedule M, FSC/1120-FSC, shipping sections 883/887, wholly foreign transactions | Establish all exception conditions first; DE exclusions and BEAT anti-avoidance rules must be tested |
+| Consolidated Form 5472, foreign-government, partnership-attributed or other rare transactions | Specialist completion, member schedule and relevant aggregation/exceptions; no automatic filing exemption |
+| Section 482 methods/studies, section 1.6662-6 documentation, section 6662 penalties, loans/AFR safe haven | No assurance of pricing method, documentation protection, rate or penalty outcome |
+| Platform contributions/cost sharing, Parts VII–IX hybrids/covered debt/section 250/BEAT/GILTI | Specialist form completion; `us-gilti-fdii-beat`; do not use a gross-receipts shortcut or an obsolete form label as 2026 law |
+| US-owned foreign corporations, partnerships or DEs, outbound section 367, bank/assets reporting | `us-form-5471-cfc-information`, separate Forms 8865/8858/367 analysis, `us-fbar-and-fatca-8938` |
+| IRS notice/CP 215, examination/investigation, multiple delinquent years, claimed streamlined eligibility | Practitioner handles correction/penalty response and procedural deadlines; no relief guaranteed |
+| Fiscal/short-year deadlines, June-ending transitions, special foreign-corporation extensions or disaster relief | Date hold; do not reuse the calendar dates below |
 
 ## Filing and payment
 
-- **Attach and file together.** Form 5472 is always attached to the income tax return: Form 1120 for a US corporation, Form 1120-F for a foreign corporation, the pro forma Form 1120 for a DE. It has no separate due date: it is due with that return, including extensions.
-- **Due dates for tax year 2026.** Calendar year: 15 April 2027 (Form 1120 and pro forma 1120; Form 1120-F where the foreign corporation has a US office or place of business), or 15 June 2027 for a Form 1120-F filer with no US office or place of business. With Form 7004 filed by the original due date: 6 months later (15 October 2027, or 15 December 2027 for that 1120-F filer). Fiscal year: 15th day of the 4th month after the year ends. A weekend or legal holiday moves the date to the next business day. Form 7004 figures and payment: `us-corporate-extension-form-7004-and-the`.
-- **DE channel.** Fax (300 DPI or higher) to 855-887-7737 or mail to Internal Revenue Service, 1973 Rulon White Blvd, M/S 6112 Attn: PIN Unit, Ogden, UT 84201. A DE cannot file Form 5472 electronically. Keep the fax transmission report as proof of timely filing.
-- **DE extension.** Form 7004 with the Form 1120 code on Part I line 1, "Foreign-owned U.S. DE" written across the top, faxed or mailed to the same DE fax number or address by the original due date. Do not use the regular Form 7004 addresses.
-- **Payment.** A DE's pro forma return carries no tax and no payment. A real corporation pays its income tax under its own return rules.
-- **Revision check.** The current versions are Form 5472 (Rev. December 2023) and its Instructions (Rev. December 2024); the IRS About Form 5472 page showed no recent developments on 13 November 2026. Recheck before filing.
+- Form 5472 accompanies the corporation's return, normally Form 1120 or 1120-F, by its due date including a valid extension. DEs use the pro forma 1120 described above. [Regulation 1.6038A-2(d)](https://www.ecfr.gov/current/title-26/section-1.6038A-2).
+- Ordinary **calendar 2026** Form 1120/pro forma deadline is **15 April 2027**; timely valid Form 7004 ordinarily extends filing six months to **15 October 2027**. Calendar 1120-F is ordinarily 15 April 2027 with a US office/place of business, 15 June 2027 without; ordinary six-month requested extensions yield 15 October/15 December 2027 respectively. Special extension/fiscal-year rules remain held above. A weekend/legal holiday moves filing to the next business day. [6072](https://uscode.house.gov/us/usc/t26/s6072/), [7004 instructions](https://www.irs.gov/instructions/i7004), [1120-F instructions](https://www.irs.gov/instructions/i1120f).
+- A foreign-owned US DE cannot e-file Form 5472. Fax the pro forma 1120 and attachment at **300 DPI or higher to 855-887-7737**, or mail to **Internal Revenue Service, 1973 Rulon White Blvd, M/S 6112 Attn: PIN Unit, Ogden, UT 84201**. Keep transmission/posting evidence. Its Form 7004 must be filed by the unextended due date to that same dedicated fax/address, with the Form 1120 code in Part I line 1 and “Foreign-owned U.S. DE” across the top; do not use the regular 7004 addresses. [DE filing instructions](https://www.irs.gov/instructions/i5472).
+- Obtain the DE's own EIN. SS-4 line 9a: Other, “Foreign-owned U.S. disregarded entity-Form 5472”; line 10 Other: “Foreign-owned U.S. disregarded entity filing Form 5472”. Responsible party is an individual except government entities; line 7b takes “foreign”/N/A only if that party has no SSN/ITIN **and is ineligible to obtain one**. Online application requires its stated US-location and taxpayer-ID conditions; international applicants without a US/territory legal residence, principal business place or principal office/agency can use **267-941-1099**, Monday–Friday **6 a.m.–11 p.m. Eastern**, not toll-free. For applicants without a legal residence/principal business place/principal office/agency in a state/DC, fax from outside the US to **304-707-9471**; mail is also available. [SS-4 instructions](https://www.irs.gov/instructions/iss4).
+- The pro forma DE return has no income-tax computation/payment; assess the owner's separate obligations independently. Form 7004 does not extend a real corporation's tax-payment time. [5472](https://www.irs.gov/instructions/i5472), [7004](https://www.irs.gov/instructions/i7004).
 
 ## Completion checklist
 
-- Reporting corporation type identified: 25% foreign-owned US corporation, foreign corporation with a US trade or business, or foreign-owned US DE.
-- Every foreign owner tested at any time in the year, with section 318 attribution as modified (10%, no attribution down to US persons from foreign persons) and family attribution.
-- Every related party listed; one Form 5472 for each related party with a reportable transaction; lines 1f, 1g and 1h reconcile across the forms.
-- Owner contributions, distributions and personally paid entity expenses captured in Part V for a DE.
-- No transaction left out for being small; "$50,000 or less" used only where wanted.
-- Exchange rate schedule attached; accrual amounts used where the corporation is on accrual.
-- Part VII answered in full by every filer.
-- Pro forma Form 1120 marked "Foreign-owned U.S. DE", items B and E completed, signed.
-- EIN in place (SS-4 line 9a and line 10 wording for a DE).
-- Filed by fax or mail to the DE address (DEs), fax report kept; or attached to the return (corporations).
-- Prior years checked; any delinquent years filed with reasonable cause statements.
-- Records kept for at least the open assessment period; authorization of agent ready to sign within 30 days of an IRS request.
+- Reconcile owners, attribution, foreign-person status, related parties and every transaction; apply only established exceptions, with one form per relevant party and the required attachments.
+- Reconcile 1f/1g/1h, choose the correct direct/indirect Part II fields, complete III and line-conditioned VII; sign the correct return, use its filing channel and preserve timely filing/extension evidence.
+- Keep permanent accurate records sufficient to establish the correct related-party treatment, as long as relevant/material and **no less than the applicable assessment and collection limitation period**. There is no universal seven-year release date. Under section 6501(c)(8), assessment cannot expire before three years after required information is furnished; reasonable cause **and no willful neglect** limit that extension to related items. Do not promise assessment closes automatically then. [Regulation 1.6038A-3(a), (g)](https://www.ecfr.gov/current/title-26/section-1.6038A-3), [6501(c)(8)](https://uscode.house.gov/us/usc/t26/s6501/).
+- Subject to the applicable exemptions, a foreign related party's signed limited-agent authorization and the corporation's signed acceptance for sections 7602–7604 must be provided within 30 days of IRS request, with the regulation's wording. Failure to authorize or summons noncompliance may invoke section 6038A(e)'s determination of related-party deduction/property cost; do not infer the result without its conditions and procedure. Check this point with one of our partner accountants. [Regulation 1.6038A-5](https://www.ecfr.gov/current/title-26/section-1.6038A-5), [6038A(e)](https://uscode.house.gov/us/usc/t26/s6038A/).
+- Missing/substantially incomplete filing, or required-record failure, attracts USD 25,000 per related party/year before relief. After more than 90 days from mailing notice, add USD 25,000 per 30 days **or fraction** of continuing failure, per affected party; reasonable-cause timing applies. Consolidated members have separate exposure and joint/several liability. Criminal penalties may apply to nonfiling or false/fraudulent information. [6038A(d)](https://uscode.house.gov/us/usc/t26/s6038A/), [Regulation 1.6038A-4](https://www.ecfr.gov/current/title-26/section-1.6038A-4), [IRS penalties](https://www.irs.gov/instructions/i5472).
+- Reasonable cause requires an affirmative written showing of all facts under penalties of perjury, filed with the appropriate IRS official/service center, and IRS determination. Liberal treatment for gross receipts **USD 20,000,000 or less** requires no knowledge of the requirements, limited US presence/contact and prompt full compliance with IRS requests; size alone is no relief. [Regulation 1.6038A-4(b)](https://www.ecfr.gov/current/title-26/section-1.6038A-4).
+- First-time abatement is not standalone Form 5472 relief. For a systemic initial penalty from a late Form 1120, the IRM permits linked relief if that 1120 penalty is abated under FTA (or would qualify but no penalty because no tax/fully paid), **and** no similar penalties and no late related Form 1120 in the prior three periods. Relief is not automatic. [IRM 20.1.9.5.5](https://www.irs.gov/irm/part20/irm_20-001-009).
+- For delinquent returns, the IRS normal-procedure route requires no civil examination/criminal investigation and no prior IRS contact about those returns. Follow amended-income-return attachment and applicable filing instructions; a reasonable-cause statement can accompany each but does not ensure consideration before assessment. If already contacted, or no underlying income return exists, resolve the actual correction route with a practitioner. Check this point with one of our partner accountants. [IRS delinquent-return procedures](https://www.irs.gov/individuals/international-taxpayers/delinquent-international-information-return-submission-procedures).
 
 ## Sources
 
-| Source | URL | Read on |
-| --- | --- | --- |
-| Form 5472 (Rev. December 2023). Read for Part I lines 1a to 3, Part II lines 4 to 7 (FTIN), Part III, Part IV lines 9 to 36, Part V, Part VI, Part VII lines 37 to 43, Parts VIII and IX. | https://www.irs.gov/pub/irs-pdf/f5472.pdf | 2026-11-13 |
-| Instructions for Form 5472 (Rev. December 2024). Read for definitions, Who Must File and the six exceptions, the DE pro forma Form 1120 (items B and E), the fax 855-887-7737 and Ogden address, Form 7004 for DEs, no e-file for DEs, the USD 25,000 penalty and the continuation penalty per related party, reference ID rules, reasonable estimates (75% to 125%) and "$50,000 or less", Part V and Part VII. | https://www.irs.gov/pub/irs-pdf/i5472.pdf | 2026-11-13 |
-| IRS, About Form 5472. Read for the current revisions and "Recent developments: None at this time". | https://www.irs.gov/forms-pubs/about-form-5472 | 2026-11-13 |
-| 26 U.S.C. 6038A (govinfo, 2024 edition). Read for (a) requirement, (c)(1) 25%, (c)(2) related party, (c)(3) foreign person, (c)(5) the 10% substitution, (d)(1) to (3) the USD 25,000, 90-day and 30-day rules and reasonable cause, (e) agent and noncompliance rules, and the 2017 amendment note (Pub. L. 115-97, section 14401(b)(2)). | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038A.htm | 2026-11-13 |
-| 26 U.S.C. 6038C (govinfo). Read for (a), foreign corporations engaged in a US trade or business. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038C.htm | 2026-11-13 |
-| 26 U.S.C. 6501 (govinfo). Read for (c)(8)(A) the 3-year rule and (c)(8)(B) the reasonable cause limit. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap66-subchapA-sec6501.htm | 2026-11-13 |
-| 26 U.S.C. 318 (govinfo). Read for (a)(1) family attribution and (a)(2)(C) attribution from corporations. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapC-partI-subpartC-sec318.htm | 2026-11-13 |
-| 26 U.S.C. 267 (govinfo). Read for (b)(2), an individual and a corporation more than 50% owned by that individual. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec267.htm | 2026-11-13 |
-| Public Law 119-21 (govinfo). Read to confirm no amendment of sections 6038A or 6038C; section 70323 renames the section 250 term to foreign-derived deduction eligible income for tax years beginning after 31 December 2025. | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
-| Treas. Reg. 1.6038A-1 (eCFR). Read for (c)(1) reporting corporation and the DE rule, (c)(3) 25% foreign shareholder, (c)(5) exceptions, (d) related party, (e)(1) attribution, (f) foreign person, (h) USD 10,000,000 small corporation exception, (i) USD 5,000,000 and 10% safe harbor. | https://www.ecfr.gov/current/title-26/section-1.6038A-1 | 2026-11-13 |
-| Treas. Reg. 1.6038A-2 (eCFR). Read for (a) one form per related party and reportable transactions, (b)(3) and (4) transaction types including (b)(3)(xi) DE formation, contributions and distributions, (b)(8) reasonable estimates, (b)(9) USD 50,000, (b)(10) accruals, (b)(11) Example 1, (d) time for filing, (e) exceptions. | https://www.ecfr.gov/current/title-26/section-1.6038A-2 | 2026-11-13 |
-| Treas. Reg. 1.6038A-3 (eCFR). Read for (a)(1) records and (g) period of retention. | https://www.ecfr.gov/current/title-26/section-1.6038A-3 | 2026-11-13 |
-| Treas. Reg. 1.6038A-4 (eCFR). Read for (a)(1) the USD 25,000 penalty and substantially incomplete forms, (a)(3) once per related party per year, (b) reasonable cause and the USD 20,000,000 small corporation rule. | https://www.ecfr.gov/current/title-26/section-1.6038A-4 | 2026-11-13 |
-| Treas. Reg. 1.6038A-5 (eCFR). Read for (a) and (b)(1), the authorization of agent wording and the 30-day rule. | https://www.ecfr.gov/current/title-26/section-1.6038A-5 | 2026-11-13 |
-| Treas. Reg. 301.7701-2 (eCFR). Read for (c)(2)(vi), the special rule for section 6038A reporting, indirect sole ownership and its applicability date. | https://www.ecfr.gov/current/title-26/section-301.7701-2 | 2026-11-13 |
-| Instructions for Form 1120 (2025). Read for the foreign-owned DE paragraph and When To File (15th day of the 4th month). | https://www.irs.gov/pub/irs-pdf/i1120.pdf | 2026-11-13 |
-| Instructions for Form 1120-F (2025). Read for When To File (4th month with a US office, 6th month without). | https://www.irs.gov/pub/irs-pdf/i1120f.pdf | 2026-11-13 |
-| Instructions for Form 7004 (Rev. December 2025). Read for the 6-month extension and the end of the 7-month rule for June 30 years beginning in 2026. | https://www.irs.gov/pub/irs-pdf/i7004.pdf | 2026-11-13 |
-| Instructions for Form SS-4 (Rev. December 2025). Read for international telephone 267-941-1099, fax 304-707-9471, lines 7a and 7b ("foreign" or N/A), line 9a and line 10 wording for a foreign-owned DE. | https://www.irs.gov/pub/irs-pdf/iss4.pdf | 2026-11-13 |
-| IRS, Get an employer identification number. Read for who can use the online application. | https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number | 2026-11-13 |
-| IRM 20.1.9, International Penalties. Read for 20.1.9.5.5 (Form 5472 penalty relief, first-time abatement, systemic assessment with a late Form 1120) and the CP 215 notice. | https://www.irs.gov/irm/part20/irm_20-001-009 | 2026-11-13 |
-| IRS, Delinquent International Information Return Submission Procedures. Read for who may use them and that penalties may be assessed without considering the statement. | https://www.irs.gov/individuals/international-taxpayers/delinquent-international-information-return-submission-procedures | 2026-11-13 |
+Read 27 November 2026 unless the claims ledger expressly identifies applicable completed proof reused from 26 November. The printed form is Rev. December 2023 and its instructions Rev. December 2024 as read; form labels do not establish substantive 2026 eligibility. Recheck the applicable filing-season revision before preparing a return.
 
-Not yet confirmed: the 2026 Instructions for Form 1120 and Form 1120-F were not yet published when read, so the 2026 due dates above rest on the 2025 instructions and the Form 7004 instructions (Rev. December 2025); confirm the due date for June 30 fiscal years beginning in 2026 (the 2025 rule is the 15th day of the 3rd month) once the 2026 instructions are out. Form 5472 (Rev. 12-2023) line 41a still says "foreign-derived intangible income" although Public Law 119-21 renamed the section 250 term for 2026; a new revision may follow. Whether a dividend paid by a regular corporation to a 25% foreign shareholder is itself a reportable transaction is this skill's reading of the line list and 1.6038A-2(b)(3)(x), not an IRS statement.
+| Official source | Operative material | Read on |
+| --- | --- | --- |
+| [26 USC 6038A](https://uscode.house.gov/us/usc/t26/s6038A/) | Ownership, relatedness, attribution, penalty, agent/noncompliance | 2026-11-27 |
+| [26 USC 6038C](https://uscode.house.gov/us/usc/t26/s6038C/) | Foreign corporations engaged in US business | 2026-11-27 |
+| [26 USC 318](https://uscode.house.gov/us/usc/t26/s318/) and [267](https://uscode.house.gov/us/usc/t26/s267/) | Attribution and relatedness | 2026-11-27 |
+| [Regulation 301.7701-2](https://www.ecfr.gov/current/title-26/section-301.7701-2) | Domestic DE, indirect sole ownership, tax year | 2026-11-27 |
+| [Regulation 1.6038A-1](https://www.ecfr.gov/current/title-26/section-1.6038A-1) | Definitions, aggregation, exemptions | 2026-11-27 |
+| [Regulation 1.6038A-2](https://www.ecfr.gov/current/title-26/section-1.6038A-2) | Transactions, reporting, estimates, filing | 2026-11-27 |
+| [Regulation 1.6038A-3](https://www.ecfr.gov/current/title-26/section-1.6038A-3) | Records and retention | 2026-11-27 |
+| [Regulation 1.6038A-4](https://www.ecfr.gov/current/title-26/section-1.6038A-4) and [1.6038A-5](https://www.ecfr.gov/current/title-26/section-1.6038A-5) | Penalties, reasonable cause, authorization | 2026-11-27 |
+| [Form 5472](https://www.irs.gov/pub/irs-pdf/f5472.pdf) and [instructions](https://www.irs.gov/instructions/i5472) | Printed lines, DE filing, identifiers, conditional questions | 2026-11-27 |
+| [26 USC 6072](https://uscode.house.gov/us/usc/t26/s6072/), [1120-F](https://www.irs.gov/instructions/i1120f) and [7004 instructions](https://www.irs.gov/instructions/i7004) | Ordinary calendar deadlines and extensions; fiscal/special cases held | 2026-11-27 |
+| [SS-4 instructions](https://www.irs.gov/instructions/iss4) | EIN application and channels | 2026-11-27 |
+| [26 USC 6501(c)(8)](https://uscode.house.gov/us/usc/t26/s6501/) | Assessment; completed applicable proof reused | 2026-11-26 |
+| [IRM 20.1.9.5.5](https://www.irs.gov/irm/part20/irm_20-001-009) and [delinquent procedures](https://www.irs.gov/individuals/international-taxpayers/delinquent-international-information-return-submission-procedures) | Procedural relief and limits | 2026-11-27 |
+
+Not yet confirmed: case-specific residency, UK LLC characterization, dividend-only reporting, treaty/withholding outcomes and the specialist/fiscal-year matters listed above remain non-usable holds. No unconfirmed rate, exemption or filing conclusion is supplied for them. Check this point with one of our partner accountants.
