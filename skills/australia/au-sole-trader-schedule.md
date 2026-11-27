@@ -1,11 +1,11 @@
 ---
 name: au-sole-trader-schedule
 description: Australian sole trader business schedule (Business and Professional Items Schedule for Individuals). Covers assessable business income, allowable deductions, home office (fixed rate 70c/hour or actual), motor vehicle (logbook or cents per km at 88c/km), depreciation (instant asset write-off, simplified pooling, general pooling), prepaid expenses, and trading stock.
-version: 1.5
+version: 1.6
 jurisdiction: AU
 tax_year: 2025
 tax_year_notes: "Retained for 2025-26 returns; use 2026-27 values only where expressly labelled and relevant to the requested year."
-last_updated: 2026-11-22
+last_updated: 2026-11-27
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -18,7 +18,7 @@ domain: income-tax
 
 ## AU Sole Trader Schedule
 
-## Australia Sole Trader Business Schedule v1.5
+## Australia Sole Trader Business Schedule v1.6
 
 ## What this file is
 
@@ -30,7 +30,9 @@ This file covers the Business and Professional Items (BPI) schedule that sole tr
 
 **Tax year coverage:** This skill targets the 2025–26 income year (1 July 2025 to 30 June 2026). Match the intake and assembly year before calculating.
 
-**The reviewer is the customer of this output.** This skill assumes a credentialed reviewer reviews and signs the return. The skill produces working papers and a brief, not a return.
+This workflow prepares working papers and a brief for a credentialed reviewer. A sole trader
+can lodge their own return or use a registered tax agent. [ATO, Business, partnership and trust
+income](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/income-you-must-declare/business-partnership-and-trust-income).
 
 ## Section 1 -- Scope statement
 
@@ -77,16 +79,16 @@ This skill does NOT cover:
 | Cents per km rate (motor vehicle) | 88 cents per km (2024-25 and 2025-26); 91 cents (2026-27) | ATO cents per kilometre method |
 | Cents per km cap | 5,000 business km per car per year | ITAA 1997 s 28-25 |
 | Home office fixed rate | 70 cents per hour for 2024–25 and 2025–26; 67 cents for 2022–23 and 2023–24. Check the published rate for 2026–27 before use. | [ATO fixed rate method](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/working-from-home-expenses/fixed-rate-method) |
-| Trading stock threshold (change in value) | $5,000: if an eligible small business entity reasonably estimates that the difference between opening and closing stock is $5,000 or less, the taxpayer can elect not to do a stocktake | ITAA 1997 s 328-285 |
-| Prepaid expenses (SBE) | Immediately deductible if the service period is 12 months or less and ends on or before 30 June of the following year | ITAA 1936 ss 82KZL and 82KZM |
+| Trading stock threshold (change in value) | Apply the $5,000 opening-to-closing difference test to small business entities and entities that meet the small business test with the $50 million threshold substituted under subsection 328-285(2). | [ITAA 1997 s 328-285](https://www.legislation.gov.au/C2004A05138/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_7/document_7.html) |
+| Prepaid expenses | For the 12-month rule, eligible businesses include entities that meet the small business test with the $50 million threshold substituted under subsection 82KZM(1A). Check the service period and exclusions in section 5.3. | [ITAA 1936 s 82KZM](https://www.legislation.gov.au/C1936A00027/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
 
 - **Instant asset write-off threshold:** For 2025–26, eligible small business entities using simplified depreciation can deduct assets costing less than $20,000 when first used or installed ready for taxable use. The permanent threshold was enacted on 26 August 2026; schedule 2 commences on 1 October 2026 and applies to specified first use or installation from 1 July 2026. [Tax Reform No. 2 Act 2026, schedule 2](https://www.legislation.gov.au/C2026A00071/asmade/text).
 - **Small business entity threshold** -- Aggregated turnover < $10M  _(ITAA 1997 s 328-110)_
 - **Cents per km rate (motor vehicle)** -- 88 cents per km for 2024–25 and 2025–26; 91 cents per km for 2026–27. Check the applicable rate for later years. [ATO cents per kilometre method](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/motor-vehicle-and-car-expenses/expenses-for-a-car-you-own-or-lease/cents-per-kilometre-method).
 - **Cents per km cap** -- 5,000 business km per car per year  _(ITAA 1997 s 28-25)_
 - **Home office fixed rate** -- 70 cents per hour for 2024–25 and 2025–26. Check the ATO's published rate for any other year.
-- **Trading stock threshold (change in value)**: $5,000: if an eligible small business entity reasonably estimates that the difference between opening and closing stock is $5,000 or less, the taxpayer can elect not to do a stocktake  _(ITAA 1997 s 328-285)_
-- **Prepaid expenses (SBE)**: Immediately deductible if the service period is 12 months or less and ends on or before 30 June of the following year  _(ITAA 1936 ss 82KZL and 82KZM)_
+- **Trading stock threshold (change in value):** The $50 million substitution is specific to [ITAA 1997 subsection 328-285(2)](https://www.legislation.gov.au/C2004A05138/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_7/document_7.html). Work out the reasonable stock estimate in section 4.2.
+- **Prepaid expenses:** Apply the 12-month rule and check the exclusions in section 5.3.
 
 ## Section 4 -- Computation rules
 
@@ -96,7 +98,7 @@ This skill does NOT cover:
 
 ### 4.2 Cost of sales / Cost of goods sold
 
-- **Cost of goods sold**: Step 1. Opening stock + Purchases - Closing stock = Cost of goods sold. Step 2. Trading stock can be valued at cost, market selling value, or replacement value (ITAA 1997 s 70-45). The method can differ item by item. Step 3. If an eligible small business entity reasonably estimates that year-end trading stock differs from opening stock by $5,000 or less (s 328-285), the taxpayer can elect to use the same value as opening stock (no stocktake required).  _(ITAA 1997 s 70-45)_
+- **Cost of goods sold:** Opening stock plus purchases less closing stock. Choose cost, market selling value or replacement value item by item under section 70-45. If eligible under [ITAA 1997 subsections 328-285(1) and (2)](https://www.legislation.gov.au/C2004A05138/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_7/document_7.html) and the opening-to-closing difference is reasonably estimated at $5,000 or less, you can elect to carry forward the opening value and skip the stocktake.
 
 The P21 notification concerns an elected closing value below the lowest ordinary valuation under section 70-50. Enter Y at P21 label P when the election requires notice. [ATO 2026 P21 instructions](https://www.ato.gov.au/forms-and-instructions/business-and-professional-items-schedule-2026-instructions/instructions-to-complete-the-bpi-schedule-2026/trading-stock-election-p21).
 
@@ -123,11 +125,11 @@ Two methods are available for eligible cars an individual sole trader holds. App
 
 #### Method 1 -- Cents per kilometre
 
-- **Cents per kilometre method** -- Claim the current rate per business km, up to 5,000 km per car per year. 2025-26: 88c, maximum claim = 5,000 x $0.88 = $4,400 per car. 2026-27: 91c, maximum = $4,550. No logbook or written evidence of individual trips required, but must be able to show how the estimate was calculated.  _(ATO cents per kilometre method; ITAA 1997 s 28-25)_
+- **Cents per kilometre method** -- Claim the current rate per business km, up to 5,000 km per car per year. 2025-26: 88c, maximum claim = 5,000 x $0.88 = $4,400 per car. 2026-27: 91c, maximum = $4,550. This rate includes all car expenses, including fuel and depreciation. No logbook or written evidence of individual trips required, but must be able to show how the estimate was calculated.  _(ATO cents per kilometre method; ITAA 1997 s 28-25)_
 
 #### Method 2 -- Logbook
 
-- **Logbook method** -- Keep a representative logbook for at least 12 continuous weeks and retain annual odometer and expense records. A representative logbook can generally be used for 5 income years. Estimate business kilometres and divide by total kilometres travelled whilst holding the car in the year. Apply that percentage to eligible car expenses. Where section 40-230 applies, reduce the adjusted first element of the cost of a car designed mainly to carry passengers to the car limit for the year you first held it if the cost exceeds the limit. The limits are $69,674 for 2024–25 and 2025–26 and $69,883 for 2026–27. [ITAA 1997, ss 28-90 to 28-125](https://www.legislation.gov.au/C2004A05138/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html) · [ITAA 1997, s 40-230](https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_2/document_2.html) · [ATO 2026–27 car limits](https://www.ato.gov.au/businesses-and-organisations/small-business-newsroom/car-thresholds-from-1-july).
+- **Logbook method** -- Keep a representative logbook for at least 12 continuous weeks or the entire holding period if the car was held for less than 12 weeks. Retain annual odometer and expense records. A representative logbook can generally be used for 5 income years. Estimate business kilometres and divide by total kilometres travelled whilst holding the car in the year. Apply that percentage to eligible car expenses. Where section 40-230 applies, reduce the adjusted first element of the cost of a car designed mainly to carry passengers to the car limit for the year you first held it if the cost exceeds the limit. The limits are $69,674 for 2024–25 and 2025–26 and $69,883 for 2026–27. [ITAA 1997, ss 28-90 to 28-125](https://www.legislation.gov.au/C2004A05138/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html) · [ITAA 1997, s 40-230](https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_2/document_2.html) · [ATO 2026–27 car limits](https://www.ato.gov.au/businesses-and-organisations/small-business-newsroom/car-thresholds-from-1-july).
 
 ### 4.5 Depreciation
 
@@ -241,7 +243,7 @@ expected:
 
 #### Fixed rate method (70 cents per hour for 2025–26) -- PCG 2023/1
 
-- **Fixed rate method** -- Covers energy expenses (electricity, gas), phone, internet, stationery and computer consumables. You must incur additional running expenses and keep records of actual hours worked from home and evidence of the covered expenses incurred. The fixed rate covers those expenses for the year. Claim qualifying occupancy expenses separately only when an area of the home is a place of business. [ATO guidance for sole traders working from home](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/deductions/deductions-for-home-based-business-expenses/home-based-business-expenses-sole-trader-or-partnership).
+- **Fixed rate method** -- Covers energy expenses (electricity, gas), phone, internet, stationery and computer consumables. Do substantive business work from home, incur at least one covered running expense, record actual hours as you work and keep evidence for each type of covered expense incurred. The rate covers those expenses for the year. Do not also claim those costs separately. Claim qualifying occupancy expenses separately only when an area of the home is a place of business. [ATO guidance for sole traders working from home](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/deductions/deductions-for-home-based-business-expenses/home-based-business-expenses-sole-trader-or-partnership).
 
 #### Actual cost method
 
@@ -263,7 +265,7 @@ expected:
 
 ### 5.3 Prepaid expenses (SBE)
 
-- **Prepaid expenses (SBE)**: Small business entities can immediately deduct prepaid expenses if the service period is 12 months or less and ends by 30 June of the following income year. Example: 12-month insurance premium paid in May 2026 covering May 2026 to April 2027: deductible in 2025–26 if the statutory conditions are met.
+- **Prepaid expenses:** Apply the 12-month rule to otherwise deductible costs if the taxpayer is a small business entity or meets the small business test with the $50 million threshold substituted under [ITAA 1936 subsection 82KZM(1A)](https://www.legislation.gov.au/C1936A00027/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html), and has not chosen to spread the expenditure under section 82KZMD. The eligible service period must be 12 months or less and end by 30 June of the following income year for a 30 June balancer. Prepayments under tax shelter arrangements are subject to separate rules. A qualifying 12-month policy incurred and paid in May 2026 and covering May 2026 through April 2027 meets the timing tests for a deduction in 2025-26.
 
 ### 5.4 Capital vs revenue
 
@@ -291,11 +293,15 @@ Before delivering output, verify:
 
 ## Section 7 -- Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill.
 
 > [Original contributor credit](https://github.com/openaccountants/openaccountants/blob/fc090e8e95bae53674c2df8398b218b0c528a7c3/skills/australia/au-sole-trader-schedule.md).
 
 ## Sources
+
+Not yet confirmed: the working from home fixed rate for 2026-27.
+
+Check this point with one of our partner accountants.
 
 Read 2026-11-12 for the depreciation correction:
 
