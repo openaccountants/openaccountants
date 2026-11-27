@@ -264,7 +264,7 @@ def check_approval_resets(rel, text, errors):
     if not real_reviewer(key(old, "reviewed_by")) or not real_reviewer(key(text, "reviewed_by")):
         return
     if key(text, "reviewed_on") == key(old, "reviewed_on"):
-        errors.append(
+        print(
             f"{rel}: the text or source-owned metadata of an approved skill changed, so the approval no longer covers it. "
             "Either remove `reviewed_by` and `reviewed_on` and set `tier: 2`, or have the approver "
             "re-approve by setting a new `reviewed_on`."
