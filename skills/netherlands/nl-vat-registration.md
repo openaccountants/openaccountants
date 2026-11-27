@@ -85,7 +85,7 @@ There is no general EUR 20,000 registration threshold: ordinary KOR entry follow
 
 ## The taxable base
 
-This skill does not compute VAT on supplies. The amounts that matter here are the turnover tests.
+This Guide does not compute VAT on supplies. The amounts that matter here are the turnover tests.
 
 **KOR turnover in the Netherlands (art. 25(1)(a) and 25(2) Wet OB 1968).** Count, excluding VAT:
 - supplies that would be taxed in the Netherlands without the KOR, at 21%, 9% or 0% (exports and intra-EU supplies count), and supplies where Dutch VAT is shifted to a Dutch customer (domestic reverse charge);
@@ -107,7 +107,7 @@ Once in the KOR, the business charges no VAT, so turnover is the full amount it 
 
 ### Registration for a Dutch-established business
 
-1. Check whether Handelsregister registration is required and whether the narrow art. 25b exception applies. Where required, register with KVK.
+1. Check whether Handelsregister registration is required and whether the narrow art. 25b exception applies. Where required, register with KVK. For a bv or nv’s notarial incorporation and Handelsregister-filing responsibilities: Check this point with one of our partner accountants.
 2. The KVK passes the details to the Belastingdienst, which decides within up to 10 working days whether the business is an entrepreneur for VAT.
 3. If so, the Belastingdienst sends two numbers by post: the **btw-id** (format NL + 9 digits + B + 2 digits, for invoices and customers) and the **ob-nummer** (for contact with the Belastingdienst only). For a sole trader the ob-nummer contains the BSN and the btw-id does not, so a sole trader gets two separate letters.
 4. A Dutch business that cannot register at KVK uses **Opgaaf startende onderneming (niet ingeschreven in het Handelsregister)**: the relevant online form or the signed PDF sent to Belastingdienst, Postbus 2891, 6401 DJ Heerlen. The authority processes the declaration within 10 working days. A foreign address or foreign legal form uses **Aanmelding Onderneming buitenland**, not the domestic starter form.
@@ -122,9 +122,9 @@ Once in the KOR, the business charges no VAT, so turnover is the full amount it 
 
 A non-established business may appoint a licensed fiscal representative for VAT returns, payments and ICP obligations (art. 33g). Under Uitvoeringsbesluit art. 24c, a **general licence** covers all liable supplies, acquisitions and imports except transactions covered by a limited representative; its liability per calendar year is capped at the security. A **limited licence** covers only the enumerated import/subsequent-supply and warehouse transactions; its liability is not given that general-licence cap.
 
-Under art. 24d(1), a general representative is compulsory for Dutch-taxable intra-EU distance sales under art. 5a(1)(a) where the head office or establishment is in a third country without the specified mutual-assistance instrument, unless the Union scheme is used. Do not replace this test with “every non-EU business”. IOSS has its own intermediary test below.
+Under art. 24d(1), a general representative is compulsory for Dutch-taxable intra-EU distance sales under art. 5a(1)(a) where the head office or establishment is in a third country without the specified mutual-assistance instrument, unless the Union scheme is used. IOSS has its own intermediary test below.
 
-Excise goods, mineral oils, bulk goods, zero-rated warehouse transactions and removal from an excise/VAT warehouse have separate representation conditions, including art. 24d(2) and Table II posts 7–8. Do not act on the old blanket “all purchases/sales at 0%” rule. Check this point with one of our partner accountants.
+Excise goods, mineral oils, bulk goods, zero-rated warehouse transactions and removal from an excise/VAT warehouse have separate representation conditions, including art. 24d(2) and Table II posts 7–8. Check this point with one of our partner accountants.
 
 ### KOR
 
@@ -163,13 +163,13 @@ For a business with no seat or fixed establishment in the EU that supplies servi
 | No return filed | Estimated additional assessment (naheffingsaanslag) on top of the penalties | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/btw_aangifte_doen_en_betalen/uiterste_ontvangstdatum_aangifte_en_betaling_btw_aangifte |
 | OSS non-compliance | Apply the conditional exclusion rule above, rather than automatic exclusion after three late periods | https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:02011R0282-20250414 (arts. 58 bis–58 ter) |
 
-The payment concession lasts 7 calendar days after the deadline and requires the previous return to have been paid on time and in full. Repeated/aggravated defaults, culpability, tax interest and the consequences of failing to register require a case-specific assessment; the old statement that there is no separate registration offence is not a usable conclusion. Check this point with one of our partner accountants. Return and payment calculations are covered by [nl-vat-return](nl-vat-return.md).
+The payment concession lasts 7 calendar days after the deadline and requires the previous return to have been paid on time and in full. Repeated/aggravated defaults, culpability, tax interest and the consequences of failing to register require a case-specific assessment. Check this point with one of our partner accountants. Return and payment calculations are covered by [nl-vat-return](nl-vat-return.md).
 
 ## Cross-border points
 
 - **EU consumer sales:** apply the place-of-supply threshold/election first. Only sales for which destination VAT is due and which are actually covered by home-state OSS avoid a separate registration on that basis. The crossing supply is taxed in the destination state. If the previous year exceeded EUR 10,000, destination taxation continues for the whole next year; the threshold can apply again after a full calendar year at or below it, unless an election still binds.
 - **Dutch stock:** own-account consumer sales within the Netherlands are domestic, not intra-EU distance sales. Test platform treatment and other exceptions before registration. B2B sales follow the reverse-charge conditions above. Moving own stock can create an acquisition obligation; transfer exceptions and call-off stock: Check this point with one of our partner accountants.
-- **Refunds:** EU businesses without a Dutch return use the home-state refund portal; non-EU businesses register first. The exact non-resident refund form (formerly stated as OB 075) and special refund conditions: Check this point with one of our partner accountants.
+- **Refunds:** EU businesses without a Dutch return use the home-state refund portal; non-EU businesses register first. The exact non-resident refund form (including whether OB 075 applies) and special refund conditions: Check this point with one of our partner accountants.
 
 ## Worked examples
 
@@ -248,24 +248,24 @@ expected:
 
 | Source and scope read | URL | Read on |
 |---|---|---|
-| Wet OB 1968: arts. 1a, 2a, 3c, 5, 5a, 6k, 7, 9, 12, 17a, 21(e), 25–25e, 28r–28tl, 33g; effective 2026 edition | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0002629/2026-01-01_0/xml/BWBR0002629_2026-01-01_0.xml | 2026-11-27 |
-| Uitvoeringsbesluit OB 1968: arts. 24c–24d, licence scope, liability and compulsory representation | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0002633/2026-01-01_0/xml/BWBR0002633_2026-01-01_0.xml | 2026-11-27 |
-| Uitvoeringsbeschikking OB 1968: art. 25; unchanged January/April 2026 registration amount | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0002634/2026-04-01_0/xml/BWBR0002634_2026-04-01_0.xml | 2026-11-27 |
-| EU Implementing Regulation 282/2011: arts. 57 quinquies, 58 bis–58 ter, 61–61 bis; browser read | https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:02011R0282-20250414 | 2026-11-27 |
-| Belastingdienst: KVK route, numbers and processing time | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/btw-identificatienummer-en-omzetbelastingnummer | 2026-11-27 |
-| Belastingdienst: domestic registration outside Handelsregister | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/themaoverstijgend/programmas_en_formulieren/opgaaf-startende-onderneming-niet-ingeschreven-handelsregister/opgaaf-startende-onderneming-niet-ingeschreven-in-handelsregister | 2026-11-27 |
-| Belastingdienst: foreign address/legal-form registration route | https://www.belastingdienst.nl/wps/wcm/connect/nl/ondernemers/content/zo-werkt-eherkenning | 2026-11-27 |
-| Belastingdienst: foreign-business registration, exemptions and refund routing | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/belastingkantoor_en_registratie/ | 2026-11-27 |
-| Belastingdienst: foreign registration form, completion and postal address | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/themaoverstijgend/programmas_en_formulieren/aanmelding-onderneming-buitenland | 2026-11-27 |
-| Belastingdienst: foreign return periods and nil returns | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/btw_aangifte_doen_en_betalen/aangifte_doen/btw_aangifte_doen | 2026-11-27 |
-| Belastingdienst: foreign payment deadlines and estimated assessments | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/btw_aangifte_doen_en_betalen/uiterste_ontvangstdatum_aangifte_en_betaling_btw_aangifte | 2026-11-27 |
-| Belastingdienst: counted KOR turnover and subnumbers | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden | 2026-11-27 |
-| Belastingdienst: joining KOR and published entry dates | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/aanmelden-kor | 2026-11-27 |
-| Belastingdienst: leaving KOR and confirmation time | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor | 2026-11-27 |
-| Belastingdienst: OSS portal, VAT-group members, returns and IOSS Norway condition | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/btw-melden-eenloketsysteem | 2026-11-27 |
-| Belastingdienst: EU distance sales and warehouse distinction | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/btw-goederen-eu-particulieren | 2026-11-27 |
-| Belastingdienst: IOSS intermediary and registration | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/e_commerce_en_diensten/ik_lever_goederen_van_buiten_de_eu_-_de_invoerregeling/invoerregeling_registratie/ | 2026-11-27 |
-| Belastingdienst: ordinary filing default | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/boetes/u_doet_geen_of_te_laat_aangifte | 2026-11-27 |
-| Belastingdienst: ordinary payment default and concession | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/boetes/u_betaalt_niet_te_laat_of_te_weinig | 2026-11-27 |
+| Read for: Wet OB 1968: arts. 1a, 2a, 3c, 5, 5a, 6k, 7, 9, 12, 17a, 21(e), 25–25e, 28r–28tl, 33g; effective 2026 edition | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0002629/2026-01-01_0/xml/BWBR0002629_2026-01-01_0.xml | 2026-11-27 |
+| Read for: Uitvoeringsbesluit OB 1968: arts. 24c–24d, licence scope, liability and compulsory representation | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0002633/2026-01-01_0/xml/BWBR0002633_2026-01-01_0.xml | 2026-11-27 |
+| Read for: Uitvoeringsbeschikking OB 1968: art. 25; unchanged January/April 2026 registration amount | https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0002634/2026-04-01_0/xml/BWBR0002634_2026-04-01_0.xml | 2026-11-27 |
+| Read for: EU Implementing Regulation 282/2011: arts. 57 quinquies, 58 bis–58 ter, 61–61 bis; browser read | https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:02011R0282-20250414 | 2026-11-27 |
+| Read for: Belastingdienst: KVK route, numbers and processing time | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/btw-identificatienummer-en-omzetbelastingnummer | 2026-11-27 |
+| Read for: Belastingdienst: domestic registration outside Handelsregister | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/themaoverstijgend/programmas_en_formulieren/opgaaf-startende-onderneming-niet-ingeschreven-handelsregister/opgaaf-startende-onderneming-niet-ingeschreven-in-handelsregister | 2026-11-27 |
+| Read for: Belastingdienst: foreign address/legal-form registration route | https://www.belastingdienst.nl/wps/wcm/connect/nl/ondernemers/content/zo-werkt-eherkenning | 2026-11-27 |
+| Read for: Belastingdienst: foreign-business registration, exemptions and refund routing | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/belastingkantoor_en_registratie/ | 2026-11-27 |
+| Read for: Belastingdienst: foreign registration form, completion and postal address | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/themaoverstijgend/programmas_en_formulieren/aanmelding-onderneming-buitenland | 2026-11-27 |
+| Read for: Belastingdienst: foreign return periods and nil returns | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/btw_aangifte_doen_en_betalen/aangifte_doen/btw_aangifte_doen | 2026-11-27 |
+| Read for: Belastingdienst: foreign payment deadlines and estimated assessments | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/btw_aangifte_doen_en_betalen/uiterste_ontvangstdatum_aangifte_en_betaling_btw_aangifte | 2026-11-27 |
+| Read for: Belastingdienst: counted KOR turnover and subnumbers | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden | 2026-11-27 |
+| Read for: Belastingdienst: joining KOR and published entry dates | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/aanmelden-kor | 2026-11-27 |
+| Read for: Belastingdienst: leaving KOR and confirmation time | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor | 2026-11-27 |
+| Read for: Belastingdienst: OSS portal, VAT-group members, returns and IOSS Norway condition | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/btw-melden-eenloketsysteem | 2026-11-27 |
+| Read for: Belastingdienst: EU distance sales and warehouse distinction | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/btw-goederen-eu-particulieren | 2026-11-27 |
+| Read for: Belastingdienst: IOSS intermediary and registration | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/e_commerce_en_diensten/ik_lever_goederen_van_buiten_de_eu_-_de_invoerregeling/invoerregeling_registratie/ | 2026-11-27 |
+| Read for: Belastingdienst: ordinary filing default | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/boetes/u_doet_geen_of_te_laat_aangifte | 2026-11-27 |
+| Read for: Belastingdienst: ordinary payment default and concession | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/boetes/u_betaalt_niet_te_laat_of_te_weinig | 2026-11-27 |
 
 Not yet confirmed: no unverified conclusion is usable. The express partner-accountant holds above preserve the special identification, import/stock-transfer, warehouse/commodity representation, refund-form and registration-offence/interest topics. The 2027 and 2028/2030 case illustrations are conditional applications of the rule read for 2026, not a statement that future law has been confirmed.
