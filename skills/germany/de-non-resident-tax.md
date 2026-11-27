@@ -16,10 +16,6 @@ type: situation-rules
 
 First establish residence, the German source of each income item, the applicable treaty and whether withholding settles the tax. This Guide covers both non-residents with German income and German residents claiming foreign tax credit. Its examples retain their original 2026 inputs.
 
-## Ask the client first
-
-Obtain German and foreign homes/stay dates; nationality and spouse residence/separation status; each country's income computed under German rules; German work, property and payer details; withholding certificates; foreign assessments, payments and refund rights; and the applicable treaty/residence certificate. For shares obtain seller attribution and dated active-asset book values; for registered rights obtain related-party and actual exploitation facts; for entity relief obtain owners, activity, business premises and rebuttal/listing evidence. Establish any mixed residence year or failed earlier full-liability status before using withholding finality.
-
 ## Who this applies to
 
 - **Residence:** domestic residence or habitual abode establishes unlimited income-tax liability (§ 1(1) EStG). A residence is a dwelling held in circumstances showing it will be retained and used (§ 8 AO); merely counting days does not decide this. Habitual abode means more than temporary presence. A continuous stay exceeding six months counts from its start, ignoring short interruptions; the automatic six-month rule excludes exclusively private visits, holidays, cures or similar stays lasting no more than one year (§ 9 AO).
@@ -35,7 +31,7 @@ Obtain German and foreign homes/stay dates; nationality and spouse residence/sep
 |---|---|---|
 | § 1(3) application | 90% alternative or EUR 12,348 amount test, subject to conditions above | https://www.gesetze-im-internet.de/estg/__1.html; https://www.gesetze-im-internet.de/estg/__32a.html |
 | § 1a couple amount test | EUR 24,696, derived as twice EUR 12,348; conditions above | https://www.gesetze-im-internet.de/estg/__1a.html; https://www.gesetze-im-internet.de/estg/__32a.html |
-| Tariff used in rental example | For rounded taxable income EUR 17,800–69,878: (173.10 × z + 2,397) × z + 1,034.87; z = (rounded income − 17,799) / 10,000; round tax down to whole euros | https://www.gesetze-im-internet.de/estg/__32a.html |
+| Tariff used in rental example | For rounded taxable income EUR 17,800–69,878: (173.10 × z + 2,397) × z + 1,034.87; z is one ten-thousandth of rounded income above EUR 17,799; round tax down to whole euros | https://www.gesetze-im-internet.de/estg/__32a.html |
 | § 50a gross withholding | 15%; supervisory monitoring fees under subsection (1) no. 4: 30%; travel rule below | https://www.gesetze-im-internet.de/estg/__50a.html |
 | § 50a small performance | No withholding for subsection (1) no. 1 only, if receipts per performance do not exceed EUR 250 | https://www.gesetze-im-internet.de/estg/__50a.html |
 | § 50a net withholding | 30% individual / 15% eligible entity; only subsection (1) nos. 1, 2 and 4 and the eligibility/evidence gates below | https://www.gesetze-im-internet.de/estg/__50a.html |
@@ -228,6 +224,10 @@ expected:
   no_refund_uncredited: 750
 ```
 
+## Ask the client first
+
+Obtain German and foreign homes/stay dates; nationality and spouse residence/separation status; each country's income computed under German rules; German work, property and payer details; withholding certificates; foreign assessments, payments and refund rights; and the applicable treaty/residence certificate. For shares obtain seller attribution and dated active-asset book values; for registered rights obtain related-party and actual exploitation facts; for entity relief obtain owners, activity, business premises and rebuttal/listing evidence. Establish any mixed residence year or failed earlier full-liability status before using withholding finality.
+
 ## Sources
 
 | Operative source | URL | Read / applicability checked |
@@ -272,3 +272,5 @@ expected:
 | ESTG § 52 | https://www.gesetze-im-internet.de/estg/__52.html | 2026-11-27 |
 | BMF investment-income guidance, allowance/credit interaction paragraphs 120, 122, 201–202; checked against current §§ 20/32d | https://esth.bundesfinanzministerium.de/esth/2025/B-Anhaenge/Anhang-19/II/inhalt.html | 2026-11-27 |
 | EStG § 26, spouse assessment conditions and election; reused DEE-04 proof | https://www.gesetze-im-internet.de/estg/__26.html | 2026-11-26; applicability 2026-11-27 |
+
+Not yet confirmed: no unconfirmed outcome is supplied as usable. The explicit non-usable holds and partner-accountant referrals above identify every unresolved branch.
