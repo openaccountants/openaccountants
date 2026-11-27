@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Mexico — CFDI electronic invoicing (2026)
+# Mexico - CFDI electronic invoicing (2026)
 
 ## Who this applies to
 
@@ -119,7 +119,7 @@ All reason descriptions: [SAT cancellation process](https://www.sat.gob.mx/minis
 
 Where acceptance is required, the recipient responds within three business days following receipt; silence ordinarily counts as acceptance. RMF 2.7.1.34 excludes its specified hydrocarbon/petroleum concept-complement CFDIs and specified fuel Carta Porte income CFDIs from acceptance by silence. A rejected request is not a cancellation. Preserve and check the final status rather than equating “request received” with “cancelled”. [RMF 2026, 2.7.1.34](https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf), [Anexo 29, November revision, VI.3](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/SegundaModificacion_Anexo29_DOF-06112026.pdf).
 
-**No-acceptance matrix — RMF 2.7.1.35.** Apply its conditions, not a blanket amount test. The final paragraph excludes hydrocarbon/petroleum income operations under rule 2.6.1.1 from the facility except the public-in-general and foreign-resident cases (VII/VIII).
+**No-acceptance matrix - RMF 2.7.1.35.** Apply its conditions, not a blanket amount test. The final paragraph excludes hydrocarbon/petroleum income operations under rule 2.6.1.1 from the facility except the public-in-general and foreign-resident cases (VII/VIII).
 
 | Case | Condition / limitation |
 | --- | --- |
@@ -260,18 +260,18 @@ Use the required inputs above. Do not request private signing keys or passwords 
 
 | Source and passages actually read | Official URL | Read on |
 | --- | --- | --- |
-| CFF, current 09-04-2026 text, arts. 12, 20, 29, 29 Bis, 29-A and 83–84; official government-hosted copy used after the legislature URL timed out | https://dgesui.ses.sep.gob.mx/sites/default/files/2026-05/CFF.pdf | 2026-11-27 |
-| RMF 2026, rules 2.2.8, 2.7.1.23, 2.7.1.29, 2.7.1.32–35 and 2.7.2.9, including all acceptance exceptions and certificate conditions | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf | 2026-11-27 |
-| SAT 2026 amendment index and amending clauses through the fourth published resolution / latest advance fifth version: applicability check; the cited ordinary-invoice/payment/cancellation rules remain operative | https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/normatividad_rmf_rgce2026.html | 2026-11-27 |
-| Anexo 20, CFDI 4.0, I.A / I.F field definitions and validations; 2022 publication remains the technical base, applied with 2026 Anexo 29 | https://dof.gob.mx/2022/SHCP/SHCP_130122.pdf | 2026-11-27 |
-| Anexo 29 for 2026, II and VI.1 technical qualifications, with July addition requiring P/N complements and November VI.3 cancellation-response update | https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo_29_RMF2026-09012026.pdf ; https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Primera-Modificacion-Anexo-29-DOF-17072026.pdf ; https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/SegundaModificacion_Anexo29_DOF-06112026.pdf | 2026-11-27 |
-| SAT format page: version and PUE/PPD FAQ; recipient-name instructions: uppercase and registered-data punctuation | https://wwwmat.sat.gob.mx/consultas/35025/formato-de-factura-electronica-%28anexo-20%29 ; https://www.sat.gob.mx/minisitio/Factura/documentos/Infografia_FacturaElectronica_NombreReceptor.pdf | 2026-11-27 |
-| SAT fiscal-regime table, descriptions for all retained codes; table read from the site's public bundle because its HTML is an application shell | https://www.cloudb.sat.gob.mx/datos_fiscales/regimen | 2026-11-27 |
-| SAT CFDI DPA guide, common field definitions, generic-foreign RFC / regime / use and G03; public-entity-specific tax treatment not generalised | https://www.sat.gob.mx/minisitio/Factura/documentos/Guia_llenadoCFDI_DPA.pdf | 2026-11-27 |
-| SAT payment-complement 2.0 standard, payment/document attributes and section 4 base-CFDI validations | https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461175070885&ssbinary=true | 2026-11-27 |
-| SAT cancellation process, reason codes and replacement folio; statutory/RMF qualifications prevail over the summary | https://www.sat.gob.mx/minisitio/Factura/cancela_procesocancelacion.htm | 2026-11-27 |
-| SAT medical-deduction page D01 description and donation FAQ D04/G03 distinctions; only code descriptions used | https://www.sat.gob.mx/minisitio/DeduccionesPersonales/gastos_medicos.html ; https://www.sat.gob.mx/minisitio/DonatariasAutorizadas/documentos/preguntasfrecuentes/CFDI.pdf | 2026-11-27 |
-| LIVA arts. 1, 1-A II(a), 29; LISR art. 106; RLIVA art. 3 I(a), including professional-service withholding conditions | https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf ; https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf ; https://www.ordenjuridico.gob.mx/Documentos/Federal/pdf/wo88442.pdf | 2026-11-27 |
+| Read CFF arts. 12, 20, 29–29-A and 83–84: current 09-04-2026 text, arts. 12, 20, 29, 29 Bis, 29-A and 83–84; official government-hosted copy used after the legislature URL timed out | https://dgesui.ses.sep.gob.mx/sites/default/files/2026-05/CFF.pdf | 2026-11-27 |
+| Read RMF rules 2.2.8, 2.7.1.23/29/32–35 and 2.7.2.9: rules 2.2.8, 2.7.1.23, 2.7.1.29, 2.7.1.32–35 and 2.7.2.9, including all acceptance exceptions and certificate conditions | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf | 2026-11-27 |
+| Read for applicability: SAT 2026 amendment index and amending clauses through the fourth published resolution / latest advance fifth version: applicability check; the cited ordinary-invoice/payment/cancellation rules remain operative | https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/normatividad_rmf_rgce2026.html | 2026-11-27 |
+| Read Anexo 20 sections I.A and I.F: CFDI 4.0, I.A / I.F field definitions and validations; 2022 publication remains the technical base, applied with 2026 Anexo 29 | https://dof.gob.mx/2022/SHCP/SHCP_130122.pdf | 2026-11-27 |
+| Read Anexo 29 sections II and VI.1–VI.3: 2026, II and VI.1 technical qualifications, with July addition requiring P/N complements and November VI.3 cancellation-response update | https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo_29_RMF2026-09012026.pdf ; https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Primera-Modificacion-Anexo-29-DOF-17072026.pdf ; https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/SegundaModificacion_Anexo29_DOF-06112026.pdf | 2026-11-27 |
+| Read SAT format page for version and payment FAQ: version and PUE/PPD FAQ; recipient-name instructions: uppercase and registered-data punctuation | https://wwwmat.sat.gob.mx/consultas/35025/formato-de-factura-electronica-%28anexo-20%29 ; https://www.sat.gob.mx/minisitio/Factura/documentos/Infografia_FacturaElectronica_NombreReceptor.pdf | 2026-11-27 |
+| Read SAT fiscal-regime table for retained code descriptions: descriptions for all retained codes; table read from the site's public bundle because its HTML is an application shell | https://www.cloudb.sat.gob.mx/datos_fiscales/regimen | 2026-11-27 |
+| Read SAT CFDI DPA guide fields RegimenFiscalReceptor and UsoCFDI: common field definitions, generic-foreign RFC / regime / use and G03; public-entity-specific tax treatment not generalised | https://www.sat.gob.mx/minisitio/Factura/documentos/Guia_llenadoCFDI_DPA.pdf | 2026-11-27 |
+| Read SAT payment-complement 2.0 standard, payment/document attributes and section 4 base-CFDI validations | https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461175070885&ssbinary=true | 2026-11-27 |
+| Read SAT cancellation process for reasons and replacement: reason codes and replacement folio; statutory/RMF qualifications prevail over the summary | https://www.sat.gob.mx/minisitio/Factura/cancela_procesocancelacion.htm | 2026-11-27 |
+| Read SAT medical-deduction page D01 description and donation FAQ D04/G03 distinctions; only code descriptions used | https://www.sat.gob.mx/minisitio/DeduccionesPersonales/gastos_medicos.html ; https://www.sat.gob.mx/minisitio/DonatariasAutorizadas/documentos/preguntasfrecuentes/CFDI.pdf | 2026-11-27 |
+| Read LIVA arts. 1, 1-A II(a), 29; LISR art. 106; RLIVA art. 3 I(a), including professional-service withholding conditions | https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf ; https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf ; https://www.ordenjuridico.gob.mx/Documentos/Federal/pdf/wo88442.pdf | 2026-11-27 |
 
 Not yet confirmed: non-usable holds are G01/I01 catalogue descriptions and selection, the original cash-code illustration, the old Exportacion 02/03 mapping and service-export coding, transaction-specific export IVA for the US-company case, and exact sanctions/remediation for late or missing CFDIs. The linked general CFDI filling guide and catalogue entry point timed out on direct and browser access; no failed fetch is counted as a source read. Payroll calculations, foreign-trade-complement preparation, fuel/primary-sector implementation and audit outcomes require their own facts and professional review. Check this point with one of our partner accountants.
 
