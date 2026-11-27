@@ -1,7 +1,7 @@
 ---
 name: de-freelance-intake
 description: "Intake for German full-year-resident freelancers and sole traders, tax year 2026: collect documents, test classification, registration, VAT and profit method, record unresolved points and hand off to de-return-assembly. Includes dated 2025 cases without rolling their inputs forward."
-version: 0.4
+version: 0.5
 jurisdiction: DE
 tax_year: 2026
 last_updated: 2026-11-26
@@ -191,7 +191,6 @@ Each row is a hold on the tax outcome: **Check this point with one of our partne
 
 Confirm the year and scope; reconcile source documents; keep classification/VAT/profit method evidenced or explicitly unsettled; reconcile notices/payments; obtain missing facts once; keep every specialist hold visible; confirm the corrected summary; hand the package, calendar and reviewer brief to `de-return-assembly`. A referral is not a client fact or professional approval.
 
-<!-- openaccountants-cta-block -->
 
 ## Sources
 
