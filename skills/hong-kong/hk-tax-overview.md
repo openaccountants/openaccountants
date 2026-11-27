@@ -4,8 +4,8 @@ description: "Use this skill to orient a Hong Kong tax question for the year of 
 jurisdiction: HK
 tax_year: 2026
 tax_year_notes: "Year of assessment 2026/27, the year that contains most of 2026. Filing dates are the 2025/26 cycle published by the IRD in 2026."
-version: "2.0"
-last_updated: 2026-11-14
+version: "2.1"
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tier: 2
@@ -32,9 +32,9 @@ Hong Kong operates a low-rate, territorial (source-based) tax system administere
 | Profits tax, unincorporated businesses | 7.5% on the first HKD 2,000,000, 15% above | Same | same |
 | Property tax | 15% of net assessable value | After a 20% statutory allowance for repairs and outgoings | https://www.ird.gov.hk/eng/pdf/2026/BriefGuide20252026.pdf |
 | MPF mandatory contributions deduction | HKD 18,000 a year | Salaries tax deduction cap, 2019/20 onwards | same |
-| Profits tax return, 2025/26, code "D" | Due 17 August 2026 | Represented taxpayers, 31 December 2025 year ends | https://www.ird.gov.hk/eng/pdf/bel26e.pdf |
-| Profits tax return, 2025/26, code "M" | Due 16 November 2026 | Represented, 1 January to 31 March 2026 year ends | same |
-| Tax return for individuals (BIR60), 2025/26 | Issued 4 May 2026; represented cases extended to 4 July 2026, or 5 October 2026 with sole proprietorship accounts | Represented taxpayers (block extension) | same |
+| Profits tax return, 2025/26, code "D" | 31 August 2026 on paper or 2 October 2026 electronically | Represented taxpayers, December 2025 year ends | https://www.ird.gov.hk/eng/pdf/bel26ea.pdf |
+| Profits tax return, 2025/26, code "M" | 30 November 2026 on paper or 30 December 2026 electronically | Represented taxpayers, 1 January to 31 March 2026 year ends | https://www.ird.gov.hk/eng/pdf/bel26eb.pdf |
+| Tax return for individuals (BIR60), 2025/26 | Issued 4 May 2026; represented cases extended to 4 July 2026, or 5 October 2026 with sole proprietorship accounts | Represented taxpayers (block extension) | https://www.ird.gov.hk/eng/pdf/bel26e.pdf |
 
 ## The method, step by step
 
@@ -79,6 +79,8 @@ expected:
 | IRD, 2026-27 Budget tax measures. Read for the YA 2026/27 allowances | https://www.ird.gov.hk/eng/tax/budget.htm | 2026-11-14 |
 | IRD, profits tax page. Read for the two-tiered rates | https://www.ird.gov.hk/eng/tax/bus_pft.htm | 2026-11-14 |
 | IRD, A brief guide to taxes 2025/26 (PDF). Read for territorial basis, property tax 15% and 20% allowance, MPF deduction cap | https://www.ird.gov.hk/eng/pdf/2026/BriefGuide20252026.pdf | 2026-11-14 |
-| IRD, block extension letter for 2025/26 returns (PDF). Read for profits tax and BIR60 dates | https://www.ird.gov.hk/eng/pdf/bel26e.pdf | 2026-11-14 |
+| IRD, March block extension letter for the 2025/26 BIR60 dates | https://www.ird.gov.hk/eng/pdf/bel26e.pdf | 2026-11-14 |
+| IRD, July update for 2025/26 Code D paper and electronic deadlines | https://www.ird.gov.hk/eng/pdf/bel26ea.pdf | 2026-11-27 |
+| IRD, October update for 2025/26 Code M paper and electronic deadlines | https://www.ird.gov.hk/eng/pdf/bel26eb.pdf | 2026-11-27 |
 
 Not yet confirmed: the due date for unrepresented individuals (normally one month after issue; not read on an official page in this pass); the 2026/27 filing cycle dates (returns issue in April and May 2027 under a new letter).
