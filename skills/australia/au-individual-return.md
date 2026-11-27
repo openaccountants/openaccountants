@@ -1,11 +1,11 @@
 ---
 name: au-individual-return
 description: Use this skill whenever asked about Australian individual income tax for sole traders. Trigger on phrases like "how much tax do I pay in Australia", "Australian tax return", "sole trader tax", "ABN tax", "Medicare levy", "LITO", "PAYG", "tax brackets Australia", "BAS", "instant asset write-off", "home office deduction", "HELP repayment", "HECS debt", "small business income tax offset", "motor vehicle deduction", or any question about filing or computing income tax for an Australian sole trader. Covers 2025–26 Stage 3 tax rates, Medicare levy and surcharge, LITO, business income computation, allowable deductions, depreciation, instant asset write-off, small business income tax offset, HELP/HECS repayments, and final tax computation. ALWAYS read this skill before touching any Australian income tax work.
-version: 2.6
+version: 2.7
 jurisdiction: AU
 tax_year: 2025
 tax_year_notes: "Retained for 2025-26 returns; use 2026-27 values only where expressly labelled and relevant to the requested year."
-last_updated: 2026-11-22
+last_updated: 2026-11-27
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -40,11 +40,11 @@ domain: income-tax
 | Filing portal | myTax (via myGov) or registered tax agent |
 | Filing deadline | 2 November 2026 for standard self-lodgement (31 October is Saturday); tax-agent dates depend on the applicable programme |
 | Contributor | Open Accountants Community |
-| Skill version | 2.6 |
+| Skill version | 2.7 |
 
-### Tax Rates -- Resident Individual (2025-26, Stage 3) [T1]
+### Tax Rates -- Full-Year Resident Individual (2025-26, Stage 3) [T1]
 
-**Tax Rates -- Resident Individual (2025-26, Stage 3) [T1]**
+Use this table for ordinary income of a full-year resident. If residency started or ended during the year, apply the [part-year tax-free threshold](https://www.ato.gov.au/individuals-and-families/your-tax-return/instructions-to-complete-your-tax-return/mytax-instructions/2026/adjustments/part-year-tax-free-threshold).
 
 | Taxable Income (AUD) | Rate | Tax on This Band |
 | --- | --- | --- |
@@ -67,7 +67,7 @@ domain: income-tax
 
 ### Low Income Tax Offset (LITO) [T1]
 
-**Low Income Tax Offset (LITO) [T1]**
+The non-refundable LITO reduces income tax for eligible Australian resident individuals. Check entitlement before applying the table. [ATO low income tax offset](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/tax-offsets/low-income-tax-offset)
 
 | Taxable Income (AUD) | LITO |
 | --- | --- |
@@ -86,7 +86,7 @@ domain: income-tax
 | Cap | $1,000 |
 | Eligibility | An individual carrying on an eligible business as a sole trader, or with an eligible share of net small business income from a partnership or trust. The business must have aggregated turnover below $5 million ([ITAA 1997 Subdiv 328-F](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_7/document_7.html)) |
 
-Statutorily, the SBITO rate is 16% of basic income tax attributable to total net small business income under Subdivision 328-F.
+For positive taxable income, multiply basic income tax by eligible net small business income divided by taxable income, limiting the fraction to 100%. Apply the 16% rate to that result, subject to the $1,000 annual cap. [ATO calculation and income conditions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/concessions-offsets-and-rebates/small-business-income-tax-offset)
 
 ### Key Deduction Rate Lookups
 
@@ -106,9 +106,9 @@ Statutorily, the SBITO rate is 16% of basic income tax attributable to total net
 | Ambiguity | Default |
 | --- | --- |
 | Unknown residency status | Establish residency before choosing rates or lodgment treatment |
-| Unknown business-use % (vehicle, phone, home) | 0% deduction |
-| Unknown expense category | Not deductible |
-| Unknown depreciation effective life | Use ATO's Table of Depreciation |
+| Unknown business-use percentage | Leave the amount out of the estimate until records support the business-use share |
+| Unknown expense category | Confirm the expense and its purpose before assigning a label or deduction |
+| Unknown depreciation effective life | Identify the asset and applicable date, then check the available statutory effective-life choices |
 | Unknown private health insurance status | Verify qualifying hospital cover and dates before computing surcharge |
 | Unknown aggregated turnover | Establish aggregated turnover before applying a small business concession |
 
@@ -136,7 +136,7 @@ Statutorily, the SBITO rate is 16% of basic income tax attributable to total net
 
 ### 3.1 Income Patterns (Credits on Bank Statement)
 
-**3.1 Income Patterns (Credits on Bank Statement)**
+Use descriptions as reconciliation clues. Confirm the source and character of a payment before applying a return label.
 
 | Pattern | Tax Label | Treatment | Notes |
 | --- | --- | --- | --- |
@@ -144,36 +144,36 @@ Statutorily, the SBITO rate is 16% of basic income tax attributable to total net
 | STRIPE PAYOUT, STRIPE TRANSFER | Business income | Revenue | Match to underlying invoices |
 | PAYPAL TRANSFER | Business income | Revenue | Report gross before fees |
 | DIRECT CREDIT [client name] | Business income | Revenue | Bank transfer from client |
-| INTEREST, SAVINGS INTEREST | Interest income (Item 10) | NOT business income | Report separately as interest |
+| INTEREST, SAVINGS INTEREST | Interest income (item 10) | Report gross interest separately from P8 | Consider interest derived in the course of business when calculating net small business income for the offset |
 | DIVIDEND, DISTRIBUTION | Check payment type | Use item 11 for reportable company dividends and item 13 for reportable partnership or trust distributions | Use the dividend or distribution statement, including eligible franking credits |
-| FRANKING CREDIT | Gross-up dividend | Add to assessable income | Franking credit is both income and tax offset |
+| FRANKING CREDIT | Gross-up dividend | Include eligible credits in assessable income and as a tax offset | Check applicable holding-period, related-payment and dividend washing rules ([ATO 2026 dividend instructions](https://www.ato.gov.au/forms-and-instructions/individual-tax-return-2026-instructions/income-questions-1-12-individual-tax-return-2026/11-dividends-2026)) |
 | ATO REFUND, TAX REFUND | Check breakdown | Exclude the repayment of income tax | Check for separately assessable interest or a taxable recoupment |
 | CENTRELINK, JOBSEEKER, YOUTH ALLOWANCE | Government payment (item 5 for JobSeeker and taxable Youth Allowance) | Check the particular payment and its tax status | Use item 6 for reportable government pensions and allowances listed there |
 | SUPERANNUATION (lump sum or pension) | Item 7 or 8 | Check | Depends on age and components |
 | OWN TRANSFER, SAVINGS | EXCLUDE | Internal | Between own accounts |
-| RENTAL INCOME | Rental income (Item 21) | NOT business income | Separate rental schedule |
+| RENTAL INCOME | Rental income (item 21) or business income | Use item 21 for rent outside a rental business | Identify whether the taxpayer carries on a business of renting property before choosing the label |
 
 ### 3.2 Expense Patterns (Debits on Bank Statement)
 
-**3.2 Expense Patterns (Debits on Bank Statement)**
+Verify the expense and its business purpose. Claim only the eligible business portion supported by records and check capital items under the applicable rules.
 
 | Pattern | Deduction Category | Tier | Treatment |
 | --- | --- | --- | --- |
 | RENT, OFFICE RENT, SERVICED OFFICE | Business expense -- occupancy | T1 | Fully deductible if dedicated business premises |
 | HOME OFFICE, WORK FROM HOME | Business home office expenses (P8) | T2 | Fixed rate 70c/hr (2024-25 and 2025-26) OR actual cost method. See Tier 2. |
 | PETROL, FUEL, CALTEX, BP, SHELL, AMPOL | Business motor vehicle expenses (P8) | T2 | Cents/km (88c, max 5,000 km) OR logbook method |
-| CAR INSURANCE, REGO, SERVICE | Motor vehicle | T2 | Only under logbook method (not cents/km) |
+| CAR INSURANCE, REGO, SERVICE | Motor vehicle | T2 | Use the business portion under the logbook method for a car or actual-cost method for another vehicle. The cents-per-kilometre method already covers these costs |
 | TOLL, CITYLINK, LINKT | Motor vehicle or travel | T1 | Business travel tolls: deductible under either method |
-| FLIGHT, QANTAS, VIRGIN, JETSTAR | Business travel (P8) | T1 | Fully deductible if business travel |
+| FLIGHT, QANTAS, VIRGIN, JETSTAR | Business travel (P8) | T1 | Apportion eligible fares for mixed business and private travel |
 | ACCOMMODATION, HOTEL | Travel | T1 | Deductible if business travel with overnight stay |
 | MEALS (business travel, overnight) | Travel | T1 | Reasonable amount while travelling overnight |
 | MEALS (client entertainment) | Entertainment | T1 | Usually excluded under Division 32. Check specific statutory exceptions when facts support one |
-| INSURANCE, PROFESSIONAL INDEMNITY | Business expense -- insurance | T1 | Fully deductible |
+| INSURANCE, PROFESSIONAL INDEMNITY | Business expense -- insurance | T1 | Check that the policy covers the business before claiming the eligible premium |
 | INCOME PROTECTION INSURANCE | Other deductions (D15) | T1 | Claim eligible personally paid premiums for replacing assessable income. Exclude components covering injury, trauma, death or other capital benefits and premiums paid through super |
 | ACCOUNTING, TAX AGENT, BAS AGENT | Tax affairs (D10) or business expense (P8) | T1 | Classify by the service supplied. Enter eligible tax-return or activity-statement work at D10 and business bookkeeping at P8. Tax advice must be from a recognised tax adviser |
-| OFFICE SUPPLIES, OFFICEWORKS | Business expense | T1 | Fully deductible |
-| SOFTWARE, SUBSCRIPTION, XERO, MYOB | Business expense -- IT | T1 | Fully deductible |
-| GOOGLE ADS, META ADS, FACEBOOK ADS | Business expense -- advertising | T1 | Fully deductible |
+| OFFICE SUPPLIES, OFFICEWORKS | Business expense | T1 | Verify business use and check the treatment of any capital item |
+| SOFTWARE, SUBSCRIPTION, XERO, MYOB | Business expense -- IT | T1 | Claim the business portion of an eligible operating subscription and assess capital software separately |
+| GOOGLE ADS, META ADS, FACEBOOK ADS | Business expense -- advertising | T1 | Verify that the advertising relates to the business before claiming |
 | PHONE, TELSTRA, OPTUS, VODAFONE | Business expense -- telecom | T2 | Business portion only |
 | INTERNET, NBN | Business expense -- telecom | T2 | Business portion only (or included in home office fixed-rate method) |
 | TRAINING, COURSE, SELF-EDUCATION | Business training expenses (P8). Use D4 for eligible employment self-education only | T1 | Deductible if directly related to current income-producing activity. NOT deductible if for new career. |
@@ -493,7 +493,7 @@ expected:
 | Cents per km (88c in 2025–26) | Maximum 5,000 business kilometres per eligible car. Expense receipts are unnecessary for this method | Keep a reasonable, explainable calculation of business kilometres |
 | Logbook | Business % of eligible actual costs and decline in value | Representative logbook for at least 12 consecutive weeks. It can generally be used for up to 5 income years. Retain odometer and expense records and adjust for changes in use |
 
-- **Cannot claim both methods** -- Cannot claim both. Eligible business parking and tolls can be separate deductions. Roadside assistance is a car operating expense covered by the cents-per-kilometre rate; do not claim it again under that method. Confirm method and km/logbook records.
+- Choose one method for each eligible car per income year. For other vehicles, use documented actual business costs. Eligible business parking and tolls can be separate deductions. The cents-per-kilometre rate already covers roadside assistance. [ATO motor vehicle methods](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/deductions/deductions-for-motor-vehicle-expenses/motor-vehicle-expense-calculation-methods)
 
 ### 6.3 Private Health Insurance (Medicare Levy Surcharge) [T2]
 
@@ -513,7 +513,7 @@ The 2025–26 family base threshold is $202,000. The next tier boundaries are $2
 
 ### 6.4 Personal Services Income (PSI) [T2]
 
-- **PSI rules** -- If income is mainly a reward for personal efforts/skills and not from conducting a personal services business, PSI rules limit deductions. Cannot claim rent, mortgage interest, certain home office costs against PSI. Confirm whether PSI rules apply (results test, unrelated clients test, employment test, business premises test).
+- **PSI rules** -- If income is mainly a reward for personal efforts/skills and not from conducting a personal services business, PSI rules limit deductions. Cannot claim rent, mortgage interest, certain home office costs against PSI. For self-assessment as a personal services business, the results test must be met for at least 75% of PSI. Otherwise the unrelated clients, employment or business premises test can support self-assessment only if less than 80% of PSI comes from the same entity and its associates. Check whether a determination applies if self-assessment is unavailable. [ATO personal services business tests](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/personal-services-income/working-out-if-the-psi-rules-apply/self-assessing-as-a-psb)
 
 ## Section 7 -- Excel Working Paper Template
 
@@ -674,7 +674,7 @@ This skill and its outputs are provided for informational and computational purp
 
 ## Sources
 
-Rates, lodgment and sole trader return treatment checked on 2026-11-22.
+Transaction labels, deductions, part-year residency, SBITO and PSI conditions rechecked on 2026-11-27. The rate and lodgment evidence below records its original read date.
 
 - [Income Tax Rates Act 1986, Schedule 7](https://www.legislation.gov.au/C2004A03348/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html) and [2026 Medicare levy](https://www.ato.gov.au/forms-and-instructions/individual-tax-return-2026-instructions/medicare-levy-questions-m1-m2-individual-tax-return-2026/m1-medicare-levy-reduction-or-exemption-2026). (read 2026-11-22)
 - [Small business income tax offset, Subdivision 328-F](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_7/document_7.html) and [2026 Medicare levy surcharge](https://www.ato.gov.au/individuals-and-families/your-tax-return/instructions-to-complete-your-tax-return/mytax-instructions/2026/medicare-and-private-health-insurance/medicare-levy-surcharge). (read 2026-11-22)
@@ -694,3 +694,7 @@ Read 2026-11-12 for the depreciation correction:
 - [Tax Reform No. 2 Act 2026, schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text) -- read 2026-11-12 for the permanent threshold application from July 2026.
 
 - [Higher Education Support Act 2003, ss 154-1, 154-5, 154-10, 154-15, 154-20, 154-25 and 154-32](https://www.legislation.gov.au/C2004A01234/2026-10-17/2026-10-17/text/original/epub/OEBPS/document_1/document_1.html) and [2026-27 indexation notice](https://www.legislation.gov.au/C2026G00249/asmade/2026-04-21/text/original/pdf) -- selected HELP liability, income, thresholds and caps read 2026-11-12.
+
+Not yet confirmed: how to classify a bank entry without its underlying documents.
+
+Check this point with one of our partner accountants.
