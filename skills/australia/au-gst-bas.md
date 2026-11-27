@@ -1,10 +1,10 @@
 ---
 name: au-gst-bas
 description: Australian Business Activity Statement (BAS) — non-GST sections. Covers PAYG withholding (labels W1-W5), PAYG income tax instalments (labels T1-T9), FBT instalments (label F1), and PAYG withholding reconciliation. Complements australia-gst.md which covers GST labels (1A-9).
-version: 1.3
+version: 1.4
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-10
+last_updated: 2026-11-27
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Ryan Duguid"
@@ -13,173 +13,158 @@ tier: 1
 domain: vat-gst
 ---
 
-# AU GST Bas
+# Australia BAS: non-GST sections
 
-## AU GST Bas
+## Scope
 
-## Australia BAS: Non-GST Sections v1.3
+This Guide prepares working papers for individual taxpayers and sole proprietors for the **2025–26 income year (1 July 2025 to 30 June 2026)**. Use the issued statement and notices for the actual reporting period. PAYG withholding, income-tax instalments and FBT instalments can have different cycles.
 
-## What this file is
+GST registration, taxable/GST-free/input-taxed supplies, input credits, cash/non-cash attribution and Simpler/full GST reporting belong to [australia-gst.md](australia-gst.md), preserving the original GST-topic destination. The method below covers the complementary non-GST labels. Partnerships, companies, trusts, superannuation funds, WET and LCT are outside this Guide's preparation scope. Fuel tax credit calculations are outside scope: identify any 7C/7D entries before finalising the whole BAS. Check this point with one of our partner accountants.
 
-**Obligation category:** CT (Consumption Tax) / ET (Estimated Tax) / WHT (Withholding Tax)
-**Functional role:** Return — complementary to `australia-gst.md`
-**Status:** Source-cited draft — pending accountant review
+## Filing requirements and dates
 
-This file covers the non-GST sections of the Business Activity Statement. For GST labels (1A through 9), see `australia-gst.md` in this directory.
+Lodge every required BAS, including a nil BAS when nothing is reportable; pausing trading while retaining GST registration does not remove that requirement. Distinguish quarterly instalment notices: R is PAYG, S is GST and T combines both; those notices require lodgment only when varying the instalment amount. Pay the notified amount when not varying. [ATO instalment notices][NOTICES]; [ATO nil BAS][PAUSED].
 
-**Tax year coverage.** This skill targets the **2025–26 income year** (1 July 2025 to 30 June 2026).
+For GST, ordinary periods are quarters ending 31 March, 30 June, 30 September and 31 December, unless an election, Commissioner determination or special period applies. Monthly GST applies at turnover of $20 million or more, on direction, or by a valid election; eligible voluntarily registered entities may elect annual reporting. GST turnover alone does not set PAYG-withholding frequency. Use the actual ATO withholding classification: small withholders normally report/pay quarterly and medium withholders monthly; large withholders pay electronically on their separate schedule. Classification includes prior-year withholding, group rules and Commissioner determinations, rather than GST registration status. [GST Act ss 27-5 to 27-15][GST]; [ATO GST cycles][DUE]; [TAA Schedule 1 ss 16-70 to 16-115][TAA1]; [ATO small/medium reporting][CYCLE].
 
-**The reviewer is the customer of this output.** This skill assumes a credentialed reviewer reviews and signs the return. The skill produces working papers and a brief, not a return.
+Standard quarterly BAS dates are **28 October** (July–September), **28 February** (October–December), **28 April** (January–March) and **28 July** (April–June). If a date falls on a weekend/public holiday, use the next business day. In this year Q2's nominal 28 February 2026 is a Saturday; check the adjusted actual deadline and any valid relief. Eligible online self-lodgers may get an extra two weeks except Q2; electronic lodgment alone does not give a 25 August deadline. [ATO due dates][DUE].
 
-## Section 1 — Scope statement
+For Q4 2025–26, **25 August 2026** is the agent-program date for eligible electronic statements, normally generated after the preceding statement was lodged electronically. The program excludes monthly PAYG instalments, consolidated-head PAYG statements, monthly GST cycles (apart from the December concession), R/S/T instalment notices and monthly-withholding-only statements; SAP quarters must align with standard quarters. Paper/first statements may have an earlier date. [ATO agent program][PROGRAM].
 
-This skill covers:
+## PAYG withholding: W1 to W5
 
-- **PAYG withholding labels** (W1 through W5) — amounts withheld from payments to employees and contractors
-- **PAYG income tax instalment labels** (T1 through T9) — quarterly pre-payments of income tax
-- **FBT instalment label** (F1) — fringe benefits tax quarterly instalments
-- **Fuel tax credits** (7C, 7D) — overview only
-- **BAS lodgement and payment deadlines**
-- **Entity types:** Sole proprietors and individual taxpayers who lodge BAS
+Identify employees/directors, labour-hire workers, voluntary agreements and no-ABN supplies under the applicable withholding provision. Use the tax table and declarations applicable to the **payment date and payment type**. Labour-hire arrangements can require withholding even for an independent contractor with an ABN; apply the more specific withholding provision before no-ABN withholding. [TAA Schedule 1 ss 12-5, 12-35 to 12-60][TAA1]; [ATO labour hire][LABOUR].
 
-This skill does NOT cover:
+For a valid written voluntary agreement with an individual, other compulsory withholding categories take priority. Use the notified CIR if at least 20%; if below 20%, withhold 20% unless the agreement specifies the lower CIR. Without a CIR, use 20%. Exclude GST charged from the withholding base; the supplier's right to charge GST depends on whether the payer is entitled to a full GST credit. [ATO Schedule 10 applicable 1 July 2024 to 30 June 2026][AGREE]; [ATO voluntary-agreement conditions][AGREEMENT].
 
-- GST labels (1A through 9) — see `australia-gst.md`
-- Partnerships, companies, trusts, or superannuation funds
-- Wine equalisation tax (WET) or luxury car tax (LCT)
-- Detailed fuel tax credit calculations
+For no-ABN withholding, first apply s 12-190's enterprise/supply conditions and exceptions. Check supplier/agent ABN documents, non-enterprise payments, total consideration for the whole supply of $75 or less excluding GST, wholly input-taxed supplies, local-government activities, investment-payment exclusions, and a qualifying individual's written hobby/private/domestic statement that you have no reasonable grounds to disbelieve. If withholding is required, withhold **47% of the total payment**, including GST, and report at W4 where that label applies. A missing ABN on the invoice alone does not establish liability. [TAA Schedule 1 s 12-190][TAA1]; [ATO no-ABN instructions][NOABN].
 
-## Section 2 — Filing requirements
+For small/medium withholders, reconcile the required labels to payroll records, tax tables, STP and any ATO pre-fill. STP does **not** give them a blanket W1 exemption. Verify and correct pre-filled amounts; payroll/software records remain the primary source. [ATO withholding labels][W]; [ATO pre-fill][PREFILL].
 
-### 2.1 Who must lodge a BAS
+- **W1:** total gross salary, wages and other covered payments, including covered payments with nil tax withheld. Exclude salary sacrifice, employer super contributions, no-ABN supply payments and other W1 exclusions in the instructions.
+- **W2:** tax withheld from payments shown at W1.
+- **W4:** tax withheld because an ABN was not quoted.
+- **W3:** other withholding, excluding amounts already in W2/W4.
+- **W5 = W2 + W3 + W4**, excluding W1. Transfer W5 to summary label 4, or the withholding-only form's label 9 where there is no summary.
 
-- **Activity-statement lodgement obligation** — Lodgement depends on the entity's tax roles, reporting method and the form the ATO issues. Lodge each required BAS or activity statement by its due date. Quarterly Forms R (PAYG instalment), S (GST instalment) and T (PAYG and GST instalment) generally need only be lodged when varying the instalment amount.  _([ATO — activity statements and nil lodgments](https://www.ato.gov.au/api/public/content/0-0b929c4e-ddac-4b4f-a627-7427575b94a2))_
+These are [ATO label definitions][W]. A large withholder completes only W1 if not reporting through STP; if reporting through STP it also omits W1. Large withholders do not complete W2–W5 or summary label 4 and pay electronically under their separate schedule. Other tax roles still require their own reporting.
 
-### 2.2 Lodgement frequency
+A small employer with **19 or fewer payees** can choose quarterly STP reporting for closely held payees; other arm's-length payees remain reportable on or before payday. The concession does not cancel BAS reporting/payment. [ATO STP checklist][CLOSE].
 
-**Lodgement frequency**  _(TAA 1953 Sch 1 s 31-5)_
+## PAYG income-tax instalments
 
-| Situation | BAS frequency | Source |
-| --- | --- | --- |
-| GST turnover < $20M, no monthly election | Quarterly | TAA 1953 Sch 1 s 31-5 |
-| GST turnover >= $20M | Monthly | TAA 1953 Sch 1 s 31-5 |
-| Voluntary monthly reporter | Monthly | ATO election |
-| PAYG withholding-only (no GST) | Quarterly | TAA 1953 Sch 1 Div 16 |
+Automatic entry for individuals requires **all three**: latest-return instalment income at least **$4,000**, latest-assessment tax payable at least **$1,000**, and estimated/notional tax at least **$500**. A new business can request voluntary entry. Liability follows the Commissioner's written instalment-rate notice; payments start when the ATO sends the activity statement/notice, not automatically on a fixed first-business anniversary. [ATO entry][ENTRY]; [TAA Schedule 1 s 45-15][TAA2].
 
-### 2.3 Due dates (quarterly)
+Use the offered method and actual notice. GDP adjustment belongs to the instalment-amount calculation, not an automatic increase to T2. The original **2024–25 6%** row is historical; for an ordinary 1 July 2025–30 June 2026 year the factor is **4%**. For SAP years commencing 1 January, February or March 2025 the ATO retains 6%; years starting from 1 April 2025 use 4%. Do not invent a GDP increase after repeated variations. [ATO historical factor][GDP24]; [ATO 2025–26 factor][GDP25]; [TAA Schedule 1 ss 45-400 and 45-405][TAA2].
 
-**Due dates (quarterly)**  _(ATO lodgement programme)_
+### Amount method
 
-| Quarter | Period | Due date |
-| --- | --- | --- |
-| Q1 | 1 Jul – 30 Sep | 28 October |
-| Q2 | 1 Oct – 31 Dec | 28 February |
-| Q3 | 1 Jan – 31 Mar | 28 April |
-| Q4 | 1 Apr – 30 Jun | 28 July (if lodging electronically, may be extended to 25 August for Q4) |
+Use T7 as notified unless varying. For a standard four-quarter payer, count quarters **from the first quarter for which liable**. Estimate full-year tax at T8. The cumulative shares are 25%, 50%, 75% and 100%, less earlier instalment liabilities, adding back earlier credit entitlements as required by s 45-410. Enter the varied result at T9, reason at T4 and payable amount at 5A. For a nil/negative result put zero at T9/5A; a qualifying negative result may be claimed as a **positive** credit at 5B. Two-instalment, annual or other cycles need their own ATO instructions; do not apply the four-quarter formula to them. [ATO amount variation][VARY]; [TAA Schedule 1 ss 45-410 to 45-420][TAA2].
 
-- **Weekend/holiday due date rule** — If the due date falls on a weekend or public holiday, the due date is the next business day. Tax agents may have extended lodgement programmes.  _(ATO lodgement programme)_
+**Original case:** at the third standard quarterly instalment, annual estimated tax **$8,000**, earlier instalments **$3,000**, no earlier credits: $8,000 × 75% = **$6,000**, less $3,000 = **$3,000** current instalment. Dividing $8,000 by two remaining quarters would give $4,000 and is incorrect.
 
-## Section 3 — Rates and thresholds
+```oa-check
+name: Original third-quarter PAYG amount variation
+inputs:
+  annual_tax: 8000
+  previous_instalments: 3000
+  previous_credits: 0
+steps:
+  - cumulative_target: annual_tax * 0.75
+  - current_instalment: cumulative_target - previous_instalments + previous_credits
+  - rejected_remaining_quarters: annual_tax / 2
+expected:
+  cumulative_target: 6000
+  current_instalment: 3000
+  rejected_remaining_quarters: 4000
+```
 
-### 3.1 PAYG withholding
+```oa-check
+name: Original case cumulative-payment reconciliation
+inputs:
+  annual_tax: 8000
+  earlier_instalments: 3000
+  current_instalment: 3000
+steps:
+  - payments_to_date: earlier_instalments + current_instalment
+  - target: annual_tax * 0.75
+  - difference: payments_to_date - target
+expected:
+  payments_to_date: 6000
+  target: 6000
+  difference: 0
+```
 
-**PAYG withholding rates and rules**  _(TAA 1953 Sch 1 Div 12)_
+### Rate method
 
-| Item | Detail | Source |
-| --- | --- | --- |
-| Withholding obligation trigger | Making payments to employees, directors, or contractors who do not quote an ABN | TAA 1953 Sch 1 Div 12 |
-| No-ABN withholding rate | 47% of the payment amount | TAA 1953 Sch 1 s 12-190 |
-| Voluntary agreement rate | As per the ATO tax tables or agreed rate | TAA 1953 Sch 1 s 12-55 |
-| Labour hire withholding | As per ATO tax tables | TAA 1953 Sch 1 s 12-60 |
+T1 is gross business/investment instalment income, excluding GST, salary/wages subject to PAYG withholding and capital gains for these individuals. Include ordinary business income even if tax was withheld for non-quotation of TFN/ABN; apply special partnership/trust and farm-management-deposit rules when relevant. Use T2 as shown (which can reflect an earlier variation); a new varied rate goes at T3 with reason at T4. **T11 = T1 × applicable rate**, using T3 when newly varied, otherwise T2; transfer T11 to 5A. A rate reduction may also permit a 5B credit for earlier quarters under the ATO instructions. [ATO instalment income][INCOME]; [ATO rate-method labels][INSTAL]; [TAA Schedule 1 ss 45-110, 45-120 and 45-215][TAA2].
 
-### 3.2 PAYG income tax instalments
+Variation must be lodged by the instalment due date and before the year's tax return. A rate variation below **85% of the benchmark instalment rate** can trigger GIC under s 45-230; for an amount variation s 45-232 compares the estimate with **85% of benchmark tax** and uses the statutory acceptable-versus-actual instalment calculation. These are different tests. Keep and review the full-year estimate. This Guide does not calculate the interest charge. [ATO variations][VARY]; [TAA Schedule 1 ss 45-230 to 45-240][TAA2].
 
-**PAYG income tax instalment rates and thresholds**  _(TAA 1953 Sch 1 s 45-5)_
+### Stopping instalments
 
-| Item | Amount / Rate | Source |
-| --- | --- | --- |
-| Automatic entry — individuals (including sole traders) | The ATO uses the latest tax return. Automatic entry requires all of: instalment income of $4,000 or more; tax payable on the latest notice of assessment of $1,000 or more; and estimated (notional) tax of $500 or more. | [ATO — Starting PAYG instalments](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/starting-payg-instalments) |
-| Instalment rate | As notified by the ATO (varies per taxpayer) | ATO instalment rate notice |
-| GDP-adjusted amount | GDP adjustment is part of the notified instalment-amount calculation, not an automatic increase in T2 | [ATO PAYG variation instructions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments) |
-| GDP uplift factor 2024-25 | 6% | [ATO — GDP adjustment for 2024-25 GST and PAYG instalments](https://softwaredevelopers.ato.gov.au/gdp-adjustment-2024-25-gst-and-payg-instalments) |
-| Voluntary entry | A person new to business, or expecting business and investment income over the threshold, can request voluntary entry to PAYG instalments. | [ATO — Starting PAYG instalments](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/starting-payg-instalments) |
+Automatic individual exit includes notional tax **below $500**; this is not a standalone right to stop paying yourself. Request exit when no longer earning business/investment income, subject to the ATO exclusions: bankruptcy with a Part IX debt agreement/Part X personal-insolvency agreement, and specified low-debt/refund cases that become debts over $500 when instalments are included. In linked myGov use **Tax > Manage > Tax registrations > Cancel**, available only when eligible; an agent or the ATO can also take a request. Liability for further instalments ceases on withdrawal of the rate, rather than merely sending a request. [ATO exit instructions][STOP]; [TAA Schedule 1 s 45-90][TAA2].
 
-### 3.3 FBT instalments
+## FBT instalments: F1 to F4, 6A and 6B
 
-**FBT instalment rates and thresholds**  _(TAA 1953 Sch 1 s 45-60)_
+FBT uses its own year, **1 April to 31 March**. The ATO's ordinary quarterly-instalment instructions apply where prior-year FBT payable was **$3,000 or more**. Use the actual notified obligation: the statutory notional amount can reflect the latest assessed year, no-assessment/nil cases, a Commissioner determination or an accepted estimate; it is not invariably last year's final liability. The correct authority is FBTAA ss 102, 110–112A and 136(1), rather than TAA PAYG provisions or FBTAA s 149. [FBTAA][FBTLAW]; [ATO instalment instructions][FBT].
 
-| Item | Amount / Rate | Source |
-| --- | --- | --- |
-| FBT instalment threshold | Notional FBT amount >= $3,000 in prior FBT year | TAA 1953 Sch 1 s 45-60 |
-| FBT year | 1 April to 31 March | FBTAA 1986 s 149 |
-| Instalment rate | 25% of prior year FBT liability each quarter | TAA 1953 Sch 1 s 45-400 |
+- **Unvaried:** use the notified F1 and copy it to 6A. An unchanged ordinary base gives a quarter of the annual notional amount, but do not overwrite a different notified amount.
+- **Varied:** estimate annual FBT at F2, calculate F3 and enter the variation reason at F4. Use cumulative percentages 25%, 50%, 75%, 100% for quarters ending June, September, December and March respectively. Subtract previous instalments less previous credits. A positive result goes at F3 and 6A; for zero/negative results enter zero at F3/6A. A qualifying negative result may be claimed at 6B as a positive credit. Do not report a varied amount at F1.
+- Review the estimate carefully: FBT's variation-shortfall test uses **90%**, distinct from PAYG's 85% tests. This Guide does not compute the FBT interest/penalty outcome.
 
-## Section 4 — Computation rules
+Follow [ATO F1/F2/F3/F4/6A/6B instructions][FBT] and [FBTAA ss 111–112B][FBTLAW]. An estimate below the instalment threshold does not itself cancel an existing quarterly obligation.
 
-### 4.1 PAYG withholding (labels W1-W5)
+The annual FBT return reconciles the year's instalments against actual liability. The ordinary return/payment date is **21 May**; generally **25 June** only where an agent lodges electronically and the employer was on the agent's FBT client list by **21 May**. Check extensions and next-business-day adjustments. Lodge all required FBT-year activity statements, including March, before the annual FBT return. [ATO annual FBT instructions][FBTDUE].
 
-- **PAYG withholding computation steps** — **Step 1.** Identify the payments and withholding labels that apply during the period: - W1 — total salary, wages and other payments subject to withholding, where W1 must be completed; - W2 — amounts withheld from the payments shown at W1; - W3 — other amounts withheld; - W4 — amounts withheld where an ABN was not quoted; and - W5 — total amounts withheld: W2 + W3 + W4. **Step 2.** Reconcile the labels that the entity must report on its issued activity statement with payroll records, STP data and any ATO pre-fill. A small or medium withholder reporting through STP does not need to separately report W1; complete W2, W3, W4 and W5 where applicable. A large withholder that does not report through STP completes only W1; a large withholder reporting through STP does not report PAYG withholding on its activity statement. Large withholders do not complete W2, W3, W4, W5 or label 4 and must pay withheld amounts electronically on the applicable large-withholder schedule. **Step 3.** Where W2 applies, cross-check it against ATO PAYG withholding tax tables for each employee's earnings level. **Step 4.** If the entity makes payments to a supplier without an ABN, withhold 47% and account for that amount under the reporting and payment rules for the entity's withholding class. **Step 5.** Where W5 applies, report the W2 + W3 + W4 total and pay the amount due by the applicable due date.  _([ATO — PAYG withholding](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/pay-as-you-go-payg-withholding); [ATO — PAYG withholding pre-fill for activity statements](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/stp-and-activity-statements/ato-payg-withholding-pre-fill-for-activity-statements); [ATO — changes to PAYG withholding cycles](https://www.ato.gov.au/api/public/content/0-a1d50fe2-efe7-4866-9d51-855fd171ac74))_
+## Whole-statement reconciliation and penalties
 
-### 4.2 PAYG income tax instalments (labels T1-T9)
+Combine only applicable payment/credit labels on the issued statement. For the ordinary combined form, payment labels include 1A, 4, 5A and 6A; credits include 1B, 5B and 6B. Include other applicable statement amounts, including supported fuel-credit entries, before calculating the statement's payment/refund total. Exclude separately paid large-withholder amounts; never add the annual estimate T8 as a tax payment or add W1 to withheld tax. Reconcile with the GST working paper and ATO account. [ATO withholding labels][W]; [ATO PAYG labels][INSTAL]; [ATO FBT labels][FBT].
 
-Two methods are available:
+A required return/statement not given in approved form by its due date may attract FTL penalties. The base is **one penalty unit per 28 days or part**, up to **five base units**. Apply the statutory medium/large/significant-global-entity multipliers when relevant; five units is not a universal maximum. The unit value is the value at the start of each relevant 28-day period. A registered-agent safe harbour may apply where all relevant information was supplied in time and the failure did not result from the agent's recklessness or intentional disregard. The Commissioner may remit all or part of the penalty. [TAA Schedule 1 ss 286-75, 286-80 and 298-20][TAA2].
 
-#### Method A — Instalment amount method (label T7)
+**Non-usable historical details:** earlier versions covered 2024–25 (1 July 2024 to 30 June 2025), used a $10 million GST cycle boundary, quoted a flat $313 penalty unit for 2024–25, described GIC as a 90-day-bank-bill rate plus 7%, and added a GIC deduction statement from 1 July 2025. Do not use those historical lines to determine a current cycle, period-specific penalty or GIC/deduction outcome. The former 1 January 2022 STP reference also does not establish an exemption from W1/W2. The current methods above govern ordinary reporting; for a historical interest/deduction/penalty calculation: Check this point with one of our partner accountants.
 
-- **Instalment amount method steps:** Use the notified T7 amount unless varying. For a standard quarterly amount variation, enter estimated annual tax at T8; calculate the cumulative 25%, 50%, 75% or 100% share for the quarter, subtracting earlier instalments and applying the form’s treatment of earlier credits; enter the varied amount at T9, reason at T4 and payable amount at 5A. A zero or negative result needs the ATO credit instructions, including 5B where applicable. Do not divide annual tax by the remaining quarters. [ATO PAYG variation instructions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments).
+## Review before filing
 
-Example: at the third standard quarterly instalment, an annual estimate of $8,000 gives a cumulative $6,000 target (75%). If earlier instalments total $3,000 and there are no earlier credits, the current varied amount is $3,000. This is not $8,000 divided by two remaining quarters. Follow the ATO variation instructions above.
+- Match the taxpayer, actual period, offered method, classification, notices and deadline.
+- Reconcile payroll/STP/pre-fill, T1 income, T7 or T3/T4/T11, F1 or F2/F3/F4, credits and the GST working paper.
+- Retain the estimate and source records; identify unresolved entries and obtain professional review before filing.
 
-#### Method B — Instalment rate method (labels T1-T2)
+## Sources
 
-- **Instalment rate method steps:** Establish instalment income at T1 and the notified rate at T2. If varying, enter the new rate at T3 and reason at T4. Multiply T1 by the applicable rate and enter the result at T11 and 5A as instructed. Exclude salary, GST and capital gains from T1. Check the variation shortfall and GIC rules. [ATO PAYG variation instructions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments).
-- **Rate-method formula:** T11 = T1 × applicable percentage rate, using T3 if validly varied, otherwise T2. Follow the issued statement for 5A. [ATO PAYG variation instructions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments).
+Read dates below record actual relied-upon text reads, including indexed ATO source text where direct requests returned HTTP 403. The 22 November report is reused for unchanged scope and source-read applicability; its missing exact quotations were supplied on 27 November. Historical statutory compilations are used for the original year; current notices still control the taxpayer's filing.
 
-### 4.3 FBT instalment (label F1)
+[W]: https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/pay-as-you-go-payg-withholding "Read 2026-11-27"
+[CYCLE]: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/payg-withholding/paying-and-reporting-withheld-amounts/paying-and-reporting-payg-withholding-amounts-for-small-and-medium-withholders "Read 2026-11-27"
+[TAA1]: https://www.legislation.gov.au/C1953A00001/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_1/document_1.html "Read 2026-11-27"
+[TAA2]: https://www.legislation.gov.au/C1953A00001/2025-07-01/2025-07-01/text/original/epub/OEBPS/document_2/document_2.html "Read 2026-11-27"
+[GST]: https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html "Read 2026-11-27"
+[DUE]: https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas "Read 2026-11-27"
+[PROGRAM]: https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-by-obligation-type/activity-statements "Read 2026-11-27"
+[NOTICES]: https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/your-practice/managing-electronic-activity-statements-and-instalment-notices "Read 2026-11-27"
+[NOABN]: https://www.ato.gov.au/forms-and-instructions/statement-by-supplier-not-quoting-an-abn "Read 2026-11-27"
+[AGREE]: https://www.ato.gov.au/api/public/content/0-19524f95-212e-4bdf-b439-abc0b39dcc98 "Read 2026-11-27"
+[AGREEMENT]: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/payg-withholding/payments-you-need-to-withhold-from/payments-under-a-voluntary-agreement "Read 2026-11-27"
+[LABOUR]: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/payg-withholding/payments-you-need-to-withhold-from/labour-hire-firms-and-their-workers "Read 2026-11-27"
+[ENTRY]: https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/starting-payg-instalments "Read 2026-11-27"
+[VARY]: https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments "Read 2026-11-27"
+[INSTAL]: https://www.ato.gov.au/forms-and-instructions/payg-instalments-how-to-complete-your-activity-statement "Read 2026-11-27"
+[INCOME]: https://www.ato.gov.au/Business/PAYG-instalments/Calculate-your-PAYG-instalments/Instalment-income/ "Read 2026-11-27"
+[GDP24]: https://softwaredevelopers.ato.gov.au/gdp-adjustment-2024-25-gst-and-payg-instalments "Read 2026-11-27"
+[GDP25]: https://softwaredevelopers.ato.gov.au/gdp-adjustment-2025-26-gst-and-payg-instalments "Read 2026-11-27"
+[FBT]: https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/fringe-benefits-tax-fbt-instalment "Read 2026-11-27"
+[FBTLAW]: https://www.legislation.gov.au/C2004A03280/2025-02-15/2025-02-15/text/original/epub/OEBPS/document_2/document_2.html "Read 2026-11-27"
+[FBTDUE]: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/fbt-registration-lodgment-payment-and-reporting/lodging-your-fbt-return-and-paying "Read 2026-11-27"
+[PREFILL]: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/stp-and-activity-statements/ato-payg-withholding-pre-fill-for-activity-statements "Read 2026-11-27"
+[CLOSE]: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/start-reporting/stp-checklists "Read 2026-11-27"
+[STOP]: https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/stopping-payg-instalments "Read 2026-11-27"
+[PAUSED]: https://www.ato.gov.au/api/public/content/0-49df3169-15a8-4445-a4b8-28464c117790 "Read 2026-11-27"
 
-- **FBT instalment computation steps** — **Step 1.** If the taxpayer has an FBT instalment obligation, the ATO pre-fills label F1 with 25% of the prior year FBT liability. **Step 2.** The taxpayer may vary the instalment if FBT liability is expected to be lower. **Step 3.** Report at F1. The annual FBT return (due 21 May for non-tax-agent lodgement or 25 June for tax agents) reconciles the actual liability.  _(TAA 1953 Sch 1 s 45-400)_
+Not yet confirmed: no taxpayer payroll, ATO notice, lodged return or real account was supplied. Fuel-credit computations and the historical GIC/deduction/flat-dollar penalty outcomes identified above are non-usable holds. Check this point with one of our partner accountants.
 
-### 4.4 Net BAS payable / refundable
+## Disclaimer
 
-- **Net BAS payable:** Sum the completed payment labels, including 1A, 4, 5A and 6A as applicable; subtract credit labels including 1B, 5B and 6B. Use the statement’s total labels and exclude amounts, such as large-withholder payments, paid separately. Do not treat an annual estimate at T8 as a tax payment.
-
-## Section 5 — Edge cases and special rules
-
-### 5.1 Variation of PAYG instalments
-
-- **PAYG instalment variation and GIC:** Apply the ATO’s method-specific 85% shortfall test to a variation using expected full-year income and tax. Document the estimate and review it as circumstances change. Repeated variations do not themselves change the published GDP adjustment factor. [ATO PAYG variation instructions](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments).
-
-### 5.2 First year of business
-
-- **Starting PAYG instalments / first-year businesses** — The ATO works out automatic entry from information in the latest tax return. It notifies the taxpayer when they enter the PAYG instalments system, and payments start once it sends an activity statement or instalment notice. A person new to business can request voluntary entry. Under Schedule 1 section 45-15 of the Taxation Administration Act 1953, an entity is liable to pay instalments if the Commissioner has given it an instalment rate in writing.  _([ATO — Starting PAYG instalments](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/starting-payg-instalments); [TAA 1953 Sch 1 s 45-15](https://www.legislation.gov.au/C1953A00001/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_2/document_2.html#_Toc235715860))_
-
-### 5.3 STP and BAS alignment
-
-- **STP and BAS labels** — Reporting through STP does not cancel activity-statement obligations arising from GST, PAYG instalments or other tax roles. An STP-reporting small or medium withholder does not need to separately report W1; complete the other PAYG-withholding labels required by the issued activity statement. Different reporting and payment rules apply to large withholders. ATO Online Services may pre-fill W1 and W2 from STP information for eligible electronic activity statements; use payroll records as the primary source, then verify and correct any pre-filled figures. For a small employer with 19 or fewer payees, in-scope payments to closely held payees may be reported through STP quarterly, but arm's-length payees must still be reported on or before payday. That timing concession does not itself remove BAS obligations.  _([ATO — PAYG withholding](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/pay-as-you-go-payg-withholding); [ATO — PAYG withholding pre-fill for activity statements](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/stp-and-activity-statements/ato-payg-withholding-pre-fill-for-activity-statements); [ATO — changes to PAYG withholding cycles](https://www.ato.gov.au/api/public/content/0-a1d50fe2-efe7-4866-9d51-855fd171ac74); [ATO — STP reporting for closely held payees](https://www.ato.gov.au/Business/Single-Touch-Payroll/Concessional-reporting/Closely-held-payees/))_
-
-### 5.4 Ceasing PAYG instalments
-
-- **Stopping PAYG instalments** — For individuals, the ATO will automatically remove a taxpayer if one of its published automatic-exit conditions is met; this includes an estimated (notional) tax liability of less than $500. That threshold is an automatic-exit condition, not a standalone self-exit test. An individual who is no longer earning business or investment income may request to exit, subject to the ATO's eligibility requirements and listed exclusions. Individuals can request exit through myGov: **Tax > Manage > Tax registrations > Cancel** (the option is available only when eligible), through a registered tax agent, or by contacting the ATO. If the Commissioner withdraws the instalment rate, the entity ceases to be liable to pay further instalments.  _([ATO — Stopping PAYG instalments](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/stopping-payg-instalments); [TAA 1953 Sch 1 s 45-90](https://www.legislation.gov.au/C1953A00001/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_2/document_2.html#_Toc235715874))_
-
-### 5.5 Nil BAS / activity statement
-
-- **Nil lodgment and FTL exposure** — If an entity has nothing to report for a BAS period but is required to lodge the BAS, it must lodge it as nil by the due date. A business that has paused trading but keeps its GST registration continues to receive a BAS and must lodge it as nil. Do not assume every zero-value activity-statement notice has that obligation: the ATO says quarterly Forms R (PAYG instalment), S (GST instalment) and T (PAYG and GST instalment) generally need only be lodged when varying the instalment amount. If a required BAS is not given to the Commissioner in approved form by its due date, the entity may be liable to an FTL administrative penalty. The base amount is one penalty unit for each 28-day period (or part) for which it remains outstanding, capped at five units; statutory multipliers apply to specified medium, large and significant-global entities. The Commissioner may remit all or part of the penalty. Use the applicable penalty-unit value for the relevant period, rather than a static tax-year dollar figure.  _([ATO — nil activity-statement guidance](https://www.ato.gov.au/api/public/content/0-0b929c4e-ddac-4b4f-a627-7427575b94a2); [ATO — paused business and nil BAS](https://www.ato.gov.au/api/public/content/0-8551e46a-7b10-44c9-b5b4-7fc8bd0c32d5); [TAA 1953 Sch 1 ss 286-75, 286-80 and 298-20](https://www.legislation.gov.au/C1953A00001/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_2/document_2.html); [Crimes (Amount of a Penalty Unit) Instrument 2026](https://www.legislation.gov.au/F2026N00424/asmade/2026-06-16/text/original/epub/OEBPS/document_1/document_1.html))_
-
-## Section 6 — Self-checks
-
-Before delivering output, verify:
-
-- [ ] Applicable PAYG withholding labels agree with payroll records, STP data and any ATO pre-fill
-- [ ] PAYG instalment income (T1) excludes salary, GST, and capital gains
-- [ ] T2 matches the notification; any varied rate is at T3, with T4 reason and T11 result
-- [ ] FBT instalment (F1) is 25% of prior year FBT liability or validly varied
-- [ ] Lodgement due date has been correctly identified (including any tax agent extensions)
-- [ ] GST section cross-references to australia-gst.md output
-- [ ] Rates and thresholds match the 2025–26 income year; the historical GDP row is not a current-year rate
-- [ ] Output format matches the base skill spec
-
-## Section 7 — Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This Guide and its outputs are informational working papers and do not constitute tax, legal or financial advice. Obtain qualified professional review before filing or acting.
 
 > Contributed by Ryan Duguid.
