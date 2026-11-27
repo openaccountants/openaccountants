@@ -255,10 +255,10 @@ US practice: this is general information, not a filing opinion. Apply the facts-
 | R.C. 1.14: Read for Sunday, holiday and office-closure computation | https://codes.ohio.gov/ohio-revised-code/section-1.14 | 2026-11-27 |
 | R.C. 5703.055: Read for whole-dollar rounding, all entered amounts | https://codes.ohio.gov/ohio-revised-code/section-5703.055 | 2026-11-27 |
 | CAT 2005-02: Read for II bright-line enforcement, IV next-year wording; old registration figure superseded | https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/commercial_activities/information_releases/2005-02%20cat%20nexus%20standards%20rev%20november%202019.pdf | 2026-11-27 |
-| ODT CAT: Read for indexed official text read for registration, active-account filing, Gateway, TeleFile and amendments | https://tax.ohio.gov/business/commercial-activity-tax/ | 2026-11-27 |
-| CAT 2023-01: Read for indexed official text read for current exclusion, end of AMT/annual filing and cancellation | https://tax.ohio.gov/business/ohio-business-taxes/commercial-activities/information-releases/cat2023-01-iss-aug-2023 | 2026-11-27 |
-| ODT certified rates: Read for indexed official table read for calendar years 2025–2027 | https://tax.ohio.gov/researcher/interest-rates | 2026-11-27 |
+| ODT CAT: Read for registration, active-account filing, Gateway, TeleFile and amendments | https://tax.ohio.gov/business/commercial-activity-tax/ | 2026-11-27 |
+| CAT 2023-01: Read for current exclusion, end of AMT/annual filing and cancellation | https://tax.ohio.gov/business/ohio-business-taxes/commercial-activities/information-releases/cat2023-01-iss-aug-2023 | 2026-11-27 |
+| ODT certified rates: Read for calendar years 2025–2027 | https://tax.ohio.gov/researcher/interest-rates | 2026-11-27 |
 | IRC 1221(a)(1), 1231(b)(1): Read for inventory excluded from asset definitions; Ohio removes holding-period limit | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partIII-sec1221.htm | 2026-11-27 |
-| ODT TGR/refunds: Read for indexed official CAT REF instructions | https://tax.ohio.gov/business/commercial-activity-tax/commercial-activity-tax-taxable-gross-receipts | 2026-11-27 |
+| ODT TGR/refunds: Read for CAT REF instructions (indexed official text) | https://tax.ohio.gov/business/commercial-activity-tax/commercial-activity-tax-taxable-gross-receipts | 2026-11-27 |
 
-Not yet confirmed: Read for the specific non-usable holds above remain unavailable for automated conclusions. Direct ODT page opens returned errors; indexed official passages were read. Older unread releases have been replaced by operative statute/rule links; they are not evidence for retained claims.
+Not yet confirmed: the specific non-usable holds above remain unavailable for automated conclusions. Direct ODT page opens returned errors; indexed official passages were read. Older unread releases have been replaced by operative statute/rule links; they are not evidence for retained claims.
