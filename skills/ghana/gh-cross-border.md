@@ -2,18 +2,18 @@
 name: gh-cross-border
 description: >
   Use this skill for Ghana cross-border tax in tax year 2026: residence of individuals, companies, partnerships and trusts, the withholding rates on payments to residents and non-residents, final withholding, notice of non-resident contracts, foreign tax credit, the double taxation agreements Ghana lists, repatriated branch profits, 3% and 10% withholding on realisation of assets, and the monthly DT 110 return. VAT on imports of services sits in ghana-vat. Trigger on "Ghana withholding tax", "WHT Ghana", "non-resident Ghana", "double tax treaty Ghana", "dividend withholding Ghana", "service fees to foreign company Ghana". Use it for any payment crossing the Ghana border.
-version: 0.2
+version: 0.3
 jurisdiction: GH
 category: cross-border
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
 type: situation-rules
 ---
 
-# Ghana Cross-Border Tax v0.2
+# Ghana Cross-Border Tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -50,15 +50,14 @@ Residents paying non-residents, non-residents earning from Ghana, and residents 
 | Services | 7.5% | By an entity, above GHS 2,000 a year; general services by an individual | 2026 | same |
 | Goods | 3% | Above GHS 2,000 a year | 2026 | same |
 | Works | 5% | Above GHS 2,000 a year | 2026 | same |
-| Unprocessed precious minerals | 3% | | 2026 | same |
-| Petroleum subcontractors | 7.5% | Final | 2026 | same |
+| Unprocessed precious minerals | 3% | Since 2 April 2025 means unprocessed rough diamonds and other minerals prescribed by Regulations; unprocessed gold is excluded (Act 896 s.85(5) as substituted by Act 1134 s.2) | 2026 | https://repository.parliament.gh/handle/123456789/4550 |
+| Petroleum subcontractors | 7.5% | Final | 2026 | https://gra.gov.gh/domestic-tax/tax-types/withholding-tax/ https://repository.parliament.gh/handle/123456789/4550 |
 | Royalty, natural resource payments | 15% | | 2026 | same |
 | Asset or liability realisation | 3% of consideration | Resident payer not an individual (s.116A) | 2026 | https://gra.gov.gh/wp-content/uploads/2023/04/INCOME-TAX-AMENDMENT-ACT-2023-ACT-1094.pdf |
-| Lottery winnings | 10% of gross winnings | End of each game | 2026 | same |
 
 ## The base
 
-Withhold on the gross payment. Payments by an individual outside a business, employee pay, interest to a resident financial institution and exempt amounts are outside investment-return withholding ([GRA](https://gra.gov.gh/domestic-tax/tax-types/withholding-tax/)).
+Withhold on the gross payment. Payments by an individual outside a business, employee pay, interest to a resident financial institution and exempt amounts are outside investment-return withholding ([GRA](https://gra.gov.gh/domestic-tax/tax-types/withholding-tax/)). Winnings from lottery are no longer subject to withholding: the Income Tax (Amendment) Act, 2025 ([Act 1134](https://repository.parliament.gh/handle/123456789/4550), ss.3 to 5, gazetted 2 April 2025) removed them from s.115(1), s.119(1) and First Schedule para 8.
 
 Final payments are not taxed again: dividends by a resident company, rent by a resident individual, rent outside a letting business, payments to non-residents other than through a Ghanaian permanent establishment, petroleum subcontractor payments, and examination and endorsement fees. For anything else the payee claims a credit.
 
@@ -138,9 +137,10 @@ expected:
 |---|---|---|
 | GRA, Withholding Tax page (rates table, last edited 2022), page read in full | https://gra.gov.gh/domestic-tax/tax-types/withholding-tax/ | 2026-11-01 |
 | Income Tax (Amendment) Act, 2023 (Act 1094), whole act | https://gra.gov.gh/wp-content/uploads/2023/04/INCOME-TAX-AMENDMENT-ACT-2023-ACT-1094.pdf | 2026-11-01 |
+| Income Tax (Amendment) Act, 2025 (Act 1134), whole act (removes withholding on lottery winnings; excludes unprocessed gold from s.85(5)) | https://repository.parliament.gh/handle/123456789/4550 | 2026-11-26 |
 | Income Tax Act, 2015 (Act 896), OCR of scan; ss 33, 101, 102, 112, 121, 124, 125 read | https://gra.gov.gh/wp-content/uploads/2020/09/INCOME-TAX-ACT-2015-ACT-896.pdf | 2026-11-01 |
 | Revenue Administration Act, 2016 (Act 915); ss 27 to 30, 46, 47, 70 to 73 read | https://gra.gov.gh/wp-content/uploads/2023/01/Revenue-Administration-Act-2016-.pdf | 2026-11-01 |
 | GRA, Double Taxation Agreements page (country list), page read in full | https://gra.gov.gh/double-taxation-agreements/ | 2026-11-01 |
 | GRA, ITAS FAQs, page read in full | https://gra.gov.gh/itas-faqs/ | 2026-11-01 |
 
-Not yet confirmed: (1) Treaty rates and in-force status: GRA page lists countries only, under a heading on status; treaties were not read. (2) GRA withholding table dates from 2022; changes in Acts 1066, 1071 and any later act were not read, and the Act 1178 notice mentions only individual bands and MTS. The Finance Ministry 2025 report says Act 1129 abolished a 1.5% withholding on unprocessed gold by small-scale miners; Act 1129 itself was not read, and the 3% row may be affected for that gold. (3) The DT 110 screen layout on ETAX. (4) The GRA form list shows an older Excel DT 110; the upload format may differ on ETAX.
+Not yet confirmed: (1) Treaty rates and in-force status: GRA page lists countries only, under a heading on status; treaties were not read. (2) GRA withholding table dates from 2022; changes in Acts 1066, 1071 and any later act were not read, and the Act 1178 notice mentions only individual bands and MTS. The Finance Ministry 2025 report attributes the removal of withholding on unprocessed gold to Act 1129; the enacted text is Act 1134 s.2, now reflected in the 3% row. (3) The DT 110 screen layout on ETAX. (4) The GRA form list shows an older Excel DT 110; the upload format may differ on ETAX.
