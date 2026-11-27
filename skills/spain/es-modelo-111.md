@@ -1,10 +1,10 @@
 ---
 name: es-modelo-111
 description: Use this Guide to compute and reconcile Spanish common-territory Modelo 111 withholding remittances for payments made in 2026. It covers payer and recipient classification, professional standard and startup rates, employee withholding inputs, in-kind payments, distinct recipient counts, the numbered form boxes, complementary returns, filing frequency, payment dates, negative returns, annual Modelo 190 reconciliation and certificates. Trigger phrases include Modelo 111, retenciones profesionales, retención siete por ciento, retención quince por ciento, certificado de retenciones, perceptor, ingreso a cuenta, declaración negativa and autoliquidación complementaria. Obtain the paid-income register, recipient tax status, signed reduced-rate evidence, payroll calculations and accepted earlier filings. Corporate service invoices, property rents, capital income and ordinary non-resident payments require their own correctly classified route.
-version: "1.3"
+version: "1.4"
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,9 +12,9 @@ domain: income-tax
 type: situation-rules
 ---
 
-# Spain: Modelo 111 and recipient reconciliation v1.3
+# Spain: Modelo 111 and recipient reconciliation v1.4
 
-Compute the payer's 2026 IRPF withholding remittance from payments made, then reconcile Modelo 111 with recipient records, Modelo 190 and certificates. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.
+Compute the payer's 2026 IRPF withholding remittance from payments made, then reconcile Modelo 111 with recipient records, Modelo 190 and certificates. No accountant has signed off this revision.
 
 ## Who this applies to
 
@@ -32,17 +32,17 @@ All figures below apply to the relevant **2026 payments**, subject to the stated
 |---|---|---|
 | Ordinary professional activity | 15% of gross subject income paid | [RIRPF art. 95.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |
 | Starting professional activity | 7% in start tax period and following two, if no professional activity in the year before the start date and signed communication retained | [Art. 95.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |
-| Specified artistic professional activities | 7% if preceding-year qualifying gross income <15,000 and >75% of total gross work/economic income, with signed communication; other listed 7% cases also apply | [Art. 95.1.a–d](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |
+| Specified artistic professional activities | 7% only for art. 95.1.d activities, with preceding-year qualifying gross income <15,000 and >75% of total gross work/economic income, and signed communication; art. 95.1.a–c separately covers municipal collectors, insurance intermediaries using external auxiliaries and Loterías y Apuestas del Estado commercial delegates | [Art. 95.1.a–d](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |
 | Agriculture/livestock | 2%; pig-fattening/poultry 1%; exclude statutory subsidies/indemnities | [Art. 95.4](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |
 | Forestry activity | 2%, excluding statutory subsidies/indemnities | [Art. 95.5](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |
 | Listed business activities in objective assessment | 1%, subject to exact IAE list and communicated direct-assessment exclusion | [Art. 95.6](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |
 | Ordinary employment | Personalised annual/recalculated rate, not professional 15% | [Arts. 80–87](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a80) |
 | Director/board office | 35%; 19% where last completed payer tax-period turnover <100,000, annualised if short | [Art. 80.1.3](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a80) |
 | Courses/conferences classified as employment | 15% | [Art. 80.1.4](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a80) |
-| Other listed rights/assistance/leasing income | 19%; intellectual property has 15% and specified 7% exceptions; direct image exploitation 24% | [Art. 101](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a101) |
+| Other listed rights/assistance/leasing income | 19%; intellectual property 15%, except the art. 80.1.4/art. 95.1.d 7% cases and advances for copyright exploitation accruing over several years at 7%; direct image exploitation 24% | [Art. 101](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a101) |
 | Special image-right attribution payment on account | 19%, distinct from the direct exploitation rate | [Art. 107; LIRPF art. 92.8](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a107) |
 
-The start concession concerns **professional activity**, not every preceding economic activity, and runs for tax periods, not thirty-six rolling months. Keep the signed eligibility communication; without it, do not apply the startup 7%. The art. 95.1 territorial reduction is 60% where the income actually qualifies under LIRPF art. 68.4. La Palma's 2026 extension has its dated withholding start under [DA 57](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#da-8); do not infer territorial relief from the invoice address alone.
+The start concession concerns **professional activity**, not every preceding economic activity, and runs for tax periods, not thirty-six rolling months. The artistic concession covers second-section IAE groups 851, 852, 853, 861, 862, 864 and 869, third-section groupings 01, 02, 03 and 05, or professional services that would fall within the special employment relationship for performing, audiovisual or musical artists, or their necessary technical/auxiliary staff if supplied as an employee. Apply both preceding-year income tests to the qualifying activities together. Keep the signed eligibility communication; without it, do not apply the startup 7%. The art. 95.1 territorial reduction is 60% where the income actually qualifies under LIRPF art. 68.4. La Palma's 2026 extension has its dated withholding start under [DA 57](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#da-8); do not infer territorial relief from the invoice address alone.
 
 ## The base
 
@@ -54,7 +54,7 @@ For an ordinary professional invoice, apply the rate to gross professional incom
 
 For a cash fee F with VAT V and withholding H, `supplier_cash = F +V −H`; credit F as gross income/expense in the relevant records and H as the payer's withholding liability, not a fee discount. A partial payment needs its actual gross-fee and VAT allocation; do not apply the rate to the net bank transfer as though it were gross professional income.
 
-For in-kind employment use [RIRPF art. 102](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a102), and for in-kind economic activity apply its rate to market value under [art. 104](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a104). Keep the valued benefit and the payment on account separate. The tax-certificate treatment of employer/payer-borne payment on account under [LIRPF art. 43.2](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a43) must not cause the same amount to be added twice to a 111 value box.
+For in-kind employment use [RIRPF art. 102](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a102), and for in-kind economic activity apply its rate to market value under [art. 104](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a104). Keep the valued benefit and the payment on account separate. Art. 102.2 excludes contributions to the specified pension, business social-welfare and mutual schemes that reduce the tax base. For the recipient’s in-kind income, add the payment on account unless it was charged to the recipient. This treatment under [LIRPF art. 43.2](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a43) must not cause the same amount to be added twice to a 111 value box.
 
 ### Map and total the return
 
@@ -96,7 +96,7 @@ The payer's 111 is separate from the recipient's annual IRPF and Modelo 130. The
 
 The current [2026 calendar](https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html) expressly gives July 2026 monthly 111 **20 August**, with direct debit through **17 August**. Do not carry forward the older form-order July/September exception or assume every debit cut-off is the 15th. Verify the 2027 calendar for Q4/annual filings when published; the 2026 calendar does not establish next year's operational cut-offs.
 
-**Legislative bridge for the July return.** [RD 960/2013 article Segundo.Tercero.Ocho](https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771) replaced RIRPF article 108.1 **with effects from 1 January 2014**, under the express heading of article Segundo.Tercero. The replacement requires monthly declaration and payment in the first twenty calendar days of the following month and contains no separate July exception; its IRPF preamble also expressly explains the removal of that exception. That later regulatory schedule, [current article 108](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) and the actual 2026 calendar support July 2026 filing by 20 August. Original [EHA/586/2011 article 3](https://www.boe.es/buscar/doc.php?id=BOE-A-2011-4948) still prints the older July/August–September wording: it is preserved as historical text, not represented as expressly rewritten by RD 960/2013. The current August result is therefore supported by the identified replacement, rather than a missing legislative source or a presumed continuation of the older form-order exception.
+**July monthly return:** [RD 960/2013, article Segundo.Tercero.Ocho](https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771) replaced RIRPF art. 108.1 from 1 January 2014 with the following-month twenty-day rule, removing the July exception. The original [2011 form order](https://www.boe.es/buscar/doc.php?id=BOE-A-2011-4948) still prints its older September wording; use the later regulation and actual 2026 calendar above.
 
 Select electronic filing under current [Orden HAP/2194/2013](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385) rules; an SL/SA's quarterly frequency does not make paper filing available. Save the accepted declaration, receipt/CSV and separate successful payment evidence. An NRC proves payment, not by itself a filed return; an accepted direct-debit instruction is not proof a later bank debit succeeded. Withholding debts are excluded from ordinary deferral/instalment under [LGT art. 65.2.b](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a65).
 
@@ -110,7 +110,7 @@ Select electronic filing under current [Orden HAP/2194/2013](https://www.boe.es/
 | Required nil return late without economic loss | Baseline 200; half if filed without prior demand, before other applicable reductions | [Art. 198.1–2](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a198) |
 | Annual information return late | Baseline 20 per relevant person/data set, minimum 300 and maximum 20,000; amounts and limits halved without prior demand | [Art. 198.1–2](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a198) |
 
-Collection surcharges and interest have their own triggers under [LGT arts. 26/28](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a28). A prior AEAT demand does not create a simple delay-based 5%/10%/15%/20% penalty ladder. Establish notification, filing/payment dates, loss and the relevant conduct before calculating. A period with no obligation is not a late required nil return.
+For art. 27, confirm there was no prior administrative action formally known to the taxpayer directed to recognition, regularisation, checking, inspection, securing or assessment of the debt, identify the correct tax period expressly and include only that period’s data. The possible 25% surcharge reduction under art. 27.5 requires full payment of the remaining surcharge within its notified art. 62.2 window and full payment of the return debt at filing (or the statutory qualifying secured-deferral route); the withholding-debt deferral prohibition above still applies. Collection surcharges and interest have their own triggers under [LGT arts. 26/28](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a28). A prior AEAT demand does not create a simple delay-based 5%/10%/15%/20% penalty ladder. Establish notification, filing/payment dates, loss and the relevant conduct before calculating. A period with no obligation is not a late required nil return.
 
 ## Cross-border points
 
@@ -143,7 +143,7 @@ expected:
 
 ### 2. Mixed payroll/professionals, repeated recipient and complementary return
 
-For a hypothetical quarter, one ordinary employee receives three 2,500 payments and has 410.50 withheld each time, using the 30,000 annual example in [spain-payroll](spain-payroll.md). Professional A, eligible for startup 7% with signed evidence, receives fee payments 1,000 and 500. Professional B receives 2,000 at 15%. Another 900 professional invoice remains unpaid and is excluded from this period. There are **two**, not three, professional cash recipients.
+For a hypothetical quarter, one ordinary employee receives three 2,500 payments and has 410.50 withheld each time, with the original 30,000 annual salary input in [spain-payroll](spain-payroll.md). The 410.50 is an assumed payroll-register withholding for this reconciliation, not a rate computed by Modelo 111; establish the employee’s personal/family data, annual pay, deductions and regularisations first. Professional A, eligible for startup 7% with signed evidence, receives fee payments 1,000 and 500. Professional B receives 2,000 at 15%. Another 900 professional invoice remains unpaid and is excluded from this period. There are **two**, not three, professional cash recipients.
 
 Boxes 01/02/03 are 1 /7,500 /1,231.50. Boxes 07/08/09 are 2 /3,500 /405. All other withholding/payment-on-account boxes are zero; box 28 is **1,636.50**. If an earlier 111 for the same period had result 1,500 and that was paid, the corrected complementary return restates those totals, puts 1,500 in box 29, identifies the earlier receipt and has box 30 **136.50**. Any lateness is assessed separately; do not add an invented penalty to box 30 ([RIRPF arts. 78/95](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78); [111 order art. 9](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9)).
 
@@ -199,4 +199,4 @@ expected:
 | [LGT, Ley 58/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Voluntary late correction, collection, withholding debt deferral exclusion and conduct-based penalties | 2026-10-26 |
 | [Original RD960/2013 IRPF preamble/article Segundo.Tercero.Ocho](https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771), [current RIRPF108](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) | Full108.1 replacement with effects1January2014; monthlyJuly exception removed in later regulation, distinguished from unchanged oldformorder wording and current2026calendar | 2026-10-28 |
 
-**Not yet confirmed:** 2027 operational/direct-debit dates; case-specific foral allocation, non-resident treaty relief and disputed withholding-credit evidence. Special prize, public-forest and image-right transactions require their full underlying eligibility/base computation before using the mapped boxes. Independent whole-pack review remains outstanding.
+**Not yet confirmed: non-usable holds.** Do not use this Guide to determine 2027 operational/direct-debit dates, a case-specific foral allocation, non-resident treaty relief or a disputed withholding credit without the applicable calendar/rules and case evidence. Check this point with one of our partner accountants. The special-prize, public-forest and image-right boxes above are mappings only: do not calculate or file those transactions until their underlying eligibility, valuation and base are established. Check this point with one of our partner accountants.
