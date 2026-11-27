@@ -10,10 +10,10 @@ description: >
   "franking credits refund", "substantiation", "do I need a receipt", "capital or revenue",
   "apportion private use", "small business concessions". It routes to the specialist guides
   rather than restating their rules.
-version: 0.4
+version: 0.5
 jurisdiction: AU
 tax_year: 2026
-last_updated: 2026-11-22
+last_updated: 2026-11-27
 depends_on:
   - au-individual-return
 category: international
@@ -24,7 +24,7 @@ domain: income-tax
 
 # Australia Deductions, Offsets and Concessions v0.4
 
-## Australia Deductions, Offsets and Concessions v0.4
+## Australia Deductions, Offsets and Concessions v0.5
 
 > **General reference only.** This skill is general tax and accounting reference material for
 > AI-assisted workflows. It has not been reviewed for any specific person's facts, documents,
@@ -129,7 +129,7 @@ This skill does NOT cover:
 
 ### Step 5 - Is it incurred in this income year?
 
-- **Timing / incurred** -- The timing of the liability can differ from the payment date. An individual incurring non-business expenditure or an eligible business under the $50 million aggregated turnover test can use the 12-month rule if the eligible service period is 12 months or less and ends by the last day of the following income year. For a specific deduction, use its own timing rule. For example, a qualifying gift of money under Division 30 is generally deducted in the income year the gift is made. _([ATO, Deductions for prepaid expenses 2026](https://www.ato.gov.au/law/view/print?DocID=SAV%2FDPE%2F00001))_
+- **Timing / incurred** -- The timing of the liability can differ from the payment date. An individual incurring non-business expenditure or an eligible business with aggregated turnover of less than $50 million can use the 12-month rule if the eligible service period is 12 months or less and ends by the last day of the following income year. For a specific deduction, use its own timing rule. For example, a qualifying gift of money under Division 30 is generally deducted in the income year the gift is made. _([ATO, Deductions for prepaid expenses 2026](https://www.ato.gov.au/law/view/print?DocID=SAV%2FDPE%2F00001))_
 
 ### Step 6 - Is there evidence?
 
@@ -151,12 +151,13 @@ claim eligible expenses outside this calculation separately. These include union
 trade, business and professional association memberships, deductible income protection, personal
 sickness and accident insurance premiums, investment expenses and eligible gifts.
 
-For assets first used or installed ready for use from 2026-27, check section 40-425(9) before
-pooling. It bars low-value pooling if the asset was reasonably expected at that time to be used
-mainly to earn assessable labour income. Section 40-291A may allow a fixed 50% reduction to a
-balancing adjustment if the asset was ever used to earn assessable labour income and its effective
-life overlaps a year in which the taxpayer used the standard deduction. The new pooling bar does
-not affect assets already allocated by 2025-26.
+From 2026-27, check section 40-425(9) before allocating assets to a low-value pool. It bars
+allocation if, at first use or installation ready for use, the taxpayer reasonably expected
+to use the asset mainly to earn assessable labour income. Assets already allocated by 2025-26
+keep their pool treatment. Under section 40-291A the taxpayer can elect to reduce an assessable
+or deductible balancing adjustment by 50% instead of using the ordinary reductions under
+sections 40-290 and 40-291. The asset must have been used to earn assessable labour income and
+its effective life must overlap a year in which the taxpayer used the standard deduction.
 
 The deduction was enacted by Schedule 4 of the Treasury Laws Amendment (Tax Reform No. 1)
 Act 2026. The related employer FBT restrictions start on 1 April 2027. [ATO, Standard deduction
@@ -172,12 +173,12 @@ rules for work expenses, car expenses, travel expenses and business travel expen
 
 | Requirement | Rule |
 | --- | --- |
-| General work expense evidence | Written evidence is required. The document must show the supplier, the amount, the nature of the goods or services, the date of the expense and the date of the document |
+| General work expense evidence | Keep written evidence for actual expenses unless a statutory exception applies. The general particulars are the supplier, amount, nature of the goods or services, date of the expense and date of the document |
 | Former $300 work expense rule | For 2025-26 and earlier years, section 900-35 relaxed the written evidence requirement for eligible claims up to $300. The exception was repealed from 2026-27. Substantiate actual amounts under the remaining rules |
 | Car expenses, cents per kilometre method | Up to 5,000 business kilometres per car per year. No written evidence of the kilometres is required, but the basis of the estimate must be able to be shown, for example diary records |
-| Car expenses, logbook method | A logbook covering a continuous period of at least 12 weeks in the usual case, plus odometer readings and expense records. The logbook can ordinarily be used for up to five income years. Update it if usage changes materially |
-| Working from home, fixed rate method | A record of the total hours worked from home for the year, plus evidence that the expenses were incurred. The rate was 70 cents per hour for 2024-25 and 2025-26 |
-| Travel with an allowance | Reasonable amounts determined annually by the Commissioner can remove the need to keep receipts, but not the requirement to have incurred the expense |
+| Car expenses, logbook method | Keep a continuous logbook for at least 12 weeks or for the whole period you held the car if shorter. Keep odometer readings and expense records. The logbook can ordinarily be used for up to five income years. Update it if usage changes materially |
+| Working from home, fixed rate method | Record actual hours as you work from home and keep evidence of each type of additional expense incurred. The rate was 70 cents per hour for 2024-25 and 2025-26 |
+| Travel with an allowance | A qualifying employer travel allowance can relieve written evidence requirements for deductible covered expenses within the Commissioner's reasonable amounts. Keep evidence that you incurred the expenses and written evidence for all overseas accommodation. [ATO, Travel allowance record keeping exceptions](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/cars-transport-and-travel/overnight-travel-expenses-and-allowances/travel-allowances-for-overnight-travel/record-keeping-exceptions-for-travel-allowance-expenses) |
 | Record retention | Generally five years after lodging for employee work expense records. Business, CGT and carried-forward loss records have their own retention periods |
 
 The cents per kilometre rate and the working from home fixed rate are set per income year. Look up
@@ -247,12 +248,12 @@ expected:
 
 | Offset | Refundable | Summary |
 | --- | --- | --- |
-| Low income tax offset (LITO) | No | Up to $700 where taxable income is $37,500 or less. Between $37,501 and $45,000 the offset is $700 less 5 cents per dollar above $37,500. Between $45,001 and $66,667 it is $325 less 1.5 cents per dollar above $45,000. Nil above $66,667. Applied automatically |
+| Low income tax offset (LITO) | No | For eligible Australian tax residents, up to $700 where taxable income is $37,500 or less. Between $37,501 and $45,000 the offset is $700 less 5 cents per dollar above $37,500. Between $45,001 and $66,667 it is $325 less 1.5 cents per dollar above $45,000. Nil above $66,667. Applied automatically |
 | Seniors and pensioners tax offset (SAPTO) | No | Requires eligibility for a listed Australian Government pension or allowance, and income tests for the taxpayer and spouse. Unused amounts may be transferable between eligible spouses. Entitlement to at least $1 also raises the Medicare levy low income threshold |
 | Private health insurance rebate | Yes | Income tested, and can be taken as a premium reduction or as an offset in the return |
-| Franking credits on franked dividends | Yes | Included in assessable income first, then offset against tax, with the excess refundable to most resident individuals and complying super funds |
+| Franking credits on franked dividends | Yes | Eligible resident individuals and complying super funds include the credit in assessable income and claim the offset. Check the qualified person rules, including the holding period and related payments, and the dividend washing rules. [ATO, You and your shares 2026](https://www.ato.gov.au/law/view/document?docid=SAV%2FYAYS%2F00001) |
 | Foreign income tax offset | No | Generally limited to the greater of $1,000 and the amount calculated under section 770-75, and cannot exceed qualifying foreign tax paid. See `au-foreign-income.md` |
-| Small business income tax offset | No | For an individual with net small business income from a sole trader business or a share from a small business partnership or trust. Confirm the rate and cap for the income year |
+| Small business income tax offset | No | For eligible net small business income from a sole trader business or a share from a small business partnership or trust. The business must have aggregated turnover of less than $5 million. [ATO, Small business income tax offset](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/concessions-offsets-and-rebates/small-business-income-tax-offset) |
 | Zone and overseas forces offsets | No | Narrow eligibility rules |
 | Beneficiary tax offset | No | For recipients of certain Commonwealth benefits and allowances |
 
@@ -271,7 +272,7 @@ Concessions change the base or the rules rather than reducing tax directly.
 | Small business entity concessions | Aggregated turnover thresholds, which differ by concession | `australia-bookkeeping.md`, `au-individual-return.md` |
 | Small business CGT concessions | $6 million maximum net asset value test, CGT small business entity with aggregated turnover below $2 million, or an eligible partnership or passively held asset route. Apply the active asset test and check the other basic and concession-specific conditions | `au-small-business-cgt.md` |
 | CGT discount | 12 months of ownership, and entity and residency tests | `au-capital-gains.md` |
-| Main residence exemption | Dwelling used as the main residence, with partial and absence rules | `au-capital-gains.md`, `au-rental-property.md` |
+| Main residence exemption | Dwelling used as the main residence, with partial and absence rules. Check the foreign-resident life events test if the taxpayer is a foreign resident at the CGT event. [ATO, Main residence exemption for foreign residents](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/main-residence-exemption-for-foreign-residents) | `au-capital-gains.md`, `au-rental-property.md` |
 | Research and development tax incentive | Registered eligible R&D activities | `au-rd-incentive.md` |
 | Not-for-profit and DGR concessions | Endorsement and purpose tests | `au-not-for-profit.md` |
 
@@ -305,7 +306,8 @@ the aggregated turnover threshold is not the same for every concession.
 
 **Facts.** The employee is an Australian tax resident for the whole of the 2026-27 income year,
 with salary of $92,000 and $19,000 of PAYG withheld. Assume no other income, spouse, dependants,
-private health insurance rebate, Medicare levy exemption or HELP debt. All figures are synthetic.
+private health insurance rebate, Medicare levy exemption, Medicare levy surcharge or HELP debt.
+All figures are synthetic.
 
 **Substantiated amounts for the year**
 
@@ -418,15 +420,13 @@ expected:
 - [ ] Refunds of excess PAYG payments are distinguished from refunds of unused offsets.
 - [ ] Rates, thresholds and limits are confirmed against the ATO page for the income year.
 
-## Section 14 - Sources
+## Sources
 
 - Income Tax Assessment Act 1997, s 8-1 (general deductions), s 8-5 (specific deductions),
   Division 25 (specific deductions), Division 26 (denials), Division 40 (capital allowances),
   Division 43 (capital works), Division 900 (substantiation).
 - Treasury Laws Amendment (Tax Reform No. 1) Act 2026,
   https://www.legislation.gov.au/C2026A00049/latest
-- Income Tax Rates Amendment (Tax Reform No. 1) Act 2026,
-  https://www.legislation.gov.au/C2026A00050/latest
 - ATO, Standard deduction for work-related expenses,
   https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/standard-deduction-for-work-related-expenses
 - ATO, Claiming deductions,
@@ -446,6 +446,10 @@ expected:
 
 Sources for the 2026-27 standard deduction, offsets and worked example were checked as at
 22 November 2026. The working from home table gives historical rates through 2025-26.
+
+Not yet confirmed: the working from home fixed rate for 2026-27.
+
+Check this point with one of our partner accountants.
 
 Selected simplified-depreciation rules read 2026-11-12:
 
