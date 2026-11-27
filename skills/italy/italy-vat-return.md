@@ -68,6 +68,8 @@ Determine the tax point before using the bank date: domestic services generally 
 | VP13 | Acconto due, even if unpaid, in amount column 2 and method in column 1; omit where below EUR 103.29; methods: historical, forecast, actual, special-sector |
 | VP14 | Debt column 1 = positive result of (VP6 column 1 + VP7 + VP12) minus (VP6 column 2 + VP8 + VP9 + VP10 + VP11 + VP13 column 2); negative result's absolute value goes in credit column 2. It is tax due/credit, not tax actually paid. Elected Q4 filers leave blank |
 
+**Q4 boundary:** the blank-field instructions above apply to ordinary elected quarterly settlements. Subfornitori using art. 74(5), special quarterly taxpayers under art. 74(4), and mixed/separate-accounting cases have different Q4/module rules. Their treatment is a non-usable hold here. Check this point with one of our partner accountants.
+
 Keep the invoice/register reference, tax point, net base, output tax, deductible input tax, VAT treatment, VP fields, evidence and unresolved facts on each working-paper line. Reconcile VP totals, prior returns, credits, actual F24 payments and the annual return; recalculate the workbook. No invented statutory materiality limits or ABI transaction-code rules.
 
 **Deduction conditions (arts. 19 and 19-bis.1).** Costs must belong to the business and confer deduction entitlement; private-use shares do not. Exempt activities can require pro rata: use the special-case hold. Phones and internet have no universal fixed half deduction: establish business/private use objectively.
