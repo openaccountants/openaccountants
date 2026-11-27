@@ -5,15 +5,15 @@ description: >
 jurisdiction: TZ
 category: cross-border
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 type: situation-rules
-version: 0.2
+version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
 ---
 
-# Tanzania cross-border tax v0.2
+# Tanzania cross-border tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -55,7 +55,7 @@ Treaty ceilings, from the treaties TRA publishes ([list](https://www.tra.go.tz/r
 | Norway | 20% | 15% | 20% | 20% | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Norway_1.pdf) |
 | South Africa | 10% (15% capital) / 20% | 10% | 10% | No article found | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Southafrica.pdf) |
 | Sweden | 15% (25% voting) / 25% | 15% | 20% | 20% | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Sweden.pdf) |
-| Zambia | No rate ceiling | No rate ceiling | No rate ceiling | No article found (1968 treaty, read 2026-11-14) | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Zambia.pdf) |
+| Zambia | 0% if the Zambian resident is subject to Zambian tax on the dividend, unless the holding is effectively connected with its Tanzanian PE (Art. VI(1), (4)) | No rate ceiling | No rate ceiling | No article found (1968 treaty, read 2026-11-14) | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Zambia.pdf) |
 
 Treaty terms prevail to the extent the Act provides in s.154. We read TRA's list, not an entry-into-force record, so confirm a treaty is in force for the year before relying on it. No treaty raises a domestic rate, so a 20% ceiling on a 15% service fee leaves 15%.
 
@@ -77,7 +77,7 @@ Treaty terms prevail to the extent the Act provides in s.154. We read TRA's list
 
 ## Penalties and interest
 
-Late payment or filing: per month, 2.5% of the unpaid tax or 15 currency points for a body corporate (TZS 225,000), whichever is higher ([TAA s.89](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf)). Interest at the statutory rate compounded monthly; a withholding agent cannot pass it to the payee ([TAA s.87(3)](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf)).
+Late payment or filing: per month, 2.5% of the unpaid tax or 15 currency points for a body corporate (TZS 300,000 at TZS 20,000 a point), whichever is higher ([TAA s.89](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf); [FA 2024 s.97](https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf)). Interest at the statutory rate compounded monthly; a withholding agent cannot pass it to the payee ([TAA s.87(3)](https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf)).
 
 ## Cross-border points
 
@@ -137,6 +137,7 @@ All read on 2026-11-01; the Zambia treaty reread on 2026-11-14 (no fees article)
 | Finance Act 2026 | https://www.tra.go.tz/images/uploads/acts/THE_FINANCE_ACT%2C_2026.pdf | 2026-11-01, section on income tax part |
 | Finance Act 2025 | https://www.tra.go.tz/images/uploads/acts/THE_FINANCE_ACT%2C_2025.pdf | 2026-11-01, section on income tax part |
 | Tax Administration Act Cap. 438 R.E. 2023 | https://www.tra.go.tz/images/uploads/acts/Tax_Administration_Act.pdf | 2026-11-01, ss.86 to 90, First Sch |
+| Finance Act 2024, No. 6, s.97 (TAA Second Schedule: currency point TZS 20,000 from 1 July 2024) | https://www.tra.go.tz/images/uploads/acts/Finance_Act_2024_%281%29.pdf | 2026-11-26 |
 | TRA Withholding tax | https://www.tra.go.tz/page/withholding-tax | 2026-11-01, sections on rates and filing |
 | TRA Capital Gains tax | https://www.tra.go.tz/page/capital-gains-tax | 2026-11-01, sections on rates and filing |
 | TRA Digital Service Tax | https://www.tra.go.tz/page/digital-service-tax | 2026-11-01, sections on rates and filing |
