@@ -141,7 +141,7 @@ Part-year business, alternative stock/receivables averaging, spouse allocation a
 
 ### Expenses and transaction classification
 
-The general rule is a cost incurred to acquire, maintain or secure taxable income; private costs are excluded (§ 6-1). A cost totalling **NOK 10,000 or more** must be paid through a bank/authorized payment provider. Aggregate payments for the same delivery/service/contract and periodic payments deducted in the same year. A denied cash payment cannot enter depreciation basis or acquisition value (§ 6-51). Documentation and business purpose are required; an uncertain cost stays unclaimed pending evidence. [General rule](https://lovdata.no/lov/1999-03-26-14/§6-1), [bank rule](https://lovdata.no/lov/1999-03-26-14/§6-51).
+The general rule is a cost incurred to acquire, maintain or secure taxable income; private costs are excluded (§ 6-1). A cost totalling **NOK 10,000 or more** must be paid through a bank/authorized payment provider. Aggregate payments for the same delivery/service/contract and periodic payments deducted in the same year. A denied cash payment cannot enter depreciation basis or acquisition value (§ 6-51). Documentation and business purpose are required; an uncertain cost stays unclaimed pending evidence. Set-off, partly cash-paid invoices and other payment-method exceptions have no final deduction outcome under this Guide. Check this point with one of our partner accountants. [General rule](https://lovdata.no/lov/1999-03-26-14/§6-1), [bank rule](https://lovdata.no/lov/1999-03-26-14/§6-51).
 
 | Item | Treatment and conditions | Source |
 | --- | --- | --- |
