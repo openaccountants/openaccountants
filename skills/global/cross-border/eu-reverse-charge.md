@@ -1,277 +1,118 @@
 ---
 name: eu-reverse-charge
-description: Use this skill whenever a cross-border B2B service transaction occurs between EU member states and the question is whether the reverse charge mechanism under Article 196 of the VAT Directive applies. Trigger on phrases like "reverse charge", "B2B services EU", "intra-community services", "Article 196", "EC Sales List", "self-assess VAT", "cross-border VAT EU", or any request involving the VAT treatment of services supplied between businesses in different EU countries. This skill contains the complete decision logic for determining when reverse charge applies, how the supplier and customer each report it, the EC Sales List obligations, and the country-specific box mappings that link back to each country's VAT return skill. ALWAYS read this skill before classifying any intra-EU B2B service transaction.
+description: Determine Article 44 service place and Article 196 customer liability for services received in an EU member state, including customer evidence, exceptions, invoicing, recapitulative statements, deduction and country reporting boundaries.
 jurisdiction: GLOBAL
 tax_year: 2026
-last_updated: 2026-11-14
-source_checked: 2026-11-14
+last_updated: 2026-11-27
+source_checked: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 category: cross-border
 type: situation-rules
-version: 1.1
+version: 1.2
 ---
 
-# EU Reverse Charge v1.1
+# EU Reverse Charge v1.2
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+> **General reference only.** Obtain professional review of the actual facts and national procedures before filing or taking a tax position.
 
 ## Scope
 
-This skill applies the EU service-place and customer-liability framework for 2026. Its core job is ordinary cross-border Article 44 services received in an EU member state. It covers the supplier and customer, customer evidence, exception services, invoicing, recapitulative statements, partial deduction, branches, service chains, mixed private use and continuous supplies. It does not prepare a national return without the current country overlay. A supplier can be outside the EU; Article 196 tests non-establishment in the customer member state, not EU citizenship or incorporation.
-
-Use `eu-oss-digital` for eligible B2C digital supplies and the relevant national VAT-return skill for rates, exemptions, registration, tax points, fields, payments and penalties. Property, physical event admission, transport and catering need their specific place rules and then their liability rule. Domestic reverse charges, goods triangulation and complex group structures require the relevant country skill and reviewer.
-
-The original working tags [T1], [T2] and [T3] mean respectively a rule with known facts, a fact-sensitive review point, and a referral boundary. They are not professional approval, a licence or permission to file without review. Unknown essential facts stop classification.
+For 2026 services received in an EU member state, determine the service's place first, then who owes VAT. Ordinary taxable Article 44 services are subject to Article 196 where supplied by a taxable person not established in the receiving member state for that supply. This includes qualifying UK and other non-EU suppliers; an EU VAT number on the supplier is not an Article 196 prerequisite. Reverse charge describes liability, not a universal zero rate. [Directive, Articles 44, 192a and 196](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
 ### Quick reference
 
-| Question | Rule and conditions | Official source |
+| Point | Condition | Official source |
 |---|---|---|
-| Who accounts for ordinary business services? | Article 44 receiving-establishment place, then Article 196 customer liability where supplier is not established there for the supply; check recipient status, actual use and exemptions | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| Short transport hire exception | Not more than 30 days (in words on the page), or 90 days for vessels; continuous possession/use, actual disposal place under Article 56 | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| Article 196 invoice deadline | By the 15th day of the month following the chargeable event (in words on the page), Article 222; check the actual tax point and competent invoice law | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| Recapitulative statement | Article 263 monthly framework with national quarterly-services option, within no more than 1 month after the period (in words on the page); Article 262 excludes services exempt where taxable | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
+| Ordinary service place | Receiving business; receiving fixed establishment overrides where the service is supplied to it; permanent address/usual residence fallback if neither exists | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
+| Customer liability | Article 44 service, qualifying recipient, non-established taxable supplier, taxable rather than exempt supply | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
+| Invoice deadline | Article 196 services: fifteenth day of the following month after the chargeable event; apply competent invoice law | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
+| Services statement | Monthly EU framework; national quarterly option; national deadline within one month of period end, possibly shorter | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
 
 ## Ask the client first
 
-1. Where are the supplier and customer business and fixed establishments, and which establishment provides or receives this service?
-2. What exactly is supplied, and is it for business, exclusively private or mixed use? Obtain the contract and invoice.
-3. What is the recipient's taxable-person or VAT-identified legal-person status, with VIES/registration and identity evidence?
-4. Is the service subject to a special place rule, exemption or cross-border SME exemption?
-5. What are the service, payment and successive-account dates and reporting period?
-6. What deduction entitlement and current national return/statement obligations apply?
-
-
-- **Pre-check question 1: supplier VAT registration**  -  Establish the supplier's taxable status and all relevant establishments/registrations. Article 196 can include a supplier outside the EU; lack of an EU VAT number alone does not exclude it.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Pre-check question 2: customer VAT registration in different state**  -  Identify the EU receiving establishment and relevant registration. If supplier and customer are established in the same state for this supply, stop the Article 196 test; establish the actual place under the general or special rule before deciding national treatment. Do not rely solely on registration-country codes.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Pre-check question 3: customer is a business (B2B)**  -  Is the customer a business (B2B)? Determine status and use under Regulation Articles 18-19; a valid VIES number is evidence, not the complete test. If the customer is a private individual (B2C), reverse charge does NOT apply -- apply the B2C place rule, exemption and any eligible OSS route (see `eu-oss-digital.md`).  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Pre-check question 4: nature of the service**  -  What is the nature of the service? Needed to check specific place-of-supply rules.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Stop condition for unknown pre-checks**  -  If items 1-3 are unknown, STOP. Do not classify the transaction.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-
+Obtain the contract, invoice, service/payment/accounting-period dates, supplier and recipient establishments, receiving establishment, customer status and identity evidence, business/private use, exemption or SME-scheme status, deduction entitlement and return edition. Unknown facts needed for classification stop the conclusion. Registration-country codes alone do not identify the supplying or receiving establishment.
 
 ## The method, step by step
 
-### Step 1: Decision Tree -- Does Reverse Charge Apply? [T1]
+1. **Establish recipient status and use.** Article 43 includes a non-taxable legal person identified for VAT. Under Regulation Article 18(1)(a), absent contrary information, a communicated VAT number plus confirmation of validity and associated name/address supports taxable status. Retain VIES evidence. Article 18(1)(b) separately permits an applicant awaiting a number where other proof demonstrates the required status and normal commercial identity/payment checks reasonably verify it. Invalid VIES does not automatically make the customer private or require supplier-country VAT. An outage is not proof of status: record it, retry and hold unresolved classification. Exclusively private use, including staff use, is B2C. One service intended for both business and private use follows Article 44 absent abusive practice; deduction is a separate test. [Regulation, Articles 18–19](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
+2. **Locate the service.** For ordinary business services apply Article 44 and Regulation Articles 21–22. Examine nature/use first; then contract, order, VAT number and payer to identify a receiving fixed establishment. Regulation Article 22 permits the business-establishment fallback in its stated unresolved/unidentifiable-use cases; do not substitute a VAT-number country mechanically. Apply the exception table before deciding Article 196. [Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
+3. **Test supplier establishment.** Article 192a disregards a local fixed establishment only if it does not intervene in the supply. Regulation Article 53 tests suitable permanent human/technical resources actually used in fulfilment; accounting, invoicing or collection support alone is insufficient. Invoicing under that establishment's VAT number creates an intervention presumption, rebuttable by proof. Article 54 denies this non-establishment treatment where the supplier's business itself is established in the tax state, even if that office does not intervene. If the Article 196 establishment test fails, determine national liability rather than assuming every service is domestic. [Directive, Article 192a](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Regulation, Articles 53–54](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
+4. **Invoice and report.** For a taxable Article 196 service the supplier charges no supplier VAT and uses the required “Reverse charge” mention; citing Article 196 is additional explanatory wording. Apply the full competent invoice rules, including applicable supplier/customer VAT identification, rather than treating this short checklist as the complete invoice specification. The pending-registration evidence route is not a waiver of invoice/registration/statement requirements. The customer accounts for output VAT at the actual local rate and deducts only eligible input. [Directive, Articles 196, 219a, 222, 226(3)–(4), 226(11a) and 226a](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
+5. **Check the services recapitulative statement.** Article 262(1)(c) covers VAT-identified suppliers' qualifying services to taxable persons or VAT-identified non-taxable legal persons liable under Article 196, excluding services exempt where taxable. Apply the supplying state's registration/procedure; do not impose an EU statement on every non-EU supplier. Article 264 requires supplier and customer VAT numbers, each customer's service total and applicable adjustments; the service value belongs to the statement period in which VAT became chargeable. Article 263 allows national quarterly-services reporting but mixed goods/services can follow the goods frequency. A statement omission does not itself replace the Article 196 liability test. [Directive, Articles 196 and 262–264](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
+6. **Deduction is conditional.** Article 168 ties deduction to eligible use; Article 173 restricts mixed deductible/non-deductible use and allows national allocation rules. Article 178(f) requires national reverse-charge formalities. Zero net tax requires full same-period entitlement without a restriction; a partly exempt business can fully deduct a service attributable exclusively to eligible taxed activity. Do not deduct all output merely because reverse charge applies. [Directive, Articles 168, 173 and 178(f)](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-**Legislation:** VAT Directive Art 44 (general B2B rule), Art 45 (general B2C rule), Art 46-59 (specific exceptions), Art 196 (reverse charge obligation).
+### Tax points and service chains
 
-### Decision Tree Table
+For EC5's EUR 2,000/month retainer invoiced quarterly at EUR 6,000, establish which periods the successive statements/payments actually cover. Article 64(1) treats the service as completed at their expiry; advance payments trigger Article 65 on receipt and the amount received. Article 64(2) deems year-end completion for Article 196 services supplied continuously for more than one year without statements or payments during that period. Article 66's national timing derogation excludes Article 196 services. An invoice date alone is not the universal tax point. [Directive, Articles 64–66](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-**Decision Tree Table**  _([Step 1: Decision Tree -- Does Reverse Charge Apply? [T1]](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1))_
+For EC3's A(MT) → B(DE) → C(FR) service chain, apply the status, place, establishment, exemption and reporting tests separately to each supply. Article 28 treats an intermediary acting in its own name on another's behalf as receiving and supplying the service itself. Only if each link meets the ordinary taxable Article 44/196 conditions does the German then French recipient self-assess. An agency relationship not established from the contract is a non-usable hold: Check this point with one of our partner accountants. [Directive, Articles 28, 44, 196 and 262](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-| Step | Question | If YES | If NO |
-| --- | --- | --- | --- |
-| 1 | Is the customer a taxable person acting as such or a non-taxable legal person identified for VAT and treated as taxable under Article 43(2)? Establish status and business use under Regulation 282/2011 Articles 18-19; VIES is one evidence route. | Go to Step 2 | **STOP.** B2C rules apply. Determine the applicable B2C place rule and any exemption; use OSS only for eligible taxable supplies. Reverse charge does NOT apply.  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| 2 | Is the supplier not established in the customer member state for this supply, taking account of any intervening fixed establishment? | Go to Step 3 | **STOP this Article 196 test.** The supplier-establishment condition for Article 196 fails. Still determine the actual general or special place rule and national liability; same-country establishments do not make a foreign-property or foreign-admission service domestic. Use the country skill.  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| 3 | Does the service have a sufficiently direct connection with identified immovable property (land, buildings)? Article 47 and Regulation Article 31a; general advice or plans not tied to a particular plot are not automatically included. | **STOP.** Place of supply = where property is located. Article 196 does not decide liability. Check the property-state national reverse charge before deciding whether the supplier must register. [T2] | Go to Step 4  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| 4 | Is the service admission to a cultural, artistic, sporting, scientific, educational, or entertainment event attended in person? Art 53 (Art 53 does not apply where the attendance is virtual). | **STOP.** Place of supply = where event takes place. Article 196 does not decide liability; check national recipient-liability rules. [T2] | Go to Step 5  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| 5 | Is the service short-term hire of a means of transport (<=30 days (in words on the page), <=90 days for vessels)? Art 56(1). | **STOP.** Place of supply = where vehicle put at disposal. Article 196 does not decide liability; check national recipient-liability rules. [T2] | Go to Step 6  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| 6 | Is the service restaurant/catering on board transport (ship, plane, train) within EU? Art 57. | **STOP.** Place of supply = point of departure. Article 196 does not decide liability; check national recipient-liability rules. [T2] | Go to Step 7  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| 7 | Is the service passenger transport? Art 48. | **STOP.** Place of supply = where transport takes place proportionally. Article 196 does not decide liability; check national recipient-liability rules. [T2] | Go to Step 8  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| 8 | Is this ordinary restaurant/catering physically supplied away from the onboard Article 57 case? | **STOP.** Article 55 locates the service where physically carried out; check national liability. | Otherwise go to Step 9. https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| 9 | **Reverse charge applies.** Place of supply = the receiving business or fixed establishment's state under Art 44. Customer self-assesses VAT under Art 196, subject to any applicable exemption. Supplier invoices without its own VAT; this is not a universal 0% rate. | -- | --  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-
-### Summary of Art 44/45 Exceptions (Services NOT Subject to Standard B2B Reverse Charge) [T2]
-
-**Summary of Art 44/45 Exceptions (Services NOT Subject to Standard B2B Reverse Charge) [T2]**  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-
-| Exception | Article | Place of Supply |
-| --- | --- | --- |
-| Services with a sufficiently direct connection to immovable property under Regulation 31a | Art 47 | Location of property  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| Passenger transport | Art 48 | Where transport takes place  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| Goods transport to B2C, except intra-Community transport | Art 49 | Where transport takes place proportionately; intra-Community B2C goods transport instead starts at the departure place under Article 50  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| Cultural/sporting/educational event admission | Art 53 | Where event takes place  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| Restaurant and catering | Art 55 | Where physically carried out  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| Short-term hire of transport | Art 56(1) | Where put at disposal  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-| Restaurant/catering on board transport | Art 57 | Point of departure  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
-
-- **Flag exceptions as T2**  -  If the service falls into any exception above, flag as [T2] and determine place of supply under the specific article. Do not apply Article 196 solely by assuming the Article 44 general rule; separately check national recipient liability.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-
-
-### Step 2: How the Supplier Treats It [T1]
-
-- **Invoice without VAT**  -  For an ordinary taxable Article 196 supply the supplier does not charge its own VAT. Show the net consideration and reverse-charge mention; do not describe the supply as universally zero-rated.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Required invoice notation**  -  Include the mention "Reverse charge" required by Article 226(11a). "Reverse charge -- Article 196 of Council Directive 2006/112/EC" is a useful expanded notation, subject to national invoice rules, not the Directive's mandatory full wording.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Include both VAT numbers**  -  Apply the competent invoice law and Article 226(3)-(4) identification requirements. For an EU supplier identified for the supply, include its VAT number and the customer number under which the customer is liable. A non-EU supplier does not acquire an EU number merely from this rule; verify its own invoice requirements. Where Article 18(1)(b) supports a customer still awaiting a number, resolve the applicable registration, invoice and statement requirements before issuing or filing; do not invent a VAT number or treat the evidence route as an invoice-content waiver.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Report on EC Sales List (ESL)**  -  For a qualifying outgoing intra-EU service in Article 262(1)(c), file the recapitulative statement for the national period, with customer VAT number and service value. Exclude services exempt in the customer state; do not impose this EU statement automatically on a non-EU supplier.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Report on the VAT return**  -  An Article 44 service supplied to an establishment abroad is reported according to the supplier state's rules for services whose place is abroad. It is not automatically a zero-rated or exempt domestic supply. The specific field depends on country and return edition.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-
-
-### Step 3: How the Customer Treats It [T1]
-
-- **Self-assess output VAT**  -  Determine the service's taxable value, applicable local rate or exemption and tax point, then self-assess output VAT. A standard rate is used only if this service falls within that rate. Apply the country skill and current law rather than assuming all services have the standard rate.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Simultaneously claim input VAT**  -  Claim only the input tax actually deductible under Articles 168, 173 and 178(f), subject to local evidence, use, blocked-input and timing rules. Equal output and input in the same return is conditional on full entitlement and the required formalities, not automatic.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Net effect for fully taxable business**  -  On full entitlement and the same-period deduction facts, equal output and eligible input produce zero net tax. Fully taxable status alone does not remove blocked-input or timing restrictions. Output liability must still be reported; claim only permitted input.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Report on Intrastat / acquisition section**  -  Report in the country's recipient-liability services fields. Do not call a service an intra-Community acquisition of goods or an Intrastat goods movement. Separate national service statistics can still apply; verify them in the country skill.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-
-
-### Step 4: EC Sales List (ESL) Requirements [T1]
-
-- **Who must file**  -  A VAT-identified taxable person supplying services to the persons in Article 262(1)(c), other than services exempt in the state where taxable, for which the recipient is liable under Article 196. Intra-EU service statements and national registration rules must be checked; this is not a statement obligation on every non-EU supplier.  _(Regulation (EU) No 904/2010; VAT Directive Art 262-263.)_
-- **What to report**  -  Customer's VAT identification number + total value of services for the period.  _(Regulation (EU) No 904/2010; VAT Directive Art 262-263.)_
-- **Frequency**  -  Monthly under VAT Directive Art 263(1); member states may allow a quarterly statement for services (Art 263(1c)) (e.g., France monthly DES for services).  _([Regulation (EU) No 904/2010; VAT Directive Art 262-263.](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1))_
-- **Deadline**  -  Varies by member state, within a period not exceeding one month (VAT Directive Art 263); check the national deadline, which can be shorter.  _([Regulation (EU) No 904/2010; VAT Directive Art 262-263.](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1))_
-- **Penalty for non-filing**  -  Varies by member state. The old unsourced EUR 50 to EUR 5,000+ range is reserved under Not yet confirmed and must not be used to estimate liability.  _(Regulation (EU) No 904/2010; VAT Directive Art 262-263.)_
-
-### Critical Rule [T1]
-
-- **Non-filing does not change VAT treatment**  -  Failure to file a statement does not, by itself, switch Article 196 customer liability to supplier liability: check the actual Article 44/196 conditions. Correct the statement and any return, and determine national penalties separately. A services reporting omission is not an acquisition of goods.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-
-
-### Step 5: VIES Validation [T1]
-
-- **VIES verification requirement**  -  For an EU customer communicating a VAT number, obtain confirmation of its validity and associated identity under Regulation 282/2011 Article 18(1)(a). Use VIES: https://ec.europa.eu/taxation_customs/vies/. Retain the result with the customer identity, service-use and establishment evidence. Article 18(1)(b) separately permits a customer who has applied for a number to be assessed from other proof with reasonable commercial verification.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **VIES confirms valid**  -  If the number is valid, continue the service, business-use, establishment, exemption and liability tests. A valid number alone does not prove that every service is an Article 44/196 supply.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **VIES shows invalid**  -  If VIES shows invalid, investigate the identifier and customer evidence and advise the customer to resolve registration. Do not automatically charge domestic VAT: a pending-registration case can satisfy Article 18(1)(b), and customer status, use, place and national obligations still determine the result. Refer unresolved evidence rather than guessing.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **VIES temporarily unavailable**  -  If VIES is unavailable, document the attempt and retry. An outage does not establish the customer's status; collect lawful corroboration and obtain review before invoicing or filing. The failed attempt alone is not a legal safe harbour.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-
-
-### Reporting fields actually checked
-
-For France, the 2026 CA3 notice identifies E2 for services to a foreign-established customer, A3 for taxable general-rule services received from a non-established supplier, and the appropriate rate/output and deduction fields. DES applies to qualifying outgoing intra-EU services, excluding services exempt in the customer state. For Slovakia, the current DPHv25 form uses 09b/10b for standard-rate recipient-liable services and the eligible standard-rate deduction in aggregate row 19; rows 11/12 concern triangulation goods, not ordinary services. Do not force outgoing Article 44 services into old row 15: the authority excludes transactions located outside Slovakia from the domestic return. For a German recipient of ordinary Article 44 services from an entrepreneur established in another EU state, the 2026 form row 30 uses KZ 46 for base and KZ 47 for output; deductible section 13b input uses row 41/KZ 67. German outgoing section 18b services use row 35/KZ 21. These identifiers do not apply indiscriminately to non-EU suppliers: the form separately has other recipient-liable services in row 32/KZ 84/85. Current Malta identifiers remain reserved. Italian annual IVA 2026 instructions cover tax period 2025: the 2025-2026 filing cycle confirms VE34 for qualifying outside-territory supplies, VJ3 for relevant foreign supplier purchases and VF1-VF13 by rate for eligible purchases. It does not confirm annual fields for tax period 2026, which remain reserved, nor the separate Intrastat service thresholds.
-
-| Filing instruction | Conditions | Official source |
-|---|---|---|
-| France E2 / A3 | Respect supplier versus recipient direction; rate and deduction depend on the actual service and use | https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf |
-| France DES within 10 working days after the month | Only the qualifying outgoing intra-EU services in the notice; do not substitute the goods statement | https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf |
-| Germany KZ 21 / 46 / 47 / 67 | 2026 form: outgoing qualifying EU service / EU-established supplier recipient base / output / permitted section 13b input; other foreign cases need the other form branch | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-vordruckmuster-USt-voranmeldung-2026.pdf?__blob=publicationFile&v=7 |
-| Italy VE34 / VJ3 / VF1-VF13 | 2025-2026 filing cycle only, tax period 2025; not confirmation of tax-period 2026 annual fields | https://www.agenziaentrate.gov.it/portale/documents/20143/9602686/IVA_ANNUALE_2026_istr.pdf/2a42fb92-1b76-229a-d0f5-06069d79b514?t=1768504755711 |
-| France output 08 / eligible input 20 | Metropolitan standard-rate service and eligible non-capital service purchase; apply actual deduction conditions | https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5377.pdf |
-| Slovakia 09b / 10b / 19 | Standard-rate ordinary recipient-liable service; row 19 only to extent deductible, not an automatic full claim | https://pfseform.financnasprava.sk/Formulare/eFormVzor/DP/form.616.html |
-| Slovakia outgoing services | Place abroad is excluded from the domestic return; separately determine summary statement | https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/danove-priznanie |
 ## Boundary and exception table
 
+The following special places do not establish liability under Article 196. National recipient liability may still apply under Article 194; do not assume supplier registration or a particular rate. [Directive, Articles 44, 194 and 196](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1).
 
-### EC1 -- Customer has a VAT number but is a non-taxable legal person [T2]
+| Service | Place and boundary | Official source |
+|---|---|---|
+| Immovable property | Article 47: property location; Regulation 31a requires sufficiently direct connection. Plans for an identified plot qualify; plans not designated for a plot are excluded from that rule | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 ; https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 |
+| Physical event admission | Article 53: event location, including admission-related ancillary services; virtual attendance is excluded. Regulation 32 includes paid rights of admission to conferences/seminars. Closed professional attendance or advance booking does not alone turn admission into ordinary consulting | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 ; https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 ; https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A62017CA0647 |
+| Passenger transport | Article 48: proportionate to distances covered | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
+| Short transport hire | Article 56: where actually put at disposal; continuous possession/use no more than thirty days, or ninety days for vessels | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
+| Restaurant/catering | Article 55: physical performance, except the onboard case below | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
+| Onboard restaurant/catering | Article 57: departure of the EU passenger-transport section on ship, aircraft or train, without an outside-EU stopover between its EU departure/arrival; first EU scheduled embarkation and last EU scheduled disembarkation. Return leg separate | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
+| B2C goods transport | Article 49: distance rule except intra-Community transport, for which Article 50 uses departure; not an exception for ordinary B2B goods-transport services | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 |
 
-**Situation:** The customer has a VAT identification number (e.g., for intra-EU goods acquisitions) but is not a taxable person acting as such (e.g., a government body, a holding company with no economic activity).
-**Resolution:** Article 43(2) treats a non-taxable legal person identified for VAT as taxable for the place-of-services rules; Article 196 expressly includes it. Confirm the actual registration and capacity/use rather than assuming this group is excluded. Regulation Article 19 governs exclusively private use.
+EC1's VAT-identified non-taxable legal person follows Article 43(2), with the capacity/use checks above. EC2's German supplier/French branch/French customer follows the intervention test; this does not dispense with service-place or exemption checks. EC4's sole trader follows the private/mixed-use rule above, with input deduction determined separately.
 
-### EC2 -- Supplier has a fixed establishment in the customer's country [T2]
+### Country reporting matrix
 
-**Situation:** A German company supplying services to a French customer also has a fixed establishment (branch) in France. Does the French branch trigger domestic treatment instead of reverse charge?
-**Resolution:** If the French fixed establishment is NOT involved in the supply, reverse charge still applies (Art 44; Art 192a of the VAT Directive + Implementing Regulation Art 53). If the fixed establishment IS involved, the supply is domestic. Flag for reviewer to determine which establishment is making the supply.
+These are the stated ordinary-service branches, not complete national return instructions. Use the current national Guide for filing/payment, special schemes and other service categories. “Full deduction” below always means eligible use, required evidence/formalities and same-period entitlement.
 
-### EC3 -- Chain of services (intermediary) [T2]
+| Country | Outgoing qualifying EU service | Incoming ordinary taxable service | Services statement / boundary | Official source |
+|---|---|---|---|---|
+| Germany | USt1A row 35/KZ 21 | Other-EU-established supplier: row 30/KZ 46 base and KZ 47 output; eligible section 13b input row 41/KZ 67. Other foreign-supplier branch: row 32/KZ 84/85; do not reuse KZ 46 indiscriminately | Determine ZM period in the national Guide | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-vordruckmuster-USt-voranmeldung-2026.pdf?__blob=publicationFile&v=2 |
+| France | CA3 E2, qualifying services located abroad | A3 base; metropolitan standard-rate output 08, eligible non-capital service input 20 | Qualifying DES: within ten working days after the month VAT became chargeable; exemption in customer state excludes the service | https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf ; https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5377.pdf |
+| Slovakia | Foreign-place transactions excluded from domestic return; determine summary-statement duty separately | Registered payer's standard-rate service under section 69(3): base 09b, output 10b; deductible standard-rate tax aggregate 19, with sections 49–51 conditions | Rows 11/12 concern second-customer goods liability, not this service | https://pfseform.financnasprava.sk/Formulare/eFormVzor/DP/form.616.html ; https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/danove-priznanie ; https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Sprievodca/Sprievodca_danami/2026/2026.01.13_DPH_2026.pdf |
+| Malta | Current outgoing and incoming return identifiers: non-usable hold | Do not use the old box mappings to file | Services-only quarterly recap is optional, due fifteenth day after quarter end; mixed goods/services follow the goods rules. For return identifiers: Check this point with one of our partner accountants. | https://legislation.mt/eli/sl/406.14/eng/pdf |
+| Italy | Tax-period 2026 annual field: non-usable hold | Tax-period 2026 annual fields and separate service-statistics duty: non-usable hold | IVA 2026 instructions concern tax period 2025; they do not prove the annual fields for tax period 2026. Check this point with one of our partner accountants. | https://www.agenziaentrate.gov.it/portale/documents/20143/9602686/IVA_ANNUALE_2026_istr.pdf/2a42fb92-1b76-229a-d0f5-06069d79b514?t=1768504755711 |
 
-**Situation:** Company A (MT) supplies a service to Company B (DE), who re-supplies it to Company C (FR). Who applies reverse charge?
-**Resolution:** Each link in the chain is treated independently. A→B: reverse charge applies (MT→DE). B→C: reverse charge applies (DE→FR). Each qualifying outgoing intra-EU supplier reports the relevant link under Article 262(1)(c), excluding services exempt in the receiving state; check each supplier's national statement conditions. Flag for reviewer if the intermediary's involvement is unclear.
+### Standard rates for the examples
 
-### EC4 -- Services straddling B2B and B2C (mixed customer) [T2]
+The standard rates used only for the taxable ordinary-service examples are:
 
-**Situation:** A customer is both a business and a private individual (e.g., a sole trader purchasing services partly for business, partly for personal use).
-**Resolution:** Exclusively private use, including staff private use, is B2C. A single service intended for both business and private use follows Article 44 if there is no abusive practice; do not split that single supply mechanically by use. Check place, supplier establishment and liability separately. Confirm business purpose under Regulation Article 19.
-
-### EC5 -- Continuous services spanning multiple periods [T1]
-
-**Situation:** A monthly retainer service (e.g., EUR 2,000/month) is invoiced quarterly at EUR 6,000.
-**Resolution:** Reverse charge applies to each tax point. Article 64(1) generally treats successive-account/payment services as completed at the end of their relevant periods. Article 65 governs payments before supply, while Article 64(2) covers Article 196 continuous services supplied for more than 1 year without accounts or payment: deemed completion at each calendar year-end until completion. Article 66's national timing derogations do not apply to Article 196 services. Determine the actual contract/tax point and national reporting period, not a universal invoice-date rule.
-
-
-The fixed-establishment test includes the resources actually intervening in fulfilment; mere accounting, invoicing or collection support is not intervention. Issuing under the local establishment VAT number creates the Regulation Article 53(2) presumption unless rebutted. A supplier with its business establishment in the tax state cannot use Article 192a merely because that office did not intervene (Regulation Article 54).
-
-Sources for these boundaries: https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 (Articles 43-45, 64-66, 192a, 196) and https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 (Articles 19, 53-54).
+| Destination | Standard rate and conditions | Official source |
+|---|---|---|
+| Germany | 19%; UStG section 12(1), excluding a qualifying reduced-rate or exempt service | https://www.gesetze-im-internet.de/ustg_1980/__12.html |
+| Metropolitan France | 20%; CGI Article 278, excluding a qualifying reduced-rate or exempt service | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026950057/2026-01-21 ; https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf |
+| Malta | 18%; Cap.406 Article 19, excluding Eighth Schedule or exempt supplies | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 |
+| Slovakia | 23%; section 27(1), excluding reduced-rate or exempt supplies | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Sprievodca/Sprievodca_danami/2026/2026.01.13_DPH_2026.pdf |
+| Italy | 22%; DPR 633/1972 Article 16, excluding reduced-rate or exempt supplies | https://www.normattiva.it/atto/caricaDettaglioAtto?atto.articolo.numero=16&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0&atto.codiceRedazionale=072U0633&atto.dataPubblicazioneGazzetta=1972-11-11 |
 
 ## Worked cases
 
-Unless a case expressly changes the facts, assume ordinary taxable professional services, no applicable exemption or SME relief, a supplier not established in the receiving state for the supply, a qualifying business recipient and full same-period deduction supported by the required evidence. Case prices are illustrative inputs exclusive of VAT, including the B2C regression test price. Exceptions and national filing identifiers still require the stated checks.
+All original prices, locations and durations below are preserved. Ordinary-service results assume a taxable business supply received at the stated establishment, no applicable exemption/SME relief or place override, supplier non-establishment for the supply and full eligible same-period deduction. Prices are net illustrative inputs, not thresholds. Apply the evidence and country reporting matrix; no result authorises an unresolved national filing field.
 
+| Original example | Inputs and result |
+|---|---|
+| 1: MT → DE consulting | MT VAT-registered consultant, valid DE customer number, management consulting EUR 5,000. Article 44/196: no supplier VAT; qualifying services statement. DE base KZ 46 = EUR 5,000, output KZ 47 = EUR 950 and eligible input KZ 67 = EUR 950; net zero. Malta field held |
+| 2: DE → FR software | German freelance developer, valid FR company number, custom software EUR 10,000. Article 44/196: supplier KZ 21 and qualifying ZM. FR A3 base EUR 10,000, output 08 EUR 2,000, eligible service input 20 EUR 2,000; net zero |
+| 3: IT → MT legal advice | Italian law firm, valid MT company number, contract advice EUR 3,000. Ordinary Article 44/196: supplier no VAT; customer output EUR 540 at the Malta standard rate and eligible input EUR 540; net zero. Property-specific advice would need the property test. Italian service statistics and Malta/Italian filing fields held |
+| 4: MT architect / DE customer / FR building | EUR 8,000 plans for the identified French building: Article 47 puts the service in France. Article 196 does not determine liability. French liability, registration and any rate: non-usable hold. Check this point with one of our partner accountants. |
+| 5: FR organiser / NL company / ES conference | EUR 500 physical admission: Article 53 puts it in Spain. Spanish liability, exemption and supplier registration: non-usable hold. Check this point with one of our partner accountants. |
+| 6: NL → SK marketing | Dutch agency, valid SK company number, digital marketing EUR 15,000. Ordinary Article 44/196: supplier no VAT and qualifying services statement; Dutch field requires national Guide. SK registered payer: base 09b EUR 15,000; output 10b EUR 3,450; eligible standard-rate input aggregate 19 EUR 3,450; net zero |
+| 7: MT → IT bookkeeping | Maltese CPA, valid IT company number, bookkeeping EUR 2,000. Ordinary Article 44/196: no supplier VAT, qualifying services statement. Italian output EUR 440, eligible input EUR 440; net zero. Malta and tax-period 2026 Italian fields held |
+| 8: DE training / AT company / DE seminar | EUR 4,000, 3-day in-person seminar in Germany. If admission, Article 53 puts it in Germany; Article 196 is not that liability rule. Neither closed attendance nor advance booking proves a bespoke non-admission service. The actual admission/bespoke distinction, education exemption and national liability remain a non-usable hold. Check this point with one of our partner accountants. |
 
-### Example 1 -- Standard consulting, MT supplier to DE customer [T1]
+C-647/17 (Srf konsulterna), judgment of 13 March 2019, includes a 5-day accountancy/management course supplied solely to taxable persons with advance registration/payment within Article 53. The 3-day example remains 3 days; the judgment does not decide its missing contractual facts. [Official operative part](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A62017CA0647).
 
-**Facts:** Maltese VAT-registered consultant invoices a German company (valid DE VAT number) EUR 5,000 for management consulting.
-**Analysis:** B2B, general service (Art 44 applies), no exceptions. Reverse charge applies.
-**Supplier (MT):** Invoice EUR 5,000, no supplier VAT charge, notation "Reverse charge Art 196". Report in the national outgoing-services field (current Malta identifier reserved below). Report on the applicable services recapitulative statement, unless exempt in the customer state.
-**Customer (DE):** Self-assess 19% output VAT = EUR 950 (KZ 47). Claim EUR 950 input VAT (KZ 67). Net = zero.
+### Original regression tests
 
-### Example 2 -- Software development, DE supplier to FR customer [T1]
-
-**Facts:** German freelance developer invoices a French company (valid FR VAT number) EUR 10,000 for custom software development.
-**Analysis:** B2B, general service under Art 44, no exceptions. Reverse charge applies.
-**Supplier (DE):** Invoice EUR 10,000, no supplier VAT charge. Report in KZ 21. File ZM (ESL).
-**Customer (FR):** Self-assess 20% output VAT = EUR 2,000 (standard-rate output Line 08). Claim EUR 2,000 input VAT (Line 20). Net = zero.
-
-### Example 3 -- Legal services, IT supplier to MT customer [T1]
-
-**Facts:** Italian law firm invoices a Maltese company (valid MT VAT number) EUR 3,000 for legal advice on a contract.
-**Analysis:** B2B, general service under Art 44. Legal services are not in Art 45 exceptions. Reverse charge applies.
-**Supplier (IT):** Invoice EUR 3,000, no supplier VAT charge, "inversione contabile Art 196". Use the current Italian outgoing-services field and verify the separate service-statistics obligation; the old VE34/Intrastat mapping remains reserved below.
-**Customer (MT):** Self-assessed output on EUR 3,000 at 18% is EUR 540. Deductible input is EUR 540 only on the stated full-entitlement/same-period facts; net is zero. Current Malta return identifiers are reserved under Not yet confirmed.
-
-### Example 4 -- Architectural services for property in France, MT supplier to DE customer [T2]
-
-**Facts:** Maltese architect invoices a German company EUR 8,000 for designing a building located in France.
-**Analysis:** Service related to immovable property (Art 47). Place of supply = France (where the property is). Reverse charge under Art 196 does NOT apply. The Maltese supplier may need to register for VAT in France and charge French VAT at 20%.
-**Flag:** T2 -- reviewer must confirm whether French VAT registration is required or whether the customer can self-assess under French domestic reverse charge rules for construction services.
-
-### Example 5 -- Conference admission in Spain, FR supplier to NL customer [T2]
-
-**Facts:** French event organiser sells admission tickets (EUR 500) for a conference in Spain to a Dutch company.
-**Analysis:** Admission to an event (Art 53). Place of supply = Spain. Standard reverse charge does NOT apply. Check Spanish liability, exemption and registration; Article 196 is not the applicable liability rule for physical admission.
-**Flag:** T2 -- escalate to determine whether the French organiser must register in Spain.
-
-### Example 6 -- Marketing services, NL supplier to SK customer [T1]
-
-**Facts:** Dutch marketing agency invoices a Slovak company (valid SK VAT number) EUR 15,000 for digital marketing campaign.
-**Analysis:** B2B, general service (Art 44), no exceptions. Reverse charge applies.
-**Supplier (NL):** Invoice EUR 15,000, no supplier VAT charge. Report on the applicable services recapitulative statement, unless exempt in the customer state. Use the applicable Dutch outgoing-services field; the exact field is not sourced here.
-**Customer (SK):** Standard-rate base row 09b = EUR 15,000 and output row 10b = EUR 3,450. Output VAT at 23% = EUR 3,450. Eligible standard-rate input in row 19 = EUR 3,450 on these fully deductible facts. Net = zero.
-
-### Example 7 -- Accounting services, MT supplier to IT customer [T1]
-
-**Facts:** Maltese CPA invoices an Italian company (valid IT VAT number) EUR 2,000 for bookkeeping services.
-**Analysis:** B2B, general service under Art 44. No exceptions. Reverse charge applies.
-**Supplier (MT):** Invoice EUR 2,000, no supplier VAT charge. Report EUR 2,000 in the current national outgoing-services field; the Malta identifier remains reserved. Report on the applicable services recapitulative statement, unless exempt in the customer state.
-**Customer (IT):** Self-assess at 22% = EUR 440 output. Claim EUR 440 input. Net = zero.
-
-### Example 8 -- Training seminar (in-person), DE supplier to AT customer [T2]
-
-**Facts:** German training company invoices an Austrian company EUR 4,000 for a 3-day in-person training seminar held in Germany.
-**Analysis:** If this is admission to an event (Art 53), place of supply = Germany (where the seminar takes place); Article 196 does not apply to that admission, and any domestic liability rule must be checked separately. However, if the seminar is a bespoke training service (not admission to an event open to the public), do not conclude Article 44 merely because registration is restricted; establish the actual admission/service facts before liability.
-**Flag:** T2 -- determine whether the training qualifies as "admission to an event" (Art 53) or a bespoke B2B service (Art 44). In C-647/17 (Srf konsulterna), judgment of 13 March 2019, paragraphs 13-15 and 25-36, the Court included a 5-day accountancy/management course supplied solely to taxable persons within Article 53. Advance registration and payment did not exclude admission. Check the actual physical admission/service facts rather than assuming a closed professional course falls under Article 44. [Official judgment](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=ecli%3AECLI%3AEU%3AC%3A2019%3A195).
-
-
-### Regression cases from the original test suite
-
-### Test 1 -- Standard B2B consulting, MT to DE
-
-**Input:** Maltese consultant (MT VAT number valid), German customer (DE VAT number valid via VIES), consulting service EUR 5,000.
-**Expected:** Supplier: the national outgoing-services field (current Malta identifier reserved below) = EUR 5,000, no supplier VAT charge, ESL filed. Customer: KZ 46 = EUR 5,000, output VAT 19% = EUR 950, input VAT EUR 950.
-
-### Test 2 -- B2C digital service, MT to DE
-
-**Input:** Maltese company sells to a German private individual (no VAT number) an online course for EUR 200.
-**Expected:** Reverse charge does NOT apply. If this is an automated electronically supplied course taxable in Germany, not an exempt supply or a qualifying Article 59c home-state supply, German standard VAT on EUR 200 is EUR 38 at 19%; eligible supplies can use OSS or require local registration. Establish seller facts and course classification before that conclusion. See `eu-oss-digital.md`.
-
-### Test 3 -- Property-related service (Art 47 exception)
-
-**Input:** French architect invoices a Belgian company EUR 10,000 for designing a building in Belgium.
-**Expected:** Reverse charge under Art 196 does NOT apply. Place of supply = Belgium (Art 47). French architect may need to register for Belgian VAT or Belgian domestic reverse charge for construction services may apply. Flag T2.
-
-### Test 4 -- Post-Brexit UK supplier to EU customer
-
-**Input:** UK company invoices a Dutch company EUR 8,000 for IT consulting. UK company is not VAT-registered in any EU state.
-**Expected:** For the stated ordinary IT-consulting service to the Dutch business, Article 44 locates the service in the Netherlands and Article 196 applies if the UK supplier is not established there for the supply and no exemption applies. UK status does not disqualify the EU-side reverse charge. See `non-eu-export-services.md`.
-
-### Test 5 -- Customer's VAT number is invalid
-
-**Input:** Italian company invoices a Spanish company EUR 3,000 for design services. Spanish VAT number fails VIES validation.
-**Expected:** STOP for evidence resolution. An invalid VIES result does not alone establish B2C or Italian place of supply. Apply Regulation Article 18, including the pending-registration route where its conditions are met, then determine the actual place, rate, liability, invoice and statement. The old EUR 660 / EUR 3,660 outcome at 22% is not a valid automatic result.
-
-
-### Recomputing cases and decision boundary
-
-The example prices are inputs, not legal thresholds. The rate rows below are current standard-rate references used only for the stated ordinary taxable professional services; test any reduced rate, exemption, use-and-enjoyment rule or SME exemption before computing. Germany and France ordinary full-deduction examples have no net payment attributable to the service, but their output and eligible input entries are still required.
-
-| Example destination | Standard rate | Conditions and source |
-|---|---|---|
-| Germany | 19% | Ordinary taxable consulting; UStG section 12(1): https://www.gesetze-im-internet.de/ustg_1980/__12.html |
-| France | 20% | Ordinary taxable software development, metropolitan France; 2026 CA3 notice: https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf |
-| Malta | 18% (in words on the page) | Ordinary taxable legal services; Cap. 406 art 19(1): https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 |
-| Slovakia | 23% | Ordinary taxable marketing; Act 222/2004 section 27(1): https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Sprievodca/Sprievodca_danami/2026/2026.01.13_DPH_2026.pdf |
-| Italy | 22% | Ordinary taxable bookkeeping; official EU standard-rate table; national field/source detail still reserved: https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm |
+1. **MT → DE consulting, EUR 5,000, valid MT/DE VAT numbers:** on the ordinary-service assumptions, same EUR 950 output/input result as Example 1; Malta outgoing field held.
+2. **MT company → German private customer, EUR 200 online course, no VAT number:** Article 196 does not apply to that private purchase. Automated digital-service classification, exemption, Article 59c, seller facts and OSS/local registration remain a non-usable hold. The old EUR 38 at nineteen per cent is conditional arithmetic only, not a confirmed tax liability: Check this point with one of our partner accountants. Use `eu-oss-digital`.
+3. **French architect → Belgian company, EUR 10,000, identified Belgian building:** Article 47 places it in Belgium; Belgian liability and registration remain a non-usable hold. Check this point with one of our partner accountants.
+4. **UK company → Dutch company, EUR 8,000 IT consulting, no EU VAT registration:** UK status does not exclude Article 196. On the ordinary-service assumptions it applies in the Netherlands; use the Dutch national Guide for reporting. UK-side duties require the UK Guide.
+5. **Italian company → Spanish company, EUR 3,000 design, Spanish VAT number fails VIES:** hold the conclusion while resolving Article 18 status/use/establishment evidence. Do not infer Italian VAT or no statement duty from VIES alone. The old EUR 660 tax / EUR 3,660 total are not usable outcomes. Check this point with one of our partner accountants.
 
 ```oa-check
 name: Malta consultant to fully taxable German business
@@ -289,7 +130,7 @@ expected:
   net_service_vat: 0
 ```
 
-For the same qualifying supply, assume that a properly determined national deduction fraction is 40% rather than full deduction. This is an illustrative input, not a statutory deduction percentage or a free election. The customer still accounts for all output tax; choosing to deduct all of it would understate the service's net liability by EUR 570. Check the country's attribution, pro-rata, blocked-input and adjustment rules. Directive Articles 168, 173 and 178(f) govern the framework.
+For the same EUR 5,000 supply, assume a properly established permitted deduction fraction of forty per cent. This is an illustrative input, not a statutory rate or an election; country attribution and restrictions must establish it. Output EUR 950 less input EUR 380 leaves EUR 570; deducting the full EUR 950 would understate liability by EUR 570.
 
 ```oa-check
 name: German recipient with established partial deduction
@@ -311,67 +152,30 @@ expected:
 
 ## When to refuse or refer
 
-
-- **Prohibition 1**  -  NEVER apply reverse charge to B2C transactions.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Prohibition 2**  -  NEVER assume customer status from an unverified identifier; use the lawful Article 18 evidence routes and refer unresolved status.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Prohibition 3**  -  NEVER skip a recapitulative-statement obligation that actually applies under Article 262(1)(c) and national procedure; do not invent one for an exempt service or non-EU supplier.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Prohibition 4**  -  NEVER apply reverse charge to services falling under Art 45-59 exceptions without checking the specific place of supply rule.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Prohibition 5**  -  NEVER infer EU-side liability from the UK's former EU membership: apply Article 44/196 to a non-established UK supplier where its actual conditions hold, and use UK law for UK-side liability.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Prohibition 6**  -  NEVER assume reverse charge nets to zero for partially exempt businesses -- check the customer's input VAT recovery position.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-- **Prohibition 7**  -  NEVER issue an invoice with domestic VAT when reverse charge applies -- this results in double taxation if the customer also self-assesses.  [VAT Directive](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1); [Implementing Regulation](https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1).
-
-
-Refuse a filing conclusion when recipient status, business use, the receiving establishment, exemption, special place rule, supplier intervention or current local reporting fields remain unresolved. Retain the question and identify the country skill or professional review needed; do not turn missing evidence into domestic VAT by default.
+- Unknown status, private/business use, receiving establishment, supplier intervention or service classification: no classification or filing conclusion. Check this point with one of our partner accountants.
+- Exemptions (including cross-border SME relief), VAT groups, domestic reverse charge, goods triangulation and national use-and-enjoyment overlays are non-usable holds until the actual country rules are established. Check this point with one of our partner accountants.
+- Malta return identifiers, Italian tax-period 2026 annual fields/Intrastat-service duties and unsourced national statement periods/statistics are non-usable holds. Old field labels do not supply filing instructions. Check this point with one of our partner accountants.
+- National penalties, interest and return/payment deadlines require the country Guide. The historical common EU ESL-penalty range has no usable conclusion here. Check this point with one of our partner accountants.
 
 ## Filing and payment
 
-For Article 196 services, Article 222 requires an invoice no later than the 15th day of the month after the chargeable event (in words on the page). Apply Article 226 content and the competent national invoice law, record the correct tax point, submit the actual national VAT return and any required services statement, retain receipt and payment reference, and reconcile self-assessed output with permitted input deduction. A zero net amount does not remove reporting. National procedures, deadlines, late-filing/late-payment penalties and interest are country-specific; unresolved fields are not completed by analogy. The exact national rates and service-specific relief must come from the country overlay.
+Resolve the evidence and holds first. Apply the actual national tax point, return and statement periods, invoice deadline, fields, deduction formalities and payment date. Reconcile output with permitted input, and retain the invoice, status evidence, submitted returns/statements and payment receipts. A zero arithmetic balance is not a completed reporting process.
 
 ## Completion checklist
 
-
-**Step 7: Common Mistakes [T1]**  _([Step 7: Common Mistakes [T1]](https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1))_
-
-| # | Mistake | Correct Treatment |
-| --- | --- | --- |
-| 1 | Applying reverse charge to B2C supplies | Article 196 requires its recipient/service conditions; an exclusively private customer needs the applicable B2C place/exemption rules, not an automatic home-rate result.  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 |
-| 2 | Not reporting on the EC Sales List | Check Article 262(1)(c), including the exempt-in-customer-state exclusion, and national procedure. Non-filing triggers penalties.  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 |
-| 3 | Customer forgets to self-assess both output AND input VAT | Report the output liability and only the permitted input deduction. Zero net tax requires full same-period entitlement; omission of output can be a reporting defect even when eligible input offsets it.  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 |
-| 4 | Not verifying the customer's VAT number via VIES | Establish customer status under Regulation Article 18. Invalid VIES does not alone settle place, liability or the pending-registration evidence route.  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 |
-| 5 | Applying reverse charge to property-related services | Article 47 puts the service at the property. Article 196 does not determine liability, but national recipient liability can apply under Article 194.  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 |
-| 6 | Confusing "zero-rated" with "exempt" | Article 44 determines place and Article 196 liability; this is not a universal zero rate. Any exemption and the supplier's deduction entitlement need their own tests, including Article 169.  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 |
-| 7 | Applying reverse charge to post-Brexit UK transactions | For an EU recipient of an Article 44 service, Article 196 can apply to a non-established UK supplier. For a UK recipient use UK law. The original 2020 Brexit dates do not establish a supplier-location exclusion in Article 196.  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 |
-| 8 | Customer in a partially exempt business not adjusting input VAT | Deduct only input attributable to deductible activities under the country's direct-attribution and mixed-use rules. A partly exempt business can still fully deduct a service used exclusively for eligible taxable supplies; exempt turnover alone does not fix this service's deduction fraction.  https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 |
-
+Confirm status/use; identify the actual establishments; apply the special-place and exemption tests; determine liability; apply the competent invoice rules; report output and only eligible input; submit the actual required services statement. Do not treat supplier no-VAT invoicing as a zero rate, a failed VIES check as domestic VAT, or a property/event exception as proof that no national reverse charge can apply.
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 ## Sources
 
-| Source and actual scope read | URL | Read on |
+| Source / bounded scope | URL | Read on |
 |---|---|---|
-| VAT Directive, read for Articles 43-59c (place/status and exceptions), 64-66 (tax points), 168-178 (deduction framework), 192a-196 (liability), 214 (identification), 222/226 (invoicing), 262-264 (statements) | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 | 2026-11-14 |
-| Implementing Regulation, read for Articles 18-24 (status/use/establishment), 31a-33 (property/events), 53-54 (supplier intervention) | https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 | 2026-11-14 |
-| Germany UStG, read for section 12(1) standard rate and neighboring reduced-rate scope | https://www.gesetze-im-internet.de/ustg_1980/__12.html | 2026-11-14 |
-| Germany ELSTER 2026, read for recipient-liability/outgoing-services and input-tax instructions | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_ustva_2026 | 2026-11-14 |
-| France 2026 CA3 notice, read for service place/liability, DES, E2, A3, rate/output and deduction instructions | https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf | 2026-11-14 |
-| Malta Cap.406, read for Article 19 standard-rate scope; national return fields not confirmed | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 | 2026-11-14 |
-| Slovakia official 2026 Act, read for section 27 standard/reduced-rate scope | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Sprievodca/Sprievodca_danami/2026/2026.01.13_DPH_2026.pdf | 2026-11-14 |
-| Slovakia DPHv25, read for recipient-liable services rate-specific rows and deduction aggregates | https://pfseform.financnasprava.sk/Formulare/eFormVzor/DP/form.616.html | 2026-11-14 |
-| Slovakia tax-return guidance, read for exclusion of transactions with place outside Slovakia | https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/danove-priznanie | 2026-11-14 |
-| EU Your Europe, read for all member-state standard rates and regional/rate-category warnings | https://europa.eu/youreurope/business/finance-and-tax/vat/vat-rules-rates/index_en.htm | 2026-11-14 |
-| Germany BMF 2026 forms, read for USt1A rows 30-35 and 41, the EU-established/other supplier branches and adjacent notes | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-vordruckmuster-USt-voranmeldung-2026.pdf?__blob=publicationFile&v=7 | 2026-11-14 |
-| France actual CA3 2026 form, read for A3/E2 and standard output 08/eligible service input 20; notice supplies the conditions | https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5377.pdf | 2026-11-14 |
-| Italy IVA 2026 instructions, read for tax-period 2025 label and VE34/VF1-VF13/VJ3 with neighboring scope; 2025-2026 filing cycle only | https://www.agenziaentrate.gov.it/portale/documents/20143/9602686/IVA_ANNUALE_2026_istr.pdf/2a42fb92-1b76-229a-d0f5-06069d79b514?t=1768504755711 | 2026-11-14 |
-| C-647/17 (Srf konsulterna), read for full judgment paragraphs 1-37 and operative part from official PDF text returned by web retrieval; fresh URL currently redirects to generic OJ | https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=ecli%3AECLI%3AEU%3AC%3A2019%3A195 | 2026-11-14 |
-
-Not yet confirmed: current Malta return identifiers and national service-statistics/ESL periods not expressly sourced here; Italian annual fields for tax period 2026 (the available IVA 2026 source is the 2025-2026 filing cycle); the old country-field cells below are retained solely as unresolved historical claims and are not filing instructions. The old generic ESL-penalty range EUR 50 to EUR 5,000+ has no established common EU legal basis and must not be used. National exemptions, including any qualifying SME exemption, VAT-group effects, deduction restrictions and use-and-enjoyment overlays must be checked for the actual case. No national field unsupported below is implied verified by the EU Directive.
-
-### Preserved unresolved country cells from the original
-
-- Not confirmed for 2026; old cell only: Malta (MT) ; Box 1 (EU supplies) ; Quarterly ESL to CFR
-- Not confirmed for 2026; old cell only: Italy (IT) ; VE34 (operazioni non soggette per carenza del requisito di territorialità) ; Elenchi Intrastat servizi, monthly or quarterly
-- Not confirmed for 2026; old cell only: Malta (MT) ; Box 9a (EU services) ; Box 3 / Box 6 ; Box 13a ; Zero (if fully taxable)
-- Not confirmed for 2026; old cell only: Italy (IT) ; VJ3 (acquisti di beni e servizi da soggetti residenti all'estero) ; VJ3 (output) ; VF1-VF13 by rate (input) ; Zero (if fully taxable)
-
-Confirmed corrections: the old Slovakia supplier row 15 and recipient rows 11/12/output 11/12/input 20 are replaced in usable instructions by the opened current form and authority guidance above. The old post-Brexit exclusion and zero-rate terminology are corrected in the same topics, not silently carried into the unresolved field register.
+| VAT Directive: Articles 28, 43–45, 47–50, 53, 55–57, 64–66, 168, 173, 178, 192a–196, 219a, 222, 226/226a, 262–264 | https://publications.europa.eu/resource/cellar/03c42d77-512a-11f0-a9d0-01aa75ed71a1.0007.02/DOC_1 | 2026-11-27 |
+| Implementing Regulation: Articles 18–22, 31a–33, 53–54 | https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 | 2026-11-27 |
+| Germany UStG section 12 and 2026 USt1A form branches; completed Germany proof reused within these scopes | https://www.gesetze-im-internet.de/ustg_1980/__12.html ; https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-vordruckmuster-USt-voranmeldung-2026.pdf?__blob=publicationFile&v=2 | 2026-11-26; applicability checked 2026-11-27 |
+| France Article 278, CA3 notice and form: ordinary service fields, standard rate, eligible input and DES | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026950057/2026-01-21 ; https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf ; https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5377.pdf | 2026-11-27 |
+| Malta Cap.406 Article 19 and S.L.406.14 regulation 3(3); completed Malta reads reused for standard rate and conditional services-only recap option | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 ; https://legislation.mt/eli/sl/406.14/eng/pdf | 2026-11-26 / 2026-11-23; applicability checked 2026-11-27 |
+| Slovakia 2026 Act sections 27, 49–51, 69; DPHv25 service/deduction fields; foreign-place exclusion | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Sprievodca/Sprievodca_danami/2026/2026.01.13_DPH_2026.pdf ; https://pfseform.financnasprava.sk/Formulare/eFormVzor/DP/form.616.html ; https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/danove-priznanie | 2026-11-27 |
+| Italy Article 16 rate; IVA 2026 instructions' year and historical fields only, not confirmation of tax-period 2026 annual fields | https://www.normattiva.it/atto/caricaDettaglioAtto?atto.articolo.numero=16&atto.articolo.sottoArticolo=1&atto.articolo.tipoArticolo=0&atto.codiceRedazionale=072U0633&atto.dataPubblicazioneGazzetta=1972-11-11 ; https://www.agenziaentrate.gov.it/portale/documents/20143/9602686/IVA_ANNUALE_2026_istr.pdf/2a42fb92-1b76-229a-d0f5-06069d79b514?t=1768504755711 | 2026-11-27 |
+| C-647/17 official operative part; not a claim that all paragraphs were re-read | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A62017CA0647 | 2026-11-27 |
