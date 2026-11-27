@@ -4,214 +4,252 @@ description: >
   Prepare a British Columbia Provincial Sales Tax registration and return workpaper
   for 2026. Establish seller and platform duties, local small-seller versus remote
   thresholds, goods/software/services scope, special rates, actual FIN400 boxes,
-  self-assessment, commission, adjustments and filing. Keep separate MRDT,
-  federal GST/HST, sector-specific and disputed exemption workpapers.
-version: 2.0
+  self-assessment, commission, adjustments and filing. Preserve the original
+  Q2 2025 case as conditional arithmetic with its filing outcome on hold.
+version: 2.1
 jurisdiction: CA-BC
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 type: computation
 ---
 
-# British Columbia provincial sales tax v2.0
+# British Columbia provincial sales tax
 
 ## Scope
 
-Use for the separate British Columbia retail sales tax under the Provincial Sales Tax Act, S.B.C.2012,c.35, as amended. PST is not a value-added tax and has no general input-tax-credit mechanism. Federal GST/HST registration, place of supply, exemptions, zero-rating and input tax credits require their own `canada-gst-hst` workpaper. Being registered for one tax does not automatically settle the other, and a PST-exempt transaction is not thereby GST-exempt. [BC general scope](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide), [CRA taxable/zero-rated distinction](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html).
+Prepare a 2026 British Columbia PST registration and FIN400 return workpaper. PST is a separate retail sales tax; there is no general PST input-tax-credit system. Prepare federal GST/HST through `canada-gst-hst`, including its own registration, place, export and input-credit tests. A provincial exemption does not determine federal treatment. [BC scope and business assets](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide).
 
-The ordinary method covers supported taxable retail sales/leases, software/services, purchases for own use, actual FIN400 preparation and reconciliation. Accommodation has separate PST and MRDT returns; vehicles, real-property/affixed machinery, industry, insolvency and Indigenous issues retain their specific investigations below. A second province's registration is not a reason to abandon the supported BC work, but the other province needs its own return and source rules.
+Use the supported registration, classification, calculation and filing steps below. The exception table preserves the specialist jobs; its **non-usable holds** prohibit a tax or exemption conclusion until the identified determination is resolved. No filing, payment or registration is performed by this Guide. The original Cascadia Cloud Inc. Q2 2025 facts remain in Worked cases; they are not silently moved to 2026.
 
-| Quick reference | Entry |
-|---|---|
-| Currency | CAD; convert at the supported official exchange-date basis, not an arbitrary period average |
-| Administrator | British Columbia Ministry of Finance |
-| Return | Provincial Sales Tax Return, FIN400; MRDT is FIN401, not another FIN400 box |
-| Account/access | Actual PST registration number and eTaxBC authority; no sign-in or filing is performed by this method |
-| Registration | eTaxBC or actual permitted registration application; don't invent an account or registration based on an untested threshold |
-| Original example | Cascadia Cloud Inc., Vancouver, preserved with corrected tax/form assumptions |
+| Quick reference | Entry | Official source |
+|---|---|---|
+| Ordinary taxable goods/software/services | 7%, subject to category, base, location and exemption tests below | [Act ss.34,105](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03) and [software](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_04) |
+| Administrator, portal and return | BC Ministry of Finance; eTaxBC; PST FIN400. Accommodation MRDT uses separate FIN401 | [Return guide](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide) |
+| Reporting period | The director specifies the account's period; obtain the assignment | [Act s.1, reporting period](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_01) |
+| Currency | CAD; Bank of Canada daily rate for the date PST is paid or payable, whichever comes first | [Return guide](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide) |
 
 ## Ask the client first
 
-1. Obtain legal/trade name, seller location, actual PST account, registration dates, business/fulfilment premises, current assigned filing period, other locations/primary account and representative authority.
-2. Obtain invoice-level goods/software/service type, transaction/due/payment date, price, separate taxes, discounts, shipping/customs and other charges, customer use/device/location and delivery evidence. Obtain exempt/resale and special-use documents, not just a B2B label.
-3. For remote sellers, obtain Canadian versus foreign location, solicitation/orders/delivery/inventory facts, preceding and reasonably estimated following revenue using the correct statutory population. For platforms, obtain the legal role, payment collection, seller transactions and actual collection/remittance evidence; a trade name does not prove the role.
-4. Reconcile taxable, exempt, outside-BC and Canadian sales; PST charged or levied but uncollected; tax collected in error; purchases and inventory withdrawals for own use; tax already paid; self-assessment; platform exclusions and adjustments.
-5. Obtain accommodation address/dates, actual accommodation and MRDT/Major Events MRDT eligibility/rate, platform/host collection evidence and charges. Obtain vehicle class, purchase history, GST-registrant versus private transaction, import/gift/lease facts and original price/tax-rate value for special cases.
-6. Obtain customer refunds/credits, bad-debt write-offs and subsequent recoveries, previously remitted tax, prior claims, assessments, closure/asset-sale and clearance documents. What return and settlement may an authorised human approve? Keep transmission and payment acknowledgements separate.
+Obtain legal/trade name, seller location, business/fulfilment premises and inventory, actual account/registration dates, assigned period and primary/secondary-account status, representative authority and any prior return. Obtain invoice-level supply descriptions, due/payment/delivery dates, tax-exclusive prices, discounts, freight/customs and other charges, customer/device location and use, exemption/resale evidence, and own-use purchases or inventory withdrawals. Do not infer a classification from a vendor brand, B2B label or customer address.
+
+For remote sellers collect solicitation, BC-origin orders, delivery and preceding/estimated-following revenue by statutory population. For platforms establish contractual role, payment collection and actual reporting. Obtain accommodation address, occupancy and charges; vehicle class, price/valuation, seller/import/gift/lease history; and refund, write-off, recovery, tax-remittance and closure records. Reconcile supported rows before requesting an authorised human's approval to transmit and pay.
 
 ## The method, step by step
 
-### Rates, bands and thresholds
+### 1. Establish registration and collector
 
-| Item | Rate, amount and conditions under current law | Official source |
+**Local sellers.** Apply the vendor/lessor requirements in s.169; an only-exempt seller is excepted under the relevant subsection. There is no universal local CAD10,000 registration exemption. A vendor ceasing to be a small seller must register by the last day of its first month as a vendor. [Act s.169](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08#section169).
+
+**Small seller: all conditions.** The person must be located in BC; sell eligible goods/software or provide taxable services at a sale in BC; neither maintain established business premises nor regularly make the specified retail sales/provide services from established commercial premises; have eligible retail/service gross revenue at most CAD10,000 in the previous 12 months and a reasonable estimate at most CAD10,000 for the following 12 months. It must not knowingly have made non-retail eligible goods/software sales in the previous 12 months. It must not sell vehicles, aircraft, boats, vapour products, fossil-fuel combustion systems, tobacco, other excluded goods or cannabis in the ordinary course, or liquor other than under a permit or by auction. It cannot be a lessor, independent sales contractor, specified supply-and-affix contractor, accommodation vendor within paragraph (d) of vendor, or facilitator; it must not be registered or required by ss.169–171 to register. Apply the statutory eligible-goods and vendor definitions, not just revenue. A qualifying small seller pays PST on resale purchases and must not levy or collect PST, subject to the liquor-permit exception in s.182(1). [Act s.1 definitions](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_01), [s.183](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08#section183), [BC explanation](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide).
+
+**Remote routes are separate.** For ordinary-course Canadian sellers outside BC, s.172(1) covers solicitation, BC-origin orders, sales for the specified BC use/consumption and delivery in BC; all those conditions apply and this route has no revenue safe harbour. Section172(1.1) covers BC-origin orders, the specified sale/use and delivery, plus the minimum-revenue test or vapour products. Section172(2.1) separately covers solicitation and BC-origin orders for software used on/through/with a device ordinarily in BC or telecommunications for the specified BC use/benefit. The relevant only-exempt-supplies exceptions apply. [Act s.172](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08#section172).
+
+For a seller outside BC, s.172.1(1) separately requires registration for BC-origin goods orders, the specified BC use/consumption and goods held in BC inventory when sold. Section172.1(1.1) covers BC-origin software/telecom orders, supplies in response meeting the minimum revenue, and specified BC device use/benefit; only-exempt supplies are excepted. Lease activity has its own s.169(1.1)–(2) test; do not apply a remote sales threshold to it. [Act ss.169,172.1](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08).
+
+| Minimum revenue for routes that expressly use s.172.2 | Population and boundary | Official source |
 |---|---|---|
-| Ordinary goods/software/taxable services | 7% on the statutory taxable base; not every service is taxable | [BC scope/rates](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide), [Act s.34](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03) |
-| Liquor | 10%; its own category and base, not an imported Saskatchewan liquor-tax rule | [Act s.34(2)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03), [BC](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide) |
-| Vapour products | 20% PST; distinguish any other applicable duties | [Act s.34(11)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03), [BC](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide) |
-| Fossil-fuel combustion systems | 12%, subject to actual defined scope/exemptions | [Act s.34(12)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03) |
-| Short-term taxable accommodation | 8% PST, with separate applicable MRDT and any Major Events MRDT | [BC accommodation explanation](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide) |
-| Ordinary non-ZEV passenger vehicle, qualifying GST-registrant/import transaction | 7% below CAD 55,000; 8% from 55,000 below 56,000; 9% from 56,000 below 57,000; 10% from 57,000 below 125,000; 15% from 125,000 below 150,000; 20% at 150,000 or more. Whole applicable price at the selected rate, not progressive slices | [Act s.34(4)-(6)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03) |
-| Ordinary private passenger vehicle transaction | 12% below CAD 125,000; 15% from 125,000 below 150,000; 20% at 150,000 or more, subject to statutory exceptions and valuation. Not an across-the-board 7% private-sale rule | [Act s.34(3)-(3.1)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03) |
-| Qualifying ZEV different thresholds | GST-registrant/import case uses 7/8/9/10% boundaries CAD 75,000/76,000/77,000, then 15/20% at 125,000/150,000; verify actual definition/transaction, not a universal vehicle exemption | [Act s.34(6.1)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03) |
-| Boats/aircraft | Statutory ordinary distinction 7% versus 12%, depending on actual transaction/import/gift facts; not invented vehicle-like 7/8/10/12% bands | [Act s.34(3)-(5)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03) |
-| Remote minimum revenue | More than CAD 10,000 preceding or reasonably estimated following 12months, **only for the statutory routes to which s.172.2 applies**; actual revenue population differs for Canada/foreign sellers | [Act ss.172-172.2](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08) |
-| Local small seller | At most CAD 10,000 previous and estimated next 12months plus all other small-seller conditions; no universal small-business exemption | [BC eligibility](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide), [registration bulletin](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/publications/pst-001-registering-to-collect-pst.pdf) |
-| Actual FIN400 commission | BoxB at most CAD 22: that amount; over 22 through 333.33:22; over 333.33:6.6% of BoxB capped CAD 198, only if timely filing/full payment and the permitted primary-account claim | [Actual FIN400](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/forms/fin-400-provincial-sales-tax-return.pdf), [return guide](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide) |
+| Located in Canada outside BC | BC gross revenue from all retail goods sales/leases and all software/telecom sales/provisions: **greater than CAD10,000** in preceding 12 months OR reasonable estimate greater than CAD10,000 in the following 12 months | [s.172.2(1)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08#section172.2) |
+| Located outside Canada | BC gross revenue from all software/telecom sales/provisions: **greater than CAD10,000**, with the same preceding OR reasonable-estimated-following test | [s.172.2(2)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08#section172.2) |
 
-### Establish the registration and collection route
+A facilitator ordinarily operates/owns/controls a marketplace, facilitates sellers' goods/software/non-legal-service transactions and collects payment; the definition also includes prescribed persons. Registration under s.172.3 covers the listed BC goods, software/device, accommodation and other taxable-service transactions, excluding legal services. It is not required if the defined gross value **made or facilitated** is CAD10,000 or less in the preceding 12 months **OR** the reasonable estimate is CAD10,000 or less in the following 12 months. The joint-platform exception requires another joint operator to be registered and collect all required tax; only-exempt facilitated supplies are also excepted. This is not the remote seller's OR trigger. [Act s.1](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_01), [s.172.3](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08#section172.3).
 
-1. Apply the actual local vendor/lessor/software/service rules and exemptions. A qualifying local small seller has premises, revenue, activity and other conditions; it pays tax on its resale purchases and must not charge PST as a collector under that route. A shop does not get a universal revenue exemption. An exemption from registration is different from whether a purchaser owes PST. [Act ss.169,175,183](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08), [BC small-seller explanation](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide).
-2. For a Canadian seller outside BC, distinguish the solicitation/orders/delivery route, the separately thresholded orders route, and software/telecom routes. The solicitation route is not conditioned on the old universal revenue safe harbour. Goods held in BC inventory and leasing create their own statutory routes. For foreign sellers, don't apply the Canadian goods revenue population mechanically to software/telecom or invent the same goods-nexus test for every foreign transaction. [Act ss.172-172.2](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08), [actual registration scenarios](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/publications/pst-001-registering-to-collect-pst.pdf).
-3. Under s.172.2 the minimum-revenue population for a Canadian remote seller includes the stated goods/leases/software/telecom receipts, while the foreign seller's stated population is software/telecom. Apply the real statutory conditions and strictly-greater boundary; do not round an exact threshold into a trigger. Other routes, including vapour, inventory, leases and specific services, can still require registration. [Act s.172.2 and adjacent routes](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08).
-4. For an online marketplace facilitator, test the statutory definition, facilitating role, payment collection and s.172.3 exemptions, including the actual preceding/following-period wording and jointly operated platform exception. The old “CAD 10,000+ on any platform” is not the full law, and the old accommodation-platform CAD 2,500 shortcut is not the current general framework. Obtain actual transaction/role evidence; don't classify a business by a platform brand. [Act ss.172.3,179.3](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08).
-5. Where the statutory facilitator rule applies, the facilitator is the collector and the seller does not collect again, subject to actual exceptions, including legal services and specified outside-Canada property. Preserve seller information and possible statutory shared liability; do not promise a platform always removes every host/seller obligation. A seller's own channels remain separately tested. [Act s.179.3](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08), [actual return platform instructions](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide).
-6. Prepare the real registration application, legal/entity/contact/industry/expected sales and collection start facts. Retain the approved number and assigned period. Registration numbers are not transferable; an incorporation, asset deal or closure needs an actual account determination. Do not submit an application speculatively. [Act ss.168,174](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08), [registration bulletin](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/publications/pst-001-registering-to-collect-pst.pdf).
+Where s.179.3 applies to a registered/required-to-register facilitator, it is the collector and the seller is not; do not collect twice. The outside-Canada goods exception and possible prescribed circumstances remain. Legal services are outside this facilitator definition. The seller and facilitator have the statutory joint-and-several liability on the listed assessments, penalties and interest; obtain collector evidence rather than promising all seller obligations disappear. Marketplace-service fees to sellers require their separate s.172.4/134.3 test: **non-usable hold** on an unresolved fee/role determination. Check this point with one of our partner accountants. [Act ss.172.4,179.3](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08).
 
-### Classify the supply, base, place and exemption
+Prepare the actual application and required information through eTaxBC or the authority's permitted application route; retain the issued account and restrictions. Registration numbers are not transferable. Do not assume an incorporation, acquisition or closure transfers the account. [Act s.168](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08#section168).
 
-7. Identify the actual statutory category: tangible goods, software, related services, legal, accommodation, online marketplace or telecommunications. The goods base includes more than a short list of consumer products. Software/device use and telecommunications/digital-media classification need the actual access, delivery, use and location facts; a generic cloud/vendor label is not enough. **Streaming/digital media can be taxable telecommunications**; the old blanket “Netflix only GST, no PST” was wrong. [BC category definitions and examples](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide), [registration software/telecom examples](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/publications/pst-001-registering-to-collect-pst.pdf).
-8. For 2026 professional services, distinguish the enacted tax provisions from exemptions effective on the transaction date. The separately read **B.C.Reg.161/2026** exempts the specified accounting, architectural, engineering, non-residential real-estate and security services from the newly identified divisions effective 1October 2026. Do not present an earlier budget proposal or commencement provision as a current tax without that exemption. Existing taxable legal or other components still need their own test. [Actual amending regulation, sections 82.1-82.5](https://www.bclaws.gov.bc.ca/civix/document/id/bcgaz2/bcgaz2/v69n16_161-2026).
-9. Establish the statutory purchase/lease/base and timing, generally paid or due earlier under the actual rules. With limited exceptions PST is calculated before GST, not on a supposed GST-inclusive accommodation base. Reconcile delivered/laid-down cost and each taxable charge, discount, credit, barter or related-party value; a tax rate does not establish the base. A business address alone does not prove that every software licence is used in BC. [BC charging, location and purchase guidance](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide), [FIN400 currency/base instructions](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide).
-10. Apply special product/transaction rates before computing. Vehicle rate selection depends on its legal class, original price or lease tax-rate value, acquisition history, modified/ZEV and private-versus-registrant/import facts. A high price selects a rate on the applicable whole base, not a marginal surcharge on the excess. Boats/aircraft have their own transaction rules. Get a specialist for disputed valuation or industry cases; no invented private-sale equalisation. [Act ss.34-36](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03).
-11. Preserve every original exemption investigation: food/soda, prescriptions/medical, children's clothing/footwear, school items, books, residential energy/electricity, private used goods, manufacturing/production machinery, resale, First Nations/reserve, Crown/public body, exports and residential accommodation. Test **BC's** actual definition, use and documents; federal zero-rating, an ISBN, a child's presence, customer status, government logo or any B2B invoice is not automatically the exemption. Some goods are exempt without certificates, others require defined records. [BC exemption categories and documentation distinctions](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide).
-12. Contractor supply-and-affix, improvements and affixed machinery are not all the same asset/property question. The ordinary contractor pays tax on materials/inputs, but specific agreements, retail supplies, leases and affixed machinery rules can differ. A sale of land is not a licence to treat every accompanying asset as exempt. Obtain contract, installation, title/use and actual PE/property facts before the specialist determination. [BC contractor/affixed-machinery explanations](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide), [registration contractor cases](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/publications/pst-001-registering-to-collect-pst.pdf).
-13. For mixed bundles, identify the actual goods/software/services, independent optionality, prices and applicable statutory exemption/apportionment rule. The old blanket “single invoice taxes everything” and “always tax the ambiguous component” do not establish law. Retain the actual bundle workpaper; unresolved material scope is explicitly held rather than charging an invented tax.
+### 2. Classify the supply, base and rate
 
-### Purchases, GST/HST and accommodation are separate workpapers
+Goods, software, related services, legal services, accommodation, telecommunications and online-marketplace services require their own category/location/exemption determination. Software includes SaaS, infrastructure as a service and APIs; a business address alone does not establish BC device use. Digital music/movies can be telecommunications; the former blanket no-PST streaming outcome is withdrawn. [Act definitions](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_01), [BC scope](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide).
 
-14. Reconcile taxable business/personal-use purchases, imports, inventory withdrawals, promotional items and leases on which the supplier did not collect PST. Assess the actual location, tax-paid/exempt status and base; self-assess supported liability in FIN400 purchases. Do not assume every cloud invoice is software/telecom merely because the old example named AWS. There is no general PST input credit; a specific exemption, refund or tax-paid adjustment requires its own basis. [BC purchases/imports/inventory](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide), [return BoxesE-F](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide).
-15. Prepare GST/HST separately through `canada-gst-hst`; reconcile timing/place/base differences rather than forcing provincial and federal sales lines to agree. A zero-rated export has a zero federal output rate when its actual requirements are met, not “5% on US-zero-rated sales.” Federal tax on children's clothing or another provincial-exempt item must be separately classified. A nonresident customer's address alone is not export eligibility. [CRA ordinary, zero-rated and input-credit rules](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html).
-16. For accommodation, establish the actual property, continuous occupancy, exemptions, bundled/extra charges and collector. Apply the correct accommodation/MRDT and any Major Events MRDT legal period/rate, and separately the federal supply/collector rules. A registered PST marketplace facilitator's role does not prove that it also collects the host's GST. [BC accommodation/platform guidance](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide), [actual separate-return instructions](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide).
-17. MRDT is reported on **FIN401**, not FIN400. Vancouver's government-described Major Events MRDT is 2.5% in addition to its 3% MRDT and 8% PST for the stated February 2023-January 2030 period; it is not a merely voluntary industry destination fee. Other municipality/rate/period facts must come from the actual current designation, not the old illustrative city list. Paper Major Events returns have the electronic restriction described by the government. [BC MRDT/Major Events and filing explanation](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide).
-18. Retain the original Vancouver/Victoria/Whistler/Tofino/Kelowna rate-checking job, and any actual destination marketing fee. Their current local designations and private fee/base were not all verified here; do not copy a presumed “most other places 2%” rule. A private fee and the statutory Major Events MRDT are distinct.
+| Category in 2026 | Rate and operative boundary | Official source |
+|---|---|---|
+| Ordinary taxable goods | 7% of statutory purchase price; exemptions and special rates take priority | [Act s.34(1)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03#section34) |
+| Taxable software | 7% under the applicable purchase/use provision; establish device use and exemptions | [Act ss.104–107](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_04) |
+| Liquor; vapour products; fossil-fuel combustion systems | Respectively 10%;20%;12% of the statutory purchase price for the applicable category | [Act s.34(2),(11),(12)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03#section34) |
+| Taxable accommodation | 8% PST; MRDT and Major Events MRDT are separate determinations/returns | [Act s.122](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_05#section122) |
+| Non-ZEV passenger vehicle within s.34(4) GST-registrant taxable-supply/import/prescribed route | Rate selected by **original purchase price**: 7% below CAD55,000;8% at 55,000–<56,000;9% at 56,000–<57,000;10% at 57,000–<125,000;15% at 125,000–<150,000;20% at 150,000+. Apply rate to the whole statutory purchase price | [s.34(4)–(6)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03#section34) |
+| Passenger vehicle in residual/private route | Subject to s.34 exceptions:12% below original purchase price CAD125,000;15% at 125,000–<150,000;20% at 150,000+. Do not assume invoice consideration is the statutory base or original purchase price | [s.34(3)–(3.1)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03#section34) |
+| Qualifying ZEV passenger vehicle within s.34(4) route | By original purchase price:7% below CAD75,000;8% at 75,000–<76,000;9% at 76,000–<77,000;10% at 77,000–<125,000;15% at 125,000–<150,000;20% at 150,000+ | [s.34(6.1)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03#section34) |
+| Boats/aircraft | Residual purchase route12%; s.34(4) qualifying registrant taxable-supply/import/prescribed route7%, subject to exemptions. No vehicle-style progressive bands | [s.34(3)–(5)](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03#section34) |
 
-### Prepare the actual FIN400 and settlement
+Vehicle lease tax-rate values, gifts, modifications, private-sale valuation and specific exemptions require their own determination in the exception table; the purchase-rate table is not a complete vehicle workpaper.
 
-19. Obtain the actual assigned period. The current government table describes more than CAD 12,000 annual PST as monthly only; more than 6,000 through 12,000 monthly/quarterly; more than 3,000 through 6,000 quarterly/semi-annual; at most 3,000 quarterly/semi-annual/annual. Follow the account assignment and any approved variation. A business that should register but does not has the government's monthly rule. The old 11,940 boundary and “negative collections means annual” were invented. [Current reporting-period guide](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay).
-20. Complete the actual return worksheet and transfer its required fields, not the old fabricated A-G map. All values are CAD; use the return guide's Bank of Canada date basis for currency. Include collectable amounts even if the customer has not yet paid. Do not net an unsupported adjustment against collections. [Actual FIN400](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/forms/fin-400-provincial-sales-tax-return.pdf), [guide](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide).
+From 1October2026, accounting, architectural, engineering, non-residential real-estate and security services are exempt under the respective new Part5 divisions. Do not charge a budget-proposed expansion after ignoring these operative exemptions. Separately classify existing taxable components such as legal services. [B.C.Reg.161/2026, ss.82.1–82.5 and commencement](https://www.bclaws.gov.bc.ca/civix/document/id/bcgaz2/bcgaz2/v69n16_161-2026).
 
-| Actual FIN400 box | Workpaper |
-|---|---|
-| A | Total taxable, non-taxable and exempt sales/leases **in Canada**, excluding taxes and actual facilitator-reported sales under the current guide; not merely BC sales |
-| B | PST collected or levied/collectable on sales/leases, including tax charged in error unless properly refunded/credited; applicable special amounts need actual classification |
-| C | Permitted timely primary-account commission; use the actual piecewise worksheet, not 1.32% |
-| D | B minus C, intermediate net sales tax; not a self-assessment field |
-| E and F | Untaxed taxable own-use purchase/lease cost and its actual PST, respectively |
-| G | D plus F, intermediate liability before supported adjustments |
-| H and I | Previously remitted tax on qualified bad-debt write-offs and actual customer refunds/credits, respectively |
-| J and K | H plus I; then G minus J as total due, with separate remittance/certification and any revised-return indication |
+Determine statutory purchase/lease price, freight and other charges, discounts, credits and any valuation adjustment before applying a rate. PST generally applies before GST; GST-inclusive accommodation is not the default base. The standard timing is paid or due, whichever first, with instalment allocation and the property-transfer backstop in s.28(4)–(5); use ss.29–33 for exceptions/due-date rules. [Act price definitions](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_01), [timing](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_02), [BC tax base](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide).
 
-All box meanings above are from the [actual FIN400](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/forms/fin-400-provincial-sales-tax-return.pdf) and [current return guide](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide). The online entry prompts and paper worksheet are not proof of a successful submission.
+For a supported mixed BC/outside-BC business software purchase under s.107, tax is7% × purchase price × estimated BC usage/estimated total usage, using a method the director considers reasonable. The prescribed estimate period is the shorter of three years from purchase (s.107(1)(b)(i)) or first mixed use ((b)(ii)), and the term of the right if only a right to use was purchased. Section108 requires the later usage determination/adjustment. Exclude s.112 small-seller purchases from s.107. Do not allocate a cloud invoice just by customer address or a guessed consumption percentage. [Act ss.107–108](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_04), [Reg.96/2013 s.29](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/1295368594#section29).
 
-21. For commission, establish on-time full filing/payment and the allowed account. It is based on sales/lease collectable tax, not self-assessed purchases or MRDT. Do not claim it for each branch independently. Reconcile refunded/corrected sales and the actual worksheet; the cap alone does not define the formula. [Actual worksheet](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/forms/fin-400-provincial-sales-tax-return.pdf), [guide](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide).
-22. For bad debt, retain invoice, original tax/remittance, actual write-off and proportional eligible tax. The guide requires the adjustment in the write-off period; otherwise its separate refund route/time limit applies. Later recovery requires reinstating the attributable tax. Customer refund/credit adjustments have their own actual period and refund conditions; do not deduct unpaid disputed tax twice. [Return adjustments and formula](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide).
-23. Reconcile total due to approved payment, account arrears/credit allocations, bank processing cut-off and actual receipt. Do not pay an unrelated audit assessment/fee through the period return; follow its separate notice. A payment confirmation does not prove a return was filed. Retain the return, authority, accepted acknowledgement, payment and account statement. [Return/payment instructions](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide), [actual form](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/forms/fin-400-provincial-sales-tax-return.pdf).
-24. Calendar the last day of the following month for ordinary calendar-month periods, with applicable extensions. The guide's approved non-calendar reporting period uses its separate 30-day rule. Mail evidence and electronic/bank evidence follow the actual timeliness rules, not an invented universal receipt/postmark rule. Nil returns remain required until the account is validly closed. [Guide filing dates and closure](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide).
-25. Retain sufficient sales, tax, purchases, inventory/use, commission, exemption, shipping, refund/write-off and platform records. The government describes a five-year general retention with outstanding appeal/permission and longer exemption-proof needs; don't destroy evidence solely because an age test passed. Prepare actual account changes/FIN357 closure and remaining returns when required. [Records and closure](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide), [closure](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide).
+Food/soda and electricity exemptions are BC rules: s.139 excludes soda, the specified dispenser beverages and prescribed products; electricity is exempt under s.140.1. Do not import GST grocery definitions or infer an exemption for every food-containing product. Other exemption investigations and mixed bundles are preserved as specific holds below. [Act ss.139–140.1](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_06).
 
-### Asset sales, property, penalties and referrals
+### 3. Reconcile purchases and prepare actual FIN400
 
-Keep the old residential/new/used/commercial property, goodwill, equipment/inventory/software and business-transfer work. Classify each asset under its own statute; a federal business-transfer election does not automatically exempt provincial taxable assets. Obtain the actual clearance certificate and tax liabilities before a business acquisition and reconcile the statutory successor/bulk obligations; the old section 230 citation was not established as the universal rule. Do not promise that a registered buyer acquires all operating equipment tax free. [BC buying/selling a business and clearance explanation](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide).
+Self-assess supported taxable own-use purchases/leases, imports and inventory withdrawals for which PST was not paid; check location, base, prior tax and exemption first. Report the supported untaxed cost in E and tax in F. A vendor name alone does not establish software/telecom liability. [BC own-use rules](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide), [return guide](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide).
 
-Late, non-filer, failure-to-collect and unsupported-adjustment cases can produce distinct tax, penalties, interest and loss of commission. The old universal 10% penalty and unspecified “current” interest are not certified for every failure; obtain the applicable Act/notice, period/rate and payment history. Refer audit defence, disclosure, insolvency/receivership and appeals with their actual deadlines/authority. The government disclosure route is conditional and does not waive all tax-equivalent penalties. [BC audits, appeals and voluntary disclosure conditions](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide).
+| Actual FIN400 box | Transfer from workpaper | Official source |
+|---|---|---|
+| A | All taxable, non-taxable and exempt sales/leases **in Canada**, excluding taxes and marketplace-facilitator sales reportable by that facilitator | [BoxA](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide) |
+| B | PST collectable on taxable sales/leases, including charged but unpaid tax and tax collected in error; include any applicable ICE/rental tax only after its separate determination | [BoxB](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide) |
+| C;D | Eligible commission; then B−C | [BoxesC–D](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide) |
+| E;F | Untaxed taxable own-use purchase/lease cost; then its actual PST | [BoxesE–F](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide) |
+| G | D+F before adjustments | [BoxG](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide) |
+| H;I | Eligible previously remitted tax on bad-debt write-offs; eligible PST refunded/credited to customers | [BoxesH–I](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide) |
+| J;K | H+I; then G−J as total due. A negative total is an account credit | [BoxesJ–K](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide) |
+
+Commission requires the return and full PST payment by the due date. Use only the permitted primary account; where one return covers multiple locations, use that return's aggregate collectable PST. The actual FIN400 worksheet uses sales/lease PST in B, not self-assessed purchases or MRDT. [Actual worksheet](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/forms/fin-400-provincial-sales-tax-return.pdf). [Return guide, BoxC](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide), [Act s.185](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08#section185).
+
+| Eligible B / remitted sales tax for the period | Commission | Official source |
+|---|---|---|
+| CAD0–22 | That tax amount | [Reg.96/2013 s.74](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/1295368594#section74) |
+| CAD22.01–333.33 | CAD22 | [s.74](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/1295368594#section74) |
+| More than CAD333.33 | 6.6% of that tax, maximum CAD198; never the former1.32% formula | [s.74](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/1295368594#section74) |
+
+For bad debts, s.159 requires a qualifying transaction, registration at the transaction date, tax remitted as required, non-payment and a write-off within four years of remitting that tax. Deduct eligible tax in the write-off period. Under Reg.97/2013 s.134 the proportional amount is remitted tax × unpaid amount/total payable; total payable includes all applicable taxes, excludes interest, and unpaid amount excludes interest. Subsequent recoveries restore the attributable tax in B for the recovery period. If the same-period deduction is missed, the separate refund claim has the guide's four-year-from-write-off limit. Never claim twice. [Act s.159](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_07#section159), [Reg.s.134](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/97_2013_00_multi#section134), [BoxH](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide).
+
+Customer refunds/credits in I require previously remitted tax and a legally permitted customer refund/credit. Claim in that period; a missed-period claim follows the separate refund route within four years of refunding/crediting the customer. Do not offset an unpaid disputed invoice without a qualifying adjustment. [Act s.160](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_07#section160), [BoxI](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide).
+
+### 4. File, pay and preserve evidence
+
+Use the account's assigned period: the director's period controls. The Ministry's general ongoing-period table below describes options, not an election overriding the assignment. A person required to register who has not applied reports monthly. Liquor sellers have a separate initial/ongoing assignment process; do not use the general bands to select their period. [Act s.1](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_01), [reporting-period guide](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay).
+
+| Annual PST collectable, general ongoing table | Period options | Official source |
+|---|---|---|
+| More than CAD12,000 | Monthly only | [Ministry table](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay) |
+| More than CAD6,000 through12,000 | Monthly or quarterly | [Ministry table](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay) |
+| More than CAD3,000 through6,000 | Quarterly or semi-annual | [Ministry table](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay) |
+| CAD3,000 or less | Quarterly, semi-annual or annual | [Ministry table](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay) |
+
+The old CAD11,940 bands and automatic annual period for negative collections are withdrawn. If the assignment is unknown, hold filing. Check this point with one of our partner accountants.
+
+For a collector with a period of one or more months, both filing and payment ordinarily fall due on the last day of the following month. A non-calendar period uses30 days after its last day. When a due date falls on a weekend or BC statutory holiday, use the first following business day; mail, bank and electronic timeliness have different rules. [Reg.96/2013 ss.72,77,82–83.1](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/1295368594), [filing instructions](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay).
+
+eTaxBC supports filing/payment; an authorised representative needs actual account access. Mandatory electronic filing/remittance applies at CAD1.5million or more of total Canadian property/service sales or leases in the previous12months, and in director-specified circumstances. Keep return acceptance and payment receipts separately; use separate notices for assessment/fee payments. [Reg.ss.73,78](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/1295368594), [return guide](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide).
+
+Nil returns remain necessary; for closure use eTaxBC or FIN357 and file/pay through the closure date. Retain actual name/address/business change notifications and check s.174's applicable notification/deemed-cancellation route rather than merely stopping returns. [BC closure](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide), [Act s.174](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08#section174).
+
+Retain sales/purchases, tax, exemption, platform, inventory, commission, refund/write-off/recovery and filing/payment records. Reg.s.93 requires five years **from record creation**, subject to authorised earlier destruction; records needed for an appeal must remain until appeals are exhausted. Preserve evidence of an ongoing exemption while it is needed. [Reg.ss.88–93](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/1295368594).
+
+Accommodation in an MRDT area needs separate PST and FIN401 MRDT returns; a single payment may cover both. Any Vancouver Major Events MRDT must follow its separate electronic reporting instructions. Rate/designation/occupancy and federal host/platform determinations remain the specific holds below. [Return guide](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide), [BC MRDT instructions](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide).
+
+Before finalising timing, test the s.33 earliest invoice issue/date, undue-delay and written-payment dates, including its written lease/licence exception. Deposits are not consideration until applied (with the reusable-container rule); conduit supplies, unascertainable price and statutory/written construction holdbacks have s.28(6)–(10) conditions. An unresolved special timing outcome is a **non-usable hold**. Check this point with one of our partner accountants. [Act ss.28,33](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_02).
 
 ## Boundary and exception table
 
-| Original referral/default | Correct response |
+Each row is a **non-usable hold on the named outcome**, not an exemption or permission to charge tax. Complete other supported BC work; separate Saskatchewan, Manitoba, Quebec and other-province returns.
+
+| Preserved investigation | Missing determination and action |
 |---|---|
-| Contractor/property | Obtain actual supply/affix/asset and statutory agreement/exemption work; no blanket retail or no-tax result |
-| Liquor/cannabis/vapour/energy | Apply actual PST category and specialist other-tax/exemption work; do not use another province's levy |
-| Vehicle/boat/aircraft | Obtain actual acquisition/classification/valuation and rate history; private and GST-registrant cases differ |
-| Insurance/financial services | Obtain the actual separate tax statute and supply; no automatic substitution for all PST work |
-| First Nations/reserve | Obtain qualifying recipient, location/delivery and legal exemption evidence; status alone is insufficient |
-| Bankruptcy/receivership/audit/disclosure/appeal | Refer the specific authorised legal/administrative issue with records and deadlines |
-| Multiple provinces | Complete supported BC work and separate each other province's owner return; not a global refusal |
-| Uncertain tax or location | Research actual category/base/place and isolate the gap; do not charge or self-assess simply to be “conservative” |
-| Exemption/certificate | Obtain what the actual exemption requires; do not demand a certificate where law gives an unconditional goods exemption |
-| Marketplace | Verify role, collector and seller evidence; prevent double collection and preserve actual exceptions/liability |
+| Medical/prescription products | Actual eligible product, use and documents. Check this point with one of our partner accountants. |
+| Children's clothing/footwear | Actual garment/size/child eligibility and evidence; no invented price limit. Check this point with one of our partner accountants. |
+| School supplies; books/publications | Qualifying items/use and documentary conditions; an ISBN or student alone does not settle it. Check this point with one of our partner accountants. |
+| Private used goods; resale; production machinery; BC exports | Separate transaction, resale intent, qualifying industry/use, goods shipment/software-use outside BC and exemption evidence; registration alone does not exempt operating equipment. Check this point with one of our partner accountants. |
+| First Nations/reserve; Crown/public bodies | Qualifying purchaser, statutory immunity, location/delivery and evidence. Check this point with one of our partner accountants. |
+| Contractors/affixed machinery | Contract, supply-and-affix, title/use and any liability agreement; no blanket end-user or retail result. Check this point with one of our partner accountants. |
+| Residential/new/used/commercial property; goodwill; business assets | Allocate land/buildings, equipment/inventory/software and goodwill; determine PST, federal GST/elections and property-transfer tax separately. Check this point with one of our partner accountants. |
+| Bulk business transfer | Obtain the s.187 certificate analysis before acquisition; preserve seller tax/account evidence. No s.230 universal-successor shortcut. Check this point with one of our partner accountants. |
+| Accommodation occupancy/exemptions | Original27-day long-stay and low-revenue/price investigations need the full eligible-occupant/unit/listing test; no blanket residential exemption or platform CAD2,500 trigger. Check this point with one of our partner accountants. |
+| Vancouver/Victoria/Whistler/Tofino/Kelowna MRDT; Major Events MRDT; private destination fee | Actual transaction-date designation/rate, mandatory charges/base and collector. The previous Vancouver3% MRDT plus2.5% Major Events claim for February2023–January2030 and other-city3%/2% list are held, not certified; do not substitute a private2.5% fee. Check this point with one of our partner accountants. |
+| Vehicle/boat/aircraft exceptions | Lease/gift/import/modification, class, valuation, ZEV definition and exemptions before using purchase rates. Check this point with one of our partner accountants. |
+| Liquor/cannabis/vapour/energy sectors | Determine other levies, ICE/rental amounts and product/residential-energy exemptions separately from supported PST rates. Insurance/financial supplies need their actual tax statute. Check this point with one of our partner accountants. |
+| Mixed bundles; disputed cloud/software/telecom use | Actual components, optionality, value, allocation and exemption; do not tax everything from a single invoice or default to charging/self-assessing. Check this point with one of our partner accountants. |
+| Bankruptcy/receivership; audit, disclosure, appeals; penalties/interest | Actual authority, notices, periods, applicable rate/deadline and relief conditions. No universal10% penalty or unspecified current-interest figure. Check this point with one of our partner accountants. |
+| Federal GST/HST; other provinces | Preserve federal export/ITC/host-platform work and each province's return; no automatic5% export tax,13% Ontario outcome or host GST collection from PST platform status. Check this point with one of our partner accountants. |
 
 ## Worked cases
 
-### Case 1: original Cascadia Cloud Inc. facts, with explicit supported assumptions
+### Case 1: original Q2 2025 Cascadia Cloud Inc. — filing outcome held
 
-Preserve the Vancouver corporation's original figures: BC SaaS CAD 240,000; Ontario SaaS 360,000; US SaaS 500,000; Burnaby hardware 12,000; registered-platform Vancouver accommodation 18,000; foreign cloud invoice 40,000, of which supported BC use 30,000. The original period was Q2 2025; that historic return needs its own period's law and account schedule. The following **calendar 2026 workpaper scenario** uses those figures and explicitly assumes that the SaaS and the BC-use purchased cloud component have been established to be taxable software, none of the hardware is exempt, the facilitator properly accounts for the accommodation, no adjustments, and this is one permitted on-time primary-account reporting period. It is not a determination that every current AWS product or platform service qualifies.
+Cascadia Cloud Inc. is a Vancouver BC corporation. Preserve **Q2 2025** and every original input: BC SaaS CAD240,000; Ontario SaaS360,000; US SaaS500,000; hardware delivered to Burnaby12,000 without a resale certificate; Vancouver-owned condo via registered Airbnb18,000; US AWS cloud invoice40,000, with the original asserted BC allocation30,000 and no BC PST charged.
 
-BC collectable PST is CAD 17,640; self-assessed purchase PST 2,100; actual commission is capped 198; net 19,542. The old result happened to reach the same cap but its 1.32% method and box meanings were wrong. BoxA Canadian non-platform sales are 612,000, not 252,000; collectable tax is BoxB, commissionC, purchase costE/taxF, final totalK. The US sale is not part of BoxA Canadian sales on these stated place-of-sale facts. Actual global legal/place facts can change the reporting population. [Actual FIN400](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/forms/fin-400-provincial-sales-tax-return.pdf), [current BoxA platform/Canada rule](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide), [BC source/use/base](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide).
+**Non-usable historical filing hold.** The current sources do not prove every Q2 2025 rule, the assigned quarter, the particular SaaS/AWS classification or usage period, exemption, platform/accommodation or federal outcome. These inputs do not establish those legal assumptions. Check this point with one of our partner accountants.
+
+The following block only recomputes the preserved amounts **conditionally**: assume fully taxable BC SaaS/hardware, no BC use of Ontario/US SaaS, supported30,000 taxable software purchase base, accommodation correctly reported by the facilitator, Canadian sales as stated, timely eligible primary-account commission, and no adjustments. It illustrates the current FIN400 field model, not an accepted Q2 2025 return. The same arithmetic may be used for an actual2026 period only after independently establishing that period and those facts; the original year is unchanged. [Act software/base](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_04), [current FIN400 guide](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide), [commission](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/1295368594#section74).
 
 ```oa-check
-name: BC 2026 Cascadia supported standard-rate return workpaper
+name: Cascadia original Q2 2025 inputs conditional arithmetic only
 inputs:
-  bc_taxable_software_sales: 240000
-  ontario_sales_in_canada: 360000
-  bc_hardware: 12000
-  supported_bc_untaxed_software_purchase: 30000
+  bc_saas: 240000
+  ontario_saas: 360000
+  us_saas: 500000
+  burnaby_hardware: 12000
+  platform_accommodation: 18000
+  cloud_invoice: 40000
+  assumed_supported_bc_base: 30000
 steps:
-  - box_a_canadian_nonplatform_sales: bc_taxable_software_sales + ontario_sales_in_canada + bc_hardware
-  - box_b_collectable: (bc_taxable_software_sales + bc_hardware) * 0.07
-  - box_c_on_time_primary_commission: min(198, round(box_b_collectable * 0.066, 2))
-  - box_d: box_b_collectable - box_c_on_time_primary_commission
-  - box_f_self_assessed: supported_bc_untaxed_software_purchase * 0.07
-  - box_k_no_adjustments: box_d + box_f_self_assessed
+  - box_a: bc_saas + ontario_saas + burnaby_hardware
+  - bc_saas_pst: bc_saas * 0.07
+  - hardware_pst: burnaby_hardware * 0.07
+  - box_b: bc_saas_pst + hardware_pst
+  - box_c: min(198, round(box_b * 0.066, 2))
+  - box_d: box_b - box_c
+  - box_e: assumed_supported_bc_base
+  - box_f: box_e * 0.07
+  - box_g: box_d + box_f
+  - box_j: 0
+  - box_k: box_g - box_j
 expected:
-  box_a_canadian_nonplatform_sales: 612000
-  box_b_collectable: 17640
-  box_c_on_time_primary_commission: 198
+  box_a: 612000
+  bc_saas_pst: 16800
+  hardware_pst: 840
+  box_b: 17640
+  box_c: 198
   box_d: 17442
-  box_f_self_assessed: 2100
-  box_k_no_adjustments: 19542
+  box_e: 30000
+  box_f: 2100
+  box_g: 19542
+  box_j: 0
+  box_k: 19542
 ```
 
-For the accommodation, obtain actual facilitator reporting and separate MRDT return/period and applicable Major Events rate. No automatic host GST collection is assumed. For Ontario/US sales, complete the federal place-of-supply/export workpaper; no 5% output tax is imposed on a valid zero-rated export merely because the old text did so. [Separate return guide](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide), [CRA zero-rating](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html).
+The US500,000 and platform18,000 are excluded from this conditional Canadian non-platform A population. No federal GST/HST, MRDT or Major Events amount is certified. The original BC-only A252,000 and invented B–G meanings are withdrawn; the final19,542 coincidence did not validate the old1.32% commission formula.
 
-### Case 2: commission below the cap and no commission on self-assessment
+### Case 2: original middle-interval commission
 
-A timely eligible primary account has CAD 200 collectable PST and CAD 70 supported self-assessed purchase PST, no adjustments. Actual BoxC is CAD 22 under the middle interval, not CAD 2.64 or 198. Net due is 248. The purchase tax does not enlarge the commission base. [Actual commission worksheet](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/forms/fin-400-provincial-sales-tax-return.pdf).
+Retain CAD200 collectable sales PST and70 supported self-assessed purchase PST, no adjustments, with timely full filing/payment by an eligible primary account. C is22, not2.64 or198; K is248. Purchase tax does not enlarge the commission base. [Reg.s.74](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/1295368594#section74), [BoxesB–K](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide).
 
 ```oa-check
-name: BC actual middle commission interval
+name: BC original middle commission interval
 inputs:
   collectable_sales_tax: 200
   self_assessed_purchase_tax: 70
 steps:
-  - permitted_middle_commission: 22
-  - net_due: collectable_sales_tax - permitted_middle_commission + self_assessed_purchase_tax
+  - box_c: 22
+  - box_k: collectable_sales_tax - box_c + self_assessed_purchase_tax
 expected:
-  permitted_middle_commission: 22
-  net_due: 248
+  box_c: 22
+  box_k: 248
 ```
-
-That case is deliberately inside the stated middle interval with its eligibility satisfied, not a complete piecewise calculator for every account. The worksheet's low and high branches must be applied when those facts differ.
 
 ## When to refuse or refer
 
-Do not finalise an unknown period, unsupported supply/place/base/exemption, unverified collector role, material special-rate or adjustment claim, or unexplained reconciliation difference. Complete the supported rows and identify the exact unresolved determination. Do not represent registration, an export, a proposed journal or a prepared return/payment as accepted by the authority.
+Do not finalise an unsupported period, collector, supply/place/base, exemption, special-rate or adjustment outcome. Carry the exact unresolved facts with the applicable hold above; complete supported rows. Prepared applications, returns, journal entries or payments are not authority acceptance. Never restore a withdrawn historical claim as a fallback.
 
 ## Completion checklist
 
-- Correct local/remote/platform registration route and population, not one universal revenue threshold.
-- Current transaction-date category, exemption, price/use and special-rate facts established.
-- Federal tax classified separately; no 5% “zero-rated” tax or automatic GST marketplace role.
-- All original exempt/sector/property/asset/First Nation/referral investigations retained with specific evidence.
-- Actual FIN400 boxes, collectable timing, Canada/platform sales population and own-use purchases reconciled.
-- Commission eligibility/formula/account, bad debts, customer credits and recoveries supported.
-- Separate FIN401/Major Events/account evidence obtained where applicable.
-- Actual assigned period, deadline, nil/closure, records and accepted submission/payment evidence retained.
+Confirm registration route and revenue population; category/base/use and source date; full Canadian A and collectable B reconciliation; supported E/F; commission eligibility; H/I and recoveries; separate accommodation/federal/other-province work; assigned period and filing/payment evidence; nil/closure/change notifications; and record retention. Every exception remains blocked until its determination is supported.
 
 ## Sources
 
-| Source actually read and scope | Official URL | Read on |
+| Official source and precise scope read | URL | Read on |
 |---|---|---|
-| Read for current goods purchase/lease/gift rate provisions, private/registrant/ZEV vehicle distinctions and ordinary tax base scope; not every exemption or full Act | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03 | 2026-11-14 |
-| Read for registration sections 168-175, local/remote/platform routes and threshold wording, collection/platform exceptions and duties; not every later enforcement rule | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08 | 2026-11-14 |
-| Read for actual location, small-seller, contractor, remote order/solicitation/inventory/software and registration scenarios; not every linked industry bulletin | https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/publications/pst-001-registering-to-collect-pst.pdf | 2026-11-14 |
-| Read for general/special scope, exemptions, GST separation, MRDT/Major Events, own-use purchases, records, clearance, refunds and disclosure distinctions | https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide | 2026-11-14 |
-| Read for whole current FIN400 preparation guide, box meanings, collectable timing, Canada/platform population, currency, adjustments, payment/dates and closure | https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide | 2026-11-14 |
-| Read for actual complete FIN400 worksheet/remittance, piecewise commission and certification; dated form revision is not a new 2026 edition | https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/forms/fin-400-provincial-sales-tax-return.pdf | 2026-11-14 |
-| Read for current assigned reporting-period table, commission and separate MRDT | https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay | 2026-11-14 |
-| Read for entire B.C.Reg.161/2026 and October 2026 professional-service exemption commencement | https://www.bclaws.gov.bc.ca/civix/document/id/bcgaz2/bcgaz2/v69n16_161-2026 | 2026-11-14 |
-| Read for CRA taxable versus zero-rated supplies, export conditions boundary and federal input-credit distinction; not every federal place-of-supply rule | https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html | 2026-11-14 |
+| Act Part1: seller/facilitator/software/period definitions and purchase-price/bundle provisions; no certification of every specialist valuation | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_01 | 2026-11-27 |
+| Act Part2: ss.28–29,33 paid/due timing, instalments, transfer backstop, unpaid tax and invoice/due-date conditions; specialist ss.30–32 outcomes held | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_02 | 2026-11-27 |
+| Act Part3: s.34 purchase-rate selection, qualifying transactions and original purchase price; lease/gift outcomes held | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_03 | 2026-11-27 |
+| Act Part4: ss.104–108 software liability, BC device use, mixed usage and subsequent adjustment | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_04 | 2026-11-27 |
+| Act Part5: taxable-services categories and s.122 accommodation rate; specialist outcomes remain held | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_05 | 2026-11-27 |
+| Act Part6: ss.137–140.1 bundle/food/electricity boundaries; other exemptions not certified | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_06 | 2026-11-27 |
+| Act Part7: ss.159–160 bad-debt qualification/write-off/recovery and customer-refund deductions | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_07 | 2026-11-27 |
+| Act Part8: ss.168–175 registration; ss.179.3,183,185–187 collector, allowance and bulk-certificate provisions | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12035_08 | 2026-11-27 |
+| Reg.96/2013: s.29 usage period; ss.72–83.1 timing, commission, electronic duties, receipts; ss.88–93 records. Consolidation says29September2026; checked Reg.114/2026 Schedule2 and161/2026: these retained provisions unchanged | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/1295368594 | 2026-11-27 |
+| Reg.97/2013: ss.78,82.1–82.5,134 occupancy/exemption boundaries and bad-debt formula; specialist occupancy outcomes held | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/97_2013_00_multi | 2026-11-27 |
+| Reg.114/2026: Schedule2 amendments to Reg.96/2013; read against subsequent repeal of its section4 | https://www.bclaws.gov.bc.ca/civix/document/id/bcgaz2/bcgaz2/v69n13_114-2026 | 2026-11-27 |
+| Reg.161/2026: whole operative schedule and commencement; professional-service exemptions effective1October2026 | https://www.bclaws.gov.bc.ca/civix/document/id/bcgaz2/bcgaz2/v69n16_161-2026 | 2026-11-27 |
+| Ministry small-business guide: PST categories/base, separation from GST, own-use purchases, closure, MRDT returns and records; specialist details are not certified | https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/small-business-guide | 2026-11-27 |
+| Actual FIN400: complete text of both pages including worksheet, B-based piecewise commission, remittance fields and certification; revision2017/6/8 is not a new2026 edition | https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/forms/fin-400-provincial-sales-tax-return.pdf | 2026-11-27 |
+| Ministry report/pay page: general ongoing reporting bands, mandatory monthly non-registrant rule, liquor exception, assigned period, weekend/holiday extension | https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay | 2026-11-27 |
+| Ministry return guide: FIN400 A–K, Canada/platform population, currency, adjustments, commission eligibility, due dates, filing/payment and closure | https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/report-pay/pst-return-guide | 2026-11-27 |
 
-Not yet confirmed: every specialised current software/cloud/telecom product classification, bundle apportionment and exception; exact accommodation occupancy/long-stay rule and all current city MRDT designations/rates; any specific private destination fee/base; every vehicle valuation/modified/ZEV exemption case; energy/insurance/First Nation/Crown/manufacturing/contractor conditions and current penalty/interest figures. These jobs remain in scope for the stated specialised workpapers, not certified blanket outcomes. The old universal 10,000 registration rule, private-sale 7%,1.32% commission, fabricated return boxes, MRDT-on-FIN400, Netflix-no-PST and five-percent-zero-rated-export statements are corrected, not usable fallbacks. No accountant approval is added or inferred.
+Not yet confirmed: the non-usable exception outcomes listed above, original Q2 2025 case law/account facts, filing without the account assignment, and specialised current classifications. Each is expressly referred; none supplies a usable rate, exemption, filing or payment conclusion. No new approval is added or inferred.
