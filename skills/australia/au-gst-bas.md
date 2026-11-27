@@ -4,6 +4,7 @@ description: Australian Business Activity Statement (BAS) — non-GST sections. 
 version: 1.4
 jurisdiction: AU
 tax_year: 2025
+tax_year_notes: Original 2025–26 income year, 1 July 2025 to 30 June 2026; historical 2024–25 figures are identified separately.
 last_updated: 2026-11-27
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -35,9 +36,9 @@ For Q4 2025–26, **25 August 2026** is the agent-program date for eligible elec
 
 Identify employees/directors, labour-hire workers, voluntary agreements and no-ABN supplies under the applicable withholding provision. Use the tax table and declarations applicable to the **payment date and payment type**. Labour-hire arrangements can require withholding even for an independent contractor with an ABN; apply the more specific withholding provision before no-ABN withholding. [TAA Schedule 1 ss 12-5, 12-35 to 12-60][TAA1]; [ATO labour hire][LABOUR].
 
-For a valid written voluntary agreement with an individual, other compulsory withholding categories take priority. Use the notified CIR if at least 20%; if below 20%, withhold 20% unless the agreement specifies the lower CIR. Without a CIR, use 20%. Exclude GST charged from the withholding base; the supplier's right to charge GST depends on whether the payer is entitled to a full GST credit. [ATO Schedule 10 applicable 1 July 2024 to 30 June 2026][AGREE]; [ATO voluntary-agreement conditions][AGREEMENT].
+For a valid written voluntary agreement with an individual, use the approved form with the individual’s active ABN quoted in it. Other compulsory withholding categories take priority. Use the notified CIR if at least 20%; if below 20%, withhold 20% unless the agreement specifies the lower CIR. Without a CIR, use 20%. Exclude GST charged from the withholding base; the supplier's right to charge GST depends on whether the payer is entitled to a full GST credit. [ATO Schedule 10 applicable 1 July 2024 to 30 June 2026][AGREE]; [ATO voluntary-agreement conditions][AGREEMENT].
 
-For no-ABN withholding, first apply s 12-190's enterprise/supply conditions and exceptions. Check supplier/agent ABN documents, non-enterprise payments, total consideration for the whole supply of $75 or less excluding GST, wholly input-taxed supplies, local-government activities, investment-payment exclusions, and a qualifying individual's written hobby/private/domestic statement that you have no reasonable grounds to disbelieve. If withholding is required, withhold **47% of the total payment**, including GST, and report at W4 where that label applies. A missing ABN on the invoice alone does not establish liability. [TAA Schedule 1 s 12-190][TAA1]; [ATO no-ABN instructions][NOABN].
+For no-ABN withholding, first apply s 12-190's enterprise/supply conditions and exceptions. Check supplier/agent ABN documents, non-enterprise payments, total consideration for the whole supply of $75 or less excluding GST, wholly input-taxed supplies, local-government activities, investment-payment exclusions, and a qualifying individual's written hobby/private/domestic statement that you have no reasonable grounds to disbelieve. If withholding is required, withhold **47% of the total payment**, including GST, and report at W4 where that label applies. A missing ABN on the invoice alone does not establish liability. [TAA Schedule 1 s 12-190][TAA1]; [GST Regulation 29-80.01](https://www.legislation.gov.au/F2019L00417/2025-11-01/2025-11-01/text/original/epub/OEBPS/document_1/document_1.html); [ATO no-ABN instructions][NOABN].
 
 For small/medium withholders, reconcile the required labels to payroll records, tax tables, STP and any ATO pre-fill. STP does **not** give them a blanket W1 exemption. Verify and correct pre-filled amounts; payroll/software records remain the primary source. [ATO withholding labels][W]; [ATO pre-fill][PREFILL].
 
