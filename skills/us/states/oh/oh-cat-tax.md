@@ -234,31 +234,31 @@ US practice: this is general information, not a filing opinion. Apply the facts-
 
 | Official source and passages read | URL | Date read |
 |---|---|---|
-| R.C. 5751.01: (A)–(I), (L)–(R); persons, receipts, exclusions, nexus, quarters and exclusion | https://codes.ohio.gov/ohio-revised-code/section-5751.01 | 2026-11-27 |
-| R.C. 5751.02: (A), (B); privilege tax, P.L. 86-272 and billing exceptions; compared June 2025 version | https://codes.ohio.gov/ohio-revised-code/section-5751.02 | 2026-11-27 |
-| R.C. 5751.03: both operative paragraphs, rate and quarterly exclusion | https://codes.ohio.gov/ohio-revised-code/section-5751.03 | 2026-11-27 |
-| R.C. 5751.033: (A)–(M), ordinary receipt sourcing and exceptions | https://codes.ohio.gov/ohio-revised-code/section-5751.033 | 2026-11-27 |
-| R.C. 5751.011: (A)–(D), consolidated membership/election/receipt exceptions | https://codes.ohio.gov/ohio-revised-code/section-5751.011 | 2026-11-27 |
-| R.C. 5751.012: (A)–(C), combined membership and single taxpayer | https://codes.ohio.gov/ohio-revised-code/section-5751.012 | 2026-11-27 |
-| R.C. 5751.04: (B)–(E), registration, payment fee and cancellation | https://codes.ohio.gov/ohio-revised-code/section-5751.04 | 2026-11-27 |
-| R.C. 5751.05: (A), (B), quarterly filing/alternative approval | https://codes.ohio.gov/ohio-revised-code/section-5751.05 | 2026-11-27 |
-| R.C. 5751.051: (A)–(D), due dates and reconciliation | https://codes.ohio.gov/ohio-revised-code/section-5751.051 | 2026-11-27 |
-| R.C. 5751.06: (A)–(H), penalties, abatement and interest | https://codes.ohio.gov/ohio-revised-code/section-5751.06 | 2026-11-27 |
-| R.C. 5751.08: (A)–(D), refunds and time limit | https://codes.ohio.gov/ohio-revised-code/section-5751.08 | 2026-11-27 |
-| Rule 5703-29-02: ownership, control, membership and nexus | https://codes.ohio.gov/ohio-administrative-code/rule-5703-29-02 | 2026-11-27 |
-| Rule 5703-29-04: (B), (C), group exclusion/cancellation | https://codes.ohio.gov/ohio-administrative-code/rule-5703-29-04 | 2026-11-27 |
-| Rule 5703-29-08: (B), (C), separate-member conditions | https://codes.ohio.gov/ohio-administrative-code/rule-5703-29-08 | 2026-11-27 |
-| Rule 5703-29-09: (B)–(D), full rule-estimate conditions | https://codes.ohio.gov/ohio-administrative-code/rule-5703-29-09 | 2026-11-27 |
-| Rule 5703-29-10: (B), (C)(4), nonprofit/LLC tests | https://codes.ohio.gov/ohio-administrative-code/rule-5703-29-10 | 2026-11-27 |
-| Rule 5703-29-17: (A), (B), (C)(1), general service rule and accounting hierarchy | https://codes.ohio.gov/ohio-administrative-code/rule-5703-29-17 | 2026-11-27 |
-| Rule 5703-29-18: records and extended-retention condition | https://codes.ohio.gov/ohio-administrative-code/rule-5703-29-18 | 2026-11-27 |
-| R.C. 1.14: Sunday, holiday and office-closure computation | https://codes.ohio.gov/ohio-revised-code/section-1.14 | 2026-11-27 |
-| R.C. 5703.055: whole-dollar rounding, all entered amounts | https://codes.ohio.gov/ohio-revised-code/section-5703.055 | 2026-11-27 |
-| CAT 2005-02: II bright-line enforcement, IV next-year wording; old registration figure superseded | https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/commercial_activities/information_releases/2005-02%20cat%20nexus%20standards%20rev%20november%202019.pdf | 2026-11-27 |
+| Read R.C. 5751.01: (A)–(I), (L)–(R); persons, receipts, exclusions, nexus, quarters and exclusion | https://codes.ohio.gov/ohio-revised-code/section-5751.01 | 2026-11-27 |
+| Read R.C. 5751.02: (A), (B); privilege tax, P.L. 86-272 and billing exceptions; compared June 2025 version | https://codes.ohio.gov/ohio-revised-code/section-5751.02 | 2026-11-27 |
+| Read R.C. 5751.03: both operative paragraphs, rate and quarterly exclusion | https://codes.ohio.gov/ohio-revised-code/section-5751.03 | 2026-11-27 |
+| Read R.C. 5751.033: (A)–(M), ordinary receipt sourcing and exceptions | https://codes.ohio.gov/ohio-revised-code/section-5751.033 | 2026-11-27 |
+| Read R.C. 5751.011: (A)–(D), consolidated membership/election/receipt exceptions | https://codes.ohio.gov/ohio-revised-code/section-5751.011 | 2026-11-27 |
+| Read R.C. 5751.012: (A)–(C), combined membership and single taxpayer | https://codes.ohio.gov/ohio-revised-code/section-5751.012 | 2026-11-27 |
+| Read R.C. 5751.04: (B)–(E), registration, payment fee and cancellation | https://codes.ohio.gov/ohio-revised-code/section-5751.04 | 2026-11-27 |
+| Read R.C. 5751.05: (A), (B), quarterly filing/alternative approval | https://codes.ohio.gov/ohio-revised-code/section-5751.05 | 2026-11-27 |
+| Read R.C. 5751.051: (A)–(D), due dates and reconciliation | https://codes.ohio.gov/ohio-revised-code/section-5751.051 | 2026-11-27 |
+| Read R.C. 5751.06: (A)–(H), penalties, abatement and interest | https://codes.ohio.gov/ohio-revised-code/section-5751.06 | 2026-11-27 |
+| Read R.C. 5751.08: (A)–(D), refunds and time limit | https://codes.ohio.gov/ohio-revised-code/section-5751.08 | 2026-11-27 |
+| Read Rule 5703-29-02: ownership, control, membership and nexus | https://codes.ohio.gov/ohio-administrative-code/rule-5703-29-02 | 2026-11-27 |
+| Read Rule 5703-29-04: (B), (C), group exclusion/cancellation | https://codes.ohio.gov/ohio-administrative-code/rule-5703-29-04 | 2026-11-27 |
+| Read Rule 5703-29-08: (B), (C), separate-member conditions | https://codes.ohio.gov/ohio-administrative-code/rule-5703-29-08 | 2026-11-27 |
+| Read Rule 5703-29-09: (B)–(D), full rule-estimate conditions | https://codes.ohio.gov/ohio-administrative-code/rule-5703-29-09 | 2026-11-27 |
+| Read Rule 5703-29-10: (B), (C)(4), nonprofit/LLC tests | https://codes.ohio.gov/ohio-administrative-code/rule-5703-29-10 | 2026-11-27 |
+| Read Rule 5703-29-17: (A), (B), (C)(1), general service rule and accounting hierarchy | https://codes.ohio.gov/ohio-administrative-code/rule-5703-29-17 | 2026-11-27 |
+| Read Rule 5703-29-18: records and extended-retention condition | https://codes.ohio.gov/ohio-administrative-code/rule-5703-29-18 | 2026-11-27 |
+| Read R.C. 1.14: Sunday, holiday and office-closure computation | https://codes.ohio.gov/ohio-revised-code/section-1.14 | 2026-11-27 |
+| Read R.C. 5703.055: whole-dollar rounding, all entered amounts | https://codes.ohio.gov/ohio-revised-code/section-5703.055 | 2026-11-27 |
+| Read CAT 2005-02: II bright-line enforcement, IV next-year wording; old registration figure superseded | https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/commercial_activities/information_releases/2005-02%20cat%20nexus%20standards%20rev%20november%202019.pdf | 2026-11-27 |
 | ODT CAT: indexed official text read for registration, active-account filing, Gateway, TeleFile and amendments | https://tax.ohio.gov/business/commercial-activity-tax/ | 2026-11-27 |
 | CAT 2023-01: indexed official text read for current exclusion, end of AMT/annual filing and cancellation | https://tax.ohio.gov/business/ohio-business-taxes/commercial-activities/information-releases/cat2023-01-iss-aug-2023 | 2026-11-27 |
 | ODT certified rates: indexed official table read for calendar years 2025–2027 | https://tax.ohio.gov/researcher/interest-rates | 2026-11-27 |
-| IRC 1221(a)(1), 1231(b)(1): inventory excluded from asset definitions; Ohio removes holding-period limit | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partIII-sec1221.htm | 2026-11-27 |
+| Read IRC 1221(a)(1), 1231(b)(1): inventory excluded from asset definitions; Ohio removes holding-period limit | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partIII-sec1221.htm | 2026-11-27 |
 | ODT TGR/refunds: indexed official CAT REF instructions | https://tax.ohio.gov/business/commercial-activity-tax/commercial-activity-tax-taxable-gross-receipts | 2026-11-27 |
 
 Not yet confirmed: the specific non-usable holds above remain unavailable for automated conclusions. Direct ODT page opens returned errors; indexed official passages were read. Older unread releases have been replaced by operative statute/rule links; they are not evidence for retained claims.
