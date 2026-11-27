@@ -5,15 +5,15 @@ jurisdiction: LS
 category: international
 tax_year: 2026
 tax_year_notes: "2026-27"
-last_updated: 2026-11-14
+last_updated: 2026-11-26
 type: situation-rules
-version: 0.3
+version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 ---
 
-# Lesotho VAT v0.3
+# Lesotho VAT v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -28,8 +28,9 @@ Lesotho's tax year runs 1 April to 31 March. This skill covers 2026-27, from 1 A
 | Item | Figure | Conditions | Official URL |
 |---|---|---|---|
 | Standard rate | 15% |  | https://www.rsl.org.ls/sites/default/files/2025-01/Guide%20on%20Zero-rated%20Supplies%20of%20Goods.pdf |
-| Standard rate in regulations | 15% | Reg 6(1)(d) as amended 2020 | https://www.rsl.org.ls/sites/default/files/2026-09/VAT%20REGULATIONS%20NO.18%20OF%202020.pdf |
-| 10% rate | 10% | Reg 6(1)(b) as amended 2021. unverified: the supply it covers; the older skill said electricity, and the 2003 Regulations were not read | https://www.rsl.org.ls/sites/default/files/2026-09/VALUE%20ADDED%20TAX%20%28AMENDMENT%29%20REGULATIONS%20LN.30%20OF%202021_0.pdf |
+| Standard rate in regulations | 15% | Reg 6(1)(c) of VAT Regulations 2003, raised from 14% to 15% from 1 April 2018 by LN 27 of 2018 | https://www.rsl.org.ls/sites/default/files/2024-06/Value%20Added%20Tax%20%28Amendment%29%20Regulations%20No.27%20of%202018.pdf |
+| Telecommunications | 15% | Reg 6(1)(d), inserted at 9% by LN 27 of 2018, raised to 12% by LN 34 of 2019 and to 15% from 1 April 2020 by LN 18 of 2020 | https://www.rsl.org.ls/sites/default/files/2026-09/VAT%20REGULATIONS%20NO.18%20OF%202020.pdf |
+| 10% rate | 10% | Reg 6(1)(b): 8% from 1 April 2018 (LN 27 of 2018, which also removed telephone calls from the paragraph), 9% from 1 April 2020 (LN 18 of 2020), 10% from 1 April 2021 (LN 30 of 2021). unverified: the supply it covers; the older skill said electricity, and the 2003 Regulations were not read | https://www.rsl.org.ls/sites/default/files/2026-09/VALUE%20ADDED%20TAX%20%28AMENDMENT%29%20REGULATIONS%20LN.30%20OF%202021_0.pdf |
 | Zero rate | 0% | Goods in the Fourth Schedule: basic commodities such as listed foods, fertiliser, pesticides and animal feed. Exports: see the Act | https://www.rsl.org.ls/sites/default/files/2025-01/Guide%20on%20Zero-rated%20Supplies%20of%20Goods.pdf |
 | Registration threshold | M2,000,000 a year | Taxable turnover of all branches and activities added together; exempt supplies left out | https://www.rsl.org.ls/sites/default/files/2026-09/Guide%20on%20Registration%20For%20Value%20Added%20Tax%20Purposes%20%20-%20VAT%20101%20%281%29.pdf |
 | Late return | 3% a month or part | s.54 | https://www.rsl.org.ls/sites/default/files/2026-09/VAT%20ACT%20-%202001.pdf |
@@ -97,6 +98,8 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | RSL Guide on Zero-rated Supplies of Goods; read in full | https://www.rsl.org.ls/sites/default/files/2025-01/Guide%20on%20Zero-rated%20Supplies%20of%20Goods.pdf | 2026-11-01 |
+| VAT (Amendment) Regulations 2018, LN 27 of 2018; read in full (scan: Reg 6(1)(b) 8%, 6(1)(c) standard 15%, 6(1)(d) telecommunications 9%) | https://www.rsl.org.ls/sites/default/files/2024-06/Value%20Added%20Tax%20%28Amendment%29%20Regulations%20No.27%20of%202018.pdf | 2026-11-26 |
+| VAT (Amendment) Regulations 2019, LN 34 of 2019; read in full (scan: Reg 6(1)(d) telecommunications 12%; sanitary towels added to Schedule IV) | https://www.rsl.org.ls/sites/default/files/2024-06/VAT%20%5BAMENDMENT%5D%20REGULATIONS%20NO.34%20OF%202019.pdf | 2026-11-26 |
 | VAT (Amendment) Regulations 2020, LN 18 of 2020; read in full (scan) | https://www.rsl.org.ls/sites/default/files/2026-09/VAT%20REGULATIONS%20NO.18%20OF%202020.pdf | 2026-11-01 |
 | VAT (Amendment) Regulations 2021, LN 30 of 2021; read in full (scan) | https://www.rsl.org.ls/sites/default/files/2026-09/VALUE%20ADDED%20TAX%20%28AMENDMENT%29%20REGULATIONS%20LN.30%20OF%202021_0.pdf | 2026-11-01 |
 | RSL Guide on Registration for VAT, VAT 101; read in full | https://www.rsl.org.ls/sites/default/files/2026-09/Guide%20on%20Registration%20For%20Value%20Added%20Tax%20Purposes%20%20-%20VAT%20101%20%281%29.pdf | 2026-11-01 |
@@ -106,4 +109,4 @@ expected:
 | RSL Guide on Tax Refunds; read in full | https://www.rsl.org.ls/sites/default/files/2026-09/Guide%20on%20Tax%20Refunds.pdf | 2026-11-01 |
 | RSL Tax Treaties page; read the list of agreements only, not the treaty texts | https://www.rsl.org.ls/tax-treaties | 2026-11-01 |
 
-Not yet confirmed: which supply takes 10%; telecommunications rate; reverse charge on imported services; the gazette amending the threshold; whether both ss.54 and 55 stack in practice; E-Invoicing Regulations regs 7 to 17 and schedules (not read); Gazette notices naming vendors; the VAT Administration Bill announced for 2026-27.
+Not yet confirmed: which supply takes 10%; the original text of the VAT Regulations 2003 (LN 95 of 2003); reverse charge on imported services; the gazette amending the threshold; whether both ss.54 and 55 stack in practice; E-Invoicing Regulations regs 7 to 17 and schedules (not read); Gazette notices naming vendors; the VAT Administration Bill announced for 2026-27.
