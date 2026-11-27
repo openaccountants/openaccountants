@@ -55,7 +55,7 @@ The [final 2026 PAP](https://www.bundesfinanzministerium.de/Content/DE/Downloads
 | --- | --- | --- |
 | Pension, ordinary insured employee: 18.6% total, derived 9.3% each | EUR 101,400/year; EUR 8,450/month | https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html ; https://www.gesetze-im-internet.de/sgb_6/__168.html ; https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html |
 | Unemployment: 2.6% total, derived 1.3% each; same ceiling as pension | EUR 101,400/year; EUR 8,450/month | https://www.gesetze-im-internet.de/sgb_3/__341.html ; https://www.gesetze-im-internet.de/sgb_3/__346.html ; https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html |
-| Statutory health: 14.6% plus the actual fund's additional rate, ordinarily half each | EUR 69,750/year; EUR 5,812.50/month | https://www.gesetze-im-internet.de/sgb_5/__241.html ; https://www.gesetze-im-internet.de/sgb_5/__249.html ; https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2 |
+| Statutory health: 14.6% plus the actual fund's additional rate, ordinarily half each | EUR 69,750/year; EUR 5,812.50/month | https://www.gesetze-im-internet.de/sgb_5/__241.html ; https://www.gesetze-im-internet.de/sgb_5/__249.html ; https://www.gesetze-im-internet.de/svbezgrv_2026/__2.html ; https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2 |
 | Care: 3.6% total; derived employer 1.8% outside Saxony or 1.3% in Saxony, before employee adjustments below | EUR 69,750/year; EUR 5,812.50/month | https://www.gesetze-im-internet.de/pbav_2025/__1.html ; https://www.gesetze-im-internet.de/sgb_11/__58.html ; https://www.gesetze-im-internet.de/sgb_11/__55.html ; https://www.gesetze-im-internet.de/svbezgrv_2026/__2.html |
 | Minimum hourly wage | EUR 13.90 in 2026; EUR 14.60 from 1 January 2027 | https://www.gesetze-im-internet.de/milov5/__1.html |
 | Minijob regular monthly earnings limit, derived: ceil(13.90 × 130 / 3) | EUR 603 | https://www.gesetze-im-internet.de/milov5/__1.html ; https://www.gesetze-im-internet.de/sgb_4/__8.html |
@@ -116,7 +116,7 @@ For an ordinary pension-insured commercial Minijob, the employer's pension share
 
 For an isolated full-month insured commercial Minijob, without another insured job, exemption or aggregation/part-month interaction, apply the EUR 175 pension minimum ([§ 163(8) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__163.html)). At actual pay EUR 100, total pension is 175 × 18.6% = EUR 32.55, employer 100 × 15% = EUR 15 and employee remainder EUR 17.55; applying 3.6% directly would be wrong ([§ 2(1) BVV](https://www.gesetze-im-internet.de/beitrvv/__2.html)).
 
-**Specialist topics — non-usable holds.** The following topics remain in scope for referral; this Guide supplies no legal entitlement or filing result for them:
+**Specialist topics: non-usable holds.** The following topics remain in scope for referral; this Guide supplies no legal entitlement or filing result for them:
 
 - Tax-class population/elections, single-parent eligibility and extra-child ELStAM allowance; professional pension exemptions, private-insurance ELStAM and exceptional PAP settings beyond the stated statutory framework. Check this point with one of our partner accountants.
 - One-time pay, severance, earlier-employer certificates/code S, special surcharge computation and annual-return relief. Check this point with one of our partner accountants.
@@ -148,7 +148,7 @@ In the original filing case, EUR 4,200 payable for 2025 places the employer in q
 
 Before the first run, establish the collecting office, employer whole-contribution remittance and employee-deduction duties, employer number, monthly ELStAM-change retrieval, payroll accounts and record retention. Immediate sector reports, interruption/change reports, employee report copies, accident-insurance annual reports, electronic wage certificates, annual wage-tax adjustment eligibility/exclusions and EBV fields/redaction need their complete operative checks; the ordinary DEÜV dates above do not replace them. Check this point with one of our partner accountants.
 
-**2025 corrections — non-usable hold.** Preserve the original 2025 periods and use their applicable law/PAP, not the 2026 worksheet. The previous worksheet's inputs were basic allowance EUR 12,096, surcharge threshold EUR 19,950 outside III, pension ceiling EUR 96,600, health ceiling EUR 66,150, minimum wage EUR 12.82 and Minijob limit EUR 556. Its nominal annual-report date was 15 February 2026 and certificate date 28 February 2026, with proposed moved dates 16 February and 2 March. Those amounts/dates are retained solely to identify the old case; none is a cleared 2025 payroll or filing instruction here. Check this point with one of our partner accountants.
+**2025 corrections: non-usable hold.** Preserve the original 2025 periods and use their applicable law/PAP, not the 2026 worksheet. The previous worksheet's inputs were basic allowance EUR 12,096, surcharge threshold EUR 19,950 outside III, pension ceiling EUR 96,600, health ceiling EUR 66,150, minimum wage EUR 12.82 and Minijob limit EUR 556. Its nominal annual-report date was 15 February 2026 and certificate date 28 February 2026, with proposed moved dates 16 February and 2 March. Those amounts/dates are retained solely to identify the old case; none is a cleared 2025 payroll or filing instruction here. Check this point with one of our partner accountants.
 
 ## Penalties and interest
 
@@ -250,7 +250,7 @@ expected:
   er_care: 104.63
 ```
 
-**Original ancillary cases — arithmetic audits with non-usable legal outcomes.** Preserve these inputs; none establishes the missing entitlement, classification or base. Check this point with one of our partner accountants.
+**Original ancillary cases: arithmetic audits with non-usable legal outcomes.** Preserve these inputs; none establishes the missing entitlement, classification or base. Check this point with one of our partner accountants.
 
 - Midijob AE EUR 1,000, G EUR 603, stipulated F 0.6619: the former two formulas give EUR 854.06 and EUR 568.36; a stipulated 0.6% surcharge on the first is EUR 5.12, not EUR 3.41 on the second. This does not clear factor F, the band or Saxony allocation.
 - Multiple-job pension pay EUR 10,000 and EUR 2,000, ceiling EUR 8,450: the former capped-input allocation gives EUR 6,832.78 and EUR 1,617.22. The allocation's legal applicability remains held.
@@ -291,4 +291,4 @@ Retained law was read on 27 November 2026 except the unchanged § 32a tariff and
 | Basic reports and payslip | https://www.gesetze-im-internet.de/de_v/__6.html ; https://www.gesetze-im-internet.de/de_v/__8.html ; https://www.gesetze-im-internet.de/de_v/__10.html ; https://www.gesetze-im-internet.de/gewo/__108.html | 2026-11-27 |
 | Tax weekend rule (unchanged completed read reused) and late payment | https://www.gesetze-im-internet.de/ao_1977/__108.html ; https://www.gesetze-im-internet.de/ao_1977/__240.html | 2026-11-26; 2026-11-27 respectively |
 
-Non-usable holds include the unacquired Federal Gazette factor-F notice, actual state church-tax rules/caps, actual U1/U2/accident rates and the 2027 health ceiling. The original factor 0.6619, planning additional rate 2.9%, general JAEG EUR 77,400/year (EUR 6,450/month), special JAEG EUR 69,750 and proposed 2027 EUR 3,600 addition are not substitutes for those missing operative determinations. Check this point with one of our partner accountants.
+Not yet confirmed (non-usable holds): the unacquired Federal Gazette factor-F notice, actual state church-tax rules/caps, actual U1/U2/accident rates and the 2027 health ceiling. The original factor 0.6619, planning additional rate 2.9%, general JAEG EUR 77,400/year (EUR 6,450/month), special JAEG EUR 69,750 and proposed 2027 EUR 3,600 addition are not substitutes for those missing operative determinations. Check this point with one of our partner accountants.
