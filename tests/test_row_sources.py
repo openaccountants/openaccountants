@@ -3,6 +3,7 @@ import importlib.util
 import json
 import os
 import unittest
+from unittest import mock
 
 spec = importlib.util.spec_from_file_location(
     "row_sources", os.path.join(os.path.dirname(__file__), "..", "scripts", "check-row-sources.py"))
@@ -381,6 +382,62 @@ class RowSources(unittest.TestCase):
         t = skill(f"| Rate | 9% | [a]({A}) |")
         n, misses, unreadable = rs.check_text(t, pages())
         self.assertEqual((n, misses, len(unreadable)), (1, [], 1))
+
+    def test_http_200_browser_check_is_unreadable_even_if_it_contains_the_figure(self):
+        # Synthetic HTML reproduces the Dutch site's HTTP-200 interstitial,
+        # including enough text to pass the fetcher's minimum-length check.
+        challenge = (b"<html><title>Even geduld - Wettenbank</title>"
+                     b"<h1>Even geduld, wij controleren uw browser</h1>"
+                     b"<noscript>Anubis could not load its JavaScript. 9%</noscript>"
+                     + b"Browser verification is pending. " * 30 + b"</html>\n200")
+        for figure in ("9%", "11%"):
+            with self.subTest(figure=figure), mock.patch.dict(rs._cache, {}, clear=True), \
+                    mock.patch.object(rs.subprocess, "run", return_value=mock.Mock(stdout=challenge)):
+                n, misses, unreadable = rs.check_text(skill(f"| Rate | {figure} | [law]({A}) |"))
+                self.assertEqual((n, misses, len(unreadable)), (1, [], 1))
+
+    def test_readable_source_still_checks_when_another_link_is_a_browser_check(self):
+        challenge = (b"<title>Even geduld - Wettenbank</title>"
+                     b"Anubis checks the browser." + b"Browser verification is pending. " * 30 + b"\n200")
+        law = b"<title>Tax law</title><p>The rate is 9%.</p>" + b"Ordinary legal provision. " * 30 + b"\n200"
+        with mock.patch.dict(rs._cache, {}, clear=True), \
+                mock.patch.object(rs.subprocess, "run", side_effect=[
+                    mock.Mock(stdout=challenge), mock.Mock(stdout=law)]):
+            text = skill(f"| Rate | 9% | [a]({A}) [b]({B}) |")
+            self.assertEqual(rs.check_text(text), (1, [], []))
+
+    def test_missing_figure_is_unreadable_when_another_link_cannot_be_checked(self):
+        text = skill(f"| Rate | 9% | [a]({A}) [b]({B}) |")
+        n, misses, unreadable = rs.check_text(text, pages(**{A: "The rate is 8%."}))
+        # The inaccessible second source might contain the figure. A failed
+        # lookup cannot prove it is absent from every page cited by the row.
+        self.assertEqual((n, misses, len(unreadable)), (1, [], 1))
+
+    def test_missing_figure_still_fails_when_all_linked_pages_are_readable(self):
+        text = skill(f"| Rate | 9% | [a]({A}) [b]({B}) |")
+        n, misses, unreadable = rs.check_text(text, pages(**{A: "8% applies.", B: "7% applies."}))
+        self.assertEqual((n, [m[0] for m in misses], unreadable), (1, ["9%"], []))
+
+    def test_partially_readable_row_with_two_figures_is_reported_once(self):
+        text = skill(f"| Rates | 8% and 9% | [a]({A}) [b]({B}) |")
+        n, misses, unreadable = rs.check_text(text, pages(**{A: "8% applies."}))
+        self.assertEqual((n, misses, len(unreadable)), (1, [], 1))
+
+    def test_browser_check_markers_in_an_ordinary_source_do_not_hide_it(self):
+        law = (b"<title>Tax law</title><p>Anubis and browser checks are mentioned here."
+               b" The rate is 9%.</p>" + b"Ordinary legal provision. " * 30 + b"\n200")
+        with mock.patch.dict(rs._cache, {}, clear=True), \
+                mock.patch.object(rs.subprocess, "run", return_value=mock.Mock(stdout=law)):
+            text = skill(f"| Rate | 9% | [law]({A}) |")
+            self.assertEqual(rs.check_text(text), (1, [], []))
+
+    def test_browser_check_title_without_challenge_content_is_still_checked(self):
+        law = (b"<title>Even geduld - Wettenbank</title><p>The rate is 8%.</p>"
+               + b"Ordinary legal provision. " * 30 + b"\n200")
+        with mock.patch.dict(rs._cache, {}, clear=True), \
+                mock.patch.object(rs.subprocess, "run", return_value=mock.Mock(stdout=law)):
+            n, misses, unreadable = rs.check_text(skill(f"| Rate | 9% | [law]({A}) |"))
+            self.assertEqual((n, [m[0] for m in misses], unreadable), (1, ["9%"], []))
 
     def test_rate_sheet_decimal_counts_for_percent(self):
         t = skill(f"| Homer | 4.85% | [sheet]({A}) |")
