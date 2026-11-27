@@ -1,10 +1,10 @@
 ---
 name: us-1120-corporation-return-schedule-ordinary-business
-description: How an S corporation shareholder takes a 2026 Schedule K-1 (Form 1120-S) box 1 ordinary business loss on the individual return, applying the four loss limits in the IRS order (stock and debt basis on Form 7203, at-risk on Form 6198, passive activity on Form 8582, excess business loss on Form 461) and tracking what each limit carries forward. Covers the basis ordering rules, the elective order, debt basis from direct loans only (guarantees give none), restoration and the repayment trap, the USD 25,000 open account debt rule, the seven material participation tests, and the 2026 excess business loss threshold of USD 256,000 (USD 512,000 joint). For tax preparers and S corporation shareholders. Federal only.
-version: "2.0"
+description: Apply the four federal loss limits to a 2026 S corporation shareholder’s Schedule K-1 box 1 loss, with stock and debt basis, at-risk amounts, the seven material participation tests, excess business losses, distributions and loan repayments. Includes original worked cases and separately labelled historical corporation-filing points.
+version: "2.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
@@ -13,198 +13,85 @@ type: computation
 
 # S corporation ordinary business loss on Schedule K-1 (Form 1120-S), tax year 2026
 
-> **Source-cited draft.** Built from the IRS S corporation stock and debt basis page, the Instructions for Form 7203, the Shareholder's Instructions for Schedule K-1 (Form 1120-S) (2025), the Instructions for Forms 6198, 8582 and 461, Rev. Proc. 2025-32, Public Law 119-21 section 70601, 26 U.S.C. 461, 465, 469, 1366 and 1367 and Treas. Reg. 1.1366-2, 1.1367-1, 1.1367-2 and 1.469-5T (govinfo), read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
-
-**Answer first.** A box 1 loss from an S corporation reaches the shareholder's return only after four limits, in this order: stock and debt basis (Form 7203), at-risk (Form 6198), passive activity (Form 8582), excess business loss (Form 461). Basis is stock basis after the year's income and distributions, plus the basis of loans the shareholder made directly to the corporation; a guarantee adds nothing until the shareholder pays. For 2026, business losses above business income plus **USD 256,000** (**USD 512,000** joint) are disallowed and carried as a net operating loss. Each limit keeps its own carryforward.
+Apply the shareholder’s **basis → at-risk → passive activity → excess business loss** limits in that order. A K-1 loss is not automatically deductible. For tax years beginning in 2026 the last limit uses **USD 256,000, or USD 512,000 on a joint return**. Track the amounts stopped by each limit separately. ([Form 7203 instructions](https://www.irs.gov/instructions/i7203); [Rev. Proc. 2025-32 §4.31](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf))
 
 ## Scope and who this is for
 
-In scope: an S corporation shareholder who receives a Schedule K-1 (Form 1120-S) for tax year 2026 with a loss in box 1, and the preparer of that shareholder's federal return. The skill sets out the four loss limits in the order the IRS applies them, a full worked example, and the carryforwards each limit leaves behind.
-
-Out of scope, and where it goes:
-
-| Topic | Skill |
-| --- | --- |
-| The C corporation return (Form 1120) | `us-form-1120-c-corp` |
-| The S corporation's own Form 1120-S return, the election and reasonable compensation | `us-s-corp-election-decision` |
-| Partnership K-1 losses | `us-form-1065-partnership` |
-| The qualified business income deduction | `us-qbi-deduction` |
-| Capital gain on a distribution over basis or a note repayment | `us-capital-gains-and-losses` |
-| The individual return itself | `us-form-1040-individual-return` |
-| State conformity, state basis and state net operating losses | the state's income tax skill |
+For an individual shareholder of a corporation with a valid S election and a box 1 ordinary business loss. Federal rules only. Despite the filename, this is not the C corporation Form 1120 computation. Corporation filing points retained from the earlier Guide appear separately below. The 2026 loss thresholds come from the 2026 revenue procedure; procedural box and line references use the read editions identified in Sources, not an assumed 2026 revision.
 
 ## Ask the client first
 
-- What was your stock basis at the start of the year, and do you have every Form 7203 (or basis worksheet) since you first held the stock? Without a beginning basis no loss can be proven.
-- Did you lend money to the corporation yourself, from your own funds, and is it under a signed note or just advances on account? Or did you only guarantee or co-sign a bank loan?
-- Did the corporation repay any shareholder loan this year, or pay you any distribution (K-1 box 16, codes D and E)?
-- Did any of the money you put in come from borrowing that you are not personally liable for, or from someone with an interest in the business?
-- How many hours did you (and your spouse) work in the business this year, and in which earlier years did you materially participate?
-- Do you have other business income or losses this year (Schedule C, Schedule F, other K-1s)? What is your filing status? Did you sell or give away any stock, or did the S election end?
+Obtain the K-1 and all activity statements; beginning stock basis and all prior basis worksheets; suspended losses classified by limit and year; contributions, distributions and nondeductible expenses; each loan’s documents, principal, basis, repayments and funding source; any guarantee payments or loss protection; work by the shareholder and spouse; other businesses and filing status; stock transfers and election changes. Ask whether the corporation’s year is calendar or fiscal. Do not substitute zero basis, passive status or an unwritten loan for missing evidence. **Hold the affected result until the facts are established.**
 
 ## The method, step by step
 
 ### Rates, bands and thresholds
 
-| Item | Amount, 2026 | Source |
-| --- | --- | --- |
-| Excess business loss threshold, tax years beginning in 2026, all filers except joint | USD 256,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Excess business loss threshold, tax years beginning in 2026, joint returns | USD 512,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Statutory excess business loss amount before inflation adjustment (joint is 200 percent of it) | USD 250,000 | [26 U.S.C. 461(l)(3)(A)(ii)(II)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec461.htm) |
-| 2025 threshold, all filers except joint (not the 2026 figure) | USD 313,000 | [Instructions for Form 461 (2025)](https://www.irs.gov/pub/irs-pdf/i461.pdf) |
-| 2025 threshold, joint returns (not the 2026 figure) | USD 626,000 | [Instructions for Form 461 (2025)](https://www.irs.gov/pub/irs-pdf/i461.pdf) |
-| Open account debt ceiling at the close of the corporation's year | USD 25,000 | [Treas. Reg. 1.1367-2(a)(2)(ii)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1367-2.pdf) |
-| Material participation, test 1 | more than 500 hours | [Treas. Reg. 1.469-5T(a)(1)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol8/pdf/CFR-2025-title26-vol8-sec1-469-5T.pdf) |
-| Material participation, test 3, and the floor for test 7 | more than 100 hours | [Treas. Reg. 1.469-5T(a)(3) and (b)(2)(iii)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol8/pdf/CFR-2025-title26-vol8-sec1-469-5T.pdf) |
+| Item and period | Amount or test | Official source |
+|---|---|---|
+| Excess business loss, tax years beginning in 2026 | USD 256,000; USD 512,000 joint | [Rev. Proc. 2025-32 §4.31](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Historical 2025 excess business loss threshold only | USD 313,000; USD 626,000 joint; do not use for 2026 | [Form 461 instructions, Threshold amount](https://www.irs.gov/instructions/i461) |
+| Open account debt at corporation year end | Aggregate outstanding principal not exceeding USD 25,000; see later-year rule below | [Reg. 1.1367-2(a)(2)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1367-2.pdf) |
 
-**Why 2026 is lower than 2025.** Public Law 119-21, section 70601, made the limit permanent (striking "and before January 1, 2029," for taxable years beginning after 31 December 2026) and, for taxable years beginning after 31 December 2025, changed the inflation adjustment in section 461(l)(3)(C) so that "December 31, 2018" becomes "December 31, 2025" and the base year "2017" becomes "2024". The 2025 figure was indexed from 2017; the 2026 figure is indexed only from 2024, so it sits just above the USD 250,000 statutory amount. Source: [Public Law 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm). The Form 461 instructions (2025) say the Act "permanently extended the disallowance of a deduction for excess business losses." The disallowed excess goes to Form 172 as a net operating loss carryover.
+The statutory base is USD 250,000, doubled for joint returns. The 2026 inflation reset uses 2024 rather than 2017; that is why the 2026 indexed amount is lower than 2025. P.L. 119-21 §70601(b),(c)(2) applies the reset after 31 December 2025, and §70601(a),(c)(1) makes the rule permanent after 31 December 2026. The older Code page’s end date must be read with P.L. 117-2 §9041 (covering 2026), P.L. 117-169 §13903(b), and P.L. 119-21, not applied in isolation. ([§461(l)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec461.htm); [P.L. 117-2](https://www.govinfo.gov/content/pkg/PLAW-117publ2/html/PLAW-117publ2.htm); [P.L. 117-169](https://www.govinfo.gov/content/pkg/PLAW-117publ169/html/PLAW-117publ169.htm); [P.L. 119-21 §70601](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm))
 
-### The four limits and their order
+### 1. Basis: Form 7203
 
-The IRS page on S corporation basis lists "four shareholder loss limitations: Stock and debt basis limitations At risk limitations Passive activity loss limitations Excess business loss limitation" and says "Each limitation is addressed in the order shown above and must be met before a shareholder is allowed to claim a pass-through loss." ([IRS: S corporation stock and debt basis](https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-stock-and-debt-basis))
+File Form 7203 if any one applies: claiming an aggregate loss deduction, including a prior basis-suspended loss; receiving a non-dividend distribution; disposing of stock, whether gain is recognized or not; or receiving a loan repayment. If both spouses receive a K-1 for jointly held stock, complete a separate form for each spouse. Maintaining it in other years helps track basis. ([Instructions, Who Must File and Name of Shareholder](https://www.irs.gov/instructions/i7203))
 
-The Form 7203 instructions give the same order with the form for each step: "the basis limitations (Form 7203), the at-risk limitations (Form 6198), the passive activity loss limitations (Form 8582), and the excess business loss limitations (Form 461)." ([Instructions for Form 7203](https://www.irs.gov/instructions/i7203))
+**Stock, Part I.** Beginning basis normally equals the prior year’s ending basis; purchased stock usually starts at cost. Record capital contributions separately from loans. For property exchanged under §351, gifts, inherited stock and multiple stock blocks, use the specific hold below rather than assuming cash cost or unrestricted fair market value. ([Instructions, lines 1–2](https://www.irs.gov/instructions/i7203))
 
-A loss that fails one limit does not move on to the next limit that year. It is carried forward under the rule of the limit that stopped it. The K-1 shows the corporation's figures "without reference to limitations on losses"; the shareholder adjusts them before reporting. ([Shareholder's Instructions for Schedule K-1 (Form 1120-S)](https://www.irs.gov/instructions/i1120ssk))
+Under §1367(a) and Reg. 1.1367-1(f), adjust in this order: income (including tax-exempt income) and excess non-oil/gas depletion; non-dividend distributions; noncapital nondeductible expenses and permitted oil/gas depletion; then losses and deductions. Basis never falls below zero. Taxable income increases basis only to the extent included on the shareholder’s return. An S corporation’s excluded discharge-of-indebtedness income does not increase shareholder basis. ([§1367](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partII-sec1367.htm); [Reg. 1.1367-1(f)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1367-1.pdf); [Form 7203 lines 3k, 8b](https://www.irs.gov/instructions/i7203))
 
-### Who must attach Form 7203
+The Reg. 1.1367-1(g) election reverses the last two adjustments, putting losses before nondeductibles. Excess nondeductibles then carry over for basis purposes; without the election they do not carry beyond stock and debt basis. Attach the election statement to a timely original or amended return and mark Form 7203 item E; it continues for this corporation until the IRS permits revocation. Adjustments generally take effect at corporate year end, or immediately before a stock disposition; a closing-of-books election requires separate periods. ([Reg. 1.1367-1(d),(g)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1367-1.pdf); [Form 7203](https://www.irs.gov/instructions/i7203))
 
-The Form 7203 instructions say: "Form 7203 is filed by S corporation shareholders who: Are claiming a deduction for their share of an aggregate loss from an S corporation (including an aggregate loss not allowed last year because of basis limitations), Received a non-dividend distribution from an S corporation, Disposed of stock in an S corporation (whether or not gain is recognized), or Received a loan repayment from an S corporation." ([Instructions for Form 7203](https://www.irs.gov/instructions/i7203))
+**Distributions.** Non-dividend distributions use stock basis, not debt basis. Report any excess as capital gain on Form 8949 and Schedule D without increasing basis for that gain; long-term treatment requires stock held more than one year. Form 1099-DIV dividends are not box 16 code D distributions. ([IRS basis page](https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-stock-and-debt-basis); [Form 7203 line 6](https://www.irs.gov/instructions/i7203))
 
-These four triggers are OR: any one of them requires the form. A shareholder who claims no loss this year but deducts a loss suspended last year still files. On a joint return where both spouses hold stock, "complete a separate Form 7203 for each spouse." The instructions also say it "may be beneficial" to complete and keep the form in years it is not required, so basis stays consistent.
+**Debt, Part II.** Only adjusted basis in bona fide corporate indebtedness running directly to the shareholder counts. A disregarded entity can be used; back-to-back loans depend on their real facts. A guarantee or co-signature alone creates no basis; an actual payment on bona fide guaranteed debt can create basis to that extent. ([Reg. 1.1366-2(a)(2), examples 1–4](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1366-2.pdf))
 
-The corporation does not track basis for the shareholder: "It is not the corporation's responsibility to track a shareholder's stock and debt basis but rather it is the shareholder's responsibility." ([IRS: S corporation stock and debt basis](https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-stock-and-debt-basis))
+Losses, deductions, nondeductible expenses and oil/gas depletion exceeding stock basis reduce debt basis, never below zero. Distributions do not reduce it. Reduce debts held at corporate year end; satisfied, disposed-of or forgiven debt is excluded. If the shareholder exits during the year, test debts held immediately before exit. With several debts, allocate the reduction in proportion to their bases. ([Reg. 1.1367-2(b),(d)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1367-2.pdf); [Form 7203](https://www.irs.gov/instructions/i7203))
 
-### Limit 1: stock basis
+**Restoration and repayment.** A later year’s net increase (income and excess depletion less all §1367(a)(2) decreases, including distributions) first restores prior debt reductions before increasing stock basis. Only debt held at the beginning of that later year qualifies, and restoration is capped at its beginning-year adjusted basis ignoring prior S corporation reductions. Restore debt repaid that year first, to the extent necessary to offset repayment gain, then allocate the remainder in proportion to outstanding unrestored reductions. Restoration generally occurs at year end, but immediately before the first repayment/disposition when that happens earlier. Repayment of debt whose basis remains reduced is a recognition event. ([Reg. 1.1367-2(c),(d)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1367-2.pdf))
 
-**Starting point.** Stock basis starts with the shareholder's initial capital contribution or the cost of the stock bought. Stock received in a section 351 transfer generally takes the carryover basis of the assets transferred, less liabilities the corporation assumed. Inherited stock generally takes fair market value at the date of death or the alternate valuation date. Stock received as a gift generally takes the donor's basis, with special rules when value is below that basis. Loans to the corporation are NOT stock basis; they go to debt basis. ([Instructions for Form 7203](https://www.irs.gov/instructions/i7203))
+For gain character, the Form 7203 line 34 instructions prescribe capital gain on a formal note (Form 8949/Schedule D), ordinary gain on open account debt (Form 4797), and no basis increase for the gain. **An unwritten advance exceeding USD 25,000 needs a separate character determination:** the same instructions’ line 17 caution says prior-year excess debt is a formal note for gain calculation, while line 34 includes Reg. 1.1367-2(a)(2)(ii) debt in ordinary gain. Do not use either label automatically for that conflict. Check this point with one of our partner accountants. ([Instructions, lines 17 and 34](https://www.irs.gov/instructions/i7203))
 
-**Increases and decreases.** Under section 1367(a)(1), stock basis increases by the shareholder's share of income items (separately stated and nonseparately computed, including tax-exempt income) and by excess depletion. Under section 1367(a)(2), it decreases, "but not below zero", by non-dividend distributions, items of loss and deduction, nondeductible expenses not chargeable to capital, and certain oil and gas depletion. ([26 U.S.C. 1367](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partII-sec1367.htm))
+Open account debt consists of unwritten advances and repayments treated as one debt; net the year’s advances/repayments and combine with the opening principal balance. If the resulting year-end principal exceeds USD 25,000, that debt is treated as written-instrument debt for basis purposes in subsequent years, separately tracked; it is not an annual reset of all unwritten advances. ([Reg. 1.1367-2(a)(2),(d)(2)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1367-2.pdf))
 
-An amount that must be included in gross income increases basis only to the extent it is actually included in gross income on the shareholder's return (section 1367(b)(1)). Tax-exempt income is not subject to that rule; it is an item of income under section 1366(a)(1)(A) and increases basis. Only non-dividend distributions (K-1 box 16, code D) reduce stock basis; dividends reported on Form 1099-DIV do not. ([26 U.S.C. 1366](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partII-sec1366.htm))
+**Loss, Part III.** Available basis is stock basis after the applicable preceding adjustments plus debt basis before this year’s loss reduction. Combine current losses with basis-suspended losses and allocate limited basis proportionately across the loss/deduction categories. The §1367-1(g) election changes which nondeductibles precede losses. Excess losses retain character and carry indefinitely subject to later basis. Report released prior-year amounts separately by year rather than netting them into the current K-1. ([Reg. 1.1366-2(a)(3)–(5)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1366-2.pdf); [K-1 instructions, Part III](https://www.irs.gov/instructions/i1120ssk))
 
-**The order of adjustments.** Treas. Reg. 1.1367-1(f) sets the order for corporate tax years beginning on or after 18 August 1998 ([Treas. Reg. 1.1367-1](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1367-1.pdf)):
+A partial stock transfer ordinarily leaves the suspended basis loss with the transferor; transferring all stock permanently loses it. For qualifying §1041 transfers after 31 December 2004, the loss on transferred stock goes to the spouse/former spouse under the regulation’s allocation rule. Check a planned disposal before completing it; a contribution does not guarantee that the other limits will allow a deduction. If S status ends, the last S year’s suspended basis losses have a post-termination transition rule capped by stock basis, not debt basis, on its last day. Do not use an ordinary annual carryforward calculation for that event. ([Reg. 1.1366-2(a)(6)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1366-2.pdf); [§1366(d)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partII-sec1366.htm))
 
-1. Increase for income items and excess depletion.
-2. Decrease for non-dividend distributions.
-3. Decrease for noncapital, nondeductible expenses and oil and gas depletion.
-4. Decrease for items of loss and deduction.
+### 2. At-risk: Form 6198
 
-Because distributions come before losses, a distribution can use up basis that would otherwise have let a loss through. Section 1366(d)(1)(A) builds this into the loss limit: stock basis for the loss limit is "determined with regard to paragraphs (1) and (2)(A) of section 1367(a)", that is, after income and after distributions.
+Compute the amount at risk for each activity independently of the basis calculation. Section 465 limits the current loss to the amount at risk at year end; amounts include money and adjusted property basis contributed and eligible borrowing. Personal liability can qualify borrowing; a pledge of property outside the activity counts only up to the net fair market value of the taxpayer’s interest, subject to §465(b)(2)’s anti-financing rule. Nonrecourse financing and loss protection generally do not qualify. Qualified nonrecourse financing of an activity holding real property is an exception; mineral property is excluded. Interested/related-party borrowing has creditor and corporate-shareholder exceptions, so a direct shareholder loan is not disqualified merely because its lender owns stock. Use the financing holds below for these exceptions. ([§465(a),(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec465.htm); [Form 6198, Amounts Not at Risk](https://www.irs.gov/instructions/i6198))
 
-Basis is adjusted as of the last day of the corporation's tax year. If the shareholder disposes of stock during the year, the adjustments for that stock take effect immediately before the disposition.
+Form 6198 generally applies when an activity incurred a loss and had amounts not at risk invested during the year. Its instructions also require filing for the residual category of trade/business activities with the specified interested-party borrowing, subject to the pre-May 2004 exception. Do not reduce that to a loss-only filing test. Obtain separate corporate activity statements and apply the form’s aggregation/separation rules. Pre-1987 real-property cases need the specific exception, not a blanket exemption. ([Form 6198, Who Must File and At-Risk Activities](https://www.irs.gov/instructions/i6198))
 
-**The elective order.** Under Reg. 1.1367-1(g) a shareholder may elect to take losses and deductions (step 4) BEFORE nondeductible expenses (step 3). If elected, nondeductible expenses that exceed stock and debt basis carry to the next year. The election is made by a statement attached to a timely filed original or amended return. "Once made, the election applies to the year for which it is made and all future tax years for that S corporation, unless the IRS agrees to revoke your election." ([Shareholder's Instructions for Schedule K-1 (Form 1120-S)](https://www.irs.gov/instructions/i1120ssk)) Form 7203 has a check box (item E) for it. Without the election, nondeductible expenses that exceed basis "are not suspended and carried forward." ([IRS: S corporation stock and debt basis](https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-stock-and-debt-basis))
+Carry the disallowed loss to the next year under §465(a)(2). If at-risk falls below zero, §465(e) recaptures the shortfall into activity income, capped by earlier allowable losses less prior recapture; the amount recaptured is a deduction allocated to the activity in the succeeding year. ([§465(a),(e)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec465.htm))
 
-**Distributions in excess of stock basis.** A non-dividend distribution is tax-free up to stock basis. Debt basis does not count for distributions. "A non-dividend distribution in excess of stock basis is taxed as a capital gain on the shareholder's personal return. It is a long-term capital gain (LTCG) if the S corporation stock has been held for longer than one year." Report the excess on Form 8949 and Schedule D, and do not increase stock basis for the gain reported. ([Instructions for Form 7203](https://www.irs.gov/instructions/i7203))
+### 3. Passive activity: Form 8582
 
-### Limit 1 continued: debt basis
+For the ordinary trade/business activity here, lack of material participation makes it passive. Passive losses normally offset passive income, not wages or ordinary portfolio interest; excess carries under §469(b). Disposal of the entire activity interest to an unrelated party in a fully taxable transaction releases the activity’s losses from this limit; installment sales, gifts, death, grouping and rental exceptions need separate treatment. Becoming active alone does not release all old passive losses: §469(f) first uses them against that activity’s income and leaves the rest subject to passive rules. ([§469(b),(c),(e),(f),(g)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec469.htm); [Form 8582](https://www.irs.gov/instructions/i8582))
 
-**Only direct loans count.** Debt basis is the shareholder's adjusted basis in bona fide indebtedness "of the S corporation that runs directly to the shareholder." Whether a loan is bona fide is a facts and circumstances question under general federal tax principles. A loan made through an entity disregarded as separate from the shareholder can count. A back-to-back loan through another corporation can count only if it is bona fide indebtedness running to the shareholder. ([Treas. Reg. 1.1366-2](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1366-2.pdf))
+One of the seven tests can establish material participation. Apply the definitions and exclusions, not just an hours total. ([Reg. 1.469-5T](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol8/pdf/CFR-2025-title26-vol8-sec1-469-5T.pdf))
 
-A guarantee gives no debt basis: "A shareholder does not obtain basis of indebtedness in the S corporation merely by guaranteeing a loan or acting as a surety, accommodation party, or in any similar capacity relating to a loan." Basis arises only when, and to the extent that, the shareholder actually makes a payment on the guaranteed debt. The Form 7203 instructions say the same, and add that "Distributions don't reduce loan basis".
+| Test | Required conditions | Official source |
+|---|---|---|
+| 1 | More than 500 hours in the year | [§1.469-5T(a)(1)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol8/pdf/CFR-2025-title26-vol8-sec1-469-5T.pdf) |
+| 2 | Substantially all participation of all individuals, including non-owners | [§1.469-5T(a)(2)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol8/pdf/CFR-2025-title26-vol8-sec1-469-5T.pdf) |
+| 3 | More than 100 hours and at least as much as any other individual, including non-owners | [§1.469-5T(a)(3)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol8/pdf/CFR-2025-title26-vol8-sec1-469-5T.pdf) |
+| 4 | Significant participation activities total more than 500 hours; each is a trade/business with more than 100 hours and no other material-participation test met | [§1.469-5T(a)(4),(c)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol8/pdf/CFR-2025-title26-vol8-sec1-469-5T.pdf) |
+| 5 | Material participation, determined without this test, in any 5 of the preceding 10 years | [§1.469-5T(a)(5)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol8/pdf/CFR-2025-title26-vol8-sec1-469-5T.pdf) |
+| 6 | Personal service activity: material participation in any 3 preceding years; covered professions or another business where capital is not a material income-producing factor | [§1.469-5T(a)(6),(d)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol8/pdf/CFR-2025-title26-vol8-sec1-469-5T.pdf) |
+| 7 | Regular, continuous, substantial participation on all facts; unavailable at 100 hours or less. Management hours do not count if another manager is compensated or another individual manages for more hours | [§1.469-5T(a)(7),(b)(2)](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol8/pdf/CFR-2025-title26-vol8-sec1-469-5T.pdf) |
 
-**Reduction of debt basis.** When losses, deductions and nondeductible expenses for the year exceed stock basis, the excess reduces (but not below zero) the basis of loans the shareholder holds at the close of the corporation's year. A loan repaid, disposed of or forgiven during the year is not held at year end and is not reduced. With several loans, the reduction is spread in proportion to each loan's basis. ([Treas. Reg. 1.1367-2](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1367-2.pdf))
+Count qualifying work by the shareholder and spouse, excluding investor work without direct day-to-day involvement and unusual owner work principally intended to avoid passive-loss rules. Use participation during the corporation’s tax year. Reasonable evidence can include calendars and narrative summaries; contemporaneous daily logs are not mandatory. ([K-1 instructions, Material participation](https://www.irs.gov/instructions/i1120ssk); [Form 8582, Proof of participation](https://www.irs.gov/instructions/i8582))
 
-**Restoration of debt basis.** Under section 1367(b)(2)(B), a later year's "net increase" first restores reduced debt basis "before any of it may be used to increase the shareholder's basis in the stock". Net increase means the shareholder's income items exceed ALL the section 1367(a)(2) decrease items for the year, distributions included. Restoration applies only to debt held at the start of that year, and never above the debt's adjusted basis at the start of that year with the earlier S corporation reductions left out (in practice, not above the loan's basis before those reductions). With several loans, net increase restores first any loan repaid that year (to the extent needed to offset gain on the repayment), then the others in proportion to their unrestored reductions.
+### 4. Excess business loss: Form 461
 
-**The repayment trap.** If the corporation repays a loan whose basis was reduced and not fully restored, the repayment "is a recognition event". Each repayment is split between a return of basis and income. In the year of a repayment, restoration takes effect immediately before the first repayment, so that year's net increase can cut the gain. The character of the gain depends on the paperwork. The Form 7203 instructions say: "Debt evidenced by a formal note will result in capital gain, and should be reported on Form 8949 and Schedule D. Any open account debt (including debt referenced in Regulations section 1.1367-2(a)(2)(ii)) will result in ordinary gain and should be reported on Form 4797". Gain on repayment does not increase basis.
+At shareholder level, aggregate all trade/business deductions and income. The excess over business income plus the applicable threshold is disallowed. Exclude employee-service income and deductions (including the owner’s W-2 wages), deductions under §§172 and 199A, and capital losses. Capital gains count only up to the lesser of business capital-gain net income and total capital-gain net income. Disallowed excess is treated as an NOL for subsequent-year carryover under §172; use Form 172 for the NOL computation rather than assuming the whole allowed business loss is itself an NOL. ([§461(l)(2)–(4)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec461.htm); [Form 461](https://www.irs.gov/instructions/i461); [2026 thresholds](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf))
 
-**Open account debt.** Shareholder advances not evidenced by separate written instruments, with all advances and repayments in the year netted at year end. If the net unwritten advances are more than USD 25,000 at the close of a year, then for every LATER year Reg. 1.1367-2(a)(2)(ii) treats that debt like debt under a written instrument for the basis rules, and it is no longer open account debt. For the character of gain, the Form 7203 instructions still group that debt with open account debt: ordinary gain on Form 4797.
-
-### Limit 1 result: the section 1366(d) loss limit and suspended losses
-
-Section 1366(d)(1): the aggregate losses and deductions a shareholder takes into account for the year "shall not exceed the sum of" (A) adjusted stock basis, after income and distributions, AND (B) adjusted basis of any indebtedness of the corporation to the shareholder, before this year's debt basis reduction. ([26 U.S.C. 1366](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partII-sec1366.htm))
-
-When several kinds of loss and deduction exceed the limit, the limit is shared among them in proportion to their size. Losses carried in from earlier years are added to this year's losses for that proration. ([Treas. Reg. 1.1366-2](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1366-2.pdf))
-
-Section 1366(d)(2): a loss disallowed for lack of basis "shall be treated as incurred by the corporation in the succeeding taxable year with respect to that shareholder". It keeps its character and carries forward with no time limit. A suspended loss is not netted with next year's ordinary income in the basis ordering; it is listed on its own line on Schedule E (Form 1040).
-
-**Losses on disposal of stock.** A suspended basis loss is personal to the shareholder. If the shareholder transfers SOME stock, the suspended loss is not reduced and the buyer gets none of it. If the shareholder transfers ALL of the stock, "any disallowed loss or deduction is permanently disallowed." The exception is a transfer to a spouse or former spouse under section 1041(a) after 31 December 2004: the loss on the transferred stock moves to the transferee. So a shareholder with a suspended loss who is about to sell all the stock should look at restoring basis first (for example a real capital contribution) and should not expect the loss to survive the sale.
-
-When the S election ends, losses suspended in the last S year are treated as incurred on the last day of the post-termination transition period, limited to stock basis (not debt basis) at that day.
-
-### Limit 2: at-risk (section 465, Form 6198)
-
-Section 465(a)(1): for an individual, a loss from an activity "shall be allowed only to the extent of the aggregate amount with respect to which the taxpayer is at risk ... for such activity at the close of the taxable year." Amounts at risk include money and the adjusted basis of property contributed, and amounts borrowed for which the taxpayer is personally liable or has pledged property not used in the activity. ([26 U.S.C. 465](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec465.htm))
-
-For an S corporation shareholder, stock or loan basis is NOT at risk if the money used came from nonrecourse borrowing (other than qualified nonrecourse financing), was protected by a guarantee or stop-loss arrangement, or was borrowed from a person with an interest in the activity or a related person, other than a creditor. ([Shareholder's Instructions for Schedule K-1 (Form 1120-S)](https://www.irs.gov/instructions/i1120ssk))
-
-Form 6198 is needed when the shareholder had a loss from an at-risk activity AND had amounts not at risk invested in it. ([Instructions for Form 6198](https://www.irs.gov/instructions/i6198)) At-risk applies activity by activity, so get the corporation's separate statement for each activity.
-
-A loss not allowed under section 465 "shall be treated as a deduction allocable to such activity in the first succeeding taxable year." If the amount at risk falls below zero at a year end, section 465(e) brings the shortfall back into income, capped at the earlier losses that reduced the amount at risk, less amounts already brought back.
-
-### Limit 3: passive activity (section 469, Form 8582)
-
-A trade or business in which the shareholder does not materially participate is a passive activity. Its losses offset only passive income, and the excess carries to the next year under section 469(b). ([26 U.S.C. 469](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec469.htm)) Carried passive losses are freed against passive income, or "when you sell or exchange your entire interest in the activity in a fully taxable transaction to an unrelated party." ([Instructions for Form 8582](https://www.irs.gov/instructions/i8582))
-
-**Material participation: the seven tests in Reg. 1.469-5T(a).** An individual materially participates for the year if ANY ONE of these is met ([Treas. Reg. 1.469-5T](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol8/pdf/CFR-2025-title26-vol8-sec1-469-5T.pdf)):
-
-1. More than 500 hours in the activity during the year.
-2. Participation is substantially all of the participation of all individuals, non-owners included.
-3. More than 100 hours AND not less than any other individual, non-owners included.
-4. The activity is a significant participation activity AND total participation in all such activities exceeds 500 hours.
-5. Material participation in any five of the ten immediately preceding years, consecutive or not.
-6. A personal service activity with material participation in any three preceding years, consecutive or not.
-7. Regular, continuous and substantial participation on all the facts and circumstances.
-
-Test 7 is not available to someone who participates for 100 hours or less in the year. Work done as an investor, such as reviewing financial statements in a non-managerial role, does not count. Work the shareholder or the shareholder's spouse does in the activity generally counts, "where you own your stock at the time the work is done". Material participation is judged on participation during the corporation's tax year. A shareholder who materially participates reports box 1 on Schedule E (Form 1040), line 28, column (i) or (k). ([Shareholder's Instructions for Schedule K-1 (Form 1120-S)](https://www.irs.gov/instructions/i1120ssk))
-
-### Limit 4: excess business loss (section 461(l), Form 461)
-
-Section 461(l) applies at the shareholder level. It compares the shareholder's total trade or business deductions with total trade or business income plus the threshold. The excess "shall not be allowed" this year and "shall be treated as a net operating loss" carried to later years. Wages, and anything else from performing services as an employee, are left out of the computation. So the W-2 salary the owner draws from the S corporation does not absorb the loss under this limit. ([26 U.S.C. 461](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec461.htm))
-
-Two items stay out of the comparison. "Deductions for losses from sales or exchanges of capital assets shall not be taken into account", and gains from sales or exchanges of capital assets count only up to "the lesser of (I) the capital gain net income determined by taking into account only gains and losses attributable to a trade or business, or (II) the capital gain net income". The deductions side is figured "without regard to any deduction allowable under section 172 or 199A".
-
-### Steps
-
-1. Collect the K-1 (Form 1120-S) and any attached statements, the prior year's Form 7203, and the loan papers between shareholder and corporation. Basis is the shareholder's job.
-2. Decide whether Form 7203 is required using the four triggers above.
-3. Stock basis, Form 7203 Part I: start with beginning basis, add income items, subtract non-dividend distributions (excess over basis is capital gain on Form 8949), subtract nondeductible expenses, in the Reg. 1.1367-1(f) order unless the (g) election is in effect.
-4. Debt basis, Form 7203 Part II: list each direct loan at its start-of-year basis, add new formal notes and net open account advances, apply any restoration from a net increase, and work out gain on any repayment. Ignore guarantees unless the shareholder paid.
-5. Basis limit, Form 7203 Part III: add this year's losses to losses suspended in earlier years, compare with stock basis plus debt basis, prorate if more than one type, and carry the excess forward under section 1366(d)(2).
-6. At-risk, Form 6198: if any of the basis came from amounts not at risk, limit the loss that passed step 5 to the amount at risk at year end; carry the rest under section 465(a)(2).
-7. Passive, Form 8582: test material participation under the seven tests. If passive, allow the loss that passed step 6 only against passive income; carry the rest under section 469(b).
-8. Excess business loss, Form 461: combine every business result of the shareholder, leave out wages, capital losses and any section 172 or 199A deduction, compare the net business loss with the 2026 threshold (USD 256,000, or USD 512,000 joint), and send any excess to Form 172 as a net operating loss.
-9. Report what survives on Schedule E (Form 1040), line 28, with each suspended loss allowed this year on its own line. Keep a carryforward schedule that names the limit behind each carried amount.
-
-## Boundary and exception table
-
-| Situation | Treatment |
-| --- | --- |
-| Guarantee of a corporate bank loan, nothing paid | No debt basis; basis only for amounts actually paid under the guarantee |
-| Loan from the shareholder through another corporation (back-to-back) | Debt basis only if bona fide indebtedness running directly to the shareholder; refer if disputed |
-| Distribution larger than stock basis | Excess is capital gain (long-term if held over one year); debt basis does not cover distributions |
-| Nondeductible expenses larger than basis, no (g) election | Not suspended and not carried forward |
-| Elective order under Reg. 1.1367-1(g) | Losses before nondeductible expenses; binding for later years unless the IRS agrees to revoke |
-| Repayment of a reduced-basis loan | Gain: capital if a formal note, ordinary (Form 4797) if open account debt |
-| Net unwritten advances over USD 25,000 at a year end | Treated as written-instrument debt for basis in later years; still ordinary gain on repayment |
-| Sale of ALL the stock with a suspended basis loss | Suspended loss is lost, except a section 1041 transfer to a spouse or former spouse |
-| Shareholder worked 100 hours or less | Test 7 is not available |
-| W-2 wages from the S corporation | Left out of the excess business loss computation |
-| 2025 tax year | Threshold USD 313,000 (USD 626,000 joint), not the 2026 figures |
-
-### Defaults when a fact is missing
-
-| Missing fact | Default, and flag it |
-| --- | --- |
-| Beginning stock basis | No loss allowed until basis is rebuilt from records; refer if it cannot be |
-| Whether a loan is a formal note or open account | Treat as open account (ordinary gain on repayment) until a signed note is produced |
-| Source of the money for the stock (recourse or nonrecourse) | Ask; do not assume it is at risk |
-| Hours worked | Treat as passive until hours are documented |
-| Other business income and losses of the shareholder | Ask for every Schedule C, Schedule F and K-1 before applying the excess business loss limit |
-| Filing status | Ask; the threshold doubles for a joint return |
-
-### Red flags to raise with the client
-
-| Flag | Why it matters |
-| --- | --- |
-| No Form 7203 or basis schedule for earlier years | Loss not provable on audit |
-| Shareholder relies on a guarantee for basis | No debt basis until payment |
-| Repayment of a shareholder loan in a year after losses | Gain on repayment, often missed |
-| Large distributions in a loss year | Distributions reduce basis before the loss |
-| Planned sale of all the stock with suspended losses | The losses disappear on the sale |
-| Combined business losses over USD 256,000 (USD 512,000 joint) | Form 461 and a net operating loss carryover |
+**Filing hold:** exceeding the net-loss threshold is not necessarily the only Form 461 filing trigger. The read 2025 instructions also test an individual line loss. This Guide does not establish the final 2026 form’s separate filing-trigger amount or revised line numbers. Do not copy the 2025 form’s amounts into 2026. Check this point with one of our partner accountants.
 
 ## Worked cases
 
@@ -219,7 +106,7 @@ All amounts are invented US dollars for illustration. The only official figure u
 | Less non-dividend distributions (box 16D) | (8,000) | 23,000 |
 | Less nondeductible expenses (box 16C) | (2,000) | 21,000 |
 
-The distribution of 8,000 is below the 31,000 of basis before distributions, so it is tax-free. Debt basis: 40,000 from the direct loan; the guarantee adds nothing. Section 1366(d) limit: 21,000 + 40,000 = 61,000; suspended for basis: 29,000. At-risk: the 10,000 of stock cost paid with nonrecourse borrowing is not at risk, so 51,000 passes and 10,000 is carried under section 465. Passive: 1,200 hours is more than 500 hours (test 1), so the 51,000 is nonpassive. (If she had worked 80 hours, met no other test and had no passive income, all 51,000 would be suspended under section 469(b), and test 7 would not be available.) Excess business loss: 51,000 + 240,000 = 291,000 of net business loss, wages left out; over the 256,000 threshold by 35,000, which becomes a net operating loss on Form 172. Business loss deducted in 2026: 256,000. Check: 29,000 + 10,000 + 51,000 = 90,000.
+The distribution of 8,000 is below the 31,000 of basis before distributions, so it is tax-free. Debt basis: 40,000 from the direct loan; the guarantee adds nothing. Section 1366(d) limit: 21,000 + 40,000 = 61,000; suspended for basis: 29,000. At-risk: the 10,000 financed by the nonrecourse loan secured only by the stock is not at risk. On these facts, the Form 6198 computation before this year’s loss is 30,000 - 10,000 + 40,000 + 1,000 - 8,000 - 2,000 = 51,000; 51,000 passes and 10,000 is carried under section 465. This is a separate at-risk calculation, not a general rule to subtract nonrecourse borrowing from whatever passes the basis limit. Passive: 1,200 hours is more than 500 hours (test 1), so the 51,000 is nonpassive. (If she had worked 80 hours, met no other test and had no passive income, all 51,000 would be suspended under section 469(b), and test 7 would not be available.) Excess business loss: 51,000 + 240,000 = 291,000 of net business loss, wages left out; over the 256,000 threshold by 35,000, which becomes a net operating loss on Form 172. Business loss allowed through these four limits in 2026: 256,000. The 1,000 portfolio interest remains separately reportable; it is not business income in this example’s Form 461 calculation. Check: 29,000 + 10,000 + 51,000 = 90,000.
 
 ```oa-check
 name: S corporation K-1 loss through the four limits, single (2026)
@@ -262,7 +149,7 @@ Carryforwards into 2027:
 | 10,000 | Section 465, at-risk | An increase in her amount at risk in the activity (Form 6198) |
 | 35,000 | Section 461(l), excess business loss | Used as a net operating loss under section 172 (Form 172) |
 
-**Case 2, a distribution over basis and the repayment trap.** Same facts, but the 2026 distribution is 35,000 instead of 8,000. Basis before distributions is 31,000, so 31,000 is tax-free and 4,000 is capital gain on Form 8949; her 40,000 of debt basis does not cover any of the distribution, and stock basis is then 0. The 2,000 of nondeductible expenses comes next in the Reg. 1.1367-1(f) order and, with no stock basis left, reduces debt basis to 38,000 (Reg. 1.1367-2). That 38,000 is all the basis left for the loss, so 52,000 of the 90,000 loss is suspended. Then in 2027 the corporation repays 10,000 of the note and 2027 has no net increase to restore debt basis: her basis in the note is 0 and the whole 10,000 is gain, capital gain on Form 8949 and Schedule D because the debt is a formal note. She files Form 7203 for 2027 because she received a loan repayment.
+**Case 2, a distribution over basis and the repayment trap.** Same facts, but the 2026 distribution is 35,000 instead of 8,000. Basis before distributions is 31,000, so 31,000 is tax-free and 4,000 is capital gain on Form 8949; her 40,000 of debt basis does not cover any of the distribution, and stock basis is then 0. The 2,000 of nondeductible expenses comes next in the Reg. 1.1367-1(f) order and, with no stock basis left, reduces debt basis to 38,000 (Reg. 1.1367-2). That 38,000 is all the basis left for the loss, so 52,000 of the 90,000 loss is suspended. For this variant too, the full 38,000 passing basis uses all remaining debt basis, even if a later limit suspends a deduction. Then in 2027 the corporation repays 10,000 of the note and 2027 has no net increase to restore debt basis: her basis in the note is 0 and the whole 10,000 is gain, capital gain on Form 8949 and Schedule D because the debt is a formal note. She files Form 7203 for 2027 because she received a loan repayment.
 
 ```oa-check
 name: Distribution over stock basis, then repayment of a zero-basis note
@@ -289,50 +176,74 @@ expected:
   repayment_gain: 10000.00
 ```
 
-## When to refuse or refer
-
-| Code | Situation | Action |
-| --- | --- | --- |
-| R-K1-NOBASIS | No reliable beginning basis and no records to rebuild it | Refer: claiming a loss without proven basis invites disallowance |
-| R-K1-DEBT | Back-to-back loans, loans through another entity, or disputed bona fide debt status | Refer: the regulation turns on all the facts and circumstances |
-| R-K1-GUAR | Payments made under a guarantee, debt restructurings, or shareholder debt forgiven by or to the corporation | Refer |
-| R-K1-BASISCASES | Inherited stock (income in respect of a decedent rules under section 1367(b)(4)), stock from a section 351 transfer with liabilities over basis, or several blocks of stock with different bases bought or sold during the year | Refer |
-| R-K1-TERM | A terminated S election and losses in the post-termination transition period | Refer |
-| R-K1-PASSIVE | Grouping of activities, rental activities inside the corporation (K-1 boxes 2 and 3), real estate professional claims | Outside this skill; refer |
-| R-K1-OTHER | Partnership K-1 losses, reasonable compensation, QBI | Use `us-form-1065-partnership`, `us-s-corp-election-decision`, `us-qbi-deduction` |
-| R-K1-ENTITY | The corporation's own Form 1120-S return, or whether the S election is valid or has ended | Refer: this skill covers only the shareholder's loss |
-| R-K1-STATE | State conformity, state basis and state net operating losses | Outside this skill |
-
 ## Filing and payment
 
-The shareholder attaches Form 7203 (when any trigger applies), Form 6198 (when amounts not at risk are invested), Form 8582 (passive losses) and Form 461 (excess business loss) to the 2026 Form 1040, due 15 April 2027; an extension to 15 October 2027 extends filing, not payment. Allowed losses go on Schedule E (Form 1040), Part II, line 28; the excess business loss goes to Form 172 as a net operating loss carryover. The S corporation's own Form 1120-S for calendar 2026 is due 15 March 2027 (see `us-corporate-extension-form-7004-and-the` for its extension).
+After the limits, report nonpassive box 1 income/loss on Schedule E (Form 1040), line 28 column (i) or (k) in the read 2025 instructions; passive amounts go through Form 8582. Report K-1 items in the shareholder year in which the corporation’s tax year ends. Keep released prior-year losses separately identified and keep a schedule by year, activity and limiting rule. Attach the required loss-limitation forms, not the K-1 itself unless the backup-withholding exception applies. Final 2026 edition-specific line changes remain on the filing hold above. ([K-1 instructions, Purpose, Part III and Box 1](https://www.irs.gov/instructions/i1120ssk))
 
-## Completion checklist
+For an ordinary calendar-year individual Form 1040, the 2026 return is due **15 April 2027**; a timely automatic filing extension ordinarily gives **15 October 2027**, without extending payment. Overseas, disaster and other special deadline relief needs separate checking. ([§6072(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm); [IRS extension guidance](https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return); [§6151(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap62-subchapA-sec6151.htm))
 
-- Form 7203 need tested against all four triggers; one form per spouse holding stock.
-- Stock basis adjusted in the Reg. 1.1367-1(f) order, or the (g) election documented.
-- Debt basis from direct loans only; guarantees excluded unless paid; open account debt netted at year end against USD 25,000.
-- Basis limit applied with proration across loss types and prior suspended losses.
-- At-risk, passive and excess business loss limits applied in that order, each with its form.
-- 2026 threshold used (USD 256,000 or USD 512,000), not the 2025 figures.
-- Carryforward schedule names the limit behind each carried amount.
+### Corporation filing points retained from the historical Guide
+
+These are distinct from the shareholder’s deduction. Confirm the Form 2553 election was accepted and remains in effect; do not file for a year before it takes effect. Prepare Form 1120-S, Schedule K and each shareholder’s K-1 with the pro rata ordinary business result in box 1, separately identifying each activity. Furnish each K-1 by the return’s filing due date. ([Form 1120-S instructions, Who Must File and Schedule K-1](https://www.irs.gov/instructions/i1120s))
+
+| Period and ordinary calendar-year deadline | Treatment | Official source |
+|---|---|---|
+| Historical tax year 2025 | Form 1120-S due 16 March 2026 because 15 March was Sunday | [2025 instructions, When To File](https://www.irs.gov/instructions/i1120s) |
+| Tax year 2026 | Form 1120-S due 15 March 2027; fiscal years ordinarily use the 15th day of the third month after year end | [§6072(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm) |
+
+Form 7004 generally must be filed by the regular due date to request a filing extension; any corporate tax due ordinarily remains payable by the unextended due date. Dissolution, S termination and §336(e) transactions can change the return period/deadline: hold those rather than use this calendar-year row. ([Form 1120-S instructions, Extension and Tax Payments](https://www.irs.gov/instructions/i1120s))
+
+**Historical penalty hold:** the earlier Guide’s USD 340 per incorrect/late K-1, USD 680 for intentional disregard, and 10% alternative are not a complete penalty calculation and must not be used for a 2026 return. They omit correction timing, caps, reasonable cause, and the correct furnishing-year inflation amount. No penalty liability is calculated here. Check this point with one of our partner accountants. ([2025 instructions, Failure to furnish information timely](https://www.irs.gov/instructions/i1120s))
+
+Keep corporate records as long as needed for tax administration; the instructions’ usual period is 3 years after each shareholder return’s due date or filing date, whichever is later. Keep property-basis records as long as needed for original/replacement basis and retain filed returns; do not discard a shareholder’s continuing basis or suspended-loss evidence just because 3 years passed. ([Recordkeeping](https://www.irs.gov/instructions/i1120s); [Form 7203 record notice](https://www.irs.gov/instructions/i7203))
+
+## When to refuse or refer
+
+Each hold below means no usable conclusion for the affected issue. Check this point with one of our partner accountants.
+
+| Issue from the original Guide | Destination or hold |
+|---|---|
+| R-K1-NOBASIS: no reliable beginning basis or records | Rebuild from records; hold loss deduction until supported |
+| R-K1-DEBT / R-K1-GUAR: disputed direct debt, back-to-back/entity loans, guarantee payments, restructuring or forgiveness | Hold the debt-specific result; do not default missing loan documents to ordinary gain |
+| R-K1-BASISCASES: §351 property/liabilities, gifts including below-basis value, inherited stock/IRD, multiple stock blocks or midyear transfers | Hold the acquisition/transfer computation; ordinary cash-purchase basis is not a substitute |
+| R-K1-TERM: terminated election, post-termination transition period | Apply specialist transition computation; do not assume annual debt-basis relief |
+| At-risk special cases: qualified nonrecourse financing, interested/related lenders, pre-1987 real property, grouping/separation or recapture | Hold the special result until the exception and activity allocation are established |
+| R-K1-PASSIVE: rental boxes 2/3, grouping, real estate professional, former-passive activity or special farming tests | Hold special treatment; the ordinary box 1 tests do not decide these exceptions |
+| R-K1-OTHER: partnership, reasonable compensation, QBI | `us-form-1065-partnership`, `us-s-corp-election-decision`, `us-qbi-deduction` |
+| C corporation return / distribution or repayment capital gains / individual-return assembly | `us-form-1120-c-corp`, `us-capital-gains-and-losses`, `us-form-1040-individual-return` |
+| R-K1-ENTITY: election validity/end, complete entity-return preparation, extensions and penalty liability beyond the limited filing points above | Hold disputed election or entity-return conclusions; extension routing: `us-corporate-extension-form-7004-and-the` |
+| R-K1-STATE: state basis, conformity and NOLs | Use the relevant state Guide and hold any unproven state result |
+
+Circular 230 §10.37: this reference does not replace a written-advice analysis of the actual facts, applicable law and reasonable assumptions. Do not use its hypothetical cases as filing advice.
 
 ## Sources
 
-| Source | URL | Read on |
-| --- | --- | --- |
-| IRS, S corporation stock and debt basis. Read for the four limits in order, the shareholder's responsibility, and distributions in excess of basis. | https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-stock-and-debt-basis | 2026-11-13 |
-| Instructions for Form 7203 (Rev. December 2022). Read for the filing triggers, the order of limits, guarantees, and character of repayment gain. | https://www.irs.gov/pub/irs-pdf/i7203.pdf | 2026-11-13 |
-| Shareholder's Instructions for Schedule K-1 (Form 1120-S) (2025). Read for "without reference to limitations on losses", the (g) election, at-risk exclusions and material participation. | https://www.irs.gov/pub/irs-pdf/i1120ssk.pdf | 2026-11-13 |
-| Instructions for Form 6198 (2025). Read for who must file. | https://www.irs.gov/pub/irs-pdf/i6198.pdf | 2026-11-13 |
-| Instructions for Form 8582 (2025). Read for freeing suspended losses on a full taxable disposition. | https://www.irs.gov/pub/irs-pdf/i8582.pdf | 2026-11-13 |
-| Instructions for Form 461 (2025). Read for the 2025 threshold (USD 313,000 and USD 626,000) and the permanent extension. | https://www.irs.gov/pub/irs-pdf/i461.pdf | 2026-11-13 |
-| Rev. Proc. 2025-32. Read for the 2026 excess business loss threshold (USD 256,000 and USD 512,000). | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
-| Public Law 119-21, section 70601. Read for the permanent rule and the change of the base year from 2017 to 2024. | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
-| 26 U.S.C. 461 (govinfo, 2024 edition). Read for (l) and the USD 250,000 statutory amount. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec461.htm | 2026-11-13 |
-| 26 U.S.C. 465 and 469 (govinfo). Read for the at-risk limit and passive activity carryover. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec469.htm | 2026-11-13 |
-| 26 U.S.C. 1366 and 1367 (govinfo). Read for the (d) loss limit and the basis adjustments. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partII-sec1366.htm | 2026-11-13 |
-| Treas. Reg. 1.1366-2, 1.1367-1, 1.1367-2 (govinfo, CFR 2025). Read for direct debt, guarantees, the ordering rule and the USD 25,000 open account rule. | https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1367-2.pdf | 2026-11-13 |
-| Treas. Reg. 1.469-5T (govinfo, CFR 2025). Read for the seven tests (500 and 100 hours). | https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol8/pdf/CFR-2025-title26-vol8-sec1-469-5T.pdf | 2026-11-13 |
+Official US government material. Read on 2026-11-27 only the operative portions listed; this is not a claim to have read each full publication. Earlier-year instructions support unchanged mechanics and clearly labelled historical facts, not unconfirmed 2026 form revisions.
 
-Not yet confirmed: the 2026 editions of the Shareholder's Instructions for Schedule K-1 (Form 1120-S) and of the Form 6198, 8582 and 461 instructions were not yet published when read; the 2025 editions are relied on for procedure, and the 2026 excess business loss threshold comes from Rev. Proc. 2025-32.
+| Source and portions read | URL | Read on |
+|---|---|---|
+| IRS stock/debt basis: loss order, responsibility, distributions and nondeductibles | https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-stock-and-debt-basis | 2026-11-27 |
+| Form 7203 instructions (12/2022): filing triggers, Parts I–III, elections, debt gain character conflict and record notice | https://www.irs.gov/instructions/i7203 | 2026-11-27 |
+| K-1 shareholder instructions (2025): loss limits, participation, Part III, Box 1 and reporting years | https://www.irs.gov/instructions/i1120ssk | 2026-11-27 |
+| Form 6198 instructions (11/2025): filing triggers, excluded borrowing, exceptions and activity rules | https://www.irs.gov/instructions/i6198 | 2026-11-27 |
+| Form 8582 instructions (2025): participation evidence, tests, dispositions and carryover | https://www.irs.gov/instructions/i8582 | 2026-11-27 |
+| Form 461 instructions (2025): historical threshold, filing trigger, definitions and NOL | https://www.irs.gov/instructions/i461 | 2026-11-27 |
+| Rev. Proc. 2025-32 §4.31: 2026 excess business loss threshold | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-27 |
+| §1366(a),(b),(d): allocation, character, basis and transition period | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partII-sec1366.htm | 2026-11-27 |
+| §1367(a),(b): basis categories, taxable income and debt restoration | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partII-sec1367.htm | 2026-11-27 |
+| Reg. 1.1366-2(a): direct debt, guarantees, basis limitation/proration, transfers | https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1366-2.pdf | 2026-11-27 |
+| Reg. 1.1367-1(b)–(g): basis, timing, default and elective order | https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1367-1.pdf | 2026-11-27 |
+| Reg. 1.1367-2(a)–(d): debt reduction, restoration and open accounts | https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1367-2.pdf | 2026-11-27 |
+| §465(a),(b),(d),(e): at-risk amount, excluded borrowing and recapture | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec465.htm | 2026-11-27 |
+| §469(b),(c),(e),(f),(g): passive definition, excluded income, carryover and disposition | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec469.htm | 2026-11-27 |
+| Reg. 1.469-5T(a)–(d): seven participation tests and definitions | https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol8/pdf/CFR-2025-title26-vol8-sec1-469-5T.pdf | 2026-11-27 |
+| §461(l)(2)–(4): unchanged computational rules; end date/inflation read with amending Acts | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec461.htm | 2026-11-27 |
+| P.L. 117-2 §9041: extension applicable in 2026 | https://www.govinfo.gov/content/pkg/PLAW-117publ2/html/PLAW-117publ2.htm | 2026-11-27 |
+| P.L. 117-169 §13903(b): extension applicable after 2026 | https://www.govinfo.gov/content/pkg/PLAW-117publ169/html/PLAW-117publ169.htm | 2026-11-27 |
+| P.L. 119-21 §70601: permanence and inflation reset, respective effective dates | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-27 |
+| Form 1120-S instructions (2025): election, K-1 preparation, deadlines, payment, historical penalty and retention | https://www.irs.gov/instructions/i1120s | 2026-11-27 |
+| §6072(a),(b): individual and S corporation filing deadlines | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm | 2026-11-27 |
+| §6151(a): payment without filing extension | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap62-subchapA-sec6151.htm | 2026-11-27 |
+| IRS extension guidance: request by April due date, October filing, payment and relief exceptions | https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return | 2026-11-27 |
+
+Not yet confirmed: final 2026 form-specific line/filing-trigger changes, unwritten excess-debt gain character, historical K-1 penalty liability and the specialist case outcomes expressly held above are non-usable. Check this point with one of our partner accountants.
