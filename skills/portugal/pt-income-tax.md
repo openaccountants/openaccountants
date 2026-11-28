@@ -1,7 +1,7 @@
 ---
 name: pt-income-tax
 description: "Portuguese resident Category B income tax for 2026: simplified and organised accounts, actual annual rates, coefficients, social-contribution and expense adjustments, withholding, payments on account, Modelo 3 and IRS Jovem boundaries. Preserves the historical 2025 cases separately. Special residence, NHR/IFICI, personal reliefs and unverified individual outcomes require the identified specialist routes."
-version: 2.5
+version: 2.6
 jurisdiction: PT
 tax_year: 2026
 last_updated: 2026-11-28
@@ -13,7 +13,7 @@ domain: income-tax
 type: computation
 ---
 
-# Portugal: IRS for the self-employed, Category B (tax year 2026) v2.5
+# Portugal: IRS for the self-employed, Category B (tax year 2026) v2.6
 
 This Guide computes the annual IRS of a Portuguese resident who earns business or professional income (Category B): freelancers issuing recibos verdes, sole traders and professionals. It covers the simplified regime and organised accounts, client withholding, payments on account and IRS Jovem. The ordinary return for 2026 income is Modelo 3, with Anexo B for simplified income or Anexo C for organised accounts, filed from 1 April to 30 June 2027. The ordinary annual table below is used for mainland cases; do not assume it establishes an autonomous-region result. Historical 2025 cases retain that year and their own table. All examples require the stated facts and actual applicable regime; figures before personal reliefs are not completed assessments.
 
@@ -45,7 +45,7 @@ The law is the Código do IRS (CIRS). AT (Autoridade Tributária e Aduaneira) pu
 | Band 2: over 8,342 to 12,587 | 15.20% (average 13.212%) | 2026 | same |
 | Band 3: over 12,587 to 17,838 | 20.70% (average 15.416%) | 2026 | same |
 | Band 4: over 17,838 to 23,089 | 23.60% (average 17.277%) | 2026 | same |
-| Band 5: over 23,089 to 29,397 | 30.60% (average 20.136%) | 2026 | same |
+| Band 5: over 23,089 to 29,397 | 30.6% (average 20.136%) | 2026 | CIRS art. 68(1); readable statutory table in Decreto-Lei 212/2026: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei-212-2026.pdf |
 | Band 6: over 29,397 to 43,090 | 34.60% (average 24.732%) | 2026 | same |
 | Band 7: over 43,090 to 46,566 | 43.10% (average 26.103%) | 2026 | same |
 | Band 8: over 46,566 to 86,634 | 44.60% (average 34.658%) | 2026 | same |
@@ -74,7 +74,7 @@ The law is the Código do IRS (CIRS). AT (Autoridade Tributária e Aduaneira) pu
 | Withholding waiver | Expected Category B income for the year below the CIVA art. 53(1) limit of EUR 15,000; not if the limit was reached the year before | 2026 | CIRS art. 101-B(1)(a) and (3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101b.aspx; CIVA art. 53(1): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx |
 | No withholding below | EUR 25 per withholding | 2026 | CIRS art. 101-B(1)(d) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101b.aspx |
 | Payments on account | Three, by 20 July, 20 September and 20 December; total 65% of the formula amount; none if each is under EUR 50 | 2026 | CIRS art. 102(1) to (3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs102.aspx |
-| Ordinary self-employed social security | 21.4%; ENI/EIRL and qualifying spouses 25.2%. Relevant income: 70% services, 20% goods and fiscally declared qualifying hotel/restaurant/drinks income; monthly base is relevant quarter income / 3, subject to actual coverage/options. Organised accounts differ. | 2026 | `pt-social-contributions`; Code Articles 162/163/168: https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Ordinary self-employed social security | 21.4%; ENI/EIRL and qualifying spouses 25.2%. Relevant income: 70% services, 20% goods and fiscally declared qualifying hotel/restaurant/drinks income; monthly base is relevant quarter income / 3, subject to actual coverage/options. Organised accounts differ. | 2026 | `pt-social-contributions`; Code Articles 162/163/168: https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 ; ISS practical guide, pp. 14–16 (same rates and income conditions): https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw |
 | Ordinary social-security maximum monthly base | Computed 12 × IAS 537.13 = EUR 6,445.56 | 2026 | Code Article 163: https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 ; IAS: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf |
 
 The 2026 table reflects Decreto-Lei 212/2026 of 4 November, which states that the reduction applies to income obtained in 2026 with effect from 1 January. Historical calculations use the final 2025 Article 68 table, not the 2026 table or earlier rate schedules. The printed Article 68(2) still mentions EUR 8,059; its split-rate method must be read with the actual year's table. In 2026, income within the first EUR 8,342 uses the first-band rate. Do not change the quoted statutory text or substitute a tax year to conceal that old cross-reference.
