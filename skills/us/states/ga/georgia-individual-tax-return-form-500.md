@@ -3,6 +3,7 @@ name: georgia-individual-tax-return-form-500
 description: Prepare Georgia Form 500 for tax year 2025, including residency allocation, deductions, credits, filing and payment.
 jurisdiction: US-GA
 tax_year: 2025
+tax_year_notes: This Guide deliberately covers the 2025 Form 500; later-year law must not replace the preserved 2025 return rules.
 last_updated: 2026-11-28
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Jeff Watts"
@@ -32,13 +33,13 @@ Use the **2025** Form 500 and IT-511 instructions. Georgia's 2025 rate is **5.19
 | Interest on late tax during 2026 | Annual **9.75%**, accruing monthly, for **calendar 2026** even when the return is for 2025. Do not use the tax-year label to choose an interest rate. Actual payoff and estimated-tax penalties require separate calculations. | [DOR ADMIN-2026-01](https://dor.georgia.gov/admin-2026-01-annual-notice-interest-rate-adjustment) |
 | Filing method | File electronically through supported tax software/providers. **Georgia Tax Center (GTC) does not prepare or electronically file individual income tax returns**; it supports payment/account services. Follow mandatory e-filing rules, including associated EFT returns and returns involving Series 100 credits. | [DOR electronic filing FAQ](https://dor.georgia.gov/individual-electronic-filing-faq); [IT-511, p.10](https://dor.georgia.gov/document/document/2025-it-511-individual-income-tax-booklet/download) |
 
-## Who this is for
+## Scope
 
 Full-year Georgia residents are taxed on income from all sources except exempt income; temporary absence does not itself end Georgia legal residence. Apply the filing triggers above. For a withholding or estimated-payment refund below those triggers, prepare the Form 500 overpayment calculation; do not assume every payment is refundable or promise a refund without the return and any applicable claim-limit/setoff review. [IT-511, pp.13,18–19](https://dor.georgia.gov/document/document/2025-it-511-individual-income-tax-booklet/download).
 
 Part-year residents required to file federally must file in Georgia. Nonresidents required to file federally with Georgia work or source income generally file **Form 500 with Schedule 3**. A narrow exception covers a legal resident of another state whose only Georgia financial activity is employee services and whose Georgia service wages do not exceed the **lesser of 5% of service income everywhere or $5,000**. It is not a general exclusion for every nonresident's first wages. Prior-service deferred compensation, stock options and federally protected retirement income need the separate review below. [IT-511, p.13](https://dor.georgia.gov/document/document/2025-it-511-individual-income-tax-booklet/download).
 
-## Before you start, ask the client
+## Ask the client first
 
 - Completed federal return for **2025**, its schedules and any amendments; prior Georgia return and DOR notices.
 - Domicile, move dates, actual work locations/days and income sources; both spouses' residency and filing status.
@@ -61,7 +62,7 @@ Part-year residents required to file federally must file in Georgia. Nonresident
 9. **Reconcile payments and the result.** Only Georgia W-2/1099 withholding goes on line **24**; applicable G2 withholding goes on line **25**. Line **26** includes estimated payments, prior-return credits and electronic/IT-560 payments. Supported refundable credits are line **27**; add payments on line **28**. Line **29** is tax on line 23 minus payments if positive; line **30** is the reverse overpayment. The final line **45** amount due includes applicable donations, estimated penalty, late penalties and interest; line **46** refund subtracts next-year applied overpayment and applicable amounts on lines **31–44**. Review the year-on-year change and payment records before treating an overpayment as cash available. [IT-511, pp.18–19](https://dor.georgia.gov/document/document/2025-it-511-individual-income-tax-booklet/download).
 10. **File, retain acceptance and pay.** Review the return and obtain the client's filing/payment authorization. E-file through the supported provider and retain actual acceptance, not just a transmission record. Paper filers follow the 2025 Form 500 instructions and address. For e-filed returns, DOR says to retain W-2/W-2G/1099-R and supporting documents rather than mailing a duplicate paper package; transmit required data through software. Paper withholding claims need the specified statements. Pay separately through an allowed DOR payment route or the **525-TV** voucher when paying by check, and retain the confirmation. A payment through GTC does not file Form 500. [DOR e-file FAQ](https://dor.georgia.gov/individual-electronic-filing-faq); [IT-511, pp.3–4,18–19](https://dor.georgia.gov/document/document/2025-it-511-individual-income-tax-booklet/download).
 
-## Worked examples
+## Worked cases
 
 These are hypothetical ordinary **2025** cases, with no special adjustments, NOL, credits, penalty, interest, donations or next-year overpayment election. They are not additional client facts.
 
