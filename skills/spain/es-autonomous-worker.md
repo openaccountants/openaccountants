@@ -1,10 +1,10 @@
 ---
 name: es-autonomous-worker
 description: Compute the 2026 tax, social contributions and cash position of a Spanish resident sole trader or professional. Covers autónomo registration, actual assessment-method selection, deductible expenses, simplified provisions, professional withholding, cumulative income-tax prepayments, VAT reconciliation and day-based RETA income banding. Distinguishes company controllers, family collaborators, TRADE arrangements and pluriactividad, and identifies the separate conditions for reduced contributions and new-activity relief. Use for cuota de autónomos, alta autónomo, Modelo 130, professional invoices, take-home profit or income-based regularisation questions. Includes an annual Madrid tax-to-cash reconciliation and a part-year contribution example. Common-territory computations are supplied; foral and island/city indirect taxes retain explicit limits.
-version: 1.5
+version: 1.6
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-28
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
@@ -16,11 +16,11 @@ domain: income-tax
 type: situation-rules
 ---
 
-# Spain self-employment: 2026 tax, contributions and cash reconciliation v1.5
+# Spain self-employment: 2026 tax, contributions and cash reconciliation v1.6
 
 > Based on work by Nambu89 (Impuestify) and Pau March (larenta), licensed under MIT. Adapted for the OpenAccountants format.
 
-## Who this applies to
+## Scope
 
 This Guide computes the ordinary **2026** common-territory position of a Spanish-resident individual operating a business or profession. Select the actual activity, assessment method, tax territory and social-security legislation before calculating. It connects [annual IRPF](es-income-tax.md), [regional credits](es-irpf-deductions.md), [payments on account](es-estimated-tax.md), [VAT](es-vat-return.md) and [contributions](es-social-contributions.md); an autónomo's invoice cash is not their after-tax profit.
 
@@ -37,8 +37,8 @@ All amounts are EUR. These are 2026 ordinary common-territory rules unless state
 | Item | Amount/test | Official source |
 |---|---|---|
 | Simplified direct assessment | Prior-year combined activity turnover no more than 600,000, annualised when required; no incompatible method or valid renunciation | [RIRPF arts. 28–29](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a28) |
-| Simplified provisions and hard-to-justify expenses | 5% of positive qualifying net income before this item, combined annual cap 2,000; incompatible with elected art. 32.2.1 relief | [RIRPF art. 30](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a30) |
-| Qualifying Ceuta simplified activity | 10% instead of 5%, same 2,000 cap; separate instalment commencement rule | [LIRPF DA 64](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#da-18) |
+| Simplified provisions and hard-to-justify expenses | 10% of positive qualifying net income before this item, combined annual cap 3,000; incompatible with elected art. 32.2.1 relief. The 5-point uplift applies to the annual 2026 result and Q4 prepayment | [RIRPF art. 30](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a30), [LIRPF DA 67, RDL 43/2026 art. 2.Dos](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24701) |
+| Qualifying Ceuta simplified activity | 15% instead of ordinary 10%, same combined 3,000 cap, for Ceuta activity qualifying under art. 68.4; DA 64 baseline and DA 67 uplift have distinct prepayment commencement rules | [LIRPF DA 64](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#da-18), [DA 67](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24701) |
 | Professional invoice withholding | 15%; eligible start tax period and next two 7%, with no professional activity in the preceding year and written notice | [RIRPF art. 95.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |
 | Direct-assessment prepayment | 20% of cumulative net income, then statutory deductions/adjustments | [RIRPF art. 110](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110) |
 | Professional exemption from prepayments | At least 70% of prior-year relevant income withheld; start-year covered-period test | [RIRPF art. 109.2/5](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a109) |
@@ -51,13 +51,24 @@ All amounts are EUR. These are 2026 ordinary common-territory rules unless state
 
 There is no single ordinary final “autónomo tax rate”. Apply the state and actual community scales and minima in [es-income-tax](es-income-tax.md), then credits and prepayments. The RETA bands, including all minimum/maximum bases, are reproduced in [es-social-contributions](es-social-contributions.md#rates-bands-and-thresholds).
 
-## The base
+## Ask the client first
+
+- What are your tax residence, community, establishment and actual work locations, and what applicable social-security determination exists?
+- What activities/IAE categories, assessment methods and elections are registered, and what were prior-year turnover and withheld-income proportions?
+- What complete receipts, expenses, VAT invoices, asset-use/depreciation records and withheld/prepaid-tax certificates support the year?
+- What registration/cessation days, provisional bases, contribution payments, benefit periods and reduced-fee awards appear in TGSS records?
+- Are you a company controller, director, partner, family collaborator or dependent contractor, and what company/other work income exists?
+- What family, disability, start-up, regional-credit and foreign-income facts alter final IRPF or the contribution relief?
+
+## The method, step by step
 
 ### 1. Establish the tax method and keep records
 
 Determine normal direct, simplified direct or objective assessment from the census/elections and prior-year data. Never default an unknown activity to professional withholding, VAT territory or simplified assessment. Keep the [RIRPF art. 68](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a68) income, expense, capital-asset and, for professions, provisions/advances books, or required mercantile accounts. Obtain invoices, payment evidence, business purpose and depreciation schedules.
 
-For módulos, [LIRPF art. 31 and DT 32](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a31) must be read with the [2026 annual order](https://www.boe.es/buscar/act.php?id=BOE-A-2025-25272). The ordinary statutory non-farming receipts/business-invoicing/purchases baseline is **150,000/75,000/150,000**; farming/livestock/forestry receipts have their separate **250,000** ceiling. Current DT 32 ends its express extension at 2024 after the later extensions were left without effect. That textual baseline is distinct from AEAT's published 2026 administrative route: its [1 April post-repeal note](https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html) expressly maintains the 2016–2024 limits for 2026, and the [current entry page](https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html) specifies **250,000/125,000/250,000**. Apply that published route with the actual annual-order activity, specific magnitudes, aggregation, annualisation, territorial, compatibility and election conditions; do not exclude a trader solely by substituting the lower baseline for those published 2026 limits. An otherwise eligible trader with prior-year ordinary receipts 200,000, required-invoice B2B receipts 100,000 and relevant purchases 220,000 passes the three administrative numerical tests. This does not resolve the separate legal reconciliation of the statutory/repeal texts or a particular return correction. AEAT also confirms validity of renunciations/revocations made while the two decrees operated; preserve the filing and date and use the complete published election route in [es-estimated-tax](es-estimated-tax.md), including its limits on implicit renunciation and exceptional windows. The linked Guide supplies the payment worksheets; an actual module activity needs its annual-order units/indices, not accounting profit times 5%.
+For módulos, [LIRPF art. 31 and DT 32](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a31) must be read with the [2026 annual order](https://www.boe.es/buscar/act.php?id=BOE-A-2025-25272). The baseline non-farming receipts/business-invoicing/purchases amounts of **150,000/75,000/150,000** are replaced for **2016–2027** by **250,000/125,000/250,000** under DT 32 as amended by [RDL 43/2026 art. 2.Tres](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24701), effective for 2026 from 1 January. Farming/livestock/forestry receipts have their separate **250,000** ceiling. The later enacted amendment resolves the earlier statutory/AEAT discrepancy; the [1 April post-repeal note](https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html) is historical context, not the final legislative cutoff.
+
+Apply the actual annual-order activity, specific magnitudes, aggregation, annualisation, territorial, compatibility and election conditions. An otherwise eligible trader with prior-year ordinary receipts **200,000**, required-invoice B2B receipts **100,000** and relevant purchases **220,000** passes the three numerical exclusion tests. Preserve actual renunciations/revocations and their dates; use the complete election route in [es-estimated-tax](es-estimated-tax.md), including the applicable exceptional windows. Passing the three limits alone neither elects módulos nor calculates a return. An actual activity needs its annual-order units and indices, not accounting profit times a flat percentage. Case-specific return corrections or unverified units/indices are non-usable here. Check this point with one of our partner accountants.
 
 ### 2. Compute direct-assessment activity income
 
@@ -71,7 +82,7 @@ Under [LIRPF arts. 28–30](https://www.boe.es/buscar/act.php?id=BOE-A-2006-2076
 | Business assets | Actual allocation and depreciation. Indivisible mixed-use assets are not automatically deductible by an invented percentage | [RIRPF arts. 22 and 30](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a22) |
 | Ordinary passenger vehicle | IRPF exclusive-use restriction with the article's specific transport/agent/hire exceptions; VAT's rebuttable 50% presumption is a different tax rule | [RIRPF art. 22.4](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a22), [LIVA art. 95.Tres](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a95) |
 
-Apply the simplified 5%/2,000 combined item only after the qualifying expenses and before subsequent income reductions. Test [LIRPF art. 32](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a32) low-income, qualifying unrelated single-client/TRADE, disability, irregular and new-activity relief using the complete conditions and formulas in [the annual IRPF computation](es-income-tax.md#the-base). The single-client reduction and simplified provisions item are incompatible; first registration alone does not establish new-activity relief. A business fixed-asset disposal is separately a capital gain under art. 28.2, rather than another turnover receipt.
+Apply the simplified **10%/3,000** combined item only after qualifying expenses and before subsequent income reductions. For qualifying Ceuta activity the annual percentage is **15%**, capped at the same **3,000**. DA 64 introduced its 10% baseline with a payment-window condition one month after RDL 22/2026 entered into force; DA 67 adds five percentage points for annual 2026 and specifically the **fourth-quarter 2026** prepayment. Do not retrospectively insert that later uplift into earlier prepayments. [RDL 43/2026 art. 2.Dos](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24701) took effect on 26 November 2026 with the stated annual effects. Its separate IRPF prepayment and annual-VAT regime changes start in **2027** and do not change this Guide’s 2026 20%/70% tests or ordinary 2026 VAT periods. Test [LIRPF art. 32](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a32) low-income, qualifying unrelated single-client/TRADE, disability, irregular and new-activity relief using the complete conditions and formulas in [the annual IRPF computation](es-income-tax.md#the-base). The single-client reduction and simplified provisions item are incompatible; first registration alone does not establish new-activity relief. A business fixed-asset disposal is separately a capital gain under art. 28.2, rather than another turnover receipt.
 
 ### 3. Independently band and regularise RETA
 
@@ -79,7 +90,7 @@ For direct assessment, build annual computable activity income by adding deducte
 
 Let D be **regularisable calendar days** after statutory benefit/reduced-fee exclusions. `monthly_band_income = annual_computable_income_after_generic_deduction / D × 30`. Do not substitute annual/12 or a count of monthly bank debits. Compare against the actual year's bands, choose a permissible base, and apply all covered components and eligible bonuses. Annual regularisation compares the day-weighted provisional base against the final band, retaining signed monthly differences, partial-month proportions and historical-base elections ([RD 2064/1995 arts. 44–46](https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579#a44)). Use [the contribution Guide](es-social-contributions.md#the-base) for exclusions, final-base floors, notices and refunds.
 
-**Starting reduction.** [Ley 20/2007 art. 38 ter](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a3-5) covers qualifying first registration or no registration in the preceding two years, three when previously enjoyed. Request it at registration. Its first period runs from effective registration through the following twelve complete calendar months; a requested further twelve needs annual computable income below annual SMI, with the stated annual tests. Qualifying disability of at least 33%, gender violence and terrorism cases have 24/36 complete months. It expressly extends to qualifying company/cooperative members and excludes the listed joining relatives/religious members. A baja ends the benefit. The general **new-2026 monetary amount is unconfirmed**: [RDL 13/2022 DT 5](https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482) fixes amounts only through 2025, while the TGSS display does not reconcile its components. Record an individual's actual award/assessment without turning it into a general statutory amount.
+**Starting reduction.** [Ley 20/2007 art. 38 ter](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a3-5) covers qualifying first registration or no registration in the preceding two years, three when previously enjoyed. Request it at registration. Its first period runs from effective registration through the following twelve complete calendar months; a requested further twelve needs annual computable income below annual SMI, with the stated annual tests. Qualifying disability of at least 33%, gender violence and terrorism cases have 24/36 complete months. It expressly extends to qualifying company/cooperative members and excludes the listed joining relatives/religious members. A baja ends the benefit. The general **new-2026 monetary amount is unconfirmed**: [RDL 13/2022 DT 5](https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482) fixes amounts only through 2025, while the TGSS display does not reconcile its components. Record an individual's actual award/assessment without turning it into a general statutory amount. A general new-2026 amount or unresolved extension boundary is a non-usable output. Check this point with one of our partner accountants.
 
 **While the reduction applies.** Hiring employees after starting the activity does not itself end it. An express renunciation takes effect on the first day of the month after communication. Economic benefits during the reduced-fee period use the applicable minimum base of the lowest general-table band. After the maximum benefit period ends, contribution for all protected contingencies resumes on the first day of the following month. The initial reduced-fee period is not annually income-regularised; the extension has its separate income/reassessment test in [es-social-contributions](es-social-contributions.md#reduced-starting-fee-and-familyterritorial-bonuses) ([LETA art.38 ter.3–8](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a3-5)).
 
@@ -110,7 +121,7 @@ Apply actual direct-debit cutoffs separately. Determine Modelo 349, 347 and fore
 
 **Modelo 347.** Under [RGAT arts. 31–33](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984#a33), an obliged operator normally reports a third party where the relevant calendar-year transactions **exceed 3,005.06**, counting deliveries and purchases separately and including the tax in the prescribed transaction amount. Check SII/reporting exclusions, operations already covered by a coincident specific return, invoice and other statutory exclusions before requiring the form. Exactly 3,005.06 does not exceed the threshold. Cash-scheme operations require the two statutory accrual views and annual information; do not omit one merely because the invoice was unpaid. File 347 **during February following the calendar year reported**, subject to the applicable non-working-day calendar and incorporated technical-presentation provision ([Orden EHA/3012/2008 art. 10](https://www.boe.es/buscar/act.php?id=BOE-A-2008-16973#a10), read 2026-10-27).
 
-**Modelo 720.** The foreign-account, securities/rights/insurance/rents and foreign-property blocks have **separate 50,000 aggregate thresholds**, not 50,000 per asset or one combined allowance. For accounts test both year-end and last-quarter average balances; exceeding either aggregate triggers all reportable accounts. Apply actual ownership/authority/beneficial-owner status, each block's valuation rules and its exemptions, including the specifically conditioned commercial-accounting exemptions. Following a prior report, a block generally requires reporting on an **increase exceeding 20,000** against its last reported reference, with separate cessation/disposal reporting duties even without that increase. The statutory window is **1 January–31 March following the report year**, subject to the applicable calendar. These are information returns, not a wealth-tax allowance or authority to apply retired punitive rules ([RGAT arts. 42 bis/42 ter/54 bis](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984#a42bis)). Foreign crypto custody uses the distinct 721 route in the crypto sibling, not automatic insertion into 720.
+**Modelo 720.** The foreign-account, securities/rights/insurance/rents and foreign-property blocks have **separate 50,000 aggregate thresholds**, not 50,000 per asset or one combined allowance. For accounts test both year-end and last-quarter average balances; exceeding either aggregate triggers all reportable accounts. Apply actual ownership/authority/beneficial-owner status, each block's valuation rules and its exemptions, including the specifically conditioned commercial-accounting exemptions. Following a prior report, a block generally requires reporting on an **increase exceeding 20,000** against its last reported reference, with separate cessation/disposal reporting duties even without that increase. The statutory window is **1 January–31 March following the report year**, subject to the applicable calendar. These are information returns, not a wealth-tax allowance or authority to apply retired punitive rules ([RGAT arts. 42 bis/42 ter/54 bis](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984#a42bis)). Foreign crypto custody requires a separate Spanish Modelo 721 analysis; this Guide does not determine that return or insert it automatically into 720. Check this point with one of our partner accountants.
 
 ## Penalties and interest
 
@@ -126,11 +137,11 @@ Social-security legislation is selected independently. [Regulation 883/2004 arts
 
 [VAT territory, LIVA art. 3](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a3), excludes Canarias, Ceuta and Melilla. This does not mean every invoice by a Canary-established trader bears IGIC: test place of supply, exemptions and reverse charge. Use [the ordinary2026 IGIC computation](es-canary-islands-igic.md), which reads Ley20/1991 alongside the current DL1/2025 regional consolidation and dated2026 amendments. Ceuta/Melilla use [the two city IPSI methods](es-ceuta-melilla-ipsi.md) and current ordinances. Foral residents use [the separate IRPF method](es-foral-income-tax.md); national social-security rules still require their own test. Each territorial Guide names any unresolved ordinary branch precisely.
 
-## Two worked examples that recompute
+## Worked cases
 
 ### 1. Madrid professional: final tax versus invoice cash
 
-Assume an established 40-year-old Madrid resident, individual return, unrelated multiple clients, no relatives/minimum additions, base reductions or tax credits. Annual collected fees are 60,000; wholly deductible paid costs excluding recoverable VAT are 20,000, including actual own contributions. Of the costs, 10,000 carries fully deductible 21% input VAT; remaining costs have no deductible VAT. All fees carry 21% VAT and 15% professional withholding. Prior-year 70% withholding exemption releases Modelo 130. The simplified allowance is 2,000, leaving general base 38,000. State/Madrid scales and personal minima produce 4,353.50 and 3,783.04 tax, as [LIRPF arts. 63/74](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a63) and [Madrid arts. 1–2](https://www.boe.es/buscar/act.php?id=BOCM-m-2010-90068#a1) prescribe. Total 8,136.54 is settled against 9,000 withholding: refund 863.46. Cash after costs and net VAT before that refund is 31,000; final spendable cash is **31,863.46**, with no outstanding invoices, investment/financing movements or contribution adjustment. Actual contributions are an expense input, not proof a TGSS regularisation is nil.
+Assume an established 40-year-old Madrid resident, individual return, unrelated multiple clients, no relatives/minimum additions, base reductions or tax credits. Annual collected fees are 60,000; wholly deductible paid costs excluding recoverable VAT are 20,000, including actual own contributions. Of the costs, 10,000 carries fully deductible 21% input VAT; remaining costs have no deductible VAT. All fees carry 21% VAT and 15% professional withholding. Prior-year 70% withholding exemption releases Modelo 130. The 2026 simplified allowance is 3,000, leaving general base 37,000. State/Madrid scales and personal minima produce 4,168.50 and 3,609.04 tax, as [LIRPF arts. 63/74](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a63) and [Madrid arts. 1–2](https://www.boe.es/buscar/act.php?id=BOCM-m-2010-90068#a1) prescribe. Total 7,777.54 is settled against 9,000 withholding: refund 1,222.46. Cash after costs and net VAT before that refund is 31,000; final spendable cash is **32,222.46**, with no outstanding invoices, investment/financing movements or contribution adjustment. Actual contributions are an expense input, not proof a TGSS regularisation is nil.
 
 ```oa-check
 name: Madrid professional annual tax and collected cash reconciliation
@@ -139,7 +150,7 @@ inputs:
   expenses: 20000
   vat_cost_base: 10000
 steps:
-  simplified: min(2000, max(0, fees - expenses) * 0.05)
+  simplified: min(3000, max(0, fees - expenses) * 0.10)
   base: fees - expenses - simplified
   state_tax: round(4362.75 + (base - 35200) * 0.185 - 5550 * 0.095, 2)
   madrid_tax: round(3841.42 + (base - 35425.68) * 0.174 - 5956.65 * 0.085, 2)
@@ -153,15 +164,15 @@ steps:
   refund: withholding - tax
   spendable: cash_before_settlement + refund
 expected:
-  simplified: 2000
-  base: 38000
-  state_tax: 4353.50
-  madrid_tax: 3783.04
-  tax: 8136.54
+  simplified: 3000
+  base: 37000
+  state_tax: 4168.50
+  madrid_tax: 3609.04
+  tax: 7777.54
   net_vat: 10500
   cash_before_settlement: 31000
-  refund: 863.46
-  spendable: 31863.46
+  refund: 1222.46
+  spendable: 32222.46
 ```
 
 ### 2. Part-year RETA and an invoice with withholding
@@ -195,14 +206,17 @@ expected:
   collected: 1060
 ```
 
-## Ask the client first
+### 3. Historical 2025 IT freelancer, Madrid: preserved inputs and bounded result
 
-- What are your tax residence, community, establishment and actual work locations, and what applicable social-security determination exists?
-- What activities/IAE categories, assessment methods and elections are registered, and what were prior-year turnover and withheld-income proportions?
-- What complete receipts, expenses, VAT invoices, asset-use/depreciation records and withheld/prepaid-tax certificates support the year?
-- What registration/cessation days, provisional bases, contribution payments, benefit periods and reduced-fee awards appear in TGSS records?
-- Are you a company controller, director, partner, family collaborator or dependent contractor, and what company/other work income exists?
-- What family, disability, start-up, regional-credit and foreign-income facts alter final IRPF or the contribution relief?
+This older case used **2025**, not 2026: monthly facturación bruta **3,000**, IVA **630** at **21%**, total factura **3,630**, retención IRPF **450** at **15%**, cobro efectivo **3,180**, cuota autónomos **320** labelled “Tramo 9”, and gastos deducibles **200**. Its monthly arithmetic is **3,180 − 320 − 200 = 2,660**, before settling output VAT less any evidenced deductible input VAT; this is not final spendable income.
+
+The original annual inputs remain fees **36,000**, expenses **2,400**, actual contribution input **3,840**, pre-allowance net **29,760**, and the 2025 simplified **5%** allowance **1,488** below the **2,000** cap, giving **28,272** before other adjustments ([RIRPF art. 30](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a30); the later DA 67 uplift concerns 2026). Keep actual payment evidence: the label “Tramo 9” and **320** are not validated as a statutory quota by this case.
+
+The earlier estimated “IRPF escala 2025 **~5,600**”, annual net **24,160**, monthly net **2,013** and **~67%** are preserved as **non-usable historical outputs**. Only the conditional arithmetic recomputes: **36,000 − 5,600 − 3,840 − 2,400 = 24,160**; **24,160 / 12 = 2,013.33** and **24,160 / 36,000 = 67.11%**. The source case supplies no complete personal minima, credits, actual contribution-band/award evidence or VAT settlement, so those estimated outcomes cannot serve as a filing or take-home answer. Check this point with one of our partner accountants.
+
+## When to refuse or refer
+
+**Non-usable outputs:** general statutory amount for new 2026 reduced-fee awards and precise unresolved extension boundaries; case-specific return corrections and activity-specific module units/indices not established here; the historical 2025 case’s estimated final tax and quota label; the particular foral/IGIC/IPSI, foreign/treaty, foreign-crypto reporting and special-system branches not computed by this Guide. The final 2026 Modelo 100 campaign dates/schema for filing in 2027 have not been established here: statutory annual filing remains required, but no prior-year dates or line numbers may be substituted. Check this point with one of our partner accountants.
 
 ## Sources
 
@@ -210,6 +224,7 @@ expected:
 
 | Official source | Purpose | Read on |
 |---|---|---|
+| [RDL 43/2026](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24701), art. 2.Dos–Tres and DF 4 | Annual 2026 simplified uplift and enacted módulos thresholds; distinguish 2027-only changes | 2026-11-27 reused; operative clauses checked 2026-11-28 |
 | [Ley 35/2006](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764), arts. 17/27–32/63/74/96, DA 64 | Income classification, net activity, relief, annual tax and filing | 2026-10-26 |
 | [RD 439/2007](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820), arts. 9/22/26/28–30/68/95/109–111 | Expenses, method, records, withholding and instalments | 2026-10-26 |
 | [Ley 20/2007](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409), arts. 11–12/35–38 ter | TRADE and contribution relief | 2026-10-26 |
@@ -218,13 +233,15 @@ expected:
 | [RGAT](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984), art. 9; [HAC/1526/2024](https://www.boe.es/buscar/doc.php?id=BOE-A-2025-410) | Census and abolished 037 | 2026-10-26 |
 | [LIVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740); [RIVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925); [390 order](https://www.boe.es/buscar/act.php?id=BOE-A-2009-18472) | VAT territory, rates, allocation and filing | 2026-10-26 |
 | [AEAT 115/180](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/7-otras-obligaciones-fiscales-retenciones/7_3-retenciones-arrendamiento-bienes-inmuebles-180.html) | Business-rent withholding form route | 2026-10-26 |
-| [2026 module order](https://www.boe.es/buscar/act.php?id=BOE-A-2025-25272); [AEAT module-entry page](https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html) | Earlier read of annual-order gateway and statutory/entry-page discrepancy; current administrative route supplied below | 2026-10-26 |
-| [AEAT 1 April post-repeal note](https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html), [current IRPF eligibility](https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html) | Express 2026 administrative limits and valid renunciations; complete election method linked without treating repealed decrees as current law | 2026-10-28 |
+| [2026 module order](https://www.boe.es/buscar/act.php?id=BOE-A-2025-25272); [AEAT module-entry page](https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html) | Annual-order gateway; historical entry-page discrepancy resolved by the later RDL 43/2026 amendment | 2026-10-26 |
+| [AEAT 1 April post-repeal note](https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html), [current IRPF eligibility](https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html) | Historical administrative response and elections; later statutory limits now supplied above | 2026-10-28 |
 | [Madrid D.Leg. 1/2010](https://www.boe.es/buscar/act.php?id=BOCM-m-2010-90068), arts. 1–2 | Example's regional scale and personal minimum | 2026-10-26 |
 | [LGT](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186), arts. 26–28/191/198; [AEAT interest](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html) | Tax collection and sanctions | 2026-10-26 |
 | [Regulation 883/2004](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02004R0883-20190731), arts. 11–13 | Applicable social-security legislation | 2026-10-26 |
 | [Ley 4/2012](https://www.boe.es/buscar/act.php?id=BOE-A-2012-9282), arts. 51–57 | Canary rate framework; BOE consolidation marked updating, not a complete 2026 IGIC reconciliation | 2026-10-26 |
 
-**Not yet confirmed:** general statutory amount for new 2026 reduced-fee awards and precise extension-boundary issues; legal reconciliation of the statutory/repeal texts with AEAT's published 2026 entry route, case-specific return corrections beyond its supplied election routes, and activity-specific module indices; the precisely outstanding branches in the linked foral IRPF/IGIC/IPSI Guides; specific foreign/treaty and special-system cases outside the ordinary routes. The final 2026 Modelo 100 campaign/schema for 2027 is not presumed from prior years. Independent whole-pack review remains pending.
+
+
+**Not yet confirmed:** the bounded outputs in “When to refuse or refer” remain unusable pending their stated evidence. Check this point with one of our partner accountants.
 
 > Contributed by OpenAccountants.
