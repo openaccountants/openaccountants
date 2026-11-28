@@ -58,17 +58,17 @@ All money values ARS. These are maximum annual gross receipts/rent and maximum u
 
 | Category | Annual gross receipts maximum | Surface maximum | Annual electricity maximum | Annual rent maximum | Unit goods price maximum | Official source |
 |---|---|---|---|---|---|---|
-| A | $12.009.410,45 | Hasta 30 m² | Hasta 3330 kWh | $2.792.886,15 | $716.840,77 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| B | $17.595.182,74 | Hasta 45 m² | Hasta 5000 kWh | $2.792.886,15 | $716.840,77 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| C | $24.670.494,31 | Hasta 60 m² | Hasta 6700 kWh | $3.816.944,41 | $716.840,77 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| D | $30.628.651,43 | Hasta 85 m² | Hasta 10000 kWh | $3.816.944,41 | $716.840,77 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| E | $36.028.231,33 | Hasta 110 m² | Hasta 13000 kWh | $4.841.002,66 | $716.840,77 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| F | $45.151.659,41 | Hasta 150 m² | Hasta 16500 kWh | $4.841.002,66 | $716.840,77 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| G | $53.995.798,87 | Hasta 200 m² | Hasta 20000 kWh | $5.771.964,69 | $716.840,77 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| H | $81.924.660,37 | Hasta 200 m² | Hasta 20000 kWh | $8.378.658,45 | $716.840,77 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| I | $91.699.761,90 | Hasta 200 m² | Hasta 20000 kWh | $8.378.658,45 | $716.840,77 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| J | $105.012.519,20 | Hasta 200 m² | Hasta 20000 kWh | $8.378.658,45 | $716.840,77 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| K | $126.610.838,75 | Hasta 200 m² | Hasta 20000 kWh | $8.378.658,45 | $716.840,77 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| A | ARS 12,009,410.45 | Hasta 30 m² | Hasta 3330 kWh | ARS 2,792,886.15 | ARS 716,840.77 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| B | ARS 17,595,182.74 | Hasta 45 m² | Hasta 5000 kWh | ARS 2,792,886.15 | ARS 716,840.77 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| C | ARS 24,670,494.31 | Hasta 60 m² | Hasta 6700 kWh | ARS 3,816,944.41 | ARS 716,840.77 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| D | ARS 30,628,651.43 | Hasta 85 m² | Hasta 10000 kWh | ARS 3,816,944.41 | ARS 716,840.77 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| E | ARS 36,028,231.33 | Hasta 110 m² | Hasta 13000 kWh | ARS 4,841,002.66 | ARS 716,840.77 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| F | ARS 45,151,659.41 | Hasta 150 m² | Hasta 16500 kWh | ARS 4,841,002.66 | ARS 716,840.77 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| G | ARS 53,995,798.87 | Hasta 200 m² | Hasta 20000 kWh | ARS 5,771,964.69 | ARS 716,840.77 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| H | ARS 81,924,660.37 | Hasta 200 m² | Hasta 20000 kWh | ARS 8,378,658.45 | ARS 716,840.77 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| I | ARS 91,699,761.90 | Hasta 200 m² | Hasta 20000 kWh | ARS 8,378,658.45 | ARS 716,840.77 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| J | ARS 105,012,519.20 | Hasta 200 m² | Hasta 20000 kWh | ARS 8,378,658.45 | ARS 716,840.77 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| K | ARS 126,610,838.75 | Hasta 200 m² | Hasta 20000 kWh | ARS 8,378,658.45 | ARS 716,840.77 | https://www.arca.gob.ar/monotributo/categorias.asp |
 
 ### Monthly components, from 1 August 2026
 
@@ -76,17 +76,17 @@ Services and goods have separate integrated-tax columns, not separate revenue ce
 
 | Category | Integrated services | Integrated goods | SIPA | Individual health | Total services | Total goods | Official source |
 |---|---|---|---|---|---|---|---|
-| A | $5.585,77 | $5.585,77 | $18.246,86 | $25.694,55 | $49.527,18 | $49.527,18 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| B | $10.612,98 | $10.612,98 | $20.071,55 | $25.694,55 | $56.379,08 | $56.379,08 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| C | $18.246,86 | $16.757,32 | $22.078,71 | $25.694,55 | $66.020,12 | $64.530,58 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| D | $29.790,79 | $27.742,67 | $24.286,58 | $30.535,56 | $84.612,93 | $82.564,81 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| E | $55.857,73 | $44.313,79 | $26.715,24 | $37.238,48 | $119.811,45 | $108.267,51 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| F | $78.573,20 | $57.719,64 | $29.386,76 | $42.824,25 | $150.784,21 | $129.930,65 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| G | $142.995,76 | $71.497,87 | $41.141,46 | $46.175,72 | $230.312,94 | $158.815,05 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| H | $409.623,31 | $204.811,64 | $57.598,04 | $55.485,33 | $522.706,68 | $317.895,01 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| I | $814.591,79 | $325.836,71 | $80.637,26 | $68.518,81 | $963.747,86 | $474.992,78 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| J | $977.510,14 | $391.004,07 | $112.892,16 | $76.897,46 | $1.167.299,76 | $580.793,69 | https://www.arca.gob.ar/monotributo/categorias.asp |
-| K | $1.368.514,20 | $456.171,40 | $158.049,02 | $87.882,82 | $1.614.446,04 | $702.103,24 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| A | ARS 5,585.77 | ARS 5,585.77 | ARS 18,246.86 | ARS 25,694.55 | ARS 49,527.18 | ARS 49,527.18 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| B | ARS 10,612.98 | ARS 10,612.98 | ARS 20,071.55 | ARS 25,694.55 | ARS 56,379.08 | ARS 56,379.08 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| C | ARS 18,246.86 | ARS 16,757.32 | ARS 22,078.71 | ARS 25,694.55 | ARS 66,020.12 | ARS 64,530.58 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| D | ARS 29,790.79 | ARS 27,742.67 | ARS 24,286.58 | ARS 30,535.56 | ARS 84,612.93 | ARS 82,564.81 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| E | ARS 55,857.73 | ARS 44,313.79 | ARS 26,715.24 | ARS 37,238.48 | ARS 119,811.45 | ARS 108,267.51 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| F | ARS 78,573.20 | ARS 57,719.64 | ARS 29,386.76 | ARS 42,824.25 | ARS 150,784.21 | ARS 129,930.65 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| G | ARS 142,995.76 | ARS 71,497.87 | ARS 41,141.46 | ARS 46,175.72 | ARS 230,312.94 | ARS 158,815.05 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| H | ARS 409,623.31 | ARS 204,811.64 | ARS 57,598.04 | ARS 55,485.33 | ARS 522,706.68 | ARS 317,895.01 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| I | ARS 814,591.79 | ARS 325,836.71 | ARS 80,637.26 | ARS 68,518.81 | ARS 963,747.86 | ARS 474,992.78 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| J | ARS 977,510.14 | ARS 391,004.07 | ARS 112,892.16 | ARS 76,897.46 | ARS 1,167,299.76 | ARS 580,793.69 | https://www.arca.gob.ar/monotributo/categorias.asp |
+| K | ARS 1,368,514.20 | ARS 456,171.40 | ARS 158,049.02 | ARS 87,882.82 | ARS 1,614,446.04 | ARS 702,103.24 | https://www.arca.gob.ar/monotributo/categorias.asp |
 
 Under the source notes, the surface parameter is not considered in towns up to 40,000 inhabitants except ARCA-specified zones/activities. This exception concerns surface, not an automatic exemption from every parameter. An individual health amount covers no adherents; each additional adherent adds that same category health amount. Once elected, the additional payment remains obligatory until lawful removal or departure under decree art. 65. Example: category A with one adherent adds ARS 25,694.55 to the ordinary total, subject to actual health enrolment entitlement.
 
