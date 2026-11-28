@@ -1,286 +1,197 @@
 ---
 name: uk-return-assembly
-description: "How to assemble a UK individual's Self Assessment return (SA100 and its supplementary pages) for England, Wales and Northern Ireland. Covers choosing the pages, running the part Guides in order (VAT, SA103, SA102, SA105, SA108, SA100), building the computation in the ITA 2007 section 23 order, six reconciliations, checking against HMRC's calculation, payments on account, the filing and payment deadlines for the 2025-26 return due 31 January 2027, and the 2026-27 figures from 6 April 2026."
-version: "2.0"
+description: "Assemble a UK individual's Self Assessment reviewer package: choose SA100 supplementary pages, reconcile the component computations, apply the statutory income-tax order, and set the 2025-26 and 2026-27 filing and payment calendar. Includes the original six cases, with explicit holds where facts or year-specific instructions are missing."
+version: "2.1"
 type: filing-howto
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-27
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# UK Self Assessment return assembly: putting the SA100 and its pages together
+# UK Self Assessment return assembly
 
-This skill is the last step for a UK individual's Self Assessment return. It picks the SA100 pages, runs the part Guides in order, builds the computation in the statutory order, reconciles the pieces, checks the result against HMRC's own calculation, and sets the filing and payment calendar. Detail stays in each part Guide.
-
-Two tax years matter on 14 November 2026:
-
-- **2026-27** (6 April 2026 to 5 April 2027) is the year in force. Planning, payments on account and the next return use it.
-- **2025-26** (6 April 2025 to 5 April 2026) is the year whose return is being filed now. HMRC calls the form "Tax Return 2026". It is due online by 31 January 2027.
-
-Every figure names its year. Never carry a 2026-27 figure into a 2025-26 return.
+Assemble the SA100, its supplementary pages, the computation, reconciliations and payment calendar into one reviewer package.
 
 ## Scope
 
-**In scope.** An individual who is UK resident for the whole year, with a main home in England, Wales or Northern Ireland, filing an SA100 with any mix of employment (SA102), sole trade (SA103S or SA103F, with VAT if registered), UK property (SA105), capital gains (SA108), and interest, dividends, pensions, Gift Aid and pension contributions on the main return. It also covers Class 4 and voluntary Class 2, student loan repayments, the High Income Child Benefit Charge, and payments on account for the next year.
+This Guide covers full-year UK-resident individuals whose England, Wales or Northern Ireland taxpayer status and allowance entitlement have been established. It includes sole traders with employment, UK property, gains, savings, dividends and pensions. Residence, Scottish taxpayer status and specialist positions have specific holds below; do not infer status solely from a present address.
 
-**Refer, do not assemble.** Scottish taxpayers, because their non-savings bands and rates differ ([Income Tax in Scotland](https://www.gov.uk/scottish-income-tax)). Non-residents, split years and dual residents (SA109; start with `uk-statutory-residence-test`). Foreign income and the 4-year foreign income and gains regime (SA106; see `uk-non-dom`). Partnerships (SA104), trusts and estates (SA107), and limited companies. Details are under "When to refuse or refer".
-
-The output is a reviewer package. A qualified accountant must check it before it is filed.
+Keep the years separate: **2025-26** is 6 April 2025 to 5 April 2026, filed on the “2026” forms; **2026-27** is 6 April 2026 to 5 April 2027. The ordinary online deadlines are respectively **31 January 2027** and **31 January 2028**, subject to the late-notice rules below ([HMRC forms](https://www.gov.uk/government/publications/self-assessment-tax-return-sa100); [TMA 1970 s.8](https://www.legislation.gov.uk/ukpga/1970/9/section/8)).
 
 ## Ask the client first
 
-Ask these before any number is worked out. Each answer changes which pages apply or which figure is used.
+Read the intake, documents and previous working papers before asking for missing facts. Confirm:
 
-- **Which return?** The 2025-26 return being filed now, or planning for 2026-27?
-- **Main home and residence.** Scotland, or any time living abroad, means refer.
-- **Filed before?** A first-time filer for 2025-26 had to tell HMRC by 5 October 2026. Unique Taxpayer Reference?
-- **Jobs.** P60, P45 and P11D for each job; tips, bonuses, termination payments.
-- **Self-employment.** Turnover, accounting date, cash basis or traditional accounting, VAT registration, Construction Industry Scheme deductions.
-- **Property, gains, anything abroad.** Rent, disposals of shares, property or crypto, foreign income or gains.
-- **Savings.** Interest and dividends outside ISAs, by account and company.
-- **Pensions and gifts.** Pension income; personal pension contributions (relief at source or not); Gift Aid.
-- **Family.** Marriage Allowance? Child Benefit in the household, and each partner's adjusted net income? For 2025-26: a Winter Fuel Payment?
-- **Student loan.** Plan, and the amount taken through payroll.
-- **Last year.** The last SA302, payments on account made on 31 January and 31 July, and any claim to reduce them (form SA303).
-- **Making Tax Digital.** Any letter from HMRC about it?
+- Return year; UTR; actual notice-to-file date; registration and filing history; residence/taxpayer-status decision; any HMRC Making Tax Digital letter.
+- Every trade, accounting period and basis; turnover, expenses, assets and closing pools; VAT scheme and periods; CIS statements, deductions and refunds.
+- P60/P45 for each job; payrolled benefits, P11D or equivalent, expenses, tips, bonuses and termination payments.
+- UK property, disposals including crypto, foreign income/gains/remittances; interest and dividends outside ISAs; pensions, Gift Aid and pension relief method.
+- Each partner's adjusted net income, Child Benefit entitlement and relationship weeks; Marriage Allowance; Winter Fuel Payment or Pension Age Winter Heating Payment.
+- Student/postgraduate loan plan, repayment status and payroll deductions; prior SA302, HMRC statement, actual payments on account, credits and reduction claims.
 
-If an answer is missing, list it and ask for it. Do not guess an amount into the return.
+Missing amounts are gaps, never zeroes. Continue unaffected work, identify each incomplete computation, and withhold filing until the reviewer resolves it. Do not omit an out-of-scope income source from a supposedly complete return.
 
 ## The method, step by step
 
-### Stage 1: decide which pages apply
+### 1. Choose the pages
 
-The SA100 is the main return. HMRC lists the supplementary pages that go with it ([SA100 and supplementary pages](https://www.gov.uk/government/publications/self-assessment-tax-return-sa100)). Tick each one the facts call for, and route it:
+Use the return year's forms and notes. The following is a page-selection map, not a finding that every item creates a filing obligation ([HMRC supplementary pages](https://www.gov.uk/government/publications/self-assessment-tax-return-sa100)).
 
-| Page | When it applies | Where the detail is |
-| --- | --- | --- |
-| SA100 main return | Always: interest, dividends, UK pensions and benefits, pension contributions, Gift Aid, Child Benefit charge, Marriage Allowance | `uk-income-tax-sa100` |
-| SA101 Additional information | Less common income, deductions and reliefs, and the pension annual allowance charge | Refer if material |
-| SA102 Employment | An employee or company director | P60, P11D; pay in box 1, UK tax taken off in box 2 |
-| SA103S or SA103F Self-employment | A sole trader | This skill, Stage 2 below, then `uk-bookkeeping` |
-| SA104S or SA104F Partnership | A partner | Refer |
-| SA105 UK property | Rental income | `uk-rental-sa105` |
-| SA106 Foreign | Foreign income or gains | Refer; `uk-non-dom` |
-| SA107 Trusts etc | Income from a trust, settlement or deceased person's estate | Refer |
-| SA108 Capital Gains summary | Disposals to report | `uk-capital-gains-sa108` |
-| SA109 Residence, remittance basis etc | A non-UK resident or dual resident | Refer |
-| SA110 Tax calculation | A paper filer who works out their own tax | See Stage 5 |
-
-**Short or full self-employment pages.** HMRC's notes for the 2025-26 return say to use the short pages (SA103S) if turnover "was less than £90,000 (or would have been if you had traded for a full year)" ([SA103S notes 2026](https://assets.publishing.service.gov.uk/media/69ce15395cf899414a0bc69f/SA103S_Notes_2026.pdf)). At £90,000 or more, use the full pages (SA103F). The full pages are also needed, whatever the turnover, if any of these applies ([SA103F notes 2026](https://assets.publishing.service.gov.uk/media/69c26565cfa346b9d4704b35/SA103F_Notes_2026.pdf)):
-
-- the profits or losses of the accounting period need adjusting because it ended before 31 March 2026, was not 12 months long, or did not end in the tax year;
-- there is adjustment income from a change of accounting basis;
-- profits chargeable to Class 4 need adjusting;
-- the client was within the Managing Serious Defaulters programme during the year.
-
-HMRC has not yet published the notes for the 2026-27 return. Until it does, treat the 2025-26 box numbers below as provisional for 2026-27.
-
-### Stage 2: run the part Guides in dependency order
-
-Each step feeds the next.
-
-1. **VAT, if registered** (`uk-vat-return`). It runs first because it decides whether SA103 figures are net or gross: for a registered trader, VAT charged is not turnover and reclaimable VAT is not an expense. For an unregistered trader, test turnover against the threshold: registration is compulsory when taxable turnover is more than £90,000 on a rolling 12 months ([VAT thresholds](https://www.gov.uk/how-vat-works/vat-thresholds)).
-2. **Self-employment pages** (`uk-bookkeeping` for expenses, capital allowances and simplified expenses). Output: turnover, expenses, net profit, capital allowances, taxable profit. The box map for the 2025-26 return:
-
-| Item | Short pages (SA103S) | Full pages (SA103F) |
-| --- | --- | --- |
-| Turnover, other business income, trading income allowance | 9, 10, 10.1 | 15, 16, 16.1 |
-| Expenses, then the total | 11 to 19, total 20 | 17 to 30, total 31 |
-| Net profit, net loss | 21, 22 | 47, 48 |
-| Annual Investment Allowance | 23 | 49 |
-| All capital allowances | 23 to 25.2, no total box | 49 to 56, total in 57 |
-| Balancing charges, goods for own use | 26, 27 | 59, 60 |
-| Net business profit or loss for tax purposes | 28, 32 | 64, 65 |
-| Total taxable profits, and the loss carried into the loss boxes | 31, 32 | 76, 77 |
-| Traditional accounting ticked | 8 | 10 |
-| Voluntary Class 2; exempt from Class 4 | 36; 37 | 100; 101 |
-| Adjustment to profits chargeable to Class 4 | none | 102 |
-| Construction Industry Scheme deductions | 38 | 81 |
-
-3. **Employment pages.** Pay from the P60 in SA102 box 1 and UK tax taken off in box 2 ([SA102 notes 2026](https://assets.publishing.service.gov.uk/media/6a9ea0015a0c25165ae469d3/SA102_-Notes_2026.pdf)). Benefits in kind and employment expenses come from the P11D: flag them for the reviewer.
-4. **Property and gains.** Run `uk-rental-sa105` and `uk-capital-gains-sa108` if they apply. Take their SA105 profit or loss and their Capital Gains Tax figure as given. Route crypto disposals and crypto income to `uk-crypto-tax`.
-5. **The main return and the tax computation** (`uk-income-tax-sa100`), in the statutory order in Stage 3.
-6. **National Insurance** (`uk-national-insurance`): Class 4 on the taxable profit, and voluntary Class 2 only where the client chose it.
-7. **Student loan and Child Benefit charge**, on the total income from step 5, using the student loan threshold for the return's year.
-8. **Payments on account for the next year** (`uk-payments-on-account`), from the Self Assessment balance.
-
-If a part Guide cannot produce its output, say which one and why in the reviewer brief. Continue with the rest, and do not file until the gap is closed.
-
-### Stage 3: put the computation together in the statutory order
-
-The Income Tax Act 2007, section 23, sets seven steps ([ITA 2007 s.23](https://www.legislation.gov.uk/ukpga/2007/3/section/23)). Follow them in this order:
-
-1. **Total income.** "Identify the amounts of income on which the taxpayer is charged to income tax for the tax year." Keep three components apart: non-savings (employment, self-employment, pensions, property), savings (interest) and dividends.
-2. **Reliefs.** Deduct reliefs such as trading losses set against other income and pension contributions paid gross. The result is net income.
-3. **Allowances.** Deduct the Personal Allowance, after the taper (below). It is set against non-savings income first, then savings, then dividends.
-4. **Tax at each rate** on what is left, in the order in section 16: non-savings first, then savings, then dividends. Where both are present, "the savings income and dividend income are together treated as the highest part of the person's total income", and dividends sit on top ([ITA 2007 s.16](https://www.legislation.gov.uk/ukpga/2007/3/section/16)).
-5. **Add** the tax at each rate.
-6. **Tax reductions.** Take off reducers such as the Marriage Allowance reduction for the spouse who receives it.
-7. **Add charges** that sit outside the rates, such as the High Income Child Benefit Charge, and the pension annual allowance charge. The result is the Income Tax liability.
-
-Then, outside the Income Tax steps:
-
-8. **Add Class 4 National Insurance** on the self-employment profit, and any voluntary Class 2.
-9. **Add the student loan** repayment worked out through Self Assessment, and any Capital Gains Tax from the SA108.
-10. **Take off tax already paid**: PAYE from the SA102, tax taken off at source, Construction Industry Scheme deductions, and the payments on account already made for the year.
-11. The result is the balancing payment, or the repayment due.
-
-**The Personal Allowance taper.** "For an individual whose adjusted net income exceeds £100,000, the allowance ... is reduced by one-half of the excess", rounded up to a whole pound ([ITA 2007 s.35](https://www.legislation.gov.uk/ukpga/2007/3/section/35)). HMRC puts it as "£1 for every £2" above £100,000. The allowance is nil at £125,140 or more ([Income Tax rates](https://www.gov.uk/income-tax-rates)). Adjusted net income is net income less grossed-up Gift Aid and grossed-up relief-at-source pension contributions ([adjusted net income](https://www.gov.uk/guidance/adjusted-net-income)). The same grossed-up amounts extend the basic rate band.
-
-**Savings.** Apply, in order: any unused Personal Allowance, the starting rate for savings, the Personal Savings Allowance, then the savings rates. The starting rate is available only if other taxable income "is less than £17,570". It covers "up to £5,000 of interest", reduced £1 for every £1 of other income above the Personal Allowance. The Personal Savings Allowance depends on the band: "To work out your tax band, add all the interest you've earned to your other income" ([savings allowances](https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free)).
-
-**Dividends.** Dividends within any unused Personal Allowance are tax-free. Then the dividend allowance applies, then the dividend rates. The allowance is a band taxed at nil, not a deduction. Dividends inside it still use up the basic and higher rate bands ([tax on dividends](https://www.gov.uk/tax-on-dividends)).
-
-### Stage 4: reconcile the pieces
-
-Run these six checks before the numbers go to the reviewer. Record each as pass, fail or not applicable.
-
-| Check | Compare | Rule |
-| --- | --- | --- |
-| 1. Profit carried across | SA103 taxable profit (box 31 short, box 76 full) against the self-employment income in the SA100 computation | Must match exactly. Common causes of a difference: private-use adjustments, goods taken for own use, a second trade left out |
-| 2. Class 4 base | Class 4 profit against the SA103 taxable profit, adjusted by box 102 on the full pages | Class 4 is on taxable profit from all trades added together. Box 37 or 101 ticked means no Class 4 |
-| 3. Payments on account | Payments on account made for this year against half of last year's Self Assessment balance on the prior SA302 | A difference means a claim to reduce (SA303), a first year, or a missed payment. Find out which |
-| 4. VAT turnover | Sales excluding VAT on the VAT returns against SA103 turnover (box 9 short, box 15 full) | Should broadly match. VAT periods rarely line up with 6 April to 5 April. On the Flat Rate Scheme the SA103 uses actual turnover, not the flat-rate sum |
-| 5. Student loan | The repayment against total income from the computation | Plan rate on income over the threshold for that year, less what payroll took. Cannot be negative: if payroll took too much, the refund is claimed from the Student Loans Company, not through the return ([getting a refund](https://www.gov.uk/repaying-your-student-loan/getting-a-refund)) |
-| 6. Accounting basis | SA103 traditional accounting box (8 short, 10 full) against the workings | Cash basis: no debtor, creditor or accrual adjustments. Traditional accounting: debtor and creditor adjustments present |
-
-A failed check is not a reason to stop the work. It is a reason not to file. Name it, give the difference in pounds, and send it to the reviewer.
-
-### Stage 5: check against HMRC's own calculation
-
-HMRC works out the tax itself from the boxes. The assembled computation has to agree with it.
-
-- **Online filers.** The online return and commercial software calculate the tax before submission. Compare that figure with the assembled computation line by line: total income, Personal Allowance, tax at each rate, Class 4, student loan, tax deducted, balancing payment and payments on account. Any difference means a box is wrong or an input is missing. Find it before submitting.
-- **After filing.** The SA302 tax calculation and a tax year overview can be printed from the HMRC online account, or the software may call it a "tax computation". "You cannot print your documents until 72 hours after you sent your tax return" ([SA302 tax calculation](https://www.gov.uk/sa302-tax-calculation)). File the SA302 with the working papers.
-- **Paper filers.** HMRC lists the SA110 as the page for "the results of your tax calculation". If the paper return reaches HMRC by the deadline, HMRC says "we'll work out if you have any tax to pay and tell you before 31 January 2027" for a 2025-26 return, including whether payments on account are due ([SA150 notes 2026](https://assets.publishing.service.gov.uk/media/6a9ea8a5df4246cf45e469e0/SA150_Notes_2026.pdf)).
-- **Fixing a mistake.** "You can correct a tax return within 12 months of the Self Assessment deadline", online or by sending another paper return. Online, "You must wait 3 days (72 hours) after filing before updating your return". After the 12 months, write to HMRC ([changing a return](https://www.gov.uk/self-assessment-tax-returns/corrections)). For a 2025-26 return filed online, the 12 months end on 31 January 2028.
-
-### Stage 6: payments on account and the calendar
-
-Sources: [payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account).
-
-Payments on account are advance payments towards the next year's bill, including Class 4 for the self-employed. "Each payment is half of the tax you owed last year", due "by midnight on 31 January and 31 July" ([payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account)). The base is last year's Self Assessment balance: Income Tax and Class 4 after tax deducted at source. Capital Gains Tax and student loan repayments are paid with the balancing payment and are not part of the instalments. Keep the detail, including a claim to reduce on form SA303, in `uk-payments-on-account`.
-
-No payments on account are due if either:
-
-- "the amount of tax you owed last year was less than £1,000", or
-- "last year you paid more than 80% of the tax you owed outside of Self Assessment".
-
-At exactly 80% paid outside Self Assessment, they are still due. The statute switches them off only where the Self Assessment balance is less than the prescribed share of the assessed tax ([Taxes Management Act, s.59A](https://www.legislation.gov.uk/ukpga/1970/9/section/59A)).
-
-A reduced payment on account that turns out too low costs interest: "you'll be charged interest on the difference".
-
-### Rates, bands and thresholds
-
-These are the figures the assembly checks against, for England, Wales and Northern Ireland, with a standard Personal Allowance. The 2026-27 column applies from 6 April 2026; the 2025-26 column is for the return due 31 January 2027. Every figure was confirmed on the page linked on its row on 14 November 2026. The part Guides carry the detail.
-
-#### Income Tax
-
-Sources: [Income Tax rates](https://www.gov.uk/income-tax-rates); [previous tax years](https://www.gov.uk/income-tax-rates/previous-tax-years); [Finance Act 2026 s.2](https://www.legislation.gov.uk/ukpga/2026/11/section/2); [s.10](https://www.legislation.gov.uk/ukpga/2026/11/section/10).
-
-| Item | 2025-26 (return due 31 January 2027) | 2026-27 (year in force) | Source |
-| --- | --- | --- | --- |
-| Personal Allowance | £12,570 | £12,570 | https://www.gov.uk/income-tax-rates https://www.gov.uk/income-tax-rates/previous-tax-years |
-| Taper | £1 for every £2 of adjusted net income above £100,000 | Same | https://www.gov.uk/income-tax-rates |
-| Allowance nil at | £125,140 or more | £125,140 or more | same |
-| Basic rate 20% | £12,571 to £50,270 | £12,571 to £50,270 | https://www.gov.uk/income-tax-rates https://www.gov.uk/income-tax-rates/previous-tax-years |
-| Higher rate 40% | £50,271 to £125,140 | £50,271 to £125,140 | https://www.gov.uk/income-tax-rates |
-| Additional rate 45% | Over £125,140 | Over £125,140 | same |
-| Basic rate limit (band above the allowance) | £37,700 | £37,700 | https://www.legislation.gov.uk/ukpga/2026/11/section/10 |
-
-Finance Act 2026 section 10 keeps the basic rate limit at £37,700 up to 2030-31.
-
-#### Savings and dividends
-
-Sources: [savings allowances](https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free); [tax on dividends](https://www.gov.uk/tax-on-dividends); [Finance Act 2026 s.4](https://www.legislation.gov.uk/ukpga/2026/11/section/4); [s.5](https://www.legislation.gov.uk/ukpga/2026/11/section/5).
-
-| Item | 2025-26 | 2026-27 | Source |
-| --- | --- | --- | --- |
-| Starting rate for savings band | Up to £5,000; only if other income is less than £17,570 | Same | https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free |
-| Personal Savings Allowance | £1,000 basic rate, £500 higher rate, £0 additional rate | Same | same |
-| Savings rates | 20%, 40%, 45% | 20%, 40%, 45% | https://www.gov.uk/income-tax-rates |
-| Dividend allowance | £500 | £500 | https://www.gov.uk/tax-on-dividends |
-| Dividend ordinary rate | 8.75% | 10.75% | https://www.legislation.gov.uk/ukpga/2026/11/section/4 |
-| Dividend upper rate | 33.75% | 35.75% | same |
-| Dividend additional rate | 39.35% | 39.35% | https://www.gov.uk/tax-on-dividends |
-
-Finance Act 2026 section 4 substitutes "10.75%" for "8.75%" and "35.75%" for "33.75%" from 2026-27. Section 5 raises the savings rates to 22%, 42% and 47% only from 2027-28. Do not apply them to either year here. `uk-income-tax-sa100` carries the detail.
-
-#### National Insurance for the self-employed
-
-Sources: [self-employed rates](https://www.gov.uk/self-employed-national-insurance-rates); [rates by year](https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions); `uk-national-insurance`.
-
-| Item | 2025-26 | 2026-27 | Source |
-| --- | --- | --- | --- |
-| Class 4 main rate, profits over £12,570 up to £50,270 | 6% | 6% | https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions |
-| Class 4 rate on profits over £50,270 | 2% | 2% | same |
-| Small profits threshold: at or above it, Class 2 is treated as paid | £6,845 | £7,105 | same |
-| Voluntary Class 2, only below the threshold and only if the client chooses | £3.50 a week | £3.65 a week | same |
-
-Class 2 is no longer charged. On the 2025-26 short pages, box 36 is ticked only "If your total profits for 2025 to 2026 are less than £6,845 and you choose to pay" ([SA103S notes 2026](https://assets.publishing.service.gov.uk/media/69ce15395cf899414a0bc69f/SA103S_Notes_2026.pdf)).
-
-#### Other thresholds the assembly tests
-
-| Item | Figure | Year | Source |
-| --- | --- | --- | --- |
-| Trading allowance and property allowance | Up to £1,000 each | Each year since 6 April 2017 | https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income |
-| High Income Child Benefit Charge | Adjusted net income over £60,000; 1% of the Child Benefit for every £200 over; all of it over £80,000 | 2024-25 onwards | https://www.gov.uk/child-benefit-tax-charge |
-| Student loan yearly thresholds, 2025-26 | Plan 1 £26,065; Plan 2 £28,470; Plan 4 £32,745; Postgraduate Loan £21,000. The page gives no Plan 5 threshold for 2025-26, so check any Plan 5 case with HMRC | 2025-26 return | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 |
-| Student loan yearly thresholds, 2026-27 | Plan 1 £26,900; Plan 2 £29,385; Plan 4 £33,795; Plan 5 £25,000; Postgraduate Loan £21,000 | 2026-27 | https://www.gov.uk/repaying-your-student-loan/what-you-pay |
-| Student loan rate | 9% over the threshold (Plans 1, 2, 4, 5); 6% (Postgraduate Loan) | Both years | same |
-| Child Benefit claimed by someone else | In HMRC's words, the charge "may also apply if someone else gets Child Benefit for a child living with you and they contribute at least an equal amount towards the child's upkeep". The child need not be the client's own | 2024-25 onwards | https://www.gov.uk/child-benefit-tax-charge |
-| Payments on account switched off | Last year's tax owed less than £1,000, or more than 80% paid outside Self Assessment | Standing rule | https://www.gov.uk/understand-self-assessment-bill/payments-on-account |
-| VAT registration | Taxable turnover more than £90,000 on a rolling 12 months | In force | https://www.gov.uk/how-vat-works/vat-thresholds |
-| Making Tax Digital for Income Tax | Qualifying income over £50,000 in 2024-25: should have started from 6 April 2026. Over £30,000 in 2025-26: from 6 April 2027. Over £20,000 in 2026-27: from 6 April 2028 | As stated | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax |
-| Tax code collection of a 2025-26 balance | Owe less than £3,000, have a job or UK pension paid through PAYE (HMRC will "try to collect it through your wages or pension"), and file online by 30 December 2026 (paper by 31 October 2026). A sole trader with no PAYE income cannot use it and pays by 31 January 2027 | 2025-26 return | https://assets.publishing.service.gov.uk/media/6a9ea8a5df4246cf45e469e0/SA150_Notes_2026.pdf |
-| Simplified expenses: cars and goods vehicles | 55p a mile for the first 10,000 business miles and 25p after, for 2026-27; before 6 April 2026, 45p and 25p | As stated | https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles |
-| Simplified expenses: working from home | £10 a month for 25 to 50 hours, £18 for 51 to 100, £26 for 101 and more | Current page | https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home |
-
-Capital allowances, including the Annual Investment Allowance and the pool rates, are applied in `uk-bookkeeping`. Take each rate from HMRC's page for the right date, never from an older workpaper ([capital allowance rates and pools](https://www.gov.uk/work-out-capital-allowances/rates-and-pools)).
-
-## Boundary and exception table
-
-Sources: [Income Tax rates](https://www.gov.uk/income-tax-rates); [SA103S notes 2026](https://assets.publishing.service.gov.uk/media/69ce15395cf899414a0bc69f/SA103S_Notes_2026.pdf); [payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account).
-
-| Situation | Rule |
+| Page | Subject and route |
 | --- | --- |
-| Turnover exactly £90,000 (2025-26 return) | Full pages. The short pages need turnover "less than £90,000" |
-| Turnover under £90,000 but the accounting period ended before 31 March 2026 or was not 12 months long | Full pages |
-| Adjusted net income exactly £100,000 | No taper. It starts only above £100,000 |
-| Adjusted net income £125,140 or more | Personal Allowance nil |
-| Other taxable income £17,570 or more | No starting rate for savings |
-| Dividends inside the £500 allowance | Not taxed, but still reported and still use up the bands |
-| Profits exactly £7,105 (2026-27) or £6,845 (2025-26) | Class 2 treated as paid. Voluntary Class 2 is only for profits below the threshold |
-| Profits exactly £12,570 | No Class 4. It starts on profits over £12,570 |
-| Adjusted net income exactly £60,000 | No Child Benefit charge. It applies over £60,000 |
-| Both partners over £60,000 | The partner with the higher adjusted net income pays the charge |
-| Last year's Self Assessment balance under £1,000 | No payments on account. At £1,000 they are due unless the 80% test is met |
-| Exactly 80% of last year's tax paid outside Self Assessment | Payments on account still due. The gov.uk test is "more than 80%" |
-| Capital Gains Tax or student loan in the bill | Balancing payment only; not in the payments on account |
-| Registered after 5 October 2026 for 2025-26 | Return due 3 months from HMRC's letter; tax still due by 31 January 2027 |
-| 2025-26 balance of £3,000 or more, or no PAYE wages or pension (for example Case D) | Not collectable through the tax code. Pay by 31 January 2027 |
-| Someone else claims Child Benefit for a child living with the client | The charge may still apply to the client (see the Child Benefit row in the thresholds table). Flag it for the reviewer |
+| SA100 | Main return: `uk-income-tax-sa100` |
+| SA101 | Additional information: less common income, deductions, reliefs and pension charges; specialist hold below |
+| SA102 | Employment or directorship, where required; one page for each employment/directorship |
+| SA103S / SA103F | Self-employment: `uk-self-employment-sa103` with `uk-bookkeeping` |
+| SA104S / SA104F | Partnership income; specialist hold |
+| SA105 | UK property: `uk-rental-sa105` |
+| SA106 | Foreign income/gains; specialist hold, `uk-non-dom` |
+| SA107 | Trust, settlement or deceased estate income; specialist hold |
+| SA108 | Capital gains/losses: `uk-capital-gains-sa108`; crypto also `uk-crypto-tax` |
+| SA109 | Residence/foreign-income-and-gains matters; specialist hold, `uk-statutory-residence-test` |
+| SA110 | Results of a tax calculation on the supplementary tax-calculation pages |
+
+For **2025-26**, short self-employment pages require turnover **less than £90,000**, including the full-year equivalent for a short trading period. Exactly £90,000 requires full pages. Full pages are also needed for the notes' accounting-period profit/loss adjustments (ended before 31 March 2026, not 12 months, or not ending in the tax year), adjustment income from changing accounting basis, Class 4 profit adjustments, or Managing Serious Defaulters participation. The short notes additionally direct a more complicated business to full pages. Establish the actual accounts and any cessation before choosing ([short notes, pp.1–3](https://assets.publishing.service.gov.uk/media/69ce15395cf899414a0bc69f/SA103S_Notes_2026.pdf); [full notes, p.1](https://assets.publishing.service.gov.uk/media/69c26565cfa346b9d4704b35/SA103F_Notes_2026.pdf)).
+
+**2025-26 box map only.** These identify fields, not eligibility for allowances, loss relief or NIC exemptions. Keep the source form beside the worksheet; do not use this map to file 2026-27 ([SA103S form](https://assets.publishing.service.gov.uk/media/69c12ae013101e9908704a53/SA103S-2026.pdf); [SA103F form](https://assets.publishing.service.gov.uk/media/69c2635b13101e9908704b36/SA103F_2026.pdf)).
+
+| Item | SA103S | SA103F | Official form |
+| --- | --- | --- | --- |
+| Turnover; other business income; trading income allowance | 9; 10; 10.1 | 15; 16; 16.1 | https://assets.publishing.service.gov.uk/media/69c12ae013101e9908704a53/SA103S-2026.pdf https://assets.publishing.service.gov.uk/media/69c2635b13101e9908704b36/SA103F_2026.pdf |
+| Expense entries and total | 11–19, total 20 | 17–30, total 31; disallowable amounts separately 32–45, total 46 | same |
+| Accounting net profit / loss | 21 / 22 | 47 / 48 | same |
+| Annual Investment Allowance and capital-allowance fields | AIA 23; fields 23–25.2 | AIA 49; fields 49–56, total 57 | same |
+| Balancing charges; goods/services for own use | 26; 27 | 59; 60 | same |
+| Net business profit / loss for tax purposes | 28 / 32 | 64 / 65 | same |
+| Total taxable profit / loss | 31 / 32 | 76 / 77; transition profit separate in 73.3, excluded from 76 | same |
+| Traditional-accounting election | 8 | 10 | same |
+| Voluntary Class 2; Class 4 exemption; Class 4 profit adjustment | 36; 37; no adjustment field | 100; 101; 102 | same |
+| CIS deductions | 38 | 81 | same |
+
+For **2025-26 employment**, use SA102 box 1 for that employment's P45/P60 pay and box 2 for UK tax taken off. Avoid counting previous jobs twice. Benefits use the P11D **or equivalent information**; do not assume employment expenses appear on a P11D. Benefits, payrolled-benefit adjustments, expenses and termination payments are held for specialist checking ([SA102 form](https://assets.publishing.service.gov.uk/media/69bd6a7a7e02b81c0d1c75ae/SA102-2026.pdf)).
+
+### 2. Run the component Guides
+
+1. Run `uk-vat-return` first where relevant and prepare a bridge to the income-tax records. Registration alone does not force every trader's income-tax figures to be VAT-exclusive: a VAT-registered **cash-basis** business may record receipts/payments inclusive or exclusive; if inclusive, net VAT payments to HMRC are expenses and net repayments are receipts. Keep one consistent method. Flat Rate Scheme income-tax treatment, partial exemption, irrecoverable VAT, VAT-invoice requirements and actual VAT filing dates are held below ([HMRC BIM72005](https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim72005)).
+2. For an unregistered business, test both taxable turnover over £90,000 in the year ending at each month end and reasonable grounds to expect over £90,000 in the next 30 days alone. Overseas/non-established businesses and exceptions require the VAT Guide and specialist checking; no universal £90,000 safe harbour ([VATA 1994 Sch.1 para.1](https://www.legislation.gov.uk/ukpga/1994/23/schedule/1/paragraph/1)).
+3. Run `uk-self-employment-sa103` and `uk-bookkeeping`: reconcile accounting profit to the tax-year profit, reliefs and adjustments; retain the asset/pool schedule. Cash basis is standard for eligible sole traders; traditional accounting is optional. Cash basis records receipts/payments, traditional accounting invoices/bills; basis changes and transitional adjustments need separate checking, not a blanket “no adjustments” assumption ([cash basis](https://www.gov.uk/simpler-income-tax-cash-basis)).
+4. Prepare employment worksheets where applicable. **Property and gains. Run `uk-rental-sa105` and `uk-capital-gains-sa108` if they apply.** Carry validated outputs with their assumptions and credits; do not treat another Guide's unverified answer as established. Run `uk-income-tax-sa100`, `uk-national-insurance`, any applicable `uk-student-loan-repayment`, then `uk-payments-on-account`.
+
+### 3. Assemble the computation
+
+[ITA 2007 s.23](https://www.legislation.gov.uk/ukpga/2007/3/section/23) requires: **total income → eligible Step 2 reliefs → eligible Step 3 allowances → tax on each component → sum of that tax → eligible tax reductions → additional charges**. The result is Income Tax liability. Keep entitlement and claims for each relief separate; a pension contribution is not automatically a Step 2 deduction.
+
+For **2025-26 and 2026-27**, [s.25](https://www.legislation.gov.uk/ukpga/2007/3/section/25) allocates reliefs/allowances to obtain the greatest tax reduction, subject to the statutory restrictions and sufficient income, with no double deduction. **Do not mandate non-savings-first allowance allocation.** The new priority restriction in Finance Act 2026 s.6(6) applies from 2027-28, not these years. Mixed-income optimisation outside the explicit examples is held below.
+
+Keep ordinary non-savings income, savings and dividends separate. Under [s.16](https://www.legislation.gov.uk/ukpga/2007/3/section/16), savings/dividends occupy the highest slice, with dividends above savings. Special highest-slice income is held below.
+
+**Take off tax already paid: PAYE from the SA102, tax taken off at source, Construction Industry Scheme deductions, and the payments on account already made for the year.** Use the actual credit classifications and adjustments below.
+
+Then reconcile Class 4, any valid voluntary Class 2, student/postgraduate loan, CGT and other charges; subtract correctly classified source deductions and actual credited payments on account. Keep refunds already received, PAYE coding adjustments and CGT payments visible; do not deduct a credit twice. Reconcile the result to the HMRC statement rather than promising a cash refund from an arithmetic credit.
+
+### 4. Record six reconciliations
+
+| Check | Required working paper |
+| --- | --- |
+| Profit carried across | Trace each trade's tax-year profit to the computation. Separate losses, transition profits and specialist adjustments from ordinary taxable profit. |
+| National Insurance | Reconcile the actual liable Class 4 profit, exemptions/adjustments and any Class 1 annual-maximum issue; do not copy accounting profit automatically. |
+| Payments on account | Compare statutory charges, reductions/amendments, cash paid and allocations with the prior SA302 **and** current HMRC statement. A first filing alone is not an exemption. |
+| VAT | Bridge turnover by tax period, timing, VAT accounting method, scheme and non-turnover supplies. A small difference still needs an explanation. |
+| Student loan | Confirm the correct loan computation, repayment base/status/year, payroll credit and rounding; no automatic total-income fallback if a Guide is unavailable. |
+| Accounting basis | Match the election, actual receipt/invoice timing and any basis-change adjustments to the SA103 fields. |
+
+Record pass/fail/not applicable, the pound difference and the resolution. Compare the assembled computation line by line with HMRC's online calculation or the commercial software before submission. Disagreement may reflect an exclusion, adjustment or software limitation; resolve it rather than presuming a box is wrong. Filing and payment remain human actions.
+
+After filing, retain the submission receipt, calculation and tax year overview. HMRC says documents cannot be printed until **72 hours** after submission; with commercial software, print the computation from that software, and the overview from HMRC ([SA302](https://www.gov.uk/sa302-tax-calculation)). For paper filing, SA110 records the calculation results; held or late-paper cases need a confirmed HMRC calculation/notification route, not an assumed promise of a bill before payment falls due.
+
+## Rates, bands and thresholds
+
+These are checks on established ordinary facts, not complete relief/eligibility decisions. Source sentences and read dates are recorded below. Do not carry a 2026-27 figure into 2025-26.
+
+### Income Tax
+
+These are the ordinary reference income ranges; allowance taper, actual entitlement and any valid band extensions must still be applied. The basic band is measured **after** allowances; the higher-rate taxable limit is not an extra full allowance. Read the conditions with each row.
+
+| Item | 2025-26 (return due 31 January 2027) | 2026-27 (year in force) | Conditions and official source |
+| --- | --- | --- | --- |
+| Personal Allowance | £12,570 | £12,570 | Entitlement/claim required: https://www.legislation.gov.uk/ukpga/2007/3/section/35 |
+| Taper | £1 for every £2 of adjusted net income above £100,000 | Same | Round the **remaining allowance** up to a whole pound: https://www.legislation.gov.uk/ukpga/2007/3/section/35 |
+| Allowance nil at | £125,140 or more | £125,140 or more | Computed from the taper: https://www.gov.uk/income-tax-rates |
+| Basic rate 20% | £12,571 to £50,270 | £12,571 to £50,270 | Reference ranges subject to the allowance/band conditions above: https://www.gov.uk/income-tax-rates/previous-tax-years https://www.gov.uk/income-tax-rates |
+| Higher rate 40% | £50,271 to £125,140 | £50,271 to £125,140 | Same conditions: https://www.gov.uk/income-tax-rates/previous-tax-years https://www.gov.uk/income-tax-rates |
+| Additional rate 45% | Over £125,140 | Over £125,140 | Same conditions: https://www.gov.uk/income-tax-rates/previous-tax-years https://www.gov.uk/income-tax-rates |
+| Basic rate limit (band above the allowance) | £37,700 | £37,700 | Subject to valid extensions: https://www.legislation.gov.uk/ukpga/2007/3/section/10 |
+
+### Savings and dividends
+
+Nil-rated savings and dividends still occupy bands. The PSA test includes all income, including the nil-rated amounts; these are not deductions from total income.
+
+| Item | 2025-26 | 2026-27 | Conditions and official source |
+| --- | --- | --- | --- |
+| Starting rate for savings band | Up to £5,000; only if other income is less than £17,570 | Same | The cutoff assumes the standard Personal Allowance; “other” excludes savings/dividends. Reduce the band £1 per £1 of other income above the allowance: https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free https://www.legislation.gov.uk/ukpga/2007/3/section/12 |
+| Personal Savings Allowance | £1,000 basic rate, £500 higher rate, £0 additional rate | Same | Test total income including nil-rated interest/dividends: https://www.legislation.gov.uk/ukpga/2007/3/section/12B |
+| Savings rates | 20%, 40%, 45% | 20%, 40%, 45% | After available nil bands: https://www.legislation.gov.uk/ukpga/2026/11/section/3 https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income |
+| Dividend allowance | £500 | £500 | Nil-rate band after unused Personal Allowance: https://www.legislation.gov.uk/ukpga/2007/3/section/13A https://www.gov.uk/tax-on-dividends |
+| Dividend ordinary rate | 8.75% | 10.75% | After allowance, to extent in ordinary-rate band: https://www.legislation.gov.uk/ukpga/2026/11/section/4 https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past |
+| Dividend upper rate | 33.75% | 35.75% | Higher-band dividend income after allowance: https://www.legislation.gov.uk/ukpga/2026/11/section/4 https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past |
+| Dividend additional rate | 39.35% | 39.35% | Additional-band dividend income after allowance: https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past |
+
+### Self-employed National Insurance
+
+| Item | 2025-26 | 2026-27 | Conditions and official source |
+| --- | --- | --- | --- |
+| Class 4 main rate, profits over £12,570 up to £50,270 | 6% | 6% | Established liable profits after adjustments/exemptions/any Class 1 maximum: https://www.legislation.gov.uk/ukpga/1992/4/section/15 https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions |
+| Class 4 rate on profits over £50,270 | 2% | 2% | Same conditions: https://www.legislation.gov.uk/ukpga/1992/4/section/15 https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions |
+| Small profits threshold: at or above it, Class 2 is treated as paid | £6,845 | £7,105 | Ordinary eligible self-employment weeks only, not a whole qualifying-year certificate: https://www.legislation.gov.uk/ukpga/1992/4/section/11 https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions |
+| Voluntary Class 2, only below the threshold and only if the client chooses | £3.50 a week | £3.65 a week | Eligibility/weeks/payment timing must be established; specialist cases held below: https://www.legislation.gov.uk/ukpga/1992/4/section/11 https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions |
+
+**Adjusted net income:** start with net income before Personal Allowances; deduct eligible gross Gift Aid and relief-at-source pensions, then add back any deducted trade-union/police-organisation relief as required by [ITA s.58](https://www.legislation.gov.uk/ukpga/2007/3/section/58). Do not deduct net-pay payroll pensions twice. For eligible relief-at-source contributions, net ÷ 0.8 = gross; qualifying Gift Aid likewise gross-ups by 1.25. Gross eligible contributions/gifts extend rate-band limits where the relevant conditions and claims apply ([FA 2004 s.192](https://www.legislation.gov.uk/ukpga/2004/12/section/192); [ITA s.414](https://www.legislation.gov.uk/ukpga/2007/3/section/414); [HMRC ANI](https://www.gov.uk/guidance/adjusted-net-income)).
+
+**Child Benefit charge:** for both years, adjusted net income must exceed £60,000. Apply [ITEPA ss.681B–681C](https://www.legislation.gov.uk/ukpga/2003/1/section/681B) to the relevant entitlement/partner weeks; the higher-income partner is charged, or the recipient if incomes are equal. Percentage = (ANI − £60,000) ÷ £200, rounded down, capped at 100%; round the relevant benefit total and resulting charge down to whole pounds. The cap is reached at £80,000, not only above it ([s.681C](https://www.legislation.gov.uk/ukpga/2003/1/section/681C)). Changed relationships, third-party claims for a child living with the client and unknown partner facts are held below.
+
+## Filing and payment
+
+For a return that is required, a first-time filer or a previously registered person who did not need a 2024-25 return must tell HMRC by **5 October 2026** for 2025-26 ([HMRC deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines)). Do not ignore an existing notice to file.
+
+| Ordinary event, subject to exceptions below | 2025-26 return | 2026-27 return | Official source |
+| --- | --- | --- | --- |
+| Paper return received | 31 October 2026 | 31 October 2027 | https://www.legislation.gov.uk/ukpga/1970/9/section/8 |
+| Electronic return | 31 January 2027 | 31 January 2028 | same |
+| Balancing payment, after actual source deductions/credits and payments on account | 31 January 2027 | 31 January 2028 | https://www.legislation.gov.uk/ukpga/1970/9/section/59B |
+| Balancing payment for 2025-26 and first payment on account for 2026-27 | 11:59pm on 31 January 2027 | Not applicable to this year | https://www.legislation.gov.uk/ukpga/1970/9/section/59A https://www.legislation.gov.uk/ukpga/1970/9/section/59B |
+| Second payment on account for 2026-27 | 31 July 2027 | Not applicable to this year | https://www.legislation.gov.uk/ukpga/1970/9/section/59A |
+| 2026-27 balance and first 2027-28 advance; second 2027-28 advance | Not applicable to this year | 31 January 2028; 31 July 2028 | https://www.legislation.gov.uk/ukpga/1970/9/section/59A https://www.legislation.gov.uk/ukpga/1970/9/section/59B |
+| Ordinary amendment deadline | 31 January 2028 | 31 January 2029 | https://www.legislation.gov.uk/ukpga/1970/9/section/9ZA |
+
+**Late notice to file:** under [TMA s.8](https://www.legislation.gov.uk/ukpga/1970/9/section/8), a notice after 31 July but by 31 October following the tax year gives three months for paper, while the electronic deadline stays 31 January. A notice after 31 October gives three months for either method. Under [s.59B](https://www.legislation.gov.uk/ukpga/1970/9/section/59B), the balance also gets three months only if the taxpayer gave the required s.7 notification within six months after the year and HMRC's notice came after 31 October; otherwise the ordinary balance date remains. Under [s.9ZA](https://www.legislation.gov.uk/ukpga/1970/9/section/9ZA), a post-31-October notice also changes the filing-date basis for the twelve-month amendment window. Obtain the actual notices; “registered late” alone does not settle these dates.
+
+**Tax-code collection:** the bill must be strictly below £3,000, the client must already pay through PAYE, and the return must meet the paper 31 October or online 30 December cutoff. For 2025-26 the online cutoff is 30 December 2026; for 2026-27 it is 30 December 2027. A part payment cannot bring a bill originally at or above £3,000 within the limit. HMRC cannot collect if earnings/coding capacity fails its limits. Current Class 2 contributions cannot be collected this way. A no-PAYE sole trader cannot use this route; an eligible date alone is insufficient ([HMRC coding conditions and capacity](https://www.gov.uk/pay-self-assessment-tax-bill/through-your-tax-code)).
+
+**Payments on account:** use `uk-payments-on-account`. The ordinary base is the previous year's relevant Income Tax/Class 4 liability after the correct source deductions/coding adjustments, excluding CGT, Class 2 and student/postgraduate loans. Each instalment is half that base (an odd penny goes on the second). None are due if the relevant amount is below £1,000 **or** more than 80% was paid outside Self Assessment; exactly £1,000 and exactly 80% do not pass those exclusions. For a relevant amount at least £1,000 with no other statutory exception: **At exactly 80% paid outside Self Assessment, they are still due.** Reductions, subsequent assessments and interest need the statutory calculation, not half of a cash balancing payment. A first filing can require both the entire balance and the next year's first advance ([TMA s.59A](https://www.legislation.gov.uk/ukpga/1970/9/section/59A); [HMRC SAM1100](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam1100); [HMRC payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account)).
+
+**MTD:** the entry tests use qualifying income, generally combined gross trade/property income, not profit or one trade alone: over £50,000 in 2024-25 → 6 April 2026; over £30,000 in 2025-26 → 6 April 2027; over £20,000 in 2026-27 → 6 April 2028. Eligibility, exemptions, annualisation, continuing obligations and software/update filing are held below; do not infer exemption from no HMRC letter ([HMRC entry tests](https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax); [qualifying income](https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax)). The new penalty regime for a 6 April 2026 entrant applies to the 2026-27 return deadline of 31 January 2028; the 2025-26 deadline of 31 January 2027 stays under the current regime ([HMRC MTD penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax)).
+
+**Corrections:** a return may ordinarily be amended within twelve months of its statutory filing date. HMRC's online service requires a 72-hour wait; MTD amendments use compatible software. Late-notice dates, out-of-window changes, separate claims and resulting bills/refunds require checking ([TMA s.9ZA](https://www.legislation.gov.uk/ukpga/1970/9/section/9ZA); [HMRC corrections](https://www.gov.uk/self-assessment-tax-returns/corrections)).
+
+**Interest and records:** ordinary late-payment interest is 8% from 24 November 2026; the earlier 7.75% applies from 9 January through 23 November 2026. The formula is Bank Rate plus 4% from 6 April 2025, but use HMRC's effective dates for the actual period, never predict a future charge from today's rate ([HMRC interest](https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates)). A self-employed client ordinarily keeps records at least five years after the relevant January submission deadline, longer where the statutory enquiry window/enquiry requires; late-return and specialist retention cases need checking ([TMA s.12B](https://www.legislation.gov.uk/ukpga/1970/9/section/12B); [HMRC records](https://www.gov.uk/self-employed-records/how-long-to-keep-your-records)). Actual penalties/interest, failure-to-notify, repayment interest, defences, appeals and Time to Pay are held below, except the explicitly conditional Case E.
 
 ## Worked cases
 
-All cases are for England, with a standard Personal Allowance, and use the figures in the tables above. They check the assembly; the part Guides check each input.
+All original inputs and years are retained. These are conditional illustrations for England, with established allowance entitlement, ordinary taxable income and no unstated reliefs, source deductions or charges. Calculations retain pence for reconciliation; actual return rounding must be checked. Class 2 treatment assumes ordinary eligible self-employment weeks; Class 4 assumes liability and no adjustment unless stated.
 
-### Case A: employee and sole trader, 2026-27 ([Income Tax rates](https://www.gov.uk/income-tax-rates))
+### Case A: employee and sole trader, 2026-27
 
-Salary £30,000, with PAYE of £3,486 on the P60. Sole trade taxable profit £25,000 (SA103S box 31). No other income.
+Salary **£30,000**, P60 PAYE **£3,486**, sole-trade taxable profit **£25,000**, no other income. Use the return year's fields; the old “SA103S box 31” reference is a 2025-26 field, not certified for 2026-27.
 
-- Total income £55,000. Personal Allowance £12,570.
-- Basic rate: £37,700 × 20% = £7,540. Higher rate: £4,730 × 40% = £1,892. Income Tax £9,432.
-- Class 4: (£25,000 − £12,570) = £12,430 × 6% = £745.80. Profits are at least £7,105, so Class 2 is treated as paid.
-- Self Assessment balance: £9,432 − £3,486 + £745.80 = £6,691.80. Tax at source is about a third of the total, well under 80%, and the balance is over £1,000. So each payment on account for 2027-28 is £3,345.90.
-- If the client is on student loan Plan 2: 9% × (£55,000 − £29,385) = 9% × £25,615 = £2,305.35 for the year, less what payroll took. This goes in the balancing payment only.
-- Reconciliation: check 1 passes if the SA100 self-employment figure is £25,000; check 2 passes if Class 4 is on £25,000.
+Income £55,000 less allowance £12,570 = taxable £42,430. Income Tax = £37,700 × 20% + £4,730 × 40% = **£9,432**. Standalone Class 4 = (£25,000 − £12,570) × 6% = **£745.80**. Assuming the employment/Class 1 annual-maximum check leaves that amount unchanged, balance = £9,432 − £3,486 + £745.80 = **£6,691.80**; each next-year advance **£3,345.90**, subject to the statutory tests and no reduction. The profit exceeds the £7,105 Class 2 threshold; eligible weeks are treated as paid ([rates](https://www.gov.uk/income-tax-rates); [NIC](https://www.legislation.gov.uk/ukpga/1992/4/section/15); [advances](https://www.legislation.gov.uk/ukpga/1970/9/section/59A)).
+
+The original Plan 2 calculation **9% × (£55,000 − £29,385) = £2,305.35** is retained as **unrounded arithmetic only**, not an amount certified for the return. The plan threshold is not a complete repayment computation. Payroll credit, repayment status, relevant income and whole-pound rounding must be established. **Student-loan filing result on hold. Check this point with one of our partner accountants.**
 
 ```oa-check
-name: Case A, employee and sole trader 2026-27, balance and payments on account
+name: Case A 2026-27 conditional assembly before student loan
 inputs:
   salary: 30000
   paye: 3486
@@ -289,213 +200,146 @@ inputs:
   basic_band: 37700
 steps:
   - taxable: salary + profit - personal_allowance
-  - basic_tax: pct(basic_band, 20)
-  - higher_tax: pct(taxable - basic_band, 40)
-  - income_tax: basic_tax + higher_tax
+  - income_tax: pct(basic_band, 20) + pct(taxable - basic_band, 40)
   - class4: pct(profit - personal_allowance, 6)
-  - sa_balance: income_tax - paye + class4
-  - each_poa: sa_balance / 2
+  - balance: income_tax - paye + class4
+  - each_poa: balance / 2
 expected:
   income_tax: 9432
   class4: 745.80
-  sa_balance: 6691.80
+  balance: 6691.80
   each_poa: 3345.90
 ```
 
-### Case B: the Personal Allowance taper, and a pension contribution that restores it, 2026-27 ([ITA 2007 s.35](https://www.legislation.gov.uk/ukpga/2007/3/section/35))
+### Case B: allowance taper and pension, 2026-27
 
-Self-employment profit £110,000 and nothing else.
+Sole-trade profit **£110,000**, nothing else. ANI £110,000 gives allowance **£7,570**; taxable £102,430; tax £7,540 + £64,730 × 40% = **£33,432**. With an **eligible £8,000 net / £10,000 gross** relief-at-source contribution, valid relief claim and no other ANI adjustments, ANI becomes £100,000, allowance £12,570 and basic band £47,700. Tax = £47,700 × 20% + £49,730 × 40% = **£29,432**, a **£4,000** reduction, separate from the provider's £2,000 basic relief. The personal contribution does not reduce the trade's Class 4 profit. Contribution eligibility/annual allowance is not established by this arithmetic ([ITA s.35](https://www.legislation.gov.uk/ukpga/2007/3/section/35); [FA s.192](https://www.legislation.gov.uk/ukpga/2004/12/section/192)).
 
-- Adjusted net income is £10,000 over £100,000, so the allowance falls by £5,000 to £7,570.
-- Taxable income £102,430. Basic rate £7,540. Higher rate £64,730 × 40% = £25,892. Income Tax £33,432.
-- With a relief-at-source pension contribution of £8,000 net (£10,000 gross): adjusted net income is £100,000, so the full £12,570 comes back. The basic rate band extends to £47,700. Taxable income £97,430: £47,700 × 20% = £9,540, plus £49,730 × 40% = £19,892. Income Tax £29,432, which is £4,000 less. The pension provider's basic rate relief is on top.
-- Class 4 is not affected by the pension contribution.
+### Case C: savings and dividends, both years
 
-### Case C: savings and dividends in the right order, 2026-27 against 2025-26 ([tax on dividends](https://www.gov.uk/tax-on-dividends))
+Pension **£40,000**, interest **£2,000**, dividends **£6,000**; total **£48,000**. Assuming no other income/reliefs, allowance to pension gives £27,430 × 20% = **£5,486**. No savings starting band; £1,000 PSA, then £1,000 × 20% = **£200**. Savings occupy £2,000 of the basic band, leaving **£8,270** for dividends, correcting the old £7,770 figure. Of £6,000 dividends, £500 is nil-rated and £5,500 taxed: **£591.25** at 10.75% for 2026-27, total **£6,277.25**; **£481.25** at 8.75% for 2025-26, total **£6,167.25**. Difference **£110** ([savings](https://www.legislation.gov.uk/ukpga/2007/3/section/12B); [dividends](https://www.legislation.gov.uk/ukpga/2026/11/section/4)).
 
-Pension income £40,000, bank interest £2,000, UK dividends £6,000. Total income £48,000, so the client is a basic rate taxpayer.
+### Case D: first return, 2025-26
 
-- Non-savings: £40,000 − £12,570 = £27,430 × 20% = £5,486.
-- Savings: other income is over £17,570, so no starting rate. The Personal Savings Allowance is £1,000. The other £1,000 × 20% = £200.
-- Dividends: £500 at nil, then £5,500 in the basic rate band (£7,770 of the band is left).
-- 2026-27: £5,500 × 10.75% = £591.25. Total £6,277.25.
-- 2025-26: £5,500 × 8.75% = £481.25. Total £6,167.25. The £110 difference is the dividend rate rise alone.
+New sole trader: taxable profit **£30,000**, no other income, registered by **5 October 2026**, no prior payments on account, ordinary timely notice. Tax **£3,486**; Class 4 **£1,045.80**; balance **£4,531.80**. Profit exceeds £6,845; eligible Class 2 weeks treated as paid. Each 2026-27 advance **£2,265.90**. Pay **£6,797.70** on **31 January 2027**, and **£2,265.90** on **31 July 2027**. With no PAYE income there is no coding-out route, even if a balance were under £3,000 ([prior-year rates](https://www.gov.uk/income-tax-rates/previous-tax-years); [NIC](https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions); [advances](https://www.gov.uk/understand-self-assessment-bill/payments-on-account)).
 
-### Case D: first return for 2025-26, with payments on account starting ([previous tax years](https://www.gov.uk/income-tax-rates/previous-tax-years))
+### Case E: Case D filed and paid late
 
-A new sole trader with 2025-26 taxable profit of £30,000 and no other income. Registered by 5 October 2026.
-
-- Income Tax: (£30,000 − £12,570) × 20% = £3,486. Class 4: £17,430 × 6% = £1,045.80. Profits are at least £6,845, so Class 2 is treated as paid.
-- Self Assessment balance £4,531.80. No payments on account were made for 2025-26, so all of it is due.
-- The balance is over £1,000 and nothing was paid at source, so payments on account for 2026-27 start: £2,265.90 each.
-- By 31 January 2027: £4,531.80 + £2,265.90 = £6,797.70. By 31 July 2027: £2,265.90.
-- With no job or pension paid through PAYE, the tax-code route is not available, even for a balance under £3,000.
-
-### Case E: the Case D return filed late ([penalties](https://www.gov.uk/self-assessment-tax-returns/penalties))
-
-The Case D return is filed online on 15 August 2027 and the £4,531.80 is paid the same day.
-
-- Late filing: £100, plus £10 a day for 90 days (£900, the maximum), plus the 6-month penalty, the greater of 5% × £4,531.80 = £226.59 and £300, so £300. Total £1,300.
-- Late payment: 5% at 30 days and 5% at 6 months, so £453.18, plus interest on the late tax.
+Keep the original facts: online return filed **15 August 2027**, **£4,531.80** balancing tax paid that day. A conditional ordinary-regime illustration additionally assumes a valid HMRC daily-penalty decision/notice covering **90 days**, no reasonable excuse/special reduction, and the full balance unpaid at both late-payment triggers. Filing: **£100 + £900 + max(5% × £4,531.80, £300) = £1,300**; 5% is **£226.59**. Payment: **two × £226.59 = £453.18**, plus period-specific interest. This does **not** quantify unpaid 2026-27 advances, allocation effects or their interest. Original facts do not establish those assumptions or the total actual bill. **Actual Case E charge on hold. Check this point with one of our partner accountants.** ([FA 2009 Sch.55 paras.3–5](https://www.legislation.gov.uk/ukpga/2009/10/schedule/55); [HMRC payment penalties](https://www.gov.uk/self-assessment-tax-returns/penalties)).
 
 ```oa-check
-name: Cases D and E, first 2025-26 return, payments on account, then filed and paid late on 15 August 2027
+name: Cases D and E conditional 2025-26 illustration, not the actual late bill
 inputs:
   profit: 30000
   personal_allowance: 12570
-  days_late_after_3_months: 90
+  noticed_daily_days: 90
 steps:
   - income_tax: pct(profit - personal_allowance, 20)
   - class4: pct(profit - personal_allowance, 6)
   - balance: income_tax + class4
   - each_poa: balance / 2
   - due_31_jan_2027: balance + each_poa
-  - daily_penalties: min(days_late_after_3_months * 10, 900)
+  - daily_penalty: min(noticed_daily_days * 10, 900)
   - six_month_penalty: max(pct(balance, 5), 300)
-  - late_filing_total: 100 + daily_penalties + six_month_penalty
-  - late_payment_penalties: round(pct(balance, 5), 2) * 2
+  - filing_penalties: 100 + daily_penalty + six_month_penalty
+  - payment_penalties: round(pct(balance, 5), 2) * 2
 expected:
+  income_tax: 3486
+  class4: 1045.80
   balance: 4531.80
   each_poa: 2265.90
   due_31_jan_2027: 6797.70
-  late_filing_total: 1300
-  late_payment_penalties: 453.18
+  filing_penalties: 1300
+  payment_penalties: 453.18
 ```
 
-### Case F: High Income Child Benefit Charge, 2026-27 ([Child Benefit charge](https://www.gov.uk/child-benefit-tax-charge))
+### Case F: Child Benefit charge, 2026-27
 
-Adjusted net income £70,000; the household received £2,000 of Child Benefit; the partner earns less.
-
-- £10,000 over £60,000 ÷ £200 = 50, so 50% of the Child Benefit: £1,000. It is added at step 7 of the computation.
+ANI **£70,000**, Child Benefit **£2,000**, partner's ANI lower. Assuming the entire £2,000 relates to qualifying entitlement/partner weeks under s.681B, percentage = (£70,000 − £60,000) ÷ £200 = **50%**; charge **£1,000**, added at Step 7. A household cash receipt alone does not establish the qualifying amount ([ITEPA s.681B](https://www.legislation.gov.uk/ukpga/2003/1/section/681B); [s.681C](https://www.legislation.gov.uk/ukpga/2003/1/section/681C)).
 
 ## When to refuse or refer
 
-- **Scottish taxpayers** (main home in Scotland, or unclear between homes): refer. Their non-savings bands differ; savings and dividends use UK rates ([Income Tax in Scotland](https://www.gov.uk/scottish-income-tax)). This matches `uk-income-tax-sa100`.
-- **Non-residents, split years and dual residents** (SA109): refer. Read `uk-statutory-residence-test` first if residence is unclear.
-- **Foreign income or gains, the 4-year foreign income and gains regime, or pre-2025 remittances**: refer; see `uk-non-dom`.
-- **Partnerships (SA104), trusts and estates (SA107), and limited companies**: refer.
-- **Accounting periods that do not end between 31 March and 5 April, and losses** to carry back or set against other income: the full pages carry them, but the figures need judgement. Refer.
-- **Benefits in kind, employment expenses, termination payments, and pensions near the annual allowance**: refer with the documents.
-- **Records that will not support a return**: send the client to `uk-bookkeeping` first. If the profit for the year cannot be known by the deadline, HMRC's rule is to include 'provisional figures' and "tell HMRC that you've used provisional figures when you submit your return", then amend within 12 months; interest runs on any extra tax from the original due date ([sending a return](https://www.gov.uk/self-assessment-tax-returns/sending-return)).
-- **A request to apply 2027-28 savings or property rates to 2025-26 or 2026-27**: refuse. They are not in force until 6 April 2027.
-- **Enquiries, disputes, penalty appeals and reasonable excuse**: refer.
+These are **non-usable holds**, not completed tax answers. Retain the relevant inputs and missing conditions in the brief:
 
-## Filing and payment
+- **Residence/status and specialist income:** Scotland or uncertain UK/Welsh status, non-residence, split years, dual residence, foreign income/gains, the four-year FIG regime, old remittances, partnerships, trusts, estates and companies. Use the original routing Guides; **Check this point with one of our partner accountants.**
+- **Reliefs and assets:** Marriage Allowance, trading/property allowances, loss claims/caps, transition profits, non-standard accounting periods, mixed-income allowance optimisation, capital allowances/AIA/pools/private use and missing opening balances. The old £1,800 MacBook AIA example has no established asset/basis/eligibility facts; preserve £1,800 without asserting a deduction. Missing pools do not justify relieving only this year's purchases. **Check this point with one of our partner accountants.**
+- **Employment, NIC and benefits:** noncash/payrolled benefits, employment expenses, termination payments, pension annual allowance, combined Class 1/Class 4 limits, special occupations/ages, voluntary NIC eligibility and payment timing. **Check this point with one of our partner accountants.**
+- **Student loans:** all plans and postgraduate loans, start/stop status, relevant-income exclusions, unearned-income boundary, payroll deductions, multiple plans, rounding and SLC refunds. Original Case A and the older Plan 1/2/4/5/Postgraduate threshold topics remain here; there is no fallback calculation from generic total income. **Check this point with one of our partner accountants.**
+- **Family charges:** third-party Child Benefit, changing partners/weeks or unknown partner ANI; Winter Fuel Payment/Pension Age Winter Heating Payment and the old £35,000 test. No liability inferred from the threshold alone. **Check this point with one of our partner accountants.**
+- **VAT, MTD and submission:** Flat Rate Scheme income-tax bridge, VAT invoice/return/payment timing and exceptions, MTD qualifying income/exemptions/continuing obligations, quarterly updates and software, 2026-27 form boxes, late paper HMRC calculation, provisional figures and amendments, payment method/reference/capacity, penalties, interest, failure-to-notify, repayments, enquiries and appeals. Preserve records and actual notices; no filing from unconfirmed boxes or an incomplete penalty regime. **Check this point with one of our partner accountants.**
+- **Other years:** the earliest 2024-25 applicability statement and all 2027-28 savings/property rate and allocation questions require their own year-specific proof. **Check this point with one of our partner accountants.**
 
-### The 2025-26 return, being filed now ([deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines); [SA150 notes 2026](https://assets.publishing.service.gov.uk/media/6a9ea8a5df4246cf45e469e0/SA150_Notes_2026.pdf))
-
-| Event | Deadline |
-| --- | --- |
-| Tell HMRC you need a return, if new to Self Assessment or no 2024-25 return was needed | 5 October 2026 |
-| Paper return received by HMRC | 11:59pm on 31 October 2026 |
-| Online return, if a balance under £3,000 is to be collected through the tax code (only with PAYE wages or a pension) | 11:59pm on 30 December 2026 |
-| Online return | 11:59pm on 31 January 2027 |
-| Balancing payment for 2025-26 and first payment on account for 2026-27 | 11:59pm on 31 January 2027 |
-| Second payment on account for 2026-27 | 31 July 2027 |
-| Last day to amend the 2025-26 return | 31 January 2028 |
-
-HMRC says it "must receive your tax return and any money you owe by the deadline", and that if you do not know your profit for the whole tax year, "you still need to send a tax return". Registered after 5 October 2026? The return is due 3 months from the date on HMRC's letter, but the tax is still due by 31 January 2027.
-
-**New on the 2025-26 return.** A Winter Fuel Payment or Pension Age Winter Heating Payment charge section: "If your total income is over £35,000, you may be liable to the WFP or PAWHP charge". Ask the client and route the entry through `uk-income-tax-sa100`.
-
-### The 2026-27 return
-
-Online by 31 January 2028, with the balancing payment and the first 2027-28 payment on account; the second is due by 31 July 2028. Paper by 31 October 2027. A client in Making Tax Digital for Income Tax from 6 April 2026 sends quarterly updates during 2026-27, then submits the return through the software by "31 January following the end of the relevant tax year" ([MTD: submit your tax return](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/submit-your-tax-return)). See `uk-bookkeeping`.
-
-### Penalties and interest ([penalties](https://www.gov.uk/self-assessment-tax-returns/penalties); [HMRC interest rates](https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates))
-
-- **Late filing.** "an initial £100 penalty". After 3 months, "additional daily penalties of £10 per day, up to a maximum of £900". After 6 months, "a further penalty of 5% of the tax due or £300, whichever is greater". After 12 months, "another 5% or £300 charge, whichever is greater".
-- **Late payment.** "penalties of 5% of the tax unpaid at: 30 days 6 months 12 months", plus interest.
-- **Late registration.** A failure-to-notify penalty can apply to someone who registers after 5 October and does not pay all the tax by 31 January.
-- **Interest.** Late payment interest is "set at base rate plus 4% from 6 April 2025". HMRC's table, read on 14 November 2026, shows late payment interest of 7.75% from 9 January 2026 and 8.00% from 24 November 2026, and repayment interest of 2.75% from 9 January 2026 and 3.00% from 24 November 2026. The rate moves with Bank of England base rate, so read the page on the day.
-- For clients using Making Tax Digital for Income Tax, points-based penalties replace these from the year they join. Details are in `uk-income-tax-sa100` and `uk-bookkeeping` ([Making Tax Digital penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax)).
-
-### Records
-
-The client must keep records "for at least 5 years after the 31 January submission deadline of the relevant tax year" ([how long to keep records](https://www.gov.uk/self-employed-records/how-long-to-keep-your-records)). A VAT-registered trader files each VAT return and pays "one calendar month and 7 days after the end of an accounting period" ([VAT return deadlines](https://www.gov.uk/vat-returns/deadlines)).
+Two older expense illustrations can still be reconciled conditionally: an eligible 2025-26 car/goods vehicle with **8,000 business miles × 45p = £3,600**, no prior allowance/cost claim and the continuing mileage choice established; and eligible home working of **101+ hours in a month = £26**. These are not proof of the client's eligibility. The wider mileage/home methods remain in `uk-self-employment-sa103` and `uk-bookkeeping`; do not reuse the old £150,000 cash-basis limit or compulsory £179.40 Class 2 example as current instructions ([HMRC simplified expenses and conditions](https://www.gov.uk/simpler-income-tax-simplified-expenses/print)).
 
 ## Completion checklist
 
-Sources: [Income Tax rates](https://www.gov.uk/income-tax-rates); [payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account).
+Give the qualified reviewer the complete package, identifying every hold:
 
-- [ ] Tax year fixed; every figure checked against that year's column (for example dividends at 8.75% and 33.75% for 2025-26, 10.75% and 35.75% for 2026-27).
-- [ ] Residence and main home confirmed; referral cases referred; 5 October registration checked for a first-time filer.
-- [ ] Pages chosen, including short or full self-employment pages on the £90,000 test and the full-pages triggers.
-- [ ] Part Guides run in the Stage 2 order, VAT first; the computation built in the section 23 order, savings and dividends on top.
-- [ ] Personal Allowance taper applied above £100,000 of adjusted net income; basic rate band extended for relief-at-source pensions and Gift Aid.
-- [ ] Starting rate for savings, Personal Savings Allowance and £500 dividend allowance applied as bands.
-- [ ] Class 4 at 6% and 2%; Class 2 treated as paid or voluntary.
-- [ ] Student loan by plan, less payroll deductions; Child Benefit charge on the higher-income partner.
-- [ ] Winter Fuel Payment charge considered on the 2025-26 return.
-- [ ] Turnover and expenses net of VAT for a registered trader, gross for an unregistered one.
-- [ ] Tax already paid taken off: PAYE, tax at source, Construction Industry Scheme deductions, payments on account made.
-- [ ] Six reconciliations recorded; the assembled figure agrees with HMRC's or the software's calculation.
-- [ ] Next year's payments on account worked out, with the £1,000 and 80% tests.
-- [ ] Dates and amounts given to the client (31 October paper, 30 December tax-code route, 31 January, 31 July); Making Tax Digital start year recorded.
-- [ ] Package handed to a qualified accountant for review before filing.
+1. **Master workbook** (`[client_slug]_[tax-year]_uk_master.xlsx`) named for the actual client and year: Cover; VAT if relevant; SA103; SA102/SA105/SA108 as applicable; SA100 computation; Capital Allowances and Expense Detail; NIC; Student Loan if relevant; Payments on Account; Cross-Check Summary. Link cells, check formulas and rounding, and reconcile every figure with the approved computation. Never invent a zero to complete a sheet.
+2. **Reviewer brief** (`reviewer_brief.md`): year and pages, income components, each tax/charge, source deductions and actual payments, balance/credit, next advances, all component workings, six reconciliations, software/HMRC comparison, each tax position with official source and operative conditions, missing evidence and specific holds.
+3. **Client action list** (`client_action_list.md`): human review/approval, actual submission method, receipt, payment dates/amounts/references, VAT and MTD obligations where established, record retention, carry-forward pools and next-year planning. Filing, declarations and payment are not performed by this Guide.
 
-### The reviewer package
-
-1. **Summary**: year, pages used, total income, each tax and charge, tax already paid, balancing payment or repayment, next year's payments on account.
-2. **Worksheets** from each part Guide (VAT, SA103, SA102, SA105, SA108, SA100 entries) and the capital allowances schedule with pool balances carried forward.
-3. **The computation** in the Stage 3 order, the six reconciliations, and the HMRC calculation check.
-4. **Positions and flags**: each judgement (mixed-use shares, use of home, simplified expenses, accounting basis, capital allowances, Child Benefit charge, Marriage Allowance) with the law or HMRC page it rests on.
-5. **Client action list**: each filing and payment with date and amount, the VAT calendar, any Making Tax Digital start date, and records to keep.
-
-#### Known gaps
-
-- The SA103 and SA102 box numbers come from HMRC's notes for the 2025-26 return. Check them against the 2026-27 notes when HMRC publishes them.
-- Benefits in kind and employment expenses on the SA102 are flagged, not computed.
-- Capital allowance pools need last year's closing balances. Without them, only this year's purchases can be relieved.
-- The High Income Child Benefit Charge needs both partners' adjusted net incomes. If the partner's is unknown, flag it.
+Continue all authorised preparation without repeated pacing questions. Deliver complete parts and label missing/partial parts; no claim that an unresolved package is ready to file. Save in the user's authorised output location and link the actual files; do not presume a particular operating system or a `present_files` tool.
 
 ## Sources
 
-| Source | What was read | URL | Read on |
-| --- | --- | --- | --- |
-| GOV.UK, Income Tax rates and Personal Allowances | Read for the 2026-27 Personal Allowance £12,570, the bands to £50,270 and £125,140, and the £1 for every £2 taper | https://www.gov.uk/income-tax-rates | 2026-11-14 |
-| GOV.UK, Income Tax rates for previous tax years | Read for the 2025-26 Personal Allowance and bands | https://www.gov.uk/income-tax-rates/previous-tax-years | 2026-11-14 |
-| Finance Act 2026 s.2 | Read for the main rates of income tax for 2026-27 | https://www.legislation.gov.uk/ukpga/2026/11/section/2 | 2026-11-14 |
-| Finance Act 2026 s.4 | Read for the dividend rates 8.75% to 10.75% and 33.75% to 35.75% | https://www.legislation.gov.uk/ukpga/2026/11/section/4 | 2026-11-14 |
-| Finance Act 2026 s.5 | Read for the savings rates of 22%, 42% and 47% from 2027-28 only | https://www.legislation.gov.uk/ukpga/2026/11/section/5 | 2026-11-14 |
-| Finance Act 2026 s.10 | Read for the £37,700 basic rate limit to 2030-31 | https://www.legislation.gov.uk/ukpga/2026/11/section/10 | 2026-11-14 |
-| ITA 2007 s.16 | Read for savings and dividends as the highest part of income | https://www.legislation.gov.uk/ukpga/2007/3/section/16 | 2026-11-14 |
-| ITA 2007 s.23 | Read for the seven-step calculation of income tax liability | https://www.legislation.gov.uk/ukpga/2007/3/section/23 | 2026-11-14 |
-| ITA 2007 s.35 | Read for the Personal Allowance reduced by one-half of the excess over £100,000 | https://www.legislation.gov.uk/ukpga/2007/3/section/35 | 2026-11-14 |
-| GOV.UK, adjusted net income | Read for what is taken off net income to reach adjusted net income | https://www.gov.uk/guidance/adjusted-net-income | 2026-11-14 |
-| GOV.UK, tax-free interest on savings | Read for the £17,570 and £5,000 starting rate and the £1,000 and £500 Personal Savings Allowance | https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free | 2026-11-14 |
-| GOV.UK, tax on dividends | Read for the £500 allowance and the 10.75%, 35.75% and 39.35% rates | https://www.gov.uk/tax-on-dividends | 2026-11-14 |
-| GOV.UK, self-employed National Insurance rates | Read for Class 4 at 6% and 2% for 2026-27, the £7,105 threshold and Class 2 at £3.65 | https://www.gov.uk/self-employed-national-insurance-rates | 2026-11-14 |
-| HMRC, National Insurance rates and allowances | Read for the 2025-26 and 2026-27 Class 2 and Class 4 columns (£6,845, £3.50, £7,105, £3.65) | https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions | 2026-11-14 |
-| GOV.UK, tax-free trading and property allowances | Read for the £1,000 allowances from 6 April 2017 | https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income | 2026-11-14 |
-| GOV.UK, High Income Child Benefit Charge | Read for the £60,000 threshold, 1% per £200, £80,000, the higher-income partner and someone else's claim | https://www.gov.uk/child-benefit-tax-charge | 2026-11-14 |
-| HMRC, employer rates and thresholds 2025 to 2026 | Read for the 2025-26 student loan thresholds (Plans 1, 2, 4 and Postgraduate) | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 | 2026-11-14 |
-| HMRC, employer rates and thresholds 2026 to 2027 | Read for the 2026-27 student loan thresholds | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 | 2026-11-14 |
-| GOV.UK, student loan: what you pay | Read for the 2026-27 thresholds including Plan 5 £25,000 and the 9% and 6% rates | https://www.gov.uk/repaying-your-student-loan/what-you-pay | 2026-11-14 |
-| GOV.UK, student loan: getting a refund | Read for refunds of over-deductions from the Student Loans Company | https://www.gov.uk/repaying-your-student-loan/getting-a-refund | 2026-11-14 |
-| GOV.UK, payments on account | Read for half of last year's tax, 31 January and 31 July, the £1,000 and 80% tests and interest on a reduced payment | https://www.gov.uk/understand-self-assessment-bill/payments-on-account | 2026-11-14 |
-| Taxes Management Act 1970 s.59A | Read for the statutory conditions for payments on account | https://www.legislation.gov.uk/ukpga/1970/9/section/59A | 2026-11-14 |
-| GOV.UK, VAT thresholds | Read for the £90,000 registration threshold | https://www.gov.uk/how-vat-works/vat-thresholds | 2026-11-14 |
-| GOV.UK, VAT return deadlines | Read for one calendar month and 7 days after the period end | https://www.gov.uk/vat-returns/deadlines | 2026-11-14 |
-| GOV.UK, Making Tax Digital for Income Tax: who needs it | Read for the £50,000, £30,000 and £20,000 qualifying income tests and start dates | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax | 2026-11-14 |
-| GOV.UK, Making Tax Digital: submit your tax return | Read for the 31 January deadline after the tax year | https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/submit-your-tax-return | 2026-11-14 |
-| GOV.UK, Making Tax Digital penalties | Read for the points-based late submission penalties | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-11-14 |
-| GOV.UK, simplified expenses: vehicles | Read for 55p and 25p a mile for 2026-27 and 45p before 6 April 2026 | https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles | 2026-11-14 |
-| GOV.UK, simplified expenses: working from home | Read for the £10, £18 and £26 monthly flat rates | https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home | 2026-11-14 |
-| GOV.UK, capital allowances rates and pools | Read for where the current pool rates are published | https://www.gov.uk/work-out-capital-allowances/rates-and-pools | 2026-11-14 |
-| HMRC, SA100 and supplementary pages | Read for the list of supplementary pages, SA101 and SA110 | https://www.gov.uk/government/publications/self-assessment-tax-return-sa100 | 2026-11-14 |
-| HMRC, SA103S notes 2026 | Read for the less than £90,000 short pages test and the £6,845 voluntary Class 2 box | https://assets.publishing.service.gov.uk/media/69ce15395cf899414a0bc69f/SA103S_Notes_2026.pdf | 2026-11-14 |
-| HMRC, SA103F notes 2026 | Read for when the full pages are needed and the box map | https://assets.publishing.service.gov.uk/media/69c26565cfa346b9d4704b35/SA103F_Notes_2026.pdf | 2026-11-14 |
-| HMRC, SA102 notes 2026 | Read for pay in box 1 and UK tax in box 2 | https://assets.publishing.service.gov.uk/media/6a9ea0015a0c25165ae469d3/SA102_-Notes_2026.pdf | 2026-11-14 |
-| HMRC, SA150 notes 2026 | Read for the £3,000 tax code route, the 30 December 2026 date and the £35,000 Winter Fuel Payment charge | https://assets.publishing.service.gov.uk/media/6a9ea8a5df4246cf45e469e0/SA150_Notes_2026.pdf | 2026-11-14 |
-| GOV.UK, Self Assessment deadlines | Read for 5 October 2026, 31 October 2026, 31 January 2027 and the 3 months rule for late registration | https://www.gov.uk/self-assessment-tax-returns/deadlines | 2026-11-14 |
-| GOV.UK, sending a return | Read for provisional figures | https://www.gov.uk/self-assessment-tax-returns/sending-return | 2026-11-14 |
-| GOV.UK, corrections | Read for the 12 months to correct and the 72 hours wait | https://www.gov.uk/self-assessment-tax-returns/corrections | 2026-11-14 |
-| GOV.UK, SA302 tax calculation | Read for printing the calculation 72 hours after filing | https://www.gov.uk/sa302-tax-calculation | 2026-11-14 |
-| GOV.UK, Self Assessment penalties | Read for £100, £10 a day to £900, 5% or £300, and 5% late payment at 30 days, 6 and 12 months | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-11-14 |
-| HMRC interest rates for late and early payments | Read for base rate plus 4%, 7.75% and 2.75% from 9 January 2026, and 8.00% and 3.00% from 24 November 2026 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-11-14 |
-| GOV.UK, self-employed records: how long to keep | Read for at least 5 years after the 31 January deadline | https://www.gov.uk/self-employed-records/how-long-to-keep-your-records | 2026-11-14 |
-| GOV.UK, Income Tax in Scotland | Read for the referral of Scottish taxpayers | https://www.gov.uk/scottish-income-tax | 2026-11-14 |
+Completed exact official reads from the existing UK SA100, SA103, NIC, VAT, bookkeeping and payments-on-account proofs were checked for the same operative periods and conditions on **27 November 2026**. They are reused below rather than represented as fresh reads. Fresh reads cover the page/form map, s.23, s.25 and commencement, s.9ZA, SA302 and correction workflow. A download or live URL alone was not treated as proof.
 
-Not yet confirmed: the SA103 and SA102 box numbers for the 2026-27 return (HMRC has not published the 2026-27 notes; the 2025-26 box numbers are used as provisional); the 2025-26 Plan 5 student loan threshold (not on the 2025-26 employer rates page read today).
+| Official source and part used | URL | Read date / reuse |
+| --- | --- | --- |
+| Read for self assessment tax return sa100 | https://www.gov.uk/government/publications/self-assessment-tax-return-sa100 | 2026-11-27 fresh read |
+| Read for Ordinary and late-notice filing deadlines | https://www.legislation.gov.uk/ukpga/1970/9/section/8 | 2026-11-26 completed read reused |
+| Read for 2025-26 official field map/notes: SA103S_Notes_2026.pdf | https://assets.publishing.service.gov.uk/media/69ce15395cf899414a0bc69f/SA103S_Notes_2026.pdf | 2026-11-27 fresh read |
+| Read for 2025-26 official field map/notes: SA103F_Notes_2026.pdf | https://assets.publishing.service.gov.uk/media/69c26565cfa346b9d4704b35/SA103F_Notes_2026.pdf | 2026-11-27 fresh read |
+| Read for 2025-26 official field map/notes: SA103S-2026.pdf | https://assets.publishing.service.gov.uk/media/69c12ae013101e9908704a53/SA103S-2026.pdf | 2026-11-27 fresh read |
+| Read for 2025-26 official field map/notes: SA103F_2026.pdf | https://assets.publishing.service.gov.uk/media/69c2635b13101e9908704b36/SA103F_2026.pdf | 2026-11-27 fresh read |
+| Read for 2025-26 official field map/notes: SA102-2026.pdf | https://assets.publishing.service.gov.uk/media/69bd6a7a7e02b81c0d1c75ae/SA102-2026.pdf | 2026-11-27 fresh read |
+| Read for bim72005 | https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim72005 | 2026-11-26 completed read reused |
+| Read for VAT rolling-month and forward-30-day registration tests | https://www.legislation.gov.uk/ukpga/1994/23/schedule/1/paragraph/1 | 2026-11-22 completed read reused |
+| Read for simpler income tax cash basis | https://www.gov.uk/simpler-income-tax-cash-basis | 2026-11-26 completed read reused |
+| Read for Seven-step Income Tax computation | https://www.legislation.gov.uk/ukpga/2007/3/section/23 | 2026-11-27 fresh read |
+| Read for Allowance allocation, restrictions and sufficient income | https://www.legislation.gov.uk/ukpga/2007/3/section/25 | 2026-11-27 fresh read |
+| Read for Savings/dividend ordering | https://www.legislation.gov.uk/ukpga/2007/3/section/16 | 2026-11-26 completed read reused |
+| Read for sa302 tax calculation | https://www.gov.uk/sa302-tax-calculation | 2026-11-27 fresh read |
+| Read for Personal Allowance entitlement/taper/rounding | https://www.legislation.gov.uk/ukpga/2007/3/section/35 | 2026-11-26 completed read reused |
+| Read for previous tax years | https://www.gov.uk/income-tax-rates/previous-tax-years | 2026-11-26 completed read reused |
+| Read for income tax rates | https://www.gov.uk/income-tax-rates | 2026-11-26 completed read reused |
+| Read for Basic and higher taxable rate limits | https://www.legislation.gov.uk/ukpga/2007/3/section/10 | 2026-11-26 completed read reused |
+| Read for how much is tax free | https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free | 2026-11-26 completed read reused |
+| Read for Savings starting band | https://www.legislation.gov.uk/ukpga/2007/3/section/12 | 2026-11-26 completed read reused |
+| Read for Personal Savings Allowance and rate-band test | https://www.legislation.gov.uk/ukpga/2007/3/section/12B | 2026-11-26 completed read reused |
+| Read for 2026-27 savings rates | https://www.legislation.gov.uk/ukpga/2026/11/section/3 | 2026-11-26 completed read reused |
+| Read for income tax changes to tax rates for property savings and dividend income | https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income | 2026-11-26 completed read reused |
+| Read for Dividend nil-rate band | https://www.legislation.gov.uk/ukpga/2007/3/section/13A | 2026-11-26 completed read reused |
+| Read for tax on dividends | https://www.gov.uk/tax-on-dividends | 2026-11-26 completed read reused |
+| Read for 2026-27 dividend rate change and commencement | https://www.legislation.gov.uk/ukpga/2026/11/section/4 | 2026-11-26 completed read reused |
+| Read for income tax rates and allowances current and past | https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past | 2026-11-26 completed read reused |
+| Read for Class 4 liable profits and rates | https://www.legislation.gov.uk/ukpga/1992/4/section/15 | 2026-11-26 completed read reused |
+| Read for rates and allowances national insurance contributions | https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions | 2026-11-26 completed read reused |
+| Read for Class 2 ordinary eligible weeks | https://www.legislation.gov.uk/ukpga/1992/4/section/11 | 2026-11-26 completed read reused |
+| Read for ANI adjustments and add-back | https://www.legislation.gov.uk/ukpga/2007/3/section/58 | 2026-11-26 completed read reused |
+| Read for Relief-at-source gross-up and band extension | https://www.legislation.gov.uk/ukpga/2004/12/section/192 | 2026-11-26 completed read reused |
+| Read for Gift Aid band extension | https://www.legislation.gov.uk/ukpga/2007/3/section/414 | 2026-11-26 completed read reused |
+| Read for adjusted net income | https://www.gov.uk/guidance/adjusted-net-income | 2026-11-26 completed read reused |
+| Read for Child Benefit relevant entitlement/partner weeks | https://www.legislation.gov.uk/ukpga/2003/1/section/681B | 2026-11-26 completed read reused |
+| Read for Child Benefit percentage/cap/rounding | https://www.legislation.gov.uk/ukpga/2003/1/section/681C | 2026-11-26 completed read reused |
+| Read for deadlines | https://www.gov.uk/self-assessment-tax-returns/deadlines | 2026-11-26 completed read reused |
+| Read for Balance and late-notice payment conditions | https://www.legislation.gov.uk/ukpga/1970/9/section/59B | 2026-11-26 completed read reused |
+| Read for Relevant advance base, dates, source deductions and thresholds | https://www.legislation.gov.uk/ukpga/1970/9/section/59A | 2026-11-26 completed read reused |
+| Read for Amendment window and late-notice filing date | https://www.legislation.gov.uk/ukpga/1970/9/section/9ZA | 2026-11-27 fresh read |
+| Read for through your tax code | https://www.gov.uk/pay-self-assessment-tax-bill/through-your-tax-code | 2026-11-27 fresh read |
+| Read for sam1100 | https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam1100 | 2026-11-26 completed read reused |
+| Read for payments on account | https://www.gov.uk/understand-self-assessment-bill/payments-on-account | 2026-11-26 completed read reused |
+| Read for find out if and when you need to use making tax digital for income tax | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax | 2026-11-26 completed read reused |
+| Read for work out your qualifying income for making tax digital for income tax | https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax | 2026-11-26 completed read reused |
+| Read for penalties for making tax digital for income tax | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-11-26 completed read reused |
+| Read for corrections | https://www.gov.uk/self-assessment-tax-returns/corrections | 2026-11-27 fresh read |
+| Read for rates and allowances hmrc interest rates | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-11-22 ordinary-rate read; 2026-11-26 basis read; reused |
+| Read for Records and extended enquiry retention | https://www.legislation.gov.uk/ukpga/1970/9/section/12B | 2026-11-26 completed read reused |
+| Read for how long to keep your records | https://www.gov.uk/self-employed-records/how-long-to-keep-your-records | 2026-11-26 completed read reused |
+| Read for penalties | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-11-26 completed read reused |
+| Read for print | https://www.gov.uk/simpler-income-tax-simplified-expenses/print | 2026-11-26 completed read reused |
 
+| Read for Case E ordinary filing penalty illustration, paras.3–5 only | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55 | 2026-11-26 completed exact paragraphs read reused |
+
+Not yet confirmed: the specifically enumerated specialist, form, student-loan and actual-charge outcomes under “When to refuse or refer” are non-usable holds. No unconfirmed outcome may be used to file, pay, amend or claim relief.
