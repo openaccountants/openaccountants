@@ -53,6 +53,15 @@ The ordinary tax period is the calendar year; new-company and other statutory sh
 | Tonnage tax (shipping, elective) | 10% of the tonnage-based base only after statutory qualification/election; actual eligibility/base is held | 2026 | ZKPO arts. 254, 258, https://nra.bg/wps/wcm/connect/nra.bg25863/ed10ff12-b25a-4b07-827c-915979acef42/ZAKON%2BZA%2BKORPORATIVNOTO%2BPODOHODNO%2BOBLAGANE_60.pdf?CACHEID=ROOTWORKSPACE.Z18_PPGAHG8009LJC0QTR5C2HH30I6-ed10ff12-b25a-4b07-827c-915979acef42-nEJyDbV&MOD=AJPERES |
 | Pillar Two minimum tax applies to groups with | Consolidated revenue of at least EUR750,000,000 in two of the four preceding periods, including excluded-entity revenue; adjust non-12-month periods. This is a screening trigger, not complete eligibility: entity exclusions and actual top-up computation are held | 2026 | ZKPO art. 260a(2), https://nra.bg/wps/wcm/connect/nra.bg25863/ed10ff12-b25a-4b07-827c-915979acef42/ZAKON%2BZA%2BKORPORATIVNOTO%2BPODOHODNO%2BOBLAGANE_60.pdf?CACHEID=ROOTWORKSPACE.Z18_PPGAHG8009LJC0QTR5C2HH30I6-ed10ff12-b25a-4b07-827c-915979acef42-nEJyDbV&MOD=AJPERES |
 
+## Ask the client first
+
+1. **Net sales for 2024 (and 2025 for next year), and the year the company was formed.** They decide no advances, quarterly or monthly (arts. 83, 84).
+2. **Tax losses by year since 2021.** Confirm first eligible profitable year/election, use and expiry, not just the year label; ordinary2026 loss-year range begins2021 (arts.70–72).
+3. **The fixed asset register and the tax depreciation plan.** Category and rate chosen for each asset, and any electric cars bought from 2026 (art. 55).
+4. **Loans: lender, relation to the company, guarantees, interest, and opening and closing debt and equity.** They decide whether thin capitalisation or the EUR 3,000,000 interest limitation bites (arts. 43, 43a).
+5. **Payments to shareholders or their related parties beyond salary and declared dividends.** Possible hidden profit distribution (§ 1, item 5; arts. 26(11), 267).
+6. **Representation costs, staff benefits in kind and assets used privately.** Expenses tax base (art. 204).
+
 ## The method, step by step
 
 **Start from the accounts.** The tax result (данъчен финансов резултат) is the accounting result adjusted by permanent differences, temporary differences and other amounts the ZKPO names (art. 22). A permanent difference changes the result once and never reverses (art. 23). A temporary difference is an item recognised for tax in a different year from the accounts; apply the statutory direction and reversal condition rather than a general timing assumption (art.24). Taxable profit is the positive tax result less tax losses carried forward (art. 19).
@@ -212,15 +221,6 @@ expected:
   taxable_profit: 6560000
   cit: 656000
 ```
-
-## Ask the client first
-
-1. **Net sales for 2024 (and 2025 for next year), and the year the company was formed.** They decide no advances, quarterly or monthly (arts. 83, 84).
-2. **Tax losses by year since 2021.** Confirm first eligible profitable year/election, use and expiry, not just the year label; ordinary2026 loss-year range begins2021 (arts.70–72).
-3. **The fixed asset register and the tax depreciation plan.** Category and rate chosen for each asset, and any electric cars bought from 2026 (art. 55).
-4. **Loans: lender, relation to the company, guarantees, interest, and opening and closing debt and equity.** They decide whether thin capitalisation or the EUR 3,000,000 interest limitation bites (arts. 43, 43a).
-5. **Payments to shareholders or their related parties beyond salary and declared dividends.** Possible hidden profit distribution (§ 1, item 5; arts. 26(11), 267).
-6. **Representation costs, staff benefits in kind and assets used privately.** Expenses tax base (art. 204).
 
 ## When to refuse or refer
 
