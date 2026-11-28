@@ -113,7 +113,7 @@ Deduct, to the extent included in federal AGI ([G.S. 105-153.5(b)](https://www.n
 
 ### Step 4: deduction for the year (D-400 line 11)
 
-Take the larger of the NC standard deduction and NC itemized deductions (Schedule A). NC itemized deductions are only these ([G.S. 105-153.5(a)(2)](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-153.5.html)): charitable contributions allowed under IRC 170, excluding a qualified real-property donation used for an allocated G.S. 105-153.11 credit; qualified residence interest plus real estate property taxes, together capped at **$20,000** (shared between spouses); medical and dental expenses allowed under IRC 213; qualifying claim-of-right repayments (apply the separate 2026 conditions in G.S. 105-153.5(a)(2)d; an unresolved repayment is not a usable deduction—Check this point with one of our partner accountants.); and, from 2025, gambling losses allowed under IRC 165(d) to the extent not deducted in AGI ([S.L. 2026-41 §44.2](https://www.ncleg.gov/EnactedLegislation/SessionLaws/PDF/2025-2026/SL2026-41.pdf#page=608), which controls over the not-yet-updated consolidated HTML). State income tax and sales tax are not NC itemized deductions, and the federal Schedule 1-A deductions are not NC deductions (2025 D-401). The overall limit of IRC 68 does not apply.
+Take the larger of the NC standard deduction and NC itemized deductions (Schedule A). NC itemized deductions are only these ([G.S. 105-153.5(a)(2)](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-153.5.html)): charitable contributions allowed under IRC 170, excluding a qualified real-property donation used for an allocated G.S. 105-153.11 credit; qualified residence interest plus real estate property taxes, together capped at **$20,000** (shared between spouses); medical and dental expenses allowed under IRC 213; qualifying claim-of-right repayments (apply the separate 2026 conditions in G.S. 105-153.5(a)(2)d; an unresolved repayment is not a usable deduction—Check this point with one of our partner accountants.); and, from 2025, gambling losses allowed under IRC 165(d) to the extent not deducted in AGI ([S.L. 2026-41 §44.2](https://www.ncleg.gov/EnactedLegislation/SessionLaws/PDF/2025-2026/SL2026-41.pdf#page=608), which controls over the not-yet-updated consolidated HTML). State income tax and sales tax are not NC itemized deductions, and the federal Schedule 1-A deductions are not NC deductions (2025 D-401). The overall limit of IRC 68 does not apply. That does not remove IRC 170’s separate charitable-contribution limits: from 2026, its itemized deduction has a 0.5% floor based on the contribution base (AGI without a section 172 NOL carryback). Apply the allowed IRC 170 amount, not gross gifts; do not add a separate charitable deduction on top of the NC standard deduction. [IRC 170(b)(1)(H)–(I), effective-date note for P.L. 119-21 §70425](https://uscode.house.gov/us/usc/t26/s170/)
 
 ### Step 5: child deduction (D-400 line 10)
 
@@ -190,10 +190,10 @@ expected:
 
 ### Case 2: married couple, itemize or take the standard deduction
 
-Married filing jointly, federal AGI $110,000, two qualifying children. Mortgage interest $15,000 and property taxes $9,000 (together $24,000, capped at $20,000), charitable gifts $6,000. NC itemized: $26,000 against the $25,500 standard deduction, so they itemize. Child deduction: AGI is over $100,000 and up to $120,000, so $1,000 per child, $2,000. Taxable income $82,000; tax **$3,271.80**. Itemizing saves $500 × 3.99% = $19.95. Had charity been $1,000 lower, the standard deduction would win.
+Married filing jointly, federal AGI $110,000, two qualifying children. Mortgage interest $15,000 and property taxes $9,000 (together $24,000, capped at $20,000), charitable gifts $6,000. Retain those original inputs, but apply the 2026 charitable floor: 0.5% × $110,000 = $550. Even if all $6,000 is otherwise eligible, the IRC 170 itemized amount is at most $5,450, so this itemized comparison is at most $25,450 against the $25,500 NC standard deduction. The standard deduction wins. A lower permitted charitable amount, including any applicable federal non-itemizer limitation, cannot change that choice. Child deduction: AGI is over $100,000 and up to $120,000, so $1,000 per child, $2,000. Taxable income $82,500; tax **$3,291.75**. Itemizing saves $0. Had charity been $1,000 lower, the itemized ceiling would be $24,450 and the standard deduction would still win.
 
 ```oa-check
-name: NC 2026 MFJ itemized versus standard, child deduction
+name: NC 2026 MFJ itemized ceiling versus standard, child deduction
 inputs:
   fagi: 110000
   mortgage_interest: 15000
@@ -205,17 +205,21 @@ inputs:
   rate: 0.0399
 steps:
   - housing: min(mortgage_interest + property_tax, 20000)
-  - itemized: housing + charity
+  - charity_floor: fagi * 0.005
+  - charity_itemized_ceiling: max(0, charity - charity_floor)
+  - itemized: housing + charity_itemized_ceiling
   - deduction: max(itemized, std)
   - child_ded: children * per_child
   - taxable: fagi - deduction - child_ded
   - tax: round(taxable * rate, 2)
   - saving_from_itemizing: round((deduction - std) * rate, 2)
 expected:
-  itemized: 26000
-  taxable: 82000
-  tax: 3271.80
-  saving_from_itemizing: 19.95
+  charity_floor: 550
+  charity_itemized_ceiling: 5450
+  itemized: 25450
+  taxable: 82500
+  tax: 3291.75
+  saving_from_itemizing: 0
 ```
 
 ## When to refuse or refer
@@ -275,6 +279,7 @@ For unresolved outcomes in this table, do not file or claim a deduction/credit f
 | G.S. 105-153.5A, 105-153.6A | https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-153.5A.html | Read for State NOL computation/carryforward and historical federal-pool conditions; R&E quote also read at https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-153.6A.html | 2026-11-27 |
 | G.S. 105-153.8, 105-163.15 and 105-263 | https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-153.8.html | Read for resident gross-income filing requirement, quarterly installment dates/exceptions and extension/payment distinction | 2026-11-27 |
 | G.S. 105-153.4 | https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-153.4.html | Read for resident modified-AGI base | 2026-11-28 |
+| IRC 170(b)(1)(H)–(I), P.L. 119-21 §70425 effective-date note | https://uscode.house.gov/us/usc/t26/s170/ | Read for the 2026 charitable floor and contribution base; applies through NC’s July 5, 2025 conformity/IRC 170 itemized rule | 2026-11-28 |
 | NCDOR interest rate | https://www.ncdor.gov/interest | Read for 7% through 2026 and 8% from January 2027 | 2026-11-27 |
 
 Not yet confirmed: issued 2026 D-400, Schedule S and D-401 line mappings and reporting/rounding directions (NCDOR says publication January 2027); actual 2027 trigger outcome; any local-income-tax conclusion; individual claim-of-right, transitional NOL, entity-tax/basis, residency or transfer outcome lacking the records required above. These are explicit non-usable holds. Check this point with one of our partner accountants.
